@@ -290,7 +290,7 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [.gitignore](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/96aad64c7b9602a72bbaeb116d92a42ffadedd5d/.gitignore) | Ignored | [Details](#7c4de7495fb4bb76bd8b9102a4ab583ce46e5cad0)
- [.gitmodules](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/96aad64c7b9602a72bbaeb116d92a42ffadedd5d/.gitmodules) | Ignored | [Details](#b6d5f049dadfaae9fbf07a5e2bcf67dae99aef8a1)
+ [.gitmodules](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/96aad64c7b9602a72bbaeb116d92a42ffadedd5d/.gitmodules) | Ignored | [Details](#bd553752ccf545c305fd201d8752cb5830d2dd131)
  [.localization-config](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/96aad64c7b9602a72bbaeb116d92a42ffadedd5d/.localization-config) | Ignored | [Details](#1c26ae48778830ffd75686a0b4e93cc2e551ec0e2)
  [.openpublishing.build.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/96aad64c7b9602a72bbaeb116d92a42ffadedd5d/.openpublishing.build.ps1) | Ignored | [Details](#9103b6933f2481864ecb6a66b76ba730e7f133b43)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/96aad64c7b9602a72bbaeb116d92a42ffadedd5d/.openpublishing.publish.config.json) | Ignored | [Details](#4a90c2919a9d83c497eb9ec0ccc1f912e02a9b324)
@@ -334,7 +334,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='b6d5f049dadfaae9fbf07a5e2bcf67dae99aef8a1'></a> Source: [.gitmodules](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/96aad64c7b9602a72bbaeb116d92a42ffadedd5d/.gitmodules)
+##### <a name='bd553752ccf545c305fd201d8752cb5830d2dd131'></a> Source: [.gitmodules](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/96aad64c7b9602a72bbaeb116d92a42ffadedd5d/.gitmodules)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
