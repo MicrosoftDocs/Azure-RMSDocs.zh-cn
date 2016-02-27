@@ -223,8 +223,38 @@
   "c6014bbe95ec6eadcde08fc13a4913d5b3675416": [
     "Azure-RMSDocs\\helping-users-to-protect-files-by-using-azure-rights-management.md"
   ],
+  "79c52d145adb1a8f1a40a7813d61da3996fd688f": [
+    "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+  ],
   "e8e463f65558c6dc80716fcb4cb0b02b493ce9fb": [
     "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+  ],
+  "7f4eac77d7cc3ea6f7769710ca483467345339f3": [
+    "Azure-RMSDocs\\media\\AzRMS_SecretColaFormula_final.png"
+  ],
+  "d5706ab02931b13cbbdf38ac6e75703617dc7a08": [
+    "Azure-RMSDocs\\media\\AzRMS.png"
+  ],
+  "c8abedb0b383003138792715518ae11ce3406ef4": [
+    "Azure-RMSDocs\\media\\AzRMS_useractivation2.png"
+  ],
+  "986217abbb839c9f70c816adf1dd68f27b935bfc": [
+    "Azure-RMSDocs\\media\\AzRMS_documentprotection1.png"
+  ],
+  "54707c22d09b4cdf9e74e29523f2655f647f8ed0": [
+    "Azure-RMSDocs\\media\\AzRMS_documentprotection2.png"
+  ],
+  "4d6d2119a062eef6dbfc3ea94d03c030e07f6701": [
+    "Azure-RMSDocs\\media\\AzRMS_documentprotection3.png"
+  ],
+  "a746e6008cd387c7f2f02d9d94a500f24eb11238": [
+    "Azure-RMSDocs\\media\\AzRMS_documentconsumption1.png"
+  ],
+  "846f4d6f8cfb0d10dd8efd727bc448e98ac05847": [
+    "Azure-RMSDocs\\media\\AzRMS_documentconsumption2.png"
+  ],
+  "ee87649e2f4ae0dd7763fccba39e5b03135b3727": [
+    "Azure-RMSDocs\\media\\AzRMS_documentconsumption3.png"
   ],
   "510b585dfae613f2ad867620225c57587ba09faa": [
     "Azure-RMSDocs\\Understand\\how-fileservers-support-azure-rights-management.md"
@@ -427,11 +457,53 @@
   "abfc58ece506a50ac01a4ab5befab366e51fcaf0": [
     "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_EmailMessage.PNG"
   ],
+  "cc37536e042d932af655cbdf615319a896d0e519": [
+    "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md"
+  ],
   "d125c6a7a5c6c46db31aa83197c0ec9e282f5f79": [
     "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md"
   ],
+  "8d942d4f95ec61aba329a044fabbe354f2cbe9d4": [
+    "Azure-RMSDocs\\media\\AzRMS_QuickStartStepsAll.PNG"
+  ],
+  "cfd5dda9867fc4ef0ed6f1bab4a86f37f1e0dcf1": [
+    "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps1.PNG"
+  ],
+  "ff6cfad88db7d2e6e0026232d4d397e2de8ced37": [
+    "Azure-RMSDocs\\media\\AzRMS_Tutorial_1_Screenshots.png"
+  ],
+  "b320daf88943e05e2fd9cbbe6ae27d5458f0c903": [
+    "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps2.PNG"
+  ],
+  "6920708cdf154d659afe01079401cbcc1c1c6ab1": [
+    "Azure-RMSDocs\\media\\AzRMS_Tutorial_2_Screenshots.png"
+  ],
+  "b3d271a96a9471b035600c9d2bfad12e4b05862e": [
+    "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps3.PNG"
+  ],
+  "579a3f016f81fe1213d1bcfbd23a7f94d9d8bcf7": [
+    "Azure-RMSDocs\\media\\AzRMS_Tutorial_3_Screenshots.png"
+  ],
+  "da8a2ad9efac2ab15d948213b44d73961c5d5337": [
+    "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps4.PNG"
+  ],
+  "37d25df05bcdb63fef2c9d3b2e04370f527f22ba": [
+    "Azure-RMSDocs\\media\\AzRMS_Tutorial_4_Screenshots.png"
+  ],
+  "9fbe0ab200bd0fc7a6a402f2dbb37eaa4fef02ba": [
+    "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps5.PNG"
+  ],
+  "05d619a0282fd3ce88a1126d991e2641ef801f0e": [
+    "Azure-RMSDocs\\media\\AzRMS_Tutorial_5_Screenshots.png"
+  ],
+  "56aba1fc52a22930941f3052fe185ef4c5e71049": [
+    "Azure-RMSDocs\\GetStarted\\rapid-deployment-guide-for-azure-rights-management.md"
+  ],
   "772a2720d16a87e427c4ef2c824a16aad1ae2a29": [
     "Azure-RMSDocs\\GetStarted\\rapid-deployment-guide-for-azure-rights-management.md"
+  ],
+  "5ba00fbdb71ba324ed3f4802d5092003b80ddc7c": [
+    "Azure-RMSDocs\\media\\AzRMS_ExampleBanner.png"
   ],
   "be807335e4772e37ace94d18887c39b8a4674394": [
     "Azure-RMSDocs\\refreshing-templates-for-users.md"
@@ -499,26 +571,62 @@
   "fd4cb1ed0d4cf5195185330049bb58feea1518e4": [
     "Azure-RMSDocs\\GetStarted\\rms-requirements-onpremises-servers.md"
   ],
+  "859164229cc6caea99af24e3e22146aa2cf8ed4e": [
+    "Azure-RMSDocs\\GetStarted\\scenario-configure-work-folders-for-persistent-protection.md"
+  ],
   "c2b528d949cee077d1930c6d0a9dfb2a9e7150b0": [
     "Azure-RMSDocs\\GetStarted\\scenario-configure-work-folders-for-persistent-protection.md"
+  ],
+  "85d8a30438b9ceb52778cbbb45140659fd4699bf": [
+    "Azure-RMSDocs\\media\\AzRMS_AdminBanner.png"
+  ],
+  "bd0e8b9f65cd229cee518bcf11f377843d8ae249": [
+    "Azure-RMSDocs\\GetStarted\\scenario-executives-securely-exchange-privileged-information.md"
   ],
   "1afebc10f712ce7bbed78ef559f675269cc7e74b": [
     "Azure-RMSDocs\\GetStarted\\scenario-executives-securely-exchange-privileged-information.md"
   ],
+  "d922db6b88e858d53fb28e5847ef58ab4d042ffc": [
+    "Azure-RMSDocs\\media\\AzRMS_UsersBanner.png"
+  ],
+  "1e2adbf377a99f3d56dbfb9088acde2f0f4b5907": [
+    "Azure-RMSDocs\\GetStarted\\scenario-protect-files-on-a-file-server-share.md"
+  ],
   "b97f7c1f156ef05eb2f628591cb4893b6d9bdc96": [
     "Azure-RMSDocs\\GetStarted\\scenario-protect-files-on-a-file-server-share.md"
+  ],
+  "2614d19f0c0b4fe5ecfb90a1731d634125b250ce": [
+    "Azure-RMSDocs\\GetStarted\\scenario-retain-control-of-documents-stored-in-sharepoint.md"
   ],
   "c2df286e6e7613b95718e6ed8084289c617a97b1": [
     "Azure-RMSDocs\\GetStarted\\scenario-retain-control-of-documents-stored-in-sharepoint.md"
   ],
+  "9d43b2c93cdfe358be856fa0ed37ef08499f5e9c": [
+    "Azure-RMSDocs\\GetStarted\\scenario-secure-your-most-few-valuable-files.md"
+  ],
   "d881b70650ac94e0c1620b205d0b37fae897f2b2": [
     "Azure-RMSDocs\\GetStarted\\scenario-secure-your-most-few-valuable-files.md"
+  ],
+  "3a2b8e88b724bff2e0a3b364319cc89601142d79": [
+    "Azure-RMSDocs\\GetStarted\\scenario-send-a-company-confidential-email.md"
   ],
   "9b172483cf517183ba0adff12bb1a75b5aa62569": [
     "Azure-RMSDocs\\GetStarted\\scenario-send-a-company-confidential-email.md"
   ],
+  "d9bbc4b67c324d7376ad179ee942e17c9811e6e6": [
+    "Azure-RMSDocs\\media\\AzRMS_OutlookTemplate.PNG"
+  ],
+  "b1306874f8f145e3ef13170e7418a6047ba42651": [
+    "Azure-RMSDocs\\media\\AzRMS_OWATemplate.png"
+  ],
+  "843771b5959470853aaed35d764c5aec3de825b7": [
+    "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md"
+  ],
   "d18249c030e9a59487e71994abe0890bcd99cc24": [
     "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md"
+  ],
+  "05f9ef9a3f6258fb49f39f034e84c773dad451b6": [
+    "Azure-RMSDocs\\media\\AzRMSUserInstructions_ShareProtectedRibbon2013.png"
   ],
   "ab59c0b2306876d9bfacda1ad919c66233a5eca1": [
     "Azure-RMSDocs\\scratch.md"
@@ -595,11 +703,71 @@
   "71fccc1bc786ef0bbc1b31a296d4eb7e0a128996": [
     "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_RestrictedAccess.png"
   ],
+  "bc6b117cb8888e8c4f676c638a1773b551f0c72f": [
+    "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+  ],
   "6d435e3e4d11a2ffc449d7b52d05a45a1b6f329c": [
     "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
   ],
+  "6bbb0d50bf03ad546b7dcdb93056e6baff055654": [
+    "Azure-RMSDocs\\media\\AzRMS_StoryboardActivate_small1.png"
+  ],
+  "cbf014f54667d2a5218b36be4f560415f29e061a": [
+    "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal_small.png"
+  ],
+  "013060de59f3814245151184a2e0af8e6e6466bb": [
+    "Azure-RMSDocs\\media\\AzRMS_TemplatesSettings3.png"
+  ],
+  "59b659ee2f0f1557406e05b2fd11feee830de55a": [
+    "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal_ExplorerWord3.png"
+  ],
+  "e400ccd5bef4f6a29cddd1e635de0b1780b9c0f4": [
+    "Azure-RMSDocs\\media\\AzRMS_FCI_ConnectorSmall.png"
+  ],
+  "b7853afd1130f448ec02af8cd0da2066817d3d9b": [
+    "Azure-RMSDocs\\media\\AzRMS_ExampleFCI_ConfigurationSmall.png"
+  ],
+  "d428fefc476a310b740b7ee6147c68d701a472cd": [
+    "Azure-RMSDocs\\media\\AzRMS_FCI_EmailSmall.png"
+  ],
+  "f8a298c17ec101549cfe56f629ea97ec6c8ff9d6": [
+    "Azure-RMSDocs\\media\\AzRMS_DLPExample1.png"
+  ],
+  "598b7c77c9a58aed13a184d90a6b97452c34df88": [
+    "Azure-RMSDocs\\media\\AzRMS_DLPUnprotectedEmail_small.png"
+  ],
+  "d87bff2cac2de89c29a985f581f8f06825e9d3ef": [
+    "Azure-RMSDocs\\media\\AzRMS_DLPProtectedEmail_small.png"
+  ],
+  "a7be1d4be635df3f97197c34b5ec6e18d3c7bbd1": [
+    "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_small1.png"
+  ],
+  "d755cfb48974698b324dc51a3605cf1ad6eefa8b": [
+    "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_small2.png"
+  ],
+  "61256524f27787ec5e4aef7cc584058ec3d56402": [
+    "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_small3.png"
+  ],
+  "26e0480009dcace82a652c37f5daebf3cc01f1a4": [
+    "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small1.png"
+  ],
+  "9b6ad83c5458f4f6e30201e99ebc75b83c83e070": [
+    "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small2.png"
+  ],
+  "81c23a2acf1cce321bf1aa29973272c1ad37b292": [
+    "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small3.png"
+  ],
+  "d8d408182f1382d7be1c9a509b14ee76f75cc38d": [
+    "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small4.png"
+  ],
+  "5582cd4ab26dbab2f2670f2eccdc2295c00d478c": [
+    "Azure-RMSDocs\\Understand\\what-is-azure-rights-management.md"
+  ],
   "1860c039785848d2e6f57eaa616ece75a65d2019": [
     "Azure-RMSDocs\\Understand\\what-is-azure-rights-management.md"
+  ],
+  "7cbc08e4b635e579cddd06662f5ee409e3577934": [
+    "Azure-RMSDocs\\media\\AzRMS_elements.png"
   ],
   "100d1ac12c7663fd73213fb5c8902d6e1f906449": [
     "README.md"
