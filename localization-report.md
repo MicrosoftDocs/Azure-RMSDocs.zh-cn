@@ -296,7 +296,7 @@
  [.openpublishing.publish.config.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf77feb7a4a2dab38b6f96b9a0d110f0d8adca1b/.openpublishing.publish.config.json) | Ignored | [Details](#4a90c2919a9d83c497eb9ec0ccc1f912e02a9b324)
  [Azure-RMSDocs\DeployUse\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf77feb7a4a2dab38b6f96b9a0d110f0d8adca1b/Azure-RMSDocs/DeployUse/docfx.json) | Ignored | [Details](#f5dc9b6c70dbbeeda054968a049bd89dfb5cc68121)
  [Azure-RMSDocs\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf77feb7a4a2dab38b6f96b9a0d110f0d8adca1b/Azure-RMSDocs/docfx.json) | Ignored | [Details](#6475339f299ca2c969545c09e395bca6087da64527)
- [Azure-RMSDocs\GetStarted\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf77feb7a4a2dab38b6f96b9a0d110f0d8adca1b/Azure-RMSDocs/GetStarted/docfx.json) | Ignored | [Details](#0ce7adf99b28cbc647968d23ed1d6b13c9b4ddbe52)
+ [Azure-RMSDocs\GetStarted\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf77feb7a4a2dab38b6f96b9a0d110f0d8adca1b/Azure-RMSDocs/GetStarted/docfx.json) | Ignored | [Details](#ed68b64bb92efcf8365607bd77c6773665da9e9f52)
  [Azure-RMSDocs\index.html](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf77feb7a4a2dab38b6f96b9a0d110f0d8adca1b/Azure-RMSDocs/index.html) | Ignored | [Details](#44ab5b625d41347caa1a20d1229aaeaa27f669c9106)
  [Azure-RMSDocs\media\ADRMS_MSRMSApp_ProtectCustom.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf77feb7a4a2dab38b6f96b9a0d110f0d8adca1b/Azure-RMSDocs/media/ADRMS_MSRMSApp_ProtectCustom.gif) | Ignored | [Details](#a92b83706a626411ae959ebe0be5e55d78fe7446119)
  [Azure-RMSDocs\media\ADRMS_MSRMSApp_SP_ConsumePfile.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf77feb7a4a2dab38b6f96b9a0d110f0d8adca1b/Azure-RMSDocs/media/ADRMS_MSRMSApp_SP_ConsumePfile.gif) | Ignored | [Details](#5d2f20557a431bdb26e178ad24039f7b432438a3124)
@@ -947,7 +947,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='0ce7adf99b28cbc647968d23ed1d6b13c9b4ddbe52'></a> Source: [Azure-RMSDocs\GetStarted\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf77feb7a4a2dab38b6f96b9a0d110f0d8adca1b/Azure-RMSDocs/GetStarted/docfx.json)
+##### <a name='ed68b64bb92efcf8365607bd77c6773665da9e9f52'></a> Source: [Azure-RMSDocs\GetStarted\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf77feb7a4a2dab38b6f96b9a0d110f0d8adca1b/Azure-RMSDocs/GetStarted/docfx.json)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
