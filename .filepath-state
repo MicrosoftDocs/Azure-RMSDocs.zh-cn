@@ -1,18 +1,21 @@
 {
   "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": [
-    "Azure-RMSDocs\\0365-configure-for-clients-online-services.md"
+    "Azure-RMSDocs\\DeployUse\\0365-configure-for-clients-online-services.md"
   ],
   "02e160be56abdb96d2006cc0273d57273756a7b8": [
-    "Azure-RMSDocs\\activating-azure-rights-management.md"
+    "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md"
   ],
   "91fa55e8db9ffc7180ba6b2e4b221ea7355f31a4": [
     "Azure-RMSDocs\\active-directory-rights-management-services-mobile-device-extension.md"
+  ],
+  "e3c45199bc4e84d076d1408bc52079f86c804e40": [
+    "Azure-RMSDocs\\administering-azure-rights-management-with-powershell.md"
   ],
   "d737606dbe83f6d9b6fb84bc38eb76b62d9fdbbe": [
     "Azure-RMSDocs\\administering-azure-rights-management-with-powershell.md"
   ],
   "5f316d6784a201580ce7ac4136b773dd61b3bbc4": [
-    "Azure-RMSDocs\\azure-rights-management-deployment-roadmap.md"
+    "Azure-RMSDocs\\PlanDesign\\azure-rights-management-deployment-roadmap.md"
   ],
   "16ffe2ac3f55c872ebb230ef643ea921ed987bd6": [
     "Azure-RMSDocs\\Understand\\azure-rms-aka.md"
@@ -27,13 +30,13 @@
     "Azure-RMSDocs\\Understand\\comparing-azure-rights-management-and-ad-rms.md"
   ],
   "5011031ac66360f5d0af5357fe065bfabcb62832": [
-    "Azure-RMSDocs\\configure-custom-templates-for-azure-rights-management.md"
+    "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management.md"
   ],
   "53fef1c257cb48fbdb165f27d2015a5c4cf282c0": [
     "Azure-RMSDocs\\configure-onboarding-controls.md"
   ],
   "915bb394a30f1215c91b6166441eddaa3de6e93d": [
-    "Azure-RMSDocs\\configuring-applications-for-azure-rights-management.md"
+    "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md"
   ],
   "7bde7674b006060be7f84e9b0646edf51b7c74dc": [
     "Azure-RMSDocs\\configuring-azure-rights-management.md"
@@ -42,26 +45,20 @@
     "Azure-RMSDocs\\configuring-custom-templates-for-azure-rights-management.md"
   ],
   "b8983b24c900d48cae6a313292b4c9b8bc686b66": [
-    "Azure-RMSDocs\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
+    "Azure-RMSDocs\\DeployUse\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
   ],
   "55123b66a93b4c553f3a15d06a682d8fc8ddf6bb": [
-    "Azure-RMSDocs\\configuring-usage-rights-for-azure-rights-management.md"
+    "Azure-RMSDocs\\DeployUse\\configuring-usage-rights-for-azure-rights-management.md"
   ],
   "b200ef880904dff01043a45a8a8a711784181eaa": [
     "Azure-RMSDocs\\customer-managed-tenant-key-lifecycle-operations.md",
     "Azure-RMSDocs\\developers-guide.md"
   ],
   "f2f0d15eefe8c17f27d469dd279d216653cf1c9b": [
-    "Azure-RMSDocs\\decommissioning-and-deactivating-azure-rights-management.md"
+    "Azure-RMSDocs\\DeployUse\\decommissioning-and-deactivating-azure-rights-management.md"
   ],
   "598e1019d059eea4ab6fdfdfce8d016b1cb38289": [
-    "Azure-RMSDocs\\deploying-the-azure-rights-management-connector.md"
-  ],
-  "c91e5ca163103359c297261b768403f061f66ec9": [
-    "Azure-RMSDocs\\media\\RMS_connector.png"
-  ],
-  "291203a2ca2e494d5ccc5206af3f44d628c20e97": [
-    "Azure-RMSDocs\\media\\AzRMS_SharePointConnector.png"
+    "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
   ],
   "80f16e5851e574014594e4d93ba194beb2cc9653": [
     "Azure-RMSDocs\\DeployUse\\Sample.md",
@@ -75,6 +72,9 @@
     "Azure-RMSDocs\\Troubleshoot\\media\\150x150.png",
     "Azure-RMSDocs\\Understand\\media\\150x150.png"
   ],
+  "0f6e7a5f452a03686bd194dadbf9c29b88049a09": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
+  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
     "Azure-RMSDocs\\GetStarted\\TOC.md",
@@ -84,6 +84,9 @@
   ],
   "4e4856e45b3a820d949c5918b4ad8bbf3261a596": [
     "Azure-RMSDocs\\GetStarted\\TOC.md"
+  ],
+  "99c94cd379f2ce6097c2fb0f885485b5a59ab257": [
+    "Azure-RMSDocs\\PlanDesign\\TOC.md"
   ],
   "fca3e7911f4df7a73086bb0b723f8e63de808de8": [
     "Azure-RMSDocs\\Understand\\TOC.md"
@@ -221,7 +224,7 @@
     "Azure-RMSDocs\\getting-started-with-azure-rights-management.md"
   ],
   "c6014bbe95ec6eadcde08fc13a4913d5b3675416": [
-    "Azure-RMSDocs\\helping-users-to-protect-files-by-using-azure-rights-management.md"
+    "Azure-RMSDocs\\DeployUse\\helping-users-to-protect-files-by-using-azure-rights-management.md"
   ],
   "79c52d145adb1a8f1a40a7813d61da3996fd688f": [
     "Azure-RMSDocs\\Understand\\how-does-it-work.md"
@@ -389,10 +392,10 @@
     "Azure-RMSDocs\\installing-windows-powershell-for-azure-rights-management.md"
   ],
   "bacd5f82095452dd9c19378ba0dd260bd3402d0d": [
-    "Azure-RMSDocs\\logging-and-analyzing-azure-rights-management-usage.md"
+    "Azure-RMSDocs\\DeployUse\\logging-and-analyzing-azure-rights-management-usage.md"
   ],
   "607bcb77387d7c8e543b9a95f9024b9456bd8d4e": [
-    "Azure-RMSDocs\\migrating-from-ad-rms-to-azure-rights-management.md"
+    "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management.md"
   ],
   "1231e31e63caafbd46afefb3ac87eab17328b9c2": [
     "Azure-RMSDocs\\ms-managed-tenant-key-lifecycle-operations.md"
@@ -401,37 +404,25 @@
     "Azure-RMSDocs\\ms-requirements-aad-directory.md"
   ],
   "ac8e4d95ac6ac103db47dd93467d933cfdab6826": [
-    "Azure-RMSDocs\\office-2010-configure-for-clients.md"
+    "Azure-RMSDocs\\DeployUse\\office-2010-configure-for-clients.md"
   ],
   "6e84612eb83e55012f41cad001b70f02580055d0": [
-    "Azure-RMSDocs\\office-2016-2013-configure-for-clients.md"
+    "Azure-RMSDocs\\DeployUse\\office-2016-2013-configure-for-clients.md"
   ],
   "6b860f84cb33860d7c19908c9b870475b0aead46": [
-    "Azure-RMSDocs\\operations-for-your-azure-rights-management-tenant-key.md"
+    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key.md"
   ],
   "fdfae7ec0338f5049f3f34082b529b8a698919ab": [
     "Azure-RMSDocs\\Understand\\other-apps-support-apis.md"
   ],
   "b8edf1548acf753e8039bfc12b8fb420a88eb462": [
-    "Azure-RMSDocs\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
-  ],
-  "88e697641696002884880857174a50a15d094640": [
-    "Azure-RMSDocs\\media\\RMS_BYOK_cloud.png"
-  ],
-  "cc30bb9a04aba3747282a3aba9ab8d668e263c0b": [
-    "Azure-RMSDocs\\media\\RMS_BYOK_onprem.png"
-  ],
-  "61ce88571236a26e129e79ae8af9b3ed238459a3": [
-    "Azure-RMSDocs\\media\\RMS_BYOK_noExchange.png"
-  ],
-  "585821560e111abdc47ef6167126b34c4c81cd34": [
-    "Azure-RMSDocs\\media\\RMS_Logging.gif"
+    "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
   ],
   "0de0e4b4c552cab590dda6aca734e9e62780d384": [
     "Azure-RMSDocs\\powershell-reference.md"
   ],
   "b2024b5c8ab90983de36535f2269cf54f1aba88b": [
-    "Azure-RMSDocs\\preparing-for-azure-rights-management.md"
+    "Azure-RMSDocs\\PlanDesign\\preparing-for-azure-rights-management.md"
   ],
   "12161e10d587b9712bd76b23834548eda96407b4": [
     "Azure-RMSDocs\\privacy-statement-for-microsoft-rights-management-in-rms-enlightened-applications.md"
@@ -641,7 +632,7 @@
     "Azure-RMSDocs\\sharepoint-2013-registry-settings.md"
   ],
   "7c09d95d12461e82c9feed582938b7f66568ab8e": [
-    "Azure-RMSDocs\\sharing-app-install-configure.md"
+    "Azure-RMSDocs\\DeployUse\\sharing-app-install-configure.md"
   ],
   "58a2e65d96aac8093b247d20ecc684aa593e6aa5": [
     "Azure-RMSDocs\\Understand\\sharing-application-for-windows-and-mobile-platforms.md"
@@ -657,6 +648,9 @@
   ],
   "673e1f6e9d2ec63e06998f687eb3685b39cae4f5": [
     "Azure-RMSDocs\\thales-hsms-and-ms-additions.md"
+  ],
+  "eeb12deda215944c52c491aeff14356d4cc8030f": [
+    "Azure-RMSDocs\\TOC.md"
   ],
   "26de87ea2b1a2072f171d17804a8a76bb0792f96": [
     "Azure-RMSDocs\\TOC.md"
@@ -692,7 +686,7 @@
     "Azure-RMSDocs\\using-azure-rights-management.md"
   ],
   "77eeb7aa44a8fd7e05cdbd6658c94654662db101": [
-    "Azure-RMSDocs\\verifying-azure-rights-management.md"
+    "Azure-RMSDocs\\DeployUse\\verifying-azure-rights-management.md"
   ],
   "ae7f6e1c4442ecd8452ca23b1d454993907027e1": [
     "Azure-RMSDocs\\view-and-use-files-that-have-been-protected-by-rights-management.md"
