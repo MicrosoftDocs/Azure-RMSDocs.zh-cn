@@ -93,15 +93,15 @@
     "Azure-RMSDocs\\Troubleshoot\\media\\150x150.png",
     "Azure-RMSDocs\\Understand\\media\\150x150.png"
   ],
+  "0f6e7a5f452a03686bd194dadbf9c29b88049a09": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
+  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
     "Azure-RMSDocs\\GetStarted\\TOC.md",
     "Azure-RMSDocs\\PlanDesign\\TOC.md",
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
-  ],
-  "0f6e7a5f452a03686bd194dadbf9c29b88049a09": [
-    "Azure-RMSDocs\\DeployUse\\TOC.md"
   ],
   "4e4856e45b3a820d949c5918b4ad8bbf3261a596": [
     "Azure-RMSDocs\\GetStarted\\TOC.md"
@@ -811,6 +811,9 @@
   "d8d408182f1382d7be1c9a509b14ee76f75cc38d": [
     "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small4.png"
   ],
+  "8ca0637fdc0356066be798a20d398d8df5c281bc": [
+    "Azure-RMSDocs\\Understand\\what-is-azure-rights-management.md"
+  ],
   "5582cd4ab26dbab2f2670f2eccdc2295c00d478c": [
     "Azure-RMSDocs\\Understand\\what-is-azure-rights-management.md"
   ],
@@ -841,11 +844,17 @@
   "e9abd459f6c26d1b9baed676b9aa96f303e3dcbe": [
     "Azure-RMSDocs\\Understand\\rms-for-individuals-admins-take-control.md"
   ],
+  "c424e81b9a8efc428a87422b92fe499700fbfbf1": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md"
+  ],
   "4acfee33abdc46757afd8f089fae3c7b223475df": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md"
   ],
   "dad2eb1f3f51940cbbf405d10d18552c1424c714": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-step1.md"
+  ],
+  "a225a5d2e651efd9a7b7507ce2ec0bcb33e6a1c2": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md"
   ],
   "f29aad483b9d375896137105da8e8115502c3594": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md"
