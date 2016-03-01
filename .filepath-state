@@ -840,5 +840,23 @@
   ],
   "e9abd459f6c26d1b9baed676b9aa96f303e3dcbe": [
     "Azure-RMSDocs\\Understand\\rms-for-individuals-admins-take-control.md"
+  ],
+  "4acfee33abdc46757afd8f089fae3c7b223475df": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md"
+  ],
+  "dad2eb1f3f51940cbbf405d10d18552c1424c714": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-step1.md"
+  ],
+  "f29aad483b9d375896137105da8e8115502c3594": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md"
+  ],
+  "43dee325a55f5dd966c9fb27df1d672f38fcb8ae": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-step3.md"
+  ],
+  "082d573872dd94bcb810ca6931c972e54540a52d": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-step4.md"
+  ],
+  "d6cd33ea937e7083c7a2b72e998d6952abaa649b": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-step5.md"
   ]
 }
