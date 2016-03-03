@@ -112,14 +112,26 @@
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
   ],
+  "a6e19f37ffdb755ca876cd615ffb245ece8f5034": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
+  ],
   "0f6e7a5f452a03686bd194dadbf9c29b88049a09": [
     "Azure-RMSDocs\\DeployUse\\TOC.md"
+  ],
+  "3f580e4f55c57c04146f073f61d2245a36f2736f": [
+    "Azure-RMSDocs\\GetStarted\\TOC.md"
   ],
   "4e4856e45b3a820d949c5918b4ad8bbf3261a596": [
     "Azure-RMSDocs\\GetStarted\\TOC.md"
   ],
+  "0e4667610b7098221e6d520871f69fd5832e7d1c": [
+    "Azure-RMSDocs\\PlanDesign\\TOC.md"
+  ],
   "99c94cd379f2ce6097c2fb0f885485b5a59ab257": [
     "Azure-RMSDocs\\PlanDesign\\TOC.md"
+  ],
+  "ec1e2870d88d9170977a68167bfb71d8898db484": [
+    "Azure-RMSDocs\\Understand\\TOC.md"
   ],
   "fca3e7911f4df7a73086bb0b723f8e63de808de8": [
     "Azure-RMSDocs\\Understand\\TOC.md"
@@ -726,6 +738,9 @@
   ],
   "673e1f6e9d2ec63e06998f687eb3685b39cae4f5": [
     "Azure-RMSDocs\\thales-hsms-and-ms-additions.md"
+  ],
+  "6c91dbe35ecf80bcc798ad36b7cb8ce5b3bc4574": [
+    "Azure-RMSDocs\\TOC.md"
   ],
   "eeb12deda215944c52c491aeff14356d4cc8030f": [
     "Azure-RMSDocs\\TOC.md"
