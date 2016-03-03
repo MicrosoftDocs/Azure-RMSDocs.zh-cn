@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+  "LastProcessedCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -14,7 +14,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\0365-configure-for-clients-online-services.md transformed failed.",
@@ -24,7 +24,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -187,7 +187,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\azure-rms-aka.md transformed failed.",
@@ -197,7 +197,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -223,7 +223,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\azure-rms-problems-it-solves.md transformed failed.",
@@ -233,7 +233,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -314,7 +314,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\configure-custom-templates-for-azure-rights-management.md transformed failed.",
@@ -324,7 +324,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -677,7 +677,7 @@
     },
     "84421bf7f4ba657e685239fb27f4798a46485f71": {
       "FileHash": "84421bf7f4ba657e685239fb27f4798a46485f71",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\DeployUse\\media\\150x150.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -693,8 +693,8 @@
         "Azure-RMSDocs\\Understand\\media\\150x150.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\84421bf7f4ba657e685239fb27f4798a46485f71.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -712,7 +712,7 @@
     },
     "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": {
       "FileHash": "3036877a4f389967e58c7aa350a9c1fa54ecb5a4",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -724,8 +724,8 @@
         "Azure-RMSDocs\\Understand\\TOC.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\TOC.c962a621438ba36bd64ceffe2cdf9489982e7f7e.zh-cn.xlf",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -959,7 +959,7 @@
     },
     "8e00c7c29ea4034042f2ab548619f141e659804e": {
       "FileHash": "8e00c7c29ea4034042f2ab548619f141e659804e",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_3.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -969,8 +969,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_3.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\8e00c7c29ea4034042f2ab548619f141e659804e.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1015,7 +1015,7 @@
     },
     "0c772653ab722c6d9921310918f8adce63f92bfd": {
       "FileHash": "0c772653ab722c6d9921310918f8adce63f92bfd",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardActivate.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1025,8 +1025,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardActivate.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\0c772653ab722c6d9921310918f8adce63f92bfd.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1071,7 +1071,7 @@
     },
     "8db60d8f88bdd42a9df19a80d84f93e8bc57eb04": {
       "FileHash": "8db60d8f88bdd42a9df19a80d84f93e8bc57eb04",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardEmaill4.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1081,8 +1081,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardEmaill4.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\8db60d8f88bdd42a9df19a80d84f93e8bc57eb04.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1127,7 +1127,7 @@
     },
     "787d5feed4aa1de7c61bda74db542271389b6f2c": {
       "FileHash": "787d5feed4aa1de7c61bda74db542271389b6f2c",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardEmaill1.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1137,8 +1137,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardEmaill1.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\787d5feed4aa1de7c61bda74db542271389b6f2c.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1183,7 +1183,7 @@
     },
     "a8e817c884c0d979d45e2298ad42bd5062539919": {
       "FileHash": "a8e817c884c0d979d45e2298ad42bd5062539919",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_DLPProtectedEmail.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1193,8 +1193,8 @@
         "Azure-RMSDocs\\media\\AzRMS_DLPProtectedEmail.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\a8e817c884c0d979d45e2298ad42bd5062539919.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1239,7 +1239,7 @@
     },
     "4c492dd50cca6146ed856fec32c0b41c246c6e36": {
       "FileHash": "4c492dd50cca6146ed856fec32c0b41c246c6e36",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_DLPUnprotectedEmail.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1249,8 +1249,8 @@
         "Azure-RMSDocs\\media\\AzRMS_DLPUnprotectedEmail.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\4c492dd50cca6146ed856fec32c0b41c246c6e36.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1295,7 +1295,7 @@
     },
     "5ec639eaaf1c2288b242edcd3755f4329dbc4b86": {
       "FileHash": "5ec639eaaf1c2288b242edcd3755f4329dbc4b86",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_TemplatesSettings.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1305,8 +1305,8 @@
         "Azure-RMSDocs\\media\\AzRMS_TemplatesSettings.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\5ec639eaaf1c2288b242edcd3755f4329dbc4b86.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1351,7 +1351,7 @@
     },
     "d9f0314d5243503acd00df238ce5d315b513633d": {
       "FileHash": "d9f0314d5243503acd00df238ce5d315b513633d",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardEmaill3.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1361,8 +1361,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardEmaill3.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d9f0314d5243503acd00df238ce5d315b513633d.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1407,7 +1407,7 @@
     },
     "8182786658a5308cb246c5780b235e5de0a1f648": {
       "FileHash": "8182786658a5308cb246c5780b235e5de0a1f648",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardEmaill2.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1417,8 +1417,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardEmaill2.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\8182786658a5308cb246c5780b235e5de0a1f648.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1463,7 +1463,7 @@
     },
     "e84f67759d59796d1911f31826f7386555d4f414": {
       "FileHash": "e84f67759d59796d1911f31826f7386555d4f414",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_FCI_Email.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1473,8 +1473,8 @@
         "Azure-RMSDocs\\media\\AzRMS_FCI_Email.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\e84f67759d59796d1911f31826f7386555d4f414.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1519,7 +1519,7 @@
     },
     "b6e964b1fb44e8e046ccfb2b26736ab9bfbdaf24": {
       "FileHash": "b6e964b1fb44e8e046ccfb2b26736ab9bfbdaf24",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_DLPExample.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1529,8 +1529,8 @@
         "Azure-RMSDocs\\media\\AzRMS_DLPExample.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\b6e964b1fb44e8e046ccfb2b26736ab9bfbdaf24.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1575,7 +1575,7 @@
     },
     "3be0bd8b442d0ded6a4cbeee5f5fe32f18282cc2": {
       "FileHash": "3be0bd8b442d0ded6a4cbeee5f5fe32f18282cc2",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_ExampleFCI_Configuration.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1585,8 +1585,8 @@
         "Azure-RMSDocs\\media\\AzRMS_ExampleFCI_Configuration.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\3be0bd8b442d0ded6a4cbeee5f5fe32f18282cc2.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1631,7 +1631,7 @@
     },
     "49c6dacd36a7ead895f9089118cf60cacdb26d8f": {
       "FileHash": "49c6dacd36a7ead895f9089118cf60cacdb26d8f",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_2.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1641,8 +1641,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_2.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\49c6dacd36a7ead895f9089118cf60cacdb26d8f.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1687,7 +1687,7 @@
     },
     "dd1e218c9f2e427c5a3cb153d76478f09a1c2bb2": {
       "FileHash": "dd1e218c9f2e427c5a3cb153d76478f09a1c2bb2",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1697,8 +1697,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_1.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\dd1e218c9f2e427c5a3cb153d76478f09a1c2bb2.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1743,7 +1743,7 @@
     },
     "9ea9bb7453b6a38284e6c2be11d762c092a15be3": {
       "FileHash": "9ea9bb7453b6a38284e6c2be11d762c092a15be3",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_FCI_Connector.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1753,8 +1753,8 @@
         "Azure-RMSDocs\\media\\AzRMS_FCI_Connector.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\9ea9bb7453b6a38284e6c2be11d762c092a15be3.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1799,7 +1799,7 @@
     },
     "df64a7d340fab235878695b48dfea7f58e4b468d": {
       "FileHash": "df64a7d340fab235878695b48dfea7f58e4b468d",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1809,8 +1809,8 @@
         "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\df64a7d340fab235878695b48dfea7f58e4b468d.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -1855,7 +1855,7 @@
     },
     "a7d52d881e293f35c8dfe37fa65f4d021dc0ec93": {
       "FileHash": "a7d52d881e293f35c8dfe37fa65f4d021dc0ec93",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal_ExplorerWord.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -1865,8 +1865,8 @@
         "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal_ExplorerWord.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\a7d52d881e293f35c8dfe37fa65f4d021dc0ec93.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2075,7 +2075,7 @@
     },
     "7f4eac77d7cc3ea6f7769710ca483467345339f3": {
       "FileHash": "7f4eac77d7cc3ea6f7769710ca483467345339f3",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_SecretColaFormula_final.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2086,8 +2086,8 @@
         "Azure-RMSDocs\\media\\AzRMS_SecretColaFormula_final.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\7f4eac77d7cc3ea6f7769710ca483467345339f3.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2105,7 +2105,7 @@
     },
     "d5706ab02931b13cbbdf38ac6e75703617dc7a08": {
       "FileHash": "d5706ab02931b13cbbdf38ac6e75703617dc7a08",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2116,8 +2116,8 @@
         "Azure-RMSDocs\\media\\AzRMS.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d5706ab02931b13cbbdf38ac6e75703617dc7a08.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2135,7 +2135,7 @@
     },
     "c8abedb0b383003138792715518ae11ce3406ef4": {
       "FileHash": "c8abedb0b383003138792715518ae11ce3406ef4",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_useractivation2.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2146,8 +2146,8 @@
         "Azure-RMSDocs\\media\\AzRMS_useractivation2.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\c8abedb0b383003138792715518ae11ce3406ef4.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2165,7 +2165,7 @@
     },
     "986217abbb839c9f70c816adf1dd68f27b935bfc": {
       "FileHash": "986217abbb839c9f70c816adf1dd68f27b935bfc",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_documentprotection1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2176,8 +2176,8 @@
         "Azure-RMSDocs\\media\\AzRMS_documentprotection1.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\986217abbb839c9f70c816adf1dd68f27b935bfc.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2195,7 +2195,7 @@
     },
     "54707c22d09b4cdf9e74e29523f2655f647f8ed0": {
       "FileHash": "54707c22d09b4cdf9e74e29523f2655f647f8ed0",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_documentprotection2.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2206,8 +2206,8 @@
         "Azure-RMSDocs\\media\\AzRMS_documentprotection2.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\54707c22d09b4cdf9e74e29523f2655f647f8ed0.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2225,7 +2225,7 @@
     },
     "4d6d2119a062eef6dbfc3ea94d03c030e07f6701": {
       "FileHash": "4d6d2119a062eef6dbfc3ea94d03c030e07f6701",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_documentprotection3.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2236,8 +2236,8 @@
         "Azure-RMSDocs\\media\\AzRMS_documentprotection3.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\4d6d2119a062eef6dbfc3ea94d03c030e07f6701.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2255,7 +2255,7 @@
     },
     "a746e6008cd387c7f2f02d9d94a500f24eb11238": {
       "FileHash": "a746e6008cd387c7f2f02d9d94a500f24eb11238",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_documentconsumption1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2266,8 +2266,8 @@
         "Azure-RMSDocs\\media\\AzRMS_documentconsumption1.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\a746e6008cd387c7f2f02d9d94a500f24eb11238.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2285,7 +2285,7 @@
     },
     "846f4d6f8cfb0d10dd8efd727bc448e98ac05847": {
       "FileHash": "846f4d6f8cfb0d10dd8efd727bc448e98ac05847",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_documentconsumption2.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2296,8 +2296,8 @@
         "Azure-RMSDocs\\media\\AzRMS_documentconsumption2.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\846f4d6f8cfb0d10dd8efd727bc448e98ac05847.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2315,7 +2315,7 @@
     },
     "ee87649e2f4ae0dd7763fccba39e5b03135b3727": {
       "FileHash": "ee87649e2f4ae0dd7763fccba39e5b03135b3727",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_documentconsumption3.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2326,8 +2326,8 @@
         "Azure-RMSDocs\\media\\AzRMS_documentconsumption3.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\ee87649e2f4ae0dd7763fccba39e5b03135b3727.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2562,7 +2562,7 @@
     },
     "a88e0dacb05ee102cc7a0aed64ac5032d1bd9f3d": {
       "FileHash": "a88e0dacb05ee102cc7a0aed64ac5032d1bd9f3d",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\4d269a30-a873-45c5-87de-30ee6558e7b0.gif",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2586,8 +2586,8 @@
         "Azure-RMSDocs\\media\\4d269a30-a873-45c5-87de-30ee6558e7b0.gif"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\a88e0dacb05ee102cc7a0aed64ac5032d1bd9f3d.gif",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2605,7 +2605,7 @@
     },
     "604b4b57e41714f7dc0dbe098f6c8432d9cbc7a7": {
       "FileHash": "604b4b57e41714f7dc0dbe098f6c8432d9cbc7a7",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_SP_OutlookToolbar.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2616,8 +2616,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_SP_OutlookToolbar.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\604b4b57e41714f7dc0dbe098f6c8432d9cbc7a7.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2635,7 +2635,7 @@
     },
     "894f2bf008907c047f1e1b96dad75bf7ea84d524": {
       "FileHash": "894f2bf008907c047f1e1b96dad75bf7ea84d524",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_SharedProtected_GenericProtection.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2645,8 +2645,8 @@
         "Azure-RMSDocs\\media\\AzRMS_SharedProtected_GenericProtection.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\894f2bf008907c047f1e1b96dad75bf7ea84d524.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2664,7 +2664,7 @@
     },
     "e27d510656d463d6ba3e45004b814c84c2d8122d": {
       "FileHash": "e27d510656d463d6ba3e45004b814c84c2d8122d",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_SharedProtected_ViewerOnly.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2676,8 +2676,8 @@
         "Azure-RMSDocs\\media\\AzRMS_SharedProtected_ViewerOnly.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\e27d510656d463d6ba3e45004b814c84c2d8122d.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2695,7 +2695,7 @@
     },
     "0923462fb2b122cfcbc6a6445ab17d9636388376": {
       "FileHash": "0923462fb2b122cfcbc6a6445ab17d9636388376",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_SharedProtected_CoAuthor.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2705,8 +2705,8 @@
         "Azure-RMSDocs\\media\\AzRMS_SharedProtected_CoAuthor.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\0923462fb2b122cfcbc6a6445ab17d9636388376.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2724,7 +2724,7 @@
     },
     "b819619a52f184fe06857f9ea6946fcf93aae852": {
       "FileHash": "b819619a52f184fe06857f9ea6946fcf93aae852",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_SharedProtected_HighlyConfidental.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2734,8 +2734,8 @@
         "Azure-RMSDocs\\media\\AzRMS_SharedProtected_HighlyConfidental.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\b819619a52f184fe06857f9ea6946fcf93aae852.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2753,7 +2753,7 @@
     },
     "bf1efb06537530a62379abe6ac4bf8c47580794f": {
       "FileHash": "bf1efb06537530a62379abe6ac4bf8c47580794f",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_SharedProtected_Confidential.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2763,8 +2763,8 @@
         "Azure-RMSDocs\\media\\AzRMS_SharedProtected_Confidential.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\bf1efb06537530a62379abe6ac4bf8c47580794f.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2782,7 +2782,7 @@
     },
     "800305bed8139193087c39cde47e65f9c9b5490b": {
       "FileHash": "800305bed8139193087c39cde47e65f9c9b5490b",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_SharedProtected_Internal.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2792,8 +2792,8 @@
         "Azure-RMSDocs\\media\\AzRMS_SharedProtected_Internal.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\800305bed8139193087c39cde47e65f9c9b5490b.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2811,7 +2811,7 @@
     },
     "cf83b194146d981b27cef11a22c7771536a46aee": {
       "FileHash": "cf83b194146d981b27cef11a22c7771536a46aee",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_SharedProtected_InstantRevoke.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2823,8 +2823,8 @@
         "Azure-RMSDocs\\media\\AzRMS_SharedProtected_InstantRevoke.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\cf83b194146d981b27cef11a22c7771536a46aee.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2842,7 +2842,7 @@
     },
     "6ad2f7dca685152de062bb90247bb045b9c0a05d": {
       "FileHash": "6ad2f7dca685152de062bb90247bb045b9c0a05d",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_SharedProtected_EmailMe.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2854,8 +2854,8 @@
         "Azure-RMSDocs\\media\\AzRMS_SharedProtected_EmailMe.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\6ad2f7dca685152de062bb90247bb045b9c0a05d.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -2873,7 +2873,7 @@
     },
     "d4c5b0f5fa25f156128c8207806dd315c77ea413": {
       "FileHash": "d4c5b0f5fa25f156128c8207806dd315c77ea413",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_ShareProtected_SendNow.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2883,8 +2883,8 @@
         "Azure-RMSDocs\\media\\AzRMS_ShareProtected_SendNow.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d4c5b0f5fa25f156128c8207806dd315c77ea413.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -3698,7 +3698,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\office-2010-configure-for-clients.md transformed failed.",
@@ -3708,7 +3708,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -3734,7 +3734,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\office-2016-2013-configure-for-clients.md transformed failed.",
@@ -3744,7 +3744,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -3770,7 +3770,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\operations-for-your-azure-rights-management-tenant-key.md transformed failed.",
@@ -3780,7 +3780,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -4077,7 +4077,7 @@
     },
     "9899efd36ea2f4c1cbeacecf1db2ee8d5a9e73e7": {
       "FileHash": "9899efd36ea2f4c1cbeacecf1db2ee8d5a9e73e7",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_SP_CompanyDefined.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4087,8 +4087,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_SP_CompanyDefined.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\9899efd36ea2f4c1cbeacecf1db2ee8d5a9e73e7.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4106,7 +4106,7 @@
     },
     "5f6737d70c74ca955eded6ff567eded8ba1d270d": {
       "FileHash": "5f6737d70c74ca955eded6ff567eded8ba1d270d",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_Pfile.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4116,8 +4116,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_Pfile.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\5f6737d70c74ca955eded6ff567eded8ba1d270d.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4162,7 +4162,7 @@
     },
     "e9aeaad866a1fa39ce2e552c38508228b875f16a": {
       "FileHash": "e9aeaad866a1fa39ce2e552c38508228b875f16a",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_ShareProtectedMenu.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4172,8 +4172,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_ShareProtectedMenu.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\e9aeaad866a1fa39ce2e552c38508228b875f16a.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4191,7 +4191,7 @@
     },
     "ff2686fba49b43c16be4995de55336fe6902f101": {
       "FileHash": "ff2686fba49b43c16be4995de55336fe6902f101",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_SP_OfficeToolbar.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4201,8 +4201,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_SP_OfficeToolbar.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\ff2686fba49b43c16be4995de55336fe6902f101.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4220,7 +4220,7 @@
     },
     "abfc58ece506a50ac01a4ab5befab366e51fcaf0": {
       "FileHash": "abfc58ece506a50ac01a4ab5befab366e51fcaf0",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_EmailMessage.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4230,8 +4230,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_EmailMessage.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\abfc58ece506a50ac01a4ab5befab366e51fcaf0.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4277,7 +4277,7 @@
     },
     "8d942d4f95ec61aba329a044fabbe354f2cbe9d4": {
       "FileHash": "8d942d4f95ec61aba329a044fabbe354f2cbe9d4",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_QuickStartStepsAll.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4289,8 +4289,8 @@
         "Azure-RMSDocs\\media\\AzRMS_QuickStartStepsAll.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\8d942d4f95ec61aba329a044fabbe354f2cbe9d4.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4308,7 +4308,7 @@
     },
     "cfd5dda9867fc4ef0ed6f1bab4a86f37f1e0dcf1": {
       "FileHash": "cfd5dda9867fc4ef0ed6f1bab4a86f37f1e0dcf1",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps1.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4320,8 +4320,8 @@
         "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps1.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\cfd5dda9867fc4ef0ed6f1bab4a86f37f1e0dcf1.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4339,7 +4339,7 @@
     },
     "ff6cfad88db7d2e6e0026232d4d397e2de8ced37": {
       "FileHash": "ff6cfad88db7d2e6e0026232d4d397e2de8ced37",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_Tutorial_1_Screenshots.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4351,8 +4351,8 @@
         "Azure-RMSDocs\\media\\AzRMS_Tutorial_1_Screenshots.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\ff6cfad88db7d2e6e0026232d4d397e2de8ced37.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4370,7 +4370,7 @@
     },
     "b320daf88943e05e2fd9cbbe6ae27d5458f0c903": {
       "FileHash": "b320daf88943e05e2fd9cbbe6ae27d5458f0c903",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps2.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4382,8 +4382,8 @@
         "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps2.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\b320daf88943e05e2fd9cbbe6ae27d5458f0c903.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4401,7 +4401,7 @@
     },
     "6920708cdf154d659afe01079401cbcc1c1c6ab1": {
       "FileHash": "6920708cdf154d659afe01079401cbcc1c1c6ab1",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_Tutorial_2_Screenshots.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4413,8 +4413,8 @@
         "Azure-RMSDocs\\media\\AzRMS_Tutorial_2_Screenshots.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\6920708cdf154d659afe01079401cbcc1c1c6ab1.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4432,7 +4432,7 @@
     },
     "b3d271a96a9471b035600c9d2bfad12e4b05862e": {
       "FileHash": "b3d271a96a9471b035600c9d2bfad12e4b05862e",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps3.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4444,8 +4444,8 @@
         "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps3.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\b3d271a96a9471b035600c9d2bfad12e4b05862e.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4463,7 +4463,7 @@
     },
     "579a3f016f81fe1213d1bcfbd23a7f94d9d8bcf7": {
       "FileHash": "579a3f016f81fe1213d1bcfbd23a7f94d9d8bcf7",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_Tutorial_3_Screenshots.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4475,8 +4475,8 @@
         "Azure-RMSDocs\\media\\AzRMS_Tutorial_3_Screenshots.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\579a3f016f81fe1213d1bcfbd23a7f94d9d8bcf7.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4494,7 +4494,7 @@
     },
     "da8a2ad9efac2ab15d948213b44d73961c5d5337": {
       "FileHash": "da8a2ad9efac2ab15d948213b44d73961c5d5337",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps4.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4506,8 +4506,8 @@
         "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps4.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\da8a2ad9efac2ab15d948213b44d73961c5d5337.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4525,7 +4525,7 @@
     },
     "37d25df05bcdb63fef2c9d3b2e04370f527f22ba": {
       "FileHash": "37d25df05bcdb63fef2c9d3b2e04370f527f22ba",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_Tutorial_4_Screenshots.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4537,8 +4537,8 @@
         "Azure-RMSDocs\\media\\AzRMS_Tutorial_4_Screenshots.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\37d25df05bcdb63fef2c9d3b2e04370f527f22ba.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4556,7 +4556,7 @@
     },
     "9fbe0ab200bd0fc7a6a402f2dbb37eaa4fef02ba": {
       "FileHash": "9fbe0ab200bd0fc7a6a402f2dbb37eaa4fef02ba",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps5.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4568,8 +4568,8 @@
         "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps5.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\9fbe0ab200bd0fc7a6a402f2dbb37eaa4fef02ba.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4587,7 +4587,7 @@
     },
     "05d619a0282fd3ce88a1126d991e2641ef801f0e": {
       "FileHash": "05d619a0282fd3ce88a1126d991e2641ef801f0e",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_Tutorial_5_Screenshots.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4601,8 +4601,8 @@
         "Azure-RMSDocs\\media\\AzRMS_Tutorial_5_Screenshots.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\05d619a0282fd3ce88a1126d991e2641ef801f0e.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4648,7 +4648,7 @@
     },
     "5ba00fbdb71ba324ed3f4802d5092003b80ddc7c": {
       "FileHash": "5ba00fbdb71ba324ed3f4802d5092003b80ddc7c",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_ExampleBanner.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4671,8 +4671,8 @@
         "Azure-RMSDocs\\media\\AzRMS_ExampleBanner.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\5ba00fbdb71ba324ed3f4802d5092003b80ddc7c.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4744,7 +4744,7 @@
     },
     "66482e461455df133678a4383174853a0cae0374": {
       "FileHash": "66482e461455df133678a4383174853a0cae0374",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_RemoveProtection.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4754,8 +4754,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_RemoveProtection.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\66482e461455df133678a4383174853a0cae0374.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -4783,7 +4783,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\requirements-for-azure-rights-management.md transformed failed.",
@@ -4793,7 +4793,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5090,7 +5090,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\rms-for-individuals-and-azure-rights-management.md transformed failed.",
@@ -5100,7 +5100,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5126,7 +5126,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\rms-for-individuals-find-if-users-have-signed-up.md transformed failed.",
@@ -5136,7 +5136,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5162,7 +5162,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\rms-for-individuals-user-signup.md transformed failed.",
@@ -5172,7 +5172,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5225,7 +5225,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\rms-requirements-aad-directory.md transformed failed.",
@@ -5235,7 +5235,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5261,7 +5261,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\rms-requirements-applications.md transformed failed.",
@@ -5271,7 +5271,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5297,7 +5297,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\rms-requirements-client-devices.md transformed failed.",
@@ -5307,7 +5307,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5333,7 +5333,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\rms-requirements-cloud-subscriptions.md transformed failed.",
@@ -5343,7 +5343,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5369,7 +5369,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\rms-requirements-onpremises-servers.md transformed failed.",
@@ -5379,7 +5379,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5423,7 +5423,7 @@
     },
     "85d8a30438b9ceb52778cbbb45140659fd4699bf": {
       "FileHash": "85d8a30438b9ceb52778cbbb45140659fd4699bf",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_AdminBanner.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5446,8 +5446,8 @@
         "Azure-RMSDocs\\media\\AzRMS_AdminBanner.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\85d8a30438b9ceb52778cbbb45140659fd4699bf.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -5493,7 +5493,7 @@
     },
     "d922db6b88e858d53fb28e5847ef58ab4d042ffc": {
       "FileHash": "d922db6b88e858d53fb28e5847ef58ab4d042ffc",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_UsersBanner.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5514,8 +5514,8 @@
         "Azure-RMSDocs\\media\\AzRMS_UsersBanner.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d922db6b88e858d53fb28e5847ef58ab4d042ffc.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -5645,7 +5645,7 @@
     },
     "d9bbc4b67c324d7376ad179ee942e17c9811e6e6": {
       "FileHash": "d9bbc4b67c324d7376ad179ee942e17c9811e6e6",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_OutlookTemplate.PNG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5656,8 +5656,8 @@
         "Azure-RMSDocs\\media\\AzRMS_OutlookTemplate.PNG"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d9bbc4b67c324d7376ad179ee942e17c9811e6e6.PNG",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -5675,7 +5675,7 @@
     },
     "b1306874f8f145e3ef13170e7418a6047ba42651": {
       "FileHash": "b1306874f8f145e3ef13170e7418a6047ba42651",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_OWATemplate.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5686,8 +5686,8 @@
         "Azure-RMSDocs\\media\\AzRMS_OWATemplate.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\b1306874f8f145e3ef13170e7418a6047ba42651.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -5733,7 +5733,7 @@
     },
     "05f9ef9a3f6258fb49f39f034e84c773dad451b6": {
       "FileHash": "05f9ef9a3f6258fb49f39f034e84c773dad451b6",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMSUserInstructions_ShareProtectedRibbon2013.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5744,8 +5744,8 @@
         "Azure-RMSDocs\\media\\AzRMSUserInstructions_ShareProtectedRibbon2013.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\05f9ef9a3f6258fb49f39f034e84c773dad451b6.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -5790,7 +5790,7 @@
     },
     "e5823513769530a55cf0bc07742ba64360a988c7": {
       "FileHash": "e5823513769530a55cf0bc07742ba64360a988c7",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\hololens.gif",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5800,8 +5800,8 @@
         "Azure-RMSDocs\\media\\hololens.gif"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\e5823513769530a55cf0bc07742ba64360a988c7.gif",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -5883,7 +5883,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: Azure-RMSDocs\\sharing-app-install-configure.md transformed failed.",
@@ -5893,7 +5893,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization.V2\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 271",
         "extended_information": null
       },
-      "HandoffFailureTimes": 2,
+      "HandoffFailureTimes": 3,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -6100,7 +6100,7 @@
     },
     "43d58b12a759c2bb702d4cbfa5cb0914355a908b": {
       "FileHash": "43d58b12a759c2bb702d4cbfa5cb0914355a908b",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_OfficeToolbarTrackUsage.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6110,8 +6110,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_OfficeToolbarTrackUsage.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\43d58b12a759c2bb702d4cbfa5cb0914355a908b.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6129,7 +6129,7 @@
     },
     "102cb170f5a005428addaa17f2e0db1e5aaf014f": {
       "FileHash": "102cb170f5a005428addaa17f2e0db1e5aaf014f",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_OutlookTrackUsage.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6139,8 +6139,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_OutlookTrackUsage.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\102cb170f5a005428addaa17f2e0db1e5aaf014f.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6158,7 +6158,7 @@
     },
     "f7232165f1435faeee2789a436761a793d19649d": {
       "FileHash": "f7232165f1435faeee2789a436761a793d19649d",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_ExplorerTrackUsage.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6168,8 +6168,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_ExplorerTrackUsage.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\f7232165f1435faeee2789a436761a793d19649d.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6187,7 +6187,7 @@
     },
     "d9a1fc03a569ad08df142c73b01a99e4fd38b428": {
       "FileHash": "d9a1fc03a569ad08df142c73b01a99e4fd38b428",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_OutlookMessageTrackUsage.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6197,8 +6197,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_OutlookMessageTrackUsage.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d9a1fc03a569ad08df142c73b01a99e4fd38b428.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6270,7 +6270,7 @@
     },
     "e0d5b3dc765e34dd1337a26021fec5ad2c15ee3f": {
       "FileHash": "e0d5b3dc765e34dd1337a26021fec5ad2c15ee3f",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_AccessKeys.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6280,8 +6280,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_AccessKeys.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\e0d5b3dc765e34dd1337a26021fec5ad2c15ee3f.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6381,7 +6381,7 @@
     },
     "b1830be97e731a023e8772c68efbbb97a1992d91": {
       "FileHash": "b1830be97e731a023e8772c68efbbb97a1992d91",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_PfilePermission.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6391,8 +6391,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_PfilePermission.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\b1830be97e731a023e8772c68efbbb97a1992d91.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6410,7 +6410,7 @@
     },
     "71fccc1bc786ef0bbc1b31a296d4eb7e0a128996": {
       "FileHash": "71fccc1bc786ef0bbc1b31a296d4eb7e0a128996",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_RestrictedAccess.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6420,8 +6420,8 @@
         "Azure-RMSDocs\\media\\ADRMS_MSRMSApp_RestrictedAccess.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\71fccc1bc786ef0bbc1b31a296d4eb7e0a128996.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6467,7 +6467,7 @@
     },
     "6bbb0d50bf03ad546b7dcdb93056e6baff055654": {
       "FileHash": "6bbb0d50bf03ad546b7dcdb93056e6baff055654",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardActivate_small1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6478,8 +6478,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardActivate_small1.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\6bbb0d50bf03ad546b7dcdb93056e6baff055654.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6497,7 +6497,7 @@
     },
     "cbf014f54667d2a5218b36be4f560415f29e061a": {
       "FileHash": "cbf014f54667d2a5218b36be4f560415f29e061a",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal_small.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6508,8 +6508,8 @@
         "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal_small.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\cbf014f54667d2a5218b36be4f560415f29e061a.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6527,7 +6527,7 @@
     },
     "013060de59f3814245151184a2e0af8e6e6466bb": {
       "FileHash": "013060de59f3814245151184a2e0af8e6e6466bb",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_TemplatesSettings3.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6538,8 +6538,8 @@
         "Azure-RMSDocs\\media\\AzRMS_TemplatesSettings3.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\013060de59f3814245151184a2e0af8e6e6466bb.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6557,7 +6557,7 @@
     },
     "59b659ee2f0f1557406e05b2fd11feee830de55a": {
       "FileHash": "59b659ee2f0f1557406e05b2fd11feee830de55a",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal_ExplorerWord3.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6568,8 +6568,8 @@
         "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal_ExplorerWord3.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\59b659ee2f0f1557406e05b2fd11feee830de55a.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6587,7 +6587,7 @@
     },
     "e400ccd5bef4f6a29cddd1e635de0b1780b9c0f4": {
       "FileHash": "e400ccd5bef4f6a29cddd1e635de0b1780b9c0f4",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_FCI_ConnectorSmall.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6598,8 +6598,8 @@
         "Azure-RMSDocs\\media\\AzRMS_FCI_ConnectorSmall.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\e400ccd5bef4f6a29cddd1e635de0b1780b9c0f4.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6617,7 +6617,7 @@
     },
     "b7853afd1130f448ec02af8cd0da2066817d3d9b": {
       "FileHash": "b7853afd1130f448ec02af8cd0da2066817d3d9b",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_ExampleFCI_ConfigurationSmall.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6628,8 +6628,8 @@
         "Azure-RMSDocs\\media\\AzRMS_ExampleFCI_ConfigurationSmall.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\b7853afd1130f448ec02af8cd0da2066817d3d9b.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6647,7 +6647,7 @@
     },
     "d428fefc476a310b740b7ee6147c68d701a472cd": {
       "FileHash": "d428fefc476a310b740b7ee6147c68d701a472cd",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_FCI_EmailSmall.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6658,8 +6658,8 @@
         "Azure-RMSDocs\\media\\AzRMS_FCI_EmailSmall.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d428fefc476a310b740b7ee6147c68d701a472cd.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6677,7 +6677,7 @@
     },
     "f8a298c17ec101549cfe56f629ea97ec6c8ff9d6": {
       "FileHash": "f8a298c17ec101549cfe56f629ea97ec6c8ff9d6",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_DLPExample1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6688,8 +6688,8 @@
         "Azure-RMSDocs\\media\\AzRMS_DLPExample1.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\f8a298c17ec101549cfe56f629ea97ec6c8ff9d6.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6707,7 +6707,7 @@
     },
     "598b7c77c9a58aed13a184d90a6b97452c34df88": {
       "FileHash": "598b7c77c9a58aed13a184d90a6b97452c34df88",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_DLPUnprotectedEmail_small.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6718,8 +6718,8 @@
         "Azure-RMSDocs\\media\\AzRMS_DLPUnprotectedEmail_small.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\598b7c77c9a58aed13a184d90a6b97452c34df88.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6737,7 +6737,7 @@
     },
     "d87bff2cac2de89c29a985f581f8f06825e9d3ef": {
       "FileHash": "d87bff2cac2de89c29a985f581f8f06825e9d3ef",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_DLPProtectedEmail_small.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6748,8 +6748,8 @@
         "Azure-RMSDocs\\media\\AzRMS_DLPProtectedEmail_small.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d87bff2cac2de89c29a985f581f8f06825e9d3ef.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6767,7 +6767,7 @@
     },
     "a7be1d4be635df3f97197c34b5ec6e18d3c7bbd1": {
       "FileHash": "a7be1d4be635df3f97197c34b5ec6e18d3c7bbd1",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_small1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6778,8 +6778,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_small1.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\a7be1d4be635df3f97197c34b5ec6e18d3c7bbd1.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6797,7 +6797,7 @@
     },
     "d755cfb48974698b324dc51a3605cf1ad6eefa8b": {
       "FileHash": "d755cfb48974698b324dc51a3605cf1ad6eefa8b",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_small2.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6808,8 +6808,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_small2.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d755cfb48974698b324dc51a3605cf1ad6eefa8b.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6827,7 +6827,7 @@
     },
     "61256524f27787ec5e4aef7cc584058ec3d56402": {
       "FileHash": "61256524f27787ec5e4aef7cc584058ec3d56402",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_small3.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6838,8 +6838,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_small3.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\61256524f27787ec5e4aef7cc584058ec3d56402.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6857,7 +6857,7 @@
     },
     "26e0480009dcace82a652c37f5daebf3cc01f1a4": {
       "FileHash": "26e0480009dcace82a652c37f5daebf3cc01f1a4",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6868,8 +6868,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small1.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\26e0480009dcace82a652c37f5daebf3cc01f1a4.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6887,7 +6887,7 @@
     },
     "9b6ad83c5458f4f6e30201e99ebc75b83c83e070": {
       "FileHash": "9b6ad83c5458f4f6e30201e99ebc75b83c83e070",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small2.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6898,8 +6898,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small2.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\9b6ad83c5458f4f6e30201e99ebc75b83c83e070.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6917,7 +6917,7 @@
     },
     "81c23a2acf1cce321bf1aa29973272c1ad37b292": {
       "FileHash": "81c23a2acf1cce321bf1aa29973272c1ad37b292",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small3.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6928,8 +6928,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small3.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\81c23a2acf1cce321bf1aa29973272c1ad37b292.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -6947,7 +6947,7 @@
     },
     "d8d408182f1382d7be1c9a509b14ee76f75cc38d": {
       "FileHash": "d8d408182f1382d7be1c9a509b14ee76f75cc38d",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small4.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6958,8 +6958,8 @@
         "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small4.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d8d408182f1382d7be1c9a509b14ee76f75cc38d.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -7005,7 +7005,7 @@
     },
     "7cbc08e4b635e579cddd06662f5ee409e3577934": {
       "FileHash": "7cbc08e4b635e579cddd06662f5ee409e3577934",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\media\\AzRMS_elements.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -7016,8 +7016,8 @@
         "Azure-RMSDocs\\media\\AzRMS_elements.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\7cbc08e4b635e579cddd06662f5ee409e3577934.png",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -8764,7 +8764,7 @@
     },
     "a6e19f37ffdb755ca876cd615ffb245ece8f5034": {
       "FileHash": "a6e19f37ffdb755ca876cd615ffb245ece8f5034",
-      "SourceFileCommit": "c1f767eebde8e995bab0f394283af888697c9bae",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
       "SourceFilePath": "Azure-RMSDocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -8772,8 +8772,8 @@
         "Azure-RMSDocs\\DeployUse\\TOC.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\TOC.c962a621438ba36bd64ceffe2cdf9489982e7f7e.zh-cn.xlf",
-      "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
-      "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
@@ -8882,6 +8882,33 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\TOC.1a442f24d78e7e4740d81de068ca0ec867b52fe1.zh-cn.xlf",
       "HandoffFileCommit": "ac58a395e07d49e0b879a219d13130ee7ed08a59",
       "HandoffDateTime": "2016-03-03T00:08:55.076447Z",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "c8a442084ec6401c37e5d7dff0aa5c8bdb4727c9": {
+      "FileHash": "c8a442084ec6401c37e5d7dff0aa5c8bdb4727c9",
+      "SourceFileCommit": "75b888ecc7ce58f213cb12f1592aa8ad62652a27",
+      "SourceFilePath": "Azure-RMSDocs\\Understand\\TOC.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\Understand\\TOC.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\TOC.1a442f24d78e7e4740d81de068ca0ec867b52fe1.zh-cn.xlf",
+      "HandoffFileCommit": "55d3ebe9811dc4446b3063542f99bc28ab46b69b",
+      "HandoffDateTime": "2016-03-03T00:48:21.5061529Z",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
       "TargetFileCommit": null,
