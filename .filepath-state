@@ -163,104 +163,53 @@
   "26b12e20ce0b5ed42a22c6decf0eb8e1ee35cf75": [
     "Azure-RMSDocs\\full-screen-picture-a-sharepoint-protected-document.md"
   ],
-  "8e00c7c29ea4034042f2ab548619f141e659804e": [
-    "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_3.png"
-  ],
   "71f7bb5ebd1ba52aed41278ed03d61082f6d0b0c": [
     "Azure-RMSDocs\\full-screen-picture-activating-rights-management.md"
-  ],
-  "0c772653ab722c6d9921310918f8adce63f92bfd": [
-    "Azure-RMSDocs\\media\\AzRMS_StoryboardActivate.png"
   ],
   "2b00d09b1750e4f5171b7fa3866c33f958d2d5a3": [
     "Azure-RMSDocs\\full-screen-picture-alice-gets-email-notification.md"
   ],
-  "8db60d8f88bdd42a9df19a80d84f93e8bc57eb04": [
-    "Azure-RMSDocs\\media\\AzRMS_StoryboardEmaill4.PNG"
-  ],
   "1faf013f948560820f982d5bde3293518518bb62": [
     "Azure-RMSDocs\\full-screen-picture-alice-shares-protected-attachment.md"
-  ],
-  "787d5feed4aa1de7c61bda74db542271389b6f2c": [
-    "Azure-RMSDocs\\media\\AzRMS_StoryboardEmaill1.PNG"
   ],
   "5705a50de4ce02f78fc7228f6b7e4924d524f205": [
     "Azure-RMSDocs\\full-screen-picture-an-external-email-protected-by-dlp-and-azure-rms.md"
   ],
-  "a8e817c884c0d979d45e2298ad42bd5062539919": [
-    "Azure-RMSDocs\\media\\AzRMS_DLPProtectedEmail.png"
-  ],
   "cac81b131f0951d0cc34b41cc1201547afbe85c9": [
     "Azure-RMSDocs\\full-screen-picture-an-unprotected-email-internal-.md"
-  ],
-  "4c492dd50cca6146ed856fec32c0b41c246c6e36": [
-    "Azure-RMSDocs\\media\\AzRMS_DLPUnprotectedEmail.png"
   ],
   "d29b867a9a5a240263aa55548995df42d3c5de31": [
     "Azure-RMSDocs\\full-screen-picture-available-settings-for-rms-templates.md"
   ],
-  "5ec639eaaf1c2288b242edcd3755f4329dbc4b86": [
-    "Azure-RMSDocs\\media\\AzRMS_TemplatesSettings.png"
-  ],
   "e444c71dfb8dcc1302aa01deefea7b237eca9aae": [
     "Azure-RMSDocs\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.md"
-  ],
-  "d9f0314d5243503acd00df238ce5d315b513633d": [
-    "Azure-RMSDocs\\media\\AzRMS_StoryboardEmaill3.PNG"
   ],
   "e8d7c198d9794a147ecd27ff2b7535f1d2e305ae": [
     "Azure-RMSDocs\\full-screen-picture-bob-sees-the-email-on-his-ipad.md"
   ],
-  "8182786658a5308cb246c5780b235e5de0a1f648": [
-    "Azure-RMSDocs\\media\\AzRMS_StoryboardEmaill2.PNG"
-  ],
   "a278f7ecbc9f9983b5520a550216aa3819a635a1": [
     "Azure-RMSDocs\\full-screen-picture-confidential-report-accidentally-sent-to-wrong-person.md"
-  ],
-  "e84f67759d59796d1911f31826f7386555d4f414": [
-    "Azure-RMSDocs\\media\\AzRMS_FCI_Email.png"
   ],
   "351aebeb35cb1c5495035f2daedca0837780ea7f": [
     "Azure-RMSDocs\\full-screen-picture-configuring-dlp-for-azure-rms.md"
   ],
-  "b6e964b1fb44e8e046ccfb2b26736ab9bfbdaf24": [
-    "Azure-RMSDocs\\media\\AzRMS_DLPExample.png"
-  ],
   "fcab3d64e6affa02217a3949504a0cccac2a2aaa": [
     "Azure-RMSDocs\\full-screen-picture-configuring-fci-for-the-marketing-classification.md"
-  ],
-  "3be0bd8b442d0ded6a4cbeee5f5fe32f18282cc2": [
-    "Azure-RMSDocs\\media\\AzRMS_ExampleFCI_Configuration.png"
   ],
   "4315fcef6515559a80fa017cd5ef260432aff4ea": [
     "Azure-RMSDocs\\full-screen-picture-enabling-irm-for-a-library.md"
   ],
-  "49c6dacd36a7ead895f9089118cf60cacdb26d8f": [
-    "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_2.PNG"
-  ],
   "b12f2a2ea43176e4444301185787ed99759ca0bb": [
     "Azure-RMSDocs\\full-screen-picture-enabling-irm-on-sharepoint-online.md"
-  ],
-  "dd1e218c9f2e427c5a3cb153d76478f09a1c2bb2": [
-    "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_1.png"
   ],
   "d19df18cc15258d275992f9c4174a18c56d5e325": [
     "Azure-RMSDocs\\full-screen-picture-installing-and-configuring-the-rms-connector-for-fci.md"
   ],
-  "9ea9bb7453b6a38284e6c2be11d762c092a15be3": [
-    "Azure-RMSDocs\\media\\AzRMS_FCI_Connector.png"
-  ],
   "cd1a89e7fc96765503317d1fa42b0c74c843dbce": [
     "Azure-RMSDocs\\full-screen-picture-rms-templates-in-the-azure-management-portal.md"
   ],
-  "df64a7d340fab235878695b48dfea7f58e4b468d": [
-    "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal.png"
-  ],
   "14445119ec84397b4cb34e44cc9e47f38b07d81e": [
     "Azure-RMSDocs\\full-screen-picture-select-rms-templates-in-applications,-such-as-file-explorer-and-word.md"
-  ],
-  "a7d52d881e293f35c8dfe37fa65f4d021dc0ec93": [
-    "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal_ExplorerWord.png"
   ],
   "ef04e0f749d36f315a049c962d1ca8fe2c2dafc5": [
     "Azure-RMSDocs\\generate-transfer-tenant-key-in-person.md"
