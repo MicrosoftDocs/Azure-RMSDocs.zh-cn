@@ -5,13 +5,13 @@
  -------- | ----- 
  Total Files | 307
 [ Handoff Failed Files ](#handoff-failed-list)| 17
-[ Handoff Success Files ](#handoff-success-list)| 253
+[ Handoff Success Files ](#handoff-success-list)| 247
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 37
+[ Ignored Files ](#ignored-list)| 43
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
  Source File | Status | Details 
@@ -87,12 +87,6 @@
  [Azure-RMSDocs\GetStarted\media\150x150.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/media/150x150.png) | HandedOffSuccess | [Details](#84421bf7f4ba657e685239fb27f4798a46485f7163)
  [Azure-RMSDocs\GetStarted\quick-start-tutorial-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/Azure-RMSDocs/GetStarted/quick-start-tutorial-for-azure-rights-management.md) | HandedOffSuccess | [Details](#29ee5341dccf53e6085f94dae64a59172e4c0e0b64)
  [Azure-RMSDocs\GetStarted\rapid-deployment-guide-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/Azure-RMSDocs/GetStarted/rapid-deployment-guide-for-azure-rights-management.md) | HandedOffSuccess | [Details](#56aba1fc52a22930941f3052fe185ef4c5e7104965)
- [Azure-RMSDocs\GetStarted\rms-quickstart-intro.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/674216b71c361115c0484823b1f50151d0ef10cb/Azure-RMSDocs/GetStarted/rms-quickstart-intro.md) | HandedOffSuccess | [Details](#296926c80b47878cdc6dd8226b967ab9a4d8b76567)
- [Azure-RMSDocs\GetStarted\rms-quickstart-step1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/674216b71c361115c0484823b1f50151d0ef10cb/Azure-RMSDocs/GetStarted/rms-quickstart-step1.md) | HandedOffSuccess | [Details](#d8c03a8122ae6dea8da0af49835e8367a9f62c1868)
- [Azure-RMSDocs\GetStarted\rms-quickstart-step2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/674216b71c361115c0484823b1f50151d0ef10cb/Azure-RMSDocs/GetStarted/rms-quickstart-step2.md) | HandedOffSuccess | [Details](#b2e6c812df22e899b224c909f28fd2de6754b3ff69)
- [Azure-RMSDocs\GetStarted\rms-quickstart-step3.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/674216b71c361115c0484823b1f50151d0ef10cb/Azure-RMSDocs/GetStarted/rms-quickstart-step3.md) | HandedOffSuccess | [Details](#884a17b8e65d9be17215e9545276b23d326a05ab70)
- [Azure-RMSDocs\GetStarted\rms-quickstart-step4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/674216b71c361115c0484823b1f50151d0ef10cb/Azure-RMSDocs/GetStarted/rms-quickstart-step4.md) | HandedOffSuccess | [Details](#4175aa6ac48ec8808a6939439ae9d290d7a2bc0071)
- [Azure-RMSDocs\GetStarted\rms-quickstart-step5.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/674216b71c361115c0484823b1f50151d0ef10cb/Azure-RMSDocs/GetStarted/rms-quickstart-step5.md) | HandedOffSuccess | [Details](#81767880a94415bb760f8203abf4df8fa1ed59a872)
  [Azure-RMSDocs\GetStarted\Sample.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/Azure-RMSDocs/GetStarted/Sample.md) | HandedOffSuccess | [Details](#9c88919d7ce38bdff89837c2cdae571d09ec7fd478)
  [Azure-RMSDocs\GetStarted\scenario-configure-work-folders-for-persistent-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/Azure-RMSDocs/GetStarted/scenario-configure-work-folders-for-persistent-protection.md) | HandedOffSuccess | [Details](#859164229cc6caea99af24e3e22146aa2cf8ed4e79)
  [Azure-RMSDocs\GetStarted\scenario-executives-securely-exchange-privileged-information.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/Azure-RMSDocs/GetStarted/scenario-executives-securely-exchange-privileged-information.md) | HandedOffSuccess | [Details](#bd0e8b9f65cd229cee518bcf11f377843d8ae24980)
@@ -314,6 +308,12 @@
  [Azure-RMSDocs\Develop\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/Develop/docfx.json) | Ignored | [Details](#50c6711539106c08a3af2aff41bce2851853725a34)
  [Azure-RMSDocs\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/docfx.json) | Ignored | [Details](#a53261ccca8db12b6745af97e4ea07cf3c077e6336)
  [Azure-RMSDocs\GetStarted\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/docfx.json) | Ignored | [Details](#18821a778c0dd612ec57f32ad0dfa239d342698f60)
+ [Azure-RMSDocs\GetStarted\rms-quickstart-intro.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/rms-quickstart-intro.md) | Ignored | [Details](#e8d00c89ac226c320946eca7cdfc9b3e1d863c6067)
+ [Azure-RMSDocs\GetStarted\rms-quickstart-step1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/rms-quickstart-step1.md) | Ignored | [Details](#087e949518d1115a37754e700e41eb7b4e37016668)
+ [Azure-RMSDocs\GetStarted\rms-quickstart-step2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/rms-quickstart-step2.md) | Ignored | [Details](#6b7d38151949bc2d37422044669337be56396f5d69)
+ [Azure-RMSDocs\GetStarted\rms-quickstart-step3.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/rms-quickstart-step3.md) | Ignored | [Details](#4083b35d1c76797fa241d0be89e70aa096a88b6b70)
+ [Azure-RMSDocs\GetStarted\rms-quickstart-step4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/rms-quickstart-step4.md) | Ignored | [Details](#b71bb791bd03869626d6a462c60fdbc45ed7dc4071)
+ [Azure-RMSDocs\GetStarted\rms-quickstart-step5.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/rms-quickstart-step5.md) | Ignored | [Details](#6ad163e6fd07d5b2a978c690f8f21f5f0870633372)
  [Azure-RMSDocs\index.html](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/index.html) | Ignored | [Details](#8dfb2dd36ec1274f681fde37a30e4e3c2a3939b5119)
  [Azure-RMSDocs\media\ADRMS_MSRMSApp_ProtectCustom.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/media/ADRMS_MSRMSApp_ProtectCustom.gif) | Ignored | [Details](#a92b83706a626411ae959ebe0be5e55d78fe7446130)
  [Azure-RMSDocs\media\ADRMS_MSRMSApp_SP_ConsumePfile.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/media/ADRMS_MSRMSApp_SP_ConsumePfile.gif) | Ignored | [Details](#5d2f20557a431bdb26e178ad24039f7b432438a3135)
@@ -1156,72 +1156,72 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='296926c80b47878cdc6dd8226b967ab9a4d8b76567'></a> Source: [Azure-RMSDocs\GetStarted\rms-quickstart-intro.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/674216b71c361115c0484823b1f50151d0ef10cb/Azure-RMSDocs/GetStarted/rms-quickstart-intro.md)
-* Status: HandedOffSuccess
+##### <a name='e8d00c89ac226c320946eca7cdfc9b3e1d863c6067'></a> Source: [Azure-RMSDocs\GetStarted\rms-quickstart-intro.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/rms-quickstart-intro.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [rms-quickstart-intro.1f29a0b392ffb38bbc2f5445c5042a2a2e572400.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/2b4ca141c12e2ae72a810182be44ef25b70a195e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rms-quickstart-intro.1f29a0b392ffb38bbc2f5445c5042a2a2e572400.zh-cn.xlf)
-* Handoff Datetime: 2016-03-08 20:49:40
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='d8c03a8122ae6dea8da0af49835e8367a9f62c1868'></a> Source: [Azure-RMSDocs\GetStarted\rms-quickstart-step1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/674216b71c361115c0484823b1f50151d0ef10cb/Azure-RMSDocs/GetStarted/rms-quickstart-step1.md)
-* Status: HandedOffSuccess
+##### <a name='087e949518d1115a37754e700e41eb7b4e37016668'></a> Source: [Azure-RMSDocs\GetStarted\rms-quickstart-step1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/rms-quickstart-step1.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [rms-quickstart-step1.e1df002d61e0e00f3d669e26bed24183e159a36a.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/2b4ca141c12e2ae72a810182be44ef25b70a195e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rms-quickstart-step1.e1df002d61e0e00f3d669e26bed24183e159a36a.zh-cn.xlf)
-* Handoff Datetime: 2016-03-08 20:49:40
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='b2e6c812df22e899b224c909f28fd2de6754b3ff69'></a> Source: [Azure-RMSDocs\GetStarted\rms-quickstart-step2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/674216b71c361115c0484823b1f50151d0ef10cb/Azure-RMSDocs/GetStarted/rms-quickstart-step2.md)
-* Status: HandedOffSuccess
+##### <a name='6b7d38151949bc2d37422044669337be56396f5d69'></a> Source: [Azure-RMSDocs\GetStarted\rms-quickstart-step2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/rms-quickstart-step2.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [rms-quickstart-step2.a6642ab8dbc9436af88c1220638a2c7183fa3269.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/2b4ca141c12e2ae72a810182be44ef25b70a195e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rms-quickstart-step2.a6642ab8dbc9436af88c1220638a2c7183fa3269.zh-cn.xlf)
-* Handoff Datetime: 2016-03-08 20:49:40
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='884a17b8e65d9be17215e9545276b23d326a05ab70'></a> Source: [Azure-RMSDocs\GetStarted\rms-quickstart-step3.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/674216b71c361115c0484823b1f50151d0ef10cb/Azure-RMSDocs/GetStarted/rms-quickstart-step3.md)
-* Status: HandedOffSuccess
+##### <a name='4083b35d1c76797fa241d0be89e70aa096a88b6b70'></a> Source: [Azure-RMSDocs\GetStarted\rms-quickstart-step3.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/rms-quickstart-step3.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [rms-quickstart-step3.3cf479140b0b5adb32fa3fd44544dde6bf782164.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/2b4ca141c12e2ae72a810182be44ef25b70a195e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rms-quickstart-step3.3cf479140b0b5adb32fa3fd44544dde6bf782164.zh-cn.xlf)
-* Handoff Datetime: 2016-03-08 20:49:40
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='4175aa6ac48ec8808a6939439ae9d290d7a2bc0071'></a> Source: [Azure-RMSDocs\GetStarted\rms-quickstart-step4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/674216b71c361115c0484823b1f50151d0ef10cb/Azure-RMSDocs/GetStarted/rms-quickstart-step4.md)
-* Status: HandedOffSuccess
+##### <a name='b71bb791bd03869626d6a462c60fdbc45ed7dc4071'></a> Source: [Azure-RMSDocs\GetStarted\rms-quickstart-step4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/rms-quickstart-step4.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [rms-quickstart-step4.78e7a737bf214f4beaf394706f31c1fa9c05d86a.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/2b4ca141c12e2ae72a810182be44ef25b70a195e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rms-quickstart-step4.78e7a737bf214f4beaf394706f31c1fa9c05d86a.zh-cn.xlf)
-* Handoff Datetime: 2016-03-08 20:49:40
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='81767880a94415bb760f8203abf4df8fa1ed59a872'></a> Source: [Azure-RMSDocs\GetStarted\rms-quickstart-step5.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/674216b71c361115c0484823b1f50151d0ef10cb/Azure-RMSDocs/GetStarted/rms-quickstart-step5.md)
-* Status: HandedOffSuccess
+##### <a name='6ad163e6fd07d5b2a978c690f8f21f5f0870633372'></a> Source: [Azure-RMSDocs\GetStarted\rms-quickstart-step5.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a84ff9b7243cb12eb8b71283b2ba45d872089f1/Azure-RMSDocs/GetStarted/rms-quickstart-step5.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [rms-quickstart-step5.72390b2e03a8e1945c9ed997dadc09118c8548b4.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/2b4ca141c12e2ae72a810182be44ef25b70a195e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rms-quickstart-step5.72390b2e03a8e1945c9ed997dadc09118c8548b4.zh-cn.xlf)
-* Handoff Datetime: 2016-03-08 20:49:40
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
