@@ -99,15 +99,15 @@
     "Azure-RMSDocs\\Troubleshoot\\media\\150x150.png",
     "Azure-RMSDocs\\Understand\\media\\150x150.png"
   ],
-  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
-    "Azure-RMSDocs\\DeployUse\\TOC.md"
-  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
     "Azure-RMSDocs\\GetStarted\\TOC.md",
     "Azure-RMSDocs\\PlanDesign\\TOC.md",
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
+  ],
+  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
   ],
   "a6e19f37ffdb755ca876cd615ffb245ece8f5034": [
     "Azure-RMSDocs\\DeployUse\\TOC.md"
@@ -396,6 +396,9 @@
   ],
   "fa672e3812f197d75207e4b1e62c2fc7d76dc186": [
     "Azure-RMSDocs\\GetStarted\\information-and-support-for-azure-rights-management.md"
+  ],
+  "c0b9eb1686d2aa3e17679bfad0f7558aa23cdcf4": [
+    "Azure-RMSDocs\\Administer\\installing-windows-powershell-for-azure-rights-management.md"
   ],
   "78c9778fbbffb26a0e14df88a112b7a912978460": [
     "Azure-RMSDocs\\Administer\\installing-windows-powershell-for-azure-rights-management.md"
@@ -789,6 +792,9 @@
   ],
   "e9abd459f6c26d1b9baed676b9aa96f303e3dcbe": [
     "Azure-RMSDocs\\Understand\\rms-for-individuals-admins-take-control.md"
+  ],
+  "816dc595736ebc9605e9d280dd25526ae0b19c1c": [
+    "Azure-RMSDocs\\Administer\\administering-azure-rights-management-with-powershell.md"
   ],
   "e3c45199bc4e84d076d1408bc52079f86c804e40": [
     "Azure-RMSDocs\\Administer\\administering-azure-rights-management-with-powershell.md"
