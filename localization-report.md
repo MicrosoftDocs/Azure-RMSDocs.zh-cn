@@ -307,7 +307,7 @@
  ----------- | ------ | ------- 
  [.gitignore](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/95bd48b0ea6d797b2e60ad2fc388c15c2bb5c004/.gitignore) | Ignored | [Details](#7c4de7495fb4bb76bd8b9102a4ab583ce46e5cad0)
  [.gitmodules](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/95bd48b0ea6d797b2e60ad2fc388c15c2bb5c004/.gitmodules) | Ignored | [Details](#fdd99c4a6c43e86b7922b257545713c1d8e837c31)
- [.localization-config](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/95bd48b0ea6d797b2e60ad2fc388c15c2bb5c004/.localization-config) | Ignored | [Details](#529b4c1708d904ef551617223a25f076c11fe8bf2)
+ [.localization-config](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/95bd48b0ea6d797b2e60ad2fc388c15c2bb5c004/.localization-config) | Ignored | [Details](#93c90314770aa2d28e97713ad7ce3d4194c1f4162)
  [.openpublishing.build.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/95bd48b0ea6d797b2e60ad2fc388c15c2bb5c004/.openpublishing.build.ps1) | Ignored | [Details](#9103b6933f2481864ecb6a66b76ba730e7f133b43)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/95bd48b0ea6d797b2e60ad2fc388c15c2bb5c004/.openpublishing.publish.config.json) | Ignored | [Details](#23d1ec05dba361348b014b374b6e129ea11c0b714)
  [Azure-RMSDocs\Administer\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/95bd48b0ea6d797b2e60ad2fc388c15c2bb5c004/Azure-RMSDocs/Administer/docfx.json) | Ignored | [Details](#a1d70bd61449037a0d5fa4013571b43474f988d87)
@@ -367,7 +367,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='529b4c1708d904ef551617223a25f076c11fe8bf2'></a> Source: [.localization-config](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/95bd48b0ea6d797b2e60ad2fc388c15c2bb5c004/.localization-config)
+##### <a name='93c90314770aa2d28e97713ad7ce3d4194c1f4162'></a> Source: [.localization-config](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/95bd48b0ea6d797b2e60ad2fc388c15c2bb5c004/.localization-config)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
