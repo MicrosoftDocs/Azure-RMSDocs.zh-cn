@@ -99,15 +99,15 @@
     "Azure-RMSDocs\\Troubleshoot\\media\\150x150.png",
     "Azure-RMSDocs\\Understand\\media\\150x150.png"
   ],
+  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
+  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
     "Azure-RMSDocs\\GetStarted\\TOC.md",
     "Azure-RMSDocs\\PlanDesign\\TOC.md",
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
-  ],
-  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
-    "Azure-RMSDocs\\DeployUse\\TOC.md"
   ],
   "a6e19f37ffdb755ca876cd615ffb245ece8f5034": [
     "Azure-RMSDocs\\DeployUse\\TOC.md"
@@ -124,10 +124,10 @@
   "4e4856e45b3a820d949c5918b4ad8bbf3261a596": [
     "Azure-RMSDocs\\GetStarted\\TOC.md"
   ],
-  "b6447036d783240f4d23929dbb9bce3934360dd1": [
+  "012d0dd7fd18cc731a3682491d17985e14cb0612": [
     "Azure-RMSDocs\\PlanDesign\\TOC.md"
   ],
-  "012d0dd7fd18cc731a3682491d17985e14cb0612": [
+  "b6447036d783240f4d23929dbb9bce3934360dd1": [
     "Azure-RMSDocs\\PlanDesign\\TOC.md"
   ],
   "0e4667610b7098221e6d520871f69fd5832e7d1c": [
@@ -441,6 +441,9 @@
   ],
   "fdfae7ec0338f5049f3f34082b529b8a698919ab": [
     "Azure-RMSDocs\\Understand\\other-apps-support-apis.md"
+  ],
+  "952885f178a45c717e98d13bb07453c977918641": [
+    "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
   ],
   "be716959b6da4228351caa35382e97cea09b6ded": [
     "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
@@ -808,12 +811,12 @@
   "e3c45199bc4e84d076d1408bc52079f86c804e40": [
     "Azure-RMSDocs\\Administer\\administering-azure-rights-management-with-powershell.md"
   ],
+  "e8d00c89ac226c320946eca7cdfc9b3e1d863c60": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md"
+  ],
   "c424e81b9a8efc428a87422b92fe499700fbfbf1": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md",
     "Azure-RMSDocs\\rms-quickstart-intro.md"
-  ],
-  "e8d00c89ac226c320946eca7cdfc9b3e1d863c60": [
-    "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md"
   ],
   "296926c80b47878cdc6dd8226b967ab9a4d8b765": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md"
@@ -890,6 +893,9 @@
   "55edcd29e7c20cca31c1c8e2339423c1ae888881": [
     "Azure-RMSDocs\\PlanDesign\\byok-pricing-and-restrictions.md"
   ],
+  "d99b995692bccf6de37b6f0f70ed111b254b163a": [
+    "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-in-person.md"
+  ],
   "0c5185919d8c16a4944566ffd00352e3236e5b61": [
     "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-in-person.md"
   ],
@@ -901,5 +907,8 @@
   ],
   "8dfb2dd36ec1274f681fde37a30e4e3c2a3939b5": [
     "Azure-RMSDocs\\index.html"
+  ],
+  "b404481b000f28cf8508c1e7b4e4d8915c73e268": [
+    "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-over-the-internet.md"
   ]
 }
