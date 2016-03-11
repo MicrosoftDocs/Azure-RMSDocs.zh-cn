@@ -99,15 +99,15 @@
     "Azure-RMSDocs\\Troubleshoot\\media\\150x150.png",
     "Azure-RMSDocs\\Understand\\media\\150x150.png"
   ],
+  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
+  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
     "Azure-RMSDocs\\GetStarted\\TOC.md",
     "Azure-RMSDocs\\PlanDesign\\TOC.md",
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
-  ],
-  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
-    "Azure-RMSDocs\\DeployUse\\TOC.md"
   ],
   "a6e19f37ffdb755ca876cd615ffb245ece8f5034": [
     "Azure-RMSDocs\\DeployUse\\TOC.md"
@@ -415,6 +415,9 @@
   "bacd5f82095452dd9c19378ba0dd260bd3402d0d": [
     "Azure-RMSDocs\\DeployUse\\logging-and-analyzing-azure-rights-management-usage.md"
   ],
+  "4d43433cc0ec5e705543d4dc32ffb44b2be50a0a": [
+    "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management.md"
+  ],
   "592821bc8819220462f30f7ba2640c669f232b0e": [
     "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management.md"
   ],
@@ -441,6 +444,9 @@
   ],
   "fdfae7ec0338f5049f3f34082b529b8a698919ab": [
     "Azure-RMSDocs\\Understand\\other-apps-support-apis.md"
+  ],
+  "dba4ae856c69a9c00c922adc958b74af41e3c011": [
+    "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
   ],
   "899ec57d6536e44ff4a124d18302d8220e9fa0c0": [
     "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
@@ -910,8 +916,14 @@
   "9bf394f9b6c9a5b4924de2407f8d8e61d01bd6c8": [
     "Azure-RMSDocs\\RMSClient\\TOC.md"
   ],
+  "bdb381fd317e158c78a0493a7b2add2c16fd7d87": [
+    "Azure-RMSDocs\\PlanDesign\\byok-pricing-and-restrictions.md"
+  ],
   "55edcd29e7c20cca31c1c8e2339423c1ae888881": [
     "Azure-RMSDocs\\PlanDesign\\byok-pricing-and-restrictions.md"
+  ],
+  "8ba428e9e8773847c41bf8447994c66d43516027": [
+    "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-in-person.md"
   ],
   "e37a1878cb6381dacf405f1c9c01ee834037866b": [
     "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-in-person.md"
@@ -933,6 +945,9 @@
   ],
   "660015959dabd5def915bb184d5fa22f2985a202": [
     "Azure-RMSDocs\\PlanDesign\\information-about-thales-hms-and-microsoft-additions.md"
+  ],
+  "6c6e1421fa36655d5aff56fe9c02df6307b2b06b": [
+    "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-over-the-internet.md"
   ],
   "6dc987769d73e24dd6598ab6ab9e2cec6a74d26e": [
     "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-over-the-internet.md"
