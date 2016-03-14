@@ -72,6 +72,9 @@
     "Azure-RMSDocs\\customer-managed-tenant-key-lifecycle-operations.md",
     "Azure-RMSDocs\\Develop\\developers-guide.md"
   ],
+  "0111cd0d0f58b67d5e7f89205fba54b2c4d6812f": [
+    "Azure-RMSDocs\\Develop\\developers-guide.md"
+  ],
   "b8b1b2b15b3397496889fddeafcb45b7011de4ed": [
     "Azure-RMSDocs\\DeployUse\\decommissioning-and-deactivating-azure-rights-management.md"
   ],
@@ -96,15 +99,15 @@
   "84421bf7f4ba657e685239fb27f4798a46485f71": [
     "Azure-RMSDocs\\DeployUse\\media\\150x150.png"
   ],
+  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
+  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
     "Azure-RMSDocs\\GetStarted\\TOC.md",
     "Azure-RMSDocs\\PlanDesign\\TOC.md",
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
-  ],
-  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
-    "Azure-RMSDocs\\DeployUse\\TOC.md"
   ],
   "a6e19f37ffdb755ca876cd615ffb245ece8f5034": [
     "Azure-RMSDocs\\DeployUse\\TOC.md"
@@ -169,6 +172,9 @@
   "26b12e20ce0b5ed42a22c6decf0eb8e1ee35cf75": [
     "Azure-RMSDocs\\full-screen-picture-a-sharepoint-protected-document.md"
   ],
+  "6c6ff232cc9f2d39e21c50971eb566628ec30f03": [
+    "Azure-RMSDocs\\full-screen-picture-activating-rights-management.md"
+  ],
   "71f7bb5ebd1ba52aed41278ed03d61082f6d0b0c": [
     "Azure-RMSDocs\\full-screen-picture-activating-rights-management.md"
   ],
@@ -186,6 +192,9 @@
   ],
   "d29b867a9a5a240263aa55548995df42d3c5de31": [
     "Azure-RMSDocs\\full-screen-picture-available-settings-for-rms-templates.md"
+  ],
+  "7ab98a07a90a48ec93491137bc7006c84e703534": [
+    "Azure-RMSDocs\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.md"
   ],
   "e444c71dfb8dcc1302aa01deefea7b237eca9aae": [
     "Azure-RMSDocs\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.md"
