@@ -94,13 +94,7 @@
     "Azure-RMSDocs\\Understand\\Sample.md"
   ],
   "84421bf7f4ba657e685239fb27f4798a46485f71": [
-    "Azure-RMSDocs\\DeployUse\\media\\150x150.png",
-    "Azure-RMSDocs\\PlanDesign\\media\\150x150.png",
-    "Azure-RMSDocs\\Troubleshoot\\media\\150x150.png",
-    "Azure-RMSDocs\\Understand\\media\\150x150.png"
-  ],
-  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
-    "Azure-RMSDocs\\DeployUse\\TOC.md"
+    "Azure-RMSDocs\\DeployUse\\media\\150x150.png"
   ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
@@ -108,6 +102,9 @@
     "Azure-RMSDocs\\PlanDesign\\TOC.md",
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
+  ],
+  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
   ],
   "a6e19f37ffdb755ca876cd615ffb245ece8f5034": [
     "Azure-RMSDocs\\DeployUse\\TOC.md"
@@ -135,6 +132,9 @@
   ],
   "99c94cd379f2ce6097c2fb0f885485b5a59ab257": [
     "Azure-RMSDocs\\PlanDesign\\TOC.md"
+  ],
+  "5c69f666408bac3d5aeebb508bb0ad67cf0c1ef8": [
+    "Azure-RMSDocs\\Understand\\TOC.md"
   ],
   "05f0a6dfbe89520879cddb8a1e35ebe3ccdbf891": [
     "Azure-RMSDocs\\Understand\\TOC.md"
@@ -1064,7 +1064,7 @@
     "Azure-RMSDocs\\Develop\\how-to-set-up-your-test-environment.md"
   ],
   "2a77f2cbf3b3e3c9ffbbb0343151febd754eb0b8": [
-    "Azure-RMSDocs\\Develop\\how-to-use-file-api-with-aadrm-cloud-.md"
+    "Azure-RMSDocs\\Develop\\how-to-use-file-api-with-aadrm-cloud.md"
   ],
   "d0ba2216095e19c90771473680fe1e6fb38175e2": [
     "Azure-RMSDocs\\Develop\\how-to-use-msipc.md"
@@ -1097,7 +1097,7 @@
     "Azure-RMSDocs\\Develop\\release-notes.md"
   ],
   "65314b6fe5b429d12be28b3975d5ae8ddf0cd3ac": [
-    "Azure-RMSDocs\\Develop\\release-notes-rtm-.md"
+    "Azure-RMSDocs\\Develop\\release-notes-rtm.md"
   ],
   "f30a3270cb437132b5343c16d2355acda58ad05d": [
     "Azure-RMSDocs\\Develop\\running-your-first-application.md"
@@ -1109,7 +1109,7 @@
     "Azure-RMSDocs\\Develop\\sdk-elements.md"
   ],
   "314aca74240d81dcea32ef5d76f7c40bb6ed7566": [
-    "Azure-RMSDocs\\Develop\\setting-the-api-security-mode-api-mode-.md"
+    "Azure-RMSDocs\\Develop\\setting-the-api-security-mode-api-mode.md"
   ],
   "52a50c669d4e54adf3ca6ddb30f903b316231359": [
     "Azure-RMSDocs\\Develop\\setup-developer-environment.md"
@@ -1128,6 +1128,9 @@
   ],
   "1e6454c4579ac1a54a4a107b0acb8e3a18d37ad7": [
     "Azure-RMSDocs\\Develop\\terms.md"
+  ],
+  "a7bc0c1ef6ae8aaaebbd83478129eeb0c6072968": [
+    "Azure-RMSDocs\\Develop\\TOC.md"
   ],
   "5a00ccaf7e0ff66466dd288e7e7550e133f88348": [
     "Azure-RMSDocs\\Develop\\TOC.md"
