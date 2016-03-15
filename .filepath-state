@@ -99,15 +99,15 @@
   "84421bf7f4ba657e685239fb27f4798a46485f71": [
     "Azure-RMSDocs\\DeployUse\\media\\150x150.png"
   ],
+  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
+  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
     "Azure-RMSDocs\\GetStarted\\TOC.md",
     "Azure-RMSDocs\\PlanDesign\\TOC.md",
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
-  ],
-  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
-    "Azure-RMSDocs\\DeployUse\\TOC.md"
   ],
   "a6e19f37ffdb755ca876cd615ffb245ece8f5034": [
     "Azure-RMSDocs\\DeployUse\\TOC.md"
@@ -853,6 +853,9 @@
   "e3c45199bc4e84d076d1408bc52079f86c804e40": [
     "Azure-RMSDocs\\Administer\\administering-azure-rights-management-with-powershell.md"
   ],
+  "b2e1344013dd14720dadde9f70e128a6a064baa7": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md"
+  ],
   "e8d00c89ac226c320946eca7cdfc9b3e1d863c60": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md"
   ],
@@ -865,6 +868,9 @@
   "4acfee33abdc46757afd8f089fae3c7b223475df": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md"
   ],
+  "358c10cfe99ae9294ac9080bf87c779150fed592": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-step1.md"
+  ],
   "087e949518d1115a37754e700e41eb7b4e370166": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-step1.md"
   ],
@@ -873,6 +879,9 @@
   ],
   "dad2eb1f3f51940cbbf405d10d18552c1424c714": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-step1.md"
+  ],
+  "8893341b0f35e4aaaa740408bd1aedb187a4b4b0": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md"
   ],
   "6b7d38151949bc2d37422044669337be56396f5d": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md"
@@ -886,6 +895,9 @@
   "f29aad483b9d375896137105da8e8115502c3594": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md"
   ],
+  "86da5923db03c0fd17b747af2de4838d80476c31": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-step3.md"
+  ],
   "4083b35d1c76797fa241d0be89e70aa096a88b6b": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-step3.md"
   ],
@@ -895,6 +907,9 @@
   "43dee325a55f5dd966c9fb27df1d672f38fcb8ae": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-step3.md"
   ],
+  "4d85211fdc38ff35c1166dfb36ced7e6ee3821f0": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-step4.md"
+  ],
   "b71bb791bd03869626d6a462c60fdbc45ed7dc40": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-step4.md"
   ],
@@ -903,6 +918,9 @@
   ],
   "082d573872dd94bcb810ca6931c972e54540a52d": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-step4.md"
+  ],
+  "e8cc9f4dddbcdd47a14701a830ceb1d8bbb93ccc": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart-step5.md"
   ],
   "6ad163e6fd07d5b2a978c690f8f21f5f08706333": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-step5.md"
@@ -1182,5 +1200,26 @@
   ],
   "565a80d4e237cf7d43d773612c2a98c6e97c27ad": [
     "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.md"
+  ],
+  "361e28fefe5d03488e9e2c59ed5aec74959fefab": [
+    "Azure-RMSDocs\\GetStarted\\rms-quickstart.md"
+  ],
+  "921c997c3f71ce32826b298c21b438445f9ada41": [
+    "Azure-RMSDocs\\includes\\rms-quickstart-intro-include.md"
+  ],
+  "545b3157b47e0f33320f0cca37b2475785b237c0": [
+    "Azure-RMSDocs\\includes\\rms-quickstart-step1-include.md"
+  ],
+  "713b9ffa64027544f2c934d9323fb939b1390714": [
+    "Azure-RMSDocs\\includes\\rms-quickstart-step2-include.md"
+  ],
+  "e7d542744517405de84ac1a8504aeadd78f2e474": [
+    "Azure-RMSDocs\\includes\\rms-quickstart-step3-include.md"
+  ],
+  "296927414f639ab0d09885ee5d7d47adf960c6e2": [
+    "Azure-RMSDocs\\includes\\rms-quickstart-step4-include.md"
+  ],
+  "9b671912701bfae985690f51907874d1a736adef": [
+    "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
   ]
 }
