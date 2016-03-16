@@ -35,6 +35,9 @@
   "c390fe3c1b8146f2132cccf53c8c3694023991e2": [
     "Azure-RMSDocs\\Understand\\comparing-azure-rights-management-and-ad-rms.md"
   ],
+  "84b3932a553af8b13d32c5563c333a0efe070596": [
+    "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management.md"
+  ],
   "5011031ac66360f5d0af5357fe065bfabcb62832": [
     "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management.md"
   ],
@@ -52,9 +55,6 @@
   ],
   "7bde7674b006060be7f84e9b0646edf51b7c74dc": [
     "Azure-RMSDocs\\configuring-azure-rights-management.md"
-  ],
-  "5d5eba52eaeeaff71be21b503a5375eb8c4a85c0": [
-    "Azure-RMSDocs\\configuring-custom-templates-for-azure-rights-management.md"
   ],
   "61160b1616d0756991ba76106c177d4fac839f87": [
     "Azure-RMSDocs\\DeployUse\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
@@ -105,15 +105,15 @@
   "84421bf7f4ba657e685239fb27f4798a46485f71": [
     "Azure-RMSDocs\\DeployUse\\media\\150x150.png"
   ],
+  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
+  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
     "Azure-RMSDocs\\GetStarted\\TOC.md",
     "Azure-RMSDocs\\PlanDesign\\TOC.md",
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
-  ],
-  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
-    "Azure-RMSDocs\\DeployUse\\TOC.md"
   ],
   "a6e19f37ffdb755ca876cd615ffb245ece8f5034": [
     "Azure-RMSDocs\\DeployUse\\TOC.md"
@@ -1066,17 +1066,26 @@
   "b404481b000f28cf8508c1e7b4e4d8915c73e268": [
     "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-over-the-internet.md"
   ],
+  "7014e614fb02159d7298e5f6c5cff24cce5afa2b": [
+    "Azure-RMSDocs\\Develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md"
+  ],
   "e8db767915a087ff7f7261163e4bf1ac29e88f98": [
     "Azure-RMSDocs\\Develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md"
   ],
   "108b54be2eaef01b1a3c0aafbf502076fb387769": [
     "Azure-RMSDocs\\Develop\\ad-rms-client.md"
   ],
+  "239b96ba3172a1207fd57d4dc2c0dcbcbe436852": [
+    "Azure-RMSDocs\\Develop\\ad-rms-concepts-nav.md"
+  ],
   "f47a2dc256d61c26d0bab0048c849599dc14888f": [
     "Azure-RMSDocs\\Develop\\ad-rms-concepts-nav.md"
   ],
   "6b3756473fc47dffb428bf4e4b86db30f0b859ef": [
     "Azure-RMSDocs\\Develop\\ad-rms-overview.md"
+  ],
+  "583a96050e2a41181b90794d6784354f552d5f08": [
+    "Azure-RMSDocs\\Develop\\ad-rms-server.md"
   ],
   "7af6852cfdb2398a231ee952a3bc3b09e0c23730": [
     "Azure-RMSDocs\\Develop\\ad-rms-server.md"
@@ -1090,6 +1099,9 @@
   "91a89ea404261cbd3fa32af5d0916c5e9ea84d2d": [
     "Azure-RMSDocs\\Develop\\android-sdk.md"
   ],
+  "3d2af03c207eb0aab3b10ddc4a0c546b205ddff0": [
+    "Azure-RMSDocs\\Develop\\api-reference-new.md"
+  ],
   "e347c78dd19bdaaf10c101be58af66833c07b807": [
     "Azure-RMSDocs\\Develop\\api-reference-new.md"
   ],
@@ -1102,17 +1114,29 @@
   "08ddd37fd559b712a0e65059cb4d8efc3774a583": [
     "Azure-RMSDocs\\Develop\\authentication-integration.md"
   ],
+  "36f3d8d46afad2eea2df0ee1d7b706ac34062366": [
+    "Azure-RMSDocs\\Develop\\built-in-rights-usage-restriction-reference.md"
+  ],
   "41ff00d4ac2a474482e6f2ae17b6c6a95e260215": [
     "Azure-RMSDocs\\Develop\\built-in-rights-usage-restriction-reference.md"
   ],
+  "77820c6ae34ea94630d1a20c324e0876e7d8dcba": [
+    "Azure-RMSDocs\\Develop\\code-examples.md"
+  ],
   "cda1edecd6b943d526370be1d71723b9428554ef": [
     "Azure-RMSDocs\\Develop\\code-examples.md"
+  ],
+  "605368b5a82c9d0efc30ce943af143084a7a2fd9": [
+    "Azure-RMSDocs\\Develop\\common-error-conditions-and-solutions.md"
   ],
   "4b32abf5ed3f0c1dbe1be2864a57b5e941991f43": [
     "Azure-RMSDocs\\Develop\\common-error-conditions-and-solutions.md"
   ],
   "76b782ca1288862cb42cbc7578e8bfa539dd07c3": [
     "Azure-RMSDocs\\Develop\\community-resources.md"
+  ],
+  "f4ab4d8a8f34f5a276a96e9b469cb7b65e6aeecc": [
+    "Azure-RMSDocs\\Develop\\core-concepts.md"
   ],
   "623884f4b528a21ce63405b921678213e3483736": [
     "Azure-RMSDocs\\Develop\\core-concepts.md"
@@ -1126,17 +1150,29 @@
   "ff8f6870b1465c576573f9e00b8febe3181d5f71": [
     "Azure-RMSDocs\\Develop\\deploying-your-application.md"
   ],
+  "95ef471a7a9395c89856aeefbccb05f2eb002982": [
+    "Azure-RMSDocs\\Develop\\developer-notes.md"
+  ],
   "340505744ecd61c877c8328da244c4f4f4e9a94e": [
     "Azure-RMSDocs\\Develop\\developer-notes.md"
   ],
+  "bc4d2ec54275d9cb6aa24ccc37b71dfbf5b16a06": [
+    "Azure-RMSDocs\\Develop\\differences-between-ad-rms-and-ad-rms-2-0.md"
+  ],
   "16481aee312a74411152f99bc25c7dbe81be84e7": [
     "Azure-RMSDocs\\Develop\\differences-between-ad-rms-and-ad-rms-2-0.md"
+  ],
+  "67c5de8bf5d0a1ecc6bf56e38f501a7c84edac14": [
+    "Azure-RMSDocs\\Develop\\enabling-logging.md"
   ],
   "86c14dfd0a1f7c3ccfe837918ed3312423213ffd": [
     "Azure-RMSDocs\\Develop\\enabling-logging.md"
   ],
   "4fdf874cabb93cf19d2e41a05493c116d087b700": [
     "Azure-RMSDocs\\Develop\\file-api-configuration.md"
+  ],
+  "a9876e3b6962a6dd3dddff9496c5a238bb2b2485": [
+    "Azure-RMSDocs\\Develop\\get-started.md"
   ],
   "4fb23d6c3165e0c9ae764b221436ee95996fe8c5": [
     "Azure-RMSDocs\\Develop\\get-started.md"
