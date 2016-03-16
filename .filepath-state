@@ -99,15 +99,15 @@
   "84421bf7f4ba657e685239fb27f4798a46485f71": [
     "Azure-RMSDocs\\DeployUse\\media\\150x150.png"
   ],
-  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
-    "Azure-RMSDocs\\DeployUse\\TOC.md"
-  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
     "Azure-RMSDocs\\GetStarted\\TOC.md",
     "Azure-RMSDocs\\PlanDesign\\TOC.md",
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
+  ],
+  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
   ],
   "a6e19f37ffdb755ca876cd615ffb245ece8f5034": [
     "Azure-RMSDocs\\DeployUse\\TOC.md"
@@ -574,6 +574,9 @@
   "be807335e4772e37ace94d18887c39b8a4674394": [
     "Azure-RMSDocs\\refreshing-templates-for-users.md"
   ],
+  "a2dc276963910e4032d4aac74f0add632dea5428": [
+    "Azure-RMSDocs\\GetStarted\\requirements-for-azure-rights-management.md"
+  ],
   "70b1aef2be22d38bf9a2a1384e338b013de9e6e8": [
     "Azure-RMSDocs\\GetStarted\\requirements-for-azure-rights-management.md"
   ],
@@ -837,6 +840,9 @@
   ],
   "7cbc08e4b635e579cddd06662f5ee409e3577934": [
     "Azure-RMSDocs\\media\\AzRMS_elements.png"
+  ],
+  "508d392dab458dcefe5b42b0a9deb817833a0e8d": [
+    "Azure-RMSDocs\\GetStarted\\frequently-asked-questions-for-azure-rights-management.md"
   ],
   "b9090a8ab289bcbcb0ff382897281157f5f79826": [
     "Azure-RMSDocs\\GetStarted\\frequently-asked-questions-for-azure-rights-management.md"
