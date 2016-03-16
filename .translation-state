@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "31f17d37cc1cbf43604fad8dad3b3274dbbd3fb8",
+  "LastProcessedCommit": "6805add789eed8cbb17bdb2d3e93992c40526ece",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -14,7 +14,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -25,7 +25,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -193,7 +193,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -204,7 +204,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -230,7 +230,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -241,7 +241,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -324,7 +324,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -335,7 +335,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -3831,7 +3831,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -3842,7 +3842,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -3868,7 +3868,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -3879,7 +3879,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -3905,7 +3905,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -3916,7 +3916,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -4969,7 +4969,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -4980,7 +4980,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5292,7 +5292,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5303,7 +5303,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5329,7 +5329,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5340,7 +5340,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5366,7 +5366,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5377,7 +5377,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5432,7 +5432,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5443,7 +5443,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5469,7 +5469,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5480,7 +5480,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5506,7 +5506,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5517,7 +5517,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5543,7 +5543,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5554,7 +5554,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5580,7 +5580,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5591,7 +5591,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -6111,7 +6111,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-15T23:55:04.888246Z",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -6122,7 +6122,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 31,
+      "HandoffFailureTimes": 32,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -9307,8 +9307,8 @@
         "Azure-RMSDocs\\DeployUse\\TOC.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\TOC.c962a621438ba36bd64ceffe2cdf9489982e7f7e.zh-cn.xlf",
-      "HandoffFileCommit": "4374901c7d4d974b21f27a9796b9b59196734ab6",
-      "HandoffDateTime": "2016-03-15T21:26:05.7563429Z",
+      "HandoffFileCommit": "95f3c5ead9906e3d80c67cd74160b737a79ead44",
+      "HandoffDateTime": "2016-03-16T09:28:28.7294009Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
