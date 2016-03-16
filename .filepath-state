@@ -2,6 +2,9 @@
   "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": [
     "Azure-RMSDocs\\DeployUse\\0365-configure-for-clients-online-services.md"
   ],
+  "ab4cc8f54bf89ec9e0ed9a51d00d01c908f8d8af": [
+    "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md"
+  ],
   "7df29412e45c532bc8c42ef8092a67740ed9e431": [
     "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md"
   ],
@@ -62,6 +65,9 @@
   "b8983b24c900d48cae6a313292b4c9b8bc686b66": [
     "Azure-RMSDocs\\DeployUse\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
   ],
+  "561234d9c6555d37ee626fd1d0a08b082cfe9bca": [
+    "Azure-RMSDocs\\DeployUse\\configuring-usage-rights-for-azure-rights-management.md"
+  ],
   "3ad12decac5438fdf125328f7c4940d3267644b4": [
     "Azure-RMSDocs\\DeployUse\\configuring-usage-rights-for-azure-rights-management.md"
   ],
@@ -99,15 +105,15 @@
   "84421bf7f4ba657e685239fb27f4798a46485f71": [
     "Azure-RMSDocs\\DeployUse\\media\\150x150.png"
   ],
-  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
-    "Azure-RMSDocs\\DeployUse\\TOC.md"
-  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
     "Azure-RMSDocs\\GetStarted\\TOC.md",
     "Azure-RMSDocs\\PlanDesign\\TOC.md",
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
+  ],
+  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
   ],
   "a6e19f37ffdb755ca876cd615ffb245ece8f5034": [
     "Azure-RMSDocs\\DeployUse\\TOC.md"
@@ -692,8 +698,7 @@
     "Azure-RMSDocs\\media\\AzRMSUserInstructions_ShareProtectedRibbon2013.png"
   ],
   "30735d61938beb0a112ccd791e061f5bed3693b6": [
-    "Azure-RMSDocs\\scratch.md",
-    "Azure-RMSDocs\\test\\scratch.md"
+    "Azure-RMSDocs\\scratch.md"
   ],
   "61fec1aa768e0f822eb10c46e1d43a05ab4928bf": [
     "Azure-RMSDocs\\scratch.md"
@@ -740,10 +745,10 @@
   "673e1f6e9d2ec63e06998f687eb3685b39cae4f5": [
     "Azure-RMSDocs\\thales-hsms-and-ms-additions.md"
   ],
-  "c1a9648828be4a88f1ae92c0e545616cf5286ba1": [
+  "80d1b79939e7eb92210e48bdf098aa1c089941ef": [
     "Azure-RMSDocs\\TOC.md"
   ],
-  "80d1b79939e7eb92210e48bdf098aa1c089941ef": [
+  "c1a9648828be4a88f1ae92c0e545616cf5286ba1": [
     "Azure-RMSDocs\\TOC.md"
   ],
   "6c91dbe35ecf80bcc798ad36b7cb8ce5b3bc4574": [
