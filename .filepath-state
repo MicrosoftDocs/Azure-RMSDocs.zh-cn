@@ -108,15 +108,15 @@
   "84421bf7f4ba657e685239fb27f4798a46485f71": [
     "Azure-RMSDocs\\DeployUse\\media\\150x150.png"
   ],
+  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
+  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
     "Azure-RMSDocs\\GetStarted\\TOC.md",
     "Azure-RMSDocs\\PlanDesign\\TOC.md",
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
-  ],
-  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
-    "Azure-RMSDocs\\DeployUse\\TOC.md"
   ],
   "a6e19f37ffdb755ca876cd615ffb245ece8f5034": [
     "Azure-RMSDocs\\DeployUse\\TOC.md"
@@ -465,6 +465,9 @@
   ],
   "6e84612eb83e55012f41cad001b70f02580055d0": [
     "Azure-RMSDocs\\DeployUse\\office-2016-2013-configure-for-clients.md"
+  ],
+  "429684e16075c62291b3f149da68d410c44fbc2c": [
+    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key.md"
   ],
   "6b860f84cb33860d7c19908c9b870475b0aead46": [
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key.md"
@@ -1395,5 +1398,11 @@
   ],
   "9b671912701bfae985690f51907874d1a736adef": [
     "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
+  ],
+  "3149ce6b0fe3416df1a104d15ac2cf4bd2dc9b78": [
+    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
+  ],
+  "b85124e19f5c610a2871b6a0e0fab489179c594e": [
+    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md"
   ]
 }
