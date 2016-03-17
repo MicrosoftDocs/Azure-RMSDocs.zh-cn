@@ -65,6 +65,9 @@
   "b8983b24c900d48cae6a313292b4c9b8bc686b66": [
     "Azure-RMSDocs\\DeployUse\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
   ],
+  "951b8b38325b9007360e3964b8082b6676a10de0": [
+    "Azure-RMSDocs\\DeployUse\\configuring-usage-rights-for-azure-rights-management.md"
+  ],
   "e8c5f1a92620e557a6185675a59a83ca9e81a6b5": [
     "Azure-RMSDocs\\DeployUse\\configuring-usage-rights-for-azure-rights-management.md"
   ],
@@ -108,15 +111,15 @@
   "84421bf7f4ba657e685239fb27f4798a46485f71": [
     "Azure-RMSDocs\\DeployUse\\media\\150x150.png"
   ],
-  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
-    "Azure-RMSDocs\\DeployUse\\TOC.md"
-  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\DeployUse\\TOC.md",
     "Azure-RMSDocs\\GetStarted\\TOC.md",
     "Azure-RMSDocs\\PlanDesign\\TOC.md",
     "Azure-RMSDocs\\Troubleshoot\\TOC.md",
     "Azure-RMSDocs\\Understand\\TOC.md"
+  ],
+  "268bd30275cf3445dd8cfbdf47e6a59892205a7d": [
+    "Azure-RMSDocs\\DeployUse\\TOC.md"
   ],
   "a6e19f37ffdb755ca876cd615ffb245ece8f5034": [
     "Azure-RMSDocs\\DeployUse\\TOC.md"
@@ -1398,6 +1401,9 @@
   ],
   "9b671912701bfae985690f51907874d1a736adef": [
     "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
+  ],
+  "5d91b70fac92cd3220cc978c96cbed0e8d0280ed": [
+    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
   ],
   "3149ce6b0fe3416df1a104d15ac2cf4bd2dc9b78": [
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
