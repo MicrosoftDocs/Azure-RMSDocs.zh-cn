@@ -2,6 +2,9 @@
   "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": [
     "Azure-RMSDocs\\DeployUse\\0365-configure-for-clients-online-services.md"
   ],
+  "6d5f65b36016226865965f2b72d7a286a6dc6200": [
+    "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md"
+  ],
   "ab4cc8f54bf89ec9e0ed9a51d00d01c908f8d8af": [
     "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md"
   ],
@@ -23,11 +26,17 @@
   "16ffe2ac3f55c872ebb230ef643ea921ed987bd6": [
     "Azure-RMSDocs\\Understand\\azure-rms-aka.md"
   ],
+  "27ef3a51e7d620eb229b15984568ed4989e7b2bf": [
+    "Azure-RMSDocs\\Understand\\azure-rms-problems-it-solves.md"
+  ],
   "be9665e17180de28b6fbadab6c7dce17884e3ab9": [
     "Azure-RMSDocs\\Understand\\azure-rms-problems-it-solves.md"
   ],
   "30bf40e72357c3f0496d6c5ad574d5827a2b668b": [
     "Azure-RMSDocs\\Understand\\azure-rms-problems-it-solves.md"
+  ],
+  "865b02518519068e00ff2527532102feb1c00100": [
+    "Azure-RMSDocs\\Understand\\comparing-azure-rights-management-and-ad-rms.md"
   ],
   "03e60cfbb7e651651282f4875f3b3ab123017649": [
     "Azure-RMSDocs\\Understand\\comparing-azure-rights-management-and-ad-rms.md"
@@ -47,6 +56,9 @@
   "53fef1c257cb48fbdb165f27d2015a5c4cf282c0": [
     "Azure-RMSDocs\\configure-onboarding-controls.md"
   ],
+  "5c9d1a22967c6133cbd80dca9260f5ca241741b5": [
+    "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md"
+  ],
   "efb940c254feca29a5bb27e2c3ee38bc24421d63": [
     "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md"
   ],
@@ -55,6 +67,9 @@
   ],
   "915bb394a30f1215c91b6166441eddaa3de6e93d": [
     "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md"
+  ],
+  "183a1c1ed457b415c24c6104be67af83fcaa880e": [
+    "Azure-RMSDocs\\DeployUse\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
   ],
   "61160b1616d0756991ba76106c177d4fac839f87": [
     "Azure-RMSDocs\\DeployUse\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
@@ -92,6 +107,9 @@
   "f2f0d15eefe8c17f27d469dd279d216653cf1c9b": [
     "Azure-RMSDocs\\DeployUse\\decommissioning-and-deactivating-azure-rights-management.md"
   ],
+  "206d828e40da36a5f800afd383848efed5edaf83": [
+    "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
+  ],
   "c6557a56324338abb843dc016e7957b4ef688628": [
     "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
   ],
@@ -112,6 +130,9 @@
   ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\Troubleshoot\\TOC.md"
+  ],
+  "54e1062aaf353694803c2c09eabbb8b7a08a70aa": [
+    "Azure-RMSDocs\\RMSClient\\download-and-install-the-rights-management-sharing-application.md"
   ],
   "e8245b094f47bb1beec3f393373df781d05693bf": [
     "Azure-RMSDocs\\RMSClient\\download-and-install-the-rights-management-sharing-application.md"
@@ -182,6 +203,9 @@
   "c6014bbe95ec6eadcde08fc13a4913d5b3675416": [
     "Azure-RMSDocs\\DeployUse\\helping-users-to-protect-files-by-using-azure-rights-management.md"
   ],
+  "e08656f63f5a1dbd057de79766d6d5c08a629947": [
+    "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+  ],
   "49aca289ee2e306c1eccf2ac28938f6ba958ff0c": [
     "Azure-RMSDocs\\Understand\\how-does-it-work.md"
   ],
@@ -217,6 +241,9 @@
   ],
   "ee87649e2f4ae0dd7763fccba39e5b03135b3727": [
     "Azure-RMSDocs\\media\\AzRMS_documentconsumption3.png"
+  ],
+  "f3797d767e1229c1ac1ae1655177001d83709588": [
+    "Azure-RMSDocs\\Understand\\how-fileservers-support-azure-rights-management.md"
   ],
   "da2f78af28b78bbb4b3a47a58d51d7862f829bb2": [
     "Azure-RMSDocs\\Understand\\how-fileservers-support-azure-rights-management.md"
@@ -314,6 +341,9 @@
   "25d07b17db2fd45050cf796606dd93b3a2b819ac": [
     "Azure-RMSDocs\\includes\\win8_server_1_md.md"
   ],
+  "cd84b7487f8138e194f85290a1c2aeedb83798b9": [
+    "Azure-RMSDocs\\GetStarted\\information-and-support-for-azure-rights-management.md"
+  ],
   "bfc28b590d69127ec30eae4362ef98ae48cfd4d0": [
     "Azure-RMSDocs\\GetStarted\\information-and-support-for-azure-rights-management.md"
   ],
@@ -326,11 +356,17 @@
   "78c9778fbbffb26a0e14df88a112b7a912978460": [
     "Azure-RMSDocs\\Administer\\installing-windows-powershell-for-azure-rights-management.md"
   ],
+  "dba5e6894ff5ac2d3c2a615e1fdbbf03fd6f7165": [
+    "Azure-RMSDocs\\DeployUse\\logging-and-analyzing-azure-rights-management-usage.md"
+  ],
   "3bd66ef969fe3b196384c87fdaa966bd51c8aece": [
     "Azure-RMSDocs\\DeployUse\\logging-and-analyzing-azure-rights-management-usage.md"
   ],
   "bacd5f82095452dd9c19378ba0dd260bd3402d0d": [
     "Azure-RMSDocs\\DeployUse\\logging-and-analyzing-azure-rights-management-usage.md"
+  ],
+  "7303dcf0c26d94d8fe6cb9dd6649f0a50abefd73": [
+    "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management.md"
   ],
   "e642d571f0d17283281a8ed7db4fadc83058bcae": [
     "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management.md"
@@ -371,6 +407,9 @@
   "6b860f84cb33860d7c19908c9b870475b0aead46": [
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key.md"
   ],
+  "6c0437763d45b1c69efadcc045c90020f3b7b974": [
+    "Azure-RMSDocs\\Understand\\other-apps-support-apis.md"
+  ],
   "237f408a54a351cd8c6d7f9a9f025ebcb93dedf9": [
     "Azure-RMSDocs\\Understand\\other-apps-support-apis.md"
   ],
@@ -379,6 +418,9 @@
   ],
   "fdfae7ec0338f5049f3f34082b529b8a698919ab": [
     "Azure-RMSDocs\\Understand\\other-apps-support-apis.md"
+  ],
+  "069b3f1ac763f15f002144fcfa8f0e4c6e6ecfc8": [
+    "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
   ],
   "0dbd69f1744a9c0f836e9b5f8005c6680b87b5e8": [
     "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
@@ -497,6 +539,9 @@
   "3dc5bdd3bd09d0a69d048b1731f54bb9b8f44224": [
     "Azure-RMSDocs\\RMSClient\\rights-management-rms-client.md"
   ],
+  "5e32f94af1e61acc3d6ffe0ef453ded1f4d4da34": [
+    "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-administrator-guide.md"
+  ],
   "ceaa39afda3b633a1c65d02eb33eef8541d39799": [
     "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-administrator-guide.md"
   ],
@@ -515,11 +560,17 @@
   "7766166e24a16a9d4508429b12faabba1366dba8": [
     "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-version-release-history.md"
   ],
+  "f8defc7baa9077151e5956b190e81047f2510711": [
+    "Azure-RMSDocs\\RMSClient\\rms-client-deployment-notes.md"
+  ],
   "ec4227adf420ba7314082f207b89599b6baf4cc3": [
     "Azure-RMSDocs\\RMSClient\\rms-client-deployment-notes.md"
   ],
   "fadbd257a2c88b3b44e49d23986ec33693ea5250": [
     "Azure-RMSDocs\\Understand\\rms-for-individuals-and-azure-rights-management.md"
+  ],
+  "246ce6f4d5d3a402d816a182826753ea122f6add": [
+    "Azure-RMSDocs\\Understand\\rms-for-individuals-find-if-users-have-signed-up.md"
   ],
   "42a247b1dc67976fec267a8e2384efa5a6aaa314": [
     "Azure-RMSDocs\\Understand\\rms-for-individuals-find-if-users-have-signed-up.md"
@@ -527,14 +578,23 @@
   "09692d9ce094b00c92e545259a938d1a66a20f05": [
     "Azure-RMSDocs\\Understand\\rms-for-individuals-find-if-users-have-signed-up.md"
   ],
+  "05e6920e4a1f2b2a8de013392e944df50ad4a5c1": [
+    "Azure-RMSDocs\\Understand\\rms-for-individuals-user-signup.md"
+  ],
   "e379cc8509de9c4f4a84e0e9cb2bc930130a9356": [
     "Azure-RMSDocs\\Understand\\rms-for-individuals-user-signup.md"
   ],
   "09fdfdf9ab4a2165c8f5b629c774ffea7f79b8a4": [
     "Azure-RMSDocs\\Understand\\rms-for-individuals-user-signup.md"
   ],
+  "0cc6e005ea59817557d5c325299017b5aadde308": [
+    "Azure-RMSDocs\\RMSClient\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md"
+  ],
   "d866c29a2892d9d729eca7b55a2e15cbb6f230a6": [
     "Azure-RMSDocs\\RMSClient\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md"
+  ],
+  "37c14aeba42f7bd4612b90dc937ebd9c20d745ab": [
+    "Azure-RMSDocs\\GetStarted\\rms-requirements-aad-directory.md"
   ],
   "3b25f47bee14a24933a7a9d830ec4876fe4a7358": [
     "Azure-RMSDocs\\GetStarted\\rms-requirements-aad-directory.md"
@@ -548,11 +608,17 @@
   "1e07828dbe7e3dc0464f2494fc63a979519ad355": [
     "Azure-RMSDocs\\GetStarted\\rms-requirements-applications.md"
   ],
+  "ea86abafa90990b8a298c2d84974c0fa5c29a301": [
+    "Azure-RMSDocs\\GetStarted\\rms-requirements-client-devices.md"
+  ],
   "aa18f41d83455bf67ff408bdae66aa3cf8d7cf6b": [
     "Azure-RMSDocs\\GetStarted\\rms-requirements-client-devices.md"
   ],
   "1875b46ff6a8fe2ed566bcaa6b7553bde8832fdd": [
     "Azure-RMSDocs\\GetStarted\\rms-requirements-client-devices.md"
+  ],
+  "e7b829a53d3ae8812be8cb73a632c772e2fe18c6": [
+    "Azure-RMSDocs\\GetStarted\\rms-requirements-cloud-subscriptions.md"
   ],
   "d7699ca6d90b945eb0229d45ab6d00b7b311cfee": [
     "Azure-RMSDocs\\GetStarted\\rms-requirements-cloud-subscriptions.md"
@@ -653,6 +719,9 @@
   "7c09d95d12461e82c9feed582938b7f66568ab8e": [
     "Azure-RMSDocs\\DeployUse\\sharing-app-install-configure.md"
   ],
+  "3780031274a19d724a83737fe09b07498c0e34d4": [
+    "Azure-RMSDocs\\Understand\\sharing-application-for-windows-and-mobile-platforms.md"
+  ],
   "cd67b8b158ae00f32ab7519fea9004dbecdeee59": [
     "Azure-RMSDocs\\Understand\\sharing-application-for-windows-and-mobile-platforms.md"
   ],
@@ -707,8 +776,14 @@
   "77eeb7aa44a8fd7e05cdbd6658c94654662db101": [
     "Azure-RMSDocs\\DeployUse\\verifying-azure-rights-management.md"
   ],
+  "9ead6d45ca908139bf793ff1d6c20915a2600ce1": [
+    "Azure-RMSDocs\\RMSClient\\view-and-use-files-that-have-been-protected-by-rights-management.md"
+  ],
   "ae7f6e1c4442ecd8452ca23b1d454993907027e1": [
     "Azure-RMSDocs\\RMSClient\\view-and-use-files-that-have-been-protected-by-rights-management.md"
+  ],
+  "35651257d73388c5d4913ff9180202e9c912c4bc": [
+    "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
   ],
   "2d51330a66451a65c52183850bfec7fd86e2b901": [
     "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
@@ -929,11 +1004,17 @@
   "d6cd33ea937e7083c7a2b72e998d6952abaa649b": [
     "Azure-RMSDocs\\GetStarted\\rms-quickstart-step5.md"
   ],
+  "76d09a363a10cdf3ab079b04522981e082aa8cda": [
+    "Azure-RMSDocs\\RMSClient\\dialog-box-options-for-the-rights-management-sharing-application.md"
+  ],
   "d0c1a0abb4449215387b400b7ae560031bcf2b62": [
     "Azure-RMSDocs\\RMSClient\\dialog-box-options-for-the-rights-management-sharing-application.md"
   ],
   "620707852bd21467b1e0fc1bfa1621ccf5e0bc95": [
     "Azure-RMSDocs\\RMSClient\\remove-protection-from-a-file-by-using-the-rights-management-sharing-application.md"
+  ],
+  "0af341e4b337c2ff90b0e527f673b866c1521894": [
+    "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-user-guide.md"
   ],
   "d84ababdbc7e491e7cf5b1dc28b0cbf22dc4ac84": [
     "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-user-guide.md"
@@ -952,6 +1033,9 @@
   ],
   "55edcd29e7c20cca31c1c8e2339423c1ae888881": [
     "Azure-RMSDocs\\PlanDesign\\byok-pricing-and-restrictions.md"
+  ],
+  "e1006ce1ee4b57fe7991488cbdaea0480d42c998": [
+    "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-in-person.md"
   ],
   "906266f86cdc9dea371c70201a5a0ca1f6b68a6b": [
     "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-in-person.md"
@@ -977,6 +1061,9 @@
   "0c5185919d8c16a4944566ffd00352e3236e5b61": [
     "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-in-person.md"
   ],
+  "9b4aac1447b41bcf96be3abc1fbd68ac33688e6a": [
+    "Azure-RMSDocs\\PlanDesign\\implementing-your-azure-rights-management-tenant-key.md"
+  ],
   "ed66e96be011d95c8e73f061a79992d1bf97ad43": [
     "Azure-RMSDocs\\PlanDesign\\implementing-your-azure-rights-management-tenant-key.md"
   ],
@@ -985,6 +1072,9 @@
   ],
   "660015959dabd5def915bb184d5fa22f2985a202": [
     "Azure-RMSDocs\\PlanDesign\\information-about-thales-hms-and-microsoft-additions.md"
+  ],
+  "357329fabbc5b05990eced86b95f5a7d010d5309": [
+    "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-over-the-internet.md"
   ],
   "05685c838321ed19d6913c2995a2c81475937558": [
     "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-over-the-internet.md"
@@ -1339,6 +1429,9 @@
   ],
   "3149ce6b0fe3416df1a104d15ac2cf4bd2dc9b78": [
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
+  ],
+  "8bf26fe57278b6928e1190e0b52bb804c821e1a6": [
+    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md"
   ],
   "c54ded09d9cc6a5d48af91949818c0f91c294079": [
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md"
