@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "f2295c68ea690df112198b0eb2de42fce44acf62",
+  "LastProcessedCommit": "f3026735c384fda3968754e3ed5a2c508783d920",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -14,7 +14,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-17T22:55:07.9747374Z",
+      "HandoffDateTime": "2016-03-18T16:27:17.9901931Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -25,7 +25,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 44,
+      "HandoffFailureTimes": 45,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -749,8 +749,8 @@
         "Azure-RMSDocs\\Understand\\TOC.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\TOC.c962a621438ba36bd64ceffe2cdf9489982e7f7e.zh-cn.xlf",
-      "HandoffFileCommit": "9a5188492c760588707358e3263e55f330dd7181",
-      "HandoffDateTime": "2016-03-17T16:24:18.3511237Z",
+      "HandoffFileCommit": "e7b363379256f6e9695009f97709340f38ed194c",
+      "HandoffDateTime": "2016-03-18T16:27:17.9901931Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
@@ -859,7 +859,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\exchange-2010-registry-settings.md"
+        "Azure-RMSDocs\\exchange-2010-registry-settings.md",
+        "Azure-RMSDocs\\DeployUse\\exchange-2010-registry-settings.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\exchange-2010-registry-settings.b7869aefef71c885a30e08e896e3fd05bdb4b3d8.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -887,7 +888,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\exchange-2013-registry-settings.md"
+        "Azure-RMSDocs\\exchange-2013-registry-settings.md",
+        "Azure-RMSDocs\\DeployUse\\exchange-2013-registry-settings.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\exchange-2013-registry-settings.ff16f92b2e40bce121e9ed60dbdd7d79292898aa.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -943,7 +945,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\fs-fci-registry-settings.md"
+        "Azure-RMSDocs\\fs-fci-registry-settings.md",
+        "Azure-RMSDocs\\DeployUse\\fs-fci-registry-settings.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\fs-fci-registry-settings.88f852e871a712c0810752222a6786e29d7275ae.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -971,7 +974,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-a-sharepoint-protected-document.md"
+        "Azure-RMSDocs\\full-screen-picture-a-sharepoint-protected-document.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-a-sharepoint-protected-document.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-a-sharepoint-protected-document.2148e3e4fe482d8a54ffa0ebca9c98c759717729.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1087,7 +1091,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-alice-gets-email-notification.md"
+        "Azure-RMSDocs\\full-screen-picture-alice-gets-email-notification.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-alice-gets-email-notification.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-alice-gets-email-notification.cf04212cf62e64c9d9b496c0a73aebfda56581ea.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1145,7 +1150,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-alice-shares-protected-attachment.md"
+        "Azure-RMSDocs\\full-screen-picture-alice-shares-protected-attachment.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-alice-shares-protected-attachment.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-alice-shares-protected-attachment.0c9c57e9d908fcee50aca3cf60fbd006f9d8b3b9.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1203,7 +1209,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-an-external-email-protected-by-dlp-and-azure-rms.md"
+        "Azure-RMSDocs\\full-screen-picture-an-external-email-protected-by-dlp-and-azure-rms.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-an-external-email-protected-by-dlp-and-azure-rms.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-an-external-email-protected-by-dlp-and-azure-rms.a24dfb5a20608cc6969973184ad5f08d60286d82.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1261,7 +1268,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-an-unprotected-email-internal-.md"
+        "Azure-RMSDocs\\full-screen-picture-an-unprotected-email-internal-.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-an-unprotected-email-internal-.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-an-unprotected-email-internal-.f3b7955dee7f6918eaf6809634dfb0eff9b65cd5.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1319,7 +1327,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-available-settings-for-rms-templates.md"
+        "Azure-RMSDocs\\full-screen-picture-available-settings-for-rms-templates.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-available-settings-for-rms-templates.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-available-settings-for-rms-templates.8044978e4d8b2d9793f22f0811159054fe9fdaff.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1435,7 +1444,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-bob-sees-the-email-on-his-ipad.md"
+        "Azure-RMSDocs\\full-screen-picture-bob-sees-the-email-on-his-ipad.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-bob-sees-the-email-on-his-ipad.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-bob-sees-the-email-on-his-ipad.72e62fc0b92d8f19b03bffef633d776a27ee6271.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1493,7 +1503,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-confidential-report-accidentally-sent-to-wrong-person.md"
+        "Azure-RMSDocs\\full-screen-picture-confidential-report-accidentally-sent-to-wrong-person.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-confidential-report-accidentally-sent-to-wrong-person.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-confidential-report-accidentally-sent-to-wrong-person.30e647d282a35ad3b9505588eeacf3ce475b27a9.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1551,7 +1562,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-configuring-dlp-for-azure-rms.md"
+        "Azure-RMSDocs\\full-screen-picture-configuring-dlp-for-azure-rms.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-configuring-dlp-for-azure-rms.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-configuring-dlp-for-azure-rms.a5144f3b1161daeb937070edb0f4a8c6154d11b4.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1609,7 +1621,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-configuring-fci-for-the-marketing-classification.md"
+        "Azure-RMSDocs\\full-screen-picture-configuring-fci-for-the-marketing-classification.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-configuring-fci-for-the-marketing-classification.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-configuring-fci-for-the-marketing-classification.6d20aa211195e5eb9dc8161906b7e0989a72f888.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1667,7 +1680,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-enabling-irm-for-a-library.md"
+        "Azure-RMSDocs\\full-screen-picture-enabling-irm-for-a-library.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-enabling-irm-for-a-library.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-enabling-irm-for-a-library.cdd54508b7951621015589708ca797448d892339.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1725,7 +1739,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-enabling-irm-on-sharepoint-online.md"
+        "Azure-RMSDocs\\full-screen-picture-enabling-irm-on-sharepoint-online.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-enabling-irm-on-sharepoint-online.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-enabling-irm-on-sharepoint-online.975dcfa0a2bbb1309207429a489ae1d1f0c6729c.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1783,7 +1798,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-installing-and-configuring-the-rms-connector-for-fci.md"
+        "Azure-RMSDocs\\full-screen-picture-installing-and-configuring-the-rms-connector-for-fci.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-installing-and-configuring-the-rms-connector-for-fci.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-installing-and-configuring-the-rms-connector-for-fci.231703548ecc9c78aabc7500a59724f6e3aa9a3f.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1841,7 +1857,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-rms-templates-in-the-azure-management-portal.md"
+        "Azure-RMSDocs\\full-screen-picture-rms-templates-in-the-azure-management-portal.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-rms-templates-in-the-azure-management-portal.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-rms-templates-in-the-azure-management-portal.e0271f0990ca1a2ec6344ef384609c92d82b6d2b.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1899,7 +1916,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-select-rms-templates-in-applications,-such-as-file-explorer-and-word.md"
+        "Azure-RMSDocs\\full-screen-picture-select-rms-templates-in-applications,-such-as-file-explorer-and-word.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-select-rms-templates-in-applications,-such-as-file-explorer-and-word.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-select-rms-templates-in-applications,-such-as-file-explorer-and-word.f22451ccb83d9bc70fd329c9a283c83c808da96f.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -2463,7 +2481,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\how-to-access-usage-logs.md"
+        "Azure-RMSDocs\\how-to-access-usage-logs.md",
+        "Azure-RMSDocs\\DeployUse\\how-to-access-usage-logs.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-access-usage-logs.1f9f3278fa93a66c0600d534e0eca21a0a41367c.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -2547,7 +2566,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\how-to-enable-logging.md"
+        "Azure-RMSDocs\\how-to-enable-logging.md",
+        "Azure-RMSDocs\\DeployUse\\how-to-enable-logging.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-enable-logging.3a21b3ea81b5182d3b818b3627544c467620af29.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -2575,7 +2595,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\how-to-interpret-usage-logs.md"
+        "Azure-RMSDocs\\how-to-interpret-usage-logs.md",
+        "Azure-RMSDocs\\DeployUse\\how-to-interpret-usage-logs.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-interpret-usage-logs.6cc3db5213eeb0d7fcd70b14ce4a5d0d46ccac11.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -5029,7 +5050,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\rights-in-permissions-levels.md"
+        "Azure-RMSDocs\\rights-in-permissions-levels.md",
+        "Azure-RMSDocs\\DeployUse\\rights-in-permissions-levels.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rights-in-permissions-levels.734a8b54c369bc4448bd02836825ddfaa093647b.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -5292,7 +5314,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-17T22:55:07.9747374Z",
+      "HandoffDateTime": "2016-03-18T16:27:17.9901931Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5303,7 +5325,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 44,
+      "HandoffFailureTimes": 45,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5580,7 +5602,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-17T22:55:07.9747374Z",
+      "HandoffDateTime": "2016-03-18T16:27:17.9901931Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5591,7 +5613,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 44,
+      "HandoffFailureTimes": 45,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -6051,7 +6073,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\scripting-options-for-superusers.md"
+        "Azure-RMSDocs\\scripting-options-for-superusers.md",
+        "Azure-RMSDocs\\DeployUse\\scripting-options-for-superusers.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scripting-options-for-superusers.634a1ecc0eede9996ff2ff1105ed8fe1585b4d3d.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -6079,7 +6102,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\sharepoint-2013-registry-settings.md"
+        "Azure-RMSDocs\\sharepoint-2013-registry-settings.md",
+        "Azure-RMSDocs\\DeployUse\\sharepoint-2013-registry-settings.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharepoint-2013-registry-settings.f7cb403032cb7bcefbab961c917f9f5bcbcc5ab4.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -6462,7 +6486,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\usage-rights-descriptions.md"
+        "Azure-RMSDocs\\usage-rights-descriptions.md",
+        "Azure-RMSDocs\\DeployUse\\usage-rights-descriptions.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\usage-rights-descriptions.2dde9cef1c342ba45dd76512cbc72a5d45287465.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -12646,7 +12671,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-activating-rights-management.md"
+        "Azure-RMSDocs\\full-screen-picture-activating-rights-management.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-activating-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-activating-rights-management.8dbeeb926662b39bf3a411deeefe20f4d0722d41.zh-cn.xlf",
       "HandoffFileCommit": "f150facb668606b1a5ee1293ba1532e6e79072ee",
@@ -12674,7 +12700,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.md"
+        "Azure-RMSDocs\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.md",
+        "Azure-RMSDocs\\Understand\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.f035ee1d9ca1c4a2c58c55ee2cf3ec2965a76100.zh-cn.xlf",
       "HandoffFileCommit": "f150facb668606b1a5ee1293ba1532e6e79072ee",
@@ -15676,6 +15703,174 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\what-do-admins-users-see.e18e16abc33a237bb2663d0e7f23cbfd3f360d03.zh-cn.xlf",
       "HandoffFileCommit": "fc0508d29a3b564070adca110c84039e7591459e",
       "HandoffDateTime": "2016-03-17T22:55:07.9747374Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "bc0d56c1444ebf660f3bcd6523fcb29efc6ed03d": {
+      "FileHash": "bc0d56c1444ebf660f3bcd6523fcb29efc6ed03d",
+      "SourceFileCommit": "f3026735c384fda3968754e3ed5a2c508783d920",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management.9e4ac0c7fdf9050180a813b3bdc3b2e1c2223e47.zh-cn.xlf",
+      "HandoffFileCommit": "e7b363379256f6e9695009f97709340f38ed194c",
+      "HandoffDateTime": "2016-03-18T16:27:17.9901931Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "f6f794252d2dfbd3c936ea4801afe8b18fa6ff2c": {
+      "FileHash": "f6f794252d2dfbd3c936ea4801afe8b18fa6ff2c",
+      "SourceFileCommit": "f3026735c384fda3968754e3ed5a2c508783d920",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-copy-template.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-copy-template.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management-copy-template.665b65f7cecf120a8dec8f3dc57c1e8d5b6b43df.zh-cn.xlf",
+      "HandoffFileCommit": "e7b363379256f6e9695009f97709340f38ed194c",
+      "HandoffDateTime": "2016-03-18T16:27:17.9901931Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "5b3d8338ba3cdf9ea55aba2e644888eb9c3540d5": {
+      "FileHash": "5b3d8338ba3cdf9ea55aba2e644888eb9c3540d5",
+      "SourceFileCommit": "f3026735c384fda3968754e3ed5a2c508783d920",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-create-template.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-create-template.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management-create-template.8c7c87fe096bec601692c66c396f78797653f61b.zh-cn.xlf",
+      "HandoffFileCommit": "e7b363379256f6e9695009f97709340f38ed194c",
+      "HandoffDateTime": "2016-03-18T16:27:17.9901931Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "70bee9c7acc2f2cd8308927d4b0ed5c37643e801": {
+      "FileHash": "70bee9c7acc2f2cd8308927d4b0ed5c37643e801",
+      "SourceFileCommit": "f3026735c384fda3968754e3ed5a2c508783d920",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-powershell.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-powershell.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management-powershell.e7f6c442c8bed35e4810de6672818dc3eea8b331.zh-cn.xlf",
+      "HandoffFileCommit": "e7b363379256f6e9695009f97709340f38ed194c",
+      "HandoffDateTime": "2016-03-18T16:27:17.9901931Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "ae80eac7e221d1118654bc35822f0e2f95da2660": {
+      "FileHash": "ae80eac7e221d1118654bc35822f0e2f95da2660",
+      "SourceFileCommit": "f3026735c384fda3968754e3ed5a2c508783d920",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-refresh-templates.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-refresh-templates.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management-refresh-templates.ab4ba201878fc229654cb7e8c2d8fc104c3649ce.zh-cn.xlf",
+      "HandoffFileCommit": "e7b363379256f6e9695009f97709340f38ed194c",
+      "HandoffDateTime": "2016-03-18T16:27:17.9901931Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "b5476f47752d0cac1e29e73067ae5a3148cb601b": {
+      "FileHash": "b5476f47752d0cac1e29e73067ae5a3148cb601b",
+      "SourceFileCommit": "f3026735c384fda3968754e3ed5a2c508783d920",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-remove-template.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-remove-template.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management-remove-template.88c41ea2efdac820e07768bd8715f83d69b0fc80.zh-cn.xlf",
+      "HandoffFileCommit": "e7b363379256f6e9695009f97709340f38ed194c",
+      "HandoffDateTime": "2016-03-18T16:27:17.9901931Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
