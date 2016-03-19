@@ -686,6 +686,9 @@
   "05f9ef9a3f6258fb49f39f034e84c773dad451b6": [
     "Azure-RMSDocs\\media\\AzRMSUserInstructions_ShareProtectedRibbon2013.png"
   ],
+  "846fc2c9fcbeaf676ec6eb114d0285e2c6d38186": [
+    "Azure-RMSDocs\\scratch.md"
+  ],
   "bdba1e540bde232a0f4077fc22d98fba592c770a": [
     "Azure-RMSDocs\\scratch.md"
   ],
@@ -1115,6 +1118,9 @@
   "6b3756473fc47dffb428bf4e4b86db30f0b859ef": [
     "Azure-RMSDocs\\Develop\\ad-rms-overview.md"
   ],
+  "842236a8a4af8fd1900d7c3315dc484188e9bf54": [
+    "Azure-RMSDocs\\Develop\\ad-rms-server.md"
+  ],
   "583a96050e2a41181b90794d6784354f552d5f08": [
     "Azure-RMSDocs\\Develop\\ad-rms-server.md"
   ],
@@ -1198,6 +1204,9 @@
   ],
   "86c14dfd0a1f7c3ccfe837918ed3312423213ffd": [
     "Azure-RMSDocs\\Develop\\enabling-logging.md"
+  ],
+  "c4643dcdf6c92b174b60f7dc83b23f1fb361808a": [
+    "Azure-RMSDocs\\Develop\\file-api-configuration.md"
   ],
   "4fdf874cabb93cf19d2e41a05493c116d087b700": [
     "Azure-RMSDocs\\Develop\\file-api-configuration.md"
