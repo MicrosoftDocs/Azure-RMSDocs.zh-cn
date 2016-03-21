@@ -80,6 +80,9 @@
   "b8983b24c900d48cae6a313292b4c9b8bc686b66": [
     "Azure-RMSDocs\\DeployUse\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
   ],
+  "159ebfa40c31ba3769875d41cc4df89a301941b0": [
+    "Azure-RMSDocs\\DeployUse\\configuring-usage-rights-for-azure-rights-management.md"
+  ],
   "951b8b38325b9007360e3964b8082b6676a10de0": [
     "Azure-RMSDocs\\DeployUse\\configuring-usage-rights-for-azure-rights-management.md"
   ],
@@ -1430,6 +1433,9 @@
   "9b671912701bfae985690f51907874d1a736adef": [
     "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
   ],
+  "1f8ebc4753bb7dc2eb3f06b162cf89906b4273c3": [
+    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
+  ],
   "2094aabb2393f2d5fa7d6d7aa3f23d9d8b9038b0": [
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
   ],
@@ -1438,6 +1444,9 @@
   ],
   "3149ce6b0fe3416df1a104d15ac2cf4bd2dc9b78": [
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
+  ],
+  "de719414765036ceb3db092c978cc042b0d8ed82": [
+    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md"
   ],
   "8bf26fe57278b6928e1190e0b52bb804c821e1a6": [
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md"
@@ -1456,6 +1465,9 @@
   ],
   "70bee9c7acc2f2cd8308927d4b0ed5c37643e801": [
     "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-powershell.md"
+  ],
+  "2b77b2c2778d9e2dd8d0d62659f09c97971e5c9c": [
+    "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-refresh-templates.md"
   ],
   "ae80eac7e221d1118654bc35822f0e2f95da2660": [
     "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-refresh-templates.md"
