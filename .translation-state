@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "a277e0fc4ccea74c2e88099463f0f2383425d336",
+  "LastProcessedCommit": "33371af0eac14e9d93e1f385ad5a648292b8c5ff",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -14,7 +14,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-21T20:00:11.4914028Z",
+      "HandoffDateTime": "2016-03-21T20:55:57.5806872Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -25,7 +25,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 52,
+      "HandoffFailureTimes": 53,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -614,14 +614,15 @@
       "SourceFilePath": "Azure-RMSDocs\\media\\RMS_connector.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "Azure-RMSDocs\\deploying-the-azure-rights-management-connector.md"
+        "Azure-RMSDocs\\deploying-the-azure-rights-management-connector.md",
+        "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\RMS_connector.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\c91e5ca163103359c297261b768403f061f66ec9.png",
-      "HandoffFileCommit": "3a6b0d024d68cb04ef6cd00a2cd73adf650c9cb5",
-      "HandoffDateTime": "2016-02-27T06:36:05.8594278Z",
+      "HandoffFileCommit": "54e8316fdac17a8a841a58ff2c5aab7ea9e9674c",
+      "HandoffDateTime": "2016-03-21T20:55:57.5806872Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
@@ -5314,7 +5315,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-21T20:00:11.4914028Z",
+      "HandoffDateTime": "2016-03-21T20:55:57.5806872Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5325,7 +5326,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 52,
+      "HandoffFailureTimes": 53,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5602,7 +5603,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-21T20:00:11.4914028Z",
+      "HandoffDateTime": "2016-03-21T20:55:57.5806872Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5613,7 +5614,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 52,
+      "HandoffFailureTimes": 53,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -16991,6 +16992,62 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.ed144da281b82c185517411e0b0b72d83f903942.zh-cn.xlf",
       "HandoffFileCommit": "ee36910fbb8fe1b9bd01cce30bfde14139db304d",
       "HandoffDateTime": "2016-03-21T20:00:11.4914028Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "ee3ab940fe34b5ecad836f5db71f8f62def5c696": {
+      "FileHash": "ee3ab940fe34b5ecad836f5db71f8f62def5c696",
+      "SourceFileCommit": "33371af0eac14e9d93e1f385ad5a648292b8c5ff",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\deploying-the-azure-rights-management-connector.637feae09a6eba8df0fdffd01e7643acff8a8f23.zh-cn.xlf",
+      "HandoffFileCommit": "54e8316fdac17a8a841a58ff2c5aab7ea9e9674c",
+      "HandoffDateTime": "2016-03-21T20:55:57.5806872Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "bf72fd44a0c0332df77fb51d1373a5d609c042b9": {
+      "FileHash": "bf72fd44a0c0332df77fb51d1373a5d609c042b9",
+      "SourceFileCommit": "33371af0eac14e9d93e1f385ad5a648292b8c5ff",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\registry-settings-rms-connector.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\registry-settings-rms-connector.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\registry-settings-rms-connector.e3642e756a1c2a90c138a6ef853c5941813a1a8a.zh-cn.xlf",
+      "HandoffFileCommit": "54e8316fdac17a8a841a58ff2c5aab7ea9e9674c",
+      "HandoffDateTime": "2016-03-21T20:55:57.5806872Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

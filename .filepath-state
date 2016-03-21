@@ -110,6 +110,9 @@
   "f2f0d15eefe8c17f27d469dd279d216653cf1c9b": [
     "Azure-RMSDocs\\DeployUse\\decommissioning-and-deactivating-azure-rights-management.md"
   ],
+  "ee3ab940fe34b5ecad836f5db71f8f62def5c696": [
+    "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
+  ],
   "206d828e40da36a5f800afd383848efed5edaf83": [
     "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
   ],
@@ -121,6 +124,9 @@
   ],
   "598e1019d059eea4ab6fdfdfce8d016b1cb38289": [
     "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
+  ],
+  "c91e5ca163103359c297261b768403f061f66ec9": [
+    "Azure-RMSDocs\\media\\RMS_connector.png"
   ],
   "80f16e5851e574014594e4d93ba194beb2cc9653": [
     "Azure-RMSDocs\\DeployUse\\Sample.md",
@@ -142,15 +148,6 @@
   ],
   "3161417c9d360c13d67abb435a71b6c8c8d20274": [
     "Azure-RMSDocs\\end-user-license-agreement-for-microsoft-rms-sharing-application.md"
-  ],
-  "b0c80a528e0da29c752e7a416051952cd8817f22": [
-    "Azure-RMSDocs\\DeployUse\\exchange-2010-registry-settings.md"
-  ],
-  "3cf7135294a408f0ea81f1f8d4ed1951b45dc4db": [
-    "Azure-RMSDocs\\DeployUse\\exchange-2013-registry-settings.md"
-  ],
-  "2166fe98bf7c9077ec5a66c37eeacab12a88d25a": [
-    "Azure-RMSDocs\\DeployUse\\fs-fci-registry-settings.md"
   ],
   "26b12e20ce0b5ed42a22c6decf0eb8e1ee35cf75": [
     "Azure-RMSDocs\\Understand\\full-screen-picture-a-sharepoint-protected-document.md"
@@ -715,9 +712,6 @@
   ],
   "a96f031822081ab86235c90aac41b7571b289bcb": [
     "Azure-RMSDocs\\DeployUse\\scripting-options-for-superusers.md"
-  ],
-  "8ad5c51829b64bb17ef17a6d810c06fbbdfa60cc": [
-    "Azure-RMSDocs\\DeployUse\\sharepoint-2013-registry-settings.md"
   ],
   "2e0cde6de770abc1c51a032827b2babacc074021": [
     "Azure-RMSDocs\\DeployUse\\sharing-app-install-configure.md"
@@ -1474,5 +1468,8 @@
   ],
   "b5476f47752d0cac1e29e73067ae5a3148cb601b": [
     "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-remove-template.md"
+  ],
+  "bf72fd44a0c0332df77fb51d1373a5d609c042b9": [
+    "Azure-RMSDocs\\DeployUse\\registry-settings-rms-connector.md"
   ]
 }
