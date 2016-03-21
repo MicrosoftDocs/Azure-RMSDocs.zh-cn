@@ -110,6 +110,9 @@
   "f2f0d15eefe8c17f27d469dd279d216653cf1c9b": [
     "Azure-RMSDocs\\DeployUse\\decommissioning-and-deactivating-azure-rights-management.md"
   ],
+  "79fbc6b06e37d3c71819643213a050b0c803a80b": [
+    "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
+  ],
   "ee3ab940fe34b5ecad836f5db71f8f62def5c696": [
     "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
   ],
@@ -127,6 +130,9 @@
   ],
   "c91e5ca163103359c297261b768403f061f66ec9": [
     "Azure-RMSDocs\\media\\RMS_connector.png"
+  ],
+  "291203a2ca2e494d5ccc5206af3f44d628c20e97": [
+    "Azure-RMSDocs\\media\\AzRMS_SharePointConnector.png"
   ],
   "80f16e5851e574014594e4d93ba194beb2cc9653": [
     "Azure-RMSDocs\\DeployUse\\Sample.md",
@@ -1427,6 +1433,9 @@
   "9b671912701bfae985690f51907874d1a736adef": [
     "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
   ],
+  "37bdb7297f77751d9b016003ecbb059725c88d0f": [
+    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
+  ],
   "1f8ebc4753bb7dc2eb3f06b162cf89906b4273c3": [
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
   ],
@@ -1459,6 +1468,9 @@
   ],
   "70bee9c7acc2f2cd8308927d4b0ed5c37643e801": [
     "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-powershell.md"
+  ],
+  "22bb639c25cf392b875684867f8af8203a00a9ee": [
+    "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-refresh-templates.md"
   ],
   "2b77b2c2778d9e2dd8d0d62659f09c97971e5c9c": [
     "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-refresh-templates.md"

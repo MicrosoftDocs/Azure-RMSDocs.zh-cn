@@ -1,20 +1,21 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 6
+ Total Files | 7
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\DeployUse\0365-configure-for-clients-online-services.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33371af0eac14e9d93e1f385ad5a648292b8c5ff/Azure-RMSDocs/DeployUse/0365-configure-for-clients-online-services.md) | HandedOffFailed | [Details](#2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a9)
- [Azure-RMSDocs\DeployUse\deploying-the-azure-rights-management-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33371af0eac14e9d93e1f385ad5a648292b8c5ff/Azure-RMSDocs/DeployUse/deploying-the-azure-rights-management-connector.md) | HandedOffSuccess | [Details](#ee3ab940fe34b5ecad836f5db71f8f62def5c69621)
- [Azure-RMSDocs\DeployUse\registry-settings-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33371af0eac14e9d93e1f385ad5a648292b8c5ff/Azure-RMSDocs/DeployUse/registry-settings-rms-connector.md) | HandedOffSuccess | [Details](#bf72fd44a0c0332df77fb51d1373a5d609c042b934)
- [Azure-RMSDocs\GetStarted\rms-requirements-onpremises-servers.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33371af0eac14e9d93e1f385ad5a648292b8c5ff/Azure-RMSDocs/GetStarted/rms-requirements-onpremises-servers.md) | HandedOffFailed | [Details](#fd4cb1ed0d4cf5195185330049bb58feea1518e4125)
- [Azure-RMSDocs\media\RMS_connector.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/02e6a821e18d4671c2efdb7f10bd0e1531c3f9e6/Azure-RMSDocs/media/RMS_connector.png) | HandedOffSuccess | [Details](#c91e5ca163103359c297261b768403f061f66ec9277)
- [Azure-RMSDocs\Understand\rms-for-individuals-and-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33371af0eac14e9d93e1f385ad5a648292b8c5ff/Azure-RMSDocs/Understand/rms-for-individuals-and-azure-rights-management.md) | HandedOffFailed | [Details](#fadbd257a2c88b3b44e49d23986ec33693ea5250347)
+ [Azure-RMSDocs\DeployUse\0365-configure-for-clients-online-services.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf1e41d91ff29e04320df4bbe019f12d43196342/Azure-RMSDocs/DeployUse/0365-configure-for-clients-online-services.md) | HandedOffFailed | [Details](#2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a9)
+ [Azure-RMSDocs\DeployUse\configure-custom-templates-for-azure-rights-management-refresh-templates.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf1e41d91ff29e04320df4bbe019f12d43196342/Azure-RMSDocs/DeployUse/configure-custom-templates-for-azure-rights-management-refresh-templates.md) | HandedOffSuccess | [Details](#22bb639c25cf392b875684867f8af8203a00a9ee14)
+ [Azure-RMSDocs\DeployUse\deploying-the-azure-rights-management-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf1e41d91ff29e04320df4bbe019f12d43196342/Azure-RMSDocs/DeployUse/deploying-the-azure-rights-management-connector.md) | HandedOffSuccess | [Details](#79fbc6b06e37d3c71819643213a050b0c803a80b21)
+ [Azure-RMSDocs\DeployUse\operations-for-your-azure-rights-management-tenant-key-customer-managed.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf1e41d91ff29e04320df4bbe019f12d43196342/Azure-RMSDocs/DeployUse/operations-for-your-azure-rights-management-tenant-key-customer-managed.md) | HandedOffSuccess | [Details](#37bdb7297f77751d9b016003ecbb059725c88d0f31)
+ [Azure-RMSDocs\GetStarted\rms-requirements-onpremises-servers.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf1e41d91ff29e04320df4bbe019f12d43196342/Azure-RMSDocs/GetStarted/rms-requirements-onpremises-servers.md) | HandedOffFailed | [Details](#fd4cb1ed0d4cf5195185330049bb58feea1518e4125)
+ [Azure-RMSDocs\media\AzRMS_SharePointConnector.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/02e6a821e18d4671c2efdb7f10bd0e1531c3f9e6/Azure-RMSDocs/media/AzRMS_SharePointConnector.png) | HandedOffSuccess | [Details](#291203a2ca2e494d5ccc5206af3f44d628c20e97225)
+ [Azure-RMSDocs\Understand\rms-for-individuals-and-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf1e41d91ff29e04320df4bbe019f12d43196342/Azure-RMSDocs/Understand/rms-for-individuals-and-azure-rights-management.md) | HandedOffFailed | [Details](#fadbd257a2c88b3b44e49d23986ec33693ea5250347)
 
 ## Item Details
-##### <a name='2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a9'></a> Source: [Azure-RMSDocs\DeployUse\0365-configure-for-clients-online-services.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33371af0eac14e9d93e1f385ad5a648292b8c5ff/Azure-RMSDocs/DeployUse/0365-configure-for-clients-online-services.md)
+##### <a name='2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a9'></a> Source: [Azure-RMSDocs\DeployUse\0365-configure-for-clients-online-services.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf1e41d91ff29e04320df4bbe019f12d43196342/Azure-RMSDocs/DeployUse/0365-configure-for-clients-online-services.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
@@ -27,11 +28,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ee3ab940fe34b5ecad836f5db71f8f62def5c69621'></a> Source: [Azure-RMSDocs\DeployUse\deploying-the-azure-rights-management-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33371af0eac14e9d93e1f385ad5a648292b8c5ff/Azure-RMSDocs/DeployUse/deploying-the-azure-rights-management-connector.md)
+##### <a name='22bb639c25cf392b875684867f8af8203a00a9ee14'></a> Source: [Azure-RMSDocs\DeployUse\configure-custom-templates-for-azure-rights-management-refresh-templates.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf1e41d91ff29e04320df4bbe019f12d43196342/Azure-RMSDocs/DeployUse/configure-custom-templates-for-azure-rights-management-refresh-templates.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [deploying-the-azure-rights-management-connector.637feae09a6eba8df0fdffd01e7643acff8a8f23.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/54e8316fdac17a8a841a58ff2c5aab7ea9e9674c/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/deploying-the-azure-rights-management-connector.637feae09a6eba8df0fdffd01e7643acff8a8f23.zh-cn.xlf)
-* Handoff Datetime: 2016-03-21 20:55:57
+* Handoff File: [configure-custom-templates-for-azure-rights-management-refresh-templates.ab4ba201878fc229654cb7e8c2d8fc104c3649ce.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/5f183e4ea5a92e20a33644203f08c19b210df777/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/configure-custom-templates-for-azure-rights-management-refresh-templates.ab4ba201878fc229654cb7e8c2d8fc104c3649ce.zh-cn.xlf)
+* Handoff Datetime: 2016-03-21 23:27:00
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -39,11 +40,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='bf72fd44a0c0332df77fb51d1373a5d609c042b934'></a> Source: [Azure-RMSDocs\DeployUse\registry-settings-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33371af0eac14e9d93e1f385ad5a648292b8c5ff/Azure-RMSDocs/DeployUse/registry-settings-rms-connector.md)
+##### <a name='79fbc6b06e37d3c71819643213a050b0c803a80b21'></a> Source: [Azure-RMSDocs\DeployUse\deploying-the-azure-rights-management-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf1e41d91ff29e04320df4bbe019f12d43196342/Azure-RMSDocs/DeployUse/deploying-the-azure-rights-management-connector.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [registry-settings-rms-connector.e3642e756a1c2a90c138a6ef853c5941813a1a8a.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/54e8316fdac17a8a841a58ff2c5aab7ea9e9674c/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/registry-settings-rms-connector.e3642e756a1c2a90c138a6ef853c5941813a1a8a.zh-cn.xlf)
-* Handoff Datetime: 2016-03-21 20:55:57
+* Handoff File: [deploying-the-azure-rights-management-connector.637feae09a6eba8df0fdffd01e7643acff8a8f23.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/5f183e4ea5a92e20a33644203f08c19b210df777/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/deploying-the-azure-rights-management-connector.637feae09a6eba8df0fdffd01e7643acff8a8f23.zh-cn.xlf)
+* Handoff Datetime: 2016-03-21 23:27:00
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -51,7 +52,19 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='fd4cb1ed0d4cf5195185330049bb58feea1518e4125'></a> Source: [Azure-RMSDocs\GetStarted\rms-requirements-onpremises-servers.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33371af0eac14e9d93e1f385ad5a648292b8c5ff/Azure-RMSDocs/GetStarted/rms-requirements-onpremises-servers.md)
+##### <a name='37bdb7297f77751d9b016003ecbb059725c88d0f31'></a> Source: [Azure-RMSDocs\DeployUse\operations-for-your-azure-rights-management-tenant-key-customer-managed.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf1e41d91ff29e04320df4bbe019f12d43196342/Azure-RMSDocs/DeployUse/operations-for-your-azure-rights-management-tenant-key-customer-managed.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [operations-for-your-azure-rights-management-tenant-key-customer-managed.6f04a394307ae915402e564a3661a25b7223fae7.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/5f183e4ea5a92e20a33644203f08c19b210df777/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/operations-for-your-azure-rights-management-tenant-key-customer-managed.6f04a394307ae915402e564a3661a25b7223fae7.zh-cn.xlf)
+* Handoff Datetime: 2016-03-21 23:27:00
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='fd4cb1ed0d4cf5195185330049bb58feea1518e4125'></a> Source: [Azure-RMSDocs\GetStarted\rms-requirements-onpremises-servers.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf1e41d91ff29e04320df4bbe019f12d43196342/Azure-RMSDocs/GetStarted/rms-requirements-onpremises-servers.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
@@ -64,11 +77,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='c91e5ca163103359c297261b768403f061f66ec9277'></a> Source: [Azure-RMSDocs\media\RMS_connector.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/02e6a821e18d4671c2efdb7f10bd0e1531c3f9e6/Azure-RMSDocs/media/RMS_connector.png)
+##### <a name='291203a2ca2e494d5ccc5206af3f44d628c20e97225'></a> Source: [Azure-RMSDocs\media\AzRMS_SharePointConnector.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/02e6a821e18d4671c2efdb7f10bd0e1531c3f9e6/Azure-RMSDocs/media/AzRMS_SharePointConnector.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [c91e5ca163103359c297261b768403f061f66ec9.png](https://github.com/Microsoft/EM.handoff/blob/54e8316fdac17a8a841a58ff2c5aab7ea9e9674c/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/c91e5ca163103359c297261b768403f061f66ec9.png)
-* Handoff Datetime: 2016-03-21 20:55:57
+* Handoff File: [291203a2ca2e494d5ccc5206af3f44d628c20e97.png](https://github.com/Microsoft/EM.handoff/blob/5f183e4ea5a92e20a33644203f08c19b210df777/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/291203a2ca2e494d5ccc5206af3f44d628c20e97.png)
+* Handoff Datetime: 2016-03-21 23:27:00
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -77,7 +90,7 @@
 * Dependency From: Azure-RMSDocs\deploying-the-azure-rights-management-connector.md, Azure-RMSDocs\DeployUse\deploying-the-azure-rights-management-connector.md
 * [Back to Top](#report-top)
 
-##### <a name='fadbd257a2c88b3b44e49d23986ec33693ea5250347'></a> Source: [Azure-RMSDocs\Understand\rms-for-individuals-and-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33371af0eac14e9d93e1f385ad5a648292b8c5ff/Azure-RMSDocs/Understand/rms-for-individuals-and-azure-rights-management.md)
+##### <a name='fadbd257a2c88b3b44e49d23986ec33693ea5250347'></a> Source: [Azure-RMSDocs\Understand\rms-for-individuals-and-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cf1e41d91ff29e04320df4bbe019f12d43196342/Azure-RMSDocs/Understand/rms-for-individuals-and-azure-rights-management.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
