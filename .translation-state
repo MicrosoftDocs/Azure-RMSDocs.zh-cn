@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "cf1e41d91ff29e04320df4bbe019f12d43196342",
+  "LastProcessedCommit": "9013d9ae14530c4a3462aa8f9e6a88dfdc87b4db",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -10,11 +10,12 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\0365-configure-for-clients-online-services.md",
-        "Azure-RMSDocs\\DeployUse\\0365-configure-for-clients-online-services.md"
+        "Azure-RMSDocs\\DeployUse\\0365-configure-for-clients-online-services.md",
+        "Azure-RMSDocs\\deploy-use\\0365-configure-for-clients-online-services.md"
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-21T23:27:00.9750856Z",
+      "HandoffDateTime": "2016-03-22T18:28:04.7376952Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -25,7 +26,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 54,
+      "HandoffFailureTimes": 55,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -615,7 +616,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\deploying-the-azure-rights-management-connector.md",
-        "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
+        "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md",
+        "Azure-RMSDocs\\deploy-use\\deploying-the-azure-rights-management-connector.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\RMS_connector.png"
@@ -646,7 +648,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\deploying-the-azure-rights-management-connector.md",
-        "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
+        "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md",
+        "Azure-RMSDocs\\deploy-use\\deploying-the-azure-rights-management-connector.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_SharePointConnector.png"
@@ -680,7 +683,10 @@
         "Azure-RMSDocs\\DeployUse\\Sample.md",
         "Azure-RMSDocs\\PlanDesign\\Sample.md",
         "Azure-RMSDocs\\Troubleshoot\\Sample.md",
-        "Azure-RMSDocs\\Understand\\Sample.md"
+        "Azure-RMSDocs\\Understand\\Sample.md",
+        "Azure-RMSDocs\\deploy-use\\Sample.md",
+        "Azure-RMSDocs\\plan-design\\Sample.md",
+        "Azure-RMSDocs\\understand-explore\\Sample.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\Sample.68cbfc54f2050e652a2f2f0fbdc78623b70d2f16.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -977,7 +983,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-a-sharepoint-protected-document.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-a-sharepoint-protected-document.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-a-sharepoint-protected-document.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-a-sharepoint-protected-document.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-a-sharepoint-protected-document.2148e3e4fe482d8a54ffa0ebca9c98c759717729.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1094,7 +1101,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-alice-gets-email-notification.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-alice-gets-email-notification.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-alice-gets-email-notification.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-alice-gets-email-notification.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-alice-gets-email-notification.cf04212cf62e64c9d9b496c0a73aebfda56581ea.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1153,7 +1161,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-alice-shares-protected-attachment.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-alice-shares-protected-attachment.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-alice-shares-protected-attachment.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-alice-shares-protected-attachment.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-alice-shares-protected-attachment.0c9c57e9d908fcee50aca3cf60fbd006f9d8b3b9.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1212,7 +1221,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-an-external-email-protected-by-dlp-and-azure-rms.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-an-external-email-protected-by-dlp-and-azure-rms.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-an-external-email-protected-by-dlp-and-azure-rms.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-an-external-email-protected-by-dlp-and-azure-rms.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-an-external-email-protected-by-dlp-and-azure-rms.a24dfb5a20608cc6969973184ad5f08d60286d82.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1271,7 +1281,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-an-unprotected-email-internal-.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-an-unprotected-email-internal-.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-an-unprotected-email-internal-.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-an-unprotected-email-internal-.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-an-unprotected-email-internal-.f3b7955dee7f6918eaf6809634dfb0eff9b65cd5.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1330,7 +1341,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-available-settings-for-rms-templates.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-available-settings-for-rms-templates.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-available-settings-for-rms-templates.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-available-settings-for-rms-templates.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-available-settings-for-rms-templates.8044978e4d8b2d9793f22f0811159054fe9fdaff.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1447,7 +1459,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-bob-sees-the-email-on-his-ipad.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-bob-sees-the-email-on-his-ipad.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-bob-sees-the-email-on-his-ipad.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-bob-sees-the-email-on-his-ipad.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-bob-sees-the-email-on-his-ipad.72e62fc0b92d8f19b03bffef633d776a27ee6271.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1506,7 +1519,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-confidential-report-accidentally-sent-to-wrong-person.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-confidential-report-accidentally-sent-to-wrong-person.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-confidential-report-accidentally-sent-to-wrong-person.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-confidential-report-accidentally-sent-to-wrong-person.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-confidential-report-accidentally-sent-to-wrong-person.30e647d282a35ad3b9505588eeacf3ce475b27a9.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1565,7 +1579,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-configuring-dlp-for-azure-rms.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-configuring-dlp-for-azure-rms.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-configuring-dlp-for-azure-rms.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-configuring-dlp-for-azure-rms.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-configuring-dlp-for-azure-rms.a5144f3b1161daeb937070edb0f4a8c6154d11b4.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1624,7 +1639,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-configuring-fci-for-the-marketing-classification.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-configuring-fci-for-the-marketing-classification.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-configuring-fci-for-the-marketing-classification.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-configuring-fci-for-the-marketing-classification.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-configuring-fci-for-the-marketing-classification.6d20aa211195e5eb9dc8161906b7e0989a72f888.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1683,7 +1699,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-enabling-irm-for-a-library.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-enabling-irm-for-a-library.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-enabling-irm-for-a-library.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-enabling-irm-for-a-library.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-enabling-irm-for-a-library.cdd54508b7951621015589708ca797448d892339.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1742,7 +1759,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-enabling-irm-on-sharepoint-online.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-enabling-irm-on-sharepoint-online.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-enabling-irm-on-sharepoint-online.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-enabling-irm-on-sharepoint-online.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-enabling-irm-on-sharepoint-online.975dcfa0a2bbb1309207429a489ae1d1f0c6729c.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1801,7 +1819,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-installing-and-configuring-the-rms-connector-for-fci.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-installing-and-configuring-the-rms-connector-for-fci.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-installing-and-configuring-the-rms-connector-for-fci.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-installing-and-configuring-the-rms-connector-for-fci.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-installing-and-configuring-the-rms-connector-for-fci.231703548ecc9c78aabc7500a59724f6e3aa9a3f.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1860,7 +1879,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-rms-templates-in-the-azure-management-portal.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-rms-templates-in-the-azure-management-portal.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-rms-templates-in-the-azure-management-portal.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-rms-templates-in-the-azure-management-portal.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-rms-templates-in-the-azure-management-portal.e0271f0990ca1a2ec6344ef384609c92d82b6d2b.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -1919,7 +1939,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-select-rms-templates-in-applications,-such-as-file-explorer-and-word.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-select-rms-templates-in-applications,-such-as-file-explorer-and-word.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-select-rms-templates-in-applications,-such-as-file-explorer-and-word.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-select-rms-templates-in-applications,-such-as-file-explorer-and-word.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-select-rms-templates-in-applications,-such-as-file-explorer-and-word.f22451ccb83d9bc70fd329c9a283c83c808da96f.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -2033,7 +2054,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\Sample.md"
+        "Azure-RMSDocs\\GetStarted\\Sample.md",
+        "Azure-RMSDocs\\get-started\\Sample.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\Sample.2666ac2851935babd9704c77a9d0651bdf4b4f0e.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -2175,7 +2197,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\how-does-it-work.md",
-        "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+        "Azure-RMSDocs\\Understand\\how-does-it-work.md",
+        "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_SecretColaFormula_final.png"
@@ -2206,7 +2229,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\how-does-it-work.md",
-        "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+        "Azure-RMSDocs\\Understand\\how-does-it-work.md",
+        "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS.png"
@@ -2237,7 +2261,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\how-does-it-work.md",
-        "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+        "Azure-RMSDocs\\Understand\\how-does-it-work.md",
+        "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_useractivation2.png"
@@ -2268,7 +2293,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\how-does-it-work.md",
-        "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+        "Azure-RMSDocs\\Understand\\how-does-it-work.md",
+        "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_documentprotection1.png"
@@ -2299,7 +2325,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\how-does-it-work.md",
-        "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+        "Azure-RMSDocs\\Understand\\how-does-it-work.md",
+        "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_documentprotection2.png"
@@ -2330,7 +2357,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\how-does-it-work.md",
-        "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+        "Azure-RMSDocs\\Understand\\how-does-it-work.md",
+        "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_documentprotection3.png"
@@ -2361,7 +2389,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\how-does-it-work.md",
-        "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+        "Azure-RMSDocs\\Understand\\how-does-it-work.md",
+        "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_documentconsumption1.png"
@@ -2392,7 +2421,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\how-does-it-work.md",
-        "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+        "Azure-RMSDocs\\Understand\\how-does-it-work.md",
+        "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_documentconsumption2.png"
@@ -2423,7 +2453,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\how-does-it-work.md",
-        "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+        "Azure-RMSDocs\\Understand\\how-does-it-work.md",
+        "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_documentconsumption3.png"
@@ -2484,7 +2515,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\how-to-access-usage-logs.md",
-        "Azure-RMSDocs\\DeployUse\\how-to-access-usage-logs.md"
+        "Azure-RMSDocs\\DeployUse\\how-to-access-usage-logs.md",
+        "Azure-RMSDocs\\deploy-use\\how-to-access-usage-logs.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-access-usage-logs.1f9f3278fa93a66c0600d534e0eca21a0a41367c.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -2569,7 +2601,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\how-to-enable-logging.md",
-        "Azure-RMSDocs\\DeployUse\\how-to-enable-logging.md"
+        "Azure-RMSDocs\\DeployUse\\how-to-enable-logging.md",
+        "Azure-RMSDocs\\deploy-use\\how-to-enable-logging.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-enable-logging.3a21b3ea81b5182d3b818b3627544c467620af29.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -2598,7 +2631,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\how-to-interpret-usage-logs.md",
-        "Azure-RMSDocs\\DeployUse\\how-to-interpret-usage-logs.md"
+        "Azure-RMSDocs\\DeployUse\\how-to-interpret-usage-logs.md",
+        "Azure-RMSDocs\\deploy-use\\how-to-interpret-usage-logs.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-interpret-usage-logs.6cc3db5213eeb0d7fcd70b14ce4a5d0d46ccac11.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -2695,7 +2729,14 @@
         "Azure-RMSDocs\\GetStarted\\scenario-retain-control-of-documents-stored-in-sharepoint.md",
         "Azure-RMSDocs\\GetStarted\\scenario-secure-your-most-few-valuable-files.md",
         "Azure-RMSDocs\\GetStarted\\scenario-send-a-company-confidential-email.md",
-        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\scenario-secure-your-most-few-valuable-files.md",
+        "Azure-RMSDocs\\get-started\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\scenario-configure-work-folders-for-persistent-protection.md",
+        "Azure-RMSDocs\\get-started\\scenario-executives-securely-exchange-privileged-information.md",
+        "Azure-RMSDocs\\get-started\\scenario-send-a-company-confidential-email.md",
+        "Azure-RMSDocs\\get-started\\scenario-protect-files-on-a-file-server-share.md",
+        "Azure-RMSDocs\\get-started\\scenario-retain-control-of-documents-stored-in-sharepoint.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\4d269a30-a873-45c5-87de-30ee6558e7b0.gif"
@@ -2788,7 +2829,8 @@
       "DependencyFrom": [
         "Azure-RMSDocs\\how-to-safely-share-a-document-by-email.md",
         "Azure-RMSDocs\\scenario-share-an-office-file-with-users-in-another-organization.md",
-        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\scenario-share-an-office-file-with-users-in-another-organization.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_SharedProtected_ViewerOnly.PNG"
@@ -2940,7 +2982,8 @@
       "DependencyFrom": [
         "Azure-RMSDocs\\how-to-safely-share-a-document-by-email.md",
         "Azure-RMSDocs\\scenario-share-an-office-file-with-users-in-another-organization.md",
-        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\scenario-share-an-office-file-with-users-in-another-organization.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_SharedProtected_InstantRevoke.PNG"
@@ -2972,7 +3015,8 @@
       "DependencyFrom": [
         "Azure-RMSDocs\\how-to-safely-share-a-document-by-email.md",
         "Azure-RMSDocs\\scenario-share-an-office-file-with-users-in-another-organization.md",
-        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\scenario-share-an-office-file-with-users-in-another-organization.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_SharedProtected_EmailMe.PNG"
@@ -4018,7 +4062,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\planning-and-implementing-your-azure-rights-management-tenant-key.md",
-        "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
+        "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md",
+        "Azure-RMSDocs\\plan-design\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\RMS_BYOK_cloud.png"
@@ -4049,7 +4094,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\planning-and-implementing-your-azure-rights-management-tenant-key.md",
-        "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
+        "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md",
+        "Azure-RMSDocs\\plan-design\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\RMS_BYOK_onprem.png"
@@ -4110,7 +4156,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\planning-and-implementing-your-azure-rights-management-tenant-key.md",
-        "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
+        "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md",
+        "Azure-RMSDocs\\plan-design\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\RMS_Logging.gif"
@@ -4199,7 +4246,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\privacy-statement-for-microsoft-rights-management-in-rms-enlightened-applications.md",
-        "Azure-RMSDocs\\RMSClient\\privacy-statement-for-microsoft-rights-management-in-rms-enlightened-applications.md"
+        "Azure-RMSDocs\\RMSClient\\privacy-statement-for-microsoft-rights-management-in-rms-enlightened-applications.md",
+        "Azure-RMSDocs\\rms-client\\privacy-statement-for-microsoft-rights-management-in-rms-enlightened-applications.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\privacy-statement-for-microsoft-rights-management-in-rms-enlightened-applications.e92843abdb5b1c3bd0d70cd4f40fcc774cbe30e0.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -4228,7 +4276,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application.md",
-        "Azure-RMSDocs\\RMSClient\\protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application.md"
+        "Azure-RMSDocs\\RMSClient\\protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application.md",
+        "Azure-RMSDocs\\rms-client\\protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application.c4499d4b12dbcd52cf792d5f8d8271de36d5bdbe.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -4317,7 +4366,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application.md",
-        "Azure-RMSDocs\\RMSClient\\protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application.md"
+        "Azure-RMSDocs\\RMSClient\\protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application.md",
+        "Azure-RMSDocs\\rms-client\\protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application.622c3ee4b6a3ee57dee124a8faf2db3b7b5bd053.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -4466,7 +4516,8 @@
         "Azure-RMSDocs\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md",
-        "Azure-RMSDocs\\includes\\rms-quickstart-intro-include.md"
+        "Azure-RMSDocs\\includes\\rms-quickstart-intro-include.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_QuickStartStepsAll.PNG"
@@ -4499,7 +4550,8 @@
         "Azure-RMSDocs\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step1.md",
-        "Azure-RMSDocs\\includes\\rms-quickstart-step1-include.md"
+        "Azure-RMSDocs\\includes\\rms-quickstart-step1-include.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps1.PNG"
@@ -4532,7 +4584,8 @@
         "Azure-RMSDocs\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step1.md",
-        "Azure-RMSDocs\\includes\\rms-quickstart-step1-include.md"
+        "Azure-RMSDocs\\includes\\rms-quickstart-step1-include.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_Tutorial_1_Screenshots.png"
@@ -4565,7 +4618,8 @@
         "Azure-RMSDocs\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md",
-        "Azure-RMSDocs\\includes\\rms-quickstart-step2-include.md"
+        "Azure-RMSDocs\\includes\\rms-quickstart-step2-include.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps2.PNG"
@@ -4598,7 +4652,8 @@
         "Azure-RMSDocs\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md",
-        "Azure-RMSDocs\\includes\\rms-quickstart-step2-include.md"
+        "Azure-RMSDocs\\includes\\rms-quickstart-step2-include.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_Tutorial_2_Screenshots.png"
@@ -4631,7 +4686,8 @@
         "Azure-RMSDocs\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step3.md",
-        "Azure-RMSDocs\\includes\\rms-quickstart-step3-include.md"
+        "Azure-RMSDocs\\includes\\rms-quickstart-step3-include.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps3.PNG"
@@ -4664,7 +4720,8 @@
         "Azure-RMSDocs\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step3.md",
-        "Azure-RMSDocs\\includes\\rms-quickstart-step3-include.md"
+        "Azure-RMSDocs\\includes\\rms-quickstart-step3-include.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_Tutorial_3_Screenshots.png"
@@ -4697,7 +4754,8 @@
         "Azure-RMSDocs\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step4.md",
-        "Azure-RMSDocs\\includes\\rms-quickstart-step4-include.md"
+        "Azure-RMSDocs\\includes\\rms-quickstart-step4-include.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps4.PNG"
@@ -4730,7 +4788,8 @@
         "Azure-RMSDocs\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step4.md",
-        "Azure-RMSDocs\\includes\\rms-quickstart-step4-include.md"
+        "Azure-RMSDocs\\includes\\rms-quickstart-step4-include.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_Tutorial_4_Screenshots.png"
@@ -4763,7 +4822,8 @@
         "Azure-RMSDocs\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step5.md",
-        "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
+        "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_QuickStartSteps5.PNG"
@@ -4798,7 +4858,9 @@
         "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\rapid-deployment-guide-for-azure-rights-management.md",
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step5.md",
-        "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
+        "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md",
+        "Azure-RMSDocs\\get-started\\rapid-deployment-guide-for-azure-rights-management.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_Tutorial_5_Screenshots.png"
@@ -4870,7 +4932,14 @@
         "Azure-RMSDocs\\GetStarted\\scenario-retain-control-of-documents-stored-in-sharepoint.md",
         "Azure-RMSDocs\\GetStarted\\scenario-secure-your-most-few-valuable-files.md",
         "Azure-RMSDocs\\GetStarted\\scenario-send-a-company-confidential-email.md",
-        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\rapid-deployment-guide-for-azure-rights-management.md",
+        "Azure-RMSDocs\\get-started\\scenario-secure-your-most-few-valuable-files.md",
+        "Azure-RMSDocs\\get-started\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\scenario-executives-securely-exchange-privileged-information.md",
+        "Azure-RMSDocs\\get-started\\scenario-send-a-company-confidential-email.md",
+        "Azure-RMSDocs\\get-started\\scenario-protect-files-on-a-file-server-share.md",
+        "Azure-RMSDocs\\get-started\\scenario-retain-control-of-documents-stored-in-sharepoint.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_ExampleBanner.png"
@@ -5053,7 +5122,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\rights-in-permissions-levels.md",
-        "Azure-RMSDocs\\DeployUse\\rights-in-permissions-levels.md"
+        "Azure-RMSDocs\\DeployUse\\rights-in-permissions-levels.md",
+        "Azure-RMSDocs\\deploy-use\\rights-in-permissions-levels.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rights-in-permissions-levels.734a8b54c369bc4448bd02836825ddfaa093647b.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -5082,7 +5152,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\rights-management-rms-client.md",
-        "Azure-RMSDocs\\RMSClient\\rights-management-rms-client.md"
+        "Azure-RMSDocs\\RMSClient\\rights-management-rms-client.md",
+        "Azure-RMSDocs\\rms-client\\rights-management-rms-client.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rights-management-rms-client.1858110c9463e3672d5cebb7951070418ed43d42.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -5169,7 +5240,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\rights-management-sharing-application-for-windows.md",
-        "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-for-windows.md"
+        "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-for-windows.md",
+        "Azure-RMSDocs\\rms-client\\rights-management-sharing-application-for-windows.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rights-management-sharing-application-for-windows.215a0ce88b0d7539bd8b6d580fa21cf1b638a5b9.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -5226,7 +5298,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\rights-management-sharing-application-version-release-history.md",
-        "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-version-release-history.md"
+        "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-version-release-history.md",
+        "Azure-RMSDocs\\rms-client\\rights-management-sharing-application-version-release-history.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rights-management-sharing-application-version-release-history.0c6d52250ce2e320a8bf6b10c259a53ef89fcd7d.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -5312,11 +5385,12 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\rms-for-individuals-and-azure-rights-management.md",
-        "Azure-RMSDocs\\Understand\\rms-for-individuals-and-azure-rights-management.md"
+        "Azure-RMSDocs\\Understand\\rms-for-individuals-and-azure-rights-management.md",
+        "Azure-RMSDocs\\understand-explore\\rms-for-individuals-and-azure-rights-management.md"
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-21T23:27:00.9750856Z",
+      "HandoffDateTime": "2016-03-22T18:28:04.7376952Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5327,7 +5401,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 54,
+      "HandoffFailureTimes": 55,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5600,11 +5674,12 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\rms-requirements-onpremises-servers.md",
-        "Azure-RMSDocs\\GetStarted\\rms-requirements-onpremises-servers.md"
+        "Azure-RMSDocs\\GetStarted\\rms-requirements-onpremises-servers.md",
+        "Azure-RMSDocs\\get-started\\rms-requirements-onpremises-servers.md"
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-21T23:27:00.9750856Z",
+      "HandoffDateTime": "2016-03-22T18:28:04.7376952Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5615,7 +5690,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 54,
+      "HandoffFailureTimes": 55,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5677,7 +5752,14 @@
         "Azure-RMSDocs\\GetStarted\\scenario-retain-control-of-documents-stored-in-sharepoint.md",
         "Azure-RMSDocs\\GetStarted\\scenario-secure-your-most-few-valuable-files.md",
         "Azure-RMSDocs\\GetStarted\\scenario-send-a-company-confidential-email.md",
-        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\scenario-secure-your-most-few-valuable-files.md",
+        "Azure-RMSDocs\\get-started\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\scenario-configure-work-folders-for-persistent-protection.md",
+        "Azure-RMSDocs\\get-started\\scenario-executives-securely-exchange-privileged-information.md",
+        "Azure-RMSDocs\\get-started\\scenario-send-a-company-confidential-email.md",
+        "Azure-RMSDocs\\get-started\\scenario-protect-files-on-a-file-server-share.md",
+        "Azure-RMSDocs\\get-started\\scenario-retain-control-of-documents-stored-in-sharepoint.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_AdminBanner.png"
@@ -5747,7 +5829,13 @@
         "Azure-RMSDocs\\GetStarted\\scenario-retain-control-of-documents-stored-in-sharepoint.md",
         "Azure-RMSDocs\\GetStarted\\scenario-secure-your-most-few-valuable-files.md",
         "Azure-RMSDocs\\GetStarted\\scenario-send-a-company-confidential-email.md",
-        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\scenario-secure-your-most-few-valuable-files.md",
+        "Azure-RMSDocs\\get-started\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\scenario-executives-securely-exchange-privileged-information.md",
+        "Azure-RMSDocs\\get-started\\scenario-send-a-company-confidential-email.md",
+        "Azure-RMSDocs\\get-started\\scenario-protect-files-on-a-file-server-share.md",
+        "Azure-RMSDocs\\get-started\\scenario-retain-control-of-documents-stored-in-sharepoint.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_UsersBanner.png"
@@ -5894,7 +5982,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\scenario-send-a-company-confidential-email.md",
-        "Azure-RMSDocs\\GetStarted\\scenario-send-a-company-confidential-email.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-send-a-company-confidential-email.md",
+        "Azure-RMSDocs\\get-started\\scenario-send-a-company-confidential-email.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_OutlookTemplate.PNG"
@@ -5925,7 +6014,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\scenario-send-a-company-confidential-email.md",
-        "Azure-RMSDocs\\GetStarted\\scenario-send-a-company-confidential-email.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-send-a-company-confidential-email.md",
+        "Azure-RMSDocs\\get-started\\scenario-send-a-company-confidential-email.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_OWATemplate.png"
@@ -5985,7 +6075,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\scenario-share-an-office-file-with-users-in-another-organization.md",
-        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\scenario-share-an-office-file-with-users-in-another-organization.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMSUserInstructions_ShareProtectedRibbon2013.png"
@@ -6076,7 +6167,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\scripting-options-for-superusers.md",
-        "Azure-RMSDocs\\DeployUse\\scripting-options-for-superusers.md"
+        "Azure-RMSDocs\\DeployUse\\scripting-options-for-superusers.md",
+        "Azure-RMSDocs\\deploy-use\\scripting-options-for-superusers.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scripting-options-for-superusers.634a1ecc0eede9996ff2ff1105ed8fe1585b4d3d.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -6489,7 +6581,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\usage-rights-descriptions.md",
-        "Azure-RMSDocs\\DeployUse\\usage-rights-descriptions.md"
+        "Azure-RMSDocs\\DeployUse\\usage-rights-descriptions.md",
+        "Azure-RMSDocs\\deploy-use\\usage-rights-descriptions.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\usage-rights-descriptions.2dde9cef1c342ba45dd76512cbc72a5d45287465.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -6518,7 +6611,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\use-keyboard-shortcuts-in-the-rights-management-sharing-application.md",
-        "Azure-RMSDocs\\RMSClient\\use-keyboard-shortcuts-in-the-rights-management-sharing-application.md"
+        "Azure-RMSDocs\\RMSClient\\use-keyboard-shortcuts-in-the-rights-management-sharing-application.md",
+        "Azure-RMSDocs\\rms-client\\use-keyboard-shortcuts-in-the-rights-management-sharing-application.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\use-keyboard-shortcuts-in-the-rights-management-sharing-application.9940734a28342fef9c8b921c76a025c41c07ace1.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -6751,7 +6845,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_StoryboardActivate_small1.png"
@@ -6782,7 +6877,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal_small.png"
@@ -6813,7 +6909,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_TemplatesSettings3.png"
@@ -6844,7 +6941,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_TemplatesPortal_ExplorerWord3.png"
@@ -6875,7 +6973,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_FCI_ConnectorSmall.png"
@@ -6906,7 +7005,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_ExampleFCI_ConfigurationSmall.png"
@@ -6937,7 +7037,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_FCI_EmailSmall.png"
@@ -6968,7 +7069,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_DLPExample1.png"
@@ -6999,7 +7101,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_DLPUnprotectedEmail_small.png"
@@ -7030,7 +7133,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_DLPProtectedEmail_small.png"
@@ -7061,7 +7165,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_small1.png"
@@ -7092,7 +7197,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_small2.png"
@@ -7123,7 +7229,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_StoryboardSPO_small3.png"
@@ -7154,7 +7261,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small1.png"
@@ -7185,7 +7293,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small2.png"
@@ -7216,7 +7325,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small3.png"
@@ -7247,7 +7357,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "Azure-RMSDocs\\what-do-admins-users-see.md",
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_StoryboardEmail_small4.png"
@@ -7309,7 +7420,8 @@
         "Azure-RMSDocs\\what-is-azure-rights-management.md",
         "Azure-RMSDocs\\Understand\\what-is-azure-rights-management.md",
         "Azure-RMSDocs\\scratch.md",
-        "Azure-RMSDocs\\test\\scratch.md"
+        "Azure-RMSDocs\\test\\scratch.md",
+        "Azure-RMSDocs\\understand-explore\\what-is-azure-rights-management.md"
       ],
       "FilePathList": [
         "Azure-RMSDocs\\media\\AzRMS_elements.png"
@@ -7452,7 +7564,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\azure-rights-management.md"
+        "Azure-RMSDocs\\Understand\\azure-rights-management.md",
+        "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\azure-rights-management.dfe472b0aa2915da5f76db88a14f2ed3bb3cb628.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -7508,7 +7621,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\rms-for-individuals-admins-take-control.md"
+        "Azure-RMSDocs\\Understand\\rms-for-individuals-admins-take-control.md",
+        "Azure-RMSDocs\\understand-explore\\rms-for-individuals-admins-take-control.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-for-individuals-admins-take-control.4ef9f7c5c5632217a8c27622306320f4368e6efa.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -7592,7 +7706,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\rapid-deployment-guide-for-azure-rights-management.md"
+        "Azure-RMSDocs\\GetStarted\\rapid-deployment-guide-for-azure-rights-management.md",
+        "Azure-RMSDocs\\get-started\\rapid-deployment-guide-for-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rapid-deployment-guide-for-azure-rights-management.2bb7ce42842b30cd680022d31e1ce35cba4923d0.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -7620,7 +7735,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\scenario-configure-work-folders-for-persistent-protection.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-configure-work-folders-for-persistent-protection.md",
+        "Azure-RMSDocs\\get-started\\scenario-configure-work-folders-for-persistent-protection.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-configure-work-folders-for-persistent-protection.0554289997ec7b932b8b19fa31fb3efdf557d785.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -7648,7 +7764,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\scenario-executives-securely-exchange-privileged-information.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-executives-securely-exchange-privileged-information.md",
+        "Azure-RMSDocs\\get-started\\scenario-executives-securely-exchange-privileged-information.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-executives-securely-exchange-privileged-information.bd652e3a024d74e995ad1bc5788cb12909d9482e.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -7676,7 +7793,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\scenario-protect-files-on-a-file-server-share.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-protect-files-on-a-file-server-share.md",
+        "Azure-RMSDocs\\get-started\\scenario-protect-files-on-a-file-server-share.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-protect-files-on-a-file-server-share.f85be1c893329b76bb4dd1a7ec95394b0ec13a7f.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -7704,7 +7822,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\scenario-retain-control-of-documents-stored-in-sharepoint.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-retain-control-of-documents-stored-in-sharepoint.md",
+        "Azure-RMSDocs\\get-started\\scenario-retain-control-of-documents-stored-in-sharepoint.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-retain-control-of-documents-stored-in-sharepoint.f7c37bf490269c9237f14aeff4d621458b730be3.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -7732,7 +7851,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\scenario-secure-your-most-few-valuable-files.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-secure-your-most-few-valuable-files.md",
+        "Azure-RMSDocs\\get-started\\scenario-secure-your-most-few-valuable-files.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-secure-your-most-few-valuable-files.46884a0934642106bb8e41024fdab783d06c1407.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -7760,7 +7880,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\scenario-send-a-company-confidential-email.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-send-a-company-confidential-email.md",
+        "Azure-RMSDocs\\get-started\\scenario-send-a-company-confidential-email.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-send-a-company-confidential-email.b63343ddb6320784af2253011ad2a539c7704548.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -7788,7 +7909,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md"
+        "Azure-RMSDocs\\GetStarted\\scenario-share-an-office-file-with-users-in-another-organization.md",
+        "Azure-RMSDocs\\get-started\\scenario-share-an-office-file-with-users-in-another-organization.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-share-an-office-file-with-users-in-another-organization.8821261cc6491b4f5b1315aadbddabfbc967c51d.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -8097,7 +8219,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\decommissioning-and-deactivating-azure-rights-management.md"
+        "Azure-RMSDocs\\DeployUse\\decommissioning-and-deactivating-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\decommissioning-and-deactivating-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\decommissioning-and-deactivating-azure-rights-management.8417d780539b40bbb2bded51b6b4db73d77131a3.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -8153,7 +8276,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\helping-users-to-protect-files-by-using-azure-rights-management.md"
+        "Azure-RMSDocs\\DeployUse\\helping-users-to-protect-files-by-using-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\helping-users-to-protect-files-by-using-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\helping-users-to-protect-files-by-using-azure-rights-management.e462d826fc4c91e90f52a196302319f82ae9d3cc.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -8181,7 +8305,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\verifying-azure-rights-management.md"
+        "Azure-RMSDocs\\DeployUse\\verifying-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\verifying-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\verifying-azure-rights-management.04769d1e8089f3c40c85ec059b5a01f9d8a41468.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -8265,7 +8390,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md"
+        "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\quick-start-tutorial-for-azure-rights-management.a8f4aeab33dcfd8ad11bd7923740b06f20bfddfc.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -8293,7 +8419,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\terminology-for-azure-rights-management.md"
+        "Azure-RMSDocs\\GetStarted\\terminology-for-azure-rights-management.md",
+        "Azure-RMSDocs\\get-started\\terminology-for-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\terminology-for-azure-rights-management.3129be7ac0e6db0b48185466d5658663e5395d86.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -8321,7 +8448,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\PlanDesign\\azure-rights-management-deployment-roadmap.md"
+        "Azure-RMSDocs\\PlanDesign\\azure-rights-management-deployment-roadmap.md",
+        "Azure-RMSDocs\\plan-design\\azure-rights-management-deployment-roadmap.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\azure-rights-management-deployment-roadmap.0718ef45da7a54ba0f438f6aea48ed3e0f6dee3d.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -8405,7 +8533,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\PlanDesign\\preparing-for-azure-rights-management.md"
+        "Azure-RMSDocs\\PlanDesign\\preparing-for-azure-rights-management.md",
+        "Azure-RMSDocs\\plan-design\\preparing-for-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\preparing-for-azure-rights-management.63fe8fd132ba78e45aa10c762e669e9f87c18ce5.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -8461,7 +8590,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\how-applications-support-azure-rights-management.md"
+        "Azure-RMSDocs\\Understand\\how-applications-support-azure-rights-management.md",
+        "Azure-RMSDocs\\understand-explore\\how-applications-support-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-applications-support-azure-rights-management.d6b3386203d435a83414b944c095975a6ddfbdf9.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -8826,7 +8956,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\what-is-azure-rights-management.md"
+        "Azure-RMSDocs\\Understand\\what-is-azure-rights-management.md",
+        "Azure-RMSDocs\\understand-explore\\what-is-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\what-is-azure-rights-management.8f9bc78887af1403fbcb1f30f00e92b265b6736b.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -9052,7 +9183,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\remove-protection-from-a-file-by-using-the-rights-management-sharing-application.md",
-        "Azure-RMSDocs\\RMSClient\\remove-protection-from-a-file-by-using-the-rights-management-sharing-application.md"
+        "Azure-RMSDocs\\RMSClient\\remove-protection-from-a-file-by-using-the-rights-management-sharing-application.md",
+        "Azure-RMSDocs\\rms-client\\remove-protection-from-a-file-by-using-the-rights-management-sharing-application.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\remove-protection-from-a-file-by-using-the-rights-management-sharing-application.5531184d8f76abbb4e6f9f014d78905bf2c0345c.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -9110,7 +9242,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md",
-        "Azure-RMSDocs\\RMSClient\\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md"
+        "Azure-RMSDocs\\RMSClient\\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md",
+        "Azure-RMSDocs\\rms-client\\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.2c26e8735fb4523434d3750226b336ed07ba90f6.zh-cn.xlf",
       "HandoffFileCommit": "24df7185df0d714cd929e64179550bc4324b0e62",
@@ -9418,7 +9551,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\RMSClient\\TOC.md"
+        "Azure-RMSDocs\\RMSClient\\TOC.md",
+        "Azure-RMSDocs\\rms-client\\TOC.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\TOC.75ea97ce9ebcf44ca8418949b2d9a6322f09fa77.zh-cn.xlf",
       "HandoffFileCommit": "b6642ad267346c835940ef91ddb48d1f4c0bf279",
@@ -12674,7 +12808,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-activating-rights-management.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-activating-rights-management.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-activating-rights-management.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-activating-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-activating-rights-management.8dbeeb926662b39bf3a411deeefe20f4d0722d41.zh-cn.xlf",
       "HandoffFileCommit": "f150facb668606b1a5ee1293ba1532e6e79072ee",
@@ -12703,7 +12838,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "Azure-RMSDocs\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.md",
-        "Azure-RMSDocs\\Understand\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.md"
+        "Azure-RMSDocs\\Understand\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.md",
+        "Azure-RMSDocs\\understand-explore\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.f035ee1d9ca1c4a2c58c55ee2cf3ec2965a76100.zh-cn.xlf",
       "HandoffFileCommit": "f150facb668606b1a5ee1293ba1532e6e79072ee",
@@ -12759,7 +12895,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md"
+        "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md",
+        "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.a86fb481372f466c7da6057441a065857922511f.zh-cn.xlf",
       "HandoffFileCommit": "f53912b3a85bb632298095c1090b09fecddebfe6",
@@ -12787,7 +12924,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md"
+        "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md",
+        "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.ad9d821d8c12a01f8d13c473b00373f129fb4221.zh-cn.xlf",
       "HandoffFileCommit": "f53912b3a85bb632298095c1090b09fecddebfe6",
@@ -12815,7 +12953,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.md"
+        "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.md",
+        "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.c2feeba2e28776d76525a143d140438886b9ba9c.zh-cn.xlf",
       "HandoffFileCommit": "f53912b3a85bb632298095c1090b09fecddebfe6",
@@ -13431,7 +13570,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\rms-quickstart.md"
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-quickstart.a35e08469db2a99b132c2c5b129d7ee8a2b0d98c.zh-cn.xlf",
       "HandoffFileCommit": "4374901c7d4d974b21f27a9796b9b59196734ab6",
@@ -13459,7 +13599,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md"
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart-intro.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-quickstart-intro.1f29a0b392ffb38bbc2f5445c5042a2a2e572400.zh-cn.xlf",
       "HandoffFileCommit": "4374901c7d4d974b21f27a9796b9b59196734ab6",
@@ -13487,7 +13628,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step1.md"
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step1.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart-step1.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-quickstart-step1.e1df002d61e0e00f3d669e26bed24183e159a36a.zh-cn.xlf",
       "HandoffFileCommit": "4374901c7d4d974b21f27a9796b9b59196734ab6",
@@ -13515,7 +13657,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md"
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart-step2.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-quickstart-step2.a6642ab8dbc9436af88c1220638a2c7183fa3269.zh-cn.xlf",
       "HandoffFileCommit": "4374901c7d4d974b21f27a9796b9b59196734ab6",
@@ -13543,7 +13686,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step3.md"
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step3.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart-step3.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-quickstart-step3.3cf479140b0b5adb32fa3fd44544dde6bf782164.zh-cn.xlf",
       "HandoffFileCommit": "4374901c7d4d974b21f27a9796b9b59196734ab6",
@@ -13571,7 +13715,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step4.md"
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step4.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart-step4.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-quickstart-step4.78e7a737bf214f4beaf394706f31c1fa9c05d86a.zh-cn.xlf",
       "HandoffFileCommit": "4374901c7d4d974b21f27a9796b9b59196734ab6",
@@ -14299,7 +14444,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step5.md"
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step5.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart-step5.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-quickstart-step5.72390b2e03a8e1945c9ed997dadc09118c8548b4.zh-cn.xlf",
       "HandoffFileCommit": "d7b3850f2f229592d84b8b8206d8197db8b9cdcb",
@@ -14356,7 +14502,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\frequently-asked-questions-for-azure-rights-management.md"
+        "Azure-RMSDocs\\GetStarted\\frequently-asked-questions-for-azure-rights-management.md",
+        "Azure-RMSDocs\\get-started\\frequently-asked-questions-for-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\frequently-asked-questions-for-azure-rights-management.d3aceea2bd247412012018fe2b75ff930e5ed4c4.zh-cn.xlf",
       "HandoffFileCommit": "de56eac158f14a0eb94bd7ffe03a6e611023f17c",
@@ -14384,7 +14531,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\requirements-for-azure-rights-management.md"
+        "Azure-RMSDocs\\GetStarted\\requirements-for-azure-rights-management.md",
+        "Azure-RMSDocs\\get-started\\requirements-for-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\requirements-for-azure-rights-management.0bb3144c8669cae8b5a0661958856c7037927497.zh-cn.xlf",
       "HandoffFileCommit": "de56eac158f14a0eb94bd7ffe03a6e611023f17c",
@@ -14888,7 +15036,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key.md"
+        "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key.md",
+        "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\operations-for-your-azure-rights-management-tenant-key.611004c094ac4119b4b56a10c58a50106dc6da11.zh-cn.xlf",
       "HandoffFileCommit": "5f3393c6a33ccded9ae1cb8868bb4784f3348210",
@@ -15028,7 +15177,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\office-2010-configure-for-clients.md"
+        "Azure-RMSDocs\\DeployUse\\office-2010-configure-for-clients.md",
+        "Azure-RMSDocs\\deploy-use\\office-2010-configure-for-clients.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\office-2010-configure-for-clients.eef5c8a5a3c5fc7690a5be6b73ad67b4dfa465e1.zh-cn.xlf",
       "HandoffFileCommit": "fc0508d29a3b564070adca110c84039e7591459e",
@@ -15056,7 +15206,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\office-2016-2013-configure-for-clients.md"
+        "Azure-RMSDocs\\DeployUse\\office-2016-2013-configure-for-clients.md",
+        "Azure-RMSDocs\\deploy-use\\office-2016-2013-configure-for-clients.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\office-2016-2013-configure-for-clients.f9bfd0d8df1fa15cec3199af33cb08959848ca24.zh-cn.xlf",
       "HandoffFileCommit": "fc0508d29a3b564070adca110c84039e7591459e",
@@ -15140,7 +15291,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\sharing-app-install-configure.md"
+        "Azure-RMSDocs\\DeployUse\\sharing-app-install-configure.md",
+        "Azure-RMSDocs\\deploy-use\\sharing-app-install-configure.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-install-configure.340cea7ba69d3125d8e4d0799a30a977b1ae0bc1.zh-cn.xlf",
       "HandoffFileCommit": "fc0508d29a3b564070adca110c84039e7591459e",
@@ -15224,7 +15376,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\rms-requirements-applications.md"
+        "Azure-RMSDocs\\GetStarted\\rms-requirements-applications.md",
+        "Azure-RMSDocs\\get-started\\rms-requirements-applications.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-requirements-applications.056e059c49a99cd3e47827661778588510c643d0.zh-cn.xlf",
       "HandoffFileCommit": "fc0508d29a3b564070adca110c84039e7591459e",
@@ -15308,7 +15461,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\PlanDesign\\byok-pricing-and-restrictions.md"
+        "Azure-RMSDocs\\PlanDesign\\byok-pricing-and-restrictions.md",
+        "Azure-RMSDocs\\plan-design\\byok-pricing-and-restrictions.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\byok-pricing-and-restrictions.850e1a5b84e769909252c873e8fb802a6fa54b38.zh-cn.xlf",
       "HandoffFileCommit": "fc0508d29a3b564070adca110c84039e7591459e",
@@ -15392,7 +15546,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\PlanDesign\\information-about-thales-hms-and-microsoft-additions.md"
+        "Azure-RMSDocs\\PlanDesign\\information-about-thales-hms-and-microsoft-additions.md",
+        "Azure-RMSDocs\\plan-design\\information-about-thales-hms-and-microsoft-additions.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\information-about-thales-hms-and-microsoft-additions.9e663c545221634a862865d16373be1d27713a7e.zh-cn.xlf",
       "HandoffFileCommit": "fc0508d29a3b564070adca110c84039e7591459e",
@@ -15448,7 +15603,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\azure-rms-aka.md"
+        "Azure-RMSDocs\\Understand\\azure-rms-aka.md",
+        "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\azure-rms-aka.b45f4eda0bb1ab21c8eaa799d06ecfa83cd8ab6d.zh-cn.xlf",
       "HandoffFileCommit": "fc0508d29a3b564070adca110c84039e7591459e",
@@ -15588,7 +15744,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\rights-management-sharing-application-for-office.md"
+        "Azure-RMSDocs\\Understand\\rights-management-sharing-application-for-office.md",
+        "Azure-RMSDocs\\understand-explore\\rights-management-sharing-application-for-office.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rights-management-sharing-application-for-office.04bc69330b25d5a1fea6d005127126c45ef79f5e.zh-cn.xlf",
       "HandoffFileCommit": "fc0508d29a3b564070adca110c84039e7591459e",
@@ -15728,7 +15885,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management.md"
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management.9e4ac0c7fdf9050180a813b3bdc3b2e1c2223e47.zh-cn.xlf",
       "HandoffFileCommit": "e7b363379256f6e9695009f97709340f38ed194c",
@@ -15756,7 +15914,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-copy-template.md"
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-copy-template.md",
+        "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-copy-template.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management-copy-template.665b65f7cecf120a8dec8f3dc57c1e8d5b6b43df.zh-cn.xlf",
       "HandoffFileCommit": "e7b363379256f6e9695009f97709340f38ed194c",
@@ -15784,7 +15943,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-create-template.md"
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-create-template.md",
+        "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-create-template.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management-create-template.8c7c87fe096bec601692c66c396f78797653f61b.zh-cn.xlf",
       "HandoffFileCommit": "e7b363379256f6e9695009f97709340f38ed194c",
@@ -15812,7 +15972,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-powershell.md"
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-powershell.md",
+        "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-powershell.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management-powershell.e7f6c442c8bed35e4810de6672818dc3eea8b331.zh-cn.xlf",
       "HandoffFileCommit": "e7b363379256f6e9695009f97709340f38ed194c",
@@ -15868,7 +16029,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-remove-template.md"
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-remove-template.md",
+        "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-remove-template.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management-remove-template.88c41ea2efdac820e07768bd8715f83d69b0fc80.zh-cn.xlf",
       "HandoffFileCommit": "e7b363379256f6e9695009f97709340f38ed194c",
@@ -15952,7 +16114,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md"
+        "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\activating-azure-rights-management.d754a0af1662ec0751fd7f179f3002abfc3ab4e7.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -15980,7 +16143,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md"
+        "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\configuring-applications-for-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configuring-applications-for-azure-rights-management.c6dc170d051af1c1fa816ccede6d3ceb83d732a8.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16008,7 +16172,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
+        "Azure-RMSDocs\\DeployUse\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md",
+        "Azure-RMSDocs\\deploy-use\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.de1e0706881f97c522c55e931eadec88f28d19b8.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16064,7 +16229,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\logging-and-analyzing-azure-rights-management-usage.md"
+        "Azure-RMSDocs\\DeployUse\\logging-and-analyzing-azure-rights-management-usage.md",
+        "Azure-RMSDocs\\deploy-use\\logging-and-analyzing-azure-rights-management-usage.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\logging-and-analyzing-azure-rights-management-usage.0b9c6b1535ba7ac0f145109b3a7a830f01c6a4fa.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16120,7 +16286,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\information-and-support-for-azure-rights-management.md"
+        "Azure-RMSDocs\\GetStarted\\information-and-support-for-azure-rights-management.md",
+        "Azure-RMSDocs\\get-started\\information-and-support-for-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\information-and-support-for-azure-rights-management.5dbf9f3a6eb4772b7836d397abeee39431d6fa1e.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16148,7 +16315,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\rms-requirements-aad-directory.md"
+        "Azure-RMSDocs\\GetStarted\\rms-requirements-aad-directory.md",
+        "Azure-RMSDocs\\get-started\\rms-requirements-aad-directory.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-requirements-aad-directory.01c037599b16599c07587ca5cb330da9c5c2caf0.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16176,7 +16344,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\rms-requirements-client-devices.md"
+        "Azure-RMSDocs\\GetStarted\\rms-requirements-client-devices.md",
+        "Azure-RMSDocs\\get-started\\rms-requirements-client-devices.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-requirements-client-devices.72a01b4d46be49d2641248672be64819b48ca9f5.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16204,7 +16373,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\GetStarted\\rms-requirements-cloud-subscriptions.md"
+        "Azure-RMSDocs\\GetStarted\\rms-requirements-cloud-subscriptions.md",
+        "Azure-RMSDocs\\get-started\\rms-requirements-cloud-subscriptions.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-requirements-cloud-subscriptions.d8be00aacf24a925b32fbfdd67000c5b6fada5f6.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16232,7 +16402,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-in-person.md"
+        "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-in-person.md",
+        "Azure-RMSDocs\\plan-design\\generate-and-transfer-your-tenant-key-in-person.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\generate-and-transfer-your-tenant-key-in-person.2a77a8b39dc9a502dd555062bfceeede6f6b236f.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16260,7 +16431,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-over-the-internet.md"
+        "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-over-the-internet.md",
+        "Azure-RMSDocs\\plan-design\\generate-and-transfer-your-tenant-key-over-the-internet.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\generate-and-transfer-your-tenant-key-over-the-internet.389961c0d10450af3c7ff279d966320faafb00d3.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16288,7 +16460,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\PlanDesign\\implementing-your-azure-rights-management-tenant-key.md"
+        "Azure-RMSDocs\\PlanDesign\\implementing-your-azure-rights-management-tenant-key.md",
+        "Azure-RMSDocs\\plan-design\\implementing-your-azure-rights-management-tenant-key.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\implementing-your-azure-rights-management-tenant-key.b217b749d6a5c3d83aaac66ca528893560435fa5.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16316,7 +16489,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management.md"
+        "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management.md",
+        "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\migrating-from-ad-rms-to-azure-rights-management.b8fc69d8adb147f21a2dc3126c118dfd2a025622.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16344,7 +16518,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
+        "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md",
+        "Azure-RMSDocs\\plan-design\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\planning-and-implementing-your-azure-rights-management-tenant-key.a2ba2ae63166d1797e66c42cf6a578aa51e9fee1.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16372,7 +16547,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\RMSClient\\dialog-box-options-for-the-rights-management-sharing-application.md"
+        "Azure-RMSDocs\\RMSClient\\dialog-box-options-for-the-rights-management-sharing-application.md",
+        "Azure-RMSDocs\\rms-client\\dialog-box-options-for-the-rights-management-sharing-application.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\dialog-box-options-for-the-rights-management-sharing-application.06ff804c786eab10752de2e264c25a437b142c02.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16400,7 +16576,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\RMSClient\\download-and-install-the-rights-management-sharing-application.md"
+        "Azure-RMSDocs\\RMSClient\\download-and-install-the-rights-management-sharing-application.md",
+        "Azure-RMSDocs\\rms-client\\download-and-install-the-rights-management-sharing-application.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\download-and-install-the-rights-management-sharing-application.0f285eaccdfa4734b5c22e4adca704b5025c82bd.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16428,7 +16605,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-administrator-guide.md"
+        "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-administrator-guide.md",
+        "Azure-RMSDocs\\rms-client\\rights-management-sharing-application-administrator-guide.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rights-management-sharing-application-administrator-guide.5147dc5e6b765865490c59e3698393fae85ef532.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16456,7 +16634,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-user-guide.md"
+        "Azure-RMSDocs\\RMSClient\\rights-management-sharing-application-user-guide.md",
+        "Azure-RMSDocs\\rms-client\\rights-management-sharing-application-user-guide.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rights-management-sharing-application-user-guide.9ed4573528d4482ac7f38c35f68f8111e14cf4c4.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16484,7 +16663,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\RMSClient\\rms-client-deployment-notes.md"
+        "Azure-RMSDocs\\RMSClient\\rms-client-deployment-notes.md",
+        "Azure-RMSDocs\\rms-client\\rms-client-deployment-notes.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-client-deployment-notes.a4995f7078d676099e372e419fe8d9c5a29f74d8.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16512,7 +16692,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\RMSClient\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md"
+        "Azure-RMSDocs\\RMSClient\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md",
+        "Azure-RMSDocs\\rms-client\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-protection-with-windows-server-file-classification-infrastructure-fci.852d81caff6fc10849497b79b7c0e6ec5b9ddba0.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16540,7 +16721,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\RMSClient\\view-and-use-files-that-have-been-protected-by-rights-management.md"
+        "Azure-RMSDocs\\RMSClient\\view-and-use-files-that-have-been-protected-by-rights-management.md",
+        "Azure-RMSDocs\\rms-client\\view-and-use-files-that-have-been-protected-by-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\view-and-use-files-that-have-been-protected-by-rights-management.b5a1432d95ec29017f90be8900c9944b6a84a627.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16568,7 +16750,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\azure-rms-problems-it-solves.md"
+        "Azure-RMSDocs\\Understand\\azure-rms-problems-it-solves.md",
+        "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\azure-rms-problems-it-solves.fc2fcd3d265e7e4d3f86358271fa4f8d430bfb84.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16596,7 +16779,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\comparing-azure-rights-management-and-ad-rms.md"
+        "Azure-RMSDocs\\Understand\\comparing-azure-rights-management-and-ad-rms.md",
+        "Azure-RMSDocs\\understand-explore\\comparing-azure-rights-management-and-ad-rms.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\comparing-azure-rights-management-and-ad-rms.beaab4bc7e4d0ae22ba9ceac6569d4e3f3677ada.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16624,7 +16808,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\how-does-it-work.md"
+        "Azure-RMSDocs\\Understand\\how-does-it-work.md",
+        "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-does-it-work.e7b2823a075ba337c4ae3add413a02c34170612b.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16652,7 +16837,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\how-fileservers-support-azure-rights-management.md"
+        "Azure-RMSDocs\\Understand\\how-fileservers-support-azure-rights-management.md",
+        "Azure-RMSDocs\\understand-explore\\how-fileservers-support-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-fileservers-support-azure-rights-management.a27256ff58f5ff080683f1ae4783e40d9bd3ad5e.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16680,7 +16866,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\other-apps-support-apis.md"
+        "Azure-RMSDocs\\Understand\\other-apps-support-apis.md",
+        "Azure-RMSDocs\\understand-explore\\other-apps-support-apis.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\other-apps-support-apis.cd775d9fedf69bd16404837c4fe6d36c95e275fb.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16708,7 +16895,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\rms-for-individuals-find-if-users-have-signed-up.md"
+        "Azure-RMSDocs\\Understand\\rms-for-individuals-find-if-users-have-signed-up.md",
+        "Azure-RMSDocs\\understand-explore\\rms-for-individuals-find-if-users-have-signed-up.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-for-individuals-find-if-users-have-signed-up.391a81c458a20f7eb566535e2210a9391ec360bc.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16736,7 +16924,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\rms-for-individuals-user-signup.md"
+        "Azure-RMSDocs\\Understand\\rms-for-individuals-user-signup.md",
+        "Azure-RMSDocs\\understand-explore\\rms-for-individuals-user-signup.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-for-individuals-user-signup.8a00dbaf936f85307820f026c0a4050d51a6741d.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16764,7 +16953,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\sharing-application-for-windows-and-mobile-platforms.md"
+        "Azure-RMSDocs\\Understand\\sharing-application-for-windows-and-mobile-platforms.md",
+        "Azure-RMSDocs\\understand-explore\\sharing-application-for-windows-and-mobile-platforms.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-application-for-windows-and-mobile-platforms.2918bad69b865d52b5c55287e1878f90536a6d4f.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16792,7 +16982,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md"
+        "Azure-RMSDocs\\Understand\\what-do-admins-users-see.md",
+        "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\what-do-admins-users-see.e18e16abc33a237bb2663d0e7f23cbfd3f360d03.zh-cn.xlf",
       "HandoffFileCommit": "c68a1f6abfce29a5b1eed72f6cbde9c4a7c00509",
@@ -16932,7 +17123,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\configuring-usage-rights-for-azure-rights-management.md"
+        "Azure-RMSDocs\\DeployUse\\configuring-usage-rights-for-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\configuring-usage-rights-for-azure-rights-management.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configuring-usage-rights-for-azure-rights-management.0b49967ec407af67a13e3d8df95d6e67fc7027aa.zh-cn.xlf",
       "HandoffFileCommit": "ee36910fbb8fe1b9bd01cce30bfde14139db304d",
@@ -16988,7 +17180,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md"
+        "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md",
+        "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.ed144da281b82c185517411e0b0b72d83f903942.zh-cn.xlf",
       "HandoffFileCommit": "ee36910fbb8fe1b9bd01cce30bfde14139db304d",
@@ -17044,7 +17237,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\registry-settings-rms-connector.md"
+        "Azure-RMSDocs\\DeployUse\\registry-settings-rms-connector.md",
+        "Azure-RMSDocs\\deploy-use\\registry-settings-rms-connector.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\registry-settings-rms-connector.e3642e756a1c2a90c138a6ef853c5941813a1a8a.zh-cn.xlf",
       "HandoffFileCommit": "54e8316fdac17a8a841a58ff2c5aab7ea9e9674c",
@@ -17072,7 +17266,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-refresh-templates.md"
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-refresh-templates.md",
+        "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-refresh-templates.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management-refresh-templates.ab4ba201878fc229654cb7e8c2d8fc104c3649ce.zh-cn.xlf",
       "HandoffFileCommit": "5f183e4ea5a92e20a33644203f08c19b210df777",
@@ -17100,7 +17295,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
+        "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md",
+        "Azure-RMSDocs\\deploy-use\\deploying-the-azure-rights-management-connector.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\deploying-the-azure-rights-management-connector.637feae09a6eba8df0fdffd01e7643acff8a8f23.zh-cn.xlf",
       "HandoffFileCommit": "5f183e4ea5a92e20a33644203f08c19b210df777",
@@ -17128,11 +17324,40 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
+        "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md",
+        "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\operations-for-your-azure-rights-management-tenant-key-customer-managed.6f04a394307ae915402e564a3661a25b7223fae7.zh-cn.xlf",
       "HandoffFileCommit": "5f183e4ea5a92e20a33644203f08c19b210df777",
       "HandoffDateTime": "2016-03-21T23:27:00.9750856Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "b491966f6531f7e401c813f1489341d597e5509c": {
+      "FileHash": "b491966f6531f7e401c813f1489341d597e5509c",
+      "SourceFileCommit": "9013d9ae14530c4a3462aa8f9e6a88dfdc87b4db",
+      "SourceFilePath": "Azure-RMSDocs\\TOC.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\TOC.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\TOC.04d31b795dc075cc65cb6e7da5d0a012ab5eb3e5.zh-cn.xlf",
+      "HandoffFileCommit": "1902e9c50f4dd255ba6306d9f2b053b5e8763ced",
+      "HandoffDateTime": "2016-03-22T18:28:04.7376952Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
