@@ -1603,8 +1603,20 @@
     "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-remove-template.md",
     "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-remove-template.md"
   ],
+  "54175467f357d10058df2f85bbf1192038a00405": [
+    "Azure-RMSDocs\\deploy-use\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
+  ],
   "bf72fd44a0c0332df77fb51d1373a5d609c042b9": [
     "Azure-RMSDocs\\DeployUse\\registry-settings-rms-connector.md",
     "Azure-RMSDocs\\deploy-use\\registry-settings-rms-connector.md"
+  ],
+  "f1f5fe9bf45c5b807d83a6e6b74b5882e2a5456f": [
+    "Azure-RMSDocs\\deploy-use\\registry-settings-rms-connector.md"
+  ],
+  "d7ebc5e465b1f6008e2bee5f0624b468f01b0899": [
+    "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-refresh-templates.md"
+  ],
+  "f31eba09976c8fa19786d0589e0ec7fb0d5e043c": [
+    "Azure-RMSDocs\\deploy-use\\deploying-the-azure-rights-management-connector.md"
   ]
 }
