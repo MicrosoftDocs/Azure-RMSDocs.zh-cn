@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "5617b42a8613c705adc023c4ef4080ce4cf8e458",
+  "LastProcessedCommit": "6476c713249d829586d11b266c68c112d6db8385",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -16,7 +16,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-23T07:55:56.7219621Z",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -24,10 +24,10 @@
         "internal_error_retriable": false,
         "exception_message": "Azure-RMSDocs\\0365-configure-for-clients-online-services.md file with commit id 2d22408918d10303e776b038a5e941303ba9d613 can not be found",
         "exception_type": "System.IO.FileNotFoundException",
-        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 371",
         "extended_information": null
       },
-      "HandoffFailureTimes": 58,
+      "HandoffFailureTimes": 59,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -3234,7 +3234,51 @@
       "SourceFileCommit": "1748cb866705a4ddee75a3587969798a15e77403",
       "SourceFilePath": "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md",
       "HandoffReason": 1,
-      "DependencyFrom": null,
+      "DependencyFrom": [
+        "Azure-RMSDocs\\Administer\\administering-azure-rights-management-with-powershell.md",
+        "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md",
+        "Azure-RMSDocs\\Administer\\installing-windows-powershell-for-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md",
+        "Azure-RMSDocs\\deploy-use\\decommissioning-and-deactivating-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\configuring-applications-for-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\helping-users-to-protect-files-by-using-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\verifying-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\deploying-the-azure-rights-management-connector.md",
+        "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md",
+        "Azure-RMSDocs\\DeployUse\\decommissioning-and-deactivating-azure-rights-management.md",
+        "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md",
+        "Azure-RMSDocs\\DeployUse\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md",
+        "Azure-RMSDocs\\DeployUse\\verifying-azure-rights-management.md",
+        "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md",
+        "Azure-RMSDocs\\DeployUse\\helping-users-to-protect-files-by-using-azure-rights-management.md",
+        "Azure-RMSDocs\\get-started\\frequently-asked-questions-for-azure-rights-management.md",
+        "Azure-RMSDocs\\get-started\\information-and-support-for-azure-rights-management.md",
+        "Azure-RMSDocs\\get-started\\terminology-for-azure-rights-management.md",
+        "Azure-RMSDocs\\GetStarted\\frequently-asked-questions-for-azure-rights-management.md",
+        "Azure-RMSDocs\\GetStarted\\information-and-support-for-azure-rights-management.md",
+        "Azure-RMSDocs\\plan-design\\azure-rights-management-deployment-roadmap.md",
+        "Azure-RMSDocs\\GetStarted\\terminology-for-azure-rights-management.md",
+        "Azure-RMSDocs\\plan-design\\generate-and-transfer-your-tenant-key-over-the-internet.md",
+        "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-over-the-internet.md",
+        "Azure-RMSDocs\\plan-design\\implementing-your-azure-rights-management-tenant-key.md",
+        "Azure-RMSDocs\\PlanDesign\\implementing-your-azure-rights-management-tenant-key.md",
+        "Azure-RMSDocs\\understand-explore\\how-applications-support-azure-rights-management.md",
+        "Azure-RMSDocs\\plan-design\\planning-and-implementing-your-azure-rights-management-tenant-key.md",
+        "Azure-RMSDocs\\PlanDesign\\azure-rights-management-deployment-roadmap.md",
+        "Azure-RMSDocs\\understand-explore\\how-fileservers-support-azure-rights-management.md",
+        "Azure-RMSDocs\\understand-explore\\other-apps-support-apis.md",
+        "Azure-RMSDocs\\understand-explore\\rights-management-sharing-application-for-office.md",
+        "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md",
+        "Azure-RMSDocs\\Understand\\how-applications-support-azure-rights-management.md",
+        "Azure-RMSDocs\\Understand\\how-fileservers-support-azure-rights-management.md",
+        "Azure-RMSDocs\\Understand\\other-apps-support-apis.md",
+        "Azure-RMSDocs\\Understand\\rights-management-sharing-application-for-office.md",
+        "Azure-RMSDocs\\understand-explore\\comparing-azure-rights-management-and-ad-rms.md",
+        "Azure-RMSDocs\\Understand\\sharing-application-for-windows-and-mobile-platforms.md",
+        "Azure-RMSDocs\\understand-explore\\sharing-application-for-windows-and-mobile-platforms.md",
+        "Azure-RMSDocs\\Understand\\comparing-azure-rights-management-and-ad-rms.md",
+        "Azure-RMSDocs\\using-azure-rights-management.md"
+      ],
       "TokenReference": null,
       "FilePathList": [
         "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
@@ -3292,7 +3336,27 @@
       "SourceFileCommit": "1748cb866705a4ddee75a3587969798a15e77403",
       "SourceFilePath": "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md",
       "HandoffReason": 1,
-      "DependencyFrom": null,
+      "DependencyFrom": [
+        "Azure-RMSDocs\\Administer\\administering-azure-rights-management-with-powershell.md",
+        "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md",
+        "Azure-RMSDocs\\Administer\\installing-windows-powershell-for-azure-rights-management.md",
+        "Azure-RMSDocs\\deploy-use\\decommissioning-and-deactivating-azure-rights-management.md",
+        "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md",
+        "Azure-RMSDocs\\DeployUse\\decommissioning-and-deactivating-azure-rights-management.md",
+        "Azure-RMSDocs\\get-started\\terminology-for-azure-rights-management.md",
+        "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
+        "Azure-RMSDocs\\plan-design\\azure-rights-management-deployment-roadmap.md",
+        "Azure-RMSDocs\\GetStarted\\terminology-for-azure-rights-management.md",
+        "Azure-RMSDocs\\includes\\rms-quickstart-step1-include.md",
+        "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md",
+        "Azure-RMSDocs\\plan-design\\preparing-for-azure-rights-management.md",
+        "Azure-RMSDocs\\PlanDesign\\azure-rights-management-deployment-roadmap.md",
+        "Azure-RMSDocs\\understand-explore\\other-apps-support-apis.md",
+        "Azure-RMSDocs\\PlanDesign\\preparing-for-azure-rights-management.md",
+        "Azure-RMSDocs\\Understand\\other-apps-support-apis.md",
+        "Azure-RMSDocs\\Understand\\sharing-application-for-windows-and-mobile-platforms.md",
+        "Azure-RMSDocs\\understand-explore\\sharing-application-for-windows-and-mobile-platforms.md"
+      ],
       "TokenReference": null,
       "FilePathList": [
         "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
@@ -3640,7 +3704,14 @@
       "SourceFileCommit": "1748cb866705a4ddee75a3587969798a15e77403",
       "SourceFilePath": "Azure-RMSDocs\\includes\\o365_1_md.md",
       "HandoffReason": 1,
-      "DependencyFrom": null,
+      "DependencyFrom": [
+        "Azure-RMSDocs\\deploy-use\\configuring-applications-for-azure-rights-management.md",
+        "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md",
+        "Azure-RMSDocs\\plan-design\\preparing-for-azure-rights-management.md",
+        "Azure-RMSDocs\\PlanDesign\\preparing-for-azure-rights-management.md",
+        "Azure-RMSDocs\\understand-explore\\comparing-azure-rights-management-and-ad-rms.md",
+        "Azure-RMSDocs\\Understand\\comparing-azure-rights-management-and-ad-rms.md"
+      ],
       "TokenReference": null,
       "FilePathList": [
         "Azure-RMSDocs\\includes\\o365_1_md.md"
@@ -3698,7 +3769,11 @@
       "SourceFileCommit": "1748cb866705a4ddee75a3587969798a15e77403",
       "SourceFilePath": "Azure-RMSDocs\\includes\\o365_2_md.md",
       "HandoffReason": 1,
-      "DependencyFrom": null,
+      "DependencyFrom": [
+        "Azure-RMSDocs\\Administer\\administering-azure-rights-management-with-powershell.md",
+        "Azure-RMSDocs\\plan-design\\preparing-for-azure-rights-management.md",
+        "Azure-RMSDocs\\PlanDesign\\preparing-for-azure-rights-management.md"
+      ],
       "TokenReference": null,
       "FilePathList": [
         "Azure-RMSDocs\\includes\\o365_2_md.md"
@@ -5568,7 +5643,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-23T07:55:56.7219621Z",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5576,10 +5651,10 @@
         "internal_error_retriable": false,
         "exception_message": "Azure-RMSDocs\\rms-for-individuals-and-azure-rights-management.md file with commit id 2d22408918d10303e776b038a5e941303ba9d613 can not be found",
         "exception_type": "System.IO.FileNotFoundException",
-        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 371",
         "extended_information": null
       },
-      "HandoffFailureTimes": 58,
+      "HandoffFailureTimes": 59,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5865,7 +5940,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-23T07:55:56.7219621Z",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5873,10 +5948,10 @@
         "internal_error_retriable": false,
         "exception_message": "Azure-RMSDocs\\rms-requirements-onpremises-servers.md file with commit id 2d22408918d10303e776b038a5e941303ba9d613 can not be found",
         "exception_type": "System.IO.FileNotFoundException",
-        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 371",
         "extended_information": null
       },
-      "HandoffFailureTimes": 58,
+      "HandoffFailureTimes": 59,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -6886,7 +6961,9 @@
       "SourceFilePath": "Azure-RMSDocs\\using-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\using-azure-rights-management.md"
       ],
@@ -8487,7 +8564,10 @@
       "SourceFilePath": "Azure-RMSDocs\\DeployUse\\decommissioning-and-deactivating-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\DeployUse\\decommissioning-and-deactivating-azure-rights-management.md",
         "Azure-RMSDocs\\deploy-use\\decommissioning-and-deactivating-azure-rights-management.md"
@@ -8546,7 +8626,9 @@
       "SourceFilePath": "Azure-RMSDocs\\DeployUse\\helping-users-to-protect-files-by-using-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\DeployUse\\helping-users-to-protect-files-by-using-azure-rights-management.md",
         "Azure-RMSDocs\\deploy-use\\helping-users-to-protect-files-by-using-azure-rights-management.md"
@@ -8576,7 +8658,9 @@
       "SourceFilePath": "Azure-RMSDocs\\DeployUse\\verifying-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\DeployUse\\verifying-azure-rights-management.md",
         "Azure-RMSDocs\\deploy-use\\verifying-azure-rights-management.md"
@@ -8664,7 +8748,9 @@
       "SourceFilePath": "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\GetStarted\\quick-start-tutorial-for-azure-rights-management.md",
         "Azure-RMSDocs\\get-started\\quick-start-tutorial-for-azure-rights-management.md"
@@ -8694,7 +8780,10 @@
       "SourceFilePath": "Azure-RMSDocs\\GetStarted\\terminology-for-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\GetStarted\\terminology-for-azure-rights-management.md",
         "Azure-RMSDocs\\get-started\\terminology-for-azure-rights-management.md"
@@ -8724,7 +8813,10 @@
       "SourceFilePath": "Azure-RMSDocs\\PlanDesign\\azure-rights-management-deployment-roadmap.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\PlanDesign\\azure-rights-management-deployment-roadmap.md",
         "Azure-RMSDocs\\plan-design\\azure-rights-management-deployment-roadmap.md"
@@ -8812,7 +8904,11 @@
       "SourceFilePath": "Azure-RMSDocs\\PlanDesign\\preparing-for-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\o365_1_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md",
+        "Azure-RMSDocs\\includes\\o365_2_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\PlanDesign\\preparing-for-azure-rights-management.md",
         "Azure-RMSDocs\\plan-design\\preparing-for-azure-rights-management.md"
@@ -8871,7 +8967,9 @@
       "SourceFilePath": "Azure-RMSDocs\\Understand\\how-applications-support-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\Understand\\how-applications-support-azure-rights-management.md",
         "Azure-RMSDocs\\understand-explore\\how-applications-support-azure-rights-management.md"
@@ -9983,7 +10081,11 @@
       "SourceFilePath": "Azure-RMSDocs\\Administer\\administering-azure-rights-management-with-powershell.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md",
+        "Azure-RMSDocs\\includes\\o365_2_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\Administer\\administering-azure-rights-management-with-powershell.md"
       ],
@@ -10012,7 +10114,10 @@
       "SourceFilePath": "Azure-RMSDocs\\Administer\\installing-windows-powershell-for-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\Administer\\installing-windows-powershell-for-azure-rights-management.md"
       ],
@@ -14026,7 +14131,14 @@
       "SourceFilePath": "Azure-RMSDocs\\GetStarted\\rms-quickstart.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\rms-quickstart-intro-include.md",
+        "Azure-RMSDocs\\includes\\rms-quickstart-step1-include.md",
+        "Azure-RMSDocs\\includes\\rms-quickstart-step2-include.md",
+        "Azure-RMSDocs\\includes\\rms-quickstart-step3-include.md",
+        "Azure-RMSDocs\\includes\\rms-quickstart-step4-include.md",
+        "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\GetStarted\\rms-quickstart.md",
         "Azure-RMSDocs\\get-started\\rms-quickstart.md"
@@ -14056,7 +14168,9 @@
       "SourceFilePath": "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\rms-quickstart-intro-include.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md",
         "Azure-RMSDocs\\get-started\\rms-quickstart-intro.md"
@@ -14086,7 +14200,9 @@
       "SourceFilePath": "Azure-RMSDocs\\GetStarted\\rms-quickstart-step1.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\rms-quickstart-step1-include.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step1.md",
         "Azure-RMSDocs\\get-started\\rms-quickstart-step1.md"
@@ -14116,7 +14232,9 @@
       "SourceFilePath": "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\rms-quickstart-step2-include.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md",
         "Azure-RMSDocs\\get-started\\rms-quickstart-step2.md"
@@ -14146,7 +14264,9 @@
       "SourceFilePath": "Azure-RMSDocs\\GetStarted\\rms-quickstart-step3.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\rms-quickstart-step3-include.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step3.md",
         "Azure-RMSDocs\\get-started\\rms-quickstart-step3.md"
@@ -14176,7 +14296,9 @@
       "SourceFilePath": "Azure-RMSDocs\\GetStarted\\rms-quickstart-step4.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\rms-quickstart-step4-include.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step4.md",
         "Azure-RMSDocs\\get-started\\rms-quickstart-step4.md"
@@ -14234,7 +14356,12 @@
       "SourceFileCommit": "8daec804bc283594f675d83c903aa6e517cb175f",
       "SourceFilePath": "Azure-RMSDocs\\includes\\rms-quickstart-intro-include.md",
       "HandoffReason": 1,
-      "DependencyFrom": null,
+      "DependencyFrom": [
+        "Azure-RMSDocs\\get-started\\rms-quickstart.md",
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart-intro.md",
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart-intro.md"
+      ],
       "TokenReference": null,
       "FilePathList": [
         "Azure-RMSDocs\\includes\\rms-quickstart-intro-include.md"
@@ -14263,7 +14390,12 @@
       "SourceFileCommit": "8daec804bc283594f675d83c903aa6e517cb175f",
       "SourceFilePath": "Azure-RMSDocs\\includes\\rms-quickstart-step1-include.md",
       "HandoffReason": 1,
-      "DependencyFrom": null,
+      "DependencyFrom": [
+        "Azure-RMSDocs\\get-started\\rms-quickstart-step1.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart.md",
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step1.md",
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart.md"
+      ],
       "TokenReference": null,
       "FilePathList": [
         "Azure-RMSDocs\\includes\\rms-quickstart-step1-include.md"
@@ -14292,7 +14424,12 @@
       "SourceFileCommit": "8daec804bc283594f675d83c903aa6e517cb175f",
       "SourceFilePath": "Azure-RMSDocs\\includes\\rms-quickstart-step2-include.md",
       "HandoffReason": 1,
-      "DependencyFrom": null,
+      "DependencyFrom": [
+        "Azure-RMSDocs\\get-started\\rms-quickstart-step2.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart.md",
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step2.md",
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart.md"
+      ],
       "TokenReference": null,
       "FilePathList": [
         "Azure-RMSDocs\\includes\\rms-quickstart-step2-include.md"
@@ -14321,7 +14458,12 @@
       "SourceFileCommit": "8daec804bc283594f675d83c903aa6e517cb175f",
       "SourceFilePath": "Azure-RMSDocs\\includes\\rms-quickstart-step3-include.md",
       "HandoffReason": 1,
-      "DependencyFrom": null,
+      "DependencyFrom": [
+        "Azure-RMSDocs\\get-started\\rms-quickstart-step3.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart.md",
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step3.md",
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart.md"
+      ],
       "TokenReference": null,
       "FilePathList": [
         "Azure-RMSDocs\\includes\\rms-quickstart-step3-include.md"
@@ -14350,7 +14492,12 @@
       "SourceFileCommit": "8daec804bc283594f675d83c903aa6e517cb175f",
       "SourceFilePath": "Azure-RMSDocs\\includes\\rms-quickstart-step4-include.md",
       "HandoffReason": 1,
-      "DependencyFrom": null,
+      "DependencyFrom": [
+        "Azure-RMSDocs\\get-started\\rms-quickstart-step4.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart.md",
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step4.md",
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart.md"
+      ],
       "TokenReference": null,
       "FilePathList": [
         "Azure-RMSDocs\\includes\\rms-quickstart-step4-include.md"
@@ -14379,7 +14526,12 @@
       "SourceFileCommit": "8daec804bc283594f675d83c903aa6e517cb175f",
       "SourceFilePath": "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md",
       "HandoffReason": 1,
-      "DependencyFrom": null,
+      "DependencyFrom": [
+        "Azure-RMSDocs\\get-started\\rms-quickstart-step5.md",
+        "Azure-RMSDocs\\get-started\\rms-quickstart.md",
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart-step5.md",
+        "Azure-RMSDocs\\GetStarted\\rms-quickstart.md"
+      ],
       "TokenReference": null,
       "FilePathList": [
         "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
@@ -14931,7 +15083,9 @@
       "SourceFilePath": "Azure-RMSDocs\\GetStarted\\rms-quickstart-step5.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\GetStarted\\rms-quickstart-step5.md",
         "Azure-RMSDocs\\get-started\\rms-quickstart-step5.md"
@@ -14991,7 +15145,9 @@
       "SourceFilePath": "Azure-RMSDocs\\GetStarted\\frequently-asked-questions-for-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\GetStarted\\frequently-asked-questions-for-azure-rights-management.md",
         "Azure-RMSDocs\\get-started\\frequently-asked-questions-for-azure-rights-management.md"
@@ -16277,7 +16433,9 @@
       "SourceFilePath": "Azure-RMSDocs\\Understand\\rights-management-sharing-application-for-office.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\Understand\\rights-management-sharing-application-for-office.md",
         "Azure-RMSDocs\\understand-explore\\rights-management-sharing-application-for-office.md"
@@ -16660,7 +16818,10 @@
       "SourceFilePath": "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md",
         "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md"
@@ -16690,7 +16851,10 @@
       "SourceFilePath": "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\o365_1_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md",
         "Azure-RMSDocs\\deploy-use\\configuring-applications-for-azure-rights-management.md"
@@ -16720,7 +16884,9 @@
       "SourceFilePath": "Azure-RMSDocs\\DeployUse\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\DeployUse\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md",
         "Azure-RMSDocs\\deploy-use\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
@@ -16838,7 +17004,9 @@
       "SourceFilePath": "Azure-RMSDocs\\GetStarted\\information-and-support-for-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\GetStarted\\information-and-support-for-azure-rights-management.md",
         "Azure-RMSDocs\\get-started\\information-and-support-for-azure-rights-management.md"
@@ -16988,7 +17156,9 @@
       "SourceFilePath": "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-over-the-internet.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\PlanDesign\\generate-and-transfer-your-tenant-key-over-the-internet.md",
         "Azure-RMSDocs\\plan-design\\generate-and-transfer-your-tenant-key-over-the-internet.md"
@@ -17018,7 +17188,9 @@
       "SourceFilePath": "Azure-RMSDocs\\PlanDesign\\implementing-your-azure-rights-management-tenant-key.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\PlanDesign\\implementing-your-azure-rights-management-tenant-key.md",
         "Azure-RMSDocs\\plan-design\\implementing-your-azure-rights-management-tenant-key.md"
@@ -17078,7 +17250,9 @@
       "SourceFilePath": "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\PlanDesign\\planning-and-implementing-your-azure-rights-management-tenant-key.md",
         "Azure-RMSDocs\\plan-design\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
@@ -17348,7 +17522,10 @@
       "SourceFilePath": "Azure-RMSDocs\\Understand\\comparing-azure-rights-management-and-ad-rms.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md",
+        "Azure-RMSDocs\\includes\\o365_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\Understand\\comparing-azure-rights-management-and-ad-rms.md",
         "Azure-RMSDocs\\understand-explore\\comparing-azure-rights-management-and-ad-rms.md"
@@ -17408,7 +17585,9 @@
       "SourceFilePath": "Azure-RMSDocs\\Understand\\how-fileservers-support-azure-rights-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\Understand\\how-fileservers-support-azure-rights-management.md",
         "Azure-RMSDocs\\understand-explore\\how-fileservers-support-azure-rights-management.md"
@@ -17438,7 +17617,10 @@
       "SourceFilePath": "Azure-RMSDocs\\Understand\\other-apps-support-apis.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\Understand\\other-apps-support-apis.md",
         "Azure-RMSDocs\\understand-explore\\other-apps-support-apis.md"
@@ -17528,7 +17710,10 @@
       "SourceFilePath": "Azure-RMSDocs\\Understand\\sharing-application-for-windows-and-mobile-platforms.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\Understand\\sharing-application-for-windows-and-mobile-platforms.md",
         "Azure-RMSDocs\\understand-explore\\sharing-application-for-windows-and-mobile-platforms.md"
@@ -18029,7 +18214,9 @@
       "SourceFilePath": "Azure-RMSDocs\\deploy-use\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
       ],
@@ -18058,7 +18245,9 @@
       "SourceFilePath": "Azure-RMSDocs\\deploy-use\\deploying-the-azure-rights-management-connector.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\deploying-the-azure-rights-management-connector.md"
       ],
@@ -18123,6 +18312,366 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\TOC.04d31b795dc075cc65cb6e7da5d0a012ab5eb3e5.zh-cn.xlf",
       "HandoffFileCommit": "cff45923dee339afed8b49b74cbf148a714b42aa",
       "HandoffDateTime": "2016-03-23T07:55:56.7219621Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "c8ebf741a0c9c73517db0ca9ccd6fb00fc426b85": {
+      "FileHash": "c8ebf741a0c9c73517db0ca9ccd6fb00fc426b85",
+      "SourceFileCommit": "6476c713249d829586d11b266c68c112d6db8385",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
+      ],
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\activating-azure-rights-management.d754a0af1662ec0751fd7f179f3002abfc3ab4e7.zh-cn.xlf",
+      "HandoffFileCommit": "704f8868a61ece52839f6bd6b68d45efb3081948",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "6d7548356fb82181f26bf3c7f8349f4eb18dd548": {
+      "FileHash": "6d7548356fb82181f26bf3c7f8349f4eb18dd548",
+      "SourceFileCommit": "6476c713249d829586d11b266c68c112d6db8385",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-create-template.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-create-template.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management-create-template.8c7c87fe096bec601692c66c396f78797653f61b.zh-cn.xlf",
+      "HandoffFileCommit": "704f8868a61ece52839f6bd6b68d45efb3081948",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "4a44b64020717952d40ec0a30412e99a6a8ee3fe": {
+      "FileHash": "4a44b64020717952d40ec0a30412e99a6a8ee3fe",
+      "SourceFileCommit": "6476c713249d829586d11b266c68c112d6db8385",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-refresh-templates.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-refresh-templates.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates-for-azure-rights-management-refresh-templates.ab4ba201878fc229654cb7e8c2d8fc104c3649ce.zh-cn.xlf",
+      "HandoffFileCommit": "704f8868a61ece52839f6bd6b68d45efb3081948",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "a6f6d8342b138a2d7619cc11e29ee8db2bd7c290": {
+      "FileHash": "a6f6d8342b138a2d7619cc11e29ee8db2bd7c290",
+      "SourceFileCommit": "6476c713249d829586d11b266c68c112d6db8385",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\o365_1_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configuring-applications-for-azure-rights-management.c6dc170d051af1c1fa816ccede6d3ceb83d732a8.zh-cn.xlf",
+      "HandoffFileCommit": "704f8868a61ece52839f6bd6b68d45efb3081948",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "6f8cf738a7bdaa27227beede72e9989208369a85": {
+      "FileHash": "6f8cf738a7bdaa27227beede72e9989208369a85",
+      "SourceFileCommit": "6476c713249d829586d11b266c68c112d6db8385",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\deploying-the-azure-rights-management-connector.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\deploying-the-azure-rights-management-connector.637feae09a6eba8df0fdffd01e7643acff8a8f23.zh-cn.xlf",
+      "HandoffFileCommit": "704f8868a61ece52839f6bd6b68d45efb3081948",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "aa178f3b46cca73ae7cd43edec504c272f233d46": {
+      "FileHash": "aa178f3b46cca73ae7cd43edec504c272f233d46",
+      "SourceFileCommit": "6476c713249d829586d11b266c68c112d6db8385",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\helping-users-to-protect-files-by-using-azure-rights-management.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\helping-users-to-protect-files-by-using-azure-rights-management.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\helping-users-to-protect-files-by-using-azure-rights-management.e462d826fc4c91e90f52a196302319f82ae9d3cc.zh-cn.xlf",
+      "HandoffFileCommit": "704f8868a61ece52839f6bd6b68d45efb3081948",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "41d2a9e5f05fceddeb4293711c1ab00303c22c85": {
+      "FileHash": "41d2a9e5f05fceddeb4293711c1ab00303c22c85",
+      "SourceFileCommit": "6476c713249d829586d11b266c68c112d6db8385",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\logging-and-analyzing-azure-rights-management-usage.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\logging-and-analyzing-azure-rights-management-usage.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\logging-and-analyzing-azure-rights-management-usage.0b9c6b1535ba7ac0f145109b3a7a830f01c6a4fa.zh-cn.xlf",
+      "HandoffFileCommit": "704f8868a61ece52839f6bd6b68d45efb3081948",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "cfa980aca3ac929919fd538919f1c946dbf88393": {
+      "FileHash": "cfa980aca3ac929919fd538919f1c946dbf88393",
+      "SourceFileCommit": "6476c713249d829586d11b266c68c112d6db8385",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\operations-for-your-azure-rights-management-tenant-key-customer-managed.6f04a394307ae915402e564a3661a25b7223fae7.zh-cn.xlf",
+      "HandoffFileCommit": "704f8868a61ece52839f6bd6b68d45efb3081948",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "512ad8c5ccccbf88fa0c1476296ef3eb5f42c7f2": {
+      "FileHash": "512ad8c5ccccbf88fa0c1476296ef3eb5f42c7f2",
+      "SourceFileCommit": "6476c713249d829586d11b266c68c112d6db8385",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.ed144da281b82c185517411e0b0b72d83f903942.zh-cn.xlf",
+      "HandoffFileCommit": "704f8868a61ece52839f6bd6b68d45efb3081948",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "d36a1b524024d54eefa3abbd0b6289b7281021ce": {
+      "FileHash": "d36a1b524024d54eefa3abbd0b6289b7281021ce",
+      "SourceFileCommit": "6476c713249d829586d11b266c68c112d6db8385",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\registry-settings-rms-connector.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\registry-settings-rms-connector.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\registry-settings-rms-connector.e3642e756a1c2a90c138a6ef853c5941813a1a8a.zh-cn.xlf",
+      "HandoffFileCommit": "704f8868a61ece52839f6bd6b68d45efb3081948",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "50298c759654d31b45b1036aed1c22a5b51f51ca": {
+      "FileHash": "50298c759654d31b45b1036aed1c22a5b51f51ca",
+      "SourceFileCommit": "6476c713249d829586d11b266c68c112d6db8385",
+      "SourceFilePath": "Azure-RMSDocs\\DeployUse\\verifying-azure-rights-management.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
+      "FilePathList": [
+        "Azure-RMSDocs\\DeployUse\\verifying-azure-rights-management.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\verifying-azure-rights-management.04769d1e8089f3c40c85ec059b5a01f9d8a41468.zh-cn.xlf",
+      "HandoffFileCommit": "704f8868a61ece52839f6bd6b68d45efb3081948",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "c6953ae70f684f465e3ba55d7b062683321e3427": {
+      "FileHash": "c6953ae70f684f465e3ba55d7b062683321e3427",
+      "SourceFileCommit": "6476c713249d829586d11b266c68c112d6db8385",
+      "SourceFilePath": "Azure-RMSDocs\\scratch.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\scratch.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-cn.xlf",
+      "HandoffFileCommit": "704f8868a61ece52839f6bd6b68d45efb3081948",
+      "HandoffDateTime": "2016-03-23T23:13:03.1750596Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
