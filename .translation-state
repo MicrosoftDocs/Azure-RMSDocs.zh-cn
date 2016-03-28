@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "1bb541e6c517e6f29c8904e3c67a36dd12e32a29",
+  "LastProcessedCommit": "203f0735c741f3a0f0f66c56ddf954b401b217e3",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -16,7 +16,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-28T21:23:31.7879026Z",
+      "HandoffDateTime": "2016-03-28T21:39:18.9635729Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -27,7 +27,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 371",
         "extended_information": null
       },
-      "HandoffFailureTimes": 61,
+      "HandoffFailureTimes": 62,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5644,7 +5644,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-28T21:23:31.7879026Z",
+      "HandoffDateTime": "2016-03-28T21:39:18.9635729Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5655,7 +5655,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 371",
         "extended_information": null
       },
-      "HandoffFailureTimes": 61,
+      "HandoffFailureTimes": 62,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5941,7 +5941,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-28T21:23:31.7879026Z",
+      "HandoffDateTime": "2016-03-28T21:39:18.9635729Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5952,7 +5952,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 371",
         "extended_information": null
       },
-      "HandoffFailureTimes": 61,
+      "HandoffFailureTimes": 62,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -22201,6 +22201,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\using-azure-rights-management.713a34ff7d6de7da0d624b7556760c80ac370950.zh-cn.xlf",
       "HandoffFileCommit": "31412494e659221da4f50ff3fed171b7e638d1d4",
       "HandoffDateTime": "2016-03-28T21:23:31.7879026Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "cbdaac23e8c974a81adab7c385bb721bb74e44f9": {
+      "FileHash": "cbdaac23e8c974a81adab7c385bb721bb74e44f9",
+      "SourceFileCommit": "203f0735c741f3a0f0f66c56ddf954b401b217e3",
+      "SourceFilePath": "Azure-RMSDocs\\scratch.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\scratch.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-cn.xlf",
+      "HandoffFileCommit": "347814ed273978d8301aed954e5227a27535397e",
+      "HandoffDateTime": "2016-03-28T21:39:18.9635729Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
