@@ -5,13 +5,13 @@
  -------- | ----- 
  Total Files | 484
 [ Handoff Failed Files ](#handoff-failed-list)| 3
-[ Handoff Success Files ](#handoff-success-list)| 439
+[ Handoff Success Files ](#handoff-success-list)| 438
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 42
+[ Ignored Files ](#ignored-list)| 43
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
  Source File | Status | Details 
@@ -387,7 +387,6 @@
  [Azure-RMSDocs\RMSClient\use-keyboard-shortcuts-in-the-rights-management-sharing-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/203f0735c741f3a0f0f66c56ddf954b401b217e3/Azure-RMSDocs/RMSClient/use-keyboard-shortcuts-in-the-rights-management-sharing-application.md) | HandedOffSuccess | [Details](#58fc603c9575563353f958de172d26a49b8c1f36404)
  [Azure-RMSDocs\rms-client\view-and-use-files-that-have-been-protected-by-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/rms-client/view-and-use-files-that-have-been-protected-by-rights-management.md) | HandedOffSuccess | [Details](#63617b34a4232ac719d52a500a7ec8145f89de52387)
  [Azure-RMSDocs\RMSClient\view-and-use-files-that-have-been-protected-by-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/3def4c2f41535230eb68fa7ff62601ab9bdc2ace/Azure-RMSDocs/RMSClient/view-and-use-files-that-have-been-protected-by-rights-management.md) | HandedOffSuccess | [Details](#9ead6d45ca908139bf793ff1d6c20915a2600ce1405)
- [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/203f0735c741f3a0f0f66c56ddf954b401b217e3/Azure-RMSDocs/scratch.md) | HandedOffSuccess | [Details](#cbdaac23e8c974a81adab7c385bb721bb74e44f9406)
  [Azure-RMSDocs\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/8aa579b03193c45dfc71d5ac402e3bc658760af2/Azure-RMSDocs/TOC.md) | HandedOffSuccess | [Details](#9f23ad1ea3c13a519f1e0e48812a131dc67f4db3407)
  [Azure-RMSDocs\Troubleshoot\media\150x150.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/203f0735c741f3a0f0f66c56ddf954b401b217e3/Azure-RMSDocs/Troubleshoot/media/150x150.png) | HandedOffSuccess | [Details](#84421bf7f4ba657e685239fb27f4798a46485f71409)
  [Azure-RMSDocs\Troubleshoot\Sample.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/203f0735c741f3a0f0f66c56ddf954b401b217e3/Azure-RMSDocs/Troubleshoot/Sample.md) | HandedOffSuccess | [Details](#80f16e5851e574014594e4d93ba194beb2cc9653410)
@@ -516,6 +515,7 @@
  [Azure-RMSDocs\PlanDesign\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/203f0735c741f3a0f0f66c56ddf954b401b217e3/Azure-RMSDocs/PlanDesign/docfx.json) | Ignored | [Details](#8637c594466b0cedec8d8dbebff8006b4125da89356)
  [Azure-RMSDocs\rms-client\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/203f0735c741f3a0f0f66c56ddf954b401b217e3/Azure-RMSDocs/rms-client/docfx.json) | Ignored | [Details](#d889ba09378c1600b0a0bc3bac6f6221f7049cc9371)
  [Azure-RMSDocs\RMSClient\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/203f0735c741f3a0f0f66c56ddf954b401b217e3/Azure-RMSDocs/RMSClient/docfx.json) | Ignored | [Details](#d6ea2ed9ab4b7f7f5fc192d1260f5f33c9131f0e389)
+ [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/203f0735c741f3a0f0f66c56ddf954b401b217e3/Azure-RMSDocs/scratch.md) | Ignored | [Details](#e5cc46ca56febbdcb31dfb1ce3115e89571e12e9406)
  [Azure-RMSDocs\Troubleshoot\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/203f0735c741f3a0f0f66c56ddf954b401b217e3/Azure-RMSDocs/Troubleshoot/docfx.json) | Ignored | [Details](#e2f855dd5595da1ecb691a827f9f22aa18a6d62f408)
  [UpdateSubmodule.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/203f0735c741f3a0f0f66c56ddf954b401b217e3/UpdateSubmodule.ps1) | Ignored | [Details](#42442e5f8d7f09fba90a865e184aacc3f8489143483)
 
@@ -5491,12 +5491,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='cbdaac23e8c974a81adab7c385bb721bb74e44f9406'></a> Source: [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/203f0735c741f3a0f0f66c56ddf954b401b217e3/Azure-RMSDocs/scratch.md)
-* Status: HandedOffSuccess
+##### <a name='e5cc46ca56febbdcb31dfb1ce3115e89571e12e9406'></a> Source: [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/203f0735c741f3a0f0f66c56ddf954b401b217e3/Azure-RMSDocs/scratch.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/347814ed273978d8301aed954e5227a27535397e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-cn.xlf)
-* Handoff Datetime: 2016-03-28 21:39:18
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
