@@ -4,7 +4,8 @@
     "Azure-RMSDocs\\deploy-use\\0365-configure-for-clients-online-services.md"
   ],
   "c8ebf741a0c9c73517db0ca9ccd6fb00fc426b85": [
-    "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md"
+    "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md",
+    "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md"
   ],
   "6d5f65b36016226865965f2b72d7a286a6dc6200": [
     "Azure-RMSDocs\\DeployUse\\activating-azure-rights-management.md",
@@ -67,7 +68,8 @@
     "Azure-RMSDocs\\configure-onboarding-controls.md"
   ],
   "a6f6d8342b138a2d7619cc11e29ee8db2bd7c290": [
-    "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md"
+    "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md",
+    "Azure-RMSDocs\\deploy-use\\configuring-applications-for-azure-rights-management.md"
   ],
   "5c9d1a22967c6133cbd80dca9260f5ca241741b5": [
     "Azure-RMSDocs\\DeployUse\\configuring-applications-for-azure-rights-management.md",
@@ -242,7 +244,8 @@
     "Azure-RMSDocs\\get-started\\Sample.md"
   ],
   "aa178f3b46cca73ae7cd43edec504c272f233d46": [
-    "Azure-RMSDocs\\DeployUse\\helping-users-to-protect-files-by-using-azure-rights-management.md"
+    "Azure-RMSDocs\\DeployUse\\helping-users-to-protect-files-by-using-azure-rights-management.md",
+    "Azure-RMSDocs\\deploy-use\\helping-users-to-protect-files-by-using-azure-rights-management.md"
   ],
   "be084fb1a249223ea00e3d337624d1421aaf3b05": [
     "Azure-RMSDocs\\DeployUse\\helping-users-to-protect-files-by-using-azure-rights-management.md",
@@ -411,7 +414,8 @@
     "Azure-RMSDocs\\Administer\\installing-windows-powershell-for-azure-rights-management.md"
   ],
   "41d2a9e5f05fceddeb4293711c1ab00303c22c85": [
-    "Azure-RMSDocs\\DeployUse\\logging-and-analyzing-azure-rights-management-usage.md"
+    "Azure-RMSDocs\\DeployUse\\logging-and-analyzing-azure-rights-management-usage.md",
+    "Azure-RMSDocs\\deploy-use\\logging-and-analyzing-azure-rights-management-usage.md"
   ],
   "dba5e6894ff5ac2d3c2a615e1fdbbf03fd6f7165": [
     "Azure-RMSDocs\\DeployUse\\logging-and-analyzing-azure-rights-management-usage.md",
@@ -838,6 +842,9 @@
   "e6db0aa51cb2a435965832c7e18c14feac6b088a": [
     "Azure-RMSDocs\\GetStarted\\terminology-for-azure-rights-management.md"
   ],
+  "9f23ad1ea3c13a519f1e0e48812a131dc67f4db3": [
+    "Azure-RMSDocs\\TOC.md"
+  ],
   "5bdf4db680b72e1dd9d4c61939ac6be988ff2ad5": [
     "Azure-RMSDocs\\TOC.md"
   ],
@@ -883,7 +890,8 @@
     "Azure-RMSDocs\\using-azure-rights-management.md"
   ],
   "50298c759654d31b45b1036aed1c22a5b51f51ca": [
-    "Azure-RMSDocs\\DeployUse\\verifying-azure-rights-management.md"
+    "Azure-RMSDocs\\DeployUse\\verifying-azure-rights-management.md",
+    "Azure-RMSDocs\\deploy-use\\verifying-azure-rights-management.md"
   ],
   "4d4beb3073268cf8550002577028b03bf08d5bb0": [
     "Azure-RMSDocs\\DeployUse\\verifying-azure-rights-management.md",
@@ -1573,7 +1581,8 @@
     "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
   ],
   "cfa980aca3ac929919fd538919f1c946dbf88393": [
-    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
+    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md",
+    "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
   ],
   "37bdb7297f77751d9b016003ecbb059725c88d0f": [
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md",
@@ -1592,7 +1601,8 @@
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
   ],
   "512ad8c5ccccbf88fa0c1476296ef3eb5f42c7f2": [
-    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md"
+    "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md",
+    "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md"
   ],
   "de719414765036ceb3db092c978cc042b0d8ed82": [
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md",
@@ -1612,7 +1622,8 @@
     "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-copy-template.md"
   ],
   "6d7548356fb82181f26bf3c7f8349f4eb18dd548": [
-    "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-create-template.md"
+    "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-create-template.md",
+    "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-create-template.md"
   ],
   "5b3d8338ba3cdf9ea55aba2e644888eb9c3540d5": [
     "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-create-template.md",
@@ -1639,6 +1650,9 @@
     "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-remove-template.md",
     "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-remove-template.md"
   ],
+  "1ec88043855be100bef7a9d202323b73959dc61c": [
+    "Azure-RMSDocs\\deploy-use\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
+  ],
   "54175467f357d10058df2f85bbf1192038a00405": [
     "Azure-RMSDocs\\deploy-use\\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md"
   ],
@@ -1649,11 +1663,17 @@
     "Azure-RMSDocs\\DeployUse\\registry-settings-rms-connector.md",
     "Azure-RMSDocs\\deploy-use\\registry-settings-rms-connector.md"
   ],
+  "881c486a0be7ba4e106f6bc4e8cf908ebf1722a9": [
+    "Azure-RMSDocs\\deploy-use\\registry-settings-rms-connector.md"
+  ],
   "f1f5fe9bf45c5b807d83a6e6b74b5882e2a5456f": [
     "Azure-RMSDocs\\deploy-use\\registry-settings-rms-connector.md"
   ],
   "d7ebc5e465b1f6008e2bee5f0624b468f01b0899": [
     "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-refresh-templates.md"
+  ],
+  "c9d894c4a0675bdcf55c9df7278965ce1abc04cf": [
+    "Azure-RMSDocs\\deploy-use\\deploying-the-azure-rights-management-connector.md"
   ],
   "f31eba09976c8fa19786d0589e0ec7fb0d5e043c": [
     "Azure-RMSDocs\\deploy-use\\deploying-the-azure-rights-management-connector.md"
