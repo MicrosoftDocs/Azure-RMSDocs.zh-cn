@@ -880,6 +880,9 @@
   "05f9ef9a3f6258fb49f39f034e84c773dad451b6": [
     "Azure-RMSDocs\\media\\AzRMSUserInstructions_ShareProtectedRibbon2013.png"
   ],
+  "c1216aa87b09da1dcba980c4e10f950228e3e2a4": [
+    "Azure-RMSDocs\\scratch.md"
+  ],
   "eb09fa3536d7ce1ccdca5940b5bf3c31e84788db": [
     "Azure-RMSDocs\\scratch.md"
   ],
@@ -2037,5 +2040,8 @@
   ],
   "6953bbeed6ba6f85070b11e617e1e4217647b310": [
     "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
+  ],
+  "c213769a07c78aded5404c663e3b5cbbe89e253a": [
+    "Azure-RMSDocs\\template.md"
   ]
 }
