@@ -819,6 +819,9 @@
     "Azure-RMSDocs\\GetStarted\\rms-requirements-onpremises-servers.md",
     "Azure-RMSDocs\\get-started\\rms-requirements-onpremises-servers.md"
   ],
+  "be38bf6211293126f2cab9552f89a94e8605a4cb": [
+    "Azure-RMSDocs\\get-started\\rms-requirements-onpremises-servers.md"
+  ],
   "33c20eff1174f4e886c6f6be428688399d41a0d8": [
     "Azure-RMSDocs\\get-started\\rms-requirements-onpremises-servers.md"
   ],
@@ -1159,6 +1162,9 @@
   ],
   "e9abd459f6c26d1b9baed676b9aa96f303e3dcbe": [
     "Azure-RMSDocs\\Understand\\rms-for-individuals-admins-take-control.md",
+    "Azure-RMSDocs\\understand-explore\\rms-for-individuals-admins-take-control.md"
+  ],
+  "12f8bd245d66ed1fc4f8b7826f35454f441c6d24": [
     "Azure-RMSDocs\\understand-explore\\rms-for-individuals-admins-take-control.md"
   ],
   "a4eeb8bbeb37da656f15cf8101fa17f9c02a23be": [
@@ -1789,11 +1795,17 @@
     "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md",
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md"
   ],
+  "57f9680e684816a5ae8357999dcf713971c17fc1": [
+    "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md"
+  ],
   "2aff7ead936fa21e6b1b537d403f1b9b0b81fb56": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md"
   ],
   "f6ffe1179ca09b483becfb329398d859a63ef62c": [
     "Azure-RMSDocs\\PlanDesign\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md",
+    "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md"
+  ],
+  "545b5c3cacf434c4549c4c06a38b3aa449401f3a": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md"
   ],
   "79d5dfffb2bb6d42e23ef2db2c96fbd76e576f1e": [
@@ -1851,6 +1863,9 @@
   ],
   "9b671912701bfae985690f51907874d1a736adef": [
     "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
+  ],
+  "5763a718f00a3e8000baf0d555ca1e12629d5ffe": [
+    "Azure-RMSDocs\\get-started\\rms-quickstart.md"
   ],
   "d8aa1c18b5bf1508707fab87e8c7e7a22ac4c936": [
     "Azure-RMSDocs\\get-started\\frequently-asked-questions-for-azure-rights-management.md"
@@ -1935,6 +1950,9 @@
     "Azure-RMSDocs\\DeployUse\\configure-custom-templates-for-azure-rights-management-copy-template.md",
     "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-copy-template.md"
   ],
+  "3deba7ec9d594f3345dcd02253c6bdfe2217d458": [
+    "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-copy-template.md"
+  ],
   "b6bb63b9309e6784cac59b79947bca9bf75f9895": [
     "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-copy-template.md"
   ],
@@ -2014,6 +2032,9 @@
   ],
   "4888c16e0cbe9bddddfaceecdae2d30f393ddcb2": [
     "Azure-RMSDocs\\plan-design\\generate-and-transfer-your-tenant-key-over-the-internet.md"
+  ],
+  "7caf7744f0cbda4ea6514b47b724788908c20ffc": [
+    "Azure-RMSDocs\\plan-design\\implementing-your-azure-rights-management-tenant-key.md"
   ],
   "200a37ea9bd7bc497c143e663937073cd4c7df48": [
     "Azure-RMSDocs\\plan-design\\implementing-your-azure-rights-management-tenant-key.md"
@@ -2117,6 +2138,9 @@
   ],
   "6953bbeed6ba6f85070b11e617e1e4217647b310": [
     "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
+  ],
+  "7a163efdec5a79af7b1185ebe12dbb4dd4fc5091": [
+    "Azure-RMSDocs\\template.md"
   ],
   "f9accfad52f1a97effca85e09b82392f9af4067a": [
     "Azure-RMSDocs\\template.md"
