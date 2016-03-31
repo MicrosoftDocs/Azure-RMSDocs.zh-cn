@@ -122,6 +122,9 @@
   "55123b66a93b4c553f3a15d06a682d8fc8ddf6bb": [
     "Azure-RMSDocs\\DeployUse\\configuring-usage-rights-for-azure-rights-management.md"
   ],
+  "4af4e39f5f6adf9aec768d03b9aa955c0b7c988f": [
+    "Azure-RMSDocs\\Develop\\developers-guide.md"
+  ],
   "283e7ce2439c91010bd1872196ad4221a9efaace": [
     "Azure-RMSDocs\\Develop\\developers-guide.md"
   ],
@@ -1472,11 +1475,17 @@
   "7af6852cfdb2398a231ee952a3bc3b09e0c23730": [
     "Azure-RMSDocs\\Develop\\ad-rms-server.md"
   ],
+  "2c1de7039603de8d4618073c45fc4323fa10c594": [
+    "Azure-RMSDocs\\Develop\\add-explicit-owner-rights.md"
+  ],
   "b39254201a59a7b1dbfddbb7bb23fabdadc42707": [
     "Azure-RMSDocs\\Develop\\add-explicit-owner-rights.md"
   ],
   "6ccde4fbb832ec1b3d1de4d2a5bc049429ad9352": [
     "Azure-RMSDocs\\Develop\\android-code.md"
+  ],
+  "80b1d12b5662d67290bb7f41704a0a7d77c51588": [
+    "Azure-RMSDocs\\Develop\\android-sdk.md"
   ],
   "91a89ea404261cbd3fa32af5d0916c5e9ea84d2d": [
     "Azure-RMSDocs\\Develop\\android-sdk.md"
@@ -2046,6 +2055,9 @@
   ],
   "6953bbeed6ba6f85070b11e617e1e4217647b310": [
     "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
+  ],
+  "0ff392743b9462d806cafda8db933ffd2c641d6b": [
+    "Azure-RMSDocs\\template.md"
   ],
   "425d771e1d79f5394d95a0ea9957599214ccf2d0": [
     "Azure-RMSDocs\\template.md"
