@@ -971,8 +971,13 @@
   "e6db0aa51cb2a435965832c7e18c14feac6b088a": [
     "Azure-RMSDocs\\GetStarted\\terminology-for-azure-rights-management.md"
   ],
-  "9f23ad1ea3c13a519f1e0e48812a131dc67f4db3": [
+  "428481e871bc69099609aa2532771a0b07fecfee": [
     "Azure-RMSDocs\\TOC.md"
+  ],
+  "9f23ad1ea3c13a519f1e0e48812a131dc67f4db3": [
+    "Azure-RMSDocs\\TOC.md",
+    "Azure-RMSDocs\\Administer\\TOC.md",
+    "Azure-RMSDocs\\Develop\\TOC.md"
   ],
   "5bdf4db680b72e1dd9d4c61939ac6be988ff2ad5": [
     "Azure-RMSDocs\\TOC.md"
@@ -1367,8 +1372,14 @@
   "3b93586f156f1c290266f040c47153c8b6ff55ce": [
     "Azure-RMSDocs\\rms-client\\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md"
   ],
+  "c8f47ac57697487fcf0810d23c1091071907e7b9": [
+    "Azure-RMSDocs\\Administer\\TOC.md"
+  ],
   "9bf394f9b6c9a5b4924de2407f8d8e61d01bd6c8": [
     "Azure-RMSDocs\\RMSClient\\TOC.md",
+    "Azure-RMSDocs\\rms-client\\TOC.md"
+  ],
+  "688440064fd36a5362b01da5ff3aafa507742452": [
     "Azure-RMSDocs\\rms-client\\TOC.md"
   ],
   "9e63178e26fd2f25dcafac8d2352ad7b30e0e3a6": [
@@ -1696,6 +1707,18 @@
   ],
   "1e6454c4579ac1a54a4a107b0acb8e3a18d37ad7": [
     "Azure-RMSDocs\\Develop\\terms.md"
+  ],
+  "1c9e5185b59929234e8dd79434feebc74fef4bd5": [
+    "Azure-RMSDocs\\Develop\\TOC.md"
+  ],
+  "a7bc0c1ef6ae8aaaebbd83478129eeb0c6072968": [
+    "Azure-RMSDocs\\Develop\\TOC.md"
+  ],
+  "5a00ccaf7e0ff66466dd288e7e7550e133f88348": [
+    "Azure-RMSDocs\\Develop\\TOC.md"
+  ],
+  "353093ecbb64ad17534bb5f773ff6c748446e448": [
+    "Azure-RMSDocs\\Develop\\TOC.md"
   ],
   "50864a75313eac606a7da083c6a5a3a43493a56f": [
     "Azure-RMSDocs\\Develop\\tracking-content.md"
@@ -2056,6 +2079,9 @@
   "6953bbeed6ba6f85070b11e617e1e4217647b310": [
     "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key-customer-managed.md"
   ],
+  "f9accfad52f1a97effca85e09b82392f9af4067a": [
+    "Azure-RMSDocs\\template.md"
+  ],
   "0ff392743b9462d806cafda8db933ffd2c641d6b": [
     "Azure-RMSDocs\\template.md"
   ],
@@ -2064,5 +2090,17 @@
   ],
   "c213769a07c78aded5404c663e3b5cbbe89e253a": [
     "Azure-RMSDocs\\template.md"
+  ],
+  "3150812bd62969dc5e565f83cfd92b37847fc628": [
+    "Azure-RMSDocs\\deploy-use\\TOC.md"
+  ],
+  "ecd09ea98fb12a3a2233c4c683b68cd04dedbe4e": [
+    "Azure-RMSDocs\\get-started\\TOC.md"
+  ],
+  "cc56195b2f3b6a0031c5705619baecdf74c4e272": [
+    "Azure-RMSDocs\\plan-design\\TOC.md"
+  ],
+  "33a4b618d998a25440eb46db4cd359903596ea23": [
+    "Azure-RMSDocs\\understand-explore\\TOC.md"
   ]
 }
