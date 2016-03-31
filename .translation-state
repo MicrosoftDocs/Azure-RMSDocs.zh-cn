@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "271cf5447ac8534ff3d3a8b0a55b3ff2bd843aa8",
+  "LastProcessedCommit": "ff1023910a00bfe7ad80ca780c303bb96760ca88",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -16,7 +16,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-31T20:49:09.3246436Z",
+      "HandoffDateTime": "2016-03-31T22:24:12.8552817Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -27,7 +27,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\code\\deploy\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 371",
         "extended_information": null
       },
-      "HandoffFailureTimes": 72,
+      "HandoffFailureTimes": 73,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5644,7 +5644,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-31T20:49:09.3246436Z",
+      "HandoffDateTime": "2016-03-31T22:24:12.8552817Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5655,7 +5655,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\code\\deploy\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 371",
         "extended_information": null
       },
-      "HandoffFailureTimes": 72,
+      "HandoffFailureTimes": 73,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -5941,7 +5941,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-31T20:49:09.3246436Z",
+      "HandoffDateTime": "2016-03-31T22:24:12.8552817Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -5952,7 +5952,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\code\\deploy\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 371",
         "extended_information": null
       },
-      "HandoffFailureTimes": 72,
+      "HandoffFailureTimes": 73,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -23290,6 +23290,64 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\TOC.132273379247391752a00ca59e2585345cd61252.zh-cn.xlf",
       "HandoffFileCommit": "58465de94ad47bb4828d5de1b8095a5ac38e134c",
       "HandoffDateTime": "2016-03-31T20:49:09.3246436Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "100c0311ae5b6b81c9d34f60e892323bb637667b": {
+      "FileHash": "100c0311ae5b6b81c9d34f60e892323bb637667b",
+      "SourceFileCommit": "ff1023910a00bfe7ad80ca780c303bb96760ca88",
+      "SourceFilePath": "Azure-RMSDocs\\rms-client\\rms-protection-script-fci.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\rms-client\\rms-protection-script-fci.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-protection-script-fci.6bfc1e3c369850e82f0331158c9c7fa43e6fc661.zh-cn.xlf",
+      "HandoffFileCommit": "38756f4b22226a4372d1fd60556f40a9a567ced9",
+      "HandoffDateTime": "2016-03-31T22:24:12.8552817Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "1a9956955179d2e7ece855b007539c19336bcf45": {
+      "FileHash": "1a9956955179d2e7ece855b007539c19336bcf45",
+      "SourceFileCommit": "ff1023910a00bfe7ad80ca780c303bb96760ca88",
+      "SourceFilePath": "Azure-RMSDocs\\rms-client\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\rms-client\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-protection-with-windows-server-file-classification-infrastructure-fci.99f6bc7ab1f4dd7665fc62ae6fefb1a1fea5ab77.zh-cn.xlf",
+      "HandoffFileCommit": "38756f4b22226a4372d1fd60556f40a9a567ced9",
+      "HandoffDateTime": "2016-03-31T22:24:12.8552817Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
