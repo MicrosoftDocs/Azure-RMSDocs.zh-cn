@@ -1403,6 +1403,9 @@
     "Azure-RMSDocs\\RMSClient\\TOC.md",
     "Azure-RMSDocs\\rms-client\\TOC.md"
   ],
+  "802832bc2acb5ad7721b09dd0b07cf06cbb23637": [
+    "Azure-RMSDocs\\rms-client\\TOC.md"
+  ],
   "c7b86ba1893fdb3748ce4fa9b0676cddfc07b548": [
     "Azure-RMSDocs\\rms-client\\TOC.md"
   ],
@@ -2062,6 +2065,9 @@
   ],
   "53d3f615196b94e0b07fdb0d20f3d5af97e14755": [
     "Azure-RMSDocs\\rms-client\\rms-client-deployment-notes.md"
+  ],
+  "6e920bf78038bdd25e37d974794a6da24cd5199b": [
+    "Azure-RMSDocs\\rms-client\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md"
   ],
   "1a9956955179d2e7ece855b007539c19336bcf45": [
     "Azure-RMSDocs\\rms-client\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md"
