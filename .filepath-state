@@ -3,6 +3,9 @@
     "Azure-RMSDocs\\DeployUse\\0365-configure-for-clients-online-services.md",
     "Azure-RMSDocs\\deploy-use\\0365-configure-for-clients-online-services.md"
   ],
+  "37385d21a8e4a3f48276375a625b7103bc8305dd": [
+    "Azure-RMSDocs\\deploy-use\\0365-configure-for-clients-online-services.md"
+  ],
   "69402b3ffcb700167114529474deea4505861540": [
     "Azure-RMSDocs\\deploy-use\\0365-configure-for-clients-online-services.md"
   ],
@@ -1919,11 +1922,20 @@
   "b85124e19f5c610a2871b6a0e0fab489179c594e": [
     "Azure-RMSDocs\\DeployUse\\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md"
   ],
+  "d4e020e2b4b71c67aed3ce6dcd8ce59f113b8c1a": [
+    "Azure-RMSDocs\\deploy-use\\office-2010-configure-for-clients.md"
+  ],
   "fbcaedd0a002211a29075358c00b9c84e5d3da3b": [
     "Azure-RMSDocs\\deploy-use\\office-2010-configure-for-clients.md"
   ],
+  "9788ace660b0dc5ea13ece5c93d65fae906ac279": [
+    "Azure-RMSDocs\\deploy-use\\office-2016-2013-configure-for-clients.md"
+  ],
   "51aeba68e40e4b7ca661fb2b31c6490b121695ad": [
     "Azure-RMSDocs\\deploy-use\\office-2016-2013-configure-for-clients.md"
+  ],
+  "e4db450f04de3f241f1bc144180cec20746e680b": [
+    "Azure-RMSDocs\\deploy-use\\sharing-app-install-configure.md"
   ],
   "31109a55551292e38eda93dd5eefa34db7ceecb7": [
     "Azure-RMSDocs\\deploy-use\\sharing-app-install-configure.md"
@@ -1999,6 +2011,9 @@
   ],
   "d8a7140fa364287995a233980324b6aa4e26c4d4": [
     "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md"
+  ],
+  "ff7a0e2d5c3613cd1f04da576aa1f38adcf6cea4": [
+    "Azure-RMSDocs\\deploy-use\\configuring-applications-for-azure-rights-management.md"
   ],
   "a730129ea1fb1205943ca53d7bd82e107c0c14fe": [
     "Azure-RMSDocs\\deploy-use\\configuring-applications-for-azure-rights-management.md"
