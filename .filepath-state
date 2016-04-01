@@ -15,7 +15,8 @@
     "Azure-RMSDocs\\configure-onboarding-controls.md"
   ],
   "4af4e39f5f6adf9aec768d03b9aa955c0b7c988f": [
-    "Azure-RMSDocs\\Develop\\developers-guide.md"
+    "Azure-RMSDocs\\Develop\\developers-guide.md",
+    "Azure-RMSDocs\\Develop\\index.md"
   ],
   "283e7ce2439c91010bd1872196ad4221a9efaace": [
     "Azure-RMSDocs\\Develop\\developers-guide.md"
@@ -835,6 +836,9 @@
   "1fda2862fbb5cda872ab507619e46b9eef316a2f": [
     "Azure-RMSDocs\\Develop\\debugging-applications-that-use-ad-rms.md"
   ],
+  "f54c583e034a8b78df6907e64eba4cdc8f439359": [
+    "Azure-RMSDocs\\Develop\\deploying-your-application.md"
+  ],
   "ff8f6870b1465c576573f9e00b8febe3181d5f71": [
     "Azure-RMSDocs\\Develop\\deploying-your-application.md"
   ],
@@ -862,6 +866,9 @@
   "4fdf874cabb93cf19d2e41a05493c116d087b700": [
     "Azure-RMSDocs\\Develop\\file-api-configuration.md"
   ],
+  "80b2d4e39aa66cdf260d67982b813fe15df63786": [
+    "Azure-RMSDocs\\Develop\\get-started.md"
+  ],
   "a9876e3b6962a6dd3dddff9496c5a238bb2b2485": [
     "Azure-RMSDocs\\Develop\\get-started.md"
   ],
@@ -873,6 +880,9 @@
   ],
   "ccdbda10d2e92b7e434069d4384a9b6f6997d77d": [
     "Azure-RMSDocs\\Develop\\getting-started-with-ad-rms-2-0.md"
+  ],
+  "fe9f03b574955852914e88eb26a8948d5fc71bf5": [
+    "Azure-RMSDocs\\Develop\\how-to-enable-email-notification.md"
   ],
   "3ff6c0afa1901ba840cc46aca20f72baee0262fe": [
     "Azure-RMSDocs\\Develop\\how-to-enable-email-notification.md"
@@ -925,6 +935,9 @@
   "b26b360ba37bbdb9a4e3d111c780048ea07b2e84": [
     "Azure-RMSDocs\\Develop\\linux-c-api-reference.md"
   ],
+  "4f64a028e48e835bf48da5eba5184f4210747d07": [
+    "Azure-RMSDocs\\Develop\\linux-c-code-examples.md"
+  ],
   "acebf6c992e1c71a1279f13c874811e8a1e446f8": [
     "Azure-RMSDocs\\Develop\\linux-c-code-examples.md"
   ],
@@ -937,6 +950,9 @@
   "93d4ddd342d385609c8a0a01b4f8004efe37cdfd": [
     "Azure-RMSDocs\\Develop\\microsoft-information-protection-and-control-client-portal.md"
   ],
+  "cf940f9d779230c8f6d86b3a025d7e08453fe850": [
+    "Azure-RMSDocs\\Develop\\obtaining-a-production-license.md"
+  ],
   "d6019417b7038da18285ecf0076953d2208ad618": [
     "Azure-RMSDocs\\Develop\\obtaining-a-production-license.md"
   ],
@@ -948,6 +964,9 @@
   ],
   "e6fbe5dd57e61b0e7b937932cfad055eb5386f1e": [
     "Azure-RMSDocs\\Develop\\release-notes.md"
+  ],
+  "cf5e6fdd007419347aac123e8aef209ae56cc111": [
+    "Azure-RMSDocs\\Develop\\release-notes-rtm.md"
   ],
   "65314b6fe5b429d12be28b3975d5ae8ddf0cd3ac": [
     "Azure-RMSDocs\\Develop\\release-notes-rtm.md"
@@ -994,6 +1013,9 @@
   "1e6454c4579ac1a54a4a107b0acb8e3a18d37ad7": [
     "Azure-RMSDocs\\Develop\\terms.md"
   ],
+  "d1a1918f5e74c01d1891776c77ddbc66dcc13721": [
+    "Azure-RMSDocs\\Develop\\TOC.md"
+  ],
   "6189b01afd93e4eb06740509f3c02f8ec7ed154d": [
     "Azure-RMSDocs\\Develop\\TOC.md"
   ],
@@ -1032,6 +1054,9 @@
   ],
   "2414cd0e45add9af35259be9c04d910cc8ba16ed": [
     "Azure-RMSDocs\\Develop\\winrt-sdk.md"
+  ],
+  "b5707cb353214cb6dbdcf02cb2091edc045ee758": [
+    "Azure-RMSDocs\\Develop\\working-with-encryption.md"
   ],
   "2eb0fb031115ea27c278e281791924f50d89e4e1": [
     "Azure-RMSDocs\\Develop\\working-with-encryption.md"
