@@ -6,15 +6,15 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\DeployUse\0365-configure-for-clients-online-services.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/DeployUse/0365-configure-for-clients-online-services.md) | HandedOffFailed | [Details](#2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a42)
- [Azure-RMSDocs\deploy-use\configuring-applications-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/deploy-use/configuring-applications-for-azure-rights-management.md) | HandedOffSuccess | [Details](#60317d730e6ec406d9e037448d0f83b258c224bb18)
- [Azure-RMSDocs\deploy-use\office-2010-configure-for-clients.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/deploy-use/office-2010-configure-for-clients.md) | HandedOffSuccess | [Details](#fe4bd76ce70f6e5c0935084f68fff95ce43f619729)
- [Azure-RMSDocs\deploy-use\sharing-app-install-configure.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/deploy-use/sharing-app-install-configure.md) | HandedOffSuccess | [Details](#444262a94df17148aa96f04e05428c558ead697038)
- [Azure-RMSDocs\GetStarted\rms-requirements-onpremises-servers.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/GetStarted/rms-requirements-onpremises-servers.md) | HandedOffFailed | [Details](#fd4cb1ed0d4cf5195185330049bb58feea1518e4186)
- [Azure-RMSDocs\Understand\rms-for-individuals-and-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/Understand/rms-for-individuals-and-azure-rights-management.md) | HandedOffFailed | [Details](#fadbd257a2c88b3b44e49d23986ec33693ea5250482)
+ [Azure-RMSDocs\DeployUse\0365-configure-for-clients-online-services.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/DeployUse/0365-configure-for-clients-online-services.md) | HandedOffFailed | [Details](#2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a42)
+ [Azure-RMSDocs\deploy-use\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/deploy-use/TOC.md) | HandedOffSuccess | [Details](#28609834ee30326f848578dc42caa97b3a02745a39)
+ [Azure-RMSDocs\GetStarted\rms-requirements-onpremises-servers.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/GetStarted/rms-requirements-onpremises-servers.md) | HandedOffFailed | [Details](#fd4cb1ed0d4cf5195185330049bb58feea1518e4186)
+ [Azure-RMSDocs\get-started\scenario-share-an-office-file-with-users-in-another-organization.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/get-started/scenario-share-an-office-file-with-users-in-another-organization.md) | HandedOffSuccess | [Details](#73c171c3a10b1b232d5154763393b9b25cd91373166)
+ [Azure-RMSDocs\plan-design\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/plan-design/TOC.md) | HandedOffSuccess | [Details](#939ac8eb4a48b3fe4c5fee07cdd72e8d09bd8189358)
+ [Azure-RMSDocs\Understand\rms-for-individuals-and-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/Understand/rms-for-individuals-and-azure-rights-management.md) | HandedOffFailed | [Details](#fadbd257a2c88b3b44e49d23986ec33693ea5250482)
 
 ## Item Details
-##### <a name='2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a42'></a> Source: [Azure-RMSDocs\DeployUse\0365-configure-for-clients-online-services.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/DeployUse/0365-configure-for-clients-online-services.md)
+##### <a name='2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a42'></a> Source: [Azure-RMSDocs\DeployUse\0365-configure-for-clients-online-services.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/DeployUse/0365-configure-for-clients-online-services.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
@@ -27,11 +27,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='60317d730e6ec406d9e037448d0f83b258c224bb18'></a> Source: [Azure-RMSDocs\deploy-use\configuring-applications-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/deploy-use/configuring-applications-for-azure-rights-management.md)
+##### <a name='28609834ee30326f848578dc42caa97b3a02745a39'></a> Source: [Azure-RMSDocs\deploy-use\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/deploy-use/TOC.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [configuring-applications-for-azure-rights-management.e55247a751d8ef5d2b8ee887079720b9f0aa35b5.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/df2f3307bbc179866aeea9229e60df440f8ccc57/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/configuring-applications-for-azure-rights-management.e55247a751d8ef5d2b8ee887079720b9f0aa35b5.zh-cn.xlf)
-* Handoff Datetime: 2016-04-01 19:23:42
+* Handoff File: [TOC.15093da2c32050c16b3bc82d728b3f6546760f04.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c8a743a356175b0b79ccbcb27a243e843109a1cf/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.15093da2c32050c16b3bc82d728b3f6546760f04.zh-cn.xlf)
+* Handoff Datetime: 2016-04-01 20:52:39
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -39,31 +39,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='fe4bd76ce70f6e5c0935084f68fff95ce43f619729'></a> Source: [Azure-RMSDocs\deploy-use\office-2010-configure-for-clients.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/deploy-use/office-2010-configure-for-clients.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [office-2010-configure-for-clients.2de39d286816d8f680819a5a2e730dd4b22ba4b1.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/df2f3307bbc179866aeea9229e60df440f8ccc57/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/office-2010-configure-for-clients.2de39d286816d8f680819a5a2e730dd4b22ba4b1.zh-cn.xlf)
-* Handoff Datetime: 2016-04-01 19:23:42
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='444262a94df17148aa96f04e05428c558ead697038'></a> Source: [Azure-RMSDocs\deploy-use\sharing-app-install-configure.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/deploy-use/sharing-app-install-configure.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [sharing-app-install-configure.3900ee7e3419ab9e50add60bbb61c4b6d75a318c.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/df2f3307bbc179866aeea9229e60df440f8ccc57/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/sharing-app-install-configure.3900ee7e3419ab9e50add60bbb61c4b6d75a318c.zh-cn.xlf)
-* Handoff Datetime: 2016-04-01 19:23:42
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='fd4cb1ed0d4cf5195185330049bb58feea1518e4186'></a> Source: [Azure-RMSDocs\GetStarted\rms-requirements-onpremises-servers.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/GetStarted/rms-requirements-onpremises-servers.md)
+##### <a name='fd4cb1ed0d4cf5195185330049bb58feea1518e4186'></a> Source: [Azure-RMSDocs\GetStarted\rms-requirements-onpremises-servers.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/GetStarted/rms-requirements-onpremises-servers.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
@@ -76,7 +52,31 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='fadbd257a2c88b3b44e49d23986ec33693ea5250482'></a> Source: [Azure-RMSDocs\Understand\rms-for-individuals-and-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/Understand/rms-for-individuals-and-azure-rights-management.md)
+##### <a name='73c171c3a10b1b232d5154763393b9b25cd91373166'></a> Source: [Azure-RMSDocs\get-started\scenario-share-an-office-file-with-users-in-another-organization.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/get-started/scenario-share-an-office-file-with-users-in-another-organization.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [scenario-share-an-office-file-with-users-in-another-organization.fc30726537df5615b4d65a88a1dc2bf015deef75.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c8a743a356175b0b79ccbcb27a243e843109a1cf/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/scenario-share-an-office-file-with-users-in-another-organization.fc30726537df5615b4d65a88a1dc2bf015deef75.zh-cn.xlf)
+* Handoff Datetime: 2016-04-01 20:52:39
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='939ac8eb4a48b3fe4c5fee07cdd72e8d09bd8189358'></a> Source: [Azure-RMSDocs\plan-design\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/plan-design/TOC.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [TOC.dc94105a837aa695cb03b76dd02a7e6b5a8b0447.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c8a743a356175b0b79ccbcb27a243e843109a1cf/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.dc94105a837aa695cb03b76dd02a7e6b5a8b0447.zh-cn.xlf)
+* Handoff Datetime: 2016-04-01 20:52:39
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='fadbd257a2c88b3b44e49d23986ec33693ea5250482'></a> Source: [Azure-RMSDocs\Understand\rms-for-individuals-and-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/Understand/rms-for-individuals-and-azure-rights-management.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 

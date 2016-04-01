@@ -1194,6 +1194,9 @@
   "45b492f3f1f1601acfd83422aadfb03143031182": [
     "Azure-RMSDocs\\get-started\\scenario-send-a-company-confidential-email.md"
   ],
+  "73c171c3a10b1b232d5154763393b9b25cd91373": [
+    "Azure-RMSDocs\\get-started\\scenario-share-an-office-file-with-users-in-another-organization.md"
+  ],
   "9555155b0aa4e15c5ef8bbb33e99e76cedd97c28": [
     "Azure-RMSDocs\\get-started\\scenario-share-an-office-file-with-users-in-another-organization.md"
   ],
@@ -2184,6 +2187,9 @@
   "c213769a07c78aded5404c663e3b5cbbe89e253a": [
     "Azure-RMSDocs\\template.md"
   ],
+  "28609834ee30326f848578dc42caa97b3a02745a": [
+    "Azure-RMSDocs\\deploy-use\\TOC.md"
+  ],
   "5a147e45ab61f7386833efcf7159365dd03fbb33": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
   ],
@@ -2195,6 +2201,9 @@
   ],
   "ecd09ea98fb12a3a2233c4c683b68cd04dedbe4e": [
     "Azure-RMSDocs\\get-started\\TOC.md"
+  ],
+  "939ac8eb4a48b3fe4c5fee07cdd72e8d09bd8189": [
+    "Azure-RMSDocs\\plan-design\\TOC.md"
   ],
   "247b2603ef2a94e49ddd3a3026e9456fdca22ef4": [
     "Azure-RMSDocs\\plan-design\\TOC.md"
