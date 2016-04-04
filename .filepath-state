@@ -1073,6 +1073,9 @@
   "7ab98a07a90a48ec93491137bc7006c84e703534": [
     "Azure-RMSDocs\\understand-explore\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.md"
   ],
+  "f091edb6a0c1c4128813026c6193945e8f9ebf12": [
+    "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md"
+  ],
   "57f9680e684816a5ae8357999dcf713971c17fc1": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md"
   ],
@@ -1082,6 +1085,9 @@
   "94a6176c4fe6f108013a3ca2383cddf18662f543": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md"
   ],
+  "17b2854df54d530a1dc405f54a13349ab17dda91": [
+    "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md"
+  ],
   "545b5c3cacf434c4549c4c06a38b3aa449401f3a": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md"
   ],
@@ -1090,6 +1096,9 @@
   ],
   "f6ffe1179ca09b483becfb329398d859a63ef62c": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md"
+  ],
+  "42fb027d25f4d5d032835024a1a836693acaedaa": [
+    "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.md"
   ],
   "b593fc746793513b136af46a633a120ba63997cf": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.md"
@@ -1178,17 +1187,8 @@
   "429684e16075c62291b3f149da68d410c44fbc2c": [
     "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key.md"
   ],
-  "fe4bd76ce70f6e5c0935084f68fff95ce43f6197": [
-    "Azure-RMSDocs\\deploy-use\\office-2010-configure-for-clients.md"
-  ],
-  "d4e020e2b4b71c67aed3ce6dcd8ce59f113b8c1a": [
-    "Azure-RMSDocs\\deploy-use\\office-2010-configure-for-clients.md"
-  ],
-  "fbcaedd0a002211a29075358c00b9c84e5d3da3b": [
-    "Azure-RMSDocs\\deploy-use\\office-2010-configure-for-clients.md"
-  ],
-  "61b83e7c7df4acecfde778d9d73f8bef8dddfc73": [
-    "Azure-RMSDocs\\deploy-use\\office-2010-configure-for-clients.md"
+  "f9eefaeb9a356e02893d5abb2d354c1740ed2396": [
+    "Azure-RMSDocs\\deploy-use\\office-2016-2013-configure-for-clients.md"
   ],
   "9788ace660b0dc5ea13ece5c93d65fae906ac279": [
     "Azure-RMSDocs\\deploy-use\\office-2016-2013-configure-for-clients.md"
@@ -1526,6 +1526,9 @@
   "22bb639c25cf392b875684867f8af8203a00a9ee": [
     "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-refresh-templates.md"
   ],
+  "3faac068e6ffd20e5229ecefe9383759dd790448": [
+    "Azure-RMSDocs\\deploy-use\\deploying-the-azure-rights-management-connector.md"
+  ],
   "35e7c6d6cd1bddbe2bbafaab9d774d75c0166e2d": [
     "Azure-RMSDocs\\deploy-use\\deploying-the-azure-rights-management-connector.md"
   ],
@@ -1562,6 +1565,9 @@
   "c213769a07c78aded5404c663e3b5cbbe89e253a": [
     "Azure-RMSDocs\\template.md"
   ],
+  "14ec61ca4008923ce18dcdb4bfe0c4714a39fa6e": [
+    "Azure-RMSDocs\\deploy-use\\TOC.md"
+  ],
   "28609834ee30326f848578dc42caa97b3a02745a": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
   ],
@@ -1576,6 +1582,9 @@
   ],
   "ecd09ea98fb12a3a2233c4c683b68cd04dedbe4e": [
     "Azure-RMSDocs\\get-started\\TOC.md"
+  ],
+  "909725ce4e105fb769e992591234fbef7b28c2b2": [
+    "Azure-RMSDocs\\plan-design\\TOC.md"
   ],
   "939ac8eb4a48b3fe4c5fee07cdd72e8d09bd8189": [
     "Azure-RMSDocs\\plan-design\\TOC.md"
@@ -1597,5 +1606,11 @@
   ],
   "100c0311ae5b6b81c9d34f60e892323bb637667b": [
     "Azure-RMSDocs\\rms-client\\rms-protection-script-fci.md"
+  ],
+  "ed5eca0bd1cbfa4b7d6427beb5f4446af7a64204": [
+    "Azure-RMSDocs\\deploy-use\\configure-servers-for-the-rms-connector.md"
+  ],
+  "f1e578e457d185315cde315e9c538edc4ff6e2a1": [
+    "Azure-RMSDocs\\deploy-use\\install-and-configure-the-rms-connector.md"
   ]
 }

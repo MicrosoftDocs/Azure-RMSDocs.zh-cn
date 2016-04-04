@@ -1,26 +1,27 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 8
+ Total Files | 9
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\Develop\deploying-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/deploying-your-application.md) | HandedOffSuccess | [Details](#f54c583e034a8b78df6907e64eba4cdc8f43935963)
- [Azure-RMSDocs\Develop\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/get-started.md) | HandedOffSuccess | [Details](#80b2d4e39aa66cdf260d67982b813fe15df6378670)
- [Azure-RMSDocs\Develop\how-to-enable-email-notification.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/how-to-enable-email-notification.md) | HandedOffSuccess | [Details](#fe9f03b574955852914e88eb26a8948d5fc71bf575)
- [Azure-RMSDocs\Develop\linux-c-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/linux-c-code-examples.md) | HandedOffSuccess | [Details](#4f64a028e48e835bf48da5eba5184f4210747d0786)
- [Azure-RMSDocs\Develop\obtaining-a-production-license.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/obtaining-a-production-license.md) | HandedOffSuccess | [Details](#cf940f9d779230c8f6d86b3a025d7e08453fe85089)
- [Azure-RMSDocs\Develop\release-notes-rtm.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/release-notes-rtm.md) | HandedOffSuccess | [Details](#cf5e6fdd007419347aac123e8aef209ae56cc11191)
- [Azure-RMSDocs\Develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/TOC.md) | HandedOffSuccess | [Details](#d1a1918f5e74c01d1891776c77ddbc66dcc13721103)
- [Azure-RMSDocs\Develop\working-with-encryption.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/working-with-encryption.md) | HandedOffSuccess | [Details](#b5707cb353214cb6dbdcf02cb2091edc045ee758110)
+ [Azure-RMSDocs\deploy-use\configure-servers-for-the-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/deploy-use/configure-servers-for-the-rms-connector.md) | HandedOffSuccess | [Details](#ed5eca0bd1cbfa4b7d6427beb5f4446af7a6420418)
+ [Azure-RMSDocs\deploy-use\deploying-the-azure-rights-management-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/deploy-use/deploying-the-azure-rights-management-connector.md) | HandedOffSuccess | [Details](#3faac068e6ffd20e5229ecefe9383759dd79044823)
+ [Azure-RMSDocs\deploy-use\install-and-configure-the-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/deploy-use/install-and-configure-the-rms-connector.md) | HandedOffSuccess | [Details](#f1e578e457d185315cde315e9c538edc4ff6e2a129)
+ [Azure-RMSDocs\deploy-use\office-2016-2013-configure-for-clients.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/deploy-use/office-2016-2013-configure-for-clients.md) | HandedOffSuccess | [Details](#f9eefaeb9a356e02893d5abb2d354c1740ed239631)
+ [Azure-RMSDocs\deploy-use\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/deploy-use/TOC.md) | HandedOffSuccess | [Details](#14ec61ca4008923ce18dcdb4bfe0c4714a39fa6e40)
+ [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md) | HandedOffSuccess | [Details](#f091edb6a0c1c4128813026c6193945e8f9ebf12304)
+ [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md) | HandedOffSuccess | [Details](#17b2854df54d530a1dc405f54a13349ab17dda91305)
+ [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.md) | HandedOffSuccess | [Details](#42fb027d25f4d5d032835024a1a836693acaedaa306)
+ [Azure-RMSDocs\plan-design\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/plan-design/TOC.md) | HandedOffSuccess | [Details](#909725ce4e105fb769e992591234fbef7b28c2b2311)
 
 ## Item Details
-##### <a name='f54c583e034a8b78df6907e64eba4cdc8f43935963'></a> Source: [Azure-RMSDocs\Develop\deploying-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/deploying-your-application.md)
+##### <a name='ed5eca0bd1cbfa4b7d6427beb5f4446af7a6420418'></a> Source: [Azure-RMSDocs\deploy-use\configure-servers-for-the-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/deploy-use/configure-servers-for-the-rms-connector.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [deploying-your-application.92c6e748a0187cc3709efdc640f2c9d2ebaea559.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/0f98e78b198f4e960dc9ac2fe450fedf18d8b652/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/deploying-your-application.92c6e748a0187cc3709efdc640f2c9d2ebaea559.zh-cn.xlf)
-* Handoff Datetime: 2016-04-01 22:52:16
+* Handoff File: [configure-servers-for-the-rms-connector.452b535cc01d6ea61aa2e5294d5c1601b94010e8.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c4ad0a3bf0eef22040c9143fd88b0d5d6ab0bc1b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/configure-servers-for-the-rms-connector.452b535cc01d6ea61aa2e5294d5c1601b94010e8.zh-cn.xlf)
+* Handoff Datetime: 2016-04-04 16:51:55
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -28,11 +29,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='80b2d4e39aa66cdf260d67982b813fe15df6378670'></a> Source: [Azure-RMSDocs\Develop\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/get-started.md)
+##### <a name='3faac068e6ffd20e5229ecefe9383759dd79044823'></a> Source: [Azure-RMSDocs\deploy-use\deploying-the-azure-rights-management-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/deploy-use/deploying-the-azure-rights-management-connector.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [get-started.68cea90b8984c4cd3c3ba5c45006958e7d526144.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/0f98e78b198f4e960dc9ac2fe450fedf18d8b652/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/get-started.68cea90b8984c4cd3c3ba5c45006958e7d526144.zh-cn.xlf)
-* Handoff Datetime: 2016-04-01 22:52:16
+* Handoff File: [deploying-the-azure-rights-management-connector.d4823171e1e72087ed85eef0ba894ce714962319.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c4ad0a3bf0eef22040c9143fd88b0d5d6ab0bc1b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/deploying-the-azure-rights-management-connector.d4823171e1e72087ed85eef0ba894ce714962319.zh-cn.xlf)
+* Handoff Datetime: 2016-04-04 16:51:55
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -40,11 +41,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='fe9f03b574955852914e88eb26a8948d5fc71bf575'></a> Source: [Azure-RMSDocs\Develop\how-to-enable-email-notification.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/how-to-enable-email-notification.md)
+##### <a name='f1e578e457d185315cde315e9c538edc4ff6e2a129'></a> Source: [Azure-RMSDocs\deploy-use\install-and-configure-the-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/deploy-use/install-and-configure-the-rms-connector.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [how-to-enable-email-notification.7152297e323d73c469871f585e6b9860840cceb0.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/0f98e78b198f4e960dc9ac2fe450fedf18d8b652/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-to-enable-email-notification.7152297e323d73c469871f585e6b9860840cceb0.zh-cn.xlf)
-* Handoff Datetime: 2016-04-01 22:52:16
+* Handoff File: [install-and-configure-the-rms-connector.3d34aefdf032176704cfbba1ee83019cb8f98382.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c4ad0a3bf0eef22040c9143fd88b0d5d6ab0bc1b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/install-and-configure-the-rms-connector.3d34aefdf032176704cfbba1ee83019cb8f98382.zh-cn.xlf)
+* Handoff Datetime: 2016-04-04 16:51:55
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -52,11 +53,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='4f64a028e48e835bf48da5eba5184f4210747d0786'></a> Source: [Azure-RMSDocs\Develop\linux-c-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/linux-c-code-examples.md)
+##### <a name='f9eefaeb9a356e02893d5abb2d354c1740ed239631'></a> Source: [Azure-RMSDocs\deploy-use\office-2016-2013-configure-for-clients.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/deploy-use/office-2016-2013-configure-for-clients.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [linux-c-code-examples.0276de897e7d559cf8f933ff4c412849bfd09cad.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/0f98e78b198f4e960dc9ac2fe450fedf18d8b652/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/linux-c-code-examples.0276de897e7d559cf8f933ff4c412849bfd09cad.zh-cn.xlf)
-* Handoff Datetime: 2016-04-01 22:52:16
+* Handoff File: [office-2016-2013-configure-for-clients.ec485700453c0fde74cf6cecbac31d2613ed01a1.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c4ad0a3bf0eef22040c9143fd88b0d5d6ab0bc1b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/office-2016-2013-configure-for-clients.ec485700453c0fde74cf6cecbac31d2613ed01a1.zh-cn.xlf)
+* Handoff Datetime: 2016-04-04 16:51:55
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -64,11 +65,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='cf940f9d779230c8f6d86b3a025d7e08453fe85089'></a> Source: [Azure-RMSDocs\Develop\obtaining-a-production-license.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/obtaining-a-production-license.md)
+##### <a name='14ec61ca4008923ce18dcdb4bfe0c4714a39fa6e40'></a> Source: [Azure-RMSDocs\deploy-use\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/deploy-use/TOC.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [obtaining-a-production-license.93c93bf9906f2019483d34b279ed7b9e03f1c48d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/0f98e78b198f4e960dc9ac2fe450fedf18d8b652/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/obtaining-a-production-license.93c93bf9906f2019483d34b279ed7b9e03f1c48d.zh-cn.xlf)
-* Handoff Datetime: 2016-04-01 22:52:16
+* Handoff File: [TOC.15093da2c32050c16b3bc82d728b3f6546760f04.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c4ad0a3bf0eef22040c9143fd88b0d5d6ab0bc1b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.15093da2c32050c16b3bc82d728b3f6546760f04.zh-cn.xlf)
+* Handoff Datetime: 2016-04-04 16:51:55
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -76,11 +77,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='cf5e6fdd007419347aac123e8aef209ae56cc11191'></a> Source: [Azure-RMSDocs\Develop\release-notes-rtm.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/release-notes-rtm.md)
+##### <a name='f091edb6a0c1c4128813026c6193945e8f9ebf12304'></a> Source: [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [release-notes-rtm.b66191a1059236ea75aad4ed947a338667c21a93.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/0f98e78b198f4e960dc9ac2fe450fedf18d8b652/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/release-notes-rtm.b66191a1059236ea75aad4ed947a338667c21a93.zh-cn.xlf)
-* Handoff Datetime: 2016-04-01 22:52:16
+* Handoff File: [migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.2e95c8e86f1547f1709b5f79a7e0b7131b2a1289.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c4ad0a3bf0eef22040c9143fd88b0d5d6ab0bc1b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.2e95c8e86f1547f1709b5f79a7e0b7131b2a1289.zh-cn.xlf)
+* Handoff Datetime: 2016-04-04 16:51:55
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -88,11 +89,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='d1a1918f5e74c01d1891776c77ddbc66dcc13721103'></a> Source: [Azure-RMSDocs\Develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/TOC.md)
+##### <a name='17b2854df54d530a1dc405f54a13349ab17dda91305'></a> Source: [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [TOC.dc8f5ff6517ea1760b10eac3bdd70c81efa4213c.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/0f98e78b198f4e960dc9ac2fe450fedf18d8b652/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.dc8f5ff6517ea1760b10eac3bdd70c81efa4213c.zh-cn.xlf)
-* Handoff Datetime: 2016-04-01 22:52:16
+* Handoff File: [migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.b4773a727c88b7b88ff52c4accfcaaa2fadcf008.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c4ad0a3bf0eef22040c9143fd88b0d5d6ab0bc1b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.b4773a727c88b7b88ff52c4accfcaaa2fadcf008.zh-cn.xlf)
+* Handoff Datetime: 2016-04-04 16:51:55
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -100,11 +101,23 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='b5707cb353214cb6dbdcf02cb2091edc045ee758110'></a> Source: [Azure-RMSDocs\Develop\working-with-encryption.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a358614ddc650b1dcadac40ac0ea5701744b22a0/Azure-RMSDocs/Develop/working-with-encryption.md)
+##### <a name='42fb027d25f4d5d032835024a1a836693acaedaa306'></a> Source: [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [working-with-encryption.19a1e4ad085cdf7abcc261d9058a35ca702340e1.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/0f98e78b198f4e960dc9ac2fe450fedf18d8b652/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/working-with-encryption.19a1e4ad085cdf7abcc261d9058a35ca702340e1.zh-cn.xlf)
-* Handoff Datetime: 2016-04-01 22:52:16
+* Handoff File: [migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.1a73fd6a6d0939235ea896f1673da48f81801add.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c4ad0a3bf0eef22040c9143fd88b0d5d6ab0bc1b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.1a73fd6a6d0939235ea896f1673da48f81801add.zh-cn.xlf)
+* Handoff Datetime: 2016-04-04 16:51:55
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='909725ce4e105fb769e992591234fbef7b28c2b2311'></a> Source: [Azure-RMSDocs\plan-design\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/plan-design/TOC.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [TOC.dc94105a837aa695cb03b76dd02a7e6b5a8b0447.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c4ad0a3bf0eef22040c9143fd88b0d5d6ab0bc1b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.dc94105a837aa695cb03b76dd02a7e6b5a8b0447.zh-cn.xlf)
+* Handoff Datetime: 2016-04-04 16:51:55
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
