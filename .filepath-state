@@ -1187,6 +1187,9 @@
   "429684e16075c62291b3f149da68d410c44fbc2c": [
     "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key.md"
   ],
+  "98b5c3624b85500b8d77bdb3de2d78f81f0cea10": [
+    "Azure-RMSDocs\\deploy-use\\office-2016-2013-configure-for-clients.md"
+  ],
   "f9eefaeb9a356e02893d5abb2d354c1740ed2396": [
     "Azure-RMSDocs\\deploy-use\\office-2016-2013-configure-for-clients.md"
   ],
@@ -1288,6 +1291,9 @@
   ],
   "6d5f65b36016226865965f2b72d7a286a6dc6200": [
     "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md"
+  ],
+  "2cfb73d94fc1cd68096c138fb023ba8ce129fb77": [
+    "Azure-RMSDocs\\deploy-use\\configuring-applications-for-azure-rights-management.md"
   ],
   "60317d730e6ec406d9e037448d0f83b258c224bb": [
     "Azure-RMSDocs\\deploy-use\\configuring-applications-for-azure-rights-management.md"
@@ -1607,8 +1613,14 @@
   "100c0311ae5b6b81c9d34f60e892323bb637667b": [
     "Azure-RMSDocs\\rms-client\\rms-protection-script-fci.md"
   ],
+  "2ac14b7c08c8a346ee6c4fd76aa82b2f659622a8": [
+    "Azure-RMSDocs\\deploy-use\\configure-servers-for-the-rms-connector.md"
+  ],
   "ed5eca0bd1cbfa4b7d6427beb5f4446af7a64204": [
     "Azure-RMSDocs\\deploy-use\\configure-servers-for-the-rms-connector.md"
+  ],
+  "4057016f82ec6a332f0f16b9807358ec71e05b2a": [
+    "Azure-RMSDocs\\deploy-use\\install-and-configure-the-rms-connector.md"
   ],
   "f1e578e457d185315cde315e9c538edc4ff6e2a1": [
     "Azure-RMSDocs\\deploy-use\\install-and-configure-the-rms-connector.md"
