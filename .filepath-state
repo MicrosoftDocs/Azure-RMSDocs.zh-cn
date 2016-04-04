@@ -279,6 +279,9 @@
   "cc30bb9a04aba3747282a3aba9ab8d668e263c0b": [
     "Azure-RMSDocs\\media\\RMS_BYOK_onprem.png"
   ],
+  "61ce88571236a26e129e79ae8af9b3ed238459a3": [
+    "Azure-RMSDocs\\media\\RMS_BYOK_noExchange.png"
+  ],
   "585821560e111abdc47ef6167126b34c4c81cd34": [
     "Azure-RMSDocs\\media\\RMS_Logging.gif"
   ],
@@ -1220,11 +1223,17 @@
   "9f1294457da3a09edbbec5455b513899ad78c356": [
     "Azure-RMSDocs\\get-started\\rms-requirements-applications.md"
   ],
+  "472b63bb4801462a73db9f112489337448d7551f": [
+    "Azure-RMSDocs\\plan-design\\byok-pricing-and-restrictions.md"
+  ],
   "227d99a790521a677f661977e51379878f9ee169": [
     "Azure-RMSDocs\\plan-design\\byok-pricing-and-restrictions.md"
   ],
   "9e63178e26fd2f25dcafac8d2352ad7b30e0e3a6": [
     "Azure-RMSDocs\\plan-design\\byok-pricing-and-restrictions.md"
+  ],
+  "a9c7f5ef97c4de66cfdb0464f7563e7c41493a2b": [
+    "Azure-RMSDocs\\plan-design\\information-about-thales-hms-and-microsoft-additions.md"
   ],
   "3c7bfee61b5b578ef4b35a39c65166a4246bdb86": [
     "Azure-RMSDocs\\plan-design\\information-about-thales-hms-and-microsoft-additions.md"
@@ -1387,6 +1396,9 @@
   ],
   "7303dcf0c26d94d8fe6cb9dd6649f0a50abefd73": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management.md"
+  ],
+  "41aa83edfe0aa7ffc87f99dc0f1ddf48e96ecf4f": [
+    "Azure-RMSDocs\\plan-design\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
   ],
   "2027ce8a610089a278211be41d34915e40028bcc": [
     "Azure-RMSDocs\\plan-design\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
@@ -1591,6 +1603,9 @@
   ],
   "ecd09ea98fb12a3a2233c4c683b68cd04dedbe4e": [
     "Azure-RMSDocs\\get-started\\TOC.md"
+  ],
+  "74cb3431817056c2215ab286da038a5df0ea52a2": [
+    "Azure-RMSDocs\\plan-design\\TOC.md"
   ],
   "909725ce4e105fb769e992591234fbef7b28c2b2": [
     "Azure-RMSDocs\\plan-design\\TOC.md"
