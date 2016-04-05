@@ -776,14 +776,23 @@
   "7af6852cfdb2398a231ee952a3bc3b09e0c23730": [
     "Azure-RMSDocs\\Develop\\ad-rms-server.md"
   ],
+  "d6d23c21a3213c51ebeb006cb8240898c2b5c2ff": [
+    "Azure-RMSDocs\\Develop\\add-explicit-owner-rights.md"
+  ],
   "2c1de7039603de8d4618073c45fc4323fa10c594": [
     "Azure-RMSDocs\\Develop\\add-explicit-owner-rights.md"
   ],
   "b39254201a59a7b1dbfddbb7bb23fabdadc42707": [
     "Azure-RMSDocs\\Develop\\add-explicit-owner-rights.md"
   ],
+  "440557d792fcf51a64dfb65d1a4cfbd50beb3972": [
+    "Azure-RMSDocs\\Develop\\android-code.md"
+  ],
   "6ccde4fbb832ec1b3d1de4d2a5bc049429ad9352": [
     "Azure-RMSDocs\\Develop\\android-code.md"
+  ],
+  "da88139a3986797d9c2c796c42b79f8245dc3be3": [
+    "Azure-RMSDocs\\Develop\\android-sdk.md"
   ],
   "80b1d12b5662d67290bb7f41704a0a7d77c51588": [
     "Azure-RMSDocs\\Develop\\android-sdk.md"
@@ -797,11 +806,17 @@
   "e347c78dd19bdaaf10c101be58af66833c07b807": [
     "Azure-RMSDocs\\Develop\\api-reference-new.md"
   ],
+  "889c9905fcd361adf580d403a90fc74be5d79223": [
+    "Azure-RMSDocs\\Develop\\application-id.md"
+  ],
   "9ed31ac0ee7bd549bcb3e55fda239f268030c094": [
     "Azure-RMSDocs\\Develop\\application-id.md"
   ],
   "30c956fe6c6e47ea20d2c5549888f430fdd34c45": [
     "Azure-RMSDocs\\Develop\\application-types.md"
+  ],
+  "0f9cd8218d5988838847c08d5cfb582024666189": [
+    "Azure-RMSDocs\\Develop\\authentication-integration.md"
   ],
   "08ddd37fd559b712a0e65059cb4d8efc3774a583": [
     "Azure-RMSDocs\\Develop\\authentication-integration.md"
@@ -896,6 +911,9 @@
   "14265bce72ae3db11b55042cd9afa7e61eb11262": [
     "Azure-RMSDocs\\Develop\\how-to-use-document-tracking.md"
   ],
+  "aa5689904254579007528c29c0cf0e9cbca5f735": [
+    "Azure-RMSDocs\\Develop\\how-to-build-your-first-application.md"
+  ],
   "a507a2a70a7b4830bb04a0f38ee3ed7979d751e3": [
     "Azure-RMSDocs\\Develop\\how-to-build-your-first-application.md"
   ],
@@ -920,6 +938,9 @@
   "4cd1c76a0fde714592fc08fff7fcb8c536c7c41d": [
     "Azure-RMSDocs\\Develop\\how-to-set-up-your-test-environment.md"
   ],
+  "0eb9337d080193a5bd669d6cf27f96eb6029da0e": [
+    "Azure-RMSDocs\\Develop\\how-to-use-file-api-with-aadrm-cloud.md"
+  ],
   "2a77f2cbf3b3e3c9ffbbb0343151febd754eb0b8": [
     "Azure-RMSDocs\\Develop\\how-to-use-file-api-with-aadrm-cloud.md"
   ],
@@ -929,6 +950,9 @@
   "d0ba2216095e19c90771473680fe1e6fb38175e2": [
     "Azure-RMSDocs\\Develop\\how-to-use-msipc.md"
   ],
+  "3db105584cf5180d33ae40fef163f18a45998aa9": [
+    "Azure-RMSDocs\\Develop\\ios-os-x-code-examples.md"
+  ],
   "a34ce5aec946705f5bb139d3cc106b168513ff12": [
     "Azure-RMSDocs\\Develop\\ios-os-x-code-examples.md"
   ],
@@ -937,6 +961,9 @@
   ],
   "b26b360ba37bbdb9a4e3d111c780048ea07b2e84": [
     "Azure-RMSDocs\\Develop\\linux-c-api-reference.md"
+  ],
+  "1a4f5d8569f297871bb9a5f7c0efa198d7dd246a": [
+    "Azure-RMSDocs\\Develop\\linux-c-code-examples.md"
   ],
   "4f64a028e48e835bf48da5eba5184f4210747d07": [
     "Azure-RMSDocs\\Develop\\linux-c-code-examples.md"
@@ -1033,6 +1060,9 @@
   ],
   "353093ecbb64ad17534bb5f773ff6c748446e448": [
     "Azure-RMSDocs\\Develop\\TOC.md"
+  ],
+  "9edcb8a28216f187817a6223369860e09b2b257a": [
+    "Azure-RMSDocs\\Develop\\tracking-content.md"
   ],
   "50864a75313eac606a7da083c6a5a3a43493a56f": [
     "Azure-RMSDocs\\Develop\\tracking-content.md"
