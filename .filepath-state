@@ -14,6 +14,9 @@
   "53fef1c257cb48fbdb165f27d2015a5c4cf282c0": [
     "Azure-RMSDocs\\configure-onboarding-controls.md"
   ],
+  "9d2518c58a5c0adac0da7dc5904db2cc7de78598": [
+    "Azure-RMSDocs\\Develop\\developers-guide.md"
+  ],
   "6b2350f929c5a6c6f89916eb9829c4bdfdfb1817": [
     "Azure-RMSDocs\\Develop\\developers-guide.md"
   ],
@@ -733,6 +736,9 @@
   ],
   "620707852bd21467b1e0fc1bfa1621ccf5e0bc95": [
     "Azure-RMSDocs\\rms-client\\remove-protection-from-a-file-by-using-the-rights-management-sharing-application.md"
+  ],
+  "d77cb4e65adb2dd56dedacea6d19eb115d69828b": [
+    "Azure-RMSDocs\\rms-client\\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md"
   ],
   "3b93586f156f1c290266f040c47153c8b6ff55ce": [
     "Azure-RMSDocs\\rms-client\\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md"
@@ -1796,6 +1802,9 @@
   "b5476f47752d0cac1e29e73067ae5a3148cb601b": [
     "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-remove-template.md"
   ],
+  "9314a94c7b4441a6b41488e0125520aabe9ad65e": [
+    "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md"
+  ],
   "27e39e306265cdb4ba89fb1ebdf975c094944177": [
     "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md"
   ],
@@ -1895,6 +1904,9 @@
   "9b4aac1447b41bcf96be3abc1fbd68ac33688e6a": [
     "Azure-RMSDocs\\plan-design\\implementing-your-azure-rights-management-tenant-key.md"
   ],
+  "b87c24f5011c20adde4289794cb2c02bdbbfb901": [
+    "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management.md"
+  ],
   "be87cfb0d44d2febe6eb8b11c19dc01edb943e29": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management.md"
   ],
@@ -1981,6 +1993,9 @@
   ],
   "27ef3a51e7d620eb229b15984568ed4989e7b2bf": [
     "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md"
+  ],
+  "e97e3a7140f0967d2c69bd7760f56bc29acb7004": [
+    "Azure-RMSDocs\\understand-explore\\comparing-azure-rights-management-and-ad-rms.md"
   ],
   "83cb35447b563d0621679c2193001b64ea01935b": [
     "Azure-RMSDocs\\understand-explore\\comparing-azure-rights-management-and-ad-rms.md"
@@ -2119,6 +2134,9 @@
   ],
   "9b75e36ff326e7d1ef478b7ef89e32d83b3c242a": [
     "Azure-RMSDocs\\Develop\\index.md"
+  ],
+  "5050c8870609d28c35e01aa8ef83f46ead3654c1": [
+    "Azure-RMSDocs\\deploy-use\\TOC.md"
   ],
   "5435e27838ffd4955e6551cff2f59131b19ff96a": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
@@ -2309,10 +2327,28 @@
   "44107ffcadda5cc0807689a22055c09c6282b0e6": [
     "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management-0365classic.md"
   ],
+  "5d55c159b0e9c779931a512d61922f9cbdeb8ac6": [
+    "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management-azure.md"
+  ],
   "5d1713fd286204676d97ad88a9ef5f1f1199df65": [
     "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management-azure.md"
   ],
   "d98edea5e220c59dbbfc2e8406a9a96564b335ea": [
     "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management-o365preview.md"
+  ],
+  "76e5f443c9c01cd623788f8a037416045ee40ecf": [
+    "Azure-RMSDocs\\Troubleshoot\\test-configure-custom-templates-for-azure-rights-management.md"
+  ],
+  "8b9b165aa0756b5df62c5802724a06e50ef38235": [
+    "Azure-RMSDocs\\Troubleshoot\\test-configuring-usage-rights-for-azure-rights-management.md"
+  ],
+  "139bd74fa5d6d7906bdf189ea0b1f2f755ffbbb2": [
+    "Azure-RMSDocs\\Troubleshoot\\test-migrating-from-ad-rms-to-azure-rights-management.md"
+  ],
+  "f420d68c3ce9f7bc9088c662b2a2ea9a8b004fb8": [
+    "Azure-RMSDocs\\Troubleshoot\\test-planning-and-implementing-your-azure-rights-management-tenant-key.md"
+  ],
+  "467e0961a48769a3e51dc077af5859d765bf7e2c": [
+    "Azure-RMSDocs\\Troubleshoot\\test-requirements-for-azure-rights-management.md"
   ]
 }
