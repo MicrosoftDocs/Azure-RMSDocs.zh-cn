@@ -1796,6 +1796,9 @@
   "b5476f47752d0cac1e29e73067ae5a3148cb601b": [
     "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-remove-template.md"
   ],
+  "27e39e306265cdb4ba89fb1ebdf975c094944177": [
+    "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md"
+  ],
   "d8a7140fa364287995a233980324b6aa4e26c4d4": [
     "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md"
   ],
@@ -2117,6 +2120,9 @@
   "9b75e36ff326e7d1ef478b7ef89e32d83b3c242a": [
     "Azure-RMSDocs\\Develop\\index.md"
   ],
+  "5435e27838ffd4955e6551cff2f59131b19ff96a": [
+    "Azure-RMSDocs\\deploy-use\\TOC.md"
+  ],
   "14ec61ca4008923ce18dcdb4bfe0c4714a39fa6e": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
   ],
@@ -2299,5 +2305,14 @@
   ],
   "bb9136a7c7bd8fbfe9547377fdd7f5633b14cbb5": [
     "Azure-RMSDocs\\rms-client\\rights-management-sharing-application-administrator-guide-technical-overview.md"
+  ],
+  "44107ffcadda5cc0807689a22055c09c6282b0e6": [
+    "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management-0365classic.md"
+  ],
+  "5d1713fd286204676d97ad88a9ef5f1f1199df65": [
+    "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management-azure.md"
+  ],
+  "d98edea5e220c59dbbfc2e8406a9a96564b335ea": [
+    "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management-o365preview.md"
   ]
 }
