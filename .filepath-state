@@ -8,11 +8,8 @@
   "69402b3ffcb700167114529474deea4505861540": [
     "Azure-RMSDocs\\deploy-use\\0365-configure-for-clients-online-services.md"
   ],
-  "4ee4866224d67044ebda53796495b32e1f3b8dff": [
-    "Azure-RMSDocs\\configure-onboarding-controls.md"
-  ],
-  "53fef1c257cb48fbdb165f27d2015a5c4cf282c0": [
-    "Azure-RMSDocs\\configure-onboarding-controls.md"
+  "55382e084d5f3f9f4f53294060c27fc21212c295": [
+    "Azure-RMSDocs\\Develop\\developers-guide.md"
   ],
   "9d2518c58a5c0adac0da7dc5904db2cc7de78598": [
     "Azure-RMSDocs\\Develop\\developers-guide.md"
@@ -50,12 +47,6 @@
   ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\Troubleshoot\\TOC.md"
-  ],
-  "48f18b8da6e375982a75958fe14946637959ba09": [
-    "Azure-RMSDocs\\end-user-license-agreement-for-microsoft-rms-sharing-application.md"
-  ],
-  "3161417c9d360c13d67abb435a71b6c8c8d20274": [
-    "Azure-RMSDocs\\end-user-license-agreement-for-microsoft-rms-sharing-application.md"
   ],
   "e94e3c2e7da575391e1f41bfacd3cb30afa1249d": [
     "Azure-RMSDocs\\understand-explore\\full-screen-picture-a-sharepoint-protected-document.md"
@@ -348,12 +339,6 @@
   "5ba00fbdb71ba324ed3f4802d5092003b80ddc7c": [
     "Azure-RMSDocs\\media\\AzRMS_ExampleBanner.png"
   ],
-  "fe5144ba792513550af2285368049882d157d07c": [
-    "Azure-RMSDocs\\rights-in-default-templates.md"
-  ],
-  "c1c48d3833961a5c3a2688964df64c4f5e520267": [
-    "Azure-RMSDocs\\rights-in-default-templates.md"
-  ],
   "8a6a38c1dc64c0e0d81a2ab511a1c5ee57714d80": [
     "Azure-RMSDocs\\deploy-use\\rights-in-permissions-levels.md"
   ],
@@ -407,6 +392,9 @@
   ],
   "05f9ef9a3f6258fb49f39f034e84c773dad451b6": [
     "Azure-RMSDocs\\media\\AzRMSUserInstructions_ShareProtectedRibbon2013.png"
+  ],
+  "59e5739f8ba4bac0dbb4c4614b7be0aca6a6aceb": [
+    "Azure-RMSDocs\\scratch.md"
   ],
   "4e21490c409f9dfe2138ffa6eb9328fc9d3ba9b1": [
     "Azure-RMSDocs\\scratch.md"
@@ -520,12 +508,6 @@
   ],
   "58fc603c9575563353f958de172d26a49b8c1f36": [
     "Azure-RMSDocs\\rms-client\\use-keyboard-shortcuts-in-the-rights-management-sharing-application.md"
-  ],
-  "2f37a760bf7df06ec506e67012bb248cabf05286": [
-    "Azure-RMSDocs\\using-azure-rights-management.md"
-  ],
-  "cc44051dc720268abddc8d6e335521c9c4df889b": [
-    "Azure-RMSDocs\\using-azure-rights-management.md"
   ],
   "6bbb0d50bf03ad546b7dcdb93056e6baff055654": [
     "Azure-RMSDocs\\media\\AzRMS_StoryboardActivate_small1.png"
@@ -725,6 +707,9 @@
   "0b2d531d25cc695c77f994b28e129fafb87c7d9f": [
     "Azure-RMSDocs\\understand-explore\\how-applications-support-azure-rights-management.md"
   ],
+  "c5e4e4bd344024ca773bffed12b0b0be463ec17c": [
+    "Azure-RMSDocs\\understand-explore\\what-is-azure-rights-management.md"
+  ],
   "e81c80d2f89359de9a59835a2431e67b387e21a9": [
     "Azure-RMSDocs\\understand-explore\\what-is-azure-rights-management.md"
   ],
@@ -754,6 +739,9 @@
   ],
   "c8f47ac57697487fcf0810d23c1091071907e7b9": [
     "Azure-RMSDocs\\Administer\\TOC.md"
+  ],
+  "30e2473239f0beb015ef024c1fa11212746d1418": [
+    "Azure-RMSDocs\\rms-client\\TOC.md"
   ],
   "cd480ffd0a25741a2e50939143f0cfd151cc2bbd": [
     "Azure-RMSDocs\\rms-client\\TOC.md"
@@ -1466,6 +1454,9 @@
   "1e6454c4579ac1a54a4a107b0acb8e3a18d37ad7": [
     "Azure-RMSDocs\\Develop\\terms.md"
   ],
+  "f5b5639bef908cbefec452e3997f48ced3485b00": [
+    "Azure-RMSDocs\\Develop\\TOC.md"
+  ],
   "d1a1918f5e74c01d1891776c77ddbc66dcc13721": [
     "Azure-RMSDocs\\Develop\\TOC.md"
   ],
@@ -1690,6 +1681,9 @@
   ],
   "a2dc276963910e4032d4aac74f0add632dea5428": [
     "Azure-RMSDocs\\get-started\\requirements-for-azure-rights-management.md"
+  ],
+  "b531a448d5b3869fdb5d62ea8a022f168e566cac": [
+    "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key.md"
   ],
   "6bd0a5734d61785ff5ba41a63b018b59a2183576": [
     "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key.md"
@@ -2039,11 +2033,17 @@
   "3780031274a19d724a83737fe09b07498c0e34d4": [
     "Azure-RMSDocs\\understand-explore\\sharing-application-for-windows-and-mobile-platforms.md"
   ],
+  "6e105df4bfa174f92db1378006b1295a395c918b": [
+    "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
+  ],
   "d1033c5826ffefb5c8b50a66122b1487972beefd": [
     "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
   ],
   "35651257d73388c5d4913ff9180202e9c912c4bc": [
     "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
+  ],
+  "7c3ab0def58e9feecf73a7440d576bb7cbb761db": [
+    "Azure-RMSDocs\\deploy-use\\configuring-usage-rights-for-azure-rights-management.md"
   ],
   "85319e31248dfa124913c5507740e3783621f7a5": [
     "Azure-RMSDocs\\deploy-use\\configuring-usage-rights-for-azure-rights-management.md"
@@ -2135,6 +2135,9 @@
   "9b75e36ff326e7d1ef478b7ef89e32d83b3c242a": [
     "Azure-RMSDocs\\Develop\\index.md"
   ],
+  "6df54c4ddcbcf98d4cde4571f2bc70a3dea89b27": [
+    "Azure-RMSDocs\\deploy-use\\TOC.md"
+  ],
   "a77cfc07cadb382cf6856b343c90f1d0158081a8": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
   ],
@@ -2156,11 +2159,17 @@
   "3150812bd62969dc5e565f83cfd92b37847fc628": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
   ],
+  "e6d6601ad0c37bc95dcf21c174d50be127f31a7f": [
+    "Azure-RMSDocs\\get-started\\TOC.md"
+  ],
   "e4bf1d0449bccee1878edd69d3b4f72ca3b149f7": [
     "Azure-RMSDocs\\get-started\\TOC.md"
   ],
   "ecd09ea98fb12a3a2233c4c683b68cd04dedbe4e": [
     "Azure-RMSDocs\\get-started\\TOC.md"
+  ],
+  "91efdfc3daf1aaf752820ec19c78a259e074ebd0": [
+    "Azure-RMSDocs\\plan-design\\TOC.md"
   ],
   "cba5dc86b3ffccc99c80e3d651d83d8303fa4d5f": [
     "Azure-RMSDocs\\plan-design\\TOC.md"
@@ -2182,6 +2191,9 @@
   ],
   "cc56195b2f3b6a0031c5705619baecdf74c4e272": [
     "Azure-RMSDocs\\plan-design\\TOC.md"
+  ],
+  "a0d7ccea22c426ed850e59047f323a2fd9111140": [
+    "Azure-RMSDocs\\understand-explore\\TOC.md"
   ],
   "8624eed638424ee8cb9b75e00c4f44f456cb4bd7": [
     "Azure-RMSDocs\\understand-explore\\TOC.md"
