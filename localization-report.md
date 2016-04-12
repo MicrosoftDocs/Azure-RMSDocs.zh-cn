@@ -5,13 +5,13 @@
  -------- | ----- 
  Total Files | 422
 [ Handoff Failed Files ](#handoff-failed-list)| 0
-[ Handoff Success Files ](#handoff-success-list)| 373
+[ Handoff Success Files ](#handoff-success-list)| 308
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 49
+[ Ignored Files ](#ignored-list)| 114
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
@@ -25,14 +25,12 @@
  [Azure-RMSDocs\deploy-use\activating-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/activating-azure-rights-management.md) | HandedOffSuccess | [Details](#202a26d4e33dc98b93b0fec52ff3097fd573ff5013)
  [Azure-RMSDocs\deploy-use\activating-azure-rights-management-0365classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c065d07c5286f5b5c81ba356bbb3bec1994172e0/Azure-RMSDocs/deploy-use/activating-azure-rights-management-0365classic.md) | HandedOffSuccess | [Details](#44107ffcadda5cc0807689a22055c09c6282b0e610)
  [Azure-RMSDocs\deploy-use\activating-azure-rights-management-azure.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/8a6d51bca06b6fe0a0f663d409c9474ff48eaf9f/Azure-RMSDocs/deploy-use/activating-azure-rights-management-azure.md) | HandedOffSuccess | [Details](#5d55c159b0e9c779931a512d61922f9cbdeb8ac611)
- [Azure-RMSDocs\deploy-use\activating-azure-rights-management-o365preview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c065d07c5286f5b5c81ba356bbb3bec1994172e0/Azure-RMSDocs/deploy-use/activating-azure-rights-management-o365preview.md) | HandedOffSuccess | [Details](#d98edea5e220c59dbbfc2e8406a9a96564b335ea12)
  [Azure-RMSDocs\deploy-use\configure-custom-templates-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/271cf5447ac8534ff3d3a8b0a55b3ff2bd843aa8/Azure-RMSDocs/deploy-use/configure-custom-templates-for-azure-rights-management.md) | HandedOffSuccess | [Details](#1881f6c75c341e5556df757e889a557ab1e8e1ee19)
  [Azure-RMSDocs\deploy-use\configure-custom-templates-for-azure-rights-management-copy-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6c8f7b005d5d1dfba4b101fcb0dc7893bcf83da5/Azure-RMSDocs/deploy-use/configure-custom-templates-for-azure-rights-management-copy-template.md) | HandedOffSuccess | [Details](#3deba7ec9d594f3345dcd02253c6bdfe2217d45814)
  [Azure-RMSDocs\deploy-use\configure-custom-templates-for-azure-rights-management-create-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/configure-custom-templates-for-azure-rights-management-create-template.md) | HandedOffSuccess | [Details](#8e851f62c0e8413829366d6759fd53c70d31621e15)
  [Azure-RMSDocs\deploy-use\configure-custom-templates-for-azure-rights-management-powershell.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/configure-custom-templates-for-azure-rights-management-powershell.md) | HandedOffSuccess | [Details](#c90319a4a149c7712e001f4b2182a131847b1a8e16)
  [Azure-RMSDocs\deploy-use\configure-custom-templates-for-azure-rights-management-refresh-templates.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/configure-custom-templates-for-azure-rights-management-refresh-templates.md) | HandedOffSuccess | [Details](#b0f11800d9545c61ad29ecd5ae2de8c5a9e8fb9e17)
  [Azure-RMSDocs\deploy-use\configure-custom-templates-for-azure-rights-management-remove-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/configure-custom-templates-for-azure-rights-management-remove-template.md) | HandedOffSuccess | [Details](#8a4b0099a46ea4c7c2a30c48ae2f724a6ce0710718)
- [Azure-RMSDocs\deploy-use\configure-servers-for-the-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/07cc73b4a41616e544061946a3c12cb9111124a1/Azure-RMSDocs/deploy-use/configure-servers-for-the-rms-connector.md) | HandedOffSuccess | [Details](#2ac14b7c08c8a346ee6c4fd76aa82b2f659622a820)
  [Azure-RMSDocs\deploy-use\configuring-applications-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/07cc73b4a41616e544061946a3c12cb9111124a1/Azure-RMSDocs/deploy-use/configuring-applications-for-azure-rights-management.md) | HandedOffSuccess | [Details](#2cfb73d94fc1cd68096c138fb023ba8ce129fb7721)
  [Azure-RMSDocs\deploy-use\configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery.md) | HandedOffSuccess | [Details](#8078d948a1456c9b6302c4f21536e7cbf6dac1bd22)
  [Azure-RMSDocs\deploy-use\configuring-usage-rights-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/configuring-usage-rights-for-azure-rights-management.md) | HandedOffSuccess | [Details](#88e5b2b8bfd32ec0f8c8ee5a076a281b63b2629a23)
@@ -42,11 +40,9 @@
  [Azure-RMSDocs\deploy-use\how-to-access-usage-logs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/how-to-access-usage-logs.md) | HandedOffSuccess | [Details](#ddb9ef5f1a071e06bf4db3c6063c78ee94eecb4128)
  [Azure-RMSDocs\deploy-use\how-to-enable-logging.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/how-to-enable-logging.md) | HandedOffSuccess | [Details](#097d329b408575f17a37c0ba0965a58ccbb1200629)
  [Azure-RMSDocs\deploy-use\how-to-interpret-usage-logs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/how-to-interpret-usage-logs.md) | HandedOffSuccess | [Details](#987270ddc0fc0c1f9b7037f15307ef1fa15e66b630)
- [Azure-RMSDocs\deploy-use\install-and-configure-the-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/07cc73b4a41616e544061946a3c12cb9111124a1/Azure-RMSDocs/deploy-use/install-and-configure-the-rms-connector.md) | HandedOffSuccess | [Details](#4057016f82ec6a332f0f16b9807358ec71e05b2a31)
  [Azure-RMSDocs\deploy-use\logging-and-analyzing-azure-rights-management-usage.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/271cf5447ac8534ff3d3a8b0a55b3ff2bd843aa8/Azure-RMSDocs/deploy-use/logging-and-analyzing-azure-rights-management-usage.md) | HandedOffSuccess | [Details](#83f50ba42cad0f9bf076d4a427cb288bc79fb2d632)
  [Azure-RMSDocs\DeployUse\media\150x150.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/fc1e8c0b2adae9f08127c4fcfc7fa6b34b4e322c/Azure-RMSDocs/DeployUse/media/150x150.png) | HandedOffSuccess | [Details](#84421bf7f4ba657e685239fb27f4798a46485f7146)
  [Azure-RMSDocs\deploy-use\office-2016-2013-configure-for-clients.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/07cc73b4a41616e544061946a3c12cb9111124a1/Azure-RMSDocs/deploy-use/office-2016-2013-configure-for-clients.md) | HandedOffSuccess | [Details](#98b5c3624b85500b8d77bdb3de2d78f81f0cea1033)
- [Azure-RMSDocs\deploy-use\operations-for-your-azure-rights-management-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/operations-for-your-azure-rights-management-tenant-key.md) | HandedOffSuccess | [Details](#9d99c32bc0cb13b32ef31fef774b65de62a81aa336)
  [Azure-RMSDocs\deploy-use\operations-for-your-azure-rights-management-tenant-key-customer-managed.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/operations-for-your-azure-rights-management-tenant-key-customer-managed.md) | HandedOffSuccess | [Details](#6953bbeed6ba6f85070b11e617e1e4217647b31034)
  [Azure-RMSDocs\deploy-use\operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/operations-for-your-azure-rights-management-tenant-key-microsoft-managed.md) | HandedOffSuccess | [Details](#2b695eee60f55614600c6fee5a377c989468967135)
  [Azure-RMSDocs\deploy-use\registry-settings-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/registry-settings-rms-connector.md) | HandedOffSuccess | [Details](#d894fdb68f4133ae54e143408e7d6a23dc851aa037)
@@ -54,67 +50,9 @@
  [Azure-RMSDocs\deploy-use\Sample.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/Sample.md) | HandedOffSuccess | [Details](#80f16e5851e574014594e4d93ba194beb2cc965339)
  [Azure-RMSDocs\deploy-use\scripting-options-for-superusers.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/scripting-options-for-superusers.md) | HandedOffSuccess | [Details](#13c62e632d2f1d63dde4c5a327f64ddab87eccc340)
  [Azure-RMSDocs\deploy-use\sharing-app-install-configure.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/deploy-use/sharing-app-install-configure.md) | HandedOffSuccess | [Details](#444262a94df17148aa96f04e05428c558ead697041)
- [Azure-RMSDocs\deploy-use\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/TOC.md) | HandedOffSuccess | [Details](#65608704b80d962628b2927912ab6f96c1126f8f42)
  [Azure-RMSDocs\deploy-use\usage-rights-descriptions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/usage-rights-descriptions.md) | HandedOffSuccess | [Details](#6080f18e672493095084b1a82088419d394a8c6743)
  [Azure-RMSDocs\deploy-use\verifying-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/verifying-azure-rights-management.md) | HandedOffSuccess | [Details](#bc687b9881896fa647f9e406a5a39cc416eb365044)
- [Azure-RMSDocs\Develop\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | HandedOffSuccess | [Details](#83b6b7843c10c91b03abe58686ad808ab742f6c347)
- [Azure-RMSDocs\Develop\add-explicit-owner-rights.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/add-explicit-owner-rights.md) | HandedOffSuccess | [Details](#0e428eeed980eaa77c335142909d8514839fa78652)
- [Azure-RMSDocs\Develop\ad-rms-client.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/ad-rms-client.md) | HandedOffSuccess | [Details](#0002db6b5914c2f274fa1a5b703fdbe4e7af419648)
- [Azure-RMSDocs\Develop\ad-rms-concepts-nav.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/ad-rms-concepts-nav.md) | HandedOffSuccess | [Details](#9704116b043294f04558d4f88b4ad30307b5baca49)
- [Azure-RMSDocs\Develop\ad-rms-overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/ad-rms-overview.md) | HandedOffSuccess | [Details](#0631c1b471c9aaa498bfa809fb1470ce55cedc4e50)
- [Azure-RMSDocs\Develop\ad-rms-server.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/ad-rms-server.md) | HandedOffSuccess | [Details](#d555db9e97519d60690e1f53d4c731179f0411cc51)
- [Azure-RMSDocs\Develop\android-code.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/android-code.md) | HandedOffSuccess | [Details](#fbac306485ae95ef84a29faa398bb182ba10121c53)
- [Azure-RMSDocs\Develop\android-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/android-sdk.md) | HandedOffSuccess | [Details](#9c777394a1589326685edc6fa2ae2ae646fe978554)
- [Azure-RMSDocs\Develop\api-reference-new.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/api-reference-new.md) | HandedOffSuccess | [Details](#ccd1e319d2f7705fd73772a8f744175200f334ed55)
- [Azure-RMSDocs\Develop\application-id.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/application-id.md) | HandedOffSuccess | [Details](#315247236e2061b0e8e2a3b3f26cec31f48fbb9556)
- [Azure-RMSDocs\Develop\application-types.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/application-types.md) | HandedOffSuccess | [Details](#b4d15ca41c0a4d90211cca44ad0b7d017dbdce3c57)
- [Azure-RMSDocs\Develop\authentication-integration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/authentication-integration.md) | HandedOffSuccess | [Details](#ed2f64e8e0eb54f74dada5eac6a72e10776ead7e58)
- [Azure-RMSDocs\Develop\built-in-rights-usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/built-in-rights-usage-restriction-reference.md) | HandedOffSuccess | [Details](#986e229574d9ad348e7780842ce4a0d7ad93e10d59)
- [Azure-RMSDocs\Develop\code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/code-examples.md) | HandedOffSuccess | [Details](#c4d1342dc8f021756561a725c65c550b7a80954960)
- [Azure-RMSDocs\Develop\common-error-conditions-and-solutions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/common-error-conditions-and-solutions.md) | HandedOffSuccess | [Details](#ba5f7e83dfeff264fe3b0a26931014d20773349e61)
- [Azure-RMSDocs\Develop\community-resources.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/community-resources.md) | HandedOffSuccess | [Details](#139f90d7258f6a3b5b7566725819da38ad16ea1d62)
- [Azure-RMSDocs\Develop\core-concepts.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/core-concepts.md) | HandedOffSuccess | [Details](#73d68df47cbeec97845a0a522f9807cd2210121863)
- [Azure-RMSDocs\Develop\create-your-first-rights-aware-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/create-your-first-rights-aware-application.md) | HandedOffSuccess | [Details](#21031ad6eaad8605722f72e1d74374e4e84db4a864)
- [Azure-RMSDocs\Develop\debugging-applications-that-use-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/debugging-applications-that-use-ad-rms.md) | HandedOffSuccess | [Details](#e76aa461df4e413b0f41dcfc124b9eeb5eb0f7ce65)
- [Azure-RMSDocs\Develop\deploying-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/deploying-your-application.md) | HandedOffSuccess | [Details](#ec94e5e2d27eccd849247e0b593ddf8e1db9372b66)
- [Azure-RMSDocs\Develop\developer-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/developer-notes.md) | HandedOffSuccess | [Details](#4cf4a64a8f226287d94931527fdf4e5224a56cbe67)
- [Azure-RMSDocs\Develop\developers-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad64e4e5b0ba2d56273d5206b438bb57b9dad55/Azure-RMSDocs/Develop/developers-guide.md) | HandedOffSuccess | [Details](#55382e084d5f3f9f4f53294060c27fc21212c29568)
- [Azure-RMSDocs\Develop\differences-between-ad-rms-and-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/differences-between-ad-rms-and-ad-rms-2-0.md) | HandedOffSuccess | [Details](#701211e7d3368c76a028dd1f3fdd327f9a690dfd69)
- [Azure-RMSDocs\Develop\enabling-logging.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/enabling-logging.md) | HandedOffSuccess | [Details](#7835bae5297b1ea942f778eb79e1c2f05188363371)
- [Azure-RMSDocs\Develop\file-api-configuration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/file-api-configuration.md) | HandedOffSuccess | [Details](#f8d5f7612ead20f11fef031fdc236aaf5b66fb3c72)
- [Azure-RMSDocs\Develop\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/get-started.md) | HandedOffSuccess | [Details](#cc8859049d05a85829ffe3ac0259c6fdbf1f8b9673)
- [Azure-RMSDocs\Develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/getting-started-with-ad-rms-2-0.md) | HandedOffSuccess | [Details](#ef1db4a58bd28d03f15006deab4723263d7c491074)
- [Azure-RMSDocs\Develop\how-to-build-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-build-your-first-application.md) | HandedOffSuccess | [Details](#a967f5647151dcbeea316cc0790b52d0a06aa95775)
- [Azure-RMSDocs\Develop\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | HandedOffSuccess | [Details](#1205d8bbdd52801068a89e0e19251f342a064c3576)
- [Azure-RMSDocs\Develop\how-to-configure-the-ad-rms-client-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-configure-the-ad-rms-client-2-0.md) | HandedOffSuccess | [Details](#04dd9c9510a03e49239655f437f5950ae1afcb5477)
- [Azure-RMSDocs\Develop\how-to-enable-email-notification.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-enable-email-notification.md) | HandedOffSuccess | [Details](#ccba064bba1cf704b488cf139e9ae24c73c51e8a78)
- [Azure-RMSDocs\Develop\how-to-install-and-configure-an-rms-server.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-install-and-configure-an-rms-server.md) | HandedOffSuccess | [Details](#6b98cf955b2a2f3d16c43b338067b15463864ce879)
- [Azure-RMSDocs\Develop\how-to-set-up-the-pre-production-development-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-set-up-the-pre-production-development-environment.md) | HandedOffSuccess | [Details](#ddce7b45c3504951c4d2436e8833cff07cba9f2280)
- [Azure-RMSDocs\Develop\how-to-set-up-your-test-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-set-up-your-test-environment.md) | HandedOffSuccess | [Details](#0674af9f9bbb883845f534d3a7dad701214026f681)
- [Azure-RMSDocs\Develop\how-to-use-document-tracking.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-use-document-tracking.md) | HandedOffSuccess | [Details](#9b2b4a2c1e57702117a3e35b9653ebbb154749c482)
- [Azure-RMSDocs\Develop\how-to-use-file-api-with-aadrm-cloud.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-use-file-api-with-aadrm-cloud.md) | HandedOffSuccess | [Details](#86b48a55a7ef74e17712ecfb3e20e5d57ebda38883)
- [Azure-RMSDocs\Develop\how-to-use-msipc.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-use-msipc.md) | HandedOffSuccess | [Details](#1dd27bd087042dff136e9c6fe732bb595a8a1a6684)
- [Azure-RMSDocs\Develop\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/index.md) | HandedOffSuccess | [Details](#4bb9fa4c928f4141abe37a37b11d9b6efce4961c85)
- [Azure-RMSDocs\Develop\ios-os-x-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/ios-os-x-code-examples.md) | HandedOffSuccess | [Details](#89cd80e284013ca63cb5afaaf6db16fc0a8c067286)
- [Azure-RMSDocs\Develop\ios-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/ios-sdk.md) | HandedOffSuccess | [Details](#8a3b89e0212ae7e82224b223405e1cd01acdc29e87)
- [Azure-RMSDocs\Develop\linux-c-api-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/linux-c-api-reference.md) | HandedOffSuccess | [Details](#abdca0b748924aed7e1a1a3c9258977a2c67868788)
- [Azure-RMSDocs\Develop\linux-c-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/linux-c-code-examples.md) | HandedOffSuccess | [Details](#5c042c42fd9f4a6a5a61515b1cae310dc86851fe89)
- [Azure-RMSDocs\Develop\linux-setup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/linux-setup.md) | HandedOffSuccess | [Details](#8a9d039441afab5682730147ed9d2a2744d9004690)
- [Azure-RMSDocs\Develop\microsoft-information-protection-and-control-client-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/microsoft-information-protection-and-control-client-portal.md) | HandedOffSuccess | [Details](#0f37b483a076e8b00745248eab5e53d2f3cd486d91)
- [Azure-RMSDocs\Develop\obtaining-a-production-license.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/obtaining-a-production-license.md) | HandedOffSuccess | [Details](#2dea874c65f42c3bcf1d9cb61167ded81ea11efa92)
- [Azure-RMSDocs\Develop\overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/overview.md) | HandedOffSuccess | [Details](#a7fd2bfcb9f688282f626f1e6fc8801fdb275fe693)
- [Azure-RMSDocs\Develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/release-notes.md) | HandedOffSuccess | [Details](#1c551dce90598ecc66697d4a473c2ac9ebc7e35f95)
  [Azure-RMSDocs\Develop\release-notes-rtm.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/release-notes-rtm.md) | HandedOffSuccess | [Details](#3447ab4fcdf560acb37dc64ad5cfe18fbbb21e0894)
- [Azure-RMSDocs\Develop\running-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/running-your-first-application.md) | HandedOffSuccess | [Details](#741366c6d4dfc8700f31348722a1453d7a8d62b596)
- [Azure-RMSDocs\Develop\samples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/samples.md) | HandedOffSuccess | [Details](#35955d768051d2a6aa79b196c55c3b72cdfc7a6e97)
- [Azure-RMSDocs\Develop\sdk-elements.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/sdk-elements.md) | HandedOffSuccess | [Details](#9ddc1d51c9da60a417ced14377a769eb7e48723998)
- [Azure-RMSDocs\Develop\setting-the-api-security-mode-api-mode.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/setting-the-api-security-mode-api-mode.md) | HandedOffSuccess | [Details](#57f09c29116e6e9f84c64b2c6ca525066334a2d299)
- [Azure-RMSDocs\Develop\setup-developer-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/setup-developer-environment.md) | HandedOffSuccess | [Details](#41d87c0d7d822b9364542f99ebf89ddadb8d20af100)
- [Azure-RMSDocs\Develop\signing-your-application-for-production.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/signing-your-application-for-production.md) | HandedOffSuccess | [Details](#eae2b417fb940dcc6d5118401efccd281850c7cd101)
- [Azure-RMSDocs\Develop\supported-file-formats.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/supported-file-formats.md) | HandedOffSuccess | [Details](#f627789aeca0d61d71cc78a04cb5bdce1a5c08f6102)
- [Azure-RMSDocs\Develop\supported-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/supported-platforms.md) | HandedOffSuccess | [Details](#94f00409b56954a3cd26321bb62caccb00a90daa103)
- [Azure-RMSDocs\Develop\switching-to-the-production-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/switching-to-the-production-environment.md) | HandedOffSuccess | [Details](#a3f7aab00a95a44bdea5b012d9c431f7cd31d97a104)
- [Azure-RMSDocs\Develop\terms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/terms.md) | HandedOffSuccess | [Details](#ca18cbdb9ec377dc8d9c924c888ae0d6f4c7adb0105)
  [Azure-RMSDocs\Develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad64e4e5b0ba2d56273d5206b438bb57b9dad55/Azure-RMSDocs/Develop/TOC.md) | HandedOffSuccess | [Details](#f5b5639bef908cbefec452e3997f48ced3485b00106)
  [Azure-RMSDocs\Develop\tracking-content.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/tracking-content.md) | HandedOffSuccess | [Details](#f7688ef22dee2e8ed6fd530090ff8af8fef4fe8b107)
  [Azure-RMSDocs\Develop\understanding-certificate-chains.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/understanding-certificate-chains.md) | HandedOffSuccess | [Details](#a74934e14e9b2eb1f2bc41440696df80871ddf48108)
@@ -150,7 +88,6 @@
  [Azure-RMSDocs\get-started\scenario-send-a-company-confidential-email.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/get-started/scenario-send-a-company-confidential-email.md) | HandedOffSuccess | [Details](#45b492f3f1f1601acfd83422aadfb03143031182138)
  [Azure-RMSDocs\get-started\scenario-share-an-office-file-with-users-in-another-organization.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e9bbc2e098f3d58648bb4b91aee54f85da447e/Azure-RMSDocs/get-started/scenario-share-an-office-file-with-users-in-another-organization.md) | HandedOffSuccess | [Details](#73c171c3a10b1b232d5154763393b9b25cd91373139)
  [Azure-RMSDocs\get-started\terminology-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/get-started/terminology-for-azure-rights-management.md) | HandedOffSuccess | [Details](#e5fd917c568b4e4de4398ab71bacb85db8dedb6e140)
- [Azure-RMSDocs\get-started\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad64e4e5b0ba2d56273d5206b438bb57b9dad55/Azure-RMSDocs/get-started/TOC.md) | HandedOffSuccess | [Details](#e6d6601ad0c37bc95dcf21c174d50be127f31a7f141)
  [Azure-RMSDocs\includes\aad_rightsmanagement_1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/Azure-RMSDocs/includes/aad_rightsmanagement_1.md) | HandedOffSuccess | [Details](#b85f28c40671680cc9f791d8cf8e3a1befd7a8b2143)
  [Azure-RMSDocs\includes\aad_rightsmanagement_1_md.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/Azure-RMSDocs/includes/aad_rightsmanagement_1_md.md) | HandedOffSuccess | [Details](#e71797b76cc654574abd164dca33c7bcb13da916144)
  [Azure-RMSDocs\includes\aad_rightsmanagement_2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/Azure-RMSDocs/includes/aad_rightsmanagement_2.md) | HandedOffSuccess | [Details](#7eb63fc4302ac8cb0c65a7a6c88c78a59d9b589d145)
@@ -322,7 +259,6 @@
  [Azure-RMSDocs\plan-design\planning-and-implementing-your-azure-rights-management-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/plan-design/planning-and-implementing-your-azure-rights-management-tenant-key.md) | HandedOffSuccess | [Details](#6f2d852bd290cda7988c27351025c4c6fcf1fc88344)
  [Azure-RMSDocs\plan-design\preparing-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/271cf5447ac8534ff3d3a8b0a55b3ff2bd843aa8/Azure-RMSDocs/plan-design/preparing-for-azure-rights-management.md) | HandedOffSuccess | [Details](#556c0991abb794ab9cede989b4b23aea01a097f7345)
  [Azure-RMSDocs\plan-design\Sample.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/plan-design/Sample.md) | HandedOffSuccess | [Details](#80f16e5851e574014594e4d93ba194beb2cc9653346)
- [Azure-RMSDocs\plan-design\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad64e4e5b0ba2d56273d5206b438bb57b9dad55/Azure-RMSDocs/plan-design/TOC.md) | HandedOffSuccess | [Details](#91efdfc3daf1aaf752820ec19c78a259e074ebd0347)
  [Azure-RMSDocs\rms-client\dialog-box-options-for-the-rights-management-sharing-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/rms-client/dialog-box-options-for-the-rights-management-sharing-application.md) | HandedOffSuccess | [Details](#36ccbccb9fd8727b8ec8d1b98bfc5ab60b334298350)
  [Azure-RMSDocs\rms-client\download-and-install-the-rights-management-sharing-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/rms-client/download-and-install-the-rights-management-sharing-application.md) | HandedOffSuccess | [Details](#2c9b7847716229b4af2683439597d4b6c7737af3352)
  [Azure-RMSDocs\rms-client\privacy-statement-for-microsoft-rights-management-in-rms-enlightened-applications.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/rms-client/privacy-statement-for-microsoft-rights-management-in-rms-enlightened-applications.md) | HandedOffSuccess | [Details](#e867c40fe0cb7928fcce98e1b3c8312b48b49831353)
@@ -386,7 +322,6 @@
  [Azure-RMSDocs\understand-explore\rms-for-individuals-user-signup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/understand-explore/rms-for-individuals-user-signup.md) | HandedOffSuccess | [Details](#b1db6d614995dd4ad853f7b704fbc1103d58bf8f412)
  [Azure-RMSDocs\understand-explore\Sample.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/understand-explore/Sample.md) | HandedOffSuccess | [Details](#80f16e5851e574014594e4d93ba194beb2cc9653413)
  [Azure-RMSDocs\understand-explore\sharing-application-for-windows-and-mobile-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/understand-explore/sharing-application-for-windows-and-mobile-platforms.md) | HandedOffSuccess | [Details](#df9a5e456cc9275e43d32f5c8433e3d00b997521414)
- [Azure-RMSDocs\understand-explore\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad64e4e5b0ba2d56273d5206b438bb57b9dad55/Azure-RMSDocs/understand-explore/TOC.md) | HandedOffSuccess | [Details](#a0d7ccea22c426ed850e59047f323a2fd9111140415)
  [Azure-RMSDocs\understand-explore\what-do-admins-users-see.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad64e4e5b0ba2d56273d5206b438bb57b9dad55/Azure-RMSDocs/understand-explore/what-do-admins-users-see.md) | HandedOffSuccess | [Details](#6e105df4bfa174f92db1378006b1295a395c918b416)
  [Azure-RMSDocs\understand-explore\what-is-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad64e4e5b0ba2d56273d5206b438bb57b9dad55/Azure-RMSDocs/understand-explore/what-is-azure-rights-management.md) | HandedOffSuccess | [Details](#c5e4e4bd344024ca773bffed12b0b0be463ec17c417)
  [README.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/README.md) | HandedOffSuccess | [Details](#100d1ac12c7663fd73213fb5c8902d6e1f906449419)
@@ -411,10 +346,73 @@
  [.openpublishing.build.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/.openpublishing.build.ps1) | Ignored | [Details](#9103b6933f2481864ecb6a66b76ba730e7f133b43)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/.openpublishing.publish.config.json) | Ignored | [Details](#f8e874dd3e6ed3aa9e13c3be1c8ca388d3cf72ac4)
  [Azure-RMSDocs\Administer\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Administer/docfx.json) | Ignored | [Details](#a1d70bd61449037a0d5fa4013571b43474f988d86)
+ [Azure-RMSDocs\deploy-use\activating-azure-rights-management-o365preview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/activating-azure-rights-management-o365preview.md) | Ignored | [Details](#a5f0b2fbbf91bf661edd6898346c4a7414a054fc12)
+ [Azure-RMSDocs\deploy-use\configure-servers-for-the-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/configure-servers-for-the-rms-connector.md) | Ignored | [Details](#ab07519a0e95c6afd06a3a69cd3506e7848c023520)
  [Azure-RMSDocs\deploy-use\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/docfx.json) | Ignored | [Details](#c1317eaaf0f38e0cbfed40b88a7c7a4a4ea58b3726)
  [Azure-RMSDocs\DeployUse\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/DeployUse/docfx.json) | Ignored | [Details](#4baac7615437d8239905d641205a2f96fc9d82f745)
+ [Azure-RMSDocs\deploy-use\install-and-configure-the-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/install-and-configure-the-rms-connector.md) | Ignored | [Details](#f2cea3cffe4fc65305b285a7b13a9d0f9fa122aa31)
+ [Azure-RMSDocs\deploy-use\operations-for-your-azure-rights-management-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/operations-for-your-azure-rights-management-tenant-key.md) | Ignored | [Details](#3149331534bf83c1606419b4e1fced13c182c77e36)
+ [Azure-RMSDocs\deploy-use\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/TOC.md) | Ignored | [Details](#f8245f070d33072f93a3afbb9cee0371c2fc0ed942)
+ [Azure-RMSDocs\Develop\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Ignored | [Details](#a856d9f0ac323bd213c8c9954b6477a4e8e4fd7c47)
+ [Azure-RMSDocs\Develop\add-explicit-owner-rights.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/add-explicit-owner-rights.md) | Ignored | [Details](#f6d06c6a417b4302f3bbc65c895d2e58558adbb952)
+ [Azure-RMSDocs\Develop\ad-rms-client.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/ad-rms-client.md) | Ignored | [Details](#a07e20a25c5259c43928581899ca4ac6d93a2f2648)
+ [Azure-RMSDocs\Develop\ad-rms-concepts-nav.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/ad-rms-concepts-nav.md) | Ignored | [Details](#084a392f87d1ca747a2a019656d3f24516331b3249)
+ [Azure-RMSDocs\Develop\ad-rms-overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/ad-rms-overview.md) | Ignored | [Details](#f9dea7cc934b91eadd85afbab53f00a3724d4e9750)
+ [Azure-RMSDocs\Develop\ad-rms-server.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/ad-rms-server.md) | Ignored | [Details](#88211a567bf0e04a5a020565d1f6c276737d12af51)
+ [Azure-RMSDocs\Develop\android-code.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/android-code.md) | Ignored | [Details](#e59dd5d38b1c89e685c8f4d061ee20487e9b84eb53)
+ [Azure-RMSDocs\Develop\android-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/android-sdk.md) | Ignored | [Details](#f5f0447568b3c23011cad2cd6fc3a8cedf43943154)
+ [Azure-RMSDocs\Develop\api-reference-new.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/api-reference-new.md) | Ignored | [Details](#9c8b53a4ce635483b496f0010c6a77f5fee5d64655)
+ [Azure-RMSDocs\Develop\application-id.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/application-id.md) | Ignored | [Details](#b7fb93664ac731013eff4171ce7fe32c969f9ab256)
+ [Azure-RMSDocs\Develop\application-types.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/application-types.md) | Ignored | [Details](#5d96c537d8e098c60f0d2fe723bd44e315a7fe6757)
+ [Azure-RMSDocs\Develop\authentication-integration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/authentication-integration.md) | Ignored | [Details](#30372f3c2b02b0a72780b121ba0b34bcaa4c932758)
+ [Azure-RMSDocs\Develop\built-in-rights-usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/built-in-rights-usage-restriction-reference.md) | Ignored | [Details](#9a8a37b4e0f731c8be88a4ef6342b2104f49bca359)
+ [Azure-RMSDocs\Develop\code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/code-examples.md) | Ignored | [Details](#7ea4de7342bc6f383bf1fc1170d6d75309ce13ba60)
+ [Azure-RMSDocs\Develop\common-error-conditions-and-solutions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/common-error-conditions-and-solutions.md) | Ignored | [Details](#6e9a3de40ee316caab2d290e9761b1b2fde8ffda61)
+ [Azure-RMSDocs\Develop\community-resources.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/community-resources.md) | Ignored | [Details](#32417af0749b9c6cb4948eae0a14232ea9c1e63d62)
+ [Azure-RMSDocs\Develop\core-concepts.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/core-concepts.md) | Ignored | [Details](#b91bc14b7416c0e17a65ffb1e7b9d1721c54e3c963)
+ [Azure-RMSDocs\Develop\create-your-first-rights-aware-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/create-your-first-rights-aware-application.md) | Ignored | [Details](#034079578d657d4438e388e8f452773bfd3bb27d64)
+ [Azure-RMSDocs\Develop\debugging-applications-that-use-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/debugging-applications-that-use-ad-rms.md) | Ignored | [Details](#713befc293e6becf10292d9e6cef1ce8611893be65)
+ [Azure-RMSDocs\Develop\deploying-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/deploying-your-application.md) | Ignored | [Details](#a803441696bd6bc87b6df51026d89437e8eb3c4366)
+ [Azure-RMSDocs\Develop\developer-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/developer-notes.md) | Ignored | [Details](#8048f46f7254ae236e7de502ccaf3e6b80efaeb067)
+ [Azure-RMSDocs\Develop\developers-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/developers-guide.md) | Ignored | [Details](#2df1601a75c2f9035d102064cfa541f86ee51c8368)
+ [Azure-RMSDocs\Develop\differences-between-ad-rms-and-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/differences-between-ad-rms-and-ad-rms-2-0.md) | Ignored | [Details](#0b251098a43112803e9214bb0a306c342a9fa4c769)
  [Azure-RMSDocs\Develop\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/docfx.json) | Ignored | [Details](#50c6711539106c08a3af2aff41bce2851853725a70)
+ [Azure-RMSDocs\Develop\enabling-logging.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/enabling-logging.md) | Ignored | [Details](#854401853fa505df1e4762824eb2e160685e034d71)
+ [Azure-RMSDocs\Develop\file-api-configuration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/file-api-configuration.md) | Ignored | [Details](#300d468d97a2bc0f7cc100265218134a09bab04c72)
+ [Azure-RMSDocs\Develop\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/get-started.md) | Ignored | [Details](#dd5f5d5e880f1b2dfed9a5c9b02f5c8b9a54990e73)
+ [Azure-RMSDocs\Develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/getting-started-with-ad-rms-2-0.md) | Ignored | [Details](#403bc7b481490a4ecbc0e503e58b4fd36ef0823574)
+ [Azure-RMSDocs\Develop\how-to-build-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-build-your-first-application.md) | Ignored | [Details](#c386ee9317aad13b1b84f1a16513c293e788dcea75)
+ [Azure-RMSDocs\Develop\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | Ignored | [Details](#7df7759fb727a40e5e55584873f426a49b5ec8d976)
+ [Azure-RMSDocs\Develop\how-to-configure-the-ad-rms-client-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-configure-the-ad-rms-client-2-0.md) | Ignored | [Details](#adc0a6e46438b239dbe5e310f08a812b6113e0e577)
+ [Azure-RMSDocs\Develop\how-to-enable-email-notification.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-enable-email-notification.md) | Ignored | [Details](#46e9c2b30f2eac122a0a3b7e69d25bea2f45c17f78)
+ [Azure-RMSDocs\Develop\how-to-install-and-configure-an-rms-server.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-install-and-configure-an-rms-server.md) | Ignored | [Details](#f8bafa0490b36b5f37d481c4208031bdfd8fd7c879)
+ [Azure-RMSDocs\Develop\how-to-set-up-the-pre-production-development-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-set-up-the-pre-production-development-environment.md) | Ignored | [Details](#546322e58352573188e0d8a5928182968a8d34e880)
+ [Azure-RMSDocs\Develop\how-to-set-up-your-test-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-set-up-your-test-environment.md) | Ignored | [Details](#5132eb31c304b17a494eae82d0294a5dc89cf1ba81)
+ [Azure-RMSDocs\Develop\how-to-use-document-tracking.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-use-document-tracking.md) | Ignored | [Details](#2227398e8594f74bdc46c33e8610efb9b04aa86782)
+ [Azure-RMSDocs\Develop\how-to-use-file-api-with-aadrm-cloud.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-use-file-api-with-aadrm-cloud.md) | Ignored | [Details](#8f42e20497e8ab34fa55224f2750d8d79483be0883)
+ [Azure-RMSDocs\Develop\how-to-use-msipc.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-use-msipc.md) | Ignored | [Details](#b3de2dddf10b92bee5e4d4ba55aae25b8d622aab84)
+ [Azure-RMSDocs\Develop\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/index.md) | Ignored | [Details](#32451701ac40a01ff1f1c1105dada8eb112a746185)
+ [Azure-RMSDocs\Develop\ios-os-x-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/ios-os-x-code-examples.md) | Ignored | [Details](#3ff3ef0854087c3ff712645c753ba0f077afbd2d86)
+ [Azure-RMSDocs\Develop\ios-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/ios-sdk.md) | Ignored | [Details](#558f6f86bc9ecfdd7e8b9a16a2ea6540b30abb3987)
+ [Azure-RMSDocs\Develop\linux-c-api-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/linux-c-api-reference.md) | Ignored | [Details](#ee5211995f28247a278e8228ec7ffa66c4d4f6f388)
+ [Azure-RMSDocs\Develop\linux-c-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/linux-c-code-examples.md) | Ignored | [Details](#c05ad383a5a49b7904bdb9fc095148d62015488c89)
+ [Azure-RMSDocs\Develop\linux-setup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/linux-setup.md) | Ignored | [Details](#5c973507c656ecfc6b947a0d846cb39d7853201190)
+ [Azure-RMSDocs\Develop\microsoft-information-protection-and-control-client-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/microsoft-information-protection-and-control-client-portal.md) | Ignored | [Details](#bc53cf4290a5cc0794151f5d90a2757e701a43ac91)
+ [Azure-RMSDocs\Develop\obtaining-a-production-license.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/obtaining-a-production-license.md) | Ignored | [Details](#f4fc9aea0b72dfa8d36028e7ac9f6b2c0310586392)
+ [Azure-RMSDocs\Develop\overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/overview.md) | Ignored | [Details](#790e5679c4bd86c79d01f00bb6ba3b141947ad1193)
+ [Azure-RMSDocs\Develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/release-notes.md) | Ignored | [Details](#8a196e40c6d5559234735c42cc7b0e28fe3e6ee395)
+ [Azure-RMSDocs\Develop\running-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/running-your-first-application.md) | Ignored | [Details](#df67142836ea219681f640fbcb11fcc35075981796)
+ [Azure-RMSDocs\Develop\samples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/samples.md) | Ignored | [Details](#3fd86b87b8e7a7d8983bdb4ebd9cfb4f57c640a597)
+ [Azure-RMSDocs\Develop\sdk-elements.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/sdk-elements.md) | Ignored | [Details](#4893aeaf3ac688164cfa8ec4d5f445790d67f8e298)
+ [Azure-RMSDocs\Develop\setting-the-api-security-mode-api-mode.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/setting-the-api-security-mode-api-mode.md) | Ignored | [Details](#8fd7d8acdc65c044ebb4dd081bc4ea072ec88f0a99)
+ [Azure-RMSDocs\Develop\setup-developer-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/setup-developer-environment.md) | Ignored | [Details](#9a48c5fb155f18de9493f64f51d51768774d617c100)
+ [Azure-RMSDocs\Develop\signing-your-application-for-production.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/signing-your-application-for-production.md) | Ignored | [Details](#6286d7aa1e085622bfe95cd05bbaba7a58fe3634101)
+ [Azure-RMSDocs\Develop\supported-file-formats.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/supported-file-formats.md) | Ignored | [Details](#2ddec25d306a23035b2616d703b94f14a0d06775102)
+ [Azure-RMSDocs\Develop\supported-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/supported-platforms.md) | Ignored | [Details](#979043d59c72c54e1896e4d2c3db291863607d1a103)
+ [Azure-RMSDocs\Develop\switching-to-the-production-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/switching-to-the-production-environment.md) | Ignored | [Details](#521f4e235a15a90b60ccd570d5c3d89d92564685104)
+ [Azure-RMSDocs\Develop\terms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/terms.md) | Ignored | [Details](#33365455f071d87b0f987b4fb48469b401e7de01105)
  [Azure-RMSDocs\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/docfx.json) | Ignored | [Details](#11a1a849d007c098704731e397545dc24c81bb4a114)
+ [Azure-RMSDocs\get-started\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/get-started/TOC.md) | Ignored | [Details](#9f0258abe912f485c27baa7ae12276160c5dbdaf141)
  [Azure-RMSDocs\index.html](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/index.html) | Ignored | [Details](#205c544d5dac12de6f5675512639b786650d7b7f171)
  [Azure-RMSDocs\media\ADRMS_MSRMSApp_ProtectCustom.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/media/ADRMS_MSRMSApp_ProtectCustom.gif) | Ignored | [Details](#a92b83706a626411ae959ebe0be5e55d78fe7446183)
  [Azure-RMSDocs\media\ADRMS_MSRMSApp_SP_ConsumePfile.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/media/ADRMS_MSRMSApp_SP_ConsumePfile.gif) | Ignored | [Details](#5d2f20557a431bdb26e178ad24039f7b432438a3188)
@@ -450,9 +448,11 @@
  [Azure-RMSDocs\media\windows_and_phone.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/media/windows_and_phone.png) | Ignored | [Details](#7629ae3423a4543b9257e29c11f03b8c34b2f045321)
  [Azure-RMSDocs\plan-design\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/plan-design/docfx.json) | Ignored | [Details](#0aaba764b645704d1884594c244362ee9cc85136330)
  [Azure-RMSDocs\PlanDesign\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/PlanDesign/docfx.json) | Ignored | [Details](#8637c594466b0cedec8d8dbebff8006b4125da89348)
+ [Azure-RMSDocs\plan-design\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/plan-design/TOC.md) | Ignored | [Details](#30a2779eda1decf40bc67611710029a3904d0bfd347)
  [Azure-RMSDocs\rms-client\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/rms-client/docfx.json) | Ignored | [Details](#d889ba09378c1600b0a0bc3bac6f6221f7049cc9351)
  [Azure-RMSDocs\RMSClient\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/RMSClient/docfx.json) | Ignored | [Details](#d6ea2ed9ab4b7f7f5fc192d1260f5f33c9131f0e370)
  [Azure-RMSDocs\Troubleshoot\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Troubleshoot/docfx.json) | Ignored | [Details](#e2f855dd5595da1ecb691a827f9f22aa18a6d62f374)
+ [Azure-RMSDocs\understand-explore\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/understand-explore/TOC.md) | Ignored | [Details](#05639efb2490ce57a721dbbcf4b30c52e67e116f415)
  [UpdateSubmodule.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/UpdateSubmodule.ps1) | Ignored | [Details](#42442e5f8d7f09fba90a865e184aacc3f8489143421)
 
 ## Item Details
@@ -612,12 +612,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='d98edea5e220c59dbbfc2e8406a9a96564b335ea12'></a> Source: [Azure-RMSDocs\deploy-use\activating-azure-rights-management-o365preview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c065d07c5286f5b5c81ba356bbb3bec1994172e0/Azure-RMSDocs/deploy-use/activating-azure-rights-management-o365preview.md)
-* Status: HandedOffSuccess
+##### <a name='a5f0b2fbbf91bf661edd6898346c4a7414a054fc12'></a> Source: [Azure-RMSDocs\deploy-use\activating-azure-rights-management-o365preview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/activating-azure-rights-management-o365preview.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [activating-azure-rights-management-o365preview.6931c1c88a4fff468b35b28420625891a3acd5df.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/ea3a30e513a5eb8a4b5529a11c011fb625289e43/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activating-azure-rights-management-o365preview.6931c1c88a4fff468b35b28420625891a3acd5df.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 23:00:39
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -696,12 +696,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='2ac14b7c08c8a346ee6c4fd76aa82b2f659622a820'></a> Source: [Azure-RMSDocs\deploy-use\configure-servers-for-the-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/07cc73b4a41616e544061946a3c12cb9111124a1/Azure-RMSDocs/deploy-use/configure-servers-for-the-rms-connector.md)
-* Status: HandedOffSuccess
+##### <a name='ab07519a0e95c6afd06a3a69cd3506e7848c023520'></a> Source: [Azure-RMSDocs\deploy-use\configure-servers-for-the-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/configure-servers-for-the-rms-connector.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [configure-servers-for-the-rms-connector.452b535cc01d6ea61aa2e5294d5c1601b94010e8.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/9d73051df804ecf12928dd8219cd08f8a840591b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/configure-servers-for-the-rms-connector.452b535cc01d6ea61aa2e5294d5c1601b94010e8.zh-cn.xlf)
-* Handoff Datetime: 2016-04-04 18:21:08
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -840,12 +840,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='4057016f82ec6a332f0f16b9807358ec71e05b2a31'></a> Source: [Azure-RMSDocs\deploy-use\install-and-configure-the-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/07cc73b4a41616e544061946a3c12cb9111124a1/Azure-RMSDocs/deploy-use/install-and-configure-the-rms-connector.md)
-* Status: HandedOffSuccess
+##### <a name='f2cea3cffe4fc65305b285a7b13a9d0f9fa122aa31'></a> Source: [Azure-RMSDocs\deploy-use\install-and-configure-the-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/install-and-configure-the-rms-connector.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [install-and-configure-the-rms-connector.3d34aefdf032176704cfbba1ee83019cb8f98382.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/9d73051df804ecf12928dd8219cd08f8a840591b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/install-and-configure-the-rms-connector.3d34aefdf032176704cfbba1ee83019cb8f98382.zh-cn.xlf)
-* Handoff Datetime: 2016-04-04 18:21:08
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -889,12 +889,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='9d99c32bc0cb13b32ef31fef774b65de62a81aa336'></a> Source: [Azure-RMSDocs\deploy-use\operations-for-your-azure-rights-management-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/operations-for-your-azure-rights-management-tenant-key.md)
-* Status: HandedOffSuccess
+##### <a name='3149331534bf83c1606419b4e1fced13c182c77e36'></a> Source: [Azure-RMSDocs\deploy-use\operations-for-your-azure-rights-management-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/operations-for-your-azure-rights-management-tenant-key.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [operations-for-your-azure-rights-management-tenant-key.72f6b199490b606a43bc21d35bef32658bd76c79.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/78d5d66646829134006f9bfcd191aede5c98919b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/operations-for-your-azure-rights-management-tenant-key.72f6b199490b606a43bc21d35bef32658bd76c79.zh-cn.xlf)
-* Handoff Datetime: 2016-04-12 01:20:13
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -985,12 +985,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='65608704b80d962628b2927912ab6f96c1126f8f42'></a> Source: [Azure-RMSDocs\deploy-use\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/TOC.md)
-* Status: HandedOffSuccess
+##### <a name='f8245f070d33072f93a3afbb9cee0371c2fc0ed942'></a> Source: [Azure-RMSDocs\deploy-use\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/deploy-use/TOC.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [TOC.15093da2c32050c16b3bc82d728b3f6546760f04.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/78d5d66646829134006f9bfcd191aede5c98919b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.15093da2c32050c16b3bc82d728b3f6546760f04.zh-cn.xlf)
-* Handoff Datetime: 2016-04-12 01:20:13
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -1021,276 +1021,276 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='83b6b7843c10c91b03abe58686ad808ab742f6c347'></a> Source: [Azure-RMSDocs\Develop\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
-* Status: HandedOffSuccess
+##### <a name='a856d9f0ac323bd213c8c9954b6477a4e8e4fd7c47'></a> Source: [Azure-RMSDocs\Develop\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.722745319bee56b3e522ee3f621d30ac443e6578.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.722745319bee56b3e522ee3f621d30ac443e6578.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='0e428eeed980eaa77c335142909d8514839fa78652'></a> Source: [Azure-RMSDocs\Develop\add-explicit-owner-rights.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/add-explicit-owner-rights.md)
-* Status: HandedOffSuccess
+##### <a name='f6d06c6a417b4302f3bbc65c895d2e58558adbb952'></a> Source: [Azure-RMSDocs\Develop\add-explicit-owner-rights.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/add-explicit-owner-rights.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [add-explicit-owner-rights.8a2b501b9aa97b1f8fd832f2753aba4c0a0fa4a5.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/add-explicit-owner-rights.8a2b501b9aa97b1f8fd832f2753aba4c0a0fa4a5.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='0002db6b5914c2f274fa1a5b703fdbe4e7af419648'></a> Source: [Azure-RMSDocs\Develop\ad-rms-client.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/ad-rms-client.md)
-* Status: HandedOffSuccess
+##### <a name='a07e20a25c5259c43928581899ca4ac6d93a2f2648'></a> Source: [Azure-RMSDocs\Develop\ad-rms-client.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/ad-rms-client.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [ad-rms-client.8729e8ecc1075d2a81f2ab93955b8aec168080d8.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/ad-rms-client.8729e8ecc1075d2a81f2ab93955b8aec168080d8.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='9704116b043294f04558d4f88b4ad30307b5baca49'></a> Source: [Azure-RMSDocs\Develop\ad-rms-concepts-nav.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/ad-rms-concepts-nav.md)
-* Status: HandedOffSuccess
+##### <a name='084a392f87d1ca747a2a019656d3f24516331b3249'></a> Source: [Azure-RMSDocs\Develop\ad-rms-concepts-nav.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/ad-rms-concepts-nav.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [ad-rms-concepts-nav.5528b419337612cff719181aab5f7aa4774355e1.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/ad-rms-concepts-nav.5528b419337612cff719181aab5f7aa4774355e1.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='0631c1b471c9aaa498bfa809fb1470ce55cedc4e50'></a> Source: [Azure-RMSDocs\Develop\ad-rms-overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/ad-rms-overview.md)
-* Status: HandedOffSuccess
+##### <a name='f9dea7cc934b91eadd85afbab53f00a3724d4e9750'></a> Source: [Azure-RMSDocs\Develop\ad-rms-overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/ad-rms-overview.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [ad-rms-overview.5037a64cbea49531b5a7e1f4b8430824a7fcb847.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/ad-rms-overview.5037a64cbea49531b5a7e1f4b8430824a7fcb847.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='d555db9e97519d60690e1f53d4c731179f0411cc51'></a> Source: [Azure-RMSDocs\Develop\ad-rms-server.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/ad-rms-server.md)
-* Status: HandedOffSuccess
+##### <a name='88211a567bf0e04a5a020565d1f6c276737d12af51'></a> Source: [Azure-RMSDocs\Develop\ad-rms-server.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/ad-rms-server.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [ad-rms-server.40ceca0d4a6cc0c768c54addb0240b52fc7bbbc8.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/ad-rms-server.40ceca0d4a6cc0c768c54addb0240b52fc7bbbc8.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='fbac306485ae95ef84a29faa398bb182ba10121c53'></a> Source: [Azure-RMSDocs\Develop\android-code.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/android-code.md)
-* Status: HandedOffSuccess
+##### <a name='e59dd5d38b1c89e685c8f4d061ee20487e9b84eb53'></a> Source: [Azure-RMSDocs\Develop\android-code.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/android-code.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [android-code.536425aa99c4453420edff5ddf59ac49298b7858.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/android-code.536425aa99c4453420edff5ddf59ac49298b7858.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='9c777394a1589326685edc6fa2ae2ae646fe978554'></a> Source: [Azure-RMSDocs\Develop\android-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/android-sdk.md)
-* Status: HandedOffSuccess
+##### <a name='f5f0447568b3c23011cad2cd6fc3a8cedf43943154'></a> Source: [Azure-RMSDocs\Develop\android-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/android-sdk.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [android-sdk.c649df4e83fb6cc629b63126078ed2c3bdbea99f.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/android-sdk.c649df4e83fb6cc629b63126078ed2c3bdbea99f.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ccd1e319d2f7705fd73772a8f744175200f334ed55'></a> Source: [Azure-RMSDocs\Develop\api-reference-new.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/api-reference-new.md)
-* Status: HandedOffSuccess
+##### <a name='9c8b53a4ce635483b496f0010c6a77f5fee5d64655'></a> Source: [Azure-RMSDocs\Develop\api-reference-new.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/api-reference-new.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [api-reference-new.3f695de78ab4b21c8cf40a479bf0acfc57077c72.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/api-reference-new.3f695de78ab4b21c8cf40a479bf0acfc57077c72.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='315247236e2061b0e8e2a3b3f26cec31f48fbb9556'></a> Source: [Azure-RMSDocs\Develop\application-id.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/application-id.md)
-* Status: HandedOffSuccess
+##### <a name='b7fb93664ac731013eff4171ce7fe32c969f9ab256'></a> Source: [Azure-RMSDocs\Develop\application-id.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/application-id.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [application-id.ae5dd518e51105607a57d6c5e9d47673ed2ccfe5.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/application-id.ae5dd518e51105607a57d6c5e9d47673ed2ccfe5.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='b4d15ca41c0a4d90211cca44ad0b7d017dbdce3c57'></a> Source: [Azure-RMSDocs\Develop\application-types.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/application-types.md)
-* Status: HandedOffSuccess
+##### <a name='5d96c537d8e098c60f0d2fe723bd44e315a7fe6757'></a> Source: [Azure-RMSDocs\Develop\application-types.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/application-types.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [application-types.ce861ed20e3408bcf260b70f56a3de0c24e3cb60.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/application-types.ce861ed20e3408bcf260b70f56a3de0c24e3cb60.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ed2f64e8e0eb54f74dada5eac6a72e10776ead7e58'></a> Source: [Azure-RMSDocs\Develop\authentication-integration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/authentication-integration.md)
-* Status: HandedOffSuccess
+##### <a name='30372f3c2b02b0a72780b121ba0b34bcaa4c932758'></a> Source: [Azure-RMSDocs\Develop\authentication-integration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/authentication-integration.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [authentication-integration.1777e5413dd51e3633ffe9bb9cfca936b49e1a2a.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/authentication-integration.1777e5413dd51e3633ffe9bb9cfca936b49e1a2a.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='986e229574d9ad348e7780842ce4a0d7ad93e10d59'></a> Source: [Azure-RMSDocs\Develop\built-in-rights-usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/built-in-rights-usage-restriction-reference.md)
-* Status: HandedOffSuccess
+##### <a name='9a8a37b4e0f731c8be88a4ef6342b2104f49bca359'></a> Source: [Azure-RMSDocs\Develop\built-in-rights-usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/built-in-rights-usage-restriction-reference.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [built-in-rights-usage-restriction-reference.ed2fb1e26e65c28f0da9f513673ee9297e96065d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/built-in-rights-usage-restriction-reference.ed2fb1e26e65c28f0da9f513673ee9297e96065d.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='c4d1342dc8f021756561a725c65c550b7a80954960'></a> Source: [Azure-RMSDocs\Develop\code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/code-examples.md)
-* Status: HandedOffSuccess
+##### <a name='7ea4de7342bc6f383bf1fc1170d6d75309ce13ba60'></a> Source: [Azure-RMSDocs\Develop\code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/code-examples.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [code-examples.c8e4439556470e9a691479971d65293a35c24b57.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/code-examples.c8e4439556470e9a691479971d65293a35c24b57.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ba5f7e83dfeff264fe3b0a26931014d20773349e61'></a> Source: [Azure-RMSDocs\Develop\common-error-conditions-and-solutions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/common-error-conditions-and-solutions.md)
-* Status: HandedOffSuccess
+##### <a name='6e9a3de40ee316caab2d290e9761b1b2fde8ffda61'></a> Source: [Azure-RMSDocs\Develop\common-error-conditions-and-solutions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/common-error-conditions-and-solutions.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [common-error-conditions-and-solutions.87a8029288c661cd983619db46c46ed7099f130d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/common-error-conditions-and-solutions.87a8029288c661cd983619db46c46ed7099f130d.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='139f90d7258f6a3b5b7566725819da38ad16ea1d62'></a> Source: [Azure-RMSDocs\Develop\community-resources.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/community-resources.md)
-* Status: HandedOffSuccess
+##### <a name='32417af0749b9c6cb4948eae0a14232ea9c1e63d62'></a> Source: [Azure-RMSDocs\Develop\community-resources.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/community-resources.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [community-resources.cd8a64167f081a75ad44f73da284edafe1768c1e.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/community-resources.cd8a64167f081a75ad44f73da284edafe1768c1e.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='73d68df47cbeec97845a0a522f9807cd2210121863'></a> Source: [Azure-RMSDocs\Develop\core-concepts.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/core-concepts.md)
-* Status: HandedOffSuccess
+##### <a name='b91bc14b7416c0e17a65ffb1e7b9d1721c54e3c963'></a> Source: [Azure-RMSDocs\Develop\core-concepts.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/core-concepts.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [core-concepts.3ac2a7d82c9f8517dd1de0634bf99230a8bda2e0.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/core-concepts.3ac2a7d82c9f8517dd1de0634bf99230a8bda2e0.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='21031ad6eaad8605722f72e1d74374e4e84db4a864'></a> Source: [Azure-RMSDocs\Develop\create-your-first-rights-aware-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/create-your-first-rights-aware-application.md)
-* Status: HandedOffSuccess
+##### <a name='034079578d657d4438e388e8f452773bfd3bb27d64'></a> Source: [Azure-RMSDocs\Develop\create-your-first-rights-aware-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/create-your-first-rights-aware-application.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [create-your-first-rights-aware-application.1b3605bd677b06032480131b45caf03098e2f0c9.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/create-your-first-rights-aware-application.1b3605bd677b06032480131b45caf03098e2f0c9.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='e76aa461df4e413b0f41dcfc124b9eeb5eb0f7ce65'></a> Source: [Azure-RMSDocs\Develop\debugging-applications-that-use-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/debugging-applications-that-use-ad-rms.md)
-* Status: HandedOffSuccess
+##### <a name='713befc293e6becf10292d9e6cef1ce8611893be65'></a> Source: [Azure-RMSDocs\Develop\debugging-applications-that-use-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/debugging-applications-that-use-ad-rms.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [debugging-applications-that-use-ad-rms.08b69a2953216a3c661f489681325220e878c43d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/debugging-applications-that-use-ad-rms.08b69a2953216a3c661f489681325220e878c43d.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ec94e5e2d27eccd849247e0b593ddf8e1db9372b66'></a> Source: [Azure-RMSDocs\Develop\deploying-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/deploying-your-application.md)
-* Status: HandedOffSuccess
+##### <a name='a803441696bd6bc87b6df51026d89437e8eb3c4366'></a> Source: [Azure-RMSDocs\Develop\deploying-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/deploying-your-application.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [deploying-your-application.92c6e748a0187cc3709efdc640f2c9d2ebaea559.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/deploying-your-application.92c6e748a0187cc3709efdc640f2c9d2ebaea559.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='4cf4a64a8f226287d94931527fdf4e5224a56cbe67'></a> Source: [Azure-RMSDocs\Develop\developer-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/developer-notes.md)
-* Status: HandedOffSuccess
+##### <a name='8048f46f7254ae236e7de502ccaf3e6b80efaeb067'></a> Source: [Azure-RMSDocs\Develop\developer-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/developer-notes.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [developer-notes.ea0827096b2a864c4d2974821ccdc8b965d04512.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/developer-notes.ea0827096b2a864c4d2974821ccdc8b965d04512.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='55382e084d5f3f9f4f53294060c27fc21212c29568'></a> Source: [Azure-RMSDocs\Develop\developers-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad64e4e5b0ba2d56273d5206b438bb57b9dad55/Azure-RMSDocs/Develop/developers-guide.md)
-* Status: HandedOffSuccess
+##### <a name='2df1601a75c2f9035d102064cfa541f86ee51c8368'></a> Source: [Azure-RMSDocs\Develop\developers-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/developers-guide.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [developers-guide.b2765e38818759f92c5534193681e9514a78c34a.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/f5007a2b3f66c23e2b4067485ee1c760097b935f/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/developers-guide.b2765e38818759f92c5534193681e9514a78c34a.zh-cn.xlf)
-* Handoff Datetime: 2016-04-09 00:06:26
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='701211e7d3368c76a028dd1f3fdd327f9a690dfd69'></a> Source: [Azure-RMSDocs\Develop\differences-between-ad-rms-and-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/differences-between-ad-rms-and-ad-rms-2-0.md)
-* Status: HandedOffSuccess
+##### <a name='0b251098a43112803e9214bb0a306c342a9fa4c769'></a> Source: [Azure-RMSDocs\Develop\differences-between-ad-rms-and-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/differences-between-ad-rms-and-ad-rms-2-0.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [differences-between-ad-rms-and-ad-rms-2-0.ca066980b620c87eebfd5f86579384103e481cd9.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/differences-between-ad-rms-and-ad-rms-2-0.ca066980b620c87eebfd5f86579384103e481cd9.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -1309,288 +1309,288 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='7835bae5297b1ea942f778eb79e1c2f05188363371'></a> Source: [Azure-RMSDocs\Develop\enabling-logging.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/enabling-logging.md)
-* Status: HandedOffSuccess
+##### <a name='854401853fa505df1e4762824eb2e160685e034d71'></a> Source: [Azure-RMSDocs\Develop\enabling-logging.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/enabling-logging.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [enabling-logging.f8cd8dcc7a985b03d11805ccc40e3b68efb42f77.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/enabling-logging.f8cd8dcc7a985b03d11805ccc40e3b68efb42f77.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f8d5f7612ead20f11fef031fdc236aaf5b66fb3c72'></a> Source: [Azure-RMSDocs\Develop\file-api-configuration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/file-api-configuration.md)
-* Status: HandedOffSuccess
+##### <a name='300d468d97a2bc0f7cc100265218134a09bab04c72'></a> Source: [Azure-RMSDocs\Develop\file-api-configuration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/file-api-configuration.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [file-api-configuration.965969685789561d3213207294280fdacffb1b19.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/file-api-configuration.965969685789561d3213207294280fdacffb1b19.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='cc8859049d05a85829ffe3ac0259c6fdbf1f8b9673'></a> Source: [Azure-RMSDocs\Develop\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/get-started.md)
-* Status: HandedOffSuccess
+##### <a name='dd5f5d5e880f1b2dfed9a5c9b02f5c8b9a54990e73'></a> Source: [Azure-RMSDocs\Develop\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/get-started.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [get-started.68cea90b8984c4cd3c3ba5c45006958e7d526144.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/get-started.68cea90b8984c4cd3c3ba5c45006958e7d526144.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ef1db4a58bd28d03f15006deab4723263d7c491074'></a> Source: [Azure-RMSDocs\Develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/getting-started-with-ad-rms-2-0.md)
-* Status: HandedOffSuccess
+##### <a name='403bc7b481490a4ecbc0e503e58b4fd36ef0823574'></a> Source: [Azure-RMSDocs\Develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/getting-started-with-ad-rms-2-0.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [getting-started-with-ad-rms-2-0.3e2352b53c0d2b7d56aa1ba3f48adccb6536d045.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/getting-started-with-ad-rms-2-0.3e2352b53c0d2b7d56aa1ba3f48adccb6536d045.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='a967f5647151dcbeea316cc0790b52d0a06aa95775'></a> Source: [Azure-RMSDocs\Develop\how-to-build-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-build-your-first-application.md)
-* Status: HandedOffSuccess
+##### <a name='c386ee9317aad13b1b84f1a16513c293e788dcea75'></a> Source: [Azure-RMSDocs\Develop\how-to-build-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-build-your-first-application.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [how-to-build-your-first-application.6759968d68fa2bde03ef8aca6184d429bfafc6bb.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-to-build-your-first-application.6759968d68fa2bde03ef8aca6184d429bfafc6bb.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='1205d8bbdd52801068a89e0e19251f342a064c3576'></a> Source: [Azure-RMSDocs\Develop\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
-* Status: HandedOffSuccess
+##### <a name='7df7759fb727a40e5e55584873f426a49b5ec8d976'></a> Source: [Azure-RMSDocs\Develop\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.dc2c4d21aeae477f7080c0f6f254442ed0f62b2f.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.dc2c4d21aeae477f7080c0f6f254442ed0f62b2f.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='04dd9c9510a03e49239655f437f5950ae1afcb5477'></a> Source: [Azure-RMSDocs\Develop\how-to-configure-the-ad-rms-client-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-configure-the-ad-rms-client-2-0.md)
-* Status: HandedOffSuccess
+##### <a name='adc0a6e46438b239dbe5e310f08a812b6113e0e577'></a> Source: [Azure-RMSDocs\Develop\how-to-configure-the-ad-rms-client-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-configure-the-ad-rms-client-2-0.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [how-to-configure-the-ad-rms-client-2-0.8ab6f873f7e6e55470e76a424b28dc909c8f2d52.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-to-configure-the-ad-rms-client-2-0.8ab6f873f7e6e55470e76a424b28dc909c8f2d52.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ccba064bba1cf704b488cf139e9ae24c73c51e8a78'></a> Source: [Azure-RMSDocs\Develop\how-to-enable-email-notification.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-enable-email-notification.md)
-* Status: HandedOffSuccess
+##### <a name='46e9c2b30f2eac122a0a3b7e69d25bea2f45c17f78'></a> Source: [Azure-RMSDocs\Develop\how-to-enable-email-notification.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-enable-email-notification.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [how-to-enable-email-notification.7152297e323d73c469871f585e6b9860840cceb0.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-to-enable-email-notification.7152297e323d73c469871f585e6b9860840cceb0.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='6b98cf955b2a2f3d16c43b338067b15463864ce879'></a> Source: [Azure-RMSDocs\Develop\how-to-install-and-configure-an-rms-server.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-install-and-configure-an-rms-server.md)
-* Status: HandedOffSuccess
+##### <a name='f8bafa0490b36b5f37d481c4208031bdfd8fd7c879'></a> Source: [Azure-RMSDocs\Develop\how-to-install-and-configure-an-rms-server.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-install-and-configure-an-rms-server.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [how-to-install-and-configure-an-rms-server.682f0a8a3182520c8ddd7616ccad9fee662a87cc.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-to-install-and-configure-an-rms-server.682f0a8a3182520c8ddd7616ccad9fee662a87cc.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ddce7b45c3504951c4d2436e8833cff07cba9f2280'></a> Source: [Azure-RMSDocs\Develop\how-to-set-up-the-pre-production-development-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-set-up-the-pre-production-development-environment.md)
-* Status: HandedOffSuccess
+##### <a name='546322e58352573188e0d8a5928182968a8d34e880'></a> Source: [Azure-RMSDocs\Develop\how-to-set-up-the-pre-production-development-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-set-up-the-pre-production-development-environment.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [how-to-set-up-the-pre-production-development-environment.1a701bd45c388de27267af3d167236aaa1608562.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-to-set-up-the-pre-production-development-environment.1a701bd45c388de27267af3d167236aaa1608562.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='0674af9f9bbb883845f534d3a7dad701214026f681'></a> Source: [Azure-RMSDocs\Develop\how-to-set-up-your-test-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-set-up-your-test-environment.md)
-* Status: HandedOffSuccess
+##### <a name='5132eb31c304b17a494eae82d0294a5dc89cf1ba81'></a> Source: [Azure-RMSDocs\Develop\how-to-set-up-your-test-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-set-up-your-test-environment.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [how-to-set-up-your-test-environment.259a54ef475418a6cb62dd29fd573a9bafda7d09.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-to-set-up-your-test-environment.259a54ef475418a6cb62dd29fd573a9bafda7d09.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='9b2b4a2c1e57702117a3e35b9653ebbb154749c482'></a> Source: [Azure-RMSDocs\Develop\how-to-use-document-tracking.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-use-document-tracking.md)
-* Status: HandedOffSuccess
+##### <a name='2227398e8594f74bdc46c33e8610efb9b04aa86782'></a> Source: [Azure-RMSDocs\Develop\how-to-use-document-tracking.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-use-document-tracking.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [how-to-use-document-tracking.13f8c02dd975a424144017ec9d693bca0a5a4da9.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-to-use-document-tracking.13f8c02dd975a424144017ec9d693bca0a5a4da9.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='86b48a55a7ef74e17712ecfb3e20e5d57ebda38883'></a> Source: [Azure-RMSDocs\Develop\how-to-use-file-api-with-aadrm-cloud.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-use-file-api-with-aadrm-cloud.md)
-* Status: HandedOffSuccess
+##### <a name='8f42e20497e8ab34fa55224f2750d8d79483be0883'></a> Source: [Azure-RMSDocs\Develop\how-to-use-file-api-with-aadrm-cloud.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-use-file-api-with-aadrm-cloud.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [how-to-use-file-api-with-aadrm-cloud.a6b928e3e699ae76ed4112974b0e2769bf1fe02c.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-to-use-file-api-with-aadrm-cloud.a6b928e3e699ae76ed4112974b0e2769bf1fe02c.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='1dd27bd087042dff136e9c6fe732bb595a8a1a6684'></a> Source: [Azure-RMSDocs\Develop\how-to-use-msipc.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/how-to-use-msipc.md)
-* Status: HandedOffSuccess
+##### <a name='b3de2dddf10b92bee5e4d4ba55aae25b8d622aab84'></a> Source: [Azure-RMSDocs\Develop\how-to-use-msipc.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/how-to-use-msipc.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [how-to-use-msipc.39ef64665c3fda82b99c3b97f1e61aa7d53aa40d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-to-use-msipc.39ef64665c3fda82b99c3b97f1e61aa7d53aa40d.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='4bb9fa4c928f4141abe37a37b11d9b6efce4961c85'></a> Source: [Azure-RMSDocs\Develop\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/index.md)
-* Status: HandedOffSuccess
+##### <a name='32451701ac40a01ff1f1c1105dada8eb112a746185'></a> Source: [Azure-RMSDocs\Develop\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/index.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [index.ef21d80e8eab8d81164abed471c589cad2f4aab8.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/index.ef21d80e8eab8d81164abed471c589cad2f4aab8.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='89cd80e284013ca63cb5afaaf6db16fc0a8c067286'></a> Source: [Azure-RMSDocs\Develop\ios-os-x-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/ios-os-x-code-examples.md)
-* Status: HandedOffSuccess
+##### <a name='3ff3ef0854087c3ff712645c753ba0f077afbd2d86'></a> Source: [Azure-RMSDocs\Develop\ios-os-x-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/ios-os-x-code-examples.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [ios-os-x-code-examples.4398feb71bdf7d5c1575649e04923d67112b4203.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/ios-os-x-code-examples.4398feb71bdf7d5c1575649e04923d67112b4203.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='8a3b89e0212ae7e82224b223405e1cd01acdc29e87'></a> Source: [Azure-RMSDocs\Develop\ios-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/ios-sdk.md)
-* Status: HandedOffSuccess
+##### <a name='558f6f86bc9ecfdd7e8b9a16a2ea6540b30abb3987'></a> Source: [Azure-RMSDocs\Develop\ios-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/ios-sdk.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [ios-sdk.b4c115784cfc84a3e327421cfb6f3bce8e949287.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/ios-sdk.b4c115784cfc84a3e327421cfb6f3bce8e949287.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='abdca0b748924aed7e1a1a3c9258977a2c67868788'></a> Source: [Azure-RMSDocs\Develop\linux-c-api-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/linux-c-api-reference.md)
-* Status: HandedOffSuccess
+##### <a name='ee5211995f28247a278e8228ec7ffa66c4d4f6f388'></a> Source: [Azure-RMSDocs\Develop\linux-c-api-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/linux-c-api-reference.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [linux-c-api-reference.23414c30601df08d9134767bd7d3e33e062a62b2.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/linux-c-api-reference.23414c30601df08d9134767bd7d3e33e062a62b2.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='5c042c42fd9f4a6a5a61515b1cae310dc86851fe89'></a> Source: [Azure-RMSDocs\Develop\linux-c-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/linux-c-code-examples.md)
-* Status: HandedOffSuccess
+##### <a name='c05ad383a5a49b7904bdb9fc095148d62015488c89'></a> Source: [Azure-RMSDocs\Develop\linux-c-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/linux-c-code-examples.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [linux-c-code-examples.0276de897e7d559cf8f933ff4c412849bfd09cad.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/linux-c-code-examples.0276de897e7d559cf8f933ff4c412849bfd09cad.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='8a9d039441afab5682730147ed9d2a2744d9004690'></a> Source: [Azure-RMSDocs\Develop\linux-setup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/linux-setup.md)
-* Status: HandedOffSuccess
+##### <a name='5c973507c656ecfc6b947a0d846cb39d7853201190'></a> Source: [Azure-RMSDocs\Develop\linux-setup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/linux-setup.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [linux-setup.b97051ae09daa721a2907db74b9253164aa78e6b.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/linux-setup.b97051ae09daa721a2907db74b9253164aa78e6b.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='0f37b483a076e8b00745248eab5e53d2f3cd486d91'></a> Source: [Azure-RMSDocs\Develop\microsoft-information-protection-and-control-client-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/microsoft-information-protection-and-control-client-portal.md)
-* Status: HandedOffSuccess
+##### <a name='bc53cf4290a5cc0794151f5d90a2757e701a43ac91'></a> Source: [Azure-RMSDocs\Develop\microsoft-information-protection-and-control-client-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/microsoft-information-protection-and-control-client-portal.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [microsoft-information-protection-and-control-client-portal.79b41533f084eadcd729ef200639822ac130f559.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/microsoft-information-protection-and-control-client-portal.79b41533f084eadcd729ef200639822ac130f559.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='2dea874c65f42c3bcf1d9cb61167ded81ea11efa92'></a> Source: [Azure-RMSDocs\Develop\obtaining-a-production-license.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/obtaining-a-production-license.md)
-* Status: HandedOffSuccess
+##### <a name='f4fc9aea0b72dfa8d36028e7ac9f6b2c0310586392'></a> Source: [Azure-RMSDocs\Develop\obtaining-a-production-license.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/obtaining-a-production-license.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [obtaining-a-production-license.93c93bf9906f2019483d34b279ed7b9e03f1c48d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/obtaining-a-production-license.93c93bf9906f2019483d34b279ed7b9e03f1c48d.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='a7fd2bfcb9f688282f626f1e6fc8801fdb275fe693'></a> Source: [Azure-RMSDocs\Develop\overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/overview.md)
-* Status: HandedOffSuccess
+##### <a name='790e5679c4bd86c79d01f00bb6ba3b141947ad1193'></a> Source: [Azure-RMSDocs\Develop\overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/overview.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [overview.97fd033c9821b8168af8cab664bc098f381c9ba2.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/overview.97fd033c9821b8168af8cab664bc098f381c9ba2.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='1c551dce90598ecc66697d4a473c2ac9ebc7e35f95'></a> Source: [Azure-RMSDocs\Develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/release-notes.md)
-* Status: HandedOffSuccess
+##### <a name='8a196e40c6d5559234735c42cc7b0e28fe3e6ee395'></a> Source: [Azure-RMSDocs\Develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/release-notes.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [release-notes.0c88e54c1da49b73573ce9f6d96e34a17159621c.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/release-notes.0c88e54c1da49b73573ce9f6d96e34a17159621c.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -1609,120 +1609,120 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='741366c6d4dfc8700f31348722a1453d7a8d62b596'></a> Source: [Azure-RMSDocs\Develop\running-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/running-your-first-application.md)
-* Status: HandedOffSuccess
+##### <a name='df67142836ea219681f640fbcb11fcc35075981796'></a> Source: [Azure-RMSDocs\Develop\running-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/running-your-first-application.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [running-your-first-application.6e012fd599c8fb0ce54a0dd0fe9e8142b7f02c55.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/running-your-first-application.6e012fd599c8fb0ce54a0dd0fe9e8142b7f02c55.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='35955d768051d2a6aa79b196c55c3b72cdfc7a6e97'></a> Source: [Azure-RMSDocs\Develop\samples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/samples.md)
-* Status: HandedOffSuccess
+##### <a name='3fd86b87b8e7a7d8983bdb4ebd9cfb4f57c640a597'></a> Source: [Azure-RMSDocs\Develop\samples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/samples.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [samples.c58597c290a03613b3c23fe684b3b52d7c7fb71d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/samples.c58597c290a03613b3c23fe684b3b52d7c7fb71d.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='9ddc1d51c9da60a417ced14377a769eb7e48723998'></a> Source: [Azure-RMSDocs\Develop\sdk-elements.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/sdk-elements.md)
-* Status: HandedOffSuccess
+##### <a name='4893aeaf3ac688164cfa8ec4d5f445790d67f8e298'></a> Source: [Azure-RMSDocs\Develop\sdk-elements.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/sdk-elements.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [sdk-elements.e77ddc62077ae6590d132a8d878cab178b5e6c9d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/sdk-elements.e77ddc62077ae6590d132a8d878cab178b5e6c9d.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='57f09c29116e6e9f84c64b2c6ca525066334a2d299'></a> Source: [Azure-RMSDocs\Develop\setting-the-api-security-mode-api-mode.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/setting-the-api-security-mode-api-mode.md)
-* Status: HandedOffSuccess
+##### <a name='8fd7d8acdc65c044ebb4dd081bc4ea072ec88f0a99'></a> Source: [Azure-RMSDocs\Develop\setting-the-api-security-mode-api-mode.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/setting-the-api-security-mode-api-mode.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [setting-the-api-security-mode-api-mode.12b88d4964f7b1c866fdc1ea1d881e94167149ce.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/setting-the-api-security-mode-api-mode.12b88d4964f7b1c866fdc1ea1d881e94167149ce.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='41d87c0d7d822b9364542f99ebf89ddadb8d20af100'></a> Source: [Azure-RMSDocs\Develop\setup-developer-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/setup-developer-environment.md)
-* Status: HandedOffSuccess
+##### <a name='9a48c5fb155f18de9493f64f51d51768774d617c100'></a> Source: [Azure-RMSDocs\Develop\setup-developer-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/setup-developer-environment.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [setup-developer-environment.fe7dcc31717d937f181e742d8143a86dacf87950.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/setup-developer-environment.fe7dcc31717d937f181e742d8143a86dacf87950.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='eae2b417fb940dcc6d5118401efccd281850c7cd101'></a> Source: [Azure-RMSDocs\Develop\signing-your-application-for-production.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/signing-your-application-for-production.md)
-* Status: HandedOffSuccess
+##### <a name='6286d7aa1e085622bfe95cd05bbaba7a58fe3634101'></a> Source: [Azure-RMSDocs\Develop\signing-your-application-for-production.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/signing-your-application-for-production.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [signing-your-application-for-production.5e6fcbb41cd9075ee7d453bbab12b32c3263f1ec.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/signing-your-application-for-production.5e6fcbb41cd9075ee7d453bbab12b32c3263f1ec.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f627789aeca0d61d71cc78a04cb5bdce1a5c08f6102'></a> Source: [Azure-RMSDocs\Develop\supported-file-formats.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/supported-file-formats.md)
-* Status: HandedOffSuccess
+##### <a name='2ddec25d306a23035b2616d703b94f14a0d06775102'></a> Source: [Azure-RMSDocs\Develop\supported-file-formats.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/supported-file-formats.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [supported-file-formats.27b4937f96c4ddab66e78ee42144204850349aec.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/supported-file-formats.27b4937f96c4ddab66e78ee42144204850349aec.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='94f00409b56954a3cd26321bb62caccb00a90daa103'></a> Source: [Azure-RMSDocs\Develop\supported-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/supported-platforms.md)
-* Status: HandedOffSuccess
+##### <a name='979043d59c72c54e1896e4d2c3db291863607d1a103'></a> Source: [Azure-RMSDocs\Develop\supported-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/supported-platforms.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [supported-platforms.65e919450c5fb3bf7c41888942e0946e35ac25e9.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/supported-platforms.65e919450c5fb3bf7c41888942e0946e35ac25e9.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='a3f7aab00a95a44bdea5b012d9c431f7cd31d97a104'></a> Source: [Azure-RMSDocs\Develop\switching-to-the-production-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/switching-to-the-production-environment.md)
-* Status: HandedOffSuccess
+##### <a name='521f4e235a15a90b60ccd570d5c3d89d92564685104'></a> Source: [Azure-RMSDocs\Develop\switching-to-the-production-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/switching-to-the-production-environment.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [switching-to-the-production-environment.9fd502b4c5314e43a3367b5e630aa2793724a1c9.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/switching-to-the-production-environment.9fd502b4c5314e43a3367b5e630aa2793724a1c9.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ca18cbdb9ec377dc8d9c924c888ae0d6f4c7adb0105'></a> Source: [Azure-RMSDocs\Develop\terms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2e83e18cf298d1f2209982e832ed647b79454271/Azure-RMSDocs/Develop/terms.md)
-* Status: HandedOffSuccess
+##### <a name='33365455f071d87b0f987b4fb48469b401e7de01105'></a> Source: [Azure-RMSDocs\Develop\terms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/Develop/terms.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [terms.15ebfe3602292b8ab735e7dcd56b29ef5e1a4cee.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3c983bfd8b7b5daf1f822f2058719c0e8550f69d/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/terms.15ebfe3602292b8ab735e7dcd56b29ef5e1a4cee.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 01:56:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -2162,12 +2162,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='e6d6601ad0c37bc95dcf21c174d50be127f31a7f141'></a> Source: [Azure-RMSDocs\get-started\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad64e4e5b0ba2d56273d5206b438bb57b9dad55/Azure-RMSDocs/get-started/TOC.md)
-* Status: HandedOffSuccess
+##### <a name='9f0258abe912f485c27baa7ae12276160c5dbdaf141'></a> Source: [Azure-RMSDocs\get-started\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/get-started/TOC.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [TOC.061e69ecee47afaa1c1ef895a0aba86f900aa3b5.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/f5007a2b3f66c23e2b4067485ee1c760097b935f/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.061e69ecee47afaa1c1ef895a0aba86f900aa3b5.zh-cn.xlf)
-* Handoff Datetime: 2016-04-09 00:06:26
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -4771,12 +4771,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='91efdfc3daf1aaf752820ec19c78a259e074ebd0347'></a> Source: [Azure-RMSDocs\plan-design\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad64e4e5b0ba2d56273d5206b438bb57b9dad55/Azure-RMSDocs/plan-design/TOC.md)
-* Status: HandedOffSuccess
+##### <a name='30a2779eda1decf40bc67611710029a3904d0bfd347'></a> Source: [Azure-RMSDocs\plan-design\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/plan-design/TOC.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [TOC.dc94105a837aa695cb03b76dd02a7e6b5a8b0447.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/f5007a2b3f66c23e2b4067485ee1c760097b935f/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.dc94105a837aa695cb03b76dd02a7e6b5a8b0447.zh-cn.xlf)
-* Handoff Datetime: 2016-04-09 00:06:26
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -5577,12 +5577,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='a0d7ccea22c426ed850e59047f323a2fd9111140415'></a> Source: [Azure-RMSDocs\understand-explore\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad64e4e5b0ba2d56273d5206b438bb57b9dad55/Azure-RMSDocs/understand-explore/TOC.md)
-* Status: HandedOffSuccess
+##### <a name='05639efb2490ce57a721dbbcf4b30c52e67e116f415'></a> Source: [Azure-RMSDocs\understand-explore\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c2f702eeeb59ed75f14f08d38413ecd9a41840cf/Azure-RMSDocs/understand-explore/TOC.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [TOC.132273379247391752a00ca59e2585345cd61252.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/f5007a2b3f66c23e2b4067485ee1c760097b935f/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.132273379247391752a00ca59e2585345cd61252.zh-cn.xlf)
-* Handoff Datetime: 2016-04-09 00:06:26
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
