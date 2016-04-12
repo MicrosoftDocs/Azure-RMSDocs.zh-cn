@@ -1682,6 +1682,9 @@
   "a2dc276963910e4032d4aac74f0add632dea5428": [
     "Azure-RMSDocs\\get-started\\requirements-for-azure-rights-management.md"
   ],
+  "9d99c32bc0cb13b32ef31fef774b65de62a81aa3": [
+    "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key.md"
+  ],
   "b531a448d5b3869fdb5d62ea8a022f168e566cac": [
     "Azure-RMSDocs\\deploy-use\\operations-for-your-azure-rights-management-tenant-key.md"
   ],
@@ -1796,6 +1799,9 @@
   "b5476f47752d0cac1e29e73067ae5a3148cb601b": [
     "Azure-RMSDocs\\deploy-use\\configure-custom-templates-for-azure-rights-management-remove-template.md"
   ],
+  "202a26d4e33dc98b93b0fec52ff3097fd573ff50": [
+    "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md"
+  ],
   "9314a94c7b4441a6b41488e0125520aabe9ad65e": [
     "Azure-RMSDocs\\deploy-use\\activating-azure-rights-management.md"
   ],
@@ -1865,11 +1871,17 @@
   "37c14aeba42f7bd4612b90dc937ebd9c20d745ab": [
     "Azure-RMSDocs\\get-started\\rms-requirements-aad-directory.md"
   ],
+  "2294338eff437a7ad200b96b6c096d59b2af96b1": [
+    "Azure-RMSDocs\\get-started\\rms-requirements-client-devices.md"
+  ],
   "0921b368c98f270cf868fd27a595f7b875f06880": [
     "Azure-RMSDocs\\get-started\\rms-requirements-client-devices.md"
   ],
   "ea86abafa90990b8a298c2d84974c0fa5c29a301": [
     "Azure-RMSDocs\\get-started\\rms-requirements-client-devices.md"
+  ],
+  "12cfd88486edbe38ea7811e69585d41ccf221167": [
+    "Azure-RMSDocs\\get-started\\rms-requirements-cloud-subscriptions.md"
   ],
   "ca129f45369b50e4f53fdbdb9e6519180b49f038": [
     "Azure-RMSDocs\\get-started\\rms-requirements-cloud-subscriptions.md"
@@ -1915,6 +1927,9 @@
   ],
   "7303dcf0c26d94d8fe6cb9dd6649f0a50abefd73": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management.md"
+  ],
+  "6f2d852bd290cda7988c27351025c4c6fcf1fc88": [
+    "Azure-RMSDocs\\plan-design\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
   ],
   "41aa83edfe0aa7ffc87f99dc0f1ddf48e96ecf4f": [
     "Azure-RMSDocs\\plan-design\\planning-and-implementing-your-azure-rights-management-tenant-key.md"
@@ -1997,6 +2012,9 @@
   "865b02518519068e00ff2527532102feb1c00100": [
     "Azure-RMSDocs\\understand-explore\\comparing-azure-rights-management-and-ad-rms.md"
   ],
+  "cf88c046c99bfbebce47dfe6ab11863fe3201cf7": [
+    "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
+  ],
   "f935777e86e11fa80c0d7b00dd504a6b6487f5b9": [
     "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
   ],
@@ -2041,6 +2059,9 @@
   ],
   "35651257d73388c5d4913ff9180202e9c912c4bc": [
     "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
+  ],
+  "88e5b2b8bfd32ec0f8c8ee5a076a281b63b2629a": [
+    "Azure-RMSDocs\\deploy-use\\configuring-usage-rights-for-azure-rights-management.md"
   ],
   "7c3ab0def58e9feecf73a7440d576bb7cbb761db": [
     "Azure-RMSDocs\\deploy-use\\configuring-usage-rights-for-azure-rights-management.md"
@@ -2134,6 +2155,9 @@
   ],
   "9b75e36ff326e7d1ef478b7ef89e32d83b3c242a": [
     "Azure-RMSDocs\\Develop\\index.md"
+  ],
+  "65608704b80d962628b2927912ab6f96c1126f8f": [
+    "Azure-RMSDocs\\deploy-use\\TOC.md"
   ],
   "6df54c4ddcbcf98d4cde4571f2bc70a3dea89b27": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
@@ -2308,6 +2332,9 @@
   ],
   "530aed5439b0c6bce77de3010dfd9c63a1435002": [
     "Azure-RMSDocs\\media\\WPSETUP-REFMNGR.png"
+  ],
+  "ce9da90e0589bf215a2287d6c2f2170108cc3b7a": [
+    "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-phase1.md"
   ],
   "0183eaf85808e4bb2f2534b57f7383b81faaa839": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-phase1.md"
