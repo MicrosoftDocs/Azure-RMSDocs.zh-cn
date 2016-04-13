@@ -2042,6 +2042,9 @@
   "37c14aeba42f7bd4612b90dc937ebd9c20d745ab": [
     "Azure-RMSDocs\\get-started\\rms-requirements-aad-directory.md"
   ],
+  "c6be9621170d03226dfef29286d6c5015c971d34": [
+    "Azure-RMSDocs\\get-started\\rms-requirements-client-devices.md"
+  ],
   "2294338eff437a7ad200b96b6c096d59b2af96b1": [
     "Azure-RMSDocs\\get-started\\rms-requirements-client-devices.md"
   ],
@@ -2050,6 +2053,9 @@
   ],
   "ea86abafa90990b8a298c2d84974c0fa5c29a301": [
     "Azure-RMSDocs\\get-started\\rms-requirements-client-devices.md"
+  ],
+  "d09ca69d87cc6e76dd43514380567e8342be9e6d": [
+    "Azure-RMSDocs\\get-started\\rms-requirements-cloud-subscriptions.md"
   ],
   "12cfd88486edbe38ea7811e69585d41ccf221167": [
     "Azure-RMSDocs\\get-started\\rms-requirements-cloud-subscriptions.md"
@@ -2150,6 +2156,9 @@
   "f8defc7baa9077151e5956b190e81047f2510711": [
     "Azure-RMSDocs\\rms-client\\rms-client-deployment-notes.md"
   ],
+  "c7c5b3917d2eb7c65c2cabed0a8b0e6facea4a05": [
+    "Azure-RMSDocs\\rms-client\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md"
+  ],
   "6e920bf78038bdd25e37d974794a6da24cd5199b": [
     "Azure-RMSDocs\\rms-client\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md"
   ],
@@ -2174,6 +2183,9 @@
   "27ef3a51e7d620eb229b15984568ed4989e7b2bf": [
     "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md"
   ],
+  "fc3fa14752c0b6cc70c802d12a2f0bfd7934edd6": [
+    "Azure-RMSDocs\\understand-explore\\comparing-azure-rights-management-and-ad-rms.md"
+  ],
   "e97e3a7140f0967d2c69bd7760f56bc29acb7004": [
     "Azure-RMSDocs\\understand-explore\\comparing-azure-rights-management-and-ad-rms.md"
   ],
@@ -2182,6 +2194,9 @@
   ],
   "865b02518519068e00ff2527532102feb1c00100": [
     "Azure-RMSDocs\\understand-explore\\comparing-azure-rights-management-and-ad-rms.md"
+  ],
+  "20bb5ff254cb575e9766afac598c34e2a972b8bc": [
+    "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
   ],
   "cf88c046c99bfbebce47dfe6ab11863fe3201cf7": [
     "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
@@ -2230,6 +2245,9 @@
   ],
   "35651257d73388c5d4913ff9180202e9c912c4bc": [
     "Azure-RMSDocs\\understand-explore\\what-do-admins-users-see.md"
+  ],
+  "1f497d8f12fa3312fd8390c469bf0b5979c83cd0": [
+    "Azure-RMSDocs\\deploy-use\\configuring-usage-rights-for-azure-rights-management.md"
   ],
   "88e5b2b8bfd32ec0f8c8ee5a076a281b63b2629a": [
     "Azure-RMSDocs\\deploy-use\\configuring-usage-rights-for-azure-rights-management.md"
@@ -2329,6 +2347,9 @@
   ],
   "9b75e36ff326e7d1ef478b7ef89e32d83b3c242a": [
     "Azure-RMSDocs\\Develop\\index.md"
+  ],
+  "e97c2c43a54c50ab1c8537a7b9822ae9d5b7d244": [
+    "Azure-RMSDocs\\deploy-use\\TOC.md"
   ],
   "f8245f070d33072f93a3afbb9cee0371c2fc0ed9": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
