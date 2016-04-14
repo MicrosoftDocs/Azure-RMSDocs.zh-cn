@@ -1,12 +1,13 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/develop/TOC.md) | HandedOffFailed | [Details](#0089bff87efccb3fe3d59e0dab09a1dc135016c6104)
+ [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/8384e299d198a305d3b876b70858e880946cd656/Azure-RMSDocs/scratch.md) | HandedOffSuccess | [Details](#cc8c2aff534c48575835e8a40dfdc040380d1af7364)
 
 ## Item Details
 ##### <a name='0089bff87efccb3fe3d59e0dab09a1dc135016c6104'></a> Source: [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/develop/TOC.md)
@@ -16,6 +17,18 @@
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
 * Handoff Error: [handoff_transform_failed](#0089bff87efccb3fe3d59e0dab09a1dc135016c6104handoff_transform_failed)
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='cc8c2aff534c48575835e8a40dfdc040380d1af7364'></a> Source: [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/8384e299d198a305d3b876b70858e880946cd656/Azure-RMSDocs/scratch.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c98421378f52663da97e2080a3adc328d4b32a77/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-cn.xlf)
+* Handoff Datetime: 2016-04-14 12:52:58
+* Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 

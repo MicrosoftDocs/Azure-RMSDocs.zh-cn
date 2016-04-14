@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "1c504216eea6630088eefde7df06ba588bd37a39",
+  "LastProcessedCommit": "8384e299d198a305d3b876b70858e880946cd656",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -36416,7 +36416,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T12:44:12.5336958Z",
+      "HandoffDateTime": "2016-04-14T12:52:58.0035481Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -36427,7 +36427,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 3,
+      "HandoffFailureTimes": 4,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37297,6 +37297,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-does-it-work.e10d4871d616835b44d201ec5b1212a575d0f425.zh-cn.xlf",
       "HandoffFileCommit": "82422854b83d5943ed62a9bbb898e06406f7a817",
       "HandoffDateTime": "2016-04-14T01:39:36.6443651Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "cc8c2aff534c48575835e8a40dfdc040380d1af7": {
+      "FileHash": "cc8c2aff534c48575835e8a40dfdc040380d1af7",
+      "SourceFileCommit": "8384e299d198a305d3b876b70858e880946cd656",
+      "SourceFilePath": "Azure-RMSDocs\\scratch.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\scratch.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-cn.xlf",
+      "HandoffFileCommit": "c98421378f52663da97e2080a3adc328d4b32a77",
+      "HandoffDateTime": "2016-04-14T12:52:58.0035481Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
