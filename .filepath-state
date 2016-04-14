@@ -283,6 +283,9 @@
   "4e70e072a6b2f0775bdc78ce3fdc7829de8c2a7b": [
     "Azure-RMSDocs\\understand-explore\\rms-for-individuals-and-azure-rights-management.md"
   ],
+  "1f32afa1321b556320d2654dfe0413f0f51375d4": [
+    "Azure-RMSDocs\\get-started\\rms-requirements-onpremises-servers.md"
+  ],
   "95e62ea9a5c4288487bcfb3f64622425ee503434": [
     "Azure-RMSDocs\\get-started\\rms-requirements-onpremises-servers.md"
   ],
@@ -662,6 +665,9 @@
   "e4a4ca2ab24a6bcb011d013635b8b834218c94a6": [
     "Azure-RMSDocs\\plan-design\\preparing-for-azure-rights-management.md"
   ],
+  "3b685019181dbe46bdb99ce2ad43fcf24affb2cb": [
+    "Azure-RMSDocs\\understand-explore\\how-applications-support-azure-rights-management.md"
+  ],
   "2c4dac02ec32eed72238e0724f0e5d302647207d": [
     "Azure-RMSDocs\\understand-explore\\how-applications-support-azure-rights-management.md"
   ],
@@ -810,28 +816,38 @@
     "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
   ],
   "5763a718f00a3e8000baf0d555ca1e12629d5ffe": [
-    "Azure-RMSDocs\\get-started\\rms-quickstart.md"
+    "Azure-RMSDocs\\get-started\\rms-quickstart.md",
+    "Azure-RMSDocs\\troubleshoot\\rms-quickstart.md"
   ],
   "eed8a35c793b0c5f1f65001ee8cb4ab59e638c82": [
     "Azure-RMSDocs\\get-started\\rms-quickstart.md"
   ],
   "da049a41fbe21ff35062b7320bdcd19365596a67": [
-    "Azure-RMSDocs\\get-started\\rms-quickstart-intro.md"
+    "Azure-RMSDocs\\get-started\\rms-quickstart-intro.md",
+    "Azure-RMSDocs\\troubleshoot\\rms-quickstart-intro.md"
   ],
   "910f458a687023ce4970c9add485ef5ec9ae4605": [
-    "Azure-RMSDocs\\get-started\\rms-quickstart-step1.md"
+    "Azure-RMSDocs\\get-started\\rms-quickstart-step1.md",
+    "Azure-RMSDocs\\troubleshoot\\rms-quickstart-step1.md"
   ],
   "39e894529260d12b24ffe671b47d21dea7b198b7": [
-    "Azure-RMSDocs\\get-started\\rms-quickstart-step2.md"
+    "Azure-RMSDocs\\get-started\\rms-quickstart-step2.md",
+    "Azure-RMSDocs\\troubleshoot\\rms-quickstart-step2.md"
   ],
   "99b770ec88ae0427ac61c889ff09d71c9a0683ed": [
-    "Azure-RMSDocs\\get-started\\rms-quickstart-step3.md"
+    "Azure-RMSDocs\\get-started\\rms-quickstart-step3.md",
+    "Azure-RMSDocs\\troubleshoot\\rms-quickstart-step3.md"
   ],
   "6d4ad222b852d1659be43c5a5f7108cb24688f84": [
-    "Azure-RMSDocs\\get-started\\rms-quickstart-step4.md"
+    "Azure-RMSDocs\\get-started\\rms-quickstart-step4.md",
+    "Azure-RMSDocs\\troubleshoot\\rms-quickstart-step4.md"
+  ],
+  "1c5073d1911e856721c8b36bf57335d07047eb19": [
+    "Azure-RMSDocs\\get-started\\rms-quickstart-step5.md"
   ],
   "afb40e3b34602fde4dad519465434d07ad135691": [
-    "Azure-RMSDocs\\get-started\\rms-quickstart-step5.md"
+    "Azure-RMSDocs\\get-started\\rms-quickstart-step5.md",
+    "Azure-RMSDocs\\troubleshoot\\rms-quickstart-step5.md"
   ],
   "57e377ae7948b806c8db88a3c51d5461b8ecef5e": [
     "Azure-RMSDocs\\get-started\\frequently-asked-questions-for-azure-rights-management.md"
@@ -898,6 +914,9 @@
   ],
   "2e0cde6de770abc1c51a032827b2babacc074021": [
     "Azure-RMSDocs\\deploy-use\\sharing-app-install-configure.md"
+  ],
+  "a9f1360441e50643b1983c9f0f81f9567c0f0e14": [
+    "Azure-RMSDocs\\get-started\\rms-requirements-applications.md"
   ],
   "2a4d446081678399d2bef4e35ac3232b10140b25": [
     "Azure-RMSDocs\\get-started\\rms-requirements-applications.md"
@@ -1079,6 +1098,9 @@
   "cd84b7487f8138e194f85290a1c2aeedb83798b9": [
     "Azure-RMSDocs\\get-started\\information-and-support-for-azure-rights-management.md"
   ],
+  "11d997a9bfc95c61c3259d6af08752c33e58d0a7": [
+    "Azure-RMSDocs\\get-started\\rms-requirements-aad-directory.md"
+  ],
   "6dc69936e185c5f28d6313c4ab99d11c366912a3": [
     "Azure-RMSDocs\\get-started\\rms-requirements-aad-directory.md"
   ],
@@ -1087,6 +1109,9 @@
   ],
   "37c14aeba42f7bd4612b90dc937ebd9c20d745ab": [
     "Azure-RMSDocs\\get-started\\rms-requirements-aad-directory.md"
+  ],
+  "5e6588163b2c2f28ff324358d264649f544b2ece": [
+    "Azure-RMSDocs\\get-started\\rms-requirements-client-devices.md"
   ],
   "5e27ac65b9877eb5ed6b22d1ad907997241cdc48": [
     "Azure-RMSDocs\\get-started\\rms-requirements-client-devices.md"
@@ -1102,6 +1127,9 @@
   ],
   "ea86abafa90990b8a298c2d84974c0fa5c29a301": [
     "Azure-RMSDocs\\get-started\\rms-requirements-client-devices.md"
+  ],
+  "eee75b73b00df4ac4f031ade49197600aece42db": [
+    "Azure-RMSDocs\\get-started\\rms-requirements-cloud-subscriptions.md"
   ],
   "14a3eb30ce7ae7e6a7699ae80ce18eb251a7eb6f": [
     "Azure-RMSDocs\\get-started\\rms-requirements-cloud-subscriptions.md"
@@ -1235,6 +1263,9 @@
   "f8defc7baa9077151e5956b190e81047f2510711": [
     "Azure-RMSDocs\\rms-client\\rms-client-deployment-notes.md"
   ],
+  "0b008e0dbcef8dee6594da00955293763ef708ba": [
+    "Azure-RMSDocs\\rms-client\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md"
+  ],
   "bb6c5b2a8edb18368655a68ffe8997072b320cd3": [
     "Azure-RMSDocs\\rms-client\\rms-protection-with-windows-server-file-classification-infrastructure-fci.md"
   ],
@@ -1291,6 +1322,9 @@
   ],
   "865b02518519068e00ff2527532102feb1c00100": [
     "Azure-RMSDocs\\understand-explore\\comparing-azure-rights-management-and-ad-rms.md"
+  ],
+  "475a26d45b4e383c41938490a36786db1b18b7a9": [
+    "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
   ],
   "b0009aa001044a4fae2a188b295697c164ef7c54": [
     "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
@@ -1561,6 +1595,9 @@
   ],
   "3150812bd62969dc5e565f83cfd92b37847fc628": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
+  ],
+  "8674359ba411559c3f85ffe398a9da1382457309": [
+    "Azure-RMSDocs\\get-started\\TOC.md"
   ],
   "9f0258abe912f485c27baa7ae12276160c5dbdaf": [
     "Azure-RMSDocs\\get-started\\TOC.md"
