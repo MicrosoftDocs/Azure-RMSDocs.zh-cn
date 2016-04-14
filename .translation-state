@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a",
+  "LastProcessedCommit": "d8fdad5d5f39cc7c07295a8d9c6330cedab48b57",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -27887,7 +27887,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\ADDITIONAL_DEPENDENCIES.png"
+        "Azure-RMSDocs\\media\\ADDITIONAL_DEPENDENCIES.png",
+        "Azure-RMSDocs\\media\\additional_dependencies.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\e46ef9487910113bda49dfcfa5e3d3e5798432b0.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -27919,7 +27920,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\ANDROID-SETUP-01C.png"
+        "Azure-RMSDocs\\media\\ANDROID-SETUP-01C.png",
+        "Azure-RMSDocs\\media\\Android-setup-01c.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\02716e5c86a0b0774062c9cc80fa4e0a0f15327f.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -27983,7 +27985,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\ANDROID-SETUP-03.png"
+        "Azure-RMSDocs\\media\\ANDROID-SETUP-03.png",
+        "Azure-RMSDocs\\media\\Android-setup-03.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\c3477a01883ae5af469d03da3d9dca8a31aac3a4.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28015,7 +28018,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\ANDROID-SETUP-04.png"
+        "Azure-RMSDocs\\media\\ANDROID-SETUP-04.png",
+        "Azure-RMSDocs\\media\\Android-setup-04.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\ffcdbf5aa9c1bc8a8378a3df2173f8c9dc4d58e1.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28111,7 +28115,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\ANDROID-SETUP-07.png"
+        "Azure-RMSDocs\\media\\ANDROID-SETUP-07.png",
+        "Azure-RMSDocs\\media\\Android-setup-07.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\4b4904b690a72d0d076c1cb2dd668258cab85cef.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28271,7 +28276,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\DELAY_LOADED.png"
+        "Azure-RMSDocs\\media\\DELAY_LOADED.png",
+        "Azure-RMSDocs\\media\\delay_loaded.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\1ac71872262d857f7508d5e230a26d2d8cea1806.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28303,7 +28309,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\INCLUDE_DIRECTORIES.png"
+        "Azure-RMSDocs\\media\\INCLUDE_DIRECTORIES.png",
+        "Azure-RMSDocs\\media\\include_directories.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\a4087526082ea63ca87d755ebbadef292f9eddb0.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28335,7 +28342,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\IOS-ADD-DEPENDENCIES-01A.png"
+        "Azure-RMSDocs\\media\\IOS-ADD-DEPENDENCIES-01A.png",
+        "Azure-RMSDocs\\media\\ios-add-dependencies-01a.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d26028e746a512ad8f690b8b3773fced8def6f61.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28367,7 +28375,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\IOS-ADD-LIBRARIES.png"
+        "Azure-RMSDocs\\media\\IOS-ADD-LIBRARIES.png",
+        "Azure-RMSDocs\\media\\iOS-add-libraries.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\9c0c574873e915e61846adbab067c2c53306a5a4.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28399,7 +28408,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\IOS-ADD-RESOURCE-BUNDLE-02A.png"
+        "Azure-RMSDocs\\media\\IOS-ADD-RESOURCE-BUNDLE-02A.png",
+        "Azure-RMSDocs\\media\\iOS-add-resource-bundle-02a.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\f97647a9eb12bcd946f9c491e2593d00fdf88168.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28431,7 +28441,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\IOS-CREATE-GROUPS.png"
+        "Azure-RMSDocs\\media\\IOS-CREATE-GROUPS.png",
+        "Azure-RMSDocs\\media\\iOS-create-groups.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\40c53d64e64cbfb0cb9ddd22049a0866497705a4.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28463,7 +28474,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\IOS-LINKER-FLAGS.png"
+        "Azure-RMSDocs\\media\\IOS-LINKER-FLAGS.png",
+        "Azure-RMSDocs\\media\\iOS-linker-flags.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d57cbae27ffd084b9b0b89b49094554a07845ae7.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28495,7 +28507,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\IOS-PROJECT.png"
+        "Azure-RMSDocs\\media\\IOS-PROJECT.png",
+        "Azure-RMSDocs\\media\\iOS-Project.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\e579b2fc408332bb3af80b4d1b3357c180d3a538.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28527,7 +28540,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\IOS-PROJECT-OPTIONS.png"
+        "Azure-RMSDocs\\media\\IOS-PROJECT-OPTIONS.png",
+        "Azure-RMSDocs\\media\\iOS-project-options.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\0cd0f81f405bca6d85e0a930d89361f42a0a23f0.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28559,7 +28573,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\IOS-VERIFY-SETUP-01A.png"
+        "Azure-RMSDocs\\media\\IOS-VERIFY-SETUP-01A.png",
+        "Azure-RMSDocs\\media\\iOS-verify-setup-01a.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\19600cf41ab84b1e9783e612be2b8a0e3355188d.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28591,7 +28606,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\LIBRARY_DIRECTORIES.png"
+        "Azure-RMSDocs\\media\\LIBRARY_DIRECTORIES.png",
+        "Azure-RMSDocs\\media\\library_directories.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\c10699685d8b075407c6040a718425e35b523f98.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28623,7 +28639,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\ORIGINAL_FILE_NAME.png"
+        "Azure-RMSDocs\\media\\ORIGINAL_FILE_NAME.png",
+        "Azure-RMSDocs\\media\\original_file_name.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\c986d43dce083a29712ecb2755e9789a4cb4008a.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28655,7 +28672,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\WINRTSETUP-ADDREF.png"
+        "Azure-RMSDocs\\media\\WINRTSETUP-ADDREF.png",
+        "Azure-RMSDocs\\media\\winrtsetup-addref.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\5039decc4e09387eb1b73bcea0b198fe6780f01a.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28687,7 +28705,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\WINRTSETUP-NEWPROJ.png"
+        "Azure-RMSDocs\\media\\WINRTSETUP-NEWPROJ.png",
+        "Azure-RMSDocs\\media\\winrtsetup-newproj.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\ec22a076e6fb8592a1569726e65c9992725b72f1.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28719,7 +28738,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\WINRTSETUP-REFMNGR.png"
+        "Azure-RMSDocs\\media\\WINRTSETUP-REFMNGR.png",
+        "Azure-RMSDocs\\media\\winrtsetup-refmngr.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\7e814b7e842dbb8681c96c078746634b8ea59d29.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28751,7 +28771,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\WPSETUP-ADDREF.png"
+        "Azure-RMSDocs\\media\\WPSETUP-ADDREF.png",
+        "Azure-RMSDocs\\media\\wpsetup-addref.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\d5abf6672cbcfc8349a2ce6467ffdc57a4b3cb45.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28783,7 +28804,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\WPSETUP-NEWPROJ.png"
+        "Azure-RMSDocs\\media\\WPSETUP-NEWPROJ.png",
+        "Azure-RMSDocs\\media\\wpsetup-newproj.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\6e00024ec5eefc8da90b458bb6ea62aacf08e7bc.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -28815,7 +28837,8 @@
       ],
       "TokenReference": null,
       "FilePathList": [
-        "Azure-RMSDocs\\media\\WPSETUP-REFMNGR.png"
+        "Azure-RMSDocs\\media\\WPSETUP-REFMNGR.png",
+        "Azure-RMSDocs\\media\\wpsetup-refmngr.png"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\530aed5439b0c6bce77de3010dfd9c63a1435002.png",
       "HandoffFileCommit": "691b202b6d12a2e70778e2ead652380abcc191e4",
@@ -36425,7 +36448,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -36436,7 +36459,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 6,
+      "HandoffFailureTimes": 7,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37429,7 +37452,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37440,7 +37463,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37466,7 +37489,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37477,7 +37500,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37503,7 +37526,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37514,7 +37537,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37540,7 +37563,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37551,7 +37574,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37577,7 +37600,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37588,7 +37611,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37651,7 +37674,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37662,7 +37685,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37688,7 +37711,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37699,7 +37722,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37725,7 +37748,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37736,7 +37759,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37762,7 +37785,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37773,7 +37796,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37799,7 +37822,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37810,7 +37833,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37836,7 +37859,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37847,7 +37870,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37873,7 +37896,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37884,7 +37907,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37910,7 +37933,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37921,7 +37944,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37947,7 +37970,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37958,7 +37981,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -37984,7 +38007,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -37995,7 +38018,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38021,7 +38044,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38032,7 +38055,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38058,7 +38081,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38069,7 +38092,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38095,7 +38118,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38106,7 +38129,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38132,7 +38155,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38143,7 +38166,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38169,7 +38192,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38180,7 +38203,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38206,7 +38229,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38217,7 +38240,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38280,7 +38303,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38291,7 +38314,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38317,7 +38340,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38328,7 +38351,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38354,7 +38377,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38365,7 +38388,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38391,7 +38414,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38402,7 +38425,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38428,7 +38451,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38439,7 +38462,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38465,7 +38488,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38476,7 +38499,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38539,7 +38562,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38550,7 +38573,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38576,7 +38599,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38587,7 +38610,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38613,7 +38636,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38624,7 +38647,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38687,7 +38710,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38698,7 +38721,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38724,7 +38747,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38735,7 +38758,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38761,7 +38784,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38772,7 +38795,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38798,7 +38821,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38809,7 +38832,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38835,7 +38858,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38846,7 +38869,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38872,7 +38895,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38883,7 +38906,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38909,7 +38932,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38920,7 +38943,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38946,7 +38969,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38957,7 +38980,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -38983,7 +39006,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -38994,7 +39017,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -39301,7 +39324,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -39312,7 +39335,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
         "extended_information": null
       },
-      "HandoffFailureTimes": 1,
+      "HandoffFailureTimes": 2,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -39339,6 +39362,259 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-does-it-work.e10d4871d616835b44d201ec5b1212a575d0f425.zh-cn.xlf",
       "HandoffFileCommit": "712b9dcfc7af1613968ce2397b5c29120b649856",
       "HandoffDateTime": "2016-04-14T17:13:51.013668Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "30a53b910551e7c506db69267808cfdaf71686b8": {
+      "FileHash": "30a53b910551e7c506db69267808cfdaf71686b8",
+      "SourceFileCommit": "d8fdad5d5f39cc7c07295a8d9c6330cedab48b57",
+      "SourceFilePath": "Azure-RMSDocs\\develop\\android-sdk.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\develop\\android-sdk.md"
+      ],
+      "HandoffFilePath": null,
+      "HandoffFileCommit": null,
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
+      "HandoffPriority": "",
+      "HandoffException": {
+        "internal_error_code": "handoff_transform_failed",
+        "internal_error_message": "Handoff source file: Azure-RMSDocs\\develop\\android-sdk.md transformed failed.",
+        "internal_error_retriable": false,
+        "exception_message": "Azure-RMSDocs\\develop\\android-sdk.md file with commit id d8fdad5d5f39cc7c07295a8d9c6330cedab48b57 can not be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
+        "extended_information": null
+      },
+      "HandoffFailureTimes": 1,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "6f633d2e7b4850c1985a50c6b3a7a03bbbe8a027": {
+      "FileHash": "6f633d2e7b4850c1985a50c6b3a7a03bbbe8a027",
+      "SourceFileCommit": "d8fdad5d5f39cc7c07295a8d9c6330cedab48b57",
+      "SourceFilePath": "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
+      ],
+      "HandoffFilePath": null,
+      "HandoffFileCommit": null,
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
+      "HandoffPriority": "",
+      "HandoffException": {
+        "internal_error_code": "handoff_transform_failed",
+        "internal_error_message": "Handoff source file: Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md transformed failed.",
+        "internal_error_retriable": false,
+        "exception_message": "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md file with commit id d8fdad5d5f39cc7c07295a8d9c6330cedab48b57 can not be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
+        "extended_information": null
+      },
+      "HandoffFailureTimes": 1,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "73065081958c1ccb07d362fad317fc4f4b784e32": {
+      "FileHash": "73065081958c1ccb07d362fad317fc4f4b784e32",
+      "SourceFileCommit": "d8fdad5d5f39cc7c07295a8d9c6330cedab48b57",
+      "SourceFilePath": "Azure-RMSDocs\\develop\\ios-sdk.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\develop\\ios-sdk.md"
+      ],
+      "HandoffFilePath": null,
+      "HandoffFileCommit": null,
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
+      "HandoffPriority": "",
+      "HandoffException": {
+        "internal_error_code": "handoff_transform_failed",
+        "internal_error_message": "Handoff source file: Azure-RMSDocs\\develop\\ios-sdk.md transformed failed.",
+        "internal_error_retriable": false,
+        "exception_message": "Azure-RMSDocs\\develop\\ios-sdk.md file with commit id d8fdad5d5f39cc7c07295a8d9c6330cedab48b57 can not be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
+        "extended_information": null
+      },
+      "HandoffFailureTimes": 1,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "7e73ad542cba252e2b5b625370bb5e7814661f56": {
+      "FileHash": "7e73ad542cba252e2b5b625370bb5e7814661f56",
+      "SourceFileCommit": "d8fdad5d5f39cc7c07295a8d9c6330cedab48b57",
+      "SourceFilePath": "Azure-RMSDocs\\develop\\obtaining-a-production-license.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\develop\\obtaining-a-production-license.md"
+      ],
+      "HandoffFilePath": null,
+      "HandoffFileCommit": null,
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
+      "HandoffPriority": "",
+      "HandoffException": {
+        "internal_error_code": "handoff_transform_failed",
+        "internal_error_message": "Handoff source file: Azure-RMSDocs\\develop\\obtaining-a-production-license.md transformed failed.",
+        "internal_error_retriable": false,
+        "exception_message": "Azure-RMSDocs\\develop\\obtaining-a-production-license.md file with commit id d8fdad5d5f39cc7c07295a8d9c6330cedab48b57 can not be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
+        "extended_information": null
+      },
+      "HandoffFailureTimes": 1,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "38fb52160d26487f99c2671056fcbafb161ac4b5": {
+      "FileHash": "38fb52160d26487f99c2671056fcbafb161ac4b5",
+      "SourceFileCommit": "d8fdad5d5f39cc7c07295a8d9c6330cedab48b57",
+      "SourceFilePath": "Azure-RMSDocs\\develop\\windows-phone-apps.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\develop\\windows-phone-apps.md"
+      ],
+      "HandoffFilePath": null,
+      "HandoffFileCommit": null,
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
+      "HandoffPriority": "",
+      "HandoffException": {
+        "internal_error_code": "handoff_transform_failed",
+        "internal_error_message": "Handoff source file: Azure-RMSDocs\\develop\\windows-phone-apps.md transformed failed.",
+        "internal_error_retriable": false,
+        "exception_message": "Azure-RMSDocs\\develop\\windows-phone-apps.md file with commit id d8fdad5d5f39cc7c07295a8d9c6330cedab48b57 can not be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
+        "extended_information": null
+      },
+      "HandoffFailureTimes": 1,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "c99f516698682be1ccaa1c6fe91b24a75bb2616f": {
+      "FileHash": "c99f516698682be1ccaa1c6fe91b24a75bb2616f",
+      "SourceFileCommit": "d8fdad5d5f39cc7c07295a8d9c6330cedab48b57",
+      "SourceFilePath": "Azure-RMSDocs\\develop\\winrt-sdk.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\develop\\winrt-sdk.md"
+      ],
+      "HandoffFilePath": null,
+      "HandoffFileCommit": null,
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
+      "HandoffPriority": "",
+      "HandoffException": {
+        "internal_error_code": "handoff_transform_failed",
+        "internal_error_message": "Handoff source file: Azure-RMSDocs\\develop\\winrt-sdk.md transformed failed.",
+        "internal_error_retriable": false,
+        "exception_message": "Azure-RMSDocs\\develop\\winrt-sdk.md file with commit id d8fdad5d5f39cc7c07295a8d9c6330cedab48b57 can not be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359",
+        "extended_information": null
+      },
+      "HandoffFailureTimes": 1,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "cb4c1f48a6689d260b479437f66a250a5bf5d7fd": {
+      "FileHash": "cb4c1f48a6689d260b479437f66a250a5bf5d7fd",
+      "SourceFileCommit": "d8fdad5d5f39cc7c07295a8d9c6330cedab48b57",
+      "SourceFilePath": "Azure-RMSDocs\\media\\wedge.gif",
+      "HandoffReason": 2,
+      "DependencyFrom": [
+        "Azure-RMSDocs\\develop\\obtaining-a-production-license.md"
+      ],
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\media\\wedge.gif"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\cb4c1f48a6689d260b479437f66a250a5bf5d7fd.gif",
+      "HandoffFileCommit": "6d856a79337b688df517dfe0a41fc28d44e0c9fd",
+      "HandoffDateTime": "2016-04-14T18:42:31.7060871Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

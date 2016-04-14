@@ -17,11 +17,6 @@
   "291203a2ca2e494d5ccc5206af3f44d628c20e97": [
     "Azure-RMSDocs\\media\\AzRMS_SharePointConnector.png"
   ],
-  "80f16e5851e574014594e4d93ba194beb2cc9653": [
-    "Azure-RMSDocs\\deploy-use\\Sample.md",
-    "Azure-RMSDocs\\plan-design\\Sample.md",
-    "Azure-RMSDocs\\understand-explore\\Sample.md"
-  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "Azure-RMSDocs\\troubleshoot\\TOC.md"
   ],
@@ -1711,19 +1706,19 @@
     "Azure-RMSDocs\\deploy-use\\install-and-configure-the-rms-connector.md"
   ],
   "e46ef9487910113bda49dfcfa5e3d3e5798432b0": [
-    "Azure-RMSDocs\\media\\ADDITIONAL_DEPENDENCIES.png"
+    "Azure-RMSDocs\\media\\additional_dependencies.png"
   ],
   "02716e5c86a0b0774062c9cc80fa4e0a0f15327f": [
-    "Azure-RMSDocs\\media\\ANDROID-SETUP-01C.png"
+    "Azure-RMSDocs\\media\\Android-setup-01c.png"
   ],
   "bc27005fbd3730e7bf5a7bf0cab72c8efe4f27ba": [
     "Azure-RMSDocs\\media\\Android-setup-02a.jpg"
   ],
   "c3477a01883ae5af469d03da3d9dca8a31aac3a4": [
-    "Azure-RMSDocs\\media\\ANDROID-SETUP-03.png"
+    "Azure-RMSDocs\\media\\Android-setup-03.png"
   ],
   "ffcdbf5aa9c1bc8a8378a3df2173f8c9dc4d58e1": [
-    "Azure-RMSDocs\\media\\ANDROID-SETUP-04.png"
+    "Azure-RMSDocs\\media\\Android-setup-04.png"
   ],
   "20e013ebc998587d659bba6021c2a5301f5b6c63": [
     "Azure-RMSDocs\\media\\Android-setup-05a.jpg"
@@ -1732,7 +1727,7 @@
     "Azure-RMSDocs\\media\\Android-setup-06.jpg"
   ],
   "4b4904b690a72d0d076c1cb2dd668258cab85cef": [
-    "Azure-RMSDocs\\media\\ANDROID-SETUP-07.png"
+    "Azure-RMSDocs\\media\\Android-setup-07.png"
   ],
   "01a093bf5777bc03006159eb3ca69293279cd1ce": [
     "Azure-RMSDocs\\media\\Android-setup-08c.jpg"
@@ -1747,58 +1742,58 @@
     "Azure-RMSDocs\\media\\Android-setup-11d.jpg"
   ],
   "1ac71872262d857f7508d5e230a26d2d8cea1806": [
-    "Azure-RMSDocs\\media\\DELAY_LOADED.png"
+    "Azure-RMSDocs\\media\\delay_loaded.png"
   ],
   "a4087526082ea63ca87d755ebbadef292f9eddb0": [
-    "Azure-RMSDocs\\media\\INCLUDE_DIRECTORIES.png"
+    "Azure-RMSDocs\\media\\include_directories.png"
   ],
   "d26028e746a512ad8f690b8b3773fced8def6f61": [
-    "Azure-RMSDocs\\media\\IOS-ADD-DEPENDENCIES-01A.png"
+    "Azure-RMSDocs\\media\\ios-add-dependencies-01a.png"
   ],
   "9c0c574873e915e61846adbab067c2c53306a5a4": [
-    "Azure-RMSDocs\\media\\IOS-ADD-LIBRARIES.png"
+    "Azure-RMSDocs\\media\\iOS-add-libraries.png"
   ],
   "f97647a9eb12bcd946f9c491e2593d00fdf88168": [
-    "Azure-RMSDocs\\media\\IOS-ADD-RESOURCE-BUNDLE-02A.png"
+    "Azure-RMSDocs\\media\\iOS-add-resource-bundle-02a.png"
   ],
   "40c53d64e64cbfb0cb9ddd22049a0866497705a4": [
-    "Azure-RMSDocs\\media\\IOS-CREATE-GROUPS.png"
+    "Azure-RMSDocs\\media\\iOS-create-groups.png"
   ],
   "d57cbae27ffd084b9b0b89b49094554a07845ae7": [
-    "Azure-RMSDocs\\media\\IOS-LINKER-FLAGS.png"
+    "Azure-RMSDocs\\media\\iOS-linker-flags.png"
   ],
   "e579b2fc408332bb3af80b4d1b3357c180d3a538": [
-    "Azure-RMSDocs\\media\\IOS-PROJECT.png"
+    "Azure-RMSDocs\\media\\iOS-Project.png"
   ],
   "0cd0f81f405bca6d85e0a930d89361f42a0a23f0": [
-    "Azure-RMSDocs\\media\\IOS-PROJECT-OPTIONS.png"
+    "Azure-RMSDocs\\media\\iOS-project-options.png"
   ],
   "19600cf41ab84b1e9783e612be2b8a0e3355188d": [
-    "Azure-RMSDocs\\media\\IOS-VERIFY-SETUP-01A.png"
+    "Azure-RMSDocs\\media\\iOS-verify-setup-01a.png"
   ],
   "c10699685d8b075407c6040a718425e35b523f98": [
-    "Azure-RMSDocs\\media\\LIBRARY_DIRECTORIES.png"
+    "Azure-RMSDocs\\media\\library_directories.png"
   ],
   "c986d43dce083a29712ecb2755e9789a4cb4008a": [
-    "Azure-RMSDocs\\media\\ORIGINAL_FILE_NAME.png"
+    "Azure-RMSDocs\\media\\original_file_name.png"
   ],
   "5039decc4e09387eb1b73bcea0b198fe6780f01a": [
-    "Azure-RMSDocs\\media\\WINRTSETUP-ADDREF.png"
+    "Azure-RMSDocs\\media\\winrtsetup-addref.png"
   ],
   "ec22a076e6fb8592a1569726e65c9992725b72f1": [
-    "Azure-RMSDocs\\media\\WINRTSETUP-NEWPROJ.png"
+    "Azure-RMSDocs\\media\\winrtsetup-newproj.png"
   ],
   "7e814b7e842dbb8681c96c078746634b8ea59d29": [
-    "Azure-RMSDocs\\media\\WINRTSETUP-REFMNGR.png"
+    "Azure-RMSDocs\\media\\winrtsetup-refmngr.png"
   ],
   "d5abf6672cbcfc8349a2ce6467ffdc57a4b3cb45": [
-    "Azure-RMSDocs\\media\\WPSETUP-ADDREF.png"
+    "Azure-RMSDocs\\media\\wpsetup-addref.png"
   ],
   "6e00024ec5eefc8da90b458bb6ea62aacf08e7bc": [
-    "Azure-RMSDocs\\media\\WPSETUP-NEWPROJ.png"
+    "Azure-RMSDocs\\media\\wpsetup-newproj.png"
   ],
   "530aed5439b0c6bce77de3010dfd9c63a1435002": [
-    "Azure-RMSDocs\\media\\WPSETUP-REFMNGR.png"
+    "Azure-RMSDocs\\media\\wpsetup-refmngr.png"
   ],
   "9b195a286a0a8b629720301fcebe842492b2aec6": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-phase1.md"
@@ -1857,11 +1852,17 @@
   "df885f56aa2e7cf6679c5e86b4b4f42b46803e48": [
     "Azure-RMSDocs\\develop\\usage-restriction-reference.md"
   ],
+  "38fb52160d26487f99c2671056fcbafb161ac4b5": [
+    "Azure-RMSDocs\\develop\\windows-phone-apps.md"
+  ],
   "d2808f208196ca261d5da2120ba2ae84837b3008": [
     "Azure-RMSDocs\\develop\\windows-phone-apps.md"
   ],
   "685959560874274fa9c36d85bfbe27ea5ae3df7d": [
     "Azure-RMSDocs\\develop\\windows-phone-apps.md"
+  ],
+  "c99f516698682be1ccaa1c6fe91b24a75bb2616f": [
+    "Azure-RMSDocs\\develop\\winrt-sdk.md"
   ],
   "1f8ac5ab5c6761e8b2289a3c71f86135176ee9b8": [
     "Azure-RMSDocs\\develop\\winrt-sdk.md"
@@ -1949,6 +1950,9 @@
   ],
   "e59dd5d38b1c89e685c8f4d061ee20487e9b84eb": [
     "Azure-RMSDocs\\develop\\android-code.md"
+  ],
+  "30a53b910551e7c506db69267808cfdaf71686b8": [
+    "Azure-RMSDocs\\develop\\android-sdk.md"
   ],
   "0ad83ed44a77896788d5babfbd672358e8860cc7": [
     "Azure-RMSDocs\\develop\\android-sdk.md"
@@ -2064,6 +2068,9 @@
   "c386ee9317aad13b1b84f1a16513c293e788dcea": [
     "Azure-RMSDocs\\develop\\how-to-build-your-first-application.md"
   ],
+  "6f633d2e7b4850c1985a50c6b3a7a03bbbe8a027": [
+    "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
+  ],
   "cadef4f0459786507cd7faad22da8d21ebae6e36": [
     "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
   ],
@@ -2118,6 +2125,9 @@
   "3ff3ef0854087c3ff712645c753ba0f077afbd2d": [
     "Azure-RMSDocs\\develop\\ios-os-x-code-examples.md"
   ],
+  "73065081958c1ccb07d362fad317fc4f4b784e32": [
+    "Azure-RMSDocs\\develop\\ios-sdk.md"
+  ],
   "e9e254cade41a652ef070bc293b5d4d6fe5b91b3": [
     "Azure-RMSDocs\\develop\\ios-sdk.md"
   ],
@@ -2144,6 +2154,9 @@
   ],
   "bc53cf4290a5cc0794151f5d90a2757e701a43ac": [
     "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
+  ],
+  "7e73ad542cba252e2b5b625370bb5e7814661f56": [
+    "Azure-RMSDocs\\develop\\obtaining-a-production-license.md"
   ],
   "d76d172a95f336827e3800407b1a6dcae6141cd0": [
     "Azure-RMSDocs\\develop\\obtaining-a-production-license.md"
@@ -2216,5 +2229,8 @@
   ],
   "0089bff87efccb3fe3d59e0dab09a1dc135016c6": [
     "Azure-RMSDocs\\develop\\TOC.md"
+  ],
+  "cb4c1f48a6689d260b479437f66a250a5bf5d7fd": [
+    "Azure-RMSDocs\\media\\wedge.gif"
   ]
 }
