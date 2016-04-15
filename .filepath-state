@@ -1227,6 +1227,9 @@
   "9b4aac1447b41bcf96be3abc1fbd68ac33688e6a": [
     "Azure-RMSDocs\\plan-design\\implementing-your-azure-rights-management-tenant-key.md"
   ],
+  "cbc332ec3cd1ca26cd0ddf3f9fde9df2aff35528": [
+    "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management.md"
+  ],
   "77925e93d8d628feb67d1950327492f30d61e2dd": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management.md"
   ],
@@ -1674,6 +1677,9 @@
   "3150812bd62969dc5e565f83cfd92b37847fc628": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
   ],
+  "7c375129a0d80355b6e04c35c78d7e4b42131b08": [
+    "Azure-RMSDocs\\get-started\\TOC.md"
+  ],
   "bc25f79632de075a1a8a562077070b82ae753169": [
     "Azure-RMSDocs\\get-started\\TOC.md"
   ],
@@ -1872,11 +1878,17 @@
   "0c03ca3967425238ce42028a36aedeee8fb4ac14": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-phase1.md"
   ],
+  "0f5741373fce873040f91f489e166d9ba891ee9d": [
+    "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-phase2.md"
+  ],
   "0d47d4330547b110b158ebac3f45136750133c19": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-phase2.md"
   ],
   "c0ac3dfd8c1d0eee4ce991aa0df19ec8b1c1d8a1": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-phase2.md"
+  ],
+  "3ac36607e8f099a52fad9ad7caedf6b9e5e60825": [
+    "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-phase3.md"
   ],
   "c9e34dfade34b1fb956862c9abd2f80935e90c19": [
     "Azure-RMSDocs\\plan-design\\migrating-from-ad-rms-to-azure-rights-management-phase3.md"
