@@ -1,68 +1,73 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 48
+ Total Files | 53
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\develop\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | HandedOffFailed | [Details](#8c36804bf788fe31a4b4ba8bbd996903172b760144)
+ [Azure-RMSDocs\develop\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | HandedOffFailed | [Details](#482a4fdf47624e36569e07a6993672564e44764a44)
  [Azure-RMSDocs\develop\add-explicit-owner-rights.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/add-explicit-owner-rights.md) | HandedOffFailed | [Details](#aae4987d73c056491f91d469dcc1ed2c27e6a9d049)
  [Azure-RMSDocs\develop\ad-rms-client.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/ad-rms-client.md) | HandedOffFailed | [Details](#176b82b63fad760988ec73f990933a8f6f96ce9f45)
- [Azure-RMSDocs\develop\ad-rms-concepts-nav.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/ad-rms-concepts-nav.md) | HandedOffFailed | [Details](#0bebcc03163e3659e9e32ae940011d60b7515d8e46)
+ [Azure-RMSDocs\develop\ad-rms-concepts-nav.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/ad-rms-concepts-nav.md) | HandedOffFailed | [Details](#1724b28400400b05df30784a014221dcc00100d146)
+ [Azure-RMSDocs\develop\ad-rms-overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/ad-rms-overview.md) | HandedOffFailed | [Details](#1f0e1a3822c0c5a5ce793f2466f04a7c7ce2c86447)
  [Azure-RMSDocs\develop\ad-rms-server.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/ad-rms-server.md) | HandedOffFailed | [Details](#118a758a90d38f85e6392e918661d1532e11f02f48)
- [Azure-RMSDocs\develop\android-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d8fdad5d5f39cc7c07295a8d9c6330cedab48b57/Azure-RMSDocs/develop/android-sdk.md) | HandedOffFailed | [Details](#30a53b910551e7c506db69267808cfdaf71686b851)
- [Azure-RMSDocs\develop\api-reference-4-2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/api-reference-4-2.md) | HandedOffFailed | [Details](#f642cd1a7f520ae916a28e8812f7fb82bc9caffe52)
+ [Azure-RMSDocs\develop\android-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/android-sdk.md) | HandedOffFailed | [Details](#ba7c3e45ee11d03b7da43384770c08297719af9951)
+ [Azure-RMSDocs\develop\api-reference-4-2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/api-reference-4-2.md) | HandedOffFailed | [Details](#f23aed10f4369a8ce0f9df1d672eafbee36899c552)
  [Azure-RMSDocs\develop\application-id.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/application-id.md) | HandedOffFailed | [Details](#912371216245d5311be9c5e8f21c90cb2be6e2bb53)
- [Azure-RMSDocs\develop\application-types.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/application-types.md) | HandedOffFailed | [Details](#1aa8418a4039bd60897550eb72c6afacad54e43f54)
+ [Azure-RMSDocs\develop\application-types.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/application-types.md) | HandedOffFailed | [Details](#bd2085f16afa59b2c48a273c6656bd136a5eaa8754)
  [Azure-RMSDocs\develop\authentication-integration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/authentication-integration.md) | HandedOffFailed | [Details](#3180858a34ff0f2c6c02533020c2725ba264962455)
  [Azure-RMSDocs\develop\code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/code-examples.md) | HandedOffFailed | [Details](#24e7a1051e80b7774ae2d207b2d550299df07f5357)
  [Azure-RMSDocs\develop\common-error-conditions-and-solutions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/common-error-conditions-and-solutions.md) | HandedOffFailed | [Details](#76ee69ff7e03ac93f1ad200d1ca3b71e9e35a13d58)
  [Azure-RMSDocs\develop\core-concepts.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/core-concepts.md) | HandedOffFailed | [Details](#2e95e3f1be444671d9057b0902f089ee5f341a2560)
- [Azure-RMSDocs\develop\create-your-first-rights-aware-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/create-your-first-rights-aware-application.md) | HandedOffFailed | [Details](#6a0eb6584291d5e0c7fcc96febf1fc4e71c54cc161)
+ [Azure-RMSDocs\develop\create-your-first-rights-aware-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/create-your-first-rights-aware-application.md) | HandedOffFailed | [Details](#57d1c27b50b4cab19d9110cd7b25faf34187eadb61)
  [Azure-RMSDocs\develop\debugging-applications-that-use-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/debugging-applications-that-use-ad-rms.md) | HandedOffFailed | [Details](#ce5f67fda8a7486ad84b1271fb16f8fd055ccb0462)
  [Azure-RMSDocs\develop\deploying-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/deploying-your-application.md) | HandedOffFailed | [Details](#1edf6284557f60aaf6406b95e33b4d7f77a43df263)
- [Azure-RMSDocs\develop\developer-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/developer-notes.md) | HandedOffFailed | [Details](#9c894617c1758600aefc0c173425b9eb53a9690464)
+ [Azure-RMSDocs\develop\developer-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/developer-notes.md) | HandedOffFailed | [Details](#ae724cf4714bf50b5b7d1865dc2b29a98e33bfb164)
  [Azure-RMSDocs\develop\differences-between-ad-rms-and-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/differences-between-ad-rms-and-ad-rms-2-0.md) | HandedOffFailed | [Details](#e73799d698a4fd6bca5f7e366296633d3f99cbae66)
  [Azure-RMSDocs\develop\file-api-configuration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/file-api-configuration.md) | HandedOffFailed | [Details](#b18050b4f1008c5492bba0978e655f8fd2d0560269)
- [Azure-RMSDocs\develop\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/get-started.md) | HandedOffFailed | [Details](#c4343982a86b0f4abd55a8254d5040241a506cb970)
- [Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/getting-started-with-ad-rms-2-0.md) | HandedOffFailed | [Details](#99714ab34027e5dab3c3b955089e259aa7eb486971)
+ [Azure-RMSDocs\develop\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/get-started.md) | HandedOffFailed | [Details](#b9366316f22a3266797f7fef649cb506ea8431f470)
+ [Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/getting-started-with-ad-rms-2-0.md) | HandedOffFailed | [Details](#513ca8f478b24688bcf26de1742778335280833d71)
  [Azure-RMSDocs\develop\how-to-build-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/how-to-build-your-first-application.md) | HandedOffFailed | [Details](#b6091efb1575a56a07f3d8e2f6cb5ad7690fe4d172)
  [Azure-RMSDocs\develop\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d8fdad5d5f39cc7c07295a8d9c6330cedab48b57/Azure-RMSDocs/develop/how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | HandedOffFailed | [Details](#6f633d2e7b4850c1985a50c6b3a7a03bbbe8a02773)
- [Azure-RMSDocs\develop\how-to-configure-the-ad-rms-client-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/how-to-configure-the-ad-rms-client-2-0.md) | HandedOffFailed | [Details](#272b10b28a3f5773e15b2e286cb3ba6701e8b75474)
+ [Azure-RMSDocs\develop\how-to-configure-the-ad-rms-client-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/how-to-configure-the-ad-rms-client-2-0.md) | HandedOffFailed | [Details](#880246c0e2f1a852699f98d90ec46d26877930f574)
  [Azure-RMSDocs\develop\how-to-install-and-configure-an-rms-server.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/how-to-install-and-configure-an-rms-server.md) | HandedOffFailed | [Details](#1593a4196015cc041cfc014c9407bdd96da6b11c76)
- [Azure-RMSDocs\develop\how-to-set-up-the-pre-production-development-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/how-to-set-up-the-pre-production-development-environment.md) | HandedOffFailed | [Details](#6e817c3536e3c22babc5dccace0f71eaf9fd2a0f77)
- [Azure-RMSDocs\develop\how-to-set-up-your-test-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/how-to-set-up-your-test-environment.md) | HandedOffFailed | [Details](#7a53910f9a06b1952370d815ec00bf233ff6a60778)
- [Azure-RMSDocs\develop\how-to-use-file-api-with-aadrm-cloud.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/how-to-use-file-api-with-aadrm-cloud.md) | HandedOffFailed | [Details](#60f14b8bbede40e9a2ed19ce79c906ea6e04d14c80)
+ [Azure-RMSDocs\develop\how-to-set-up-the-pre-production-development-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/how-to-set-up-the-pre-production-development-environment.md) | HandedOffFailed | [Details](#3070966ce8255fc302cba8be4e8596335679d12c77)
+ [Azure-RMSDocs\develop\how-to-set-up-your-test-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/how-to-set-up-your-test-environment.md) | HandedOffFailed | [Details](#d43535f3eb4535b7094c11681b32ede5a293dfc878)
+ [Azure-RMSDocs\develop\how-to-use-file-api-with-aadrm-cloud.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/how-to-use-file-api-with-aadrm-cloud.md) | HandedOffFailed | [Details](#c48f02f1e562fbd9bce0e5f386ed84458e40365580)
  [Azure-RMSDocs\develop\how-to-use-msipc.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/how-to-use-msipc.md) | HandedOffFailed | [Details](#1af3b288dd392d9b6563a8d7a640b3965d46735281)
- [Azure-RMSDocs\develop\ios-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d8fdad5d5f39cc7c07295a8d9c6330cedab48b57/Azure-RMSDocs/develop/ios-sdk.md) | HandedOffFailed | [Details](#73065081958c1ccb07d362fad317fc4f4b784e3284)
+ [Azure-RMSDocs\develop\ios-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/ios-sdk.md) | HandedOffFailed | [Details](#484db454c9fab23e982bfb2697584e85bccb57de84)
  [Azure-RMSDocs\develop\linux-c-api-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/linux-c-api-reference.md) | HandedOffFailed | [Details](#283654c6e489c4cdf0b687c6ab7c43ce8652dc0e85)
- [Azure-RMSDocs\develop\linux-setup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/linux-setup.md) | HandedOffFailed | [Details](#5ffa3f16ad1e3fbd6f94840336ecf32d817df14987)
- [Azure-RMSDocs\develop\microsoft-information-protection-and-control-client-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/microsoft-information-protection-and-control-client-portal.md) | HandedOffFailed | [Details](#af7e4e10f5c2eb4c3b325075eee3e2da0d71b5a388)
+ [Azure-RMSDocs\develop\linux-setup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/linux-setup.md) | HandedOffFailed | [Details](#c18c1dff241e9d357447eed6ed278cd3d93e429b87)
+ [Azure-RMSDocs\develop\microsoft-information-protection-and-control-client-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/microsoft-information-protection-and-control-client-portal.md) | HandedOffFailed | [Details](#a021bf059057104fbb03ed2948998eac86713b1088)
  [Azure-RMSDocs\develop\obtaining-a-production-license.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d8fdad5d5f39cc7c07295a8d9c6330cedab48b57/Azure-RMSDocs/develop/obtaining-a-production-license.md) | HandedOffFailed | [Details](#7e73ad542cba252e2b5b625370bb5e7814661f5689)
  [Azure-RMSDocs\develop\overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/overview.md) | HandedOffFailed | [Details](#498b270a75c362f6a7ae34874a1fd5054f624bc190)
- [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/release-notes.md) | HandedOffFailed | [Details](#46f443cb3f1a194a96e654b6bd94b91abf445e4392)
- [Azure-RMSDocs\develop\release-notes-rtm.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/release-notes-rtm.md) | HandedOffFailed | [Details](#f524bad20838888a5a4112d791dc806e6b1d69fd91)
- [Azure-RMSDocs\develop\running-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/running-your-first-application.md) | HandedOffFailed | [Details](#f9bd90c6099215b9701e017e715d44d1204b964a93)
+ [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/release-notes.md) | HandedOffFailed | [Details](#75d96498b862ba7264f09350199dbf1f8593284c92)
+ [Azure-RMSDocs\develop\release-notes-rtm.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/release-notes-rtm.md) | HandedOffFailed | [Details](#cd063a000e27fc016bfec1e1337c16b7c02024ec91)
+ [Azure-RMSDocs\develop\running-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/running-your-first-application.md) | HandedOffFailed | [Details](#457432a6611eb7010129bea13d0aa4917ac7231093)
  [Azure-RMSDocs\develop\samples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/samples.md) | HandedOffFailed | [Details](#c248341851d7f16639cc7d323293b9b26d27e9bd94)
- [Azure-RMSDocs\develop\setup-developer-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/setup-developer-environment.md) | HandedOffFailed | [Details](#6eaea17084d05c1d7c5f35287ad2e965e44d4bd297)
+ [Azure-RMSDocs\develop\sdk-elements.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/sdk-elements.md) | HandedOffFailed | [Details](#926aba371244baef47a3afff92be08ec8ee1f40d95)
+ [Azure-RMSDocs\develop\setting-the-api-security-mode-api-mode.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/setting-the-api-security-mode-api-mode.md) | HandedOffFailed | [Details](#5795bd683e8295907ac8c37e111223589e71d65296)
+ [Azure-RMSDocs\develop\setup-developer-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/setup-developer-environment.md) | HandedOffFailed | [Details](#daa9555808ace62ac2e165100249909ff765f14097)
  [Azure-RMSDocs\develop\signing-your-application-for-production.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/signing-your-application-for-production.md) | HandedOffFailed | [Details](#6276b460d151834c7b806eb78cad59810e58a50098)
  [Azure-RMSDocs\develop\supported-file-formats.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/supported-file-formats.md) | HandedOffFailed | [Details](#04a910ec604b23c1e476399d8f1ee0dec9722d4a99)
  [Azure-RMSDocs\develop\switching-to-the-production-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/switching-to-the-production-environment.md) | HandedOffFailed | [Details](#c5813539a709da95254a06da2bf5fa6a75c58866101)
  [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/develop/TOC.md) | HandedOffFailed | [Details](#0089bff87efccb3fe3d59e0dab09a1dc135016c6103)
- [Azure-RMSDocs\develop\windows-phone-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d8fdad5d5f39cc7c07295a8d9c6330cedab48b57/Azure-RMSDocs/develop/windows-phone-apps.md) | HandedOffFailed | [Details](#38fb52160d26487f99c2671056fcbafb161ac4b5108)
- [Azure-RMSDocs\develop\winrt-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d8fdad5d5f39cc7c07295a8d9c6330cedab48b57/Azure-RMSDocs/develop/winrt-sdk.md) | HandedOffFailed | [Details](#c99f516698682be1ccaa1c6fe91b24a75bb2616f109)
- [Azure-RMSDocs\media\wedge.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d8fdad5d5f39cc7c07295a8d9c6330cedab48b57/Azure-RMSDocs/media/wedge.gif) | HandedOffSuccess | [Details](#cb4c1f48a6689d260b479437f66a250a5bf5d7fd314)
+ [Azure-RMSDocs\develop\understanding-certificate-chains.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/understanding-certificate-chains.md) | HandedOffFailed | [Details](#8ff8042661068e94790bb375f9e699aaf118597e105)
+ [Azure-RMSDocs\develop\understanding-usage-restrictions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/understanding-usage-restrictions.md) | HandedOffFailed | [Details](#e1bd57236f2d72bfbbbc1da8b59a656c68336e59106)
+ [Azure-RMSDocs\develop\windows-phone-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/windows-phone-apps.md) | HandedOffFailed | [Details](#3c0568ed78e1b43b427c4b76f24ef5ebb3b01b0a108)
+ [Azure-RMSDocs\develop\winrt-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/winrt-sdk.md) | HandedOffFailed | [Details](#8ff62ddc633f26968d492a912108f875eb0ecb34109)
+ [Azure-RMSDocs\develop\working-with-encryption.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/working-with-encryption.md) | HandedOffFailed | [Details](#a6cced8b36835dc6707b9499c1905dd2861217e1110)
  [Azure-RMSDocs\troubleshoot\test-configure-custom-templates-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/troubleshoot/test-configure-custom-templates-for-azure-rights-management.md) | HandedOffFailed | [Details](#c7d393baafec19ceffdfee508f27b5d0e738f80b390)
 
 ## Item Details
-##### <a name='8c36804bf788fe31a4b4ba8bbd996903172b760144'></a> Source: [Azure-RMSDocs\develop\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
+##### <a name='482a4fdf47624e36569e07a6993672564e44764a44'></a> Source: [Azure-RMSDocs\develop\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#8c36804bf788fe31a4b4ba8bbd996903172b760144handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#482a4fdf47624e36569e07a6993672564e44764a44handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -95,13 +100,26 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='0bebcc03163e3659e9e32ae940011d60b7515d8e46'></a> Source: [Azure-RMSDocs\develop\ad-rms-concepts-nav.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/ad-rms-concepts-nav.md)
+##### <a name='1724b28400400b05df30784a014221dcc00100d146'></a> Source: [Azure-RMSDocs\develop\ad-rms-concepts-nav.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/ad-rms-concepts-nav.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#0bebcc03163e3659e9e32ae940011d60b7515d8e46handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#1724b28400400b05df30784a014221dcc00100d146handoff_transform_failed)
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='1f0e1a3822c0c5a5ce793f2466f04a7c7ce2c86447'></a> Source: [Azure-RMSDocs\develop\ad-rms-overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/ad-rms-overview.md)
+* Status: HandedOffFailed
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handoff Error: [handoff_transform_failed](#1f0e1a3822c0c5a5ce793f2466f04a7c7ce2c86447handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -121,26 +139,26 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='30a53b910551e7c506db69267808cfdaf71686b851'></a> Source: [Azure-RMSDocs\develop\android-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d8fdad5d5f39cc7c07295a8d9c6330cedab48b57/Azure-RMSDocs/develop/android-sdk.md)
+##### <a name='ba7c3e45ee11d03b7da43384770c08297719af9951'></a> Source: [Azure-RMSDocs\develop\android-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/android-sdk.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#30a53b910551e7c506db69267808cfdaf71686b851handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#ba7c3e45ee11d03b7da43384770c08297719af9951handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f642cd1a7f520ae916a28e8812f7fb82bc9caffe52'></a> Source: [Azure-RMSDocs\develop\api-reference-4-2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/api-reference-4-2.md)
+##### <a name='f23aed10f4369a8ce0f9df1d672eafbee36899c552'></a> Source: [Azure-RMSDocs\develop\api-reference-4-2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/api-reference-4-2.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#f642cd1a7f520ae916a28e8812f7fb82bc9caffe52handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#f23aed10f4369a8ce0f9df1d672eafbee36899c552handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -160,13 +178,13 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='1aa8418a4039bd60897550eb72c6afacad54e43f54'></a> Source: [Azure-RMSDocs\develop\application-types.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/application-types.md)
+##### <a name='bd2085f16afa59b2c48a273c6656bd136a5eaa8754'></a> Source: [Azure-RMSDocs\develop\application-types.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/application-types.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#1aa8418a4039bd60897550eb72c6afacad54e43f54handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#bd2085f16afa59b2c48a273c6656bd136a5eaa8754handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -225,13 +243,13 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='6a0eb6584291d5e0c7fcc96febf1fc4e71c54cc161'></a> Source: [Azure-RMSDocs\develop\create-your-first-rights-aware-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/create-your-first-rights-aware-application.md)
+##### <a name='57d1c27b50b4cab19d9110cd7b25faf34187eadb61'></a> Source: [Azure-RMSDocs\develop\create-your-first-rights-aware-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/create-your-first-rights-aware-application.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#6a0eb6584291d5e0c7fcc96febf1fc4e71c54cc161handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#57d1c27b50b4cab19d9110cd7b25faf34187eadb61handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -264,13 +282,13 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='9c894617c1758600aefc0c173425b9eb53a9690464'></a> Source: [Azure-RMSDocs\develop\developer-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/developer-notes.md)
+##### <a name='ae724cf4714bf50b5b7d1865dc2b29a98e33bfb164'></a> Source: [Azure-RMSDocs\develop\developer-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/developer-notes.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#9c894617c1758600aefc0c173425b9eb53a9690464handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#ae724cf4714bf50b5b7d1865dc2b29a98e33bfb164handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -303,26 +321,26 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='c4343982a86b0f4abd55a8254d5040241a506cb970'></a> Source: [Azure-RMSDocs\develop\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/get-started.md)
+##### <a name='b9366316f22a3266797f7fef649cb506ea8431f470'></a> Source: [Azure-RMSDocs\develop\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/get-started.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#c4343982a86b0f4abd55a8254d5040241a506cb970handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#b9366316f22a3266797f7fef649cb506ea8431f470handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='99714ab34027e5dab3c3b955089e259aa7eb486971'></a> Source: [Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/getting-started-with-ad-rms-2-0.md)
+##### <a name='513ca8f478b24688bcf26de1742778335280833d71'></a> Source: [Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/getting-started-with-ad-rms-2-0.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#99714ab34027e5dab3c3b955089e259aa7eb486971handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#513ca8f478b24688bcf26de1742778335280833d71handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -355,13 +373,13 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='272b10b28a3f5773e15b2e286cb3ba6701e8b75474'></a> Source: [Azure-RMSDocs\develop\how-to-configure-the-ad-rms-client-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/how-to-configure-the-ad-rms-client-2-0.md)
+##### <a name='880246c0e2f1a852699f98d90ec46d26877930f574'></a> Source: [Azure-RMSDocs\develop\how-to-configure-the-ad-rms-client-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/how-to-configure-the-ad-rms-client-2-0.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#272b10b28a3f5773e15b2e286cb3ba6701e8b75474handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#880246c0e2f1a852699f98d90ec46d26877930f574handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -381,39 +399,39 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='6e817c3536e3c22babc5dccace0f71eaf9fd2a0f77'></a> Source: [Azure-RMSDocs\develop\how-to-set-up-the-pre-production-development-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/how-to-set-up-the-pre-production-development-environment.md)
+##### <a name='3070966ce8255fc302cba8be4e8596335679d12c77'></a> Source: [Azure-RMSDocs\develop\how-to-set-up-the-pre-production-development-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/how-to-set-up-the-pre-production-development-environment.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#6e817c3536e3c22babc5dccace0f71eaf9fd2a0f77handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#3070966ce8255fc302cba8be4e8596335679d12c77handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='7a53910f9a06b1952370d815ec00bf233ff6a60778'></a> Source: [Azure-RMSDocs\develop\how-to-set-up-your-test-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/how-to-set-up-your-test-environment.md)
+##### <a name='d43535f3eb4535b7094c11681b32ede5a293dfc878'></a> Source: [Azure-RMSDocs\develop\how-to-set-up-your-test-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/how-to-set-up-your-test-environment.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#7a53910f9a06b1952370d815ec00bf233ff6a60778handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#d43535f3eb4535b7094c11681b32ede5a293dfc878handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='60f14b8bbede40e9a2ed19ce79c906ea6e04d14c80'></a> Source: [Azure-RMSDocs\develop\how-to-use-file-api-with-aadrm-cloud.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/how-to-use-file-api-with-aadrm-cloud.md)
+##### <a name='c48f02f1e562fbd9bce0e5f386ed84458e40365580'></a> Source: [Azure-RMSDocs\develop\how-to-use-file-api-with-aadrm-cloud.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/how-to-use-file-api-with-aadrm-cloud.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#60f14b8bbede40e9a2ed19ce79c906ea6e04d14c80handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#c48f02f1e562fbd9bce0e5f386ed84458e40365580handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -433,13 +451,13 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='73065081958c1ccb07d362fad317fc4f4b784e3284'></a> Source: [Azure-RMSDocs\develop\ios-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d8fdad5d5f39cc7c07295a8d9c6330cedab48b57/Azure-RMSDocs/develop/ios-sdk.md)
+##### <a name='484db454c9fab23e982bfb2697584e85bccb57de84'></a> Source: [Azure-RMSDocs\develop\ios-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/ios-sdk.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#73065081958c1ccb07d362fad317fc4f4b784e3284handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#484db454c9fab23e982bfb2697584e85bccb57de84handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -459,26 +477,26 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='5ffa3f16ad1e3fbd6f94840336ecf32d817df14987'></a> Source: [Azure-RMSDocs\develop\linux-setup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/linux-setup.md)
+##### <a name='c18c1dff241e9d357447eed6ed278cd3d93e429b87'></a> Source: [Azure-RMSDocs\develop\linux-setup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/linux-setup.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#5ffa3f16ad1e3fbd6f94840336ecf32d817df14987handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#c18c1dff241e9d357447eed6ed278cd3d93e429b87handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='af7e4e10f5c2eb4c3b325075eee3e2da0d71b5a388'></a> Source: [Azure-RMSDocs\develop\microsoft-information-protection-and-control-client-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/microsoft-information-protection-and-control-client-portal.md)
+##### <a name='a021bf059057104fbb03ed2948998eac86713b1088'></a> Source: [Azure-RMSDocs\develop\microsoft-information-protection-and-control-client-portal.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/microsoft-information-protection-and-control-client-portal.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#af7e4e10f5c2eb4c3b325075eee3e2da0d71b5a388handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#a021bf059057104fbb03ed2948998eac86713b1088handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -511,39 +529,39 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='46f443cb3f1a194a96e654b6bd94b91abf445e4392'></a> Source: [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/release-notes.md)
+##### <a name='75d96498b862ba7264f09350199dbf1f8593284c92'></a> Source: [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/release-notes.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#46f443cb3f1a194a96e654b6bd94b91abf445e4392handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#75d96498b862ba7264f09350199dbf1f8593284c92handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f524bad20838888a5a4112d791dc806e6b1d69fd91'></a> Source: [Azure-RMSDocs\develop\release-notes-rtm.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/release-notes-rtm.md)
+##### <a name='cd063a000e27fc016bfec1e1337c16b7c02024ec91'></a> Source: [Azure-RMSDocs\develop\release-notes-rtm.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/release-notes-rtm.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#f524bad20838888a5a4112d791dc806e6b1d69fd91handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#cd063a000e27fc016bfec1e1337c16b7c02024ec91handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f9bd90c6099215b9701e017e715d44d1204b964a93'></a> Source: [Azure-RMSDocs\develop\running-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/running-your-first-application.md)
+##### <a name='457432a6611eb7010129bea13d0aa4917ac7231093'></a> Source: [Azure-RMSDocs\develop\running-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/running-your-first-application.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#f9bd90c6099215b9701e017e715d44d1204b964a93handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#457432a6611eb7010129bea13d0aa4917ac7231093handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -563,13 +581,39 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='6eaea17084d05c1d7c5f35287ad2e965e44d4bd297'></a> Source: [Azure-RMSDocs\develop\setup-developer-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/develop/setup-developer-environment.md)
+##### <a name='926aba371244baef47a3afff92be08ec8ee1f40d95'></a> Source: [Azure-RMSDocs\develop\sdk-elements.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/sdk-elements.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#6eaea17084d05c1d7c5f35287ad2e965e44d4bd297handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#926aba371244baef47a3afff92be08ec8ee1f40d95handoff_transform_failed)
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='5795bd683e8295907ac8c37e111223589e71d65296'></a> Source: [Azure-RMSDocs\develop\setting-the-api-security-mode-api-mode.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/setting-the-api-security-mode-api-mode.md)
+* Status: HandedOffFailed
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handoff Error: [handoff_transform_failed](#5795bd683e8295907ac8c37e111223589e71d65296handoff_transform_failed)
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='daa9555808ace62ac2e165100249909ff765f14097'></a> Source: [Azure-RMSDocs\develop\setup-developer-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/setup-developer-environment.md)
+* Status: HandedOffFailed
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handoff Error: [handoff_transform_failed](#daa9555808ace62ac2e165100249909ff765f14097handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -628,43 +672,69 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='38fb52160d26487f99c2671056fcbafb161ac4b5108'></a> Source: [Azure-RMSDocs\develop\windows-phone-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d8fdad5d5f39cc7c07295a8d9c6330cedab48b57/Azure-RMSDocs/develop/windows-phone-apps.md)
+##### <a name='8ff8042661068e94790bb375f9e699aaf118597e105'></a> Source: [Azure-RMSDocs\develop\understanding-certificate-chains.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/understanding-certificate-chains.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#38fb52160d26487f99c2671056fcbafb161ac4b5108handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#8ff8042661068e94790bb375f9e699aaf118597e105handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='c99f516698682be1ccaa1c6fe91b24a75bb2616f109'></a> Source: [Azure-RMSDocs\develop\winrt-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d8fdad5d5f39cc7c07295a8d9c6330cedab48b57/Azure-RMSDocs/develop/winrt-sdk.md)
+##### <a name='e1bd57236f2d72bfbbbc1da8b59a656c68336e59106'></a> Source: [Azure-RMSDocs\develop\understanding-usage-restrictions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/understanding-usage-restrictions.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
 * Handoff Datetime: 0001-01-01 00:00:00
 * Handoff Reason: Ignored
-* Handoff Error: [handoff_transform_failed](#c99f516698682be1ccaa1c6fe91b24a75bb2616f109handoff_transform_failed)
+* Handoff Error: [handoff_transform_failed](#e1bd57236f2d72bfbbbc1da8b59a656c68336e59106handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='cb4c1f48a6689d260b479437f66a250a5bf5d7fd314'></a> Source: [Azure-RMSDocs\media\wedge.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d8fdad5d5f39cc7c07295a8d9c6330cedab48b57/Azure-RMSDocs/media/wedge.gif)
-* Status: HandedOffSuccess
+##### <a name='3c0568ed78e1b43b427c4b76f24ef5ebb3b01b0a108'></a> Source: [Azure-RMSDocs\develop\windows-phone-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/windows-phone-apps.md)
+* Status: HandedOffFailed
 * Target File: 
-* Handoff File: [cb4c1f48a6689d260b479437f66a250a5bf5d7fd.gif](https://github.com/Microsoft/EM.handoff/blob/6d856a79337b688df517dfe0a41fc28d44e0c9fd/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/cb4c1f48a6689d260b479437f66a250a5bf5d7fd.gif)
-* Handoff Datetime: 2016-04-14 18:42:31
-* Handoff Reason: IsDependency
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handoff Error: [handoff_transform_failed](#3c0568ed78e1b43b427c4b76f24ef5ebb3b01b0a108handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: Azure-RMSDocs\develop\obtaining-a-production-license.md
+* [Back to Top](#report-top)
+
+##### <a name='8ff62ddc633f26968d492a912108f875eb0ecb34109'></a> Source: [Azure-RMSDocs\develop\winrt-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/winrt-sdk.md)
+* Status: HandedOffFailed
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handoff Error: [handoff_transform_failed](#8ff62ddc633f26968d492a912108f875eb0ecb34109handoff_transform_failed)
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='a6cced8b36835dc6707b9499c1905dd2861217e1110'></a> Source: [Azure-RMSDocs\develop\working-with-encryption.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff353f63846f3068c13f11b9c3e28f0f2f125bc1/Azure-RMSDocs/develop/working-with-encryption.md)
+* Status: HandedOffFailed
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handoff Error: [handoff_transform_failed](#a6cced8b36835dc6707b9499c1905dd2861217e1110handoff_transform_failed)
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='c7d393baafec19ceffdfee508f27b5d0e738f80b390'></a> Source: [Azure-RMSDocs\troubleshoot\test-configure-custom-templates-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/troubleshoot/test-configure-custom-templates-for-azure-rights-management.md)
@@ -682,11 +752,11 @@
 
 
 ## Error Details
-##### <a name='8c36804bf788fe31a4b4ba8bbd996903172b760144handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md](#8c36804bf788fe31a4b4ba8bbd996903172b760144)
+##### <a name='482a4fdf47624e36569e07a6993672564e44764a44handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md](#482a4fdf47624e36569e07a6993672564e44764a44)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='176b82b63fad760988ec73f990933a8f6f96ce9f45handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\ad-rms-client.md](#176b82b63fad760988ec73f990933a8f6f96ce9f45)
 * Error Code: handoff_transform_failed
@@ -694,11 +764,17 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\ad-rms-client.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\ad-rms-client.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='0bebcc03163e3659e9e32ae940011d60b7515d8e46handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\ad-rms-concepts-nav.md](#0bebcc03163e3659e9e32ae940011d60b7515d8e46)
+##### <a name='1724b28400400b05df30784a014221dcc00100d146handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\ad-rms-concepts-nav.md](#1724b28400400b05df30784a014221dcc00100d146)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\ad-rms-concepts-nav.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\ad-rms-concepts-nav.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\ad-rms-concepts-nav.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\ad-rms-concepts-nav.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\ad-rms-concepts-nav.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+
+##### <a name='1f0e1a3822c0c5a5ce793f2466f04a7c7ce2c86447handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\ad-rms-overview.md](#1f0e1a3822c0c5a5ce793f2466f04a7c7ce2c86447)
+* Error Code: handoff_transform_failed
+* Error Message: Handoff source file: Azure-RMSDocs\develop\ad-rms-overview.md transformed failed.
+* Retriable: False
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\ad-rms-overview.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\ad-rms-overview.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='118a758a90d38f85e6392e918661d1532e11f02f48handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\ad-rms-server.md](#118a758a90d38f85e6392e918661d1532e11f02f48)
 * Error Code: handoff_transform_failed
@@ -712,17 +788,17 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\add-explicit-owner-rights.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\add-explicit-owner-rights.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='30a53b910551e7c506db69267808cfdaf71686b851handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\android-sdk.md](#30a53b910551e7c506db69267808cfdaf71686b851)
+##### <a name='ba7c3e45ee11d03b7da43384770c08297719af9951handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\android-sdk.md](#ba7c3e45ee11d03b7da43384770c08297719af9951)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\android-sdk.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\android-sdk.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\android-sdk.md file with commit id d8fdad5d5f39cc7c07295a8d9c6330cedab48b57 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\android-sdk.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\android-sdk.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='f642cd1a7f520ae916a28e8812f7fb82bc9caffe52handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\api-reference-4-2.md](#f642cd1a7f520ae916a28e8812f7fb82bc9caffe52)
+##### <a name='f23aed10f4369a8ce0f9df1d672eafbee36899c552handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\api-reference-4-2.md](#f23aed10f4369a8ce0f9df1d672eafbee36899c552)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\api-reference-4-2.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\api-reference-4-2.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\api-reference-4-2.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\api-reference-4-2.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\api-reference-4-2.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='912371216245d5311be9c5e8f21c90cb2be6e2bb53handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\application-id.md](#912371216245d5311be9c5e8f21c90cb2be6e2bb53)
 * Error Code: handoff_transform_failed
@@ -730,11 +806,11 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\application-id.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\application-id.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='1aa8418a4039bd60897550eb72c6afacad54e43f54handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\application-types.md](#1aa8418a4039bd60897550eb72c6afacad54e43f54)
+##### <a name='bd2085f16afa59b2c48a273c6656bd136a5eaa8754handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\application-types.md](#bd2085f16afa59b2c48a273c6656bd136a5eaa8754)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\application-types.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\application-types.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\application-types.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\application-types.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\application-types.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='3180858a34ff0f2c6c02533020c2725ba264962455handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\authentication-integration.md](#3180858a34ff0f2c6c02533020c2725ba264962455)
 * Error Code: handoff_transform_failed
@@ -760,11 +836,11 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\core-concepts.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\core-concepts.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='6a0eb6584291d5e0c7fcc96febf1fc4e71c54cc161handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\create-your-first-rights-aware-application.md](#6a0eb6584291d5e0c7fcc96febf1fc4e71c54cc161)
+##### <a name='57d1c27b50b4cab19d9110cd7b25faf34187eadb61handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\create-your-first-rights-aware-application.md](#57d1c27b50b4cab19d9110cd7b25faf34187eadb61)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\create-your-first-rights-aware-application.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\create-your-first-rights-aware-application.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\create-your-first-rights-aware-application.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\create-your-first-rights-aware-application.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\create-your-first-rights-aware-application.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='ce5f67fda8a7486ad84b1271fb16f8fd055ccb0462handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\debugging-applications-that-use-ad-rms.md](#ce5f67fda8a7486ad84b1271fb16f8fd055ccb0462)
 * Error Code: handoff_transform_failed
@@ -778,11 +854,11 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\deploying-your-application.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\deploying-your-application.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='9c894617c1758600aefc0c173425b9eb53a9690464handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\developer-notes.md](#9c894617c1758600aefc0c173425b9eb53a9690464)
+##### <a name='ae724cf4714bf50b5b7d1865dc2b29a98e33bfb164handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\developer-notes.md](#ae724cf4714bf50b5b7d1865dc2b29a98e33bfb164)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\developer-notes.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\developer-notes.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\developer-notes.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\developer-notes.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\developer-notes.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='e73799d698a4fd6bca5f7e366296633d3f99cbae66handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\differences-between-ad-rms-and-ad-rms-2-0.md](#e73799d698a4fd6bca5f7e366296633d3f99cbae66)
 * Error Code: handoff_transform_failed
@@ -796,17 +872,17 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\file-api-configuration.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\file-api-configuration.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='c4343982a86b0f4abd55a8254d5040241a506cb970handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\get-started.md](#c4343982a86b0f4abd55a8254d5040241a506cb970)
+##### <a name='b9366316f22a3266797f7fef649cb506ea8431f470handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\get-started.md](#b9366316f22a3266797f7fef649cb506ea8431f470)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\get-started.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\get-started.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\get-started.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\get-started.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\get-started.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='99714ab34027e5dab3c3b955089e259aa7eb486971handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md](#99714ab34027e5dab3c3b955089e259aa7eb486971)
+##### <a name='513ca8f478b24688bcf26de1742778335280833d71handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md](#513ca8f478b24688bcf26de1742778335280833d71)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='b6091efb1575a56a07f3d8e2f6cb5ad7690fe4d172handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\how-to-build-your-first-application.md](#b6091efb1575a56a07f3d8e2f6cb5ad7690fe4d172)
 * Error Code: handoff_transform_failed
@@ -820,11 +896,11 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md file with commit id d8fdad5d5f39cc7c07295a8d9c6330cedab48b57 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='272b10b28a3f5773e15b2e286cb3ba6701e8b75474handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\how-to-configure-the-ad-rms-client-2-0.md](#272b10b28a3f5773e15b2e286cb3ba6701e8b75474)
+##### <a name='880246c0e2f1a852699f98d90ec46d26877930f574handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\how-to-configure-the-ad-rms-client-2-0.md](#880246c0e2f1a852699f98d90ec46d26877930f574)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\how-to-configure-the-ad-rms-client-2-0.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\how-to-configure-the-ad-rms-client-2-0.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\how-to-configure-the-ad-rms-client-2-0.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\how-to-configure-the-ad-rms-client-2-0.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\how-to-configure-the-ad-rms-client-2-0.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='1593a4196015cc041cfc014c9407bdd96da6b11c76handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\how-to-install-and-configure-an-rms-server.md](#1593a4196015cc041cfc014c9407bdd96da6b11c76)
 * Error Code: handoff_transform_failed
@@ -832,23 +908,23 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='6e817c3536e3c22babc5dccace0f71eaf9fd2a0f77handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\how-to-set-up-the-pre-production-development-environment.md](#6e817c3536e3c22babc5dccace0f71eaf9fd2a0f77)
+##### <a name='3070966ce8255fc302cba8be4e8596335679d12c77handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\how-to-set-up-the-pre-production-development-environment.md](#3070966ce8255fc302cba8be4e8596335679d12c77)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\how-to-set-up-the-pre-production-development-environment.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='7a53910f9a06b1952370d815ec00bf233ff6a60778handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\how-to-set-up-your-test-environment.md](#7a53910f9a06b1952370d815ec00bf233ff6a60778)
+##### <a name='d43535f3eb4535b7094c11681b32ede5a293dfc878handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\how-to-set-up-your-test-environment.md](#d43535f3eb4535b7094c11681b32ede5a293dfc878)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\how-to-set-up-your-test-environment.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='60f14b8bbede40e9a2ed19ce79c906ea6e04d14c80handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\how-to-use-file-api-with-aadrm-cloud.md](#60f14b8bbede40e9a2ed19ce79c906ea6e04d14c80)
+##### <a name='c48f02f1e562fbd9bce0e5f386ed84458e40365580handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\how-to-use-file-api-with-aadrm-cloud.md](#c48f02f1e562fbd9bce0e5f386ed84458e40365580)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\how-to-use-file-api-with-aadrm-cloud.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='1af3b288dd392d9b6563a8d7a640b3965d46735281handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\how-to-use-msipc.md](#1af3b288dd392d9b6563a8d7a640b3965d46735281)
 * Error Code: handoff_transform_failed
@@ -856,11 +932,11 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\how-to-use-msipc.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\how-to-use-msipc.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='73065081958c1ccb07d362fad317fc4f4b784e3284handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\ios-sdk.md](#73065081958c1ccb07d362fad317fc4f4b784e3284)
+##### <a name='484db454c9fab23e982bfb2697584e85bccb57de84handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\ios-sdk.md](#484db454c9fab23e982bfb2697584e85bccb57de84)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\ios-sdk.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\ios-sdk.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\ios-sdk.md file with commit id d8fdad5d5f39cc7c07295a8d9c6330cedab48b57 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\ios-sdk.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\ios-sdk.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='283654c6e489c4cdf0b687c6ab7c43ce8652dc0e85handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\linux-c-api-reference.md](#283654c6e489c4cdf0b687c6ab7c43ce8652dc0e85)
 * Error Code: handoff_transform_failed
@@ -868,17 +944,17 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\linux-c-api-reference.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\linux-c-api-reference.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='5ffa3f16ad1e3fbd6f94840336ecf32d817df14987handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\linux-setup.md](#5ffa3f16ad1e3fbd6f94840336ecf32d817df14987)
+##### <a name='c18c1dff241e9d357447eed6ed278cd3d93e429b87handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\linux-setup.md](#c18c1dff241e9d357447eed6ed278cd3d93e429b87)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\linux-setup.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\linux-setup.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\linux-setup.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\linux-setup.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\linux-setup.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='af7e4e10f5c2eb4c3b325075eee3e2da0d71b5a388handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\microsoft-information-protection-and-control-client-portal.md](#af7e4e10f5c2eb4c3b325075eee3e2da0d71b5a388)
+##### <a name='a021bf059057104fbb03ed2948998eac86713b1088handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\microsoft-information-protection-and-control-client-portal.md](#a021bf059057104fbb03ed2948998eac86713b1088)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\microsoft-information-protection-and-control-client-portal.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='7e73ad542cba252e2b5b625370bb5e7814661f5689handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\obtaining-a-production-license.md](#7e73ad542cba252e2b5b625370bb5e7814661f5689)
 * Error Code: handoff_transform_failed
@@ -892,23 +968,23 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\overview.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\overview.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='f524bad20838888a5a4112d791dc806e6b1d69fd91handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\release-notes-rtm.md](#f524bad20838888a5a4112d791dc806e6b1d69fd91)
+##### <a name='cd063a000e27fc016bfec1e1337c16b7c02024ec91handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\release-notes-rtm.md](#cd063a000e27fc016bfec1e1337c16b7c02024ec91)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\release-notes-rtm.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\release-notes-rtm.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\release-notes-rtm.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\release-notes-rtm.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\release-notes-rtm.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='46f443cb3f1a194a96e654b6bd94b91abf445e4392handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\release-notes.md](#46f443cb3f1a194a96e654b6bd94b91abf445e4392)
+##### <a name='75d96498b862ba7264f09350199dbf1f8593284c92handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\release-notes.md](#75d96498b862ba7264f09350199dbf1f8593284c92)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\release-notes.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\release-notes.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\release-notes.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\release-notes.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\release-notes.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='f9bd90c6099215b9701e017e715d44d1204b964a93handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\running-your-first-application.md](#f9bd90c6099215b9701e017e715d44d1204b964a93)
+##### <a name='457432a6611eb7010129bea13d0aa4917ac7231093handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\running-your-first-application.md](#457432a6611eb7010129bea13d0aa4917ac7231093)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\running-your-first-application.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\running-your-first-application.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\running-your-first-application.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\running-your-first-application.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\running-your-first-application.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='c248341851d7f16639cc7d323293b9b26d27e9bd94handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\samples.md](#c248341851d7f16639cc7d323293b9b26d27e9bd94)
 * Error Code: handoff_transform_failed
@@ -916,11 +992,23 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\samples.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\samples.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='6eaea17084d05c1d7c5f35287ad2e965e44d4bd297handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\setup-developer-environment.md](#6eaea17084d05c1d7c5f35287ad2e965e44d4bd297)
+##### <a name='926aba371244baef47a3afff92be08ec8ee1f40d95handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\sdk-elements.md](#926aba371244baef47a3afff92be08ec8ee1f40d95)
+* Error Code: handoff_transform_failed
+* Error Message: Handoff source file: Azure-RMSDocs\develop\sdk-elements.md transformed failed.
+* Retriable: False
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\sdk-elements.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\sdk-elements.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+
+##### <a name='5795bd683e8295907ac8c37e111223589e71d65296handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\setting-the-api-security-mode-api-mode.md](#5795bd683e8295907ac8c37e111223589e71d65296)
+* Error Code: handoff_transform_failed
+* Error Message: Handoff source file: Azure-RMSDocs\develop\setting-the-api-security-mode-api-mode.md transformed failed.
+* Retriable: False
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\setting-the-api-security-mode-api-mode.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\setting-the-api-security-mode-api-mode.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+
+##### <a name='daa9555808ace62ac2e165100249909ff765f14097handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\setup-developer-environment.md](#daa9555808ace62ac2e165100249909ff765f14097)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\setup-developer-environment.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\setup-developer-environment.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\setup-developer-environment.md file with commit id 5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\setup-developer-environment.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\setup-developer-environment.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='6276b460d151834c7b806eb78cad59810e58a50098handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\signing-your-application-for-production.md](#6276b460d151834c7b806eb78cad59810e58a50098)
 * Error Code: handoff_transform_failed
@@ -946,17 +1034,35 @@
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\TOC.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\TOC.md file with commit id b58ca159b7399f13106964a6a930fcc183b35db9 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='38fb52160d26487f99c2671056fcbafb161ac4b5108handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\windows-phone-apps.md](#38fb52160d26487f99c2671056fcbafb161ac4b5108)
+##### <a name='8ff8042661068e94790bb375f9e699aaf118597e105handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\understanding-certificate-chains.md](#8ff8042661068e94790bb375f9e699aaf118597e105)
+* Error Code: handoff_transform_failed
+* Error Message: Handoff source file: Azure-RMSDocs\develop\understanding-certificate-chains.md transformed failed.
+* Retriable: False
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\understanding-certificate-chains.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\understanding-certificate-chains.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+
+##### <a name='e1bd57236f2d72bfbbbc1da8b59a656c68336e59106handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\understanding-usage-restrictions.md](#e1bd57236f2d72bfbbbc1da8b59a656c68336e59106)
+* Error Code: handoff_transform_failed
+* Error Message: Handoff source file: Azure-RMSDocs\develop\understanding-usage-restrictions.md transformed failed.
+* Retriable: False
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\understanding-usage-restrictions.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\understanding-usage-restrictions.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+
+##### <a name='3c0568ed78e1b43b427c4b76f24ef5ebb3b01b0a108handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\windows-phone-apps.md](#3c0568ed78e1b43b427c4b76f24ef5ebb3b01b0a108)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\windows-phone-apps.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\windows-phone-apps.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\windows-phone-apps.md file with commit id d8fdad5d5f39cc7c07295a8d9c6330cedab48b57 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\windows-phone-apps.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\windows-phone-apps.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
-##### <a name='c99f516698682be1ccaa1c6fe91b24a75bb2616f109handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\winrt-sdk.md](#c99f516698682be1ccaa1c6fe91b24a75bb2616f109)
+##### <a name='8ff62ddc633f26968d492a912108f875eb0ecb34109handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\winrt-sdk.md](#8ff62ddc633f26968d492a912108f875eb0ecb34109)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\develop\winrt-sdk.md transformed failed.
 * Retriable: False
-* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\winrt-sdk.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\winrt-sdk.md file with commit id d8fdad5d5f39cc7c07295a8d9c6330cedab48b57 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\winrt-sdk.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\winrt-sdk.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
+
+##### <a name='a6cced8b36835dc6707b9499c1905dd2861217e1110handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\working-with-encryption.md](#a6cced8b36835dc6707b9499c1905dd2861217e1110)
+* Error Code: handoff_transform_failed
+* Error Message: Handoff source file: Azure-RMSDocs\develop\working-with-encryption.md transformed failed.
+* Retriable: False
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\develop\\working-with-encryption.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\develop\\working-with-encryption.md file with commit id ff353f63846f3068c13f11b9c3e28f0f2f125bc1 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 359","extended_information":null}
 
 ##### <a name='c7d393baafec19ceffdfee508f27b5d0e738f80b390handoff_transform_failed'></a> Source: [Azure-RMSDocs\troubleshoot\test-configure-custom-templates-for-azure-rights-management.md](#c7d393baafec19ceffdfee508f27b5d0e738f80b390)
 * Error Code: handoff_transform_failed
