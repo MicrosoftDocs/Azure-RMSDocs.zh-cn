@@ -3,15 +3,15 @@
 ## Summary
  Property | Value 
  -------- | ----- 
- Total Files | 414
+ Total Files | 413
 [ Handoff Failed Files ](#handoff-failed-list)| 54
-[ Handoff Success Files ](#handoff-success-list)| 318
+[ Handoff Success Files ](#handoff-success-list)| 297
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 42
+[ Ignored Files ](#ignored-list)| 62
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
  Source File | Status | Details 
@@ -75,8 +75,8 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [Azure-RMSDocs\deploy-use\activating-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7d7b8e88f76e682793b33cf84453a1beb938f0e1/Azure-RMSDocs/deploy-use/activating-azure-rights-management.md) | HandedOffSuccess | [Details](#6799677a3fcbef5eaf3e157960823663f26a7e378)
- [Azure-RMSDocs\deploy-use\activating-azure-rights-management-0365classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c065d07c5286f5b5c81ba356bbb3bec1994172e0/Azure-RMSDocs/deploy-use/activating-azure-rights-management-0365classic.md) | HandedOffSuccess | [Details](#44107ffcadda5cc0807689a22055c09c6282b0e65)
- [Azure-RMSDocs\deploy-use\activating-azure-rights-management-azure.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7d7b8e88f76e682793b33cf84453a1beb938f0e1/Azure-RMSDocs/deploy-use/activating-azure-rights-management-azure.md) | HandedOffSuccess | [Details](#dff1aa7acb7299afa86364d69304935f35286b2c6)
+ [Azure-RMSDocs\deploy-use\activating-azure-rights-management-azure.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7d7b8e88f76e682793b33cf84453a1beb938f0e1/Azure-RMSDocs/deploy-use/activating-azure-rights-management-azure.md) | HandedOffSuccess | [Details](#dff1aa7acb7299afa86364d69304935f35286b2c5)
+ [Azure-RMSDocs\deploy-use\activating-azure-rights-management-o365classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/deploy-use/activating-azure-rights-management-o365classic.md) | HandedOffSuccess | [Details](#44107ffcadda5cc0807689a22055c09c6282b0e66)
  [Azure-RMSDocs\deploy-use\activating-azure-rights-management-o365preview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/235c3c9e23c5843dbff5978bc7e3de947ef993b5/Azure-RMSDocs/deploy-use/activating-azure-rights-management-o365preview.md) | HandedOffSuccess | [Details](#a5f0b2fbbf91bf661edd6898346c4a7414a054fc7)
  [Azure-RMSDocs\deploy-use\administering-azure-rights-management-with-powershell.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7d7b8e88f76e682793b33cf84453a1beb938f0e1/Azure-RMSDocs/deploy-use/administering-azure-rights-management-with-powershell.md) | HandedOffSuccess | [Details](#0a8f73d39282dc5cee70ca7f5e8a390b9301f5c59)
  [Azure-RMSDocs\deploy-use\configure-custom-templates-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7d7b8e88f76e682793b33cf84453a1beb938f0e1/Azure-RMSDocs/deploy-use/configure-custom-templates-for-azure-rights-management.md) | HandedOffSuccess | [Details](#715d8d97afff4a6fcb2431dafc25b73d7ebcfa3215)
@@ -107,7 +107,6 @@
  [Azure-RMSDocs\deploy-use\rights-in-permissions-levels.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/rights-in-permissions-levels.md) | HandedOffSuccess | [Details](#8a6a38c1dc64c0e0d81a2ab511a1c5ee57714d8036)
  [Azure-RMSDocs\deploy-use\scripting-options-for-superusers.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/scripting-options-for-superusers.md) | HandedOffSuccess | [Details](#13c62e632d2f1d63dde4c5a327f64ddab87eccc337)
  [Azure-RMSDocs\deploy-use\sharing-app-install-configure.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1f4e995b1a9dd75e65340fa998eb6dabef9d5a2e/Azure-RMSDocs/deploy-use/sharing-app-install-configure.md) | HandedOffSuccess | [Details](#444262a94df17148aa96f04e05428c558ead697038)
- [Azure-RMSDocs\deploy-use\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/deploy-use/TOC.md) | HandedOffSuccess | [Details](#def24770adfc1de9fcfe7a10f1c4a5f2396f2fc039)
  [Azure-RMSDocs\deploy-use\usage-rights-descriptions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/deploy-use/usage-rights-descriptions.md) | HandedOffSuccess | [Details](#6080f18e672493095084b1a82088419d394a8c6740)
  [Azure-RMSDocs\deploy-use\verifying-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7d7b8e88f76e682793b33cf84453a1beb938f0e1/Azure-RMSDocs/deploy-use/verifying-azure-rights-management.md) | HandedOffSuccess | [Details](#f2cf92dbe2886b633af559bd8f480fa2540b964141)
  [Azure-RMSDocs\develop\android-code.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/develop/android-code.md) | HandedOffSuccess | [Details](#e59dd5d38b1c89e685c8f4d061ee20487e9b84eb48)
@@ -124,7 +123,6 @@
  [Azure-RMSDocs\develop\terms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/develop/terms.md) | HandedOffSuccess | [Details](#33365455f071d87b0f987b4fb48469b401e7de01100)
  [Azure-RMSDocs\develop\tracking-content.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/develop/tracking-content.md) | HandedOffSuccess | [Details](#f7688ef22dee2e8ed6fd530090ff8af8fef4fe8b102)
  [Azure-RMSDocs\develop\usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/develop/usage-restriction-reference.md) | HandedOffSuccess | [Details](#df885f56aa2e7cf6679c5e86b4b4f42b46803e48105)
- [Azure-RMSDocs\get-started\frequently-asked-questions-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/get-started/frequently-asked-questions-for-azure-rights-management.md) | HandedOffSuccess | [Details](#78bef4282b44e443add87c851ce79e140de5cc12110)
  [Azure-RMSDocs\get-started\information-and-support-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/get-started/information-and-support-for-azure-rights-management.md) | HandedOffSuccess | [Details](#14d136d4fbbeea7c1e7cc9ffd7d20857ad7ff131111)
  [Azure-RMSDocs\get-started\quick-start-tutorial-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/get-started/quick-start-tutorial-for-azure-rights-management.md) | HandedOffSuccess | [Details](#363623da830a7deb9ba0fee243a8e83033df0f24112)
  [Azure-RMSDocs\get-started\rapid-deployment-guide-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/get-started/rapid-deployment-guide-for-azure-rights-management.md) | HandedOffSuccess | [Details](#62f95ba309a746f011788333d3e4557c1653f1c8113)
@@ -138,7 +136,6 @@
  [Azure-RMSDocs\get-started\rms-quickstart-step5.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/get-started/rms-quickstart-step5.md) | HandedOffSuccess | [Details](#84e740c3a507c4a9d6f2796cdef32c91dcc4deb0120)
  [Azure-RMSDocs\get-started\rms-requirements-aad-directory.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/686924f9fe69eba94b33391abc6eb3cb07de316d/Azure-RMSDocs/get-started/rms-requirements-aad-directory.md) | HandedOffSuccess | [Details](#11d997a9bfc95c61c3259d6af08752c33e58d0a7122)
  [Azure-RMSDocs\get-started\rms-requirements-applications.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/get-started/rms-requirements-applications.md) | HandedOffSuccess | [Details](#06a996bd6aeb111288cc14544482693b5fa0564b123)
- [Azure-RMSDocs\get-started\rms-requirements-client-devices.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/get-started/rms-requirements-client-devices.md) | HandedOffSuccess | [Details](#199bf6a36ae918e2f3be4712f146755364325e4b124)
  [Azure-RMSDocs\get-started\rms-requirements-cloud-subscriptions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/686924f9fe69eba94b33391abc6eb3cb07de316d/Azure-RMSDocs/get-started/rms-requirements-cloud-subscriptions.md) | HandedOffSuccess | [Details](#eee75b73b00df4ac4f031ade49197600aece42db125)
  [Azure-RMSDocs\get-started\rms-requirements-onpremises-servers.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/get-started/rms-requirements-onpremises-servers.md) | HandedOffSuccess | [Details](#768a25801b2c45f3377292d741adb8693459bc1f126)
  [Azure-RMSDocs\get-started\scenario-configure-work-folders-for-persistent-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/get-started/scenario-configure-work-folders-for-persistent-protection.md) | HandedOffSuccess | [Details](#598a4057b2e9d2dfcd521aaf9d94bdc6c7b7a50a127)
@@ -306,19 +303,13 @@
  [Azure-RMSDocs\media\wpsetup-refmngr.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/media/wpsetup-refmngr.png) | HandedOffSuccess | [Details](#530aed5439b0c6bce77de3010dfd9c63a1435002320)
  [Azure-RMSDocs\plan-design\azure-rights-management-deployment-roadmap.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/plan-design/azure-rights-management-deployment-roadmap.md) | HandedOffSuccess | [Details](#ab127989496192011478f1369a0a3c34ffdfcd03321)
  [Azure-RMSDocs\plan-design\byok-pricing-and-restrictions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/plan-design/byok-pricing-and-restrictions.md) | HandedOffSuccess | [Details](#cbb7d025c3515d3e196f141f84fc9a50af27861b322)
- [Azure-RMSDocs\plan-design\generate-and-transfer-your-tenant-key-in-person.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/plan-design/generate-and-transfer-your-tenant-key-in-person.md) | HandedOffSuccess | [Details](#3d623ea5a90ca6c8730d0b9188840a24916fcb0d324)
- [Azure-RMSDocs\plan-design\generate-and-transfer-your-tenant-key-over-the-internet.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/plan-design/generate-and-transfer-your-tenant-key-over-the-internet.md) | HandedOffSuccess | [Details](#c14d8e3503b5ad8f9bb9e571f573e35332bd6d41325)
- [Azure-RMSDocs\plan-design\implementing-your-azure-rights-management-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/plan-design/implementing-your-azure-rights-management-tenant-key.md) | HandedOffSuccess | [Details](#28f64c528215357e818636bad81784994da08b32326)
  [Azure-RMSDocs\plan-design\information-about-thales-hms-and-microsoft-additions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/plan-design/information-about-thales-hms-and-microsoft-additions.md) | HandedOffSuccess | [Details](#d257551807446e14e69ea5900479ea57dcae1f18327)
- [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management.md) | HandedOffSuccess | [Details](#cbc332ec3cd1ca26cd0ddf3f9fde9df2aff35528335)
  [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-hsmkey-to-hsmkey.md) | HandedOffSuccess | [Details](#f091edb6a0c1c4128813026c6193945e8f9ebf12328)
- [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-phase1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-phase1.md) | HandedOffSuccess | [Details](#c4c4253aa90896a00c76d51ac8fecfd2c1d58f4d329)
  [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-phase2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-phase2.md) | HandedOffSuccess | [Details](#0f5741373fce873040f91f489e166d9ba891ee9d330)
  [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-phase3.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-phase3.md) | HandedOffSuccess | [Details](#3ac36607e8f099a52fad9ad7caedf6b9e5e60825331)
  [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-phase4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-phase4.md) | HandedOffSuccess | [Details](#5c9bd4679cba24ca33512b3c887f10727bcd620f332)
  [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/19f5c6f1ea3794f3204bbc1f591c24c717948a40/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-hsmkey.md) | HandedOffSuccess | [Details](#17b2854df54d530a1dc405f54a13349ab17dda91333)
  [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-softwarekey-to-softwarekey.md) | HandedOffSuccess | [Details](#6678a54c2f42dfe067686dace548c3fb42d1e298334)
- [Azure-RMSDocs\plan-design\migrating-server-side-configuration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/plan-design/migrating-server-side-configuration.md) | HandedOffSuccess | [Details](#f15bfab7b2d13e8b56d6ac38cfd771624793f592336)
  [Azure-RMSDocs\plan-design\planning-and-implementing-your-azure-rights-management-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/plan-design/planning-and-implementing-your-azure-rights-management-tenant-key.md) | HandedOffSuccess | [Details](#e62edcd0fb4105c6babbcfa6cf3daad4b3ce80ca337)
  [Azure-RMSDocs\plan-design\preparing-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/plan-design/preparing-for-azure-rights-management.md) | HandedOffSuccess | [Details](#fbf0b57c142bd6793aef6d1a4d83078ea4713c5d338)
  [Azure-RMSDocs\plan-design\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/235c3c9e23c5843dbff5978bc7e3de947ef993b5/Azure-RMSDocs/plan-design/TOC.md) | HandedOffSuccess | [Details](#30a2779eda1decf40bc67611710029a3904d0bfd339)
@@ -333,15 +324,12 @@
  [Azure-RMSDocs\rms-client\rights-management-sharing-application-administrator-guide-technical-overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/rms-client/rights-management-sharing-application-administrator-guide-technical-overview.md) | HandedOffSuccess | [Details](#9dbfc534d38195ebc39faa6e0b46a0768b36458d348)
  [Azure-RMSDocs\rms-client\rights-management-sharing-application-for-windows.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7d7b8e88f76e682793b33cf84453a1beb938f0e1/Azure-RMSDocs/rms-client/rights-management-sharing-application-for-windows.md) | HandedOffSuccess | [Details](#fad8003790507415508be8b81cae0a2570287f7f350)
  [Azure-RMSDocs\rms-client\rights-management-sharing-application-user-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/rms-client/rights-management-sharing-application-user-guide.md) | HandedOffSuccess | [Details](#2dc531126c91d47df11ce08958c82422d3da8c8b351)
- [Azure-RMSDocs\rms-client\rights-management-sharing-application-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7d7b8e88f76e682793b33cf84453a1beb938f0e1/Azure-RMSDocs/rms-client/rights-management-sharing-application-version-release-history.md) | HandedOffSuccess | [Details](#29788b1f4a90c4b3e239d528fcf84a0e0b9bc2b4352)
  [Azure-RMSDocs\rms-client\rms-client-deployment-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/rms-client/rms-client-deployment-notes.md) | HandedOffSuccess | [Details](#60d87b6c66e3c0c92fabb9dac135706ab2ce6016353)
  [Azure-RMSDocs\rms-client\rms-protection-script-fci.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff1023910a00bfe7ad80ca780c303bb96760ca88/Azure-RMSDocs/rms-client/rms-protection-script-fci.md) | HandedOffSuccess | [Details](#100c0311ae5b6b81c9d34f60e892323bb637667b354)
  [Azure-RMSDocs\rms-client\rms-protection-with-windows-server-file-classification-infrastructure-fci.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/686924f9fe69eba94b33391abc6eb3cb07de316d/Azure-RMSDocs/rms-client/rms-protection-with-windows-server-file-classification-infrastructure-fci.md) | HandedOffSuccess | [Details](#0b008e0dbcef8dee6594da00955293763ef708ba355)
  [Azure-RMSDocs\rms-client\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/rms-client/TOC.md) | HandedOffSuccess | [Details](#b5cf9f0337e7e8b59fc20514bcb372e4437b40bd356)
  [Azure-RMSDocs\rms-client\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/rms-client/track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md) | HandedOffSuccess | [Details](#6bba01b0517c023465fdccb923f468ae1ecf1bf8357)
  [Azure-RMSDocs\rms-client\use-keyboard-shortcuts-in-the-rights-management-sharing-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/rms-client/use-keyboard-shortcuts-in-the-rights-management-sharing-application.md) | HandedOffSuccess | [Details](#1081e70c25caad31d5bc2b809db8b1e4c551247d358)
- [Azure-RMSDocs\rms-client\view-and-use-files-that-have-been-protected-by-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/rms-client/view-and-use-files-that-have-been-protected-by-rights-management.md) | HandedOffSuccess | [Details](#2992ed46633f3d24c16a049bbffc0987baadbbf7359)
- [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/8384e299d198a305d3b876b70858e880946cd656/Azure-RMSDocs/scratch.md) | HandedOffSuccess | [Details](#cc8c2aff534c48575835e8a40dfdc040380d1af7360)
  [Azure-RMSDocs\template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9c394fee878218deeb8dfd4ebf8b7918ec269ba3/Azure-RMSDocs/template.md) | HandedOffSuccess | [Details](#68090a038cec49009b6bd0ce0515a075f62483b8361)
  [Azure-RMSDocs\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/271cf5447ac8534ff3d3a8b0a55b3ff2bd843aa8/Azure-RMSDocs/TOC.md) | HandedOffSuccess | [Details](#da5c5f97de92edd7962846b9a9d318d76f67b84b362)
  [Azure-RMSDocs\troubleshoot\full-screen-picture-activating-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/troubleshoot/full-screen-picture-activating-rights-management.md) | HandedOffSuccess | [Details](#21be53ddbfca6554c1c22986e021408f22a52e96364)
@@ -372,26 +360,17 @@
  [Azure-RMSDocs\troubleshoot\test-configuring-usage-rights-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/troubleshoot/test-configuring-usage-rights-for-azure-rights-management.md) | HandedOffSuccess | [Details](#8b9b165aa0756b5df62c5802724a06e50ef38235389)
  [Azure-RMSDocs\troubleshoot\test-planning-and-implementing-your-azure-rights-management-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/troubleshoot/test-planning-and-implementing-your-azure-rights-management-tenant-key.md) | HandedOffSuccess | [Details](#f420d68c3ce9f7bc9088c662b2a2ea9a8b004fb8391)
  [Azure-RMSDocs\troubleshoot\test-requirements-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/troubleshoot/test-requirements-for-azure-rights-management.md) | HandedOffSuccess | [Details](#467e0961a48769a3e51dc077af5859d765bf7e2c392)
- [Azure-RMSDocs\troubleshoot\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/troubleshoot/TOC.md) | HandedOffSuccess | [Details](#3036877a4f389967e58c7aa350a9c1fa54ecb5a4393)
- [Azure-RMSDocs\understand-explore\azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/understand-explore/azure-rights-management.md) | HandedOffSuccess | [Details](#25a155ebe80deb4653750d8052af3304b39b6502394)
- [Azure-RMSDocs\understand-explore\azure-rms-aka.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/azure-rms-aka.md) | HandedOffSuccess | [Details](#3847f53d91e8862feaf09fd6eca3de86397bab0e395)
- [Azure-RMSDocs\understand-explore\azure-rms-problems-it-solves.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/understand-explore/azure-rms-problems-it-solves.md) | HandedOffSuccess | [Details](#8a1f5be8c0356cdec974493174c7474331d2ca21396)
- [Azure-RMSDocs\understand-explore\comparing-azure-rights-management-and-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/understand-explore/comparing-azure-rights-management-and-ad-rms.md) | HandedOffSuccess | [Details](#af1d88d902ec54d756454a94e885477e2e7ea68f397)
- [Azure-RMSDocs\understand-explore\how-applications-support-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/686924f9fe69eba94b33391abc6eb3cb07de316d/Azure-RMSDocs/understand-explore/how-applications-support-azure-rights-management.md) | HandedOffSuccess | [Details](#3b685019181dbe46bdb99ce2ad43fcf24affb2cb398)
- [Azure-RMSDocs\understand-explore\how-does-it-work.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/understand-explore/how-does-it-work.md) | HandedOffSuccess | [Details](#08c9a5972882d0b874ea41805ad33b89484dea08399)
- [Azure-RMSDocs\understand-explore\how-fileservers-support-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/how-fileservers-support-azure-rights-management.md) | HandedOffSuccess | [Details](#391c444ec8c1b6b03d0afa4d1184b6dae60202d6400)
- [Azure-RMSDocs\understand-explore\other-apps-support-apis.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/understand-explore/other-apps-support-apis.md) | HandedOffSuccess | [Details](#c379f3fcde37d63416ae1192dddd8712d9e6a6aa401)
- [Azure-RMSDocs\understand-explore\rights-management-sharing-application-for-office.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/rights-management-sharing-application-for-office.md) | HandedOffSuccess | [Details](#1bb4b17e26f427a9015b60ca439a511f17689d4b402)
- [Azure-RMSDocs\understand-explore\rms-for-individuals-admins-take-control.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/rms-for-individuals-admins-take-control.md) | HandedOffSuccess | [Details](#f72906619181c7c49ac5a22dd730a3622284cb86403)
- [Azure-RMSDocs\understand-explore\rms-for-individuals-and-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/rms-for-individuals-and-azure-rights-management.md) | HandedOffSuccess | [Details](#049de662941672655af318a2ec211f8f26037f73404)
- [Azure-RMSDocs\understand-explore\rms-for-individuals-find-if-users-have-signed-up.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/understand-explore/rms-for-individuals-find-if-users-have-signed-up.md) | HandedOffSuccess | [Details](#6840b7ba636bc37adf8c41114eff245ffe98baa0405)
- [Azure-RMSDocs\understand-explore\rms-for-individuals-user-signup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/understand-explore/rms-for-individuals-user-signup.md) | HandedOffSuccess | [Details](#f970eeddd61c88bac4b991e8b2d27ff7fb29aa8c406)
- [Azure-RMSDocs\understand-explore\sharing-application-for-windows-and-mobile-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/sharing-application-for-windows-and-mobile-platforms.md) | HandedOffSuccess | [Details](#1c4a2e75a95839bfa32298dbe3ad7f52f753db48407)
- [Azure-RMSDocs\understand-explore\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/understand-explore/TOC.md) | HandedOffSuccess | [Details](#df450fad87651fab23a76f0ccba67fd793411d37408)
- [Azure-RMSDocs\understand-explore\what-do-admins-users-see.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/understand-explore/what-do-admins-users-see.md) | HandedOffSuccess | [Details](#51faec3a884ef2204d1407ad5ea2508fa5005639409)
- [Azure-RMSDocs\understand-explore\what-is-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/understand-explore/what-is-azure-rights-management.md) | HandedOffSuccess | [Details](#12f72dc25e7bf8ea3f4035bf699571c946e1a804410)
- [README.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/README.md) | HandedOffSuccess | [Details](#100d1ac12c7663fd73213fb5c8902d6e1f906449411)
- [template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/template.md) | HandedOffSuccess | [Details](#68090a038cec49009b6bd0ce0515a075f62483b8412)
+ [Azure-RMSDocs\understand-explore\azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/understand-explore/azure-rights-management.md) | HandedOffSuccess | [Details](#25a155ebe80deb4653750d8052af3304b39b6502393)
+ [Azure-RMSDocs\understand-explore\azure-rms-aka.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/azure-rms-aka.md) | HandedOffSuccess | [Details](#3847f53d91e8862feaf09fd6eca3de86397bab0e394)
+ [Azure-RMSDocs\understand-explore\azure-rms-problems-it-solves.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/understand-explore/azure-rms-problems-it-solves.md) | HandedOffSuccess | [Details](#8a1f5be8c0356cdec974493174c7474331d2ca21395)
+ [Azure-RMSDocs\understand-explore\comparing-azure-rights-management-and-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/understand-explore/comparing-azure-rights-management-and-ad-rms.md) | HandedOffSuccess | [Details](#af1d88d902ec54d756454a94e885477e2e7ea68f396)
+ [Azure-RMSDocs\understand-explore\how-fileservers-support-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/how-fileservers-support-azure-rights-management.md) | HandedOffSuccess | [Details](#391c444ec8c1b6b03d0afa4d1184b6dae60202d6399)
+ [Azure-RMSDocs\understand-explore\rights-management-sharing-application-for-office.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/rights-management-sharing-application-for-office.md) | HandedOffSuccess | [Details](#1bb4b17e26f427a9015b60ca439a511f17689d4b401)
+ [Azure-RMSDocs\understand-explore\rms-for-individuals-admins-take-control.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/rms-for-individuals-admins-take-control.md) | HandedOffSuccess | [Details](#f72906619181c7c49ac5a22dd730a3622284cb86402)
+ [Azure-RMSDocs\understand-explore\sharing-application-for-windows-and-mobile-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/sharing-application-for-windows-and-mobile-platforms.md) | HandedOffSuccess | [Details](#1c4a2e75a95839bfa32298dbe3ad7f52f753db48406)
+ [Azure-RMSDocs\understand-explore\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/understand-explore/TOC.md) | HandedOffSuccess | [Details](#df450fad87651fab23a76f0ccba67fd793411d37407)
+ [README.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/README.md) | HandedOffSuccess | [Details](#100d1ac12c7663fd73213fb5c8902d6e1f906449410)
+ [template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/template.md) | HandedOffSuccess | [Details](#68090a038cec49009b6bd0ce0515a075f62483b8411)
 
 ## <a name='archive-failed-list'></a> Archive Failed File List
 
@@ -412,8 +391,11 @@
  [.openpublishing.build.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/.openpublishing.build.ps1) | Ignored | [Details](#9103b6933f2481864ecb6a66b76ba730e7f133b43)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/.openpublishing.publish.config.json) | Ignored | [Details](#f8e874dd3e6ed3aa9e13c3be1c8ca388d3cf72ac4)
  [Azure-RMSDocs\deploy-use\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/deploy-use/docfx.json) | Ignored | [Details](#c1317eaaf0f38e0cbfed40b88a7c7a4a4ea58b3722)
+ [Azure-RMSDocs\deploy-use\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/deploy-use/TOC.md) | Ignored | [Details](#7d75907421649d04ca7bb03711473023f7363c2b39)
  [Azure-RMSDocs\develop\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/develop/docfx.json) | Ignored | [Details](#50c6711539106c08a3af2aff41bce2851853725a65)
  [Azure-RMSDocs\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/docfx.json) | Ignored | [Details](#11a1a849d007c098704731e397545dc24c81bb4a109)
+ [Azure-RMSDocs\get-started\frequently-asked-questions-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/get-started/frequently-asked-questions-for-azure-rights-management.md) | Ignored | [Details](#2a72592e31004a1c78d58c9357c5d2e81ebe8116110)
+ [Azure-RMSDocs\get-started\rms-requirements-client-devices.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/get-started/rms-requirements-client-devices.md) | Ignored | [Details](#e4372f36d2bc40cba13a02f8397b9549a15c5294124)
  [Azure-RMSDocs\media\ADRMS_MSRMSApp_ProtectCustom.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/media/ADRMS_MSRMSApp_ProtectCustom.gif) | Ignored | [Details](#a92b83706a626411ae959ebe0be5e55d78fe7446176)
  [Azure-RMSDocs\media\ADRMS_MSRMSApp_SP_ConsumePfile.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/media/ADRMS_MSRMSApp_SP_ConsumePfile.gif) | Ignored | [Details](#5d2f20557a431bdb26e178ad24039f7b432438a3181)
  [Azure-RMSDocs\media\ADRMS_MSRMSAPP_SP_ShareProtected.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/media/ADRMS_MSRMSAPP_SP_ShareProtected.gif) | Ignored | [Details](#e844e87bb3ce8f1a1b152255ca75ea567b2fb1b9184)
@@ -446,8 +428,25 @@
  [Azure-RMSDocs\media\windows.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/media/windows.png) | Ignored | [Details](#5cba9445eb2765e5ad9d922bb9915967bfbab725313)
  [Azure-RMSDocs\media\windows_and_phone.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/media/windows_and_phone.png) | Ignored | [Details](#7629ae3423a4543b9257e29c11f03b8c34b2f045314)
  [Azure-RMSDocs\plan-design\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/docfx.json) | Ignored | [Details](#0aaba764b645704d1884594c244362ee9cc85136323)
+ [Azure-RMSDocs\plan-design\generate-and-transfer-your-tenant-key-in-person.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/generate-and-transfer-your-tenant-key-in-person.md) | Ignored | [Details](#c5cdfcea62113fd4df29d60bb8fbc6ffdadcf294324)
+ [Azure-RMSDocs\plan-design\generate-and-transfer-your-tenant-key-over-the-internet.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/generate-and-transfer-your-tenant-key-over-the-internet.md) | Ignored | [Details](#9e79aa4b3f4f5767b5dc3d7ea8a41651c111ba1b325)
+ [Azure-RMSDocs\plan-design\implementing-your-azure-rights-management-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/implementing-your-azure-rights-management-tenant-key.md) | Ignored | [Details](#125a8087f5e83af77918db7e82a1ea3b1facc070326)
+ [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management.md) | Ignored | [Details](#d8f759c568b70e0d5981a06689224e17f8f8340a335)
+ [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-phase1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-phase1.md) | Ignored | [Details](#ea601081a5c424f364f4d273e8be9522366a3a88329)
+ [Azure-RMSDocs\plan-design\migrating-server-side-configuration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/migrating-server-side-configuration.md) | Ignored | [Details](#69d553f35eb08c663f1e8ca9362be4990c054e62336)
  [Azure-RMSDocs\rms-client\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/rms-client/docfx.json) | Ignored | [Details](#d889ba09378c1600b0a0bc3bac6f6221f7049cc9341)
- [UpdateSubmodule.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/UpdateSubmodule.ps1) | Ignored | [Details](#42442e5f8d7f09fba90a865e184aacc3f8489143413)
+ [Azure-RMSDocs\rms-client\rights-management-sharing-application-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/rms-client/rights-management-sharing-application-version-release-history.md) | Ignored | [Details](#07efc00c0f3eb66f7b59d05a9fafb82136e5b5d3352)
+ [Azure-RMSDocs\rms-client\view-and-use-files-that-have-been-protected-by-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/rms-client/view-and-use-files-that-have-been-protected-by-rights-management.md) | Ignored | [Details](#46c30e5d0156d3f8caaa7f63248d89c2a18236bf359)
+ [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/scratch.md) | Ignored | [Details](#5f233ccade4da9fe9eadbaaf5501127dea140de9360)
+ [Azure-RMSDocs\understand-explore\how-applications-support-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/how-applications-support-azure-rights-management.md) | Ignored | [Details](#1190790d16a3ee2b17fd21012040944f967bd791397)
+ [Azure-RMSDocs\understand-explore\how-does-it-work.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/how-does-it-work.md) | Ignored | [Details](#8a45e1930f3fae75d0b9d3e037ea095f202fbe49398)
+ [Azure-RMSDocs\understand-explore\other-apps-support-apis.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/other-apps-support-apis.md) | Ignored | [Details](#f86dbe9bef36c4fe82ca945b75a380cd37a4eeb6400)
+ [Azure-RMSDocs\understand-explore\rms-for-individuals-and-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/rms-for-individuals-and-azure-rights-management.md) | Ignored | [Details](#bc9be8e0d0be332737c5116d1f89fbc9035c8cc4403)
+ [Azure-RMSDocs\understand-explore\rms-for-individuals-find-if-users-have-signed-up.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/rms-for-individuals-find-if-users-have-signed-up.md) | Ignored | [Details](#9bd31507f180dfa82ead456a1dd0b0ac6a7459bf404)
+ [Azure-RMSDocs\understand-explore\rms-for-individuals-user-signup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/rms-for-individuals-user-signup.md) | Ignored | [Details](#299083169ea7d06bc467589133ee0386a05dd641405)
+ [Azure-RMSDocs\understand-explore\what-do-admins-users-see.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/what-do-admins-users-see.md) | Ignored | [Details](#39d74421b4ae4f94aa10308c99756848919b80f1408)
+ [Azure-RMSDocs\understand-explore\what-is-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/what-is-azure-rights-management.md) | Ignored | [Details](#c23c4fb5406bc44df305994d228de2cd47d30dcd409)
+ [UpdateSubmodule.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/UpdateSubmodule.ps1) | Ignored | [Details](#42442e5f8d7f09fba90a865e184aacc3f8489143412)
 
 ## Item Details
 ##### <a name='7c4de7495fb4bb76bd8b9102a4ab583ce46e5cad0'></a> Source: [.gitignore](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/.gitignore)
@@ -522,11 +521,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='44107ffcadda5cc0807689a22055c09c6282b0e65'></a> Source: [Azure-RMSDocs\deploy-use\activating-azure-rights-management-0365classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c065d07c5286f5b5c81ba356bbb3bec1994172e0/Azure-RMSDocs/deploy-use/activating-azure-rights-management-0365classic.md)
+##### <a name='dff1aa7acb7299afa86364d69304935f35286b2c5'></a> Source: [Azure-RMSDocs\deploy-use\activating-azure-rights-management-azure.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7d7b8e88f76e682793b33cf84453a1beb938f0e1/Azure-RMSDocs/deploy-use/activating-azure-rights-management-azure.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [activating-azure-rights-management-0365classic.7a7e5f05dcee6fc3a9f4a06298be80202a3b91cd.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/ea3a30e513a5eb8a4b5529a11c011fb625289e43/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activating-azure-rights-management-0365classic.7a7e5f05dcee6fc3a9f4a06298be80202a3b91cd.zh-cn.xlf)
-* Handoff Datetime: 2016-04-06 23:00:39
+* Handoff File: [activating-azure-rights-management-azure.30eb81901c6cec5bf679bc3d773fb9ea060a5d7b.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/44fc436685ab266b37b6c207b3fef41a12fa935a/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activating-azure-rights-management-azure.30eb81901c6cec5bf679bc3d773fb9ea060a5d7b.zh-cn.xlf)
+* Handoff Datetime: 2016-04-13 22:24:11
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -534,11 +533,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='dff1aa7acb7299afa86364d69304935f35286b2c6'></a> Source: [Azure-RMSDocs\deploy-use\activating-azure-rights-management-azure.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7d7b8e88f76e682793b33cf84453a1beb938f0e1/Azure-RMSDocs/deploy-use/activating-azure-rights-management-azure.md)
+##### <a name='44107ffcadda5cc0807689a22055c09c6282b0e66'></a> Source: [Azure-RMSDocs\deploy-use\activating-azure-rights-management-o365classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/deploy-use/activating-azure-rights-management-o365classic.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [activating-azure-rights-management-azure.30eb81901c6cec5bf679bc3d773fb9ea060a5d7b.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/44fc436685ab266b37b6c207b3fef41a12fa935a/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activating-azure-rights-management-azure.30eb81901c6cec5bf679bc3d773fb9ea060a5d7b.zh-cn.xlf)
-* Handoff Datetime: 2016-04-13 22:24:11
+* Handoff File: [activating-azure-rights-management-0365classic.7a7e5f05dcee6fc3a9f4a06298be80202a3b91cd.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/ea3a30e513a5eb8a4b5529a11c011fb625289e43/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activating-azure-rights-management-0365classic.7a7e5f05dcee6fc3a9f4a06298be80202a3b91cd.zh-cn.xlf)
+* Handoff Datetime: 2016-04-06 23:00:39
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -918,12 +917,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='def24770adfc1de9fcfe7a10f1c4a5f2396f2fc039'></a> Source: [Azure-RMSDocs\deploy-use\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/deploy-use/TOC.md)
-* Status: HandedOffSuccess
+##### <a name='7d75907421649d04ca7bb03711473023f7363c2b39'></a> Source: [Azure-RMSDocs\deploy-use\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/deploy-use/TOC.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [TOC.15093da2c32050c16b3bc82d728b3f6546760f04.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/bce4a5b97cde166a50adacad7b7f5f0b83ba9810/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.15093da2c32050c16b3bc82d728b3f6546760f04.zh-cn.xlf)
-* Handoff Datetime: 2016-04-15 08:59:48
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -1822,12 +1821,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='78bef4282b44e443add87c851ce79e140de5cc12110'></a> Source: [Azure-RMSDocs\get-started\frequently-asked-questions-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/get-started/frequently-asked-questions-for-azure-rights-management.md)
-* Status: HandedOffSuccess
+##### <a name='2a72592e31004a1c78d58c9357c5d2e81ebe8116110'></a> Source: [Azure-RMSDocs\get-started\frequently-asked-questions-for-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/get-started/frequently-asked-questions-for-azure-rights-management.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [frequently-asked-questions-for-azure-rights-management.0021b930145448854f48f595763ad52fe3d3e73d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/bce4a5b97cde166a50adacad7b7f5f0b83ba9810/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/frequently-asked-questions-for-azure-rights-management.0021b930145448854f48f595763ad52fe3d3e73d.zh-cn.xlf)
-* Handoff Datetime: 2016-04-15 08:59:48
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -1990,12 +1989,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='199bf6a36ae918e2f3be4712f146755364325e4b124'></a> Source: [Azure-RMSDocs\get-started\rms-requirements-client-devices.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/get-started/rms-requirements-client-devices.md)
-* Status: HandedOffSuccess
+##### <a name='e4372f36d2bc40cba13a02f8397b9549a15c5294124'></a> Source: [Azure-RMSDocs\get-started\rms-requirements-client-devices.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/get-started/rms-requirements-client-devices.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [rms-requirements-client-devices.23898e5907daa57701478c884e6ebd2d45c42a2c.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/bce4a5b97cde166a50adacad7b7f5f0b83ba9810/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rms-requirements-client-devices.23898e5907daa57701478c884e6ebd2d45c42a2c.zh-cn.xlf)
-* Handoff Datetime: 2016-04-15 08:59:48
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -4515,36 +4514,36 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='3d623ea5a90ca6c8730d0b9188840a24916fcb0d324'></a> Source: [Azure-RMSDocs\plan-design\generate-and-transfer-your-tenant-key-in-person.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/plan-design/generate-and-transfer-your-tenant-key-in-person.md)
-* Status: HandedOffSuccess
+##### <a name='c5cdfcea62113fd4df29d60bb8fbc6ffdadcf294324'></a> Source: [Azure-RMSDocs\plan-design\generate-and-transfer-your-tenant-key-in-person.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/generate-and-transfer-your-tenant-key-in-person.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [generate-and-transfer-your-tenant-key-in-person.1f551c1082f7b734ea084a6c34de1df3a8caca63.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/e5d01ac72c2c3d0133eacfaa8e981826b0ac24af/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/generate-and-transfer-your-tenant-key-in-person.1f551c1082f7b734ea084a6c34de1df3a8caca63.zh-cn.xlf)
-* Handoff Datetime: 2016-04-13 01:18:34
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='c14d8e3503b5ad8f9bb9e571f573e35332bd6d41325'></a> Source: [Azure-RMSDocs\plan-design\generate-and-transfer-your-tenant-key-over-the-internet.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/plan-design/generate-and-transfer-your-tenant-key-over-the-internet.md)
-* Status: HandedOffSuccess
+##### <a name='9e79aa4b3f4f5767b5dc3d7ea8a41651c111ba1b325'></a> Source: [Azure-RMSDocs\plan-design\generate-and-transfer-your-tenant-key-over-the-internet.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/generate-and-transfer-your-tenant-key-over-the-internet.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [generate-and-transfer-your-tenant-key-over-the-internet.ad2612e1a81383a461b291b9f0da0e9dfa32a293.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/e5d01ac72c2c3d0133eacfaa8e981826b0ac24af/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/generate-and-transfer-your-tenant-key-over-the-internet.ad2612e1a81383a461b291b9f0da0e9dfa32a293.zh-cn.xlf)
-* Handoff Datetime: 2016-04-13 01:18:34
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='28f64c528215357e818636bad81784994da08b32326'></a> Source: [Azure-RMSDocs\plan-design\implementing-your-azure-rights-management-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/plan-design/implementing-your-azure-rights-management-tenant-key.md)
-* Status: HandedOffSuccess
+##### <a name='125a8087f5e83af77918db7e82a1ea3b1facc070326'></a> Source: [Azure-RMSDocs\plan-design\implementing-your-azure-rights-management-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/implementing-your-azure-rights-management-tenant-key.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [implementing-your-azure-rights-management-tenant-key.7faaff19447203f7cf437e787748a749fbcb620c.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/bce4a5b97cde166a50adacad7b7f5f0b83ba9810/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/implementing-your-azure-rights-management-tenant-key.7faaff19447203f7cf437e787748a749fbcb620c.zh-cn.xlf)
-* Handoff Datetime: 2016-04-15 08:59:48
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -4563,12 +4562,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='cbc332ec3cd1ca26cd0ddf3f9fde9df2aff35528335'></a> Source: [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management.md)
-* Status: HandedOffSuccess
+##### <a name='d8f759c568b70e0d5981a06689224e17f8f8340a335'></a> Source: [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [migrating-from-ad-rms-to-azure-rights-management.ee980aca9daf1004de34113d24c296c4e0d28cde.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/d20a09e44b9a54c3b6a859c058a909ac88bfcc6c/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrating-from-ad-rms-to-azure-rights-management.ee980aca9daf1004de34113d24c296c4e0d28cde.zh-cn.xlf)
-* Handoff Datetime: 2016-04-15 23:55:16
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -4587,12 +4586,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='c4c4253aa90896a00c76d51ac8fecfd2c1d58f4d329'></a> Source: [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-phase1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-phase1.md)
-* Status: HandedOffSuccess
+##### <a name='ea601081a5c424f364f4d273e8be9522366a3a88329'></a> Source: [Azure-RMSDocs\plan-design\migrating-from-ad-rms-to-azure-rights-management-phase1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/migrating-from-ad-rms-to-azure-rights-management-phase1.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [migrating-from-ad-rms-to-azure-rights-management-phase1.bf8db87f7b840638e3e195caaf06fe10d1f10f21.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/bce4a5b97cde166a50adacad7b7f5f0b83ba9810/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrating-from-ad-rms-to-azure-rights-management-phase1.bf8db87f7b840638e3e195caaf06fe10d1f10f21.zh-cn.xlf)
-* Handoff Datetime: 2016-04-15 08:59:48
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -4659,12 +4658,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f15bfab7b2d13e8b56d6ac38cfd771624793f592336'></a> Source: [Azure-RMSDocs\plan-design\migrating-server-side-configuration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/plan-design/migrating-server-side-configuration.md)
-* Status: HandedOffSuccess
+##### <a name='69d553f35eb08c663f1e8ca9362be4990c054e62336'></a> Source: [Azure-RMSDocs\plan-design\migrating-server-side-configuration.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/plan-design/migrating-server-side-configuration.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [migrating-server-side-configuration.8a9d186310630582a40a8314430d8d690c258867.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/bce4a5b97cde166a50adacad7b7f5f0b83ba9810/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrating-server-side-configuration.8a9d186310630582a40a8314430d8d690c258867.zh-cn.xlf)
-* Handoff Datetime: 2016-04-15 08:59:48
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -4851,12 +4850,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='29788b1f4a90c4b3e239d528fcf84a0e0b9bc2b4352'></a> Source: [Azure-RMSDocs\rms-client\rights-management-sharing-application-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7d7b8e88f76e682793b33cf84453a1beb938f0e1/Azure-RMSDocs/rms-client/rights-management-sharing-application-version-release-history.md)
-* Status: HandedOffSuccess
+##### <a name='07efc00c0f3eb66f7b59d05a9fafb82136e5b5d3352'></a> Source: [Azure-RMSDocs\rms-client\rights-management-sharing-application-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/rms-client/rights-management-sharing-application-version-release-history.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [rights-management-sharing-application-version-release-history.6aabdb65965eca3734133687f2efb12b2a52ff48.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/44fc436685ab266b37b6c207b3fef41a12fa935a/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rights-management-sharing-application-version-release-history.6aabdb65965eca3734133687f2efb12b2a52ff48.zh-cn.xlf)
-* Handoff Datetime: 2016-04-13 22:24:11
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -4935,24 +4934,24 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='2992ed46633f3d24c16a049bbffc0987baadbbf7359'></a> Source: [Azure-RMSDocs\rms-client\view-and-use-files-that-have-been-protected-by-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/rms-client/view-and-use-files-that-have-been-protected-by-rights-management.md)
-* Status: HandedOffSuccess
+##### <a name='46c30e5d0156d3f8caaa7f63248d89c2a18236bf359'></a> Source: [Azure-RMSDocs\rms-client\view-and-use-files-that-have-been-protected-by-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/rms-client/view-and-use-files-that-have-been-protected-by-rights-management.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [view-and-use-files-that-have-been-protected-by-rights-management.0970f8f86e2dd8160ac612fda432810b16e3e2f1.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/f3e5fb901c7853a063fb70e0a53f4421d2cb47a8/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/view-and-use-files-that-have-been-protected-by-rights-management.0970f8f86e2dd8160ac612fda432810b16e3e2f1.zh-cn.xlf)
-* Handoff Datetime: 2016-04-13 22:44:02
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='cc8c2aff534c48575835e8a40dfdc040380d1af7360'></a> Source: [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/8384e299d198a305d3b876b70858e880946cd656/Azure-RMSDocs/scratch.md)
-* Status: HandedOffSuccess
+##### <a name='5f233ccade4da9fe9eadbaaf5501127dea140de9360'></a> Source: [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/scratch.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/c98421378f52663da97e2080a3adc328d4b32a77/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-cn.xlf)
-* Handoff Datetime: 2016-04-14 12:52:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -5346,19 +5345,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='3036877a4f389967e58c7aa350a9c1fa54ecb5a4393'></a> Source: [Azure-RMSDocs\troubleshoot\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/troubleshoot/TOC.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [TOC.c962a621438ba36bd64ceffe2cdf9489982e7f7e.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/e7b363379256f6e9695009f97709340f38ed194c/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.c962a621438ba36bd64ceffe2cdf9489982e7f7e.zh-cn.xlf)
-* Handoff Datetime: 2016-03-18 16:27:17
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='25a155ebe80deb4653750d8052af3304b39b6502394'></a> Source: [Azure-RMSDocs\understand-explore\azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/understand-explore/azure-rights-management.md)
+##### <a name='25a155ebe80deb4653750d8052af3304b39b6502393'></a> Source: [Azure-RMSDocs\understand-explore\azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/understand-explore/azure-rights-management.md)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [azure-rights-management.d8af87cfd773f296eb41dc199896fb308b1ba8fd.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/f3e5fb901c7853a063fb70e0a53f4421d2cb47a8/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/azure-rights-management.d8af87cfd773f296eb41dc199896fb308b1ba8fd.zh-cn.xlf)
@@ -5370,7 +5357,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='3847f53d91e8862feaf09fd6eca3de86397bab0e395'></a> Source: [Azure-RMSDocs\understand-explore\azure-rms-aka.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/azure-rms-aka.md)
+##### <a name='3847f53d91e8862feaf09fd6eca3de86397bab0e394'></a> Source: [Azure-RMSDocs\understand-explore\azure-rms-aka.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/azure-rms-aka.md)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [azure-rms-aka.20396b25024de803a30ca97c8eafc95fd8fe6ca6.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/e5d01ac72c2c3d0133eacfaa8e981826b0ac24af/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/azure-rms-aka.20396b25024de803a30ca97c8eafc95fd8fe6ca6.zh-cn.xlf)
@@ -5382,7 +5369,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='8a1f5be8c0356cdec974493174c7474331d2ca21396'></a> Source: [Azure-RMSDocs\understand-explore\azure-rms-problems-it-solves.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/understand-explore/azure-rms-problems-it-solves.md)
+##### <a name='8a1f5be8c0356cdec974493174c7474331d2ca21395'></a> Source: [Azure-RMSDocs\understand-explore\azure-rms-problems-it-solves.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/understand-explore/azure-rms-problems-it-solves.md)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [azure-rms-problems-it-solves.ca9dbc7494fd2f1e29c7421a5150d86e7a9d14e2.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/bce4a5b97cde166a50adacad7b7f5f0b83ba9810/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/azure-rms-problems-it-solves.ca9dbc7494fd2f1e29c7421a5150d86e7a9d14e2.zh-cn.xlf)
@@ -5394,7 +5381,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='af1d88d902ec54d756454a94e885477e2e7ea68f397'></a> Source: [Azure-RMSDocs\understand-explore\comparing-azure-rights-management-and-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/understand-explore/comparing-azure-rights-management-and-ad-rms.md)
+##### <a name='af1d88d902ec54d756454a94e885477e2e7ea68f396'></a> Source: [Azure-RMSDocs\understand-explore\comparing-azure-rights-management-and-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/understand-explore/comparing-azure-rights-management-and-ad-rms.md)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [comparing-azure-rights-management-and-ad-rms.31128b218e23aeb2fd828929f5ab00dbe19f51c8.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/bce4a5b97cde166a50adacad7b7f5f0b83ba9810/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/comparing-azure-rights-management-and-ad-rms.31128b218e23aeb2fd828929f5ab00dbe19f51c8.zh-cn.xlf)
@@ -5406,31 +5393,31 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='3b685019181dbe46bdb99ce2ad43fcf24affb2cb398'></a> Source: [Azure-RMSDocs\understand-explore\how-applications-support-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/686924f9fe69eba94b33391abc6eb3cb07de316d/Azure-RMSDocs/understand-explore/how-applications-support-azure-rights-management.md)
-* Status: HandedOffSuccess
+##### <a name='1190790d16a3ee2b17fd21012040944f967bd791397'></a> Source: [Azure-RMSDocs\understand-explore\how-applications-support-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/how-applications-support-azure-rights-management.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [how-applications-support-azure-rights-management.2358a6369a2687ca7c9055f9af89aef1403236f2.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/82422854b83d5943ed62a9bbb898e06406f7a817/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-applications-support-azure-rights-management.2358a6369a2687ca7c9055f9af89aef1403236f2.zh-cn.xlf)
-* Handoff Datetime: 2016-04-14 01:39:36
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='08c9a5972882d0b874ea41805ad33b89484dea08399'></a> Source: [Azure-RMSDocs\understand-explore\how-does-it-work.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5f8bffedc4b8ac8c6b9fd05a30d586f0db1cf62a/Azure-RMSDocs/understand-explore/how-does-it-work.md)
-* Status: HandedOffSuccess
+##### <a name='8a45e1930f3fae75d0b9d3e037ea095f202fbe49398'></a> Source: [Azure-RMSDocs\understand-explore\how-does-it-work.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/how-does-it-work.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [how-does-it-work.e10d4871d616835b44d201ec5b1212a575d0f425.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/712b9dcfc7af1613968ce2397b5c29120b649856/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-does-it-work.e10d4871d616835b44d201ec5b1212a575d0f425.zh-cn.xlf)
-* Handoff Datetime: 2016-04-14 17:13:51
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='391c444ec8c1b6b03d0afa4d1184b6dae60202d6400'></a> Source: [Azure-RMSDocs\understand-explore\how-fileservers-support-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/how-fileservers-support-azure-rights-management.md)
+##### <a name='391c444ec8c1b6b03d0afa4d1184b6dae60202d6399'></a> Source: [Azure-RMSDocs\understand-explore\how-fileservers-support-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/how-fileservers-support-azure-rights-management.md)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [how-fileservers-support-azure-rights-management.92d5ea64327a13fb3cc156481c0c81f431907280.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/e5d01ac72c2c3d0133eacfaa8e981826b0ac24af/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/how-fileservers-support-azure-rights-management.92d5ea64327a13fb3cc156481c0c81f431907280.zh-cn.xlf)
@@ -5442,19 +5429,19 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='c379f3fcde37d63416ae1192dddd8712d9e6a6aa401'></a> Source: [Azure-RMSDocs\understand-explore\other-apps-support-apis.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/understand-explore/other-apps-support-apis.md)
-* Status: HandedOffSuccess
+##### <a name='f86dbe9bef36c4fe82ca945b75a380cd37a4eeb6400'></a> Source: [Azure-RMSDocs\understand-explore\other-apps-support-apis.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/other-apps-support-apis.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [other-apps-support-apis.fe0e0c19e5f7f0faadb97c5cdc95305c14eeb5c0.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/31412494e659221da4f50ff3fed171b7e638d1d4/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/other-apps-support-apis.fe0e0c19e5f7f0faadb97c5cdc95305c14eeb5c0.zh-cn.xlf)
-* Handoff Datetime: 2016-03-28 21:23:31
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='1bb4b17e26f427a9015b60ca439a511f17689d4b402'></a> Source: [Azure-RMSDocs\understand-explore\rights-management-sharing-application-for-office.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/rights-management-sharing-application-for-office.md)
+##### <a name='1bb4b17e26f427a9015b60ca439a511f17689d4b401'></a> Source: [Azure-RMSDocs\understand-explore\rights-management-sharing-application-for-office.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/rights-management-sharing-application-for-office.md)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [rights-management-sharing-application-for-office.dcc6d6daea35436dfa040a40dc8bc5fe79082307.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/e5d01ac72c2c3d0133eacfaa8e981826b0ac24af/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rights-management-sharing-application-for-office.dcc6d6daea35436dfa040a40dc8bc5fe79082307.zh-cn.xlf)
@@ -5466,7 +5453,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f72906619181c7c49ac5a22dd730a3622284cb86403'></a> Source: [Azure-RMSDocs\understand-explore\rms-for-individuals-admins-take-control.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/rms-for-individuals-admins-take-control.md)
+##### <a name='f72906619181c7c49ac5a22dd730a3622284cb86402'></a> Source: [Azure-RMSDocs\understand-explore\rms-for-individuals-admins-take-control.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/rms-for-individuals-admins-take-control.md)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [rms-for-individuals-admins-take-control.a9ae70ded8226c845a55013492aaf3e44178687b.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/e5d01ac72c2c3d0133eacfaa8e981826b0ac24af/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rms-for-individuals-admins-take-control.a9ae70ded8226c845a55013492aaf3e44178687b.zh-cn.xlf)
@@ -5478,43 +5465,43 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='049de662941672655af318a2ec211f8f26037f73404'></a> Source: [Azure-RMSDocs\understand-explore\rms-for-individuals-and-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/rms-for-individuals-and-azure-rights-management.md)
-* Status: HandedOffSuccess
+##### <a name='bc9be8e0d0be332737c5116d1f89fbc9035c8cc4403'></a> Source: [Azure-RMSDocs\understand-explore\rms-for-individuals-and-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/rms-for-individuals-and-azure-rights-management.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [rms-for-individuals-and-azure-rights-management.3340130c9bcf7d4d79d6e10cb4c475883b991ffd.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/e5d01ac72c2c3d0133eacfaa8e981826b0ac24af/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rms-for-individuals-and-azure-rights-management.3340130c9bcf7d4d79d6e10cb4c475883b991ffd.zh-cn.xlf)
-* Handoff Datetime: 2016-04-13 01:18:34
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='6840b7ba636bc37adf8c41114eff245ffe98baa0405'></a> Source: [Azure-RMSDocs\understand-explore\rms-for-individuals-find-if-users-have-signed-up.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1bb541e6c517e6f29c8904e3c67a36dd12e32a29/Azure-RMSDocs/understand-explore/rms-for-individuals-find-if-users-have-signed-up.md)
-* Status: HandedOffSuccess
+##### <a name='9bd31507f180dfa82ead456a1dd0b0ac6a7459bf404'></a> Source: [Azure-RMSDocs\understand-explore\rms-for-individuals-find-if-users-have-signed-up.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/rms-for-individuals-find-if-users-have-signed-up.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [rms-for-individuals-find-if-users-have-signed-up.78719d9c9ed3e73a94750b11cf386c149f2182eb.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/31412494e659221da4f50ff3fed171b7e638d1d4/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rms-for-individuals-find-if-users-have-signed-up.78719d9c9ed3e73a94750b11cf386c149f2182eb.zh-cn.xlf)
-* Handoff Datetime: 2016-03-28 21:23:31
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f970eeddd61c88bac4b991e8b2d27ff7fb29aa8c406'></a> Source: [Azure-RMSDocs\understand-explore\rms-for-individuals-user-signup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/understand-explore/rms-for-individuals-user-signup.md)
-* Status: HandedOffSuccess
+##### <a name='299083169ea7d06bc467589133ee0386a05dd641405'></a> Source: [Azure-RMSDocs\understand-explore\rms-for-individuals-user-signup.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/rms-for-individuals-user-signup.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [rms-for-individuals-user-signup.2f0abe9ccea2a2cc1640b1ee140e5dd6e2041ee9.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/bce4a5b97cde166a50adacad7b7f5f0b83ba9810/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/rms-for-individuals-user-signup.2f0abe9ccea2a2cc1640b1ee140e5dd6e2041ee9.zh-cn.xlf)
-* Handoff Datetime: 2016-04-15 08:59:48
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='1c4a2e75a95839bfa32298dbe3ad7f52f753db48407'></a> Source: [Azure-RMSDocs\understand-explore\sharing-application-for-windows-and-mobile-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/sharing-application-for-windows-and-mobile-platforms.md)
+##### <a name='1c4a2e75a95839bfa32298dbe3ad7f52f753db48406'></a> Source: [Azure-RMSDocs\understand-explore\sharing-application-for-windows-and-mobile-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b0453ce109ba86916ab6f44be922abdf0abe2daf/Azure-RMSDocs/understand-explore/sharing-application-for-windows-and-mobile-platforms.md)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [sharing-application-for-windows-and-mobile-platforms.3623fa57f55b6b90ca2fc6d382475ac7431f1764.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/e5d01ac72c2c3d0133eacfaa8e981826b0ac24af/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/sharing-application-for-windows-and-mobile-platforms.3623fa57f55b6b90ca2fc6d382475ac7431f1764.zh-cn.xlf)
@@ -5526,7 +5513,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='df450fad87651fab23a76f0ccba67fd793411d37408'></a> Source: [Azure-RMSDocs\understand-explore\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/understand-explore/TOC.md)
+##### <a name='df450fad87651fab23a76f0ccba67fd793411d37407'></a> Source: [Azure-RMSDocs\understand-explore\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/understand-explore/TOC.md)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [TOC.132273379247391752a00ca59e2585345cd61252.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/f3e5fb901c7853a063fb70e0a53f4421d2cb47a8/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.132273379247391752a00ca59e2585345cd61252.zh-cn.xlf)
@@ -5538,31 +5525,31 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='51faec3a884ef2204d1407ad5ea2508fa5005639409'></a> Source: [Azure-RMSDocs\understand-explore\what-do-admins-users-see.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/74d12b4a852d5ef226e15a7a43325f68d3cda6c7/Azure-RMSDocs/understand-explore/what-do-admins-users-see.md)
-* Status: HandedOffSuccess
+##### <a name='39d74421b4ae4f94aa10308c99756848919b80f1408'></a> Source: [Azure-RMSDocs\understand-explore\what-do-admins-users-see.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/what-do-admins-users-see.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [what-do-admins-users-see.ae3f21f00eb55c30de994fd6fbbd9c8e637e486a.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/bce4a5b97cde166a50adacad7b7f5f0b83ba9810/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/what-do-admins-users-see.ae3f21f00eb55c30de994fd6fbbd9c8e637e486a.zh-cn.xlf)
-* Handoff Datetime: 2016-04-15 08:59:48
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='12f72dc25e7bf8ea3f4035bf699571c946e1a804410'></a> Source: [Azure-RMSDocs\understand-explore\what-is-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b58ca159b7399f13106964a6a930fcc183b35db9/Azure-RMSDocs/understand-explore/what-is-azure-rights-management.md)
-* Status: HandedOffSuccess
+##### <a name='c23c4fb5406bc44df305994d228de2cd47d30dcd409'></a> Source: [Azure-RMSDocs\understand-explore\what-is-azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/Azure-RMSDocs/understand-explore/what-is-azure-rights-management.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [what-is-azure-rights-management.8f643d04144910ce674d00866ebe11cab03c21f0.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/f3e5fb901c7853a063fb70e0a53f4421d2cb47a8/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/what-is-azure-rights-management.8f643d04144910ce674d00866ebe11cab03c21f0.zh-cn.xlf)
-* Handoff Datetime: 2016-04-13 22:44:02
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='100d1ac12c7663fd73213fb5c8902d6e1f906449411'></a> Source: [README.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/README.md)
+##### <a name='100d1ac12c7663fd73213fb5c8902d6e1f906449410'></a> Source: [README.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1748cb866705a4ddee75a3587969798a15e77403/README.md)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [README.8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/24df7185df0d714cd929e64179550bc4324b0e62/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/README.8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d.zh-cn.xlf)
@@ -5574,7 +5561,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='68090a038cec49009b6bd0ce0515a075f62483b8412'></a> Source: [template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/template.md)
+##### <a name='68090a038cec49009b6bd0ce0515a075f62483b8411'></a> Source: [template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/template.md)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/e37ee9ba47cd7748b5a5a56ad701c8c712584c48/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-cn.xlf)
@@ -5586,7 +5573,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='42442e5f8d7f09fba90a865e184aacc3f8489143413'></a> Source: [UpdateSubmodule.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/UpdateSubmodule.ps1)
+##### <a name='42442e5f8d7f09fba90a865e184aacc3f8489143412'></a> Source: [UpdateSubmodule.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61ab4327dd893587a4c2f17756f096f92941c80f/UpdateSubmodule.ps1)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
