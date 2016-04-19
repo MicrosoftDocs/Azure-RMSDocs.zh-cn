@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "d0b0c5d7db26cec7b1d4be12340aa73623ea179f",
+  "LastProcessedCommit": "d71fc105e30fdc9ece90f5197d3e82962b78a101",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -44073,6 +44073,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\understand-explore.6c056e9eaf595609545e18189ab50a66b1026927.zh-cn.xlf",
       "HandoffFileCommit": "257f2ed1bf80e969516ca336ed9cdecb69da1f5d",
       "HandoffDateTime": "2016-04-19T07:21:59.0028892Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "308db9a9091556e3a1f2797fa788f1b02c2ee8b2": {
+      "FileHash": "308db9a9091556e3a1f2797fa788f1b02c2ee8b2",
+      "SourceFileCommit": "ce893dff5e40f88eb5c275c87eb75a4cab3a4443",
+      "SourceFilePath": "Azure-RMSDocs\\rms-client\\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\rms-client\\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.f81e08efd265ae3536e887f6f71937350f5d94fb.zh-cn.xlf",
+      "HandoffFileCommit": "a6efe7c0d4770075b8bc4985fcb757a67ad89c72",
+      "HandoffDateTime": "2016-04-19T22:32:31.7007424Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
