@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\rms-client\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ce893dff5e40f88eb5c275c87eb75a4cab3a4443/Azure-RMSDocs/rms-client/track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md) | HandedOffSuccess | [Details](#308db9a9091556e3a1f2797fa788f1b02c2ee8b2362)
+ [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/62b0867a436e75649d6e02ee16afd7ea8f6c529e/Azure-RMSDocs/index.md) | HandedOffSuccess | [Details](#138ed0bb2e8378cea1863e7b92bbb4aaa13f7a3a168)
 
 ## Item Details
-##### <a name='308db9a9091556e3a1f2797fa788f1b02c2ee8b2362'></a> Source: [Azure-RMSDocs\rms-client\track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ce893dff5e40f88eb5c275c87eb75a4cab3a4443/Azure-RMSDocs/rms-client/track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.md)
+##### <a name='138ed0bb2e8378cea1863e7b92bbb4aaa13f7a3a168'></a> Source: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/62b0867a436e75649d6e02ee16afd7ea8f6c529e/Azure-RMSDocs/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.f81e08efd265ae3536e887f6f71937350f5d94fb.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/a6efe7c0d4770075b8bc4985fcb757a67ad89c72/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/track-and-revoke-your-documents-when-you-use-the-rms-sharing-application.f81e08efd265ae3536e887f6f71937350f5d94fb.zh-cn.xlf)
-* Handoff Datetime: 2016-04-19 22:32:31
+* Handoff File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/586125b241a6cb4ba42944afa94cd5aa34ed6322/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf)
+* Handoff Datetime: 2016-04-19 22:49:53
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
