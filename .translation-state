@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "c711eaf4c553386e10ca2360f16bb77021d93b16",
+  "LastProcessedCommit": "be6a2646aac7dac78f4b5fa2bb56984645f596c8",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -44131,6 +44131,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf",
       "HandoffFileCommit": "586125b241a6cb4ba42944afa94cd5aa34ed6322",
       "HandoffDateTime": "2016-04-19T22:49:53.0780924Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "da4e4d76fe1feab901231b74c70ea198f80a5b1c": {
+      "FileHash": "da4e4d76fe1feab901231b74c70ea198f80a5b1c",
+      "SourceFileCommit": "00ea2b1478f091c1e3fb0b70c7efabd2f6e1d9ac",
+      "SourceFilePath": "Azure-RMSDocs\\develop\\ad-rms-server.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\develop\\ad-rms-server.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\ad-rms-server.fa059ee846c5974ee9338f46379d36401b59c9e4.zh-cn.xlf",
+      "HandoffFileCommit": "a0f37ab2f7d074d85989c6d58fdf25114308abec",
+      "HandoffDateTime": "2016-04-20T22:29:10.1407297Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
