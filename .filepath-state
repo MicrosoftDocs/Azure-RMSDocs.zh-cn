@@ -563,11 +563,17 @@
   "e08656f63f5a1dbd057de79766d6d5c08a629947": [
     "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
   ],
+  "2b114c4273d902b25d5d7d1b0ae00ff5fbf3b3e7": [
+    "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
+  ],
   "1c46d933b5d01982319a3da50ee7d0315a3cf2b1": [
     "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
   ],
   "afb12355fcdaa2ec1dd8ff1665b296a0bcca8020": [
     "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
+  ],
+  "b6cbe510fdcf5d31e0121f40591b771d80f305f6": [
+    "Azure-RMSDocs\\get-started\\scenario-fci.md"
   ],
   "60aed3eb1f2eebd8cf0d4830ffd036e311ac3018": [
     "Azure-RMSDocs\\get-started\\scenario-fci.md"
@@ -575,17 +581,26 @@
   "6046cb90425a615535ae9ec5cd9d2193f3020f9b": [
     "Azure-RMSDocs\\get-started\\scenario-fci.md"
   ],
+  "7637c40842a5bb51beec5334a7711d7811b122ee": [
+    "Azure-RMSDocs\\get-started\\scenario-sharepoint.md"
+  ],
   "8b9c8ef4dab22ab94e6cab8e0b6e0dcc1d92c1b2": [
     "Azure-RMSDocs\\get-started\\scenario-sharepoint.md"
   ],
   "14984ac973d2f4163c5e3cc71c4c5f7b7c28eb30": [
     "Azure-RMSDocs\\get-started\\scenario-sharepoint.md"
   ],
+  "6bfc2a697fa5f9a0fe1a20a249e7fec57b0c3bdb": [
+    "Azure-RMSDocs\\get-started\\scenario-secure-most-valuable-files.md"
+  ],
   "381391f5eddfdfc13463dbffdca7acf4200e767a": [
     "Azure-RMSDocs\\get-started\\scenario-secure-most-valuable-files.md"
   ],
   "3de0eab14053e7dacbe2627d21d5ff10aceb5583": [
     "Azure-RMSDocs\\get-started\\scenario-secure-most-valuable-files.md"
+  ],
+  "e3e31b9849655868791b4721606ef7d2725f920a": [
+    "Azure-RMSDocs\\get-started\\scenario-company-confidential-email.md"
   ],
   "2a4c17841c14090247bd059e48256a7e14d83687": [
     "Azure-RMSDocs\\get-started\\scenario-company-confidential-email.md"
@@ -1642,6 +1657,9 @@
   ],
   "dc41e2a792eb3b2d191ed4324ae655ed81f7631e": [
     "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
+  ],
+  "2b2cee81133eb39b176d887041ed7c0597718a96": [
+    "Azure-RMSDocs\\get-started\\scenario-work-folders.md"
   ],
   "963758ccac4b40951aa0a1383142b2acabd483cb": [
     "Azure-RMSDocs\\get-started\\scenario-work-folders.md"
