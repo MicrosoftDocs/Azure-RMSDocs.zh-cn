@@ -518,6 +518,9 @@
   "3b75ea0542237f2ab61b681de19b271359423c4e": [
     "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md"
   ],
+  "537685db91467f01d7865aa5c6a38159ddb01214": [
+    "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md"
+  ],
   "fb43957de82bca0594327efc0118420290fd959f": [
     "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md"
   ],
@@ -808,6 +811,9 @@
   ],
   "33a4b618d998a25440eb46db4cd359903596ea23": [
     "Azure-RMSDocs\\understand-explore\\TOC.md"
+  ],
+  "ca8b970c0a20c657771c0707c18e95de03d4d5ec": [
+    "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md"
   ],
   "f93b7a00190cff7d9952d218b234d567b9350e71": [
     "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md"
@@ -1517,6 +1523,9 @@
   "c5b39e6974266a77f5a84719372393fb3aef94c1": [
     "Azure-RMSDocs\\understand-explore\\understand-explore.md"
   ],
+  "cce97f851d9f4243e9bc3e726f6a7e45e6377e89": [
+    "Azure-RMSDocs\\index.md"
+  ],
   "6f79f93bfe851fdf89907235853542901f20d0f3": [
     "Azure-RMSDocs\\index.md"
   ],
@@ -1637,11 +1646,17 @@
   "95ca28f9d94ec0ddcd0e86bbbef06257c566bc1b": [
     "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md"
   ],
+  "f0a8a1046bca980ddc63299f52226636c02bdc13": [
+    "Azure-RMSDocs\\get-started\\requirements-applications.md"
+  ],
   "f030da0c9e725be50e719ad67e9e60ebd6111f5f": [
     "Azure-RMSDocs\\get-started\\requirements-applications.md"
   ],
   "d594a30cca0db896558d71a9ae56034f9a4c2fc6": [
     "Azure-RMSDocs\\get-started\\requirements-applications.md"
+  ],
+  "1a8acb82da4a1f69d5eed88f91b0a93f5b0f7951": [
+    "Azure-RMSDocs\\get-started\\requirements-azure-ad.md"
   ],
   "1d2cb19c1315e0f566a7f3eb594b101cfa9495c2": [
     "Azure-RMSDocs\\get-started\\requirements-azure-ad.md"
@@ -1649,11 +1664,17 @@
   "76051bbb0861283397f38e061d7913d500826cfb": [
     "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
   ],
+  "44c6fa3b1f59421ec07c104c68d1929ac0c75bcb": [
+    "Azure-RMSDocs\\get-started\\requirements-client-devices.md"
+  ],
   "9f125a98eef7915037659d1343fe96dd8d2ed735": [
     "Azure-RMSDocs\\get-started\\requirements-client-devices.md"
   ],
   "6cd80e56178e15a3ec1003b59e9cfa21d704c08a": [
     "Azure-RMSDocs\\get-started\\requirements-servers.md"
+  ],
+  "1ad1f7fbfa34a9f11099defd8d2ea936bd8bcd32": [
+    "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
   ],
   "dc41e2a792eb3b2d191ed4324ae655ed81f7631e": [
     "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
@@ -1721,6 +1742,9 @@
   "1cebd92d1c2935621393d9616159a2098a8e0329": [
     "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
   ],
+  "8d9f8e9a99f4b7340e5b0ed221d98b85d6c058b9": [
+    "Azure-RMSDocs\\plan-design\\prepare.md"
+  ],
   "2bf377bc5f42dc1bb90d2ce888d4c459ff6b091e": [
     "Azure-RMSDocs\\plan-design\\prepare.md"
   ],
@@ -1757,8 +1781,14 @@
   "f310b8fa678a76d22e7f9cf670c7bfa34786aa0a": [
     "Azure-RMSDocs\\rms-client\\sharing-app-remove-protection.md"
   ],
+  "0d6806c570a4a921c79fb1ab2f6980c3eee1db37": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-track-revoke.md"
+  ],
   "1001fada1b5229b1bdb677ea0e002276eea257dc": [
     "Azure-RMSDocs\\rms-client\\sharing-app-track-revoke.md"
+  ],
+  "a2876b224a56e62260e8b3143d528f8a78f243ac": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-user-guide.md"
   ],
   "b6063685b564fdd8f4957d1b273b73d95f494cfc": [
     "Azure-RMSDocs\\rms-client\\sharing-app-user-guide.md"
@@ -1808,8 +1838,14 @@
   "7a99d58c2d232c64ecb2a0723cc4054d75c7717d": [
     "scratch\\test-requirements-for-azure-rights-management.md"
   ],
+  "e0fe2b8012e8eb57cf3d00ea0b55ff816f0a84ff": [
+    "Azure-RMSDocs\\understand-explore\\api-support.md"
+  ],
   "8090a1f7000c45c5cdbf0717c40d0cec6d366026": [
     "Azure-RMSDocs\\understand-explore\\api-support.md"
+  ],
+  "1027ab422ff0543350989b36301bed73e8cd6beb": [
+    "Azure-RMSDocs\\understand-explore\\applications-support.md"
   ],
   "308feb1c3cfc131bbe77fd6f955c69910ba07d33": [
     "Azure-RMSDocs\\understand-explore\\applications-support.md"
@@ -1822,6 +1858,9 @@
   ],
   "b175da37dc70d18428d073ab2461a18951600c86": [
     "Azure-RMSDocs\\understand-explore\\office-apps-services-support.md"
+  ],
+  "a0dd91b8f86567a973ade1f99985910a74485936": [
+    "Azure-RMSDocs\\understand-explore\\rms-for-individuals.md"
   ],
   "98cb52b5f035d11038c184c1366be8ee5f7eabd6": [
     "Azure-RMSDocs\\understand-explore\\rms-for-individuals.md"
