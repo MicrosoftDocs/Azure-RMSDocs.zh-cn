@@ -518,6 +518,9 @@
   "3b75ea0542237f2ab61b681de19b271359423c4e": [
     "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md"
   ],
+  "565ab265c1bbbb3bf6c4c5f205e2279c844c62d3": [
+    "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md"
+  ],
   "537685db91467f01d7865aa5c6a38159ddb01214": [
     "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md"
   ],
@@ -1655,6 +1658,9 @@
   "d594a30cca0db896558d71a9ae56034f9a4c2fc6": [
     "Azure-RMSDocs\\get-started\\requirements-applications.md"
   ],
+  "6294fdbca6e3017aa83e3c593b9ba21ad765e60a": [
+    "Azure-RMSDocs\\get-started\\requirements-azure-ad.md"
+  ],
   "1a8acb82da4a1f69d5eed88f91b0a93f5b0f7951": [
     "Azure-RMSDocs\\get-started\\requirements-azure-ad.md"
   ],
@@ -1672,6 +1678,9 @@
   ],
   "6cd80e56178e15a3ec1003b59e9cfa21d704c08a": [
     "Azure-RMSDocs\\get-started\\requirements-servers.md"
+  ],
+  "1097c76ae253d42d9c326b856dff15911d9f685d": [
+    "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
   ],
   "1ad1f7fbfa34a9f11099defd8d2ea936bd8bcd32": [
     "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
@@ -1741,6 +1750,9 @@
   ],
   "1cebd92d1c2935621393d9616159a2098a8e0329": [
     "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
+  ],
+  "6f11542151c2eb0b3d0acd60535a1f3021eb8e57": [
+    "Azure-RMSDocs\\plan-design\\prepare.md"
   ],
   "8d9f8e9a99f4b7340e5b0ed221d98b85d6c058b9": [
     "Azure-RMSDocs\\plan-design\\prepare.md"
