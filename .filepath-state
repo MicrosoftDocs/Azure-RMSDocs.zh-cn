@@ -377,6 +377,9 @@
   "7cbc08e4b635e579cddd06662f5ee409e3577934": [
     "Azure-RMSDocs\\media\\AzRMS_elements.png"
   ],
+  "0db97cae4e534bf4db7adf6264645753498b1023": [
+    "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
+  ],
   "e39df0eb84a8d7c5684f55c68d6121b3992b18b5": [
     "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
   ],
@@ -517,6 +520,9 @@
   ],
   "3b75ea0542237f2ab61b681de19b271359423c4e": [
     "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md"
+  ],
+  "dff84a3e809d652eba58833cf11160f03d5302bc": [
+    "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md"
   ],
   "565ab265c1bbbb3bf6c4c5f205e2279c844c62d3": [
     "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md"
@@ -1598,6 +1604,9 @@
   "475de1c66012f23b49f4e49ecf2491e67cc47095": [
     "Azure-RMSDocs\\deploy-use\\decommission-deactivate.md"
   ],
+  "70fcc13ea4eb21a7de3bfc50338d60ab4bb5800b": [
+    "Azure-RMSDocs\\deploy-use\\deploy-rms-connector.md"
+  ],
   "b0f98d72ba78d2eb3fe408e89107c095d32cdae0": [
     "Azure-RMSDocs\\deploy-use\\deploy-rms-connector.md"
   ],
@@ -1648,6 +1657,9 @@
   ],
   "95ca28f9d94ec0ddcd0e86bbbef06257c566bc1b": [
     "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md"
+  ],
+  "3f33e5c326ae89bf469243331112c944a362c99f": [
+    "Azure-RMSDocs\\get-started\\requirements-applications.md"
   ],
   "f0a8a1046bca980ddc63299f52226636c02bdc13": [
     "Azure-RMSDocs\\get-started\\requirements-applications.md"
@@ -1813,6 +1825,9 @@
   ],
   "45902ee4f0d084f71d8c45f4f29bf47fe1fc6de3": [
     "Azure-RMSDocs\\rms-client\\sharing-app-windows.md"
+  ],
+  "af531f2fc9655303d92f6e5ff24237bc5d9157d5": [
+    "Azure-RMSDocs\\rms-client\\use-client.md"
   ],
   "e8e09386812f0ce0e5026d767a0ae85c743fb6c6": [
     "Azure-RMSDocs\\rms-client\\use-client.md"
