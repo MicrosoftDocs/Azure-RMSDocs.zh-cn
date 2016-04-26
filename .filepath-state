@@ -2012,6 +2012,9 @@
   "33365455f071d87b0f987b4fb48469b401e7de01": [
     "Azure-RMSDocs\\develop\\terms.md"
   ],
+  "20caaf80b7a4fdd47c9583cdb0c1451cc16a531c": [
+    "Azure-RMSDocs\\develop\\developers-guide.md"
+  ],
   "0efe11fa595a940af63bc6a0f66dd872c38fc487": [
     "Azure-RMSDocs\\develop\\developers-guide.md"
   ],
@@ -2065,6 +2068,9 @@
   ],
   "c5b39e6974266a77f5a84719372393fb3aef94c1": [
     "Azure-RMSDocs\\understand-explore\\understand-explore.md"
+  ],
+  "0231b1f135b4cbd2bf353cf67ef0d8ee332b5b52": [
+    "Azure-RMSDocs\\index.md"
   ],
   "fac5d64ac14fd4bd156d41e818b0d11af09a87ce": [
     "Azure-RMSDocs\\index.md"
