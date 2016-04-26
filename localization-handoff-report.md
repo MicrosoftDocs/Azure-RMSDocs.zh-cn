@@ -1,32 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\develop\developers-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/775ca3623169b0db919882798b207c9199c9d934/Azure-RMSDocs/develop/developers-guide.md) | HandedOffSuccess | [Details](#20caaf80b7a4fdd47c9583cdb0c1451cc16a531c60)
- [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7a2b9446978f6dfac649eb771fb51ff6a27bb587/Azure-RMSDocs/index.md) | HandedOffSuccess | [Details](#0231b1f135b4cbd2bf353cf67ef0d8ee332b5b52162)
+ [Azure-RMSDocs\understand-explore\compare-azure-rms-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9467639e816c25714b5817e349eefee0d27e56ee/Azure-RMSDocs/understand-explore/compare-azure-rms-ad-rms.md) | HandedOffSuccess | [Details](#f4496c388bc939d07d45f3ecb41f72ed4e559b30369)
 
 ## Item Details
-##### <a name='20caaf80b7a4fdd47c9583cdb0c1451cc16a531c60'></a> Source: [Azure-RMSDocs\develop\developers-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/775ca3623169b0db919882798b207c9199c9d934/Azure-RMSDocs/develop/developers-guide.md)
+##### <a name='f4496c388bc939d07d45f3ecb41f72ed4e559b30369'></a> Source: [Azure-RMSDocs\understand-explore\compare-azure-rms-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9467639e816c25714b5817e349eefee0d27e56ee/Azure-RMSDocs/understand-explore/compare-azure-rms-ad-rms.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [developers-guide.0ccf7302c782a322ae1f0e93452446d73bcd4df3.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3862bae26e8c38a791457511d3362145dd30dbab/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/developers-guide.0ccf7302c782a322ae1f0e93452446d73bcd4df3.zh-cn.xlf)
-* Handoff Datetime: 2016-04-26 21:37:40
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='0231b1f135b4cbd2bf353cf67ef0d8ee332b5b52162'></a> Source: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7a2b9446978f6dfac649eb771fb51ff6a27bb587/Azure-RMSDocs/index.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3862bae26e8c38a791457511d3362145dd30dbab/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf)
-* Handoff Datetime: 2016-04-26 21:37:40
+* Handoff File: [compare-azure-rms-ad-rms.4805b567858dd2f4067e44738d85aea3757b387c.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/4aab927ca0f826bdead9c0294388e8640440a345/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/compare-azure-rms-ad-rms.4805b567858dd2f4067e44738d85aea3757b387c.zh-cn.xlf)
+* Handoff Datetime: 2016-04-26 21:59:30
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00

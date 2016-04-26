@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "26ddfa01744303aea3841cd52607fa5e1214d1b0",
+  "LastProcessedCommit": "c2c07d3272b95c7d48dc0f3a0a5b53507ba1418e",
   "LastTranslatedCommit": null,
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -55352,6 +55352,38 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf",
       "HandoffFileCommit": "3862bae26e8c38a791457511d3362145dd30dbab",
       "HandoffDateTime": "2016-04-26T21:37:40.9391876Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "f4496c388bc939d07d45f3ecb41f72ed4e559b30": {
+      "FileHash": "f4496c388bc939d07d45f3ecb41f72ed4e559b30",
+      "SourceFileCommit": "9467639e816c25714b5817e349eefee0d27e56ee",
+      "SourceFilePath": "Azure-RMSDocs\\understand-explore\\compare-azure-rms-ad-rms.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md",
+        "Azure-RMSDocs\\includes\\o365_1_md.md"
+      ],
+      "FilePathList": [
+        "Azure-RMSDocs\\understand-explore\\compare-azure-rms-ad-rms.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\compare-azure-rms-ad-rms.4805b567858dd2f4067e44738d85aea3757b387c.zh-cn.xlf",
+      "HandoffFileCommit": "4aab927ca0f826bdead9c0294388e8640440a345",
+      "HandoffDateTime": "2016-04-26T21:59:30.9971052Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
