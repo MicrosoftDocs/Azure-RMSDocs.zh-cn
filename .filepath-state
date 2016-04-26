@@ -2069,6 +2069,9 @@
   "c5b39e6974266a77f5a84719372393fb3aef94c1": [
     "Azure-RMSDocs\\understand-explore\\understand-explore.md"
   ],
+  "bf11a118e91d7babc4372312509f64fb855b3e4f": [
+    "Azure-RMSDocs\\index.md"
+  ],
   "0231b1f135b4cbd2bf353cf67ef0d8ee332b5b52": [
     "Azure-RMSDocs\\index.md"
   ],
@@ -2365,6 +2368,9 @@
   ],
   "d6c97af97be6e9cb56fb53143149fc3cb947c421": [
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md"
+  ],
+  "826e18b82baa88140caa0ebe29b19ab483ff0683": [
+    "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
   ],
   "8bbb0c2e25d959c345dea48cf46717ad8c8b7149": [
     "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
