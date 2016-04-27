@@ -377,6 +377,9 @@
   "7cbc08e4b635e579cddd06662f5ee409e3577934": [
     "Azure-RMSDocs\\media\\AzRMS_elements.png"
   ],
+  "b3dbe0839860699c38569a261d8bcb1574512596": [
+    "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
+  ],
   "fdbe0f1e7d188e3f1157b68a3f2ab4b7666a6ecd": [
     "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
   ],
@@ -2069,6 +2072,9 @@
   "c5b39e6974266a77f5a84719372393fb3aef94c1": [
     "Azure-RMSDocs\\understand-explore\\understand-explore.md"
   ],
+  "01086822ad18de5c1b407609c35e3587f48afa11": [
+    "Azure-RMSDocs\\index.md"
+  ],
   "bf11a118e91d7babc4372312509f64fb855b3e4f": [
     "Azure-RMSDocs\\index.md"
   ],
@@ -2506,6 +2512,9 @@
   ],
   "8090a1f7000c45c5cdbf0717c40d0cec6d366026": [
     "Azure-RMSDocs\\understand-explore\\api-support.md"
+  ],
+  "7c96ebef0cc45860655766c2c90db0c1884aa525": [
+    "Azure-RMSDocs\\understand-explore\\applications-support.md"
   ],
   "1027ab422ff0543350989b36301bed73e8cd6beb": [
     "Azure-RMSDocs\\understand-explore\\applications-support.md"
