@@ -179,6 +179,9 @@
   "568b2230dcb97aa4c7a7b4c694a6b7f68d08cfde": [
     "Azure-RMSDocs\\TOC.md"
   ],
+  "a8c9a55977a285cd30872beeb160b07ce02edcce": [
+    "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
+  ],
   "689bf41422356d7d5049a01f1a95d7c82f7a1f0d": [
     "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
   ],
@@ -485,6 +488,9 @@
   "45b492f3f1f1601acfd83422aadfb03143031182": [
     "Azure-RMSDocs\\get-started\\scenario-company-confidential-email.md"
   ],
+  "500701acb03aa9f049cc995f14e544e07556bc4f": [
+    "Azure-RMSDocs\\rms-client\\privacy-statement-rms-enlightened-applications.md"
+  ],
   "ce6af565e660a6a0d32c203a3646f7024fe0c723": [
     "Azure-RMSDocs\\rms-client\\privacy-statement-rms-enlightened-applications.md"
   ],
@@ -715,6 +721,9 @@
   ],
   "73c171c3a10b1b232d5154763393b9b25cd91373": [
     "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md"
+  ],
+  "1b77ae8f102c021a322824d1c60a9934e8717cab": [
+    "Azure-RMSDocs\\develop\\release-notes-rtm.md"
   ],
   "a3de6001c5be3b3ee01529dc8105e0c8298f2104": [
     "Azure-RMSDocs\\develop\\release-notes-rtm.md"
@@ -1790,6 +1799,9 @@
   "d257551807446e14e69ea5900479ea57dcae1f18": [
     "Azure-RMSDocs\\plan-design\\thales-hsm.md"
   ],
+  "bcc6db62a124469fadd1a57c4ccda3d11b0702d8": [
+    "Azure-RMSDocs\\develop\\TOC.md"
+  ],
   "08eedf5e81afa4a7077bba242a3cf890408eaac2": [
     "Azure-RMSDocs\\develop\\TOC.md"
   ],
@@ -2252,6 +2264,9 @@
   "652e56a216876dac2298f7fd2ead880e2cea33f8": [
     "Azure-RMSDocs\\plan-design\\byok-price-restrictions.md"
   ],
+  "df2336d35f64c35f53e569fa91238ddaa9854dd8": [
+    "Azure-RMSDocs\\plan-design\\deployment-roadmap.md"
+  ],
   "88de6baeb5bf9647bca8fe6d3a840a57961d0aa0": [
     "Azure-RMSDocs\\plan-design\\deployment-roadmap.md"
   ],
@@ -2594,6 +2609,9 @@
   "72ef7fb746eec2264f7443f894aa35611696bf9b": [
     "Azure-RMSDocs\\understand-explore\\what-admins-users-see.md"
   ],
+  "6fe5759a790a728da7a16453e5b3ab5d523bb9fd": [
+    "Azure-RMSDocs\\understand-explore\\what-is-azure-rms.md"
+  ],
   "6859793839ab3d523e1dd055664537ab6a1fd135": [
     "Azure-RMSDocs\\understand-explore\\what-is-azure-rms.md"
   ],
@@ -2602,5 +2620,8 @@
   ],
   "e02fc19adaa0169d607dabd22b376a5e36c42f66": [
     "Azure-RMSDocs\\understand-explore\\what-is-azure-rms.md"
+  ],
+  "0068d338348b4edb9db561bee0545ed50fed029a": [
+    "Azure-RMSDocs\\Develop\\ADAL-authentication.md"
   ]
 }
