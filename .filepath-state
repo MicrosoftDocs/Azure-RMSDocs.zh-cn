@@ -1898,17 +1898,26 @@
   "138ed0bb2e8378cea1863e7b92bbb4aaa13f7a3a": [
     "Azure-RMSDocs\\index.md"
   ],
+  "56f4c7081de95d010364d04e7fab12ff9f7007ee": [
+    "Azure-RMSDocs\\deploy-use\\activate-azure-classic.md"
+  ],
   "08060992f86af4d2f376573a4208c555823d45bf": [
     "Azure-RMSDocs\\deploy-use\\activate-azure-classic.md"
   ],
   "5f404815ce42cc47c1b36033917636623da98c75": [
     "Azure-RMSDocs\\deploy-use\\activate-azure-classic.md"
   ],
+  "400c63faa08d890dafc6595a3cf154ff5423cb3d": [
+    "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md"
+  ],
   "525deb7651adcae6f94a3317ee364bd5ca41d810": [
     "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md"
   ],
   "d61c9c750fc87051936ca95c90de6b0d2d54e163": [
     "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md"
+  ],
+  "3c64a2e0a0ce4630df48885a4a25255cdc135cc5": [
+    "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
   ],
   "6729c5afe43bc395414714b69a7a52dc72807422": [
     "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
