@@ -1901,6 +1901,9 @@
   "5f404815ce42cc47c1b36033917636623da98c75": [
     "Azure-RMSDocs\\deploy-use\\activate-azure-classic.md"
   ],
+  "e82089dc6c6dcf9069216e3ab55dcc14e3bd5074": [
+    "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md"
+  ],
   "400c63faa08d890dafc6595a3cf154ff5423cb3d": [
     "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md"
   ],
@@ -1909,6 +1912,9 @@
   ],
   "d61c9c750fc87051936ca95c90de6b0d2d54e163": [
     "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md"
+  ],
+  "6df2ebc183c2c268a44d83822d151524e13df2e1": [
+    "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
   ],
   "3c64a2e0a0ce4630df48885a4a25255cdc135cc5": [
     "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
@@ -2071,6 +2077,9 @@
   ],
   "70c89d9c80ae328d21230843268abce8dffb2499": [
     "Azure-RMSDocs\\deploy-use\\operations-tenant-key.md"
+  ],
+  "13c2b79558202d59ec49da3a189a58356518718d": [
+    "Azure-RMSDocs\\deploy-use\\refresh-templates.md"
   ],
   "3c9ecb7c1bd0bc8505bfd29071e47aa3c549bd5e": [
     "Azure-RMSDocs\\deploy-use\\refresh-templates.md"
