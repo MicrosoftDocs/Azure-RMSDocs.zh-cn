@@ -2072,6 +2072,9 @@
   "70c89d9c80ae328d21230843268abce8dffb2499": [
     "Azure-RMSDocs\\deploy-use\\operations-tenant-key.md"
   ],
+  "3c9ecb7c1bd0bc8505bfd29071e47aa3c549bd5e": [
+    "Azure-RMSDocs\\deploy-use\\refresh-templates.md"
+  ],
   "00782ce9c35972c34a45079ba445070d499f5178": [
     "Azure-RMSDocs\\deploy-use\\refresh-templates.md"
   ],
@@ -2131,6 +2134,9 @@
   ],
   "95ca28f9d94ec0ddcd0e86bbbef06257c566bc1b": [
     "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md"
+  ],
+  "cef2c1e15169044e1f96fbf86a65e757e1f305c8": [
+    "Azure-RMSDocs\\get-started\\requirements-applications.md"
   ],
   "39305b1f3a106bf3ae00996f49f9dc988d719750": [
     "Azure-RMSDocs\\get-started\\requirements-applications.md"
@@ -2324,6 +2330,9 @@
   "50f2f7f407864a1e898295b3df10a29260e62868": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
   ],
+  "44241219d6d699d1c6ac208bf753fe6cad35b36a": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
+  ],
   "517a7038e3b3409c3841e3ba95f6edabf17d3786": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
   ],
@@ -2374,6 +2383,9 @@
   ],
   "2bf377bc5f42dc1bb90d2ce888d4c459ff6b091e": [
     "Azure-RMSDocs\\plan-design\\prepare.md"
+  ],
+  "d130be044beecd4c876d660fea25a9169b3ae75e": [
+    "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
   ],
   "609e0e108ffcb0cf77e447ee2450ecca4b8dcfa2": [
     "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
