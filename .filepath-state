@@ -71,66 +71,6 @@
   "f6ca9803fab196fec173ad81c3c5a76d7b7efb60": [
     "Azure-RMSDocs\\scratch.md"
   ],
-  "5f233ccade4da9fe9eadbaaf5501127dea140de9": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "cc8c2aff534c48575835e8a40dfdc040380d1af7": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "1a3b86786bef4602a2af9e5313f1a676b55eef9e": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "59e5739f8ba4bac0dbb4c4614b7be0aca6a6aceb": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "4e21490c409f9dfe2138ffa6eb9328fc9d3ba9b1": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "c1216aa87b09da1dcba980c4e10f950228e3e2a4": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "eb09fa3536d7ce1ccdca5940b5bf3c31e84788db": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "02beb66447f8918042db86e55819b1336dca6218": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "62bfdee191d50eec1c3d51803a35dbd962c9edcd": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "e5cc46ca56febbdcb31dfb1ce3115e89571e12e9": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "cbdaac23e8c974a81adab7c385bb721bb74e44f9": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "54e9af6a2c0eab2e0b537da6fcb880d512cc3a95": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "c6953ae70f684f465e3ba55d7b062683321e3427": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "846fc2c9fcbeaf676ec6eb114d0285e2c6d38186": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "bdba1e540bde232a0f4077fc22d98fba592c770a": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "30735d61938beb0a112ccd791e061f5bed3693b6": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "61fec1aa768e0f822eb10c46e1d43a05ab4928bf": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "ee418b762d541ecce734c158c2d7b8d488c39f92": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "1cb12b3b3cf075511cc6f0a433f1e0a07d2c9b77": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
-  "ab59c0b2306876d9bfacda1ad919c66233a5eca1": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
   "6cb49518dbeef7122e355cd9b2edfb83722e1dba": [
     "Azure-RMSDocs\\TOC.md"
   ],
@@ -153,18 +93,6 @@
     "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
   ],
   "e39df0eb84a8d7c5684f55c68d6121b3992b18b5": [
-    "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
-  ],
-  "25a155ebe80deb4653750d8052af3304b39b6502": [
-    "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
-  ],
-  "fc42710138f0ca5f105b11615ac105adbd7f91da": [
-    "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
-  ],
-  "20170cc8c0108148b58a3a0776cddb10d82e9d67": [
-    "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
-  ],
-  "6d9a54acd2a6d7b1935a333225b31c028754cf58": [
     "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
   ],
   "a59e742697f4cbee72e4d5e537a4483647dd2e18": [
@@ -455,18 +383,6 @@
   "b1c04c4aec8de62044595181729149322ab53983": [
     "Azure-RMSDocs\\develop\\winrt-sdk.md"
   ],
-  "8ff62ddc633f26968d492a912108f875eb0ecb34": [
-    "Azure-RMSDocs\\develop\\winrt-sdk.md"
-  ],
-  "c99f516698682be1ccaa1c6fe91b24a75bb2616f": [
-    "Azure-RMSDocs\\develop\\winrt-sdk.md"
-  ],
-  "1f8ac5ab5c6761e8b2289a3c71f86135176ee9b8": [
-    "Azure-RMSDocs\\develop\\winrt-sdk.md"
-  ],
-  "c288c7c4fc0e669682ecef4b39f3c2ca12bd2f4a": [
-    "Azure-RMSDocs\\develop\\winrt-sdk.md"
-  ],
   "ff221fc4d8d40e7af155846e769eb1419975d536": [
     "Azure-RMSDocs\\develop\\working-with-encryption.md"
   ],
@@ -525,12 +441,6 @@
     "Azure-RMSDocs\\develop\\ad-rms-server.md"
   ],
   "da4e4d76fe1feab901231b74c70ea198f80a5b1c": [
-    "Azure-RMSDocs\\develop\\ad-rms-server.md"
-  ],
-  "118a758a90d38f85e6392e918661d1532e11f02f": [
-    "Azure-RMSDocs\\develop\\ad-rms-server.md"
-  ],
-  "88211a567bf0e04a5a020565d1f6c276737d12af": [
     "Azure-RMSDocs\\develop\\ad-rms-server.md"
   ],
   "acd0692102c43baff0a92360e0ddbe1259ad9b4f": [
@@ -633,12 +543,6 @@
     "Azure-RMSDocs\\develop\\common-error-conditions-and-solutions.md"
   ],
   "5d2bd8b33882edd748de760ff1fb11309527bb05": [
-    "Azure-RMSDocs\\develop\\common-error-conditions-and-solutions.md"
-  ],
-  "76ee69ff7e03ac93f1ad200d1ca3b71e9e35a13d": [
-    "Azure-RMSDocs\\develop\\common-error-conditions-and-solutions.md"
-  ],
-  "6e9a3de40ee316caab2d290e9761b1b2fde8ffda": [
     "Azure-RMSDocs\\develop\\common-error-conditions-and-solutions.md"
   ],
   "1476cfafbc3ecf619e66fee22f657c1714deffe8": [
@@ -774,12 +678,6 @@
     "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
   ],
   "6f633d2e7b4850c1985a50c6b3a7a03bbbe8a027": [
-    "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
-  ],
-  "cadef4f0459786507cd7faad22da8d21ebae6e36": [
-    "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
-  ],
-  "7df7759fb727a40e5e55584873f426a49b5ec8d9": [
     "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
   ],
   "b62f18a5d58a63bd20eae8e12ea17b9938f32805": [
@@ -966,12 +864,6 @@
     "Azure-RMSDocs\\develop\\overview.md"
   ],
   "547704e622d81391cd4bc050f07ad10f6195d4a7": [
-    "Azure-RMSDocs\\develop\\overview.md"
-  ],
-  "498b270a75c362f6a7ae34874a1fd5054f624bc1": [
-    "Azure-RMSDocs\\develop\\overview.md"
-  ],
-  "790e5679c4bd86c79d01f00bb6ba3b141947ad11": [
     "Azure-RMSDocs\\develop\\overview.md"
   ],
   "a12be14d42b0d3212ac61038591701a7a4a23ff5": [
@@ -1269,9 +1161,6 @@
     "Azure-RMSDocs\\deploy-use\\configure-sharing-app.md"
   ],
   "b263e26a88f899baf52e5f520d45b856ed1b44a7": [
-    "Azure-RMSDocs\\deploy-use\\configure-sharing-app.md"
-  ],
-  "adc2469bf41e42dd1dada372481272e1b49e63c1": [
     "Azure-RMSDocs\\deploy-use\\configure-sharing-app.md"
   ],
   "0ca9b8d9643f5489c100fa3aa614e89cd396df52": [
