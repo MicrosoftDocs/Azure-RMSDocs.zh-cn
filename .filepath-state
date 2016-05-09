@@ -128,6 +128,9 @@
   "6bd1adbf3f669c1009800bad64acc4b341a82a2a": [
     "Azure-RMSDocs\\includes\\rms-quickstart-step5-include.md"
   ],
+  "45e5660703efdbbc298fb08cc15db176500549e7": [
+    "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md"
+  ],
   "f4ce686d26eaba2dc71fc8ca04f66fa87e50eca6": [
     "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md"
   ],
@@ -1556,6 +1559,9 @@
   "6504d53102609234ca2934af1824a90c4730becd": [
     "Azure-RMSDocs\\rms-client\\fci-script.md"
   ],
+  "5ec740b4de63c90c9713916dcf104316e727498b": [
+    "Azure-RMSDocs\\rms-client\\install-sharing-app.md"
+  ],
   "554927c210d35c4d525776dbe64c6d5a6581e45c": [
     "Azure-RMSDocs\\rms-client\\install-sharing-app.md"
   ],
@@ -1574,11 +1580,17 @@
   "65d03bdaf683821bc450047dc4006a4685448ea1": [
     "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide-technical.md"
   ],
+  "771a80843ca5ab01cd06bd4e76c827469b0e9f00": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-dialog-box.md"
+  ],
   "6cbd0fa73d934dcb4debe57e61bbf4fb6d0ff3a8": [
     "Azure-RMSDocs\\rms-client\\sharing-app-dialog-box.md"
   ],
   "25917d8d3f7afbb5f58a9c841b6958fafc3ab84b": [
     "Azure-RMSDocs\\rms-client\\sharing-app-dialog-box.md"
+  ],
+  "1ff6f1c788d95efa534e22935f2f13ac0cc598d7": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-keyboard-shortcuts.md"
   ],
   "7114428580a677fc8047c67aff3c1ad3c26c9d19": [
     "Azure-RMSDocs\\rms-client\\sharing-app-keyboard-shortcuts.md"
@@ -1589,6 +1601,9 @@
   "376692a0d405ec86fd7b6043bcb0391f31bcb5b6": [
     "Azure-RMSDocs\\rms-client\\sharing-app-keyboard-shortcuts.md"
   ],
+  "ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-protect-by-email.md"
+  ],
   "7ab79cc1960a0c0d8af276ada0e7225e2d5291ae": [
     "Azure-RMSDocs\\rms-client\\sharing-app-protect-by-email.md"
   ],
@@ -1597,6 +1612,9 @@
   ],
   "7a0e8c8803b02392a160dd8ae9767d672de8f4a0": [
     "Azure-RMSDocs\\rms-client\\sharing-app-protect-by-email.md"
+  ],
+  "7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-protect-in-place.md"
   ],
   "84be4a382e75a50486ea52d9fc40dc73267b06fa": [
     "Azure-RMSDocs\\rms-client\\sharing-app-protect-in-place.md"
@@ -1607,6 +1625,9 @@
   "1b28ad5bf304dfb86d6d1e6fbc6a76c7de177816": [
     "Azure-RMSDocs\\rms-client\\sharing-app-protect-in-place.md"
   ],
+  "78ceb74a3dd8492ac5c754eea179525cae819fd0": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-remove-protection.md"
+  ],
   "52addcf532d494f26cc6bcc2545b730dd536128e": [
     "Azure-RMSDocs\\rms-client\\sharing-app-remove-protection.md"
   ],
@@ -1615,6 +1636,9 @@
   ],
   "f310b8fa678a76d22e7f9cf670c7bfa34786aa0a": [
     "Azure-RMSDocs\\rms-client\\sharing-app-remove-protection.md"
+  ],
+  "9d5c9558e809779940fac095a789730d5e5924e6": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-track-revoke.md"
   ],
   "c93222d66da18b9c079e77f63dd66890dc81ecc9": [
     "Azure-RMSDocs\\rms-client\\sharing-app-track-revoke.md"
@@ -1636,6 +1660,9 @@
   ],
   "4e408ad83f0a1cb7ba7a73fe158ab7999a87db8c": [
     "Azure-RMSDocs\\rms-client\\sharing-app-version-release-history.md"
+  ],
+  "c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-view-use-files.md"
   ],
   "352b12b633f384e253f4426805d08acddc264ca1": [
     "Azure-RMSDocs\\rms-client\\sharing-app-view-use-files.md"
