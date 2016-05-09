@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "c969c3d133276c03bc33ed365d26596ad1ed44fa",
+  "LastProcessedCommit": "c48457fc259a67b9396b9d1272531c7d6cccbec2",
   "LastTranslatedCommit": "65fcef58dc6b448623fbfae71343cf4fef22b492",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -58819,7 +58819,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-05-09T17:07:27.1627512Z",
+      "HandoffDateTime": "2016-05-09T20:57:49.6392442Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -58830,7 +58830,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 388",
         "extended_information": null
       },
-      "HandoffFailureTimes": 9,
+      "HandoffFailureTimes": 10,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -59653,6 +59653,67 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\azure-rms-aka.20396b25024de803a30ca97c8eafc95fd8fe6ca6.zh-cn.xlf",
       "HandoffFileCommit": "8bb61b4c48d358d0b0afe645168af8dddaf636cd",
       "HandoffDateTime": "2016-05-09T17:07:27.1627512Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "a52875f3160252d5f90a570e5b9672e7eb2adce7": {
+      "FileHash": "a52875f3160252d5f90a570e5b9672e7eb2adce7",
+      "SourceFileCommit": "7f8a4d53665dd79a6d0e02d340b0e7a09d995e00",
+      "SourceFilePath": "Azure-RMSDocs\\get-started\\tutorial-step5.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\get-started\\tutorial-step5.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\tutorial-step5.b91524affb6e1d5edfbbc8cb77713e0e9fd8af64.zh-cn.xlf",
+      "HandoffFileCommit": "9840a003ff525900aab4d3dec2d60f48ce6855d2",
+      "HandoffDateTime": "2016-05-09T20:57:49.6392442Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "96ee0aa3151ede8b8a263f3ce6c3d2e5b8ec9c81": {
+      "FileHash": "96ee0aa3151ede8b8a263f3ce6c3d2e5b8ec9c81",
+      "SourceFileCommit": "7f8a4d53665dd79a6d0e02d340b0e7a09d995e00",
+      "SourceFilePath": "Azure-RMSDocs\\plan-design\\deployment-roadmap.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md",
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
+      ],
+      "FilePathList": [
+        "Azure-RMSDocs\\plan-design\\deployment-roadmap.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\deployment-roadmap.c91fc5930ebfbf7a493de6cecc0c05dc777d6eec.zh-cn.xlf",
+      "HandoffFileCommit": "9840a003ff525900aab4d3dec2d60f48ce6855d2",
+      "HandoffDateTime": "2016-05-09T20:57:49.6392442Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

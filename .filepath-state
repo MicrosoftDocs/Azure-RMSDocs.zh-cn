@@ -1421,6 +1421,9 @@
   "3737f3c0437e8610e66a49a92b5b65a32ee2ee05": [
     "Azure-RMSDocs\\get-started\\tutorial-step4.md"
   ],
+  "a52875f3160252d5f90a570e5b9672e7eb2adce7": [
+    "Azure-RMSDocs\\get-started\\tutorial-step5.md"
+  ],
   "1003634a9f2f24b3744fa81ed4731d165b0c1289": [
     "Azure-RMSDocs\\get-started\\tutorial-step5.md"
   ],
@@ -1441,6 +1444,9 @@
   ],
   "652e56a216876dac2298f7fd2ead880e2cea33f8": [
     "Azure-RMSDocs\\plan-design\\byok-price-restrictions.md"
+  ],
+  "96ee0aa3151ede8b8a263f3ce6c3d2e5b8ec9c81": [
+    "Azure-RMSDocs\\plan-design\\deployment-roadmap.md"
   ],
   "df2336d35f64c35f53e569fa91238ddaa9854dd8": [
     "Azure-RMSDocs\\plan-design\\deployment-roadmap.md"
