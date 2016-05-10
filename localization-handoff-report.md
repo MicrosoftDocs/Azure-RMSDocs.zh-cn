@@ -1,12 +1,13 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [Azure-RMSDocs\Develop\ADAL-authentication.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a26a1debf504fb5e4aeddf4f1ad99202d7c20834/Azure-RMSDocs/Develop/ADAL-authentication.md) | HandedOffFailed | [Details](#0068d338348b4edb9db561bee0545ed50fed029a43)
+ [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/41ea735fcea373df7ed97b6ce17b2b47155b3da2/Azure-RMSDocs/develop/TOC.md) | OutofSyncHandedBackSuccess | [Details](#3c86df249c3c17727550fa2fd05c8418a57ba5f6100)
 
 ## Item Details
 ##### <a name='0068d338348b4edb9db561bee0545ed50fed029a43'></a> Source: [Azure-RMSDocs\Develop\ADAL-authentication.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a26a1debf504fb5e4aeddf4f1ad99202d7c20834/Azure-RMSDocs/Develop/ADAL-authentication.md)
@@ -20,6 +21,21 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='3c86df249c3c17727550fa2fd05c8418a57ba5f6100'></a> Source: [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/41ea735fcea373df7ed97b6ce17b2b47155b3da2/Azure-RMSDocs/develop/TOC.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [TOC.13a398ad10575ec470dbe9e6b9feae83865839a4.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/30d4c3e82345a502ade7864700557b0b7858ac97/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.13a398ad10575ec470dbe9e6b9feae83865839a4.zh-cn.xlf)
+* Handoff Datetime: 2016-05-10 20:13:18
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/a1c44b7fd70aa27b5106db2653420625ac79b94d/Azure-RMSDocs/develop/TOC.md)
+* Current Handback File: [TOC.13a398ad10575ec470dbe9e6b9feae83865839a4.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/aae09274da6137b6915d63351247f3f1b6ed0303/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.13a398ad10575ec470dbe9e6b9feae83865839a4.zh-cn.xlf)
+* Current Handback Datetime: 2016-05-09 13:42:29
 * [Back to Top](#report-top)
 
 
