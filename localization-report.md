@@ -9,15 +9,15 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 18
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 181
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 179
 [ In Sync Handback Files ](#insync-handback-success-list)| 42
-[ Ignored Files ](#ignored-list)| 66
+[ Ignored Files ](#ignored-list)| 68
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\Develop\ADAL-authentication.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a26a1debf504fb5e4aeddf4f1ad99202d7c20834/Azure-RMSDocs/Develop/ADAL-authentication.md) | HandedOffFailed | [Details](#0068d338348b4edb9db561bee0545ed50fed029a43)
- [Azure-RMSDocs\Develop\android-namespaces.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0a4f8aa90f7cf79099922ea7d128a0e1a34f38d1/Azure-RMSDocs/Develop/android-namespaces.md) | HandedOffFailed | [Details](#55f17d42165d2b6b5e1765a81bf7d799a14e996a46)
+ [Azure-RMSDocs\develop\ADAL-authentication.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/develop/ADAL-authentication.md) | HandedOffFailed | [Details](#0068d338348b4edb9db561bee0545ed50fed029a43)
+ [Azure-RMSDocs\develop\android-namespaces.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/develop/android-namespaces.md) | HandedOffFailed | [Details](#55f17d42165d2b6b5e1765a81bf7d799a14e996a46)
 
 ## <a name='handoff-success-list'></a> Handoff Success File List
  Source File | Status | Details 
@@ -217,7 +217,6 @@
  [Azure-RMSDocs\develop\ad-rms-server.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bf22d0b3c574ff1472df8428f6a39c359e0e95e1/Azure-RMSDocs/develop/ad-rms-server.md) | OutofSyncHandedBackSuccess | [Details](#906c83731188838ca516b8159581b64c60a4a42e42)
  [Azure-RMSDocs\develop\android-code.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/acc140931b5f834ce1d70c851d90c334a03010dc/Azure-RMSDocs/develop/android-code.md) | OutofSyncHandedBackSuccess | [Details](#acd0692102c43baff0a92360e0ddbe1259ad9b4f45)
  [Azure-RMSDocs\develop\android-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6bfe923868b9ad648386c5ce2786b3beb1e9fc0c/Azure-RMSDocs/develop/android-sdk.md) | OutofSyncHandedBackSuccess | [Details](#a13d8ce327f15f4b94162770b7a881e1a6746a2b47)
- [Azure-RMSDocs\develop\api-reference-2-1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1e65d86075cc3f180bbfc742249f6d89f4cf3211/Azure-RMSDocs/develop/api-reference-2-1.md) | OutofSyncHandedBackSuccess | [Details](#f919e295493411b3c5c00709c10c36c7196ca4bd48)
  [Azure-RMSDocs\develop\api-reference-4-2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6bfe923868b9ad648386c5ce2786b3beb1e9fc0c/Azure-RMSDocs/develop/api-reference-4-2.md) | OutofSyncHandedBackSuccess | [Details](#25894ed446911a55481d0f2ac628db2f46e477f649)
  [Azure-RMSDocs\develop\application-id.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2d4fb87a53280b42d1b42d3a6a1086db9aa87299/Azure-RMSDocs/develop/application-id.md) | OutofSyncHandedBackSuccess | [Details](#4d0c5b0bdd6f3c50a382cb3ca330b4d9d4add28750)
  [Azure-RMSDocs\develop\application-types.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/32f1f7779e214b5d8848da5a4771b585862ff7eb/Azure-RMSDocs/develop/application-types.md) | OutofSyncHandedBackSuccess | [Details](#1500714b36a1c3881d158e31e87cec39f99cd7f751)
@@ -268,7 +267,6 @@
  [Azure-RMSDocs\develop\supported-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6b5bc9612ac17a2d6905200383d9b8df4c504efe/Azure-RMSDocs/develop/supported-platforms.md) | OutofSyncHandedBackSuccess | [Details](#baf08d04f836e5aa406f125a7029bc43297f5df198)
  [Azure-RMSDocs\develop\switching-to-the-production-environment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/32f1f7779e214b5d8848da5a4771b585862ff7eb/Azure-RMSDocs/develop/switching-to-the-production-environment.md) | OutofSyncHandedBackSuccess | [Details](#39ad7b9fa52e1a066b56c552ec33e7e8bb1e696c99)
  [Azure-RMSDocs\develop\terms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6b5bc9612ac17a2d6905200383d9b8df4c504efe/Azure-RMSDocs/develop/terms.md) | OutofSyncHandedBackSuccess | [Details](#cb8c91db044eb8cee39661994191c261bdbdb8ce100)
- [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/62596a9a81e024ea81035283ebe7e837e20043c7/Azure-RMSDocs/develop/TOC.md) | OutofSyncHandedBackSuccess | [Details](#4ae9d03b68562ca347ded23d045985cea318e9f2101)
  [Azure-RMSDocs\develop\tracking-content.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/90552435666b8f25c893fcffe8c8cf3355a5942d/Azure-RMSDocs/develop/tracking-content.md) | OutofSyncHandedBackSuccess | [Details](#434a43bf96bd24502c796d0d6c05fef2b2471bde102)
  [Azure-RMSDocs\develop\understanding-certificate-chains.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/90552435666b8f25c893fcffe8c8cf3355a5942d/Azure-RMSDocs/develop/understanding-certificate-chains.md) | OutofSyncHandedBackSuccess | [Details](#0caa9182ce4ae8018d81c1a0ca9d2f4630f5ffad103)
  [Azure-RMSDocs\develop\understanding-usage-restrictions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/90552435666b8f25c893fcffe8c8cf3355a5942d/Azure-RMSDocs/develop/understanding-usage-restrictions.md) | OutofSyncHandedBackSuccess | [Details](#6e9dd25fe9c6173dfa93570e511c47d5d9fa3c1d104)
@@ -416,8 +414,10 @@
  [.openpublishing.publish.config.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/.openpublishing.publish.config.json) | Ignored | [Details](#0f39cf0b5df23c1e18292cdce1860c2f20347f2c4)
  [Azure-RMSDocs\deploy-use\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/deploy-use/docfx.json) | Ignored | [Details](#bb8ae221d5d6dc0f5a0af0c81a65c17dfc43505124)
  [Azure-RMSDocs\deploy-use\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/deploy-use/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda29)
+ [Azure-RMSDocs\develop\api-reference-2-1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/develop/api-reference-2-1.md) | Ignored | [Details](#d7502bf3072f741ef25525ec962f8eaa24d2ee5a48)
  [Azure-RMSDocs\develop\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/develop/docfx.json) | Ignored | [Details](#9e571aaf1690788cbf07eca6f46c7161c0f0dd7c64)
  [Azure-RMSDocs\develop\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/develop/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda85)
+ [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/develop/TOC.md) | Ignored | [Details](#b13332332d87b1ea70d34add80e13fedd595e7b1101)
  [Azure-RMSDocs\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/docfx.json) | Ignored | [Details](#61c85b2468797e44f08097f048bf93db17187b30109)
  [Azure-RMSDocs\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda165)
  [Azure-RMSDocs\media\AddAnAppPick.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/media/AddAnAppPick.png) | Ignored | [Details](#9617b96490e5d0b51f112cacd7403cec29f5782c168)
@@ -1041,7 +1041,7 @@
 * Current Handback Datetime: 2016-05-09 13:42:29
 * [Back to Top](#report-top)
 
-##### <a name='0068d338348b4edb9db561bee0545ed50fed029a43'></a> Source: [Azure-RMSDocs\Develop\ADAL-authentication.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a26a1debf504fb5e4aeddf4f1ad99202d7c20834/Azure-RMSDocs/Develop/ADAL-authentication.md)
+##### <a name='0068d338348b4edb9db561bee0545ed50fed029a43'></a> Source: [Azure-RMSDocs\develop\ADAL-authentication.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/develop/ADAL-authentication.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
@@ -1144,7 +1144,7 @@
 * Current Handback Datetime: 2016-05-09 13:42:29
 * [Back to Top](#report-top)
 
-##### <a name='55f17d42165d2b6b5e1765a81bf7d799a14e996a46'></a> Source: [Azure-RMSDocs\Develop\android-namespaces.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0a4f8aa90f7cf79099922ea7d128a0e1a34f38d1/Azure-RMSDocs/Develop/android-namespaces.md)
+##### <a name='55f17d42165d2b6b5e1765a81bf7d799a14e996a46'></a> Source: [Azure-RMSDocs\develop\android-namespaces.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/develop/android-namespaces.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
@@ -1172,19 +1172,16 @@
 * Current Handback Datetime: 2016-05-09 13:42:29
 * [Back to Top](#report-top)
 
-##### <a name='f919e295493411b3c5c00709c10c36c7196ca4bd48'></a> Source: [Azure-RMSDocs\develop\api-reference-2-1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/1e65d86075cc3f180bbfc742249f6d89f4cf3211/Azure-RMSDocs/develop/api-reference-2-1.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='d7502bf3072f741ef25525ec962f8eaa24d2ee5a48'></a> Source: [Azure-RMSDocs\develop\api-reference-2-1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/develop/api-reference-2-1.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [api-reference-2-1.b098ba5a484c74e19759fdb28557981fa99c2b0a.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/5d8bec25db042c0cf5b50cc5dd67b69c8ab43d99/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/api-reference-2-1.b098ba5a484c74e19759fdb28557981fa99c2b0a.zh-cn.xlf)
-* Handoff Datetime: 2016-04-26 02:38:15
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\develop\api-reference-2-1.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/a1c44b7fd70aa27b5106db2653420625ac79b94d/Azure-RMSDocs/develop/api-reference-2-1.md)
-* Current Handback File: [api-reference-2-1.b098ba5a484c74e19759fdb28557981fa99c2b0a.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/aae09274da6137b6915d63351247f3f1b6ed0303/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/api-reference-2-1.b098ba5a484c74e19759fdb28557981fa99c2b0a.zh-cn.xlf)
-* Current Handback Datetime: 2016-05-09 13:42:29
 * [Back to Top](#report-top)
 
 ##### <a name='25894ed446911a55481d0f2ac628db2f46e477f649'></a> Source: [Azure-RMSDocs\develop\api-reference-4-2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6bfe923868b9ad648386c5ce2786b3beb1e9fc0c/Azure-RMSDocs/develop/api-reference-4-2.md)
@@ -1961,19 +1958,16 @@
 * Current Handback Datetime: 2016-05-09 13:42:29
 * [Back to Top](#report-top)
 
-##### <a name='4ae9d03b68562ca347ded23d045985cea318e9f2101'></a> Source: [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/62596a9a81e024ea81035283ebe7e837e20043c7/Azure-RMSDocs/develop/TOC.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='b13332332d87b1ea70d34add80e13fedd595e7b1101'></a> Source: [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9bbe4aeb5f23e7e38abf722791e1b632b2aba663/Azure-RMSDocs/develop/TOC.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [TOC.13a398ad10575ec470dbe9e6b9feae83865839a4.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/9ca6e02b15184a25dcef35025c48714204971ec9/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.13a398ad10575ec470dbe9e6b9feae83865839a4.zh-cn.xlf)
-* Handoff Datetime: 2016-05-10 23:00:55
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/a1c44b7fd70aa27b5106db2653420625ac79b94d/Azure-RMSDocs/develop/TOC.md)
-* Current Handback File: [TOC.13a398ad10575ec470dbe9e6b9feae83865839a4.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/aae09274da6137b6915d63351247f3f1b6ed0303/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/TOC.13a398ad10575ec470dbe9e6b9feae83865839a4.zh-cn.xlf)
-* Current Handback Datetime: 2016-05-09 13:42:29
 * [Back to Top](#report-top)
 
 ##### <a name='434a43bf96bd24502c796d0d6c05fef2b2471bde102'></a> Source: [Azure-RMSDocs\develop\tracking-content.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/90552435666b8f25c893fcffe8c8cf3355a5942d/Azure-RMSDocs/develop/tracking-content.md)
@@ -6370,13 +6364,13 @@
 
 
 ## Error Details
-##### <a name='0068d338348b4edb9db561bee0545ed50fed029a43handoff_transform_failed'></a> Source: [Azure-RMSDocs\Develop\ADAL-authentication.md](#0068d338348b4edb9db561bee0545ed50fed029a43)
+##### <a name='0068d338348b4edb9db561bee0545ed50fed029a43handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\ADAL-authentication.md](#0068d338348b4edb9db561bee0545ed50fed029a43)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\Develop\ADAL-authentication.md transformed failed.
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: Azure-RMSDocs\\Develop\\ADAL-authentication.md transformed failed.","internal_error_retriable":false,"exception_message":"Azure-RMSDocs\\Develop\\ADAL-authentication.md file with commit id a26a1debf504fb5e4aeddf4f1ad99202d7c20834 can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 388","extended_information":null}
 
-##### <a name='55f17d42165d2b6b5e1765a81bf7d799a14e996a46handoff_transform_failed'></a> Source: [Azure-RMSDocs\Develop\android-namespaces.md](#55f17d42165d2b6b5e1765a81bf7d799a14e996a46)
+##### <a name='55f17d42165d2b6b5e1765a81bf7d799a14e996a46handoff_transform_failed'></a> Source: [Azure-RMSDocs\develop\android-namespaces.md](#55f17d42165d2b6b5e1765a81bf7d799a14e996a46)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: Azure-RMSDocs\Develop\android-namespaces.md transformed failed.
 * Retriable: False
