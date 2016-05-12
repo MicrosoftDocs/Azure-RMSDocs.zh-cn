@@ -227,57 +227,6 @@
   "e867c40fe0cb7928fcce98e1b3c8312b48b49831": [
     "Azure-RMSDocs\\rms-client\\privacy-statement-rms-enlightened-applications.md"
   ],
-  "21be53ddbfca6554c1c22986e021408f22a52e96": [
-    "scratch\\full-screen-picture-activating-rights-management.md"
-  ],
-  "3034f10214efe573d807c948a01ec3eeed8ab231": [
-    "scratch\\full-screen-picture-alice-gets-email-notification.md"
-  ],
-  "45b4a27dd78e162ef6518c27f01b327bb5028a02": [
-    "scratch\\full-screen-picture-alice-shares-protected-attachment.md"
-  ],
-  "b1e4a4d4abbb0c8e8ceb7582b3fe517ec9221705": [
-    "scratch\\full-screen-picture-an-external-email-protected-by-dlp-and-azure-rms.md"
-  ],
-  "29bce2188a2c58cb1ed3ee7c5268e5f6878e43ce": [
-    "scratch\\full-screen-picture-an-unprotected-email-internal-.md"
-  ],
-  "e94e3c2e7da575391e1f41bfacd3cb30afa1249d": [
-    "scratch\\full-screen-picture-a-sharepoint-protected-document.md"
-  ],
-  "98f1e69294d629f5a7519e7969e43d2516515442": [
-    "scratch\\full-screen-picture-available-settings-for-rms-templates.md"
-  ],
-  "22f53d1799bac5fc5d141fcf148ae96aa800ba55": [
-    "scratch\\full-screen-picture-bob-opens-the-attachment-on-his-ipad.md"
-  ],
-  "128b3a846a9e1d93c7bd3b1e759394273d39c39b": [
-    "scratch\\full-screen-picture-bob-sees-the-email-on-his-ipad.md"
-  ],
-  "1342588899ec0c3d37c9872bd04f84c1d147082c": [
-    "scratch\\full-screen-picture-confidential-report-accidentally-sent-to-wrong-person.md"
-  ],
-  "07a3a371342176c9d288f9c8f6cd6575d9745e9f": [
-    "scratch\\full-screen-picture-configuring-dlp-for-azure-rms.md"
-  ],
-  "bfb2402667dc9618e45b19e661db3bf57d386a62": [
-    "scratch\\full-screen-picture-configuring-fci-for-the-marketing-classification.md"
-  ],
-  "e191c5f7d7702a89a863c5e9615aebcd4538f7ce": [
-    "scratch\\full-screen-picture-enabling-irm-for-a-library.md"
-  ],
-  "4741a62f4bf353fbaff50b7c94243b1fff9b798d": [
-    "scratch\\full-screen-picture-enabling-irm-on-sharepoint-online.md"
-  ],
-  "89241adb9abe69c22db1d023aff71e6f0d780cef": [
-    "scratch\\full-screen-picture-installing-and-configuring-the-rms-connector-for-fci.md"
-  ],
-  "5e373920f084f84e7b933b41e434b1a49afc9bce": [
-    "scratch\\full-screen-picture-rms-templates-in-the-azure-management-portal.md"
-  ],
-  "356d335b7f134e64083be36aef0d693b266fda5c": [
-    "scratch\\full-screen-picture-select-rms-templates-in-applications,-such-as-file-explorer-and-word.md"
-  ],
   "e6106b0b5a5aa1039f7cbf5a35589216c5e540f3": [
     "Azure-RMSDocs\\template.md"
   ],
@@ -433,9 +382,6 @@
   ],
   "d23465fc8e90d378265a9510bdef2880dd5b9bb7": [
     "Azure-RMSDocs\\develop\\working-with-encryption.md"
-  ],
-  "8b9b165aa0756b5df62c5802724a06e50ef38235": [
-    "scratch\\test-configuring-usage-rights-for-azure-rights-management.md"
   ],
   "be2774ba361c478fa20faa1490bb4e5ead90b8af": [
     "Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md"
@@ -1799,39 +1745,6 @@
   "e8e09386812f0ce0e5026d767a0ae85c743fb6c6": [
     "Azure-RMSDocs\\rms-client\\use-client.md"
   ],
-  "42b6ec8efd2a388f2ab1768932eda88ec7fab161": [
-    "scratch\\rms-quickstart.md"
-  ],
-  "598baef06cbffb2537db9e7d7ca63ccc88e72180": [
-    "scratch\\rms-quickstart-intro.md"
-  ],
-  "9fd45edd9f4e8105a4201bbc5b028ac1d0d85189": [
-    "scratch\\rms-quickstart-step1.md"
-  ],
-  "ba8040f85dd2c4566f01051bf1b797d4fbb7de47": [
-    "scratch\\rms-quickstart-step2.md"
-  ],
-  "9eba1d69a160d1cd727da49057ef3bd67fe59853": [
-    "scratch\\rms-quickstart-step3.md"
-  ],
-  "a9bd0b0dbddedf8ea4bf010e08bd3ce56f132fcd": [
-    "scratch\\rms-quickstart-step4.md"
-  ],
-  "b0b4e99c45185cc8290231647b497d588b62bf46": [
-    "scratch\\rms-quickstart-step5.md"
-  ],
-  "14b77d4a15c960ca0d5ac8a603761ca278a73d32": [
-    "scratch\\test-configure-custom-templates-for-azure-rights-management.md"
-  ],
-  "ecd891d32fd96f330f391b9e6e261ee6e2359c17": [
-    "scratch\\test-migrating-from-ad-rms-to-azure-rights-management.md"
-  ],
-  "e370cff2bef72657c0e03e11bd671f6eba7dd029": [
-    "scratch\\test-planning-and-implementing-your-azure-rights-management-tenant-key.md"
-  ],
-  "7a99d58c2d232c64ecb2a0723cc4054d75c7717d": [
-    "scratch\\test-requirements-for-azure-rights-management.md"
-  ],
   "bb69cda94bf611712eb5b4a74d9ec25d1749da3a": [
     "Azure-RMSDocs\\understand-explore\\api-support.md"
   ],
@@ -1919,10 +1832,10 @@
   "e02fc19adaa0169d607dabd22b376a5e36c42f66": [
     "Azure-RMSDocs\\understand-explore\\what-is-azure-rms.md"
   ],
-  "0068d338348b4edb9db561bee0545ed50fed029a": [
-    "Azure-RMSDocs\\develop\\ADAL-authentication.md"
-  ],
   "55f17d42165d2b6b5e1765a81bf7d799a14e996a": [
     "Azure-RMSDocs\\develop\\android-namespaces.md"
+  ],
+  "2c603b1160d8e1acf4ba859ea4b71d3219bb0bba": [
+    "Azure-RMSDocs\\develop\\adal-authentication.md"
   ]
 }
