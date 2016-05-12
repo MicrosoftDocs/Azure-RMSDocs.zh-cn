@@ -1061,6 +1061,9 @@
   "d257551807446e14e69ea5900479ea57dcae1f18": [
     "Azure-RMSDocs\\plan-design\\thales-hsm.md"
   ],
+  "b13332332d87b1ea70d34add80e13fedd595e7b1": [
+    "Azure-RMSDocs\\develop\\TOC.md"
+  ],
   "4ae9d03b68562ca347ded23d045985cea318e9f2": [
     "Azure-RMSDocs\\develop\\TOC.md"
   ],
@@ -1081,6 +1084,9 @@
   ],
   "a2e65e6c4dc7d7099d2283f332f8cca2da70acb1": [
     "Azure-RMSDocs\\deploy-use\\deploy-use.md"
+  ],
+  "d7502bf3072f741ef25525ec962f8eaa24d2ee5a": [
+    "Azure-RMSDocs\\develop\\api-reference-2-1.md"
   ],
   "f919e295493411b3c5c00709c10c36c7196ca4bd": [
     "Azure-RMSDocs\\develop\\api-reference-2-1.md"
@@ -1914,9 +1920,9 @@
     "Azure-RMSDocs\\understand-explore\\what-is-azure-rms.md"
   ],
   "0068d338348b4edb9db561bee0545ed50fed029a": [
-    "Azure-RMSDocs\\Develop\\ADAL-authentication.md"
+    "Azure-RMSDocs\\develop\\ADAL-authentication.md"
   ],
   "55f17d42165d2b6b5e1765a81bf7d799a14e996a": [
-    "Azure-RMSDocs\\Develop\\android-namespaces.md"
+    "Azure-RMSDocs\\develop\\android-namespaces.md"
   ]
 }
