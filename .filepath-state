@@ -1007,6 +1007,9 @@
   "d257551807446e14e69ea5900479ea57dcae1f18": [
     "Azure-RMSDocs\\plan-design\\thales-hsm.md"
   ],
+  "0053e83abdbd6fa2dd2397d81d69fe7811a22f25": [
+    "Azure-RMSDocs\\develop\\TOC.md"
+  ],
   "b13332332d87b1ea70d34add80e13fedd595e7b1": [
     "Azure-RMSDocs\\develop\\TOC.md"
   ],
@@ -1836,6 +1839,6 @@
     "Azure-RMSDocs\\develop\\android-namespaces.md"
   ],
   "2c603b1160d8e1acf4ba859ea4b71d3219bb0bba": [
-    "Azure-RMSDocs\\develop\\adal-authentication.md"
+    "Azure-RMSDocs\\develop\\adal-auth.md"
   ]
 }
