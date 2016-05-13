@@ -1304,6 +1304,9 @@
   "2c1ccf4690b09dcf6b91a9f9ba328da1db96fb99": [
     "Azure-RMSDocs\\deploy-use\\verify.md"
   ],
+  "0e909b0f972fd597e60abea04b476d9a956886f3": [
+    "Azure-RMSDocs\\get-started\\faqs.md"
+  ],
   "f1c17df3360751dc9a2f2d1d030679775efadce0": [
     "Azure-RMSDocs\\get-started\\faqs.md"
   ],
@@ -1342,6 +1345,9 @@
   ],
   "4f1db78d084470d56ac4b88540273061fa5dbaa3": [
     "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md"
+  ],
+  "9739df74a999efef879fb537eee730af7520b0fa": [
+    "Azure-RMSDocs\\get-started\\requirements-applications.md"
   ],
   "eefe0bbf70c698d590d14ffb013c7c33ff8fd916": [
     "Azure-RMSDocs\\get-started\\requirements-applications.md"
