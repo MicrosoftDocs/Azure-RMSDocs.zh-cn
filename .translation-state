@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "bdf0f8a49c71de827eea5abb10864b9e96df2080",
+  "LastProcessedCommit": "a38853fa262de9ae9f3a5f2f0f68f4a631b4d01e",
   "LastTranslatedCommit": "86876e85ed1ce7fd7f50d6373c8133ea691fc414",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -48519,7 +48519,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\template.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-cn.xlf",
       "HandoffFileCommit": "e4138ad81d59c268d19e8c8fb96935defbc65aa8",
       "HandoffDateTime": "2016-04-20T22:56:01.7864013Z",
@@ -50808,7 +50808,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.5737e89bf7e557bc4138eda9235ce2b0053d819d.zh-cn.xlf",
       "HandoffFileCommit": "d7818f439f63a353a432c02495669421fbe0a606",
       "HandoffDateTime": "2016-04-25T21:00:30.594101Z",
@@ -50958,7 +50958,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\ad-rms-server.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\ad-rms-server.fa059ee846c5974ee9338f46379d36401b59c9e4.zh-cn.xlf",
       "HandoffFileCommit": "d7818f439f63a353a432c02495669421fbe0a606",
       "HandoffDateTime": "2016-04-25T21:00:30.594101Z",
@@ -51948,7 +51948,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\index.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\index.a61cb583487d493a2f466b67dabd23a946990ed9.zh-cn.xlf",
       "HandoffFileCommit": "d7818f439f63a353a432c02495669421fbe0a606",
       "HandoffDateTime": "2016-04-25T21:00:30.594101Z",
@@ -52822,7 +52822,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\add-explicit-owner-rights.41e1f4a20dbc614b802dc2a924abbf773d143285.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -52852,7 +52852,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\ad-rms-client.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\ad-rms-client.11dca0848083258df6dedace95b6817391b6833e.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -52882,7 +52882,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\ad-rms-concepts-nav.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\ad-rms-concepts-nav.47c164d4b0f8925ed0b5e9b224c983d0b37cb247.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -52912,7 +52912,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\ad-rms-overview.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\ad-rms-overview.da33ed4cf79ed381a6c86754c03e4ed7bc62077a.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53062,7 +53062,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\authentication-integration.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\authentication-integration.f57bd011e38dd7ece967615f51b238f7f03b3dea.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53122,7 +53122,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\code-examples.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\code-examples.685c371788e652aa8b4b66090d2328115944a779.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53152,7 +53152,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\common-error-conditions-and-solutions.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\common-error-conditions-and-solutions.55a191b04631a3ac0ec1560b1ee0e5af723d6773.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53182,7 +53182,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\community-resources.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\community-resources.c3584780d2a217449663b9492ea474743d7ce9a4.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53212,7 +53212,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\core-concepts.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\core-concepts.cf3c6b10cad0c516a67317d3de287400bee412e6.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53302,7 +53302,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\deploying-your-application.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\deploying-your-application.3864e91a1ee9e182dd8ff5b23cd391c156cc4e29.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53332,7 +53332,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\developer-notes.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\developer-notes.ea2fa661b8042fcb35d82351408f0e24b8841d69.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53362,7 +53362,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\differences-between-ad-rms-and-ad-rms-2-0.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\differences-between-ad-rms-and-ad-rms-2-0.4503fd26f7ee54fb3102510f5ee13c8410b23bff.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53452,7 +53452,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\get-started.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\get-started.15e5b67aa21ece2270b38ef3ff377da7d1fad977.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53512,7 +53512,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\how-to-build-your-first-application.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-build-your-first-application.5ad92ef07f4024d2abf39d98c81508cfdcf3bc1c.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53602,7 +53602,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-enable-email-notification.c2f4d3a38ff7c52da92beba7acda36c3bbc88d24.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53872,7 +53872,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\linux-c-api-reference.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\linux-c-api-reference.708c44bc4ddd0e4281ac210afabeabc433cbff7f.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -53932,7 +53932,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\linux-setup.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\linux-setup.8fa6ed9c6d68afe43bd172698fe16c614128ef6b.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -54022,7 +54022,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\overview.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\overview.6e2f032650d36c4e8bc88afe03974bb08b242502.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -54172,7 +54172,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\sdk-elements.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sdk-elements.c1a496ece0d4cfb955f2dd506aab432f50fd21de.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -54232,7 +54232,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\setup-developer-environment.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\setup-developer-environment.40474c1e904f06360b90b9f8ac478a970de5f19e.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -54322,7 +54322,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\supported-platforms.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\supported-platforms.521728d1fd781be9af5c33a205e0e09ffe27b979.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -54382,7 +54382,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\terms.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\terms.ac772ab1b278e2aa6b141e2a7ade485fe26fe47f.zh-cn.xlf",
       "HandoffFileCommit": "a19c550728a6c7be69cd8068144132a8b4f25d24",
       "HandoffDateTime": "2016-04-26T01:40:53.2857135Z",
@@ -54774,7 +54774,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\application-types.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\application-types.5529d6304d7ccf1da4927e0cf8d7dde13087edd5.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -54804,7 +54804,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\built-in-rights-usage-restriction-reference.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\built-in-rights-usage-restriction-reference.fec75a2f5345275bbe7d31794ef3ca3cca194515.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -54834,7 +54834,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\create-your-first-rights-aware-application.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\create-your-first-rights-aware-application.532856e6191a2451eb80eb856d32c870ec5349d5.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -54864,7 +54864,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -54894,7 +54894,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\enabling-logging.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\enabling-logging.a8e488d730a63b56be19bf9f232887922dcc32bd.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -54924,7 +54924,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\file-api-configuration.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\file-api-configuration.51543907e5649e6afb362830a5c98c35082f651a.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -54954,7 +54954,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -54984,7 +54984,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.ee0d6e4793d84f56530614f919af0cf682e59684.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55014,7 +55014,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\how-to-configure-the-ad-rms-client-2-0.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-configure-the-ad-rms-client-2-0.1035083c8466ed8889d898f070c014b3d2f244e8.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55044,7 +55044,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-install-and-configure-an-rms-server.69e93f9b8b64e371d90b89ca814bf2d030f22a0e.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55074,7 +55074,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-set-up-the-pre-production-development-environment.152f444be3eb107ca4694f7ea3228557d5b72523.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55104,7 +55104,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-set-up-your-test-environment.0a9b490dabfbf18dc8469adacd9e4e4ea5def722.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55134,7 +55134,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-use-file-api-with-aadrm-cloud.4052e38cbbfbc18eb096b7b96cc63f236c7f2c45.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55164,7 +55164,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\how-to-use-msipc.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-use-msipc.efe675420f9d0fb0e2376950826138cb7cf1dd20.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55194,7 +55194,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\ios-sdk.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\ios-sdk.04f8a23860188d2f8bee6a412cd6aa5accbf4161.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55224,7 +55224,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\linux-c-code-examples.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\linux-c-code-examples.862ce623c8be3e7b5f679a61e0d570fc42c31a4a.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55254,7 +55254,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\microsoft-information-protection-and-control-client-portal.716a21a0b760ecc96fbadc26dd1499abe0e5480c.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55284,7 +55284,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\obtaining-a-production-license.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\obtaining-a-production-license.335b6c724b00f4b54987bb774698e5f955c09333.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55344,7 +55344,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\running-your-first-application.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\running-your-first-application.8f20ad7a0965fa5d188afc8abb368cd25d1c0ee2.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55374,7 +55374,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\samples.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\samples.7c62bb2a3e2092f88eee85754869dd2712b238ca.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55404,7 +55404,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\setting-the-api-security-mode-api-mode.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\setting-the-api-security-mode-api-mode.0b56ccf949d2c9ad30125d9a61d606bda60c90e8.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55434,7 +55434,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\signing-your-application-for-production.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\signing-your-application-for-production.9aa6ed6fe62e8261611d086f4ae0107239126034.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55464,7 +55464,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\supported-file-formats.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\supported-file-formats.83f465b683a3a9e84807ca6c767af23e8ab9a55f.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -55494,7 +55494,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\switching-to-the-production-environment.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\switching-to-the-production-environment.5635b078a081d9834ec51efad9c58880115c10c4.zh-cn.xlf",
       "HandoffFileCommit": "ea28c0390930895175f77dca289923523a89570c",
       "HandoffDateTime": "2016-04-26T02:13:38.6583964Z",
@@ -56610,7 +56610,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\android-code.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\android-code.c54575560080707a5280400f481eb7b21c40af20.zh-cn.xlf",
       "HandoffFileCommit": "b17f235ceb0c66ad0572492f1b59186af2dad135",
       "HandoffDateTime": "2016-04-26T21:07:46.9438424Z",
@@ -56670,7 +56670,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-to-use-document-tracking.9b499b3eda30f41dbea9c7eb5f63a725fe4cbdcf.zh-cn.xlf",
       "HandoffFileCommit": "b17f235ceb0c66ad0572492f1b59186af2dad135",
       "HandoffDateTime": "2016-04-26T21:07:46.9438424Z",
@@ -56700,7 +56700,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\ios-os-x-code-examples.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.zh-cn.xlf",
       "HandoffFileCommit": "b17f235ceb0c66ad0572492f1b59186af2dad135",
       "HandoffDateTime": "2016-04-26T21:07:46.9438424Z",
@@ -56730,7 +56730,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\release-notes.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.zh-cn.xlf",
       "HandoffFileCommit": "b17f235ceb0c66ad0572492f1b59186af2dad135",
       "HandoffDateTime": "2016-04-26T21:07:46.9438424Z",
@@ -57152,7 +57152,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\developers-guide.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\developers-guide.0ccf7302c782a322ae1f0e93452446d73bcd4df3.zh-cn.xlf",
       "HandoffFileCommit": "3862bae26e8c38a791457511d3362145dd30dbab",
       "HandoffDateTime": "2016-04-26T21:37:40.9391876Z",
@@ -57494,7 +57494,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\activate-service.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\activate-service.4a3473a1d1efe652bca0888033afe6b40fd139ba.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57528,7 +57528,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\administer-powershell.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\administer-powershell.1603b4b79cbfd065be8741dac0d692afb9587d79.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57560,7 +57560,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\configure-applications.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-applications.e08ca405c9a31f83ab8418d9ef05e8a6b0797135.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57590,7 +57590,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\configure-custom-templates.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-custom-templates.05b0c1b94b5c1cbb78ae5760b7c9abb1ad1d3890.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57622,7 +57622,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\configure-office365.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-office365.71a21cc23b06c35c2dcfe30a8e6f125069eb8233.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57654,7 +57654,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\configure-office-apps.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57686,7 +57686,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\configure-servers-rms-connector.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-servers-rms-connector.d68ff3ef0c03209200c1cc55a220f53cfbd6f9bb.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57716,7 +57716,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\configure-sharing-app.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-sharing-app.3c0d07cea5b40ea0144c4bc50d2036a1b3166ec3.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57748,7 +57748,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\configure-super-users.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-super-users.8f013846058058934c55983939203585eaa77804.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57778,7 +57778,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\configure-templates-with-powershell.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-templates-with-powershell.b3035bb5eb55dd18f884ed36a95c7f94eef2fa88.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3501063Z",
@@ -57808,7 +57808,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-usage-rights.d1491a3e6b5496052f09d333e0ed56875eebb824.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57838,7 +57838,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\copy-template.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57868,7 +57868,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\create-template.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\create-template.d84bce6a54cca51abdeecb1b4b5e3b87bf6bdf77.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57901,7 +57901,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\decommission-deactivate.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\decommission-deactivate.6279cbf3d806c76e68b86f80e4923321bae307e2.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57931,7 +57931,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\deploy-rms-connector.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\deploy-rms-connector.1695f02008b14d04f6d9d2726b350cbc8ac653f3.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57961,7 +57961,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\deploy-use.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\deploy-use.891742c17cbe93f694a0140962b6053beb198830.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -57993,7 +57993,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\help-users.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -58023,7 +58023,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\install-configure-rms-connector.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -58056,7 +58056,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\install-powershell.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\install-powershell.e1fa0d4aedd915c4e4a0b07f65a544091d51c06b.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -58116,7 +58116,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\operations-customer-managed-tenant-key.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\operations-customer-managed-tenant-key.eeb09cd3e91106b69877a23501e05236d2695de0.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -58146,7 +58146,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\operations-microsoft-managed-tenant-key.1128a69c06be9836b7e8e311b5dea4f8647d0797.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -58176,7 +58176,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\operations-tenant-key.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\operations-tenant-key.025cbdf6ecbbfe296026c3ac388a4e4bfae9a269.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -58236,7 +58236,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\remove-template.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -58266,7 +58266,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\rms-connector-registry-settings.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-connector-registry-settings.861d6f8b18a39127138156df0b10224cb133dfad.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -58298,7 +58298,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\verify.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\verify.3d5dab8de8cf5a886d0909d92b7417764a300e68.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -58328,7 +58328,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\application-id.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\application-id.aab9f5c52a56d8101efc452a8bf614c4e80834ea.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -58390,7 +58390,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\get-started.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\get-started.3e8fa78833f27124cb5737cfee37a9dac587aca4.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -58937,7 +58937,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\tutorial-step1.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\tutorial-step1.7df046abdb5ad11593ce3d8b8a2422f84b3fe4d1.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59087,7 +59087,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\byok-price-restrictions.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\byok-price-restrictions.2f6f3aa726f588cf7fa25414ef4859e33edea168.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59150,7 +59150,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\generate-tenant-key-in-person.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59182,7 +59182,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\generate-tenant-key-internet.eba48d544f3a36c7c3262cffcea3e525550d42ea.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59212,7 +59212,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\migrate-from-ad-rms-phase1.bc5aedb6121a7b8c22df639eda41dcc7e7be9c8f.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59242,7 +59242,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\migrate-from-ad-rms-phase2.318d35db066c49206b0ca3bcb905627474043548.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3501063Z",
@@ -59272,7 +59272,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase3.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\migrate-from-ad-rms-phase3.d217f8acdd7175366a6360bf8f9a10435e95745a.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59302,7 +59302,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59362,7 +59362,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\migrate-hsmkey-to-hsmkey.4d24c5f02703d816a96b2e335a5499f6e206f0e7.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59392,7 +59392,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-hsmkey.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\migrate-softwarekey-to-hsmkey.271a5c6cd15a275cd93409cd748219c3e330b1b9.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59424,7 +59424,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\migrate-softwarekey-to-softwarekey.71145a3a3e56b2f776fedc1230e4c793f6e74e52.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59454,7 +59454,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\plan-design.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\plan-design.1bd16d2b4ecb38bde9af114b5f30db0dbb2c0304.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59486,7 +59486,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\plan-implement-tenant-key.d79d8fa892f346e358054d66de4468234c124ef5.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59520,7 +59520,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\prepare.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\prepare.ab94bab83225222b25896aba6ff69b9d2dfd0108.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3501063Z",
@@ -59550,7 +59550,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\thales-hsm.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\thales-hsm.a29c7ca9e077d11ede094a86b90ea035a1ef4fff.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59610,7 +59610,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\configure-fci.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\configure-fci.18adbf2de07cbca869b1da6742c9d362fb9dbbd2.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59640,7 +59640,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\fci-script.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\fci-script.978013ad93837ca79c53788e411ae7491d5f8fb7.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59700,7 +59700,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\rms-client.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-client.35450d2b51164d6d60f169635c89c95b5f038dea.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59730,7 +59730,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-admin-guide.a9c407820bfd3970390e4d18934868be65839fc1.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -59970,7 +59970,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\sharing-app-user-guide.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-user-guide.f070975803bc680f927b5fe9f2895e4e7b64f705.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60000,7 +60000,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\sharing-app-version-release-history.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60060,7 +60060,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\sharing-app-windows.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-windows.37bd0be331e8f894fadd34cc7dee7783e53ca890.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60090,7 +60090,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\use-client.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\use-client.8c61d9978f548e0f64e935b1697fb2fdacf3f65c.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60120,7 +60120,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\scratch.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60153,7 +60153,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\api-support.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\api-support.8de1be3c76f16a8ca6e8670d817059480b73fb74.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60275,7 +60275,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\azure-rms-problems-it-solves.ca9dbc7494fd2f1e29c7421a5150d86e7a9d14e2.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60308,7 +60308,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\compare-azure-rms-ad-rms.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\compare-azure-rms-ad-rms.4805b567858dd2f4067e44738d85aea3757b387c.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60340,7 +60340,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\file-server-support.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\file-server-support.1e6b0f7c9c02d2669978bf612cd9a156e88bb9bc.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60370,7 +60370,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\how-does-it-work.e10d4871d616835b44d201ec5b1212a575d0f425.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60402,7 +60402,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\office-apps-services-support.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\office-apps-services-support.d312c71892f658fba6ad726f29f646550317b03b.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60432,7 +60432,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\rms-for-individuals.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-for-individuals.0951e682afe9e7d147e7732b5e7731d5fa9a6099.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60462,7 +60462,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\rms-for-individuals-identify-sign-up.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-for-individuals-identify-sign-up.0196c18d512eec730403b7c481c72e33be5aa85f.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60492,7 +60492,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\rms-for-individuals-take-control.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-for-individuals-take-control.ee7df1a349d3d5fcec790aeda447cab03ce1d1d7.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60522,7 +60522,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\rms-for-individuals-user-sign-up.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rms-for-individuals-user-sign-up.ce2485a16dd4a281312e3ff106634a34e0c40122.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60555,7 +60555,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\sharing-app-support.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-support.d22acd026ac8372818f79cb9da2e71421fd83ede.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60585,7 +60585,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\understand-explore.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\understand-explore.6c056e9eaf595609545e18189ab50a66b1026927.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60615,7 +60615,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\what-admins-users-see.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\what-admins-users-see.ed551eb4c239f9a81972d333e5434f8dd11d8198.zh-cn.xlf",
       "HandoffFileCommit": "8e4326e68869d9953ba0c86e5a079b1566df6c9e",
       "HandoffDateTime": "2016-04-27T21:41:27.3344859Z",
@@ -60675,7 +60675,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\index.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf",
       "HandoffFileCommit": "8026a9bb47d2762c20f00342aa59898c86c59d26",
       "HandoffDateTime": "2016-04-28T22:57:08.2334082Z",
@@ -60889,7 +60889,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\privacy-statement-rms-enlightened-applications.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\privacy-statement-rms-enlightened-applications.66aab3b1f9698b9ddffc64a5142f39114f020c34.zh-cn.xlf",
       "HandoffFileCommit": "e7063faa9c25c8d9d7f010f43f1276fdffecde70",
       "HandoffDateTime": "2016-05-03T18:55:14.4681169Z",
@@ -60919,7 +60919,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\azure-rights-management.d8af87cfd773f296eb41dc199896fb308b1ba8fd.zh-cn.xlf",
       "HandoffFileCommit": "e7063faa9c25c8d9d7f010f43f1276fdffecde70",
       "HandoffDateTime": "2016-05-03T18:55:14.4681169Z",
@@ -60949,7 +60949,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\what-is-azure-rms.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\what-is-azure-rms.f4b9b8e91b932f13e4d659f2727fa33ad3d1aaa1.zh-cn.xlf",
       "HandoffFileCommit": "e7063faa9c25c8d9d7f010f43f1276fdffecde70",
       "HandoffDateTime": "2016-05-03T18:55:14.4681169Z",
@@ -61009,7 +61009,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\release-notes-rtm.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.zh-cn.xlf",
       "HandoffFileCommit": "7a092201e1ecd1fed00d84b290a50d8536225f26",
       "HandoffDateTime": "2016-05-04T23:56:04.3486347Z",
@@ -61071,7 +61071,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\activate-azure-classic.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\activate-azure-classic.a18dfb858f503ee4a964470871380d76430c83c7.zh-cn.xlf",
       "HandoffFileCommit": "90f93717476710b4e189a52bfae12ba0403f109e",
       "HandoffDateTime": "2016-05-05T20:24:47.5313668Z",
@@ -61225,7 +61225,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\migrate-from-ad-rms-to-azure-rms.0e54067ec5cb3ab60c4e9c82cf06d0cfecba00a6.zh-cn.xlf",
       "HandoffFileCommit": "298f4ea16f13ee8b611a3766513b871ad30a7c9b",
       "HandoffDateTime": "2016-05-06T21:53:52.004815Z",
@@ -61287,7 +61287,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\activate-office365-classic.bdfe0f2918b988276b7b38dbc7cdb695c4b87df8.zh-cn.xlf",
       "HandoffFileCommit": "b5673b8dda0c520e8315d091f229c38b330f3e85",
       "HandoffDateTime": "2016-05-06T22:53:46.4957305Z",
@@ -61319,7 +61319,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.zh-cn.xlf",
       "HandoffFileCommit": "b5673b8dda0c520e8315d091f229c38b330f3e85",
       "HandoffDateTime": "2016-05-06T22:53:46.4957305Z",
@@ -61349,7 +61349,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\refresh-templates.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\refresh-templates.fdb78fc57b4c31d450a3c9c2f62914992cb5af86.zh-cn.xlf",
       "HandoffFileCommit": "b5673b8dda0c520e8315d091f229c38b330f3e85",
       "HandoffDateTime": "2016-05-06T22:53:46.4957305Z",
@@ -61379,7 +61379,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\install-sharing-app.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\install-sharing-app.15360f52b377b770654ca21ddee97994d11910b0.zh-cn.xlf",
       "HandoffFileCommit": "8bb61b4c48d358d0b0afe645168af8dddaf636cd",
       "HandoffDateTime": "2016-05-09T17:07:27.1627512Z",
@@ -61409,7 +61409,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\sharing-app-dialog-box.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-dialog-box.ae42c11e02b09890ea1679cb3d1bd647491691e5.zh-cn.xlf",
       "HandoffFileCommit": "8bb61b4c48d358d0b0afe645168af8dddaf636cd",
       "HandoffDateTime": "2016-05-09T17:07:27.1627512Z",
@@ -61439,7 +61439,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\sharing-app-keyboard-shortcuts.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-keyboard-shortcuts.0948a3fbfb0b07dddc620d54cba52cc77a060a5b.zh-cn.xlf",
       "HandoffFileCommit": "8bb61b4c48d358d0b0afe645168af8dddaf636cd",
       "HandoffDateTime": "2016-05-09T17:07:27.1627512Z",
@@ -61469,7 +61469,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\sharing-app-protect-by-email.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.zh-cn.xlf",
       "HandoffFileCommit": "8bb61b4c48d358d0b0afe645168af8dddaf636cd",
       "HandoffDateTime": "2016-05-09T17:07:27.1627512Z",
@@ -61499,7 +61499,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\sharing-app-protect-in-place.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-protect-in-place.319486bc6ae97fa5149e590d076a2ed0ce8024ad.zh-cn.xlf",
       "HandoffFileCommit": "8bb61b4c48d358d0b0afe645168af8dddaf636cd",
       "HandoffDateTime": "2016-05-09T17:07:27.1627512Z",
@@ -61529,7 +61529,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\sharing-app-remove-protection.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-remove-protection.71eb7d61f0b09dc1f1dc78b3595fbca5184f8149.zh-cn.xlf",
       "HandoffFileCommit": "8bb61b4c48d358d0b0afe645168af8dddaf636cd",
       "HandoffDateTime": "2016-05-09T17:07:27.1627512Z",
@@ -61559,7 +61559,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\sharing-app-track-revoke.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-track-revoke.56e3fe7d396e46fc57bc6d4a041fdad5cb5c7374.zh-cn.xlf",
       "HandoffFileCommit": "8bb61b4c48d358d0b0afe645168af8dddaf636cd",
       "HandoffDateTime": "2016-05-09T17:07:27.1627512Z",
@@ -61589,7 +61589,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\rms-client\\sharing-app-view-use-files.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-view-use-files.14145eb3fbee2618bd134969eefdf42303c26dcc.zh-cn.xlf",
       "HandoffFileCommit": "8bb61b4c48d358d0b0afe645168af8dddaf636cd",
       "HandoffDateTime": "2016-05-09T17:07:27.1627512Z",
@@ -61619,7 +61619,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\azure-rms-aka.20396b25024de803a30ca97c8eafc95fd8fe6ca6.zh-cn.xlf",
       "HandoffFileCommit": "8bb61b4c48d358d0b0afe645168af8dddaf636cd",
       "HandoffDateTime": "2016-05-09T17:07:27.1627512Z",
@@ -61682,7 +61682,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\plan-design\\deployment-roadmap.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\deployment-roadmap.c91fc5930ebfbf7a493de6cecc0c05dc777d6eec.zh-cn.xlf",
       "HandoffFileCommit": "9840a003ff525900aab4d3dec2d60f48ce6855d2",
       "HandoffDateTime": "2016-05-09T20:57:49.6392442Z",
@@ -61773,7 +61773,7 @@
         "Azure-RMSDocs\\Develop\\android-namespaces.md",
         "Azure-RMSDocs\\develop\\android-namespaces.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\android-namespaces.e63122916e82f406148007b1df2a66b409971599.zh-cn.xlf",
       "HandoffFileCommit": "b63a48d85dfa7068b79e659d305069b0da8624b9",
       "HandoffDateTime": "2016-05-12T01:25:42.4304426Z",
@@ -61803,7 +61803,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\android-sdk.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\android-sdk.11c01dde37b53adb51792e58d71e80dc1af71b8f.zh-cn.xlf",
       "HandoffFileCommit": "9ca6e02b15184a25dcef35025c48714204971ec9",
       "HandoffDateTime": "2016-05-10T23:00:55.5637474Z",
@@ -61833,7 +61833,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\api-reference-4-2.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.zh-cn.xlf",
       "HandoffFileCommit": "9ca6e02b15184a25dcef35025c48714204971ec9",
       "HandoffDateTime": "2016-05-10T23:00:55.5637474Z",
@@ -61893,7 +61893,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\tracking-content.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -61923,7 +61923,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\understanding-certificate-chains.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -61953,7 +61953,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\understanding-usage-restrictions.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\understanding-usage-restrictions.fb247e13047f37e3eefd29ddac573df75e1e2a63.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -61983,7 +61983,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\usage-restriction-reference.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62013,7 +62013,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\windows-phone-apps.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62043,7 +62043,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\winrt-sdk.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\winrt-sdk.02e6d262a96a9158a66f51de86aff650672298a4.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62073,7 +62073,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\working-with-encryption.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\working-with-encryption.19f5df37a590d0c88fe306cf324bf9883b1786f3.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62105,7 +62105,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\information-support.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\information-support.e11ffc2392c5814161fb2c03893f32dafb3d621b.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62135,7 +62135,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\quick-start-tutorial.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\quick-start-tutorial.f20f78d5eed490447e5e39392c197bd43887a284.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62165,7 +62165,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\rapid-deployment-guide.4336f7d3b1b85876476c53a297ad4a171d62cb10.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62225,7 +62225,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\requirements-azure-ad.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\requirements-azure-ad.f547a88ea6588c3498d1557227545b6d25a19bfe.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62255,7 +62255,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62285,7 +62285,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\requirements-client-devices.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\requirements-client-devices.5c627bcec9b9abb2c589eb2e15b8e9c1036fb2f2.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62315,7 +62315,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\requirements-servers.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\requirements-servers.05c3acdbd2f0917f2058fd819f3d1ebc20d3bc27.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62345,7 +62345,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62375,7 +62375,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\scenario-company-confidential-email.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-company-confidential-email.941ecd986725f9a245c1ffa40415d2788103096e.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62405,7 +62405,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-executives-email.02fb32c7a1e5b62754681e4d720db2d250184079.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62435,7 +62435,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\scenario-fci.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-fci.10be30d90b39e74d66e988928a46502d538313d6.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62465,7 +62465,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\scenario-secure-most-valuable-files.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62495,7 +62495,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62525,7 +62525,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\scenario-sharepoint.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62555,7 +62555,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\scenario-work-folders.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62588,7 +62588,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\terminology.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\terminology.4fbc2a47d03447c90b5daeeb16cb3ad1dda6387e.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62618,7 +62618,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\tutorial-step2.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\tutorial-step2.327de0269970446f6490579a206d301f3b28893e.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62648,7 +62648,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\tutorial-step3.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\tutorial-step3.dad05e9b268504671a55dc5ce71fa506f12a46ea.zh-cn.xlf",
       "HandoffFileCommit": "43b5993b4e69b96c0c58ad67e5edc74abb1ee52c",
       "HandoffDateTime": "2016-05-12T00:59:35.7729032Z",
@@ -62738,7 +62738,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\develop\\api-reference-2-1.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\api-reference-2-1.b098ba5a484c74e19759fdb28557981fa99c2b0a.zh-cn.xlf",
       "HandoffFileCommit": "b63a48d85dfa7068b79e659d305069b0da8624b9",
       "HandoffDateTime": "2016-05-12T01:25:42.4304426Z",
@@ -62799,7 +62799,7 @@
         "Azure-RMSDocs\\develop\\adal-authentication.md",
         "Azure-RMSDocs\\develop\\adal-auth.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\adal-auth.84b9f2d9ce36c657e4594523b7e0a1f1d74c114f.zh-cn.xlf",
       "HandoffFileCommit": "c7c11a993e613d274bbf96b02a214ac7ed35643d",
       "HandoffDateTime": "2016-05-13T01:54:56.5482534Z",
@@ -62861,7 +62861,7 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\faqs.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf",
       "HandoffFileCommit": "6f3f9fd13e488f8f60a3cbbdcad697e814c8b940",
       "HandoffDateTime": "2016-05-13T15:54:10.6692041Z",
@@ -62891,10 +62891,132 @@
       "FilePathList": [
         "Azure-RMSDocs\\get-started\\requirements-applications.md"
       ],
-      "HasMetadata": false,
+      "HasMetadata": true,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\requirements-applications.0609c293c5627771667916524593402b34fff036.zh-cn.xlf",
       "HandoffFileCommit": "6f3f9fd13e488f8f60a3cbbdcad697e814c8b940",
       "HandoffDateTime": "2016-05-13T15:54:10.6692041Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "8a138cdb0dc9b184c6361a879860501ede283ea1": {
+      "FileHash": "8a138cdb0dc9b184c6361a879860501ede283ea1",
+      "SourceFileCommit": "df7476052c4c92b3b3297f8988a25fd346eedd45",
+      "SourceFilePath": "Azure-RMSDocs\\deploy-use\\log-analyze-usage.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\deploy-use\\log-analyze-usage.md"
+      ],
+      "HasMetadata": true,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\log-analyze-usage.78ce815d3f9335f9de6b70be52bcf5de2c9158e4.zh-cn.xlf",
+      "HandoffFileCommit": "d1ac26d5f1ba72dd2ec02914a19616f9f8e3b902",
+      "HandoffDateTime": "2016-05-17T18:06:51.015595Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "ffddda9a144b23b64b54df4fe4d25ec62600599d": {
+      "FileHash": "ffddda9a144b23b64b54df4fe4d25ec62600599d",
+      "SourceFileCommit": "2bd8aba91b9b65777c2319baea848e8313cbccda",
+      "SourceFilePath": "Azure-RMSDocs\\rms-client\\client-deployment-notes.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
+      ],
+      "HasMetadata": true,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\client-deployment-notes.2c00eef84cbb27e32ece796eecdb703ce7d8f4c7.zh-cn.xlf",
+      "HandoffFileCommit": "d1ac26d5f1ba72dd2ec02914a19616f9f8e3b902",
+      "HandoffDateTime": "2016-05-17T18:06:51.015595Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "3e2475a62f39ea1112f6d76f12f2f910136f8069": {
+      "FileHash": "3e2475a62f39ea1112f6d76f12f2f910136f8069",
+      "SourceFileCommit": "04f4e3d1a895d2337665677d4785d894ef377879",
+      "SourceFilePath": "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide-technical.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide-technical.md"
+      ],
+      "HasMetadata": true,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\sharing-app-admin-guide-technical.0559e28c1635cef750afcfabe69519c7465b9f77.zh-cn.xlf",
+      "HandoffFileCommit": "d1ac26d5f1ba72dd2ec02914a19616f9f8e3b902",
+      "HandoffDateTime": "2016-05-17T18:06:51.015595Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "15167c4e7dbe0fd401e198c80524b39e4ded250d": {
+      "FileHash": "15167c4e7dbe0fd401e198c80524b39e4ded250d",
+      "SourceFileCommit": "16c2dbbce4234f41941bd3fd92d264df0ae685e2",
+      "SourceFilePath": "Azure-RMSDocs\\understand-explore\\applications-support.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
+      "FilePathList": [
+        "Azure-RMSDocs\\understand-explore\\applications-support.md"
+      ],
+      "HasMetadata": true,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\applications-support.2ceee91ce17806c0012dc7a9ee884ddcf55329b2.zh-cn.xlf",
+      "HandoffFileCommit": "d1ac26d5f1ba72dd2ec02914a19616f9f8e3b902",
+      "HandoffDateTime": "2016-05-17T18:06:51.015595Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

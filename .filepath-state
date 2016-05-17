@@ -1247,6 +1247,9 @@
   "0f403f431e7e275c1cd0023bc6ba499b8bed9bda": [
     "Azure-RMSDocs\\deploy-use\\install-powershell.md"
   ],
+  "8a138cdb0dc9b184c6361a879860501ede283ea1": [
+    "Azure-RMSDocs\\deploy-use\\log-analyze-usage.md"
+  ],
   "d71cdbe5d6faae000947dd665552547d44e8fbb9": [
     "Azure-RMSDocs\\deploy-use\\log-analyze-usage.md"
   ],
@@ -1604,6 +1607,9 @@
   "6f11542151c2eb0b3d0acd60535a1f3021eb8e57": [
     "Azure-RMSDocs\\plan-design\\prepare.md"
   ],
+  "ffddda9a144b23b64b54df4fe4d25ec62600599d": [
+    "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
+  ],
   "d130be044beecd4c876d660fea25a9169b3ae75e": [
     "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
   ],
@@ -1639,6 +1645,9 @@
   ],
   "3bcec9fb39c2a92a8b61e51e5ee6f067133deef2": [
     "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide.md"
+  ],
+  "3e2475a62f39ea1112f6d76f12f2f910136f8069": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide-technical.md"
   ],
   "3be36a844584fd1d7e90bf405e4d5d1844e11fd3": [
     "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide-technical.md"
@@ -1759,6 +1768,9 @@
   ],
   "e0fe2b8012e8eb57cf3d00ea0b55ff816f0a84ff": [
     "Azure-RMSDocs\\understand-explore\\api-support.md"
+  ],
+  "15167c4e7dbe0fd401e198c80524b39e4ded250d": [
+    "Azure-RMSDocs\\understand-explore\\applications-support.md"
   ],
   "2539d4f1c5f114331606685812cb9ba955d2c6cb": [
     "Azure-RMSDocs\\understand-explore\\applications-support.md"
