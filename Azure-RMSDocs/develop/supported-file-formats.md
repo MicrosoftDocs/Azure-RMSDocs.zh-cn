@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: deb9a110-c098-4834-8319-05d5a28a0ccd
-
+ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 支持的文件格式
 
 文件 API 支持本机和 Pfile 格式。
@@ -39,7 +37,7 @@ ms.suite: ems
 
 管理员可以设置注册表项，以基于文件扩展名就文件是否应受保护以及如何进行保护进行配置。 有关如何在使用文件 API 时配置文件保护的详细信息，请参阅[文件 API 配置](file-api-configuration.md)。
 
-### 相关主题
+## 相关主题
 
 * [开发人员说明](developer-notes.md)
 * [文件 API 配置](file-api-configuration.md)
@@ -51,6 +49,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

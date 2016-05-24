@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 00674664-22ed-44da-adb8-61f25c44aa6c
-
+ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 文件 API 配置
 
 
@@ -151,7 +149,7 @@ HKEY_LOCAL_MACHINE
                   Encryption = Off
 ```
 
-### 相关主题
+## 相关主题
 
 * [开发人员说明](developer-notes.md)
 * [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/rights-management/sdk/2.1/api/win/error%20codes)
@@ -163,6 +161,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 58051d42-5a0a-4b65-9e02-bcdbf17d3262
-
+ms.assetid: 74C342BF-0F79-486D-AED7-C53230DE5FA7
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 配置客户端
 
 本主题包含有关如何配置 Active Directory Rights Management Services 客户端 2.1 的说明。
@@ -117,7 +115,7 @@ ms.suite: ems
 
 本主题中的指南并不全面。 有关如何配置 AD RMS 客户端 2.1 的详细信息，请参阅 [RMS 客户端 2.0 部署说明](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx)。
 
-### 相关主题
+## 相关主题
 
 
 * [使用方法](how-to-use-msipc.md)
@@ -131,6 +129,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

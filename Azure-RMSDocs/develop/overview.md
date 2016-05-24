@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: a1da2517-c50f-4e02-bec7-92836bbd4007
-
+ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 概述
 
 
@@ -72,6 +70,6 @@ MS RMS SDK 4.2 提供了一些很棒的新功能，包括以下方面：
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

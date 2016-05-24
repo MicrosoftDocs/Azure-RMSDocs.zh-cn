@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: b3acfcd5-1af5-4f3a-912b-962198c59103
-
+ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 设置 API 安全模式
 
 通过使用 [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 函数，你可以选择文件 API 应用程序在哪种安全模式下运行。
@@ -38,7 +36,7 @@ ms.suite: ems
 
  
 
-### 相关主题
+## 相关主题
 
 * [应用程序类型](application-types.md)
 * [开发人员概念](ad-rms-concepts-nav.md)
@@ -52,6 +50,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

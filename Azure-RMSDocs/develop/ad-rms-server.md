@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: a7f11e25-9d27-4083-b604-a2d437671d91
-
+ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
 # optional metadata
 
 #ROBOTS:
@@ -66,6 +65,6 @@ Rights Management Services (RMS) 的服务器组件通过一组在 [Microsoft In
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

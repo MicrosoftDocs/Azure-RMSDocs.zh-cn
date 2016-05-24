@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: caf031ca-4876-4d42-9fbc-8638f579fb38
-
+ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 调试启用权限的应用程序
 
 下面的主题演示如何调试应用程序和使用 Windows 事件日志。
@@ -68,11 +66,11 @@ HKEY_LOCAL_MACHINE
 
 **wevtutil sl Microsoft-RMS-MSIPC/Debug /e:true /l:4**
 
-**注意** 在 Windows 事件查看器的“视图”****菜单中，选择“显示分析和调试日志”****以使 MSIPC 调试日志可见。
+**注意** 在 Windows 事件查看器的“视图”菜单中，选择“显示分析和调试日志”以使 MSIPC 调试日志可见。
 
  
 
-### 相关主题
+## 相关主题
 
 * [使用方法](how-to-use-msipc.md)
  
@@ -83,6 +81,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

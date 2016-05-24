@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: ec4661b0-e2d6-49f4-b819-ef624271ccc1
-
+ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # IPCHelloWorld - 一个示例应用程序
 
 本主题包含用于创建启用权限的示例应用程序的说明。
@@ -224,6 +222,6 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 013f9d75-0b66-44a8-9b01-d05b44a5ea0c
-
+ms.assetid: 6749817E-FF34-4384-BF63-39AEA5C372CA
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 获取生产许可证
 
 必须先申请生产许可证协议以获取生产证书，才能发布使用 Rights Management Services SDK 2.1 开发的应用程序。
@@ -43,8 +41,6 @@ ms.suite: ems
 通过申请生产许可证协议，即可获得证书。
 
 ## 请求生产许可协议
-
-![](../media/wedge.gif)
 
 -   发送电子邮件信息至 [RMLA@microsoft.com](mailto:rmla@microsoft.com) 并包含以下信息：
 
@@ -93,6 +89,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: b2fce5e9-0b71-40c9-a325-1ff8afef9252
-
+ms.assetid: 634df601-79d2-4bc2-b845-4df886d7c589
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 代码示例
 
 Microsoft Rights Management SDK 4.2 包括适用于一些支持的操作系统的示例代码和工作项目。
@@ -51,6 +49,6 @@ Microsoft Rights Management SDK 4.2 包括适用于一些支持的操作系统�
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

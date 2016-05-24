@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: ac6453e1-e24f-480e-99bd-02ba9a49f468
-
+ms.assetid: A5B95EB8-3528-4CFF-86FC-166613A5F4A3
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 常见错误情形和解决方案
 本主题包括在使用 Rights Management Services SDK 2.1 开发人员工具时可能遇到的最常见的错误信息。 它还提供修复错误的推荐操作（如果适用）。
 
@@ -76,6 +74,6 @@ RMS SDK 2.1 中的某些函数在调试器下可能失效：
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 65c2f3d1-0852-41fa-a95a-53dcec787680
-
+ms.assetid: 5A9F04FD-0FCD-482F-8671-36FE93B783B0
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# 开发人员说明
+# 开发人员说明
 
 本部分涵盖了几个重要开发方案的具体指南。 本部分中的方案特定于此版本的 Rights Management Services SDK 2.1，在后续版本中可能会有所改动。
 
@@ -49,6 +48,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

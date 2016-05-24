@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: e51adc12-4ee1-4819-bd8e-08ccf654fa00
-
+ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 安装并配置服务器
 
 本主题介绍用于安装并配置 RMS 服务器以便测试启用权限的应用程序的步骤。
@@ -93,7 +91,7 @@ ms.suite: ems
 
         **HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**1.0**\\**UddiProvider** = 0e3d9bb8-b765-4a68-a329-51548685fed3
 
-### 相关主题
+## 相关主题
 
 * [使用方法](how-to-use-msipc.md)
  
@@ -104,6 +102,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
