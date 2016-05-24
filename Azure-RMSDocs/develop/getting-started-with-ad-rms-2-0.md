@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 23e80932-9883-41f3-833d-b263fb419a62
-
+ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# 入门
+# 入门
 
 Rights Management Services SDK 2.1 平台使开发人员可以构建利用 RMS 信息保护的应用程序。 该平台可处理复杂的安全实践（如密钥管理、加密和解密处理），并提供简化 API 以便轻松开发应用程序。
 
@@ -62,7 +61,7 @@ RMS SDK 2.1 支持一系列重要的客户端和服务器平台。 有关详细�
 **编写一次**— RMS SDK 2.1 应用程序不需要代码更改或重新编译即可使用最新 RMS 功能。 新 RMS 功能会随着添加到 RMS 服务器，而在现有应用程序中可用。
 **一致性**— RMS SDK 2.1 可帮助轻松地编写以一致方式采用不同 RMS 配置的应用程序。 它还显著降低了你作为应用程序开发人员而需要创作的 RMS 用户界面量，从而鼓励采用一致的外观并减少用户培训需求。
 
-### 相关主题
+## 相关主题
 
 * [AD RMS 示例](samples.md)
 * [AD RMS 开发人员活动角](http://blogs.msdn.com/b/rms/)
@@ -79,6 +78,6 @@ RMS SDK 2.1 支持一系列重要的客户端和服务器平台。 有关详细�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

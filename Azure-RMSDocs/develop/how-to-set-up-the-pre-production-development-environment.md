@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: bdb24446-d69f-435b-be39-a036540f7378
-
+ms.assetid: 4629ACAA-2A83-4697-B769-D649114D35E1
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 设置预生产开发环境
 
 本部分会指导你完成设置过程以及在测试/预生产环境中运行启用权限的应用程序的过程。 以下主题讨论如何设置预生产开发环境，其列出方式表示执行任务时可以使用的建议顺序。
@@ -41,7 +39,7 @@ ms.suite: ems
 |[调试启用权限的应用程序](debugging-applications-that-use-ad-rms.md)|下面的主题演示如何调试应用程序和使用 Windows 事件日志。|
 
 
-### 相关主题
+## 相关主题
 
 * [概述](ad-rms-overview.md)
 * [使用方法](how-to-use-msipc.md)
@@ -50,6 +48,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
