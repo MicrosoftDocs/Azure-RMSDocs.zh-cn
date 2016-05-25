@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 43b611a8-2cc0-49a8-9db9-e81321c38f7a
-
+ms.assetid: 834B7242-31D3-4275-A892-CFE95A61E29E
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 测试启用权限的应用程序
 
 本主题描述测试 Rights Management Services SDK 2.1 启用权限的应用程序所需完成的步骤。
@@ -107,7 +105,7 @@ ms.suite: ems
 
     有关如何在计算机上配置客户端的信息，请参阅[配置客户端](how-to-configure-the-ad-rms-client-2-0.md)。 有关安装 RMS 服务器的信息，请参阅 [安装和配置服务器](how-to-install-and-configure-an-rms-server.md)。
 
-### 相关主题
+## 相关主题
 
 * [使用方法](how-to-use-msipc.md)
 * [配置客户端](how-to-configure-the-ad-rms-client-2-0.md)
@@ -125,6 +123,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

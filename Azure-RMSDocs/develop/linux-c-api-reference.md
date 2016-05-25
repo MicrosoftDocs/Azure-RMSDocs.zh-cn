@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: aca520e1-ea56-4405-8d79-953a7b430bb4
-
+ms.assetid: 2BD4F55D-BA88-4516-86FB-E2E6535D1690
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Linux API 参考
 
 Linux 适用的操作系统支持的 API 参考在 Github 上进行承载 - [RMS SDK for C++](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)。 有关详细信息，请参阅[入门](get-started.md)。
@@ -38,6 +36,6 @@ Linux 适用的操作系统支持的 API 参考在 Github 上进行承载 - [RMS
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

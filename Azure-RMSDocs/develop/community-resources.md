@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 191f4c29-8aea-48cc-a859-84487b803797
-
+ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 社区资源
 
 不断壮大的开发人员群体可在多个平台上很好地支持 Active Directory Rights Management Services。
@@ -41,9 +39,9 @@ ms.suite: ems
 
 -   导航到 [Microsoft Connect](http://connect.microsoft.com) (http://connect.microsoft.com)
 -   使用你的 Microsoft 帐户登录。
--   单击命令栏上的“目录”****。
+-   单击命令栏上的“目录”。
 -   搜索 **Rights Management Services**。
--   单击“加入”****注册。
+-   单击“加入”注册。
 
  
 
@@ -55,6 +53,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

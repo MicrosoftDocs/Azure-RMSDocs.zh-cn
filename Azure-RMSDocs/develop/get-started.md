@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 1a2ae9f2-709f-47fe-b16c-76140dd27740
-
+ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 入门
 
 对于 Microsoft Rights Management SDK 4.2 这一版本，第一个应用程序的快速入门方法是通过适用于每种操作系统/平台的开发环境设置指南。 通过以下方式开始创建启用权限的应用程序：
@@ -61,6 +59,6 @@ ms.suite: ems
   |[社区资源](community-resources.md)|不断壮大的开发人员群体可在多个平台上很好地支持 Active Directory Rights Management Services。|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

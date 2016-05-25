@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 749146d4-a49d-47dc-a43a-d37d96310e18
-
+ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 应用程序类型
 
 
@@ -60,7 +58,7 @@ Microsoft 记事本是简单的富客户端应用程序。 Microsoft Office 是�
 
 有关保护应用程序的详细信息，请参阅 [了解使用限制](understanding-usage-restrictions.md)。
 
-### 相关主题
+## 相关主题
 
 * [开发人员概念](ad-rms-concepts-nav.md)
 * [IpcDlp 示例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
@@ -75,6 +73,6 @@ Microsoft 记事本是简单的富客户端应用程序。 Microsoft Office 是�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

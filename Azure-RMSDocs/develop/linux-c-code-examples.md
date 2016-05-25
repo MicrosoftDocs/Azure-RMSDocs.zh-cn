@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 11acef4b-67f8-4e45-a0e7-d9310213b5f9
-
+ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
 # optional metadata
 
 #ROBOTS:
@@ -25,17 +24,11 @@ ms.suite: ems
 
 ---
 
-﻿# Linux 代码示例
+# Linux 代码示例
 
 本主题向你介绍 Linux 版 RMS SDK 的重要方案和代码元素。
 
 以下代码片段取自示例应用程序 *rms\_sample* 和 *rmsauth\_sample*。 相关详细信息，请参阅 GitHub 存储库中的[示例](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples)。
-
--   [**方案：**通过受保护的文件访问保护策略信息](#scenario__access_protection_policy_information_from_a___protected_file)
--   [**方案**：使用模板创建新的受保护文件](#scenario__create_a_new_protected_file_using_a_template)
--   [**方案**：使用自定义保护来保护文件](#scenario__protect_a_file_using_custom_protection)
--   [WorkerThread - 一种支持方法](#workerthread_-_a_supporting_method)
--   [**方案**：RMS 身份验证](#scenario__rms_authentication)
 
 ## 方案，通过受保护的文件访问保护策略信息
 
@@ -423,7 +416,7 @@ ms.suite: ems
 ## WorkerThread - 一种支持方法
 
 
-*WorkerThread()* 方法由先前的两个示例方案（“创建受保护的文件流”****和“在给定策略的情况下保护文件”****）按以下方式进行调用：
+*WorkerThread()* 方法由先前的两个示例方案（“创建受保护的文件流”和“在给定策略的情况下保护文件”）按以下方式进行调用：
 
 **C++**：
 
@@ -616,6 +609,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 3b482c5f-fd40-47d5-acdc-13d2e80d5171
-
+ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 新增功能和发行说明
 
 ## 新增功能
@@ -172,7 +170,7 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
     以下方法不得同时运行。 为了监控执行完成情况，请使用所说明的完成块方法。
 
-    - [**protectedDataWithProtectedFile**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc)
+    - [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc)
     - [**customProtectedDataWithPolicy**](/rights-management/sdk/4.2/api/iOS/mscustomprotecteddata#msipcthin2_mscustomprotecteddata_customprotecteddatawithpolicy_protecteddata_contentstartposition_contentsize_completionblock_method_objc)
 
 
@@ -229,6 +227,6 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

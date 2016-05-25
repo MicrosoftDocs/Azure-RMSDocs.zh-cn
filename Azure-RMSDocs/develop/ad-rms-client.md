@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 8116fe81-16db-45fe-96a7-d53f2914a2e9
-
+ms.assetid: F7145090-C2EB-405A-A4CF-0240D57A36DA
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# 客户端
+# 客户端
 
 本主题介绍 Active Directory Rights Management Services 客户端 2.1 的用途和功能。
 
@@ -52,6 +51,6 @@ Rights Management Services SDK 2.1 适用于 AD RMS Client 2.1。 在 RMS SDK 2.
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

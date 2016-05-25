@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: c73fde39-6e16-470c-800e-59ab04c78f5f
-
+ms.assetid: 09BA148C-7D1E-43C8-92EA-24BBB6EFDB19
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 为生产对应用程序进行签名
 
 本主题将指导你完成为生产模式对应用程序进行签名的过程。
@@ -67,7 +65,7 @@ ms.suite: ems
 
     -   你的 *YourAppName*.exe.man 应始终放置在与 *YourAppName*.exe 相同的目录中。
 
-### 相关主题
+## 相关主题
 
 * [使用方法](how-to-use-msipc.md)
 * [测试启用权限的应用程序](running-your-first-application.md)
@@ -79,6 +77,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 9217d66f-b4a7-4ad2-a4ed-ab2c36deab71
-
+ms.assetid: 968C804C-22BE-4DCA-B0E5-9D0E5E6A0FA9
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 代码示例
 
 本主题使用 Rights Management Services SDK 2.1 列出了一组示例，可在 MSDN 下载中心获取。
@@ -48,7 +46,7 @@ ms.suite: ems
 
   **注意**：此示例也适用于 RMS SDK 2.0 以上的后续版本。
  
-### 相关主题
+## 相关主题
 
 * [概述](ad-rms-overview.md)
 * [Interop 库](https://Code.MSDN.Microsoft.Com/AD-RMS-SDK-20-Interop-eb3fbce7)
@@ -59,6 +57,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
