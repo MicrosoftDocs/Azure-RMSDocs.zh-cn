@@ -824,6 +824,9 @@
   "2c85bfd42ed72d3919ef87a02558caee98fe587d": [
     "Azure-RMSDocs\\deploy-use\\configure-applications.md"
   ],
+  "5619e5845625a1b2503aebb965df651d69cb14e5": [
+    "Azure-RMSDocs\\deploy-use\\configure-custom-templates.md"
+  ],
   "149100dd0abbf84bb012060f20b34b02bcd912ba": [
     "Azure-RMSDocs\\deploy-use\\configure-custom-templates.md"
   ],
@@ -895,6 +898,9 @@
   ],
   "32c23ad2b902df4c4e792afc12eace5d359bf9dd": [
     "Azure-RMSDocs\\deploy-use\\copy-template.md"
+  ],
+  "d67caf4ebbe19e4f67061d006da1fdedea0d5761": [
+    "Azure-RMSDocs\\deploy-use\\create-template.md"
   ],
   "b904c6353341224dcb925b224de8d5cd7ff48007": [
     "Azure-RMSDocs\\deploy-use\\create-template.md"
@@ -1108,6 +1114,9 @@
   ],
   "6cd80e56178e15a3ec1003b59e9cfa21d704c08a": [
     "Azure-RMSDocs\\get-started\\requirements-servers.md"
+  ],
+  "cccbaa8e691ed152d74f7b9f279018e00a7316db": [
+    "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
   ],
   "434b847f7336a9756578e05a5630cbba5018fcb8": [
     "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
