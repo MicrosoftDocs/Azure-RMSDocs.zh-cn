@@ -27,7 +27,10 @@ ms.reviewer: mbaldwin
 
 # Azure RMS 客户端
 
+*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
-<!--HONumber=Apr16_HO3-->
+
+
+<!--HONumber=Apr16_HO4-->
 
 

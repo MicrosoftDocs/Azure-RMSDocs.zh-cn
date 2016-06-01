@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Azure RMS 要求：支持 Azure RMS 的云订阅
+
+*适用于：Azure Rights Management、Office 365*
+
 若要使用 Azure Rights Management (Azure RMS)，你的组织必须至少具有下列其中一个订阅，这些订阅可提供足够数目的用户和服务许可证来保护文件与电子邮件。 如果你的某个服务要为用户（文件或电子邮件的所有者）应用保护，则这些用户需要这些许可证之一。 只需使用（例如，阅读和编辑）此类受保护数据的用户不需要许可证。
 
 -   Office 365
@@ -94,6 +97,6 @@ Exchange Online 计划 1 <br /><br /> Exchange Online 计划 2|否 <br /><br /> 
 ## 后续步骤
 若要查看其他要求，请参阅 [Azure Rights Management 的要求](requirements-azure-rms.md)。
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,7 +26,10 @@ ms.suite: ems
 ---
 
 # Azure Rights Management 快速部署指南
-本指南是对****“部署和使用”部分中的配置信息的补充，通过从要实施的特定方案的列表中进行选择，帮助你更加快速地部署和使用 Azure Rights Management (Azure RMS)。
+
+*适用于：Azure Rights Management、Office 365*
+
+本指南是对“部署和使用”部分中的配置信息的补充，通过从要实施的特定方案的列表中进行选择，帮助你更加快速地部署和使用 Azure Rights Management (Azure RMS)。
 
 这些方案包含管理员指令和随附的最终用户文档。 在向最终用户提供文档（说明或公告）之前，你需要首先针对业务需求和现有工作流对本文档进行自定义。 一组说明或公告示例显示了最终用户文档的最终样式。
 
@@ -36,8 +39,7 @@ ms.suite: ems
 
 在推出这些解决方案之前，你可能希望向最终用户发送广泛公告，让他们知道即将发生一些更改以帮助保护公司数据，且可能需要他们也做出一些改变。 下表后面包含了一个示例通信。
 
-> [!NOTE]
-> 如果你对本指南有任何问题和意见，请使用本页上的反馈机制或发送电子邮件消息至 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)。
+> [!NOTE]如果你对本指南有任何问题和意见，请使用本页上的反馈机制或发送电子邮件消息至 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)。
 
 ## Azure RMS 的方案
 为了帮助你更加快速地部署 Azure RMS 以解决具体的业务问题，请选择与你的业务目标最接近的方案，并根据需要进行调整。
@@ -130,7 +132,7 @@ ms.suite: ems
 ## 推出前的用户公告
 你可以使用以下示例通信邮件来通知用户，部署 Azure RMS 后将发生一些更改。 复制粘贴以下文本，由组织领导团队中的某位成员（最好是首席执行官）通过电子邮件发送给所有人。 考虑对本文本进行任何更改，以使消息与用户和你的组织更加相关。
 
-![](../media/AzRMS_ExampleBanner.png)
+![Azure RMS 快速部署的用户文档横幅示例](../media/AzRMS_ExampleBanner.png)
 
 ### 旨在保护数据安全的更改
 你是否曾经有过误将某个文档发送给合作伙伴后，希望阻止对该文档的访问？ 你是否想过有任何方法知道哪些客户阅读了你发送的最新产品新闻？ 你是否需要共享机密产品信息，而不必担心这些信息可能发送给不应看到的人员？
@@ -139,7 +141,7 @@ ms.suite: ems
 
 例如，若要跟踪（必要时撤消）你所共享的文档，需使用文档跟踪网站：
 
-![](../media/AzRMS_Tutorial_5_Screenshots.png)
+![Azure RMS 文档跟踪屏幕截图](../media/AzRMS_Tutorial_5_Screenshots.png)
 
 若要抢先了解它的工作原理，请观看这段时长 2 分钟的视频：[Azure RMS 文档跟踪和撤消](https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
 
@@ -149,6 +151,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 
