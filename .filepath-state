@@ -737,9 +737,6 @@
   "3723189a600d32f43cf4888714add0df0e6c082a": [
     "Azure-RMSDocs\\rms-client\\rms-client.md"
   ],
-  "4252b622c985c5b2e1f98c86e0fa6540a12af409": [
-    "Azure-RMSDocs\\rms-client\\rms-client.md"
-  ],
   "63635d13f95219bd900d8ecdd0ca0738c5ebca4a": [
     "Azure-RMSDocs\\understand-explore\\understand-explore.md"
   ],
@@ -1046,15 +1043,6 @@
   "01c2436218e0d7fd80a31cdc037d9dc8933e42f2": [
     "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md"
   ],
-  "295f389f7f9002bc4231de3e1a9844019fe06bac": [
-    "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md"
-  ],
-  "51e7c8a92d180ce5bce7e08f09128b4debf95b90": [
-    "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md"
-  ],
-  "4f1db78d084470d56ac4b88540273061fa5dbaa3": [
-    "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md"
-  ],
   "9739df74a999efef879fb537eee730af7520b0fa": [
     "Azure-RMSDocs\\get-started\\requirements-applications.md"
   ],
@@ -1085,15 +1073,6 @@
   "472935eef8a68b9b8fa618f4cab9d4e365bee8a3": [
     "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
   ],
-  "9a54da46d9f9eef70108c50ef95df94510dc2f53": [
-    "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
-  ],
-  "d65bbc9b0791d1dc640b99762d1ffe58edc9727c": [
-    "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
-  ],
-  "76051bbb0861283397f38e061d7913d500826cfb": [
-    "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
-  ],
   "933394c943763b010ac707384918eff86ea33388": [
     "Azure-RMSDocs\\get-started\\requirements-client-devices.md"
   ],
@@ -1119,12 +1098,6 @@
     "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
   ],
   "434b847f7336a9756578e05a5630cbba5018fcb8": [
-    "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
-  ],
-  "4289a910f7cf97e969ab631a9dfa725ae4f8f7db": [
-    "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
-  ],
-  "1097c76ae253d42d9c326b856dff15911d9f685d": [
     "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
   ],
   "35ad445e229eac3feeca5522a41b9e3b25fd1180": [
