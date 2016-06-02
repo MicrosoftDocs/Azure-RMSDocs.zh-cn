@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 有关 Thales HSM 和 Microsoft 添加件的详细信息
+
+*适用于：Azure Rights Management、Office 365*
+
 当你管理你自己的租户密钥（附带你自己的密钥方案，简称 BYOK）时，Azure RMS 将使用 Thales HSM 来保护你的密钥。
 
 Thales e-Security 是一家全球领先的数据加密和网络安全解决方案提供商，面向金融服务、高科技、制造、政府机构和技术行业。 Thales 解决方案在保护企业和政府信息方面拥有 40 年的悠久历史，在五分之四的大型能源和航天公司以及 22 个 NATO 国家/地区得以使用，为全球 80% 以上的支付交易提供安全保护。
@@ -36,6 +39,6 @@ Microsoft 与 Thales 联手协作，不断增强这些 HSM 的功能。 通过�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
