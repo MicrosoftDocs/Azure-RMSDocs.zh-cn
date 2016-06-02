@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 一级标题
 
-请参阅 [Github 中](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/master/Azure-RMSDocs/scratch.md)此文件的标记 (markdown)；请参阅 [EM 试点风格指南](https://worldready.cloudapp.net/Styleguide/Edit?id=2781&topicid=36931)中的标记参考。 
+请参阅 [Github 中](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/master/Azure-RMSDocs/scratch.md)此文件的标记 (markdown)；请参阅 [EM 试点风格指南](https://worldready.cloudapp.net/Styleguide/Edit?id=2781&topicid=36931)中的标记参考. 
 
 ## 二级标题
 ### 三级标题
@@ -118,7 +118,7 @@ ms.suite: ems
 
 ### 内联代码
 
-这是 `in-line code` 的一个示例。
+这是一个示例 `in-line code`.
 
 ## 块引用
 
@@ -165,6 +165,18 @@ ms.suite: ems
 [按钮链接](/azure-rms/index.html)
 
 ### 选择器
+
+简介文本：[!div class="op_single_selector"]
+- [foo](./develop/developers-guide.md)
+- [栏](./develop/developer-notes.md)
+
+简介文本：> [!div class="op_single_selector"]
+- [foo](./develop/developers-guide.md)
+- [栏](./develop/developer-notes.md)
+
+
+
+
 > [!div class="op_single_selector"]
 - [foo](./develop/developers-guide.md)
 - [栏](./develop/developer-notes.md)
@@ -179,6 +191,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
