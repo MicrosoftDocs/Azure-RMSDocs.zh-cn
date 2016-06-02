@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/23/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -72,6 +72,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO5-->
 
 
