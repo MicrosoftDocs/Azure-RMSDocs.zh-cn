@@ -6,13 +6,12 @@ description: Microsoft Rights Management SDK 4.2 支持多种操作系统；Andr
 keywords:
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/04/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643
-
 # optional metadata
 
 #ROBOTS:
@@ -27,17 +26,21 @@ ms.suite: ems
 
 # API 参考
 
-Microsoft Rights Management SDK 4.2 支持多种操作系统。 有关特定平台的详细信息，请参阅 [新增功能](release-notes.md)。
+Microsoft Rights Management SDK 4.2 支持多种操作系统。 有关特定平台的详细信息，请参阅[新增功能](release-notes.md)。
 
-[Android API 参考](https://stage.docs.microsoft.com/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement) - 适用于 Android 操作系统的 API 参考。
+### Apple
+- [iOS/OS X API 参考](/rights-management/sdk/4.2/api/iOS/iOS) - 适用于 Apple iOS 和 OS X 操作系统的 API 参考。
 
-[Linux API 参考](linux-c-api-reference.md) - 适用于我们 Linux 风格操作系统支持的 API 参考在 Github 上承载 - [适用于 C++ 的 RMS SDK](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)。
+### Google
+- [Android 命名空间](android-namespaces.md)
 
-[iOS/OS X API 参考](https://stage.docs.microsoft.com/rights-management/sdk/4.2/api/iOS/iOS) - 适用于 Apple iOS 和 OS X 操作系统的 API 参考。
+### Linux
+- [Linux API 参考](linux-c-api-reference.md) - 适用于我们 Linux 风格操作系统支持的 API 参考在 Github 上承载 - [适用于 C++ 的 RMS SDK](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)。
 
-[Windows API 参考](https://stage.docs.microsoft.com/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement) - 适用于 Windows Phone 和 Windows 应用商店应用程序 SDK 的 API 参考。
+### Microsoft
+- [Windows API 参考](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement) - 适用于 Windows Phone 和 Windows 应用商店应用程序 SDK 的 API 参考。
 
-## 相关主题 ##
+## 相关主题
 
 * [入门](get-started.md)
  
@@ -45,6 +48,6 @@ Microsoft Rights Management SDK 4.2 支持多种操作系统。 有关特定平�
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

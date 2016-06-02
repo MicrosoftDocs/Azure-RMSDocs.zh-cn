@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Azure RMS 要求：支持 Azure RMS 的本地服务器
+
+*适用于：Azure Rights Management、Office 365*
+
 当你使用 Azure RMS 连接器时，它将充当本地服务器和 Azure RMS 之间的通信接口（一种中继），让 Azure RMS 能够支持以下本地服务器产品。 此外，这种配置要求你配置 Active Directory 林和 Azure Active Directory 之间的目录同步。
 
 -   **Exchange Server**：
@@ -38,6 +41,8 @@ ms.suite: ems
     -   Exchange Server 2010
 
 -   **Office SharePoint Server**：
+
+    -   Office SharePoint Server 2016
 
     -   Office SharePoint Server 2013
 
@@ -62,6 +67,6 @@ Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 支持 R
 若要查看其他要求，请参阅 [Azure Rights Management 的要求](requirements-azure-rms.md)。
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

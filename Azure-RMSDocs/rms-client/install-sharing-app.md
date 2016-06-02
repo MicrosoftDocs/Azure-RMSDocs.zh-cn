@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,22 +26,25 @@ ms.suite: ems
 ---
 
 # 下载和安装 Rights Management 共享应用程序
+
+*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+
 你无需是本地管理员就能安装 RMS 共享应用程序。 但是，如果你不是本地管理员而使用 Office 2010，就会有一些限制。 有关详细信息，请参阅本页上的[如果你不是本地管理员，并且使用 Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) 部分。
 
 ## 下载并安装权限管理共享应用程序
 
 1.  转到 Microsoft 网站上的 [Microsoft 权限管理](http://go.microsoft.com/fwlink/?LinkId=303970) 页。
 
-2.  在“计算机” **** 部分中，单击“适用于 Windows 的 RMS 应用” **** 图标，并保存用于安装 Microsoft Rights Management 共享应用程序的 **Setup.exe** 文件。
+2.  在“计算机”  部分中，单击“适用于 Windows 的 RMS 应用”  图标，并保存用于安装 Microsoft Rights Management 共享应用程序的 **Setup.exe** 文件。
 
-3.  双双击已下载的 Setup.exe 文件。 如果系统提示你是否继续，请单击“是” ****。
+3.  双双击已下载的 Setup.exe 文件。 如果系统提示你继续，请单击**是**.
 
 4.  在 **“安装 Microsoft RMS”** 页上，单击 **“下一步”**，然后等待安装完成。
 
     > [!NOTE]
     > RMS 共享应用程序需要 Microsoft .NET Framework（最低版本 4.0）。 安装程序会进行检查以查看是否安装了此组件，如果未安装，你将看到一封包含安装链接的邮件。
 
-5.  安装完成后，请单击 **“重启”** 以重新启动计算机并完成安装。 或者，单击“关闭” **** ，在稍后重启计算机以完成安装。
+5.  安装完成后，请单击 **“重启”** 以重新启动计算机并完成安装。 或者，单击“关闭”  ，在稍后重启计算机以完成安装。
 
 现在，你可以随时开始保护你的文件或阅读其他人保护的文件。
 
@@ -50,7 +53,7 @@ ms.suite: ems
 
 -   如果你组织使用 Azure RMS 而不是本地版本的 RMS：
 
-    -   Office 的信息权限管理 (IRM) 功能将不可用。 例如，电子邮件的“不转发”****选项，以及可在 Word 和 Excel 的“文件”****菜单中设置的“限制访问”****权限。 你可以使用功能区中的“共享保护项”选项，以及文件资源管理器中的右键单击选项。
+    -   Office 的信息权限管理 (IRM) 功能将不可用。 例如，电子邮件的“不转发”选项，以及可在 Word 和 Excel 的“文件”菜单中设置的“限制访问”权限。 你可以使用功能区中的“共享保护项”选项，以及文件资源管理器中的右键单击选项。
 
 -   如果你组织使用本地版本的 RMS 而不是 Azure RMS：
 
@@ -58,20 +61,20 @@ ms.suite: ems
 
 如果你不是本地管理员而使用 Office 365 或 Office 2013，你将不会看到此消息，并且支持这些方案。
 
-你可以继续安装并接受这些已知限制。 也可停止安装，在步骤 3 中运行 Setup.exe 时使用“以管理员身份运行”****选项重新运行它或请管理员为你安装。 管理员可为你[编写此安装的脚本](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)，使它可以自动安装。
+你可以继续安装并接受这些已知限制。 也可停止安装，在步骤 3 中运行 Setup.exe 时使用“以管理员身份运行”选项重新运行它或请管理员为你安装。 管理员可为你[编写此安装的脚本](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)，使它可以自动安装。
 
 ## 示例和其他说明
 有关如何使用 Rights Management 共享应用程序以及操作说明的示例，请参阅以下 Rights Management 共享应用程序用户指南部分：
 
 -   [使用 RMS 共享应用程序的示例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [要执行什么操作？](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## 另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

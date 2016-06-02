@@ -4,30 +4,33 @@
 title: Azure RMS 快速入门教程 - 步骤 2 | Azure RMS
 description: 使用本教程的第二步，可以快速试用适合你的组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。
 keywords:
-author: Cabailey
+author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
+ms.technology: techgroup-identity
 ms.assetid: f32cf2f3-29e2-429c-a0fd-b16cc482484a
 
 # optional metadata
 
-ROBOTS: 
-audience:
-ms.devlang:
+#ROBOTS:
+#audience:
+#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+#ms.tgt_pltfrm:
+#ms.custom:
 
 ---
 
 
 
 # Azure RMS 快速启动步骤 2：安装 Rights Management 共享应用程序
+
+*适用于：Azure Rights Management、Office 365*
+
 
 跳转到： 
 > [!div class="op_single_selector"]
@@ -39,13 +42,13 @@ ms.custom:
 - [步骤 5：跟踪你的文档](tutorial-step5.md)
 
 
-![](../media/AzRMS_QuickStartSteps2.PNG)
+![Azure RMS 快速入门教程步骤 2](../media/AzRMS_QuickStartSteps2.PNG)
 
 权限管理共享应用程序（也称"RMS 共享应用程序"）不是 Azure 权限管理所必需的，但我们建议将其用于支持 Azure 权限管理的所有计算机和移动设备。 通过安装 Office 加载项，RMS 共享应用程序可与 Office 应用程序集成在一起，使得用户能够轻松地从功能区直接保护文件。 此外，它还可以向本来不受 Azure 权限管理支持的文件应用常规保护，从而保护所有文件类型，并可为用户设置一个文档跟踪站点，方便其跟踪和撤销受保护的文件。 我们将在本教程的后面部分用到文档跟踪站点。
 
 此应用程序可免费下载，并可针对生产环境进行脚本化安装。 不过就本教程来说，我们将在本地安装它。
 
-![](../media/AzRMS_Tutorial_2_Screenshots.png)
+![教程步骤 2 屏幕截图](../media/AzRMS_Tutorial_2_Screenshots.png)
 
 ### 下载并安装权限管理共享应用程序
 
@@ -68,10 +71,9 @@ ms.custom:
 |了解本机保护和常规保护的区别|[一般性保护和内置（本机）保护的区别是什么？](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)|
 
 
->[!div class="step-by-step"]
-[« 步骤 1](quick-start-tutorial.md)
-[步骤 3 »](tutorial-step3.md)
+>[!div class="step-by-step"] [«步骤 1](quick-start-tutorial.md)
+[步骤 3»](tutorial-step3.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

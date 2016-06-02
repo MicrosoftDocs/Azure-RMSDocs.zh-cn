@@ -4,29 +4,32 @@
 title: Azure RMS 快速入门教程 - 步骤 3 | Azure RMS
 description: 使用本教程的第三步，可以快速试用适合你的组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。
 keywords:
-author: Cabailey
+author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
+ms.technology: techgroup-identity
 ms.assetid: c604e749-8918-40e8-8148-6bd000cb2be2
 
 # optional metadata
 
-ROBOTS: 
-audience:
-ms.devlang:
+#ROBOTS:
+#audience:
+#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+#ms.tgt_pltfrm:
+#ms.custom:
 
 ---
 
 
 # Azure RMS 快速启动步骤 3：通过电子邮件发送要保护的文档
+
+*适用于：Azure Rights Management、Office 365*
+
 
 跳转到： 
 > [!div class="op_single_selector"]
@@ -42,7 +45,7 @@ ms.custom:
 
 然后你就可以安全地通过电子邮件共享此文档。
 
-![](../media/AzRMS_Tutorial_3_Screenshots.png)
+![Azure RMS 快速入门教程步骤 3](../media/AzRMS_Tutorial_3_Screenshots.png)
 
 ### 通过电子邮件安全地共享你的文档
 
@@ -77,13 +80,12 @@ ms.custom:
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
 |有关保护通过电子邮件进行共享的文件的完整说明和替代方法|[使用 Rights Management 共享应用程序保护通过电子邮件共享的文件](../rms-client/sharing-app-protect-by-email.md)|
-|关于“共享保护项”****对话框中的选项|[权限管理共享应用程序的的对话框选项](../rms-client/sharing-app-dialog-box.md)|
+|关于“共享保护项”对话框中的选项|[权限管理共享应用程序的的对话框选项](../rms-client/sharing-app-dialog-box.md)|
 
 
->[!div class="step-by-step"]
-[« 步骤 2](tutorial-step2.md)
-[步骤 4 »](tutorial-step4.md)
+>[!div class="step-by-step"] [«步骤 2](tutorial-step2.md)
+[步骤 4»](tutorial-step4.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

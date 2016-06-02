@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 9728c135-0e7f-4f5c-95ba-1db79e418080
-
+ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Android 安装程序
+# Android 安装程序
 
 Android 应用程序可以通过使用 Azure Active Directory Rights Management (AAD RM)，利用 Microsoft Rights Management SDK 4.2 在其应用中启用集成信息保护。
 
@@ -73,28 +72,28 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 -   打开 Eclipse 开发环境。
 -   若要创建新 Android 应用程序项目，请在 **“文件”** 菜单上，单击 **“新建”**，单击 **“项目”**，然后选择 **“Android 应用程序项目”**。
 
-    ![](../media/Android-setup-01c.png)
+    ![创建新的 Android 应用程序](../media/Android-setup-01c.png)
 
 -   输入应用程序名称。 项目名称和包名称根据应用程序名称进行填充。
 -   单击 **“下一步”**，然后选择要用于创建工作区的位置。
 
-    ![](../media/Android-setup-02a.jpg)
+    ![输入应用程序名称](../media/Android-setup-02a.jpg)
 
 -   单击 **“下一步”**，然后为应用选择图标。
 
-    ![](../media/Android-setup-03.png)
+    ![为应用选择图标](../media/Android-setup-03.png)
 
 -   单击 **“下一步”**，然后选择 **“空白活动”** 以创建活动。
 
-    ![](../media/Android-setup-04.png)
+    ![创建活动](../media/Android-setup-04.png)
 
 -   单击 **“下一步”** 并提供活动的名称。 可以将 *MainActivity* 保留为默认名称，并且布局名称为 *activity\_main*。
 
-    ![](../media/Android-setup-05a.jpg)
+    ![提供活动的名称](../media/Android-setup-05a.jpg)
 
 -   单击 **“完成”**。
 
-    ![](../media/Android-setup-06.jpg)
+    ![完成创建](../media/Android-setup-06.jpg)
 
 -   项目以及主活动类 *MainActivity.java* 已创建。
 
@@ -105,21 +104,21 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
     在 Eclipse 中，单击 **“文件”**。 在 **“文件”** 菜单上，单击 **“导入”**。 在 **“导入”** 对话框中，选择 **“Android/现有 Android 代码到工作区”**。
 
-    ![](../media/Android-setup-07.png)
+    ![将其导入到工作区](../media/Android-setup-07.png)
 
--   单击“下一步” ****。 导航以选择在其中提取 *adrms\_android\_sdk.zip* 的文件夹。 SDK 应作为 **com.microsoft.rightsmanagement** 显示在列表中。
+-   单击“下一步” 。 导航以选择在其中提取 *adrms\_android\_sdk.zip* 的文件夹。 SDK 应作为 **com.microsoft.rightsmanagement** 显示在列表中。
 
-    ![](../media/Android-setup-08c.jpg)
+    ![导航到“选择文件夹”](../media/Android-setup-08c.jpg)
 
 -   单击 **“完成”** 时，SDK 项目显示为以前创建的应用程序的同级。
 
-    ![](../media/Android-setup-09.jpg)
+    ![该 SDK 项目将显示为应用程序的同级](../media/Android-setup-09.jpg)
 
 -   右键单击 **“项目”** 图标并查看项目的属性。
 -   导航到 **“Android”** 选项卡。
 -   单击 **“添加”**，然后从工作区中选择 *com.microsoft.rightsmanagement* 库。
 
-    ![](../media/Android-setup-10b.jpg)
+    ![添加库](../media/Android-setup-10b.jpg)
 
 -   单击" **确定**"。
 
@@ -127,14 +126,14 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
     若要添加权限，请单击 **“添加”**，然后选择 **“使用权限”**。
 
-    ![](../media/Android-setup-11d.jpg)
+    ![添加权限](../media/Android-setup-11d.jpg)
 
 -   可以通过在文本编辑器视图中查看清单来验证清单步骤。 确保显示以下行：
 
 
     <uses-sdk
-         android:minSdkVersion="15"
-         android:targetSdkVersion="19"/>
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission/>
@@ -152,13 +151,13 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 [开发人员术语和概念](core-concepts.md)
 
-[Android API 参考](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement)
+[Android API 参考](android-namespaces.md)
 
  
 
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

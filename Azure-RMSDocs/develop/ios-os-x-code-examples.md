@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 705942bb-639d-4582-942e-0ec061843d48
-
+ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # iOS/OS X 代码示例
 
 本主题向你介绍 iOS/OS X 版 RMS SDK 的重要代码元素。
@@ -44,7 +42,7 @@ ms.suite: ems
 
 - **步骤 1**创建 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 对象
 
- **说明**：通过 create 方法实例化 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 对象，该方法使用 [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 实现服务身份验证，以便通过将 **MSAuthenticationCallback** 的实例作为参数 *authenticationCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码部分中对 [**protectedDataWithProtectedFile**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 的调用。
+ **说明**：通过 create 方法实例化 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 对象，该方法使用 [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 实现服务身份验证，以便通过将 **MSAuthenticationCallback** 的实例作为参数 *authenticationCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码部分中对 [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 的调用。
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -117,7 +115,7 @@ ms.suite: ems
 
 ### 方案：使用模板创建新的受保护文件
 
-此方案首先是获取模板列表 [**MSTemplateDescriptor**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc)，再选择第一个模板以创建策略，然后创建和写入新的受保护文件。
+此方案首先是获取模板列表 [**MSTemplateDescriptor**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc)，再选择第一个模板以创建策略，然后创建和写入新的受保护文件。
 
 -   **步骤 1**：获取模板列表
 
@@ -290,6 +288,6 @@ ms.suite: ems
 
  
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

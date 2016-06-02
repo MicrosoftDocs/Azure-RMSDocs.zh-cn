@@ -27,7 +27,10 @@ ms.reviewer: mbaldwin
 
 # 计划和设计 Azure Rights Management
 
+*适用于：Azure Rights Management、Office 365*
 
-<!--HONumber=Apr16_HO3-->
+
+
+<!--HONumber=Apr16_HO4-->
 
 

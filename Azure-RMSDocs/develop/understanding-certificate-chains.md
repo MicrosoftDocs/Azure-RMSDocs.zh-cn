@@ -2,7 +2,7 @@
 # required metadata
 
 title: 了解证书链 | Azure RMS
-description:
+description: 启用权限的应用程序需要公钥对以及回溯到信任根处的 Microsoft 证书的证书链
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 14694cb0-adc4-4c2f-aff5-22aa132777df
-
+ms.assetid: 6AEA2162-82BF-4867-9285-111CD3FCD2F6
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# 了解证书链
+# 了解证书链
 
 开发启用权限的应用程序需要公钥对以及回溯到信任根处的 Microsoft 证书的证书链。
 
@@ -49,7 +48,7 @@ ms.suite: ems
 
 有关使用证书链和应用程序签名的详细信息，请参阅[切换到生产环境](switching-to-the-production-environment.md)。
 
-### 相关主题
+## 相关主题
 
 * [开发人员概念](ad-rms-concepts-nav.md)
 * [切换到生产环境](switching-to-the-production-environment.md)
@@ -58,6 +57,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

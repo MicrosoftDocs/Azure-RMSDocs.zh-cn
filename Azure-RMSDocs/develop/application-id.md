@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 834c5943-a724-4322-9035-060c1112fe22
-
+ms.assetid: 0fe9dc-bc91-4018-b28d-2db293a3eaa2
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 如何：获取 Azure 应用程序 ID
 
 使用 Microsoft Rights Management SDK 4.2 创建启用 RMS 的应用需要与 RMS 团队创建协议。
@@ -39,14 +37,14 @@ ms.suite: ems
 使用以下步骤可创建应用 Id 并与 RMS 团队签署使用协议。
 
 -   请按照主题 [如何在 Azure 上创建应用 ID](https://msdn.microsoft.com/en-us/library/azure/dn132599.aspx) 中的指导创建应用 Id。
--   向 RMS 团队写信以启动 RMLA 过程，将“应用 ID”发送到 <askipteam@microsoft.com>。
+-   向 RMS 团队写信以启动 RMLA 过程，将“应用 ID”发送到 <askipteam@microsoft.com>.
 -   签署 RMLA 并将它返回给 RMS 团队。
 -   现在已签署了 RMLA，你应在调用身份验证库时通过 *clientID* 参数传递应用程序 ID。
 
     身份验证调用在 [iOS/OS X 代码示例](ios-os-x-code-examples.md) 主题中如下所示。
 
 
-    // Retrieve token using ADAL
+    // 使用 ADAL 检索令牌
         [context acquireTokenWithResource:authenticationParameters.resource
                                  clientId:appClientId
                               redirectUri:redirectURI
@@ -64,6 +62,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -1,32 +1,20 @@
 ---
-# required metadata
+# 必需元数据
 
-title: Azure RMS 快速入门教程 - 步骤 5 | Azure RMS
-description: 使用本教程的最后一步，可以快速试用适合你的组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。
-keywords:
-author: Cabailey
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
-ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
+标题：Azure RMS 快速入门教程 - 步骤 5 | Azure RMS 说明：使用本教程的最后一步，可以快速试用适合你的组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。
+keywords: author: cabailey manager: mbaldwin ms.date: 05/09/2016 ms.topic: get-started-article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
 
-# optional metadata
+# 可选元数据
 
-ROBOTS: 
-audience:
-ms.devlang:
-ms.reviewer: esaggese
-ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ROBOTS: audience: ms.devlang: ms.reviewer: esaggese ms.suite: ems ms.tgt_pltfrm: ms.technology: ms.custom:
 
 ---
 
 
 # Azure RMS 快速启动步骤 5：跟踪受保护文档
+
+*适用于：Azure Rights Management、Office 365*
+
 
 跳转到： 
 > [!div class="op_single_selector"]
@@ -37,7 +25,7 @@ ms.custom:
 - [步骤 4：收件人读取文档](tutorial-step4.md)
 - [步骤 5：跟踪你的文档](tutorial-step5.md)
 
-![](../media/AzRMS_QuickStartSteps5.PNG)
+![Azure RMS 快速入门教程步骤 5](../media/AzRMS_QuickStartSteps5.PNG)
 
 > [!NOTE]
 > 就此步骤来说，你必须有一个支持文档跟踪的订阅。 若要查看你的订阅是否包括文档跟踪，请参阅 [权限管理服务 (RMS) 各项功能的比较](https://technet.microsoft.com/dn858608.aspx)。
@@ -48,7 +36,7 @@ ms.custom:
 
 -   在看到有人打开了该文档后，你继续跟进，询问她是否有任何问题，或者是否需要其他信息。
 
-![](../media/AzRMS_Tutorial_5_Screenshots.png)
+![教程步骤 5 屏幕截图](../media/AzRMS_Tutorial_5_Screenshots.png)
 
 ### 跟踪受保护文档
 
@@ -56,7 +44,7 @@ ms.custom:
 
 2.  如果你看到 **“按你的方式保护和共享”** 页，请单击 **“登录”** ，然后再次提供用户名和密码。
 
-3.  在“你的共享文档”****页上，你会看到附加到电子邮件中的文档 **Confidential.docx**。 此时，该文档是唯一显示的文件，但当你共享更多的受保护文档时，此列表会扩大。
+3.  在“你的共享文档”页上，你会看到附加到电子邮件中的文档 **Confidential.docx**。 此时，该文档是唯一显示的文件，但当你共享更多的受保护文档时，此列表会扩大。
 
     在此页上，你会看到你何时共享了该文档（何时发送了带受保护附件的电子邮件）、上次活动的日期，以及你向其发送电子邮件的收件人的名称。 单击文档名可获取更多详细信息。
 
@@ -73,12 +61,13 @@ ms.custom:
 |有关疑难解答和客户方面的问题|[文档跟踪常见问题](https://technet.microsoft.com/dn947488)|
 
 ### 后续步骤
-本教程为你逐步演示了一个方案，即如果通过 Azure RMS 来帮助保护你的数据。 若要查看其他常见用法，请参阅 [Azure Rights Management 是什么？](../understand-explore/what-is-azure-rms.md)中的[运行中的 Azure RMS](../understand-explore/what-admins-users-see.md)。 你可能还会发现这篇文章中的其他部分也很有用，例如 Azure RMS 的工作原理以及它能够解决哪些业务问题。
+本教程为你逐步演示了一个方案，即如果通过 Azure RMS 来帮助保护你的数据。 若要查看其他常见用法，请参阅 [Azure Rights Management 是什么？](../understand-explore/what-is-azure-rms.md)中的[运行中的 Azure RMS](../understand-explore/what-admins-users-see.md) 你可能还会发现这篇文章中的其他部分也很有用，例如 Azure RMS 的工作原理以及它能够解决哪些业务问题。
 
 当你做好开始部署 Azure RMS 的准备时，请使用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md)获取部署步骤和操作说明链接。
 
->[!div class="step-by-step"]
-[简介](quick-start-tutorial.md)
+或参阅 [Azure Rights Management 快速部署指南](../get-started/rapid-deployment-guide.md)，查看特定方案和关联配置步骤的列表以及最终用户文档。
+
+>[!div class="step-by-step"][简介](quick-start-tutorial.md)
 [步骤 1](tutorial-step1.md)
 [步骤 2](tutorial-step2.md)
 [步骤 3](tutorial-step3.md)
@@ -86,6 +75,6 @@ ms.custom:
 *步骤 5*
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,6 +27,9 @@ ms.suite: ems
 
 # Azure RMS 要求：Azure AD Directory
 
+*适用于：Azure Rights Management、Office 365*
+
+
 你必须拥有 Azure AD 目录才能使用 Azure Rights Management (Azure RMS)。 你可以使用此目录的组织帐户登录 Azure 经典门户，并在该门户中进行 Rights Management 模板的配置和管理之类的操作。
 
 如果你还没有你组织的 Azure 订阅，则可以通过注册免费试用版来获取订阅：转到 [Azure 入门](https://account.windowsazure.com/organization)页并按照说明进行操作。
@@ -39,8 +42,7 @@ ms.suite: ems
 
 如果要将 Azure AD 目录与本地 AD 林相集成，请参阅[将本地标识与 Azure Active Directory 集成](/active-directory/active-directory-aadconnect)。
 
-> [!NOTE]
-> 如果你的移动设备或 Mac 计算机使用 AD FS 或等效的身份验证提供程序进行本地身份验证，则：
+> [!NOTE]如果你的移动设备或 Mac 计算机使用 AD FS 或等效的身份验证提供程序进行本地身份验证，则：
 > 
 > -   你必须在最低服务器版的 **Windows Server 2012 R2** 上使用 AD FS，或者使用支持 OAuth 2.0 协议的备用身份验证提供程序。
 
@@ -78,6 +80,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

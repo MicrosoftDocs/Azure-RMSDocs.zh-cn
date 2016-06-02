@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Microsoft Rights Management 共享应用程序技术概述
+
+*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+
 
 Microsoft Rights Management 共享应用程序是一个可选且可下载的适用于 Microsoft Windows 和其他平台的应用程序，它提供以下功能：
 
@@ -52,8 +55,8 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 |保护类型|本机|泛型|
 |----------------------|----------|-----------|
 |说明|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、.pdf 文件和其他支持 AD RMS 的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他所有应用程序和文件类型，常规保护提供了一种保护级别，该保护级别既包括使用 .pfile 文件类型的文件封装，又包括用于验证用户是否有权打开该文件的身份验证。|
-|保护|对文件进行完全加密，并采用以下方式强制执行保护：<br /><br />必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />此外，无论是使用 IP 查看器（适用于受保护的文本和图像文件）还是关联的应用程序（适用于其他所有受支持的文件类型）呈现内容，都会完全执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />必须在经授权可打开文件的用户或被授予访问权限的用户成功通过身份验证之后，才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />将出现授权用户打开和访问文件的审核日志记录，但是，不支持的应用程序不强制执行任何使用权限。|
-|文件类型默认值|这是以下文件类型的默认保护级别：<br /><br />文本和图像文件<br /><br />Microsoft Office（Word、Excel、PowerPoint）文件<br /><br />可移植文档格式 (.pdf)<br /><br />有关详细信息，请参阅以下部分：[支持的文件类型和文件扩展名](#supported-file-types-and-file-name-extensions)。|这是针对不受完整保护支持的其他所有文件类型（例如 .vsdx、.rtf 等）的默认保护。|
+|保护|对文件进行完全加密，并采用以下方式强制执行保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 IP 查看器（适用于受保护的文本和图像文件）还是关联的应用程序（适用于其他所有受支持的文件类型）呈现内容，都会完全执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的用户或被授予访问权限的用户成功通过身份验证之后，才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将出现授权用户打开和访问文件的审核日志记录，但是，不支持的应用程序不强制执行任何使用权限。|
+|文件类型默认值|这是以下文件类型的默认保护级别：<br /><br />- 文本和图像文件<br /><br />- Microsoft Office（Word、Excel、PowerPoint）文件<br /><br />- 可移植文档格式 (.pdf)<br /><br />有关详细信息，请参阅以下部分：[支持的文件类型和文件扩展名](#supported-file-types-and-file-name-extensions)。|这是针对不受完整保护支持的其他所有文件类型（例如 .vsdx、.rtf 等）的默认保护。|
 可以更改 RMS 共享应用程序所应用的默认保护级别。 可以将默认级别从本机更改为常规，从常规更改为本机，甚至可以禁止 RMS 共享应用程序应用保护。 有关详细信息，请参阅本文中的[更改文件的默认保护级别](#changing-the-default-protection-level-of-files)部分。
 
 ## 支持的文件类型和文件扩展名
@@ -63,8 +66,7 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
 对于以常规形式进行保护的文件，原始文件扩展名将始终更改为 .pfile。
 
-> [!WARNING]
-> 如果你拥有可根据文件扩展名检查并采取操作的防火墙、Web 代理或者安全软件，你可能需要重新配置它们以支持这些新的文件扩展名。
+> [!WARNING]如果你拥有可根据文件扩展名检查并采取操作的防火墙、Web 代理或者安全软件，你可能需要重新配置它们以支持这些新的文件扩展名。
 
 |原始文件扩展名|受 RMS 保护的文件扩展名|
 |--------------------------------|-------------------------------------|
@@ -107,11 +109,11 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
 若要将 RMS 共享应用程序配置为将常规保护应用于默认已应用本机保护的所有文件，请对注册表进行以下编辑：
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**：创建名为 **&#42;** 的新项。
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**：创建名为 * 的新项。
 
     此设置表示文件可具有任意文件扩展名。
 
-2.  在新添加的项 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\&#42;** 中，创建一个名为 **Encryption**、数据值为 **Pfile** 的新字符串值 (REG_SZ)。
+2.  在新添加的项 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\\* 中，创建一个名为 **Encryption**、数据值为 **Pfile** 的新字符串值 (REG_SZ)。
 
     此设置会导致 RMS 共享应用程序应用常规保护。
 
@@ -142,6 +144,6 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

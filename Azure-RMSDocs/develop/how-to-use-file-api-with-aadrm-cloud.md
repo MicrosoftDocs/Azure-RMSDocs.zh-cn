@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 1f726c6a-68a5-421f-8ed9-9cbb051c205b
-
+ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 使服务应用程序可以使用基于云的 RMS
 
 本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。 有关详细信息，请参阅 [Azure Rights Management 入门](https://technet.microsoft.com/en-us/library/jj585016.aspx)。
@@ -177,7 +175,7 @@ ms.suite: ems
 
 现在已完成使应用程序可以使用 Azure Rights Management 所需的步骤。
 
-### 相关主题
+## 相关主题
 
 * [开发人员概念](ad-rms-concepts-nav.md)
 * [Azure Rights Management 入门](https://technet.microsoft.com/en-us/library/jj585016.aspx)
@@ -199,6 +197,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

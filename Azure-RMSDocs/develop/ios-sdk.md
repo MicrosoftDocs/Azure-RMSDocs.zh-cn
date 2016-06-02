@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 23f64fc8-d0f3-49ee-8d8a-b34ef26878a7
-
+ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# iOS 和 OS X 安装程序
+# iOS 和 OS X 安装程序
 
 借助 Azure Active Directory Rights Management (AAD RM)，iOS 和 OS X 应用程序可使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
 
@@ -64,44 +63,44 @@ ms.suite: ems
 
 ## 配置开发环境
 
--   若要创建新项目，请在“文件”****上单击“新建”****，然后单击“项目”****。
--   选择“单视图应用程序”****。
+-   若要创建新项目，请在“文件”上单击“新建”，然后单击“项目”。
+-   选择“单视图应用程序”。
 
-    ![](../media/iOS-Project.png)
+    ![创建新项目](../media/iOS-Project.png)
 
 -   输入新项目的名称和标识符。
 
-    ![](../media/iOS-project-options.png)
+    ![为项目命名](../media/iOS-project-options.png)
 
--   单击“下一步”****，然后选择项目的位置。
--   若要添加面向 iOS 框架的 **MSRightsManagement** 框架，请将 SDK 安装文件夹中的 .framework 文件夹拖入“项目导航器”****的“框架”****部分。
+-   单击“下一步”，然后选择项目的位置。
+-   若要添加面向 iOS 框架的 **MSRightsManagement** 框架，请将 SDK 安装文件夹中的 .framework 文件夹拖入“项目导航器”的“框架”部分。
 
-    ![](../media/ios-add-dependencies-01a.png)
+    ![设置位置](../media/ios-add-dependencies-01a.png)
 
--   选择“为添加的所有文件夹创建组”****选项按钮，然后清除“将项目复制到目标组的文件夹(若必需)”****复选框。
+-   选择“为添加的所有文件夹创建组”选项按钮，然后清除“将项目复制到目标组的文件夹(若必需)”复选框。
 
     此操作将保留对 SDK 安装文件夹的引用，而不是创建副本。
 
-    ![](../media/iOS-create-groups.png)
+    ![设置对 SDK 安装文件夹的引用](../media/iOS-create-groups.png)
 
--   若要添加适用于资源包的 MS RMS SDK 4.2，请将 MSRightsManagement.framework/Resources 文件夹中的 MSRightsManagementResources.bundle 文件拖入“项目导航器”的“框架”****部分。
+-   若要添加适用于资源包的 MS RMS SDK 4.2，请将 MSRightsManagement.framework/Resources 文件夹中的 MSRightsManagementResources.bundle 文件拖入“项目导航器”的“框架”部分。
 
-    ![](../media/iOS-add-resource-bundle-02a.png)
+    ![添加资源包](../media/iOS-add-resource-bundle-02a.png)
 
--   按复制框架时的方式一样，选择“为添加的所有文件夹创建组”****选项按钮，然后清除“将项目复制到目标组的文件夹(若必需)”****复选框。
--   SDK 依赖于其他框架，包括：**CoreData****MessageUI****SystemConfiguration****Libresolv** 和 **Security**。 若要添加这些框架，请导航至目标的“摘要”****面板的“已链接框架和库”****部分，然后展开此部分以添加框架。
+-   按复制框架时的方式一样，选择“为添加的所有文件夹创建组”选项按钮，然后清除“将项目复制到目标组的文件夹(若必需)”复选框。
+-   SDK 依赖于其他框架，包括：**CoreData****MessageUI****SystemConfiguration****Libresolv** 和 **Security**。 若要添加这些框架，请导航至目标的“摘要”面板的“已链接框架和库”部分，然后展开此部分以添加框架。
 
     **UIKit** 和 **Foundation** 框架是必需的，且通常默认存在。
 
-    ![](../media/iOS-add-libraries.png)
+    ![添加资源](../media/iOS-add-libraries.png)
 
--   将 **-ObjC** 标记添加至目标“生成设置”****的“其他链接器标记”****中。
+-   将 **-ObjC** 标记添加至目标“生成设置”的“其他链接器标记”中。
 
-    ![](../media/iOS-linker-flags.png)
+    ![添加生成设置](../media/iOS-linker-flags.png)
 
--   现在你的“项目导航器”****看起来应类似此树。
+-   现在你的“项目导航器”看起来应类似此树。
 
-    ![](../media/iOS-verify-setup-01a.png)
+    ![新建项目](../media/iOS-verify-setup-01a.png)
 
 -   你现已准备就绪，可自行创建新的 iOS/OS X 应用。
 
@@ -123,6 +122,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

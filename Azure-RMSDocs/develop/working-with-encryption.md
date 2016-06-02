@@ -2,7 +2,7 @@
 # required metadata
 
 title: 使用加密 | Azure RMS
-description:
+description: 会将你定向到我们的加密包
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 088c98f9-f06e-4aae-8fac-bc7605e545f5
-
+ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# 使用加密
+# 使用加密
 
 本主题将针对加密包，并显示其使用的一些代码段。
 
@@ -107,6 +106,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

@@ -27,13 +27,16 @@ ms.suite: ems
 
 # BYOK 定价和限制
 
+*适用于：Azure Rights Management、Office 365*
+
+
 具有 IT 托管的 Azure 订阅的组织可以使用 BYOK 并记录其使用情况，而无需额外付费。 使用个人 RMS 的组织无法使用 BYOK 和日志记录，因为他们没有租户管理员来配置这些功能。
 
 
 > [!NOTE]
-> 有关个人 RMS 的详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
+> 有关个人 RMS 的详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
-![](../media/RMS_BYOK_noExchange.png)
+![BYOK 不支持 Exchange Online](../media/RMS_BYOK_noExchange.png)
 
 BYOK 和日志记录可以无缝应用程序于任何与 Azure RMS 集成的应用程序。 其中包括 SharePoint Online 等云服务、运行 Exchange 和 SharePoint 的本地服务器（它们通过使用 RMS 连接器来运行 Azure RMS）、Office 2013 等客户端应用程序。 无论哪个应用程序请求 Azure RMS，你都将获得密钥使用日志。
 
@@ -57,12 +60,12 @@ BYOK 和日志记录可以无缝应用程序于任何与 Azure RMS 集成的应�
 
 ## 后续步骤
 
-如果你已决定管理自己的密钥，转至[实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key)。
+如果你已决定管理自己的密钥，转至[实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key).
 
 如果你已决定保留默认配置，让 Microsoft 管理你的租户密钥，请参阅“计划和实现你的 Azure Rights Management 租户密钥”文章中的[后续步骤](plan-implement-tenant-key.md#next-steps)。
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

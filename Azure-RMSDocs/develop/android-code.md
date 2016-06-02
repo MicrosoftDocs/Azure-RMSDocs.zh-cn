@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: afe062d5-a507-45e5-a4ec-613f9c46772e
-
+ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Android 代码示例
 
 本主题向你介绍 Android 版本的 RMS SDK 的重要代码元素。
@@ -43,11 +41,11 @@ ms.suite: ems
 
 ### 方案：使用受 RMS 保护的文件
 
--   **步骤 1**：创建 [**ProtectedFileInputStream**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java)
+-   **步骤 1**：创建 [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java)
 
     **源**：*MsipcAuthenticationCallback.java*
 
-    **说明**：通过 create 方法实例化 [**ProtectedFileInputStream**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) 对象，该方法使用 [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 实现服务身份验证，以便通过将 **AuthenticationRequestCallback** 的实例作为参数 *mRmsAuthCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码节结尾附近的 [**ProtectedFileInputStream.create**](/rights-management/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_method) 调用。
+    **说明**：通过 create 方法实例化 [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) 对象，该方法使用 [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 实现服务身份验证，以便通过将 **AuthenticationRequestCallback** 的实例作为参数 *mRmsAuthCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码节结尾附近的 [**ProtectedFileInputStream.create**](/rights-management/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_method) 调用。
 
         public void startContentConsumptionFromPtxtFileFormat(InputStream inputStream)
         {
@@ -534,7 +532,7 @@ ms.suite: ems
 
     **源**：*MsipcTaskFragment.java*
 
-    **说明**：实际上，会使用来自设备接口的用户输入创建以下对象；[**UserRights**](/rights-management/sdk/4.2/api/android/userrights#msipcthin2_userrights_class_java) 和 [**PolicyDescriptor**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java)。
+    **说明**：实际上，会使用来自设备接口的用户输入创建以下对象；[**UserRights**](/rights-management/sdk/4.2/api/android/userrights#msipcthin2_userrights_class_java) 和 [**PolicyDescriptor**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java)。
 
 
 
@@ -639,6 +637,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

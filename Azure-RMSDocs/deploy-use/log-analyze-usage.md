@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 记录和分析 Azure Rights Management 使用情况
+
+*适用于：Azure Rights Management、Office 365*
+
 本主题中的信息可用于帮助你了解如何使用 Azure Rights Management (Azure RMS) 的使用日志记录功能。 Azure Rights Management 服务能够记录它为你组织发出的所有请求，包括来自用户的请求、你组织中的 Rights Management 管理员执行的操作、Microsoft 操作人员为支持 Azure Rights Management 部署而执行的操作。
 
 然后，你可以使用这些 Azure Rights Management 日志来支持以下业务方案：
@@ -44,18 +47,16 @@ ms.suite: ems
 
     如果遇到信息泄露，安全人员很可能向你询问最近谁访问了特定文档，以及可疑人员最近访问了哪些信息。 当你使用 Azure Rights Management 和日志记录时，你就能够回答这些类型的问题，因为使用受保护内容的用户始终必须获取 Rights Management 许可证才能打开受 Azure Rights Management 保护的文档和图片，即便这些文件已移动（通过电子邮件）或复制到 U 盘/其他存储设备也是如此。 这意味着在通过 Azure Rights Management 保护数据时，你能够使用 Azure Rights Management 日志作为确定性信息源进行取证分析。
 
-> [!NOTE]
-> 如果你只希望记录 Azure Rights Management 的管理任务，而不希望跟踪用户如何使用 Rights Management，则可使用适用于 Azure Rights Management 的 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet。
+> [!NOTE]如果你只希望记录 Azure Rights Management 的管理任务，而不希望跟踪用户如何使用 Rights Management，则可使用适用于 Azure Rights Management 的 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet。
 > 
-> 你还可以使用 Azure 经典门户获取高级使用情况报告，包括“RMS 摘要”、“RMS 活动用户”、“RMS 设备平台”和“RMS 应用程序使用情况”****************。 若要从 Azure 经典门户访问这些报告，请单击“Active Directory”，选择并打开一个目录，然后单击“报告”********。
+> 你还可以使用 Azure 经典门户获取高级使用情况报告，包括“RMS 摘要”、“RMS 活动用户”、“RMS 设备平台”和“RMS 应用程序使用情况”。 若要从 Azure 经典门户访问这些报告，请单击“Active Directory”，选择并打开一个目录，然后单击“报告”。
 
 有关 Azure Rights Management 使用日志记录的详细信息，请参阅以下部分。
 
 ## 如何启用 Azure Rights Management 使用日志记录
 从 2016 年 2 月开始，Azure Rights Management 使用日志记录功能默认为对所有用户启用。 这适用于在 2016 年 2 月以前已激活其 Azure RMS 服务的客户和在 2016 年 2 月后激活该服务的客户。 
 
-> [!NOTE]
-> 不针对日志存储或日志记录功能收取额外的费用。
+> [!NOTE]不针对日志存储或日志记录功能收取额外的费用。
 > 
 > 如果你在 2016 年 2 月以前使用 Azure RMS 的使用日志记录，你需要在 Azure 上拥有订阅和足够的存储空间，而现在不再需要如此。
 
@@ -70,7 +71,7 @@ Azure Rights Management 将日志作为一系列 Blob 写入你的 Azure 存储�
 
 ### 使用 PowerShell 下载使用日志
 
-1.  使用“以管理员身份运行”****选项启动 Windows PowerShell，然后使用 [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) cmdlet 连接到 Azure Rights Management 服务：
+1.  使用“以管理员身份运行”选项启动 Windows PowerShell，然后使用 [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) cmdlet 连接到 Azure Rights Management 服务：
 
     ```
     Connect-AadrmService
@@ -151,7 +152,7 @@ Azure Rights Management 将日志作为一系列 Blob 写入。
 |owner-email|String|文档所有者的电子邮件地址。|alice@contoso.com|
 |issuer|String|文档发布者的电子邮件地址。|alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
 |Template-id|String|用于保护文档的模板的 ID。|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|File-name|String|已保护的文档的文件名。|TopSecretDocument.docx|
+|File-name|String|已保护的文档的文件名。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。|TopSecretDocument.docx|
 |Date-published|日期|保护文档时的日期。|2015-10-15T21:37:00|
 |c-info|String|有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Address|发出请求的客户端的 IP 地址。|64.51.202.144|
@@ -161,7 +162,7 @@ Azure Rights Management 将日志作为一系列 Blob 写入。
 
 -   值 **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**。
 
-    它指示 Office 365 服务（例如 Exchange Online 或 Sharepoint Online）正在发出请求。 在字符串中， *&lt;YourTenantID&gt;* 是你租户的 GUID， *&lt;region&gt;* 是你租户注册的区域。 例如， **na** 代表北美， **eu** 代表欧洲， **ap** 代表亚洲。
+    它指示 Office 365 服务（例如 Exchange Online 或 Sharepoint Online）正在发出请求。 在此字符串中，*&lt;YourTenantID&gt;* 是你租户的 GUID，*&lt;region&gt;* 是你租户注册的区域。 例如， **na** 代表北美， **eu** 代表欧洲， **ap** 代表亚洲。
 
 -   如果你使用 RMS 连接器。
 
@@ -228,6 +229,6 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

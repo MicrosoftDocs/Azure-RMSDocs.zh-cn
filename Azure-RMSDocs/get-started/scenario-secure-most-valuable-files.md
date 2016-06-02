@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 方案 - 保护你最重要的（几个）文件
+
+*适用于：Azure Rights Management、Office 365*
+
 此方案和支持性的用户文档使用 Azure Rights Management 手动并自定义保护你已标识为最重要的几个文件，这保证了对文件提供最高级别的保护以阻止未经授权的访问。 通常只有少数人可以访问这些文件。 例如，公司招牌食物产品的食谱说明，或者在指定日期前不允许公开的收购计划。
 
 这些指令适用于下面一组情况：
@@ -43,7 +46,7 @@ ms.suite: ems
 -   管理员必须能够跟踪访问文件的人员和访问时间，如有必要，还需撤销访问权限。
 
 ## 部署说明
-![](../media/AzRMS_AdminBanner.png)
+![Azure RMS 快速部署的管理员指令](../media/AzRMS_AdminBanner.png)
 
 请确保已满足以下要求，然后在进入到用户文档环节前按照支持过程的说明进行操作。
 
@@ -52,7 +55,7 @@ ms.suite: ems
 
 |要求|需要更多信息|
 |---------------|--------------------------------|
-|已准备好 Office 365 或 Azure Active Directory 的帐户和组：<br /><br />一个名为**特别访问权**并已启用邮件的组，其中的成员应有权访问这些高度机密的文档<br /><br />一个名为 **IT 合规性管理员**并已启用邮件的组，其中包含负责电子发现、监视和审核的管理人员<br /><br />一个名为 **RMS 管理员**的启用邮件的组，将配置 Azure RMS 的所有管理员均为此组的成员|[准备 Azure 权限管理](https://technet.microsoft.com/library/jj585029.aspx)|
+|已准备好 Office 365 或 Azure Active Directory 的帐户和组：<br /><br />- 一个名为**特别访问权**并已启用邮件的组，其中的成员应有权访问这些高度机密的文档<br /><br />- 一个名为 **IT 合规性管理员**并已启用邮件的组，其中包含负责电子发现、监视和审核的管理人员<br /><br />- 一个名为 **RMS 管理员**的启用邮件的组，将配置 Azure RMS 的所有管理员均为此组的成员|[准备 Azure 权限管理](https://technet.microsoft.com/library/jj585029.aspx)|
 |已激活 Azure Rights Management|[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)|
 |已按下文所述配置了自定义模板|[为 Azure Rights Management 配置自定义模板](https://technet.microsoft.com/library/dn642472.aspx)|
 |将 Rights Management 共享应用程序部署到 Windows 计算机中，以便你就地保护这些文件，如下一部分所述|[下载和安装 Rights Management 共享应用程序](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
@@ -81,22 +84,21 @@ ms.suite: ems
 
     -   如只需保护文件夹中的部分文件，则选择多个要保护的文件。
 
-2.  右键单击该文件，选择“使用 RMS 保护”****，然后选择“就地保护”****。
+2.  右键单击该文件，选择“使用 RMS 保护”，然后选择“就地保护”。
 
-3.  选择“特别访问权”****。
+3.  选择“特别访问权”。
 
-4.  系统可能会提示你输入凭据。 等待完成对所有文件的保护，然后在看到“文件已受保护”****页面时单击“关闭”****。
+4.  系统可能会提示你输入凭据。 等待完成对所有文件的保护，然后在看到“文件已受保护”页面时单击“关闭”。
 
 5.  如果其他文件夹中还有要保护的文件，请对每个文件夹重复以上步骤 1 到 4。
 
 有关就地保护文件的详细信息，请参阅[使用 Rights Management 共享应用程序保护设备上的文件（就地保护）](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx)
 
-> [!TIP]
-> 如果此手动过程要保护的文件数过多，可以考虑使用 [RMS 保护工具](https://www.microsoft.com/en-us/download/details.aspx?id=47256)借助模板批量保护文件。
+> [!TIP]如果此手动过程要保护的文件数过多，可以考虑使用 [RMS 保护工具](https://www.microsoft.com/en-us/download/details.aspx?id=47256)借助模板批量保护文件。
 
 ### 监视并根据需要撤消对文件的访问权限
 
-1.  在文件资源管理器中，右键单击受保护文件，选择“使用 RMS 保护”****，然后选择“跟踪使用情况”****。
+1.  在文件资源管理器中，右键单击受保护文件，选择“使用 RMS 保护”，然后选择“跟踪使用情况”。
 
 2.  如有提示，请登录以访问文档跟踪站点。
 
@@ -115,7 +117,7 @@ ms.suite: ems
 
 示例文档演示了在你完成自定义后，用户看到此公告的可能形式。
 
-![](../media/AzRMS_UsersBanner.png)
+![Azure RMS 快速部署的用户文档模板](../media/AzRMS_UsersBanner.png)
 
 ### IT 公告：保护&lt;组织名称&gt;的顶级机密文档
 已对以下文件应用了极高的保护级别，因此只有&lt;受限制的用户&gt;才能访问和更改这些文件。 为了防止未经授权的访问，每次打开这些文件时应用程序都会自动请求授权，因此现在必须将其连接到 Internet，系统可能还会提示你输入凭据：
@@ -128,10 +130,10 @@ ms.suite: ems
 
 **需要帮助吗?**
 
--   如果无法访问这些文件或者如果发现这些文件中存在可疑更改，请&lt;操作和联系人详细信息&gt;。
+-   如果无法访问这些文件或者如果发现文件&lt;操作和联系人详细信息&gt;中存在可疑更改。
 
 #### 自定义用户文档示例
-![](../media/AzRMS_ExampleBanner.png)
+![Azure RMS 快速部署的用户文档示例](../media/AzRMS_ExampleBanner.png)
 
 ##### IT 公告：保护 VanArsdel 的顶级机密文档
 已对以下文件应用了极高的保护级别，以便只有此电子邮件的收件人才能访问和更改这些文件。 为了防止未经授权的访问，每次打开这些文件时应用程序都会自动请求授权，因此现在必须连接到 Internet 才能打开这些文件，系统可能还会提示你输入凭据：
@@ -150,6 +152,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

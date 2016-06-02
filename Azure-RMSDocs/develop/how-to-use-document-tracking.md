@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: d193afec-6dc5-477d-8e67-f820a97480ff
-
+ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 如何：使用文档跟踪
 
 使用文档跟踪功能需要对管理关联元数据以及向服务注册有一些简单了解。
@@ -54,7 +52,7 @@ ms.suite: ems
 
     -   对于基于临时的文档跟踪，对 **策略描述符** 对象设置 **许可证元数据** 属性。
 
-        有关详细信息，请参阅 [**PolicyDescriptor.getLicenseMetadata**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java)、[**PolicyDescriptor.setLicenseMetadata**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_setlicensemetadata_java) 和 [**MSPolicyDescriptor.licenseMetadata**](/rights-management/sdk/4.2/api/iOS/mspolicydescriptor#msipcthin2_mspolicydescriptor_licensemetadata_property_objc)。
+        有关详细信息，请参阅 [**PolicyDescriptor.getLicenseMetadata**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java)、[**PolicyDescriptor.setLicenseMetadata**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_setlicensemetadata_java) 和 [**MSPolicyDescriptor.licenseMetadata**](/rights-management/sdk/4.2/api/iOS/mspolicydescriptor#msipcthin2_mspolicydescriptor_licensemetadata_property_objc)。
 
     **注意**  许可证元数据对象只能在针对给定用户策略设置文档跟踪的过程中直接访问。 创建用户策略对象之后，便无法访问关联许可证元数据，即更改许可证元数据的值会不起作用。
 
@@ -72,6 +70,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

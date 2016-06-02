@@ -28,7 +28,10 @@ ms.suite: ems
 
 # 迁移阶段 3 - 支持服务配置
 
-使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 3。 这些过程涉及[从 AD RMS 迁移到 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 中的步骤 6-7。
+*适用于：Active Directory Rights Management Services、Azure Rights Management*
+
+
+使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 3。 这些过程涉及[从 AD RMS 迁移到 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 中的步骤 6-7.
 
 
 ## 步骤 6. 为 Exchange Online 配置 IRM 集成
@@ -49,7 +52,7 @@ ms.suite: ems
 此步骤的最后一步，如果你已将多个用于保护电子邮件的 TPD 导入到 Azure RMS ，则必须手动编辑 Exchange Server 计算机上的注册表，将所有 TPD URL 重定向到 RMS 连接器。
 
 > [!NOTE]
-> 在开始之前，请从[支持 Azure RMS 的本地服务器](../get-started/requirements-servers.md)中核实 Azure RMS 所支持的本地服务器的版本。
+> 在开始之前，请从[支持 Azure RMS 的本地服务器](../get-started/requirements-servers.md)中核实 Azure RMS 所支持的本地服务器的版本.
 
 ### 在 Exchange 服务器上禁用 IRM 并删除 AD RMS 配置
 
@@ -79,19 +82,19 @@ ms.suite: ems
     Set-IRMConfiguration -RefreshServerCertificates
     ```
 
-6.  现在，在每个 Exchange Server 上重置 IIS，例如通过以管理员身份运行命令提示符并键入 **iisreset**。
+6.  现在，在每个 Exchange Server 上重置 IIS，例如通过以管理员身份运行命令提示符并键入 **iisreset**.
 
 ### 在 SharePoint 服务器上禁用 IRM 并删除 AD RMS 配置
 
 1.  请确保没有文档从 RMS 保护的库中签出。 如果有，这些文档将在此过程结束时变为不可访问。
 
-2.  在 SharePoint 管理中心网站的“快速启动”****部分中，单击“安全性”****。
+2.  在 SharePoint 管理中心网站的**快速启动**部分中，单击**安全性**.
 
-3.  在“安全性”****页的“信息策略”****部分中，单击“配置信息权限管理”****。
+3.  在**安全性**页的**信息策略**部分中，单击**配置信息权限管理**.
 
-4.  在“信息权限管理”****页的“信息权限管理”****部分中，选择“不在此服务器上使用 IRM”****，然后单击“确定”****。
+4.  在**信息权限管理**页的**信息权限管理**部分中，选择**不在此服务器上使用 IRM**，然后单击**确定**.
 
-5.  在每台 SharePoint Server 计算机上，删除文件夹 \ProgramData\Microsoft\MSIPC\Server\*&lt;SID of the account running SharePoint Server&gt;* 的内容。
+5.  在每台 SharePoint Server 计算机上，删除运行 SharePoint Server 的帐户的文件夹“\ProgramData\Microsoft\MSIPC\Server\*&lt;SID”的内容&gt;*.
 
 #### 安装并配置 RMS 连接器
 
@@ -103,7 +106,7 @@ ms.suite: ems
 
     进行这些注册表编辑时，请使用以下说明：
 
-    -   将 *ConnectorFQDN* 替换为你在 DNS 中为连接器定义的名称。 例如 **rmsconnector.contoso.com**。
+    -   将 *ConnectorFQDN* 替换为你在 DNS 中为连接器定义的名称。 例如 **rmsconnector.contoso.com**.
 
     -   对连接器 URL 使用 HTTP 或 HTTPS 前缀，具体取决于你已将连接器配置为使用 HTTP 还是使用 HTTPS 与本地服务器通信。
 
@@ -213,11 +216,11 @@ https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
 
 ---
 
-完成这些过程之后，请务必阅读[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)文章中的“后续步骤”****部分。
+完成这些过程之后，请务必阅读[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)文章中的“后续步骤”部分。
 
 ## 后续步骤
-若要继续迁移，请转到[阶段 4 - 迁移后任务](migrate-from-ad-rms-phase4.md)。
+若要继续迁移，请转到[阶段 4 - 迁移后任务](migrate-from-ad-rms-phase4.md).
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

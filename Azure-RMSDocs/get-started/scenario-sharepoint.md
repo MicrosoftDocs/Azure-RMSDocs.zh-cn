@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 方案 - 保留对 SharePoint 中所存储文档的控制
+
+*适用于：Azure Rights Management、Office 365*
+
 此方案和支持性的用户文档使用 Azure Rights Management 来确保存储在 SharePoint 中的 Office 文档通过使用受保护的库仍在你的控制之中。 例如，文档会自动防范由用户意外或有意泄露，并且即使在下载或同步后，你也可以阻止对内容的访问。 你想要保护的文件可能是用于在设计文档或计划上进行内部协作的，或者是用于其他交付的。 为 SharePoint 配置受保护的库时，存储在其中的 Office 文件将受 Azure Rights Management 的保护。
 
 这些指令适用于下面一组情况：
@@ -37,7 +40,7 @@ ms.suite: ems
 -   员工不需要与组织外部的人员共享这些文档。
 
 ## 部署说明
-![](../media/AzRMS_AdminBanner.png)
+![Azure RMS 快速部署的管理员指令](../media/AzRMS_AdminBanner.png)
 
 在进入到用户文档环节前，请确保已满足以下要求并完成了以下支持流程。
 
@@ -54,7 +57,7 @@ ms.suite: ems
 
 ### 为 IRM 设置配置 SharePoint 库
 
-1.  配置了 SharePoint 以使用 IRM 服务后，请导航到 SharePoint 库以使用 Azure RMS 进行保护。 在此站点的“设置”****&gt;“信息权限管理 (IRM)”****页中，除了选择“下载时限制对此库的权限”****和为管理员指定策略标题、为用户指定策略说明外，还需单击“显示选项”****。
+1.  配置了 SharePoint 以使用 IRM 服务后，请导航到 SharePoint 库以使用 Azure RMS 进行保护。 在此站点的**设置** &gt; **信息权限管理 (IRM)** 页中，选择**限制对此库的下载权限**，为管理员指定策略标题、为用户指定策略说明外，并单击**显示选项**。
 
 2.  选择以下项：
 
@@ -73,16 +76,16 @@ ms.suite: ems
 
 2.  如果配置了**允许组保护。默认组**选项，将*&lt;组名&gt;*替换为已配置的组的名称并提供&lt;此组具有可对文件进行协作处理的访问权限但不是通过使用 SharePoint 库实现的原因&gt;的原因。 如果未配置此选项，请删除此语句。
 
-3.  将 *&lt;contact details&gt;* 替换为有关用户如何与技术支持联系的说明，例如网站链接、电子邮件地址或电话号码。
+3.  将*&lt;联系人详细信息&gt;*替换为有关用户如何与技术支持联系的说明，例如网站链接、电子邮件地址或电话号码。
 
 4.  对该公告进行其他任何所需的修改，然后将其发送给这些用户。
 
 示例文档演示了在你完成自定义后，用户看到此公告的可能形式。
 
-![](../media/AzRMS_UsersBanner.png)
+![Azure RMS 快速部署的用户文档模板](../media/AzRMS_UsersBanner.png)
 
 ### IT 公告：对 &lt;SharePoint 库的名称&gt;站点的更改
-SharePoint 站点，**&lt;SharePoint 库的名称&gt;**现已进行了安全协作配置。 现在，只有&lt;组名&gt;的成员可以从此站点打开这些文档，即使将这些文档保存在本地或通过电子邮件发送给其他人也是如此。 例外情况是，你可以在下载了这些文档后将其共享给&lt;组名&gt;的成员，以便&lt;此组具有可对文件进行协作处理的访问权限但不是通过使用 SharePoint 库实现的原因&gt;。 当你编辑这些文件时，你会在文档顶部看到黄色信息横幅，让你知道它已受到此保护以及谁可以访问它们。
+SharePoint 站点 **&lt;SharePoint 库的名称&gt;**现已进行了安全协作配置。 现在，只有&lt;组名&gt;的成员可以从此站点打开这些文档，即使将这些文档保存在本地或通过电子邮件发送给其他人也是如此。 例外情况是，你可以在下载了这些文档后将其共享给&lt;组名&gt;的成员，以便&lt;此组具有可对文件进行协作处理的访问权限但不是通过使用 SharePoint 库实现的原因&gt;。 当你编辑这些文件时，你会在文档顶部看到黄色信息横幅，让你知道它已受到此保护以及谁可以访问它们。
 
 此更改有助于确保我们的公司机密数据安全，而不会让不应看到它的人读取。 如果你使用移动设备访问这些受保护的文档，你可以查看它们，但你必须使用桌面设备才能编辑它们。
 
@@ -90,10 +93,10 @@ SharePoint 站点，**&lt;SharePoint 库的名称&gt;**现已进行了安全协�
 
 **需要帮助吗?**
 
--   与技术支持联系：&lt;contact details&gt;
+-   与技术支持联系：&lt;联系人详细信息&gt;
 
 ### 示例用户文档
-![](../media/AzRMS_ExampleBanner.png)
+![Azure RMS 快速部署的用户文档示例](../media/AzRMS_ExampleBanner.png)
 
 #### IT 公告：对“销售预测和报告”站点的更改
 SharePoint 站点 **销售预测和报告**现已进行了安全协作配置。 现在，只有销售和营销团队的成员可以从此站点打开这些文档，即使你将这些文档保存在本地或通过电子邮件发送给其他人，也是如此。 例外情况是，你可以在下载这些文档后与财务团队的成员共享这些文档，以便他们可以提取每月预测数字。 当你编辑这些文件时，你会在文档顶部看到黄色信息横幅，让你知道它已受到此保护以及谁可以访问它们。
@@ -108,6 +111,6 @@ SharePoint 站点 **销售预测和报告**现已进行了安全协作配置。 
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

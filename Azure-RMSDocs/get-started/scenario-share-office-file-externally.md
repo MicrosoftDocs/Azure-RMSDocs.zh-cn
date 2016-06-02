@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 方案 - 与另一组织中的用户共享 Office 文件
+
+*适用于：Azure Rights Management、Office 365*
+
 此方案和支持性的用户文档使用 Azure Rights Management，以便用户可以安全地通过电子邮件将 Office 文件发送给另一组织中的用户。 例如，Office 文件可能是 Word 文档、Excel 电子表格或 PowerPoint 演示文稿，其中包含合作伙伴的价目表信息、分销商的产品列表，或潜在客户的交货时间行列表。 如果用户遵照了指令，电子邮件中附加的文件将受 Azure Rights Management 保护。
 
 此方案适用于下面一组情况：
@@ -39,7 +42,7 @@ ms.suite: ems
 -   员工可能想要了解外部用户打开此文档的时间。
 
 ## 部署说明
-![](../media/AzRMS_AdminBanner.png)
+![Azure RMS 快速部署的管理员指令](../media/AzRMS_AdminBanner.png)
 
 在进入用户文档前，请确保已满足以下要求。
 
@@ -57,52 +60,51 @@ ms.suite: ems
 ## 用户文档说明
 使用以下模板，将此用户说明复制并粘贴到最终用户的通信中，并进行这些修改以反映你的环境：
 
-1.  将 *&lt;Office 文档类型&gt;*替换为用户将要发送的文档类型。 使用他们的工作流常用的具体词语，例如“价目表”、“交货时间”和“竞标提案”，而不要使用“Word 文档”和“Excel 电子表格”。 此更具体的用词有助于增加用户使用这些文档时遵循该说明的可能性。
+1.  将 *&lt;Office 文档类型的名称&gt;*替换为用户将要发送的文档类型。 使用他们的工作流常用的具体词语，例如“价目表”、“交货时间”和“竞标提案”，而不要使用“Word 文档”和“Excel 电子表格”。 此更具体的用词有助于增加用户使用这些文档时遵循该说明的可能性。
 
-2.  将 *&lt;contact details&gt;* 替换为有关用户如何与技术支持联系的说明，例如网站链接、电子邮件地址或电话号码。
+2.  将*&lt;联系人详细信息&gt;*替换为有关用户如何与技术支持联系的说明，例如网站链接、电子邮件地址或电话号码。
 
 3.  **你可能想要进行的其他修改：**
 
-    -   在步骤 2 中，建议你为权限选择“查看者 - 仅查看”****，以便收件人只能阅读附加的文档（但不是原始文档）。 如果此限制不适用于你的业务要求，请为另一组权限更改此选项，例如“审阅者 - 查看和编辑”****。
+    -   在步骤 2 中，建议你为权限选择“查看者 - 仅查看”，以便收件人只能阅读附加的文档（但不是原始文档）。 如果此限制不适用于你的业务要求，请为另一组权限更改此选项，例如“审阅者 - 查看和编辑”。
 
-    -   在步骤 3 中，我们建议选择“允许我立即撤消对这些文档的访问权限”，这样，如果用户以后撤消了文档，则不会出现延迟，但设置此选项要求收件人始终连接到 Internet 来打开附件 **** 。 此步骤还要求你具有支持文档跟踪和撤消的订阅。 如果此步骤不适用于你的用户，请删除此步骤。
+    -   在步骤 3 中，我们建议选择“允许我立即撤消对这些文档的访问权限”，这样，如果用户以后撤消了文档，则不会出现延迟，但设置此选项要求收件人始终连接到 Internet 来打开附件  。 此步骤还要求你具有支持文档跟踪和撤消的订阅。 如果此步骤不适用于你的用户，请删除此步骤。
 
-    -   在步骤 4 中，我们建议使用选项“当有人尝试打开此文档时，给我发电子邮件” ****。 如果用户使用文档跟踪门户跟踪其文档，则可以确定，电子邮件通知是不必要的，因此可以删除此步骤。
+    -   在步骤 4 中，我们建议使用选项“当有人尝试打开此文档时，给我发电子邮件” 。 如果用户使用文档跟踪门户跟踪其文档，则可以确定，电子邮件通知是不必要的，因此可以删除此步骤。
 
     -   这些步骤不包括设置过期日期。 如果不得在指定日期后使用此信息，请添加另一个步骤来设置相应的过期时间，例如从发送电子邮件算起的 90 天。
 
-    > [!NOTE]
-    > 有关用户可以选择的每个选项的详细信息，请参阅 [Rights Management 共享应用程序的对话框选项](https://technet.microsoft.com/library/dn574738.aspx)
+    > [!NOTE]有关用户可以选择的每个选项的详细信息，请参阅 [Rights Management 共享应用程序的对话框选项](https://technet.microsoft.com/library/dn574738.aspx)
 
 4.  对此组说明进行其他任何所需的修改，然后将其发送给这些用户。
 
 示例文档演示了在你完成自定义后，用户看到这些说明的可能形式。
 
-![](../media/AzRMS_UsersBanner.png)
+![Azure RMS 快速部署的用户文档模板](../media/AzRMS_UsersBanner.png)
 
-### 如何共享 &lt;Office 文档类型的名称&gt;
+### 如何共享&lt;Office 文档类型的名称&gt;
 
-1.  创建电子邮件：指定一个或多个电子邮件地址，键入消息，然后将 *&lt;Office 文档类型的名称&gt;* 附加到电子邮件。 然后，在“消息”****选项卡上的“RMS”****组中，单击“共享保护项”****，然后再次单击“共享保护项”****：
+1.  创建电子邮件：指定一个或多个电子邮件地址，键入消息，然后将 *&lt;Office 文档类型的名称&gt;*附加到电子邮件。 然后，在“消息”选项卡上的“RMS”组中，单击“共享保护项”，然后再次单击“共享保护项”：
 
-    ![](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
+    ![屏幕截图：如何使用 Outlook 共享 Office 文档](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
 
-2.  在“共享保护内容”****对话框中，选择“查看者 - 仅查看”****：
+2.  在“共享保护内容”对话框中，选择“查看者 - 仅查看”：
 
-    ![](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
+    ![“共享保护内容”对话框 - 查看器 - 仅查看](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
 
-3.  选择“允许我立即撤消对这些文档的访问权限” ****：
+3.  选择“允许我立即撤消对这些文档的访问权限” ：
 
-    ![](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
+    ![“共享保护内容”对话框 - 立即撤消](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
 
-4.  选择“当有人尝试打开此文档时，给我发电子邮件” ****：
+4.  选择“当有人尝试打开此文档时，给我发电子邮件” ：
 
-    ![](../media/AzRMS_SharedProtected_EmailMe.PNG)
+    ![“共享保护内容”对话框 - 向我发送电子邮件](../media/AzRMS_SharedProtected_EmailMe.PNG)
 
 5.  单击 **“立即发送”**。
 
-当“收件人”****、“抄送”****或“密件抄送”****行中的某人收到这封电子邮件时，他们将看到一条消息，其中说明了如何阅读附加的 *&lt;Office 文档类型的名称&gt;*。 他们可以在多种设备上阅读该文档。这些设备包括 ipad、iphone、Android 平板电脑和手机、Mac 计算机以及 Windows 计算机。
+当**收件人**、**抄送**或**密件抄送**行中的某人收到这封电子邮件时，他们将看到一条消息，其中说明了如何阅读附加的 *&lt;Office 文档类型的名称&gt;*。 他们可以在多种设备上阅读该文档。这些设备包括 ipad、iphone、Android 平板电脑和手机、Mac 计算机以及 Windows 计算机。
 
-使用 [文档跟踪门户](https://track.azurerms.com/) 跟踪他们是否打开以及何时打开了附加的 &lt;Office 文档类型的名称&gt;。 在看到他们打开 &lt;Office 文档类型的名称&gt;后，建议立即向他们拨打跟进电话。
+使用[文档跟踪门户](https://track.azurerms.com/)跟踪他们是否打开以及何时打开了附加的 &lt;Office 文档类型的名称&gt;。 在看到他们打开 &lt;Office 文档类型的名称&gt;后，建议立即向他们拨打跟进电话。
 
 **需要帮助吗?**
 
@@ -114,32 +116,32 @@ ms.suite: ems
 
 -   与技术支持联系：
 
-    -   *&lt;contact details&gt;*
+    -   *&lt;联系人详细信息&gt;*
 
 ### 自定义用户文档示例
-![](../media/AzRMS_ExampleBanner.png)
+![Azure RMS 快速部署的用户文档示例](../media/AzRMS_ExampleBanner.png)
 
 #### 如何与客户共享价目表
 
-1.  创建电子邮件：指定客户的一个或多个电子邮件地址，键入消息，然后将价目表附加到电子邮件。 然后，在“消息”****选项卡上的“RMS”****组中，单击“共享保护项”****，然后再次单击“共享保护项”****：
+1.  创建电子邮件：指定客户的一个或多个电子邮件地址，键入消息，然后将价目表附加到电子邮件。 然后，在“消息”选项卡上的“RMS”组中，单击“共享保护项”，然后再次单击“共享保护项”：
 
-    ![](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
+    ![屏幕截图：如何使用 Outlook 共享 Office 文档](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
 
-2.  在“共享保护内容”****对话框中，选择“查看者 - 仅查看”****：
+2.  在“共享保护内容”对话框中，选择“查看者 - 仅查看”：
 
-    ![](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
+    ![“共享保护内容”对话框 - 查看器 - 仅查看](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
 
-3.  选择“允许我立即撤消对这些文档的访问权限” ****：
+3.  选择“允许我立即撤消对这些文档的访问权限” ：
 
-    ![](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
+    ![“共享保护内容”对话框 - 立即撤消](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
 
-4.  选择“当有人尝试打开此文档时，给我发电子邮件” ****：
+4.  选择“当有人尝试打开此文档时，给我发电子邮件” ：
 
-    ![](../media/AzRMS_SharedProtected_EmailMe.PNG)
+    ![“共享保护内容”对话框 - 向我发送电子邮件](../media/AzRMS_SharedProtected_EmailMe.PNG)
 
 5.  单击 **“立即发送”**。
 
-当“收件人”****、“抄送”****或“密件抄送”****行中的某人收到这封电子邮件时，他们将看到一条消息，其中说明了如何阅读附加的价目表。 他们可以在多种设备上阅读该文档。这些设备包括 ipad、iphone、Android 平板电脑和手机、Mac 计算机以及 Windows 计算机。
+当“收件人”、“抄送”或“密件抄送”行中的某人收到这封电子邮件时，他们将看到一条消息，其中说明了如何阅读附加的价目表。 他们可以在多种设备上阅读该文档。这些设备包括 ipad、iphone、Android 平板电脑和手机、Mac 计算机以及 Windows 计算机。
 
 使用 [文档跟踪门户](https://track.azurerms.com/) 跟踪他们是否打开以及何时打开了附加的价目表。 在看到他们打开价目表后，建议立即向他们拨打跟进电话。
 
@@ -157,6 +159,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

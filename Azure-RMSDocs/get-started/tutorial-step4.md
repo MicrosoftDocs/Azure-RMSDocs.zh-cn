@@ -1,32 +1,20 @@
 ---
-# required metadata
+# 必需元数据
 
-title: Azure RMS 快速入门教程 - 步骤 4 | Azure RMS
-description: 使用本教程的第四步，可以快速试用适合你的组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。
-keywords:
-author: Cabailey
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
-ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
+标题：Azure RMS 快速入门教程 - 步骤 4 | Azure RMS 说明：使用本教程的第四步，可以快速试用适合你的组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。
+keywords: author: cabailey manager: mbaldwin ms.date: 04/28/2016 ms.topic: get-started-article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
 
-# optional metadata
+# 可选元数据
 
-ROBOTS: 
-audience:
-ms.devlang:
-ms.reviewer: esaggese
-ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ROBOTS: audience: ms.devlang: ms.reviewer: esaggese ms.suite: ems ms.tgt_pltfrm: ms.technology: ms.custom:
 
 ---
 
 
 # Azure RMS 快速启动步骤 4：请收件人打开通过电子邮件发送的文档
+
+*适用于：Azure Rights Management、Office 365*
+
 
 跳转到： 
 > [!div class="op_single_selector"]
@@ -38,7 +26,7 @@ ms.custom:
 - [步骤 5：跟踪你的文档](tutorial-step5.md)
 
 
-![](../media/AzRMS_QuickStartSteps4.PNG)
+![Azure RMS 快速入门教程步骤 4](../media/AzRMS_QuickStartSteps4.PNG)
 
 收件人可以使用很多设备来阅读你以电子邮件附件形式发送的受保护文档。 这些设备包括 iPad、iPhone、Android 平板电脑和手机、Mac 计算机，以及 Windows 计算机。
 
@@ -49,7 +37,7 @@ ms.custom:
 
 当他们单击此链接时，会显示相关说明，告知他们如何安装 RMS 共享应用程序，以及如何在必要时注册免费的帐户。 该免费帐户提供个人 RMS 订阅，因此可确保被授权的用户始终能够阅读受保护的文档，即使其组织没有 Azure RMS。 然后，他们就可以根据以下说明阅读受保护的附件。
 
-![](../media/AzRMS_Tutorial_4_Screenshots.png)
+![教程步骤 4 屏幕截图](../media/AzRMS_Tutorial_4_Screenshots.png)
 
 ### 查看受保护的文档附件
 
@@ -72,10 +60,9 @@ ms.custom:
 |关于你所看到的两个版本的电子邮件附件文件|[自动创建的 .ppdf 文件是什么文件？](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)|
 
 
->[!div class="step-by-step"]
-[« 步骤 3](tutorial-step3.md)
-[步骤 5 »](tutorial-step5.md)
+>[!div class="step-by-step"] [«步骤 3](tutorial-step3.md)
+[步骤 5»](tutorial-step5.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

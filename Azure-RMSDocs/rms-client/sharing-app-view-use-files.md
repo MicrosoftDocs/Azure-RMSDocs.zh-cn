@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,17 +26,20 @@ ms.suite: ems
 ---
 
 # 查看和使用受权限管理保护的文件
+
+*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+
 如果[计算机安装了权限管理 (RMS) 共享应用程序](install-sharing-app.md)，你只需双击受保护文件即可查看它。 此文件也许是电子邮件中的附件，或者你可能在使用文件资源管理器时看到它。
 
 > [!NOTE]
 > 在你可以查看受保护文件之前，RMS 必须首先确认你有权查看该文件，方法是检查你的用户名和密码。 在某些情况下，此信息会被缓存下来，所以你不会看到要求出示凭据的提示。 在其他情况下，将提示你提供凭据。
-> 
+>
 > 如果你的组织不使用 Azure Rights Management (Azure RMS) 或 AD RMS，你可以申请会接受你的凭据的免费帐户，以便可以使用 RMS 打开受保护文件：
-> 
-> -   若要申请此帐户，请单击链接以申请 [个人 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
-> 
+>
+> -   若要申请此帐户，请单击链接以申请[个人 RMS](http://go.microsoft.com/fwlink/?LinkId=309469).
+>
 >     注册时，使用公司的电子邮件地址，而不是个人电子邮件地址。 如果注册的原因是要使用电子邮件发送受保护附件，请使用与用于发送电子邮件相同的电子邮件地址。
-> -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
+> -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
 ## 查看受保护文件
 通过使用文件资源管理器或包含附件的电子邮件，双击受保护文件，然后在收到提示时输入凭据。
@@ -46,17 +49,17 @@ ms.suite: ems
 > [!NOTE]
 > 有关详细信息，请参阅“[自动创建的 .ppdf 文件是什么文件？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)”。
 
-文件的打开方式取决于保护方式，此保护方式你可以通过查看文件扩展名得知。 在每种情况下，只要文件受到保护，打开它就需要审核并将处于审核状态。 此外，如果文件以电子邮件附件的形式发送，则每次你打开文件时，发件人都会收到电子邮件通知。 
+文件的打开方式取决于保护方式，此保护方式你可以通过查看文件扩展名得知。 在每种情况下，只要文件受到保护，打开它就需要审核并将处于审核状态。 此外，如果文件以电子邮件附件的形式发送，则每次你打开文件时，发件人都会收到电子邮件通知。
 
 - **文件具有 *.pfile* 文件扩展名**
 
     文件受到一般性保护。
 
-    打开文件时，你将看到共享应用程序中的“受保护文件”****对话框，告知你此文件由谁保护，并且希望你遵守共同所有者权限。 单击“打开” **** ，读取文件。
+    打开文件时，你将看到共享应用程序中的“受保护文件”对话框，告知你此文件由谁保护，并且希望你遵守共同所有者权限。 单击“打开”  ，读取文件。
 
-    ![](../media/ADRMS_MSRMSApp_PfilePermission.png)
+    ![使用 RMS 共享应用程序时通过电子邮件共享的 pfile 的对话框](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **该文件具有 *.ppdf* 文件扩展名，或者是受保护的文本或图像文件（如“.ptxt” ** 或“.pjpg” **）**
+- **该文件具有 *.ppdf* 文件扩展名，或者是受保护的文本或图像文件（如 *.ptxt* 或 *.pjpg*)**
 
     该文件已本机保护为只读副本。
 
@@ -66,9 +69,9 @@ ms.suite: ems
 
     该文件已受到本机保护。
 
-    使用与原始文件扩展名关联的应用程序打开文件，并且文件顶部会显示限制横幅。 该横幅可能显示适用于文件的权限，或者提供显示权限的链接。 例如，你可能会看到以下内容，要求你单击“权限当前受限” **** 以查看适用于文件和可以访问文件的用户的实际权限：
+    使用与原始文件扩展名关联的应用程序打开文件，并且文件顶部会显示限制横幅。 该横幅可能显示适用于文件的权限，或者提供显示权限的链接。 例如，你可能会看到以下内容，要求你单击“权限当前受限”  以查看适用于文件和可以访问文件的用户的实际权限：
 
-    ![](../media/ADRMS_MSRMSApp_RestrictedAccess.png)
+    ![文件受保护时的受限访问横幅](../media/ADRMS_MSRMSApp_RestrictedAccess.png)
 
 
 
@@ -86,9 +89,9 @@ ms.suite: ems
 
     例如，如果某个文件使用文件名 document.vsdx.pfile 保护，请查看该文件并在文件资源管理器中将文件作为 document.vsdx 进行保存。
 
-    新文件从此不受保护。 如果你想要保护该文件，必须手动执行此操作。 有关说明，请参阅[使用 Rights Management 共享应用程序保护设备上的文件（就地保护）](sharing-app-protect-in-place.md)。
+    新文件从此不受保护。 如果你想要保护该文件，必须手动执行此操作。 有关说明，请参阅[使用 Rights Management 共享应用程序保护设备上的文件（就地保护）](sharing-app-protect-in-place.md).
 
-- **该文件具有 *.ppdf* 文件扩展名，或者是受保护的文本或图像文件（如“.ptxt” ** 或“.pjpg” **）**
+- **该文件具有 *.ppdf* 文件扩展名，或者是受保护的文本或图像文件（如 *.ptxt* 或 *.pjpg*)**
 
     你仅可以查看文件，并且如果重命名或移动文件，保护将保留在文件上。
 
@@ -104,13 +107,12 @@ ms.suite: ems
 
 -   [使用 RMS 共享应用程序的示例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [要执行什么操作？](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## 另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
-
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

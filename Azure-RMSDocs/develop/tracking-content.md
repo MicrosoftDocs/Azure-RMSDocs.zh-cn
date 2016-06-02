@@ -2,7 +2,7 @@
 # required metadata
 
 title: 跟踪内容 | Azure RMS
-description:
+description: 实现文档跟踪的基本指导
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: ca08e01f-690d-46f4-ae0f-a880cc29dabc
-
+ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 # optional metadata
 
 #ROBOTS:
@@ -25,9 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# 跟踪内容
-
-[某些信息与预发布的产品有关，产品在商业发布之前可能有大幅度修改。 对于此处提供的信息，Microsoft 不做任何明示或暗示的担保。]
+# 跟踪内容
 
 本主题涵盖了用于实现跟踪受 Rights Management Services SDK 2.1 保护内容的文档的基本指南。
 
@@ -60,7 +57,7 @@ ms.suite: ems
 
     -   **IPC_MD_DATE_MODIFIED**
 
-        我们建议在每次用户单击“保存”****时设置该日期。
+        我们建议在每次用户单击“保存”时设置该日期。
 
     -   **IPC_MD_DATE_CREATED**
 
@@ -120,7 +117,7 @@ ms.suite: ems
                               sendLicenseRegistrationNotificationEmail);
 
 
-### 相关主题
+## 相关主题
 
 
 * [**许可证元数据属性类型**](/rights-management/sdk/2.1/api/win/license%20metadata%20property%20types#msipc_license_metadata_property_types)
@@ -137,6 +134,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

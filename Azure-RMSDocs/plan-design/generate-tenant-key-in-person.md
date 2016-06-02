@@ -27,6 +27,9 @@ ms.suite: ems
 
 # 亲自生成和传送你的租户密钥
 
+*适用于：Azure Rights Management、Office 365*
+
+
 如果你决定 [管理自己的租户密钥](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-) 并且不希望通过 Internet 传送它，请使用以下过程亲自传送你的租户密钥。
 
 ## 生成你的租户密钥
@@ -39,7 +42,7 @@ ms.suite: ems
 -   [步骤 3：创建新密钥](#step-3-create-a-new-key)
 
 ### 步骤 1：准备运行 Thales HSM 的工作站
-在 Windows 计算机上安装 nCipher (Thales) 支持软件。 将 Thales HSM 连接到该计算机。 确保 Thales 工具在你的路径中。 有关详细信息，请参阅 Thales HSM 附带的用户指南，或者访问 Thales 的 Azure RMS 网站，地址为 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud)。
+在 Windows 计算机上安装 nCipher (Thales) 支持软件。 将 Thales HSM 连接到该计算机。 确保 Thales 工具在你的路径中。 有关详细信息，请参阅 Thales HSM 附带的用户指南，或者访问 Thales 的 Azure RMS 网站，地址为 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
 
 ### 步骤 2：创建安全体系
 启动命令提示符，并运行 Thales new-world 程序。
@@ -153,6 +156,6 @@ cngimport --import –M --key=contosokey --appname=simple contosokey
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

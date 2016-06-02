@@ -26,7 +26,10 @@ ms.suite: ems
 
 ---
 # 迁移阶段 2 - 客户端配置
-使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 2。 这些过程涉及[从 AD RMS 迁移到 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 中的步骤 5。
+
+*适用于：Active Directory Rights Management Services、Azure Rights Management*
+
+使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 2。 这些过程涉及[从 AD RMS 迁移到 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 中的步骤 5.
 
 
 ## 步骤 5. 将客户端重新配置为使用 Azure RMS
@@ -46,7 +49,7 @@ ms.suite: ems
 
 对于移动设备客户端和 Mac 计算机：
 
--   删除在部署 [AD RMS 移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)时创建的 DNS SRV 记录。
+-   删除在部署 [AD RMS 移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)时创建的 DNS SRV 记录.
 
 #### 由迁移脚本进行的更改
 本节介绍迁移脚本进行的更改。 你只能将此信息出于参考目的，或用于故障排除，或者用于你想要自己进行这些更改的场合。
@@ -91,10 +94,10 @@ Redirect_OnPrem.cmd：
 
     -   HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\LicensingRedirection
 
-    每一项均具有 REG_SZ 值 **https://OldRMSserverURL/_wmcs/licensing**，其数据采用以下格式：**https://&lt;YourTenantURL&gt;/_wmcs/licensing**。
+    每一项均具有 REG_SZ 值 **https://OldRMSserverURL/_wmcs/licensing**，其数据采用以下格式：**https://&lt;YourTenantURL&gt;/_wmcs/licensing**.
 
     > [!NOTE]
-    > *&lt;YourTenantURL&gt;* 采用以下格式：**{GUID}.rms.[Region].aadrm.com**。
+    > *&lt;YourTenantURL&gt;* 采用以下格式：**{GUID}.rms.[Region].aadrm.com**.
     > 
     > 例如：5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com
     > 
@@ -102,8 +105,8 @@ Redirect_OnPrem.cmd：
 
 
 ## 后续步骤
-要继续迁移，请转到[阶段 3 - 支持复制配置](migrate-from-ad-rms-phase3.md)。
+要继续迁移，请转到[阶段 3 - 支持复制配置](migrate-from-ad-rms-phase3.md).
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

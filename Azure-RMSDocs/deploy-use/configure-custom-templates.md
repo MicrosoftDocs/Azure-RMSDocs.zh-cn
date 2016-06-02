@@ -26,21 +26,24 @@ ms.suite: ems
 ---
 
 # 为 Azure Rights Management 配置自定义模板
+
+*适用于：Azure Rights Management、Office 365*
+
 在你[激活 Azure Rights Management](activate-service.md) (Azure RMS) 之后，用户就能够自动使用两个默认模板，这些模板让他们能够轻松地将策略应用于在组织中限制访问授权用户的敏感文件。 这两个模板具有以下权限策略限制：
 
 -   受保护内容的只读查看
 
-    -   显示名称：**&lt;organization name&gt; - 机密，仅供查阅**
+    -   显示名称：**&lt;组织名称&gt; - 机密，仅供查阅**
 
     -   特定权限：查看内容
 
 -   受保护内容的读取或修改权限
 
-    -   显示名称：**&lt;organization name&gt; - 机密**
+    -   显示名称：**&lt;组织名称&gt; - 机密**
 
     -   特定权限：查看内容、保存文件、编辑内容、查看分配的权限、允许宏、转发、答复、全部答复
 
-此外，[RMS 共享应用程序](../rms-client/sharing-app-windows.md)让用户能够定义他们自己的一组权限。 对于 Outlook 客户端和 Outlook Web Access，用户可为电子邮件选择“不要转发”选项 **** 。
+此外，[RMS 共享应用程序](../rms-client/sharing-app-windows.md)让用户能够定义他们自己的一组权限。 对于 Outlook 客户端和 Outlook Web Access，用户可为电子邮件选择“不要转发”选项  。
 
 对于很多组织，默认模板可能足以满足他们的需求。 但如果你希望创建自己的自定义权限策略模板，也可以这样做。 创建自定义模板有以下原因：
 
@@ -69,6 +72,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

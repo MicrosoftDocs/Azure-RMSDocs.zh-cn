@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/13/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -28,6 +28,9 @@ ms.suite: ems
 
 # Azure RMS 要求：应用程序
 
+*适用于：Azure Rights Management、Office 365*
+
+
 使用下表确定以本机方式支持 Azure RMS 的应用程序，这意味着 RMS 通过使用 RMS API 紧密集成到这些应用程序中以支持使用限制。 这些应用程序也称为“启用 RMS 型”应用程序。
 
 除非另行说明，否则支持的功能同时适用于 Azure RMS 和 AD RMS。 此外，iOS、Android、OS X 和 Windows Phone 8.1 上的 AD RMS 支持需要 [Active Directory Rights Management 服务移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)。
@@ -43,11 +46,11 @@ ms.suite: ems
 
 |**设备操作系统**|Word、Excel、PowerPoint|受保护的 PDF|Email|其他文件类型|
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
-|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office Mobile 应用程序（仅适用于 Azure RMS）[[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 共享应用程序|Outlook 2010<br /><br />Outlook 2013<br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|适用于 Windows 的 RMS 共享应用程序：文本、图像、pfile<br /><br />Siemens JT2Go：JT 文件（仅适用于 Windows 10）|
-|**iOS**|iPad 和 iPhone 版 Office [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS 文档|Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)<br /><br />TITUS 文档|Citrix WorxMail<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />iPad 和 iPhone 版 Outlook [[4]](#footnote-4)<br /><br />OWA for iOS [[3]](#footnote-3)<br /><br />TITUS Mail|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile<br /><br />TITUS 文档：Pfile|
-|**Android**|适用于 Android 的 GigaTrust 应用<br /><br />Office Online [[2]](#footnote-2)|适用于 Android 的 GigaTrust 应用<br /><br />Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />适用于 Android 的 GigaTrust 应用程序 [[4]](#footnote-4)<br /><br />Citrix WorxMail<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />OWA for Android [[3]](#footnote-3) 和 [[6]](#footnote-6)<br /><br />Samsung Email（S3 及更高版本）[[6]](#footnote-6)<br /><br />TITUS Classification for Mobile|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile|
+|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile 应用程序（仅适用于 Azure RMS）[[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 共享应用程序|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](footnote-3)<br /><br />Windows Mail [[4]](footnote-4)|适用于 Windows 的 RMS 共享应用程序：文本、图像、pfile<br /><br />Siemens JT2Go：JT 文件（仅适用于 Windows 10）|
+|**iOS**|iPad 和 iPhone 版 Office [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS 文档|Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)<br /><br />TITUS 文档|Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />iPad 和 iPhone 版 Outlook [[4]](#footnote-4)<br /><br />OWA for iOS [[3]](#footnote-3)<br /><br />TITUS Mail|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile<br /><br />TITUS 文档：Pfile|
+|**Android**|适用于 Android 的 GigaTrust 应用<br /><br />Office Online [[2]](#footnote-2)|适用于 Android 的 GigaTrust 应用<br /><br />Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />适用于 Android 的 GigaTrust 应用程序 [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook for Android [[4]](#footnote-4)<br /><br />OWA for Android [[3]](#footnote-3) 和 [[7]](#footnote-7)<br /><br />Samsung Email（S3 及更高版本）[[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile|
 |**OS X**|Office 2011（仅适用于 AD RMS）<br /><br />Office 2016 for Mac<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)|Outlook 2011（仅适用于 AD RMS）<br /><br />Outlook 2016 for Mac<br /><br />Outlook for Mac|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile|
-|**Windows 10 移动版**|Office Mobile 应用程序（仅适用于 Azure RMS）[[1]](#footnote-1)|不支持|Citrix WorxMail<br /><br />Outlook Mail|不支持|
+|**Windows 10 移动版**|Office Mobile 应用程序（仅适用于 Azure RMS）[[1]](#footnote-1)|不支持|Citrix WorxMail [[6]](#footnote-6)<br /><br />Outlook Mail|不支持|
 |**Windows RT**|Office 2013 RT<br /><br />Office Online [[2]](#footnote-2)|不支持|Outlook 2013 RT<br /><br />Windows 相关邮件应用程序<br /><br />Windows Mail [[4]](#footnote-4)|Siemens JT2Go：JT 文件|
 |**Windows Phone 8.1**|Office Mobile（仅适用于 AD RMS）|RMS 共享应用程序 [[1]](#footnote-1)|Outlook Mobile [[4]](#footnote-4)|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile|
 |**Blackberry 10**|不支持|不支持|Blackberry 电子邮件 [[4]](#footnote-4)|不支持|
@@ -71,6 +74,9 @@ ms.suite: ems
 支持查看和编辑受保护文档。 有关详细信息，请参阅 Office 博客上的以下帖子：[为 iPad 和 iPhone 版 Office 提供 Azure Rights Management 支持](https://blogs.office.com/2015/07/22/azure-rights-management-support-comes-to-office-for-ipad-and-iphone-2/)
 
 ###### 脚注 6
+有关详细信息，请参阅 Citrix [product documentation for WorxMail](http://docs.citrix.com/en-us/worx-mobile-apps/10/xmob-worx-mail.html)（Worxmail 的产品文档）。
+
+###### 脚注 7
 有关详细信息，请参阅 Office 博客上的以下帖子：[OWA for Android 现可在特定设备上使用](http://blogs.office.com/2014/06/11/owa-for-android-now-available-on-select-devices/)
 
 ## 有关针对 Office 的 Azure RMS 支持的详细信息
@@ -139,6 +145,6 @@ Azure RMS 当前不支持以下应用程序：
 
 有关如何为 Azure RMS 配置最常用的应用程序的信息，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)。
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

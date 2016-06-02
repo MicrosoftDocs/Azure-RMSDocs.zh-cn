@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 方案 - 配置工作文件夹的持续保护
+
+*适用于：Azure Rights Management、Office 365*
+
 此方案和支持性的用户文档使用 Azure Rights Management 对[工作文件夹](https://technet.microsoft.com/library/dn265974.aspx)中的 Office 文档应用持续保护。 工作文件夹使用运行 Windows Server 的文件服务器的角色服务，它使用户可以一种一致的方式从他们的 PC 和设备访问其工作文件夹。 尽管工作文件夹会提供它自己的加密来保护文件，但如果文件被移动到工作文件夹环境之外的话，这种保护便会消失。 例如，用户复制同步文件并将其保存到不在 IT 部门控制下的存储器中，或者通过电子邮件将文件发送给其他人。
 
 Azure Rights Management 提供的额外保护通过阻止组织外的人员查看文件来帮助防止意外的数据丢失。 你可以使用内置的默认权限策略模板之一来达到此目的。 然而，在部署此方案之前，请考虑用户是否可能需要与组织外的人员合法共享这些文件。 例如，在研究了草拟的价目表之后，用户要将最终版本通过电子邮件发送给其处于另一组织中的客户。 当你对工作文件夹使用默认 Rights Management 模板时，其他组织中的客户便无法读取此通过电子邮件发送的文档。 可以通过创建让用户可将新权限策略应用到文件的自定义模板来解决此要求，这会替换所有员工对邮件中指定的人员的原始限制。
@@ -46,7 +49,7 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 -   对于必须与未在权限策略模板中指定的人员共享的文件（例如另一组织中的用户），用户必须应用新的权限策略以替换原始权限策略保护。
 
 ## 部署说明
-![](../media/AzRMS_AdminBanner.png)
+![Azure RMS 快速部署的管理员指令](../media/AzRMS_AdminBanner.png)
 
 请确保已满足以下要求，然后在进入到用户文档环节前按照支持过程的说明进行操作。
 
@@ -55,9 +58,9 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 
 |要求|需要更多信息|
 |---------------|--------------------------------|
-|已激活 Azure 权限管理|[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)|
+|已激活 Azure Rights Management|[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)|
 |你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 这对所有使用工作文件夹的用户都是必需的。|[准备 Azure 权限管理](https://technet.microsoft.com/library/jj585029.aspx)|
-|下列情况之一：<br /><br />如果要针对所有用户使用不允许用户应用新权限策略的默认模板：你尚未存档默认模板，**&lt;组织名称&gt; - 机密**<br /><br />如果要使用允许用户应用新权限策略的适用的自定义模板：使用随后的说明来创建自定义模板|[为 Azure Rights Management 配置自定义模板](https://technet.microsoft.com/library/dn642472.aspx)|
+|下列情况之一：<br /><br />如果要针对所有用户使用不允许用户应用新权限策略的默认模板：你尚未存档默认模板，**&lt;组织名称&gt; - 机密**<br /><br />- 如果要使用允许用户应用新权限策略的适用的自定义模板：使用随后的说明来创建自定义模板|[为 Azure Rights Management 配置自定义模板](https://technet.microsoft.com/library/dn642472.aspx)|
 |已为 Windows Server 计算机安装并授权 Rights Management 连接器，且已为 **FCI 服务器**角色配置了该连接器。|[部署 Azure Rights Management 连接器](https://technet.microsoft.com/library/dn375964.aspx)|
 |已将 Rights Management 共享应用程序部署到运行 Windows 的用户计算机|[自动部署 Microsoft Rights Management 共享应用程序](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 
@@ -71,15 +74,15 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 
     -   说明：**此内容受工作文件夹保护，且仅限公司员工使用。若要与组织外的人员共享此内容，请将文档附加到电子邮件消息并使用共享保护项功能。**
 
-3.  在“权限”****页上：
+3.  在“权限”页上：
 
-    -   将现有的权限从“自定义”****更改为“共有者”****。
+    -   将现有的权限从“自定义”更改为“共有者”。
 
-4.  在“配置”****页上：
+4.  在“配置”页上：
 
-    -   确保“状态”****设置为“发布”****
+    -   确保“状态”设置为“发布”
 
-    -   对于**名称和说明**，删除你不使用的语言的条目。 对于你确实要使用的语言，使用指定的语言更新“名称”****和“说明”****以使其匹配你为此模板提供的名称和说明。
+    -   对于**名称和说明**，删除你不使用的语言的条目。 对于你确实要使用的语言，使用指定的语言更新“名称”和“说明”以使其匹配你为此模板提供的名称和说明。
 
 5.  保存该模板。
 
@@ -99,7 +102,7 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 
     1.  使用文件服务器资源管理器创建将同步共享文件夹标识为范围的文件管理任务。
 
-    2.  要执行此操作，选择“RMS 加密”****，然后选择模板：
+    2.  要执行此操作，选择“RMS 加密”，然后选择模板：
 
         -   如果你因为不希望用户与组织外的其他人共享文件而未创建自定义模板，请选择**&lt;组织名称&gt; - 机密**的模板名称。 例如，**VanArsdel, Ltd - 机密**。
 
@@ -107,9 +110,9 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 
     3.  指定计划，即允许 Azure Rights Management 使用充足的时间对所有 Office 文件进行加密，并指定**连续对新文件运行**的选项。
 
-3.  若要手动测试该配置，请确保文件夹包含一些 Office 文件，然后使用“立即运行文件管理任务”****选项，并选择“等待任务完成”****。
+3.  若要手动测试该配置，请确保文件夹包含一些 Office 文件，然后使用“立即运行文件管理任务”选项，并选择“等待任务完成”。
 
-    等待“运行文件管理任务”对话框关闭，然后在自动显示的报告中查看结果 **** 。 你应在“文件”字段中看到所选文件夹中的文件数 **** 。 确认所选文件夹中的文件现已受 Azure Rights Management 保护。 例如，打开一个文件并确认在文档顶部看到显示有 Rights Management 模板名称和说明的信息横幅。
+    等待“运行文件管理任务”对话框关闭，然后在自动显示的报告中查看结果  。 你应在“文件”字段中看到所选文件夹中的文件数  。 确认所选文件夹中的文件现已受 Azure Rights Management 保护。 例如，打开一个文件并确认在文档顶部看到显示有 Rights Management 模板名称和说明的信息横幅。
 
 4.  如果你决定通过使用文件分类基础结构选择性地保护文件，请配置你的分类规则和计划，然后修改文件管理任务以将此分类属性作为条件包括在内。
 
@@ -125,6 +128,6 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 方案 - 保护文件服务器共享上的文件
+
+*适用于：Azure Rights Management、Office 365*
+
 此方案和支持性的用户文档使用 Azure Rights Management 批量保护你想要在文件服务器上保护的所有文件，确保只有你组织的员工可以访问这些文件，即使它们被复制并保存到不受你的 IT 部门控制的存储器中，或已通过电子邮件发送给其他人也不例外。
 
 这些说明使用其中一个默认模板，这会限制具有全部使用权限的所有员工的访问权限。 但是，如有必要，可以通过配置自定义模板而非使用默认模板进一步限制访问和使用权限。
@@ -39,7 +42,7 @@ ms.suite: ems
 -   按计划对所有文件重新应用保护，确保对权限策略模板所做的任何更改都能应用到受保护文件中。
 
 ## 部署说明
-![](../media/AzRMS_AdminBanner.png)
+![Azure RMS 快速部署的管理员指令](../media/AzRMS_AdminBanner.png)
 
 请确保已满足以下要求，然后在进入到用户文档环节前按照支持过程的说明进行操作。
 
@@ -50,7 +53,7 @@ ms.suite: ems
 |---------------|--------------------------------|
 |已激活 Azure Rights Management|[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)|
 |你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 保护的文件的用户来说，这都是必需的。|[准备 Azure 权限管理](https://technet.microsoft.com/library/jj585029.aspx)|
-|下列情况之一：<br /><br />若要为所有用户使用默认模板：你尚未存档默认模板，&lt;组织名称&gt; - 机密<br /><br />若要为特定用户使用自定义模板：你已创建并发布此自定义模板|[为 Azure Rights Management 配置自定义模板](https://technet.microsoft.com/library/dn642472.aspx)|
+|下列情况之一：<br /><br />若要为所有用户使用默认模板：你尚未存档默认模板，&lt;组织名称&gt; - 机密<br /><br />- 若要为特定用户使用自定义模板：你已创建并发布此自定义模板|[为 Azure Rights Management 配置自定义模板](https://technet.microsoft.com/library/dn642472.aspx)|
 |已将 Rights Management 共享应用程序部署到运行 Windows 的用户计算机|[自动部署 Microsoft Rights Management 共享应用程序](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 |已下载 RMS 保护工具并已配置 Azure RMS 的必备组件|有关下载此工具和必备组件的说明，请参阅 [RMS 保护 Cmdlet](https://msdn.microsoft.com/library/mt433195.aspx)<br /><br />若要配置 Azure RMS 的其他必备项，如服务主体帐户，请参阅 [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)|
 
@@ -89,7 +92,7 @@ ms.suite: ems
 
 -   将*&lt;组织名称&gt;*替换为你组织的名称，会显示在默认的 Azure Rights Management 模板上。
 
--   将 *&lt;组织名称&gt;*替换为你组织的名称。
+-   将*&lt;组织名称&gt;*替换为你组织的名称。
 
 -   将*&lt;有关如何保存文件并删除 .pfile 文件扩展名的说明&gt;*替换为此文件类型的特定于应用程序的说明。
 
@@ -99,15 +102,15 @@ ms.suite: ems
 
 示例文档演示了在你完成自定义后，用户看到这些说明的可能形式。
 
-![](../media/AzRMS_UsersBanner.png)
+![Azure RMS 快速部署的用户文档模板](../media/AzRMS_UsersBanner.png)
 
-### 如何从&lt;文件服务器共享&gt;编辑&lt;文件类型&gt;
+### 如何从&lt;文件服务器共享编辑&lt;文件类型&gt;&gt;
 
 1.  双击该文件以将其打开。 系统可能会提示你输入凭据。
 
-2.  你会从 Microsoft Rights Management 共享应用程序中看到一个**受保护文件**对话框，提示你应慎重使用**&lt;组织机构&gt; - 机密**的权限。 这意味着你不应与&lt;组织名称&gt;员工以外的人员共享此文档。
+2.  你会从 Microsoft Rights Management 共享应用程序中看到一个**受保护文件**对话框，提示你应慎重使用**&lt;组织名称&gt; - 机密**的权限。 这意味着你不应与&lt;组织名称&gt;员工以外的人员共享此文档。
 
-3.  单击“打开”****。
+3.  单击“打开”。
 
 4.  若要编辑文件，首先保存该文件并删除 .pfile 文件扩展名：
 
@@ -125,10 +128,10 @@ ms.suite: ems
 
 -   与技术支持联系：
 
-    -   *&lt;contact details&gt;*
+    -   *&lt;联系人详细信息&gt;*
 
 ### 自定义用户文档示例
-![](../media/AzRMS_ExampleBanner.png)
+![Azure RMS 快速部署的用户文档示例](../media/AzRMS_ExampleBanner.png)
 
 #### 如何从 ProjectNextGen 共享中编辑 CAD 绘图
 
@@ -136,13 +139,13 @@ ms.suite: ems
 
 2.  你会从 Microsoft Rights Management 共享应用程序中看到一个**受保护文件**对话框，提示将授予你对 **VanArsdel, Ltd - 机密**的访问权限。 也就是说系统不允许与不是 VanArsdel, Ltd 的员工共享此文档。
 
-3.  单击“打开”****。
+3.  单击“打开”。
 
 4.  若要编辑文件，首先保存该文件并删除 .pfile 文件扩展名：
 
-    -   “文件”****&gt;“另存为”****
+    -   **文件** &gt; **另存为**
 
-    -   删除文件名末尾的 **.pfile**，然后单击“确定”****。
+    -   删除文件名末尾的 **.pfile**，然后单击“确定”。
 
 5.  现在就可以正常编辑和保存文件了。
 
@@ -158,6 +161,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

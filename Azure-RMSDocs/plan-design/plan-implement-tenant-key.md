@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 计划和实现你的 Azure Rights Management 租户密钥
+
+*适用于：Azure Rights Management、Office 365*
+
 使用本文章中的信息，帮助规划和管理 Azure RMS 的 Rights Management (RMS) 租户密钥。 例如，为了遵守组织的具体规定，你不能让 Microsoft 管理你的租户密钥（默认设置），而想要自行管理租户密钥。  自行管理租户密钥也称为自带密钥 (BYOK)。
 
 > [!NOTE]
@@ -62,11 +65,11 @@ ms.suite: ems
 
 下图显示和比较了这两个选项。 第一张图显示在由 Microsoft 管理租户密钥的默认配置中，管理员开销非常低。
 
-![](../media/RMS_BYOK_cloud.png)
+![Azure RMS 租户密钥生命周期 - 由 Microsoft 管理，默认设置](../media/RMS_BYOK_cloud.png)
 
 第二张图显示当你自行管理租户密钥时需要的其他步骤。
 
-![](../media/RMS_BYOK_onprem.png)
+![Azure RMS 租户密钥生命周期 - 由你管理，BYOK](../media/RMS_BYOK_onprem.png)
 
 如果你决定让 Microsoft 管理你的租户密钥，则除了生成密钥之外，再无需任何额外操作，你可以直接执行[后续步骤](plan-implement-tenant-key.md#next-steps)。
 
@@ -90,7 +93,7 @@ ms.suite: ems
 |支持 Azure RMS 的订阅。|有关可用订阅的详细信息，请参阅[支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md)。|
 |请不要使用个人 RMS 或 Exchange Online。 或者，如果你使用 Exchange Online，应了解并接受对此配置使用 BYOK 的限制。|有关 BYOK 当前限制的详细信息，请参阅 [BYOK 定价和限制](byok-price-restrictions.md)。<br /><br />**重要事项**：目前，BYOK 不兼容 Exchange Online。|
 |Thales HSM、智能卡和支持软件。<br /><br />**注意**：如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure RMS，必须拥有 Thales 驱动程序的最低版本 11.62。|你必须能够使用 Thales 硬件安全模块，并且掌握有关 Thales HSM 的基本操作知识。 有关兼容型号的列表，请参阅 [Thales 硬件安全模块](http://www.thales-esecurity.com/msrms/buy) ，如果你还没有 HSM，请及时购买。|
-|如果你希望通过 Internet 传送租户密钥，而不是亲自前往美国 Redmond 传送租户密钥。 有 3 个要求：<br /><br />要求 1：脱机 x64 工作站，Windows 操作系统版本最低为 Windows 7，Thales nShield 软件至少为版本 11.62。<br /><br />如果此工作站运行 Windows 7，则必须 [安装 Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=225702)。<br /><br />要求 2：连接到 Internet 的工作站，Windows 操作系统版本最低为 Windows 7。<br /><br />要求 3：有 USB 驱动器或其他便携式存储设备，且至少有 16 MB 的可用空间。|如果你亲自将租户密钥送到 Redmond，则不需要这些先决条件。<br /><br />出于安全原因，我们建议第一个工作站不要连接到网络。 但是，程序对此没有强制要求。<br /><br />注意：在接下来的说明中，此第一个工作站称为**未连接工作站**。<br /><br />此外，如果你的租户密钥用于生产网络，我们建议你使用第二个独立工作站来下载工具集和上载租户密钥。 但如果用于测试目的，你可以使用同一个工作站。<br /><br />注意：在接下来的说明中，此第二个工作站称为**连接 Internet 的工作站**。|
+|如果你希望通过 Internet 传送租户密钥，而不是亲自前往美国 Redmond 传送租户密钥。 有 3 个要求：<br /><br />1：脱机 x64 工作站，Windows 操作系统版本最低为 Windows 7，Thales nShield 软件至少为版本 11.62。<br /><br />如果此工作站运行 Windows 7，则必须 [安装 Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=225702)。<br /><br />2：连接到 Internet 的工作站，Windows 操作系统版本最低为 Windows 7。<br /><br />3：USB 驱动器或其他便携式存储设备，至少拥有 16 MB 可用空间。|如果你亲自将租户密钥送到 Redmond，则不需要这些先决条件。<br /><br />出于安全原因，我们建议第一个工作站不要连接到网络。 但是，程序对此没有强制要求。<br /><br />注意：在接下来的说明中，此第一个工作站称为**未连接工作站**。<br /><br />此外，如果你的租户密钥用于生产网络，我们建议你使用第二个独立工作站来下载工具集和上载租户密钥。 但如果用于测试目的，你可以使用同一个工作站。<br /><br />注意：在接下来的说明中，此第二个工作站称为**连接 Internet 的工作站**。|
 
 生成和使用自己的租户密钥的过程，具体取决于你是要通过 Internet 传送租户密钥还是亲自传送租户密钥：
 
@@ -135,7 +138,7 @@ ms.suite: ems
 
     如果你决定自行管理租户密钥，则日志记录包括租户密钥的使用信息。 请参见在 Excel 中显示的以下日志文件示例，其中的 **Decrypt** 和 **SignDigest** 请求类型显示该租户密钥正在使用中。
 
-    ![](../media/RMS_Logging.gif)
+    ![正在使用租户密钥的 Excel 格式日志文件](../media/RMS_Logging.gif)
 
     有关使用日志记录的详细信息，请参阅[记录和分析 Azure Rights Management 使用情况](../deploy-use/log-analyze-usage.md)。
 
@@ -145,6 +148,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

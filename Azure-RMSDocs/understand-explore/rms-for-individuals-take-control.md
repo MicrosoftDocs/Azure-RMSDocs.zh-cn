@@ -29,6 +29,9 @@ ms.suite: ems
 
 # 管理员如何才能控制为个人 RMS 创建的帐户
 
+*适用于：Azure Rights Management*
+
+
 如果你不希望将组织的个人 RMS 订阅转换为付费订阅，你仍然可以通过下列方式，控制为组织创建的 Azure 目录中的用户帐户：
 
 -   实现 Azure Active Directory 和 Active Directory 域服务基础结构的目录集成解决方案。 你可以同步帐户和密码，使得用户无需创建新帐户即可使用权限管理，你的本地密码策略将应用于新的 Azure 用户帐户。 你还可以同步密码，使得用户无需为了使用权限管理而记忆不同密码。
@@ -46,9 +49,9 @@ ms.suite: ems
 
 ## 后续步骤
 
-如果用户（而不是管理员）可以在个人 RMS 的 Azure Active Directory 中创建其帐户，则如何发现用户已进行了此操作？  请参阅[如何发现用户已注册了个人 RMS](rms-for-individuals-identify-sign-up.md)。
+如果用户（而不是管理员）可以在个人 RMS 的 Azure Active Directory 中创建其帐户，则如何发现用户已进行了此操作？  请参阅[如何发现用户是否已注册个人 RMS](rms-for-individuals-identify-sign-up.md).
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

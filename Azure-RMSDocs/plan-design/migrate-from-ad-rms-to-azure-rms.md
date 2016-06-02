@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,13 +26,16 @@ ms.suite: ems
 ---
 
 # 从 AD RMS 迁移到 Azure 权限管理
+
+*适用于：Active Directory Rights Management Services、Azure Rights Management*
+
 使用下面的一组指令将 Active Directory 权限管理服务 (AD RMS) 部署迁移到 Azure Rights Management (Azure RMS)。 迁移之后，用户将仍然可以访问你的组织使用 AD RMS 来保护的文档和电子邮件，新保护的内容将使用 Azure RMS。
 
 不确定这种 AD RMS 迁移是否适合你的组织？
 
 -   有关 Azure RMS 的简介、它可以解决的业务问题、它对管理员和用户来说是什么样子，以及它是如何工作的，请参阅 [Azure Rights Management 是什么？](../understand-explore/what-is-azure-rms.md)
 
--   有关 Azure RMS 与 AD RMS 的比较，请参阅[比较 Azure Rights Management 和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。
+-   有关 Azure RMS 与 AD RMS 的比较，请参阅[比较 Azure Rights Management 和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md).
 
 ## 将 AD RMS 迁移到 Azure RMS 的先决条件
 在开始迁移到 Azure RMS 之前，请确保具备以下先决条件，并确保你了解所有限制。
@@ -63,7 +66,7 @@ ms.suite: ems
 
 - **运行 Azure RMS（包括 Azure RMS 租户（未激活））的所有要求**
 
-    请参阅 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)。
+    请参阅 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md).
 
     尽管在从 AD RMS 迁移之前你必须拥有 Azure RMS 租户，但我们建议在迁移之前不要激活 Rights Management 服务。 迁移过程包括此步骤，在从 AD RMS 导出密钥和模板并将其导入到 Azure RMS 之后执行此操作。 但是，如果 Azure RMS 已激活，你仍可以从 AD RMS 迁移。
 
@@ -74,7 +77,7 @@ ms.suite: ems
 
     - 在 Azure Active Directory 中已启用邮件的组
 
-    请参阅[准备 Azure Rights Management](prepare.md)。
+    请参阅[准备 Azure Rights Management](prepare.md).
 
 
 - **如果你已使用过 Exchange Server 的信息权限管理 (IRM) 功能**（例如，传输规则和 Outlook Web Access）或者带 AD RMS 的 SharePoint Server：
@@ -167,7 +170,7 @@ ms.suite: ems
 
 [**阶段 4：迁移后任务**](migrate-from-ad-rms-phase4.md )
 
-- **步骤：解除 AD RMS 的授权**
+- **步骤 8：解除 AD RMS 的授权**
 
     当你已确认所有客户端均使用 Azure RMS 而不再访问 AD RMS 服务器，你可以解除 AD RMS 部署的授权。
 
@@ -178,10 +181,10 @@ ms.suite: ems
 
 
 ## 后续步骤
-若要开始迁移，请转到[阶段 1 - 服务器端配置](migrate-from-ad-rms-phase1.md)。
+若要开始迁移，请转到[阶段 1 - 服务器端配置](migrate-from-ad-rms-phase1.md).
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,9 +26,11 @@ ms.suite: ems
 ---
 
 # 应用程序如何支持 Azure Rights Management
+
+*适用于：Azure Rights Management、Office 365*
+
 使用以下信息可以帮助你了解最常使用的最终用户应用程序（例如 Office 应用程序，包括 Word、Excel、PowerPoint 和 Outlook）和服务（例如 Exchange 和 SharePoint）如何才能使用 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 来帮助保护组织的数据。 
-> [!NOTE]
-> 若要验证 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 支持的应用程序和版本，请参阅 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)。
+> [!NOTE]若要验证 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 支持的应用程序和版本，请参阅 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)。
 
 某些情况下，将根据你配置的策略来自动应用信息保护。 例如，SharePoint 库、分类文件和 Exchange 传输规则就属于此种情况。 在其他情况下，用户必须自动通过应用程序（不管是通过选择模板还是通过选择特定选项）来应用信息保护。 例如，用户可通过电子邮件来共享文件，或者通过将访问权限和使用权限限制给选定用户或组织外部用户来保护现有文件。
 
@@ -38,8 +40,16 @@ ms.suite: ems
 
 有关如何为 Azure RMS 配置这些应用程序的信息，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)。
 
-> [!TIP]
-> 有关使用 Azure RMS 的应用程序的示例和屏幕截图，请参阅 [运行中的 Azure RMS：管理员和用户看到的内容](what-admins-users-see.md)。
+> [!TIP]有关使用 Azure RMS 的应用程序的示例和屏幕截图，请参阅[运行中的 Azure RMS：管理员和用户看到的内容](what-admins-users-see.md)。
+
+搜索服务能以不同的方式与 Rights Management 集成。 例如： 
+
+- Exchange Online 和 Exchange Server 使用服务端索引，因而用户的受 RMS 保护的电子邮件将自动显示在其搜索结果中。 
+
+- SharePoint Online 和 SharePoint Server 仅针对下载对文件应用 RMS 保护，这意味着 SharePoint 上的索引和搜索结果不受此文档保护解决方案影响。 但是，如果你希望将文档存储在 SharePoint 中而不希望搜索结果中返回该文档，请在将其上传到 SharePoint 之前用 RMS 进行保护。
+
+- Windows 桌面搜索在设备的不同用户间使用共享索引，以便持续保护受保护文档中的数据，它不对受 RMS 保护的文件进行索引。 这意味着，不仅你的搜索结果不包含已保护的文件，你还可以放心，登录或连接到你的电脑的其他用户的搜索结果中也不会显示包含敏感数据的文件。 
+
 
 
 ## 后续步骤
@@ -56,6 +66,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

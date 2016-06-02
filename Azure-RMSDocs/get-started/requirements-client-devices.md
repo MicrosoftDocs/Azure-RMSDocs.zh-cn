@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Azure RMS 要求：Azure RMS 支持的客户端设备
+
+*适用于：Azure Rights Management、Office 365*
+
 使用以下部分可以确定哪些设备支持 Azure Rights Management (Azure RMS)。
 
 ## 计算机
@@ -59,6 +62,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

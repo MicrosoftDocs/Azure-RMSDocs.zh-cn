@@ -28,13 +28,16 @@ ms.suite: ems
 
 # Rights Management 连接器的注册表设置
 
+*适用于：Azure Rights Management、Office 365*
+
+
 只有当你需要在服务器上手动添加或检查将运行 Exchange、SharePoint 或 Windows Server 的服务器配置为使用 [RMS ](deploy-rms-connector.md)连接器的注册表设置时，才使用以下部分的表格。 配置这些服务器的推荐方法是使用适用于 Microsoft RMS 连接器的服务器配置工具。
 
 有关使用这些配置时的说明：
 
 -   *MicrosoftRMSURL* 是你组织的 Microsoft RMS 服务 URL。 查找此值：
 
-    1.  对 Azure RMS 运行 [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet。 如果你尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
+    1.  对 Azure RMS 运行 [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet。 如果你尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md).
 
     2.  在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
 
@@ -44,7 +47,7 @@ ms.suite: ems
 
         **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
--   *ConnectorFQDN* 是你在 DNS 中为连接器定义的负载平衡名称。 例如 **rmsconnector.contoso.com**。
+-   *ConnectorFQDN* 是你在 DNS 中为连接器定义的负载平衡名称。 例如 **rmsconnector.contoso.com**.
 
 -   如果你已将连接器配置为使用 HTTPS 与本地服务器通信，请使用 HTTPS 前缀作为连接器 URL。 有关详细信息，请参阅本主题中的 [将 RMS 连接器配置为使用 HTTPS](deploy-rms-connector.md#BKMK_ConfiguringHTTPS) 部分。 Microsoft RMS URL 始终使用 HTTPS。
 
@@ -149,7 +152,7 @@ ms.suite: ems
 - https://*ConnectorFQDN*
 
 
-## SharePoint 2013 注册表设置
+## SharePoint 2016 或 SharePoint 2013 注册表设置
 
 **注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\LicensingRedirection
 
@@ -219,6 +222,6 @@ ms.suite: ems
 
 返回到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

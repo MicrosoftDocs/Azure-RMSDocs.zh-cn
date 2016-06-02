@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 步骤 2：软件保护密钥到 HSM 保护密钥的迁移 | Azure RMS
+title: 步骤 2&colon; 软件保护密钥到 HSM 保护密钥的迁移 | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 步骤 2：软件保护密钥到 HSM 保护密钥的迁移
+
+*适用于：Active Directory Rights Management Services、Azure Rights Management*
+
 
 这些说明是[从 AD RMS 到 Azure Rights Management 的迁移路径](migrate-from-ad-rms-to-azure-rms.md)中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且你希望使用 HSM 保护的租户密钥迁移到 Azure Rights Management 时才适用。 
 
@@ -68,7 +71,7 @@ ms.suite: ems
 
     -   HSM 密钥文件：%NFAST_KMDATA%\local\key_mscapi_&lt;KeyID&gt;
 
-    -   已删除 SLC 的 RMS 配置数据文件：%NFAST_KMDATA%\local\no_key_tpd_&lt;KeyID&gt;.xml
+    -   SLC 已被删除的 RMS 配置数据文件：%NFAST_KMDATA%\local\no_key_tpd_&lt;KeyID&gt;.xml
 
 3.  如果你有多个 RMS 配置数据文件，请对这些文件的其余部分重复执行步骤 2。
 
@@ -105,11 +108,11 @@ ms.suite: ems
     Disconnect-AadrmService
     ```
 
-现在可以转到[步骤 3。激活你的 RMS 租户](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration)。
+现在可以转到[步骤 3。激活你的 RMS 租户](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
