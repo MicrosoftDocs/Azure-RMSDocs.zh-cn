@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\deploy-use\copy-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/deploy-use/copy-template.md) | InSyncHandedBackSuccess | [Details](#87d712bbda11a4cfdfb2f3b3e9a549bca977afd619)
+ [Azure-RMSDocs\plan-design\thales-hsm.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/thales-hsm.md) | InSyncHandedBackSuccess | [Details](#c56c4248ac8754c48b6f411a58c6ba93559aed7f355)
 
 ## Item Details
+##### <a name='87d712bbda11a4cfdfb2f3b3e9a549bca977afd619'></a> Source: [Azure-RMSDocs\deploy-use\copy-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/deploy-use/copy-template.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\deploy-use\copy-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/7cd4d8c028161ccdb70cd1ec43d742909bbbe9bd/Azure-RMSDocs/deploy-use/copy-template.md)
+* Handoff File: [copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/891b38fc2de7e5575674fc7aebdf7f49baa1a1aa/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.zh-cn.xlf)
+* Handoff Datetime: 2016-05-20 21:14:57
+* Handoff Reason: Include
+* Archive File: [copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/89c0e874d1d8c00f09b2ffba4ad2cd4e4ac952f3/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/archive/copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.zh-cn.xlf)
+* Archive Datetime: 2016-05-21 18:48:14
+* Handback File: [copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/677b47f4e9d7e212f14201d596f80d4b1783edef/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.zh-cn.xlf)
+* Handback Datetime: 2016-06-02 03:34:04
+* [Back to Top](#report-top)
+
+##### <a name='c56c4248ac8754c48b6f411a58c6ba93559aed7f355'></a> Source: [Azure-RMSDocs\plan-design\thales-hsm.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/thales-hsm.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\plan-design\thales-hsm.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/7cd4d8c028161ccdb70cd1ec43d742909bbbe9bd/Azure-RMSDocs/plan-design/thales-hsm.md)
+* Handoff File: [thales-hsm.a29c7ca9e077d11ede094a86b90ea035a1ef4fff.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/8e4326e68869d9953ba0c86e5a079b1566df6c9e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/thales-hsm.a29c7ca9e077d11ede094a86b90ea035a1ef4fff.zh-cn.xlf)
+* Handoff Datetime: 2016-04-27 21:41:27
+* Handoff Reason: Include
+* Archive File: [thales-hsm.a29c7ca9e077d11ede094a86b90ea035a1ef4fff.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/89c0e874d1d8c00f09b2ffba4ad2cd4e4ac952f3/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/archive/thales-hsm.a29c7ca9e077d11ede094a86b90ea035a1ef4fff.zh-cn.xlf)
+* Archive Datetime: 2016-05-21 18:48:14
+* Handback File: [thales-hsm.a29c7ca9e077d11ede094a86b90ea035a1ef4fff.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/677b47f4e9d7e212f14201d596f80d4b1783edef/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/thales-hsm.a29c7ca9e077d11ede094a86b90ea035a1ef4fff.zh-cn.xlf)
+* Handback Datetime: 2016-06-02 03:34:04
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
