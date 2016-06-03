@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # 生成和传送租户密钥 – 通过 Internet
+
+*适用于：Azure Rights Management、Office 365*
+
 如果你决定 [管理自己的租户密钥](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-) 并且希望通过 Internet 传送它，而不是亲自前往 Microsoft 设施来传送密钥，请使用以下过程：
 
 
@@ -45,7 +48,7 @@ ms.suite: ems
 > [!NOTE]
 > 如果你之前已下载了此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 2.1.0.0： `(Get-Module aadrm -ListAvailable).Version`
 
-有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
+有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md).
 
 ### 步骤 2：获取你的 Azure Active Directory 租户 ID
 使用 **“以管理员身份运行”** 选项启动 Windows PowerShell，然后运行以下命令：
@@ -82,15 +85,15 @@ ms.suite: ems
 |亚洲|AzureRMS-BYOK-tools-AsiaPacific.zip|
 工具集包括以下部分：
 
--   “密钥交换密钥”(KEK) 软件包，名称以 **BYOK-KEK-pkg-** 开头。
+-   “密钥交换密钥”(KEK) 软件包，名称以 **BYOK-KEK-pkg-** 开头.
 
--   安全体系包，名称以 **BYOK-SecurityWorld-pkg-** 开头。
+-   安全体系包，名称以 **BYOK-SecurityWorld-pkg-** 开头.
 
--   名为 **verifykeypackage.py**的 Python 脚本。
+-   名为 **verifykeypackage.py** 的 Python 脚本.
 
 -   一个名为 **KeyTransferRemote.exe** 的命令行可执行文件、一个名为 **KeyTransferRemote.exe.config** 的元数据文件以及关联的 DLL。
 
--   名为 **vcredist_x64.exe** 的 Visual C++ 可再分发包。
+-   名为 **vcredist_x64.exe** 的 Visual C++ 可再分发包.
 
 将包复制到 USB 驱动器或其他便携式存储设备。
 
@@ -109,7 +112,7 @@ ms.suite: ems
 ```
 set PATH=%PATH%;”%nfast_home%\bin”;”%nfast_home%\python\bin”
 ```
-有关详细信息，请参阅 Thales HSM 附带的用户指南，或者访问 Thales 的 Azure RMS 网站，地址为 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud)。
+有关详细信息，请参阅 Thales HSM 附带的用户指南，或者访问 Thales 的 Azure RMS 网站，地址为 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
 
 ### 步骤 2：在未连接工作站上安装 BYOK 工具集
 从 USB 驱动器或其他便携式存储设备复制 BYOK 工具集包，然后执行以下操作：
@@ -185,7 +188,7 @@ new-world.exe --initialize --cipher-suite=DLf1024s160mRijndael --module=1 --acs-
 
 2.  确认你看到以下结果，它表示验证成功： **结果：SUCCESS**
 
-此脚本验证签名人链，一直到 Thales 根密钥。 此根密钥的哈希嵌入到脚本中，其值应为 **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**。 你也可以通过访问 [Thales 网站](http://www.thalesesec.com/)，单独确认该值。
+此脚本验证签名人链，一直到 Thales 根密钥。 此根密钥的哈希嵌入到脚本中，其值应为 **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**。 你也可以通过访问 [Thales 网站](http://www.thalesesec.com/)，单独确认该值.
 
 你现在可以创建一个新密钥，作为你的 RMS 租户密钥。
 
@@ -270,7 +273,7 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
 
 可能会要求你插入安全体系 ACS 卡，并且如果指定了其密码或 PIN，还会要求提供它们。
 
-命令完成时，你将看到 **Result: SUCCESS**，并且具有降低的权限的租户密钥副本将位于名为 key_xferacId_*&lt;contosokey&gt;* 的文件中。
+命令完成时，你将看到 **Result: SUCCESS**，并且具有降低的权限的租户密钥副本将位于名为 key_xferacId_*&lt;contosokey&gt;*的文件中.
 
 ### 步骤 2：检测新的密钥副本
 或者，运行 Thales 实用工具以确认新租户密钥的最低权限：
@@ -380,6 +383,6 @@ Get-AadrmKeys
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

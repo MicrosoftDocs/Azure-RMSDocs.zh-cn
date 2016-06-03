@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: b0aafe75-19c9-47dc-bbba-cf4287399c6e
-
+ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 如何：启用错误和性能日志记录
 Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性能日志上传。
 
@@ -85,7 +83,7 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
 
     CustomerExperienceConfiguration::Option = CustomerExperienceOptions::LoggingEnabledNow;
 
-有关可选设置的详细信息，请参阅 [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptionss)。
+有关可选设置的详细信息，请参阅 [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions)。
 
 获取当前日志记录控制标志设置
 
@@ -101,6 +99,6 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

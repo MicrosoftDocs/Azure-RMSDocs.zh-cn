@@ -26,7 +26,10 @@ ms.suite: ems
 ---
 
 # 用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）
-此页包含要复制和编辑的示例脚本，如[使用 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md)中所述。
+
+*适用于：Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+
+此页包含要复制和编辑的示例脚本，如[使用 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md)中所述.
 
 *&#42;&#42;免责声明&#42;&#42;：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例*
 *脚本按原样提供，不提供任何形式的保证。*
@@ -174,9 +177,9 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 ---
 
-返回到[使用 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md)。
+返回到[使用 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md).
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

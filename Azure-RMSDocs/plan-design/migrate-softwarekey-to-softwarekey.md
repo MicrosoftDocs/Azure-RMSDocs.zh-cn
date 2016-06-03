@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 步骤 2：软件保护密钥到软件保护密钥的迁移 | Azure RMS
+title: 步骤 2&colon; 软件保护密钥到软件保护密钥的迁移 | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -28,6 +28,9 @@ ms.suite: ems
 
 # 步骤 2：软件保护密钥到软件保护密钥的迁移
 
+*适用于：Active Directory Rights Management Services、Azure Rights Management*
+
+
 这些说明是[从 AD RMS 到 Azure Rights Management 的迁移路径](migrate-from-ad-rms-to-azure-rms.md)中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且你希望使用软件保护的租户密钥迁移到 Azure Rights Management 时才适用。 
 
 如果这不是你选择的配置方案，请返回[步骤 2.从 AD RMS 中导出配置数据并将其导入到 Azure RMS 中](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)，然后选择其他配置。
@@ -41,9 +44,9 @@ ms.suite: ems
     > [!TIP]
     > 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号： `(Get-Module aadrm -ListAvailable).Version`
 
-    有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
+    有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md).
 
-2.  使用“以管理员身份运行” **** 选项启动 Windows PowerShell，然后使用 [Connect-AadrmService](http://msdn.microsoft.com/library/azure/dn629415.aspx) cmdlet 连接到 Azure RMS 服务：
+2.  使用“以管理员身份运行”  选项启动 Windows PowerShell，然后使用 [Connect-AadrmService](http://msdn.microsoft.com/library/azure/dn629415.aspx) cmdlet 连接到 Azure RMS 服务：
 
     ```
     Connect-AadrmService
@@ -67,10 +70,10 @@ ms.suite: ems
     Disconnect-AadrmService
     ```
 
-现在可以转到[步骤 3。激活你的 RMS 租户](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration)。
+现在可以转到[步骤 3。激活你的 RMS 租户](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
