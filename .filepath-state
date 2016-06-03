@@ -104,6 +104,9 @@
   "dc4937cd9c03f1ed6786e95f951f7285189703b4": [
     "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md"
   ],
+  "505f2c94bb4fd056b4d2f51c147c6b0b84efac00": [
+    "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
+  ],
   "120fdeb524040539e6908cf841c81cb7366b90f0": [
     "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
   ],
@@ -547,6 +550,9 @@
   ],
   "496edca2e2323e17216858e2ab4844fdb0aa1fb0": [
     "Azure-RMSDocs\\deploy-use\\operations-customer-managed-tenant-key.md"
+  ],
+  "00db0afb2e5d872162f7ac4e361f517623530ae2": [
+    "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
   ],
   "571a214d2bdb420fa8d112a20f0357e703e4230a": [
     "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
