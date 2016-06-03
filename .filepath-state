@@ -107,12 +107,6 @@
   "120fdeb524040539e6908cf841c81cb7366b90f0": [
     "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
   ],
-  "b566c89949ffb0f8b40b37dd66fccf42cbb07dda": [
-    "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
-  ],
-  "d59fe83d8d47cb5ba39323a7cd66c57fe9393ab0": [
-    "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
-  ],
   "85fe0447c2b14eaf16b51f23fed0d259d37b04d7": [
     "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
   ],
@@ -293,15 +287,6 @@
   "5faea360de8aa9ecb82abf25b5c1392d52d0afad": [
     "Azure-RMSDocs\\develop\\enabling-logging.md"
   ],
-  "4d6e00e8ad05e07b445db5b12a709d35ef564986": [
-    "Azure-RMSDocs\\develop\\enabling-logging.md"
-  ],
-  "25c19f3ce2712b414a2cb60f0fba18b3232ee671": [
-    "Azure-RMSDocs\\develop\\enabling-logging.md"
-  ],
-  "476a27a895db001fce67c14aad390d2357414a5b": [
-    "Azure-RMSDocs\\develop\\enabling-logging.md"
-  ],
   "0d92797c5e0f3f59f092c0486678bb99f91f2798": [
     "Azure-RMSDocs\\develop\\file-api-configuration.md"
   ],
@@ -339,12 +324,6 @@
     "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md"
   ],
   "451d3dc162f98b33cb762c795de29a15c0c0be97": [
-    "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md"
-  ],
-  "3142e4ab54ea432847d4c49407b118ebe0d478a6": [
-    "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md"
-  ],
-  "3ee55855f2b43cb2b089bec316e0999518da451b": [
     "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md"
   ],
   "3d3c24401249ddaf7522468e3d24abac66773276": [
@@ -497,24 +476,6 @@
   "6360c91fe95537d3c3780f4c5564d2efc83c547f": [
     "Azure-RMSDocs\\index.md"
   ],
-  "e1175da572ad6985c44f16a1addafe16bf2fe9a1": [
-    "Azure-RMSDocs\\index.md"
-  ],
-  "01086822ad18de5c1b407609c35e3587f48afa11": [
-    "Azure-RMSDocs\\index.md"
-  ],
-  "bf11a118e91d7babc4372312509f64fb855b3e4f": [
-    "Azure-RMSDocs\\index.md"
-  ],
-  "0231b1f135b4cbd2bf353cf67ef0d8ee332b5b52": [
-    "Azure-RMSDocs\\index.md"
-  ],
-  "fac5d64ac14fd4bd156d41e818b0d11af09a87ce": [
-    "Azure-RMSDocs\\index.md"
-  ],
-  "cce97f851d9f4243e9bc3e726f6a7e45e6377e89": [
-    "Azure-RMSDocs\\index.md"
-  ],
   "56f4c7081de95d010364d04e7fab12ff9f7007ee": [
     "Azure-RMSDocs\\deploy-use\\activate-azure-classic.md"
   ],
@@ -579,9 +540,6 @@
     "Azure-RMSDocs\\deploy-use\\install-configure-rms-connector.md"
   ],
   "590148218fdd10e88ba764b2dc523a2213e2c8bb": [
-    "Azure-RMSDocs\\deploy-use\\install-powershell.md"
-  ],
-  "0f403f431e7e275c1cd0023bc6ba499b8bed9bda": [
     "Azure-RMSDocs\\deploy-use\\install-powershell.md"
   ],
   "8a138cdb0dc9b184c6361a879860501ede283ea1": [
@@ -671,19 +629,7 @@
   "f4552994fb8f83120dcadd157cddb150387a169a": [
     "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
   ],
-  "e264f07c107ad82ae0ef4d7f9e9ce2057a7671f6": [
-    "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
-  ],
   "9694b21d3c8175e51f4786f6e1bed27918d7d487": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
-  ],
-  "2fd19a24afde7c2eebfc6ea27c883ffd105a0f63": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
-  ],
-  "01addc0d74e3271a5adb8f561179c4f129050dd5": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
-  ],
-  "badd9ba13b23ff02cf85b8463d525ad31170586d": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
   ],
   "589cd61d24788538ec9a013a236d22cd103ab8ec": [
@@ -707,9 +653,6 @@
   "a38b93a3a32cc9f1b217fa8ae3df79977473ddb3": [
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md"
   ],
-  "d6c97af97be6e9cb56fb53143149fc3cb947c421": [
-    "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md"
-  ],
   "c0e0cacdb1d335f076f41ffb51bed85a62bd3b86": [
     "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
   ],
@@ -723,9 +666,6 @@
     "Azure-RMSDocs\\rms-client\\configure-fci.md"
   ],
   "a1771c37bffa2af60773a5befdd35c14f684c942": [
-    "Azure-RMSDocs\\rms-client\\fci-script.md"
-  ],
-  "6504d53102609234ca2934af1824a90c4730becd": [
     "Azure-RMSDocs\\rms-client\\fci-script.md"
   ],
   "5ec740b4de63c90c9713916dcf104316e727498b": [
