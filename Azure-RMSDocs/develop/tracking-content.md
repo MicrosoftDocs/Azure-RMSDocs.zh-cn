@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
 # 跟踪内容
 
 本主题涵盖了用于实现跟踪受 Rights Management Services SDK 2.1 保护内容的文档的基本指南。
@@ -39,27 +39,27 @@ ms.suite: ems
 
     有关详细信息，请参阅[**许可证元数据属性类型**](/rights-management/sdk/2.1/api/win/license%20metadata%20property%20types#msipc_license_metadata_property_types)。
 
-    -   **IPC_MD_CONTENT_PATH**
+    -   **IPC\_MD\_CONTENT\_PATH**
 
         用此标识跟踪的文档。 如果完整的路径不可用，则只需提供文件名。
 
-    -   **IPC_MD_CONTENT_NAME**
+    -   **IPC\_MD\_CONTENT\_NAME**
 
         用此标识跟踪的文档名称。
 
-    -   **IPC_MD_NOTIFICATION_TYPE**
+    -   **IPC\_MD\_NOTIFICATION\_TYPE**
 
         用于指定发送通知的时间。 有关详细信息，请参阅[**通知类型**](/rights-management/sdk/2.1/api/win/notification%20type#msipc_notification_type)。
 
-    -   **IPC_MD_NOTIFICATION_PREFERENCE**
+    -   **IPC\_MD\_NOTIFICATION\_PREFERENCE**
 
         用于指示通知的类型。 有关详细信息，请参阅[**通知参考**](/rights-management/sdk/2.1/api/win/constants#msipc_notification_preference)。
 
-    -   **IPC_MD_DATE_MODIFIED**
+    -   **IPC\_MD\_DATE\_MODIFIED**
 
         我们建议在每次用户单击“保存”时设置该日期。
 
-    -   **IPC_MD_DATE_CREATED**
+    -   **IPC\_MD\_DATE\_CREATED**
 
         文件的发放日期。
 
@@ -134,6 +134,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

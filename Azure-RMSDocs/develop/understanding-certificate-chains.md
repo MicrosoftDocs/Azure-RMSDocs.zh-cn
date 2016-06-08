@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
 # 了解证书链
 
 开发启用权限的应用程序需要公钥对以及回溯到信任根处的 Microsoft 证书的证书链。
@@ -57,6 +57,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

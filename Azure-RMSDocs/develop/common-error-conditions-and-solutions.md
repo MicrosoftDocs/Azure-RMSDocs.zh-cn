@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
 # 常见错误情形和解决方案
 本主题包括在使用 Rights Management Services SDK 2.1 开发人员工具时可能遇到的最常见的错误信息。 它还提供修复错误的推荐操作（如果适用）。
 
@@ -45,7 +45,7 @@ RMS SDK 2.1 中的某些函数在调试器下可能失效：
 - [IpcGetTemplateIssuerList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
 
 要在调用这些函数后调试代码，必须进入此进程，在函数调用完成后附加调试器。 一种方法是使用 assert 语句进入调试器。 ASSERTE 宏包含在 *Crtdbg.h* 标头中。
-有关 _ASSERTE 的详细信息，请参阅 [_ASSERT、_ASSERTE 宏](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
+有关 \_ASSERTE 的详细信息，请参阅 [\_ASSERT、\_ASSERTE 宏](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
 
 **错误** - *IPCERROR_BROKEN_CERT_CHAIN* - 证书链不匹配。
 
@@ -68,12 +68,12 @@ RMS SDK 2.1 中的某些函数在调试器下可能失效：
 * [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
 * [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
 * [IpcGetTemplateIssuerList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
-* [_ASSERT、_ASSERTE 宏](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
+* [\_ASSERT、\_ASSERTE 宏](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
  
 
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
 # 使用加密
 
 本主题将针对加密包，并显示其使用的一些代码段。
@@ -40,17 +40,17 @@ ms.suite: ems
 
 从 [2015 年 3 月更新](release-notes-rtm.md)开始，我们已经将下列三个标记合并到我们的 API 及其关联的加密包中：
 
--   IPC_ENCRYPTION_PACKAGE_AES256_CBC4K
--   IPC_ENCRYPTION_PACKAGE _AES128_CBC4K
--   IPC_ENCRYPTION_PACKAGE _AES128_ECB（也是不推荐使用的算法）
+-   IPC\_ENCRYPTION\_PACKAGE\_AES256\_CBC4K
+-   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
+-   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB（也称为不推荐使用的算法）
 
-加密包标记（请参阅[**首选加密**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption)）可与我们的新许可证标记 **IPC_LI_PREFERRED_ENCRYPTION_PACKAGE** 结合使用。
+加密包标记（请参阅[**首选加密**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption)）可与我们的新许可证标记 **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE** 结合使用。
 
 以下是一些简单的代码段，用于演示如何使用新的许可证属性。
 
 ## 不推荐使用的算法
 
-我们不再公开 API 中的 **IPC_LI_DEPRECATED_ENCRYPTION_ALGORITHMS** 标记。 这意味着，如果以后的应用程序引用此标记，则这些应用程序将无法再编译，但已使用它构建的应用程序可以继续工作，因为我们遵循 API 代码中的专用标记。
+我们将不再公开 API 中的 **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** 标志。 这意味着，如果以后的应用程序引用此标记，则这些应用程序将无法再编译，但已使用它构建的应用程序可以继续工作，因为我们遵循 API 代码中的专用标记。
 
 只需通过更改一个标记便可利用旧的不推荐使用的加密算法标记的益处。 请参阅下面的代码段示例。
 
@@ -106,6 +106,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

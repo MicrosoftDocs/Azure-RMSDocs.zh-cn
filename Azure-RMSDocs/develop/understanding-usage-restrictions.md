@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
 # 了解使用限制
 
 所有启用 RMS 的应用程序都必须强制实施使用限制。 使用限制是在用户尝试执行操作时产生的结果（例如 打印文档），但该文档的 RMS 策略未授予他们执行该操作的权限（例如 打印权限）。
@@ -44,7 +44,7 @@ ms.suite: ems
 
     评估你自己的应用程序以确定应用哪些使用限制强制点。
 
-    你的应用程序可能不需要[使用限制参考](usage-restriction-reference.md)中所述的所有强制点。 例如，如果你的应用程序不允许用户打印内容，则不需要检查 **IPC_GENERIC_PRINT** 权限。
+    你的应用程序可能不需要[使用限制参考](usage-restriction-reference.md)中所述的所有强制点。 例如，如果你的应用程序不允许用户打印内容，则不需要检查 **IPC\_GENERIC\_PRINT** 权限。
 
 -   更新代码以在每个强制点执行访问检查
 
@@ -63,6 +63,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

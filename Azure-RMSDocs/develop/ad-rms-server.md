@@ -23,9 +23,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
+** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
 
 # AD RMS 服务器
-
 本主题介绍 RMS 服务器的用途和功能。
 
 Rights Management Services (RMS) 的服务器组件通过一组在 [Microsoft Internet Information Services](http://www.iis.net/overview) (IIS) 上运行的 Web 服务实现。 还可以通过 Azure 上的 RMS 使用基于云的实现。 有关使用 Azure Rights Management 服务的详细信息，请参阅 [使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
@@ -65,6 +65,6 @@ Rights Management Services (RMS) 的服务器组件通过一组在 [Microsoft In
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

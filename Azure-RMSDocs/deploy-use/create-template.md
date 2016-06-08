@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -41,16 +41,16 @@ ms.suite: ems
 
     -   从 [Office 365 管理中心](https://portal.office.com/)：
 
-        1.  在左窗格中，单击**服务设置**.
+        1.  在左窗格中，单击“服务设置” 。
 
-        2.  在**服务设置**页中，单击 **Rights Management**.
+        2.  在“服务设置”页中，单击“Rights Management”。
 
-        3.  在**保护你的信息**部分中，单击**管理**.
+        3.  在“保护你的信息”部分中，单击“管理”。
 
-        4.  在 **Rights Management** 部分中，单击**高级功能**.
+        4.  在“Rights Management”部分中，单击“高级功能”。
 
             > [!NOTE]
-            > 如果你尚未激活 Rights Management，请首先单击“激活”并确认你的操作。 有关详细信息，请参阅[激活 Azure Rights Management](activate-service.md).
+            > 如果你尚未激活 Rights Management，请首先单击“激活”并确认你的操作。 有关详细信息，请参阅[激活 Azure Rights Management](activate-service.md)。
             > 
             > 如果你之前未单击“高级功能”，请在激活 Rights Management 后，按照屏幕上的说明获取免费的 Azure 订阅，需要该订阅才能访问 Azure 经典门户。
 
@@ -58,20 +58,19 @@ ms.suite: ems
 
     -   从 [Azure 经典门户](http://go.microsoft.com/fwlink/p/?LinkID=275081)：
 
-        1.  在左窗格中，单击 **ACTIVE DIRECTORY**.
+        1.  在左窗格中，单击“ACTIVE DIRECTORY” 。
 
-        2.  在 **Active Directory** 页中，单击 **RIGHTS MANAGEMENT**.
+        2.  在 **“Active Directory”** 页中，单击 **“权限管理”**。
 
         3.  为权限管理选择要管理的目录。
 
         4.  如果你尚未激活 Rights Management，请单击“激活”并确认你的操作  。
 
-            > [!NOTE]
-            > 有关详细信息，请参阅[激活 Azure Rights Management](activate-service.md).
+            > [!NOTE]有关详细信息，请参阅[激活 Azure 权限管理](activate-service.md)。
 
 2.  创建新模板：
 
-    -   在 Azure 经典门户的**开始使用 Rights Management**快速启动页中，单击**创建新的权限策略模板**.
+    -   在 Azure 经典门户的“开始使用 Rights Management”快速启动页中，单击“创建新的权限策略模板”。
 
         如果你在按照 Office 365 的说明进行操作后没有立刻看到此页，请按上面的 Azure 经典门户导航说明进行操作。
 
@@ -88,13 +87,15 @@ ms.suite: ems
     > [!NOTE]
     > 你选择的用户或组必须有电子邮件地址。 在生产环境中，他们几乎都有电子邮件地址，但在简单的测试环境中，你可能需要为用户帐户或组添加电子邮件地址。
 
-    最佳做法是使用组而不是用户，这样可以简化模板的管理。 如果你具有本地 Active Directory 并同步到 Azure AD，可以使用已启用邮件的安全组或通讯组。 但是，如果你要向组织中的所有用户授予权限，则复制一个默认模板将比指定多个组更有效率。 有关详细信息，请参阅[如何复制模板](copy-template.md).
+    最佳做法是使用组而不是用户，这样可以简化模板的管理。 如果你具有本地 Active Directory 并同步到 Azure AD，可以使用已启用邮件的安全组或通讯组。 但是，如果你要向组织中的所有用户授予权限，则复制一个默认模板将比指定多个组更有效率。 有关详细信息，请参阅[如何复制模板](copy-template.md)。
 
     > [!TIP]
-    > 你可以稍后通过[适用于 Azure Rights Management 的 Windows PowerShell 模块](install-powershell.md)以及下述方法之一将不属于你组织的用户添加到模板中：
+    > 你可以通过选择已启用邮件的组（该组包含 Office 365 或 Exchange Online 的联系人）将组织外的用户（“外部用户”）添加到模板。 这样，你可以按照向组织中的用户分配权限的方式向这些用户分配权限。 例如，可以防止客户编辑你发送给他们的价格列表。 如果组织外部的用户将可通过使用 Outlook Web App 读取受保护的电子邮件，请不要使用此模板配置来保护电子邮件。
     > 
-    > -   **使用权限定义对象更新模板**：在权限定义对象中指定外部电子邮件地址及其权限，然后使用这些地址和权限更新模板。 指定权限定义对象时，可使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) cmdlet 来创建一个变量，然后将该变量提供给 -RightsDefinition 参数，并可使用 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) cmdlet 来修改现有模板。 但是，如果你是将这些用户添加到现有模板中，则还需要在模板中为现有组定义权限定义对象，不仅仅只需为新的外部用户进行此类操作。
-    > -   **导出、编辑和导入已更新的模板**：使用 [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) cmdlet 将模板导出到一个文件中，然后即可对该文件进行编辑，将这些用户的外部电子邮件地址及其权限添加到现有组和权限。 然后，使用 [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) cmdlet 将所做的更改导回到 Azure RMS 中。
+    > 此外，你可以稍后通过[适用于 Azure 权限管理的 Windows PowerShell 模块](install-powershell.md)以及下述方法之一将不属于你组织的用户添加到模板中：
+    > 
+    > -  **使用权限定义对象更新模板**：在权限定义对象中指定外部电子邮件地址及其权限，然后使用这些地址和权限更新模板。 指定权限定义对象时，可使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) cmdlet 来创建一个变量，然后将该变量提供给 -RightsDefinition 参数，并可使用 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) cmdlet 来修改现有模板。 但是，如果你是将这些用户添加到现有模板中，则还需要在模板中为现有组定义权限定义对象，不仅仅只需为新的外部用户进行此类操作。
+    > -  **导出、编辑和导入已更新的模板**：使用 [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) cmdlet 将模板导出到一个文件中，然后即可对该文件进行编辑，将这些用户的外部电子邮件地址及其权限添加到现有组和权限。 然后，使用 [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) cmdlet 将所做的更改导回到 Azure RMS 中。
 
 3.  单击“下一步”按钮，然后为你选择的用户和组分配所列的某一种权限。
 
@@ -117,25 +118,25 @@ ms.suite: ems
 
 7.  在“模板可见性”页上，选择能够在启用 RMS 的应用程序中查看和选择该模板的用户和组。 与前面一样，最佳做法是使用组而不是使用用户，并且你选择的组或用户必须具有电子邮件地址。
 
-8.  单击“下一步”按钮，确定是否需要为部门模板配置应用程序兼容性。 如果需要，请单击**应用程序兼容性**，选中该复选框，然后单击**完成**.
+8.  单击“下一步”按钮，确定是否需要为部门模板配置应用程序兼容性。 如果需要，请单击“应用程序兼容性”，选中该复选框，然后单击“完成”。
 
     为什么你可能需要配置应用程序兼容性？ 并非所有应用程序都可以支持部门模板。 为此，应用程序必须先使用 RMS 服务进行身份验证，然后再下载这些模板。 如果未执行身份验证过程，默认情况下，将无法下载部门模板。 可以通过指定应该下载所有部门模板来覆盖此行为，方法是配置应用程序兼容性，并选中“在应用程序不支持用户标识时，向所有用户显示此模板”  复选框。
 
     例如，如果你在人力资源示例中未为部门模板配置应用程序兼容性，则在使用 RMS 共享应用程序时，将只有人力资源部门中的用户可以看到部门模板，但是在他们从 Exchange Server 2013 使用 Outlook Web Access (OWA) 时，将没有用户可以看到部门模板，因为 Exchange OWA 和 Exchange ActiveSync 目前不支持部门模板。 如果通过配置应用程序兼容性覆盖此默认行为，在使用 RMS 共享应用程序时，将只有人力资源部门中的用户可以看到部门模板，但在使用 Outlook Web Access (OWA) 时，所有用户都可看到部门模板。 如果用户从 Exchange Online 使用 OWA 或 Exchange ActiveSync，则要么所有用户都将看到部门模板，要么没有用户将看到部门模板，具体取决于 Exchange Online 中的模板状态（存档还是已发布）。
 
-    Office 2016 以本机方式支持部门模板，Office 2013 从版本 15.0.4727.1000（于 2015 年 6 月作为 [KB 3054853](https://support.microsoft.com/kb/3054853) 的一部分发布）开始也是如此).
+    Office 2016 以本机方式支持部门模板，Office 2013 从版本 15.0.4727.1000（于 2015 年 6 月作为 [KB 3054853](https://support.microsoft.com/kb/3054853) 的一部分发布）开始也是如此。
 
     > [!NOTE]
     > 如果你的应用程序本身尚不支持部门模板，则可以使用自定义的 RMS 模板下载脚本或其他工具，将这些模板部署到本地 RMS 客户端文件夹。 然后，这些应用程序将正确地只向为模板作用域选择的用户和组显示这些部门模板：
     > 
-    > -   对于 Office 2010，客户端文件夹是 **%localappdata%\Microsoft\DRM\Templates**.
+    > -   对于 Office 2010，客户端文件夹是 **%localappdata%\Microsoft\DRM\Templates**。
     > -   你可以从已下载所有模板的客户端计算机复制模板文件，然后将这些文件粘贴到其他计算机。
     > 
-    > 你可以[从 Microsoft Connect 站点下载自定义的 RMS 模板脚本](http://go.microsoft.com/fwlink/?LinkId=524506)。 如果你在单击此链接时看到错误，则很可能尚未在 Microsoft Connect 中注册。   若要注册，请执行以下操作：
+    > 你可以[从 Microsoft Connect 站点下载自定义的 RMS 模板脚本](http://go.microsoft.com/fwlink/?LinkId=524506)。 如果你在单击此链接时看到错误，则很可能尚未在 Microsoft Connect 中注册。 若要注册，请执行以下操作：
     > 
     > 1.  转到 [Microsoft Connect 站点](http://www.connect.microsoft.com)，并使用 Microsoft 帐户登录。
     > 2.  单击“目录”，并选择“查看当前不接受反馈的 Connect 产品”类别。
-    > 3.  搜索 **Rights Management Services**，对于**Microsoft RMS 企业功能**计划，单击**加入**.
+    > 3.  搜索 **Rights Management Services**，对于“Microsoft RMS 企业功能”计划，单击“加入”。
 
 9. 单击 **“配置”** 并添加用户使用的其他语言，以及使用该语言的模板名称和说明。 具有多语言用户时，应添加他们使用的每一种语言，并使用该语言提供模板名称和说明，这一点非常重要。 用户随后看到的模板名称和说明将使用与他们的客户端操作系统相同的语言，这样可以确保他们理解应用程序于文档或电子邮件的策略。 如果语言与用户的客户端操作系统不匹配，则他们看到的名称和说明将恢复为你最初创建模板时定义的语言。
 
@@ -146,28 +147,28 @@ ms.suite: ems
     |**内容过期时间**|为此模板定义一个日期或天数，受模板保护的文件在到达此日期或经历这些天数后就会打不开。 你可以指定一个日期，也可以指定对文件应用程序保护后所经历的天数。<br /><br />如果你指定一个日期，它将在你当前时区的午夜生效。|
     |**脱机访问**|如果用户必须能够在没有 Internet 连接时打开受保护文件，则使用此设置可以平衡针对这种情况的任何安全要求。<br /><br />如果你指定内容在没有 Internet 连接的情况下不可用，或者指定内容仅在指定天数内可用，则在到达该阈值时，用户必须重新进行身份验证，他们的访问也将被记录。 发生这种情况时，如果他们的凭据不缓存，用户会收到登录后才能打开文件的提示。<br /><br />除了重新进行身份验证之外，还会重新评估策略和用户组成员身份。 这意味着，如果策略或组成员身份相比用户上一次访问文件时发生变化，则他们可能获得与上一次访问相同文件时不同的访问结果。|
 
-10. 当你确信已经为用户正确配置了模板时，请单击**发布**，使得用户能够看到该模板，然后单击**保存**.
+10. 当你确信已经为用户正确配置了模板时，请单击“发布”，使得用户能够看到该模板，然后单击“保存”。
 
-11. 单击经典门户中的“返回”按钮，返回到**模板**页，其中的模板的状态现已更新为**已发布**.
+11. 单击经典门户中的“返回”按钮，返回到“模板”页，其中的模板的状态现已更新为“已发布”。
 
 若要对模板进行任何更改，请选择模板，然后重新使用快速启动步骤。 或者选择以下选项之一：
 
--   添加更多用户和组，并为这些用户和组定义权限：单击**权限**，然后单击**添加**.
+-   添加更多用户和组，并为这些用户和组定义权限：单击“权限”，然后单击“添加”。
 
--   删除你先前选择的用户或组：单击**权限**，从列表中选择用户或组，然后单击**删除**.
+-   删除你先前选择的用户或组：单击“权限”，从列表中选择用户或组，然后单击“删除”。
 
--   若要更改哪些用户可以看到这些模板以便从应用程序中选择它们，请执行以下操作：单击**范围**，然后单击**添加**或**删除**或**应用程序兼容性**.
+-   若要更改哪些用户可以看到这些模板以便从应用程序中选择它们，请执行以下操作：单击“范围”，然后单击“添加”或“删除”或“应用程序兼容性”。
 
--   若要让模板不再对所有用户可见，请执行以下操作：单击**配置**，单击**存档**，然后单击**保存**.
+-   若要让模板不再对所有用户可见，请执行以下操作：单击“配置”，单击“存档”，然后单击“保存”。
 
--   进行其他配置更改：单击**配置**，进行更改，然后单击**保存**.
+-   进行其他配置更改：单击“配置”，进行更改，然后单击“保存”。
 
 > [!WARNING]
-> 当你对以前保存的模板进行更改时，客户端将不会看到对模板的这些更改，直至这些模板在它们的计算机上刷新。 有关详细信息，请参阅[为用户刷新模板](refresh-templates.md).
+> 当你对以前保存的模板进行更改时，客户端将不会看到对模板的这些更改，直至这些模板在它们的计算机上刷新。 有关详细信息，请参阅[为用户刷新模板](refresh-templates.md)。
 
 ## 另请参阅
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO5-->
 
 

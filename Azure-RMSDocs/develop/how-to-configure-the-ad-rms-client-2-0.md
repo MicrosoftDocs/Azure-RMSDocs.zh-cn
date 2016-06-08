@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
 # 配置客户端
 
 本主题包含有关如何配置 Active Directory Rights Management Services 客户端 2.1 的说明。
@@ -53,9 +53,9 @@ ms.suite: ems
 
 以下步骤介绍如何安装开发人员运行时、配置客户端以使用 ISV 证书（预生产）层次结构以及在客户端上设置服务发现。
 
-1.  将开发人员运行时 Ipcsecproc\_isv.dll 从 %MSIPCSDKDIR%\\bin\\x86（对于 32 位版本的 Windows）或 %MSIPCSDKDIR\\bin\\x64（对于 64 位版本的 Windows）复制到 C:\\Program Files\\Active Directory Rights Management Services Client 2.1。
+1.  将开发人员运行时 Ipcsecproc\_isv.dll, from %MSIPCSDKDIR%\\bin\\x86（对于 32 位版本的 Windows）或 %MSIPCSDKDIR\\bin\\x64（对于 64 位版本的 Windows）复制到 C:\\Program Files\\Active Directory Rights Management Services Client 2.1。
 
-    **重要**  如果在 64 位版本的 Windows 上运行 32 位应用程序，则必须将 Ipcsecproc\_isv.dll 从 %MSIPCSDKDIR%\\bin\\x86 复制到 C:\\Program Files(x86)\\Active Directory Rights Management Services Client 2.1。
+    **重要提示**：如果在 64 位版本的 Windows 上运行 32 位应用程序，则必须将 Ipcsecproc\_isv.dll from %MSIPCSDKDIR%\\bin\\x86 复制到 C:\\Program Files(x86)\\Active Directory Rights Management Services Client 2.1。
 
      
 
@@ -129,6 +129,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

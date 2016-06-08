@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/25/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -86,17 +86,18 @@ Exchange Online 计划 1 <br /><br /> Exchange Online 计划 2|否 <br /><br /> 
 ## 公司移动套件订阅
 [免费 30 天试用版](http://go.microsoft.com/fwlink/?LinkId=615385)
 
-此订阅的适用对象是希望结合使用 Azure Active Directory 高级版、Windows Intune 和 Azure Rights Management 的组织。 将 Azure Rights Management 与 Office 一起使用的支持与使用 Azure Rights Management 高级版订阅的支持相同。 
-有关企业移动套件订阅的详细信息，请参阅 [Microsoft 企业移动概述](http://go.microsoft.com/fwlink/?LinkId=615386)。
+此订阅的适用对象是希望结合使用 Azure Active Directory 高级版、Windows Intune 和 Azure Rights Management 的组织。 将 Azure Rights Management 与 Office 一起使用的支持与使用 Azure Rights Management 高级版订阅的支持相同。 有关企业移动套件订阅的详细信息，请参阅 [Microsoft 企业移动概述](http://go.microsoft.com/fwlink/?LinkId=615386)。
 
 ## 个人 RMS 订阅
 此订阅的适用对象是没有部署 Azure RMS 或 AD RMS 的组织中的个人。 它让这些用户能够读取组织使用 Azure RMS 保护的内容，也能够保护他们自己的内容。
+
+你可能会看到此项作为**权限管理即席**列出在 Office 365 管理门户中，并已自动分配给用户。 不要手动将此许可证分配给用户，也不要使用此许可证来为你的组织管理 Azure RMS。 
 
 有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
 ## 后续步骤
 若要查看其他要求，请参阅 [Azure Rights Management 的要求](requirements-azure-rms.md)。
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO5-->
 
 

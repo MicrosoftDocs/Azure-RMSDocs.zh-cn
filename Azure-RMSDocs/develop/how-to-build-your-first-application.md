@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
 # IPCHelloWorld - 一个示例应用程序
 
 本主题包含用于创建启用权限的示例应用程序的说明。
@@ -222,6 +222,6 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

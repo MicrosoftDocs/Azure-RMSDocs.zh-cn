@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
 # 配置 Visual Studio
 
 本主题包含有关如何配置 Visual Studio 项目以使用 Rights Management Services SDK 2.1 的说明。
@@ -42,7 +42,7 @@ ms.suite: ems
 
 1.  将 RMS SDK 2.1 包含目录添加到 Visual Studio 2010 项目。
 
-    在 **“配置属性”** 下，选择 **“VC++ 目录”**，然后将 RMS SDK 2.1 包含目录 **$(MSIPCSDKDIR)\\inc** 添加到 **“包含目录”** 字段。
+    在**配置属性**下，选择 **VC++ 目录**，然后将 RMS SDK 2.1 包含目录 **$(MSIPCSDKDIR)\\inc** 添加到**包含目录**字段。
 
     ![配置属性包含目录字段](../media/include_directories.png)
 
@@ -57,7 +57,7 @@ ms.suite: ems
 
 3.  将 RMS SDK 2.1 库文件添加为 Visual Studio 2010 依赖项。
 
-    在 **“链接器”** 下，选择 **“输入”**，然后将 RMS SDK 2.1 库文件 **Msipc.lib** 和 **Msipc\_s.lib** 添加到 **“附加依赖项”** 字段。
+    在**链接器**下，选择**输入**，然后将 RMS SDK 2.1 库文件 **Msipc.lib** 和 **Msipc\_s.lib** 添加到**附加依赖项**字段。
 
     ![链接器库依赖项字段](../media/additional_dependencies.png)
 
@@ -85,6 +85,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

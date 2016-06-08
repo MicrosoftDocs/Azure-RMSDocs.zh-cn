@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
 # 此 SDK 好在何处
 本主题介绍 Rights Management Services SDK 2.1 相对于原始 [Active Directory Rights Management Services SDK](https://msdn.microsoft.com/library/Cc530379) 在创建启用了权限的应用程序所需的开发人员工作量方面的重大进步。
 
@@ -51,6 +51,6 @@ AD RMS SDK 利用客户端在 Msdrm.dll 中公开的功能，可用于 Windows S
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 
