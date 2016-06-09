@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
+
 # 支持的文件格式
 
 文件 API 支持本机和 Pfile 格式。
@@ -46,9 +46,6 @@ ms.suite: ems
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

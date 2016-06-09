@@ -49,9 +49,7 @@ RMS SDK 2.1 可在 Microsoft 下载中心的 [RMS SDK 2.1 下载页](http://www.
 |[入门](getting-started-with-ad-rms-2-0.md)|借助 RMS SDK 2.1 平台，开发人员可构建利用 RMS 信息保护的应用程序。|
 |[发行说明](release-notes-rtm.md)|本主题包含有关此版本和以前版本的 RMS SDK 2.1 的重要信息。|
 |[代码示例](samples.md)|本主题列出了一组 RMS SDK 2.1 的使用示例，可在 MSDN 下载中心获取。|
-|[使用方法](how-to-use-msipc.md)|针对 RMS SDK 2.1 使用方案和任务的分步指南。|
 |[开发人员说明](developer-notes.md)|本部分涵盖了几个重要开发方案的具体指南。|
-|[开发人员概念](ad-rms-concepts-nav.md)|本部分中的主题介绍 RMS 中的重要概念。|
 |[API 参考](/rights-management/sdk/2.1/api/win/constants)|此部分包含介绍有关所有 API 元素的参考资料的主题。|
 
  
@@ -66,6 +64,6 @@ RMS SDK 2.1 可在 Microsoft 下载中心的 [RMS SDK 2.1 下载页](http://www.
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

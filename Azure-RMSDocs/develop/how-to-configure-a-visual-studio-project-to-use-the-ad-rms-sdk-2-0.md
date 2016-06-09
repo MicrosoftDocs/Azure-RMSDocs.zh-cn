@@ -23,14 +23,14 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
+
 # 配置 Visual Studio
 
 本主题包含有关如何配置 Visual Studio 项目以使用 Rights Management Services SDK 2.1 的说明。
 
 ## 先决条件
 
--   [安装 SDK](create-your-first-rights-aware-application.md)
+-   [安装 SDK](install-the-rms-sdk.md)
 
 **说明**
 
@@ -75,16 +75,12 @@ ms.suite: ems
 
 ## 相关主题
 
-* [使用方法](how-to-use-msipc.md)
-* [安装 SDK](create-your-first-rights-aware-application.md)
+* [安装 SDK](install-the-rms-sdk.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

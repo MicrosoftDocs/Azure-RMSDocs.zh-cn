@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
+
 # 应用程序类型
 
 
@@ -36,7 +36,6 @@ Rights Management Services SDK 2.1 当前支持以下应用程序类型
 简单应用程序可以是为加密提供的文件而构建的命令行工具。 有关启用权限的简单应用程序的示例，请参阅 [IPCHelloWorld - 一个示例应用程序](how-to-build-your-first-application.md)。
 
 ### 服务器模式应用程序
-
 
 *服务器模式* 面向使用、保护或处理受 RMS 保护的内容的非交互式应用程序。 一个示例是 *数据丢失防护* 应用程序，该应用程序在文件服务器上作为服务运行，会自动保护敏感文档。 有关此应用程序类型的示例，请参阅 [IpcDlp 示例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)。
 
@@ -60,19 +59,12 @@ Microsoft 记事本是简单的富客户端应用程序。 Microsoft Office 是�
 
 ## 相关主题
 
-* [开发人员概念](ad-rms-concepts-nav.md)
 * [IpcDlp 示例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
 * [IPCHelloWorld - 一个示例应用程序](how-to-build-your-first-application.md)
 * [设置 API 安全模式](setting-the-api-security-mode-api-mode.md)
 * [了解使用限制](understanding-usage-restrictions.md)
- 
-
- 
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
