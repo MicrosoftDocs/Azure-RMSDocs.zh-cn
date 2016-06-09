@@ -158,9 +158,6 @@
   "2d2cbe580349e1615371a6a76e78140f6577e890": [
     "Azure-RMSDocs\\develop\\understanding-usage-restrictions.md"
   ],
-  "9a13a1e5a9102bd968d7dbd326f370c679952798": [
-    "Azure-RMSDocs\\develop\\understanding-usage-restrictions.md"
-  ],
   "9788b067f9395b9e078e76994a2a8a79e95baf06": [
     "Azure-RMSDocs\\develop\\usage-restriction-reference.md"
   ],
@@ -221,9 +218,6 @@
   "a27d1921336a795df5a3c91b36b97846e74cca34": [
     "Azure-RMSDocs\\develop\\application-types.md"
   ],
-  "199c1fde9b9f317da4e5f942e80485e6ab6178e8": [
-    "Azure-RMSDocs\\develop\\application-types.md"
-  ],
   "261abdeaa0aa70ae7240b6ceddc9d09440f0b48e": [
     "Azure-RMSDocs\\develop\\authentication-integration.md"
   ],
@@ -281,9 +275,6 @@
   "9747c39742c66735b9619036cb77a914563ecf29": [
     "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
   ],
-  "9af22d5ab941c79c14caeaa3aa0ff37d39ff4934": [
-    "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
-  ],
   "54fc5037eaaa5c9ae2557aa6e4c67aa99a4143e6": [
     "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md"
   ],
@@ -335,9 +326,6 @@
   "43e18d71314084c3ade70292dceaa2c73eb8910a": [
     "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
   ],
-  "04129978c02ae2463c3c2ed28aacc657c399340e": [
-    "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
-  ],
   "e9a3f95c8ff289380dc62994e4f719bc174c4900": [
     "Azure-RMSDocs\\develop\\overview.md"
   ],
@@ -360,9 +348,6 @@
     "Azure-RMSDocs\\develop\\setup-developer-environment.md"
   ],
   "58efe60d6066f2e9761aea8d66d83711e68ab642": [
-    "Azure-RMSDocs\\develop\\supported-file-formats.md"
-  ],
-  "28d4c2d709f91fc2e82e7404747ed757a1899e3b": [
     "Azure-RMSDocs\\develop\\supported-file-formats.md"
   ],
   "baf08d04f836e5aa406f125a7029bc43297f5df1": [
