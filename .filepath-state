@@ -149,6 +149,9 @@
   "6a6f9d8c0a98752413a99d30926f2b5bc8af193d": [
     "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md"
   ],
+  "c90b1d2257bcf3fd355e810e5f9654683c693454": [
+    "Azure-RMSDocs\\develop\\release-notes-rtm.md"
+  ],
   "0b96b3ed908404a774a5c0b67acd5f0841af028b": [
     "Azure-RMSDocs\\develop\\release-notes-rtm.md"
   ],
@@ -157,6 +160,12 @@
   ],
   "43263ed51886b013525f7e00c272c5ef0a9e9e64": [
     "Azure-RMSDocs\\develop\\release-notes-rtm.md"
+  ],
+  "ecea78cf6eb31e1a3a3a512e6bb19dc769d1766c": [
+    "Azure-RMSDocs\\develop\\tracking-content.md"
+  ],
+  "b05708694e669f9d1bd28038643d4bf34729a239": [
+    "Azure-RMSDocs\\develop\\tracking-content.md"
   ],
   "2d2cbe580349e1615371a6a76e78140f6577e890": [
     "Azure-RMSDocs\\develop\\understanding-usage-restrictions.md"
@@ -260,10 +269,10 @@
   "f4ef711085d2a029ab951b30b4929358e774028d": [
     "Azure-RMSDocs\\develop\\deploying-your-application.md"
   ],
-  "6dab30ad0317a8fa40ca5d3fbf65d547a8346510": [
+  "2f2323f32327324611df2b2e8a8824e6896546aa": [
     "Azure-RMSDocs\\develop\\developer-notes.md"
   ],
-  "2f2323f32327324611df2b2e8a8824e6896546aa": [
+  "6dab30ad0317a8fa40ca5d3fbf65d547a8346510": [
     "Azure-RMSDocs\\develop\\developer-notes.md"
   ],
   "d3a8f5f2a97920f35e261bf6f444a1ecce4c5302": [
@@ -316,6 +325,9 @@
   ],
   "60e6147e99131f14a2a29061c31e8f9302a0aaea": [
     "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md"
+  ],
+  "9872317c2d5f5f56f28ed2683d7ebc9743041a37": [
+    "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md"
   ],
   "e8b2d466224fcbf431859eebed04866544633402": [
     "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md"
@@ -400,6 +412,9 @@
   ],
   "c56c4248ac8754c48b6f411a58c6ba93559aed7f": [
     "Azure-RMSDocs\\plan-design\\thales-hsm.md"
+  ],
+  "be6146447e6fadd79d6c10f241566febc1f3d784": [
+    "Azure-RMSDocs\\develop\\TOC.md"
   ],
   "fdc6fa1ae9b1367eeb1a64aa2ad5c83f8397ad3b": [
     "Azure-RMSDocs\\develop\\TOC.md"
