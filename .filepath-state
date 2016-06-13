@@ -323,6 +323,9 @@
   "3d3c24401249ddaf7522468e3d24abac66773276": [
     "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
   ],
+  "4c273efa683827dc8f731a6dadb3f50bf53ea616": [
+    "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md"
+  ],
   "f2bc4efb5ab97808e0c72bbb3d729acfbaea2035": [
     "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md"
   ],
@@ -416,6 +419,9 @@
   "c56c4248ac8754c48b6f411a58c6ba93559aed7f": [
     "Azure-RMSDocs\\plan-design\\thales-hsm.md"
   ],
+  "6133f3140e3632abdf183b27f4a77bd217c4cc3f": [
+    "Azure-RMSDocs\\develop\\TOC.md"
+  ],
   "338b23f924caeb1511fc8d8f5a66464f1cd5729a": [
     "Azure-RMSDocs\\develop\\TOC.md"
   ],
@@ -433,6 +439,9 @@
   ],
   "61321eaaeac31fec827fcf9f350211728eaf630a": [
     "Azure-RMSDocs\\deploy-use\\deploy-use.md"
+  ],
+  "18f8958985043609a89171cd86771b922cf43daa": [
+    "Azure-RMSDocs\\develop\\api-reference-2-1.md"
   ],
   "4f1eeb2beb74b3ca23184c5826b109bb517a98d7": [
     "Azure-RMSDocs\\develop\\api-reference-2-1.md"
@@ -574,6 +583,9 @@
   ],
   "0e909b0f972fd597e60abea04b476d9a956886f3": [
     "Azure-RMSDocs\\get-started\\faqs.md"
+  ],
+  "361b4b89a6db54400e43d6faeedd03ae80422363": [
+    "Azure-RMSDocs\\get-started\\information-support.md"
   ],
   "f9a07153d5cf1fec900fc8808bbaca1f7d2ac060": [
     "Azure-RMSDocs\\get-started\\information-support.md"
@@ -758,6 +770,9 @@
   "55f17d42165d2b6b5e1765a81bf7d799a14e996a": [
     "Azure-RMSDocs\\develop\\android-namespaces.md"
   ],
+  "8b398b1dcd6054437e58ee4abe900d8662ab4fbf": [
+    "Azure-RMSDocs\\develop\\adal-auth.md"
+  ],
   "988cb7794f6ee6337e8063dd9ee35932f0697832": [
     "Azure-RMSDocs\\develop\\adal-auth.md"
   ],
@@ -781,5 +796,8 @@
   ],
   "ebaa8aad463bebe7cc2691bddac4cc7ace3c8991": [
     "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
+  ],
+  "d238227ffa06a0d6e3e0e19a5f982e5ca567ecc4": [
+    "Azure-RMSDocs\\develop\\how-to-use-adal-authentication-4-2.md"
   ]
 }
