@@ -254,6 +254,9 @@
   "1476cfafbc3ecf619e66fee22f657c1714deffe8": [
     "Azure-RMSDocs\\develop\\community-resources.md"
   ],
+  "6dcae58c35c08a014c33d9fedb6f44ad69d2ab8f": [
+    "Azure-RMSDocs\\develop\\core-concepts.md"
+  ],
   "7832f87febd6d9f87a3975c2084caca7aa73b9fc": [
     "Azure-RMSDocs\\develop\\core-concepts.md"
   ],
@@ -371,6 +374,9 @@
   "d6920b8ce09b39d98da9e9c197b17a1f13d21c8e": [
     "Azure-RMSDocs\\develop\\linux-setup.md"
   ],
+  "866a8f1ec80ecb5b91fcc2915d11f5ef61543c32": [
+    "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
+  ],
   "6f9af1211ba0c0802abdeb2376c8c1d52140ff96": [
     "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
   ],
@@ -418,6 +424,9 @@
   ],
   "c56c4248ac8754c48b6f411a58c6ba93559aed7f": [
     "Azure-RMSDocs\\plan-design\\thales-hsm.md"
+  ],
+  "a33b18035f5553e0a3c43c521ad49d8ac173a68d": [
+    "Azure-RMSDocs\\develop\\TOC.md"
   ],
   "6133f3140e3632abdf183b27f4a77bd217c4cc3f": [
     "Azure-RMSDocs\\develop\\TOC.md"
@@ -796,6 +805,9 @@
   ],
   "ebaa8aad463bebe7cc2691bddac4cc7ace3c8991": [
     "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
+  ],
+  "12d26cb3a08231c92ebdf9f1e3317618c2f0ec04": [
+    "Azure-RMSDocs\\develop\\how-to-use-adal-authentication-4-2.md"
   ],
   "d238227ffa06a0d6e3e0e19a5f982e5ca567ecc4": [
     "Azure-RMSDocs\\develop\\how-to-use-adal-authentication-4-2.md"
