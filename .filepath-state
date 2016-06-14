@@ -242,6 +242,9 @@
   "a27d1921336a795df5a3c91b36b97846e74cca34": [
     "Azure-RMSDocs\\develop\\application-types.md"
   ],
+  "59993b85c8e8a5e8ba3f80aa86c421ecbfac656b": [
+    "Azure-RMSDocs\\develop\\authentication-integration.md"
+  ],
   "261abdeaa0aa70ae7240b6ceddc9d09440f0b48e": [
     "Azure-RMSDocs\\develop\\authentication-integration.md"
   ],
@@ -253,6 +256,9 @@
   ],
   "1476cfafbc3ecf619e66fee22f657c1714deffe8": [
     "Azure-RMSDocs\\develop\\community-resources.md"
+  ],
+  "0c9420483cfeeb0d3345ffe42227c92486994fa1": [
+    "Azure-RMSDocs\\develop\\core-concepts.md"
   ],
   "6dcae58c35c08a014c33d9fedb6f44ad69d2ab8f": [
     "Azure-RMSDocs\\develop\\core-concepts.md"
@@ -425,6 +431,9 @@
   "c56c4248ac8754c48b6f411a58c6ba93559aed7f": [
     "Azure-RMSDocs\\plan-design\\thales-hsm.md"
   ],
+  "920e99af6836fb7a94815fc41332c418d7f01d94": [
+    "Azure-RMSDocs\\develop\\TOC.md"
+  ],
   "a33b18035f5553e0a3c43c521ad49d8ac173a68d": [
     "Azure-RMSDocs\\develop\\TOC.md"
   ],
@@ -563,6 +572,9 @@
   "496edca2e2323e17216858e2ab4844fdb0aa1fb0": [
     "Azure-RMSDocs\\deploy-use\\operations-customer-managed-tenant-key.md"
   ],
+  "c221a7116250cceabcf6484b5b9348141af1346b": [
+    "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
+  ],
   "00db0afb2e5d872162f7ac4e361f517623530ae2": [
     "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
   ],
@@ -665,8 +677,14 @@
   "8c2ebdbdfec2465475f6ce7daa2dafd35b874329": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase3.md"
   ],
+  "a307f939515d8f81077c73e9b29aa9015b256c7a": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
+  ],
   "590825c8d180604426482a55f7edcd5e3c6d0243": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
+  ],
+  "6544421afc1291f5fc7d99ecad71146f0cb4bb1d": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
   ],
   "44241219d6d699d1c6ac208bf753fe6cad35b36a": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
@@ -680,6 +698,9 @@
   "a38b93a3a32cc9f1b217fa8ae3df79977473ddb3": [
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md"
   ],
+  "f0ba9f31dcc3b349a14f3a820f3c86ab19937d87": [
+    "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
+  ],
   "c0e0cacdb1d335f076f41ffb51bed85a62bd3b86": [
     "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
   ],
@@ -688,6 +709,9 @@
   ],
   "ffddda9a144b23b64b54df4fe4d25ec62600599d": [
     "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
+  ],
+  "afb00e010df25dea5f3c3cad23824f773de59b18": [
+    "Azure-RMSDocs\\rms-client\\configure-fci.md"
   ],
   "8643e856a5de08be4fbe423d92b7d2619b47d3dd": [
     "Azure-RMSDocs\\rms-client\\configure-fci.md"
