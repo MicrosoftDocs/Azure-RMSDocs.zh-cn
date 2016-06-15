@@ -242,6 +242,9 @@
   "a27d1921336a795df5a3c91b36b97846e74cca34": [
     "Azure-RMSDocs\\develop\\application-types.md"
   ],
+  "b6e30ce14c5eb5f387a65d7f78fbb1c3abcabd1a": [
+    "Azure-RMSDocs\\develop\\authentication-integration.md"
+  ],
   "59993b85c8e8a5e8ba3f80aa86c421ecbfac656b": [
     "Azure-RMSDocs\\develop\\authentication-integration.md"
   ],
@@ -256,6 +259,9 @@
   ],
   "1476cfafbc3ecf619e66fee22f657c1714deffe8": [
     "Azure-RMSDocs\\develop\\community-resources.md"
+  ],
+  "ebb08fbea18473cccca5897372b97f192200acca": [
+    "Azure-RMSDocs\\develop\\core-concepts.md"
   ],
   "0c9420483cfeeb0d3345ffe42227c92486994fa1": [
     "Azure-RMSDocs\\develop\\core-concepts.md"
@@ -430,6 +436,9 @@
   ],
   "c56c4248ac8754c48b6f411a58c6ba93559aed7f": [
     "Azure-RMSDocs\\plan-design\\thales-hsm.md"
+  ],
+  "bf36217b4e3e59a6590e0f8cb21cfa9c28ec628d": [
+    "Azure-RMSDocs\\develop\\TOC.md"
   ],
   "920e99af6836fb7a94815fc41332c418d7f01d94": [
     "Azure-RMSDocs\\develop\\TOC.md"
