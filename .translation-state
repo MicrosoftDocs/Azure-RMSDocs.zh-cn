@@ -73820,9 +73820,9 @@
       "ArchiveFileCommit": "7306ad5acce3687806a0fd8c5703e879a967ef8c",
       "ArchiveFileDateTime": "2016-06-09T02:43:40.7574703Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf",
+      "BilingualFileCommit": "dddbb98a997ad93db9c3d71f26c13a92f5536749",
+      "BilingualDateTime": "2016-06-16T13:24:10.9231044Z",
       "BilingualException": null
     },
     "9747c39742c66735b9619036cb77a914563ecf29": {

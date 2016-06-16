@@ -1395,8 +1395,8 @@
 * Archive Datetime: 2016-06-09 02:43:40
 * Handback File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/dddbb98a997ad93db9c3d71f26c13a92f5536749/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf)
 * Handback Datetime: 2016-06-16 13:22:33
-* Bilingual File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/a3f74baa018f36520682fb7ef45192b62b605d63/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-16 10:21:50
+* Bilingual File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/dddbb98a997ad93db9c3d71f26c13a92f5536749/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf)
+* Bilingual Datetime: 2016-06-16 13:24:10
 * [Back to Top](#report-top)
 
 ##### <a name='e75ec6c04afd171552697f79deb33ad2cfe2c4e167'></a> Source: [Azure-RMSDocs\develop\how-to-build-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/how-to-build-your-first-application.md)
