@@ -23,25 +23,33 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
 # 入门
 
-Rights Management Services SDK 2.1 平台使开发人员可以构建利用 RMS 信息保护的应用程序。 该平台可处理复杂的安全实践（如密钥管理、加密和解密处理），并提供简化 API 以便轻松开发应用程序。
+Rights Management Services SDK 2.1 平台使开发人员可以通过 RMS 服务器或 Azure RMS 构建利用 RMS 信息保护的应用程序。 该平台可处理复杂的安全实践（如密钥管理、加密和解密处理），并提供简化 API 以便轻松开发应用程序。
 
 ## RMS SDK 2.1 入门
 
-阅读这些部分（见下面）：
+本主题将指导你完成设置过程以及在测试环境中运行启用权限的应用程序的过程。 以下主题讨论如何设置开发环境，其列出方式表示执行任务时可以使用的建议顺序。
 
--   为什么使用 RMS SDK 2.1 保护你的内容
--   核心原则
+## 本部分内容
+
+| 主题 | 描述 |
+|-------|-------------|
+| [发行说明](release-notes-rtm.md) | 本主题包含有关此版本和以前版本的 RMS SDK 2.1 的重要信息。|
+| [安装 SDK](install-the-rms-sdk.md) | 本主题指导你完成安装开发人员工具的过程。|
+| [配置 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | 本主题包含有关如何配置 Visual Studio 项目以使用 RMS SDK 2.1 的说明。|
+| [开发应用程序](developing-your-application.md) | 本主题包含启用了 RMS 的应用程序的核心层面的基本指南，可作为应用程序开发的基础。|
+| [测试应用程序](running-your-first-application.md) |本主题包含有关如何为应用程序测试进行设置的说明。|
+| [部署到生产](deploying-your-application.md) |本主题将引导你完成启用权限的应用程序的部署选项。|
+
+开始之后，请查看我们的其他一些 [RMS 示例](samples.md)。 然后可通过我们的 [RMS 开发人员活动角](http://blogs.msdn.com/b/rms/) 来了解最新信息。
+
 
 遵循以下这些主题中的指导原则来尝试使用 RMS SDK 2.1：
 
--   [安装 SDK](create-your-first-rights-aware-application.md)
+-   [安装 SDK](install-the-rms-sdk.md)
 -   [测试启用权限的应用程序](running-your-first-application.md)
 -   [IPCHelloWorld - 一个示例应用程序](how-to-build-your-first-application.md)
-
-开始之后，请查看我们的其他一些 [RMS 示例](samples.md)。 然后可通过我们的 [RMS 开发人员活动角](http://blogs.msdn.com/b/rms/) 来了解最新信息。
 
 ### 为什么使用 RMS SDK 2.1 保护你的内容
 
@@ -65,19 +73,15 @@ RMS SDK 2.1 支持一系列重要的客户端和服务器平台。 有关详细�
 
 * [AD RMS 示例](samples.md)
 * [AD RMS 开发人员活动角](http://blogs.msdn.com/b/rms/)
-* [安装 SDK](create-your-first-rights-aware-application.md)
+* [安装 SDK](install-the-rms-sdk.md)
 * [IPCHelloWorld - 一个示例应用程序](how-to-build-your-first-application.md)
 * [概述](ad-rms-overview.md)
 * [受支持的平台](supported-platforms.md)
-* [测试启用权限的应用程序](running-your-first-application.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
