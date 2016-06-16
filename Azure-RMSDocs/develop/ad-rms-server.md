@@ -30,7 +30,7 @@ ms.suite: ems
 
 **Azure RMS** - 有关使用 Azure Rights Management 服务的信息，请参阅[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
-> [AZURE.IMPORTANT] 我们建议通过 Azure RMS 开发和测试你的应用程序。
+> [!IMPORTANT] 我们建议通过 Azure RMS 开发和测试你的应用程序。
 
 **Windows Server** - 对于本地服务器上的 RMS，从 Windows Server 2008 开始，可以通过将 RMS 服务作为角色进行添加来安装和配置它。 若要在以前的操作系统上安装该服务，请从 Microsoft 下载中心下载它（地址是 [Microsoft Windows Rights Management Services with Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909)）。
 

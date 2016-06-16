@@ -28,17 +28,6 @@ ms.suite: ems
 
 本主题包含有关此版本和以前版本的 RMS SDK 2.1 的重要信息。
 
-- [2016 年 2 月新增内容 - SDK 文档更新](#new-for-the-february-2016-sdk-documentation-update)
-- [2015 年 12 月更新](#december-2015-update)
-- [2015 年 5 月更新](#may-2015-update)
-- [2015 年 4 月更新](#april-2015-update)
-- [2015 年 1 月更新](#january-2015-update)
-- [2014 年 10 月更新](#october-2014-update)
-- [2014 年 7 月更新](#july-2014-update)
-- [重要的开发人员说明](#important-developer-notes)
-- [常见问题](#frequently-asked-questions)
-- [相关主题](#related-topics)
-
 ## 2016 年 2 月新增内容 - SDK 文档更新
 
 >[!Note]  本部分中的功能文档更新适用于 2015 年 12 月 11 日后下载的 SDK。

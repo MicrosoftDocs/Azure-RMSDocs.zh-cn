@@ -67,14 +67,14 @@ ms.suite: ems
 
 - **Off**：禁用加密。
 
-> [AZURE.NOTE] 此设置对解密没有任何影响。 只要用户具有 **EXTRACT** 权限，就可解密任何加密文件（无论是使用本机保护还是 Pfile 保护进行加密）。
+> [!Note] 此设置对解密没有任何影响。 只要用户具有 **EXTRACT** 权限，就可解密任何加密文件（无论是使用本机保护还是 Pfile 保护进行加密）。
 
 - **Native**：使用本机加密。 对于 Office 文件，加密文件将具有与原始文件相同的扩展名。 例如，文件扩展名为 .docx 的文件将被加密为扩展名为 .docx 的文件。 对于其他可以应用本机保护的文件，会将文件加密为具有 p*zzz* 扩展名格式的文件，其中 *zzz* 是原始文件扩展名。 例如，.txt 文件将加密为扩展名为 .ptxt 的文件。 下面包含了可以应用本机保护的文件扩展名的列表。
 
 - **Pfile**：使用 PFile 加密。 加密的文件会将 .pfile 追加到原来的扩展名。 例如，加密后，.txt 文件的文件扩展名将为 .txt.pfile。
 
 
-> [AZURE.NOTE] 此设置对于 Office 文件格式没有任何影响。 例如，如果 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` 值设置为&quot;Pfile”，则仍将使用本机保护加密 .docx 文件，并且加密的文件仍将使用 .docx 作为文件扩展名。
+> [!Note] 此设置对于 Office 文件格式没有任何影响。 例如，如果 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` 值设置为&quot;Pfile”，则仍将使用本机保护加密 .docx 文件，并且加密的文件仍将使用 .docx 作为文件扩展名。
 
 设置任何其他值或不设置任何值将导致默认行为。
 
