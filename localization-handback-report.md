@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2c6b1ebbdd7a666be47a9e3ca6ddf236455afa7d/Azure-RMSDocs/develop/getting-started-with-ad-rms-2-0.md) | InSyncHandedBackSuccess | [Details](#7d362d91736d5167808a88d487de45049b3b488366)
 
 ## Item Details
+##### <a name='7d362d91736d5167808a88d487de45049b3b488366'></a> Source: [Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2c6b1ebbdd7a666be47a9e3ca6ddf236455afa7d/Azure-RMSDocs/develop/getting-started-with-ad-rms-2-0.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/610d6ecd0b2742aaa9852e6fa7414dd730640ec8/Azure-RMSDocs/develop/getting-started-with-ad-rms-2-0.md)
+* Handoff File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/b4d579750aa816860714b65a1fee1c8d8b1af7fd/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf)
+* Handoff Datetime: 2016-06-09 01:54:47
+* Handoff Reason: Include
+* Archive File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/7306ad5acce3687806a0fd8c5703e879a967ef8c/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/archive/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf)
+* Archive Datetime: 2016-06-09 02:43:40
+* Handback File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/dddbb98a997ad93db9c3d71f26c13a92f5536749/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf)
+* Handback Datetime: 2016-06-16 13:22:33
+* Bilingual File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/a3f74baa018f36520682fb7ef45192b62b605d63/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-cn.xlf)
+* Bilingual Datetime: 2016-06-16 10:21:50
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
