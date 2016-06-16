@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -43,7 +43,7 @@ ms.suite: ems
 
     -   特定权限：查看内容、保存文件、编辑内容、查看分配的权限、允许宏、转发、答复、全部答复
 
-此外，[RMS 共享应用程序](../rms-client/sharing-app-windows.md)让用户能够定义他们自己的一组权限。 对于 Outlook 客户端和 Outlook Web Access，用户可为电子邮件选择“不要转发”选项  。
+此外，[RMS 共享应用程序](../rms-client/sharing-app-windows.md)让用户能够定义他们自己的一组权限。 对于 Outlook 客户端和 Outlook Web Access，用户可选择[“不得转发”选项](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)。
 
 对于很多组织，默认模板可能足以满足他们的需求。 但如果你希望创建自己的自定义权限策略模板，也可以这样做。 创建自定义模板有以下原因：
 
@@ -72,6 +72,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO1-->
 
 

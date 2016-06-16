@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/02/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -66,7 +66,7 @@ ms.suite: ems
 
 - 内容密钥作为文档中的策略的一部分，使用组织的 RSA 密钥（称为“Azure RMS 租户密钥”）进行保护，并且策略也由文档的作者签名。 此租户密钥由受 Azure RMS 保护的组织的所有文档和电子邮件共有，如果组织使用的是客户管理的租户密钥（称为“自带密钥”或 BYOK），则此密钥只能由 Azure RMS 管理员更改。 
 
-    此租户密钥在 Microsoft Online Services 中、在高度控制的环境中和严密监视下进行保护。 当你使用客户管理的租户密钥 (BYOK) 时，通过在每个 Azure 区域中使用一组高端硬件安全模块 (HSM) 增强了此安全性，从而在任何情况下都无法提取、导出或共享这些密钥。 有关租户密钥和 BYOK 的详细信息，请参阅[计划和实现你的 Azure Rights Management 租户密钥](../plan-design/plan-implement-tenant-key.md).
+    此租户密钥在 Microsoft Online Services 中、在高度控制的环境中和严密监视下进行保护。 当你使用客户管理的租户密钥 (BYOK) 时，通过在每个 Azure 区域中使用一组高端硬件安全模块 (HSM) 增强了此安全性，从而在任何情况下都无法提取、导出或共享这些密钥。 有关租户密钥和 BYOK 的详细信息，请参阅 [计划和实现你的 Azure Rights Management 租户密钥](../plan-design/plan-implement-tenant-key.md)。
 
 - 发送到 Windows 设备的许可证和证书使用客户端设备私钥（用户在设备上第一次使用 Azure RMS 时创建）进行保护。 而该私钥则使用客户端上的 DPAPI 进行保护，DPAPI 使用从用户的密码派生的密钥来保护这些机密。 在移动设备上，只使用这些密钥一次，因此由于这些密钥不存储在客户端上，而无需在设备上保护这些密钥。 
 
@@ -77,8 +77,7 @@ ms.suite: ems
 
 初始化用户环境后，该用户可以保护文档，或使用该计算机上的受保护文档。
 
-> [!NOTE]
-> 如果此用户移至另一台 Windows 计算机，或另一个用户使用这同一台 Windows 计算机，请重复该初始化过程。
+> [!NOTE] 如果此用户移至另一台 Windows 计算机，或另一个用户使用这同一台 Windows 计算机，请重复该初始化过程。
 
 ### 初始化用户环境
 在用户可以保护内容或使用 Windows 计算机上的受保护内容之前，必须在设备上准备用户环境。 这是一次性的过程，当用户尝试保护或使用受保护内容时会自动发生，无需用户干预：
@@ -87,7 +86,7 @@ ms.suite: ems
 
 **步骤 1 中发生的情况**：计算机上的 RMS 客户端首先连接到 Azure RMS，并通过使用其 Azure Active Directory 帐户对用户进行身份验证。
 
-将用户的帐户与 Azure Active Directory 联合时，会自动进行这种身份验证，并且不会提示用户输入凭据。|
+将用户的帐户与 Azure Active Directory 联合时，会自动进行这种身份验证，并且不会提示用户输入凭据。
 
 ![RMS 客户端激活 - 步骤 2](../media/AzRMS_useractivation2.png)
 
@@ -148,14 +147,13 @@ ms.suite: ems
 
 若要了解 Azure RMS 的详细信息，请参阅 **了解和探索** 部分中的其他文章（如 [应用程序如何支持 Azure Rights Management](applications-support.md)），了解你的现有应用程序如何通过与 Azure RMS 集成来提供信息保护解决方案。 
 
-请查看 [Azure Rights Management术语](../get-started/terminology.md)，以便熟悉在配置和使用 Azure RMS 时可能遇到的术语。此外，还要确保在开始部署前查看 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)。 如果你要进一步研究并亲自尝试一下，请使用 [Azure Rights Management 快速入门教程](../get-started/quick-start-tutorial.md).
+请查看 [Azure Rights Management术语](../get-started/terminology.md)，以便熟悉在配置和使用 Azure RMS 时可能遇到的术语。此外，还要确保在开始部署前查看 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)。 如果你要进一步研究并亲自尝试一下，请使用 [Azure Rights Management 快速入门教程](../get-started/quick-start-tutorial.md)。
 
 当你做好开始为组织部署 Azure RMS 的准备时，请使用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md) 获取部署步骤和操作说明链接。
 
-> [!TIP]
-> 有关其他信息和帮助，请使用 [Azure Rights Management 的信息和支持](../get-started/information-support.md)中的资源和链接.
+> [!TIP] 有关其他信息和帮助，请使用 [Azure Rights Management 的信息和支持中的资源和链接](../get-started/information-support.md)。
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

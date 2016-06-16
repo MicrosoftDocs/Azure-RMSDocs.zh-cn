@@ -1,71 +1,33 @@
 ---
-# required metadata
+# 必需元数据
 
-title: 安装并配置服务器 | Azure RMS
-description: 安装并配置 RMS 服务器以便测试启用权限的应用程序。
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# optional metadata
+标题：操作说明：安装和配置 RMS 服务器并用其进行测试 |Azure RMS 说明：安装并配置 RMS 服务器以便测试启用权限的应用程序。
+keywords: author: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
+# 可选元数据
 
 #ROBOTS:
 audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
-# 安装并配置服务器
 
-本主题介绍用于安装并配置 RMS 服务器以便测试启用权限的应用程序的步骤。
+# 操作说明：安装和配置 RMS 服务器并用其进行测试
 
-**重要说明**  如果要通过在单框 RMS ISV 环境上运行来测试应用程序，则无需安装 RMS 服务器，因为已在单框环境中安装并配置了一台服务器。
-有关单框 AD RMS ISV 环境的详细信息，请参阅 [设置测试环境](how-to-set-up-your-test-environment.md)。
-
+本主题介绍用于连接 RMS 服务器或 Azure RMS 以便测试启用权限的应用程序的步骤。
  
-
 ## 说明
 
 ### 步骤 1：设置 RMS 服务器
 
 以下步骤指导你设置 RMS 服务器，包括：
 
--   配置注册表
 -   安装服务器
 -   注册服务器
 
-1.  **配置注册表**
-
-    若要指定在使用预生产证书层次结构，请设置以下注册表值。
-
-    **注意**  如果使用 Windows Server 2008 R2 或 Windows Server 2008，请在安装 AD RMS 服务之前设置注册表值。
-
-    如果要在 Windows Server 2008 R2 上使用 AD RMS，则必须设置以下 **REG\_DWORD** 值。 将此值更改为 0（零）可切换到生产层次结构。
-
-    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**Hierarchy** = 0x00000001
-
-    如果要在 Windows Server 2008 R2 上使用 AD RMS，并且其他 AD RMS 服务已作为预生产服务部署在 Active Directory 中，请向注册表添加以下空字符串值。
-
-    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**GICURL** = ""
-
-    如果要在 Windows Server 2008 上使用 AD RMS，则必须设置以下 **REG\_DWORD** 值。 将此值更改为 0（零）可切换到生产层次结构。
-
-    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**2.0**\\**Hierarchy** = 0x00000001
-
-    如果要在 Windows Server 2008 上使用 AD RMS，并且其他 AD RMS 服务已作为预生产服务部署在 Active Directory 中，请向注册表添加以下空字符串值。
-
-    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**2.0**\\**GICURL** = ""
-
-2.  **安装服务器**
+1.  **安装服务器**
 
     Active Directory Rights Management Services (AD RMS) 由单独的客户端和服务器组件组成。 服务器组件作为一组 Web 服务实现，可以用于管理 RMS 基础结构、向内容使用者和发布者颁发许可证以及向计算机和用户颁发证书。
 
@@ -73,11 +35,9 @@ ms.suite: ems
 
     -   [RMS Server v1.0 SP2](http://go.microsoft.com/fwlink/p/?linkid=73722)
 
-    若要在 Windows Server 2008 上配置服务器组件，必须安装 AD RMS 角色。 但是在这样做之前，必须配置注册表，以指定将使用预生产证书层次结构而不是生产层次结构。 但是，如果要针对以前的服务器操作系统开发应用程序，请在安装 RMS server v1.0 SP2 之后，但是设置 RMS 服务之前配置注册表。
+    若要在 Windows Server 2008 上配置服务器组件，必须安装 AD RMS 角色。 如果要针对以前的服务器操作系统开发应用程序，请在安装 RMS server v1.0 SP2 之后，但是设置 RMS 服务之前配置注册表。
 
-    有关详细信息，请参阅上一个步骤（步骤 1）“配置注册表”。
-
-3.  **注册服务器**
+2.  **注册服务器**
 
     必须注册 Rights Management Services (RMS) 服务器才能在预生产或生产层次结构中标识它。 注册过程会在服务器计算机上留下一个服务器许可发放方证书。 此证书会链接回 Microsoft 信任根。 如何注册服务器取决于所使用的 RMS 版本。
 
@@ -85,23 +45,47 @@ ms.suite: ems
 
         从 Windows Server 2008 开始，你可以在相应的层次结构中注册 RMS 服务器而不向 Microsoft 发送信息。 安装 RMS 角色时，还会安装自动注册证书和私钥。 这些用于自动创建服务器许可发放方证书。 不会与 Microsoft 交换任何信息。
 
-    -   **联机注册** 如果使用的是 AD RMS v1.0 SP2，则可以联机注册服务器。 注册会在设置过程中在后台进行，但是你必须具有 Internet 连接且必须指定相应注册表值以确定在其中注册服务器的层次结构。 若要在预生产层次结构中注册，请添加以下 **REG\_SZ** 值并设置服务器。 若要在生产层次结构中注册，请清除此值并设置服务器。
+    -   **联机注册**
 
-        有关详细信息，请参阅上一个步骤（步骤 1）“配置注册表”。
+        如果使用的是 AD RMS v1.0 SP2，则可以联机注册服务器。 预配过程中将在后台注册，但必须具有 Internet 连接。
 
         **HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**1.0**\\**UddiProvider** = 0e3d9bb8-b765-4a68-a329-51548685fed3
 
-## 相关主题
+3. **使用 RMS 服务器进行测试**
 
-* [使用方法](how-to-use-msipc.md)
+    要使用 RMS 服务器进行测试，请配置服务器端发现或客户端发现，以使 Rights Management 服务客户端 2.1 可以发现预生产 RMS 服务器并与之建立通信。
+
+    >![NOTE] 使用 Azure RMS 进行测试不需要发现配置。
+
+  - 在服务器端发现中，管理员会向 Active Directory 注册 RMS 根群集的服务连接点 (SCP)，客户端会查询 Active Directory 以发现该 SCP 并与服务器建立连接。
+  - 在客户端发现中，会在运行 RMS 客户端 2.1 的计算机上，在注册表中配置 RMS 服务发现设置。 这些设置使 RMS 客户端 2.1 指向 RMS 服务器。 当它们存在时，不会执行服务器端发现。
+
+  若要配置客户端发现，可以设置以下注册表项以指向 RMS 服务器。 有关如何配置服务端发现的信息，请参阅 [RMS 客户端 2.0 部署说明](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)。
+
+1. **EnterpriseCertification**
+        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
+
+  **Value**: (Default): [**http|https**]://RMSClusterName/**_wmcs/Certification**
+
+2. **EnterprisePublishing**
+        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **Value**: (Default): [**http|https**]://RMSClusterName/**_wmcs/Licensing**
+
+>[!NOTE] 默认情况下，这些项在注册表中不存在，必须创建。
+
+>[!IMPORTANT] 如果在 64 位版本的 Windows 上运行 32 位应用程序，则必须在以下项位置设置这些项：<p>
+  ```    
+  HKEY_LOCAL_MACHINE
+    SOFTWARE
+      Wow6432Node
+        Microsoft
+          MSIPC
+            ```
+
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

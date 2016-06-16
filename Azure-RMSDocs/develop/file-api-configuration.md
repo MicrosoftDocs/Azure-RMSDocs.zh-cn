@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
+
 # 文件 API 配置
 
 
@@ -40,46 +40,45 @@ ms.suite: ems
 
 以下各节描述了控制加密的密钥和密钥值。
 
-
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
 
-*类型*：密钥
+**类型**：密钥
 
-*描述*：包含文件 API 的常规配置。
+**描述**：包含文件 API 的常规配置。
 
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
 
-*类型：密钥
+**类型**：密钥
 
-*描述：指定特定文件扩展名的配置信息；例如，TXT 和 JPG 等。
+**描述**：指定特定文件扩展名的配置信息，例如 TXT 和 JPG 等。
 
 - 允许通配符“*”，但是，特定扩展的设置优先于通配符设置。 通配符不会影响 Microsoft Office 文件的设置；必须按文件类型显式禁用这些设置。
 - 若要指定没有扩展名的文件，请使用“.”
 - 指定特定文件扩展名的密钥时请勿指定“.”字符；例如，使用 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\TXT` 来指定.txt 文件的设置。 （请勿使用 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\.TXT`）。
 
-在密钥中设置*加密*值来指定保护行为。 如果未设置*加密*值，则会观察到该文件类型的默认行为。
+在密钥中设置 **Encryption** 值来指定保护行为。 如果未设置 **Encryption** 值，则会观察到该文件类型的默认行为。
 
 
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
 
-*类型：REG_SZ*
+**类型**：REG_SZ
 
-*描述：包含以下三个值之一：
+**描述**：包含以下三个值之一：
 
-- *Off*：加密处于禁用状态。
+- **Off**：禁用加密。
 
-> [AZURE.NOTE] 此设置对解密没有任何影响。 只要用户具有 EXTRACT 权限，就可解密任何加密文件（无论是使用本机保护还是 Pfile 保护进行加密）。
+> [AZURE.NOTE] 此设置对解密没有任何影响。 只要用户具有 **EXTRACT** 权限，就可解密任何加密文件（无论是使用本机保护还是 Pfile 保护进行加密）。
 
-- *Native*：使用本机加密。 对于 Office 文件，加密文件将具有与原始文件相同的扩展名。 例如，文件扩展名为 .docx 的文件将被加密为扩展名为 .docx 的文件。 对于其他可以应用本机保护的文件，文件将加密为扩展名格式为 p**zzz** 的文件，其中 **zzz** 是原始文件扩展名。 例如，.txt 文件将加密为扩展名为 .ptxt 的文件。 下面包含了可以应用本机保护的文件扩展名的列表。
+- **Native**：使用本机加密。 对于 Office 文件，加密文件将具有与原始文件相同的扩展名。 例如，文件扩展名为 .docx 的文件将被加密为扩展名为 .docx 的文件。 对于其他可以应用本机保护的文件，会将文件加密为具有 p*zzz* 扩展名格式的文件，其中 *zzz* 是原始文件扩展名。 例如，.txt 文件将加密为扩展名为 .ptxt 的文件。 下面包含了可以应用本机保护的文件扩展名的列表。
 
-- *Pfile*：使用 PFile 加密。 加密的文件会将 .pfile 追加到原来的扩展名。 例如，加密后，.txt 文件的文件扩展名将为 .txt.pfile。
+- **Pfile**：使用 PFile 加密。 加密的文件会将 .pfile 追加到原来的扩展名。 例如，加密后，.txt 文件的文件扩展名将为 .txt.pfile。
 
 
 > [AZURE.NOTE] 此设置对于 Office 文件格式没有任何影响。 例如，如果 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` 值设置为&quot;Pfile”，则仍将使用本机保护加密 .docx 文件，并且加密的文件仍将使用 .docx 作为文件扩展名。
 
 设置任何其他值或不设置任何值将导致默认行为。
 
-## 不同文件格式的默认行为**
+## 不同文件格式的默认行为
 
 -   **Office 文件** 启用了本机加密。
 -   **txt、xml、jpg、jpeg、pdf、png、tiff、bmp、gif、giff、jpe、jfif、jif 文件** 启用了本机加密（xxx 变成 pxxx）
@@ -106,7 +105,7 @@ ms.suite: ems
 
 **所有其他文件格式**
 
--   保护类型 = Pfile：sample.*zzz* 被加密，并命名为 sample.*zzz*.pfile；其中 zzz 是原始文件扩展名。
+-   保护类型 = Pfile：sample.*zzz* 被加密，并命名为 sample.*zzz*.pfile；其中 *zzz* 是原始文件扩展名。
 -   Off：禁用加密。
 
 ### 示例
@@ -158,9 +157,6 @@ HKEY_LOCAL_MACHINE
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

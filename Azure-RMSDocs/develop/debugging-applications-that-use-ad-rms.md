@@ -1,30 +1,20 @@
 ---
-# required metadata
+# 必需元数据
 
-title: 调试启用权限的应用程序 | Azure RMS
-description: 下面的主题演示如何调试应用程序和使用 Windows 事件日志。
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
-# optional metadata
+标题：操作说明：调试启用权限的应用程序 | Azure RMS 说明：下列主题演示如何调试应用程序和使用 Windows 事件日志。
+keywords: author: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
+# 可选元数据
 
 #ROBOTS:
 audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
-# 调试启用权限的应用程序
+
+# 操作说明：调试启用权限的应用程序
 
 下面的主题演示如何调试应用程序和使用 Windows 事件日志。
 
@@ -33,6 +23,7 @@ ms.suite: ems
 Rights Management Services SDK 2.1 中禁用了运行时的开发人员版本的反调试检查。
 
 你可以使用以下注册表项启用调试跟踪。 （若要禁用调试跟踪，请将值更改为 0。）在此版本中进行调试不需要其他任何内容。
+
 
 ```
 HKEY_LOCAL_MACHINE
@@ -72,15 +63,11 @@ HKEY_LOCAL_MACHINE
 
 ## 相关主题
 
-* [使用方法](how-to-use-msipc.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

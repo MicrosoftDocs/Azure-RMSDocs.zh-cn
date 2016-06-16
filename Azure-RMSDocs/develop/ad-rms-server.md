@@ -23,32 +23,27 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
 
-# AD RMS 服务器
-本主题介绍 RMS 服务器的用途和功能。
+# Server
 
-Rights Management Services (RMS) 的服务器组件通过一组在 [Microsoft Internet Information Services](http://www.iis.net/overview) (IIS) 上运行的 Web 服务实现。 还可以通过 Azure 上的 RMS 使用基于云的实现。 有关使用 Azure Rights Management 服务的详细信息，请参阅 [使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
+本主题介绍适用于 Azure 和 Windows Server 的 RMS 服务器的用途和功能。
 
-对于本地服务器，从 Windows Server 2008 开始，可以通过将 RMS 服务作为角色进行添加来安装和配置它。 若要在以前的操作系统上安装该服务，请从 Microsoft 下载中心下载它（地址是 [Microsoft Windows Rights Management Services with Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909)）。
+**Azure RMS** - 有关使用 Azure Rights Management 服务的信息，请参阅[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
-在安装的多个 Web 服务中，以下服务对于应用程序开发十分重要。
+> [AZURE.IMPORTANT] 我们建议通过 Azure RMS 开发和测试你的应用程序。
 
-**管理** - 承载使你可以管理 RMS 的管理网站。 该服务在根认证服务器和授权服务器上运行。 可以使用 [Active Directory Rights Management Services 脚本编写 API](https://msdn.microsoft.com/library/Bb968797) 来编写管理脚本。
+**Windows Server** - 对于本地服务器上的 RMS，从 Windows Server 2008 开始，可以通过将 RMS 服务作为角色进行添加来安装和配置它。 若要在以前的操作系统上安装该服务，请从 Microsoft 下载中心下载它（地址是 [Microsoft Windows Rights Management Services with Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909)）。
 
-**帐户认证** - 创建在 RMS 证书层次结构中标识计算机的计算机证书以及将用户与特定计算机关联的权限帐户证书。 有关详细信息，请参阅 [激活用户](https://msdn.microsoft.com/library/Cc530378)。
+在安装的多个 Web 服务中，以下服务对于 Windows Server 上的 RMS 服务器的应用程序开发十分重要。
 
-此服务在根认证服务器上运行。
-
-**授权** - 向最终用户颁发使最终用户可以使用受保护内容的许可证。 该服务在根认证服务器和授权服务器上运行。
-
-**发布** - 创建 [创建颁发许可证](https://msdn.microsoft.com/library/Aa362355)。 该服务在根认证服务器和授权服务器上运行。
-
-**预认证** - 使服务器可以代表用户请求权限帐户证书 (RAC)。 RAC 使用来自 RMS 激活的计算机证书将用户帐户绑定到特定计算机或计算机组，用于使使用者可以使用受保护内容。 该服务在根认证服务器和授权服务器上运行。
-
-**服务定位器** - 向 Active Directory 提供帐户认证、授权和发布服务的 URL，以便 RMS 客户端可以发现它们。 该服务在根认证服务器和授权服务器上运行。
-
- 
+| 服务 | 描述 |
+|---------|-------------|
+| Administration | 承载使你可以管理 RMS 的管理网站。 该服务在根认证服务器和授权服务器上运行。 可以使用 Active Directory Rights Management Services 脚本 API 来编写管理脚本。|
+| 帐户认证 |创建在 RMS 证书层次结构中标识计算机的计算机证书以及将用户与特定计算机关联的权限帐户证书。 有关详细信息，请参“阅激活计算机”和“激活用户”。<p><p>此服务在根认证服务器上运行。 |
+|许可 | 发布*最终用户许可*。 该服务在根认证服务器和授权服务器上运行。|
+|发布 | 创建*颁发许可证*，用于定义可在最终用户许可中枚举的策略。 有关详细信息，请参阅[创建颁发许可证](https://msdn.microsoft.com/library/Aa362355)。<p><p>该服务在根认证服务器和授权服务器上运行。|
+|预认证 | 使服务器可以代表用户请求*权限帐户证书*。 该服务在根认证服务器和授权服务器上运行。|
+|服务定位器 | 向 Active Directory 提供帐户认证、授权和发布服务的 URL，以便它们能被 RMS 客户端发现。 该服务在根认证服务器和授权服务器上运行。|
 
 ## 相关主题 ##
 * [概述](ad-rms-overview.md)
@@ -65,6 +60,6 @@ Rights Management Services (RMS) 的服务器组件通过一组在 [Microsoft In
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

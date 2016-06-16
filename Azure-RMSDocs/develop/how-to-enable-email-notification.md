@@ -23,16 +23,15 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
-# 启用电子邮件通知
+
+# 操作说明：启用电子邮件通知
 
 受保护的内容所有者通过电子邮件通知可以在其内容受到访问时收到通知。
 
 若要针对给定许可证设置电子邮件通知，请使用 [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)，其中属性类型参数 *dwPropID* 为 [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)，并且应用程序数据字段格式化为 [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list)。
 
-## C++
+    C++
 
-    ...
     int numDataPairs = 3;
 
     IPC_NAME_VALUE propertyValuePairs [numDataPairs];
@@ -46,7 +45,7 @@ ms.suite: ems
     IPC_NAME_VALUE_LIST emailNotificationAppData = {numDataPairs, propertyValuePairs};
 
     result = IpcSetLicenseProperty( licenseHandle, FALSE, IPC_LI_APP_SPECIFIC_DATA, emailNotificationAppData);
-    ...    
+        
 
 下表包含用于 RMS 电子邮件通知的应用程序数据字段、属性名称和值对。
 
@@ -71,6 +70,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

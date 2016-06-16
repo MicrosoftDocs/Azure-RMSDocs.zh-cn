@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -70,9 +70,9 @@ Azure RMS 始终使用 Azure Active Directory 帐户和关联的电子邮件地�
 这些帐户的身份验证方法各不相同，具体取决于其他组织中的管理员如何配置 Azure Active Directory 帐户。 例如，他们可以使用为这些帐户、多重身份验证 (MFA)、联合身份验证创建的密码，或在 Active Directory 域服务中创建、然后同步到 Azure Active Directory 的密码。
 
 ## 我可以将公司之外的用户添加到自定义模板吗？
-适用。  创建最终用户（和管理员）可以从应用程序中选择的自定义模板，可使用户使用你指定的预定义策略应用信息保护变得简单快捷。 该模板中的设置之一是哪些用户能够访问内容，而且你可以指定组织中的用户和组以及组织之外的用户。
+适用。 创建最终用户（和管理员）可以从应用程序中选择的自定义模板，可使用户使用你指定的预定义策略应用信息保护变得简单快捷。 该模板中的设置之一是哪些用户能够访问内容，而且你可以指定组织中的用户和组以及组织之外的用户。
 
-若要指定不属于组织的用户，请使用[适用于 Azure Rights Management 的 Windows PowerShell 模块](../deploy-use/install-powershell.md)：
+若要从组织外部指定用户，请在配置模板时在 Azure 经典门户中将用户添加为所选组的联系人。 或者使用[适用于 Azure Rights Management 的 Windows PowerShell 模块](../deploy-use/install-powershell.md)：
 
 -   **使用权限定义对象创建或更新模板**。    在权限定义对象中指定外部电子邮件地址及其权限，然后你将使用该地址创建或更新模板。 指定权限定义对象时，可使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) cmdlet 来创建一个变量，然后将该变量提供给 -RightsDefinition 参数，并可使用 [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx) cmdlet（如果是新模板）或 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) cmdlet（如果需要修改现有模板）。 但是，如果你是将这些用户添加到现有模板中，则需要在模板中为现有组定义权限定义对象，不仅仅只需为外部用户进行此类操作。
 
@@ -140,6 +140,11 @@ Azure RMS 能够支持所有文件类型。 对于文字、图像、Microsoft Of
 
 如这些例子所示，即使支持 Rights Management API 的所有平台和所有软件都阻止屏幕捕获，仅靠技术并非始终能够阻止用户共享他们不应该共享的数据。 Rights Management 可以通过授权和使用策略来确保重要数据的安全性，但在使用此企业权限管理解决方案时还应加入其他控制手段。 例如，可以实施物理安全措施，可以仔细盘查和监视有权访问组织数据的人员，还可以进行用户教育，让用户了解哪些数据是不应共享的。
 
+## 用户通过“不得转发”和不包括“转发”权限的模板来保护电子邮件有什么区别？
+
+除名称和外观外，**不得转发**既不是“转发”权限的对立面，也不是模板。 它实际上是一组权限，包括限制复制、打印和保存附件以及限制转发电子邮件。 这些权限通过所选收件人动态应用于用户，而不由管理员静态分配。 有关详细信息，请参阅[为 Azure Rights Management 配置使用权限](../deploy-use/configure-usage-rights.md)中的[电子邮件的“不得转发”选项](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)部分。
+
+
 ## 我在何处可以找到 Azure RMS 的支持信息，例如法律、合规性和 SLA？
 Azure RMS 支持其他服务，也依赖于其他服务。 如果你寻找的信息与 Azure RMS 相关，但与如何使用 Azure RMS 服务无关，请查看以下资源：
 
@@ -191,6 +196,6 @@ Azure RMS 支持其他服务，也依赖于其他服务。 如果你寻找的信
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

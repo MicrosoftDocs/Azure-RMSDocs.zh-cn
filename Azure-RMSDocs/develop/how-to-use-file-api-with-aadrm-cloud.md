@@ -1,37 +1,25 @@
 ---
-# required metadata
+# 必需元数据
 
-title: 使服务应用程序可以使用基于云的 RMS | Azure RMS
-description: 本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
-# optional metadata
+标题：操作说明：使服务应用程序可以使用基于云的 RMS | Azure RMS 说明：本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。
+keywords: author: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
+# 可选元数据
 
 #ROBOTS:
 audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
-# 使服务应用程序可以使用基于云的 RMS
+
+# 操作说明：使服务应用程序可以使用基于云的 RMS
 
 本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。 有关详细信息，请参阅 [Azure Rights Management 入门](https://technet.microsoft.com/en-us/library/jj585016.aspx)。
 
 **重要**  
-推荐的最佳做法是首先依据 RMS 服务器使用 RMS 预生产环境测试 Rights Management Services SDK 2.1 应用程序。 然后，如果你希望客户能通过 Azure RMS 服务使用你的应用程序，可在此环境中测试。
-
-若要与 Azure RMS 配合使用 RMS SDK 2.1 服务应用程序，需要请求 Azure RMS 租户（如果尚未具有）。 将包含租户请求的邮件发送到 <rmcstbeta@microsoft.com>。
+为了通过 Azure RMS 使用 Rights Management Services SDK 2.1 服务应用程序，你需要创建自己的租户。 有关详细信息，请参阅[Azure RMS 要求：支持 Azure RMS 的云订阅](/rights-management/get-started/requirements-subscriptions.md)
 
 ## 先决条件
 
@@ -43,18 +31,18 @@ ms.suite: ems
 -   调用 [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)。
 -   设置 [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)。
 
+        C++
+        int mode = IPC_API_MODE_SERVER;
+        IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
-    int mode = IPC_API_MODE_SERVER; IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
-
-**注意**  有关详细信息，请参阅 [设置 API 安全模式](setting-the-api-security-mode-api-mode.md)
+  **注意**  有关详细信息，请参阅 [设置 API 安全模式](setting-the-api-security-mode-api-mode.md)
 
      
-
 -   以下步骤是用于创建 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 结构的实例（其中 **pcCredential** ([**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)) 成员使用来自 Azure 权限管理服务的连接信息进行填充）的设置。
 -   创建 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 结构的实例时，使用来自对称密钥服务标识创建的信息（请参阅本主题前面列出的先决条件）来设置 **wszServicePrincipal**、**wszBposTenantId** 和 **cbKey** 参数。
 
-**注意**   由于我们发现服务的现有状况，如果你不在北美，则不会接受来自其他区域的对称密钥凭据，因此必须直接指定你的租户直接 URL。 这通过 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 或 [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist) 的 [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) 参数来实现。
+**注意** 由于我们发现服务的现有状况，如果你不在北美，则不会接受来自其他区域的对称密钥凭据，因此必须直接指定你的租户 URL。 这通过 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 或 [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist) 的 [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) 参数来实现。
 
 ## 生成对称密钥并收集所需信息
 
@@ -65,17 +53,14 @@ ms.suite: ems
 
 **注意**  你必须是租户管理员才能使用 Powershell cmdlet。
 
-
 -   启动 Powershell 并运行以下命令以生成密钥         `Import-Module MSOnline`
             `Connect-MsolService`（键入管理员凭据）        `New-MsolServicePrincipal`（键入显示名称）
 -   生成对称密钥之后，会输出有关密钥的信息（包括密钥本身和 **AppPrincipalId**）。
 
 
-
     未提供对称密钥时，将创建以下对称密钥：ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
 
     DisplayName : RMSTestApp ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963} ObjectId : 0ee53770-ec86-409e-8939-6d8239880518 AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
-
 
 
 ### 用于查明 **TenantBposId** 和 **Urls** 的说明
@@ -103,7 +88,7 @@ ms.suite: ems
 
 -   创建 [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) 结构的实例（包含 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 实例）。
 
-**注意**   *conectionInfo* 成员使用来自前面的 `Get-AadrmConfiguration` 调用的 URL 进行设置，在此处使用这些字段名称进行注明。
+**注意**  *connectionInfo* 成员使用来自前面的 `Get-AadrmConfiguration` 调用的 URL 进行设置，在此处使用这些字段名称进行注明。
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};
@@ -162,7 +147,6 @@ ms.suite: ems
 
 ## 相关主题
 
-* [开发人员概念](ad-rms-concepts-nav.md)
 * [Azure Rights Management 入门](https://technet.microsoft.com/en-us/library/jj585016.aspx)
 * [RMS SDK 2.1 入门](getting-started-with-ad-rms-2-0.md)
 * [通过 ACS 创建服务标识](https://msdn.microsoft.com/en-us/library/gg185924.aspx)
@@ -182,6 +166,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

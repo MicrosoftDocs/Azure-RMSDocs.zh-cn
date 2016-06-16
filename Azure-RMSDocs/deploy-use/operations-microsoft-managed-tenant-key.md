@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -54,7 +54,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 ### 步骤 1：启动导出
 
--   若要执行此操作，请联系 Microsoft 客户服务支持 (CSS)。 你必须证明自己是 Azure RMS 租户管理员。
+-   若要执行此操作，请与 Microsoft 客户服务支持 (CSS) 联系，以打开**请求 Azure RMS 密钥导出的 Azure Rights Management 支持案例**。 必须证明你是你 Azure RMS 租户的管理员，还须了解此过程将需要几天才能确认。 收取标准支持费用：导出租户密钥并不是免费支持服务。
 
 ### 步骤 2：等待验证
 
@@ -67,7 +67,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
     ```
     AadrmTpd.exe -createkey
     ```
-    这样可以生成 RSA 密钥对，并将公有部分和私有部分保存为当前文件夹中的文件。 例如：**PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** 和 **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**.
+    这样可以生成 RSA 密钥对，并将公有部分和私有部分保存为当前文件夹中的文件。 例如：**PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** 和 **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**。
 
     回复来自 CSS 的电子邮件，附加名称以 **PublicKey** 开头的文件。 CSS 随后将向你发送一个作为 .xml 文件的 TPD 文件，该文件使用你的 RSA 密钥进行加密。 将此文件复制到与你最初运行 AadrmTpd 工具时的相同文件夹，并使用以 **PrivateKey** 开头的文件和来自 CSS 的文件再次运行该工具。 例如：
 
@@ -86,7 +86,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 -   在收到你的租户密钥后，对其进行良好的保护，因为如果有人得到了它，他们将可以解密由该密钥保护的所有文档。
 
-    如果你导出租户密钥的原因是不想再使用 Azure RMS，则最好的做法是马上禁用你的 RMS 租户。 不要拖延到收到租户密钥后再做此事，因为此预防措施可以帮助你将不该得到你的租户密钥的人得到它后导致的后果降至最低。 有关说明，请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](decommission-deactivate.md).
+    如果你导出租户密钥的原因是不想再使用 Azure RMS，则最好的做法是马上禁用你的 RMS 租户。 不要拖延到收到租户密钥后再做此事，因为此预防措施可以帮助你将不该得到你的租户密钥的人得到它后导致的后果降至最低。 有关说明，请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](decommission-deactivate.md)。
 
 ## 对违规行为做出响应
 如果没有违规响应流程，无论如何强大的安全系统都是不完整的。 你的租户密钥可能泄漏或失窃。 即便它得到了很好的保护，在当前这代的 HSM 技术或当前的密钥长度和算法方面也可以找到一些漏洞。
@@ -104,6 +104,6 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

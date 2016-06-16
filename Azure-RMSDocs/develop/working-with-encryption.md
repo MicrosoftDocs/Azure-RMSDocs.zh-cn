@@ -1,30 +1,19 @@
 ---
-# required metadata
+# 必需元数据
 
-title: 使用加密 | Azure RMS
-description: 会将你定向到我们的加密包
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
-# optional metadata
+标题：操作指南：使用加密设置 | Azure RMS 说明：本文将带你了解我们的加密包 keywords: author: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
+# 可选元数据
 
 #ROBOTS:
 audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
-# 使用加密
+
+# 操作说明：使用加密设置
 
 本主题将针对加密包，并显示其使用的一些代码段。
 
@@ -58,54 +47,54 @@ ms.suite: ems
 
 不需要代码中的更改，*AES 256* CBC4K 是默认值。
 
-    
-    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID, 
-                                    0, 
-                                    NULL, 
+    C++
+
+    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
+                                    0,
+                                    NULL,
                                     &amp;pLicenseHandle);
-    
+
 
 ## 使用 AES-128 CBC4K 保护文件
 
-    
-    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID, 
-                                    0, 
-                                    NULL, 
+    C++
+
+    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
+                                    0,
+                                    NULL,
                                     &amp;pLicenseHandle);
-    
-    DWORD dwEncryptionMode = IPC_ENCRYPTION_PACKAGE_AES128_CBC4K; 
-    
-    hr = IpcSetLicenseProperty(pLicenseHandle, 
+
+    DWORD dwEncryptionMode = IPC_ENCRYPTION_PACKAGE_AES128_CBC4K;
+
+    hr = IpcSetLicenseProperty(pLicenseHandle,
                            false,
                            IPC_LI_PREFERRED_ENCRYPTION_PACKAGE,
                            &amp;dwEncryptionMode);
-    
+
 
 ## 使用 AES-128 ECB（不推荐使用的算法）保护文件
 
 此示例还演示支持*不推荐使用的算法*的新方法。
 
+    C++
     
-    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID, 
-                                    0, 
-                                    NULL, 
+    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
+                                    0,
+                                    NULL,
                                     &amp;pLicenseHandle);
-    
+
     DWORD dwEncryptionMode = IPC_ENCRYPTION_PACKAGE_AES128_ECB;
-    
-    hr = IpcSetLicenseProperty(pLicenseHandle, 
+
+    hr = IpcSetLicenseProperty(pLicenseHandle,
                            false,
-                           IPC_LI_PREFERRED_ENCRYPTION_PACKAGE, 
+                           IPC_LI_PREFERRED_ENCRYPTION_PACKAGE,
                            &amp;dwEncryptionMode);
-    
- 
 
  
 
+ 
 
 
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

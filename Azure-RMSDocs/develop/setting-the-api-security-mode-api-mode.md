@@ -1,30 +1,20 @@
 ---
-# required metadata
+# 必需元数据
 
-title: 设置 API 安全模式 | Azure RMS
-description: 选择你的文件 API 应用程序运行的安全模式。
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
-# optional metadata
+标题：操作说明：设置 API 安全模式 |Azure RMS 说明：选择你的文件 API 应用程序运行的安全模式。
+keywords: author: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
+# 可选元数据
 
 #ROBOTS:
 audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
-# 设置 API 安全模式
+
+# 操作说明：设置 API 安全模式
 
 通过使用 [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 函数，你可以选择文件 API 应用程序在哪种安全模式下运行。
 
@@ -34,12 +24,9 @@ ms.suite: ems
 
 **重要说明**  应该在调用任何其他 Rights Management Services SDK 2.1 函数前设置安全模式。 设置安全模式后，不能为当前的进程更改该模式。
 
- 
-
 ## 相关主题
 
 * [应用程序类型](application-types.md)
-* [开发人员概念](ad-rms-concepts-nav.md)
 * [**API 模式值**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)
 * [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)
  
@@ -47,9 +34,6 @@ ms.suite: ems
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
