@@ -146,12 +146,6 @@
   "c90b1d2257bcf3fd355e810e5f9654683c693454": [
     "Azure-RMSDocs\\develop\\release-notes-rtm.md"
   ],
-  "0b96b3ed908404a774a5c0b67acd5f0841af028b": [
-    "Azure-RMSDocs\\develop\\release-notes-rtm.md"
-  ],
-  "5db86aa5914b66d010bb03783200e8988ad38208": [
-    "Azure-RMSDocs\\develop\\release-notes-rtm.md"
-  ],
   "61f70a7b4a85c0ab6f0a2732fcf9d314a230e769": [
     "Azure-RMSDocs\\develop\\tracking-content.md"
   ],
@@ -195,9 +189,6 @@
     "Azure-RMSDocs\\develop\\ad-rms-overview.md"
   ],
   "685079958d71d8c681d9150aadcbbc4bfedd15ad": [
-    "Azure-RMSDocs\\develop\\ad-rms-server.md"
-  ],
-  "e5f0b1eacae24de3bd859de868b9c158e4eb20e0": [
     "Azure-RMSDocs\\develop\\ad-rms-server.md"
   ],
   "acd0692102c43baff0a92360e0ddbe1259ad9b4f": [
@@ -263,9 +254,6 @@
   "88a911b25c268c54e55bd5bc90ff3e946a9203ee": [
     "Azure-RMSDocs\\develop\\file-api-configuration.md"
   ],
-  "c5d6a25073c8c1797b5581e3af375141351cfc22": [
-    "Azure-RMSDocs\\develop\\file-api-configuration.md"
-  ],
   "b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27": [
     "Azure-RMSDocs\\develop\\get-started.md"
   ],
@@ -327,12 +315,6 @@
     "Azure-RMSDocs\\develop\\linux-setup.md"
   ],
   "866a8f1ec80ecb5b91fcc2915d11f5ef61543c32": [
-    "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
-  ],
-  "6f9af1211ba0c0802abdeb2376c8c1d52140ff96": [
-    "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
-  ],
-  "43e18d71314084c3ade70292dceaa2c73eb8910a": [
     "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
   ],
   "e9a3f95c8ff289380dc62994e4f719bc174c4900": [
@@ -738,9 +720,6 @@
     "Azure-RMSDocs\\develop\\developing-your-application.md"
   ],
   "0513f183df2ca950cbee89d451f1532f8569aad7": [
-    "Azure-RMSDocs\\develop\\how-to-use-adal-authentication.md"
-  ],
-  "fd5c9d1cad4bf874db9c9ee49b14141899b83248": [
     "Azure-RMSDocs\\develop\\how-to-use-adal-authentication.md"
   ],
   "839094716fa39957fbcbcdc4812d99fd742e4393": [
