@@ -656,6 +656,9 @@
   "46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3": [
     "Azure-RMSDocs\\rms-client\\sharing-app-user-guide.md"
   ],
+  "cad9d01735d8e649875bc6bba73d29573891e1d8": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-version-release-history.md"
+  ],
   "6e76769d7083959b2aff2efa4e0a00fba2487123": [
     "Azure-RMSDocs\\rms-client\\sharing-app-version-release-history.md"
   ],
@@ -727,6 +730,9 @@
   ],
   "839094716fa39957fbcbcdc4812d99fd742e4393": [
     "Azure-RMSDocs\\develop\\install-the-rms-sdk.md"
+  ],
+  "6a418a057fc922d578f4112fcea3a8dbdc5b61dc": [
+    "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
   ],
   "ebaa8aad463bebe7cc2691bddac4cc7ace3c8991": [
     "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
