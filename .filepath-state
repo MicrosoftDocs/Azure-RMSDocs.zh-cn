@@ -320,6 +320,9 @@
   "e9a3f95c8ff289380dc62994e4f719bc174c4900": [
     "Azure-RMSDocs\\develop\\overview.md"
   ],
+  "c1e99075297f2bc4c5f913ecbdb0808876133328": [
+    "Azure-RMSDocs\\develop\\release-notes.md"
+  ],
   "a12be14d42b0d3212ac61038591701a7a4a23ff5": [
     "Azure-RMSDocs\\develop\\release-notes.md"
   ],
@@ -512,6 +515,9 @@
   "7af7b3698ddf75573dc4712ef335b25378ba2290": [
     "Azure-RMSDocs\\get-started\\faqs.md"
   ],
+  "57d7f814ab36c3df310b4e47a2bd47571c6019fd": [
+    "Azure-RMSDocs\\get-started\\information-support.md"
+  ],
   "361b4b89a6db54400e43d6faeedd03ae80422363": [
     "Azure-RMSDocs\\get-started\\information-support.md"
   ],
@@ -523,6 +529,9 @@
   ],
   "01c2436218e0d7fd80a31cdc037d9dc8933e42f2": [
     "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md"
+  ],
+  "adc0c3724139eaedd1b50972a22877437f17e4ea": [
+    "Azure-RMSDocs\\get-started\\requirements-applications.md"
   ],
   "9739df74a999efef879fb537eee730af7520b0fa": [
     "Azure-RMSDocs\\get-started\\requirements-applications.md"
