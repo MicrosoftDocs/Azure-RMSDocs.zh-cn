@@ -512,8 +512,14 @@
   "e382f9837adc6d6efd1d3efb872ef50e8a0d4cac": [
     "Azure-RMSDocs\\deploy-use\\verify.md"
   ],
+  "d9107e8566f0e44d87d9da4703aa3376c8594b4e": [
+    "Azure-RMSDocs\\get-started\\faqs.md"
+  ],
   "7af7b3698ddf75573dc4712ef335b25378ba2290": [
     "Azure-RMSDocs\\get-started\\faqs.md"
+  ],
+  "8141a46e90bfd48562302f1707704104ead82aef": [
+    "Azure-RMSDocs\\get-started\\information-support.md"
   ],
   "57d7f814ab36c3df310b4e47a2bd47571c6019fd": [
     "Azure-RMSDocs\\get-started\\information-support.md"
@@ -538,6 +544,9 @@
   ],
   "75b2414cc360704deb6107d6c0038f5b0bf7fa70": [
     "Azure-RMSDocs\\get-started\\requirements-azure-ad.md"
+  ],
+  "72a75712da9efa201865440affa80461dcd7df53": [
+    "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
   ],
   "472935eef8a68b9b8fa618f4cab9d4e365bee8a3": [
     "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
