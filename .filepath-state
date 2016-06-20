@@ -518,6 +518,9 @@
   "7af7b3698ddf75573dc4712ef335b25378ba2290": [
     "Azure-RMSDocs\\get-started\\faqs.md"
   ],
+  "f71b5a76558e8cbfd6c7f9307ce0c81c136092df": [
+    "Azure-RMSDocs\\get-started\\information-support.md"
+  ],
   "8141a46e90bfd48562302f1707704104ead82aef": [
     "Azure-RMSDocs\\get-started\\information-support.md"
   ],
@@ -593,8 +596,14 @@
   "f4552994fb8f83120dcadd157cddb150387a169a": [
     "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
   ],
+  "4f7e6c8b306de1e171c7a4957908bc7d5cf8b029": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
+  ],
   "9694b21d3c8175e51f4786f6e1bed27918d7d487": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
+  ],
+  "3ac6ffac17770828a24bbac703ad8aa73b5740eb": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
   ],
   "589cd61d24788538ec9a013a236d22cd103ab8ec": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
@@ -748,6 +757,9 @@
   ],
   "839094716fa39957fbcbcdc4812d99fd742e4393": [
     "Azure-RMSDocs\\develop\\install-the-rms-sdk.md"
+  ],
+  "18f0d47e35f0c75b2814678fd44c8d306414bbd4": [
+    "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
   ],
   "6a418a057fc922d578f4112fcea3a8dbdc5b61dc": [
     "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
