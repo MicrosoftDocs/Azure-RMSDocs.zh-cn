@@ -9,9 +9,9 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 1
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 34
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 33
 [ In Sync Handback Files ](#insync-handback-success-list)| 170
-[ Ignored Files ](#ignored-list)| 66
+[ Ignored Files ](#ignored-list)| 67
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
@@ -183,7 +183,6 @@
  [Azure-RMSDocs\get-started\requirements-applications.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/963df10dc710df226ab8c7bd5e1d57d235e22561/Azure-RMSDocs/get-started/requirements-applications.md) | OutofSyncHandedBackSuccess | [Details](#adc0c3724139eaedd1b50972a22877437f17e4ea108)
  [Azure-RMSDocs\get-started\requirements-azure-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/50ebcd71336baeb68687e2d0c1ff1f0608925761/Azure-RMSDocs/get-started/requirements-azure-rms.md) | OutofSyncHandedBackSuccess | [Details](#72a75712da9efa201865440affa80461dcd7df53110)
  [Azure-RMSDocs\get-started\requirements-subscriptions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b6dcd8bb1091e9c484e02042adbf993381581a9d/Azure-RMSDocs/get-started/requirements-subscriptions.md) | OutofSyncHandedBackSuccess | [Details](#5e68ba6942b479e9dcbf0e9ac0a3bed0c2d1869d113)
- [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/16e0e820cdd9f39af58b7141d13cf5affb218b0c/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase1.md) | OutofSyncHandedBackSuccess | [Details](#4f7e6c8b306de1e171c7a4957908bc7d5cf8b029337)
  [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a5e11b0edcdc3c95733d2a4c4f4094211475f22/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase2.md) | OutofSyncHandedBackSuccess | [Details](#3ac6ffac17770828a24bbac703ad8aa73b5740eb338)
  [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/867abff0b176616b478be44cdd4de4386a3314d8/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase4.md) | OutofSyncHandedBackSuccess | [Details](#a307f939515d8f81077c73e9b29aa9015b256c7a340)
  [Azure-RMSDocs\plan-design\migrate-from-ad-rms-to-azure-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f9f7012993e452ff0656050fa3449217a7d7c461/Azure-RMSDocs/plan-design/migrate-from-ad-rms-to-azure-rms.md) | OutofSyncHandedBackSuccess | [Details](#6544421afc1291f5fc7d99ecad71146f0cb4bb1d341)
@@ -430,6 +429,7 @@
  [Azure-RMSDocs\media\windows_and_phone.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ba897d554b30a1330157754907b92c997b4bf4b9/Azure-RMSDocs/media/windows_and_phone.png) | Ignored | [Details](#7629ae3423a4543b9257e29c11f03b8c34b2f045324)
  [Azure-RMSDocs\plan-design\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ba897d554b30a1330157754907b92c997b4bf4b9/Azure-RMSDocs/plan-design/docfx.json) | Ignored | [Details](#591bb671f8c3fdc26b63b840e34c42dc6f769c15333)
  [Azure-RMSDocs\plan-design\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ba897d554b30a1330157754907b92c997b4bf4b9/Azure-RMSDocs/plan-design/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda336)
+ [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ba897d554b30a1330157754907b92c997b4bf4b9/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase1.md) | Ignored | [Details](#9411fee6b29db4404a0ae430cc7ea54d4d7d47e5337)
  [Azure-RMSDocs\rms-client\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ba897d554b30a1330157754907b92c997b4bf4b9/Azure-RMSDocs/rms-client/docfx.json) | Ignored | [Details](#4d71e2080736b2c006f55499860b48b080c7afb5352)
  [Azure-RMSDocs\rms-client\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ba897d554b30a1330157754907b92c997b4bf4b9/Azure-RMSDocs/rms-client/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda355)
  [license.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ba897d554b30a1330157754907b92c997b4bf4b9/license.md) | Ignored | [Details](#fc0612997fdfe01bdee7ee9daa01144dfd0143dd393)
@@ -4982,21 +4982,16 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='4f7e6c8b306de1e171c7a4957908bc7d5cf8b029337'></a> Source: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/16e0e820cdd9f39af58b7141d13cf5affb218b0c/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase1.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='9411fee6b29db4404a0ae430cc7ea54d4d7d47e5337'></a> Source: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ba897d554b30a1330157754907b92c997b4bf4b9/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase1.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [migrate-from-ad-rms-phase1.bc5aedb6121a7b8c22df639eda41dcc7e7be9c8f.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/e9fc65719f40ccd8663e506772bf9bec41dc0890/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrate-from-ad-rms-phase1.bc5aedb6121a7b8c22df639eda41dcc7e7be9c8f.zh-cn.xlf)
-* Handoff Datetime: 2016-06-20 17:03:58
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase1.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/402bb4a61659822ff1cf8072577f8401ec0cd297/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase1.md)
-* Current Handback File: [migrate-from-ad-rms-phase1.bc5aedb6121a7b8c22df639eda41dcc7e7be9c8f.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/2a71f4c1f773ef52e60324fa760ba9c9c1d935b5/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrate-from-ad-rms-phase1.bc5aedb6121a7b8c22df639eda41dcc7e7be9c8f.zh-cn.xlf)
-* Current Handback Datetime: 2016-06-03 00:34:47
-* Bilingual File: [migrate-from-ad-rms-phase1.bc5aedb6121a7b8c22df639eda41dcc7e7be9c8f.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/2a71f4c1f773ef52e60324fa760ba9c9c1d935b5/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrate-from-ad-rms-phase1.bc5aedb6121a7b8c22df639eda41dcc7e7be9c8f.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-16 10:21:50
 * [Back to Top](#report-top)
 
 ##### <a name='3ac6ffac17770828a24bbac703ad8aa73b5740eb338'></a> Source: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2a5e11b0edcdc3c95733d2a4c4f4094211475f22/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase2.md)
