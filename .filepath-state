@@ -128,9 +128,6 @@
   "6bf11174aad9b6e54becf682e0b684c407c03439": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
   ],
-  "901f71014afe03d87f0ed2bbff37567cff764a3c": [
-    "Azure-RMSDocs\\deploy-use\\TOC.md"
-  ],
   "3db3f2fb6b3095ea4e65eb4689df2458edf3e2ea": [
     "Azure-RMSDocs\\get-started\\TOC.md"
   ],
@@ -149,12 +146,6 @@
   "61f70a7b4a85c0ab6f0a2732fcf9d314a230e769": [
     "Azure-RMSDocs\\develop\\tracking-content.md"
   ],
-  "ecea78cf6eb31e1a3a3a512e6bb19dc769d1766c": [
-    "Azure-RMSDocs\\develop\\tracking-content.md"
-  ],
-  "b05708694e669f9d1bd28038643d4bf34729a239": [
-    "Azure-RMSDocs\\develop\\tracking-content.md"
-  ],
   "2d2cbe580349e1615371a6a76e78140f6577e890": [
     "Azure-RMSDocs\\develop\\understanding-usage-restrictions.md"
   ],
@@ -170,16 +161,10 @@
   "82903eff43ee2dee7ef64e618171225a06013d99": [
     "Azure-RMSDocs\\develop\\working-with-encryption.md"
   ],
-  "0414b801ad4552aa89bd324f0f0641335091e6e5": [
-    "Azure-RMSDocs\\develop\\working-with-encryption.md"
-  ],
   "be2774ba361c478fa20faa1490bb4e5ead90b8af": [
     "Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md"
   ],
   "c3b40e57dadfacca62f2bd74e605a9a9959bb6e2": [
-    "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
-  ],
-  "6541a52977e541894c7b98f808ff36be20ab35d6": [
     "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
   ],
   "85613d5444bcba3c0d3f1dc808fa16f5a84c7e6d": [
@@ -209,12 +194,6 @@
   "b6e30ce14c5eb5f387a65d7f78fbb1c3abcabd1a": [
     "Azure-RMSDocs\\develop\\authentication-integration.md"
   ],
-  "59993b85c8e8a5e8ba3f80aa86c421ecbfac656b": [
-    "Azure-RMSDocs\\develop\\authentication-integration.md"
-  ],
-  "261abdeaa0aa70ae7240b6ceddc9d09440f0b48e": [
-    "Azure-RMSDocs\\develop\\authentication-integration.md"
-  ],
   "4a5c1a0b420b9db20cca237e2170b6479c565ee6": [
     "Azure-RMSDocs\\develop\\built-in-rights-usage-restriction-reference.md"
   ],
@@ -227,19 +206,7 @@
   "ebb08fbea18473cccca5897372b97f192200acca": [
     "Azure-RMSDocs\\develop\\core-concepts.md"
   ],
-  "0c9420483cfeeb0d3345ffe42227c92486994fa1": [
-    "Azure-RMSDocs\\develop\\core-concepts.md"
-  ],
-  "6dcae58c35c08a014c33d9fedb6f44ad69d2ab8f": [
-    "Azure-RMSDocs\\develop\\core-concepts.md"
-  ],
-  "7832f87febd6d9f87a3975c2084caca7aa73b9fc": [
-    "Azure-RMSDocs\\develop\\core-concepts.md"
-  ],
   "c00ce9829ce4150cfef74ecd972450b3d787f312": [
-    "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
-  ],
-  "c6e0de8d6c521bf380f7d7759dc7478dbb3055a5": [
     "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
   ],
   "902721ae3e69afd144c552b8ee0a916958e80afc": [
@@ -272,28 +239,13 @@
   "bedfc76557112e469688fdc6e546f4911961821c": [
     "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
   ],
-  "1a255629c8ced8cbc5f5e2d94b00e9cb1be3223f": [
-    "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
-  ],
   "4c273efa683827dc8f731a6dadb3f50bf53ea616": [
-    "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md"
-  ],
-  "f2bc4efb5ab97808e0c72bbb3d729acfbaea2035": [
     "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md"
   ],
   "9872317c2d5f5f56f28ed2683d7ebc9743041a37": [
     "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md"
   ],
-  "e8b2d466224fcbf431859eebed04866544633402": [
-    "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md"
-  ],
-  "d5067bab51ecbfc15b14e9e1c52829ff67f29187": [
-    "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md"
-  ],
   "4fc722907339137a752b701d5be09a7da66f4e89": [
-    "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md"
-  ],
-  "aee0f209ef36d436b09f38d9f1ef358320cb1fa8": [
     "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md"
   ],
   "98a2220c1b2d2f7c62673b8d860962d8c208c5ae": [
@@ -335,9 +287,6 @@
   "2be40c9caf33f391f8be9fe116d3473ce995613b": [
     "Azure-RMSDocs\\develop\\setting-the-api-security-mode-api-mode.md"
   ],
-  "52ed1c7aea4369d7c81ea2b4d73c5455c979171e": [
-    "Azure-RMSDocs\\develop\\setting-the-api-security-mode-api-mode.md"
-  ],
   "4bb013f420b02a10e306d92624683c48ceb2582f": [
     "Azure-RMSDocs\\develop\\setup-developer-environment.md"
   ],
@@ -362,37 +311,10 @@
   "bf36217b4e3e59a6590e0f8cb21cfa9c28ec628d": [
     "Azure-RMSDocs\\develop\\TOC.md"
   ],
-  "920e99af6836fb7a94815fc41332c418d7f01d94": [
-    "Azure-RMSDocs\\develop\\TOC.md"
-  ],
-  "a33b18035f5553e0a3c43c521ad49d8ac173a68d": [
-    "Azure-RMSDocs\\develop\\TOC.md"
-  ],
-  "6133f3140e3632abdf183b27f4a77bd217c4cc3f": [
-    "Azure-RMSDocs\\develop\\TOC.md"
-  ],
-  "338b23f924caeb1511fc8d8f5a66464f1cd5729a": [
-    "Azure-RMSDocs\\develop\\TOC.md"
-  ],
-  "be6146447e6fadd79d6c10f241566febc1f3d784": [
-    "Azure-RMSDocs\\develop\\TOC.md"
-  ],
-  "fdc6fa1ae9b1367eeb1a64aa2ad5c83f8397ad3b": [
-    "Azure-RMSDocs\\develop\\TOC.md"
-  ],
-  "9f4d9658b2e37ba8f490073ef16b80826fe604ea": [
-    "Azure-RMSDocs\\develop\\TOC.md"
-  ],
   "61321eaaeac31fec827fcf9f350211728eaf630a": [
     "Azure-RMSDocs\\deploy-use\\deploy-use.md"
   ],
   "18f8958985043609a89171cd86771b922cf43daa": [
-    "Azure-RMSDocs\\develop\\api-reference-2-1.md"
-  ],
-  "4f1eeb2beb74b3ca23184c5826b109bb517a98d7": [
-    "Azure-RMSDocs\\develop\\api-reference-2-1.md"
-  ],
-  "d7502bf3072f741ef25525ec962f8eaa24d2ee5a": [
     "Azure-RMSDocs\\develop\\api-reference-2-1.md"
   ],
   "5bc6f02c4ffc8eef3c7b15e1777ec4201b357c18": [
@@ -440,9 +362,6 @@
   "79171b5931b69ca18d2a2cbe321d5d5887903da2": [
     "Azure-RMSDocs\\deploy-use\\configure-servers-rms-connector.md"
   ],
-  "e0f90105bf168f4a3334a042acadc0b72052b601": [
-    "Azure-RMSDocs\\deploy-use\\configure-servers-rms-connector.md"
-  ],
   "d3f923cf6f140c2caa75b7b0c8ac90a42be962a7": [
     "Azure-RMSDocs\\deploy-use\\configure-sharing-app.md"
   ],
@@ -456,9 +375,6 @@
     "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
   ],
   "ec5c5616f65422834bdc81a3da4040621ed75c23": [
-    "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
-  ],
-  "033f9afbfe5dc037fd2554d1d131012982652440": [
     "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
   ],
   "87d712bbda11a4cfdfb2f3b3e9a549bca977afd6": [
@@ -476,9 +392,6 @@
   "d48616cb638522e6cda61e7ae96db9480fc14099": [
     "Azure-RMSDocs\\deploy-use\\help-users.md"
   ],
-  "599ac94ccfa2d6c9613a7a691ed79648a298a240": [
-    "Azure-RMSDocs\\deploy-use\\help-users.md"
-  ],
   "4595cb16b84c29d67fa28524ee12386fbf09ab4a": [
     "Azure-RMSDocs\\deploy-use\\install-configure-rms-connector.md"
   ],
@@ -492,9 +405,6 @@
     "Azure-RMSDocs\\deploy-use\\operations-customer-managed-tenant-key.md"
   ],
   "c221a7116250cceabcf6484b5b9348141af1346b": [
-    "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
-  ],
-  "00db0afb2e5d872162f7ac4e361f517623530ae2": [
     "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
   ],
   "44408fd8f9da73d8050e0938aa1cc9bc76688bed": [
@@ -530,9 +440,6 @@
   "361b4b89a6db54400e43d6faeedd03ae80422363": [
     "Azure-RMSDocs\\get-started\\information-support.md"
   ],
-  "f9a07153d5cf1fec900fc8808bbaca1f7d2ac060": [
-    "Azure-RMSDocs\\get-started\\information-support.md"
-  ],
   "7c89aa5f31732464dab2b90a25ad7c50f36c2c99": [
     "Azure-RMSDocs\\get-started\\quick-start-tutorial.md"
   ],
@@ -561,9 +468,6 @@
     "Azure-RMSDocs\\get-started\\requirements-servers.md"
   ],
   "5e68ba6942b479e9dcbf0e9ac0a3bed0c2d1869d": [
-    "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
-  ],
-  "cccbaa8e691ed152d74f7b9f279018e00a7316db": [
     "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
   ],
   "35ad445e229eac3feeca5522a41b9e3b25fd1180": [
@@ -617,13 +521,7 @@
   "a307f939515d8f81077c73e9b29aa9015b256c7a": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
   ],
-  "590825c8d180604426482a55f7edcd5e3c6d0243": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
-  ],
   "6544421afc1291f5fc7d99ecad71146f0cb4bb1d": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
-  ],
-  "44241219d6d699d1c6ac208bf753fe6cad35b36a": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
   ],
   "054fe56d85a4259513eea98364ebdf8977164de4": [
@@ -638,9 +536,6 @@
   "f0ba9f31dcc3b349a14f3a820f3c86ab19937d87": [
     "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
   ],
-  "c0e0cacdb1d335f076f41ffb51bed85a62bd3b86": [
-    "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
-  ],
   "55f092ede1f003c700cb58359bab264772702c39": [
     "Azure-RMSDocs\\plan-design\\prepare.md"
   ],
@@ -648,9 +543,6 @@
     "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
   ],
   "afb00e010df25dea5f3c3cad23824f773de59b18": [
-    "Azure-RMSDocs\\rms-client\\configure-fci.md"
-  ],
-  "8643e856a5de08be4fbe423d92b7d2619b47d3dd": [
     "Azure-RMSDocs\\rms-client\\configure-fci.md"
   ],
   "a1771c37bffa2af60773a5befdd35c14f684c942": [
@@ -734,9 +626,6 @@
   "fe0dbdafdd0e094039864b389575b5b5306f39d4": [
     "Azure-RMSDocs\\understand-explore\\what-admins-users-see.md"
   ],
-  "6283b1be421a2ffb6261f4921d973df7a1270d08": [
-    "Azure-RMSDocs\\understand-explore\\what-admins-users-see.md"
-  ],
   "6fe5759a790a728da7a16453e5b3ab5d523bb9fd": [
     "Azure-RMSDocs\\understand-explore\\what-is-azure-rms.md"
   ],
@@ -746,13 +635,7 @@
   "8b398b1dcd6054437e58ee4abe900d8662ab4fbf": [
     "Azure-RMSDocs\\develop\\adal-auth.md"
   ],
-  "988cb7794f6ee6337e8063dd9ee35932f0697832": [
-    "Azure-RMSDocs\\develop\\adal-auth.md"
-  ],
   "db38a01984b5a59d5ac50db1f3c198b99d45cac9": [
-    "Azure-RMSDocs\\develop\\developing-your-application.md"
-  ],
-  "53b06f8572e817889f9d5cfe6558324bcc74a83d": [
     "Azure-RMSDocs\\develop\\developing-your-application.md"
   ],
   "0513f183df2ca950cbee89d451f1532f8569aad7": [
@@ -771,12 +654,6 @@
     "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
   ],
   "cb82f0333ed17ee2994608baa3bbb50d42f19073": [
-    "Azure-RMSDocs\\develop\\how-to-use-adal-authentication-4-2.md"
-  ],
-  "12d26cb3a08231c92ebdf9f1e3317618c2f0ec04": [
-    "Azure-RMSDocs\\develop\\how-to-use-adal-authentication-4-2.md"
-  ],
-  "d238227ffa06a0d6e3e0e19a5f982e5ca567ecc4": [
     "Azure-RMSDocs\\develop\\how-to-use-adal-authentication-4-2.md"
   ]
 }
