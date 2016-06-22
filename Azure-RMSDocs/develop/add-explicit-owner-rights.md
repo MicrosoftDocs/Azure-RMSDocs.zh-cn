@@ -1,14 +1,24 @@
 ---
-# 必需元数据
+# required metadata
 
-标题：操作说明：添加明确的所有者权限 | Azure RMS 说明：应用程序应在从头开始创建许可证 显式添加“所有者”权限。
-keywords: author: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
-# 可选元数据
+title: 如何添加显式所有者权限 | Azure RMS
+description: 应用程序在从头开始创建许可证时应显式添加“所有者”权限。
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
+# optional metadata
 
 #ROBOTS:
 audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

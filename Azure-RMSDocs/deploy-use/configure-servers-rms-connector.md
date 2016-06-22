@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -30,7 +30,7 @@ ms.suite: ems
 *适用于：Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
 
 
-使用以下信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 5.
+使用以下信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 5。
 
 在开始之前，请确保已安装并配置 RMS 连接器，并且已检查任何适用于将使用该连接器的服务器的[先决条件](deploy-rms-connector.md#prerequisites-for-the-rms-connector)。
 
@@ -83,8 +83,7 @@ ms.suite: ems
 
 ---
 
-> [!IMPORTANT]
-> 对于这两种情况，都必须手动安装所有必备组件，并将 Exchange、SharePoint 和文件分类基础结构配置为使用权限管理。
+> [!IMPORTANT]对于这两种情况，都必须手动安装所有必备组件，并将 Exchange、SharePoint 和文件分类基础结构配置为使用权限管理。
 
 对于大多数组织，使用适用于 Microsoft RMS 连接器的服务器配置工具进行自动配置是更好的选择，因为它提供优于手动配置的效率和可靠性。
 
@@ -92,7 +91,7 @@ ms.suite: ems
 
 ### 如何使用适用于 Microsoft RMS 连接器的服务器配置工具
 
-1.  如果你尚未下载适用于 Microsoft RMS 连接器的服务器配置工具的脚本 (GenConnectorConfig.ps1)，请从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkId=314106)下载.
+1.  如果你尚未下载适用于 Microsoft RMS 连接器的服务器配置工具的脚本 (GenConnectorConfig.ps1)，请从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkId=314106)下载。
 
 2.  将 GenConnectorConfig.ps1 文件保存在你要运行工具的计算机上。 如果要在本地运行该工具，则此计算机必须是你想要配置为与 RMS 连接器通信的服务器。 否则，你可将文件保存在任何计算机上。
 
@@ -115,8 +114,7 @@ ms.suite: ems
 
 若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如 https://connector.contoso.com。 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
 
-> [!IMPORTANT]
-> 当你运行此工具时，请确保指定组织的负载平衡 RMS 连接器的名称，而不要指定运行 RMS 连接器服务的单个服务器的名称。
+> [!IMPORTANT]运行此工具时，请确保指定组织的负载平衡 RMS 连接器的名称，而不要指定运行 RMS 连接器服务的单个服务器的名称。
 
 使用以下部分获取每个服务类型的特定信息：
 
@@ -188,10 +186,9 @@ ms.suite: ems
 
 -   SharePoint Server 2010
 
-运行 SharePoint 2016 或 SharePoint 2013 的服务器也必须运行 RMS 连接器支持的 MSIPC 客户端 2.1 版。 若要确保使用受支持的版本，请从 [Microsoft 下载中心](http://www.microsoft.com/download/details.aspx?id=38396)下载最新的客户端.
+运行 SharePoint 2016 或 SharePoint 2013 的服务器也必须运行 RMS 连接器支持的 MSIPC 客户端 2.1 版。 若要确保使用受支持的版本，请从 [Microsoft 下载中心](http://www.microsoft.com/download/details.aspx?id=38396)下载最新的客户端。
 
-> [!WARNING]
-> MSIPC 2.1 客户端有多个版本，因此请确保安装版本 1.0.2004.0 或更高版本。
+> [!WARNING] MSIPC 2.1 客户端有多个版本，因此请确保安装版本 1.0.2004.0 或更高版本。
 >
 > 你可以通过检查 MSIPC.dll 的版本号来验证客户端版本，该文件位于 **\Program Files\Active Directory Rights Management Services Client 2.1**。 属性对话框将显示 MSIPC 2.1 客户端的版本号。
 
@@ -248,19 +245,13 @@ ms.suite: ems
 3.  创建分类规则和文件管理任务，才能使用 RMS 加密保护文档，然后指定一个用于自动将 RMS 策略的应用的 RMS 模板。 有关详细信息，请参阅 Windows Server 文档库中的 [文件服务器资源管理器概述](http://technet.microsoft.com/library/hh831701.aspx) 。
 
 ## 后续步骤
-现已安装并配置 RMS 连接器，并且你的服务器已配置为使用该连接器，IT 管理员和用户可以使用 Azure RMS 保护和使用电子邮件与文档了。 若要让用户轻松使用此功能，请部署 RMS 共享应用程序，它会安装 Office 的外接程序并在文件资源管理器中添加新的右键单击选项。 有关详细信息，请参阅 [Rights Management 共享应用程序管理员指南](../rms-client/sharing-app-admin-guide.md).
+现已安装并配置了 RMS 连接器，并且你的服务器已配置为使用该连接器，IT 管理员和用户就可以使用 Azure RMS 保护和使用电子邮件与文档了。 若要让用户轻松使用此功能，请部署 RMS 共享应用程序，它会安装 Office 的外接程序并在文件资源管理器中添加新的右键单击选项。 有关详细信息，请参阅 [Rights Management 共享应用程序管理员指南](../rms-client/sharing-app-admin-guide.md)。
 
-此外，你可以考虑使用以下方法，帮助你监控 RMS 连接器以及组织使用 Azure RMS 的情况：
+可以使用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md)，检查向用户和管理员推出 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 之前是否还需要执行其他配置步骤。
 
--   内置的 **Microsoft Rights Management 连接器**性能计数器。
-
--   [RMS 分析器工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)，使用 RMS 连接器选项来帮助你监视连接器的运行状况并确定配置问题。
-
--   [记录和分析 Azure Rights Management 使用情况](log-analyze-usage.md)
-
-可以使用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md)，检查向用户和管理员推出 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 之前是否还需要执行其他配置步骤。 
+若要监视 RMS 连接器，请参阅[监视 Azure Rights Management 连接器](monitor-rms-connector.md)。 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

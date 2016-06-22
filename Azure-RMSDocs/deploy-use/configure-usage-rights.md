@@ -269,7 +269,7 @@ ms.suite: ems
 
 ## 电子邮件的“不得转发”选项
 
-Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应用和 Exchange 传输规则）有其自己的电子邮件信息权限保护选项：**不得转发**。 
+Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应用和 Exchange 传输规则）有一个附加的电子邮件信息权限保护选项：**不得转发**。 
 
 尽管**不得转发**看似用户（和 Exchange 管理员）可选择的默认权限管理模板，但此选项并不是模板。 因此在 Azure 经典门户中查看和管理 Azure RMS 模板时，你看不到此选项。 相反，**不得转发**选项是用户对其电子邮件收件人动态应用的一组权限。
 

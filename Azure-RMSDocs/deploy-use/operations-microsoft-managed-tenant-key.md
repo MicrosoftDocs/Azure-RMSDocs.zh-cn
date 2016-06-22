@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 06/03/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -42,7 +42,7 @@ ms.suite: ems
 
 -   你认为租户密钥的主副本（你掌握的副本）已泄漏。
 
-你可以通过呼叫 Microsoft 客户支持服务部门 (CSS) 并证明你是租户管理员来更新你的租户密钥。
+你可以通过[与 Microsoft 支持部门联系](../get-started/information-support#to-contact-microsoft-support)以创建“请求重新键入 Azure RMS 租户密钥的 Azure Rights Management 支持案例”来重新键入你的租户密钥。 必须证明你是你 Azure RMS 租户的管理员，还须了解此过程将需要几天才能确认。 收取标准支持费用：重新键入租户密钥并不是免费支持服务。
 
 当你更新租户密钥时，新内容将使用新租户密钥来保护。 这个过程是分阶段进行的，因此在一段时间内，有些新内容仍将使用旧租户密钥来保护。 以前受到保护的内容仍将使用旧租户密钥来保护。 为了支持此种方案，Azure RMS 保留你的旧密钥，使得它能够发布旧内容的许可证。
 
@@ -54,7 +54,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 ### 步骤 1：启动导出
 
--   若要执行此操作，请与 Microsoft 客户服务支持 (CSS) 联系，以打开**请求 Azure RMS 密钥导出的 Azure Rights Management 支持案例**。 必须证明你是你 Azure RMS 租户的管理员，还须了解此过程将需要几天才能确认。 收取标准支持费用：导出租户密钥并不是免费支持服务。
+-   若要执行此操作，[请与 Microsoft 支持部门联系](../get-started/information-support#to-contact-microsoft-support)，以创建“请求 Azure RMS 密钥导出的 Azure Rights Management 支持案例”。 必须证明你是你 Azure RMS 租户的管理员，还须了解此过程将需要几天才能确认。 收取标准支持费用：导出租户密钥并不是免费支持服务。
 
 ### 步骤 2：等待验证
 
@@ -97,13 +97,13 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 
 |事件描述|可能的响应|
 |------------------------|-------------------|
-|你的租户密钥泄露。|更新你的租户密钥。 请参阅本文章中的“更新你的租户密钥”[](operations-tenant-key.md#re-key-your-tenant-key)部分。|
+|你的租户密钥泄露。|更新你的租户密钥。 请参阅本文中的“重新键入你的租户密钥”[](operations-tenant-key#re-key-your-tenant-key)部分。|
 |未经授权的个人或恶意软件获取了使用你的租户密钥的权限，但密钥本身并未泄露。|更新你的租户密钥在这种情况下并不奏效，需要进行根源分析。 如果进程或软件 Bug 是导致未经授权的个人获得访问权限的原因，则必须解决这一问题。|
 |在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure RMS，以支持新的算法和具有弹性的更长密钥长度，并指示所有客户更新他们的租户密钥。|
 
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

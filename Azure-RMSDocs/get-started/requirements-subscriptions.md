@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2016
+ms.date: 06/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -49,6 +49,8 @@ ms.suite: ems
 ## Office 365 订阅
 [免费 30 天试用版：企业版 E3](http://go.microsoft.com/fwlink/p/?LinkID=403802)
 
+[免费 30 天试用版：企业版 E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+
 此订阅的适用对象是希望使用 Office 联机服务并使用信息 Rights Management (IRM) 功能（此功能使用 Azure RMS）的组织。 但是，并非所有 Office 365 订阅都包括 Azure RMS。
 
 订阅  |包括 IRM 
@@ -84,7 +86,7 @@ Exchange Online 计划 1 <br /><br /> Exchange Online 计划 2|否 <br /><br /> 
 在过期之后会失去访问权限，但也有一种例外情况：在获得试用订阅之前，你的组织通过个人 RMS 订阅来使用 Azure RMS。 那么，即便在试用订阅过期之后，你仍然具有对以前受保护内容的访问权限。
 
 ## 公司移动套件订阅
-[免费 30 天试用版](http://go.microsoft.com/fwlink/?LinkId=615385)
+[免费 30 天试用版](https://portal.office.com/Signup/Signup.aspx?OfferId=2E63A04D-BE0B-4A0F-A8CF-407C1C299221&dl=EMS)
 
 此订阅的适用对象是希望结合使用 Azure Active Directory 高级版、Windows Intune 和 Azure Rights Management 的组织。 将 Azure Rights Management 与 Office 一起使用的支持与使用 Azure Rights Management 高级版订阅的支持相同。 有关企业移动套件订阅的详细信息，请参阅 [Microsoft 企业移动概述](http://go.microsoft.com/fwlink/?LinkId=615386)。
 
@@ -98,6 +100,6 @@ Exchange Online 计划 1 <br /><br /> Exchange Online 计划 2|否 <br /><br /> 
 ## 后续步骤
 若要查看其他要求，请参阅 [Azure Rights Management 的要求](requirements-azure-rms.md)。
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 

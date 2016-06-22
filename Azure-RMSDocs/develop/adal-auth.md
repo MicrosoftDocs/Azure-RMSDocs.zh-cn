@@ -29,11 +29,11 @@ ms.suite: ems
 
 本主题介绍配置基于 Azure ADAL 的身份验证的步骤。
 
-## 内部身份验证
+## Azure 身份验证设置
 
 你将需要以下各项：
 
-- [Microsoft Azure 订阅](https://azure.microsoft.com/en-us/)（使用免费试用版即可）：
+- [Microsoft Azure 订阅](https://azure.microsoft.com/en-us/)（使用免费试用版即可）。 有关详细信息，请参阅[用户如何注册个人 RMS](../understand-explore/rms-for-individuals-user-sign-up.md)
 - Microsoft Azure Rights Management 的订阅（使用免费的[个人 RMS](https://technet.microsoft.com/en-us/library/dn592127.aspx) 帐户即可）。
 
 > [!NOTE] 询问你的 IT 管理员你是否具有 Microsoft Azure Rights Management 订阅，请你的 IT 管理员执行以下步骤。 如果你的组织没有订阅，应请 IT 管理员创建订阅。 此外，你的 IT 管理员应使用*工作或学校帐户*而不是 *Microsoft 帐户*（即 Hotmail）进行订阅。

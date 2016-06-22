@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -32,12 +32,11 @@ ms.suite: ems
 
 文章显示管理员和用户如何查看并使用 Azure Rights Management (Azure RMS) 来帮助保护敏感或机密信息的一些典型示例。
 
-> [!NOTE]
-> 在 Azure RMS 保护数据的所有这些示例中，内容所有者继续对数据（文件或电子邮件）具有完全访问权限，即使应用的保护向所有者不属于的组授予权限，或者即使应用的保护带有到期日期。
+> [!NOTE]在 Azure RMS 保护数据的所有这些示例中，内容所有者继续对数据（文件或电子邮件）具有完全访问权限，即使应用的保护向所有者不属于的组授予权限，或者即使应用的保护包括到期日期。
 >
 > 同样，IT 部门始终可以通过使用 Rights Management 的超级用户功能（向你指定的授权用户或服务授予委托访问权限）来访问受保护的数据而没有限制。 此外，IT 部门还可以跟踪和监视受保护数据的使用情况（例如，谁正在访问该数据和访问时间）。
 
-有关显示运行中的 RMS 的其他屏幕截图和视频，请查看 [Microsoft Rights Management 服务门户](http://www.microsoft.com/rms)和 [Microsoft Rights Management (RMS) 团队博客](http://blogs.technet.com/b/rms).
+有关显示运行中的 RMS 的其他屏幕截图和视频，请查看 [Microsoft Rights Management 服务门户](http://www.microsoft.com/rms)和 [Microsoft Rights Management (RMS) 团队博客](http://blogs.technet.com/b/rms)。
 
 ## 激活和配置权限管理
 尽管可以使用 Windows PowerShell 激活和配置 Azure RMS，但在管理门户中执行这些操作最简单。 激活该服务后，你立即获得两个默认模板，管理员和用户可以选择这两个模板来便捷地对文件应用信息保护。 但你也可以创建自己的自定义模板来提供其他选项和设置。
@@ -51,7 +50,7 @@ ms.suite: ems
 
 ![管理员在步骤 2 中看到的内容](../media/AzRMS_TemplatesPortal_small.png)
 
-**管理员将在步骤 2 中看到：**激活后，两个权限策略模板将自动可供你的组织使用。 一个模板用于只读访问（名称中包含**机密仅供查阅**），另一个模板用于读取和修改访问（名称中包含**机密**）).
+**管理员将在步骤 2 中看到：**激活后，两个权限策略模板将自动可供你的组织使用。 一个模板用于只读访问（名称中包含“机密仅供查阅”），另一个模板用于读取和修改访问（名称中包含“机密”）。
 
 将这两个模板应用于文件或电子邮件时，它们会限制你组织中用户的访问权限。 这是一个非常便捷的方法可帮助防止将你公司的数据泄露给组织外部人员。
 
@@ -80,9 +79,9 @@ ms.suite: ems
 
 **有关此方案的详细信息：**
 
-- 有关分步说明，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md) 和[为 Azure Rights Management 配置自定义模板](../deploy-use/configure-custom-templates.md).
+- 有关分步说明，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md) 和[为 Azure Rights Management 配置自定义模板](../deploy-use/configure-custom-templates.md)。
 
-- 若要帮助用户保护重要的公司文件，请参阅[通过使用 Azure Rights Management 帮助用户保护文件](../deploy-use/help-users.md).
+- 若要帮助用户保护重要的公司文件，请参阅[通过使用 Azure Rights Management 帮助用户保护文件](../deploy-use/help-users.md)。
 
 接下来，请参阅管理员如何应用模板以自动为文件和电子邮件配置信息保护的一些示例。
 
@@ -102,7 +101,7 @@ ms.suite: ems
 
 **管理员将在步骤 2 中看到：**在文件服务器上，管理员配置分类规则和任务，以使“市场促销”文件夹中的所有用户文件自动归类为“营销”并使用 RMS 加密进行保护。
 
-她选择我们在第一个示例中创建的自定义 RMS 模板（限制为只有“销售”和“营销”部门的成员才能访问）：**销售和营销 - 仅供阅读和打印**.
+她选择我们在第一个示例中创建的自定义 RMS 模板（限制为只有“销售”和“营销”部门的成员才能访问）： **销售和营销 - 仅供阅读和打印**。
 
 因此，该文件夹中的所有文档将自动配置有“营销”分类并受“销售和营销”RMS 模板保护。
 
@@ -119,7 +118,7 @@ ms.suite: ems
 
 **有关此方案的详细信息：**
 
-- 有关分步说明，请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md).
+- 有关分步说明，请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。
 
 ## 使用 Exchange Online 和数据丢失预防策略自动保护电子邮件
 
@@ -134,6 +133,9 @@ ms.suite: ems
 已配置规则，以便对包含这些信息并发送到组织外部的电子邮件自动使用 RMS 模板应用权限保护以限制为只有公司员工才能访问这些邮件。
 
 此处将规则配置为使用其中一个默认模板，即我们的第一个示例中的“VanArsdel, Ltd - 机密” 。 但你还可以看到模板选项如何包括你已创建的任何自定义模板以及特定于 Exchange 的“不要转发”选项  。
+
+> [!NOTE]
+> 如果你看到的配置选项和图片略有不同，你可能需要在配置规则时，首先选择“更多选项”。 然后，你可以选择“修改消息安全性” > “应用权限保护”，然后选择 RMS 模板。
 
 ---
 
@@ -153,9 +155,9 @@ ms.suite: ems
 
 **有关此方案的详细信息：**
 
--   有关如何配合 Exchange Online 使用 Azure RMS 的详细信息，请参阅[应用程序如何支持 Azure Rights Management](applications-support.md) 中的 [Exchange Online 和 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) 部分.
+-   有关如何配合 Exchange Online 使用 Azure RMS 的详细信息，请参阅[应用程序如何支持 Azure Rights Management](applications-support.md) 中的 [Exchange Online 和 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) 部分。
 
--   有关为 Azure RMS 配置 Exchange Online 的分步说明，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)中的 [Exchange Online：IRM 配置](../deploy-use/configure-office365.md#exchange-online-irm-configuration).
+-   有关为 Azure RMS 配置 Exchange Online 的分步说明，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)中的 [Exchange Online：IRM 配置](../deploy-use/configure-office365.md#exchange-online-irm-configuration)。
 
 ## 使用 SharePoint Online 和受保护的库自动保护文件
 
@@ -187,9 +189,9 @@ ms.suite: ems
 
 **有关此方案的详细信息：**
 
--   有关 Azure RMS 如何适用于 SharePoint 的详细信息，请参阅[应用程序如何支持 Azure Rights Management](applications-support.md) 中的 [SharePoint Online 和 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 部分.
+-   有关 Azure RMS 如何适用于 SharePoint 的详细信息，请参阅[应用程序如何支持 Azure Rights Management](applications-support.md) 中的 [SharePoint Online 和 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 部分。
 
--   有关为 Azure RMS 配置 SharePoint 的分步说明，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)中的 [SharePoint Online 和 OneDrive for Business：IRM 配置](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)部分.
+-   有关为 Azure RMS 配置 SharePoint 的分步说明，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)中的 [SharePoint Online 和 OneDrive for Business：IRM 配置](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)部分。
 
 ## 用户安全地与移动用户共享附件
 
@@ -235,7 +237,7 @@ Alice 想要将 Bob 限制为只能查看和编辑该文档，而不想让他复
 
 **有关此方案的详细信息：**
 
-- 有关分步说明，请参阅 [Rights Management 共享应用程序用户指南](../rms-client/sharing-app-user-guide.md)中的[保护通过电子邮件共享的文件](../rms-client/sharing-app-protect-by-email.md)和[查看和使用已保护的文件](../rms-client/sharing-app-view-use-files.md).
+- 有关分步说明，请参阅 [Rights Management 共享应用程序用户指南](../rms-client/sharing-app-user-guide.md)中的[保护通过电子邮件共享的文件](../rms-client/sharing-app-protect-by-email.md)和[查看和使用已保护的文件](../rms-client/sharing-app-view-use-files.md)。
 
 - [Azure Rights Management 快速入门教程](../get-started/quick-start-tutorial.md) 包含此方案的分步说明。
 
@@ -244,6 +246,6 @@ Alice 想要将 Bob 限制为只能查看和编辑该文档，而不想让他复
 现在，你已看到 Azure RMS 可以执行哪些操作的一些示例，你可能会对其如何执行这些操作感兴趣。 有关 Azure RMS 的工作原理的技术信息，请参阅[ Azure RMS 的工作原理](how-does-it-work.md)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

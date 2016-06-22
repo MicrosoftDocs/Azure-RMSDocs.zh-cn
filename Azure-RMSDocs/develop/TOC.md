@@ -21,11 +21,10 @@
 #### [iOS/OS X 代码示例](ios-os-x-code-examples.md)
 #### [社区资源](community-resources.md)
 ### [开发人员指南和条款](core-concepts.md)
-#### [如何：向应用添加身份验证](authentication-integration.md)
-#### [如何：启用错误和性能日志记录](enabling-logging.md)
-#### [如何：获取 Azure 应用程序 ID](application-id.md)
-#### [如何：使用内置权限](built-in-rights-usage-restriction-reference.md)
-#### [如何：使用文档跟踪](how-to-use-document-tracking.md)
+#### [如何使用 Azure AD 注册应用并为其启用 RMS](authentication-integration.md)
+#### [如何启用错误和性能日志记录](enabling-logging.md)
+#### [如何使用内置权限](built-in-rights-usage-restriction-reference.md)
+#### [如何使用文档跟踪](how-to-use-document-tracking.md)
 #### [条款](terms.md)
 ### [API 参考](api-reference-4-2.md)
 #### [Android API 参考](android-namespaces.md)
@@ -60,8 +59,14 @@
 #### [受支持的平台](supported-platforms.md)
 #### [了解使用限制](understanding-usage-restrictions.md)
 #### [使用限制参考](usage-restriction-reference.md)
+### [API 参考](api-reference-2-1.md)
+#### [常量](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/constants)
+#### [数据类型](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/data types)
+#### [函数](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/functions)
+#### [结构](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/structures)
+#### [错误代码](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/Error codes)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

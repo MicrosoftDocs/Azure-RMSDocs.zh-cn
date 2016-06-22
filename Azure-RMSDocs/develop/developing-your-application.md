@@ -32,7 +32,7 @@ ms.suite: ems
 
 本主题中的指南以示例应用程序 IPCHelloWorld 为基础，可帮助你熟悉启用权限的应用程序的基本概念和代码。 你可以从 Microsoft Connect 下载完整的 IPCHellowWorld 示例应用程序 [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)。
 
->AZURE.NOTE IPCHelloWorld 项目已针对 Rights Management Services SDK 2.1 进行了配置。 有关如何配置新项目以使用 RMS SDK 2.1 的信息，请参阅 [配置 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)。
+> [!Note] IPCHelloWorld 项目已针对 Rights Management Services SDK 2.1 进行了配置。 有关如何配置新项目以使用 RMS SDK 2.1 的信息，请参阅 [配置 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)。
 
 ## 加载 MSIPC.dll
 

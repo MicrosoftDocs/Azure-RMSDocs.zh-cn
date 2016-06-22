@@ -1,14 +1,24 @@
 ---
-# 必需元数据
+# required metadata
 
-标题：操作说明：安装和配置 RMS 服务器并用其进行测试 |Azure RMS 说明：安装并配置 RMS 服务器以便测试启用权限的应用程序。
-keywords: author: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# 可选元数据
+title: 如何安装、配置 RMS 服务器并用其进行测试| Azure RMS
+description: 安装并配置 RMS 服务器以便测试启用权限的应用程序。
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
+# optional metadata
 
 #ROBOTS:
 audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -55,7 +65,7 @@ ms.reviewer: shubhamp ms.suite: ems
 
     要使用 RMS 服务器进行测试，请配置服务器端发现或客户端发现，以使 Rights Management 服务客户端 2.1 可以发现预生产 RMS 服务器并与之建立通信。
 
-    >![NOTE] 使用 Azure RMS 进行测试不需要发现配置。
+    > [!Note] 使用 Azure RMS 进行测试不需要发现配置。
 
   - 在服务器端发现中，管理员会向 Active Directory 注册 RMS 根群集的服务连接点 (SCP)，客户端会查询 Active Directory 以发现该 SCP 并与服务器建立连接。
   - 在客户端发现中，会在运行 RMS 客户端 2.1 的计算机上，在注册表中配置 RMS 服务发现设置。 这些设置使 RMS 客户端 2.1 指向 RMS 服务器。 当它们存在时，不会执行服务器端发现。

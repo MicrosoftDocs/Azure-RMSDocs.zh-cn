@@ -1,13 +1,24 @@
 ---
-# 必需元数据
+# required metadata
 
-标题：操作指南：使用加密设置 | Azure RMS 说明：本文将带你了解我们的加密包 keywords: author: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
-# 可选元数据
+title: 如何使用加密设置 | Azure RMS
+description: 本文将带你了解我们的加密包
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
+# optional metadata
 
 #ROBOTS:
 audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

@@ -34,7 +34,7 @@ ms.suite: ems
 
 可以使用 Azure RMS 或在 Windows Server 上运行的 RMS 服务器进行测试，我们建议在 Azure RMS 上开始测试，再根据部署的要求使用 RMS 服务器进行测试。
 
-1. 有关使用 Azure RMS 进行测试，请参阅[操作说明：使用 ADAL 身份验证](how-to-use-adal-authentication,md)。
+1. 如需使用 Azure RMS 进行测试，请参阅[操作说明：使用 ADAL 身份验证](how-to-use-adal-authentication.md)。
 2. 有关使用 RMS 服务器进行测试，请参阅[操作说明：安装和配置 RMS 服务器](how-to-install-and-configure-an-rms-server.md)。
 3. 下面介绍如何安装开发人员运行时。
 

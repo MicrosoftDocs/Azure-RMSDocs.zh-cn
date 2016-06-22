@@ -22,6 +22,7 @@
 ### [安装并配置连接器](install-configure-rms-connector.md)
 ### [配置服务器](configure-servers-rms-connector.md)
 #### [注册表设置](rms-connector-registry-settings.md)
+### [监视连接器](monitor-rms-connector.md)
 ## [验证 Azure RMS](verify.md)
 ## [帮助用户保护文件](help-users.md)
 ## [日志记录和分析使用情况](log-analyze-usage.md)
@@ -35,6 +36,6 @@
 # [开发和自定义应用](/rights-management/develop/developers-guide)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

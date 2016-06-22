@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -33,10 +33,9 @@ ms.suite: ems
 
 此解决方案允许你自动保护运行 Windows Server 的文件服务器上的文件夹中的所有文件或自动保护符合特定条件的文件。 例如，已分类为包含机密或敏感信息的文件。 此解决方案使用 Azure Rights Management (Azure RMS) 来保护文件，因此必须将此技术部署在你的组织中。
 
-> [!NOTE]
-> 尽管 Azure RMS 包括支持文件分类基础结构的[连接器](../deploy-use/deploy-rms-connector.md)，但该解决方案仅支持本机保护（例如，Office 文件）。
+> [!NOTE]尽管 Azure RMS 包括支持文件分类基础结构的[连接器](../deploy-use/deploy-rms-connector.md)，但该解决方案仅支持本机保护（例如，Office 文件）。
 > 
-> 若要支持使用文件分类基础结构的所有文件类型，必须使用 Windows PowerShell **RMS 保护** 模块，如本文中所述。 RMS 保护 cmdlet（如 RMS 共享应用程序）支持一般性保护和本机保护，这意味着可以保护所有文件。 有关这些不同保护级别的详细信息，请参阅 [Rights Management 共享应用程序管理员指南 ](sharing-app-admin-guide.md) 中的 [保护级别 – 本机和常规 ](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 部分.
+> 若要支持使用文件分类基础结构的所有文件类型，必须使用 Windows PowerShell **RMS 保护** 模块，如本文中所述。 RMS 保护 cmdlet（如 RMS 共享应用程序）支持一般性保护和本机保护，这意味着可以保护所有文件。 有关这些不同保护级别的详细信息，请参阅 [Rights Management 共享应用程序管理员指南 ](sharing-app-admin-guide.md) 中的 [保护级别 – 本机和常规 ](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 部分。
 
 接下来的说明适用于 Windows Server 2012 R2 或 Windows Server 2012。 如果你运行其他受支持的 Windows 版本，则可能需要调整某些步骤，以适应你的操作系统版本与本文所述的操作系统版本之间的差异。
 
@@ -49,7 +48,7 @@ ms.suite: ems
 
     -   已标识包含要使用 Rights Management 保护的文件的本地文件夹。 例如，C:\FileShare。
 
-    -   你已安装 RMS 保护工具，包括该工具的必备组件（如 RMS 客户端）和 Azure RMS 的必备组件（如服务主体帐户）。 有关详细信息，请参阅 [RMS 保护 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx).
+    -   你已安装 RMS 保护工具，包括该工具的必备组件（如 RMS 客户端）和 Azure RMS 的必备组件（如服务主体帐户）。 有关详细信息，请参阅 [RMS 保护 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
 
     -   如果要更改特定文件扩展名的 RMS 保护的默认级别（本机或常规），需已编辑注册表，如[文件 API 配置](https://msdn.microsoft.com/library/dn197834%28v=vs.85%29.aspx)页中所述。
 
@@ -63,7 +62,7 @@ ms.suite: ems
 
     -   对称密钥
 
--   你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure RMS 保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此帐户配置的详细信息，请参阅[准备 Azure Rights Management](../plan-design/prepare.md).
+-   你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure RMS 保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此帐户配置的详细信息，请参阅[准备 Azure Rights Management](../plan-design/prepare.md)。
 
 -   已确定要使用的 Rights Management 模板，该模板将保护文件。 请确保你通过使用 [Get-RMSTemplate](https://msdn.microsoft.com/library/azure/mt433197.aspx) cmdlet 知道此模板的 ID。
 
@@ -129,7 +128,7 @@ ms.suite: ems
         Import-Module "C:\Program Files\WindowsPowerShell\Modules\RMSProtection\RMSProtection.dll"
         ```
 
-3.  为脚本签名。 如果未为脚本签名（更安全），则必须在运行该脚本的服务器上配置 Windows PowerShell。 例如，使用“以管理员身份运行”选项运行 Windows PowerShell 会话，然后键入 **Set-ExecutionPolicy Unrestricted**。 但是，此配置将允许所有未签名的脚本运行（较不安全）。
+3.  为脚本签名。 如果未为脚本签名（更安全），则必须在运行该脚本的服务器上配置 Windows PowerShell。 例如，使用“以管理员身份运行”选项运行 Windows PowerShell 会话，然后键入：“Set-ExecutionPolicy RemoteSigned”。 但是，当未签名的脚本被存储在此服务器上时，此配置将允许所有未签名的脚本运行（不太安全）。
 
     有关为 Windows PowerShell 脚本签名的详细信息，请参阅 PowerShell 文档库中的 [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) 。
 
@@ -161,11 +160,11 @@ ms.suite: ems
 
         -   **已启用**：保留默认设置，即选中此复选框。
 
-        -   **说明**：键入**对&lt;文件夹名称&gt;中的所有文件进行分类以便使用 Rights Management**.
+        -   **说明**：键入“对&lt;文件夹名称&gt;中的所有文件进行分类以便使用 Rights Management”。
 
             将*&lt;文件夹名称&gt;*替换为所选的文件夹名称。 例如，“为 Rights Management 的 C:\FileShare 文件夹中的所有文件分类”
 
-        -   **范围**：添加所选的文件夹。 例如，**C:\FileShare**.
+        -   **范围**：添加所选的文件夹。 例如，**C:\FileShare**。
 
             请勿选择复选框。
 
@@ -207,7 +206,7 @@ ms.suite: ems
 
             将*&lt;文件夹名称&gt;*替换为所选的文件夹名称。 例如，“使用 Windows PowerShell 脚本通过 Rights Management 和模板保护 C:\FileShare 中的文件”
 
-        -   **范围**：选择所选的文件夹。 例如，**C:\FileShare**.
+        -   **范围**：选择所选的文件夹。 例如，**C:\FileShare**。
 
             请勿选择复选框。
 
@@ -262,25 +261,24 @@ ms.suite: ems
 
 1.  运行分类规则：
 
-    1.  单击**分类规则** &gt; **立即使用所有规则运行分类**
+    1.  单击“分类规则”&gt;>“立即使用所有规则运行分类”
 
-    2.  单击**等待分类完成**，然后单击**确定**.
+    2.  单击“等待分类完成”，然后单击“确定”。
 
-2.  等待“运行分类”对话框关闭，然后在自动显示的报告中查看结果  。 你应该会在“属性”字段中看到“1”，并可以看到你的文件夹中的文件数。 通过使用文件资源管理器检查所选文件夹中的文件的属性来进行确认。 在**分类**选项卡上，你应该会看到属性名称为 **RMS**，其**值**为**是**.
+2.  等待“运行分类”对话框关闭，然后在自动显示的报告中查看结果  。 你应该会在“属性”字段中看到“1”，并可以看到你的文件夹中的文件数。 通过使用文件资源管理器检查所选文件夹中的文件的属性来进行确认。 在“分类”选项卡上，你应该会看到 **RMS** 为属性名称，“是”为其“值”。
 
 3.  运行文件管理任务：
 
-    1.  单击**文件管理任务** &gt; **使用 RMS 保护文件** &gt; **立即运行文件管理任务**
+    1.  单击“文件管理任务”&gt;>“使用 RMS 保护文件”&gt;>“立即运行文件管理任务”
 
-    2.  单击**等待任务完成**，然后单击**确定**.
+    2.  单击“等待任务完成”，然后单击“确定”。
 
 4.  等待“运行文件管理任务”对话框关闭，然后在自动显示的报告中查看结果  。 你应在“文件”字段中看到所选文件夹中的文件数  。 确认所选文件夹中的文件现已受 RMS 保护。 例如，如果所选文件夹是 C:\FileShare，则在 Windows PowerShell 会话中键入以下内容并确认没有文件处于“未保护”状态：
 
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
     ```
-    > [!TIP]
-    > 一些故障排除技巧：
+    > [!TIP]一些故障排除技巧：
     > 
     > -   如果你在报告中看到 **0** （而不是你的文件夹中的文件数），则这指示脚本未运行。 首先，通过在 Windows PowerShell ISE 中加载脚本以验证脚本内容来检查脚本本身，然后尝试运行它以查看是否显示任何错误。 如果未指定任何参数，该脚本将尝试连接到 Azure RMS 并向其进行身份验证。
     > 
@@ -302,12 +300,12 @@ ms.suite: ems
 ## 修改说明可有选择性地保护文件
 如果你让前面的说明正常操作，则随后可很容易地修改它们以用于更复杂的配置。 例如，使用同一个脚本保护文件，但只针对包含个人身份信息的文件，然后可能选择具有更多限制权限的模板。
 
-为此，请使用内置分类属性之一（例如，**个人身份信息**）或创建你自己的新属性。 然后创建一个使用此属性的新规则。 例如，可选择**内容分类器**，为**个人可标识信息**属性选择值**高**，并配置用于标识要为此属性配置的文件的字符串或表达式模式（如字符串“**出生日期**”）").
+为此，请使用内置分类属性之一（例如，**个人身份信息**）或创建你自己的新属性。 然后创建一个使用此属性的新规则。 例如，可能会选择“内容分类器”，为“个人身份信息”属性选择值“高”，并配置字符串或表达式模式（如字符串“出生日期”）以标识要为此属性配置的文件。
 
-现在你需要做的只是创建新的文件管理任务（该任务使用同一脚本但可能使用不同模板），并为刚配置的分类属性配置条件。 例如，选择将**运算符**值设为**等于**且**值**为**高**的**个人身份信息**属性，而不是我们前面配置的条件（**RMS** 属性，**等于**，**是**）.
+现在你需要做的只是创建新的文件管理任务（该任务使用同一脚本但可能使用不同模板），并为刚配置的分类属性配置条件。 例如，选择将“运算符”值设为“等于”且“值”为“高”的“个人身份信息”属性，而不是我们前面配置的条件（**RMS** 属性，**等于**，**是**）。
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -29,11 +29,10 @@ Microsoft Rights Management SDK 4.2 的重点是帮助你构建启用 AD RMS 的
 
 以下主题适用于支持开发启用 RMS 的应用程序设计过程。
 
-- [如何：向应用添加身份验证](authentication-integration.md) - 介绍针对启用 RMS 的应用的用户身份验证基础知识。
-- [如何：启用错误和性能日志记录](enabling-logging.md) - RMS SDK 4.2 通过单个设备属性管理诊断和性能日志上传。
-- [如何：获取 Azure 应用程序 ID](application-id.md) - 使用 MS RMS SDK 4.2 创建启用 RMS 的应用需要与 RMS 团队创建协议。
-- [如何：使用内置权限](built-in-rights-usage-restriction-reference.md) - 概述了 RMS SDK 4.2 提供的内置权限以及应用为遵守这些限制而强制执行的使用限制。
-- [如何：使用文档跟踪](how-to-use-document-tracking.md) - 使用文档跟踪功能需要对管理关联元数据以及向服务注册有一些简单了解。
+- [如何使用 Azure AD 注册应用并为其启用 RMS](authentication-integration.md) - 介绍针对启用 RMS 的应用的用户身份验证的基础知识。
+- [如何启用错误和性能日志记录](enabling-logging.md) - RMS SDK 4.2 通过单个设备属性管理诊断和性能日志上传。
+- [如何使用内置权限](built-in-rights-usage-restriction-reference.md) - 概述了 RMS SDK 4.2 提供的内置权限以及应用为遵守这些限制而强制执行的使用限制。
+- [如何使用文档跟踪](how-to-use-document-tracking.md) - 使用文档跟踪功能需要对管理关联元数据以及向服务注册有一些简单了解。
 - [条款](terms.md) - 特定于 Rights Management Services 的术语定义集合。
 
  
@@ -43,6 +42,6 @@ Microsoft Rights Management SDK 4.2 的重点是帮助你构建启用 AD RMS 的
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 

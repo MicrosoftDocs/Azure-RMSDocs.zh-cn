@@ -1,14 +1,24 @@
 ---
-# 必需元数据
+# required metadata
 
-标题：操作说明：使服务应用程序可以使用基于云的 RMS | Azure RMS 说明：本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。
-keywords: author: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
-# 可选元数据
+title: 如何使服务应用程序可以使用基于云的 RMS | Azure RMS
+description: 本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
+# optional metadata
 
 #ROBOTS:
 audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/06/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -35,7 +35,7 @@ ms.suite: ems
 
 -   有关 Azure RMS 的简介、它可以解决的业务问题、它对管理员和用户来说是什么样子，以及它是如何工作的，请参阅 [Azure Rights Management 是什么？](../understand-explore/what-is-azure-rms.md)
 
--   有关 Azure RMS 与 AD RMS 的比较，请参阅[比较 Azure Rights Management 和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md).
+-   有关 Azure RMS 与 AD RMS 的比较，请参阅[比较 Azure Rights Management 和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。
 
 ## 将 AD RMS 迁移到 Azure RMS 的先决条件
 在开始迁移到 Azure RMS 之前，请确保具备以下先决条件，并确保你了解所有限制。
@@ -66,7 +66,7 @@ ms.suite: ems
 
 - **运行 Azure RMS（包括 Azure RMS 租户（未激活））的所有要求**
 
-    请参阅 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md).
+    请参阅 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)。
 
     尽管在从 AD RMS 迁移之前你必须拥有 Azure RMS 租户，但我们建议在迁移之前不要激活 Rights Management 服务。 迁移过程包括此步骤，在从 AD RMS 导出密钥和模板并将其导入到 Azure RMS 之后执行此操作。 但是，如果 Azure RMS 已激活，你仍可以从 AD RMS 迁移。
 
@@ -77,7 +77,7 @@ ms.suite: ems
 
     - 在 Azure Active Directory 中已启用邮件的组
 
-    请参阅[准备 Azure Rights Management](prepare.md).
+    请参阅[准备 Azure Rights Management](prepare.md)。
 
 
 - **如果你已使用过 Exchange Server 的信息权限管理 (IRM) 功能**（例如，传输规则和 Outlook Web Access）或者带 AD RMS 的 SharePoint Server：
@@ -101,7 +101,7 @@ ms.suite: ems
 
 -   如果你与外部合作伙伴协作（例如，通过使用受信任的用户域或联合），则在你迁移的同时或之后尽早的时间，这些合作伙伴也必须迁移到 Azure RMS。 若要继续访问你的组织以前使用 AD RMS 保护的内容，这些合作伙伴必须进行与你进行的更改（在本文档中提供了这些更改）类似的客户端配置更改。
 
-    由于你的合作伙伴进行的配置可能有所变动，确切说明此重新配置已超出了本文档的范围。 有关帮助，请与 Microsoft 客户支持服务 (CSS) 联系。
+    由于你的合作伙伴进行的配置可能有所变动，确切说明此重新配置已超出了本文档的范围。 若要获得帮助，[请与 Microsoft 支持部门联系](../get-started/information-support#support-options-and-community-resources)。
 
 ## 将 AD RMS 迁移到 Azure RMS 的步骤概述
 
@@ -181,10 +181,10 @@ ms.suite: ems
 
 
 ## 后续步骤
-若要开始迁移，请转到[阶段 1 - 服务器端配置](migrate-from-ad-rms-phase1.md).
+若要开始迁移，请转到[阶段 1 - 服务器端配置](migrate-from-ad-rms-phase1.md)。
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
