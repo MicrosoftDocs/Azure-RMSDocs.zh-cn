@@ -65,9 +65,6 @@
   "25d07b17db2fd45050cf796606dd93b3a2b819ac": [
     "Azure-RMSDocs\\includes\\win8_server_1_md.md"
   ],
-  "47e2d48aeba95aba232a1c8a7f02df31d2604a6e": [
-    "Azure-RMSDocs\\scratch.md"
-  ],
   "6cb49518dbeef7122e355cd9b2edfb83722e1dba": [
     "Azure-RMSDocs\\TOC.md"
   ],
@@ -104,6 +101,9 @@
   "505f2c94bb4fd056b4d2f51c147c6b0b84efac00": [
     "Azure-RMSDocs\\understand-explore\\how-does-it-work.md"
   ],
+  "def8b7e98fd55a3d028978ffc9f8e41e38a5622c": [
+    "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
+  ],
   "85fe0447c2b14eaf16b51f23fed0d259d37b04d7": [
     "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
   ],
@@ -121,9 +121,6 @@
   ],
   "500701acb03aa9f049cc995f14e544e07556bc4f": [
     "Azure-RMSDocs\\rms-client\\privacy-statement-rms-enlightened-applications.md"
-  ],
-  "e6106b0b5a5aa1039f7cbf5a35589216c5e540f3": [
-    "Azure-RMSDocs\\template.md"
   ],
   "6bf11174aad9b6e54becf682e0b684c407c03439": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
@@ -155,6 +152,9 @@
   "136d6e9d0c45a9779f87e32eed8288fe8ee3a622": [
     "Azure-RMSDocs\\develop\\windows-phone-apps.md"
   ],
+  "0b8e0fb6d872506ac3529bd137286f0e8fa562ee": [
+    "Azure-RMSDocs\\develop\\winrt-sdk.md"
+  ],
   "b8684a62fe1dc26de84cea7abc5720a5a649980b": [
     "Azure-RMSDocs\\develop\\winrt-sdk.md"
   ],
@@ -167,8 +167,14 @@
   "c3b40e57dadfacca62f2bd74e605a9a9959bb6e2": [
     "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
   ],
+  "24322775b689ad0508979853fd06b2d33fc33cc1": [
+    "Azure-RMSDocs\\develop\\ad-rms-client.md"
+  ],
   "85613d5444bcba3c0d3f1dc808fa16f5a84c7e6d": [
     "Azure-RMSDocs\\develop\\ad-rms-client.md"
+  ],
+  "37f3bc2308caaa8fd5e5c7fc8c56b6dc4d076b97": [
+    "Azure-RMSDocs\\develop\\ad-rms-overview.md"
   ],
   "4183dfdb17479baf3e4494bd3566d7a8cf68eb08": [
     "Azure-RMSDocs\\develop\\ad-rms-overview.md"
@@ -176,14 +182,23 @@
   "685079958d71d8c681d9150aadcbbc4bfedd15ad": [
     "Azure-RMSDocs\\develop\\ad-rms-server.md"
   ],
+  "5d8c7ab53f76005d7efbfd2d795da08e41f83941": [
+    "Azure-RMSDocs\\develop\\android-code.md"
+  ],
   "acd0692102c43baff0a92360e0ddbe1259ad9b4f": [
     "Azure-RMSDocs\\develop\\android-code.md"
+  ],
+  "30fad88ff664e2df935c8f2cfd28f8b1fe251f67": [
+    "Azure-RMSDocs\\develop\\android-sdk.md"
   ],
   "a13d8ce327f15f4b94162770b7a881e1a6746a2b": [
     "Azure-RMSDocs\\develop\\android-sdk.md"
   ],
   "25894ed446911a55481d0f2ac628db2f46e477f6": [
     "Azure-RMSDocs\\develop\\api-reference-4-2.md"
+  ],
+  "3fa37d10a28a80e984f5b977927deedff451c26f": [
+    "Azure-RMSDocs\\develop\\application-id.md"
   ],
   "4d0c5b0bdd6f3c50a382cb3ca330b4d9d4add287": [
     "Azure-RMSDocs\\develop\\application-id.md"
@@ -236,6 +251,9 @@
   "54fc5037eaaa5c9ae2557aa6e4c67aa99a4143e6": [
     "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md"
   ],
+  "d9f6c1aea8ac9403e37f876960b28a91b921d438": [
+    "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
+  ],
   "bedfc76557112e469688fdc6e546f4911961821c": [
     "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
   ],
@@ -245,14 +263,23 @@
   "9872317c2d5f5f56f28ed2683d7ebc9743041a37": [
     "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md"
   ],
+  "7a369052dd94b1507e427b9f8449efc04ea6c19a": [
+    "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md"
+  ],
   "4fc722907339137a752b701d5be09a7da66f4e89": [
     "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md"
+  ],
+  "6f8a475907347e545eb3ea46fecc04013fa74c5e": [
+    "Azure-RMSDocs\\develop\\index.md"
   ],
   "98a2220c1b2d2f7c62673b8d860962d8c208c5ae": [
     "Azure-RMSDocs\\develop\\index.md"
   ],
   "0c5ec8da79674d2023a0684fb0e83ac1e1743874": [
     "Azure-RMSDocs\\develop\\ios-os-x-code-examples.md"
+  ],
+  "821fe1c361dc38b1e33ac66208122de165d02020": [
+    "Azure-RMSDocs\\develop\\ios-sdk.md"
   ],
   "398ee56037136a74a441cb1ef3291fdfc3c1eb01": [
     "Azure-RMSDocs\\develop\\ios-sdk.md"
@@ -269,8 +296,14 @@
   "866a8f1ec80ecb5b91fcc2915d11f5ef61543c32": [
     "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
   ],
+  "417888c5445d702b1f700a8e717fbb746593efc6": [
+    "Azure-RMSDocs\\develop\\overview.md"
+  ],
   "e9a3f95c8ff289380dc62994e4f719bc174c4900": [
     "Azure-RMSDocs\\develop\\overview.md"
+  ],
+  "eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835": [
+    "Azure-RMSDocs\\develop\\release-notes.md"
   ],
   "c1e99075297f2bc4c5f913ecbdb0808876133328": [
     "Azure-RMSDocs\\develop\\release-notes.md"
@@ -296,8 +329,14 @@
   "baf08d04f836e5aa406f125a7029bc43297f5df1": [
     "Azure-RMSDocs\\develop\\supported-platforms.md"
   ],
+  "5779cc10503ad7afe997e031a467021b513fc510": [
+    "Azure-RMSDocs\\develop\\terms.md"
+  ],
   "cb8c91db044eb8cee39661994191c261bdbdb8ce": [
     "Azure-RMSDocs\\develop\\terms.md"
+  ],
+  "c9d5ec961989283c5201a81f862b2da45ed64340": [
+    "Azure-RMSDocs\\develop\\developers-guide.md"
   ],
   "20caaf80b7a4fdd47c9583cdb0c1451cc16a531c": [
     "Azure-RMSDocs\\develop\\developers-guide.md"
@@ -500,6 +539,9 @@
   "f4552994fb8f83120dcadd157cddb150387a169a": [
     "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
   ],
+  "defe008a9b78026ccac584bb06762228456a2916": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
+  ],
   "bae830f3408e1109882e9ed88f32fb9bcab45574": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
   ],
@@ -520,6 +562,9 @@
   ],
   "589cd61d24788538ec9a013a236d22cd103ab8ec": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
+  ],
+  "75cce1d0e5a1cff0d4f6609d0f084fda1af62951": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase3.md"
   ],
   "8c2ebdbdfec2465475f6ce7daa2dafd35b874329": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase3.md"
@@ -556,6 +601,9 @@
   ],
   "5ec740b4de63c90c9713916dcf104316e727498b": [
     "Azure-RMSDocs\\rms-client\\install-sharing-app.md"
+  ],
+  "e67d0ab5537aa7444940a5e7ce3a653cc6e66993": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide.md"
   ],
   "83feb5f6ad1f316fda9703b17b254baa308f9e22": [
     "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide.md"
