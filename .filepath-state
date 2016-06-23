@@ -368,6 +368,9 @@
   "63635d13f95219bd900d8ecdd0ca0738c5ebca4a": [
     "Azure-RMSDocs\\understand-explore\\understand-explore.md"
   ],
+  "6ba6e7b208c0b53a5cc6f38811f6845234bf7983": [
+    "Azure-RMSDocs\\index.md"
+  ],
   "6360c91fe95537d3c3780f4c5564d2efc83c547f": [
     "Azure-RMSDocs\\index.md"
   ],
@@ -460,6 +463,9 @@
   ],
   "e382f9837adc6d6efd1d3efb872ef50e8a0d4cac": [
     "Azure-RMSDocs\\deploy-use\\verify.md"
+  ],
+  "80c24cd79ad2836a468b5b9a938a12a8f44b23d1": [
+    "Azure-RMSDocs\\get-started\\faqs.md"
   ],
   "d9107e8566f0e44d87d9da4703aa3376c8594b4e": [
     "Azure-RMSDocs\\get-started\\faqs.md"
