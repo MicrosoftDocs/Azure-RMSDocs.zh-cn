@@ -500,6 +500,9 @@
   "f4552994fb8f83120dcadd157cddb150387a169a": [
     "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
   ],
+  "bae830f3408e1109882e9ed88f32fb9bcab45574": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
+  ],
   "9411fee6b29db4404a0ae430cc7ea54d4d7d47e5": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
   ],
@@ -508,6 +511,9 @@
   ],
   "9694b21d3c8175e51f4786f6e1bed27918d7d487": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
+  ],
+  "1016ecdd77e818840f2a2cfab8212e908291bb89": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
   ],
   "3ac6ffac17770828a24bbac703ad8aa73b5740eb": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
