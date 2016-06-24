@@ -1,20 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d2a964cd55da4744149f3c21b360864896e44984/Azure-RMSDocs/get-started/faqs.md) | OutofSyncHandedBackSuccess | [Details](#80c24cd79ad2836a468b5b9a938a12a8f44b23d1103)
- [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/80de3ab273c090f466fc381390d84b8f7b90f6f4/Azure-RMSDocs/index.md) | OutofSyncHandedBackSuccess | [Details](#6ba6e7b208c0b53a5cc6f38811f6845234bf7983156)
+ [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5e57e6bbe48f06da278813a1adf42e5b46aa305a/Azure-RMSDocs/get-started/faqs.md) | OutofSyncHandedBackSuccess | [Details](#f50a7f202a7c4553c604ed77c0fe40eade4e4a1b103)
 
 ## Item Details
-##### <a name='80c24cd79ad2836a468b5b9a938a12a8f44b23d1103'></a> Source: [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d2a964cd55da4744149f3c21b360864896e44984/Azure-RMSDocs/get-started/faqs.md)
+##### <a name='f50a7f202a7c4553c604ed77c0fe40eade4e4a1b103'></a> Source: [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5e57e6bbe48f06da278813a1adf42e5b46aa305a/Azure-RMSDocs/get-started/faqs.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/a6c2bd24cd4355fccc1bd0aaca11002714957b70/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf)
-* Handoff Datetime: 2016-06-23 23:03:02
+* Handoff File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3d485878491fd103c89f25bc7bfe8e48635279fa/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf)
+* Handoff Datetime: 2016-06-24 22:46:16
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -25,23 +24,6 @@
 * Current Handback Datetime: 2016-06-16 11:51:18
 * Bilingual File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/2e4877e3e02b62bea80cd33038aafa16c54c4737/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf)
 * Bilingual Datetime: 2016-06-16 11:52:55
-* [Back to Top](#report-top)
-
-##### <a name='6ba6e7b208c0b53a5cc6f38811f6845234bf7983156'></a> Source: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/80de3ab273c090f466fc381390d84b8f7b90f6f4/Azure-RMSDocs/index.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/a6c2bd24cd4355fccc1bd0aaca11002714957b70/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf)
-* Handoff Datetime: 2016-06-23 23:03:02
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/402bb4a61659822ff1cf8072577f8401ec0cd297/Azure-RMSDocs/index.md)
-* Current Handback File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/2a71f4c1f773ef52e60324fa760ba9c9c1d935b5/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf)
-* Current Handback Datetime: 2016-06-03 00:34:47
-* Bilingual File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/2a71f4c1f773ef52e60324fa760ba9c9c1d935b5/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-16 10:21:50
 * [Back to Top](#report-top)
 
 
