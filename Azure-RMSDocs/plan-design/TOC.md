@@ -1,0 +1,25 @@
+# [了解和探索](/rights-management/understand-explore/azure-rights-management)
+# [开始使用](/rights-management/get-started/requirements-azure-rms)
+# [规划和设计](deployment-roadmap.md)
+## [部署路线图](deployment-roadmap.md)
+## [从 AD RMS 迁移](migrate-from-ad-rms-to-azure-rms.md)
+### [服务器端配置](migrate-from-ad-rms-phase1.md)
+#### [软件密钥到软件密钥](migrate-softwarekey-to-softwarekey.md)
+#### [HSM 密钥到 HSM 密钥](migrate-hsmkey-to-hsmkey.md)
+#### [软件密钥到 HSM 密钥](migrate-softwarekey-to-hsmkey.md)
+### [客户端配置](migrate-from-ad-rms-phase2.md)
+### [Reporting Services 配置](migrate-from-ad-rms-phase3.md)
+### [迁移后任务](migrate-from-ad-rms-phase4.md)
+## [计划和实现你的租户密钥](plan-implement-tenant-key.md)
+### [BYOK 定价和限制](byok-price-restrictions.md)
+### [关于 Thales HSM](thales-hsm.md)
+### [通过 Internet](generate-tenant-key-internet.md)
+### [亲自](generate-tenant-key-in-person.md)
+## [准备 Azure RMS](prepare.md)
+# [部署和使用该服务](/rights-management/deploy-use/activate-service)
+# [部署和使用该客户端](/rights-management/rms-client/use-client)
+# [开发和自定义应用](/rights-management/develop/developers-guide)
+
+<!--HONumber=Apr16_HO4-->
+
+
