@@ -369,11 +369,11 @@
  [.localization-config](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/.localization-config) | Ignored | [Details](#6aad4beef5cda7bf79caaf25dbc1502ad22599ed2)
  [.openpublishing.build.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/.openpublishing.build.ps1) | Ignored | [Details](#9103b6933f2481864ecb6a66b76ba730e7f133b43)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/.openpublishing.publish.config.json) | Ignored | [Details](#0f39cf0b5df23c1e18292cdce1860c2f20347f2c4)
- [Azure-RMSDocs\deploy-use\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/deploy-use/docfx.json) | Ignored | [Details](#bb8ae221d5d6dc0f5a0af0c81a65c17dfc43505124)
+ [Azure-RMSDocs\deploy-use\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/deploy-use/docfx.json) | Ignored | [Details](#7365392232e8e9666cecb452ae5c071a24beecd024)
  [Azure-RMSDocs\deploy-use\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/deploy-use/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda29)
- [Azure-RMSDocs\develop\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/develop/docfx.json) | Ignored | [Details](#9e571aaf1690788cbf07eca6f46c7161c0f0dd7c62)
+ [Azure-RMSDocs\develop\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/develop/docfx.json) | Ignored | [Details](#0722fbd693707c6fa31c60fb4a010fb356a2fd6962)
  [Azure-RMSDocs\develop\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/develop/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda83)
- [Azure-RMSDocs\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/docfx.json) | Ignored | [Details](#61c85b2468797e44f08097f048bf93db17187b30102)
+ [Azure-RMSDocs\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/docfx.json) | Ignored | [Details](#e5c4e6237e1db2d0918b0fc264f83bed456f3a13102)
  [Azure-RMSDocs\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda157)
  [Azure-RMSDocs\media\AddAnAppPick.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/media/AddAnAppPick.png) | Ignored | [Details](#9617b96490e5d0b51f112cacd7403cec29f5782c160)
  [Azure-RMSDocs\media\AddAppBtn.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/media/AddAppBtn.png) | Ignored | [Details](#7d5f429ac4e453c846f872c556dc884957db739e161)
@@ -423,9 +423,9 @@
  [Azure-RMSDocs\media\TellUsInput.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/media/TellUsInput.png) | Ignored | [Details](#579a80a32818af8ba35c066b3b7e8f3022781987321)
  [Azure-RMSDocs\media\windows.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/media/windows.png) | Ignored | [Details](#5cba9445eb2765e5ad9d922bb9915967bfbab725323)
  [Azure-RMSDocs\media\windows_and_phone.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/media/windows_and_phone.png) | Ignored | [Details](#7629ae3423a4543b9257e29c11f03b8c34b2f045324)
- [Azure-RMSDocs\plan-design\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/plan-design/docfx.json) | Ignored | [Details](#591bb671f8c3fdc26b63b840e34c42dc6f769c15333)
+ [Azure-RMSDocs\plan-design\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/plan-design/docfx.json) | Ignored | [Details](#4eedfcfd79db487325b988664d91d6f4988e3615333)
  [Azure-RMSDocs\plan-design\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/plan-design/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda336)
- [Azure-RMSDocs\rms-client\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/rms-client/docfx.json) | Ignored | [Details](#4d71e2080736b2c006f55499860b48b080c7afb5352)
+ [Azure-RMSDocs\rms-client\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/rms-client/docfx.json) | Ignored | [Details](#0e31e09ae1c0e02f53137f3d6694e79f28461cae352)
  [Azure-RMSDocs\rms-client\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/rms-client/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda355)
  [license.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/license.md) | Ignored | [Details](#fc0612997fdfe01bdee7ee9daa01144dfd0143dd391)
  [README.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/README.md) | Ignored | [Details](#8b38ac1bf813dc8840b1522ce23fddf8de3997c3392)
@@ -761,7 +761,7 @@
 * Bilingual Datetime: 2016-06-16 10:21:50
 * [Back to Top](#report-top)
 
-##### <a name='bb8ae221d5d6dc0f5a0af0c81a65c17dfc43505124'></a> Source: [Azure-RMSDocs\deploy-use\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/deploy-use/docfx.json)
+##### <a name='7365392232e8e9666cecb452ae5c071a24beecd024'></a> Source: [Azure-RMSDocs\deploy-use\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/deploy-use/docfx.json)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -1310,7 +1310,7 @@
 * Bilingual Datetime: 2016-06-22 11:43:30
 * [Back to Top](#report-top)
 
-##### <a name='9e571aaf1690788cbf07eca6f46c7161c0f0dd7c62'></a> Source: [Azure-RMSDocs\develop\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/develop/docfx.json)
+##### <a name='0722fbd693707c6fa31c60fb4a010fb356a2fd6962'></a> Source: [Azure-RMSDocs\develop\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/develop/docfx.json)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -1890,7 +1890,7 @@
 * Bilingual Datetime: 2016-06-22 11:43:30
 * [Back to Top](#report-top)
 
-##### <a name='61c85b2468797e44f08097f048bf93db17187b30102'></a> Source: [Azure-RMSDocs\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/docfx.json)
+##### <a name='e5c4e6237e1db2d0918b0fc264f83bed456f3a13102'></a> Source: [Azure-RMSDocs\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/docfx.json)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -4914,7 +4914,7 @@
 * Bilingual Datetime: 2016-06-16 10:21:50
 * [Back to Top](#report-top)
 
-##### <a name='591bb671f8c3fdc26b63b840e34c42dc6f769c15333'></a> Source: [Azure-RMSDocs\plan-design\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/plan-design/docfx.json)
+##### <a name='4eedfcfd79db487325b988664d91d6f4988e3615333'></a> Source: [Azure-RMSDocs\plan-design\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/plan-design/docfx.json)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -5185,7 +5185,7 @@
 * Bilingual Datetime: 2016-06-22 11:43:30
 * [Back to Top](#report-top)
 
-##### <a name='4d71e2080736b2c006f55499860b48b080c7afb5352'></a> Source: [Azure-RMSDocs\rms-client\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/rms-client/docfx.json)
+##### <a name='0e31e09ae1c0e02f53137f3d6694e79f28461cae352'></a> Source: [Azure-RMSDocs\rms-client\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa6807ac64ac40d0b1251e69050df86d6688dc9c/Azure-RMSDocs/rms-client/docfx.json)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
