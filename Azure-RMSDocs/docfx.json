@@ -32,7 +32,8 @@
     "globalMetadata": {
       "layout": "Conceptual",
       "breadcrumb_path": "/enterprise-mobility/toc.json",
-      "ms.locale": "en-us"
+      "ms.locale": "en-us",
+      "bilingual_type": "hover over"
     }
   },
   "render": {
