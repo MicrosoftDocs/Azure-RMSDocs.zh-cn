@@ -9,9 +9,9 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 203
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 198
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 66
+[ Ignored Files ](#ignored-list)| 71
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
@@ -153,9 +153,6 @@
 ## <a name='outofsync-handback-success-list'></a> Out Of Sync Handback Success File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\deploy-use\activate-azure-classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6fe6fe78e31fc417c5d3ce27e0d6ed066ae14301/Azure-RMSDocs/deploy-use/activate-azure-classic.md) | OutofSyncHandedBackSuccess | [Details](#56f4c7081de95d010364d04e7fab12ff9f7007ee5)
- [Azure-RMSDocs\deploy-use\activate-office365-classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bcb157a66a4819a54c29cd4aa1a5c5b3e56688d3/Azure-RMSDocs/deploy-use/activate-office365-classic.md) | OutofSyncHandedBackSuccess | [Details](#e82089dc6c6dcf9069216e3ab55dcc14e3bd50746)
- [Azure-RMSDocs\deploy-use\activate-office365-preview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bcb157a66a4819a54c29cd4aa1a5c5b3e56688d3/Azure-RMSDocs/deploy-use/activate-office365-preview.md) | OutofSyncHandedBackSuccess | [Details](#6df2ebc183c2c268a44d83822d151524e13df2e17)
  [Azure-RMSDocs\deploy-use\activate-service.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bf5e3561ef24d8f44e791ff7bdc8450a73f79705/Azure-RMSDocs/deploy-use/activate-service.md) | OutofSyncHandedBackSuccess | [Details](#d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf8)
  [Azure-RMSDocs\deploy-use\administer-powershell.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/administer-powershell.md) | OutofSyncHandedBackSuccess | [Details](#bf1f684bc394ec3a1025f8c9ed3e57d07c5981259)
  [Azure-RMSDocs\deploy-use\configure-applications.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-applications.md) | OutofSyncHandedBackSuccess | [Details](#8fe934c51e852791d19fbb336deaf9cd7be9817b10)
@@ -173,7 +170,6 @@
  [Azure-RMSDocs\deploy-use\deploy-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e31656e417a0861d33deb2436d2e4b596a7512a7/Azure-RMSDocs/deploy-use/deploy-rms-connector.md) | OutofSyncHandedBackSuccess | [Details](#6b9b3b039ba2de0de174a134768afd763d26b5dd22)
  [Azure-RMSDocs\deploy-use\deploy-use.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/deploy-use.md) | OutofSyncHandedBackSuccess | [Details](#61321eaaeac31fec827fcf9f350211728eaf630a23)
  [Azure-RMSDocs\deploy-use\help-users.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b6dcd8bb1091e9c484e02042adbf993381581a9d/Azure-RMSDocs/deploy-use/help-users.md) | OutofSyncHandedBackSuccess | [Details](#d48616cb638522e6cda61e7ae96db9480fc1409925)
- [Azure-RMSDocs\deploy-use\install-configure-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/install-configure-rms-connector.md) | OutofSyncHandedBackSuccess | [Details](#4595cb16b84c29d67fa28524ee12386fbf09ab4a26)
  [Azure-RMSDocs\deploy-use\install-powershell.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/install-powershell.md) | OutofSyncHandedBackSuccess | [Details](#590148218fdd10e88ba764b2dc523a2213e2c8bb27)
  [Azure-RMSDocs\deploy-use\log-analyze-usage.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/df7476052c4c92b3b3297f8988a25fd346eedd45/Azure-RMSDocs/deploy-use/log-analyze-usage.md) | OutofSyncHandedBackSuccess | [Details](#8a138cdb0dc9b184c6361a879860501ede283ea128)
  [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/03646219e4318fe1b4a6a8261cca3dd7fcdcb9b7/Azure-RMSDocs/deploy-use/monitor-rms-connector.md) | OutofSyncHandedBackSuccess | [Details](#18f0d47e35f0c75b2814678fd44c8d306414bbd430)
@@ -246,7 +242,6 @@
  [Azure-RMSDocs\develop\windows-phone-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/90552435666b8f25c893fcffe8c8cf3355a5942d/Azure-RMSDocs/develop/windows-phone-apps.md) | OutofSyncHandedBackSuccess | [Details](#136d6e9d0c45a9779f87e32eed8288fe8ee3a62299)
  [Azure-RMSDocs\develop\winrt-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/winrt-sdk.md) | OutofSyncHandedBackSuccess | [Details](#0b8e0fb6d872506ac3529bd137286f0e8fa562ee100)
  [Azure-RMSDocs\develop\working-with-encryption.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/29e856e3e9990f81a791c533ddad5a332093d5d3/Azure-RMSDocs/develop/working-with-encryption.md) | OutofSyncHandedBackSuccess | [Details](#82903eff43ee2dee7ef64e618171225a06013d99101)
- [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5e57e6bbe48f06da278813a1adf42e5b46aa305a/Azure-RMSDocs/get-started/faqs.md) | OutofSyncHandedBackSuccess | [Details](#f50a7f202a7c4553c604ed77c0fe40eade4e4a1b103)
  [Azure-RMSDocs\get-started\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/get-started/get-started.md) | OutofSyncHandedBackSuccess | [Details](#5bc6f02c4ffc8eef3c7b15e1777ec4201b357c18104)
  [Azure-RMSDocs\get-started\information-support.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/16e0e820cdd9f39af58b7141d13cf5affb218b0c/Azure-RMSDocs/get-started/information-support.md) | OutofSyncHandedBackSuccess | [Details](#f71b5a76558e8cbfd6c7f9307ce0c81c136092df105)
  [Azure-RMSDocs\get-started\quick-start-tutorial.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/quick-start-tutorial.md) | OutofSyncHandedBackSuccess | [Details](#7c89aa5f31732464dab2b90a25ad7c50f36c2c99106)
@@ -367,11 +362,16 @@
  [.localization-config](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/.localization-config) | Ignored | [Details](#6aad4beef5cda7bf79caaf25dbc1502ad22599ed2)
  [.openpublishing.build.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/.openpublishing.build.ps1) | Ignored | [Details](#9103b6933f2481864ecb6a66b76ba730e7f133b43)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/.openpublishing.publish.config.json) | Ignored | [Details](#0f39cf0b5df23c1e18292cdce1860c2f20347f2c4)
+ [Azure-RMSDocs\deploy-use\activate-azure-classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/deploy-use/activate-azure-classic.md) | Ignored | [Details](#9cde79791e8c2b04d1d7622f5aa69d654a70646e5)
+ [Azure-RMSDocs\deploy-use\activate-office365-classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/deploy-use/activate-office365-classic.md) | Ignored | [Details](#657fb47485ce0e86fab800f8ab981e6dfbd9ee116)
+ [Azure-RMSDocs\deploy-use\activate-office365-preview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/deploy-use/activate-office365-preview.md) | Ignored | [Details](#80e17903a6d2f3c6e8f15448a6a5499dfb9852d17)
  [Azure-RMSDocs\deploy-use\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/deploy-use/docfx.json) | Ignored | [Details](#7365392232e8e9666cecb452ae5c071a24beecd024)
+ [Azure-RMSDocs\deploy-use\install-configure-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/deploy-use/install-configure-rms-connector.md) | Ignored | [Details](#165292482349e4a233ab4030f49a297f57b041ac26)
  [Azure-RMSDocs\deploy-use\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/deploy-use/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda29)
  [Azure-RMSDocs\develop\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/develop/docfx.json) | Ignored | [Details](#0722fbd693707c6fa31c60fb4a010fb356a2fd6962)
  [Azure-RMSDocs\develop\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/develop/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda83)
  [Azure-RMSDocs\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/docfx.json) | Ignored | [Details](#e5c4e6237e1db2d0918b0fc264f83bed456f3a13102)
+ [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/get-started/faqs.md) | Ignored | [Details](#e0d6e984f49659edcdc69dc4ddb2967321660adb103)
  [Azure-RMSDocs\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda157)
  [Azure-RMSDocs\media\AddAnAppPick.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/media/AddAnAppPick.png) | Ignored | [Details](#9617b96490e5d0b51f112cacd7403cec29f5782c160)
  [Azure-RMSDocs\media\AddAppBtn.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/media/AddAppBtn.png) | Ignored | [Details](#7d5f429ac4e453c846f872c556dc884957db739e161)
@@ -490,46 +490,40 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='56f4c7081de95d010364d04e7fab12ff9f7007ee5'></a> Source: [Azure-RMSDocs\deploy-use\activate-azure-classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6fe6fe78e31fc417c5d3ce27e0d6ed066ae14301/Azure-RMSDocs/deploy-use/activate-azure-classic.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\deploy-use\activate-azure-classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/f818ee8e902e606d691fada45721b7b93d7ad4d7/Azure-RMSDocs/deploy-use/activate-azure-classic.md)
-* Handoff File: [activate-azure-classic.a18dfb858f503ee4a964470871380d76430c83c7.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/014f6ee8dd0b3f4b19d4829d89a14175b4937fb5/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activate-azure-classic.a18dfb858f503ee4a964470871380d76430c83c7.zh-cn.xlf)
-* Handoff Datetime: 2016-06-27 12:59:22
-* Handoff Reason: Include
+##### <a name='9cde79791e8c2b04d1d7622f5aa69d654a70646e5'></a> Source: [Azure-RMSDocs\deploy-use\activate-azure-classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/deploy-use/activate-azure-classic.md)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [activate-azure-classic.a18dfb858f503ee4a964470871380d76430c83c7.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/b2d623cc63f68ff8753b519493fcd484f57f70c2/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activate-azure-classic.a18dfb858f503ee4a964470871380d76430c83c7.zh-cn.xlf)
-* Handback Datetime: 2016-06-02 02:44:29
-* Bilingual File: [activate-azure-classic.a18dfb858f503ee4a964470871380d76430c83c7.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/b2d623cc63f68ff8753b519493fcd484f57f70c2/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activate-azure-classic.a18dfb858f503ee4a964470871380d76430c83c7.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-16 10:21:50
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='e82089dc6c6dcf9069216e3ab55dcc14e3bd50746'></a> Source: [Azure-RMSDocs\deploy-use\activate-office365-classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bcb157a66a4819a54c29cd4aa1a5c5b3e56688d3/Azure-RMSDocs/deploy-use/activate-office365-classic.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\deploy-use\activate-office365-classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/f818ee8e902e606d691fada45721b7b93d7ad4d7/Azure-RMSDocs/deploy-use/activate-office365-classic.md)
-* Handoff File: [activate-office365-classic.bdfe0f2918b988276b7b38dbc7cdb695c4b87df8.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/014f6ee8dd0b3f4b19d4829d89a14175b4937fb5/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activate-office365-classic.bdfe0f2918b988276b7b38dbc7cdb695c4b87df8.zh-cn.xlf)
-* Handoff Datetime: 2016-06-27 12:59:22
-* Handoff Reason: Include
+##### <a name='657fb47485ce0e86fab800f8ab981e6dfbd9ee116'></a> Source: [Azure-RMSDocs\deploy-use\activate-office365-classic.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/deploy-use/activate-office365-classic.md)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [activate-office365-classic.bdfe0f2918b988276b7b38dbc7cdb695c4b87df8.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/b2d623cc63f68ff8753b519493fcd484f57f70c2/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activate-office365-classic.bdfe0f2918b988276b7b38dbc7cdb695c4b87df8.zh-cn.xlf)
-* Handback Datetime: 2016-06-02 02:44:29
-* Bilingual File: [activate-office365-classic.bdfe0f2918b988276b7b38dbc7cdb695c4b87df8.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/b2d623cc63f68ff8753b519493fcd484f57f70c2/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activate-office365-classic.bdfe0f2918b988276b7b38dbc7cdb695c4b87df8.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-16 10:21:50
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='6df2ebc183c2c268a44d83822d151524e13df2e17'></a> Source: [Azure-RMSDocs\deploy-use\activate-office365-preview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bcb157a66a4819a54c29cd4aa1a5c5b3e56688d3/Azure-RMSDocs/deploy-use/activate-office365-preview.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\deploy-use\activate-office365-preview.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/f818ee8e902e606d691fada45721b7b93d7ad4d7/Azure-RMSDocs/deploy-use/activate-office365-preview.md)
-* Handoff File: [activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/014f6ee8dd0b3f4b19d4829d89a14175b4937fb5/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.zh-cn.xlf)
-* Handoff Datetime: 2016-06-27 12:59:22
-* Handoff Reason: Include
+##### <a name='80e17903a6d2f3c6e8f15448a6a5499dfb9852d17'></a> Source: [Azure-RMSDocs\deploy-use\activate-office365-preview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/deploy-use/activate-office365-preview.md)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/b2d623cc63f68ff8753b519493fcd484f57f70c2/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.zh-cn.xlf)
-* Handback Datetime: 2016-06-02 02:44:29
-* Bilingual File: [activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/b2d623cc63f68ff8753b519493fcd484f57f70c2/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-16 10:21:50
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf8'></a> Source: [Azure-RMSDocs\deploy-use\activate-service.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bf5e3561ef24d8f44e791ff7bdc8450a73f79705/Azure-RMSDocs/deploy-use/activate-service.md)
@@ -785,18 +779,16 @@
 * Bilingual Datetime: 2016-06-22 11:43:30
 * [Back to Top](#report-top)
 
-##### <a name='4595cb16b84c29d67fa28524ee12386fbf09ab4a26'></a> Source: [Azure-RMSDocs\deploy-use\install-configure-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/install-configure-rms-connector.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\deploy-use\install-configure-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/f818ee8e902e606d691fada45721b7b93d7ad4d7/Azure-RMSDocs/deploy-use/install-configure-rms-connector.md)
-* Handoff File: [install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/014f6ee8dd0b3f4b19d4829d89a14175b4937fb5/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-cn.xlf)
-* Handoff Datetime: 2016-06-27 12:59:22
-* Handoff Reason: Include
+##### <a name='165292482349e4a233ab4030f49a297f57b041ac26'></a> Source: [Azure-RMSDocs\deploy-use\install-configure-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/deploy-use/install-configure-rms-connector.md)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/b2d623cc63f68ff8753b519493fcd484f57f70c2/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-cn.xlf)
-* Handback Datetime: 2016-06-02 02:44:29
-* Bilingual File: [install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/b2d623cc63f68ff8753b519493fcd484f57f70c2/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-16 10:21:50
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='590148218fdd10e88ba764b2dc523a2213e2c8bb27'></a> Source: [Azure-RMSDocs\deploy-use\install-powershell.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/install-powershell.md)
@@ -1900,21 +1892,16 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f50a7f202a7c4553c604ed77c0fe40eade4e4a1b103'></a> Source: [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5e57e6bbe48f06da278813a1adf42e5b46aa305a/Azure-RMSDocs/get-started/faqs.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='e0d6e984f49659edcdc69dc4ddb2967321660adb103'></a> Source: [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/61a2f41f9d230819d989d87944a51bbcd87a4071/Azure-RMSDocs/get-started/faqs.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3d485878491fd103c89f25bc7bfe8e48635279fa/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf)
-* Handoff Datetime: 2016-06-24 22:46:16
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/1efca9c7900a8de9778e8301130dd020f3887c75/Azure-RMSDocs/get-started/faqs.md)
-* Current Handback File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/2e4877e3e02b62bea80cd33038aafa16c54c4737/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf)
-* Current Handback Datetime: 2016-06-16 11:51:18
-* Bilingual File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/2e4877e3e02b62bea80cd33038aafa16c54c4737/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-16 11:52:55
 * [Back to Top](#report-top)
 
 ##### <a name='5bc6f02c4ffc8eef3c7b15e1777ec4201b357c18104'></a> Source: [Azure-RMSDocs\get-started\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/get-started/get-started.md)
