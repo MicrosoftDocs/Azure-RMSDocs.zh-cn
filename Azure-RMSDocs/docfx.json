@@ -6,7 +6,8 @@
           "**/*.md"
         ],
         "exclude": [
-          "**/obj/**"
+          "**/obj/**",
+          "**/includes/**"
         ]
       }
     ],
@@ -18,12 +19,11 @@
           "**/*.jpg",
           "**/*.gif",
           "**/*.bmp",
-          "**/*.html",
-          "_themes/**"
+          "**/*.html"
           ],
         "exclude": [
           "**/obj/**",
-          "_themes/DocPacker/**"
+          "_themes/**"
         ]
       }
     ],
@@ -31,9 +31,7 @@
     "template": "docs.html",
     "globalMetadata": {
       "layout": "Conceptual",
-      "breadcrumb_path": "/enterprise-mobility/toc.json",
-      "ms.locale": "en-us",
-      "bilingual_type": "hover over"
+      "breadcrumb_path": "/enterprise-mobility/toc.json"
     }
   },
   "render": {
