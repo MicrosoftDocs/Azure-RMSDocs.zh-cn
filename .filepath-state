@@ -371,11 +371,20 @@
   "6ba6e7b208c0b53a5cc6f38811f6845234bf7983": [
     "Azure-RMSDocs\\index.md"
   ],
+  "9cde79791e8c2b04d1d7622f5aa69d654a70646e": [
+    "Azure-RMSDocs\\deploy-use\\activate-azure-classic.md"
+  ],
   "56f4c7081de95d010364d04e7fab12ff9f7007ee": [
     "Azure-RMSDocs\\deploy-use\\activate-azure-classic.md"
   ],
+  "657fb47485ce0e86fab800f8ab981e6dfbd9ee11": [
+    "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md"
+  ],
   "e82089dc6c6dcf9069216e3ab55dcc14e3bd5074": [
     "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md"
+  ],
+  "80e17903a6d2f3c6e8f15448a6a5499dfb9852d1": [
+    "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
   ],
   "6df2ebc183c2c268a44d83822d151524e13df2e1": [
     "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
@@ -431,6 +440,9 @@
   "d48616cb638522e6cda61e7ae96db9480fc14099": [
     "Azure-RMSDocs\\deploy-use\\help-users.md"
   ],
+  "165292482349e4a233ab4030f49a297f57b041ac": [
+    "Azure-RMSDocs\\deploy-use\\install-configure-rms-connector.md"
+  ],
   "4595cb16b84c29d67fa28524ee12386fbf09ab4a": [
     "Azure-RMSDocs\\deploy-use\\install-configure-rms-connector.md"
   ],
@@ -460,6 +472,9 @@
   ],
   "e382f9837adc6d6efd1d3efb872ef50e8a0d4cac": [
     "Azure-RMSDocs\\deploy-use\\verify.md"
+  ],
+  "e0d6e984f49659edcdc69dc4ddb2967321660adb": [
+    "Azure-RMSDocs\\get-started\\faqs.md"
   ],
   "f50a7f202a7c4553c604ed77c0fe40eade4e4a1b": [
     "Azure-RMSDocs\\get-started\\faqs.md"
