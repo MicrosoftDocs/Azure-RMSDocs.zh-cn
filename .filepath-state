@@ -455,6 +455,9 @@
   "496edca2e2323e17216858e2ab4844fdb0aa1fb0": [
     "Azure-RMSDocs\\deploy-use\\operations-customer-managed-tenant-key.md"
   ],
+  "630e2cb72166906340bc3a4d9df1e6c1030038a4": [
+    "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
+  ],
   "c221a7116250cceabcf6484b5b9348141af1346b": [
     "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
   ],
@@ -470,8 +473,14 @@
   "ff90f009f9fda90171bbeeb2a7bb421376d4695c": [
     "Azure-RMSDocs\\deploy-use\\rms-connector-registry-settings.md"
   ],
+  "afa1fb35110918b9b97f91534616e1933e13b149": [
+    "Azure-RMSDocs\\deploy-use\\verify.md"
+  ],
   "e382f9837adc6d6efd1d3efb872ef50e8a0d4cac": [
     "Azure-RMSDocs\\deploy-use\\verify.md"
+  ],
+  "67cbff0a7fc713dadf8f848b270947560cc5c553": [
+    "Azure-RMSDocs\\get-started\\faqs.md"
   ],
   "e0d6e984f49659edcdc69dc4ddb2967321660adb": [
     "Azure-RMSDocs\\get-started\\faqs.md"
@@ -487,6 +496,9 @@
   ],
   "7af7b3698ddf75573dc4712ef335b25378ba2290": [
     "Azure-RMSDocs\\get-started\\faqs.md"
+  ],
+  "275f6a31ebf0a4997e8549bd330275e4ab3f72c9": [
+    "Azure-RMSDocs\\get-started\\information-support.md"
   ],
   "f71b5a76558e8cbfd6c7f9307ce0c81c136092df": [
     "Azure-RMSDocs\\get-started\\information-support.md"
@@ -505,6 +517,9 @@
   ],
   "01c2436218e0d7fd80a31cdc037d9dc8933e42f2": [
     "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md"
+  ],
+  "61d18747011435773e16b3c8d2a8ac2104997484": [
+    "Azure-RMSDocs\\get-started\\requirements-applications.md"
   ],
   "adc0c3724139eaedd1b50972a22877437f17e4ea": [
     "Azure-RMSDocs\\get-started\\requirements-applications.md"
@@ -557,6 +572,9 @@
   "1acc66e9a73b100268ed722391a0a87651c64abc": [
     "Azure-RMSDocs\\plan-design\\generate-tenant-key-in-person.md"
   ],
+  "96b1554b2bdd292d1fc5ba00bb1e9d755049b7b7": [
+    "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
+  ],
   "f4552994fb8f83120dcadd157cddb150387a169a": [
     "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
   ],
@@ -596,11 +614,20 @@
   "6544421afc1291f5fc7d99ecad71146f0cb4bb1d": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
   ],
+  "0604eeae0137aa468c15d9ee0d4b70f734f897b3": [
+    "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md"
+  ],
   "054fe56d85a4259513eea98364ebdf8977164de4": [
     "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md"
   ],
+  "7ed5d71d6c1c85ccb0f60d8a4471f3923a8c9bc8": [
+    "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-hsmkey.md"
+  ],
   "78c301287ff0b54c193f0657c9490289a54d26b9": [
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-hsmkey.md"
+  ],
+  "a739da3fbebc8dfa4c6715fd64ccd72f87d2a686": [
+    "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md"
   ],
   "a38b93a3a32cc9f1b217fa8ae3df79977473ddb3": [
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md"
@@ -697,6 +724,9 @@
   ],
   "02f1cf60bdafe748f16d9defa1c8b0cc8a61efb0": [
     "Azure-RMSDocs\\understand-explore\\sharing-app-support.md"
+  ],
+  "29af1e698c1278cac6ef09be0938c89f503b284d": [
+    "Azure-RMSDocs\\understand-explore\\what-admins-users-see.md"
   ],
   "fe0dbdafdd0e094039864b389575b5b5306f39d4": [
     "Azure-RMSDocs\\understand-explore\\what-admins-users-see.md"
