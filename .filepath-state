@@ -239,6 +239,9 @@
   "b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27": [
     "Azure-RMSDocs\\develop\\get-started.md"
   ],
+  "5e8415d165e6105c2592ba10332b8fd4f5e4e725": [
+    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
+  ],
   "7d362d91736d5167808a88d487de45049b3b4883": [
     "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
   ],
@@ -256,6 +259,9 @@
   ],
   "bedfc76557112e469688fdc6e546f4911961821c": [
     "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
+  ],
+  "cf86b07ba057d8999a156ae397ff7200b12a3f5e": [
+    "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md"
   ],
   "4c273efa683827dc8f731a6dadb3f50bf53ea616": [
     "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md"
@@ -454,6 +460,9 @@
   ],
   "496edca2e2323e17216858e2ab4844fdb0aa1fb0": [
     "Azure-RMSDocs\\deploy-use\\operations-customer-managed-tenant-key.md"
+  ],
+  "4126bc6373f02bdc66206d9d88de43268387d6cf": [
+    "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
   ],
   "630e2cb72166906340bc3a4d9df1e6c1030038a4": [
     "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
@@ -748,6 +757,9 @@
   ],
   "839094716fa39957fbcbcdc4812d99fd742e4393": [
     "Azure-RMSDocs\\develop\\install-the-rms-sdk.md"
+  ],
+  "4509126c61c4e37d9655d9bd080be3e097cd103f": [
+    "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
   ],
   "18f0d47e35f0c75b2814678fd44c8d306414bbd4": [
     "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
