@@ -461,6 +461,9 @@
   "496edca2e2323e17216858e2ab4844fdb0aa1fb0": [
     "Azure-RMSDocs\\deploy-use\\operations-customer-managed-tenant-key.md"
   ],
+  "feb41356a2ef074679e60ce4bb7b1d6ee910371c": [
+    "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
+  ],
   "4126bc6373f02bdc66206d9d88de43268387d6cf": [
     "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
   ],
@@ -488,6 +491,9 @@
   "e382f9837adc6d6efd1d3efb872ef50e8a0d4cac": [
     "Azure-RMSDocs\\deploy-use\\verify.md"
   ],
+  "bd2e6d2e812379791769d7c1df74d117aa22ea36": [
+    "Azure-RMSDocs\\get-started\\faqs.md"
+  ],
   "67cbff0a7fc713dadf8f848b270947560cc5c553": [
     "Azure-RMSDocs\\get-started\\faqs.md"
   ],
@@ -505,6 +511,9 @@
   ],
   "7af7b3698ddf75573dc4712ef335b25378ba2290": [
     "Azure-RMSDocs\\get-started\\faqs.md"
+  ],
+  "043468100268f52caea0942ee08287024b56d26d": [
+    "Azure-RMSDocs\\get-started\\information-support.md"
   ],
   "275f6a31ebf0a4997e8549bd330275e4ab3f72c9": [
     "Azure-RMSDocs\\get-started\\information-support.md"
@@ -581,6 +590,9 @@
   "1acc66e9a73b100268ed722391a0a87651c64abc": [
     "Azure-RMSDocs\\plan-design\\generate-tenant-key-in-person.md"
   ],
+  "20cfa722f7008c52f4fbc219a4de04c50ee3548d": [
+    "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
+  ],
   "96b1554b2bdd292d1fc5ba00bb1e9d755049b7b7": [
     "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
   ],
@@ -623,11 +635,17 @@
   "6544421afc1291f5fc7d99ecad71146f0cb4bb1d": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
   ],
+  "7b531ebba1923653cb37c70a02fa888a40e96528": [
+    "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md"
+  ],
   "0604eeae0137aa468c15d9ee0d4b70f734f897b3": [
     "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md"
   ],
   "054fe56d85a4259513eea98364ebdf8977164de4": [
     "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md"
+  ],
+  "173641b9dada2673b48a1c210419cb933cdd9f13": [
+    "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-hsmkey.md"
   ],
   "7ed5d71d6c1c85ccb0f60d8a4471f3923a8c9bc8": [
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-hsmkey.md"
@@ -733,6 +751,9 @@
   ],
   "02f1cf60bdafe748f16d9defa1c8b0cc8a61efb0": [
     "Azure-RMSDocs\\understand-explore\\sharing-app-support.md"
+  ],
+  "213d077a65abd5115b7e0491dfc9cd8145752b23": [
+    "Azure-RMSDocs\\understand-explore\\what-admins-users-see.md"
   ],
   "29af1e698c1278cac6ef09be0938c89f503b284d": [
     "Azure-RMSDocs\\understand-explore\\what-admins-users-see.md"
