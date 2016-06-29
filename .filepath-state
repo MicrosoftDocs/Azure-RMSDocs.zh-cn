@@ -137,6 +137,9 @@
   "6a6f9d8c0a98752413a99d30926f2b5bc8af193d": [
     "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md"
   ],
+  "61df64691ac3f4d7e871043767444ea64dfe1ef3": [
+    "Azure-RMSDocs\\develop\\release-notes-rtm.md"
+  ],
   "c90b1d2257bcf3fd355e810e5f9654683c693454": [
     "Azure-RMSDocs\\develop\\release-notes-rtm.md"
   ],
@@ -164,6 +167,9 @@
   "be2774ba361c478fa20faa1490bb4e5ead90b8af": [
     "Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md"
   ],
+  "b4eec28ef5e0a44c5c60f88558b6168bce9718b2": [
+    "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
+  ],
   "c3b40e57dadfacca62f2bd74e605a9a9959bb6e2": [
     "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
   ],
@@ -178,6 +184,9 @@
   ],
   "4183dfdb17479baf3e4494bd3566d7a8cf68eb08": [
     "Azure-RMSDocs\\develop\\ad-rms-overview.md"
+  ],
+  "2b7c99e3adafde7140d7997364ec2643ba79a2ac": [
+    "Azure-RMSDocs\\develop\\ad-rms-server.md"
   ],
   "685079958d71d8c681d9150aadcbbc4bfedd15ad": [
     "Azure-RMSDocs\\develop\\ad-rms-server.md"
@@ -206,6 +215,9 @@
   "a27d1921336a795df5a3c91b36b97846e74cca34": [
     "Azure-RMSDocs\\develop\\application-types.md"
   ],
+  "34a82f31b5da46a59627ff559deb46c8445fcdf2": [
+    "Azure-RMSDocs\\develop\\authentication-integration.md"
+  ],
   "b6e30ce14c5eb5f387a65d7f78fbb1c3abcabd1a": [
     "Azure-RMSDocs\\develop\\authentication-integration.md"
   ],
@@ -233,11 +245,20 @@
   "5faea360de8aa9ecb82abf25b5c1392d52d0afad": [
     "Azure-RMSDocs\\develop\\enabling-logging.md"
   ],
+  "46b1fe5a0c4f138db65072d14489a5d588015df7": [
+    "Azure-RMSDocs\\develop\\file-api-configuration.md"
+  ],
   "88a911b25c268c54e55bd5bc90ff3e946a9203ee": [
     "Azure-RMSDocs\\develop\\file-api-configuration.md"
   ],
   "b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27": [
     "Azure-RMSDocs\\develop\\get-started.md"
+  ],
+  "81541dbadabe3417299f47447384934373275e75": [
+    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
+  ],
+  "db1817835963d49e1f3608489a7a7f730ff60bd9": [
+    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
   ],
   "5e8415d165e6105c2592ba10332b8fd4f5e4e725": [
     "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
@@ -253,6 +274,9 @@
   ],
   "54fc5037eaaa5c9ae2557aa6e4c67aa99a4143e6": [
     "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md"
+  ],
+  "b97743d9a5c90cb46b39b4d8a462aa1acd64dfe1": [
+    "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
   ],
   "d9f6c1aea8ac9403e37f876960b28a91b921d438": [
     "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
@@ -299,6 +323,9 @@
   "d6920b8ce09b39d98da9e9c197b17a1f13d21c8e": [
     "Azure-RMSDocs\\develop\\linux-setup.md"
   ],
+  "bbe381054648a6b68818f3964f6cfefd5da0829c": [
+    "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
+  ],
   "866a8f1ec80ecb5b91fcc2915d11f5ef61543c32": [
     "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
   ],
@@ -316,9 +343,6 @@
   ],
   "a12be14d42b0d3212ac61038591701a7a4a23ff5": [
     "Azure-RMSDocs\\develop\\release-notes.md"
-  ],
-  "9c1eb2122e2237a895ed931561ead754c3287244": [
-    "Azure-RMSDocs\\develop\\samples.md"
   ],
   "3d6e7c2b40ba80988e93186fd68a12e6216b477d": [
     "Azure-RMSDocs\\develop\\sdk-elements.md"
@@ -491,6 +515,9 @@
   "e382f9837adc6d6efd1d3efb872ef50e8a0d4cac": [
     "Azure-RMSDocs\\deploy-use\\verify.md"
   ],
+  "d59a27f0ae7dda5ad318efd6d3d21c225c1c90de": [
+    "Azure-RMSDocs\\get-started\\faqs.md"
+  ],
   "bd2e6d2e812379791769d7c1df74d117aa22ea36": [
     "Azure-RMSDocs\\get-started\\faqs.md"
   ],
@@ -511,6 +538,9 @@
   ],
   "7af7b3698ddf75573dc4712ef335b25378ba2290": [
     "Azure-RMSDocs\\get-started\\faqs.md"
+  ],
+  "a8f5852d965abe2f2654aa236bfd9ea49a62aa84": [
+    "Azure-RMSDocs\\get-started\\information-support.md"
   ],
   "043468100268f52caea0942ee08287024b56d26d": [
     "Azure-RMSDocs\\get-started\\information-support.md"
@@ -565,6 +595,9 @@
   ],
   "35ad445e229eac3feeca5522a41b9e3b25fd1180": [
     "Azure-RMSDocs\\get-started\\scenario-work-folders.md"
+  ],
+  "80f2742bbaab9d3252cec6f6c709012ca81218d5": [
+    "Azure-RMSDocs\\get-started\\tutorial-step1.md"
   ],
   "6d34b9e40fd6eb58f5e9fe1fd242a8aa36c091c1": [
     "Azure-RMSDocs\\get-started\\tutorial-step1.md"
@@ -629,8 +662,14 @@
   "8c2ebdbdfec2465475f6ce7daa2dafd35b874329": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase3.md"
   ],
+  "7ed3569475362272ace055862fe8bb3ee072036a": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
+  ],
   "a307f939515d8f81077c73e9b29aa9015b256c7a": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
+  ],
+  "b33839ff5ce0d30082f58ff96eb81215b716e46d": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
   ],
   "6544421afc1291f5fc7d99ecad71146f0cb4bb1d": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
@@ -658,6 +697,9 @@
   ],
   "a38b93a3a32cc9f1b217fa8ae3df79977473ddb3": [
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md"
+  ],
+  "1a01ac672251efe3be7fa485cfadfa118f561d8d": [
+    "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
   ],
   "f0ba9f31dcc3b349a14f3a820f3c86ab19937d87": [
     "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
@@ -767,11 +809,20 @@
   "55f17d42165d2b6b5e1765a81bf7d799a14e996a": [
     "Azure-RMSDocs\\develop\\android-namespaces.md"
   ],
+  "9b912a2a66838dc6e6a3b227bcfe4ac589fe06c1": [
+    "Azure-RMSDocs\\develop\\adal-auth.md"
+  ],
   "8b398b1dcd6054437e58ee4abe900d8662ab4fbf": [
     "Azure-RMSDocs\\develop\\adal-auth.md"
   ],
+  "f995da0698ec5fb4a8e46865b70506ced92f73db": [
+    "Azure-RMSDocs\\develop\\developing-your-application.md"
+  ],
   "db38a01984b5a59d5ac50db1f3c198b99d45cac9": [
     "Azure-RMSDocs\\develop\\developing-your-application.md"
+  ],
+  "c97899681e8767a7b4daebe16d1c2091ee65f3a8": [
+    "Azure-RMSDocs\\develop\\how-to-use-adal-authentication.md"
   ],
   "0513f183df2ca950cbee89d451f1532f8569aad7": [
     "Azure-RMSDocs\\develop\\how-to-use-adal-authentication.md"
