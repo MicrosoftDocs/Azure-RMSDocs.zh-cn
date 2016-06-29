@@ -31,8 +31,7 @@
     "template": "docs.html",
     "globalMetadata": {
       "layout": "Conceptual",
-      "breadcrumb_path": "/enterprise-mobility/toc.json",
-      "bilingual_type": "hover over"
+      "breadcrumb_path": "/enterprise-mobility/toc.json"
     }
   },
   "render": {
