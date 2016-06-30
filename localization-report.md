@@ -9,9 +9,9 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 202
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 201
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 67
+[ Ignored Files ](#ignored-list)| 68
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
@@ -345,7 +345,6 @@
  [Azure-RMSDocs\understand-explore\compare-azure-rms-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/understand-explore/compare-azure-rms-ad-rms.md) | OutofSyncHandedBackSuccess | [Details](#8635402989db0f83017151910013ca460011b392378)
  [Azure-RMSDocs\understand-explore\file-server-support.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/understand-explore/file-server-support.md) | OutofSyncHandedBackSuccess | [Details](#839be5a8a45c2322127694dc0bdc306ff445c314379)
  [Azure-RMSDocs\understand-explore\how-does-it-work.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562/Azure-RMSDocs/understand-explore/how-does-it-work.md) | OutofSyncHandedBackSuccess | [Details](#505f2c94bb4fd056b4d2f51c147c6b0b84efac00380)
- [Azure-RMSDocs\understand-explore\office-apps-services-support.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/understand-explore/office-apps-services-support.md) | OutofSyncHandedBackSuccess | [Details](#c6c0e2e3afa416f343f23613db4b3ca228426c01381)
  [Azure-RMSDocs\understand-explore\rms-for-individuals.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/understand-explore/rms-for-individuals.md) | OutofSyncHandedBackSuccess | [Details](#6a27d5a2a1bad24521a551465fd9324f2a826376385)
  [Azure-RMSDocs\understand-explore\rms-for-individuals-identify-sign-up.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/understand-explore/rms-for-individuals-identify-sign-up.md) | OutofSyncHandedBackSuccess | [Details](#e577366be26f7296079751e72fb6531b9e28c504382)
  [Azure-RMSDocs\understand-explore\rms-for-individuals-take-control.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/understand-explore/rms-for-individuals-take-control.md) | OutofSyncHandedBackSuccess | [Details](#df006a27c97884c47c9bb5fb04bfa181a13b7443383)
@@ -425,6 +424,7 @@
  [Azure-RMSDocs\plan-design\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7e08dccfdab54373cb9114c26ec55c32fdbf539c/Azure-RMSDocs/plan-design/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda336)
  [Azure-RMSDocs\rms-client\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7e08dccfdab54373cb9114c26ec55c32fdbf539c/Azure-RMSDocs/rms-client/docfx.json) | Ignored | [Details](#ccc15975501359fb336c61852882a6a1a4394df9352)
  [Azure-RMSDocs\rms-client\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7e08dccfdab54373cb9114c26ec55c32fdbf539c/Azure-RMSDocs/rms-client/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda355)
+ [Azure-RMSDocs\understand-explore\office-apps-services-support.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7e08dccfdab54373cb9114c26ec55c32fdbf539c/Azure-RMSDocs/understand-explore/office-apps-services-support.md) | Ignored | [Details](#affb37cc3b991609f5de51370485b10fed932421381)
  [license.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7e08dccfdab54373cb9114c26ec55c32fdbf539c/license.md) | Ignored | [Details](#fc0612997fdfe01bdee7ee9daa01144dfd0143dd391)
  [README.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7e08dccfdab54373cb9114c26ec55c32fdbf539c/README.md) | Ignored | [Details](#8b38ac1bf813dc8840b1522ce23fddf8de3997c3392)
  [UpdateSubmodule.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7e08dccfdab54373cb9114c26ec55c32fdbf539c/UpdateSubmodule.ps1) | Ignored | [Details](#42442e5f8d7f09fba90a865e184aacc3f8489143393)
@@ -5667,18 +5667,16 @@
 * Bilingual Datetime: 2016-06-16 11:52:55
 * [Back to Top](#report-top)
 
-##### <a name='c6c0e2e3afa416f343f23613db4b3ca228426c01381'></a> Source: [Azure-RMSDocs\understand-explore\office-apps-services-support.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/understand-explore/office-apps-services-support.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\understand-explore\office-apps-services-support.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/f818ee8e902e606d691fada45721b7b93d7ad4d7/Azure-RMSDocs/understand-explore/office-apps-services-support.md)
-* Handoff File: [office-apps-services-support.d312c71892f658fba6ad726f29f646550317b03b.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/014f6ee8dd0b3f4b19d4829d89a14175b4937fb5/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/office-apps-services-support.d312c71892f658fba6ad726f29f646550317b03b.zh-cn.xlf)
-* Handoff Datetime: 2016-06-27 12:59:22
-* Handoff Reason: Include
+##### <a name='affb37cc3b991609f5de51370485b10fed932421381'></a> Source: [Azure-RMSDocs\understand-explore\office-apps-services-support.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7e08dccfdab54373cb9114c26ec55c32fdbf539c/Azure-RMSDocs/understand-explore/office-apps-services-support.md)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [office-apps-services-support.d312c71892f658fba6ad726f29f646550317b03b.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/b2d623cc63f68ff8753b519493fcd484f57f70c2/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/office-apps-services-support.d312c71892f658fba6ad726f29f646550317b03b.zh-cn.xlf)
-* Handback Datetime: 2016-06-02 02:44:29
-* Bilingual File: [office-apps-services-support.d312c71892f658fba6ad726f29f646550317b03b.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/b2d623cc63f68ff8753b519493fcd484f57f70c2/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/office-apps-services-support.d312c71892f658fba6ad726f29f646550317b03b.zh-cn.xlf)
-* Bilingual Datetime: 2016-06-16 10:21:50
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='6a27d5a2a1bad24521a551465fd9324f2a826376385'></a> Source: [Azure-RMSDocs\understand-explore\rms-for-individuals.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/understand-explore/rms-for-individuals.md)
