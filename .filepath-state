@@ -479,6 +479,9 @@
   "590148218fdd10e88ba764b2dc523a2213e2c8bb": [
     "Azure-RMSDocs\\deploy-use\\install-powershell.md"
   ],
+  "845a47f526754f291c27a3c2bbd80af736b44992": [
+    "Azure-RMSDocs\\deploy-use\\log-analyze-usage.md"
+  ],
   "8a138cdb0dc9b184c6361a879860501ede283ea1": [
     "Azure-RMSDocs\\deploy-use\\log-analyze-usage.md"
   ],
@@ -697,6 +700,9 @@
   ],
   "a38b93a3a32cc9f1b217fa8ae3df79977473ddb3": [
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md"
+  ],
+  "aa482dace1086222f63e9165e3089051b5de3e8c": [
+    "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
   ],
   "1a01ac672251efe3be7fa485cfadfa118f561d8d": [
     "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
