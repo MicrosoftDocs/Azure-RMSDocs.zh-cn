@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "7e08dccfdab54373cb9114c26ec55c32fdbf539c",
+  "LastProcessedCommit": "e06cf70c4ab6bd45c7bd7feb16d05dccd0c1bd79",
   "LastTranslatedCommit": "e8ad894c42cd6894e2038c4ca2b7c0fabc6c5d97",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -81248,6 +81248,43 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf",
       "HandoffFileCommit": "17c3a178aedac0af3c59c6207c6a3c700b6bbd6a",
       "HandoffDateTime": "2016-06-30T18:31:06.2113335Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null,
+      "BilingualFilePath": null,
+      "BilingualFileCommit": null,
+      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualException": null
+    },
+    "affb37cc3b991609f5de51370485b10fed932421": {
+      "FileHash": "affb37cc3b991609f5de51370485b10fed932421",
+      "SourceFileCommit": "99eb67f6296ad1782c787aabb73a28458c02f367",
+      "SourceFilePath": "Azure-RMSDocs\\understand-explore\\office-apps-services-support.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_1_md.md"
+      ],
+      "FilePathList": [
+        "Azure-RMSDocs\\understand-explore\\office-apps-services-support.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\office-apps-services-support.d312c71892f658fba6ad726f29f646550317b03b.zh-cn.xlf",
+      "HandoffFileCommit": "bb1df88cfe1f988694ae96db613d219fb2f07d88",
+      "HandoffDateTime": "2016-07-01T00:22:48.2683657Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
