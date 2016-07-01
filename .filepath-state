@@ -293,6 +293,9 @@
   "9872317c2d5f5f56f28ed2683d7ebc9743041a37": [
     "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md"
   ],
+  "ad8c41c9f3f3515a817d508d8f5a8953daf4b440": [
+    "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md"
+  ],
   "7a369052dd94b1507e427b9f8449efc04ea6c19a": [
     "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md"
   ],
@@ -832,6 +835,9 @@
   ],
   "db38a01984b5a59d5ac50db1f3c198b99d45cac9": [
     "Azure-RMSDocs\\develop\\developing-your-application.md"
+  ],
+  "9200ea44671776ced8781c1e13e71871f5bdf014": [
+    "Azure-RMSDocs\\develop\\how-to-use-adal-authentication.md"
   ],
   "c97899681e8767a7b4daebe16d1c2091ee65f3a8": [
     "Azure-RMSDocs\\develop\\how-to-use-adal-authentication.md"
