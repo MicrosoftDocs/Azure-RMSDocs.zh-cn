@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 激活 Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "激活 Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/16/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bf5e3561ef24d8f44e791ff7bdc8450a73f79705
+ms.openlocfilehash: d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf
+
 
 ---
 
@@ -58,7 +52,8 @@ ms.suite: ems
 ## 为分阶段部署配置加入控制
 如果你不希望所有用户都能立即使用 Azure RMS 保护文件，则可以使用 [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) Windows PowerShell 命令来配置用户加入控制。 在激活 Azure RMS 之前或之后，你可以运行此命令。
 
-> [!IMPORTANT] 若要使用此命令，你必须安装至少 **2.1.0.0** 版的 [Azure RMS Windows PowerShell 模块](http://go.microsoft.com/fwlink/?LinkId=257721)。
+> [!IMPORTANT]
+> 若要使用此命令，你必须安装至少 **2.1.0.0** 版的 [Azure RMS Windows PowerShell 模块](http://go.microsoft.com/fwlink/?LinkId=257721)。
 >
 > 若要检查已安装的版本，请运行：**(Get-Module aadrm –ListAvailable).Version**
 
@@ -86,6 +81,7 @@ Exchange Online 和 SharePoint Online 等 Office 服务需要进行其他配置�
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 有关 Thales HSM 和 Microsoft 添加件的信息 | Azure RMS
-description:
-keywords:
+title: "有关 Thales HSM 和 Microsoft 添加件的信息 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8c9d61e5-75da-4785-9942-1c6313879fd5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: c56c4248ac8754c48b6f411a58c6ba93559aed7f
+
 
 ---
 
@@ -39,6 +33,7 @@ Microsoft 与 Thales 联手协作，不断增强这些 HSM 的功能。 通过�
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

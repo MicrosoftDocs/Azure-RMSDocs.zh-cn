@@ -7,6 +7,6 @@
 # [管理](/rights-management/administer/administer-powershell)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO4-->
 
 

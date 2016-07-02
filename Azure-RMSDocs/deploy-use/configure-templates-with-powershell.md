@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 自定义模板的 PowerShell 参考 | Azure RMS
-description:
-keywords:
+title: "自定义模板的 PowerShell 参考 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: 645f9ed4080e3b38fcda9afe148923c021046724
+
 
 ---
 
@@ -35,7 +29,8 @@ ms.suite: ems
 
 你还可以使用导出和导入来备份和还原自定义模板，最好是经常备份你的自定义模板，这样一来，如果你发现所做的更改不是你想要的，即可轻松还原到以前的版本。
 
-> [!IMPORTANT]若要使用 Windows PowerShell 来创建和管理 Azure RMS 权限策略模板，必须安装至少 2.0.0.0 版的[适用于 Azure RMS 的 Windows PowerShell 模块](http://go.microsoft.com/fwlink/?LinkId=257721)。
+> [!IMPORTANT]
+> 若要使用 Windows PowerShell 来创建和管理 Azure RMS 权限策略模板，必须安装至少 2.0.0.0 版的 [适用于 Azure RMS 的 Windows PowerShell 模块](http://go.microsoft.com/fwlink/?LinkId=257721)。
 > 
 > 如果之前已经安装了此 PowerShell 模块，请在 PowerShell 窗口中运行以下命令以检查版本号： `(Get-Module aadrm -ListAvailable).Version`
 
@@ -64,6 +59,7 @@ ms.suite: ems
 ## 另请参阅
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

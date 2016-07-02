@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 为 Azure Rights Management 配置自定义模板 | Azure RMS
-description:
-keywords:
+title: "为 Azure Rights Management 配置自定义模板 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/03/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8e72b68c03ee7da58adaff96f3f4611a227214b0
+ms.openlocfilehash: 26afa04c5041d0b8c952d3d6b3da5a2215acda87
+
 
 ---
 
@@ -72,6 +66,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

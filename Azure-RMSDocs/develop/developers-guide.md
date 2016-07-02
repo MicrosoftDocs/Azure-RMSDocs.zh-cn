@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 开发人员指南 | Azure RMS
-description: 开发人员工具使用的概述；SDK、其他库以及代码示例。
-keywords:
+title: "开发人员指南 | Azure RMS"
+description: "开发人员工具使用的概述；SDK、其他库以及代码示例。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a22e6bd0-8ce8-45b4-9a32-273126ab831e
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: c9d5ec961989283c5201a81f862b2da45ed64340
+
 
 ---
 
@@ -36,7 +31,7 @@ ms.suite: ems
 |------|---------|
 | [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | 简化的下一代工具集，可提供轻型开发体验，以便通过 Microsoft Rights Managemen 实现对 Android、iOS、Mac OS X、Windows Phone/RT 和 Linux/C++ 设备应用的信息保护 |
 | [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | 为 Windows 桌面应用程序开发人员和基于服务器的解决方案提供商而提供的功能强大的 SDK，可实现对产品的权限管理|
-|[AD RMS SDK](https://msdn.microsoft.com/en-us/library/cc530379(v=vs.85).aspx)|**注意** - AD RMS SDK 利用客户端在 Msdrm.dll 中公开的功能，可用于 Windows Server 2012、Windows 8、Windows Server 2008 R2、Windows 7、Windows Server 2008 和 Windows Vista。 它可能在后续版本中变更或不可用。 请改用 Microsoft Rights Management Services SDK 2.1（它利用客户端在 Msipc.dll 中公开的功能）。|
+|[AD RMS SDK](https://msdn.microsoft.com/library/cc530379(v=vs.85).aspx)|**注意** - AD RMS SDK 利用客户端在 Msdrm.dll 中公开的功能，可用于 Windows Server 2012、Windows 8、Windows Server 2008 R2、Windows 7、Windows Server 2008 和 Windows Vista。 它可能在后续版本中变更或不可用。 请改用 Microsoft Rights Management Services SDK 2.1（它利用客户端在 Msipc.dll 中公开的功能）。|
 |[AD RMS 脚本编写 API](https://msdn.microsoft.com/en-us/library/bb968797(v=vs.85).aspx)| 用于创建脚本以管理 AD RMS 安装|
 
 ## 代码示例和工具
@@ -77,6 +72,7 @@ ms.suite: ems
 - [示例应用程序](https://github.com/Azure-Samples/active-directory-dotnet-rms-windowsstore) - 适用于 Windows 应用商店应用程序的 Microsoft RMS SDK v4.1 的示例为平台提供基本文档使用示例。
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

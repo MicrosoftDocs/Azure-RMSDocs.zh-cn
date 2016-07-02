@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Rights Management 共享应用程序的对话框选项 | Azure RMS
-description:
-keywords:
+title: "Rights Management 共享应用程序的对话框选项 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
+
 
 ---
 
@@ -57,11 +51,11 @@ ms.suite: ems
 -   当你 **以一般方式保护文件**时，未授权用户无法打开文件。 但授权用户打开文件后，他们可以随后将不受保护的文件转发给其他用户，或将其保存在其他用户可以访问的位置。 但是，他们会看到一则消息，告知他们对该文件拥有哪些权限，并要求他们遵守这些权限，但此保护不会强制执行。 此外，以一般方式保护文件时，你可以限制的权限只在授权内。 例如，你无法将内容限制为仅查看或不能打印。
 
     > [!NOTE]
-    > 以一般方式保护的文件始终具有 **.pfile** 文件扩展名。.
+    > 以一般方式保护的文件始终具有“.pfile” 文件扩展名。
 
 -   相比之下，将使用 Rights Management 的**内置（本机）保护**和支持它的应用程序（如 Office 文件）一起使用时，该保护将应用于该文件，即使该文件已经发送给其他用户或保存在其他位置。 并且，保护这些文件时，你可以使用限制性权限（如只读）或编辑（而不是打印或复制）权限。 例如，你可以选择“查看器 - 仅查看” ，使得内容不可编辑、打印或复制。
 
-有关其他技术信息，请参阅 [Rights Management 共享应用程序管理员指南](sharing-app-admin-guide.md)中的[保护级别 – 本机和通用](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)部分.
+有关其他技术信息，请参阅 [Rights Management 共享应用程序管理员指南](sharing-app-admin-guide.md)中的[保护级别 – 本机和通用](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)部分。
 
 ## 自动创建的 .ppdf 文件是什么文件？
 
@@ -84,6 +78,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

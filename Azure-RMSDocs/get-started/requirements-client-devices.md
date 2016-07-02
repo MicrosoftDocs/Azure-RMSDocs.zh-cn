@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure RMS 要求&#58; 客户端设备 | Azure RMS
-description:
-keywords:
+title: "Azure RMS 要求&#58; 客户端设备 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 933394c943763b010ac707384918eff86ea33388
+
 
 ---
 
@@ -62,6 +56,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

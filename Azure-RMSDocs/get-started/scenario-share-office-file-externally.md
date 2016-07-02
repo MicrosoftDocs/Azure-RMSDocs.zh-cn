@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 方案 - 与另一组织中的用户共享 Office 文件 | Azure RMS
-description:
-keywords:
+title: "方案 - 与另一组织中的用户共享 Office 文件 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
+
 
 ---
 
@@ -74,7 +68,8 @@ ms.suite: ems
 
     -   这些步骤不包括设置过期日期。 如果不得在指定日期后使用此信息，请添加另一个步骤来设置相应的过期时间，例如从发送电子邮件算起的 90 天。
 
-    > [!NOTE]有关用户可以选择的每个选项的详细信息，请参阅 [Rights Management 共享应用程序的对话框选项](https://technet.microsoft.com/library/dn574738.aspx)
+    > [!NOTE]
+    > 有关用户可以选择的每个选项的详细信息，请参阅 [Rights Management 共享应用程序的对话框选项](https://technet.microsoft.com/library/dn574738.aspx)
 
 4.  对此组说明进行其他任何所需的修改，然后将其发送给这些用户。
 
@@ -159,6 +154,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
