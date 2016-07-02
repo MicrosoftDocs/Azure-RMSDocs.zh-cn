@@ -170,9 +170,6 @@
   "b4eec28ef5e0a44c5c60f88558b6168bce9718b2": [
     "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
   ],
-  "c3b40e57dadfacca62f2bd74e605a9a9959bb6e2": [
-    "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
-  ],
   "24322775b689ad0508979853fd06b2d33fc33cc1": [
     "Azure-RMSDocs\\develop\\ad-rms-client.md"
   ],
@@ -186,9 +183,6 @@
     "Azure-RMSDocs\\develop\\ad-rms-overview.md"
   ],
   "2b7c99e3adafde7140d7997364ec2643ba79a2ac": [
-    "Azure-RMSDocs\\develop\\ad-rms-server.md"
-  ],
-  "685079958d71d8c681d9150aadcbbc4bfedd15ad": [
     "Azure-RMSDocs\\develop\\ad-rms-server.md"
   ],
   "5d8c7ab53f76005d7efbfd2d795da08e41f83941": [
@@ -243,9 +237,6 @@
     "Azure-RMSDocs\\develop\\enabling-logging.md"
   ],
   "46b1fe5a0c4f138db65072d14489a5d588015df7": [
-    "Azure-RMSDocs\\develop\\file-api-configuration.md"
-  ],
-  "88a911b25c268c54e55bd5bc90ff3e946a9203ee": [
     "Azure-RMSDocs\\develop\\file-api-configuration.md"
   ],
   "b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27": [
@@ -326,9 +317,6 @@
   "bbe381054648a6b68818f3964f6cfefd5da0829c": [
     "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
   ],
-  "866a8f1ec80ecb5b91fcc2915d11f5ef61543c32": [
-    "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
-  ],
   "417888c5445d702b1f700a8e717fbb746593efc6": [
     "Azure-RMSDocs\\develop\\overview.md"
   ],
@@ -366,9 +354,6 @@
     "Azure-RMSDocs\\develop\\terms.md"
   ],
   "c9d5ec961989283c5201a81f862b2da45ed64340": [
-    "Azure-RMSDocs\\develop\\developers-guide.md"
-  ],
-  "20caaf80b7a4fdd47c9583cdb0c1451cc16a531c": [
     "Azure-RMSDocs\\develop\\developers-guide.md"
   ],
   "7d6e1d818c8eb4f6d2e4e7d320e44c7f159eabb4": [
@@ -824,9 +809,6 @@
   "9b912a2a66838dc6e6a3b227bcfe4ac589fe06c1": [
     "Azure-RMSDocs\\develop\\adal-auth.md"
   ],
-  "8b398b1dcd6054437e58ee4abe900d8662ab4fbf": [
-    "Azure-RMSDocs\\develop\\adal-auth.md"
-  ],
   "f995da0698ec5fb4a8e46865b70506ced92f73db": [
     "Azure-RMSDocs\\develop\\developing-your-application.md"
   ],
@@ -834,12 +816,6 @@
     "Azure-RMSDocs\\develop\\developing-your-application.md"
   ],
   "9200ea44671776ced8781c1e13e71871f5bdf014": [
-    "Azure-RMSDocs\\develop\\how-to-use-adal-authentication.md"
-  ],
-  "c97899681e8767a7b4daebe16d1c2091ee65f3a8": [
-    "Azure-RMSDocs\\develop\\how-to-use-adal-authentication.md"
-  ],
-  "0513f183df2ca950cbee89d451f1532f8569aad7": [
     "Azure-RMSDocs\\develop\\how-to-use-adal-authentication.md"
   ],
   "839094716fa39957fbcbcdc4812d99fd742e4393": [
