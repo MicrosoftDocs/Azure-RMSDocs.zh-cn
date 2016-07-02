@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 了解和探索 Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "了解和探索 Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: msmbaldwin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 31c713a0-5f84-4bc4-9771-2f9d4133d6cb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mbaldwin
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 63635d13f95219bd900d8ecdd0ca0738c5ebca4a
+
 
 ---
 
@@ -31,6 +24,7 @@ ms.reviewer: mbaldwin
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
