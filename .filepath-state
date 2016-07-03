@@ -140,9 +140,6 @@
   "61df64691ac3f4d7e871043767444ea64dfe1ef3": [
     "Azure-RMSDocs\\develop\\release-notes-rtm.md"
   ],
-  "c90b1d2257bcf3fd355e810e5f9654683c693454": [
-    "Azure-RMSDocs\\develop\\release-notes-rtm.md"
-  ],
   "61f70a7b4a85c0ab6f0a2732fcf9d314a230e769": [
     "Azure-RMSDocs\\develop\\tracking-content.md"
   ],
@@ -810,9 +807,6 @@
     "Azure-RMSDocs\\develop\\adal-auth.md"
   ],
   "f995da0698ec5fb4a8e46865b70506ced92f73db": [
-    "Azure-RMSDocs\\develop\\developing-your-application.md"
-  ],
-  "db38a01984b5a59d5ac50db1f3c198b99d45cac9": [
     "Azure-RMSDocs\\develop\\developing-your-application.md"
   ],
   "9200ea44671776ced8781c1e13e71871f5bdf014": [
