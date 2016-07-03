@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 管理员如何控制为个人 RMS 创建的帐户 | Azure RMS
-description:
-keywords:
+title: "管理员如何控制为个人 RMS 创建的帐户 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: df006a27c97884c47c9bb5fb04bfa181a13b7443
+
 
 ---
 
@@ -49,9 +43,10 @@ ms.suite: ems
 
 ## 后续步骤
 
-如果用户（而不是管理员）可以在个人 RMS 的 Azure Active Directory 中创建其帐户，则如何发现用户已进行了此操作？  请参阅[如何发现用户是否已注册个人 RMS](rms-for-individuals-identify-sign-up.md).
+如果用户（而不是管理员）可以在个人 RMS 的 Azure Active Directory 中创建其帐户，则如何发现用户已进行了此操作？  请参阅[如何发现用户已注册了个人 RMS](rms-for-individuals-identify-sign-up.md)。
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

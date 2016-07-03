@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 如何设置 API 安全模式 | Azure RMS
-description: 选择你的文件 API 应用程序运行的安全模式。
-keywords:
+title: "如何设置 API 安全模式 | Azure RMS"
+description: "选择你的文件 API 应用程序运行的安全模式。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 11b998addd14fdde0592ed948b956ddb2ed6e570
+ms.openlocfilehash: 2be40c9caf33f391f8be9fe116d3473ce995613b
+
 
 ---
 
@@ -44,6 +40,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
