@@ -290,6 +290,9 @@
   "98a2220c1b2d2f7c62673b8d860962d8c208c5ae": [
     "Azure-RMSDocs\\develop\\index.md"
   ],
+  "66bb1b58cba19d0fe8bc2ec0d3720c0b040f8378": [
+    "Azure-RMSDocs\\develop\\ios-os-x-code-examples.md"
+  ],
   "0c5ec8da79674d2023a0684fb0e83ac1e1743874": [
     "Azure-RMSDocs\\develop\\ios-os-x-code-examples.md"
   ],
@@ -499,6 +502,9 @@
   ],
   "e382f9837adc6d6efd1d3efb872ef50e8a0d4cac": [
     "Azure-RMSDocs\\deploy-use\\verify.md"
+  ],
+  "a3ed9e8de496741fae8904481edb1177762a12c0": [
+    "Azure-RMSDocs\\get-started\\faqs.md"
   ],
   "758a603dde2c185767ba85229a397fd6e77b1c5b": [
     "Azure-RMSDocs\\get-started\\faqs.md"
