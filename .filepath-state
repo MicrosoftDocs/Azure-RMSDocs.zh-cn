@@ -224,6 +224,9 @@
   "c00ce9829ce4150cfef74ecd972450b3d787f312": [
     "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
   ],
+  "8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75": [
+    "Azure-RMSDocs\\develop\\deploying-your-application.md"
+  ],
   "902721ae3e69afd144c552b8ee0a916958e80afc": [
     "Azure-RMSDocs\\develop\\deploying-your-application.md"
   ],
@@ -808,6 +811,9 @@
   ],
   "9b912a2a66838dc6e6a3b227bcfe4ac589fe06c1": [
     "Azure-RMSDocs\\develop\\adal-auth.md"
+  ],
+  "5dcb3fe88cced7945591a08c492b32bdc8895162": [
+    "Azure-RMSDocs\\develop\\developing-your-application.md"
   ],
   "f995da0698ec5fb4a8e46865b70506ced92f73db": [
     "Azure-RMSDocs\\develop\\developing-your-application.md"
