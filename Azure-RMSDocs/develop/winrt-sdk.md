@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Windows 应用商店安装程序 | Azure RMS
-description: Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
-keywords:
+title: "Windows 应用商店安装程序 | Azure RMS"
+description: "Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 0b8e0fb6d872506ac3529bd137286f0e8fa562ee
+
 
 ---
 
@@ -41,7 +36,7 @@ Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2
 开发系统上必须安装以下软件：
 
 -   [Windows 8.1](http://windows.microsoft.com/en-US/windows-8/meet) 操作系统
--   [适用于 Windows 8.1 的 Windows SDK](https://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)
+-   [适用于 Windows 8.1 的 Windows SDK](https://msdn.microsoft.com/windows/desktop/bg162891.aspx)
 -   Microsoft [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview) 或更高版本，或 Visual Studio Express 2012，后者包含在适用于 Windows 8.0/8.1 的 Windows SDK中。
 -   适用于 Windows 应用商店应用程序的 MS RMS SDK 4.2 包。 有关详细信息，请参阅[入门](get-started.md)。
 -   身份验证库：我们建议使用 [Azure AD 身份验证库](https://msdn.microsoft.com/en-us/library/jj573266.aspx)和其他可用的身份验证库。
@@ -57,7 +52,7 @@ Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2
 
 -   打开 Visual Studio。
 -   依次单击“文件”、“新建”和“项目”。
--   在“新项目”对话框中，单击 **Visual C#**，然后选择“空白应用 (Windows)”，然后单击“确定”。
+-   在“新建项目”对话框中，单击“Visual C”**\#，选择“空白应用(Windows)”****，然后单击“确定”**。
 
     ![新建项目](../media/winrtsetup-newproj.png)
 
@@ -89,6 +84,7 @@ Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2
 [Windows API 参考](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

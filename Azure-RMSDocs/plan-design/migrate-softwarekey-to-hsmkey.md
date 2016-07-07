@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 步骤 2&colon; 软件保护密钥到 HSM 保护密钥的迁移 | Azure RMS
-description:
-keywords:
+title: "步骤 2&colon; 软件保护密钥到 HSM 保护密钥的迁移 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 173641b9dada2673b48a1c210419cb933cdd9f13
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 
 这些说明是[从 AD RMS 到 Azure Rights Management 的迁移路径](migrate-from-ad-rms-to-azure-rms.md)中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且你希望使用 HSM 保护的租户密钥迁移到 Azure Rights Management 时才适用。 
 
-如果这不是你选择的配置方案，请返回[步骤 2.从 AD RMS 中导出配置数据并将其导入到 Azure RMS 中](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)，然后选择其他配置。
+如果这不是你选择的配置方案，请返回[步骤 2.从 AD RMS 中导出配置数据并将其导入到 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) 中，然后选择其他配置。
 
 此过程分为三部分，用于将 AD RMS 配置导入到 Azure RMS，以生成由你管理的 Azure RMS 租户密钥 (BYOK)。
 
@@ -40,7 +34,7 @@ ms.suite: ems
 
 ## 第 1 部分：从配置数据中提取 SLC，并将密钥导入到本地 HSM
 
-1.  按照[计划和实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md)主题中的“实现自带密钥 (BYOK)”[](plan-implement-tenant-key.md#BKMK_ImplementBYOK)部分中的以下步骤进行操作：
+1.  按照[计划和实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md)的[实现自带密钥 (BYOK)](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 部分中的步骤进行操作，并使用过程**生成并传输租户密钥 — 通过 Internet**，但以下情况例外：
 
     -   **生成和传送租户密钥 – 通过 Internet**：**准备连接你的 Internet 的工作站**
 
@@ -79,7 +73,7 @@ ms.suite: ems
 
 ## 第 2 部分：打包 HSM 密钥并将其传输到 Azure RMS
 
-1.  按照[计划和实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md)中的[实现自带密钥 (BYOK)](plan-implement-tenant-key.md#BKMK_ImplementBYOK) 部分中的以下步骤进行操作：
+1.  按照[计划和实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md)的[实现自带密钥 (BYOK)](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 部分中的以下步骤进行操作：
 
     -   **生成和传送租户密钥 – 通过 Internet**： **准备要传送的租户密钥**
 
@@ -108,11 +102,12 @@ ms.suite: ems
     Disconnect-AadrmService
     ```
 
-现在可以转到[步骤 3。激活你的 RMS 租户](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
+现在可以转到[步骤 3。激活你的 RMS 租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

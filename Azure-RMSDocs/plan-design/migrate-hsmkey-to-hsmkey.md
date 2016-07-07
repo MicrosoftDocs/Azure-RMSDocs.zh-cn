@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 步骤 2&colon; HSM 保护密钥到 HSM 保护密钥的迁移 | Azure RMS
-description:
-keywords:
+title: "步骤 2&colon; HSM 保护密钥到 HSM 保护密钥的迁移 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 7b531ebba1923653cb37c70a02fa888a40e96528
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 
 这些说明是[从 AD RMS 到 Azure Rights Management 的迁移路径](migrate-from-ad-rms-to-azure-rms.md)中的一部分，仅当你的 AD RMS 密钥是 HSM 保护密钥，且你希望使用 HSM 保护的租户密钥迁移到 Azure Rights Management 时才适用。 
 
-如果这不是你选择的配置方案，请返回[步骤 2.从 AD RMS 中导出配置数据并将其导入到 Azure RMS 中](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)，然后选择其他配置。
+如果这不是你选择的配置方案，请返回[步骤 2.从 AD RMS 中导出配置数据并将其导入到 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) 中，然后选择其他配置。
 
 > [!NOTE]
 > 这些说明假定你的 AD RMS 密钥受模块保护。 这是常见的情况。 如果你的 AD RMS 密钥受 OCS 保护，请在按这些说明操作之前联系 [AskIPTeam@microsoft.com](mailto: askipteam@microsoft.com?subject=AD%20RMS%20migration%20with%20OCS-protected%20key)。
@@ -43,7 +37,7 @@ ms.suite: ems
 
 ## 第 1 部分：打包 HSM 密钥以便随时可将其传输到 Azure RMS
 
-1.  使用过程**生成并传输租户密钥 - 通过 Internet**，并按照[计划和实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md)中的“实现自带密钥 (BYOK)”[](plan-implement-tenant-key.md#BKMK_ImplementBYOK)部分中的步骤进行操作，但以下情况例外：
+1.  按照[计划和实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md)的[实现自带密钥 (BYOK)](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 部分中的步骤进行操作，并使用过程**生成并传输租户密钥 — 通过 Internet**，但以下情况例外：
 
     -   不要遵循 **生成你的租户密钥**中的步骤，因为你已从 AD RMS 部署获得等效物。 你必须标识 AD RMS 服务器使用的从 Thales 安装获得的密钥，并在迁移期间使用此密钥。 Thales 加密的密钥文件通常在本地服务器上名为 **key_(keyAppName)_(keyIdentifier)**。
 
@@ -72,10 +66,11 @@ ms.suite: ems
     Disconnect-AadrmService
     ```
 
-现在可以转到[步骤 3。激活你的 RMS 租户](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
+现在可以转到[步骤 3。激活你的 RMS 租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

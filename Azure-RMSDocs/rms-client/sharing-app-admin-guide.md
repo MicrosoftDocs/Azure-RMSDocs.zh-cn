@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Rights Management 共享应用程序管理员指南 | Azure RMS
-description:
-keywords:
+title: "Rights Management 共享应用程序管理员指南 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,11 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
+
 
 ---
 
@@ -31,18 +24,18 @@ ms.suite: ems
 *适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 
-如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 [Rights Management 共享应用程序用户指南](sharing-app-user-guide.md)或[适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)以外的更多技术信息，请使用以下信息.
+如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 [Rights Management 共享应用程序用户指南](sharing-app-user-guide.md)或[适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)以外的更多技术信息，请使用以下信息。
 
-RMS 共享应用程序最适合与 Azure RMS 配合使用，因为这种部署配置支持向另一组织中的用户发送受保护的附件，并提供电子邮件通知、文档跟踪和撤消等选项。  不过，它也能够与本地版本的 AD RMS 配合使用，只是存在一些限制。 有关 Azure RMS 和 AD RMS 支持的功能的全面比较，请参阅[比较 Azure Rights Management 和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。 如果你安装了 AD RMS 并想要迁移到 Azure RMS，请参阅 [从 AD RMS 迁移到 Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
+RMS 共享应用程序最适合与 Azure RMS 配合使用，因为这种部署配置支持向另一组织中的用户发送受保护的附件，并提供电子邮件通知、文档跟踪和撤消等选项。  不过，它也能够与本地版本的 AD RMS 配合使用，只是存在一些限制。 有关 Azure RMS 和 AD RMS 支持的功能的全面比较，请参阅[比较 Azure Rights Management 和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。 如果你安装了 AD RMS 并想要迁移到 Azure RMS，请参阅 [从 AD RMS 迁移到 Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
 
 ## 自动部署 Microsoft Rights Management 共享应用程序
 Windows 版 RMS 共享应用程序支持脚本化安装，因此适合企业部署。
 
-安装的唯一先决条件是，计算机运行最低版本的 Windows 7 Service Pack 1 且已安装 Microsoft Framework（最低版本为 4.0）。 如果你需要安装 Microsoft.NET Framework 4.0，可以 [从 Microsoft 下载中心下载并安装](http://www.microsoft.com/download/details.aspx?id=17718).
+安装的唯一先决条件是，计算机运行最低版本的 Windows 7 Service Pack 1 且已安装 Microsoft Framework（最低版本为 4.0）。 如果你需要安装 Microsoft.NET Framework 4.0，可以 [从 Microsoft 下载中心下载并安装](http://www.microsoft.com/download/details.aspx?id=17718)。
 
 ### 下载要自动部署的 RMS 共享应用程序
 
-1.  在 Microsoft 下载中心转到[适用于 Windows 的 Rights Management 共享应用程序](http://www.microsoft.com/download/details.aspx?id=40857) 页，然后单击**下载**.
+1.  在 Microsoft 下载中心转到 [适用于 Windows 的 Rights Management 共享应用程序](http://www.microsoft.com/download/details.aspx?id=40857) 页，然后单击“下载”。 
 
 2.  选择并下载所需文件。 有两个客户端安装包：一个适用于 64 位 Windows (Microsoft Rights Management sharing application x64.zip)，另一个适用于 32 位 Windows (Microsoft Rights Management sharing application x86.zip)。
 
@@ -79,7 +72,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 > [!NOTE]
 > 在上述方案中，如果你的组织运行的是 AD RMS，则用户可以从使用 Azure RMS 的其他组织接收受保护内容，但他们无法将受保护的内容发送给使用 Azure RMS 的组织中的用户。 但是，如果你的组织运行的是 Azure RMS，则用户可以发送和接收来自其他组织的受保护内容。
 
-若要针对每个步骤完成安装，必须重新启动计算机。 可以使用类似于 **shutdown /i** 的命令实现自动重新启动.
+若要针对每个步骤完成安装，必须重新启动计算机。 可以使用类似于 **shutdown /i** 的命令实现自动重新启动。
 
 ### 为 Office 2016 或 Office 2013 和 Azure RMS 或 Active Directory RMS 部署 RMS 共享应用程序
 
@@ -97,7 +90,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     1.  使用本地管理员帐户登录到计算机。
 
-    2.  在该计算机上，[下载并安装 Microsoft Online 登录助手](http://www.microsoft.com/download/details.aspx?id=28177).
+    2.  在该计算机上， [下载并安装 Microsoft Online 登录助手](http://www.microsoft.com/download/details.aspx?id=28177)。
 
     3.  运行以下命令以查看显示在屏幕上的证书服务 URL，然后可以复制并保存该 URL 以供下一步使用：
 
@@ -260,7 +253,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     -   [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\Activation]
 
-        @="&lt;认证 URL&gt;"
+        @="&lt;certification url&gt;"
 
     -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\14。0\Common\DRM]
 
@@ -322,9 +315,9 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 ## 禁止自动更新
 默认情况下，当出现较新版本的 RMS 共享应用程序时，系统将通知用户并提示他们下载该应用程序。 你可以对注册表进行以下编辑来取消显示此通知：
 
-1.  导航到 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**，如果它尚不存在，请创建名为 **RmsSharingApp** 的新项.
+1.  导航到 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**，如果它尚不存在，请创建名为 **RmsSharingApp** 的新注册表项。
 
-2.  选择 **RmsSharingApp**，创建一个新的 DWORD 值 **AllowUpdatePrompt**，并将该值设置为 **0**.
+2.  选择 **RmsSharingApp**，创建一个新的 DWORD 值 **AllowUpdatePrompt**，并将该值设置为 **0**。
 
 由于 WSUS 不支持 RMS 共享应用程序，你可以先使用以下技术测试所有新版本的 RMS 共享应用程序，然后再将其部署到所有用户：
 
@@ -335,9 +328,9 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 3.  在测试完成且解决了所有问题之后，使用本指南中的自动部署说明将最新版本部署到所有用户。
 
 ## 仅限 Azure RMS：配置文档跟踪
-如果你有[支持文档跟踪的订阅](https://technet.microsoft.com/en-us/dn858608)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。  文档跟踪会显示尝试访问用户共享的受保护文档的人员的电子邮件地址、其尝试访问这些文档的时间以及他们所在的位置。 如果你的组织出于隐私要求而要禁止显示此类信息，你可以使用 [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032) cmdlet 来禁用对文档跟踪站点的访问。 你随时可以使用 [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) 来重新启用对该站点的访问，并可以使用 [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) 来查看当前是已启用还是已禁用这种访问.
+如果你有[支持文档跟踪的订阅](https://technet.microsoft.com/dn858608)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。  文档跟踪会显示尝试访问用户共享的受保护文档的人员的电子邮件地址、其尝试访问这些文档的时间以及他们所在的位置。 如果你的组织出于隐私要求而要禁止显示此类信息，你可以使用 [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032) cmdlet 来禁用对文档跟踪站点的访问。 你随时可以使用 [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) 来重新启用对该站点的访问，并可以使用 [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) 来查看当前是已启用还是已禁用这种访问。
 
-若要运行这些 cmdlet，你必须安装至少 **2.3.0.0** 版的适用于 Windows PowerShell 的 Azure RMS 模块。  有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md).
+若要运行这些 cmdlet，你必须安装至少 **2.3.0.0** 版的适用于 Windows PowerShell 的 Azure RMS 模块。  有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
 
 > [!TIP]
 > 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号： `(Get-Module aadrm –ListAvailable).Version`
@@ -358,7 +351,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 ## 仅限 AD RMS：在组织中支持多个电子邮件域
 如果你使用 AD RMS 且你所在组织中的用户具有多个电子邮件域（可能由于组织的合并或收购而引起），则必须对注册表进行以下编辑：
 
-1.  导航到 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**，如果它尚不存在，请创建名为 **RmsSharingApp** 的新项.
+1.  导航到 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**，如果它尚不存在，请创建名为 **RmsSharingApp** 的新注册表项。
 
 2.  选择 **RmsSharingApp**，创建一个名为 **FederatedDomains** 的新多字符串值，然后添加组织使用的域和所有子域。 不支持使用通配符。
 
@@ -368,10 +361,11 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 
 ## 后续步骤
-有关其他技术信息，包括保护级别（本机和通用）之间的区别、支持的文件类型和文件扩展名以及如何更改默认保护级别的相关说明，请参阅 [Rights Management 共享应用程序技术概述](sharing-app-admin-guide-technical.md).
+有关其他技术信息，包括保护级别（本机和通用）之间的区别、支持的文件类型和文件扩展名以及如何更改默认保护级别的相关说明，请参阅 [Rights Management 共享应用程序技术概述](sharing-app-admin-guide-technical.md)。
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

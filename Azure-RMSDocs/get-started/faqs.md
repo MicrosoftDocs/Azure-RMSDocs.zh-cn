@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Azure Rights Management 常见问题 | Azure RMS
-description:
-keywords:
+title: "Azure Rights Management 常见问题 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/07/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 64b9cf141b755e4d54907424a7dcbd4ee14fadd7
+ms.openlocfilehash: 758a603dde2c185767ba85229a397fd6e77b1c5b
+
 
 ---
 
@@ -32,7 +26,11 @@ ms.suite: ems
 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]（也称为 Azure RMS）的某些常见问题：
 
 ## 部署 Azure RMS 需要做好哪些准备，如何能够顺利完成部署？
-首先，请查看 [Azure Rights Management 要求](requirements-azure-rms.md)，其中包含了有关云订阅选项、如何将本地服务器与 Azure RMS 配合使用、当前不支持的部署方案以及哪些设备、应用程序支持 Azure RMS 的信息以及你需要的防火墙或代理服务器的 IP 地址和域名列表链接。 你还可能需要查看此**入门**部分以及**了解和探索**部分中的其他文章，以基本了解 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 如何帮助保护组织的数据、如何与应用程序配合工作、它与 Active Directory Rights Management 的本地版本比起来如何，并了解特定于 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的术语和缩写。
+首先，请查看 [Azure Rights Management 要求](requirements-azure-rms.md)，其中包含了有关云订阅选项、如何将本地服务器与 Azure RMS 配合使用、当前不支持的部署方案以及哪些设备、应用程序支持 Azure RMS 的信息以及你需要的防火墙或代理服务器的 IP 地址和域名列表链接。 
+
+你可能还需要查看此**入门**部分以及**了解和探索**部分中的其他文章，以基本了解 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 如何帮助保护组织的数据、如何与应用程序配合工作、它与 Active Directory Rights Management 的本地版本比起来如何，并了解特定于 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的术语和缩写。
+
+之后，若要开始部署，请使用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md)。
 
 ## 必须存在于云中的文件是否要受 Azure RMS 保护？
 否，这是一个常见的误解。 在信息保护过程中，Azure Rights Management 服务（和 Microsoft）不查看或存储你的数据。 要保护的信息永远不会发送或存储到 Azure 中，除非你显式将其存储在 Azure 中，或者使用其他可用于在 Azure 中存储数据的云服务。 
@@ -40,16 +38,39 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 有关详细信息，请参阅 [How does Azure RMS work? Under the hood（Azure RMS 的工作原理。揭秘）](../understand-explore/how-does-it-work.md)以了解在本地创建和存储的秘密可乐配方如何受 Azure RMS 保护但始终在本地。
 
 ## 可以将 Azure RMS 与我的本地服务器集成吗？
-是。 Azure RMS 可以与你的本地服务器（如 Exchange Server、SharePoint 和 Windows 文件服务器）集成。 为此，你需要使用 [Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。 或者，如果你只想对 Windows Server 使用文件分类基础结构 (FC)，则可使用 [RMS 保护 cmdlet](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx)。 你还可以使用 [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)，将 Active Directory 域控制器与 Azure AD 同步和联合，为用户提供更为契合的身份验证体验。
+是。 Azure RMS 可以与你的本地服务器（如 Exchange Server、SharePoint 和 Windows 文件服务器）集成。 为此，你需要使用 [Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。 或者，如果你只想对 Windows Server 使用文件分类基础结构 (FCI)，则可使用 [RMS 保护 cmdlet](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx)。 你还可以使用 [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)，将 Active Directory 域控制器与 Azure AD 同步和联合，为用户提供更为契合的身份验证体验。
 
 Azure RMS 将根据需要自动生成并管理 XrML 证书，因此它不使用本地 PKI。 有关 Azure RMS 如何使用证书的详细信息，请参阅 [Azure RMS 的工作原理](../understand-explore/how-does-it-work.md)一文中的 [Azure RMS 工作原理演练：首次使用、内容保护、内容使用](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption)。
+
+## 在哪里可以找到与 Azure RMS 集成的第三方解决方案的相关信息？
+
+许多软件供应商已有或正在实施与 Azure RMS 集成的解决方案，并且这一数量正在快速增长。 请查看 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)（企业移动性和安全性博客）并从 Twitter 上的 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) 获取最新更新，这可能会对你有所帮助。 但是，如果你有特定的问题，可以向信息保护团队发送电子邮件：askipteam@microsoft.com。
+
+## RMS 连接器是否有管理包或类似的监视机制？
+
+虽然 Rights Management 连接器会将信息、警告和错误消息记录到事件日志中，但不提供用于监视这些事件的管理包。 不过，[监视 Azure Rights Management 连接器](../deploy-use/monitor-rms-connector.md)中记录了事件及其说明的列表，并提供更多帮助你采取纠正措施的信息。
+
+## 是否必须是全局管理员才能配置 Azure RMS？我可以委派给其他管理员吗？
+
+很显然，Office 365 租户或 Azure AD 租户的全局管理员可以运行 Azure RMS 的所有管理任务。 但是，如果你想为其他用户分配管理权限，则可以通过使用 Azure RMS PowerShell cmdlet [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/dn629417.aspx) 实现此目的。 你可以按用户帐户或组分配此管理角色。 有两种角色可用：**全局管理员**和**连接器管理员**。 
+
+如这些角色名称所示，第一种角色授权运行 Azure Rights Management 的所有管理任务（而不使其成为其他云服务的全局管理员），第二种角色授权仅运行 Rights Management (RMS) 连接器。
+
+需要注意的事项：
+
+- 只有 Office 365 的全局管理员和 Azure AD 的全局管理员才能使用管理门户（Office 365 管理中心或 Azure 经典门户）来配置 Azure RMS。 分配有 Azure RMS 全局管理员角色的用户必须使用 Azure RMS PowerShell 命令来配置 Azure RMS。 请参阅[使用 Windows PowerShell 管理 Azure Rights Management](../deploy-use/administer-powershell.md)，以帮助查找特定任务的正确 cmdlet。
+
+- 如果配置了[加入控制](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，这不会影响管理 Azure RMS 的能力，但会影响管理 RMS 连接器的能力。 例如，如果配置了加入控制，以致仅允许“IT 部门”组保护内容，那么，用于安装和配置 RMS 连接器的帐户必须是该组的成员。 
+
+- 任何 Azure RMS 管理员（租户全局管理员或 Azure RMS 全局管理员）都不能对受 Azure RMS 保护的文档或电子邮件自动解除保护。 只有在启用了超级用户功能的情况下，分配为 Azure RMS 超级用户的用户才能执行此操作。 但是，租户全局管理员和所有 Azure RMS 全局管理员都可以将用户分配为超级用户，包括其自己的帐户。 他们还可以启用超级用户功能。 这些操作记录在 Azure RMS 管理员日志中。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)中的“最佳安全做法”部分。 
+
 
 ## 我对 Exchange 采用混合部署：Exchange Online 上存在一些用户，而其他用户则在 Exchange Server 上。Azure RMS 支持这种部署吗？
 绝对支持，而且很棒的是，用户将受到无缝保护，并可以在两种 Exchange 部署上使用受保护的电子邮件和附件。 对于此配置，[激活 Azure RMS](../deploy-use/activate-service.md) 并[启用适用于 Exchange Online 的 IRM](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)，然后[部署并配置适用于 Exchange Server 的 RMS 连接器](../deploy-use/deploy-rms-connector.md)。
 
 ## 是否有配置 Exchange Online 使用 Azure RMS 的分步指导？
 
-是。 请参阅 [Exchange Online：IRM 配置](../deploy-use/configure-office365.md#exchange-online-irm-configuration.md )以查看使 Exchange Online 使用 Azure RMS 的一组典型命令，了解为什么 Outlook Web App 不立即显示“设置权限”菜单选项，以及在更改或更新 Azure RMS 模板时要运行的命令。 
+是。 请参阅 [Exchange Online：IRM 配置](../deploy-use/configure-office365.md#exchange-online-irm-configuration)以查看使 Exchange Online 使用 Azure RMS 的一组典型命令，了解为什么 Outlook Web App 不立即显示“设置权限”菜单选项，以及在更改或更新 Azure RMS 模板时要运行的命令。 
 
 ## 如果我在生产中部署 Azure RMS，我的公司是否就只能使用该解决方案？或者是否存在无法访问由 Azure RMS 进行保护的内容的风险？
 不会，数据始终由你控制，并可以继续访问，即使你决定不再使用 Azure RMS 也是如此。 有关详细信息，请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](../deploy-use/decommission-deactivate.md)。
@@ -65,7 +86,7 @@ Azure RMS 的最大优势之一在于，它支持企业与企业的协作，同�
 我们未提供相应的管理选项来防止用户与特定的组织安全共享文档。 例如，你想要阻止某家你不信任的或者竞争的组织。 防止 Azure RMS 向该组织的用户发送受保护文档没有任何意义，因为你的用户到时还是会共享未保护的文档，而这也许是你最终希望发生的事情！ 例如，你无法识别谁在与这些组织的用户共享公司机密文档，但是，如果文档（或电子邮件）受 Azure RMS 的保护，则你可以识别。
 
 ## 如果我与公司之外的用户共享受保护文档，该用户如何进行身份验证。
-Azure RMS 始终使用 Azure Active Directory 帐户和关联的电子邮件地址进行用户身份验证，这为管理员将企业间的协作变得天衣无缝。 如果其他组织使用 Azure 服务，用户将具有 Azure Active Directory 帐户，即使这些帐户是在本地创建和进行管理，然后同步到 Azure。  如果组织具有 Office 365，此服务在后台还会将 Azure Active Directory 用于用户帐户。  如果用户的组织不具有托管的 Azure 帐户，用户可以注册[个人 RMS](../understand-explore/rms-for-individuals.md)，这将为组织创建非托管的 Azure 租户和目录，并为用户创建帐户，因此，此用户可以进行 Azure RMS 身份验证。
+Azure RMS 始终使用 Azure Active Directory 帐户和关联的电子邮件地址进行用户身份验证，这为管理员将企业间的协作变得天衣无缝。 如果其他组织使用 Azure 服务，用户将具有 Azure Active Directory 帐户，即使这些帐户是在本地创建和进行管理，然后同步到 Azure。 如果组织具有 Office 365，此服务在后台还会将 Azure Active Directory 用于用户帐户。 如果用户的组织在 Azure 中没有托管帐户，用户可以注册[个人 RMS](../understand-explore/rms-for-individuals.md)，这将为组织创建非托管的 Azure 租户和目录，并为用户创建帐户，以便此用户（和后续用户）进行 Azure RMS 身份验证。
 
 这些帐户的身份验证方法各不相同，具体取决于其他组织中的管理员如何配置 Azure Active Directory 帐户。 例如，他们可以使用为这些帐户、多重身份验证 (MFA)、联合身份验证创建的密码，或在 Active Directory 域服务中创建、然后同步到 Azure Active Directory 的密码。
 
@@ -85,7 +106,7 @@ Azure AD Premium 功能可让你通过指定[基于属性的规则](https://azur
 
 
 ## Azure RMS 支持哪些设备和哪种文件类型？
-有关受支持的设备的列表，请参阅[支持 Azure RMS 的客户端设备](../get-started/requirements-client-devices.md)。 由于并非所有受支持的设备目前都能支持所有 RMS 功能，因此，还请务必查看同一文章中的[客户端设备功能](../get-started/requirements-client-devices.md#client-device-capabilities)表。
+有关受支持设备的列表，请参阅 [Azure RMS 要求：支持 Azure RMS 的客户端设备](../get-started/requirements-client-devices.md)。 由于并非所有受支持的设备目前都能支持所有 RMS 功能，因此，还请务必查看 [Azure RMS 要求：应用程序](../get-started/requirements-applications.md)中的表。
 
 Azure RMS 能够支持所有文件类型。 对于文字、图像、Microsoft Office (Word、Excel、PowerPoint) 文件、.pdf 文件和一些其他应用程序文件类型，Azure RMS 提供的本地保护包括对权利（权限）的加密和执行。 对于其他应用程序和文件类型，通用保护提供文件封装和验证以确认用户是否授权打开文件。
 
@@ -108,7 +129,7 @@ Azure RMS 能够支持所有文件类型。 对于文字、图像、Microsoft Of
 ## 我正在寻找的一项功能看起来不适用于 SharePoint 保护的库。是否计划了针对此功能的支持？
 当前，SharePoint 通过使用 IRM 保护的库，支持 RMS 保护的文档，但不支持自定义模板、文档跟踪和一些其他功能。 有关详细信息，请参阅 [Office 应用程序和服务](../understand-explore/office-apps-services-support.md)一文中的 [SharePoint Online 和 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server)部分。
 
-如果你对当前不支持的某项特定功能感兴趣，请务必关注 [RMS 团队博客](http://blogs.technet.com/b/rms/)上的公告。
+如果你对当前不支持的某项特定功能感兴趣，请务必关注 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)（企业移动性和安全性博客）上的公告。
 
 ## 如何在 SharePoint Online 中配置 OneDrive for Business，以便用户可以安全地与公司内外的人员共享他们的文件？
 默认情况下，作为 Office 365 管理员，你不用执行此配置，用户会进行配置。
@@ -144,7 +165,6 @@ Azure RMS 能够支持所有文件类型。 对于文字、图像、Microsoft Of
 
 除名称和外观外，**不得转发**既不是“转发”权限的对立面，也不是模板。 它实际上是一组权限，包括限制复制、打印和保存附件以及限制转发电子邮件。 这些权限通过所选收件人动态应用于用户，而不由管理员静态分配。 有关详细信息，请参阅[为 Azure Rights Management 配置使用权限](../deploy-use/configure-usage-rights.md)中的[电子邮件的“不得转发”选项](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)部分。
 
-
 ## 我在何处可以找到 Azure RMS 的支持信息，例如法律、合规性和 SLA？
 Azure RMS 支持其他服务，也依赖于其他服务。 如果你寻找的信息与 Azure RMS 相关，但与如何使用 Azure RMS 服务无关，请查看以下资源：
 
@@ -178,6 +198,10 @@ Azure RMS 支持其他服务，也依赖于其他服务。 如果你寻找的信
 
 -   Office 365 库：[Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
+## 听说很快将发布新版 Azure RMS，何时发布？
+
+本技术文档不包含即将发布的版本的相关信息。 有关此类信息和发布公告，请查看 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)（企业移动性和安全性博客）并从 Twitter 上的 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) 获取最新更新。 如果你对 Office 版本感兴趣，还请务必查看 [Office 博客[(https://blogs.office.com/)。
+
 ## 如果我的问题不在这里，我该如何操作？
 使用 [Azure Rights Management 的信息和支持](information-support.md)中列出的链接和资源。
 
@@ -189,13 +213,12 @@ Azure RMS 支持其他服务，也依赖于其他服务。 如果你寻找的信
 
 -   [文档跟踪常见问题](http://go.microsoft.com/fwlink/?LinkId=523977)
 
-此常见问题页将定期更新，其中新添加的内容将在 [Microsoft 权限管理 (RMS) 团队](http://blogs.technet.com/b/rms/) 博客上的每月文档更新公告中列出。
-
-> [!TIP]可以使用该博客上的[文档标记](http://blogs.technet.com/b/rms/archive/tags/docs/) 更轻松地找到这些文档公告。
+此常见问题页将定期更新，其中新添加的内容将在 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)（企业移动性和安全性博客）上的每月文档更新公告中列出。
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

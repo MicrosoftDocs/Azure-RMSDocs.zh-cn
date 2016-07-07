@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 帮助用户使用 Azure Rights Management 保护文件 | Azure RMS
-description:
-keywords:
+title: "帮助用户使用 Azure Rights Management 保护文件 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b6dcd8bb1091e9c484e02042adbf993381581a9d
+ms.openlocfilehash: d48616cb638522e6cda61e7ae96db9480fc14099
+
 
 ---
 
@@ -35,7 +29,8 @@ ms.suite: ems
 
     让用户知道如何以及何时保护包含敏感信息的文档和电子邮件。 只要有可能，都应该提供其现有工作流的这些信息，使他们可以将附加的步骤合并到熟知的过程中，而不是引入全新的过程。 请务必让他们知道你的业务的相关优势（和风险），并提供有关何时应该保护文件和电子邮件的指导。 如果你配置了 [自定义模板](configure-custom-templates.md)，请提供有关在模板名称和描述不足以帮助用户选择正确模板时应该选择哪个模板的说明。
 
-    > [!TIP] 最终用户示例视频：
+    > [!TIP]
+    > 最终用户示例视频
     >
     > -   [Azure RMS 用户体验](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)
     > -   [Azure RMS 文档跟踪和撤销](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
@@ -75,12 +70,14 @@ ms.suite: ems
 
 对于移动设备，请参阅 [适用于移动平台的 Microsoft Rights Management 共享应用程序的常见问题](http://technet.microsoft.com/dn451248)。
 
-> [!TIP] 有关带屏幕截图的高级示例方案，请参阅[用户与移动用户安全地共享附件](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users)。
+> [!TIP]
+> 有关带屏幕截图的高级示例方案，请参阅[用户与移动用户安全地共享附件](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users)。
 
 ## 在 Office 365、Office 2016 或 Office 2013 中使用信息保护
 如果你使用 Azure RMS，但尚未安装权限管理共享应用程序，则用户将不会在功能区上看到 **“共享保护”**按钮，也不会在文件资源管理器中看到帮助他们更加轻松地保护文件的 **“保护现有”** 选项。 对于这些用户，他们必须遵循类似以下的说明。
 
-> [!TIP] 若要查找应用程序特定帮助，以及有关在这些应用程序中使用信息保护的说明，请搜索 **IRM** 和应用程序名称及版本。
+> [!TIP]
+> 若要查找应用程序特定帮助，以及有关在这些应用程序中使用信息保护的说明，请搜索 **IRM** 和应用程序名称及版本。
 
 #### 在 Word 2013 中保护文档
 
@@ -88,7 +85,8 @@ ms.suite: ems
 
 2.  在 **“文件”** 菜单中，依次单击 **“信息”**、**“保护文档”**、**“限制访问”**，然后选择一个模板以快速应用相应的使用权限，或者选择 **“限制访问”** 并自行选择使用权限。
 
-    > [!NOTE] 如果这是你第一次使用权限管理，你需要联系 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 服务，它将提示你提供凭据，以便配置 Office IRM 客户端。
+    > [!NOTE]
+    > 如果这是你第一次使用权限管理，你需要联系 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 服务，它将提示你提供凭据，以便配置 Office IRM 客户端。
 
 3.  保存文档。
 
@@ -117,6 +115,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: iOS 和 OS X 安装程序 | Azure RMS
-description: 通过 AAD RM，iOS 和 OS X 应用程序可使用 RMS SDK 4.2 在其应用程序中启用集成信息保护。
-keywords:
+title: "iOS 和 OS X 安装程序 | Azure RMS"
+description: "通过 AAD RM，iOS 和 OS X 应用程序可使用 RMS SDK 4.2 在其应用程序中启用集成信息保护。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 821fe1c361dc38b1e33ac66208122de165d02020
+
 
 ---
 
@@ -51,7 +46,7 @@ ms.suite: ems
 
     此 SDK 可用于为 iOS 7.0、OS X 10.8 及更高版本进行开发。
 
--   身份验证库：我们建议使用 [Azure AD 身份验证库 (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx)。 但是也可使用其他支持 OAuth 2.0 的身份验证库。
+-   身份验证库：建议使用 [Azure AD 身份验证库 (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。 但是也可使用其他支持 OAuth 2.0 的身份验证库。
 
     有关详细信息，请参阅 [ADAL for iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios) 或 [ADAL for OS X](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/tree/OSXUniversal)
 
@@ -122,6 +117,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

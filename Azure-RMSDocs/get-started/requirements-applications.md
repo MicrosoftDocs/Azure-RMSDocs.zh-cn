@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Azure RMS 要求&#58;应用程序 | Azure RMS
-description:
-keywords:
+title: "Azure RMS 要求&#58;应用程序 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/17/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
+ms.openlocfilehash: 61d18747011435773e16b3c8d2a8ac2104997484
+
 
 ---
 
@@ -46,7 +40,7 @@ ms.suite: ems
 
 |**设备操作系统**|Word、Excel、PowerPoint|受保护的 PDF|Email|其他文件类型|
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
-|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile 应用程序（仅适用于 Azure RMS）[[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 共享应用程序|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](footnote-3)<br /><br />Windows Mail [[4]](footnote-4)|适用于 Windows 的 RMS 共享应用程序：文本、图像、pfile<br /><br />Siemens JT2Go：JT 文件（仅适用于 Windows 10）|
+|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile 应用程序（仅适用于 Azure RMS）[[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 共享应用程序|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|适用于 Windows 的 RMS 共享应用程序：文本、图像、pfile<br /><br />Siemens JT2Go：JT 文件（仅适用于 Windows 10）|
 |**iOS**|iPad 和 iPhone 版 Office [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS 文档|Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)<br /><br />TITUS 文档|Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />iPad 和 iPhone 版 Outlook [[4]](#footnote-4)<br /><br />OWA for iOS [[3]](#footnote-3)<br /><br />TITUS Mail|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile<br /><br />TITUS 文档：Pfile|
 |**Android**|适用于 Android 的 GigaTrust 应用<br /><br />Office Online [[2]](#footnote-2)|适用于 Android 的 GigaTrust 应用<br /><br />Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />适用于 Android 的 GigaTrust 应用程序 [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook for Android [[4]](#footnote-4)<br /><br />OWA for Android [[3]](#footnote-3) 和 [[7]](#footnote-7)<br /><br />Samsung Email（S3 及更高版本）[[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile|
 |**OS X**|Office 2011（仅适用于 AD RMS）<br /><br />Office 2016 for Mac<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)|Outlook 2011（仅适用于 AD RMS）<br /><br />Outlook 2016 for Mac<br /><br />Outlook for Mac|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile|
@@ -80,6 +74,14 @@ ms.suite: ems
 有关详细信息，请参阅 Office 博客上的以下帖子：[OWA for Android 现可在特定设备上使用](http://blogs.office.com/2014/06/11/owa-for-android-now-available-on-select-devices/)
 
 ## 有关针对 Office 的 Azure RMS 支持的详细信息
+
+Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，在这些应用中，此功能通常称为信息权限管理 (IRM)。 以下 Office 客户端版本支持通过 Azure RMS 保护文件和电子邮件：
+
+- Office Professional Plus 2016
+
+- Office Professional Plus 2013
+
+- Office Professional Plus 2010
 
 所有版本的 Office（不包括 Office 2007）都支持使用受保护的内容。
 
@@ -145,6 +147,7 @@ Azure RMS 当前不支持以下应用程序：
 
 有关如何为 Azure RMS 配置最常用的应用程序的信息，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)。
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

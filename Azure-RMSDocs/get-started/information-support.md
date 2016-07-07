@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Azure Rights Management 的信息和支持 | Azure RMS
-description:
-keywords:
+title: "Azure Rights Management 的信息和支持 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/13/2016
+ms.date: 06/29/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6052afabe4894f8129e9eebc93705b219e6ed875
+ms.openlocfilehash: a8f5852d965abe2f2654aa236bfd9ea49a62aa84
+
 
 ---
 
@@ -42,7 +36,8 @@ ms.suite: ems
 ## 权限管理产品组博客
 Rights Management 产品组联合[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)，为你提供技术信息以及有关 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 和相关技术的其他新闻。 这些博客文章可为产品文档和技术支持信息提供补充。
 
-> [!TIP]如果你要为 Azure RMS 或 AD RMS 开发应用程序，你可能还会对 [Active Directory Rights Management 服务 (AD RMS) 开发人员活动角博客](http://blogs.msdn.com/b/rms/)感兴趣。
+> [!TIP]
+> 如果你要为 Azure RMS 或 AD RMS 开发应用程序，你可能还会对 [Active Directory Rights Management 服务 (AD RMS) 开发人员活动角博客](https://blogs.msdn.microsoft.com/rms/)感兴趣。
 
 ## 支持选项和社区资源
 以下部分提供有关支持选项和故障排除选项的信息及社区资源。
@@ -59,7 +54,7 @@ Rights Management 产品组联合[企业移动性和安全性博客](https://blo
 
 - **企业移动性套件随附的 Azure Rights Management**：如果你也有 Office 365，你可以使用 [Office 365 支持渠道](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。  有关详细信息，请参阅[企业移动性套件：支持常见问题](https://technet.microsoft.com/dn932057.aspx)。
 
-- **Azure Rights Management Premium**：[在 Azure 门户中创建支持请求](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)。 若要使用此选项，必须具有 Azure 订阅和 Azure 支持计划。 有关其他信息，请参阅[对客户的 Azure 支持](https://azure.microsoft.com/support/plans/)。 
+- **Azure Rights Management Premium**：[在 Azure 门户中创建支持请求](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)。 若要使用此选项，必须具有 Azure 订阅和 Azure 支持计划。 有关详细信息，请参阅[针对客户的 Azure 支持](https://azure.microsoft.com/support/plans/)。 
 
 有关其他支持选项，请询问你的 Microsoft 联系人。 
 
@@ -71,7 +66,15 @@ Rights Management 产品组联合[企业移动性和安全性博客](https://blo
 
 故障排除：
 
-- 下载并运行 [RMS 分析器工具](http://www.microsoft.com/en-us/download/details.aspx?id=46437)。 有关此工具的详细信息，请参阅下载页面上的“详细信息”和“安装说明”。 
+- 如果对某个组件的工作原理有疑问：请检查你的问题在[常见问题](faqs.md)页上是否已有解答。
+
+- 如果对 Azure RMS 的支持声明有疑问：请参阅定期更新的[要求](requirements-azure-rms.md)信息。
+
+- 有关如何为正在配置使用 Azure RMS 的服务和应用程序的最终用户、支持人员和管理员提供支持的信息：请参阅[帮助用户保护文件](../deploy-use/help-users.md)。
+
+- 如果为本地服务器部署了 RMS 连接器：请参阅[监视](../deploy-use/monitor-rms-connector.md)信息，其中包括有关事件日志条目、性能计数器和日志记录的详细信息。
+
+- 有关自动检查、自动修正和跟踪：请下载并运行 [RMS 分析器工具](http://www.microsoft.com/en-us/download/details.aspx?id=46437)。 有关此工具的详细信息，请参阅下载页面上的“详细信息”和“安装说明”。 
 
 ### 社区资源
 
@@ -83,6 +86,7 @@ Rights Management 产品组联合[企业移动性和安全性博客](https://blo
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

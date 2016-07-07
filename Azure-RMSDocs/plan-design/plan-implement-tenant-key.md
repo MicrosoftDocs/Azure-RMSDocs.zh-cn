@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 计划和实现你的 Azure Rights Management 租户密钥 | Azure RMS
-description:
-keywords:
+title: "计划和实现你的 Azure Rights Management 租户密钥 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f01d57759ab80b4946c07a627269550c80114131
+ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
+
 
 ---
 
@@ -81,9 +75,9 @@ ms.suite: ems
 
 
 > [!IMPORTANT]
-> 如果你已经开始使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]（服务已激活），但有些用户在运行 Office 2010，则在运行这些过程之前，[请与 Microsoft 支持部门联系](../get-started/information-support#to-contact-microsoft-support)。 根据你的方案和要求，你仍然可以使用 BYOK，但会受到一些限制，或者需要执行一些额外步骤。
+> 如果你已经开始使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]（服务已激活），但有些用户在运行 Office 2010，则在运行这些过程之前，[请与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)。 根据你的方案和要求，你仍然可以使用 BYOK，但会受到一些限制，或者需要执行一些额外步骤。
 > 
-> 如果你的组织制定了关于密钥处理的特定策略，也[请与 Microsoft 支持部门联系](../get-started/information-support#to-contact-microsoft-support)。
+> 如果你的组织制定了关于密钥处理的特定策略，也[请与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)。
 
 ### BYOK 的先决条件
 有关自带密钥 (BYOK) 的先决条件列表，请参阅以下表格。
@@ -114,7 +108,7 @@ ms.suite: ems
     > [!NOTE]
     > 你的租户密钥可在不受信任的计算机和网络之间安全传送，因为它进行了加密，并且通过访问控制级别权限得到保护，只能在你的 HSM 和 Microsoft 的用于 Azure RMS 的 HSM 内部使用。 你可以使用工具集中提供的脚本来验证安全措施，并且阅读 Thales 提供的此方面内容的详细信息： [RMS 云中的硬件密钥管理](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud)。
 
--   **亲自传送密钥：**这种方式要求你[与 Microsoft 支持部门联系](../get-started/information-support#to-contact-microsoft-support)来安排 Azure RMS 的密钥传送预约。 你必须亲自前往位于美国华盛顿州 Redmond 市的 Microsoft 办事处，将你的租户密钥传送到 Azure RMS 安全体系。
+-   **亲自传送密钥：**这种方式要求你[与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)来安排 Azure RMS 的密钥传送预约。 你必须亲自前往位于美国华盛顿州 Redmond 市的 Microsoft 办事处，将你的租户密钥传送到 Azure RMS 安全体系。
 
 有关操作方法说明，请选择你将通过 Internet 生成和传送租户密钥，还是亲自传送租户密钥： 
 
@@ -136,9 +130,9 @@ ms.suite: ems
 
 2.  请考虑启用使用日志记录，该功能可记录 RMS 执行的每一个事务。
 
-    如果你决定自行管理租户密钥，则日志记录包括租户密钥的使用信息。 请参见在 Excel 中显示的以下日志文件示例，其中的 **Decrypt** 和 **SignDigest** 请求类型显示该租户密钥正在使用中。
+    如果你决定自行管理租户密钥，则日志记录包括租户密钥的使用信息。 请参阅 Excel 格式日志文件中的以下代码段，其中的 **KMSPDecrypt** 和 **KMSPSignDigest** 请求类型显示该租户密钥正在使用中。
 
-    ![正在使用租户密钥的 Excel 格式日志文件](../media/RMS_Logging.gif)
+    ![正在使用租户密钥的 Excel 格式日志文件](../media/RMS_Logging.png)
 
     有关使用日志记录的详细信息，请参阅[记录和分析 Azure Rights Management 使用情况](../deploy-use/log-analyze-usage.md)。
 
@@ -148,6 +142,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

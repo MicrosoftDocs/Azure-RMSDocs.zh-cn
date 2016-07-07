@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 如何安装、配置 RMS 服务器并用其进行测试| Azure RMS
-description: 安装并配置 RMS 服务器以便测试启用权限的应用程序。
-keywords:
+title: "如何安装、配置 RMS 服务器并用其进行测试| Azure RMS"
+description: "安装并配置 RMS 服务器以便测试启用权限的应用程序。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d56c6636cb7a33f104bc3901355c3601266ad30c
+ms.openlocfilehash: b97743d9a5c90cb46b39b4d8a462aa1acd64dfe1
+
 
 ---
 
@@ -65,12 +61,13 @@ ms.suite: ems
 
     要使用 RMS 服务器进行测试，请配置服务器端发现或客户端发现，以使 Rights Management 服务客户端 2.1 可以发现预生产 RMS 服务器并与之建立通信。
 
-    > [!Note] 使用 Azure RMS 进行测试不需要发现配置。
+    > [!Note]
+    > 使用 Azure RMS 进行测试不需要发现配置。
 
   - 在服务器端发现中，管理员会向 Active Directory 注册 RMS 根群集的服务连接点 (SCP)，客户端会查询 Active Directory 以发现该 SCP 并与服务器建立连接。
   - 在客户端发现中，会在运行 RMS 客户端 2.1 的计算机上，在注册表中配置 RMS 服务发现设置。 这些设置使 RMS 客户端 2.1 指向 RMS 服务器。 当它们存在时，不会执行服务器端发现。
 
-  若要配置客户端发现，可以设置以下注册表项以指向 RMS 服务器。 有关如何配置服务端发现的信息，请参阅 [RMS 客户端 2.0 部署说明](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)。
+  若要配置客户端发现，可以设置以下注册表项以指向 RMS 服务器。 有关如何配置服务端发现的信息，请参阅 [RMS 客户端 2.0 部署说明](https://technet.microsoft.com/library/jj159267(WS.10).aspx)。
 
 1. **EnterpriseCertification**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
@@ -80,9 +77,11 @@ ms.suite: ems
 2. **EnterprisePublishing**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **Value**: (Default): [**http|https**]://RMSClusterName/**_wmcs/Licensing**
 
->[!NOTE] 默认情况下，这些项在注册表中不存在，必须创建。
+>[!NOTE] 
+> 默认情况下，这些项在注册表中不存在，必须创建。
 
->[!IMPORTANT] 如果在 64 位版本的 Windows 上运行 32 位应用程序，则必须在以下项位置设置这些项：<p>
+>[!IMPORTANT] 
+> 如果在 64 位版本的 Windows 上运行 32 位应用程序，则必须在以下项位置设置这些项：<p>
   ```    
   HKEY_LOCAL_MACHINE
     SOFTWARE
@@ -96,6 +95,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

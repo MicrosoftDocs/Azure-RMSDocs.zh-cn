@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 概述 | Azure RMS
-description: Rights Management Services (RMS) 是一种信息保护技术，可帮助保护数字信息免遭未经授权的使用。
-keywords:
+title: "概述 | Azure RMS"
+description: "Rights Management Services (RMS) 是一种信息保护技术，可帮助保护数字信息免遭未经授权的使用。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 37f3bc2308caaa8fd5e5c7fc8c56b6dc4d076b97
+
 
 ---
 
@@ -44,7 +39,7 @@ AD RMS 由 [服务器](ad-rms-server.md) 和 [客户端](ad-rms-client.md) 组�
 -   联机文档库的所有者希望基于用户身份启用查看、打印或编辑文档的权限。
 -   公司希望将敏感员工信息发布到将查看和编辑权限限制到特定用户的内部网站。
 
-有关 AD RMS 服务器、AD RMS 客户端及其功能的详细信息，请参阅 TechNet 内容以获取 [针对 AD RMS 的 IT 专业人员文档](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)。
+有关 AD RMS 服务器、AD RMS 客户端及其功能的详细信息，请参阅 TechNet 内容以获取[针对 AD RMS 的 IT 专业人员文档](https://TechNet.Microsoft.Com/library/cc771234.aspx)。
 
 本部分中的其余主题将介绍 RMS 体系结构及其实现。
 
@@ -66,6 +61,7 @@ AD RMS 由 [服务器](ad-rms-server.md) 和 [客户端](ad-rms-client.md) 组�
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

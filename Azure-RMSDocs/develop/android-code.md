@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Android 代码示例 | Azure RMS
-description: 本主题向你介绍 Android 版本的 RMS SDK 的重要代码元素。
-keywords:
+title: "Android 代码示例 | Azure RMS"
+description: "本主题向你介绍 Android 版本的 RMS SDK 的重要代码元素。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 5d8c7ab53f76005d7efbfd2d795da08e41f83941
+
 
 ---
 
@@ -110,7 +105,7 @@ ms.suite: ems
 
     **源**：*MsipcAuthenticationCallback.java*。
 
-    **说明**：在此步骤中，你会看到 ADAL 用于通过示例身份验证参数来实现 [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java)。 有关使用 ADAL 的详细信息，请参阅 [Azure AD 身份验证库 (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx)。
+    **说明**：在此步骤中，你会看到 ADAL 用于通过示例身份验证参数来实现 [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java)。 有关使用 ADAL 的详细信息，请参阅 [Azure AD 身份验证库 (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。
 
 
         class MsipcAuthenticationCallback implements AuthenticationRequestCallback
@@ -211,12 +206,7 @@ ms.suite: ems
 
 
 
-    CreationCallback<List<TemplateDescriptor>> getTemplatesCreationCallback = new CreationCallback<List<TemplateDescriptor>>()
-      {
-          @Override
-          public Context getContext()
-          {
-              …
+    CreationCallback<List<TemplateDescriptor>> getTemplatesCreationCallback = new CreationCallback<List<TemplateDescriptor>>() { @Override public Context getContext() { …
           }
 
           @Override
@@ -236,30 +226,18 @@ ms.suite: ems
           {
              …
           }
-      };
-      try
-      {
-              …
-          mIAsyncControl = TemplateDescriptor.getTemplates(emailId, mRmsAuthCallback, getTemplatesCreationCallback);
-      }
-      catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e)
-      {
-              …
+      }; try { …
+          mIAsyncControl = TemplateDescriptor.getTemplates(emailId, mRmsAuthCallback, getTemplatesCreationCallback); } catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e) { …
       }
 
 
 -    **步骤 2**：使用列表中的第一个模板创建 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy)。
 
-    **Source**: *MsipcTaskFragment.java*
+    **源**：*MsipcTaskFragment.java*
 
 
 
-      CreationCallback<UserPolicy> userPolicyCreationCallback = new CreationCallback<UserPolicy>()
-      {
-          @Override
-          public Context getContext()
-          {
-              …
+      CreationCallback<UserPolicy> userPolicyCreationCallback = new CreationCallback<UserPolicy>() { @Override public Context getContext() { …
           }
 
           @Override
@@ -279,34 +257,19 @@ ms.suite: ems
           {
               …
           }
-      };
-      try
-      {
-           …
-          mIAsyncControl = UserPolicy.create((TemplateDescriptor)selectedDescriptor, mEmailId, mRmsAuthCallback,
-                            UserPolicyCreationFlags.NONE, userPolicyCreationCallback);
-           …
-      }
-      catch (InvalidParameterException e)
-      {
-              …
+      }; try { …
+          mIAsyncControl = UserPolicy.create((TemplateDescriptor)selectedDescriptor, mEmailId, mRmsAuthCallback, UserPolicyCreationFlags.NONE, userPolicyCreationCallback); …
+      } catch (InvalidParameterException e) { …
       }
 
 
 -    **步骤 3**：创建 [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java) 并向其中写入内容。
 
-    **Source**: *MsipcTaskFragment.java*
+    **源**：*MsipcTaskFragment.java*
 
 
-    private void createPTxt(final byte[] contentToProtect)
-        {
-             …
-            CreationCallback<ProtectedFileOutputStream> protectedFileOutputStreamCreationCallback = new CreationCallback<ProtectedFileOutputStream>()
-            {
-                @Override
-                public Context getContext()
-                {
-                 …
+    private void createPTxt(final byte[] contentToProtect) { …
+            CreationCallback<ProtectedFileOutputStream> protectedFileOutputStreamCreationCallback = new CreationCallback<ProtectedFileOutputStream>() { @Override public Context getContext() { …
                 }
 
                 @Override
@@ -364,12 +327,7 @@ ms.suite: ems
     **源**：*MsipcTaskFragment.java*
 
 
-    CreationCallback<UserPolicy> userPolicyCreationCallbackFromSerializedContentPolicy = new CreationCallback<UserPolicy>()
-            {
-                @Override
-                public void onSuccess(UserPolicy userPolicy)
-                {
-                  …
+    CreationCallback<UserPolicy> userPolicyCreationCallbackFromSerializedContentPolicy = new CreationCallback<UserPolicy>() { @Override public void onSuccess(UserPolicy userPolicy) { …
                 }
 
                 @Override
@@ -392,45 +350,27 @@ ms.suite: ems
             };
 
 
-    try
-    {
-      ...
+    try {   ...
 
       // Read the serializedContentPolicyLength from the inputStream.
       long serializedContentPolicyLength = readUnsignedInt(inputStream);
 
       // Read the PL bytes from the input stream using the PL size.
-      byte[] serializedContentPolicy = new byte[(int)serializedContentPolicyLength];
-      inputStream.read(serializedContentPolicy);
+      byte[] serializedContentPolicy = new byte[(int)serializedContentPolicyLength]; inputStream.read(serializedContentPolicy);
 
       ...
 
-      UserPolicy.acquire(serializedContentPolicy, null, mRmsAuthCallback, PolicyAcquisitionFlags.NONE,
-              userPolicyCreationCallbackFromSerializedContentPolicy);
-    }
-    catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e)
-    {
-      ...
-    }
-    catch (IOException e)
-    {
-      ...
-    }
+      UserPolicy.acquire(serializedContentPolicy, null, mRmsAuthCallback, PolicyAcquisitionFlags.NONE,           userPolicyCreationCallbackFromSerializedContentPolicy); } catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e) {   ... } catch (IOException e) {   ... }
 
 
 
 -    **步骤 2**：使用来自 **步骤 1** 的 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) 创建 [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java)。
 
-    **Source**: *MsipcTaskFragment.java*
+    **源**：*MsipcTaskFragment.java*
 
 
 
-      CreationCallback<CustomProtectedInputStream> customProtectedInputStreamCreationCallback = new CreationCallback<CustomProtectedInputStream>()
-      {
-         @Override
-         public Context getContext()
-         {
-             …
+      CreationCallback<CustomProtectedInputStream> customProtectedInputStreamCreationCallback = new CreationCallback<CustomProtectedInputStream>() { @Override public Context getContext() { …
          }
 
          @Override
@@ -468,62 +408,31 @@ ms.suite: ems
          }
      };
 
-    try
-    {
-      ...
+    try {  ...
 
       // Retrieve the encrypted content size.
       long encryptedContentLength = readUnsignedInt(inputStream);
 
       updateTaskStatus(new TaskStatus(TaskState.Starting, "Consuming content", true));
 
-      CustomProtectedInputStream.create(userPolicy, inputStream,
-                                     encryptedContentLength,
-                                     customProtectedInputStreamCreationCallback);
-    }
-    catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e)
-    {
-      ...
-    }
-    catch (IOException e)
-    {
-      ...
-    }
+      CustomProtectedInputStream.create(userPolicy, inputStream,                                 encryptedContentLength,                                 customProtectedInputStreamCreationCallback); } catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e) {  ... } catch (IOException e) {  ... }
 
 
 -    **步骤 3**：将内容从 [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java) 读取到 *mDecryptedContent* 中，然后关闭。
 
-    **Source**: *MsipcTaskFragment.java*
+    **源**：*MsipcTaskFragment.java*
 
 
-    @Override
-    public void onSuccess(CustomProtectedInputStream customProtectedInputStream)
-    {
-      mUserPolicy = customProtectedInputStream.getUserPolicy();
-      ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+    @Override public void onSuccess(CustomProtectedInputStream customProtectedInputStream) {  mUserPolicy = customProtectedInputStream.getUserPolicy();  ByteArrayOutputStream buffer = new ByteArrayOutputStream();
 
       int nRead;                      
       byte[] dataChunk = new byte[16384];
 
-      try
-      {
-        while ((nRead = customProtectedInputStream.read(dataChunk, 0,
-                                                            dataChunk.length)) != -1)
-        {
-           buffer.write(dataChunk, 0, nRead);
-        }
+      try  {    while ((nRead = customProtectedInputStream.read(dataChunk, 0,                                                        dataChunk.length)) != -1)    {       buffer.write(dataChunk, 0, nRead);    }
 
-        buffer.flush();
-        mDecryptedContent = new String(buffer.toByteArray(), Charset.forName("UTF-8"));
+        buffer.flush();    mDecryptedContent = new String(buffer.toByteArray(), Charset.forName("UTF-8"));
 
-        buffer.close();
-        customProtectedInputStream.close();
-      }
-      catch (IOException e)
-      {
-        ...
-      }
-    }
+        buffer.close();    customProtectedInputStream.close();  }  catch (IOException e)  {    ...  } }
 
 
 ### 方案：使用自定义（临时）策略创建自定义受保护的文件
@@ -536,29 +445,18 @@ ms.suite: ems
 
 
 
-      // create userRights list
-      UserRights userRights = new UserRights(Arrays.asList("consumer@domain.com"),
-        Arrays.asList( CommonRights.View, EditableDocumentRights.Print));
-      ArrayList<UserRights> usersRigthsList = new ArrayList<UserRights>();
-      usersRigthsList.add(userRights);
+      // create userRights list   UserRights userRights = new UserRights(Arrays.asList("consumer@domain.com"),     Arrays.asList( CommonRights.View, EditableDocumentRights.Print));   ArrayList<UserRights> usersRigthsList = new ArrayList<UserRights>();   usersRigthsList.add(userRights);
 
-      // Create PolicyDescriptor using userRights list
-      PolicyDescriptor policyDescriptor = PolicyDescriptor.createPolicyDescriptorFromUserRights(
-                                                             usersRigthsList);
-      policyDescriptor.setOfflineCacheLifetimeInDays(10);
-      policyDescriptor.setContentValidUntil(new Date());
+      // Create PolicyDescriptor using userRights list   PolicyDescriptor policyDescriptor = PolicyDescriptor.createPolicyDescriptorFromUserRights(                                                          usersRigthsList);   policyDescriptor.setOfflineCacheLifetimeInDays(10);   policyDescriptor.setContentValidUntil(new Date());
 
 
 
 -    **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy)。
 
-    **Source**: *MsipcTaskFragment.java*
+    **源**：*MsipcTaskFragment.java*
 
 
-       mIAsyncControl = UserPolicy.create((PolicyDescriptor)selectedDescriptor,
-                                              mEmailId, mRmsAuthCallback,
-                                              UserPolicyCreationFlags.NONE,
-                                              userPolicyCreationCallback);
+       mIAsyncControl = UserPolicy.create((PolicyDescriptor)selectedDescriptor,                                          mEmailId, mRmsAuthCallback,                                          UserPolicyCreationFlags.NONE,                                          userPolicyCreationCallback);
 
 
 
@@ -567,14 +465,7 @@ ms.suite: ems
     **源**：*MsipcTaskFragment.java*
 
 
-    File file = new File(filePath);
-        final OutputStream outputStream = new FileOutputStream(file);
-        CreationCallback<CustomProtectedOutputStream> customProtectedOutputStreamCreationCallback = new CreationCallback<CustomProtectedOutputStream>()
-        {
-            @Override
-            public Context getContext()
-            {
-              …
+    File file = new File(filePath); final OutputStream outputStream = new FileOutputStream(file); CreationCallback<CustomProtectedOutputStream> customProtectedOutputStreamCreationCallback = new CreationCallback<CustomProtectedOutputStream>() { @Override public Context getContext() { …
             }
 
             @Override
@@ -637,6 +528,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

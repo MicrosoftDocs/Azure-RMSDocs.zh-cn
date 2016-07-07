@@ -1,35 +1,27 @@
 ---
-# required metadata
-
-title: 从 AD RMS 迁移到 Azure Rights Management - 阶段 2 | Azure RMS
-description:
-keywords:
+title: "从 AD RMS 迁移到 Azure Rights Management - 阶段 2 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/23/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: a9dc45fb5146b0a4d2f013bff9d090723ce95ee5
+ms.openlocfilehash: 1016ecdd77e818840f2a2cfab8212e908291bb89
+
 
 ---
 # 迁移阶段 2 - 客户端配置
 
 *适用于：Active Directory Rights Management Services、Azure Rights Management*
 
-使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 2。 这些过程涉及[从 AD RMS 迁移到 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 中的步骤 5.
+使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 2。 这些过程涉及[从 AD RMS 迁移到 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 中的步骤 5。
 
 
 ## 步骤 5. 将客户端重新配置为使用 Azure RMS
@@ -45,11 +37,42 @@ ms.suite: ems
 
 2.  按照重定向脚本 (Redirect_OnPrem.cmd) 中的说明修改脚本，使其指向新的 Azure RMS 租户。
 
-3.  在 Windows 计算机上，使用提升的特权，在用户的上下文中运行这些脚本。
+    > [!IMPORTANT]
+    > 说明包括将示例地址 **adrms** 和 **adrms.contoso.com** 替换为你自己的 AD RMS 服务器地址。 执行此操作时，请注意地址前后不要有多余空格，否则将中断迁移脚本，并且很难将其认定为问题的根本原因。 某些编辑工具会在粘贴文本后自动添加一个空格。
 
-对于移动设备客户端和 Mac 计算机：
+3. 如果用户有 Office 2016：脚本尚未更新为包含 Office 2016 的配置，因此如果用户具有此版 Office，你需要手动更新脚本：
 
--   删除在部署 [AD RMS 移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)时创建的 DNS SRV 记录.
+    - 对于 **CleanUpRMS.cmd** — 搜索行 `reg delete HKCU\Software\Microsoft\Office\15.0\Common\DRM /f`，并直接在它下面添加以下行：
+
+            reg delete HKCU\Software\Microsoft\Office\16.0\Common\DRM /f
+
+    - 对于 **Redirect_Onprem.cmd** — 搜索行 `reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM" /t REG_SZ /v "DefaultServer" /d "%CloudRMS%" /F1`，并直接在它下面添加以下两行：
+
+            reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM" /t REG_SZ /v "DefaultServerUrl" /d "https://%CloudRMS%/_wmcs/licensing" /F 
+
+            reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM" /t REG_SZ /v "DefaultServer" /d "%CloudRMS%" /F
+
+    可选：脚本在注释中不引用 Office 2016。 如果你想更新注释以反映 Office 2016 的这些新增内容，请对 **Redirect_Onprem.cmd** 进行以下更改：
+
+    - 搜索 `::     or MSIPC (Office 2013) with on-premises AD RMS`，并将其替换为以下行：
+    
+            ::     or MSIPC (Office 2013 and 2016) with on-premises AD RMS
+
+    - 搜索 `echo Redirect SCP for Office 2013`，并将其替换为以下行：
+    
+            echo Redirect SCP for Office versions based on MSIPC
+
+    - 搜索 `echo Redirect MSIPC for Office 2013` 并替换为以下行：
+    
+            echo Redirect MSIPC for Office versions based on MSIPC
+
+4.  在 Windows 计算机上：
+
+    - 使用提升的特权，在用户的上下文中运行这些脚本。
+
+    对于移动设备客户端和 Mac 计算机：
+
+    -  删除在部署 [AD RMS 移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)时创建的 DNS SRV 记录。
 
 #### 由迁移脚本进行的更改
 本节介绍迁移脚本进行的更改。 你只能将此信息出于参考目的，或用于故障排除，或者用于你想要自己进行这些更改的场合。
@@ -74,7 +97,7 @@ CleanUpRMS_RUN_Elevated.cmd：
 
     -   HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation
 
--   删除以下注册表值：
+-   添加以下注册表值：
 
     -   HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM\DefaultServerURL
 
@@ -94,10 +117,10 @@ Redirect_OnPrem.cmd：
 
     -   HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\LicensingRedirection
 
-    每一项均具有 REG_SZ 值 **https://OldRMSserverURL/_wmcs/licensing**，其数据采用以下格式：**https://&lt;YourTenantURL&gt;/_wmcs/licensing**.
+    每一项均具有 REG_SZ 值 **https://OldRMSserverURL/_wmcs/licensing**，其数据采用以下格式：**https://&lt;YourTenantURL&gt;/_wmcs/licensing**。
 
     > [!NOTE]
-    > *&lt;YourTenantURL&gt;* 采用以下格式：**{GUID}.rms.[Region].aadrm.com**.
+    > *&lt;YourTenantURL&gt;* 采用以下格式：**{GUID}.rms.[Region].aadrm.com**。
     > 
     > 例如：5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com
     > 
@@ -105,8 +128,9 @@ Redirect_OnPrem.cmd：
 
 
 ## 后续步骤
-要继续迁移，请转到[阶段 3 - 支持复制配置](migrate-from-ad-rms-phase3.md).
+要继续迁移，请转到[阶段 3 - 支持复制配置](migrate-from-ad-rms-phase3.md)。
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
