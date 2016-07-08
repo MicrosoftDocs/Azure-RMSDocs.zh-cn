@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "823bdc463ff5c512d479f098f1fb3a7c192f4ed8",
+  "LastProcessedCommit": "9099dcd4908c43e10d1f0f050b813c9b22842785",
   "LastTranslatedCommit": "33fec215ea735b26b1ea5586f8dc9dbc84eea515",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -79244,10 +79244,10 @@
         "Azure-RMSDocs\\develop\\release-notes.md"
       ],
       "HasMetadata": true,
-      "TranslationType": 0,
+      "TranslationType": 1,
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.zh-cn.xlf",
-      "HandoffFileCommit": "13ae5ef6b86bc6f0bb3e894b8ddc4da882765357",
-      "HandoffDateTime": "2016-06-23T21:01:04.8013868Z",
+      "HandoffFileCommit": "3a18bdf6e9befd35b6a51409bd5a7bcb7d403070",
+      "HandoffDateTime": "2016-07-08T17:35:38.9512268Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
@@ -79259,9 +79259,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "2016-07-08T11:23:46.7276502Z",
-      "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\archive\\release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.zh-cn.xlf",
-      "ArchiveFileCommit": "3584c626530247837598c11dff6398ad85e5d29b",
-      "ArchiveFileDateTime": "2016-07-01T23:58:12.6425577Z",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.zh-cn.xlf",
       "BilingualFileCommit": "cb27b4e3cbcacc9ac937121ccf90e3fad624d9e8",
@@ -81381,7 +81381,9 @@
       "SourceFilePath": "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
       ],
@@ -81532,6 +81534,41 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.zh-cn.xlf",
       "HandoffFileCommit": "fdc0035978a97db9cc47ae5a581aa4eefdbbb82a",
       "HandoffDateTime": "2016-07-06T23:36:33.7319643Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null,
+      "BilingualFilePath": null,
+      "BilingualFileCommit": null,
+      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualException": null
+    },
+    "32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f": {
+      "FileHash": "32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f",
+      "SourceFileCommit": "f8e23e8bcbfb25092cb31f7af76d17239f3063a7",
+      "SourceFilePath": "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.zh-cn.xlf",
+      "HandoffFileCommit": "3a18bdf6e9befd35b6a51409bd5a7bcb7d403070",
+      "HandoffDateTime": "2016-07-08T17:35:38.9512268Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
