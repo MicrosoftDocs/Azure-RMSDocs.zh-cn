@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: a9dc45fb5146b0a4d2f013bff9d090723ce95ee5
 ms.openlocfilehash: 1016ecdd77e818840f2a2cfab8212e908291bb89
 
@@ -131,6 +132,6 @@ Redirect_OnPrem.cmd：
 要继续迁移，请转到[阶段 3 - 支持复制配置](migrate-from-ad-rms-phase3.md)。
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

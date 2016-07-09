@@ -13,6 +13,7 @@ ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
 ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
 
@@ -232,6 +233,6 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

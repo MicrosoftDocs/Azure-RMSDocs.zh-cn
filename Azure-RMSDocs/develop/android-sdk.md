@@ -13,6 +13,7 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
 ms.openlocfilehash: 30fad88ff664e2df935c8f2cfd28f8b1fe251f67
 
@@ -149,6 +150,6 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

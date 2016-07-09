@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
 ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
 
@@ -26,7 +27,8 @@ Rights Management 团队定期更新 Rights Management 共享应用程序，以�
 
 不会列出 2015 年 1 月 1 日之前的版本。
 
-> [!NOTE] 如果你对 RMS 共享应用程序有任何反馈或疑问，请发送电子邮件到 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)。
+> [!NOTE]
+> 如果你有关于 RMS 共享应用程序的反馈或问题，请发送电子邮件到 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)。
 
 ## 版本 1.0.2191.0
 **发布日期**：2016/06/16
@@ -120,6 +122,6 @@ Rights Management 团队定期更新 Rights Management 共享应用程序，以�
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

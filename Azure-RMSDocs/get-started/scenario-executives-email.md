@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
 ms.openlocfilehash: def8b7e98fd55a3d028978ffc9f8e41e38a5622c
 
@@ -132,6 +133,6 @@ ms.openlocfilehash: def8b7e98fd55a3d028978ffc9f8e41e38a5622c
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

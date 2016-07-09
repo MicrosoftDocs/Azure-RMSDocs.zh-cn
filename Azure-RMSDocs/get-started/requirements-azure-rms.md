@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 50ebcd71336baeb68687e2d0c1ff1f0608925761
 ms.openlocfilehash: 72a75712da9efa201865440affa80461dcd7df53
 
@@ -43,7 +44,8 @@ ms.openlocfilehash: 72a75712da9efa201865440affa80461dcd7df53
 
 有关此方案的其他 Azure RMS 要求的信息，请参阅[支持 Azure RMS 的本地服务器](requirements-servers.md)。
 
-> [!IMPORTANT] 不支持以下部署方案：
+> [!IMPORTANT]
+> 不支持以下部署方案：
 > 
 > -   在同一个组织中并行运行 AD RMS 和 Azure RMS，除非是在迁移过程中，如[从 AD RMS 迁移到 Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md) 所述。
 > 
@@ -54,6 +56,6 @@ ms.openlocfilehash: 72a75712da9efa201865440affa80461dcd7df53
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

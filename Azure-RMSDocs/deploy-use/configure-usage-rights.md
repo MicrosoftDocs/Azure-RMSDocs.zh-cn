@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
 ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
 
@@ -276,7 +277,8 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
  
 - 如果她应用了**不得转发**选项，则收件人将无法通过将电子邮件移动到其他位置来与营销部门中的其他任何人共享信息。 在这种情况下，将只有原始收件人（和电子邮件所有者）能够查看该电子邮件中的信息。
 
-> [!NOTE] 当要求只有发件人选择的收件人才能看到电子邮件中的信息时，请使用**不得转发**。 使用模板，使电子邮件将权限限制于管理员提前指定的、与发件人所选收件人相互独立的一组人员。
+> [!NOTE] 
+> 当要求只有发件人选择的收件人才能看到电子邮件中的信息时，请使用**不得转发**。 使用模板，使电子邮件将权限限制于管理员提前指定的、与发件人所选收件人相互独立的一组人员。
 
 
 
@@ -287,6 +289,6 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

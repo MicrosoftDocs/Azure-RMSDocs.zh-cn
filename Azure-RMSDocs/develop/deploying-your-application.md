@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 部署应用程序 | Azure RMS
-description: 本主题概述并引导你完成启用权限的应用程序的部署选项
-keywords:
+title: "部署应用程序 | Azure RMS"
+description: "本主题概述并引导你完成启用权限的应用程序的部署选项"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,19 +10,17 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 982021a2e972023b04e6483348a7c27aa029e198
+ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
+
 
 ---
 
-# 部署到预生产
+# 部署到生产
 
 
 本主题概述并引导你完成启用权限的应用程序的部署选项。
@@ -84,7 +80,8 @@ RMS 客户端 2.1 是为客户端计算机而设计的软件，可帮助保护�
 RMS 客户端 2.1 不是 Windows 操作系统组件。 RMS 客户端 2.1 作为可选下载提供，在确认和接受其许可协议的情况下，可以通过第三方软件自由地分发它，从而支持客户端访问在你的环境中使用和部署 RMS 服务器时，权限受保护的内容。
 
 
-> [!IMPORTANT] AD RMS Client 2.1 特定于体系结构，必须与目标操作系统的体系结构匹配。
+> [!IMPORTANT]
+> AD RMS Client 2.1 特定于体系结构，必须与目标操作系统的体系结构匹配。
 
 
 ## RMS 客户端 2.1 的安装选项
@@ -137,6 +134,7 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 RMS 客户端 2.1 作为�
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 
