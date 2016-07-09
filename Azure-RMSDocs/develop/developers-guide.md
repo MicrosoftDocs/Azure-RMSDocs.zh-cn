@@ -13,6 +13,7 @@ ms.assetid: a22e6bd0-8ce8-45b4-9a32-273126ab831e
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
 ms.openlocfilehash: c9d5ec961989283c5201a81f862b2da45ed64340
 
@@ -73,6 +74,6 @@ ms.openlocfilehash: c9d5ec961989283c5201a81f862b2da45ed64340
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
