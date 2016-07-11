@@ -164,6 +164,9 @@
   "24322775b689ad0508979853fd06b2d33fc33cc1": [
     "Azure-RMSDocs\\develop\\ad-rms-client.md"
   ],
+  "53571aff357bbc0cdcb44ce9b403c68719abbaff": [
+    "Azure-RMSDocs\\develop\\ad-rms-overview.md"
+  ],
   "37f3bc2308caaa8fd5e5c7fc8c56b6dc4d076b97": [
     "Azure-RMSDocs\\develop\\ad-rms-overview.md"
   ],
@@ -182,6 +185,9 @@
   "a27d1921336a795df5a3c91b36b97846e74cca34": [
     "Azure-RMSDocs\\develop\\application-types.md"
   ],
+  "fbe12e339d3fb8fc62aabc34aaa9f5f043e95de9": [
+    "Azure-RMSDocs\\develop\\authentication-integration.md"
+  ],
   "34a82f31b5da46a59627ff559deb46c8445fcdf2": [
     "Azure-RMSDocs\\develop\\authentication-integration.md"
   ],
@@ -199,6 +205,9 @@
   ],
   "c00ce9829ce4150cfef74ecd972450b3d787f312": [
     "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
+  ],
+  "40eb6628f5204d422bf304f44d64cdf0dcd8537d": [
+    "Azure-RMSDocs\\develop\\deploying-your-application.md"
   ],
   "8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75": [
     "Azure-RMSDocs\\develop\\deploying-your-application.md"
@@ -265,6 +274,9 @@
   ],
   "bbe381054648a6b68818f3964f6cfefd5da0829c": [
     "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
+  ],
+  "d55a16d7ff6f11db3c02d3494dcdd088bffc8500": [
+    "Azure-RMSDocs\\develop\\overview.md"
   ],
   "417888c5445d702b1f700a8e717fbb746593efc6": [
     "Azure-RMSDocs\\develop\\overview.md"
