@@ -653,6 +653,9 @@
   "da1ae88d3ffcbb55421ed2342bbebe588281f1ad": [
     "Azure-RMSDocs\\information-protection\\faq.md"
   ],
+  "01b4dcd4900b215b8898e8cf3d04cfc53d299222": [
+    "Azure-RMSDocs\\information-protection\\infoprotect-quick-start-tutorial.md"
+  ],
   "6300bcc4ad2ec6d910e8266323a032ec5984ad42": [
     "Azure-RMSDocs\\information-protection\\infoprotect-quick-start-tutorial.md"
   ],
@@ -670,6 +673,9 @@
   ],
   "3e1343d5ef022566a6b9adb62ddfb3a8957781c5": [
     "Azure-RMSDocs\\information-protection\\TOC.md"
+  ],
+  "dedef2de3f0e99bee4479dd1e74dd20b1a6b2131": [
+    "Azure-RMSDocs\\information-protection\\what-is-information-protection.md"
   ],
   "7aec185707922c5185777e72a9abc6a6d73b4e1a": [
     "Azure-RMSDocs\\information-protection\\what-is-information-protection.md"
