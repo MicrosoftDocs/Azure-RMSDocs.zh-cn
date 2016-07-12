@@ -71,6 +71,9 @@
   "a8c9a55977a285cd30872beeb160b07ce02edcce": [
     "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
   ],
+  "62e8a80b0f8a508458d70af48ce4f7d98a122a89": [
+    "Azure-RMSDocs\\rms-client\\TOC.md"
+  ],
   "a59e742697f4cbee72e4d5e537a4483647dd2e18": [
     "Azure-RMSDocs\\rms-client\\TOC.md"
   ],
@@ -119,14 +122,26 @@
   "500701acb03aa9f049cc995f14e544e07556bc4f": [
     "Azure-RMSDocs\\rms-client\\privacy-statement-rms-enlightened-applications.md"
   ],
+  "45c94f5429f24a653c7890485b45c85994d5e318": [
+    "Azure-RMSDocs\\deploy-use\\TOC.md"
+  ],
   "6bf11174aad9b6e54becf682e0b684c407c03439": [
     "Azure-RMSDocs\\deploy-use\\TOC.md"
+  ],
+  "7f5c6009327ffc8cdd31cd4342f9b282e0ac871a": [
+    "Azure-RMSDocs\\get-started\\TOC.md"
   ],
   "3db3f2fb6b3095ea4e65eb4689df2458edf3e2ea": [
     "Azure-RMSDocs\\get-started\\TOC.md"
   ],
+  "cb8c894e97d37d39e04f1e6ba219a65f3ac7b4c5": [
+    "Azure-RMSDocs\\plan-design\\TOC.md"
+  ],
   "03cdd123ea0a4911723d11989d87a54e1aebd8b4": [
     "Azure-RMSDocs\\plan-design\\TOC.md"
+  ],
+  "4a88fa11e94c0c28ded8bae90dbb5da65848eb26": [
+    "Azure-RMSDocs\\understand-explore\\TOC.md"
   ],
   "63a685b29629c7ee120c0c925956e18b52abd1bf": [
     "Azure-RMSDocs\\understand-explore\\TOC.md"
@@ -311,6 +326,9 @@
   "c56c4248ac8754c48b6f411a58c6ba93559aed7f": [
     "Azure-RMSDocs\\plan-design\\thales-hsm.md"
   ],
+  "f143719fb09bd8c40631b2fb0559cc8f6462a6fd": [
+    "Azure-RMSDocs\\develop\\TOC.md"
+  ],
   "bf36217b4e3e59a6590e0f8cb21cfa9c28ec628d": [
     "Azure-RMSDocs\\develop\\TOC.md"
   ],
@@ -331,6 +349,9 @@
   ],
   "63635d13f95219bd900d8ecdd0ca0738c5ebca4a": [
     "Azure-RMSDocs\\understand-explore\\understand-explore.md"
+  ],
+  "453e0d388a24fa72fc7d1f8c463aa7dcd6b84a2e": [
+    "Azure-RMSDocs\\index.md"
   ],
   "6ba6e7b208c0b53a5cc6f38811f6845234bf7983": [
     "Azure-RMSDocs\\index.md"
@@ -628,5 +649,29 @@
   ],
   "cb82f0333ed17ee2994608baa3bbb50d42f19073": [
     "Azure-RMSDocs\\develop\\how-to-use-adal-authentication-4-2.md"
+  ],
+  "da1ae88d3ffcbb55421ed2342bbebe588281f1ad": [
+    "Azure-RMSDocs\\information-protection\\faq.md"
+  ],
+  "6300bcc4ad2ec6d910e8266323a032ec5984ad42": [
+    "Azure-RMSDocs\\information-protection\\infoprotect-quick-start-tutorial.md"
+  ],
+  "633b24d0c23cbbee88a2647aaa9defe376ccb40e": [
+    "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step1.md"
+  ],
+  "49e67f3f98ff31f8384cafe6d5bbf171da9e72c7": [
+    "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step2.md"
+  ],
+  "41ebf56c55d94e9aecf9538d474c8fa2c77ae83e": [
+    "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step3.md"
+  ],
+  "7883dd212086789a7351b736bd17f43f365ff719": [
+    "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step4.md"
+  ],
+  "3e1343d5ef022566a6b9adb62ddfb3a8957781c5": [
+    "Azure-RMSDocs\\information-protection\\TOC.md"
+  ],
+  "7aec185707922c5185777e72a9abc6a6d73b4e1a": [
+    "Azure-RMSDocs\\information-protection\\what-is-information-protection.md"
   ]
 }
