@@ -650,6 +650,9 @@
   "cb82f0333ed17ee2994608baa3bbb50d42f19073": [
     "Azure-RMSDocs\\develop\\how-to-use-adal-authentication-4-2.md"
   ],
+  "b20ccbd394c88af047b7439a94c54936bc4ab063": [
+    "Azure-RMSDocs\\information-protection\\faq.md"
+  ],
   "da1ae88d3ffcbb55421ed2342bbebe588281f1ad": [
     "Azure-RMSDocs\\information-protection\\faq.md"
   ],
@@ -673,6 +676,9 @@
   ],
   "3e1343d5ef022566a6b9adb62ddfb3a8957781c5": [
     "Azure-RMSDocs\\information-protection\\TOC.md"
+  ],
+  "7f0ea76b3073721ecba1a3357911a1b8b244a7c8": [
+    "Azure-RMSDocs\\information-protection\\what-is-information-protection.md"
   ],
   "dedef2de3f0e99bee4479dd1e74dd20b1a6b2131": [
     "Azure-RMSDocs\\information-protection\\what-is-information-protection.md"

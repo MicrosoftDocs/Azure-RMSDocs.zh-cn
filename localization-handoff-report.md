@@ -6,15 +6,15 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\information-protection\infoprotect-quick-start-tutorial.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33ae4e5f700e2a4722c1a24a5205f5c990e26ab8/Azure-RMSDocs/information-protection/infoprotect-quick-start-tutorial.md) | HandedOffSuccess | [Details](#01b4dcd4900b215b8898e8cf3d04cfc53d299222155)
- [Azure-RMSDocs\information-protection\what-is-information-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33ae4e5f700e2a4722c1a24a5205f5c990e26ab8/Azure-RMSDocs/information-protection/what-is-information-protection.md) | HandedOffSuccess | [Details](#dedef2de3f0e99bee4479dd1e74dd20b1a6b2131161)
+ [Azure-RMSDocs\information-protection\faq.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6af8fbffb99414fa36a3ca18cdcbb5734a40e6f9/Azure-RMSDocs/information-protection/faq.md) | HandedOffSuccess | [Details](#b20ccbd394c88af047b7439a94c54936bc4ab063154)
+ [Azure-RMSDocs\information-protection\what-is-information-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6af8fbffb99414fa36a3ca18cdcbb5734a40e6f9/Azure-RMSDocs/information-protection/what-is-information-protection.md) | HandedOffSuccess | [Details](#7f0ea76b3073721ecba1a3357911a1b8b244a7c8161)
 
 ## Item Details
-##### <a name='01b4dcd4900b215b8898e8cf3d04cfc53d299222155'></a> Source: [Azure-RMSDocs\information-protection\infoprotect-quick-start-tutorial.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33ae4e5f700e2a4722c1a24a5205f5c990e26ab8/Azure-RMSDocs/information-protection/infoprotect-quick-start-tutorial.md)
+##### <a name='b20ccbd394c88af047b7439a94c54936bc4ab063154'></a> Source: [Azure-RMSDocs\information-protection\faq.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6af8fbffb99414fa36a3ca18cdcbb5734a40e6f9/Azure-RMSDocs/information-protection/faq.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [infoprotect-quick-start-tutorial.2b82e7233bd20712415e16d00ec21857eb05a5ed.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/2e12e2e23c32bbe7016b07c965baf06661c29476/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/infoprotect-quick-start-tutorial.2b82e7233bd20712415e16d00ec21857eb05a5ed.zh-cn.xlf)
-* Handoff Datetime: 2016-07-12 03:29:09
+* Handoff File: [faq.b147013c6b8c2df0f18408c2316c67980bca10e5.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/045d92bdc9f544c9780a5a6aa860cdb20e5af15e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/faq.b147013c6b8c2df0f18408c2316c67980bca10e5.zh-cn.xlf)
+* Handoff Datetime: 2016-07-12 15:26:17
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -22,11 +22,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='dedef2de3f0e99bee4479dd1e74dd20b1a6b2131161'></a> Source: [Azure-RMSDocs\information-protection\what-is-information-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/33ae4e5f700e2a4722c1a24a5205f5c990e26ab8/Azure-RMSDocs/information-protection/what-is-information-protection.md)
+##### <a name='7f0ea76b3073721ecba1a3357911a1b8b244a7c8161'></a> Source: [Azure-RMSDocs\information-protection\what-is-information-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6af8fbffb99414fa36a3ca18cdcbb5734a40e6f9/Azure-RMSDocs/information-protection/what-is-information-protection.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/2e12e2e23c32bbe7016b07c965baf06661c29476/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.zh-cn.xlf)
-* Handoff Datetime: 2016-07-12 03:29:09
+* Handoff File: [what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/045d92bdc9f544c9780a5a6aa860cdb20e5af15e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.zh-cn.xlf)
+* Handoff Datetime: 2016-07-12 15:26:17
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
