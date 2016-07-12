@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "d33441dab1b9b441fa27303465dafd6f9460a532",
+  "LastProcessedCommit": "a278657a3cc8b75a8ec3347aa6084506f94e1e6f",
   "LastTranslatedCommit": "6bdace8f233e24f23fe8818452648037c646e5fc",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -82377,6 +82377,41 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.zh-cn.xlf",
       "HandoffFileCommit": "045d92bdc9f544c9780a5a6aa860cdb20e5af15e",
       "HandoffDateTime": "2016-07-12T15:26:17.8651482Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null,
+      "BilingualFilePath": null,
+      "BilingualFileCommit": null,
+      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualException": null
+    },
+    "97d49fc476f2a7a0d9303fd27441d5fe7338fb49": {
+      "FileHash": "97d49fc476f2a7a0d9303fd27441d5fe7338fb49",
+      "SourceFileCommit": "e2a0ac3fb5653d5260bbd2b3bf572386596b94e0",
+      "SourceFilePath": "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step4.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step4.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\master\\infoprotect-tutorial-step4.e05b067bb63bbb103b67887740ea0bb6b9044c40.zh-cn.xlf",
+      "HandoffFileCommit": "a9532a62173bf89fec4bf1681e07e6c6f1f867a8",
+      "HandoffDateTime": "2016-07-12T17:24:11.1796876Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
