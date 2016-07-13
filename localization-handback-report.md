@@ -1,11 +1,46 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\plan-design\generate-tenant-key-in-person.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/67129d6cdac124947fc07aa4d42523686227752e/Azure-RMSDocs/plan-design/generate-tenant-key-in-person.md) | OutofSyncHandedBackSuccess | [Details](#8e77298121a84f6feb16a992da81bd9c3bb7b20b353)
+ [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ea4dd88ed749092fd02135d8ca25b621f74fe72f/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase4.md) | InSyncHandedBackSuccess | [Details](#7ed3569475362272ace055862fe8bb3ee072036a359)
 
 ## Item Details
+##### <a name='8e77298121a84f6feb16a992da81bd9c3bb7b20b353'></a> Source: [Azure-RMSDocs\plan-design\generate-tenant-key-in-person.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/67129d6cdac124947fc07aa4d42523686227752e/Azure-RMSDocs/plan-design/generate-tenant-key-in-person.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/a24e91a9a9bb4562dee77e18c30fddc4e7f906ec/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-cn.xlf)
+* Handoff Datetime: 2016-07-13 17:33:56
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\plan-design\generate-tenant-key-in-person.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/6625e60ffbd2874f42c61973e5fc55001433a732/Azure-RMSDocs/plan-design/generate-tenant-key-in-person.md)
+* Current Handback File: [generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/f6e9fb75ab924498c64261bce722934add7d2d09/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-cn.xlf)
+* Current Handback Datetime: 2016-07-13 18:19:33
+* Bilingual File: [generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/a0f49624d9579a38f15149867652e25f4c4bd02e/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-cn.xlf)
+* Bilingual Datetime: 2016-07-07 12:13:54
+* [Back to Top](#report-top)
+
+##### <a name='7ed3569475362272ace055862fe8bb3ee072036a359'></a> Source: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ea4dd88ed749092fd02135d8ca25b621f74fe72f/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase4.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase4.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/6625e60ffbd2874f42c61973e5fc55001433a732/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase4.md)
+* Handoff File: [migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/6f9a9b7b06e6c8c17fd671ef2636ea0dacecd689/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf)
+* Handoff Datetime: 2016-06-29 00:03:10
+* Handoff Reason: Include
+* Archive File: [migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/3584c626530247837598c11dff6398ad85e5d29b/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/master/archive/migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf)
+* Archive Datetime: 2016-07-01 23:58:12
+* Handback File: [migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/f6e9fb75ab924498c64261bce722934add7d2d09/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf)
+* Handback Datetime: 2016-07-13 18:19:33
+* Bilingual File: [migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/a0f49624d9579a38f15149867652e25f4c4bd02e/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf)
+* Bilingual Datetime: 2016-07-07 12:13:54
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
