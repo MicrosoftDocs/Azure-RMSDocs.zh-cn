@@ -629,6 +629,9 @@
   "46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3": [
     "Azure-RMSDocs\\rms-client\\sharing-app-user-guide.md"
   ],
+  "ee2860da964b52bc41c0aea219110453f024b954": [
+    "Azure-RMSDocs\\rms-client\\sharing-app-version-release-history.md"
+  ],
   "cad9d01735d8e649875bc6bba73d29573891e1d8": [
     "Azure-RMSDocs\\rms-client\\sharing-app-version-release-history.md"
   ],
@@ -706,6 +709,9 @@
   ],
   "cb82f0333ed17ee2994608baa3bbb50d42f19073": [
     "Azure-RMSDocs\\develop\\how-to-use-adal-authentication-4-2.md"
+  ],
+  "3264ee76cc675ef7ab2ab352d839fbca4d4876df": [
+    "Azure-RMSDocs\\information-protection\\faq.md"
   ],
   "b20ccbd394c88af047b7439a94c54936bc4ab063": [
     "Azure-RMSDocs\\information-protection\\faq.md"
