@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/20/2016
+ms.date: 07/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 04fbac4389671ed32f64c0840d81723f8314869c
-ms.openlocfilehash: 4509126c61c4e37d9655d9bd080be3e097cd103f
+ms.sourcegitcommit: f8e23e8bcbfb25092cb31f7af76d17239f3063a7
+ms.openlocfilehash: 32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f
 
 
 ---
@@ -100,7 +100,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 **试图对 Microsoft RMS 连接器进行未经授权的访问。**
 
-当帐户尝试连接到 RMS 连接器但失败时，将记录此事件。 其最典型的原因是因为建立连接的帐户不在 RMS 连接器从 Azure RMS 下载的授权帐户下载列表中。  例如，尚未下载最新列表（这种情况每 15 分钟发生一次）或者从列表中找不到该帐户。 
+当帐户尝试连接到 RMS 连接器但失败时，将记录此事件。 其最典型的原因是因为建立连接的帐户不在 RMS 连接器从 Azure RMS 下载的授权帐户下载列表中。 例如，尚未下载最新列表（这种情况每 15 分钟发生一次）或者从列表中找不到该帐户。 
 
 另一个原因可能是因为在配置为使用 RMS 连接器的同一服务器上安装了该连接器。 例如，在运行 Exchange Server 的服务器上安装 RMS 连接器，并授权 Exchange 帐户使用该连接器。 由于 RMS 连接器无法正确地标识试图进行连接的帐户，因此不支持此配置。
 
@@ -140,6 +140,8 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 每次 RMS 连接器遇到意外错误时都将记录此事件，且错误详细信息包含在事件消息中。
 
+事件消息中的文本“请求失败，出现了空响应”可识别一个可能的原因。 如果你看到此文本，则可能是因为你有一个网络设备在对本地服务器与 RMS 连接器服务器之间的数据包进行 SSL 检查。 这不受支持，并且将导致通信失败和该事件日志消息。
+
 ----
 
 错误 **3001**
@@ -147,6 +149,8 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 **下载授权信息时出现异常。**
 
 如果 RMS 连接器无法下载有权使用 RMS 连接器的帐户的最新列表，则将记录此事件，且错误详细信息包含在事件消息中。
+
+
 
 ----
 
@@ -191,6 +195,6 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
