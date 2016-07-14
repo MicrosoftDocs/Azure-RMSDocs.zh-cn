@@ -275,9 +275,6 @@
   "66bb1b58cba19d0fe8bc2ec0d3720c0b040f8378": [
     "Azure-RMSDocs\\develop\\ios-os-x-code-examples.md"
   ],
-  "0c5ec8da79674d2023a0684fb0e83ac1e1743874": [
-    "Azure-RMSDocs\\develop\\ios-os-x-code-examples.md"
-  ],
   "821fe1c361dc38b1e33ac66208122de165d02020": [
     "Azure-RMSDocs\\develop\\ios-sdk.md"
   ],
@@ -371,9 +368,6 @@
   "1ac96ddb1569483236c4dc61f7bc38c99d43ead2": [
     "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
   ],
-  "80e17903a6d2f3c6e8f15448a6a5499dfb9852d1": [
-    "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
-  ],
   "d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf": [
     "Azure-RMSDocs\\deploy-use\\activate-service.md"
   ],
@@ -462,9 +456,6 @@
     "Azure-RMSDocs\\get-started\\faqs.md"
   ],
   "a3ed9e8de496741fae8904481edb1177762a12c0": [
-    "Azure-RMSDocs\\get-started\\faqs.md"
-  ],
-  "758a603dde2c185767ba85229a397fd6e77b1c5b": [
     "Azure-RMSDocs\\get-started\\faqs.md"
   ],
   "a8f5852d965abe2f2654aa236bfd9ea49a62aa84": [
@@ -702,9 +693,6 @@
     "Azure-RMSDocs\\develop\\install-the-rms-sdk.md"
   ],
   "32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f": [
-    "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
-  ],
-  "4509126c61c4e37d9655d9bd080be3e097cd103f": [
     "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
   ],
   "cb82f0333ed17ee2994608baa3bbb50d42f19073": [
