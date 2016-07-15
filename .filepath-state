@@ -407,6 +407,9 @@
   "87d712bbda11a4cfdfb2f3b3e9a549bca977afd6": [
     "Azure-RMSDocs\\deploy-use\\copy-template.md"
   ],
+  "c240502f2e88ec61bcbee6be778e77a0d5aee66b": [
+    "Azure-RMSDocs\\deploy-use\\create-template.md"
+  ],
   "d67caf4ebbe19e4f67061d006da1fdedea0d5761": [
     "Azure-RMSDocs\\deploy-use\\create-template.md"
   ],
@@ -472,6 +475,9 @@
   ],
   "75b2414cc360704deb6107d6c0038f5b0bf7fa70": [
     "Azure-RMSDocs\\get-started\\requirements-azure-ad.md"
+  ],
+  "f225d8579e2440d2eb00a4f821a78727b6442fdd": [
+    "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
   ],
   "72a75712da9efa201865440affa80461dcd7df53": [
     "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
@@ -733,6 +739,9 @@
   ],
   "41ebf56c55d94e9aecf9538d474c8fa2c77ae83e": [
     "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step3.md"
+  ],
+  "dcb34eb8bfee6232d32245634dc56f717257b644": [
+    "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step4.md"
   ],
   "97d49fc476f2a7a0d9303fd27441d5fe7338fb49": [
     "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step4.md"
