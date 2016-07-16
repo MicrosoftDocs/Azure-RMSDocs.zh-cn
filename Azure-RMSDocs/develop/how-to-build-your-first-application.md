@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: IPCHelloWorld - 一个示例应用程序 | Azure RMS
-description: 本主题包含用于创建启用权限的示例应用程序的说明。
-keywords:
+title: "IPCHelloWorld - 一个示例应用程序 | Azure RMS"
+description: "本主题包含用于创建启用权限的示例应用程序的说明。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ac6afddc2b39d6209ef1b89d8d84011942cdba5a
+ms.openlocfilehash: e75ec6c04afd171552697f79deb33ad2cfe2c4e1
+
 
 ---
 ** 此 SDK 内容不是最新的。 在短时间内，请在 MSDN 上找到[最新版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)的文档。 **
@@ -222,6 +218,7 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
  
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

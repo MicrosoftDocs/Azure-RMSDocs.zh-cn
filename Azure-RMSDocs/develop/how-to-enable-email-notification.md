@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 启用电子邮件通知 | Azure RMS
-description: 受保护的内容所有者通过电子邮件通知可以在其内容受到访问时收到通知。
-keywords:
+title: "启用电子邮件通知 | Azure RMS"
+description: "受保护的内容所有者通过电子邮件通知可以在其内容受到访问时收到通知。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 5FB975EE-E4E5-4089-B8E1-CAFD5B9B34EC
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b2234f2209962d3dfda10958e740e04a5e5a4f13
+ms.openlocfilehash: 54fc5037eaaa5c9ae2557aa6e4c67aa99a4143e6
+
 
 ---
 
@@ -70,6 +66,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 使用 Rights Management 共享应用程序移除对文件的保护 | Azure RMS
-description:
-keywords:
+title: "使用 Rights Management 共享应用程序移除对文件的保护 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 78ceb74a3dd8492ac5c754eea179525cae819fd0
+
 
 ---
 
@@ -42,7 +36,7 @@ ms.suite: ems
 
     系统可能会提示你输入凭据。
 
-注意：如果看不到这些选项，则很可能你的计算机上未安装 RMS 共享应用程序、未安装最新版本，或必须重启计算机才能完成安装。 有关如何安装共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md).
+注意：如果看不到这些选项，则很可能你的计算机上未安装 RMS 共享应用程序、未安装最新版本，或必须重启计算机才能完成安装。 有关如何安装共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md)。
 
 原始的受保护文件（例如 Sample.ptxt）将会删除，并替换为一个同名但文件扩展名不受保护的文件（例如 Sample.txt）。
 
@@ -57,6 +51,7 @@ ms.suite: ems
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

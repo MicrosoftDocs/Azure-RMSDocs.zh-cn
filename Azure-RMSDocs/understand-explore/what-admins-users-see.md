@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 管理员和用户将看到什么？ | Azure RMS
-description:
-keywords:
+title: "管理员和用户将看到什么？ | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/09/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 213d077a65abd5115b7e0491dfc9cd8145752b23
+
 
 ---
 
@@ -32,11 +26,12 @@ ms.suite: ems
 
 文章显示管理员和用户如何查看并使用 Azure Rights Management (Azure RMS) 来帮助保护敏感或机密信息的一些典型示例。
 
-> [!NOTE]在 Azure RMS 保护数据的所有这些示例中，内容所有者继续对数据（文件或电子邮件）具有完全访问权限，即使应用的保护向所有者不属于的组授予权限，或者即使应用的保护包括到期日期。
+> [!NOTE]
+> 在 Azure RMS 保护数据的所有这些示例中，内容所有者继续对数据（文件或电子邮件）具有完全访问权限，即使应用的保护向所有者不属于的组授予权限，或者即使应用的保护带有到期日期。
 >
 > 同样，IT 部门始终可以通过使用 Rights Management 的超级用户功能（向你指定的授权用户或服务授予委托访问权限）来访问受保护的数据而没有限制。 此外，IT 部门还可以跟踪和监视受保护数据的使用情况（例如，谁正在访问该数据和访问时间）。
 
-有关显示运行中的 RMS 的其他屏幕截图和视频，请查看 [Microsoft Rights Management 服务门户](http://www.microsoft.com/rms)和 [Microsoft Rights Management (RMS) 团队博客](http://blogs.technet.com/b/rms)。
+有关显示正在运行的 RMS 的其他屏幕截图和视频，请查看 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)（企业移动性和安全性博客）。
 
 ## 激活和配置权限管理
 尽管可以使用 Windows PowerShell 激活和配置 Azure RMS，但在管理门户中执行这些操作最简单。 激活该服务后，你立即获得两个默认模板，管理员和用户可以选择这两个模板来便捷地对文件应用信息保护。 但你也可以创建自己的自定义模板来提供其他选项和设置。
@@ -246,6 +241,7 @@ Alice 想要将 Bob 限制为只能查看和编辑该文档，而不想让他复
 现在，你已看到 Azure RMS 可以执行哪些操作的一些示例，你可能会对其如何执行这些操作感兴趣。 有关 Azure RMS 的工作原理的技术信息，请参阅[ Azure RMS 的工作原理](how-does-it-work.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

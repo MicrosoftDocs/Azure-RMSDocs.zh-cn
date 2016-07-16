@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure RMS 的工作原理 | Azure RMS
-description:
-keywords:
+title: "Azure RMS 的工作原理 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562
+ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
+
 
 ---
 
@@ -77,7 +71,8 @@ ms.suite: ems
 
 初始化用户环境后，该用户可以保护文档，或使用该计算机上的受保护文档。
 
-> [!NOTE] 如果此用户移至另一台 Windows 计算机，或另一个用户使用这同一台 Windows 计算机，请重复该初始化过程。
+> [!NOTE]
+> 如果此用户移至另一台 Windows 计算机，或另一个用户使用这同一台 Windows 计算机，请重复该初始化过程。
 
 ### 初始化用户环境
 在用户可以保护内容或使用 Windows 计算机上的受保护内容之前，必须在设备上准备用户环境。 这是一次性的过程，当用户尝试保护或使用受保护内容时会自动发生，无需用户干预：
@@ -151,9 +146,11 @@ ms.suite: ems
 
 当你做好开始为组织部署 Azure RMS 的准备时，请使用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md) 获取部署步骤和操作说明链接。
 
-> [!TIP] 有关其他信息和帮助，请使用 [Azure Rights Management 的信息和支持中的资源和链接](../get-started/information-support.md)。
+> [!TIP]
+> 有关其他信息和帮助，请使用 [Azure Rights Management 的信息和支持](../get-started/information-support.md)中的资源和链接。
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

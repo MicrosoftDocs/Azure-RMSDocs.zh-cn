@@ -1,8 +1,6 @@
 ---
-# required metadata
-
-title: Android 命名空间 | Azure RMS
-description: Android API 具有两个命名空间。
+title: "Android 命名空间 | Azure RMS"
+description: "Android API 具有两个命名空间。"
 keywords: RMS, Android
 author: bruceperlerms
 manager: mbaldwin
@@ -12,16 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 41dc2300-13c5-42c2-9288-0d1054f31830
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4e30a62ecbd1ca4576be6d017bc8d1f501e33989
+ms.openlocfilehash: 55f17d42165d2b6b5e1765a81bf7d799a14e996a
+
 
 ---
 
@@ -36,6 +31,7 @@ Android API 具有两个命名空间，用于涵盖主要功能和异常。
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

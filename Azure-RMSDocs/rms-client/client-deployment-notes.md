@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: RMS 客户端部署说明 | Azure RMS
-description:
-keywords:
+title: "RMS 客户端部署说明 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/13/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2bd8aba91b9b65777c2319baea848e8313cbccda
+ms.openlocfilehash: ffddda9a144b23b64b54df4fe4d25ec62600599d
+
 
 ---
 
@@ -42,7 +36,8 @@ Rights Management 服务客户端（RMS 客户端）版本 2 也称为 MSIPC 客
 ## 安装 RMS 客户端
 RMS 客户端包含在名为 **setup_msipc_***<arch>***.exe** 中，其中 *<arch>* 为 **x86**（对于 32 位客户端计算机）或 **x64**（对于 64 位客户端计算机）。 64 位 (x64) 安装程序包将同时安装 32 位运行时组件（以与在 64 位操作系统安装上运行的 32 位应用程序兼容）以及 64 位运行时组件（以支持本机 64 位应用程序）。 32 位 (x86) 安装程序将不会在 64 位 Windows 安装上运行。
 
-> [!NOTE]若要安装 RMS 客户端，你需要有提升的权限，例如，是本地计算机上管理员组的成员。
+> [!NOTE]
+> 若要安装 RMS 客户端，你需要有提升的权限，例如，是本地计算机上管理员组的成员。
 
 可以使用以下安装方法之一来安装 RMS 客户端：
 
@@ -192,7 +187,8 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 
 2.  在注册表编辑器中，导航到 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC**。
 
-    > [!IMPORTANT] 如果 32 位应用程序在 64 位计算机上运行，则路径将如下所示：**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
+    > [!IMPORTANT]
+    > 如果 32 位应用程序在 64 位计算机上运行，则路径将如下所示：**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
 
 3.  要创建 ServiceLocation 子项，请右键单击“MSIPC”，指向“新建”，单击“项”，然后键入 **ServiceLocation**。
 
@@ -233,7 +229,8 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 
     **值：**https://fabrikam.com/_wmcs/licensing
 
-    > [!NOTE]如果旧的授权服务器同时指定了 Intranet URL 和 Extranet URL，则必须在 LicensingRedirection 项下同时为这两个 URL 设置新的名称/值映射。
+    > [!NOTE]
+    > 如果旧的授权服务器同时指定了 Intranet URL 和 Extranet URL，则必须在 LicensingRedirection 项下同时为这两个 URL 设置新的名称/值映射。
 
 5.  为所有需要重定向的服务器重复上一步。
 
@@ -241,6 +238,7 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: iOS/OS X 代码示例 | Azure RMS
-description: 本主题向你介绍 iOS/OS X 版 RMS SDK 的重要代码元素。
-keywords:
+title: "iOS/OS X 代码示例 | Azure RMS"
+description: "本主题向你介绍 iOS/OS X 版 RMS SDK 的重要代码元素。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
+ms.openlocfilehash: 66bb1b58cba19d0fe8bc2ec0d3720c0b040f8378
+
 
 ---
 
@@ -40,9 +36,9 @@ ms.suite: ems
 ###方案：使用受 RMS 保护的文件
 
 
-- **步骤 1**创建 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 对象
+- **步骤 1**：创建 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) 对象
 
- **说明**：通过 create 方法实例化 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 对象，该方法使用 [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 实现服务身份验证，以便通过将 **MSAuthenticationCallback** 的实例作为参数 *authenticationCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码部分中对 [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 的调用。
+ **说明**：通过 create 方法实例化 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) 对象，该方法使用 [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 实现服务身份验证，以便通过将 **MSAuthenticationCallback** 的实例作为参数 *authenticationCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码部分中对 [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 的调用。
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -288,6 +284,7 @@ ms.suite: ems
 
  
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

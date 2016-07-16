@@ -27,6 +27,6 @@
 |了解本机保护和常规保护的区别   →|[一般性保护和内置（本机）保护的区别是什么？](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

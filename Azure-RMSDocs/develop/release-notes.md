@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 新增功能和发行说明 | Azure RMS
-description: 概述这一新版本的 RMS SDK 中的重要更改和功能。
-keywords:
+title: "新增功能和发行说明 | Azure RMS"
+description: "概述这一新版本的 RMS SDK 中的重要更改和功能。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
+
 
 ---
 
@@ -29,7 +25,8 @@ ms.suite: ems
 ## 新增功能
 Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个新的易用性和灵活性级别。 本主题概述了这一新版本的 RMS SDK 中的重要更改和功能。
 
--   [我们的 2015 年 12 月更新中的新增功能](#new_for_our_december_2015_update)
+-   [2016 年 6 月的新增功能](#new_for_June_2016)
+-   [2015 年 12 月更新](#december_2015_update)
 -   [2015 年 7 月更新 - 添加针对 Linux / C++ 开发的支持](#july_2015_update_-_adds_support_for_linux___c___development)
 -   [2015 年 5 月更新 - 添加日志记录控制](#may_2015_update_-_adds_logging_control)
 -   [2015 年 2 月更新 - 添加 Windows 应用商店应用程序支持](#february_2015_update_-_adds_windows_store_application_support)
@@ -38,7 +35,15 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 -   [发行说明](#release-notes)
 -   [常见问题](#frequently_asked_questions)
 
-### 我们的 2015 年 12 月更新中的新增功能
+### 2016 年 6 月的新增功能
+
+- **支持新式验证** - 将基于 Active Directory 身份验证库 (ADAL) 的登录引入到启用了 RMS 的应用中。 它可实现 Multi-Factor Authentication (MFA)、带 RMS 客户端应用程序且基于 SAML 的第三方标识提供者、智能卡和基于证书的身份验证等登录功能，且不再需要启用了 RMS 的应用即可使用基本身份验证协议。
+- **文档跟踪支持** - 开发人员现可在保护其应用中的文档时启用文档跟踪 
+- 性能改进
+- Bug 修复情况
+
+
+### 2015 年 12 月更新
 
 在本版本中，适用于设备的 RMS SDK 现在为版本 4.2，并添加：
 
@@ -124,7 +129,7 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
 -   **AD RMS 支持** - IT 管理员可以在带有全新 AD RMS 服务器的移动设备扩展的移动设备上使用启用 RMS 的应用程序。
 -   **脱机使用** - 最终用户可以脱机访问受 RMS 保护的数据。
--   **隔离式身份验证** - 开发人员可以使用自己的 Azure RMS 和 AD RMS 身份验证库（或使用推荐的 [Azure AD 身份验证库 (ADAL)](https://MSDN.Microsoft.Com/en-us/library/jj573266.aspx)）。
+-   **隔离式身份验证** - 开发人员可以使用自己的 Azure RMS 和 AD RMS 身份验证库（或使用推荐的 [Azure AD 身份验证库 (ADAL)](https://MSDN.Microsoft.Com/library/jj573266.aspx)）。
 -   **隔离式 UI** - 开发人员可以构建自己的用户界面以保护和使用受 RMS 保护的文档。
 -   **重新设计的 API** - 开发人员现在可以获得简单、透明的加密和解密 API，这样只需最少的努力即可获得一致的 RMS 行为和用户体验。
 
@@ -144,7 +149,7 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
 -   当我使用长度与 *array.length* 值不同的 [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array, int offset, int length)** 方法时，后面无法通过 SDK 使用内容。
 
-    **解决方案** - 这是一个已知问题。 为了缓解问题，可以始终通过长度值与长度参数相同的 **byte \[\]** 阵列，也可以使用 [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array)** 方法。
+    **解决方案** - 这是一个已知问题。 为了缓解问题，可始终传递长度值与长度参数相同的 **byte \[\]** 阵列，也可以使用 [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array)** 方法。
 
 **iOS 和 OS X**
 
@@ -227,6 +232,7 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

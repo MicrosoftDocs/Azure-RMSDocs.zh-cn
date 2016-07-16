@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: RMS 连接器的注册表设置 | Azure RMS
-description:
-keywords:
+title: "RMS 连接器的注册表设置 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: ff90f009f9fda90171bbeeb2a7bb421376d4695c
+
 
 ---
 
@@ -37,7 +31,7 @@ ms.suite: ems
 
 -   *MicrosoftRMSURL* 是你组织的 Microsoft RMS 服务 URL。 查找此值：
 
-    1.  对 Azure RMS 运行 [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet。 如果你尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md).
+    1.  对 Azure RMS 运行 [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet。 如果你尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
 
     2.  在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
 
@@ -47,7 +41,7 @@ ms.suite: ems
 
         **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
--   *ConnectorFQDN* 是你在 DNS 中为连接器定义的负载平衡名称。 例如 **rmsconnector.contoso.com**.
+-   *ConnectorFQDN* 是你在 DNS 中为连接器定义的负载平衡名称。 例如 **rmsconnector.contoso.com**。
 
 -   如果你已将连接器配置为使用 HTTPS 与本地服务器通信，请使用 HTTPS 前缀作为连接器 URL。 有关详细信息，请参阅本主题中的 [将 RMS 连接器配置为使用 HTTPS](deploy-rms-connector.md#BKMK_ConfiguringHTTPS) 部分。 Microsoft RMS URL 始终使用 HTTPS。
 
@@ -222,6 +216,7 @@ ms.suite: ems
 
 返回到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

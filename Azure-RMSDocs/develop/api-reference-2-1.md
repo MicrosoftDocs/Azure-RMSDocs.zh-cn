@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: API 参考 | Azure RMS
-description: Microsoft Rights Management SDK 2.1 支持 Windows 客户端的 RMS 启用。
-keywords:
+title: "API 参考 | Azure RMS"
+description: "Microsoft Rights Management SDK 2.1 支持 Windows 客户端的 RMS 启用。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/13/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6dcfa840-026b-4728-b53c-2c9c730fcf84
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 74e200dcf65a7a1749f586421eb6ad30f3332d6b
+ms.openlocfilehash: 18f8958985043609a89171cd86771b922cf43daa
+
 
 ---
 
@@ -43,6 +39,7 @@ Microsoft Rights Management SDK 2.1 支持 Windows 客户端的 RMS 启用。 �
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

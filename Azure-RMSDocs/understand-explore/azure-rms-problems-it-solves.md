@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure RMS 解决了哪些问题 | Azure RMS
-description:
-keywords:
+title: "Azure RMS 解决了哪些问题 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e84de6afd80196d4237499718af45c64788c408d
+ms.openlocfilehash: 2863c98390b8fda528c4fe3a1b2ebce3510763b4
+
 
 ---
 
@@ -46,7 +40,8 @@ ms.suite: ems
 |可以创建简单灵活的策略|√ [自定义权限策略模板](../deploy-use/configure-custom-templates.md) 提供了一款便捷的解决方案。通过该解决方案，管理员可以应用策略，用户可以对每个文档应用适当级别的保护，并将访问权限限制给组织内部人员。<br /><br />例如，为了与所有员工共享公司范围内的策略文档，你可以对所有内部员工应用只读策略。 此外，对于更敏感的文档，如财务报表，你可以将访问权限仅提供给高管。|
 |广泛的应用程序支持|√ Azure RMS 可与 Microsoft Office 应用程序和服务紧密集成，并使用 RMS 共享应用程序扩展对其他应用程序的支持。<br /><br />√ [Microsoft Rights Management SDK](../develop/developers-guide.md#software-development-kits) 为内部开发人员和软件供应商提供了 API，用于编写支持 Azure RMS 的自定义应用程序。<br /><br />有关详细信息，请参阅 [支持 RMS API 的其他应用程序](api-support.md)。|
 |IT 部门必须保持对数据的控制|√ 组织可以选择管理其自己的租户密钥，使用“[自带密钥](../plan-design/plan-implement-tenant-key.md)”(BYOK) 解决方案，并将其租户密钥存储在硬件安全模块 (HSM) 中。<br /><br />√ 支持审核和 [使用日志记录](../deploy-use/log-analyze-usage.md)，因此，你可以通过分析信息来获得业务见解、通过监视信息来了解滥用情况，并可在出现信息泄露的情况下执行取证分析。<br /><br />√ 使用 [超级用户功能](../deploy-use/configure-super-users.md) 委托访问确保 IT 部门始终可以访问受保护的内容，即使文档是由后来从组织离职的员工实施保护的。 相比之下，使用对等加密解决方案会面临丧失公司数据访问权限的风险。<br /><br />√ 仅同步[Azure RMS 所需的目录属性](/active-directory/active-directory-aadconnectsync-attributes-synchronized#azure-rms)即可对本地 Active Directory 帐户使用通用标识，而且只需使用[目录同步工具](/active-directory/active-directory-hybrid-identity-design-considerations-tools-comparison)（例如 Azure AD Connect）即可。<br /><br />√ 使用 AD FS 来启用单一登录，而无需将密码复制到云中。<br /><br />√ 组织始终可以选择停止使用 Azure RMS，而不会失去对以前受 Azure RMS 保护的内容的访问权限。 有关解除授权选项的信息，请参阅 [解除 Azure Rights Management 授权和停用 Azure Rights Management](../deploy-use/decommission-deactivate.md)。 此外，部署了 Active Directory Rights Management Services (AD RMS) 的组织还可以 [迁移到 Azure RMS](../plan-design/migrate-from-ad-rms-to-azure-rms.md)，而不会失去对以前受 AD RMS 保护的数据的访问权限。|
-> [!TIP] 如果你熟悉 Rights Management 的本地版 Active Directory Rights Management Services (AD RMS)，可参阅[比较 Azure Rights Management 和 AD RMS](compare-azure-rms-ad-rms.md) 中的比较表。
+> [!TIP]
+> 如果你熟悉本地版的权限管理和 Active Directory Rights Management 服务 (AD RMS)，则可能会对 [比较 Azure Rights Management 和 AD RMS](compare-azure-rms-ad-rms.md) 中的比较表感兴趣。
 
 ## 安全、合规性和法规要求
 Azure RMS 支持以下安全、合规性和法规要求：
@@ -77,6 +72,7 @@ Azure RMS 支持以下安全、合规性和法规要求：
 
 如果对有关 Azure RMS 工作的详细技术信息感兴趣，请参阅 [Azure RMS 的工作原理](how-does-it-work.md) 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

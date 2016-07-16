@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 为 Azure Rights Management 连接器配置服务器 | Azure RMS
-description:
-keywords:
+title: "为 Azure Rights Management 连接器配置服务器 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/08/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0b07ecc88b1d2d344f0984d4a805cc033996cc4d
+ms.openlocfilehash: 79171b5931b69ca18d2a2cbe321d5d5887903da2
+
 
 ---
 
@@ -83,7 +77,8 @@ ms.suite: ems
 
 ---
 
-> [!IMPORTANT]对于这两种情况，都必须手动安装所有必备组件，并将 Exchange、SharePoint 和文件分类基础结构配置为使用权限管理。
+> [!IMPORTANT]
+> 对于这两种情况，都必须手动安装所有必备组件，并将 Exchange、SharePoint 和文件分类基础结构配置为使用权限管理。
 
 对于大多数组织，使用适用于 Microsoft RMS 连接器的服务器配置工具进行自动配置是更好的选择，因为它提供优于手动配置的效率和可靠性。
 
@@ -114,7 +109,8 @@ ms.suite: ems
 
 若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如 https://connector.contoso.com。 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
 
-> [!IMPORTANT]运行此工具时，请确保指定组织的负载平衡 RMS 连接器的名称，而不要指定运行 RMS 连接器服务的单个服务器的名称。
+> [!IMPORTANT]
+> 当你运行此工具时，请确保指定组织的负载平衡 RMS 连接器的名称，而不要指定运行 RMS 连接器服务的单个服务器的名称。
 
 使用以下部分获取每个服务类型的特定信息：
 
@@ -188,7 +184,8 @@ ms.suite: ems
 
 运行 SharePoint 2016 或 SharePoint 2013 的服务器也必须运行 RMS 连接器支持的 MSIPC 客户端 2.1 版。 若要确保使用受支持的版本，请从 [Microsoft 下载中心](http://www.microsoft.com/download/details.aspx?id=38396)下载最新的客户端。
 
-> [!WARNING] MSIPC 2.1 客户端有多个版本，因此请确保安装版本 1.0.2004.0 或更高版本。
+> [!WARNING]
+> MSIPC 2.1 客户端有多个版本，因此请确保安装版本 1.0.2004.0 或更高版本。
 >
 > 你可以通过检查 MSIPC.dll 的版本号来验证客户端版本，该文件位于 **\Program Files\Active Directory Rights Management Services Client 2.1**。 属性对话框将显示 MSIPC 2.1 客户端的版本号。
 
@@ -252,6 +249,7 @@ ms.suite: ems
 若要监视 RMS 连接器，请参阅[监视 Azure Rights Management 连接器](monitor-rms-connector.md)。 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

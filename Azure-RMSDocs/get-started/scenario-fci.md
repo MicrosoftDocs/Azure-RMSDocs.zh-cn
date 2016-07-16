@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 方案 - 保护文件服务器共享上的文件 | Azure RMS
-description:
-keywords:
+title: "方案 - 保护文件服务器共享上的文件 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: c16098a2d0fe41748280704716a2eeef8921a6fa
+
 
 ---
 
@@ -161,6 +155,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

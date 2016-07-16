@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Linux 设置 |Azure RMS
-description: 多种版本的 Linux 操作系统现都可使用 Microsoft Rights Management SDK 4.2。
-keywords:
+title: "Linux 设置 |Azure RMS"
+description: "多种版本的 Linux 操作系统现都可使用 Microsoft Rights Management SDK 4.2。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
+ms.openlocfilehash: d6920b8ce09b39d98da9e9c197b17a1f13d21c8e
+
 
 ---
 
@@ -36,10 +32,7 @@ Linux 操作系统的几种版本现都可通过 Azure Active Directory Rights M
 ## 支持的操作系统
 
 
-Ubuntu 14.04
-OpenSUSE 13.2
-CentOS 7
-**请注意** Windows 和 OSX 上也已成功编译了库和示例，但此时并未完全受到支持。
+Ubuntu 14.04 OpenSUSE 13.2 CentOS 7 **注意：**Windows 和 OSX 上也已成功编译了库和示例，但目前并未完全受到支持。
 
  
 
@@ -66,6 +59,7 @@ CentOS 7
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -20,6 +20,6 @@
 # [部署和使用该客户端](/rights-management/rms-client/use-client)
 # [开发和自定义应用](/rights-management/develop/developers-guide)
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO4-->
 
 

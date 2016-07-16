@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: 适用于启用了 RMS 的应用程序的 ADAL 身份验证 | Azure RMS
-description: 使用 ADAL 进行身份验证的过程概述
+title: "适用于启用了 RMS 的应用程序的 ADAL 身份验证 | Azure RMS"
+description: "使用 ADAL 进行身份验证的过程概述"
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4c3625676c7e794ef133c75881f666bae80e0513
+ms.openlocfilehash: 9200ea44671776ced8781c1e13e71871f5bdf014
+
 
 ---
 
@@ -43,13 +38,15 @@ ms.suite: ems
 
   如果你希望 RMS 客户端在需要身份验证时显示 ADAL 身份验证提示时，请使用此方法。 有关如何配置应用程序的详细信息，请参阅“内部身份验证”一节。
 
-  > [!Note] 如果你的应用程序当前将 AD RMS SDK 2.1 用于登录助手，建议使用内部身份验证方法作为应用程序迁移路径。
+  > [!Note] 
+  > 如果你的应用程序当前将 AD RMS SDK 2.1 用于登录助手，建议使用内部身份验证方法作为应用程序迁移路径。
 
 - **外部身份验证** - 由应用程序管理的 OAuth 身份验证。
 
   如果希望应用程序管理其自己的 OAuth 身份验证，请使用此方法。 使用此方法，RMS 客户端将在需要进行身份验证时执行应用程序定义的回调。 有关详细示例，请参阅本主题末尾的“外部身份验证”。
 
-  > [!Note] 外部身份验证并不意味着能够更改用户；RMS 客户端对于给定 RMS 租户始终使用默认用户。
+  > [!Note] 
+  > 外部身份验证并不意味着能够更改用户；RMS 客户端对于给定 RMS 租户始终使用默认用户。
 
 ## 内部身份验证
 
@@ -114,18 +111,19 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
 
 ## 相关主题
 
-* [数据类型](/rights-management/sdk/2.1/api/win/datatypes)
-* [环境属性](/rights-management/sdk/2.1/api/win/environmentproperties)
+* [数据类型](/rights-management/sdk/2.1/api/win/data%20types)
+* [环境属性](/rights-management/sdk/2.1/api/win/environment%20properties#msipc_environment_properties)
 * [IpcCreateOAuth2Token](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreateoauth2token)
 * [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
 * [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
 * [IPC_CREDENTIAL](/rights-management/sdk/2.1/api/win/IPC_CREDENTIAL)
 * [IPC_NAME_VALUE_LIST](/rights-management/sdk/2.1/api/win/IPC_NAME_VALUE_LIST)
-* [IPC_OAUTH2_CALLBACK_INFO](/rights-management/sdk/2.1/api/win/IIPC_OAUTH2_CALLBACK_INFO)
+* [IPC_OAUTH2_CALLBACK_INFO](/rights-management/sdk/2.1/api/win/ipc_oauth2_callback_info#msipc_ipc_oath2_callback_info)
 * [IPC_PROMPT_CTX](/rights-management/sdk/2.1/api/win/IPC_PROMPT_CTX)
-* [IPC_AAD_APPLICATION_ID](/rights-management/sdk/2.1/api/win/IIPC_AAD_APPLICATION_ID)
+* [IPC_AAD_APPLICATION_ID](/rights-management/sdk/2.1/api/win/ipc_aad_application_id#msipc_ipc_aad_application_id)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

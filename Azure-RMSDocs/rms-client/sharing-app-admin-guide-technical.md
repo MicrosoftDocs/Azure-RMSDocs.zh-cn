@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Rights Management 共享应用程序技术概述 | Azure RMS
-description:
-keywords:
+title: "Rights Management 共享应用程序技术概述 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: 4f63cb7911661104113d19ecd84ef7c80a874408
+
 
 ---
 
@@ -66,7 +60,8 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
 对于以常规形式进行保护的文件，原始文件扩展名将始终更改为 .pfile。
 
-> [!WARNING]如果你拥有可根据文件扩展名检查并采取操作的防火墙、Web 代理或者安全软件，你可能需要重新配置它们以支持这些新的文件扩展名。
+> [!WARNING]
+> 如果你拥有可根据文件扩展名检查并采取操作的防火墙、Web 代理或者安全软件，你可能需要重新配置它们以支持这些新的文件扩展名。
 
 |原始文件扩展名|受 RMS 保护的文件扩展名|
 |--------------------------------|-------------------------------------|
@@ -144,6 +139,7 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

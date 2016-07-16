@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Azure RMS 客户端 | Azure RMS
-description:
-keywords:
+title: "Azure RMS 客户端 | Azure RMS"
+description: 
+keywords: 
 author: msmbaldwin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 148a3bdc-e40f-4ea9-8c0d-1befbf59cbfd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mbaldwin
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 3723189a600d32f43cf4888714add0df0e6c082a
+
 
 ---
 
@@ -31,6 +24,7 @@ ms.reviewer: mbaldwin
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 生成和传送租户密钥 – 通过 Internet | Azure RMS
-description:
-keywords:
+title: "生成和传送租户密钥 – 通过 Internet | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1bff9b06-8c5a-4b1d-9962-6668219210e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 20cfa722f7008c52f4fbc219a4de04c50ee3548d
+
 
 ---
 
@@ -48,7 +42,7 @@ ms.suite: ems
 > [!NOTE]
 > 如果你之前已下载了此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 2.1.0.0： `(Get-Module aadrm -ListAvailable).Version`
 
-有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md).
+有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
 
 ### 步骤 2：获取你的 Azure Active Directory 租户 ID
 使用 **“以管理员身份运行”** 选项启动 Windows PowerShell，然后运行以下命令：
@@ -85,15 +79,15 @@ ms.suite: ems
 |亚洲|AzureRMS-BYOK-tools-AsiaPacific.zip|
 工具集包括以下部分：
 
--   “密钥交换密钥”(KEK) 软件包，名称以 **BYOK-KEK-pkg-** 开头.
+-   “密钥交换密钥”(KEK) 软件包，名称以 **BYOK-KEK-pkg-** 开头。
 
--   安全体系包，名称以 **BYOK-SecurityWorld-pkg-** 开头.
+-   安全体系包，名称以 **BYOK-SecurityWorld-pkg-** 开头。
 
--   名为 **verifykeypackage.py** 的 Python 脚本.
+-   名为 **verifykeypackage.py**的 Python 脚本。
 
 -   一个名为 **KeyTransferRemote.exe** 的命令行可执行文件、一个名为 **KeyTransferRemote.exe.config** 的元数据文件以及关联的 DLL。
 
--   名为 **vcredist_x64.exe** 的 Visual C++ 可再分发包.
+-   名为 **vcredist_x64.exe** 的 Visual C++ 可再分发包。
 
 将包复制到 USB 驱动器或其他便携式存储设备。
 
@@ -112,7 +106,7 @@ ms.suite: ems
 ```
 set PATH=%PATH%;”%nfast_home%\bin”;”%nfast_home%\python\bin”
 ```
-有关详细信息，请参阅 Thales HSM 附带的用户指南，或者访问 Thales 的 Azure RMS 网站，地址为 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
+有关详细信息，请参阅 Thales HSM 附带的用户指南，或者访问 Thales 的 Azure RMS 网站，地址为 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud)。
 
 ### 步骤 2：在未连接工作站上安装 BYOK 工具集
 从 USB 驱动器或其他便携式存储设备复制 BYOK 工具集包，然后执行以下操作：
@@ -188,7 +182,7 @@ new-world.exe --initialize --cipher-suite=DLf1024s160mRijndael --module=1 --acs-
 
 2.  确认你看到以下结果，它表示验证成功： **结果：SUCCESS**
 
-此脚本验证签名人链，一直到 Thales 根密钥。 此根密钥的哈希嵌入到脚本中，其值应为 **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**。 你也可以通过访问 [Thales 网站](http://www.thalesesec.com/)，单独确认该值.
+此脚本验证签名人链，一直到 Thales 根密钥。 此根密钥的哈希嵌入到脚本中，其值应为 **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**。 你也可以通过访问 [Thales 网站](http://www.thalesesec.com/)，单独确认该值。
 
 你现在可以创建一个新密钥，作为你的 RMS 租户密钥。
 
@@ -269,11 +263,11 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
         KeyTransferRemote.exe -ModifyAcls -KeyAppName simple -KeyIdentifier contosokey -ExchangeKeyPackage BYOK-KEK-pkg-AP-1 -NewSecurityWorldPackage BYOK-SecurityWorld-pkg-AP-1
         ```
 
-运行此命令时，请将 *contosokey* 替换为*生成你的租户密钥*部分的[步骤 1：创建安全体系](##step-1-create-a-security-world)中指定的同一值。
+运行此命令时，请将 *contosokey* 替换为*生成你的租户密钥*部分的[步骤 1：创建安全体系](#step-1-create-a-security-world)中指定的同一值。
 
 可能会要求你插入安全体系 ACS 卡，并且如果指定了其密码或 PIN，还会要求提供它们。
 
-命令完成时，你将看到 **Result: SUCCESS**，并且具有降低的权限的租户密钥副本将位于名为 key_xferacId_*&lt;contosokey&gt;*的文件中.
+命令完成时，你将看到 **Result: SUCCESS**，并且具有降低的权限的租户密钥副本将位于名为 key_xferacId_*&lt;contosokey&gt;* 的文件中。
 
 ### 步骤 2：检测新的密钥副本
 或者，运行 Thales 实用工具以确认新租户密钥的最低权限：
@@ -290,7 +284,7 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
     "%nfast_home%\bin\kmfile-dump.exe" "%NFAST_KMDATA%\local\key_xferacld_contosokey"
     ```
 
-运行这些命令时，请将 *contosokey* 替换为*生成你的租户密钥*部分的[步骤 1：创建安全体系](##step-1-create-a-security-world)中指定的同一值。
+运行此命令时，请将 *contosokey* 替换为*生成你的租户密钥*部分的[步骤 1：创建安全体系](#step-1-create-a-security-world)中指定的同一值。
 
 ### 步骤 3：使用 Microsoft 的“密钥交换密钥”加密你的密钥
 根据你所在的地区，运行以下命令之一：
@@ -315,7 +309,7 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
 
 当你运行此命令时，请使用以下说明：
 
--   将 *contosokey* 替换为*生成你的租户密钥*部分的[步骤 1：创建安全体系](##step-1-create-a-security-world)中指定的同一值。
+-   将 *contosokey* 替换为*生成你的租户密钥*部分的[步骤 1：创建安全体系](#step-1-create-a-security-world)中用于生成密钥的标识符。
 
 -   将 *GUID* 替换为你在*准备你的连接 Internet 的工作站*部分的[步骤 2：获取你的 Azure Active Directory 租户 ID](#step-2-get-your-azure-active-directory-tenant-id) 中检索的 Azure Active Directory 租户 ID。
 
@@ -383,6 +377,7 @@ Get-AadrmKeys
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

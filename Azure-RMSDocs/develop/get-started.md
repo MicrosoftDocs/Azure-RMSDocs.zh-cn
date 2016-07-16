@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 入门 | Azure RMS
-description: 第一个应用程序的快速入门指南是通过适用于每种操作系统/平台的开发环境设置指南。
-keywords:
+title: "入门 | Azure RMS"
+description: "第一个应用程序的快速入门指南是通过适用于每种操作系统/平台的开发环境设置指南。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
+ms.openlocfilehash: b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27
+
 
 ---
 
@@ -59,6 +55,7 @@ ms.suite: ems
   |[社区资源](community-resources.md)|不断壮大的开发人员群体可在多个平台上很好地支持 Active Directory Rights Management Services。|
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

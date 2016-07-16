@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 比较 Azure Rights Management 和 AD RMS | Azure RMS
-description:
-keywords:
+title: "比较 Azure Rights Management 和 AD RMS | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: 8635402989db0f83017151910013ca460011b392
+
 
 ---
 
@@ -81,6 +75,7 @@ Azure RMS 的一些主要差异：
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

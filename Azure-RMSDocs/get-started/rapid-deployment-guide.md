@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure Rights Management 快速部署指南 | Azure RMS
-description:
-keywords:
+title: "Azure Rights Management 快速部署指南 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 01c2436218e0d7fd80a31cdc037d9dc8933e42f2
+
 
 ---
 
@@ -39,7 +33,8 @@ ms.suite: ems
 
 在推出这些解决方案之前，你可能希望向最终用户发送广泛公告，让他们知道即将发生一些更改以帮助保护公司数据，且可能需要他们也做出一些改变。 下表后面包含了一个示例通信。
 
-> [!NOTE]如果你对本指南有任何问题和意见，请使用本页上的反馈机制或发送电子邮件消息至 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)。
+> [!NOTE]
+> 如果你对本指南有任何问题和意见，请使用本页上的反馈机制或发送电子邮件消息至 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)。
 
 ## Azure RMS 的方案
 为了帮助你更加快速地部署 Azure RMS 以解决具体的业务问题，请选择与你的业务目标最接近的方案，并根据需要进行调整。
@@ -151,6 +146,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

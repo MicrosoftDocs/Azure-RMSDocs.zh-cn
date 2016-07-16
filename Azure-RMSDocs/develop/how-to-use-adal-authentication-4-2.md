@@ -1,8 +1,6 @@
 ---
-# required metadata
-
-title: 使用 Azure 门户对 RMS 身份验证进行配置 | Azure RMS
-description: 使用 ADAL 进行身份验证的过程概述
+title: "使用 Azure 门户对 RMS 身份验证进行配置 | Azure RMS"
+description: "使用 ADAL 进行身份验证的过程概述"
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
@@ -12,16 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2680b399-febb-4bd6-b844-ac3d1e69aca4
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 3f43f5605b1c341d7be618327038d1a86a305a5b
+ms.openlocfilehash: cb82f0333ed17ee2994608baa3bbb50d42f19073
+
 
 ---
 
@@ -66,6 +61,7 @@ ms.suite: ems
 - [为 ADAL 身份验证配置 Azure RMS](adal-auth.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

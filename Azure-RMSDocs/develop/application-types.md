@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 应用程序类型 | Azure RMS
-description: 本主题介绍可以选择创建为启用权限形式的应用程序类型。
-keywords:
+title: "应用程序类型 | Azure RMS"
+description: "本主题介绍可以选择创建为启用权限形式的应用程序类型。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 872bb0c20db2ef8d661d321598a2b1fe61d69316
+ms.openlocfilehash: a27d1921336a795df5a3c91b36b97846e74cca34
+
 
 ---
 
@@ -65,6 +61,7 @@ Microsoft 记事本是简单的富客户端应用程序。 Microsoft Office 是�
 * [了解使用限制](understanding-usage-restrictions.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

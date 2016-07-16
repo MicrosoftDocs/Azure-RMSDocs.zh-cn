@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 社区资源 | Azure RMS
-description: 不断壮大的开发人员群体可在多个平台上很好地支持 AD RMS。
-keywords:
+title: "社区资源 | Azure RMS"
+description: "不断壮大的开发人员群体可在多个平台上很好地支持 AD RMS。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
+ms.openlocfilehash: 1476cfafbc3ecf619e66fee22f657c1714deffe8
+
 
 ---
 
@@ -53,6 +49,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

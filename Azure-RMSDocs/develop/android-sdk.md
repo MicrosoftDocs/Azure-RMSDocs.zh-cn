@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Android 安装程序 |Azure RMS
-description: Android 应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
-keywords:
+title: "Android 安装程序 |Azure RMS"
+description: "Android 应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 30fad88ff664e2df935c8f2cfd28f8b1fe251f67
+
 
 ---
 
@@ -50,7 +46,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
     此 SDK 可以用于为 Android 4.0.3（API 级别 15）及更高版本进行开发。
 
--   身份验证库：我们建议使用 [Azure AD 身份验证库 (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx)。 但是也可使用其他支持 OAuth 2.0 的身份验证库。
+-   身份验证库：建议使用 [Azure AD 身份验证库 (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。 但是也可使用其他支持 OAuth 2.0 的身份验证库。
 
     有关详细信息，请参阅 [ADAL for Android](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)
 
@@ -122,7 +118,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 -   单击" **确定**"。
 
-    因为 MS RMS SDK 4.2 与 AAD RM 相连接时，所以必须向应用程序授予 **INTERNET** 和 **ACCESS\_NETWORK\_STATE** 权限。 为此，请在项目的根目录中打开 *AndroidManifest.xml* 文件。
+    因为 MS RMS SDK 4.2 与 AAD RM 相连接，所以必须向应用程序授予 **INTERNET** 和 **ACCESS\_NETWORK\_STATE** 权限。 为此，请在项目的根目录中打开 *AndroidManifest.xml* 文件。
 
     若要添加权限，请单击 **“添加”**，然后选择 **“使用权限”**。
 
@@ -131,12 +127,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 -   可以通过在文本编辑器视图中查看清单来验证清单步骤。 确保显示以下行：
 
 
-    <uses-sdk
-        android:minSdkVersion="15"
-        android:targetSdkVersion="19"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission/>
+    <uses-sdk      android:minSdkVersion="15"      android:targetSdkVersion="19"/> <uses-permission android:name="android.permission.INTERNET"/> <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <uses-permission/>
 
 
 **注意**  SDK 使用 *android.support.v4*
@@ -158,6 +149,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 
