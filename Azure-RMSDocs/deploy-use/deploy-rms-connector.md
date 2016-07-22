@@ -84,6 +84,6 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 转到[安装和配置 Azure Rights Management 连接器](install-configure-rms-connector.md)。
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

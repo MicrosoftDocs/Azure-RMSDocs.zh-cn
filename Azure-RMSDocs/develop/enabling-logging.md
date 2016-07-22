@@ -96,6 +96,6 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
