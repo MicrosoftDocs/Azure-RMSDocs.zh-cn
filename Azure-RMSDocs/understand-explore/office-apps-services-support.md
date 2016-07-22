@@ -73,6 +73,6 @@ Azure RMS 会在从 SharePoint 下载文档时为文档应用使用限制和数�
 若要查看其他应用程序和服务如何支持 Azure Rights Management，请参阅[应用程序如何支持 Azure Rights Management](applications-support.md)。
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

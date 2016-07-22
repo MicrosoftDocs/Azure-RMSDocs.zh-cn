@@ -215,6 +215,6 @@ https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
 若要继续迁移，请转到[阶段 4 - 迁移后任务](migrate-from-ad-rms-phase4.md)。
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -34,6 +34,6 @@ ms.openlocfilehash: bb69cda94bf611712eb5b4a74d9ec25d1749da3a
 若要查看其他应用程序和服务如何支持 Azure Rights Management，请参阅[应用程序如何支持 Azure Rights Management](applications-support.md)。
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -226,6 +226,6 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

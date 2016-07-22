@@ -95,6 +95,6 @@ Exchange Online 计划 1 <br /><br /> Exchange Online 计划 2|否 <br /><br /> 
 若要查看其他要求，请参阅 [Azure Rights Management 的要求](requirements-azure-rms.md)。
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -233,6 +233,6 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

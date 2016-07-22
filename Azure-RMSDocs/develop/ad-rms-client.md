@@ -43,6 +43,6 @@ Rights Management Services SDK 2.1 适用于 RMS 客户端 2.1。 在 RMS SDK 2.
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

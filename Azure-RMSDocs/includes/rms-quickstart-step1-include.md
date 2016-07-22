@@ -55,6 +55,6 @@
 |关于默认模板以及如何创建新的自定义模板   →|[为 Azure 权限管理配置自定义模板](../deploy-use/create-template.md)|
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

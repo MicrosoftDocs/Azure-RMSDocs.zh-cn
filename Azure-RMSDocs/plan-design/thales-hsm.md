@@ -34,6 +34,6 @@ Microsoft 与 Thales 联手协作，不断增强这些 HSM 的功能。 通过�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

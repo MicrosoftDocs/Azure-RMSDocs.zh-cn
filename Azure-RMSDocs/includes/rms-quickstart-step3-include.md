@@ -42,6 +42,6 @@
 |关于 **“共享保护项”** 对话框中的选项   →|[权限管理共享应用程序的的对话框选项](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

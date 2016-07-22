@@ -40,6 +40,6 @@ Microsoft Rights Management SDK 2.1 支持 Windows 客户端的 RMS 启用。 �
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

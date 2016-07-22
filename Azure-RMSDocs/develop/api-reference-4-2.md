@@ -45,6 +45,6 @@ Microsoft Rights Management SDK 4.2 支持多种操作系统。 有关特定平�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
