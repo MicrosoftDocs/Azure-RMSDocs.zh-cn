@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure Rights Management 快速入门教程 | Azure RMS
-description: 教程的介绍，快速试用适合你组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。
-keywords:
+title: "Azure Rights Management 快速入门教程 | Azure RMS"
+description: "教程的介绍，快速试用适合你组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。"
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1db923bf-7d19-4fdd-a413-bfeb58af5e03
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 7c89aa5f31732464dab2b90a25ad7c50f36c2c99
+
 
 ---
 
@@ -55,12 +49,14 @@ ms.suite: ems
 
 让我们开始吧。
 
->[!div class="step-by-step"] [步骤 1 »](tutorial-step1.md)
+>[!div class="step-by-step"]
+[步骤 1 »](tutorial-step1.md)
 
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

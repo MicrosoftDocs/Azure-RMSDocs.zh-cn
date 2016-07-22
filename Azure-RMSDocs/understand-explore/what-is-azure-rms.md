@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure 权限管理是什么？ | Azure RMS
-description:
-keywords:
+title: "Azure 权限管理是什么？ | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e2de70fcbe0b284368b1e52c34f42d1cf4554edd
+ms.openlocfilehash: 6fe5759a790a728da7a16453e5b3ab5d523bb9fd
+
 
 ---
 
@@ -43,7 +37,7 @@ ms.suite: ems
 下图说明了在使用 Office 365 以及本地服务器和服务的情况下，Azure RMS 是如何发挥权限管理解决方案作用的。 此外，你还会发现该解决方案支持运行 Windows、Mac OS、iOS、Android 和 Windows Phone 的常见最终用户设备。
 
 > [!NOTE]
-可将 Azure RMS 用于各种云订阅，包括 Office 365、企业移动性套件和 Azure RMS Premium。 有关详细信息，请参阅 [支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md).
+可将 Azure RMS 用于各种云订阅，包括 Office 365、企业移动性套件和 Azure RMS Premium。 有关详细信息，请参阅 [支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md)。
 
 ![Azure RMS 工作方式](../media/AzRMS_elements.png)
 
@@ -59,14 +53,15 @@ ms.suite: ems
 
 
 
-如果想要深入研究并亲自试用 Azure RMS，请使用 [Azure Rights Management 快速入门教程](../get-started/quick-start-tutorial.md).
+如果想要深入研究并亲自试用 Azure RMS，请使用 [Azure Rights Management 快速入门教程](../get-started/quick-start-tutorial.md)。
 
 当做好开始为组织部署 Azure RMS 的准备时，请使用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md)获取部署步骤和操作说明链接。
 
 > [!TIP]
-> 有关其他信息和帮助，请使用 [Azure Rights Management 的信息和支持](../get-started/information-support.md)中的资源和链接.
+> 有关其他信息和帮助，请使用 [Azure Rights Management 的信息和支持](../get-started/information-support.md)中的资源和链接。
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 如何使用文档跟踪 | Azure RMS
-description: 文档跟踪功能需要对管理关联元数据以及向服务注册有一些简单了解。
-keywords:
+title: "如何使用文档跟踪 | Azure RMS"
+description: "文档跟踪功能需要对管理关联元数据以及向服务注册有一些简单了解。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ca4982cc86d9c006486540055de7c165adca21da
+ms.openlocfilehash: 9872317c2d5f5f56f28ed2683d7ebc9743041a37
+
 
 ---
 
@@ -67,6 +63,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

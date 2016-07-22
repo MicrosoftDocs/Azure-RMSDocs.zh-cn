@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 了解使用限制 | Azure RMS
-description: 所有启用 RMS 的应用程序都必须强制实施使用限制。
-keywords:
+title: "了解使用限制 | Azure RMS"
+description: "所有启用 RMS 的应用程序都必须强制实施使用限制。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: E388B16C-ECDA-4696-A040-D457D3C96766
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 872bb0c20db2ef8d661d321598a2b1fe61d69316
+ms.openlocfilehash: 2d2cbe580349e1615371a6a76e78140f6577e890
+
 
 ---
 
@@ -59,6 +55,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

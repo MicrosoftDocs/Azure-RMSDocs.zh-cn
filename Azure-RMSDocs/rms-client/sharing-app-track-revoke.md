@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 使用 RMS 共享应用程序跟踪和撤销文档 | Azure RMS
-description:
-keywords:
+title: "使用 RMS 共享应用程序跟踪和撤销文档 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
+
 
 ---
 
@@ -43,11 +37,11 @@ ms.suite: ems
 
 -   如果你想要配置电子邮件通知：单击“设置”  并选择在访问该文档时是否通过电子邮件发送通知以及发送方式。
 
--   如有疑问或想要提供有关文档跟踪站点的反馈：单击“帮助”图标访问 [FAQ for Document Tracking](http://go.microsoft.com/fwlink/?LinkId=523977)（文档跟踪常见问题）。.
+-   如有疑问或想要提供有关文档跟踪站点的反馈：单击“帮助”图标访问 [文档跟踪常见问题](http://go.microsoft.com/fwlink/?LinkId=523977)。
 
 ## 使用 Office 访问文档跟踪站点
 
--   对于 Office 应用程序（Word、Excel 和 PowerPoint）：在**主页**选项卡的 **RMS** 组中，单击**共享保护项**，然后单击**跟踪使用情况**.
+-   对于 Office 应用程序（Word、Excel 和 PowerPoint）：在“主页”  选项卡的“RMS”  组中，单击“共享保护项” ，然后单击“跟踪使用情况” ：
 
     ![使用 RMS 共享应用程序时，从 Office 应用程序中跟踪使用情况 ](../media/ADRMS_MSRMSApp_OfficeToolbarTrackUsage.png)
 
@@ -55,7 +49,7 @@ ms.suite: ems
 
     ![选择“使用 RMS 共享应用程序时，从 Outlook 跟踪使用情况” ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
-如果看不到这些用于 RMS 的选项，则很可能你的计算机上未安装 RMS 共享应用程序、未安装最新版本，或必须重启计算机才能完成安装。 有关如何安装共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md).
+如果看不到这些用于 RMS 的选项，则很可能你的计算机上未安装 RMS 共享应用程序、未安装最新版本，或必须重启计算机才能完成安装。 有关如何安装共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md)。
 
 ### 跟踪和撤消文档的其他方法
 除了使用 Office 应用程序在 Windows 计算机上跟踪文档以外，你还可以使用以下替代方法：
@@ -68,7 +62,7 @@ ms.suite: ems
 
 #### 使用 Web 浏览器访问文档跟踪站点
 
--   使用受支持的浏览器转到[文档跟踪站点](http://go.microsoft.com/fwlink/?LinkId=529562).
+-   使用受支持的浏览器转到 [文档跟踪站点](http://go.microsoft.com/fwlink/?LinkId=529562)。
 
     支持的浏览器：建议使用最低版本为 10 的 Internet Explorer，但你可以通过以下任一浏览器使用文档跟踪站点：
 
@@ -105,6 +99,7 @@ ms.suite: ems
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

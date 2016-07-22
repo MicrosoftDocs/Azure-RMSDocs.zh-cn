@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: 为 ADAL 身份验证配置 Azure RMS | Azure RMS
-description: 配置基于 Azure ADAL 的身份验证步骤概述
+title: "为 ADAL 身份验证配置 Azure RMS | Azure RMS"
+description: "配置基于 Azure ADAL 的身份验证步骤概述"
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 9b912a2a66838dc6e6a3b227bcfe4ac589fe06c1
+
 
 ---
 
@@ -36,7 +31,8 @@ ms.suite: ems
 - [Microsoft Azure 订阅](https://azure.microsoft.com/en-us/)（使用免费试用版即可）。 有关详细信息，请参阅[用户如何注册个人 RMS](../understand-explore/rms-for-individuals-user-sign-up.md)
 - Microsoft Azure Rights Management 的订阅（使用免费的[个人 RMS](https://technet.microsoft.com/en-us/library/dn592127.aspx) 帐户即可）。
 
-> [!NOTE] 询问你的 IT 管理员你是否具有 Microsoft Azure Rights Management 订阅，请你的 IT 管理员执行以下步骤。 如果你的组织没有订阅，应请 IT 管理员创建订阅。 此外，你的 IT 管理员应使用*工作或学校帐户*而不是 *Microsoft 帐户*（即 Hotmail）进行订阅。
+> [!NOTE] 
+> 询问你的 IT 管理员你是否具有 Microsoft Azure Rights Management 订阅，请你的 IT 管理员执行以下步骤。 如果你的组织没有订阅，应请 IT 管理员创建订阅。 此外，你的 IT 管理员应使用*工作或学校帐户*而不是 *Microsoft 帐户*（即 Hotmail）进行订阅。
 
 注册 Microsoft Azure 后：
 
@@ -81,11 +77,13 @@ ms.suite: ems
 
 ![选择“配置”](../media/ConfigYourApp.png)
 
->[!NOTE] 配置 RMS 客户端时，复制**客户端 ID** 和**重定向 URI** 并将其存储供将来使用。
+>[!NOTE] 
+> 配置 RMS 客户端时，复制**客户端 ID** 和**重定向 URI** 并将其存储供将来使用。
 
 - 浏览到应用程序设置的底部，选择**其他应用程序的权限**下的**添加应用程序**按钮。
 
->[!NOTE] 向 Windows Azure Active Directory 显示的**委托权限**默认情况下是正确的 – 仅应选择一个选项，即**登录并读取用户配置文件**。
+>[!NOTE] 
+> 向 Windows Azure Active Directory 显示的**委托权限**默认情况下是正确的 – 仅应选择一个选项，即**登录并读取用户配置文件**。
 
 ![选择“添加应用程序”](../media/PermissionsToOtherBtn.png)
 
@@ -110,6 +108,7 @@ ms.suite: ems
 ![选择“保存”](../media/SaveApplication.png)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

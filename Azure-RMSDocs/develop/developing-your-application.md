@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 开发应用程序 | Azure RMS
-description: 有关如何使用 RMS SDK 2.1 开发应用程序的说明。
-keywords:
+title: "开发应用程序 | Azure RMS"
+description: "有关如何使用 RMS SDK 2.1 开发应用程序的说明。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cb1a4dfa4465e8f4798866c95d8965eec1b68f6b
+ms.openlocfilehash: 5dcb3fe88cced7945591a08c492b32bdc8895162
+
 
 ---
 
@@ -32,7 +28,8 @@ ms.suite: ems
 
 本主题中的指南以示例应用程序 IPCHelloWorld 为基础，可帮助你熟悉启用权限的应用程序的基本概念和代码。 你可以从 Microsoft Connect 下载完整的 IPCHellowWorld 示例应用程序 [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)。
 
-> [!Note] IPCHelloWorld 项目已针对 Rights Management Services SDK 2.1 进行了配置。 有关如何配置新项目以使用 RMS SDK 2.1 的信息，请参阅 [配置 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)。
+> [!Note] 
+> IPCHelloWorld 项目已针对 Rights Management Services SDK 2.1 进行了配置。 有关如何配置新项目以使用 RMS SDK 2.1 的信息，请参阅 [配置 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)。
 
 ## 加载 MSIPC.dll
 
@@ -187,6 +184,7 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

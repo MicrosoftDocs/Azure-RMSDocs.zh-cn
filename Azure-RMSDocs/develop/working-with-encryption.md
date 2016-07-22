@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 如何使用加密设置 | Azure RMS
-description: 本文将带你了解我们的加密包
-keywords:
+title: "如何使用加密设置 | Azure RMS"
+description: "本文将带你了解我们的加密包"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 29e856e3e9990f81a791c533ddad5a332093d5d3
+ms.openlocfilehash: 82903eff43ee2dee7ef64e618171225a06013d99
+
 
 ---
 
@@ -106,6 +102,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

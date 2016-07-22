@@ -12,18 +12,18 @@
 
 1.  转到 [Office 365 门户](https://portal.office.com/) ，使用你的工作或学校帐户登录。
 
-2.  如果未自动显示 Office 365 管理中心，请选择左上方的“应用启动程序”图标，然后选择“管理”****。 “管理” **** 磁贴只会向 Office 365 管理员显示。
+2.  如果未自动显示 Office 365 管理中心，请选择左上方的“应用启动程序”图标，然后选择“管理”。 “管理”  磁贴只会向 Office 365 管理员显示。
 
     > [!TIP]
     > 有关管理中心的帮助，请参阅 [关于 Office 365 管理中心 - 管理员帮助](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547)。
 
-3.  在左窗格中，单击“服务设置” ****。
+3.  在左窗格中，单击“服务设置” 。
 
-4.  单击“权限管理” ****。
+4.  单击“权限管理” 。
 
 5.  在 **“权限管理”** 页上，单击 **“管理”**。
 
-6.  在“Rights Management”****页上，单击“激活”****。
+6.  在“Rights Management”页上，单击“激活”。
 
 7.  当提示 **“是否要激活权限管理?”**时，请单击 **“激活”**。
 
@@ -35,11 +35,11 @@
 
 1.  转到 [ Azure 经典门户](http://go.microsoft.com/fwlink/p/?LinkID=275081)并登录。
 
-2.  在左窗格中，单击“ACTIVE DIRECTORY” ****。
+2.  在左窗格中，单击“ACTIVE DIRECTORY” 。
 
 3.  在 **“Active Directory”** 页中，单击 **“权限管理”**。
 
-4.  选择要进行 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 的待管理目录，单击“激活”****，然后确认你的操作。
+4.  选择要进行 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 的待管理目录，单击“激活”，然后确认你的操作。
 
 **“权限管理状态”** 现在应该显示 **“活动”** ，而 **“激活”** 选项将替换为 **“停用”**。
 
@@ -55,6 +55,6 @@
 |关于默认模板以及如何创建新的自定义模板   →|[为 Azure 权限管理配置自定义模板](../deploy-use/create-template.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

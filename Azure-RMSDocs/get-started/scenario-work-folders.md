@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 方案 - 配置工作文件夹的持续保护 | Azure RMS
-description:
-keywords:
+title: "方案 - 配置工作文件夹的持续保护 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: 35ad445e229eac3feeca5522a41b9e3b25fd1180
+
 
 ---
 
@@ -128,6 +122,7 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

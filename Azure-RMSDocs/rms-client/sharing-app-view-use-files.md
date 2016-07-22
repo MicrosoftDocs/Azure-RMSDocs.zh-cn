@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 查看和使用受 Rights Management 保护的文件 | Azure RMS
-description:
-keywords:
+title: "查看和使用受 Rights Management 保护的文件 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
+
 
 ---
 
@@ -36,10 +30,10 @@ ms.suite: ems
 >
 > 如果你的组织不使用 Azure Rights Management (Azure RMS) 或 AD RMS，你可以申请会接受你的凭据的免费帐户，以便可以使用 RMS 打开受保护文件：
 >
-> -   若要申请此帐户，请单击链接以申请[个人 RMS](http://go.microsoft.com/fwlink/?LinkId=309469).
+> -   若要申请此帐户，请单击链接以申请 [个人 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
 >
 >     注册时，使用公司的电子邮件地址，而不是个人电子邮件地址。 如果注册的原因是要使用电子邮件发送受保护附件，请使用与用于发送电子邮件相同的电子邮件地址。
-> -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md).
+> -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
 ## 查看受保护文件
 通过使用文件资源管理器或包含附件的电子邮件，双击受保护文件，然后在收到提示时输入凭据。
@@ -59,7 +53,7 @@ ms.suite: ems
 
     ![使用 RMS 共享应用程序时通过电子邮件共享的 pfile 的对话框](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **该文件具有 *.ppdf* 文件扩展名，或者是受保护的文本或图像文件（如 *.ptxt* 或 *.pjpg*)**
+- **该文件具有 *.ppdf* 文件扩展名，或者是受保护的文本或图像文件（如 *.ptxt* 或 *.pjpg*）**
 
     该文件已本机保护为只读副本。
 
@@ -89,9 +83,9 @@ ms.suite: ems
 
     例如，如果某个文件使用文件名 document.vsdx.pfile 保护，请查看该文件并在文件资源管理器中将文件作为 document.vsdx 进行保存。
 
-    新文件从此不受保护。 如果你想要保护该文件，必须手动执行此操作。 有关说明，请参阅[使用 Rights Management 共享应用程序保护设备上的文件（就地保护）](sharing-app-protect-in-place.md).
+    新文件从此不受保护。 如果你想要保护该文件，必须手动执行此操作。 有关说明，请参阅[使用 Rights Management 共享应用程序保护设备上的文件（就地保护）](sharing-app-protect-in-place.md)。
 
-- **该文件具有 *.ppdf* 文件扩展名，或者是受保护的文本或图像文件（如 *.ptxt* 或 *.pjpg*)**
+- **该文件具有 *.ppdf* 文件扩展名，或者是受保护的文本或图像文件（如 *.ptxt* 或 *.pjpg*）**
 
     你仅可以查看文件，并且如果重命名或移动文件，保护将保留在文件上。
 
@@ -113,6 +107,7 @@ ms.suite: ems
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

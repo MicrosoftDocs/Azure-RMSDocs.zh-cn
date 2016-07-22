@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 概述 | Azure RMS
-description: AD RMS 和 Azure RMS 是一种信息保护技术，可帮助保护数字信息免遭未经授权的使用。
-keywords:
+title: "概述 | Azure RMS"
+description: "AD RMS 和 Azure RMS 是一种信息保护技术，可帮助保护数字信息免遭未经授权的使用。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 417888c5445d702b1f700a8e717fbb746593efc6
+
 
 ---
 
@@ -50,7 +46,7 @@ MS RMS SDK 4.2 提供了一些很棒的新功能，包括以下方面：
 
 -   **重新设计的 API** – MS RMS SDK 4.2 API 经过重新设计，实现了最大程度的简单易用性，使开发人员能够使用简单、透明的加密和解密 API，从而以最少的工作量实现统一的 RMS 行为。
 -   **对 AD RMS 和 Azure RMS 的混合支持** – 通过单个启用 RMS 的应用程序即可使用和保护来自 AD RMS 服务器（使用 AD RMS 的移动设备扩展）和 Azure RMS 服务的内容。 MS RMS SDK 4.2 以透明方式发现 IT 管理员可以配置的相关终点。
--   **自带身份验证库** – 作为应用程序开发人员，你可以选择对 MS RMS SDK 4.2 使用何种身份验证库。 无论是 [Azure AD 身份验证库](https://msdn.microsoft.com/en-us/library/jj573266.aspx)还是你组织的自定义库，MS RMS SDK 4.2 都可以分离身份验证堆栈，以便你可以选择最能满足需求的库。
+-   **自带身份验证库** – 作为应用程序开发人员，你可以选择对 MS RMS SDK 4.2 使用何种身份验证库。 无论是 [Azure AD 身份验证库](https://msdn.microsoft.com/library/jj573266.aspx)还是你组织的自定义库，MS RMS SDK 4.2 都可以分离身份验证堆栈，以便你选择最能满足需求的库。
 -   **自带用户界面** - MS RMS SDK 4.2 现在允许你实现自定义用户界面。 从保护内容和选择模板到显示和更改权限，同时使用受保护的内容，MS RMS SDK 4.2 不会在你的应用程序上强制执行任何内置 UI。 不过，如果你愿意，也可以通过我们的 [GitHub 帐户](https://github.com/AzureAD/)对所有平台都使用 Microsoft RMS UI 库。
 -   **脱机访问受保护的内容** – MS RMS SDK 4.2 允许你的应用程序用户即使在没有 Internet 连接的情况下也能访问受保护的内容。 MS RMS SDK 4.2 以安全方式缓存受保护内容的使用策略，以便你的用户可以脱机访问受 RMS 保护的数据。
 
@@ -70,6 +66,7 @@ MS RMS SDK 4.2 提供了一些很棒的新功能，包括以下方面：
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

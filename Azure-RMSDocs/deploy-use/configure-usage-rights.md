@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 为 Azure Rights Management 配置使用权限 | Azure RMS
-description:
-keywords:
+title: "为 Azure Rights Management 配置使用权限 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
+ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
+
 
 ---
 
@@ -65,7 +59,7 @@ ms.suite: ems
 
 **AD RMS 模板中的名称**：*保存*
 
-**API 常量或值**：IPC_GENERIC_WRITEL“EDIT”
+**API 常量或值**：IPC_GENERIC_WRITE L"EDIT"
 
 在 Office 应用程序中，此权限还允许用户修改文档。
 
@@ -83,7 +77,7 @@ ms.suite: ems
 
 **AD RMS 模板中的名称：**未实现。
 
-**API 常量或值**：IPC_GENERIC_COMMENTL“COMMENT”
+**API 常量或值：**IPC_GENERIC_COMMENT L"COMMENT
 
 此权限可用于 SDK、在适用于 Windows PowerShell 的 RMS 保护模块中作为即席策略提供，并且已在一些软件供应商应用程序中实现。 但是，它尚未广泛使用，并且当前也不受 Office 应用程序支持。
 
@@ -101,7 +95,7 @@ ms.suite: ems
 
 **AD RMS 模板中的名称：***导出（另存为）*
 
-**API 常量或值**：IPC_GENERIC_EXPORTL“EXPORT”
+**API 常量或值：**IPC_GENERIC_EXPORT L"EXPORT"
 
 此权限还允许用户在应用程序中执行其他导出选项，如“发送到 OneNote”。
 
@@ -119,7 +113,7 @@ ms.suite: ems
 
 **AD RMS 模板中的名称：***转发*
 
-**API 常量或值：**IPC_EMAIL_FORWARDL“FORWARD”
+**API 常量或值：**IPC_EMAIL_FORWARD L"FORWARD"
 
 不允许转发器授予其他用户权限作为转发操作的一部分。
 
@@ -137,7 +131,7 @@ ms.suite: ems
 
 **AD RMS 模板中的名称：***完全控制*
 
-**API 常量或值**：IPC_GENERIC_ALLL“OWNER”
+**API 常量或值：**IPC_GENERIC_ALL L"OWNER"
 
 包括删除保护的功能。
 
@@ -155,7 +149,7 @@ ms.suite: ems
 
 **AD RMS 模板中的名称：***打印*
 
-**API 常量或值**：IPC_GENERIC_PRINTL"PRINT”
+**API 常量或值：**IPC_GENERIC_PRINT L"PRINT
 
 ---
 
@@ -187,7 +181,7 @@ ms.suite: ems
 
 **AD RMS 模板中的名称：***全部答复*
 
-**API 常量或值：**IPC_EMAIL_REPLYALLL“REPLYALL”
+**API 常量或值：**IPC_EMAIL_REPLYALL L"REPLYALL"
 
 ---
 
@@ -203,7 +197,7 @@ ms.suite: ems
 
 **AD RMS 模板中的名称：***查看*
 
-**API 常量或值**：IPC_GENERIC_READL“VIEW”
+**API 常量或值：**IPC_GENERIC_READ L"VIEW"
 
 ---
 
@@ -219,7 +213,7 @@ ms.suite: ems
 
 **AD RMS 模板中的名称：***提取*
 
-**API 常量或值：**IPC_GENERIC_EXTRACTL"EXTRACT"
+**API 常量或值：**IPC_GENERIC_EXTRACT L"EXTRACT"
 
 在某些应用程序中，它还允许以不受保护的形式保存整个文档。
 
@@ -283,7 +277,8 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
  
 - 如果她应用了**不得转发**选项，则收件人将无法通过将电子邮件移动到其他位置来与营销部门中的其他任何人共享信息。 在这种情况下，将只有原始收件人（和电子邮件所有者）能够查看该电子邮件中的信息。
 
-> [!NOTE] 当要求只有发件人选择的收件人才能看到电子邮件中的信息时，请使用**不得转发**。 使用模板，使电子邮件将权限限制于管理员提前指定的、与发件人所选收件人相互独立的一组人员。
+> [!NOTE] 
+> 当要求只有发件人选择的收件人才能看到电子邮件中的信息时，请使用**不得转发**。 使用模板，使电子邮件将权限限制于管理员提前指定的、与发件人所选收件人相互独立的一组人员。
 
 
 
@@ -293,6 +288,7 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

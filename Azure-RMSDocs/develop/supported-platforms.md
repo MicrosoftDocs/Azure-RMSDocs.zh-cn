@@ -1,10 +1,7 @@
 ---
-# required metadata
-
-title: 支持的平台 | Azure RMS
-description: 本主题介绍支持 Rights Management Services SDK 2.1 的客户端和服务器平台。
-
-keywords:
+title: "支持的平台 | Azure RMS"
+description: "本主题介绍支持 Rights Management Services SDK 2.1 的客户端和服务器平台。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -13,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4E46521F-8C2F-401A-A481-113CE130ACF0
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
+ms.openlocfilehash: baf08d04f836e5aa406f125a7029bc43297f5df1
+
 
 ---
 
@@ -50,6 +45,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

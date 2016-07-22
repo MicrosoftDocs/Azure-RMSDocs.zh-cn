@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure Rights Management 概述 | Azure RMS
-description:
-keywords:
+title: "Azure Rights Management 概述 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/03/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 965581c8-be3c-43b4-8145-5cefd29c7636
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fdedb0f1064e98500d3b4edcee283c514851d446
+ms.openlocfilehash: a8c9a55977a285cd30872beeb160b07ce02edcce
+
 
 ---
 
@@ -35,16 +29,17 @@ Rights Management 使用加密、标识和身份验证策略，帮助保护文�
 
 例如，你可以通过配置文件仅允许组织内人员访问该文件，还可以控制是否允许编辑该文件、是否将其限制为只读，以及是否禁止打印该文件。 同样，你也可以配置电子邮件，并且禁止转发电子邮件或使用“全部答复”选项。 这些保护任务可以通过使用标准化的策略模板来简化。
 
-通过另一个名称了解的 Azure Rights Management？ 请参阅[服务的替代条件列表](azure-rms-aka.md).
+通过另一个名称了解的 Azure Rights Management？ 请参阅[该服务的替代术语列表](azure-rms-aka.md)。
 
 # 后续步骤
 如果希望进行更深入的了解并查看一些示例，请参阅 [Azure Rights Management 是什么？](what-is-azure-rms.md)
 
-如果已准备好为组织部署 Azure RMS，你请用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md).
+如果已准备好为组织部署 Azure RMS，你请用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md)。
 
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

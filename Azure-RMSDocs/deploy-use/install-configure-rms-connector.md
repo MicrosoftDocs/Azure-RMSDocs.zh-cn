@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 安装并配置 Azure Rights Management 连接器 | Azure RMS
-description:
-keywords:
+title: "安装并配置 Azure Rights Management 连接器 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4b7539ab311d782c3987a8fd74940aad72e65b
+ms.openlocfilehash: 165292482349e4a233ab4030f49a297f57b041ac
+
 
 ---
 
@@ -29,7 +23,7 @@ ms.suite: ems
 
 *适用于：Azure Rights Management、Office 365*
 
-使用以下信息可帮助你安装并配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 1-4.
+使用以下信息可帮助你安装并配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 1-4。
 
 在开始之前，请确保已查看并检查此部署的[先决条件](deploy-rms-connector.md#prerequisites-for-the-rms-connector)。
 
@@ -41,7 +35,7 @@ ms.suite: ems
     > [!NOTE]
     > 你将为每个租户（Office 365 租户或 Azure AD 租户）安装单个 RMS 连接器（包含多个服务器以实现高可用性）。 与 Active Directory RMS 不同，你无需在每个林中安装 RMS 连接器。
 
-2.  从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkId=314106)下载 RMS 连接器的源文件.
+2.  从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkId=314106)下载 RMS 连接器的源文件。
 
     若要安装 RMS 连接器，请下载 RMSConnectorSetup.exe。
 
@@ -53,31 +47,33 @@ ms.suite: ems
 
 3.  在你要安装 RMS 连接器的计算机上，以管理员权限运行 **RMSConnectorSetup.exe** 。
 
-4.  在“Microsoft Rights Management 连接器设置”页面的欢迎页上，选择**在计算机上安装 Microsoft Rights Management 连接器**，然后单击**下一步**.
+4.  在“Microsoft Rights Management 连接器设置”页面的欢迎页上，选择“在计算机上安装 Microsoft Rights Management 连接器”，然后单击“下一步”。
 
-5.  阅读并同意 RMS 连接器许可条款，然后单击**下一步**.
+5.  阅读并同意 RMS 连接器许可条款，然后单击“下一步” 。
 
 若要继续，请输入帐号和密码以配置 RMS 连接器。
 
 ## 输入凭据
 在能够配置 RMS 连接器之前，你必须输入具有足够 RMS 连接器配置权限的帐户的凭据。 例如，你可键入“admin@contoso.com”，然后指定此帐户的密码。
 
-对于此密码有一些字符限制。 不可使用具有任一下列字符的密码：& 号 ( **&** )、左括号 ( **[** )、右括号 ( **]** )、直引号 ( **"** ) 和撇号 ( **'** )。 如果你的密码包含上述任一字符，则尽管你在其他方案中可以使用此帐户和密码成功登录，但 RMS 连接器的身份验证将失败，你将看到错误消息“该用户名和密码组合不正确”。 如果这适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设你的密码使其不包含上述任一特殊字符。
+对于此密码有一些字符限制。 不可使用具有下列任一字符的密码：& 号 (**&**)、左括号 (**[**)、右括号 (**]**)、直引号 (**"**) 和撇号 (**'**)。 如果你的密码包含上述任一字符，则尽管你在其他方案中可以使用此帐户和密码成功登录，但 RMS 连接器的身份验证将失败，你将看到错误消息“该用户名和密码组合不正确”。 如果这适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设你的密码使其不包含上述任一特殊字符。
 
 此外，如果你实现了[内置控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保你指定的帐户能够保护内容。 例如，如果你将保护内容的功能限制给“IT 部门”组，则在此指定的帐户必须是该组成员。 若未实现，将显示以下错误消息：**发现管理服务和组织位置的尝试失败。“请确保为你的组织启用了 Microsoft Rights Management 服务。”**
 
 你可以使用具有以下某一种权限的帐户：
 
--   **Office 365 租户管理员**：Office 365 租户的全局管理员帐户。
+-   **租户的全局管理员**：作为 Office 365 租户或 Azure AD 租户全局管理员的帐户。
 
--   **Azure Rights Management 全局管理员**：具有 Azure RMS 租户的管理员特权的帐户。
+-   **Azure Rights Management 全局管理员**：Azure Active Directory 中已分配为 Azure RMS 全局管理员角色的帐户。
 
--   **Microsoft RMS 连接器管理员**：Azure Active Directory 中的一个帐户，已被授予为组织安装和管理 RMS 连接器的权限。
+-   **Azure Rights Management 连接器管理员**：Azure Active Directory 中已被授权为组织安装和管理 RMS 连接器的帐户。
 
     > [!NOTE]
-    > 如果你希望使用 Microsoft RMS 连接器管理员帐户，则必须先执行以下操作以分配 RMS 连接器管理员角色：
+    > 通过使用 Azure RMS [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/dn629417.aspx) cmdlet，向帐户分配 Azure Rights Management 全局管理员角色和 Azure Rights Management 连接器管理员角色。
+    > 
+    > 若要使用最小特权运行 RMS 连接器，请为此创建一个专用帐户，然后通过执行以下操作为帐户分配 Azure RMS 连接器管理员角色：
     >
-    > 1.  在同一台计算机上，下载和安装适用于权限管理的 Windows PowerShell。 有关详细信息，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md).
+    > 1.  下载并安装适用于 Rights Management 的 Windows PowerShell（如果你尚未这样做）。 有关详细信息，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
     >
     >     使用“以管理员身份运行”命令启动 Windows PowerShell，并使用 [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) 命令连接到 Azure RMS 服务：
     >
@@ -97,9 +93,9 @@ ms.suite: ems
     >     ```
     >     Add-AadrmRoleBasedAdministrator -SecurityGroupDisplayName <group Name> -Role "ConnectorAdministrator"
     >     ```
-    >     例如，键入 **Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role " ConnectorAdministrator "**
+    >     例如，键入 **Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role "ConnectorAdministrator"**
     >
-    >     尽管这些命令使用 ConnectorAdministrator 角色，但你也可以在此处使用 GlobalAdministrator 角色。
+    >     尽管这些命令会分配连接器管理员角色，但你也可以在此处使用 GlobalAdministrator 角色。
 
 在 RMS 连接器安装过程中，将会验证和安装所有必备软件。如果还没有 Internet Information Services (IIS)，则会安装该服务。另外还要安装和配置连接器软件。 此外，还会创建以下各项，做好配置 Azure RMS 的准备：
 
@@ -111,7 +107,7 @@ ms.suite: ems
 
 -   如果这是你安装的第一个连接器，此时请不要选择“启动连接器管理员控制台对服务器授权”  。 在安装第二个（或最后一个）RMS 连接器之后，再选择此选项。 请在至少一台其他计算机上再次运行向导。 你必须安装至少两个连接器。
 
--   如果你已安装第二个（或最后一个）连接器，请选择**启动连接器管理员控制台对服务器授权**.
+-   如果你已安装第二个（或最后一个）连接器，请选择“启动连接器管理员控制台对服务器授权” 。
 
 > [!TIP]
 > 现在，你可以执行一项验证测试，以测试 RMS 连接器的 Web 服务是否可以运行：
@@ -131,7 +127,7 @@ ms.suite: ems
 
 -   你可以通过指定 Active Directory 安全或分发组，或由多台服务器使用的服务帐户，添加多个服务器作为单个条目。 当你使用此配置时，服务器组将共享相同的 RMS 证书，并且会被视为其中任何一个服务器保护的内容的所有者。 为了最大程度地减少管理开销，我们建议你使用这种单组配置，而不是使用单独服务器的配置，为组织的 Exchange 服务器或 SharePoint 服务器场授权。
 
-在**被允许使用连接器的服务器**页上，单击**添加**.
+在“被允许使用连接器的服务器”页上，单击“添加”。
 
 > [!NOTE]
 > 在 Azure RMS 中授权服务器等效于 AD RMS 配置，都可将 NTFS 权限手动应用到服务或服务器计算机帐户的 ServerCertification.asmx 中，并可向用户手动授予到 Exchange 帐户的超级权限。 此连接器上无需将 NTFS 权限应用到 ServerCertification.asmx。
@@ -161,7 +157,7 @@ ms.suite: ems
 
 -   对于使用文件分类基础结构的文件服务器，相关服务作为本地系统帐户运行，因此你必须为文件服务器（例如 SERVERNAME$）的计算机帐户或包含这些计算机帐户的组授权。
 
-在将服务器添加至列表之后，请单击**关闭**.
+在将服务器添加至列表之后，请单击“关闭” 。
 
 如果尚未配置负载平衡，则现在必须为安装了 RMS 连接器的服务器配置负载平衡，并考虑是否使用 HTTPS 在这些服务器和你刚才授权的服务器之间进行连接。
 
@@ -173,7 +169,7 @@ ms.suite: ems
 > [!IMPORTANT]
 > 在将 Exchange 或 SharePoint 服务器配置为使用连接器之后，我们建议你不要更改该名称，因为你随后必须清除这些服务器的所有 IRM 配置，然后重新进行配置。
 
-在 DNS 中创建名称并配置 IP 地址之后，请配置该地址的负载平衡，将流量定向到连接器服务器。 你可以使用任何基于 IP 的负载平衡器来达到此目的，该负载平衡器应包括 Windows Server 中的网络负载平衡 (NLB) 功能。 有关详细信息，请参阅[负载平衡部署指南](http://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx).
+在 DNS 中创建名称并配置 IP 地址之后，请配置该地址的负载平衡，将流量定向到连接器服务器。 你可以使用任何基于 IP 的负载平衡器来达到此目的，该负载平衡器应包括 Windows Server 中的网络负载平衡 (NLB) 功能。 有关详细信息，请参阅 [负载平衡部署指南](http://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx)。
 
 使用以下设置来配置 NLB 群集：
 
@@ -238,12 +234,13 @@ ms.suite: ems
 
 -   对于 64 位计算机：RMSConnectorSetup.exe
 
-如果你尚未下载这些文件，可从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkId=314106)下载.
+如果你尚未下载这些文件，可从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkId=314106)下载。
 
 
 ## 后续步骤
-安装和配置 RMS 连接器之后，即可配置本地服务器以使用此连接器。 转至[为 Azure Rights Management 连接器配置服务器](configure-servers-rms-connector.md).
+安装和配置 RMS 连接器之后，即可配置本地服务器以使用此连接器。 转至[为 Azure Rights Management 连接器配置服务器](configure-servers-rms-connector.md)。
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,28 +1,21 @@
 ---
-# required metadata
-
-title: 从 AD RMS 迁移到 Azure Rights Management - 阶段 4 | Azure RMS
-description:
-keywords:
+title: "从 AD RMS 迁移到 Azure Rights Management - 阶段 4 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
+ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+
 
 ---
 
@@ -49,7 +42,7 @@ ms.suite: ems
 
 若要重新键入你的 Azure RMS 租户密钥，请执行以下操作：
 
--   如果你的 Azure RMS 租户密钥由 Microsoft 管理：若要执行此操作，[请与 Microsoft 支持部门联系](../get-started/information-support#to-contact-microsoft-support)以创建**请求重新键入 Azure RMS 租户密钥的 Azure Rights Management 支持案例**。 必须证明你是你 Azure RMS 租户的管理员，还须了解此过程将需要几天才能确认。 收取标准支持费用：重新键入租户密钥并不是免费支持服务。
+-   如果你的 Azure RMS 租户密钥由 Microsoft 管理：若要执行此操作，[请与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)以创建**请求重新键入 Azure RMS 租户密钥的 Azure Rights Management 支持案例**。 必须证明你是你 Azure RMS 租户的管理员，还须了解此过程将需要几天才能确认。 收取标准支持费用：重新键入租户密钥并不是免费支持服务。
 
 -   如果你的 Azure RMS 租户密钥由你管理 (BYOK)：重复执行 BYOK 过程以通过 Internet 或亲自生成并创建新的密钥。
 
@@ -61,6 +54,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

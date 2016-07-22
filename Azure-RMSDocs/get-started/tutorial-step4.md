@@ -1,28 +1,26 @@
 ---
-# required metadata
-
-title: "Azure RMS 快速入门教程 - 步骤 4 | AZURE RMS"
+title: "Azure RMS 快速入门教程 - 步骤 4 | Azure RMS"
 description: "使用本教程的第四步，可以快速试用适合你的组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。"
-keywords:
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
-ms.technology: techgroup-identity
+ms.technology: 
 ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
-
-# optional metadata
-
-ROBOTS:
-audience:
-ms.devlang:
+ROBOTS: 
+audience: 
+ms.devlang: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ms.tgt_pltfrm: 
+ms.custom: 
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
+
 
 ---
 
@@ -76,9 +74,11 @@ ms.custom:
 |关于你所看到的两个版本的电子邮件附件文件|[自动创建的 .ppdf 文件是什么文件？](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)|
 
 
->[!div class="step-by-step"] [«步骤 3](tutorial-step3.md)
-[步骤 5»](tutorial-step5.md)
+>[!div class="step-by-step"]
+[« 步骤 3](tutorial-step3.md)
+[步骤 5 »](tutorial-step5.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

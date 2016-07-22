@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: API 参考 | Azure RMS
-description: Microsoft Rights Management SDK 4.2 支持多种操作系统；Android、iOS、OS X、Linux、Windows Phone 和 Windows 应用商店。
-keywords:
+title: "API 参考 | Azure RMS"
+description: "Microsoft Rights Management SDK 4.2 支持多种操作系统；Android、iOS、OS X、Linux、Windows Phone 和 Windows 应用商店。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 05/04/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6bfe923868b9ad648386c5ce2786b3beb1e9fc0c
+ms.openlocfilehash: 25894ed446911a55481d0f2ac628db2f46e477f6
+
 
 ---
 
@@ -48,6 +44,7 @@ Microsoft Rights Management SDK 4.2 支持多种操作系统。 有关特定平�
  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

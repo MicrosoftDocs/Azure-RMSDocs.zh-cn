@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 如何使服务应用程序可以使用基于云的 RMS | Azure RMS
-description: 本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。
-keywords:
+title: "如何使服务应用程序可以使用基于云的 RMS | Azure RMS"
+description: "本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,24 +10,22 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4c3625676c7e794ef133c75881f666bae80e0513
+ms.openlocfilehash: ad8c41c9f3f3515a817d508d8f5a8953daf4b440
+
 
 ---
 
 # 操作说明：使服务应用程序可以使用基于云的 RMS
 
-本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。 有关详细信息，请参阅 [Azure Rights Management 入门](https://technet.microsoft.com/en-us/library/jj585016.aspx)。
+本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。 有关详细信息，请参阅 [Azure Rights Management 入门](https://technet.microsoft.com/library/jj585016.aspx)。
 
 **重要**  
-为了通过 Azure RMS 使用 Rights Management Services SDK 2.1 服务应用程序，你需要创建自己的租户。 有关详细信息，请参阅[Azure RMS 要求：支持 Azure RMS 的云订阅](/rights-management/get-started/requirements-subscriptions.md)
+为了通过 Azure RMS 使用 Rights Management Services SDK 2.1 服务应用程序，你需要创建自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md)
 
 ## 先决条件
 
@@ -176,6 +172,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

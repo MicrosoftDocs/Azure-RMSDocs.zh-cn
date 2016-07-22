@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护 | Azure RMS
-description:
-keywords:
+title: "使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1fc1835b60c4c75b81f106011849940ba2e77164
+ms.openlocfilehash: afb00e010df25dea5f3c3cad23824f773de59b18
+
 
 ---
 
@@ -33,7 +27,8 @@ ms.suite: ems
 
 此解决方案允许你自动保护运行 Windows Server 的文件服务器上的文件夹中的所有文件或自动保护符合特定条件的文件。 例如，已分类为包含机密或敏感信息的文件。 此解决方案使用 Azure Rights Management (Azure RMS) 来保护文件，因此必须将此技术部署在你的组织中。
 
-> [!NOTE]尽管 Azure RMS 包括支持文件分类基础结构的[连接器](../deploy-use/deploy-rms-connector.md)，但该解决方案仅支持本机保护（例如，Office 文件）。
+> [!NOTE]
+> 尽管 Azure RMS 包括支持文件分类基础结构的[连接器](../deploy-use/deploy-rms-connector.md)，但该解决方案仅支持本机保护（例如，Office 文件）。
 > 
 > 若要支持使用文件分类基础结构的所有文件类型，必须使用 Windows PowerShell **RMS 保护** 模块，如本文中所述。 RMS 保护 cmdlet（如 RMS 共享应用程序）支持一般性保护和本机保护，这意味着可以保护所有文件。 有关这些不同保护级别的详细信息，请参阅 [Rights Management 共享应用程序管理员指南 ](sharing-app-admin-guide.md) 中的 [保护级别 – 本机和常规 ](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 部分。
 
@@ -278,7 +273,8 @@ ms.suite: ems
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
     ```
-    > [!TIP]一些故障排除技巧：
+    > [!TIP]
+    > 一些故障排除技巧：
     > 
     > -   如果你在报告中看到 **0** （而不是你的文件夹中的文件数），则这指示脚本未运行。 首先，通过在 Windows PowerShell ISE 中加载脚本以验证脚本内容来检查脚本本身，然后尝试运行它以查看是否显示任何错误。 如果未指定任何参数，该脚本将尝试连接到 Azure RMS 并向其进行身份验证。
     > 
@@ -306,6 +302,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

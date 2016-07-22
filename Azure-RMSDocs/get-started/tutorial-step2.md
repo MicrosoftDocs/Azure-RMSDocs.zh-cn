@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure RMS 快速入门教程 - 步骤 2 | Azure RMS
-description: 使用本教程的第二步，可以快速试用适合你的组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。
-keywords:
+title: "Azure RMS 快速入门教程 - 步骤 2 | Azure RMS"
+description: "使用本教程的第二步，可以快速试用适合你的组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。"
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f32cf2f3-29e2-429c-a0fd-b16cc482484a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
+
 
 ---
 
@@ -71,9 +65,11 @@ ms.suite: ems
 |了解本机保护和常规保护的区别|[一般性保护和内置（本机）保护的区别是什么？](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)|
 
 
->[!div class="step-by-step"] [«步骤 1](quick-start-tutorial.md)
-[步骤 3»](tutorial-step3.md)
+>[!div class="step-by-step"]
+[« 步骤 1](quick-start-tutorial.md)
+[步骤 3 »](tutorial-step3.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

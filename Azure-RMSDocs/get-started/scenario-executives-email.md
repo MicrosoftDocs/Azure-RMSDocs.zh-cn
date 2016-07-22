@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 方案 - 高级管理人员安全地交换特权信息 | Azure RMS
-description:
-keywords:
+title: "方案 - 高级管理人员安全地交换特权信息 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: def8b7e98fd55a3d028978ffc9f8e41e38a5622c
+
 
 ---
 
@@ -56,7 +50,7 @@ ms.suite: ems
 |已激活 Azure Rights Management|[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)|
 |以下配置之一：<br /><br />- 已为 Azure Rights Management 启用了 Exchange Online<br /><br />- 已为 Exchange 内部部署安装和配置了 RMS 连接器|对于 Exchange Online：请参阅[为 Azure Rights Management 配置应用程序](https://technet.microsoft.com/library/jj585031.aspx)中的 **Exchange Online：IRM 配置**部分。<br /><br />对于 Exchange 内部部署：请参阅[部署 Azure Rights Management 连接器](https://technet.microsoft.com/library/dn375964.aspx)|
 |已按下文所述配置了自定义模板|[为 Azure Rights Management 配置自定义模板](https://technet.microsoft.com/library/dn642472.aspx)|
-|已按本文之后章节所述为 IRM 配置了传输保护规则|对于 Exchange Online：请参阅[创建传输保护规则](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />对于 Exchange 2013：请参阅[创建传输保护规则](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.150%29.asp)<br /><br />对于 Exchange 2010：请参阅[创建传输保护规则](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
+|已按本文之后章节所述为 IRM 配置了传输保护规则|对于 Exchange Online：请参阅[创建传输保护规则](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />对于 Exchange 2013：请参阅[创建传输保护规则](https://technet.microsoft.com/library/dd302432%28v=exchg.150%29.asp)<br /><br />对于 Exchange 2010：请参阅[创建传输保护规则](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
 
 ### 为高级管理人员配置自定义模板
 
@@ -138,6 +132,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jul16_HO2-->
 
 

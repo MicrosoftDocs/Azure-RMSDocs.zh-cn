@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Microsoft 托管 - 租户密钥生命周期操作 | Azure RMS
-description:
-keywords:
+title: "Microsoft 托管 - 租户密钥生命周期操作 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: feb41356a2ef074679e60ce4bb7b1d6ee910371c
+
 
 ---
 
@@ -42,7 +36,7 @@ ms.suite: ems
 
 -   你认为租户密钥的主副本（你掌握的副本）已泄漏。
 
-你可以通过[与 Microsoft 支持部门联系](../get-started/information-support#to-contact-microsoft-support)以创建“请求重新键入 Azure RMS 租户密钥的 Azure Rights Management 支持案例”来重新键入你的租户密钥。 必须证明你是你 Azure RMS 租户的管理员，还须了解此过程将需要几天才能确认。 收取标准支持费用：重新键入租户密钥并不是免费支持服务。
+你可以通过以下方式重新键入租户密钥：[与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)，以创建**请求重新键入 Azure RMS 租户密钥的 Azure Rights Management 支持案例**。 必须证明你是你 Azure RMS 租户的管理员，还须了解此过程将需要几天才能确认。 收取标准支持费用：重新键入租户密钥并不是免费支持服务。
 
 当你更新租户密钥时，新内容将使用新租户密钥来保护。 这个过程是分阶段进行的，因此在一段时间内，有些新内容仍将使用旧租户密钥来保护。 以前受到保护的内容仍将使用旧租户密钥来保护。 为了支持此种方案，Azure RMS 保留你的旧密钥，使得它能够发布旧内容的许可证。
 
@@ -54,7 +48,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 ### 步骤 1：启动导出
 
--   若要执行此操作，[请与 Microsoft 支持部门联系](../get-started/information-support#to-contact-microsoft-support)，以创建“请求 Azure RMS 密钥导出的 Azure Rights Management 支持案例”。 必须证明你是你 Azure RMS 租户的管理员，还须了解此过程将需要几天才能确认。 收取标准支持费用：导出租户密钥并不是免费支持服务。
+-   若要执行此操作，[请与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)，以创建**请求 Azure RMS 密钥导出的 Azure Rights Management 支持案例**。 必须证明你是你 Azure RMS 租户的管理员，还须了解此过程将需要几天才能确认。 收取标准支持费用：导出租户密钥并不是免费支持服务。
 
 ### 步骤 2：等待验证
 
@@ -86,7 +80,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 -   在收到你的租户密钥后，对其进行良好的保护，因为如果有人得到了它，他们将可以解密由该密钥保护的所有文档。
 
-    如果你导出租户密钥的原因是不想再使用 Azure RMS，则最好的做法是马上禁用你的 RMS 租户。 不要拖延到收到租户密钥后再做此事，因为此预防措施可以帮助你将不该得到你的租户密钥的人得到它后导致的后果降至最低。 有关说明，请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](decommission-deactivate.md)。
+    如果你导出租户密钥的原因是不想再使用 Azure RMS，则最好的做法是马上禁用你的 RMS 租户。 不要拖延到收到租户密钥后再做此事，因为此预防措施可以帮助你将不该得到你的租户密钥的人得到它后导致的后果降至最低。 相关说明请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](decommission-deactivate.md)。
 
 ## 对违规行为做出响应
 如果没有违规响应流程，无论如何强大的安全系统都是不完整的。 你的租户密钥可能泄漏或失窃。 即便它得到了很好的保护，在当前这代的 HSM 技术或当前的密钥长度和算法方面也可以找到一些漏洞。
@@ -97,13 +91,14 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 
 |事件描述|可能的响应|
 |------------------------|-------------------|
-|你的租户密钥泄露。|更新你的租户密钥。 请参阅本文中的“重新键入你的租户密钥”[](operations-tenant-key#re-key-your-tenant-key)部分。|
+|你的租户密钥泄露。|更新你的租户密钥。 请参阅本文中的[重新键入你的租户密钥](operations-microsoft-managed-tenant-key.md#re-key-your-tenant-key)部分。|
 |未经授权的个人或恶意软件获取了使用你的租户密钥的权限，但密钥本身并未泄露。|更新你的租户密钥在这种情况下并不奏效，需要进行根源分析。 如果进程或软件 Bug 是导致未经授权的个人获得访问权限的原因，则必须解决这一问题。|
 |在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure RMS，以支持新的算法和具有弹性的更长密钥长度，并指示所有客户更新他们的租户密钥。|
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

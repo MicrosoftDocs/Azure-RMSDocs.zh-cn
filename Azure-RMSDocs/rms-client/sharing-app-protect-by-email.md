@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 使用 Rights Management 共享应用程序，保护你通过电子邮件共享的文件 | Azure RMS
-description:
-keywords:
+title: "使用 Rights Management 共享应用程序，保护你通过电子邮件共享的文件 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
+
 
 ---
 
@@ -37,7 +31,7 @@ ms.suite: ems
 
 -   选择相应的选项，以便在有人尝试打开这些受保护的附件时接收电子邮件。 每当有人访问该文件时，你都会收到通知，告诉你谁在尝试打开文件、何时尝试打开文件，以及尝试是否成功（他们是否成功通过了身份验证）。
 
--   使用文档跟踪站点。 你甚至可以通过在文档跟踪站点中撤消对文件的访问权限，来停止共享该文件。 有关详细信息，请参阅[使用 RMS 共享应用程序跟踪和撤销文档](sharing-app-track-revoke.md).
+-   使用文档跟踪站点。 你甚至可以通过在文档跟踪站点中撤消对文件的访问权限，来停止共享该文件。 有关详细信息，请参阅[使用 RMS 共享应用程序跟踪和撤销文档](sharing-app-track-revoke.md)。
 
 ## 使用 Outlook：保护通过电子邮件共享的文件
 
@@ -45,9 +39,9 @@ ms.suite: ems
 
     ![RMS 共享应用程序的 Outlook 加载项](../media/ADRMS_MSRMSApp_SP_OutlookToolbar.png)
 
-    如果看不到此按钮，则很可能你的计算机上未安装 RMS 共享应用程序、未安装最新版本，或必须重新启动计算机才能完成此安装。 有关如何安装共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md).
+    如果看不到此按钮，则很可能你的计算机上未安装 RMS 共享应用程序、未安装最新版本，或必须重新启动计算机才能完成此安装。 有关如何安装共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md)。
 
-2.  在“共享保护项”[](sharing-app-dialog-box.md)对话框中指定你希望用于此文件的选项，然后单击“立即发送”.
+2.  在“共享保护项”[](sharing-app-dialog-box.md)对话框中指定你希望用于此文件的选项，然后单击“立即发送”。
 
 ### 保护你通过电子邮件共享的文件的其他方法
 除了使用 Outlook 共享受保护文件以外，还可以使用以下替代方法：
@@ -68,9 +62,9 @@ ms.suite: ems
 
         ![Office 工具栏加载项](../media/ADRMS_MSRMSApp_SP_OfficeToolbar.png)
 
-    如果看不到这些用于保护的选项，则很可能你的计算机上未安装 RMS 共享应用程序、未安装最新版本，或必须重新启动计算机才能完成此安装。 有关如何安装共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md).
+    如果看不到这些用于保护的选项，则很可能你的计算机上未安装 RMS 共享应用程序、未安装最新版本，或必须重新启动计算机才能完成此安装。 有关如何安装共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md)。
 
-2.  在“共享保护内容”[](sharing-app-dialog-box.md)对话框中指定你希望用于此文件的选项，然后单击“发送” .
+2.  在“共享保护内容”[](sharing-app-dialog-box.md)对话框中指定你希望用于此文件的选项，然后单击“发送” 。
 
 3.  你可能很快会看到告知你该文件受保护的对话框，然后会看到为你创建的电子邮件，该邮件用于通知收件人附件受 Microsoft RMS 保护并且他们必须登录。 当他们单击此链接登录时，他们将会看到说明和链接，以确保他们能够打开你的受保护的附件。
 
@@ -98,6 +92,7 @@ ms.suite: ems
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

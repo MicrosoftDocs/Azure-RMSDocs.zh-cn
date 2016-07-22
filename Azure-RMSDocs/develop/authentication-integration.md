@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 如何使用 Azure AD 注册应用并为其启用 RMS | Azure RMS
-description: 介绍针对启用 RMS 的应用的用户身份验证基础知识。
-keywords:
+title: "如何使用 Azure AD 注册应用并为其启用 RMS | Azure RMS"
+description: "介绍针对启用 RMS 的应用的用户身份验证基础知识。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/15/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
+
 
 ---
 
@@ -53,7 +49,8 @@ ms.suite: ems
 -   [适用于 dotnet 的 Windows Azure Active Directory 身份验证库 (ADAL)](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 -   对于 Linux SDK，ADAL 库与 SDK 源（可通过 [Github](https://github.com/AzureAD/rms-sdk-for-cpp) 获取）一起打包。
 
->[!NOTE]  我们建议使用 ADAL 之一，不过你可以使用其他身份验证库。
+>[!NOTE]  
+> 我们建议使用 ADAL 之一，不过你可以使用其他身份验证库。
 
 ### 身份验证参数
 
@@ -66,13 +63,15 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
 来自上一个注册步骤（通过 Azure 门户）。
 - **重定向 Uri** – 向身份验证库提供身份验证代码的 URI 目标。 iOS 和 Android 需要特定的格式。 ADAL 相应的 GitHub 存储库的 README 文件中对此已有说明。 该值来自上一个注册步骤（通过 Azure 门户）。
 
->[!NOTE] “范围”当前未使用，但可能会使用，因此会保留供将来使用。
+>[!NOTE] 
+> “范围”当前未使用，但可能会使用，因此会保留供将来使用。
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
 
     iOS: `<app-scheme>://<bundle-id>`
 
->[!NOTE] 如果应用未遵循这些指导原则，则 Azure RMS 和 Azure AD 工作流可能会失败，并且不受 Microsoft.com 支持。 而且，如果在生产应用中使用无效客户端 Id，则可能会违反权限管理许可协议 (RMLA)。
+>[!NOTE] 
+> 如果应用未遵循这些指导原则，则 Azure RMS 和 Azure AD 工作流可能会失败，并且不受 Microsoft.com 支持。 而且，如果在生产应用中使用无效客户端 Id，则可能会违反权限管理许可协议 (RMLA)。
 
 ### 身份验证回调实现应呈现的内容
 **身份验证代码示例** - 此 SDK 具有演示身份验证回调的使用的示例代码。 为方便起见，这些代码示例在此处以及以下每个链接的主题中进行了表示。
@@ -271,6 +270,7 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

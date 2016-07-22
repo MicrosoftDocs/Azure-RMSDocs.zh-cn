@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Rights Management 共享应用程序 &colon; 版本发行历史记录 | Azure RMS
-description:
-keywords:
+title: "Rights Management 共享应用程序 &colon; 版本发行历史记录 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
+ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
+
 
 ---
 
@@ -34,7 +28,21 @@ Rights Management 团队定期更新 Rights Management 共享应用程序，以�
 不会列出 2015 年 1 月 1 日之前的版本。
 
 > [!NOTE]
-> 如果你有关于 RMS 共享应用程序的反馈或问题，请发送电子邮件到 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+> 如果你有关于 RMS 共享应用程序的反馈或问题，请发送电子邮件到 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)。
+
+## 版本 1.0.2191.0
+**发布日期**：2016/06/16
+
+**修补程序**：
+
+- 文档跟踪站点现在显示每个被跟踪文档的正确视图数目。
+
+- 所有区域设置的模板现在均显示为可供用户使用。
+
+- 在对 PowerPoint 文件使用“共享保护项”之后，对该文件本地版本的更改现在可以正确保存。
+
+- 少量小缺陷修复和错误消息改进。
+
 
 ## 版本 1.0.2004.0
 **发布日期**：2015/12/11
@@ -62,7 +70,7 @@ Rights Management 团队定期更新 Rights Management 共享应用程序，以�
 
 -   对 Azure RMS 的 Multi-Factor Authentication (MFA) 的支持也将删除 Microsoft 登录助手（使用新式身份验证）的依赖关系。
 
-    有关详细信息，请参阅 [Azure Rights Management 要求](../get-started/requirements-azure-rms.md)中的[多因素身份验证 (MFA) 和 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) 部分.
+    有关详细信息，请参阅 [Azure Rights Management 要求](../get-started/requirements-azure-rms.md)中的[多因素身份验证 (MFA) 和 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) 部分。
 
 ## 版本 1.0.1784.0
 **发布日期**：2015/7/30
@@ -84,7 +92,7 @@ Rights Management 团队定期更新 Rights Management 共享应用程序，以�
 
 **新增功能**：
 
--   支持文档跟踪和撤消。 有关详细信息，请参阅[使用 RMS 共享应用程序跟踪和撤销文档](sharing-app-track-revoke.md).
+-   支持文档跟踪和撤消。 有关详细信息，请参阅[使用 RMS 共享应用程序跟踪和撤销文档](sharing-app-track-revoke.md)。
 
 -   选择“共享保护” 时的模板支持：
 
@@ -94,7 +102,7 @@ Rights Management 团队定期更新 Rights Management 共享应用程序，以�
 
     -   你将不会再看到“允许在所有设备上使用”  和“强制实施使用限制” 选项。 相反，根据文件类型，将自动选择“一般性保护”  。
 
-    有关详细信息，请参阅 [Rights Management 共享应用程序的对话框选项](sharing-app-dialog-box.md).
+    有关详细信息，请参阅 [Rights Management 共享应用程序的对话框选项](sharing-app-dialog-box.md)。
 
 ## 版本 1.0.1667.0
 **发布日期**：2015/1/19
@@ -109,10 +117,11 @@ Rights Management 团队定期更新 Rights Management 共享应用程序，以�
 
 **新增功能**：
 
--   **在你的组织内支持多个电子邮件域**：如果你使用 AD RMS，并且组织中的用户具有多个电子邮件域，此更新可让你的用户使用其他域中的组织中的用户保护的内容。 有关详细信息，请参阅 [Rights Management 共享应用程序管理员指南](sharing-app-admin-guide.md)中的[仅限 AD RMS：在组织中支持多个电子邮件域](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization)部分.
+-   **在你的组织内支持多个电子邮件域**：如果你使用 AD RMS，并且组织中的用户具有多个电子邮件域，此更新可让你的用户使用其他域中的组织中的用户保护的内容。 有关详细信息，请参阅 [Rights Management 共享应用程序管理员指南](sharing-app-admin-guide.md)中的[仅限 AD RMS：在组织中支持多个电子邮件域](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization)部分。
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

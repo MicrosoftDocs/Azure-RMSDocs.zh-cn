@@ -1,26 +1,20 @@
 ---
-# required metadata
-
-title: Azure RMS 快速入门教程 - 步骤 1 | Azure RMS
-description: 使用本教程的第一步，可以快速试用适合你的组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。
-keywords:
+title: "Azure RMS 快速入门教程 - 步骤 1 | Azure RMS"
+description: "使用本教程的第一步，可以快速试用适合你的组织的 Microsoft Azure Rights Management，只需执行 5 个步骤，所需时间不到 15 分钟。"
+keywords: 
 author: Cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/29/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.assetid: 7c4798e6-34a0-4c3f-a47f-505764ddf322
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fab51fefed8d3a347a52ab7c118bb40b3cc23b37
+ms.openlocfilehash: 80f2742bbaab9d3252cec6f6c709012ca81218d5
+
 
 ---
 
@@ -45,30 +39,33 @@ ms.suite: ems
 
 即使你的订阅支持 Azure 权限管理，该服务在默认情况下也是禁用的。 你可以使用 Office 365 管理中心或 Azure 经典门户来激活它：
 
--   如果你有一个包含 Azure Rights Management 的 Office 365 订阅，或者虽然你的 Office 365 订阅不包含 Azure Rights Management，但你有一个包含 Azure RMS Premium 的订阅，则可执行以下操作：**使用 Office 365 管理中心**.
+-   如果你有一个包含 Azure Rights Management 的 Office 365 订阅，或者虽然你的 Office 365 订阅不包含 Azure Rights Management，但你有一个包含 Azure RMS Premium 的订阅，则可执行以下操作：**使用 Office 365 管理中心**。
 
--   如果没有 Office 365 订阅：**使用 Azure 经典门户**.
+-   如果没有 Office 365 订阅：**使用 Azure 经典门户**。
 
 ![教程步骤 1 屏幕截图](../media/AzRMS_Tutorial_1_Screenshots.png)
 
 ### 从 Office 365 经典管理中心激活 Rights Management
 
-1.  转到 [Office 365 门户](https://portal.office.com/) ，使用你的工作或学校帐户登录。
+> [!NOTE]
+> 如果你使用的是 **Office 365 管理中心预览版**，而不是 Office 365 经典管理中心，则可以使用[如何从 Office 365 管理中心预览版激活 Azure Rights Management](../deploy-use/activate-office365-preview.md) 中的说明，或切换到经典版以使用下列说明。 若要进行切换，请在登录后，单击“主页”上的“转到旧管理中心”。
+
+1.  转到 [Office 365 门户](https://portal.office.com/)，并使用 Office 365 全局管理员帐户登录。
 
 2.  如果未自动显示 Office 365 管理中心，请选择左上方的“应用启动程序”图标，然后选择“管理”。 “管理”  磁贴只会向 Office 365 管理员显示。
 
     > [!TIP]
-    > 有关管理中心的帮助，请参阅[关于 Office 365 管理中心 - 管理员帮助](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547).
+    > 有关管理中心的帮助，请参阅 [关于 Office 365 管理中心 - 管理员帮助](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547)。
 
-3.  在左窗格中，展开**服务设置**.
+3.  在左窗格中，单击“服务设置” 。
 
-4.  单击**Rights Management**.
+4.  单击“权限管理” 。
 
-5.  在 **RIGHTS MANAGEMENT** 页上，单击**管理**.
+5.  在 **“权限管理”** 页上，单击 **“管理”**。
 
-6.  在 **Rights Management** 页上，单击**激活**.
+6.  在“Rights Management”页上，单击“激活”。
 
-7.  提示**是否要激活 Rights Management?**时，单击**激活**.
+7.  当提示 **“是否要激活权限管理?”**时，请单击 **“激活”**。
 
 你现在应该看到 **“权限管理已激活”** 以及停用选项（可能需要手动刷新该页）。
 
@@ -76,15 +73,15 @@ ms.suite: ems
 
 ### 从 Azure 经典门户激活 Rights Management
 
-1.  转到 [ Azure 经典门户](http://go.microsoft.com/fwlink/p/?LinkID=275081)并登录。
+1.  转到 [Azure 经典门户](http://go.microsoft.com/fwlink/p/?LinkID=275081)，并使用 Azure Active Directory 全局管理员帐户登录。
 
-2.  在左窗格中，单击 **ACTIVE DIRECTORY**.
+2.  在左窗格中，单击“ACTIVE DIRECTORY” 。
 
-3.  在 **Active Directory** 页中，单击 **RIGHTS MANAGEMENT**.
+3.  在 **“Active Directory”** 页中，单击 **“权限管理”**。
 
 4.  选择要进行 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 的待管理目录，单击“激活”，然后确认你的操作。
 
-**RIGHTS MANAGEMENT 状态**现在应该显示**活动**，而**激活**选项也应已替换为**停用**.
+**“权限管理状态”** 现在应该显示 **“活动”** ，而 **“激活”** 选项将替换为 **“停用”**。
 
 虽然你可以在门户中配置 Rights Management 的其他选项，但这些选项不是本教程所必需的，因此可关闭 Azure 经典门户。
 
@@ -102,6 +99,7 @@ ms.suite: ems
 [« 简介](quick-start-tutorial.md)
 [步骤 2 »](tutorial-step2.md)
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO5-->
 
 

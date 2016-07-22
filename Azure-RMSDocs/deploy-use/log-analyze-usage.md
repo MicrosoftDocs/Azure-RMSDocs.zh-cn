@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 记录和分析 Azure Rights Management 使用情况 | Azure RMS
-description:
-keywords:
+title: "记录和分析 Azure Rights Management 使用情况 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8
+ms.openlocfilehash: 845a47f526754f291c27a3c2bbd80af736b44992
+
 
 ---
 
@@ -47,7 +41,8 @@ ms.suite: ems
 
     如果遇到信息泄露，安全人员很可能向你询问最近谁访问了特定文档，以及可疑人员最近访问了哪些信息。 当你使用 Azure Rights Management 和日志记录时，你就能够回答这些类型的问题，因为使用受保护内容的用户始终必须获取 Rights Management 许可证才能打开受 Azure Rights Management 保护的文档和图片，即便这些文件已移动（通过电子邮件）或复制到 U 盘/其他存储设备也是如此。 这意味着在通过 Azure Rights Management 保护数据时，你能够使用 Azure Rights Management 日志作为确定性信息源进行取证分析。
 
-> [!NOTE]如果你只希望记录 Azure Rights Management 的管理任务，而不希望跟踪用户如何使用 Rights Management，则可使用适用于 Azure Rights Management 的 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet。
+> [!NOTE]
+> 如果你只希望记录 Azure Rights Management 的管理任务，而不希望跟踪用户如何使用 Rights Management，则可使用适用于 Azure Rights Management 的 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet。
 > 
 > 你还可以使用 Azure 经典门户获取高级使用情况报告，包括“RMS 摘要”、“RMS 活动用户”、“RMS 设备平台”和“RMS 应用程序使用情况”。 若要从 Azure 经典门户访问这些报告，请单击“Active Directory”，选择并打开一个目录，然后单击“报告”。
 
@@ -56,7 +51,8 @@ ms.suite: ems
 ## 如何启用 Azure Rights Management 使用日志记录
 从 2016 年 2 月开始，Azure Rights Management 使用日志记录功能默认为对所有用户启用。 这适用于在 2016 年 2 月以前已激活其 Azure RMS 服务的客户和在 2016 年 2 月后激活该服务的客户。 
 
-> [!NOTE]不针对日志存储或日志记录功能收取额外的费用。
+> [!NOTE]
+> 不针对日志存储或日志记录功能收取额外的费用。
 > 
 > 如果你在 2016 年 2 月以前使用 Azure RMS 的使用日志记录，你需要在 Azure 上拥有订阅和足够的存储空间，而现在不再需要如此。
 
@@ -143,17 +139,17 @@ Azure Rights Management 将日志作为一系列 Blob 写入。
 |--------------|-----------------|---------------|-----------------|
 |date|日期|为请求提供服务时的 UTC 日期。<br /><br />源是为请求提供服务的服务器上的本地时钟。|2013-06-25|
 |time|时间|为请求提供服务时的 UTC 时间（24 小时格式）。<br /><br />源是为请求提供服务的服务器上的本地时钟。|21:59:28|
-|row-id|文本|此日志记录的唯一 GUID。<br /><br />在你整合日志或将日志复制为其他格式时，这个值是有用的。|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
+|row-id|文本|此日志记录的唯一 GUID。 如果不存在值，则使用 correlation-id 值来标识该条目。<br /><br />在你整合日志或将日志复制为其他格式时，这个值是有用的。|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|Name|所请求的 RMS API 的名称。|AcquireLicense|
-|user-id|String|发出请求的用户。<br /><br />该值包括在单引号中。 有些请求类型是匿名的，在这种情况下，该值为 ”。|‘joe@contoso。com’|
-|result|String|如果成功地为请求提供服务，则为‘Success’。<br /><br />如果为请求提供服务失败，则在单引号中显示错误类型。|‘Success’|
+|user-id|String|发出请求的用户。<br /><br />该值包括在单引号中。 由你管理的租户密钥 (BYOK) 所发出的调用具有值 **"**，这也适用于请求类型为匿名时的情况。|‘joe@contoso。com’|
+|result|字符串|如果成功地为请求提供服务，则为 ‘Success’。<br /><br />如果为请求提供服务失败，则在单引号中显示错误类型。|'Success'|
 |correlation-id|文本|在 RMS 客户端日志和服务器日志之间通用的针对给定请求的 GUID。<br /><br />此值有助于你解决客户端问题。|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|文本|包括在大括号中的 GUID，标识受保护内容（例如某个文档）。<br /><br />只有当 request-type 为 AcquireLicense 时，此字段才具有值，对于其他所有请求类型，此字段都为空。|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
 |owner-email|String|文档所有者的电子邮件地址。|alice@contoso.com|
 |issuer|String|文档发布者的电子邮件地址。|alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
-|Template-id|String|用于保护文档的模板的 ID。|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|File-name|String|已保护的文档的文件名。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。|TopSecretDocument.docx|
-|Date-published|日期|保护文档时的日期。|2015-10-15T21:37:00|
+|template-id|字符串|用于保护文档的模板的 ID。|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
+|file-name|字符串|已保护的文档的文件名。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。|TopSecretDocument.docx|
+|date-published|日期|保护文档时的日期。|2015-10-15T21:37:00|
 |c-info|String|有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Address|发出请求的客户端的 IP 地址。|64.51.202.144|
 
@@ -166,7 +162,7 @@ Azure Rights Management 将日志作为一系列 Blob 写入。
 
 -   如果你使用 RMS 连接器。
 
-    此连接器发出的请求将使用服务主体名称来进行记录，该名称是 RMS 在你安装 RMS 连接器时自动生成的。
+    此连接器发出的请求将使用服务主体名称 **Aadrm_S-1-7-0** 进行记录，该名称是在安装 RMS 连接器时自动生成的。
 
 #### 典型请求类型
 Azure Rights Management 中有很多请求类型，但下表列出了其中一些最常用的请求类型。
@@ -181,7 +177,7 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 |BECreateEndUserLicenseV1|从移动设备进行调用以创建最终用户许可证。|
 |BEGetAllTemplatesV1|从移动设备（后端）进行调用以获取所有模板。|
 |Certify|客户端正在认证要保护的内容。|
-|Decrypt|客户端正在尝试解密受 RMS 保护的内容。|
+|KMSPDecrypt|客户端正在尝试解密受 RMS 保护的内容。 仅适用于客户管理的租户密钥 (BYOK)。|
 |DeleteTemplateById|从 Azure 经典门户进行调用以按模板 ID 删除模板。|
 |ExportTemplateById|从 Azure 经典门户进行调用以基于模板 ID 导出模板。|
 |FECreateEndUserLicenseV1|类似于 AcquireLicense 请求，但来自移动设备。|
@@ -199,7 +195,7 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 |ServerCertify|从已启用 RMS 的客户端（如 SharePoint）进行调用以认证服务器。|
 |SetUsageLogFeatureState|进行调用以启用使用日志记录。|
 |SetUsageLogStorageAccount|进行调用以指定 Azure RMS 日志的位置。|
-|SignDigest|在密钥用于签名目的时进行调用。 通常是针对每个 AcquireLicence（或 FECreateEndUserLicenseV1）、Certify 和 GetClientLicensorCert（或 FECreatePublishingLicenseV1）请求调用一次此项。|
+|KMSPSignDigest|在将客户管理的密钥 (BYOK) 用于签名时进行调用。 通常是针对每个 AcquireLicence（或 FECreateEndUserLicenseV1）、Certify 和 GetClientLicensorCert（或 FECreatePublishingLicenseV1）请求调用一次此项。|
 |UpdateTemplate|从 Azure 经典门户进行调用以更新现有模板。|
 
 ## Windows PowerShell 参考
@@ -229,6 +225,7 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

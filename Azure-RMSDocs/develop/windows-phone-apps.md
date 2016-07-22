@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Windows Phone 安装程序 | Azure RMS
-description: Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
-keywords:
+title: "Windows Phone 安装程序 | Azure RMS"
+description: "Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 90552435666b8f25c893fcffe8c8cf3355a5942d
+ms.openlocfilehash: 136d6e9d0c45a9779f87e32eed8288fe8ee3a622
+
 
 ---
 
@@ -55,7 +51,7 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 
 -   打开 *Visual Studio*。
 -   单击“文件”。 在“文件”菜单上，单击“新建”，然后单击“项目”。
--   在“新项目”对话框中，依次选择 **Visual C#** 和“空白应用 (Windows Phone)”，然后单击“确定”。
+-   在“新建项目”对话框中，依次选择“Visual C”**\#和“空白应用(Windows Phone)”****，然后单击“确定”**。
 
     ![新建项目](../media/wpsetup-newproj.png)
 
@@ -96,6 +92,7 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

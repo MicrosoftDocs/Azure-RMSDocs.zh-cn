@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 方案 - 发送公司机密电子邮件 | Azure RMS
-description:
-keywords:
+title: "方案 - 发送公司机密电子邮件 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: b6f3b06485dda81be2a36035fea7477f4061a8e9
+
 
 ---
 
@@ -163,6 +157,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

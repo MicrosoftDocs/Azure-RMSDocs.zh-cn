@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Rights Management (RMS) 客户端 | Azure RMS
-description:
-keywords:
+title: "Rights Management (RMS) 客户端 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 8c21202793dca90edda943082fcd718bdf7397ca
+
 
 ---
 
@@ -48,6 +43,7 @@ Microsoft Rights Management 服务是一项客户端-服务器解决方案，其
 [比较 Azure RMS 和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

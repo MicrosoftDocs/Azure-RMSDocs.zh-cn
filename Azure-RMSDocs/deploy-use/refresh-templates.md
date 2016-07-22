@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 刷新模板 | Azure RMS
-description:
-keywords:
+title: "刷新模板 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/06/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 771f4139b09cccc05f2d1ee52c76b99467c70446
+ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
+
 
 ---
 
@@ -34,17 +28,17 @@ ms.suite: ems
 
 |应用程序或服务|如何在更改后刷新模板|
 |--------------------------|---------------------------------------------|
-|Exchange Online|需要手动配置来刷新模板。<br /><br />有关配置步骤，请参阅以下部分：[仅适用于 Exchange Online：如何将 Exchange 配置为下载已更改的自定义模板](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates).|
+|Exchange Online|需要手动配置来刷新模板。<br /><br />有关配置步骤，请参阅以下部分：[仅适用于 Exchange Online：如何将 Exchange 配置为下载已更改的自定义模板](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates)。|
 |Office 365|自动刷新 – 无需额外的步骤。|
-|Office 2016 和 Office 2013<br /><br />适用于 Windows 的 RMS 共享应用程序|自动刷新 – 按计划刷新：<br /><br />对于这些更高版本的 Office：默认刷新间隔是 7 天。<br /><br />对于适用于 Windows 的 RMS 共享应用程序：从版本 1.0.1784.0 开始，默认刷新间隔是 1 天。 以前版本的默认刷新间隔为 7 天。<br /><br />若要强制执行比此计划更快的刷新，请参阅以下部分：[适用于 Windows 的 Office 2016、Office 2013 和 RMS 共享应用程序：如何强制执行针对已更改自定义模板的刷新](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
-|Office 2010|当用户登录时刷新。<br /><br />若要强制执行刷新，应要求或强制用户注销和重新登录。 或者，请参阅以下部分：[仅限 Office 2010：如何强制执行针对已更改自定义模板的刷新](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
+|Office 2016 和 Office 2013<br /><br />适用于 Windows 的 RMS 共享应用程序|自动刷新 – 按计划刷新：<br /><br />对于这些更高版本的 Office：默认刷新间隔是 7 天。<br /><br />对于适用于 Windows 的 RMS 共享应用程序：从版本 1.0.1784.0 开始，默认刷新间隔是 1 天。 以前版本的默认刷新间隔为 7 天。<br /><br />若要强制执行比此计划更快的刷新，请参阅以下部分：[适用于 Windows 的 Office 2016、Office 2013 和 RMS 共享应用程序：如何强制执行针对已更改自定义模板的刷新](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template)。|
+|Office 2010|当用户登录时刷新。<br /><br />若要强制执行刷新，应要求或强制用户注销和重新登录。 或者，请参阅以下部分：[仅适用于 Office 2010：如何强制执行针对已更改自定义模板的刷新](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template)。|
 对于使用 RMS 共享应用程序的移动设备，模板会自动下载（必要时还会刷新），而无需其他配置。
 
 ## 仅适用于 Exchange Online：如何将 Exchange 配置为下载已更改的自定义模板
 如果你已经为 Exchange Online 配置了信息权限管理 (IRM)，则不会为用户下载自定义模板，除非你使用 Windows PowerShell 在 Exchange Online 中进行了下列更改：
 
 > [!NOTE]
-> 有关如何在 Exchange Online 中使用 Windows PowerShell 的详细信息，请参阅[在 Exchange Online 中使用 PowerShell](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx).
+> 有关如何在 Exchange Online 中使用 Windows PowerShell 的详细信息，请参阅[在 Exchange Online 中使用 PowerShell](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx)。
 
 每次更改模板时，你必须执行此过程。
 
@@ -144,7 +138,7 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
     > [!TIP]
         > 在注册表路径中，<*MicrosoftRMS_FQDN*> 是指你的 Microsoft RMS 服务 FQDN。 如果你想要验证此值：
 
-    > 1.  对 Azure RMS 运行 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet。 如果你尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md).
+    > 1.  对 Azure RMS 运行 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet。 如果你尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
     > 2.  在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
     > 
     >     示例：**LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
@@ -192,6 +186,7 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 ## 另请参阅
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

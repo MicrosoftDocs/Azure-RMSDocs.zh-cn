@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 如何&#58;使用内置权限 | Azure RMS
-description: 概述了 RMS SDK 4.2 提供的内置权限以及应用为遵守这些限制而强制执行的使用限制。
-keywords:
+title: "如何&#58;使用内置权限 | Azure RMS"
+description: "概述了 RMS SDK 4.2 提供的内置权限以及应用为遵守这些限制而强制执行的使用限制。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9142dd29-f1f4-4c2f-82ac-534f14b8bba1
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79e58b8092ea7cb057229d4c464d79f3694296e6
+ms.openlocfilehash: 4a5c1a0b420b9db20cca237e2170b6479c565ee6
+
 
 ---
 
@@ -144,6 +140,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
