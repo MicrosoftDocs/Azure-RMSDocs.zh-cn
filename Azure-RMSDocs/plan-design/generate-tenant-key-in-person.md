@@ -13,8 +13,8 @@ ms.assetid: 3281e45e-cf69-4dc5-946b-3029851d3152
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 8e77298121a84f6feb16a992da81bd9c3bb7b20b
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
 *适用于：Azure Rights Management、Office 365*
 
 
-如果你决定 [管理自己的租户密钥](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-) 并且不希望通过 Internet 传送它，请使用以下过程亲自传送你的租户密钥。
+如果你决定 [管理自己的租户密钥](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok) 并且不希望通过 Internet 传送它，而是要亲自传送你的租户密钥，请遵循以下步骤。
 
 ## 生成你的租户密钥
 若要生成你自己的租户密钥，请执行以下 3 个步骤：
@@ -151,6 +151,6 @@ cngimport --import –M --key=contosokey --appname=simple contosokey
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

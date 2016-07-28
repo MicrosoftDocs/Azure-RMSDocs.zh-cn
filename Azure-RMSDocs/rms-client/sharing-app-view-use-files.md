@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
+ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
+ms.openlocfilehash: cd19be1c0319a3d2a4609030c0114b07b461c1d8
 
 
 ---
@@ -41,7 +41,7 @@ ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
 如果你看到两个版本的文件，但具有不同的文件扩展名，仅在不打开另一个文件的情况下打开具有 .ppdf 文件扩展名的文件。 如果 .ppdf 版本也无法打开，请首先安装 [RMS 共享应用程序](install-sharing-app.md)，因为该程序知道如何打开具有 .ppdf 文件扩展名的文件。
 
 > [!NOTE]
-> 有关详细信息，请参阅“[自动创建的 .ppdf 文件是什么文件？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)”。
+> 有关详细信息，请参阅“[自动创建的 .ppdf 文件是什么文件？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)”。
 
 文件的打开方式取决于保护方式，此保护方式你可以通过查看文件扩展名得知。 在每种情况下，只要文件受到保护，打开它就需要审核并将处于审核状态。 此外，如果文件以电子邮件附件的形式发送，则每次你打开文件时，发件人都会收到电子邮件通知。
 
@@ -101,13 +101,13 @@ ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
 
 -   [使用 RMS 共享应用程序的示例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## 另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

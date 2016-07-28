@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 8635402989db0f83017151910013ca460011b392
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: ce79ec40cbd8ca3796a17920d27dc3872cd40842
 
 
 ---
@@ -54,7 +54,7 @@ Azure RMS 的一些主要差异：
 |提供两个默认权限策略模板，将内容的访问权限仅限于自己的组织范围内；一个模板提供受保护内容的只读查看，另一个模板提供受保护内容的写入或修改权限。<br /><br />你还可以创建自己的自定义模板，其中包括只对用户的子集可见的部门模板。 有关详细信息，请参阅[为 Azure Rights Management 配置自定义模板](../deploy-use/configure-custom-templates.md)。<br /><br />此外，如果模板不能满足需求，用户可以定义自己的一组权限。|没有默认权限策略模板；必须创建这些模板，然后分发它们。 有关详细信息，请参阅 [AD RMS 策略模板注意事项](http://go.microsoft.com/fwlink/?LinkId=154765)。<br /><br />此外，如果模板不能满足需求，用户可以定义自己的一组权限。|
 |支持的 Microsoft Office 最低版本为 Office 2010，它需要 [RMS 共享应用程序](../rms-client/sharing-app-windows.md)。<br /><br />Microsoft Office for Mac：<br /><br />- Microsoft Office for Mac 2016：受支持<br /><br />- Microsoft Office for Mac 2011：不受支持|支持的 Microsoft Office 最低版本为 Office 2007。<br /><br />Microsoft Office for Mac：<br /><br />- Microsoft Office for Mac 2016：受支持<br /><br />- Microsoft Office for Mac 2011：受支持|
 |支持适用于 Windows、Mac 计算机和移动设备的 [RMS 共享应用程序](../rms-client/sharing-app-windows.md)。<br /><br />此外，RMS 共享应用程序支持以下内容：<br /><br />- 与其他组织的用户共享。<br /><br />- 电子邮件通知，让发件人知道有人尝试打开受保护附件。<br /><br />- 适用于用户的文档跟踪站点，包括撤消文档的功能。|支持适用于 Windows、Mac 计算机和移动设备的 [RMS 共享应用程序](../rms-client/sharing-app-windows.md)。 但是，共享不支持与其他组织的用户共享、电子邮件通知、或文档跟踪站点以及用户撤消文档的功能。|
-|可以在使用 RMS 共享应用程序时，通过[本机保护或常规保护](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)，保护所有文件类型。<br /><br />对于其他应用程序，请查看[客户端设备功能表](../get-started/requirements-client-devices.md#client-device-capabilities)。|可以在使用 RMS 共享应用程序时，通过[本机保护或常规保护](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)，保护所有文件类型。<br /><br />对于其他应用程序，请查看[客户端设备功能表](../get-started/requirements-client-devices.md#client-device-capabilities)。|
+|可以在使用 RMS 共享应用程序时，通过[本机保护或常规保护](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)，保护所有文件类型。<br /><br />对于其他应用程序，请检查[《Azure RMS requirements: Applications》](../get-started/requirements-applications.md)（Azure RMS 要求：应用程序）中的表。|可以在使用 RMS 共享应用程序时，通过[本机保护或常规保护](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)，保护所有文件类型。<br /><br />对于其他应用程序，请检查[《Azure RMS requirements: Applications》](../get-started/requirements-applications.md)（Azure RMS 要求：应用程序）中的表。|
 |支持的 Windows 客户端最低版本为 Windows 7。|支持的 Windows 客户端最低版本为 Windows Vista Service Pack 2。|
 |移动设备支持包括 Windows Phone、Android、iOS 和 Windows RT。<br /><br />在支持 Exchange ActiveSync IRM 协议的所有移动设备平台上，也支持使用该协议管理电子邮件。|移动设备支持包括 Windows Phone、Android、iOS 和 Windows RT，并需要 [Active Directory Rights Management 服务移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)。<br /><br />在支持 Exchange ActiveSync IRM 协议的所有移动设备平台上，支持使用 Exchange ActiveSync IRM 管理电子邮件。|
 |支持适用于计算机和移动设备的多因素身份验证 (MFA)。<br /><br />有关详细信息，请参阅[多重身份验证 (MFA) 和 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms)。|如果将 IIS 配置为请求证书，将支持智能卡身份验证。|
@@ -76,6 +76,6 @@ Azure RMS 的一些主要差异：
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

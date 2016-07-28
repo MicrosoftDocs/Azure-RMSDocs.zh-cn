@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
+ms.sourcegitcommit: a58d50b33db95570b43fe1ec0f76bdf490ddd024
+ms.openlocfilehash: 164df467632b38f179d1c1192835f919641331a5
 
 
 ---
@@ -28,6 +28,8 @@ ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
 如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 [Rights Management 共享应用程序用户指南](sharing-app-user-guide.md)或[适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)以外的更多技术信息，请使用以下信息。
 
 RMS 共享应用程序最适合与 Azure RMS 配合使用，因为这种部署配置支持向另一组织中的用户发送受保护的附件，并提供电子邮件通知、文档跟踪和撤消等选项。  不过，它也能够与本地版本的 AD RMS 配合使用，只是存在一些限制。 有关 Azure RMS 和 AD RMS 支持的功能的全面比较，请参阅[比较 Azure Rights Management 和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。 如果你安装了 AD RMS 并想要迁移到 Azure RMS，请参阅 [从 AD RMS 迁移到 Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
+
+有关 Rights Management 共享应用程序的技术概览和有关本机和通用保护、支持的文件类型、文件扩展名以及如何更改默认保护级别的信息，请参阅[《Technical overview and protection details for the Rights Management sharing application》](sharing-app-admin-guide-technical.md)（Rights Management 共享应用程序的技术概览和保护详细信息）。 
 
 ## 自动部署 Microsoft Rights Management 共享应用程序
 Windows 版 RMS 共享应用程序支持脚本化安装，因此适合企业部署。
@@ -116,13 +118,13 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
         > [!NOTE]
         > 此命令可能会提示你输入 Azure 的凭据。 如果计算机未加入域，系统将会提示你加入。 如果计算机已加入域，该工具也许可以使用缓存的凭据。
 
-2.  在要安装 RMS 共享应用程序的每台计算机上，使用提升的权限运行以下命令：
+2.  在要安装 RMS 共享应用程序的每台计算机上，使用提升的权限一次运行以下命令：
 
     ```
     setup.exe /s /configureO2010Admin /certificationUrl <certification_url>
     ```
 
-3.  在要安装 RMS 共享应用程序的每台计算机上，用户必须运行以下命令（不需要使用提升的权限）。 可通过不同的方式来实现此目的，包括要求用户运行该命令（例如，在电子邮件中提供一个链接，或者在技术支持门户上提供一个链接），或者在用户的登录脚本中添加该命令：
+3.  在要安装 RMS 共享应用程序的每台计算机上，该计算机上的每个用户必须运行以下命令（不需要使用提升的权限）。 可通过不同的方式来实现此目的，包括要求用户运行该命令（例如，在电子邮件中提供一个链接，或者在技术支持门户上提供一个链接），或者在用户的登录脚本中添加该命令：
 
     ```
     bin\RMSSetup.exe /configureO2010Only
@@ -367,6 +369,6 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

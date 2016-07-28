@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/17/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
-ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
+ms.sourcegitcommit: e1b7dedd8556f3ccdb1642681cc4e1e5b1d09ccf
+ms.openlocfilehash: ee2860da964b52bc41c0aea219110453f024b954
 
 
 ---
@@ -29,6 +29,16 @@ Rights Management 团队定期更新 Rights Management 共享应用程序，以�
 
 > [!NOTE]
 > 如果你有关于 RMS 共享应用程序的反馈或问题，请发送电子邮件到 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)。
+
+## 版本 1.0.2217.0
+
+**发布日期**：2016/07/13
+
+**修补程序**：
+
+- 组织中的用户使用联合身份验证和多重身份验证保护文档时不再收到错误 0x800704DC。
+
+
 
 ## 版本 1.0.2191.0
 **发布日期**：2016/06/16
@@ -122,6 +132,6 @@ Rights Management 团队定期更新 Rights Management 共享应用程序，以�
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

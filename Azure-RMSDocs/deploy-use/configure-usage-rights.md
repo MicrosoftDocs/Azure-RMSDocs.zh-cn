@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/16/2016
+ms.date: 07/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
-ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
+ms.sourcegitcommit: 4d6e0af200410b5af4e290ee0e6f94725916ecde
+ms.openlocfilehash: e9f2fe16494af2286d8ed77d0894bb5229e7c246
 
 
 ---
@@ -245,8 +245,8 @@ ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
 |---------------------|----------------|---------------------------------|
 |查看器|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序|查看、打开、读取；答复；全部答复|
 |审阅者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序|查看、打开、读取；保存；编辑内容、编辑；答复 [[1]](#footnote-1)；全部答复 [[1]](#footnote-1)；转发 [[1]](#footnote-1)|
-|合著者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；更改权限；允许宏；另存为、导出；打印；答复 [[1]](#footnote-1)；全部答复 [[1]](#footnote-1)；转发 [[1]](#footnote-1)|
-|共有者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；更改权限；允许宏；另存为、导出；打印；答复 [[1]](#footnote-1)；全部答复 [[1]](#footnote-1)；转发 [[1]](#footnote-1)；完全控制|
+|合著者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出；打印；回复 [[1]](#footnote-1)；回复全部 [[1]](#footnote-1)；转发 [[1]](#footnote-1)|
+|共有者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出；打印；回复 [[1]](#footnote-1)；回复全部 [[1]](#footnote-1)；转发 [[1]](#footnote-1)；完全控制|
 
 ----
 
@@ -289,6 +289,6 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

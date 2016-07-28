@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6a2989f4a6d919d9a2a3d301467353f052bd10ea
-ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
+ms.sourcegitcommit: 5737594c679be0702761014425e104e5eade59f3
+ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
 
 
 ---
@@ -26,6 +26,8 @@ ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
 
 
 你可以在 Azure 经典门户中创建和管理自定义模板。 可以直接从 Azure 经典门户执行这些操作，也可以登录到 Office 365 管理中心，并选择 Rights Management 的“高级功能”，它会将你重定向至 Azure 经典门户。
+
+必须是全局管理员才能在 Azure 经典门户中创建和管理模板。 如果将 Azure RMS 的全局管理员角色分配给其他用户，他们也可以创建和管理模板，但必须使用 [PowerShell](configure-templates-with-powershell.md)。 有关详细信息，请参阅[是否必须是全局管理员才能配置 Azure RMS？我可以委派给其他管理员吗？](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 请使用以下过程为权限管理创建、配置和发布自定义模板。
 
@@ -165,6 +167,6 @@ ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

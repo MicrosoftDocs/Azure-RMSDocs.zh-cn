@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
-ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
 
 
 ---
@@ -85,7 +85,7 @@ ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
 
 限制：
 
--   虽然迁移过程支持将服务器授权证书 (SLC) 密钥迁移到 Azure RMS 的硬件安全模块 (HSM)，但 Exchange Online 目前不支持此配置。 如果你希望在迁移到 Azure RMS 之后获得 Exchange Online 的完整 IRM 功能，必须[由 Microsoft 管理](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-)你的 Azure RMS 租户密钥。 你也可以自行管理 Azure RMS 租户 (BYOK)，在这种情况下，Exchange Online 的 IRM 功能将会受限。 有关将 Exchange Online 与 Azure RMS 配合使用的详细信息，请参阅[步骤 6。为 Exchange Online 配置 IRM 集成](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online)。
+-   虽然迁移过程支持将服务器授权证书 (SLC) 密钥迁移到 Azure RMS 的硬件安全模块 (HSM)，但 Exchange Online 目前不支持此配置。 如果你希望在迁移到 Azure RMS 之后获得 Exchange Online 的完整 IRM 功能，必须[由 Microsoft 管理](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok)你的 Azure RMS 租户密钥。 你也可以自行管理 Azure RMS 租户 (BYOK)，在这种情况下，Exchange Online 的 IRM 功能将会受限。 有关将 Exchange Online 与 Azure RMS 配合使用的详细信息，请参阅[步骤 6。为 Exchange Online 配置 IRM 集成](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online)。
 
 -   如果你的软件和客户端不受 Azure RMS 支持，则它们将不能保护或使用受 Azure RMS 保护的内容。 请务必查看 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)文章中的“支持的应用程序和客户端”部分。
 
@@ -180,6 +180,6 @@ ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

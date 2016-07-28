@@ -1,9 +1,9 @@
 ---
 asset_id: 78022852-1541-4194-bd6b-2f5fd5d94b77
 layout: HubPage
-title: "Azure Rights Management 文档"
+title: "Azure 权限管理文档 - RMS 文档 |Microsoft 文档"
 description: "Azure Rights Management 技术文档"
-keywords: rights management documentation, rms documentation, Azure RMS documentation
+keywords: "权限管理文档、rms 文档、Azure RMS 文档"
 author: msmbaldwin
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -14,15 +14,15 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 translationtype: Human Translation
-ms.sourcegitcommit: 80de3ab273c090f466fc381390d84b8f7b90f6f4
-ms.openlocfilehash: 6ba6e7b208c0b53a5cc6f38811f6845234bf7983
+ms.sourcegitcommit: e5a1860afff2682cce093523b33c9e99b93d446d
+ms.openlocfilehash: 57b04bccfd2f650c24875d20baf89040c69ab0f6
 
 
 ---
-# Azure Rights Management 文档
+# Azure 权限管理 (RMS) 文档
 <article id="main">
     <section id="hero-content">
-      <h1>Azure Rights Management 文档</h1>
+      <h1>Azure 权限管理 (RMS) 文档</h1>
       <h2>了解如何部署和管理 Azure Rights Management (Azure RMS) 快速开始使用 Rights Management，以将信息保护应用到电子邮件、文档和其他敏感数据中。</h2>
       <h3>刚开始使用 Azure RMS？ <a href="http://go.microsoft.com/fwlink/?LinkId=816857" target="_blank">请访问我们的产品站点 &rarr;</a></h3>
     </section>
@@ -36,11 +36,12 @@ ms.openlocfilehash: 6ba6e7b208c0b53a5cc6f38811f6845234bf7983
       <h2 class="section-heading"><span class="icon icon-warning"></span> 特色内容</h2>
       <div class="features row">
         <ul class="column column-half">
+          <li><mark><b>新</b></mark> <a href="./information-protection/what-is-information-protection.md">Azure 信息保护（预览版）</a></li>
           <li><a href="./understand-explore/what-is-azure-rms.md">Azure 权限管理是什么？</a></li>
           <li><a href="./get-started/quick-start-tutorial.md">Azure RMS 快速入门教程</a></li>
-          <li><a href="./get-started/rapid-deployment-guide.md">Azure RMS 快速部署指南</a></li>
         </ul>
         <ul class="column column-half">
+          <li><a href="./get-started/rapid-deployment-guide.md">Azure RMS 快速部署指南</a></li>
           <li><a href="./plan-design/deployment-roadmap.md">Azure RMS 部署路线图</a></li>
           <li><a href="./develop/developers-guide.md">使用 Azure RMS 集成应用程序</a></li>
         </ul>
@@ -214,6 +215,39 @@ ms.openlocfilehash: 6ba6e7b208c0b53a5cc6f38811f6845234bf7983
                 </li>
               </ul>
             </section>
+          <li class="journey-step">
+            <header class="journey-step-header row">
+              <a href="./information-protection/what-is-information-protection.md">
+                <div class="title column-third">
+                  <span class="step-number"> 6</span>
+                  <p>Azure 信息保护（预览版）</p>
+                </div>
+                <p class="description column-two-thirds">现在使用 Azure 信息保护预览版对数据进行分类、设置标签和保护。
+                </p>
+              </a>
+            </header>
+            <section class="journey-step-elements content">
+              <ul class="row">
+                <li class="column-third">
+                  <a href="./information-protection/what-is-information-protection.md">
+                    <h3>什么是 Azure 信息保护？</h3>
+                    <p>了解 Azure 信息保护，它结合了 Azure 权限管理 (RMS) 和来自 Secure Islands 的分类和标签技术。</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="./information-protection/infoprotect-quick-start-tutorial.md">
+                    <h3>Azure 信息保护快速入门教程</h3>
+                    <p>只需四个步骤，立即开始使用 Azure 信息保护。</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="./information-protection/faq.md">
+                    <h3>Azure 信息保护常见问题解答</h3>
+                    <p>查找 Azure 信息保护常见问题的解答。</p>
+                  </a>
+                </li>
+              </ul>
+            </section>
           </li>
         </ul>
       </section>
@@ -228,6 +262,6 @@ ms.openlocfilehash: 6ba6e7b208c0b53a5cc6f38811f6845234bf7983
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3
+ms.sourcegitcommit: 384a58f32aae8c7d908392e7fd9a1629bc05cdff
+ms.openlocfilehash: d3727eb963532e03137aea2140293fa9c5821db2
 
 
 ---
@@ -43,29 +43,31 @@ ms.openlocfilehash: 46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3
 
 ## 要执行什么操作？
 > [!NOTE]
-> 有关详细的技术信息（例如支持的文件类型以及如何在企业网络上安装此应用程序），请参阅 [Rights Management 共享应用程序管理员指南](sharing-app-admin-guide.md)。
+> 有关详细的技术信息（例如[支持的文件类型](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions)以及[如何在企业网络上安装此应用程序](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)），请参阅[《Rights Management sharing application administrator guide》](sharing-app-admin-guide.md)（Rights Management 共享应用程序管理员指南）。
 
--   [下载并安装共享应用程序](install-sharing-app.md)
+- [下载并安装共享应用程序](install-sharing-app.md)
 
--   [保护设备上的文件（就地保护）](sharing-app-protect-in-place.md)
+- [保护设备上的文件（就地保护）](sharing-app-protect-in-place.md)
 
--   [保护通过电子邮件共享的文件](sharing-app-protect-by-email.md)
+- [保护通过电子邮件共享的文件](sharing-app-protect-by-email.md)
 
--   [跟踪和撤消文档](sharing-app-track-revoke.md)
+- [更改受保护的文件的权限](sharing-app-reprotect-files.md)
 
--   [保护你通过电子邮件共享的文件](sharing-app-view-use-files.md)
+- [跟踪和撤消文档](sharing-app-track-revoke.md)
 
--   [移除对文件的保护](sharing-app-remove-protection.md)
+- [保护你通过电子邮件共享的文件](sharing-app-view-use-files.md)
 
--   [使用键盘快捷键](sharing-app-keyboard-shortcuts.md)
+- [移除对文件的保护](sharing-app-remove-protection.md)
 
--   [在对话框中指定设置](sharing-app-dialog-box.md)
+- [使用键盘快捷键](sharing-app-keyboard-shortcuts.md)
 
-
-
-
+- [在对话框中指定设置](sharing-app-dialog-box.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+
+
+
+<!--HONumber=Jul16_HO3-->
 
 

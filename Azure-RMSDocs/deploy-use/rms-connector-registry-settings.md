@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: ff90f009f9fda90171bbeeb2a7bb421376d4695c
+ms.sourcegitcommit: 935c354f9bcd3be23a953cdeb08c7860257637d6
+ms.openlocfilehash: 5099a10a183f1c78595794511654226265e740c8
 
 
 ---
@@ -43,7 +43,7 @@ ms.openlocfilehash: ff90f009f9fda90171bbeeb2a7bb421376d4695c
 
 -   *ConnectorFQDN* 是你在 DNS 中为连接器定义的负载平衡名称。 例如 **rmsconnector.contoso.com**。
 
--   如果你已将连接器配置为使用 HTTPS 与本地服务器通信，请使用 HTTPS 前缀作为连接器 URL。 有关详细信息，请参阅本主题中的 [将 RMS 连接器配置为使用 HTTPS](deploy-rms-connector.md#BKMK_ConfiguringHTTPS) 部分。 Microsoft RMS URL 始终使用 HTTPS。
+-   如果你已将连接器配置为使用 HTTPS 与本地服务器通信，请使用 HTTPS 前缀作为连接器 URL。 有关详细信息，请参阅主要说明的[《Configuring the RMS connector to use HTTPS》](install-configure-rms-connector.md#configuring-the-rms-connector-to-use-https)（将 RMS 连接器配置为使用 HTTPS）部分。 Microsoft RMS URL 始终使用 HTTPS。
 
 
 ## Exchange 2016 或 Exchange 2013 注册表设置
@@ -217,6 +217,6 @@ ms.openlocfilehash: ff90f009f9fda90171bbeeb2a7bb421376d4695c
 返回到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

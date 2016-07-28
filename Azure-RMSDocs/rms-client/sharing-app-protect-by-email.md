@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 13f44e93ee9c1c0583bd75121aec638fee09b748
 
 
 ---
@@ -72,7 +72,7 @@ ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
 
     ![Azure RMS 的电子邮件](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
 
-    你是否想知道：[自动创建的 .ppdf 文件是什么？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)
+    你是否想知道：[自动创建的 .ppdf 文件是什么？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
 
 4.  可选：你可以根据需要更改此电子邮件中的任何内容。 例如，你可以添加或更改邮件主题或正文。
 
@@ -86,13 +86,13 @@ ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
 
 -   [使用 RMS 共享应用程序的示例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## 另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

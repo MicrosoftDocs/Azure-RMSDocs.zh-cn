@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
-ms.openlocfilehash: a3ed9e8de496741fae8904481edb1177762a12c0
+ms.sourcegitcommit: e89c59716eef7fbdea415b41b1adfa54b0c16689
+ms.openlocfilehash: bd53b73452f444ac8529a8b8b613e76d8cc234a1
 
 
 ---
@@ -198,9 +198,14 @@ Azure RMS 支持其他服务，也依赖于其他服务。 如果你寻找的信
 
 -   Office 365 库：[Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
+## 有关新的分类和标签功能的最新进展是什么？
+
+Azure 信息保护中的该功能现在可提供公共预览版。 若要试用该功能，以及获取可用资源的列表，请参阅[《What is Azure Information Protection preview?》](../information-protection/what-is-information-protection.md)（什么是 Azure 信息保护预览版？）
+
+
 ## 听说很快将发布新版 Azure RMS，何时发布？
 
-本技术文档不包含即将发布的版本的相关信息。 有关此类信息和发布公告，请查看 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)（企业移动性和安全性博客）并从 Twitter 上的 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) 获取最新更新。 如果你对 Office 版本感兴趣，还请务必查看 [Office 博客[(https://blogs.office.com/)。
+本技术文档不包含即将发布的版本的相关信息。 有关此类信息和发布公告，请查看 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)（企业移动性和安全性博客）并从 Twitter 上的 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) 获取最新更新。 如果你对 Office 版本感兴趣，还请务必查看 [Office 博客](https://blogs.office.com/)。
 
 ## 如果我的问题不在这里，我该如何操作？
 使用 [Azure Rights Management 的信息和支持](information-support.md)中列出的链接和资源。
@@ -219,6 +224,6 @@ Azure RMS 支持其他服务，也依赖于其他服务。 如果你寻找的信
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

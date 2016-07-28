@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/02/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e84de6afd80196d4237499718af45c64788c408d
-ms.openlocfilehash: 2863c98390b8fda528c4fe3a1b2ebce3510763b4
+ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
+ms.openlocfilehash: 17756d4e641c10c0522f7a849634ae67630b363b
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 2863c98390b8fda528c4fe3a1b2ebce3510763b4
 
 |要求或问题|Azure RMS 所解决的问题|
 |--------------------------|-----------------------|
-|保护所有文件类型|√ 以前，在实施权限管理的过程中，只有 Office 文件才能使用本机保护功能来保护。 现在，[常规保护](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-) 意味着支持对所有文件类型进行保护。|
+|保护所有文件类型|√ 以前，在实施权限管理的过程中，只有 Office 文件才能使用本机保护功能来保护。 现在，[通用保护](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection)意味着支持对所有文件类型进行保护。|
 |随处保护文件|√ 当文件保存到某个位置（[就地保护](../rms-client/sharing-app-protect-in-place.md)）时，该文件一直会受到保护，即使它被复制到不受 IT 部门控制的存储（如云存储服务），也是如此。|
 |通过电子邮件安全地共享文件|√ 当文件通过电子邮件共享（[共享保护](../rms-client/sharing-app-protect-by-email.md)）时，该文件会作为电子邮件的附件受到保护，电子邮件中包含如何打开受保护附件的说明。 电子邮件文本没有加密，因此，收件人始终能够阅读这些说明。 但是，由于附加的文档受到保护，因此只有授权用户才能将其打开，即使将该电子邮件或文档转发给其他用户。|
 |审核和监视|√ 你可以 [审核和监视受保护文件的使用情况](../deploy-use/log-analyze-usage.md)，即使这些文件已经离开了组织的边界。<br /><br />例如，你为 Contoso, Ltd. 工作 你正在与来自 Fabrikam, Inc 的 3 名人员一起致力于一个联合项目你通过电子邮件向这 3 人发送了一个已保护并限制为只读的文档。 Azure RMS 审核功能可以提供以下信息：<br /><br />- 你指定的来自 Fabrikam 的人是否打开了该文档，以及打开时间（如果已打开过）。<br /><br />- 你未指定的其他人是否尝试打开该文档却失败了（发生这种情况可能是因为该文档已转发或保存到其他人可以访问的共享位置）。<br /><br />- 指定的任何人是否尝试打印或更改该文档却失败了。|
@@ -73,6 +73,6 @@ Azure RMS 支持以下安全、合规性和法规要求：
 如果对有关 Azure RMS 工作的详细技术信息感兴趣，请参阅 [Azure RMS 的工作原理](how-does-it-work.md) 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

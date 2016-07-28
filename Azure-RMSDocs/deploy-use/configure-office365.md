@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 7a2436a6ebb17e4336f1321b8f3742e34ea59689
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 3592fb7c386eaeddc839c11a494f94d9b7564472
 
 
 ---
@@ -559,7 +559,7 @@ ms.openlocfilehash: 7a2436a6ebb17e4336f1321b8f3742e34ea59689
 
     3.  搜索 `$webUrls` 并将示例值替换为用户的 OneDrive for Business Web URL，根据需要添加或删除任意数量的条目。
 
-        或者，请参见脚本中有关如何通过导入包含需要配置的所有 URL 的 .CSV 文件来替换此数组的注释。  我们提供了另一个示例脚本，用于自动搜索并提取 URL 以填充此 .CSV 文件。 当你准备好执行此操作时，立即在这些步骤之后展开[将所有 OneDrive for Business URL 输出到一个 .CSV 文件的其他脚本](#BKMK_Script_OD4B_URLS)部分。
+        或者，请参见脚本中有关如何通过导入包含需要配置的所有 URL 的 .CSV 文件来替换此数组的注释。  我们提供了另一个示例脚本，用于自动搜索并提取 URL 以填充此 .CSV 文件。 当你准备好执行此操作时，立即在这些步骤之后使用[将所有 OneDrive for Business URL 输出到一个 .CSV 文件的其他脚本](#additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file)部分。
 
         用户的 OneDrive for Business 的 Web URL 采用以下格式：https://*&lt;tenant name&gt;*-my.sharepoint.com/personal/*&lt;user_name&gt;*_*&lt;tenant name&gt;*_com
 
@@ -1106,6 +1106,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -4,7 +4,7 @@ description: "介绍针对启用 RMS 的应用的用户身份验证基础知识�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 07/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
-ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
+ms.sourcegitcommit: 04454886841fe7b3482d10e1e32422f28d1c434f
+ms.openlocfilehash: fbe12e339d3fb8fc62aabc34aaa9f5f043e95de9
 
 
 ---
@@ -29,6 +29,9 @@ ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
 
 ## 通过 Azure 门户注册
 首先，按照此指南开始通过 Azure 门户配置应用的注册，如[为 ADAL 身份验证配置 Azure RMS](adal-auth.md) 中所述。 请务必从此过程复制并保存“客户端 ID”和“重定向 URI”以便稍后使用。
+
+## 完成你的权限管理许可协议 (RMLA)
+在部署你的应用程序之前，必须与 Microsoft 权限管理团队一起完成 RMLA。 有关完整的详细信息，请参阅该主题的第一部分 [Deploy into production - Request a Production License Agreement](deploying-your-application.md)（部署到生产环境 - 请求生产许可协议）。
 
 ## 为你的应用实施用户身份验证
 每个 RMS API 都具有回调，必须实现它才能启用用户的身份验证。 然后 RMS SDK 4.2 会在你未提供访问令牌时、你的访问令牌需要刷新时或是访问令牌已过期时使用你的回调实现。
@@ -271,6 +274,6 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

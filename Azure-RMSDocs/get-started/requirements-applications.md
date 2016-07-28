@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/17/2016
+ms.date: 06/20/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
-ms.openlocfilehash: 61d18747011435773e16b3c8d2a8ac2104997484
+ms.sourcegitcommit: 5a807917671cd869259c664929378b27dd42b743
+ms.openlocfilehash: b6ae1192a97deb02a66fa49f3ced4995c7590b98
 
 
 ---
@@ -42,7 +42,7 @@ ms.openlocfilehash: 61d18747011435773e16b3c8d2a8ac2104997484
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
 |**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile 应用程序（仅适用于 Azure RMS）[[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 共享应用程序|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|适用于 Windows 的 RMS 共享应用程序：文本、图像、pfile<br /><br />Siemens JT2Go：JT 文件（仅适用于 Windows 10）|
 |**iOS**|iPad 和 iPhone 版 Office [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS 文档|Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)<br /><br />TITUS 文档|Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />iPad 和 iPhone 版 Outlook [[4]](#footnote-4)<br /><br />OWA for iOS [[3]](#footnote-3)<br /><br />TITUS Mail|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile<br /><br />TITUS 文档：Pfile|
-|**Android**|适用于 Android 的 GigaTrust 应用<br /><br />Office Online [[2]](#footnote-2)|适用于 Android 的 GigaTrust 应用<br /><br />Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />适用于 Android 的 GigaTrust 应用程序 [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook for Android [[4]](#footnote-4)<br /><br />OWA for Android [[3]](#footnote-3) 和 [[7]](#footnote-7)<br /><br />Samsung Email（S3 及更高版本）[[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile|
+|**Android**|适用于 Android 的 GigaTrust 应用<br /><br />Office Online [[2]](#footnote-2)<br /><br />Office Mobile [[1]](#footnote-1)|适用于 Android 的 GigaTrust 应用<br /><br />Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />适用于 Android 的 GigaTrust 应用程序 [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook for Android [[4]](#footnote-4)<br /><br />OWA for Android [[3]](#footnote-3) 和 [[7]](#footnote-7)<br /><br />Samsung Email（S3 及更高版本）[[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile|
 |**OS X**|Office 2011（仅适用于 AD RMS）<br /><br />Office 2016 for Mac<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)|Outlook 2011（仅适用于 AD RMS）<br /><br />Outlook 2016 for Mac<br /><br />Outlook for Mac|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile|
 |**Windows 10 移动版**|Office Mobile 应用程序（仅适用于 Azure RMS）[[1]](#footnote-1)|不支持|Citrix WorxMail [[6]](#footnote-6)<br /><br />Outlook Mail|不支持|
 |**Windows RT**|Office 2013 RT<br /><br />Office Online [[2]](#footnote-2)|不支持|Outlook 2013 RT<br /><br />Windows 相关邮件应用程序<br /><br />Windows Mail [[4]](#footnote-4)|Siemens JT2Go：JT 文件|
@@ -148,6 +148,6 @@ Azure RMS 当前不支持以下应用程序：
 有关如何为 Azure RMS 配置最常用的应用程序的信息，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)。
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

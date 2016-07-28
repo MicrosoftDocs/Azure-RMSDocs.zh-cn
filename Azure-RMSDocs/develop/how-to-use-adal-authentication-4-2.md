@@ -1,7 +1,7 @@
 ---
 title: "使用 Azure 门户对 RMS 身份验证进行配置 | Azure RMS"
 description: "使用 ADAL 进行身份验证的过程概述"
-keywords: authentication, RMS, ADAL
+keywords: "身份验证、RMS、ADAL"
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -62,6 +62,6 @@ ms.openlocfilehash: cb82f0333ed17ee2994608baa3bbb50d42f19073
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
