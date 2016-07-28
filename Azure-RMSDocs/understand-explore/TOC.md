@@ -20,8 +20,9 @@
 # [部署和使用该服务](/rights-management/deploy-use/activate-service)
 # [部署和使用该客户端](/rights-management/rms-client/use-client)
 # [开发和自定义应用](/rights-management/develop/developers-guide)
+# [Azure 信息保护（预览版）](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -65,8 +65,9 @@
 #### [函数](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/functions)
 #### [结构](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/structures)
 #### [错误代码](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/Error codes)
+# [Azure 信息保护（预览版）](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

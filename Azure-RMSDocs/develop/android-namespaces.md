@@ -1,7 +1,7 @@
 ---
 title: "Android 命名空间 | Azure RMS"
 description: "Android API 具有两个命名空间。"
-keywords: RMS, Android
+keywords: "RMS、Android"
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -32,6 +32,6 @@ Android API 具有两个命名空间，用于涵盖主要功能和异常。
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,7 +1,7 @@
 ---
 title: "适用于启用了 RMS 的应用程序的 ADAL 身份验证 | Azure RMS"
 description: "使用 ADAL 进行身份验证的过程概述"
-keywords: authentication, RMS, ADAL
+keywords: "身份验证、RMS、ADAL"
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
@@ -124,6 +124,6 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 
