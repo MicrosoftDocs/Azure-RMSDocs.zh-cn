@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
-ms.openlocfilehash: d6920b8ce09b39d98da9e9c197b17a1f13d21c8e
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 310ee66374157f946df6876b31859313f74275ae
 
 
 ---
@@ -25,9 +25,9 @@ ms.openlocfilehash: d6920b8ce09b39d98da9e9c197b17a1f13d21c8e
 
 Linux 操作系统的几种版本现都可通过 Azure Active Directory Rights Management (AAD RM) 使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
 
--   [支持的操作系统](#supported_operating_systems)
--   [如何生成和使用](#how_to_build_and_use)
--   [另请参阅](#see_also)
+-   [支持的操作系统](#supported-operating-systems)
+-   [如何生成和使用](#how-to-build-and-use)
+-   [另请参阅](#see-also)
 
 ## 支持的操作系统
 
@@ -60,6 +60,6 @@ Ubuntu 14.04 OpenSUSE 13.2 CentOS 7 **注意：**Windows 和 OSX 上也已成功
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 
