@@ -21,11 +21,10 @@
 ##### [删除保护](sharing-app-remove-protection.md)
 ##### [使用键盘快捷键](sharing-app-keyboard-shortcuts.md)
 ##### [对话框选项](sharing-app-dialog-box.md)
-### [启用 RMS 的应用程序中 Microsoft Rights Management 的隐私声明](privacy-statement-rms-enlightened-applications.md)
 # [开发和自定义应用](/rights-management/develop/developers-guide)
 # [Azure 信息保护（预览版）](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
