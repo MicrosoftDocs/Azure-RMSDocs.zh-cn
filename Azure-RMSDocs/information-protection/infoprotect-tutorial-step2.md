@@ -3,15 +3,15 @@ title: "Azure 信息保护快速入门教程 - 步骤 2 | Azure 权限管理"
 description: "入门教程第 2 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 463c0bc1fa86f73e2623faf5a624afeabcadeedb
-ms.openlocfilehash: c6ecf22b72d862c605f8be2ab1f75fd2126f8575
+ms.sourcegitcommit: 3bf9fe837c7bb268361b8004352192f0540604b9
+ms.openlocfilehash: af2f5eadf3a4993c590f72a8f44e4fea03982505
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: c6ecf22b72d862c605f8be2ab1f75fd2126f8575
 
 2. 在“标签：机密”边栏选项卡中，你将看到可用于每个标签的设置。 进行以下更改：
 
-    a. 如果已激活 Azure 权限管理，则针对“选择 RMS 模板”：单击下拉框，选择默认模板“\<你的组织名称 > - 机密”。 例如，如果你的组织名称为 VanArsdel, Ltd，你将看到并选择“VanArsdel, Ltd - 机密”。 如果禁用了此默认 Azure 权限管理模板，请选择替代模板。 但是，如果你选择部门模板，请确保你的帐户包含在范围内。
+    a. 若已激活 Azure 权限管理，则针对“设置 RMS 模板用于保护包含此标签的文档和电子邮件”：请确保 **Azure RMS** 已选中，然后单击下拉框并选择默认模板“\<你的组织名称> - 机密”。 例如，如果你的组织名称为 VanArsdel, Ltd，你将看到并选择“VanArsdel, Ltd - 机密”。 如果禁用了此默认 Azure 权限管理模板，请选择替代模板。 但是，如果你选择部门模板，请确保你的帐户包含在范围内。
 
     如果尚未激活 Azure 权限管理，则无法使用此选项。
 
@@ -82,6 +82,6 @@ ms.openlocfilehash: c6ecf22b72d862c605f8be2ab1f75fd2126f8575
 [步骤 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

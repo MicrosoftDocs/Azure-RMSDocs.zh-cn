@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a58d50b33db95570b43fe1ec0f76bdf490ddd024
-ms.openlocfilehash: 164df467632b38f179d1c1192835f919641331a5
+ms.sourcegitcommit: 0ac4264f20208f999c9ad9bdd2c4759e65ae021b
+ms.openlocfilehash: 5344c38a31aa0ceb894f330f363442bd2c0d9375
 
 
 ---
@@ -124,7 +124,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
     setup.exe /s /configureO2010Admin /certificationUrl <certification_url>
     ```
 
-3.  在要安装 RMS 共享应用程序的每台计算机上，该计算机上的每个用户必须运行以下命令（不需要使用提升的权限）。 可通过不同的方式来实现此目的，包括要求用户运行该命令（例如，在电子邮件中提供一个链接，或者在技术支持门户上提供一个链接），或者在用户的登录脚本中添加该命令：
+3.  在要安装 RMS 共享应用程序的每台计算机上，使用此计算机上的每个用户必须运行以下命令（不需要使用提升的权限）。 可通过不同的方式来实现此目的，包括要求用户运行该命令（例如，在电子邮件中提供一个链接，或者在技术支持门户上提供一个链接），或者在用户的登录脚本中添加该命令：
 
     ```
     bin\RMSSetup.exe /configureO2010Only
@@ -369,6 +369,6 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

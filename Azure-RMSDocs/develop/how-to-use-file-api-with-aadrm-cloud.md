@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4c3625676c7e794ef133c75881f666bae80e0513
-ms.openlocfilehash: ad8c41c9f3f3515a817d508d8f5a8953daf4b440
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: fce408a8c7a1114375745c3783443b87cd80ba78
 
 
 ---
@@ -46,7 +46,7 @@ ms.openlocfilehash: ad8c41c9f3f3515a817d508d8f5a8953daf4b440
 
      
 -   以下步骤是用于创建 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 结构的实例（其中 **pcCredential** ([**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)) 成员使用来自 Azure 权限管理服务的连接信息进行填充）的设置。
--   创建 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 结构的实例时，使用来自对称密钥服务标识创建的信息（请参阅本主题前面列出的先决条件）来设置 **wszServicePrincipal**、**wszBposTenantId** 和 **cbKey** 参数。
+-   创建 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 结构的实例时，使用来自对称密钥服务标识创建的信息（请参阅本主题前面列出的先决条件）来设置 **wszServicePrincipal**、**wszBposTenantId** 和 **cbKey** 参数。
 
 **注意** 由于我们发现服务的现有状况，如果你不在北美，则不会接受来自其他区域的对称密钥凭据，因此必须直接指定你的租户 URL。 这通过 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 或 [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist) 的 [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) 参数来实现。
 
@@ -81,7 +81,7 @@ ms.openlocfilehash: ad8c41c9f3f3515a817d508d8f5a8953daf4b440
     `Get-AadrmConfiguration`
 
 
--   创建 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 的实例并设置几个成员。
+-   创建 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 的实例并设置几个成员。
 
     // 创建密钥结构。
     IPC_CREDENTIAL_SYMMETRIC_KEY symKey = {0};
@@ -90,9 +90,9 @@ ms.openlocfilehash: ad8c41c9f3f3515a817d508d8f5a8953daf4b440
     symKey.wszBase64Key 是“你的服务主体密钥”；symKey.wszAppPrincipalId 是“你的应用主体标识符”；symKey.wszBposTenantId 是“你的租户标识符”；
 
 
-有关详细信息，请参阅 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)。
+有关详细信息，请参阅 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)。
 
--   创建 [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) 结构的实例（包含 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 实例）。
+-   创建 [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) 结构的实例（包含 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 实例）。
 
 **注意**  *connectionInfo* 成员使用来自前面的 `Get-AadrmConfiguration` 调用的 URL 进行设置，在此处使用这些字段名称进行注明。
 
@@ -160,7 +160,7 @@ ms.openlocfilehash: ad8c41c9f3f3515a817d508d8f5a8953daf4b440
 * [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
 * [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx)
 * [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)
-* [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)
+* [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)
 * [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
 * [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
 * [**IpcfDecryptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile)
@@ -173,6 +173,6 @@ ms.openlocfilehash: ad8c41c9f3f3515a817d508d8f5a8953daf4b440
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

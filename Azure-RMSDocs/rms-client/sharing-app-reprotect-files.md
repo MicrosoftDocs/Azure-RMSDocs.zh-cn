@@ -4,7 +4,7 @@ description: "当文件已由 Rights Management 保护时，你可以更改其�
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/27/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51050497fe128d94e069d0ac010435bea5623af2
-ms.openlocfilehash: 985d3d2f1151b50fcde8f8bb916e984e1de71b00
+ms.sourcegitcommit: e65fe3e6994352296cdf58d4b53de421389790f7
+ms.openlocfilehash: 492f651f9234a8428a0f39da93b332a552894993
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 985d3d2f1151b50fcde8f8bb916e984e1de71b00
 >
 > 同样，如果你想要添加或删除权限，则不能只指定要添加或删除的权限，而必须指定你希望所指定用户拥有的所有权限。
 
-如果你是想要重新保护的文件的所有者（例如，你最初使用共享应用程序保护该文件），则你将自动拥有重新保护该文件的权限。 如果你不是所有者，那么你可能有或没有重新保护该文件的权限，具体取决于当前受保护文件具有的权限。 
+如果你是想要重新保护的文件的所有者（例如，你最初使用共享应用程序保护该文件），则你将自动拥有重新保护该文件的权限。 如果你不是所有者，那么你可能有或没有重新保护该文件的权限，具体取决于当前受保护文件具有的权限。 若要重新保护文件，则需要[完全控制使用权限](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions)。
 
 例如，如果其他人使用 Rights Management 共享应用程序保护了该文件，并且指定了你所属的组和**共同所有者**作为自定义权限，那么你将能够重新保护该文件。 但是，如果他们没有指定你的名称或你所属的组，或者如果他们选择**审阅者 - 查看和编辑**或者是不允许你删除权限的模板，则你将不能重新保护该文件。 弄清自己是否具有相应权限的最简单的办法是尝试重新保护该文件。
 
@@ -96,6 +96,6 @@ ms.openlocfilehash: 985d3d2f1151b50fcde8f8bb916e984e1de71b00
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
