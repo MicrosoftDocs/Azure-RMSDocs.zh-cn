@@ -13,17 +13,16 @@ ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
+experimental: true
+experiment_id: priyamo-test-20160729
 translationtype: Human Translation
-ms.sourcegitcommit: aa4b1b0aee246b32d5214e2587ac5d291a682fe7
-ms.openlocfilehash: 61f70a7b4a85c0ab6f0a2732fcf9d314a230e769
+ms.sourcegitcommit: 0d853f99c0a7855354492c508c5c382ceb489a18
+ms.openlocfilehash: fb51e2e1438716431a4d8a6e07878c69f428933f
 
 
 ---
-<<<<<<< HEAD
 
 # 跟踪内容
-=======
->>>>>>> 81ec5ddf5acf3de78d77c01ed95631e44d37fe6e
 
 # 操作说明：启用文档跟踪和撤销
 
@@ -167,6 +166,6 @@ ms.openlocfilehash: 61f70a7b4a85c0ab6f0a2732fcf9d314a230e769
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 
