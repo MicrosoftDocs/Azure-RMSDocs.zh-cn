@@ -202,7 +202,7 @@ Remove-PSDrive MyRmsAdmin -force
 
 
 ## 后续步骤
-转到“阶段 2 - 客户端配置”[](migrate-from-ad-rms-phase2.md)。
+转到[阶段 2 - 客户端配置](migrate-from-ad-rms-phase2.md)。
 
 
 
