@@ -3,26 +3,28 @@ title: "Azure 信息保护快速入门教程 - 步骤 2 | Azure 权限管理"
 description: "入门教程第 2 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/22/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 3bf9fe837c7bb268361b8004352192f0540604b9
-ms.openlocfilehash: af2f5eadf3a4993c590f72a8f44e4fea03982505
+ms.sourcegitcommit: cab45baf19af4ab548f5f112946d168d93a95d49
+ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 
 
 ---
 
 # 步骤 2：配置并发布 Azure 信息保护策略
 
-*适用于：Azure 信息保护预览版*
+>*适用于：Azure 信息保护预览版*
+
+**[ 此信息是预发布版本，可能会进行更改。 ]**
 
 尽管 Azure 信息保护附带了你无需进行配置的默认策略，我们仍然要看一下该策略并进行一些更改。
 
-1. 使用以下 Azure 信息保护的特定链接来登录 Azure 门户：https://portal.azure.com/?microsoft_azure_informationprotection=true
+1. 登录到 [Azure 门户](https://portal.azure.com)。
  
 2. 在中心菜单上单击“浏览”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
@@ -44,20 +46,22 @@ ms.openlocfilehash: af2f5eadf3a4993c590f72a8f44e4fea03982505
 
 2. 在“标签：机密”边栏选项卡中，你将看到可用于每个标签的设置。 进行以下更改：
 
-    a. 若已激活 Azure 权限管理，则针对“设置 RMS 模板用于保护包含此标签的文档和电子邮件”：请确保 **Azure RMS** 已选中，然后单击下拉框并选择默认模板“\<你的组织名称> - 机密”。 例如，如果你的组织名称为 VanArsdel, Ltd，你将看到并选择“VanArsdel, Ltd - 机密”。 如果禁用了此默认 Azure 权限管理模板，请选择替代模板。 但是，如果你选择部门模板，请确保你的帐户包含在范围内。
-
+    a. 若已激活 Azure 权限管理：在“**设置 RMS 模板用于保护包含此标签的文档和电子邮件”**部分中，如果你看到“**RMS 模板选择自**”，则保留默认的 **Azure RMS**。 然后，针对“**选择 RMS 模板**”，单击下拉框，选择默认模板“**\<你的组织名称 > - 机密”**。 例如，如果你的组织名称为 VanArsdel, Ltd，你将看到并选择“VanArsdel, Ltd - 机密”。 如果禁用了此默认 Azure 权限管理模板，请选择替代模板。 但是，如果你选择部门模板，请确保你的帐户包含在范围内。
+    
     如果尚未激活 Azure 权限管理，则无法使用此选项。
-
+    
     b。 **使用该标签的文档具有一个水印**：单击“开”，在“文本”框中键入你的组织名称。 例如 **VanArsdel, Ltd**。 
-
+    
     c. 单击“添加新的条件”，然后在“条件”边栏选项卡中选择以下选项：
-
+    
     - **选择条件类型**：**内置**
-
+    
     - **选择内置**：**信用卡卡号**
-
+    
     - **最少出现次数**：**1**
-
+    
+    - **仅计算唯一值的发生次数**：**打开**
+    
     - 单击“保存”返回到“标签：机密”边栏选项卡。
 
 3. 在“标签：机密”边栏选项卡中，你会看到“信用卡卡号”显示为“条件名称”，“出现次数”为 **1**。
@@ -76,12 +80,16 @@ ms.openlocfilehash: af2f5eadf3a4993c590f72a8f44e4fea03982505
 
 现在你已经了解了默认策略并进行了一些更改，下一步是安装 Azure 信息保护客户端。
 
+|如果你想了解更多信息|其他信息|
+|--------------------------------|--------------------------|
+|有关策略的配置选项|[配置 Azure 信息保护策略](configure-policy.md)|
+
 
 >[!div class="step-by-step"]
 [&#171; 步骤 1](infoprotect-tutorial-step1.md)
 [步骤 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

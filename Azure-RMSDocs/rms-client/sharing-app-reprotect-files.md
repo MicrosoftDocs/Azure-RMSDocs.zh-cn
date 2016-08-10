@@ -4,7 +4,7 @@ description: "当文件已由 Rights Management 保护时，你可以更改其�
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/27/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e65fe3e6994352296cdf58d4b53de421389790f7
-ms.openlocfilehash: 492f651f9234a8428a0f39da93b332a552894993
+ms.sourcegitcommit: ba029e48b540fda8474eba83322c531ff3daa7b3
+ms.openlocfilehash: a123338e34a8c4585a01782a473a400ecb58f166
 
 
 ---
@@ -96,6 +96,6 @@ ms.openlocfilehash: 492f651f9234a8428a0f39da93b332a552894993
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

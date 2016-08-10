@@ -3,22 +3,24 @@ title: "Azure 信息保护快速入门教程 - 步骤 1 | Azure 权限管理"
 description: "入门教程第 1 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，共 4 个步骤，所需时间大概 10 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 07/291/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: 78f0f07271414fb646f996e7273343f2abf8852b
-ms.openlocfilehash: 633b24d0c23cbbee88a2647aaa9defe376ccb40e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 128952778ec317584e558e409961e2921c4ecd07
 
 
 ---
 
 # 步骤 1：激活权限管理服务
  
-*适用于：Azure 信息保护预览版*
+>*适用于：Azure 信息保护预览版*
+
+**[ 此信息是预发布版本，可能会进行更改。 ]**
 
 > [!NOTE]
 >如果你只想对数据进行分类而不使用 Azure 权限管理进行保护，或者如果你已为租户激活 Azure 权限管理，请直接跳转到[下一步](infoprotect-tutorial-step2.md)。 
@@ -84,6 +86,6 @@ ms.openlocfilehash: 633b24d0c23cbbee88a2647aaa9defe376ccb40e
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

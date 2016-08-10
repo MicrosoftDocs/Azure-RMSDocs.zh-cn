@@ -13,8 +13,18 @@
 ### [步骤 3：安装客户端](infoprotect-tutorial-step3.md)
 ### [步骤 4：在实际操作中了解该功能](infoprotect-tutorial-step4.md)
 ## [常见问题](faq.md)
+## [配置策略](configure-policy.md)
+### [默认策略](configure-policy-default.md)
+### [配置全局设置](configure-policy-settings.md)
+### [创建新标签](configure-policy-new-label.md)
+### [删除或重排标签](configure-policy-delete-reorder.md)
+### [更改标签](configure-policy-change-label.md)
+### [应用保护](configure-policy-protection.md)
+### [配置可视标记](configure-policy-markings.md)
+### [配置条件](configure-policy-classification.md)
+## [安装客户端](info-protect-client.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

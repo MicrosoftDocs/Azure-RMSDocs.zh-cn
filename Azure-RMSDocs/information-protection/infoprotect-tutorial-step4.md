@@ -3,22 +3,24 @@ title: "Azure 信息保护快速入门教程 - 步骤 4 | Azure 权限管理"
 description: "入门教程第 4 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: e80ea074fb1f6e571b846969b15c08cf7108b11c
-ms.openlocfilehash: dcb34eb8bfee6232d32245634dc56f717257b644
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
 
 
 ---
 
 # 步骤 4：查看分类、设置标签和保护的实际操作 
 
-*适用于：Azure 信息保护预览版*
+>*适用于：Azure 信息保护预览版*
+
+**[ 此信息是预发布版本，可能会进行更改。 ]**
 
 既然已安装 Azure 信息保护客户端，并打开了 Word 文档，就可以知道使用我们配置的策略开始为文档设置标签并保护文档有多么简单。
 
@@ -75,6 +77,6 @@ ms.openlocfilehash: dcb34eb8bfee6232d32245634dc56f717257b644
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

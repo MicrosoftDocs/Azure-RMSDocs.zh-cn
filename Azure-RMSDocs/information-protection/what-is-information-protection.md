@@ -3,22 +3,24 @@ title: "什么是 Azure 信息保护？ | Azure 权限管理"
 description: "Azure 信息保护服务概述，现在为预览版"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/14/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: 0db303b01361b3220c2e9334f84594ac86c5b069
-ms.openlocfilehash: bfb56fd4994a358d366d94b40f6c5fc889330303
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: d3d63a778bff62649341227b65212722e285a6be
 
 
 ---
 
 # 什么是 Azure 信息保护（预览版）？
 
-*适用于：Azure 信息保护预览版*
+>*适用于：Azure 信息保护预览版*
+
+**[ 此信息是预发布版本，可能会进行更改。 ]**
 
 使用 Azure 信息保护可以对文档和电子邮件进行分类、设置标签和保护。 对数据进行分类时，将向该数据添加永久性标签，因此该分类在任何时候都是可识别的，无论数据的存储位置在哪或者与谁共享数据。 永久性标签包括可视化标记，如页眉、页脚或水印。 对于最敏感的数据，还可以使用 Azure 权限管理的加密、标识和授权策略，以帮助防止数据丢失。 
 
@@ -42,6 +44,6 @@ ms.openlocfilehash: bfb56fd4994a358d366d94b40f6c5fc889330303
 在我们的[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护快速入门教程）中只需四个简单步骤即可开始使用 Azure 信息保护。
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

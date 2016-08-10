@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,15 +13,17 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e60cd910a8e995a2681d7eb87a13f815183d9124
-ms.openlocfilehash: 846578a84df383821a64d32ce6dd69290a5fdee9
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
 
 
 ---
 
 # Azure 信息保护预览版的常见问题
 
-*适用于：Azure 信息保护预览版*
+>*适用于：Azure 信息保护预览版*
+
+**[ 此信息是预发布版本，可能会进行更改。 ]**
 
 对 Azure 信息保护的预览版有疑问？  请查看此处是否有答案。 
 
@@ -61,12 +63,6 @@ ms.openlocfilehash: 846578a84df383821a64d32ce6dd69290a5fdee9
 
 对订阅要求的任何更改将在[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)上公布。
 
-## 如果 Azure 信息保护现在是公共预览版，为什么在 Azure 门户中无法找到它？
-
-目前，必须使用以下链接在门户中找到 Azure 信息保护：https://portal.azure.com/?Microsoft_Azure_InformationProtection=true
-
-然后，在中心菜单上单击“浏览”并开始在筛选框中键入“信息保护”。 在结果中选择“Azure 信息保护”。
-
 ## 是否需要是全局管理员才能试用 Azure 信息保护预览版？
 
 仅对于预览版，任何由 Azure 进行身份验证的用户都可以在 Azure 门户中查看并配置其租户的 Azure 信息保护策略。
@@ -89,7 +85,7 @@ Azure 信息保护是一个基于云的解决方案。 如果你对混合方案�
 
 每次用户打开 Office 应用程序时，Azure 信息保护客户端就会检查是否存在更新版本的 Azure 信息保护策略。 如果有更新版本，客户端将使用 HTTPS 链接来下载它以保护数据。 
 
-如果 Azure 信息保护策略更新时应用程序已加载，则必须关闭然后重新打开应用程序以获取策略的最新版本。
+如果在发布新的 Azure 信息保护策略时加载 Office 应用程序的多个实例，必须关闭所有实例以获取策略的最新版本。 例如，你有两个 Word 文档打开，并且想要在一个文档中测试更新后的 Azure 信息保护策略：关闭两个 Word 文档，并重新打开你想要使用最新策略的文档。
 
 ## 文件存储在什么位置才可以使用 Azure 信息保护？ 
 
@@ -113,7 +109,7 @@ Azure 信息保护是一个基于云的解决方案。 如果你对混合方案�
 
 你可以在[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护的快速入门教程）中看到该示例。 
 
-分类的准确性取决于配置基于条件的分类规则的方式。 目前，条件支持文本模式和正则表达式。 有关预览过程中可用的各个选项的说明，以及你可以进行检验的一些建议的示例，请参阅 Yammer 帖子 [Description of content matching for our pre-define Information types](https://www.yammer.com/askipteam/#/Threads/show?threadId=737163344)（我们的预定义的信息类型的内容匹配说明）。 保存了文档或发送了电子邮件之后，将运行检测。
+分类的准确性取决于配置基于条件的分类规则的方式。 目前，条件支持文本模式和正则表达式。 有关预览期间可用的每个选项的说明以及测试的建议示例，请参见 [如何针对 Azure 信息保护的自动和建议分类配置条件](configure-policy-classification.md)(#如何针对-azure-信息保护的自动和建议分类配置条件)。 保存了文档或发送了电子邮件之后，将运行检测。
 
 若要获取最佳用户体验并确保业务连续性，我们建议你从用户建议操作开始，而不是完全自动化操作。 这可以使你的用户能够接受标签或保护操作，或者覆盖这些建议。   
 
@@ -121,7 +117,7 @@ Azure 信息保护是一个基于云的解决方案。 如果你对混合方案�
 
 是。 使用 Azure 门户配置是使用自动分类还是对用户做出建议，此处将选项“选择如何应用标签: 自动还是向用户推荐”设为“推荐”。
 
-你可以在[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护的快速入门教程）中看到该示例。
+你可以在[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护的快速入门教程）中看到该示例。  
 
 ## 可以强制对所有文档进行分类吗？
 
@@ -140,7 +136,7 @@ Azure 信息保护是一个基于云的解决方案。 如果你对混合方案�
 
 在 Azure 门户中，可以根据你指定的分类级别，选择 Azure 权限管理模板来自动保护内容。
 
-你可以在[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护的快速入门教程）中看到该示例。
+你可以在[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护的快速入门教程）中看到该示例。 有关详细信息，请参阅 [如何配置标签以应用权限管理保护](configure-policy-protection.md)(#如何配置标签以应用权限管理保护)。
 
 ## 一个文件是否可以有两个不同的分类？
 
@@ -188,6 +184,6 @@ Azure 信息保护将 Azure Active Directory 用于用户身份验证。
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

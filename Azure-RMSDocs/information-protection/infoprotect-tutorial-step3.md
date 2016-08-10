@@ -3,22 +3,24 @@ title: "Azure 信息保护快速入门教程 - 步骤 3 | Azure 权限管理"
 description: "入门教程第 3 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 7f85c673cd1e8055d6a27dcc49b5da18a7e12f98
-ms.openlocfilehash: 41ebf56c55d94e9aecf9538d474c8fa2c77ae83e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
 
 
 ---
 
 # 步骤 3：安装 Azure 信息保护客户端 
 
-*适用于：Azure 信息保护预览版*
+>*适用于：Azure 信息保护预览版*
+
+**[ 此信息是预发布版本，可能会进行更改。 ]**
 
 在该步骤中，你将安装 Azure 信息保护客户端，因此刚配置的策略将下载到 Windows PC 上，并在 Office 应用中显示标签。 
 
@@ -41,11 +43,16 @@ ms.openlocfilehash: 41ebf56c55d94e9aecf9538d474c8fa2c77ae83e
 
 你可以进行最后一步，以查看分类、设置标签和保护的实际操作。
 
+|如果你想了解更多信息|其他信息|
+|--------------------------------|--------------------------|
+|关于安装客户端软件|[安装 Azure 信息保护客户端](info-protect-client.md)|
+
+
 >[!div class="step-by-step"]
 [&#171; 步骤 2](infoprotect-tutorial-step2.md)
 [步骤 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 
