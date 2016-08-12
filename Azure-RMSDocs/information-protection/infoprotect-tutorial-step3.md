@@ -3,15 +3,15 @@ title: "Azure 信息保护快速入门教程 - 步骤 3 | Azure 权限管理"
 description: "入门教程第 3 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
+ms.sourcegitcommit: 264f2be6c62dc7fa670171493941332fe7ff20e5
+ms.openlocfilehash: 42649148e58a8ea1baab6317d181c24e6a21d709
 
 
 ---
@@ -37,9 +37,8 @@ ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
         单击“保护” > “帮助和反馈”，然后在“Microsoft Azure 信息保护”对话框中，确认客户端状态。 应显示“已安装信息保护策略”和最新的连接时间。 验证对于租户显示的用户名是否正确。
 
     - 在功能区下方显示一个新栏：信息保护栏。 该栏的标题显示为“敏感度”，默认标签为我们配置的“供内部使用”。 
-
-
-![Azure 信息保护快速入门教程步骤 3 - 已安装客户端](../media/word2013-callouts.png)
+    
+        ![Azure 信息保护快速入门教程步骤 3 - 已安装客户端](../media/word2013-callouts2.png)
 
 你可以进行最后一步，以查看分类、设置标签和保护的实际操作。
 
@@ -53,6 +52,6 @@ ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
 [步骤 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 
