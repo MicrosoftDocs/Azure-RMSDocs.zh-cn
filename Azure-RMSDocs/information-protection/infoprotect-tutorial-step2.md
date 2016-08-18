@@ -3,15 +3,15 @@ title: "Azure 信息保护快速入门教程 - 步骤 2 | Azure 权限管理"
 description: "入门教程第 2 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: cab45baf19af4ab548f5f112946d168d93a95d49
-ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
+ms.sourcegitcommit: 09cb56aaa0d7d97073623c518aa331d591a376e3
+ms.openlocfilehash: 65d758635b77ee7d6c423a1400a7621e8e05b14d
 
 
 ---
@@ -24,13 +24,20 @@ ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 
 尽管 Azure 信息保护附带了你无需进行配置的默认策略，我们仍然要看一下该策略并进行一些更改。
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
+1. 登录到 [Azure 门户](https://portal.azure.com)。 如果想要测试保护以及分类和标记，请以全局管理员身份登录，以便检索 Azure 权限管理模板。
  
-2. 在中心菜单上单击“浏览”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+2. 在中心菜单上：单击“新建” > “安全性 + 标识” > “Azure 信息保护(预览版)” > “创建”。
 
-- 此时你将看到“Azure 信息保护”的主边栏选项卡，其中显示了自动创建的默认信息保护策略。 该默认策略包含以下用于分类的标签：**个人**、**公共**、**供内部使用**、**机密**和**秘密**。 阅读各个标签的工具提示以了解如何使用这些标签。 请注意，**秘密**标签有两个子标签：**所有员工**和**我的组**，这是一个类别具有子类别的一个示例。
+    这将创建“Azure 信息保护”边栏选项卡，以便下次登录到门户时，可以从中心的“浏览”列表中选择该服务。 
 
-- 凭借其默认设置，**供内部使用**、**机密**和**秘密**都配置了可视化标记（例如页脚、页眉、水印），并且这些标签都没有设置保护。 此外，由于未设置此三个全局设置，因此所有文档和电子邮件不需要有标签。没有默认标签，用户降低敏感度级别时无需提供理由。
+    > [!TIP] 
+    > 选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览步骤。
+
+3.  浏览“Azure 信息保护”主边栏选项卡，其中显示了自动创建的默认信息保护策略：
+    
+    - 用于分类的标签：“个人”、“公共”、“内部”、“机密”和“秘密”。 阅读各个标签的工具提示以了解如何使用这些标签。 请注意，**秘密**标签有两个子标签：**所有员工**和**我的组**，这是一个类别具有子类别的一个示例。
+
+    - 在默认设置中，“内部”、“机密”和“秘密”标签都配置了可视标记（例如页脚、页眉、水印），并且这些标签都没有设置保护。 此外，由于未设置此三个全局设置，因此所有文档和电子邮件不需要有标签。没有默认标签，用户降低敏感度级别时无需提供理由。
 
     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy.png)
 
@@ -42,7 +49,7 @@ ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 
 现在我们要更改一个标签**机密**：
 
-1. 单击“机密”标签条目。
+1. 单击“机密”标签。
 
 2. 在“标签：机密”边栏选项卡中，你将看到可用于每个标签的设置。 进行以下更改：
 
@@ -90,6 +97,6 @@ ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 [步骤 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

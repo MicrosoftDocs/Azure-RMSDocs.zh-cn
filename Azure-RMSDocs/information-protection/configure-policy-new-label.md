@@ -3,15 +3,15 @@ title: "如何创建 Azure 信息保护的新标签 | Azure 权限管理"
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 26f22fb616f66332abf87501f782f1f8e8f0c013
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: c2f8f3204e3d5947137e7e9111ba4eba2628293b
 
 
 ---
@@ -28,22 +28,22 @@ ms.openlocfilehash: 26f22fb616f66332abf87501f782f1f8e8f0c013
 
 使用以下说明将一个新标签添加到 Azure 的信息保护策略。
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
- 
-2. 在中心菜单上单击“浏览”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+1. 如果尚未这样做，请登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
+    
+    例如，在中心菜单上单击“浏览”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
 
-3. 在“**Azure 信息保护**”边栏选项卡上，执行以下操作之一：
+2. 在“**Azure 信息保护**”边栏选项卡上，执行以下操作之一：
 
     - 创建新的标签：单击“**添加新的标签**”。
 
     - 创建新的子标签：对于要创建子标签的标签，右键单击或选择上下文菜单 (**...**)，然后单击“**添加子标签**”。
 
-4. 在“**标签**”或“**子标签**”边栏选项卡上，选择要应用于此新标签的选项，然后单击“**保存**”。
+3. 在“**标签**”或“**子标签**”边栏选项卡上，选择要应用于此新标签的选项，然后单击“**保存**”。
 
     > [!NOTE]
     >有关设置保护的信息，请参阅 [如何配置标签以应用保护](configure-policy-protection.md)(#如何配置标签以应用保护)。
 
-5. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
+4. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 
 ## 后续步骤
 
@@ -53,6 +53,6 @@ ms.openlocfilehash: 26f22fb616f66332abf87501f782f1f8e8f0c013
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

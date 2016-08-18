@@ -3,15 +3,15 @@ title: "Azure 信息保护快速入门教程 - 步骤 4 | Azure 权限管理"
 description: "入门教程第 4 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: a36433167462275e91059f9eb3a2141ffa2797d5
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
 
 ### 若要手动更改我们的默认标签，请执行以下操作：
 
-- 在信息保护栏上，单击“供内部使用”旁边的“编辑”标签图标。 将显示可用的标签。 选择“个人”，此时系统会提示你输入降低分类级别的理由。 选择“该文件不再需要该分类”，然后单击“确认”。  
+- 在信息保护栏上，选择“个人”标签，此时系统会提示你输入降低分类级别的理由。 选择“该文件不再需要该分类”，然后单击“确认”。  
 
     你将看到“敏感度”的值变为“个人”。
 
@@ -36,7 +36,7 @@ ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
 
 ### 若要完全删除分类，请执行以下操作：
 
-- 在信息保护栏上，单击“个人”旁边的“编辑”标签图标。 将显示可用的标签。 但这一次不是选择一个标签，而是单击删除标签的图标。 单击“确定”确认删除并提供该操作的理由。  
+- 在信息保护栏上，单击“个人”旁边的“编辑标签”图标。 将显示可用的标签。 但这一次不是选择某个标签，而是单击“删除标签”图标。 单击“确定”确认删除，然后提供该操作的理由。  
 
     你将看到“敏感度”的值显示为“未设置”，即如果未设置默认的标签，用户看到的最初内容。
 
@@ -77,6 +77,6 @@ ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -3,15 +3,15 @@ title: "如何删除或重排 Azure 信息保护的标签 | Azure 权限管理"
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 50a60f8a0f8cb92aba7453e6c1dedacbe004a5ed
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 3b4066c8e5770e6f4a502ecaebfd961400e9df2d
 
 
 ---
@@ -36,11 +36,11 @@ ms.openlocfilehash: 50a60f8a0f8cb92aba7453e6c1dedacbe004a5ed
 
 按照以下说明进行这些更改。
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
+1. 如果尚未这样做，请登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
+    
+    例如，在中心菜单上单击“浏览”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 在中心菜单上单击“浏览”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
-
-3. 在“**Azure 信息保护**”边栏选项卡上，执行以下操作之一，具体取决于是否想要删除、禁用或重排标签：
+2. 在“**Azure 信息保护**”边栏选项卡上，执行以下操作之一，具体取决于是否想要删除、禁用或重排标签：
 
     - 删除标签：对于你想要删除的标签，右键单击或选择上下文菜单 (**...**)，单击“**删除此标签**”，然后单击“**是**”以确认。 然后，单击“**保存**”。 
 
@@ -48,7 +48,7 @@ ms.openlocfilehash: 50a60f8a0f8cb92aba7453e6c1dedacbe004a5ed
 
     - 重排标签：针对想要重排的标签，右键单击或选择上下文菜单 (**...**)，你，单击“**上移**”或“**下移**”直到标签位于所需的顺序。 然后，单击“**保存**”。 
 
-4. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
+3. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 
 ## 后续步骤
 
@@ -58,6 +58,6 @@ ms.openlocfilehash: 50a60f8a0f8cb92aba7453e6c1dedacbe004a5ed
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

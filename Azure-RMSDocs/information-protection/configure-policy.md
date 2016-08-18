@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/22/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: d4b0685176407fe3a0ff14408a1381e960033afe
+ms.sourcegitcommit: 781632c5a28377339431cd6537b1b9e11d0a3259
+ms.openlocfilehash: 0e31053a83c30d8552cfb78914d0d13baac25f42
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: d4b0685176407fe3a0ff14408a1381e960033afe
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 
-2. 在中心菜单上单击“**浏览**”并开始在筛选框中键入“**信息保护**”。 在结果中选择“Azure 信息保护”。 
+2. 导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“浏览”并在“筛选”框中开始键入**信息保护**。 在结果中选择“Azure 信息保护”。 
 
     然后，你将看到“**Azure 信息保护**”边栏选项卡，可在其中配置 Azure 信息保护策略，其中包含以下元素：
 
@@ -81,6 +81,6 @@ Azure 的信息保护附带 [默认策略](configure-policy-default.md)(#默认�
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

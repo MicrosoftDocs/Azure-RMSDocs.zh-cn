@@ -20,11 +20,12 @@
 ### [删除或重排标签](configure-policy-delete-reorder.md)
 ### [更改标签](configure-policy-change-label.md)
 ### [应用保护](configure-policy-protection.md)
+#### [HYOK 限制](configure-adrms-restrictions.md)
 ### [配置可视标记](configure-policy-markings.md)
 ### [配置条件](configure-policy-classification.md)
 ## [安装客户端](info-protect-client.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

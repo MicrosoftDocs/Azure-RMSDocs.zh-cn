@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/21/2016
+ms.date: 08/05/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ac4264f20208f999c9ad9bdd2c4759e65ae021b
-ms.openlocfilehash: 5344c38a31aa0ceb894f330f363442bd2c0d9375
+ms.sourcegitcommit: f7cf74355aa39928fd66a4be13a9b65428da7480
+ms.openlocfilehash: 08226cd930f90bc7c9cda4c65315ee6472fbcf52
 
 
 ---
@@ -351,6 +351,33 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 -   https://&#42;.microsoftonline-p.com
 
+### 为用户跟踪和撤销文档
+
+当用户登录到文档跟踪站点时，他们可以跟踪和撤销使用 RMS 共享应用程序共享的文档。 当你以 Azure RMS 管理员（全局管理员）的身份登录时，可以单击页面右上角的“管理员”图标，以此切换到管理员模式，这样你就可以看到组织中的用户已共享的文档。
+
+在管理员模式下执行的操作会经过审核并记录在使用情况日志文件中，必须确认后才能继续。 有关此日志记录的详细信息，请参阅下一节。
+
+处于管理员模式时，可以按用户或文档进行搜索。 如果按用户搜索，将看到指定用户共享的所有文档。 如果按文档搜索，将看到组织中共享该文档的所有用户。 之后，如有必要，你可以钻取到搜索结果，以便跟踪用户共享的文档以及撤销这些文档。 
+
+若要离开管理员模式，请单击“退出管理员模式”旁边的“X”。
+
+有关如何使用文档跟踪站点的说明，请参阅用户指南中的[跟踪和撤销文档](sharing-app-track-revoke.md)。
+
+
+
+### 文档跟踪站点的使用情况日志记录
+
+使用情况日志文件中的以下两个字段适用于文档跟踪：**AdminAction** 和 **ActingAsUser**。
+
+**AdminAction** — 当管理员在管理员模式下使用文档跟踪站点时，例如，代表用户撤销文档或查看其共享时间，此字段的值为 true。 当用户登录到文档跟踪站点时，此字段为空。
+
+**ActingAsUser** — 当 AdminAction 字段为 true 时，此字段包含管理员代表的所搜索的用户或文档所有者的用户名。 当用户登录到文档跟踪站点时，此字段为空。 
+
+此外，还有记录用户和管理员如何使用文档跟踪站点的请求类型。 例如，**RevokeAccess** 是用户或代表用户的管理员已撤销文档跟踪站点中的文档时的请求类型。 通过将此请求类型与 AdminAction 字段结合使用，可确定是用户撤销了自己的文档（AdminAction 字段为空），还是管理员代表用户撤销了文档（AdminAction 为 true）。
+
+
+有关使用情况日志记录的详细信息，请参阅[记录和分析 Azure 权限管理使用情况](../deploy-use/log-analyze-usage.md)
+
 ## 仅限 AD RMS：在组织中支持多个电子邮件域
 如果你使用 AD RMS 且你所在组织中的用户具有多个电子邮件域（可能由于组织的合并或收购而引起），则必须对注册表进行以下编辑：
 
@@ -369,6 +396,6 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

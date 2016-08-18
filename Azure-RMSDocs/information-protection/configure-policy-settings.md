@@ -3,15 +3,15 @@ title: "如何配置 Azure 信息保护的全局策略设置 | Azure 权限管�
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 3b22cf76f03a4d36281db7e705359402dcbbde0e
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 508161474bf6fd7406668de3976206947de254de
 
 
 ---
@@ -29,11 +29,11 @@ Azure 信息保护策略中有 3 个设置适用于所有用户、所有设备�
 
 配置这些设置：
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
- 
-2. 在中心菜单上单击“浏览”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+1. 如果尚未这样做，请登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
+    
+    例如，在中心菜单上单击“浏览”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
 
-3. 在“**Azure 信息保护**”边栏选项卡上，配置这些全局设置：
+2. 在“**Azure 信息保护**”边栏选项卡上，配置这些全局设置：
 
     - **所有文档和电子邮件都必须有标签**：此选项设置为“**打开**”时，所有已保存的文档和发送的电子邮件都必须应用标签。 标记可能由用户手动分配，或因[条件](configure-policy-classification.md)自动分配，或（通过设置“**选择默认标签**”选项）默认分配。 
 
@@ -49,9 +49,9 @@ Azure 信息保护策略中有 3 个设置适用于所有用户、所有设备�
 
     此选项不适用于子标签。
 
-4. 单击“**保存**”以保存更改。
+3. 单击“**保存**”以保存更改。
 
-5. 若要使所做的更改应用于用户，请单击“**发布**”。
+4. 若要使所做的更改应用于用户，请单击“**发布**”。
 
 ## 后续步骤
 
@@ -68,6 +68,6 @@ Azure 信息保护策略中有 3 个设置适用于所有用户、所有设备�
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 08/05/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8
-ms.openlocfilehash: 845a47f526754f291c27a3c2bbd80af736b44992
+ms.sourcegitcommit: 2082620eb152aa88af4141b88985adce22769168
+ms.openlocfilehash: fbf614bf7b30165a78f6312267243ad6fdb81435
 
 
 ---
@@ -131,7 +131,7 @@ Azure Rights Management 将日志作为一系列 Blob 写入。
 
 第三行枚举字段名称列表，以制表符分隔：
 
-**#字段：date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip**
+**#字段：date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
 
 后面的每行都是日志记录。 这些字段的值与前一行具有相同的顺序，并且以制表符分隔。 请使用下表分析这些字段。
 
@@ -152,6 +152,7 @@ Azure Rights Management 将日志作为一系列 Blob 写入。
 |date-published|日期|保护文档时的日期。|2015-10-15T21:37:00|
 |c-info|String|有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Address|发出请求的客户端的 IP 地址。|64.51.202.144|
+
 
 #### user-id 字段的例外
 虽然 user-id 字段通常指示发出请求的用户，但在两种例外情况下，该值不映射到真正用户：
@@ -174,29 +175,42 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 |AcquireTemplates|进行调用以基于模板 ID 获取模板|
 |AcquireTemplateInformation|进行调用以从服务获取模板的 ID。|
 |AddTemplate|从 Azure 经典门户进行调用以添加模板。|
+|AllDocsCsv|从文档跟踪站点进行调用，以便从“所有文档”页面下载 CSV 文件。|
 |BECreateEndUserLicenseV1|从移动设备进行调用以创建最终用户许可证。|
 |BEGetAllTemplatesV1|从移动设备（后端）进行调用以获取所有模板。|
 |Certify|客户端正在认证要保护的内容。|
 |KMSPDecrypt|客户端正在尝试解密受 RMS 保护的内容。 仅适用于客户管理的租户密钥 (BYOK)。|
 |DeleteTemplateById|从 Azure 经典门户进行调用以按模板 ID 删除模板。|
+|DocumentEventsCsv|从文档跟踪站点进行调用，以便下载单个文档的 .CSV 文件。|
 |ExportTemplateById|从 Azure 经典门户进行调用以基于模板 ID 导出模板。|
 |FECreateEndUserLicenseV1|类似于 AcquireLicense 请求，但来自移动设备。|
 |FECreatePublishingLicenseV1|与 Certify 和 GetClientLicensorCert 组合请求相同，来自移动客户端。|
 |FEGetAllTemplates|从移动设备（前端）进行调用以获取模板。|
+|GetAllDocs|从文档跟踪站点进行调用，以便为用户加载“所有文档”页面，或者搜索该租户的所有文档。 将此值与 admin-action 和 acting-as-admin 字段结合使用：<br /><br />- admin-action 为空：用户在“所有文档”页面中查看自己的文档。<br /><br />- admin-action 为 true 且 acting-as-user 为空：管理员查看其租户的所有文档。<br /><br />- admin-action 为 true 且 acting-as-user 不为空：管理员查看用户的“所有文档”页面。|
 |GetAllTemplates|从 Azure 经典门户进行调用以获取所有模板。|
 |GetClientLicensorCert|客户端正在从基于 Windows 的计算机请求发布证书（随后用于保护内容）。|
 |GetConfiguration|调用 Azure PowerShell cmdlet 以获取 Azure RMS 租户的配置。|
 |GetConnectorAuthorizations|从 RMS 连接器进行调用以从云中获取其配置。|
+|GetRecipients|从文档跟踪站点进行调用，以便导航到单个文档的列表视图。|
+|GetSingle|从文档跟踪站点进行调用，以便导航到“单个文档”页面。|
 |GetTenantFunctionalState|Azure 经典门户检查是否已激活 Azure RMS。|
 |GetTemplateById|从 Azure 经典门户进行调用以通过指定模板 ID 来获取模板。|
 |ExportTemplateById|从 Azure 经典门户进行调用以通过指定模板 ID 来导出模板。|
 |FindServiceLocationsForUser|进行调用以查询 URL，使用该项来调用 Certify 或 AcquireLicense。|
+|LoadEventsForMap|从文档跟踪站点进行调用，以便导航到单个文档的映射视图。|
+|LoadEventsForSummary|从文档跟踪站点进行调用，以便导航到单个文档的时间线视图。|
+|LoadEventsForTimeline|从文档跟踪站点进行调用，以便导航到单个文档的映射视图。|
 |ImportTemplate|从 Azure 经典门户进行调用以导入模板。|
+|RevokeAccess|从文档跟踪站点进行调用以撤销文档。|
+|SearchUsers |从文档跟踪站点进行调用，以便搜索某个租户中的所有用户。|
 |ServerCertify|从已启用 RMS 的客户端（如 SharePoint）进行调用以认证服务器。|
 |SetUsageLogFeatureState|进行调用以启用使用日志记录。|
 |SetUsageLogStorageAccount|进行调用以指定 Azure RMS 日志的位置。|
-|KMSPSignDigest|在将客户管理的密钥 (BYOK) 用于签名时进行调用。 通常是针对每个 AcquireLicence（或 FECreateEndUserLicenseV1）、Certify 和 GetClientLicensorCert（或 FECreatePublishingLicenseV1）请求调用一次此项。|
+|SignDigest|在密钥用于签名目的时进行调用。 通常是针对每个 AcquireLicence（或 FECreateEndUserLicenseV1）、Certify 和 GetClientLicensorCert（或 FECreatePublishingLicenseV1）请求调用一次此项。|
+|UpdateNotificationSettings|从文档跟踪站点进行调用，以便更改单个文档的通知设置。|
 |UpdateTemplate|从 Azure 经典门户进行调用以更新现有模板。|
+
+
 
 ## Windows PowerShell 参考
 从 2016 年 2 月起，Azure RMS 使用日志记录需要的唯一 Windows PowerShell cmdlet 为 [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx)。 
@@ -226,6 +240,6 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

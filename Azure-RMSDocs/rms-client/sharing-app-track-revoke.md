@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 406214d90b509bd391cc12ff9033bd07d08300c9
+ms.sourcegitcommit: e9ad2e518b4a7dac608572eb5eb2d99bbda4754e
+ms.openlocfilehash: 4c757494a1fe948ed26b32f86844f7b5896c919b
 
 
 ---
@@ -33,9 +33,11 @@ ms.openlocfilehash: 406214d90b509bd391cc12ff9033bd07d08300c9
 
 -   如果你需要停止共享文档：单击“撤消访问” ，请注意文档将继续可用的时间段，并确定是否允许用户知道你撤消了对之前共享的文档的访问权限，然后提供一条自定义消息。 当你撤消某个文档时，它并不会删除你共享的文档，但获得授权的用户将不再能够打开该文档。
 
--   如果你想要导出到 Excel：单击“在 Excel 中打开” ，以便你可以随后修改数据，并创建你自己的视图和图形。
+-   如果你想要导出到 Excel：单击“导出到 CSV”，以便你随后修改数据，并创建你自己的视图和图形。
 
 -   如果你想要配置电子邮件通知：单击“设置”  并选择在访问该文档时是否通过电子邮件发送通知以及发送方式。
+
+- 如果想要为其他人跟踪和撤销共享文档：Azure RMS 管理员可以通过单击“管理员”图标为其他人跟踪和撤销文档。 只有管理员才能看到该图标。
 
 -   如有疑问或想要提供有关文档跟踪站点的反馈：单击“帮助”图标访问 [文档跟踪常见问题](http://go.microsoft.com/fwlink/?LinkId=523977)。
 
@@ -50,6 +52,11 @@ ms.openlocfilehash: 406214d90b509bd391cc12ff9033bd07d08300c9
     ![选择“使用 RMS 共享应用程序时，从 Outlook 跟踪使用情况” ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
 如果看不到这些用于 RMS 的选项，则很可能你的计算机上未安装 RMS 共享应用程序、未安装最新版本，或必须重启计算机才能完成安装。 有关如何安装共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md)。
+
+> [!NOTE] 
+> 如果安装了 [Azure 信息保护客户端](../information-protection/info-protect-client.md)的预览版本（1.0.233 版或更高版本），则还可以使用“保护”按钮访问文档跟踪站点： 
+> 
+> - 在 Office 应用程序的“主页”选项卡的“保护”组中，单击“保护” > “跟踪使用情况”。 
 
 ### 跟踪和撤消文档的其他方法
 除了使用 Office 应用程序在 Windows 计算机上跟踪文档以外，你还可以使用以下替代方法：
@@ -100,6 +107,6 @@ ms.openlocfilehash: 406214d90b509bd391cc12ff9033bd07d08300c9
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

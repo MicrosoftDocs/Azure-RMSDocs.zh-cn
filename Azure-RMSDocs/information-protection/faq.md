@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
 
 
 ---
@@ -39,11 +39,11 @@ ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
 
 请注意，预览版允许你尝试新的**高级 P2 服务计划**，而一些高级功能，例如自动和推荐的标签，在正式发布的当前计划中可能无法供你使用。 有关其他服务计划（Azure 信息保护高级 P1 和 Azure 信息保护高级 P2）的信息，请参阅以下博客帖子：[Introducing Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/07/introducing-enterprise-mobility-security/)（企业移动性 + 安全性简介）。
 
-该预览版具有以下限制。 有关其他特性和功能何时可用的信息，请留意[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)和 [Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)上的公告。
+该预览版具有以下限制。 有关其他特性和功能何时可用的信息，请留意[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)和 [Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)上的公告：
 
 - 对于分类和标签没有任何集中式日志记录。
 
-- 标签名称和工具提示仅支持英语。
+- 标签名称和工具提示仅支持一种语言。
 
 - 自动分类的条件必须是短语或模式。
 
@@ -61,11 +61,11 @@ ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
 
 若要在 Azure 门户中配置 Azure 信息保护策略，必须具有 Azure 订阅。 如果你还没有你组织的 Azure 订阅，则可以通过注册免费试用版来获取订阅：转到 [Azure 入门](https://account.windowsazure.com/organization)页并按照说明进行操作。
 
-对订阅要求的任何更改将在[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)上公布。
+对订阅要求的任何更改将在[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)上公布。
 
 ## 是否需要是全局管理员才能试用 Azure 信息保护预览版？
 
-仅对于预览版，任何由 Azure 进行身份验证的用户都可以在 Azure 门户中查看并配置其租户的 Azure 信息保护策略。
+仅对于预览版，任何由 Azure 进行身份验证的用户都可以在 Azure 门户中查看并配置其租户的 Azure 信息保护分类和标记策略。 但是，若要配置标签以应用 Azure 权限管理模板，则必须以 Azure Active Directory 全局管理员的身份进行登录。
 
 如果在安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)时选择安装演示策略，那么你甚至不需要登录门户来试用预览版。 演示策略在本地安装 Azure 信息保护的默认策略，因此你可以尝试为文档和电子邮件设置标签，但是，在未登录 Azure 门户的情况下你将无法更改或添加新标签。 
 
@@ -74,7 +74,7 @@ ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
 
 ## Azure 信息保护是否支持本地和混合方案？
 
-Azure 信息保护是一个基于云的解决方案。 如果你对混合方案感兴趣，请发送电子邮件到 askipteam@microsoft.com 来联系信息保护团队。
+Azure 信息保护是一个基于云的解决方案。 如果你对在混合方案中部署 Azure 信息保护感兴趣，请发送电子邮件到 askipteam@microsoft.com 来联系信息保护团队。
 
 ## Azure 信息保护支持哪些客户端平台和应用程序？
 
@@ -150,7 +150,11 @@ Azure 信息保护是一个基于云的解决方案。 如果你对混合方案�
 
 ## 在 Azure 信息保护中如何使用文档跟踪和撤销？
 
-对使用 Azure 信息保护进行分类和保护的文件的文档跟踪的方式与目前对 Azure 权限管理的文档跟踪方式一样。 有关详细信息，请参阅[《Track and revoke your documents when you use the RMS sharing application》](../rms-client/sharing-app-track-revoke.md)（使用 RMS 共享应用程序跟踪和撤销文档）。
+对使用 Azure 信息保护进行分类和保护的文件的文档跟踪方式与目前对 Azure 权限管理和 RMS 共享应用程序的文档跟踪方式一样。 你也可以使用 Azure 信息保护客户端（1.0.233 版或更高版本）来访问文档跟踪站点： 
+
+- 在 Office 应用程序的“主页”选项卡的“保护”组中，单击“保护” > “跟踪使用情况”。 
+
+有关详细信息，请参阅[《Track and revoke your documents when you use the RMS sharing application》](../rms-client/sharing-app-track-revoke.md)（使用 RMS 共享应用程序跟踪和撤销文档）。
 
 ## Azure 信息保护如何实施我配置的策略？
 
@@ -184,6 +188,6 @@ Azure 信息保护将 Azure Active Directory 用于用户身份验证。
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

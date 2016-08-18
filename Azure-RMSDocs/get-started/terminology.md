@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/10/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e9551db57cc1295f20368535267ca5a901ae9f2
-ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
+ms.sourcegitcommit: 75f868c4428e7b434e6a115a3e70508c3ff7f93d
+ms.openlocfilehash: 1a45457548d8cba6424e92bc18ef085d095742f3
 
 
 ---
@@ -32,10 +32,10 @@ ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
 |Active Directory 权限管理服务|经常缩写为 *AD RMS*。<br /><br />一个 Windows Server 角色，它使用加密和策略来提供信息保护，以帮助保护文档、文件和电子邮件。|
 |AD RMS|请参阅 *Active Directory Rights Management 服务*。|
 |Azure 信息保护|目前提供预览版，使用分类、标签和保护来帮助保护文档和电子邮件的一种服务。 Azure 权限管理通过使用加密、标识和授权策略提供保护。|
-|Azure Rights Management|常缩写为 *Azure RMS*。<br /><br />一个 Azure 服务，它使用加密和策略来提供信息保护，以帮助保护文档、文件和电子邮件。  也称为 *Azure Rights Management 服务*。 之前的名称包括：<br /><br />*Windows Azure Active Directory Rights Management*：常缩写为 Windows Azure AD Rights Management Service。<br /><br />*RMS Online*：原始的建议名称，有时可能在错误消息和日志文件条目中看到。|
+|Azure 权限管理|常缩写为 *Azure RMS*。<br /><br />一个 Azure 服务，它使用加密和策略来提供信息保护，以帮助保护文档、文件和电子邮件。  也称为 *Azure Rights Management 服务*。 之前的名称包括：<br /><br />- *Windows Azure Active Directory Rights Management*：常缩写为 Windows Azure AD Rights Management Service。<br /><br />- *RMS Online*：原始的建议名称，有时可能在错误消息和日志文件条目中看到。|
 |Azure RMS|请参阅 *Azure Rights Management*。|
 |BYOK|请参阅 *自带密钥*。|
-|自带密钥|经常缩写为 *BYOK*。<br /><br />想要为 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 生成和管理自己的租户密钥的组织选择的配置选项。|
+|自带密钥|经常缩写为 *BYOK*。<br /><br />想要为 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 生成和管理自己的租户密钥的组织选择的配置和拓扑选项。|
 |内容密钥|启用 RMS 的应用程序为使用 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 保护的每个文档或电子邮件创建的唯一密钥，有助于遏制信息泄密的风险。|
 |使用|解锁受 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 保护的文件，以读取或使用该文件。|
 |停用|禁用权限管理服务，使组织不再能够使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]。|
@@ -44,6 +44,8 @@ ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
 |企业权限管理|一个符合行业标准的通用术语，通常用于描述可通过加密和策略授权工具组合来帮助组织保护敏感信息或重要信息的产品和解决方案。 Microsoft 权限管理就是企业权限管理 (ERM) 解决方案的例子。|
 |ERM|请参阅 *企业权限管理*。|
 |一般性保护|一种保护级别，它可以加密任何文件类型，并阻止未经授权的人员打开该文件。 该文件在打开后将处于未加密状态，并可以在原本不支持[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]的应用程序中使用。|
+|HYOK|请参阅*自留密钥*。|
+|自留密钥|经常缩写为 *HYOK*。<br /><br />一个配置和拓扑选项，面向通常出于法规或合规性方面的原因而想在本地生成并存储自己的密钥的组织。|
 |信息保护|有时缩写为 *IP*。<br /><br />一个符合行业标准的通用术语，表示保护数据和文件以防止未经授权的访问，即使在通过电子邮件或文档共享使这些数据和文件脱离组织边界后，也能提供这种保护。 Microsoft 权限管理就是信息保护 (IP) 解决方案的例子。|
 |信息权限管理|经常缩写为 *IRM*。<br /><br />一个用于 Exchange Server、Word 和 SharePoint Online 等 Office 服务的术语，说明是否支持权限管理。|
 |IRM|请参阅 *信息权限管理*。|
@@ -72,6 +74,6 @@ ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

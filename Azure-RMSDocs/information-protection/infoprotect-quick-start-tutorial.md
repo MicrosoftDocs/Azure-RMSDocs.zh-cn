@@ -3,15 +3,15 @@ title: "Azure 信息保护快速入门教程 | Azure 权限管理"
 description: "该入门教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 17670eadc7cbf6111ab7fd0a9322e51d401b86e1
+ms.sourcegitcommit: 7d599aef75272eff5527294141bb0eb98d041b1b
+ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
 
 
 ---
@@ -38,11 +38,9 @@ ms.openlocfilehash: 17670eadc7cbf6111ab7fd0a9322e51d401b86e1
   > [!TIP] 
   > 如果你需要获取其中一个或这两个订阅，请提前进行，因为该过程有时需要一定的时间才能完成。
 
-- 用于登录到 Office 365 管理中心或 Azure 经典门户的管理员帐户，你可以使用该帐户来激活 Rights Management 服务。 此帐户还必须有电子邮件地址和可用的电子邮件服务（例如，Exchange Online 或 Exchange Server）。
+- 用于登录到 Office 365 管理中心或 Azure 经典门户的全局管理员帐户，你可以使用该帐户来激活权限管理服务或选择 Azure 门户中的 Azure RMS 模板。 此帐户还必须有电子邮件地址和可用的电子邮件服务（例如，Exchange Online 或 Exchange Server）。
 
 - 运行 Windows（最低配置为 Windows 7 Service Pack 1）并已安装 Office Professional Plus 2016、Office Professional Plus 2013 Service Pack 1 或 Office Professional Plus 2010 的计算机。 
-
-- 如果你的组织中部署了 Active Directory Rights Management Services (AD RMS)：该计算机必须是以前未使用 AD RMS 的工作组计算机。 如果你想要保护文档，并确保计算机仅从 Azure 权限管理下载模板，则该条件是必需的。 不支持计算机同时连接到 AD RMS 和 Azure RMS。 如果你对迁移信息感兴趣，请参阅[从 AD RMS 迁移到 Azure 权限管理](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。   
 
 让我们开始吧。
 
@@ -53,6 +51,6 @@ ms.openlocfilehash: 17670eadc7cbf6111ab7fd0a9322e51d401b86e1
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 
