@@ -14,15 +14,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
-ms.openlocfilehash: ae1af4a1cddc904fd4800f1a3900e3c7c4d073ed
+ms.sourcegitcommit: a0659fda129f6de5e7b52c89f4d1f9d73d11df45
+ms.openlocfilehash: bdc173fb9cb9b749d75b08df3cc9554acd6f6386
 
 
 ---
 
 # iOS 和 OS X 安装程序
 
-借助 Azure Active Directory Rights Management (AAD RM)，iOS 和 OS X 应用程序可使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
+借助 Azure Rights Management (Azure RMS)，iOS 和 OS X 应用程序可使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
 
 本主题将指导你完成环境设置过程，以创建自己的新应用。
 
@@ -100,7 +100,7 @@ ms.openlocfilehash: ae1af4a1cddc904fd4800f1a3900e3c7c4d073ed
 
 -   你现已准备就绪，可自行创建新的 iOS/OS X 应用。
 
-### 另请参阅
+### 另請參閱
 
 * [入门](get-started.md)
 
@@ -119,6 +119,6 @@ ms.openlocfilehash: ae1af4a1cddc904fd4800f1a3900e3c7c4d073ed
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f01d57759ab80b4946c07a627269550c80114131
-ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
+ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
+ms.openlocfilehash: ee7b9b5f251856f102651f1e8f379f7bbacea77e
 
 
 ---
@@ -41,21 +41,21 @@ ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
 ## 选择你的租户密钥拓扑：由 Microsoft 管理（默认设置）或由你管理 (BYOK)
 确定哪种租户密钥拓扑最适合你的组织。 默认情况下，Azure RMS 生成你的租户密钥，并管理租户密钥生命周期的大多数方面。 这是最简单的选项，管理开销最低。 大多数情况下，你甚至不需要知道自己有租户密钥。 你只需注册 Azure RMS，密钥管理过程的剩余部分将由 Microsoft 处理。
 
-或者，你可能希望完全控制自己的租户密钥，这就需要创建你的租户密钥，并将主副本保存在本地。 这种方案通常称为自带密钥 (BYOK)。 使用这种选项的过程如下：
+或者，你可能希望通过使用 [Azure 密钥保管库](https://azure.microsoft.com/services/key-vault/)完全控制你的租户密钥。 此方案涉及到创建你的租户密钥并将主控副本保存在本地。 这种方案通常称为自带密钥 (BYOK)。 使用这种选项的过程如下：
 
-1.  你根据 IT 策略在本地生成租户密钥。
+1.  根据 IT 策略和安全策略在本地生成租户密钥。
 
-2.  你将租户密钥从自己掌握的硬件安全模块 (HSM) 安全传送到由 Microsoft 拥有和管理的 HSM。 整个过程中，你的租户密钥从未离开硬件保护范围。
+2.  使用 Azure 密钥保管库将租户密钥从自己掌握的硬件安全模块 (HSM) 安全传送到由 Microsoft 拥有和管理的 HSM。 整个过程中，你的租户密钥从未离开硬件保护范围。
 
-3.  当你将租户密钥传送到 Microsoft 时，它始终处于 Thales HSM 保护下。 Microsoft 与 Thales 进行了合作，确保你的租户密钥无法从 Microsoft 的 HSM 提取。
+3.  当你将租户密钥传送到 Microsoft 时，它始终处于 Azure 密钥保管库保护下。
 
 虽然这是可选的，但你可能希望使用 Azure RMS 提供的接近实时的使用日志，以便准确了解你的租户密钥的使用时间和方式。
 
 > [!NOTE]
-> 作为一种附加保护措施，Azure RMS 在位于北美、EMEA 地区（欧洲、中东和非州）和亚洲的数据中心使用单独的安全体系。 当你管理自己的租户密钥时，它将关联到你的 RMS 租户注册所在地区的安全体系。 例如，欧洲客户的租户密钥无法在北美或亚洲的数据中心使用。
+> 作为一种附加保护措施，Azure 密钥保管库在位于北美、EMEA（欧洲、中东和非州）和亚洲等地区的数据中心使用单独的安全域。 对于 Azure 的其他实例，如 Microsoft Azure 德国和 Azure 政府。 当你管理自己的租户密钥时，它将关联到你的 RMS 租户注册所在地区或实例的安全域。 例如，欧洲客户的租户密钥无法在北美或亚洲的数据中心使用。
 
 ## 租户密钥生命周期
-如果你决定由 Microsoft 管理你的租户密钥，Microsoft 将处理大多数密钥生命周期操作。 但是，如果你决定自行管理租户密钥，则要负责很多密钥生命周期操作，以及其他一些过程。
+如果你决定由 Microsoft 管理你的租户密钥，Microsoft 将处理大多数密钥生命周期操作。 但是，如果你决定自行管理租户密钥，则要负责 Azure 密钥保管库中的很多密钥生命周期操作，以及其他一些过程。
 
 下图显示和比较了这两个选项。 第一张图显示在由 Microsoft 管理租户密钥的默认配置中，管理员开销非常低。
 
@@ -63,7 +63,7 @@ ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
 
 第二张图显示当你自行管理租户密钥时需要的其他步骤。
 
-![Azure RMS 租户密钥生命周期 - 由你管理，BYOK](../media/RMS_BYOK_onprem.png)
+![Azure RMS 租户密钥生命周期 - 由你管理，BYOK](../media/RMS_BYOK_onprem4.png)
 
 如果你决定让 Microsoft 管理你的租户密钥，则除了生成密钥之外，再无需任何额外操作，你可以直接执行[后续步骤](plan-implement-tenant-key.md#next-steps)。
 
@@ -86,34 +86,28 @@ ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
 |---------------|--------------------|
 |支持 Azure RMS 的订阅。|有关可用订阅的详细信息，请参阅[支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md)。|
 |请不要使用个人 RMS 或 Exchange Online。 或者，如果你使用 Exchange Online，应了解并接受对此配置使用 BYOK 的限制。|有关 BYOK 当前限制的详细信息，请参阅 [BYOK 定价和限制](byok-price-restrictions.md)。<br /><br />**重要事项**：目前，BYOK 不兼容 Exchange Online。|
-|Thales HSM、智能卡和支持软件。<br /><br />**注意**：如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure RMS，必须拥有 Thales 驱动程序的最低版本 11.62。|你必须能够使用 Thales 硬件安全模块，并且掌握有关 Thales HSM 的基本操作知识。 有关兼容型号的列表，请参阅 [Thales 硬件安全模块](http://www.thales-esecurity.com/msrms/buy) ，如果你还没有 HSM，请及时购买。|
-|如果你希望通过 Internet 传送租户密钥，而不是亲自前往美国 Redmond 传送租户密钥。 有 3 个要求：<br /><br />1：脱机 x64 工作站，Windows 操作系统版本最低为 Windows 7，Thales nShield 软件至少为版本 11.62。<br /><br />如果此工作站运行 Windows 7，则必须 [安装 Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=225702)。<br /><br />2：连接到 Internet 的工作站，Windows 操作系统版本最低为 Windows 7。<br /><br />3：USB 驱动器或其他便携式存储设备，至少拥有 16 MB 可用空间。|如果你亲自将租户密钥送到 Redmond，则不需要这些先决条件。<br /><br />出于安全原因，我们建议第一个工作站不要连接到网络。 但是，程序对此没有强制要求。<br /><br />注意：在接下来的说明中，此第一个工作站称为**未连接工作站**。<br /><br />此外，如果你的租户密钥用于生产网络，我们建议你使用第二个独立工作站来下载工具集和上载租户密钥。 但如果用于测试目的，你可以使用同一个工作站。<br /><br />注意：在接下来的说明中，此第二个工作站称为**连接 Internet 的工作站**。|
+|为密钥保管库 BYOK 列出的所有先决条件。|请参阅 Azure 密钥保管库文档的 [Prequisites for BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br />**注意**：如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure RMS，必须拥有 Thales 固件的最低版本 11.62。|
+|用于 Windows PowerShell 的 Azure RMS 管理模块。|有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。 <br /><br />如果你之前已安装了此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 **2.5.0.0**： `(Get-Module aadrm -ListAvailable).Version`|
 
-生成和使用自己的租户密钥的过程，具体取决于你是要通过 Internet 传送租户密钥还是亲自传送租户密钥：
+有关 Thales HSM 及其如何与 Azure 密钥保管库一起使用的详细信息，请参阅 [Thales website](https://www.thales-esecurity.com/msrms/cloud)（Thales 网站）。
 
--   **通过 Internet：** 这种方式需要一些额外配置步骤，例如下载并使用工具集和 Windows PowerShell cmdlet。 但是，你无需亲自前往 Microsoft 设施传送你的租户密钥。 通过以下方法维护安全性：
+若要生成你自己的租户密钥并将其传送到 Azure 密钥保管库，请按照 Azure 密钥保管库文档 [How to generate and transfer HSM-protected keys for Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/)（如何为 Azure 密钥保管库生成和传输受 HSM 保护的密钥）中的过程。
 
-    -   你从脱机工作站生成租户密钥，这样可以减小攻击面。
+将该密钥传送到密钥保管库时，将在密钥保管库中为其给定一个密钥 ID，这是一个包含保管库名称、密钥容器、密钥名称和密钥版本的 URL。 例如：**https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**。 将需要通过指定此 URL 告知 Azure RMS 使用此密钥。
 
-    -   租户密钥使用“密钥交换密钥”(KEK) 进行了加密，这样在传送到 Azure RMS HSM 之前可以一直保持加密状态。 只有已加密版本的租户密钥才能离开原始工作站。
+但是，在 Azure RMS 可以使用该密钥前，必须授权 Azure RMS 可以在你的组织的密钥保管库中使用该密钥。 若要执行此操作，Azure 密钥保管库管理员将使用密钥保管库 PowerShell cmdlet，[Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/library/mt603625.aspx) 并向 Azure RMS 服务主体 **Microsoft.Azure.RMS** 授予权限。 例如：
 
-    -   你的租户密钥的一个工具集属性，该属性将你的租户密钥绑定到 Azure RMS 安全体系。 因此，在 Azure RMS HSM 收到和解密你的租户密钥之后，只有这些 HSM 能够使用该密钥。 你的租户密钥无法导出。 绑定由 Thales HSM 实施。
+    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign 
 
-    -   用于加密你的租户密钥的“密钥交换密钥”(KEK) 在 Azure RMS HSM 内部生成，而且无法导出。 HSM 强制要求在 HSM 外部不能有 KEK 的明文版本。 此外，工具集包括来自 Thales 的证明，它证实 KEK 是无法导出的，在 Thales 制造的真品 HSM 内部生成。
+现在可开始配置 Azure RMS 以将此密钥用作你的组织的 Azure RMS 租户密钥。 使用 Azure RMS cmdlet，需首先连接到 Azure RMS，并登录：
 
-    -   工具集还包括来自 Thales 的证明，它证实 Azure RMS 安全体系也在 Thales 制造的真品 HSM 上生成。 这样可向你证明 Microsoft 使用了真品硬件。
+    Connect-AadrmService
 
-    -   Microsoft 使用单独的 KEK，而且在每个地理区域中使用独立的安全体系，这样可以确保你的租户密钥只能在对其进行加密的区域内的数据中心使用。 例如，欧洲客户的租户密钥无法在北美或亚洲的数据中心使用。
+然后运行 [Use-AadrmKeyVaultKey cmdlet](https://msdn.microsoft.com/library/azure/mt759829.aspx)，指定密钥 URL。 例如：
 
-    > [!NOTE]
-    > 你的租户密钥可在不受信任的计算机和网络之间安全传送，因为它进行了加密，并且通过访问控制级别权限得到保护，只能在你的 HSM 和 Microsoft 的用于 Azure RMS 的 HSM 内部使用。 你可以使用工具集中提供的脚本来验证安全措施，并且阅读 Thales 提供的此方面内容的详细信息： [RMS 云中的硬件密钥管理](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud)。
+    Use-AadrmKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333"
 
--   **亲自传送密钥：**这种方式要求你[与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)来安排 Azure RMS 的密钥传送预约。 你必须亲自前往位于美国华盛顿州 Redmond 市的 Microsoft 办事处，将你的租户密钥传送到 Azure RMS 安全体系。
-
-有关操作方法说明，请选择你将通过 Internet 生成和传送租户密钥，还是亲自传送租户密钥： 
-
-- [通过 Internet](generate-tenant-key-internet.md)
-- [亲自](generate-tenant-key-in-person.md)
+如果需要确认在 Azure RMS 中正确设置了密钥 URL，可在 Azure 密钥保管库中运行 [Get-AzureKeyVaultKey](https://msdn.microsoft.com/library/dn868053.aspx) 查看密钥 URL。
 
 
 ## 后续步骤
@@ -122,15 +116,15 @@ ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
 
 1.  开始使用你的租户密钥：
 
-    -   如果尚未开始使用，你必须立即启用权限管理，以便你的组织能够开始使用 RMS。 用户立即开始使用你的租户密钥（由 Microsoft 管理或由你管理）。
+    -   如果尚未开始使用，你必须立即启用权限管理，以便你的组织能够开始使用 RMS。 用户立即开始使用你的租户密钥（在 Azure 密钥保管库中由 Microsoft 管理或由你管理）。
 
         有关激活的详细信息，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md)。
 
     -   如果你已经激活了权限管理，然后决定自行管理租户密钥，用户将逐渐从旧租户密钥迁移到新租户密钥，这种交错式迁移可能需要花费几周才能完成。 受旧租户密钥保护的文档和文件仍然可供授权用户访问。
 
-2.  请考虑启用使用日志记录，该功能可记录 RMS 执行的每一个事务。
+2.  请考虑启用使用日志记录，该功能记录了 Azure 权限管理执行的每一个事务。
 
-    如果你决定自行管理租户密钥，则日志记录包括租户密钥的使用信息。 请参阅 Excel 格式日志文件中的以下代码段，其中的 **KMSPDecrypt** 和 **KMSPSignDigest** 请求类型显示该租户密钥正在使用中。
+    如果你决定自行管理租户密钥，则日志记录包括租户密钥的使用信息。 请参阅显示在 Excel 中的日志文件的以下代码段，其中 **KeyVaultDecryptRequest** 和 **KeyVaultSignRequest** 请求类型显示该租户密钥正在使用中。
 
     ![正在使用租户密钥的 Excel 格式日志文件](../media/RMS_Logging.png)
 
@@ -143,6 +137,6 @@ ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

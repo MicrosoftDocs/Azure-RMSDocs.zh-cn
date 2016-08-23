@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
-ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 9cd66efad548a4ddef4e6032b0ce7fc817a95c31
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
 
 ## 将配置数据导入到 Azure RMS
 
-1.  在连接 Internet 的工作站上，下载并安装用于 Azure RMS 的 Windows PowerShell 模块（最低版本 2.1.0.0），其中包括 [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) cmdlet。
+1.  在连接 Internet 的工作站上，下载并安装用于 Azure RMS 的 Windows PowerShell 模块（最低版本 2.5.0.0），其中包括 [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) cmdlet。
 
     > [!TIP]
     > 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号： `(Get-Module aadrm -ListAvailable).Version`
@@ -56,7 +56,7 @@ ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
 
     出现提示时，输入你先前指定的密码，并确认要执行此操作。
 
-4.  该命令完成后，请对你通过导出受信任发布域创建的每个剩余 .xml 文件重复执行步骤 3。 但对于这些文件，在运行 Import 命令时将 **-Active** 设为 **false**。 例如：**Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose**
+4.  该命令完成后，请对你通过导出受信任的发布域创建的每个剩余 .xml 文件重复执行步骤 3。 但对于这些文件，在运行 Import 命令时将 **-Active** 设为 **false**。 例如：**Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose**
 
 5.  使用 [Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx) cmdlet 断开与 Azure RMS 服务的连接：
 
@@ -64,11 +64,13 @@ ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
     Disconnect-AadrmService
     ```
 
+
 现在可以转到[步骤 3。激活你的 RMS 租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO3-->
 
 

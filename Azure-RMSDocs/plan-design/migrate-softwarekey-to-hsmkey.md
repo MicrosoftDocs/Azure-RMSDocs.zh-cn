@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
-ms.openlocfilehash: 173641b9dada2673b48a1c210419cb933cdd9f13
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: bd93e781da7dc34c18e236a90a03dbc8fb012a1c
 
 
 ---
@@ -24,83 +24,138 @@ ms.openlocfilehash: 173641b9dada2673b48a1c210419cb933cdd9f13
 *适用于：Active Directory Rights Management Services、Azure Rights Management*
 
 
-这些说明是[从 AD RMS 到 Azure Rights Management 的迁移路径](migrate-from-ad-rms-to-azure-rms.md)中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且你希望使用 HSM 保护的租户密钥迁移到 Azure Rights Management 时才适用。 
+这些说明是 [从 AD RMS 到 Azure 权限管理的迁移路径](migrate-from-ad-rms-to-azure-rms.md) 中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且你希望使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure 权限管理时才适用。 
 
 如果这不是你选择的配置方案，请返回[步骤 2.从 AD RMS 中导出配置数据并将其导入到 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) 中，然后选择其他配置。
 
-此过程分为三部分，用于将 AD RMS 配置导入到 Azure RMS，以生成由你管理的 Azure RMS 租户密钥 (BYOK)。
+此过程分为四部分，用于将 AD RMS 配置导入到 Azure RMS，以在 Azure 密钥保管库中生成由你管理的 Azure RMS 租户密钥 (BYOK)。
 
-必须首先从配置数据中提取服务器许可方证书 (SLC) 密钥并将该密钥传输到本地 Thales HSM，然后打包 HSM 密钥并将其传输到 Azure RMS，最后导入配置数据。
+必须首先从 AD RMS 配置数据中提取服务器许可方证书 (SLC) 密钥并将该密钥传送到本地 Thales HSM，然后打包 HSM 密钥并将其传送到 Azure 密钥保管库，之后授权 Azure RMS 可以访问密钥保管库，最后导入配置数据。
 
-## 第 1 部分：从配置数据中提取 SLC，并将密钥导入到本地 HSM
+因为你的 Azure RMS 租户密钥将由 Azure 密钥保管库存储并进行管理，所以此部分的迁移需要 Azure 密钥保管库中的管理，除了 Azure 密钥 RMS 外。 如果 Azure 密钥保管库由你以外的管理员为你的组织管理，则你需要与该管理员协作完成这些过程。
 
-1.  按照[计划和实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md)的[实现自带密钥 (BYOK)](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 部分中的步骤进行操作，并使用过程**生成并传输租户密钥 — 通过 Internet**，但以下情况例外：
+在开始之前，请确保你的组织有一个已在 Azure 密钥保管库中创建的密钥保管库，且该保管库支持 HSM 保护的密钥。 尽管不是必需的，但我们建议你有一个专用于 Azure RMS 的密钥保管库。 此密钥保管库将被配置为允许 Azure RMS 进行访问，因此应将此密钥保管库中存储的密钥限制为仅 Azure RMS 密钥。
 
-    -   **生成和传送租户密钥 – 通过 Internet**：**准备连接你的 Internet 的工作站**
 
-    -   **生成和传送租户密钥 – 通过 Internet**： **准备你的未连接工作站**
+> [!TIP]
+> 如果你将对 Azure 密钥保管库执行配置步骤，而尚不熟悉此 Azure 服务，你可能会发现先阅读 [Get started with Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)（Azure 密钥保管库入门）可能会有所帮助。 
 
-    不用按照这些步骤生成租户密钥，因为你在导出的配置数据 (.xml) 文件中已有等效项。 你将改为运行命令以从该文件中提取此密钥并将其导入到本地 HSM。
 
-2.  在断开连接的工作站上，运行以下命令：
+## 第 1 部分：从配置数据中提取 SLC 密钥，并将密钥导入到本地 HSM
+
+1.  Azure 密钥保管库管理员：使用 Azure 密钥保管库文档的 [Implementing bring your own key (BYOK) for Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault)（为 Azure 密钥保管库实施自带密钥 (BYOK)）部分中的下列步骤：
+
+    -   **生成密钥并将其传送到 Azure 密钥保管库 HSM**：[步骤 1：准备你的连接 Internet 的工作站](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-1-prepare-your-internet-connected-workstation)
+
+    -   **生成和传送租户密钥 - 通过 Internet**：[步骤 2：准备你的未连接工作站](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-2-prepare-your-disconnected-workstation)
+
+    不用按照这些步骤生成租户密钥，因为你在导出的配置数据 (.xml) 文件中已有等效项。 你将改为运行工具以从该文件中提取此密钥并将其导入到本地 HSM。 在运行时，该工具将创建两个文件：
+
+    - 新的不含密钥的配置数据文件（之后准备将其导入到你的 Azure RMS 租户）。
+
+    - 含密钥的 PEM 文件（为密钥容器，之后准备将其导入到你的本地 HSM）。
+
+2. Azure RMS 管理员或 Azure 密钥保管库管理员：在未连接工作站上，从 [Azure RMS migration toolkit](https://go.microsoft.com/fwlink/?LinkId=524619)（Azure RMS 迁移工具包）中运行 TpdUtil 工具。 例如，在 E 驱动器（在此驱动器上复制名为 ContosoTPD.xml 的配置数据文件）上安装了该工具时：
 
     ```
-    KeyTransferRemote.exe -ImportRmsCentrallyManagedKey -TpdFilePath <TPD> -ProtectionPassword -KeyIdentifier <KeyID> -ExchangeKeyPackage <BYOK-KEK-pka-Region> -NewSecurityWorldPackage <BYOK-SecurityWorld-pkg-Region>
+        E:\TpdUtil.exe /tpd:ContosoTPD.xml /otpd:ContosoTPD.xml /opem:ContosoTPD.pem
     ```
-    例如，对于北美地区：**KeyTransferRemote.exe -ImportRmsCentrallyManagedKey -TpdFilePath E:\contosokey1.xml -ProtectionPassword -KeyIdentifier contosorms1key –- -ExchangeKeyPackage &lt;BYOK-KEK-pka-NA-1&gt; -NewSecurityWorldPackage &lt;BYOK-SecurityWorld-pkg-NA-1&gt;**
 
-    其他信息:
+    如果你有多个 RMS 配置数据文件，请对这些文件的其余部分运行此工具。
 
-    -   ImportRmsCentrallyManagedKey 参数指示该操作是导入 SLC 密钥。
+    若要查看有关该工具的帮助（包含说明、用法和示例），请运行不带参数的 TpdUtil.exe
 
-    -   如果你未在命令中指定密码，则将提示你指定它。
+    此命令的其他信息：
 
-    -   KeyIdentifier 参数指定用于创建密钥文件名的密钥友好名称。 你必须使用仅小写的 ASCII 字符。
+    - **/Tpd**：指定导出的 AD RMS 配置数据文件的完整路径和名称。 参数的全称是 **TpdFilePath**。
 
-    -   ExchangeKeyPackage 参数指定特定于区域的密钥交换密钥 (KEK) 软件包，该软件包的名称以“BYOK-KEK-pkg-”开头。
+    - **/Otpd**：指定不带密钥的配置数据文件的输出文件名。 参数的全称是 **OutPfxFile**。 如果不指定此参数，默认输出文件为带有后缀 **_keyless** 的原始文件名，且将其存储在当前文件夹中。
 
-    -   NewSecurityWorldPackage 参数指定特定于区域的安全体系包，该包的名称以“BYOK-SecurityWorld-pkg-”开头。
+    - **/Opem**：指定 PEM 文件的输出文件名，其中包含提取的密钥。 参数的全称是 **OutPemFile**。 如果不指定此参数，默认输出文件为带有后缀 **_key** 的原始文件名，且将其存储在当前文件夹中。
 
-    此命令将生成以下项：
+    - 如果运行此命令（通过使用 **TpdPassword** 参数全称或 **pwd** 参数简称）时未指定密码，那么系统将提示你指定它。
 
-    -   HSM 密钥文件：%NFAST_KMDATA%\local\key_mscapi_&lt;KeyID&gt;
+3. 在同一个未连接工作站上，按照 Thales 文档附加并配置 Thales HSM。 通过使用以下命令现可以将你的密钥导入到附加 Thales HSM 中，需要将命令中的 ContosoTPD.pem 替换为你自己的文件名称：
 
-    -   SLC 已被删除的 RMS 配置数据文件：%NFAST_KMDATA%\local\no_key_tpd_&lt;KeyID&gt;.xml
+        generatekey --import simple pemreadfile=e:\ContosoTPD.pem plainname=ContosoBYOK protect=module ident=contosobyok type=RSA
 
-3.  如果你有多个 RMS 配置数据文件，请对这些文件的其余部分重复执行步骤 2。
+    > [!NOTE]
+    >如果有多个文件，请选择与 HSM 密钥对应的文件，你要在 Azure RMS 中使用该文件以在迁移后保护内容。
 
-现在，你已提取 SLC 使其成为基于 HSM 的密钥，你已可以将其打包并传输到 Azure RMS 了。
+    这将生成与以下类似的输出显示：
 
-## 第 2 部分：打包 HSM 密钥并将其传输到 Azure RMS
+    **密钥生成参数：**
 
-1.  按照[计划和实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md)的[实现自带密钥 (BYOK)](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 部分中的以下步骤进行操作：
+    **操作 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 要执行的操作 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 导入**
 
-    -   **生成和传送租户密钥 – 通过 Internet**： **准备要传送的租户密钥**
+    **应用程序 &nbsp;&nbsp;&nbsp;&nbsp; 应用程序 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 简单**
 
-    -   **生成和传送租户密钥 – 通过 Internet**： **将你的租户密钥传送到 Azure RMS**
+    **验证 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 验证配置密钥的安全性 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是**
 
-现在，你已将 HSM 密钥传输到 Azure RMS，已可以导入 AD RMS 配置数据（其中只包含指向新传输的租户密钥的指针）了。
+    **类型 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 密钥类型 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RSA**
+
+    **pemreadfile &nbsp;&nbsp; 包含 RSA 密钥的 PEM 文件 &nbsp;&nbsp; e:\ContosoTPD.pem**
+
+    **ident &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 密钥标识符 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contosobyok**
+
+    **plainname &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 密钥名称 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContosoBYOK**
+
+    **已成功导入密钥。**
+
+    **密钥路径：C:\ProgramData\nCipher\Key Management Data\local\key_simple_contosobyok**
+
+此输出确认现已将私钥迁移到本地 Thales HSM 设备，附有保存到一个密钥的加密副本（在本例中为“key_simple_contosobyok”）。 
+
+现已提取 SLC 密钥，并将其导入到本地 HSM，可以打包 HSM 保护的密钥并将其传送到 Azure 密钥保管库。
+
+> [!IMPORTANT]
+> 完成此步骤后，从未连接工作站安全地清除这些 PEM 文件，以确保未经授权的人员不能访问这些文件。 例如，运行“cipher /w:E”安全地从 E: 驱动器删除所有文件。
+
+## 第 2 部分：打包 HSM 密钥并将其传送到 Azure 密钥保管库
+
+1.  Azure 密钥保管库管理员：使用 Azure 密钥保管库文档的 [Implementing bring your own key (BYOK) for Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault)（为 Azure 密钥保管库实施自带密钥 (BYOK)）部分中的下列步骤：
+
+    -   [步骤 4：准备要传送的密钥](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-4-prepare-your-key-for-transfer)
+
+    -   [步骤 5：将密钥传送到 Azure 密钥保管库](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azure-key-vault)
+
+    请勿按照这些步骤来生成你的密钥对，因为你已经具有该密钥。 而是运行命令从本地 HSM 传送此密钥（本例中，KeyIdentifier 参数使用“contosobyok”）。
+
+    将密钥传送到 Azure 密钥保管库之前，请确保在创建具有降低的权限的密钥副本（步骤 4.1）时，以及在加密密钥（步骤 4.3）时，KeyTransferRemote.exe 实用工具返回“结果：成功”。
+
+    将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 类似于 **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**。 请记下此 URL，因为 Azure RMS 管理员需要使用它来告知 Azure RMS 将此密钥作为其租户密钥。
+
+    现在，你已将 HSM 密钥传送到 Azure 密钥保管库，接下来可以导入 AD RMS 配置数据。
 
 ## 第 3 部分：将配置数据导入到 Azure RMS
 
-1.  仍在连接 Internet 的工作站上的 Windows PowerShell 会话中，从断开连接的工作站复制删除了 SLC 的 RMS 配置文件 (%NFAST_KMDATA%\local\no_key_tpd_&lt;KeyID&gt;.xml)
+1.  Azure RMS 管理员：在连接 Internet 的工作站和 PowerShell 会话中，复制在运行 TpdUtil 工具后删除了 SLC 密钥的新配置数据文件 (.xml)。
 
-2.  上载第一个文件。 如果你有多个 .xml 文件（因为有多个受信任发布域），请选择包含与 HSM 密钥对应的已导出受信任发布域的文件，你要在 Azure RMS 中使用该文件来在迁移后保护内容。 使用以下命令：
+2. 使用 [Import-AadrmTpd](https://msdn.microsoft.com/library/dn857523.aspx) cmdlet 上传第一个.xml 文件。 如果你有多个这些文件（因为有多个受信任的发布域），请选择与 HSM 密钥对应的文件，你要在 Azure RMS 中使用该文件来在迁移后保护内容。
+
+    若要运行此 cmdlet，将需要在上一步中标识的密钥的 URL。
+
+    例如，使用上一步的密钥 URL 值和配置数据文件 C:\contoso_keyless.xml，将运行：
 
     ```
-    Import-AadrmTpd -TpdFile <PathToNoKeyTpdPackageFile> -ProtectionPassword -HsmKeyFile <PathToKeyTransferPackage> -Active $true -Verbose
+    Import-AadrmTpd -TpdFile "C:\contoso_keyless.xml" -ProtectionPassword –KeyVaultStringUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Active $True -Verbose
     ```
-    例如：**Import -TpdFile E:\no_key_tpd_contosorms1key.xml -ProtectionPassword -HsmKeyFile E:\KeyTransferPackage-contosorms1key.byok -Active $true -Verbose**
 
-    出现提示时，输入你先前指定的密码，并确认要执行此操作。
+    出现提示时，输入你先前为配置数据文件指定的密码，并确认要执行此操作。
 
-3.  该命令完成后，请对你通过导出受信任发布域创建的每个剩余 .xml 文件重复执行步骤 2。 但对于这些文件，在运行 Import 命令时将 **-Active** 设为 **false**。 例如：**Import -TpdFile E:\no_key_tpd_contosorms2key.xml -ProtectionPassword -HsmKeyFile E:\KeyTransferPackage-contosorms1key.byok -Active $false -Verbose**
+    如果你有多个配置数据文件，请对这些文件的其余部分重复运行此命令。 但对于这些文件，在运行 Import 命令时将 **-Active** 设为 **false**。
 
-4.  使用 [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) cmdlet 断开与 Azure RMS 服务的连接：
+
+
+3.  使用 [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) cmdlet 断开与 Azure RMS 服务的连接：
 
     ```
     Disconnect-AadrmService
     ```
+
+    > [!NOTE]
+    > 如果之后需要确认正在 Azure 密钥保管库中使用的 Azure RMS 租户密钥，请使用 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS cmdlet。
+
 
 现在可以转到[步骤 3。激活你的 RMS 租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
 
@@ -108,6 +163,7 @@ ms.openlocfilehash: 173641b9dada2673b48a1c210419cb933cdd9f13
 
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO3-->
 
 
