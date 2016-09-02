@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/23/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: defe008a9b78026ccac584bb06762228456a2916
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: efe129422348fb30ce7686a5602cb29a1b46d36d
 
 
 ---
@@ -27,9 +27,12 @@ ms.openlocfilehash: defe008a9b78026ccac584bb06762228456a2916
 
 
 ## 步骤 1：下载 Azure Rights Management 管理工具
-转到 Microsoft 下载中心并下载 [Azure Rights Management 管理工具](http://go.microsoft.com/fwlink/?LinkId=257721)，其中包含 Windows PowerShell 的 Azure RMS 管理模块。
+转到 Microsoft 下载中心并下载 [Azure Rights Management 管理工具](https://go.microsoft.com/fwlink/?LinkId=257721)，其中包含 Windows PowerShell 的 Azure RMS 管理模块。
 
 安装工具。 相关说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
+
+> [!NOTE]
+> 如果你之前已下载了此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 2.5.0.0： `(Get-Module aadrm -ListAvailable).Version`
 
 ## 步骤 2。 从 AD RMS 中导出配置数据并将其导入到 Azure RMS 中
 此步骤是一个分为两部分的过程：
@@ -39,10 +42,20 @@ ms.openlocfilehash: defe008a9b78026ccac584bb06762228456a2916
 2.  将配置数据导入到 Azure RMS。 此步骤具有不同处理，具体取决于你的当前 AD RMS 部署配置以及 Azure RMS 租户密钥的首选拓扑。
 
 ### 从 AD RMS 导出配置数据
-在所有 AD RMS 群集中，针对已保护你组织内容的所有受信任的发布域执行以下过程。 无需在仅授权群集上运行此过程。
 
-> [!NOTE]
-> 如果你使用的是 Windows Server 2003 Rights Management，请按照 [从 Windows RMS 迁移到不同基础结构中的 AD RMS](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) 文章中的[导出 SLC、TUD、TPD 和 RMS 私有密钥](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx)过程（而不是按上述说明）进行操作。
+> [!IMPORTANT]
+> 执行此过程之前，首先请确认你的 AD RMS 服务器正在加密模式 2 下运行，这是 Azure RMS 的要求。
+> 
+> 确认加密模式：
+> 
+> - 对于 Windows Server 2012 R2 和 Windows 2012：“AD RMS 群集属性”>“常规”选项卡。 
+> 
+> - 对于所有支持版本的 AD RMS：使用 [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437)（RMS 分析工具）和“AD RMS 管理员”选项可在“RMS 服务信息”中查看加密模式。
+> 
+> 请确保加密模式的值是 **2**。 如果不是，请参阅说明启用 [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)（AD RMS 加密模式）中的加密模式 2。
+
+
+在所有 AD RMS 群集中，针对已保护你组织内容的所有受信任的发布域执行以下过程。 无需在仅授权群集上运行此过程。
 
 #### 导出配置数据（受信任的发布域信息）
 
@@ -60,7 +73,7 @@ ms.openlocfilehash: defe008a9b78026ccac584bb06762228456a2916
 
     -   不要选中将受信任的域文件保存在 RMS 版本 1.0 中的复选框。
 
-当你已导出所有受信任的发布域后，便可启动将此数据从 Thales 导入 Azure RMS 硬件安全模块 (HSM) 的过程。 有关详细信息， 
+当你已导出所有受信任的发布域后，便可以启动将此数据导入到 Azure RMS 的过程了。
 
 ### 将配置数据导入到 Azure RMS
 此步骤的确切过程取决于你的当前 AD RMS 部署配置以及 Azure RMS 租户密钥的首选拓扑。
@@ -78,19 +91,19 @@ ms.openlocfilehash: defe008a9b78026ccac584bb06762228456a2916
 > [!NOTE]
 > 有关将硬件安全模块与 AD RMS 配合使用的详细信息，请参阅 [将 AD RMS 与硬件安全模块配合使用](http://technet.microsoft.com/library/jj651024.aspx)。
 
-两个 Azure RMS 租户密钥拓扑选项包括：Microsoft 管理你的租户密钥（**由 Microsoft 管理**），或者你自行管理租户密钥（**由客户管理**）。 如果你自行管理 Azure RMS 租户密钥，则这有时也称为“自带密钥”(BYOK)，需要 Thales 提供的硬件安全模块 (HSM)。 有关详细信息，请参阅[计划并实施你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md)文章。
+两个 Azure RMS 租户密钥拓扑选项包括：Microsoft 管理你的租户密钥（**由 Microsoft 管理**），或者你在 Azure 密钥保管库中自行管理租户密钥（**由客户管理**）。 如果你自行管理 Azure RMS 租户密钥，则这有时也称为“自带密钥”(BYOK)，需要 Thales 提供的硬件安全模块 (HSM)。 有关详细信息，请参阅[计划并实施你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md)文章。
 
 > [!IMPORTANT]
-> Exchange Online 当前与 Azure RMS BYOK 不兼容。  如果你想要在迁移后使用 BYOK 并打算使用 Exchange Online，请务必了解，这种配置会缩减 Exchange Online 的 IRM 功能。 请查看 [BYOK 定价和限制](byok-price-restrictions.md)中信息，以帮助选择最适合你的迁移防范的 Azure RMS 租户密钥拓扑。
+> Exchange Online 当前与 Azure RMS 中的 BYOK 不兼容。  如果你想要在迁移后使用 BYOK 并打算使用 Exchange Online，请务必了解，这种配置会缩减 Exchange Online 的 IRM 功能。 请查看 [BYOK 定价和限制](byok-price-restrictions.md)中信息，以帮助选择最适合你的迁移防范的 Azure RMS 租户密钥拓扑。
 
 使用下表来确定要使用哪个过程进行迁移。 不支持未列出的组合。
 
 |当前的 AD RMS 部署|已选择 Azure RMS 租户密钥拓扑|迁移说明|
 |-----------------------------|----------------------------------------|--------------------------|
 |AD RMS 数据库中的密码保护|由 Microsoft 管理|请参阅此表后面的 **软件保护密钥到软件保护密钥**的迁移过程。<br /><br />这是最简单的迁移路径，只需要将配置数据传输到 Azure RMS。|
-|通过使用 Thales nShield 硬件安全模块 (HSM) 进行 HSM 保护|由客户管理 (BYOK)|请参阅此表后面的**HSM 保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 BYOK 工具集和以下两组步骤：将密钥从本地 HSM 传输到 Azure RMS HSM，然后将配置数据传输到 Azure RMS。|
-|AD RMS 数据库中的密码保护|由客户管理 (BYOK)|请参阅此表后面的**软件保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 BYOK 工具集和以下三组步骤：首先提取软件密钥并将其导入到本地 HSM，然后将密钥从本地 HSM 传输到 Azure RMS HSM，最后将配置数据传输到 Azure RMS。|
-|通过使用 Thales 以外的供应商提供的硬件安全模块 (HSM) 进行 HSM 保护|由客户管理 (BYOK)|与 HSM 供应商联系以获取有关如何将密钥从此 HSM 传输到 Thales nShield 硬件安全模块 (HSM) 的说明。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
+|通过使用 Thales nShield 硬件安全模块 (HSM) 进行 HSM 保护|由客户管理 (BYOK)|请参阅此表后面的**HSM 保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 Azure 密钥保管库 BYOK 工具集和以下三组步骤：首先将密钥从本地 HSM 传送到 Azure 密钥保管库 HSM，然后授权 Azure RMS 使用你的租户密钥，最后将配置数据传送到 Azure RMS。|
+|AD RMS 数据库中的密码保护|由客户管理 (BYOK)|请参阅此表后面的**软件保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 Azure 密钥保管库 BYOK 工具集和以下四组步骤：首先提取软件密钥并将其导入到本地 HSM，然后将密钥从本地 HSM 传送到 Azure RMS HSM，之后将密钥保管库数据传送到 Azure RMS，最后将配置数据传送到 Azure RMS。|
+|通过使用 Thales 以外的供应商提供的硬件安全模块 (HSM) 进行 HSM 保护|由客户管理 (BYOK)|与 HSM 供应商联系以获取有关如何将密钥从此 HSM 传送到 Thales nShield 硬件安全模块 (HSM) 的说明。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
 |通过使用外部加密提供程序进行密码保护|由客户管理 (BYOK)|与加密提供程序的供应商联系以获取有关如何将密钥传输到 Thales nShield 硬件安全模块 (HSM) 的说明。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
 在开始这些过程之前，请确保你可以访问先前在导出受信任的发布域时创建的 .xml 文件。 例如，可以将这些文件保存到从 AD RMS 服务器移到接入 Internet 的工作站的 U 盘。
 
@@ -101,9 +114,9 @@ ms.openlocfilehash: defe008a9b78026ccac584bb06762228456a2916
 若要完成步骤 2，请选择针对你的迁移路径的说明： 
 
 
-- [软件密钥到软件密钥](migrate-softwarekey-to-softwarekey.md)
-- [HSM 密钥到 HSM 密钥](migrate-hsmkey-to-hsmkey.md)
-- [软件密钥到 HSM 密钥](migrate-softwarekey-to-hsmkey.md)
+- [软件保护密钥到软件保护密钥](migrate-softwarekey-to-softwarekey.md)
+- [HSM 保护密钥到 HSM 保护密钥](migrate-hsmkey-to-hsmkey.md)
+- [软件保护密钥到 HSM 保护密钥](migrate-softwarekey-to-hsmkey.md)
 
 
 ## 步骤 3. 激活你的 RMS 租户
@@ -166,7 +179,7 @@ ms.openlocfilehash: defe008a9b78026ccac584bb06762228456a2916
 ### 示例 Windows PowerShell 脚本，用于识别包括 ANYONE 组的 AD RMS 模板
 本节包含示例脚本，用于帮助你确定定义有 ANYONE 组的 AD RMS 模板，如前一节所述。
 
-**免责声明：**此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。*
+**免责声明：**此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
 
 ```
 import-module adrmsadmin 
@@ -207,6 +220,6 @@ Remove-PSDrive MyRmsAdmin -force
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

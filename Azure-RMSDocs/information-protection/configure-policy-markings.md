@@ -3,15 +3,15 @@ title: "如何配置 Azure 信息保护可视标记的标签 | Azure 权限管�
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 78b68c7a502776c6492437e9b8a5c3f1ebf27f95
+ms.sourcegitcommit: b5e7fecca7aeb61221dc1f61aa3e202936b8c042
+ms.openlocfilehash: 2b4f464fa51e0743cb1ce0726c7feb31146b5128
 
 
 ---
@@ -60,17 +60,19 @@ ms.openlocfilehash: 78b68c7a502776c6492437e9b8a5c3f1ebf27f95
 
 你可以在文本字符串中为页眉、页脚或水印使用以下变量：
 
-- `${Item.Label}` 针对所选标签
+- `${Item.Label}` 针对所选标签。 例如：Internal
 
-- `${Item.Name}` 针对文件名或电子邮件主题
+- `${Item.Name}` 针对文件名或电子邮件主题。 例如：JulySales.docx
 
-- `${Item.Location}` 针对文件路径
+- `${Item.Location}` 针对文档的路径和文件名，以及电子邮件的电子邮件主题。 例如：\\\Sales\2016\Q3\JulyReport.docx
 
-- `${User.Name}` 针对文档或电子邮件的所有者
+- `${User.Name}` 针对文档或电子邮件的所有者，通过使用用户名登录的 Windows。 例如：rsimone
 
-- `${Event.DateTime}` 针对设置所选标签时的日期和时间 
+- `${User.PrincipalName}` 针对文档或电子邮件的所有者，通过使用电子邮件地址 (UPN) 登录的 Azure 信息保护客户端。 例如：rsimone@vanarsdelltd.com
+
+- `${Event.DateTime}` 针对设置所选标签时的日期和时间。 例如：2016/8/16 下午 1:30
     
-示例：如果为 Secret 标签页脚指定字符串 `Document: ${item.name} Sensitivity: ${item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 **Document: project.docx Sensitivity: Secret**。
+示例：如果为 Secret 标签页脚指定字符串 `Document: ${item.name}  Classification: ${item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 **Document: project.docx  Classification: Secret**。
 
 ## 后续步骤
 
@@ -80,6 +82,6 @@ ms.openlocfilehash: 78b68c7a502776c6492437e9b8a5c3f1ebf27f95
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

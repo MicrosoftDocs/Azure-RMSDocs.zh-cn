@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 6d3cb53fb199bb880a0e61d2b964f297e547a027
 
 
 ---
@@ -42,7 +42,7 @@ ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
 ## 步骤 7. 部署 RMS 连接器
 如果你已将 Exchange Server 或 SharePoint Server 的信息权限管理 (IRM) 功能与 AD RMS 一起使用，则必须先在这些服务器上禁用 IRM 并删除 AD RMS 配置。 然后，部署 Rights Management (RMS) 连接器，该连接器将充当本地服务器和 Azure RMS 之间的通信接口（中继）。
 
-此步骤的最后一步，如果你已将多个用于保护电子邮件的 TPD 导入到 Azure RMS ，则必须手动编辑 Exchange Server 计算机上的注册表，将所有 TPD URL 重定向到 RMS 连接器。
+此步骤的最后一步，如果你已将多个用于保护电子邮件的 AD RMS 数据配置文件 (.xml) 导入到 Azure RMS，则必须手动编辑 Exchange Server 计算机上的注册表，将所有受信任的发布域 URL 重定向到 RMS 连接器。
 
 > [!NOTE]
 > 在开始之前，请从[支持 Azure RMS 的本地服务器](../get-started/requirements-servers.md)中核实 Azure RMS 所支持的本地服务器的版本。
@@ -95,7 +95,7 @@ ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
 
 #### 对于仅 Exchange 和多个 TPD：编辑注册表
 
--   在每个 Exchange 服务器上，手动为每个已导入的附加 TPD 添加以下注册表项，将 TPD URL 重定向到 RMS 连接器。 这些注册表项特定于迁移，并且不是通过 Microsoft RMS 连接器的服务器配置工具添加的。
+-   在每个 Exchange Server 上，手动为每个已导入的附加配置数据文件 (.xml) 添加以下注册表项，将受信任的发布域 URL 重定向到 RMS 连接器。 这些注册表项特定于迁移，并且不是通过 Microsoft RMS 连接器的服务器配置工具添加的。
 
     进行这些注册表编辑时，请使用以下说明：
 
@@ -215,6 +215,6 @@ https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
 若要继续迁移，请转到[阶段 4 - 迁移后任务](migrate-from-ad-rms-phase4.md)。
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

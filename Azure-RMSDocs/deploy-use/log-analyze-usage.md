@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/05/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2082620eb152aa88af4141b88985adce22769168
-ms.openlocfilehash: fbf614bf7b30165a78f6312267243ad6fdb81435
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 28fed61b674112d2ebeb30a15a6f6217647e0b5f
 
 
 ---
@@ -179,13 +179,13 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 |BECreateEndUserLicenseV1|从移动设备进行调用以创建最终用户许可证。|
 |BEGetAllTemplatesV1|从移动设备（后端）进行调用以获取所有模板。|
 |Certify|客户端正在认证要保护的内容。|
-|KMSPDecrypt|客户端正在尝试解密受 RMS 保护的内容。 仅适用于客户管理的租户密钥 (BYOK)。|
 |DeleteTemplateById|从 Azure 经典门户进行调用以按模板 ID 删除模板。|
 |DocumentEventsCsv|从文档跟踪站点进行调用，以便下载单个文档的 .CSV 文件。|
 |ExportTemplateById|从 Azure 经典门户进行调用以基于模板 ID 导出模板。|
 |FECreateEndUserLicenseV1|类似于 AcquireLicense 请求，但来自移动设备。|
 |FECreatePublishingLicenseV1|与 Certify 和 GetClientLicensorCert 组合请求相同，来自移动客户端。|
 |FEGetAllTemplates|从移动设备（前端）进行调用以获取模板。|
+|FindServiceLocationsForUser|进行调用以查询 URL，使用该项来调用 Certify 或 AcquireLicense。|
 |GetAllDocs|从文档跟踪站点进行调用，以便为用户加载“所有文档”页面，或者搜索该租户的所有文档。 将此值与 admin-action 和 acting-as-admin 字段结合使用：<br /><br />- admin-action 为空：用户在“所有文档”页面中查看自己的文档。<br /><br />- admin-action 为 true 且 acting-as-user 为空：管理员查看其租户的所有文档。<br /><br />- admin-action 为 true 且 acting-as-user 不为空：管理员查看用户的“所有文档”页面。|
 |GetAllTemplates|从 Azure 经典门户进行调用以获取所有模板。|
 |GetClientLicensorCert|客户端正在从基于 Windows 的计算机请求发布证书（随后用于保护内容）。|
@@ -195,8 +195,11 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 |GetSingle|从文档跟踪站点进行调用，以便导航到“单个文档”页面。|
 |GetTenantFunctionalState|Azure 经典门户检查是否已激活 Azure RMS。|
 |GetTemplateById|从 Azure 经典门户进行调用以通过指定模板 ID 来获取模板。|
-|ExportTemplateById|从 Azure 经典门户进行调用以通过指定模板 ID 来导出模板。|
-|FindServiceLocationsForUser|进行调用以查询 URL，使用该项来调用 Certify 或 AcquireLicense。|
+|KeyVaultDecryptRequest|客户端正在尝试解密受 RMS 保护的内容。 仅适用于 Azure 密钥保管库中客户托管的租户密钥 (BYOK)。|
+|KeyVaultGetKeyInfoRequest|进行调用以验证指定用在 Azure RMS 租户密钥的 Azure 密钥保管库中的密钥可访问，并且未使用。|
+|KeyVaultSignDigest|在将 Azure 密钥保管库中客户托管的密钥 (BYOK) 用于签名时进行调用。 通常是针对每个 AcquireLicence（或 FECreateEndUserLicenseV1）、Certify 和 GetClientLicensorCert（或 FECreatePublishingLicenseV1）请求调用一次此项。|
+|KMSPDecrypt|客户端正在尝试解密受 RMS 保护的内容。 仅适用于旧版客户托管的租户密钥 (BYOK)。|
+|KMSPSignDigest|在将旧版客户托管的密钥 (BYOK) 用于签名时进行调用。 通常是针对每个 AcquireLicence（或 FECreateEndUserLicenseV1）、Certify 和 GetClientLicensorCert（或 FECreatePublishingLicenseV1）请求调用一次此项。|
 |LoadEventsForMap|从文档跟踪站点进行调用，以便导航到单个文档的映射视图。|
 |LoadEventsForSummary|从文档跟踪站点进行调用，以便导航到单个文档的时间线视图。|
 |LoadEventsForTimeline|从文档跟踪站点进行调用，以便导航到单个文档的映射视图。|
@@ -206,10 +209,8 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 |ServerCertify|从已启用 RMS 的客户端（如 SharePoint）进行调用以认证服务器。|
 |SetUsageLogFeatureState|进行调用以启用使用日志记录。|
 |SetUsageLogStorageAccount|进行调用以指定 Azure RMS 日志的位置。|
-|SignDigest|在密钥用于签名目的时进行调用。 通常是针对每个 AcquireLicence（或 FECreateEndUserLicenseV1）、Certify 和 GetClientLicensorCert（或 FECreatePublishingLicenseV1）请求调用一次此项。|
 |UpdateNotificationSettings|从文档跟踪站点进行调用，以便更改单个文档的通知设置。|
 |UpdateTemplate|从 Azure 经典门户进行调用以更新现有模板。|
-
 
 
 ## Windows PowerShell 参考
@@ -240,6 +241,6 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

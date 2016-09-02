@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 65371b9a3b210743fc160dbad38333ccb12671e6
 
 
 ---
@@ -35,30 +35,31 @@ ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
 在开始迁移到 Azure RMS 之前，请确保具备以下先决条件，并确保你了解所有限制。
 
 
-- **支持的 RMS 部署**
+- **支持的 RMS 部署：**
+    
+    - 以下版本的 AD RMS 支持到 Azure RMS 的迁移：
+    
+        - Windows Server 2008 R2 (x64)
+        
+        - Windows Server 2012 (x64)
+        
+        - Windows Server 2012 R2 (x64)
+        
+    - 加密模式 2：
+    
+        - 在开始迁移到 Azure RMS 之前，必须在加密模式 2 下运行 AD RMS 服务器和客户端。 有关详细信息，请参阅 [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)（AD RMS 加密模式）。
+        
+    - 支持所有有效的 AD RMS 拓扑：
+    
+        - 单个林、单个 RMS 群集
+        
+        - 单个林、多个仅授权 RMS 群集
+        
+        - 多个林、多个 RMS 群集
+        
+    注意：默认情况下，多个 RMS 群集将迁移到单个 Azure RMS 租户。 如果你想要迁移到单独的 RMS 租户，必须将它们视为不同的迁移。 不能将一个 RMS 群集的密钥导入到多个 Azure RMS 租户。
 
-    AD RMS 的所有版本（从 Windows Server 2008 到 Windows Server 2012 R2）均支持迁移到 Azure RMS：
-
-    - Windows Server 2008（x86 或 x64）
-
-    - Windows Server 2008 R2 (x64)
-
-    - Windows Server 2012 (x64)
-
-    - Windows Server 2012 R2 (x64)
-
-    支持所有有效的 AD RMS 拓扑：
-
-    - 单个林、单个 RMS 群集
-
-    - 单个林、多个仅授权 RMS 群集
-
-    - 多个林、多个 RMS 群集
-
-    **注意**：默认情况下，多个 RMS 群集将迁移到单个 Azure RMS 租户。 如果你想要迁移到不同的 RMS 租户，必须将它们视为不同的迁移。 不能将一个 RMS 群集的密钥导入到多个 Azure RMS 租户。
-
-
-- **运行 Azure RMS（包括 Azure RMS 租户（未激活））的所有要求**
+- **运行 Azure RMS（包括 Azure RMS 租户（未激活））的所有要求：**
 
     请参阅 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)。
 
@@ -82,6 +83,10 @@ ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
 
     在迁移过程中，只有这一步会出现服务中断。
 
+- **如果想要通过使用 HSM 保护的密钥管理自己的 Azure RMS 租户密钥**：
+
+    - 此可选的配置需要 Azure 密钥保管库和一个支持含 HSM 保护密钥的密钥保管库的 Azure 订阅。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。 
+
 
 限制：
 
@@ -100,7 +105,7 @@ ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
 ## 将 AD RMS 迁移到 Azure RMS 的步骤概述
 
 
-9 个迁移步骤可分为 4 个阶段，在不同的时间由不同的管理员执行。
+迁移步骤可分为 4 个阶段，在不同的时间由不同的管理员执行。
 
 [**阶段 1：AD RMS 的服务器端配置**](migrate-from-ad-rms-phase1.md)
 
@@ -118,11 +123,11 @@ ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
 
     - **HSM 保护密钥到 HSM 保护密钥的迁移**：
 
-        将 HSM 存储的 AD RMS 密钥迁移到客户管理的 Azure RMS 租户密钥（“自带密钥”方案，简称 BYOK）。 这需要执行附加步骤，以将密钥从本地 Thales HSM 传输到 Azure RMS HSM。 现有的 HSM 保护密钥必须受模块保护；BYOK 工具集不支持 OCS 保护密钥。
+        将 HSM 存储的 AD RMS 密钥迁移到客户管理的 Azure RMS 租户密钥（“自带密钥”方案，简称 BYOK）。 这需要执行附加步骤，以将密钥从本地 Thales HSM 传送到 Azure 密钥保管库并授权 Azure RMS 使用此密钥。 现有的 HSM 保护密钥必须受模块保护；Rights Management Services 不支持 OCS 保护密钥。
 
     - **软件保护密钥到 HSM 保护密钥的迁移**：
 
-        AD RMS 中集中管理的基于密码的密钥迁移到由客户管理的 Azure RMS 租户密钥（“携带你自己的密钥”或 BYOK 方案）。 这需要的配置最多，因为你必须先提取软件密钥并将其导入到本地 HSM 中，然后再执行附加步骤以将该密钥从本地 Thales HSM 传输到 Azure RMS HSM。
+        AD RMS 中集中管理的基于密码的密钥迁移到由客户管理的 Azure RMS 租户密钥（“携带你自己的密钥”或 BYOK 方案）。 这需要的配置最多，因为必须先提取软件密钥并将其导入到本地 HSM 中，然后再执行附加步骤以将该密钥从本地 Thales HSM 传送到 Azure 密钥保管库 HSM，并授权 Azure RMS 使用存储该密钥的密钥保管库。
 
 - **步骤 3. 激活 Azure RMS 租户**
 
@@ -171,7 +176,7 @@ ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
 
 - **步骤 9：重新键入你的 Azure RMS 租户密钥**
 
-    如果在迁移前未运行加密模式 2，此步骤是必需的；对于所有迁移来说，此步骤是可选的但建议执行，以帮助保护 Azure RMS 租户密钥的安全性。
+    此步骤为可选步骤，但如果你从步骤 2 所选择的 Azure RMS 租户密钥拓扑由 Microsoft 管理，那么建议你执行此步骤。 如果所选择的 Azure RMS 租户密钥拓扑由客户管理 (BYOK)，则此步骤不适用。
 
 
 ## 后续步骤
@@ -180,6 +185,6 @@ ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 
