@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
-ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 21fac7d684f2d544ab97f5ca6eb7faaaca3e9d26
 
 
 ---
@@ -36,25 +36,24 @@ ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
 解除 AD RMS 服务器的授权后，你可能想要利用此机会来查看你在 Azure 经典门户中的模板并将其合并以使用户有较少的选项，或重新配置它们，或者甚至添加新模板。 这还将是发布默认模板的好时机。 有关详细信息，请参阅[为 Azure Rights Management 配置自定义模板](../deploy-use/configure-custom-templates.md)。
 
 ## 步骤 9. 重新键入你的 Azure RMS 租户密钥
-迁移完成时，如果 AD RMS 部署使用的是 RMS 加密模式 1，则此步骤是必需的，因为重新键入将创建使用 RMS 加密模式 2 的新租户密钥。 将 Azure RMS 与加密模式 1 配合使用仅在迁移过程中受支持。
+此步骤仅在所选租户密钥拓扑是由 Microsoft 管理，而不是由客户管理（含 Azure 密钥保管库的 BYOK）时适用。
 
-迁移完成时，此步骤是可选的但建议使用（即使你已以 RMS 加密模式 2 运行），因为它可帮助保护你的 Azure RMS 租户密钥，使 AD RMS 密钥免遭潜在的安全漏洞的威胁。 当你重新键入 Azure RMS 租户密钥（也称为“滚动密钥”）时，将创建新的密钥，并将原始密钥存档。 但是，由于从一个密钥移到另一个密钥并不会立即发生，而是经过几周才会发生，请不要等到你怀疑原始密钥受到破坏再进行，而应在迁移完成时，立即重新键入你的 Azure RMS 租户密钥。
+此步骤为可选步骤，但在你的 Azure RMS 租户密钥由 Microsoft 管理并已从 AD RMS 迁移时，建议执行此步骤。 在此方案中更新密钥有助于保护 Azure RMS 租户密钥，避免潜在安全漏洞威胁到你的 AD RMS 密钥。
 
-若要重新键入你的 Azure RMS 租户密钥，请执行以下操作：
+当你重新键入 Azure RMS 租户密钥（也称为“滚动密钥”）时，将创建新的密钥，并将原始密钥存档。 但是，由于从一个密钥移到另一个密钥并不会立即发生，而是经过几周才会发生，请不要等到你怀疑原始密钥受到破坏再进行，而应在迁移完成时，立即重新键入你的 Azure RMS 租户密钥。
 
--   如果你的 Azure RMS 租户密钥由 Microsoft 管理：若要执行此操作，[请与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)以创建**请求重新键入 Azure RMS 租户密钥的 Azure Rights Management 支持案例**。 必须证明你是你 Azure RMS 租户的管理员，还须了解此过程将需要几天才能确认。 收取标准支持费用：重新键入租户密钥并不是免费支持服务。
+若要更新 Microsoft 管理的 Azure RMS 租户密钥，[请与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)，并创建**请求从 AD RMS 迁移后更新 Azure RMS 密钥的 Azure 权限管理支持案例**。 必须证明你是你 Azure RMS 租户的管理员，还须了解此过程将需要几天才能确认。 收取标准支持费用：重新键入租户密钥并不是免费支持服务。
 
--   如果你的 Azure RMS 租户密钥由你管理 (BYOK)：重复执行 BYOK 过程以通过 Internet 或亲自生成并创建新的密钥。
-
-有关管理 Azure RMS 租户密钥的详细信息，请参阅[你的 Azure Rights Management 租户密钥的操作](../deploy-use/operations-tenant-key.md)。
 
 ## 后续步骤
+
+有关管理 RMS 租户密钥的详细信息，请参阅[你的 Azure 权限管理租户密钥的操作](../deploy-use/operations-tenant-key.md)。
 
 完成迁移后，请检查[部署路线图](deployment-roadmap.md)以确定是否需要执行其他任何部署任务。
 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

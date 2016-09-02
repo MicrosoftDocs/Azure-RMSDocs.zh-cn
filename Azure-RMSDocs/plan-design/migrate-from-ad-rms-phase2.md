@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/23/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a9dc45fb5146b0a4d2f013bff9d090723ce95ee5
-ms.openlocfilehash: 1016ecdd77e818840f2a2cfab8212e908291bb89
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: ca2dae71dceae4c59d12243c386eaded8ebb11f9
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 1016ecdd77e818840f2a2cfab8212e908291bb89
 ## 步骤 5. 将客户端重新配置为使用 Azure RMS
 对于 Windows 客户端：
 
-1.  [下载迁移脚本](http://go.microsoft.com/fwlink/?LinkId=524619)：
+1.  [下载迁移脚本](https://go.microsoft.com/fwlink/?LinkId=524619)：
 
     -   CleanUpRMS_RUN_Elevated.cmd
 
@@ -132,6 +132,6 @@ Redirect_OnPrem.cmd：
 要继续迁移，请转到[阶段 3 - 支持复制配置](migrate-from-ad-rms-phase3.md)。
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -3,15 +3,15 @@ title: "HYOK 限制 | Azure 权限管理"
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2016
+ms.date: 08/18/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: cfab76a97034b58eec8dfdbdc82cc1037a647d11
-ms.openlocfilehash: 95f64c00c28fb52a0bd7d78a997705f7ed515557
+ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
+ms.openlocfilehash: 1cbf6bd6c209a8aafd1db61422ce03b628aaec07
 
 
 ---
@@ -51,9 +51,13 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 - AD RMS 配置：
     
+    - 最小版本的 Windows Server 2012 R2：生产环境需要此版本，但用于测试或评估时，可以使用带 Service Pack 1 的 Windows Server 2008 R2 的最小版本。
+    
     - 单个 AD RMS 根群集。
     
-    - [加密模式 2](https://technet.microsoft.com/library/hh867439.aspx)。
+    - [Cryptographic Mode 2](https://technet.microsoft.com/library/hh867439.aspx)（加密模式 2）：可以通过使用 [RMS Analyzer tool](https://www.microsoft.com/en-us/download/details.aspx?id=46437)（RMS Analyzer 工具）确认 AD RMS 群集加密模式的版本，及其总体运行状况。   
+    
+    - 配置 AD RMS 服务器，以搭配使用 SSL/TLS 和受连接的客户端信任的有效 x.509 证书：生产环境需要，但用于测试或评估时不需要。
     
     - 已配置的权限模板。
 
@@ -66,7 +70,9 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 - [Azure 信息保护客户端](info-protect-client.md)为 **1.0.233.0** 版或更高版本。
 
 > [!IMPORTANT]
-> 为了实现此方案提供的高确定性，建议不要将 AD RMS 服务器放在 DMZ 中，并且只能由管理完善的计算机（例如，非移动设备或工作组计算机）使用这些服务器。
+> 为了实现此方案提供的高确定性，建议不要将 AD RMS 服务器放在 DMZ 中，并且只能由管理完善的计算机（例如，非移动设备或工作组计算机）使用这些服务器。 
+> 
+> 我们还建议 AD RMS 群集使用硬件安全模块 (HSM)，以便在 AD RMS 部署被破坏或泄露时，你的服务器许可方证书 (SLC) 的私钥不会被公开或盗取。 
 
 有关 AD RMS 的部署信息和说明，请参阅 Windows Server 库中的 [Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx)。 
 
@@ -89,6 +95,6 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

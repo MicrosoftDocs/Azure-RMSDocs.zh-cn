@@ -12,9 +12,6 @@
 ### [迁移后任务](migrate-from-ad-rms-phase4.md)
 ## [计划和实现你的租户密钥](plan-implement-tenant-key.md)
 ### [BYOK 定价和限制](byok-price-restrictions.md)
-### [关于 Thales HSM](thales-hsm.md)
-### [通过 Internet](generate-tenant-key-internet.md)
-### [亲自](generate-tenant-key-in-person.md)
 ## [准备 Azure RMS](prepare.md)
 # [部署和使用该服务](/rights-management/deploy-use/activate-service)
 # [部署和使用该客户端](/rights-management/rms-client/use-client)
@@ -22,6 +19,6 @@
 # [Azure 信息保护（预览版）](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

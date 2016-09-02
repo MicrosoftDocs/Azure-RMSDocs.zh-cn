@@ -3,15 +3,15 @@ title: "如何配置标签以应用权限管理保护 |Azure 权限管理"
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/15/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 798fb423ff8dab3e9777a33e7b2c483bceb81016
+ms.sourcegitcommit: e11a5a836d6a410ba49ac17cfe95d8530ecb785f
+ms.openlocfilehash: 60738c310a3e7c734bfe3e48e16535ed3be05bb4
 
 
 ---
@@ -63,11 +63,15 @@ ms.openlocfilehash: 798fb423ff8dab3e9777a33e7b2c483bceb81016
     > [!NOTE] 
     > 如果在打开“标签”边栏选项卡后创建了新模板，则关闭此边栏选项卡，并返回到步骤 2，以便从 Azure 中检索新创建的模板供你选择。
     
-5. 如果选择了 AD RMS：请提供 AD RMS 群集的模板 GUID 和授权 URL。
+    请注意，如果选择部门模板，或者如果已配置[载入控件](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)：
+    
+    - 配置的模板作用域外的用户或从应用 Azure 权限管理保护中排除的用户仍将看到该标签，但不能应用该标签。 如果他们选择该标签，则会看到以下消息：**Azure 信息保护无法应用此标签。如果此问题仍然存在，请与管理员联系。**
+    
+5. 如果选择了 AD RMS：请提供 AD RMS 群集的模板 GUID 和授权 URL。 [更多信息](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
-5. 单击“保存” 。
+6. 单击“保存” 。
 
-6. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
+7. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 
 ## 后续步骤
 
@@ -75,6 +79,6 @@ ms.openlocfilehash: 798fb423ff8dab3e9777a33e7b2c483bceb81016
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 
