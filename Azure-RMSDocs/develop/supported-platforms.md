@@ -4,9 +4,9 @@ description: "本主题介绍支持 Rights Management Services SDK 2.1 的客户
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4E46521F-8C2F-401A-A481-113CE130ACF0
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
-ms.openlocfilehash: baf08d04f836e5aa406f125a7029bc43297f5df1
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 5d797c5f74725b383bdcb70987e3d410b2ac337b
 
 
 ---
@@ -46,6 +46,6 @@ ms.openlocfilehash: baf08d04f836e5aa406f125a7029bc43297f5df1
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
