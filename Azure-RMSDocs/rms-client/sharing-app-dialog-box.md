@@ -1,27 +1,26 @@
 ---
 title: "Rights Management 共享应用程序的对话框选项 | Azure RMS"
-description: 
-keywords: 
+description: "使用此信息帮助你指定 RMS 共享应用程序“添加保护”对话框或“共享保护”对话框中的选项。 当你保护要共享的文件或就地保护文件以及选择自定义权限时，将看到此对话框。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: aa0f5456d17564183317e3e693ae63adb8c597c5
 
 
 ---
 
 # 权限管理共享应用程序的的对话框选项
 
-*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 使用此信息帮助你指定 RMS 共享应用程序“添加保护”  对话框或“共享保护”  对话框中的选项。 当你[保护要共享的文件](sharing-app-protect-by-email.md)或[就地保护文件](sharing-app-protect-in-place.md)以及选择自定义权限时，将看到此对话框。
 
@@ -36,7 +35,7 @@ ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
 
 -   [一般性保护和内置（本机）保护的区别是什么？](#what-s-the-difference-between-generic-protection-and-built-in-native-protection)
 
-|选项|说明|
+|选项|描述|
 |----------|---------------|
 |**用户**|如果你还没有从 Outlook 指定电子邮件地址，请键入你希望能够打开文件的用户的电子邮件地址。<br /><br />请注意，RMS 共享应用并不支持所有电子邮件地址。<br /><br />如果你的组织使用本地版本的 Rights Management (AD RMS)，你可以指定的电子邮件地址仅限于组织中的用户。 如果应用此操作，并且你尝试指定外部电子邮件地址，将看到一则消息，说明你公司的配置仅允许在公司内共享受保护内容。 <br /><br /> 如果你的组织使用 Azure RMS，那么你指定的电子邮件地址可以是组织中用户的电子邮件地址，也可以是其他组织中用户的电子邮件地址。<br /><br />例如：**janetm@contoso.com；p.dover@fabrikam.com**<br /><br />RMS 共享应用当前不支持个人电子邮件地址。|
 |**一般性保护**|如果选择此选项，则意味着无法本机保护所选文件。 有关详细信息，请参阅： 本页中的[通用保护和内置（本机）保护的区别是什么？](#what-s-the-difference-between-generic-protection-and-built-in-native-protection)。|
@@ -79,6 +78,6 @@ ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

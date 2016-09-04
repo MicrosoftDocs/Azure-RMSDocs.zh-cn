@@ -6,7 +6,7 @@ author: bruceperlerms
 manager: mbaldwin
 ms.date: 07/11/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5afdf526fe9f8486c6a778eebf10899e0bd9f839
-ms.openlocfilehash: d55a16d7ff6f11db3c02d3494dcdd088bffc8500
+ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
+ms.openlocfilehash: da491f008043b11a04cbfe48acb952e67ad86dda
 
 
 ---
@@ -64,6 +64,6 @@ MS RMS SDK 4.2 提供了一些很棒的新功能，包括以下方面：
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

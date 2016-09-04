@@ -1,20 +1,19 @@
 ---
 title: "Azure 信息保护预览版常见问题 | Azure 信息保护"
-description: 
-keywords: 
+description: "对 Azure 信息保护的预览版有疑问？ 请查看此处是否有答案。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
-ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 55d56786150d38b36ae8185c4a7ac4c8a5c51ba4
 
 
 ---
@@ -57,7 +56,7 @@ ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
 
 ## 需要什么订阅才可以尝试 Azure 信息保护？
 
-对于预览版本，你可以使用包含 Azure 权限管理的任何订阅。 Azure 信息保护在所有区域中可用。 有关免费试用版的可用订阅和链接的详细信息，请参阅[《Azure RMS requirements: Cloud subscriptions that support Azure RMS》](../get-started/requirements-subscriptions.md)（Azure RMS 要求：支持 Azure RMS 的云订阅）。
+对于预览版，你可以使用包括保护 Office 文档和电子邮件的任何 Office 365 订阅（通过使用 Azure Rights Management）。 Azure 信息保护在所有区域中可用。 有关免费试用版的可用订阅和链接的详细信息，请参阅 Azure RMS 需求文档的 [Office 365 订阅](../get-started/requirements-subscriptions.md#office-365-subscription) 部分。
 
 若要在 Azure 门户中配置 Azure 信息保护策略，必须具有 Azure 订阅。 如果你还没有你组织的 Azure 订阅，则可以通过注册免费试用版来获取订阅：转到 [Azure 入门](https://account.windowsazure.com/organization)页并按照说明进行操作。
 
@@ -188,6 +187,6 @@ Azure 信息保护将 Azure Active Directory 用于用户身份验证。
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,20 +1,19 @@
 ---
 title: "Azure RMS 要求&#58;支持 Azure Rights Management 的本地服务器 | Azure RMS"
-description: 
-keywords: 
+description: "当你使用 Azure RMS 连接器时，它将充当本地服务器和 Azure RMS 之间的通信接口（一种中继），让 Azure RMS 能够支持以下本地服务器产品。 此外，这种配置要求你配置 Active Directory 林和 Azure Active Directory 之间的目录同步。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 7e718d8178dd7c4b18ea7a19eb3165ee06dc4b36
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: cd8b8d18e146fcc0864565a603b47b2b074af2b2
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 7e718d8178dd7c4b18ea7a19eb3165ee06dc4b36
 
 # Azure RMS 要求：支持 Azure RMS 的本地服务器
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 当你使用 Azure RMS 连接器时，它将充当本地服务器和 Azure RMS 之间的通信接口（一种中继），让 Azure RMS 能够支持以下本地服务器产品。 此外，这种配置要求你配置 Active Directory 林和 Azure Active Directory 之间的目录同步。
 
@@ -62,6 +61,6 @@ Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 支持 R
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

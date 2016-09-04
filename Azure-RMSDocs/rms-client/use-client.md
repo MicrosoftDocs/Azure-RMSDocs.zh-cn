@@ -1,12 +1,11 @@
 ---
 title: "Rights Management (RMS) 客户端 | Azure RMS"
-description: 
-keywords: 
+description: "Microsoft Rights Management 服务是一项客户端-服务器解决方案，其中 RMS 客户端与计算机和移动设备上运行的应用程序和驻留在云中或本地的 RMS 服务（即 Azure RMS 和 AD RMS）集成。 某些应用程序将自动安装 RMS 客户端，如 Office 应用程序、RMS 共享应用程序和软件供应商提供的启用 RMS 的应用程序。 但是，该客户端也可以自行安装，这种安装方式能够为希望将 RMS 保护集成到业务线应用程序的开发人员以及希望通过 RMS 保护工具批量保护文件的管理员或 Power User 提供支持。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
@@ -14,15 +13,15 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 8c21202793dca90edda943082fcd718bdf7397ca
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 234095a733633462ba1a221a5ac6e1e1d47df12b
 
 
 ---
 
 # Rights Management (RMS) 客户端
 
-*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 Microsoft Rights Management 服务是一项客户端-服务器解决方案，其中 RMS 客户端与计算机和移动设备上运行的应用程序和驻留在云中或本地的 RMS 服务（即 Azure RMS 和 AD RMS）集成。 某些应用程序将自动安装 RMS 客户端，如 Office 应用程序、RMS 共享应用程序和软件供应商提供的启用 RMS 的应用程序。 但是，该客户端也可以自行安装，这种安装方式能够为希望将 RMS 保护集成到业务线应用程序的开发人员以及希望通过 RMS 保护工具批量保护文件的管理员或 Power User 提供支持。
 
@@ -44,6 +43,6 @@ Microsoft Rights Management 服务是一项客户端-服务器解决方案，其
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

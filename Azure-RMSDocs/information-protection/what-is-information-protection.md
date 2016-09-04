@@ -5,13 +5,13 @@ author: cabailey
 manager: mbaldwin
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: d3d63a778bff62649341227b65212722e285a6be
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 95f6467b5181184cf0bb402a6ad450c3a1780a52
 
 
 ---
@@ -44,6 +44,6 @@ ms.openlocfilehash: d3d63a778bff62649341227b65212722e285a6be
 在我们的[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护快速入门教程）中只需四个简单步骤即可开始使用 Azure 信息保护。
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO4-->
 
 

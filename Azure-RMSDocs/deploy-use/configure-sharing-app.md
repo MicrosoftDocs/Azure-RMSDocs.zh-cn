@@ -1,27 +1,26 @@
 ---
 title: "Rights Management 共享应用程序 &colon; 客户端安装和配置 | Azure RMS"
-description: 
-keywords: 
+description: "客户端计算机需要权限管理 (RMS) 共享应用程序，才能将 Azure RMS 用于 Office 2010，建议在支持 Azure RMS 的所有计算机和移动设备上使用该应用程序。 通过安装 Office 加载项，RMS 共享应用程序可与 Office 应用程序集成在一起，使得用户能够轻松地从功能区直接保护文件和电子邮件。 RMS 共享应用程序还针对 Azure RMS 无法以本机方式支持的文件类型提供常规保护，以保护所有文件类型；此外，它提供一个文档跟踪站点，让用户跟踪他们保护的文件和撤消保护。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: d3f923cf6f140c2caa75b7b0c8ac90a42be962a7
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: bf7cd8007b5423efaa13849101af5c4688cf0975
 
 
 ---
 
 # 权限管理共享应用程序：客户端安装和配置
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 客户端计算机需要权限管理 (RMS) 共享应用程序，才能将 Azure RMS 用于 Office 2010，建议在支持 Azure RMS 的所有计算机和移动设备上使用该应用程序。 通过安装 Office 加载项，RMS 共享应用程序可与 Office 应用程序集成在一起，使得用户能够轻松地从功能区直接保护文件和电子邮件。 RMS 共享应用程序还针对 Azure RMS 无法以本机方式支持的文件类型提供常规保护，以保护所有文件类型；此外，它提供一个文档跟踪站点，让用户跟踪他们保护的文件和撤消保护。
 
@@ -43,6 +42,6 @@ ms.openlocfilehash: d3f923cf6f140c2caa75b7b0c8ac90a42be962a7
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "Azure Rights Management 部署路线图 | Azure RMS"
-description: 
-keywords: 
+description: "使用以下步骤为你的组织准备、实现和管理 Azure Rights Management (Azure RMS)。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f8a4d53665dd79a6d0e02d340b0e7a09d995e00
-ms.openlocfilehash: 96ee0aa3151ede8b8a263f3ce6c3d2e5b8ec9c81
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 13ec3a88eb1c072bf94b6c54e3e4d97e45cc8eb2
 
 
 ---
 
 # Azure Rights Management 部署路线图
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 使用以下步骤为你的组织准备、实现和管理 Azure Rights Management (Azure RMS)。
 
@@ -75,6 +74,6 @@ ms.openlocfilehash: 96ee0aa3151ede8b8a263f3ce6c3d2e5b8ec9c81
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "使用 Rights Management 共享应用程序移除对文件的保护 | Azure RMS"
-description: 
-keywords: 
+description: "若要移除之前使用 RMS 共享应用程序保护的文件保护（即取消文件保护），请从文件资源管理器中使用“移除保护”选项。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 4aea0c89e5d97a7a0190962e073f0b4bc95bef25
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: b94cd999fef2186ddf67a0e6cebc3349a3586538
 
 
 ---
 
 # 使用 Rights Management 共享应用程序移除对文件的保护
 
-*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 若要移除之前使用 RMS 共享应用程序保护的文件保护（即取消文件保护），请从文件资源管理器中使用“移除保护”选项  。
 
@@ -52,6 +51,6 @@ ms.openlocfilehash: 4aea0c89e5d97a7a0190962e073f0b4bc95bef25
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,9 +4,9 @@ description: "Android API 具有两个命名空间。"
 keywords: "RMS、Android"
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 41dc2300-13c5-42c2-9288-0d1054f31830
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4e30a62ecbd1ca4576be6d017bc8d1f501e33989
-ms.openlocfilehash: 55f17d42165d2b6b5e1765a81bf7d799a14e996a
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 448393ebc7472bd55f34c0a8d6ea35b0a5055417
 
 
 ---
@@ -32,6 +32,6 @@ Android API 具有两个命名空间，用于涵盖主要功能和异常。
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,9 +4,9 @@ description: "使用限制由本主题中列出的常量定义。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 16E36039-0FD6-4A0A-82C8-2C9DB19D27DD
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2acf8095764e2c222881240985df8bccf8a64173
-ms.openlocfilehash: 9788b067f9395b9e078e76994a2a8a79e95baf06
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: c2a204a1ed85cec159691f910f27c4ff4382d796
 
 
 ---
@@ -49,6 +49,6 @@ AD RMS 权限列中列出的每个用户权利都附带有一个说明、一个�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

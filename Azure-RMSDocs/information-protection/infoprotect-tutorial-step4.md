@@ -5,13 +5,13 @@ author: cabailey
 manager: mbaldwin
 ms.date: 08/10/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
-ms.openlocfilehash: a36433167462275e91059f9eb3a2141ffa2797d5
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 6d93723a6f7aaffec8d18cf289bff0752b53a2c9
 
 
 ---
@@ -77,6 +77,6 @@ ms.openlocfilehash: a36433167462275e91059f9eb3a2141ffa2797d5
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

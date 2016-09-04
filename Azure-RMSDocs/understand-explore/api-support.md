@@ -1,27 +1,26 @@
 ---
 title: "支持 RMS API 的其他应用程序 - 安装和配置 | Azure RMS"
-description: 
-keywords: 
+description: "使用以下信息可帮助了解 Azure Rights Management (Azure RMS) 如何支持其他应用程序以保护组织的数据。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: bb69cda94bf611712eb5b4a74d9ec25d1749da3a
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: d94494160df269d6a583c3152769f84ec51f886e
 
 
 ---
 
 # 支持 RMS API 的其他应用程序
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 使用以下信息可帮助了解 Azure Rights Management (Azure RMS) 如何支持其他应用程序以保护组织的数据。
 
@@ -34,6 +33,6 @@ ms.openlocfilehash: bb69cda94bf611712eb5b4a74d9ec25d1749da3a
 若要查看其他应用程序和服务如何支持 Azure Rights Management，请参阅[应用程序如何支持 Azure Rights Management](applications-support.md)。
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

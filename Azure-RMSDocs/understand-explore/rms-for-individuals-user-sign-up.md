@@ -1,27 +1,26 @@
 ---
 title: "用户如何注册个人 RMS | Azure RMS"
-description: 
-keywords: 
+description: "若要注册这种免费帐户，用户可以通过访问 Microsoft Rights Management 页发出请求，并提供他们的工作或学校电子邮件地址。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 19252180802c69d6e5d6bf22c71ff3bcba96fb36
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: a31005f3dce927db917cb0f2851916b8946da4ee
 
 
 ---
 
 # 用户如何注册个人 RMS
 
-*适用于：Azure Rights Management*
+>*适用于：Azure Rights Management*
 
 若要注册这种免费帐户，用户可以通过访问 [Microsoft Rights Management 页](https://portal.aadrm.com/)发出请求，并提供他们的工作或学校电子邮件地址。 
 
@@ -102,6 +101,6 @@ ms.openlocfilehash: 19252180802c69d6e5d6bf22c71ff3bcba96fb36
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

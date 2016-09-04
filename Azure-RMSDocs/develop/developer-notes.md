@@ -4,9 +4,9 @@ description: "本主题涵盖了几个重要开发方案的具体指南。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 5A9F04FD-0FCD-482F-8671-36FE93B783B0
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 91d16ec6e9f9bb359a76562dee7fcb81aac2b44d
-ms.openlocfilehash: 2f2323f32327324611df2b2e8a8824e6896546aa
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 846d8a84694d2727afc91fc6770b8e7bb9f24026
 
 
 ---
@@ -48,6 +48,6 @@ ms.openlocfilehash: 2f2323f32327324611df2b2e8a8824e6896546aa
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
