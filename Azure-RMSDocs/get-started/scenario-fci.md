@@ -1,27 +1,26 @@
 ---
 title: "方案 - 保护文件服务器共享上的文件 | Azure RMS"
-description: 
-keywords: 
+description: "此方案和支持性的用户文档使用 Azure Rights Management 批量保护你想要在文件服务器上保护的所有文件，确保只有你组织的员工可以访问这些文件，即使它们被复制并保存到不受你的 IT 部门控制的存储器中，或已通过电子邮件发送给其他人也不例外。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: c16098a2d0fe41748280704716a2eeef8921a6fa
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
 
 
 ---
 
 # 方案 - 保护文件服务器共享上的文件
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 此方案和支持性的用户文档使用 Azure Rights Management 批量保护你想要在文件服务器上保护的所有文件，确保只有你组织的员工可以访问这些文件，即使它们被复制并保存到不受你的 IT 部门控制的存储器中，或已通过电子邮件发送给其他人也不例外。
 
@@ -156,6 +155,6 @@ ms.openlocfilehash: c16098a2d0fe41748280704716a2eeef8921a6fa
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

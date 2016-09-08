@@ -4,9 +4,9 @@ description: "本主题向你介绍 Android 版本的 RMS SDK 的重要代码元
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 5d8c7ab53f76005d7efbfd2d795da08e41f83941
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
 
 
 ---
@@ -530,6 +530,6 @@ ms.openlocfilehash: 5d8c7ab53f76005d7efbfd2d795da08e41f83941
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

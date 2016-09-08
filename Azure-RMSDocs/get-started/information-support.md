@@ -1,27 +1,26 @@
 ---
 title: "Azure Rights Management 的信息和支持 | Azure RMS"
-description: 
-keywords: 
+description: "使用以下资源获取有关 Microsoft Azure RMS 的其他信息。"
 author: cabailey
 manager: mbaldwin
 ms.date: 06/29/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6052afabe4894f8129e9eebc93705b219e6ed875
-ms.openlocfilehash: a8f5852d965abe2f2654aa236bfd9ea49a62aa84
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 9084d8eab83e0be8f545575f12d70d2338c4763d
 
 
 ---
 
 # Azure Rights Management 的信息和支持
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 使用以下资源获取有关 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 的其他信息。
 
@@ -87,6 +86,6 @@ Rights Management 产品组联合[企业移动性和安全性博客](https://blo
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,9 +4,9 @@ description: "RMS SDK 4.2 的重点是帮助你构建启用 AD RMS 的应用程�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 466db75b55164b638a269816f434cf027ce666a5
-ms.openlocfilehash: ebb08fbea18473cccca5897372b97f192200acca
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 501e3c550647ec337b26b6723d9c6c7d231bd372
 
 
 ---
@@ -39,6 +39,6 @@ Microsoft Rights Management SDK 4.2 的重点是帮助你构建启用 AD RMS 的
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

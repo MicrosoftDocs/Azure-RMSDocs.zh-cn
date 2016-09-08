@@ -3,15 +3,15 @@ title: "Azure 信息保护快速入门教程 | Azure 权限管理"
 description: "该入门教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 7d599aef75272eff5527294141bb0eb98d041b1b
-ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 6fbe4bd32f1aef57b3bf42aeedea46f618fb5540
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
 ## 先决条件 
 若要完成本教程，你需要满足以下先决条件：
 
-- 具有包括 Azure 权限管理的任何订阅，该订阅将为你提供访问 Azure 信息保护预览版的权限。 Azure 信息保护可用于支持 Azure 权限管理的所有区域。 有关免费试用版的可用订阅和链接的详细信息，请参阅[《Azure RMS requirements: Cloud subscriptions that support Azure RMS》](../get-started/requirements-subscriptions.md)（Azure RMS 要求：支持 Azure RMS 的云订阅）。
+- Office 365 订阅包括通过使用 Azure RMS 保护 Office 文档和电子邮件。 有关免费试用版的可用订阅和链接的详细信息，请参阅 Azure RMS 需求文档的 [Office 365 订阅](../get-started/requirements-subscriptions.md#office-365-subscription) 部分。
 
 - 具有 Azure 订阅，以便你可以访问 Azure 门户以配置 Azure 信息保护策略。 如果你的组织还没有 Azure 订阅，则可以通过注册免费试用版来获取订阅：转到 [Azure 入门](https://account.windowsazure.com/organization)页并按照说明进行操作。
 
@@ -51,6 +51,6 @@ ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

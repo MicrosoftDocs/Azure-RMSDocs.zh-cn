@@ -1,27 +1,26 @@
 ---
 title: "Azure Rights Management 常见问题 | Azure RMS"
-description: 
-keywords: 
+description: "Microsoft Azure Rights Management（也称为 Azure RMS）的某些常见问题。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e89c59716eef7fbdea415b41b1adfa54b0c16689
-ms.openlocfilehash: bd53b73452f444ac8529a8b8b613e76d8cc234a1
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 906e544cc3c9be6ba475502e3cdb93f2e047da7f
 
 
 ---
 
 # Azure Rights Management 常见问题
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]（也称为 Azure RMS）的某些常见问题：
 
@@ -91,7 +90,7 @@ Azure RMS 始终使用 Azure Active Directory 帐户和关联的电子邮件地�
 这些帐户的身份验证方法各不相同，具体取决于其他组织中的管理员如何配置 Azure Active Directory 帐户。 例如，他们可以使用为这些帐户、多重身份验证 (MFA)、联合身份验证创建的密码，或在 Active Directory 域服务中创建、然后同步到 Azure Active Directory 的密码。
 
 ## 我可以将公司之外的用户添加到自定义模板吗？
-适用。 创建最终用户（和管理员）可以从应用程序中选择的自定义模板，可使用户使用你指定的预定义策略应用信息保护变得简单快捷。 该模板中的设置之一是哪些用户能够访问内容，而且你可以指定组织中的用户和组以及组织之外的用户。
+是。 创建最终用户（和管理员）可以从应用程序中选择的自定义模板，可使用户使用你指定的预定义策略应用信息保护变得简单快捷。 该模板中的设置之一是哪些用户能够访问内容，而且你可以指定组织中的用户和组以及组织之外的用户。
 
 若要从组织外部指定用户，请在配置模板时在 Azure 经典门户中将用户添加为所选组的联系人。 或者使用[适用于 Azure Rights Management 的 Windows PowerShell 模块](../deploy-use/install-powershell.md)：
 
@@ -224,6 +223,6 @@ Azure 信息保护中的该功能现在可提供公共预览版。 若要试用�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

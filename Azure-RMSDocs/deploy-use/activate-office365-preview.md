@@ -1,27 +1,26 @@
 ---
 title: "如何从 Office 365 管理中心预览激活 Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "仅当你在使用新的预览版本的 Office 365 管理中心（Office 365 管理中心预览）时，才使用这些说明。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/03/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6eae63c629ae7cfe2175a655eb4901c1707c0f1d
-ms.openlocfilehash: 1ac96ddb1569483236c4dc61f7bc38c99d43ead2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 554b34c0aa2aa86a915a28d120f2ebaa9705c586
 
 
 ---
 
 # 如何从 Office 365 管理中心预览激活 Azure Rights Management
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 
 仅当你在使用新的预览版本的 Office 365 管理中心（**Office 365 管理中心预览**）时，才使用这些说明。
@@ -59,6 +58,6 @@ ms.openlocfilehash: 1ac96ddb1569483236c4dc61f7bc38c99d43ead2
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

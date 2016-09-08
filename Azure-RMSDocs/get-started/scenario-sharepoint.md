@@ -1,27 +1,26 @@
 ---
 title: "方案 - 保留对 SharePoint 中所存储文档的控制 | Azure RMS"
-description: 
-keywords: 
+description: "此方案和支持性的用户文档使用 Azure Rights Management 来确保存储在 SharePoint 中的 Office 文档通过使用受保护的库仍在你的控制之中。 例如，文档会自动防范由用户意外或有意泄露，并且即使在下载或同步后，你也可以阻止对内容的访问。 你想要保护的文件可能是用于在设计文档或计划上进行内部协作的，或者是用于其他交付的。 为 SharePoint 配置受保护的库时，存储在其中的 Office 文件将受 Azure Rights Management 的保护。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: cb028afcbfd9b59f134539c434f4f49efc5e9092
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: f0dfe895820d33eab1d3a69c92e881287072f554
 
 
 ---
 
 # 方案 - 保留对 SharePoint 中所存储文档的控制
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 此方案和支持性的用户文档使用 Azure Rights Management 来确保存储在 SharePoint 中的 Office 文档通过使用受保护的库仍在你的控制之中。 例如，文档会自动防范由用户意外或有意泄露，并且即使在下载或同步后，你也可以阻止对内容的访问。 你想要保护的文件可能是用于在设计文档或计划上进行内部协作的，或者是用于其他交付的。 为 SharePoint 配置受保护的库时，存储在其中的 Office 文件将受 Azure Rights Management 的保护。
 
@@ -106,6 +105,6 @@ SharePoint 站点 **销售预测和报告**现已进行了安全协作配置。 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

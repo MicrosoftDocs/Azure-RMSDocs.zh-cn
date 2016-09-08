@@ -4,9 +4,9 @@ description: "概述了 RMS SDK 4.2 提供的内置权限以及应用为遵守�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9142dd29-f1f4-4c2f-82ac-534f14b8bba1
@@ -15,8 +15,8 @@ ms.reviewer: shubhamp
 ms.suite: ems
 experiment_id: priyamo-TableVsFlatList-20160805
 translationtype: Human Translation
-ms.sourcegitcommit: ac7f8296149b93be803165ebde5144b0f78fa0c8
-ms.openlocfilehash: 25bfc768aba30be7f81ce659ca90e71266c599ba
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: d644f8aac4999baf4aadfbda2d936359bc235c31
 
 
 ---
@@ -61,6 +61,6 @@ ms.openlocfilehash: 25bfc768aba30be7f81ce659ca90e71266c599ba
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

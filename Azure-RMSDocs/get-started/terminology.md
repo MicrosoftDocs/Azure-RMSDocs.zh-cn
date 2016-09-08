@@ -1,27 +1,26 @@
 ---
 title: "Azure Rights Management 术语 | Azure RMS"
-description: 
-keywords: 
+description: "对 Microsoft Azure RMS 相关的单词、短语或缩略词感到迷惑吗？ 在此处查找特定于 Azure RMS 或具有特定含义（如果在 Rights Management 上下文中使用）的术语和缩写的定义。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/10/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 75f868c4428e7b434e6a115a3e70508c3ff7f93d
-ms.openlocfilehash: 1a45457548d8cba6424e92bc18ef085d095742f3
+ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
+ms.openlocfilehash: cb30347efd062b0f1c74a029efc747d277c817f3
 
 
 ---
 
 # Azure 权限管理术语
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 对 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 相关的单词、短语或缩略词感到迷惑吗？ 在此处查找特定于 Azure RMS 或具有特定含义（如果在 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]上下文中使用）的术语和缩写的定义。
 
@@ -74,6 +73,6 @@ ms.openlocfilehash: 1a45457548d8cba6424e92bc18ef085d095742f3
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

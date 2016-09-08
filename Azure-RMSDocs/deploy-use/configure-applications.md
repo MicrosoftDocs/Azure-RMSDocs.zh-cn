@@ -1,27 +1,26 @@
 ---
 title: "为 Azure Rights Management 配置应用程序 | Azure RMS"
-description: 
-keywords: 
+description: "在为组织部署 Azure Rights Management (RMS) 之后，请使用以下信息配置应用程序和服务以支持 Azure RMS。 其中包括 Word 2013 和 Word 2010 等 Office 应用程序，以及 Exchange Online（传输规则、数据丢失预防、请勿转发和消息加密）与 SharePoint Online（受保护库）等服务。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 8fe934c51e852791d19fbb336deaf9cd7be9817b
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 7e592d99bcd2a143d63b35aa4afb92b1e45cb74a
 
 
 ---
 
 # 为 Azure Rights Management 配置应用程序
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 > [!NOTE]
 > 此信息适用于已部署了 Azure 权限管理的 IT 管理员和顾问。 如果你要寻找有关如何针对特定应用程序使用 Rights Management，或者如何打开权限保护文件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
@@ -75,6 +74,6 @@ ms.openlocfilehash: 8fe934c51e852791d19fbb336deaf9cd7be9817b
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

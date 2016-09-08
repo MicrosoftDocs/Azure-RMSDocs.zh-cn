@@ -1,27 +1,26 @@
 ---
 title: "使用 Windows PowerShell 管理 Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "虽然你可以使用 Office 365 管理中心或 Azure 经典门户来激活 Microsoft Azure Rights Management (Azure RMS)，但也可以使用适用于 (AADRM) 的 Windows PowerShell 模块来执行此操作。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/18/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
-ms.openlocfilehash: d2aec9c4a0c462e9abfa145ee14df0144c60e584
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 26988d2e9b6e2ff320e424fa94051afa0055d234
 
 
 ---
 
 # 使用 Windows PowerShell 管理 Azure 权限管理
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 虽然你可以使用 [!INCLUDE[o365_2](../includes/o365_2_md.md)] 管理中心或 Azure 经典门户来激活 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS)，但也可以使用适用于 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (AADRM) 的 Windows PowerShell 模块来执行此操作。
 
@@ -54,6 +53,6 @@ ms.openlocfilehash: d2aec9c4a0c462e9abfa145ee14df0144c60e584
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

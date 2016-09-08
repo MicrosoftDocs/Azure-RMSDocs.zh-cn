@@ -6,7 +6,7 @@ author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d56c6636cb7a33f104bc3901355c3601266ad30c
-ms.openlocfilehash: b97743d9a5c90cb46b39b4d8a462aa1acd64dfe1
+ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
+ms.openlocfilehash: d046e7f6bbe867b6bc867483441bb0cc5c20df82
 
 
 ---
@@ -96,6 +96,6 @@ ms.openlocfilehash: b97743d9a5c90cb46b39b4d8a462aa1acd64dfe1
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

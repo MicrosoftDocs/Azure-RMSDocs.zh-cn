@@ -1,27 +1,26 @@
 ---
 title: "你的 Azure Rights Management 租户密钥的操作 | Azure RMS"
-description: 
-keywords: 
+description: "实现 Microsoft Azure Rights Management (Azure RMS) 租户密钥之后，你可对该密钥进行不同级别的控制并承担相应责任，具体取决于你的租户密钥拓扑（由 Microsoft 管理或由客户管理）。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 19cae6be4de2eec65414596976062736af4b63b2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: bcd7a03c7eb0c40893bc37d0d5f108c2389dcc3f
 
 
 ---
 
 # 你的 Azure Rights Management 租户密钥的操作
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 实现 Microsoft Azure Rights Management (Azure RMS) 租户密钥之后，你可对该密钥进行不同级别的控制并承担相应责任，具体取决于你的租户密钥拓扑（由 Microsoft 管理或由客户管理）。
 
@@ -49,6 +48,6 @@ ms.openlocfilehash: 19cae6be4de2eec65414596976062736af4b63b2
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

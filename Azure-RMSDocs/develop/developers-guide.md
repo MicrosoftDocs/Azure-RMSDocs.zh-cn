@@ -4,9 +4,9 @@ description: "开发人员工具使用的概述；SDK、其他库以及代码示
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a22e6bd0-8ce8-45b4-9a32-273126ab831e
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: c9d5ec961989283c5201a81f862b2da45ed64340
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 1f23f2a3e0e012eeeb779eb44ec9be377cd19fe1
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: c9d5ec961989283c5201a81f862b2da45ed64340
 ## 软件开发工具包 ##
 现可使用下表中列出的三代 RMS SDK。
 
-| SDK | 描述 |
+| SDK | 说明 |
 |------|---------|
 | [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | 简化的下一代工具集，可提供轻型开发体验，以便通过 Microsoft Rights Managemen 实现对 Android、iOS、Mac OS X、Windows Phone/RT 和 Linux/C++ 设备应用的信息保护 |
 | [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | 为 Windows 桌面应用程序开发人员和基于服务器的解决方案提供商而提供的功能强大的 SDK，可实现对产品的权限管理|
@@ -74,6 +74,6 @@ ms.openlocfilehash: c9d5ec961989283c5201a81f862b2da45ed64340
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

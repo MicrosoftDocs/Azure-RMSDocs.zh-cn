@@ -4,9 +4,9 @@ description: "实现文档跟踪的基本指导"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
@@ -15,8 +15,8 @@ ms.reviewer: shubhamp
 ms.suite: ems
 experiment_id: priyamo-test-20160729
 translationtype: Human Translation
-ms.sourcegitcommit: fe167a6bb22c4d07847ed1bbf390dd19aaada23a
-ms.openlocfilehash: d3b343b8c1b28c47bb76171e032e9fffca3844c9
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 63882ad86a3b2746e2f7c1250f8707049dee8eb7
 
 
 ---
@@ -163,6 +163,6 @@ ms.openlocfilehash: d3b343b8c1b28c47bb76171e032e9fffca3844c9
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "从 AD RMS 迁移到 Azure Rights Management - 阶段 3 | Azure RMS"
-description: 
-keywords: 
+description: "使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 3。 这些过程涉及从 AD RMS 迁移到 Azure Rights Management 中的步骤 6-7。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 6d3cb53fb199bb880a0e61d2b964f297e547a027
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: cc605ff22c205846186f7e3ec819ecd826dba4a6
 
 
 ---
 
 # 迁移阶段 3 - 支持服务配置
 
-*适用于：Active Directory Rights Management Services、Azure Rights Management*
+>*适用于：Active Directory Rights Management Services、Azure Rights Management*
 
 
 使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 3。 这些过程涉及[从 AD RMS 迁移到 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 中的步骤 6-7。
@@ -33,7 +32,7 @@ ms.openlocfilehash: 6d3cb53fb199bb880a0e61d2b964f297e547a027
 
 如果你选择了 **Microsoft 管理**的 Azure RMS 租户密钥拓扑：
 
--   请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)文章中的“Exchange Online：IRM 配置”[](../deploy-use/configure-office365.md#exchange-online-irm-configuration)部分。 此部分介绍了一些典型的命令，运行这些命令可以连接到 Exchange Online 服务、从 Azure RMS 导入租户密钥，以及为 Exchange Online 启用 IRM 功能。 完成这些步骤后，你将获得 Exchange Online 的完整 RMS 功能。
+-   请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)文章中的[“Exchange Online：IRM 配置”](../deploy-use/configure-office365.md#exchange-online-irm-configuration)部分。 此部分介绍了一些典型的命令，运行这些命令可以连接到 Exchange Online 服务、从 Azure RMS 导入租户密钥，以及为 Exchange Online 启用 IRM 功能。 完成这些步骤后，你将获得 Exchange Online 的完整 RMS 功能。
 
 如果你选择了**客户管理 (BYOK)** 的 Azure RMS 租户密钥拓扑：
 
@@ -215,6 +214,6 @@ https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
 若要继续迁移，请转到[阶段 4 - 迁移后任务](migrate-from-ad-rms-phase4.md)。
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

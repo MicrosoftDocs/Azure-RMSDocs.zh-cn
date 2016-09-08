@@ -1,17 +1,16 @@
 ---
 title: "HYOK 限制 | Azure 权限管理"
-description: 
-author: cabailey
+description: "当你保护最敏感的文档和电子邮件时，通常会为此应用 Azure 权限管理保护，以便从以下优势中受益。"
 manager: mbaldwin
 ms.date: 08/18/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
-ms.openlocfilehash: 1cbf6bd6c209a8aafd1db61422ce03b628aaec07
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: cb12abb4dfe96135317facf4284c0eae7ef38196
 
 
 ---
@@ -70,7 +69,7 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 - [Azure 信息保护客户端](info-protect-client.md)为 **1.0.233.0** 版或更高版本。
 
 > [!IMPORTANT]
-> 为了实现此方案提供的高确定性，建议不要将 AD RMS 服务器放在 DMZ 中，并且只能由管理完善的计算机（例如，非移动设备或工作组计算机）使用这些服务器。 
+> 为了实现此方案提供的高确定性，建议不要将 AD RMS 服务器放在外围网络中，并且只能由管理完善的计算机（例如，非移动设备或工作组计算机）使用这些服务器。 
 > 
 > 我们还建议 AD RMS 群集使用硬件安全模块 (HSM)，以便在 AD RMS 部署被破坏或泄露时，你的服务器许可方证书 (SLC) 的私钥不会被公开或盗取。 
 
@@ -95,6 +94,6 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,20 +1,19 @@
 ---
 title: "管理员和用户将看到什么？ | Azure RMS"
-description: 
-keywords: 
+description: "文章显示管理员和用户如何查看并使用 Azure Rights Management (Azure RMS) 来帮助保护敏感或机密信息的一些典型示例。"
 author: cabailey
 manager: mbaldwin
 ms.date: 06/28/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
-ms.openlocfilehash: 213d077a65abd5115b7e0491dfc9cd8145752b23
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 4a2f473c657b7fe27e2a6d42000fd540c49e8895
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 213d077a65abd5115b7e0491dfc9cd8145752b23
 
 # 运行中的 Azure RMS：管理员和用户看到的内容
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 文章显示管理员和用户如何查看并使用 Azure Rights Management (Azure RMS) 来帮助保护敏感或机密信息的一些典型示例。
 
@@ -242,6 +241,6 @@ Alice 想要将 Bob 限制为只能查看和编辑该文档，而不想让他复
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "Office 应用；客户端配置 | Azure RMS"
-description: 
-keywords: 
+description: "使用此信息确定需要执行的操作，以便你的最终用户使用的 Office 应用可与 Azure Rights Management (Azure RMS) 一同使用。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 607de5e4699d654a4b7895bacde8f18a9707f8a1
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 562ecbd04ef988130205de06e5dd76084822ca7a
 
 
 ---
 
 # Office 应用；客户端配置
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 
 使用此信息确定需要执行的操作，以便你的最终用户使用的 Office 应用可与 Azure Rights Management (Azure RMS) 一同使用。
@@ -39,6 +38,6 @@ ms.openlocfilehash: 607de5e4699d654a4b7895bacde8f18a9707f8a1
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

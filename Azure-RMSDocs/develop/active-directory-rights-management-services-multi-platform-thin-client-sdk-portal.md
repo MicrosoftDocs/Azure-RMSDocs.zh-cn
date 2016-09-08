@@ -4,9 +4,9 @@ description: "RMS SDK 4.2 是一种简化的下一代 API，可用于在进行�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf22d0b3c574ff1472df8428f6a39c359e0e95e1
-ms.openlocfilehash: be2774ba361c478fa20faa1490bb4e5ead90b8af
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: b69cf4dc11731182314ab806cfc454f256cd37af
 
 
 ---
@@ -58,6 +58,6 @@ MS RMS SDK 4.2 这一版本可用于以下操作系统：
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

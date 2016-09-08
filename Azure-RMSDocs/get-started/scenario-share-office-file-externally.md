@@ -1,27 +1,26 @@
 ---
 title: "方案 - 与另一组织中的用户共享 Office 文件 | Azure RMS"
-description: 
-keywords: 
+description: "此方案和支持性的用户文档使用 Azure Rights Management，以便用户可以安全地通过电子邮件将 Office 文件发送给另一组织中的用户。 例如，Office 文件可能是 Word 文档、Excel 电子表格或 PowerPoint 演示文稿，其中包含合作伙伴的价目表信息、分销商的产品列表，或潜在客户的交货时间行列表。 如果用户遵照了指令，电子邮件中附加的文件将受 Azure Rights Management 保护。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 9615e41666a08a1d66f4e0dbdedb06f02a8efd3e
 
 
 ---
 
 # 方案 - 与另一组织中的用户共享 Office 文件
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 此方案和支持性的用户文档使用 Azure Rights Management，以便用户可以安全地通过电子邮件将 Office 文件发送给另一组织中的用户。 例如，Office 文件可能是 Word 文档、Excel 电子表格或 PowerPoint 演示文稿，其中包含合作伙伴的价目表信息、分销商的产品列表，或潜在客户的交货时间行列表。 如果用户遵照了指令，电子邮件中附加的文件将受 Azure Rights Management 保护。
 
@@ -95,7 +94,7 @@ ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
 
     ![“共享保护内容”对话框 - 向我发送电子邮件](../media/AzRMS_SharedProtected_EmailMe.PNG)
 
-5.  单击 **“立即发送”**。
+5.  单击**立即发送**。
 
 当**收件人**、**抄送**或**密件抄送**行中的某人收到这封电子邮件时，他们将看到一条消息，其中说明了如何阅读附加的 *&lt;Office 文档类型的名称&gt;*。 他们可以在多种设备上阅读该文档。这些设备包括 ipad、iphone、Android 平板电脑和手机、Mac 计算机以及 Windows 计算机。
 
@@ -134,7 +133,7 @@ ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
 
     ![“共享保护内容”对话框 - 向我发送电子邮件](../media/AzRMS_SharedProtected_EmailMe.PNG)
 
-5.  单击 **“立即发送”**。
+5.  单击**立即发送**。
 
 当“收件人”、“抄送”或“密件抄送”行中的某人收到这封电子邮件时，他们将看到一条消息，其中说明了如何阅读附加的价目表。 他们可以在多种设备上阅读该文档。这些设备包括 ipad、iphone、Android 平板电脑和手机、Mac 计算机以及 Windows 计算机。
 
@@ -155,6 +154,6 @@ ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

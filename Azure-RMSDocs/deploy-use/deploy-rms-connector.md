@@ -1,27 +1,26 @@
 ---
 title: "部署 Azure Rights Management 连接器 | Azure RMS"
-description: 
-keywords: 
+description: "使用以下信息可以了解 Azure Rights Management (RMS) 连接器，以及如何使用该连接器提供信息保护，包括保护使用 Microsoft Exchange Server、Microsoft SharePoint Server 或文件服务器（运行 Windows Server 并使用文件服务器资源管理器的文件分类基础结构 (FCI) 功能）的现有本地部署。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e31656e417a0861d33deb2436d2e4b596a7512a7
-ms.openlocfilehash: 6b9b3b039ba2de0de174a134768afd763d26b5dd
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 003dcc6a000d303fc42204d61145cf067dc16d32
 
 
 ---
 
 # 部署 Azure Rights Management 连接器
 
-*适用于：Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+>*适用于：Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
 
 使用以下信息可以了解 Azure Rights Management (RMS) 连接器，以及如何使用该连接器提供信息保护，包括保护使用 Microsoft Exchange Server、Microsoft SharePoint Server 或文件服务器（运行 Windows Server 并使用文件服务器资源管理器的文件分类基础结构 (FCI) 功能）的现有本地部署。
 
@@ -84,6 +83,6 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 转到[安装和配置 Azure Rights Management 连接器](install-configure-rms-connector.md)。
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

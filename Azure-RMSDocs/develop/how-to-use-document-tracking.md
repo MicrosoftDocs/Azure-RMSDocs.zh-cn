@@ -4,9 +4,9 @@ description: "文档跟踪功能需要对管理关联元数据以及向服务注
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4982cc86d9c006486540055de7c165adca21da
-ms.openlocfilehash: 9872317c2d5f5f56f28ed2683d7ebc9743041a37
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 7afec3a7e0699d590e99dfbb95749f7093baff88
 
 
 ---
@@ -64,6 +64,6 @@ ms.openlocfilehash: 9872317c2d5f5f56f28ed2683d7ebc9743041a37
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

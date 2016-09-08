@@ -1,17 +1,16 @@
 ---
 title: "如何更改或自定义 Azure 信息保护的现有标签 | Azure 权限管理"
-description: 
-author: cabailey
+description: "可以更改或优化用户可以在信息保护栏看到的标签，方法是在 Azure 信息保护策略中对其进行配置。"
 manager: mbaldwin
 ms.date: 08/10/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 49f08d4180d74375a31136f7fc0c77437bcf84d5
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: dffc6608c9dba918dc26e40537c960bf554896d8
 
 
 ---
@@ -53,6 +52,6 @@ ms.openlocfilehash: 49f08d4180d74375a31136f7fc0c77437bcf84d5
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

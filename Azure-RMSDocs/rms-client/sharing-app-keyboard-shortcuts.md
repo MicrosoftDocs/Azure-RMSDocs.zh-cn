@@ -1,27 +1,26 @@
 ---
 title: "在 Rights Management 共享应用程序中使用键盘快捷方式 | Azure RMS"
-description: 
-keywords: 
+description: "使用 RMS 共享应用程序时，按 Alt 键查看可用的访问键，然后按 Alt + 访问键可选择某个选项。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 789807df983a2a895b6cddc27795be651ca50239
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 640e318c2c12bc1e2044163b2d9201c912345806
 
 
 ---
 
 # 使用 Rights Management 共享应用程序中的键盘快捷键
 
-*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 使用 RMS 共享应用程序时，按 **Alt** 键查看可用的访问键，然后按 **Alt** + 访问键可选择某个选项。
 
@@ -41,6 +40,6 @@ ms.openlocfilehash: 789807df983a2a895b6cddc27795be651ca50239
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
