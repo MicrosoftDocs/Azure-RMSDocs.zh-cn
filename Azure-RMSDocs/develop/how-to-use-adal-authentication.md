@@ -6,7 +6,7 @@ author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4c3625676c7e794ef133c75881f666bae80e0513
-ms.openlocfilehash: 9200ea44671776ced8781c1e13e71871f5bdf014
+ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
+ms.openlocfilehash: a2da0e0aedde09cbd834f731d1ddc25f9062336e
 
 
 ---
@@ -124,6 +124,6 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

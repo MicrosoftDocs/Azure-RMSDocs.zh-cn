@@ -6,7 +6,7 @@ author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
-ms.openlocfilehash: 81541dbadabe3417299f47447384934373275e75
+ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
+ms.openlocfilehash: 0f50bc77ba7a7f730dda5ef278f21a8d6f0311c4
 
 
 ---
-# 入门
+# 开始使用
 
 Rights Management Services SDK 2.1 平台使开发人员可以通过 RMS 服务器或 Azure RMS 构建利用 RMS 信息保护的应用程序。 该平台可处理复杂的安全实践（如密钥管理、加密和解密处理），并提供简化 API 以便轻松开发应用程序。
 
@@ -76,6 +76,6 @@ RMS SDK 2.1 支持一系列重要的客户端和服务器平台。 有关详细�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

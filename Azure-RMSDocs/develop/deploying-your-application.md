@@ -4,9 +4,9 @@ description: "本主题概述并引导你完成启用权限的应用程序的部
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 982021a2e972023b04e6483348a7c27aa029e198
-ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 3b6ff46581921f69c47cad3d6d879c53320b9126
 
 
 ---
@@ -28,10 +28,6 @@ ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
 ## 请求生产许可协议
 
  必须先申请生产许可证协议以获取生产证书，才能发布使用 Rights Management Services SDK 2.1 开发的应用程序。
-
-> [!IMPORTANT]
-> 如果要使用基于 Azure 的 RMS 运行客户端应用程序，你需要创建自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md)。
-> 有关使用 Azure RMS 运行的详细信息，请参阅[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
 通过申请生产许可证协议，即可获得证书。
 
@@ -116,7 +112,8 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 RMS 客户端 2.1 作为�
 
 
 > [!IMPORTANT]
-> 使用 Azure RMS 运行 RMS SDK 2.1 客户端应用程序需要创建你自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md)。
+> 如果要使用基于 Azure 的 RMS 运行客户端应用程序，你需要创建自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md)。
+> 有关使用 Azure RMS 运行的详细信息，请参阅[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
 -   从 Microsoft 下载中心下载 [Microsoft Online Services 登录助手](http://www.microsoft.com/en-us/download/details.aspx?id=28177)。
 -   确保已启用权限的应用程序的部署中包括此服务选项的系统必备组件检查。
@@ -135,6 +132,6 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 RMS 客户端 2.1 作为�
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

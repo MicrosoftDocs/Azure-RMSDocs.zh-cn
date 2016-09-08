@@ -6,7 +6,7 @@ author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
-ms.openlocfilehash: 2892bc8242c3b6a90352829bf251b7044a919ed3
+ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
+ms.openlocfilehash: e47a440a1cc69351baacdabb38774986f60b7443
 
 
 ---
@@ -178,6 +178,6 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

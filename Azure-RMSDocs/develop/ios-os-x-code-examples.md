@@ -4,9 +4,9 @@ description: "本主题向你介绍 iOS/OS X 版 RMS SDK 的重要代码元素�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
-ms.openlocfilehash: 66bb1b58cba19d0fe8bc2ec0d3720c0b040f8378
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
 
 
 ---
@@ -285,6 +285,6 @@ ms.openlocfilehash: 66bb1b58cba19d0fe8bc2ec0d3720c0b040f8378
  
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

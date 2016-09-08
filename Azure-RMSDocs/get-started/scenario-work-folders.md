@@ -1,27 +1,26 @@
 ---
 title: "方案 - 配置工作文件夹的持续保护 | Azure RMS"
-description: 
-keywords: 
+description: "此方案和支持性的用户文档使用 Azure Rights Management 对工作文件夹中的 Office 文档应用持续保护。 工作文件夹使用运行 Windows Server 的文件服务器的角色服务，它使用户可以一种一致的方式从他们的 PC 和设备访问其工作文件夹。 尽管工作文件夹会提供它自己的加密来保护文件，但如果文件被移动到工作文件夹环境之外的话，这种保护便会消失。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 35ad445e229eac3feeca5522a41b9e3b25fd1180
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: ce61f22be934ec9817a22737417514468b5c6528
 
 
 ---
 
 # 方案 - 配置工作文件夹的持续保护
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 此方案和支持性的用户文档使用 Azure Rights Management 对[工作文件夹](https://technet.microsoft.com/library/dn265974.aspx)中的 Office 文档应用持续保护。 工作文件夹使用运行 Windows Server 的文件服务器的角色服务，它使用户可以一种一致的方式从他们的 PC 和设备访问其工作文件夹。 尽管工作文件夹会提供它自己的加密来保护文件，但如果文件被移动到工作文件夹环境之外的话，这种保护便会消失。 例如，用户复制同步文件并将其保存到不在 IT 部门控制下的存储器中，或者通过电子邮件将文件发送给其他人。
 
@@ -123,6 +122,6 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

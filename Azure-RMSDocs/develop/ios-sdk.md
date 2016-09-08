@@ -4,9 +4,9 @@ description: "通过 AAD RM，iOS 和 OS X 应用程序可使用 RMS SDK 4.2 在
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a0659fda129f6de5e7b52c89f4d1f9d73d11df45
-ms.openlocfilehash: bdc173fb9cb9b749d75b08df3cc9554acd6f6386
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 65c5b290278405152d0377a686886ff5be14b52b
 
 
 ---
@@ -119,6 +119,6 @@ ms.openlocfilehash: bdc173fb9cb9b749d75b08df3cc9554acd6f6386
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

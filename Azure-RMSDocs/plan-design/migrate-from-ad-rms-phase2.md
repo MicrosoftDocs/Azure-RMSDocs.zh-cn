@@ -1,26 +1,25 @@
 ---
 title: "从 AD RMS 迁移到 Azure Rights Management - 阶段 2 | Azure RMS"
-description: 
-keywords: 
+description: "使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 2。 这些过程涉及从 AD RMS 迁移到 Azure Rights Management 中的步骤 5。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: ca2dae71dceae4c59d12243c386eaded8ebb11f9
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 8e1e44eca132b3fd3c83894544d01c180db8735e
 
 
 ---
 # 迁移阶段 2 - 客户端配置
 
-*适用于：Active Directory Rights Management Services、Azure Rights Management*
+>*适用于：Active Directory Rights Management Services、Azure Rights Management*
 
 使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 2。 这些过程涉及[从 AD RMS 迁移到 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 中的步骤 5。
 
@@ -132,6 +131,6 @@ Redirect_OnPrem.cmd：
 要继续迁移，请转到[阶段 3 - 支持复制配置](migrate-from-ad-rms-phase3.md)。
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

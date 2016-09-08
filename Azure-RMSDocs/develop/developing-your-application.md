@@ -6,7 +6,7 @@ author: bruceperlerms
 manager: mbaldwin
 ms.date: 07/06/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
-ms.openlocfilehash: e00af9b9b0a5f2d917ac96812e980505d4cfd347
+ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
+ms.openlocfilehash: 0dcaf13afb1802c2301c9516b2602aa2f6b7ce7e
 
 
 ---
@@ -185,6 +185,6 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

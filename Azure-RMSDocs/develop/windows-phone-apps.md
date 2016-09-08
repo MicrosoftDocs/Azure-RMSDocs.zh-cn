@@ -4,9 +4,9 @@ description: "Windows Phone 应用程序可以使用 Microsoft Rights Management
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
-ms.openlocfilehash: 1728a094dfaa869ae490e86d10ffe5ebcf4bfa5d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: b2f7233b91852dae0fe619720b84bd395547a05c
 
 
 ---
@@ -93,6 +93,6 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

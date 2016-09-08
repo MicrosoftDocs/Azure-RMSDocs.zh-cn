@@ -5,13 +5,13 @@ author: cabailey
 manager: mbaldwin
 ms.date: 08/08/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 09cb56aaa0d7d97073623c518aa331d591a376e3
-ms.openlocfilehash: 65d758635b77ee7d6c423a1400a7621e8e05b14d
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 679d03c499ccdd044444c73ebef8f59b281278cd
 
 
 ---
@@ -97,6 +97,6 @@ ms.openlocfilehash: 65d758635b77ee7d6c423a1400a7621e8e05b14d
 [步骤 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,24 +4,24 @@ description: "教程的介绍，快速试用适合你组织的 Microsoft Azure R
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1db923bf-7d19-4fdd-a413-bfeb58af5e03
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 7c89aa5f31732464dab2b90a25ad7c50f36c2c99
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: c828ba3d4156c0115a012d10b375caee0d5e5c10
 
 
 ---
 
 # Azure Rights Management 快速入门教程
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 跳转到： 
 > [!div class="op_single_selector"]
@@ -31,11 +31,11 @@ ms.openlocfilehash: 7c89aa5f31732464dab2b90a25ad7c50f36c2c99
 - [步骤 4：收件人读取文档](tutorial-step4.md)
 - [步骤 5：跟踪你的文档](tutorial-step5.md)
 
-使用本教程，你可以快速试用适合你组织的 Microsoft Azure 权限管理（也称 Azure RMS），只需执行 5 个步骤，所需时间不到 15 分钟。 你需要激活服务，然后即可通过电子邮件将机密文档安全地发送给其他组织的人员，并可跟踪该文档何时被打开。 通过电子邮件发送机密文档时，该文档在传输过程中会进行加密，只能由收件人使用发件人设置的权限来打开。
+使用本教程，可以快速试用适合你的组织的 Microsoft Azure 权限管理（也称 Azure RMS），只需执行 5 个步骤，所需时间不到 15 分钟。 你需要激活服务，然后即可通过电子邮件将机密文档安全地发送给其他组织的人员，并可跟踪该文档何时被打开。 通过电子邮件发送机密文档时，该文档在传输过程中会进行加密，只能由收件人使用发件人设置的权限来打开。
 
 ![Azure RMS 快速入门教程所有步骤](../media/AzRMS_QuickStartStepsAll.PNG)
 
-本教程针对的是 IT 管理员和顾问，目的是帮助他们评估 Azure 权限管理的作用，看其是否适合用作组织的信息保护解决方案。 在生产环境中，应该由管理员按说明来激活服务，由最终用户按说明来发送文档。 这两套说明都包括在本教程中，其所展示的端到端方案说明了如何将机密文档安全地发送到其他组织的人员手中。 如果你在完成本教程的过程中遇到问题，请发送电子邮件至 [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial) ，我们会帮助你解决问题。
+本教程针对的是 IT 管理员和顾问，目的是帮助他们评估 Azure 权限管理的作用，看其是否适合用作组织的信息保护解决方案。 在生产环境中，应该由管理员按说明来激活服务，由最终用户按说明来发送文档。 这两套说明都包括在本教程中，其所展示的端到端方案说明了如何将机密文档安全地发送到其他组织的人员手中。 如果你在完成本教程的过程中遇到问题，请发送电子邮件至 [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial)，我们会帮助你解决问题。
 
 若要完成本教程，你需要满足以下先决条件：
 
@@ -57,6 +57,6 @@ ms.openlocfilehash: 7c89aa5f31732464dab2b90a25ad7c50f36c2c99
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

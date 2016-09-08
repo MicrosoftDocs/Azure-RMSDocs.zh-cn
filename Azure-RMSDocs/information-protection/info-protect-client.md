@@ -1,17 +1,16 @@
 ---
 title: "安装 Azure 信息保护客户端 | Azure 权限管理"
-description: 
-author: cabailey
+description: "若要使用 Azure 信息保护对文档和电子邮件进行分类，必须首先安装 Azure 信息保护客户端。 此安装将信息保护栏添加到 Office 应用程序（Word、Excel、PowerPoint、Outlook）以显示组织的分类标签，而且“主页”选项卡（Word、Excel、PowerPoint）上的新“保护”组具有名为“保护”的按钮。"
 manager: mbaldwin
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: c8a7c7d7182df7b525b3425ab378126feb389d9f
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: ab8388e03803d32a6891785f905a1ddef796bc25
 
 
 ---
@@ -89,6 +88,6 @@ ms.openlocfilehash: c8a7c7d7182df7b525b3425ab378126feb389d9f
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO4-->
 
 

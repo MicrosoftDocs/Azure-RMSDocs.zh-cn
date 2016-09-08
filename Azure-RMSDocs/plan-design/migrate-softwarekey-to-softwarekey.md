@@ -1,20 +1,19 @@
 ---
 title: "步骤 2&colon; 软件保护密钥到软件保护密钥的迁移 | Azure RMS"
-description: 
-keywords: 
+description: "这些说明是从 AD RMS 到 Azure Rights Management 的迁移路径中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且你希望使用软件保护的租户密钥迁移到 Azure Rights Management 时才适用。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 9cd66efad548a4ddef4e6032b0ce7fc817a95c31
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 6597bf4ea54f640c30e98b30363323d874e32c43
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 9cd66efad548a4ddef4e6032b0ce7fc817a95c31
 
 # 步骤 2：软件保护密钥到软件保护密钥的迁移
 
-*适用于：Active Directory Rights Management Services、Azure Rights Management*
+>*适用于：Active Directory Rights Management Services、Azure Rights Management*
 
 
 这些说明是[从 AD RMS 到 Azure Rights Management 的迁移路径](migrate-from-ad-rms-to-azure-rms.md)中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且你希望使用软件保护的租户密钥迁移到 Azure Rights Management 时才适用。 
@@ -71,6 +70,6 @@ ms.openlocfilehash: 9cd66efad548a4ddef4e6032b0ce7fc817a95c31
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

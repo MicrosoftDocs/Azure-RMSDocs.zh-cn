@@ -4,9 +4,9 @@ description: "本主题展示开发环境文件和它们在计算机上的相对
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
-ms.openlocfilehash: 3d6e7c2b40ba80988e93186fd68a12e6216b477d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: a3f1e913c92dbee3b889a3d3c0bd6c97317112c9
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 3d6e7c2b40ba80988e93186fd68a12e6216b477d
 
 Rights Management Services SDK 2.1 包括安装在计算机上默认位置或你指定的位置处的以下文件：%MsipcSDKDir%。
 
-|文件|路径|描述|
+|文件|路径|说明|
 |----|----|-----------|
 |ReadMe.htm| \ | 包含 RMS 帮助和[发行说明](release-notes-rtm.md)的链接。|
 |Isvtier5appsigningprivkey.dat|\bin|包含一个私钥，用于生成支持 RMS 的应用程序开发期间要使用的清单。|
@@ -55,6 +55,6 @@ Rights Management Services SDK 2.1 包括安装在计算机上默认位置或你
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

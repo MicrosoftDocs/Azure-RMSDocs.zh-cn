@@ -1,27 +1,26 @@
 ---
 title: "下载并安装 Rights Management 共享应用程序 | Azure RMS"
-description: 
-keywords: 
+description: "你无需是本地管理员就能安装 RMS 共享应用程序。 但是，如果你不是本地管理员而使用 Office 2010，就会有一些限制。 有关详细信息，请参阅本页上的“如果你不是本地管理员且使用 Office 2010”部分。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: bda09df1ff51565a4bbf501161c7a4f8cdbbfe22
 
 
 ---
 
 # 下载和安装 Rights Management 共享应用程序
 
-*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 你无需是本地管理员就能安装 RMS 共享应用程序。 但是，如果你不是本地管理员而使用 Office 2010，就会有一些限制。 有关详细信息，请参阅本页上的[如果你不是本地管理员，并且使用 Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) 部分。
 
@@ -31,7 +30,7 @@ ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
 
 2.  在“计算机”  部分中，单击“适用于 Windows 的 RMS 应用”  图标，并保存用于安装 Microsoft Rights Management 共享应用程序的 **Setup.exe** 文件。
 
-3.  双双击已下载的 Setup.exe 文件。 如果系统提示你是否继续，请单击“是” 。
+3.  双双击已下载的 Setup.exe 文件。 如果系统提示你继续，请单击 **“是”**。
 
 4.  在 **“安装 Microsoft RMS”** 页上，单击 **“下一步”**，然后等待安装完成。
 
@@ -62,7 +61,7 @@ ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
 
 -   [使用 RMS 共享应用程序的示例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## 另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
@@ -70,6 +69,6 @@ ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

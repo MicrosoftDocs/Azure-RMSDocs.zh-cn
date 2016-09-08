@@ -4,9 +4,9 @@ description: "Microsoft Rights Management SDK 4.2 通过单个设备属性管理
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79e58b8092ea7cb057229d4c464d79f3694296e6
-ms.openlocfilehash: 5faea360de8aa9ecb82abf25b5c1392d52d0afad
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 1bd4b0c2605a24cd683473b35bfaf8dd0745365a
 
 
 ---
@@ -96,6 +96,6 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

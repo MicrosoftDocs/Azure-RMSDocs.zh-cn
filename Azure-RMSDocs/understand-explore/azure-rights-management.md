@@ -1,27 +1,26 @@
 ---
 title: "Azure Rights Management 概述 | Azure RMS"
-description: 
-keywords: 
+description: "Microsoft Azure Rights Management (Azure RMS) 可帮助你防止组织的敏感信息在未经授权的情况下即被访问，并可以控制此信息的使用方式。 Azure Rights Management 是一种云服务，并且已集成到其他 Microsoft 云服务和应用程序（例如 Office 365 和 Azure Active Directory）中。 它还可与你自己的业务线应用程序和软件供应商提供的信息保护解决方案搭配使用，无论这些应用程序和解决方案是在本地还是在云中。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/03/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 965581c8-be3c-43b4-8145-5cefd29c7636
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fdedb0f1064e98500d3b4edcee283c514851d446
-ms.openlocfilehash: a8c9a55977a285cd30872beeb160b07ce02edcce
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 9d6c68c01cbd410def904f7cf256ffe9a5a5417b
 
 
 ---
 
 # Azure Rights Management 概述
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 Microsoft Azure Rights Management (Azure RMS) 可帮助你防止组织的敏感信息在未经授权的情况下即被访问，并可以控制此信息的使用方式。 Azure Rights Management 是一种云服务，并且已集成到其他 Microsoft 云服务和应用程序（例如 Office 365 和 Azure Active Directory）中。 它还可与你自己的业务线应用程序和软件供应商提供的信息保护解决方案搭配使用，无论这些应用程序和解决方案是在本地还是在云中。 
 
@@ -40,6 +39,6 @@ Rights Management 使用加密、标识和身份验证策略，帮助保护文�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

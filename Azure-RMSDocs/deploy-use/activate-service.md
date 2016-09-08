@@ -1,27 +1,26 @@
 ---
 title: "激活 Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "激活 (Azure RMS) 后，你的组织便可以开始使用支持此信息保护解决方案的应用程序和服务保护重要数据了。 管理员还可以管理和监视你的组织拥有的受保护文件和电子邮件。 能够开始在 Office、SharePoint 和 Exchange 中使用信息权限管理 (IRM) 功能保护任何敏感或机密文件之前，你必须启用它。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf5e3561ef24d8f44e791ff7bdc8450a73f79705
-ms.openlocfilehash: d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: d8ec823553934442ecb1e0a0b288eaa6d9c21ea6
 
 
 ---
 
 # 激活 Azure 权限管理
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 激活 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 后，你的组织便可以开始使用支持此信息保护解决方案的应用程序和服务保护重要数据了。 管理员还可以管理和监视你的组织拥有的受保护文件和电子邮件。 能够开始在 Office、SharePoint 和 Exchange 中使用信息权限管理 (IRM) 功能保护任何敏感或机密文件之前，你必须启用 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]。
 
@@ -82,6 +81,6 @@ Exchange Online 和 SharePoint Online 等 Office 服务需要进行其他配置�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

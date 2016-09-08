@@ -1,27 +1,26 @@
 ---
 title: "从 AD RMS 迁移到 Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "使用下面的一组指令将 Active Directory 权限管理服务 (AD RMS) 部署迁移到 Azure Rights Management (Azure RMS)。 迁移之后，用户将仍然可以访问你的组织使用 AD RMS 来保护的文档和电子邮件，新保护的内容将使用 Azure RMS。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 65371b9a3b210743fc160dbad38333ccb12671e6
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: bead12db04e6fcf2f9e4af5148d3f8a4ef4089da
 
 
 ---
 
 # 从 AD RMS 迁移到 Azure 权限管理
 
-*适用于：Active Directory Rights Management Services、Azure Rights Management*
+>*适用于：Active Directory Rights Management Services、Azure Rights Management*
 
 使用下面的一组指令将 Active Directory 权限管理服务 (AD RMS) 部署迁移到 Azure Rights Management (Azure RMS)。 迁移之后，用户将仍然可以访问你的组织使用 AD RMS 来保护的文档和电子邮件，新保护的内容将使用 Azure RMS。
 
@@ -185,6 +184,6 @@ ms.openlocfilehash: 65371b9a3b210743fc160dbad38333ccb12671e6
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

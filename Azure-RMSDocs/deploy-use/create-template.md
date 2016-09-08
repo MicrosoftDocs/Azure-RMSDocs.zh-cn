@@ -1,20 +1,19 @@
 ---
 title: "创建、配置和发布自定义模板 | Azure RMS"
-description: 
-keywords: 
+description: "你可以在 Azure 经典门户中创建和管理自定义模板。 可以直接从 Azure 经典门户执行这些操作，也可以登录到 Office 365 管理中心，并选择 Rights Management 的“高级功能”，它会将你重定向至 Azure 经典门户。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5737594c679be0702761014425e104e5eade59f3
-ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 64beb891fda54da3718a322f6628a2987ff35111
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
 
 # 创建、配置和发布自定义模板
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 
 你可以在 Azure 经典门户中创建和管理自定义模板。 可以直接从 Azure 经典门户执行这些操作，也可以登录到 Office 365 管理中心，并选择 Rights Management 的“高级功能”，它会将你重定向至 Azure 经典门户。
@@ -167,6 +166,6 @@ ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

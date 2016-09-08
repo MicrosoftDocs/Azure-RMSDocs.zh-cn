@@ -4,9 +4,9 @@ description: "选择你的文件 API 应用程序运行的安全模式。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11b998addd14fdde0592ed948b956ddb2ed6e570
-ms.openlocfilehash: 2be40c9caf33f391f8be9fe116d3473ce995613b
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 1cc034787f8bc47f874259edb143ba0b3f62e47a
 
 
 ---
@@ -41,6 +41,6 @@ ms.openlocfilehash: 2be40c9caf33f391f8be9fe116d3473ce995613b
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

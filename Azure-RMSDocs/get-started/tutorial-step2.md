@@ -4,17 +4,17 @@ description: "使用本教程的第二步，可以快速试用适合你的组织
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f32cf2f3-29e2-429c-a0fd-b16cc482484a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 19eb18599d9d084b40cfe746f01eb8ce463c47ab
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
 
 # Azure RMS 快速启动步骤 2：安装 Rights Management 共享应用程序
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 
 跳转到： 
@@ -52,7 +52,7 @@ ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
 
 3.  若要进行本地安装，你必须使用管理员帐户运行已下载的 Setup.exe 文件。 如果系统提示你继续，请单击 **“是”**。
 
-4.  在 **“安装 Microsoft RMS”** 页上，单击 **“下一步”**，然后等待安装完成。
+4.  在**安装 Microsoft RMS**页上，单击**下一步**，然后等待安装完成。
 
 5.  安装完成后，请单击 **“重新启动”** （如果系统提示你重新启动计算机），或单击  **“关闭”** 完成安装。
 
@@ -62,7 +62,7 @@ ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
 |--------------------------------|--------------------------|
 |关于适用于 Windows 的 Rights Management 共享应用程序的本地安装以及用户说明|[权限管理共享应用程序用户指南](../rms-client/sharing-app-user-guide.md)|
 |关于适用于 Windows 的 Rights Management 共享应用程序的脚本化安装以及更多技术信息|[权限管理共享应用程序管理员指南](../rms-client/sharing-app-admin-guide.md)|
-|了解本机保护和常规保护的区别|[一般性保护和内置（本机）保护的区别是什么？](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)|
+|了解本机保护和常规保护的区别|[一般性保护和内置（本机）保护的区别是什么？](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection)|
 
 
 >[!div class="step-by-step"]
@@ -70,6 +70,6 @@ ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
 [步骤 3 »](tutorial-step3.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,20 +1,19 @@
 ---
 title: "Rights Management 共享应用程序管理员指南 | Azure RMS"
-description: 
-keywords: 
+description: "如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 Rights Management 共享应用程序用户指南或适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题以外的更多技术信息，请使用以下信息。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/05/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7cf74355aa39928fd66a4be13a9b65428da7480
-ms.openlocfilehash: 08226cd930f90bc7c9cda4c65315ee6472fbcf52
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 9b0c608ac30e2a93b898dcc1de9ccfa4cdeedcb4
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 08226cd930f90bc7c9cda4c65315ee6472fbcf52
 
 # 权限管理共享应用程序管理员指南
 
-*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 
 如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 [Rights Management 共享应用程序用户指南](sharing-app-user-guide.md)或[适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)以外的更多技术信息，请使用以下信息。
@@ -396,6 +395,6 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

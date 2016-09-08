@@ -1,27 +1,26 @@
 ---
 title: "准备 Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "在你注册云订阅并创建组织的 Microsoft Office 365 或 Azure Active Directory 帐户之后，即可随时启用 Rights Management 服务。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 55f092ede1f003c700cb58359bab264772702c39
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 4ebdb8a75b135f4f252d640e4f16da1ea7a1ed04
 
 
 ---
 
 # 准备 Azure 权限管理
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 在你注册云订阅并创建组织的 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 或 Azure Active Directory 帐户之后，即可随时启用[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]服务。
 
@@ -43,6 +42,6 @@ ms.openlocfilehash: 55f092ede1f003c700cb58359bab264772702c39
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

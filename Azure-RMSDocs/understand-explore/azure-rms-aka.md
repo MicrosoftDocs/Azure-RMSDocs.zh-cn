@@ -1,20 +1,19 @@
 ---
 title: "Azure Rights Management 也称为 | Azure RMS"
-description: 
-keywords: 
+description: "Azure Rights Management 也称为 Azure Rights Management 服务，但因为它本身作为服务在 Azure 中运行，所以经常在名称中省略“服务”。 它是云版本的 Active Directory Rights Management Services (AD RMS)，最初作为 Windows Rights Management Services (Windows RMS) 发布。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf8629651780438c8a2ededbe1e761455cfce94a
-ms.openlocfilehash: 45e5660703efdbbc298fb08cc15db176500549e7
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 3e9ecf77ec3e8e5c1246f587cdb583b7631d634e
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 45e5660703efdbbc298fb08cc15db176500549e7
 
 # Azure Rights Management - 也称为...
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 
 Azure Rights Management 也称为 *Azure Rights Management 服务*，但因为它本身作为服务在 Azure 中运行，所以经常在名称中省略“服务”。 它是云版本的 *Active Directory Rights Management Services* (AD RMS)，最初作为 *Windows Rights Management Services* (Windows RMS) 发布。
@@ -43,6 +42,6 @@ Azure Rights Management 最初名为 *Windows Azure Active Directory Rights Mana
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,9 +4,9 @@ description: "使用本教程的最后一步，可以快速试用适合你的组
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: 
 ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
@@ -18,8 +18,8 @@ ms.suite: ems
 ms.tgt_pltfrm: 
 ms.custom: 
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 5884914e2ff69c4db40d4e874541f42b9a0e7df5
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
 
 # Azure RMS 快速启动步骤 5：跟踪受保护文档
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 
 跳转到： 
@@ -56,7 +56,7 @@ ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
 
 1.  使用 Outlook 时，请在 **“RMS”** 组的 **“主页”** 选项卡上，单击 **“跟踪使用情况”**。
 
-2.  如果你看到 **“按你的方式保护和共享”** 页，请单击 **“登录”** ，然后再次提供用户名和密码。
+2.  如果你看到**按你的方式保护和共享**页，请单击**登录**，然后再次提供用户名和密码。
 
 3.  在“你的共享文档”页上，你会看到附加到电子邮件中的文档 **Confidential.docx**。 此时，该文档是唯一显示的文件，但当你共享更多的受保护文档时，此列表会扩大。
 
@@ -91,6 +91,6 @@ ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,9 +4,9 @@ description: "第一个应用程序的快速入门指南是通过适用于每种
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
-ms.openlocfilehash: b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 10b6cd94e013cabe27e614442a549775e2783e56
 
 
 ---
@@ -47,7 +47,7 @@ ms.openlocfilehash: b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27
 3. 查看 [SDK 摘要图](api-reference-4-2.md)。
 4. 有关重要的 **发行说明** 和 **开发人员指南**，请参阅 [新增功能](release-notes.md) 主题。
 
-  |主题|描述|
+  |主题|说明|
   |-----|-----------|
   |[新增功能](release-notes.md)|MS RMS SDK 4.2 将 RMS 应用程序实现提升到了一个新的易用性和灵活性级别。|
   |[设置开发人员环境](setup-developer-environment.md)|以下主题说明必须设置开发环境以便将 AD RMS SDK API 用于特定操作系统。|
@@ -56,6 +56,6 @@ ms.openlocfilehash: b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,9 +4,9 @@ description: "下面的主题演示如何调试应用程序和使用 Windows 事
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29e856e3e9990f81a791c533ddad5a332093d5d3
-ms.openlocfilehash: c00ce9829ce4150cfef74ecd972450b3d787f312
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 31b2fe22bbbb31b991bdf88e408c943e6d2ba685
 
 
 ---
@@ -75,6 +75,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

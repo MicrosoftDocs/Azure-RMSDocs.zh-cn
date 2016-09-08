@@ -4,17 +4,17 @@ description: "使用本教程的第三步，可以快速试用适合你的组织
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c604e749-8918-40e8-8148-6bd000cb2be2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 62b2303074ccf2b23e29a5770f51b003c8f97780
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 
 # Azure RMS 快速启动步骤 3：通过电子邮件发送要保护的文档
 
-*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure Rights Management、Office 365*
 
 
 跳转到： 
@@ -45,11 +45,11 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 
 1.  使用 Outlook 创建一封新邮件，然后将你刚创建的文件添加到附件中。
 
-2.  在 **“收件人”** 框中，键入一个或多个业务电子邮件地址。 请务必指定业务电子邮件地址，例如 **janetm@contoso.com** 或 **p.dover@fabrikam.com**，因为 Azure Rights Management 目前不支持 Internet 提供商提供的可以在家里使用的个人电子邮件地址。 请不要担心你向其发送电子邮件的人是否也有 Azure 权限管理。
+2.  在**收件人**框中，键入一个或多个企业电子邮件地址。 请务必指定业务电子邮件地址，例如 **janetm@contoso.com** 或 **p.dover@fabrikam.com**，因为 Azure Rights Management 目前不支持 Internet 提供商提供的可以在家里使用的个人电子邮件地址。 请不要担心你向其发送电子邮件的人是否也有 Azure 权限管理。
 
 3.  键入一个主题，例如  **“机密文档”** ，然后键入简短的电子邮件内容，例如 **“请阅读此机密文档，不要与其他人共享。”**
 
-4.  然后，在 **“RMS”** 组的 **“消息”** 选项卡中，单击 **“共享保护项”** ，然后再次单击 **“共享保护项”** ：
+4.  然后，在**消息**选项卡上的**RMS**组中，单击**共享保护项**，然后再次单击**共享保护项**：
 
 5.  在 **“共享保护项”** 对话框中，执行以下操作：
 
@@ -65,7 +65,7 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 
         此选项要求收件人每次打开该附件时都要有 Internet 连接，但好处是，如果你在以后撤销该文档，则收件人下次将无法打开它。 如果你不选择此选项，则收件人在没有 Internet 连接的情况下也可以打开该文档，但坏处是，如果你在以后撤销该文档，则可能需要延迟一段时间才能生效。
 
-    4.  单击 **“立即发送”**。
+    4.  单击**立即发送**。
 
         将向你所指定的电子邮件地址发送带附件的电子邮件。 除了你的电子邮件，他们还会看到有关如何阅读受 Azure 权限管理保护的附加文档的说明。
 
@@ -82,6 +82,6 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 [步骤 4 »](tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
