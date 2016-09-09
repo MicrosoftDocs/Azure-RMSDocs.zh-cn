@@ -1,9 +1,9 @@
 ---
 title: "方案 - 发送公司机密电子邮件 | Azure RMS"
-description: "此方案和支持用户文档使用 Azure Rights Management，以便组织中的任何用户可安全发送组织外无法查阅的电子邮件通信。 例如，如果某人将电子邮件转发给其他组织的人员或个人电子邮件帐户。 该电子邮件和所有附件将受 Azure Rights Management 和用户从电子邮件客户端选择的模板保护。"
+description: "此方案和支持用户文档使用 Azure Rights Management，以便组织中的任何用户可安全发送组织外无法查阅的电子邮件通信。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 4bda209d2f66bb3a3ca1639a7ddfcfc3bccf51b1
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: e3245f7fb15f7081dbe4552eb9734a4915d1b6f1
 
 
 ---
