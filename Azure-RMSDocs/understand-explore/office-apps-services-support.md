@@ -3,7 +3,7 @@ title: "Office 应用程序和服务 | Azure RMS"
 description: "最终用户 Office 应用程序（例如 Word、Excel、PowerPoint 和 Outlook）和 Office 服务（例如 Exchange 和 SharePoint）如何使用 Microsoft Azure Rights Management 来帮助保护组织的数据。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: 76200a27b31bc9a7afaea4ab6b2083beb3c85256
+ms.sourcegitcommit: f0871436caef79187349d700d190564b08cc9e46
+ms.openlocfilehash: 1e1a52e637671d857fac22c51a635e726fa99b01
 
 
 ---
@@ -61,7 +61,6 @@ ms.openlocfilehash: 76200a27b31bc9a7afaea4ab6b2083beb3c85256
 > 
 > -   不能使用在 Azure 经典门户中管理的默认模板或自定义模板。
 > -   不支持带 .PPDF 文件扩展名的受保护 PDF 文件。 当你使用本机支持 RMS 的 PDF 阅读器时时，支持带 PDF 文件扩展名的文件以及受 RMS 本机保护的文件。
-> -   由于移动设备上的 Office 尚不支持 RMS，因此这些设备必须使用浏览器来查看已使用 RMS 保护的文件，并且这些文件是只读的。
 
 Azure RMS 会在从 SharePoint 下载文档时为文档应用使用限制和数据加密，而不是在 SharePoint 中首次创建文档或将其上载到库中时进行此类操作。 有关如何在下载文档前对其进行保护的信息，请参阅 SharePoint 文档中的 [OneDrive for Business 和 SharePoint Online 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx) 。
 
@@ -72,6 +71,6 @@ Azure RMS 会在从 SharePoint 下载文档时为文档应用使用限制和数�
 若要查看其他应用程序和服务如何支持 Azure Rights Management，请参阅[应用程序如何支持 Azure Rights Management](applications-support.md)。
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
