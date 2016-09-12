@@ -3,7 +3,7 @@ title: "Azure Rights Management 常见问题 | Azure RMS"
 description: "Microsoft Azure Rights Management（也称为 Azure RMS）的某些常见问题。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 906e544cc3c9be6ba475502e3cdb93f2e047da7f
+ms.sourcegitcommit: 47328bc0c3cc66e99a98b7c8abc553f25d956404
+ms.openlocfilehash: e485286a0bd42bbcfb46a8aabe4d2ee66d65b4a1
 
 
 ---
@@ -121,7 +121,7 @@ Azure RMS 能够支持所有文件类型。 对于文字、图像、Microsoft Of
 有关详细信息，请参阅[从 AD RMS 迁移到 Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
 
 ## 我们很想将 BYOK 和 Azure RMS 一起使用，但却了解到这与 Exchange Online 不兼容，你有什么建议呢？
-不要让此当前限制延迟 Azure RMS 部署。 如果你具有 Exchange Online 并想要使用自带密钥 (BYOK)，我们建议你暂时以默认密钥管理模式部署 Azure RMS，即由 Microsoft 生成和管理你的密钥。 如此一来，你现在可以获取保护重要文件和电子邮件的所有好处，并可以选择以后移动到 BYOK（例如，当 Exchange Online 不支持 BYOK 时）。
+不要让此当前限制延迟 Azure RMS 部署。 如果你具有 Exchange Online 并想要使用自带密钥 (BYOK)，我们建议你暂时以默认密钥管理模式部署 Azure RMS，即由 Microsoft 生成和管理你的密钥。 如此一来，你现在可以获取保护重要文件和电子邮件的所有好处，并可以选择以后移动到 BYOK（例如，当 Exchange Online 不支持 BYOK 时）。 移动到 BYOK 时，以前受保护的文档和电子邮件将仍然能够通过使用存档的密钥进行访问。
 
 但是，如果你的公司策略要求你使用硬件安全模块 (HSM)，但这将阻止你的 Azure RMS 部署，可以另作选择，将 Azure RMS 和 BYOK 一起部署，只不过 Exchange 的 RMS 功能会减弱。 有关详细信息，请参阅[计划和实施你的 Azure Rights Management 租户密钥](../plan-design/plan-implement-tenant-key.md)中的 [BYOK 定价和限制](../plan-design/byok-price-restrictions.md)。
 
@@ -223,6 +223,6 @@ Azure 信息保护中的该功能现在可提供公共预览版。 若要试用�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

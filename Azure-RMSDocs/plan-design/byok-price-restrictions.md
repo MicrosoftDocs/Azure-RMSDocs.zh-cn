@@ -1,9 +1,9 @@
 ---
 title: "BYOK 定价和限制 | Azure RMS"
-description: "具有订阅（包含 Azure 权限管理）的组织可以在 Azure 密钥保管库中使用客户托管的密钥 (BYOK)，并记录其使用情况，无需额外付费。 但是，若要使用 Azure 密钥保管库，必须具有支持含 HSM 保护密钥的密钥保管库的 Azure 订阅。 在 Azure 密钥保管库中使用密钥会按月产生费用。 有关详细信息，请参阅 Azure 密钥保管库定价页。"
+description: "了解结合使用客户管理密钥（称为“自带密钥”或 BYOK）与 Azure RMS 时的限制。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 8505032a2a12f84c245e834e71d0b7b0d12e894f
+ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
+ms.openlocfilehash: d704f3d9357993bdb01a38cda6f434ab1583b627
 
 
 ---

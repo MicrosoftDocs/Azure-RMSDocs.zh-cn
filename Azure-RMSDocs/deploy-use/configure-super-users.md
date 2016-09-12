@@ -1,9 +1,9 @@
 ---
 title: "为 Azure Rights Management 和发现服务或数据恢复配置超级用户 | Azure RMS"
-description: "Microsoft (Azure RMS) 的超级用户功能确保已获授权的用户与服务始终可以阅读和检查 Azure RMS 为你的组织保护的数据。 如有需要，超级用户可以删除保护，或者更改以前应用的保护。 超级用户始终对组织的 RMS 租户授予的所有使用许可证拥有完整所有者权限。 这种功能有时称为“数据推理”，是保持对组织数据进行控制的关键所在。"
+description: "了解并实施 Microsoft Azure RMS 的超级用户功能，以便已获授权的用户与服务始终可以阅读和检查 Azure RMS 为你的组织保护的数据。 这种功能有时称为“数据推理”，是保持对组织数据进行控制的关键所在。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 32da3f280b7dc8fa0655ae65d904864d80b9a035
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: ac0d2c991bdd13c31c46a9579ac1a6d2150557b6
 
 
 ---

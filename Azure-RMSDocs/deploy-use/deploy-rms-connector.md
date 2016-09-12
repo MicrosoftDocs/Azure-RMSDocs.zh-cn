@@ -1,9 +1,9 @@
 ---
 title: "部署 Azure Rights Management 连接器 | Azure RMS"
-description: "使用以下信息可以了解 Azure Rights Management (RMS) 连接器，以及如何使用该连接器提供信息保护，包括保护使用 Microsoft Exchange Server、Microsoft SharePoint Server 或文件服务器（运行 Windows Server 并使用文件服务器资源管理器的文件分类基础结构 (FCI) 功能）的现有本地部署。"
+description: "有关部署 Azure Rights Management (RMS) 连接器，以及如何使用该连接器提供信息保护，包括保护使用 Microsoft Exchange Server、Microsoft SharePoint Server 或文件服务器（运行 Windows Server 和文件分类基础结构 (FCI)）的现有本地部署的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 003dcc6a000d303fc42204d61145cf067dc16d32
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 7569a53f035e3333ee7ee00cb83b83b3126a6eb1
 
 
 ---
@@ -22,13 +22,15 @@ ms.openlocfilehash: 003dcc6a000d303fc42204d61145cf067dc16d32
 
 >*适用于：Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
 
-使用以下信息可以了解 Azure Rights Management (RMS) 连接器，以及如何使用该连接器提供信息保护，包括保护使用 Microsoft Exchange Server、Microsoft SharePoint Server 或文件服务器（运行 Windows Server 并使用文件服务器资源管理器的文件分类基础结构 (FCI) 功能）的现有本地部署。
+使用此信息和说明可部署 Azure Rights Management (RMS) 连接器。 该连接器提供数据保护，包括保护使用 Microsoft Exchange Server、Microsoft SharePoint Server 或文件服务器（运行 Windows Server 和文件分类基础结构 (FCI)）的现有本地部署。
 
 > [!TIP]
 > 有关带屏幕截图的高级示例方案，请参阅[运行中的 Azure RMS ](../understand-explore/what-admins-users-see.md) 文章中的[自动保护运行 Windows Server 和文件分类基础结构的文件服务器上的文件](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure)部分。
 
 ## Microsoft 权限管理连接器概述
-借助 Microsoft Rights Management (RMS) 连接器，你可以迅速让现有本地服务器将信息权限管理 (IRM) 功能用于基于云的 Microsoft Rights Management 服务 (Azure RMS)。 使用此功能，IT 部门和用户能够轻松地保护组织内部和外部的文档和图片，既无需安装其他基础结构，也无需建立与其他组织的信任关系。 你可以在混合方案中使用此连接器，即使你的一些用户连接到了在线服务。 例如，一些用户的邮箱使用 Exchange Online，一些用户的邮箱使用 Exchange Server。 安装 RMS 连接器后，所有用户都可以使用 Azure RMS 保护和使用电子邮件和附件，并且信息保护在两套部署配置中无缝合作。
+借助 Microsoft Rights Management (RMS) 连接器，你可以迅速让现有本地服务器将信息权限管理 (IRM) 功能用于基于云的 Microsoft Rights Management 服务 (Azure RMS)。 使用此功能，IT 部门和用户能够轻松地保护组织内部和外部的文档和图片，既无需安装其他基础结构，也无需建立与其他组织的信任关系。 
+
+你可以在混合方案中使用此连接器，即使你的一些用户连接到了在线服务。 例如，一些用户的邮箱使用 Exchange Online，一些用户的邮箱使用 Exchange Server。 安装 RMS 连接器后，所有用户都可以使用 Azure RMS 保护和使用电子邮件和附件，并且信息保护在两套部署配置中无缝合作。
 
 RMS 连接器是一种小型化服务，你可将其安装在本地，也可以安装在运行 Windows Server 2012 R2、Windows Server 2012 或 Windows Server 2008 R2 的服务器上。 除了在物理计算机上运行连接器之外，你也可以在虚拟机（包括 Azure IaaS VM）上运行它。 在你安装和配置连接器之后，它将充当本地服务器和云服务之间的通信接口（一种中继）。
 
@@ -36,7 +38,7 @@ RMS 连接器是一种小型化服务，你可将其安装在本地，也可以�
 
 ![RMS 连接器体系结构概述](../media/RMS_connector.png)
 
-RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server，以及运行 Windows Server 并使用文件分类基础结构来进行分类并将策略应用于文件夹内 Office 文档的文件服务器。 如果你想要通过文件分类保护所有文件类型，请勿使用 RMS 连接器，而是使用 [RMS 保护 cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
+RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server，以及运行 Windows Server 并使用文件分类基础结构来进行分类并将策略应用于文件夹内 Office 文档的文件服务器。 如果你想要通过使用文件分类基础结构保护所有文件类型，请勿使用 RMS 连接器，而是使用 [RMS 保护 cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
 
 > [!NOTE]
 > 有关这些本地服务器的受支持版本，请参阅[支持 Azure RMS 的本地服务器](..\get-started\requirements-servers.md)。

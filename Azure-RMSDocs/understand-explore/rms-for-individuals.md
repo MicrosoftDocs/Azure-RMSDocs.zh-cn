@@ -1,6 +1,6 @@
 ---
 title: "个人 RMS 和 Azure Rights Management | Azure RMS"
-description: "个人 RMS 是供组织内的用户使用的一种免费自助服务订阅，用户在下列情况下可以使用：用户收到了受 Microsoft Azure Rights Management (Azure RMS) 保护的敏感文件，但他们无法进行身份验证，因为 IT 部门不会在 Azure 中管理他们的帐户。 例如，IT 部门没有 Office 365 或不使用 Azure 服务。"
+description: "有关个人 RMS 的信息，此 RMS 是供组织内的用户使用的一种免费自助服务订阅，用户在下列情况下可以使用：用户收到了受 Microsoft Azure Rights Management (Azure RMS) 保护的敏感文件，但这些用户无法进行身份验证，因为 IT 部门不会在 Azure 中管理他们的帐户。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/24/2016
@@ -12,8 +12,8 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 2e80c1e02e47d07678b38f6d6cb229a9db8307d4
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: 52a76105b182c7fe6aa9a648d1a5d7ae4e4a1a20
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 2e80c1e02e47d07678b38f6d6cb229a9db8307d4
 
 >*适用于：Azure Rights Management*
 
-个人 RMS 是供组织内的用户使用的一种免费自助服务订阅，用户在下列情况下可以使用：用户收到了受 Microsoft Azure Rights Management (Azure RMS) 保护的敏感文件，但他们无法进行身份验证，因为 IT 部门不会在 Azure 中管理他们的帐户。 例如，IT 部门没有 Office 365 或不使用 Azure 服务。
+个人 RMS 是供组织内的用户使用的一种免费自助服务订阅，用户在下列情况下可以使用：用户收到了受 Microsoft Azure Rights Management (Azure RMS) 保护的敏感文件，但这些用户无法进行身份验证，因为 IT 部门不会在 Azure 中管理他们的帐户。 例如，IT 部门没有 Office 365 或不使用 Azure 服务。
 
 这些用户可以注册免费的工作或学校帐户来使用 Azure RMS，以及下载并安装 Rights Management 共享应用程序。 因此，这些用户现在可以进行身份验证以证明他们就是接收受保护文件的人，然后在计算机或移动设备上读取受保护文件。
 

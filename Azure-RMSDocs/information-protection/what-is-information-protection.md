@@ -1,6 +1,6 @@
 ---
 title: "什么是 Azure 信息保护？ | Azure 权限管理"
-description: "Azure 信息保护服务概述，现在为预览版"
+description: "Azure 信息保护服务概述，现在为预览版。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/29/2016
@@ -10,8 +10,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 95f6467b5181184cf0bb402a6ad450c3a1780a52
+ms.sourcegitcommit: da0145444a7d0abb6407ed2ccbb581d4dcdd10d6
+ms.openlocfilehash: aea4b5224c5489aab89695cc70b65f17aa22bd72
 
 
 ---

@@ -1,9 +1,9 @@
 ---
 title: "如何发现用户是否已注册个人 RMS | Azure RMS"
-description: "作为管理员，你如何知道用户是否注册了个人 RMS？ 你可以使用任意一种方法，或者结合使用多种方法。"
+description: "作为管理员，你如何知道用户是否注册了个人 RMS？ 你可能会分别或结合使用本文所述的任何方法。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: dc8c0a69078ffa3be87a5fb02bf86d9afe2dc27e
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: fb9331686f5b04ba7aea8653c412127fd6913033
 
 
 ---

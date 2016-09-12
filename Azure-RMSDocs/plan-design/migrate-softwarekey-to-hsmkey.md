@@ -1,9 +1,9 @@
 ---
 title: "步骤 2&colon; 软件保护密钥到 HSM 保护密钥的迁移 | Azure RMS"
-description: "这些说明是从 AD RMS 到 Azure 权限管理的迁移路径中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且你希望使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure 权限管理时才适用。"
+description: "此说明是从 AD RMS 到 Azure Rights Management 的迁移路径中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且你希望使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure Rights Management 时才适用。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: e470b5b5542536e812749f77353aaf34922d4985
+ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
+ms.openlocfilehash: f4341d648b591922df93a4d2ba5e14151743fcdb
 
 
 ---

@@ -1,9 +1,9 @@
 ---
 title: "为 Azure Rights Management 配置自定义模板 | Azure RMS"
-description: "在你激活 Azure Rights Management (Azure RMS) 之后，用户就能够自动使用两个默认模板，这些模板让他们能够轻松地将策略应用于在组织中限制访问授权用户的敏感文件。 这两个模板具有以下权限策略限制。"
+description: "面向管理员提供的有关配置和管理使用权限模板的信息和说明。 模板可使用户和其他管理员轻松地将策略应用于限制授权用户访问的敏感文件。"
 author: cabailey
 manager: mbaldwin
-ms.date: 06/03/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 83db5e11a4603523d7c4a86921fbdafb5f6fbfb5
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 4f04a8b892cfb1f1ab62d1810fae172ad8bc9747
 
 
 ---

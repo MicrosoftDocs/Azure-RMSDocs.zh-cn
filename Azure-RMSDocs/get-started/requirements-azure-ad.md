@@ -1,9 +1,9 @@
 ---
 title: "Azure RMS 要求&#58;Azure AD Directory | Azure RMS"
-description: "你必须拥有 Azure AD 目录才能使用 Azure Rights Management (Azure RMS)。 你可以使用此目录的组织帐户登录 Azure 经典门户，并在该门户中进行 Rights Management 模板的配置和管理之类的操作。"
+description: "确定使用 Azure Rights Management (Azure RMS) 的 Azure AD 要求，以便用户可以成功进行身份验证。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 8083c2f7e4cfdbf65748007ae21a48a49a56599f
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: b4ac71492ba9ad883d481149a248b919973d7386
 
 
 ---

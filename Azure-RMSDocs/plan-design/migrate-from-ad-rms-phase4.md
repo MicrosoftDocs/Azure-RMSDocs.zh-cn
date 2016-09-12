@@ -1,6 +1,6 @@
 ---
 title: "从 AD RMS 迁移到 Azure Rights Management - 阶段 4 | Azure RMS"
-description: "使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 4。 这些过程涉及从 AD RMS 迁移到 Azure Rights Management 中的步骤 8-9。"
+description: "从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 4 涉及从 AD RMS 迁移到 Azure Rights Management 中的步骤 8 至 9。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
@@ -12,8 +12,8 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: dc462c4e710b2be9a1e1501fd7f003674bcf9d12
+ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
+ms.openlocfilehash: 2f9c8d47d6b2eb719659c512ec6302c998e065a6
 
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: "默认 Azure 信息保护策略 | Azure 权限管理"
-description: "使用以下信息来了解如何配置 Azure 信息保护的默认策略。 如果修改默认策略，则可以引用这些值以返回默认策略。"
+description: "了解如何配置 Azure 信息保护的默认策略。 如果修改默认策略，则可以引用这些值以返回默认策略。"
 manager: mbaldwin
-ms.date: 08/08/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 89b7a8cb0ca893d4ce29540ef054e19409bd75eb
+ms.sourcegitcommit: da0145444a7d0abb6407ed2ccbb581d4dcdd10d6
+ms.openlocfilehash: 44dd47bd73eabe73241ab331c5dee7e06c6c0bef
 
 
 ---

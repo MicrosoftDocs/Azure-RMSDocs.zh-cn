@@ -1,9 +1,9 @@
 ---
 title: "使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护 | Azure RMS"
-description: "使用本文获取相关说明和脚本，以将 Rights Management (RMS) 客户端与 RMS 保护工具配合使用，以配置文件服务器资源管理器和文件分类基础结构 (FCI)。"
+description: "有关将 Rights Management (RMS) 客户端与 RMS 保护工具配合使用，以配置文件服务器资源管理器和文件分类基础结构 (FCI) 的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 431eb994070391a78b0b8e34b1afb668f0981f0f
+ms.sourcegitcommit: b8a7a433652e76ff1069f0f0a7465483b13c065c
+ms.openlocfilehash: b350a35d44e743de94446409b1bba4256ca38728
 
 
 ---
@@ -126,7 +126,7 @@ ms.openlocfilehash: 431eb994070391a78b0b8e34b1afb668f0981f0f
 
     有关为 Windows PowerShell 脚本签名的详细信息，请参阅 PowerShell 文档库中的 [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) 。
 
-4.  将文件本地保存到将运行使用文件分类基础结构的文件资源管理器的每个文件服务器上： 例如，将文件保存到 **C:\RMS-Protection** 中。 使用 NTFS 权限保护此文件，使未经授权的用户不能修改它。
+4.  将文件本地保存到将运行使用文件分类基础结构的文件资源管理器的每个文件服务器上： 例如，将文件保存到 **C:\RMS-Protection** 中。 如果你使用不同的路径或文件夹名称，则选择不含空格的路径和文件夹。 使用 NTFS 权限保护此文件，使未经授权的用户不能修改它。
 
 现在，你可以开始配置文件服务器资源管理器。
 
@@ -302,6 +302,6 @@ ms.openlocfilehash: 431eb994070391a78b0b8e34b1afb668f0981f0f
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

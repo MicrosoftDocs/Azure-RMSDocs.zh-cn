@@ -1,9 +1,9 @@
 ---
 title: "Azure 权限管理是什么？ | Azure RMS"
-description: "对于希望在当今充满挑战的工作环境中保护自己数据的组织而言，Azure Rights Management (Azure RMS) 是其信息保护解决方案。"
+description: "对于无论存储位置如何均希望保护自己数据的组织而言，Azure Rights Management (Azure RMS) 是其信息保护解决方案。 该解决方案支持运行 Windows、Mac OS、iOS、Android 和 Windows Phone 的当今常见最终用户设备。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: f6f2b382766ea91ed463c18655efb07d206213af
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: c206da4a12cb7eb7bdd0386f47953284c96a33f3
 
 
 ---

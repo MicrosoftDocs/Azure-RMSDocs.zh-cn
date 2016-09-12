@@ -1,9 +1,9 @@
 ---
 title: "安装适用于 Azure Rights Management 的 Windows PowerShell | Azure RMS"
-description: "使用以下信息可帮助安装适用于 Microsoft Azure RMS 的 Windows PowerShell。"
+description: "有关安装适用于 Microsoft Azure RMS 的 Windows PowerShell 的说明。 此模块的名称是 AADRM。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 0f22d69387b89a590b516d3a93148fec82b23acd
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 2c8ef10490d409572efb831ec8c99437e34c2047
 
 
 ---

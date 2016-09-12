@@ -1,9 +1,9 @@
 ---
 title: "适用于 Windows 的 Rights Management 共享应用程序 | Azure RMS"
-description: "适用于 Windows 的 Rights Management 共享应用程序是一个可免费下载的应用程序，面向使用 Active Directory Rights Management Services (AD RMS) 或 Azure Rights Management (Azure RMS) 的组织，以及没有自身的信息保护基础结构，但又想要使用其他组织通过 Azure RMS 保护的内容的组织。"
+description: "适用于 Windows 的 Rights Management 共享应用程序的信息资源。 这是一个可免费下载的应用程序，面向使用 Active Directory Rights Management Services (AD RMS) 或 Azure Rights Management (Azure RMS) 的组织，以及没有自身的信息保护基础结构，但又想要使用其他组织通过 Azure RMS 保护的内容的组织。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: d0c2ee02a6de78b3f324cf174f54e0227de301ed
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: 50d1613242033ca176466b405832975d6f76aa13
 
 
 ---

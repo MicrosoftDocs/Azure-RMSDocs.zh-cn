@@ -1,9 +1,9 @@
 ---
 title: "Azure RMS 要求&#58;云订阅 | Azure RMS"
-description: "若要使用 Azure Rights Management (Azure RMS)，你的组织必须至少具有下列其中一个订阅，这些订阅可提供足够数目的用户和服务许可证来保护文件与电子邮件。 如果你的某个服务要为用户（文件或电子邮件的所有者）应用保护，则这些用户需要这些许可证之一。 只需使用（例如，阅读和编辑）此类受保护数据的用户不需要许可证。"
+description: "确定可用于在组织中部署 Azure Rights Management (Azure RMS) 的订阅。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/22/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 6a16e890-3c3e-4f47-80ca-176a34bdf8bc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 4cac0f039e69e31943bb8773d0761f7e654cc940
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 5c0597ee3882c25fd5c04fbd89990806754bda1a
 
 
 ---

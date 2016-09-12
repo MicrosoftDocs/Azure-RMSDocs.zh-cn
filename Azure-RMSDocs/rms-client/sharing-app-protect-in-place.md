@@ -1,9 +1,9 @@
 ---
 title: "通过使用 Rights Management 共享应用程序，保护设备上的文件（就地保护）| Azure RMS"
-description: "当你就地保护文件时，它将替换未受保护的原始文件。 然后，你可以将文件保留在原来位置、将其复制到其他文件夹或设备，或共享其所在的文件夹，同时该文件将仍处于受保护状态。 你还可以将受保护文件附加到电子邮件，虽然我们建议直接从文件资源管理器或 Office 应用程序通过电子邮件共享受保护文件。"
+description: "有关如何将文件安全地存储在计算机、服务器或其他存储设备上的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 55f5f9dd0dd90bfa98798b4fc0b4cb4bd3c90076
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: 1d719bcce253dea465be7250806385bca3c23a01
 
 
 ---
