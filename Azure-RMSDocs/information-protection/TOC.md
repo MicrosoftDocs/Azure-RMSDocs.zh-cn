@@ -24,8 +24,9 @@
 ### [配置可视标记](configure-policy-markings.md)
 ### [配置条件](configure-policy-classification.md)
 ## [安装客户端](info-protect-client.md)
+## [Azure 信息保护的软件许可条款](aip-software-license-terms.md)
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO1-->
 
 

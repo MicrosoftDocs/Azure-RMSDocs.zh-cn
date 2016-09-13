@@ -1,5 +1,5 @@
 ---
-title: "配置 Azure 信息保护策略 |Azure RMS"
+title: "配置 Azure 信息保护策略 |Azure 信息保护"
 description: "若要配置分类、标记和保护，必须配置 Azure 信息保护策略。"
 author: cabailey
 manager: mbaldwin
@@ -12,8 +12,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: da0145444a7d0abb6407ed2ccbb581d4dcdd10d6
-ms.openlocfilehash: e5b8054b3b5cb38adf2f5ae1d2f4f399d98f6e23
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 1dd3c09f5bf6a38eb3d82bfa3f7a756f5237eab6
 
 
 ---
@@ -80,6 +80,6 @@ Azure 的信息保护附带 [默认策略](configure-policy-default.md)(#默认�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

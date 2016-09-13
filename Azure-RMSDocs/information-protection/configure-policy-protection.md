@@ -1,5 +1,5 @@
 ---
-title: "如何配置标签以应用权限管理保护 |Azure 权限管理"
+title: "如何配置标签以应用 Rights Management 保护 | Azure 信息保护"
 description: "你可以使用权限管理服务的加密、标识和授权策略保护最敏感的文档和电子邮件，以帮助防止数据丢失。 配置标签以使用权限管理模板时，将应用此保护。"
 manager: mbaldwin
 ms.date: 08/15/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 23e62c82a38e696b0708f3b599d24f3a0f337fd8
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
 
 
 ---
@@ -57,7 +57,7 @@ ms.openlocfilehash: 23e62c82a38e696b0708f3b599d24f3a0f337fd8
     
     在大多数情况下，你将选择“Azure RMS”。 请勿选择 AD RMS（有时称为“*自留密钥*”(HYOK)），除非你已阅读并理解此配置附带的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。
     
-4. 如果选择了 Azure RMS：对于“选择 RMS 模板”，请单击下拉框，并选择想要使用此标签来保护文档和电子邮件的模板。
+4. 如果选择了 Azure RMS：对于“选择 RMS 模板”，请单击下拉框，并选择想要使用此标签来保护文档和电子邮件的模板或权限管理选项。
 
     > [!NOTE] 
     > 如果在打开“标签”边栏选项卡后创建了新模板，则关闭此边栏选项卡，并返回到步骤 2，以便从 Azure 中检索新创建的模板供你选择。
@@ -78,6 +78,6 @@ ms.openlocfilehash: 23e62c82a38e696b0708f3b599d24f3a0f337fd8
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

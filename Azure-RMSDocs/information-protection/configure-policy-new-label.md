@@ -1,5 +1,5 @@
 ---
-title: "如何创建 Azure 信息保护的新标签 | Azure 权限管理"
+title: "如何创建 Azure 信息保护的新标签 | Azure 信息保护"
 description: "尽管 Azure 信息保护附带了可以自定义的默认标签，你还可以创建用户可在信息保护栏中看到的自己的标签。"
 manager: mbaldwin
 ms.date: 08/10/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 96cbe6cbe823d2c90ec91cbf77ef7d96cc6a568c
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: b02c3e602a8178c0837104a88b360d041ecddc4d
 
 
 ---
@@ -52,6 +52,6 @@ ms.openlocfilehash: 96cbe6cbe823d2c90ec91cbf77ef7d96cc6a568c
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

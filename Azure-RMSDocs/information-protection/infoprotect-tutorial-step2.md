@@ -1,17 +1,17 @@
 ---
-title: "Azure 信息保护快速入门教程 - 步骤 2 | Azure 权限管理"
+title: "Azure 信息保护快速入门教程 - 步骤 2 | Azure 信息保护"
 description: "入门教程第 2 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/08/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 679d03c499ccdd044444c73ebef8f59b281278cd
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 
 
 ---
@@ -37,7 +37,7 @@ ms.openlocfilehash: 679d03c499ccdd044444c73ebef8f59b281278cd
     
     - 用于分类的标签：“个人”、“公共”、“内部”、“机密”和“秘密”。 阅读各个标签的工具提示以了解如何使用这些标签。 请注意，**秘密**标签有两个子标签：**所有员工**和**我的组**，这是一个类别具有子类别的一个示例。
 
-    - 在默认设置中，“内部”、“机密”和“秘密”标签都配置了可视标记（例如页脚、页眉、水印），并且这些标签都没有设置保护。 此外，由于未设置此三个全局设置，因此所有文档和电子邮件不需要有标签。没有默认标签，用户降低敏感度级别时无需提供理由。
+    - 在默认设置中，“内部”、“机密”和“秘密”标签都配置了可视标记（例如页脚、页眉、水印），并且这些标签都没有设置保护。 此外，由于未设置此三个全局设置，因此所有文档和电子邮件不需要有标签。没有默认标签，用户降低分类级别时无需提供理由。
 
     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy.png)
 
@@ -45,7 +45,7 @@ ms.openlocfilehash: 679d03c499ccdd044444c73ebef8f59b281278cd
 
 -  **选择默认标签**：将其设置为“供内部使用”。
 
-- **降低敏感度级别时用户必须提供理由**：将其设置为“开”。
+- **用户必须提供理由以设置较低分类标签、删除标签或删除保护**：将其设置为“开”。
 
 现在我们要更改一个标签**机密**：
 
@@ -97,6 +97,6 @@ ms.openlocfilehash: 679d03c499ccdd044444c73ebef8f59b281278cd
 [步骤 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
