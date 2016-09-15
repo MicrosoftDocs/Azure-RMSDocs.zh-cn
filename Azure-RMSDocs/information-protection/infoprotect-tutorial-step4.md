@@ -1,17 +1,17 @@
 ---
-title: "Azure 信息保护快速入门教程 - 步骤 4 | Azure 权限管理"
+title: "Azure 信息保护快速入门教程 - 步骤 4 | Azure 信息保护"
 description: "入门教程第 4 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 6d93723a6f7aaffec8d18cf289bff0752b53a2c9
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 2c04c749ff73050dc8a15dd984c33f700e3e6ed5
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 6d93723a6f7aaffec8d18cf289bff0752b53a2c9
 
     你将看到“敏感度”的值变为“个人”。
 
-    ![Azure 信息保护快速入门教程步骤 4 - 确认降低理由的提示](../media/confirm-lowering.png)
+    ![Azure 信息保护快速入门教程步骤 4 - 确认降低理由的提示](../media/info-protect-lower-justification.png)
 
 ### 若要完全删除分类，请执行以下操作：
 
@@ -77,6 +77,6 @@ ms.openlocfilehash: 6d93723a6f7aaffec8d18cf289bff0752b53a2c9
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

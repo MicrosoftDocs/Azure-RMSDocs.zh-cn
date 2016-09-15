@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 5340673beb2a6f2dd4acd96fd599c0b90b9991dd
+ms.sourcegitcommit: 99390fb78a9da3bef8a67c8595770a84fb9bb89a
+ms.openlocfilehash: a32bfc59dd72efbcb239845ddabfa9bd3a969127
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 5340673beb2a6f2dd4acd96fd599c0b90b9991dd
 特定于 Rights Management Services 的术语定义的集合。
 
 **弃用的算法**  
-实现较旧的内容保护方案的模式设置，特指电子食谱密码模式 (ECB)。 在此 SDK 中，该设置使你可以生成与 [AD Rights Management Services SDK](https://msdn.microsoft.com/library/windows/desktop/cc530379.aspx) 所使用的 MSDRM 库相兼容的许可证。
+实现较旧内容保护方案的模式设置，特指电子密码本密码模式 (ECB)。 在此 SDK 中，该设置使你可以生成与 [AD Rights Management Services SDK](https://msdn.microsoft.com/library/windows/desktop/cc530379.aspx) 所使用的 MSDRM 库相兼容的许可证。
 
 此设置可能会导致你的应用程序以不符合你客户的内容保护标准的方式来保护内容。
 
@@ -46,6 +46,6 @@ PFile 格式对于应用程序开发人员是透明的，因为它是按设计 M
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: "Rights Management 共享应用程序管理员指南 | Azure RMS"
-description: "如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 Rights Management 共享应用程序用户指南或适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题以外的更多技术信息，请使用以下信息。"
+description: "面向负责部署适用于 Windows 的 Microsoft Rights Management 共享应用程序的企业网络管理员的说明和信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/05/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,21 +12,21 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 9b0c608ac30e2a93b898dcc1de9ccfa4cdeedcb4
+ms.sourcegitcommit: 575d52efb788956b0a711e908a730b677e1f7f9c
+ms.openlocfilehash: 113a49586b4582ec984678df6730c6b554ff6a75
 
 
 ---
 
 
-# 权限管理共享应用程序管理员指南
+# 保护级别 – 本机和常规
 
 >*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 
 如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 [Rights Management 共享应用程序用户指南](sharing-app-user-guide.md)或[适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)以外的更多技术信息，请使用以下信息。
 
-RMS 共享应用程序最适合与 Azure RMS 配合使用，因为这种部署配置支持向另一组织中的用户发送受保护的附件，并提供电子邮件通知、文档跟踪和撤消等选项。  不过，它也能够与本地版本的 AD RMS 配合使用，只是存在一些限制。 有关 Azure RMS 和 AD RMS 支持的功能的全面比较，请参阅[比较 Azure Rights Management 和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。 如果你安装了 AD RMS 并想要迁移到 Azure RMS，请参阅 [从 AD RMS 迁移到 Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
+RMS 共享应用程序最适合与 Azure RMS 配合使用，因为这种部署配置支持向另一组织中的用户发送受保护的附件，并提供电子邮件通知、文档跟踪和撤消等选项。 不过，它也能够与本地版本的 AD RMS 配合使用，只是存在一些限制。 有关 Azure RMS 和 AD RMS 支持的功能的全面比较，请参阅[比较 Azure Rights Management 和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。 如果你安装了 AD RMS 并想要迁移到 Azure RMS，请参阅 [从 AD RMS 迁移到 Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
 
 有关 Rights Management 共享应用程序的技术概览和有关本机和通用保护、支持的文件类型、文件扩展名以及如何更改默认保护级别的信息，请参阅[《Technical overview and protection details for the Rights Management sharing application》](sharing-app-admin-guide-technical.md)（Rights Management 共享应用程序的技术概览和保护详细信息）。 
 
@@ -155,9 +155,16 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     -   对于 64 位 Windows 7：
 
-        ```
-        x64\win7\aadrmpep.exe /configureO2010
-        ```
+            pushd x64\win7
+            aadrmpep.exe /configureO2010
+            popd
+
+    -   对于 32 位 Windows 7：
+
+            pushd x86\win7
+            aadrmpep.exe /configureO2010
+            popd
+
 
 若要验证是否成功，请参阅本文中的[验证安装是否成功](#verifying-installation-success)部分。
 
@@ -395,6 +402,6 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

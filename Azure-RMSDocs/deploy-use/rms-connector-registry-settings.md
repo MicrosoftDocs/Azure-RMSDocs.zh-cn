@@ -1,9 +1,9 @@
 ---
 title: "RMS 连接器的注册表设置 | Azure RMS"
-description: "只有当你需要在服务器上手动添加或检查将运行 Exchange、SharePoint 或 Windows Server 的服务器配置为使用 RMS 连接器的注册表设置时，才使用以下部分的表格。 配置这些服务器的推荐方法是使用适用于 Microsoft RMS 连接器的服务器配置工具。"
+description: "有关使用 RMS 连接器在服务器上进行注册表设置的信息。 配置这些设置的推荐方法是使用适用于 Microsoft RMS 连接器的服务器配置工具。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 49fff7c2e0c06d26751136b681022f221f80d6cd
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 5ff109543685049be5e89a12ea037de941736547
 
 
 ---

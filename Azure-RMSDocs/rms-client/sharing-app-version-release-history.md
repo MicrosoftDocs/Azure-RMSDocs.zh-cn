@@ -1,9 +1,9 @@
 ---
 title: "Rights Management 共享应用程序 &colon; 版本发行历史记录 | Azure RMS"
-description: "Rights Management 团队定期更新 Rights Management 共享应用程序，以提供修补程序和新功能。 使用以下信息查看版本中的新增内容或更改的内容。 最新版本会最先列出。"
+description: "查看适用于 Windows 的 Rights Management 共享应用程序版本中新增或更改的内容。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 060324fd6f0a87839ff267b540b9e5024498c242
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: 361fde97756c24fa46df6eda16d7506b4b8aaa3a
 
 
 ---

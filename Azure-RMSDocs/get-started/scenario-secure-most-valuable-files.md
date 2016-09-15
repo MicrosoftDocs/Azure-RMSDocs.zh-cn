@@ -1,9 +1,9 @@
 ---
 title: "方案 - 保护你最重要的（几个）文件 | Azure RMS"
-description: "此方案和支持性的用户文档使用 Azure Rights Management 手动并自定义保护你已标识为最重要的几个文件，这保证了对文件提供最高级别的保护以阻止未经授权的访问。 通常只有少数人可以访问这些文件。 例如，公司招牌食物产品的食谱说明，或者在指定日期前不允许公开的收购计划。"
+description: "此方案和支持性的用户文档使用 Azure Rights Management 手动并自定义保护你已标识为最重要的几个文件，这保证了对文件提供最高级别的保护以阻止未经授权的访问。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 5db916bc9eef927dc7d6a628808e9af79363e480
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
 
 
 ---

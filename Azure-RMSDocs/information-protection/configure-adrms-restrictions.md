@@ -1,16 +1,16 @@
 ---
 title: "HYOK 限制 | Azure 权限管理"
-description: "当你保护最敏感的文档和电子邮件时，通常会为此应用 Azure 权限管理保护，以便从以下优势中受益。"
+description: "如果选择具有 Azure 信息保护的 AD RMS 保护，请确定限制、先决条件和建议。 此解决方案有时也称为“自留密钥”(HYOK)。"
 manager: mbaldwin
-ms.date: 08/18/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: cb12abb4dfe96135317facf4284c0eae7ef38196
+ms.sourcegitcommit: da0145444a7d0abb6407ed2ccbb581d4dcdd10d6
+ms.openlocfilehash: 0d6a5013f953931a6bffa28e1c3c1f282a2c668b
 
 
 ---

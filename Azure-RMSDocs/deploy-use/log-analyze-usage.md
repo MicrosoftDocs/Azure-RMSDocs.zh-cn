@@ -1,9 +1,9 @@
 ---
 title: "记录和分析 Azure Rights Management 使用情况 | Azure RMS"
-description: "本主题中的信息可用于帮助你了解如何使用 Azure Rights Management (Azure RMS) 的使用日志记录功能。 Azure Rights Management 服务能够记录它为你组织发出的所有请求，包括来自用户的请求、你组织中的 Rights Management 管理员执行的操作、Microsoft 操作人员为支持 Azure Rights Management 部署而执行的操作。"
+description: "有关如何使用 Azure Rights Management (Azure RMS) 的使用日志记录功能的信息和说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
-ms.openlocfilehash: 868656f84f39db20f0aee8d148b00af15849fda5
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: c1727f1a5d6747977da7113b6dc0ac37ebefe386
 
 
 ---

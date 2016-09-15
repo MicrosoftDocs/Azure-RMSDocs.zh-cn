@@ -1,9 +1,9 @@
 ---
 title: "下载并安装 Rights Management 共享应用程序 | Azure RMS"
-description: "你无需是本地管理员就能安装 RMS 共享应用程序。 但是，如果你不是本地管理员而使用 Office 2010，就会有一些限制。 有关详细信息，请参阅本页上的“如果你不是本地管理员且使用 Office 2010”部分。"
+description: "有关以交互方式安装适用于 Windows 的 RMS 共享应用程序，以便可以安全地与他人共享文档的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: bda09df1ff51565a4bbf501161c7a4f8cdbbfe22
+ms.sourcegitcommit: 44541b6fe2567d23174b26cb42fec0731f5d3f58
+ms.openlocfilehash: b01896dc49a6c581427393f9e3fc21dbbd235238
 
 
 ---

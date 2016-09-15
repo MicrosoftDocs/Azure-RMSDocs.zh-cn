@@ -1,6 +1,6 @@
 ---
 title: "Windows 和移动平台的 RMS 共享应用程序 | Azure RMS"
-description: "RMS 共享应用程序是支持 Office 2010 所必需的免费可下载应用程序，但我们也建议将其用于 Windows 计算机、Mac 计算机和移动设备。 它的一大优点是能够为无法以本机方式支持 Rights Management 的应用程序和文件提供通用保护，这意味着所有文件都能得到保护。"
+description: "RMS 共享应用程序如何作为支持 Office 2010 所必需的免费可下载应用程序来支持 Azure RMS，但我们也建议将其用于 Windows 计算机、Mac 计算机和移动设备。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/24/2016
@@ -12,8 +12,8 @@ ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 6304c5c29e2dab176fb9d5a617e1467af00ab504
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: 21bdcae9432e2edbecaa6eafb35ccefbd3ca372c
 
 
 ---

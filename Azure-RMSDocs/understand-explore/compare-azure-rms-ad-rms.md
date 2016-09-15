@@ -3,7 +3,7 @@ title: "比较 Azure Rights Management 和 AD RMS | Azure RMS"
 description: "如果你了解或以前部署过 Active Directory Rights Management Services (AD RMS)，你可能想知道 Azure RMS 在功能和要求方面与它相比有何差别。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 7dd888f28e5f4d307a1f96203516d3b058541ba5
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: 2de89be11a45e3d1e53afc667a6cf65fcb69c690
 
 
 ---

@@ -1,9 +1,9 @@
 ---
 title: "方案 - 与另一组织中的用户共享 Office 文件 | Azure RMS"
-description: "此方案和支持性的用户文档使用 Azure Rights Management，以便用户可以安全地通过电子邮件将 Office 文件发送给另一组织中的用户。 例如，Office 文件可能是 Word 文档、Excel 电子表格或 PowerPoint 演示文稿，其中包含合作伙伴的价目表信息、分销商的产品列表，或潜在客户的交货时间行列表。 如果用户遵照了指令，电子邮件中附加的文件将受 Azure Rights Management 保护。"
+description: "此方案和支持性的用户文档使用 Azure Rights Management，以便用户可以安全地通过电子邮件将 Office 文件发送给另一组织中的用户。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 9615e41666a08a1d66f4e0dbdedb06f02a8efd3e
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 
 ---

@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: 0dcaf13afb1802c2301c9516b2602aa2f6b7ce7e
+ms.sourcegitcommit: 4141cadf67dc479116c802f9340ba222140194a3
+ms.openlocfilehash: 2d965086fa44d98e8236a6bbd2515fb3afac3f05
 
 
 ---
@@ -26,10 +26,12 @@ ms.openlocfilehash: 0dcaf13afb1802c2301c9516b2602aa2f6b7ce7e
 
 ## 简介
 
-本主题中的指南以示例应用程序 IPCHelloWorld 为基础，可帮助你熟悉启用权限的应用程序的基本概念和代码。 你可以从 Microsoft Connect 下载完整的 IPCHellowWorld 示例应用程序 [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)。
+本主题中的指南以示例应用程序 *IPCHelloWorld* 为基础，可帮助你熟悉启用权限的应用程序的基本概念和代码。 *IPCHelloWorld* 项目已针对 Rights Management Services SDK 2.1 进行了配置。 有关如何配置新项目以使用 RMS SDK 2.1 的信息，请参阅 [配置 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)。
 
-> [!Note] 
-> IPCHelloWorld 项目已针对 Rights Management Services SDK 2.1 进行了配置。 有关如何配置新项目以使用 RMS SDK 2.1 的信息，请参阅 [配置 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)。
+你可以从 Microsoft Connect 下载完整的 *IPCHellowWorld* 示例应用程序 [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)。
+> [!Note]
+> 如果访问 Microsoft Connect 时收到错误，可能因为还未注册。 若要注册：请转到 [Connect](http://connect.microsoft.com)，使用 Microsoft 帐户登录 > Directory > 搜索 Rights Management Services > 加入。
+
 
 ## 加载 MSIPC.dll
 
@@ -185,6 +187,6 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: "Azure RMS 的工作原理 | Azure RMS"
-description: "了解 Azure RMS 工作原理时，一个要点是权限管理服务，另外，在信息保护过程中，Microsoft 不要查看或存储你的数据。 要保护的信息永远不会发送或存储到 Azure 中，除非你显式将其存储在 Azure 中，或者使用其他可用于在 Azure 中存储数据的云服务。 Azure RMS 只会在文档中保存数据，除已获授权的用户和服务以外，其他任何人都无法读取该文档。"
+description: "详细解说 Azure RMS 的工作原理、它使用的加密控件以及此过程工作原理的分步图示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 06/02/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 527af70532f390330fdb65bc27b04bb366289748
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: 5fa410e2c2b84a3626cb06a85dc2511b17e085ae
 
 
 ---

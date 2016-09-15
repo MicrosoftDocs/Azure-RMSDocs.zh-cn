@@ -1,9 +1,9 @@
 ---
 title: "客户托管 - 租户密钥生命周期操作 | Azure RMS"
-description: "如果你自己管理 Azure Rights Management 租户密钥（自带密钥方案，简称 BYOK），请阅读以下部分，获取有关此拓扑的相关生命周期操作的详细信息。"
+description: "有关当你自己管理 Azure Rights Management 租户密钥（自带密钥方案，简称 BYOK）时相关生命周期操作的信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 500f9c0e4aff34aaf7b6836643a777a1cb1edc91
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: d3a798f14805fd8ff8377013120a33ae3642bfc3
 
 
 ---

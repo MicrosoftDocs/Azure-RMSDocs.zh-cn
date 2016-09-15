@@ -3,15 +3,15 @@ title: "Azure 信息保护快速入门教程 - 步骤 3 | Azure 权限管理"
 description: "入门教程第 3 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 320cd688ba5aabcb966009907d568033149953e3
+ms.sourcegitcommit: ba6887a5c9bab18867d07cfc98e8416bf102c211
+ms.openlocfilehash: 83ee0eef8262cc1fe4d18e9d183509847adddd97
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 320cd688ba5aabcb966009907d568033149953e3
 
 1. 在已安装 Office 的 PC 上（当前未打开 Word），从 Microsoft 下载中心[下载 Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)。 
 
-2. 运行 **AZInfoProtection.exe** 并按照提示安装客户端。
+2. 运行 **AzInfoProtection_v233.exe** 并按照提示安装客户端。
 
     在本教程中，无论是否选择安装演示策略都没有关系，因为将从 Azure 下载刚配置的策略，如果安装了演示策略，则将替换它。 但是，如果只想体验默认标签而无需连接到 Azure 信息保护，则可以使用演示策略选项。 
 
@@ -52,6 +52,6 @@ ms.openlocfilehash: 320cd688ba5aabcb966009907d568033149953e3
 [步骤 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

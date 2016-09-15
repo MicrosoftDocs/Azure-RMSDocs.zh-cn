@@ -1,9 +1,9 @@
 ---
 title: "帮助用户使用 Azure Rights Management 保护文件 | Azure RMS"
-description: "在你为组织部署和配置 Azure Rights Management (Azure RMS) 之后，请为用户、管理员和你的技术支持提供以下帮助和指导。"
+description: "此信息可帮助你在为组织部署和配置 Azure Rights Management (Azure RMS) 之后，为用户、管理员和技术支持提供指导。"
 author: cabailey
 manager: mbaldwin
-ms.date: 06/09/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 329b9cb2fd6507638924f836eb6dffe8ffca43d1
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 0ff8282d01957af1a0dd59673ae2e94a6d879f39
 
 
 ---
