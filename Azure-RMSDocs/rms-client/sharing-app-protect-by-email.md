@@ -1,9 +1,9 @@
 ---
 title: "使用 Rights Management 共享应用程序，保护你通过电子邮件共享的文件 | Azure RMS"
-description: "在保护你通过电子邮件共享的文件时，将会创建原始文件的新版本。 原始文件仍处于未受保护状态，而新版本已受保护并自动附加到你之后要发送的电子邮件中。"
+description: "有关如何通过电子邮件安全共享文档的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 9becbab6612e49e285774e2e8742d6448b11a041
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: ff5dd6afaa454c20f35c237e94947dcec9e737f6
 
 
 ---

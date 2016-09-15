@@ -1,5 +1,5 @@
 ---
-title: "如何配置 Azure 信息保护的全局策略设置 | Azure 权限管理"
+title: "如何配置 Azure 信息保护的全局策略设置 | Azure 信息保护"
 description: "Azure 信息保护策略中有 3 个设置适用于所有用户、所有设备。"
 manager: mbaldwin
 ms.date: 08/08/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: c48f5488e49a54b970f76012e0f2f17fe4158691
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 872ea7da6f3b72a355a73c8b0589beda86ded20d
 
 
 ---
@@ -42,7 +42,7 @@ Azure 信息保护策略中有 3 个设置适用于所有用户、所有设备�
 
     - **选择默认标签**：当设置此选项时，选择标签以分配给没有标签的文档和电子邮件。 如果具有子标签，不能将标签设置为默认标签。 
 
-    - **在降低的敏感度级别时，用户必须提供理由**：此选项设置为“**打开**”且用户将现有文档或电子邮件的标签更改为具有较低敏感度级别的标签时（例如，从“**秘密**”到“**公共**”），系统会提示用户提供此操作的说明。 例如，用户可能会解释该文档不再包含敏感信息。 在其本地 Windows 事件日志中记录他们的操作和理由：**应用程序** > **Microsoft Azure 信息保护**。  
+    - **用户必须提供理由以设置较低分类标签、删除标签或删除保护**：此选项设置为“开”时，如果用户执行下列任一操作（例如，将“秘密”更改为“个人”，则系统会提示用户提供此操作的理由。 例如，用户可能会解释该文档不再包含敏感信息。 在其本地 Windows 事件日志中记录他们的操作和理由：**应用程序** > **Microsoft Azure 信息保护**。  
 
     ![Azure 信息保护提示新分类是否较低](../media/info-protect-lower-justification.png)
 
@@ -67,6 +67,6 @@ Azure 信息保护策略中有 3 个设置适用于所有用户、所有设备�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

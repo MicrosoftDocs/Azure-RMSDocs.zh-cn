@@ -1,9 +1,9 @@
 ---
 title: "监视 Azure Rights Management 连接器 | Azure RMS"
-description: "安装并配置 RMS 连接器后，你可以使用以下方法和信息以帮助你监视连接器和 Azure RMS 组织的使用。"
+description: "此信息可帮助你监视连接器以及组织对 Azure RMS 的使用情况。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/08/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 11079a491cf9feade86713ef02ccdce79019577a
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 97b8107e1529271376c21837b3ac357dba9235d2
 
 
 ---

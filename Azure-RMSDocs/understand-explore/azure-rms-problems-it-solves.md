@@ -1,9 +1,9 @@
 ---
 title: "Azure RMS 解决了哪些问题 | Azure RMS"
-description: "使用下表了解组织可能提出的业务要求或遇到的业务问题，以及 Azure RMS 是如何满足这些要求或解决这些问题的。"
+description: "确定组织可能提出的业务要求或遇到的业务问题，并了解 Azure RMS 是如何满足这些要求或解决这些问题的。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
-ms.openlocfilehash: 7aec5c26acb78cd85eee614a603745f3ee5938a2
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: bc25d2ee7224983d70a23177666c1a72b3db1a17
 
 
 ---

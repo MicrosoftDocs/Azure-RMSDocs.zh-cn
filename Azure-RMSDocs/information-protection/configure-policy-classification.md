@@ -2,15 +2,15 @@
 title: "如何配置 Azure 信息保护的自动和建议分类的条件 | Azure 权限管理"
 description: "在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。"
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 0e6baca43c7a4f2e91f45222f5f6f233b3eeb438
+ms.sourcegitcommit: 87069b73e5f8959955b9967070bd3bcb5e7dc196
+ms.openlocfilehash: 357b012bd8679d7e24bfe3ae40c3160e4b69c01f
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 0e6baca43c7a4f2e91f45222f5f6f233b3eeb438
  
 - 保存文件时，将建议的分类应用于 Word、Excel 和 PowerPoint。
 
-配置条件时，可以使用预定义的模式，如“信用卡号”或“美国身份证号”。 或者，你可以定义自定义字符串或模式作为自动分类的条件。 有关条件的详细信息，请参阅 [内置条件的相关信息](#information-about-the-built-in-conditions)(#内置条件的相关信息) 部分。
+配置条件时，可以使用预定义的模式，如“信用卡号”或“美国身份证号”。 或者，你可以定义自定义字符串或模式作为自动分类的条件。 这些条件适用于文档和电子邮件中的正文文本和页眉及页脚。 有关条件的详细信息，请参阅 [内置条件的相关信息](#information-about-the-built-in-conditions)(#内置条件的相关信息) 部分。
 
 它们应用于多个标签时，将如何计算多个条件：
 
@@ -224,6 +224,6 @@ ms.openlocfilehash: 0e6baca43c7a4f2e91f45222f5f6f233b3eeb438
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

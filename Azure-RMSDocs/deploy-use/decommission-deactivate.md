@@ -1,9 +1,9 @@
 ---
 title: "解除 Azure Rights Management 授权和停用 Azure Rights Management | Azure RMS"
-description: "通过使用 (Azure RMS)，你可以始终控制你的组织是否要保护内容；如果你决定不再想要使用此信息保护解决方案，我们可以保证你仍然可以访问之前受保护的内容。 如果你不需要继续访问之前受保护的内容，仅需停用该服务，让 Azure Rights Management 订阅过期即可。 例如，这适用于完成测试后再在生产环境中部署它的情况。"
+description: "有关决定不再想要使用此信息保护解决方案的信息和说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 40e4997f67a078ec781f1e7800599554858777a8
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 275cc46ba34eae246ccc52682073f1f4f90cb8a7
 
 
 ---

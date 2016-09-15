@@ -3,7 +3,7 @@ title: "Azure 信息保护预览版常见问题 | Azure 信息保护"
 description: "对 Azure 信息保护的预览版有疑问？ 请查看此处是否有答案。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/22/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 55d56786150d38b36ae8185c4a7ac4c8a5c51ba4
+ms.sourcegitcommit: 0a66851beeedecc3bda92f840f06b56f40c0c4c1
+ms.openlocfilehash: 427b783b41d8977ff07b0fbc929bf0d7afd0721d
 
 
 ---
@@ -82,7 +82,7 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 
 ## 计算机如何从 Azure 信息保护中获取策略信息，以及这些信息多长时间刷新一次？
 
-每次用户打开 Office 应用程序时，Azure 信息保护客户端就会检查是否存在更新版本的 Azure 信息保护策略。 如果有更新版本，客户端将使用 HTTPS 链接来下载它以保护数据。 
+每次用户打开 Office 应用程序时，Azure 信息保护客户端就会检查是否存在更新版本的 Azure 信息保护策略。 此外，Office 应用程序每隔 24 小时将自动进行检查。 如果有更新版本，客户端将使用 HTTPS 链接来下载它以保护数据。 
 
 如果在发布新的 Azure 信息保护策略时加载 Office 应用程序的多个实例，必须关闭所有实例以获取策略的最新版本。 例如，你有两个 Word 文档打开，并且想要在一个文档中测试更新后的 Azure 信息保护策略：关闭两个 Word 文档，并重新打开你想要使用最新策略的文档。
 
@@ -129,7 +129,7 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 
 ## 我是否可以提示用户说明他们更改分类级别的原因？
 
-是。 若要确保用户说明他们更改分类的原因，请在 Azure 门户中，将选项“当降低敏感度级别时用户必须提供理由”设为“开”。 当他们这样做时，将在其本地 Windows 事件日志中记录他们的操作和理由：“应用程序” > “Microsoft Azure 信息保护”。
+是。 若要确保用户说明他们更改分类的原因，请在 Azure 门户中，将选项“用户必须提供理由以设置较低分类标签、删除标签或删除保护”设为“开”。 当他们这样做时，将在其本地 Windows 事件日志中记录他们的操作和理由：“应用程序” > “Microsoft Azure 信息保护”。
 
 ## 如何自动保护已分类的内容？
 
@@ -187,6 +187,6 @@ Azure 信息保护将 Azure Active Directory 用于用户身份验证。
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

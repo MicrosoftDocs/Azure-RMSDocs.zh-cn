@@ -1,9 +1,9 @@
 ---
 title: "查看和使用受 Rights Management 保护的文件 | Azure RMS"
-description: "如果计算机安装了权限管理 (RMS) 共享应用程序，你只需双击受保护文件即可查看它。 此文件也许是电子邮件中的附件，或者你可能在使用文件资源管理器时看到它。"
+description: "有关查看和使用受保护文件（需要安装 Rights Management (RMS) 共享应用程序）的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 78810a639c2360707b628423bb68b2f05e8c5b56
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: 8d93968c51ad1037e5424df4ee9b724e0c1f89a2
 
 
 ---

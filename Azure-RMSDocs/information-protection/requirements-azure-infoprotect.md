@@ -1,9 +1,9 @@
 ---
 title: "Azure 信息保护的要求 | Azure RMS"
-description: "若要评估 Azure 信息保护的预览版本，请确保具备以下先决条件。"
+description: "确定评估 Azure 信息保护的预览版本时需要的先决条件。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/22/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: aa4353e5-c5b0-47f6-a6f9-87d13e8f075f
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: cc1ec2b2544ac368821155b7e0c3c0e179982d1d
+ms.sourcegitcommit: ba6887a5c9bab18867d07cfc98e8416bf102c211
+ms.openlocfilehash: 85bed6554140525fabc1ab863e3196ac5a37366b
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: cc1ec2b2544ac368821155b7e0c3c0e179982d1d
 |Azure AD 目录|你的组织必须具有 Azure AD 目录，以支持 Azure RMS 和 Azure 信息保护的用户身份验证。 此外，如果你希望使用本地目录 (AD DS) 中的用户帐户，则还必须配置目录集成。<br /><br />具有了所需客户端软件并正确配置了 MFA 支持基础结构后，Azure RMS 将支持多因素身份验证 (MFA)。<br /><br />有关详细信息，请参阅[《Azure AD directory》](../get-started/requirements-azure-ad.md)（Azure AD 目录），其中的 Azure RMS 的信息也适用于 Azure 信息保护。|
 |客户端设备|此预览版支持以下客户端设备：<br /><br />- Windows 10（x86、x64）<br /><br />- Windows 8.1（x86、x64）<br /><br />- Windows 8（x86、x64）<br /><br />- Windows 7 Service Pack 1（x86、x64）<br /><br />当你保护数据时，支持 Azure 权限管理的同一设备（Windows、Mac、iOS、Android）可以使用它。 有关这些设备和支持的版本的详细信息，请参阅[《Azure RMS requirements: Client devices that support Azure RMS》](../get-started/requirements-client-devices.md)（Azure RMS 要求：支持 Azure RMS 的客户端设备）。|
 |应用程序|对于预览版和正式发布版 (GA)，Azure 信息保护支持对使用以下 Office 套件中的 **Word**、**Excel**、**PowerPoint** 和 **Outlook** 等 Office 应用创建的文件和电子邮件设置标签和进行保护：<br /><br />- Office Professional Plus 2016<br /><br />- Office Professional Plus 2013 Service Pack 1<br /><br />- Office Professional Plus 2010<br /><br />在正式发布之后，在[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)上查找有关 Azure 信息保护何时支持其他文件类型（例如 PDF、音频、视频和图像文件）的公告。|
-|支持连接到 Internet 及所依赖的云服务的基础结构|如果你有必须配置为允许特定连接的防火墙或类似中介网络设备，请参阅以下 Office 文章的 [Office 365 portal and shared](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_Portal-identity)（Office 365 门户和共享）部分的有关 **Azure 权限管理 (RMS)** 的信息：[《Office 365 URLs and IP address ranges》](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)（Office 365 URL 和 IP 地址范围）。<br /><br />此外：<br /><br />- 允许 TCP 443 上的 HTTPS 流量流入 **informationprotection.azure.com**。<br /><br />- 不要终止 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 <br /><br />- 如果你使用的 Web 代理要求身份验证，你必须将其配置为将集成 Windows 身份验证与用户的 Active Directory 登录凭据配合使用。|
+|支持连接到 Internet 及所依赖的云服务的基础结构|如果你有必须配置为允许特定连接的防火墙或类似中介网络设备，请参阅以下 Office 文章的 [Office 365 portal and shared](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_Portal-identity)（Office 365 门户和共享）部分的有关 **Azure 权限管理 (RMS)** 的信息：[《Office 365 URLs and IP address ranges》](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)（Office 365 URL 和 IP 地址范围）。<br /><br />此外：<br /><br />- 允许 TCP 443 上的 HTTPS 流量流入 **api.informationprotection.azure.com**。<br /><br />- 不要终止 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 <br /><br />- 如果你使用的 Web 代理要求身份验证，你必须将其配置为将集成 Windows 身份验证与用户的 Active Directory 登录凭据配合使用。|
 
 ## 后续步骤
 
@@ -41,6 +41,6 @@ ms.openlocfilehash: cc1ec2b2544ac368821155b7e0c3c0e179982d1d
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

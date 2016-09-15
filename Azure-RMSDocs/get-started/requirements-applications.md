@@ -1,9 +1,9 @@
 ---
 title: "Azure RMS 要求&#58;应用程序 | Azure RMS"
-description: "使用下表确定以本机方式支持 Azure RMS 的应用程序，这意味着 RMS 通过使用 RMS API 紧密集成到这些应用程序中以支持使用限制。 这些应用程序也称为“启用 RMS 型”应用程序。"
+description: "确定以本机方式支持 Azure RMS 的应用程序，这意味着 RMS 通过使用 RMS API 紧密集成到这些应用程序中，以支持使用限制。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/19/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: d3408f954381978287852dd74a38c5903f583dda
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 14eec6f0ad9c1b9abaeff1c70cfbcb66011397a0
 
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: "为 Azure Rights Management 配置使用权限 | Azure RMS"
-description: "在文件或电子邮件上使用 Azure Rights Management (Azure RMS) 设置保护并且不使用模板时，你必须自己配置使用权限。 此外，当为 Azure RMS 配置自定义模板时，可以选择随后在用户、管理员或配置的服务选择模板时会自动应用的使用权限。"
+description: "了解和确定在使用 Azure Rights Management (Azure RMS) 保护文件或电子邮件时使用的特定权限。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/25/2016
@@ -12,8 +12,8 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e1f1bef9ce87dcffb8d3da920f19198aa253e8e6
-ms.openlocfilehash: bbfb00822a03609f5b81808e1e1c4cad8c02be0b
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: ab1b2f652d34183e1d95fd0a387abb10c3aff9b1
 
 
 ---

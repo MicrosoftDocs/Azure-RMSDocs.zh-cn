@@ -1,9 +1,9 @@
 ---
 title: "Rights Management 共享应用程序技术概述 | Azure RMS"
-description: "Microsoft Rights Management 共享应用程序是一个可选且可下载的适用于 Microsoft Windows 和其他平台的应用程序，它提供以下功能。"
+description: "面向负责部署适用于 Windows 的 RMS 共享应用程序的企业网络管理员提供的技术详细信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: d5e1c7969d2125c4f66d6dcea3bde0c81a7de1f3
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: 2a3640590ca2729da71e847c03823719e92bcb0f
 
 
 ---
@@ -55,7 +55,7 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 ## 支持的文件类型和文件扩展名
 下表列出了本身受 Microsoft Rights Management 共享应用程序支持的文件类型。 对于这些文件类型，原始文件扩展名将在应用本机保护时发生变化，并且这些文件将变为只读形式。
 
-此外，当 RMS 共享应用程序通过共享从本机保护受用户保护的 Word、Excel 或 PowerPoint 文件时，此操作将自动创建另一个文件，该文件是与原始文件同名的副本，但其文件扩展名¹为 **.ppdf** 。 此版本的文件可确保安装 RMS 共享应用程序的接收方始终可以打开已应用本机保护的文件。
+此外，当 RMS 共享应用程序通过共享从本机保护受用户保护的 Word、Excel 或 PowerPoint 文件时，此操作将自动创建另一个文件，该文件是与原始文件同名的副本，但其文件扩展名¹为 **.ppdf**。 此版本的文件可确保安装 RMS 共享应用程序的接收方始终可以打开已应用本机保护的文件。
 
 对于以常规形式进行保护的文件，原始文件扩展名将始终更改为 .pfile。
 

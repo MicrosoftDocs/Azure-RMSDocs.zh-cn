@@ -1,9 +1,9 @@
 ---
 title: "Rights Management 共享应用程序的对话框选项 | Azure RMS"
-description: "使用此信息帮助你指定 RMS 共享应用程序“添加保护”对话框或“共享保护”对话框中的选项。 当你保护要共享的文件或就地保护文件以及选择自定义权限时，将看到此对话框。"
+description: "此信息可帮助你指定 RMS 共享应用程序“添加保护”对话框或“共享保护”对话框中的选项。 当你保护要共享的文件或就地保护文件以及选择自定义权限时，将看到此对话框。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: aa0f5456d17564183317e3e693ae63adb8c597c5
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: 5f652b0e75350656f446c05d2464319ba46e06ad
 
 
 ---

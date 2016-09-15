@@ -1,9 +1,9 @@
 ---
 title: "Azure RMS 要求&#58;支持 Azure Rights Management 的本地服务器 | Azure RMS"
-description: "当你使用 Azure RMS 连接器时，它将充当本地服务器和 Azure RMS 之间的通信接口（一种中继），让 Azure RMS 能够支持以下本地服务器产品。 此外，这种配置要求你配置 Active Directory 林和 Azure Active Directory 之间的目录同步。"
+description: "使用 Azure RMS 连接器时，确定支持 Azure RMS 的本地服务器产品。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: cd8b8d18e146fcc0864565a603b47b2b074af2b2
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 0f9f1dc09d1b0d831b1c96d25b7bb763086aa9c9
 
 
 ---
