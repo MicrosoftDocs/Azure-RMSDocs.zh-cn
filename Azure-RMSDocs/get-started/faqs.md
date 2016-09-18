@@ -3,7 +3,7 @@ title: "Azure Rights Management 常见问题 | Azure RMS"
 description: "Microsoft Azure Rights Management（也称为 Azure RMS）的某些常见问题。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 47328bc0c3cc66e99a98b7c8abc553f25d956404
-ms.openlocfilehash: e485286a0bd42bbcfb46a8aabe4d2ee66d65b4a1
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: e0529126fefc9dec6aaa490538971a7573f79431
 
 
 ---
@@ -145,7 +145,7 @@ Azure RMS 能够支持所有文件类型。 对于文字、图像、Microsoft Of
 
 支持 Azure RMS（个人 RMS）的免费订阅支持使用受 Azure RMS 保护的内容。 有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
-## 我在哪里可以获取有关 Azure RMS（个人 RMS）免费订阅的技术信息 — 例如它的工作原理、如何控制帐户、哪些域名不可用？
+## 可以在哪里获取有关 Azure RMS（个人 RMS）免费订阅的技术信息 - 例如，此过程的工作原理以及管理员可以控制所创建帐户的方式？
 你会在[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)及相关文章中找到这些问题的解答。
 
 ## 我们如何重新获取对由已离职员工保护的文件的访问权限？
@@ -223,6 +223,6 @@ Azure 信息保护中的该功能现在可提供公共预览版。 若要试用�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

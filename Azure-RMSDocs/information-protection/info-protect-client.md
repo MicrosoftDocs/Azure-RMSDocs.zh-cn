@@ -1,5 +1,5 @@
 ---
-title: "安装 Azure 信息保护客户端 | Azure 权限管理"
+title: "安装 Azure 信息保护客户端 | Azure 信息保护"
 description: "有关安装客户端（将信息保护栏添加到 Office 应用程序）以便为文档和电子邮件选择分类标签的说明。"
 manager: mbaldwin
 ms.date: 08/29/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 15ca59f34847d20413fbfa7973567cf5ca66db96
-ms.openlocfilehash: c245d542d237216c84941f8718cb9a0cafb44a70
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
 
 
 ---
@@ -34,7 +34,7 @@ ms.openlocfilehash: c245d542d237216c84941f8718cb9a0cafb44a70
 
 ## 手动安装 Azure 信息保护客户端
 
-1. [下载客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)后，运行 **AzInfoProtection_v233.exe** 并按照提示安装客户端。 此安装需要本地管理权限。
+1. [下载客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)后，运行 **AzInfoProtection.exe** 并按照提示安装客户端。 此安装需要本地管理权限。
 
     如果无法连接到 Office 365 或 Azure Active Directory，但想要通过使用本地策略看到和体验 Azure 信息保护的客户端以用于演示目的，选择此选项以安装演示策略。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。 
 
@@ -42,14 +42,21 @@ ms.openlocfilehash: c245d542d237216c84941f8718cb9a0cafb44a70
 
 ## 为用户安装 Azure 信息保护客户端
 
-- 可以编写脚本，并通过使用命令行选项自动安装 Azure 信息保护客户端。 若要查看安装选项，请运行 `AzInfoProtection_v233.exe /help`。
+- 可以编写脚本，并通过使用命令行选项自动安装 Azure 信息保护客户端。 若要查看安装选项，请运行 `AzInfoProtection.exe /help`。
 
-    例如，若要以无提示方式安装客户端，请执行以下操作： `AzInfoProtection_v233.exe /passive | quiet`
+    例如，若要以无提示方式安装客户端，请执行以下操作： `AzInfoProtection.exe /passive | quiet`
 
 
 ## 卸载 Azure 信息保护客户端
 
+可以使用以下任何选项：
+
 - 使用控制面板卸载程序：单击“**Microsoft Azure 信息保护** > **卸载**”
+
+- 重新运行 **AzInfoProtection.exe**，并从“修改安装程序”页上，单击“卸载”。 
+
+- “运行” `AzInfoProtection.exe /uninstall`
+
 
 ## 验证安装、连接状态或报告问题
 
@@ -88,6 +95,6 @@ ms.openlocfilehash: c245d542d237216c84941f8718cb9a0cafb44a70
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 
