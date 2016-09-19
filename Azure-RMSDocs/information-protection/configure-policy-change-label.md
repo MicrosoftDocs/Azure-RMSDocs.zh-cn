@@ -2,15 +2,15 @@
 title: "如何更改或自定义 Azure 信息保护的现有标签 | Azure 信息保护"
 description: "可以更改或优化用户可以在信息保护栏看到的标签，方法是在 Azure 信息保护策略中对其进行配置。"
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 61ceff2fb2a964495d16bb5e801a5ee7bfa60832
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 2ee4f945307744678df8b842aab2be219f8ef582
 
 
 ---
@@ -28,9 +28,9 @@ ms.openlocfilehash: 61ceff2fb2a964495d16bb5e801a5ee7bfa60832
 若要更改标签，请按照以下说明操作。
 
 
-1. 如果尚未这样做，请登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
+1. 如果尚未这样做，请在新的浏览器窗口中登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
     
-    例如，在中心菜单上单击“浏览”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
+    例如，在中心菜单上单击“更多服务”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
 
 2. 在“**Azure 信息保护**”边栏选项卡上，选择要更改的标签，然后在“**标签**”边栏选项卡上进行更改，并根据需要在任何后续边栏选项卡上进行更改。
 
@@ -52,6 +52,6 @@ ms.openlocfilehash: 61ceff2fb2a964495d16bb5e801a5ee7bfa60832
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

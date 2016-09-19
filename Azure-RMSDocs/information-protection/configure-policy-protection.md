@@ -2,15 +2,15 @@
 title: "如何配置标签以应用 Rights Management 保护 | Azure 信息保护"
 description: "你可以使用权限管理服务的加密、标识和授权策略保护最敏感的文档和电子邮件，以帮助防止数据丢失。 配置标签以使用权限管理模板时，将应用此保护。"
 manager: mbaldwin
-ms.date: 08/15/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
+ms.sourcegitcommit: fc390680918a08405e914a858c64bb723efa5580
+ms.openlocfilehash: ca1534801facc6273d481cc99f23ec8acd5341d1
 
 
 ---
@@ -47,9 +47,9 @@ ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
 
 ## 配置标签以应用权限管理保护
 
-1. 如果尚未这样做，请以全局管理员身份登录到 [Azure 门户](https://portal.azure.com)，以便检索 Azure 权限管理模板。 然后导航到“Azure 信息保护”边栏选项卡。 
+1. 如果尚未这样做，请打开新的浏览器窗口并以全局管理员身份登录到 [Azure 门户](https://portal.azure.com)，以便检索 Azure 权限管理模板。 然后导航到“Azure 信息保护”边栏选项卡。 
 
-    例如，在中心菜单上单击“浏览”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
+    例如，在中心菜单上单击“更多服务”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
 
 2. 在“**Azure 信息保护**”边栏选项卡上，选择要配置为可视标记的标签以应用权限管理保护。
 
@@ -57,15 +57,22 @@ ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
     
     在大多数情况下，你将选择“Azure RMS”。 请勿选择 AD RMS（有时称为“*自留密钥*”(HYOK)），除非你已阅读并理解此配置附带的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。
     
-4. 如果选择了 Azure RMS：对于“选择 RMS 模板”，请单击下拉框，并选择想要使用此标签来保护文档和电子邮件的模板或权限管理选项。
+4. 如果选择了 Azure RMS：对于“选择 RMS 模板”，请单击下拉框，并选择想要用来保护带有此标记的文档和电子邮件的[模板](../deploy-use/configure-custom-templates.md)或 Rights Management 选项。
+    
+    有关选项的详细信息：
+    
+    - 是否已在打开“标签”边栏选项卡后创建了新的模板？ 关闭此边栏选项卡，并返回到步骤 2，以便从 Azure 中检索新创建的模板供你选择。
+    
+    - 如果选择**部门模板**，或者如果已配置[载入控件](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)：
+    
+        - 配置的模板作用域外的用户或从应用 Azure 权限管理保护中排除的用户仍将看到该标签，但不能应用该标签。 如果他们选择该标签，则会看到以下消息：**Azure 信息保护无法应用此标签。如果此问题仍然存在，请与管理员联系。**
+        
+    - 如果选择“移除保护”:
+        
+        - 用户必须具有删除 Rights Management 保护的权限，以应用具有此选项的标签。 此选项要求它们具有**导出**（针对 Office 文档）或**完全控制**[使用权限](../deploy-use/configure-usage-rights.md)，或者为 Rights Management 所有者（自动授予完全控制使用权限）或者为 [Azure Rights Management 的超级用户](../deploy-use/configure-super-users.md)。 默认 Rights Management 模板不包括允许用户删除保护的使用权限。 
 
-    > [!NOTE] 
-    > 如果在打开“标签”边栏选项卡后创建了新模板，则关闭此边栏选项卡，并返回到步骤 2，以便从 Azure 中检索新创建的模板供你选择。
-    
-    请注意，如果选择部门模板，或者如果已配置[载入控件](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)：
-    
-    - 配置的模板作用域外的用户或从应用 Azure 权限管理保护中排除的用户仍将看到该标签，但不能应用该标签。 如果他们选择该标签，则会看到以下消息：**Azure 信息保护无法应用此标签。如果此问题仍然存在，请与管理员联系。**
-    
+            如果用户不具有删除 Rights Management 保护的权限，并选择此具有“移除保护”选项的标记，他们将会看到以下消息：**Azure 信息保护无法应用此标记。如果此问题仍然存在，请与管理员联系。**
+
 5. 如果选择了 AD RMS：请提供 AD RMS 群集的模板 GUID 和授权 URL。 [更多信息](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
 6. 单击“保存” 。
@@ -78,6 +85,6 @@ ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
