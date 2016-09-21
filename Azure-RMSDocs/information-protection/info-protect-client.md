@@ -2,15 +2,15 @@
 title: "安装 Azure 信息保护客户端 | Azure 信息保护"
 description: "有关安装客户端（将信息保护栏添加到 Office 应用程序）以便为文档和电子邮件选择分类标签的说明。"
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
+ms.sourcegitcommit: 2ecdfe905694b3d14727abdb5e6176d24f675d2e
+ms.openlocfilehash: cd6684dd25a721272c073fcc972724a6b81c0c72
 
 
 ---
@@ -74,6 +74,15 @@ ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
 
     - “**运行诊断**”链接：当前未实施此功能。
 
+## Azure 信息保护栏的键盘快捷方式
+
+若要使用键盘快捷方式访问 Azure 信息保护栏，请使用以下组合键：
+
+- 按 **Ctrl** + **Shift** + **~** 
+
+然后，使用 Tab 键选择标签和保护栏上的其他控件（“隐藏标签”图标和“删除标签”图标），按 Enter 键以将其选中。
+
+
 ## 文件位置
 
 客户端文件：   
@@ -95,6 +104,6 @@ ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

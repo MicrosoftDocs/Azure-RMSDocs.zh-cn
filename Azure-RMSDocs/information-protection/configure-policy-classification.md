@@ -2,15 +2,15 @@
 title: "如何配置 Azure 信息保护的自动和建议分类的条件 | Azure 信息保护"
 description: "在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。"
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: ea69e955e4ba5facb1a8f21a90592c0eaae5425e
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 98e8efd574d7e9689da426028d26f528cd6042a4
 
 
 ---
@@ -48,9 +48,9 @@ ms.openlocfilehash: ea69e955e4ba5facb1a8f21a90592c0eaae5425e
 
 ## 配置标签的建议或自动分类
 
-1. 如果尚未这样做，请登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
+1. 如果尚未这样做，请在新的浏览器窗口中登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
     
-    例如，在中心菜单上单击“浏览”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
+    例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
 2. 在“**Azure 信息保护**”边栏选项卡上，选择要在其中配置自动或建议分类的标签。
 
@@ -224,6 +224,6 @@ ms.openlocfilehash: ea69e955e4ba5facb1a8f21a90592c0eaae5425e
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
