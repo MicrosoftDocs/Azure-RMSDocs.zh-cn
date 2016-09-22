@@ -2,15 +2,15 @@
 title: "如何创建 Azure 信息保护的新标签 | Azure 信息保护"
 description: "尽管 Azure 信息保护附带了可以自定义的默认标签，你还可以创建用户可在信息保护栏中看到的自己的标签。"
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: b02c3e602a8178c0837104a88b360d041ecddc4d
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 4edbdde88444304c314251124618d563a3662477
 
 
 ---
@@ -27,9 +27,9 @@ ms.openlocfilehash: b02c3e602a8178c0837104a88b360d041ecddc4d
 
 使用以下说明将一个新标签添加到 Azure 的信息保护策略。
 
-1. 如果尚未这样做，请登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
+1. 如果尚未这样做，请在新的浏览器窗口中登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
     
-    例如，在中心菜单上单击“浏览”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
+    例如，在中心菜单上单击“更多服务”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
 
 2. 在“**Azure 信息保护**”边栏选项卡上，执行以下操作之一：
 
@@ -52,6 +52,6 @@ ms.openlocfilehash: b02c3e602a8178c0837104a88b360d041ecddc4d
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

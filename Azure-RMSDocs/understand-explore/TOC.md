@@ -15,6 +15,7 @@
 ### [运行 Windows Server 和使用文件分类基础结构的文件服务器](file-server-support.md)
 ### [支持 RMS API 的其他应用程序](api-support.md)
 ## [比较 Azure RMS 和 AD RMS](compare-azure-rms-ad-rms.md)
+## [合规性和支持信息](compliance.md)
 # [开始使用](/rights-management/get-started/requirements-azure-rms)
 # [规划和设计](/rights-management/plan-design/deployment-roadmap)
 # [部署和使用该服务](/rights-management/deploy-use/activate-service)
@@ -23,6 +24,6 @@
 # [Azure 信息保护（预览版）](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

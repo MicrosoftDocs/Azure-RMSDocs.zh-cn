@@ -3,7 +3,7 @@ title: "Azure Rights Management 常见问题 | Azure RMS"
 description: "Microsoft Azure Rights Management（也称为 Azure RMS）的某些常见问题。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2016
+ms.date: 09/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 47328bc0c3cc66e99a98b7c8abc553f25d956404
-ms.openlocfilehash: e485286a0bd42bbcfb46a8aabe4d2ee66d65b4a1
+ms.sourcegitcommit: 62b72d2debef3421fea4f0e70beed67e5364d7d3
+ms.openlocfilehash: 99b5e4ea74cd6f76a2409d89c3db5d8672b63055
 
 
 ---
@@ -145,7 +145,7 @@ Azure RMS 能够支持所有文件类型。 对于文字、图像、Microsoft Of
 
 支持 Azure RMS（个人 RMS）的免费订阅支持使用受 Azure RMS 保护的内容。 有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
-## 我在哪里可以获取有关 Azure RMS（个人 RMS）免费订阅的技术信息 — 例如它的工作原理、如何控制帐户、哪些域名不可用？
+## 可以在哪里获取有关 Azure RMS（个人 RMS）免费订阅的技术信息 - 例如，此过程的工作原理以及管理员可以控制所创建帐户的方式？
 你会在[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)及相关文章中找到这些问题的解答。
 
 ## 我们如何重新获取对由已离职员工保护的文件的访问权限？
@@ -165,37 +165,8 @@ Azure RMS 能够支持所有文件类型。 对于文字、图像、Microsoft Of
 除名称和外观外，**不得转发**既不是“转发”权限的对立面，也不是模板。 它实际上是一组权限，包括限制复制、打印和保存附件以及限制转发电子邮件。 这些权限通过所选收件人动态应用于用户，而不由管理员静态分配。 有关详细信息，请参阅[为 Azure Rights Management 配置使用权限](../deploy-use/configure-usage-rights.md)中的[电子邮件的“不得转发”选项](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)部分。
 
 ## 我在何处可以找到 Azure RMS 的支持信息，例如法律、合规性和 SLA？
-Azure RMS 支持其他服务，也依赖于其他服务。 如果你寻找的信息与 Azure RMS 相关，但与如何使用 Azure RMS 服务无关，请查看以下资源：
 
-**法律和隐私：**
-
--   对于 Microsoft Azure 协议信息： [Microsoft Azure 协议](http://azure.microsoft.com/support/legal/subscription-agreement/)
-
--   对于 Microsoft Azure 隐私信息： [Microsoft Azure 隐私声明](http://azure.microsoft.com/support/legal/privacy-statement/)
-
-**安全、相容性和审核：**
-
-请参阅 [Azure RMS 解决了哪些问题？](../understand-explore/azure-rms-problems-it-solves.md)一文中的[安全、合规性和法规要求](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) 此外：
-
--   对于 Azure RMS 的外部认证： [Microsoft Azure 信任中心](http://azure.microsoft.com/support/trust-center/)
-
--   对于 FIPS 140 信息： [FIPS 140 验证](https://technet.microsoft.com/library/security/cc750357.aspx)
-
-**服务级别协议：**
-
--   按所选区域的 Azure RMS 服务级别协议：[从产品许可搜索页下载](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=37)
-
-    - 例如，单击 **OnlineSvcsConsolidatedSLA(WW)(English)(March2016)** 以下载适用于北美的 2016 年 3 月服务级别协议。
-
--   Azure Active Directory 的服务级别协议： [服务级别协议](http://azure.microsoft.com/support/legal/sla/)
-
-**文档：**
-
--   Azure Active Directory 文档站点： [Azure Active Directory](http://azure.microsoft.com/documentation/services/active-directory/)
-
--   Azure Active Directory 库：[Azure Active Directory](https://msdn.microsoft.com/library/azure/mt168838.aspx)
-
--   Office 365 库：[Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
+请参阅 [Azure Rights Management 的合规性和支持信息](../understand-explore/compliance.md)。
 
 ## 有关新的分类和标签功能的最新进展是什么？
 
@@ -223,6 +194,6 @@ Azure 信息保护中的该功能现在可提供公共预览版。 若要试用�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

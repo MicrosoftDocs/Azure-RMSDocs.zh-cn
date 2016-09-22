@@ -3,7 +3,7 @@ title: "Azure 信息保护预览版常见问题 | Azure 信息保护"
 description: "对 Azure 信息保护的预览版有疑问？ 请查看此处是否有答案。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0a66851beeedecc3bda92f840f06b56f40c0c4c1
-ms.openlocfilehash: 427b783b41d8977ff07b0fbc929bf0d7afd0721d
+ms.sourcegitcommit: 459cbe65741ea415defced844034f62cfd4654ed
+ms.openlocfilehash: 39334a5cc18f1b45eabd7cf5b4f9b891fb10a5e6
 
 
 ---
@@ -143,6 +143,10 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 
 虽然当前可在两个级别上设置可视化标记、保护和条件，但是当使用子级别时，请只在子级别上配置这些设置。 如果在父标签及其子级别上配置相同的设置，那么子级别上的设置具有更高优先级。
 
+## 标记一封电子邮件时，是否有任何附件会自动获得相同的标记？
+
+不能。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件将保持不带标签，或者保留单独应用的标签。 但是，如果电子邮件的标签应用了保护，则该保护也适用于附件。
+
 ## DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
 
 因为 Azure 信息保护将永久性元数据用于分类，其中包括明文标签，所以该信息可以被 DLP 解决方案和其他应用读取。 对于文件，该元数据存储在自定义属性中；对于电子邮件，该信息存储在电子邮件标头中。
@@ -187,6 +191,6 @@ Azure 信息保护将 Azure Active Directory 用于用户身份验证。
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

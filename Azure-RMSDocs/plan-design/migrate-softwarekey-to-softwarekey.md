@@ -3,7 +3,7 @@ title: "步骤 2&colon; 软件保护密钥到软件保护密钥的迁移 | Azure
 description: "此说明是从 AD RMS 到 Azure Rights Management 的迁移路径中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且你希望使用软件保护的租户密钥迁移到 Azure Rights Management 时才适用。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: 5ec3d2b275521807c6fd8f9ccfe1136db97d5d79
+ms.sourcegitcommit: 459cbe65741ea415defced844034f62cfd4654ed
+ms.openlocfilehash: 2bd9abcac99a06a29e5dacdd014e660358840adc
 
 
 ---
@@ -49,13 +49,13 @@ ms.openlocfilehash: 5ec3d2b275521807c6fd8f9ccfe1136db97d5d79
 3.  使用 [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) cmdlet 上载首先导出的受信任发布域 (.xml) 文件。 如果你有多个 .xml 文件（因为有多个受信任发布域），请选择包含已导出受信任发布域的文件，你要在 Azure RMS 中使用该文件来在迁移后保护内容。 使用以下命令：
 
     ```
-    Import-AadrmTpd -TpdFile <PathToTpdPackageFile> -ProtectionPassword -Active $True -Verbose
+    Import-AadrmTpd -TpdFile <PathToTpdPackageFile> -ProtectionPassword <secure string> -Active $True -Verbose
     ```
-    例如：**Import-AadrmTpd -TpdFile E:\contosokey1.xml -ProtectionPassword -Active $true -Verbose**
-
-    出现提示时，输入你先前指定的密码，并确认要执行此操作。
-
-4.  该命令完成后，请对你通过导出受信任的发布域创建的每个剩余 .xml 文件重复执行步骤 3。 但对于这些文件，在运行 Import 命令时将 **-Active** 设为 **false**。 例如：**Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose**
+    可以使用 [ConvertTo-SecureString -AsPlaintext](https://technet.microsoft.com/library/hh849818.aspx) 或 [Read-Host](https://technet.microsoft.com/library/hh849945.aspx) 指定密码作为安全字符串。 使用 ConvertTo-SecureString 并且密码具有特殊字符时，在单引号之间输入密码或转义特殊字符。
+    
+    例如：首先运行 **$TPD_Password = Read-host-AsSecureString**，并输入早前指定的密码。 然后运行 **Import-AadrmTpd -TpdFile E:\contosokey1.xml -ProtectionPassword $TPD_Password -Active $true -Verbose**。 出现提示时，确认要执行此操作。
+    
+4.  该命令完成后，请对你通过导出受信任的发布域创建的每个剩余 .xml 文件重复执行步骤 3。 但对于这些文件，在运行 Import 命令时将 **-Active** 设为 **false**。 例如：**Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword $TPD_Password -Active $false -Verbose**
 
 5.  使用 [Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx) cmdlet 断开与 Azure RMS 服务的连接：
 
@@ -70,6 +70,6 @@ ms.openlocfilehash: 5ec3d2b275521807c6fd8f9ccfe1136db97d5d79
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

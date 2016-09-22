@@ -3,7 +3,7 @@ title: "管理员如何控制为个人 RMS 创建的帐户 | Azure RMS"
 description: "如果不希望将组织的个人 RMS 订阅转换为付费订阅，如何控制 Azure Active Directory 中的用户帐户。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: eb86c9e4f83fcf42599145b10ad8f021e40c208f
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: 6383c1d583eb45973750305e709d8f5d792892b5
 
 
 ---
@@ -31,9 +31,9 @@ ms.openlocfilehash: eb86c9e4f83fcf42599145b10ad8f021e40c208f
 
 -   你可以阻止用户注册使用 Azure Rights Management 和个人 RMS 订阅。 大多数情况下，这种做法没有什么好处，因为用户在不受保护的情况下共享文件可能会让公司承担风险，用户还可能会使用其他文件保护机制，导致 IT 部门不能访问数据。 但是，如果你希望阻止用户注册使用个人 RMS，请在取得组织的 Azure 目录的所有权后执行以下操作之一：
 
-    -   阻止所有用户注册包括个人 RMS 的自助订阅。  目前，你无法通过服务设置此内容；该设置适用于所有使用自助过程的 Azure 订阅。 为此，请使用 Azure Active Directory 的 Windows PowerShell 模块中的 [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) cmdlet，将 **AllowAdHocSubscriptions** 参数设置为 false。 例如：**Set-MsolCompanySettings -AllowAdHocSubscriptions $false**
+    -   阻止所有用户注册包括个人 RMS 的自助订阅。  目前，你无法通过服务设置此内容；该设置适用于所有使用自助过程的 Azure 订阅。 为此，请使用 Azure Active Directory 的 PowerShell 模块中的 [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) cmdlet，将 **AllowAdHocSubscriptions** 参数设置为 false。 例如：**Set-MsolCompanySettings -AllowAdHocSubscriptions $false**
 
-    -   阻止用户在 Azure 中创建新帐户，这意味着仅已经具有 Azure 帐户的用户可以注册包括个人 RMS 的自助订阅。  为此，请使用 Azure Active Directory 的 Windows PowerShell 模块中的 [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) cmdlet，将 **AllowEmailVerifiedUsers** 参数设置为 false。 例如：**Set-MsolCompanySettings -AllowEmailVerifiedUsers $false -AllowAdHocSubscriptions $true**
+    -   阻止用户在 Azure 中创建新帐户，这意味着仅已经具有 Azure 帐户的用户可以注册包括个人 RMS 的自助订阅。  为此，请使用 Azure Active Directory 的 PowerShell 模块中的 [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) cmdlet，将 **AllowEmailVerifiedUsers** 参数设置为 false。 例如：**Set-MsolCompanySettings -AllowEmailVerifiedUsers $false -AllowAdHocSubscriptions $true**
 
     -   将 Active Directory 域服务基础结构与 Azure Active Directory 同步。 此操作可以在用户注册自助订阅（如个人 RMS）阻止创建新帐户，并且你还可以删除或禁用以前在 Azure 目录中创建的帐户。
 
@@ -46,6 +46,6 @@ ms.openlocfilehash: eb86c9e4f83fcf42599145b10ad8f021e40c208f
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
