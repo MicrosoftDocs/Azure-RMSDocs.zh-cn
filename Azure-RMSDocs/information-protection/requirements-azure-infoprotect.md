@@ -1,5 +1,5 @@
 ---
-title: "Azure 信息保护的要求 | Azure RMS"
+title: "Azure 信息保护的要求 | Azure 信息保护"
 description: "确定评估 Azure 信息保护的预览版本时需要的先决条件。"
 author: cabailey
 manager: mbaldwin
@@ -12,8 +12,8 @@ ms.assetid: aa4353e5-c5b0-47f6-a6f9-87d13e8f075f
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba6887a5c9bab18867d07cfc98e8416bf102c211
-ms.openlocfilehash: 85bed6554140525fabc1ab863e3196ac5a37366b
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: b9bb97e075e569e54e535c921c5d1db77200b20c
 
 
 ---
@@ -41,6 +41,6 @@ ms.openlocfilehash: 85bed6554140525fabc1ab863e3196ac5a37366b
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

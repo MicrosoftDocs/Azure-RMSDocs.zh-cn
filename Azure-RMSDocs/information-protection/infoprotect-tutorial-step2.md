@@ -3,15 +3,15 @@ title: "Azure 信息保护快速入门教程 - 步骤 2 | Azure 信息保护"
 description: "入门教程第 2 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
+ms.sourcegitcommit: ba0f05619e1d13e16b8d4f6d86231b89e9326726
+ms.openlocfilehash: 9dfbeb4c887c619d07b11be0da304ac4f4e7d4a9
 
 
 ---
@@ -24,14 +24,14 @@ ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 
 尽管 Azure 信息保护附带了你无需进行配置的默认策略，我们仍然要看一下该策略并进行一些更改。
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。 如果想要测试保护以及分类和标记，请以全局管理员身份登录，以便检索 Azure 权限管理模板。
+1. 在新的浏览器窗口中，登录到 [Azure 门户](https://portal.azure.com)。 如果想要测试保护以及分类和标记，请以全局管理员身份登录，以便检索 Azure 权限管理模板。
  
 2. 在中心菜单上：单击“新建” > “安全性 + 标识” > “Azure 信息保护(预览版)” > “创建”。
 
-    这将创建“Azure 信息保护”边栏选项卡，以便下次登录到门户时，可以从中心的“浏览”列表中选择该服务。 
+    这将创建“Azure 信息保护”边栏选项卡，以便下次登录到门户时，可以从中心的“更多服务”列表中选择该服务。 
 
     > [!TIP] 
-    > 选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览步骤。
+    > 选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览到该服务。
 
 3.  浏览“Azure 信息保护”主边栏选项卡，其中显示了自动创建的默认信息保护策略：
     
@@ -53,7 +53,7 @@ ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 
 2. 在“标签：机密”边栏选项卡中，你将看到可用于每个标签的设置。 进行以下更改：
 
-    a. 若已激活 Azure 权限管理：在“**设置 RMS 模板用于保护包含此标签的文档和电子邮件”**部分中，如果你看到“**RMS 模板选择自**”，则保留默认的 **Azure RMS**。 然后，针对“**选择 RMS 模板**”，单击下拉框，选择默认模板“**\<你的组织名称 > - 机密”**。 例如，如果你的组织名称为 VanArsdel, Ltd，你将看到并选择“VanArsdel, Ltd - 机密”。 如果禁用了此默认 Azure 权限管理模板，请选择替代模板。 但是，如果你选择部门模板，请确保你的帐户包含在范围内。
+    a. 若已激活 Azure 权限管理：在**设置 RMS 模板用于保护包含此标签的文档和电子邮件**部分中，对于“**RMS 模板选择自**”，保留默认的 **Azure RMS**。 然后，针对“**选择 RMS 模板**”，单击下拉框，选择默认模板“**\<你的组织名称 > - 机密”**。 例如，如果你的组织名称为 VanArsdel, Ltd，你将看到并选择“VanArsdel, Ltd - 机密”。 如果禁用了此默认 Azure 权限管理模板，请选择替代模板。 但是，如果你选择部门模板，请确保你的帐户包含在范围内。
     
     如果尚未激活 Azure 权限管理，则无法使用此选项。
     
@@ -97,6 +97,6 @@ ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 [步骤 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

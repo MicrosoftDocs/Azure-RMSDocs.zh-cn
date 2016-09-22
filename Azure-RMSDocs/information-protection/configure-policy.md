@@ -12,8 +12,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 1dd3c09f5bf6a38eb3d82bfa3f7a756f5237eab6
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: ba7acf835439d059874e0512997b2b591193f0c3
 
 
 ---
@@ -28,9 +28,9 @@ ms.openlocfilehash: 1dd3c09f5bf6a38eb3d82bfa3f7a756f5237eab6
 
 在预览版本的 Azure 信息保护中配置 Azure 信息保护策略：
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
+1. 在新的浏览器窗口中，登录到 [Azure 门户](https://portal.azure.com)。
 
-2. 导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“浏览”并在“筛选”框中开始键入**信息保护**。 在结果中选择“Azure 信息保护”。 
+2. 导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“更多服务”并在“筛选”框中开始键入**信息保护**。 在结果中选择“Azure 信息保护”。 
 
     然后，你将看到“**Azure 信息保护**”边栏选项卡，可在其中配置 Azure 信息保护策略，其中包含以下元素：
 
@@ -80,6 +80,6 @@ Azure 的信息保护附带 [默认策略](configure-policy-default.md)(#默认�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

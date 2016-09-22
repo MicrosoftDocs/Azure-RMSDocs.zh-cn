@@ -1,5 +1,5 @@
 ---
-title: "Azure 信息保护快速入门教程 - 步骤 1 | Azure 权限管理"
+title: "Azure 信息保护快速入门教程 1 | Azure 信息保护"
 description: "入门教程第 1 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，只需 4 个步骤，所需时间不到 15 分钟。"
 author: cabailey
 manager: mbaldwin
@@ -10,8 +10,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: da0145444a7d0abb6407ed2ccbb581d4dcdd10d6
-ms.openlocfilehash: 38bc0f85acad64d56ef92078ded37a3367c72f10
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 96b5d2e53d2d1460a97a87f4037cab79b8586244
 
 
 ---
@@ -86,6 +86,6 @@ ms.openlocfilehash: 38bc0f85acad64d56ef92078ded37a3367c72f10
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

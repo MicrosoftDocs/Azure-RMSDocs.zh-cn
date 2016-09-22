@@ -1,12 +1,12 @@
 ---
 title: "如何使用加密设置 | Azure RMS"
-description: "本文将带你了解我们的加密包"
+description: "Azure RMS 加密包及其使用的代码片段的方向。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29e856e3e9990f81a791c533ddad5a332093d5d3
-ms.openlocfilehash: 82903eff43ee2dee7ef64e618171225a06013d99
+ms.sourcegitcommit: 83c4eb741c484018a2837840465aca3276c785c1
+ms.openlocfilehash: b128a9adf75ae8558a33181f63881e2243e840bb
 
 
 ---
@@ -103,6 +103,6 @@ ms.openlocfilehash: 82903eff43ee2dee7ef64e618171225a06013d99
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 
