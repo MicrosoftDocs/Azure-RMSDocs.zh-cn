@@ -3,7 +3,7 @@ title: "从 AD RMS 迁移到 Azure Rights Management | Azure RMS"
 description: "有关将 Active Directory Rights Management Services (AD RMS) 部署迁移到 Azure Rights Management (Azure RMS) 的说明。 迁移之后，用户将仍然可以访问你的组织使用 AD RMS 来保护的文档和电子邮件，新保护的内容将使用 Azure RMS。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: 6aa75f5e6b326068951b3d4d65f337c15a475029
+ms.sourcegitcommit: 5c20772240961bdd3052e55a19eaca21ef7da003
+ms.openlocfilehash: 01c107979265abf0d34060eccf09ca32c0086ab8
 
 
 ---
@@ -46,7 +46,7 @@ ms.openlocfilehash: 6aa75f5e6b326068951b3d4d65f337c15a475029
         
     - 加密模式 2：
     
-        - 在开始迁移到 Azure RMS 之前，必须在加密模式 2 下运行 AD RMS 服务器和客户端。 有关详细信息，请参阅 [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)（AD RMS 加密模式）。
+        - 在开始迁移到 Azure RMS 之前，必须在加密模式 2 下运行 AD RMS 服务器和客户端。 虽然当前的服务器许可方证书 (SLC) 密钥必须使用加密模式 2，但 Azure RMS 中支持使用以前为加密模式 1 配置的密钥作为存档的密钥。 有关加密模式和如何移至加密模式 2 的详细信息，请参阅 [AD RMS 加密模式](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)。
         
     - 支持所有有效的 AD RMS 拓扑：
     
@@ -184,6 +184,6 @@ ms.openlocfilehash: 6aa75f5e6b326068951b3d4d65f337c15a475029
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -2,15 +2,15 @@
 title: "HYOK 限制 | Azure 信息保护"
 description: Identify the limitations, prerequisites, and recommendations if you select AD RMS protection with Azure Information Protection. This solution is sometimes referred to as "hold your own key" (HYOK).
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: fe0f492b94cbcc437c722daae9c3c56820593566
+ms.sourcegitcommit: 593ec90a781a41e3b93a4c31d22a3ca547b49bc7
+ms.openlocfilehash: faf3180ca290f1668233663099b924ff199524d9
 
 
 ---
@@ -43,6 +43,16 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 > 仅在必要时对需要此配置的文档和电子邮件使用此配置。 AD RMS 保护不提供上面列出的那些使用 Azure RMS 保护时可获得的好处，其用途在于“不惜任何代价确保数据不透明”。
 
 当标签使用 AD RMS 保护，而非 Azure RMS 保护时，用户不会知道。 由于 AD RMS 保护所附带的限制，请确保明确指示用户何时应选择应用 AD RMS 保护的标签。
+
+## 限制
+
+将 AD RMS 保护与 Azure 信息保护联用，不仅不支持使用 Azure RMS 保护时可获得的所列益处，还具有以下限制：
+
+- 不支持 Office 2010 或 Office 2007。
+
+- 如果还使用 Azure RMS 保护：配置 Azure RMS 保护的标签时，请勿使用“不要转发”选项。 还必须指示用户不要在 Outlook 中手动选择此选项。 
+
+    如果由标签或由用户手动应用了“不要转发”选项，则可能由 AD RMS 部署（而不是预期的 Azure 权限管理服务）应用该选项。 在此方案中，外部共享对象将无法打开已应用此“不要转发”选项的电子邮件。
 
 ## HYOK 要求
 
@@ -94,6 +104,6 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

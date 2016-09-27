@@ -3,7 +3,7 @@ title: "Office 365 &colon; 客户端和联机服务的配置 | Azure RMS"
 description: "面向管理员提供的有关配置 Office 365 以使用 Azure Rights Management (Azure RMS) 的信息和说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 5e9ecbdef4adb4995199b059903902df078471e5
+ms.sourcegitcommit: 18498a6d1edac11b20842b0cca0c4559909d681e
+ms.openlocfilehash: e8e2abe6006f40f5c2e34ef0d4ac3f1ccaf66516
 
 
 ---
@@ -63,7 +63,7 @@ ms.openlocfilehash: 5e9ecbdef4adb4995199b059903902df078471e5
 
 4.  根据组织的租户创建位置指定 Azure RMS 租户密钥的位置：
 
-    适用于北美（以及政府订阅）：
+    适用于北美：
 
     ```
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
@@ -82,6 +82,11 @@ ms.openlocfilehash: 5e9ecbdef4adb4995199b059903902df078471e5
 
     ```
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc"
+    ```
+    适用于 Office 365 政府版（政府社区云）：
+
+    ```
+    Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
 5.  以受信任的发布域 (TPD) 的形式从 Azure RMS 将配置数据导入到 Exchange Online。 这包括 Azure RMS 租户密钥和 Azure RMS 模板：
@@ -1105,6 +1110,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -3,7 +3,7 @@ title: "方案 - 高级管理人员安全地交换特权信息 | Azure RMS"
 description: "此方案和支持用户文档使用 Azure Rights Management 以便高级管理人员可以安全地通过电子邮件彼此交换电子邮件和附件，而策略会自动将访问权限限制为高级管理人员而无需他们采取任何特殊操作。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 1ec54b54197471f8cccaf6ae83ae8e592da30cae
+ms.sourcegitcommit: 3b0b165f594da47c090f7822afed2a80541b71e8
+ms.openlocfilehash: 511eb0b95039bb7ee1c4a4f06778a18c1cf6c542
 
 
 ---
@@ -49,7 +49,7 @@ ms.openlocfilehash: 1ec54b54197471f8cccaf6ae83ae8e592da30cae
 |已激活 Azure Rights Management|[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)|
 |以下配置之一：<br /><br />- 已为 Azure Rights Management 启用了 Exchange Online<br /><br />- 已为 Exchange 内部部署安装和配置了 RMS 连接器|对于 Exchange Online：请参阅[为 Azure Rights Management 配置应用程序](https://technet.microsoft.com/library/jj585031.aspx)中的 **Exchange Online：IRM 配置**部分。<br /><br />对于 Exchange 内部部署：请参阅[部署 Azure Rights Management 连接器](https://technet.microsoft.com/library/dn375964.aspx)|
 |已按下文所述配置了自定义模板|[为 Azure Rights Management 配置自定义模板](https://technet.microsoft.com/library/dn642472.aspx)|
-|已按本文之后章节所述为 IRM 配置了传输保护规则|对于 Exchange Online：请参阅[创建传输保护规则](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />对于 Exchange 2013：请参阅[创建传输保护规则](https://technet.microsoft.com/library/dd302432%28v=exchg.150%29.asp)<br /><br />对于 Exchange 2010：请参阅[创建传输保护规则](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
+|已按本文之后章节所述为 IRM 配置了传输保护规则|对于 Exchange Online，请参阅：[邮件流或传输规则](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)<br /><br />对于 Exchange 2013：请参阅[创建传输保护规则](https://technet.microsoft.com/en-us/library/dd302432(v=exchg.150))<br /><br />对于 Exchange 2010：请参阅[创建传输保护规则](https://technet.microsoft.com/library/dd302432(v=exchg.141))|
 
 ### 为高级管理人员配置自定义模板
 
@@ -132,6 +132,6 @@ ms.openlocfilehash: 1ec54b54197471f8cccaf6ae83ae8e592da30cae
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
