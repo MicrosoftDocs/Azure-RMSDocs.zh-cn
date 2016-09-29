@@ -3,7 +3,7 @@ title: "步骤 2&colon; HSM 保护密钥到 HSM 保护密钥的迁移 | Azure RM
 description: "此说明是从 AD RMS 到 Azure Rights Management 的迁移路径中的一部分，仅当你的 AD RMS 密钥是 HSM 保护密钥，且你希望使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure Rights Management 时才适用。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: 32cedc573aa6d14c4897642789c8e58b788279f2
+ms.sourcegitcommit: df79a02238c7cbadaae450ad8dabc03478de27e9
+ms.openlocfilehash: 539ad9db29f7795d3f56655a64f49532ef6ff6e8
 
 
 ---
@@ -55,7 +55,7 @@ ms.openlocfilehash: 32cedc573aa6d14c4897642789c8e58b788279f2
     
     例如，如果已为 Azure RMS 创建的密钥保管库名为 contoso-byok-ky，并且你的资源组名为 contoso-byok-rg，请运行以下命令：
     
-        Set-AzureRmKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign
+        Set-AzureRmKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
 
 现在，你已经在 Azure 密钥保管库中为 Azure RMS 准备好了 HSM 密钥，接下来可以导入 AD RMS 配置数据。
@@ -94,6 +94,6 @@ ms.openlocfilehash: 32cedc573aa6d14c4897642789c8e58b788279f2
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
