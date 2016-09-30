@@ -1,4 +1,4 @@
-# [了解和探索](/rights-management/understand-explore/azure-rights-management)
+# [了解和探索](/rights-management/understand-explore/what-is-information-protection)
 # [开始使用](/rights-management/get-started/requirements-azure-rms)
 # [规划和设计](/rights-management/plan-design/deployment-roadmap)
 # [部署和使用该服务](/rights-management/deploy-use/activate-service)
@@ -65,9 +65,8 @@
 #### [函数](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/functions)
 #### [结构](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/structures)
 #### [错误代码](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/Error codes)
-# [Azure 信息保护（预览版）](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
