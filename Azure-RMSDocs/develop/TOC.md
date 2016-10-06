@@ -1,8 +1,8 @@
-# [了解和探索](/rights-management/understand-explore/azure-rights-management)
-# [开始使用](/rights-management/get-started/requirements-azure-rms)
-# [规划和设计](/rights-management/plan-design/deployment-roadmap)
-# [部署和使用该服务](/rights-management/deploy-use/activate-service)
-# [部署和使用该客户端](/rights-management/rms-client/use-client)
+# [了解和探索](/information-protection/understand-explore/what-is-information-protection)
+# [开始使用](/information-protection/get-started/requirements-azure-rms)
+# [规划和设计](/information-protection/plan-design/deployment-roadmap)
+# [部署和使用该服务](/information-protection/deploy-use/activate-service)
+# [部署和使用该客户端](/information-protection/rms-client/use-client)
 # [开发和自定义应用](developers-guide.md)
 ## [管理员指南](developers-guide.md)
 ## [Rights Management SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
@@ -29,8 +29,8 @@
 ### [API 参考](api-reference-4-2.md)
 #### [Android API 参考](android-namespaces.md)
 #### [Linux API 参考](linux-c-api-reference.md)
-#### [iOS / OS X API 参考](/rights-management/sdk/4.2/api/iOS/iOS)
-#### [Windows API 参考](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+#### [iOS / OS X API 参考](/information-protection/sdk/4.2/api/iOS/iOS)
+#### [Windows API 参考](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement)
 ## [Rights Management SDK 2.1](microsoft-information-protection-and-control-client-portal.md)
 ### [概述](ad-rms-overview.md)
 #### [客户端](ad-rms-client.md)
@@ -60,14 +60,13 @@
 #### [了解使用限制](understanding-usage-restrictions.md)
 #### [使用限制参考](usage-restriction-reference.md)
 ### [API 参考](api-reference-2-1.md)
-#### [常量](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/constants)
-#### [数据类型](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/data types)
-#### [函数](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/functions)
-#### [结构](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/structures)
-#### [错误代码](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/Error codes)
-# [Azure 信息保护（预览版）](/rights-management/information-protection/what-is-information-protection)
+#### [常量](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/constants)
+#### [数据类型](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/data types)
+#### [函数](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/functions)
+#### [结构](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/structures)
+#### [错误代码](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/Error codes)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
