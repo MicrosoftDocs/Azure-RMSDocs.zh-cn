@@ -1,12 +1,12 @@
-# [了解和探索](/rights-management/understand-explore/azure-rights-management)
-# [入门](/rights-management/get-started/requirements-azure-rms)
-# [规划和设计](/rights-management/plan-design/deployment-roadmap)
-# [部署和使用该服务](/rights-management/deploy-use/activate-service)
-# [部署和使用该客户端](/rights-management/rms-client/use-client)
-# [开发和自定义应用](/rights-management/develop/developers-guide)
-# [管理](/rights-management/administer/administer-powershell)
+# [了解和探索](/information-protection/information-protection/what-is-information-protection)
+# [入门](/information-protection/get-started/requirements-azure-rms)
+# [规划和设计](/information-protection/plan-design/deployment-roadmap)
+# [部署和使用该服务](/information-protection/deploy-use/activate-service)
+# [部署和使用该客户端](/information-protection/rms-client/use-client)
+# [开发和自定义应用](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Sep16_HO4-->
 
 
