@@ -4,18 +4,18 @@ description: "本主题指导你完成安装开发人员工具的过程。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 1dc8ec6af3a84fc3e14c550d538d44acf565fcc6
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 8a118e4b5174251122a5798b2674d0c6e79017be
 
 
 ---
@@ -46,6 +46,6 @@ ms.openlocfilehash: 1dc8ec6af3a84fc3e14c550d538d44acf565fcc6
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

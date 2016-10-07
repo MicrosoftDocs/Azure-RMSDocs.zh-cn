@@ -4,18 +4,18 @@ description: "第一个应用程序的快速入门指南是通过适用于每种
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 10b6cd94e013cabe27e614442a549775e2783e56
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: d4373ed4a0909c5c0c4dceb51f98ace1977cb6f7
 
 
 ---
@@ -56,6 +56,6 @@ ms.openlocfilehash: 10b6cd94e013cabe27e614442a549775e2783e56
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

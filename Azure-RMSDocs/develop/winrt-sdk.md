@@ -4,18 +4,18 @@ description: "Windows 应用商店应用程序可以使用 Microsoft Rights Mana
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 93a804ce53eb4f13a579d7888c289c0b6bec008f
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 763e99e40bbe329305e97757e87d10b048cc62e9
 
 
 ---
@@ -82,10 +82,10 @@ Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2
 
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 
-[Windows API 参考](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+[Windows API 参考](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -3,18 +3,18 @@ title: "新增功能和发行说明 | Azure RMS"
 description: "概述这一新版本的 RMS SDK 中的重要更改和功能。"
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/16/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: 141e9c2315fb9fa7b3e8969b9076ab778b37bfe6
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: da4dce1c44cd79e90e7d232f74f194b734dea0f6
 
 
 ---
@@ -48,29 +48,29 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
 -   文档跟踪，仅限 RMS 联机，适用于 iOS/OS X 和 Android 操作系统。
 
-    有关 iOS/OS X 的详细信息和使用指南，请参阅 [**MSLicenseMetadata**](/rights-management/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc) 类，其中提供了有关 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) 的跟踪信息以及额外的文档跟踪注册方法。 对于 Android 操作系统，也在 [**LicenseMetadata**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) 和 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) 中添加了类似功能。
+    有关 iOS/OS X 的详细信息和使用指南，请参阅 [**MSLicenseMetadata**](/information-protection/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc) 类，其中提供了有关 [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) 的跟踪信息以及额外的文档跟踪注册方法。 对于 Android 操作系统，也在 [**LicenseMetadata**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) 和 [**UserPolicy**](/information-protection/sdk/4.2/api/android/userpolicy) 中添加了类似功能。
 
     有关文档跟踪功能的详细说明，请参阅[**操作方法：使用文档跟踪**](how-to-use-document-tracking.md)。
 
 -   一组同步方法，使 Android API 的异步版本实现平行：
 
-    [**CustomProtectedInputStream.create 同步方法**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_create_synchronous_method_java)
+    [**CustomProtectedInputStream.create 同步方法**](/information-protection/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_create_synchronous_method_java)
 
-    [**CustomProtectedOutputStream.create 同步方法**](/rights-management/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_create_synchronous_method)
+    [**CustomProtectedOutputStream.create 同步方法**](/information-protection/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_create_synchronous_method)
 
-    [**ProtectedFileInputStream.create 同步方法**](/rights-management/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_synchronous_method)
+    [**ProtectedFileInputStream.create 同步方法**](/information-protection/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_synchronous_method)
 
-    [**ProtectedFileOutputStream.create 同步方法**](/rights-management/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_create_synchronous_method)
+    [**ProtectedFileOutputStream.create 同步方法**](/information-protection/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_create_synchronous_method)
 
-    [**TemplateDescriptor.getTemplates 同步方法**](/rights-management/sdk/4.2/api/android/templatedescriptor#msipcthin2_templatedescriptor_gettemplates_synchronous_method_java)
+    [**TemplateDescriptor.getTemplates 同步方法**](/information-protection/sdk/4.2/api/android/templatedescriptor#msipcthin2_templatedescriptor_gettemplates_synchronous_method_java)
 
-    [**UserPolicy.acquire 同步方法**](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_acquire_synchronous_method_java)
+    [**UserPolicy.acquire 同步方法**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_acquire_synchronous_method_java)
 
-    [**UserPolicy.create (PolicyDescriptor…) 同步方法**](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_create_policydescriptor_______synchronous_method_java)
+    [**UserPolicy.create (PolicyDescriptor…) 同步方法**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_create_policydescriptor_______synchronous_method_java)
 
-    [**UserPolicy.create (TempalteDescriptor…) 同步方法**](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_create_templatedescriptor_______synchronous_method_java)
+    [**UserPolicy.create (TempalteDescriptor…) 同步方法**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_create_templatedescriptor_______synchronous_method_java)
 
--   Android API 中添加了一个新的 [**ProtectedBuffer**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedbuffer_class) 类。
+-   Android API 中添加了一个新的 [**ProtectedBuffer**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedbuffer_class) 类。
 -   引入更新以改进错误消息传送和故障排除体验。
 -   加密操作的显著性能改进。
 
@@ -90,7 +90,7 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
     应用程序加密和解密操作可以独立地并行运行。
 
-    有关详细信息，请参阅[**MSProtector**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msprotector_class_objc)。
+    有关详细信息，请参阅[**MSProtector**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msprotector_class_objc)。
 
     日志级别控件设置已启用。
 
@@ -98,7 +98,7 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
     已添加缓存清除支持。
 
-    有关详细信息，请参阅 [**MSProtection:resetStateWithCompletionBlock**](/rights-management/sdk/4.2/api/iOS/msprotection#msipcthin2_msprotection_resetstatewithcompletionblock_method_objc)。
+    有关详细信息，请参阅 [**MSProtection:resetStateWithCompletionBlock**](/information-protection/sdk/4.2/api/iOS/msprotection#msipcthin2_msprotection_resetstatewithcompletionblock_method_objc)。
 
 ### 2015 年 2 月更新 - 添加 Windows 应用商店应用程序支持
 
@@ -114,11 +114,11 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
 -   用于*用户许可*处理的 Android 和 iOS/OS X SDK API 扩展，允许用户确认 SDK 行为。 目前，文档跟踪和访问未知 AD RMS 服务 URL 是受支持的许可类型。
 
-    有关详细信息，请参阅 Android API 版本的 [**ConsentCallback 接口**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_consentcallback_interface_java)作为示例。
+    有关详细信息，请参阅 Android API 版本的 [**ConsentCallback 接口**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_consentcallback_interface_java)作为示例。
 
 -   iOS 8 和 OS X 10.10 (Yosemite) 现在受支持。 还有一些 Xcode 6 要求的属性名称更改。
 
-    例如：MSUserPolicy.name 更改为 [**MSUserPolicy.policyName**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_name_property_objc)。
+    例如：MSUserPolicy.name 更改为 [**MSUserPolicy.policyName**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_name_property_objc)。
 
 ## 发行说明
 
@@ -146,9 +146,9 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
     **解决方案** - 确保应用程序不允许对 Android API 的多实例调用。
 
--   当我使用长度与 *array.length* 值不同的 [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array, int offset, int length)** 方法时，后面无法通过 SDK 使用内容。
+-   当我使用长度与 *array.length* 值不同的 [**ProtectedFileOutputStream**](/information-protection/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array, int offset, int length)** 方法时，后面无法通过 SDK 使用内容。
 
-    **解决方案** - 这是一个已知问题。 为了缓解问题，可始终传递长度值与长度参数相同的 **byte \[\]** 阵列，也可以使用 [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array)** 方法。
+    **解决方案** - 这是一个已知问题。 为了缓解问题，可始终传递长度值与长度参数相同的 **byte \[\]** 阵列，也可以使用 [**ProtectedFileOutputStream**](/information-protection/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array)** 方法。
 
 **iOS 和 OS X**
 
@@ -174,8 +174,8 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
     以下方法不得同时运行。 为了监控执行完成情况，请使用所说明的完成块方法。
 
-    - [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc)
-    - [**customProtectedDataWithPolicy**](/rights-management/sdk/4.2/api/iOS/mscustomprotecteddata#msipcthin2_mscustomprotecteddata_customprotecteddatawithpolicy_protecteddata_contentstartposition_contentsize_completionblock_method_objc)
+    - [**protectedDataWithProtectedFile**](/information-protection/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc)
+    - [**customProtectedDataWithPolicy**](/information-protection/sdk/4.2/api/iOS/mscustomprotecteddata#msipcthin2_mscustomprotecteddata_customprotecteddatawithpolicy_protecteddata_contentstartposition_contentsize_completionblock_method_objc)
 
 
 
@@ -232,6 +232,6 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

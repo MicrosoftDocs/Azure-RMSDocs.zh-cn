@@ -4,18 +4,18 @@ description: "多种版本的 Linux 操作系统现都可使用 Microsoft Rights
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 74bd74f1db92c97740b4031b726a0396ecbfb93f
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 561ed44582fe2c73cf40ac082bf67e91d37fb351
 
 
 ---
@@ -60,6 +60,6 @@ Ubuntu 14.04 OpenSUSE 13.2 CentOS 7 **注意：**Windows 和 OSX 上也已成功
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

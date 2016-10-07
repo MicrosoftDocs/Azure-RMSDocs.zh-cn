@@ -4,18 +4,18 @@ description: "借助 RMS SDK 2.1 平台，开发人员可构建利用 RMS 信息
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: 0f50bc77ba7a7f730dda5ef278f21a8d6f0311c4
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 8c5b7d17b5feffa07028498e8d7f201b25626478
 
 
 ---
@@ -76,6 +76,6 @@ RMS SDK 2.1 支持一系列重要的客户端和服务器平台。 有关详细�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

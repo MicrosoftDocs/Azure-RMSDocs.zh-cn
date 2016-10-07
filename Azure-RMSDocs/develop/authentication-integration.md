@@ -4,18 +4,18 @@ description: "介绍针对启用 RMS 的应用的用户身份验证基础知识�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 07/07/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: 87ffcdaeaae80efa23c0ed7e7ce95ac7f63c62e0
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 2f4e0d1990362ab50d90b1a31c3b5db45d2fcdd1
 
 
 ---
@@ -36,9 +36,9 @@ ms.openlocfilehash: 87ffcdaeaae80efa23c0ed7e7ce95ac7f63c62e0
 ## 为你的应用实施用户身份验证
 每个 RMS API 都具有回调，必须实现它才能启用用户的身份验证。 然后 RMS SDK 4.2 会在你未提供访问令牌时、你的访问令牌需要刷新时或是访问令牌已过期时使用你的回调实现。
 
-- Android -  [AuthenticationRequestCallback](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 和 [AuthenticationCompletionCallback](/rights-management/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java) 接口。
-- iOS / OS X -  [MSAuthenticationCallback](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 协议。
--  Windows Phone / Window RT -  [IAuthenticationCallback](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback) 接口。
+- Android -  [AuthenticationRequestCallback](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 和 [AuthenticationCompletionCallback](/information-protection/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java) 接口。
+- iOS / OS X -  [MSAuthenticationCallback](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 协议。
+-  Windows Phone / Window RT -  [IAuthenticationCallback](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback) 接口。
 - Linux -  [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html) 接口。
 
 ### 要用于身份验证的库是什么
@@ -274,6 +274,6 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

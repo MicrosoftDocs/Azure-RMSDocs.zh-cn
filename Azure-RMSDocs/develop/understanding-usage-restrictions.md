@@ -4,18 +4,18 @@ description: "所有启用 RMS 的应用程序都必须强制实施使用限制�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: E388B16C-ECDA-4696-A040-D457D3C96766
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: df210bd7aff33fda41a278e6aed1108574fe68eb
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 1d1433eb4468fd74689243c1ca63134a406e0f96
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df210bd7aff33fda41a278e6aed1108574fe68eb
 
 所有启用 RMS 的应用程序都必须强制实施使用限制。 使用限制是在用户尝试执行操作时产生的结果（例如 打印文档），但该文档的 RMS 策略未授予他们执行该操作的权限（例如 打印权限）。
 
-可以使用 [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck) 函数查询某个文档的用户权限。
+可以使用 [**IpcAccessCheck**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcaccesscheck) 函数查询某个文档的用户权限。
 
 ## 了解使用限制
 
@@ -48,7 +48,7 @@ ms.openlocfilehash: df210bd7aff33fda41a278e6aed1108574fe68eb
 
 ## 相关主题
 
-* [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
+* [**IpcAccessCheck**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
 * [使用限制参考](usage-restriction-reference.md)
  
 
@@ -56,6 +56,6 @@ ms.openlocfilehash: df210bd7aff33fda41a278e6aed1108574fe68eb
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
