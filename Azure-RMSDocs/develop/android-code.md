@@ -4,18 +4,18 @@ description: "本主题向你介绍 Android 版本的 RMS SDK 的重要代码元
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 809a79e38a010687d4fac402cb53416359dda0d2
 
 
 ---
@@ -37,11 +37,11 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
 
 ### 方案：使用受 RMS 保护的文件
 
--   **步骤 1**：创建 [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java)
+-   **步骤 1**：创建 [**ProtectedFileInputStream**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java)
 
     **源**：*MsipcAuthenticationCallback.java*
 
-    **说明**：通过 create 方法实例化 [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) 对象，该方法使用 [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 实现服务身份验证，以便通过将 **AuthenticationRequestCallback** 的实例作为参数 *mRmsAuthCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码节结尾附近的 [**ProtectedFileInputStream.create**](/rights-management/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_method) 调用。
+    **说明**：通过 create 方法实例化 [**ProtectedFileInputStream**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) 对象，该方法使用 [**AuthenticationRequestCallback**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 实现服务身份验证，以便通过将 **AuthenticationRequestCallback** 的实例作为参数 *mRmsAuthCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码节结尾附近的 [**ProtectedFileInputStream.create**](/information-protection/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_method) 调用。
 
         public void startContentConsumptionFromPtxtFileFormat(InputStream inputStream)
         {
@@ -106,7 +106,7 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
 
     **源**：*MsipcAuthenticationCallback.java*。
 
-    **说明**：在此步骤中，你会看到 ADAL 用于通过示例身份验证参数来实现 [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java)。 有关使用 ADAL 的详细信息，请参阅 [Azure AD 身份验证库 (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。
+    **说明**：在此步骤中，你会看到 ADAL 用于通过示例身份验证参数来实现 [**AuthenticationRequestCallback**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java)。 有关使用 ADAL 的详细信息，请参阅 [Azure AD 身份验证库 (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。
 
 
         class MsipcAuthenticationCallback implements AuthenticationRequestCallback
@@ -182,7 +182,7 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
                       }
 
 
--   **步骤 3**：通过 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) 的 [**accessCheck**](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_accesscheck_method_java) 方法，检查对于具有此内容的此用户是否存在 **Edit** 权限。
+-   **步骤 3**：通过 [**UserPolicy**](/information-protection/sdk/4.2/api/android/userpolicy) 的 [**accessCheck**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_accesscheck_method_java) 方法，检查对于具有此内容的此用户是否存在 **Edit** 权限。
 
     **源**：*TextEditorFragment.java*
 
@@ -201,7 +201,7 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
 
 此方案首先获取模板列表，选择第一个模板以创建策略，然后创建并写入新的受保护的文件。
 
--   **步骤 1**：通过 [**TemplateDescriptor**](/rights-management/sdk/4.2/api/android/templatedescriptor#msipcthin2_templatedescriptor_class_java) 对象获取模板列表。
+-   **步骤 1**：通过 [**TemplateDescriptor**](/information-protection/sdk/4.2/api/android/templatedescriptor#msipcthin2_templatedescriptor_class_java) 对象获取模板列表。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -232,7 +232,7 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
       }
 
 
--    **步骤 2**：使用列表中的第一个模板创建 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy)。
+-    **步骤 2**：使用列表中的第一个模板创建 [**UserPolicy**](/information-protection/sdk/4.2/api/android/userpolicy)。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -264,7 +264,7 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
       }
 
 
--    **步骤 3**：创建 [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java) 并向其中写入内容。
+-    **步骤 3**：创建 [**ProtectedFileOutputStream**](/information-protection/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java) 并向其中写入内容。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -323,7 +323,7 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
 
 ### 方案：打开自定义受保护的文件
 
--   **步骤 1**：通过 *serializedContentPolicy* 创建 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy)。
+-   **步骤 1**：通过 *serializedContentPolicy* 创建 [**UserPolicy**](/information-protection/sdk/4.2/api/android/userpolicy)。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -365,7 +365,7 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
 
 
 
--    **步骤 2**：使用来自 **步骤 1** 的 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) 创建 [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java)。
+-    **步骤 2**：使用来自 **步骤 1** 的 [**UserPolicy**](/information-protection/sdk/4.2/api/android/userpolicy) 创建 [**CustomProtectedInputStream**](/information-protection/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java)。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -419,7 +419,7 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
       CustomProtectedInputStream.create(userPolicy, inputStream,                                 encryptedContentLength,                                 customProtectedInputStreamCreationCallback); } catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e) {  ... } catch (IOException e) {  ... }
 
 
--    **步骤 3**：将内容从 [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java) 读取到 *mDecryptedContent* 中，然后关闭。
+-    **步骤 3**：将内容从 [**CustomProtectedInputStream**](/information-protection/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java) 读取到 *mDecryptedContent* 中，然后关闭。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -442,7 +442,7 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
 
     **源**：*MsipcTaskFragment.java*
 
-    **说明**：实际上，会使用来自设备接口的用户输入创建以下对象；[**UserRights**](/rights-management/sdk/4.2/api/android/userrights#msipcthin2_userrights_class_java) 和 [**PolicyDescriptor**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java)。
+    **说明**：实际上，会使用来自设备接口的用户输入创建以下对象；[**UserRights**](/information-protection/sdk/4.2/api/android/userrights#msipcthin2_userrights_class_java) 和 [**PolicyDescriptor**](/information-protection/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java)。
 
 
 
@@ -452,7 +452,7 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
 
 
 
--    **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy)。
+-    **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [**UserPolicy**](/information-protection/sdk/4.2/api/android/userpolicy)。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -461,7 +461,7 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
 
 
 
--   **步骤 3**：创建内容并写入 [**CustomProtectedOutputStream**](/rights-management/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_class_java)，然后关闭。
+-   **步骤 3**：创建内容并写入 [**CustomProtectedOutputStream**](/information-protection/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_class_java)，然后关闭。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -530,6 +530,6 @@ ms.openlocfilehash: aabb3d79049c257cc979e929aa5ed9bbc4673cde
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
