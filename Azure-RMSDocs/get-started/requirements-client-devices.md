@@ -1,32 +1,32 @@
 ---
-title: "Azure RMS 要求&#58; 客户端设备 | Azure RMS"
-description: "确定哪些设备支持 Azure Rights Management (Azure RMS)。"
+title: "数据保护的客户端设备支持 | Azure 信息保护"
+description: "确定哪些设备支持 Azure 信息保护中的 Azure Rights Management 服务。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: e52720c09e3541a16c2e234bbd336cc7916ccfe1
+ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
+ms.openlocfilehash: 3b9c126211389dfe14bb5f1cc4ec8be1213df49d
 
 
 ---
 
 
-# Azure RMS 要求：Azure RMS 支持的客户端设备
+# 支持 Azure Rights Management 数据保护的客户端设备
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-使用以下部分可以确定哪些设备支持 Azure Rights Management (Azure RMS)。
+使用下列部分来确定哪些设备支持 Azure Rights Management 服务，它提供了 Azure 信息保护的数据保护。
 
 ## 计算机
-以下计算机操作系统支持 Azure Rights Management：
+以下计算机操作系统支持 Azure Rights Management 服务：
 
 -   **Windows 7** (x86, x64)
 
@@ -39,7 +39,7 @@ ms.openlocfilehash: e52720c09e3541a16c2e234bbd336cc7916ccfe1
 -   **Mac OS X**：最低版本的 Mac OS X 10.8 (Mountain Lion)
 
 ## 移动设备
-以下移动设备操作系统支持 Azure Rights Management：
+以下移动设备操作系统支持 Azure Rights Management 服务：
 
 -   **Windows Phone**：Windows Phone 8.1
 
@@ -51,11 +51,11 @@ ms.openlocfilehash: e52720c09e3541a16c2e234bbd336cc7916ccfe1
 
 
 ## 后续步骤
-若要查看其他要求，请参阅 [Azure Rights Management 的要求](requirements-azure-rms.md)。
+若要查看其他要求，请参阅 [Azure 信息保护的要求](requirements-azure-rms.md)。
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

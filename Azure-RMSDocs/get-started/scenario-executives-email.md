@@ -1,28 +1,28 @@
 ---
-title: "方案 - 高级管理人员安全地交换特权信息 | Azure RMS"
-description: "此方案和支持用户文档使用 Azure Rights Management 以便高级管理人员可以安全地通过电子邮件彼此交换电子邮件和附件，而策略会自动将访问权限限制为高级管理人员而无需他们采取任何特殊操作。"
+title: "方案 - 高级管理人员安全地交换特权信息 | Azure 信息保护"
+description: "此方案和支持性的用户文档使用 Azure Rights Management 保护，以便高级管理人员可以安全地通过电子邮件彼此交换电子邮件和附件，而策略会自动将访问权限限制为高级管理人员而无需他们采取任何特殊操作。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/19/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3b0b165f594da47c090f7822afed2a80541b71e8
-ms.openlocfilehash: 511eb0b95039bb7ee1c4a4f06778a18c1cf6c542
+ms.sourcegitcommit: b61b7068e67103c45aea139cf95dacb851fe70e2
+ms.openlocfilehash: fb25a5f97580e7d912016bbeb304e6470f8cbba0
 
 
 ---
 
 # 方案 - 高级管理人员安全地交换特权信息
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-此方案和支持用户文档使用 Azure Rights Management 以便高级管理人员可以安全地通过电子邮件彼此交换电子邮件和附件，而策略会自动将访问权限限制为高级管理人员而无需他们采取任何特殊操作。 电子邮件和所有附件将自动由 Azure Rights Management 保护。
+此方案和支持性的用户文档使用 Azure 信息保护中的 Azure Rights Management 技术，以便高级管理人员可以安全地通过电子邮件彼此交换电子邮件和附件，而策略会自动将访问权限限制为高级管理人员而无需他们采取任何特殊操作。 电子邮件和所有附件将自动由 Azure Rights Management 保护。
 
 如果需要，可以向该规则中添加一条例外情况，如电子邮件主题中的 DNP（表示“不保护”）缩写，以便高级管理人员如需向其他高级管理人员发送未受保护的电子邮件时指定此规则 - 例如，在转发给其他人前进行审阅。
 
@@ -44,11 +44,11 @@ ms.openlocfilehash: 511eb0b95039bb7ee1c4a4f06778a18c1cf6c542
 
 |要求|需要更多信息|
 |---------------|--------------------------------|
-|已准备好 Office 365 或 Azure Active Directory 的帐户和组：<br /><br />- 一个名为**高级管理人员**的启用邮件的组，所有高级管理人员均为此组的成员<br /><br />- 一个名为 **RMS 管理员**的启用邮件的组，将配置 Azure RMS 的所有管理员均为此组的成员|[准备 Azure 权限管理](https://technet.microsoft.com/library/jj585029.aspx)|
-|你的 Azure 权限管理租户密钥由 Microsoft 管理；你没有使用 BYOK|[计划和实现你的 Azure Rights Management 租户密钥](https://technet.microsoft.com/library/dn440580.aspx)|
-|已激活 Azure Rights Management|[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)|
-|以下配置之一：<br /><br />- 已为 Azure Rights Management 启用了 Exchange Online<br /><br />- 已为 Exchange 内部部署安装和配置了 RMS 连接器|对于 Exchange Online：请参阅[为 Azure Rights Management 配置应用程序](https://technet.microsoft.com/library/jj585031.aspx)中的 **Exchange Online：IRM 配置**部分。<br /><br />对于 Exchange 内部部署：请参阅[部署 Azure Rights Management 连接器](https://technet.microsoft.com/library/dn375964.aspx)|
-|已按下文所述配置了自定义模板|[为 Azure Rights Management 配置自定义模板](https://technet.microsoft.com/library/dn642472.aspx)|
+|已准备好 Office 365 或 Azure Active Directory 的帐户和组：<br /><br />- 一个名为**高级管理人员**的启用邮件的组，所有高级管理人员均为此组的成员<br /><br />- 一个名为 **RMS 管理员**的启用邮件的组，将配置 Azure RMS 的所有管理员均为此组的成员|[准备 Azure 信息保护](../plan-design/prepare.md)|
+|Azure 信息保护租户密钥由 Microsoft 管理；没有使用 BYOK|[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)|
+|已激活 Azure Rights Management|[激活 Azure 权限管理](../deploy-use/activate-service.md)|
+|以下配置之一：<br /><br />- 已为 Azure Rights Management 启用了 Exchange Online<br /><br />- 已为 Exchange 内部部署安装和配置了 RMS 连接器|对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](../deploy-use/configure-office365.md#exchange-online-irm-configuration)信息。<br /><br />对于 Exchange 内部部署：请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)|
+|已按下文所述配置了自定义模板|[为 Azure Rights Management 配置自定义模板](../deploy-use/configure-custom-templates.md)|
 |已按本文之后章节所述为 IRM 配置了传输保护规则|对于 Exchange Online，请参阅：[邮件流或传输规则](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)<br /><br />对于 Exchange 2013：请参阅[创建传输保护规则](https://technet.microsoft.com/en-us/library/dd302432(v=exchg.150))<br /><br />对于 Exchange 2010：请参阅[创建传输保护规则](https://technet.microsoft.com/library/dd302432(v=exchg.141))|
 
 ### 为高级管理人员配置自定义模板
@@ -132,6 +132,6 @@ ms.openlocfilehash: 511eb0b95039bb7ee1c4a4f06778a18c1cf6c542
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

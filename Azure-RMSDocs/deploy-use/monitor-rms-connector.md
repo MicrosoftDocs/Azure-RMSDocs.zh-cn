@@ -1,28 +1,28 @@
 ---
-title: "监视 Azure Rights Management 连接器 | Azure RMS"
-description: "此信息可帮助你监视连接器以及组织对 Azure RMS 的使用情况。"
+title: "监视 Azure Rights Management 连接器 | Azure 信息保护"
+description: "帮助监视连接器和组织使用 Azure 信息保护中 Azure Rights Management 服务的信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 97b8107e1529271376c21837b3ac357dba9235d2
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 954d8b7b62b35f5fdd29e115681d9d5c0da69a86
 
 
 ---
 
 # 监视 Azure Rights Management 连接器
 
->*适用于：Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+>*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
 
-安装并配置 RMS 连接器后，你可以使用以下方法和信息以帮助你监视连接器和 Azure RMS 组织的使用。
+安装并配置 RMS 连接器后，可以使用以下方法和信息以帮助监视连接器和组织使用 Azure 信息保护中 Azure Rights Management 服务的情况。
 
 ## 应用程序事件日志条目
 
@@ -32,10 +32,10 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 如果你还未将连接器配置为使用 HTTP，你应该会看到一个警告 ID 2002：客户正在使用不安全的 (HTTP) 连接。
 
-如果连接器无法连接到 Azure RMS，你将很有可能看到错误 3001。 例如，这可能是 DNS 问题或一个或多个运行 RMS 连接器的服务器缺少 Internet 访问的结果。 
+如果连接器无法连接到 Azure Rights Management 服务，将很有可能看到错误 3001。 例如，这可能是 DNS 问题或一个或多个运行 RMS 连接器的服务器缺少 Internet 访问的结果。 
 
 > [!TIP]
-> RMS 连接器服务器无法连接到 Aure RMS 通常是由 Web 代理配置引起的。
+> RMS 连接器服务器无法连接到 Azure Rights Management 服务，通常是由 Web 代理配置引起的。
 
 对于所有事件日志条目，进一步查看消息以了解更多详细信息。
 
@@ -83,7 +83,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 **已更新授权帐户列表。**
 
-当 RMS 连接器下载了有权使用 RMS 连接器的帐户的最新列表（现有帐户及任何更改）时，将记录此事件。 如果 RMS 连接器可以与 Azure RMS 通信，则此列表每 15 分钟下载一次。
+当 RMS 连接器下载了有权使用 RMS 连接器的帐户的最新列表（现有帐户及任何更改）时，将记录此事件。 如果 RMS 连接器可以与 Azure Rights Management 服务通信，则此列表每 15 分钟下载一次。
 
 ----
 
@@ -99,7 +99,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 **试图对 Microsoft RMS 连接器进行未经授权的访问。**
 
-当帐户尝试连接到 RMS 连接器但失败时，将记录此事件。 其最典型的原因是因为建立连接的帐户不在 RMS 连接器从 Azure RMS 下载的授权帐户下载列表中。 例如，尚未下载最新列表（这种情况每 15 分钟发生一次）或者从列表中找不到该帐户。 
+当帐户尝试连接到 RMS 连接器但失败时，将记录此事件。 其最典型的原因是建立连接的帐户不在 RMS 连接器从 Azure Rights Management 服务下载的授权帐户下载列表中。 例如，尚未下载最新列表（这种情况每 15 分钟发生一次）或者从列表中找不到该帐户。 
 
 另一个原因可能是因为在配置为使用 RMS 连接器的同一服务器上安装了该连接器。 例如，在运行 Exchange Server 的服务器上安装 RMS 连接器，并授权 Exchange 帐户使用该连接器。 由于 RMS 连接器无法正确地标识试图进行连接的帐户，因此不支持此配置。
 
@@ -155,9 +155,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 ## 性能计数器
 
-当你安装 RMS 连接器时，它将自动创建 “Microsoft Rights Management 连接器”性能计数器，你可能会发现这很有用，可以帮助你监视通过连接器使用 Azure RMS 的性能。 
-
-例如，如果保护文档或电子邮件时，或打开受保护的文档或电子邮件时定时经历延迟，性能计数器可以帮助你确定该延迟是由连接器上的处理时间、来自 Azure RMS 的处理时间还是网络延迟所引起的。 若要帮助你识别出现延迟的位置，请查找包含“连接器处理时间”、“服务响应时间”和“连接器响应时间”的平均计数的计数器。 例如：“授权成功批处理请求平均连接器响应时间”。
+安装 RMS 连接器时，它将自动创建 **Microsoft Rights Management 连接器**性能计数器，可帮助你监视通过连接器使用 Azure Rights Management 服务的性能。 例如，如果保护文档或电子邮件，或打开受保护的文档或电子邮件时经常经历延迟，性能计数器可以帮助你确定该延迟是由连接器上的处理时间、Azure Rights Management 服务的处理时间，还是由网络延迟引起的。 若要帮助你识别出现延迟的位置，请查找包含“连接器处理时间”、“服务响应时间”和“连接器响应时间”的平均计数的计数器。 例如：“授权成功批处理请求平均连接器响应时间”。
 
 如果你最近添加了新的服务器帐户以使用连接器，你可以检查计数器“上次授权策略更新后的时间”来确认在你对其更新后，连接器已经下载了列表，或者你是否需要等待稍长的时间（最多 15 分钟）。
 
@@ -194,6 +192,6 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
