@@ -1,26 +1,26 @@
 ---
-title: "下载并安装 Rights Management 共享应用程序 | Azure RMS"
+title: "下载并安装 Rights Management 共享应用程序 | Azure 信息保护"
 description: "有关以交互方式安装适用于 Windows 的 RMS 共享应用程序，以便可以安全地与他人共享文档的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44541b6fe2567d23174b26cb42fec0731f5d3f58
-ms.openlocfilehash: b01896dc49a6c581427393f9e3fc21dbbd235238
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: c705bfec85bb93cb03d7e3edc9f3ce5949a8b61d
 
 
 ---
 
 # 下载和安装 Rights Management 共享应用程序
 
->*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 你无需是本地管理员就能安装 RMS 共享应用程序。 但是，如果你不是本地管理员而使用 Office 2010，就会有一些限制。 有关详细信息，请参阅本页上的[如果你不是本地管理员，并且使用 Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) 部分。
 
@@ -44,13 +44,13 @@ ms.openlocfilehash: b01896dc49a6c581427393f9e3fc21dbbd235238
 ## 如果你不是本地管理员，而且使用 Office 2010
 如果你登录到计算机而没有本地管理权限，并且安装程序检测到你已安装 Office 2010，就会显示一条警告消息，指出某些方案将不适用于此配置。 这些方案包括：
 
--   如果你组织使用 Azure RMS 而不是本地版本的 RMS：
+-   如果组织使用 Azure 信息保护中的 Azure Rights Management 服务，而不是本地版本的 Rights Management，那么：
 
     -   Office 的信息权限管理 (IRM) 功能将不可用。 例如，电子邮件的“不转发”选项，以及可在 Word 和 Excel 的“文件”菜单中设置的“限制访问”权限。 你可以使用功能区中的“共享保护项”选项，以及文件资源管理器中的右键单击选项。
 
--   如果你组织使用本地版本的 RMS 而不是 Azure RMS：
+-   如果组织使用的是本地版本的 Rights Management，而不是 Azure 信息保护中的 Azure Rights Management 服务，那么：
 
-    -   你将无法读取另一个组织中的人员发送给你的使用 Azure RMS 保护的文档。
+    -   无法读取使用 Azure Rights Management 服务的另一个组织中的人员发送给你的受保护的文档。
 
 如果你不是本地管理员而使用 Office 365 或 Office 2013，你将不会看到此消息，并且支持这些方案。
 
@@ -69,6 +69,6 @@ ms.openlocfilehash: b01896dc49a6c581427393f9e3fc21dbbd235238
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

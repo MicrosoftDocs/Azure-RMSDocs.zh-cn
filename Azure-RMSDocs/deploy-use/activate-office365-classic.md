@@ -1,26 +1,26 @@
 ---
-title: "如何从 Office 365 经典管理中心激活 Azure Rights Management | Azure RMS"
-description: "有关具有 Office 365 管理中心经典（原始）版本访问权限时 Azure RMS 的激活说明。"
+title: "如何从 Office 365 经典管理中心激活 Azure Rights Management | Azure 信息保护"
+description: "有关具有 Office 365 管理中心经典（原始）版本访问权限时 Azure Rights Management 服务的激活说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: e273e34c055846ee2aa4e5eb687592b23b9540b1
+ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
+ms.openlocfilehash: 8e2b4befc9acd2f50472169b8195d2510fa22be8
 
 
 ---
 
 # 如何从 Office 365 经典管理中心激活 Azure Rights Management
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
 
 如果你在使用经典（原始）版本的 Office 365 管理中心，请使用以下说明。
@@ -37,9 +37,9 @@ ms.openlocfilehash: e273e34c055846ee2aa4e5eb687592b23b9540b1
 4.  单击“权限管理” 。
 
     > [!NOTE]
-    >如果未看到此选项，可能是因为你的服务计划或产品版本不包括 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]。
+    >如果未看到此选项，则原因可能是你的服务计划或产品版本不包括 Azure 信息保护的 Azure Rights Management 服务。
     >
-    >使用 [支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md) 中的信息确认是否提供 RMS 支持。 若要获取有关此问题的帮助，请发送电子邮件至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
+    >使用[订阅信息](https://go.microsoft.com/fwlink/?LinkId=827589)确认你的订阅包括 Azure Rights Management。 若要获取有关此问题的帮助，请发送电子邮件至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
 
 5. 在 **“权限管理”** 页上，单击 **“管理”**。
 
@@ -53,6 +53,6 @@ ms.openlocfilehash: e273e34c055846ee2aa4e5eb687592b23b9540b1
 返回 [激活 Azure Rights Management](activate-service.md)。
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

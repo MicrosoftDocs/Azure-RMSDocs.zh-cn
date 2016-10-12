@@ -1,39 +1,39 @@
 ---
-title: "使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护 | Azure RMS"
+title: "使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护 | Azure 信息保护"
 description: "有关将 Rights Management (RMS) 客户端与 RMS 保护工具配合使用，以配置文件服务器资源管理器和文件分类基础结构 (FCI) 的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8a7a433652e76ff1069f0f0a7465483b13c065c
-ms.openlocfilehash: b350a35d44e743de94446409b1bba4256ca38728
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
 
 ---
 
 # 使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
->*适用于：Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+>*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
 
 使用本文获取相关说明和脚本，以将 Rights Management (RMS) 客户端与 RMS 保护工具配合使用，以配置文件服务器资源管理器和文件分类基础结构 (FCI)。
 
-此解决方案允许你自动保护运行 Windows Server 的文件服务器上的文件夹中的所有文件或自动保护符合特定条件的文件。 例如，已分类为包含机密或敏感信息的文件。 此解决方案使用 Azure Rights Management (Azure RMS) 来保护文件，因此必须将此技术部署在你的组织中。
+此解决方案允许你自动保护运行 Windows Server 的文件服务器上的文件夹中的所有文件或自动保护符合特定条件的文件。 例如，已分类为包含机密或敏感信息的文件。 此解决方案使用 Azure 信息保护中的 Azure Rights Management 服务来保护文件，因此必须将此技术部署在你的组织中。
 
 > [!NOTE]
-> 尽管 Azure RMS 包括支持文件分类基础结构的[连接器](../deploy-use/deploy-rms-connector.md)，但该解决方案仅支持本机保护（例如，Office 文件）。
+> 尽管 Azure 信息保护包括支持文件分类基础结构的[连接器](../deploy-use/deploy-rms-connector.md)，但该解决方案仅支持本机保护（例如，Office 文件）。
 > 
 > 若要支持使用文件分类基础结构的所有文件类型，必须使用 Windows PowerShell **RMS 保护** 模块，如本文中所述。 RMS 保护 cmdlet（如 RMS 共享应用程序）支持一般性保护和本机保护，这意味着可以保护所有文件。 有关这些不同保护级别的详细信息，请参阅 [Rights Management 共享应用程序管理员指南 ](sharing-app-admin-guide.md) 中的 [保护级别 – 本机和常规 ](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 部分。
 
 接下来的说明适用于 Windows Server 2012 R2 或 Windows Server 2012。 如果你运行其他受支持的 Windows 版本，则可能需要调整某些步骤，以适应你的操作系统版本与本文所述的操作系统版本之间的差异。
 
-## 使用 Windows Server FCI 的 Azure RMS 保护的先决条件
+## 使用 Windows Server FCI 的 Azure Rights Management 保护的先决条件
 这些说明的先决条件：
 
 -   在你将运行使用文件分类基础结构的文件资源管理器的每个文件服务器上：
@@ -48,7 +48,7 @@ ms.openlocfilehash: b350a35d44e743de94446409b1bba4256ca38728
 
     -   已使用配置的计算机设置（如果代理服务器需要）建立 Internet 连接。 例如： `netsh winhttp import proxy source=ie`
 
--   已为你的 Azure Rights Management 部署配置附加先决条件，如 [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)中所述。 具体而言，你使用以下值通过服务主体连接到 Azure RMS：
+-   已为你的 Azure 信息保护部署配置附加先决条件，如 [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx) 中所述。 具体而言，你使用以下值通过服务主体连接到 Azure Rights Management 服务：
 
     -   BposTenantId
 
@@ -56,7 +56,7 @@ ms.openlocfilehash: b350a35d44e743de94446409b1bba4256ca38728
 
     -   对称密钥
 
--   你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure RMS 保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此帐户配置的详细信息，请参阅[准备 Azure Rights Management](../plan-design/prepare.md)。
+-   你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 服务保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此帐户配置的详细信息，请参阅[准备 Azure Rights Management 服务](../plan-design/prepare.md)。
 
 -   已确定要使用的 Rights Management 模板，该模板将保护文件。 请确保你通过使用 [Get-RMSTemplate](https://msdn.microsoft.com/library/azure/mt433197.aspx) cmdlet 知道此模板的 ID。
 
@@ -94,7 +94,7 @@ ms.openlocfilehash: b350a35d44e743de94446409b1bba4256ca38728
 
         `[Parameter(Mandatory = $false)]             [string]$AppPrincipalId = "b5e3f76a-b5c2-4c96-a594-a0807f65bba4",`
 
-    -   搜索以下字符串并将其替换为你自己的对称密钥，你将在 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet 中使用此对称密钥连接到 Azure RMS：
+    -   搜索以下字符串并将其替换为你自己的对称密钥，你将在 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet 中使用此对称密钥连接到 Azure Rights Management 服务：
 
         ```
         <enter your key here>
@@ -105,7 +105,7 @@ ms.openlocfilehash: b350a35d44e743de94446409b1bba4256ca38728
 
         `[string]$SymmetricKey = "zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA="`
 
-    -   搜索以下字符串并将其替换为你自己的 BposTenantId（租户 ID），你将在 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet 中使用此 ID 连接到 Azure RMS：
+    -   搜索以下字符串并将其替换为你自己的 BposTenantId（租户 ID），你将在 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet 中使用此对称密钥连接到 Azure Rights Management 服务：
 
         ```
         <enter your BposTenantId here>
@@ -302,6 +302,6 @@ ms.openlocfilehash: b350a35d44e743de94446409b1bba4256ca38728
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

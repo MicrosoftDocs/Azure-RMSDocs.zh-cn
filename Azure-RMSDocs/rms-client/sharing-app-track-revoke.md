@@ -1,34 +1,34 @@
 ---
-title: "使用 RMS 共享应用程序跟踪和撤销文档 | Azure RMS"
+title: "使用 RMS 共享应用程序时跟踪和撤销文档 | Azure 信息保护"
 description: "使用 RMS 共享应用程序保护你的文档后，你可以跟踪用户如何使用受保护的文档。 如有必要（即需要停止对这些文件的共享），你还可以撤消对这些文件的访问权限。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44541b6fe2567d23174b26cb42fec0731f5d3f58
-ms.openlocfilehash: 2117291a7204dae86b3a6d378ab6af4d84435417
+ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
+ms.openlocfilehash: b8cc9dd2984f7853e1fbacebbb4f6934f918200e
 
 
 ---
 
 # 使用 RMS 共享应用程序跟踪和撤销文档
 
->*适用于：Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
-通过 RMS 共享应用程序对文档进行保护以后，如果你的组织使用的是 Azure Rights Management 而不是 Active Directory Rights Management Services，则可跟踪人们是如何使用你的受保护文档的。 如有必要（即需要停止对这些文件的共享），你还可以撤消对这些文件的访问权限。 若要进行此操作，你可以使用**文档跟踪站点**，这些站点可以通过 Windows 计算机、Mac 计算机甚至平板电脑和手机进行访问。
+通过 RMS 共享应用程序对文档进行保护以后，如果你的组织使用的是 Azure 信息保护而不是 Active Directory Rights Management Services，则可跟踪人们是如何使用你的受保护文档的。 如有必要（即需要停止对这些文件的共享），你还可以撤消对这些文件的访问权限。 若要进行此操作，你可以使用**文档跟踪站点**，这些站点可以通过 Windows 计算机、Mac 计算机甚至平板电脑和手机进行访问。
 
 <div style="padding-top: 56.25%; position: relative; width: 100%;">
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation/player" frameborder="0" allowfullscreen></iframe>
 </div>
 
-访问该站点时，登录即可对文档进行跟踪。 如果你的组织有一个[支持文档跟踪和吊销的订阅](https://technet.microsoft.com/dn858608.aspx)，而你已被分配了一个该订阅的许可证，你就可以看到谁曾经尝试打开受保护的文件，以及这些用户是否已成功（即成功完成了身份验证）。 他们尝试访问文档的每个时间，以及访问时所在的位置。 此外：
+访问该站点时，登录即可对文档进行跟踪。 如果你的组织有一个[支持文档跟踪和吊销的订阅](https://go.microsoft.com/fwlink/?LinkId=827589)，而你已被分配了一个该订阅的许可证，你就可以看到谁曾经尝试打开受保护的文件，以及这些用户是否已成功（即成功完成了身份验证）。 他们尝试访问文档的每个时间，以及访问时所在的位置。 此外：
 
 -   如果你需要停止共享文档：单击“撤消访问” ，请注意文档将继续可用的时间段，并确定是否允许用户知道你撤消了对之前共享的文档的访问权限，然后提供一条自定义消息。 当你撤消某个文档时，它并不会删除你共享的文档，但获得授权的用户将不再能够打开该文档。
 
@@ -36,7 +36,7 @@ ms.openlocfilehash: 2117291a7204dae86b3a6d378ab6af4d84435417
 
 -   如果你想要配置电子邮件通知：单击“设置”  并选择在访问该文档时是否通过电子邮件发送通知以及发送方式。
 
-- 如果想要为其他人跟踪和撤销共享文档：Azure RMS 管理员可以通过单击“管理员”图标为其他人跟踪和撤销文档。 只有管理员才能看到该图标。
+- 如果想要为其他人跟踪和撤销共享文档：Azure 信息保护管理员可以通过单击“管理员”图标为其他人跟踪和撤销文档。 只有管理员才能看到该图标。
 
 -   如有疑问或想要提供有关文档跟踪站点的反馈：单击“帮助”图标访问 [文档跟踪常见问题](http://go.microsoft.com/fwlink/?LinkId=523977)。
 
@@ -53,7 +53,7 @@ ms.openlocfilehash: 2117291a7204dae86b3a6d378ab6af4d84435417
 如果看不到这些用于 RMS 的选项，则很可能你的计算机上未安装 RMS 共享应用程序、未安装最新版本，或必须重启计算机才能完成安装。 有关如何安装共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md)。
 
 > [!NOTE] 
-> 如果安装了 [Azure 信息保护客户端](../information-protection/info-protect-client.md)的预览版本（1.0.233 版或更高版本），则还可以使用“保护”按钮访问文档跟踪站点： 
+> 如果安装了 [Azure 信息保护客户端](../rms-client/info-protect-client.md)，则还可以使用“保护”按钮访问文档跟踪站点： 
 > 
 > - 在 Office 应用程序的“主页”选项卡的“保护”组中，单击“保护” > “跟踪使用情况”。 
 
@@ -106,6 +106,6 @@ ms.openlocfilehash: 2117291a7204dae86b3a6d378ab6af4d84435417
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

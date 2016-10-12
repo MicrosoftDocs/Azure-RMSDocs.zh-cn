@@ -1,19 +1,19 @@
 ---
-title: "创建、配置和发布自定义模板 | Azure RMS"
+title: "创建、配置和发布自定义模板 | Azure 信息保护"
 description: "有关在 Azure 经典门户中创建和管理自定义模板的说明。 模板可使最终用户和其他管理员轻松地应用可保护文档和电子邮件的合适策略。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 6875d8d4755dc791879838d1f46be87e2e043a3b
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
 
 
 ---
@@ -21,12 +21,12 @@ ms.openlocfilehash: 6875d8d4755dc791879838d1f46be87e2e043a3b
 
 # 创建、配置和发布自定义模板
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
 
 你可以在 Azure 经典门户中创建和管理自定义模板。 可以直接从 Azure 经典门户执行这些操作，也可以登录到 Office 365 管理中心，并选择 Rights Management 的“高级功能”，它会将你重定向至 Azure 经典门户。
 
-必须是全局管理员才能在 Azure 经典门户中创建和管理模板。 如果将 Azure RMS 的全局管理员角色分配给其他用户，他们也可以创建和管理模板，但必须使用 [PowerShell](configure-templates-with-powershell.md)。 有关详细信息，请参阅[是否必须是全局管理员才能配置 Azure RMS？我可以委派给其他管理员吗？](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
+必须是全局管理员才能在 Azure 经典门户中创建和管理模板。 如果已将 Azure Rights Management 服务的全局管理员角色分配给其他用户，他们也可以创建和管理模板，但必须使用 [PowerShell](configure-templates-with-powershell.md)。 有关详细信息，请参阅[是否必须是全局管理员才能配置 Azure RMS？我可以委派给其他管理员吗？](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 请使用以下过程为权限管理创建、配置和发布自定义模板。
 
@@ -45,7 +45,7 @@ ms.openlocfilehash: 6875d8d4755dc791879838d1f46be87e2e043a3b
         4.  在“Rights Management”部分中，单击“高级功能”。
 
             > [!NOTE]
-            > 如果你尚未激活 Rights Management，请首先单击“激活”并确认你的操作。 有关详细信息，请参阅[激活 Azure Rights Management](activate-service.md)。
+            > 如果你尚未激活 Rights Management 服务，请首先单击“激活”并确认你的操作。 有关详细信息，请参阅[激活 Azure Rights Management](activate-service.md)。
             > 
             > 如果你之前未单击“高级功能”，请在激活 Rights Management 后，按照屏幕上的说明获取免费的 Azure 订阅，需要该订阅才能访问 Azure 经典门户。
 
@@ -166,6 +166,6 @@ ms.openlocfilehash: 6875d8d4755dc791879838d1f46be87e2e043a3b
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,51 +1,51 @@
 ---
-title: "解除 Azure Rights Management 授权和停用 Azure Rights Management | Azure RMS"
-description: "有关决定不再想要使用此信息保护解决方案的信息和说明。"
+title: "解除 Azure Rights Management 服务授权和停用 Azure Rights Management 服务 | Azure 信息保护"
+description: "如果你决定不再想要使用 Azure 信息保护中的此信息保护服务，本文提供相关的信息和说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 275cc46ba34eae246ccc52682073f1f4f90cb8a7
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 57ae18a479e06084e1266276a4420a5092c23b8d
 
 
 ---
 
 # 解除 Azure Rights Management 授权和停用 Azure Rights Management
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-通过使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS)，你可以始终控制你的组织是否要保护内容；如果你决定不再想要使用此信息保护解决方案，我们可以保证你仍然可以访问之前受保护的内容。 如果你不需要继续访问之前受保护的内容，仅需停用该服务，让 Azure Rights Management 订阅过期即可。 例如，这适用于完成测试 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]，在生产环境中部署它之前的情况。
+通过使用 Azure 信息保护中的 Azure Rights Management 服务，你可以始终控制你的组织是否要保护内容；如果你决定不再想要使用此信息保护服务，我们可以保证你仍然可以访问之前受保护的内容。 如果你不需要继续访问之前受保护的内容，仅需停用该服务，让 Azure 信息保护订阅过期即可。 例如，这适用于完成测试 Azure 信息保护后再在生产环境中部署它的情况。
 
-但是，如果你已经在生产中部署了 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]，请确保你在停用该服务之前具有 Azure Rights Management 租户密钥的副本，并且要在订阅到期前执行此操作，因为这将确保你可以保留对该服务停用后由 Azure Rights Management 保护的内容的访问权限。 如果你使用了可以在 HSM 中生成和管理自己的密钥的自带密钥 (BYOK) 解决方案，则你已经具有 Azure Rights Management 租户密钥。 但如果该密钥由 Microsoft 管理（默认），请参阅 [Azure Rights Management 租户密钥的操作](operations-tenant-key.md)文章中有关导出租户密钥的说明。
+但是，如果你已经在生产、受保护的文档和电子邮件中部署了 Azure 信息保护，请确保你在停用 Azure Rights Management 服务之前具有 Azure 信息保护租户密钥的副本，并且要在订阅到期前执行此操作，因为这将确保你可以保留对该服务停用后由 Azure Rights Management 保护的内容的访问权限。 如果你使用了可以在 HSM 中生成和管理自己的密钥的自带密钥 (BYOK) 解决方案，则你已经具有 Azure 信息保护租户密钥。 但如果该密钥由 Microsoft 管理（默认），请参阅 [Azure Rights Management 租户密钥的操作](operations-tenant-key.md)文章中有关导出租户密钥的说明。
 
 > [!TIP]
-> 即使在订阅到期后，Azure Rights Management 租户仍可在延长期内用于使用内容。 但是，你将无法再导出租户密钥。
+> 即使在订阅到期后，Azure 信息保护租户仍可在延长期内用于使用内容。 但是，你将无法再导出租户密钥。
 
-如果具有 Azure Rights Management 租户密钥，你可以本地部署 Rights Management (AD RMS)，并将租户密钥导入为可信发布域 (TPD)。 然后，你将具有以下解除 Azure Rights Management 部署授权的选项：
+如果具有 Azure 信息保护租户密钥，你可以本地部署 Rights Management (AD RMS)，并将租户密钥导入为可信发布域 (TPD)。 然后，可以使用以下选项解除 Azure 信息保护部署的授权：
 
 |如果这适用于你…|… 采取的措施：|
 |----------------------------|--------------|
-|你希望所有用户继续使用 Rights Management，但使用本地解决方案而不使用 Azure RMS    →|当现有用户使用经过此更改之后受保护的内容时，请使用 [Set-AadrmMigrationUrl](https://msdn.microsoft.com/library/azure/dn629429.aspx) cmdlet 将他们定向至本地部署。 用户将自动使用 AD RMS 安装以使用受保护内容。<br /><br />对于使用在此更改之前受保护的内容的用户，请将客户端重定向至本地部署，方法是使用 Office 2016 或 Office 2013 的 **LicensingRedirection** 注册表项（如在 RMS 客户端部署注释中的[服务发现部分](../rms-client/client-deployment-notes.md)所述）和 Office 2010 的 **LicenseServerRedirection** 注册表项（如 [Office 注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述）。|
-|你想要完全停止使用 Rights Management    →|赋予指定管理员[超级用户权限](../deploy-use/configure-super-users.md)并给予此管理员 [RMS 保护工具](http://www.microsoft.com/en-us/download/details.aspx?id=47256)。<br /><br />随后，此管理员可使用该工具大量解密之前由 Azure Rights Management 保护的文件夹中的文件，以便文件还原为受保护状态，因此可以不借助 Rights Management 技术（如 Azure RMS 或 AD RMS）进行读取。 此工具可与 Azure RMS 和 AD RMS 一起使用，所以你可以选择在停用 Azure RMS 之前和/或之后解密文件。|
-|你无法标识所有由 Azure RMS 保护的文件，或者你希望用户可以自动读取任何丢失的受保护文件    →|在所有客户端计算机上部署注册表设置，方法是使用 Office 2016 和 Office 2013 的 **LicensingRedirection** 注册表项（如在 RMS 客户端部署注释中的[服务发现部分](../rms-client/client-deployment-notes.md)中所述）和 Office 2010 的 **LicenseServerRedirection** 注册表项（如 [Office 注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述）。<br /><br />另外，部署其他注册表设置以防止用户保护新文件，方法是将 **DisableCreation** 设置为 **1**，如 [Office注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述。|
+|你希望所有用户继续使用 Rights Management，但使用本地解决方案而不使用 Azure 信息保护    →|当现有用户使用经过此更改之后受保护的内容时，请使用 [Set-AadrmMigrationUrl](https://msdn.microsoft.com/library/azure/dn629429.aspx) cmdlet 将他们定向至本地部署。 用户将自动使用 AD RMS 安装以使用受保护内容。<br /><br />对于使用在此更改之前受保护的内容的用户，请将客户端重定向至本地部署，方法是使用 Office 2016 或 Office 2013 的 **LicensingRedirection** 注册表项（如在 RMS 客户端部署注释中的[服务发现部分](../rms-client/client-deployment-notes.md)所述）和 Office 2010 的 **LicenseServerRedirection** 注册表项（如 [Office 注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述）。|
+|你想要完全停止使用 Rights Management    →|赋予指定管理员[超级用户权限](../deploy-use/configure-super-users.md)并给予此管理员 [RMS 保护工具](http://www.microsoft.com/en-us/download/details.aspx?id=47256)。<br /><br />随后，此管理员可使用该工具批量解密之前由 Azure Rights Management 服务保护的文件夹中的文件，以便将文件还原为不受保护状态，因此可以不借助 Rights Management 技术（如 Azure 信息保护或 AD RMS）进行读取。 此工具可以与 Azure 信息保护中的 Azure Rights Management 服务和 AD RMS 共同使用，因此你可以选择在停用 Azure Rights Management 服务之前或之后解密文件，或者将两者结合起来。|
+|你无法标识所有由 Azure 信息保护中的 Azure Rights Management 服务保护的文件，或者你希望用户可以自动读取任何丢失的受保护文件    →|在所有客户端计算机上部署注册表设置，方法是使用 Office 2016 和 Office 2013 的 **LicensingRedirection** 注册表项（如在 RMS 客户端部署注释中的[服务发现部分](../rms-client/client-deployment-notes.md)中所述）和 Office 2010 的 **LicenseServerRedirection** 注册表项（如 [Office 注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述）。<br /><br />另外，部署其他注册表设置以防止用户保护新文件，方法是将 **DisableCreation** 设置为 **1**，如 [Office注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述。|
 |你需要针对任何丢失文件的受控的手动恢复服务    →|赋予数据恢复组中的指定用户 [超级用户权限](../deploy-use/configure-super-users.md)，并给予他们 [RMS 保护工具](http://www.microsoft.com/en-us/download/details.aspx?id=47256)，以便在标准用户提出请求时取消文件保护。<br /><br />在所有计算机上部署注册表设置以防止用户保护新文件，方法是将 **DisableCreation** 设置为 **1**（如 [Office 注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述）。|
 有关此表中的步骤的详细信息，请参阅以下资源：
 
 -   有关 AD RMS 和部署引用的信息，请参阅 [Active Directory Rights Management Service 概述](https://technet.microsoft.com/library/hh831364.aspx)。
 
--   有关将 Azure RMS 租户密钥导入为 TPD 文件的说明，请参阅 [添加可信发布域](https://technet.microsoft.com/library/cc771460.aspx)。
+-   有关将 Azure 信息保护租户密钥导入为 TPD 文件的说明，请参阅 [添加可信发布域](https://technet.microsoft.com/library/cc771460.aspx)。
 
--   如果你需要安装适用于 Azure RMS 的 Windows PowerShell 模块以设置迁移 URL，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
+-   如果你需要安装适用于 Azure Rights Management 的 Windows PowerShell 模块以设置迁移 URL，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
 
-当你准备好为组织停用 Azure RMS 服务时，请使用以下说明。
+准备好为组织停用 Azure Rights Management 服务时，请使用以下说明。
 
 ## 停用权限管理
 使用以下某个过程来停用[!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]。
@@ -91,6 +91,6 @@ ms.openlocfilehash: 275cc46ba34eae246ccc52682073f1f4f90cb8a7
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

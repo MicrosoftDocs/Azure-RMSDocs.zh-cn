@@ -1,6 +1,6 @@
-# [了解和探索](/rights-management/understand-explore/azure-rights-management)
-# [开始使用](/rights-management/get-started/requirements-azure-rms)
-# [规划和设计](/rights-management/plan-design/deployment-roadmap)
+# [了解和探索](/information-protection/understand-explore/what-is-information-protection)
+# [开始使用](/information-protection/get-started/requirements-azure-rms)
+# [规划和设计](/information-protection/plan-design/deployment-roadmap)
 # [部署和使用该服务](activate-service.md)
 ## [激活服务](activate-service.md)
 ### [Office 365 管理中心预览](activate-office365-preview.md)
@@ -18,12 +18,22 @@
 ### [RMS 共享应用程序](configure-sharing-app.md)
 ## [配置使用情况权限](configure-usage-rights.md)
 ## [为发现服务或数据恢复配置超级用户](configure-super-users.md)
+## [配置信息保护策略](configure-policy.md)
+### [默认策略](configure-policy-default.md)
+### [配置全局设置](configure-policy-settings.md)
+### [创建新标签](configure-policy-new-label.md)
+### [删除或重排标签](configure-policy-delete-reorder.md)
+### [更改标签](configure-policy-change-label.md)
+### [应用保护](configure-policy-protection.md)
+#### [HYOK 限制](configure-adrms-restrictions.md)
+### [配置可视标记](configure-policy-markings.md)
+### [配置条件](configure-policy-classification.md)
 ## [部署 RMS 连接器](deploy-rms-connector.md)
 ### [安装并配置连接器](install-configure-rms-connector.md)
 ### [配置服务器](configure-servers-rms-connector.md)
 #### [注册表设置](rms-connector-registry-settings.md)
 ### [监视连接器](monitor-rms-connector.md)
-## [验证 Azure RMS](verify.md)
+## [验证 Azure Rights Management 服务](verify.md)
 ## [帮助用户保护文件](help-users.md)
 ## [日志记录和分析使用情况](log-analyze-usage.md)
 ## [租户密钥的操作](operations-tenant-key.md)
@@ -32,11 +42,11 @@
 ## [解除授权并停用](decommission-deactivate.md)
 ## [使用 PowerShell 进行管理](administer-powershell.md)
 ### [安装适用于 Azure RMS 的 Windows PowerShell](install-powershell.md)
-# [部署和使用该客户端](/rights-management/rms-client/use-client)
-# [开发和自定义应用](/rights-management/develop/developers-guide)
-# [Azure 信息保护（预览版）](/rights-management/information-protection/what-is-information-protection)
+# [部署和使用该客户端](/information-protection/rms-client/use-client)
+# [开发和自定义应用](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Sep16_HO4-->
 
 
