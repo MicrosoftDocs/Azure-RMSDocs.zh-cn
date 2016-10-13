@@ -4,18 +4,18 @@ description: "Azure RMS 加密包及其使用的代码片段的方向。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 83c4eb741c484018a2837840465aca3276c785c1
-ms.openlocfilehash: b128a9adf75ae8558a33181f63881e2243e840bb
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
 
 
 ---
@@ -40,7 +40,7 @@ ms.openlocfilehash: b128a9adf75ae8558a33181f63881e2243e840bb
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB（也称为不推荐使用的算法）
 
-加密包标记（请参阅[**首选加密**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption)）可与我们的新许可证标记 **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE** 结合使用。
+加密包标记（请参阅[**首选加密**](/information-protection/sdk/2.1/api/win/constants#msipc_preferred_encryption)）可与我们的新许可证标记 **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE** 结合使用。
 
 以下是一些简单的代码段，用于演示如何使用新的许可证属性。
 
@@ -103,6 +103,6 @@ ms.openlocfilehash: b128a9adf75ae8558a33181f63881e2243e840bb
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

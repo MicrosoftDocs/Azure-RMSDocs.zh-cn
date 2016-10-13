@@ -1,33 +1,33 @@
 ---
-title: "查看和使用受 Rights Management 保护的文件 | Azure RMS"
+title: "查看和使用受 Rights Management 保护的文件 | Azure 信息保护"
 description: "有关查看和使用受保护文件（需要安装 Rights Management (RMS) 共享应用程序）的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 8d93968c51ad1037e5424df4ee9b724e0c1f89a2
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 3f906815da2acd8f52bd742306d9936a71229c97
 
 
 ---
 
 # 查看和使用受权限管理保护的文件
 
->*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 如果[计算机安装了权限管理 (RMS) 共享应用程序](install-sharing-app.md)，你只需双击受保护文件即可查看它。 此文件也许是电子邮件中的附件，或者你可能在使用文件资源管理器时看到它。
 
 > [!NOTE]
-> 在你可以查看受保护文件之前，RMS 必须首先确认你有权查看该文件，方法是检查你的用户名和密码。 在某些情况下，此信息会被缓存下来，所以你不会看到要求出示凭据的提示。 在其他情况下，将提示你提供凭据。
+> 在你可以查看受保护文件之前，Rights Management 服务必须首先确认你有权查看该文件，方法是检查你的用户名和密码。 在某些情况下，此信息会被缓存下来，所以你不会看到要求出示凭据的提示。 在其他情况下，将提示你提供凭据。
 >
-> 如果你的组织不使用 Azure Rights Management (Azure RMS) 或 AD RMS，你可以申请会接受你的凭据的免费帐户，以便可以使用 RMS 打开受保护文件：
+> 如果你的组织不使用 Azure 信息保护或 AD RMS，你可以申请会接受你的凭据的免费帐户，以便可以使用 RMS 打开受保护文件：
 >
 > -   若要申请此帐户，请单击链接以申请 [个人 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
 >
@@ -68,7 +68,7 @@ ms.openlocfilehash: 8d93968c51ad1037e5424df4ee9b724e0c1f89a2
 
 
 
-对于 Rights Management 支持的文件扩展名的完整列表，请参阅 [Rights Management 共享应用程序管理员指南](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions)中的[支持的文件类型和文件扩展名](sharing-app-admin-guide.md)部分。 如果你的文件扩展名未列出，则可进行 Web 搜索，看它是否是其他应用程序支持的文件扩展名。
+对于 Rights Management 服务支持的文件扩展名的完整列表，请参阅 [Rights Management 共享应用程序管理员指南](sharing-app-admin-guide.md)中的[支持的文件类型和文件扩展名](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions)部分。 如果你的文件扩展名未列出，则可进行 Web 搜索，看它是否是其他应用程序支持的文件扩展名。
 
 > [!NOTE]
 > 如果在确认该文件受 Rights Management 保护的情况下无法打开该文件，则可下载并使用 [RMS 分析器工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)。 按照工具中的说明进行操作，看你的计算机中是否存在妨碍受保护文档打开的问题。
@@ -90,7 +90,7 @@ ms.openlocfilehash: 8d93968c51ad1037e5424df4ee9b724e0c1f89a2
 
 - **其他文件扩展名**
 
-    若要使用这些文件，你的设备必须具有了解 Rights Management 的应用程序。 这些应用程序称为启用 RMS 的应用程序。 Office 2016、Office 2013 和 Office 2010 应用程序（如 Word、Excel、PowerPoint 和 Outlook）即是为 Rights Management 启用的应用程序的示例。 但是非 Microsoft 应用程序（如其他软件公司的应用程序或你自己的业务线应用程序）也要为 Rights Management 而启用。
+    若要使用这些文件，你的设备必须具有了解 Rights Management 保护的应用程序。 这些应用程序称为启用 RMS 的应用程序。 Office 2016、Office 2013 和 Office 2010 应用程序（如 Word、Excel、PowerPoint 和 Outlook）即是为 Rights Management 启用的应用程序的示例。 但是非 Microsoft 应用程序（如其他软件公司的应用程序或你自己的业务线应用程序）也要为 Rights Management 而启用。
 
     为 Rights Management 而启用的应用程序知道如何打开由其他权限管理启用的应用程序保护的文件。 它们还保留了应用到它们的保护，即使你编辑该文件、将其按其他文件名保存或将其保存到其他位置。 这些应用程序允许你根据当前应用到文件的权限使用文件，以便在你得到授权的情况下可以使用该文件。 例如，你可能能够编辑文件，但不能打印文件。
 
@@ -107,6 +107,6 @@ ms.openlocfilehash: 8d93968c51ad1037e5424df4ee9b724e0c1f89a2
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

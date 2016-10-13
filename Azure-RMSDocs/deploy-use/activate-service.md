@@ -1,39 +1,39 @@
 ---
-title: "激活 Azure Rights Management | Azure RMS"
-description: "必须先激活 (Azure RMS)，然后组织才可以开始使用支持此信息保护解决方案的应用程序和服务保护重要数据。"
+title: "激活 Azure Rights Management | Azure 信息保护"
+description: "必须先激活 Azure Rights Management 服务，然后组织才可以开始使用支持此信息保护解决方案的应用程序和服务来保护文档和电子邮件。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 2a0e1984e76ae355bfab099e0aced956ef93a7de
+ms.sourcegitcommit: e67fe1e6b63be679ae62bb45359db98df59386da
+ms.openlocfilehash: f7880bb46555384be728aa0059f37ad9844a9022
 
 
 ---
 
 # 激活 Azure 权限管理
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-激活 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 后，你的组织便可以开始使用支持此信息保护解决方案的应用程序和服务保护重要数据了。 管理员还可以管理和监视你的组织拥有的受保护文件和电子邮件。 能够开始在 Office、SharePoint 和 Exchange 中使用信息权限管理 (IRM) 功能保护任何敏感或机密文件之前，你必须启用 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]。
+激活 Azure 信息保护的 Azure Rights Management 服务后，你的组织便可以开始使用支持此信息保护解决方案的应用程序和服务保护重要数据了。 管理员还可以管理和监视你的组织拥有的受保护文件和电子邮件。 能够开始在 Office、SharePoint 和 Exchange 中使用信息权限管理 (IRM) 功能保护任何敏感或机密文件之前，必须启用此服务。
 
-如果你要在激活该服务之前了解有关 Azure Rights Management 的详细信息（例如，它解决了哪些业务问题、一些典型用例以及它的工作原理），请参阅 [什么是 Azure Rights Management？](../understand-explore/what-is-azure-rms.md)
+如果你要在激活该服务之前了解有关 Azure Rights Management 服务的详细信息（例如，它解决了哪些业务问题、一些典型用例以及它的工作原理），请参阅[什么是 Azure Rights Management？](../understand-explore/what-is-azure-rms.md)
 
 > [!IMPORTANT]
-> 在激活[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]之前，请确保你的组织具有包含[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]服务的服务计划。 如果没有，你将不能激活 Azure RMS。
+> 在激活[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]之前，请确保你的组织具有包含[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]服务的服务计划。 如果没有，你将不能激活 Azure Rights Management。
 >
-> 有关详细信息，请参阅 [支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md)。
+> 从 Azure 信息保护[定价页](https://go.microsoft.com/fwlink/?LinkId=827589)检查订阅信息，以确认组织具有包括 Azure Rights Management 的订阅。
 
-激活 Azure RMS 后，你的组织中的所有用户将可以对其文件应用信息保护，并且所有用户均可打开（使用）受 Azure RMS 保护的文件。 但是，如果你愿意，可以通过对分阶段部署使用加入控制来限制哪些人员可以应用信息保护。 有关详细信息，请参阅本文中的 [为分阶段部署配置加入控制](#configuring-onboarding-controls-for-a-phased-deployment) 部分。
+激活 Azure Rights Management 服务时，你的组织中的所有用户将可以对其文件应用信息保护，并且所有用户均可打开（使用）受 Azure Rights Management 服务保护的文件。 但是，如果你愿意，可以通过对分阶段部署使用加入控制来限制哪些人员可以应用信息保护。 有关详细信息，请参阅本文中的 [为分阶段部署配置加入控制](#configuring-onboarding-controls-for-a-phased-deployment) 部分。
 
-有关如何从管理门户激活 Rights Management 的说明，请选择是使用 Office 365 管理中心（预览或经典）还是 Azure 经典管理门户：
+有关如何从管理门户激活 Rights Management 服务的说明，请选择是使用 Office 365 管理中心（预览或经典）还是 Azure 经典管理门户：
 
 
 - [Office 365 管理中心 - 预览](activate-office365-preview.md)
@@ -44,15 +44,15 @@ ms.openlocfilehash: 2a0e1984e76ae355bfab099e0aced956ef93a7de
 
 1. 安装 Azure Rights Management 管理工具，将安装 Azure Rights Management 管理模块。 相关说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
 
-2. 在 Windows PowerShell 会话中，运行 [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx)，并在出现提示时提供 Azure RMS 租户的全局管理员帐户详细信息。
+2. 在 Windows PowerShell 会话中，运行 [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx)，并在出现提示时提供 Azure 信息保护租户的全局管理员帐户详细信息。
 
-3. 运行 [Enable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629412.aspx)，该命令将激活 Azure RMS 服务。
+3. 运行 [Enable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629412.aspx)，该命令将激活 Azure Rights Management 服务。
 
 ## 为分阶段部署配置加入控制
-如果你不希望所有用户都能立即使用 Azure RMS 保护文件，则可以使用 [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) Windows PowerShell 命令来配置用户加入控制。 在激活 Azure RMS 之前或之后，你可以运行此命令。
+如果你不希望所有用户都能立即使用 Azure Rights Management 保护文件，则可以使用 [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) Windows PowerShell 命令来配置用户加入控制。 在激活 Azure Rights Management 服务之前或之后，你可以运行此命令。
 
 > [!IMPORTANT]
-> 若要使用此命令，你必须安装至少 **2.1.0.0** 版的 [Azure RMS Windows PowerShell 模块](http://go.microsoft.com/fwlink/?LinkId=257721)。
+> 若要使用此命令，你必须安装至少 **2.1.0.0** 版的 [Azure Rights Management Windows PowerShell 模块](http://go.microsoft.com/fwlink/?LinkId=257721)。
 >
 > 若要检查已安装的版本，请运行：**(Get-Module aadrm –ListAvailable).Version**
 
@@ -63,24 +63,24 @@ Set-AadrmOnboardingControlPolicy – SecurityGroupObjectId fbb99ded-32a0-45f1-b0
 ```
 请注意：对于此配置选项，必须指定组，不能指定单个用户。
 
-或者，如果你要确保只有正确获得使用 Azure RMS 的许可的用户可以保护内容，请使用以下命令：
+或者，如果你要确保只有正确获得使用 Azure 信息保护的许可的用户可以保护内容，请使用以下命令：
 
 ```
 Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $true
 ```
-使用这些加入控制时，组织中的所有用户始终可以使用由用户的子集保护的受保护内容，但他们自身将不能从客户端应用程序应用信息保护。 例如，他们将在其 Office 客户端中看不到激活 Azure RMS 时自动发布的默认模板，也看不到你可能会配置的自定义模板。  服务器端应用程序（如 Exchange）可以为 RMS 集成实现自己的每用户控制，以获得相同的结果。
+使用这些加入控制时，组织中的所有用户始终可以使用由用户的子集保护的受保护内容，但他们自身将不能从客户端应用程序应用信息保护。 例如，他们将在其 Office 客户端中看不到激活 Azure Rights Management 时自动发布的默认模板，也看不到你可能会配置的自定义模板。  服务器端应用程序（如 Exchange）可以为 Rights Management 集成实现自己的每用户控制，以获得相同的结果。
 
 
 ## 后续步骤
-为组织激活 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 之后，向用户和管理员推出 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 之前，可使用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md) 来检查是否还需要执行其他配置步骤。 
+为组织激活 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 之后，向用户和管理员推出 Azure 信息保护之前，可使用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md)来检查是否还需要执行其他配置步骤。 
 
-例如，你可能需要使用 [自定义模板](configure-custom-templates.md) 使用户更方便地对文件应用信息保护，通过安装 [RMS 连接器](deploy-rms-connector.md) 来连接本地服务器以使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]，以及部署 [权限管理共享应用程序](../rms-client/sharing-app-windows.md) 以便对所有设备上的所有文件类型进行保护。 
+例如，你可能需要使用[自定义模板](configure-custom-templates.md)使用户更方便地对文件应用信息保护，通过安装 [Rights Management 连接器](deploy-rms-connector.md)来连接本地服务器以使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]，以及部署 [Rights Management 共享应用程序](../rms-client/sharing-app-windows.md)以便对所有设备上的所有文件类型进行保护。 
 
-Exchange Online 和 SharePoint Online 等 Office 服务需要进行其他配置，然后才能使用其信息权限管理 (IRM) 功能。 有关应用程序如何使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的信息，请参阅 [应用程序如何支持 Azure Rights Management](../understand-explore/applications-support.md)。
-
-
+Exchange Online 和 SharePoint Online 等 Office 服务需要进行其他配置，然后才能使用其信息权限管理 (IRM) 功能。 有关应用程序如何使用 Rights Management 服务的信息，请参阅[应用程序如何支持 Azure Rights Management](../understand-explore/applications-support.md)。
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Sep16_HO4-->
 
 

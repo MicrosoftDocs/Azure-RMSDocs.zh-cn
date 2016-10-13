@@ -4,18 +4,18 @@ description: "本主题包含用于创建启用权限的示例应用程序的说
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: d5f84815a143dd28574c8742da1642cba7c96a62
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 601bd3f8bd0f076e55e6bd7379179d8247063d34
 
 
 ---
@@ -35,7 +35,7 @@ ms.openlocfilehash: d5f84815a143dd28574c8742da1642cba7c96a62
 
 ## 加载 MSIPC.dll
 
-需要先调用 [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 函数以加载 MSIPC.dll，然后才能调用任何 RMS SDK 2.1 函数。
+需要先调用 [**IpcInitialize**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 函数以加载 MSIPC.dll，然后才能调用任何 RMS SDK 2.1 函数。
 
 
 
@@ -67,7 +67,7 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
 
 
 
-此调用会检索安装在默认服务器上的 RMS 模板，并在 *pcTil* 变量指向的 [**IPC\_TIL**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 结构中加载结果，然后显示这些模板。
+此调用会检索安装在默认服务器上的 RMS 模板，并在 *pcTil* 变量指向的 [**IPC\_TIL**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 结构中加载结果，然后显示这些模板。
 
 
 
@@ -91,9 +91,9 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
 
 ## 序列化许可证
 
-需要先序列化许可证并获取内容密钥，然后才能保护任何数据。 内容密钥用于加密敏感数据。 序列化的许可证通常会附加到加密的数据，由受保护的数据的使用者使用。 使用者需要使用序列化的许可证调用 [**IpcGetKey**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey) 函数以获取内容密钥，用于解密内容以及获取与内容关联的策略。
+需要先序列化许可证并获取内容密钥，然后才能保护任何数据。 内容密钥用于加密敏感数据。 序列化的许可证通常会附加到加密的数据，由受保护的数据的使用者使用。 使用者需要使用序列化的许可证调用 [**IpcGetKey**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey) 函数以获取内容密钥，用于解密内容以及获取与内容关联的策略。
 
-为简单起见，使用 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 返回的第一个 RMS 模板序列化许可证。
+为简单起见，使用 [**IpcGetTemplateList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 返回的第一个 RMS 模板序列化许可证。
 
 通常会使用用户界面对话框以允许用户选择所需模板。
 
@@ -114,7 +114,7 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
 
 ## 保护数据
 
-现在你已准备就绪，可以使用 [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函数加密敏感数据。 首先，需要向 **IpcEncrypt** 函数询问加密的数据的大小。
+现在你已准备就绪，可以使用 [**IpcEncrypt**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函数加密敏感数据。 首先，需要向 **IpcEncrypt** 函数询问加密的数据的大小。
 
 
 
@@ -129,7 +129,7 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
 
 
 
-此处的 *wszText* 包含要保护的纯文本。 [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函数返回在 *cbEncrypted* 参数中返回加密的数据的大小。
+此处的 *wszText* 包含要保护的纯文本。 [**IpcEncrypt**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函数返回在 *cbEncrypted* 参数中返回加密的数据的大小。
 
 现在为加密的数据分配内存。
 
@@ -177,7 +177,7 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
     }   
 
 
-**DisplayError** 函数使用 [**IpcGetErrorMessageText**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 函数从对应错误代码获取错误消息并将它打印到标准输出。
+**DisplayError** 函数使用 [**IpcGetErrorMessageText**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 函数从对应错误代码获取错误消息并将它打印到标准输出。
 
 ## 清理
 
@@ -206,12 +206,12 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
 
 * [开发人员说明](developer-notes.md)
 * [配置 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
-* [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt)
-* [**IpcGetErrorMessageText**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
-* [**IpcGetKey**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-* [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
-* [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-* [**IPC\_TIL**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
+* [**IpcEncrypt**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt)
+* [**IpcGetErrorMessageText**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
+* [**IpcGetKey**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
+* [**IpcGetTemplateList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
+* [**IpcInitialize**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
+* [**IPC\_TIL**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
 * [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
  
 
@@ -219,6 +219,6 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -4,18 +4,18 @@ description: "Android 应用程序可以使用 Microsoft Rights Management SDK 4
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de012d0d85bff0e33fef0b4c53291a997d4b4e89
-ms.openlocfilehash: f89ed307eae4ee14f2e463f7fb6d7e2bd07eccd0
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 90c8c97c720c624ba8f1ca7703b6c79a66f77d08
 
 
 ---
@@ -150,6 +150,6 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO1-->
 
 

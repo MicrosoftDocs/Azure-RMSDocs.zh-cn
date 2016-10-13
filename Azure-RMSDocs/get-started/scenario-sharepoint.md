@@ -1,28 +1,28 @@
 ---
-title: "方案 - 保留对 SharePoint 中所存储文档的控制 | Azure RMS"
-description: "此方案和支持性的用户文档使用 Azure Rights Management 来确保存储在 SharePoint 中的 Office 文档通过使用受保护的库仍在你的控制之中。"
+title: "方案 - 保留对 SharePoint 中所存储文档的控制 | Azure 信息保护"
+description: "此方案和支持性的用户文档使用 Azure Rights Management 保护，通过使用受保护的库确保对存储在 SharePoint 中的 Office 文档保留控制。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 048eafc41dcd03c708dca5befbef4e4b9e7113c4
+ms.sourcegitcommit: b61b7068e67103c45aea139cf95dacb851fe70e2
+ms.openlocfilehash: e0e6442e077d6899cbbf88ae2889908e93592815
 
 
 ---
 
 # 方案 - 保留对 SharePoint 中所存储文档的控制
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-此方案和支持性的用户文档使用 Azure Rights Management 来确保存储在 SharePoint 中的 Office 文档通过使用受保护的库仍在你的控制之中。 例如，文档会自动防范由用户意外或有意泄露，并且即使在下载或同步后，你也可以阻止对内容的访问。 你想要保护的文件可能是用于在设计文档或计划上进行内部协作的，或者是用于其他交付的。 为 SharePoint 配置受保护的库时，存储在其中的 Office 文件将受 Azure Rights Management 的保护。
+此方案和支持性的用户文档使用 Azure 信息保护中的 Azure Rights Management 技术，通过使用受保护的库确保对存储在 SharePoint 中的 Office 文档保留控制。 例如，文档会自动防范由用户意外或有意泄露，并且即使在下载或同步后，你也可以阻止对内容的访问。 你想要保护的文件可能是用于在设计文档或计划上进行内部协作的，或者是用于其他交付的。 为 SharePoint 配置受保护的库时，存储在其中的 Office 文件将受 Azure Rights Management 的保护。
 
 这些指令适用于下面一组情况：
 
@@ -42,9 +42,9 @@ ms.openlocfilehash: 048eafc41dcd03c708dca5befbef4e4b9e7113c4
 
 |要求|需要更多信息|
 |---------------|--------------------------------|
-|已准备好 Office 365 或 Azure Active Directory 的帐户和组|[准备 Azure 权限管理](https://technet.microsoft.com/library/jj585029.aspx)|
-|已激活 Azure Rights Management|[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)|
-|如果使用 SharePoint Server：部署 RMS 连接器并针对 SharePoint 进行配置|[部署 Azure Rights Management 连接器](https://technet.microsoft.com/library/dn375964.aspx)|
+|已准备好 Office 365 或 Azure Active Directory 的帐户和组|[准备 Azure 信息保护](../plan-design/prepare.md)|
+|已激活 Azure Rights Management|[激活 Azure 权限管理](../deploy-use/activate-service.md)|
+|如果使用 SharePoint Server：部署 RMS 连接器并针对 SharePoint 进行配置|[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)|
 |为要保护的 SharePoint 站点配置权限|[为列表、库、文件夹、文档或列表项管理权限](https://support.office.com/en-ca/article/Manage-permissions-for-a-list-library-folder-document-or-list-item-9d13e7df-a770-4646-91ab-e3c117fcef45)<br /><br />[将信息权限管理应用于列表或库](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
 |为 IRM 和受保护的库配置 SharePoint|[在 SharePoint 管理中心设置信息权限管理 (IRM)](https://support.office.com/en-us/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239ce6eb-4e81-42db-bf86-a01362fed65c)<br /><br />[将信息权限管理应用于列表或库](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
 
@@ -105,6 +105,6 @@ SharePoint 站点 **销售预测和报告**现已进行了安全协作配置。 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

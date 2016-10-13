@@ -1,32 +1,32 @@
 ---
-title: "使用 Rights Management 共享应用程序，保护你通过电子邮件共享的文件 | Azure RMS"
+title: "使用 Rights Management 共享应用程序，保护通过电子邮件共享的文件 | Azure 信息保护"
 description: "有关如何通过电子邮件安全共享文档的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: ff5dd6afaa454c20f35c237e94947dcec9e737f6
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: b4467f73dd9d107681961f99ee038ed889e25b2d
 
 
 ---
 
 # 使用 Rights Management 共享应用程序保护通过电子邮件共享的文件
 
->*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 在保护你通过电子邮件共享的文件时，将会创建原始文件的新版本。 原始文件仍处于未受保护状态，而新版本已受保护并自动附加到你之后要发送的电子邮件中。
 
-在某些情况下（对于由 Microsoft Word、Excel 和 PowerPoint 创建的文件），RMS 共享应用程序将创建附加到电子邮件的文件的两个版本。 文件的第二个版本的文件扩展名为 **.ppdf** ，它是该文件的 PDF 影子副本。 此版本的文件可确保收件人始终能够读取该文件，即使他们没有安装你用来创建它的相同应用程序也是如此。 通常人们会在移动设备上阅读电子邮件，并且想要查看其电子邮件附件。 他们只需要 RMS 共享应用程序即可打开该文件。 然后，他们可以读取附加的文件，但只有在他们使用支持 RMS 的应用程序打开该文件的其他版本后，才能更改它。
+在某些情况下（对于由 Microsoft Word、Excel 和 PowerPoint 创建的文件），RMS 共享应用程序将创建附加到电子邮件的文件的两个版本。 文件的第二个版本的文件扩展名为 **.ppdf** ，它是该文件的 PDF 影子副本。 此版本的文件可确保收件人始终能够读取该文件，即使他们没有安装你用来创建它的相同应用程序也是如此。 通常人们会在移动设备上阅读电子邮件，并且想要查看其电子邮件附件。 他们只需要 RMS 共享应用程序即可打开该文件。 然后，他们可以读取附加的文件，但只能在使用支持 Rights Management 服务的应用程序打开该文件的其他版本后，才能对其进行更改。
 
-如果你的组织使用 Azure RMS，则你可以跟踪通过共享保护的文件：
+如果组织使用 Azure 信息保护，则可以跟踪通过共享保护的文件：
 
 -   选择相应的选项，以便在有人尝试打开这些受保护的附件时接收电子邮件。 每当有人访问该文件时，你都会收到通知，告诉你谁在尝试打开文件、何时尝试打开文件，以及尝试是否成功（他们是否成功通过了身份验证）。
 
@@ -69,7 +69,7 @@ ms.openlocfilehash: ff5dd6afaa454c20f35c237e94947dcec9e737f6
 
     例如：
 
-    ![Azure RMS 的电子邮件](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
+    ![Azure 信息保护的电子邮件](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
 
     你是否想知道：[自动创建的 .ppdf 文件是什么？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
 
@@ -92,6 +92,6 @@ ms.openlocfilehash: ff5dd6afaa454c20f35c237e94947dcec9e737f6
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,9 +1,10 @@
-# [了解和探索](/rights-management/understand-explore/azure-rights-management)
-# [开始使用](/rights-management/get-started/requirements-azure-rms)
-# [规划和设计](/rights-management/plan-design/deployment-roadmap)
-# [部署和使用该服务](/rights-management/deploy-use/activate-service)
+# [了解和探索](/information-protection/understand-explore/what-is-information-protection)
+# [开始使用](/information-protection/get-started/requirements-azure-rms)
+# [规划和设计](/information-protection/plan-design/deployment-roadmap)
+# [部署和使用该服务](/information-protection/deploy-use/activate-service)
 # [部署和使用该客户端](use-client.md)
 ## [Rights Management 客户端](use-client.md)
+### [安装 Azure 信息保护客户端](info-protect-client.md)
 ### [RMS 客户端部署说明](client-deployment-notes.md)
 ### [使用 Windows Server FCI 的 RMS 保护](configure-fci.md)
 #### [PowerShell 脚本](fci-script.md)
@@ -21,10 +22,9 @@
 ##### [删除保护](sharing-app-remove-protection.md)
 ##### [使用键盘快捷键](sharing-app-keyboard-shortcuts.md)
 ##### [对话框选项](sharing-app-dialog-box.md)
-# [开发和自定义应用](/rights-management/develop/developers-guide)
-# [Azure 信息保护（预览版）](/rights-management/information-protection/what-is-information-protection)
+# [开发和自定义应用](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

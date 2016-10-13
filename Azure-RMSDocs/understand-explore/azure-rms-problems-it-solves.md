@@ -1,19 +1,19 @@
 ---
-title: "Azure RMS 解决了哪些问题 | Azure RMS"
-description: "确定组织可能提出的业务要求或遇到的业务问题，并了解 Azure RMS 是如何满足这些要求或解决这些问题的。"
+title: "Azure RMS 解决了哪些问题 | Azure 信息保护"
+description: "确定组织可能具有的信息保护要求或问题，并了解 Azure RMS 技术是如何满足这些要求或解决这些问题的。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: bc25d2ee7224983d70a23177666c1a72b3db1a17
+ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
+ms.openlocfilehash: 03ada045291115a6cc47353fed36ed9db7a23668
 
 
 ---
@@ -21,13 +21,15 @@ ms.openlocfilehash: bc25d2ee7224983d70a23177666c1a72b3db1a17
 
 # Azure RMS 解决了哪些问题？
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-使用下表了解组织可能提出的业务要求或遇到的业务问题，以及 Azure RMS 是如何满足这些要求或解决这些问题的。
+使用下表了解组织在保护文档和电子邮件方面可能提出的业务要求或遇到的业务问题，以及 Azure RMS 技术是如何满足这些要求或解决这些问题的。
+
+Azure RMS 是 [Azure 信息保护](what-is-information-protection.md)使用的保护技术。
 
 |要求或问题|Azure RMS 所解决的问题|
 |--------------------------|-----------------------|
-|保护所有文件类型|√ 以前，在实施权限管理的过程中，只有 Office 文件才能使用本机保护功能来保护。 现在，[通用保护](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection)意味着支持对所有文件类型进行保护。|
+|保护所有文件类型|√ 在权限管理的早期实现中，只有 Office 文件才能使用本机保护功能来保护。 现在，[通用保护](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection)意味着支持对所有文件类型进行保护。|
 |随处保护文件|√ 当文件保存到某个位置（[就地保护](../rms-client/sharing-app-protect-in-place.md)）时，该文件一直会受到保护，即使它被复制到不受 IT 部门控制的存储（如云存储服务），也是如此。|
 |通过电子邮件安全地共享文件|√ 当文件通过电子邮件共享（[共享保护](../rms-client/sharing-app-protect-by-email.md)）时，该文件会作为电子邮件的附件受到保护，电子邮件中包含如何打开受保护附件的说明。 电子邮件文本没有加密，因此，收件人始终能够阅读这些说明。 但是，由于附加的文档受到保护，因此只有授权用户才能将其打开，即使将该电子邮件或文档转发给其他用户。|
 |审核和监视|√ 你可以 [审核和监视受保护文件的使用情况](../deploy-use/log-analyze-usage.md)，即使这些文件已经离开了组织的边界。<br /><br />例如，你为 Contoso, Ltd. 工作 你正在与来自 Fabrikam, Inc 的 3 名人员一起致力于一个联合项目你通过电子邮件向这 3 人发送了一个已保护并限制为只读的文档。 Azure RMS 审核功能可以提供以下信息：<br /><br />- 你指定的来自 Fabrikam 的人是否打开了该文档，以及打开时间（如果已打开过）。<br /><br />- 你未指定的其他人是否尝试打开该文档却失败了（发生这种情况可能是因为该文档已转发或保存到其他人可以访问的共享位置）。<br /><br />- 指定的任何人是否尝试打印或更改该文档却失败了。|
@@ -72,6 +74,6 @@ Azure RMS 支持以下安全、合规性和法规要求：
 如果对有关 Azure RMS 工作的详细技术信息感兴趣，请参阅 [Azure RMS 的工作原理](how-does-it-work.md) 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

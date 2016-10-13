@@ -1,26 +1,26 @@
 ---
-title: "BYOK 定价和限制 | Azure RMS"
-description: "了解结合使用客户管理密钥（称为“自带密钥”或 BYOK）与 Azure RMS 时的限制。"
+title: "BYOK 定价和限制 | Azure 信息保护"
+description: Understand the restrictions when you use customer-managed keys (known as "bring your own key", or BYOK) with Azure RMS.
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: d704f3d9357993bdb01a38cda6f434ab1583b627
+ms.sourcegitcommit: 36e392d7e9a2fc8cec0419a3e66f92b42137bc72
+ms.openlocfilehash: 3ed4f3c770c1c34d2bda7481d8ca405c51d3fe8c
 
 
 ---
 
 # BYOK 定价和限制
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
 
 具有订阅（包含 Azure 权限管理）的组织可以在 Azure 密钥保管库中使用客户托管的密钥 (BYOK)，并记录其使用情况，无需额外付费。 但是，若要使用 Azure 密钥保管库，必须具有支持含 HSM 保护密钥的密钥保管库的 Azure 订阅。 在 Azure 密钥保管库中使用密钥会按月产生费用。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。
@@ -33,7 +33,7 @@ ms.openlocfilehash: d704f3d9357993bdb01a38cda6f434ab1583b627
 
 ![BYOK 不支持 Exchange Online](../media/RMS_BYOK_noExchange.png)
 
-BYOK 和使用日志记录可以无缝应用程序于任何与 Azure RMS 集成的应用程序。 其中包括 SharePoint Online 等云服务、运行 Exchange 和 SharePoint 的本地服务器（它们通过使用 RMS 连接器来运行 Azure RMS）、Office 2016 和 Office 2013 等客户端应用程序。 无论哪个应用程序请求 Azure RMS，你都将获得密钥使用日志。
+BYOK 和使用情况日志记录可无缝地适用于与 Azure 信息保护使用的 Azure Rights Management 服务 (Azure RMS) 集成的每个应用程序。 其中包括 SharePoint Online 等云服务、运行 Exchange 和 SharePoint 的本地服务器（它们通过使用 RMS 连接器来运行 Azure RMS）、Office 2016 和 Office 2013 等客户端应用程序。 无论哪个应用程序请求 Azure RMS，你都将获得密钥使用日志。
 
 但有一个例外：目前， **Azure RMS BYOK 不兼容 Exchange Online**。 如果你使用 Exchange Online，我们建议你暂时以默认密钥管理模式部署 Azure RMS，由 Microsoft 生成和管理你的密钥。 例如，以后你可以在 Exchange Online 不支持 Azure RMS BYOK 时，选择改用 BYOK。 但是，如果你不能等待，则目前可以采用另一种做法，那就是使用 BYOK 部署 Azure RMS，在这种情况下，Exchange 的 RMS 功能将会下降（未受保护的电子邮件和未受保护的附件将保持完全正常运行）：
 
@@ -62,6 +62,6 @@ BYOK 和使用日志记录可以无缝应用程序于任何与 Azure RMS 集成�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

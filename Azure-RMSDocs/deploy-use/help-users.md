@@ -1,32 +1,32 @@
 ---
-title: "帮助用户使用 Azure Rights Management 保护文件 | Azure RMS"
-description: "此信息可帮助你在为组织部署和配置 Azure Rights Management (Azure RMS) 之后，为用户、管理员和技术支持提供指导。"
+title: "通过使用 Azure Rights Management 服务帮助用户保护文件 | Azure 信息保护"
+description: "此信息可帮助你在部署和配置 Azure 信息保护中的 Azure Rights Management 之后，为用户、管理员和技术支持提供指导。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 0ff8282d01957af1a0dd59673ae2e94a6d879f39
+ms.sourcegitcommit: 55fd22b60ad87dadce0ffb89bb658e949670f728
+ms.openlocfilehash: 56bb2e90f9d1ecb7c925ab22cf1dba16246876f7
 
 
 ---
 
-# 帮助用户使用 Azure Rights Management 保护文件
+# 使用 Azure Rights Management 服务帮助用户保护文件
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-在你为组织部署和配置 Azure Rights Management (Azure RMS) 之后，请为用户、管理员和你的技术支持提供以下帮助和指导：
+为组织部署和配置 Azure 信息保护之后，请为用户、管理员和技术支持提供以下帮助和指导：
 
 -   **最终用户信息：**
 
-    让用户知道如何以及何时保护包含敏感信息的文档和电子邮件。 只要有可能，都应该提供其现有工作流的这些信息，使他们可以将附加的步骤合并到熟知的过程中，而不是引入全新的过程。 请务必让他们知道你的业务的相关优势（和风险），并提供有关何时应该保护文件和电子邮件的指导。 如果你配置了 [自定义模板](configure-custom-templates.md)，请提供有关在模板名称和描述不足以帮助用户选择正确模板时应该选择哪个模板的说明。
+    让用户知道如何以及何时保护包含敏感信息的文档和电子邮件。 只要有可能，都应该提供其现有工作流的这些信息，使他们可以将附加的步骤合并到已熟知的过程中，而不是引入全新的过程。 请务必让他们知道你的业务的相关优势（和风险），并提供有关何时应该保护文件和电子邮件的指导。 如果你配置了 [自定义模板](configure-custom-templates.md)，请提供有关在模板名称和描述不足以帮助用户选择正确模板时应该选择哪个模板的说明。
 
     > [!TIP]
     > 最终用户示例视频
@@ -36,23 +36,23 @@ ms.openlocfilehash: 0ff8282d01957af1a0dd59673ae2e94a6d879f39
 
 -   **管理员信息：**
 
-    有些应用程序使用管理员配置的策略和设置来自动应用信息保护。 你可能需要为管理这些应用程序和服务的其他管理员提供这些应用程序的说明。 有关详细信息，请参阅 [应用程序如何支持 Azure Rights Management](../understand-explore/applications-support.md) 和 [为 Azure Rights Management 配置应用程序](configure-applications.md)。
+    有些应用程序使用管理员配置的策略和设置来自动应用信息保护。 你可能需要为管理这些应用程序和服务的其他管理员提供这些应用程序的说明。 有关详细信息，请参阅[应用程序如何支持 Azure Rights Management 服务](../understand-explore/applications-support.md)和[为 Azure Rights Management 服务配置应用程序](configure-applications.md)。
 
 -   **技术支持信息：**
 
     为技术支持人员提供的最有用工具之一是 [RMS 分析器](https://www.microsoft.com/en-us/download/details.aspx?id=46437)。 技术支持操作员可以配合 Azure RMS 管理员选项运行该工具，并且可以要求用户配合 Azure RMS 用户选项运行该工具。 此工具不仅可以帮助识别问题，而且还能修复找到的问题，并且不能修复，则会记录跟踪日志。
 
-    如果有人合法请求对受保护文档的完全访问权限（例如，某位离职后，法律部门或经理发出此类请求），请确保技术支持人员使用 Azure RMS [超级用户功能](configure-super-users.md) 并遵循相应的流程来处理此请求。
+    如果有人合法请求对受保护文档的完全访问权限（例如，某人离职后，法律部门或经理发出此类请求），请确保技术支持人员使用 Azure Rights Management [超级用户功能](configure-super-users.md) 并遵循相应的流程来处理此请求。
 
     此外，下面是用户可能会报告的一些典型问题：
 
     -   **登录帮助：**
 
-        当 Azure RMS 需要对用户进行身份验证且无法使用缓存的凭据时，可能提示用户提供凭据。 该凭据是用户的工作或学校帐户和密码，与你的 Office 365 租户或 Azure Active Directory 租户相关联。 它不是 Microsoft 帐户（以前的 Microsoft Live ID）或用户的个人电子邮件帐户，因为 Azure RMS 当前不支持这些帐号。 为用户和你的技术支持提供说明，阐明在 Azure RMS 上使用这些应用程序的情况下，当提示用户提供凭据时，应该使用何种帐户。
+        当 Azure Rights Management 服务需要对用户进行身份验证且无法使用缓存的凭据时，可能提示用户提供凭据。 该凭据是用户的工作或学校帐户和密码，与你的 Office 365 租户或 Azure Active Directory 租户相关联。 它不是 Microsoft 帐户（以前的 Microsoft Live ID）或用户的个人电子邮件帐户，因为 Azure Rights Management 服务当前不支持这些帐户。 为用户和你的技术支持提供说明，阐明在 Azure Rights Management 服务上使用这些应用程序的情况时，如果提示用户提供凭据，应该使用何种帐户。
 
     -   **与保护或使用内容相关的问题：**
 
-        确保用户获得了有关他们所用应用程序的相应说明，并使用 Azure RMS 支持的应用程序和设备。 有关支持的应用程序和设备的详细信息，请参阅 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)。
+        确保用户获得了有关他们所用应用程序的相应说明，并使用 Azure Rights Management 服务支持的应用程序和设备。 有关支持的应用程序和设备的详细信息，请参阅 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)。
 
         如果用户在尝试保护或使用内容时看到错误，请要求他们以 Azure RMS 用户的身份运行 [RMS 分析器](https://www.microsoft.com/en-us/download/details.aspx?id=46437) 。
 
@@ -61,7 +61,7 @@ ms.openlocfilehash: 0ff8282d01957af1a0dd59673ae2e94a6d879f39
 请参阅以下关于应用程序特定信息的部分，帮助用户保护敏感的文档和电子邮件。
 
 ## 使用权限管理共享应用程序提供的信息保护
-如果用户使用 Office 2010，则权限管理 (RMS) 共享应用程序是他们进行内容保护和使用受保护内容所必需的。另外，我们还建议将其用于支持 Azure RMS 的所有计算机和移动设备。
+如果用户使用 Office 2010，则 Rights Management (RMS) 共享应用程序是他们进行内容保护和使用受保护内容所必需的。另外，我们还建议将其用于支持 Azure Rights Management 服务的所有计算机和移动设备。
 
 除了使用户更轻松地保护重要文档以外，RMS 共享应用程序还允许用户跟踪他们保护的文档，并根据需要撤消对文档的访问权限。
 
@@ -73,7 +73,7 @@ ms.openlocfilehash: 0ff8282d01957af1a0dd59673ae2e94a6d879f39
 > 有关带屏幕截图的高级示例方案，请参阅[用户与移动用户安全地共享附件](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users)。
 
 ## 在 Office 365、Office 2016 或 Office 2013 中使用信息保护
-如果你使用 Azure RMS，但尚未安装权限管理共享应用程序，则用户将不会在功能区上看到 **“共享保护”**按钮，也不会在文件资源管理器中看到帮助他们更加轻松地保护文件的 **“保护现有”** 选项。 对于这些用户，他们必须遵循类似以下的说明。
+如果使用 Azure Rights Management 服务，但尚未安装 Rights Management 共享应用程序，则用户将不会在功能区上看到“共享保护”按钮，也不会在文件资源管理器中看到帮助他们更加轻松地保护文件的“就地保护”选项。 对于这些用户，他们必须遵循类似以下的说明。
 
 > [!TIP]
 > 若要查找应用程序特定帮助，以及有关在这些应用程序中使用信息保护的说明，请搜索 **IRM** 和应用程序名称及版本。
@@ -115,6 +115,6 @@ ms.openlocfilehash: 0ff8282d01957af1a0dd59673ae2e94a6d879f39
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

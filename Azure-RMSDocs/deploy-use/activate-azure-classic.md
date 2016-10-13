@@ -1,29 +1,29 @@
 ---
-title: "如何从 Azure 经典门户激活 Azure Rights Management | Azure RMS"
-description: "有关具有 Azure 门户访问权限时 Azure RMS 的激活说明。 例如，你有企业移动性套件订阅或 Azure Rights Management Premium 订阅。"
+title: "如何从 Azure 经典门户激活 Azure Rights Management | Azure 信息保护"
+description: "有关具有 Azure 门户访问权限时 Azure Rights Management 服务的激活说明。 例如，你有企业移动性套件订阅或 Azure 信息保护高级版订阅。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: ab3b5d71e8cee2ece7fad4c9c3017de7d6eca979
+ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
+ms.openlocfilehash: a553ea57bd4b396b7629dc24aea9f76b4a2a5e5a
 
 
 ---
 
 # 如何从 Azure 经典门户激活 Azure Rights Management
 
->*适用于：Azure Rights Management*
+>*适用于：Azure 信息保护*
 
 
-如果你有权访问 Azure 门户，请使用这些说明。 例如，你有企业移动性套件订阅或 Azure Rights Management Premium 订阅。
+如果你有权访问 Azure 门户，请使用这些说明。 例如，你有企业移动性套件订阅或 Azure 信息保护高级版订阅。
 
 > [!TIP]
 > 观看 2 分钟的视频：[如何激活 Azure RMS](https://channel9.msdn.com/series/pit-stop-enterprise-mobility-suite/activate-azure-rms)
@@ -37,9 +37,9 @@ ms.openlocfilehash: ab3b5d71e8cee2ece7fad4c9c3017de7d6eca979
 4.  选择要进行 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 的待管理目录，单击“激活”，然后确认你的操作。
 
     > [!NOTE]
-    >如果看到激活错误，可能是因为你的服务计划或产品版本不包括 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]。
+    >如果看到激活错误，则原因可能是你的服务计划或产品版本不包括 Azure 信息保护的 Azure Rights Management 服务。
     >
-    >使用 [支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md) 中的信息确认是否提供 RMS 支持。 若要获取有关此问题的帮助，请发送电子邮件至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
+    >使用[订阅信息](https://go.microsoft.com/fwlink/?LinkId=827589)确认你的订阅包括 Azure Rights Management。 若要获取有关此问题的帮助，请发送电子邮件至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
 
 
 **“权限管理状态”** 现在应该显示 **“活动”** ，而 **“激活”** 选项将替换为 **“停用”**。
@@ -58,6 +58,6 @@ ms.openlocfilehash: ab3b5d71e8cee2ece7fad4c9c3017de7d6eca979
 返回 [激活 Azure Rights Management](activate-service.md)。
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

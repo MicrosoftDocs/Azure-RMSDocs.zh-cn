@@ -1,26 +1,26 @@
 ---
-title: "为 Azure Rights Management 连接器配置服务器 | Azure RMS"
+title: "为 Azure Rights Management 连接器配置服务器 | Azure 信息保护"
 description: "此信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及部署 Azure Rights Management 连接器中的步骤 5。"
 author: cabailey
 manager: mbaldwin
-ms.date: 06/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 67bf5f7b5a550e723ac16707c341f6b3af054b9a
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 825103c8857d2db4f0a37570d10fd88361eae274
 
 
 ---
 
 # 为 Azure Rights Management 连接器配置服务器
 
->*适用于：Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+>*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
 
 
 使用以下信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 5。
@@ -29,7 +29,7 @@ ms.openlocfilehash: 67bf5f7b5a550e723ac16707c341f6b3af054b9a
 
 
 ## 将服务器配置为使用 RMS 连接器
-安装并配置 RMS 连接器之后，即可将本地服务器配置为使用 Rights Management 并通过连接器连接到 Azure RMS。 这意味着需要配置以下服务器：
+安装并配置 RMS 连接器之后，即可配置将要连接到 Azure Rights Management 服务的本地服务器，并通过连接器使用此保护技术。 这意味着需要配置以下服务器：
 
 -   **对于 Exchange 2016 和 Exchange 2013**：客户端访问服务器和邮箱服务器
 
@@ -249,6 +249,6 @@ ms.openlocfilehash: 67bf5f7b5a550e723ac16707c341f6b3af054b9a
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,19 +1,19 @@
 ---
-title: "删除模板 | Azure RMS"
+title: "删除模板 | Azure 信息保护"
 description: "无法删除默认模板，但可以将它们存档，这样用户就不会看到它们。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 22db39697dbd35b1a295f214f11e72c47fe6ca1b
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 2597df5b95bc1aaff345804e476f48d6436d9a32
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 22db39697dbd35b1a295f214f11e72c47fe6ca1b
 
 # 删除（存档）模板
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
 无法删除默认模板，但可以将它们存档，这样用户就不会看到它们。
 
@@ -41,6 +41,6 @@ ms.openlocfilehash: 22db39697dbd35b1a295f214f11e72c47fe6ca1b
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

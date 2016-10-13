@@ -1,19 +1,19 @@
 ---
-title: "复制模板 | Azure RMS"
+title: "复制模板 | Azure 信息保护"
 description: "有关复制模板以轻松创建与现有模板具有非常相似设置的新模板的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f329ce49-e044-4c11-821d-5496d83c1bb3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: a35a59f466b088d3735bef4e12327990c75952d6
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 5248a7a5b90e956d4121d95e0b82a941a20d4e8f
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: a35a59f466b088d3735bef4e12327990c75952d6
 
 # 复制模板
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
 如果你需要创建一个新模板，它具有与现有模板非常相似的设置，请在“模板”页上选择原始模板，单击“复制”，指定唯一名称，然后进行所需的更改。
 
@@ -36,6 +36,6 @@ ms.openlocfilehash: a35a59f466b088d3735bef4e12327990c75952d6
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

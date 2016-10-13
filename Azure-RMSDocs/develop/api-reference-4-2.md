@@ -4,18 +4,18 @@ description: "Microsoft Rights Management SDK 4.2 支持多种操作系统；And
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 03e3ee68487a21c5dec68bd30f5f656512287b3c
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: cab47811d6b7b2b11f5bdcb58c4d72837a209131
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 03e3ee68487a21c5dec68bd30f5f656512287b3c
 Microsoft Rights Management SDK 4.2 支持多种操作系统。 有关特定平台的详细信息，请参阅[新增功能](release-notes.md)。
 
 ### Apple
-- [iOS/OS X API 参考](/rights-management/sdk/4.2/api/iOS/iOS) - 适用于 Apple iOS 和 OS X 操作系统的 API 参考。
+- [iOS/OS X API 参考](/information-protection/sdk/4.2/api/iOS/iOS) - 适用于 Apple iOS 和 OS X 操作系统的 API 参考。
 
 ### Google
 - [Android 命名空间](android-namespaces.md)
@@ -34,7 +34,7 @@ Microsoft Rights Management SDK 4.2 支持多种操作系统。 有关特定平�
 - [Linux API 参考](linux-c-api-reference.md) - 适用于我们 Linux 风格操作系统支持的 API 参考在 Github 上承载 - [适用于 C++ 的 RMS SDK](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)。
 
 ### Microsoft
-- [Windows API 参考](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement) - 适用于 Windows Phone 和 Windows 应用商店应用程序 SDK 的 API 参考。
+- [Windows API 参考](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement) - 适用于 Windows Phone 和 Windows 应用商店应用程序 SDK 的 API 参考。
 
 ## 相关主题
 
@@ -45,6 +45,6 @@ Microsoft Rights Management SDK 4.2 支持多种操作系统。 有关特定平�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

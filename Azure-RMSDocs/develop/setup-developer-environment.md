@@ -4,18 +4,18 @@ description: "说明如何设置开发环境以便将 AD RMS SDK API 用于特�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 296FC4C0-99C6-4997-AD97-5CEE01221B1A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 56e5c959fbfc0b15720de33972dc0488f35b65c3
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 185b67b50b7ded0ff28998f5a59be6b216abd0f9
 
 
 ---
@@ -40,6 +40,6 @@ ms.openlocfilehash: 56e5c959fbfc0b15720de33972dc0488f35b65c3
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

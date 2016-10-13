@@ -4,18 +4,18 @@ description: "可通过注册表中的设置来配置文件 API 的行为。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: 8232137fb52b03a30513b132b02251f3cc01079a
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: d949acd4281509bbed05a14e0e26d1549b52a33a
 
 
 ---
@@ -82,7 +82,7 @@ ms.openlocfilehash: 8232137fb52b03a30513b132b02251f3cc01079a
 -   **txt、xml、jpg、jpeg、pdf、png、tiff、bmp、gif、giff、jpe、jfif、jif 文件** 启用了本机加密（xxx 变成 pxxx）
 -   **所有其他文件** 启用了加密即受保护文件 (pfile)（xxx 变成 pxxx）
 
-如果对阻止的文件类型尝试加密，则会出现 [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/rights-management/sdk/2.1/api/win/error%20codes) 错误。
+如果对阻止的文件类型尝试加密，则会出现 [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/information-protection/sdk/2.1/api/win/error%20codes) 错误。
 
 ### 文件 API - 文件支持详细信息
 
@@ -149,13 +149,13 @@ HKEY_LOCAL_MACHINE
 ## 相关主题
 
 * [开发人员说明](developer-notes.md)
-* [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/rights-management/sdk/2.1/api/win/error%20codes)
+* [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/information-protection/sdk/2.1/api/win/error%20codes)
  
 
  
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

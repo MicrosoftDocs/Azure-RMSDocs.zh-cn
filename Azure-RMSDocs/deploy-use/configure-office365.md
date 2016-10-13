@@ -1,40 +1,40 @@
 ---
-title: "Office 365 &colon; 客户端和联机服务的配置 | Azure RMS"
-description: "面向管理员提供的有关配置 Office 365 以使用 Azure Rights Management (Azure RMS) 的信息和说明。"
+title: "Office 365 &colon; 客户端和联机服务的配置 | Azure 信息保护"
+description: "面向管理员提供的有关配置 Office 365 以使用 Azure 信息保护中的 Azure Rights Management 服务的信息和说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/20/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 18498a6d1edac11b20842b0cca0c4559909d681e
-ms.openlocfilehash: e8e2abe6006f40f5c2e34ef0d4ac3f1ccaf66516
+ms.sourcegitcommit: d07f981456f5f642642f4bcc748ad56b630daf93
+ms.openlocfilehash: b2baad6a8ed383903883f33eedc56a8cebe019d3
 
 
 ---
 
 # Office 365：客户端和联机服务的配置
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-由于 Office 365 以本机方式支持 Azure RMS，因此无需客户端计算机配置即可支持各个应用程序（例如 Word、Excel、PowerPoint、Outlook 和 Outlook Web App）的信息权限管理 (IRM) 功能。 用户只需使用他们的 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 凭据登录 Office 应用程序，即可保护文件和电子邮件，并可使用其他人保护的文件和电子邮件。
+由于 Office 365 以本机方式支持 Azure 信息保护中的 Azure Rights Management 服务，因此无需客户端计算机配置即可支持各个应用程序（例如 Word、Excel、PowerPoint、Outlook 和 Outlook Web App）的信息权限管理 (IRM) 功能。 用户只需使用他们的 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 凭据登录 Office 应用程序，即可保护文件和电子邮件，并可使用其他人保护的文件和电子邮件。
 
 但是，我们建议你使用 Rights Management 共享应用程序，为这些应用程序提供补充，使得用户能够发挥 Office 加载项的优势。 有关详细信息，请参阅 [Rights Management 共享应用程序：客户端安装和配置](configure-sharing-app.md)。
 
 ## Exchange Online：IRM 配置
-若要配置 Exchange Online 以支持 Azure RMS，你必须为 Exchange Online 配置信息权限管理 (IRM) 服务。 为此，你可以使用 Windows PowerShell（无需安装单独的模块）并运行[适用于 Exchange Online 的 PowerShell 命令](https://technet.microsoft.com/library/jj200677.aspx)。
+若要配置 Exchange Online 以支持 Azure Rights Management 服务，你必须为 Exchange Online 配置信息权限管理 (IRM) 服务。 为此，你可以使用 Windows PowerShell（无需安装单独的模块）并运行[适用于 Exchange Online 的 PowerShell 命令](https://technet.microsoft.com/library/jj200677.aspx)。
 
 > [!NOTE]
-> 如果你对 Azure RMS 使用客户管理的租户密钥 (BYOK)，而不是默认配置（即 Microsoft 管理的租户密钥），则当前不能将 Exchange Online 配置为支持 Azure RMS。 有关详细信息，请参阅 [BYOK 定价和限制](../plan-design/byok-price-restrictions.md)。
+> 如果你对 Azure 信息保护使用客户管理的租户密钥 (BYOK)，而不是默认配置（即 Microsoft 管理的租户密钥），则当前不能将 Exchange Online 配置为支持 Azure Rights Management 服务。 有关详细信息，请参阅 [BYOK 定价和限制](../plan-design/byok-price-restrictions.md)。
 >
-> 如果你尝试在 Azure RMS 使用 BYOK 时配置 Exchange Online，则导入密钥命令（下面过程中的步骤 5）将失败并显示错误消息 **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**。
+> 如果你尝试在 Azure Rights Management 服务使用 BYOK 时配置 Exchange Online，则导入密钥命令（下面过程中的步骤 5）将失败并显示错误消息 **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**。
 
-以下步骤提供了一组典型的命令，你可以运行这些命令以允许 Exchange Online 使用 Azure RMS：
+以下步骤提供了一组典型的命令，你可以运行这些命令以允许 Exchange Online 使用 Azure Rights Management 服务：
 
 1.  如果这是你第一次在计算机上使用 Windows PowerShell for Exchange Online，必须配置 Windows PowerShell 以运行签名的脚本。 使用“以管理员身份运行”选项启动 Windows PowerShell 会话，然后键入  ：
 
@@ -61,7 +61,7 @@ ms.openlocfilehash: e8e2abe6006f40f5c2e34ef0d4ac3f1ccaf66516
     Import-PSSession $Session
     ```
 
-4.  根据组织的租户创建位置指定 Azure RMS 租户密钥的位置：
+4.  根据组织的租户创建位置指定 Azure 信息保护租户密钥的位置：
 
     适用于北美：
 
@@ -89,14 +89,14 @@ ms.openlocfilehash: e8e2abe6006f40f5c2e34ef0d4ac3f1ccaf66516
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
-5.  以受信任的发布域 (TPD) 的形式从 Azure RMS 将配置数据导入到 Exchange Online。 这包括 Azure RMS 租户密钥和 Azure RMS 模板：
+5.  以受信任的发布域 (TPD) 的形式从 Azure Rights Management 服务将配置数据导入到 Exchange Online。 这包括 Azure 信息保护租户密钥和 Azure Rights Management 模板：
 
     ```
     Import-RMSTrustedPublishingDomain -RMSOnline -name "RMS Online"
     ```
-    在此命令中，我们将 **RMS Online** 的名称用作 Exchange Online 中 Azure RMS 的 TPD 的基名称。 导入 TPD 后，它将在 Exchange Online 中名为 **RMS Online - 1**。
+    在此命令中，我们将 **RMS Online** 的名称用作 Exchange Online 中 Azure Rights Management 的 TPD 的基名称。 导入 TPD 后，它将在 Exchange Online 中名为 **RMS Online - 1**。
 
-6.  启用 Azure RMS 功能，以便 IRM 功能可用于 Exchange Online：
+6.  启用 Azure Rights Management 功能，以便 IRM 功能可用于 Exchange Online：
 
     ```
     Set-IRMConfiguration -InternalLicensingEnabled $true
@@ -118,10 +118,10 @@ ms.openlocfilehash: e8e2abe6006f40f5c2e34ef0d4ac3f1ccaf66516
     Remove-PSSession $Session
     ```
 
-现在用户可以使用 Azure RMS 来保护其电子邮件。 例如，在 Outlook Web App 中，从扩展菜单 ( **...** ) 中选择“设置权限”，然后选择“不转发”或可用模板之一，以便将信息保护应用于电子邮件和任何附件  。 但是，由于 Outlook Web App 将缓存 UI 一天时间，请在运行这些配置命令后并在尝试将信息保护应用于电子邮件前，等待经过这段时间。 在 UI 更新以反映新配置之前，你将在“设置权限”菜单中看不到任何选项  。
+现在用户可以使用 Azure Rights Management 服务来保护其电子邮件。 例如，在 Outlook Web App 中，从扩展菜单 ( **...** ) 中选择“设置权限”，然后选择“不转发”或可用模板之一，以便将信息保护应用于电子邮件和任何附件  。 但是，由于 Outlook Web App 将缓存 UI 一天时间，请在运行这些配置命令后并在尝试将信息保护应用于电子邮件前，等待经过这段时间。 在 UI 更新以反映新配置之前，你将在“设置权限”菜单中看不到任何选项  。
 
 > [!IMPORTANT]
-> 如果为 Azure RMS 创建了新的[自定义模板](configure-custom-templates.md)或更新了这些模板，则每次都必须运行以下 Exchange Online PowerShell 命令（如有必要，请先运行步骤 2 和步骤 3）以将这些更改同步到 Exchange Online： `Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
+> 如果为 Azure Rights Management 创建了新的[自定义模板](configure-custom-templates.md)或更新了这些模板，则每次都必须运行以下 Exchange Online PowerShell 命令（如有必要，请先运行步骤 2 和步骤 3）以将这些更改同步到 Exchange Online： `Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
 
 作为 Exchange 管理员，你现在可以配置自动应用信息保护的功能，如[传输规则](https://technet.microsoft.com/library/dd302432.aspx)、[数据丢失防护 (DLP) 策略](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx)和[受保护的语音邮件](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx)（统一消息传送）。
 
@@ -139,7 +139,7 @@ ms.openlocfilehash: e8e2abe6006f40f5c2e34ef0d4ac3f1ccaf66516
 有关消息加密的详细信息，请参阅 Exchange 库中的 [Office 365 中的加密](https://technet.microsoft.com/library/dn569286.aspx) 。
 
 ## SharePoint Online 和 OneDrive for Business:IRM 配置
-若要配置 SharePoint Online 和 OneDrive for Business 以支持 Azure RMS，你必须先通过使用 SharePoint 管理中心，为 SharePoint Online 启用信息权限管理 (IRM) 服务。 然后，站点所有者可以使用 IRM 保护其 SharePoint 列表和文档库，用户可以使用 IRM 保护其 OneDrive for Business 库，以便在该处保存并与其他人共享的文档自动由 Azure RMS 保护。
+若要配置 SharePoint Online 和 OneDrive for Business 以支持 Azure Rights Management 服务，你必须先通过使用 SharePoint 管理中心，为 SharePoint Online 启用信息权限管理 (IRM) 服务。 然后，站点所有者可以使用 IRM 保护其 SharePoint 列表和文档库，用户可以使用 IRM 保护其 OneDrive for Business 库，以便在该处保存并与其他人共享的文档自动由 Azure Rights Management 服务保护。
 
 若要为 SharePoint Online 启用信息权限管理 (IRM) 服务，请参阅 Office 网站中的以下说明：
 
@@ -1110,6 +1110,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

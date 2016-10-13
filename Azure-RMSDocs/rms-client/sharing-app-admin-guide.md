@@ -1,19 +1,19 @@
 ---
-title: "Rights Management 共享应用程序管理员指南 | Azure RMS"
+title: "Rights Management 共享应用程序管理员指南 | Azure 信息保护"
 description: "面向负责部署适用于 Windows 的 Microsoft Rights Management 共享应用程序的企业网络管理员的说明和信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 575d52efb788956b0a711e908a730b677e1f7f9c
-ms.openlocfilehash: 113a49586b4582ec984678df6730c6b554ff6a75
+ms.sourcegitcommit: 7ca9476d99457c814755b118660743b27ad78dbc
+ms.openlocfilehash: 73fd286c8112392bf7cb93468a27188aae6c22de
 
 
 ---
@@ -21,12 +21,12 @@ ms.openlocfilehash: 113a49586b4582ec984678df6730c6b554ff6a75
 
 # 保护级别 – 本机和常规
 
->*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 
 如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 [Rights Management 共享应用程序用户指南](sharing-app-user-guide.md)或[适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)以外的更多技术信息，请使用以下信息。
 
-RMS 共享应用程序最适合与 Azure RMS 配合使用，因为这种部署配置支持向另一组织中的用户发送受保护的附件，并提供电子邮件通知、文档跟踪和撤消等选项。 不过，它也能够与本地版本的 AD RMS 配合使用，只是存在一些限制。 有关 Azure RMS 和 AD RMS 支持的功能的全面比较，请参阅[比较 Azure Rights Management 和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。 如果你安装了 AD RMS 并想要迁移到 Azure RMS，请参阅 [从 AD RMS 迁移到 Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
+RMS 共享应用程序最适合与 Azure 信息保护配合使用，因为这种部署配置支持向另一组织中的用户发送受保护的附件，并提供电子邮件通知、文档跟踪和撤消等选项。 不过，它也能够与本地版本的 AD RMS 配合使用，只是存在一些限制。 有关 Azure 信息保护和 AD RMS 所支持功能的全面比较，请参阅[比较 Azure信息保护和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。 如果安装了 AD RMS，想迁移到 Azure 信息保护，请参阅[从 AD RMS 迁移到 Azure 信息保护](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
 
 有关 Rights Management 共享应用程序的技术概览和有关本机和通用保护、支持的文件类型、文件扩展名以及如何更改默认保护级别的信息，请参阅[《Technical overview and protection details for the Rights Management sharing application》](sharing-app-admin-guide-technical.md)（Rights Management 共享应用程序的技术概览和保护详细信息）。 
 
@@ -47,36 +47,36 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 |说明|部署方案|
 |---------------|-----------------------|
-|Microsoft Online 登录助手|Office 2010 和 Azure RMS<br /><br />Office 2013 和 Azure RMS（如果你尚未安装 [Office 2013 2015 年 6 月 9 日更新](https://support.microsoft.com/kb/3054853) (KB3054853)|
-|Office 修补程序 (KB 2596501)|Office 2010 和 Azure RMS<br /><br />Office 2010 和 Active Directory RMS|
-|用于启用 AD RMS 客户端 1.0 以与 Azure RMS 配合工作的修补程序 (KB 2843630)|Office 2010 和 Azure RMS<br /><br />Office 2010 和 Active Directory RMS|
-|AD RMS 客户端和 RMS 共享应用程序|Office 2016 或 Office 2013，以及 Azure RMS 或 Active Directory RMS<br /><br />Office 2010 和 Azure RMS<br /><br />Office 2010 和 Active Directory RMS<br /><br />仅 RMS 共享应用程序和 Office 加载项|
-|功能区的 Office 加载项|Office 2016 或 Office 2013，以及 Azure RMS 或 Active Directory RMS<br /><br />Office 2010 和 Azure RMS<br /><br />Office 2010 和 Active Directory RMS<br /><br />仅 RMS 共享应用程序和 Office 加载项|
-|Azure Active Directory Rights Management 准备工具|Office 2010 和 Azure RMS|
+|Microsoft Online 登录助手|Office 2010 和 Azure 信息保护<br /><br />Office 2013 和 Azure 信息保护，如果尚未安装 [2015 年 6 月 9 日发布的 Office 2013 更新](https://support.microsoft.com/kb/3054853) (KB3054853)|
+|Office 修补程序 (KB 2596501)|Office 2010 和 Azure 信息保护<br /><br />Office 2010 和 Active Directory RMS|
+|用于使 AD RMS 客户端 1.0 与 Azure 信息保护协同工作的修补程序 (KB 2843630)|Office 2010 和 Azure 信息保护<br /><br />Office 2010 和 Active Directory RMS|
+|AD RMS 客户端和 RMS 共享应用程序|Office 2016 或 Office 2013，以及 Azure 信息保护或 Active Directory RMS<br /><br />Office 2010 和 Azure 信息保护<br /><br />Office 2010 和 Active Directory RMS<br /><br />仅 RMS 共享应用程序和 Office 加载项|
+|功能区的 Office 加载项|Office 2016 或 Office 2013，以及 Azure 信息保护或 Active Directory RMS<br /><br />Office 2010 和 Azure 信息保护<br /><br />Office 2010 和 Active Directory RMS<br /><br />仅 RMS 共享应用程序和 Office 加载项|
+|Azure Active Directory Rights Management 准备工具|Office 2010 和 Azure 信息保护|
 使用以下过程来确定为这些部署方案部署 RMS 共享应用程序所需的命令：
 
--   **Office 2016 或 Office 2013，以及 Azure RMS 或 Active Directory RMS**
+-   **Office 2016 或 Office 2013，以及 Azure 信息保护或 Active Directory RMS**
 
-    你的用户运行的是 Office 2016 或 Office 2013、你的组织使用的是 Azure RMS 或 Active Directory RMS，并且用户与使用 Azure RMS 或 Active Directory RMS 的其他组织进行协作。
+    用户运行的是 Office 2016 或 Office 2013，组织使用的是 Azure 信息保护或 Active Directory RMS，并且用户与使用 Azure 信息保护或 Active Directory RMS 的其他组织进行协作。
 
--   **Office 2010 和 Azure RMS**
+-   **Office 2010 和 Azure 信息保护**
 
-    你的用户运行的是 Office 2010、你的组织使用的是 Azure RMS，并且用户与使用 Azure RMS 或 Active Directory RMS 的其他组织进行协作。
+    用户运行的是 Office 2010，组织使用的是 Azure 信息保护，并且用户与使用 Azure 信息保护或 Active Directory RMS 的其他组织进行协作。
 
 -   **Office 2010 和 Active Directory RMS**
 
-    你的用户运行的是 Office 2010、你的组织使用的是 AD RMS，并且用户与使用 Azure RMS 的其他组织进行协作。
+    用户运行的是 Office 2010，组织使用的是 AD RMS，并且用户与使用 Azure 信息保护的其他组织进行协作。
 
 -   **仅 RMS 共享应用程序和 Office 加载项**
 
-    你的用户运行的是 Office 2016、Office 2013 或 Office 2010、你的组织使用的是 AD RMS，并且用户无需与使用 Azure RMS 的其他组织进行协作。 此安装仅允许你安装共享应用程序和 Office 加载项。
+    用户运行的是 Office 2016、Office 2013 或 Office 2010，组织使用的是 AD RMS，并且用户无需与使用 Azure 信息保护的其他组织进行协作。 此安装仅允许你安装共享应用程序和 Office 加载项。
 
 > [!NOTE]
-> 在上述方案中，如果你的组织运行的是 AD RMS，则用户可以从使用 Azure RMS 的其他组织接收受保护内容，但他们无法将受保护的内容发送给使用 Azure RMS 的组织中的用户。 但是，如果你的组织运行的是 Azure RMS，则用户可以发送和接收来自其他组织的受保护内容。
+> 在上述方案中，如果组织运行的是 AD RMS，则用户可以从其他使用 Azure 信息保护的组织接收受保护的内容，但他们无法将受保护的内容发送给使用 Azure 信息保护的组织中的用户。 但是，如果组织运行的是 Azure 信息保护，则用户可以发送和接收来自其他组织的受保护内容。
 
 若要针对每个步骤完成安装，必须重新启动计算机。 可以使用类似于 **shutdown /i** 的命令实现自动重新启动。
 
-### 为 Office 2016 或 Office 2013 和 Azure RMS 或 Active Directory RMS 部署 RMS 共享应用程序
+### 为 Office 2016 或 Office 2013 和 Azure 信息保护或 Active Directory RMS 部署 RMS 共享应用程序
 
 -   在要安装 RMS 共享应用程序及相关组件的每台计算机上，使用提升的权限运行以下命令：
 
@@ -86,7 +86,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 若要验证是否成功，请参阅本文中的[验证安装是否成功](#verifying-installation-success)部分。
 
-### 为 Office 2010 和 Azure RMS 部署 RMS 共享应用程序
+### 为 Office 2010 和 Azure 信息保护部署 RMS 共享应用程序
 
 1.  你必须是 Office 365 或 Azure Active Directory 租户的全局管理员，才能通过运行 Azure Active Directory Rights Management 准备工具获取组织的证书服务 URL。 在单台计算机上，只需运行此工具一次。 在每台计算机上安装 RMS 共享应用程序时，你将使用证书服务 URL：
 
@@ -207,7 +207,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 ## 验证安装是否成功
 可以使用安装日志文件来验证安装是否成功。
 
-### 验证是否为 Office 2016 或 Office 2013 和 Azure RMS 或 Active Directory RMS 成功安装 RMS 共享应用程序
+### 验证是否为 Office 2016 或 Office 2013 和 Azure 信息保护或 Active Directory RMS 成功安装 RMS 共享应用程序
 
 -   若要验证 Setup.exe 命令是否成功运行，请在每台计算机上的 *%temp%\RMS_installer_&lt;guid&gt;* 文件夹中搜索安装日志文件 **RMInstaller.log**，然后查看退出代码。
 
@@ -215,7 +215,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     示例日志文件名：**C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0\RMInstaller.log**
 
-### 验证是否为 Office 2010 和 Azure RMS 成功安装 RMS 共享应用程序
+### 验证是否为 Office 2010 和 Azure 信息保护成功安装 RMS 共享应用程序
 
 1.  若要验证 Setup.exe 命令是否成功运行，请在每台计算机上的 *%temp%\RMS_installer_&lt;guid&gt;* 文件夹中搜索安装日志文件 **RMInstaller.log**，然后查看退出代码。
 
@@ -309,13 +309,13 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 -   使用以下命令：
 
-    -   对于 64 位版本的 Office：
+    -   对于 64 位 Windows：
 
         ```
         msiexec /x \x64\Setup[64].msi /quiet
         ```
 
-    -   对于 32 位版本的 Office：
+    -   对于 32 位 Windows：
 
         ```
         msiexec /x \x86\Setup.msi /quiet
@@ -336,10 +336,10 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 3.  在测试完成且解决了所有问题之后，使用本指南中的自动部署说明将最新版本部署到所有用户。
 
-## 仅限 Azure RMS：配置文档跟踪
-如果你有[支持文档跟踪的订阅](https://technet.microsoft.com/dn858608)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。  文档跟踪会显示尝试访问用户共享的受保护文档的人员的电子邮件地址、其尝试访问这些文档的时间以及他们所在的位置。 如果你的组织出于隐私要求而要禁止显示此类信息，你可以使用 [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032) cmdlet 来禁用对文档跟踪站点的访问。 你随时可以使用 [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) 来重新启用对该站点的访问，并可以使用 [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) 来查看当前是已启用还是已禁用这种访问。
+## 仅限 Azure 信息保护：配置文档跟踪
+如果你有[支持文档跟踪的订阅](https://technet.microsoft.com/dn858608)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。 文档跟踪会显示尝试访问用户共享的受保护文档的人员的电子邮件地址、其尝试访问这些文档的时间以及他们所在的位置。 如果你的组织出于隐私要求而要禁止显示此类信息，你可以使用 [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032) cmdlet 来禁用对文档跟踪站点的访问。 你随时可以使用 [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) 来重新启用对该站点的访问，并可以使用 [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) 来查看当前是已启用还是已禁用这种访问。
 
-若要运行这些 cmdlet，你必须安装至少 **2.3.0.0** 版的适用于 Windows PowerShell 的 Azure RMS 模块。  有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
+若要运行这些 cmdlet，必须安装最低版本为 **2.3.0.0**，适用于 Windows PowerShell 的 Azure Rights Management 模块。 有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
 
 > [!TIP]
 > 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号： `(Get-Module aadrm –ListAvailable).Version`
@@ -359,7 +359,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 ### 为用户跟踪和撤销文档
 
-当用户登录到文档跟踪站点时，他们可以跟踪和撤销使用 RMS 共享应用程序共享的文档。 当你以 Azure RMS 管理员（全局管理员）的身份登录时，可以单击页面右上角的“管理员”图标，以此切换到管理员模式，这样你就可以看到组织中的用户已共享的文档。
+当用户登录到文档跟踪站点时，他们可以跟踪和撤销使用 RMS 共享应用程序共享的文档。 以 Azure 信息保护管理员（全局管理员）的身份登录时，可以单击页面右上角的“管理员”图标，切换到管理员模式，这样就可以看到组织中的用户已共享的文档。
 
 在管理员模式下执行的操作会经过审核并记录在使用情况日志文件中，必须确认后才能继续。 有关此日志记录的详细信息，请参阅下一节。
 
@@ -393,7 +393,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     例如：Coho Vineyard &amp; Winery 公司拥有标准的电子邮件域 **cohovineyardandwinery.com**，但由于合并，它们也使用电子邮件域 **cohowinery.com**、**eastcoast.cohowinery.com** 和 **cohovineyard**。 对于 **FederatedDomains** 值数据，管理员可以输入：**cohowinery.com；eastcoast.cohowinery.com；cohovineyard**
 
-如果未对该注册表进行更改，则用户可能无法使用由所在组织中的其他用户所保护的内容。 如果你使用 Azure RMS，则不需要编辑该注册表。
+如果未对该注册表进行更改，则用户可能无法使用由所在组织中的其他用户所保护的内容。 如果使用 Azure 信息保护，则不需要编辑该注册表。
 
 
 ## 后续步骤
@@ -402,6 +402,6 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

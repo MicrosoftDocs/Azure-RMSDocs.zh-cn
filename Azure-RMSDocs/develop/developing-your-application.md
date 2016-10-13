@@ -4,18 +4,18 @@ description: "有关如何使用 RMS SDK 2.1 开发应用程序的说明。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 07/06/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4141cadf67dc479116c802f9340ba222140194a3
-ms.openlocfilehash: 2d965086fa44d98e8236a6bbd2515fb3afac3f05
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 6e2b85bc8069de7060211df4d53be7f24ae44e3e
 
 
 ---
@@ -35,7 +35,7 @@ ms.openlocfilehash: 2d965086fa44d98e8236a6bbd2515fb3afac3f05
 
 ## 加载 MSIPC.dll
 
-需要先调用 [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 函数以加载 MSIPC.dll，然后才能调用任何 RMS SDK 2.1 函数。
+需要先调用 [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 函数以加载 MSIPC.dll，然后才能调用任何 RMS SDK 2.1 函数。
 
         C++
         hr = IpcInitialize();
@@ -58,7 +58,7 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
         goto exit;
       }
 
-此调用会检索默认服务器上安装的 RMS 模板，并在 *pcTil* 变量指向的 [IPC_TIL](/rights-management/sdk/2.1/api/win/ipc_til#msipc_ipc_til) 结构中加载结果，然后显示这些模板。
+此调用会检索默认服务器上安装的 RMS 模板，并在 *pcTil* 变量指向的 [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til) 结构中加载结果，然后显示这些模板。
 
       C++
       if (0 == pcTil->cTi) {
@@ -77,9 +77,9 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
 
 ## 序列化许可证
 
-需要先序列化许可证并获取内容密钥，然后才能保护任何数据。 内容密钥用于加密敏感数据。 序列化的许可证通常会附加到加密的数据，由受保护的数据的使用者使用。 使用者需要使用序列化的许可证调用 [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey) 函数以获取内容密钥，用于解密内容以及获取与内容关联的策略。
+需要先序列化许可证并获取内容密钥，然后才能保护任何数据。 内容密钥用于加密敏感数据。 序列化的许可证通常会附加到加密的数据，由受保护的数据的使用者使用。 使用者需要使用序列化的许可证调用 [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey) 函数以获取内容密钥，用于解密内容以及获取与内容关联的策略。
 
-为简单起见，使用 [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 返回的第一个 RMS 模板序列化许可证。
+为简单起见，使用 [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 返回的第一个 RMS 模板序列化许可证。
 
 通常会使用用户界面对话框以允许用户选择所需模板。
 
@@ -97,7 +97,7 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
 
 ## 保护数据
 
-现在你已准备就绪，可以使用 [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函数加密敏感数据。 首先，需要向 **IpcEncrypt** 函数询问加密的数据的大小。
+现在你已准备就绪，可以使用 [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函数加密敏感数据。 首先，需要向 **IpcEncrypt** 函数询问加密的数据的大小。
 
       C++
       cbText = (DWORD)(sizeof(WCHAR)*(wcslen(wszText)+1));
@@ -109,7 +109,7 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
         goto exit;
       }
 
-此处的 wszText 包含要保护的纯文本。 [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt)函数返回在*cbEncrypted* 参数中返回加密的数据的大小。
+此处的 wszText 包含要保护的纯文本。 [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt)函数返回在*cbEncrypted* 参数中返回加密的数据的大小。
 
 现在为加密的数据分配内存。
 
@@ -151,7 +151,7 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
         }
       }
 
-*DisplayError* 函数使用 [IpcGetErrorMessageText](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 函数从对应错误代码获取错误消息并将它打印到标准输出。
+*DisplayError* 函数使用 [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 函数从对应错误代码获取错误消息并将它打印到标准输出。
 
 ## 清理
 
@@ -177,16 +177,16 @@ RMS 模板定义用于保护数据的策略，即定义允许访问数据的用�
 ## 相关主题
 
 - [开发人员指南和信息](developer-notes.md)
-- [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt)
-- [IpcGetErrorMessageText](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
-- [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-- [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
-- [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-- [IPC_TIL](/rights-management/sdk/2.1/api/win/ipc_til#msipc_ipc_til)
+- [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt)
+- [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
+- [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
+- [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
+- [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
+- [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til)
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
