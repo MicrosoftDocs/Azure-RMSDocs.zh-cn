@@ -1,28 +1,28 @@
 ---
-title: "方案 - 发送公司机密电子邮件 | Azure RMS"
-description: "此方案和支持用户文档使用 Azure Rights Management，以便组织中的任何用户可安全发送组织外无法查阅的电子邮件通信。"
+title: "方案 - 发送公司机密电子邮件 | Azure 信息保护"
+description: "此方案和支持性的用户文档使用 Azure Rights Management 保护，以便组织中的任何用户可安全发送组织外无法查阅的电子邮件通信。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: e3245f7fb15f7081dbe4552eb9734a4915d1b6f1
+ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
+ms.openlocfilehash: 9fafe78b8393ae36defeecccceb8f4a2d36a3b79
 
 
 ---
 
 # 方案 - 发送公司机密电子邮件
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-此方案和支持用户文档使用 Azure Rights Management，以便组织中的任何用户可安全发送组织外无法查阅的电子邮件通信。 例如，如果某人将电子邮件转发给其他组织的人员或个人电子邮件帐户。 该电子邮件和所有附件将受 Azure Rights Management 和用户从电子邮件客户端选择的模板保护。
+此方案和支持性的用户文档使用 Azure 信息保护中的 Azure Rights Management 技术，以便组织中的任何用户可安全发送组织外无法查阅的电子邮件通信。 例如，如果某人将电子邮件转发给其他组织的人员或个人电子邮件帐户。 该电子邮件和所有附件将受 Azure Rights Management 和用户从电子邮件客户端选择的模板保护。
 
 启用此方案最简单的方法是使用一个内置默认模板，该模板会自动限制对你的组织中所有用户的访问。 但如有必要，可以通过创建自定义模板使其更具限制性，例如，限制对用户子集的访问或具有其他限制（例如只读或到期日期）或在电子邮件客户端中禁用“转发”按钮。
 
@@ -49,12 +49,12 @@ ms.openlocfilehash: e3245f7fb15f7081dbe4552eb9734a4915d1b6f1
 
 |要求|需要更多信息|
 |---------------|--------------------------------|
-|已准备好 Office 365 或 Azure Active Directory 的帐户和组|[准备 Azure 权限管理](https://technet.microsoft.com/library/jj585029.aspx)|
-|你的 Azure 权限管理租户密钥由 Microsoft 管理；你没有使用 BYOK|[计划和实现你的 Azure Rights Management 租户密钥](https://technet.microsoft.com/library/dn440580.aspx)|
-|已激活 Azure Rights Management|[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)|
-|下列情况之一：<br /><br />- 已为 Azure Rights Management 启用了 Exchange Online<br /><br />- 已为 Exchange 内部部署安装和配置了 RMS 连接器|对于 Exchange Online：请参阅[为 Azure Rights Management 配置应用程序](https://technet.microsoft.com/library/jj585031.aspx)中的 **Exchange Online：IRM 配置**部分。<br /><br />对于 Exchange 内部部署：请参阅[部署 Azure Rights Management 连接器](https://technet.microsoft.com/library/dn375964.aspx)|
-|你未存档默认 Azure Rights Management 模板**&lt;组织&gt; - 机密**。 或者，你已为此配置了自定义模板，因为你需要更严格的设置或者仅组织中的用户子集应能够查阅受保护的电子邮件。|[为 Azure Rights Management 配置自定义模板](https://technet.microsoft.com/library/dn642472.aspx)<br /><br />提示：如果你需要更严格的使用策略设置，但对于组织中的所有用户，复制、然后编辑的是一个默认模板，而不是从头创建一个模板。<br /><br />对于此方案中的电子邮件客户端，已更新的模板不会立即刷新。 有关信息，请参阅配置模板文章中的[刷新用户模板](https://technet.microsoft.com/library/dn642472.aspx)部分。|
-|发送受保护电子邮件的用户具有 Outlook 2013 或 Outlook 2016 或 Outlook Web Access。<br /><br />收到电子邮件的用户具有支持 Azure Rights Management 的电子邮件客户端。|你可使用 Outlook 2010，但必须[安装适用于 Windows 的 Rights Management 共享应用程序](https://technet.microsoft.com/library/dn339003.aspx)，并相应地调整用户说明。<br /><br />有关支持 Azure Rights Management 的电子邮件客户端列表，请参阅[ Azure Rights Management 的要求](https://technet.microsoft.com/library/dn655136.aspx)中[客户端设备功能](https://technet.microsoft.com/library/dn655136.aspx)中的**电子邮件**列。|
+|已准备好 Office 365 或 Azure Active Directory 的帐户和组|[准备 Azure 信息保护](../plan-design/prepare.md)|
+|Azure 信息保护租户密钥由 Microsoft 管理；没有使用 BYOK|[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)|
+|已激活 Azure Rights Management|[激活 Azure 权限管理](../deploy-use/activate-service.md)|
+|下列情况之一：<br /><br />- 已为 Azure Rights Management 启用了 Exchange Online<br /><br />- 已为 Exchange 内部部署安装和配置了 RMS 连接器|对于 Exchange Online，请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)中的 **Exchange Online：IRM 配置**部分。<br /><br />对于 Exchange 内部部署：请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)|
+|你未存档默认 Azure Rights Management 模板**&lt;组织&gt; - 机密**。 或者，你已为此配置了自定义模板，因为你需要更严格的设置或者仅组织中的用户子集应能够查阅受保护的电子邮件。|[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)<br /><br />提示：如果你需要更严格的使用策略设置，但对于组织中的所有用户，复制、然后编辑的是一个默认模板，而不是从头创建一个模板。<br /><br />对于此方案中的电子邮件客户端，已更新的模板不会立即刷新。 有关信息，请查看[为用户刷新模板](../deploy-use/refresh-templates.md)一文。|
+|发送受保护电子邮件的用户具有 Outlook 2013 或 Outlook 2016 或 Outlook Web Access。<br /><br />收到电子邮件的用户具有支持 Azure Rights Management 的电子邮件客户端。|你可使用 Outlook 2010，但必须[安装适用于 Windows 的 Rights Management 共享应用程序](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)，并相应地调整用户说明。<br /><br />有关支持 Azure Rights Management 的电子邮件客户端的列表，请参阅 [Azure RMS 要求：应用程序](../get-started/requirements-applications.md)表中的**电子邮件**列。|
 
 ## 用户文档说明
 使用以下模板，将此用户说明复制并粘贴到最终用户的通信中，并进行这些修改以反映你的环境：
@@ -157,6 +157,6 @@ ms.openlocfilehash: e3245f7fb15f7081dbe4552eb9734a4915d1b6f1
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

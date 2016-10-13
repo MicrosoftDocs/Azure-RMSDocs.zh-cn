@@ -1,68 +1,68 @@
 ---
-title: "记录和分析 Azure Rights Management 使用情况 | Azure RMS"
+title: "记录和分析 Azure Rights Management 服务的使用情况 |Azure 信息保护"
 description: "有关如何使用 Azure Rights Management (Azure RMS) 的使用日志记录功能的信息和说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: c1727f1a5d6747977da7113b6dc0ac37ebefe386
+ms.sourcegitcommit: e33f1e54c21507999d30dcee2ce63c8eb2d69895
+ms.openlocfilehash: 33520bcfc36ed0a022b87c4b2db1e6fcd7a6eb14
 
 
 ---
 
-# 记录和分析 Azure Rights Management 使用情况
+# 记录和分析 Azure Rights Management 服务的使用情况
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-本主题中的信息可用于帮助你了解如何使用 Azure Rights Management (Azure RMS) 的使用日志记录功能。 Azure Rights Management 服务能够记录它为你组织发出的所有请求，包括来自用户的请求、你组织中的 Rights Management 管理员执行的操作、Microsoft 操作人员为支持 Azure Rights Management 部署而执行的操作。
+使用此信息以帮助用户了解如何使用 Azure 信息保护中的 Azure Rights Management 服务使用情况日志记录。 此服务为组织的文档和电子邮件提供数据保护，可记录向服务发送的每个请求，其中包括来自用户的请求、管理员为此服务执行的操作，以及 Microsoft 操作人员为支持 Azure 信息保护部署执行的操作。
 
-然后，你可以使用这些 Azure Rights Management 日志来支持以下业务方案：
+可以使用这些 Azure Rights Management 服务日志来支持以下业务方案：
 
 -   **分析信息以获得业务见解**
 
-    可将 Azure Rights Management 生成的日志导入到你选择的存储库（例如数据库、联机分析处理 (OLAP) 系统或 map-reduce 系统），以便分析信息并生成报告。 例如，你可以看出谁在访问你的 RMS 保护数据。 你还可以确定用户访问了哪些 RMS 保护数据、从哪些设备访问、从何处访问。 你可以了解用户是否能够成功读取受保护内容。 你还可以看出哪些用户阅读了某个受保护的重要文档。
+    可将 Azure Rights Management 服务生成的日志导入到选择的存储库（例如数据库、联机分析处理 (OLAP) 系统或 map-reduce 系统），以便分析信息并生成报告。 例如，可以看出谁在访问受保护的数据。 还可以确定用户访问了哪些受保护的数据、从哪些设备访问、从何处访问。 你可以了解用户是否能够成功读取受保护内容。 你还可以看出哪些用户阅读了某个受保护的重要文档。
 
 -   **监控滥用行为**
 
-    你可以近乎实时地访问 Azure Rights Management 日志记录信息，从而持续监控你公司使用 Rights Management 的情况。 99.9% 的日志可在 RMS 启动操作后 15 分钟之内访问。
+    可以近乎实时地访问 Azure Rights Management 日志记录信息，从而持续监控公司使用 Rights Management 服务的情况。 99.9% 的日志可在对服务启动操作后 15 分钟之内访问。
 
-    例如，如果在正常工作时间之外读取 RMS 保护数据的用户迅猛增加，可能意味着恶意用户正在收集信息并企图售卖给你的竞争对手，你希望在出现这种情况时收到警报。 或者，如果同一用户在很短时间内显然是从两个不同 IP 地址访问数据，则可能意味着该用户帐户已泄漏。
+    例如，如果在正常工作时间之外读取受保护数据的用户迅猛增加，可能意味着恶意用户正在收集信息并企图售卖给你的竞争对手，你希望在出现这种情况时收到警报。 或者，如果同一用户在很短时间内显然是从两个不同 IP 地址访问数据，则可能意味着该用户帐户已泄漏。
 
 -   **执行取证分析**
 
-    如果遇到信息泄露，安全人员很可能向你询问最近谁访问了特定文档，以及可疑人员最近访问了哪些信息。 当你使用 Azure Rights Management 和日志记录时，你就能够回答这些类型的问题，因为使用受保护内容的用户始终必须获取 Rights Management 许可证才能打开受 Azure Rights Management 保护的文档和图片，即便这些文件已移动（通过电子邮件）或复制到 U 盘/其他存储设备也是如此。 这意味着在通过 Azure Rights Management 保护数据时，你能够使用 Azure Rights Management 日志作为确定性信息源进行取证分析。
+    如果遇到信息泄露，安全人员很可能向你询问最近谁访问了特定文档，以及可疑人员最近访问了哪些信息。 使用该日志记录时可以回答这些问题，因为使用受保护内容的用户始终必须获取 Rights Management 许可证才能打开受 Azure Rights Management 服务保护的文档和图片，即便这些文件已通过电子邮件移动或复制到 U 盘/其他存储设备。 这意味着通过 Azure Rights Management 服务保护数据时，能够使用这些日志作为确定性信息源进行取证分析。
 
 > [!NOTE]
-> 如果你只希望记录 Azure Rights Management 的管理任务，而不希望跟踪用户如何使用 Rights Management，则可使用适用于 Azure Rights Management 的 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet。
+> 如果只希望记录 Azure Rights Management 服务的管理任务，而不希望跟踪用户如何使用 Rights Management 服务，则可使用适用于 Azure Rights Management 的 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet。
 > 
 > 你还可以使用 Azure 经典门户获取高级使用情况报告，包括“RMS 摘要”、“RMS 活动用户”、“RMS 设备平台”和“RMS 应用程序使用情况”。 若要从 Azure 经典门户访问这些报告，请单击“Active Directory”，选择并打开一个目录，然后单击“报告”。
 
 有关 Azure Rights Management 使用日志记录的详细信息，请参阅以下部分。
 
 ## 如何启用 Azure Rights Management 使用日志记录
-从 2016 年 2 月开始，Azure Rights Management 使用日志记录功能默认为对所有用户启用。 这适用于在 2016 年 2 月以前已激活其 Azure RMS 服务的客户和在 2016 年 2 月后激活该服务的客户。 
+从 2016 年 2 月开始，Azure Rights Management 使用日志记录功能默认为对所有用户启用。 这适用于在 2016 年 2 月以前已激活其 Azure Rights Management 服务的客户和在 2016 年 2 月后激活该服务的客户。 
 
 > [!NOTE]
 > 不针对日志存储或日志记录功能收取额外的费用。
 > 
-> 如果你在 2016 年 2 月以前使用 Azure RMS 的使用日志记录，你需要在 Azure 上拥有订阅和足够的存储空间，而现在不再需要如此。
+> 在 2016 年 2 月以前，如果使用 Azure Rights Management 的使用日志记录，则需在 Azure 上拥有订阅和足够的存储空间，而现在不再需要这些条件。
 
 
 
 ## 如何访问和使用 Azure Rights Management 使用日志
-Azure Rights Management 将日志作为一系列 Blob 写入你的 Azure 存储帐户。 每个 Blob 包含一条或多条日志记录，采用 W3C 扩展日志格式。 Blob 名称为数字，按创建顺序排列。 本文档后面的[如何解释 Azure Rights Management 使用日志](#how-to-interpret-your-azure-rights-management-usage-logs)部分包含了有关日志内容及其创建情况的更多信息。
+Azure Rights Management 服务将日志作为一系列 blob 写入 Azure 存储帐户。 每个 Blob 包含一条或多条日志记录，采用 W3C 扩展日志格式。 Blob 名称为数字，按创建顺序排列。 本文档后面的[如何解释 Azure Rights Management 使用日志](#how-to-interpret-your-azure-rights-management-usage-logs)部分包含了有关日志内容及其创建情况的更多信息。
 
 在 Azure Rights Management 操作之后，日志需要一段时间才能显示在你的存储帐户中。 大多数日志在 15 分钟之内显示。 我们建议你将日志下载到本地存储，例如本地文件夹、数据库或 map-reduce 存储库。
 
-若要下载使用日志，可使用适用于 Windows PowerShell 的 Azure RMS 管理模块。 有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。 如果你之前已下载了此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 **2.4.0.0**： `(Get-Module aadrm -ListAvailable).Version` 
+若要下载使用日志，可使用适用于 Windows PowerShell 的 Azure Rights Management 管理模块。 有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。 如果你之前已下载了此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 **2.4.0.0**： `(Get-Module aadrm -ListAvailable).Version` 
 
 ### 使用 PowerShell 下载使用日志
 
@@ -96,10 +96,10 @@ Azure Rights Management 将日志作为一系列 Blob 写入你的 Azure 存储�
 >
 > 例如，你可以运行以下命令，将所有信息导出为 .log 文件格式： `logparser –i:w3c –o:csv "SELECT * INTO AllLogs.csv FROM *.log"`
 
-#### 如果你已在 2016 年 2 月 22 日日志记录更改之前手动启用 Azure RMS 使用日志记录
+#### 如果已在 2016 年 2 月 22 日日志记录更改之前手动启用 Azure Rights Management 使用日志记录
 
 
-如果你在日志记录更改之前已使用使用日志记录，你将会在已配置的 Azure 存储帐户中找到使用日志。 Microsoft 不会将这些日志从你的存储帐户复制到新的 Azure RMS 管理的存储帐户作为此日志记录更改的一部分。 你负责管理以前生成的日志的生命周期，并可以使用 [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) cmdlet 来下载旧日志。 例如：
+如果你在日志记录更改之前已使用使用日志记录，你将会在已配置的 Azure 存储帐户中找到使用日志。 Microsoft 不会将这些日志作为此日志记录更改的一部分，从存储帐户复制到新的 Azure Rights Management 管理的存储帐户。 你负责管理以前生成的日志的生命周期，并可以使用 [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) cmdlet 来下载旧日志。 例如：
 
 - 将所有可用日志下载到 E:\logs 文件夹： `Get-AadrmUsageLog -Path "E:\Logs"`
     
@@ -107,17 +107,17 @@ Azure Rights Management 将日志作为一系列 Blob 写入你的 Azure 存储�
 
 请注意，如果以下任一情况适用，则无需使用 Get-AadrmUsageLog cmdlet 来下载日志：
 
--  你已在 2016 年 2 月 22 日当天或之前激活 Azure Rights Management，但未启用使用日志记录功能。
+-  已在 2016 年 2 月 22 日当天或之前激活 Azure Rights Management 服务，但未启用使用日志记录功能。
 
-- 你已在 2016 年 2 月 22 日之后激活 Azure Rights Management。
+- 已在 2016 年 2 月 22 日之后激活 Azure Rights Management 服务。
 
 ## 如何解释 Azure Rights Management 使用日志
 使用以下信息可帮助你解释 Azure Rights Management 使用日志。
 
 ### 日志序列
-Azure Rights Management 将日志作为一系列 Blob 写入。 
+Azure Rights Management 服务将日志作为一系列 blob 写入。 
 
-日志中的每个条目都有 UTC 时间戳。 由于 Azure Rights Management 在跨多个数据中心的多个服务器上运行，有时日志即使是按时间戳排序，也似乎并不符合时间顺序。 不过这种差异很小，通常在一分钟之内。 大多数情况下，这不会为日志分析带来麻烦。
+日志中的每个条目都有 UTC 时间戳。 由于 Azure Rights Management 服务在跨多个数据中心的多个服务器上运行，有时日志即使是按时间戳排序，也似乎并不符合时间顺序。 不过这种差异很小，通常在一分钟之内。 大多数情况下，这不会为日志分析带来麻烦。
 
 ### Blob 格式
 所有 Blob 都采用 W3C 扩展日志格式。 开头是以下两行：
@@ -165,7 +165,7 @@ Azure Rights Management 将日志作为一系列 Blob 写入。
     此连接器发出的请求将使用服务主体名称 **Aadrm_S-1-7-0** 进行记录，该名称是在安装 RMS 连接器时自动生成的。
 
 #### 典型请求类型
-Azure Rights Management 中有很多请求类型，但下表列出了其中一些最常用的请求类型。
+Azure Rights Management 服务有很多请求类型，但下表列出了其中一些最常用的请求类型。
 
 |请求类型|说明|
 |----------------|---------------|
@@ -192,10 +192,10 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 |GetConnectorAuthorizations|从 RMS 连接器进行调用以从云中获取其配置。|
 |GetRecipients|从文档跟踪站点进行调用，以便导航到单个文档的列表视图。|
 |GetSingle|从文档跟踪站点进行调用，以便导航到“单个文档”页面。|
-|GetTenantFunctionalState|Azure 经典门户检查是否已激活 Azure RMS。|
+|GetTenantFunctionalState|Azure 经典门户正在检查是否已激活 Azure Rights Management 服务。|
 |GetTemplateById|从 Azure 经典门户进行调用以通过指定模板 ID 来获取模板。|
 |KeyVaultDecryptRequest|客户端正在尝试解密受 RMS 保护的内容。 仅适用于 Azure 密钥保管库中客户托管的租户密钥 (BYOK)。|
-|KeyVaultGetKeyInfoRequest|进行调用以验证指定用在 Azure RMS 租户密钥的 Azure 密钥保管库中的密钥可访问，并且未使用。|
+|KeyVaultGetKeyInfoRequest|进行调用以验证指定用在 Azure 信息保护租户密钥的 Azure 密钥保管库中的密钥可访问，并且未使用。|
 |KeyVaultSignDigest|在将 Azure 密钥保管库中客户托管的密钥 (BYOK) 用于签名时进行调用。 通常是针对每个 AcquireLicence（或 FECreateEndUserLicenseV1）、Certify 和 GetClientLicensorCert（或 FECreatePublishingLicenseV1）请求调用一次此项。|
 |KMSPDecrypt|客户端正在尝试解密受 RMS 保护的内容。 仅适用于旧版客户托管的租户密钥 (BYOK)。|
 |KMSPSignDigest|在将旧版客户托管的密钥 (BYOK) 用于签名时进行调用。 通常是针对每个 AcquireLicence（或 FECreateEndUserLicenseV1）、Certify 和 GetClientLicensorCert（或 FECreatePublishingLicenseV1）请求调用一次此项。|
@@ -207,15 +207,15 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 |SearchUsers |从文档跟踪站点进行调用，以便搜索某个租户中的所有用户。|
 |ServerCertify|从已启用 RMS 的客户端（如 SharePoint）进行调用以认证服务器。|
 |SetUsageLogFeatureState|进行调用以启用使用日志记录。|
-|SetUsageLogStorageAccount|进行调用以指定 Azure RMS 日志的位置。|
+|SetUsageLogStorageAccount|进行调用以指定 Azure Rights Management 服务日志的位置。|
 |UpdateNotificationSettings|从文档跟踪站点进行调用，以便更改单个文档的通知设置。|
 |UpdateTemplate|从 Azure 经典门户进行调用以更新现有模板。|
 
 
 ## Windows PowerShell 参考
-从 2016 年 2 月起，Azure RMS 使用日志记录需要的唯一 Windows PowerShell cmdlet 为 [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx)。 
+从 2016 年 2 月起，Azure Rights Management 使用日志记录需要的唯一 Windows PowerShell cmdlet 为 [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx)。 
 
-在此更改之前，Azure RMS 使用日志需要以下 cmdlet（现已弃用）：  
+在此更改之前，Azure Rights Management 使用日志需要以下 cmdlet（现已弃用）：  
 
 -   [Disable-AadrmUsageLogFeature](https://msdn.microsoft.com/library/azure/dn629404.aspx)
 
@@ -231,15 +231,15 @@ Azure Rights Management 中有很多请求类型，但下表列出了其中一�
 
 -   [Set-AadrmUsageLogStorageAccount](https://msdn.microsoft.com/library/azure/dn629426.aspx)
 
-如果你在 Azure RMS 日志记录更改之前在自己的 Azure 存储空间中保存了日志，可以像以前一样使用这些较旧的 cmdlet（如使用 Get-AadrmUsageLog 和Get-AadrmUsageLogLastCounterValue）下载这些日志。 但所有新的使用日志将写入到新的 Azure RMS 存储空间，并且必须使用 Get-AadrmUserLog 下载。
+如果在 Azure Rights Management 日志记录更改之前在自己的 Azure 存储空间中保存了日志，可以像以前一样使用这些较旧的 cmdlet（如使用 Get-AadrmUsageLog 和Get-AadrmUsageLogLastCounterValue）下载这些日志。 但所有新的使用日志将写入到新的 Azure RMS 存储空间，并且必须使用 Get-AadrmUserLog 下载。
 
-若要深入了解适用于 Azure Rights Management 的 Windows PowerShell，请参阅[使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md)。
-
-
+若要深入了解适用于 Azure Rights Management 服务的 Windows PowerShell，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](administer-powershell.md)。
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,28 +1,28 @@
 ---
-title: "验证 Azure Rights Management | Azure RMS"
+title: "验证 Azure Rights Management | Azure 信息保护"
 description: "有关使用一个用户帐户来保护文件或电子邮件，然后尝试从另一个用户帐户打开和使用这些受保护的内容，从而验证服务是否按预期方式工作的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: aed609eb3562f670fd85ca8138bcd89cdc7800fd
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 665adbee40f5c1653a3c046231c5df450ee78c5f
 
 
 ---
 
 # 验证 Azure 权限管理
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-在激活 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 并执行组织需要的其他所有配置步骤之后，你可以使用一个用户帐户来保护文件或电子邮件，然后尝试从另一个用户帐户打开和使用这些受保护的内容，从而验证服务是否按预期方式工作。
+在激活 Azure 信息保护的 Azure Rights Management 服务并执行组织需要的其他所有配置步骤之后，你可以使用一个用户帐户来保护文件或电子邮件，然后尝试从另一个用户帐户打开和使用这些受保护的内容，从而验证此保护服务是否按预期方式工作。
 
 若要进行此测试，可以使用[通过使用 Azure Rights Management 帮助用户保护文件](help-users.md)中的信息。
 
@@ -33,13 +33,13 @@ ms.openlocfilehash: aed609eb3562f670fd85ca8138bcd89cdc7800fd
 
 ## 后续步骤
 
-你可以通过使用日志，监控组织使用信息保护的情况。 有关详细信息，请参阅[记录和分析 Azure Rights Management 使用情况](log-analyze-usage.md)。
+可以使用日志记录监视你组织使用 Azure Rights Management 服务的情况。 有关详细信息，请参阅[记录和分析 Azure Rights Management 使用情况](log-analyze-usage.md)。
 
 
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,35 +1,35 @@
 ---
 title: "如何添加显式所有者权限 | Azure RMS"
-description: "应用程序在从头开始创建许可证时应显式添加“所有者”权限。"
+description: Your application should explicitly add "Owner" rights when creating a license from scratch.
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: 3fae089850787391f95d7ea1448bd48418ad3ade
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 22016f824263916f5f265d818c51975d42c35799
 
 
 ---
 
 # 操作说明：添加显式所有者权限
 
-应用程序在从头开始创建许可证 ([**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)) 时应显式添加“所有者”权限。
+应用程序在从头开始创建许可证 ([**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)) 时应显式添加“所有者”权限。
 
 ## 先决条件
 
-应用程序在使用 [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 创建许可证句柄时，还必须显式授予所有者完全权限（权限）。
+应用程序在使用 [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 创建许可证句柄时，还必须显式授予所有者完全权限（权限）。
 
 >[!NOTE] 
-> 使用 [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) 以及 **IPC\_LI\_OWNER** 属性将用户设置为“所有者”不会授予所有者完全权限。
+> 使用 [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) 以及 **IPC\_LI\_OWNER** 属性将用户设置为“所有者”不会授予所有者完全权限。
 
 下列示例代码仅演示创建特定权限并添加到给定许可证时所涉及的步骤。
 
@@ -37,7 +37,7 @@ ms.openlocfilehash: 3fae089850787391f95d7ea1448bd48418ad3ade
  
 ## 步骤 1：示例方案
 
-在此示例中，所需权限会添加到使用 [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 创建的许可证。 该示例演示如何通过权限列表创建权限并分配给许可证。
+在此示例中，所需权限会添加到使用 [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 创建的许可证。 该示例演示如何通过权限列表创建权限并分配给许可证。
 
 会向这些用户添加以下两种权限：
 
@@ -108,14 +108,14 @@ ms.openlocfilehash: 3fae089850787391f95d7ea1448bd48418ad3ade
 ## 相关主题
 
 * [开发人员说明](developer-notes.md)
-* [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
-* [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)
+* [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
+* [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)
  
 
  
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

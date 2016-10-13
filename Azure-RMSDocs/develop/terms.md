@@ -4,18 +4,18 @@ description: "特定于 Rights Management Services 的术语定义的集合。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99390fb78a9da3bef8a67c8595770a84fb9bb89a
-ms.openlocfilehash: a32bfc59dd72efbcb239845ddabfa9bd3a969127
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: cf12a824d3d56ca2df234ba0732d0c4eaae6358e
 
 
 ---
@@ -46,6 +46,6 @@ PFile 格式对于应用程序开发人员是透明的，因为它是按设计 M
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO1-->
 
 

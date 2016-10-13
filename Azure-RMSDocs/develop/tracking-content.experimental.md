@@ -4,10 +4,10 @@ description: "实现文档跟踪的基本指导"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 audience: developer
@@ -15,8 +15,8 @@ ms.reviewer: shubhamp
 ms.suite: ems
 experiment_id: priyamo-test-20160729
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 63882ad86a3b2746e2f7c1250f8707049dee8eb7
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 7a96d113118747c76556528f94dd65d8df05e0c3
 
 
 ---
@@ -45,12 +45,12 @@ ms.openlocfilehash: 63882ad86a3b2746e2f7c1250f8707049dee8eb7
 在操作上，只有 **内容名称** 和 **通知类型** 属性对于文档跟踪是必需的。
 
 
-- [IpcCreateLicenseMetadataHandle](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-- [IpcSetLicenseMetadataProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
+- [IpcCreateLicenseMetadataHandle](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
+- [IpcSetLicenseMetadataProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
 
   我们期望你能设置所有元数据属性。 就是以下这些按类型列出的属性。
 
-  有关详细信息，请参阅[许可证元数据属性类型](/rights-management/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)。
+  有关详细信息，请参阅[许可证元数据属性类型](/information-protection/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)。
 
   - **IPC_MD_CONTENT_PATH**
 
@@ -76,16 +76,16 @@ ms.openlocfilehash: 63882ad86a3b2746e2f7c1250f8707049dee8eb7
 
     用于设置文件的发放日期
 
-- [IpcSerializeLicenseWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+- [IpcSerializeLicenseWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
 
 使用其中一个合适的 API 将元数据添加到文件或流中。
 
-- [IpcfEncryptFileWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-- [IpcfEncryptFileStreamWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+- [IpcfEncryptFileWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
+- [IpcfEncryptFileStreamWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
 
 最后，使用此 API 注册具有跟踪系统的跟踪文档。
 
-- [IpcRegisterLicense](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+- [IpcRegisterLicense](/information-protection/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
 
 
 ## 2.向 RMS 服务注册文档
@@ -136,7 +136,7 @@ ms.openlocfilehash: 63882ad86a3b2746e2f7c1250f8707049dee8eb7
 向应用添加**跟踪使用情况** UI 项非常简单，使用以下任一 URL 格式即可：
 
 - 使用内容 ID
-  - 如果许可证已序列化，请使用 [IpcGetLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetlicenseproperty) 或 [IpcGetSerializedLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetserializedlicenseproperty) 获取内容 ID，并使用许可证属性 **IPC_LI_CONTENT_ID**。 有关详细信息，请参阅[许可证属性类型](/rights-management/sdk/2.1/api/win/constants#msipc_license_property_types)。
+  - 如果许可证已序列化，请使用 [IpcGetLicenseProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetlicenseproperty) 或 [IpcGetSerializedLicenseProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetserializedlicenseproperty) 获取内容 ID，并使用许可证属性 **IPC_LI_CONTENT_ID**。 有关详细信息，请参阅[许可证属性类型](/information-protection/sdk/2.1/api/win/constants#msipc_license_property_types)。
   - 对于 **ContentId** 和 **Issuer** 元数据，使用以下格式： `https://track.azurerms.com/#/{ContentId}/{Issuer}`
 
     示例 - `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
@@ -149,20 +149,20 @@ ms.openlocfilehash: 63882ad86a3b2746e2f7c1250f8707049dee8eb7
 
 ## 相关主题
 
-* [许可证元数据属性类型](/rights-management/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)
-* [通知参考](/rights-management/sdk/2.1/api/win/constants#msipc_notification_preference)
-* [通知类型](/rights-management/sdk/2.1/api/win/constants#msipc_notification_type)
-* [IpcCreateLicenseMetadataHandle](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-* [IpcSetLicenseMetadataProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
-* [IpcSerializeLicenseWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
-* [IpcfEncryptFileWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-* [IpcfEncryptFileStreamWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
-* [IpcRegisterLicense](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+* [许可证元数据属性类型](/information-protection/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)
+* [通知参考](/information-protection/sdk/2.1/api/win/constants#msipc_notification_preference)
+* [通知类型](/information-protection/sdk/2.1/api/win/constants#msipc_notification_type)
+* [IpcCreateLicenseMetadataHandle](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
+* [IpcSetLicenseMetadataProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
+* [IpcSerializeLicenseWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+* [IpcfEncryptFileWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
+* [IpcfEncryptFileStreamWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+* [IpcRegisterLicense](/information-protection/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
 
  
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

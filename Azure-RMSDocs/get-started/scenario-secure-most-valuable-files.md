@@ -1,34 +1,34 @@
 ---
-title: "方案 - 保护你最重要的（几个）文件 | Azure RMS"
+title: "方案 - 保护最重要的（几个）文件 | Azure 信息保护"
 description: "此方案和支持性的用户文档使用 Azure Rights Management 手动并自定义保护你已标识为最重要的几个文件，这保证了对文件提供最高级别的保护以阻止未经授权的访问。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
+ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
+ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
 
 
 ---
 
 # 方案 - 保护你最重要的（几个）文件
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-此方案和支持性的用户文档使用 Azure Rights Management 手动并自定义保护你已标识为最重要的几个文件，这保证了对文件提供最高级别的保护以阻止未经授权的访问。 通常只有少数人可以访问这些文件。 例如，公司招牌食物产品的食谱说明，或者在指定日期前不允许公开的收购计划。
+此方案和支持性的用户文档使用 Azure 信息保护中的 Azure Rights Management 技术，手动并自定义保护已标识为最重要的几个文件，这保证了对文件提供最高级别的保护以阻止未经授权的访问。 通常只有少数人可以访问这些文件。 例如，公司招牌食物产品的食谱说明，或者在指定日期前不允许公开的收购计划。
 
 这些指令适用于下面一组情况：
 
 -   你已标识要保护的小部分文件。
 
--   这些文件的格式是支持 Rights Management 的一种 Office 文件格式。 如果这些文件为其他文件格式（例如，CAD 文件），请确保这些格式支持 Azure RMS，同时部署的应用程序本机支持 Azure RMS。 有关详细信息，请参阅[应用程序如何支持 Azure Rights Management](https://technet.microsoft.com/library/jj585004.aspx)。
+-   这些文件的格式是支持 Rights Management 的一种 Office 文件格式。 如果这些文件为其他文件格式（例如，CAD 文件），请确保这些格式支持 Azure RMS，同时部署的应用程序本机支持 Azure RMS。 有关详细信息，请参阅[应用程序如何支持 Azure Rights Management 服务](../understand-explore/applications-support.md)。
 
 -   这些文件包含只有少数人有权访问的高度机密的敏感信息。
 
@@ -48,12 +48,12 @@ ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
 
 |要求|需要更多信息|
 |---------------|--------------------------------|
-|已准备好 Office 365 或 Azure Active Directory 的帐户和组：<br /><br />- 一个名为**特别访问权**并已启用邮件的组，其中的成员应有权访问这些高度机密的文档<br /><br />- 一个名为 **IT 合规性管理员**并已启用邮件的组，其中包含负责电子发现、监视和审核的管理人员<br /><br />- 一个名为 **RMS 管理员**的启用邮件的组，将配置 Azure RMS 的所有管理员均为此组的成员|[准备 Azure 权限管理](https://technet.microsoft.com/library/jj585029.aspx)|
-|已激活 Azure Rights Management|[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)|
-|已按下文所述配置了自定义模板|[为 Azure Rights Management 配置自定义模板](https://technet.microsoft.com/library/dn642472.aspx)|
-|将 Rights Management 共享应用程序部署到 Windows 计算机中，以便你就地保护这些文件，如下一部分所述|[下载和安装 Rights Management 共享应用程序](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
+|已准备好 Office 365 或 Azure Active Directory 的帐户和组：<br /><br />- 一个名为**特别访问权**并已启用邮件的组，其中的成员应有权访问这些高度机密的文档<br /><br />- 一个名为 **IT 合规性管理员**并已启用邮件的组，其中包含负责电子发现、监视和审核的管理人员<br /><br />- 一个名为 **RMS 管理员**的启用邮件的组，将配置 Azure RMS 的所有管理员均为此组的成员|[准备 Azure 信息保护](../plan-design/deployment-roadmap.md)|
+|已激活 Azure Rights Management|[激活 Azure 权限管理](../deploy-use/activate-service.md)|
+|已按下文所述配置了自定义模板|[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)|
+|将 Rights Management 共享应用程序部署到 Windows 计算机中，以便你就地保护这些文件，如下一部分所述|[下载和安装 Rights Management 共享应用程序](../rms-client/install-sharing-app.md)|
 |已授权的用户具有最低版本 Office 2013|如果用户安装的是 Office 2010，则还需安装 Rights Management 共享应用程序。|
-|Azure RMS 订阅包括文档跟踪|如果 Azure RMS 订阅不包括文档跟踪和撤销功能，则将无法使用文档跟踪站点以查看访问这些文档的人员，并根据需要撤销访问权限。 在这种情况下，可以选择购买支持文档跟踪的订阅，或者接受此限制条件。 还可以考虑使用 Azure RMS 的[使用日志记录](https://technet.microsoft.com/library/dn529121.aspx)功能，这可以提供信息（如访问过每个文件的人员及访问时间），以帮助检测潜在的可疑行为。<br /><br />检查订阅支持： [Rights Management 服务 (RMS) 产品比较](https://technet.microsoft.com/dn858608)|
+|Azure RMS 订阅包括文档跟踪|如果 Azure RMS 订阅不包括文档跟踪和撤销功能，则将无法使用文档跟踪站点以查看访问这些文档的人员，并根据需要撤销访问权限。 在这种情况下，可以选择购买支持文档跟踪的订阅，或者接受此限制条件。 还可以考虑使用 Azure RMS 的[使用日志记录](../deploy-use/log-analyze-usage.md)功能，这可以提供信息（如访问过每个文件的人员及访问时间），以帮助检测潜在的可疑行为。<br /><br />请查看 Azure 信息保护[定价页](https://go.microsoft.com/fwlink/?LinkId=827589)中的订阅信息。|
 
 ### 配置自定义模板
 
@@ -85,7 +85,7 @@ ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
 
 5.  如果其他文件夹中还有要保护的文件，请对每个文件夹重复以上步骤 1 到 4。
 
-有关就地保护文件的详细信息，请参阅[使用 Rights Management 共享应用程序保护设备上的文件（就地保护）](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx)
+有关就地保护文件的详细信息，请参阅[使用 Rights Management 共享应用程序保护设备上的文件（就地保护）](../rms-client/sharing-app-protect-in-place.md)
 
 > [!TIP]
 > 如果此手动过程要保护的文件数过多，可以考虑使用 [RMS 保护工具](https://www.microsoft.com/en-us/download/details.aspx?id=47256)借助模板批量保护文件。
@@ -147,6 +147,6 @@ ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,19 +1,19 @@
 ---
-title: "RMS 连接器的注册表设置 | Azure RMS"
+title: "RMS 连接器的注册表设置 | Azure 信息保护"
 description: "有关使用 RMS 连接器在服务器上进行注册表设置的信息。 配置这些设置的推荐方法是使用适用于 Microsoft RMS 连接器的服务器配置工具。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 5ff109543685049be5e89a12ea037de941736547
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 1dd1b26735732f4bef8cf73a566b0f26b7610a82
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 5ff109543685049be5e89a12ea037de941736547
 
 # Rights Management 连接器的注册表设置
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
 
 只有当你需要在服务器上手动添加或检查将运行 Exchange、SharePoint 或 Windows Server 的服务器配置为使用 [RMS ](deploy-rms-connector.md)连接器的注册表设置时，才使用以下部分的表格。 配置这些服务器的推荐方法是使用适用于 Microsoft RMS 连接器的服务器配置工具。
@@ -216,6 +216,6 @@ ms.openlocfilehash: 5ff109543685049be5e89a12ea037de941736547
 返回到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

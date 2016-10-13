@@ -1,50 +1,48 @@
 ---
-title: "从 AD RMS 迁移到 Azure Rights Management - 阶段 3 | Azure RMS"
-description: "从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 3 涉及从 AD RMS 迁移到 Azure Rights Management 中的步骤 6 至 7。"
-author: cabailey
-manager: mbaldwin
-ms.date: 08/17/2016
+title: "从 AD RMS 迁移到 Azure 信息保护 - 阶段 3 | Azure 信息保护"
+description: "从 AD RMS 迁移到 Azure 信息保护的阶段 3 涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 6 至 7"
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: 5d707e1fac410e5ff959071507044420dbd8cde7
+ms.sourcegitcommit: d7e21c2bb07e82bc243e5ab01c0a21aa0fe274d1
+ms.openlocfilehash: 8f7f27f3b9def4b38f5de45b9d9686208a4f5283
 
 
 ---
 
 # 迁移阶段 3 - 支持服务配置
 
->*适用于：Active Directory Rights Management Services、Azure Rights Management*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
 
 
-使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 3。 这些过程涉及[从 AD RMS 迁移到 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 中的步骤 6-7。
+使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 3。 这些过程涉及[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 6-7。
 
 
 ## 步骤 6. 为 Exchange Online 配置 IRM 集成
 
-如果以前已将 TDP 从 AD RMS 导入 Exchange Online，则必须删除此 TDP，以避免在迁移到 Azure RMS 后发生模板和策略冲突。 为此，请在 Exchange Online 中使用 [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) cmdlet。
+如果以前已将 TDP 从 AD RMS 导入 Exchange Online，则必须删除此 TDP，以避免在迁移到 Azure 信息保护后发生模板和策略冲突。 为此，请在 Exchange Online 中使用 [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) cmdlet。
 
-如果你选择了 **Microsoft 管理**的 Azure RMS 租户密钥拓扑：
+如果你选择了 **Microsoft 管理**的 Azure 信息保护租户密钥拓扑：
 
--   请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)文章中的[“Exchange Online：IRM 配置”](../deploy-use/configure-office365.md#exchange-online-irm-configuration)部分。 此部分介绍了一些典型的命令，运行这些命令可以连接到 Exchange Online 服务、从 Azure RMS 导入租户密钥，以及为 Exchange Online 启用 IRM 功能。 完成这些步骤后，你将获得 Exchange Online 的完整 RMS 功能。
+-   请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)文章中的[“Exchange Online：IRM 配置”](../deploy-use/configure-office365.md#exchange-online-irm-configuration)部分。 此部分介绍了一些典型的命令，运行这些命令可以连接到 Exchange Online 服务、从 Azure 信息保护导入租户密钥，以及为 Exchange Online 启用 IRM 功能。 完成这些步骤后，你将获得 Exchange Online 的完整 Azure Rights Management 保护功能。
 
-如果你选择了**客户管理 (BYOK)** 的 Azure RMS 租户密钥拓扑：
+如果你选择了**客户管理 (BYOK)** 的 Azure 信息保护租户密钥拓扑：
 
--   Exchange Online 的 RMS 功能将有所削减，如 [BYOK 定价和限制](byok-price-restrictions.md)文章中所述。
+-   Exchange Online 的 Rights Management 保护功能将有所削减，如 [BYOK 定价和限制](byok-price-restrictions.md)文章中所述。
 
 ## 步骤 7. 部署 RMS 连接器
-如果你已将 Exchange Server 或 SharePoint Server 的信息权限管理 (IRM) 功能与 AD RMS 一起使用，则必须先在这些服务器上禁用 IRM 并删除 AD RMS 配置。 然后，部署 Rights Management (RMS) 连接器，该连接器将充当本地服务器和 Azure RMS 之间的通信接口（中继）。
+如果你已将 Exchange Server 或 SharePoint Server 的信息权限管理 (IRM) 功能与 AD RMS 一起使用，则必须先在这些服务器上禁用 IRM 并删除 AD RMS 配置。 然后，部署 Rights Management (RMS) 连接器，该连接器将充当本地服务器和 Azure 信息保护的保护服务之间的通信接口（中继）。
 
-此步骤的最后一步，如果你已将多个用于保护电子邮件的 AD RMS 数据配置文件 (.xml) 导入到 Azure RMS，则必须手动编辑 Exchange Server 计算机上的注册表，将所有受信任的发布域 URL 重定向到 RMS 连接器。
+此步骤的最后一步，如果你已将多个用于保护电子邮件的 AD RMS 数据配置文件 (.xml) 导入到 Azure 信息保护，则必须手动编辑 Exchange Server 计算机上的注册表，将所有受信任的发布域 URL 重定向到 RMS 连接器。
 
 > [!NOTE]
-> 在开始之前，请从[支持 Azure RMS 的本地服务器](../get-started/requirements-servers.md)中核实 Azure RMS 所支持的本地服务器的版本。
+> 在开始之前，请从[支持 Azure RMS 的本地服务器](../get-started/requirements-servers.md)中核实 Azure Rights Management 服务所支持的本地服务器的版本。
 
 ### 在 Exchange 服务器上禁用 IRM 并删除 AD RMS 配置
 
@@ -214,6 +212,6 @@ https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
 若要继续迁移，请转到[阶段 4 - 迁移后任务](migrate-from-ad-rms-phase4.md)。
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

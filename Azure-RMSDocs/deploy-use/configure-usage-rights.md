@@ -1,28 +1,28 @@
 ---
-title: "为 Azure Rights Management 配置使用权限 | Azure RMS"
-description: "了解和确定在使用 Azure Rights Management (Azure RMS) 保护文件或电子邮件时使用的特定权限。"
+title: "为 Azure Rights Management 配置使用权限 | Azure 信息保护"
+description: "了解和确定在使用 Azure 信息保护中的 Azure Rights Management 服务保护文件或电子邮件时使用的特定权限。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: ab1b2f652d34183e1d95fd0a387abb10c3aff9b1
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: a11d027789a63ae845812068e34f527f15a02314
 
 
 ---
 
 # 为 Azure Rights Management 配置使用权限
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-在文件或电子邮件上使用 Azure Rights Management (Azure RMS) 设置保护并且不使用模板时，你必须自己配置使用权限。 此外，当为 Azure RMS 配置自定义模板时，可以选择随后在用户、管理员或配置的服务选择模板时会自动应用的使用权限。 例如，在 Azure 经典门户中，可以选择配置使用权限逻辑分组的角色，也可以配置单个权限。
+在文件或电子邮件上使用 Azure 信息保护中的 Azure Rights Management 服务设置保护并且不使用模板时，必须自行配置使用权限。 此外，在为 Azure Rights Management 配置自定义模板时，可以选择随后在用户、管理员或配置的服务选择模板时会自动应用的使用权限。 例如，在 Azure 经典门户中，可以选择配置使用权限逻辑分组的角色，也可以配置单个权限。
 
 使用本文章可帮助为当前使用的应用程序配置所需的使用权限，并了解应用程序如何解释这些权限。
 
@@ -77,7 +77,7 @@ ms.openlocfilehash: ab1b2f652d34183e1d95fd0a387abb10c3aff9b1
 
 Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应用和 Exchange 传输规则）有一个附加的电子邮件信息权限保护选项：**不得转发**。 
 
-尽管**不得转发**看似用户（和 Exchange 管理员）可选择的默认权限管理模板，但此选项并不是模板。 因此在 Azure 经典门户中查看和管理 Azure RMS 模板时，你看不到此选项。 相反，**不得转发**选项是用户对其电子邮件收件人动态应用的一组权限。
+尽管**不得转发**看似用户（和 Exchange 管理员）可选择的默认权限管理模板，但此选项并不是模板。 因此在 Azure 经典门户中查看和管理 Azure Rights Management 模板时，你看不到此选项。 相反，**不得转发**选项是用户对其电子邮件收件人动态应用的一组权限。
 
 对电子邮件应用**不得转发**选项时，收件人将无法转发、打印或复制电子邮件，也无法保存附件或另存为其他名称。 例如，在 Outlook 客户端中，“转发”按钮和**另存为**、**保存附件**和**打印**菜单选项将不可用，并且无法添加或更改**收件人**、**抄送**或**密件抄送**框中的收件人。
 
@@ -101,6 +101,6 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

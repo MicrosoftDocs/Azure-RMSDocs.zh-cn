@@ -4,18 +4,18 @@ description: "本主题向你介绍 iOS/OS X 版 RMS SDK 的重要代码元素�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: c4595105b4e33a4f047fd7c89c8361de6ca32d43
 
 
 ---
@@ -36,9 +36,9 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
 ###方案：使用受 RMS 保护的文件
 
 
-- **步骤 1**：创建 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) 对象
+- **步骤 1**：创建 [**MSProtectedData**](/information-protection/sdk/4.2/api/iOS/msprotecteddata) 对象
 
- **说明**：通过 create 方法实例化 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) 对象，该方法使用 [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 实现服务身份验证，以便通过将 **MSAuthenticationCallback** 的实例作为参数 *authenticationCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码部分中对 [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 的调用。
+ **说明**：通过 create 方法实例化 [**MSProtectedData**](/information-protection/sdk/4.2/api/iOS/msprotecteddata) 对象，该方法使用 [**MSAuthenticationCallback**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 实现服务身份验证，以便通过将 **MSAuthenticationCallback** 的实例作为参数 *authenticationCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码部分中对 [**protectedDataWithProtectedFile**](/information-protection/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 的调用。
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -56,7 +56,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
 
 - **步骤 2**：使用 Active Directory 身份验证库 (ADAL) 设置身份验证。
 
-  **说明Description**：在此步骤中，你会看到用于通过示例身份验证参数实现 [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 的 ADAL。 若要深入了解如何使用 ADAL，请参阅 Azure AD 身份验证库 (ADAL)。
+  **说明Description**：在此步骤中，你会看到用于通过示例身份验证参数实现 [**MSAuthenticationCallback**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 的 ADAL。 若要深入了解如何使用 ADAL，请参阅 Azure AD 身份验证库 (ADAL)。
 
       // AuthenticationCallback holds the necessary information to retrieve an access token.
       @interface MsipcAuthenticationCallback : NSObject<MSAuthenticationCallback>
@@ -95,7 +95,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
                           }];
        }
 
--   **步骤 3**：通过 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) 对象的 [**accessCheck**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_accesscheck_method_objc) 方法，检查对于具有此内容的此用户是否存在 Edit 权限。
+-   **步骤 3**：通过 [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) 对象的 [**accessCheck**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_accesscheck_method_objc) 方法，检查对于具有此内容的此用户是否存在 Edit 权限。
 
         - (void)accessCheckWithProtectedData:(MSProtectedData *)protectedData
         {
@@ -111,7 +111,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
 
 ### 方案：使用模板创建新的受保护文件
 
-此方案首先是获取模板列表 [**MSTemplateDescriptor**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc)，再选择第一个模板以创建策略，然后创建和写入新的受保护文件。
+此方案首先是获取模板列表 [**MSTemplateDescriptor**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc)，再选择第一个模板以创建策略，然后创建和写入新的受保护文件。
 
 -   **步骤 1**：获取模板列表
 
@@ -125,7 +125,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
                                    }];
         }
 
--   **步骤 2**：使用列表中的第一个模板创建 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)。
+-   **步骤 2**：使用列表中的第一个模板创建 [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)。
 
         + (void)userPolicyCreationFromTemplateWithAuthenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -140,7 +140,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
             }];
         }
 
--   **步骤 3**：创建 [**MSMutableProtectedData**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msmutableprotecteddata_interface_objc) 并向其中写入内容。
+-   **步骤 3**：创建 [**MSMutableProtectedData**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msmutableprotecteddata_interface_objc) 并向其中写入内容。
 
         + (void)createPtxtWithUserPolicy:(MSUserPolicy *)userPolicy contentToProtect:(NSData *)contentToProtect
         {
@@ -157,7 +157,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
 ### 方案：打开自定义受保护的文件
 
 
--   **步骤 1**：通过 *serializedContentPolicy* 创建 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)。
+-   **步骤 1**：通过 *serializedContentPolicy* 创建 [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)。
 
         + (void)userPolicyWith:(NSData *)protectedData
         authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
@@ -185,7 +185,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
             }];
          }
 
--   **步骤 2**：使用**步骤 1**中的 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) 创建 [**MSCustomProtectedData**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mscustomprotecteddata_interface_objc)，并从中读取信息。
+-   **步骤 2**：使用**步骤 1**中的 [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) 创建 [**MSCustomProtectedData**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_mscustomprotecteddata_interface_objc)，并从中读取信息。
 
         + (void)customProtectedDataWith:(NSData *)protectedData
         {
@@ -217,7 +217,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
 
 -   **步骤 1**：在用户提供了电子邮件地址的情况下，创建策略描述符。
 
-    **说明**：实际上，会使用来自设备接口的用户输入创建对象 [**MSUserRights**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserrights_interface_objc) 和 [**MSPolicyDescriptor**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)。
+    **说明**：实际上，会使用来自设备接口的用户输入创建对象 [**MSUserRights**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserrights_interface_objc) 和 [**MSPolicyDescriptor**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)。
 
         + (void)policyDescriptor
         {
@@ -228,7 +228,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
             policyDescriptor.offlineCacheLifetimeInDays = 10;
         }
 
--   **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)。
+-   **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)。
 
         + (void)userPolicyWithPolicyDescriptor:(MSPolicyDescriptor *)policyDescriptor
         {
@@ -242,7 +242,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
             }];
         }
 
--   **步骤 3**：创建 [**MSMutableCustomProtectedData**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msmutablecustomprotecteddata_interface_objc) 并向其写入内容，然后关闭。
+-   **步骤 3**：创建 [**MSMutableCustomProtectedData**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msmutablecustomprotecteddata_interface_objc) 并向其写入内容，然后关闭。
 
         + (void)mutableCustomProtectedData:(NSMutableData *)backingData policy:(MSUserPolicy *)policy contentToProtect:(NSString *)contentToProtect
         {
@@ -285,6 +285,6 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
  
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

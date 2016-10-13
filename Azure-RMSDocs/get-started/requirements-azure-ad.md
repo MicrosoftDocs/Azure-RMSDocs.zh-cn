@@ -1,29 +1,28 @@
 ---
-title: "Azure RMS 要求&#58;Azure AD Directory | Azure RMS"
-description: "确定使用 Azure Rights Management (Azure RMS) 的 Azure AD 要求，以便用户可以成功进行身份验证。"
+title: "Azure Active Directory 要求 | Azure 信息保护"
+description: "确定使用 Azure 信息保护的 Azure AD 要求，以便用户可以成功进行身份验证。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/29/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: b4ac71492ba9ad883d481149a248b919973d7386
+ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
+ms.openlocfilehash: 5be497b09ed1b1342747508611a1cc06ad0edf02
 
 
 ---
 
-# Azure RMS 要求：Azure AD Directory
+# Azure 信息保护的 Azure Active Directory 要求
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-
-你必须拥有 Azure AD 目录才能使用 Azure Rights Management (Azure RMS)。 你可以使用此目录的组织帐户登录 Azure 经典门户，并在该门户中进行 Rights Management 模板的配置和管理之类的操作。
+必须拥有 Azure AD 目录才能使用 Azure 信息保护。 你可以使用此目录的组织帐户登录 Azure 经典门户，并在该门户中进行 Rights Management 模板的配置和管理之类的操作。
 
 如果你还没有你组织的 Azure 订阅，则可以通过注册免费试用版来获取订阅：转到 [Azure 入门](https://account.windowsazure.com/organization)页并按照说明进行操作。
 
@@ -40,8 +39,8 @@ ms.openlocfilehash: b4ac71492ba9ad883d481149a248b919973d7386
 > 
 > -   你必须在最低服务器版的 **Windows Server 2012 R2** 上使用 AD FS，或者使用支持 OAuth 2.0 协议的备用身份验证提供程序。
 
-## 多因素身份验证 (MFA) 和 Azure RMS
-若要将多因素身份验证 (MFA) 和 Azure RMS 结合起来使用，至少需要以下条件之一：
+## 多重身份验证 (MFA) 和 Azure 信息保护
+若要将多因素身份验证 (MFA) 和 Azure 信息保护结合起来使用，至少需要以下条件之一：
 
 -   Office 2013（最低版本）：
 
@@ -70,11 +69,11 @@ ms.openlocfilehash: b4ac71492ba9ad883d481149a248b919973d7386
         有关此方案的详细信息，请参阅 Office 博客上的[使用 Office 365 – 标识程序现在已简化](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)。
 
 ## 后续步骤
-若要查看其他要求，请参阅 [Azure Rights Management 的要求](requirements-azure-rms.md)。
+若要查看其他要求，请参阅 [Azure 信息保护的要求](requirements-azure-rms.md)。
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

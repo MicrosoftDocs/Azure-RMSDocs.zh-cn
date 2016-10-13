@@ -1,39 +1,39 @@
 ---
-title: "步骤 2&colon; 软件保护密钥到 HSM 保护密钥的迁移 | Azure RMS"
-description: "此说明是从 AD RMS 到 Azure Rights Management 的迁移路径中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且你希望使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure Rights Management 时才适用。"
+title: "步骤 2 &colon;软件保护密钥到 HSM 保护密钥的迁移 | Azure 信息保护"
+description: "此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且希望使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure 信息保护时才适用。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: f4341d648b591922df93a4d2ba5e14151743fcdb
+ms.sourcegitcommit: 931642ea9070a7581b428bcd04756048673fe3c0
+ms.openlocfilehash: ae530a9ae861bce8f82fa2e535e5b2281f1c9ffe
 
 
 ---
 
 # 步骤 2：软件保护密钥到 HSM 保护密钥的迁移
 
->*适用于：Active Directory Rights Management Services、Azure Rights Management*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护*
 
 
-这些说明是 [从 AD RMS 到 Azure 权限管理的迁移路径](migrate-from-ad-rms-to-azure-rms.md) 中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且你希望使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure 权限管理时才适用。 
+此说明是[从 AD RMS 到 Azure 信息保护的迁移路径](migrate-from-ad-rms-to-azure-rms.md)中的一部分，仅当你的 AD RMS 密钥是软件保护密钥，且希望使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure 信息保护时才适用。 
 
 如果这不是你选择的配置方案，请返回[步骤 2.从 AD RMS 中导出配置数据并将其导入到 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) 中，然后选择其他配置。
 
-此过程分为四部分，用于将 AD RMS 配置导入到 Azure RMS，以在 Azure 密钥保管库中生成由你管理的 Azure RMS 租户密钥 (BYOK)。
+此过程分为四部分，可将 AD RMS 配置导入到 Azure 信息保护，以在 Azure 密钥保管库中生成由你管理的 Azure 信息保护租户密钥 (BYOK)。
 
-必须首先从 AD RMS 配置数据中提取服务器许可方证书 (SLC) 密钥并将该密钥传送到本地 Thales HSM，然后打包 HSM 密钥并将其传送到 Azure 密钥保管库，之后授权 Azure RMS 可以访问密钥保管库，最后导入配置数据。
+必须首先从 AD RMS 配置数据中提取服务器许可方证书 (SLC) 密钥并将该密钥传送到本地 Thales HSM，然后打包 HSM 密钥并将其传送到 Azure 密钥保管库，之后授权 Azure 信息保护中的 Azure Rights Management 服务可以访问密钥保管库，最后导入配置数据。
 
-因为你的 Azure RMS 租户密钥将由 Azure 密钥保管库存储并进行管理，所以此部分的迁移需要 Azure 密钥保管库中的管理，除了 Azure 密钥 RMS 外。 如果 Azure 密钥保管库由你以外的管理员为你的组织管理，则你需要与该管理员协作完成这些过程。
+因为你的 Azure 信息保护租户密钥将由 Azure 密钥保管库存储并进行管理，所以除 Azure 信息保护以外，此部分的迁移还需要 Azure 密钥保管库中的管理。 如果 Azure 密钥保管库由你以外的管理员为你的组织管理，则你需要与该管理员协作完成这些过程。
 
-在开始之前，请确保你的组织有一个已在 Azure 密钥保管库中创建的密钥保管库，且该保管库支持 HSM 保护的密钥。 尽管不是必需的，但我们建议你有一个专用于 Azure RMS 的密钥保管库。 此密钥保管库将被配置为允许 Azure RMS 进行访问，因此应将此密钥保管库中存储的密钥限制为仅 Azure RMS 密钥。
+在开始之前，请确保你的组织有一个已在 Azure 密钥保管库中创建的密钥保管库，且该保管库支持 HSM 保护的密钥。 尽管不是必需的，但我们建议你有一个专用于 Azure 信息保护的密钥保管库。 此密钥保管库将配置为允许 Azure 信息保护中的 Azure Rights Management 服务访问，所以此密钥保管库存储的密钥应限制为仅适用于 Azure 信息保护密钥。
 
 
 > [!TIP]
@@ -50,11 +50,11 @@ ms.openlocfilehash: f4341d648b591922df93a4d2ba5e14151743fcdb
 
     不用按照这些步骤生成租户密钥，因为你在导出的配置数据 (.xml) 文件中已有等效项。 你将改为运行工具以从该文件中提取此密钥并将其导入到本地 HSM。 在运行时，该工具将创建两个文件：
 
-    - 新的不含密钥的配置数据文件（之后准备将其导入到你的 Azure RMS 租户）。
+    - 新的不含密钥的配置数据文件（之后准备将其导入到你的 Azure 信息保护租户）。
 
     - 含密钥的 PEM 文件（为密钥容器，之后准备将其导入到你的本地 HSM）。
 
-2. Azure RMS 管理员或 Azure 密钥保管库管理员：在未连接工作站上，从 [Azure RMS migration toolkit](https://go.microsoft.com/fwlink/?LinkId=524619)（Azure RMS 迁移工具包）中运行 TpdUtil 工具。 例如，在 E 驱动器（在此驱动器上复制名为 ContosoTPD.xml 的配置数据文件）上安装了该工具时：
+2. Azure 信息保护管理员或 Azure 密钥保管库管理员：在未连接工作站上，从 [Azure RMS migration toolkit](https://go.microsoft.com/fwlink/?LinkId=524619)（Azure RMS 迁移工具包）中运行 TpdUtil 工具。 例如，在 E 驱动器（在此驱动器上复制名为 ContosoTPD.xml 的配置数据文件）上安装了该工具时：
 
     ```
         E:\TpdUtil.exe /tpd:ContosoTPD.xml /otpd:ContosoTPD.xml /opem:ContosoTPD.pem
@@ -122,15 +122,15 @@ ms.openlocfilehash: f4341d648b591922df93a4d2ba5e14151743fcdb
 
     将密钥传送到 Azure 密钥保管库之前，请确保在创建具有降低的权限的密钥副本（步骤 4.1）时，以及在加密密钥（步骤 4.3）时，KeyTransferRemote.exe 实用工具返回“结果：成功”。
 
-    将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 类似于 **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**。 请记下此 URL，因为 Azure RMS 管理员需要使用它来告知 Azure RMS 将此密钥作为其租户密钥。
+    将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 类似于 **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**。 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure 信息保护中的 Azure Rights Management 服务将此密钥用作租户密钥。
 
     现在，你已将 HSM 密钥传送到 Azure 密钥保管库，接下来可以导入 AD RMS 配置数据。
 
-## 第 3 部分：将配置数据导入到 Azure RMS
+## 步骤 3：将配置数据导入到 Azure 信息保护
 
-1.  Azure RMS 管理员：在连接 Internet 的工作站和 PowerShell 会话中，复制在运行 TpdUtil 工具后删除了 SLC 密钥的新配置数据文件 (.xml)。
+1.  Azure 信息保护管理员：在连接 Internet 的工作站和 PowerShell 会话中，复制在运行 TpdUtil 工具后删除了 SLC 密钥的新配置数据文件 (.xml)。
 
-2. 使用 [Import-AadrmTpd](https://msdn.microsoft.com/library/dn857523.aspx) cmdlet 上传第一个.xml 文件。 如果你有多个这些文件（因为有多个受信任的发布域），请选择与 HSM 密钥对应的文件，你要在 Azure RMS 中使用该文件来在迁移后保护内容。
+2. 使用 [Import-AadrmTpd](https://msdn.microsoft.com/library/dn857523.aspx) cmdlet 上传第一个.xml 文件。 如果有多个这些文件（因为有多个受信任的发布域），请选择要与 Azure 信息保护配合使用的 HSM 密钥相对应的文件，以在迁移后保护内容。
 
     若要运行此 cmdlet，将需要在上一步中标识的密钥的 URL。
 
@@ -146,23 +146,23 @@ ms.openlocfilehash: f4341d648b591922df93a4d2ba5e14151743fcdb
 
 
 
-3.  使用 [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) cmdlet 断开与 Azure RMS 服务的连接：
+3.  使用 [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) cmdlet 断开与 Azure Rights Management 服务的连接：
 
     ```
     Disconnect-AadrmService
     ```
 
     > [!NOTE]
-    > 如果之后需要确认正在 Azure 密钥保管库中使用的 Azure RMS 租户密钥，请使用 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS cmdlet。
+    > 如果之后需要确认正在 Azure 密钥保管库中使用的 Azure 信息保护租户密钥，请使用 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS cmdlet。
 
 
-现在可以转到[步骤 3。激活你的 RMS 租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
-
-
-
+现在可以转到[步骤 3。激活 Azure 信息保护租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+
+<!--HONumber=Sep16_HO4-->
 
 

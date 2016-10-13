@@ -1,27 +1,27 @@
 ---
-title: "更改受 Rights Management 保护的文件的权限 | Azure RMS"
+title: "更改受 Rights Management 保护的文件的权限 | Azure 信息保护"
 description: "当文件已由 Rights Management 保护时，你可以更改其权限，方法是重新保护它，然后指定有权访问它的所有用户，以及你要给予他们哪些权限。"
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/03/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
 
 
 ---
 
 # 更改受 Rights Management 保护的文件的权限
 
->*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 当文件已由 Rights Management 保护时，你可以更改其权限，方法是重新保护它，然后指定有权访问它的所有用户，以及你要给予他们哪些权限。
 
@@ -62,9 +62,9 @@ ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
     如果你有重新保护文件的权限，你可能很快就会看到一个对话框，告诉你文件处于受保护状态，然后焦点返回到文件资源管理器。 现在，已使用你的更改保护所选的一个或多个文件。 
 
 > [!NOTE]
-> 在你可以重新保护文件之前，RMS 必须首先确认你有权对该文件执行该操作，方法是检查你的用户名和密码。 在某些情况下，此信息会被缓存下来，所以你不会看到要求出示凭据的提示。 在其他情况下，将提示你提供凭据。
+> 在你可以重新保护文件之前，Rights Management 服务必须首先确认你有权对该文件执行该操作，方法是检查你的用户名和密码。 在某些情况下，此信息会被缓存下来，所以你不会看到要求出示凭据的提示。 在其他情况下，将提示你提供凭据。
 >
-> 如果你的组织不使用 Azure 权限管理 (Azure RMS) 或 AD RMS，你可以申请会接受你的凭据的免费帐户，以便可以使用受 RMS 保护的文件：
+> 如果你的组织不使用 Azure 信息保护或 AD RMS，你可以申请会接受你的凭据的免费帐户，以便可以使用受 RMS 保护的文件：
 >
 > -   若要申请此帐户，请单击链接以申请 [个人 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
 >
@@ -96,6 +96,6 @@ ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

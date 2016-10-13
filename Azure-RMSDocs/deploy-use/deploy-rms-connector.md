@@ -1,28 +1,28 @@
 ---
-title: "部署 Azure Rights Management 连接器 | Azure RMS"
-description: "有关部署 Azure Rights Management (RMS) 连接器，以及如何使用该连接器提供信息保护，包括保护使用 Microsoft Exchange Server、Microsoft SharePoint Server 或文件服务器（运行 Windows Server 和文件分类基础结构 (FCI)）的现有本地部署的说明。"
+title: "部署 Azure Rights Management 连接器 | Azure 信息保护"
+description: "有关部署 RMS 连接器的说明。该连接器提供数据保护服务，包括保护使用 Exchange Server、SharePoint Server 或 Windows Server 和文件分类基础结构 (FCI) 的现有本地部署。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/09/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a96018818f81787720021b661db10e818f388772
-ms.openlocfilehash: 2d962f168dafb1b8c207fa6b5d353a6a3ea4d1b2
+ms.sourcegitcommit: 54901b9091a87349bc9d182bf3e2924f4046b30e
+ms.openlocfilehash: 63d900232613c264e8d8481fb43bc585e7cd6886
 
 
 ---
 
 # 部署 Azure Rights Management 连接器
 
->*适用于：Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+>*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
 
-利用此信息了解 Azure 权限管理连接器，并了解如何为组织成功部署该连接器。 该连接器提供数据保护，包括保护使用 **Microsoft Exchange Server**、**SharePoint Server** 或文件服务器（运行 Windows Server 和**文件分类基础结构** (FCI)）的现有本地部署。
+利用此信息了解 Azure 权限管理连接器，并了解如何为组织成功部署该连接器。 该连接器提供数据保护，包括保护使用 Microsoft **Exchange Server**、**SharePoint Server** 或运行 Windows Server 和**文件分类基础结构** (FCI) 的文件服务器的现有本地部署。
 
 > [!TIP]
 > 有关带屏幕截图的高级示例方案，请参阅[运行中的 Azure RMS ](../understand-explore/what-admins-users-see.md) 文章中的[自动保护运行 Windows Server 和文件分类基础结构的文件服务器上的文件](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure)部分。
@@ -30,7 +30,7 @@ ms.openlocfilehash: 2d962f168dafb1b8c207fa6b5d353a6a3ea4d1b2
 ## Microsoft 权限管理连接器概述
 借助 Microsoft Rights Management (RMS) 连接器，你可以迅速让现有本地服务器将信息权限管理 (IRM) 功能用于基于云的 Microsoft Rights Management 服务 (Azure RMS)。 使用此功能，IT 部门和用户能够轻松地保护组织内部和外部的文档和图片，既无需安装其他基础结构，也无需建立与其他组织的信任关系。 
 
-RMS 连接器是一种小型化服务，你可将其安装在本地，也可以安装在运行 Windows Server 2012 R2、Windows Server 2012 或 Windows Server 2008 R2 的服务器上。 除了在物理计算机上运行连接器之外，你也可以在虚拟机（包括 Azure IaaS VM）上运行它。 部署连接器后，它将充当本地服务器和云服务之间的通信接口（一种中继），如下图所示。
+RMS 连接器是一种小型化服务，你可将其安装在本地，也可以安装在运行 Windows Server 2012 R2、Windows Server 2012 或 Windows Server 2008 R2 的服务器上。 除了在物理计算机上运行连接器之外，你也可以在虚拟机（包括 Azure IaaS VM）上运行它。 部署连接器后，它将充当本地服务器和云服务之间的通信接口（一种中继），如下图所示。 箭头表示网络连接启动的方向。
 
 ![RMS 连接器体系结构概述](../media/RMS_connector.png)
 
@@ -97,6 +97,6 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 转到步骤 1：[安装并配置 Azure 权限管理连接器](install-configure-rms-connector.md)。
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

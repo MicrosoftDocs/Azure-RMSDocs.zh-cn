@@ -4,18 +4,18 @@ description: "本主题展示开发环境文件和它们在计算机上的相对
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: a3f1e913c92dbee3b889a3d3c0bd6c97317112c9
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: fa85dde3f578f51efa57af78e211d3e712378b61
 
 
 ---
@@ -43,9 +43,9 @@ Rights Management Services SDK 2.1 包括安装在计算机上默认位置或你
 |Ipcerror.h|\inc|包含由 RMS SDK 2.1 导出的公共错误代码。|
 |Ipcfile.h|\inc|包含由 RMS SDK 2.1 导出的文件 API 接口。|
 |Msipc.lib|\lib|使用 RMS SDK 2.1 生成 x86 应用程序时要链接的库。|
-|Msipc_s.lib|\lib|为 x86 应用程序提供 [<strong>IpcInitialize</strong>](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 的入口点。|
+|Msipc_s.lib|\lib|为 x86 应用程序提供 [<strong>IpcInitialize</strong>](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 的入口点。|
 |Msipc.lib|\lib\x64|当使用 RMS SDK 2.1 生成 x64 应用程序时要与之链接的库。|
-|Msipc_s.lib|\lib\x64|为 x64 应用程序提供 [<strong>IpcInitialize</strong>](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 的入口点。|
+|Msipc_s.lib|\lib\x64|为 x64 应用程序提供 [<strong>IpcInitialize</strong>](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 的入口点。|
 |Genmanifest.exe|\tools|生成清单以在 RMS 启用的引用程序的开发期间使用。|
  
 
@@ -55,6 +55,6 @@ Rights Management Services SDK 2.1 包括安装在计算机上默认位置或你
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

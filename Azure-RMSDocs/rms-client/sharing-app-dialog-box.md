@@ -1,26 +1,26 @@
 ---
-title: "Rights Management 共享应用程序的对话框选项 | Azure RMS"
+title: "Rights Management 共享应用程序的对话框选项 | Azure 信息保护"
 description: "此信息可帮助你指定 RMS 共享应用程序“添加保护”对话框或“共享保护”对话框中的选项。 当你保护要共享的文件或就地保护文件以及选择自定义权限时，将看到此对话框。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 5f652b0e75350656f446c05d2464319ba46e06ad
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: a3a5fc8adf725d9cca0218e788988f718bd07bab
 
 
 ---
 
 # 权限管理共享应用程序的的对话框选项
 
->*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 使用此信息帮助你指定 RMS 共享应用程序“添加保护”  对话框或“共享保护”  对话框中的选项。 当你[保护要共享的文件](sharing-app-protect-by-email.md)或[就地保护文件](sharing-app-protect-in-place.md)以及选择自定义权限时，将看到此对话框。
 
@@ -42,8 +42,8 @@ ms.openlocfilehash: 5f652b0e75350656f446c05d2464319ba46e06ad
 |**查看器 – 仅查看**<br /><br />**审阅者 – 查看和编辑**<br /><br />**合著者 – 查看、编辑、复制和打印**<br /><br />**共同所有者 – 所有权限**<br /><br />注意：所有这些选项的名称前都有圆形图标，表示地球仪。 使用此图标的原因是，通常情况下，你在向其他组织的用户发送附件时会选择这些选项之一。|如果你想要定义受保护文档的权限，请选择这些选项之一。 单击每个选项以查看说明。<br /><br />选择这些选项之一时，只有你在“用户”  中指定的用户具有打开和使用文档的指定权限。 例如，将无法打开转发给其他人的文档。|
 |你的管理员配置的策略模板。<br /><br />例如，如果公司名称为“Contoso, Ltd”：**“Contoso, Ltd - 机密，仅供查阅”**<br /><br />注意：所有这些选项的名称前都有方形图标，表示办公楼。 使用此图标的原因是，通常情况下，你在向本组织的用户发送附件时会选择这些选项之一。|当与同事共享文档时，你将看到管理员配置的可用策略模板。 如果文档不应该共享到组织外部，请选择这些选项之一。<br /><br />选择这些选项之一时，你的管理员将定义文档权限和可以打开文档的用户。|
 |**这些文档的到期日期**|仅为时间敏感的文件选择此选项，在指定日期后，所选用户将不能打开文件。 你仍可以打开原始文件，但在指定日期的午夜（当前时区）过后，其他用户将无法打开该文件。<br /><br />如果你选择管理员配置的策略模板，此选项将不可用。|
-|**当有人尝试打开这些文档时，给我送发电子邮件**|注意：此选项当前在预览版中提供。<br /><br />如果你想要在有人试图打开你保护的文档时接收电子邮件通知，请选择此选项。 该电子邮件将显示谁试图打开文档、打开的时间以及是否成功。<br /><br />此选项仅在你的组织使用 Azure RMS 时才可用。 如果你的组织使用本地版本的 Rights Management (AD RMS)，你将不会看到此选项。|
-|**允许我立即撤消对这些文档的访问权限**|如果你以后需要使用文档跟踪站点撤销对文档的访问权限，并且撤销需要立即生效，请选择此选项。 但是，设置此选项意味着，如果文档没有撤销，用户在每次访问文档时将始终需要 Internet 连接才能读取该文档。 在有些情况下，用户无法将设备连接到 Internet，并且无法按预期方式读取文档。<br /><br />如果你不选择此选项，仍可以在以后使用文档跟踪站点撤销文档。 但是，因为用户并不始终需要 Internet 连接才能阅读文档，他们只有到下一次使用 Azure RMS 进行身份验证时才会立即明白，文档已撤销，并且可以继续阅读。 默认情况下，可以继续阅读已经撤销的受保护文档的最大天数是 30 天，但是管理员可以将此值更改为小于或大于 30 天。<br /><br />此选项仅在你的组织使用 Azure RMS 时才可用。 如果你的组织使用本地版本的 Rights Management (AD RMS)，你将不会看到此选项。|
+|**当有人尝试打开这些文档时，给我送发电子邮件**|注意：此选项当前在预览版中提供。<br /><br />如果你想要在有人试图打开你保护的文档时接收电子邮件通知，请选择此选项。 该电子邮件将显示谁试图打开文档、打开的时间以及是否成功。<br /><br />此选项仅在组织使用 Azure 信息保护时才可用。 如果你的组织使用本地版本的 Rights Management (AD RMS)，你将不会看到此选项。|
+|**允许我立即撤消对这些文档的访问权限**|如果你以后需要使用文档跟踪站点撤销对文档的访问权限，并且撤销需要立即生效，请选择此选项。 但是，设置此选项意味着，如果文档没有撤销，用户在每次访问文档时将始终需要 Internet 连接才能读取该文档。 在有些情况下，用户无法将设备连接到 Internet，并且无法按预期方式读取文档。<br /><br />如果你不选择此选项，仍可以在以后使用文档跟踪站点撤销文档。 但是，因为用户并不始终需要 Internet 连接才能阅读文档，他们只有到下一次使用 Azure RMS 进行身份验证时才会立即明白，文档已撤销，并且可以继续阅读。 默认情况下，可以继续阅读已经撤销的受保护文档的最大天数是 30 天，但是管理员可以将此值更改为小于或大于 30 天。<br /><br />此选项仅在组织使用 Azure 信息保护时才可用。 如果你的组织使用本地版本的 Rights Management (AD RMS)，你将不会看到此选项。|
 
 ## 一般性保护和内置（本机）保护的区别是什么？
 
@@ -78,6 +78,6 @@ ms.openlocfilehash: 5f652b0e75350656f446c05d2464319ba46e06ad
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

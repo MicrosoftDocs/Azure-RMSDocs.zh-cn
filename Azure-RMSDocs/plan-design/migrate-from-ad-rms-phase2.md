@@ -1,30 +1,30 @@
 ---
-title: "从 AD RMS 迁移到 Azure Rights Management - 阶段 2 | Azure RMS"
-description: "从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 2 涉及从 AD RMS 迁移到 Azure Rights Management 中的步骤 5。"
+title: "从 AD RMS 迁移到 Azure Rights Management - 阶段 2 | Azure 信息保护"
+description: "从 AD RMS 迁移到 Azure 信息保护的阶段 2 涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 5。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/09/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4184c8b78d8ca6beb88efad79e0372367c523f2f
-ms.openlocfilehash: 2d8abaec220074531724ce4e95b4aefe23d0b2d6
+ms.sourcegitcommit: 3f9a7ceee318fee5414e02af7927256e74800a16
+ms.openlocfilehash: 113636139f0ff6e47a5b5c0467dfe8616c641e04
 
 
 ---
 # 迁移阶段 2 - 客户端配置
 
->*适用于：Active Directory Rights Management Services、Azure Rights Management*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
 
-使用以下信息，完成从 AD RMS 迁移到 Azure Rights Management (Azure RMS) 的阶段 2。 这些过程涉及[从 AD RMS 迁移到 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 中的步骤 5。
+使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 2。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 5。
 
 
-## 步骤 5. 将客户端重新配置为使用 Azure RMS
+## 步骤 5. 重新配置客户端以使用 Azure 信息保护
 对于 Windows 客户端：
 
 1.  [下载迁移脚本](https://go.microsoft.com/fwlink/?LinkId=524619)：
@@ -33,9 +33,9 @@ ms.openlocfilehash: 2d8abaec220074531724ce4e95b4aefe23d0b2d6
 
     -   Redirect_OnPrem.cmd
 
-    这些脚本将重置 Windows 计算机上的配置，以使其将使用 Azure RMS 服务而不是 AD RMS。
+    这些脚本将重置 Windows 计算机上的配置，以使其使用 Azure 信息保护服务而不是 AD RMS。
 
-2.  按照重定向脚本 (Redirect_OnPrem.cmd) 中的说明修改脚本，使其指向新的 Azure RMS 租户。
+2.  按照重定向脚本 (Redirect_OnPrem.cmd) 中的说明修改脚本，使其指向新的 Azure 信息保护租户。
 
     > [!IMPORTANT]
     > 说明包括将示例地址 **adrms** 和 **adrms.contoso.com** 替换为你自己的 AD RMS 服务器地址。 执行此操作时，请注意地址前后不要有多余空格，否则将中断迁移脚本，并且很难将其认定为问题的根本原因。 某些编辑工具会在粘贴文本后自动添加一个空格。
@@ -131,6 +131,6 @@ Redirect_OnPrem.cmd：
 要继续迁移，请转到[阶段 3 - 支持复制配置](migrate-from-ad-rms-phase3.md)。
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

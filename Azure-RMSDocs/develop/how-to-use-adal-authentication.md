@@ -4,18 +4,18 @@ description: "使用 ADAL 进行身份验证的过程概述"
 keywords: "身份验证、RMS、ADAL"
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: a2da0e0aedde09cbd834f731d1ddc25f9062336e
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 3ed49cf7dddb72783ecd3bf1e89454d805552743
 
 
 ---
@@ -53,7 +53,7 @@ ms.openlocfilehash: a2da0e0aedde09cbd834f731d1ddc25f9062336e
 1. 按照[为 ADAL 身份验证配置 Azure RMS](adal-auth.md) 中的 Azure 配置步骤操作，然后返回到以下应用初始化步骤。
 2. 现在即可将应用程序配置为使用由 RMS SDK 2.1 提供的内部 ADAL 身份验证。
 
-若要配置 RMS 客户端，调用 [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 后立即添加对 [IpcSetGlobalProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 的调用以配置 RMS 客户端。 使用以下代码片段作为示例。
+若要配置 RMS 客户端，调用 [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 后立即添加对 [IpcSetGlobalProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 的调用以配置 RMS 客户端。 使用以下代码片段作为示例。
 
       C++
       IpcInitialize();
@@ -111,19 +111,19 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
 
 ## 相关主题
 
-* [数据类型](/rights-management/sdk/2.1/api/win/data%20types)
-* [环境属性](/rights-management/sdk/2.1/api/win/environment%20properties#msipc_environment_properties)
-* [IpcCreateOAuth2Token](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreateoauth2token)
-* [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-* [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-* [IPC_CREDENTIAL](/rights-management/sdk/2.1/api/win/IPC_CREDENTIAL)
-* [IPC_NAME_VALUE_LIST](/rights-management/sdk/2.1/api/win/IPC_NAME_VALUE_LIST)
-* [IPC_OAUTH2_CALLBACK_INFO](/rights-management/sdk/2.1/api/win/ipc_oauth2_callback_info#msipc_ipc_oath2_callback_info)
-* [IPC_PROMPT_CTX](/rights-management/sdk/2.1/api/win/IPC_PROMPT_CTX)
-* [IPC_AAD_APPLICATION_ID](/rights-management/sdk/2.1/api/win/ipc_aad_application_id#msipc_ipc_aad_application_id)
+* [数据类型](/information-protection/sdk/2.1/api/win/data%20types)
+* [环境属性](/information-protection/sdk/2.1/api/win/environment%20properties#msipc_environment_properties)
+* [IpcCreateOAuth2Token](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreateoauth2token)
+* [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
+* [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
+* [IPC_CREDENTIAL](/information-protection/sdk/2.1/api/win/IPC_CREDENTIAL)
+* [IPC_NAME_VALUE_LIST](/information-protection/sdk/2.1/api/win/IPC_NAME_VALUE_LIST)
+* [IPC_OAUTH2_CALLBACK_INFO](/information-protection/sdk/2.1/api/win/ipc_oauth2_callback_info#msipc_ipc_oath2_callback_info)
+* [IPC_PROMPT_CTX](/information-protection/sdk/2.1/api/win/IPC_PROMPT_CTX)
+* [IPC_AAD_APPLICATION_ID](/information-protection/sdk/2.1/api/win/ipc_aad_application_id#msipc_ipc_aad_application_id)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

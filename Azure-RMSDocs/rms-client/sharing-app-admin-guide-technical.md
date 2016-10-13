@@ -1,19 +1,19 @@
 ---
-title: "Rights Management 共享应用程序技术概述 | Azure RMS"
+title: "Rights Management 共享应用程序技术概述 | Azure 信息保护"
 description: "面向负责部署适用于 Windows 的 RMS 共享应用程序的企业网络管理员提供的技术详细信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 2a3640590ca2729da71e847c03823719e92bcb0f
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 3b4cd04732e38da31bf31d899993c912694e3ee8
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 2a3640590ca2729da71e847c03823719e92bcb0f
 
 # Microsoft Rights Management 共享应用程序的技术概览和保护详细信息
 
->*适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 
 Microsoft Rights Management 共享应用程序是一个可选且可下载的适用于 Microsoft Windows 和其他平台的应用程序，它提供以下功能：
@@ -36,9 +36,9 @@ Microsoft Rights Management 共享应用程序是一个可选且可下载的适�
 
 -   与通过文件分类基础结构（FCI）和支持的 PDF 创作工具保护的 PDF 文件的完全互操作性。
 
-Microsoft Rights Management 共享应用程序使用新的 [AD RMS 客户端 2.1 运行时](http://www.microsoft.com/download/details.aspx?id=38396)。 通过使用 AD RMS 2.1 的功能，Microsoft Rights Management 共享应用程序为最终用户提供了简单的保护和使用体验。
+Microsoft Rights Management 共享应用程序使用 [AD RMS 客户端 2.1 运行时](http://www.microsoft.com/download/details.aspx?id=38396)。 通过使用 AD RMS 2.1 的功能，Microsoft Rights Management 共享应用程序为最终用户提供了简单的保护和使用体验。
 
-借助 2013 年 10 月版的 RMS，你可以使用 Office 2010 本机保护文档，还可以将这些文档发送给其他公司的用户，这样他们便可以通过 Azure RMS 使用这些文档。 此外，在此版本中，如果你在加密模式 2 中使用 AD RMS，则可以使用面向个人的 RMS，并可以使用其他公司中使用 Azure RMS 的用户提供的内容。 有关加密模式 2 的详细信息，请参阅 [AD RMS 加密模式](http://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx)。
+借助 2013 年 10 月版的 RMS，可以使用 Office 2010 本机保护文档，还可以将这些文档发送给其他公司的用户，这样他们便可以通过使用 Azure 信息保护中的 Azure Rights Management 服务使用这些文档。 此外，在此版本中，如果在加密模式 2 中使用 AD RMS，则可以使用面向个人的 RMS，并可以使用其他公司中使用 Azure Rights Management 服务的用户提供的内容。 有关加密模式 2 的详细信息，请参阅 [AD RMS 加密模式](http://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx)。
 
 有关部署信息，请参阅[自动部署 Microsoft Rights Management 共享应用程序](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)
 
@@ -47,7 +47,7 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
 |保护类型|本机|泛型|
 |----------------------|----------|-----------|
-|说明|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、.pdf 文件和其他支持 AD RMS 的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他所有应用程序和文件类型，常规保护提供了一种保护级别，该保护级别既包括使用 .pfile 文件类型的文件封装，又包括用于验证用户是否有权打开该文件的身份验证。|
+|说明|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他所有应用程序和文件类型，常规保护提供了一种保护级别，该保护级别既包括使用 .pfile 文件类型的文件封装，又包括用于验证用户是否有权打开该文件的身份验证。|
 |保护|对文件进行完全加密，并采用以下方式强制执行保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 IP 查看器（适用于受保护的文本和图像文件）还是关联的应用程序（适用于其他所有受支持的文件类型）呈现内容，都会完全执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的用户或被授予访问权限的用户成功通过身份验证之后，才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将出现授权用户打开和访问文件的审核日志记录，但是，不支持的应用程序不强制执行任何使用权限。|
 |文件类型默认值|这是以下文件类型的默认保护级别：<br /><br />- 文本和图像文件<br /><br />- Microsoft Office（Word、Excel、PowerPoint）文件<br /><br />- 可移植文档格式 (.pdf)<br /><br />有关详细信息，请参阅以下部分：[支持的文件类型和文件扩展名](#supported-file-types-and-file-name-extensions)。|这是针对不受完整保护支持的其他所有文件类型（例如 .vsdx、.rtf 等）的默认保护。|
 可以更改 RMS 共享应用程序所应用的默认保护级别。 可以将默认级别从本机更改为常规，从常规更改为本机，甚至可以禁止 RMS 共享应用程序应用保护。 有关详细信息，请参阅本文中的[更改文件的默认保护级别](#changing-the-default-protection-level-of-files)部分。
@@ -80,7 +80,7 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 |。jt|。pjt|
 ¹ 由 Foxit 提供技术支持的 PDF Rendering。 Foxit Corporation 版权所有 © 2003–2014。
 
-下表列出了 Microsoft Rights Management 共享应用程序本身在 Microsoft Office 2016、Office 2013 和 Office 2010 中支持的文件类型。 对于这些文件，在文件受 RMS 保护后，文件扩展名仍保持不变。
+下表列出了 Microsoft Rights Management 共享应用程序本身在 Microsoft Office 2016、Office 2013 和 Office 2010 中支持的文件类型。 对于这些文件，在文件受 Rights Management 服务保护后，文件扩展名仍保持不变。
 
 |Office 支持的文件类型|Office 支持的文件类型|
 |----------------------------------|----------------------------------|
@@ -139,6 +139,6 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

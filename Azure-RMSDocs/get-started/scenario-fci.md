@@ -1,28 +1,28 @@
 ---
-title: "方案 - 保护文件服务器共享上的文件 | Azure RMS"
-description: "此方案和支持性的用户文档使用 Azure Rights Management 批量保护你想要在文件服务器上保护的所有文件，确保只有你组织的员工可以访问这些文件，即使它们被复制并保存到不受你的 IT 部门控制的存储器中，或已通过电子邮件发送给其他人也不例外。"
+title: "方案 - 保护文件服务器共享上的文件 | Azure 信息保护"
+description: "此方案和支持性的用户文档使用 Azure Rights Management 保护批量保护想要在文件服务器上保护的所有文件，确保只有组织的员工可以访问这些文件，即使它们被复制并保存到不受 IT 部门控制的存储器中，或已通过电子邮件发送给其他人。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
+ms.sourcegitcommit: b61b7068e67103c45aea139cf95dacb851fe70e2
+ms.openlocfilehash: a12276bcf2072ac812ae6b68d9e1cdacbe46adaa
 
 
 ---
 
 # 方案 - 保护文件服务器共享上的文件
 
->*适用于：Azure Rights Management、Office 365*
+>*适用于：Azure 信息保护、Office 365*
 
-此方案和支持性的用户文档使用 Azure Rights Management 批量保护你想要在文件服务器上保护的所有文件，确保只有你组织的员工可以访问这些文件，即使它们被复制并保存到不受你的 IT 部门控制的存储器中，或已通过电子邮件发送给其他人也不例外。
+此方案和支持性的用户文档使用 Azure 信息保护中的 Azure Rights Management 技术批量保护想要在文件服务器上保护的所有文件，确保只有组织的员工可以访问这些文件，即使它们被复制并保存到不受 IT 部门控制的存储器中，或已通过电子邮件发送给其他人。
 
 这些说明使用其中一个默认模板，这会限制具有全部使用权限的所有员工的访问权限。 但是，如有必要，可以通过配置自定义模板而非使用默认模板进一步限制访问和使用权限。
 
@@ -44,10 +44,10 @@ ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
 
 |要求|需要更多信息|
 |---------------|--------------------------------|
-|已激活 Azure Rights Management|[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)|
-|你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 保护的文件的用户来说，这都是必需的。|[准备 Azure 权限管理](https://technet.microsoft.com/library/jj585029.aspx)|
-|下列情况之一：<br /><br />若要为所有用户使用默认模板：你尚未存档默认模板，&lt;组织名称&gt; - 机密<br /><br />- 若要为特定用户使用自定义模板：你已创建并发布此自定义模板|[为 Azure Rights Management 配置自定义模板](https://technet.microsoft.com/library/dn642472.aspx)|
-|已将 Rights Management 共享应用程序部署到运行 Windows 的用户计算机|[自动部署 Microsoft Rights Management 共享应用程序](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
+|已激活 Azure Rights Management|[激活 Azure 权限管理](../deploy-use/activate-service.md)|
+|你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 保护的文件的用户来说，这都是必需的。|[准备 Azure 信息保护](../plan-design/prepare.md)|
+|下列情况之一：<br /><br />若要为所有用户使用默认模板：你尚未存档默认模板，&lt;组织名称&gt; - 机密<br /><br />- 若要为特定用户使用自定义模板：你已创建并发布此自定义模板|[为 Azure Rights Management 配置自定义模板](../deploy-use/configure-custom-templates.md)|
+|已将 Rights Management 共享应用程序部署到运行 Windows 的用户计算机|[自动部署 Microsoft Rights Management 共享应用程序](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 |已下载 RMS 保护工具并已配置 Azure RMS 的必备组件|有关下载此工具和必备组件的说明，请参阅 [RMS 保护 Cmdlet](https://msdn.microsoft.com/library/mt433195.aspx)<br /><br />若要配置 Azure RMS 的其他必备项，如服务主体帐户，请参阅 [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)|
 
 ### 使用 Azure RMS 和带有文件分类基础结构的文件服务器资源管理器来配置保护所有文件的文件服务器。
@@ -68,7 +68,7 @@ ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
     ```
     若要使用限制具有全部使用权限的所有员工的访问权限的默认模板。请查找**&lt;组织名称&gt; - 机密**的模板名。 例如，**VanArsdel, Ltd - 机密**。
 
-4.  按照[使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx)中的分步说明进行操作。
+4.  按照[使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护](../rms-client/configure-fci.md)中的分步说明进行操作。
 
     这些说明包括一个指定在文件服务器资源管理器中作为自定义可执行文件运行的 Windows PowerShell 脚本。 还包括验证这些文件是否受 Azure Rights Management 保护的方式。
 
@@ -117,7 +117,7 @@ ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
 
 -   其他信息：
 
-    -   [保护你通过电子邮件共享的文件](https://technet.microsoft.com/library/dn574741%28v=ws.10%29)
+    -   [保护你通过电子邮件共享的文件](../rms-client/sharing-app-view-use-files.md)
 
 -   与技术支持联系：
 
@@ -148,13 +148,13 @@ ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
 
 -   其他信息：
 
-    -   [保护你通过电子邮件共享的文件](https://technet.microsoft.com/library/dn574741%28v=ws.10%29)
+    -   [保护你通过电子邮件共享的文件](../rms-client/sharing-app-view-use-files.md)
 
 -   请联系技术支持：helpdesk@vanarsdelltd.com
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

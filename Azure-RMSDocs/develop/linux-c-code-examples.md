@@ -4,18 +4,18 @@ description: "本主题向你介绍 Linux 版 RMS SDK 的重要方案和代码�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 0d63a47f15d4ef08d9e17a0416f9d6f06536b6aa
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
 
 
 ---
@@ -593,6 +593,6 @@ ms.openlocfilehash: 0d63a47f15d4ef08d9e17a0416f9d6f06536b6aa
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

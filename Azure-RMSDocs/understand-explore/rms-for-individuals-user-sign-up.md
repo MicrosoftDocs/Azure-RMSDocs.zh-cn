@@ -1,26 +1,26 @@
 ---
-title: "用户如何注册个人 RMS | Azure RMS"
-description: "此免费帐户的注册说明以及有关此过程工作原理的技术信息。"
+title: "用户如何注册个人 RMS | Azure 信息保护"
+description: "此免费帐户的注册说明以及此过程工作原理的技术信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/01/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bd53bde0bfa9b44203b9d2f0f429265a013476c
-ms.openlocfilehash: 25c2ddac40c9eff78101cfaf42d4398be4e8a5cc
+ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
+ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
 
 
 ---
 
 # 用户如何注册个人 RMS
 
->*适用于：Azure Rights Management*
+>*适用于：Azure 信息保护*
 
 若要注册这种免费帐户，可以通过访问 [Microsoft Azure Rights Management 页](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)发出请求，并提供你的工作电子邮件地址。 将你导向此注册页面的最常见方式是接收带有受保护附件的电子邮件，这包含有关如何注册的说明。 你将收到 Microsoft 的回应电子邮件，然后完成注册过程，方法是输入详细信息来创建帐户。 完成后，将出现可在其中下载适用于不同设备的共享应用程序的页面、用户指南链接和本身就支持 Rights Management 保护的应用程序当前列表链接。 
 
@@ -97,6 +97,6 @@ ms.openlocfilehash: 25c2ddac40c9eff78101cfaf42d4398be4e8a5cc
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 
