@@ -3,7 +3,7 @@ title: "Azure 权限管理是什么？ | Azure 信息保护"
 description: "Azure Rights Management (Azure RMS) 是 Azure 信息保护使用的保护技术。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 21e8bd7bb4b749e0f086a0108bb89778f2d3ce73
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: 3582aaba72347e8374f6cb856f52cd129bb83d3e
 
 
 ---
@@ -52,13 +52,13 @@ Azure Rights Management (Azure RMS) 是 [Azure 信息保护](what-is-information
 
 如果想要深入研究并亲自试用 Azure RMS，请使用 [Azure Rights Management 快速入门教程](../get-started/quick-start-tutorial.md)。
 
-当做好开始为组织部署 Azure 信息保护的准备时，请使用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md)获取部署步骤和操作说明链接。
+但是，当做好开始为组织部署 Azure 信息保护的准备时，请使用 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)获取部署步骤和操作说明链接。
 
 > [!TIP]
-> 有关其他信息和帮助，请使用 [Azure Rights Management 的信息和支持](../get-started/information-support.md)中的资源和链接。
+> 有关其他信息和帮助，请使用 [Azure 信息保护的信息和支持](../get-started/information-support.md)中的资源和链接。
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

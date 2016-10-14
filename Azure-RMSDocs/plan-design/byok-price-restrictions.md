@@ -3,7 +3,7 @@ title: "BYOK 定价和限制 | Azure 信息保护"
 description: Understand the restrictions when you use customer-managed keys (known as "bring your own key", or BYOK) with Azure RMS.
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 36e392d7e9a2fc8cec0419a3e66f92b42137bc72
-ms.openlocfilehash: 3ed4f3c770c1c34d2bda7481d8ca405c51d3fe8c
+ms.sourcegitcommit: d7dee4efcff4ccf76f08f9033fdaf89daf095d4e
+ms.openlocfilehash: 86e6ebac4ad8c0782fb27344c30ee1d044be33d0
 
 
 ---
@@ -23,9 +23,34 @@ ms.openlocfilehash: 3ed4f3c770c1c34d2bda7481d8ca405c51d3fe8c
 >*适用于：Azure 信息保护、Office 365*
 
 
-具有订阅（包含 Azure 权限管理）的组织可以在 Azure 密钥保管库中使用客户托管的密钥 (BYOK)，并记录其使用情况，无需额外付费。 但是，若要使用 Azure 密钥保管库，必须具有支持含 HSM 保护密钥的密钥保管库的 Azure 订阅。 在 Azure 密钥保管库中使用密钥会按月产生费用。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。
+具有订阅（包含 Azure 信息保护）的组织可以在 Azure 密钥保管库中使用客户托管的密钥 (BYOK)，并[记录其使用情况](../deploy-use/log-analyze-usage.md)，无需额外付费。 
 
-如果有用户通过使用个人 RMS 免费注册帐户，则不能使用 BYOK 和使用日志记录，因为此配置没有租户管理员来配置这些功能。
+但是，若要使用 Azure 密钥保管库，必须具有支持含 HSM 保护密钥的密钥保管库的 Azure 订阅。 在 Azure 密钥保管库中使用密钥会按月产生费用。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。
+
+当为 Azure 信息保护租户密钥使用 Azure 密钥保管库时，建议为此密钥使用具有专用订阅的专用密钥保管库，以确保只有 Azure 权限管理服务能使用它。 
+
+## 使用 Azure 密钥保管库的好处
+
+除使用 Azure 信息保护使用情况日志记录之外，为实现额外的保证，你还可以使用 [Azure 密钥保管库日志记录](https://azure.microsoft.com/documentation/articles/key-vault-logging/)对其进行交叉引用，从而独立监视，确保只有 Azure 权限管理服务使用此密钥。 如有必要，可以通过删除密钥保管库上的权限来立即撤消对密钥的访问权限。
+
+将 Azure 密钥保管库用于 Azure 信息保护租户密钥的其他好处：
+
+- Azure 密钥保管库提供了一种集中式的密钥管理解决方案，这为许多使用加密的基于云甚至是本地的服务提供了一种一致的管理解决方案。
+
+- Azure 密钥保管库为密钥管理提供了大量内置接口，包括 PowerShell、CLI、REST API 和 Azure 门户。 其他已经与密钥保管库集成的服务和工具 - 用于提供为特定任务而优化的功能（如监视） 例如，可以从 Operations Management Suite 中通过 Log Analytics 来分析密钥使用情况日志，设置在遇到指定条件时发出警报等。
+
+- 作为广受认可的安全性最佳实践，Azure 密钥保管库提供角色分离。 Azure 信息保护管理员可专注于管理数据分类和保护，Azure 密钥保管库管理员则可专注于管理加密密钥和任何有可能要求安全性或合规性的特殊策略。
+
+- 某些组织对其主密钥在何处生存有所限制。 由于该服务在许多 Azure 区域内都可用，因此 Azure 密钥保管库可提供对主密钥存储位置的高级别控制。 目前，可以从 28 个区域中进行选择，而且这个数字还将不断地增加。 有关详细信息，请参阅 Azure 网站上的 [可用产品(按区域)] 页 (https://azure.microsoft.com/regions/services/)。
+
+除管理密钥外，Azure 密钥保管库还为安全管理员提供其他使用加密的服务和应用程序的存储、访问、管理证书和机密（如密码）的相同管理体验。 
+
+有关 Azure 密钥保管库的详细信息，请参阅[什么是 Azure 密钥保管库？](https://azure.microsoft.com/documentation/articles/key-vault-whatis/)并访问 [Azure 密钥保管库团队博客](https://blogs.technet.microsoft.com/kv/)，以获取最新信息并了解其他服务如何使用此技术。
+
+
+## 使用 BYOK 时的限制
+
+如果有用户通过使用个人 RMS 注册免费帐户，则不能使用 BYOK 或使用情况日志记录，因为此配置没有租户管理员来配置这些功能。
 
 
 > [!NOTE]
@@ -62,6 +87,6 @@ BYOK 和使用情况日志记录可无缝地适用于与 Azure 信息保护使�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
