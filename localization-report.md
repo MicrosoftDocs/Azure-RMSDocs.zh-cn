@@ -5,13 +5,13 @@
  -------- | ----- 
  Total Files | 472
 [ Handoff Failed Files ](#handoff-failed-list)| 0
-[ Handoff Success Files ](#handoff-success-list)| 340
+[ Handoff Success Files ](#handoff-success-list)| 336
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 2
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 26
-[ Ignored Files ](#ignored-list)| 104
+[ Ignored Files ](#ignored-list)| 108
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
@@ -304,8 +304,6 @@
  [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase1.md) | HandedOffSuccess | [Details](#3f5b90925924e9b624d0bfa93da8db665010dfc5411)
  [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/25f7c2e5eb226fcf7c30026a37a767e559a522ad/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase2.md) | HandedOffSuccess | [Details](#810e540e02db0b4a142471dd89e30663bd61f22c412)
  [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase3.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase3.md) | HandedOffSuccess | [Details](#54268866a03ed2d5cc43912f040c451438d9aeff413)
- [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f17cf257607b0f74ca8bdaef13130da2f62dd587/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase4.md) | HandedOffSuccess | [Details](#f86e712ee9d2df1e466ceaabcaa0890dca71da53414)
- [Azure-RMSDocs\plan-design\migrate-from-ad-rms-to-azure-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26/Azure-RMSDocs/plan-design/migrate-from-ad-rms-to-azure-rms.md) | HandedOffSuccess | [Details](#ebd49fdaa6c4222d0c2358f81066ef34f0aab0a8415)
  [Azure-RMSDocs\plan-design\migrate-hsmkey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad084502b9b7e55c6e80dccfbd66c3f34b63c7c/Azure-RMSDocs/plan-design/migrate-hsmkey-to-hsmkey.md) | HandedOffSuccess | [Details](#8d9538cb2663edce5fc343ed9710032505c15293416)
  [Azure-RMSDocs\plan-design\migrate-softwarekey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ae818976ca4c5b29aac38967c8b07674ef7f8fa2/Azure-RMSDocs/plan-design/migrate-softwarekey-to-hsmkey.md) | HandedOffSuccess | [Details](#2ab9d6b711e0d17a6e1c78ded7f0cbe6cfea2e9c417)
  [Azure-RMSDocs\plan-design\migrate-softwarekey-to-softwarekey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26/Azure-RMSDocs/plan-design/migrate-softwarekey-to-softwarekey.md) | HandedOffSuccess | [Details](#6454401420c39e349bd48e86e9722414ca8006a7418)
@@ -313,8 +311,6 @@
  [Azure-RMSDocs\plan-design\prepare.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26/Azure-RMSDocs/plan-design/prepare.md) | HandedOffSuccess | [Details](#5970838ffb2eef69cd624354d30060963a280b17420)
  [Azure-RMSDocs\plan-design\thales-hsm.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26/Azure-RMSDocs/plan-design/thales-hsm.md) | HandedOffSuccess | [Details](#8492616c1ed17f2f062b4f401ce958fb21c849b3421)
  [Azure-RMSDocs\plan-design\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a091ad139fa97d530c31111f0eb317482c56653e/Azure-RMSDocs/plan-design/TOC.md) | HandedOffSuccess | [Details](#a3dfb761fc230510a732627e3e7bec89fc1c92d3422)
- [Azure-RMSDocs\rms-client\client-deployment-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26/Azure-RMSDocs/rms-client/client-deployment-notes.md) | HandedOffSuccess | [Details](#38bd495019632693e2a9757769d54a846084ba2b423)
- [Azure-RMSDocs\rms-client\client-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f0290034bd90f0dd7707f16083dc8c5b3c7300a7/Azure-RMSDocs/rms-client/client-version-release-history.md) | HandedOffSuccess | [Details](#fdded832dd84d0c05ec982415414681c0a05606b424)
  [Azure-RMSDocs\rms-client\configure-fci.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f2723c4417890411230e9dbab4e2d9e36282b1db/Azure-RMSDocs/rms-client/configure-fci.md) | HandedOffSuccess | [Details](#c909174cf3ce9d8e931153d2c4dfcc0cbdbacf1e425)
  [Azure-RMSDocs\rms-client\fci-script.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f2723c4417890411230e9dbab4e2d9e36282b1db/Azure-RMSDocs/rms-client/fci-script.md) | HandedOffSuccess | [Details](#0e2ff499fc7c9890a3d8d7327964e3ed5ac19112426)
  [Azure-RMSDocs\rms-client\info-protect-client.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e1b185259ac3c108133f42f65ab7e2322b9541b7/Azure-RMSDocs/rms-client/info-protect-client.md) | HandedOffSuccess | [Details](#fce3a9dd69f43c7bb557131340863ec86315411f427)
@@ -504,6 +500,10 @@
  [Azure-RMSDocs\media\word2013-callouts.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/Azure-RMSDocs/media/word2013-callouts.png) | Ignored | [Details](#aeaf24d5b00c544b5479ecec7b77b24629a30e90401)
  [Azure-RMSDocs\media\Word2013-callouts2.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/Azure-RMSDocs/media/Word2013-callouts2.png) | Ignored | [Details](#a9d6d5d8ff204ab6527c89339ac65bd1e2462deb402)
  [Azure-RMSDocs\plan-design\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/Azure-RMSDocs/plan-design/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda410)
+ [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase4.md) | Ignored | [Details](#238cc238e62db4a74ce2b10e0e68803cc66b718f414)
+ [Azure-RMSDocs\plan-design\migrate-from-ad-rms-to-azure-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/Azure-RMSDocs/plan-design/migrate-from-ad-rms-to-azure-rms.md) | Ignored | [Details](#49c65779e5651f25082369822b60b09435c41041415)
+ [Azure-RMSDocs\rms-client\client-deployment-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/Azure-RMSDocs/rms-client/client-deployment-notes.md) | Ignored | [Details](#dfe2bcc409079487d8e7544b91aa668b54b807ba423)
+ [Azure-RMSDocs\rms-client\client-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/Azure-RMSDocs/rms-client/client-version-release-history.md) | Ignored | [Details](#ff6573042941640d1cca82d68e85f09c82e3c77b424)
  [Azure-RMSDocs\rms-client\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/Azure-RMSDocs/rms-client/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda429)
  [license.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/license.md) | Ignored | [Details](#fc0612997fdfe01bdee7ee9daa01144dfd0143dd469)
  [README.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/README.md) | Ignored | [Details](#8b38ac1bf813dc8840b1522ce23fddf8de3997c3470)
@@ -6258,38 +6258,28 @@
 * Bilingual Datetime: 2016-07-09 02:10:21
 * [Back to Top](#report-top)
 
-##### <a name='f86e712ee9d2df1e466ceaabcaa0890dca71da53414'></a> Source: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f17cf257607b0f74ca8bdaef13130da2f62dd587/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase4.md)
-* Status: HandedOffSuccess
+##### <a name='238cc238e62db4a74ce2b10e0e68803cc66b718f414'></a> Source: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase4.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf](https://github.com/Microsoft/Azure-RMSDocs-pr.handoff/blob/124a2286e5dfb6eb451b8a2e0eaea7552fac796f/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/live/migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf)
-* Handoff Datetime: 2016-10-27 22:05:46
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase4.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/6625e60ffbd2874f42c61973e5fc55001433a732/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase4.md)
-* Current Handback File: [migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf](https://github.com/Microsoft/Azure-RMSDocs-pr.handback/blob/f6e9fb75ab924498c64261bce722934add7d2d09/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf)
-* Current Handback Datetime: 2016-07-13 18:19:33
-* Bilingual File: [migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf](https://github.com/Microsoft/Azure-RMSDocs-pr.handback/blob/f6e9fb75ab924498c64261bce722934add7d2d09/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrate-from-ad-rms-phase4.b09b73c5db23510b4121b90f156a091d4d8d1564.zh-cn.xlf)
-* Bilingual Datetime: 2016-07-13 18:22:23
 * [Back to Top](#report-top)
 
-##### <a name='ebd49fdaa6c4222d0c2358f81066ef34f0aab0a8415'></a> Source: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-to-azure-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26/Azure-RMSDocs/plan-design/migrate-from-ad-rms-to-azure-rms.md)
-* Status: HandedOffSuccess
+##### <a name='49c65779e5651f25082369822b60b09435c41041415'></a> Source: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-to-azure-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/Azure-RMSDocs/plan-design/migrate-from-ad-rms-to-azure-rms.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [migrate-from-ad-rms-to-azure-rms.0e54067ec5cb3ab60c4e9c82cf06d0cfecba00a6.zh-cn.xlf](https://github.com/Microsoft/Azure-RMSDocs-pr.handoff/blob/124a2286e5dfb6eb451b8a2e0eaea7552fac796f/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/live/migrate-from-ad-rms-to-azure-rms.0e54067ec5cb3ab60c4e9c82cf06d0cfecba00a6.zh-cn.xlf)
-* Handoff Datetime: 2016-10-27 22:05:46
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-to-azure-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/94b65e6987a7d1e5458c0b577a04632a736c74d0/Azure-RMSDocs/plan-design/migrate-from-ad-rms-to-azure-rms.md)
-* Current Handback File: [migrate-from-ad-rms-to-azure-rms.0e54067ec5cb3ab60c4e9c82cf06d0cfecba00a6.zh-cn.xlf](https://github.com/Microsoft/Azure-RMSDocs-pr.handback/blob/4714345d719f9d5011e5818a816c494ffd371ece/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrate-from-ad-rms-to-azure-rms.0e54067ec5cb3ab60c4e9c82cf06d0cfecba00a6.zh-cn.xlf)
-* Current Handback Datetime: 2016-07-13 22:57:16
-* Bilingual File: [migrate-from-ad-rms-to-azure-rms.0e54067ec5cb3ab60c4e9c82cf06d0cfecba00a6.zh-cn.xlf](https://github.com/Microsoft/Azure-RMSDocs-pr.handback/blob/4714345d719f9d5011e5818a816c494ffd371ece/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/migrate-from-ad-rms-to-azure-rms.0e54067ec5cb3ab60c4e9c82cf06d0cfecba00a6.zh-cn.xlf)
-* Bilingual Datetime: 2016-07-13 23:00:18
 * [Back to Top](#report-top)
 
 ##### <a name='8d9538cb2663edce5fc343ed9710032505c15293416'></a> Source: [Azure-RMSDocs\plan-design\migrate-hsmkey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bad084502b9b7e55c6e80dccfbd66c3f34b63c7c/Azure-RMSDocs/plan-design/migrate-hsmkey-to-hsmkey.md)
@@ -6411,29 +6401,24 @@
 * Bilingual Datetime: 2016-07-15 14:13:45
 * [Back to Top](#report-top)
 
-##### <a name='38bd495019632693e2a9757769d54a846084ba2b423'></a> Source: [Azure-RMSDocs\rms-client\client-deployment-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26/Azure-RMSDocs/rms-client/client-deployment-notes.md)
-* Status: HandedOffSuccess
+##### <a name='dfe2bcc409079487d8e7544b91aa668b54b807ba423'></a> Source: [Azure-RMSDocs\rms-client\client-deployment-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/Azure-RMSDocs/rms-client/client-deployment-notes.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [client-deployment-notes.2c00eef84cbb27e32ece796eecdb703ce7d8f4c7.zh-cn.xlf](https://github.com/Microsoft/Azure-RMSDocs-pr.handoff/blob/124a2286e5dfb6eb451b8a2e0eaea7552fac796f/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/live/client-deployment-notes.2c00eef84cbb27e32ece796eecdb703ce7d8f4c7.zh-cn.xlf)
-* Handoff Datetime: 2016-10-27 22:05:46
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\rms-client\client-deployment-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-cn/blob/d619b2a781cc76f18d6546157687b1ab9435319b/Azure-RMSDocs/rms-client/client-deployment-notes.md)
-* Current Handback File: [client-deployment-notes.2c00eef84cbb27e32ece796eecdb703ce7d8f4c7.zh-cn.xlf](https://github.com/Microsoft/Azure-RMSDocs-pr.handback/blob/a0f49624d9579a38f15149867652e25f4c4bd02e/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/client-deployment-notes.2c00eef84cbb27e32ece796eecdb703ce7d8f4c7.zh-cn.xlf)
-* Current Handback Datetime: 2016-07-07 11:51:02
-* Bilingual File: [client-deployment-notes.2c00eef84cbb27e32ece796eecdb703ce7d8f4c7.zh-cn.xlf](https://github.com/Microsoft/Azure-RMSDocs-pr.handback/blob/a0f49624d9579a38f15149867652e25f4c4bd02e/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-cn/master/client-deployment-notes.2c00eef84cbb27e32ece796eecdb703ce7d8f4c7.zh-cn.xlf)
-* Bilingual Datetime: 2016-07-07 12:13:54
 * [Back to Top](#report-top)
 
-##### <a name='fdded832dd84d0c05ec982415414681c0a05606b424'></a> Source: [Azure-RMSDocs\rms-client\client-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f0290034bd90f0dd7707f16083dc8c5b3c7300a7/Azure-RMSDocs/rms-client/client-version-release-history.md)
-* Status: HandedOffSuccess
+##### <a name='ff6573042941640d1cca82d68e85f09c82e3c77b424'></a> Source: [Azure-RMSDocs\rms-client\client-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f2db747f75820c5660364a9a486350e207fe878/Azure-RMSDocs/rms-client/client-version-release-history.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [client-version-release-history.f90543dc00b56418c8b3603c3a6fdb3a752645ff.zh-cn.xlf](https://github.com/Microsoft/Azure-RMSDocs-pr.handoff/blob/124a2286e5dfb6eb451b8a2e0eaea7552fac796f/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-cn/live/client-version-release-history.f90543dc00b56418c8b3603c3a6fdb3a752645ff.zh-cn.xlf)
-* Handoff Datetime: 2016-10-27 22:05:46
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
