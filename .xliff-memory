@@ -1,0 +1,2104 @@
+{
+  "Table": {
+    "Azure-RMSDocs\\plan-design\\thales-hsm.md.e3fab0fba1620ba64cb2a8ecd440c76a310caa05.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\thales-hsm.md",
+      "XliffHash": "e3fab0fba1620ba64cb2a8ecd440c76a310caa05",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\8492616c1ed17f2f062b4f401ce958fb21c849b3.c1a38bd23c6e487cd9ba315574f31669b22d70db.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\requirements-azure-ad.md.f6c8b341feb789f948c321d95e37913d1371d293.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\requirements-azure-ad.md",
+      "XliffHash": "f6c8b341feb789f948c321d95e37913d1371d293",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\af879b29f405a59b2472af2faa0a903e9faf97de.47207fc929cd1be0570df4962b4b44b9083a56c7.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\faqs-infoprotect.md.bb3990f66c4e9838a39fd16d3174f110ea8df0e3.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\faqs-infoprotect.md",
+      "XliffHash": "bb3990f66c4e9838a39fd16d3174f110ea8df0e3",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\b9e0a154b67bc54b7868021fb46f7d52c8b7e3bd.ceddc49d257bb859e872deecd0d4456bfa9ef4cf.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\api-support.md.2f69d13c9319043a72d094d1bec2a5ce773a6159.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\api-support.md",
+      "XliffHash": "2f69d13c9319043a72d094d1bec2a5ce773a6159",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\0ee1e316310df889f87b1bc7932d8970abae140f.c7996d4664a55fa2c4179214ca41d08927c55859.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\mobile-app-faq.md.d2f36fcda150875eb159f157a7d57e50ae54cffb.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\mobile-app-faq.md",
+      "XliffHash": "d2f36fcda150875eb159f157a7d57e50ae54cffb",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\247da3166d6812733f296546424706935fe37b6c.ad9e908836adf442c6264b5805762e527407146d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\refresh-templates.md.b82d9f3e3a4320f7226cb724018c8f3a86a54459.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\refresh-templates.md",
+      "XliffHash": "b82d9f3e3a4320f7226cb724018c8f3a86a54459",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\a823d79a9305569962ee165b6eadf1d5384c0c0b.ec4e8bafa091e7ac8b571cccf2ba32290a1c66ab.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md.78c1cafe9bb4f5df52aaf280d1730d1c05bbbf83.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md",
+      "XliffHash": "78c1cafe9bb4f5df52aaf280d1730d1c05bbbf83",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\af75705e8c256811d1816c2ad52e42e98b4db503.87673e3e2e93351b4e926c6a7bdab382eca1f292.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-remove-protection.md.72a8db461ba0130fb187342a0b1ca568d7a60a36.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-remove-protection.md",
+      "XliffHash": "72a8db461ba0130fb187342a0b1ca568d7a60a36",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\a106cc9f6eab2ee4302ee32efc721d4b99c482f4.f48c3d37216a6172b59b98a1f3a1ac64ff0f9139.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\help-users.md.a09208460d0080b0319b66108eb5667f8b208a95.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\help-users.md",
+      "XliffHash": "a09208460d0080b0319b66108eb5667f8b208a95",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\0f0b4001ae44abc68ab072c1e2eab8611868821f.d00c341e602f1755aa1fc6c1f90a08c9365f6dc4.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\linux-c-code-examples.md.464e44ff316b7d2e9007af295b43c544f0d76d96.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\linux-c-code-examples.md",
+      "XliffHash": "464e44ff316b7d2e9007af295b43c544f0d76d96",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b.d65065ebaf5e62d6248b8a21e10dd17254c2f3ee.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\configure-adrms-restrictions.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\configure-adrms-restrictions.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\d8c48ccf06929ff703c83764f20083bfc19a9631.5ddf0a8f301508413aefec1eee4bac4d4a1816c8.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md.bd224186785a41fea17218258d80a7d9ba426a83.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md",
+      "XliffHash": "bd224186785a41fea17218258d80a7d9ba426a83",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\411c549cc865914c6e35ececad99da0a0d46c5d4.3c59e8a235c421d2862979848702ef72f4380e45.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\fci-script.md.2a401fff078f80fd74cccdc5a85847c21ff88bb9.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\fci-script.md",
+      "XliffHash": "2a401fff078f80fd74cccdc5a85847c21ff88bb9",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\0e2ff499fc7c9890a3d8d7327964e3ed5ac19112.7b263701283994c2f42372f74d3459e096eb880f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\file-api-configuration.md.7e8bd963a17be9ac5127567ac157e51ea75603bb.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\file-api-configuration.md",
+      "XliffHash": "7e8bd963a17be9ac5127567ac157e51ea75603bb",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\92df5a261565b83e71a6bfd1a2d432072815bd27.40ca11dbbd174089a20b44be7391dbb8ef6c7c8a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\working-with-encryption.md.7a2d68fabbf73850bec4f9e5949b56ee16c36dea.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\working-with-encryption.md",
+      "XliffHash": "7a2d68fabbf73850bec4f9e5949b56ee16c36dea",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\0ad53fa82f288153f259870b0022378815f097a8.71545ddccac74064b875a8f1005c04b4235f7fae.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\requirements-azure-infoprotect.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\requirements-azure-infoprotect.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\0e977d6801bdb36d283e71ce5320c4832c76f830.339fafb378e18ac397c354abb98dbd58745735c8.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\supported-platforms.md.66e2b085d4fdbe4df3783f537da2a308d7c2983e.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\supported-platforms.md",
+      "XliffHash": "66e2b085d4fdbe4df3783f537da2a308d7c2983e",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\eb20483bd3a2be60e1b9fcee173ebeabcb5b6d93.c8f00750891400c2329f8b7ddaf28a98d30f3c8c.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\aip-software-license-terms.md.aca5e714127194cf8fd45b725484ad7bb46a48ca.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\aip-software-license-terms.md",
+      "XliffHash": "aca5e714127194cf8fd45b725484ad7bb46a48ca",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\b55ce3438a28c862c11d6d8e48949e12a98efe7b.6ec25c90dc020ce12bd9c8a9c2d805c13cdb447f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\core-concepts.md.15cbd24aef6c956bca68021ea19e27bb799e6064.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\core-concepts.md",
+      "XliffHash": "15cbd24aef6c956bca68021ea19e27bb799e6064",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\2ac4ca3e505d78758a01516f66f1e5f4ff4b17b6.69a973b332dfe4a126e522d9851fcdbc0660c974.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-policy-delete-reorder.md.acc224a0b9bc67c7e737935c9163c10f988ee773.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-policy-delete-reorder.md",
+      "XliffHash": "acc224a0b9bc67c7e737935c9163c10f988ee773",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\adb8eceb0af4e5a057fc8be2aad8b8fca904daca.6e4e4254fa656bb15a8e6124c55bd64150925105.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\activate-service.md.c2daa3ea53bc25fd7fb71147ecc7b3b7ebf98645.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\activate-service.md",
+      "XliffHash": "c2daa3ea53bc25fd7fb71147ecc7b3b7ebf98645",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\06c71229427743e9669baee1fdbb41f175180b0f.f9f09803355e2b2232311dbcfac5482e25e48c32.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\configure-policy-new-label.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\configure-policy-new-label.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\7b45c48a11d1db754dea7d54dbfdda0ac65ec8b4.26ba6c8612ef6a4c64d972c735aa6ba652264ce5.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-view-use-files.md.bc6e4de82c6a74813d41985e9ab980a74699277a.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-view-use-files.md",
+      "XliffHash": "bc6e4de82c6a74813d41985e9ab980a74699277a",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\db8d6a9c5959139ee76f022a5cee997bab24e6c9.165b31c4bc11e7edf11f153868c8ad552cdca77d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\developer-notes.md.b1225fca217ead230a68c72471d6de0df63225e9.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\developer-notes.md",
+      "XliffHash": "b1225fca217ead230a68c72471d6de0df63225e9",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\54ce450600b2a10e6889d2684ce26c9da9f9167e.41a25b4b4811714211dfb90e0f72615f71a04c3b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\TOC.md.95246fe25aaaab8992bcab6a9ea13bbe8b35f9f5.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\TOC.md",
+      "XliffHash": "95246fe25aaaab8992bcab6a9ea13bbe8b35f9f5",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\a3dfb761fc230510a732627e3e7bec89fc1c92d3.a222c4ea3b13d88862b858c7afffdf06ba464ec1.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\terminology.md.d2a1c8421d6c7479c1e618b281eb1c65b3f2a609.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\terminology.md",
+      "XliffHash": "d2a1c8421d6c7479c1e618b281eb1c65b3f2a609",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\2aef83375eff459171f0c844ece972432e50a64e.22f06b8dcbbc72a91b11b47376c50c9475bf0417.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\information-support.md.4a3a1462ce076307ba3ee58db3f4bad3c8f01b19.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\information-support.md",
+      "XliffHash": "4a3a1462ce076307ba3ee58db3f4bad3c8f01b19",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\79bed57d13aba8648ab3e3b7340bcc6d711f7942.b19de100db085b1b7b6dfb061f7428506e23b23f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-policy-settings.md.ad6c2fe96982bb208292ab257b2a9891abd8c704.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-policy-settings.md",
+      "XliffHash": "ad6c2fe96982bb208292ab257b2a9891abd8c704",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\120767181aa56ff8b2752483efd127a2391dc9d0.48587166e7cc6d1dcbb8d4cb9f47cd5da1c38183.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\info-protect-client.md.500b1a76714037511c5d64333707bc39ca72e744.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\info-protect-client.md",
+      "XliffHash": "500b1a76714037511c5d64333707bc39ca72e744",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\fce3a9dd69f43c7bb557131340863ec86315411f.a2392028e8aeacaa2eccc9d226cc2e1c4262f555.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-policy.md.1a78958f04e129104bb230ec0cbc72d7b253f9d7.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-policy.md",
+      "XliffHash": "1a78958f04e129104bb230ec0cbc72d7b253f9d7",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\f00a88ce073e9a6a179d33d04db470f88ef38d89.49a3fd3400a2fe3676bcc76342a5e5c50d7fbd0f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\what-is-information-protection-oldpreview.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\what-is-information-protection-oldpreview.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\89231c73fba9ea1c8596c0e3dd687a79d5d424b2.79c7927019c866ba1e167ca91b1c77c302039e4b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\configure-policy-delete-reorder.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\configure-policy-delete-reorder.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\28565494044bd1145de5869ab0ab00d6851691b0.5dc2aa6b2d2e6feb0127c02804ae3f08b82f0a79.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md.7c16a230e1b40635a3bbc2e538bfe50abc0fd2c5.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md",
+      "XliffHash": "7c16a230e1b40635a3bbc2e538bfe50abc0fd2c5",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\c7dbde332630473c4d543fe8b8e2612c611a0c61.22a539666cccf3132e9fea78b811218e016c2218.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md.0c1883bd15b91ed0897b86722fd137f07143f568.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\rapid-deployment-guide.md",
+      "XliffHash": "0c1883bd15b91ed0897b86722fd137f07143f568",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\df1da6e1f9a354088b5fa88994647422fd0802b3.a8a7a1a8520c8f3cd88bd36aebd89d187e98e729.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\compare-azure-rms-ad-rms.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\compare-azure-rms-ad-rms.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\d703253695d7b3d61a82ca96453c23519b232590.5845c52bb144d563b4b2af90e63c93999636e35f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\prepare.md.888a39efdcd9a2e7de70825e0b043faee7ac2abd.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\prepare.md",
+      "XliffHash": "888a39efdcd9a2e7de70825e0b043faee7ac2abd",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\5970838ffb2eef69cd624354d30060963a280b17.45cb4c6eb27f194287b0d52bcca72f74eab78f14.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\requirements-client-devices.md.d03ec480338dee41a0770e47cd765c611dfd115d.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\requirements-client-devices.md",
+      "XliffHash": "d03ec480338dee41a0770e47cd765c611dfd115d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\2efd912d6f950f05836739112c082beaba1be8e4.94ac679d57abf8956dd95d1fe1130fdb927c2e21.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase3.md.502fddcf7bea7f54a20174fe2bec3fb547ea5230.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase3.md",
+      "XliffHash": "502fddcf7bea7f54a20174fe2bec3fb547ea5230",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\54268866a03ed2d5cc43912f040c451438d9aeff.f7b71a68fa566e2402e275132a4f4367a34857de.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-policy-protection.md.d840107316003fa55f1267c91675fe576d9e8315.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-policy-protection.md",
+      "XliffHash": "d840107316003fa55f1267c91675fe576d9e8315",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\830e982fc1f0443545942c1deb1a2fc93431be17.d0f09a56ba372b6b2858f2f9a3b1e1170b8ed604.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\configure-policy-default.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\configure-policy-default.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\2eac59a00331fe0538fe521af5b2e6e33fab84a4.dd8ca648d146fde14eef10fc9f3d38f0dc3e13a5.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\requirements-applications.md.e2420b996e5fb8c7adbb7676f2891a8e7f02681e.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\requirements-applications.md",
+      "XliffHash": "e2420b996e5fb8c7adbb7676f2891a8e7f02681e",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\0649b4300c1bd10ddcfc0c1432144f5eaa0b7797.4c2b4d183491ba9c0f16557a4f93f52b07fc9e05.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\setup-developer-environment.md.5bf7eaf8dacd38c45c9c995d85f32bfddc213e90.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\setup-developer-environment.md",
+      "XliffHash": "5bf7eaf8dacd38c45c9c995d85f32bfddc213e90",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\185b67b50b7ded0ff28998f5a59be6b216abd0f9.5c7b00cdcab5fdcdeb168b83d355a1062afbb590.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\built-in-rights-usage-restriction-reference.md.42c16ede69f186dc2c328960a14612ad3629a22e.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\built-in-rights-usage-restriction-reference.md",
+      "XliffHash": "42c16ede69f186dc2c328960a14612ad3629a22e",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\3d897f191368b7af6fd339603e183583fa9b4a27.de405ba1c81f51d7486d7fb0a335f35cc8180764.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\requirements.md.7ec8455f0825399b5c77d921077da50f66e47216.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\requirements.md",
+      "XliffHash": "7ec8455f0825399b5c77d921077da50f66e47216",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\1b69be775b3cd270e4b6ea42a306eb51c15424cb.7066f4f06d8bb401aa47b2f60f8fca9953183b8a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\index.md.cb16c4eed9c14db26c7c5a4446d23b9540437684.HT": {
+      "SourceFilename": "Azure-RMSDocs\\index.md",
+      "XliffHash": "cb16c4eed9c14db26c7c5a4446d23b9540437684",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\eab242611a9b5557e8c1056b1c093a4070f6f202.bb6fed27af44a0f476101e7eb5ad83a5166a45bb.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\rms-for-individuals-take-control.md.89dc88ce6241bc67210bdb1bdcc63c3932aa1153.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\rms-for-individuals-take-control.md",
+      "XliffHash": "89dc88ce6241bc67210bdb1bdcc63c3932aa1153",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\b6e37e2d112c6ecaa0103a4efe09cfb61f1cf9d2.de747e66affe789894a26925b2a497a91770f44b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide.md.d6632a8450e1abfd37435c3ab96e841ea43d8547.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide.md",
+      "XliffHash": "d6632a8450e1abfd37435c3ab96e841ea43d8547",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\e66f0ac6e596840ad940c51db41dbc6f91139e51.a2e483e56e203d5cde1bedb56354cead4c837e5a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\understanding-usage-restrictions.md.16ccbbcaa0bab03d5be71f9751d80606e481dbb4.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\understanding-usage-restrictions.md",
+      "XliffHash": "16ccbbcaa0bab03d5be71f9751d80606e481dbb4",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\3141c4131d83e043e987546900d433e43ee4c946.62cd8d6d9a22f96637feb8385775e2962bdae3a6.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\api-reference-2-1.md.2d471fdc434c4525e99a8bf0d4986f5fdeb517f2.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\api-reference-2-1.md",
+      "XliffHash": "2d471fdc434c4525e99a8bf0d4986f5fdeb517f2",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\a6878dda28dd1e32213b3eff4c95b421cb6e12a5.5e81c0ae6c8fd85b952c30eb9c8464c834f5097d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\code-examples.md.ab330f8a8ed709be542109fbd8e14a1e3dd770a5.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\code-examples.md",
+      "XliffHash": "ab330f8a8ed709be542109fbd8e14a1e3dd770a5",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\a8f5230b80d2472c1680499704f17879cd66de02.f8ce13116b8291382d40d6a6faff02842a1c7211.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\tutorial-step1.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\tutorial-step1.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\435ad149c0b6307dc4e0452cee0474425b188cc7.97cca790e791fdb2aaf24ac23db6ca6278379606.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\authentication-integration.md.2aade10ae98ee14ca8dd3b3f8803f939caacc018.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\authentication-integration.md",
+      "XliffHash": "2aade10ae98ee14ca8dd3b3f8803f939caacc018",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\59eede5c19d97d9db0f05014528a891ee94b3c67.2184778bf249103e10413d0fd04b4316ee2d0a1f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\winrt-sdk.md.c135b6830bbb9b774b29b2379936cd25cbd0be36.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\winrt-sdk.md",
+      "XliffHash": "c135b6830bbb9b774b29b2379936cd25cbd0be36",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\c3dfa23a4bb03aec3ad9eae835382040a5347006.f1d75e65e6049bd10a404f77f8f4c28b0092e7c1.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\create-template.md.72f13f780e0b76c95bac2a25e2efdffa312a65d3.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\create-template.md",
+      "XliffHash": "72f13f780e0b76c95bac2a25e2efdffa312a65d3",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\906bc1e97947cf32b102fdf484b86bc30b9a383d.44073dcdc03121853e250fb0c378e3a347ab0159.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-dialog-box.md.19d101997437b0ee9c69fe03555360fcca66a7e6.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-dialog-box.md",
+      "XliffHash": "19d101997437b0ee9c69fe03555360fcca66a7e6",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\d5c83aadbf4b52035cb339d18ce299d7469ec906.7eb09dc8147a0318c3077cdc4a4b082f9629ec2e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-protect-by-email.md.51fdb86b16306e116f5c3b2533e0de6f8e8fa812.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-protect-by-email.md",
+      "XliffHash": "51fdb86b16306e116f5c3b2533e0de6f8e8fa812",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\768fadb47fc866efbb232bfcc0d3498c4476c928.059738603e621f43c409db266d42a94445da5f37.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\applications-support.md.e70c6ac568eee3c61edcbc7be07c1e1c552ec711.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\applications-support.md",
+      "XliffHash": "e70c6ac568eee3c61edcbc7be07c1e1c552ec711",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\cfc3d5f70b4c9edd00bd2046da752569a1c59774.57a59c4b5ded252bc4977cd0a67f04efc8efa3d5.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-user-guide.md.aafbdc4a05cf7e8ed88a1150f5ab666463a92e8f.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-user-guide.md",
+      "XliffHash": "aafbdc4a05cf7e8ed88a1150f5ab666463a92e8f",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\fd4d4c41cccc5960384141895d0dcd755b12876c.128100a077b5d506f5f22756befc1c02a51a4be3.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\terms.md.b9e2e1fba5813070d683e8b08a39b756db99a348.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\terms.md",
+      "XliffHash": "b9e2e1fba5813070d683e8b08a39b756db99a348",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\cf12a824d3d56ca2df234ba0732d0c4eaae6358e.1017f4fe16a944662d762a9e7a2def29f771bb06.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md.852f67816a08b341abd68c0cbb1be8cd4d6bf76a.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md",
+      "XliffHash": "852f67816a08b341abd68c0cbb1be8cd4d6bf76a",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\36c0bece4fb99e4d92fcda0c57da1b3cee11e37a.85a649a7b79f5a05ff2ecd8b011e42570db537f2.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md.a55cd903bcb46c6465383808fc8016d5828984fd.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md",
+      "XliffHash": "a55cd903bcb46c6465383808fc8016d5828984fd",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\0b160fff849b9f8bda71fd6ccf07d8fb07487b13.43e0b4512d1477ed0ca803bd346f2d94dc1a224e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\operations-tenant-key.md.3f4bba4eb6d6b631f6d3936d01d289ca6088046f.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\operations-tenant-key.md",
+      "XliffHash": "3f4bba4eb6d6b631f6d3936d01d289ca6088046f",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\c69e815c2d0ee6ecf06a48dc4e001d1e11d86091.55d306c6a3918f85045620e196c77bbe6c288b40.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-version-release-history.md.53e65f8fb9efba94ee002c682ee9ae95236892e0.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-version-release-history.md",
+      "XliffHash": "53e65f8fb9efba94ee002c682ee9ae95236892e0",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\0cb22c3b78b7d4fab871723f8cc95f90b2893e88.b74802b611d9a5f2960d87e2771d400407fa8667.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\compare-on-premise.md.18a9b1fe9521ec30959cead6cad05977062bb147.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\compare-on-premise.md",
+      "XliffHash": "18a9b1fe9521ec30959cead6cad05977062bb147",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\36adf768bdb5a0937af3563665bbe139c86ff250.5f5e4d949150367f9b3e767a7339ac7d3db7bb03.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md.98451c849430f21177ddb7fa89181dee5aede85a.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md",
+      "XliffHash": "98451c849430f21177ddb7fa89181dee5aede85a",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\ebd49fdaa6c4222d0c2358f81066ef34f0aab0a8.882b859f5ff600fa9471034a74391635a759779e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\what-is-information-protection.md.7390122e80e9f70c191f53e32b66b18369bc8600.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\what-is-information-protection.md",
+      "XliffHash": "7390122e80e9f70c191f53e32b66b18369bc8600",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\eaaa08a99b3c065422dd8b0bc01d89ead15e9d49.0be936543b084fb8b4187e968ed19a7d5cc62803.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\ios-sdk.md.37044b1d86140330b67fe56c592ea9c0993f0364.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\ios-sdk.md",
+      "XliffHash": "37044b1d86140330b67fe56c592ea9c0993f0364",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\96b71d26461559aa8e53960e7e8f3f748b7ebb1d.c841c83220e643c7c67720086c9e95e25c282351.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-servers-rms-connector.md.5469cebe6d41d1c37f102d2827c149c2e8cc3653.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-servers-rms-connector.md",
+      "XliffHash": "5469cebe6d41d1c37f102d2827c149c2e8cc3653",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\fc30e58bb6702576988db0dcb4fd38a73d5591b1.2a3fdd12e02d9ae28edd0f5cc4a8a616870fa2b5.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\get-started.md.0f27b067302d42735868e03985b8d658600d18cf.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\get-started.md",
+      "XliffHash": "0f27b067302d42735868e03985b8d658600d18cf",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\d4373ed4a0909c5c0c4dceb51f98ace1977cb6f7.3f91cb011316aea87d6dc8aeb20f9f732b8e50db.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\install-sharing-app.md.7a5b249d0b1135bd57c73beb27b3216e96a015c2.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\install-sharing-app.md",
+      "XliffHash": "7a5b249d0b1135bd57c73beb27b3216e96a015c2",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\653addfc27cd96e7a1606866213ca0f5bf052203.b5a75d8431a807f038a1aea947cbea255dbe2bda.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\infoprotect-tutorial-step3.md.1667f510468e0e9143e4d049809a67d225cff71b.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\infoprotect-tutorial-step3.md",
+      "XliffHash": "1667f510468e0e9143e4d049809a67d225cff71b",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\1e121f172927ae393e874e16322ddf00625132d4.bb6e48610f8326e03bf57fee30ecd92890c9a8a4.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\tutorial-step2.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\tutorial-step2.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\4b53efd01da94d129bb50fc5a9587e17df04e6a1.57c91d1c584b8a55ef3f2c2558ba7a7c56ff8eab.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\supported-file-formats.md.3c60d72681ddabb43950a5f9ff7133a788ebcbb1.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\supported-file-formats.md",
+      "XliffHash": "3c60d72681ddabb43950a5f9ff7133a788ebcbb1",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\0baa6a5ceeba8ae2e276ffe09edb54060671d8be.0255fcfac3d3081e3e9036408d2660cc62b13985.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\activate-azure-classic.md.f9fcbe6fb064e40a5552261cbcff2ec57a0f2b60.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\activate-azure-classic.md",
+      "XliffHash": "f9fcbe6fb064e40a5552261cbcff2ec57a0f2b60",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\74aac58a7b523f98ef627831830577d4fde7d5af.aa5bb324b256d1ce088008a1a2a049daae5457d5.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\linux-c-api-reference.md.52f9652c653feaccc390ad0e39bd59a5864f0557.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\linux-c-api-reference.md",
+      "XliffHash": "52f9652c653feaccc390ad0e39bd59a5864f0557",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\12d7f276a489284586f45d34407ecc48b1b4b2ce.403b9a8fc47e88b03bc7eec3a96372d5b9153739.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md.9642a3d37487b50ba4f575a22d88fdddd790fc1c.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md",
+      "XliffHash": "9642a3d37487b50ba4f575a22d88fdddd790fc1c",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\cab6839a1911bb61185f2ef361b2040ac0d38a6e.36c17732c16562d0250024a6609d52840811addb.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-hsmkey.md.46d888ca5602244565b9c87a93784b284d275d54.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-hsmkey.md",
+      "XliffHash": "46d888ca5602244565b9c87a93784b284d275d54",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\2ab9d6b711e0d17a6e1c78ded7f0cbe6cfea2e9c.77af3999d40c0f83e26ab24357d6976271bf4bdc.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\ad-rms-overview.md.b640c07495cb953fe478858268ea33c4274d995e.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\ad-rms-overview.md",
+      "XliffHash": "b640c07495cb953fe478858268ea33c4274d995e",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\82441858230e179a08bfa74e0f6aaf9ed17a62fb.486db20704270284ecc2ced531d55fad4a3f0c8f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\verify.md.68edb2f85290db08100242928df6afbd42679610.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\verify.md",
+      "XliffHash": "68edb2f85290db08100242928df6afbd42679610",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\e39cb95419fd661be6c0f4838aafdcb02ed684cf.d900fc21c7a57cb9872b33c84e3cfb6aedab7f3e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\ad-rms-client.md.c473d1cfa8a084166e5c0e6d3287610d618b4523.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\ad-rms-client.md",
+      "XliffHash": "c473d1cfa8a084166e5c0e6d3287610d618b4523",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\099c27d0bc94503101adc04d1e398ff1eeb4d916.f0120c88bd73572890156dc3ec1453647232e113.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\configure-policy-classification.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\configure-policy-classification.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\3704a9f0f4d13fff0c57f376e3c633d6cf0212fb.316f529b861f78c086992741d0135489ac164dc9.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\requirements-subscriptions.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\requirements-subscriptions.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\fca3ca810e6a95c055b48d6badfe5ca14cbfdc69.60087fd93d75a05b2f742a01fecdfb000a5cab7a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-office-apps.md.39a40a77830a0618b16377cf28256dc61303bbb7.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-office-apps.md",
+      "XliffHash": "39a40a77830a0618b16377cf28256dc61303bbb7",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\d3fbe13f736eebcc873ea7282da222d7bc78a1a4.050ca30c38fbd77cac473eb2d2f3cb4a3639f1ae.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-office365.md.7f16a149b43c134da2632dd0b4c9ed481aad7059.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-office365.md",
+      "XliffHash": "7f16a149b43c134da2632dd0b4c9ed481aad7059",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\7f615f6192dbd03c6b429172cbec413ab02f8d7d.c9cefc4248cf2c96ffb244c4261db65f00f34993.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\enabling-logging.md.60bc9c8fb1c2ceb078eec90125200545ea924d90.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\enabling-logging.md",
+      "XliffHash": "60bc9c8fb1c2ceb078eec90125200545ea924d90",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\ad537f8f88d851c256cd62bbfa325f321ff9603b.f8985cefb1c5f262884d24c1ed3a288a5936b65a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\sdk-elements.md.81bdd20e8bed76045bca2d19fa8568b06f6524c9.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\sdk-elements.md",
+      "XliffHash": "81bdd20e8bed76045bca2d19fa8568b06f6524c9",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\a251723b6c42058091d57067724e89a1816bcaa1.48939d64f6476eaf32eaabf598e94e2cd3d7bfb1.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\android-sdk.md.9fb183a7fd457ac914a59f13d942e46203115594.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\android-sdk.md",
+      "XliffHash": "9fb183a7fd457ac914a59f13d942e46203115594",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\1925eb3a630f61e995886989ad351a8263c9779f.b82a3cf2cc2ed985f01624e68dfeb5be6f89d61d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\community-resources.md.9ff2f9f58de141bce6583966dc0fb9004030e601.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\community-resources.md",
+      "XliffHash": "9ff2f9f58de141bce6583966dc0fb9004030e601",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\dab2d84371cd2c45af617898f1694f99128551d9.dea89918f5cc4fb7a63978a9a6bb655a6bdfa4d6.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md.84e43f542c0e190d8a4b7a80ab12a8e9eaadc1c3.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md",
+      "XliffHash": "84e43f542c0e190d8a4b7a80ab12a8e9eaadc1c3",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\616d5dd088665abf6e7d435978b021b10c5ac3f5.af17c249e603c63b403ae119af666c316d92dd0d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\TOC.md.3a58aa240c45a7c19e3b4482e7f081c54c5463de.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\TOC.md",
+      "XliffHash": "3a58aa240c45a7c19e3b4482e7f081c54c5463de",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\2d6363805e7590f6b6566abfe8e04d82c11b5c91.0442923b2e50fce2d208f0fb02e3eb13de8e2b65.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\install-configure-rms-connector.md.2f3db356fbe6e7481ae8dbd40d6877770450cd3d.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\install-configure-rms-connector.md",
+      "XliffHash": "2f3db356fbe6e7481ae8dbd40d6877770450cd3d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\e53a243fb172855cf6c6741cddf387b00faa46d1.ae38b778bc8601ccd234ac36ce2a3134d539ecdb.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md.47dd1404539ffed303d404e4f7fc174e66c6d33b.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md",
+      "XliffHash": "47dd1404539ffed303d404e4f7fc174e66c6d33b",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\810e540e02db0b4a142471dd89e30663bd61f22c.d69dd077eb2b5dbc7863803b57185992802aba94.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-policy-classification.md.0b220e688aaa3b7598cc30d85acbe697f90febe8.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-policy-classification.md",
+      "XliffHash": "0b220e688aaa3b7598cc30d85acbe697f90febe8",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\7aa829142b0bf01157bcf1801de752aa1bb93e8c.7439dfbdeb83f2befb4f17001d38c73f21b0a1a2.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\info-protect-client.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\info-protect-client.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\142d4752991d7a7f12a09ba132e1ded8c8941736.00526d97b0922c8ffa27ff73e86368834cc6455f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\linux-setup.md.bc1a18398226bf24addf515db2af99fab81aa42b.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\linux-setup.md",
+      "XliffHash": "bc1a18398226bf24addf515db2af99fab81aa42b",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\561ed44582fe2c73cf40ac082bf67e91d37fb351.2ae806bb259376fc2cf9349157c1751d79b941b4.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md.e2644ac18359b264fc1ee9c2e57945444c6bf204.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md",
+      "XliffHash": "e2644ac18359b264fc1ee9c2e57945444c6bf204",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\69ee78823c2a0500596dec24f44ecba8329af516.adc0bb587f0b1f207236de12167a1c42fd507d14.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\generate-tenant-key-in-person.md.d1bc0f973213b70eb3f733c6cd8a37ded4902068.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\generate-tenant-key-in-person.md",
+      "XliffHash": "d1bc0f973213b70eb3f733c6cd8a37ded4902068",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\4f8b32fa7961b3d59911cc279ac30a7c497deb5f.9be5dadec19e74623d734d95cd68ea1ac5ae704c.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-keyboard-shortcuts.md.35779f81ec6cae81df6fdb487afbb76eb55944b2.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-keyboard-shortcuts.md",
+      "XliffHash": "35779f81ec6cae81df6fdb487afbb76eb55944b2",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\51fd76e1d60a1b41b7d9e7027113610b71b03b34.54e5aca164f9dfe31425681be9ec6ab247b768cc.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\what-is-information-protection.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\what-is-information-protection.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\91b2a16929f9de250ca05404e2117b81a05908fc.81b0937094051da31601e33f33239ccfe1041a63.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\faq.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\faq.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\babace190456047cb6e677a66236e6ef4fe12a66.70d935f4eb7e646cc340bf5ce0593941f65fe5b1.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\android-code.md.5039ea54a89dc6693a0fb6d057a323d8b07cfcfa.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\android-code.md",
+      "XliffHash": "5039ea54a89dc6693a0fb6d057a323d8b07cfcfa",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\febc212cb6bc4b91058aa0e9f18d1e51f751b552.0b28b6d0a794ea7c05498abcce7c7c7de359ab51.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\TOC.md.d9c7e338f841bd748a262a7d1b1a7b8a49e15ade.HT": {
+      "SourceFilename": "Azure-RMSDocs\\TOC.md",
+      "XliffHash": "d9c7e338f841bd748a262a7d1b1a7b8a49e15ade",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\2c1bde34be2ca96fe394e3f20c36fc3f27f1867f.2ff881e9d9f4dbe2c760afe4bbacc588c43a0187.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\how-does-it-work.md.9d1de30f93a65c30e75c5416e87026619df57564.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\how-does-it-work.md",
+      "XliffHash": "9d1de30f93a65c30e75c5416e87026619df57564",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\dd6c9250102e104ba49b0c08f14d9959cd1228cb.d6584ec6fb170b1ceda7d9616600589634bae19c.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-policy-new-label.md.9d38deda03607e08c7715bc49a7b94f2e4108dd4.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-policy-new-label.md",
+      "XliffHash": "9d38deda03607e08c7715bc49a7b94f2e4108dd4",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\7c2de9a4d81ed77988accd06c4b413b03ca175d0.bc50c90e12bb237e71fc35590d52e860e3735a72.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md.b9ce1050ca5faeeb978d435bb5b7b30923f9a4f6.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md",
+      "XliffHash": "b9ce1050ca5faeeb978d435bb5b7b30923f9a4f6",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\ac7dd8592d6e11905744c4f4e0171fd5b5945c51.77dec9d37c2aca03452b3cb8293241ae83295d54.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\deploying-your-application.md.a540c7d5b3fb2e4f3a89b2ae04717487c9c5ab63.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\deploying-your-application.md",
+      "XliffHash": "a540c7d5b3fb2e4f3a89b2ae04717487c9c5ab63",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\e1bc56fc108101d0af833a84ba52821c8b18736d.4ef19be892d1d3c8068a25902b5c1dcdd02bcd14.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\developing-your-application.md.cf1f58f0e32841c3bc0a27300377b944069af904.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\developing-your-application.md",
+      "XliffHash": "cf1f58f0e32841c3bc0a27300377b944069af904",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\31a0ed43e1c5669c4dbfcc4e52ad86720101cc65.774ef5f165cf984f71835c4ff50089b66cf7f5f5.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-applications.md.d709e175fe91c27bfefa3ced9b81c87edf4b2658.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-applications.md",
+      "XliffHash": "d709e175fe91c27bfefa3ced9b81c87edf4b2658",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\3a4498fc8edf5a3261a470694869b273362f9e02.3921584102cb69fba11e97d67070c514f0a12f0b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\scenario-sharepoint.md.88e81fdeb66060746cf28798a6d2442fbac2558d.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\scenario-sharepoint.md",
+      "XliffHash": "88e81fdeb66060746cf28798a6d2442fbac2558d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\bdff486b1a5fe73bd8ff4aa78d53ee9a993d7252.910432071f098ec2370867ff6c220502d0bd8a41.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\infoprotect-quick-start-tutorial.md.12105a9aab5818e35cfbe285b7ceffde4cdafebe.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\infoprotect-quick-start-tutorial.md",
+      "XliffHash": "12105a9aab5818e35cfbe285b7ceffde4cdafebe",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\a8c4003d8dbae5d33712860cd1f665de234db5a0.d180b164a74016f3b1a3dccea6e274c55acb3afc.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\scenario-work-folders.md.2c4bbf23cf60d501c4526b12f0f108c03766c2a8.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\scenario-work-folders.md",
+      "XliffHash": "2c4bbf23cf60d501c4526b12f0f108c03766c2a8",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\b8a390508bec8f82eafc520328ee394476ebc419.ffc5d89640dec116cdf451cc15650dfdd2d06e39.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\faqs.md.c268355a22e697fbc43f81f270edad7b0f12ca96.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\faqs.md",
+      "XliffHash": "c268355a22e697fbc43f81f270edad7b0f12ca96",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\5a7d9b9e49c4a682ad9b293147eb6840ca1febf3.7e817c09bb11359292dd3f633b80bb80ddb35d7e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\configure-policy.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\configure-policy.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\7e43edb85a22b630402d80b7702af016e5623254.059ceca3b407e90bf6def778cd1710c693cb2dd2.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md.fc5b4775ff04389b2b1a5cc95fca42ad39f425c1.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md",
+      "XliffHash": "fc5b4775ff04389b2b1a5cc95fca42ad39f425c1",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\ca1547a6ff00b7100cd52c34938bf6e088085f8a.6403759dc7eb89eee6c8959c7913072d0d48471d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\windows-phone-apps.md.a9c0593b0abbc89f80cd0a2538c19266554b9379.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\windows-phone-apps.md",
+      "XliffHash": "a9c0593b0abbc89f80cd0a2538c19266554b9379",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\790f0d847c57b9e13d9074298b3e89584dc24760.dcbd66d00afac78bd83808322476d9c368c1eaad.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\file-server-support.md.8ac77951438d0bcd94564e8012d2a5430c9c876b.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\file-server-support.md",
+      "XliffHash": "8ac77951438d0bcd94564e8012d2a5430c9c876b",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\240a6ed59917beedd8efe355de09959aff726f3c.f506f65578f2db431117d2aa01cdbf58c676532b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\ad-rms-server.md.cc0a47c8f15878396580aff15a305e9c34c6c5a5.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\ad-rms-server.md",
+      "XliffHash": "cc0a47c8f15878396580aff15a305e9c34c6c5a5",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\3e2dee5511bc86e44e2e10ff9fc981aa36ccee38.be72f513fdc75c28a3bc7ec2fbd2a8d16343307f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\client-version-release-history.md.b688142468883f3751cf37da47ddcadb49a86484.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\client-version-release-history.md",
+      "XliffHash": "b688142468883f3751cf37da47ddcadb49a86484",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\fdded832dd84d0c05ec982415414681c0a05606b.6c84bf6e218c89f7e08aec26bff9bc2558667ca5.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\tutorial-step5.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\tutorial-step5.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\ff20969bdbea7f6605732fdedfabff0298beed02.245abe86cd30d3ccff62e6d6846ed4e6f7a07334.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\quick-start-tutorial.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\quick-start-tutorial.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\bf60d421ebfb207f7bb85b2ada2e65d7e9f80bb4.0face7f63632ab3128393a7f49b0cc46b655b0b5.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\TOC.md.232acbab233238be9dda9b13c4f990213574d904.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\TOC.md",
+      "XliffHash": "232acbab233238be9dda9b13c4f990213574d904",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\74e6fb5cd66c47bdaf85feb1e52e7ab663b43528.22fa6a9e64b896b513291c22eac47a8c498cd093.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\office-apps-services-support.md.abfa226f3943dd4de42fea794e358bc7764653cf.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\office-apps-services-support.md",
+      "XliffHash": "abfa226f3943dd4de42fea794e358bc7764653cf",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\53de98a8c6b8ef0f18e9aa7ff505ef8054c1e17d.20d8d69e68a1cd3ef6a383362197f245df9df34a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\infoprotect-tutorial-step5.md.3c0a28976d9431ff7d2b61c9269ed2ac0e6de16b.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\infoprotect-tutorial-step5.md",
+      "XliffHash": "3c0a28976d9431ff7d2b61c9269ed2ac0e6de16b",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\41cecc14bca275640e314af3d9c05778effe95a3.a8cf72fa6de40973ed4c2f7446ffc06e078b2511.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\privacy-statement-rms-enlightened-applications.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\privacy-statement-rms-enlightened-applications.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\cd827c5a687f30a59aabbbbf1dbf1b5e996d3b17.7ac1a65d700cd3e1a172086cb87dbe7198e39b0e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\infoprotect-tutorial-step2.md.8c31960afb9df9b6d322115d203eafb53b9e56ef.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\infoprotect-tutorial-step2.md",
+      "XliffHash": "8c31960afb9df9b6d322115d203eafb53b9e56ef",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\d01d0c0605cbbe8a4b528a76fe722f7ba78bd4f6.37ac4a161c81d9723cacd20dfae11084792cf40c.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\6f36888c8205c268ee8b0589d87a6fec3342ba54.46e7959c4439d06b1b521109c750421ca71aea8a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md.ec62f611b8e5865868900e70dcf0f59acd9ff461.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md",
+      "XliffHash": "ec62f611b8e5865868900e70dcf0f59acd9ff461",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\afff0d08bbf57d39c255cb1e132ae72b410cc8aa.aebead34ade220a8602be8739c005acb64c9ae50.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-adrms-restrictions.md.6ccc3233d4048d2e10cf5fc3fd66196b145b5180.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-adrms-restrictions.md",
+      "XliffHash": "6ccc3233d4048d2e10cf5fc3fd66196b145b5180",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\44a7dc786b678844e58f2a60204853d86c8750a7.d4a49677d851e995a7d1dd090b9a2e17a5067f2e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-policy-change-label.md.8ad8e8307b4c3c26f48370d9799fe6e9949f975e.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-policy-change-label.md",
+      "XliffHash": "8ad8e8307b4c3c26f48370d9799fe6e9949f975e",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\47e5b8522261db15948f7c67674ba140fca26d4c.c5fed2da40f02d7fe5fe6da3cde1717c17692184.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\byok-price-restrictions.md.5293dcb1ad059b96832163a6347813aabbc59a82.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\byok-price-restrictions.md",
+      "XliffHash": "5293dcb1ad059b96832163a6347813aabbc59a82",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\00ea1be056ee2bc9b474587ab48bfd41379ac895.881a8edfd02c3c289ca39978c3ad78d252e7c10e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\what-admins-users-see.md.a0752f15ac52278f1077b2fdb7dfb106496d6560.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\what-admins-users-see.md",
+      "XliffHash": "a0752f15ac52278f1077b2fdb7dfb106496d6560",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\4cc2522a03d1d6003d60e9c87fb8bab3c1454df4.760d40159bf52213abf05c5bfcf6cdb1ea4edf1a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\TOC.md.b8e7a9dfceb270a2dd5ad2a1403ce9b6211d75ab.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\TOC.md",
+      "XliffHash": "b8e7a9dfceb270a2dd5ad2a1403ce9b6211d75ab",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\2f2b3931b1a0a4f42f73bf3c21870ecb22524175.d50c357aa48ac313397203dfcaf7772bce7be13e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\rms-for-individuals-user-sign-up.md.bee6c0340beeab4ff17d5912821f9120dee423b2.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\rms-for-individuals-user-sign-up.md",
+      "XliffHash": "bee6c0340beeab4ff17d5912821f9120dee423b2",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\e3fc6390b3a5b1b6a7b321999a94d4c2226e93ad.02ebae1c11c12df47c8109d2b0651b65a08667c9.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\setting-the-api-security-mode-api-mode.md.cbfa10b40d993aea7e7335e7f0e80039c7fb4430.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\setting-the-api-security-mode-api-mode.md",
+      "XliffHash": "cbfa10b40d993aea7e7335e7f0e80039c7fb4430",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\9235fa1c194162689b854493ea31e76c08c40ce7.f6b7b416cd6cc9e66e67dfd17c19b3bdbd712dbe.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\TOC.md.2a255767bb14f50cf7bb51bdc3c40d2e36c66904.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\TOC.md",
+      "XliffHash": "2a255767bb14f50cf7bb51bdc3c40d2e36c66904",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\f98ef31bf8c1b6ce05a8a940a5ea967f766fcf6f.d476c21f788c84a7f27b6581f097e89650ac5800.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\release-notes-rtm.md.36c20020834c7b4f7c9a789864b30798a920088c.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\release-notes-rtm.md",
+      "XliffHash": "36c20020834c7b4f7c9a789864b30798a920088c",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\31670bda73bdf0ddcb0167c40cdf32b11fd7af3c.7fb5cc1b8a750e0772163c67b81ae930b2ca34f8.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\sharing-app-support.md.c8aadf2422919fb10fd6aa6f37fa46eb5a5d6c77.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\sharing-app-support.md",
+      "XliffHash": "c8aadf2422919fb10fd6aa6f37fa46eb5a5d6c77",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\4f4ddf1059ed6c31372195fa4a7c5c5db0aeefef.51df0325c7ca58180d1467ca2914c2e258e0e4aa.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\TOC.md.11bef47b9f20aada7b765ac600d0828861980c24.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\TOC.md",
+      "XliffHash": "11bef47b9f20aada7b765ac600d0828861980c24",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\f5e23094660ac81c74b8f64b79d805c636634b04.fc224854b9f9b3b48802c4a405c5af21e7d0d8b7.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\infoprotect-tutorial-step4.md.84e21e88df22facece88a7d5bf849c246bca37cd.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\infoprotect-tutorial-step4.md",
+      "XliffHash": "84e21e88df22facece88a7d5bf849c246bca37cd",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\6fbfe4236b221c9263b37f23a67207857a718650.7e38baea7c0e9eda7d32bb40d1d4d1b3871c5f09.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md.1ecb6fcbb0d30b8cf461fca9bb14863a50f256ac.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md",
+      "XliffHash": "1ecb6fcbb0d30b8cf461fca9bb14863a50f256ac",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\8d9538cb2663edce5fc343ed9710032505c15293.283a5ab832fb21a3bcbb1561c1d4282b8b09271f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\remove-template.md.e83e08aa1a1f0e7d259ce501cb66d24b45c9915c.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\remove-template.md",
+      "XliffHash": "e83e08aa1a1f0e7d259ce501cb66d24b45c9915c",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\905ef45db6a151f7a512447684e7e70292575acc.1a16410bfa8232c972327d16a8408bb50e5daf43.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\infoprotect-configure-policy.md.976db52c401bc6a5a4f2d523cfb866c88727024d.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\infoprotect-configure-policy.md",
+      "XliffHash": "976db52c401bc6a5a4f2d523cfb866c88727024d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\286d817b554a1113e90b0926c83d20797e75bc2f.1cd43668a306453adf0d1b6bc4c50cc23042aa83.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\requirements-azure-rms.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\requirements-azure-rms.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\1aa7a564542e55eaedd88cc58bb7c0ae6f277ac1.4778a0a7bea8d10c48def1ee1c8c5b8dc59be448.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-policy-default.md.6635615ab5040accd3f0ecf15b1630a0e7cb284c.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-policy-default.md",
+      "XliffHash": "6635615ab5040accd3f0ecf15b1630a0e7cb284c",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\3bfb4d3ce75ca4dc776e7e4e5b5ea87a96ebade9.bc20ebf39b1c74555d11eb3741bef2913a8c5dd8.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\adal-auth.md.8508603912b38f00f06a75bdb15178a3ead719b8.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\adal-auth.md",
+      "XliffHash": "8508603912b38f00f06a75bdb15178a3ead719b8",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\5d472082c3acbf06edab00fd629098581f703a30.fb95abe964315b5fd44a313a9f45170d0bca5e52.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\aka.md.3d696f134ac42225fb208d0990f22a83c79ac3a7.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\aka.md",
+      "XliffHash": "3d696f134ac42225fb208d0990f22a83c79ac3a7",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\8d597b0acf0a197b2ee12d250672c9572eb6072a.a7472a2c778520faa98795e42144aa94701e1fb1.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\administer-powershell.md.a1dcb4905312b3d68d3154b834edbd241c22f404.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\administer-powershell.md",
+      "XliffHash": "a1dcb4905312b3d68d3154b834edbd241c22f404",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\c36a5a53f0a83afedb1e840a60a59d281a751f17.459892a9a079fe5e21085ba9c9e72cea63201690.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\operations-customer-managed-tenant-key.md.f58afeffeadfdcf86109961631c23ee87d25f504.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\operations-customer-managed-tenant-key.md",
+      "XliffHash": "f58afeffeadfdcf86109961631c23ee87d25f504",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\c879d4de6b8b99c401b36e03dd3b16dc8b722344.287022a3fb772da3307021ddb4b3fb9f5d9fd2f1.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md.c92711b6dc9d119cce8047b740bf133b1216aee2.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md",
+      "XliffHash": "c92711b6dc9d119cce8047b740bf133b1216aee2",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\2a03ae13b269b1a7352dd81fea52fc68bed17d99.217d8dbb059a773431302cf8836522c148d14bfe.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-custom-templates.md.3723fbfcca27c240e74f3cf4af757948625be63d.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-custom-templates.md",
+      "XliffHash": "3723fbfcca27c240e74f3cf4af757948625be63d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\64b043beb38a169d4b2c4401665936a50f3e4c18.d13e1d3f59de549feb1371724dfe171d7c5c8803.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\release-notes.md.963c2980f83e38cf4121e0b339e097dc2e3969fa.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\release-notes.md",
+      "XliffHash": "963c2980f83e38cf4121e0b339e097dc2e3969fa",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\f3d4b1ba0da3530121aa81056238533f0dcbed2f.60366628dd07ea7bf310c5986bef281c3c795b16.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\application-types.md.ff59c2e5901abfbb12578e8ee33d3f734b522713.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\application-types.md",
+      "XliffHash": "ff59c2e5901abfbb12578e8ee33d3f734b522713",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\77bb95ae54ec0fb699d3b0dd2879bb14fdd3dd28.9741841c069c99cab9774b33f143791ba56a297b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\tracking-content.md.9dc5a193bea0d59a09ffac6aa592ef0dc8f54b38.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\tracking-content.md",
+      "XliffHash": "9dc5a193bea0d59a09ffac6aa592ef0dc8f54b38",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\5c4ebdeda78d1cf7b3488d5d0fe6e39bb92dfba0.6fcc48e326b835418ef54e3b1fe153b149583e3b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\deployment-roadmap.md.2708d32b5fce50d8709301069b5a6e82a99b7ba1.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\deployment-roadmap.md",
+      "XliffHash": "2708d32b5fce50d8709301069b5a6e82a99b7ba1",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\ff205efebf9b02ed0bfb1c7e275d34981870c26a.4af086063e1e58cf6e295fb0b026242597eb25b7.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md.9699d0d2c803fc5a7cab49dc977193da82dcb4f5.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md",
+      "XliffHash": "9699d0d2c803fc5a7cab49dc977193da82dcb4f5",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\ed35e72a5dbe23aba0817640075d34fd01bd269d.dbfc6bf5017f3b2ebd80bc951df1bb3e4e90a5a0.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\use-client.md.dd090aa6f82d2768dc3798447fab7efcf471e649.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\use-client.md",
+      "XliffHash": "dd090aa6f82d2768dc3798447fab7efcf471e649",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\3f45c1f6c0d3860656b92d89f99b222da2bb82d0.827194cd631811a0650aa8a80f74f9c63c8e6565.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\what-is-azure-rms.md.9f7948eea0e819e4a0805e7790e21f47fd244097.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\what-is-azure-rms.md",
+      "XliffHash": "9f7948eea0e819e4a0805e7790e21f47fd244097",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\3582aaba72347e8374f6cb856f52cd129bb83d3e.6245203ac09459551e6251d9a9a78310d49b88fe.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\configure-policy-protection.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\configure-policy-protection.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\a2416e0ae77a2d402fe4ded5232f1f008481bfb3.6ec4eab4f3d74a4efee831ea1491577e4033105d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\TOC.md.bdf343083aa152034291a3e978c22c774dcf31ef.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\TOC.md",
+      "XliffHash": "bdf343083aa152034291a3e978c22c774dcf31ef",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\9c81bee42fdda57c5451733e0be2e32f37b41c64.003f5d51bfafe09178cc00736035de026cd02d10.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\install-powershell.md.1fd9a130ca4a827de0074e84a401c795fc9e9c46.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\install-powershell.md",
+      "XliffHash": "1fd9a130ca4a827de0074e84a401c795fc9e9c46",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\36bd2e74fb48a6d5abd15e45e031a7590522f8a8.c10475bde83dccf9629f0c689a3f4f478fcc0b65.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\configure-policy-settings.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\configure-policy-settings.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\e102b3e0222d6ec44303bd539b3f200c42b31db3.16249bd7494de318a2244fac7859017fb526e5a7.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\scenario-secure-most-valuable-files.md.ca73deeaf569fbb7e27bd672cb734e36cfd9cccf.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\scenario-secure-most-valuable-files.md",
+      "XliffHash": "ca73deeaf569fbb7e27bd672cb734e36cfd9cccf",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\6687ed42bca5e773d6bbc97285f12e3c91ff9f32.9e8300575bfaf2ffbd2dc974fde2c1b13548a124.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\install-the-rms-sdk.md.0f3d621f1d179d993e66da5d5a36bd308cce33a1.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\install-the-rms-sdk.md",
+      "XliffHash": "0f3d621f1d179d993e66da5d5a36bd308cce33a1",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\8a118e4b5174251122a5798b2674d0c6e79017be.890922379b80c9541a891069ed72cedf538ed8ae.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md.6b9ec512556a3344d3f89d752ee498f2f1e38b14.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md",
+      "XliffHash": "6b9ec512556a3344d3f89d752ee498f2f1e38b14",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\4fd9fb750c3f327e6879ca775ab281e32730ddce.fbbc51b5dee4418c23043a96678ada35ea341ae9.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\rms-connector-registry-settings.md.88254cc1cc5acb03c168a4a12d08b5a05313702d.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\rms-connector-registry-settings.md",
+      "XliffHash": "88254cc1cc5acb03c168a4a12d08b5a05313702d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\99cdc0cdb3ba53c3712e61cad2ef96999546e7f8.08739ee37cc5aaaeafc1696d1edaaae9a749a5e5.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\rms-for-individuals.md.a53be78233288882b2e9e85cc213ea04ce00989b.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\rms-for-individuals.md",
+      "XliffHash": "a53be78233288882b2e9e85cc213ea04ce00989b",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\f503f4d445549c4316f41a2d2a70f4cfd45b5953.b9ae6215cebc58b9d7ca473fd334abbea76297c7.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step2.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step2.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\6cbc4cd9c210a09b498756dac63fa2e04bc3b0bf.c45a050998712944138e5e186659682b5dab4a0f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md.c1e53ad04342441bac14dcd618dd122c26f2785a.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md",
+      "XliffHash": "c1e53ad04342441bac14dcd618dd122c26f2785a",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\c2a272cc27a45f7fda8279394fcb681b70dea81b.2a73d0d8b630d24c174c103d761d94ff2969a1cb.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\configure-fci.md.9cf80f04ac2e67c5b60e847239936c0786dd22ba.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\configure-fci.md",
+      "XliffHash": "9cf80f04ac2e67c5b60e847239936c0786dd22ba",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\c909174cf3ce9d8e931153d2c4dfcc0cbdbacf1e.a5eea9eba948c993912b80ba248386b552427851.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\client-deployment-notes.md.6e49e4f0dad557a9930720d31612a777e07246dd.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\client-deployment-notes.md",
+      "XliffHash": "6e49e4f0dad557a9930720d31612a777e07246dd",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\38bd495019632693e2a9757769d54a846084ba2b.f2e533d3fac857b0b51e0d7f2eb5f71d9ea65a81.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-track-revoke.md.20f3dd7e053e975b02f9234c351a9da1fa517650.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-track-revoke.md",
+      "XliffHash": "20f3dd7e053e975b02f9234c351a9da1fa517650",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\1cd55e9c6200876a4d9921e3b60eb8fb58845d0c.b44dd74f7c8134172e3c16f7eca52976922146ea.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\requirements-servers.md.8634bb27b1b11c9d6e252d960d207d80026e2875.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\requirements-servers.md",
+      "XliffHash": "8634bb27b1b11c9d6e252d960d207d80026e2875",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\71f297519f05a2f02ee4acbcb4fe526e07672f45.e5dfb8da64a2f5c88b7ef6fb38a8ce1e7ddf4d1a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\index.md.915356b66fd2e68b4b169f98790dc72e2f7969d2.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\index.md",
+      "XliffHash": "915356b66fd2e68b4b169f98790dc72e2f7969d2",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\effe06fa10e501a52832436de038aba2858d44a9.c5ed0e9846cae65dd0382f7592aac1efecad304c.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md.c6e528c72eebb8bbb891f9a40b7ba7db8eb571b8.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md",
+      "XliffHash": "c6e528c72eebb8bbb891f9a40b7ba7db8eb571b8",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\3f5b90925924e9b624d0bfa93da8db665010dfc5.3bec01564ae90ae9e801291307c369beb301631a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md.ecba1088272cde4d3d631cc02950e11695594d4f.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md",
+      "XliffHash": "ecba1088272cde4d3d631cc02950e11695594d4f",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\8c5b7d17b5feffa07028498e8d7f201b25626478.504c8d38df192947d845c66fea54ff09ed6e8c70.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\copy-template.md.72d7778b701dfb2e55bffe8d877b1ba7d1d87552.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\copy-template.md",
+      "XliffHash": "72d7778b701dfb2e55bffe8d877b1ba7d1d87552",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\3013155f3eb9e39f28e2b172aed2f53ed8b13f8a.9b3a884a2bf2a4bf1a9c6ac0526205487490ee83.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\rms-for-individuals-identify-sign-up.md.9fc6b0a4d7f4c52c89cf1682da7a12d7ab55df75.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\rms-for-individuals-identify-sign-up.md",
+      "XliffHash": "9fc6b0a4d7f4c52c89cf1682da7a12d7ab55df75",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\70909cfa78800eabb798aec34264770104f7c47b.e660f43f4ab1d1b38552b1edb3fc45e47f388e26.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\configure-policy-change-label.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\configure-policy-change-label.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\3ccffc932572366e70363912dab733adf9a59476.d28a5b5c2ec2cf70ec441ad9bfcbbd083872e335.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\ios-os-x-code-examples.md.6bf92cb1e603097730e850b5382daebde5bc4219.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\ios-os-x-code-examples.md",
+      "XliffHash": "6bf92cb1e603097730e850b5382daebde5bc4219",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\ef311877b1deb71a62d3554e513ef6fdab443c28.9eb4d54b3c05fd917d3153e21ea0c69e8807b6a1.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md.feb09ae6584b702610c4c1139c5043a7c5fb83cd.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md",
+      "XliffHash": "feb09ae6584b702610c4c1139c5043a7c5fb83cd",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\6454401420c39e349bd48e86e9722414ca8006a7.010488d456ce2666151fa660d93aa4f1adfe407e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md.8c2c6d9b95e3b4b7d6c25803d431d2393f5d3410.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md",
+      "XliffHash": "8c2c6d9b95e3b4b7d6c25803d431d2393f5d3410",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\5972599c568091d39e8a6974648022c4835af1bb.d142db60c6cd3961c9c607cb068037427c5f7f2d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\usage-restriction-reference.md.6a21da8d09483e26b48235e2e43f4447c7e3bc41.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\usage-restriction-reference.md",
+      "XliffHash": "6a21da8d09483e26b48235e2e43f4447c7e3bc41",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\e9cc23d220408faf0e010debb1b6cab0c9dc58ba.38307d195d89dcfb2e83a567fc225534b3ac1d20.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-templates-with-powershell.md.0501bbb450e09d0bdfa5e68d4ef326acbc622ec1.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-templates-with-powershell.md",
+      "XliffHash": "0501bbb450e09d0bdfa5e68d4ef326acbc622ec1",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\ca3bd8d001fc033d35da83c420801d2fa1ed109f.972bc3b118ad7f81d60b28d5a843f3cdd849e318.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\deploy-rms-connector.md.2a8707353872d7df791c6d1a5e15a4a4d289d4c2.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\deploy-rms-connector.md",
+      "XliffHash": "2a8707353872d7df791c6d1a5e15a4a4d289d4c2",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\386453578a5ea8eeb874d7f27badb8f041dda659.db6ee7428196d95bf4d3098e87d387a1b7d19365.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\scenario-executives-email.md.7c58ce9b66bd00175a4c8fee0da61ae03b46e669.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\scenario-executives-email.md",
+      "XliffHash": "7c58ce9b66bd00175a4c8fee0da61ae03b46e669",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\8481c275609e74ff5e09a0397e0e3a0346aa4430.97c1fe4706ac71348c703b97f488b7ca5995df0e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-sharing-app.md.eaf2c454b4038d96f929f6695e391ac5caea859a.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-sharing-app.md",
+      "XliffHash": "eaf2c454b4038d96f929f6695e391ac5caea859a",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\68e953c927104cd1545e76d70ce5883a1f36e6c0.506dd978865c884de6733a0288ed82a7f9b56e74.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\how-to-use-adal-authentication-4-2.md.66cdce5e1a6cc3f4e74ed98356bb4c2e6e3e3b5d.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\how-to-use-adal-authentication-4-2.md",
+      "XliffHash": "66cdce5e1a6cc3f4e74ed98356bb4c2e6e3e3b5d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\eb9cea79d9e5a7902839d34d9b4f13bdefe5a5d3.8e1304cf8de3e0c190c1a619f92138ec799182f4.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\faqs-rms.md.eee47975e5fe0a69e7e1e746a1c853c789468ed2.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\faqs-rms.md",
+      "XliffHash": "eee47975e5fe0a69e7e1e746a1c853c789468ed2",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\c92e35b0cb9f892f7859511365027c241d0f1ef6.24f9086bef440b9a932dcab0250ab735048c43a3.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step4.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\infoprotect-tutorial-step4.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\d8168cad45c110ddfbdf4a11070aa4b5e9e9e3da.f38df9bd650f2bc17a4986333185e1c18bc4ab31.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md.428684812189d59af3cc5b56bb1ec940472aa97d.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md",
+      "XliffHash": "428684812189d59af3cc5b56bb1ec940472aa97d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\f86e712ee9d2df1e466ceaabcaa0890dca71da53.00c9c89190ff148c042c751794f8cff9419e21a6.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md.584de1ded34678fc22ceea6ee90deb6803586bea.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md",
+      "XliffHash": "584de1ded34678fc22ceea6ee90deb6803586bea",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\719077671664dda3102949609874c569a691bbb8.51a8027602d744f2331e1e5997157469973ef733.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-policy-markings.md.28d827753e75cc6ba69bc599a1055b89413f8369.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-policy-markings.md",
+      "XliffHash": "28d827753e75cc6ba69bc599a1055b89413f8369",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\6ebe6edc45009bc6301cf9374bce5b45b016c40a.64240d573df8d900994a25c0438074229244d2bd.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md.3893e833094760e241fd548f3c48ea95b7592358.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md",
+      "XliffHash": "3893e833094760e241fd548f3c48ea95b7592358",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\28b85313e278455391040797ea2886bd9247abe2.dd6139e1cb65c417703030cf444e8f8db11741dd.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\scenario-company-confidential-email.md.016ad0766f991291fc159abd5c73b4e14c481d4d.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\scenario-company-confidential-email.md",
+      "XliffHash": "016ad0766f991291fc159abd5c73b4e14c481d4d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\6ad18ba1035438af88f814689884f9873d75eea0.fbcbf334280026f1bc92d2701f7f788880220e54.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\developers-guide.md.d7d61e68469affea50fedacedb5d5d37414a8103.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\developers-guide.md",
+      "XliffHash": "d7d61e68469affea50fedacedb5d5d37414a8103",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\5010096d11524eb4f48fafcc6b2a5d85f48c8fe9.45980d7164ee0a8a79c966a0e09fc8b1d7b4b832.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\infoprotect-tutorial-step1.md.2ba5ca32cd34828cc627a31a92e90cd38b119fb3.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\infoprotect-tutorial-step1.md",
+      "XliffHash": "2ba5ca32cd34828cc627a31a92e90cd38b119fb3",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\9d7e7153b68920ec1812fb04267b09fdf9bde1f3.d3674654c32263107132f94ba06643b278acc06d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\understand-explore\\compliance.md.93ac65b8aa6d318110b2c313e72d8c59eb9949de.HT": {
+      "SourceFilename": "Azure-RMSDocs\\understand-explore\\compliance.md",
+      "XliffHash": "93ac65b8aa6d318110b2c313e72d8c59eb9949de",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\9311e0ee65baf6f3a0df963a5b29599f04d0c65e.a5b2214cff1b24bb3b5665a927e9954ac23639db.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\decommission-deactivate.md.c19fe168d1794abe4f864bc65226a1d6ec30941d.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\decommission-deactivate.md",
+      "XliffHash": "c19fe168d1794abe4f864bc65226a1d6ec30941d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\6339cd680c7e38ec883fb9bbf6462fec9822727f.e86fa832ed0aaa7bfa7033c659d9d2d58821f1da.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\overview.md.3a42c4f1a1ba29dbdb482068b8ac6db8ed597d6b.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\overview.md",
+      "XliffHash": "3a42c4f1a1ba29dbdb482068b8ac6db8ed597d6b",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\390281fbc0a68346ec1cb4b943ddc5919a53fea0.582320eaa23ef00b237818634130bf155075a53d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\get-started\\scenario-fci.md.f285de11e830a25f8ac2eda1424fe10e13081b13.HT": {
+      "SourceFilename": "Azure-RMSDocs\\get-started\\scenario-fci.md",
+      "XliffHash": "f285de11e830a25f8ac2eda1424fe10e13081b13",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\136cabfad5914fadf183e308c51b77e20f98ca4f.451182239ca37091570bfde89340dfbfc0078b9d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-windows.md.fa44c0e95e2e55d2cd7701d1f04ca7c6332ba88f.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-windows.md",
+      "XliffHash": "fa44c0e95e2e55d2cd7701d1f04ca7c6332ba88f",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\c57dba6e5fd0ff7a3114e2fa1144a70d542f9f3e.91b3cdf9db677f0ab3da704e03a844abc76c1021.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\api-reference-4-2.md.0fd0d958f308e0e01a01213bd55d91a68863ba89.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\api-reference-4-2.md",
+      "XliffHash": "0fd0d958f308e0e01a01213bd55d91a68863ba89",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\1def0824f32786e3a1112e18386ca88e0d1a6a03.53043d75f29d1e44aa771cd1295b54d5b7af1e4c.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-reprotect-files.md.9fcc2f386ea18d362503a35feddb441adbc4c0e6.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-reprotect-files.md",
+      "XliffHash": "9fcc2f386ea18d362503a35feddb441adbc4c0e6",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\041ebfc27b0b02b61dc1739102d9b6c6b09881fd.9ccfb62c6728d517da55a97cb289f3b1fa51da98.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md.2f08a1fe6893cef82f81edc5f6247eaa290079c9.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md",
+      "XliffHash": "2f08a1fe6893cef82f81edc5f6247eaa290079c9",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\28286a4c8a5fcc602afba5975cfe5133e8b6c55b.dc304cfb77dbb66a749df1914ec80146a476b851.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\information-protection\\configure-policy-markings.md.da39a3ee5e6b4b0d3255bfef95601890afd80709.HT": {
+      "SourceFilename": "Azure-RMSDocs\\information-protection\\configure-policy-markings.md",
+      "XliffHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\e1907a619d47730c57db74033f220847ff0618af.91d41c6ecb05e6a9d62009b65bbc593a98a43aca.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\configure-super-users.md.34e3ddff9f284f9b4191dddc4d180a8b5872995f.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\configure-super-users.md",
+      "XliffHash": "34e3ddff9f284f9b4191dddc4d180a8b5872995f",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\f1c5fb1b73fd9d1b1edd4183c1c6fdaa65083dbd.2bac25cf5c6644053d0f1cfe63629b4e4b529727.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\develop\\how-to-use-adal-authentication.md.6a39ef83f4951c3df17eaa84b6b7b2a0126cc783.HT": {
+      "SourceFilename": "Azure-RMSDocs\\develop\\how-to-use-adal-authentication.md",
+      "XliffHash": "6a39ef83f4951c3df17eaa84b6b7b2a0126cc783",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\5a33eef00f61ddd3569605aae5715c5818b64099.b19b47c762f4787ae900be687140acb03b4b9b99.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\deploy-use\\log-analyze-usage.md.99dba9801a4dc2535402e47b992a7c0025e6fdb6.HT": {
+      "SourceFilename": "Azure-RMSDocs\\deploy-use\\log-analyze-usage.md",
+      "XliffHash": "99dba9801a4dc2535402e47b992a7c0025e6fdb6",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\9dea728836d52249471d3dde69b63a9a2cd1467c.edeb9e76ec7cc49d05c637f8fef02878653e4d7e.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide-technical.md.6e083d2370ae30ff4ec68d792b1df1069d5c3e97.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide-technical.md",
+      "XliffHash": "6e083d2370ae30ff4ec68d792b1df1069d5c3e97",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\88b03e5e844e78db5dc8ac5f116d19899c5f354f.e46669243b88801525236e5bba6f8bb887953b59.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\sharing-app-protect-in-place.md.2b2d57ab240722b8d3db79dea619ad74eb291a3c.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\sharing-app-protect-in-place.md",
+      "XliffHash": "2b2d57ab240722b8d3db79dea619ad74eb291a3c",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\da65a908f4df4d41ab59bb28f48b3ed53c887d63.fc65dd282dae0b64aa825f4fe814bb4985bb2f2b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    }
+  }
+}
