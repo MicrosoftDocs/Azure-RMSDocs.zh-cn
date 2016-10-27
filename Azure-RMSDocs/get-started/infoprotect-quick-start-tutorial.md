@@ -3,15 +3,15 @@ title: "快速入门教程 | Azure 信息保护"
 description: "该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 30 分钟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: e67fe1e6b63be679ae62bb45359db98df59386da
-ms.openlocfilehash: 3022ef92a04351c76c370ed31b519425923cfa04
+ms.sourcegitcommit: 4f5f7670ce1897a6436e511057fc714c839a8f00
+ms.openlocfilehash: a8c4003d8dbae5d33712860cd1f665de234db5a0
 
 
 ---
@@ -29,8 +29,10 @@ ms.openlocfilehash: 3022ef92a04351c76c370ed31b519425923cfa04
 ## 先决条件 
 若要完成本教程，你需要满足以下先决条件：
 
-- 包含关于分类、设置标签和保护的 Azure 信息保护的订阅。 本教程包括一些高级的功能，例如根据用户建议自动化数据分类和文档跟踪站点。 请确保你的订阅支持这些功能。 有关详细信息，请参阅 Azure 信息保护[定价页](https://go.microsoft.com/fwlink/?LinkId=827589)中的订阅信息。
-
+- 包含关于分类、设置标签和保护的 Azure 信息保护的订阅。 本教程包括一些高级的功能，例如根据用户建议自动化数据分类和文档跟踪站点。 请确保你的订阅支持这些功能。 有关详细信息，请参阅 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。
+    
+    如果你的订阅不具备这些功能，可注册[企业移动性 + 安全性 E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7) 的免费试用版。
+    
 - 具有 Azure 订阅，以便你可以访问 Azure 门户以配置 Azure 信息保护策略。 如果你的组织还没有 Azure 订阅，则可以通过注册免费试用版来获取订阅：转到 [Azure 入门](https://account.windowsazure.com/organization)页并按照说明进行操作。
 
   > [!TIP] 
@@ -49,6 +51,6 @@ ms.openlocfilehash: 3022ef92a04351c76c370ed31b519425923cfa04
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "如何从 Office 365 管理中心预览版激活 Azure Rights Management
 description: "有关具有 Office 365 管理中心新预览版（Office 365 管理中心预览）访问权限时的 Azure Rights Management 服务激活说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
-ms.openlocfilehash: 9f6df7542a96fc04873eff452db4e7b5606e989e
+ms.sourcegitcommit: 565f2479fe1d41aa051dd64752413eb72d644535
+ms.openlocfilehash: ca1547a6ff00b7100cd52c34938bf6e088085f8a
 
 
 ---
@@ -41,9 +41,9 @@ ms.openlocfilehash: 9f6df7542a96fc04873eff452db4e7b5606e989e
     - 搜索：在“开始”页面上的搜索框中，键入“权限管理”，然后在搜索结果中单击“Microsoft Azure 权限管理设置”。
 
         > [!NOTE]
-        >如果到此选项，那么根据你的显示器，可能需要进行滚动才能看到此选项。 但如果页面上未列出此选项，并且搜索结果中未返回此选项，则可能是因为你的服务计划或产品版本不包括 Azure 信息保护的 Azure Rights Management 服务。
+        >如果到此选项，那么根据你的显示器，可能需要进行滚动才能看到此选项。 但如果页面上未列出此选项，并且搜索结果中未返回此选项，则可能是因为你的服务计划不包括 Azure 信息保护的 Azure 权限管理服务。
         >
-        >使用[订阅信息](https://go.microsoft.com/fwlink/?LinkId=827589)确认你的订阅包括 Azure Rights Management。 若要获取有关此问题的帮助，请发送电子邮件至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
+        >若要激活 Azure 权限管理服务，必须拥有 [Azure Information Protection Premium plan](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)（Azure 信息保护高级计划）或 [Office 365 plan that includes Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)（包含权限管理的 Office 365 计划）。 若要获取有关此问题的帮助，请发送电子邮件至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
 
 4. 在“Rights Management”页上，单击“激活”。
 
@@ -58,6 +58,6 @@ ms.openlocfilehash: 9f6df7542a96fc04873eff452db4e7b5606e989e
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

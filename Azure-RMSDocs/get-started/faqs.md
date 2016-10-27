@@ -3,7 +3,7 @@ title: "Azure 信息保护的常见问题 | Azure 信息保护"
 description: "有关 Azure 信息保护及其数据保护服务 Azure Rights Management (Azure RMS) 的一些常见问题。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1279e6f2420711f921a8ccae256a80d619e8566
-ms.openlocfilehash: ef4bcd4d4cadc760763d193e082b2faa99b1b2ce
+ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
+ms.openlocfilehash: d869514a126302522030cfb395b49112c48442dc
 
 
 ---
@@ -31,7 +31,9 @@ ms.openlocfilehash: ef4bcd4d4cadc760763d193e082b2faa99b1b2ce
 Azure 信息保护对组织的文档和电子邮件进行分类、标记和保护。 该保护技术使用 Azure Rights Management 服务；现在该服务是 Azure 信息保护的一个组件。
 
 ## 需要为 Azure 信息保护准备哪个订阅，以及它包括哪些功能？
-请参阅 Azure 信息保护[定价页](https://go.microsoft.com/fwlink/?LinkId=827589)中的订阅信息。
+请参阅 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。 
+
+如果你的 Office 365 订阅包含权限管理，请从“功能”页下载 [Azure 信息保护授权数据表](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
 
 ## 听说很快将发布新版 Azure 信息保护 — 何时发布？
 
@@ -49,7 +51,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 - [数据保护的常见问题](faqs-rms.md)
 
-如果问题没有回复，请使用 [Azure Rights Management 的信息和支持](information-support.md)中列出的链接和资源。
+如果问题没有回复，请使用 [Azure 信息保护的信息和支持](information-support.md)中列出的链接和资源。
 
 此外，我们还为最终用户制作了常见问题解答：
 
@@ -65,6 +67,6 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

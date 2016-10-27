@@ -1,9 +1,9 @@
 ---
-title: "从 AD RMS 迁移到 Azure Rights Management - 阶段 2 | Azure 信息保护"
+title: "从 AD RMS 迁移到 Azure 信息保护 - 阶段 2 | Azure 信息保护"
 description: "从 AD RMS 迁移到 Azure 信息保护的阶段 2 涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 5。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f9a7ceee318fee5414e02af7927256e74800a16
-ms.openlocfilehash: 113636139f0ff6e47a5b5c0467dfe8616c641e04
+ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
+ms.openlocfilehash: c10e8b46fae2158e561421e8e5090d0cd9edbb83
 
 
 ---
@@ -131,6 +131,6 @@ Redirect_OnPrem.cmd：
 要继续迁移，请转到[阶段 3 - 支持复制配置](migrate-from-ad-rms-phase3.md)。
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

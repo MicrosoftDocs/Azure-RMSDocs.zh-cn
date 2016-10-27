@@ -3,7 +3,7 @@ title: "Azure 信息保护的管理员信息和支持 | Azure 信息保护"
 description: "管理员资源，其中包括有关新版本、支持选项以及如何与 Microsoft 联系以报告问题的信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2016
+ms.date: 10/04/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40fadcda8a92b3427f46183a5e13e5ea5f689930
-ms.openlocfilehash: 9d8a711e43cf9e8003ebc4e1c87d4e1e996ddeb2
+ms.sourcegitcommit: 13579b8cb5516a1d7390db81957c140b8e980982
+ms.openlocfilehash: 1ca9b1d4b3af81a892e001c639ad79ac931233be
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 9d8a711e43cf9e8003ebc4e1c87d4e1e996ddeb2
 |… 请参阅该服务的推荐文档 →|使用 [Azure 信息保护文档](https://docs.microsoft.com/information-protection/)起始页。|
 |… 提供有关文档的反馈或咨询有关文档的问题 →|发送电子邮件至 [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
 |… 接收有关信息保护的推文，以及来自产品组的关于文档更新的公告 →|关注帮助领导 Microsoft 信息保护团队的 Dan Plastina 的动态。 参阅 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)|
-|… 检查订阅信息和支持的功能 →|使用 Azure 信息保护站点上的[定价页](https://go.microsoft.com/fwlink/?LinkId=827589)。|
+|… 检查订阅信息和支持的功能 →|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
 
 
 ## 有关新版本的信息
@@ -88,6 +88,6 @@ ms.openlocfilehash: 9d8a711e43cf9e8003ebc4e1c87d4e1e996ddeb2
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

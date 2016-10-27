@@ -3,7 +3,7 @@ title: "创建、配置和发布自定义模板 | Azure 信息保护"
 description: "有关在 Azure 经典门户中创建和管理自定义模板的说明。 模板可使最终用户和其他管理员轻松地应用可保护文档和电子邮件的合适策略。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
+ms.sourcegitcommit: d205e63bdd8819177493837296259c5400a76503
+ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
 
 
 ---
@@ -70,9 +70,11 @@ ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
 
         如果你在按照 Office 365 的说明进行操作后没有立刻看到此页，请按上面的 Azure 经典门户导航说明进行操作。
 
-3.  在“添加新的权限策略模板”页上，选择输入用户将看到的模板名称和说明所用的语言（你可以随后添加更多语言）  。 然后键入唯一名称和说明，并单击“完成”按钮。
+3. 在“添加新的权限策略模板”页上，选择输入用户将看到的模板名称和说明所用的语言（你可以随后添加更多语言）  。 然后键入唯一名称和说明，并单击“完成”按钮。
 
-在“开始使用 Rights Management”快速启动页中，现在可单击“管理你的权限策略模板”。 你将看到新创建的模板已添加到模板列表中，其状态为“已存档” 。 在这个阶段，模板已创建但尚未配置，对用户是不可见的。
+    不要在模板名称或描述中包含冒号或分号。 并非所有使用权限管理模板的服务和应用程序都支持将这些字符用于这些模板。 在此方案中，这些服务和应用程序可能无法检索或使用这些 Azure 权限管理模板。
+
+4. 在“开始使用 Rights Management”快速启动页中，现在可单击“管理你的权限策略模板”。 你将看到新创建的模板已添加到模板列表中，其状态为“已存档” 。 在这个阶段，模板已创建但尚未配置，对用户是不可见的。
 
 ## 配置和发布自定义模板
 
@@ -166,6 +168,6 @@ ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

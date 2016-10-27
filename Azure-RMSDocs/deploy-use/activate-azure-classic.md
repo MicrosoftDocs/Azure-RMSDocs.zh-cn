@@ -12,8 +12,8 @@ ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
-ms.openlocfilehash: a553ea57bd4b396b7629dc24aea9f76b4a2a5e5a
+ms.sourcegitcommit: 565f2479fe1d41aa051dd64752413eb72d644535
+ms.openlocfilehash: 74aac58a7b523f98ef627831830577d4fde7d5af
 
 
 ---
@@ -39,7 +39,7 @@ ms.openlocfilehash: a553ea57bd4b396b7629dc24aea9f76b4a2a5e5a
     > [!NOTE]
     >如果看到激活错误，则原因可能是你的服务计划或产品版本不包括 Azure 信息保护的 Azure Rights Management 服务。
     >
-    >使用[订阅信息](https://go.microsoft.com/fwlink/?LinkId=827589)确认你的订阅包括 Azure Rights Management。 若要获取有关此问题的帮助，请发送电子邮件至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
+    >若要激活 Azure 权限管理服务，必须拥有 [Azure Information Protection Premium plan](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)（Azure 信息保护高级计划）或 [Office 365 plan that includes Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)（包含权限管理的 Office 365 计划）。 若要获取有关此问题的帮助，请发送电子邮件至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
 
 
 **“权限管理状态”** 现在应该显示 **“活动”** ，而 **“激活”** 选项将替换为 **“停用”**。
@@ -58,6 +58,6 @@ ms.openlocfilehash: a553ea57bd4b396b7629dc24aea9f76b4a2a5e5a
 返回 [激活 Azure Rights Management](activate-service.md)。
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

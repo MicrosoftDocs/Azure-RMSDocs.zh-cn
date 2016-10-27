@@ -78,7 +78,7 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 
 [Windows Phone 开发](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx)
 
-[Windows API 参考](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+[Windows API 参考](https://msdn.microsoft.com/library/dn891914.aspx)
 
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 

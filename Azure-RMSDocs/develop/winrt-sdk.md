@@ -82,7 +82,7 @@ Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2
 
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 
-[Windows API 参考](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+[Windows API 参考](https://msdn.microsoft.com/library/dn891914.aspx)
 
 
 

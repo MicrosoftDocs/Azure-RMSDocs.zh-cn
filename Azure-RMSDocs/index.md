@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 translationtype: Human Translation
-ms.sourcegitcommit: a27383017cd5df1df370d31daea7d85dca4656e8
-ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
+ms.sourcegitcommit: cd24268839fac6c42a3214e5e1bb012f61b5ffff
+ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
 
 
 ---
@@ -226,6 +226,6 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

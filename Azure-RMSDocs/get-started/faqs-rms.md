@@ -3,7 +3,7 @@ title: "Azure 信息保护中数据保护服务 Azure Rights Management 的常�
 description: "有关 Azure 信息保护中数据保护服务 Azure Rights Management (Azure RMS) 的一些常见问题。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad2d3d7962ab8f8422f4682e4ecd24a7cff3b239
-ms.openlocfilehash: 1840954addbf7b3ad603c05b0c55f8bf99ccacfb
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: 114dfd2a0f19205432771b5dc17ddcb60f7ec44b
 
 
 ---
@@ -85,7 +85,7 @@ Azure Rights Management 服务始终使用 Azure Active Directory 帐户和关�
 
 -   **使用权限定义对象创建或更新模板**。    在权限定义对象中指定外部电子邮件地址及其权限，然后你将使用该地址创建或更新模板。 指定权限定义对象时，可使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) cmdlet 来创建一个变量，然后将该变量提供给 -RightsDefinition 参数，并可使用 [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx) cmdlet（如果是新模板）或 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) cmdlet（如果需要修改现有模板）。 但是，如果你是将这些用户添加到现有模板中，则需要在模板中为现有组定义权限定义对象，不仅仅只需为外部用户进行此类操作。
 
-有关自定义模板的详细信息，请参阅[为 Azure Rights Management 配置自定义模板](../deploy-use/configure-custom-templates.md)。
+有关自定义模板的详细信息，请参阅[为 Azure 权限管理服务配置自定义模板](../deploy-use/configure-custom-templates.md)。
 
 ## Azure RMS 是否适用于 Azure AD 中的动态组？
 Azure AD Premium 功能可让你通过指定[基于属性的规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)为组配置动态成员资格。 在 Azure AD 中创建安全组时，该组类型支持动态成员资格，但不支持电子邮件地址，因此不能用于Azure Rights Management 服务。 但是，现在可以在 Azure AD 中创建支持动态成员身份并启用了邮件的新组类型。 当在 Azure 经典门户中添加新组时，你可以选择 **Office 365“预览版”**的**组类型**。 由于此组启用了邮件，可以将其用于 Azure Rights Management 保护。
@@ -145,6 +145,6 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
