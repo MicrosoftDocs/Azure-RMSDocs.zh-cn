@@ -4,7 +4,7 @@ description:
 keywords: "一些常见问题，帮助你使用适用于 iOS 和 Android 的 Azure 信息保护应用"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac04af3b503bb7bb1d3c9f4bcee4aff163d73314
-ms.openlocfilehash: 42368b8ee50acf09c6af45182ace1f159a4e5f02
+ms.sourcegitcommit: fd11b55ec8ee11f594c33a5a46694d83b2db6953
+ms.openlocfilehash: ff2b28d9774682abbe77b484b097ea51709a3234
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 42368b8ee50acf09c6af45182ace1f159a4e5f02
 
 ## 可以使用 Azure 信息保护应用做些什么？
 
-此应用可允许查看（但不创建新的或答复）受权限保护的电子邮件消息（.rpmsg 文件）。 此应用还可允许查看（但不创建新的或编辑）受权限保护的 PDF 文件、图片、文本文件和以 .pfile 格式进行保护的任何其他文件格式。 
+此应用可允许查看受权限保护的电子邮件（.rpmsg 文件）。 此应用还可允许查看受权限保护的 PDF 文件、图片、文本文件和以 .pfile 格式进行保护的任何其他文件格式。 目前，无法使用此应用创建新的受保护电子邮件、对其进行答复、创建或编辑受保护文件。
 
 ## 可以打开位于受保护的 SharePoint 库和 OneDrive For Business 中的 PDF 文件吗？
 
@@ -64,6 +64,6 @@ ms.openlocfilehash: 42368b8ee50acf09c6af45182ace1f159a4e5f02
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

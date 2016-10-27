@@ -3,7 +3,7 @@ title: "用户如何注册个人 RMS | Azure 信息保护"
 description: "此免费帐户的注册说明以及此过程工作原理的技术信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
 
 
 ---
@@ -83,7 +83,7 @@ ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
 
     -   对公司拥有的数据执行电子发现，如果需要，还可解密使用权限管理保护的文件。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)。
 
-    -   记录在组织中使用的所有权限管理活动。 这是一项非常强大的功能，因为你不仅能够监视哪些文件受到保护，哪些用户成功访问了那些受保护文件，还能够识别试图访问受保护文件的未授权用户的潜在可疑行为。 有关详细信息，请参阅[记录和分析 Azure Rights Management 使用情况](../deploy-use/log-analyze-usage.md)。
+    -   记录在组织中使用的所有权限管理活动。 这是一项非常强大的功能，因为你不仅能够监视哪些文件受到保护，哪些用户成功访问了那些受保护文件，还能够识别试图访问受保护文件的未授权用户的潜在可疑行为。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
 
     -   如果这些 [Azure RMS 订阅](https://technet.microsoft.com/dn858608)支持这些功能，请提供用户跟踪和撤销其受保护的文档的功能。 有关详细信息，请参阅 [RMS 共享应用程序用户指南](../rms-client/sharing-app-user-guide.md)中的[跟踪和撤消文件](../rms-client/sharing-app-track-revoke.md)。
 
@@ -97,6 +97,6 @@ ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

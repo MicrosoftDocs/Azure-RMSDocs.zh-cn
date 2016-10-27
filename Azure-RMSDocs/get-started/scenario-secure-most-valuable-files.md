@@ -3,7 +3,7 @@ title: "方案 - 保护最重要的（几个）文件 | Azure 信息保护"
 description: "此方案和支持性的用户文档使用 Azure Rights Management 手动并自定义保护你已标识为最重要的几个文件，这保证了对文件提供最高级别的保护以阻止未经授权的访问。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
-ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
+ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
+ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 
 
 ---
@@ -53,7 +53,7 @@ ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
 |已按下文所述配置了自定义模板|[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)|
 |将 Rights Management 共享应用程序部署到 Windows 计算机中，以便你就地保护这些文件，如下一部分所述|[下载和安装 Rights Management 共享应用程序](../rms-client/install-sharing-app.md)|
 |已授权的用户具有最低版本 Office 2013|如果用户安装的是 Office 2010，则还需安装 Rights Management 共享应用程序。|
-|Azure RMS 订阅包括文档跟踪|如果 Azure RMS 订阅不包括文档跟踪和撤销功能，则将无法使用文档跟踪站点以查看访问这些文档的人员，并根据需要撤销访问权限。 在这种情况下，可以选择购买支持文档跟踪的订阅，或者接受此限制条件。 还可以考虑使用 Azure RMS 的[使用日志记录](../deploy-use/log-analyze-usage.md)功能，这可以提供信息（如访问过每个文件的人员及访问时间），以帮助检测潜在的可疑行为。<br /><br />请查看 Azure 信息保护[定价页](https://go.microsoft.com/fwlink/?LinkId=827589)中的订阅信息。|
+|你的 Azure 信息保护订阅包括文档跟踪|如果订阅不包括文档跟踪和撤销功能，则将无法使用文档跟踪站点以查看访问这些文档的人员，也无法根据需要撤销访问权限。 在这种情况下，可以选择购买支持文档跟踪的订阅，或者接受此限制条件。 还可以考虑使用 Azure 权限管理服务的[使用日志记录](../deploy-use/log-analyze-usage.md)功能，它可以提供信息（如访问过每个文件的人员及访问时间），以帮助检测潜在的可疑行为。<br /><br />查看 Azure 信息保护网站上的[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
 
 ### 配置自定义模板
 
@@ -147,6 +147,6 @@ ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "管理员和用户将看到什么？ | Azure 信息保护"
 description: "可看到管理员和用户如何查看并使用 Azure Rights Management (Azure RMS) 技术来帮助保护敏感或机密信息的一些典型示例。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: d1f7b24861848f536a80a8b8889a44b41049e40b
+ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
+ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
 
 
 ---
@@ -73,9 +73,9 @@ ms.openlocfilehash: d1f7b24861848f536a80a8b8889a44b41049e40b
 
 **有关此方案的详细信息：**
 
-- 有关分步说明，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md) 和[为 Azure Rights Management 配置自定义模板](../deploy-use/configure-custom-templates.md)。
+- 有关分步说明，请参阅[激活 Azure 权限管理](../deploy-use/activate-service.md)和[为 Azure 权限管理服务配置自定义模板](../deploy-use/configure-custom-templates.md)。
 
-- 若要帮助用户保护重要的公司文件，请参阅[通过使用 Azure Rights Management 帮助用户保护文件](../deploy-use/help-users.md)。
+- 若要帮助用户保护重要的公司文件，请参阅[通过使用 Azure 权限管理服务帮助用户保护文件](../deploy-use/help-users.md)。
 
 接下来，请参阅管理员如何应用模板以自动为文件和电子邮件配置信息保护的一些示例。
 
@@ -149,7 +149,7 @@ ms.openlocfilehash: d1f7b24861848f536a80a8b8889a44b41049e40b
 
 **有关此方案的详细信息：**
 
--   有关如何配合 Exchange Online 使用 Azure RMS 的详细信息，请参阅[应用程序如何支持 Azure Rights Management](applications-support.md) 中的 [Exchange Online 和 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) 部分。
+-   有关 Azure RMS 如何与 Exchange Online 配合使用的详细信息，请参阅[应用程序如何支持 Azure 权限管理服务](applications-support.md)中的 [Exchange Online 和 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) 部分。
 
 -   有关为 Azure RMS 配置 Exchange Online 的分步说明，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)中的 [Exchange Online：IRM 配置](../deploy-use/configure-office365.md#exchange-online-irm-configuration)。
 
@@ -183,7 +183,7 @@ ms.openlocfilehash: d1f7b24861848f536a80a8b8889a44b41049e40b
 
 **有关此方案的详细信息：**
 
--   有关 Azure RMS 如何适用于 SharePoint 的详细信息，请参阅[应用程序如何支持 Azure Rights Management](applications-support.md) 中的 [SharePoint Online 和 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 部分。
+-   有关 Azure RMS 如何与 SharePoint 配合使用的详细信息，请参阅[应用程序如何支持 Azure 权限管理服务](applications-support.md)中的 [SharePoint Online 和 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 部分。
 
 -   有关为 Azure RMS 配置 SharePoint 的分步说明，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)中的 [SharePoint Online 和 OneDrive for Business：IRM 配置](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)部分。
 
@@ -241,6 +241,6 @@ Alice 想要将 Bob 限制为只能查看和编辑该文档，而不想让他复
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

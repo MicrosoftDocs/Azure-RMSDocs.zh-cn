@@ -10,8 +10,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: c1279e6f2420711f921a8ccae256a80d619e8566
-ms.openlocfilehash: 5891dfa423bb5e0b9871bc60a31572ed4f89a7c7
+ms.sourcegitcommit: 590f12e0c6c6122a6bc0a559940870c18f0e2d39
+ms.openlocfilehash: 350a3cb877674208b4c560bb841135904aee1136
 
 
 ---
@@ -74,7 +74,9 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 ## Azure 信息保护的资源
 
-- 预览公告：[Azure 信息保护 – 现在可以使用公共预览版了！](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/12/azure-information-protection-public-preview-available-now/)
+- 公告：[Azure 信息保护现已推出正式版](https://blogs.technet.microsoft.com/enterprisemobility/2016/10/04/azure-information-protection-is-now-generally-available/)
+
+- 免费试用版：[企业移动性 + 安全性 E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)
 
 - 下载客户端：[Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
 
@@ -94,6 +96,6 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 通过其他名称了解 Azure 信息保护或 Azure Rights Management？ 请参阅[该服务的替代术语列表](azure-rms-aka.md)。
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "Azure 信息保护部署路线图 | Azure 信息保护"
 description: "使用这些步骤，为组织准备、实施和管理 Azure 信息保护。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1c99af9b39a2200c587390552d1b69716bcc0324
-ms.openlocfilehash: c971f92732f34800137e19cb43c08d9693834093
+ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
+ms.openlocfilehash: ff205efebf9b02ed0bfb1c7e275d34981870c26a
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: c971f92732f34800137e19cb43c08d9693834093
 > [!IMPORTANT]
 > 在执行以下步骤之前，请确保已查看 [Azure 信息保护的要求](../get-started/requirements-azure-rms.md)。
 
-选择适用于组织并与所需功能和特性的[订阅](http://go.microsoft.com/fwlink/?LinkId=827589)相匹配的部署路线图：
+选择适用于组织，并与所需[订阅功能和特性](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)相匹配的部署路线图：
 
 - [使用分类、标记和保护](#deployment-roadmap-for-classification-labeling-and-protection)
 
@@ -42,7 +42,7 @@ ms.openlocfilehash: c971f92732f34800137e19cb43c08d9693834093
 > 已使用 Azure Rights Management 服务进行数据保护？ 可以跳过这些步骤中的许多步骤，重点关注步骤 3 和步骤 5 1。
 
 ### 步骤 1：确认订阅，分配用户许可证
-从 Azure 信息保护[定价页](https://go.microsoft.com/fwlink/?LinkId=827589)查看订阅信息，以确认组织具有所需功能和特性的订阅。 然后，将该订阅中的许可证分配给组织中的每位用户，这些用户将对文档和电子邮件进行分类、标记和保护。
+查看 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)，以确认组织具有包含所需功能和特性的订阅。 然后，将该订阅中的许可证分配给组织中的每位用户，这些用户将对文档和电子邮件进行分类、标记和保护。
 
 ### 步骤 2：准备租户帐户以使用 Azure 信息保护
 开始使用 Azure 信息保护之前，请执行以下准备工作：
@@ -85,9 +85,9 @@ ms.openlocfilehash: c971f92732f34800137e19cb43c08d9693834093
 
 （可选）考虑进行以下配置：
 
--   自定义模板，前提是默认权限策略模式不足以满足你组织的要求。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[为 Azure Rights Management 配置自定义模板](../deploy-use/configure-custom-templates.md)。
+-   自定义模板，前提是默认权限策略模式不足以满足你组织的要求。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[为 Azure 权限管理服务配置自定义模板](../deploy-use/configure-custom-templates.md)。
 
--   使用日志记录，以便你能够监控你组织使用权限管理的情况。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[记录和分析 Azure Rights Management 使用情况](../deploy-use/log-analyze-usage.md)。
+-   使用日志记录，以便你能够监控你组织使用权限管理的情况。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
 
 ### 步骤 5：配置 Azure 信息保护策略、Rights Management 数据保护的应用程序和服务
 
@@ -116,7 +116,7 @@ ms.openlocfilehash: c971f92732f34800137e19cb43c08d9693834093
     如果你拥有想要与 Azure Rights Management 服务共同使用的本地服务，请安装和配置 Rights Management 连接器。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。
 
 ### 步骤 4：使用和监视数据保护解决方案
-现在，你可以保护数据，并记录公司如何使用 Rights Management。 有关支持此部署阶段的其他信息，请参阅[使用Azure Rights Management 帮助用户保护文件](../deploy-use/help-users.md)和[记录和分析 Azure Rights Management 使用情况](../deploy-use/log-analyze-usage.md)。
+现在，你可以保护数据，并记录公司如何使用 Rights Management。 有关支持此部署阶段的其他信息，请参阅[通过使用 Azure 权限管理服务帮助用户保护文件](../deploy-use/help-users.md)和[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
 
 如果你对在基于 Windows 的文件服务器上使用文件分类基础结构自动保护文件感兴趣，请参阅[使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护](../rms-client/configure-fci.md)。
 
@@ -127,26 +127,26 @@ ms.openlocfilehash: c971f92732f34800137e19cb43c08d9693834093
 ## 仅用于数据保护的部署路线图
 
 ### 步骤 1：确认你有一个包含 Azure Rights Management 的订阅
-从 Azure 信息保护[定价页](https://go.microsoft.com/fwlink/?LinkId=827589)查看订阅信息，以确认组织具有所需功能和特性的订阅。 然后，将该订阅中的许可证分配给组织中的每位用户，这些用户通过使用 Azure Rights Management 服务，保护文档和电子邮件。
+查看 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)，以确认组织具有包含所需功能和特性的订阅。 然后，将该订阅中的许可证分配给组织中的每位用户，这些用户通过使用 Azure Rights Management 服务，保护文档和电子邮件。
 
 ### 步骤 2：准备租户帐户以便使用 Azure Rights Management 服务
 开始使用[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]之前，请进行以下准备工作：
 
 1.  确保 Office 365 租户包含 Azure 信息保护用来对组织中的用户进行身份验证的用户帐户和组。 如有必要，请创建这些帐户和组，或者从本地目录同步这些帐户和组。 有关详细信息，请参阅[准备 Azure Rights Management](prepare.md)。
 
-2. 决定你是希望 Microsoft 管理你的租户密钥（默认设置），还是自行生成和管理你的租户密钥（也称为“自带密钥”，简称 BYOK）。 请注意，如果你当前使用了 Exchange Online，则不能使用 BYOK。 有关详细信息，请参阅[计划和实施你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md)。
+2. 决定你是希望 Microsoft 管理你的租户密钥（默认设置），还是自行生成和管理你的租户密钥（也称为“自带密钥”，简称 BYOK）。 请注意，如果你当前使用了 Exchange Online，则不能使用 BYOK。 有关详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](plan-implement-tenant-key.md)。
 
 3. 至少在一台可以访问 Internet 的计算机上安装适用于 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]的 Windows PowerShell 模块。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
 
-4. 如果你当前正在使用本地 Rights Management Services：请执行移动密钥、模板和 URL 到云中的迁移操作。 有关详细信息，请参阅[从 AD RMS 迁移到 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md)。
+4. 如果你当前正在使用本地 Rights Management Services：请执行移动密钥、模板和 URL 到云中的迁移操作。 有关详细信息，请参阅[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)。
 
 5. 激活权限管理，然后即可使用该服务。 如果需要分阶段部署，请配置用户载入控件以将其使用限于特定用户。 有关详细信息，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md)。
 
 （可选）考虑进行以下配置：
 
--   自定义模板，前提是默认权限策略模式不足以满足你组织的要求。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[为 Azure Rights Management 配置自定义模板](../deploy-use/configure-custom-templates.md)。
+-   自定义模板，前提是默认权限策略模式不足以满足你组织的要求。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[为 Azure 权限管理服务配置自定义模板](../deploy-use/configure-custom-templates.md)。
 
--   使用日志记录，以便你能够监控你组织使用权限管理的情况。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[记录和分析 Azure Rights Management 使用情况](../deploy-use/log-analyze-usage.md)。
+-   使用日志记录，以便你能够监控你组织使用权限管理的情况。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
 
 ### 步骤 3：配置要运行 Rights Management 的应用程序和服务
 
@@ -172,7 +172,7 @@ ms.openlocfilehash: c971f92732f34800137e19cb43c08d9693834093
 
 
 ### 步骤 4：使用和监视数据保护解决方案
-现在，你可以保护数据，并记录公司如何使用 Rights Management。 有关支持此部署阶段的其他信息，请参阅[使用Azure Rights Management 帮助用户保护文件](../deploy-use/help-users.md)和[记录和分析 Azure Rights Management 使用情况](../deploy-use/log-analyze-usage.md)。
+现在，你可以保护数据，并记录公司如何使用 Rights Management。 有关支持此部署阶段的其他信息，请参阅[通过使用 Azure 权限管理服务帮助用户保护文件](../deploy-use/help-users.md)和[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
 
 如果你对在基于 Windows 的文件服务器上使用文件分类基础结构自动保护文件感兴趣，请参阅[使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护](../rms-client/configure-fci.md)。
 
@@ -183,6 +183,6 @@ ms.openlocfilehash: c971f92732f34800137e19cb43c08d9693834093
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
