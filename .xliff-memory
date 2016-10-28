@@ -2139,6 +2139,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\dfe2bcc409079487d8e7544b91aa668b54b807ba.1466dc5d0479d1975565f27bdd20a2e656c0824a.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\client-deployment-notes.md.966f25889f9dd78a47e97ceef98eae542b2597ae.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\client-deployment-notes.md",
+      "XliffHash": "966f25889f9dd78a47e97ceef98eae542b2597ae",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\673c699422489b313dd03d70dbebe80dc295307a.665323fe8d431aa2958c94a9ab1ff0eb369aa1f6.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
