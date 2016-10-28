@@ -896,11 +896,17 @@
   "75cce1d0e5a1cff0d4f6609d0f084fda1af62951": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase3.md"
   ],
+  "238cc238e62db4a74ce2b10e0e68803cc66b718f": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
+  ],
   "f86e712ee9d2df1e466ceaabcaa0890dca71da53": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
   ],
   "7ed3569475362272ace055862fe8bb3ee072036a": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
+  ],
+  "49c65779e5651f25082369822b60b09435c41041": [
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
   ],
   "ebd49fdaa6c4222d0c2358f81066ef34f0aab0a8": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
@@ -940,6 +946,9 @@
   ],
   "55f092ede1f003c700cb58359bab264772702c39": [
     "Azure-RMSDocs\\plan-design\\prepare.md"
+  ],
+  "dfe2bcc409079487d8e7544b91aa668b54b807ba": [
+    "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
   ],
   "38bd495019632693e2a9757769d54a846084ba2b": [
     "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
@@ -1357,6 +1366,9 @@
   ],
   "89231c73fba9ea1c8596c0e3dd687a79d5d424b2": [
     "Azure-RMSDocs\\information-protection\\what-is-information-protection-oldpreview.md"
+  ],
+  "ff6573042941640d1cca82d68e85f09c82e3c77b": [
+    "Azure-RMSDocs\\rms-client\\client-version-release-history.md"
   ],
   "fdded832dd84d0c05ec982415414681c0a05606b": [
     "Azure-RMSDocs\\rms-client\\client-version-release-history.md"

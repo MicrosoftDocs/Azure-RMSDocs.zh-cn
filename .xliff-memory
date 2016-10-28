@@ -2099,6 +2099,46 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\da65a908f4df4d41ab59bb28f48b3ed53c887d63.fc65dd282dae0b64aa825f4fe814bb4985bb2f2b.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md.56d13264d6ff14ae92589a9d856a8b3018c1bc25.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md",
+      "XliffHash": "56d13264d6ff14ae92589a9d856a8b3018c1bc25",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\238cc238e62db4a74ce2b10e0e68803cc66b718f.53ef571061bdbc11eca2e2db1fa737126ef130e6.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\client-version-release-history.md.111f99ba470b93488f7178c59f390df99a9efa0b.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\client-version-release-history.md",
+      "XliffHash": "111f99ba470b93488f7178c59f390df99a9efa0b",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\ff6573042941640d1cca82d68e85f09c82e3c77b.5fab9c2ff583f6e164cd6fbfce1a7edb1d0d40cd.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md.5bee4122eacb1275ba21376d911be921579d1b93.HT": {
+      "SourceFilename": "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md",
+      "XliffHash": "5bee4122eacb1275ba21376d911be921579d1b93",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\49c65779e5651f25082369822b60b09435c41041.9d532796773ff7972d17b5f321be0000898bf89f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "Azure-RMSDocs\\rms-client\\client-deployment-notes.md.3febf2f30ab3a2f8f2ab1792e80622269e0913f7.HT": {
+      "SourceFilename": "Azure-RMSDocs\\rms-client\\client-deployment-notes.md",
+      "XliffHash": "3febf2f30ab3a2f8f2ab1792e80622269e0913f7",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\Azure-RMSDocs-pr.zh-cn\\live\\dfe2bcc409079487d8e7544b91aa668b54b807ba.1466dc5d0479d1975565f27bdd20a2e656c0824a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }
