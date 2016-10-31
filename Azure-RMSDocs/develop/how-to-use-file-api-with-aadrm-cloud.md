@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 1e95ce00c96fb0ee0d53ce4865a566a00cf62076
+ms.sourcegitcommit: 7df62371ba4a2eea0227c731cf90b3454993f533
+ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
 
 ---
@@ -34,8 +34,8 @@ ms.openlocfilehash: 1e95ce00c96fb0ee0d53ce4865a566a00cf62076
 
 ## 连接到 Azure 权限管理服务
 
--   调用 [**IpcInitialize**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)。
--   设置 [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)。
+-   调用 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)。
+-   设置 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)。
 
         C++
         int mode = IPC_API_MODE_SERVER;
@@ -45,10 +45,10 @@ ms.openlocfilehash: 1e95ce00c96fb0ee0d53ce4865a566a00cf62076
   **注意**  有关详细信息，请参阅 [设置 API 安全模式](setting-the-api-security-mode-api-mode.md)
 
      
--   以下步骤是用于创建 [**IPC\_PROMPT\_CTX**](/information-protection/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 结构的实例（其中 **pcCredential** ([**IPC\_CREDENTIAL**](/information-protection/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)) 成员使用来自 Azure 权限管理服务的连接信息进行填充）的设置。
--   创建 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/information-protection/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 结构的实例时，使用来自对称密钥服务标识创建的信息（请参阅本主题前面列出的先决条件）来设置 **wszServicePrincipal**、**wszBposTenantId** 和 **cbKey** 参数。
+-   以下步骤是用于创建 [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) 结构的实例的设置，其中 *pcCredential* ([IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx)) 成员使用来自 Azure Rights Management 服务的连接信息进行填充。
+-   创建 [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 结构的实例时，使用来自对称密钥服务标识创建的信息（请参阅本主题前面列出的先决条件）来设置 *wszServicePrincipal*、*wszBposTenantId* 和 *cbKey* 参数。
 
-**注意** 由于我们发现服务的现有状况，如果你不在北美，则不会接受来自其他区域的对称密钥凭据，因此必须直接指定你的租户 URL。 这通过 [**IpcGetTemplateList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 或 [**IpcGetTemplateIssuerList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist) 的 [**IPC\_CONNECTION\_INFO**](/information-protection/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) 参数来实现。
+**注意** - 由于发现服务的现有状况，如果你不在北美，则不会接受来自其他区域的对称密钥凭据，因此必须直接指定你的租户 URL。 这通过 [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx) 或 [IpcGetTemplateIssuerList](https://msdn.microsoft.com/library/hh535266.aspx) 函数上的类型为 [IPC\_CONNECTION\_INFO](https://msdn.microsoft.com/library/hh535274.aspx) 的 *pConnectionInfo* 参数来实现。
 
 ## 生成对称密钥并收集所需信息
 
@@ -57,16 +57,25 @@ ms.openlocfilehash: 1e95ce00c96fb0ee0d53ce4865a566a00cf62076
 -   安装 [Microsoft Online 登录助手](http://go.microsoft.com/fwlink/p/?LinkID=286152)
 -   安装 [Azure AD Powershell 模块](https://bposast.vo.msecnd.net/MSOPMW/8073.4/amd64/AdministrationConfig-en.msi)。
 
-**注意**  你必须是租户管理员才能使用 Powershell cmdlet。
+**注意** - 必须是租户管理员才能使用 Powershell cmdlet。
 
--   启动 Powershell 并运行以下命令以生成密钥         `Import-Module MSOnline`
-            `Connect-MsolService`（键入管理员凭据）        `New-MsolServicePrincipal`（键入显示名称）
--   生成对称密钥之后，会输出有关密钥的信息（包括密钥本身和 **AppPrincipalId**）。
+- 启动 Powershell 并运行以下命令以生成密钥
 
+    `Import-Module MSOnline`
 
-    未提供对称密钥时，将创建以下对称密钥：ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
+    `Connect-MsolService` （输入管理员凭据）
 
-    DisplayName : RMSTestApp ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963} ObjectId : 0ee53770-ec86-409e-8939-6d8239880518 AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
+    `New-MsolServicePrincipal` （输入显示名称）
+
+- 生成对称密钥之后，会输出有关密钥的信息（包括密钥本身和 *AppPrincipalId*）。
+
+      The following symmetric key was created as one was not supplied
+      ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
+
+      DisplayName : RMSTestApp
+      ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963}
+      ObjectId : 0ee53770-ec86-409e-8939-6d8239880518
+      AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
 
 
 ### 用于查明 **TenantBposId** 和 **Urls** 的说明
@@ -81,20 +90,22 @@ ms.openlocfilehash: 1e95ce00c96fb0ee0d53ce4865a566a00cf62076
     `Get-AadrmConfiguration`
 
 
--   创建 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/information-protection/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 的实例并设置几个成员。
+- 创建 [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 的实例并设置几个成员。
 
-    // 创建密钥结构。
-    IPC_CREDENTIAL_SYMMETRIC_KEY symKey = {0};
+      // Create a key structure.
+      IPC_CREDENTIAL_SYMMETRIC_KEY symKey = {0};
 
-    // 使用来自服务创建的信息设置每个成员。
-    symKey.wszBase64Key 是“你的服务主体密钥”；symKey.wszAppPrincipalId 是“你的应用主体标识符”；symKey.wszBposTenantId 是“你的租户标识符”；
+      // Set each member with information from service creation.
+      symKey.wszBase64Key = "your service principal key";
+      symKey.wszAppPrincipalId = "your app principal identifier";
+      symKey.wszBposTenantId = "your tenant identifier";
 
 
-有关详细信息，请参阅 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/information-protection/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)。
+有关详细信息，请参阅 [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx)。
 
--   创建 [**IPC\_CREDENTIAL**](/information-protection/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) 结构的实例（包含 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/information-protection/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 实例）。
+-   创建 [IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx) 结构的实例（包含 [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 实例）。
 
-**注意**  *connectionInfo* 成员使用来自前面的 `Get-AadrmConfiguration` 调用的 URL 进行设置，在此处使用这些字段名称进行注明。
+**注意** - *connectionInfo* 成员使用来自前面的 `Get-AadrmConfiguration` 调用的 URL 进行设置，在此处使用这些字段名称进行注明。
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};
@@ -120,7 +131,7 @@ ms.openlocfilehash: 1e95ce00c96fb0ee0d53ce4865a566a00cf62076
 ### 标识模板，然后加密
 
 -   选择要用于加密的模板。
-    调用 [**IpcGetTemplateList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)（传入 [**IPC\_PROMPT\_CTX**](/information-protection/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 的同一个实例）。
+    调用 [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)（传入 [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) 的同一个实例）。
 
 
     PCIPC_TIL pTemplates = NULL; IPC_TEMPLATE_ISSUER templateIssuer = (pTemplateIssuerList->aTi)[0];
@@ -128,9 +139,9 @@ ms.openlocfilehash: 1e95ce00c96fb0ee0d53ce4865a566a00cf62076
     hr = IpcGetTemplateList(&(templateIssuer.connectionInfo),        IPC_GTL_FLAG_FORCE_DOWNLOAD,        0,        &promptCtx,        NULL,        &pTemplates);
 
 
--   使用来自本主题前面部分的模板调用 [**IpcfEncrcyptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)（传入 [**IPC\_PROMPT\_CTX**](/information-protection/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 的同一个实例）。
+-   使用来自本主题前面部分的模板调用 [IpcfEncrcyptFile](https://msdn.microsoft.com/library/dn133059.aspx)（传入 [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) 的同一个实例）。
 
-[**IpcfEncrcyptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfile) 的示例用法：
+[IpcfEncrcyptFile](https://msdn.microsoft.com/library/dn133059.aspx) 的示例用法：
 
     LPCWSTR wszContentTemplateId = pTemplates->aTi[0].wszID;
     hr = IpcfEncryptFile(wszInputFilePath,
@@ -141,7 +152,7 @@ ms.openlocfilehash: 1e95ce00c96fb0ee0d53ce4865a566a00cf62076
            NULL,
            &wszOutputFilePath);
 
-[**IpcfDecryptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile) 的示例用法：
+[IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx) 的示例用法：
 
     hr = IpcfDecryptFile(wszInputFilePath,
            IPCF_DF_FLAG_DEFAULT,
@@ -156,23 +167,23 @@ ms.openlocfilehash: 1e95ce00c96fb0ee0d53ce4865a566a00cf62076
 * [Azure Rights Management 入门](https://technet.microsoft.com/en-us/library/jj585016.aspx)
 * [RMS SDK 2.1 入门](getting-started-with-ad-rms-2-0.md)
 * [通过 ACS 创建服务标识](https://msdn.microsoft.com/en-us/library/gg185924.aspx)
-* [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)
-* [**IpcInitialize**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-* [**IPC\_PROMPT\_CTX**](/information-protection/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx)
-* [**IPC\_CREDENTIAL**](/information-protection/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)
-* [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/information-protection/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)
-* [**IpcGetTemplateIssuerList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
-* [**IpcGetTemplateList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
-* [**IpcfDecryptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile)
-* [**IpcfEncrcyptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)
-* [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
-* [**IpcCreateLicenseFromTemplateID**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromtemplateid)
+* [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)
+* [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)
+* [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx)
+* [IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx)
+* [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx)
+* [IpcGetTemplateIssuerList](https://msdn.microsoft.com/library/hh535266.aspx)
+* [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)
+* [IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx)
+* [IpcfEncrcyptFile](https://msdn.microsoft.com/library/dn133059.aspx)
+* [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)
+* [IpcCreateLicenseFromTemplateID](https://msdn.microsoft.com/library/hh535257.aspx)
  
 
  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

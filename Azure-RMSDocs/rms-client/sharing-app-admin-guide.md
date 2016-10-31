@@ -3,7 +3,7 @@ title: "Rights Management 共享应用程序管理员指南 | Azure 信息保护
 description: "面向负责部署适用于 Windows 的 Microsoft Rights Management 共享应用程序的企业网络管理员的说明和信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 4a551f198b0469f82c14120c0c6f2bb7d055afe9
+ms.sourcegitcommit: e5decd2df9135317f2e0da4951a177211342d7ac
+ms.openlocfilehash: e66f0ac6e596840ad940c51db41dbc6f91139e51
 
 
 ---
@@ -170,7 +170,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 ### 仅安装 RMS 共享应用程序和 Office 加载项
 
-1.  使用以下命令安装 AD RMS 客户端和 RMS 共享应用程序：
+1.  使用以下命令安装 AD RMS 客户端和 RMS 共享应用程序，指定现有文件夹创建日志文件：
 
     -   对于 64 位 Windows：
 
@@ -185,8 +185,10 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
         ```
 
     例如： `\\server5\apps\rms\x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "C:\Log files\ipviewerinstall.log"`
+    
+    如果此命令无法成功运行，由于 **/quiet** 参数的原因，将不会显示任何错误消息。 为有助于解决安装失败的问题，请返回不含 /quiet 的命令以查看错误消息。
 
-2.  使用以下命令安装 Office 加载项：
+2.  使用以下命令安装 Office 加载项，指定现有文件夹创建日志文件：
 
     -   对于 64 位版本的 Office：
 
@@ -201,6 +203,8 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
         ```
 
     例如： `\\server5\apps\rms\msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "C:\Log files\rmsofficeinstall.log"`
+    
+    如果此命令无法成功运行，由于 **/quiet** 参数的原因，将不会显示任何错误消息。 为有助于解决安装失败的问题，请返回不含 /quiet 的命令以查看错误消息。
 
 若要验证是否成功，请参阅本文中的[验证安装是否成功](#verifying-installation-success)部分。
 
@@ -402,6 +406,6 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

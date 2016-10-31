@@ -4,7 +4,7 @@ description: "Azure RMS 加密包及其使用的代码片段的方向。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
+ms.sourcegitcommit: 37d9906b5df00b6ec6eeb6739766c00bd5cef37b
+ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
 
 
 ---
@@ -40,13 +40,13 @@ ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB（也称为不推荐使用的算法）
 
-加密包标记（请参阅[**首选加密**](/information-protection/sdk/2.1/api/win/constants#msipc_preferred_encryption)）可与我们的新许可证标记 **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE** 结合使用。
+加密包标记（请参阅[首选加密](https://msdn.microsoft.com/library/dn974065.aspx)）可与许可证属性标记 *IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE* 结合使用。
 
 以下是一些简单的代码段，用于演示如何使用新的许可证属性。
 
 ## 不推荐使用的算法
 
-我们将不再公开 API 中的 **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** 标志。 这意味着，如果以后的应用程序引用此标记，则这些应用程序将无法再编译，但已使用它构建的应用程序可以继续工作，因为我们遵循 API 代码中的专用标记。
+我们将不再公开 API 中的 *IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS* 标志。 这意味着，如果以后的应用程序引用此标记，则这些应用程序将无法再编译，但已使用它构建的应用程序可以继续工作，因为我们遵循 API 代码中的专用标记。
 
 只需通过更改一个标记便可利用旧的不推荐使用的加密算法标记的益处。 请参阅下面的代码段示例。
 
@@ -84,7 +84,7 @@ ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
 此示例还演示支持*不推荐使用的算法*的新方法。
 
     C++
-    
+
     hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
                                     0,
                                     NULL,
@@ -103,6 +103,6 @@ ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

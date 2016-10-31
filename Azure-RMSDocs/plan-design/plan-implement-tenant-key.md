@@ -3,7 +3,7 @@ title: "计划和实施你的 Azure Rights Management 租户密钥 | Azure 信�
 description: "此信息有助于规划和管理 Azure 信息保护租户密钥。 为了遵守适用于组织的特别规定，你可能想要自行管理租户密钥，而不是由 Microsoft 管理你的租户密钥（默认设置）。 自行管理租户密钥也称为自带密钥 (BYOK)。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 70f4b178d2814683551574f4e777213eea914477
+ms.sourcegitcommit: bad084502b9b7e55c6e80dccfbd66c3f34b63c7c
+ms.openlocfilehash: ed35e72a5dbe23aba0817640075d34fd01bd269d
 
 
 ---
@@ -94,7 +94,7 @@ ms.openlocfilehash: 70f4b178d2814683551574f4e777213eea914477
 
 将该密钥传送到密钥保管库时，将在密钥保管库中为其给定一个密钥 ID，这是一个包含保管库名称、密钥容器、密钥名称和密钥版本的 URL。 例如：**https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**。 你将需要通过指定此 URL 命令 Azure 信息保护中的 Azure Rights Management 服务使用此密钥。
 
-但在 Azure 信息保护可以使用此密钥之前，必须授权 Azure Rights Management 服务在你组织的密钥保管库中使用该密钥。 若要执行此操作，Azure 密钥保管库管理员将使用密钥保管库 PowerShell cmdlet，[Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/en-us/library/mt603625(v=azure.200\).aspx) 并向 Azure Rights Management 服务主体 **Microsoft.Azure.RMS** 授予权限。 例如：
+但在 Azure 信息保护可以使用此密钥之前，必须授权 Azure Rights Management 服务在你组织的密钥保管库中使用该密钥。 若要执行此操作，Azure 密钥保管库管理员将使用密钥保管库 PowerShell cmdlet [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/en-us/library/mt603625(v=azure.300\).aspx) 并向 Azure Rights Management 服务主体 **Microsoft.Azure.RMS** 授予权限。 例如：
 
     Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
@@ -106,7 +106,7 @@ ms.openlocfilehash: 70f4b178d2814683551574f4e777213eea914477
 
     Use-AadrmKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333"
 
-如果需要确认在 Azure RMS 服务中是否正确设置了密钥 URL，可在 Azure 密钥保管库中运行 [Get-AzureKeyVaultKey](https://msdn.microsoft.com/library/dn868053.aspx) 查看密钥 URL。
+如果需要确认在 Azure RMS 服务中是否正确设置了密钥 URL，可在 Azure 密钥保管库中运行 [Get-AzureKeyVaultKey](https://msdn.microsoft.com/en-us/library/dn868053(v=azure.300\).aspx) 来查看密钥 URL。
 
 
 ## 后续步骤
@@ -136,6 +136,6 @@ ms.openlocfilehash: 70f4b178d2814683551574f4e777213eea914477
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 
