@@ -4,7 +4,7 @@ description: "本主题介绍可以选择创建为启用权限形式的应用程
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: dac322fedd1ac23660abb3b79261e8339ffd81ca
+ms.sourcegitcommit: 1ab93dc8f770e2e49b5846dd6c31f649a55175b0
+ms.openlocfilehash: 77bb95ae54ec0fb699d3b0dd2879bb14fdd3dd28
 
 
 ---
@@ -29,7 +29,7 @@ Rights Management Services SDK 2.1 当前支持以下应用程序类型
 
 ## 简单应用程序
 
-简单应用程序可以是为加密提供的文件而构建的命令行工具。 有关启用权限的简单应用程序的示例，请参阅 [IPCHelloWorld - 一个示例应用程序](how-to-build-your-first-application.md)。
+简单应用程序可以是为加密提供的文件而构建的命令行工具。 有关启用权限的简单应用程序的示例，请参阅[开发应用程序](developing-your-application.md)中所述的 *IPCHelloWorld* 实现。
 
 ### 服务器模式应用程序
 
@@ -55,13 +55,13 @@ Microsoft 记事本是简单的富客户端应用程序。 Microsoft Office 是�
 
 ## 相关主题
 
-* [IpcDlp 示例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
-* [IPCHelloWorld - 一个示例应用程序](how-to-build-your-first-application.md)
-* [设置 API 安全模式](setting-the-api-security-mode-api-mode.md)
-* [了解使用限制](understanding-usage-restrictions.md)
+- [IpcDlp 示例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
+- [开发应用程序](developing-your-application.md)
+- [设置 API 安全模式](setting-the-api-security-mode-api-mode.md)
+- [了解使用限制](understanding-usage-restrictions.md)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 
