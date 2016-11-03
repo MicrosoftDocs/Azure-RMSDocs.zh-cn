@@ -3,15 +3,15 @@ title: "什么是 Azure 信息保护？ | Azure 信息保护"
 description: "Azure 信息保护服务概述。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: 590f12e0c6c6122a6bc0a559940870c18f0e2d39
-ms.openlocfilehash: 350a3cb877674208b4c560bb841135904aee1136
+ms.sourcegitcommit: 0098fa28313561e99f39e2539e20c8a6bc0207f7
+ms.openlocfilehash: eaaa08a99b3c065422dd8b0bc01d89ead15e9d49
 
 
 ---
@@ -84,9 +84,21 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 - Yammer：[Azure 信息保护](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)
 
-- 视频演示：
+- 视频概述
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/N9Ip0m6d3G0" frameborder="0" allowfullscreen></iframe>
+
+    此外，Microsoft Ignite 2016 对 Azure 信息保护提供多个按需会话：
+
+    - [标识驱动安全BRK2127：采用综合标识驱动解决方案安全地保护和共享数据](https://myignite.microsoft.com/videos?q=BRK2127)
+    
+    - [THR2107：使用 Azure 信息保护进行安全协作](https://myignite.microsoft.com/videos?q=THR2107)
+    
+    - [THR2108：通过 Azure 信息保护确保全面保护数据](https://myignite.microsoft.com/videos?q=THR2108)
+    
+    - [BRK3095：了解分类、标记和保护如何提供持续的数据保护](https://myignite.microsoft.com/videos?q=BRK3095)
+    
+    - [BRK2128：利用 Microsoft Office 365 和 Azure 信息保护，向任何人发送安全电子邮件](https://myignite.microsoft.com/videos?q=BRK2128)
 
 
 ## 后续步骤
@@ -96,6 +108,6 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 通过其他名称了解 Azure 信息保护或 Azure Rights Management？ 请参阅[该服务的替代术语列表](azure-rms-aka.md)。
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

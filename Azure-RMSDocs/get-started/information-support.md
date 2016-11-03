@@ -3,7 +3,7 @@ title: "Azure 信息保护的管理员信息和支持 | Azure 信息保护"
 description: "管理员资源，其中包括有关新版本、支持选项以及如何与 Microsoft 联系以报告问题的信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2016
+ms.date: 10/13/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 13579b8cb5516a1d7390db81957c140b8e980982
-ms.openlocfilehash: 1ca9b1d4b3af81a892e001c639ad79ac931233be
+ms.sourcegitcommit: 263c4109ac5dec435bbb0b126594eeafc974ff47
+ms.openlocfilehash: 79bed57d13aba8648ab3e3b7340bcc6d711f7942
 
 
 ---
@@ -26,10 +26,10 @@ ms.openlocfilehash: 1ca9b1d4b3af81a892e001c639ad79ac931233be
 
 |要执行的操作…|.. 采取的措施：|
 |----------------|---------------|
-|… 请参阅该服务的推荐文档 →|使用 [Azure 信息保护文档](https://docs.microsoft.com/information-protection/)起始页。|
-|… 提供有关文档的反馈或咨询有关文档的问题 →|发送电子邮件至 [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
-|… 接收有关信息保护的推文，以及来自产品组的关于文档更新的公告 →|关注帮助领导 Microsoft 信息保护团队的 Dan Plastina 的动态。 参阅 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)|
-|… 检查订阅信息和支持的功能 →|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
+|请参阅该服务的推荐文档 →|使用 [Azure 信息保护文档](https://docs.microsoft.com/information-protection/)起始页。|
+|提供有关文档的反馈或咨询有关文档的问题 →|发送电子邮件至 [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
+|接收有关信息保护的推文，以及来自产品组的关于文档更新的公告 →|关注帮助领导 Microsoft 信息保护团队的 Dan Plastina 的动态。 参阅 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)|
+|检查订阅信息和支持的功能 →|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
 
 
 ## 有关新版本的信息
@@ -61,7 +61,9 @@ ms.openlocfilehash: 1ca9b1d4b3af81a892e001c639ad79ac931233be
 
 ### 自助方式
 
-核心技能的学习：
+点播视频：
+
+- [Azure 信息保护和 Azure Rights Management](https://myignite.microsoft.com/videos?f=%5B%7B%22name%22:%22Azure%20Rights%20Management%22,%22facetName%22:%22products%22%7D,%7B%22name%22:%22Azure%20Information%20Protection%22,%22facetName%22:%22products%22%7D%5D) 的 Microsoft Ignite 2016 会话
 
 - Microsoft 虚拟学院：[Azure Rights Management 服务核心技能](https://mva.microsoft.com/en-us/training-courses/azure-rights-management-services-core-skills-10500?l=QLoxMwuCB_1805094681)
 
@@ -88,6 +90,6 @@ ms.openlocfilehash: 1ca9b1d4b3af81a892e001c639ad79ac931233be
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 
