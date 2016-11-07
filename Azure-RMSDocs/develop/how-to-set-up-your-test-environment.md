@@ -20,13 +20,13 @@ ms.openlocfilehash: 719077671664dda3102949609874c569a691bbb8
 
 ---
 
-# 测试应用程序
+# <a name="testing-your-application"></a>测试应用程序
 
 本主题包含有关如何为应用程序测试进行设置的说明。
 
-## 说明
+## <a name="instructions"></a>说明
 
-### 步骤 1：为测试进行设置
+### <a name="step-1-setup-for-testing"></a>步骤 1：为测试进行设置
 
 可以使用 Azure RMS 或在 Windows Server 上运行的 RMS 服务器进行测试，我们建议在 Azure RMS 上开始测试，再根据部署的要求使用 RMS 服务器进行测试。
 
@@ -40,11 +40,11 @@ ms.openlocfilehash: 719077671664dda3102949609874c569a691bbb8
 
     有关如何安装 RMS SDK 2.1 的信息，请参阅[安装 SDK](install-the-rms-sdk.md)。
 
-## 备注
+## <a name="remarks"></a>备注
 
 本主题中的指南并不全面。 有关如何配置 RMS 客户端 2.1 的详细信息，请参阅 [RMS 客户端 2.1 部署说明](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)。
 
-### 相关主题
+### <a name="related-topics"></a>相关主题
 
 * [操作说明：安装和配置 RMS 服务器](how-to-install-and-configure-an-rms-server.md)
 * [操作说明：使用 ADAL 身份验证](how-to-use-adal-authentication.md)
@@ -56,6 +56,6 @@ ms.openlocfilehash: 719077671664dda3102949609874c569a691bbb8
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

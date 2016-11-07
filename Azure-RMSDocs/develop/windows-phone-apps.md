@@ -14,24 +14,24 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 148cefbe973eadebf942c826ac19c0ee34823c89
+ms.sourcegitcommit: dc452dac3a86cd9cc39127d5a29106ae87ba94be
+ms.openlocfilehash: 790f0d847c57b9e13d9074298b3e89584dc24760
 
 
 ---
 
-# Windows Phone 安装程序
+# <a name="windows-phone-setup"></a>Windows Phone 安装程序
 
 
 Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护（通过使用 Azure Active Directory Rights Management (AAD RM)）。
 
 本主题将指导你完成环境设置过程，以创建自己的新应用。
 
--   [先决条件](#prerequisites)
+-   [必备条件](#prerequisites)
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## 先决条件
+## <a name="prerequisites"></a>先决条件
 
 
 开发系统上必须安装以下软件：
@@ -46,7 +46,7 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 
 请查阅 Windows Phone 开发人员中心处的 [Windows Phone 开发](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx)指南中的信息。
 
-## 配置开发环境
+## <a name="configuring-your-development-environment"></a>配置开发环境
 
 
 -   打开 *Visual Studio*。
@@ -60,7 +60,7 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
     ![添加引用](../media/wpsetup-addref.png)
 
 -   单击“添加引用”对话框左下角的“浏览”并选择位于将包解压到其中的文件夹中的 *Microsoft.RightsManagment.dll* 文件。
--   **托管应用** - 要生成托管应用程序，将需要添加此引用；选择 **Windows 8.1** -&gt;**扩展**，并选中**适用于 Windows 的 Windows Visual C++ 运行时包**的复选框
+-   **托管应用** - 需要添加此引用才能生成托管应用；请选择 **Windows 8.1**-&gt;**扩展**，并选中“适用于 Windows 的 Windows Visual C++ 运行时包”复选框
 
     ![添加扩展](../media/wpsetup-refmngr.png)
 
@@ -68,7 +68,7 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 
 你现在已准备就绪，可创建新 Windows Phone 应用。
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 
 [入门](get-started.md)
 
@@ -93,6 +93,6 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

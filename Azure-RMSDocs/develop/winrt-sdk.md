@@ -14,24 +14,24 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 763e99e40bbe329305e97757e87d10b048cc62e9
+ms.sourcegitcommit: dc452dac3a86cd9cc39127d5a29106ae87ba94be
+ms.openlocfilehash: c3dfa23a4bb03aec3ad9eae835382040a5347006
 
 
 ---
 
-# Windows 应用商店安装程序
+# <a name="windows-store-setup"></a>Windows 应用商店安装程序
 
 Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护（通过使用 Azure Active Directory Rights Management (AAD RM)）。
 
 本主题将指导你完成环境设置过程，以创建自己的新应用。
 
--   [先决条件](#prerequisites)
+-   [必备条件](#prerequisites)
 -   [可选](#optional)
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## 先决条件
+## <a name="prerequisites"></a>先决条件
 
 
 开发系统上必须安装以下软件：
@@ -44,11 +44,11 @@ Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2
 
 有关 API 更新、设备和环境信息、发行说明和常见问题 (FAQ) 的信息，请阅读[新增功能](release-notes.md)主题。
 
-## 可选
+## <a name="optional"></a>可选
 
 针对不想创建其自己的自定义 UI 的开发人员，我们的 UI 库为其提供了可重复使用的 UI，以进行使用和保护操作 - [适用于 Windows 应用商店应用的 UI 库](https://github.com/AzureAD/rms-sdk-ui-for-windowsstore)。 我们还提供 Windows 应用商店应用程序示例应用程序 - [RMS 示例 Windows 应用商店的应用程序](https://github.com/AzureADSamples/rms-samples-for-windowsstore)。
 
-## 配置开发环境
+## <a name="configuring-your-development-environment"></a>配置开发环境
 
 
 -   打开 Visual Studio。
@@ -62,7 +62,7 @@ Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2
     ![添加引用](../media/winrtsetup-addref.png)
 
 -   在“添加引用”对话框中，单击“浏览”，然后选择位于要将 SDK 包解压到其中的文件夹中的 *Microsoft.RightsManagement.dll* 文件。
--   **托管应用** - 要生成托管应用程序，将需要添加此引用；选择 **Windows 8.1** -&gt;**扩展**，并选中**适用于 Windows 的 Windows Visual C++ 运行时包**的复选框
+-   **托管应用** - 需要添加此引用才能生成托管应用；请选择 **Windows 8.1**-&gt;**扩展**，并选中“适用于 Windows 的 Windows Visual C++ 运行时包”复选框
 
     ![添加扩展](../media/winrtsetup-refmngr.png)
 
@@ -70,7 +70,7 @@ Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2
 
 你现在已准备就绪，可创建新 Windows 应用商店应用。
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 
 [入门](get-started.md)
 
@@ -86,6 +86,6 @@ Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

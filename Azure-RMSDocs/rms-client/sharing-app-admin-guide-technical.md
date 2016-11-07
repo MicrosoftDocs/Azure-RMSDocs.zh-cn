@@ -12,14 +12,14 @@ ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3b4cd04732e38da31bf31d899993c912694e3ee8
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 88b03e5e844e78db5dc8ac5f116d19899c5f354f
 
 
 ---
 
 
-# Microsoft Rights Management 共享应用程序的技术概览和保护详细信息
+# <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 共享应用程序的技术概览和保护详细信息
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
@@ -42,7 +42,7 @@ Microsoft Rights Management 共享应用程序使用 [AD RMS 客户端 2.1 运�
 
 有关部署信息，请参阅[自动部署 Microsoft Rights Management 共享应用程序](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)
 
-## 保护级别 – 本机和常规
+## <a name="levels-of-protection-native-and-generic"></a>保护级别 – 本机和常规
 Microsoft Rights Management 共享应用程序支持两个不同级别的保护，如下表中所述。
 
 |保护类型|本机|泛型|
@@ -52,7 +52,7 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 |文件类型默认值|这是以下文件类型的默认保护级别：<br /><br />- 文本和图像文件<br /><br />- Microsoft Office（Word、Excel、PowerPoint）文件<br /><br />- 可移植文档格式 (.pdf)<br /><br />有关详细信息，请参阅以下部分：[支持的文件类型和文件扩展名](#supported-file-types-and-file-name-extensions)。|这是针对不受完整保护支持的其他所有文件类型（例如 .vsdx、.rtf 等）的默认保护。|
 可以更改 RMS 共享应用程序所应用的默认保护级别。 可以将默认级别从本机更改为常规，从常规更改为本机，甚至可以禁止 RMS 共享应用程序应用保护。 有关详细信息，请参阅本文中的[更改文件的默认保护级别](#changing-the-default-protection-level-of-files)部分。
 
-## 支持的文件类型和文件扩展名
+## <a name="supported-file-types-and-file-name-extensions"></a>支持的文件类型和文件扩展名
 下表列出了本身受 Microsoft Rights Management 共享应用程序支持的文件类型。 对于这些文件类型，原始文件扩展名将在应用本机保护时发生变化，并且这些文件将变为只读形式。
 
 此外，当 RMS 共享应用程序通过共享从本机保护受用户保护的 Word、Excel 或 PowerPoint 文件时，此操作将自动创建另一个文件，该文件是与原始文件同名的副本，但其文件扩展名¹为 **.ppdf**。 此版本的文件可确保安装 RMS 共享应用程序的接收方始终可以打开已应用本机保护的文件。
@@ -86,7 +86,7 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 |----------------------------------|----------------------------------|
 |。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm|。pptx<br /><br />。thmx<br /><br />。xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx<br /><br />.xps|
 
-### 更改文件的默认保护级别
+### <a name="changing-the-default-protection-level-of-files"></a>更改文件的默认保护级别
 你可以通过编辑注册表来更改 RMS 共享应用程序保护文件的方式。 例如，你可以强制使支持本机保护的文件由 RMS 共享应用程序进行常规保护。
 
 可能要执行此操作的原因是：
@@ -107,7 +107,7 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
     此设置表示文件可具有任意文件扩展名。
 
-2.  在新添加的项 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\\* 中，创建一个名为 **Encryption**、数据值为 **Pfile** 的新字符串值 (REG_SZ)。
+2.  在新添加的项 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\* 中，创建一个名为 **Encryption**、数据值为 **Pfile** 的新字符串值 (REG_SZ)。
 
     此设置会导致 RMS 共享应用程序应用常规保护。
 
@@ -133,12 +133,12 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
 -   **Off**：阻止保护
 
-## 另请参阅
+## <a name="see-also"></a>另請參閱
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
