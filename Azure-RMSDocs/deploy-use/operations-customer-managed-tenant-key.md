@@ -3,7 +3,7 @@ title: "客户托管 - 租户密钥生命周期操作 | Azure 信息保护"
 description: "有关当你自己管理 Azure 信息保护租户密钥（自带密钥方案，简称 BYOK）时相关生命周期操作的信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: c879d4de6b8b99c401b36e03dd3b16dc8b722344
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: 03c2e885bfb997fda2a2f675be3dee6bc8ea8138
 
 
 ---
@@ -45,7 +45,7 @@ ms.openlocfilehash: c879d4de6b8b99c401b36e03dd3b16dc8b722344
 ## <a name="backup-and-recover-your-tenant-key"></a>备份和恢复你的租户密钥
 你负责备份自己的租户密钥。 如果你在 Thales HSM 中生成租户密钥，若要备份该密钥，只需备份标记化密钥文件、安全体系文件和管理员卡即可。
 
-因为你按照[计划和实现你的 Azure Rights Management 租户密钥](../plan-design/plan-implement-tenant-key.md)文章中的[实现自带密钥 (BYOK)](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 部分中的程序传送密钥，因此密钥保管库将保留标记化密钥文件，以防止任何服务节点发生故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将它作为完全备份。 例如，如果你需要密钥的明文副本在 Thales HSM 外部使用，则 Azure 密钥保管库将无法为你检索该副本，因为它仅有不可恢复的副本。
+因为你按照[计划和实现你的 Azure Rights Management 租户密钥](../plan-design/plan-implement-tenant-key.md)文章中的[实现自带密钥 (BYOK)](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key) 部分中的程序传送密钥，因此密钥保管库将保留标记化密钥文件，以防止任何服务节点发生故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将它作为完全备份。 例如，如果你需要密钥的明文副本在 Thales HSM 外部使用，则 Azure 密钥保管库将无法为你检索该副本，因为它仅有不可恢复的副本。
 
 ## <a name="export-your-tenant-key"></a>导出你的租户密钥
 如果使用 BYOK，则你无法从 Azure 密钥保管库或 Azure 信息保护导出租户密钥。 Azure 密钥保管库中的副本是不可恢复的。 

@@ -3,7 +3,7 @@ title: "Rights Management 共享应用程序的对话框选项 | Azure 信息保
 description: "此信息可帮助你指定 RMS 共享应用程序“添加保护”对话框或“共享保护”对话框中的选项。 当你保护要共享的文件或就地保护文件以及选择自定义权限时，将看到此对话框。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 25e93f993ef76d0bce61f925c58cc667ccacf7b8
-ms.openlocfilehash: c28651342c3048b783880f8ea3b12acd56d973a2
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: 97766046526db5148f03873343a2fb3840392c6a
 
 
 ---
@@ -54,7 +54,7 @@ ms.openlocfilehash: c28651342c3048b783880f8ea3b12acd56d973a2
 
 -   相比之下，将使用 Rights Management 的**内置（本机）保护**和支持它的应用程序（如 Office 文件）一起使用时，该保护将应用于该文件，即使该文件已经发送给其他用户或保存在其他位置。 并且，保护这些文件时，你可以使用限制性权限（如只读）或编辑（而不是打印或复制）权限。 例如，你可以选择“查看器 - 仅查看” ，使得内容不可编辑、打印或复制。
 
-有关其他技术信息，请参阅 [Rights Management 共享应用程序管理员指南](sharing-app-admin-guide.md)中的[保护级别 – 本机和通用](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)部分。
+有关其他技术信息，请参阅 [Rights Management 共享应用程序管理员指南](sharing-app-admin-guide.md)中的[保护级别 – 本机和通用](sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic)部分。
 
 ## <a name="whats-the-ppdf-file-thats-automatically-created"></a>自动创建的 .ppdf 文件是什么文件？
 

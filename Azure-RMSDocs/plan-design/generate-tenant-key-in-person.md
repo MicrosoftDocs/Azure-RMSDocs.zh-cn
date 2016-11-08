@@ -22,7 +22,7 @@ ms.openlocfilehash: 4f8b32fa7961b3d59911cc279ac30a7c497deb5f
 
 >*适用于：Azure Rights Management、Office 365*
 
-本文中的该信息已被删除，因为该信息已不再相关，现在 Azure Rights Management 理对客户托管的租户密钥（也称为自带密钥，简称 BYOK）使用 Azure 密钥保管库。 
+本文中的该信息已被删除，因为该信息已不再相关，现在 Azure Rights Management 对客户托管的租户密钥（也称为自带密钥，简称 BYOK）使用 Azure 密钥保管库。 
 
 
 <!--HONumber=Nov16_HO1-->
