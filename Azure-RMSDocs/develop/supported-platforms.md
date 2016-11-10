@@ -3,6 +3,7 @@ title: "支持的平台 | Azure RMS"
 description: "本主题介绍支持 Rights Management Services SDK 2.1 的客户端和服务器平台。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,11 +21,11 @@ ms.openlocfilehash: eb20483bd3a2be60e1b9fcee173ebeabcb5b6d93
 
 ---
 
-# 受支持的平台
+# <a name="supported-platforms"></a>受支持的平台
 
 本主题介绍支持 Rights Management Services SDK 2.1 的客户端和服务器平台。
 
-## 受支持的平台
+## <a name="supported-platforms"></a>受支持的平台
 
 -   Windows 10
 -   Windows Server 2012 R2

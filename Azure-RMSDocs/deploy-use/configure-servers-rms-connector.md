@@ -2,6 +2,7 @@
 title: "为 Azure Rights Management 连接器配置服务器 | Azure 信息保护"
 description: "此信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及部署 Azure Rights Management 连接器中的步骤 5。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article

@@ -2,6 +2,7 @@
 title: "Azure RMS 的工作原理 | Azure 信息保护"
 description: "详细解说 Azure RMS 的工作原理、它使用的加密控件以及此过程工作原理的分步图示。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article

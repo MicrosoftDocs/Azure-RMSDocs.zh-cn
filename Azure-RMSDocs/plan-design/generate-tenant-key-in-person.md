@@ -2,6 +2,7 @@
 title: "亲自生成和传送租户密钥：RETIRED CONTENT | Azure RMS"
 description: "本文中的该信息已被删除，因为该信息已不再相关，现在 Azure Rights Management 对客户托管的租户密钥（也称为自带密钥，简称 BYOK）使用 Azure 密钥保管库。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
