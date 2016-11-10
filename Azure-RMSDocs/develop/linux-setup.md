@@ -20,7 +20,7 @@ ms.openlocfilehash: 561ed44582fe2c73cf40ac082bf67e91d37fb351
 
 ---
 
-# Linux 安装程序
+# <a name="linux-setup"></a>Linux 安装程序
 
 
 Linux 操作系统的几种版本现都可通过 Azure Active Directory Rights Management (AAD RM) 使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
@@ -29,21 +29,21 @@ Linux 操作系统的几种版本现都可通过 Azure Active Directory Rights M
 -   [如何生成和使用](#how-to-build-and-use)
 -   [另请参阅](#see-also)
 
-## 支持的操作系统
+## <a name="supported-operating-systems"></a>支持的操作系统
 
 
 Ubuntu 14.04 OpenSUSE 13.2 CentOS 7 **注意：**Windows 和 OSX 上也已成功编译了库和示例，但目前并未完全受到支持。
 
  
 
-## 如何生成和使用
+## <a name="how-to-build-and-use"></a>如何生成和使用
 
 此 SDK 的两大指南主题均已托管在 Github 上，可指导 SDK 的生成和使用。
 
 -   [如何构建库和示例应用](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_build_it.md)
 -   [如何在用户系统上安装和使用应用](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_use_it.md)
 
-## 另请参阅
+## <a name="see-also"></a>另請參閱
 
 * [入门](get-started.md)
 
@@ -60,6 +60,6 @@ Ubuntu 14.04 OpenSUSE 13.2 CentOS 7 **注意：**Windows 和 OSX 上也已成功
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

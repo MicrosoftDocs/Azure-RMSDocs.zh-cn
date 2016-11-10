@@ -3,7 +3,7 @@ title: "数据保护的应用程序支持 |Azure 信息保护"
 description: "确定使用 RMS API 本机支持 Azure 信息保护中的 Azure Rights Management 服务的应用程序。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2016
+ms.date: 10/31/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,14 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6dbbfacd072d5badd69cc6ea452a86baa99cc46
-ms.openlocfilehash: 0649b4300c1bd10ddcfc0c1432144f5eaa0b7797
+ms.sourcegitcommit: a036da617d88a65903cfea9df30d5f851bda6e36
+ms.openlocfilehash: 80874b7e15fef7f4e7685774b31410149301c124
 
 
 ---
 
 
-# 支持 Azure Rights Management 数据保护的应用程序
+# <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -51,30 +51,30 @@ ms.openlocfilehash: 0649b4300c1bd10ddcfc0c1432144f5eaa0b7797
 |**Blackberry 10**|不支持|不支持|Blackberry 电子邮件 [[4]](#footnote-4)|不支持|
 
 
-##### 脚注 1
+##### <a name="footnote-1"></a>脚注 1
 支持查看受保护内容。
 
-##### 脚注 2 
-支持查看 SharePoint Online、OneDrive for Business 和 Outlook Web Access 中的受保护内容。
+##### <a name="footnote-2"></a>脚注 2 
+将未受保护的文档上传到 SharePoint Online 和 OneDrive for Business 中受保护的库中时，可查看受保护的文档。 
 
-##### 脚注 3
+##### <a name="footnote-3"></a>脚注 3
 如果收件人接收了受保护的电子邮件，且未将 Exchange 作为邮件服务器，或如果发送者属于另一组织，则只能在功能丰富的电子邮件客户端（如 Outlook）中打开此内容。 不能从 Outlook Web Access 打开此内容。
 
-##### 脚注 4
+##### <a name="footnote-4"></a>脚注 4
 使用 Exchange ActiveSync IRM，它必须由 Exchange 管理员启用。 用户可以查看受保护电子邮件并回复所有受保护电子邮件，但是他们自己不能保护新的电子邮件。
 
 如果收件人接收了受保护的电子邮件，且未将 Exchange 作为邮件服务器，或如果发送者属于另一组织，则只能在功能丰富的电子邮件客户端（如 Outlook）中打开此内容。 无法从 Outlook Web Access 或使用 Exchange Active Sync IRM 的移动邮件客户端打开此内容。
 
-##### 脚注 5
+##### <a name="footnote-5"></a>脚注 5
 支持查看和编辑受保护文档。 有关详细信息，请参阅 Office 博客上的以下帖子：[为 iPad 和 iPhone 版 Office 提供 Azure Rights Management 支持](https://blogs.office.com/2015/07/22/azure-rights-management-support-comes-to-office-for-ipad-and-iphone-2/)
 
-##### 脚注 6
+##### <a name="footnote-6"></a>脚注 6
 有关详细信息，请参阅 Citrix [product documentation for WorxMail](http://docs.citrix.com/en-us/worx-mobile-apps/10/xmob-worx-mail.html)（Worxmail 的产品文档）。
 
-##### 脚注 7
+##### <a name="footnote-7"></a>脚注 7
 有关详细信息，请参阅 Office 博客上的以下帖子：[OWA for Android 现可在特定设备上使用](http://blogs.office.com/2014/06/11/owa-for-android-now-available-on-select-devices/)
 
-## 有关针对 Office 的 Azure RMS 支持的详细信息
+## <a name="more-information-about-azure-rms-support-for-office"></a>有关针对 Office 的 Azure RMS 支持的详细信息
 
 Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，在这些应用中，此功能通常称为信息权限管理 (IRM)。 以下 Office 客户端版本支持通过 Azure RMS 保护文件和电子邮件：
 
@@ -92,7 +92,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 - 在 Windows 10 上不受支持
 
-## 有关适用于 iOS 和 Android 的 Azure 信息保护应用的详细信息
+## <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>有关适用于 iOS 和 Android 的 Azure 信息保护应用的详细信息
 
 适用于 iOS 和 Android 的 Azure 信息保护应用将替换这些设备的 RMS 共享应用程序。 它提供相同的功能，此外，还支持受权限保护的电子邮件和 SharePoint Online 上受权限保护的 PDF 文件。
 
@@ -101,7 +101,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 有关详细信息，请参阅[适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题](../rms-client/mobile-app-faq.md)。
 
 
-## 有关 Rights Management 共享应用程序的详细信息
+## <a name="more-information-about-the-rights-management-sharing-application"></a>有关 Rights Management 共享应用程序的详细信息
 
 有关适用于 Windows 的权限管理共享应用程序的详细信息，请参阅以下资源：
 
@@ -113,12 +113,12 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 -   使用 [Microsoft Rights Management 页](http://go.microsoft.com/fwlink/?LinkId=303970)上的链接下载相关应用程序
 
--   [适用于移动平台的 Microsoft 权限管理共享应用程序的常见问题](https://technet.microsoft.com/dn451248)
+-   [适用于移动平台的 Microsoft Rights Management 共享应用程序的常见问题解答](https://technet.microsoft.com/dn451248)
 
 > [!NOTE]
 > 适用于 iOS 和 Android 的 RMS 共享应用程序现已替换为 Azure 信息保护应用。
 
-## 有关其他支持 Azure RMS 的应用程序的详细信息
+## <a name="more-information-about-other-applications-that-support-azure-rms"></a>有关其他支持 Azure RMS 的应用程序的详细信息
 
 除了表中的应用程序，任何支持 RMS API 的应用程序都可以与 Azure RMS 集成，包括：
 
@@ -128,7 +128,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 有关 SDK 的详细信息，请参阅 [Microsoft Rights Management SDK](../develop/developers-guide.md)。
 
-## 不受 Azure RMS 支持的应用程序
+## <a name="applications-that-are-not-supported-by-azure-rms"></a>不受 Azure RMS 支持的应用程序
 
 Azure RMS 当前不支持以下应用程序：
 
@@ -144,7 +144,7 @@ Azure RMS 当前不支持以下应用程序：
 
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 若要查看其他要求，请参阅 [Azure 信息保护的要求](requirements-azure-rms.md)。
 
 有关最常用的应用程序如何支持 Azure RMS 的详细信息，请参阅[应用程序如何支持 Azure Rights Management 服务](../understand-explore/applications-support.md)。
@@ -152,6 +152,6 @@ Azure RMS 当前不支持以下应用程序：
 有关如何为 Azure RMS 配置最常用的应用程序的信息，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)。
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -14,13 +14,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 80d79ead119b5dbe86d94f979742ecc2b62d1ef9
+ms.sourcegitcommit: 7c0b885c35dcac0237788a69486d8f736c97c0c4
+ms.openlocfilehash: 96b71d26461559aa8e53960e7e8f3f748b7ebb1d
 
 
 ---
 
-# iOS 和 OS X 安装程序
+# <a name="ios-and-os-x-setup"></a>iOS 和 OS X 安装程序
 
 借助 Azure Rights Management (Azure RMS)，iOS 和 OS X 应用程序可使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
 
@@ -29,12 +29,12 @@ ms.openlocfilehash: 80d79ead119b5dbe86d94f979742ecc2b62d1ef9
 **注意** 此 SDK 不支持 iPod Touch。
 
 
--   [先决条件](#prerequisites)
+-   [必备条件](#prerequisites)
 -   [可选](#optional)
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## 先决条件
+## <a name="prerequisites"></a>先决条件
 
 我们建议在开发系统上安装以下软件：
 
@@ -53,11 +53,11 @@ ms.openlocfilehash: 80d79ead119b5dbe86d94f979742ecc2b62d1ef9
 
 有关 API 更新、发行说明和常见问题解答 (FAQ) 的信息，请阅读[新增功能](release-notes.md)主题。
 
-## 可选
+## <a name="optional"></a>可选
 
 针对不想自行创建自定义 UI 的开发人员，我们的 UI 库为其提供了可重复使用的 UI，以进行使用和保护操作 -[适用于 iOS 的 UI 库和示例应用](https://github.com/AzureAD/rms-sdk-ui-for-ios)。
 
-## 配置开发环境
+## <a name="configuring-your-development-environment"></a>配置开发环境
 
 -   若要创建新项目，请在“文件”上单击“新建”，然后单击“项目”。
 -   选择“单视图应用程序”。
@@ -100,7 +100,7 @@ ms.openlocfilehash: 80d79ead119b5dbe86d94f979742ecc2b62d1ef9
 
 -   你现已准备就绪，可自行创建新的 iOS/OS X 应用。
 
-### 另請參閱
+### <a name="see-also"></a>另请参阅
 
 * [入门](get-started.md)
 
@@ -116,6 +116,6 @@ ms.openlocfilehash: 80d79ead119b5dbe86d94f979742ecc2b62d1ef9
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 
