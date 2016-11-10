@@ -19,15 +19,15 @@ ms.openlocfilehash: 8c5b7d17b5feffa07028498e8d7f201b25626478
 
 
 ---
-# 开始使用
+# <a name="getting-started"></a>开始使用
 
 Rights Management Services SDK 2.1 平台使开发人员可以通过 RMS 服务器或 Azure RMS 构建利用 RMS 信息保护的应用程序。 该平台可处理复杂的安全实践（如密钥管理、加密和解密处理），并提供简化 API 以便轻松开发应用程序。
 
-## RMS SDK 2.1 入门
+## <a name="get-started-with-rms-sdk-21"></a>RMS SDK 2.1 入门
 
 本主题将指导你完成设置过程以及在测试环境中运行启用权限的应用程序的过程。 以下主题讨论如何设置开发环境，其列出方式表示执行任务时可以使用的建议顺序。
 
-## 本部分内容
+## <a name="in-this-sections"></a>本部分内容
 
 | 主题 | 描述 |
 |-------|-------------|
@@ -47,7 +47,7 @@ Rights Management Services SDK 2.1 平台使开发人员可以通过 RMS 服务�
 - [测试应用程序](how-to-set-up-your-test-environment.md)
 - [部署到生产](deploying-your-application.md)
 
-### 为什么使用 RMS SDK 2.1 保护你的内容
+### <a name="why-use-rms-sdk-21-for-protecting-your-content"></a>为什么使用 RMS SDK 2.1 保护你的内容
 
 对于要向其新的和现有应用程序添加 RMS 支持的开发人员，RMS SDK 2.1 可帮助使以下工作更容易：
 
@@ -59,13 +59,13 @@ Rights Management Services SDK 2.1 平台使开发人员可以通过 RMS 服务�
 
 RMS SDK 2.1 支持一系列重要的客户端和服务器平台。 有关详细信息，请参阅 [支持的平台](supported-platforms.md)。
 
-## 核心原则
+## <a name="core-principles"></a>核心原则
 
 **简单易用**— 有关 AD RMS SDK 1.0 的反馈和使用模式进行了分析，该数据过去常常用于简化或自动处理最困难的编程任务。 使用 RMS SDK 2.1 创作的 RMS 应用程序需要的 RMS 代码通常比使用 AD RMS SDK 1.0 编写的 RMS 应用程序少 5–10 倍。
 **编写一次**— RMS SDK 2.1 应用程序不需要代码更改或重新编译即可使用最新 RMS 功能。 新 RMS 功能会随着添加到 RMS 服务器，而在现有应用程序中可用。
 **一致性**— RMS SDK 2.1 可帮助轻松地编写以一致方式采用不同 RMS 配置的应用程序。 它还显著降低了你作为应用程序开发人员而需要创作的 RMS 用户界面量，从而鼓励采用一致的外观并减少用户培训需求。
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 * [RMS 开发人员指南](developers-guide.md)
 * [AD RMS 开发人员活动角](http://blogs.msdn.com/b/rms/)
@@ -76,6 +76,6 @@ RMS SDK 2.1 支持一系列重要的客户端和服务器平台。 有关详细�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

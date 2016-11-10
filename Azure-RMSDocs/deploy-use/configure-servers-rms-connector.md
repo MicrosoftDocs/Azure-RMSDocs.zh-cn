@@ -18,7 +18,7 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
 
 ---
 
-# 为 Azure Rights Management 连接器配置服务器
+# <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
 >*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
 
@@ -28,7 +28,7 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
 在开始之前，请确保已安装并配置 RMS 连接器，并且已检查任何适用于将使用该连接器的服务器的[先决条件](deploy-rms-connector.md#prerequisites-for-the-rms-connector)。
 
 
-## 将服务器配置为使用 RMS 连接器
+## <a name="configuring-servers-to-use-the-rms-connector"></a>将服务器配置为使用 RMS 连接器
 安装并配置 RMS 连接器之后，即可配置将要连接到 Azure Rights Management 服务的本地服务器，并通过连接器使用此保护技术。 这意味着需要配置以下服务器：
 
 -   **对于 Exchange 2016 和 Exchange 2013**：客户端访问服务器和邮箱服务器
@@ -83,7 +83,7 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
 
 在这些服务器上进行配置更改之后，如果这些服务器正在运行 Exchange 或 SharePoint 并且以前配置为使用 AD RMS，则你必须重新启动它们。 在首次将它们配置为使用权限管理时，无需重新启动它们。 进行这些配置更改后，始终必须重新启动配置为使用文件分类基础结构的文件服务器。
 
-### 如何使用适用于 Microsoft RMS 连接器的服务器配置工具
+### <a name="how-to-use-the-server-configuration-tool-for-microsoft-rms-connector"></a>如何使用适用于 Microsoft RMS 连接器的服务器配置工具
 
 1.  如果你尚未下载适用于 Microsoft RMS 连接器的服务器配置工具的脚本 (GenConnectorConfig.ps1)，请从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkId=314106)下载。
 
@@ -126,7 +126,7 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
 >
 > 在上述两种情况下，你必须在没有配置为使用连接器的单独计算机上安装客户端应用程序。 然后它们即可正确地直接使用 RMS。
 
-## 将 Exchange 服务器配置为使用连接器
+## <a name="configuring-an-exchange-server-to-use-the-connector"></a>将 Exchange 服务器配置为使用连接器
 以下 Exchange 角色将与 RMS 连接器通信：
 
 -   对于 Exchange 2016 和 Exchange 2013：客户端访问服务器和邮箱服务器
@@ -146,7 +146,7 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
 > [!IMPORTANT]
 > 如果没有安装这些版本或更高版本的 Exchange 和 RMS 客户端，你就无法将 Exchange 配置为使用连接器。 继续之前，请确认已安装这些版本。
 
-### 将 Exchange 服务器配置为使用连接器
+### <a name="to-configure-exchange-servers-to-use-the-connector"></a>将 Exchange 服务器配置为使用连接器
 
 1. 通过使用 RMS 连接器管理工具和[授权服务器使用 RMS 连接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)部分的信息，确保 Exchange 服务器有权使用 RMS 连接器。 需要此配置，以便 Exchange 可以使用 RMS 连接器。
 
@@ -168,7 +168,7 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
     > 默认情况下，运行 **Set-IRMConfiguration -InternalLicensingEnabled $true** 后，出为邮箱启用 IRM 外，还将为 Outlook Web 应用和移动设备自动启用 IRM。 但管理员可以在不同级别禁用 IRM，例如，针对客户端访问服务器、Outlook Web App 虚拟目录或 Outlook Web App 邮箱策略，以及移动设备邮箱策略禁用。 如果用户在 Outlook Web App 中（等待一天后）或在移动设备上无法看到任何 Azure RMS 模板，而在 Outlook 客户端中能够看到这些模板，请检查相关设置，确保未禁用 IRM。 有关详细信息，请参阅 Exchange 文档中的 [Enable or Disable Information Rights Management on Client Access Servers](https://technet.microsoft.com/library/dd876938(v=exchg.150).aspx)（在客户端访问服务器上启用或禁用信息权限管理）。 
 
 
-## 将 SharePoint 服务器配置为使用连接器
+## <a name="configuring-a-sharepoint-server-to-use-the-connector"></a>将 SharePoint 服务器配置为使用连接器
 以下 SharePoint 角色将与 RMS 连接器通信：
 
 -   前端 SharePoint Web 服务器，包括托管中心管理服务器的 Web 服务器
@@ -190,7 +190,7 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
 
 运行 SharePoint 2010 的服务器必须安装了能够支持 RMS 加密模式 2 的 MSDRM 客户端版本。 Windows Server 2008 支持的最低版本包括在修补程序中，你可从 [在 Windows Server 2008 R2 和 Windows Server 2008 中，AD RMS 的 RSA 密钥长度增加到 2048 位](http://support.microsoft.com/kb/2627272)下载该修补程序。适用于 Windows Server 2008 R2 的最低版本可从 [在 Windows 7 或 Windows Server 2008 R2 中，AD RMS 的 RSA 密钥长度增加到 2048 位](http://support.microsoft.com/kb/2627273)下载。 Windows Server 2012 和 Windows Server 2012 R2 以本机方式支持加密模式 2。
 
-### 将 SharePoint 服务器配置为使用连接器
+### <a name="to-configure-sharepoint-servers-to-use-the-connector"></a>将 SharePoint 服务器配置为使用连接器
 
 1. 通过使用 RMS 连接器管理工具和[授权服务器使用 RMS 连接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)部分的信息，确保 SharePoint 服务器有权使用 RMS 连接器。 需要此配置，以便 Exchange 可以使用 RMS 连接器。
 
@@ -215,14 +215,14 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
     在 SharePoint 场上启用 IRM 之后，你可以使用每个库的 **“库设置”** 页上的 **“信息权限管理”** 选项，在各个库上启用 IRM。
 
 
-## 将文件分类基础结构的文件服务器配置为使用连接器
+## <a name="configuring-a-file-server-for-file-classification-infrastructure-to-use-the-connector"></a>将文件分类基础结构的文件服务器配置为使用连接器
 若要使用 RMS 连接器和文件分类基础结构来保护 Office 文档，文件服务器必须运行以下操作系统之一：
 
 -   Windows Server 2012 R2
 
 -   Windows Server 2012
 
-### 将文件服务器配置为使用连接器
+### <a name="to-configure-file-servers-to-use-the-connector"></a>将文件服务器配置为使用连接器
 
 1.  通过使用 RMS 连接器管理工具和[授权服务器使用 RMS 连接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)部分的信息，确保文件服务器有权使用 RMS 连接器。 需要此配置，以便 Exchange 可以使用 RMS 连接器。
 
@@ -240,7 +240,7 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
 
 3.  创建分类规则和文件管理任务，才能使用 RMS 加密保护文档，然后指定一个用于自动将 RMS 策略的应用的 RMS 模板。 有关详细信息，请参阅 Windows Server 文档库中的 [文件服务器资源管理器概述](http://technet.microsoft.com/library/hh831701.aspx) 。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 现已安装并配置了 RMS 连接器，并且你的服务器已配置为使用该连接器，IT 管理员和用户就可以使用 Azure RMS 保护和使用电子邮件与文档了。 若要让用户轻松使用此功能，请部署 RMS 共享应用程序，它会安装 Office 的外接程序并在文件资源管理器中添加新的右键单击选项。 有关详细信息，请参阅 [Rights Management 共享应用程序管理员指南](../rms-client/sharing-app-admin-guide.md)。
 
 可以使用 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)，检查向用户和管理员推出 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 之前是否还需要执行其他配置步骤。
@@ -249,6 +249,6 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

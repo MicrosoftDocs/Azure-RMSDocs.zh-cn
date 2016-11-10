@@ -1,5 +1,5 @@
-Azure Rights Management
+Azure 权限管理
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

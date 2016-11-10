@@ -20,19 +20,19 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
 ---
 
-# 操作说明：使服务应用程序可以使用基于云的 RMS
+# <a name="howto-enable-your-service-application-to-work-with-cloud-based-rms"></a>操作说明：使服务应用程序可以使用基于云的 RMS
 
 本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。 有关详细信息，请参阅 [Azure Rights Management 入门](https://technet.microsoft.com/library/jj585016.aspx)。
 
-**重要**  
+**重要说明**  
 为了通过 Azure RMS 使用 Rights Management Services SDK 2.1 服务应用程序，你需要创建自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md)
 
-## 先决条件
+## <a name="prerequisites"></a>先决条件
 
 -   必须安装并配置 RMS SDK 2.1。 有关详细信息，请参阅 [RMS SDK 2.1 入门](getting-started-with-ad-rms-2-0.md)。
 -   必须使用对称密钥选项或通过其他方式来 [通过 ACS 创建服务标识](https://msdn.microsoft.com/en-us/library/gg185924.aspx)，并记录来自该过程的密钥信息。
 
-## 连接到 Azure 权限管理服务
+## <a name="connecting-to-the-azure-rights-management-service"></a>连接到 Azure Rights Management 服务
 
 -   调用 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)。
 -   设置 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)。
@@ -50,9 +50,9 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
 **注意** - 由于发现服务的现有状况，如果你不在北美，则不会接受来自其他区域的对称密钥凭据，因此必须直接指定你的租户 URL。 这通过 [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx) 或 [IpcGetTemplateIssuerList](https://msdn.microsoft.com/library/hh535266.aspx) 函数上的类型为 [IPC\_CONNECTION\_INFO](https://msdn.microsoft.com/library/hh535274.aspx) 的 *pConnectionInfo* 参数来实现。
 
-## 生成对称密钥并收集所需信息
+## <a name="generate-a-symmetric-key-and-collect-the-needed-information"></a>生成对称密钥并收集所需信息
 
-### 用于生成对称密钥的说明
+### <a name="instructions-to-generate-a-symmetric-key"></a>用于生成对称密钥的说明
 
 -   安装 [Microsoft Online 登录助手](http://go.microsoft.com/fwlink/p/?LinkID=286152)
 -   安装 [Azure AD Powershell 模块](https://bposast.vo.msecnd.net/MSOPMW/8073.4/amd64/AdministrationConfig-en.msi)。
@@ -63,9 +63,9 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
     `Import-Module MSOnline`
 
-    `Connect-MsolService` （输入管理员凭据）
+    `Connect-MsolService`（输入管理员凭据）
 
-    `New-MsolServicePrincipal` （输入显示名称）
+    `New-MsolServicePrincipal`（输入显示名称）
 
 - 生成对称密钥之后，会输出有关密钥的信息（包括密钥本身和 *AppPrincipalId*）。
 
@@ -78,14 +78,14 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
       AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
 
 
-### 用于查明 **TenantBposId** 和 **Urls** 的说明
+### <a name="instructions-to-find-out-tenantbposid-and-urls"></a>用于查明 **TenantBposId** 和 **Urls** 的说明
 
 -   安装 [Azure RMS powershell 模块](https://technet.microsoft.com/en-us/library/jj585012.aspx)。
 -   启动 Powershell 并运行以下命令以获取租户的 RMS 配置。
 
     `Import-Module aadrm`
 
-    `Connect-AadrmService` （输入管理员凭据）
+    `Connect-AadrmService`（输入管理员凭据）
 
     `Get-AadrmConfiguration`
 
@@ -128,7 +128,7 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
     promptCtx.hCancelEvent = NULL;
     promptCtx.pcCredential = &cred;
 
-### 标识模板，然后加密
+### <a name="identify-a-template-and-then-encrypt"></a>标识模板，然后加密
 
 -   选择要用于加密的模板。
     调用 [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)（传入 [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) 的同一个实例）。
@@ -162,7 +162,7 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
 现在已完成使应用程序可以使用 Azure Rights Management 所需的步骤。
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 * [Azure Rights Management 入门](https://technet.microsoft.com/en-us/library/jj585016.aspx)
 * [RMS SDK 2.1 入门](getting-started-with-ad-rms-2-0.md)
@@ -184,6 +184,6 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -12,13 +12,13 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33f1e54c21507999d30dcee2ce63c8eb2d69895
-ms.openlocfilehash: 33520bcfc36ed0a022b87c4b2db1e6fcd7a6eb14
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 9dea728836d52249471d3dde69b63a9a2cd1467c
 
 
 ---
 
-# 记录和分析 Azure Rights Management 服务的使用情况
+# <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>记录和分析 Azure Rights Management 服务的使用情况
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -47,7 +47,7 @@ ms.openlocfilehash: 33520bcfc36ed0a022b87c4b2db1e6fcd7a6eb14
 
 有关 Azure Rights Management 使用日志记录的详细信息，请参阅以下部分。
 
-## 如何启用 Azure Rights Management 使用日志记录
+## <a name="how-to-enable-azure-rights-management-usage-logging"></a>如何启用 Azure Rights Management 使用日志记录
 从 2016 年 2 月开始，Azure Rights Management 使用日志记录功能默认为对所有用户启用。 这适用于在 2016 年 2 月以前已激活其 Azure Rights Management 服务的客户和在 2016 年 2 月后激活该服务的客户。 
 
 > [!NOTE]
@@ -57,14 +57,14 @@ ms.openlocfilehash: 33520bcfc36ed0a022b87c4b2db1e6fcd7a6eb14
 
 
 
-## 如何访问和使用 Azure Rights Management 使用日志
+## <a name="how-to-access-and-use-your-azure-rights-management-usage-logs"></a>如何访问和使用 Azure Rights Management 使用日志
 Azure Rights Management 服务将日志作为一系列 blob 写入 Azure 存储帐户。 每个 Blob 包含一条或多条日志记录，采用 W3C 扩展日志格式。 Blob 名称为数字，按创建顺序排列。 本文档后面的[如何解释 Azure Rights Management 使用日志](#how-to-interpret-your-azure-rights-management-usage-logs)部分包含了有关日志内容及其创建情况的更多信息。
 
 在 Azure Rights Management 操作之后，日志需要一段时间才能显示在你的存储帐户中。 大多数日志在 15 分钟之内显示。 我们建议你将日志下载到本地存储，例如本地文件夹、数据库或 map-reduce 存储库。
 
-若要下载使用日志，可使用适用于 Windows PowerShell 的 Azure Rights Management 管理模块。 有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。 如果你之前已下载了此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 **2.4.0.0**： `(Get-Module aadrm -ListAvailable).Version` 
+若要下载使用日志，可使用适用于 Windows PowerShell 的 Azure Rights Management 管理模块。 有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。 如果先前已下载此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 **2.4.0.0**：`(Get-Module aadrm -ListAvailable).Version` 
 
-### 使用 PowerShell 下载使用日志
+### <a name="to-download-your-usage-logs-by-using-powershell"></a>使用 PowerShell 下载使用日志
 
 1.  使用“以管理员身份运行”选项启动 Windows PowerShell，然后使用 [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) cmdlet 连接到 Azure Rights Management 服务：
 
@@ -80,30 +80,30 @@ Azure Rights Management 服务将日志作为一系列 blob 写入 Azure 存储�
 
     例如，在 E 盘上创建名为 Logs 的文件夹之后：
     
-    * 若要下载特定日期（例如 2016/2/1）的日志，请运行以下命令： `Get-AadrmUserLog -Path E:\Logs -fordate 2/1/2016`
+    * 若要下载特定日期（例如 2016/2/1）的日志，请运行以下命令：`Get-AadrmUserLog -Path E:\Logs -fordate 2/1/2016`
     
-    * 若要下载某一日期范围（例如从 2016/2/1 到 2016/2/14）的日志，请运行以下命令： `Get-AadrmUserLog -Path E:\Logs -fromdate 2/1/2016 –todate 2/14/2016` 
+    * 若要下载某一日期范围（例如从 2016/2/1 到 2016/2/14）的日志，请运行以下命令：`Get-AadrmUserLog -Path E:\Logs -fromdate 2/1/2016 –todate 2/14/2016` 
 
 如果你只指定了天（如我们的示例），则时间将假定为本地时间的 00:00:00，然后转换为 UTC。 如果你使用 -fromdate 或 -todate 参数指定了时间（例如，fordate "2/1/2016 15:00:00"），则日期和时间将转换为 UTC。 然后，Get-AadrmUserLog 命令将获取该 UTC 时间段的日志。
 
 你不能指定少于一整天的时间来进行下载。
 
-默认情况下，此 cmdlet 使用三个线程来下载日志。 如果你有足够的网络带宽，并且想要减少下载日志所需的时间，可使用 -NumberOfThreads 参数，该参数支持从 1 到 32 的值。 例如，如果你运行以下命令，此 cmdlet 将生成 10 个线程来下载日志： `Get-AadrmUserLog -Path E:\Logs -fromdate 2/1/2016 –todate 2/14/2016 -numberofthreads 10`
+默认情况下，此 cmdlet 使用三个线程来下载日志。 如果你有足够的网络带宽，并且想要减少下载日志所需的时间，可使用 -NumberOfThreads 参数，该参数支持从 1 到 32 的值。 例如，如果你运行以下命令，此 cmdlet 将生成 10 个线程来下载日志：`Get-AadrmUserLog -Path E:\Logs -fromdate 2/1/2016 –todate 2/14/2016 -numberofthreads 10`
 
 
 > [!TIP]
 > 你可以使用 [Microsoft Log Parser](https://www.microsoft.com/download/details.aspx?id=24659)（一种在各种常见日志格式之间进行转换的工具），将所有已下载日志文件整合为 CSV 格式。 你还能够使用该工具将数据转换为 SYSLOG 格式，或者将其导入到数据库。 安装该工具之后，请运行 `LogParser.exe /?` 以获得此工具的使用帮助和信息。 
 >
-> 例如，你可以运行以下命令，将所有信息导出为 .log 文件格式： `logparser –i:w3c –o:csv "SELECT * INTO AllLogs.csv FROM *.log"`
+> 例如，你可以运行以下命令，将所有信息导出为 .log 文件格式：`logparser –i:w3c –o:csv "SELECT * INTO AllLogs.csv FROM *.log"`
 
-#### 如果已在 2016 年 2 月 22 日日志记录更改之前手动启用 Azure Rights Management 使用日志记录
+#### <a name="if-you-manually-enabled-azure-rights-management-usage-logging-before-the-logging-change-february-22-2016"></a>如果已在 2016 年 2 月 22 日日志记录更改之前手动启用 Azure Rights Management 使用日志记录
 
 
 如果你在日志记录更改之前已使用使用日志记录，你将会在已配置的 Azure 存储帐户中找到使用日志。 Microsoft 不会将这些日志作为此日志记录更改的一部分，从存储帐户复制到新的 Azure Rights Management 管理的存储帐户。 你负责管理以前生成的日志的生命周期，并可以使用 [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) cmdlet 来下载旧日志。 例如：
 
-- 将所有可用日志下载到 E:\logs 文件夹： `Get-AadrmUsageLog -Path "E:\Logs"`
+- 将所有可用日志下载到 E:\logs 文件夹：`Get-AadrmUsageLog -Path "E:\Logs"`
     
-- 下载特定范围的 Blob： `Get-AadrmUsageLog –Path "E:\Logs" –FromCounter 1024 –ToCounter 2047`
+- 下载特定范围的 Blob：`Get-AadrmUsageLog –Path "E:\Logs" –FromCounter 1024 –ToCounter 2047`
 
 请注意，如果以下任一情况适用，则无需使用 Get-AadrmUsageLog cmdlet 来下载日志：
 
@@ -111,15 +111,15 @@ Azure Rights Management 服务将日志作为一系列 blob 写入 Azure 存储�
 
 - 已在 2016 年 2 月 22 日之后激活 Azure Rights Management 服务。
 
-## 如何解释 Azure Rights Management 使用日志
+## <a name="how-to-interpret-your-azure-rights-management-usage-logs"></a>如何解释 Azure Rights Management 使用日志
 使用以下信息可帮助你解释 Azure Rights Management 使用日志。
 
-### 日志序列
+### <a name="the-log-sequence"></a>日志序列
 Azure Rights Management 服务将日志作为一系列 blob 写入。 
 
 日志中的每个条目都有 UTC 时间戳。 由于 Azure Rights Management 服务在跨多个数据中心的多个服务器上运行，有时日志即使是按时间戳排序，也似乎并不符合时间顺序。 不过这种差异很小，通常在一分钟之内。 大多数情况下，这不会为日志分析带来麻烦。
 
-### Blob 格式
+### <a name="the-blob-format"></a>Blob 格式
 所有 Blob 都采用 W3C 扩展日志格式。 开头是以下两行：
 
 **#软件：RMS**
@@ -130,7 +130,7 @@ Azure Rights Management 服务将日志作为一系列 blob 写入。
 
 第三行枚举字段名称列表，以制表符分隔：
 
-**#字段：date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
+**#字段: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
 
 后面的每行都是日志记录。 这些字段的值与前一行具有相同的顺序，并且以制表符分隔。 请使用下表分析这些字段。
 
@@ -140,7 +140,7 @@ Azure Rights Management 服务将日志作为一系列 blob 写入。
 |time|时间|为请求提供服务时的 UTC 时间（24 小时格式）。<br /><br />源是为请求提供服务的服务器上的本地时钟。|21:59:28|
 |row-id|文本|此日志记录的唯一 GUID。 如果不存在值，则使用 correlation-id 值来标识该条目。<br /><br />在你整合日志或将日志复制为其他格式时，这个值是有用的。|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|Name|所请求的 RMS API 的名称。|AcquireLicense|
-|user-id|String|发出请求的用户。<br /><br />该值包括在单引号中。 由你管理的租户密钥 (BYOK) 所发出的调用具有值 **"**，这也适用于请求类型为匿名时的情况。|‘joe@contoso。com’|
+|user-id|String|发出请求的用户。<br /><br />该值包括在单引号中。 由你管理的租户密钥 (BYOK) 所发出的调用具有值 **"**，这也适用于请求类型为匿名时的情况。|‘joe@contoso.com’|
 |result|字符串|如果成功地为请求提供服务，则为 ‘Success’。<br /><br />如果为请求提供服务失败，则在单引号中显示错误类型。|'Success'|
 |correlation-id|文本|在 RMS 客户端日志和服务器日志之间通用的针对给定请求的 GUID。<br /><br />此值有助于你解决客户端问题。|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|文本|包括在大括号中的 GUID，标识受保护内容（例如某个文档）。<br /><br />只有当 request-type 为 AcquireLicense 时，此字段才具有值，对于其他所有请求类型，此字段都为空。|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
@@ -153,7 +153,7 @@ Azure Rights Management 服务将日志作为一系列 blob 写入。
 |c-ip|Address|发出请求的客户端的 IP 地址。|64.51.202.144|
 
 
-#### user-id 字段的例外
+#### <a name="exceptions-for-the-userid-field"></a>user-id 字段的例外
 虽然 user-id 字段通常指示发出请求的用户，但在两种例外情况下，该值不映射到真正用户：
 
 -   值 **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**。
@@ -164,7 +164,7 @@ Azure Rights Management 服务将日志作为一系列 blob 写入。
 
     此连接器发出的请求将使用服务主体名称 **Aadrm_S-1-7-0** 进行记录，该名称是在安装 RMS 连接器时自动生成的。
 
-#### 典型请求类型
+#### <a name="typical-request-types"></a>典型请求类型
 Azure Rights Management 服务有很多请求类型，但下表列出了其中一些最常用的请求类型。
 
 |请求类型|说明|
@@ -212,7 +212,7 @@ Azure Rights Management 服务有很多请求类型，但下表列出了其中�
 |UpdateTemplate|从 Azure 经典门户进行调用以更新现有模板。|
 
 
-## Windows PowerShell 参考
+## <a name="windows-powershell-reference"></a>Windows PowerShell 参考
 从 2016 年 2 月起，Azure Rights Management 使用日志记录需要的唯一 Windows PowerShell cmdlet 为 [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx)。 
 
 在此更改之前，Azure Rights Management 使用日志需要以下 cmdlet（现已弃用）：  
@@ -240,6 +240,6 @@ Azure Rights Management 服务有很多请求类型，但下表列出了其中�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

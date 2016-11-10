@@ -19,7 +19,7 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 ---
 
 
-# Azure RMS 的工作原理 揭秘
+# <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -39,7 +39,7 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 
 有关 Azure RMS 使用的算法和密钥长度的技术详细信息，请参阅下一部分。
 
-## Azure RMS 使用的加密控制：算法和密钥长度
+## <a name="cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths"></a>Azure RMS 使用的加密控制：算法和密钥长度
 尽管你不需要知道 RMS 的工作原理，但可能会有人询问你使用的加密控制，以确保安全保护符合行业标准。
 
 
@@ -49,7 +49,7 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 |算法：RSA<br /><br />密钥长度：2048 位|密钥保护|
 |SHA-256|证书签名|
 
-###### 脚注 1 
+###### <a name="footnote-1"></a>脚注 1 
 
 当文件具有扩展名 .ppdf 或者是受保护的文本文件或图像文件（例如 .ptxt 或 .pjpg）时，Rights Management 共享应用程序使用 256 位进行常规保护和本机保护。
 
@@ -65,30 +65,30 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 
 
 
-## Azure RMS 工作原理演练：首次使用、内容保护、内容使用
-为了更详细地了解 Azure RMS 的工作原理，让我们通过在[激活 Azure 权限管理服务](../deploy-use/activate-service.md)之后，当用户首次在其 Windows 计算机上使用权限管理服务（有时称为**初始化用户环境**或引导的过程）时，**保护内容**（文档或电子邮件），然后**使用**（打开并使用）被其他某人保护的内容，来演练一个典型的工作流。
+## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 工作原理演练：首次使用、内容保护、内容使用
+为了更详细地了解 Azure RMS 的工作原理，让我们通过在[激活 Azure Rights Management 服务](../deploy-use/activate-service.md)之后，当用户首次在其 Windows 计算机上使用权限管理服务（有时称为**初始化用户环境**或引导的过程）时，**保护内容**（文档或电子邮件），然后**使用**（打开并使用）被其他某人保护的内容，来演练一个典型的工作流。
 
 初始化用户环境后，该用户可以保护文档，或使用该计算机上的受保护文档。
 
 > [!NOTE]
 > 如果此用户移至另一台 Windows 计算机，或另一个用户使用这同一台 Windows 计算机，请重复该初始化过程。
 
-### 初始化用户环境
+### <a name="initializing-the-user-environment"></a>初始化用户环境
 在用户可以保护内容或使用 Windows 计算机上的受保护内容之前，必须在设备上准备用户环境。 这是一次性的过程，当用户尝试保护或使用受保护内容时会自动发生，无需用户干预：
 
 ![RMS 客户端激活 - 步骤 1](../media/AzRMS.png)
 
-**步骤 1 中发生的情况**：计算机上的 RMS 客户端首先连接到 Azure 权限管理服务，并通过使用其 Azure Active Directory 帐户对用户进行身份验证。
+**步骤 1 中发生的情况**：计算机上的 RMS 客户端首先连接到 Azure Rights Management 服务，并通过使用其 Azure Active Directory 帐户对用户进行身份验证。
 
 将用户的帐户与 Azure Active Directory 联合时，会自动进行这种身份验证，并且不会提示用户输入凭据。
 
 ![RMS 客户端激活 - 步骤 2](../media/AzRMS_useractivation2.png)
 
-**步骤 2 中发生的情况**：对用户进行身份验证后，连接将自动重定向到组织的 Azure 信息保护租户，该租户将颁发证书，让用户在 Azure 权限管理服务上进行身份验证，以便使用受保护内容并脱机保护内容。
+**步骤 2 中发生的情况**：对用户进行身份验证后，连接将自动重定向到组织的 Azure 信息保护租户，该租户将颁发证书，让用户在 Azure Rights Management 服务上进行身份验证，以便使用受保护内容并脱机保护内容。
 
 用户证书的副本存储在 Azure 中，因此，如果用户移到另一台设备，将使用相同的密钥创建证书。
 
-### 内容保护
+### <a name="content-protection"></a>内容保护
 当用户保护文档时，RMS 客户端将对未受保护的文档执行以下操作：
 
 ![RMS 文档保护 - 步骤 1](../media/AzRMS_documentprotection1.png)
@@ -107,12 +107,12 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 
 可将此文档存储在任意位置，或者使用任何方法将其共享，加密的文档始终附带该策略。
 
-### 内容使用
-当用户想要使用受保护的文档时，将通过请求对 Azure 权限管理服务的访问来启动 RMS 客户端：
+### <a name="content-consumption"></a>内容使用
+当用户想要使用受保护的文档时，将通过请求对 Azure Rights Management 服务的访问来启动 RMS 客户端：
 
 ![RMS 文档占用 - 步骤 1](../media/AzRMS_documentconsumption1.png)
 
-**步骤 1 中发生的情况**：经过身份验证的用户将文档策略和用户的证书发送到 Azure 权限管理服务。 服务解密并评估该策略，并生成用户对该文档拥有的权限列表（如果有）。
+**步骤 1 中发生的情况**：经过身份验证的用户将文档策略和用户的证书发送到 Azure Rights Management 服务。 服务解密并评估该策略，并生成用户对该文档拥有的权限列表（如果有）。
 
 ![RMS 文档占用 - 步骤 2](../media/AzRMS_documentconsumption2.png)
 
@@ -126,22 +126,22 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 
 客户端还将解密权限列表，并将其传递到应用程序，应用程序将在应用程序的用户界面中强制实施这些权限。
 
-### 变体
+### <a name="variations"></a>变体
 前面的演练包括标准方案，但存在一些变体：
 
--   **移动设备**：当移动设备通过 Azure 权限管理服务保护或使用文件时，流程要简单得多。 因为每个事务（保护或使用内容）是独立的，移动设备首先不会经历用户初始化过程。 与 Windows 计算机一样，移动设备将连接到 Azure 权限管理服务并进行身份验证。 为了保护内容，移动设备将提交一个策略，然后 Azure 权限管理服务将为移动设备发送一个发布许可证和对称密钥用于保护文档。 为了使用内容，当移动设备连接到 Azure 权限管理服务并进行身份验证时，它们将文档策略发送到 Azure 权限管理服务，并请求一个使用许可证以使用文档。 在响应中，Azure 权限管理服务会将所需的密钥和限制发送到移动设备。 这两个进程使用 TLS 来保护密钥交换和其他通信。
+-   **移动设备**：当移动设备通过 Azure Rights Management 服务保护或使用文件时，流程要简单得多。 因为每个事务（保护或使用内容）是独立的，移动设备首先不会经历用户初始化过程。 与 Windows 计算机一样，移动设备将连接到 Azure Rights Management 服务并进行身份验证。 为了保护内容，移动设备将提交一个策略，然后 Azure Rights Management 服务将为移动设备发送一个发布许可证和对称密钥用于保护文档。 为了使用内容，当移动设备连接到 Azure Rights Management 服务并进行身份验证时，它们将文档策略发送到 Azure Rights Management 服务，并请求一个使用许可证以使用文档。 在响应中，Azure Rights Management 服务会将所需的密钥和限制发送到移动设备。 这两个进程使用 TLS 来保护密钥交换和其他通信。
 
--   **RMS 连接器**：当 Azure 权限管理服务与 RMS 连接器结合使用时，流程保持不变。 唯一的差别在于，连接器充当本地服务（如 Exchange Server 和 SharePoint Server）与 Azure 权限管理服务之间的中继。 连接器本身不执行任何操作，例如用户环境初始化，或者加密或解密。 它只会中继通常要定向到 AD RMS 服务器的通信，处理每一端使用的协议之间的转换。 此方案使你可以将 Azure 权限管理服务与本地服务结合使用。
+-   **RMS 连接器**：当 Azure Rights Management 服务与 RMS 连接器结合使用时，流程保持不变。 唯一的差别在于，连接器充当本地服务（如 Exchange Server 和 SharePoint Server）与 Azure Rights Management 服务之间的中继。 连接器本身不执行任何操作，例如用户环境初始化，或者加密或解密。 它只会中继通常要定向到 AD RMS 服务器的通信，处理每一端使用的协议之间的转换。 此方案使你可以将 Azure Rights Management 服务与本地服务结合使用。
 
--   **常规保护 (.pfile)**：当 Azure 权限管理服务对文件提供一般性保护时，流程基本上与内容保护相同，不过，RMS 客户端将创建一个授予所有权限的策略。 使用该文件时，会先将它解密，然后将它传递到目标应用程序。 这种方案允许你保护所有文件，即使它们本机不支持 RMS。
+-   **常规保护 (.pfile)**：当 Azure Rights Management 服务对文件提供一般性保护时，流程基本上与内容保护相同，不过，RMS 客户端将创建一个授予所有权限的策略。 使用该文件时，会先将它解密，然后将它传递到目标应用程序。 这种方案允许你保护所有文件，即使它们本机不支持 RMS。
 
--   **受保护的 PDF (.ppdf)**：Azure 权限管理服务本机保护 Office 文件时，还会创建该文件的副本，并以相同的方法保护该副本。 唯一的差别在于，文件副本采用 PPDF 文件格式，RMS 共享应用程序只知道如何打开该格式以查看。 这种方案允许你通过电子邮件发送受保护的附件，知道移动设备上的收件人始终能够读取它们，即使移动设备没有相应的应用程序可本机支持受保护的 Office 文件。
+-   **受保护的 PDF (.ppdf)**：Azure Rights Management 服务本机保护 Office 文件时，还会创建该文件的副本，并以相同的方法保护该副本。 唯一的差别在于，文件副本采用 PPDF 文件格式，RMS 共享应用程序只知道如何打开该格式以查看。 这种方案允许你通过电子邮件发送受保护的附件，知道移动设备上的收件人始终能够读取它们，即使移动设备没有相应的应用程序可本机支持受保护的 Office 文件。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
-若要了解 Azure 权限管理服务的详细信息，请参阅**了解和探索**部分中的其他文章（如[应用程序如何支持 Azure 权限管理服务](applications-support.md)），了解你的现有应用程序如何通过与 Azure 权限管理集成来提供信息保护解决方案。 
+若要了解 Azure Rights Management 服务的详细信息，请参阅**了解和探索**部分中的其他文章（如[应用程序如何支持 Azure Rights Management 服务](applications-support.md)），了解你的现有应用程序如何通过与 Azure Rights Management 集成来提供信息保护解决方案。 
 
-请查看 [Azure 信息保护术语](../get-started/terminology.md)，以便熟悉在配置和使用 Azure 权限管理服务时可能遇到的术语。此外，还要确保在开始部署前查看 [Azure 信息保护的要求](../get-started/requirements-azure-rms.md)。 如果你要进一步研究并亲自尝试一下，请使用 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)。
+请查看 [Azure 信息保护术语](../get-started/terminology.md)，以便熟悉在配置和使用 Azure Rights Management 服务时可能遇到的术语。此外，还要确保在开始部署前查看 [Azure 信息保护的要求](../get-started/requirements-azure-rms.md)。 如果你要进一步研究并亲自尝试一下，请使用 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)。
 
 当做好开始为组织部署数据保护的准备时，请使用 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)获取部署步骤和操作说明链接。
 
@@ -150,6 +150,6 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 
