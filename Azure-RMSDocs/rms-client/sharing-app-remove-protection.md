@@ -2,6 +2,7 @@
 title: "使用 Rights Management 共享应用程序移除对文件的保护 | Azure 信息保护"
 description: "有关删除之前使用 RMS 共享应用程序保护的文件保护（即取消文件保护）的说明。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: ceb726e47c4eb9413b7d7eb5b1469e2a99992dda
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 3ef47e5dea1c6b56127e231ba6dba774c31cca90
 
 
 ---
 
-# 使用 Rights Management 共享应用程序移除对文件的保护
+# <a name="remove-protection-from-a-file-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序移除对文件的保护
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
@@ -27,7 +28,7 @@ ms.openlocfilehash: ceb726e47c4eb9413b7d7eb5b1469e2a99992dda
 > [!IMPORTANT]
 > 你必须是文件所有者才能移除保护。
 
-## 移除对文件的保护
+## <a name="to-remove-protection-from-a-file"></a>移除对文件的保护
 
 1.  在文件资源管理器中，右键单击文件（例如 Sample.ptxt），选择“使用 RMS 保护”，单击“就地保护”，然后单击“移除保护”：
 
@@ -39,18 +40,18 @@ ms.openlocfilehash: ceb726e47c4eb9413b7d7eb5b1469e2a99992dda
 
 原始的受保护文件（例如 Sample.ptxt）将会删除，并替换为一个同名但文件扩展名不受保护的文件（例如 Sample.txt）。
 
-## 示例和其他说明
+## <a name="examples-and-other-instructions"></a>示例和其他说明
 有关如何使用 Rights Management 共享应用程序以及操作说明的示例，请参阅以下 Rights Management 共享应用程序用户指南部分：
 
 -   [使用 RMS 共享应用程序的示例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## 另请参阅
+## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

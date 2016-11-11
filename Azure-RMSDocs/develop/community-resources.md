@@ -3,6 +3,7 @@ title: "社区资源 | Azure RMS"
 description: "不断壮大的开发人员群体可在多个平台上很好地支持 AD RMS。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,23 +15,23 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: dab2d84371cd2c45af617898f1694f99128551d9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: cd203a651362564e2f2275051f61f86b3bee6703
 
 
 ---
 
-# 社区资源
+# <a name="community-resources"></a>社区资源
 
 不断壮大的开发人员群体可在多个平台上很好地支持 Active Directory Rights Management Services。
 
-## AD RMS 社区资源
+## <a name="ad-rms-community-resources"></a>AD RMS 社区资源
 
 [RMS 开发人员活动角（博客）](http://blogs.msdn.com/b/rms/)是信息保护开发人员的活动中心。
 
 在 Connect 站点上的 Rights Management Services 部分上，你可找到当前可交付结果并有机会提供反馈。
 
-**备注**  
+**注意**  
 如果你尚未在 Microsoft Connect 上注册，请执行以下操作：
 
 -   导航到 [Microsoft Connect](http://connect.microsoft.com) (http://connect.microsoft.com)
@@ -50,6 +51,6 @@ ms.openlocfilehash: dab2d84371cd2c45af617898f1694f99128551d9
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

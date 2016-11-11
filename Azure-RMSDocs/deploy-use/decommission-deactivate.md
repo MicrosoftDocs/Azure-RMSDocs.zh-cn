@@ -2,6 +2,7 @@
 title: "解除 Azure Rights Management 服务授权和停用 Azure Rights Management 服务 | Azure 信息保护"
 description: "如果你决定不再想要使用 Azure 信息保护中的此信息保护服务，本文提供相关的信息和说明。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 57ae18a479e06084e1266276a4420a5092c23b8d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 865913eae3e0956c18d2caef4e68ab1dc07d74de
 
 
 ---
 
-# 解除 Azure Rights Management 授权和停用 Azure Rights Management
+# <a name="decommissioning-and-deactivating-azure-rights-management"></a>解除 Azure Rights Management 授权和停用 Azure Rights Management
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -47,13 +48,13 @@ ms.openlocfilehash: 57ae18a479e06084e1266276a4420a5092c23b8d
 
 准备好为组织停用 Azure Rights Management 服务时，请使用以下说明。
 
-## 停用权限管理
+## <a name="deactivating-rights-management"></a>停用权限管理
 使用以下某个过程来停用[!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]。
 
 > [!TIP]
 > 也可以使用 Windows PowerShell cmdlet [Disable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629422.aspx) 来停用 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]。
 
-#### 从 Office 365 管理中心停用权限管理
+#### <a name="to-deactivate-rights-management-from-the-office-365-admin-center"></a>从 Office 365 管理中心停用权限管理
 
 1.  使用你的工作或学校帐户（Office 365 部署的管理员）[登录到 Office 365](https://portal.office.com/) 。
 
@@ -74,7 +75,7 @@ ms.openlocfilehash: 57ae18a479e06084e1266276a4420a5092c23b8d
 
 现在，你应该会看到“Rights Management 未激活”  和用于激活的选项。
 
-#### 从 Azure 经典门户停用 Rights Management
+#### <a name="to-deactivate-rights-management-from-the-azure-classic-portal"></a>从 Azure 经典门户停用 Rights Management
 
 1.  登录到 [Azure 经典门户](http://go.microsoft.com/fwlink/p/?LinkID=275081)。
 
@@ -91,6 +92,6 @@ ms.openlocfilehash: 57ae18a479e06084e1266276a4420a5092c23b8d
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

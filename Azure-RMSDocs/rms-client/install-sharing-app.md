@@ -2,6 +2,7 @@
 title: "下载并安装 Rights Management 共享应用程序 | Azure 信息保护"
 description: "有关以交互方式安装适用于 Windows 的 RMS 共享应用程序，以便可以安全地与他人共享文档的说明。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: c705bfec85bb93cb03d7e3edc9f3ce5949a8b61d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f1553ebd64f174128e41f55b66582e8791ce9133
 
 
 ---
 
-# 下载和安装 Rights Management 共享应用程序
+# <a name="download-and-install-the-rights-management-sharing-application"></a>下载和安装 Rights Management 共享应用程序
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 你无需是本地管理员就能安装 RMS 共享应用程序。 但是，如果你不是本地管理员而使用 Office 2010，就会有一些限制。 有关详细信息，请参阅本页上的[如果你不是本地管理员，并且使用 Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) 部分。
 
-## 下载并安装权限管理共享应用程序
+## <a name="to-download-and-install-the-rights-management-sharing-application"></a>下载并安装权限管理共享应用程序
 
 1.  转到 Microsoft 网站上的 [Microsoft 权限管理](http://go.microsoft.com/fwlink/?LinkId=303970) 页。
 
@@ -41,7 +42,7 @@ ms.openlocfilehash: c705bfec85bb93cb03d7e3edc9f3ce5949a8b61d
 
 现在，你可以随时开始保护你的文件或阅读其他人保护的文件。
 
-## 如果你不是本地管理员，而且使用 Office 2010
+## <a name="if-you-are-not-a-local-administrator-and-use-office-2010"></a>如果你不是本地管理员，而且使用 Office 2010
 如果你登录到计算机而没有本地管理权限，并且安装程序检测到你已安装 Office 2010，就会显示一条警告消息，指出某些方案将不适用于此配置。 这些方案包括：
 
 -   如果组织使用 Azure 信息保护中的 Azure Rights Management 服务，而不是本地版本的 Rights Management，那么：
@@ -56,19 +57,19 @@ ms.openlocfilehash: c705bfec85bb93cb03d7e3edc9f3ce5949a8b61d
 
 你可以继续安装并接受这些已知限制。 也可停止安装，在步骤 3 中运行 Setup.exe 时使用“以管理员身份运行”选项重新运行它或请管理员为你安装。 管理员可为你[编写此安装的脚本](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)，使它可以自动安装。
 
-## 示例和其他说明
+## <a name="examples-and-other-instructions"></a>示例和其他说明
 有关如何使用 Rights Management 共享应用程序以及操作说明的示例，请参阅以下 Rights Management 共享应用程序用户指南部分：
 
 -   [使用 RMS 共享应用程序的示例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## 另请参阅
+## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
