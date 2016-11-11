@@ -2,6 +2,7 @@
 title: "如何发现用户是否已注册个人 RMS | Azure 信息保护"
 description: "作为管理员，你如何知道用户是否注册了个人 RMS？ 你可能会分别或结合使用本文所述的任何方法。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/24/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1a9de2d0ef3021335e94cde86a7e6b844b15908
-ms.openlocfilehash: 70909cfa78800eabb798aec34264770104f7c47b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: b9979d48af7146f8021de840248f71cb1399b777
 
 
 ---
 
 
-# 如何发现你的用户注册了个人 RMS？
+# <a name="how-to-find-out-if-your-users-have-signed-up-for-rms-for-individuals"></a>如何发现你的用户注册了个人 RMS？
 
 >*适用于：Azure 信息保护*
 
@@ -36,6 +37,6 @@ ms.openlocfilehash: 70909cfa78800eabb798aec34264770104f7c47b
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
