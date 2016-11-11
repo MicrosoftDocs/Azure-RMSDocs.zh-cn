@@ -1,34 +1,36 @@
 ---
 title: "默认策略 | Azure 信息保护"
 description: "了解如何配置 Azure 信息保护的默认策略。 如果修改默认策略，则可以引用这些值以返回默认策略。"
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 531d7a474daeea752fc8cd63b8b39e9fec373a24
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: 5c3d3962d72a0dc3d08bdb869f6b00f4524477b5
 
 
 ---
 
-# 默认 Azure 信息保护策略
+# <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
 >*适用于：Azure 信息保护*
 
 使用以下信息来了解如何配置 Azure 信息保护的默认策略。 如果修改默认策略，则可以引用这些值以返回默认策略。
 
-## 信息保护栏
+## <a name="information-protection-bar"></a>信息保护栏
 
 |Setting|值|
 |-------------------------------|---------------------------|
 |标题|敏感度|
 |工具提示|信息敏感度包含四个不同级别（公共、内部、机密、秘密），使用户可确定向企业内部或外部未经授权的用户公开信息的风险。|
 
-## 标签
+## <a name="labels"></a>标签
 
 |Label|工具提示|设置|
 |-------------------------------|---------------------------|-----------------|
@@ -38,14 +40,14 @@ ms.openlocfilehash: 531d7a474daeea752fc8cd63b8b39e9fec373a24
 |机密|此数据包括敏感业务信息。 向未经授权的用户公开此数据可能会对组织造成损坏。 有关机密信息的示例包括员工信息、各个客户项目或合同和销售帐户数据。|**已启用**：打开 <br /><br />**颜色**：橙色<br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />**条件**：无<br /><br />**保护**：无|
 |秘密|此数据包括必须予以保护的高度敏感业务信息。 向未经授权的用户公开秘密数据可能会对组织造成严重损坏。 有关秘密信息的示例包括个人身份信息、客户记录、源代码和预先公布的财务报告。|**已启用**：打开 <br /><br />**颜色**：红色<br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />**条件**：无<br /><br />**保护**：无|
 
-## 子标签
+## <a name="sublabels"></a>子标签
 
 |Label|工具提示|设置|
 |-------------------------------|---------------------------|-----------------|
 |秘密 \ 所有公司|此数据包括敏感业务信息 — 允许所有公司员工使用。|**已启用**：打开 <br /><br />**可视标记**：关闭<br /><br />**条件**：无<br /><br />**保护**：无|
 |秘密 \ 我的组|此数据包括敏感业务信息 — 仅允许员工组使用。|**已启用**：打开 <br /><br />**可视标记**：关闭<br /><br />**条件**：无<br /><br />**保护**：无|
 
-## 全局设置
+## <a name="global-settings"></a>全局设置
 
 |Setting|值|
 |-------------------------------|---------------------------|
@@ -54,12 +56,12 @@ ms.openlocfilehash: 531d7a474daeea752fc8cd63b8b39e9fec373a24
 |用户必须提供理由以设置较低分类标签、删除标签或删除保护|关|
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
-有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organization-s-policy)(#配置组织的策略) 部分中的链接。 
+有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

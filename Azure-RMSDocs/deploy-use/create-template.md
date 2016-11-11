@@ -2,8 +2,9 @@
 title: "创建、配置和发布自定义模板 | Azure 信息保护"
 description: "有关在 Azure 经典门户中创建和管理自定义模板的说明。 模板可使最终用户和其他管理员轻松地应用可保护文档和电子邮件的合适策略。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,25 +13,25 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d205e63bdd8819177493837296259c5400a76503
-ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
+ms.sourcegitcommit: 0046023125fe339ed408edf47c59e36708b01783
+ms.openlocfilehash: 00661951513647add0c638e0eeb9e9fe38fa2d8d
 
 
 ---
 
 
-# 创建、配置和发布自定义模板
+# <a name="create-configure-and-publish-a-custom-template"></a>创建、配置和发布自定义模板
 
 >*适用于：Azure 信息保护、Office 365*
 
 
 你可以在 Azure 经典门户中创建和管理自定义模板。 可以直接从 Azure 经典门户执行这些操作，也可以登录到 Office 365 管理中心，并选择 Rights Management 的“高级功能”，它会将你重定向至 Azure 经典门户。
 
-必须是全局管理员才能在 Azure 经典门户中创建和管理模板。 如果已将 Azure Rights Management 服务的全局管理员角色分配给其他用户，他们也可以创建和管理模板，但必须使用 [PowerShell](configure-templates-with-powershell.md)。 有关详细信息，请参阅[是否必须是全局管理员才能配置 Azure RMS？我可以委派给其他管理员吗？](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
+必须是全局管理员才能在 Azure 经典门户中创建和管理模板。 如果已将 Azure Rights Management 服务的全局管理员角色分配给其他用户，他们也可以创建和管理模板，但必须使用 [PowerShell](configure-templates-with-powershell.md)。 有关详细信息，请参阅[是否必须是全局管理员才能配置 Azure RMS？我可以委派给其他管理员吗？](../get-started/faqs-rms.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 请使用以下过程为权限管理创建、配置和发布自定义模板。
 
-## 创建自定义模板
+## <a name="to-create-a-custom-template"></a>创建自定义模板
 
 1.  根据你是登录到 Office 365 管理中心还是登录到 Azure 经典门户，执行以下操作之一：
 
@@ -76,7 +77,7 @@ ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
 
 4. 在“开始使用 Rights Management”快速启动页中，现在可单击“管理你的权限策略模板”。 你将看到新创建的模板已添加到模板列表中，其状态为“已存档” 。 在这个阶段，模板已创建但尚未配置，对用户是不可见的。
 
-## 配置和发布自定义模板
+## <a name="to-configure-and-publish-a-custom-template"></a>配置和发布自定义模板
 
 1.  在 Azure 经典门户的“模板”页中选择你新创建的模板。
 
@@ -164,10 +165,10 @@ ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
 > [!WARNING]
 > 当你对以前保存的模板进行更改时，客户端将不会看到对模板的这些更改，直至这些模板在它们的计算机上刷新。 有关详细信息，请参阅[为用户刷新模板](refresh-templates.md)。
 
-## 另请参阅
-[为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
+## <a name="see-also"></a>另請參閱
+[为 Azure 权限管理配置自定义模板](configure-custom-templates.md)
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

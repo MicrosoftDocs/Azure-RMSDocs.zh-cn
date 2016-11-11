@@ -109,7 +109,7 @@ ms.openlocfilehash: 96b71d26461559aa8e53960e7e8f3f748b7ebb1d
 
 * [开发人员术语和概念](core-concepts.md)
 
-* [iOS / OS X API 参考](https://msdn.microsoft.com/library/dn758306.aspx)
+* [iOS/OS X API 参考](https://msdn.microsoft.com/library/dn758306.aspx)
 
  
 

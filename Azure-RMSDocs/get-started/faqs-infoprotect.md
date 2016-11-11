@@ -3,7 +3,7 @@ title: "有关分类和标签的常见问题 | Azure 信息保护"
 description: "对 Azure 信息保护的预览版有疑问？ 请查看此处是否有答案。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ce4fc256cf80fdd2e4a8212e2f64ffc6ca6a3964
-ms.openlocfilehash: 9b341a53a85242839d737bc36c90a8f94637bae1
+ms.sourcegitcommit: b23466ee412f3e705f49083c11c2099c0cdcd2d6
+ms.openlocfilehash: b9e0a154b67bc54b7868021fb46f7d52c8b7e3bd
 
 
 ---
@@ -34,13 +34,17 @@ Azure 信息保护客户端在 Microsoft Office 应用中添加了一个信息�
 
 当前版本具有以下限制。 有关其他特性和功能何时可用的信息，请留意[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)和 [Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)上的公告：
 
-- 对于分类和标签没有任何集中式日志记录。
+- 只能向 Office 文件类型和 Outlook 电子邮件应用标签。
+
+- 安装了 Azure 信息保护客户端的所有用户都可以看到 Office 外接程序上的标签。
 
 - 标签名称和工具提示仅支持一种语言。
 
-- 自动分类的条件必须是短语或模式。
-
 - 无法在 Windows 文件资源管理器中对文件进行分类。
+
+- 对于分类和标签没有任何集中式日志记录。
+
+- 自动分类的条件必须是短语或模式。
 
 - 暂不支持适用于移动设备（iOS 和 Android） Mac 计算机的 Office 应用和 Office web 应用（Office Online）。
 
@@ -53,6 +57,10 @@ Azure 信息保护客户端在 Microsoft Office 应用中添加了一个信息�
 若要配置 Azure 信息保护策略，必须以 Azure Active Directory 全局管理员的身份登录到 Azure 门户。
 
 但是，如果在安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)时选择安装演示策略，则无需登录门户即可查看和试用标签功能。 演示策略在本地安装 Azure 信息保护的默认策略，因此你可以尝试为文档和电子邮件设置标签，但是，在未登录 Azure 门户的情况下你将无法更改或添加新标签。 
+
+## Azure 门户中的哪些选项是 P1 或 P2？
+
+若要查看 **Azure 信息保护高级版 1** (P1) 订阅与 **Azure 信息保护高级版 2** (P2) 订阅中包含的功能，请参阅 Azure 信息保护站点中的[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。
 
 ## Azure 信息保护是否支持本地和混合方案？
 
@@ -150,6 +158,6 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 如果你有任何问题或反馈，请使用 [Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/)。 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

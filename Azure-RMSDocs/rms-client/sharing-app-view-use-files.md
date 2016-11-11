@@ -3,7 +3,7 @@ title: "查看和使用受 Rights Management 保护的文件 | Azure 信息保�
 description: "有关查看和使用受保护文件（需要安装 Rights Management (RMS) 共享应用程序）的说明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3f906815da2acd8f52bd742306d9936a71229c97
+ms.sourcegitcommit: 94a8729e7c7e5bb438ac2bd48789a522c8de8cc4
+ms.openlocfilehash: db8d6a9c5959139ee76f022a5cee997bab24e6c9
 
 
 ---
@@ -40,7 +40,7 @@ ms.openlocfilehash: 3f906815da2acd8f52bd742306d9936a71229c97
 如果你看到两个版本的文件，但具有不同的文件扩展名，仅在不打开另一个文件的情况下打开具有 .ppdf 文件扩展名的文件。 如果 .ppdf 版本也无法打开，请首先安装 [RMS 共享应用程序](install-sharing-app.md)，因为该程序知道如何打开具有 .ppdf 文件扩展名的文件。
 
 > [!NOTE]
-> 有关详细信息，请参阅“[自动创建的 .ppdf 文件是什么文件？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)”。
+> 有关详细信息，请参阅[自动创建的 .ppdf 文件是什么文件？](sharing-app-dialog-box.md#whats-the-ppdf-file-thats-automatically-created)
 
 文件的打开方式取决于保护方式，此保护方式你可以通过查看文件扩展名得知。 在每种情况下，只要文件受到保护，打开它就需要审核并将处于审核状态。 此外，如果文件以电子邮件附件的形式发送，则每次你打开文件时，发件人都会收到电子邮件通知。
 
@@ -107,6 +107,6 @@ ms.openlocfilehash: 3f906815da2acd8f52bd742306d9936a71229c97
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 
