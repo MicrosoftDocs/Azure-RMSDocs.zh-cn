@@ -2,6 +2,7 @@
 title: "支持 Rights Management API 的其他应用程序 - 安装和配置 | Azure 信息保护"
 description: "了解 Azure 信息保护中的 Azure Rights Management 服务如何支持其他应用程序以保护组织的数据。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/10/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3b5f82e495291bd48d488f44bc72c1d478a879e0
-ms.openlocfilehash: 0ee1e316310df889f87b1bc7932d8970abae140f
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 28e81e174e1b1a39928fa47f9155c40e769b633f
 
 
 ---
 
-# 支持 Rights Management API 的其他应用程序
+# <a name="other-applications-that-support-the-rights-management-apis"></a>支持 Rights Management API 的其他应用程序
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -28,11 +29,11 @@ ms.openlocfilehash: 0ee1e316310df889f87b1bc7932d8970abae140f
 
 同样，很多软件供应商提供各种应用程序作为信息保护解决方案，也称为企业权限管理 (ERM) 产品。 常见的例子是支持特定平台的 Azure Rights Management 服务的 PDF 阅读器。 可使用[支持 Azure Rights Management 数据保护的应用程序](../get-started/requirements-applications.md)中的表来确定支持 Rights Management 的应用程序（启用 RMS 的应用程序），然后使用 Web 搜索购买或下载应用程序。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 若要查看其他应用程序和服务如何支持 Azure Rights Management 服务，请参阅[应用程序如何支持 Azure Rights Management 服务](applications-support.md)。
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

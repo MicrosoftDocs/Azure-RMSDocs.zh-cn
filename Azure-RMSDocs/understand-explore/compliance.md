@@ -2,6 +2,7 @@
 title: "合规性和支持信息 | Azure 信息保护"
 description: "Azure 信息保护的支持信息，包括法律、合规性和 SLA。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,17 +21,17 @@ ms.openlocfilehash: 5fbc0af13f1acdbd6b7a1a267c9d2be2b90b8a1b
 
 
 
-# Azure 信息保护的合规性和支持信息
+# <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure 信息保护的合规性和支持信息
 
 Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻找的信息与 Azure 信息保护相关，但与如何使用 Azure 信息保护服务无关，请查看以下资源：
 
-## 法律和隐私
+## <a name="legal-and-privacy"></a>法律和隐私
 
 - 对于 Microsoft Azure 协议信息： [Microsoft Azure 协议](http://azure.microsoft.com/support/legal/subscription-agreement/)
 
 - 对于 Microsoft Azure 隐私信息： [Microsoft Azure 隐私声明](http://azure.microsoft.com/support/legal/privacy-statement/)
 
-## 安全、合规性和审核
+## <a name="security-compliance-and-auditing"></a>安全、合规性和审核
 
 请参阅 [Azure RMS 解决了哪些问题？](../understand-explore/azure-rms-problems-it-solves.md)一文中的[安全、合规性和法规要求](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) 此外：
 
@@ -38,7 +39,7 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 - 对于 FIPS 140 信息： [FIPS 140 验证](https://technet.microsoft.com/library/security/cc750357.aspx)
 
-## 服务级别协议
+## <a name="service-level-agreements"></a>服务级别协议
 
 - 按所选区域的 Azure 信息保护服务级别协议：[从产品许可搜索页下载](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=37)
 
@@ -46,7 +47,7 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 -   Azure Active Directory 的服务级别协议： [服务级别协议](http://azure.microsoft.com/support/legal/sla/)
 
-## 文档
+## <a name="documentation"></a>文档
 
 - Azure Active Directory 文档：[Azure Active Directory](/active-directory/)
 

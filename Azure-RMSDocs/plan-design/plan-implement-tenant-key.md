@@ -3,7 +3,7 @@ title: "计划和实施你的 Azure Rights Management 租户密钥 | Azure 信�
 description: "此信息有助于规划和管理 Azure 信息保护租户密钥。 为了遵守适用于组织的特别规定，你可能想要自行管理租户密钥，而不是由 Microsoft 管理你的租户密钥（默认设置）。 自行管理租户密钥也称为自带密钥 (BYOK)。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/14/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bad084502b9b7e55c6e80dccfbd66c3f34b63c7c
-ms.openlocfilehash: ed35e72a5dbe23aba0817640075d34fd01bd269d
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: b8380389267d77da53a5b87ffd606b6e754de7f3
 
 
 ---
 
-# 计划和实施 Azure 信息保护租户密钥
+# <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -37,7 +37,7 @@ ms.openlocfilehash: ed35e72a5dbe23aba0817640075d34fd01bd269d
 |需要装有 Azure Rights Management 服务的 Exchange Online 中的完整 IRM 功能|由 Microsoft 管理|
 |你的密钥由你自己创建，并在硬件安全模块 (HSM) 中受保护|BYOK<br /><br />目前，此配置将导致 Exchange Online 中的 IRM 功能降低。 有关详细信息，请参阅 [BYOK 定价和限制](byok-price-restrictions.md)。|
 
-## 选择你的租户密钥拓扑：由 Microsoft 管理（默认设置）或由你管理 (BYOK)
+## <a name="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok"></a>选择你的租户密钥拓扑：由 Microsoft 管理（默认设置）或由你管理 (BYOK)
 确定哪种租户密钥拓扑最适合你的组织。 默认情况下，Azure 信息保护生成你的租户密钥，并管理租户密钥生命周期的大多数方面。 这是最简单的选项，管理开销最低。 大多数情况下，你甚至不需要知道自己有租户密钥。 你只需注册 Azure 信息保护，密钥管理过程的剩余部分将由 Microsoft 处理。
 
 或者，你可能希望通过使用 [Azure 密钥保管库](https://azure.microsoft.com/services/key-vault/)完全控制你的租户密钥。 此方案涉及到创建你的租户密钥并将主控副本保存在本地。 这种方案通常称为自带密钥 (BYOK)。 使用这种选项的过程如下：
@@ -53,7 +53,7 @@ ms.openlocfilehash: ed35e72a5dbe23aba0817640075d34fd01bd269d
 > [!NOTE]
 > 作为一种附加保护措施，Azure 密钥保管库在位于北美、EMEA（欧洲、中东和非州）和亚洲等地区的数据中心使用单独的安全域。 对于 Azure 的其他实例，如 Microsoft Azure 德国和 Azure 政府。 管理自己的租户密钥时，它将关联到你的 Azure 信息保护租户注册所在地区或实例的安全域。 例如，欧洲客户的租户密钥无法在北美或亚洲的数据中心使用。
 
-## 租户密钥生命周期
+## <a name="the-tenant-key-lifecycle"></a>租户密钥生命周期
 如果你决定由 Microsoft 管理你的租户密钥，Microsoft 将处理大多数密钥生命周期操作。 但是，如果你决定自行管理租户密钥，则要负责 Azure 密钥保管库中的很多密钥生命周期操作，以及其他一些过程。
 
 下图显示和比较了这两个选项。 第一张图显示在由 Microsoft 管理租户密钥的默认配置中，管理员开销非常低。
@@ -68,7 +68,7 @@ ms.openlocfilehash: ed35e72a5dbe23aba0817640075d34fd01bd269d
 
 如果你决定自行管理租户密钥，请阅读以下部分以获取更多信息。
 
-## 实施 Azure 信息保护租户密钥
+## <a name="implementing-your-azure-information-protection-tenant-key"></a>实施 Azure 信息保护租户密钥
 
 如果你决定自行生成和管理租户密钥，请使用本部分中的信息和过程；“自带密钥”(BYOK) 方案：
 
@@ -78,15 +78,15 @@ ms.openlocfilehash: ed35e72a5dbe23aba0817640075d34fd01bd269d
 > 
 > 如果你的组织制定了关于密钥处理的特定策略，也[请与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)。
 
-### BYOK 的先决条件
+### <a name="prerequisites-for-byok"></a>BYOK 的先决条件
 有关自带密钥 (BYOK) 的先决条件列表，请参阅以下表格。
 
 |要求|更多信息|
 |---------------|--------------------|
 |支持 Azure 信息保护的订阅。|有关可用订阅的详细信息，请参阅 Azure 信息保护[定价页](https://go.microsoft.com/fwlink/?LinkId=827589)。|
 |请不要使用个人 RMS 或 Exchange Online。 或者，如果你使用 Exchange Online，应了解并接受对此配置使用 BYOK 的限制。|有关 BYOK 当前限制的详细信息，请参阅 [BYOK 定价和限制](byok-price-restrictions.md)。<br /><br />**重要事项**：目前，BYOK 不兼容 Exchange Online。|
-|为密钥保管库 BYOK 列出的所有先决条件。|请参阅 Azure 密钥保管库文档的 [Prequisites for BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br />**注意**：如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，必须拥有最低版本为 11.62 的 Thales 固件。|
-|适用于 Windows PowerShell 的 Azure Rights Management 管理模块。|有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。 <br /><br />如果你之前已安装了此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 **2.5.0.0**： `(Get-Module aadrm -ListAvailable).Version`|
+|为密钥保管库 BYOK 列出的所有先决条件，其中包括付费或试用版 Azure 订阅。 |请参阅 Azure 密钥保管库文档中的 [Prerequisites for BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br /> 免费的 Azure 订阅提供相应的访问权限，可配置 Azure Active Directory 以及 Azure 权限管理自定义模板（**可访问 Azure Active Directory**），但不足以使用 Azure 密钥保管库。 若要确认拥有可用于 BYOK 的 Azure 订阅，请使用 [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx) PowerShell cmdlet： <br /><br /> 1.启动 Azure PowerShell 会话，然后使用以下命令登录 Azure 帐户：`Login-AzureRmAccount`<br /><br />2.键入以下命令，并确认可以看到显示了订阅名称和 ID 以及 租户 ID 的值，并且状态为“已启用”：`Get-AzureRmSubscription`<br /><br />如果没有显示任何值，并且返回到提示，则表示没有可用于 BYOK 的 Azure 订阅。 <br /><br />**注意**：如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，则除 BYOK 先决条件以外，必须拥有最低版本为 11.62 的 Thales 固件。|
+|适用于 Windows PowerShell 的 Azure Rights Management 管理模块。|有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。 <br /><br />如果之前已安装了此 Windows PowerShell 模块，请运行以下命令检查版本号是否至少为 **2.5.0.0**：`(Get-Module aadrm -ListAvailable).Version`|
 
 有关 Thales HSM 及其如何与 Azure 密钥保管库一起使用的详细信息，请参阅 [Thales website](https://www.thales-esecurity.com/msrms/cloud)（Thales 网站）。
 
@@ -109,7 +109,7 @@ ms.openlocfilehash: ed35e72a5dbe23aba0817640075d34fd01bd269d
 如果需要确认在 Azure RMS 服务中是否正确设置了密钥 URL，可在 Azure 密钥保管库中运行 [Get-AzureKeyVaultKey](https://msdn.microsoft.com/en-us/library/dn868053(v=azure.300\).aspx) 来查看密钥 URL。
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 现在，你已经规划并根据需要生成了租户密钥，请执行以下操作：
 
@@ -136,6 +136,6 @@ ms.openlocfilehash: ed35e72a5dbe23aba0817640075d34fd01bd269d
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

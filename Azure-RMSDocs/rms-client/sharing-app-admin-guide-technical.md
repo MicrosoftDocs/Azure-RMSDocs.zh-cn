@@ -2,6 +2,7 @@
 title: "Rights Management 共享应用程序技术概述 | Azure 信息保护"
 description: "面向负责部署适用于 Windows 的 RMS 共享应用程序的企业网络管理员提供的技术详细信息。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

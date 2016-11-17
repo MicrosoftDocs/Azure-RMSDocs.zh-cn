@@ -3,6 +3,7 @@ title: "Android 代码示例 | Azure RMS"
 description: "本主题向你介绍 Android 版本的 RMS SDK 的重要代码元素。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,14 +21,14 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 
 ---
 
-# Android 代码示例
+# <a name="android-code-examples"></a>Android 代码示例
 
 本主题向你介绍 Android 版本的 RMS SDK 的重要代码元素。
 
 **注意** 在示例代码以及随后的说明中，我们使用术语 MSIPC (Microsoft Information Protection and Control) 来引用客户端进程。
 
 
-## 使用 Microsoft Rights Management SDK 4.2 - 重要方案
+## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>使用 Microsoft Rights Management SDK 4.2 - 重要方案
 
 以下是摘取自一个较大示例应用程序的代码示例，表示对你学习此 SDK 十分重要的开发方案。 这些示例演示 Microsoft 受保护的文件格式（称为受保护的文件）的使用、自定义受保护的文件格式的使用以及自定义 UI 控件的使用。
 
@@ -35,7 +36,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 
 示例应用程序 *MSIPCSampleApp* 可针对 Android 操作系统用于此 SDK。 请参阅 GitHub 上的 [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android) 以便可以访问此示例应用程序。
 
-### 方案：使用受 RMS 保护的文件
+### <a name="scenario-consume-an-rms-protected-file"></a>方案：使用受 RMS 保护的文件
 
 -   **步骤 1**：创建 [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx)
 
@@ -197,7 +198,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
                 }
 
 
-### 方案：使用模板创建新的受保护文件
+### <a name="scenario-create-a-new-protected-file-using-a-template"></a>方案：使用模板创建新的受保护文件
 
 此方案首先获取模板列表，选择第一个模板以创建策略，然后创建并写入新的受保护的文件。
 
@@ -321,7 +322,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 
 
 
-### 方案：打开自定义受保护的文件
+### <a name="scenario-open-a-custom-protected-file"></a>方案：打开自定义受保护的文件
 
 -   **步骤 1**：从 *serializedContentPolicy* 创建 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
 
@@ -436,7 +437,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
         buffer.close();    customProtectedInputStream.close();  }  catch (IOException e)  {    ...  } }
 
 
-### 方案：使用自定义（临时）策略创建自定义受保护的文件
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>方案：使用自定义（临时）策略创建自定义受保护的文件
 
 -   **步骤 1**：在用户提供了电子邮件地址的情况下，创建策略描述符。
 

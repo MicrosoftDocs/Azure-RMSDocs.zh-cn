@@ -3,6 +3,7 @@ title: "如何使用加密设置 | Azure RMS"
 description: "Azure RMS 加密包及其使用的代码片段的方向。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/19/2016
 ms.topic: article
@@ -20,11 +21,11 @@ ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
 
 ---
 
-# 操作说明：使用加密设置
+# <a name="howto-work-with-encryption-settings"></a>操作说明：使用加密设置
 
 本主题将针对加密包，并显示其使用的一些代码段。
 
-## 新的默认 AES 256 的支持
+## <a name="support-for-aes-256-the-new-default"></a>新的默认 AES 256 的支持
 
 假设针对 RMS SDK 2.1 2015 年 3 月的更新版本或更高版本进行构建，则无需其他代码即可使用基于的 *AES 256* 的加密，因为它是新的默认值。 应该认真考虑使用 *AES 256* 此版本的其他安全优势来更新你的应用程序。
 
@@ -32,7 +33,7 @@ ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
 > 对 *AES 256* 受保护的文件的使用支持自 [2014 年 10 月的版本](release-notes-rtm.md)起已存在。 如果正在运行使用 2014 年 10 月之前的 SDK 版本构建的应用程序，此更新将中断该应用程序。 请确保正在构建的应用程序的客户使用更新后的 SDK，或愿意立即更新该应用程序的最新版本。
 
  
-## API 加密支持
+## <a name="api-encryption-support"></a>API 加密支持
 
 从 [2015 年 3 月更新](release-notes-rtm.md)开始，我们已经将下列三个标记合并到我们的 API 及其关联的加密包中：
 
@@ -44,13 +45,13 @@ ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
 
 以下是一些简单的代码段，用于演示如何使用新的许可证属性。
 
-## 不推荐使用的算法
+## <a name="deprecated-algorithms"></a>不推荐使用的算法
 
 我们将不再公开 API 中的 *IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS* 标志。 这意味着，如果以后的应用程序引用此标记，则这些应用程序将无法再编译，但已使用它构建的应用程序可以继续工作，因为我们遵循 API 代码中的专用标记。
 
 只需通过更改一个标记便可利用旧的不推荐使用的加密算法标记的益处。 请参阅下面的代码段示例。
 
-## 使用 AES 256 CBC4K 保护文件
+## <a name="protect-files-with-aes-256-cbc4k"></a>使用 AES 256 CBC4K 保护文件
 
 不需要代码中的更改，*AES 256* CBC4K 是默认值。
 
@@ -62,7 +63,7 @@ ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
                                     &amp;pLicenseHandle);
 
 
-## 使用 AES-128 CBC4K 保护文件
+## <a name="protect-files-with-aes128-cbc4k"></a>使用 AES-128 CBC4K 保护文件
 
     C++
 
@@ -79,7 +80,7 @@ ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
                            &amp;dwEncryptionMode);
 
 
-## 使用 AES-128 ECB（不推荐使用的算法）保护文件
+## <a name="protect-files-with-aes128-ecb-deprecated-algorithms"></a>使用 AES-128 ECB（不推荐使用的算法）保护文件
 
 此示例还演示支持*不推荐使用的算法*的新方法。
 

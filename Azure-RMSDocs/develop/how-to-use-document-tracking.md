@@ -3,6 +3,7 @@ title: "如何使用文档跟踪 | Azure RMS"
 description: "文档跟踪功能需要对管理关联元数据以及向服务注册有一些简单了解。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,11 +21,11 @@ ms.openlocfilehash: 616d5dd088665abf6e7d435978b021b10c5ac3f5
 
 ---
 
-# 如何：使用文档跟踪
+# <a name="how-to-use-document-tracking"></a>如何：使用文档跟踪
 
 使用文档跟踪功能需要对管理关联元数据以及向服务注册有一些简单了解。
 
-## 管理文档跟踪元数据
+## <a name="managing-document-tracking-metadata"></a>管理文档跟踪元数据
 
 支持文档跟踪的每个操作系统都具有类似实现。 这包括一组表示元数据的属性、一个添加到用户策略创建方法的新参数以及一个用于向文档跟踪服务注册要跟踪的策略的方法。
 

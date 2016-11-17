@@ -2,6 +2,7 @@
 title: "通过使用 Rights Management 共享应用程序，保护设备上的文件（就地保护）| Azure 信息保护"
 description: "有关如何将文件安全地存储在计算机、服务器或其他存储设备上的说明。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 1b95c1bf1c747808c7baed97daa449f5c8bb234d
 
 
 ---
 
-# 使用 Rights Management 共享应用程序保护设备上的文件（就地保护）。
+# <a name="protect-a-file-on-a-device-protect-inplace-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序保护设备上的文件（就地保护）。
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
@@ -27,7 +28,7 @@ ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
 > [!TIP]
 > 当你尝试保护文件时看到任何错误，请参阅 [适用于 Windows 的 Microsoft Rights Management 共享应用程序的常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)。
 
-## 保护设备上的文件（就地保护）
+## <a name="to-protect-a-file-on-a-device-protect-inplace"></a>保护设备上的文件（就地保护）
 
 1.  选择文件资源管理器中要保护的文件。 右键单击该文件，选择“使用 RMS 保护”，然后选择“就地保护”。 例如：
 
@@ -54,18 +55,18 @@ ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
 
 如果你稍后需要删除文件保护，请参阅[使用 Rights Management 共享应用程序移除对文件的保护](sharing-app-remove-protection.md)。
 
-## 示例和其他说明
+## <a name="examples-and-other-instructions"></a>示例和其他说明
 有关如何使用 Rights Management 共享应用程序以及操作说明的示例，请参阅以下 Rights Management 共享应用程序用户指南部分：
 
 -   [使用 RMS 共享应用程序的示例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## 另请参阅
+## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

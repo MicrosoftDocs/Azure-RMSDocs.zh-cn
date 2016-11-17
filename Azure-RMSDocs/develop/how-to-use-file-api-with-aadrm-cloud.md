@@ -3,6 +3,7 @@ title: "如何使服务应用程序可以使用基于云的 RMS | Azure RMS"
 description: "本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

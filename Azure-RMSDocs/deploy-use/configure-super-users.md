@@ -2,6 +2,7 @@
 title: "为 Azure Rights Management 和发现服务或数据恢复配置超级用户 | Azure 信息保护"
 description: "了解并实施 Azure 信息保护中的 Azure Rights Management 服务超级用户功能，以便已获授权的用户与服务始终可以阅读和检查 Azure Rights Management 为你的组织保护的数据。 这种功能有时称为“数据推理”，是保持对组织数据进行控制的关键所在。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: d2ae8df5895b1cf1985420be25abac36fe2689b7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 70c74678ec0ef0b583b2784177520d0ea8a5b7e8
 
 
 ---
 
-# 为 Azure Rights Management 和发现服务或数据恢复配置超级用户
+# <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>为 Azure Rights Management 和发现服务或数据恢复配置超级用户
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -59,7 +60,7 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 `2015-08-01T19:01:45    admin@contoso.com   SetSuperUserFeatureState -state Enabled Passed  True`
 
-## 超级用户的脚本选项
+## <a name="scripting-options-for-super-users"></a>超级用户的脚本选项
 通常，分配为 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 超级用户的某人将需要删除对位于多个位置的多个文件的保护。 尽管可以手动执行此操作，但使用脚本会提高效率（并且通常更可靠）。 为此，请 [下载 RMS 保护工具](http://www.microsoft.com/en-us/download/details.aspx?id=47256)。 然后，根据需要使用 [Unprotect-RMSFile](https://msdn.microsoft.com/library/azure/mt433200.aspx) cmdlet 和 [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx) cmdlet。
 
 有关使用这些 cmdlet 的详细信息，请参阅 [RMS 保护 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
@@ -71,6 +72,6 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

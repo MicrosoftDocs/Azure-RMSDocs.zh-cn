@@ -2,6 +2,7 @@
 title: "Azure 信息保护的要求 | Azure 信息保护"
 description: "确定为组织部署 Azure 信息保护的必备条件。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/19/2016
 ms.topic: get-started-article
@@ -12,16 +13,15 @@ ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: efbb95e5f34a45c8a5f17eb61ebb09dfe5c8f65f
-ms.openlocfilehash: 1b69be775b3cd270e4b6ea42a306eb51c15424cb
+ms.sourcegitcommit: 8b456ae32446a2c429f33b76563eef53ea92a902
+ms.openlocfilehash: bbcc5f71eda6b100ad16f33793752b92ddfa4304
 
 
 ---
 
-# Azure 信息保护的要求
+# <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
 >*适用于：Azure 信息保护、Office 365*
-
 
 为组织部署 Azure 信息保护之前，请确保具备以下必备条件。 
 
@@ -55,6 +55,6 @@ ms.openlocfilehash: 1b69be775b3cd270e4b6ea42a306eb51c15424cb
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

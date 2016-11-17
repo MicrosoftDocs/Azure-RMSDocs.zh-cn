@@ -3,6 +3,7 @@ title: "Linux 设置 |Azure RMS"
 description: "多种版本的 Linux 操作系统现都可使用 Microsoft Rights Management SDK 4.2。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

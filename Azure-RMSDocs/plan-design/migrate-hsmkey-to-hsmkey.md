@@ -2,8 +2,9 @@
 title: "步骤 2 &colon;HSM 保护密钥到 HSM 保护密钥的迁移 | Azure 信息保护"
 description: "此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的一部分，仅当你的 AD RMS 密钥是 HSM 保护密钥，且希望使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure 信息保护时才适用。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/14/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +13,20 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bad084502b9b7e55c6e80dccfbd66c3f34b63c7c
-ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 3f5982b94f1de83ec66860946c46b9acbf45f479
 
 
 ---
 
-# 步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
+# <a name="step-2-hsmprotected-key-to-hsmprotected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护*
 
 
 此说明是[从 AD RMS 到 Azure 信息保护的迁移路径](migrate-from-ad-rms-to-azure-rms.md)中的一部分，仅当你的 AD RMS 密钥是 HSM 保护密钥，且希望使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure 信息保护时才适用。 
 
-如果这不是你选择的配置方案，请返回[步骤 2.从 AD RMS 中导出配置数据并将其导入到 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) 中，然后选择其他配置。
+如果这不是你选择的配置方案，请返回[步骤 2.从 AD RMS 中导出配置数据并将其导入到 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection) 中，然后选择其他配置。
 
 > [!NOTE]
 > 这些说明假定你的 AD RMS 密钥受模块保护。 这是最典型的情况。 
@@ -41,7 +42,7 @@ ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
 > 如果你将对 Azure 密钥保管库执行配置步骤，而尚不熟悉此 Azure 服务，你可能会发现先阅读 [Get started with Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)（Azure 密钥保管库入门）可能会有所帮助。 
 
 
-## 第 1 部分：将 HSM 密钥传送到 Azure 密钥保管库
+## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>第 1 部分：将 HSM 密钥传送到 Azure 密钥保管库
 
 由 Azure 密钥保管库的管理员完成这些过程。
 
@@ -60,7 +61,7 @@ ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
 
 现在，你已经在 Azure 密钥保管库中为 Azure 信息保护中的 Azure Rights Management 服务准备好了 HSM 密钥，接下来可以导入 AD RMS 配置数据。
 
-## 步骤 2：将配置数据导入到 Azure 信息保护
+## <a name="part-2-import-the-configuration-data-to-azure-information-protection"></a>步骤 2：将配置数据导入到 Azure 信息保护
 
 由 Azure 信息保护的管理员完成这些过程。
 
@@ -89,11 +90,11 @@ ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
     > [!NOTE]
     > 如果之后需要确认正在 Azure 密钥保管库中使用的 Azure 信息保护租户密钥，请使用 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS cmdlet。
 
-现在可以转到[步骤 3。激活 Azure 信息保护租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
+现在可以转到[步骤 3。激活 Azure 信息保护租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant)。
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,6 +2,7 @@
 title: "删除模板 | Azure 信息保护"
 description: "无法删除默认模板，但可以将它们存档，这样用户就不会看到它们。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 2597df5b95bc1aaff345804e476f48d6436d9a32
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: e9af6dcf237ec0136101835ceff56e79e01f3b3c
 
 
 ---
 
 
-# 删除（存档）模板
+# <a name="remove-archive-templates"></a>删除（存档）模板
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -29,7 +30,7 @@ ms.openlocfilehash: 2597df5b95bc1aaff345804e476f48d6436d9a32
 
 由于你无法编辑默认模板，因此若要将这些模板存档，必须使用“模板”页中的“存档”选项。 你无法将 Outlook 的“不要转发”选项存档  。
 
-## 删除默认模板
+## <a name="to-remove-a-default-template"></a>删除默认模板
 
 -   在“模板”页中，选择默认模板，然后单击“存档”。
 
@@ -37,10 +38,10 @@ ms.openlocfilehash: 2597df5b95bc1aaff345804e476f48d6436d9a32
 
 
 
-## 另请参阅
+## <a name="see-also"></a>另请参阅
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

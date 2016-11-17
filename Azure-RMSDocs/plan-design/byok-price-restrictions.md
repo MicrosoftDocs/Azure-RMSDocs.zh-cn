@@ -2,8 +2,9 @@
 title: "BYOK 定价和限制 | Azure 信息保护"
 description: Understand the restrictions when you use customer-managed keys (known as "bring your own key", or BYOK) with Azure RMS.
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,24 +13,24 @@ ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d7dee4efcff4ccf76f08f9033fdaf89daf095d4e
-ms.openlocfilehash: 86e6ebac4ad8c0782fb27344c30ee1d044be33d0
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: e64e87298358b5d1064cda491a10abb48545a98e
 
 
 ---
 
-# BYOK 定价和限制
+# <a name="byok-pricing-and-restrictions"></a>BYOK 定价和限制
 
 >*适用于：Azure 信息保护、Office 365*
 
 
-具有订阅（包含 Azure 信息保护）的组织可以在 Azure 密钥保管库中使用客户托管的密钥 (BYOK)，并[记录其使用情况](../deploy-use/log-analyze-usage.md)，无需额外付费。 
+拥有订阅（包含 Azure 信息保护）的组织可以将 Azure 信息保护租户配置为使用客户托管的密钥 (BYOK)，并[记录其使用情况](../deploy-use/log-analyze-usage.md)（无需额外付费）。 
 
-但是，若要使用 Azure 密钥保管库，必须具有支持含 HSM 保护密钥的密钥保管库的 Azure 订阅。 在 Azure 密钥保管库中使用密钥会按月产生费用。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。
+密钥必须存储在 Azure 密钥保管库中，这需要付费的（或试用版）Azure 订阅，并且必须使用 Azure 密钥保管库高级服务层来支持受 HSM 保护的密钥。 在 Azure 密钥保管库中使用受 HSM 保护的密钥将按月收费。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。
 
 当为 Azure 信息保护租户密钥使用 Azure 密钥保管库时，建议为此密钥使用具有专用订阅的专用密钥保管库，以确保只有 Azure 权限管理服务能使用它。 
 
-## 使用 Azure 密钥保管库的好处
+## <a name="benefits-of-using-azure-key-vault"></a>使用 Azure 密钥保管库的好处
 
 除使用 Azure 信息保护使用情况日志记录之外，为实现额外的保证，你还可以使用 [Azure 密钥保管库日志记录](https://azure.microsoft.com/documentation/articles/key-vault-logging/)对其进行交叉引用，从而独立监视，确保只有 Azure 权限管理服务使用此密钥。 如有必要，可以通过删除密钥保管库上的权限来立即撤消对密钥的访问权限。
 
@@ -48,7 +49,7 @@ ms.openlocfilehash: 86e6ebac4ad8c0782fb27344c30ee1d044be33d0
 有关 Azure 密钥保管库的详细信息，请参阅[什么是 Azure 密钥保管库？](https://azure.microsoft.com/documentation/articles/key-vault-whatis/)并访问 [Azure 密钥保管库团队博客](https://blogs.technet.microsoft.com/kv/)，以获取最新信息并了解其他服务如何使用此技术。
 
 
-## 使用 BYOK 时的限制
+## <a name="restrictions-when-using-byok"></a>使用 BYOK 时的限制
 
 如果有用户通过使用个人 RMS 注册免费帐户，则不能使用 BYOK 或使用情况日志记录，因为此配置没有租户管理员来配置这些功能。
 
@@ -78,15 +79,15 @@ BYOK 和使用情况日志记录可无缝地适用于与 Azure 信息保护使�
 
 有时，Exchange Online 的 Azure RMS BYOK 异常实际上并不是问题。 例如，需要 BYOK 和日志记录功能的组织在本地运行他们的数据应用程序（Exchange、SharePoint、Office），并使用 Azure RMS 提供使用本地 AD RMS 不易实现的功能（例如，与其他公司协作，从移动客户端进行访问）。 BYOK 和日志记录功能在这种方案中使用效果非常好，让组织能够完全控制他们的 Azure RMS 订阅。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
-如果你已决定管理自己的密钥，转至[实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key)。
+如果你已决定管理自己的密钥，转至[实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key)。
 
 如果你已决定保留默认配置，让 Microsoft 管理你的租户密钥，请参阅“计划和实现你的 Azure Rights Management 租户密钥”文章中的[后续步骤](plan-implement-tenant-key.md#next-steps)。
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,6 +2,7 @@
 title: "准备 Azure Rights Management 保护 |Azure 信息保护"
 description: "检查是否已具备使用 Rights Management 服务的条件，以便组织可以保护文档和电子邮件。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 46db6ef6f65a06c42909252cf99884cc5eaaefe4
-ms.openlocfilehash: 5a3df821c70b8cd308f8fb8cc94ee0cff069a3d9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: facb9bd0d21551e9170cd9be6e9abda24766f9fd
 
 
 ---
 
-# 准备 Azure 信息保护
+# <a name="preparing-for-azure-information-protection"></a>准备 Azure 信息保护
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -32,7 +33,7 @@ ms.openlocfilehash: 5a3df821c70b8cd308f8fb8cc94ee0cff069a3d9
 
     如果你有 Exchange Online，则可以使用 Exchange 管理中心创建和使用支持邮件的组。 如果你有 AD DS 并要同步到 Azure AD，则可以创建和使用支持邮件的组（安全组或通讯组）。
 
-## 激活数据保护的 Rights Management 服务
+## <a name="activate-the-rights-management-service-for-data-protection"></a>激活数据保护的 Rights Management 服务
 保护文档和电子邮件的工作准备就绪后，请激活 Rights Management 服务来实现这一技术。 有关详细信息，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md)。
 
 
@@ -40,6 +41,6 @@ ms.openlocfilehash: 5a3df821c70b8cd308f8fb8cc94ee0cff069a3d9
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

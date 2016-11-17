@@ -3,7 +3,7 @@ title: "用户如何注册个人 RMS | Azure 信息保护"
 description: "此免费帐户的注册说明以及此过程工作原理的技术信息。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
+ms.sourcegitcommit: 8306d70937aeaf665617d84b4e7ad2c8944e3c79
+ms.openlocfilehash: e3fc6390b3a5b1b6a7b321999a94d4c2226e93ad
 
 
 ---
@@ -22,11 +22,11 @@ ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
 
 >*适用于：Azure 信息保护*
 
-若要注册这种免费帐户，可以通过访问 [Microsoft Azure Rights Management 页](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)发出请求，并提供你的工作电子邮件地址。 将你导向此注册页面的最常见方式是接收带有受保护附件的电子邮件，这包含有关如何注册的说明。 你将收到 Microsoft 的回应电子邮件，然后完成注册过程，方法是输入详细信息来创建帐户。 完成后，将出现可在其中下载适用于不同设备的共享应用程序的页面、用户指南链接和本身就支持 Rights Management 保护的应用程序当前列表链接。 
+若要注册这种免费帐户，可以通过访问 [Microsoft Azure 信息保护页](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)发出请求，并提供工作电子邮件地址。 将你导向此注册页面的最常见方式是接收带有受保护附件的电子邮件，这包含有关如何注册的说明。 你将收到 Microsoft 的回应电子邮件，然后完成注册过程，方法是输入详细信息来创建帐户。 完成后，将出现可在其中下载适用于不同设备的共享应用程序的页面、用户指南链接和本身就支持 Rights Management 保护的应用程序当前列表链接。 
 
 ## 注册个人 RMS
 
-1.  使用 Windows、Mac 计算机或移动设备，访问 [Microsoft Azure Rights Management 页](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)。
+1.  使用 Windows 或 Mac 计算机或移动设备，访问 [Microsoft Azure 信息保护页](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)。
 
 2.  键入你用作组织电子邮件的电子邮件地址，例如 **janetm@contoso.com** 或 **p.dover@fabrikam.com**。
 
@@ -35,9 +35,9 @@ ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
 
 3.  单击“注册”。
 
-    Microsoft 使用电子邮件地址检查你的组织是否已经具有[包括 Azure RMS 的付费订阅](../get-started/requirements-subscriptions.md)。 如果是这种情况，你无需使用个人 RMS，因此可以立即登录并且个人 RMS 的自助注册将取消。 如果没有找到 Azure RMS 的付费订阅，你将继续到下一步。
+    Microsoft 使用电子邮件地址检查组织是否已经拥有 [Azure 信息保护的付费订阅](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)或[使用 Azure 权限管理包含数据保护的 Office 365 订阅](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 如果是这种情况，你无需使用个人 RMS，因此可以立即登录并且个人 RMS 的自助注册将取消。 如果找不到付费订阅，将继续到下一步。
 
-4.  等待确认电子邮件发送至你提供的地址。 Office 365 团队 (support@email.microsoftonline.com) 将发送主题为**完成注册 Microsoft Azure Rights Management** 的电子邮件。
+4.  等待确认电子邮件发送至你提供的地址。 Office 365 团队 (support@email.microsoftonline.com) 将发送主题为**完成注册 Microsoft Azure 信息保护**的电子邮件。
 
 5.  收到该电子邮件后，请单击“是本人”来验证电子邮件地址并完成注册过程。
 
@@ -87,7 +87,7 @@ ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
 
     -   如果这些 [Azure RMS 订阅](https://technet.microsoft.com/dn858608)支持这些功能，请提供用户跟踪和撤销其受保护的文档的功能。 有关详细信息，请参阅 [RMS 共享应用程序用户指南](../rms-client/sharing-app-user-guide.md)中的[跟踪和撤消文件](../rms-client/sharing-app-track-revoke.md)。
 
-    -   实现“自带密钥”解决方案 (BYOK)，以便能够根据你的 IT 策略，在本地生成 Azure 权限管理的租户密钥，并使用硬件安全模块 (HSM) 将该密钥安全传输到 Microsoft。 有关详细信息，请参阅[计划和实施你的 Azure Rights Management 租户密钥](../plan-design/plan-implement-tenant-key.md)。
+    -   实现“自带密钥”解决方案 (BYOK)，以便能够根据 IT 策略，在本地生成 Azure 权限管理的租户密钥，并使用硬件安全模块 (HSM) 将该密钥安全传输到 Microsoft。 有关详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)。
 
 
 ## 后续步骤
@@ -97,6 +97,6 @@ ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

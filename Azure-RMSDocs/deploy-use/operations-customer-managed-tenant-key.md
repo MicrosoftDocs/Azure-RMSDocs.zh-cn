@@ -2,6 +2,7 @@
 title: "客户托管 - 租户密钥生命周期操作 | Azure 信息保护"
 description: "有关当你自己管理 Azure 信息保护租户密钥（自带密钥方案，简称 BYOK）时相关生命周期操作的信息。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

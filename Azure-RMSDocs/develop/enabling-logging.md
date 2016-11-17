@@ -3,6 +3,7 @@ title: "如何&#58;启用错误和性能日志记录 | Azure RMS"
 description: "Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性能日志上传。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,25 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 118aa3e25c6be9d0bf43141585d79030fc79224a
+ms.sourcegitcommit: ac77c4e0bced244f1cec74f15cbe0d62c9ab4437
+ms.openlocfilehash: 66d24f4ed737526525c041de7aeb96de35b37032
 
 
 ---
 
-# 如何：启用错误和性能日志记录
+# <a name="how-to-enable-error-and-performance-logging"></a>如何：启用错误和性能日志记录
 Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性能日志上传。
 
-## 概述 ##
-通过启用自动诊断和性能日志记录上传到 Microsoft，可以改进你的用户体验并进行故障排除。 为了尊重用户隐私，作为应用开发人员，你在启用自动日志记录之前必须征得用户同意。
+## <a name="overview"></a>概述 ##
+通过启用将自动诊断、性能和遥测日志记录数据上传到 Microsoft 的功能，可以改进用户的体验并进行故障排除。 
+
+> [!IMPORTANT] 
+> 为了尊重用户隐私，作为应用开发人员，你在启用自动日志记录之前必须征得用户同意。
+
+> [!NOTE]
+> 例如，下面是 Microsoft 用于日志记录通知的标准消息： 
+>
+> *启用错误和性能日志记录即表示同意向 Microsoft 发送错误和性能数据。Microsoft 会通过 Internet 收集错误和性能数据（统称“数据”）。Microsoft 利用此数据来保证并改进 Microsoft 产品和服务的质量、安全性和完整性。例如，会分析性能和可靠性（如使用哪些功能、功能的响应速度、设备性能、用户界面交互和遇到的任何产品问题）。数据还包括当前运行的软件以及 IP 地址的配置信息。*  
 
 你将通过两个属性管理日志记录控件。
 
@@ -39,7 +48,7 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
 
 在下面的每个示例代码片段中，调用应用程序可以设置或查询该属性。
 
-### Android ###
+### <a name="android"></a>Android ###
 启用自动日志记录
 
     SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
@@ -52,7 +61,7 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
     SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
     Boolean isLogUploadEnabled = preferences.getBoolean(&quot;IpcCustomerExperienceDataCollectionEnabled&quot;, false);
 
-## iOS ##
+## <a name="ios"></a>iOS ##
 启用自动日志记录
 
     NSUserDefaults \*prefs = [NSUserDefaults standardUserDefaults];
@@ -74,12 +83,12 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
     [[NSUserDefaults standardUserDefaults] boolForKey:@&quot;IpcLogLevel&quot;];
  
 
-## Windows ##
+## <a name="windows"></a>Windows ##
 启用自动日志记录
 
     CustomerExperienceConfiguration::Option = CustomerExperienceOptions::LoggingEnabledNow;
 
-有关可选设置的详细信息，请参阅 [CustomerExperienceOptions](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions)。
+有关可选设置的详细信息，请参阅 [CustomerExperienceOptions](https://msdn.microsoft.com/library/microsoft.rightsmanagement.customerexperienceoptions.aspx)。
 
 获取当前日志记录控制标志设置
 
@@ -96,6 +105,6 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

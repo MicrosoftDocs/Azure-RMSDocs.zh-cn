@@ -2,6 +2,7 @@
 title: "记录和分析 Azure Rights Management 服务的使用情况 |Azure 信息保护"
 description: "有关如何使用 Azure Rights Management (Azure RMS) 的使用日志记录功能的信息和说明。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

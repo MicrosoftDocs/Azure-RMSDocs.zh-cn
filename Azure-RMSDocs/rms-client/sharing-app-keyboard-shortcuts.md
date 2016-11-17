@@ -2,6 +2,7 @@
 title: "在 Rights Management 共享应用程序中使用键盘快捷方式 | Azure 信息保护"
 description: "有关如何将键盘快捷键与适用于 Windows 的 RMS 共享应用程序结合使用的说明。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 0e39640a5c48f5d924fed6ee7bf6de34bf195e56
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: ed59b022078f73d61afcff3eff10aa338176e568
 
 
 ---
 
-# 使用 Rights Management 共享应用程序中的键盘快捷键
+# <a name="use-keyboard-shortcuts-in-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序中的键盘快捷键
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
@@ -28,18 +29,18 @@ ms.openlocfilehash: 0e39640a5c48f5d924fed6ee7bf6de34bf195e56
 
 ![RMS 共享应用程序访问密钥](../media/ADRMS_MSRMSApp_AccessKeys.png)
 
-## 示例和其他说明
+## <a name="examples-and-other-instructions"></a>示例和其他说明
 有关如何使用 Rights Management 共享应用程序以及操作说明的示例，请参阅以下 Rights Management 共享应用程序用户指南部分：
 
 -   [使用 RMS 共享应用程序的示例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## 另请参阅
+## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -1,21 +1,23 @@
 ---
 title: "如何配置自动和建议分类的条件 | Azure 信息保护"
 description: "在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。"
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
 
 
 ---
 
-# 如何配置 Azure 信息保护的自动和建议分类的条件
+# <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
 >*适用于：Azure 信息保护*
 
@@ -44,7 +46,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 在此示例中，用户可以单击“**立即更改**”应用建议的标签，或通过关闭栏来覆盖该建议。
 
-## 配置标签的建议或自动分类
+## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>配置标签的建议或自动分类
 
 1. 如果尚未这样做，请在新的浏览器窗口中以全局管理员的身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
     
@@ -72,22 +74,22 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 6. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 
-## 有关内置条件的信息
+## <a name="information-about-the-builtin-conditions"></a>有关内置条件的信息
 
 在预览期间，可以选择以下条件：
 
 - [SWIFT 代码](#swift-code )
 
-- [信用卡号](#credit-card-number )
+- [信用卡卡号](#credit-card-number )
 
-- [ABA 路由号码](#aba-routing-number )
+- [ABA 银行代号](#aba-routing-number )
 
 - [美国身份证号 (SSN)](#usa-social-security-number-ssn)
 
 - [国际银行帐号 (IBAN)](#international-banking-account-number-iban)
 
 
-### SWIFT 代码
+### <a name="swift-code"></a>SWIFT 代码
 
 内容包括以下项时与此信息类型匹配：  
 
@@ -113,7 +115,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 ----
 
 
-### 信用卡号
+### <a name="credit-card-number"></a>信用卡号
 
 内容包括以下项时与此信息类型匹配：  
 
@@ -136,7 +138,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 ----
 
-### ABA 路由号码
+### <a name="aba-routing-number"></a>ABA 路由号码
 
 内容包括以下项时与此信息类型匹配：  
 
@@ -173,7 +175,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 ----
 
-### 美国身份证号 (SSN)
+### <a name="usa-social-security-number-ssn"></a>美国身份证号 (SSN)
 
 内容包括以下项时与此信息类型匹配：  
 
@@ -199,7 +201,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 ----
 
-### 国际银行帐号 (IBAN)
+### <a name="international-banking-account-number-iban"></a>国际银行帐号 (IBAN)
 
 内容包括以下项时与此信息类型匹配：  
 
@@ -213,15 +215,15 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 - **GB29 NWBK 6016 1331 9268 19 IBAN**
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
-有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organization-s-policy)(#配置组织的策略) 部分中的链接。  
-
-
+有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

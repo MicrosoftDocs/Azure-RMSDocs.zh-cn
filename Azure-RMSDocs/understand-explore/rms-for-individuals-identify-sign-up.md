@@ -2,8 +2,9 @@
 title: "如何发现用户是否已注册个人 RMS | Azure 信息保护"
 description: "作为管理员，你如何知道用户是否注册了个人 RMS？ 你可能会分别或结合使用本文所述的任何方法。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +13,14 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 9233952b6a707359c8f97516b57542e5d3d1744c
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: b9979d48af7146f8021de840248f71cb1399b777
 
 
 ---
 
 
-# 如何发现你的用户注册了个人 RMS？
+# <a name="how-to-find-out-if-your-users-have-signed-up-for-rms-for-individuals"></a>如何发现你的用户注册了个人 RMS？
 
 >*适用于：Azure 信息保护*
 
@@ -31,11 +32,11 @@ ms.openlocfilehash: 9233952b6a707359c8f97516b57542e5d3d1744c
 
 -   使用 System Center Configuration Manager 等系统管理解决方案来清点已安装软件和在用软件。 Rights Management 共享应用程序是通过使用 **ipviewer.exe** 程序运行的，你可以免费 [下载和安装该应用程序](http://go.microsoft.com/fwlink/?LinkId=303970) ，以了解有关此应用程序的其他特征，然后将其用于软件清单。
 
--   请注意权限管理共享应用程序创建的文件扩展名。 .pfile 和 .ppdf 文件扩展名是最明显的示例，但是也有一些其他文件在原本就受 Rights Management 保护时会更改其文件扩展名。 有关详细信息，请参阅[Rights Management 共享应用程序管理员指南](http://technet.microsoft.com/library/dn339003.aspx)中的[支持的文件类型和文件扩展名](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions)部分。
+-   请注意权限管理共享应用程序创建的文件扩展名。 .pfile 和 .ppdf 文件扩展名是最明显的示例，但是也有一些其他文件在原本就受权限管理服务保护时会更改其文件扩展名。 有关详细信息，请参阅[Rights Management 共享应用程序管理员指南](http://technet.microsoft.com/library/dn339003.aspx)中的[支持的文件类型和文件扩展名](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions)部分。
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,8 +2,9 @@
 title: "从 AD RMS 迁移到 Azure 信息保护 | Azure 信息保护"
 description: "用于将 Active Directory Rights Management Services (AD RMS) 部署迁移到 Azure 信息保护的说明。 迁移之后，用户将仍然可以访问你的组织使用 AD RMS 来保护的文档和电子邮件，新保护的内容将使用 Azure 信息保护。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +13,13 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb240b92a86bfc37685556ba2ce71b9eea56ae88
-ms.openlocfilehash: c3e926b48dfc66da71e4e3f16f9359b3cb8322c6
+ms.sourcegitcommit: 5774a94582e6a685f84a1fc6cd9915258bf7cbe0
+ms.openlocfilehash: 49c65779e5651f25082369822b60b09435c41041
 
 
 ---
 
-# 从 AD RMS 迁移到 Azure 信息保护
+# <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
 
@@ -30,7 +31,19 @@ ms.openlocfilehash: c3e926b48dfc66da71e4e3f16f9359b3cb8322c6
 
 -   有关 Azure 信息保护与 AD RMS 的比较，请参阅[比较 Azure 信息保护与 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。
 
-## 将 AD RMS 迁移到 Azure 信息保护的先决条件
+## <a name="recommended-reading-before-you-migrate-to-azure-information-protection"></a>建议在迁移到 Azure 信息保护之前阅读的内容
+
+虽然不是必需的，但在开始迁移之前阅读以下内容可能会有所帮助，这样可以更好地理解与迁移步骤相关的技术的工作原理：
+
+- [规划和实现 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)：了解可用于 Azure 信息保护租户的密钥管理选项；其中，云中的 SLC 密钥等效项要么由 Microsoft（默认）管理，要么由自己管理（“自带密钥”或 BYOK 配置）。 
+
+- [RMS 服务发现](../rms-client/client-deployment-notes.md#rms-service-discovery)：RMS 客户端部署备注的此部分说明了服务发现的顺序是**注册表** > **SCP** > **云**。 在迁移过程中，如果仍在安装 SCP，则可以使用 Azure 信息保护租户的注册表设置来配置客户端，以确保它们不会使用从 SCP 返回的 AD RMS 群集。
+
+- [ 连接器概述](../deploy-use/deploy-rms-connector.md#overview-of-the-microsoft-rights-management-connector)：RMS 连接器文档的此部分说明了本地服务器如何连接到 Azure 权限管理服务以保护文档和电子邮件。
+
+此外，如果熟悉 AD RMS 的工作方式，就会发现阅读[Azure RMS 的工作原理？揭秘](../understand-explore/how-does-it-work.md)非常有用，可帮助识别不同云版本的哪些技术过程是相同的或不同的。
+
+## <a name="prerequisites-for-migrating-ad-rms-to-azure-information-protection"></a>将 AD RMS 迁移到 Azure 信息保护的先决条件
 在开始迁移到 Azure 信息保护之前，请确保具备以下先决条件，并确保你了解所有限制。
 
 - **支持的 RMS 部署：**
@@ -42,6 +55,8 @@ ms.openlocfilehash: c3e926b48dfc66da71e4e3f16f9359b3cb8322c6
         - Windows Server 2012 (x64)
         
         - Windows Server 2012 R2 (x64)
+        
+        - Windows Server 2016 (x64)
         
     - 加密模式 2：
 
@@ -59,14 +74,14 @@ ms.openlocfilehash: c3e926b48dfc66da71e4e3f16f9359b3cb8322c6
         
     注意：默认情况下，多个 RMS 群集将迁移到单个 Azure 信息保护租户。 如果你想要迁移到单独的 Azure 信息保护租户，必须将它们视为不同的迁移。 不能将一个 RMS 群集的密钥导入到多个 Azure 信息保护租户。
 
-- **运行 Azure 信息保护的所有要求，包括 Azure 信息保护租户（未激活））：**
+- **运行 Azure 信息保护的所有要求，包括 Azure 信息保护租户（未激活）：**
 
     请参阅 [Azure 信息保护的要求](../get-started/requirements-azure-rms.md)。
 
     尽管在从 AD RMS 迁移之前你必须拥有 Azure 信息保护租户，但我们建议在迁移之前不要激活 Rights Management 服务。 迁移过程包括此步骤，在从 AD RMS 导出密钥和模板并将其导入到 Azure 信息保护之后执行此操作。 但是，如果 Rights Management 服务已激活，你仍可以从 AD RMS 迁移。
 
 
-- **准备 Azure 信息保护：**
+- **Azure 信息保护的准备工作：**
 
     - 在本地目录和 Azure Active Directory 之间进行目录同步
 
@@ -102,7 +117,7 @@ ms.openlocfilehash: c3e926b48dfc66da71e4e3f16f9359b3cb8322c6
 
     由于你的合作伙伴进行的配置可能有所变动，确切说明此重新配置已超出了本文档的范围。 若要获得帮助，[请与 Microsoft 支持部门联系](../get-started/information-support.md#support-options-and-community-resources)。
 
-## 将 AD RMS 迁移到 Azure 信息保护的步骤概述
+## <a name="overview-of-the-steps-for-migrating-ad-rms-to-azure-information-protection"></a>将 AD RMS 迁移到 Azure 信息保护的步骤概述
 
 
 迁移步骤可分为 4 个阶段，在不同的时间由不同的管理员执行。
@@ -113,7 +128,7 @@ ms.openlocfilehash: c3e926b48dfc66da71e4e3f16f9359b3cb8322c6
 
     迁移过程要求你从随“Azure RMS 管理”管理工具一起安装的 Azure RMS 模块中运行一个或多个 Windows PowerShell cmdlet。
 
-- **步骤 2。 从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护中**
+- **步骤 2：从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护**
 
     将 AD RMS 中的配置数据（密钥、模板、URL）导出到 XML 文件，然后使用 Import-AadrmTpd Windows PowerShell cmdlet 将该文件上传到 Azure 信息保护中的 Azure Rights Management 服务。 可能需要其他步骤，具体取决于你的 AD RMS 密钥配置：
 
@@ -129,11 +144,11 @@ ms.openlocfilehash: c3e926b48dfc66da71e4e3f16f9359b3cb8322c6
 
         AD RMS 中集中管理的基于密码的密钥迁移到由客户管理的 Azure 信息保护租户密钥（“携带你自己的密钥”或 BYOK 方案）。 这需要的配置最多，因为必须先提取软件密钥并将其导入到本地 HSM 中，然后再执行附加步骤以将该密钥从本地 Thales HSM 传送到 Azure 密钥保管库 HSM，并授权 Azure Rights Management 服务使用存储该密钥的密钥保管库。
 
-- **步骤 3. 激活 Azure 信息保护租户**
+- **步骤 3：激活 Azure 信息保护租户**
 
     如果可能，请在执行导入过程之后而不是之前执行此步骤。
 
-- **步骤 4. 配置导入的模板**
+- **步骤 4：配置导入的模板**
 
     当你导入权限策略模板时，系统会将其状态存档。 如果你希望用户能够查看并使用这些模板，则必须在 Azure 经典门户中将模板状态更改为“已发布”。
 
@@ -169,7 +184,7 @@ ms.openlocfilehash: c3e926b48dfc66da71e4e3f16f9359b3cb8322c6
 
 [**阶段 4：迁移后任务**](migrate-from-ad-rms-phase4.md )
 
-- **步骤 8：解除 AD RMS 的授权**
+- **步骤 8：解除 AD RMS 授权**
 
     当你已确认所有客户端均使用 Azure 信息保护而不再访问 AD RMS 服务器，你可以解除 AD RMS 部署的授权。
 
@@ -179,12 +194,12 @@ ms.openlocfilehash: c3e926b48dfc66da71e4e3f16f9359b3cb8322c6
     此步骤为可选步骤，但如果你从步骤 2 所选择的 Azure 信息保护租户密钥拓扑由 Microsoft 管理，那么建议你执行此步骤。 如果所选择的 Azure 信息保护租户密钥拓扑由客户管理 (BYOK)，则此步骤不适用。
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 若要开始迁移，请转到[阶段 1 - 服务器端配置](migrate-from-ad-rms-phase1.md)。
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 
