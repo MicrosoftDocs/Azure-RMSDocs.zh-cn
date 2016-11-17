@@ -2,6 +2,7 @@
 title: "如何从 Office 365 经典管理中心激活 Azure Rights Management | Azure 信息保护"
 description: "有关具有 Office 365 管理中心经典（原始）版本访问权限时 Azure Rights Management 服务的激活说明。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/04/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 565f2479fe1d41aa051dd64752413eb72d644535
-ms.openlocfilehash: 69ee78823c2a0500596dec24f44ecba8329af516
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 0a0741e01b6ff446b16383dbaa26b31327427237
 
 
 ---
 
-# 如何从 Office 365 经典管理中心激活 Azure Rights Management
+# <a name="how-to-activate-azure-rights-management-from-the-office-365-classic-admin-center"></a>如何从 Office 365 经典管理中心激活 Azure Rights Management
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -49,10 +50,10 @@ ms.openlocfilehash: 69ee78823c2a0500596dec24f44ecba8329af516
 
 现在，应会显示“Rights Management 已激活”  和用于停用的选项。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 返回 [激活 Azure Rights Management](activate-service.md)。
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

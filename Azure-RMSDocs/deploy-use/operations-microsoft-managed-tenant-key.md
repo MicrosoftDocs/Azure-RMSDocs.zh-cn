@@ -2,6 +2,7 @@
 title: "Microsoft 托管 - 租户密钥生命周期操作 | Azure 信息保护"
 description: "当 Microsoft 管理 Azure 信息保护租户密钥（默认）时相关生命周期操作的信息。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,23 +13,23 @@ ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 9c2a7d9e65dc860e0bd90789a412a8ef46f946ad
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 49df2de156d5859d9192d8b179e4ba7ef2d653ea
 
 
 ---
 
 
-# Microsoft 托管：租户密钥生命周期操作
+# <a name="microsoftmanaged-tenant-key-lifecycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
 >*适用于：Azure 信息保护、Office 365*
 
 如果由 Microsoft 管理 Azure 信息保护租户密钥（默认），请阅读以下部分，获取有关此拓扑的相关生命周期操作的详细信息。
 
-## 撤消你的租户密钥
+## <a name="revoke-your-tenant-key"></a>撤消你的租户密钥
 取消 Azure 信息保护订阅时，Azure 信息保护会停止使用租户密钥，用户无需执行任何操作。
 
-## 更新你的租户密钥
+## <a name="rekey-your-tenant-key"></a>更新你的租户密钥
 更新密钥也称为滚动密钥。 不要更新你的租户密钥，除非在真正必要的情况下。 旧版客户端（例如 Office 2010）无法适当处理密钥更改。 在这种情况下，必须通过使用组策略或同等机制，清除计算机上的 Rights Management 状态。 但是，某些法律事件可能迫使你更新租户密钥。 例如：
 
 -   你的公司拆分为两家或更多公司。 当你更新你的租户密钥时，新公司将无法访问你的员工发布的新内容。 如果有旧租户密钥的副本，他们可以访问旧内容。
@@ -39,21 +40,21 @@ ms.openlocfilehash: 9c2a7d9e65dc860e0bd90789a412a8ef46f946ad
 
 当你更新租户密钥时，新内容将使用新租户密钥来保护。 这个过程是分阶段进行的，因此在一段时间内，有些新内容仍将使用旧租户密钥来保护。 以前受到保护的内容仍将使用旧租户密钥来保护。 为了支持此种方案，Azure 信息保护保留旧密钥，使其能够发布旧内容的许可证。
 
-## 备份和恢复你的租户密钥
+## <a name="backup-and-recover-your-tenant-key"></a>备份和恢复你的租户密钥
 Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
-## 导出你的租户密钥
+## <a name="export-your-tenant-key"></a>导出你的租户密钥
 可以按照以下三个步骤的说明，导出 Azure 信息保护配置和租户密钥：
 
-### 步骤 1：启动导出
+### <a name="step-1-initiate-export"></a>步骤 1：启动导出
 
 -   若要执行此操作，请[与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)，以打开**带有 Azure 信息保护密钥导出请求的 Azure 信息保护支持案例**。 必须证明你是 Azure 信息保护租户的管理员，并且了解确认此过程需要几天时间。 收取标准支持费用：导出租户密钥并不是免费支持服务。
 
-### 步骤 2：等待验证
+### <a name="step-2-wait-for-verification"></a>步骤 2：等待验证
 
 -   Microsoft 将验证发放 Azure 信息保护租户密钥的请求是否合法。 此过程最多可能需要 3 周时间。
 
-### 步骤 3：接收来自 CSS 的密钥说明
+### <a name="step-3-receive-key-instructions-from-css"></a>步骤 3：接收来自 CSS 的密钥说明
 
 -   Microsoft 客户支持服务 (CSS) 将 Azure 信息保护配置和租户密钥发送给用户，并在一个文件扩展名为 .tpd 的受密码保护的文件中加密该密钥。 执行此操作时，CSS 首先通过电子邮件向你（即启动导出的人员）发送一个工具。 你必须从命令提示符处运行该工具，如下所示：
 
@@ -75,13 +76,13 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
     备份这些文件并将其安全存储，以确保你能够继续解密使用此租户密钥保护的内容。 此外，如果你要迁移到 AD RMS，则可将此 TPD 文件（以 **ExportedTDP** 开头的文件）导入到 AD RMS 服务器。
 
-### 步骤 4：日常：保护你的租户密钥。
+### <a name="step-4-ongoing-protect-your-tenant-key"></a>步骤 4：日常：保护你的租户密钥。
 
 -   在收到你的租户密钥后，对其进行良好的保护，因为如果有人得到了它，他们将可以解密由该密钥保护的所有文档。
 
     如果导出租户密钥的原因是不再需要使用 Azure 信息保护，最佳做法是立即从 Azure 信息保护租户中停用 Azure Rights Management 服务。 不要拖延到收到租户密钥后再做此事，因为此预防措施可以帮助你将不该得到你的租户密钥的人得到它后导致的后果降至最低。 相关说明请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](decommission-deactivate.md)。
 
-## 对违规行为做出响应
+## <a name="respond-to-a-breach"></a>对违规行为做出响应
 如果没有违规响应流程，无论如何强大的安全系统都是不完整的。 你的租户密钥可能泄漏或失窃。 即便它得到了很好的保护，在当前这代的 HSM 技术或当前的密钥长度和算法方面也可以找到一些漏洞。
 
 Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全事件。 当收到某个事件的可信报告时，该团队将参与调查事件的范围、根本原因和缓解办法。 如果该事件影响到资产，则 Microsoft 将使用在订阅时提供的地址，通过电子邮件通知 Azure 信息保护租户管理员。
@@ -98,6 +99,6 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

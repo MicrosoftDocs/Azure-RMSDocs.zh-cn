@@ -2,6 +2,7 @@
 title: "验证 Azure Rights Management | Azure 信息保护"
 description: "有关使用一个用户帐户来保护文件或电子邮件，然后尝试从另一个用户帐户打开和使用这些受保护的内容，从而验证服务是否按预期方式工作的说明。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
-ms.openlocfilehash: e39cb95419fd661be6c0f4838aafdcb02ed684cf
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 8d10bc4aeeed6f5b3d150f6e765c6457f5741409
 
 
 ---
 
-# 验证 Azure Rights Management 服务
+# <a name="verifying-the-azure-rights-management-service"></a>验证 Azure Rights Management 服务
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -31,7 +32,7 @@ ms.openlocfilehash: e39cb95419fd661be6c0f4838aafdcb02ed684cf
 > [!TIP]
 > 如果需要更多帮助，请参阅 [Azure 信息保护的信息和支持](../get-started/information-support.md)一文中的[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)部分。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 可以使用日志记录监视你组织使用 Azure Rights Management 服务的情况。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](log-analyze-usage.md)。
 
@@ -40,6 +41,6 @@ ms.openlocfilehash: e39cb95419fd661be6c0f4838aafdcb02ed684cf
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

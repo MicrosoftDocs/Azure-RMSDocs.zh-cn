@@ -1,21 +1,23 @@
 ---
 title: "如何配置可视标记的标签 | Azure 信息保护"
 description: "当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。"
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 5b00975e3e435ec3ab122c3a015a3daf93db3daf
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: eca90185e6225d3f55f979f66f8225d661fe59cd
 
 
 ---
 
-# 如何配置 Azure 信息保护可视标记的标签
+# <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
 >*适用于：Azure 信息保护*
 
@@ -53,32 +55,32 @@ ms.openlocfilehash: 5b00975e3e435ec3ab122c3a015a3daf93db3daf
 
 4. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 
-## 在文本字符串中使用变量
+## <a name="using-variables-in-the-text-string"></a>在文本字符串中使用变量
 
 你可以在文本字符串中为页眉、页脚或水印使用以下变量：
 
-- `${Item.Label}` 针对所选标签。 例如：Internal
+- `${Item.Label}`，针对所选标签。 例如：Internal
 
-- `${Item.Name}` 针对文件名或电子邮件主题。 例如：JulySales.docx
+- `${Item.Name}`，针对文件名或电子邮件主题。 例如：JulySales.docx
 
-- `${Item.Location}` 针对文档的路径和文件名，以及电子邮件的电子邮件主题。 例如：\\\Sales\2016\Q3\JulyReport.docx
+- `${Item.Location}`，针对文档的路径和文件名，以及电子邮件的主题。 例如：\\\Sales\2016\Q3\JulyReport.docx
 
-- `${User.Name}` 针对文档或电子邮件的所有者，通过使用用户名登录的 Windows。 例如：rsimone
+- `${User.Name}`，针对文档或电子邮件的所有者（按 Windows 登录用户名）。 例如：rsimone
 
-- `${User.PrincipalName}` 针对文档或电子邮件的所有者，通过使用电子邮件地址 (UPN) 登录的 Azure 信息保护客户端。 例如：rsimone@vanarsdelltd.com
+- `${User.PrincipalName}`，针对文档或电子邮件的所有者（按 Azure 信息保护客户端登录电子邮件地址 (UPN)）。 例如：rsimone@vanarsdelltd.com
 
-- `${Event.DateTime}` 针对设置所选标签时的日期和时间。 例如：2016/8/16 下午 1:30
+- `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016/8/16 下午 1:30
     
 示例：如果为 Secret 标签页脚指定字符串 `Document: ${item.name}  Classification: ${item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 **Document: project.docx  Classification: Secret**。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
-有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organization-s-policy)(#配置组织的策略) 部分中的链接。  
-
-
+有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

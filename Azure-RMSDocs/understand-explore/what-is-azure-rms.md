@@ -2,8 +2,9 @@
 title: "Azure 权限管理是什么？ | Azure 信息保护"
 description: "Azure Rights Management (Azure RMS) 是 Azure 信息保护使用的保护技术。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +13,13 @@ ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 3582aaba72347e8374f6cb856f52cd129bb83d3e
+ms.sourcegitcommit: 8e731d9fe973dff7f208502b726ec154129cf7e6
+ms.openlocfilehash: f5f7be6a076c2a2eb962288712630d825edd87c3
 
 
 ---
 
-# Azure 权限管理是什么？
+# <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -33,32 +34,32 @@ Azure Rights Management (Azure RMS) 是 [Azure 信息保护](what-is-information
 
 下图说明了在使用 Office 365 以及本地服务器和服务的情况下，Azure RMS 是如何发挥权限管理解决方案作用的。 此外，你还会发现该解决方案支持运行 Windows、Mac OS、iOS、Android 和 Windows Phone 的常见最终用户设备。
 
-> [!NOTE]
-可以将 Azure RMS 保护用于不同的云订阅，它支持多个功能。 有关详细信息，请参阅 [Azure 信息保护](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)市场营销网站。
 
 ![Azure RMS 工作方式](../media/AzRMS_elements.png)
 
-## 后续步骤
+可以将 Azure RMS 保护用于不同的云订阅，它支持多个功能。 可在 [Azure 信息保护](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)站点上找到有关可用订阅及其所支持功能的详细信息。
 
-了解有关 Azure RMS 的详细信息：
+## <a name="next-steps"></a>后续步骤
+
+了解有关 Azure 信息保护中的此数据保护服务的详细信息：
 
 -   [Azure RMS 解决了哪些问题？](azure-rms-problems-it-solves.md)
 
 -   [运行中的 Azure RMS：管理员和用户看到的内容](what-admins-users-see.md)
 
--   [Azure RMS 的工作原理 揭秘](how-does-it-work.md)
+-   [Azure RMS 的工作原理？揭秘](how-does-it-work.md)
 
 
 
-如果想要深入研究并亲自试用 Azure RMS，请使用 [Azure Rights Management 快速入门教程](../get-started/quick-start-tutorial.md)。
+如果想要深入研究并尝试保护自己的文档，请尝试[Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)。 本教程包括当检测到敏感数据时提示保护文档的内容。 还包括保护通过电子邮件共享的文档、跟踪文档以了解其使用情况以及在必要时撤销其访问权限的内容。
 
-但是，当做好开始为组织部署 Azure 信息保护的准备时，请使用 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)获取部署步骤和操作说明链接。
+但是，如果已准备好开始为组织部署 Azure 信息保护以便管理员和用户可以开始保护文档和电子邮件，请使用 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)获取部署步骤和操作说明链接。
 
 > [!TIP]
 > 有关其他信息和帮助，请使用 [Azure 信息保护的信息和支持](../get-started/information-support.md)中的资源和链接。
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO5-->
 
 

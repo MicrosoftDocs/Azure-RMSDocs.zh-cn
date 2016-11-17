@@ -1,21 +1,23 @@
 ---
 title: "如何配置标签以应用 Rights Management 保护 | Azure 信息保护"
 description: "你可以使用权限管理服务的加密、标识和授权策略保护最敏感的文档和电子邮件，以帮助防止数据丢失。 配置标签以使用权限管理模板时，将应用此保护。"
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 830e982fc1f0443545942c1deb1a2fc93431be17
+ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
+ms.openlocfilehash: 4f3c77df23207c3a76a768a1fe428484339de18f
 
 
 ---
 
-# 如何配置标签以应用权限管理保护
+# <a name="how-to-configure-a-label-to-apply-rights-management-protection"></a>如何配置标签以应用权限管理保护
 
 >*适用于：Azure 信息保护*
 
@@ -23,7 +25,7 @@ ms.openlocfilehash: 830e982fc1f0443545942c1deb1a2fc93431be17
 
 此模板可以是激活 Azure 权限管理时自动创建的默认模板或自定义模板之一。 支持 Azure 权限管理部门模板，但仅当文档或电子邮件作者属于模板配置的作用域时应用保护。 如果用户不在作用域内，则会看到 Azure 信息保护不能应用标签的消息。
 
-## 保护的工作原理
+## <a name="how-the-protection-works"></a>保护的工作原理
 
 当文档或电子邮件受权限管理保护时，它会在处于静态时和传输过程中进行加密，并且只能由授权用户进行解密。 文档或电子邮件的这种加密保持不变，即使将其重命名。 此外，你可以配置使用权限和限制，如下面的示例：
 
@@ -43,7 +45,7 @@ ms.openlocfilehash: 830e982fc1f0443545942c1deb1a2fc93431be17
 > 若要配置标签以应用 Azure 权限管理保护，必须为组织激活 Azure 权限管理服务。 如果尚未这样做，请参阅 [激活 Azure 权限管理](../deploy-use/activate-service.md)(#激活-azure-权限管理)。
 
 
-## 配置标签以应用权限管理保护
+## <a name="to-configure-a-label-to-apply-rights-management-protection"></a>配置标签以应用权限管理保护
 
 1. 如果尚未这样做，请打开一个新的浏览器窗口并以全局管理员的身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
 
@@ -71,18 +73,18 @@ ms.openlocfilehash: 830e982fc1f0443545942c1deb1a2fc93431be17
 
             如果用户不具有删除 Rights Management 保护的权限，并选择此具有“移除保护”选项的标记，他们将会看到以下消息：**Azure 信息保护无法应用此标记。如果此问题仍然存在，请与管理员联系。**
 
-5. 如果选择了 AD RMS：请提供 AD RMS 群集的模板 GUID 和授权 URL。 [更多信息](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
+5. 如果选择了 AD RMS：请提供 AD RMS 群集的模板 GUID 和授权 URL。 [详细信息](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
 6. 单击“保存” 。
 
 7. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
-有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organization-s-policy)(#配置组织的策略) 部分中的链接。  
+有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

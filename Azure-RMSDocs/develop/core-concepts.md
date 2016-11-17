@@ -3,6 +3,7 @@ title: "开发人员指南和条款 | Azure RMS"
 description: "RMS SDK 4.2 的重点是帮助你构建启用 AD RMS 的应用程序，该应用程序可尽可能简单地利用 AD RMS 信息保护。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,7 +21,7 @@ ms.openlocfilehash: 2ac4ca3e505d78758a01516f66f1e5f4ff4b17b6
 
 ---
 
-# 开发人员指南和条款
+# <a name="developer-guidance-and-terms"></a>开发人员指南和条款
 Microsoft Rights Management SDK 4.2 的重点是帮助你构建启用 AD RMS 的应用程序，该应用程序尽可能简单地利用 Active Directory Right Management Services (AD RMS)。
 
 以下主题适用于支持开发启用 RMS 的应用程序设计过程。

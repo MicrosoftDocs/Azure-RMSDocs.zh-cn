@@ -3,6 +3,7 @@ title: "开发环境文件 | Azure RMS"
 description: "本主题展示开发环境文件和它们在计算机上的相对安装位置。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,7 +21,7 @@ ms.openlocfilehash: a251723b6c42058091d57067724e89a1816bcaa1
 
 ---
 
-# 开发环境文件
+# <a name="development-environment-files"></a>开发环境文件
 
 本主题展示开发环境文件和它们在计算机上的相对安装位置。
 

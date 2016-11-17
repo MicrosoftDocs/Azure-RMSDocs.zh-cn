@@ -1,21 +1,23 @@
 ---
 title: "如何配置全局策略设置 | Azure 信息保护"
 description: "Azure 信息保护策略中有 3 个设置适用于所有用户、所有设备。"
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: e1d0c25995c45d72c1467aa1ff8043ca225a8156
+ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
+ms.openlocfilehash: 970a42e89d09af34e9ff16714682d1de250175f6
 
 
 ---
 
-# 如何配置 Azure 信息保护的全局策略设置
+# <a name="how-to-configure-the-global-policy-settings-for-azure-information-protection"></a>如何配置 Azure 信息保护的全局策略设置
 
 >*适用于：Azure 信息保护*
 
@@ -50,11 +52,9 @@ Azure 信息保护策略中有 3 个设置适用于所有用户、所有设备�
 
 4. 若要使所做的更改应用于用户，请单击“**发布**”。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
-有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organization-s-policy)(#配置组织的策略) 部分中的链接。  
-
-
+有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
 
 
@@ -65,6 +65,8 @@ Azure 信息保护策略中有 3 个设置适用于所有用户、所有设备�
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

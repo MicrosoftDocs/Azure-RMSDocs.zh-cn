@@ -2,8 +2,9 @@
 title: "使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护 | Azure 信息保护"
 description: "有关将 Rights Management (RMS) 客户端与 RMS 保护工具配合使用，以配置文件服务器资源管理器和文件分类基础结构 (FCI) 的说明。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +13,13 @@ ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
+ms.sourcegitcommit: 88b6c5fffb1be59563c2b93c8db244edc3201f3c
+ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
 
 
 ---
 
-# 使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
+# <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
 >*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
 
@@ -29,11 +30,11 @@ ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 > [!NOTE]
 > 尽管 Azure 信息保护包括支持文件分类基础结构的[连接器](../deploy-use/deploy-rms-connector.md)，但该解决方案仅支持本机保护（例如，Office 文件）。
 > 
-> 若要支持使用文件分类基础结构的所有文件类型，必须使用 Windows PowerShell **RMS 保护** 模块，如本文中所述。 RMS 保护 cmdlet（如 RMS 共享应用程序）支持一般性保护和本机保护，这意味着可以保护所有文件。 有关这些不同保护级别的详细信息，请参阅 [Rights Management 共享应用程序管理员指南 ](sharing-app-admin-guide.md) 中的 [保护级别 – 本机和常规 ](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 部分。
+> 若要支持使用文件分类基础结构的所有文件类型，必须使用 Windows PowerShell **RMS 保护** 模块，如本文中所述。 RMS 保护 cmdlet（如 RMS 共享应用程序）支持一般性保护和本机保护，这意味着可以保护所有文件。 有关这些不同保护级别的详细信息，请参阅 [Rights Management 共享应用程序管理员指南 ](sharing-app-admin-guide.md) 中的 [保护级别 – 本机和常规 ](sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic) 部分。
 
 接下来的说明适用于 Windows Server 2012 R2 或 Windows Server 2012。 如果你运行其他受支持的 Windows 版本，则可能需要调整某些步骤，以适应你的操作系统版本与本文所述的操作系统版本之间的差异。
 
-## 使用 Windows Server FCI 的 Azure Rights Management 保护的先决条件
+## <a name="prerequisites-for-azure-rights-management-protection-with-windows-server-fci"></a>使用 Windows Server FCI 的 Azure Rights Management 保护的先决条件
 这些说明的先决条件：
 
 -   在你将运行使用文件分类基础结构的文件资源管理器的每个文件服务器上：
@@ -44,7 +45,7 @@ ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
     -   你已安装 RMS 保护工具，包括该工具的必备组件（如 RMS 客户端）和 Azure RMS 的必备组件（如服务主体帐户）。 有关详细信息，请参阅 [RMS 保护 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
 
-    -   如果要更改特定文件扩展名的 RMS 保护的默认级别（本机或常规），需已编辑注册表，如[文件 API 配置](https://msdn.microsoft.com/library/dn197834%28v=vs.85%29.aspx)页中所述。
+    -   如果要更改特定文件扩展名的 RMS 保护的默认级别（本机或常规），需已编辑注册表，如[文件 API 配置](../develop/file-api-configuration.md)页中所述。
 
     -   已使用配置的计算机设置（如果代理服务器需要）建立 Internet 连接。 例如： `netsh winhttp import proxy source=ie`
 
@@ -60,7 +61,7 @@ ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
 -   已确定要使用的 Rights Management 模板，该模板将保护文件。 请确保你通过使用 [Get-RMSTemplate](https://msdn.microsoft.com/library/azure/mt433197.aspx) cmdlet 知道此模板的 ID。
 
-## 为 Azure RMS 保护配置文件服务器资源管理器 FCI 的说明
+## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rms-protection"></a>为 Azure RMS 保护配置文件服务器资源管理器 FCI 的说明
 按照这些说明通过使用 Windows PowerShell 脚本作为自定义任务自动保护一个文件夹中的所有文件。 按此顺序执行这些过程：
 
 1.  保存 Windows PowerShell 脚本
@@ -77,13 +78,13 @@ ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
 在这些说明结束时，所选文件夹中的所有文件都将使用 RMS 的自定义属性进行分类，然后这些文件将受 Rights Management 保护。 对于更复杂的配置（如有选择性地保护某些文件，而不保护其他文件），你可以然后创建或使用不同的分类属性和规则，用于仅保护这些文件的文件管理任务。
 
-### 保存 Windows PowerShell 脚本
+### <a name="save-the-windows-powershell-script"></a>保存 Windows PowerShell 脚本
 
 1.  使用文件服务器资源管理器，复制用于 Azure RMS 保护的 [Windows PowerShell 脚本](fci-script.md)的内容。 粘贴该脚本的内容，并在你自己的计算机上将该文件命名为 **RMS-Protect-FCI.ps1**。
 
 2.  查看脚本，然后进行以下更改：
 
-    -   搜索以下字符串并将其替换为你自己的 AppPrincipalId，你将在 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet 中使用此 AppPrincipalId 连接到 Azure RMS：
+    -   搜索以下字符串并将其替换为自己的 AppPrincipalId，将在 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet 中使用此 AppPrincipalId 连接到 Azure 权限管理服务：
 
         ```
         <enter your AppPrincipalId here>
@@ -130,7 +131,7 @@ ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
 现在，你可以开始配置文件服务器资源管理器。
 
-### 为 Rights Management (RMS) 创建分类属性
+### <a name="create-a-classification-property-for-rights-management-rms"></a>为 Rights Management (RMS) 创建分类属性
 
 -   在文件服务器资源管理器中，为“分类管理”创建新的本地属性：
 
@@ -144,7 +145,7 @@ ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
 我们现在可以创建使用此属性的分类规则。
 
-### 创建分类规则 (Classify for RMS)
+### <a name="create-a-classification-rule-classify-for-rms"></a>创建分类规则 (Classify for RMS)
 
 -   创建新的分类规则：
 
@@ -172,7 +173,7 @@ ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
 虽然你可以手动运行分类规则，但是对于正在进行的操作，你将需要按计划运行此规则，以便新文件将使用 RMS 属性进行分类。
 
-### 配置分类计划
+### <a name="configure-the-classification-schedule"></a>配置分类计划
 
 -   在“自动分类”选项卡上  ：
 
@@ -186,7 +187,7 @@ ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
 现在你已完成分类配置，已可以配置管理任务，以将 RMS 保护应用于这些文件。
 
-### 创建自定义文件管理任务（使用 RMS 保护文件）
+### <a name="create-a-custom-file-management-task-protect-files-with-rms"></a>创建自定义文件管理任务（使用 RMS 保护文件）
 
 -   在“文件管理任务”中，创建新的文件管理任务 ：
 
@@ -251,7 +252,7 @@ ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
         -   **连续对新文件运行**：选中此复选框。
 
-### 通过手动运行规则和任务来测试配置
+### <a name="test-the-configuration-by-manually-running-the-rule-and-task"></a>通过手动运行规则和任务来测试配置
 
 1.  运行分类规则：
 
@@ -292,7 +293,7 @@ ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 在确认这些任务成功运行之后，可以关闭文件资源管理器。 新文件将自动受到保护，并且当计划运行时，所有文件将重新受到保护。 重新保护文件可确保对模板的任何更改都应用于文件。
 
 
-## 修改说明可有选择性地保护文件
+## <a name="modifying-the-instructions-to-selectively-protect-files"></a>修改说明可有选择性地保护文件
 如果你让前面的说明正常操作，则随后可很容易地修改它们以用于更复杂的配置。 例如，使用同一个脚本保护文件，但只针对包含个人身份信息的文件，然后可能选择具有更多限制权限的模板。
 
 为此，请使用内置分类属性之一（例如，**个人身份信息**）或创建你自己的新属性。 然后创建一个使用此属性的新规则。 例如，可能会选择“内容分类器”，为“个人身份信息”属性选择值“高”，并配置字符串或表达式模式（如字符串“出生日期”）以标识要为此属性配置的文件。
@@ -302,6 +303,6 @@ ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

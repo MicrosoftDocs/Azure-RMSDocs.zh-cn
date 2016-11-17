@@ -3,6 +3,7 @@ title: "如何&#58;使用内置权限 | Azure RMS"
 description: "概述了 RMS SDK 4.2 提供的内置权限以及应用为遵守这些限制而强制执行的使用限制。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -22,13 +23,13 @@ ms.openlocfilehash: 3d897f191368b7af6fd339603e183583fa9b4a27
 
 ---
 
-# 如何：使用内置权限
+# <a name="how-to-use-builtin-rights"></a>如何：使用内置权限
 
 本主题概述了 Microsoft Rights Management SDK 4.2 提供的内置权限以及应用为遵守这些限制而强制执行的使用限制。 以下显示内置权限；常见权限、可编辑文档权限和电子邮件权限，之后有描述和操作系统中相应的值。
 
 **请注意** -对于 Linux SDK，请参阅 *rights.h* 源文件了解详细信息。
 
-## 常见权限
+## <a name="common-rights"></a>常见权限
 
 **所有** - 所有常见权限的集合。
 - Android：[CommonRights.All](https://msdn.microsoft.com/library/dn758258.aspx)
@@ -51,7 +52,7 @@ ms.openlocfilehash: 3d897f191368b7af6fd339603e183583fa9b4a27
 
  
 
-## 可编辑文档的权限
+## <a name="editable-document-rights"></a>可编辑文档的权限
 **所有** - 包含所有可编辑文档权限的集合。
 - Android：[EditableDocumentRights.All](https://msdn.microsoft.com/library/dn758284.aspx)
 - iOS 和 OS X：[MSEditableDocumentRights all](https://msdn.microsoft.com/library/dn758318.aspx)
@@ -93,7 +94,7 @@ ms.openlocfilehash: 3d897f191368b7af6fd339603e183583fa9b4a27
 
  
 
-## 电子邮件权限
+## <a name="email-rights"></a>电子邮件权限
 
 **所有** - 包含所有电子邮件权限的集合。
 - Android：[EmailRights.All](https://msdn.microsoft.com/library/dn758285.aspx)

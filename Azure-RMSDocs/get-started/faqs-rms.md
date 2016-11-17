@@ -3,7 +3,7 @@ title: "Azure 信息保护中数据保护服务 Azure Rights Management 的常�
 description: "有关 Azure 信息保护中数据保护服务 Azure Rights Management (Azure RMS) 的一些常见问题。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ec8609217db42a2cf0b3f89367cf4dee6ccb77de
-ms.openlocfilehash: ae25f5af9784b0de92626dbfe65d4358359b4bd9
+ms.sourcegitcommit: 6566e0ce901097bcf5f30d76be67522d3464f100
+ms.openlocfilehash: c92e35b0cb9f892f7859511365027c241d0f1ef6
 
 
 ---
@@ -78,7 +78,7 @@ Azure Rights Management 服务始终使用 Azure Active Directory 帐户和关�
 
 这些帐户的身份验证方法各不相同，具体取决于其他组织中的管理员如何配置 Azure Active Directory 帐户。 例如，他们可以使用为这些帐户、多重身份验证 (MFA)、联合身份验证创建的密码，或在 Active Directory 域服务中创建、然后同步到 Azure Active Directory 的密码。
 
-## 我可以将公司之外的用户添加到自定义模板吗？
+## 能否将外部用户（公司外部人员）添加到自定义模板？
 是。 创建最终用户（和管理员）可以从应用程序中选择的自定义模板，可使用户使用你指定的预定义策略应用信息保护变得简单快捷。 该模板中的设置之一是哪些用户能够访问内容，而且你可以指定组织中的用户和组以及组织之外的用户。
 
 若要从组织外部指定用户，请在配置模板时在 Azure 经典门户中将用户添加为所选组的联系人。 或者使用[适用于 Azure Rights Management 的 Windows PowerShell 模块](../deploy-use/install-powershell.md)：
@@ -157,6 +157,6 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

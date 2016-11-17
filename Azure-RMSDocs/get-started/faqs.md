@@ -3,7 +3,7 @@ title: "Azure 信息保护的常见问题 | Azure 信息保护"
 description: "有关 Azure 信息保护及其数据保护服务 Azure Rights Management (Azure RMS) 的一些常见问题。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2016
+ms.date: 10/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
-ms.openlocfilehash: d869514a126302522030cfb395b49112c48442dc
+ms.sourcegitcommit: 23065305e68dfd4f924041942a72b95bf9a60957
+ms.openlocfilehash: 5a7d9b9e49c4a682ad9b293147eb6840ca1febf3
 
 
 ---
@@ -45,7 +45,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 ## 如果我的问题不在这里，我该如何操作？
 
-首先，查看特定于分类和标签，或特定于数据保护的常见问题。 Azure Rights Management 服务 (Azure RMS) 为 Azure 信息保护提供数据保护技术，Azure RMS 可与或者不与分类和标签结合使用： 
+首先，查看特定于分类和标签，或特定于数据保护的常见问题。 Azure 权限管理服务 (Azure RMS) 为 Azure 信息保护提供数据保护技术，Azure RMS 可与或者不与分类和标签结合使用： 
 
 - [分类和标签的常见问题](faqs-infoprotect.md)
 
@@ -67,6 +67,6 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

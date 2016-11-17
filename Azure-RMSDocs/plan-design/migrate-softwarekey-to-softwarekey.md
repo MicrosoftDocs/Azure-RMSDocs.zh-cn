@@ -2,8 +2,9 @@
 title: "步骤 2&colon; 软件保护密钥到软件保护密钥的迁移 | Azure 信息保护"
 description: "此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的一部分，仅当 AD RMS 密钥是软件保护密钥，且希望使用软件保护租户密钥迁移到 Azure 信息保护时才适用。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,25 +13,25 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 931642ea9070a7581b428bcd04756048673fe3c0
-ms.openlocfilehash: e6bffd31e7f198a767531fb343b8146246078004
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 4a5e45bfef8e39d147410330b0d6b658c8d52474
 
 
 ---
 
 
-# 步骤 2：软件保护密钥到软件保护密钥的迁移
+# <a name="step-2-softwareprotected-key-to-softwareprotected-key-migration"></a>步骤 2：软件保护密钥到软件保护密钥的迁移
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
 
 
 此说明是[从 AD RMS 到 Azure 信息保护的迁移路径](migrate-from-ad-rms-to-azure-rms.md)中的一部分，仅当 AD RMS 密钥是软件保护密钥，且希望使用软件保护租户密钥迁移到 Azure 信息保护时才适用。 
 
-如果这不是你选择的配置方案，请返回[步骤 2.从 AD RMS 中导出配置数据并将其导入到 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) 中，然后选择其他配置。
+如果这不是你选择的配置方案，请返回[步骤 2.从 AD RMS 中导出配置数据并将其导入到 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection) 中，然后选择其他配置。
 
 使用以下步骤将 AD RMS 配置导入到 Azure 信息保护，以生成由 Microsoft 管理的 Azure 信息保护租户密钥。
 
-## 将配置数据导入 Azure 信息保护
+## <a name="to-import-the-configuration-data-to-azure-information-protection"></a>将配置数据导入 Azure 信息保护
 
 1.  在连接 Internet 的工作站上，下载并安装用于 Azure Rights Management 的 Windows PowerShell 模块（最低版本 2.5.0.0），其中包括 [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) cmdlet。 Azure Rights Management 服务 (Azure RMS) 为 Azure 信息保护提供数据保护服务。
 
@@ -64,12 +65,12 @@ ms.openlocfilehash: e6bffd31e7f198a767531fb343b8146246078004
     ```
 
 
-现在可以转到[步骤 3。激活 Azure 信息保护租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
+现在可以转到[步骤 3。激活 Azure 信息保护租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant)。
 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

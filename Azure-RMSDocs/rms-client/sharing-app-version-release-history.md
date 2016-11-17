@@ -2,8 +2,9 @@
 title: "Rights Management 共享应用程序 &colon; 版本发行历史记录 | Azure 信息保护"
 description: "查看适用于 Windows 的 Rights Management 共享应用程序版本中新增或更改的内容。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +13,15 @@ ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 31b9ad27e1fc640f8fec29067794f952aa6031b6
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: 08ca0de6802aa001e5e2bcf7637592c2ad68864d
 
 
 ---
 
-# 权限管理共享应用程序：版本发行历史记录
+# <a name="rights-management-sharing-application-version-release-history"></a>权限管理共享应用程序：版本发行历史记录
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 Azure 信息保护团队定期更新 Rights Management 共享应用程序，以提供修补程序和新功能。 使用以下信息查看版本中的新增内容或更改的内容。 最新版本会最先列出。
 
@@ -29,7 +30,7 @@ Azure 信息保护团队定期更新 Rights Management 共享应用程序，以�
 > [!NOTE]
 > 如果你有关于 RMS 共享应用程序的反馈或问题，请发送电子邮件到 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)。
 
-## 版本 1.0.2217.0
+## <a name="version-1022170"></a>版本 1.0.2217.0
 
 **发布日期**：2016/07/13
 
@@ -39,7 +40,7 @@ Azure 信息保护团队定期更新 Rights Management 共享应用程序，以�
 
 
 
-## 版本 1.0.2191.0
+## <a name="version-1021910"></a>版本 1.0.2191.0
 **发布日期**：2016/06/16
 
 **修补程序**：
@@ -53,7 +54,7 @@ Azure 信息保护团队定期更新 Rights Management 共享应用程序，以�
 - 少量小缺陷修复和错误消息改进。
 
 
-## 版本 1.0.2004.0
+## <a name="version-1020040"></a>版本 1.0.2004.0
 **发布日期**：2015/12/11
 
 **修补程序**：
@@ -72,16 +73,16 @@ Azure 信息保护团队定期更新 Rights Management 共享应用程序，以�
 
     对运行 Office 2010 的标准用户有一些限制。 有关详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md)用户说明中的[如果你不是本地管理员且使用 Office 2010](install-sharing-app.md#if-you-are-not-a-local-administrator-and-use-office-2010) 部分。
 
-## 版本 1.0.1908.0
+## <a name="version-1019080"></a>版本 1.0.1908.0
 **发布日期**：2015/9/16
 
 **修补程序**：
 
 -   对 Azure RMS 的 Multi-Factor Authentication (MFA) 的支持也将删除 Microsoft 登录助手（使用新式身份验证）的依赖关系。
 
-    有关详细信息，请参阅 [Azure Rights Management 要求](../get-started/requirements-azure-rms.md)中的[多因素身份验证 (MFA) 和 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) 部分。
+    有关详细信息，请参阅 [Azure 信息保护的 Azure Active Directory 要求](../get-started/requirements-azure-ad.md)中的[多重身份验证 (MFA) 和 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection) 部分。
 
-## 版本 1.0.1784.0
+## <a name="version-1017840"></a>版本 1.0.1784.0
 **发布日期**：2015/7/30
 
 **修补程序**：
@@ -90,7 +91,7 @@ Azure 信息保护团队定期更新 Rights Management 共享应用程序，以�
 
 -   少量的回归测试和较小的 Bug。
 
-## 版本 1.0.1770.0
+## <a name="version-1017700"></a>版本 1.0.1770.0
 **发布日期**：2015/4/25
 
 **修补程序**：
@@ -113,7 +114,7 @@ Azure 信息保护团队定期更新 Rights Management 共享应用程序，以�
 
     有关详细信息，请参阅 [Rights Management 共享应用程序的对话框选项](sharing-app-dialog-box.md)。
 
-## 版本 1.0.1667.0
+## <a name="version-1016670"></a>版本 1.0.1667.0
 **发布日期**：2015/1/19
 
 **修补程序**：
@@ -131,6 +132,6 @@ Azure 信息保护团队定期更新 Rights Management 共享应用程序，以�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

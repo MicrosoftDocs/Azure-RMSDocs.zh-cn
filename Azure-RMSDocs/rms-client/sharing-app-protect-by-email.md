@@ -2,8 +2,9 @@
 title: "使用 Rights Management 共享应用程序，保护通过电子邮件共享的文件 | Azure 信息保护"
 description: "有关如何通过电子邮件安全共享文档的说明。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +13,15 @@ ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: b4467f73dd9d107681961f99ee038ed889e25b2d
+ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
+ms.openlocfilehash: 1eed5f339ede2d96b1de7e486a04416d1a22c871
 
 
 ---
 
-# 使用 Rights Management 共享应用程序保护通过电子邮件共享的文件
+# <a name="protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序保护通过电子邮件共享的文件
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 在保护你通过电子邮件共享的文件时，将会创建原始文件的新版本。 原始文件仍处于未受保护状态，而新版本已受保护并自动附加到你之后要发送的电子邮件中。
 
@@ -32,7 +33,7 @@ ms.openlocfilehash: b4467f73dd9d107681961f99ee038ed889e25b2d
 
 -   使用文档跟踪站点。 你甚至可以通过在文档跟踪站点中撤消对文件的访问权限，来停止共享该文件。 有关详细信息，请参阅[使用 RMS 共享应用程序跟踪和撤销文档](sharing-app-track-revoke.md)。
 
-## 使用 Outlook：保护通过电子邮件共享的文件
+## <a name="using-outlook-to-protect-a-file-that-you-share-by-email"></a>使用 Outlook：保护通过电子邮件共享的文件
 
 1.  创建你的电子邮件，并附加该文件。 然后，在 **“RMS”** 组的 **“消息”** 选项卡中，单击 **“共享保护项”** ，然后再次单击 **“共享保护项”** ：
 
@@ -42,14 +43,14 @@ ms.openlocfilehash: b4467f73dd9d107681961f99ee038ed889e25b2d
 
 2.  在[共享保护项](sharing-app-dialog-box.md)对话框中指定你希望用于此文件的选项，然后单击“立即发送”。
 
-### 保护你通过电子邮件共享的文件的其他方法
+### <a name="other-ways-to-protect-a-file-that-you-share-by-email"></a>保护你通过电子邮件共享的文件的其他方法
 除了使用 Outlook 共享受保护文件以外，还可以使用以下替代方法：
 
 -   从文件资源管理器：此方法适用于所有文件。
 
 -   从 Office 应用程序：此方法适用于 RMS 共享应用程序支持的应用程序，通过使用 Office 外接程序，你可以在功能区上看到“RMS”组。
 
-#### 使用文件资源管理器或 Office 应用程序：保护通过电子邮件共享的文件
+#### <a name="using-file-explorer-or-an-office-application-to-protect-a-file-that-you-share-by-email"></a>使用文件资源管理器或 Office 应用程序：保护通过电子邮件共享的文件
 
 1.  使用以下选项之一：
 
@@ -71,7 +72,7 @@ ms.openlocfilehash: b4467f73dd9d107681961f99ee038ed889e25b2d
 
     ![Azure 信息保护的电子邮件](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
 
-    你是否想知道：[自动创建的 .ppdf 文件是什么？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
+    你是否想知道：[自动创建的 .ppdf 文件是什么？](sharing-app-dialog-box.md#whats-the-ppdf-file-thats-automatically-created)
 
 4.  可选：你可以根据需要更改此电子邮件中的任何内容。 例如，你可以添加或更改邮件主题或正文。
 
@@ -80,18 +81,18 @@ ms.openlocfilehash: b4467f73dd9d107681961f99ee038ed889e25b2d
 
 5.  发送电子邮件。
 
-## 示例和其他说明
+## <a name="examples-and-other-instructions"></a>示例和其他说明
 有关如何使用 Rights Management 共享应用程序以及操作说明的示例，请参阅以下 Rights Management 共享应用程序用户指南部分：
 
 -   [使用 RMS 共享应用程序的示例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## 另请参阅
+## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
