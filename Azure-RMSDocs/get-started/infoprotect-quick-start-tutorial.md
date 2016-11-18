@@ -2,6 +2,7 @@
 title: "快速入门教程 | Azure 信息保护"
 description: "该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 30 分钟。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/04/2016
 ms.topic: article
@@ -10,15 +11,15 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 4f5f7670ce1897a6436e511057fc714c839a8f00
-ms.openlocfilehash: a8c4003d8dbae5d33712860cd1f665de234db5a0
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 9f475892d7999fc3ff10a27d11986dec9cfa94cd
 
 
 ---
 
-# Azure 信息保护快速入门教程 
+# <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure 信息保护快速入门教程 
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 使用该教程以快速试用适合你组织的 Microsoft Azure 信息保护，只需 5 个步骤，所需时间大概 30 分钟。 本教程为自我引导式教程，旨在快速显示某些 Azure 信息保护提供的特性和功能的案例。 它不包括所有可用功能，也不是你组织的部署指南。 如果想要为你的组织部署 Azure 信息保护，请参阅[部署路线图文档](../plan-design/deployment-roadmap.md)。 
 
@@ -26,7 +27,7 @@ ms.openlocfilehash: a8c4003d8dbae5d33712860cd1f665de234db5a0
 
 如果在完成本教程、使用 Azure 信息保护中有任何问题，或者想要查看别人对此的评论，请访问 [Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)。
 
-## 先决条件 
+## <a name="prerequisites"></a>先决条件 
 若要完成本教程，你需要满足以下先决条件：
 
 - 包含关于分类、设置标签和保护的 Azure 信息保护的订阅。 本教程包括一些高级的功能，例如根据用户建议自动化数据分类和文档跟踪站点。 请确保你的订阅支持这些功能。 有关详细信息，请参阅 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。
@@ -51,6 +52,6 @@ ms.openlocfilehash: a8c4003d8dbae5d33712860cd1f665de234db5a0
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

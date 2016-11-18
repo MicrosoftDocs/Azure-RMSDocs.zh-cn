@@ -3,6 +3,7 @@ title: "概述 - RMS SDK 2.1 | Azure RMS"
 description: "Rights Management Services (RMS) 是一种信息保护技术，可帮助保护数字信息免遭未经授权的使用。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 82441858230e179a08bfa74e0f6aaf9ed17a62fb
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 816d665314fb77931433e36420b54c3ab6f689b9
 
 
 ---
 
-# 概述
+# <a name="overview"></a>概述
 
 Rights Management Services SDK 2.1 是一种信息保护技术，可帮助保护数字信息免遭未经授权的使用。 通过启用权限的应用程序，内容所有者将能够定义可以对内容进行打开、修改、打印、转发或执行其他操作的人员。
 
@@ -42,15 +43,15 @@ AD RMS 由 [服务器](ad-rms-server.md) 和 [客户端](ad-rms-client.md) 组�
 
 本部分中的其余主题将介绍 RMS 体系结构及其实现。
 
-## 本节内容
+## <a name="in-this-section"></a>本节内容
 
 | 主题 | 描述 |
 |-------|-------------|
 |[客户端](ad-rms-client.md) |本主题介绍 Rights Management Services 客户端 2.1 的用途和功能 |
-|[Server](ad-rms-server.md) | 本主题介绍适用于 Azure 和 Windows Server 的 RMS 服务器的用途和功能。|
+|[服务器](ad-rms-server.md) | 本主题介绍适用于 Azure 和 Windows Server 的 RMS 服务器的用途和功能。|
 
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 * [RMS 概念](application-types.md)
 * [入门](getting-started-with-ad-rms-2-0.md)
@@ -61,6 +62,6 @@ AD RMS 由 [服务器](ad-rms-server.md) 和 [客户端](ad-rms-client.md) 组�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

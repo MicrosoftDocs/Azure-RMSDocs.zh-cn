@@ -2,6 +2,7 @@
 title: "管理员如何才能控制为个人 RMS 创建的帐户 | Azure 信息保护"
 description: "如果不希望将组织的个人 RMS 订阅转换为付费订阅，如何控制 Azure Active Directory 中的用户帐户。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,17 +13,17 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 6f26faf8a96c388a4640701a12a77e3b4ef60567
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f9999db44758251f7b9b4c8f86549b1ee36e83d3
 
 
 ---
 
 
 
-# 管理员如何才能控制为个人 RMS 创建的帐户
+# <a name="how-administrators-can-control-the-accounts-created-for-rms-for-individuals"></a>管理员如何才能控制为个人 RMS 创建的帐户
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 
 如果你不希望将组织的个人 RMS 订阅转换为付费订阅，你仍然可以通过下列方式，控制为组织创建的 Azure 目录中的用户帐户：
@@ -40,12 +41,12 @@ ms.openlocfilehash: 6f26faf8a96c388a4640701a12a77e3b4ef60567
 若要控制 Azure 目录中的用户帐户，或者阻止用户注册个人 RMS，你必须具有 Azure 订阅并拥有该目录。 如果没有 Azure 订阅，你可以免费获取一个订阅。 如果在自助过程期间自动为你创建了目录，请获取用于创建该目录的域的所有权。 如果你在 Azure 中已经拥有目录，但用户指定了在组织中使用的新的域，请将该域合并到现有目录中。 有关详细信息，请参阅 [什么是 Azure 自助注册？](https://azure.microsoft.com/documentation/articles/active-directory-self-service-signup/)中的说明。
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 如果用户（而不是管理员）可以在个人 RMS 的 Azure Active Directory 中创建其帐户，则如何发现用户已进行了此操作？  请参阅[如何发现用户已注册了个人 RMS](rms-for-individuals-identify-sign-up.md)。
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

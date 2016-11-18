@@ -2,6 +2,7 @@
 title: "快速入门教程步骤 3 | Azure 信息保护"
 description: "入门教程第 3 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 30 分钟。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,15 +11,15 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: b5c87669c965d1e67b47dcfbd8ba97f1da41d104
-ms.openlocfilehash: 042e168452d2b5cbc1eeec4fc06a3b0f137a5caf
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 496f086d4db43a69ef0acca579b290286a5b9e5b
 
 
 ---
 
-# 步骤 3：安装客户端和应用程序 
+# <a name="step-3-install-the-client-and-application"></a>步骤 3：安装客户端和应用程序 
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 在该步骤中，你将首先安装 Azure 信息保护客户端，因此刚配置的策略将下载到 Windows PC 上，并在 Office 应用中显示标签。
 
@@ -27,7 +28,7 @@ ms.openlocfilehash: 042e168452d2b5cbc1eeec4fc06a3b0f137a5caf
 这两个安装都可与 Office 应用程序集成，当前你必须单独安装它们。
 
 
-## 安装 Azure 信息保护客户端
+## <a name="install-the-azure-information-protection-client"></a>安装 Azure 信息保护客户端
 
 1. 在已安装 Office 的 PC 上（当前未打开 Word），从 Microsoft 下载中心[下载 Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)。 
 
@@ -35,7 +36,7 @@ ms.openlocfilehash: 042e168452d2b5cbc1eeec4fc06a3b0f137a5caf
 
     在本教程中，无论是否选择安装演示策略都没有关系，因为将从 Azure 下载刚配置的策略，如果安装了演示策略，则将替换它。 但是，如果只想体验默认标签而无需连接到 Azure 信息保护，则可以使用演示策略选项。 
 
-## 安装权限管理共享应用程序 
+## <a name="install-the-rights-management-sharing-application"></a>安装权限管理共享应用程序 
 
 1. 转到 Microsoft 网站上的 [Microsoft 权限管理](http://go.microsoft.com/fwlink/?LinkId=303970) 页。
 
@@ -44,7 +45,7 @@ ms.openlocfilehash: 042e168452d2b5cbc1eeec4fc06a3b0f137a5caf
 3. 在 **“安装 Microsoft RMS”** 页上，单击 **“下一步”**，然后等待安装完成。 然后单击“重新启动”（如果系统提示你重新启动计算机），或单击“关闭”完成安装。
 
 
-## 验证安装
+## <a name="verify-the-installations"></a>验证安装
 
 通过打开 Word 和新的空白文档（此时不保存）验证这些安装是否成功。 如果提示你输入用户名和密码，请输入你的全局管理员帐户的详细信息。 
 
@@ -66,7 +67,7 @@ ms.openlocfilehash: 042e168452d2b5cbc1eeec4fc06a3b0f137a5caf
 |--------------------------------|--------------------------|
 |关于安装 Azure 信息保护客户端|[安装 Azure 信息保护客户端](../rms-client/info-protect-client.md)|
 |关于安装 Rights Management 共享应用程序和用户说明|[权限管理共享应用程序用户指南](../rms-client/sharing-app-user-guide.md)|
-|关于适用于 Windows 的 Rights Management 共享应用程序的脚本化安装以及更多技术信息|[保护级别 – 本机和常规](../rms-client/sharing-app-admin-guide.md)|
+|关于适用于 Windows 的 Rights Management 共享应用程序的脚本化安装以及更多技术信息|[权限管理共享应用程序管理员指南](../rms-client/sharing-app-admin-guide.md)|
 
 
 >[!div class="step-by-step"]
@@ -74,6 +75,6 @@ ms.openlocfilehash: 042e168452d2b5cbc1eeec4fc06a3b0f137a5caf
 [步骤 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

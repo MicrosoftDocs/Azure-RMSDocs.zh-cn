@@ -3,6 +3,7 @@ title: "如何启用文档跟踪和撤销 | Azure RMS"
 description: "实现文档内容跟踪的基本指南，以及用于元数据更新和应用的“跟踪使用情况”按钮的示例代码。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -16,19 +17,17 @@ ms.suite: ems
 experimental: true
 experiment_id: priyamo-test-20160729
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 1a98ea095098fdf09809bb8be1e6263b28f3044b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: a077e9721bde9e812d36dfab46d6215857cb69ab
 
 
 ---
 
-# 跟踪内容
-
-# 操作说明：启用文档跟踪和撤销
+# <a name="howto-enable-document-tracking-and-revocation"></a>操作说明：启用文档跟踪和撤销
 
 本主题涵盖实现文档内容跟踪的基本指导，并提供用于元数据更新和为应用创建**“跟踪使用情况”按钮**的示例代码。
 
-## 实现文档跟踪的步骤
+## <a name="steps-to-implement-document-tracking"></a>实现文档跟踪的步骤
 
 步骤 1 和步骤 2 可允许跟踪文档。 第 3 步可允许应用用户访问文档跟踪站点，以便跟踪和撤销受保护的文档。
 
@@ -38,7 +37,7 @@ ms.openlocfilehash: 1a98ea095098fdf09809bb8be1e6263b28f3044b
 
 这些步骤的实现详细信息如下。
 
-## 1.添加文档跟踪元数据
+## <a name="1-add-document-tracking-metadata"></a>1.添加文档跟踪元数据
 
 文档跟踪是 Rights Management 系统的一个功能。 通过在文档保护过程中添加特定的元数据，可以使用提供多个跟踪选项的跟踪服务门户来注册文档。
 
@@ -48,12 +47,12 @@ ms.openlocfilehash: 1a98ea095098fdf09809bb8be1e6263b28f3044b
 在操作上，只有 **内容名称** 和 **通知类型** 属性对于文档跟踪是必需的。
 
 
-- [IpcCreateLicenseMetadataHandle](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-- [IpcSetLicenseMetadataProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
+- [IpcCreateLicenseMetadataHandle](https://msdn.microsoft.com/library/dn974050.aspx)
+- [IpcSetLicenseMetadataProperty](https://msdn.microsoft.com/library/dn974059.aspx)
 
   我们期望你能设置所有元数据属性。 就是以下这些按类型列出的属性。
 
-  有关详细信息，请参阅[许可证元数据属性类型](/information-protection/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)。
+  有关详细信息，请参阅[许可证元数据属性类型](https://msdn.microsoft.com/library/dn974062.aspx)。
 
   - **IPC_MD_CONTENT_PATH**
 
@@ -79,19 +78,19 @@ ms.openlocfilehash: 1a98ea095098fdf09809bb8be1e6263b28f3044b
 
     用于设置文件的发放日期
 
-- [IpcSerializeLicenseWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+- [IpcSerializeLicenseWithMetadata](https://msdn.microsoft.com/library/dn974058.aspx)
 
 使用其中一个合适的 API 将元数据添加到文件或流中。
 
-- [IpcfEncryptFileWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-- [IpcfEncryptFileStreamWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+- [IpcfEncryptFileWithMetadata](https://msdn.microsoft.com/library/dn974052.aspx)
+- [IpcfEncryptFileStreamWithMetadata](https://msdn.microsoft.com/library/dn974051.aspx)
 
 最后，使用此 API 注册具有跟踪系统的跟踪文档。
 
-- [IpcRegisterLicense](/information-protection/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+- [IpcRegisterLicense](https://msdn.microsoft.com/library/dn974057.aspx)
 
 
-## 2.向 RMS 服务注册文档
+## <a name="2-register-the-document-with-the-rms-service"></a>2.向 RMS 服务注册文档
 
 以下是代码段，显示了设置文档跟踪元数据的示例和对跟踪系统中注册的调用。
 
@@ -134,38 +133,38 @@ ms.openlocfilehash: 1a98ea095098fdf09809bb8be1e6263b28f3044b
                         wstrContentName.c_str(),
                         sendLicenseRegistrationNotificationEmail);
 
-## 向应用添加**跟踪使用情况**按钮
+## <a name="add-a-track-usage-button-to-your-app"></a>向应用添加**跟踪使用情况**按钮
 
 向应用添加**跟踪使用情况** UI 项非常简单，使用以下任一 URL 格式即可：
 
 - 使用内容 ID
-  - 如果许可证已序列化，请使用 [IpcGetLicenseProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetlicenseproperty) 或 [IpcGetSerializedLicenseProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetserializedlicenseproperty) 获取内容 ID，并使用许可证属性 **IPC_LI_CONTENT_ID**。 有关详细信息，请参阅[许可证属性类型](/information-protection/sdk/2.1/api/win/constants#msipc_license_property_types)。
-  - 对于 **ContentId** 和 **Issuer** 元数据，使用以下格式： `https://track.azurerms.com/#/{ContentId}/{Issuer}`
+  - 如果许可证已序列化，请使用 [IpcGetLicenseProperty](https://msdn.microsoft.com/library/hh535265.aspx) 或 [IpcGetSerializedLicenseProperty](https://msdn.microsoft.com/library/hh995038.aspx) 获取内容 ID，并使用许可证属性 **IPC_LI_CONTENT_ID**。 有关详细信息，请参阅[许可证属性类型](https://msdn.microsoft.com/library/hh535287.aspx)。
+  - 对于 **ContentId** 和 **Issuer** 元数据，使用以下格式：`https://track.azurerms.com/#/{ContentId}/{Issuer}`
 
     示例 - `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
 
-- 如果你无权访问该元数据（即检查文档的不受保护版本时），可以下列格式使用 **Content_Name**： `https://track.azurerms.com/#/?q={ContentName}`
+- 如果无权访问该元数据（即检查文档的不受保护版本时），可以使用 **Content_Name**，其格式如下：`https://track.azurerms.com/#/?q={ContentName}`
 
   示例 - https://track.azurerms.com/#/?q=Secret!.txt
 
 客户端只需要使用适当的 URL 打开浏览器。 RMS 文档跟踪门户将处理身份验证和任何所需重定向。
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
-* [许可证元数据属性类型](/information-protection/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)
-* [通知参考](/information-protection/sdk/2.1/api/win/constants#msipc_notification_preference)
-* [通知类型](/information-protection/sdk/2.1/api/win/constants#msipc_notification_type)
-* [IpcCreateLicenseMetadataHandle](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-* [IpcSetLicenseMetadataProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
-* [IpcSerializeLicenseWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
-* [IpcfEncryptFileWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-* [IpcfEncryptFileStreamWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
-* [IpcRegisterLicense](/information-protection/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+* [License metadata property types](https://msdn.microsoft.com/library/dn974062.aspx)（许可证元数据属性类型）
+* [Notification preference](https://msdn.microsoft.com/library/dn974063.aspx)（通知引用）
+* [Notification type](https://msdn.microsoft.com/library/dn974064.aspx)（通知类型）
+* [IpcCreateLicenseMetadataHandle](https://msdn.microsoft.com/library/dn974050.aspx)
+* [IpcSetLicenseMetadataProperty](https://msdn.microsoft.com/library/dn974059.aspx)
+* [IpcSerializeLicenseWithMetadata](https://msdn.microsoft.com/library/dn974058.aspx)
+* [IpcfEncryptFileWithMetadata](https://msdn.microsoft.com/library/dn974052.aspx)
+* [IpcfEncryptFileStreamWithMetadata](https://msdn.microsoft.com/library/dn974051.aspx)
+* [IpcRegisterLicense](https://msdn.microsoft.com/library/dn974057.aspx)
 
  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

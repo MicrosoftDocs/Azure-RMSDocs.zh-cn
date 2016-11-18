@@ -2,6 +2,7 @@
 title: "用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）| Azure 信息保护"
 description: "要复制和编辑的示例脚本，如“使用 Windows Server 文件分类基础结构的 RMS 保护”说明中所述。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/24/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f2723c4417890411230e9dbab4e2d9e36282b1db
-ms.openlocfilehash: 0e2ff499fc7c9890a3d8d7327964e3ed5ac19112
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 3ec4b05af68380994f636d0a415691f6465f65b0
 
 
 ---
 
-# 用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）
+# <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）
 
 >*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
 
 此页包含要复制和编辑的示例脚本，如[使用 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md)中所述。
 
-对于 RMS 保护模块，此脚本使用的最低版本为 **2.2.0.0**。 运行以下命令以检查版本： `(Get-Module RMSProtection -ListAvailable).Version` 
+对于 RMS 保护模块，此脚本使用的最低版本为 **2.2.0.0**。 运行以下命令以检查版本：`(Get-Module RMSProtection -ListAvailable).Version` 
 
 *&#42;&#42;免责声明&#42;&#42;：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。此示例*
 *脚本按原样提供，不提供任何形式的保证。*
@@ -176,6 +177,6 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: "Azure 信息保护的管理员信息和支持 | Azure 信息保护"
 description: "管理员资源，其中包括有关新版本、支持选项以及如何与 Microsoft 联系以报告问题的信息。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/13/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 263c4109ac5dec435bbb0b126594eeafc974ff47
-ms.openlocfilehash: 79bed57d13aba8648ab3e3b7340bcc6d711f7942
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 4f0e3fbfd5caee7a5ea3fc40d8519a5e34d78cb5
 
 
 ---
 
-# Azure 信息保护的信息和支持
+# <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -32,16 +33,16 @@ ms.openlocfilehash: 79bed57d13aba8648ab3e3b7340bcc6d711f7942
 |检查订阅信息和支持的功能 →|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
 
 
-## 有关新版本的信息
+## <a name="information-about-new-releases"></a>有关新版本的信息
 信息保护产品小组向[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)发送关于新版本和更新的公告。 这些博客文章可为产品文档和技术支持信息提供补充。
 
 > [!TIP]
 > 如果要开发使用 Microsoft Rights Management 服务（Azure RMS 或 AD RMS）的应用程序，你可能还会对 [Active Directory Rights Management Services (AD RMS) 开发人员活动角博客](https://blogs.msdn.microsoft.com/rms/)感兴趣。
 
-## 支持选项和社区资源
+## <a name="support-options-and-community-resources"></a>支持选项和社区资源
 以下部分提供有关支持选项和故障排除选项的信息及社区资源。
 
-### 与 Microsoft 支持部门联系
+### <a name="to-contact-microsoft-support"></a>与 Microsoft 支持部门联系
 
 如果你有顶级支持，请访问[针对顶级支持客户的门户](https://premier.microsoft.com/)来提交事件、浏览解决方案，并获得帮助。
 
@@ -59,7 +60,7 @@ ms.openlocfilehash: 79bed57d13aba8648ab3e3b7340bcc6d711f7942
 
 有关其他支持选项，请询问你的 Microsoft 联系人。 
 
-### 自助方式
+### <a name="selfhelp"></a>自助方式
 
 点播视频：
 
@@ -79,7 +80,7 @@ ms.openlocfilehash: 79bed57d13aba8648ab3e3b7340bcc6d711f7942
 
 - 有关自动检查、自动修正和跟踪：请下载并运行 [RMS 分析器工具](http://www.microsoft.com/en-us/download/details.aspx?id=46437)。 有关此工具的详细信息，请参阅下载页面上的“详细信息”和“安装说明”。 
 
-### 社区资源
+### <a name="community-resources"></a>社区资源
 
 -   [Yammer：Azure 信息保护](http://www.yammer.com/AskIPTeam)
 
@@ -90,6 +91,6 @@ ms.openlocfilehash: 79bed57d13aba8648ab3e3b7340bcc6d711f7942
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

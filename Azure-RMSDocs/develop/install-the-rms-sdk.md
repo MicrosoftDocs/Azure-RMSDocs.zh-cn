@@ -3,6 +3,7 @@ title: "安装 SDK | Azure RMS"
 description: "本主题指导你完成安装开发人员工具的过程。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,19 +15,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 8a118e4b5174251122a5798b2674d0c6e79017be
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 8ac3478738693cbc8119ee756f2b0ac566661bea
 
 
 ---
 
-# 安装 SDK
+# <a name="install-the-sdk"></a>安装 SDK
 
 本主题指导你完成安装开发人员工具的过程。
 
-## 说明
+## <a name="instructions"></a>说明
 
-### 安装开发人员工具
+### <a name="install-the-developer-tools"></a>安装开发人员工具
 
 1.  从 Microsoft 下载中心下载 [Rights Management Services SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397)，仔细选择适用于计算机的正确体系结构版本。
 2.  从安装位置运行该安装程序包：
@@ -37,7 +38,7 @@ ms.openlocfilehash: 8a118e4b5174251122a5798b2674d0c6e79017be
 
 有关通过“setup\_sdk.exe”在系统上安装的文件的详细信息，请参阅[开发环境文件](sdk-elements.md)
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 * [开发环境文件](sdk-elements.md)
  
@@ -46,6 +47,6 @@ ms.openlocfilehash: 8a118e4b5174251122a5798b2674d0c6e79017be
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

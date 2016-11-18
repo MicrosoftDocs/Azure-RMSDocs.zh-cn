@@ -3,6 +3,7 @@ title: "客户端 | Azure RMS"
 description: "AD RMS Client 2.1 是为客户端计算机而设计的软件，可帮助保护对信息的访问和使用"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 099c27d0bc94503101adc04d1e398ff1eeb4d916
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 1c8d69af23ce094520bac491246a158510a948bb
 
 
 ---
 
-# 客户端
+# <a name="client"></a>客户端
 
 本主题介绍 Rights Management Services 客户端 2.1 的用途和功能。
 
@@ -32,7 +33,7 @@ Rights Management Services SDK 2.1 适用于 RMS 客户端 2.1。 在 RMS SDK 2.
 
 有关详细信息，请参阅[有关 RMS 客户端 2.1 的 TechNet 文档](https://TechNet.Microsoft.Com/library/jj159267(WS.10).aspx)。
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 * [概述](ad-rms-overview.md)
 * [使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)
@@ -43,6 +44,6 @@ Rights Management Services SDK 2.1 适用于 RMS 客户端 2.1。 在 RMS SDK 2.
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

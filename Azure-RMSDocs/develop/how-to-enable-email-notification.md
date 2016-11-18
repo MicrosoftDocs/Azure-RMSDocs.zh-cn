@@ -3,6 +3,7 @@ title: "启用电子邮件通知 | Azure RMS"
 description: "受保护的内容所有者通过电子邮件通知可以在其内容受到访问时收到通知。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 77e2dfe7f2afb1e70de658850f83f86e9224aea6
-ms.openlocfilehash: 411c549cc865914c6e35ececad99da0a0d46c5d4
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 5da480834485d58028b366c8fbb9a53412cd7c6a
 
 
 ---
 
-# 操作说明：启用电子邮件通知
+# <a name="howto-enable-email-notification"></a>操作说明：启用电子邮件通知
 
 受保护的内容所有者通过电子邮件通知可以在其内容受到访问时收到通知。
 
@@ -56,7 +57,7 @@ ms.openlocfilehash: 411c549cc865914c6e35ececad99da0a0d46c5d4
 |MS.Notify.TZSN|字符串|“太平洋标准时间”|**源：** TimeZoneInfo.Local.StandardName - 标准时区名称。<br><br>这应是时区标准时区名称的本地化名称。|
 |MS.Notify.TZDN|字符串|“太平洋夏令时”|**源：** TimeZoneInfo.Local.DaylightName - 夏令时时区名称。<br><br>这应是时区夏令时名称的本地化名称。 如果时区不支持夏令时，则它可能与标准名称相同。|
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 - [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
 - [IPC\_LI\_APP\_SPECIFIC\_DATA](https://msdn.microsoft.com/library/hh535287.aspx)
@@ -67,6 +68,6 @@ ms.openlocfilehash: 411c549cc865914c6e35ececad99da0a0d46c5d4
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,8 +2,9 @@
 title: "方案 - 高级管理人员安全地交换特权信息 | Azure 信息保护"
 description: "此方案和支持性的用户文档使用 Azure Rights Management 保护，以便高级管理人员可以安全地通过电子邮件彼此交换电子邮件和附件，而策略会自动将访问权限限制为高级管理人员而无需他们采取任何特殊操作。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +13,13 @@ ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b61b7068e67103c45aea139cf95dacb851fe70e2
-ms.openlocfilehash: fb25a5f97580e7d912016bbeb304e6470f8cbba0
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: c8c460549df34a746b21f57aa890a52571bf2061
 
 
 ---
 
-# 方案 - 高级管理人员安全地交换特权信息
+# <a name="scenario-executives-securely-exchange-privileged-information"></a>方案 - 高级管理人员安全地交换特权信息
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -34,24 +35,24 @@ ms.openlocfilehash: fb25a5f97580e7d912016bbeb304e6470f8cbba0
 
 -   高级管理人员如需向其他高级管理人员发送未受保护的电子邮件消息，他们有自行替代此规则的方法。
 
-## 部署说明
+## <a name="deployment-instructions"></a>部署说明
 ![Azure RMS 快速部署的管理员指令](../media/AzRMS_AdminBanner.png)
 
 请确保已满足以下要求，然后在进入到用户文档环节前按照支持过程的说明进行操作。
 
-## 本方案的要求
+## <a name="requirements-for-this-scenario"></a>本方案的要求
 要让针对此方案的说明生效，必须做好以下准备：
 
 |要求|需要更多信息|
 |---------------|--------------------------------|
 |已准备好 Office 365 或 Azure Active Directory 的帐户和组：<br /><br />- 一个名为**高级管理人员**的启用邮件的组，所有高级管理人员均为此组的成员<br /><br />- 一个名为 **RMS 管理员**的启用邮件的组，将配置 Azure RMS 的所有管理员均为此组的成员|[准备 Azure 信息保护](../plan-design/prepare.md)|
 |Azure 信息保护租户密钥由 Microsoft 管理；没有使用 BYOK|[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)|
-|已激活 Azure Rights Management|[激活 Azure 权限管理](../deploy-use/activate-service.md)|
+|已激活 Azure Rights Management|[激活 Azure Rights Management](../deploy-use/activate-service.md)|
 |以下配置之一：<br /><br />- 已为 Azure Rights Management 启用了 Exchange Online<br /><br />- 已为 Exchange 内部部署安装和配置了 RMS 连接器|对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](../deploy-use/configure-office365.md#exchange-online-irm-configuration)信息。<br /><br />对于 Exchange 内部部署：请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)|
-|已按下文所述配置了自定义模板|[为 Azure Rights Management 配置自定义模板](../deploy-use/configure-custom-templates.md)|
+|已按下文所述配置了自定义模板|[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)|
 |已按本文之后章节所述为 IRM 配置了传输保护规则|对于 Exchange Online，请参阅：[邮件流或传输规则](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)<br /><br />对于 Exchange 2013：请参阅[创建传输保护规则](https://technet.microsoft.com/en-us/library/dd302432(v=exchg.150))<br /><br />对于 Exchange 2010：请参阅[创建传输保护规则](https://technet.microsoft.com/library/dd302432(v=exchg.141))|
 
-### 为高级管理人员配置自定义模板
+### <a name="to-configure-the-custom-template-for-executives"></a>为高级管理人员配置自定义模板
 
 1.  在 Azure 经典门户中：为 Azure Rights Management 创建一个新的自定义模板，其中包含以下值和设置：
 
@@ -69,7 +70,7 @@ ms.openlocfilehash: fb25a5f97580e7d912016bbeb304e6470f8cbba0
     Import-RMSTrustedPublishingDomain -Name "RMS Online -1" -RefreshTemplates -RMSOnline
     ```
 
-### 为 IRM 配置传输规则
+### <a name="to-configure-the-transport-rule-for-irm"></a>为 IRM 配置传输规则
 
 -   使用从过程信息表中引用的 Exchange 文档创建具有以下设置的传输规则：
 
@@ -83,7 +84,7 @@ ms.openlocfilehash: fb25a5f97580e7d912016bbeb304e6470f8cbba0
 
     -   请确保已配置规则以“强制实施”。
 
-## 用户文档说明
+## <a name="user-documentation-instructions"></a>用户文档说明
 如果不想提供有关如何在电子邮件主题中指定 **DNP** 或者所选例外情况的词或短语的说明，则不会向用户提供此方案的过程信息，因为保护发送自/发送到高级管理人员的电子邮件不需要他们进行特殊操作。 电子邮件和所有附件会自动受到保护，以便只有高级管理人员组的成员可以访问它们。
 
 但是，可能需要告知高级管理人员和技术支持这些电子邮件会自动受到保护以及这对他们使用电子邮件有哪些限制。 例如，如果这些电子邮件或附件之后转发给其他人，则无法被其他人成功查阅。 如已配置 DNP（或等效）例外，请确保技术支持了解此配置，以便高级管理人员可以自行替代该规则，而无需请求 Exchange 管理员进行操作。
@@ -104,34 +105,34 @@ ms.openlocfilehash: fb25a5f97580e7d912016bbeb304e6470f8cbba0
 
 ![Azure RMS 快速部署的用户文档模板](../media/AzRMS_UsersBanner.png)
 
-### IT 公告：&lt;组织名称&gt;高级管理人员电子邮件现已自动受到保护
+### <a name="it-announcement-ltorganization-namegt-executive-emails-are-now-automatically-protected"></a>IT 公告：&lt;组织名称&gt;高级管理人员电子邮件现已自动受到保护
 从现在起，每次将电子邮件发送给公司内的其他&lt;组织名称&gt;高级管理人员时，电子邮件的内容和所有附件将自动受到保护，只有公司内的其他高级管理人员可以访问并进行阅读、打印、复制信息等操作。 即使将电子邮件转发给其他人或保存附件，此限制仍适用。 这种保护可帮助防止机密和敏感信息的数据丢失。
 
 请注意，如果希望其他不是&lt;组织名称&gt;高级管理人员的人能够阅读和编辑电子邮件中所发送的信息，必须单独向这些人发送电子邮件。 或者，在电子邮件信息主题中的任何地方键入字母 **DNP**（“不保护”的缩写）以替代自动保护。
 
-将公司机密信息发送给其他&lt;组织名称&gt;高级管理人员时，请记得发送到其工作电子邮件地址（*名称*@&lt;emaildomain&gt;），而不要发送到私人电子邮件地址。
+将公司机密信息发送给其他&lt;组织名称&gt;高级管理人员时，请记得发送到其工作电子邮件地址（名称@&lt;emaildomain&gt;），而不要发送到私人电子邮件地址。
 
-**需要帮助吗?**
+**需要帮助吗？**
 
 -   与技术支持联系：&lt;联系人详细信息&gt;
 
-### 示例用户文档
+### <a name="example-user-documentation"></a>示例用户文档
 ![Azure RMS 快速部署的用户文档示例](../media/AzRMS_ExampleBanner.png)
 
-#### IT 公告：VanArsdel 高级管理人员电子邮件现已自动受到保护
+#### <a name="it-announcement-vanarsdel-executive-emails-are-now-automatically-protected"></a>IT 公告：VanArsdel 高级管理人员电子邮件现已自动受到保护
 从现在起，每次将电子邮件发送给公司内的其他 VanArsdel 高级管理人员时，电子邮件的内容和所有附件将自动受到保护，只有公司内的其他高级管理人员可以访问并进行阅读、打印、复制信息等操作。 即使将电子邮件转发给其他人或保存附件，此限制仍适用。 这种保护可帮助防止机密和敏感信息的数据丢失。
 
 请注意，如果希望其他不是 VanArsdel 高级管理人员的人能够阅读和编辑电子邮件中所发送的信息，必须单独向这些人发送电子邮件。 或者，在电子邮件信息主题中的任何地方键入字母 **DNP**（“不保护”的缩写）以替代自动保护。
 
-将公司机密信息发送给其他 VanArsdel 高级管理人员时，请记得发送到其工作电子邮件地址（*名称*@vanarsdelltd.com），而不要发送到私人电子邮件地址。
+将公司机密信息发送给其他 VanArsdel 高级管理人员时，请记得发送到其工作电子邮件地址（名称@vanarsdelltd.com)），而不要发送到私人电子邮件地址。
 
-**需要帮助吗?**
+**需要帮助吗？**
 
--   请联系技术支持：helpdesk@vanarsdelltd.com
-
-
+-   与技术支持联系：helpdesk@vanarsdelltd.com
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO2-->
 
 

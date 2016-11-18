@@ -2,6 +2,7 @@
 title: "安装适用于 Azure Rights Management 的 Windows PowerShell | Azure 信息保护"
 description: "安装适用于 Azure 信息保护中的 Azure Rights Management 服务的 Windows PowerShell 的说明 此模块的名称是 AADRM。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 97c53d92755ebcadee7de2e32750c00b285224dd
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: c114059e99f3caed4fa5e2c48fe0428cb5847f68
 
 
 ---
 
-# 安装适用于 Azure 权限管理的 Windows PowerShell
+# <a name="installing-windows-powershell-for-azure-rights-management"></a>安装适用于 Azure 权限管理的 Windows PowerShell
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -26,7 +27,7 @@ ms.openlocfilehash: 97c53d92755ebcadee7de2e32750c00b285224dd
 
 在任何具有 Internet 连接且满足下一节列出的先决条件的计算机上，可以使用此 PowerShell 模块从命令行管理 Azure Rights Management 服务。 适用于 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的 Windows PowerShell 支持脚本的自动化，或者可能是高级配置方案所必需的。 若要深入了解此模块支持的管理任务和配置，请参阅[使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md)。
 
-## 先决条件
+## <a name="prerequisites"></a>先决条件
 此表列出了安装和使用适用于 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的 Windows PowerShell 的先决条件。
 
 |要求|更多信息|
@@ -41,7 +42,7 @@ ms.openlocfilehash: 97c53d92755ebcadee7de2e32750c00b285224dd
 > 如果你安装有 Rights Management 管理模块的早期版本，请在安装最新版本之前使用“程序和功能”卸载 **Microsoft Azure AD Rights Management 管理**。
 
 
-## 如何安装权限管理管理模块
+## <a name="how-to-install-the-rights-management-administration-module"></a>如何安装权限管理管理模块
 
 1.  转到 Microsoft 下载中心并[下载 Azure Rights Management 管理工具](https://go.microsoft.com/fwlink/?LinkId=257721)，其中包含 Windows PowerShell 的 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 管理模块。
 
@@ -51,7 +52,7 @@ ms.openlocfilehash: 97c53d92755ebcadee7de2e32750c00b285224dd
 
 适用于 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的 Windows PowerShell 现已安装。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 若要查看有哪些可用的 cmdlet，请使用“以管理员身份运行”选项启动 Windows PowerShell，并键入以下内容  ：
 
 ```
@@ -70,11 +71,11 @@ Get-Command -Module aadrm
 > [!NOTE]
 > 如果尚未激活 Azure Rights Management 服务，则可在连接到服务之后，使用[Enable-Aadrm](https://msdn.microsoft.com/library/windowsazure/dn629412.aspx) cmdlet 进行激活。
 
-## 另請參閱
-[使用 Windows PowerShell 管理 Azure 权限管理](administer-powershell.md)
+## <a name="see-also"></a>另請參閱
+[使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

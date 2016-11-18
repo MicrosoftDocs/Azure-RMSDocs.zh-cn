@@ -2,6 +2,7 @@
 title: "为 Azure Rights Management 服务配置自定义模板 | Azure 信息保护"
 description: "面向管理员提供的有关配置和管理使用权限模板的信息和说明。 模板可使用户和其他管理员轻松地将策略应用于限制授权用户访问的敏感文件。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: d8db7f0346fad1b9c46423875d1e559d41987686
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: ea64bd17994a9ce38ed0d758ec63156a7f64c732
 
 
 ---
 
-# 为 Azure Rights Management 服务配置自定义模板
+# <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>为 Azure Rights Management 服务配置自定义模板
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -66,6 +67,6 @@ ms.openlocfilehash: d8db7f0346fad1b9c46423875d1e559d41987686
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

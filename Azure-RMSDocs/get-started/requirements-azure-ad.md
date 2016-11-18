@@ -2,6 +2,7 @@
 title: "Azure Active Directory 要求 | Azure 信息保护"
 description: "确定使用 Azure 信息保护的 Azure AD 要求，以便用户可以成功进行身份验证。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/29/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
-ms.openlocfilehash: 5be497b09ed1b1342747508611a1cc06ad0edf02
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
 
 
 ---
 
-# Azure 信息保护的 Azure Active Directory 要求
+# <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -39,7 +40,7 @@ ms.openlocfilehash: 5be497b09ed1b1342747508611a1cc06ad0edf02
 > 
 > -   你必须在最低服务器版的 **Windows Server 2012 R2** 上使用 AD FS，或者使用支持 OAuth 2.0 协议的备用身份验证提供程序。
 
-## 多重身份验证 (MFA) 和 Azure 信息保护
+## <a name="multifactor-authentication-mfa-and-azure-information-protection"></a>多重身份验证 (MFA) 和 Azure 信息保护
 若要将多因素身份验证 (MFA) 和 Azure 信息保护结合起来使用，至少需要以下条件之一：
 
 -   Office 2013（最低版本）：
@@ -68,12 +69,12 @@ ms.openlocfilehash: 5be497b09ed1b1342747508611a1cc06ad0edf02
 
         有关此方案的详细信息，请参阅 Office 博客上的[使用 Office 365 – 标识程序现在已简化](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 若要查看其他要求，请参阅 [Azure 信息保护的要求](requirements-azure-rms.md)。
 
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: "Rights Management 共享应用程序管理员指南 | Azure 信息保护"
 description: "面向负责部署适用于 Windows 的 Microsoft Rights Management 共享应用程序的企业网络管理员的说明和信息。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/18/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e5decd2df9135317f2e0da4951a177211342d7ac
-ms.openlocfilehash: e66f0ac6e596840ad940c51db41dbc6f91139e51
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 21d25b4b4d476a2396217a0c0635b95d940b92bf
 
 
 ---
 
 
-# 保护级别 – 本机和常规
+# <a name="rights-management-sharing-application-administrator-guide"></a>保护级别 – 本机和常规
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
@@ -30,12 +31,12 @@ RMS 共享应用程序最适合与 Azure 信息保护配合使用，因为这种
 
 有关 Rights Management 共享应用程序的技术概览和有关本机和通用保护、支持的文件类型、文件扩展名以及如何更改默认保护级别的信息，请参阅[《Technical overview and protection details for the Rights Management sharing application》](sharing-app-admin-guide-technical.md)（Rights Management 共享应用程序的技术概览和保护详细信息）。 
 
-## 自动部署 Microsoft Rights Management 共享应用程序
+## <a name="automatic-deployment-for-the-microsoft-rights-management-sharing-application"></a>自动部署 Microsoft Rights Management 共享应用程序
 Windows 版 RMS 共享应用程序支持脚本化安装，因此适合企业部署。
 
 安装的唯一先决条件是，计算机运行最低版本的 Windows 7 Service Pack 1 且已安装 Microsoft Framework（最低版本为 4.0）。 如果你需要安装 Microsoft.NET Framework 4.0，可以 [从 Microsoft 下载中心下载并安装](http://www.microsoft.com/download/details.aspx?id=17718)。
 
-### 下载要自动部署的 RMS 共享应用程序
+### <a name="to-download-the-rms-sharing-application-for-automatic-deployment"></a>下载要自动部署的 RMS 共享应用程序
 
 1.  在 Microsoft 下载中心转到 [适用于 Windows 的 Rights Management 共享应用程序](http://www.microsoft.com/download/details.aspx?id=40857) 页，然后单击“下载”。 
 
@@ -76,7 +77,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 若要针对每个步骤完成安装，必须重新启动计算机。 可以使用类似于 **shutdown /i** 的命令实现自动重新启动。
 
-### 为 Office 2016 或 Office 2013 和 Azure 信息保护或 Active Directory RMS 部署 RMS 共享应用程序
+### <a name="to-deploy-the-rms-sharing-application-for-office-2016-or-office-2013-and-azure-information-protection-or-active-directory-rms"></a>为 Office 2016 或 Office 2013 和 Azure 信息保护或 Active Directory RMS 部署 RMS 共享应用程序
 
 -   在要安装 RMS 共享应用程序及相关组件的每台计算机上，使用提升的权限运行以下命令：
 
@@ -86,7 +87,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 若要验证是否成功，请参阅本文中的[验证安装是否成功](#verifying-installation-success)部分。
 
-### 为 Office 2010 和 Azure 信息保护部署 RMS 共享应用程序
+### <a name="to-deploy-the-rms-sharing-application-for-office-2010-and-azure-information-protection"></a>为 Office 2010 和 Azure 信息保护部署 RMS 共享应用程序
 
 1.  你必须是 Office 365 或 Azure Active Directory 租户的全局管理员，才能通过运行 Azure Active Directory Rights Management 准备工具获取组织的证书服务 URL。 在单台计算机上，只需运行此工具一次。 在每台计算机上安装 RMS 共享应用程序时，你将使用证书服务 URL：
 
@@ -131,7 +132,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 若要验证是否成功，请参阅本文中的[验证安装是否成功](#verifying-installation-success)部分。
 
-### 为 Office 2010 和 Active Directory RMS 部署 RMS 共享应用程序
+### <a name="to-deploy-the-rms-sharing-application-for-office-2010-and-active-directory-rms"></a>为 Office 2010 和 Active Directory RMS 部署 RMS 共享应用程序
 
 1.  在要安装 RMS 共享应用程序的每台计算机上，使用提升的权限运行以下命令：
 
@@ -168,7 +169,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 若要验证是否成功，请参阅本文中的[验证安装是否成功](#verifying-installation-success)部分。
 
-### 仅安装 RMS 共享应用程序和 Office 加载项
+### <a name="to-install-the-rms-sharing-application-and-office-addin-only"></a>仅安装 RMS 共享应用程序和 Office 加载项
 
 1.  使用以下命令安装 AD RMS 客户端和 RMS 共享应用程序，指定现有文件夹创建日志文件：
 
@@ -208,10 +209,10 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 若要验证是否成功，请参阅本文中的[验证安装是否成功](#verifying-installation-success)部分。
 
-## 验证安装是否成功
+## <a name="verifying-installation-success"></a>验证安装是否成功
 可以使用安装日志文件来验证安装是否成功。
 
-### 验证是否为 Office 2016 或 Office 2013 和 Azure 信息保护或 Active Directory RMS 成功安装 RMS 共享应用程序
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office-2016-or-office-2013-and-azure-information-protection-or-active-directory-rms"></a>验证是否为 Office 2016 或 Office 2013 和 Azure 信息保护或 Active Directory RMS 成功安装 RMS 共享应用程序
 
 -   若要验证 Setup.exe 命令是否成功运行，请在每台计算机上的 *%temp%\RMS_installer_&lt;guid&gt;* 文件夹中搜索安装日志文件 **RMInstaller.log**，然后查看退出代码。
 
@@ -219,7 +220,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     示例日志文件名：**C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0\RMInstaller.log**
 
-### 验证是否为 Office 2010 和 Azure 信息保护成功安装 RMS 共享应用程序
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office-2010-and-azure-information-protection"></a>验证是否为 Office 2010 和 Azure 信息保护成功安装 RMS 共享应用程序
 
 1.  若要验证 Setup.exe 命令是否成功运行，请在每台计算机上的 *%temp%\RMS_installer_&lt;guid&gt;* 文件夹中搜索安装日志文件 **RMInstaller.log**，然后查看退出代码。
 
@@ -241,7 +242,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     **CLC-alice@isvtenant999.onmicrosoft.com-{1b9cfccf;k5b11;k4a10;kac15;k29b2b6980f4c}.drm**
 
-### 验证是否为 Office 2010 和 Active Directory RMS 成功安装 RMS 共享应用程序
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office-2010-and-active-directory-rms"></a>验证是否为 Office 2010 和 Active Directory RMS 成功安装 RMS 共享应用程序
 
 1.  若要验证 Setup.exe 命令是否成功运行，请在每台计算机上的 *%temp%\RMS_installer_&lt;guid&gt;* 文件夹中搜索安装日志文件，然后查看退出代码。
 
@@ -272,28 +273,28 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
         DefaultUser="&lt;default_user&gt;"
 
-### 验证仅安装 RMS 共享应用程序和 Office 加载项是否成功
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-addin-only"></a>验证仅安装 RMS 共享应用程序和 Office 加载项是否成功
 
 1.  若要验证 Setup_ipviewer.exe 命令是否成功运行，请在安装日志文件中搜索以下文本：**安装成功或错误状态：0**
 
     成功安装时包含的示例行：
 
-    **MSI (s) (F0:B8) [14:19:57:854]:Product:Active Directory Rights Management Services Client 2.1 -- Installation completed successfully.**
+    **MSI (s) (F0:B8) [14:19:57:854]: Product: Active Directory Rights Management Services Client 2.1 -- 安装已成功完成。**
 
-    **MSI (s) (F0:B8) [14:19:57:854]:Windows Installer installed the product. Product Name:Active Directory Rights Management Services Client 2.1. Product Version:1.0.1179.1. Product Language:1033. 制造商:Microsoft Corporation. 安装成功或错误状态：0.**
+    **MSI (s) (F0:B8) [14:19:57:854]: Windows Installer 已安装该产品。Product Name:Active Directory Rights Management Services Client 2.1.Product Version:1.0.1179.1.Product Language:1033.制造商:Microsoft Corporation.安装成功或错误状态：0。**
 
 2.  若要验证 Office 加载项是否成功安装，请在安装日志文件中搜索以下文本：**安装成功或错误状态：0**
 
     成功安装时包含的示例行：
 
-    **MSI (s) (9C:88) [18:49:04:007]:Product:Microsoft RMS Office Addins -- Installation completed successfully.**
+    **MSI (s) (9C:88) [18:49:04:007]: Product: Microsoft RMS Office Addins -- 安装已成功完成。**
 
-    **MSI (s) (9C:88) [18:49:04:007]:Windows Installer installed the product. Product Name:Microsoft RMS Office Addins. Product Version:1.0.7. Product Language:1033. 制造商:Microsoft. 安装成功或错误状态：0.**
+    **MSI (s) (9C:88) [18:49:04:007]: Windows Installer 已安装该产品。Product Name:Microsoft RMS Office Addins.Product Version:1.0.7.Product Language:1033.制造商:Microsoft.安装成功或错误状态：0。**
 
-## 卸载命令
+## <a name="uninstall-commands"></a>卸载命令
 并非这些部署所需的所有安装命令都支持卸载命令。 你可以卸载 AD RMS 客户端和共享应用程序，也可以卸载 Office 加载项。 请使用以下命令卸载这些元素。
 
-### 卸载 AD RMS 客户端和 RMS 共享应用程序
+### <a name="to-uninstall-the-ad-rms-client-and-the-rms-sharing-application"></a>卸载 AD RMS 客户端和 RMS 共享应用程序
 
 -   使用以下命令：
 
@@ -309,7 +310,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
         x86\setup_ipviewer.exe /uninstall /quiet
         ```
 
-### 卸载 Office 加载项
+### <a name="to-uninstall-the-office-addin"></a>卸载 Office 加载项
 
 -   使用以下命令：
 
@@ -325,7 +326,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
         msiexec /x \x86\Setup.msi /quiet
         ```
 
-## 禁止自动更新
+## <a name="suppressing-automatic-updates"></a>禁止自动更新
 默认情况下，当出现较新版本的 RMS 共享应用程序时，系统将通知用户并提示他们下载该应用程序。 你可以对注册表进行以下编辑来取消显示此通知：
 
 1.  导航到 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**，如果它尚不存在，请创建名为 **RmsSharingApp** 的新注册表项。
@@ -340,13 +341,13 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 3.  在测试完成且解决了所有问题之后，使用本指南中的自动部署说明将最新版本部署到所有用户。
 
-## 仅限 Azure 信息保护：配置文档跟踪
+## <a name="azure-information-protection-only-configuring-document-tracking"></a>仅限 Azure 信息保护：配置文档跟踪
 如果你有[支持文档跟踪的订阅](https://technet.microsoft.com/dn858608)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。 文档跟踪会显示尝试访问用户共享的受保护文档的人员的电子邮件地址、其尝试访问这些文档的时间以及他们所在的位置。 如果你的组织出于隐私要求而要禁止显示此类信息，你可以使用 [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032) cmdlet 来禁用对文档跟踪站点的访问。 你随时可以使用 [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) 来重新启用对该站点的访问，并可以使用 [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) 来查看当前是已启用还是已禁用这种访问。
 
 若要运行这些 cmdlet，必须安装最低版本为 **2.3.0.0**，适用于 Windows PowerShell 的 Azure Rights Management 模块。 有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
 
 > [!TIP]
-> 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号： `(Get-Module aadrm –ListAvailable).Version`
+> 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号：`(Get-Module aadrm –ListAvailable).Version`
 
 以下 URL 用于文档跟踪，必须允许使用它们（例如，如果你使用的是具有增强的安全性的 Internet Explorer，则将它们添加到你的受信任站点）：
 
@@ -361,7 +362,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 -   https://&#42;.microsoftonline-p.com
 
-### 为用户跟踪和撤销文档
+### <a name="tracking-and-revoking-documents-for-users"></a>为用户跟踪和撤销文档
 
 当用户登录到文档跟踪站点时，他们可以跟踪和撤销使用 RMS 共享应用程序共享的文档。 以 Azure 信息保护管理员（全局管理员）的身份登录时，可以单击页面右上角的“管理员”图标，切换到管理员模式，这样就可以看到组织中的用户已共享的文档。
 
@@ -375,7 +376,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 
 
-### 文档跟踪站点的使用情况日志记录
+### <a name="usage-logging-for-the-document-tracking-site"></a>文档跟踪站点的使用情况日志记录
 
 使用情况日志文件中的以下两个字段适用于文档跟踪：**AdminAction** 和 **ActingAsUser**。
 
@@ -388,7 +389,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 有关使用情况日志记录的详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)
 
-## 仅限 AD RMS：在组织中支持多个电子邮件域
+## <a name="ad-rms-only-support-for-multiple-email-domains-within-your-organization"></a>仅限 AD RMS：在组织中支持多个电子邮件域
 如果你使用 AD RMS 且你所在组织中的用户具有多个电子邮件域（可能由于组织的合并或收购而引起），则必须对注册表进行以下编辑：
 
 1.  导航到 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**，如果它尚不存在，请创建名为 **RmsSharingApp** 的新注册表项。
@@ -400,12 +401,12 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 如果未对该注册表进行更改，则用户可能无法使用由所在组织中的其他用户所保护的内容。 如果使用 Azure 信息保护，则不需要编辑该注册表。
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 有关其他技术信息，包括保护级别（本机和通用）之间的区别、支持的文件类型和文件扩展名以及如何更改默认保护级别的相关说明，请参阅 [Rights Management 共享应用程序技术概述](sharing-app-admin-guide-technical.md)。
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

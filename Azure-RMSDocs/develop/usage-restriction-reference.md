@@ -3,6 +3,7 @@ title: "使用限制参考 | Azure RMS"
 description: "使用限制由本主题中列出的常量定义。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/19/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37d9906b5df00b6ec6eeb6739766c00bd5cef37b
-ms.openlocfilehash: e9cc23d220408faf0e010debb1b6cab0c9dc58ba
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f4767c81c246ec6ba53992b9b8e3375e8e02723d
 
 
 ---
 
-# 使用限制参考
+# <a name="usage-restriction-reference"></a>使用限制参考
 
 使用限制由本主题中列出的常量定义。
 
@@ -49,6 +50,6 @@ AD RMS 权限列中列出的每个用户权利都附带有一个说明、一个�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

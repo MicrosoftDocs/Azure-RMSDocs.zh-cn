@@ -3,6 +3,7 @@ title: "如何调试启用权限的应用程序 | Azure RMS"
 description: "下面的主题演示如何调试应用程序和使用 Windows 事件日志。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: cab6839a1911bb61185f2ef361b2040ac0d38a6e
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 789c93b6d7ac72ebe1df04300f2885ca2aa23a06
 
 
 ---
 
-# 操作说明：调试启用权限的应用程序
+# <a name="howto-debug-a-rightsenabled-application"></a>操作说明：调试启用权限的应用程序
 
 下面的主题演示如何调试应用程序和使用 Windows 事件日志。
 
-## 调试应用程序
+## <a name="debugging-your-application"></a>调试应用程序
 
 Rights Management Services SDK 2.1 中禁用了运行时的开发人员版本的反调试检查。
 
@@ -41,7 +42,7 @@ HKEY_LOCAL_MACHINE
             dword
 ```
 
-### 使用 Windows 事件日志的应用程序日志记录
+### <a name="application-logging-by-using-the-windows-event-log"></a>使用 Windows 事件日志的应用程序日志记录
 
 事件日志的名称为“Microsoft-RMS-MSIPC/Debug”。 这意味着，在 Windows 事件查看器中，你的日志会显示为“Application and Services Logs\\Microsoft\\RMS\\MSIPC\\Debug”。
 
@@ -67,7 +68,7 @@ HKEY_LOCAL_MACHINE
 
  
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
  
 
@@ -75,6 +76,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

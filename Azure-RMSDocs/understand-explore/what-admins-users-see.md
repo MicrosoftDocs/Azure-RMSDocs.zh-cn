@@ -2,6 +2,7 @@
 title: "管理员和用户将看到什么？ | Azure 信息保护"
 description: "可看到管理员和用户如何查看并使用 Azure Rights Management (Azure RMS) 技术来帮助保护敏感或机密信息的一些典型示例。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
-ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 5708529be090dc2d2dcd58b728e046eceff26865
 
 
 ---
 
 
-# 运行中的 Azure RMS：管理员和用户看到的内容
+# <a name="azure-rms-in-action-what-administrators-and-users-see"></a>运行中的 Azure RMS：管理员和用户看到的内容
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -32,7 +33,7 @@ ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
 
 有关显示正在运行的 RMS 的其他屏幕截图和视频，请查看 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)（企业移动性和安全性博客）。
 
-## 激活和配置权限管理
+## <a name="activating-and-configuring-rights-management"></a>激活和配置权限管理
 尽管可以使用 Windows PowerShell 激活和配置 Azure RMS，但在管理门户中执行这些操作最简单。 激活该服务后，你立即获得两个默认模板，管理员和用户可以选择这两个模板来便捷地对文件应用信息保护。 但你也可以创建自己的自定义模板来提供其他选项和设置。
 
 ![管理员在步骤 1 中看到的内容](../media/AzRMS_StoryboardActivate_small1.png)
@@ -79,7 +80,7 @@ ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
 
 接下来，请参阅管理员如何应用模板以自动为文件和电子邮件配置信息保护的一些示例。
 
-## 自动在运行 Windows Server 和文件分类基础结构的文件服务器上保护文件
+## <a name="automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure"></a>自动在运行 Windows Server 和文件分类基础结构的文件服务器上保护文件
 
 此示例演示如何使用 Azure RMS 自动在至少运行 Windows Server 2012 且配置为使用文件分类基础结构的文件服务器上保护文件。
 
@@ -114,7 +115,7 @@ ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
 
 - 有关分步说明，请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。
 
-## 使用 Exchange Online 和数据丢失预防策略自动保护电子邮件
+## <a name="automatically-protecting-emails-with-exchange-online-and-data-loss-prevention-policies"></a>使用 Exchange Online 和数据丢失预防策略自动保护电子邮件
 
 前一示例显示了如何自动保护包含敏感或机密信息的文件，但如果信息不在文件中而在电子邮件中，该怎么办？ 这就是 Exchange Online 数据丢失防护 (DLP) 策略派上用场的地方，它会提示用户（通过使用策略提示）应用信息保护或自动为用户应用信息保护（通过使用传输规则）。
 
@@ -153,7 +154,7 @@ ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
 
 -   有关为 Azure RMS 配置 Exchange Online 的分步说明，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)中的 [Exchange Online：IRM 配置](../deploy-use/configure-office365.md#exchange-online-irm-configuration)。
 
-## 使用 SharePoint Online 和受保护的库自动保护文件
+## <a name="automatically-protecting-files-with-sharepoint-online-and-protected-libraries"></a>使用 SharePoint Online 和受保护的库自动保护文件
 
 这将显示如何使用 SharePoint Online 和受保护的库轻松保护文档。
 
@@ -187,7 +188,7 @@ ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
 
 -   有关为 Azure RMS 配置 SharePoint 的分步说明，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)中的 [SharePoint Online 和 OneDrive for Business：IRM 配置](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)部分。
 
-## 用户安全地与移动用户共享附件
+## <a name="users-safely-share-attachments-with-mobile-users"></a>用户安全地与移动用户共享附件
 
 前面的示例显示了管理员如何自动将信息保护应用于敏感数据和机密数据。 但在某些情况下，用户可能需要自己应用此保护。 例如，他们正在与另一组织中的合作伙伴协作，他们或许在前面的示例未涉及的临时情况下，需要自定义模板中未定义的权限或设置。 在这些情况下，用户可以自己应用 RMS 模板，或配置自定义权限。
 
@@ -235,12 +236,12 @@ Alice 想要将 Bob 限制为只能查看和编辑该文档，而不想让他复
 
 - [Azure Rights Management 快速入门教程](../get-started/quick-start-tutorial.md) 包含此方案的分步说明。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 现在，你已看到 Azure RMS 可以执行哪些操作的一些示例，你可能会对其如何执行这些操作感兴趣。 有关 Azure RMS 的工作原理的技术信息，请参阅[ Azure RMS 的工作原理](how-does-it-work.md)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

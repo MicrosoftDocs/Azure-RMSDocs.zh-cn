@@ -2,6 +2,7 @@
 title: "Azure 信息保护的快速部署指南 | Azure 信息保护"
 description: "此指南可帮助你更加快速地部署和使用 Azure 信息保护以保护组织的数据。 首先在要实现的特定方案的列表中进行选择。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 914362cbabe2e929b988e0f922c3848e8ca7771f
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: d1415913f4a76331088140555b0cfeaa88200871
 
 
 ---
 
-# Azure Rights Management 快速部署指南
+# <a name="rapid-deployment-guide-for-azure-rights-management"></a>Azure Rights Management 快速部署指南
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -35,12 +36,12 @@ ms.openlocfilehash: 914362cbabe2e929b988e0f922c3848e8ca7771f
 > [!NOTE]
 > 如果你对本指南有任何问题和意见，请使用本页上的反馈机制或发送电子邮件消息至 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)。
 
-## Azure 信息保护的方案
+## <a name="scenarios-for-azure-information-protection"></a>Azure 信息保护的方案
 为了帮助你更加快速地部署 Azure 信息保护以解决具体的业务问题，请选择与业务目标最接近的方案，并根据需要进行调整。
 
 
 
-**通过电子邮件安全地将 Office 文件发送给另一个组织中的用户，并能够跟踪对该文件的后续访问（企业间协作）。**
+**通过电子邮件安全地将 Office 文件发送给另一个组织中的用户，并能够跟踪对该文件的后续访问（企业间协作）**
 
 例如：
 
@@ -123,12 +124,12 @@ ms.openlocfilehash: 914362cbabe2e929b988e0f922c3848e8ca7771f
 
 
 
-## 推出前的用户公告
+## <a name="announcement-for-users-before-rollout"></a>推出前的用户公告
 可以使用以下示例通信邮件来通知用户，部署 Azure 信息保护后将发生一些更改。 复制粘贴以下文本，由组织领导团队中的某位成员（最好是首席执行官）通过电子邮件发送给所有人。 考虑对本文本进行任何更改，以使消息与用户和你的组织更加相关。
 
 ![Azure RMS 快速部署的用户文档横幅示例](../media/AzRMS_ExampleBanner.png)
 
-### 旨在保护数据安全的更改
+### <a name="changes-were-making-to-safeguard-our-data"></a>旨在保护数据安全的更改
 你是否曾经有过误将某个文档发送给合作伙伴后，希望阻止对该文档的访问？ 你是否想过有任何方法知道哪些客户阅读了你发送的最新产品新闻？ 你是否需要共享机密产品信息，而不必担心这些信息可能发送给不应看到的人员？
 
 你很快就能够完成上述操作，因为 IT 部门正在进行一些更改，将把 Microsoft Azure 信息保护作为企业数据保护解决方案。 许多这些解决方案将自动应用我们所需的保护，而你无需做出任何改变。 但也有一些更改可能需要你进行些许改变，在这种情况下，IT 部门将给你发送信息和说明，如果你有任何疑问或问题，还能获得技术支持部门的支持。
@@ -146,6 +147,6 @@ ms.openlocfilehash: 914362cbabe2e929b988e0f922c3848e8ca7771f
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

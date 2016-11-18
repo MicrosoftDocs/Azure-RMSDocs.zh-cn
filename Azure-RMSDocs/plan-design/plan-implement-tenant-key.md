@@ -2,8 +2,9 @@
 title: "计划和实施你的 Azure Rights Management 租户密钥 | Azure 信息保护"
 description: "此信息有助于规划和管理 Azure 信息保护租户密钥。 为了遵守适用于组织的特别规定，你可能想要自行管理租户密钥，而不是由 Microsoft 管理你的租户密钥（默认设置）。 自行管理租户密钥也称为自带密钥 (BYOK)。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 11/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +13,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
-ms.openlocfilehash: b8380389267d77da53a5b87ffd606b6e754de7f3
+ms.sourcegitcommit: 84072c64f83ec97ac41d6ec030be5eabff263b4b
+ms.openlocfilehash: afcef2843336e022e63e7895ac3c0488d0aa0e2a
 
 
 ---
@@ -90,9 +91,11 @@ ms.openlocfilehash: b8380389267d77da53a5b87ffd606b6e754de7f3
 
 有关 Thales HSM 及其如何与 Azure 密钥保管库一起使用的详细信息，请参阅 [Thales website](https://www.thales-esecurity.com/msrms/cloud)（Thales 网站）。
 
+### <a name="instructions-for-byok"></a>BYOK 的说明
+
 若要生成你自己的租户密钥并将其传送到 Azure 密钥保管库，请按照 Azure 密钥保管库文档 [How to generate and transfer HSM-protected keys for Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/)（如何为 Azure 密钥保管库生成和传输受 HSM 保护的密钥）中的过程。
 
-将该密钥传送到密钥保管库时，将在密钥保管库中为其给定一个密钥 ID，这是一个包含保管库名称、密钥容器、密钥名称和密钥版本的 URL。 例如：**https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**。 你将需要通过指定此 URL 命令 Azure 信息保护中的 Azure Rights Management 服务使用此密钥。
+将该密钥传送到密钥保管库时，将在密钥保管库中为其给定一个密钥 ID，这是一个包含密钥保管库名称、密钥容器、密钥名称和密钥版本的 URL。 例如：**https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**。 你将需要通过指定此 URL 命令 Azure 信息保护中的 Azure Rights Management 服务使用此密钥。
 
 但在 Azure 信息保护可以使用此密钥之前，必须授权 Azure Rights Management 服务在你组织的密钥保管库中使用该密钥。 若要执行此操作，Azure 密钥保管库管理员将使用密钥保管库 PowerShell cmdlet [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/en-us/library/mt603625(v=azure.300\).aspx) 并向 Azure Rights Management 服务主体 **Microsoft.Azure.RMS** 授予权限。 例如：
 
@@ -105,6 +108,11 @@ ms.openlocfilehash: b8380389267d77da53a5b87ffd606b6e754de7f3
 然后运行 [Use-AadrmKeyVaultKey cmdlet](https://msdn.microsoft.com/library/azure/mt759829.aspx)，指定密钥 URL。 例如：
 
     Use-AadrmKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333"
+
+> [!IMPORTANT]
+> 在此示例中，“aaaabbbbcccc111122223333”是要使用的密钥版本。 如果不指定版本，则将使用当前版本的密钥而不发出警告，并且显示命令以进行工作。 但是，如果后来对密钥保管库中的密钥进行了更新（已续订），则即使你再次运行 Use-AadrmKeyVaultKey 命令，Azure Rights Management 服务也将停止为你的租户工作。
+>
+>在运行此命令时，除了密钥名称外，请确保还指定了密钥版本。
 
 如果需要确认在 Azure RMS 服务中是否正确设置了密钥 URL，可在 Azure 密钥保管库中运行 [Get-AzureKeyVaultKey](https://msdn.microsoft.com/en-us/library/dn868053(v=azure.300\).aspx) 来查看密钥 URL。
 
@@ -136,6 +144,6 @@ ms.openlocfilehash: b8380389267d77da53a5b87ffd606b6e754de7f3
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

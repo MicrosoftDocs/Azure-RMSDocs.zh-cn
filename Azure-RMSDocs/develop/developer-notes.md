@@ -3,6 +3,7 @@ title: "开发人员指南和信息 | Azure RMS"
 description: "本主题涵盖了几个重要开发方案的具体指南。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/18/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 593b8b505b8bd241c301c95ee6280f93f14901b9
-ms.openlocfilehash: 54ce450600b2a10e6889d2684ce26c9da9f9167e
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 93ed9760d79f2f38d4bee302ebb5c7c6368b1bbe
 
 
 ---
 
-# 开发人员指南和信息
+# <a name="developer-guidance-and-information"></a>开发人员指南和信息
 
 本部分介绍几个重要开发方案的特定指南，以及有关使用此 SDK 进行开发的常规信息。 本部分中的方案特定于此版本的 Rights Management Services SDK 2.1，在后续版本中可能会有所改动。
 - [操作说明：使用 ADAL 身份验证](how-to-use-adal-authentication.md) - 使用 Azure Active Directory 身份验证库 (ADAL) 向 Azure RMS 验证应用身份。
@@ -40,7 +41,7 @@ ms.openlocfilehash: 54ce450600b2a10e6889d2684ce26c9da9f9167e
 - [使用限制参考](usage-restriction-reference.md) - 使用限制由本主题中列出的常量定义。
 
  
-## 相关主题
+## <a name="related-topics"></a>相关主题
 * [概述](ad-rms-overview.md)
  
 
@@ -48,6 +49,6 @@ ms.openlocfilehash: 54ce450600b2a10e6889d2684ce26c9da9f9167e
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

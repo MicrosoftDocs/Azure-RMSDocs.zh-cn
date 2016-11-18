@@ -2,6 +2,7 @@
 title: "快速入门教程步骤 1 | Azure 信息保护"
 description: "入门教程第 2 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 30 分钟。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,15 +11,15 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: b23022c5fbec3d4f6f19ab5017ecf9badf01a9e7
-ms.openlocfilehash: c8cad9c4b6efe2630843bcb1618ecd535670e0fe
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 3c2523119020232b9044506b2d2a602104e81d0b
 
 
 ---
 
-# 步骤 2：配置并发布 Azure 信息保护策略
+# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>步骤 2：配置并发布 Azure 信息保护策略
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 尽管 Azure 信息保护附带了你无需进行配置的默认策略，我们仍然要看一下该策略并进行一些更改。
 
@@ -39,7 +40,7 @@ ms.openlocfilehash: c8cad9c4b6efe2630843bcb1618ecd535670e0fe
 
     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy.png)
 
-## 更改默认模板和提示提供理由的全局设置
+## <a name="changing-the-global-settings-for-a-default-template-and-prompt-for-justification"></a>更改默认模板和提示提供理由的全局设置
 
 在我们的教程中，我们将更改几个全局设置，以便你可以看到如何使用它们：
 
@@ -47,7 +48,7 @@ ms.openlocfilehash: c8cad9c4b6efe2630843bcb1618ecd535670e0fe
 
 2. 对于“用户必须提供理由以设置较低分类标签、删除标签或删除保护”，将其设置为“开”。
 
-## 配置保护的标签、水印和分类提示的条件
+## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>配置保护的标签、水印和分类提示的条件
 
 现在我们要更改一个标签**机密**：
 
@@ -121,6 +122,6 @@ ms.openlocfilehash: c8cad9c4b6efe2630843bcb1618ecd535670e0fe
 [步骤 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

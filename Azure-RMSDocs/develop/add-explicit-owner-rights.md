@@ -3,6 +3,7 @@ title: "如何添加显式所有者权限 | Azure RMS"
 description: Your application should explicitly add "Owner" rights when creating a license from scratch.
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8be965d76578c28457eee207b56e5da83f7eb468
-ms.openlocfilehash: 36c0bece4fb99e4d92fcda0c57da1b3cee11e37a
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2fa260480eaa26a529a058b597657216572b4cb8
 
 
 ---
 
-# 操作说明：添加显式所有者权限
+# <a name="howto-add-explicit-owner-rights"></a>操作说明：添加显式所有者权限
 
 应用程序使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 从头开始创建许可证时应显式添加“所有者”权限。
 
-## 先决条件
+## <a name="prerequisites"></a>先决条件
 
 应用程序在使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 创建许可证句柄时，还必须显式授予所有者完全权力（权限）。
 
@@ -33,16 +34,16 @@ ms.openlocfilehash: 36c0bece4fb99e4d92fcda0c57da1b3cee11e37a
 
 下列示例代码仅演示创建特定权限并添加到给定许可证时所涉及的步骤。
 
-## 说明
+## <a name="instructions"></a>说明
  
-## 步骤 1：示例方案
+## <a name="step-1-example-scenario"></a>步骤 1：示例方案
 
 在此示例中，所需权限会添加到使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 创建的许可证。 该示例演示如何通过权限列表创建权限并分配给许可证。
 
 会向这些用户添加以下两种权限：
 
--   分配给 joe@contoso.com 的 *读取* 权限
--   分配给 mary\_kay@contoso.com 的 *完全* 权限
+-   分配给 joe@contoso.com 的读取权限
+-   分配给 mary \_kay@contoso.com 的完全权限
 
         // Create User Rights structure
         IPC_USER_RIGHTS ownerRightForOwner = {0};
@@ -105,7 +106,7 @@ ms.openlocfilehash: 36c0bece4fb99e4d92fcda0c57da1b3cee11e37a
 
 
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 - [开发人员说明](developer-notes.md)
 - [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
@@ -116,6 +117,6 @@ ms.openlocfilehash: 36c0bece4fb99e4d92fcda0c57da1b3cee11e37a
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
