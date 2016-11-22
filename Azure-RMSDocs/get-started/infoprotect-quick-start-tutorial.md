@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 9f475892d7999fc3ff10a27d11986dec9cfa94cd
+ms.sourcegitcommit: d300f3c130476974e39689edf9e1f0eabbc35da1
+ms.openlocfilehash: de3435767d161567003369fc55dd476283b64f41
 
 
 ---
@@ -41,7 +41,7 @@ ms.openlocfilehash: 9f475892d7999fc3ff10a27d11986dec9cfa94cd
 
 - 使用全局管理员帐户登录到 Azure 门户以配置 Azure 信息保护策略。 此帐户还必须有电子邮件地址和可用的电子邮件服务（例如，Exchange Online 或 Exchange Server）。
 
-- 运行 Windows（最低配置为 Windows 7 Service Pack 1）并已安装 Office Professional Plus 2016、Office Professional Plus 2013 Service Pack 1 或 Office Professional Plus 2010 的计算机。 
+- 运行 Windows（最低配置为带 Service Pack 1 的 Windows 7）并已安装含 2016 应用或 2013 应用的 Office 365 ProPlus、Office Professional Plus 2016、带 Service Pack 1 的 Office Professional Plus 2013 或者 Office Professional Plus 2010 的计算机。 
 
 让我们开始吧。
 

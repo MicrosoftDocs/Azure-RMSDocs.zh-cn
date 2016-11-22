@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/13/2016
+ms.date: 11/11/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 4f0e3fbfd5caee7a5ea3fc40d8519a5e34d78cb5
+ms.sourcegitcommit: 757b0e1a65d54f81b00c6513ee85ded4fe753684
+ms.openlocfilehash: 37f42c4b9f4e4b41e96b3e1e6a74a6c3d7deb254
 
 
 ---
@@ -33,8 +33,10 @@ ms.openlocfilehash: 4f0e3fbfd5caee7a5ea3fc40d8519a5e34d78cb5
 |检查订阅信息和支持的功能 →|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
 
 
-## <a name="information-about-new-releases"></a>有关新版本的信息
-信息保护产品小组向[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)发送关于新版本和更新的公告。 这些博客文章可为产品文档和技术支持信息提供补充。
+## <a name="information-about-new-releases-and-updated-documentation"></a>有关新版本和更新的文档的信息
+信息保护产品团队向[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)发送关于新版本和更新的公告。 这些博客文章可为产品文档和技术支持信息提供补充。
+
+每月结束时，将看到一份文档更改的总结，标题为“**\<month, year>** Azure 信息保护文档更新”。 这些文章具有[**更新**](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)的内容类型标记，包括新版本的文档更新，及现有版本的更正和说明。
 
 > [!TIP]
 > 如果要开发使用 Microsoft Rights Management 服务（Azure RMS 或 AD RMS）的应用程序，你可能还会对 [Active Directory Rights Management Services (AD RMS) 开发人员活动角博客](https://blogs.msdn.microsoft.com/rms/)感兴趣。
@@ -82,7 +84,7 @@ ms.openlocfilehash: 4f0e3fbfd5caee7a5ea3fc40d8519a5e34d78cb5
 
 ### <a name="community-resources"></a>社区资源
 
--   [Yammer：Azure 信息保护](http://www.yammer.com/AskIPTeam)
+-   [Yammer：Azure 信息保护](https://www.yammer.com/AskIPTeam)
 
 -   [论坛：Microsoft RMS（云）](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)
 

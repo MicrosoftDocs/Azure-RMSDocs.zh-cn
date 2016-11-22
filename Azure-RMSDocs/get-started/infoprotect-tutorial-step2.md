@@ -4,15 +4,15 @@ description: "入门教程第 2 步，该教程用于快速试用适合你组织
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 3c2523119020232b9044506b2d2a602104e81d0b
+ms.sourcegitcommit: bce1682624b040545d30ca1cc426e4e2f8c38018
+ms.openlocfilehash: 7ba1566a81ca9a3ac45f340f69d3c9e933f015ff
 
 
 ---
@@ -36,7 +36,7 @@ ms.openlocfilehash: 3c2523119020232b9044506b2d2a602104e81d0b
     
     - 用于分类的标签：“个人”、“公共”、“内部”、“机密”和“秘密”。 阅读各个标签的工具提示以了解如何使用这些标签。 请注意，**秘密**标签有两个子标签：**所有员工**和**我的组**，这是一个类别具有子类别的一个示例。
 
-    - 在默认设置中，“内部”、“机密”和“秘密”标签都配置了可视标记（例如页脚、页眉、水印），并且这些标签都没有设置保护。 此外，由于未设置此三个全局设置，因此所有文档和电子邮件不需要有标签。没有默认标签，用户降低分类级别时无需提供理由。
+    - 在默认设置中，“内部”、“机密”和“秘密”标签都配置了可视标记（例如页脚、页眉、水印），并且这些标签都没有设置保护。 此外，由于未设置四个全局设置，因此所有文档和电子邮件不需要有标签。没有默认标签，用户更改标签时无需提供理由，并且客户端未配置自定义帮助连接。
 
     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy.png)
 
@@ -122,6 +122,6 @@ ms.openlocfilehash: 3c2523119020232b9044506b2d2a602104e81d0b
 [步骤 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
