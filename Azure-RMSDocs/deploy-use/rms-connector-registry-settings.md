@@ -2,6 +2,7 @@
 title: "RMS 连接器的注册表设置 | Azure 信息保护"
 description: "有关使用 RMS 连接器在服务器上进行注册表设置的信息。 配置这些设置的推荐方法是使用适用于 Microsoft RMS 连接器的服务器配置工具。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 1dd1b26735732f4bef8cf73a566b0f26b7610a82
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: a0132404bb9ccb202c552aaca680659947d9c888
 
 
 ---
 
 
-# Rights Management 连接器的注册表设置
+# <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 连接器的注册表设置
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -45,7 +46,7 @@ ms.openlocfilehash: 1dd1b26735732f4bef8cf73a566b0f26b7610a82
 -   如果你已将连接器配置为使用 HTTPS 与本地服务器通信，请使用 HTTPS 前缀作为连接器 URL。 有关详细信息，请参阅主要说明的[《Configuring the RMS connector to use HTTPS》](install-configure-rms-connector.md#configuring-the-rms-connector-to-use-https)（将 RMS 连接器配置为使用 HTTPS）部分。 Microsoft RMS URL 始终使用 HTTPS。
 
 
-## Exchange 2016 或 Exchange 2013 注册表设置
+## <a name="exchange-2016-or-exchange-2013-registry-settings"></a>Exchange 2016 或 Exchange 2013 注册表设置
 
 **注册表路径：** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
@@ -96,7 +97,7 @@ ms.openlocfilehash: 1dd1b26735732f4bef8cf73a566b0f26b7610a82
 - https://*ConnectorFQDN*
 
 
-## Exchange 2010 注册表设置
+## <a name="exchange-2010-registry-settings"></a>Exchange 2010 注册表设置
 
 **注册表路径：** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
@@ -145,7 +146,7 @@ ms.openlocfilehash: 1dd1b26735732f4bef8cf73a566b0f26b7610a82
 - https://*ConnectorFQDN*
 
 
-## SharePoint 2016 或 SharePoint 2013 注册表设置
+## <a name="sharepoint-2016-or-sharepoint-2013-registry-settings"></a>SharePoint 2016 或 SharePoint 2013 注册表设置
 
 **注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\LicensingRedirection
 
@@ -192,7 +193,7 @@ ms.openlocfilehash: 1dd1b26735732f4bef8cf73a566b0f26b7610a82
 
 
 
-## 文件服务器和文件分类基础结构注册表设置
+## <a name="file-server-and-file-classification-infrastructure-registry-settings"></a>文件服务器和文件分类基础结构注册表设置
 
 **注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
@@ -216,6 +217,6 @@ ms.openlocfilehash: 1dd1b26735732f4bef8cf73a566b0f26b7610a82
 返回到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

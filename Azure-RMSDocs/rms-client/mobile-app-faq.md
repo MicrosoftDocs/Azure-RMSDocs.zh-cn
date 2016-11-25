@@ -3,8 +3,9 @@ title: "有关适用于 iOS 和 Android 的 Azure 信息保护应用的常见问
 description: 
 keywords: "一些常见问题，帮助你使用适用于 iOS 和 Android 的 Azure 信息保护应用"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +14,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2f1930f4657278d25ef6dd369866f16e4ba71644
-ms.openlocfilehash: 1cafa88ded2bf951f8af93e4b27cc526735d19e8
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2c2a0281041f8f9241fd0e733f3c1b08099bae33
 
 
 ---
@@ -35,18 +36,9 @@ ms.openlocfilehash: 1cafa88ded2bf951f8af93e4b27cc526735d19e8
 
 ## <a name="how-do-i-get-started-with-the-viewer-app"></a>如何开始使用查看器应用？
 
-在移动设备上，需访问该应用支持的其中一个文件来查看操作中的查看器。 例如：
+安装该应用后，你无需在该点再执行任何其他操作。 请等待，直到收到受保护的电子邮件或想要查看的文件，然后选择“AIP 查看器”以将其打开。 然后系统会提示使用工作或学校帐户登录。 对你的凭据进行身份验证后，你便可以读取内容。
 
-- **.rpmsg 文件**：此为权限保护的电子邮件消息，当移动设备上的电子邮件应用本机不支持权限数据保护时，会在电子邮件中以附件形式存在。 
-    
-    使用另一台设备可向自己发送权限保护的电子邮件消息，用户可从自己的移动设备访问。 例如，在 Windows 计算机使用 Outlook。 有关本机支持权限管理的电子邮件客户端列表，请参阅[支持 Azure Rights Management 数据保护的应用程序](../get-started/requirements-applications.md)中的“电子邮件”列。
-
-- **权限保护的 PDF 文件**：在本机支持权限管理的 Windows 计算机或 PDF 应用程序上，使用 Rights Management 共享应用程序通过电子邮件以附件方式向自己发送权限保护的 PDF 文件。 或者，使用电子邮件地址将 PDF 文件上传到 SharePoint 保护的库，然后共享。
-
-- **.ptxt、.pjpg 或.ppng**：在 Windows 计算机上使用 Rights Management 共享应用程序和[共享保护](sharing-app-protect-by-email.md)选项以电子邮件附件形式向自己发送受保护的文件。 有关可用于测试的文件类型的完整列表，请参阅 Rights Management 共享应用程序管理员指南中的[支持的文件类型和文件扩展名](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions)部分中的第一个表。 
-
-若要在 Azure 信息保护查看器应用中查看这些文件，请点击此电子邮件附件或链接。 系统提示选择一个应用来打开文件时，请选择“AIP 查看器”应用。 然后系统会提示登录到工作或学校帐户。 身份验证成功后，Azure 信息保护应用会显示电子邮件或文件以供阅读。
-
+但是，如果你不想等待，则可以使用以下说明向自己发送受保护的电子邮件或要查看的文件：[适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门](mobile-app-get-started.md) 
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>登录此应用应使用什么凭据？
 
 如果你的组织已经具有本地 AD RMS（带有移动设备扩展名），或使用 Azure Rights Management 服务，则可以使用你的凭据进行登录。 如果没有，则可以使用 [Azure 信息保护页](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)注册一个免费的新帐户。
@@ -66,10 +58,10 @@ ms.openlocfilehash: 1cafa88ded2bf951f8af93e4b27cc526735d19e8
 
 ## <a name="my-question-has-not-been-answeredwhat-should-i-do"></a>我的问题没有得到相应解答 - 应采取何种操作？
 
-将你的问题发布到我们的 [Yammer 站点](http://www.yammer.com/AskIPTeam)，或[发送电子邮件到信息保护团队](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app)。
+将你的问题发布到我们的 [Yammer 站点](https://www.yammer.com/AskIPTeam)，或[发送电子邮件到信息保护团队](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app)。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

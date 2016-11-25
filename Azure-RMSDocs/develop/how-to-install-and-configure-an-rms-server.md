@@ -3,6 +3,7 @@ title: "如何安装、配置 RMS 服务器并用其进行测试| Azure RMS"
 description: "安装并配置 RMS 服务器以便测试启用权限的应用程序。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,19 +15,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7ee098ceaa8ac6b1e0d5d6cbe090042510aa89b
-ms.openlocfilehash: ac7dd8592d6e11905744c4f4e0171fd5b5945c51
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 47f9cf725b864ee22afc7605702992b08cb686dc
 
 
 ---
 
-# 操作说明：安装和配置 RMS 服务器并用其进行测试
+# <a name="howto-install-configure-and-test-with-an-rms-server"></a>操作说明：安装和配置 RMS 服务器并用其进行测试
 
 本主题介绍用于连接 RMS 服务器或 Azure RMS 以便测试启用权限的应用程序的步骤。
  
-## 说明
+## <a name="instructions"></a>说明
 
-### 步骤 1：设置 RMS 服务器
+### <a name="step-1-setup-your-rms-server"></a>步骤 1：设置 RMS 服务器
 
 以下步骤指导你设置 RMS 服务器，包括：
 
@@ -110,6 +111,6 @@ ms.openlocfilehash: ac7dd8592d6e11905744c4f4e0171fd5b5945c51
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

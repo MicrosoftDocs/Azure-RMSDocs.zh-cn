@@ -2,6 +2,7 @@
 title: "应用程序如何支持 Azure Rights Management 服务 | Azure 信息保护"
 description: "了解最常使用的最终用户应用程序（例如 Office 应用程序，包括 Word、Excel、PowerPoint 和 Outlook）和服务（例如 Exchange 和 SharePoint）如何才能使用 Azure 信息保护中的 Azure Rights Management 来帮助保护组织的文档和电子邮件。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9dee9e7c925258ffd3cd9e783582733e9518d3fa
-ms.openlocfilehash: 3d2f95f2a20782897be293162d901ae0ffac421a
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: fdb862b0d4f3d0a6b3411b38a314e28b5f1f9edc
 
 
 ---
 
-# 应用程序如何支持 Azure Rights Management 服务
+# <a name="how-applications-support-the-azure-rights-management-service"></a>应用程序如何支持 Azure Rights Management 服务
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -47,11 +48,11 @@ ms.openlocfilehash: 3d2f95f2a20782897be293162d901ae0ffac421a
 
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 了解有关以下各项如何支持 Azure Rights Management 服务的详细信息：
 
--   [Windows 和移动平台的 RMS 共享应用程序](sharing-app-support.md)
+-   [适用于 Windows 和移动平台的 RMS 共享应用程序](sharing-app-support.md)
 
 -   [Office 应用程序和服务](office-apps-services-support.md)
 
@@ -62,6 +63,6 @@ ms.openlocfilehash: 3d2f95f2a20782897be293162d901ae0ffac421a
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

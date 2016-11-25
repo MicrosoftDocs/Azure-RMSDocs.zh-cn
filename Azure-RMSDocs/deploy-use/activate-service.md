@@ -2,8 +2,9 @@
 title: "激活 Azure Rights Management | Azure 信息保护"
 description: "必须先激活 Azure Rights Management 服务，然后组织才可以开始使用支持此信息保护解决方案的应用程序和服务来保护文档和电子邮件。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +13,8 @@ ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 06c71229427743e9669baee1fdbb41f175180b0f
+ms.sourcegitcommit: 84072c64f83ec97ac41d6ec030be5eabff263b4b
+ms.openlocfilehash: 51bc2c66cfce9f50b0d876fb1066d740f570d27d
 
 
 ---
@@ -40,19 +41,19 @@ ms.openlocfilehash: 06c71229427743e9669baee1fdbb41f175180b0f
 - [Office 365 管理中心 - 经典](activate-office365-classic.md)
 - [Azure 经典门户](activate-azure-classic.md)
 
-或者，可以使用 Window Azure PowerShell 激活 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]：
+也可以使用 PowerShell 激活 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]：
 
 1. 安装 Azure Rights Management 管理工具，将安装 Azure Rights Management 管理模块。 相关说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
 
-2. 在 Windows PowerShell 会话中，运行 [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx)，并在出现提示时提供 Azure 信息保护租户的全局管理员帐户详细信息。
+2. 在 PowerShell 会话中，运行 [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx)，并在出现提示时提供 Azure 信息保护租户的全局管理员帐户详细信息。
 
 3. 运行 [Enable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629412.aspx)，该命令将激活 Azure Rights Management 服务。
 
 ## <a name="configuring-onboarding-controls-for-a-phased-deployment"></a>为分阶段部署配置加入控制
-如果你不希望所有用户都能立即使用 Azure Rights Management 保护文件，则可以使用 [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) Windows PowerShell 命令来配置用户加入控制。 在激活 Azure Rights Management 服务之前或之后，你可以运行此命令。
+如果不希望所有用户都能立即使用 Azure Rights Management 保护文件，则可以使用 [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) PowerShell 命令来配置用户加入控制。 在激活 Azure Rights Management 服务之前或之后，你可以运行此命令。
 
 > [!IMPORTANT]
-> 若要使用此命令，你必须安装至少 **2.1.0.0** 版的 [Azure Rights Management Windows PowerShell 模块](http://go.microsoft.com/fwlink/?LinkId=257721)。
+> 若要使用此命令，必须安装至少 **2.1.0.0** 版的 [Azure Rights Management PowerShell 模块](http://go.microsoft.com/fwlink/?LinkId=257721)。
 >
 > 若要检查已安装的版本，请运行：**(Get-Module aadrm –ListAvailable).Version**
 
@@ -61,13 +62,16 @@ ms.openlocfilehash: 06c71229427743e9669baee1fdbb41f175180b0f
 ```
 Set-AadrmOnboardingControlPolicy – SecurityGroupObjectId fbb99ded-32a0-45f1-b038-38b519009503
 ```
-请注意：对于此配置选项，必须指定组，不能指定单个用户。
+请注意：对于此配置选项，必须指定组，不能指定单个用户。 若要获取组的对象 ID，请使用 Azure AD PowerShell，例如，对于 [1.0 版](https://msdn.microsoft.com/library/azure/jj151815\(v=azure.98\).aspx)的模块，请使用 [Get-MsolGroup](https://msdn.microsoft.com/library/azure/dn194130\(v=azure.98\).aspx) 命令。
 
 或者，如果你要确保只有正确获得使用 Azure 信息保护的许可的用户可以保护内容，请使用以下命令：
 
 ```
 Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $true
 ```
+
+有关此 cmdlet 的详细信息和其他示例，请参阅 [Set-AadrmOnboardingControlPolicy](https://msdn.microsoft.com/library/dn857521.aspx) 帮助。
+
 使用这些加入控制时，组织中的所有用户始终可以使用由用户的子集保护的受保护内容，但他们自身将不能从客户端应用程序应用信息保护。 例如，他们将在其 Office 客户端中看不到激活 Azure Rights Management 时自动发布的默认模板，也看不到你可能会配置的自定义模板。  服务器端应用程序（如 Exchange）可以为 Rights Management 集成实现自己的每用户控制，以获得相同的结果。
 
 
@@ -81,6 +85,6 @@ Exchange Online 和 SharePoint Online 等 Office 服务需要进行其他配置�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

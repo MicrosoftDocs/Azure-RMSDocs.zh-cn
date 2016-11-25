@@ -3,6 +3,7 @@ title: "Linux 代码示例 | Azure RMS"
 description: "本主题向你介绍 Linux 版 RMS SDK 的重要方案和代码元素。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,19 +15,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: cb0ce6cc8f4740ffc04b36b02392bed2c5f5490c
 
 
 ---
 
-# Linux 代码示例
+# <a name="linux-code-examples"></a>Linux 代码示例
 
 本主题向你介绍 Linux 版 RMS SDK 的重要方案和代码元素。
 
 以下代码片段取自示例应用程序 *rms\_sample* 和 *rmsauth\_sample*。 相关详细信息，请参阅 GitHub 存储库中的[示例](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples)。
 
-## 方案，通过受保护的文件访问保护策略信息
+## <a name="scenario-access-protection-policy-information-from-a-protected-file"></a>方案，通过受保护的文件访问保护策略信息
 
 **打开并读取 RMS 保护的文件**
 **源**：[rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
@@ -146,7 +147,7 @@ ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
       return fsResult;
     }
 
-## 方案：使用模板创建新的受保护文件
+## <a name="scenario-create-a-new-protected-file-using-a-template"></a>方案：使用模板创建新的受保护文件
 
 **使用用户所选模板来保护文件**
 **源**：[rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
@@ -286,7 +287,7 @@ ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
     
 
 
-## 方案：使用自定义保护来保护文件
+## <a name="scenario-protect-a-file-using-custom-protection"></a>方案：使用自定义保护来保护文件
 
 **使用自定义保护来保护文件**
 **源**：[rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
@@ -403,7 +404,7 @@ ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
     ConvertToPFileUsingPolicy(policy, inStream, fileExt, outStream);
     
 
-## WorkerThread - 一种支持方法
+## <a name="workerthread-a-supporting-method"></a>WorkerThread - 一种支持方法
 
 
 *WorkerThread()* 方法由先前的两个示例方案（“创建受保护的文件流”和“在给定策略的情况下保护文件”）按以下方式进行调用：
@@ -498,7 +499,7 @@ ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
     }
 
 
-## 方案：RMS 身份验证
+## <a name="scenario-rms-authentication"></a>方案：RMS 身份验证
 
 以下示例展示了两种不同的身份验证方法，即在使用 UI 和不使用 UI 的情况下获取 Azure 身份验证 oAuth2 令牌。
 **通过 UI 获取 oAuth2 身份验证令牌**
@@ -593,6 +594,6 @@ ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/27/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3beeaffd5cf5f0e0a629dd6130d780cec3e05d6
-ms.openlocfilehash: ff6573042941640d1cca82d68e85f09c82e3c77b
+ms.sourcegitcommit: 45ca64c8338de3f4b192c61eb437b4acdbb8d799
+ms.openlocfilehash: cdd987bf0670f9e5ef7519119aa886573cf14924
 
 
 ---
@@ -37,8 +37,6 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 **发布日期**：2016/10/27
 
 **修补程序**：
-
-- 使用 Office 2010 并且尚未针对 Azure 权限管理服务初始化环境（也称为“引导”）时，可以成功应用保护内容的标签。
 
 - 禁用 Windows 更新服务时，客户端安装完成。
 
@@ -64,6 +62,6 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -2,6 +2,7 @@
 title: "使用 Windows PowerShell 管理 Azure Rights Management 服务 | Azure 信息保护"
 description: "了解如何使用适用于 Azure 信息保护的 Azure Rights Management 服务的 Windows PowerShell 模块 (AADRM) 为组织管理此服务。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/19/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3046fc94e92dfadd3158e2bdf0ed7eda51e8e8bc
-ms.openlocfilehash: c36a5a53f0a83afedb1e840a60a59d281a751f17
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 589aa704857a4cb16da62488545e63927d1de27d
 
 
 ---
 
-# 使用 Windows PowerShell 管理 Azure Rights Management 服务
+# <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>使用 Windows PowerShell 管理 Azure Rights Management 服务
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -53,6 +54,6 @@ ms.openlocfilehash: c36a5a53f0a83afedb1e840a60a59d281a751f17
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: "快速入门教程步骤 1 | Azure 信息保护"
 description: "入门教程第 1 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 30 分钟。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,15 +11,15 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: b23022c5fbec3d4f6f19ab5017ecf9badf01a9e7
-ms.openlocfilehash: 247ab8dd5a47f9370f03fbd5badd7c78784d20b5
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: edb98a61d247b51319a1eb172f9978e3d64d0e1b
 
 
 ---
 
-# 步骤 1：激活权限管理服务
+# <a name="step-1-activate-the-rights-management-service"></a>步骤 1：激活权限管理服务
  
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 > [!NOTE]
 >如果已为你的租户激活 Azure Rights Management 服务 - 请直接转到[下一步](infoprotect-tutorial-step2.md)。 
@@ -29,7 +30,7 @@ ms.openlocfilehash: 247ab8dd5a47f9370f03fbd5badd7c78784d20b5
 
 如果想要从 Office 365 管理门户导航到此页而不是直接转到此页，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md) 中的完整说明。 如果你有权访问 Azure 门户，但无权访问 Office 365 管理员门户，也可以使用这些完整说明。
 
-## 激活 Rights Management 服务
+## <a name="to-activate-the-rights-management-service"></a>激活 Rights Management 服务
 
 1. 打开一个新的浏览器窗口并直接转到 Office 365 管理员的 [Rights Management 激活页](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx)。
     
@@ -47,7 +48,7 @@ ms.openlocfilehash: 247ab8dd5a47f9370f03fbd5badd7c78784d20b5
 
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
-|关于激活 Rights Management|[激活 Azure 权限管理](../deploy-use/activate-service.md)|
+|关于激活 Rights Management|[激活 Azure Rights Management](../deploy-use/activate-service.md)|
 |关于默认模板以及如何创建新的自定义模板|[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)|
 
 >[!div class="step-by-step"]
@@ -56,6 +57,6 @@ ms.openlocfilehash: 247ab8dd5a47f9370f03fbd5badd7c78784d20b5
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

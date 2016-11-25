@@ -3,6 +3,7 @@ title: "入门 | Azure RMS"
 description: "第一个应用程序的快速入门指南是通过适用于每种操作系统/平台的开发环境设置指南。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: d4373ed4a0909c5c0c4dceb51f98ace1977cb6f7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 6e05b2c7444b5440d80bf5c4764b5ada554bbdc7
 
 
 ---
 
-# 入门
+# <a name="get-started"></a>入门
 
 对于 Microsoft Rights Management SDK 4.2 这一版本，第一个应用程序的快速入门方法是通过适用于每种操作系统/平台的开发环境设置指南。 通过以下方式开始创建启用权限的应用程序：
 
@@ -47,7 +48,7 @@ ms.openlocfilehash: d4373ed4a0909c5c0c4dceb51f98ace1977cb6f7
 3. 查看 [SDK 摘要图](api-reference-4-2.md)。
 4. 有关重要的 **发行说明** 和 **开发人员指南**，请参阅 [新增功能](release-notes.md) 主题。
 
-  |主题|说明|
+  |主题|描述|
   |-----|-----------|
   |[新增功能](release-notes.md)|MS RMS SDK 4.2 将 RMS 应用程序实现提升到了一个新的易用性和灵活性级别。|
   |[设置开发人员环境](setup-developer-environment.md)|以下主题说明必须设置开发环境以便将 AD RMS SDK API 用于特定操作系统。|
@@ -56,6 +57,6 @@ ms.openlocfilehash: d4373ed4a0909c5c0c4dceb51f98ace1977cb6f7
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

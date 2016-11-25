@@ -2,6 +2,7 @@
 title: "查看和使用受 Rights Management 保护的文件 | Azure 信息保护"
 description: "有关查看和使用受保护文件（需要安装 Rights Management (RMS) 共享应用程序）的说明。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 94a8729e7c7e5bb438ac2bd48789a522c8de8cc4
-ms.openlocfilehash: db8d6a9c5959139ee76f022a5cee997bab24e6c9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 1f248150a3f65fe5ffda1d20f51eee6bb834dd60
 
 
 ---
 
-# 查看和使用受权限管理保护的文件
+# <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>查看和使用受权限管理保护的文件
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 如果[计算机安装了权限管理 (RMS) 共享应用程序](install-sharing-app.md)，你只需双击受保护文件即可查看它。 此文件也许是电子邮件中的附件，或者你可能在使用文件资源管理器时看到它。
 
@@ -34,7 +35,7 @@ ms.openlocfilehash: db8d6a9c5959139ee76f022a5cee997bab24e6c9
 >     注册时，使用公司的电子邮件地址，而不是个人电子邮件地址。 如果注册的原因是要使用电子邮件发送受保护附件，请使用与用于发送电子邮件相同的电子邮件地址。
 > -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
-## 查看受保护文件
+## <a name="to-view-a-protected-file"></a>查看受保护文件
 通过使用文件资源管理器或包含附件的电子邮件，双击受保护文件，然后在收到提示时输入凭据。
 
 如果你看到两个版本的文件，但具有不同的文件扩展名，仅在不打开另一个文件的情况下打开具有 .ppdf 文件扩展名的文件。 如果 .ppdf 版本也无法打开，请首先安装 [RMS 共享应用程序](install-sharing-app.md)，因为该程序知道如何打开具有 .ppdf 文件扩展名的文件。
@@ -73,7 +74,7 @@ ms.openlocfilehash: db8d6a9c5959139ee76f022a5cee997bab24e6c9
 > [!NOTE]
 > 如果在确认该文件受 Rights Management 保护的情况下无法打开该文件，则可下载并使用 [RMS 分析器工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)。 按照工具中的说明进行操作，看你的计算机中是否存在妨碍受保护文档打开的问题。
 
-## 使用受保护的文件（例如，编辑和打印文件）
+## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>使用受保护的文件（例如，编辑和打印文件）
 如果在打开受保护文件后，你想要执行除读取之外的其他操作（例如编辑、复制和打印），请根据文件扩展名按照说明执行操作：
 
 - **文件具有 *.pfile* 文件扩展名**
@@ -95,18 +96,18 @@ ms.openlocfilehash: db8d6a9c5959139ee76f022a5cee997bab24e6c9
     为 Rights Management 而启用的应用程序知道如何打开由其他权限管理启用的应用程序保护的文件。 它们还保留了应用到它们的保护，即使你编辑该文件、将其按其他文件名保存或将其保存到其他位置。 这些应用程序允许你根据当前应用到文件的权限使用文件，以便在你得到授权的情况下可以使用该文件。 例如，你可能能够编辑文件，但不能打印文件。
 
 
-## 示例和其他说明
+## <a name="examples-and-other-instructions"></a>示例和其他说明
 有关如何使用 Rights Management 共享应用程序以及操作说明的示例，请参阅以下 Rights Management 共享应用程序用户指南部分：
 
 -   [使用 RMS 共享应用程序的示例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [要执行什么操作？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## 另请参阅
+## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

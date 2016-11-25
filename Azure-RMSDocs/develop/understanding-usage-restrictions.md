@@ -3,6 +3,7 @@ title: "了解使用限制 | Azure RMS"
 description: "所有启用 RMS 的应用程序都必须强制实施使用限制。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,19 +15,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cb33a6c784a9b7efca0780771e764b984b51fedd
-ms.openlocfilehash: 3141c4131d83e043e987546900d433e43ee4c946
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: cc383728d487cac45e59ef34ca43ba47c4db237b
 
 
 ---
 
-# 了解使用限制
+# <a name="understanding-usage-restrictions"></a>了解使用限制
 
 所有启用 RMS 的应用程序都必须强制实施使用限制。 使用限制是在用户尝试执行操作时产生的结果（例如 打印文档），但该文档的 RMS 策略未授予他们执行该操作的权限（例如 打印权限）。
 
 可以使用 [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx) 函数查询某个文档的用户权限。
 
-## 了解使用限制
+## <a name="understanding-usage-restrictions"></a>了解使用限制
 
 -   熟悉标准 RMS 权限
 
@@ -46,7 +47,7 @@ ms.openlocfilehash: 3141c4131d83e043e987546900d433e43ee4c946
 
     有关如何强制实施特定权限的指南，请参阅[使用限制参考](usage-restriction-reference.md)。
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 * [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)
 * [使用限制参考](usage-restriction-reference.md)
@@ -56,6 +57,6 @@ ms.openlocfilehash: 3141c4131d83e043e987546900d433e43ee4c946
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

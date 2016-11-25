@@ -2,6 +2,7 @@
 title: "方案 - 配置工作文件夹的持续保护 | Azure 信息保护"
 description: "此方案和支持性的用户文档使用 Azure Rights Management 保护对工作文件夹中的 Office 文档应用持续保护。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
-ms.openlocfilehash: 966c1b109a02f8193de16eae6f2eacec757f533b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 0d4b1cdc2620a1f8cf9ddced24a898a38d8e9b57
 
 
 ---
 
-# 方案 - 配置工作文件夹的持续保护
+# <a name="scenario-configure-work-folders-for-persistent-protection"></a>方案 - 配置工作文件夹的持续保护
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -41,23 +42,23 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 
 -   对于必须与未在权限策略模板中指定的人员共享的文件（例如另一组织中的用户），用户必须应用新的权限策略以替换原始权限策略保护。
 
-## 部署说明
+## <a name="deployment-instructions"></a>部署说明
 ![Azure RMS 快速部署的管理员指令](../media/AzRMS_AdminBanner.png)
 
 请确保已满足以下要求，然后在进入到用户文档环节前按照支持过程的说明进行操作。
 
-## 本方案的要求
+## <a name="requirements-for-this-scenario"></a>本方案的要求
 要让针对此方案的说明生效，必须做好以下准备：
 
 |要求|需要更多信息|
 |---------------|--------------------------------|
-|已激活 Azure Rights Management|[激活 Azure 权限管理](../deploy-use/activate-service.md)|
+|已激活 Azure Rights Management|[激活 Azure Rights Management](../deploy-use/activate-service.md)|
 |你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 这对所有使用工作文件夹的用户都是必需的。|[准备 Azure 信息保护](../plan-design/prepare.md)|
 |下列情况之一：<br /><br />如果要针对所有用户使用不允许用户应用新权限策略的默认模板：你尚未存档默认模板，**&lt;组织名称&gt; - 机密**<br /><br />- 如果要使用允许用户应用新权限策略的适用的自定义模板：使用随后的说明来创建自定义模板|[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)|
 |已为 Windows Server 计算机安装并授权 Rights Management 连接器，且已为 **FCI 服务器**角色配置了该连接器。|[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)|
 |已将 Rights Management 共享应用程序部署到运行 Windows 的用户计算机|[自动部署 Microsoft Rights Management 共享应用程序](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 
-### 配置自定义权限策略模板，以便用户可以将工作文件夹文件共享到组织外
+### <a name="configuring-the-custom-rights-policy-template-so-that-users-can-share-work-folders-files-outside-the-organization"></a>配置自定义权限策略模板，以便用户可以将工作文件夹文件共享到组织外
 
 1.  登录到 Azure 经典门户，并导航至 Azure Rights Management 模板。
 
@@ -79,7 +80,7 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 
 5.  保存该模板。
 
-### 配置工作文件夹以对 Office 文件应用持续保护
+### <a name="configuring-work-folders-to-apply-persistent-protection-to-office-file"></a>配置工作文件夹以对 Office 文件应用持续保护
 
 1.  为你的用户实现工作文件夹，以便本地保存的文件同步到名为*同步共享*的文件服务器文件夹。 文件服务器上的同步共享不能位于运行 Rights Management 连接器的服务器上。
 
@@ -109,7 +110,7 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 
 4.  如果你决定通过使用文件分类基础结构选择性地保护文件，请配置你的分类规则和计划，然后修改文件管理任务以将此分类属性作为条件包括在内。
 
-## 用户文档说明
+## <a name="user-documentation-instructions"></a>用户文档说明
 如果你通过 Azure Rights Management 保护的文件不需要与组织外的人员进行共享，则除了向用户提供使用工作文件夹的说明，无需再提供任何其他说明。 当用户打开受 Azure Rights Management 保护的文件和默认模板时，文件的打开方式与平常在 Office 中打开一样，唯一区别就是系统可能会提示用户进行身份验证，他们将在文档顶部看到一个信息栏，告诉他们文件内容包含仅供内部用户使用的私有信息。
 
 如果你配置了为此方案记录的自定义模板，用户将在信息栏中看到模板说明：**此内容受工作文件夹保护，且仅限公司员工使用。若要与组织外的人员共享此内容，请将文档附加到电子邮件并使用共享保护项功能。** 虽然此说明提供了如何将文件共享到组织外的摘要，但用户可能需要有关如何完成操作的详细说明，尤其是在他们前几次执行此操作的时候。 要支持此后续方案，请使用[方案 - 与另一组织中的用户共享 Office 文件](scenario-share-office-file-externally.md)中的管理员和最终用户说明。
@@ -122,6 +123,6 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

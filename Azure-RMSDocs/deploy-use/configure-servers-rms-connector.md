@@ -4,7 +4,7 @@ description: "此信息可帮助你配置将使用 Azure Rights Management (RMS)
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
+ms.sourcegitcommit: afbaf9bfc2b898d8dece415a26045ec52f7deaac
+ms.openlocfilehash: 15d017cda5e390a6fd2b639ef451a15422981ae4
 
 
 ---
@@ -142,10 +142,16 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
 
 -   Exchange Server 2010，附带 Exchange 2010 Service Pack 3 汇总更新 6
 
-你还需要在服务器上安装能够支持 RMS 加密模式 2 的 RMS 客户端版本。 Windows Server 2008 支持的最低版本包括在修补程序中，你可从 [在 Windows Server 2008 R2 和 Windows Server 2008 中，AD RMS 的 RSA 密钥长度增加到 2048 位](http://support.microsoft.com/kb/2627272)下载该修补程序。 适用于 Windows Server 2008 R2 的最低版本可从 [在 Windows 7 或 Windows Server 2008 R2 中，AD RMS 的 RSA 密钥长度增加到 2048 位](http://support.microsoft.com/kb/2627273)下载。 Windows Server 2012 和 Windows Server 2012 R2 以本机方式支持加密模式 2。
+你还需要在服务器上安装能够支持 RMS 加密模式 2 的 RMS 客户端版本 1，也称为 MSDRM。 所有 Windows 操作系统都包括 MSDRM 客户端，但早期版本的客户端不支持加密模式 2。 如果 Exchange 服务器至少运行 Windows Server 2012，则无需进一步的操作，因为使用这些操作系统安装的 RMS 客户端可本机支持加密模式 2。 
+
+如果 Exchange 服务器运行早期版本的操作系统，则验证安装的 RMS 客户端版本是否支持加密模式 2。 若要执行此操作，请根据以下知识库文章中列出的版本号检查安装的 Windows\System32\Msdrm.dll 文件版本。 如果安装的版本号等于或者高于列出的版本号，则无需进一步的操作。 如果安装的版本号较低，请下载并安装文章中的修补程序。
+
+- Windows Server 2008：[https://support.microsoft.com/kb/2627272](https://support.microsoft.com/kb/2627272) 
+
+- Windows Server 2008 R2：[https://support.microsoft.com/kb/2627273](https://support.microsoft.com/kb/2627273)
 
 > [!IMPORTANT]
-> 如果没有安装这些版本或更高版本的 Exchange 和 RMS 客户端，你就无法将 Exchange 配置为使用连接器。 继续之前，请确认已安装这些版本。
+> 如果没有安装这些版本或更高版本的 Exchange 和 MSDRM 客户端，就无法将 Exchange 配置为使用连接器。 继续之前，请确认已安装这些版本。
 
 ### <a name="to-configure-exchange-servers-to-use-the-connector"></a>将 Exchange 服务器配置为使用连接器
 
@@ -182,7 +188,7 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
 
 -   SharePoint Server 2010
 
-运行 SharePoint 2016 或 SharePoint 2013 的服务器也必须运行 RMS 连接器支持的 MSIPC 客户端 2.1 版。 若要确保使用受支持的版本，请从 [Microsoft 下载中心](http://www.microsoft.com/download/details.aspx?id=38396)下载最新的客户端。
+运行 SharePoint 2016 或 SharePoint 2013 的服务器也必须运行 RMS 连接器支持的 MSIPC 客户端 2.1 版。 若要确保使用受支持的版本，请从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=38396)下载最新的客户端。
 
 > [!WARNING]
 > MSIPC 2.1 客户端有多个版本，因此请确保安装版本 1.0.2004.0 或更高版本。
@@ -250,6 +256,6 @@ ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

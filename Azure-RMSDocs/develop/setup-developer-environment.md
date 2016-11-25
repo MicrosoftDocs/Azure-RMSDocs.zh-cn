@@ -3,6 +3,7 @@ title: "设置开发人员环境 | Azure RMS"
 description: "说明如何设置开发环境以便将 AD RMS SDK API 用于特定操作系统。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 185b67b50b7ded0ff28998f5a59be6b216abd0f9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: b369c480cc9841a7c8d92f95af3319e0e49f43d0
 
 
 ---
 
-# 设置开发人员环境
+# <a name="setup-developer-environment"></a>设置开发人员环境
 
 以下主题说明如何设置开发环境以便将 AD RMS SDK API 用于特定操作系统。
 
-|平台 | 说明|
+|平台 | 描述|
 |------|------------|
 |[Android](android-sdk.md)| Android 应用程序可以通过使用 Azure Active Directory Rights Management (AAD RM)，利用 Microsoft Rights Management SDK 4.2 在其应用中启用集成信息保护。|
 |[Linux](linux-setup.md)|Linux 操作系统的几种版本现在可以通过使用 Azure Active Directory Rights Management (AAD RM)，利用 MS RMS SDK 4.2 在其应用中启用集成信息保护。|
@@ -40,6 +41,6 @@ ms.openlocfilehash: 185b67b50b7ded0ff28998f5a59be6b216abd0f9
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

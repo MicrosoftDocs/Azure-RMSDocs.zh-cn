@@ -2,6 +2,7 @@
 title: "从 AD RMS 迁移到 Azure 信息保护 - 阶段 2 | Azure 信息保护"
 description: "从 AD RMS 迁移到 Azure 信息保护的阶段 2 涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 5。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/12/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 25f7c2e5eb226fcf7c30026a37a767e559a522ad
-ms.openlocfilehash: 810e540e02db0b4a142471dd89e30663bd61f22c
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: ca8d2ccb68b96095fccf9d55b9cb9392d3a455ec
 
 
 ---
-# 迁移阶段 2 - 客户端配置
+# <a name="migration-phase-2-clientside-configuration"></a>迁移阶段 2 - 客户端配置
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
+>适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 2。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 5。
 
 
-## 步骤 5. 重新配置客户端以使用 Azure 信息保护
+## <a name="step-5-reconfigure-clients-to-use-azure-information-protection"></a>步骤 5. 重新配置客户端以使用 Azure 信息保护
 对于 Windows 客户端：
 
 1.  [下载迁移脚本](https://go.microsoft.com/fwlink/?LinkId=524619)：
@@ -76,7 +77,7 @@ ms.openlocfilehash: 810e540e02db0b4a142471dd89e30663bd61f22c
 
     -  删除在部署 [AD RMS 移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)时创建的 DNS SRV 记录。
 
-#### 由迁移脚本进行的更改
+#### <a name="changes-made-by-the-migration-scripts"></a>由迁移脚本进行的更改
 本节介绍迁移脚本进行的更改。 你只能将此信息出于参考目的，或用于故障排除，或者用于你想要自己进行这些更改的场合。
 
 CleanUpRMS_RUN_Elevated.cmd：
@@ -129,10 +130,10 @@ Redirect_OnPrem.cmd：
     > 在对 Azure RMS 运行 **Get-AadrmConfiguration** cmdlet 时，可以通过标识 [RightsManagementServiceId](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) 值找到此值。
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 要继续迁移，请转到[阶段 3 - 支持复制配置](migrate-from-ad-rms-phase3.md)。
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

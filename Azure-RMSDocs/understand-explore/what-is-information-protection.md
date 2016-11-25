@@ -2,6 +2,7 @@
 title: "什么是 Azure 信息保护？ | Azure 信息保护"
 description: "Azure 信息保护服务概述。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/12/2016
 ms.topic: article
@@ -10,15 +11,15 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: 0098fa28313561e99f39e2539e20c8a6bc0207f7
-ms.openlocfilehash: eaaa08a99b3c065422dd8b0bc01d89ead15e9d49
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: b26db0aae458a897710cd19e05753ad159004aa0
 
 
 ---
 
-# 什么是 Azure 信息保护？
+# <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 Azure 信息保护是基于云的解决方案，可帮助组织对其文档和电子邮件进行分类、添加标签和保护。 这可以由定义规则和条件的管理员自动进行、由用户手动进行或是组合进行（在这种情况下会向用户提供建议）。 
 
@@ -28,7 +29,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 内容进行分类（以及保护（可选））之后，随后可以跟踪并控制其使用方式。 可以分析数据流以深入了解业务、检测危险行为和采取修正措施、跟踪对文档的访问、防止数据泄露或误用，等等。
 
-## 标签如何应用分类
+## <a name="how-labels-apply-classification"></a>标签如何应用分类
 
 可使用 Azure 信息保护标签对文档和电子邮件应用分类。 执行此操作时，分类在任何时候都是可识别的，无论数据的存储位置在哪或者与谁共享数据。 永久性标签包括可视化标记，如页眉、页脚或水印。 元数据以明文形式添加到文件和电子邮件的标头，以便其他服务（如数据丢失防护解决方案）可以识别分类并执行相应的操作。 
 
@@ -37,7 +38,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 ![显示 Azure 信息保护分类的示例电子邮件页脚和标头](../media/example-email-footer-header.png)
 
 
-## 如何保护数据
+## <a name="how-data-is-protected"></a>如何保护数据
 
 保护技术使用 Azure Rights Management（通常缩写为 Azure RMS）。 此技术已与其他 Microsoft 云服务和应用程序（例如 Office 365 和 Azure Active Directory）集成。 它还可与你自己的业务线应用程序和软件供应商提供的信息保护解决方案搭配使用，无论这些应用程序和解决方案是在本地还是在云中。
 
@@ -45,7 +46,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 例如，可以配置报告文档或销售预测电子表格，以便仅允许组织内人员进行访问，并且可以控制是否可以编辑该文档、是否将其限制为只读，以及是否禁止打印它。 同样，你也可以配置电子邮件，并且禁止转发电子邮件或使用“全部答复”选项。 这些保护任务可以使用权限管理模板来简化。
 
-### 权限管理模板
+### <a name="rights-management-templates"></a>权限管理模板
 
 激活 Azure Rights Management 服务之后，便会为你创建两个默认模板，仅限你组织内的用户才能访问数据。 可以使用这些模板立即帮助防止从你的组织泄露数据。 还可以通过配置应用更多限制性控件的你自己的自定义模板来补充这些默认模板。
 
@@ -61,7 +62,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 有关 Azure Rights Management 保护的详细信息，请参阅[什么是 Azure Rights Management？](what-is-azure-rms.md)
 
-## 与最终用户工作流的集成
+## <a name="integration-with-end-user-workflows"></a>与最终用户工作流的集成
 
 安装 Azure 信息保护客户端时，Azure 信息保护会与最终用户的现有工作流集成。 此客户端会将信息保护栏安装到 Office 应用程序（如第一张图片所示）。 相同栏会添加到 Excel、PowerPoint 和 Outlook。 例如：
 
@@ -72,7 +73,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 当用户通过电子邮件共享其受保护的文档时，他们可以使用文档跟踪站点监视访问这些文档的人员和时间。 如果他们怀疑存在误用，则还可以撤消对这些文档的访问权限。
 
 
-## Azure 信息保护的资源
+## <a name="resources-for-azure-information-protection"></a>Azure 信息保护的资源
 
 - 公告：[Azure 信息保护现已推出正式版](https://blogs.technet.microsoft.com/enterprisemobility/2016/10/04/azure-information-protection-is-now-generally-available/)
 
@@ -90,7 +91,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
     此外，Microsoft Ignite 2016 对 Azure 信息保护提供多个按需会话：
 
-    - [标识驱动安全BRK2127：采用综合标识驱动解决方案安全地保护和共享数据](https://myignite.microsoft.com/videos?q=BRK2127)
+    - [BRK2127：采用综合标识驱动解决方案安全地保护和共享数据](https://myignite.microsoft.com/videos?q=BRK2127)
     
     - [THR2107：使用 Azure 信息保护进行安全协作](https://myignite.microsoft.com/videos?q=THR2107)
     
@@ -101,13 +102,13 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
     - [BRK2128：利用 Microsoft Office 365 和 Azure 信息保护，向任何人发送安全电子邮件](https://myignite.microsoft.com/videos?q=BRK2128)
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 通过我们的 5 步骤 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)，可为你自己配置和使用 Azure 信息保护。
 
 通过其他名称了解 Azure 信息保护或 Azure Rights Management？ 请参阅[该服务的替代术语列表](azure-rms-aka.md)。
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

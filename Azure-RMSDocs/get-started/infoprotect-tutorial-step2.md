@@ -2,23 +2,24 @@
 title: "快速入门教程步骤 1 | Azure 信息保护"
 description: "入门教程第 2 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 30 分钟。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: b23022c5fbec3d4f6f19ab5017ecf9badf01a9e7
-ms.openlocfilehash: c8cad9c4b6efe2630843bcb1618ecd535670e0fe
+ms.sourcegitcommit: bce1682624b040545d30ca1cc426e4e2f8c38018
+ms.openlocfilehash: 7ba1566a81ca9a3ac45f340f69d3c9e933f015ff
 
 
 ---
 
-# 步骤 2：配置并发布 Azure 信息保护策略
+# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>步骤 2：配置并发布 Azure 信息保护策略
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 尽管 Azure 信息保护附带了你无需进行配置的默认策略，我们仍然要看一下该策略并进行一些更改。
 
@@ -35,11 +36,11 @@ ms.openlocfilehash: c8cad9c4b6efe2630843bcb1618ecd535670e0fe
     
     - 用于分类的标签：“个人”、“公共”、“内部”、“机密”和“秘密”。 阅读各个标签的工具提示以了解如何使用这些标签。 请注意，**秘密**标签有两个子标签：**所有员工**和**我的组**，这是一个类别具有子类别的一个示例。
 
-    - 在默认设置中，“内部”、“机密”和“秘密”标签都配置了可视标记（例如页脚、页眉、水印），并且这些标签都没有设置保护。 此外，由于未设置此三个全局设置，因此所有文档和电子邮件不需要有标签。没有默认标签，用户降低分类级别时无需提供理由。
+    - 在默认设置中，“内部”、“机密”和“秘密”标签都配置了可视标记（例如页脚、页眉、水印），并且这些标签都没有设置保护。 此外，由于未设置四个全局设置，因此所有文档和电子邮件不需要有标签。没有默认标签，用户更改标签时无需提供理由，并且客户端未配置自定义帮助连接。
 
     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy.png)
 
-## 更改默认模板和提示提供理由的全局设置
+## <a name="changing-the-global-settings-for-a-default-template-and-prompt-for-justification"></a>更改默认模板和提示提供理由的全局设置
 
 在我们的教程中，我们将更改几个全局设置，以便你可以看到如何使用它们：
 
@@ -47,7 +48,7 @@ ms.openlocfilehash: c8cad9c4b6efe2630843bcb1618ecd535670e0fe
 
 2. 对于“用户必须提供理由以设置较低分类标签、删除标签或删除保护”，将其设置为“开”。
 
-## 配置保护的标签、水印和分类提示的条件
+## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>配置保护的标签、水印和分类提示的条件
 
 现在我们要更改一个标签**机密**：
 
@@ -121,6 +122,6 @@ ms.openlocfilehash: c8cad9c4b6efe2630843bcb1618ecd535670e0fe
 [步骤 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

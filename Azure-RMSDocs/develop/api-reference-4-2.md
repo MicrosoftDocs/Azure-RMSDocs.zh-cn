@@ -3,8 +3,9 @@ title: "API 参考 | Azure RMS"
 description: "Microsoft Rights Management SDK 4.2 支持多种操作系统；Android、iOS、OS X、Linux、Windows Phone 和 Windows 应用商店。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,29 +15,29 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: cab47811d6b7b2b11f5bdcb58c4d72837a209131
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 4f54eb662200bd07a368287cb9e182223132118f
 
 
 ---
 
-# API 参考
+# <a name="api-reference"></a>API 参考
 
 Microsoft Rights Management SDK 4.2 支持多种操作系统。 有关特定平台的详细信息，请参阅[新增功能](release-notes.md)。
 
-### Apple
-- [iOS/OS X API 参考](/information-protection/sdk/4.2/api/iOS/iOS) - 适用于 Apple iOS 和 OS X 操作系统的 API 参考。
+### <a name="apple"></a>Apple
+- [iOS/OS X API 参考](https://msdn.microsoft.com/library/dn758306.aspx) - 适用于 Apple iOS 和 OS X 操作系统的 API 参考。
 
-### Google
-- [Android 命名空间](android-namespaces.md)
+### <a name="google"></a>Google
+- [Android 命名空间](https://msdn.microsoft.com/library/dn758245.aspx)
 
-### Linux
+### <a name="linux"></a>Linux
 - [Linux API 参考](linux-c-api-reference.md) - 适用于我们 Linux 风格操作系统支持的 API 参考在 Github 上承载 - [适用于 C++ 的 RMS SDK](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)。
 
-### Microsoft
-- [Windows API 参考](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement) - 适用于 Windows Phone 和 Windows 应用商店应用程序 SDK 的 API 参考。
+### <a name="microsoft"></a>Microsoft
+- [Windows API 参考](https://msdn.microsoft.com/library/dn891914.aspx) - 适用于 Windows Phone 和 Windows 应用商店应用程序 SDK 的 API 参考。
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 * [入门](get-started.md)
  
@@ -45,6 +46,6 @@ Microsoft Rights Management SDK 4.2 支持多种操作系统。 有关特定平�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

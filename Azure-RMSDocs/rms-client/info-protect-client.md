@@ -4,15 +4,15 @@ description: "有关安装客户端（将信息保护栏添加到 Office 应用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/01/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 2f1930f4657278d25ef6dd369866f16e4ba71644
-ms.openlocfilehash: 5e36d046d53b0fdfb6796f2a00e8d0d1325f30c3
+ms.sourcegitcommit: db05149a25b6535d568338140daa2474e48b6711
+ms.openlocfilehash: 984d764d0c1ac41e6baec0b7978f501d7494773d
 
 
 ---
@@ -69,7 +69,9 @@ Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可以利
     
         还可以看到标识用于向 Azure 信息保护进行身份验证的帐户的显示用户名。 此用户名必须与用于 Office 365 或 Azure Active Directory 的帐户匹配。
 
-    - 在“帮助和反馈”部分：使用**发送反馈**链接自动将客户端日志附加到电子邮件，以发送给信息保护团队进行调查。 
+    - 在“帮助和反馈”部分：**告诉我详细信息链接**默认转到 [Azure 信息保护](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)网站；但根据 Azure 信息保护策略中的一个[全局设置](../deploy-use/configure-policy-settings.md)，它也可配置为自定义 URL。
+        
+        使用**发送反馈**链接，自动将客户端日志附加到电子邮件以发送到信息保护团队进行问题调查。 
     
         若要获取诊断信息以及重置客户端，请单击“运行诊断”。 诊断测试完成后，单击“复制结果”将信息粘贴到电子邮件中，以发送给支持人员或 Microsoft 支持部门。 测试完成后，还可以重置客户端。
         
@@ -115,6 +117,6 @@ Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可以利
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

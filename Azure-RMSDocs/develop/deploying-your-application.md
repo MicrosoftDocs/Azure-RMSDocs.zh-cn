@@ -3,6 +3,7 @@ title: "部署应用程序 | Azure RMS"
 description: "本主题概述并引导你完成启用权限的应用程序的部署选项"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,18 +15,18 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: e47c5331f49c62a00617f40b1af7ffdc4a89dcfd
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f565294366bdfd06be7fc25ef781eb4900929484
 
 
 ---
 
-# 部署到生产
+# <a name="deploy-into-production"></a>部署到生产
 
 
 本主题概述并引导你完成启用权限的应用程序的部署选项。
 
-## 请求生产许可协议
+## <a name="request-a-production-license-agreement"></a>请求生产许可协议
 
  必须先申请生产许可证协议以获取生产证书，才能发布使用 Rights Management Services SDK 2.1 开发的应用程序。
 
@@ -62,14 +63,12 @@ Active Directory Rights Management 许可协议 (ADRMLA) 团队将在三个工�
 
 请务必遵循 ADRMLA 团队给出的说明。 说明中列出了你的证书请求获批所需的数字信息项目。 通过遵循逐步说明，可减少延迟。
 
-证书创建完成后，ADRMLA 团队会将你的生产证书转发给你。 请注意，ADRMLA 团队通过电子邮件将你的证书回复给你可能需要最多 15 个工作日，如果是使用邮政服务进行通信，则所需时间更长。
 
-
-## Rights Management 服务客户端 2.1 的安装选项和要求
+## <a name="installation-options-and-requirements-for-rights-management-service-client-21"></a>Rights Management 服务客户端 2.1 的安装选项和要求
 
 假设你使用 RMS SDK 2.1，那么你将需要在最终用户计算机上部署 Active Directory Rights Management Services Client 2.1。
 
-### RMS 客户端 2.1
+### <a name="rms-client-21"></a>RMS 客户端 2.1
 
 RMS 客户端 2.1 是为客户端计算机而设计的软件，可帮助保护对流经使用 RMS 的应用程序（无论是安装在本地还是 Microsoft 数据中心内）的信息的访问和使用。
 
@@ -80,7 +79,7 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 RMS 客户端 2.1 作为�
 > AD RMS Client 2.1 特定于体系结构，必须与目标操作系统的体系结构匹配。
 
 
-## RMS 客户端 2.1 的安装选项
+## <a name="rms-client-21-installation-choices"></a>RMS 客户端 2.1 的安装选项
 
 -   **重新分发 RMS 客户端 2.1**
 
@@ -101,7 +100,7 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 RMS 客户端 2.1 作为�
 
     如果客户端存在，则继续执行应用程序安装。
 
-## 使用应用程序启用 Azure Rights Management Services
+## <a name="enabling-azure-rights-management-services-with-your-application"></a>使用应用程序启用 Azure Rights Management Services
 
 > [!NOTE]
 > 如果已迁移到新的 ADAL 模型进行身份验证，则无需安装 SIA。 有关详细信息，请参阅[适用于启用了 RMS 的应用程序的 ADAL 身份验证](adal-auth.md)。
@@ -121,10 +120,10 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 RMS 客户端 2.1 作为�
 
 有关使你的应用程序能够将 RMS 用于 Azure Rights Management Services 的详细信息，请参阅[使应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 * [Microsoft Online Services 登录助手](http://www.microsoft.com/en-us/download/details.aspx?id=28177)
-* [配置权限管理](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx)
+* [配置 Rights Management](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx)
 * [使应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)
  
 
@@ -132,6 +131,6 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 RMS 客户端 2.1 作为�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

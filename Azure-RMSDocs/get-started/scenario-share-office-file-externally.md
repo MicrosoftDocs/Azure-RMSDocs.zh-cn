@@ -2,6 +2,7 @@
 title: "方案 - 与另一组织中的用户共享 Office 文件 | Azure 信息保护"
 description: "此方案和支持性的用户文档使用 Azure Rights Management 保护，以便用户可以安全地通过电子邮件将 Office 文件发送给另一组织中的用户。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
-ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 24b4e542a437a824c6783b02bde5bfb848cdeb3a
 
 
 ---
 
-# 方案 - 与另一组织中的用户共享 Office 文件
+# <a name="scenario-share-an-office-file-with-users-in-another-organization"></a>方案 - 与另一组织中的用户共享 Office 文件
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -34,23 +35,23 @@ ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 -   员工可能想要了解外部用户打开此文档的时间。
 
-## 部署说明
+## <a name="deployment-instructions"></a>部署说明
 ![Azure RMS 快速部署的管理员指令](../media/AzRMS_AdminBanner.png)
 
 在进入用户文档前，请确保已满足以下要求。
 
-## 本方案的要求
+## <a name="requirements-for-this-scenario"></a>本方案的要求
 要使此方案的用户指令发生作用，必须做好以下准备：
 
 |要求|需要更多信息|
 |---------------|--------------------------------|
 |已准备好 Office 365 或 Azure Active Directory 的帐户和组|[准备 Azure 信息保护](https://technet.microsoft.com/library/jj585029.aspx)|
-|已激活 Azure Rights Management|[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)|
+|已激活 Azure Rights Management|[激活 Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |已将 Rights Management 共享应用程序部署到运行 Windows 的用户计算机|[自动部署 Microsoft Rights Management 共享应用程序](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 |用户具有 Office 2013 中的 Outlook|如果用户使用的是 Office 2016 或 Office 2010，请将屏幕截图替换为相应的版本，使图片与用户看到的内容相符。|
 |Azure 信息保护的订阅包括文档跟踪|如果订阅不包括文档跟踪和撤消功能，则用户无法完成用户指令中的所有步骤。 在这种情况下，请购买支持这些功能的订阅，或修改用户指令以删除使用这些功能的步骤。<br /><br />查看 Azure 信息保护网站上的[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
 
-## 用户文档说明
+## <a name="user-documentation-instructions"></a>用户文档说明
 使用以下模板，将此用户说明复制并粘贴到最终用户的通信中，并进行这些修改以反映你的环境：
 
 1.  将 *&lt;Office 文档类型的名称&gt;*替换为用户将要发送的文档类型。 使用他们的工作流常用的具体词语，例如“价目表”、“交货时间”和“竞标提案”，而不要使用“Word 文档”和“Excel 电子表格”。 此更具体的用词有助于增加用户使用这些文档时遵循该说明的可能性。
@@ -76,7 +77,7 @@ ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 ![Azure RMS 快速部署的用户文档模板](../media/AzRMS_UsersBanner.png)
 
-### 如何共享&lt;Office 文档类型的名称&gt;
+### <a name="how-to-share-a-ltname-of-office-document-typegt"></a>如何共享 &lt;Office 文档类型的名称&gt;
 
 1.  创建电子邮件：指定一个或多个电子邮件地址，键入消息，然后将 *&lt;Office 文档类型的名称&gt;*附加到电子邮件。 然后，在“消息”选项卡上的“RMS”组中，单击“共享保护项”，然后再次单击“共享保护项”：
 
@@ -100,7 +101,7 @@ ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 使用[文档跟踪门户](https://track.azurerms.com/)跟踪他们是否打开以及何时打开了附加的 &lt;Office 文档类型的名称&gt;。 在看到他们打开 &lt;Office 文档类型的名称&gt;后，建议立即向他们拨打跟进电话。
 
-**需要帮助吗?**
+**需要帮助吗？**
 
 -   其他信息：
 
@@ -110,12 +111,12 @@ ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 -   与技术支持联系：
 
-    -   *&lt;联系人详细信息&gt;*
+    -   &lt;联系人详细信息&gt;
 
-### 自定义用户文档示例
+### <a name="example-customized-user-documentation"></a>自定义用户文档示例
 ![Azure RMS 快速部署的用户文档示例](../media/AzRMS_ExampleBanner.png)
 
-#### 如何与客户共享价目表
+#### <a name="how-to-share-a-price-list-with-your-customer"></a>如何与客户共享价目表
 
 1.  创建电子邮件：指定客户的一个或多个电子邮件地址，键入消息，然后将价目表附加到电子邮件。 然后，在“消息”选项卡上的“RMS”组中，单击“共享保护项”，然后再次单击“共享保护项”：
 
@@ -139,7 +140,7 @@ ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 使用 [文档跟踪门户](https://track.azurerms.com/) 跟踪他们是否打开以及何时打开了附加的价目表。 在看到他们打开价目表后，建议立即向他们拨打跟进电话。
 
-**需要帮助吗?**
+**需要帮助吗？**
 
 -   其他信息：
 
@@ -154,6 +155,6 @@ ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

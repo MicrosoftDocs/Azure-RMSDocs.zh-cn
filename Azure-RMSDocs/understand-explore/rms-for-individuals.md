@@ -2,6 +2,7 @@
 title: "个人 RMS 和 Azure 信息保护 | Azure 信息保护"
 description: "有关个人 RMS 的信息，此 RMS 是供组织内的用户使用的一种免费自助服务订阅，用户在下列情况下可以使用：用户收到了受 Azure Rights Management 服务保护的敏感文件，但这些用户无法进行身份验证，因为 IT 部门没有在 Azure 中管理他们的帐户。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d27417bf90dab8c7e8654c68d204dad6297fa0d
-ms.openlocfilehash: 5ce322224da9052b1fa5a3e3d995bbb52e079797
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f89374ec327f51f3e8354aec57f0c0da9ddac585
 
 
 ---
 
-# 个人 RMS 和 Azure 信息保护
+# <a name="rms-for-individuals-and-azure-information-protection"></a>个人 RMS 和 Azure 信息保护
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 个人 RMS 是组织内的用户使用的一种免费自助服务订阅，在其中用户会收到受 Azure 信息保护中的 Azure Rights Management 服务的敏感文件。 如果 IT 部门没有在 Azure 中管理帐户，这些用户不能通过身份验证，他们可以使用这一免费注册服务。 例如，IT 部门没有 Office 365 或不使用 Azure 服务。
 
@@ -35,12 +36,12 @@ ms.openlocfilehash: 5ce322224da9052b1fa5a3e3d995bbb52e079797
 
 个人 RMS 是一个 Azure Active Directory 支持的自助注册示例。 有关其工作原理的详细信息，请参阅 Azure Active Directory 文档中的[什么是 Azure 自助注册？](/active-directory/active-directory-self-service-signup)。 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 有关后台操作的分步说明和技术概述，请参阅[用户如何注册个人 RMS](rms-for-individuals-user-sign-up.md)。 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

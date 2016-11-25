@@ -4,7 +4,7 @@ description: "此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
-ms.openlocfilehash: 3f5982b94f1de83ec66860946c46b9acbf45f479
+ms.sourcegitcommit: 5f75e36e5939b23a9d077a6fcd659c59d0f71a68
+ms.openlocfilehash: 9db60e1e841cd1f821501d402986dbd05a577f6f
 
 
 ---
@@ -52,11 +52,11 @@ ms.openlocfilehash: 3f5982b94f1de83ec66860946c46b9acbf45f479
 
     将密钥上传到 Azure 密钥保管库后，可以看到密钥显示的属性，其中包括密钥 ID。 类似于 https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333。 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure Rights Management 服务将此密钥用作租户密钥。
 
-2. 在连接 Internet 的工作站上的 PowerShell 会话中，使用 [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/en-us/library/mt603625(v=azure.300\).aspx) cmdlet 来授权名为 Microsoft.Azure.RMS 的服务主体访问将存储 Azure 信息保护租户密钥的密钥保管库。 所需的权限有解密、加密、unwrapkey、wrapkey、验证和签名。
+2. 在连接了 Internet 的工作站上的 PowerShell 会话中，使用 [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/en-us/library/mt603625(v=azure.300\).aspx) cmdlet 来授权 Azure Rights Management 服务主体访问将存储 Azure 信息保护租户密钥的密钥保管库。 所需的权限有解密、加密、unwrapkey、wrapkey、验证和签名。
     
     例如，如果已为 Azure 信息保护创建的密钥保管库名为 contoso-byok-ky，并且你的资源组名为 contoso-byok-rg，请运行以下命令：
     
-        Set-AzureRmKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
+        Set-AzureRmKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
 
 现在，你已经在 Azure 密钥保管库中为 Azure 信息保护中的 Azure Rights Management 服务准备好了 HSM 密钥，接下来可以导入 AD RMS 配置数据。
@@ -95,6 +95,6 @@ ms.openlocfilehash: 3f5982b94f1de83ec66860946c46b9acbf45f479
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
