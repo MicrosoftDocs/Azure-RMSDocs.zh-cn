@@ -2,6 +2,7 @@
 title: "安装并配置 Azure Rights Management 连接器 | Azure 信息保护"
 description: "此信息可帮助安装并配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到部署 Azure Rights Management 连接器中的步骤 1-4。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: babd3b14cba61aa49cb448c1d132b279dc9ad5da
 
 
 ---
 
-# 安装并配置 Azure Rights Management 连接器
+# <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -27,7 +28,7 @@ ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 在开始之前，请确保已查看并检查此部署的[先决条件](deploy-rms-connector.md#prerequisites-for-the-rms-connector)。
 
 
-## 安装 RMS 连接器
+## <a name="installing-the-rms-connector"></a>安装 RMS 连接器
 
 1.  确定将要运行 RMS 连接器的计算机（最少两台）。 它们必须满足先决条件中列出的最低规格。
 
@@ -52,8 +53,8 @@ ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 
 若要继续，请输入帐号和密码以配置 RMS 连接器。
 
-## 输入凭据
-在能够配置 RMS 连接器之前，你必须输入具有足够 RMS 连接器配置权限的帐户的凭据。 例如，你可键入“admin@contoso.com”，然后指定此帐户的密码。
+## <a name="entering-credentials"></a>输入凭据
+在能够配置 RMS 连接器之前，你必须输入具有足够 RMS 连接器配置权限的帐户的凭据。 例如，你可以键入 **admin@contoso.com**，然后指定此帐户的密码。
 
 对于此密码有一些字符限制。 不可使用具有下列任一字符的密码：& 号 (**&**)、左括号 (**[**)、右括号 (**]**)、直引号 (**"**) 和撇号 (**'**)。 如果你的密码包含上述任一字符，则尽管你在其他方案中可以使用此帐户和密码成功登录，但 RMS 连接器的身份验证将失败，你将看到错误消息“该用户名和密码组合不正确”。 如果这适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设你的密码使其不包含上述任一特殊字符。
 
@@ -115,7 +116,7 @@ ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 
 如果你需要卸载 RMS 连接器，请再次运行向导并选择卸载选项。
 
-## 授权服务器使用 RMS 连接器
+## <a name="authorizing-servers-to-use-the-rms-connector"></a>授权服务器使用 RMS 连接器
 在至少两台计算机上安装 RMS 连接器之后，即可为你希望其使用 RMS 连接器的服务器和服务授权。 例如运行 Exchange Server 2013 或 SharePoint Server 2013 的服务器。
 
 若要定义这些服务器，请运行 RMS 连接器管理工具，然后向允许服务器列表添加条目。 如果你在 Microsoft Rights Management 连接器设置向导结束时选择了“启动连接器管理员控制台对服务器授权”  ，则可运行此工具，也可从向导单独运行此工具。
@@ -132,7 +133,7 @@ ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 > 在 Azure RMS 中授权服务器等效于 AD RMS 配置，都可将 NTFS 权限手动应用到服务或服务器计算机帐户的 ServerCertification.asmx 中，并可向用户手动授予到 Exchange 帐户的超级权限。 此连接器上无需将 NTFS 权限应用到 ServerCertification.asmx。
 
 
-### 将服务器添加到允许服务器列表。
+### <a name="add-a-server-to-the-list-of-allowed-servers"></a>将服务器添加到允许服务器列表。
 在“允许服务器使用连接器”页上，输入对象的名称，或进行浏览以确定要授权的对象  。
 
 必须为正确的对象授权，这一点非常重要。 若要让服务器使用连接器，必须选择运行本地服务（例如 Exchange 或 SharePoint）的帐户来进行授权。 例如，如果服务作为配置的服务帐户运行，请将该服务帐户的名称添加到列表。 如果服务作为本地系统运行，请添加该计算机对象的名称（例如 SERVERNAME$）。 最佳做法是创建一个包含这些帐户的组并指定该组，而不是指定单独的服务器名称。
@@ -160,7 +161,7 @@ ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 
 如果尚未配置负载平衡，则现在必须为安装了 RMS 连接器的服务器配置负载平衡，并考虑是否使用 HTTPS 在这些服务器和你刚才授权的服务器之间进行连接。
 
-## 配置负载平衡和高可用性
+## <a name="configuring-load-balancing-and-high-availability"></a>配置负载平衡和高可用性
 在你安装第二个或最后一个 RMS 连接器实例之后，请定义连接器 URL 服务器名称并配置负载平衡系统。
 
 连接器 URL 服务器名称可以是你控制的命名空间中的任何名称。 例如，你可在 DNS 系统中为 **rmsconnector.contoso.com** 创建一个条目，并将此条目配置为使用负载平衡系统中的 IP 地址。 此名称没有任何特殊要求，也无需在连接器服务器本身上进行配置。 除非你的 Exchange 和 SharePoint 服务器要通过 Internet 与连接器通信，否则此名称无需在 Internet 上解析。
@@ -182,7 +183,7 @@ ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 
 为负载平衡的系统（为运行 RMS 连接器服务的服务器）定义的此名称是你稍后将本地服务器配置为使用 Azure RMS 时要使用的组织 RMS 连接器名称。
 
-## 将 RMS 连接器配置为使用 HTTPS
+## <a name="configuring-the-rms-connector-to-use-https"></a>将 RMS 连接器配置为使用 HTTPS
 > [!NOTE]
 > 此配置步骤是可选的，但建议执行此步骤以提高安全性。
 
@@ -199,10 +200,10 @@ ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 > -   如果你使用独立 CA 或从其他公司购买此证书，请参阅 TechNet 上 [Web 服务器 (IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 文档库中的[配置 Internet 服务器证书 (IIS 7)](http://technet.microsoft.com/library/cc731977%28v=ws.10%29.aspx)。
 > -   若要将 IIS 配置为使用证书，请参阅 TechNet 上 [Web 服务器 (IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 文档库中的[添加网站绑定 (IIS 7)](http://technet.microsoft.com/library/cc731692.aspx)。
 
-## 为 Web 代理服务器配置 RMS 连接器
+## <a name="configuring-the-rms-connector-for-a-web-proxy-server"></a>为 Web 代理服务器配置 RMS 连接器
 如果你的连接器服务器安装在没有直接 Internet 连接的网络中，需要手动配置出站 Internet 访问的 Web 代理服务器，则必须在 RMS 连接器的这些服务器上配置注册表。
 
-#### 将 RMS 连接器配置为使用 Web 代理服务器
+#### <a name="to-configure-the-rms-connector-to-use-a-web-proxy-server"></a>将 RMS 连接器配置为使用 Web 代理服务器
 
 1.  在运行 RMS 连接器的每台服务器上，打开注册表编辑器，例如 Regedit。
 
@@ -214,7 +215,7 @@ ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 
 4.  关闭注册表编辑器，然后重新启动服务器，或者执行 IISReset 命令以重新启动 IIS。
 
-## 在管理计算机上安装 RMS 连接器管理工具
+## <a name="installing-the-rms-connector-administration-tool-on-administrative-computers"></a>在管理计算机上安装 RMS 连接器管理工具
 可以在未安装 RMS 连接器的计算机上运行 RMS 连接器管理工具，前提是该计算机符合以下要求：
 
 -   运行 Windows Server 2012 或 Windows Server 2012 R2（所有版本）、Windows Server 2008 R2 或 Windows Server 2008 R2 Service Pack 1（所有版本）、Windows 8.1、Windows 8 或 Windows 7 的物理或虚拟计算机。
@@ -236,10 +237,10 @@ ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 如果你尚未下载这些文件，可从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkId=314106)下载。
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 安装和配置 RMS 连接器之后，即可配置本地服务器以使用此连接器。 转至[为 Azure Rights Management 连接器配置服务器](configure-servers-rms-connector.md)。
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

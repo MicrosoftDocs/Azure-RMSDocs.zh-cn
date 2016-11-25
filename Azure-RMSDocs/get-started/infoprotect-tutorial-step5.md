@@ -3,6 +3,7 @@ title: "快速入门教程步骤 5 | Azure 信息保护"
 description: "入门教程第 5 步，快速试用适合组织的 Microsoft Azure 信息保护，所需时间大概 30 分钟。"
 keywords: 
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -13,22 +14,22 @@ ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1af9f3b3451bf8ceafbaf3cddd2b26c37fe9d597
-ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 5844ddd3f675cdc5a88de3abc3170d7e8a89aee9
 
 
 ---
 
 
-# 步骤 5：了解如何在实际操作中共享受保护的文件和如何跟踪文档 
+# <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>步骤 5：了解如何在实际操作中共享受保护的文件和如何跟踪文档 
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 在本教程的最后一步中，找到已创建的 Word 文档，将其发送到合作伙伴或同事。 就本教程来说，该文档实际包含什么文本并不重要，而之所以需要让其包含一些文本，是为了方便你确认所授权的收件人能够阅读它。
 
 然后你就可以安全地通过电子邮件共享此文档。 
 
-## 通过电子邮件安全地共享你的文档
+## <a name="to-safely-share-your-document-by-email"></a>通过电子邮件安全地共享你的文档
 
 1.  在 Word 中打开文档。 可以看到再次自动应用了默认标签**内部**。 
 
@@ -68,13 +69,13 @@ ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
 
 现在，你已发送受保护文档，你可以要求收件人等待该文档，在其到达后打开它。 但请勿关闭 Word，因为需要在最后一步中再次使用它来跟踪共享的文档。
 
-## 要求收件人打开通过电子邮件发送的文档
+## <a name="ask-your-recipients-to-open-the-emailed-document"></a>要求收件人打开通过电子邮件发送的文档
 
 收件人可以使用很多设备来阅读你以电子邮件附件形式发送的受保护文档。 这些设备包括 iPad、iPhone、Android 平板电脑和手机、Mac 计算机，以及 Windows 计算机。
 
 要求他们阅读你发送的电子邮件。 如果这是他们第一次收到受 Rights Management 保护的附件，请要求他们单击说明链接。 之后他们看到[欢迎使用 Microsoft RMS！](https://portal.azurerms.com/#/rmshelp) 页面，其中显示了如何安装 RMS 共享应用程序的说明，以及如何在必要时注册免费的帐户。 然后他们就可以阅读受保护的附件。
 
-### 收件人说明：查看受保护的文档附件
+### <a name="instructions-for-recipient-to-view-the-protected-document-attachment"></a>收件人说明：查看受保护的文档附件
 
 1. 打开其中一个附件来阅读此文档：
     
@@ -94,7 +95,7 @@ ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
 
 现在，收件人已打开该附件并选择性地将其转发给他人，因此正常情况下你会获得电子邮件通知，该通知会报告此活动。 不过，时间越长，电子邮件越不容易查找，因此若要跟踪谁访问了你的文档，更好的方法是使用文档跟踪站点，这会在最后一步进行介绍。
 
-## 跟踪受保护文档
+## <a name="to-track-your-protected-document"></a>跟踪受保护文档
 
 1.  返回到 Word，在“主页”选项卡的“RMS”组中，单击“共享受保护文档”，然后在菜单中单击“跟踪使用情况”：
 
@@ -119,12 +120,12 @@ ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
 |有关保护通过电子邮件进行共享的文件的完整说明和替代方法|[使用 Rights Management 共享应用程序保护通过电子邮件共享的文件](../rms-client/sharing-app-protect-by-email.md)|
-|关于“共享保护项”对话框中的选项|[权限管理共享应用程序的的对话框选项](../rms-client/sharing-app-dialog-box.md)|
+|关于“共享保护项”对话框中的选项|[Rights Management 共享应用程序的对话框选项](../rms-client/sharing-app-dialog-box.md)|
 |关于供其他用户注册的免费帐户|[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)|
 |关于文档跟踪站点的使用|[跟踪和撤消文档](../rms-client/sharing-app-track-revoke.md)
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 现在你已经了解了默认的 Azure 信息保护策略和如何自定义该策略，以及如何在 Word 文档中使用标签，你可以尝试一些其他设置，了解在支持 Azure 信息保护的其他 Office 应用中是如何使用这些设置的：Excel、PowerPoint、Outlook。 如果在安装 Azure 信息保护客户端时这些应用已打开，请关闭并重新打开它们，然后再尝试将它们与 Azure 信息保护结合使用。
 
@@ -133,6 +134,6 @@ ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
 你会发现阅读 Azure 信息保护的一些[常见问题](faqs.md)和浏览其他一些文档文章很有用处。 但是，如果已准备好开始为组织部署 Azure 信息保护，那么下一步应为 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)。 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

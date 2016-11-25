@@ -2,6 +2,7 @@
 title: "监视 Azure Rights Management 连接器 | Azure 信息保护"
 description: "帮助监视连接器和组织使用 Azure 信息保护中 Azure Rights Management 服务的信息。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: af75705e8c256811d1816c2ad52e42e98b4db503
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 65d9e0bb46238d9fda31b8fb47e8e4368d96e1b2
 
 
 ---
 
-# 监视 Azure Rights Management 连接器
+# <a name="monitor-the-azure-rights-management-connector"></a>监视 Azure Rights Management 连接器
 
 >*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
 
 安装并配置 RMS 连接器后，可以使用以下方法和信息以帮助监视连接器和组织使用 Azure 信息保护中 Azure Rights Management 服务的情况。
 
-## 应用程序事件日志条目
+## <a name="application-event-log-entries"></a>应用程序事件日志条目
 
 RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器”的条目。 
 
@@ -41,7 +42,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 除了在首次部署连接器时检查事件日志以外，还应持续检查警告和错误。 例如，连接器可能最初按预期方式工作，但是其他管理员可能会更改从属配置。 例如，另一个管理员更改了 Web 代理服务器配置以使 RMS 连接器服务器不能再访问 Internet（错误 3001）或从你指定为已授权使用连接器的组中删除计算机帐户（错误 2001）。
 
-### 事件日志 ID 和说明
+### <a name="event-log-ids-and-descriptions"></a>事件日志 ID 和说明
 
 通过以下各节来识别可能的事件 ID、说明和任何附加信息。
 
@@ -125,7 +126,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 警告 **2003**
 
-**授权列表为空。 在填充连接器的授权用户和组列表之前，服务将不可用。**
+**授权列表为空。在填充连接器的授权用户和组列表之前，服务将不可用。**
 
 当 RMS 连接器没有授权帐户列表，从而导致任何本地服务器都无法连接到它时，将记录此事件。 RMS 连接器从 Azure RMS 每 15 分钟下载一次列表。 
 
@@ -153,13 +154,13 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 ----
 
-## 性能计数器
+## <a name="performance-counters"></a>性能计数器
 
 安装 RMS 连接器时，它将自动创建 **Microsoft Rights Management 连接器**性能计数器，可帮助你监视通过连接器使用 Azure Rights Management 服务的性能。 例如，如果保护文档或电子邮件，或打开受保护的文档或电子邮件时经常经历延迟，性能计数器可以帮助你确定该延迟是由连接器上的处理时间、Azure Rights Management 服务的处理时间，还是由网络延迟引起的。 若要帮助你识别出现延迟的位置，请查找包含“连接器处理时间”、“服务响应时间”和“连接器响应时间”的平均计数的计数器。 例如：“授权成功批处理请求平均连接器响应时间”。
 
 如果你最近添加了新的服务器帐户以使用连接器，你可以检查计数器“上次授权策略更新后的时间”来确认在你对其更新后，连接器已经下载了列表，或者你是否需要等待稍长的时间（最多 15 分钟）。
 
-## RMS 分析工具
+## <a name="rms-analyzer"></a>RMS 分析工具
 
 你可以使用 Rights Management Services 分析工具来帮助你监视连接器的运行状况并确定配置问题。
 
@@ -167,7 +168,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 有关其他信息和说明，请参阅下载页面上的“详细信息”和“安装说明”。
 
-## Logging
+## <a name="logging"></a>Logging
 
 使用情况日志记录可帮助你识别电子邮件和文档何时受到保护以及何时使用。 通过 RMS 连接器完成此操作后，日志中的用户 ID 字段包含为 RMS 连接器自动创建的服务主体名称 **Aadrm_S-1-7-0**。
 
@@ -192,6 +193,6 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

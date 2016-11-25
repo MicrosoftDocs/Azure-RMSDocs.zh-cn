@@ -3,6 +3,7 @@ title: "支持的文件格式 | Azure RMS"
 description: "当前版本的文件 API 支持对 MS Office 文件的本机保护、对所有其他文件格式的 PDF 和 PFile 保护。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 0baa6a5ceeba8ae2e276ffe09edb54060671d8be
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f5fa3082e407e207f33f041d22661888a13566b2
 
 
 ---
 
-# 支持的文件格式
+# <a name="supported-file-formats"></a>支持的文件格式
 
 文件 API 支持本机和 Pfile 格式。
 
-## 支持的文件格式
+## <a name="supported-file-formats"></a>支持的文件格式
 
 当前版本的文件 API 支持对 Microsoft Office 文件的本机保护、对所有其他文件格式的可移植文档文件 (PDF) 和 PFile 保护。 PDF 文件可根据需要应用 PFile 保护。
 
@@ -33,7 +34,7 @@ ms.openlocfilehash: 0baa6a5ceeba8ae2e276ffe09edb54060671d8be
 
 管理员可以设置注册表项，以基于文件扩展名就文件是否应受保护以及如何进行保护进行配置。 有关如何在使用文件 API 时配置文件保护的详细信息，请参阅[文件 API 配置](file-api-configuration.md)。
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 * [开发人员说明](developer-notes.md)
 * [文件 API 配置](file-api-configuration.md)
@@ -43,6 +44,6 @@ ms.openlocfilehash: 0baa6a5ceeba8ae2e276ffe09edb54060671d8be
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "发行说明 | Azure RMS"
 description: 
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/20/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f65f42b54fbca1a0436a0f1f6cc9be60a5e3c68
-ms.openlocfilehash: 31670bda73bdf0ddcb0167c40cdf32b11fd7af3c
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: d481ee096213af79a7852f1afa6d075d389a4212
 
 
 ---
 
-# 发行说明
+# <a name="release-notes"></a>发行说明
 
 本主题包含有关此版本和以前版本的 RMS SDK 2.1 的重要信息。
 
-## 2016 年 2 月新增内容 - SDK 文档更新
+## <a name="new-for-the-february-2016-sdk-documentation-update"></a>2016 年 2 月新增内容 - SDK 文档更新
 
 >[!Note]
 > 本部分中的功能文档更新适用于 2015 年 12 月 11 日后下载的 SDK。
@@ -40,7 +41,7 @@ ms.openlocfilehash: 31670bda73bdf0ddcb0167c40cdf32b11fd7af3c
 - **RMS SDK 将不再支持 Microsoft Online 登录助手 (SIA)。** 我们将继续支持使用 SIA 6 个月，之后将停止对其的支持。
 
 
-## 2015 年 12 月更新
+## <a name="december-2015-update"></a>2015 年 12 月更新
 
 - 多个方面都已实施了性能改进，包括：
     - 使用仅限许可证的服务器时，从主授权服务器发布。
@@ -50,11 +51,11 @@ ms.openlocfilehash: 31670bda73bdf0ddcb0167c40cdf32b11fd7af3c
 - 另请注意，[受支持的平台](supported-platforms.md)列表也进行了更新。
 - RMS SDK 2.1 不再需要预生产环境，也不再需要使用应用程序清单。 本开发人员文档集中已删除这些部分，并对整个文档进行了简化和重新组织。
 
-## 2015 年 5 月更新
+## <a name="may-2015-update"></a>2015 年 5 月更新
 
 -   **服务应用和基于云的 RMS** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 需要 3 部分信息：对称密钥、**AppPrincipalId** 和 **TenantBposId**。 有关此内容的主题已更新，提供了有关处理此信息的指导。 有关此更新，请参阅修订版本的[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
-## 2015 年 4 月更新
+## <a name="april-2015-update"></a>2015 年 4 月更新
 
 -   现在可通过一组新的 API 进行**文档跟踪**。 有关详细信息，请参阅[跟踪内容](tracking-content.md)。
 -   **加密类型** - 我们现在支持针对加密包选择的 API 级别控制。 有关详细信息，请参阅[使用加密](working-with-encryption.md)。
@@ -65,7 +66,7 @@ ms.openlocfilehash: 31670bda73bdf0ddcb0167c40cdf32b11fd7af3c
 -   现在通过文件和针对 Windows 的事件跟踪这两种方法实施**日志记录**。
 -   如果是在 **Windows 7 SP1 或 Windows Server 2008 R2 计算机**上运行，请参阅“重要的开发人员说明”下面的说明。
 
-## 2015 年 1 月更新
+## <a name="january-2015-update"></a>2015 年 1 月更新
 
 -   **受支持的保护文件 (pfile) 大小增加** - 现在支持大小超过 1 千兆字节 (1 GB) 的 pfile。 有关 pfile 的详细信息，请参阅[支持文件格式](supported-file-formats.md)。
 -   **改进日志记录以提高诊断性能** - 对于应审查的消息，日志记录级别将显示 **ERROR** 或 **WARNING**。 其他所有消息（包括仍会显示的例外）将记录为 **INFO**。
@@ -75,12 +76,12 @@ ms.openlocfilehash: 31670bda73bdf0ddcb0167c40cdf32b11fd7af3c
 -   **获取公司模板** – 基于客户报告和反馈，对模板获取代码进行了大量修复。
 -   改进的本地化一致性
 
-## 2014 年 10 月更新
+## <a name="october-2014-update"></a>2014 年 10 月更新
 
 -   SDK 的文件 API 组件的默认行为已更新。 有关详细信息，请参阅[文件 API 配置](file-api-configuration.md)。
 -   开发人员说明主题[启用电子邮件通知](how-to-enable-email-notification.md)中介绍了一项新功能，即电子邮件通知。
 
-## 2014 年 7 月更新
+## <a name="july-2014-update"></a>2014 年 7 月更新
 
 SDK 的文件 API 组件已扩展并提供以下功能：
 
@@ -99,7 +100,7 @@ SDK 的文件 API 组件已扩展并提供以下功能：
     -   [IpcfSetEndOfFile](https://msdn.microsoft.com/library/dn771754.aspx)
     -   [IpcfWriteFile](https://msdn.microsoft.com/library/dn771756.aspx)
 
-## 2014 年 4 月更新
+## <a name="april-2014-update"></a>2014 年 4 月更新
 
 -   **文件 API 内存使用**显著改善，尤其对于大型 PFile 更是如此。
 -   现在可通过属性 **IPC\_LI\_CONTENT\_ID** 编写**内容 ID**。 有关详细信息，请参阅[许可证属性类型](https://msdn.microsoft.com/library/hh535287.aspx)。
@@ -108,7 +109,7 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
     **测试最佳实践** - 增加了有关在使用 Azure RMS 之前使用本地服务器的指导 有关详细信息，请参阅[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
-## 重要的开发人员说明
+## <a name="important-developer-notes"></a>重要的开发人员说明
 
 -   **针对所有文件类型的本机支持**
 
@@ -148,7 +149,7 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
     **解决方案**：如果要对不同的体系结构使用 Ipcsecproc\*isv.dll（例如，你已经在 64 位计算机上安装了 64 位 SDK，但现在想要在需要 Ipcsecproc\*isv.dll 的 32 位计算机上部署），则你必须安装在其他计算机上安装 32 位 SDK，然后将 Ipcsecproc\*isv.dll 文件从“%PROGRAMFILES%\\Microsoft Information Protection And Control”文件夹（默认位置，或者你选择安装 SDK 的任何位置）复制到该计算机上。
 
-## 常见问题
+## <a name="frequently-asked-questions"></a>常见问题
 
 **Q**：默认语言行为如何使用包含 LCID 参数的功能？
 
@@ -167,6 +168,6 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

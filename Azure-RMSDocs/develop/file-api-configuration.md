@@ -3,6 +3,7 @@ title: "文件 API 配置 |Azure RMS"
 description: "可通过注册表中的设置来配置文件 API 的行为。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 734ff9735adbf5aac5824b5c823a1fdcaf245d4e
-ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
+ms.sourcegitcommit: 329dce4c8bb5a6de3ecb7bbd7e734b4acbf339c9
+ms.openlocfilehash: 913373504e34321556a1cdd34ea2744d8477f562
 
 
 ---
 
-# 文件 API 配置
+# <a name="file-api-configuration"></a>文件 API 配置
 
 
 可通过注册表中的设置来配置文件 API 的行为。
@@ -32,17 +33,17 @@ ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 
 有关受支持的文件格式的详细信息，请参阅本主题中的**文件 API 文件支持详细信息**。
 
-## 密钥/密钥值类型和描述
+## <a name="keykey-value-types-and-descriptions"></a>密钥/密钥值类型和描述
 
 以下各节描述了控制加密的密钥和密钥值。
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
+### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection`
 
 **类型**：密钥
 
 **描述**：包含文件 API 的常规配置。
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
+### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>`
 
 **类型**：密钥
 
@@ -55,7 +56,7 @@ ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 在密钥中设置 **Encryption** 值来指定保护行为。 如果未设置 **Encryption** 值，则会观察到该文件类型的默认行为。
 
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
+### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>\Encryption*`
 
 **类型**：REG_SZ
 
@@ -76,7 +77,7 @@ ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 
 设置任何其他值或不设置任何值将导致默认行为。
 
-## 不同文件格式的默认行为
+## <a name="default-behavior-for-different-file-formats"></a>不同文件格式的默认行为
 
 -   **Office 文件** 启用了本机加密。
 -   **txt、xml、jpg、jpeg、pdf、png、tiff、bmp、gif、giff、jpe、jfif、jif 文件** 启用了本机加密（xxx 变成 pxxx）
@@ -84,7 +85,7 @@ ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 
 如果对阻止的文件类型尝试加密，则会出现 [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx) 错误。
 
-### 文件 API - 文件支持详细信息
+### <a name="file-api-file-support-details"></a>文件 API - 文件支持详细信息
 
 可以为任何文件类型（扩展名）添加本机支持。 例如，对于任何扩展 &lt;ext&gt;（非 office），如果该扩展的管理配置是“NATIVE”，则将使用 \*.p&lt;ext&gt;。
 
@@ -106,7 +107,7 @@ ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 -   保护类型 = Pfile：sample.*zzz* 被加密，并命名为 sample.*zzz*.pfile；其中 *zzz* 是原始文件扩展名。
 -   Off：禁用加密。
 
-### 示例
+### <a name="examples"></a>示例
 
 以下设置为 txt 文件启用了 PFile 加密。 Office 文件将应用本机保护（默认），txt 文件将应用 PFile 保护，所有其他文件都将阻止保护（默认）。
 
@@ -146,7 +147,7 @@ HKEY_LOCAL_MACHINE
                   Encryption = Off
 ```
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 - [开发人员说明](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
@@ -156,6 +157,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

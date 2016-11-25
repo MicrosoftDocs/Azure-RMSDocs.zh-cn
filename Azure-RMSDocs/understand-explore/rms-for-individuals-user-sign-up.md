@@ -2,6 +2,7 @@
 title: "用户如何注册个人 RMS | Azure 信息保护"
 description: "此免费帐户的注册说明以及此过程工作原理的技术信息。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/25/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8306d70937aeaf665617d84b4e7ad2c8944e3c79
-ms.openlocfilehash: e3fc6390b3a5b1b6a7b321999a94d4c2226e93ad
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 
 
 ---
 
-# 用户如何注册个人 RMS
+# <a name="how-users-sign-up-for-rms-for-individuals"></a>用户如何注册个人 RMS
 
 >*适用于：Azure 信息保护*
 
 若要注册这种免费帐户，可以通过访问 [Microsoft Azure 信息保护页](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)发出请求，并提供工作电子邮件地址。 将你导向此注册页面的最常见方式是接收带有受保护附件的电子邮件，这包含有关如何注册的说明。 你将收到 Microsoft 的回应电子邮件，然后完成注册过程，方法是输入详细信息来创建帐户。 完成后，将出现可在其中下载适用于不同设备的共享应用程序的页面、用户指南链接和本身就支持 Rights Management 保护的应用程序当前列表链接。 
 
-## 注册个人 RMS
+## <a name="to-sign-up-for-rms-for-individuals"></a>注册个人 RMS
 
 1.  使用 Windows 或 Mac 计算机或移动设备，访问 [Microsoft Azure 信息保护页](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)。
 
@@ -47,7 +48,7 @@ ms.openlocfilehash: e3fc6390b3a5b1b6a7b321999a94d4c2226e93ad
 
 现在你的帐户已经创建，你可以随时开始保护文件并读取其他人保护的文件。 若提示登录以便保护文件或读取受保护文件，请输入你用于创建个人 RMS 帐户的电子邮件地址和密码。
 
-## 注册过程的技术概述
+## <a name="technical-overview-of-the-signup-process"></a>注册过程的技术概述
 个人 RMS 使用自助注册过程，该过程也可由其他使用 Microsoft 基于云的技术对用户进行身份验证的服务使用。
 
 以下是用户注册个人 RMS 但其组织没有 Office 365 订阅或 Azure 订阅，因此 Azure 中没有目录可对用户进行身份验证时后台发生的情况：
@@ -90,13 +91,13 @@ ms.openlocfilehash: e3fc6390b3a5b1b6a7b321999a94d4c2226e93ad
     -   实现“自带密钥”解决方案 (BYOK)，以便能够根据 IT 策略，在本地生成 Azure 权限管理的租户密钥，并使用硬件安全模块 (HSM) 将该密钥安全传输到 Microsoft。 有关详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)。
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 请参阅[管理员如何才能控制为个人 RMS 创建的帐户](rms-for-individuals-take-control.md)。
 
 
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

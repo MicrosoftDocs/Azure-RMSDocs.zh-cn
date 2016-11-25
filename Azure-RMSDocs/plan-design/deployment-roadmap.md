@@ -2,8 +2,9 @@
 title: "Azure 信息保护部署路线图 | Azure 信息保护"
 description: "使用这些步骤，为组织准备、实施和管理 Azure 信息保护。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +13,13 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
-ms.openlocfilehash: ff205efebf9b02ed0bfb1c7e275d34981870c26a
+ms.sourcegitcommit: 1551b5dc3c5c9740721e3de01d086185966b6016
+ms.openlocfilehash: ce1ed30122b3bff5b045dfbec65c257d348f0122
 
 
 ---
 
-# Azure 信息保护部署路线图
+# <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -36,20 +37,23 @@ ms.openlocfilehash: ff205efebf9b02ed0bfb1c7e275d34981870c26a
 - [仅使用数据保护](#deployment-roadmap-for-data-protection-only)
 
 
-## 用于分类、标记和保护的部署路线图
+## <a name="deployment-roadmap-for-classification-labeling-and-protection"></a>用于分类、标记和保护的部署路线图
 
 > [!NOTE]
 > 已使用 Azure Rights Management 服务进行数据保护？ 可以跳过这些步骤中的许多步骤，重点关注步骤 3 和步骤 5 1。
 
-### 步骤 1：确认订阅，分配用户许可证
+### <a name="step-1-confirm-your-subscription-and-assign-user-licenses"></a>步骤 1：确认订阅，分配用户许可证
 查看 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)，以确认组织具有包含所需功能和特性的订阅。 然后，将该订阅中的许可证分配给组织中的每位用户，这些用户将对文档和电子邮件进行分类、标记和保护。
 
-### 步骤 2：准备租户帐户以使用 Azure 信息保护
+注意：不要从个人订阅的免费 RMS 手动分配用户许可证，不要使用此许可证来管理组织的 Azure Rights Management 服务。 这些许可证在 Office 365 管理中心显示为 **Rights Management 即席**，当运行 Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx) 时显示为 **RIGHTSMANAGEMENT_ADHOC**。 有关如何将个人订阅 RMS 自动授权和分配给用户的详细信息，请参阅[个人 RMS 和 Azure 信息保护](../understand-explore/rms-for-individuals.md)。
+
+
+### <a name="step-2-prepare-your-tenant-account-to-use-azure-information-protection"></a>步骤 2：准备租户帐户以使用 Azure 信息保护
 开始使用 Azure 信息保护之前，请执行以下准备工作：
 
 - 请确保在 Office 365 或 Azure Active Directory 中拥有用户帐户和组，Azure 信息保护使用这些帐户和组对组织的用户进行身份验证。 如有必要，请创建这些帐户和组，或者从本地目录同步这些帐户和组。 有关详细信息，请参阅[准备 Azure 信息保护](prepare.md)。
 
-### 步骤 3：配置、部署分类和标记
+### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>步骤 3：配置、部署分类和标记
 
 如果还没有分类策略，请查看[默认的 Azure 信息保护策略](../deploy-use/configure-policy-default.md)并将此作为基础，确定要将哪些分类标签分配给组织数据。 可以自定义这些标签以满足业务需求。 
 
@@ -71,7 +75,7 @@ ms.openlocfilehash: ff205efebf9b02ed0bfb1c7e275d34981870c26a
 
 在此阶段，不要选择保护文档和电子邮件的选项。
 
-### 步骤 4：准备 Rights Management 数据保护
+### <a name="step-4-prepare-for-rights-management-data-protection"></a>步骤 4：准备 Rights Management 数据保护
 
 当用户熟悉对文档和电子邮件添加标签后，就可以开始为最敏感的数据引入数据保护。 此阶段需要为 Azure Rights Management 服务准备以下工作：
 
@@ -89,7 +93,7 @@ ms.openlocfilehash: ff205efebf9b02ed0bfb1c7e275d34981870c26a
 
 -   使用日志记录，以便你能够监控你组织使用权限管理的情况。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
 
-### 步骤 5：配置 Azure 信息保护策略、Rights Management 数据保护的应用程序和服务
+### <a name="step-5-configure-your-azure-information-protection-policy-applications-and-services-for-rights-management-data-protection"></a>步骤 5：配置 Azure 信息保护策略、Rights Management 数据保护的应用程序和服务
 
 1. 更新 Azure 信息保护策略以应用数据保护
     
@@ -115,21 +119,24 @@ ms.openlocfilehash: ff205efebf9b02ed0bfb1c7e275d34981870c26a
     
     如果你拥有想要与 Azure Rights Management 服务共同使用的本地服务，请安装和配置 Rights Management 连接器。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。
 
-### 步骤 4：使用和监视数据保护解决方案
+### <a name="step-4-use-and-monitor-your-data-protection-solutions"></a>步骤 4：使用和监视数据保护解决方案
 现在，你可以保护数据，并记录公司如何使用 Rights Management。 有关支持此部署阶段的其他信息，请参阅[通过使用 Azure 权限管理服务帮助用户保护文件](../deploy-use/help-users.md)和[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
 
 如果你对在基于 Windows 的文件服务器上使用文件分类基础结构自动保护文件感兴趣，请参阅[使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护](../rms-client/configure-fci.md)。
 
-### 步骤 5：根据需要管理租户帐户的 Rights Management 服务
+### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>步骤 5：根据需要管理租户帐户的 Rights Management 服务
 开始使用 Azure Rights Management 服务时，可能发现 Windows PowerShell 对帮助编写脚本或自动执行管理更改很有用。 有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](../deploy-use/administer-powershell.md)。
 
 
-## 仅用于数据保护的部署路线图
+## <a name="deployment-roadmap-for-data-protection-only"></a>仅用于数据保护的部署路线图
 
-### 步骤 1：确认你有一个包含 Azure Rights Management 的订阅
+### <a name="step-1-confirm-that-you-have-a-subscription-that-includes-azure-rights-management"></a>步骤 1：确认你有一个包含 Azure Rights Management 的订阅
 查看 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)，以确认组织具有包含所需功能和特性的订阅。 然后，将该订阅中的许可证分配给组织中的每位用户，这些用户通过使用 Azure Rights Management 服务，保护文档和电子邮件。
 
-### 步骤 2：准备租户帐户以便使用 Azure Rights Management 服务
+注意：不要从个人订阅的免费 RMS 手动分配用户许可证，不要使用此许可证来管理组织的 Azure Rights Management 服务。 这些许可证在 Office 365 管理中心显示为 **Rights Management 即席**，当运行 Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx) 时显示为 **RIGHTSMANAGEMENT_ADHOC**。 有关如何将个人订阅 RMS 自动授权和分配给用户的详细信息，请参阅[个人 RMS 和 Azure 信息保护](../understand-explore/rms-for-individuals.md)。
+
+
+### <a name="step-2-prepare-your-tenant-account-to-use-the-azure-rights-management-service"></a>步骤 2：准备租户帐户以便使用 Azure Rights Management 服务
 开始使用[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]之前，请进行以下准备工作：
 
 1.  确保 Office 365 租户包含 Azure 信息保护用来对组织中的用户进行身份验证的用户帐户和组。 如有必要，请创建这些帐户和组，或者从本地目录同步这些帐户和组。 有关详细信息，请参阅[准备 Azure Rights Management](prepare.md)。
@@ -148,7 +155,7 @@ ms.openlocfilehash: ff205efebf9b02ed0bfb1c7e275d34981870c26a
 
 -   使用日志记录，以便你能够监控你组织使用权限管理的情况。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
 
-### 步骤 3：配置要运行 Rights Management 的应用程序和服务
+### <a name="step-3-configure-your-applications-and-services-for-rights-management"></a>步骤 3：配置要运行 Rights Management 的应用程序和服务
 
 1. 部署 Rights Management 共享应用程序
     
@@ -171,18 +178,18 @@ ms.openlocfilehash: ff205efebf9b02ed0bfb1c7e275d34981870c26a
     如果你拥有想要与 Azure Rights Management 服务共同使用的本地服务，请安装和配置 Rights Management 连接器。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。
 
 
-### 步骤 4：使用和监视数据保护解决方案
+### <a name="step-4-use-and-monitor-your-data-protection-solutions"></a>步骤 4：使用和监视数据保护解决方案
 现在，你可以保护数据，并记录公司如何使用 Rights Management。 有关支持此部署阶段的其他信息，请参阅[通过使用 Azure 权限管理服务帮助用户保护文件](../deploy-use/help-users.md)和[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
 
 如果你对在基于 Windows 的文件服务器上使用文件分类基础结构自动保护文件感兴趣，请参阅[使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护](../rms-client/configure-fci.md)。
 
-### 步骤 5：根据需要管理租户帐户的 Rights Management 服务
+### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>步骤 5：根据需要管理租户帐户的 Rights Management 服务
 开始使用 Azure Rights Management 服务时，可能发现 Windows PowerShell 对帮助编写脚本或自动执行管理更改很有用。 有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](../deploy-use/administer-powershell.md)。
 
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

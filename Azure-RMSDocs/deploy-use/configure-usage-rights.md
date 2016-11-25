@@ -2,6 +2,7 @@
 title: "为 Azure 权限管理配置使用权限 | Azure 信息保护"
 description: "了解和确定在使用 Azure 信息保护中的 Azure 权限管理服务保护文件或电子邮件时使用的特定权限。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 0b160fff849b9f8bda71fd6ccf07d8fb07487b13
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 16dbee4b90f7c1e5b5c64c751d0c38e6cbccc036
 
 
 ---
 
-# 为 Azure Rights Management 配置使用权限
+# <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -26,28 +27,28 @@ ms.openlocfilehash: 0b160fff849b9f8bda71fd6ccf07d8fb07487b13
 
 使用本文章可帮助为当前使用的应用程序配置所需的使用权限，并了解应用程序如何解释这些权限。
 
-## 使用权限和说明
+## <a name="usage-rights-and-descriptions"></a>使用权限和说明
 下表列出并说明了 Rights Management 支持的使用权限，以及它们的使用和解释方式。 它们按**公用名**列出，公用名通常是你看待使用权限作为在代码中使用的单字值（**策略中的编码**值）的更友好版本进行显示或引用的方式。 **API 常量或值**是 MSIPC API 调用的 SDK 名称，在你编写检查使用权限的启用 RMS 的应用程序，或向策略添加使用权限时使用。
 
 
 |Right|说明|实现|
 |-------------------------------|---------------------------|-----------------|
 |公用名：**编辑内容，编辑** <br /><br />策略中的编码：**DOCEDIT**|允许用户对应用程序中的内容进行修改、重新排列、设置格式或筛选。 它不会授权保存编辑过的副本。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**编辑内容**<br /><br />AD RMS 模板中的名称：**编辑** <br /><br />API 常量或值：不适用。|
-|公用名：**保存** <br /><br />策略中的编码：**EDIT**|允许用户将文档保存到当前位置。<br /><br />在 Office 应用程序中，此权限还允许用户修改文档。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**保存文件**<br /><br />AD RMS 模板中的名称：**保存** <br /><br />API 常量或值： `IPC_GENERIC_WRITE L"EDIT"`|
-|公用名：**注释** <br /><br />策略中的编码：**COMMENT**|启用向内容添加批注或注释的选项。<br /><br />此权限可用于 SDK、在适用于 Windows PowerShell 的 RMS 保护模块中作为即席策略提供，并且已在一些软件供应商应用程序中实现。 但是，它尚未广泛使用，并且当前也不受 Office 应用程序支持。|Office 自定义权限：未实现。 <br /><br />Azure 经典门户中的名称：未实现。<br /><br />AD RMS 模板中的名称：未实现。 <br /><br />API 常量或值： `IPC_GENERIC_COMMENT L"COMMENT`|
-|公用名：**另存为，导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 对于 Office 文档，可在无保护的情况下保存文件。<br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote” 。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**导出内容(另存为)**<br /><br />AD RMS 模板中的名称：**导出(另存为)** <br /><br />API 常量或值： `IPC_GENERIC_EXPORT L"EXPORT"`|
-|公用名：**转发** <br /><br />策略中的编码：**FORWARD**|启用此选项以转发电子邮件，并将收件人添加到“收件人”  和“抄送”  行。 此权限不适用于文档；仅适用于电子邮件。<br /><br />不允许转发器授予其他用户权限作为转发操作的一部分。|Office 自定义权限：使用“不要转发”标准策略时拒绝。<br /><br />Azure 经典门户中的名称：**转发**<br /><br />AD RMS 模板中的名称：**转发** <br /><br />API 常量或值： `IPC_EMAIL_FORWARD L"FORWARD"`|
-|公用名：**完全控制** <br /><br />策略中的编码：**OWNER**|授予对文档的所有权限，并且所有可用操作都可以执行。<br /><br />包括删除保护和重新保护文档的功能。|Office 自定义权限：作为“完全控制”自定义选项。<br /><br />Azure 经典门户中的名称：**完全控制**<br /><br />AD RMS 模板中的名称：**完全控制** <br /><br />API 常量或值： `IPC_GENERIC_ALL L"OWNER"`|
-|公用名：**打印** <br /><br />策略中的编码：**PRINT**|启用打印内容的选项。|Office 自定义权限：作为自定义权限中的“打印内容”选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**打印**<br /><br />AD RMS 模板中的名称：**打印** <br /><br />API 常量或值： `IPC_GENERIC_PRINT L"PRINT"`|
-|公用名：**答复** <br /><br />策略中的编码：**REPLY**|启用邮件客户端中的“答复”选项，但不允许更改“收件人”或“抄送”行。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**答复**<br /><br />AD RMS 模板中的名称：**答复** <br /><br />API 常量或值： `IPC_EMAIL_REPLY`|
-|公用名：**全部答复** <br /><br />策略中的编码：**REPLYALL**|启用邮件客户端中的“全部答复”  选项，但不允许用户将收件人添加到“收件人”  或“抄送”  行。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**全部答复**<br /><br />AD RMS 模板中的名称：**全部答复** <br /><br />API 常量或值： `IPC_EMAIL_REPLYALL L"REPLYALL"`|
-|公用名：**查看，打开，读取** <br /><br />策略中的编码：**VIEW**|允许用户打开文档，并查看内容。|Office 自定义权限：作为“读取”自定义策略的“查看”选项。<br /><br />Azure 经典门户中的名称：**查看**<br /><br />AD RMS 模板中的名称：**全部答复** <br /><br />API 常量或值： `IPC_GENERIC_READ L"VIEW"`|
-|公用名：**复制** <br /><br />策略中的编码：**EXTRACT**|启用将数据（包括屏幕捕获）从文档复制到同一文档或其他文档的选项。<br /><br />在某些应用程序中，它还允许以不受保护的形式保存整个文档。|Office 自定义权限：作为“允许具有读取权限的用户复制内容”自定义策略选项。<br /><br />Azure 经典门户中的名称：**复制并提取内容**<br /><br />AD RMS 模板中的名称：**提取** <br /><br />API 常量或值： `IPC_GENERIC_EXTRACT L"EXTRACT"`|
+|公用名：**保存** <br /><br />策略中的编码：**EDIT**|允许用户将文档保存到当前位置。<br /><br />在 Office 应用程序中，此权限还允许用户修改文档。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**保存文件**<br /><br />AD RMS 模板中的名称：**保存** <br /><br />API 常量或值：`IPC_GENERIC_WRITE L"EDIT"`|
+|公用名：**注释** <br /><br />策略中的编码：**COMMENT**|启用向内容添加批注或注释的选项。<br /><br />此权限可用于 SDK、在适用于 Windows PowerShell 的 RMS 保护模块中作为即席策略提供，并且已在一些软件供应商应用程序中实现。 但是，它尚未广泛使用，并且当前也不受 Office 应用程序支持。|Office 自定义权限：未实现。 <br /><br />Azure 经典门户中的名称：未实现。<br /><br />AD RMS 模板中的名称：未实现。 <br /><br />API 常量或值：`IPC_GENERIC_COMMENT L"COMMENT`|
+|公用名：**另存为，导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 对于 Office 文档，可在无保护的情况下保存文件。<br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote” 。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**导出内容(另存为)**<br /><br />AD RMS 模板中的名称：**导出(另存为)** <br /><br />API 常量或值：`IPC_GENERIC_EXPORT L"EXPORT"`|
+|公用名：**转发** <br /><br />策略中的编码：**FORWARD**|启用此选项以转发电子邮件，并将收件人添加到“收件人”  和“抄送”  行。 此权限不适用于文档；仅适用于电子邮件。<br /><br />不允许转发器授予其他用户权限作为转发操作的一部分。|Office 自定义权限：使用“不要转发”标准策略时拒绝。<br /><br />Azure 经典门户中的名称：**转发**<br /><br />AD RMS 模板中的名称：**转发** <br /><br />API 常量或值：`IPC_EMAIL_FORWARD L"FORWARD"`|
+|公用名：**完全控制** <br /><br />策略中的编码：**OWNER**|授予对文档的所有权限，并且所有可用操作都可以执行。<br /><br />包括删除保护和重新保护文档的功能。|Office 自定义权限：作为“完全控制”自定义选项。<br /><br />Azure 经典门户中的名称：**完全控制**<br /><br />AD RMS 模板中的名称：**完全控制** <br /><br />API 常量或值：`IPC_GENERIC_ALL L"OWNER"`|
+|公用名：**打印** <br /><br />策略中的编码：**PRINT**|启用打印内容的选项。|Office 自定义权限：作为自定义权限中的“打印内容”选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**打印**<br /><br />AD RMS 模板中的名称：**打印** <br /><br />API 常量或值：`IPC_GENERIC_PRINT L"PRINT"`|
+|公用名：**答复** <br /><br />策略中的编码：**REPLY**|启用邮件客户端中的“答复”选项，但不允许更改“收件人”或“抄送”行。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**答复**<br /><br />AD RMS 模板中的名称：**答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLY`|
+|公用名：**全部答复** <br /><br />策略中的编码：**REPLYALL**|启用邮件客户端中的“全部答复”  选项，但不允许用户将收件人添加到“收件人”  或“抄送”  行。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**全部答复**<br /><br />AD RMS 模板中的名称：**全部答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLYALL L"REPLYALL"`|
+|公用名：**查看，打开，读取** <br /><br />策略中的编码：**VIEW**|允许用户打开文档，并查看内容。|Office 自定义权限：作为“读取”自定义策略的“查看”选项。<br /><br />Azure 经典门户中的名称：**查看**<br /><br />AD RMS 模板中的名称：**全部答复** <br /><br />API 常量或值：`IPC_GENERIC_READ L"VIEW"`|
+|公用名：**复制** <br /><br />策略中的编码：**EXTRACT**|启用将数据（包括屏幕捕获）从文档复制到同一文档或其他文档的选项。<br /><br />在某些应用程序中，它还允许以不受保护的形式保存整个文档。|Office 自定义权限：作为“允许具有读取权限的用户复制内容”自定义策略选项。<br /><br />Azure 经典门户中的名称：**复制并提取内容**<br /><br />AD RMS 模板中的名称：**提取** <br /><br />API 常量或值：`IPC_GENERIC_EXTRACT L"EXTRACT"`|
 |公用名：**允许宏** <br /><br />策略中的编码：**OBJMODEL**|启用运行宏或执行其他编程或远程访问文档内容的选项。|Office 自定义权限：作为“允许编程访问”自定义策略选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**允许宏**<br /><br />AD RMS 模板中的名称：**允许宏** <br /><br />API 常量或值：未实现。|
 
 
 
-## 权限级别中包括的权限
+## <a name="rights-included-in-permissions-levels"></a>权限级别中包括的权限
 
 某些应用程序会将使用权限组合成不同的权限级别，这样可以更容易地选择那些通常在一起使用的使用权限。 这些权限级别可帮助减少用户操作的复杂性，用户只需按角色选择相应选项即可。  例如，**审阅者**和**合著者**。 虽然这些选项通常会向用户显示这些权限的摘要，但可能并不包括前一表中列出的每个权限。
 
@@ -62,18 +63,18 @@ ms.openlocfilehash: 0b160fff849b9f8bda71fd6ccf07d8fb07487b13
 
 ----
 
-###### 脚注 1
+###### <a name="footnote-1"></a>脚注 1
 不适用于 Windows 版 Rights Management 共享应用程序。
 
-## 默认模板中包括的权限
+## <a name="rights-included-in-the-default-templates"></a>默认模板中包括的权限
 默认模板中包括的权限如下：
 
 |显示名称|包括的权限（通用名称）|
 |----------------|---------------------------------|
-|&lt;*组织名称*&gt;*- 机密，仅供查阅*|查看、打开、读取|
-|&lt;*组织名称*&gt;*- 机密*|查看、打开、读取；保存；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
+|&lt;组织名称&gt; - 机密信息，仅供查阅|查看、打开、读取|
+|&lt;组织名称&gt; - 机密信息|查看、打开、读取；保存；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
 
-## 电子邮件的“不得转发”选项
+## <a name="do-not-forward-option-for-emails"></a>电子邮件的“不得转发”选项
 
 Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应用和 Exchange 传输规则）有一个附加的电子邮件信息权限保护选项：**不得转发**。 
 
@@ -95,12 +96,12 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 
 
-## 另请参阅
-[为 Azure 权限管理服务配置自定义模板](configure-custom-templates.md)
+## <a name="see-also"></a>另請參閱
+[为 Azure Rights Management 服务配置自定义模板](configure-custom-templates.md)
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

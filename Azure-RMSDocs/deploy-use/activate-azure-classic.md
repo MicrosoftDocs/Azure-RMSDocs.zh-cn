@@ -2,6 +2,7 @@
 title: "如何从 Azure 经典门户激活 Azure Rights Management | Azure 信息保护"
 description: "有关具有 Azure 门户访问权限时 Azure Rights Management 服务的激活说明。 例如，你有企业移动性套件订阅或 Azure 信息保护高级版订阅。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 565f2479fe1d41aa051dd64752413eb72d644535
-ms.openlocfilehash: 74aac58a7b523f98ef627831830577d4fde7d5af
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: fe806c1c2b3f3284b905602a3a10deb79d91425e
 
 
 ---
 
-# 如何从 Azure 经典门户激活 Azure Rights Management
+# <a name="how-to-activate-azure-rights-management-from-the-azure-classic-portal"></a>如何从 Azure 经典门户激活 Azure Rights Management
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 
 如果你有权访问 Azure 门户，请使用这些说明。 例如，你有企业移动性套件订阅或 Azure 信息保护高级版订阅。
@@ -44,20 +45,20 @@ ms.openlocfilehash: 74aac58a7b523f98ef627831830577d4fde7d5af
 
 **“权限管理状态”** 现在应该显示 **“活动”** ，而 **“激活”** 选项将替换为 **“停用”**。
 
-## Azure 经典门户中的 Rights Management 状态值和说明
+## <a name="rights-management-status-values-and-descriptions-in-the-azure-classic-portal"></a>Azure 经典门户中的 Rights Management 状态值和说明
 除了 **“活动”** 状态（该状态指示权限管理服务已启用并可供使用）外，你可能还会看到 **“非活动”**、**“不可用”** 或 **“未授权”**。
 
 |状态值|说明|
 |----------------|---------------|
-|**“活动”**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 已启用并可供使用。|
-|**非活动**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 已禁用，必须先将其激活，然后组织才能保护文件。|
-|**Unavailable**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]服务已关闭。 请稍后重试。|
+|**活动**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]已启用并可供使用。|
+|**非活动**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]已禁用，必须先将其激活，然后组织才能保护文件。|
+|**不可用**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]服务已关闭。 请稍后重试。|
 |**未授权**|你无权查看[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]服务的状态。 例如，你的帐户已被锁定，或者你不是所选租户的全局管理员。|
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 返回 [激活 Azure Rights Management](activate-service.md)。
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: "方案 - 发送公司机密电子邮件 | Azure 信息保护"
 description: "此方案和支持性的用户文档使用 Azure Rights Management 保护，以便组织中的任何用户可安全发送组织外无法查阅的电子邮件通信。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/10/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3b5f82e495291bd48d488f44bc72c1d478a879e0
-ms.openlocfilehash: 6ad18ba1035438af88f814689884f9873d75eea0
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
 
 
 ---
 
-# 方案 - 发送公司机密电子邮件
+# <a name="scenario-send-a-companyconfidential-email"></a>方案 - 发送公司机密电子邮件
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -39,24 +40,24 @@ ms.openlocfilehash: 6ad18ba1035438af88f814689884f9873d75eea0
 
 -   用户必须从其电子邮件客户端内手动选择模板。
 
-## 部署说明
+## <a name="deployment-instructions"></a>部署说明
 ![Azure RMS 快速部署的管理员指令](../media/AzRMS_AdminBanner.png)
 
 在进入用户文档前，请确保已满足以下要求。
 
-## 本方案的要求
+## <a name="requirements-for-this-scenario"></a>本方案的要求
 要让针对此方案的说明生效，必须做好以下准备：
 
 |要求|需要更多信息|
 |---------------|--------------------------------|
 |已准备好 Office 365 或 Azure Active Directory 的帐户和组|[准备 Azure 信息保护](../plan-design/prepare.md)|
 |Azure 信息保护租户密钥由 Microsoft 管理；没有使用 BYOK|[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)|
-|已激活 Azure Rights Management|[激活 Azure 权限管理](../deploy-use/activate-service.md)|
+|已激活 Azure Rights Management|[激活 Azure Rights Management](../deploy-use/activate-service.md)|
 |下列情况之一：<br /><br />- 已为 Azure Rights Management 启用了 Exchange Online<br /><br />- 已为 Exchange 内部部署安装和配置了 RMS 连接器|对于 Exchange Online，请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)中的 **Exchange Online：IRM 配置**部分。<br /><br />对于 Exchange 内部部署：请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)|
 |你未存档默认 Azure Rights Management 模板**&lt;组织&gt; - 机密**。 或者，你已为此配置了自定义模板，因为你需要更严格的设置或者仅组织中的用户子集应能够查阅受保护的电子邮件。|[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)<br /><br />提示：如果你需要更严格的使用策略设置，但对于组织中的所有用户，复制、然后编辑的是一个默认模板，而不是从头创建一个模板。<br /><br />对于此方案中的电子邮件客户端，已更新的模板不会立即刷新。 有关信息，请查看[为用户刷新模板](../deploy-use/refresh-templates.md)一文。|
 |发送受保护电子邮件的用户具有 Outlook 2013 或 Outlook 2016 或 Outlook Web Access。<br /><br />收到电子邮件的用户具有支持 Azure Rights Management 的电子邮件客户端。|你可使用 Outlook 2010，但必须[安装适用于 Windows 的 Rights Management 共享应用程序](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)，并相应地调整用户说明。<br /><br />有关支持 Azure Rights Management 的电子邮件客户端列表，请参阅[支持 Azure Rights Management 数据保护的应用程序](../get-started/requirements-applications.md)中的表中的“电子邮件”列。|
 
-## 用户文档说明
+## <a name="user-documentation-instructions"></a>用户文档说明
 使用以下模板，将此用户说明复制并粘贴到最终用户的通信中，并进行这些修改以反映你的环境：
 
 1.  将*&lt;组织名称&gt;*所有实例替换为你的组织的名称。
@@ -91,7 +92,7 @@ ms.openlocfilehash: 6ad18ba1035438af88f814689884f9873d75eea0
 
 ![Azure RMS 快速部署的用户文档模板](../media/AzRMS_UsersBanner.png)
 
-### 如何使用 Outlook 发送包含公司机密信息的电子邮件
+### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook"></a>如何使用 Outlook 发送包含公司机密信息的电子邮件
 
 1.  在 Outlook 中，创建新电子邮件，添加要包含的任何附件，然后从*&lt;组织名称&gt;*选择用户或组。
 
@@ -101,7 +102,7 @@ ms.openlocfilehash: 6ad18ba1035438af88f814689884f9873d75eea0
 
 3.  发送电子邮件。
 
-### 如何使用 Outlook Web App 发送包含公司机密信息的电子邮件
+### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook-web-app"></a>如何使用 Outlook Web App 发送包含公司机密信息的电子邮件
 
 1.  在 Outlook Web App 中，创建新电子邮件，添加要包含的任何附件，然后从通讯簿选择*&lt;组织名称&gt;*用户或组。
 
@@ -115,16 +116,16 @@ ms.openlocfilehash: 6ad18ba1035438af88f814689884f9873d75eea0
 
 电子邮件收件人可将此电子邮件转发给其他人，但仅*&lt;组织名称&gt;*中的用户可查阅此电子邮件。 如果附加一个 Office 文档，它将具有相同的保护，即使将该附件保存为其他名称，保存在其他位置，也是如此。 但是，身份验证成功的用户可以从电子邮件或附件复制和粘贴或从其打印。 如果你需要可防止这类操作的更加严格的保护，请与技术支持人员联系。
 
-**需要帮助吗?**
+**需要帮助吗？**
 
 -   与技术支持联系：
 
-    -   *&lt;联系人详细信息&gt;*
+    -   &lt;联系人详细信息&gt;
 
-### 自定义用户文档示例
+### <a name="example-customized-user-documentation"></a>自定义用户文档示例
 ![Azure RMS 快速部署的用户文档示例](../media/AzRMS_ExampleBanner.png)
 
-#### 如何使用 Outlook 发送包含公司机密信息的电子邮件
+#### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook"></a>如何使用 Outlook 发送包含公司机密信息的电子邮件
 
 1.  在 Outlook 中，新建电子邮件，添加要包含的任何附件，然后从通讯簿选择 VanArsdel 用户或组。
 
@@ -134,7 +135,7 @@ ms.openlocfilehash: 6ad18ba1035438af88f814689884f9873d75eea0
 
 3.  发送电子邮件。
 
-#### 如何使用 Outlook Web App 发送包含公司机密信息的电子邮件
+#### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook-web-app"></a>如何使用 Outlook Web App 发送包含公司机密信息的电子邮件
 
 1.  在 Outlook Web App 中，新建电子邮件，添加要包含的任何附件，然后从通讯簿选择 VanArsdel 用户或组。
 
@@ -148,7 +149,7 @@ ms.openlocfilehash: 6ad18ba1035438af88f814689884f9873d75eea0
 
 电子邮件收件人可将此电子邮件转发给其他人，但仅 VanArsdel, Ltd 中的用户可查阅此电子邮件。 如果附加一个 Office 文档，它将具有相同的保护，即使将该附件保存为其他名称，保存在其他位置，也是如此。 但是，身份验证成功的用户可以从电子邮件或附件复制和粘贴或从其打印。 如果你需要可防止这类操作的更加严格的保护，请与技术支持人员联系。
 
-**需要帮助吗?**
+**需要帮助吗？**
 
 -   与技术支持联系：
 
@@ -157,6 +158,6 @@ ms.openlocfilehash: 6ad18ba1035438af88f814689884f9873d75eea0
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

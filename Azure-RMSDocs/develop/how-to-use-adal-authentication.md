@@ -3,6 +3,7 @@ title: "适用于启用了 RMS 的应用程序的 ADAL 身份验证 | Azure RMS"
 description: "使用 ADAL 进行身份验证的过程概述"
 keywords: "身份验证、RMS、ADAL"
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 3ed49cf7dddb72783ecd3bf1e89454d805552743
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 25b9f1c7ee6ad2eb1d642a72713e0dd24703c2bc
 
 
 ---
 
-# 操作说明：使用 ADAL 身份验证
+# <a name="howto-use-adal-authentication"></a>操作说明：使用 ADAL 身份验证
 
 使用 Azure Active Directory 身份验证库 (ADAL) 为应用向 Azure RMS 进行身份验证。
 
@@ -30,7 +31,7 @@ ms.openlocfilehash: 3ed49cf7dddb72783ecd3bf1e89454d805552743
 - 安装 RMS 2.1 Client，而无需对计算机的管理特权
 - 验证适用于 Windows 10 的应用程序
 
-## 进行身份验证的两种方法
+## <a name="two-approaches-to-authentication"></a>进行身份验证的两种方法
 
 本主题包含使用相应的代码示例进行身份验证的两种方法。
 
@@ -38,22 +39,22 @@ ms.openlocfilehash: 3ed49cf7dddb72783ecd3bf1e89454d805552743
 
   如果你希望 RMS 客户端在需要身份验证时显示 ADAL 身份验证提示时，请使用此方法。 有关如何配置应用程序的详细信息，请参阅“内部身份验证”一节。
 
-  > [!Note] 
+  > [!Note]
   > 如果你的应用程序当前将 AD RMS SDK 2.1 用于登录助手，建议使用内部身份验证方法作为应用程序迁移路径。
 
 - **外部身份验证** - 由应用程序管理的 OAuth 身份验证。
 
   如果希望应用程序管理其自己的 OAuth 身份验证，请使用此方法。 使用此方法，RMS 客户端将在需要进行身份验证时执行应用程序定义的回调。 有关详细示例，请参阅本主题末尾的“外部身份验证”。
 
-  > [!Note] 
+  > [!Note]
   > 外部身份验证并不意味着能够更改用户；RMS 客户端对于给定 RMS 租户始终使用默认用户。
 
-## 内部身份验证
+## <a name="internal-authentication"></a>内部身份验证
 
 1. 按照[为 ADAL 身份验证配置 Azure RMS](adal-auth.md) 中的 Azure 配置步骤操作，然后返回到以下应用初始化步骤。
 2. 现在即可将应用程序配置为使用由 RMS SDK 2.1 提供的内部 ADAL 身份验证。
 
-若要配置 RMS 客户端，调用 [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 后立即添加对 [IpcSetGlobalProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 的调用以配置 RMS 客户端。 使用以下代码片段作为示例。
+若要配置 RMS 客户端，调用 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) 后立即添加对 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) 的调用以配置 RMS 客户端。 使用以下代码片段作为示例。
 
       C++
       IpcInitialize();
@@ -67,7 +68,7 @@ ms.openlocfilehash: 3ed49cf7dddb72783ecd3bf1e89454d805552743
         //Handle the error
       }
 
-## 外部身份验证
+## <a name="external-authentication"></a>外部身份验证
 
 使用此代码作为管理你自己的身份验证令牌的示例。
 C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Parameters, __out wstring wstrToken) throw();
@@ -109,21 +110,21 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
           return IpcGetKey(pvLicense, 0, &promptContext, NULL, &hKey);
       }
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
-* [数据类型](/information-protection/sdk/2.1/api/win/data%20types)
-* [环境属性](/information-protection/sdk/2.1/api/win/environment%20properties#msipc_environment_properties)
-* [IpcCreateOAuth2Token](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreateoauth2token)
-* [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-* [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-* [IPC_CREDENTIAL](/information-protection/sdk/2.1/api/win/IPC_CREDENTIAL)
-* [IPC_NAME_VALUE_LIST](/information-protection/sdk/2.1/api/win/IPC_NAME_VALUE_LIST)
-* [IPC_OAUTH2_CALLBACK_INFO](/information-protection/sdk/2.1/api/win/ipc_oauth2_callback_info#msipc_ipc_oath2_callback_info)
-* [IPC_PROMPT_CTX](/information-protection/sdk/2.1/api/win/IPC_PROMPT_CTX)
-* [IPC_AAD_APPLICATION_ID](/information-protection/sdk/2.1/api/win/ipc_aad_application_id#msipc_ipc_aad_application_id)
+- [Data types](https://msdn.microsoft.com/library/hh535288.aspx)（数据类型）
+- [Environment properties](https://msdn.microsoft.com/library/hh535247.aspx)（环境属性）
+- [IpcCreateOAuth2Token](https://msdn.microsoft.com/library/mt661866.aspx)
+- [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx)
+- [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)
+- [IPC_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx)
+- [IPC_NAME_VALUE_LIST](https://msdn.microsoft.com/library/hh535277.aspx)
+- [IPC_OAUTH2_CALLBACK_INFO](https://msdn.microsoft.com/library/mt661868.aspx)
+- [IPC_PROMPT_CTX](https://msdn.microsoft.com/library/hh535278.aspx)
+- [IPC_AAD_APPLICATION_ID](https://msdn.microsoft.com/library/mt661867.aspx)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

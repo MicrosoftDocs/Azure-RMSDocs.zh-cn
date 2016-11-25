@@ -2,6 +2,7 @@
 title: "从 AD RMS 迁移到 Azure 信息保护 - 阶段 1 | Azure 信息保护"
 description: "从 AD RMS 迁移到 Azure 信息保护的阶段 1 涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 1 至 4。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,35 +13,35 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d7e21c2bb07e82bc243e5ab01c0a21aa0fe274d1
-ms.openlocfilehash: 79daf0aec75aa16884b5b395a836cfac566ce13d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2db4041d7839d32a4d8f0bd468aa114d45665c27
 
 
 ---
 
-# 迁移阶段 1 - AD RMS 的服务器端配置
+# <a name="migration-phase-1-serverside-configuration-for-ad-rms"></a>迁移阶段 1 - AD RMS 的服务器端配置
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
+>适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 1。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 1-4。
 
 
-## 步骤 1：下载 Azure Rights Management 管理工具
+## <a name="step-1-download-the-azure-rights-management-administration-tool"></a>步骤 1：下载 Azure Rights Management 管理工具
 转到 Microsoft 下载中心并下载 [Azure Rights Management 管理工具](https://go.microsoft.com/fwlink/?LinkId=257721)，其中包含 Windows PowerShell 的 Azure Rights Management 管理模块。 Azure Rights Management (Azure RMS) 是为 Azure 信息保护提供数据保护的服务。
 
 安装工具。 相关说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
 
 > [!NOTE]
-> 如果你之前已下载了此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 2.5.0.0： `(Get-Module aadrm -ListAvailable).Version`
+> 如果先前已下载此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 2.5.0.0：`(Get-Module aadrm -ListAvailable).Version`
 
-## 步骤 2。 从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护中
+## <a name="step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection"></a>步骤 2。 从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护中
 此步骤是一个分为两部分的过程：
 
 1.  通过将受信任的发布域 (TPD) 导出到 .xml 文件，从 AD RMS 导出配置数据。 此过程对于所有迁移是相同的。
 
 2.  将配置数据导入到 Azure 信息保护中。 此步骤具有不同处理，具体取决于你的当前 AD RMS 部署配置以及 Azure RMS 租户密钥的首选拓扑。
 
-### 从 AD RMS 导出配置数据
+### <a name="export-the-configuration-data-from-ad-rms"></a>从 AD RMS 导出配置数据
 
 > [!IMPORTANT]
 > 执行此过程之前，首先请确认你的 AD RMS 服务器正在加密模式 2 下运行，这是 Azure 信息保护的要求。
@@ -56,7 +57,7 @@ ms.openlocfilehash: 79daf0aec75aa16884b5b395a836cfac566ce13d
 
 在所有 AD RMS 群集中，针对已保护你组织内容的所有受信任的发布域执行以下过程。 无需在仅授权群集上运行此过程。
 
-#### 导出配置数据（受信任的发布域信息）
+#### <a name="to-export-the-configuration-data-trusted-publishing-domain-information"></a>导出配置数据（受信任的发布域信息）
 
 1.  以具有 AD RMS 管理权限的用户身份登录到 AD RMS 群集。
 
@@ -74,7 +75,7 @@ ms.openlocfilehash: 79daf0aec75aa16884b5b395a836cfac566ce13d
 
 当你已导出所有受信任的发布域后，便可以启动将此数据导入到 Azure 信息保护的过程了。
 
-### 将配置数据导入到 Azure 信息保护
+### <a name="import-the-configuration-data-to-azure-information-protection"></a>将配置数据导入到 Azure 信息保护
 此步骤的确切过程取决于当前的 AD RMS 部署配置以及 Azure 信息保护租户密钥的首选拓扑。
 
 你的当前 AD RMS 部署将对服务器许可方证书 (SLC) 密钥使用以下配置之一：
@@ -118,7 +119,7 @@ ms.openlocfilehash: 79daf0aec75aa16884b5b395a836cfac566ce13d
 - [软件保护密钥到 HSM 保护密钥](migrate-softwarekey-to-hsmkey.md)
 
 
-## 步骤 3. 激活 Azure 信息保护租户
+## <a name="step-3-activate-your-azure-information-protection-tenant"></a>步骤 3. 激活 Azure 信息保护租户
 此步骤需要激活 Azure Rights Management 服务。 有关完整说明，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md) 文章。
 
 
@@ -131,7 +132,7 @@ ms.openlocfilehash: 79daf0aec75aa16884b5b395a836cfac566ce13d
 
 此外，如果已经创建要在迁移后使用的自定义模板，则必须导出并导入这些模板。 下一步中介绍了此过程。 
 
-## 步骤 4. 配置导入的模板
+## <a name="step-4-configure-imported-templates"></a>步骤 4. 配置导入的模板
 由于所导入的模板具有“已存档”的默认状态，如果你希望用户能够将这些模板用于 Azure Rights Management 服务，必须将此状态更改为“已发布”。
 
 你从 AD RMS 导入的模板的外观和行为就像你可以在 Azure 经典门户中创建的自定义模板一样。 若要将导入的模板更改为“已发布”，以便用户可以查看它们以及从应用程序中选择它们，请参阅[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)。
@@ -144,7 +145,7 @@ ms.openlocfilehash: 79daf0aec75aa16884b5b395a836cfac566ce13d
 
 - 如果 AD RMS 中的模板使用 **ANYONE** 组，则必须手动添加相应的组和权限。
 
-## 在迁移前创建了自定义模板时需执行的过程
+## <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>在迁移前创建了自定义模板时需执行的过程
 
 如果在迁移前创建了自定义模板（无论是在激活 Azure Rights Management 服务之前或之后），那么在迁移后，用户将无法使用这些模板，即使模板设置为“已发布”也是如此。 若要使其可供用户使用，必须先执行以下操作： 
 
@@ -157,9 +158,9 @@ ms.openlocfilehash: 79daf0aec75aa16884b5b395a836cfac566ce13d
 然后可以发布或存档这些模板，就像迁移后创建的任何其他模板一样。
 
 
-## AD RMS 中的模板使用 **ANYONE** 组时需执行的过程
+## <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>AD RMS 中的模板使用 **ANYONE** 组时需执行的过程
 
-如果 AD RMS 中的模板使用 **ANYONE** 组，则当你将这些模板导入 Azure 信息保护时，系统会自动删除该组；必须将相应的组或用户以及相同的权限手动添加到已导入的模板中。 Azure 信息保护的等效组名为 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**。 例如，此组可能看上去与用于 Contoso 的下例类似：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。
+如果 AD RMS 中的模板使用 **ANYONE** 组，则当你将这些模板导入 Azure 信息保护时，系统会自动删除该组；必须将相应的组或用户以及相同的权限手动添加到已导入的模板中。 Azure 信息保护的相等组名为 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**。 例如，如果公司为 Contoso，则该组可能会如下所示：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。
 
 如果不确定 AD RMS 模板是否包括 ANYONE 组，可使用以下 Windows PowerShell 示例脚本来标识这些模板。 有关将 Windows PowerShell 用于 AD RMS 的详细信息，请参阅[使用 Windows PowerShell 管理 AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)。
 
@@ -175,7 +176,7 @@ ms.openlocfilehash: 79daf0aec75aa16884b5b395a836cfac566ce13d
 > 由于这两个组存在这种差异，你可能还需要向“AllStaff”组添加外部用户。 目前不支持对组使用外部电子邮件地址。
 
 
-### 示例 Windows PowerShell 脚本，用于识别包括 ANYONE 组的 AD RMS 模板
+### <a name="sample-windows-powershell-script-to-identify-ad-rms-templates-that-include-the-anyone-group"></a>示例 Windows PowerShell 脚本，用于识别包括 ANYONE 组的 AD RMS 模板
 本节包含示例脚本，用于帮助你确定定义有 ANYONE 组的 AD RMS 模板，如前一节所述。
 
 **免责声明：**此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
@@ -213,12 +214,12 @@ Remove-PSDrive MyRmsAdmin -force
 ```
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 转到[阶段 2 - 客户端配置](migrate-from-ad-rms-phase2.md)。
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

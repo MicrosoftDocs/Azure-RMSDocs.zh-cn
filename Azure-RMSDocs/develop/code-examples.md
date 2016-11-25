@@ -3,6 +3,7 @@ title: "代码示例 | Azure RMS"
 description: "RMS SDK 4.2 包括适用于一些支持的操作系统的示例代码和工作项目。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,24 +15,24 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: a8f5230b80d2472c1680499704f17879cd66de02
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: d39bd0523e27a8b5e2c93c6729719203b4488d7e
 
 
 ---
 
-# 代码示例
+# <a name="code-examples"></a>代码示例
 
 Microsoft Rights Management SDK 4.2 包括适用于一些支持的操作系统的示例代码和工作项目。
 
-## 可通过 GitHub 获取 ##
+## <a name="available-via-github"></a>可通过 GitHub 获取 ##
 针对不想创建其自己的自定义 UI 的开发人员，我们的 UI 库为其提供了可重复使用的 UI，以进行使用和保护操作：
 
 - Android - [适用于 Android 的 UI 库和示例应用](https://github.com/AzureAD/rms-sdk-ui-for-android)
 - iOS - [适用于 iOS 的 UI 库和示例应用](https://github.com/AzureAD/rms-sdk-ui-for-ios)
 - Windows 应用商店应用 - [适用于 Windows 应用商店应用的 UI 库](https://github.com/AzureAD/rms-sdk-ui-for-windowsstore)和[适用于 Windows 应用商店的示例应用](https://github.com/AzureADSamples/rms-samples-for-windowsstore)。
 
-## 示例 ##
+## <a name="examples"></a>示例 ##
 这些主题向你介绍 RMS SDK 的相关版本的重要代码元素。
 - [Android 代码示例](android-code.md)
 - [Linux 代码示例](linux-c-code-examples.md)
@@ -46,6 +47,6 @@ Microsoft Rights Management SDK 4.2 包括适用于一些支持的操作系统�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

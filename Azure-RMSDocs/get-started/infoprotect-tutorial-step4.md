@@ -2,6 +2,7 @@
 title: "快速入门教程步骤 4 | Azure Rights Management"
 description: "入门教程第 3 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 30 分钟。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,21 +11,21 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: ce1d0a700e0b69d71f5cb2e93f406124bc0ca581
-ms.openlocfilehash: c9ed50317e18e86438b4393ce629d23d433c99fe
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: dc4cf3426bca306b66e2b23c3dd63373f62c9b7c
 
 
 ---
 
-# 步骤 4：查看分类、设置标签和保护的实际操作 
+# <a name="step-4-see-classification-labeling-and-protection-in-action"></a>步骤 4：查看分类、设置标签和保护的实际操作 
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 既然已安装 Azure 信息保护客户端，并打开了 Word 文档，就可以知道使用我们配置的策略开始为文档设置标签并保护文档有多么简单。
 
 分类和保护在保存文档后进行，但在保存文档之前，我们将使用未保存的文档来看应用并更改标签是多么容易。
 
-## 手动更改默认标签
+## <a name="to-manually-change-our-default-label"></a>手动更改默认标签
 
 在信息保护栏上，选择“个人”标签，此时系统会提示你输入降低分类级别的理由：
 
@@ -32,7 +33,7 @@ ms.openlocfilehash: c9ed50317e18e86438b4393ce629d23d433c99fe
 
 选择“不再应用以前的标签”，然后单击“确认”。 你将看到“敏感度”的值变为“个人”。
 
-## 完全删除分类
+## <a name="to-remove-the-classification-completely"></a>完全删除分类
 
 在信息保护栏上，单击“个人”旁边的“编辑标签”图标。 将显示可用的标签。 但这一次不是选择某个标签，而是单击“删除标签”图标。 单击“确定”确认删除，然后提供该操作的理由。  
 
@@ -41,7 +42,7 @@ ms.openlocfilehash: c9ed50317e18e86438b4393ce629d23d433c99fe
 ![Azure 信息保护快速入门教程步骤 4 - 删除分类](../media/sensitivity-not-set.png)
 
 
-## 查看标签和自动保护的推荐提示
+## <a name="to-see-a-recommendation-prompt-for-labeling-and-automatic-protection"></a>查看标签和自动保护的推荐提示
 
 1. 在 Word 文档中，键入有效的信用卡号，例如：**4242-4242-4242-4242**。 
 
@@ -63,6 +64,6 @@ ms.openlocfilehash: c9ed50317e18e86438b4393ce629d23d433c99fe
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

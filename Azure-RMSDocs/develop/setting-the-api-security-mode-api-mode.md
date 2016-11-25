@@ -3,6 +3,7 @@ title: "如何设置 API 安全模式 | Azure RMS"
 description: "选择你的文件 API 应用程序运行的安全模式。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 77e2dfe7f2afb1e70de658850f83f86e9224aea6
-ms.openlocfilehash: 9235fa1c194162689b854493ea31e76c08c40ce7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f7acef7fa69c836c5d57d8c1705007f919a9dbf2
 
 
 ---
 
-# 操作说明：设置 API 安全模式
+# <a name="howto-set-the-api-security-mode"></a>操作说明：设置 API 安全模式
 
 通过使用 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) 函数，可选择文件 API 应用程序在哪种安全模式下运行。
 
@@ -30,10 +31,10 @@ ms.openlocfilehash: 9235fa1c194162689b854493ea31e76c08c40ce7
 
 **重要说明**  应该在调用任何其他 Rights Management Services SDK 2.1 函数前设置安全模式。 设置安全模式后，不能为当前的进程更改该模式。
 
-## 相关主题
+## <a name="related-topics"></a>相关主题
 
 * [应用程序类型](application-types.md)
-* [API 模式值](https://msdn.microsoft.com/library/hh535236.aspx)
+* [API mode values](https://msdn.microsoft.com/library/hh535236.aspx)（API 模式值）
 * [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)
  
 
@@ -41,6 +42,6 @@ ms.openlocfilehash: 9235fa1c194162689b854493ea31e76c08c40ce7
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: "配置策略 | Azure 信息保护"
 description: "若要配置分类、标记和保护，必须配置 Azure 信息保护策略。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 472541f32c429eea34ea0afb76905bee8abf9747
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 055470948a1bf21d4ee1ee83f345f49a98c1bf31
 
 
 ---
 
-# 配置 Azure 信息保护策略
+# <a name="configuring-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。 然后将此策略下载到已安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#azure-信息保护客户端) 的计算机。
 
@@ -51,7 +52,7 @@ Azure 的信息保护附带 [默认策略](configure-policy-default.md)(#默认�
 
 在受支持的 Office 应用程序启动并将所做的更改作为其 Azure 信息保护策略下载时，Azure 信息保护客户端会检查任何更改。
 
-## 配置组织的策略
+## <a name="configuring-your-organizations-policy"></a>配置组织的策略
 
 使用以下信息来帮助你配置你的 Azure 信息保护策略：
 
@@ -71,13 +72,13 @@ Azure 的信息保护附带 [默认策略](configure-policy-default.md)(#默认�
 
 - [如何为自动和建议分类配置条件](configure-policy-classification.md)
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 有关如何自定义默认策略并在 Office 应用程序是查看所产生行为的示例，请尝试 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)(#azure-信息保护快速入门教程)。
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
