@@ -44,7 +44,7 @@ ms.openlocfilehash: a823d79a9305569962ee165b6eadf1d5384c0c0b
 
 ### <a name="to-update-templates-for-exchange-online"></a>为 Exchange Online 更新模板
 
-1.  在 Exchange Online 中使用 Windows PowerShell 连接到服务：
+1.  在 Exchange Online 中使用 Windows PowerShell 连接到服务：
 
     1.  提供你的 Office 365 用户名和密码：
 
@@ -62,7 +62,7 @@ ms.openlocfilehash: a823d79a9305569962ee165b6eadf1d5384c0c0b
         Import-PSSession $Session
         ```
 
-2.  使用 [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx) cmdlet，从 Azure RMS 重新导入你的受信任发布域 (TPD)：
+2.  使用 [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx) cmdlet，从 Azure RMS 重新导入你的受信任发布域 (TPD)：
 
     ```
     Import-RMSTrustedPublishingDomain -Name "<TPD name>" -RefreshTemplates -RMSOnline
