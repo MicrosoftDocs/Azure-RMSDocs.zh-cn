@@ -20,7 +20,7 @@ ms.openlocfilehash: 03c2e885bfb997fda2a2f675be3dee6bc8ea8138
 ---
 
 
-# <a name="customermanaged-tenant-key-lifecycle-operations"></a>客户托管：租户密钥生命周期操作
+# <a name="customer-managed-tenant-key-lifecycle-operations"></a>客户托管：租户密钥生命周期操作
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -32,7 +32,7 @@ ms.openlocfilehash: 03c2e885bfb997fda2a2f675be3dee6bc8ea8138
 取消 Azure 信息保护订阅时，Azure 信息保护会停止使用租户密钥，用户无需执行任何操作。
 
 
-## <a name="rekey-your-tenant-key"></a>更新你的租户密钥
+## <a name="re-key-your-tenant-key"></a>更新你的租户密钥
 更新密钥也称为滚动密钥。 不要更新你的租户密钥，除非在真正必要的情况下。 旧版客户端（例如 Office 2010）无法适当处理密钥更改。 在这种情况下，必须通过使用组策略或同等机制，清除计算机上的 Rights Management 状态。 但是，某些法律事件可能迫使你更新租户密钥。 例如：
 
 -   你的公司拆分为两家或更多公司。 当你更新你的租户密钥时，新公司将无法访问你的员工发布的新内容。 如果有旧租户密钥的副本，他们可以访问旧内容。
