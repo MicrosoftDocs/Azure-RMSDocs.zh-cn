@@ -4,7 +4,7 @@ description: "此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +13,14 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
-ms.openlocfilehash: 4a5e45bfef8e39d147410330b0d6b658c8d52474
+ms.sourcegitcommit: 5aac7b9fae12642c9846a70c5d271c7600af4096
+ms.openlocfilehash: 07b2a94625f006c07f72c543488f69d4cae3a9ec
 
 
 ---
 
 
-# <a name="step-2-softwareprotected-key-to-softwareprotected-key-migration"></a>步骤 2：软件保护密钥到软件保护密钥的迁移
+# <a name="step-2-software-protected-key-to-software-protected-key-migration"></a>步骤 2：软件保护密钥到软件保护密钥的迁移
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
 
@@ -56,7 +56,7 @@ ms.openlocfilehash: 4a5e45bfef8e39d147410330b0d6b658c8d52474
     
     例如：首先运行 **$TPD_Password = Read-host-AsSecureString**，并输入早前指定的密码。 然后运行 **Import-AadrmTpd -TpdFile E:\contosokey1.xml -ProtectionPassword $TPD_Password -Active $true -Verbose**。 出现提示时，确认要执行此操作。
     
-4.  该命令完成后，请对你通过导出受信任的发布域创建的每个剩余 .xml 文件重复执行步骤 3。 但对于这些文件，在运行 Import 命令时将 **-Active** 设为 **false**。 例如：**Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword $TPD_Password -Active $false -Verbose**
+4.  该命令完成后，请对你通过导出受信任的发布域创建的每个剩余 .xml 文件重复执行步骤 3。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。 但对于这些文件，在运行 Import 命令时将 **-Active** 设为 **false**。 例如：**Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword $TPD_Password -Active $false -Verbose**
 
 5.  使用 [Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx) cmdlet 断开与 Azure Rights Management 服务的连接：
 
@@ -71,6 +71,6 @@ ms.openlocfilehash: 4a5e45bfef8e39d147410330b0d6b658c8d52474
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 

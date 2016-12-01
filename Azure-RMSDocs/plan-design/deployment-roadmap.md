@@ -4,7 +4,7 @@ description: "使用这些步骤，为组织准备、实施和管理 Azure 信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1551b5dc3c5c9740721e3de01d086185966b6016
-ms.openlocfilehash: ce1ed30122b3bff5b045dfbec65c257d348f0122
+ms.sourcegitcommit: 1fb57d2317cc632a44a87f3ce7140ce737c240e0
+ms.openlocfilehash: 9cc05664480ba0e5fa090db96afbcef73c318e07
 
 
 ---
@@ -98,6 +98,8 @@ ms.openlocfilehash: ce1ed30122b3bff5b045dfbec65c257d348f0122
 1. 更新 Azure 信息保护策略以应用数据保护
     
     修改 Azure 信息保护策略，使一个或多个标签应用 Rights Management 保护。 有关详细信息，请参阅 [如何配置标签以应用权限管理保护](../deploy-use/configure-policy-protection.md)(#如何配置标签以应用权限管理保护)。
+    
+    请注意，即使没有为信息权限管理 (IRM) 配置 Exchange，用户也可以在应用 Rights Management 保护的 Outlook 中应用标签。 但是，在为 IRM 配置 Exchange 之前，组织将无法获得将 Exchange 与 Azure Rights Management 保护配合使用的完整功能。 此附加配置包含在适用于 Exchange Online 的步骤 3 以及适用于 Exchange 内部部署的步骤 6 中。 
 
 2. 部署 Rights Management 共享应用程序
     
@@ -190,6 +192,6 @@ ms.openlocfilehash: ce1ed30122b3bff5b045dfbec65c257d348f0122
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

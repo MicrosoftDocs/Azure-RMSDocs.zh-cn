@@ -4,15 +4,15 @@ description: "有关安装客户端（将信息保护栏添加到 Office 应用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: db05149a25b6535d568338140daa2474e48b6711
-ms.openlocfilehash: 984d764d0c1ac41e6baec0b7978f501d7494773d
+ms.sourcegitcommit: 0b9d796b8908a42a7aceb95f3c3319028e9a9dbe
+ms.openlocfilehash: d12916a0b60e27592c3917ab5421196392156506
 
 
 ---
@@ -67,7 +67,7 @@ Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可以利
 
     - 在“客户端状态”部分：使用“版本”值来验证安装是否成功。 此外，还会看到客户端上一次连接到组织的 Azure 信息保护服务的时间，以及上一次安装或更新 Azure 信息保护策略的时间。 当客户端连接到该服务时，如果它发现其当前策略中存在更改，它会自动下载最新的策略。 如果在显示时间后完成策略更改，关闭并重新打开 Office 应用程序。
     
-        还可以看到标识用于向 Azure 信息保护进行身份验证的帐户的显示用户名。 此用户名必须与用于 Office 365 或 Azure Active Directory 的帐户匹配。
+        还可以看到标识用于向 Azure 信息保护进行身份验证的帐户的显示用户名。 此用户名必须与用于 Office 365 或 Azure Active Directory 的帐户，以及属于为 Azure 信息保护所配置的某个租户的帐户相匹配。
 
     - 在“帮助和反馈”部分：**告诉我详细信息链接**默认转到 [Azure 信息保护](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)网站；但根据 Azure 信息保护策略中的一个[全局设置](../deploy-use/configure-policy-settings.md)，它也可配置为自定义 URL。
         
@@ -117,6 +117,6 @@ Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可以利
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

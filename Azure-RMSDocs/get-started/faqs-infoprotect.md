@@ -4,7 +4,7 @@ description: "对 Azure 信息保护的预览版有疑问？ 请查看此处是�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/24/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: a05b33f5085bf31d4ef1e6a606322fda8b0febe7
+ms.sourcegitcommit: 9d4338a1c89f2a94c744b8f5cc99bce1e54e7dec
+ms.openlocfilehash: 028468e7f4bbcff53187a947038926fbf9af1498
 
 
 ---
@@ -152,6 +152,26 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 
 不管是否安装了 Azure 信息保护客户端，任何用户都可以使用或编辑由 Azure 信息保护分类的文件和电子邮件。 
 
+## <a name="how-do-i-sign-in-as-a-different-user"></a>如何以其他用户身份登录？
+
+在生产环境中，如果使用的是 Azure 信息保护客户端，通常则不需要以其他用户身份登录。 但是，如果拥有多个租户，则可能需要这样做。 例如，除了拥有组织使用的 Office 365 或 Azure 租户外，还拥有一个测试租户。
+
+可以使用“Microsoft Azure 信息保护”对话框验证当前登录的帐户身份：打开 Office 应用程序，在“主页”选项卡上的“保护”组中，单击“保护”，然后单击“帮助和反馈”。 帐户名称会显示在“客户端状态”部分中。
+
+特别是在使用管理员帐户时，请务必检查所显示的登录帐户的域名。 例如，如果在两个不同的租户中都拥有“admin”帐户，则很容易忽略登录的帐户名正确但域错误的情况。 出现此情况可能导致下载 Azure 信息保护策略失败，或无法看到期望的标签或行为。
+
+若要以其他用户身份登录，则当前必须编辑注册表：
+
+1. 使用注册表编辑器，导航到“HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP”并删除“TokenCache”项。
+
+2. 重新启动任何打开的 Office 应用程序，并使用其他用户帐户登录。 如果在 Office 应用程序中没有看到登录到 Azure 信息保护服务的提示，请返回“Microsoft Azure信息保护”对话框，然后从更新的“客户端状态”部分中单击“登录”。
+
+此外：
+
+- 如果要重新初始化 Azure Rights Management 服务的环境（也称为引导），可以使用 [RMS Analyzer工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)中的“重置”选项进行此操作。
+
+- 如果要删除当前下载的 Azure 信息保护策略，可以从 %localappdata%\Microsoft\MSIP 文件夹中删除 **Policy.msip** 文件以实现此操作。
+
 ## <a name="how-can-i-report-a-problem-or-send-feedback-for-azure-information-protection"></a>如何针对 Azure 信息保护报告问题或发送反馈？
 
 如果你遇到与 Azure 信息保护有关的问题，并且在使用当前版本的客户端：在 Office 应用程序中“主页”选项卡上，在“保护”组中，单击“保护”，然后单击“帮助和反馈”。 在“Microsoft Azure 信息保护”对话框中，单击“发送反馈”。 将向信息保护团队发送电子邮件，并自动附加 PC 中的日志文件以帮助诊断问题。 
@@ -159,6 +179,6 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 如果你有任何问题或反馈，请使用 [Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/)。 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
