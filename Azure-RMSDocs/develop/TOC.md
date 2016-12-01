@@ -1,10 +1,10 @@
 # [了解和探索](/information-protection/understand-explore/what-is-information-protection)
-# [开始使用](/information-protection/get-started/requirements-azure-rms)
+# [入门](/information-protection/get-started/requirements-azure-rms)
 # [规划和设计](/information-protection/plan-design/deployment-roadmap)
 # [部署和使用该服务](/information-protection/deploy-use/activate-service)
 # [部署和使用该客户端](/information-protection/rms-client/use-client)
 # [开发和自定义应用](developers-guide.md)
-## [管理员指南](developers-guide.md)
+## [开发人员指南](developers-guide.md)
 ## [Rights Management SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
 ### [概述](overview.md)
 ### [入门](get-started.md)
@@ -29,12 +29,12 @@
 ### [API 参考](api-reference-4-2.md)
 #### [Android API 参考](https://msdn.microsoft.com/library/dn758245.aspx)
 #### [Linux API 参考](linux-c-api-reference.md)
-#### [iOS / OS X API 参考](https://msdn.microsoft.com/library/dn758306.aspx)
+#### [iOS / OS X API reference](https://msdn.microsoft.com/library/dn758306.aspx)（iOS/OS X API 参考）
 #### [Windows API 参考](https://msdn.microsoft.com/library/dn891914.aspx)
 ## [Rights Management SDK 2.1](microsoft-information-protection-and-control-client-portal.md)
 ### [概述](ad-rms-overview.md)
 #### [客户端](ad-rms-client.md)
-#### [Server](ad-rms-server.md)
+#### [服务器](ad-rms-server.md)
 ### [入门](getting-started-with-ad-rms-2-0.md)
 #### [发行说明](release-notes-rtm.md)
 #### [安装 SDK](install-the-rms-sdk.md)
@@ -55,18 +55,18 @@
 #### [操作说明：使用加密设置](working-with-encryption.md)
 #### [应用程序类型](application-types.md)
 #### [文件 API 配置](file-api-configuration.md)
+#### [安全指南](security-guidelines.md)
 #### [支持的文件格式](supported-file-formats.md)
-#### [受支持的平台](supported-platforms.md)
+#### [支持的平台](supported-platforms.md)
 #### [了解使用限制](understanding-usage-restrictions.md)
-#### [使用限制参考](usage-restriction-reference.md)
 ### [API 参考](api-reference-2-1.md)
-#### [常量](https://msdn.microsoft.com/library/hh535291.aspx)
-#### [数据类型](https://msdn.microsoft.com/library/hh535288.aspx)
-#### [函数](https://msdn.microsoft.com/library/hh535289.aspx)
-#### [结构](https://msdn.microsoft.com/library/hh535294.aspx)
-#### [错误代码](https://msdn.microsoft.com/library/hh535248.aspx)
+#### [Constants](https://msdn.microsoft.com/library/hh535291.aspx)（常量）
+#### [Data types](https://msdn.microsoft.com/library/hh535288.aspx)（数据类型）
+#### [Functions](https://msdn.microsoft.com/library/hh535289.aspx)（函数）
+#### [Structures](https://msdn.microsoft.com/library/hh535294.aspx)（结构）
+#### [Error codes](https://msdn.microsoft.com/library/hh535248.aspx)（错误代码）
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
