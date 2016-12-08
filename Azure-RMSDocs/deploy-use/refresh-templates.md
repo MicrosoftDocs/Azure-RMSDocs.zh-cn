@@ -13,8 +13,8 @@ ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67c2f47e1cc8e02c2bb4430421952a146e583e87
-ms.openlocfilehash: a823d79a9305569962ee165b6eadf1d5384c0c0b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2cfe5fd787811cae71bb08c458bd6767e4bc35e4
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: a823d79a9305569962ee165b6eadf1d5384c0c0b
 
 ### <a name="to-update-templates-for-exchange-online"></a>为 Exchange Online 更新模板
 
-1.  在 Exchange Online 中使用 Windows PowerShell 连接到服务：
+1.  在 Exchange Online 中使用 Windows PowerShell 连接到服务：
 
     1.  提供你的 Office 365 用户名和密码：
 
@@ -62,7 +62,7 @@ ms.openlocfilehash: a823d79a9305569962ee165b6eadf1d5384c0c0b
         Import-PSSession $Session
         ```
 
-2.  使用 [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx) cmdlet，从 Azure RMS 重新导入你的受信任发布域 (TPD)：
+2.  使用 [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx) cmdlet，从 Azure RMS 重新导入你的受信任发布域 (TPD)：
 
     ```
     Import-RMSTrustedPublishingDomain -Name "<TPD name>" -RefreshTemplates -RMSOnline
@@ -187,6 +187,6 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 
