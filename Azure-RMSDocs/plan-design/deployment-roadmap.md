@@ -13,8 +13,8 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fb57d2317cc632a44a87f3ce7140ce737c240e0
-ms.openlocfilehash: 9cc05664480ba0e5fa090db96afbcef73c318e07
+ms.sourcegitcommit: ced42d0856b992d3539575d64f5a49706f1768b3
+ms.openlocfilehash: b4b701d6a88bea91e2adbe7e002f01929d388e91
 
 
 ---
@@ -188,10 +188,12 @@ ms.openlocfilehash: 9cc05664480ba0e5fa090db96afbcef73c318e07
 ### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>步骤 5：根据需要管理租户帐户的 Rights Management 服务
 开始使用 Azure Rights Management 服务时，可能发现 Windows PowerShell 对帮助编写脚本或自动执行管理更改很有用。 有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](../deploy-use/administer-powershell.md)。
 
+## <a name="comments"></a>注释
+
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
