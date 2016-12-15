@@ -1,200 +1,238 @@
 ---
-title: "开发应用程序 | Azure RMS"
-description: "有关如何使用 RMS SDK 2.1 开发应用程序的说明。"
+title: "开发应用程序 | Azure 信息保护"
+description: "有关基本控制台应用如何使用 AIP 实现文档保护的指南"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 11/01/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4560a1cf3424ae4dddd3a0675b62e9c5e55de9fa
-ms.openlocfilehash: 1f46d93a47fae3b7e7de334db73b7e7b65ea6eea
+ms.sourcegitcommit: 7e2f4cfead53bd34673c1ebb85b9d966b8f6f848
+ms.openlocfilehash: 90b6ecd2860214c9b1f26ab9aad421390de8d6ff
 
 
 ---
 
 # <a name="developing-your-application"></a>开发应用程序
 
-本主题包含启用了 RMS 的应用程序的核心层面的基本指南，可作为应用程序开发的基础。
+本示例中将构建与 Azure信息保护服务 (AIP) 交互的简单控制台应用程序。  它将要保护的文件的路径作为输入，然后使用临时策略或 Azure 模板对其进行保护。 应用程序将根据输入应用正确的策略，创建信息受保护的文档。 你将使用的示例代码是 [Azure IP 测试应用程序](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test)，位于 Github 上。
 
-## <a name="introduction"></a>简介
+## <a name="sample-app-prerequisites"></a>示例应用程序必备组件
+- **操作系统**：Windows 10、Windows 8、Windows 7、Windows Server 2008、Windows Server 2008 R2 或 Windows Server 2012
+- **编程语言**：C#（.NET Framework 3.0 及更高版本）
+- **开发环境**：Visual Studio 2015（以及更高版本）
 
-本主题中的指南以示例应用程序 *IPCHelloWorld* 为基础，可帮助你熟悉启用权限的应用程序的基本概念和代码。 *IPCHelloWorld* 项目已针对 Rights Management Services SDK 2.1 进行了配置。
+## <a name="setting-up-your-azure-configuration"></a>设置 Azure 配置
 
-### <a name="download-sample"></a>下载示例
-- 验证是否已在 Connect 站点中注册：
-  - 若要注册，请访问 [Connect](http://connect.microsoft.com)
-  - 使用 Microsoft 帐户登录
-  - 转到 [Rights Management Connect Site](https://connect.microsoft.com/site1170)（权限管理 Connect 站点）
-  - 联接 
-- 下载完整的 *IPCHellowWorld* 示例应用程序，如 [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
+为此应用设置 Azure 需要创建租户 ID、对称密钥和应用程序主体 ID。
 
-有关如何配置新项目以使用 RMS SDK 2.1 的信息，请参阅 [配置 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)。
+### <a name="azure-ad-tenant-configuration"></a>Azure AD 租户配置
 
+若要为 Azure 信息保护配置 Azure AD 环境，请按照[激活 Azure Rights Management](https://docs.microsoft.com/en-us/information-protection/deploy-use/activate-service)中的指导进行操作。
 
+激活服务后，你需要 PowerShell 组件来执行后续步骤。 请按照[使用 Windows PowerShell 管理 Azure Rights Management 服务](https://docs.microsoft.com/en-us/information-protection/deploy-use/administer-powershell)中的说明完成此操作。
 
-## <a name="loading-msipcdll"></a>加载 MSIPC.dll
+### <a name="getting-your-tenant-id"></a>获取租户 ID
 
-需要先调用 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) 函数以加载 MSIPC.dll，然后才能调用任何 RMS SDK 2.1 函数。
+- 以管理员身份运行 PowerShell。
+- 导入 RMS 模块：`Import-Module AADRM`
+- 使用分配的用户凭据连接到服务：`Connect-AadrmService –Verbose`
+- 确保已启用 RMS：`Enable-AADRM`
+- 通过运行 `Get-AadrmConfiguration` 获取租户 ID
 
-        C++
-        hr = IpcInitialize();
-        if (FAILED(hr)) {
-          wprintf(L"Failed to initialize MSIPC. Are you sure the runtime is installed?\n");
-          goto exit;
-        }
+>记录 BPOSId（租户 ID）值。 后续步骤中需要此值。
 
-## <a name="enumerating-templates"></a>枚举模板
+*示例输出*
+![cmdlet 输出](../media/develop/output-of-Get-AadrmConfiguration.png)
 
-RMS 模板定义用于保护数据的策略，即定义允许访问数据的用户及其权限。 RMS 模板安装在 RMS 服务器上。
+- 从服务断开连接：`Disconnect-AadrmService`
 
-下面的代码截图枚举默认 RMS 服务器提供的 RMS 模板。
+### <a name="create-a-service-principal"></a>创建服务主体
+按照下列步骤来创建服务主体：
+> 服务主体是全局配置以用于访问控制的凭据，允许服务使用 Microsoft Azure AD 进行身份验证，并使用 Microsoft Azure AD Rights Management 保护信息
 
-      C++
-      hr = IpcGetTemplateList(NULL, 0, 0, NULL, NULL, &pcTil);
+- 以管理员身份运行 PowerShell
+- 使用 `Import-Module MSOnline` 导入 Microsoft Azure AD 模块
+- 使用分配的用户凭据 `Connect-MsolService` 连接到在线服务
+- 通过运行 `New-MsolServicePrincipal` 创建新服务主体
+- 为服务主体提供名称
+> 记录对称密钥和应用程序主体 ID 以供将来使用。
 
-      if (FAILED(hr)) {
-        DisplayError(L"IpcGetTemplateList failed", hr);
-        goto exit;
-      }
+*示例输出*
+![cmdlet 输出](../media/develop/output-of-NewMsolServicePrincipal.png)
 
-此调用会检索默认服务器上安装的 RMS 模板，并在 *pcTil* 变量指向的 [IPC_TIL](https://msdn.microsoft.com/library/hh535283.aspx) 结构中加载结果，然后显示这些模板。
+- 将应用程序主体 ID、对称密钥和租户 ID 添加到应用程序的 App.config 文件。
 
-      C++
-      if (0 == pcTil->cTi) {
-        wprintf(L"*** No templates configured for your RMS server ***\n\n");
-        wprintf(L"\\------------------------------------------------------\n\n");
-        goto exit;
-      }
+*App.config 文件示例*
+![cmdlet 输出](../media/develop/example-App.config-file.png)
 
-      for (DWORD dw = 0; dw < pcTil->cTi; dw++) {
-        wprintf(L"Template #%d:\n", dw);
-        wprintf(L"    Name:         %s\n", pcTil->aTi[dw].wszName);
-        wprintf(L"    Description:  %s\n", pcTil->aTi[dw].wszDescription);
-        wprintf(L"    Issued by:    %s\n", pcTil->aTi[dw].wszIssuerDisplayName);
-        wprintf(L"\n");
-      }
-
-## <a name="serializing-a-license"></a>序列化许可证
-
-需要先序列化许可证并获取内容密钥，然后才能保护任何数据。 内容密钥用于加密敏感数据。 序列化的许可证通常会附加到加密的数据，由受保护的数据的使用者使用。 使用者需要使用序列化的许可证调用 [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx) 函数以获取内容密钥，用于解密内容以及获取与内容关联的策略。
-
-为简单起见，使用 [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx) 返回的第一个 RMS 模板序列化许可证。
-
-通常会使用用户界面对话框以允许用户选择所需模板。
-
-      C++
-      hr = IpcSerializeLicense((LPCVOID)pcTil->aTi[0].wszID, IPC_SL_TEMPLATE_ID,
-        0, NULL, &hContentKey, &pSerializedLicense);
-
-      if (FAILED(hr)) {
-        DisplayError(L"IpcSerializeLicense failed", hr);
-        goto exit;
-      }
-
-执行此操作之后，你会获得内容密钥 *hContentKey* 和序列化的许可证 *pSerializedLicense*（需要附加到受保护的数据）。
+- 在 Azure 中注册应用程序后，你就可以使用 *ClientID* 和 *RedirectUri*。 有关如何在 Azure 中注册应用程序以及获取 *ClientID* 和 *RedirectUri* 的详细信息，请参阅[为 ADAL 身份验证配置 Azure RMS](adal-auth.md)。
 
 
-## <a name="protecting-data"></a>保护数据
+## <a name="design-summary"></a>设计摘要
+下图描述了你正在创建的应用的体系结构和流程，步骤如下。
+![设计摘要](../media/develop/design-summary.png)
 
-现在你已准备就绪，可以使用 [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx) 函数加密敏感数据。 首先，需要向 **IpcEncrypt** 函数询问加密的数据的大小。
+1. 用户输入：
+  - 要保护的文件的路径
+  - 选择模板或创建临时策略
+2. 应用程序请求使用 AIP 进行身份验证。
+3. AIP 确认身份验证
+4. 应用程序从 AIP 请求模板。
+5. AIP 返回预定义的模板。
+6. 应用程序通过给定位置定位指定的文件。
+7. 应用程序将 AIP 保护策略应用于文件。
 
-      C++
-      cbText = (DWORD)(sizeof(WCHAR)*(wcslen(wszText)+1));
-      hr = IpcEncrypt(hContentKey, 0, TRUE, (PBYTE)wszText, cbText,
-        NULL, 0, &cbEncrypted);
+## <a name="how-the-code-works"></a>该代码的工作原理
 
-      if (FAILED(hr)) {
-        DisplayError(L"IpcEncrypt failed", hr);
-        goto exit;
-      }
+在示例中，Azure IP 测试（即解决方案）以文件 Iprotect.cs 开头。 这是一个 C# 控制台应用程序，与其他任何启用了 AIP 的应用程序相同，使用 `main()` 方法开始加载 *MSIPC.dll*。
 
-此处的 *wszText* 包含要保护的纯文本。 [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx)函数返回在*cbEncrypted* 参数中返回加密的数据的大小。
+    //Loads MSIPC.dll
+    SafeNativeMethods.IpcInitialize();
+    SafeNativeMethods.IpcSetAPIMode(APIMode.Server);
 
-现在为加密的数据分配内存。
+加载连接到 Azure 所需的参数
 
-      C++
-      pbEncrypted = (PBYTE)LocalAlloc(LPTR, cbEncrypted);
+    //Loads credentials for the service principal from App.Config
+    SymmetricKeyCredential symmetricKeyCred = new SymmetricKeyCredential();
+    symmetricKeyCred.AppPrincipalId = ConfigurationManager.AppSettings["AppPrincipalId"];
+    symmetricKeyCred.Base64Key = ConfigurationManager.AppSettings["Base64Key"];
+    symmetricKeyCred.BposTenantId = ConfigurationManager.AppSettings["BposTenantId"];
 
-      if (NULL == pbEncrypted) {
-        wprintf(L"Out of memory\n");
-        goto exit;
-      }
+在控制台应用程序中提供文件路径时，应用程序将检查文档是否已加密。 该方法属于 **SafeFileApiNativeMethods** 类。
 
-最后，可以执行实际加密。
+    var checkEncryptionStatus = SafeFileApiNativeMethods.IpcfIsFileEncrypted(filePath);
 
-      C++
-      hr = IpcEncrypt(hContentKey, 0, TRUE, (PBYTE)wszText, cbText,
-        pbEncrypted, cbEncrypted, &cbEncrypted);
+如果文档未加密，则继续使用提示符上提供的选择来加密文档。
 
-      if (FAILED(hr)) {
-        DisplayError(L"IpcEncrypt failed", hr);
-        goto exit;
-      }
-
-在此步骤之后，你会获得加密的数据 *pbEncrypted* 和序列化的许可证 *pSerializedLicense*（将由使用者用于解密数据）。
-
-## <a name="error-handling"></a>错误处理
-
-在此整个示例应用程序中，*DisplayError* 函数用于处理错误。
-
-      C++
-      void DisplayError(LPCWSTR wszErrorInfo, HRESULT hrError)
+    if (!checkEncryptionStatus.ToString().ToLower().Contains(alreadyEncrypted))
+    {
+      if (method == EncryptionMethod1)
       {
-        LPCWSTR wszErrorMessageText = NULL;
+        //Encrypt a file via AIP template
+        ProtectWithTemplate(symmetricKeyCred, filePath);
 
-        if (SUCCEEDED(IpcGetErrorMessageText(hrError, 0, &wszErrorMessageText))) {
-          wprintf(L"%s: 0x%08X (%s)\n", wszErrorInfo, hrError, wszErrorMessageText);
+      }
+      else if (method == EncryptionMethod2)
+      {
+        //Encrypt a file using ad-hoc policy
+        ProtectWithAdHocPolicy(symmetricKeyCred, filePath);
+      }
+
+“使用模板保护”选项继续从服务器获取模板列表，并为用户提供选项。
+>如果没有修改模板，则将从 AIP 获取默认模板
+
+     public static void ProtectWithTemplate(SymmetricKeyCredential symmetricKeyCredential, string filePath)
+     {
+       // Gets the available templates for this tenant             
+       Collection<TemplateInfo> templates = SafeNativeMethods.IpcGetTemplateList(null, false, true,
+           false, true, null, null, symmetricKeyCredential);
+
+       //Requests tenant template to use for encryption
+       Console.WriteLine("Please select the template you would like to use to encrypt the file.");
+
+       //Outputs templates available for selection
+       int counter = 0;
+       for (int i = 0; i < templates.Count; i++)
+       {
+         counter++;
+         Console.WriteLine(counter + ". " + templates.ElementAt(i).Name + "\n" +
+             templates.ElementAt(i).Description);
+       }
+
+       //Parses template selection
+       string input = Console.ReadLine();
+       int templateSelection;
+       bool parseResult = Int32.TryParse(input, out templateSelection);
+
+       //Returns error if no template selection is entered
+       if (parseResult)
+       {
+         //Ensures template value entered is valid
+         if (0 < templateSelection && templateSelection <= counter)
+         {
+           templateSelection -= templateSelection;
+
+           // Encrypts the file using the selected template             
+           TemplateInfo selectedTemplateInfo = templates.ElementAt(templateSelection);
+
+           string encryptedFilePath = SafeFileApiNativeMethods.IpcfEncryptFile(filePath,
+               selectedTemplateInfo.TemplateId,
+               SafeFileApiNativeMethods.EncryptFlags.IPCF_EF_FLAG_KEY_NO_PERSIST, true, false, true, null,
+               symmetricKeyCredential);
+          }
         }
-        else {
-          wprintf(L"%s: 0x%08X\n", wszErrorInfo, hrError);
-        }
       }
 
-*DisplayError* 函数使用 [IpcGetErrorMessageText](https://msdn.microsoft.com/library/hh535261.aspx) 函数从对应错误代码获取错误消息并将它打印到标准输出。
+如果选择临时策略，应用程序的用户必须提供应具有权限的人员的电子邮件。 本节中使用 **IpcCreateLicenseFromScratch()** 方法创建许可证，并在模板上应用新策略。
 
-## <a name="cleaning-up"></a>清理
+    if (issuerDisplayName.Trim() != "")
+    {
+      // Gets the available issuers of rights policy templates.              
+      // The available issuers is a list of RMS servers that this user has already contacted.
+      try
+      {
+        Collection<TemplateIssuer> templateIssuers = SafeNativeMethods.IpcGetTemplateIssuerList(
+                                                        null,
+                                                        true,
+                                                        false,
+                                                        false, true, null, symmetricKeyCredential);
 
-完成之前，还需要释放所有已分配的资源。
+        // Creates the policy and associates the chosen user rights with it             
+        SafeInformationProtectionLicenseHandle handle = SafeNativeMethods.IpcCreateLicenseFromScratch(
+                                                            templateIssuers.ElementAt(0));
+        SafeNativeMethods.IpcSetLicenseOwner(handle, owner);
+        SafeNativeMethods.IpcSetLicenseUserRightsList(handle, userRights);
+        SafeNativeMethods.IpcSetLicenseDescriptor(handle, new TemplateInfo(null, CultureInfo.CurrentCulture,
+                                                                policyName,
+                                                                policyDescription,
+                                                                issuerDisplayName,
+                                                                false));
 
-      C++
-      if (NULL != pbEncrypted) {
-        LocalFree((HLOCAL)pbEncrypted);
-      }
+        //Encrypts the file using the ad hoc policy             
+        string encryptedFilePath = SafeFileApiNativeMethods.IpcfEncryptFile(
+                                       filePath,
+                                       handle,
+                                       SafeFileApiNativeMethods.EncryptFlags.IPCF_EF_FLAG_KEY_NO_PERSIST,
+                                       true,
+                                       false,
+                                       true,
+                                       null,
+                                       symmetricKeyCredential);
+       }
+    }
 
-      if (NULL != pSerializedLicense) {
-        IpcFreeMemory((LPVOID)pSerializedLicense);
-      }
+## <a name="user-interaction-example"></a>用户交互示例
 
-      if (NULL != hContentKey) {
-        IpcCloseHandle((IPC_HANDLE)hContentKey);
-      }
+创建和执行所有项后，应用程序的输出应如下所示：
 
-      if (NULL != pcTil) {
-        IpcFreeMemory((LPVOID)pcTil);
-      }
+1. 系统会提示你选择一种加密方法。
+![应用输出 - 步骤 1](../media/develop/app-output-1.png)
 
-## <a name="related-topics"></a>相关主题
+2. 你需要提供要保护的文件的路径。
+![应用输出 - 步骤 2](../media/develop/app-output-2.png)
 
-- [开发人员指南和信息](developer-notes.md)
-- [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx)
-- [IpcGetErrorMessageText](https://msdn.microsoft.com/library/hh535261.aspx)
-- [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx)
-- [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)
-- [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)
-- [IPC_TIL](https://msdn.microsoft.com/library/hh535283.aspx)
-- [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
+3. 系统将提示你输入许可证所有者的电子邮件（此所有者必须对 Azure AD 租户具有全局管理员权限）。
+![应用输出 - 步骤 3](../media/develop/app-output-3.png)
+
+4. 输入有权访问该文件的用户的电子邮件地址（电子邮件必须以空格分隔）。
+![应用输出 - 步骤 4](../media/develop/app-output-4.png)
+
+5. 从要向授权用户提供的权限列表中进行选择。
+![应用输出 - 步骤 5](../media/develop/app-output-5.png)
+
+6. 最后，输入一些策略元数据：策略名称、描述和发布者（Azure AD 租户）显示名称![应用输出 - 步骤6](../media/develop/app-output-6.png)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

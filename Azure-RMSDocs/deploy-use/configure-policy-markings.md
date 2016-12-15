@@ -4,15 +4,15 @@ description: "当文档或电子邮件中分配一个标签时，可以选择几
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
-ms.openlocfilehash: eca90185e6225d3f55f979f66f8225d661fe59cd
+ms.sourcegitcommit: 81c0f97d1684091753b68e93e8b9c06f0d713264
+ms.openlocfilehash: 70d9feb8e45c1a6a266529997434dcc1e9f7899d
 
 
 ---
@@ -43,7 +43,9 @@ ms.openlocfilehash: eca90185e6225d3f55f979f66f8225d661fe59cd
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 在“**Azure 信息保护**”边栏选项卡上，选择要配置为可视标记的标签。
+2. 如果为视觉标记配置的标签将应用于所有用户，请从“策略:全局”边栏选项卡中选择要更改的标签。 
+
+     如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，以便仅应用于所选用户，请首先从初始的“Azure 信息保护”边栏选项卡中选择作用域内策略。
 
 3. 在“**标签**”边栏选项卡的“**设置可视标记（如页眉或页脚）**”部分中，配置所需可视标记的设置，然后单击设置“**保存**”：
 
@@ -81,6 +83,6 @@ ms.openlocfilehash: eca90185e6225d3f55f979f66f8225d661fe59cd
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

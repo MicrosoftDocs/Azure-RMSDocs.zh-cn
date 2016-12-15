@@ -4,15 +4,15 @@ description: "在配置标签的条件时，可以自动将标签分配到文档
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 11/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
-ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
+ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
+ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
 
 
 ---
@@ -52,7 +52,9 @@ ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 在“**Azure 信息保护**”边栏选项卡上，选择要在其中配置自动或建议分类的标签。
+2. 如果为自动或推荐分类配置的标签将应用于所有用户，请从“策略:全局”边栏选项卡中选择要更改的标签，然后在“标签”边栏选项卡和之后的任何所需边栏选项卡上进行更改。 
+
+     如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，以便仅应用于所选用户，请首先从初始的“Azure 信息保护”边栏选项卡中选择作用域内策略。  
 
 3. 在“**标签**”边栏选项卡上的“**配置条件以自动应用该标签**”部分中，单击“**添加新的条件**”。
 
@@ -74,7 +76,7 @@ ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
 
 6. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 
-## <a name="information-about-the-builtin-conditions"></a>有关内置条件的信息
+## <a name="information-about-the-built-in-conditions"></a>有关内置条件的信息
 
 在预览期间，可以选择以下条件：
 
@@ -224,6 +226,6 @@ ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

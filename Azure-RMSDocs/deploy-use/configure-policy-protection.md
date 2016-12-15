@@ -4,15 +4,15 @@ description: "你可以使用权限管理服务的加密、标识和授权策略
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: 0a79642c3707be4c8dd75ccc80569ba90da01236
-ms.openlocfilehash: 18e7dfdc91051836093ad5b36fc9a8705d99dcc0
+ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
+ms.openlocfilehash: 31ef3e41e84515c02ebe97f01025331578273c71
 
 
 ---
@@ -57,9 +57,11 @@ ms.openlocfilehash: 18e7dfdc91051836093ad5b36fc9a8705d99dcc0
 
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 在“**Azure 信息保护**”边栏选项卡上，选择要配置为可视标记的标签以应用权限管理保护。
+2. 如果要配置的标签将应用于所有用户，请从“策略:全局”边栏选项卡选择要更改的标签。 
 
-3. 在“标签”边栏选项卡的“设置 RMS 模板以保护包含此标签的文档和电子邮件”部分的“RMS 模板选择自”中，选择“Azure RMS”或“AD RMS (预览版)”。
+     如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，以便仅应用于所选用户，请首先从初始的“Azure 信息保护”边栏选项卡中选择作用域内策略。
+
+3. 在“标签”边栏选项卡的“设置 RMS 模板以保护包含此标签的文档和电子邮件”部分的“RMS 模板选择自”中，选择“Azure RMS”或“AD RMS”。
     
     在大多数情况下，你将选择“Azure RMS”。 请勿选择 AD RMS（有时称为“*自留密钥*”(HYOK)），除非你已阅读并理解此配置附带的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。
     
@@ -73,6 +75,8 @@ ms.openlocfilehash: 18e7dfdc91051836093ad5b36fc9a8705d99dcc0
     
         - 配置的模板作用域外的用户或从应用 Azure 权限管理保护中排除的用户仍将看到该标签，但不能应用该标签。 如果他们选择该标签，则会看到以下消息：**Azure 信息保护无法应用此标签。如果此问题仍然存在，请与管理员联系。**
         
+            请注意，将始终显示所有模板，即使正在配置作用域内策略。 例如，正在为市场营销组配置作用域内策略。 可选择的 Azure RMS 模板不限于作用域为“营销”组的模板，还可以选择所选用户不能使用的部门模板。 为了方便配置和尽量减少故障排除，请考虑命名部门模板以匹配作用域内策略中的标签。 
+            
     - 如果选择“移除保护”:
         
         - 用户必须具有删除 Rights Management 保护的权限，以应用具有此选项的标签。 此选项要求它们具有**导出**（针对 Office 文档）或**完全控制**[使用权限](../deploy-use/configure-usage-rights.md)，或者为 Rights Management 所有者（自动授予完全控制使用权限）或者为 [Azure Rights Management 的超级用户](../deploy-use/configure-super-users.md)。 默认 Rights Management 模板不包括允许用户删除保护的使用权限。 
@@ -91,6 +95,6 @@ ms.openlocfilehash: 18e7dfdc91051836093ad5b36fc9a8705d99dcc0
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

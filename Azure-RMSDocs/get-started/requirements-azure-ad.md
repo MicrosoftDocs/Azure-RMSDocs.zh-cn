@@ -4,7 +4,7 @@ description: "确定使用 Azure 信息保护的 Azure AD 要求，以便用户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2016
+ms.date: 12/07/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
+ms.sourcegitcommit: a38b4f201a05ece08f06b18797a146adecf59053
+ms.openlocfilehash: 1246bfcf3a389e2dcd7a9ef922c3f40150611640
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
 
 必须拥有 Azure AD 目录才能使用 Azure 信息保护。 你可以使用此目录的组织帐户登录 Azure 经典门户，并在该门户中进行 Rights Management 模板的配置和管理之类的操作。
 
-如果你还没有你组织的 Azure 订阅，则可以通过注册免费试用版来获取订阅：转到 [Azure 入门](https://account.windowsazure.com/organization)页并按照说明进行操作。
+如果你的组织还没有 Azure 订阅，则可通过注册免费试用版获取订阅。 请转到 [Azure 入门](https://account.windowsazure.com/organization)页并按照说明操作。
 
 有关详细信息，请参阅 Azure Active Directory 文档中的以下资源：
 
@@ -35,12 +35,17 @@ ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
 
 如果要将 Azure AD 目录与本地 AD 林相集成，请参阅[将本地标识与 Azure Active Directory 集成](/active-directory/active-directory-aadconnect)。
 
-> [!NOTE]
-> 如果你的移动设备或 Mac 计算机使用 AD FS 或等效的身份验证提供程序进行本地身份验证，则：
-> 
-> -   你必须在最低服务器版的 **Windows Server 2012 R2** 上使用 AD FS，或者使用支持 OAuth 2.0 协议的备用身份验证提供程序。
+### <a name="scenarios-that-have-specific-requirements"></a>具有特定要求的方案 
 
-## <a name="multifactor-authentication-mfa-and-azure-information-protection"></a>多重身份验证 (MFA) 和 Azure 信息保护
+运行 Office 2010 的计算机： 
+
+- 如果你的用户帐户已联合（例如，使用 AD FS），则帐户必须使用 Windows 集成身份验证。 在此方案中，基于表单的身份验证将无法对 Azure 信息保护的用户进行身份验证。
+
+使用 AD FS 或等效的身份验证提供程序进行本地身份验证的移动设备或 Mac 计算机：
+
+- 你必须在最低服务器版的 **Windows Server 2012 R2** 上使用 AD FS，或者使用支持 OAuth 2.0 协议的备用身份验证提供程序。
+
+## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>多重身份验证 (MFA) 和 Azure 信息保护
 若要将多因素身份验证 (MFA) 和 Azure 信息保护结合起来使用，至少需要以下条件之一：
 
 -   Office 2013（最低版本）：
@@ -75,6 +80,6 @@ ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,27 +1,27 @@
 ---
-title: "如何配置全局策略设置 | Azure 信息保护"
-description: "Azure 信息保护策略中有 3 个设置适用于所有用户、所有设备。"
+title: "如何配置策略设置 | Azure 信息保护"
+description: "在 Azure 信息保护策略中配置适用于所有用户、所有设备的设置。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 8fa2ed9ff9ebe5c850ab5681e4dcc1f3d3c676b3
-ms.openlocfilehash: de5f5fbddb84e4444751e9fefbfe6ec3fe3e45e4
+ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
+ms.openlocfilehash: 9611b1fb11a66bbe1bd2b717d3c16bec6f944874
 
 
 ---
 
-# <a name="how-to-configure-the-global-policy-settings-for-azure-information-protection"></a>如何配置 Azure 信息保护的全局策略设置
+# <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
 >*适用于：Azure 信息保护*
 
-Azure 信息保护策略中有 4 个设置适用于所有用户、所有设备：
+除了信息保护栏标题和工具提示，Azure 信息保护策略中有 4 个设置适用于所有用户、所有设备：
 
 ![Azure 信息保护策略全局设置](../media/info-protect-policy-settings.png)
 
@@ -32,7 +32,7 @@ Azure 信息保护策略中有 4 个设置适用于所有用户、所有设备�
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 在“**Azure 信息保护**”边栏选项卡上，配置这些全局设置：
+2. 如果要配置的设置将应用于所有用户，请从“策略:全局”边栏选项卡配置以下全局设置：
 
     - **所有文档和电子邮件都必须有标签**：此选项设置为“**打开**”时，所有已保存的文档和发送的电子邮件都必须应用标签。 标记可能由用户手动分配，或因[条件](configure-policy-classification.md)自动分配，或（通过设置“**选择默认标签**”选项）默认分配。 
 
@@ -49,12 +49,14 @@ Azure 信息保护策略中有 4 个设置适用于所有用户、所有设备�
     此选项不适用于子标签。
 
     - **为 Azure 信息保护客户端“告诉我详细信息”网页提供自定义 URL**：当用户在其 Office 应用程序中从“开始”选项卡选择“保护” > “帮助和反馈”时，将在“帮助和反馈”部分的“Microsoft Azure 信息保护”对话框中看到此链接。 默认情况下，此链接将转到 [Azure 信息保护](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)网站。 如果希望此链接转到备选网页，可输入 HTTP 或 HTTPS（推荐）URL。 不进行检查来验证输入的自定义 URL 是否可供访问或是否可在所有设备上正确显示。
-    
-    例如，对于支持人员，输入的 Microsoft 文档页可包含有关安装和使用客户端的信息 (**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) 或者有关发布版本的信息 (**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**)。 另外，可以发布自己的网页，提供供用户联系支持人员的信息，或提供指导用户如何使用已配置标签的视频。
+        
+        例如，对于支持人员，输入的 Microsoft 文档页可包含有关安装和使用客户端的信息 (**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) 或者有关发布版本的信息 (**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**)。 另外，可以发布自己的网页，提供供用户联系支持人员的信息，或提供指导用户如何使用已配置标签的视频。
+        
+     创建[作用域内策略](configure-policy-scope.md)时可为特定用户覆盖这些设置。 若要在作用域内策略中配置这些设置，请首先从初始“Azure信息保护”边栏选项卡中选择作用域内策略。
 
 3. 单击“**保存**”以保存更改。
 
-4. 若要使所做的更改应用于用户，请单击“**发布**”。
+4. 若要使所做的更改适用于用户，请在初始“Azure 信息保护”边栏选项卡，单击“发布”。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -71,6 +73,6 @@ Azure 信息保护策略中有 4 个设置适用于所有用户、所有设备�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO1-->
 
 

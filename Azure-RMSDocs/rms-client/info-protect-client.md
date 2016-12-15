@@ -4,15 +4,15 @@ description: "有关安装客户端（将信息保护栏添加到 Office 应用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 0b9d796b8908a42a7aceb95f3c3319028e9a9dbe
-ms.openlocfilehash: d12916a0b60e27592c3917ab5421196392156506
+ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
+ms.openlocfilehash: 71972b0a057b1958dfa5e5b4af41b65d5080a086
 
 
 ---
@@ -27,14 +27,13 @@ ms.openlocfilehash: d12916a0b60e27592c3917ab5421196392156506
 
 ![具有默认策略的 Azure 信息保护栏](../media/info-protect-bar-default.png)
 
-从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#microsoft-下载中心) 下载 Azure 信息保护客户端。
+从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#microsoft-下载中心) 下载 Azure 信息保护客户端。 目前可安装正式 (GA) 版和预览版。 预览版包括用于评估的新功能，随时有可能更改。 有关详细信息，请参阅以下博客文章公告：[Azure 信息保护 12 月预览版现已可用](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)
 
-安装客户端之前，请检查是否具有 Azure 信息保护客户端所需的操作系统版本和应用程序：[Azure 信息保护要求](../get-started/requirements-azure-rms.md)。
-
+安装客户端之前，请检查是否具有 Azure 信息保护客户端所需的操作系统版本和应用程序：[Azure 信息保护要求](../get-started/requirements-azure-rms.md)。 此外，对于客户端的预览版本，运行 Windows 7 SP1 的计算机需要 [KB 2533623](https://support.microsoft.com/en-us/kb/2533623)，其可在安装客户端后安装。 如果需要此更新但尚未安装，系统会提示你进行安装。
 
 ## <a name="to-install-the-azure-information-protection-client-manually"></a>手动安装 Azure 信息保护客户端
 
-1. [下载客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)后，运行 **AzInfoProtection.exe** 并按照提示安装客户端。 此安装需要本地管理权限。
+1. [下载客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)后，运行可执行文件，例如 **AzInfoProtection.exe** 并按照提示安装客户端。 此安装需要本地管理权限。
 
     如果无法连接到 Office 365 或 Azure Active Directory，但想要通过使用本地策略看到和体验 Azure 信息保护的客户端以用于演示目的，选择此选项以安装演示策略。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。 
 
@@ -42,11 +41,11 @@ ms.openlocfilehash: d12916a0b60e27592c3917ab5421196392156506
 
 ## <a name="to-install-the-azure-information-protection-client-for-users"></a>为用户安装 Azure 信息保护客户端
 
-可以编写脚本，并通过使用命令行选项自动安装 Azure 信息保护客户端。 若要查看安装选项，请运行 `AzInfoProtection.exe /help`。
+可以编写脚本，并通过使用命令行选项自动安装 Azure 信息保护客户端。 若要查看安装选项，请使用 **/help** 运行可执行文件。 例如：`AzInfoProtection.exe /help`。
 
-例如，若要以无提示方式安装客户端：`AzInfoProtection.exe /passive | quiet`
+以无提示方式安装客户端的示例：`AzInfoProtection.exe /passive | quiet`
 
-Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可以利用使用该目录的任何软件更新服务来安装和更新客户端。
+Microsoft 更新目录中也包含 Azure 信息保护客户端的正式版，因此可以通过使用该目录的任何软件更新服务来安装和更新客户端。 客户端的预览版不包括在 Microsoft 更新目录中。
 
 ## <a name="to-uninstall-the-azure-information-protection-client"></a>卸载 Azure 信息保护客户端
 
@@ -54,9 +53,9 @@ Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可以利
 
 - 使用控制面板卸载程序：单击“**Microsoft Azure 信息保护** > **卸载**”
 
-- 重新运行 **AzInfoProtection.exe**，并从“修改安装程序”页上，单击“卸载”。 
+- 重新运行可执行文件（如 **AzInfoProtection.exe**），并从“修改安装程序”页上，单击“卸载”。 
 
-- 运行 `AzInfoProtection.exe /uninstall`
+- 使用 **/uninstall** 运行可执行文件。 例如： `AzInfoProtection.exe /uninstall`
 
 
 ## <a name="to-verify-installation-connection-status-or-report-a-problem"></a>验证安装、连接状态或报告问题
@@ -69,7 +68,7 @@ Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可以利
     
         还可以看到标识用于向 Azure 信息保护进行身份验证的帐户的显示用户名。 此用户名必须与用于 Office 365 或 Azure Active Directory 的帐户，以及属于为 Azure 信息保护所配置的某个租户的帐户相匹配。
 
-    - 在“帮助和反馈”部分：**告诉我详细信息链接**默认转到 [Azure 信息保护](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)网站；但根据 Azure 信息保护策略中的一个[全局设置](../deploy-use/configure-policy-settings.md)，它也可配置为自定义 URL。
+    - 在“帮助和反馈”部分中：**告诉我详细信息链接**默认转到 [Azure 信息保护](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)网站；但作为 Azure 信息保护策略中的一个[策略设置](../deploy-use/configure-policy-settings.md)，它也可配置为自定义 URL。
         
         使用**发送反馈**链接，自动将客户端日志附加到电子邮件以发送到信息保护团队进行问题调查。 
     
@@ -84,6 +83,56 @@ Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可以利
         - 会删除以下注册表项和设置：**HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**。 如果为此注册表项配置设置（例如，由于要从 AD RMS 迁移并且网络上仍有服务连接点，因此配置用于重定向到 Azure 信息保护租户的设置），那么重置客户端后必须重新配置注册表设置。
         
         - 重置客户端后，必须重新初始化用户环境（也称为“引导”），下载客户端证书和最新模板。 为了执行此操作，请关闭 Office 的所有实例，然后重新启动 Office 应用程序。 此操作还会检查是否已下载最新的 Azure 信息保护策略。 完成此操作之前，请勿再次运行诊断测试。
+
+
+## <a name="usage-logging"></a>使用情况日志记录
+
+**[此功能需要客户端的预览版本，随时可能更改。]**
+
+对于 Azure 信息保护客户端的预览版本，客户端将用户活动记录到本地 Windows **应用程序和服务**事件日志和 **Azure 信息保护**中。 这些事件包括以下信息：
+
+- 日期、客户端版本、策略 ID
+
+- 登录的用户名、计算机名称
+
+- 文件名和位置
+
+- 操作:
+
+    - 设置标签：信息 ID 101
+    
+    - 设置标签（较低）：信息 ID 102
+    
+    - 设置标签（较高）：信息 ID 103
+    
+    - 删除标签：信息 ID 104
+   
+    - 建议提示：信息 105
+    
+    - 应用自定义保护：信息 ID 201
+    
+    - 删除自定义保护：信息 ID 202
+    
+    - 登录（操作）：信息 ID 902
+    
+    - 下载策略（操作）：信息 ID 901
+    
+- 操作源：
+    
+    - 手动 
+    
+    - 建议
+    
+    - 自动  
+    
+    - 系统（用于登录和下载策略）
+    
+- 操作前后的标签 
+    
+- 操作前后的保护
+    
+- 用户理由（如果适用）
+    
 
 ## <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Azure 信息保护栏的键盘快捷方式
 
@@ -117,6 +166,6 @@ Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可以利
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

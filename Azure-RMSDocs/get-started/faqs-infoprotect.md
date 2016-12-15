@@ -4,7 +4,7 @@ description: "对 Azure 信息保护的预览版有疑问？ 请查看此处是�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d4338a1c89f2a94c744b8f5cc99bce1e54e7dec
-ms.openlocfilehash: 028468e7f4bbcff53187a947038926fbf9af1498
+ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
+ms.openlocfilehash: ba67bb149b0128b068c86dcf849e2dd49edbf6a7
 
 
 ---
@@ -35,13 +35,7 @@ Azure 信息保护客户端在 Microsoft Office 应用中添加了一个信息�
 
 当前版本具有以下限制。 有关其他特性和功能何时可用的信息，请留意[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)和 [Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)上的公告：
 
-- 只能向 Office 文件类型和 Outlook 电子邮件应用标签。
-
-- 安装了 Azure 信息保护客户端的所有用户都可以看到 Office 外接程序上的标签。
-
 - 标签名称和工具提示仅支持一种语言。
-
-- 无法在 Windows 文件资源管理器中对文件进行分类。
 
 - 对于分类和标签没有任何集中式日志记录。
 
@@ -53,6 +47,9 @@ Azure 信息保护客户端在 Microsoft Office 应用中添加了一个信息�
 
 - 适用于合作伙伴和开发人员的 SDK 不可用。
 
+某些以前列出的限制现已在预览版中可用。 有关详细信息，请参阅以下博客文章公告：[Azure 信息保护 12 月预览版现已可用](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)。
+
+
 ## <a name="do-i-need-to-be-a-global-admin-to-try-azure-information-protection"></a>是否需要是全局管理员才能试用 Azure 信息保护？
 
 若要配置 Azure 信息保护策略，必须以 Azure Active Directory 全局管理员的身份登录到 Azure 门户。
@@ -61,7 +58,7 @@ Azure 信息保护客户端在 Microsoft Office 应用中添加了一个信息�
 
 ## <a name="which-options-in-the-azure-portal-are-p1-or-p2"></a>Azure 门户中的哪些选项是 P1 或 P2？
 
-若要查看 **Azure 信息保护高级版 1** (P1) 订阅与 **Azure 信息保护高级版 2** (P2) 订阅中包含的功能，请参阅 Azure 信息保护站点中的[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。
+若要查看 **Azure 信息保护高级版 1** (P1) 订阅与 **Azure 信息保护高级版 2** (P2) 订阅中包含的功能，请参阅 Azure 信息保护站点中的[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。 但是一般原则为，高级功能（如自动分类和保留自己的密钥 (HYOK)）特定于 Azure 信息保护高级版 2 订阅。
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 
@@ -80,10 +77,6 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 ## <a name="can-i-classify-only-new-data-or-can-i-also-classify-existing-data"></a>是否只能对新数据进行分类，还是也可以对现有数据进行分类？
 
 对于新内容和现有内容的更改，Azure 信息保护策略操作将在文档已保存和电子邮件已发送时生效。 
-
-如果你已保存想要分类的文件，只需在 Office 应用程序中打开并保存它们。 
-
-目前，无法批量扫描并应用分类，必须在 Office 应用程序中打开并保存每个文档。 
 
 ## <a name="can-i-use-azure-information-protection-for-classification-only-without-enforcing-encryption-and-restricting-usage-rights"></a>是否可以仅将 Azure 信息保护用于分类，而不进行强制加密和限制使用权限？
 
@@ -116,7 +109,7 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 
 ## <a name="can-i-prompt-users-to-justify-why-they-are-changing-the-classification-level"></a>我是否可以提示用户说明他们更改分类级别的原因？
 
-是。 若要确保用户说明他们更改分类的原因，请在 Azure 门户中，将选项“用户必须提供理由以设置较低分类标签、删除标签或删除保护”设为“开”。 当他们这样做时，将在其本地 Windows 事件日志中记录他们的操作和理由：“应用程序” > “Microsoft Azure 信息保护”。
+是。 若要确保用户说明他们更改分类的原因，请在 Azure 门户中，将选项“用户必须提供理由以设置较低分类标签、删除标签或删除保护”设为“开”。 采取此操作时，将在其本地 Windows 事件日志中记录他们的操作和理由：“应用程序和服务日志” > “Microsoft Azure 信息保护”。
 
 ## <a name="how-can-i-automatically-protect-the-content-after-its-been-classified"></a>如何自动保护已分类的内容？
 
@@ -134,6 +127,32 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 
 不能。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件将保持不带标签，或者保留单独应用的标签。 但是，如果电子邮件的标签应用了保护，则该保护也适用于附件。
 
+## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>对于电子邮件来说，Azure 信息保护分类与 Exchange 邮件分类有什么不同？
+
+Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分类，且独立于 Azure 信息保护分类执行。 但是，你可以将这两个解决方案进行集成，以便当用户使用 Outlook Web 应用和在某些移动邮件应用程序中对电子邮件进行分类时，自动添加 Azure 信息保护分类和相应的标签标记。 Exchange 添加分类，Azure 信息保护客户端的预览版本应用该分类的相应标签设置。
+
+虽然 Outlook Web 应用尚不本地支持 Azure 信息保护分类和保护，但可通过同样的方法将标签用于除桌面 Outlook 客户端之外的电子邮件客户端。
+
+要实现此解决方案： 
+
+1. 使用 [New-MessageClassification](https://technet.microsoft.com/library/bb124400) Exchange PowerShell cmdlet 创建邮件分类，其 Name 属性映射到 Azure 信息保护策略中的标签名称。 
+
+2. 为每个标签创建 Exchange 传输规则：邮件属性包括配置的分类时应用规则，并修改邮件属性以设置邮件头。 
+
+    对于邮件头，可通过检查 Office 文件的属性查找要指定的信息，该文件是使用 Azure 信息保护标签进行分类的。 标识格式为 **MSIP_Label_<GUID>_Enabled** 的文件属性，并为邮件头指定此字符串，然后为标头值指定 **True **。 例如，邮件头可能如此字符串所示：**MSIP_Label_132616b8-f72d-5d1e-aec1-dfd89eb8c5b2_Enabled**
+
+
+用户使用 Outlook Web 访问应用或支持权限管理保护的移动设备客户端时，会发生以下情况： 
+
+- 用户选择 Exchange 邮件分类，并发送电子邮件。
+
+- Exchange 规则检测 Exchange 分类，并对应修改邮件头以添加 Azure 信息保护分类。
+
+- 运行 Azure 信息保护客户端预览版的收件人在 Outlook 中查看电子邮件时，他们将看到分配的 Azure 信息保护标签以及所有对应的电子邮件标头、页脚或水印。 
+
+如果 Azure 信息保护标签应用权限管理保护，请将其添加到规则配置，方法是选择修改邮件安全性的选项，应用权限保护，然后选择 RMS 模板或“不要转发”选项。
+
+
 ## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
 
 因为 Azure 信息保护将永久性元数据用于分类，其中包括明文标签，所以该信息可以被 DLP 解决方案和其他应用读取。 对于文件，该元数据存储在自定义属性中；对于电子邮件，该信息存储在电子邮件标头中。
@@ -148,7 +167,7 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 
 ## <a name="can-i-control-which-users-can-use-azure-information-protection-to-classify-and-protect-content"></a>是否可以控制哪些用户可以使用 Azure 信息保护对内容进行分类并保护？
 
-你可以通过控制 Azure 信息保护客户端的分布来限制哪些用户可以对数据进行分类并保护。 
+你可以通过控制 Azure 信息保护客户端的分布来限制哪些用户可以对数据进行分类并保护。 配置[作用域内策略](../deploy-use\configure-policy-scope.md)时，仅为指定用户添加新标签。 
 
 不管是否安装了 Azure 信息保护客户端，任何用户都可以使用或编辑由 Azure 信息保护分类的文件和电子邮件。 
 
@@ -179,6 +198,6 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 如果你有任何问题或反馈，请使用 [Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/)。 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 
