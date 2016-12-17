@@ -4,7 +4,7 @@ description: "确定使用 RMS API 本机支持 Azure 信息保护中的 Azure R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 12/14/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bba37c12226bc6954f2d371f98ebd3f47f8508d
-ms.openlocfilehash: 94a61cbd047a58f1b088c97a3ca833d49d999145
+ms.sourcegitcommit: 4ffe5949c080073f8acaadd7780b2c68b4b155f8
+ms.openlocfilehash: 1381a93b3a4f262c1747fa136467132137421ecb
 
 
 ---
@@ -42,7 +42,7 @@ ms.openlocfilehash: 94a61cbd047a58f1b088c97a3ca833d49d999145
 
 |**设备操作系统**|Word、Excel、PowerPoint|受保护的 PDF|Email|其他文件类型|
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
-|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile 应用程序（仅适用于 Azure RMS）[[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|适用于 Windows 的 Azure 信息保护客户端（预览版）<br /><br />Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 共享应用程序|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|适用于 Windows 的 Azure 信息保护客户端（预览版）：文本、图像、pfile<br /><br />适用于 Windows 的 RMS 共享应用程序：文本、图像、pfile<br /><br />适用于 AutoCAD 的 SealPath RMS 插件 [[8]](#footnote-8)：.dwg<br /><br />Siemens JT2Go：JT 文件（仅适用于 Windows 10）|
+|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile 应用程序（仅适用于 Azure RMS）[[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|适用于 Windows 的 Azure 信息保护客户端（预览版）<br /><br />Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 共享应用程序|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|适用于 Windows 的 Azure 信息保护客户端（预览版）：文本、图像、pfile<br /><br />适用于 Windows 的 RMS 共享应用程序：文本、图像、pfile<br /><br />适用于 AutoCAD 的 SealPath RMS 插件 [[8]](#footnote-8)：.dwg<br />|
 |**iOS**|iPad 和 iPhone 版 Office [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS 文档|Azure 信息保护应用 [[1]](#footnote-1)<br /><br /> Foxit Reader<br /><br />TITUS 文档|Azure 信息保护应用 [[1]](#footnote-1)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />iPad 和 iPhone 版 Outlook [[4]](#footnote-4)<br /><br />OWA for iOS [[3]](#footnote-3)<br /><br />TITUS Mail|Azure 信息保护应用 [[1]](#footnote-1)：文本、图像<br /><br />TITUS 文档：Pfile|
 |**Android**|适用于 Android 的 GigaTrust 应用<br /><br />Office Online [[2]](#footnote-2)<br /><br />Office Mobile（仅适用于 Azure RMS）[[1]](#footnote-1)|Azure 信息保护应用 [[1]](#footnote-1)<br /><br />适用于 Android 的 GigaTrust 应用<br /><br />Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />Azure 信息保护应用 [[1]](#footnote-1)<br /><br />适用于 Android 的 GigaTrust 应用程序 [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook for Android [[4]](#footnote-4)<br /><br />OWA for Android [[3]](#footnote-3) 和 [[7]](#footnote-7)<br /><br />Samsung Email（S3 及更高版本）[[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|Azure 信息保护应用 [[1]](#footnote-1)：文本、图像|
 |**OS X**|Office 2011（仅适用于 AD RMS）<br /><br />Office 2016 for Mac<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />RMS 共享应用程序 [[1]](#footnote-1)|Outlook 2011（仅适用于 AD RMS）<br /><br />Outlook 2016 for Mac<br /><br />Outlook for Mac|RMS 共享应用程序 [[1]](#footnote-1)：文本、图像、pfile|
@@ -167,6 +167,6 @@ Azure RMS 当前不支持以下应用程序：
 有关如何为 Azure RMS 配置最常用的应用程序的信息，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)。
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 
