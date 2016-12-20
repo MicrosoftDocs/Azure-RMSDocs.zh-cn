@@ -95,7 +95,7 @@ ms.openlocfilehash: 2cfe5fd787811cae71bb08c458bd6767e4bc35e4
 Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 ```
 
-## <a name="office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>适用于 Windows 的 Office 2016、Office 2013 和 RMS 共享应用程序：如何强制执行针对已更改自定义模板的刷新
+## <a name="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>适用于 Windows 的 Office 2016、Office 2013 和 RMS 共享应用程序：如何强制执行针对已更改自定义模板的刷新
 通过编辑运行 Office 2016、Office 2013 或适用于 Windows 的 Rights Management (RMS) 共享应用程序的计算机上的注册表，你可以更改自动计划，以便更改的模板在计算机上的刷新频率比其默认值更频繁。 你还可以通过删除注册表值中的现有数据，强制执行即时刷新。
 
 > [!WARNING]
