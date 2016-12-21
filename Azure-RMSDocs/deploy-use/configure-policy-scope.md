@@ -4,7 +4,7 @@ description: "若要为特定用户配置不同的设置和标签，必须为 Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
-ms.openlocfilehash: 99d7a2a9580466492edc313329cada315a9966d6
+ms.sourcegitcommit: b0600db864f834e9eb84700eb1a36d3e6a6fbde1
+ms.openlocfilehash: ba4567753fbc6320ea6f9170e4bf46857ab999b4
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: 99d7a2a9580466492edc313329cada315a9966d6
 
 由于作用域内策略始终继承全局策略中的标签和设置，因此在创建或编辑作用域内策略时会显示全局策略中的标签。 但是，编辑作用域内策略时，无法从全局策略中编辑标签。 但可将子标签添加到这些继承的标签中。
 
-例如，如果全局策略中有一个名为“Confidential”的标签，则所有用户都会看到此标签。 无法使用作用域内策略删除或重排标签。 但是建议你为市场营销部创建一个作用域内策略，它会将新的子标签添加到 Confidential，以便这些用户可以查看 Confidential\Promotions。 然后为销售部创建另一个作用域内策略，它会将新的子标签添加到 Confidential，以便这些用户可以查看 Confidential\Partners。 然后，可将每个子标签配置为用于不同的设置，并且子标签仅对相应部门中的用户可见。
+例如，如果全局策略中有一个名为 **Confidential** 的标签，则所有用户都会看到此标签。 无法使用作用域内策略删除或重排标签。 但是你可能想为市场营销部创建一个作用域内策略，它会将新的子标签添加到 Confidential，以便这些用户可以查看 **Confidential\Promotions**。 还可为销售部创建另一个作用域内策略，它会将新的子标签添加到 Confidential，以便这些用户可以查看 **Confidential\Partners**。 然后，可将每个子标签配置为用于不同的设置，并且子标签仅对相应部门中的用户可见。
 
 
 为 Azure 信息保护配置作用域内策略：
@@ -63,6 +63,6 @@ ms.openlocfilehash: 99d7a2a9580466492edc313329cada315a9966d6
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

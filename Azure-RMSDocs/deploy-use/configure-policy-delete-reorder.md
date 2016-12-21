@@ -4,15 +4,15 @@ description: "可以删除或重排用户可以在信息保护栏看到的标签
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 12/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: 743741fc63adfd959074986aab5c697d817f69c7
+ms.sourcegitcommit: 55895dd6fd0e106c33914a232e2d00d98e8a154a
+ms.openlocfilehash: 195a4ff44d0edc9d35ee30786bdddbcc821fc106
 
 
 ---
@@ -25,7 +25,9 @@ ms.openlocfilehash: 743741fc63adfd959074986aab5c697d817f69c7
 
 ![在 Azure 信息保护策略中删除或重排标签](../media/info-protect-contextmenu.png)
 
-如果你想要保留标签配置但防止它显示在信息保护栏中，你可能只是想禁用它，而不是删除标签。
+删除应用于文档和电子邮件的标签并发布 Azure 信息保护策略时，该标签在下次由 Azure 信息保护客户端打开时会自动从这些文档或电子邮件中删除。
+
+如果要保留标签，但不想在信息保护栏中显示标签，则不需要删除，只需要禁用标签。
 
 对标签进行排序，以便用户在信息保护栏中的逻辑进度中就可以看到它们。 例如，以敏感度递增的方式排列标签，以便用户先看到最不敏感的标签，最后看到最敏感的标签。 [默认策略](configure-policy-default.md)使用此配置。
 
@@ -59,6 +61,6 @@ ms.openlocfilehash: 743741fc63adfd959074986aab5c697d817f69c7
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

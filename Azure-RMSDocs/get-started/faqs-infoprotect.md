@@ -4,7 +4,7 @@ description: "对 Azure 信息保护的预览版有疑问？ 请查看此处是�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
-ms.openlocfilehash: ba67bb149b0128b068c86dcf849e2dd49edbf6a7
+ms.sourcegitcommit: 946daa8dedba71d5887dd96f6853e8d90400bfb1
+ms.openlocfilehash: 125752671ec0ca556cc6967a2a3011fb0bf7d9ab
 
 
 ---
@@ -76,11 +76,13 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 
 ## <a name="can-i-classify-only-new-data-or-can-i-also-classify-existing-data"></a>是否只能对新数据进行分类，还是也可以对现有数据进行分类？
 
-对于新内容和现有内容的更改，Azure 信息保护策略操作将在文档已保存和电子邮件已发送时生效。 
+对于新内容和现有内容的更改，Azure 信息保护策略操作将在文档已保存和电子邮件已发送时生效。
+
+如果拥有预览客户端，还可以从文件资源管理器中快速对现有文件分类（并且可选择保护）。 
 
 ## <a name="can-i-use-azure-information-protection-for-classification-only-without-enforcing-encryption-and-restricting-usage-rights"></a>是否可以仅将 Azure 信息保护用于分类，而不进行强制加密和限制使用权限？
 
-是。 你可以将 Azure 信息保护策略配置为仅应用标签。 事实上，我们预计在只需要保护要求特殊数据管理的一部分文档或电子邮件的网络部署中，这会是一个绝大多数的情况。
+是。 文件类型支持此操作时，你可以配置仅应用分类而无保护的 Azure 信息保护策略。 事实上，我们预计在只需要保护要求特殊数据管理的一部分文档或电子邮件的网络部署中，这会是一个绝大多数的情况。
 
 ## <a name="how-does-automatic-classification-work"></a>自动分类是如何工作的？
 
@@ -100,7 +102,7 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 
 ## <a name="can-i-force-all-documents-to-be-classified"></a>可以强制对所有文档进行分类吗？
 
-是。 如果你要求用户对他们保存的所有文件进行分类，请在 Azure 门户中将选项“所有文档和电子邮件都必须有标签”设为“开”。 
+是。 如果要求用户对他们保存的所有文件进行分类，请在 Azure 门户中配置策略，将“所有文档和电子邮件都必须有标签”设为“开”。 
 
 ## <a name="can-i-remove-classification-from-a-file"></a>我可以删除文件的分类吗？
 
@@ -117,11 +119,13 @@ Azure 信息保护是一个基于云的解决方案。 如果你对在混合方�
 
 你可以在[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护的快速入门教程）中看到该示例。 有关详细信息，请参阅 [如何配置标签以应用权限管理保护](../deploy-use/configure-policy-protection.md)(#如何配置标签以应用权限管理保护)。
 
-## <a name="can-a-file-be-classified-with-two-different-classifications"></a>一个文件是否可以有两个不同的分类？
+## <a name="can-a-file-have-more-than-one-classification"></a>文件是否可以有多个分类？
 
-如有必要，你可以为特定敏感度标签创建子标签，以便更好地描述子类别。 例如，主体标签 **Secret** 可能包含子标签，如 **Secret \ Legal** 和 **Secret \ Finance**。 你随后可对不同的子标签应用不同的分类可视化标记和不同的权限管理模板。
+用户一次仅可为每个文档或电子邮件选择一个标签，这通常只会产生一个分类。 但如果用户选择子标签，这实际上会同时应用两个标签；主标签和次要标签。 通过使用子标签，文件可以有两个分类，表示附加控制级别的父\子关系。
 
-虽然当前可在两个级别上设置可视化标记、保护和条件，但是当使用子级别时，请只在子级别上配置这些设置。 如果在父标签及其子级别上配置相同的设置，那么子级别上的设置具有更高优先级。
+例如，标签 **Secret** 可能包含子标签，如 **Legal** 和 **Finance**。 可对这些子标签应用不同的分类可视化标记和不同的权限管理模板。 用户不能单独选择 **Secret** 标签；只能选择其中一个子标签，如 **Legal**。 因此，看到的集合标签是 ** Secret \ Legal **。 该文件的元数据包括 **Secret** 的一个自定义文本属性和 **Legal** 的一个自定义文本属性，以及另一个包含两个值 (**Secret Legal**) 的属性。 
+
+使用子标签时，请不要在主标签处配置可视标记、保护和条件。 使用子级别时，请仅在子级别配置这些设置。 如果在主标签及其子标签上配置这些设置，那么子标签上的设置具有更高优先级。
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>标记一封电子邮件时，是否有任何附件会自动获得相同的标记？
 
@@ -152,6 +156,9 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 如果 Azure 信息保护标签应用权限管理保护，请将其添加到规则配置，方法是选择修改邮件安全性的选项，应用权限保护，然后选择 RMS 模板或“不要转发”选项。
 
+你还可以配置传输规则来执行反向映射：检测到 Azure 信息保护标签时，请设置相应的 Exchange 邮件分类。 为此，请执行以下操作：
+
+- 对于每个 Azure 信息保护标签，请创建传输规则，并在 **msip_labels** 标头包含标签名称（例如 **Confidential**）时应用，并应用映射到此标签的邮件分类。
 
 ## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
 
@@ -198,6 +205,6 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 如果你有任何问题或反馈，请使用 [Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/)。 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
