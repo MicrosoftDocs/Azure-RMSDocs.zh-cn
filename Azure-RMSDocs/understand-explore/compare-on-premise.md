@@ -13,8 +13,8 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cf9dba0e6e194e4613f715496f79aa9fdb2fe597
-ms.openlocfilehash: c649534dc43742d46de4d9044495c85ce734aa80
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 9ef82e670e8239194d3111c4a6d75e2727034104
 
 
 ---
@@ -78,6 +78,6 @@ Azure 信息保护和 AD RMS 都将 AES 128 用于对称加密。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
