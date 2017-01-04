@@ -23,9 +23,14 @@
 ##### [删除保护](sharing-app-remove-protection.md)
 ##### [使用键盘快捷方式](sharing-app-keyboard-shortcuts.md)
 ##### [对话框选项](sharing-app-dialog-box.md)
+### [Azure 信息保护用户指南 - 预览](client-user-guide.md)
+#### [下载并安装 Azure 信息保护客户端](install-client-app.md)
+#### [对文件或电子邮件进行分类和保护](client-classify-protect.md)
+#### [跟踪和撤消文档](client-track-revoke.md)
+#### [打开受保护的文件](client-view-use-files.md)
 # [开发和自定义应用](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

@@ -4,15 +4,15 @@ description: "可以更改或优化用户可以在信息保护栏看到的标签
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: 0046023125fe339ed408edf47c59e36708b01783
-ms.openlocfilehash: 1d92c127581d68bb52979d65ddb8704cad7c8039
+ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
+ms.openlocfilehash: f7b5e9e0bb32e4a04dfb407f11e361d959ebb807
 
 
 ---
@@ -32,9 +32,9 @@ ms.openlocfilehash: 1d92c127581d68bb52979d65ddb8704cad7c8039
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 在“**Azure 信息保护**”边栏选项卡上，选择要更改的标签，然后在“**标签**”边栏选项卡上进行更改，并根据需要在任何后续边栏选项卡上进行更改。
+2. 若要从全局策略中更改标签以使其适用于所有用户，请从“策略:全局”边栏选项卡中选择要更改的标签，然后在“标签”边栏选项卡和之后所需的任何边栏选项卡上进行更改。 如果要从[作用域内策略](configure-policy-scope.md)中更改标签，以使其适用于所选用户，请首先在初始的“Azure 信息保护”边栏选项卡中选择该策略。
 
-    例外情况是，如果想要重排标签，在“**Azure 信息保护**”边栏选项卡上执行同一操作：右键单击标签或选择标签的上下文菜单，然后选择“**上移**”或“**下移**”选项。
+    例外情况是，如果想要重排标签，可在全局策略或选定作用域内策略的策略边栏选项卡上执行操作：右键单击标签或选择标签的上下文菜单，然后选择“上移”或“下移”选项。
 
 3. 无论何时在边栏选项卡上进行更改，如果想要保留所做的更改，请在该边栏选项卡上单击“**保存**”。
 
@@ -52,6 +52,6 @@ ms.openlocfilehash: 1d92c127581d68bb52979d65ddb8704cad7c8039
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

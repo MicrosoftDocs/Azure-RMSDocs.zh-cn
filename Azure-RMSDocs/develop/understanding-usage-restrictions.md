@@ -73,10 +73,7 @@ AD RMS 权限列中列出的每个用户权利都附带有一个说明、一个�
 
 * [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)
 
- 
-
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 <!--HONumber=Nov16_HO4-->

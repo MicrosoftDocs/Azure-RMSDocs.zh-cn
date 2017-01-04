@@ -4,15 +4,15 @@ description: "入门教程第 2 步，该教程用于快速试用适合你组织
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: bce1682624b040545d30ca1cc426e4e2f8c38018
-ms.openlocfilehash: 7ba1566a81ca9a3ac45f340f69d3c9e933f015ff
+ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
+ms.openlocfilehash: 2f996bb974b1d86b137e3a8fba387386276739a2
 
 
 ---
@@ -32,17 +32,21 @@ ms.openlocfilehash: 7ba1566a81ca9a3ac45f340f69d3c9e933f015ff
     > [!TIP] 
     > 选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览到该服务。
 
-3.  浏览“Azure 信息保护”主边栏选项卡，其中显示了自动创建的默认信息保护策略：
+3.  浏览自动显示的“策略: 全局”边栏选项卡，其中显示了自动创建的默认信息保护策略：
     
     - 用于分类的标签：“个人”、“公共”、“内部”、“机密”和“秘密”。 阅读各个标签的工具提示以了解如何使用这些标签。 请注意，**秘密**标签有两个子标签：**所有员工**和**我的组**，这是一个类别具有子类别的一个示例。
 
-    - 在默认设置中，“内部”、“机密”和“秘密”标签都配置了可视标记（例如页脚、页眉、水印），并且这些标签都没有设置保护。 此外，由于未设置四个全局设置，因此所有文档和电子邮件不需要有标签。没有默认标签，用户更改标签时无需提供理由，并且客户端未配置自定义帮助连接。
-
-    ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy.png)
+    - 在默认设置中，“内部”、“机密”和“秘密”标签都配置了视觉标记（例如页脚、页眉、水印），并且这些标签都没有设置保护： 
+    
+    ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy-default-labels.png)
+    
+    此外，由于未设置某些全局策略设置，因此所有文档和电子邮件不需要有标签。没有默认标签，用户更改标签时无需提供理由，并且客户端未配置自定义帮助链接：
+    
+    ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy-default-settings.png)
 
 ## <a name="changing-the-global-settings-for-a-default-template-and-prompt-for-justification"></a>更改默认模板和提示提供理由的全局设置
 
-在我们的教程中，我们将更改几个全局设置，以便你可以看到如何使用它们：
+在我们的教程中，我们将更改几个全局策略设置，以便你可以看到它们的工作原理：
 
 1. 对于“选择默认标签”，将其设置为“内部”。
 
@@ -102,11 +106,11 @@ ms.openlocfilehash: 7ba1566a81ca9a3ac45f340f69d3c9e933f015ff
     
     ![Azure 信息保护快速入门教程步骤 3 - 类型说明](../media/step2-type-notes.png)
 
-8. 在“标签：机密”边栏选项卡上，单击“保存”。 然后，在主“Azure 信息保护”边栏选项卡上，再次单击“保存”。
+8. 在“标签：机密”边栏选项卡上，单击“保存”。 然后在“策略: 全局”边栏选项卡上，再次单击“保存”。
 
-9. 现在我们做出了更改并进行了保存，我们想要将更改提供给用户，因此请单击“发布”，然后单击“是”以确认。
+    ![Azure 信息保护快速入门教程步骤 3 - 已配置默认策略](../media/info-protect-policy-configured.png)
 
-![Azure 信息保护快速入门教程步骤 3 - 已配置默认策略](../media/info-protect-policy-configured.png)
+9. 现在我们做出了更改并进行了保存，我们想要将其提供给用户，因此请在初始“Azure 信息保护”边栏选项卡上单击“发布”，然后单击“是”以确认。
 
 完成本教程后你可以关闭 Azure 门户，或将其保留为打开状态以尝试其他配置选项。
 
@@ -122,6 +126,6 @@ ms.openlocfilehash: 7ba1566a81ca9a3ac45f340f69d3c9e933f015ff
 [步骤 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO1-->
 
 

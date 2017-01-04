@@ -85,7 +85,7 @@ ms.openlocfilehash: 913373504e34321556a1cdd34ea2744d8477f562
 
 如果对阻止的文件类型尝试加密，则会出现 [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx) 错误。
 
-### <a name="file-api-file-support-details"></a>文件 API - 文件支持详细信息
+### <a name="file-api---file-support-details"></a>文件 API - 文件支持详细信息
 
 可以为任何文件类型（扩展名）添加本机支持。 例如，对于任何扩展 &lt;ext&gt;（非 office），如果该扩展的管理配置是“NATIVE”，则将使用 \*.p&lt;ext&gt;。
 
@@ -151,10 +151,8 @@ HKEY_LOCAL_MACHINE
 
 - [开发人员说明](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 <!--HONumber=Nov16_HO3-->

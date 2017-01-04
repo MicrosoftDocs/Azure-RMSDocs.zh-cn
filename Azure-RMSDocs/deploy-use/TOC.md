@@ -1,9 +1,9 @@
 # [了解和探索](/information-protection/understand-explore/what-is-information-protection)
-# [开始使用](/information-protection/get-started/requirements-azure-rms)
+# [入门](/information-protection/get-started/requirements-azure-rms)
 # [规划和设计](/information-protection/plan-design/deployment-roadmap)
 # [部署和使用该服务](activate-service.md)
 ## [激活服务](activate-service.md)
-### [Office 365 管理中心预览](activate-office365-preview.md)
+### [Office 365 管理中心预览版](activate-office365-preview.md)
 ### [Office 365 经典管理中心](activate-office365-classic.md)
 ### [Azure 经典门户](activate-azure-classic.md)
 ## [配置自定义模板](configure-custom-templates.md)
@@ -15,19 +15,20 @@
 ## [配置应用程序](configure-applications.md)
 ### [Office 365](configure-office365.md)
 ### [Office 应用](configure-office-apps.md)
-### [RMS 共享应用程序](configure-sharing-app.md)
+### [RMS 共享应用](configure-sharing-app.md)
 ## [配置使用情况权限](configure-usage-rights.md)
 ## [为发现服务或数据恢复配置超级用户](configure-super-users.md)
 ## [配置信息保护策略](configure-policy.md)
 ### [默认策略](configure-policy-default.md)
-### [配置全局设置](configure-policy-settings.md)
+### [配置策略设置](configure-policy-settings.md)
 ### [创建新标签](configure-policy-new-label.md)
 ### [删除或重排标签](configure-policy-delete-reorder.md)
 ### [更改标签](configure-policy-change-label.md)
 ### [应用保护](configure-policy-protection.md)
 #### [HYOK 限制](configure-adrms-restrictions.md)
-### [配置可视标记](configure-policy-markings.md)
+### [配置视觉标记](configure-policy-markings.md)
 ### [配置条件](configure-policy-classification.md)
+### [配置作用域内策略](configure-policy-scope.md)
 ## [部署 RMS 连接器](deploy-rms-connector.md)
 ### [安装并配置连接器](install-configure-rms-connector.md)
 ### [配置服务器](configure-servers-rms-connector.md)
@@ -47,6 +48,6 @@
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 
