@@ -43,10 +43,8 @@ ms.openlocfilehash: c09eebc8a950894038a758d8f968c5e3e5ae2a53
  
 ## <a name="related-topics"></a>相关主题
 * [概述](ad-rms-overview.md)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 <!--HONumber=Nov16_HO4-->

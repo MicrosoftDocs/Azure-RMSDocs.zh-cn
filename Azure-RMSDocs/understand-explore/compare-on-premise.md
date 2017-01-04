@@ -74,6 +74,7 @@ Azure 信息保护和 AD RMS 都将 AES 128 用于对称加密。
 ## <a name="next-steps"></a>后续步骤
 如果希望从 AD RMS 迁移到 Azure 信息保护，请参阅[从 AD RMS 迁移到 Azure 信息保护](../plan-design/migrate-from-ad-rms-to-azure-rms.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
