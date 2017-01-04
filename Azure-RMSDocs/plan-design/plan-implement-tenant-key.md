@@ -4,7 +4,7 @@ description: "此信息有助于规划和管理 Azure 信息保护租户密钥�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f75e36e5939b23a9d077a6fcd659c59d0f71a68
-ms.openlocfilehash: 1e25f9007004d27fd8f52f77a1663e42f751334e
+ms.sourcegitcommit: f0403d85406cc8642654569958e3482a5d991352
+ms.openlocfilehash: 10e51ed108bedc59a66be86b8b27a140f899dd45
 
 
 ---
@@ -112,7 +112,7 @@ ms.openlocfilehash: 1e25f9007004d27fd8f52f77a1663e42f751334e
 > [!IMPORTANT]
 > 在此示例中，“aaaabbbbcccc111122223333”是要使用的密钥版本。 如果不指定版本，则将使用当前版本的密钥而不发出警告，并且显示命令以进行工作。 但是，如果后来对密钥保管库中的密钥进行了更新（已续订），则即使你再次运行 Use-AadrmKeyVaultKey 命令，Azure Rights Management 服务也将停止为你的租户工作。
 >
->在运行此命令时，除了密钥名称外，请确保还指定了密钥版本。
+>在运行此命令时，除了密钥名称外，请确保还指定了密钥版本。 可以使用 Azure 密钥保管库 cmd [Get-AzureKeyVaultKey](https://docs.microsoft.com/powershell/resourcemanager/azurerm.keyvault\/v2.3.0\/get-azurekeyvaultkey) 来获取当前密钥的版本号。 例如： `Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
 
 如果需要确认在 Azure RMS 服务中是否正确设置了密钥 URL，可在 Azure 密钥保管库中运行 [Get-AzureKeyVaultKey](https://msdn.microsoft.com/en-us/library/dn868053(v=azure.300\).aspx) 来查看密钥 URL。
 
@@ -144,6 +144,6 @@ ms.openlocfilehash: 1e25f9007004d27fd8f52f77a1663e42f751334e
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

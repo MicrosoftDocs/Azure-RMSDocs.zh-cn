@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的阶段 1 涉及从 AD RM
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,13 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 2db4041d7839d32a4d8f0bd468aa114d45665c27
+ms.sourcegitcommit: 750919e3d8be88a1a1028d83c89ece55ea4e8690
+ms.openlocfilehash: 65ab175da5c5ab74090bf6bdb88af766dc55e334
 
 
 ---
 
-# <a name="migration-phase-1-serverside-configuration-for-ad-rms"></a>迁移阶段 1 - AD RMS 的服务器端配置
+# <a name="migration-phase-1---server-side-configuration-for-ad-rms"></a>迁移阶段 1 - AD RMS 的服务器端配置
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365
 
@@ -74,6 +74,11 @@ ms.openlocfilehash: 2db4041d7839d32a4d8f0bd468aa114d45665c27
     -   不要选中将受信任的域文件保存在 RMS 版本 1.0 中的复选框。
 
 当你已导出所有受信任的发布域后，便可以启动将此数据导入到 Azure 信息保护的过程了。
+
+请注意，受信任的发布域包含之前用于解密受保护文件的密钥，因此请务必导出所有受信任的发布域（并稍后导入到 Azure 中），而不仅仅只导出当前活动的域。
+
+例如，如果将 AD RMS 服务器从加密模式 1 升级到加密模式 2，则将拥有多个受信任的发布域。 如果没有导出受信任的发布域（这些域包含使用加密模式 1 的存档的密钥）并将其导入到 Azure 中，则在迁移结束时，用户将无法打开使用加密模式 1 密钥所保护的内容。
+
 
 ### <a name="import-the-configuration-data-to-azure-information-protection"></a>将配置数据导入到 Azure 信息保护
 此步骤的确切过程取决于当前的 AD RMS 部署配置以及 Azure 信息保护租户密钥的首选拓扑。
@@ -220,6 +225,6 @@ Remove-PSDrive MyRmsAdmin -force
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

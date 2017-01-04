@@ -4,7 +4,7 @@ description: "了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 16dbee4b90f7c1e5b5c64c751d0c38e6cbccc036
+ms.sourcegitcommit: 1107f484f204e64d76c389daef4d9decbfbb20e8
+ms.openlocfilehash: 46c15d7594110d48f34b1648b2afb17738712720
 
 
 ---
@@ -36,7 +36,7 @@ ms.openlocfilehash: 16dbee4b90f7c1e5b5c64c751d0c38e6cbccc036
 |公用名：**编辑内容，编辑** <br /><br />策略中的编码：**DOCEDIT**|允许用户对应用程序中的内容进行修改、重新排列、设置格式或筛选。 它不会授权保存编辑过的副本。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**编辑内容**<br /><br />AD RMS 模板中的名称：**编辑** <br /><br />API 常量或值：不适用。|
 |公用名：**保存** <br /><br />策略中的编码：**EDIT**|允许用户将文档保存到当前位置。<br /><br />在 Office 应用程序中，此权限还允许用户修改文档。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**保存文件**<br /><br />AD RMS 模板中的名称：**保存** <br /><br />API 常量或值：`IPC_GENERIC_WRITE L"EDIT"`|
 |公用名：**注释** <br /><br />策略中的编码：**COMMENT**|启用向内容添加批注或注释的选项。<br /><br />此权限可用于 SDK、在适用于 Windows PowerShell 的 RMS 保护模块中作为即席策略提供，并且已在一些软件供应商应用程序中实现。 但是，它尚未广泛使用，并且当前也不受 Office 应用程序支持。|Office 自定义权限：未实现。 <br /><br />Azure 经典门户中的名称：未实现。<br /><br />AD RMS 模板中的名称：未实现。 <br /><br />API 常量或值：`IPC_GENERIC_COMMENT L"COMMENT`|
-|公用名：**另存为，导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 对于 Office 文档，可在无保护的情况下保存文件。<br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote” 。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**导出内容(另存为)**<br /><br />AD RMS 模板中的名称：**导出(另存为)** <br /><br />API 常量或值：`IPC_GENERIC_EXPORT L"EXPORT"`|
+|公用名：**另存为，导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 对于 Office 文档和 Azure 信息保护客户端，该文件可在不受保护的情况下进行保存。<br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote” 。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**导出内容(另存为)**<br /><br />AD RMS 模板中的名称：**导出(另存为)** <br /><br />API 常量或值：`IPC_GENERIC_EXPORT L"EXPORT"`|
 |公用名：**转发** <br /><br />策略中的编码：**FORWARD**|启用此选项以转发电子邮件，并将收件人添加到“收件人”  和“抄送”  行。 此权限不适用于文档；仅适用于电子邮件。<br /><br />不允许转发器授予其他用户权限作为转发操作的一部分。|Office 自定义权限：使用“不要转发”标准策略时拒绝。<br /><br />Azure 经典门户中的名称：**转发**<br /><br />AD RMS 模板中的名称：**转发** <br /><br />API 常量或值：`IPC_EMAIL_FORWARD L"FORWARD"`|
 |公用名：**完全控制** <br /><br />策略中的编码：**OWNER**|授予对文档的所有权限，并且所有可用操作都可以执行。<br /><br />包括删除保护和重新保护文档的功能。|Office 自定义权限：作为“完全控制”自定义选项。<br /><br />Azure 经典门户中的名称：**完全控制**<br /><br />AD RMS 模板中的名称：**完全控制** <br /><br />API 常量或值：`IPC_GENERIC_ALL L"OWNER"`|
 |公用名：**打印** <br /><br />策略中的编码：**PRINT**|启用打印内容的选项。|Office 自定义权限：作为自定义权限中的“打印内容”选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**打印**<br /><br />AD RMS 模板中的名称：**打印** <br /><br />API 常量或值：`IPC_GENERIC_PRINT L"PRINT"`|
@@ -56,15 +56,19 @@ ms.openlocfilehash: 16dbee4b90f7c1e5b5c64c751d0c38e6cbccc036
 
 |权限级别|应用程序|包括的权限（通用名称）|
 |---------------------|----------------|---------------------------------|
-|查看器|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序|查看、打开、读取；答复；全部答复|
-|审阅者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序|查看、打开、读取；保存；编辑内容、编辑；答复 [[1]](#footnote-1)；全部答复 [[1]](#footnote-1)；转发 [[1]](#footnote-1)|
-|合著者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出；打印；回复 [[1]](#footnote-1)；回复全部 [[1]](#footnote-1)；转发 [[1]](#footnote-1)|
-|共有者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出；打印；回复 [[1]](#footnote-1)；回复全部 [[1]](#footnote-1)；转发 [[1]](#footnote-1)；完全控制|
+|查看器|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端（预览版）|查看、打开、读取；答复；全部答复|
+|审阅者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端（预览版）|查看、打开、读取；保存；编辑内容、编辑；答复 [[1]](#footnote-1)；全部答复 [[1]](#footnote-1)；转发 [[1]](#footnote-1)|
+|合著者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端（预览版）|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出 [[2]](#footnote-2)；打印；回复 [[1]](#footnote-1)；回复全部[[1]](#footnote-1)；转发 [[1]](#footnote-1)|
+|共有者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端（预览版）|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出；打印；回复 [[1]](#footnote-1)；回复全部 [[1]](#footnote-1)；转发 [[1]](#footnote-1)；完全控制|
 
 ----
 
 ###### <a name="footnote-1"></a>脚注 1
-不适用于 Windows 版 Rights Management 共享应用程序。
+不适用于 Windows 的 Rights Management 共享应用程序或 Windows 的 Azure 信息保护客户端（预览）。
+
+###### <a name="footnote-2"></a>脚注 2
+不包括在适用于 Windows 的 Azure 信息保护客户端中（预览版）。 在此客户端中，导出使用权限包括删除保护的功能。
+
 
 ## <a name="rights-included-in-the-default-templates"></a>默认模板中包括的权限
 默认模板中包括的权限如下：
@@ -102,6 +106,6 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

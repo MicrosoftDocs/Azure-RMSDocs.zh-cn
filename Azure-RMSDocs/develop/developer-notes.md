@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 93ed9760d79f2f38d4bee302ebb5c7c6368b1bbe
+ms.sourcegitcommit: a3d58cc4c430fe2335ff8fbb7e23c77915e6b8ab
+ms.openlocfilehash: c09eebc8a950894038a758d8f968c5e3e5ae2a53
 
 
 ---
@@ -35,20 +35,18 @@ ms.openlocfilehash: 93ed9760d79f2f38d4bee302ebb5c7c6368b1bbe
 - [操作说明：使用加密设置](working-with-encryption.md) - 本主题针对加密包，并显示其使用的一些代码片段。
 - [应用程序类型](application-types.md) - 本主题介绍可以进行选择以作为启用权限形式而创建的应用程序类型。
 - [文件 API 配置](file-api-configuration.md) - 可通过注册表中的设置来配置文件 API 的行为。
+- [安全准则](security-guidelines.md) - 为应用程序开发人员提供方向和指导，使他们能在 AIP 生态系统中更好地工作。
 - [支持的文件格式](supported-file-formats.md) - 文件 API 支持本机和 Pfile 格式
 - [支持的平台](supported-platforms.md)：本主题标识 RMS SDK 2.1 支持的客户端和服务器平台。
-- [了解使用限制](understanding-usage-restrictions.md) - 所有启用 RMS 的应用程序都必须强制实施使用限制。
-- [使用限制参考](usage-restriction-reference.md) - 使用限制由本主题中列出的常量定义。
+- [了解使用限制](understanding-usage-restrictions.md) - 所有启用 RMS 的应用程序都必须强制实施由本主题中列出的常量所定义的使用限制。
 
  
 ## <a name="related-topics"></a>相关主题
 * [概述](ad-rms-overview.md)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

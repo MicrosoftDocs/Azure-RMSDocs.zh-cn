@@ -4,7 +4,7 @@ description: "帮助监视连接器和组织使用 Azure 信息保护中 Azure R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 65d9e0bb46238d9fda31b8fb47e8e4368d96e1b2
+ms.sourcegitcommit: e5939bb469af198a74d81724c5417eb63db7732b
+ms.openlocfilehash: bf73a79218fa8dba2b90115d0c1573a29f791023
 
 
 ---
@@ -162,9 +162,11 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 ## <a name="rms-analyzer"></a>RMS 分析工具
 
-你可以使用 Rights Management Services 分析工具来帮助你监视连接器的运行状况并确定配置问题。
+尽管此工具附带“原样”支持，你可以使用权限管理服务分析工具来帮助你监视连接器的运行状况并确定配置问题。 如果尚未下载此工具，可从[下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=46437)下载。 
 
-如果你尚未下载该工具，可以从[下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=46437)进行下载，然后在任何可以访问 Internet 和可以连接到 RMS 连接器的计算机上安装该工具。 运行该工具，在“欢迎”页面上，选择“Azure RMS 连接器”选项。
+通过授权其使用该工作负荷连接器的帐户，登录到为 RMS 连接器配置的其中一台服务器。 例如，如果为 Exchange 配置了 RMS 连接器，则登录该服务器要使用的帐户为在 RMS 连接器配置工具中针对 Exchange 授予了权限的一个帐户。 然后使用“以管理员身份运行”选项运行 RMS 分析工具。
+
+工具加载时，在“欢迎”页面上，选择“Azure RMS 连接器”选项。 输入 RMS 连接器 URL 作为可用地址，然后单击绿色箭头。 应该看到显示了租户详细信息，其确认连接器可成功连接到 Azure 权限管理服务。 如果此初始测试失败，请务必检查代理服务器配置和可能会阻止服务器通信的防火墙。 租户详细信息成功显示后，可继续运行该服务器工作负荷的诊断测试，它们检查受支持的版本编号、先决条件和注册表设置等。
 
 有关其他信息和说明，请参阅下载页面上的“详细信息”和“安装说明”。
 
@@ -193,6 +195,6 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 
