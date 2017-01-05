@@ -6,8 +6,8 @@
 ### [对数据保护的应用程序支持](requirements-applications.md)
 ### [对数据保护的本地服务器支持](requirements-servers.md)
 ## [常见问题](faqs.md)
-### [分类和标签的常见问题](faqs-infoprotect.md)
-### [数据保护的常见问题](faqs-rms.md)
+### [分类和标签的常见问题解答](faqs-infoprotect.md)
+### [数据保护的常见问题解答](faqs-rms.md)
 ## [信息和支持](information-support.md)
 ## [术语](terminology.md)
 ## [快速入门教程](infoprotect-quick-start-tutorial.md)
@@ -31,6 +31,6 @@
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

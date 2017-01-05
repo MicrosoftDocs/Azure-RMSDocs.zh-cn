@@ -1,5 +1,5 @@
 # [了解和探索](/information-protection/understand-explore/what-is-information-protection)
-# [开始使用](/information-protection/get-started/requirements-azure-rms)
+# [入门](/information-protection/get-started/requirements-azure-rms)
 # [规划和设计](deployment-roadmap.md)
 ## [部署路线图](deployment-roadmap.md)
 ## [从 AD RMS 迁移](migrate-from-ad-rms-to-azure-rms.md)
@@ -8,7 +8,7 @@
 #### [HSM 密钥到 HSM 密钥](migrate-hsmkey-to-hsmkey.md)
 #### [软件密钥到 HSM 密钥](migrate-softwarekey-to-hsmkey.md)
 ### [客户端配置](migrate-from-ad-rms-phase2.md)
-### [Reporting Services 配置](migrate-from-ad-rms-phase3.md)
+### [Supporting Services 配置](migrate-from-ad-rms-phase3.md)
 ### [迁移后任务](migrate-from-ad-rms-phase4.md)
 ## [计划和实现你的租户密钥](plan-implement-tenant-key.md)
 ### [BYOK 定价和限制](byok-price-restrictions.md)
@@ -18,6 +18,6 @@
 # [开发和自定义应用](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 
