@@ -6,7 +6,7 @@
 
 ![RMS 安装屏幕截图](../media/AzRMS_Tutorial_2_Screenshots.png)
 
-#### 下载并安装权限管理共享应用程序
+#### <a name="to-download-and-install-the-rights-management-sharing-application"></a>下载并安装权限管理共享应用程序
 
 1.  转到 Microsoft 网站上的 [Microsoft 权限管理](http://go.microsoft.com/fwlink/?LinkId=303970) 页。
 
@@ -14,7 +14,7 @@
 
 3.  若要进行本地安装，你必须使用管理员帐户运行已下载的 Setup.exe 文件。 如果系统提示你继续，请单击 **“是”**。
 
-4.  在 **“安装 Microsoft RMS”** 页上，单击 **“下一步”**，然后等待安装完成。
+4.  在**安装 Microsoft RMS**页上，单击**下一步**，然后等待安装完成。
 
 5.  安装完成后，请单击 **“重新启动”** （如果系统提示你重新启动计算机），或单击  **“关闭”** 完成安装。
 
@@ -27,6 +27,6 @@
 |了解本机保护和常规保护的区别   →|[一般性保护和内置（本机）保护的区别是什么？](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 
