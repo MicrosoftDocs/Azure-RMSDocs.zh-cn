@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f430c1ea265e560786bf06d4aeb0792ab610746c
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: f0a201858863239a47124d2a75a8464d520c96a3
 
 
 ---
@@ -35,12 +35,10 @@ Microsoft Rights Management SDK 2.1 支持 Windows 客户端的 RMS 启用。 �
 ## <a name="related-topics"></a>相关主题
 
 * [发行说明](release-notes-rtm.md)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

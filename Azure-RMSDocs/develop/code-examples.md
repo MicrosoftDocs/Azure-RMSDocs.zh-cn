@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: d39bd0523e27a8b5e2c93c6729719203b4488d7e
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: c0236d42bd508641b658318a90bed31effed4daa
 
 
 ---
@@ -38,15 +38,9 @@ Microsoft Rights Management SDK 4.2 包括适用于一些支持的操作系统�
 - [Linux 代码示例](linux-c-code-examples.md)
 - [iOS/OS X 代码示例](ios-os-x-code-examples.md)
 
-
- 
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

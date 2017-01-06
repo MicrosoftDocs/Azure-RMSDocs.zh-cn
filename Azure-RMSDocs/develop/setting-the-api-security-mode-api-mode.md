@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f7acef7fa69c836c5d57d8c1705007f919a9dbf2
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 49e87a8bf7ec5e628cf76c6ec82df2bb1b0835a3
 
 
 ---
 
-# <a name="howto-set-the-api-security-mode"></a>操作说明：设置 API 安全模式
+# <a name="how-to-set-the-api-security-mode"></a>操作说明：设置 API 安全模式
 
 通过使用 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) 函数，可选择文件 API 应用程序在哪种安全模式下运行。
 
@@ -36,12 +36,10 @@ ms.openlocfilehash: f7acef7fa69c836c5d57d8c1705007f919a9dbf2
 * [应用程序类型](application-types.md)
 * [API mode values](https://msdn.microsoft.com/library/hh535236.aspx)（API 模式值）
 * [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

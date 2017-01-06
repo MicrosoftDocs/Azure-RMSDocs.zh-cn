@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 789c93b6d7ac72ebe1df04300f2885ca2aa23a06
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: da5a9fa1a2c2eaccb6768914a0c425983b14fdbe
 
 
 ---
 
-# <a name="howto-debug-a-rightsenabled-application"></a>操作说明：调试启用权限的应用程序
+# <a name="how-to-debug-a-rights-enabled-application"></a>操作说明：调试启用权限的应用程序
 
 下面的主题演示如何调试应用程序和使用 Windows 事件日志。
 
@@ -66,16 +66,9 @@ HKEY_LOCAL_MACHINE
 
 **注意** 在 Windows 事件查看器的“视图”菜单中，选择“显示分析和调试日志”以使 MSIPC 调试日志可见。
 
- 
-
-## <a name="related-topics"></a>相关主题
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
