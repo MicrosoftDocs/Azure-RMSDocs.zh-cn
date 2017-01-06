@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4e96ba043584c5d8c140d6804c72cf63362f58c5
-ms.openlocfilehash: a251723b6c42058091d57067724e89a1816bcaa1
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 6443c1955db5ab25caea349575cb376a6ce8dac2
 
 
 ---
@@ -48,14 +48,10 @@ Rights Management Services SDK 2.1 包括安装在计算机上默认位置或你
 |Msipc.lib|\lib\x64|当使用 RMS SDK 2.1 生成 x64 应用程序时要与之链接的库。|
 |Msipc_s.lib|\lib\x64|为 x64 应用程序提供 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) 的入口点。|
 |Genmanifest.exe|\tools|生成清单以在 RMS 启用的引用程序的开发期间使用。|
- 
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

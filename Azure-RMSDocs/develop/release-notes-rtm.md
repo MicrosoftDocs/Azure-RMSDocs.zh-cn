@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: d481ee096213af79a7852f1afa6d075d389a4212
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ff150ef29d7ad90e1c53894175a27cfe1f1a4d8e
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: d481ee096213af79a7852f1afa6d075d389a4212
 
 本主题包含有关此版本和以前版本的 RMS SDK 2.1 的重要信息。
 
-## <a name="new-for-the-february-2016-sdk-documentation-update"></a>2016 年 2 月新增内容 - SDK 文档更新
+## <a name="new-for-the-february-2016---sdk-documentation-update"></a>2016 年 2 月新增内容 - SDK 文档更新
 
 >[!Note]
 > 本部分中的功能文档更新适用于 2015 年 12 月 11 日后下载的 SDK。
@@ -161,13 +161,9 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
 如果检索不到任何名称和描述，则将返回一个错误。 特定 LCID 只能有一个名称和描述。
 
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
