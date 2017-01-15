@@ -7,6 +7,6 @@
 # [Azure 信息保护（预览版）](/information-protection/understand-explore/what-is-azure-information-protection)
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
