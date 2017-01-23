@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 816d665314fb77931433e36420b54c3ab6f689b9
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: f41640a0a6c46dc7cacf69dc3784d703b971e9d0
 
 
 ---
@@ -56,12 +56,10 @@ AD RMS 由 [服务器](ad-rms-server.md) 和 [客户端](ad-rms-client.md) 组�
 * [RMS 概念](application-types.md)
 * [入门](getting-started-with-ad-rms-2-0.md)
 * [针对 AD RMS 的 IT 专业人员文档](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

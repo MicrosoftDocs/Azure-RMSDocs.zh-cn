@@ -11,11 +11,11 @@
 
 ![Azure RMS 教程屏幕截图](../media/AzRMS_Tutorial_5_Screenshots.png)
 
-#### 跟踪受保护文档
+#### <a name="to-track-your-protected-document"></a>跟踪受保护文档
 
 1.  使用 Outlook 时，请在 **“RMS”** 组的 **“主页”** 选项卡上，单击 **“跟踪使用情况”**。
 
-2.  如果你看到 **“按你的方式保护和共享”** 页，请单击 **“登录”** ，然后再次提供用户名和密码。
+2.  如果你看到**按你的方式保护和共享**页，请单击**登录**，然后再次提供用户名和密码。
 
 3.  在“你的共享文档”页上，你会看到附加到电子邮件中的文档 **Confidential.docx**。 此时，该文档是唯一显示的文件，但当你共享更多的受保护文档时，此列表会扩大。
 
@@ -30,16 +30,16 @@
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
 |关于文档跟踪的完整说明   →|[使用 RMS 共享应用程序跟踪和撤销文档](../rms-client/sharing-app-track-revoke.md)|
-|说明并演示文档跟踪的两分钟视频   →|[Azure RMS 文档跟踪和撤销](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)|
-|有关疑难解答和客户方面的问题   →|[文档跟踪常见问题](https://technet.microsoft.com/dn947488)|
+|说明并演示文档跟踪的两分钟视频   →|[Azure RMS Document Tracking and Revocation](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)（Azure RMS 文档跟踪和撤消）|
+|有关疑难解答和客户方面的问题   →|[FAQ for Document Tracking](https://technet.microsoft.com/dn947488)（文档跟踪常见问题解答）|
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 本教程为你逐步演示了一个方案，即如果通过 Azure RMS 来帮助保护你的数据。 要查看其他常见用途，请参阅[操作中的 Azure RMS](../understand-explore/what-admins-users-see.md)。 你可能还会发现这篇文章中的其他部分也很有用，例如 Azure RMS 的工作原理以及它能够解决哪些业务问题。
 
 当你做好开始部署 Azure RMS 的准备时，请使用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md)获取部署步骤和操作说明链接。
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

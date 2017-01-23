@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac77c4e0bced244f1cec74f15cbe0d62c9ab4437
-ms.openlocfilehash: 66d24f4ed737526525c041de7aeb96de35b37032
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9a81746a17988f788503ca706f19a4ed89702c4e
 
 
 ---
@@ -99,12 +99,9 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
 
 **Linux / C++** - 此 SDK 中包含一些基本的日志记录，它们没有其他平台的日志记录那样宽泛。 有关详细信息，请参阅[可移植 C++ 的 RMS SDK](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting) 中的“README.md”的**疑难解答**部分。
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

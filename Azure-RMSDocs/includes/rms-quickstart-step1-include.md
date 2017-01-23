@@ -8,9 +8,9 @@
 
 ![Azure 经典门户](../media/AzRMS_Tutorial_1_Screenshots.png)
 
-#### 从 Office 365 管理中心激活权限管理
+#### <a name="to-activate-rights-management-from-the-office-365-admin-center"></a>从 Office 365 管理中心激活权限管理
 
-1.  转到 [Office 365 门户](https://portal.office.com/) ，使用你的工作或学校帐户登录。
+1.  转到 [Office 365 门户](https://portal.office.com/)，使用你的工作或学校帐户登录。
 
 2.  如果未自动显示 Office 365 管理中心，请选择左上方的“应用启动程序”图标，然后选择“管理”。 “管理”  磁贴只会向 Office 365 管理员显示。
 
@@ -29,13 +29,13 @@
 
 你现在应该看到 **“权限管理已激活”** 以及停用选项（可能需要手动刷新该页）。
 
-此时请勿单击 **“高级功能”**。 单击该选项会将你转到可在其中配置模板的 Azure 经典门户，这些模板不是本教程所必需的。 与之相反，你可以关闭 Office 365 管理中心。
+此时请勿单击**高级功能**。 单击该选项会将你转到可在其中配置模板的 Azure 经典门户，这些模板不是本教程所必需的。 与之相反，你可以关闭 Office 365 管理中心。
 
-#### 从 Azure 门户激活权限管理
+#### <a name="to-activate-rights-management-from-the-azure-portal"></a>从 Azure 门户激活权限管理
 
 1.  转到 [ Azure 经典门户](http://go.microsoft.com/fwlink/p/?LinkID=275081)并登录。
 
-2.  在左窗格中，单击“ACTIVE DIRECTORY” 。
+2.  在左窗格中，单击**ACTIVE DIRECTORY**。
 
 3.  在 **“Active Directory”** 页中，单击 **“权限管理”**。
 
@@ -51,10 +51,10 @@
 
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
-|关于如何激活权限管理以后如何在激活该服务后控制谁能对文件和电子邮件进行保护   →|[激活 Azure 权限管理](../deploy-use/activate-azure-classic.md)|
-|关于默认模板以及如何创建新的自定义模板   →|[为 Azure 权限管理配置自定义模板](../deploy-use/create-template.md)|
+|关于如何激活权限管理以后如何在激活该服务后控制谁能对文件和电子邮件进行保护   →|[激活 Azure Rights Management](../deploy-use/activate-azure-classic.md)|
+|关于默认模板以及如何创建新的自定义模板   →|[为 Azure Rights Management 配置自定义模板](../deploy-use/create-template.md)|
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

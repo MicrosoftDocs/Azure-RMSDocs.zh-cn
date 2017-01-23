@@ -4,15 +4,15 @@ description: "有关安装客户端（将信息保护栏添加到 Office 应用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 01/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
-ms.openlocfilehash: 71972b0a057b1958dfa5e5b4af41b65d5080a086
+ms.sourcegitcommit: bd3cbea29183c39abaa66aa5dcec8a14ad0b0757
+ms.openlocfilehash: bccddf228b33bcd8d36ef6af55dea9015cad34d0
 
 
 ---
@@ -31,21 +31,77 @@ ms.openlocfilehash: 71972b0a057b1958dfa5e5b4af41b65d5080a086
 
 安装客户端之前，请检查是否具有 Azure 信息保护客户端所需的操作系统版本和应用程序：[Azure 信息保护要求](../get-started/requirements-azure-rms.md)。 此外，对于客户端的预览版本，运行 Windows 7 SP1 的计算机需要 [KB 2533623](https://support.microsoft.com/en-us/kb/2533623)，其可在安装客户端后安装。 如果需要此更新但尚未安装，系统会提示你进行安装。
 
+
 ## <a name="to-install-the-azure-information-protection-client-manually"></a>手动安装 Azure 信息保护客户端
 
-1. [下载客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)后，运行可执行文件，例如 **AzInfoProtection.exe** 并按照提示安装客户端。 此安装需要本地管理权限。
+> [!NOTE]
+> 此安装需要本地管理权限。
 
-    如果无法连接到 Office 365 或 Azure Active Directory，但想要通过使用本地策略看到和体验 Azure 信息保护的客户端以用于演示目的，选择此选项以安装演示策略。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。 
+    
+1. [下载客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)后，运行可执行文件，例如 **AzInfoProtection.exe** 并按照提示安装客户端。
+    
+    如果无法连接到 Office 365 或 Azure Active Directory，但出于演示目的，想要通过本地策略看到和体验 Azure 信息保护客户端，请选择此选项以安装**演示策略**。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。
+    
+    深入了解安装内容：
 
-2. 开始使用 Azure 信息保护客户端：如果计算机运行 Office 2010，请重新启动计算机。 对于其他版本的 Office，重新启动任何 Office 应用程序。
+    - 公开发行版将安装适用于 Office 应用程序的 Azure 信息保护服务。 
+    
+    - 最新预览版的客户端将安装适用于 Office 应用程序的 Azure 信息保护服务，请右键单击文件资源管理器（一款受保护文件的查看器）的选项，Windows PowerShell cmdlet 就会批量分类和保护文件。 
+        
+        请注意，仅可通过指定 **PowerShellOnly=true** 参数安装 PowerShell 模块 (RMSProtection)。 例如： `AzInfoProtection_PREVIEW_1.3.98.0.exe  PowerShellOnly=true`
+
+2. 若要完成安装： 
+
+    - 如果计算机运行的是 Office 2010，请重新启动计算机。 
+        
+        **如果安装了客户端的预览版**：除了重启计算机，还请打开一个使用 Azure 信息保护服务的 Office 用程序（如 Word），然后确认是否有任何要求首次使用时更新注册表的提示。 利用[服务发现](../rms-client/client-deployment-notes.md#rms-service-discovery)功能填充注册表项。 
+    
+    - 对于其他版本的 Office，重新启动任何 Office 应用程序。 
+        
+        **如果安装了客户端的预览版**：除了重启 Office 应用程序，还请关闭并重启文件资源管理器。
 
 ## <a name="to-install-the-azure-information-protection-client-for-users"></a>为用户安装 Azure 信息保护客户端
 
-可以编写脚本，并通过使用命令行选项自动安装 Azure 信息保护客户端。 若要查看安装选项，请使用 **/help** 运行可执行文件。 例如：`AzInfoProtection.exe /help`。
+可以编写脚本，并通过使用命令行选项自动安装 Azure 信息保护客户端。 若要查看安装选项，请使用 **/help** 运行可执行文件。 例如： `AzInfoProtection.exe /help`
 
-以无提示方式安装客户端的示例：`AzInfoProtection.exe /passive | quiet`
+有关客户端正式发布版的安装示例：`AzInfoProtection.exe /quiet`
 
-Microsoft 更新目录中也包含 Azure 信息保护客户端的正式版，因此可以通过使用该目录的任何软件更新服务来安装和更新客户端。 客户端的预览版不包括在 Microsoft 更新目录中。
+有关仅利用预览版客户端无提示安装 PowerShell 模块的示例：`AzInfoProtection_PREVIEW_1.3.98.0.exe  PowerShellOnly=true /quiet`
+
+如果在运行 Office 2010 的计算机上安装客户端的预览版，并且你的用户不是其计算机的本地管理员，请指定 **ServiceLocation** 参数。 有关详细信息，请参阅下一节。
+
+Microsoft 更新目录中也包含 Azure 信息保护客户端的公开发行版，因此可通过使用该目录的任意软件更新服务来安装和更新客户端。 客户端的预览版不包括在 Microsoft 更新目录中。
+
+### <a name="preview-version-and-office-2010-only"></a>仅限预览版和 Office 2010
+
+对于客户端预览版和 Office 2010，当为用户安装客户端时，请指定用于 Azure 权限管理服务的 ServiceLocation 参数和 URL。 此参数和值将创建和设置以下注册表项：
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\Activation
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
+
+使用以下过程标识要为 ServiceLocation 参数指定的值。 
+
+#### <a name="to-identify-the-value-to-specify-for-the-servicelocation-parameter"></a>若要标识要为 ServiceLocation 参数指定的值
+
+1. 对于 PowerShell 会话，请先运行 [Connect-AadrmService](https://docs.microsoft.com/powershell/aadrm/vlatest/connect-aadrmservice)，并指定要连接到 Azure 权限管理服务的管理员凭据。 然后运行 [Get-AadrmConfiguration](https://docs.microsoft.com/powershell/aadrm/vlatest/get-aadrmconfiguration)。 
+ 
+    如果尚未安装适用于 Azure 权限管理服务的 Windows PowerShell 模块，请参阅[安装适用于 Azure 权限管理的 Windows PowerShell](../deploy-use/install-powershell.md)。
+
+2. 在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
+
+    示例：**LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
+
+3. 在该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+
+    剩余字符串就是要为 ServiceLocation 参数指定的值。
+
+有关为 Office 2010 和 Azure RMS 无提示安装客户端的示例：`AzInfoProtection.exe /quiet ServiceLocation=https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com`
+
 
 ## <a name="to-uninstall-the-azure-information-protection-client"></a>卸载 Azure 信息保护客户端
 
@@ -164,8 +220,9 @@ Microsoft 更新目录中也包含 Azure 信息保护客户端的正式版，因
 
 若要检查客户端的发行版本信息，请参阅[版本发行历史记录](client-version-release-history.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

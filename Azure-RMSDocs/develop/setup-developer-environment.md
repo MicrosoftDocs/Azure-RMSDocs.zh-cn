@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: b369c480cc9841a7c8d92f95af3319e0e49f43d0
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: bde72c5da6ae30a78221d226f650285a9c4fc83e
 
 
 ---
@@ -33,14 +33,10 @@ ms.openlocfilehash: b369c480cc9841a7c8d92f95af3319e0e49f43d0
 |[Windows Phone](windows-phone-apps.md)|Windows Phone 应用程序可以通过使用 Azure Active Directory Rights Management (AAD RM)，利用 MS RMS SDK 4.2 在其应用中启用集成信息保护。|
 |[Windows 应用商店](winrt-sdk.md)|Windows 应用商店应用程序可以通过使用 Azure Active Directory Rights Management (AAD RM)，利用 MS RMS SDK 4.2 在其应用中启用集成信息保护。|
 
- 
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

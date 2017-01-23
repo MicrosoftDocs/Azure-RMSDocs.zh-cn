@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60e64b1fb1184aaa51b6664ecb5288d6ff861413
-ms.openlocfilehash: 04364bc5daec881fe3c55d5cd41e7be11ac91ae7
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: febd7d90a1a762de73894724f3cf3401aec0d7b9
 
 
 ---
@@ -65,7 +65,7 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 -   引入更新以改进错误消息传送和故障排除体验。
 -   加密操作的显著性能改进。
 
-### <a name="july-2015-update-adds-support-for-linux-c-development"></a>2015 年 7 月更新 - 添加针对 Linux / C++ 开发的支持
+### <a name="july-2015-update---adds-support-for-linux--c-development"></a>2015 年 7 月更新 - 添加针对 Linux / C++ 开发的支持
 
 此版本添加了以下功能：
 
@@ -73,7 +73,7 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
     有关详细信息，请参阅[入门](get-started.md)。
 
-### <a name="may-2015-update-adds-logging-control"></a>2015 年 5 月更新 - 添加日志记录控制
+### <a name="may-2015-update---adds-logging-control"></a>2015 年 5 月更新 - 添加日志记录控制
 
 此版本添加了针对以下操作系统的支持：
 
@@ -91,15 +91,15 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
     有关详细信息，请参阅 [MSProtection:resetStateWithCompletionBlock](https://msdn.microsoft.com/library/mt210991.aspx)。
 
-### <a name="february-2015-update-adds-windows-store-application-support"></a>2015 年 2 月更新 - 添加 Windows 应用商店应用程序支持
+### <a name="february-2015-update---adds-windows-store-application-support"></a>2015 年 2 月更新 - 添加 Windows 应用商店应用程序支持
 
 此版本添加了针对 Windows 应用商店应用程序的支持，并且与 Windows Phone、Android 和 iOS/OS X 版本的 RMS SDK 4.1 具有相同功能。
 
-### <a name="january-2015-update-adds-winphone-platform-support"></a>2015 年 1 月更新 - 添加 WinPhone 平台支持
+### <a name="january-2015-update---adds-winphone-platform-support"></a>2015 年 1 月更新 - 添加 WinPhone 平台支持
 
 此版本添加了针对 Windows Phone 操作系统的支持，并且与 Android 和 iOS/OS X 版本的 RMS SDK 4.1 具有相同功能。
 
-### <a name="october-2014-update-upgrade-to-microsoft-rms-sdk-41"></a>2014 年 10 月更新 - 升级到 Microsoft RMS SDK 4.1
+### <a name="october-2014-update---upgrade-to-microsoft-rms-sdk-41"></a>2014 年 10 月更新 - 升级到 Microsoft RMS SDK 4.1
 
 4.1 版本的 RMS SDK 向 Google Android 和 Apple iOS / OS X 添加了以下新功能。
 
@@ -217,12 +217,9 @@ Microsoft Rights Management SDK 4.2 将 RMS 应用程序实现提升到了一个
 
 **A**：OS X SDK 仅使用 Xcode 4.6 及更高版本以及 OS X 10.8 和更高版本。
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

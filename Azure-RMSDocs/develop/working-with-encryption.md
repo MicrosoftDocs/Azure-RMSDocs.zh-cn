@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37d9906b5df00b6ec6eeb6739766c00bd5cef37b
-ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ca54dd3ceece96c03de140fcfc3202afdd94796a
 
 
 ---
 
-# <a name="howto-work-with-encryption-settings"></a>操作说明：使用加密设置
+# <a name="how-to-work-with-encryption-settings"></a>操作说明：使用加密设置
 
 本主题将针对加密包，并显示其使用的一些代码段。
 
@@ -63,7 +63,7 @@ ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
                                     &amp;pLicenseHandle);
 
 
-## <a name="protect-files-with-aes128-cbc4k"></a>使用 AES-128 CBC4K 保护文件
+## <a name="protect-files-with-aes-128-cbc4k"></a>使用 AES-128 CBC4K 保护文件
 
     C++
 
@@ -80,7 +80,7 @@ ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
                            &amp;dwEncryptionMode);
 
 
-## <a name="protect-files-with-aes128-ecb-deprecated-algorithms"></a>使用 AES-128 ECB（不推荐使用的算法）保护文件
+## <a name="protect-files-with-aes-128-ecb-deprecated-algorithms"></a>使用 AES-128 ECB（不推荐使用的算法）保护文件
 
 此示例还演示支持*不推荐使用的算法*的新方法。
 
@@ -98,12 +98,10 @@ ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
                            IPC_LI_PREFERRED_ENCRYPTION_PACKAGE,
                            &amp;dwEncryptionMode);
 
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

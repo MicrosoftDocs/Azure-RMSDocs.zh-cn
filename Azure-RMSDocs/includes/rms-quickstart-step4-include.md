@@ -11,7 +11,7 @@
 
 ![RM 教程屏幕截图](../media/AzRMS_Tutorial_4_Screenshots.png)
 
-#### 查看受保护的文档附件
+#### <a name="to-view-the-protected-document-attachment"></a>查看受保护的文档附件
 
 1.  由于 Azure 权限管理对 Word 文档进行了保护，因此该电子邮件有两个附件。 这实际上是同一文件的两个版本，仅文件扩展名不同。 打开文件扩展名为 **.ppdf** 的版本 (**Confidential.ppdf**)。
 
@@ -27,12 +27,12 @@
 
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
-|关于如何查看受 Azure 权限管理保护的文件的完整说明   →|[查看和使用受权限管理保护的文件](../rms-client/sharing-app-view-use-files.md)|
-|关于免费订阅：个人 RMS   →|[个人 RMS 和 Azure 权限管理](../understand-explore/rms-for-individuals.md)|
+|关于如何查看受 Azure 权限管理保护的文件的完整说明   →|[查看和使用受 Rights Management 保护的文件](../rms-client/sharing-app-view-use-files.md)|
+|关于免费订阅：个人 RMS   →|[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)|
 |关于你所看到的两个版本的电子邮件附件文件   →|[自动创建的 .ppdf 文件是什么文件？](../rms-client/sharing-app-dialog-box.md)|
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

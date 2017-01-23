@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: eb20483bd3a2be60e1b9fcee173ebeabcb5b6d93
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 5f9c19503cebd0888203bf4158ff59d916630453
 
 
 ---
@@ -36,17 +36,10 @@ ms.openlocfilehash: eb20483bd3a2be60e1b9fcee173ebeabcb5b6d93
 
 **注意**  从 Windows Server 2008 开始，支持模板功能的使用。
 
- 
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-
-
-
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

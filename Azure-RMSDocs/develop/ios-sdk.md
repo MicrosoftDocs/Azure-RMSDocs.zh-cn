@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c0b885c35dcac0237788a69486d8f736c97c0c4
-ms.openlocfilehash: 96b71d26461559aa8e53960e7e8f3f748b7ebb1d
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 96b281d7bf3073cbe99a844a440a357572813b4a
 
 
 ---
@@ -111,12 +111,9 @@ ms.openlocfilehash: 96b71d26461559aa8e53960e7e8f3f748b7ebb1d
 
 * [iOS/OS X API 参考](https://msdn.microsoft.com/library/dn758306.aspx)
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
