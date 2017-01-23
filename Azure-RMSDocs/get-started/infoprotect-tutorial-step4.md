@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: dc4cf3426bca306b66e2b23c3dd63373f62c9b7c
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: bcf1e9ee7a2d6cf8fb264533f150b350ce0a9e56
 
 
 ---
@@ -62,8 +62,9 @@ ms.openlocfilehash: dc4cf3426bca306b66e2b23c3dd63373f62c9b7c
 [« 步骤 3](infoprotect-tutorial-step3.md)
 [步骤 5 »](infoprotect-tutorial-step5.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

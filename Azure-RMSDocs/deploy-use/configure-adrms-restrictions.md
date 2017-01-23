@@ -4,15 +4,15 @@ description: Identify the limitations, prerequisites, and recommendations if you
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 01/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: e4ed4513728180179876ff49797f96e9f0f785b3
+ms.sourcegitcommit: 22af60687ad030e686ba843ced6d450487353a0e
+ms.openlocfilehash: 66c19b296ce170d0f7f5317c87bee532edd9bb78
 
 
 ---
@@ -66,6 +66,8 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
     
     - [Cryptographic Mode 2](https://technet.microsoft.com/library/hh867439.aspx)（加密模式 2）：可以通过使用 [RMS Analyzer tool](https://www.microsoft.com/en-us/download/details.aspx?id=46437)（RMS Analyzer 工具）确认 AD RMS 群集加密模式的版本，及其总体运行状况。   
     
+    - Active Directory 中未注册服务连接点 (SCP)：结合使用 AD RMS 保护和 Azure 信息保护时未使用 SCP。 如果已就 AD RMS 部署注册了 SCP，必须将其删除，以便 Azure 权限管理保护功能成功[发现服务](../rms-client/client-deployment-notes.md#rms-service-discovery)。
+    
     - 配置 AD RMS 服务器，以搭配使用 SSL/TLS 和受连接的客户端信任的有效 x.509 证书：生产环境需要，但用于测试或评估时不需要。
     
     - 已配置的权限模板。
@@ -100,8 +102,9 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 若要配置用于 AD RMS 保护的标签，请参阅[如何配置标签以应用权限管理保护](../deploy-use/configure-policy-protection.md)。 
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

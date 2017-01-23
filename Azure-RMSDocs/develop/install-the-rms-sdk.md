@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 8ac3478738693cbc8119ee756f2b0ac566661bea
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 226a813d88a0e867b9fc4fe17e7d75f50ddd2372
 
 
 ---
@@ -41,12 +41,10 @@ ms.openlocfilehash: 8ac3478738693cbc8119ee756f2b0ac566661bea
 ## <a name="related-topics"></a>相关主题
 
 * [开发环境文件](sdk-elements.md)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

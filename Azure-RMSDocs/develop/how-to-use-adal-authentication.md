@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 25b9f1c7ee6ad2eb1d642a72713e0dd24703c2bc
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0e138ec62a16b52fd5657037988d8a9b8daa754f
 
 
 ---
 
-# <a name="howto-use-adal-authentication"></a>操作说明：使用 ADAL 身份验证
+# <a name="how-to-use-adal-authentication"></a>操作说明：使用 ADAL 身份验证
 
 使用 Azure Active Directory 身份验证库 (ADAL) 为应用向 Azure RMS 进行身份验证。
 
@@ -123,8 +123,9 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
 - [IPC_PROMPT_CTX](https://msdn.microsoft.com/library/hh535278.aspx)
 - [IPC_AAD_APPLICATION_ID](https://msdn.microsoft.com/library/mt661867.aspx)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

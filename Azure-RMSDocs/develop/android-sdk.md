@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ff3b1ce2ec5984c1e79bc9d10c5fc913b4fd3291
-ms.openlocfilehash: 1925eb3a630f61e995886989ad351a8263c9779f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 617bb94af65c3e475bf40c51021d20b9755defb8
 
 
 ---
@@ -145,12 +145,10 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 [Android API 参考](https://msdn.microsoft.com/library/dn758245.aspx)
 
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

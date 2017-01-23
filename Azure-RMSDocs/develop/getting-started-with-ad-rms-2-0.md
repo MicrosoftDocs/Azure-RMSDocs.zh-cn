@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 8c5b7d17b5feffa07028498e8d7f201b25626478
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 577f9813203f7bb7be4b5a7fd489dfba8d7fd33f
 
 
 ---
@@ -71,12 +71,9 @@ RMS SDK 2.1 支持一系列重要的客户端和服务器平台。 有关详细�
 * [RMS 开发人员指南](developers-guide.md)
 * [AD RMS 开发人员活动角](http://blogs.msdn.com/b/rms/)
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

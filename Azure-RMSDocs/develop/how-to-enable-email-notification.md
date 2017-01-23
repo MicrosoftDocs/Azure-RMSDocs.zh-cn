@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 5da480834485d58028b366c8fbb9a53412cd7c6a
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: de5e3d831e20b06e88aedf6255a34ab5aa2bb58c
 
 
 ---
 
-# <a name="howto-enable-email-notification"></a>操作说明：启用电子邮件通知
+# <a name="how-to-enable-email-notification"></a>操作说明：启用电子邮件通知
 
 受保护的内容所有者通过电子邮件通知可以在其内容受到访问时收到通知。
 
@@ -62,12 +62,10 @@ ms.openlocfilehash: 5da480834485d58028b366c8fbb9a53412cd7c6a
 - [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
 - [IPC\_LI\_APP\_SPECIFIC\_DATA](https://msdn.microsoft.com/library/hh535287.aspx)
 - [IPC\_NAME\_VALUE\_LIST](https://msdn.microsoft.com/library/hh535277.aspx)。
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

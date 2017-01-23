@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dc452dac3a86cd9cc39127d5a29106ae87ba94be
-ms.openlocfilehash: 790f0d847c57b9e13d9074298b3e89584dc24760
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: a71b5550193e2f92edf64d541393899c07899522
 
 
 ---
@@ -85,15 +85,9 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 
 [Windows Phone SDK](http://dev.windowsphone.com/en-us/downloadsdk)
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-
-
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

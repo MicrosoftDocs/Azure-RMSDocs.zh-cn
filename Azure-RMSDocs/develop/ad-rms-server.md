@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 498a06a65d61417600cd5501a0d04935cb733c37
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: e57b98e7ddbcdaef11f73d220eda42231c6c4141
 
 
 ---
@@ -53,12 +53,9 @@ ms.openlocfilehash: 498a06a65d61417600cd5501a0d04935cb733c37
 * [Activating a User](https://msdn.microsoft.com/library/Cc530378)（激活用户）
 * [Creating an Issuance License](https://msdn.microsoft.com/library/Aa362355)（创建颁发许可证）
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
