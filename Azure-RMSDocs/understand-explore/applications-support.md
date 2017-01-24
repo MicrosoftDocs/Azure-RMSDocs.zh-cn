@@ -4,7 +4,7 @@ description: "了解最常使用的最终用户应用程序（例如 Office 应�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection

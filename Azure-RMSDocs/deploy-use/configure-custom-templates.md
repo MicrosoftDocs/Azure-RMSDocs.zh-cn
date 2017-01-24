@@ -4,7 +4,7 @@ description: "面向管理员提供的有关配置和管理使用权限模板的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
