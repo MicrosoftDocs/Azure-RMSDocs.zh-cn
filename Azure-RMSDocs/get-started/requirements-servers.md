@@ -13,14 +13,14 @@ ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: e4bf159cea6298e5a5577a2fa4de3dd3beeb47d9
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: c46ee88b18cabab7a8a32d5c971c1fad72ec162e
 
 
 ---
 
 
-# <a name="onpremises-servers-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
+# <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -62,8 +62,9 @@ Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 支持 R
 ## <a name="next-steps"></a>后续步骤
 若要查看其他要求，请参阅 [Azure Rights Management 的要求](requirements-azure-rms.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

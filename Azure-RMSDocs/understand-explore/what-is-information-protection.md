@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: dfcaa9a1fef0a4a2011f1385d849c4c2887a022e
-ms.openlocfilehash: ab8aa40f0ed3947264de9d07cd6fa7a7030a6964
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: c0ea97dc29855ad46271dac251c804ca602cee69
 
 
 ---
@@ -108,11 +108,9 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 通过其他名称了解 Azure 信息保护或 Azure Rights Management？ 请参阅[该服务的替代术语列表](azure-rms-aka.md)。
 
-## <a name="comments"></a>注释
-
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

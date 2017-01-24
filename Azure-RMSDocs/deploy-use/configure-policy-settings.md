@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
-ms.openlocfilehash: 9611b1fb11a66bbe1bd2b717d3c16bec6f944874
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: d0f94713674bf5e8eb71c177819bc7a7192575e4
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 9611b1fb11a66bbe1bd2b717d3c16bec6f944874
 
 >*适用于：Azure 信息保护*
 
-除了信息保护栏标题和工具提示，Azure 信息保护策略中有 4 个设置适用于所有用户、所有设备：
+除了信息保护栏标题和工具提示，Azure 信息保护策略中有&4; 个设置适用于所有用户、所有设备：
 
 ![Azure 信息保护策略全局设置](../media/info-protect-policy-settings.png)
 
@@ -62,17 +62,10 @@ ms.openlocfilehash: 9611b1fb11a66bbe1bd2b717d3c16bec6f944874
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-
-
-
-
-
-
-
-
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

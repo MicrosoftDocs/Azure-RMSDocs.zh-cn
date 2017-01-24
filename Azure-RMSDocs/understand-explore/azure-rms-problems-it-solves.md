@@ -13,8 +13,8 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0a8332cf2402139046ba4f1ca13c4b2bb9a333a1
-ms.openlocfilehash: 6f29595f87b3cb7aa57d7037bad96ddca5fc7ea0
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: d7b97a810e113cfeed1c115b8a75dba36f06745c
 
 
 ---
@@ -35,7 +35,7 @@ Azure RMS 是 [Azure 信息保护](what-is-information-protection.md)使用的�
 |通过电子邮件安全地共享文件|√ 当文件通过电子邮件共享（[共享保护](../rms-client/sharing-app-protect-by-email.md)）时，该文件会作为电子邮件的附件受到保护，电子邮件中包含如何打开受保护附件的说明。 电子邮件文本没有加密，因此，收件人始终能够阅读这些说明。 但是，由于附加的文档受到保护，因此只有授权用户才能将其打开，即使将该电子邮件或文档转发给其他用户。|
 |审核和监视|√ 你可以 [审核和监视受保护文件的使用情况](../deploy-use/log-analyze-usage.md)，即使这些文件已经离开了组织的边界。<br /><br />例如，你为 Contoso, Ltd. 工作 你正在与来自 Fabrikam, Inc 的 3 名人员一起致力于一个联合项目你通过电子邮件向这 3 人发送了一个已保护并限制为只读的文档。 Azure RMS 审核功能可以提供以下信息：<br /><br />- 你指定的来自 Fabrikam 的人是否打开了该文档，以及打开时间（如果已打开过）。<br /><br />- 你未指定的其他人是否尝试打开该文档却失败了（发生这种情况可能是因为该文档已转发或保存到其他人可以访问的共享位置）。<br /><br />- 指定的任何人是否尝试打印或更改该文档却失败了。|
 |支持所有常用设备，而不仅仅是 Windows 计算机|√ [支持的设备](../get-started/requirements-client-devices.md) 包括：<br /><br />- Windows 计算机和手机<br /><br />- Mac 计算机<br /><br />- iOS 平板电脑和手机<br /><br />- Android 平板电脑和手机|
-|支持企业与企业之间的协作|√ 由于 Azure RMS 是云服务，因此在与其他组织共享受保护内容前，不需要显式配置与这些组织的信任关系。 如果他们已有 Office 365 或 Azure AD 目录，则会自动支持组织间的协作。 如果他们没有 Office 365 或 Azure AD 目录，则用户可以注册免费的 [个人 RMS](rms-for-individuals.md) 订阅。|
+|支持企业与企业之间的协作|√ 由于 Azure RMS 是云服务，因此在与其他组织共享受保护内容前，不需要显式配置与这些组织的信任关系。 如果他们已有 Office 365 或 Azure AD 目录，则会自动支持组织间的协作。 如果他们没有 Office&365; 或 Azure AD 目录，则用户可以注册免费的 [个人 RMS](rms-for-individuals.md) 订阅。|
 |支持本地服务，以及 Office 365|√ 除了 [与 Office 365 无缝集成](office-apps-services-support.md) 以外，在部署 [RMS 连接器](../deploy-use/deploy-rms-connector.md)时，你还可以将 Azure RMS 与以下本地服务结合使用：<br /><br />- Exchange Server<br /><br />- SharePoint Server<br /><br />- 运行文件分类基础结构的 Windows Server|
 |轻松激活|√ 为用户 [激活权限管理服务](../deploy-use/activate-service.md) 只需在 Azure 经典门户中单击几下鼠标。|
 |可以根据需要在整个组织内扩展|√ 由于 Azure RMS 可作为云服务运行并借助 Azure 灵活地向上和向外扩展，因此，你不需要设置或部署其他本地服务器。|
@@ -72,9 +72,11 @@ Azure RMS 支持以下安全、合规性和法规要求：
 
 若要了解 Azure RMS 对于管理员和用户所呈现的内容，请参阅 [运行中的 Azure RMS](what-admins-users-see.md)。
 
-如果对有关 Azure RMS 工作的详细技术信息感兴趣，请参阅 [Azure RMS 的工作原理](how-does-it-work.md) 
+如果对有关 Azure RMS 工作的详细技术信息感兴趣，请参阅 [Azure RMS 的工作原理](how-does-it-work.md)
+
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

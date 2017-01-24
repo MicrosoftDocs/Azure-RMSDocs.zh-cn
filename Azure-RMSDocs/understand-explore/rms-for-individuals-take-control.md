@@ -13,8 +13,8 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f9999db44758251f7b9b4c8f86549b1ee36e83d3
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 19b71ee6016971e1d989db8961b8b77a50fd0124
 
 
 ---
@@ -45,8 +45,9 @@ ms.openlocfilehash: f9999db44758251f7b9b4c8f86549b1ee36e83d3
 
 如果用户（而不是管理员）可以在个人 RMS 的 Azure Active Directory 中创建其帐户，则如何发现用户已进行了此操作？  请参阅[如何发现用户已注册了个人 RMS](rms-for-individuals-identify-sign-up.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

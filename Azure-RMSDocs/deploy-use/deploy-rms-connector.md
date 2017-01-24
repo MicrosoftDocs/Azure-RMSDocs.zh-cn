@@ -13,8 +13,8 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 386453578a5ea8eeb874d7f27badb8f041dda659
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: eaa1d7a0a74fa68f9bf1d15f348dbb45d14cee9a
 
 
 ---
@@ -36,7 +36,7 @@ RMS 连接器是一种小型化服务，你可将其安装在本地，也可以�
 ![RMS 连接器体系结构概述](../media/RMS_connector.png)
 
 
-### <a name="onpremises-servers-supported"></a>支持的本地服务器
+### <a name="on-premises-servers-supported"></a>支持的本地服务器
 
 RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server，以及运行 Windows Server 并使用文件分类基础结构来进行分类并将策略应用于文件夹内 Office 文档的文件服务器。 
 
@@ -50,7 +50,7 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 
 可以在混合方案中使用 RMS 连接器，即使一些用户连接到了在线服务。 例如，一些用户的邮箱使用 Exchange Online，一些用户的邮箱使用 Exchange Server。 安装 RMS 连接器后，所有用户都可以使用 Azure RMS 保护和使用电子邮件和附件，并且信息保护在两套部署配置中无缝合作。
 
-### <a name="support-for-customermanaged-keys-byok"></a>支持由客户管理密钥 (BYOK)
+### <a name="support-for-customer-managed-keys-byok"></a>支持由客户管理密钥 (BYOK)
 
 如果你自行管理 Azure RMS 的租户密钥（自带密钥，即 BYOK 方案），RMS 连接器和使用该连接器的本地服务器不会访问包含你的租户密钥的硬件安全模块 (HSM)。 这是因为，使用租户密钥的所有加密操作都是在 Azure RMS 中执行的，而不是在在本地。
 
@@ -97,7 +97,9 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 
 转到步骤 1：[安装并配置 Azure Rights Management 连接器](install-configure-rms-connector.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Jan17_HO4-->
 
 

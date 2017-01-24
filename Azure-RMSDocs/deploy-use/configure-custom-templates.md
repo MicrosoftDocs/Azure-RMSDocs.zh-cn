@@ -13,8 +13,8 @@ ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: ea64bd17994a9ce38ed0d758ec63156a7f64c732
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: bab64fcb5f4ac208bfc7f1f385c558a77e9eb796
 
 
 ---
@@ -63,10 +63,11 @@ ms.openlocfilehash: ea64bd17994a9ce38ed0d758ec63156a7f64c732
 
 -   [使用 PowerShell 管理模板](configure-templates-with-powershell.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

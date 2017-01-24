@@ -13,8 +13,8 @@ ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 0a0741e01b6ff446b16383dbaa26b31327427237
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: d6aab332470545660fdd50d023a94b559bc584a8
 
 
 ---
@@ -53,7 +53,9 @@ ms.openlocfilehash: 0a0741e01b6ff446b16383dbaa26b31327427237
 ## <a name="next-steps"></a>后续步骤
 返回 [激活 Azure Rights Management](activate-service.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

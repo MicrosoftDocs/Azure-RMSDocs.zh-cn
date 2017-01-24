@@ -13,13 +13,13 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3786fa2529b442f7d31603be09f9b80f1a46d171
-ms.openlocfilehash: 238cc238e62db4a74ce2b10e0e68803cc66b718f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9c78ac81a90d46ab8d56cd205474fdf85f486c3d
 
 
 ---
 
-# <a name="migration-phase-4-post-migration-tasks"></a>迁移阶段 4 - 迁移后任务
+# <a name="migration-phase-4---post-migration-tasks"></a>迁移阶段 4 - 迁移后任务
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
 
@@ -35,7 +35,7 @@ ms.openlocfilehash: 238cc238e62db4a74ce2b10e0e68803cc66b718f
 
 解除 AD RMS 服务器的授权后，你可能想要利用此机会来查看你在 Azure 经典门户中的模板并将其合并以使用户有较少的选项，或重新配置它们，或者甚至添加新模板。 这还将是发布默认模板的好时机。 有关详细信息，请参阅[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)。
 
-## <a name="step-9-rekey-your-azure-information-protection-tenant-key"></a>步骤 9. 更新 Azure 信息保护租户密钥
+## <a name="step-9-re-key-your-azure-information-protection-tenant-key"></a>步骤 9. 更新 Azure 信息保护租户密钥
 此步骤仅在所选租户密钥拓扑是由 Microsoft 管理，而不是由客户管理（含 Azure 密钥保管库的 BYOK）时适用。
 
 此步骤为可选步骤，但如果 Azure 信息保护租户密钥由 Microsoft 管理并已从 AD RMS 迁移，则建议执行此步骤。 在此情况下更新密钥有助于保护 Azure 信息保护租户密钥免受 AD RMS 密钥的潜在安全漏洞的影响。
@@ -51,9 +51,10 @@ ms.openlocfilehash: 238cc238e62db4a74ce2b10e0e68803cc66b718f
 
 完成迁移后，请检查[部署路线图](deployment-roadmap.md)以确定是否需要执行其他任何部署任务。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

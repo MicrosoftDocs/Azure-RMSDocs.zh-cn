@@ -5,7 +5,7 @@ keywords:
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 5844ddd3f675cdc5a88de3abc3170d7e8a89aee9
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 5e063b19eb6d4e1b389357155e1cbbb893add73d
 
 
 ---
@@ -133,7 +133,9 @@ ms.openlocfilehash: 5844ddd3f675cdc5a88de3abc3170d7e8a89aee9
 
 你会发现阅读 Azure 信息保护的一些[常见问题](faqs.md)和浏览其他一些文档文章很有用处。 但是，如果已准备好开始为组织部署 Azure 信息保护，那么下一步应为 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)。 
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

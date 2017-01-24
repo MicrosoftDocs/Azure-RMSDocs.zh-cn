@@ -13,8 +13,8 @@ ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: c4b510dac964d0703b7eba8266a244f40b83f403
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 3c54f0c2f3fcbd312bb3ade521e5dd7f4a12eb85
 
 
 ---
@@ -71,10 +71,11 @@ ms.openlocfilehash: c4b510dac964d0703b7eba8266a244f40b83f403
 
 - [Azure 信息保护租户密钥的操作](operations-tenant-key.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

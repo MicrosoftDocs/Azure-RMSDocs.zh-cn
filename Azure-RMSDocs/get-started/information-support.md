@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 02/01/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: 0a9f88f179e5ac936211e61f8bf6dae9ec83506f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 1f7647fd41ba71b4cda4c942d86b6dbfe9c870f8
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 0a9f88f179e5ac936211e61f8bf6dae9ec83506f
 |----------------|---------------|
 |请参阅该服务的推荐文档 →|使用 [Azure 信息保护文档](https://docs.microsoft.com/information-protection/)起始页。|
 |提供有关文档的反馈或咨询有关文档的问题 →|发送电子邮件至 [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
-|接收有关信息保护的推文，以及来自产品组的关于文档更新的公告 →|关注帮助领导 Microsoft 信息保护团队的 Dan Plastina 的动态。 参阅 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)|
+|接收有关信息保护的推文，以及来自产品组的关于文档更新的公告 →|关注帮助领导 Microsoft 信息保护团队的 Dan Plastina 的动态。 参阅 [Dan Plastina @DanPlastina](https://twitter.com/DanPlastina)|
 |检查订阅信息和支持的功能 →|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
 
 
@@ -90,9 +90,10 @@ ms.openlocfilehash: 0a9f88f179e5ac936211e61f8bf6dae9ec83506f
 
 -   [论坛：用户 RMS（应用程序）](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmsapps)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

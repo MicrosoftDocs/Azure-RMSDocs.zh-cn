@@ -13,14 +13,14 @@ ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 49df2de156d5859d9192d8b179e4ba7ef2d653ea
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0aad5eeb88dd471ece1bf6425a4efe8050bbdf2c
 
 
 ---
 
 
-# <a name="microsoftmanaged-tenant-key-lifecycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
+# <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -29,7 +29,7 @@ ms.openlocfilehash: 49df2de156d5859d9192d8b179e4ba7ef2d653ea
 ## <a name="revoke-your-tenant-key"></a>撤消你的租户密钥
 取消 Azure 信息保护订阅时，Azure 信息保护会停止使用租户密钥，用户无需执行任何操作。
 
-## <a name="rekey-your-tenant-key"></a>更新你的租户密钥
+## <a name="re-key-your-tenant-key"></a>更新你的租户密钥
 更新密钥也称为滚动密钥。 不要更新你的租户密钥，除非在真正必要的情况下。 旧版客户端（例如 Office 2010）无法适当处理密钥更改。 在这种情况下，必须通过使用组策略或同等机制，清除计算机上的 Rights Management 状态。 但是，某些法律事件可能迫使你更新租户密钥。 例如：
 
 -   你的公司拆分为两家或更多公司。 当你更新你的租户密钥时，新公司将无法访问你的员工发布的新内容。 如果有旧租户密钥的副本，他们可以访问旧内容。
@@ -95,10 +95,11 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 |未经授权的个人或恶意软件获取了使用你的租户密钥的权限，但密钥本身并未泄露。|更新你的租户密钥在这种情况下并不奏效，需要进行根源分析。 如果进程或软件 Bug 是导致未经授权的个人获得访问权限的原因，则必须解决这一问题。|
 |在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户续订他们的租户密钥。|
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 88b6c5fffb1be59563c2b93c8db244edc3201f3c
-ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9185b1e28638c8885f4130dfe969c3bdf39d07f5
 
 
 ---
@@ -300,9 +300,10 @@ ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
 
 现在你需要做的只是创建新的文件管理任务（该任务使用同一脚本但可能使用不同模板），并为刚配置的分类属性配置条件。 例如，选择将“运算符”值设为“等于”且“值”为“高”的“个人身份信息”属性，而不是我们前面配置的条件（**RMS** 属性，**等于**，**是**）。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

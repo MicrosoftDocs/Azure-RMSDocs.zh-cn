@@ -13,8 +13,8 @@ ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5aac7b9fae12642c9846a70c5d271c7600af4096
-ms.openlocfilehash: 7a10b0f1fceca58a80145962dfaedddeea64dd64
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: c0f13fba558a0196c87d62b5127a75380140014e
 
 
 ---
@@ -159,11 +159,12 @@ ms.openlocfilehash: 7a10b0f1fceca58a80145962dfaedddeea64dd64
 
 现在可以转到[步骤 3。激活 Azure 信息保护租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

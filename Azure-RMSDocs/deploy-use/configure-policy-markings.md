@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: 81c0f97d1684091753b68e93e8b9c06f0d713264
-ms.openlocfilehash: 70d9feb8e45c1a6a266529997434dcc1e9f7899d
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 7f55f7376c882f3994c596ee76c24a59189fd845
 
 
 ---
@@ -79,10 +79,11 @@ ms.openlocfilehash: 70d9feb8e45c1a6a266529997434dcc1e9f7899d
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

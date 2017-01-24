@@ -13,8 +13,8 @@ ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 18a222c7927ecc4394266518619941b8a4b6499f
-ms.openlocfilehash: 751422489ec4eec074764ff0417640b22a394325
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 5b438ed97df754b88b0d654439153dea03c8250c
 
 
 ---
@@ -56,9 +56,10 @@ RMS 共享应用程序是支持 Office 2010 所必需的免费可下载应用程
 ## <a name="next-steps"></a>后续步骤
 若要查看其他应用程序和服务如何支持 Azure 信息保护中的 Azure Rights Management 服务，请参阅[应用程序如何支持 Azure Rights Management 服务](applications-support.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

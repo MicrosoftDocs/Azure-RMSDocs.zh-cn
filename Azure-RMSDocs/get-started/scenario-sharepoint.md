@@ -13,13 +13,13 @@ ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 371e566a166dad74b55266db23e034f926942a26
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 1c25f1c8792f7d6d99930dd01c3f3c92a56bbd8a
 
 
 ---
 
-# <a name="scenario-retain-control-of-documents-stored-in-sharepoint"></a>方案 - 保留对 SharePoint 中所存储文档的控制
+# <a name="scenario---retain-control-of-documents-stored-in-sharepoint"></a>方案 - 保留对 SharePoint 中所存储文档的控制
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -103,9 +103,9 @@ SharePoint 站点 **销售预测和报告**现已进行了安全协作配置。 
 
 -   与技术支持联系：helpdesk@vanarsdelltd.com
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

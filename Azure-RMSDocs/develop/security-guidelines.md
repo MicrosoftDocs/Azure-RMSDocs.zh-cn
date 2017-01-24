@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
 translationtype: Human Translation
-ms.sourcegitcommit: 2142a13d742b2dc0b59c3b996db69406cd818149
-ms.openlocfilehash: b225a923b7f067fd7dc0ca67742275e399a8aa7c
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: f477af5bdf8094fed26d18150b8b8a876de51089
 
 ---
 
@@ -94,8 +94,9 @@ API 允许用户解密或不解密信息；该信息没有任何固有保护。 
 建议标准（暂时没有）。
 首选标准（暂时没有）。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

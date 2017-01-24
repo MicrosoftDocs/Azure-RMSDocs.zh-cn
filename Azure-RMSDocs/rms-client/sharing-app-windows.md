@@ -13,8 +13,8 @@ ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: abb1f0e1786aadbf3e9ab4b6a1679afeb32bedf1
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 5c65e007c971ad6d62ee61e15134e16d7bf87624
 
 
 ---
@@ -39,9 +39,10 @@ ms.openlocfilehash: abb1f0e1786aadbf3e9ab4b6a1679afeb32bedf1
 ## <a name="see-also"></a>另请参阅
 [FAQ for Rights Management Sharing Application for Windows](http://technet.microsoft.com/dn467883)（适用于 Windows 的 Rights Management 共享应用程序常见问题解答）
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: d6c88b1b9bc53dddea000ecff65abb73d06eb7ee
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 8acc80758eb27cfbe537b705342220418c22fa96
 
 
 ---
@@ -63,11 +63,12 @@ ms.openlocfilehash: d6c88b1b9bc53dddea000ecff65abb73d06eb7ee
 
 - [在对话框中指定设置](sharing-app-dialog-box.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

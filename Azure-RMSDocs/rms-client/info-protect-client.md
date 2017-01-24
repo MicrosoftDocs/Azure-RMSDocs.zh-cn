@@ -27,7 +27,7 @@ ms.openlocfilehash: bccddf228b33bcd8d36ef6af55dea9015cad34d0
 
 ![具有默认策略的 Azure 信息保护栏](../media/info-protect-bar-default.png)
 
-从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#microsoft-下载中心) 下载 Azure 信息保护客户端。 目前可安装正式 (GA) 版和预览版。 预览版包括用于评估的新功能，随时有可能更改。 有关详细信息，请参阅以下博客文章公告：[Azure 信息保护 12 月预览版现已可用](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)
+从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#microsoft-下载中心) 下载 Azure 信息保护客户端。 目前可安装正式 (GA) 版和预览版。 预览版包括用于评估的新功能，随时有可能更改。 有关详细信息，请参阅以下博客文章公告：[Azure 信息保护&12; 月预览版现已可用](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)
 
 安装客户端之前，请检查是否具有 Azure 信息保护客户端所需的操作系统版本和应用程序：[Azure 信息保护要求](../get-started/requirements-azure-rms.md)。 此外，对于客户端的预览版本，运行 Windows 7 SP1 的计算机需要 [KB 2533623](https://support.microsoft.com/en-us/kb/2533623)，其可在安装客户端后安装。 如果需要此更新但尚未安装，系统会提示你进行安装。
 
@@ -223,6 +223,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

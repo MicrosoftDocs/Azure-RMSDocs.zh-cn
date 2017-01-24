@@ -13,8 +13,8 @@ ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b1b134aa8a0c7ef7cded627a7d25df4a90e9faa
-ms.openlocfilehash: 811622757a4e44afb84ec2df84341ecbcd2e7a8f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: d40a8b2062b0b8ccb2dd6115d179e45e64181798
 
 
 ---
@@ -65,13 +65,13 @@ RMS 客户端包含在名为 **setup_msipc_***<arch>***.exe** 中，其中 *<arc
 |Windows Server 2008 R2|Windows 7（最少装有 SP1）|
 |Windows Server 2008（仅限 AD RMS）|Windows Vista（最少装有 SP2，仅限 AD RMS）|
 
-### <a name="which-processors-or-platforms-support-the-rms-client"></a>哪些处理器或平台支持 RMS 客户端？
+### <a name="which-processors-or-platforms-support-the--rms-client"></a>哪些处理器或平台支持 RMS 客户端？
 x86 和 x64 计算平台支持 RMS 客户端。
 
-### <a name="where-is-the-rms-client-installed"></a>RMS 客户端安装在哪个位置？
+### <a name="where-is-the--rms-client-installed"></a>RMS 客户端安装在哪个位置？
 默认情况下，RMS 客户端安装在 %ProgramFiles%\Active Directory Rights Management Services Client 2.<minor version number> 中。
 
-### <a name="what-files-are-associated-with-the-rms-client-software"></a>与 RMS 客户端软件关联的文件有哪些？
+### <a name="what-files--are-associated-with-the-rms-client-software"></a>与 RMS 客户端软件关联的文件有哪些？
 以下文件将连同 RMS 客户端软件一起安装：
 
 -   Msipc。dll
@@ -177,7 +177,7 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 
 > - 当用户从 Office 应用程序启动登录时，将使用进行身份验证所用的用户名（和域）来标识要使用的 Azure 信息保护租户。 在这种情况下，不需要注册表设置，也不会检查 SCP。
 
-### <a name="ad-rms-only-enabling-serverside-service-discovery-by-using-active-directory"></a>仅限 AD RMS：使用 Active Directory 启用服务器端服务发现
+### <a name="ad-rms-only-enabling-server-side-service-discovery-by-using-active-directory"></a>仅限 AD RMS：使用 Active Directory 启用服务器端服务发现
 如果你的帐户具有足够的权限（AD RMS 服务器的企业管理员和本地管理员），则你可以在安装 AD RMS 根群集服务器时自动注册服务连接点 (SCP)。 如果 SCP 已存在于林中，则你必须先删除现有的 SCP，然后才能注册新的 SCP。
 
 你可以在安装 AD RMS 后，使用以下过程注册和删除 SCP。 在开始之前，请确保你的帐户具有所需的权限（AD RMS 服务器的企业管理员和本地管理员）。
@@ -198,10 +198,10 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 
 5.  选择“将 SCP 设置为当前证书群集”选项，然后单击“确定”。
 
-### <a name="enabling-clientside-service-discovery-by-using-the-windows-registry"></a>使用 Windows 注册表启用客户端服务发现
+### <a name="enabling-client-side-service-discovery-by-using-the-windows-registry"></a>使用 Windows 注册表启用客户端服务发现
 使用 SCP 或 SCP 不存在时的替代方法是：配置客户端计算机上的注册表，使 RMS 客户端能够找到其 AD RMS 服务器。
 
-#### <a name="to-enable-clientside-ad-rms-service-discovery-by-using-the-windows-registry"></a>使用 Windows 注册表启用客户端 AD RMS 服务发现
+#### <a name="to-enable-client-side-ad-rms-service-discovery-by-using-the-windows-registry"></a>使用 Windows 注册表启用客户端 AD RMS 服务发现
 
 1.  执行 Regedit.exe 打开 Windows 注册表编辑器：
 
@@ -258,9 +258,9 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 
 6.  关闭注册表编辑器。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 
