@@ -13,8 +13,8 @@ ms.assetid: 10cf9371-a61b-495f-9d42-898448806994
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 68b3d74d32b98f44cfdf9cf78b7a9151f16124ce
-ms.openlocfilehash: b4afd639439f0549ce38de1e63a1798d30680066
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: a71123cd055052e6e4a372a945727063b7c2d666
 
 
 ---
@@ -71,7 +71,7 @@ ms.openlocfilehash: b4afd639439f0549ce38de1e63a1798d30680066
 > 
 > -   你必须在最低服务器版的 **Windows Server 2012 R2** 上使用 AD FS，或者使用支持 OAuth 2.0 协议的备用身份验证提供程序。
 
-### <a name="multifactor-authentication-mfa-and-azure-information-protection"></a>多重身份验证 (MFA) 和 Azure 信息保护
+### <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>多重身份验证 (MFA) 和 Azure 信息保护
 若要将多因素身份验证 (MFA) 和 Azure 信息保护结合起来使用，至少需要以下条件之一：
 
 -   Office 2013（最低版本）：
@@ -161,7 +161,7 @@ ms.openlocfilehash: b4afd639439f0549ce38de1e63a1798d30680066
 支持查看受保护内容。
 
 ##### <a name="footnote-2"></a>脚注 2 
-将未受保护的文档上传到 SharePoint Online 和 OneDrive for Business 中的受保护库时，可查看受保护的文档。 
+将未受保护的文档上传到 SharePoint Online 和 OneDrive for Business 中受保护的库中时，可查看受保护的文档。 
 
 ##### <a name="footnote-3"></a>脚注 3
 如果收件人接收了受保护的电子邮件，且未将 Exchange 作为邮件服务器，或如果发送者属于另一组织，则只能在功能丰富的电子邮件客户端（如 Outlook）中打开此内容。 不能从 Outlook Web Access 打开此内容。
@@ -248,7 +248,7 @@ Azure RMS 当前不支持以下应用程序：
 
 -   对于 Windows 计算机：要求最低版本为 Windows 7 Service Pack 1
 
-## <a name="onpremises-servers-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
+## <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
 
 使用 Azure Rights Management 连接器时 Azure 信息保护支持以下本地服务器产品。 该连接器充当本地服务器和 Azure Rights Management 服务（Azure 信息保护使用该服务保护 Office 文档和电子邮件）之间的通信接口（中继）。 
 
@@ -285,9 +285,10 @@ Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 支持 R
 
 有关如何为这些本地服务器配置 Rights Management 连接器的详细信息，请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

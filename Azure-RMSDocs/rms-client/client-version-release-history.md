@@ -1,5 +1,5 @@
 ---
-title: "Azure 信息保护客户端：版本发行历史记录 |Azure 信息保护"
+title: "Azure 信息保护客户端&colon;版本发行历史记录 |Azure 信息保护"
 description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本的新增功能或改进功能。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,8 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
-ms.openlocfilehash: fe6491f413b928a85b2a181ee22cfe17f39149ef
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 77c448230aef0b3364822f38ace4f490bfc2db5f
 
 
 ---
@@ -62,8 +62,9 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 有关安装客户端的详细信息，请参阅[安装 Azure 信息保护客户端](info-protect-client.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 
