@@ -13,8 +13,8 @@ ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: aad5bc49b15b32c74352d5c9d6d48cd4f1f3cf9c
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 6a62cb54fcf6129a66c4be23f2270ce56967d5e4
 
 
 ---
@@ -59,7 +59,9 @@ ms.openlocfilehash: aad5bc49b15b32c74352d5c9d6d48cd4f1f3cf9c
 ## <a name="see-also"></a>另请参阅
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

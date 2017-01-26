@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: b3d801eb0f02361cc58b5f6fbf1303d58a6ad722
 
 
 ---
@@ -187,11 +187,11 @@ ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
 
     - **格式化**： 
     
-        - 采用以下格式的 9 位数：ddd-dd-dddd 或 ddd dd dddd 
+        - 采用以下格式的&9; 位数：ddd-dd-dddd 或 ddd dd dddd 
         
     - **未格式化**： 
     
-        - 采用以下格式的 9 位数：ddddddddd 
+        - 采用以下格式的&9; 位数：ddddddddd 
 
 
 用于测试的示例：
@@ -221,11 +221,12 @@ ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

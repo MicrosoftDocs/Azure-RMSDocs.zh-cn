@@ -4,7 +4,7 @@ description: "有关个人 RMS 的信息，此 RMS 是供组织内的用户使�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f89374ec327f51f3e8354aec57f0c0da9ddac585
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 6bf3aa5e12da7faa8c1b7c0461e652693111c59a
 
 
 ---
@@ -39,9 +39,10 @@ ms.openlocfilehash: f89374ec327f51f3e8354aec57f0c0da9ddac585
 ## <a name="next-steps"></a>后续步骤
 有关后台操作的分步说明和技术概述，请参阅[用户如何注册个人 RMS](rms-for-individuals-user-sign-up.md)。 
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

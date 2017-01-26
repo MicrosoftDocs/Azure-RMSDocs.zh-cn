@@ -13,8 +13,8 @@ ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: a0132404bb9ccb202c552aaca680659947d9c888
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 715e904e74528227dc011bb18c997c68be4c8eda
 
 
 ---
@@ -216,7 +216,9 @@ ms.openlocfilehash: a0132404bb9ccb202c552aaca680659947d9c888
 
 返回到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

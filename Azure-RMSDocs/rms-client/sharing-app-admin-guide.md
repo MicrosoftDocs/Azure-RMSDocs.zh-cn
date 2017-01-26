@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c9a5bcf46597ee65e2e0f36199f19935f8997048
-ms.openlocfilehash: adab568d173845f411fe5913786b137508485ef6
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 53bd4b52b73c4a487f7d5aa655fd9b372bb7ada3
 
 
 ---
@@ -169,7 +169,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 若要验证是否成功，请参阅本文中的[验证安装是否成功](#verifying-installation-success)部分。
 
-### <a name="to-install-the-rms-sharing-application-and-office-addin-only"></a>仅安装 RMS 共享应用程序和 Office 加载项
+### <a name="to-install-the-rms-sharing-application-and-office-add-in-only"></a>仅安装 RMS 共享应用程序和 Office 加载项
 
 1.  使用以下命令安装 AD RMS 客户端和 RMS 共享应用程序，指定现有文件夹创建日志文件：
 
@@ -273,7 +273,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
         DefaultUser="&lt;default_user&gt;"
 
-### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-addin-only"></a>验证仅安装 RMS 共享应用程序和 Office 加载项是否成功
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-add-in-only"></a>验证仅安装 RMS 共享应用程序和 Office 加载项是否成功
 
 1.  若要验证 Setup_ipviewer.exe 命令是否成功运行，请在安装日志文件中搜索以下文本：**安装成功或错误状态：0**
 
@@ -310,7 +310,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
         x86\setup_ipviewer.exe /uninstall /quiet
         ```
 
-### <a name="to-uninstall-the-office-addin"></a>卸载 Office 加载项
+### <a name="to-uninstall-the-office-add-in"></a>卸载 Office 加载项
 
 -   使用以下命令：
 
@@ -404,9 +404,10 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 ## <a name="next-steps"></a>后续步骤
 有关其他技术信息，包括保护级别（本机和通用）之间的区别、支持的文件类型和文件扩展名以及如何更改默认保护级别的相关说明，请参阅 [Rights Management 共享应用程序技术概述](sharing-app-admin-guide-technical.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

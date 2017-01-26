@@ -13,8 +13,8 @@ ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: c114059e99f3caed4fa5e2c48fe0428cb5847f68
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 11f884779316626f81b3f75b9562ce58646f6ba3
 
 
 ---
@@ -74,8 +74,9 @@ Get-Command -Module aadrm
 ## <a name="see-also"></a>另請參閱
 [使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

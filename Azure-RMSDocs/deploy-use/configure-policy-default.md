@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
 translationtype: Human Translation
-ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
-ms.openlocfilehash: 5c3d3962d72a0dc3d08bdb869f6b00f4524477b5
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: e1c1d4a0a2cd48be5322be4f4fedd3350e3b2e0a
 
 
 ---
@@ -40,7 +40,7 @@ ms.openlocfilehash: 5c3d3962d72a0dc3d08bdb869f6b00f4524477b5
 |机密|此数据包括敏感业务信息。 向未经授权的用户公开此数据可能会对组织造成损坏。 有关机密信息的示例包括员工信息、各个客户项目或合同和销售帐户数据。|**已启用**：打开 <br /><br />**颜色**：橙色<br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />**条件**：无<br /><br />**保护**：无|
 |秘密|此数据包括必须予以保护的高度敏感业务信息。 向未经授权的用户公开秘密数据可能会对组织造成严重损坏。 有关秘密信息的示例包括个人身份信息、客户记录、源代码和预先公布的财务报告。|**已启用**：打开 <br /><br />**颜色**：红色<br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />**条件**：无<br /><br />**保护**：无|
 
-## <a name="sublabels"></a>子标签
+## <a name="sub-labels"></a>子标签
 
 |Label|工具提示|设置|
 |-------------------------------|---------------------------|-----------------|
@@ -60,8 +60,9 @@ ms.openlocfilehash: 5c3d3962d72a0dc3d08bdb869f6b00f4524477b5
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。 
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

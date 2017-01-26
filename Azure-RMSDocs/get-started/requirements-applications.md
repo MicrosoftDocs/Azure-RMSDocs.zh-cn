@@ -169,6 +169,6 @@ Azure RMS 当前不支持以下应用程序：
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -65,6 +65,6 @@ ms.openlocfilehash: bcf1e9ee7a2d6cf8fb264533f150b350ce0a9e56
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: b4ba043aa351b4b6b118a83bd5fe54898ea17492
 
 
 ---
@@ -112,10 +112,11 @@ ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
 
 与查看受保护文档相似，当收件人接收电子邮件时，首先会对他们进行身份验证。 如果他们已被授权查看电子邮件，则电子邮件将会打开，并提供为该用户指定的受限使用权限。 例如，如果你选择了 **“不要全部答复”**，则电子邮件窗口中的 **“全部答复”** 选项不可用。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

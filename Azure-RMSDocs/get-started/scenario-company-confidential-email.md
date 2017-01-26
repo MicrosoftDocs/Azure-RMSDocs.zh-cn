@@ -13,13 +13,13 @@ ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 3c5576936c07d3921ef8fd70f9542e62383d0751
 
 
 ---
 
-# <a name="scenario-send-a-companyconfidential-email"></a>方案 - 发送公司机密电子邮件
+# <a name="scenario---send-a-company-confidential-email"></a>方案 - 发送公司机密电子邮件
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -92,7 +92,7 @@ ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
 
 ![Azure RMS 快速部署的用户文档模板](../media/AzRMS_UsersBanner.png)
 
-### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook"></a>如何使用 Outlook 发送包含公司机密信息的电子邮件
+### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook"></a>如何使用 Outlook 发送包含公司机密信息的电子邮件
 
 1.  在 Outlook 中，创建新电子邮件，添加要包含的任何附件，然后从*&lt;组织名称&gt;*选择用户或组。
 
@@ -102,7 +102,7 @@ ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
 
 3.  发送电子邮件。
 
-### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook-web-app"></a>如何使用 Outlook Web App 发送包含公司机密信息的电子邮件
+### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook-web-app"></a>如何使用 Outlook Web App 发送包含公司机密信息的电子邮件
 
 1.  在 Outlook Web App 中，创建新电子邮件，添加要包含的任何附件，然后从通讯簿选择*&lt;组织名称&gt;*用户或组。
 
@@ -125,7 +125,7 @@ ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
 ### <a name="example-customized-user-documentation"></a>自定义用户文档示例
 ![Azure RMS 快速部署的用户文档示例](../media/AzRMS_ExampleBanner.png)
 
-#### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook"></a>如何使用 Outlook 发送包含公司机密信息的电子邮件
+#### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook"></a>如何使用 Outlook 发送包含公司机密信息的电子邮件
 
 1.  在 Outlook 中，新建电子邮件，添加要包含的任何附件，然后从通讯簿选择 VanArsdel 用户或组。
 
@@ -135,7 +135,7 @@ ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
 
 3.  发送电子邮件。
 
-#### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook-web-app"></a>如何使用 Outlook Web App 发送包含公司机密信息的电子邮件
+#### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook-web-app"></a>如何使用 Outlook Web App 发送包含公司机密信息的电子邮件
 
 1.  在 Outlook Web App 中，新建电子邮件，添加要包含的任何附件，然后从通讯簿选择 VanArsdel 用户或组。
 
@@ -155,9 +155,10 @@ ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
 
     -   电子邮件：helpdesk@vanarsdelltd.com
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

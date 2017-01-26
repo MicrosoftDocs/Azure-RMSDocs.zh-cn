@@ -13,8 +13,8 @@ ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55895dd6fd0e106c33914a232e2d00d98e8a154a
-ms.openlocfilehash: bb74ea0e88430cfb784b3f88bd3e6fd75373b9a2
+ms.sourcegitcommit: ed836a1f64ccb3f7e176ad19d27af1021c423cd9
+ms.openlocfilehash: 7727e512b83d09adaf79d4f5d586c16fbd049170
 
 
 ---
@@ -50,14 +50,12 @@ ms.openlocfilehash: bb74ea0e88430cfb784b3f88bd3e6fd75373b9a2
 > 
 > 支持[从 AD RMS 到 Azure 信息保护](http://technet.microsoft.com/library/Dn858447.aspx)和[从 Azure 信息保护到 AD RMS](http://msdn.microsoft.com/library/azure/dn629429.aspx) 的迁移路径。 如果你部署 Azure 信息保护，然后决定不再想要使用此云服务，请参阅[解除 Azure 信息保护授权和停用 Azure 信息保护](../deploy-use/decommission-deactivate.md)。
 
-## <a name="comments"></a>注释
-
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -4,7 +4,7 @@ description: "此免费帐户的注册说明以及此过程工作原理的技术
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 1de26925961ad560cb9aa86ebc16f7354c7cff1f
 
 
 ---
@@ -48,7 +48,7 @@ ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 
 现在你的帐户已经创建，你可以随时开始保护文件并读取其他人保护的文件。 若提示登录以便保护文件或读取受保护文件，请输入你用于创建个人 RMS 帐户的电子邮件地址和密码。
 
-## <a name="technical-overview-of-the-signup-process"></a>注册过程的技术概述
+## <a name="technical-overview-of-the-sign-up-process"></a>注册过程的技术概述
 个人 RMS 使用自助注册过程，该过程也可由其他使用 Microsoft 基于云的技术对用户进行身份验证的服务使用。
 
 以下是用户注册个人 RMS 但其组织没有 Office 365 订阅或 Azure 订阅，因此 Azure 中没有目录可对用户进行身份验证时后台发生的情况：
@@ -94,10 +94,9 @@ ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 ## <a name="next-steps"></a>后续步骤
 请参阅[管理员如何才能控制为个人 RMS 创建的帐户](rms-for-individuals-take-control.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

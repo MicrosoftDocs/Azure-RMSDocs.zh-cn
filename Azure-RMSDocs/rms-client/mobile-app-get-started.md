@@ -14,8 +14,8 @@ ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 0a0c6e5f68f016ec6f921b16ff3063599b45f465
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: b2fb20fb4613c688a8ab956fbe91d62041801959
 
 
 ---
@@ -44,8 +44,9 @@ ms.openlocfilehash: 0a0c6e5f68f016ec6f921b16ff3063599b45f465
 
 对于其他问题，请访问我们的 [Yammer 站点](https://www.yammer.com/AskIPTeam)或[发送电子邮件到信息保护团队](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

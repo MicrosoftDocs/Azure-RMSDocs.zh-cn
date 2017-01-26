@@ -13,13 +13,13 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0f2fb608be647e967d8e5857414f25ebba1d4d29
 
 
 ---
 
-# <a name="scenario-secure-your-most-few-valuable-files"></a>方案 - 保护你最重要的（几个）文件
+# <a name="scenario---secure-your-most-few-valuable-files"></a>方案 - 保护你最重要的（几个）文件
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -70,7 +70,7 @@ ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
 
 2.  发布新的模板。
 
-### <a name="to-protect-the-files-inplace"></a>就地保护文件
+### <a name="to-protect-the-files-in-place"></a>就地保护文件
 
 1.  在文件资源管理器中，导航到包含要保护的文件的第一个文件夹：
 
@@ -145,9 +145,9 @@ ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
 
 -   如果无法访问这些文件或者如果发现这些文件中存在可疑更改，请呼叫 IT 部门通过受保护的电子邮件发送给你的全天候支持呈报热线。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

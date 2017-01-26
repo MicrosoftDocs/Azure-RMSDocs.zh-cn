@@ -13,8 +13,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 9dea728836d52249471d3dde69b63a9a2cd1467c
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ca8694a26f0f9b537a3e3a6b1f468d89cefe6206
 
 
 ---
@@ -154,7 +154,7 @@ Azure Rights Management 服务将日志作为一系列 blob 写入。
 |c-ip|Address|发出请求的客户端的 IP 地址。|64.51.202.144|
 
 
-#### <a name="exceptions-for-the-userid-field"></a>user-id 字段的例外
+#### <a name="exceptions-for-the-user-id-field"></a>user-id 字段的例外
 虽然 user-id 字段通常指示发出请求的用户，但在两种例外情况下，该值不映射到真正用户：
 
 -   值 **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**。
@@ -236,11 +236,12 @@ Azure Rights Management 服务有很多请求类型，但下表列出了其中�
 
 若要深入了解适用于 Azure Rights Management 服务的 Windows PowerShell，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](administer-powershell.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

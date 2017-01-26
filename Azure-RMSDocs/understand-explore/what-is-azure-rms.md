@@ -13,8 +13,8 @@ ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e731d9fe973dff7f208502b726ec154129cf7e6
-ms.openlocfilehash: f5f7be6a076c2a2eb962288712630d825edd87c3
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: c1db27980508a0bbcd50a4a12f384193dd30440f
 
 
 ---
@@ -58,8 +58,9 @@ Azure Rights Management (Azure RMS) 是 [Azure 信息保护](what-is-information
 > [!TIP]
 > 有关其他信息和帮助，请使用 [Azure 信息保护的信息和支持](../get-started/information-support.md)中的资源和链接。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 

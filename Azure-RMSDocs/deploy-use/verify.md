@@ -13,8 +13,8 @@ ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 8d10bc4aeeed6f5b3d150f6e765c6457f5741409
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ec1bdd126c53405af62069d8f440b51e5bb4aad7
 
 
 ---
@@ -36,11 +36,12 @@ ms.openlocfilehash: 8d10bc4aeeed6f5b3d150f6e765c6457f5741409
 
 可以使用日志记录监视你组织使用 Azure Rights Management 服务的情况。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](log-analyze-usage.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

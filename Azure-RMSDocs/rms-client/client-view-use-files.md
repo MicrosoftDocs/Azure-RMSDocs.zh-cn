@@ -13,8 +13,8 @@ ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
-ms.openlocfilehash: b08b7e055f05729057f5137a7d523ff452a58f48
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 364891123720daaacacbea1b382b7d101d75cd1a
 
 
 ---
@@ -64,8 +64,9 @@ ms.openlocfilehash: b08b7e055f05729057f5137a7d523ff452a58f48
 
 -   [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

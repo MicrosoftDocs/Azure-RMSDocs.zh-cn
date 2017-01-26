@@ -13,8 +13,8 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 750919e3d8be88a1a1028d83c89ece55ea4e8690
-ms.openlocfilehash: 65ab175da5c5ab74090bf6bdb88af766dc55e334
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 774ea4fe8bb5e0ae7335bb3c106b57393167ee39
 
 
 ---
@@ -222,9 +222,10 @@ Remove-PSDrive MyRmsAdmin -force
 ## <a name="next-steps"></a>后续步骤
 转到[阶段 2 - 客户端配置](migrate-from-ad-rms-phase2.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

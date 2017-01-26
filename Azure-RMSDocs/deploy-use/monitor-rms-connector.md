@@ -13,8 +13,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e5939bb469af198a74d81724c5417eb63db7732b
-ms.openlocfilehash: bf73a79218fa8dba2b90115d0c1573a29f791023
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0af2ad5107cfa958e3309352304f6bdbee4f7316
 
 
 ---
@@ -84,7 +84,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 **已更新授权帐户列表。**
 
-当 RMS 连接器下载了有权使用 RMS 连接器的帐户的最新列表（现有帐户及任何更改）时，将记录此事件。 如果 RMS 连接器可以与 Azure Rights Management 服务通信，则此列表每 15 分钟下载一次。
+当 RMS 连接器下载了有权使用 RMS 连接器的帐户的最新列表（现有帐户及任何更改）时，将记录此事件。 如果 RMS 连接器可以与 Azure Rights Management 服务通信，则此列表每&15; 分钟下载一次。
 
 ----
 
@@ -192,9 +192,10 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 5.  当你捕获了所需的跟踪时，还原步骤 3 的行，并再次停止和启动 IIS。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 

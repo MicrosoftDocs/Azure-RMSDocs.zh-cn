@@ -4,7 +4,7 @@ description: "使用 Azure Rights Management 服务时，模板会自动下载�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/12/2016
+ms.date: 01/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 2cfe5fd787811cae71bb08c458bd6767e4bc35e4
+ms.sourcegitcommit: 15bd23bb727937193cb51e732586d4c334357c04
+ms.openlocfilehash: 325c64b211ed52bdb11685af00507aef2aa85312
 
 
 ---
@@ -49,13 +49,13 @@ ms.openlocfilehash: 2cfe5fd787811cae71bb08c458bd6767e4bc35e4
     1.  提供你的 Office 365 用户名和密码：
 
         ```
-        $Cred = Get-Credential
+        $UserCredential = Get-Credential
         ```
 
     2.  通过运行以下两个命令连接到 Exchange Online 服务：
 
         ```
-        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $Cred -Authentication Basic –AllowRedirection
+        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
         ```
 
         ```
@@ -186,7 +186,9 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 ## <a name="see-also"></a>另请参阅
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Dec16_HO1-->
+
+<!--HONumber=Jan17_HO4-->
 
 

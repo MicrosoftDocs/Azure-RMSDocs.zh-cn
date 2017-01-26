@@ -13,8 +13,8 @@ ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e66bfa436bf811b34cf3cfe1b2d68a6a4e137c2
-ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 91a5485b2860edf6f2095027e1c0d69ec96141d7
 
 
 ---
@@ -52,7 +52,7 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 
 ###### <a name="footnote-1"></a>脚注 1 
 
-当文件具有扩展名 .ppdf 或者是受保护的文本文件或图像文件（例如 .ptxt 或 .pjpg）时，Rights Management 共享应用程序使用 256 位进行常规保护和本机保护。
+当文件具有扩展名 .ppdf 或者是受保护的文本文件或图像文件（例如 .ptxt 或 .pjpg）时，Rights Management 共享应用程序使用&256; 位进行常规保护和本机保护。
 
 如何存储和保护加密密钥：
 
@@ -149,8 +149,9 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 > [!TIP]
 > 有关其他信息和帮助，请使用 [Azure 信息保护的信息和支持](../get-started/information-support.md)中的资源和链接。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

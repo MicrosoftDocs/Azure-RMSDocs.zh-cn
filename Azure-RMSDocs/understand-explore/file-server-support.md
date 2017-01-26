@@ -13,8 +13,8 @@ ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 1d9213aa6be382510558020411d1667fd2866ca7
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 589f0ff68e1e58c0903eb40dcfd0697a500c8491
 
 
 ---
@@ -40,10 +40,11 @@ ms.openlocfilehash: 1d9213aa6be382510558020411d1667fd2866ca7
 ## <a name="next-steps"></a>后续步骤
 现在你已经了解应用程序和服务如何支持 Azure RMS，你可能会希望将 Azure RMS 与Rights Management、Active Directory Rights Management Services (AD RMS) 的本地版本进行比较。 有关功能、要求和安全控制的比较，请参阅 [比较 Azure Rights Management 和 AD RMS](compare-azure-rms-ad-rms.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: b9979d48af7146f8021de840248f71cb1399b777
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: ac980951f9b4cef9816706a23e3807fbe40a62f5
 
 
 ---
@@ -34,9 +34,9 @@ ms.openlocfilehash: b9979d48af7146f8021de840248f71cb1399b777
 
 -   请注意权限管理共享应用程序创建的文件扩展名。 .pfile 和 .ppdf 文件扩展名是最明显的示例，但是也有一些其他文件在原本就受权限管理服务保护时会更改其文件扩展名。 有关详细信息，请参阅[Rights Management 共享应用程序管理员指南](http://technet.microsoft.com/library/dn339003.aspx)中的[支持的文件类型和文件扩展名](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions)部分。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

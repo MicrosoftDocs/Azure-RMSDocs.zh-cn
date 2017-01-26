@@ -13,13 +13,13 @@ ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 1b95c1bf1c747808c7baed97daa449f5c8bb234d
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9ae44cf7beba0f4af3078eedeac352e9792d497c
 
 
 ---
 
-# <a name="protect-a-file-on-a-device-protect-inplace-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序保护设备上的文件（就地保护）。
+# <a name="protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序保护设备上的文件（就地保护）。
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
@@ -28,7 +28,7 @@ ms.openlocfilehash: 1b95c1bf1c747808c7baed97daa449f5c8bb234d
 > [!TIP]
 > 当你尝试保护文件时看到任何错误，请参阅 [适用于 Windows 的 Microsoft Rights Management 共享应用程序的常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)。
 
-## <a name="to-protect-a-file-on-a-device-protect-inplace"></a>保护设备上的文件（就地保护）
+## <a name="to-protect-a-file-on-a-device-protect-in-place"></a>保护设备上的文件（就地保护）
 
 1.  选择文件资源管理器中要保护的文件。 右键单击该文件，选择“使用 RMS 保护”，然后选择“就地保护”。 例如：
 
@@ -65,8 +65,9 @@ ms.openlocfilehash: 1b95c1bf1c747808c7baed97daa449f5c8bb234d
 ## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

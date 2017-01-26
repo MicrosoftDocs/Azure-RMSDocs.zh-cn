@@ -13,8 +13,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: b98f7960a874ab6e5f1cd4b7225fd9ba89ff1ec3
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: d55c21efebc0a3053c7b54b363a0085838a245b8
 
 
 ---
@@ -64,10 +64,11 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 -   [FAQ for Document Tracking](http://go.microsoft.com/fwlink/?LinkId=523977)（文档跟踪常见问题解答）
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

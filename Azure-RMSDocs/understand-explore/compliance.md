@@ -13,8 +13,8 @@ ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 291198ed501854de1aa7ddbfc80cd7a7f1b4849c
-ms.openlocfilehash: a853aaa993bbb5e15e6c4b80d4c6f0581b6e9090
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 420e71ca2896582f254f6ab9d76e6543d079875c
 
 
 ---
@@ -55,9 +55,10 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 - Office 365 库：[Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 

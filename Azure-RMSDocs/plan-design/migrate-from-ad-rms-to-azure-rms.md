@@ -13,8 +13,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5774a94582e6a685f84a1fc6cd9915258bf7cbe0
-ms.openlocfilehash: 49c65779e5651f25082369822b60b09435c41041
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 30a154d67db81441cd48c56681ddb6552fc4cd18
 
 
 ---
@@ -197,9 +197,10 @@ ms.openlocfilehash: 49c65779e5651f25082369822b60b09435c41041
 ## <a name="next-steps"></a>后续步骤
 若要开始迁移，请转到[阶段 1 - 服务器端配置](migrate-from-ad-rms-phase1.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

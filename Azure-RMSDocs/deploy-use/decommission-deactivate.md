@@ -13,8 +13,8 @@ ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 865913eae3e0956c18d2caef4e68ab1dc07d74de
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 14f986ee7166122eed096188a66a1d1132d8d935
 
 
 ---
@@ -87,11 +87,12 @@ ms.openlocfilehash: 865913eae3e0956c18d2caef4e68ab1dc07d74de
 
 “权限管理状态”现在应显示为“非活动”，而“停用”选项将替换为“激活”。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
