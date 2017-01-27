@@ -4,15 +4,15 @@ description: "可以删除或重排用户可以在信息保护栏看到的标签
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/13/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 55895dd6fd0e106c33914a232e2d00d98e8a154a
-ms.openlocfilehash: 195a4ff44d0edc9d35ee30786bdddbcc821fc106
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: d8e0f53d85ee7a02ee7fef66eaf76ce6551535d2
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 195a4ff44d0edc9d35ee30786bdddbcc821fc106
 
 删除应用于文档和电子邮件的标签并发布 Azure 信息保护策略时，该标签在下次由 Azure 信息保护客户端打开时会自动从这些文档或电子邮件中删除。
 
-如果要保留标签，但不想在信息保护栏中显示标签，则不需要删除，只需要禁用标签。
+删除标签前，请考虑是否要将其改为禁用。 禁用已应用到文档和电子邮件的标签时，将不会从这些文档和电子邮件中删除已应用的标签，但此标签将不再显示为“信息保护”栏上用户可以选择的标签。 通过禁用此标签，可保持原始配置，以供希望用户以后选择此标签时使用，在此情况下，只需重新启用此标签即可。
 
 对标签进行排序，以便用户在信息保护栏中的逻辑进度中就可以看到它们。 例如，以敏感度递增的方式排列标签，以便用户先看到最不敏感的标签，最后看到最敏感的标签。 [默认策略](configure-policy-default.md)使用此配置。
 
@@ -57,10 +57,11 @@ ms.openlocfilehash: 195a4ff44d0edc9d35ee30786bdddbcc821fc106
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

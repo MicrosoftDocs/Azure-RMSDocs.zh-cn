@@ -14,18 +14,18 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: effe06fa10e501a52832436de038aba2858d44a9
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 85cd61e564b066458618c02b4ac20cddf6b7e183
 
 
 ---
 
-# RMS 开发人员指南
+# <a name="rms-developers-guide"></a>RMS 开发人员指南
 
-## 概述 ##
+## <a name="overview"></a>概述 ##
 现在可使用三代的 Rights Management SDK：适用于 Android、iOS/OS X、Windows 设备和 Linux 的 **Microsoft Rights Management SDK 4.2**、适用于 Windows 桌面客户端的 **Microsoft Rights Management SDK 2.1** 以及被取代的 **AD RMS SDK**。
 
-## 软件开发工具包 ##
+## <a name="software-development-kits"></a>软件开发工具包 ##
 | SDK | 说明 |
 |------|---------|
 | [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | 简化的下一代工具集，可提供轻型开发体验，以便通过 Microsoft Rights Managemen 实现对 Android、iOS、Mac OS X、Windows Phone/RT 和 Linux/C++ 设备应用的信息保护 |
@@ -33,10 +33,10 @@ ms.openlocfilehash: effe06fa10e501a52832436de038aba2858d44a9
 |[AD RMS SDK]()|**注意** - AD RMS SDK 利用客户端在 Msdrm.dll 中公开的功能，可用于 Windows Server 2012、Windows 8、Windows Server 2008 R2、Windows 7、Windows Server 2008 和 Windows Vista。 它可能在后续版本中变更或不可用。 请改用 Microsoft Rights Management Services SDK 2.1（它利用客户端在 Msipc.dll 中公开的功能）。|
 |[AD RMS 脚本编写 API]()| 用于创建脚本以管理 AD RMS 安装|
 
-## 代码示例和工具 ##
+## <a name="code-samples-and-tools"></a>代码示例和工具 ##
 这一 Microsoft 提供的 RMS 代码示例和开发人员支持工具集合跨越所有支持的操作系统（Android、iOS/OS X、Windows Phone 和 Windows 桌面），会定期更新以保持与其支持的 SDK 之间的兼容性。
 
-| 项目 | 操作系统 | 支持 SDK 版本 | 说明 |
+| 项目 | 操作系统 | 支持 SDK 版本 | 描述 |
 |------|------------------|------------------------|-------------|
 | [读取受 PFILE 保护的 PDF](https://blogs.msdn.microsoft.com/rms/2015/11/09/reading-a-pfile-protected-pdf/) | Windows 桌面| [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 及更高版本的 2.x SDK | **读取受 PFILE 保护的 PDF** 是我们 RMS 开发人员活动角博客上的一个简单代码示例，它使用 MSIPC 文件 API 来解密并打开受 PFILE 保护的 PDF 文档。|
 | [IpcManagedAPI](https://github.com/Azure-Samples/active-directory-dotnet-rms) | Windows 桌面 | [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 及更高版本的 2.x SDK | **IpcManagedAPI** 是 RMS SDK 2.1 的 .NET (C#) 表示形式，通过它可方便地使托管应用程序启用 RMS。|
@@ -50,8 +50,9 @@ ms.openlocfilehash: effe06fa10e501a52832436de038aba2858d44a9
 | [UI 库和示例应用](https://github.com/AzureAD/rms-sdk-ui-for-android) |Android|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 及更高版本的 4.x SDK|GitHub 上的 **适用于 Android 的 UI 库和示例应用**，以便你可以快速入门并在应用中重复使用我们的标准 UI。|
 | [Android 使用方案](https://msdn.microsoft.com/en-us/library/dn758246(v=vs.85).aspx) |Android|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 及更高版本的 4.x SDK|**Java 代码示例**，表示重要开发方案，以使你熟悉 RMS SDK。 相关示例包括使用 Microsoft 受保护的文件格式、自定义受保护的文件格式和自定义 UI 控件。|
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

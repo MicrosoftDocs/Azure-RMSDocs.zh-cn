@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 RMS 共享应用程序的�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 88b03e5e844e78db5dc8ac5f116d19899c5f354f
+ms.sourcegitcommit: 770be3f7423f8d47439096393bba7464629646c5
+ms.openlocfilehash: b90a0e1ab363c1d7f87d0b1a18503da641bf7cfb
 
 
 ---
@@ -43,7 +43,7 @@ Microsoft Rights Management 共享应用程序使用 [AD RMS 客户端 2.1 运�
 
 有关部署信息，请参阅[自动部署 Microsoft Rights Management 共享应用程序](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)
 
-## <a name="levels-of-protection-native-and-generic"></a>保护级别 – 本机和常规
+## <a name="levels-of-protection--native-and-generic"></a>保护级别 – 本机和常规
 Microsoft Rights Management 共享应用程序支持两个不同级别的保护，如下表中所述。
 
 |保护类型|本机|泛型|
@@ -102,25 +102,25 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
 也可以强制使 RMS 共享应用程序阻止文件保护（而不是应用本机保护或常规保护）。 例如，如果你具有一个必须能够打开特定文件才能处理其内容的自动应用程序或服务，这可能是必需的。 当你阻止保护某一文件类型时，用户无法使用 RMS 共享应用程序保护具有该文件类型的文件。 他们将在尝试保护此类文件时看到一条消息，提示管理员已阻止保护，并且他们必须取消保护该文件的操作。
 
-若要将 RMS 共享应用程序配置为将常规保护应用于默认已应用本机保护的所有文件，请对注册表进行以下编辑：
+若要将 RMS 共享应用程序配置为将常规保护应用于默认已应用本机保护的所有文件，请对注册表进行以下编辑。 请注意，如果不存在 RmsSharingApp 或 FileProtection 项，必须手动创建它们。
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**：创建名为 * 的新项。
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**：创建名为 * 的新项。
 
     此设置表示文件可具有任意文件扩展名。
 
-2.  在新添加的项 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\* 中，创建一个名为 **Encryption**、数据值为 **Pfile** 的新字符串值 (REG_SZ)。
+2.  在新添加的项 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection\\\* 中，创建一个名为 **Encryption**、数据值为 **Pfile** 的新字符串值 (REG_SZ)。
 
     此设置会导致 RMS 共享应用程序应用常规保护。
 
 这两个设置会导致 RMS 共享应用程序将常规保护应用于具有某一文件扩展名的所有文件。 如果这是你的目标，则无需进行任何进一步的配置。 但是，你可以为特定文件类型定义例外，以便它们仍受本机保护。 为此，你必须针对每个文件类型对注册表执行三个额外的编辑操作：
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**：添加一个具有该文件扩展名的新项（不带前面的句点）。
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**：添加一个具有该文件扩展名的新项（不带前面的句点）。
 
     例如，对于文件扩展名为 .docx 的文件，创建一个名为 **DOCX**的项。
 
-2.  在新添加的文件类型项（例如 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**）中，创建一个名为 **AllowPFILEEncryption**、值为 **0** 的新 DWORD 值。
+2.  在新添加的文件类型项（例如 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection\DOCX**）中，创建一个名为 **AllowPFILEEncryption**、值为 **0** 的新 DWORD 值。
 
-3.  在新添加的文件类型项（例如 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**）中，创建一个名为 **Encryption**、值为 **Native** 的新字符串值。
+3.  在新添加的文件类型项（例如 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection\DOCX**）中，创建一个名为 **Encryption**、值为 **Native** 的新字符串值。
 
 应用这些设置后，所有文件均受常规保护，但文件扩展名为 .docx 的文件除外，因为它们本身受 RMS 共享应用程序保护。
 
@@ -137,9 +137,10 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 ## <a name="see-also"></a>另請參閱
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

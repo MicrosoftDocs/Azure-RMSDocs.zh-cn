@@ -35,8 +35,8 @@ ms.openlocfilehash: 035327cdfc771bae7ff36dca1a7a888223222252
       <h2 class="section-heading"><span class="icon icon-warning"></span> 特色内容</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><mark><b>新增</b></mark> <a href="./deploy-use/configure-policy-scope.md">如何配置作用域内策略（预览）</a></li>
-          <li><mark><b>新增</b></mark> <a href="./rms-client/client-user-guide.md">用户指南（预览）</a></li>
+          <li><mark><b>新增</b></mark> <a href="./deploy-use/configure-policy-scope.md">如何配置作用域内策略（预览版）</a></li>
+          <li><mark><b>新增</b></mark> <a href="./rms-client/client-user-guide.md">用户指南（预览版）</a></li>
           <li><a href="./understand-explore/what-is-information-protection.md#resources-for-azure-information-protection">Microsoft Ignite 2016 的 Azure 信息保护研讨会</a></li>
           <li><a href="./understand-explore/what-is-information-protection.md">什么是 Azure 信息保护？</a></li>
         </ul>
@@ -222,13 +222,13 @@ ms.openlocfilehash: 035327cdfc771bae7ff36dca1a7a888223222252
     <aside class="alert alert-social">
       <p>了解有关 Azure 信息保护的最新信息 <ol class="action-list">
         <li><a href="http://blogs.technet.com/b/rms/" target="_blank" class="button-bordered button-translucent">官方 Azure 信息保护团队博客</a></li>
-        <li><a href="https://twitter.com/TheRMSGuy" target="_blank" class="button-bordered button-translucent">在 Twitter 上 @TheRMSGuy</a></li>
+        <li>Twitter 上的 <a href="https://twitter.com/TheRMSGuy" target="_blank" class="button-bordered button-translucent">@TheRMSGuy</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

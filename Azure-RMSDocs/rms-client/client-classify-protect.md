@@ -4,7 +4,7 @@ description: "说明如何对文档和电子邮件进行分类和保护。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 01/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e6d4cc50259b9d9bb73a75c648f9e6915562accf
-ms.openlocfilehash: e1d61fbe1d74a4a57d9a1fdf518aeb0242d0f7ad
+ms.sourcegitcommit: 171a47f9c22dec24f72f8f21392d6577efd807a5
+ms.openlocfilehash: d050629999c3a886eb8d422f4f38c22d586e0824
 
 
 ---
@@ -53,17 +53,17 @@ ms.openlocfilehash: e1d61fbe1d74a4a57d9a1fdf518aeb0242d0f7ad
 
 2. 在“分类和保护 - Azure信息保护”对话框中，请像在 Office 应用程序中那样使用标签，这样可以按管理员定义的方式设置分类和保护。 如果无法选择标签（它不可用），则所选文件不支持分类，但你可以保护它。
 
-3. 若要保护文件，请在管理员为所选标签定义的保护设置（**自动，基于所选分类标签**）之间进行选择，或指定自己的设置（**使用自定义权限覆盖**）。
+3. 如果想要指定自己的保护设置，而不使用管理员可能已包含在所选标签中的保护设置，请选择“使用自定义权限保护”。
     
-    覆盖选项不会使用管理员为你所选标签定义的任何保护设置。 你需要指定自己的保护设置。 
+    指定的任何自定义权限将替换而不是补充管理员可能已为所选标签定义的保护设置。  
 
-4. 如果已选择覆盖选项，现在指定以下项：
+4. 如果已选择自定义权限选项，此时指定以下项：
 
     - **选择权限**：选择你希望用户在保护所选文件时具有的访问级别。
     
     - **选择用户**：指定应对文件具有选定权限的人员。 对于组织中的人员和组，可使用通讯簿进行搜索和选择。 对于另一组织中的人员，必须指定其完整的电子邮件地址。 请确保你使用的是业务电子邮件地址，因为当前不支持个人电子邮件地址。
         
-    - **过期访问**：仅对具有时效性的文件选择此选项，以使指定的人员无法在指定日期后打开选定的一个文件或多个文件。 你仍可以打开原始文件，但在选定日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
+    - **访问过期日期**：仅对具有时效性的文件选择此选项，以使指定的人员无法在指定日期后打开选定的一个文件或多个文件。 你仍可以打开原始文件，但在选定日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
 
 5. 单击“应用”，然后单击“关闭”。
 
@@ -108,9 +108,10 @@ ms.openlocfilehash: e1d61fbe1d74a4a57d9a1fdf518aeb0242d0f7ad
 
 -   [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

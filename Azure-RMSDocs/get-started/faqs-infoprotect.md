@@ -4,7 +4,7 @@ description: "对 Azure 信息保护的预览版有疑问？ 请查看此处是�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/09/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 946daa8dedba71d5887dd96f6853e8d90400bfb1
-ms.openlocfilehash: 125752671ec0ca556cc6967a2a3011fb0bf7d9ab
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 8bb0058940eaf1663ec82b38bc37c33400ea8b87
 
 
 ---
@@ -47,7 +47,7 @@ Azure 信息保护客户端在 Microsoft Office 应用中添加了一个信息�
 
 - 适用于合作伙伴和开发人员的 SDK 不可用。
 
-某些以前列出的限制现已在预览版中可用。 有关详细信息，请参阅以下博客文章公告：[Azure 信息保护 12 月预览版现已可用](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)。
+某些以前列出的限制现已在预览版中可用。 有关详细信息，请参阅以下博客文章公告：[Azure 信息保护&12; 月预览版现已可用](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)。
 
 
 ## <a name="do-i-need-to-be-a-global-admin-to-try-azure-information-protection"></a>是否需要是全局管理员才能试用 Azure 信息保护？
@@ -62,7 +62,7 @@ Azure 信息保护客户端在 Microsoft Office 应用中添加了一个信息�
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 
-Azure 信息保护是一个基于云的解决方案。 如果你对在混合方案中部署 Azure 信息保护感兴趣，请发送电子邮件到 askipteam@microsoft.com 来联系信息保护团队。
+Azure 信息保护是一个基于云的解决方案。 如果对在混合方案中部署 Azure 信息保护感兴趣，请发送电子邮件到 askipteam@microsoft.com，联系信息保护团队。
 
 ## <a name="how-do-computers-get-the-policy-information-from-azure-information-protection-and-how-often-is-it-refreshed"></a>计算机如何从 Azure 信息保护中获取策略信息，以及这些信息多长时间刷新一次？
 
@@ -188,7 +188,7 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 若要以其他用户身份登录，则当前必须编辑注册表：
 
-1. 使用注册表编辑器，导航到“HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP”并删除“TokenCache”项。
+1. 使用注册表编辑器，导航到“HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP”并删除“TokenCache”值。
 
 2. 重新启动任何打开的 Office 应用程序，并使用其他用户帐户登录。 如果在 Office 应用程序中没有看到登录到 Azure 信息保护服务的提示，请返回“Microsoft Azure信息保护”对话框，然后从更新的“客户端状态”部分中单击“登录”。
 
@@ -204,7 +204,9 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 如果你有任何问题或反馈，请使用 [Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/)。 
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Dec16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

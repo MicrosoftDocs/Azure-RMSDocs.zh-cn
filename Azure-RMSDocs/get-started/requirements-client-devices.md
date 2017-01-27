@@ -4,7 +4,7 @@ description: "确定哪些设备支持 Azure 信息保护中的 Azure Rights Man
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/06/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 587aaff16ce57cd39ce5dc7eb30fd21f37442cda
+ms.sourcegitcommit: f478f65eecb47b6d0f41ece413ce576b6935b916
+ms.openlocfilehash: b765161c593e37ed4cae2fb42f87d882d6ad429c
 
 
 ---
@@ -44,9 +44,11 @@ ms.openlocfilehash: 587aaff16ce57cd39ce5dc7eb30fd21f37442cda
 
 -   **Windows Phone**：Windows Phone 8.1
 
--   **Android 手机和平板电脑**：最低版本的 Android 4.0.3
+-   **Android 手机和平板电脑**：最低版本的 Android 4.4
 
 -   **iPhone 和 iPad**：最低版本的 iOS 7.0
+     
+    例外：用于 iOS 和 Android 的 Azure 信息保护客户端最低版本为 iOS 8。
 
 -   **Windows 平板电脑**：Windows 10 Mobile 和 Windows 8.1 RT
 
@@ -54,9 +56,10 @@ ms.openlocfilehash: 587aaff16ce57cd39ce5dc7eb30fd21f37442cda
 ## <a name="next-steps"></a>后续步骤
 若要查看其他要求，请参阅 [Azure 信息保护的要求](requirements-azure-rms.md)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

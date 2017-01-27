@@ -4,7 +4,7 @@ description: "若要为特定用户配置不同的设置和标签，必须为 Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/09/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b0600db864f834e9eb84700eb1a36d3e6a6fbde1
-ms.openlocfilehash: ba4567753fbc6320ea6f9170e4bf46857ab999b4
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ba201561345d5e6b9f22a65ca1785553fed58e08
 
 
 ---
@@ -54,15 +54,19 @@ ms.openlocfilehash: ba4567753fbc6320ea6f9170e4bf46857ab999b4
 
 6. 对此作用域内的策略完成所需更改后，在初始“Azure 信息保护”边栏选项卡上，确保此作用域内策略已按你期望的顺序应用。 为多个作用域内策略选择了相同用户时，这一点很重要。 然后单击“发布”。 
 
-受支持的 Office 应用程序启动时，Azure 信息保护客户端会检查任何更改。 它会将所有更改都下载到适用于该用户的全局策略或作用域内策略中。
+启动受支持的 Office 应用程序或打开文件资源管理器时，Azure 信息保护客户端会检查任何更改。 客户端会将所有更改都下载到适用于该用户的全局策略或作用域内策略中。
+
+> [!TIP]
+> 保存已设定范围的策略后，可使用初始“Azure 信息保护”边栏选项卡上的**跨策略编辑器**，查看和重新配置 Azure 信息保护策略中的所有标签。 此方法是比较多个策略（全局策略和所有已设定范围的策略）中标签的简便方法。 但是，此编辑器不允许添加或重新排列标签，也不允许查看和配置策略设置。
 
 ## <a name="next-steps"></a>后续步骤
 
 有关如何自定义默认策略并在 Office 应用程序是查看所产生行为的示例，请尝试 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)(#azure-信息保护快速入门教程)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

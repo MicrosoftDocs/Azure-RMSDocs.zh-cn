@@ -5,7 +5,7 @@ keywords: "一些常见问题，帮助你使用适用于 iOS 和 Android 的 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 01/06/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -14,8 +14,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 2c2a0281041f8f9241fd0e733f3c1b08099bae33
+ms.sourcegitcommit: f478f65eecb47b6d0f41ece413ce576b6935b916
+ms.openlocfilehash: 9a03ccf3326b51f5c9c19102a1e9d003562cead6
 
 
 ---
@@ -33,6 +33,16 @@ ms.openlocfilehash: 2c2a0281041f8f9241fd0e733f3c1b08099bae33
 ## <a name="can-i-open-pdf-files-that-are-in-sharepoint-protected-libraries-and-onedrive-for-business"></a>可以打开位于受保护的 SharePoint 库和 OneDrive For Business 中的 PDF 文件吗？
 
 是的，你可以打开其他人通过 SharePoint 和 OneDrive for Business 与你共享的受保护的 PDF 文件。 点击该链接，然后选择此应用打开文件。 
+
+## <a name="can-my-mobile-device-run-the-azure-information-protection-app"></a>我的移动设备是否可运行 Azure 信息保护应用？
+
+Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
+
+如果具有这些版本或更高版本，可安装要在移动设备上运行的应用：
+
+- 如果移动设备由 Microsoft Intune 管理，可能可以从公司门户安装 Azure 信息保护应用。
+
+- 如果移动设备不受 Microsoft Intune 管理或公司门户不提供 Azure 信息保护应用，则可以直接从 iTunes 应用商店和 Google Play 应用商店安装应用，也可以通过在 [Azure 信息保护下载页面](https://portal.azurerms.com/#/download)中单击**移动设备**部分中的 iOS 或 Android 图标来安装应用。 
 
 ## <a name="how-do-i-get-started-with-the-viewer-app"></a>如何开始使用查看器应用？
 
@@ -60,8 +70,9 @@ ms.openlocfilehash: 2c2a0281041f8f9241fd0e733f3c1b08099bae33
 
 将你的问题发布到我们的 [Yammer 站点](https://www.yammer.com/AskIPTeam)，或[发送电子邮件到信息保护团队](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app)。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
