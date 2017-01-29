@@ -20,7 +20,7 @@ ms.openlocfilehash: 1b5268a13538df1537dbf3ea6f66eeda2b5e2292
 ---
 
 
-# <a name="azure-information-protection-also-known-as-"></a>Azure 信息保护 - 也称为...
+# <a name="azure-information-protection---also-known-as-"></a>Azure 信息保护 - 也称为...
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -47,6 +47,6 @@ Azure Rights Management 的其他名称：此服务最初名为 *Windows Azure A
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

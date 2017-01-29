@@ -1,6 +1,6 @@
 ---
 title: "如何添加显式所有者权限 | Azure RMS"
-description: Your application should explicitly add "Owner" rights when creating a license from scratch.
+description: "应用程序在从头开始创建许可证时应显式添加“所有者”权限。"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
@@ -115,6 +115,6 @@ ms.openlocfilehash: 337c819436e3675eb0ba745717d700002d5184b0
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 
