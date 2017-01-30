@@ -20,12 +20,11 @@
 #### [Linux 代码示例](linux-c-code-examples.md)
 #### [iOS/OS X 代码示例](ios-os-x-code-examples.md)
 #### [社区资源](community-resources.md)
-### [开发人员指南和条款](core-concepts.md)
+### [开发人员指南](core-concepts.md)
 #### [如何使用 Azure AD 注册应用并为其启用 RMS](authentication-integration.md)
 #### [如何启用错误和性能日志记录](enabling-logging.md)
 #### [如何使用内置权限](built-in-rights-usage-restriction-reference.md)
 #### [如何使用文档跟踪](how-to-use-document-tracking.md)
-#### [条款](terms.md)
 ### [API 参考](api-reference-4-2.md)
 #### [Android API 参考](https://msdn.microsoft.com/library/dn758245.aspx)
 #### [Linux API 参考](linux-c-api-reference.md)
@@ -42,7 +41,7 @@
 #### [开发应用程序](developing-your-application.md)
 #### [测试应用程序](how-to-set-up-your-test-environment.md)
 #### [部署到生产](deploying-your-application.md)
-### [开发人员指南和信息](Developer-notes.md)
+### [开发人员指南](Developer-notes.md)
 #### [操作说明：使用 ADAL 身份验证](how-to-use-adal-authentication.md)
 ##### [为 ADAL 身份验证配置 Azure RMS](adal-auth.md)
 #### [操作说明：添加显式所有者权限](add-explicit-owner-rights.md)
@@ -65,8 +64,9 @@
 #### [Functions](https://msdn.microsoft.com/library/hh535289.aspx)（函数）
 #### [Structures](https://msdn.microsoft.com/library/hh535294.aspx)（结构）
 #### [Error codes](https://msdn.microsoft.com/library/hh535248.aspx)（错误代码）
+## [条款](terms.md) 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
