@@ -4,15 +4,15 @@ description: "有关安装客户端（将信息保护栏添加到 Office 应用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2017
+ms.date: 01/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: bd3cbea29183c39abaa66aa5dcec8a14ad0b0757
-ms.openlocfilehash: bccddf228b33bcd8d36ef6af55dea9015cad34d0
+ms.sourcegitcommit: 6012049162d0ac9ee53476640ab3a4bcac18287f
+ms.openlocfilehash: 92d6b6f13d124c8c7ab7735fa170890263c9011b
 
 
 ---
@@ -70,7 +70,7 @@ ms.openlocfilehash: bccddf228b33bcd8d36ef6af55dea9015cad34d0
 
 如果在运行 Office 2010 的计算机上安装客户端的预览版，并且你的用户不是其计算机的本地管理员，请指定 **ServiceLocation** 参数。 有关详细信息，请参阅下一节。
 
-Microsoft 更新目录中也包含 Azure 信息保护客户端的公开发行版，因此可通过使用该目录的任意软件更新服务来安装和更新客户端。 客户端的预览版不包括在 Microsoft 更新目录中。
+Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可以利用使用该目录的任何软件更新服务来安装和更新客户端。 
 
 ### <a name="preview-version-and-office-2010-only"></a>仅限预览版和 Office 2010
 
@@ -223,6 +223,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 
