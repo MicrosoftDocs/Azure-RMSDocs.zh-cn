@@ -1,11 +1,11 @@
 ---
-title: "条款 | Azure RMS"
-description: "特定于 Rights Management Services 的术语定义的集合。"
+title: "AIP 开发人员术语 | Microsoft Docs"
+description: "特定于 Rights Management Services 的开发人员术语定义的集合。"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,15 +15,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 38ed5a7128813f52cb62b906b0a5cef4e6d990be
+ms.sourcegitcommit: 9c0977c57ea8e85b6750fe1f5a063059ee343db9
+ms.openlocfilehash: 4ecf686d8e7e26909c8bda4a2d0df7fc61f413bb
 
 
 ---
 
 # <a name="terms"></a>条款
 
-特定于 Rights Management Services 的术语定义的集合。
+特定于 Azure 信息保护的开发人员术语定义的集合。
 
 **弃用的算法**  
 实现较旧内容保护方案的模式设置，特指电子密码本密码模式 (ECB)。 在此 SDK 中，该设置使你可以生成与 [AD Rights Management Services SDK](https://msdn.microsoft.com/library/windows/desktop/cc530379.aspx) 所使用的 MSDRM 库相兼容的许可证。
@@ -42,6 +42,6 @@ PFile 格式对于应用程序开发人员是透明的，因为它是按设计 M
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

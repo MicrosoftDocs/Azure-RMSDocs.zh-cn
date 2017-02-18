@@ -1,11 +1,11 @@
 ---
-title: "API 参考 | Azure RMS"
-description: "Microsoft Rights Management SDK 4.2 支持多种操作系统；Android、iOS、OS X、Linux、Windows Phone 和 Windows 应用商店。"
+title: "API SDK 4.2 参考 | Microsoft Docs"
+description: "Azure 信息保护 SDK 4.2 支持多种操作系统：Android、iOS、OS X、Linux、Windows Phone 和 Windows 应用商店。"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 10/18/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,15 +15,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: e7788088a6eb9f0d3651365c6e0b0e05f0faf3ef
+ms.sourcegitcommit: 61efd11cde36c5f2507a91112cfc3711c1bedfca
+ms.openlocfilehash: 9735b9c1d05f2512eab1a11808dc5911e26174be
 
 
 ---
 
-# <a name="api-reference"></a>API 参考
+# <a name="api-sdk-42-reference"></a>API SDK 4.2 参考
 
-Microsoft Rights Management SDK 4.2 支持多种操作系统。 有关特定平台的详细信息，请参阅[新增功能](release-notes.md)。
+Azure 信息保护 SDK 4.2 支持多种操作系统。 有关特定平台的详细信息，请参阅[新增功能](release-notes.md)。
 
 ### <a name="apple"></a>Apple
 - [iOS/OS X API 参考](https://msdn.microsoft.com/library/dn758306.aspx) - 适用于 Apple iOS 和 OS X 操作系统的 API 参考。
@@ -44,6 +44,6 @@ Microsoft Rights Management SDK 4.2 支持多种操作系统。 有关特定平�
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

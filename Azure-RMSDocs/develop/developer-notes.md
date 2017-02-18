@@ -1,11 +1,11 @@
 ---
-title: "开发人员指南和信息 | Azure RMS"
-description: "本主题涵盖了几个重要开发方案的具体指南。"
+title: "Azure 信息保护 SDK 2.1 开发人员指南 | Microsoft Docs"
+description: "使用 AIP SDK 2.1 进行开发的操作指南主题的集合"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 10/18/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a3d58cc4c430fe2335ff8fbb7e23c77915e6b8ab
-ms.openlocfilehash: c09eebc8a950894038a758d8f968c5e3e5ae2a53
+ms.sourcegitcommit: 5df7da98abf4e7c8e39b610fe374d67cf2954338
+ms.openlocfilehash: 1c10eb8f7a68138761931d1c8a1715a03b7ff0a9
 
 
 ---
 
-# <a name="developer-guidance-and-information"></a>开发人员指南和信息
+# <a name="developer-guidance"></a>开发人员指南
 
 本部分介绍几个重要开发方案的特定指南，以及有关使用此 SDK 进行开发的常规信息。 本部分中的方案特定于此版本的 Rights Management Services SDK 2.1，在后续版本中可能会有所改动。
 - [操作说明：使用 ADAL 身份验证](how-to-use-adal-authentication.md) - 使用 Azure Active Directory 身份验证库 (ADAL) 向 Azure RMS 验证应用身份。
@@ -47,6 +47,6 @@ ms.openlocfilehash: c09eebc8a950894038a758d8f968c5e3e5ae2a53
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 
