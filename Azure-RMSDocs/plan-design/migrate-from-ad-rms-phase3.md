@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的阶段 3 涉及从 AD RM
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0ad1df8a8343052a85f85b94e0413fe0a0265d4b
+ms.sourcegitcommit: 1c6496d544334bd03d1df263acafefe1ebfb7707
+ms.openlocfilehash: 73a75f9bc1bcba4924570b6460c5fad4e0b877f4
 
 
 ---
@@ -116,15 +116,15 @@ Reg_SZ
 
 **值：**
 
-https://<AD RMS Intranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS Intranet 授权 URL\>/_wmcs/licensing
 
 **数据：**
 
 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<连接器 FQDN\>/_wmcs/licensing
 
-- https://<connectorName>/_wmcs/licensing
+- https://\<连接器名称\>/_wmcs/licensing
 
 
 ---
@@ -142,16 +142,16 @@ Reg_SZ
 
 **值：**
 
-https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
 
 
 **数据：**
 
 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<连接器 FQDN\>/_wmcs/licensing
 
-- https://<connectorFQDN>/_wmcs/licensing
+- https://\<连接器 FQDN\>/_wmcs/licensing
 
 ---
 
@@ -169,15 +169,15 @@ Reg_SZ
 
 **值：**
 
-https://<AD RMS Intranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS Intranet 授权 URL\>/_wmcs/licensing
 
 **数据：**
 
 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<连接器 FQDN\>/_wmcs/licensing
 
-- https://<connectorName>/_wmcs/licensing
+- https://\<连接器名称\>/_wmcs/licensing
 
 
 ---
@@ -196,16 +196,16 @@ Reg_SZ
 
 **值：**
 
-https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
 
 
 **数据：**
 
 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<连接器 FQDN\>/_wmcs/licensing
 
-- https://<connectorFQDN>/_wmcs/licensing
+- https://\<连接器 FQDN\>/_wmcs/licensing
 
 ---
 
@@ -217,6 +217,6 @@ https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 
