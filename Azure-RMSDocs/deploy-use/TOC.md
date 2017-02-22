@@ -15,6 +15,7 @@
 ## [配置应用程序](configure-applications.md)
 ### [Office 365](configure-office365.md)
 ### [Office 应用](configure-office-apps.md)
+### [Azure 信息保护客户端](configure-client.md)
 ### [RMS 共享应用](configure-sharing-app.md)
 ## [配置使用情况权限](configure-usage-rights.md)
 ## [为发现服务或数据恢复配置超级用户](configure-super-users.md)
@@ -24,7 +25,7 @@
 ### [创建新标签](configure-policy-new-label.md)
 ### [删除或重排标签](configure-policy-delete-reorder.md)
 ### [更改标签](configure-policy-change-label.md)
-### [应用保护](configure-policy-protection.md)
+### [配置保护](configure-policy-protection.md)
 #### [HYOK 限制](configure-adrms-restrictions.md)
 ### [配置视觉标记](configure-policy-markings.md)
 ### [配置条件](configure-policy-classification.md)
@@ -48,6 +49,6 @@
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 
