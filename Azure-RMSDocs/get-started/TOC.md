@@ -13,7 +13,7 @@
 ## [快速入门教程](infoprotect-quick-start-tutorial.md)
 ### [步骤 1：激活服务](infoprotect-tutorial-step1.md)
 ### [步骤 2： 配置并发布策略](infoprotect-tutorial-step2.md)
-### [步骤 3：安装客户端和应用程序](infoprotect-tutorial-step3.md)
+### [步骤 3：安装客户端](infoprotect-tutorial-step3.md)
 ### [步骤 4：在实际操作中了解功能 — 标签、分类和保护](infoprotect-tutorial-step4.md)
 ### [步骤 5：在实际操作中了解功能 — 共享保护项和跟踪](infoprotect-tutorial-step5.md)
 ## [快速部署指南](rapid-deployment-guide.md)
@@ -31,6 +31,6 @@
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
