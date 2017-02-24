@@ -4,15 +4,15 @@ description: "如果选择具有 Azure 信息保护的 AD RMS 保护，请确定
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: 22af60687ad030e686ba843ced6d450487353a0e
-ms.openlocfilehash: 66c19b296ce170d0f7f5317c87bee532edd9bb78
+ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
+ms.openlocfilehash: afb676dc133c23123cd3cce6d3c6367b4e80911a
 
 
 ---
@@ -35,7 +35,7 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 但是，有些客户可能需要使用本地托管的密钥来保护所选的文档和电子邮件。 例如，可能出于法规和合规性方面的原因需要这样做。 
 
-此配置有时称为“自留密钥”(HYOK)，当你有一个满足下节所述要求的有效 Active Directory Rights Management Services (AD RMS) 部署时，此配置受 Azure 信息保护支持。 此功能仍处于预览状态。
+此配置有时称为“自留密钥”(HYOK)，当你有一个满足下节所述要求的有效 Active Directory Rights Management Services (AD RMS) 部署时，此配置受 Azure 信息保护支持。
 
 在此 HYOK 方案中，权限策略和组织用于保护这些策略的私钥将在本地管理和保留，而 Azure 信息保护的标记和分类策略仍然在 Azure 中管理和存储。 与 Azure RMS 保护一样，使用 AD RMS 保护的信息永远不会发送到云。
 
@@ -98,13 +98,13 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 ## <a name="next-steps"></a>后续步骤
 
-若要了解有关此预览版功能的详细信息，请参阅博客文章公告 [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)（具有 HYOK（自留密钥）的 Azure 信息保护）。
+若要了解有关此功能的详细信息，请参阅博客文章公告 [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)（具有 HYOK（自留密钥）的 Azure 信息保护）。
 
 若要配置用于 AD RMS 保护的标签，请参阅[如何配置标签以应用权限管理保护](../deploy-use/configure-policy-protection.md)。 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

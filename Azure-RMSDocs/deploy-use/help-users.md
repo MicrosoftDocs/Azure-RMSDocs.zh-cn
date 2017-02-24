@@ -4,7 +4,7 @@ description: "此信息可帮助你在部署和配置 Azure 信息保护中的 A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: b4ba043aa351b4b6b118a83bd5fe54898ea17492
+ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
+ms.openlocfilehash: 0af15bf3238d020b1ee45b45bc780256c88b5e55
 
 
 ---
@@ -61,20 +61,16 @@ ms.openlocfilehash: b4ba043aa351b4b6b118a83bd5fe54898ea17492
 
 请参阅以下关于应用程序特定信息的部分，帮助用户保护敏感的文档和电子邮件。
 
-## <a name="using-information-protection-with-the-rights-management-sharing-application"></a>使用权限管理共享应用程序提供的信息保护
-如果用户使用 Office 2010，则 Rights Management (RMS) 共享应用程序是他们进行内容保护和使用受保护内容所必需的。另外，我们还建议将其用于支持 Azure Rights Management 服务的所有计算机和移动设备。
+## <a name="using-information-protection-with-the-azure-information-protection-client"></a>在 Azure 信息保护客户端中使用信息保护
+如果用户使用 Office 2010，保护和使用受保护文档和电子邮件则需要 Azure 信息保护客户端。另外，我们还建议将其用于计算机和移动设备。
 
-除了使用户更轻松地保护重要文档以外，RMS 共享应用程序还允许用户跟踪他们保护的文档，并根据需要撤消对文档的访问权限。
+除了使用户更轻松地保护重要文档以外，Azure 信息保护客户端还允许用户跟踪他们保护的文档，并根据需要撤销对文档的访问权限。
 
-有关如何将此应用程序用于 Windows 计算机的说明，请参阅 [Rights Management 共享应用程序用户指南](../rms-client/sharing-app-user-guide.md)。
+有关如何将此客户端用于 Windows 计算机的说明，请参阅 [Azure 信息保护客户端用户指南](../rms-client/client-user-guide.md)。
 
-对于移动设备，请参阅 [适用于移动平台的 Microsoft Rights Management 共享应用程序的常见问题](http://technet.microsoft.com/dn451248)。
-
-> [!TIP]
-> 有关带屏幕截图的高级示例方案，请参阅[用户与移动用户安全地共享附件](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users)。
 
 ## <a name="using-information-protection-with-office-365-office-2016-or-office-2013"></a>在 Office 365、Office 2016 或 Office 2013 中使用信息保护
-如果使用 Azure Rights Management 服务，但尚未安装 Rights Management 共享应用程序，则用户将不会在功能区上看到“共享保护”按钮，也不会在文件资源管理器中看到帮助他们更加轻松地保护文件的“就地保护”选项。 对于这些用户，他们必须遵循类似以下的说明。
+如果使用 Azure 权限管理服务，但尚未安装 Azure 信息保护客户端，则用户将不会在他们的 Office 桌面应用程序中看到 Azure 信息保护栏，不会在功能区上看到“保护”按钮，也不会在文件资源管理器中看到帮助他们更加轻松地保护文件的“分类和保护”。 对于这些用户，他们必须遵循类似以下步骤的说明。
 
 > [!TIP]
 > 若要查找应用程序特定帮助，以及有关在这些应用程序中使用信息保护的说明，请搜索 **IRM** 和应用程序名称及版本。
@@ -117,6 +113,6 @@ ms.openlocfilehash: b4ba043aa351b4b6b118a83bd5fe54898ea17492
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

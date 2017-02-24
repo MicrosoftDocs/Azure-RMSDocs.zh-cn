@@ -1,18 +1,18 @@
 ---
-title: "什么是 Azure 信息保护？ | Azure 信息保护"
+title: "什么是 Azure 信息保护？"
 description: "Azure 信息保护服务概述。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: c0ea97dc29855ad46271dac251c804ca602cee69
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 7d5c759a6b7e206f30588926a8d480b50be20bc4
 
 
 ---
@@ -54,7 +54,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 此示例演示如何在从 Azure 门户配置 Azure 信息保护策略时为标签选择模板：
 
-![在 Azure 门户中选择模板的示例](../media/templates-infoprotection-callouts.png)
+![在 Azure 门户中选择模板的示例](../media/info-protect-template-callout.png)
 
 可以从 Exchange 管理中心选择相同模板，以配置支持 Azure Rights Management 技术的 Exchange Online 邮件流规则：
 
@@ -66,11 +66,21 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 安装 Azure 信息保护客户端时，Azure 信息保护会与最终用户的现有工作流集成。 此客户端会将信息保护栏安装到 Office 应用程序（如第一张图片所示）。 相同栏会添加到 Excel、PowerPoint 和 Outlook。 例如：
 
-![Excel 中的 Azure 信息保护栏的示例](../media/excel2013-infoprotect-bar2.png)
+![Excel 中的 Azure 信息保护栏的示例](../media/excel2016-infoprotect-bar.png)
 
 此信息保护栏使最终用户可以方便地为正确分类选择标签，在需要时，这些标签还可以自动保护其文档和电子邮件。
 
-当用户通过电子邮件共享其受保护的文档时，他们可以使用文档跟踪站点监视访问这些文档的人员和时间。 如果他们怀疑存在误用，则还可以撤消对这些文档的访问权限。
+若要对其他文件类型进行分类和保护，并想要一次性支持多个文件，用户可在 Windows 文件资源管理器中右键单击文件或文件夹：
+
+![在文件资源管理器中，右键单击“使用 Azure 信息保护进行分类和保护”](../media/right-click-classify-protect-folder.png)
+
+如果用户在文件资源管理器中选择“分类和保护”菜单选项，那么他们可以选择一个标签，操作方式类似于他们在 Office 桌面应用程序中使用信息保护栏。 如果需要，他们还可以设置自己的自定义权限。
+
+高级用户（和管理员）可能会发现，针对管理和设置多个文件的分类和保护，使用 PowerShell 命令更有效。 虽然你也可以单独安装 PowerShell 模块，但完成此操作的 PowerShell 命令将自动包含在此客户端中。
+
+文档受到保护后，用户和管理员可以使用文档跟踪站点监视访问这些文档的人员和时间。 如果他们怀疑存在误用，还可以撤销对这些文档的访问权限：
+
+![撤销文档跟踪站点中的访问图标](../media/tracking-site-revoke-access-icon.png)
 
 
 ## <a name="resources-for-azure-information-protection"></a>Azure 信息保护的资源
@@ -111,6 +121,6 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 

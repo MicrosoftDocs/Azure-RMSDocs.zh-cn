@@ -1,10 +1,10 @@
 ---
-title: "适用于 Microsoft 文档网站上与 Azure 信息保护相关的客户评论的内部规则 | Azure 信息保护"
+title: "客户评论的内部规则 | Azure 信息保护"
 description: "用于 Azure 信息保护文档的 Livefyre 评论和边栏的范围和目的。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 02/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,13 @@ ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4347e1759c1690436eb37482831c97b93ac8fd5a
-ms.openlocfilehash: 958135678a9b48ca59b3d377439f5cf4b3d1efd7
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 95e1b3502d06c96f666da665739f4f97050c0b67
 
 
 ---
 
-# <a name="house-rules-for-customer-comments-on-the-documentation-site-for-azure-information-protection"></a>适用于文档网站上与 Azure 信息保护相关的客户评论的内部规则
+# <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>有关 Azure 信息保护文档的评论的内部规则
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -44,6 +44,6 @@ Livefyre 评论和旁注不适用于以下内容：
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "有关分类和标签的常见问题 | Azure 信息保护"
-description: "对 Azure 信息保护的预览版有疑问？ 请查看此处是否有答案。"
+description: "对 Azure 信息保护的当前版有疑问？ 请查看此处是否有答案。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 8bb0058940eaf1663ec82b38bc37c33400ea8b87
+ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
+ms.openlocfilehash: ad94507f4aea48172ed3c3f74f6d12e3c67cc18e
 
 
 ---
@@ -27,7 +27,9 @@ ms.openlocfilehash: 8bb0058940eaf1663ec82b38bc37c33400ea8b87
 
 ## <a name="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection"></a>使用 Azure 信息保护中的分类功能可以做些什么？
 
-Azure 信息保护客户端在 Microsoft Office 应用中添加了一个信息保护栏，你可以使用该栏查看并修改指定给数据的分类标签。 可以手动完成分类，或者向你推荐特定分类，或者自动应用分类。 对于你指定的分类，可使用 Rights Management 服务保护数据。  
+Azure 信息保护客户端在 Microsoft Office 应用程序中添加了一个信息保护栏，用户可以使用该栏查看分类标签，并将其分配到他们的 Office 文档和电子邮件。
+
+默认情况下，建议手动应用分类，或者在检测到敏感数据时自动应用。 通过使用 Rights Management 服务，这些标签也可以自动保护数据。 除了 Office 文档和电子邮件，其他文件也可以通过使用文件资源管理器右键单击一个文件、多个文件或一个文件夹来进行分类和保护。 或者，可以使用 PowerShell 在命令行中完成此操作，这样可以更快地批量完成分类和保护。
 
 在 Azure 门户中配置分类标签和行为。 你可以使用默认的内置策略非常快速地评估 Azure 信息保护，或完全自定义你自己的策略。 你可以更改用户使用的分类标签的颜色、名称和顺序。 你还可以配置工具提示和诸如页眉、页脚或水印等分类可视化标记。
 
@@ -47,7 +49,7 @@ Azure 信息保护客户端在 Microsoft Office 应用中添加了一个信息�
 
 - 适用于合作伙伴和开发人员的 SDK 不可用。
 
-某些以前列出的限制现已在预览版中可用。 有关详细信息，请参阅以下博客文章公告：[Azure 信息保护&12; 月预览版现已可用](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)。
+某些以前列出的限制现已在&2; 月发布的新客户端中可用。 有关详细信息，请参阅博客文章通告。
 
 
 ## <a name="do-i-need-to-be-a-global-admin-to-try-azure-information-protection"></a>是否需要是全局管理员才能试用 Azure 信息保护？
@@ -78,7 +80,7 @@ Azure 信息保护是一个基于云的解决方案。 如果对在混合方案�
 
 对于新内容和现有内容的更改，Azure 信息保护策略操作将在文档已保存和电子邮件已发送时生效。
 
-如果拥有预览客户端，还可以从文件资源管理器中快速对现有文件分类（并且可选择保护）。 
+如果拥有最新版客户端，还可以从文件资源管理器中快速对现有文件分类（并且可选择保护）。 
 
 ## <a name="can-i-use-azure-information-protection-for-classification-only-without-enforcing-encryption-and-restricting-usage-rights"></a>是否可以仅将 Azure 信息保护用于分类，而不进行强制加密和限制使用权限？
 
@@ -90,7 +92,7 @@ Azure 信息保护是一个基于云的解决方案。 如果对在混合方案�
 
 你可以在[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护的快速入门教程）中看到该示例。 
 
-分类的准确性取决于配置基于条件的分类规则的方式。 目前，条件支持文本模式和正则表达式。 有关预览期间可用的每个选项的说明以及测试的建议示例，请参见 [如何针对 Azure 信息保护的自动和建议分类配置条件](../deploy-use/configure-policy-classification.md)(#如何针对-azure-信息保护的自动和建议分类配置条件)。 保存了文档或发送了电子邮件之后，将运行检测。
+分类的准确性取决于配置基于条件的分类规则的方式。 目前，条件支持文本模式和正则表达式。 有关每个可用选项的说明以及测试的建议示例，请参阅[如何配置 Azure 信息保护的自动和建议分类的条件](../deploy-use/configure-policy-classification.md)。 保存了文档或发送了电子邮件之后，将运行检测。
 
 若要获取最佳用户体验并确保业务连续性，我们建议你从用户建议操作开始，而不是完全自动化操作。 这可以使你的用户能够接受标签或保护操作，或者覆盖这些建议。   
 
@@ -106,8 +108,7 @@ Azure 信息保护是一个基于云的解决方案。 如果对在混合方案�
 
 ## <a name="can-i-remove-classification-from-a-file"></a>我可以删除文件的分类吗？
 
-是。 若要删除文件的分类，请在 Office 应用程序中打开该文件，单击信息保护栏中的“编辑标签”图标，单击“删除标签”图标，然后单击“确定”来确认你的操作。 
-
+是。 [从文件和电子邮件中删除分类标签和保护](../rms-client/client-remove-label-protection.md)用户指南中介绍了此内容 
 
 ## <a name="can-i-prompt-users-to-justify-why-they-are-changing-the-classification-level"></a>我是否可以提示用户说明他们更改分类级别的原因？
 
@@ -133,7 +134,7 @@ Azure 信息保护是一个基于云的解决方案。 如果对在混合方案�
 
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>对于电子邮件来说，Azure 信息保护分类与 Exchange 邮件分类有什么不同？
 
-Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分类，且独立于 Azure 信息保护分类执行。 但是，你可以将这两个解决方案进行集成，以便当用户使用 Outlook Web 应用和在某些移动邮件应用程序中对电子邮件进行分类时，自动添加 Azure 信息保护分类和相应的标签标记。 Exchange 添加分类，Azure 信息保护客户端的预览版本应用该分类的相应标签设置。
+Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分类，且独立于 Azure 信息保护分类执行。 但是，你可以将这两个解决方案进行集成，以便当用户使用 Outlook Web 应用和在某些移动邮件应用程序中对电子邮件进行分类时，自动添加 Azure 信息保护分类和相应的标签标记。 Exchange 添加分类，Azure 信息保护客户端应用该分类的相应标签设置。
 
 虽然 Outlook Web 应用尚不本地支持 Azure 信息保护分类和保护，但可通过同样的方法将标签用于除桌面 Outlook 客户端之外的电子邮件客户端。
 
@@ -152,7 +153,7 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 - Exchange 规则检测 Exchange 分类，并对应修改邮件头以添加 Azure 信息保护分类。
 
-- 运行 Azure 信息保护客户端预览版的收件人在 Outlook 中查看电子邮件时，他们将看到分配的 Azure 信息保护标签以及所有对应的电子邮件标头、页脚或水印。 
+- 运行 Azure 信息保护客户端的收件人在 Outlook 中查看电子邮件时，他们将看到分配的 Azure 信息保护标签以及所有对应的电子邮件标头、页脚或水印。 
 
 如果 Azure 信息保护标签应用权限管理保护，请将其添加到规则配置，方法是选择修改邮件安全性的选项，应用权限保护，然后选择 RMS 模板或“不要转发”选项。
 
@@ -166,11 +167,9 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 ## <a name="how-does-document-tracking-and-revocation-work-for-azure-information-protection"></a>在 Azure 信息保护中如何使用文档跟踪和撤销？
 
-对使用 Azure 信息保护进行分类和保护的文件的文档跟踪适用于 Azure Rights Management 保护和 RMS 共享应用程序。 你也可以使用 Azure 信息保护客户端（1.0.233 版或更高版本）来访问文档跟踪站点： 
+使用 Azure 信息保护进行分类和保护的文件的文档跟踪适用于最新版的 Azure 信息保护客户端（版本 1.3.155.2 或更高版本）。 
 
-- 在 Office 应用程序的“主页”选项卡的“保护”组中，单击“保护” > “跟踪使用情况”。 
-
-有关详细信息，请参阅[《Track and revoke your documents when you use the RMS sharing application》](../rms-client/sharing-app-track-revoke.md)（使用 RMS 共享应用程序跟踪和撤销文档）。
+有关详细信息，请参阅[使用 Azure 信息保护时跟踪和撤销已保护的文档](../rms-client/client-track-revoke.md)。
 
 ## <a name="can-i-control-which-users-can-use-azure-information-protection-to-classify-and-protect-content"></a>是否可以控制哪些用户可以使用 Azure 信息保护对内容进行分类并保护？
 
@@ -200,13 +199,15 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 ## <a name="how-can-i-report-a-problem-or-send-feedback-for-azure-information-protection"></a>如何针对 Azure 信息保护报告问题或发送反馈？
 
-如果你遇到与 Azure 信息保护有关的问题，并且在使用当前版本的客户端：在 Office 应用程序中“主页”选项卡上，在“保护”组中，单击“保护”，然后单击“帮助和反馈”。 在“Microsoft Azure 信息保护”对话框中，单击“发送反馈”。 将向信息保护团队发送电子邮件，并自动附加 PC 中的日志文件以帮助诊断问题。 
+若要获取技术支持，请使用标准支持渠道或[联系 Microsoft 支持](information-support.md#to-contact-microsoft-support)。
 
-如果你有任何问题或反馈，请使用 [Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/)。 
+若要提供反馈（例如，针对改进功能或新功能提出建议）：请在 Office 应用程序的“开始”选项卡的“保护”组中，单击“保护”，然后单击“帮助和反馈”。 在“Microsoft Azure 信息保护”对话框中，单击“发送反馈”。 将向信息保护团队发送电子邮件，并自动附加电脑中的日志文件。 
+
+我们还邀请你加入我们的工程团队：[Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/)。 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

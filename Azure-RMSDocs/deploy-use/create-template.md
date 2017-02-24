@@ -4,7 +4,7 @@ description: "有关在 Azure 经典门户中创建和管理自定义模板的�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/11/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5b7a73c153edfdc7db3a55ee714b05f65d5090f4
-ms.openlocfilehash: 41a4406803cb0de4af607c7494258fc57d5217f7
+ms.sourcegitcommit: 4d9cf4f9ab3f73d2b1ba06eb74541f2982d24677
+ms.openlocfilehash: 66158f74951e7226482e58cf94e4249486b4dc7b
 
 
 ---
@@ -85,10 +85,10 @@ ms.openlocfilehash: 41a4406803cb0de4af607c7494258fc57d5217f7
     > [!TIP]
     > 你可以通过选择已启用邮件的组（该组包含 Office 365 或 Exchange Online 的联系人）将组织外的用户（“外部用户”）添加到模板。 这样，你可以按照向组织中的用户分配权限的方式向这些用户分配权限。 例如，可以防止客户编辑你发送给他们的价格列表。 如果组织外部的用户将可通过使用 Outlook Web App 读取受保护的电子邮件，请不要使用此模板配置来保护电子邮件。
     > 
-    > 此外，你可以稍后通过[适用于 Azure 权限管理的 Windows PowerShell 模块](install-powershell.md)以及下述方法之一将不属于你组织的用户添加到模板中：
+    > 此外，稍后你可以通过“特定用户”、“组”或“该组织中的所有用户”将组织外部的用户添加到模板。 若要执行此操作，请使用[适用于 Azure 权限管理的 Windows PowerShell 模块](install-powershell.md)和以下任一方法：
     > 
-    > -  **使用权限定义对象更新模板**：在权限定义对象中指定外部电子邮件地址及其权限，然后使用这些地址和权限更新模板。 指定权限定义对象时，可使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) cmdlet 来创建一个变量，然后将该变量提供给 -RightsDefinition 参数，并可使用 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) cmdlet 来修改现有模板。 但是，如果你是将这些用户添加到现有模板中，则还需要在模板中为现有组定义权限定义对象，不仅仅只需为新的外部用户进行此类操作。
-    > -  **导出、编辑和导入已更新的模板**：使用 [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) cmdlet 将模板导出到一个文件中，然后即可对该文件进行编辑，将这些用户的外部电子邮件地址及其权限添加到现有组和权限。 然后，使用 [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) cmdlet 将所做的更改导回到 Azure RMS 中。
+    > -  **使用权限定义对象更新模板**：（通过用户电子邮件地址、组电子邮件地址，或通过该组织中所有用户的域）指定外部用户并在权限定义对象中指定其权限。 然后使用此权限定义对象更新模板。 指定权限定义对象时，可使用 [New-AadrmRightsDefinition](/powershell/aadrm/vlatest/new-aadrmrightsdefinition) cmdlet 来创建一个变量，然后将该变量提供给 -RightsDefinition 参数，并可使用 [Set-AadrmTemplateProperty](/powershell/aadrm/vlatest/set-aadrmtemplateproperty) cmdlet 来修改现有模板。 但是，如果你是将这些用户添加到现有模板中，则还需要在模板中为现有组定义权限定义对象，不仅仅只需为新的外部用户进行此类操作。
+    > -  **导出、编辑和导入已更新的模板**：使用 [Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate) cmdlet 将模板导出到一个文件中，然后即可对该文件进行编辑，（通过用户电子邮件地址、组电子邮件地址，或通过该组织中所有用户的域）将外部用户及其权限添加到现有组和权限。 然后，使用 [Import-AadrmTemplate](/powershell/aadrm/vlatest/import-aadrmtemplate) cmdlet 将所做的更改导回到 Azure RMS 中。
 
 3.  单击“下一步”按钮，然后为你选择的用户和组分配所列的某一种权限。
 
@@ -107,7 +107,7 @@ ms.openlocfilehash: 41a4406803cb0de4af607c7494258fc57d5217f7
 
     有关部门模板的详细信息：默认情况下，Azure 目录中的所有用户都可看到所有已发布的模板，然后他们在要保护内容时可以从应用程序中选择这些模板。 如果你希望仅特定用户可以看到某些已发布的模板，则必须将这些模板的作用域设为这些用户。 然后，将只有这些用户能够选择这些模板。 你未指定的其他用户将看不到这些模板，因此，无法选择这些模板。 此技术使用户可以更轻松地选择合适的模板，尤其是当你创建的模板是专为供特定组或部门使用而设计的时候。 然后，用户将只看到专为他们设计的模板。
 
-    例如，你为人力资源部门创建了一个模板，该模板对财务部门的成员应用了只读权限。 因此在使用权限管理共享应用程序时，只有人力资源部门的成员能够应用该模板，你将该模板的作用域设为名为 HumanResources 的已启用电子邮件的组。 然后，只有此组的成员能够查看和应用该模板。
+    例如，你为人力资源部门创建了一个模板，该模板对财务部门的成员应用了只读权限。 因此在使用 Azure 信息保护客户端时，只有人力资源部门的成员能够应用该模板，请将该模板的作用域设为名为 HumanResources 的已启用电子邮件的组。 然后，只有此组的成员能够应用该模板。 此外，如果用户以[仅保护模式](../rms-client/client-protection-only-mode.md)运行 Azure 信息保护客户端，则不能看到此模板。
 
 7.  在“模板可见性”页上，选择能够在启用 RMS 的应用程序中查看和选择该模板的用户和组。 与前面一样，最佳做法是使用组而不是使用用户，并且你选择的组或用户必须具有电子邮件地址。
 
@@ -115,7 +115,7 @@ ms.openlocfilehash: 41a4406803cb0de4af607c7494258fc57d5217f7
 
     为什么你可能需要配置应用程序兼容性？ 并非所有应用程序都可以支持部门模板。 为此，应用程序必须先使用 RMS 服务进行身份验证，然后再下载这些模板。 如果未执行身份验证过程，默认情况下，将无法下载部门模板。 可以通过指定应该下载所有部门模板来覆盖此行为，方法是配置应用程序兼容性，并选中“在应用程序不支持用户标识时，向所有用户显示此模板”  复选框。
 
-    例如，如果你在人力资源示例中未为部门模板配置应用程序兼容性，则在使用 RMS 共享应用程序时，将只有人力资源部门中的用户可以看到部门模板，但是在他们从 Exchange Server 2013 使用 Outlook Web Access (OWA) 时，将没有用户可以看到部门模板，因为 Exchange OWA 和 Exchange ActiveSync 目前不支持部门模板。 如果通过配置应用程序兼容性覆盖此默认行为，在使用 RMS 共享应用程序时，将只有人力资源部门中的用户可以看到部门模板，但在使用 Outlook Web Access (OWA) 时，所有用户都可看到部门模板。 如果用户从 Exchange Online 使用 OWA 或 Exchange ActiveSync，则要么所有用户都将看到部门模板，要么没有用户将看到部门模板，具体取决于 Exchange Online 中的模板状态（存档还是已发布）。
+    例如，如果你在人力资源示例中未为部门模板配置应用程序兼容性，在以[仅保护模式](../rms-client/client-protection-only-mode.md)使用 Azure 信息保护客户端时，将只有人力资源部门中的用户可以看到部门模板，但是当他们从 Exchange Server 2013 使用 Outlook Web Access (OWA) 时，将没有用户可以看到部门模板，因为 Exchange OWA 和 Exchange ActiveSync 目前不支持部门模板。 如果通过配置应用程序兼容性覆盖此默认行为，在以仅保护模式使用 Azure 信息保护客户端时，将只有人力资源部门中的用户可以看到部门模板，但在使用 Outlook Web Access (OWA) 时，所有用户都可看到部门模板。 如果用户从 Exchange Online 使用 OWA 或 Exchange ActiveSync，则要么所有用户都将看到部门模板，要么没有用户将看到部门模板，具体取决于 Exchange Online 中的模板状态（存档还是已发布）。
 
     Office 2016 以本机方式支持部门模板，Office 2013 从版本 15.0.4727.1000（于 2015 年 6 月作为 [KB 3054853](https://support.microsoft.com/kb/3054853) 的一部分发布）开始也是如此。
 
@@ -165,6 +165,6 @@ ms.openlocfilehash: 41a4406803cb0de4af607c7494258fc57d5217f7
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "关于重新分发、安装、所支持操作系统、注册表设
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/28/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: d40a8b2062b0b8ccb2dd6115d179e45e64181798
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: ff9f1ba390fcad0569972fc65a2425266fd918b4
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: d40a8b2062b0b8ccb2dd6115d179e45e64181798
 
 Rights Management 服务客户端（RMS 客户端）版本 2 也称为 MSIPC 客户端。 它是在 Windows 计算机上安装的软件，可用来与本地或云中的 Microsoft Rights Management 服务通信，以帮助保护对流经应用程序和设备的信息的访问和使用，无论这些信息是在组织边界的内部还是受管边界的外部。 
 
-除随附[适用于 Windows 的权限管理共享应用程序](sharing-app-windows.md)提供以外，RMS 客户端还可[作为可选下载](http://www.microsoft.com/download/details.aspx?id=38396)产品获取，在确认和接受其许可协议的情况下，客户可以通过第三方软件自由地分发它，使客户端能够保护和使用受权限管理服务保护的内容。
+除随附[适用于 Windows 的 Azure 信息保护客户端](aip-client.md)提供以外，RMS 客户端还可[作为可选下载](http://www.microsoft.com/download/details.aspx?id=38396)产品获取，在确认和接受其许可协议的情况下，客户可以通过第三方软件自由地分发它，使客户端能够保护和使用受 Rights Management 服务保护的内容。
 
 
 ## <a name="redistributing-the-rms-client"></a>重新分发 RMS 客户端
@@ -94,7 +94,7 @@ x86 和 x64 计算平台支持 RMS 客户端。
 以下部分包含有关 RMS 客户端的设置信息。 如果使用 RMS 客户端的应用程序或服务出现问题，这些信息可能很有帮助。
 
 > [!NOTE]
-> 某些设置取决于启用 RMS 的应用程序是作为客户端模式应用程序运行（如 Microsoft Word 和 Outlook，或 RMS 共享应用程序），还是作为服务器模式应用程序运行（如 SharePoint 和 Exchange）。 在下表中，这些设置分别标识为 **客户端模式** 和 **服务器模式**。
+> 某些设置取决于启用 RMS 的应用程序是作为客户端模式应用程序运行（如 Microsoft Word 和 Outlook，或带有 Windows 文件资源管理器的 Azure 信息保护客户端），还是作为服务器模式应用程序运行（如 SharePoint 和 Exchange）。 在下表中，这些设置分别标识为 **客户端模式** 和 **服务器模式**。
 
 ### <a name="where-the-rms-client-stores-licenses-on-client-computers"></a>RMS 客户端将许可证存储在客户端计算机上的哪个位置？
 RMS 客户端将许可证存储在本地磁盘上，并且还在 Windows 注册表中缓存一些信息。
@@ -261,6 +261,6 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "了解最常使用的最终用户应用程序（例如 Office 应�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: f3e0be224f2a9e587f5be1bbdbbdb3e81b7a4bca
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 53a77c0e312f44fe2210ed19ead6dedeb36a5a78
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: f3e0be224f2a9e587f5be1bbdbbdb3e81b7a4bca
 > [!NOTE]
 > 若要验证 Azure Rights Management 服务支持的应用程序和版本，请参阅[支持 Azure Rights Management 数据保护的应用程序](../get-started/requirements-applications.md)。
 
-在某些情况下，Azure Rights Management 服务会根据管理员配置的策略自动应用保护。 例如，SharePoint 库、分类文件和 Exchange 传输规则就属于此种情况。 在其他情况下，最终用户必须自动通过应用程序（不管是通过选择模板还是通过选择特定选项）来应用信息保护。 例如，用户可通过电子邮件来共享文件，或者通过将访问权限和使用权限限制给选定用户或组织外部用户来保护现有文件。
+在某些情况下，Azure Rights Management 服务会根据管理员配置的策略自动应用保护。 例如，SharePoint 库和 Exchange 传输规则就属于此种情况。 在其他情况下，最终用户必须自己从其应用程序中应用信息保护，例如，通过选择配置为应用模板的分类标签、直接选择模板或选择特定选项。 当用户保护要共享的文件，并且限制选定用户或组织外的用户的访问或使用时，用户应用的保护是典型保护。
 
 利用模板，用户（以及配置策略的管理员）能够更加轻松地应用正确级别的保护，并将访问权限限制给组织内部人员。 虽然 Azure Rights Management 服务附带了两个默认模板，但你可能还希望创建自定义模板，以减少使用模板指定各个选项所需的时间。 有关详细信息，请参阅[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)。
 
@@ -64,6 +64,6 @@ ms.openlocfilehash: f3e0be224f2a9e587f5be1bbdbbdb3e81b7a4bca
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

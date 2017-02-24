@@ -4,7 +4,7 @@ description: "确定使用 Azure 信息保护的 Azure AD 要求，以便用户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 95d50707c362244972f286943abf9a07e3cedf38
+ms.sourcegitcommit: d704751bcc7a968c204d0bab0dc55776411d9593
+ms.openlocfilehash: ecb85e8fd2f09579536782f00a1babddb9466c54
 
 
 ---
@@ -52,9 +52,13 @@ ms.openlocfilehash: 95d50707c362244972f286943abf9a07e3cedf38
 
     -   如果你拥有 Office 2013，还需要安装[适用于 Office 2013 的 2015 年 6 月 9 日更新 (KB3054853)](https://support.microsoft.com/kb/3054853)。 有关此更新的详细信息以及现代身份验证如何将基于 Active Directory 身份验证库 (ADAL) 的登录加入到 Office 2013 中的详细信息，请参阅 Office 博客上的[已经公布的 Office 2013 现代身份验证公共预览版](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/)。
 
+- Azure 信息保护客户端：
+
+    - 适用于 Windows 以及适用于 iOS 和 Android 的 [Azure 信息保护客户端](../rms-client/aip-client.md)始终支持 MFA，且无最低版本要求。 
+
 -   适用于 Windows 的权限管理共享应用程序：
 
-    -   你需要安装最低版本的 1.0.1908.0，这可以通过使用“控制面板”、“程序”和“功能”来确认。 有关共享应用程序的详细信息，请参阅[适用于 Windows 的 Rights Management 共享应用程序](../rms-client/sharing-app-windows.md)。
+    -   你需要安装最低版本的 1.0.1908.0，这可以通过使用“控制面板”、“程序”和“功能”来确认。 请注意，Rights Management 共享应用程序现被 Azure 信息保护客户端替代。 有关共享应用程序的详细信息，请参阅[适用于 Windows 的 Rights Management 共享应用程序](../rms-client/sharing-app-windows.md)。
 
 -   适用于移动设备和 Mac 计算机的 Rights Management 共享应用：
 
@@ -81,6 +85,6 @@ ms.openlocfilehash: 95d50707c362244972f286943abf9a07e3cedf38
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

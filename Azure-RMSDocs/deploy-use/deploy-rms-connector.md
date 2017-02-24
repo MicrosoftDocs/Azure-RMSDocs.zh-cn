@@ -4,7 +4,7 @@ description: "有关部署 RMS 连接器的说明。该连接器提供数据保�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,15 +13,15 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: eaa1d7a0a74fa68f9bf1d15f348dbb45d14cee9a
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 5d33e0a8a9c6efbe937a53ae964b2972bf41580c
 
 
 ---
 
 # <a name="deploying-the-azure-rights-management-connector"></a>部署 Azure Rights Management 连接器
 
->*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
+>*适用于：Azure 信息保护、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2。*
 
 利用此信息了解 Azure Rights Management 连接器，并了解如何为组织成功部署该连接器。 该连接器提供数据保护，包括保护使用 Microsoft **Exchange Server**、**SharePoint Server** 或运行 Windows Server 和**文件分类基础结构** (FCI) 的文件服务器的现有本地部署。
 
@@ -31,7 +31,7 @@ ms.openlocfilehash: eaa1d7a0a74fa68f9bf1d15f348dbb45d14cee9a
 ## <a name="overview-of-the-microsoft-rights-management-connector"></a>Azure Rights Management 连接器概述
 借助 Microsoft Rights Management (RMS) 连接器，你可以迅速让现有本地服务器将信息权限管理 (IRM) 功能用于基于云的 Microsoft Rights Management 服务 (Azure RMS)。 使用此功能，IT 部门和用户能够轻松地保护组织内部和外部的文档和图片，既无需安装其他基础结构，也无需建立与其他组织的信任关系。 
 
-RMS 连接器是一种小型化服务，你可将其安装在本地，也可以安装在运行 Windows Server 2012 R2、Windows Server 2012 或 Windows Server 2008 R2 的服务器上。 除了在物理计算机上运行连接器之外，你也可以在虚拟机（包括 Azure IaaS VM）上运行它。 部署连接器后，它将充当本地服务器和云服务之间的通信接口（一种中继），如下图所示。 箭头表示网络连接启动的方向。
+RMS 连接器是一种小型化服务，你可将其安装在本地，也可以安装在运行 Windows Server 2016、Windows Server 2012 R2、Windows Server 2012 或 Windows Server 2008 R2 的服务器上。 除了在物理计算机上运行连接器之外，你也可以在虚拟机（包括 Azure IaaS VM）上运行它。 部署连接器后，它将充当本地服务器和云服务之间的通信接口（一种中继），如下图所示。 箭头表示网络连接启动的方向。
 
 ![RMS 连接器体系结构概述](../media/RMS_connector.png)
 
@@ -41,7 +41,7 @@ RMS 连接器是一种小型化服务，你可将其安装在本地，也可以�
 RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server，以及运行 Windows Server 并使用文件分类基础结构来进行分类并将策略应用于文件夹内 Office 文档的文件服务器。 
 
 > [!NOTE]
-> 如果想要通过使用文件分类基础结构保护所有文件类型（不仅是 Office 文档），请勿使用 RMS 连接器，而是使用 [RMS 保护 cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
+> 如果想要通过使用文件分类基础结构保护多个文件类型（不仅是 Office 文档），请勿使用 RMS 连接器，而是使用 [AzureInformationProtection cmdlet](/powershell/azureinformationprotection/vlatest/aip)。
 
 有关这些受 RMS 连接器支持的本地服务器的版本，请参阅[支持 Azure RMS 的本地服务器](..\get-started\requirements-servers.md)。
 
@@ -64,7 +64,7 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 |权限管理服务 (RMS) 已激活|[激活 Azure Rights Management](activate-service.md)|
 |本地 Active Directory 林和 Azure Active Directory 之间的目录同步|RMS 激活之后，必须将 Azure Active Directory 配置为用于 Active Directory 数据库中的用户和组。<br /><br />**重要提示**：要使 RMS 连接器正常工作，你必须执行此目录同步步骤，即使对于测试网络，也是如此。 尽管你可以通过在 Azure Active Directory 中手动创建的帐户来使用 Office 365 和 Azure Active Directory，但此连接器要求 Azure Active Directory 中的帐户必须与 Active Directory 域服务同步；进行手动密码同步是不够的。<br /><br />有关详细信息，请参阅下列资源：<br /><br />[将本地标识与 Azure Active Directory 集成](/active-directory/active-directory-aadconnect)<br /><br />[混合身份目录集成工具比较](/active-directory/active-directory-hybrid-identity-design-considerations-tools-comparison)|
 |只是可选但也推荐的选项：<br /><br />启用本地 Active Directory 和 Azure Active Directory 之间的联合身份验证|你可以启用本地目录和 Azure Active Directory 之间的联合身份验证。 此配置使用 RMS 服务单一登录，实现更加无缝的用户体验。 而如果没有单一登录，用户在能够使用权限保护内容之前，会收到提供凭据的提示。<br /><br />有关使用 Active Directory 联合身份验证服务 (AD FS) 来配置 Active Directory 域服务和 Azure Active Directory 之间的联合身份验证的说明，请参阅 Windows Server 库中的 [清单：使用 AD FS 实现和管理单一登录](http://technet.microsoft.com/library/jj205462.aspx) 。|
-|在最少两台成员计算机上安装 RMS 连接器：<br /><br />- 64 位物理或虚拟计算机，运行以下操作系统之一：Windows Server 2012 R2、Windows Server 2012 或 Windows Server 2008 R2。<br /><br />- 至少 1 GB 的 RAM。<br /><br />- 至少 64 GB 的磁盘空间。<br /><br />- 至少一个网络接口。<br /><br />- 通过防火墙（或 Web 代理）访问 Internet，无需进行身份验证。<br /><br />- 必须位于某个林或域中，而该林或域信任组织内的其他林（包含要用于 RMS 连接器的 Exchange 或 SharePoint 服务器安装）。|为了实现容错和高可用性，你必须在至少两台计算机上安装 RMS 连接器。<br /><br />**提示**：如果你正在使用 Outlook Web Access 或装有 Exchange ActiveSync IRM 的移动设备，并且你必须保持对 Azure RMS 保护的电子邮件和附件的访问权限，则我们建议你部署一组负载平衡的连接器服务器，以确保高可用性。<br /><br />你不需要专用服务器来运行连接器，但必须在将要使用连接器的服务器之外的独立计算机上安装连接器。<br /><br />**重要提示**：如果你希望在使用这些服务提供的功能时运行 Azure RMS，请不要将连接器安装在运行 Exchange Server、SharePoint Server 或文件服务器（已针对文件分类基础结构进行配置，前提是你希望将这些服务提供的功能用于 Azure RMS）的计算机上。 此外，请不要在域控制器上安装此连接器。|
+|在最少两台成员计算机上安装 RMS 连接器：<br /><br />- 64 位物理或虚拟计算机，运行以下操作系统之一：Windows Server 2016、Windows Server 2012 R2、Windows Server 2012 或 Windows Server 2008 R2。<br /><br />- 至少 1 GB 的 RAM。<br /><br />- 至少 64 GB 的磁盘空间。<br /><br />- 至少一个网络接口。<br /><br />- 通过防火墙（或 Web 代理）访问 Internet，无需进行身份验证。<br /><br />- 必须位于某个林或域中，而该林或域信任组织内的其他林（包含要用于 RMS 连接器的 Exchange 或 SharePoint 服务器安装）。|为了实现容错和高可用性，你必须在至少两台计算机上安装 RMS 连接器。<br /><br />**提示**：如果你正在使用 Outlook Web Access 或装有 Exchange ActiveSync IRM 的移动设备，并且你必须保持对 Azure RMS 保护的电子邮件和附件的访问权限，则我们建议你部署一组负载平衡的连接器服务器，以确保高可用性。<br /><br />你不需要专用服务器来运行连接器，但必须在将要使用连接器的服务器之外的独立计算机上安装连接器。<br /><br />**重要提示**：如果你希望在使用这些服务提供的功能时运行 Azure RMS，请不要将连接器安装在运行 Exchange Server、SharePoint Server 或文件服务器（已针对文件分类基础结构进行配置，前提是你希望将这些服务提供的功能用于 Azure RMS）的计算机上。 此外，请不要在域控制器上安装此连接器。|
 
 ## <a name="steps-to-deploy-the-rms-connector"></a>部署 RMS 连接器的步骤
 
@@ -100,6 +100,6 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

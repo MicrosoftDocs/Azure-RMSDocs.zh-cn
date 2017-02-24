@@ -4,15 +4,15 @@ description: "在配置标签的条件时，可以自动将标签分配到文档
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: b3d801eb0f02361cc58b5f6fbf1303d58a6ad722
+ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
+ms.openlocfilehash: 2178e8257c67ff8272b5cf359d3cccc60e519762
 
 
 ---
@@ -78,7 +78,7 @@ ms.openlocfilehash: b3d801eb0f02361cc58b5f6fbf1303d58a6ad722
 
 ## <a name="information-about-the-built-in-conditions"></a>有关内置条件的信息
 
-在预览期间，可以选择以下条件：
+你可以选择以下条件：
 
 - [SWIFT 代码](#swift-code )
 
@@ -227,6 +227,6 @@ ms.openlocfilehash: b3d801eb0f02361cc58b5f6fbf1303d58a6ad722
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

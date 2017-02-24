@@ -4,7 +4,7 @@ description: "了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 8b3926bf9e985eb8954449b0e88d0d953f4fb339
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 42f2c592091edb6305d72036545631069e79da2a
 
 
 ---
@@ -56,18 +56,18 @@ ms.openlocfilehash: 8b3926bf9e985eb8954449b0e88d0d953f4fb339
 
 |权限级别|应用程序|包括的权限（通用名称）|
 |---------------------|----------------|---------------------------------|
-|查看器|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端（预览版）|查看、打开、读取；答复；全部答复|
-|审阅者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端（预览版）|查看、打开、读取；保存；编辑内容、编辑；答复 [[1]](#footnote-1)；全部答复 [[1]](#footnote-1)；转发 [[1]](#footnote-1)|
-|合著者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端（预览版）|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出 [[2]](#footnote-2)；打印；回复 [[1]](#footnote-1)；回复全部[[1]](#footnote-1)；转发 [[1]](#footnote-1)|
-|共有者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端（预览版）|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出；打印；回复 [[1]](#footnote-1)；回复全部 [[1]](#footnote-1)；转发 [[1]](#footnote-1)；完全控制|
+|查看器|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；答复；全部答复|
+|审阅者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；答复 [[1]](#footnote-1)；全部答复 [[1]](#footnote-1)；转发 [[1]](#footnote-1)|
+|合著者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出 [[2]](#footnote-2)；打印；回复 [[1]](#footnote-1)；回复全部[[1]](#footnote-1)；转发 [[1]](#footnote-1)|
+|共有者|Azure 经典门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出；打印；回复 [[1]](#footnote-1)；回复全部 [[1]](#footnote-1)；转发 [[1]](#footnote-1)；完全控制|
 
 ----
 
 ###### <a name="footnote-1"></a>脚注 1
-不适用于 Windows 的 Rights Management 共享应用程序或 Windows 的 Azure 信息保护客户端（预览）。
+不适用项：适用于 Windows 的 Azure 信息保护客户端或适用于 Windows 的 Rights Management 共享应用程序。
 
 ###### <a name="footnote-2"></a>脚注 2
-不包括在适用于 Windows 的 Azure 信息保护客户端中（预览版）。 在此客户端中，导出使用权限包括删除保护的功能。
+不包括在适用于 Windows 的 Azure 信息保护客户端中。 在此客户端中，导出使用权限包括删除保护的功能。
 
 
 ## <a name="rights-included-in-the-default-templates"></a>默认模板中包括的权限
@@ -108,6 +108,6 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

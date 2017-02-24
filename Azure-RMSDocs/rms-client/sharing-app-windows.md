@@ -4,7 +4,7 @@ description: "适用于 Windows 的 Rights Management 共享应用程序的信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,15 +13,19 @@ ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 5c65e007c971ad6d62ee61e15134e16d7bf87624
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 78a796eaea0c6ece4bbaee80e7f287eb2aba29f6
 
 
 ---
 
 # <a name="rights-management-sharing-application-for-windows"></a>适用于 Windows 的 Rights Management 共享应用程序
 
->适用于：Active Directory Rights Management Services、Azure 信息保护
+>*适用于：Active Directory Rights Management Services、Azure 信息保护*
+
+> [!IMPORTANT]
+> **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2018 年 1 月 31 日将停止对此旧应用程序的支持。 
+
 
 适用于 Windows 的 Rights Management 共享应用程序（也简称为“RMS 共享应用”）是一个可免费下载的应用程序，面向使用 [Active Directory Rights Management Services](https://technet.microsoft.com/library/cc772403.aspx) (AD RMS) 或 [Azure 信息保护](../understand-explore/what-is-information-protection.md)的组织，以及没有自身的信息保护基础结构，但又想要使用其他组织通过 Azure 信息保护中的 Azure Rights Management 服务保护的内容的组织。
 
@@ -43,6 +47,6 @@ ms.openlocfilehash: 5c65e007c971ad6d62ee61e15134e16d7bf87624
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

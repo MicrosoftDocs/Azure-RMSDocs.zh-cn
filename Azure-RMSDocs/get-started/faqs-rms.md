@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护中数据保护服务 Azure Rights Manage
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 181357691df02c8532a6f28eef689dcacdfd937f
+ms.sourcegitcommit: 4d9cf4f9ab3f73d2b1ba06eb74541f2982d24677
+ms.openlocfilehash: f0fb23195983771fb7e19a626adc78ca28faa1a7
 
 
 ---
@@ -86,9 +86,9 @@ Azure Rights Management 服务始终使用 Azure Active Directory 帐户和关�
 这些帐户的身份验证方法各不相同，具体取决于其他组织中的管理员如何配置 Azure Active Directory 帐户。 例如，他们可以使用为这些帐户、多重身份验证 (MFA)、联合身份验证创建的密码，或在 Active Directory 域服务中创建、然后同步到 Azure Active Directory 的密码。
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>能否将外部用户（公司外部人员）添加到自定义模板？
-是。 创建最终用户（和管理员）可以从应用程序中选择的自定义模板，可使用户使用你指定的预定义策略应用信息保护变得简单快捷。 该模板中的设置之一是哪些用户能够访问内容，而且你可以指定组织中的用户和组以及组织之外的用户。
+是。 创建最终用户（和管理员）可以从应用程序中选择的自定义模板，可使用户使用你指定的预定义策略应用信息保护变得简单快捷。 该模板中的设置之一是哪些用户能够访问内容，而且你可以指定组织中的用户和组以及组织外部的用户和组。 
 
-若要从组织外部指定用户，请在配置模板时在 Azure 经典门户中将用户添加为所选组的联系人。 或者使用[适用于 Azure Rights Management 的 Windows PowerShell 模块](../deploy-use/install-powershell.md)：
+若要从组织外部指定用户，请在配置模板时在 Azure 经典门户中将用户添加为所选组的联系人。 若要指定组织外部的组，必须使用[适用于 Azure 权限管理的 Windows PowerShell 模块](../deploy-use/install-powershell.md)，你可以通过此模块指定单个外部用户甚至是另一组织中的所有用户：
 
 -   **使用权限定义对象创建或更新模板**。    在权限定义对象中指定外部电子邮件地址及其权限，然后你将使用该地址创建或更新模板。 指定权限定义对象时，可使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) cmdlet 来创建一个变量，然后将该变量提供给 -RightsDefinition 参数，并可使用 [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx) cmdlet（如果是新模板）或 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) cmdlet（如果需要修改现有模板）。 但是，如果你是将这些用户添加到现有模板中，则需要在模板中为现有组定义权限定义对象，不仅仅只需为外部用户进行此类操作。
 
@@ -97,15 +97,12 @@ Azure Rights Management 服务始终使用 Azure Active Directory 帐户和关�
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Azure RMS 是否适用于 Azure AD 中的动态组？
 Azure AD Premium 功能可让你通过指定[基于属性的规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)为组配置动态成员资格。 在 Azure AD 中创建安全组时，该组类型支持动态成员资格，但不支持电子邮件地址，因此不能用于Azure Rights Management 服务。 但是，现在可以在 Azure AD 中创建支持动态成员身份并启用了邮件的新组类型。 当在 Azure 经典门户中添加新组时，你可以选择 **Office 365“预览版”**的**组类型**。 由于此组启用了邮件，可以将其用于 Azure Rights Management 保护。
 
-正如选项名清楚显示的一样，此新组类型仍为预览版，预期后续将推出其他功能和新文档。 在此期间，我们想要确认是否可以将此新组类型用于 Azure Rights Management 保护。
-
-
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS 支持哪些设备和哪种文件类型？
 有关支持 Azure Rights Management 服务的设备的列表，请参阅[支持 Azure Rights Management 数据保护的客户端设备](../get-started/requirements-client-devices.md)。 由于并非所有受支持的设备目前都能支持所有 Rights Management 功能，因此，请务必查看 [支持 Azure Rights Management 数据保护的应用程序](../get-started/requirements-applications.md)中的表。
 
 Azure Rights Management 服务支持所有文件类型。 对于文字、图像、Microsoft Office（Word、Excel、PowerPoint）文件、.pdf 文件和一些其他应用程序文件类型，Azure Rights Management 提供的本地保护包括对权利（权限）的加密和执行。 对于其他应用程序和文件类型，通用保护提供文件封装和验证以确认用户是否授权打开文件。
 
-对于 Azure Rights Management 直接支持的文件扩展名列表，请参阅 [Rights Management 共享应用程序管理员指南](../rms-client/sharing-app-admin-guide.md)中的[支持的文件类型和文件扩展名](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions)部分。 未列出的文件扩展名支持使用 RMS 共享应用程序，可自动提供通用保护保护这些文件。
+有关 Azure 权限管理本机支持的文件扩展名列表，请参阅 [Azure 信息保护客户端支持的文件类型](../rms-client/client-admin-guide-file-types.md)。 Azure 信息保护客户端支持未列出的文件扩展名，该客户端可自动对这些文件应用常规保护。
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>当我打开受 RMS 保护的 Office 文档时，关联的临时文件是否也将受 RMS 保护？
 
@@ -144,8 +141,6 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 租户使用许可证有效期默认值为 30 天，可使用 PowerShell cmdlet [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx) 配置该值。 可在自定义模板中使用更严格的设置替代此设置。 
 
-用户在使用 RMS 共享应用程序和选择“允许我立即撤消对这些文档的访问权限”选项时可替换租户设置和模板设置。 此设置可有效地将使用许可证有效期设置为 0。 
-
 有关使用许可证的工作原理的详细信息和示例，请参阅 [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx) 的详细说明。
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>Rights Management 可以防止屏幕截图吗？
@@ -165,6 +160,6 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

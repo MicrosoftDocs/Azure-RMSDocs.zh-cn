@@ -4,7 +4,7 @@ description: "最终用户 Office 应用程序（例如 Word、Excel、PowerPoin
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: 2e895f51e21d5f8cb45a43719d47ba6987c13a09
+ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
+ms.openlocfilehash: d2d33329457e181b55489834daf595da81bc7ada
 
 
 ---
@@ -30,6 +30,8 @@ ms.openlocfilehash: 2e895f51e21d5f8cb45a43719d47ba6987c13a09
 这些应用程序通过使用信息权限管理 (IRM) 以本机方式支持权限管理，让用户能够将保护应用于已保存文档，或者应用于要发送的电子邮件。 用户可以应用模板，在 Word、Excel 和 PowerPoint 中，用户还可以针对访问、权限和使用限制选择高度自定义设置。 
 
 例如，用户可以通过配置 Word 文档仅允许组织内人员访问该文档，还可以控制是否允许编辑 Excel 电子表格、是否将其限制为只读，以及是否禁止打印该电子表格。 对于时间敏感型文件，可以配置一个过期时间（直接由用户配置，或者应用模板进行配置），在过期之后无法再访问该文件。 在 Outlook 中，除了选择模板，用户还可以选择“不要转发”选项来帮助防止数据泄漏。
+
+除了本机 IRM 支持之外，这些应用程序还支持与 [Azure 信息保护客户端](../rms-client/aip-client.md )一起安装的 Azure 信息保护栏。 此栏会显示标签，方便用户对包含敏感数据的文档和电子邮件自动应用 Rights Management 保护。
 
 ## <a name="exchange-online-and-exchange-server"></a>Exchange Online 和 Exchange Server
 使用 Exchange Online 或 Exchange Server 时，你可以使用信息权限管理 (IRM) 集成，它提供更多信息保护解决方案：
@@ -64,7 +66,7 @@ ms.openlocfilehash: 2e895f51e21d5f8cb45a43719d47ba6987c13a09
 > - 不支持带 .PPDF 文件扩展名的受保护 PDF 文件。 使用本机支持 Rights Management 的 PDF 阅读器时，支持带 .PDF 文件扩展名的文件以及受 Rights Management 本机保护的文件。
 
 
-Azure RMS 会在从 SharePoint 下载文档时为文档应用使用限制和数据加密，而不是在 SharePoint 中首次创建文档或将其上载到库中时进行此类操作。 有关如何在下载文档前对其进行保护的信息，请参阅 SharePoint 文档中的 [OneDrive for Business 和 SharePoint Online 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx) 。
+Azure 权限管理会在从 SharePoint 下载文档时为文档应用使用限制和数据加密，而不是在 SharePoint 中首次创建文档或将其上载到库中时进行此类操作。 有关如何在下载文档前对其进行保护的信息，请参阅 SharePoint 文档中的 [OneDrive for Business 和 SharePoint Online 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx) 。
 
 有关在 SharePoint 中使用 Azure Rights Management 服务的详细信息，请参阅 Office 博客中的以下文章：[What’s New with Information Rights Management in SharePoint and SharePoint Online](http://blogs.office.com/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)（SharePoint 和 SharePoint Online 中的信息权限管理的新增功能）
 
@@ -75,6 +77,6 @@ Azure RMS 会在从 SharePoint 下载文档时为文档应用使用限制和数�
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

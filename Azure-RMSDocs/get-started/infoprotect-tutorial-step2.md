@@ -1,18 +1,18 @@
 ---
-title: "快速入门教程步骤 1 | Azure 信息保护"
-description: "入门教程第 2 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 30 分钟。"
+title: "快速入门教程步骤 2 | Azure 信息保护"
+description: "入门教程第 2 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 20 分钟。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 00d78bf12a7f400b3dfa7e35ada25177170e2d23
+ms.sourcegitcommit: 8ad1ff05f642571bfe7f4170cb88e29d05515e59
+ms.openlocfilehash: f3ec39af7bdbc63169c09eefa54c29cfc4cee40b
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 00d78bf12a7f400b3dfa7e35ada25177170e2d23
     > [!TIP] 
     > 选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览到该服务。
 
-3.  浏览自动显示的“策略: 全局”边栏选项卡，其中显示了自动创建的默认信息保护策略：
+3.  在“Azure 信息保护”边栏选项卡上，单击“全局”，然后浏览“策略: 全局”边栏选项卡，其中显示了自动创建的默认信息保护策略：
     
     - 用于分类的标签：“个人”、“公共”、“内部”、“机密”和“秘密”。 阅读各个标签的工具提示以了解如何使用这些标签。 请注意，**秘密**标签有两个子标签：**所有员工**和**我的组**，这是一个类别具有子类别的一个示例。
 
@@ -114,7 +114,7 @@ ms.openlocfilehash: 00d78bf12a7f400b3dfa7e35ada25177170e2d23
 
 完成本教程后你可以关闭 Azure 门户，或将其保留为打开状态以尝试其他配置选项。
 
-现在你已经了解了默认策略并进行了一些更改，下一步是安装 Azure 信息保护客户端和 Rights Management 共享应用程序。
+现在你已经了解了默认策略并进行了一些更改，下一步是安装 Azure 信息保护客户端。
 
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
@@ -128,6 +128,6 @@ ms.openlocfilehash: 00d78bf12a7f400b3dfa7e35ada25177170e2d23
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

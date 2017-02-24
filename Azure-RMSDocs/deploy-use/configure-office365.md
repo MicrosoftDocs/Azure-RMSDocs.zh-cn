@@ -4,7 +4,7 @@ description: "面向管理员提供的有关配置 Office 365 以使用 Azure �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 15bd23bb727937193cb51e732586d4c334357c04
-ms.openlocfilehash: 9c3839a6a6077470e54fb9df437f34abfb0bde78
+ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
+ms.openlocfilehash: 2b90ba203c8d1874eab193d24d16117af2442449
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 9c3839a6a6077470e54fb9df437f34abfb0bde78
 
 由于 Office 365 以本机方式支持 Azure 信息保护中的 Azure Rights Management 服务，因此无需客户端计算机配置即可支持各个应用程序（例如 Word、Excel、PowerPoint、Outlook 和 Outlook Web App）的信息权限管理 (IRM) 功能。 用户只需使用他们的 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 凭据登录 Office 应用程序，即可保护文件和电子邮件，并可使用其他人保护的文件和电子邮件。
 
-但是，我们建议你使用 Rights Management 共享应用程序，为这些应用程序提供补充，使得用户能够发挥 Office 加载项的优势。 有关详细信息，请参阅 [Rights Management 共享应用程序：客户端安装和配置](configure-sharing-app.md)。
+但是，我们建议你使用 Azure 信息保护客户端，为这些应用程序提供补充，使得用户能够发挥 Office 外接程序的优势。 有关详细信息，请参阅 [Azure 信息保护客户端：安装和配置客户端](configure-client.md)。
 
 ## <a name="exchange-online-irm-configuration"></a>Exchange Online：IRM 配置
 若要配置 Exchange Online 以支持 Azure Rights Management 服务，你必须为 Exchange Online 配置信息权限管理 (IRM) 服务。 为此，你可以使用 Windows PowerShell（无需安装单独的模块）并运行[适用于 Exchange Online 的 PowerShell 命令](https://technet.microsoft.com/library/jj200677.aspx)。
@@ -141,6 +141,9 @@ ms.openlocfilehash: 9c3839a6a6077470e54fb9df437f34abfb0bde78
 
 ## <a name="sharepoint-online-and-onedrive-for-business-irm-configuration"></a>SharePoint Online 和 OneDrive for Business:IRM 配置
 若要配置 SharePoint Online 和 OneDrive for Business 以支持 Azure Rights Management 服务，你必须先通过使用 SharePoint 管理中心，为 SharePoint Online 启用信息权限管理 (IRM) 服务。 然后，站点所有者可以使用 IRM 保护其 SharePoint 列表和文档库，用户可以使用 IRM 保护其 OneDrive for Business 库，以便在该处保存并与其他人共享的文档自动由 Azure Rights Management 服务保护。
+
+> [!NOTE]
+> 受 IRM 保护的 SharePoint 和 OneDrive for Business 库仅支持在线下载，除非使用较旧的同步客户端 OneDrive for Business 同步客户端 (Groove.exe)。 新的 [OneDrive 同步客户端 (OneDrive.exe)](https://support.office.com/article/Enable-users-to-sync-SharePoint-files-with-the-new-OneDrive-sync-client-22e1f635-fb89-49e0-a176-edab26f69614)目前不支持 Rights Management 保护。 
 
 若要为 SharePoint Online 启用信息权限管理 (IRM) 服务，请参阅 Office 网站中的以下说明：
 
@@ -1112,6 +1115,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

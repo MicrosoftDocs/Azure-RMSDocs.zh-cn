@@ -5,7 +5,7 @@ keywords: "一些常见问题，帮助你使用适用于 iOS 和 Android 的 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/06/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -14,8 +14,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f478f65eecb47b6d0f41ece413ce576b6935b916
-ms.openlocfilehash: 9a03ccf3326b51f5c9c19102a1e9d003562cead6
+ms.sourcegitcommit: 0dc8e4d772ef65e3425203e78c5e569f4e107b8e
+ms.openlocfilehash: a6900a6dadd0c323958f42ff441cbcf936a0f582
 
 
 ---
@@ -30,9 +30,11 @@ ms.openlocfilehash: 9a03ccf3326b51f5c9c19102a1e9d003562cead6
 
 如果电子邮件应用本机不支持权限管理数据保护，通过此应用可以查看权限保护的电子邮件消息 (.rpmsg files)。 通过此应用还可以查看权限保护的 PDF 文件、图片和文本文件。 目前，无法使用此应用创建新的受保护电子邮件、对其进行答复、创建或编辑受保护文件。
 
-## <a name="can-i-open-pdf-files-that-are-in-sharepoint-protected-libraries-and-onedrive-for-business"></a>可以打开位于受保护的 SharePoint 库和 OneDrive For Business 中的 PDF 文件吗？
+## <a name="can-i-open-pdf-files-that-are-in-sharepoint-protected-libraries-and-onedrive-for-business"></a>可以打开位于受保护的 SharePoint 库和 OneDrive for Business 中的 PDF 文件吗？
 
 是的，你可以打开其他人通过 SharePoint 和 OneDrive for Business 与你共享的受保护的 PDF 文件。 点击该链接，然后选择此应用打开文件。 
+
+此应用也可以打开 SharePoint 和 OneDrive for Business 以外的受保护 PDF 文件（受保护的 PDF 和 .ppdf 文件）。
 
 ## <a name="can-my-mobile-device-run-the-azure-information-protection-app"></a>我的移动设备是否可运行 Azure 信息保护应用？
 
@@ -73,6 +75,6 @@ Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

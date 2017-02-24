@@ -1,10 +1,10 @@
 ---
-title: "Azure 信息保护的术语 | Azure 信息保护"
+title: "Azure 信息保护的术语"
 description: "对 Microsoft Azure 信息保护相关的单词、短语或缩略词感到迷惑吗？ 在此处查找特定于 Azure 信息保护或具有特定含义（如果在此服务上下文中使用）的术语和缩写的定义。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: a5706c9cf8b81ec761865a800761c69584659578
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: a5cfa773d440e92fe9d3e88e242dfb25f7174400
 
 
 ---
@@ -50,7 +50,7 @@ ms.openlocfilehash: a5706c9cf8b81ec761865a800761c69584659578
 |信息权限管理|经常缩写为 *IRM*。<br /><br />一个用于 Exchange Server、Word 和 SharePoint Online 等 Office 服务的术语，说明是否支持 Microsoft Rights Management 服务。|
 |IRM|请参阅 *信息权限管理*。|
 |MSDRM|有时在 RMS 客户端 1.0（现已被新的客户端 MSIPC 取代）的参考信息中出现。 这个旧版客户端支持使用 RMS SDK 1.0 开发的应用程序，并支持 Office 2010 和 Office 2007、Exchange 2010 和 Exchange 2013 以及 SharePoint 2010 和 SharePoint 2007。|
-|MSIPC|有时在 RMS 客户端 2.0（取代了旧版 RMS 客户端 MSDRM）的参考信息中出现。 这个较新版客户端支持使用 RMS SDK 2.0 开发的应用程序，并支持 Office 2016 和 Office 2013、SharePoint 2013 和 RMS 共享应用程序。|
+|MSIPC|有时在 RMS 客户端 2.0（取代了旧版 RMS 客户端 MSDRM）的参考信息中出现。 这个较新版客户端支持使用 RMS SDK 2.0 开发的应用程序，并支持 Office 2016 和 Office 2013、SharePoint 2013 和 RMS 共享应用程序以及 Azure 信息保护客户端。|
 |本机保护|所有启用的应用程序中提供的一种保护级别，可阻止未经授权的人员打开某个文件，并且还可以强制实施更严格的策略，例如只读、不允许打印。 此外，这种保护将一直伴随文件，即使将该文件转发给他人或将其保存在他人可以访问的公共位置。|
 |。pfile|在受 Rights Management 服务的一般性保护的所有文件后面附加的文件扩展名。|
 |。ppdf|Rights Management 服务在自动创建你通过电子邮件共享的文件（Word、Excel、PowerPoint 或 PDF）的 PDF 副本时创建的以便可在所有设备上读取（但不能编辑）的文件扩展名。|
@@ -59,7 +59,7 @@ ms.openlocfilehash: a5706c9cf8b81ec761865a800761c69584659578
 |publish|用于保护某个文件，以防他人在未经授权的情况下访问和使用该文件。|
 |权限管理连接器|可为 Exchange Server 和 SharePoint 等本地服务部署的出站代理中继，用于通过 Azure Rights Management 服务保护数据。|
 |权限管理服务|适用于 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 云版本 ([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]) 和 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 本地版本 (AD RMS) 的通用术语。|
-|权限管理共享应用程序|一个可下载的可选应用程序，适用于 Windows 和大多数流行移动设备，用于支持安全共享本地文件以及通过电子邮件发送的文件。|
+|权限管理共享应用程序|一个可选应用程序，适用于 Windows 和大多数流行移动设备，用于支持安全共享本地文件以及通过电子邮件发送的文件，现在由 Azure 信息保护客户端替代。|
 |RMS|请参阅 *Rights Management 服务*。|
 |RMS 连接器|请参阅 *Rights Management 连接器*。|
 |个人 RMS|一个免费订阅，当用户的组织未订阅 Office 365 或 Azure Active Directory 时，该用户可通过该订阅来使用 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 。|
@@ -73,6 +73,6 @@ ms.openlocfilehash: a5706c9cf8b81ec761865a800761c69584659578
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 

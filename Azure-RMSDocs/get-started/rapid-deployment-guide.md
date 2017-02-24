@@ -1,10 +1,10 @@
 ---
-title: "Azure 信息保护的快速部署指南 | Azure 信息保护"
-description: "此指南可帮助你更加快速地部署和使用 Azure 信息保护以保护组织的数据。 首先在要实现的特定方案的列表中进行选择。"
+title: "Azure 权限管理快速部署指南 | Azure 信息保护"
+description: "本指南可帮助你更快地部署和使用 Azure 权限管理服务以保护组织的数据。 首先在要实现的特定方案的列表中进行选择。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 12bc1ed0759364273e66d260b9282fbfe42abbe0
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: abe3de4cb972053179a87023c91509168ffeffc4
 
 
 ---
@@ -23,7 +23,10 @@ ms.openlocfilehash: 12bc1ed0759364273e66d260b9282fbfe42abbe0
 
 >*适用于：Azure 信息保护、Office 365*
 
-本指南是对“部署和使用”部分中的配置信息的补充，通过从要实施的特定方案的列表中进行选择，帮助你更加快速地部署和使用 Azure 信息保护。
+本指南是对“部署和使用”部分中的配置信息的补充，可帮助你更加快速地部署使用 Azure 信息保护中的 Azure 权限管理服务的仅保护解决方案。 在要实现的特定方案的列表中进行选择。
+
+> [!NOTE]
+> 此时，指南包含适用于仅保护的方案，不包含用于分类和保护或 Azure 信息保护客户端的方案。 
 
 这些方案包含管理员指令和随附的最终用户文档。 在向最终用户提供文档（说明或公告）之前，你需要首先针对业务需求和现有工作流对本文档进行自定义。 一组说明或公告示例显示了最终用户文档的最终样式。
 
@@ -33,8 +36,7 @@ ms.openlocfilehash: 12bc1ed0759364273e66d260b9282fbfe42abbe0
 
 在推出这些解决方案之前，你可能希望向最终用户发送广泛公告，让他们知道即将发生一些更改以帮助保护公司数据，且可能需要他们也做出一些改变。 下表后面包含了一个示例通信。
 
-> [!NOTE]
-> 如果你对本指南有任何问题和意见，请使用本页上的反馈机制或发送电子邮件消息至 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)。
+如果你对本指南有任何问题和意见，请使用本页上的反馈机制或发送电子邮件消息至 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)。
 
 ## <a name="scenarios-for-azure-information-protection"></a>Azure 信息保护的方案
 为了帮助你更加快速地部署 Azure 信息保护以解决具体的业务问题，请选择与业务目标最接近的方案，并根据需要进行调整。
@@ -148,6 +150,6 @@ ms.openlocfilehash: 12bc1ed0759364273e66d260b9282fbfe42abbe0
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

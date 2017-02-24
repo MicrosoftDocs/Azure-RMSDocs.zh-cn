@@ -4,7 +4,7 @@ description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 77c448230aef0b3364822f38ace4f490bfc2db5f
+ms.sourcegitcommit: a55a35ae0f0a3e0c60e6a0289a23888b2eda7fb5
+ms.openlocfilehash: 1f021eee1535abb09d4a4715c819935e21eb89dd
 
 
 ---
@@ -27,12 +27,38 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 使用以下信息查看版本中的新增内容或更改的内容。 最新版本会最先列出。 正式发布前的版本并未列出。
 
-除了当前版本，目前还有 Azure 信息保护客户端的**预览**版本（只能从 Microsoft 下载中心下载）。 它提供与适用于 Windows 的 Rights Management 共享应用程序相同的功能，具有文件资源管理器中的右键单击选项和用于查看受保护文件的查看器。 有关详细信息，请参阅[博客文章公告](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)和初步文档：[Azure信息保护用户指南](client-user-guide.md)。
-
 > [!NOTE]
 > 不会列出小修补程序，因此，如果 Azure 信息保护客户端遇到问题，请先检查它是否是最新版本的问题。
 >  
-> 如果问题仍然存在，请打开 Office 应用程序，在“开始”选项卡的“保护”组中，单击“保护”，然后单击“帮助和反馈”。 单击**发送反馈**链接，使用该链接可自动将客户端日志附加到电子邮件，以发送给信息保护团队进行调查。 有关支持选项，请参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)信息。
+> 如果仍有问题，请参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
+
+## <a name="version-131552"></a>版本 1.3.155.2
+
+**发布日期**：2017/02/08
+
+**新要求**：
+
+Microsoft .NET Framework
+
+- 此版本的 Azure 信息保护客户端要求使用的最低版本为 Microsoft .NET Framework 4.6.2，如果缺少此版本，安装程序会尝试下载并安装它。 Azure 信息保护客户端完成安装后，可能需要重启计算机。
+
+- 如果单独安装 Azure 信息保护查看器，则要求的最低版本为 Microsoft .NET Framework 4.5.2，如果缺少此版本，安装程序会尝试下载并安装它。
+
+**新增功能**：
+
+- 一个新的统一客户端，它将适用于 Windows 的 Rights Management 共享应用程序中的功能与 Azure 信息保护客户端组合在一起。 包括：
+    
+    - 与 Windows 文件资源管理器集成（右键单击）以应用标签和保护。 支持其他文件格式和多个文件选择。
+    - 适用于受保护文档的查看器（包括用于 SharePoint 的受保护 PDF）。
+    - PowerShell cmdlet，可用于获取和设置存储在本地或存储在网络共享上的文件的标签。 这些 cmdlet 与 RMS 保护工具（RMSProtection 模块）之前随附的 cmdlet 一起安装。
+    - 客户端使用情况日志，记录应用的标签、应用方式、应用者等信息。
+
+此客户端版本是 2016 年 12 月首次发布的预览版客户端的[公开发行版本](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/08/azure-information-protection-december-update-moves-to-general-availability/)。 有关此版本的客户端的详细信息，请参阅以下指南：
+
+- [Azure 信息保护客户端管理员指南](client-admin-guide.md)
+
+- [Azure 信息保护用户指南](client-user-guide.md)
+
 
 ## <a name="version-1240"></a>版本 1.2.4.0
 
@@ -50,7 +76,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 安装 Azure 信息保护客户端后，用户可从 Office 应用程序运行的诊断测试和重置选项：在“开始”选项卡的“保护”组中，单击“保护”、“帮助和反馈”，然后单击“运行诊断”。 
 
-    有关此选项的详细信息，请参阅客户端安装文档中的[验证安装、连接状态或报告问题](info-protect-client.md#to-verify-installation-connection-status-or-report-a-problem)部分。
+    有关此选项的详细信息，请参阅客户端安装文档中的[验证安装、连接状态或发送反馈](client-admin-guide.md#to-verify-installation-connection-status-or-send-feedback)部分。
 
 ## <a name="version-11230"></a>版本 1.1.23.0
 
@@ -60,11 +86,16 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ## <a name="next-steps"></a>后续步骤
 
-有关安装客户端的详细信息，请参阅[安装 Azure 信息保护客户端](info-protect-client.md)。
+有关安装客户端的详细信息：
+
+- 用户请参阅：[下载并安装客户端](install-client-app.md)
+
+- 管理员请参阅：[Azure 信息保护客户端管理员指南](client-admin-guide.md)
+
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

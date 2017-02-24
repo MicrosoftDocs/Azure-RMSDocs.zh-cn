@@ -4,7 +4,7 @@ description: "详细解说 Azure RMS 的工作原理、它使用的加密控件�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: 91a5485b2860edf6f2095027e1c0d69ec96141d7
+ms.sourcegitcommit: d704751bcc7a968c204d0bab0dc55776411d9593
+ms.openlocfilehash: 0ff5deaaea73b7354d2b251c3ce9c768debd2269
 
 
 ---
@@ -52,7 +52,7 @@ ms.openlocfilehash: 91a5485b2860edf6f2095027e1c0d69ec96141d7
 
 ###### <a name="footnote-1"></a>脚注 1 
 
-当文件具有扩展名 .ppdf 或者是受保护的文本文件或图像文件（例如 .ptxt 或 .pjpg）时，Rights Management 共享应用程序使用&256; 位进行常规保护和本机保护。
+当文件具有扩展名 .ppdf 或者是受保护的文本文件或图像文件（例如 .ptxt 或 .pjpg）时，Azure 信息保护客户端和 Rights Management 共享应用程序使用&256; 位进行常规保护和本机保护。
 
 如何存储和保护加密密钥：
 
@@ -77,13 +77,13 @@ ms.openlocfilehash: 91a5485b2860edf6f2095027e1c0d69ec96141d7
 ### <a name="initializing-the-user-environment"></a>初始化用户环境
 在用户可以保护内容或使用 Windows 计算机上的受保护内容之前，必须在设备上准备用户环境。 这是一次性的过程，当用户尝试保护或使用受保护内容时会自动发生，无需用户干预：
 
-![RMS 客户端激活 - 步骤 1](../media/AzRMS.png)
+![RMS 客户端激活流程 - 步骤 1，对客户端进行身份验证](../media/AzRMS.png)
 
 **步骤 1 中发生的情况**：计算机上的 RMS 客户端首先连接到 Azure Rights Management 服务，并通过使用其 Azure Active Directory 帐户对用户进行身份验证。
 
 将用户的帐户与 Azure Active Directory 联合时，会自动进行这种身份验证，并且不会提示用户输入凭据。
 
-![RMS 客户端激活 - 步骤 2](../media/AzRMS_useractivation2.png)
+![RMS 客户端激活-步骤 2，证书已下载到客户端](../media/AzRMS_useractivation2.png)
 
 **步骤 2 中发生的情况**：对用户进行身份验证后，连接将自动重定向到组织的 Azure 信息保护租户，该租户将颁发证书，让用户在 Azure Rights Management 服务上进行身份验证，以便使用受保护内容并脱机保护内容。
 
@@ -92,17 +92,17 @@ ms.openlocfilehash: 91a5485b2860edf6f2095027e1c0d69ec96141d7
 ### <a name="content-protection"></a>内容保护
 当用户保护文档时，RMS 客户端将对未受保护的文档执行以下操作：
 
-![RMS 文档保护 - 步骤 1](../media/AzRMS_documentprotection1.png)
+![RMS 文档保护 - 步骤 1，文档已加密](../media/AzRMS_documentprotection1.png)
 
 **步骤 1 中发生的情况**：RMS 客户端创建一个随机密钥 （内容密钥），并结合使用此密钥与 AES 对称加密算法来加密该文档。
 
-![RMS 文档保护 - 步骤 2](../media/AzRMS_documentprotection2.png)
+![RMS 文档保护 - 步骤 2，策略已创建](../media/AzRMS_documentprotection2.png)
 
 **步骤 2 中发生的情况**：然后，RMS 客户端将会基于模板或者通过指定文档的特定权限为该文档创建包含策略的证书。 此策略包括不同用户或组的权限和其他限制，例如过期日期。
 
 然后，RMS 客户端使用初始化用户环境时获取的组织密钥，并使用此密钥来加密策略和对称内容密钥。 RMS 客户端还使用初始化用户环境时获得的用户证书对策略进行签名。
 
-![RMS 文档保护 - 步骤 3](../media/AzRMS_documentprotection3.png)
+![RMS 文档保护 - 步骤 3，策略已嵌入到文档中](../media/AzRMS_documentprotection3.png)
 
 **步骤 3 中发生的情况**：最后，RMS 客户端将该策略嵌入到一个文件中，该文件包含以前已加密的文档的正文，并与该文档共同构成了受保护文档。
 
@@ -111,21 +111,25 @@ ms.openlocfilehash: 91a5485b2860edf6f2095027e1c0d69ec96141d7
 ### <a name="content-consumption"></a>内容使用
 当用户想要使用受保护的文档时，将通过请求对 Azure Rights Management 服务的访问来启动 RMS 客户端：
 
-![RMS 文档占用 - 步骤 1](../media/AzRMS_documentconsumption1.png)
+![RMS 文档使用 - 步骤 1，用户已通过身份验证并获取权限列表](../media/AzRMS_documentconsumption1.png)
 
 **步骤 1 中发生的情况**：经过身份验证的用户将文档策略和用户的证书发送到 Azure Rights Management 服务。 服务解密并评估该策略，并生成用户对该文档拥有的权限列表（如果有）。
 
-![RMS 文档占用 - 步骤 2](../media/AzRMS_documentconsumption2.png)
+![RMS 文档使用 - 步骤 2，使用许可证已返回到客户端](../media/AzRMS_documentconsumption2.png)
 
 **步骤 2 中发生的情况**：然后，服务将从已解密的策略中提取 AES 内容密钥。 然后，使用通过请求获取的用户公共 RSA 密钥来加密此密钥。
 
 重新加密的内容密钥将连同用户权限列表一起嵌入到加密的使用许可证中，随后使用许可证将返回到 RMS 客户端。
 
-![RMS 文档使用 - 步骤 3](../media/AzRMS_documentconsumption3.png)
+![RMS 文档使用 - 步骤 3，文档已解密并且权限已强制实施](../media/AzRMS_documentconsumption3.png)
 
 **步骤 3 中发生的情况**：最后，RMS 客户端将采用加密的使用许可证，并使用其自身的用户私钥来解密该许可证。 这样，RMS 客户端便可以根据需要解密文档的正文，并在屏幕上呈现其内容。
 
 客户端还将解密权限列表，并将其传递到应用程序，应用程序将在应用程序的用户界面中强制实施这些权限。
+
+> [!NOTE]
+> 组织外部的用户使用你保护的内容时，使用流程是相同的。 对于此方案，有所更改的是如何对用户进行身份验证。 有关详细信息，请访问[如果我与公司之外的用户共享受保护文档，该用户如何进行身份验证？](../get-started/faqs-rms.md#when-i-share-a-protected-document-with-somebody-outside-my-company-how-does-that-user-get-authenticated)
+
 
 ### <a name="variations"></a>变体
 前面的演练包括标准方案，但存在一些变体：
@@ -136,7 +140,7 @@ ms.openlocfilehash: 91a5485b2860edf6f2095027e1c0d69ec96141d7
 
 -   **常规保护 (.pfile)**：当 Azure Rights Management 服务对文件提供一般性保护时，流程基本上与内容保护相同，不过，RMS 客户端将创建一个授予所有权限的策略。 使用该文件时，会先将它解密，然后将它传递到目标应用程序。 这种方案允许你保护所有文件，即使它们本机不支持 RMS。
 
--   **受保护的 PDF (.ppdf)**：Azure Rights Management 服务本机保护 Office 文件时，还会创建该文件的副本，并以相同的方法保护该副本。 唯一的差别在于，文件副本采用 PPDF 文件格式，RMS 共享应用程序只知道如何打开该格式以查看。 这种方案允许你通过电子邮件发送受保护的附件，知道移动设备上的收件人始终能够读取它们，即使移动设备没有相应的应用程序可本机支持受保护的 Office 文件。
+-   **受保护的 PDF (.ppdf)**：Azure Rights Management 服务本机保护 Office 文件时，还会创建该文件的副本，并以相同的方法保护该副本。 唯一的差别在于，文件副本采用 PPDF 文件格式，Azure 信息保护客户端查看器和 RMS 共享应用程序只知道如何打开该格式进行查看。 这种方案允许你通过电子邮件发送受保护的附件，知道移动设备上的收件人始终能够读取它们，即使移动设备没有相应的应用程序可本机支持受保护的 Office 文件。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -152,6 +156,6 @@ ms.openlocfilehash: 91a5485b2860edf6f2095027e1c0d69ec96141d7
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

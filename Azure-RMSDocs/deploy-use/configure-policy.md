@@ -4,7 +4,7 @@ description: "若要配置分类、标记和保护，必须配置 Azure 信息�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 01/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 10c7d307cceb1ca5f1b9bf857fdbe9aea0dc321d
+ms.sourcegitcommit: 8ad1ff05f642571bfe7f4170cb88e29d05515e59
+ms.openlocfilehash: 2ad10e378c14dbaef09ccd321379a0dbd7c0d23d
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: 10c7d307cceb1ca5f1b9bf857fdbe9aea0dc321d
 
 2. 导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“更多服务”并在“筛选”框中开始键入**信息保护**。 在结果中选择“Azure 信息保护”。 
 
-    然后，将显示“Azure信息保护”边栏选项卡，它将自动打开所有用户获得的全局信息保护策略的边栏选项卡。 它包含可配置的以下元素：
+    然后，你将看到“Azure 信息保护”边栏选项卡，可在其中打开所有用户获得的“全局”策略。 还可以选择添加和编辑作用域内策略。 **全局** Azure 信息保护策略包含以下可配置的元素：
 
     - 让你和用户对文档和电子邮件进行分类的标签。
 
@@ -83,6 +83,6 @@ Azure 的信息保护附带 [默认策略](configure-policy-default.md)(#默认�
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

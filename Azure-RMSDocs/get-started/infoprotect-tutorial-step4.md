@@ -1,18 +1,18 @@
 ---
 title: "快速入门教程步骤 4 | Azure Rights Management"
-description: "入门教程第 3 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 30 分钟。"
+description: "入门教程第 3 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 20 分钟。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: bcf1e9ee7a2d6cf8fb264533f150b350ce0a9e56
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: bf438f4f7617b4cc05df7f4a7067c5ac57fd1d06
 
 
 ---
@@ -35,7 +35,7 @@ ms.openlocfilehash: bcf1e9ee7a2d6cf8fb264533f150b350ce0a9e56
 
 ## <a name="to-remove-the-classification-completely"></a>完全删除分类
 
-在信息保护栏上，单击“个人”旁边的“编辑标签”图标。 将显示可用的标签。 但这一次不是选择某个标签，而是单击“删除标签”图标。 单击“确定”确认删除，然后提供该操作的理由。  
+在信息保护栏上，单击“个人”旁边的“编辑标签”图标。 将显示可用的标签。 但这一次不是选择某个标签，而是单击“删除标签”图标。 这一次请键入“此文档不需要分类”，然后单击“确定”。  
 
 你将看到“敏感度”的值显示为“未设置”，即未设置默认标签时，用户看到的最初内容：
 
@@ -56,7 +56,17 @@ ms.openlocfilehash: bcf1e9ee7a2d6cf8fb264533f150b350ce0a9e56
 
     该文档仍使用你指定的 Azure Rights Management 模板进行保护，你可以单击“文件”选项卡并查看“保护文档”的信息来确认。 如果你使用默认的机密模板，将看到以下信息：该文档仅供内部用户使用（组织外部的用户将无法打开该文档），并且文档的内容不可复制或打印。 作为文档的所有者，你可以复制和打印该文档，但是如果将其通过电子邮件发送给组织中的其他用户，那么他们将无法执行这些操作。
 
+4. 现在可以关闭此文档。
+
 现在你已经在实际操作中了解了分类、标记和保护，我们来看看已在另一组织中与其他人共享你的文档的情况下，如何保护你的文档。 你甚至可以跟踪它们的使用方式，并撤销对它们的访问权限。
+
+|如果你想了解更多信息|其他信息|
+|--------------------------------|--------------------------|
+|有关标记和保护文件的完整说明 |[对文件或电子邮件进行分类和保护](../rms-client/client-classify-protect.md)|
+
+
+
+
 
 >[!div class="step-by-step"]
 [« 步骤 3](infoprotect-tutorial-step3.md)
@@ -65,6 +75,6 @@ ms.openlocfilehash: bcf1e9ee7a2d6cf8fb264533f150b350ce0a9e56
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

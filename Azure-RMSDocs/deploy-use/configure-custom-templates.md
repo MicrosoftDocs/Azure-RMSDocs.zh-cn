@@ -4,7 +4,7 @@ description: "面向管理员提供的有关配置和管理使用权限模板的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: bab64fcb5f4ac208bfc7f1f385c558a77e9eb796
+ms.sourcegitcommit: efab4cdc455237b4bb064252dfe6702ec40539d2
+ms.openlocfilehash: a5a27e9d1d12381b7c4c945596480171f7265552
 
 
 ---
@@ -37,7 +37,7 @@ ms.openlocfilehash: bab64fcb5f4ac208bfc7f1f385c558a77e9eb796
 
     -   特定权限：查看内容、保存文件、编辑内容、查看分配的权限、允许宏、转发、答复、全部答复
 
-此外，[RMS 共享应用程序](../rms-client/sharing-app-windows.md)让用户能够定义他们自己的一组权限。 对于 Outlook 客户端和 Outlook Web Access，用户可选择[“不得转发”选项](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)。
+此外，[Azure 信息保护客户端](../rms-client/aip-client.md)允许用户定义自己的一组权限。 对于 Outlook 客户端和 Outlook Web Access，用户可选择[“不得转发”选项](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)。
 
 对于很多组织，默认模板可能足以满足他们的需求。 但如果你希望创建自己的自定义权限策略模板，也可以这样做。 创建自定义模板有以下原因：
 
@@ -68,6 +68,6 @@ ms.openlocfilehash: bab64fcb5f4ac208bfc7f1f385c558a77e9eb796
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
