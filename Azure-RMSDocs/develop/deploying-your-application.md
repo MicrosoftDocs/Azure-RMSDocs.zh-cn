@@ -1,11 +1,11 @@
 ---
-title: "部署应用程序 | Azure 信息保护"
+title: "部署应用程序"
 description: "本主题提供部署应用程序的概述和分步指导"
 keywords: "部署, RMS, AIP"
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 12/15/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 00bf0748f67afe3f81de86fa643e78652cc0d7a4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 0c16b7c6bd494a0350a511a3b415f781aecf613d
 
 
 ---
@@ -127,6 +127,6 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 客户端作为可选下�
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 

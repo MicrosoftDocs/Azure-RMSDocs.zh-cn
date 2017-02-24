@@ -1,10 +1,10 @@
 ---
-title: "你的 Azure Rights Management 租户密钥的操作 | Azure 信息保护"
+title: "Azure 信息保护租户密钥的操作"
 description: "确定对 Azure 信息保护租户密钥具有的不同级别控制权和责任。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0e10e5d5aba51f96ab1e29e42ae39929c321f563
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 0895050d1bc0528f9ab230bdeac9e2a3ee787b31
 
 
 ---
@@ -47,6 +47,6 @@ ms.openlocfilehash: 0e10e5d5aba51f96ab1e29e42ae39929c321f563
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 
