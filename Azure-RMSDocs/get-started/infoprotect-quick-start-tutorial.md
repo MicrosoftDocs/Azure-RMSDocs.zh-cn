@@ -4,7 +4,7 @@ description: "该教程用于快速试用适合你组织的 Microsoft Azure 信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,6 +13,7 @@ ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
 ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
 ms.openlocfilehash: 78d019adfeed4f2bc9cb0924fa8f9b932862819a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -49,10 +50,5 @@ ms.openlocfilehash: 78d019adfeed4f2bc9cb0924fa8f9b932862819a
 [&#187; 步骤 1](infoprotect-tutorial-step1.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO4-->
 
 
