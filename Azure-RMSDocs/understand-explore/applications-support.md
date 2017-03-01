@@ -1,5 +1,5 @@
 ---
-title: "应用程序如何支持 Azure Rights Management 服务 | Azure 信息保护"
+title: "应用如何支持 Azure Rights Management - AIP"
 description: "了解最常使用的最终用户应用程序（例如 Office 应用程序，包括 Word、Excel、PowerPoint 和 Outlook）和服务（例如 Exchange 和 SharePoint）如何才能使用 Azure 信息保护中的 Azure Rights Management 来帮助保护组织的文档和电子邮件。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 53a77c0e312f44fe2210ed19ead6dedeb36a5a78
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 7553e2719195448c71653ead9950f92bac3928c5
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -61,9 +62,4 @@ ms.openlocfilehash: 53a77c0e312f44fe2210ed19ead6dedeb36a5a78
 -   [支持 RMS API 的其他应用程序](api-support.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

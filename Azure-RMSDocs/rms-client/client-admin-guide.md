@@ -1,10 +1,10 @@
 ---
-title: "Azure 信息保护客户端管理员指南 | Azure 信息保护"
+title: "Azure 信息保护客户端管理员指南"
 description: "面向负责部署适用于 Windows 的 Azure 信息保护客户端的企业网络管理员的说明和信息。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid:
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f82c7964b16ad984ad920059e2f61f19ad0f471a
-ms.openlocfilehash: dff30520c149c29663c340b70a12c427b31659b9
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: b6a8477078a333aa23ccfe5904af3582216a1e96
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -78,6 +79,8 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 - 如果单独安装 Azure 信息保护查看器，则要求的最低版本为 Microsoft .NET Framework 4.5.2，如果缺少此版本，安装程序会尝试下载并安装它。
 
+- PowerShell 模块需要 Windows PowerShell 4.0 版本，此版本可能需要在旧版操作系统上安装。 有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 **$PSVersionTable**。
+
 - 运行 Windows 7 Service Pack 1 的计算机需要 [KB 2533623](https://support.microsoft.com/en-us/kb/2533623)，可在安装客户端后安装。 如果需要此更新但尚未安装，系统会提示你进行安装。
 
 > [!NOTE]
@@ -105,7 +108,9 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
     
     - 对于其他版本的 Office，请重启任一 Office 应用程序和文件管理器的所有实例。 
         
-
+5. 可通过查看 %temp% 文件夹中的安装日志文件，来确认安装已成功。 此文件具有以下命名格式：`Microsoft_Azure_Information_Protection_<number>_<number>_MSIP.Setup.Main.msi.log`。 例如：**Microsoft_Azure_Information_Protection_20161201093652_000_MSIP.Setup.Main.msi.log**
+    
+    在此日志文件中搜索以下字符串：**Product: Microsoft Azure Information Protection -- Installation completed successfully**（产品：Microsoft Azure 信息保护 - 已成功完成安装）。
 
 ### <a name="additional-instructions-for-office-2010-only"></a>仅适用于 Office 2010 的其他说明
 
@@ -189,9 +194,4 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

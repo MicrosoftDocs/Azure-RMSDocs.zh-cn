@@ -1,10 +1,10 @@
 ---
-title: "删除模板 | Azure 信息保护"
+title: "删除 Azure RMS 模板 - AIP"
 description: "无法删除默认模板，但可以将它们存档，这样用户就不会看到它们。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: b098eb9ec86c0301378b5827ac0761c320d2094c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 8b581f1de58c7a76a9395c51a62aef7ce3271e2f
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -42,8 +43,3 @@ ms.openlocfilehash: b098eb9ec86c0301378b5827ac0761c320d2094c
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

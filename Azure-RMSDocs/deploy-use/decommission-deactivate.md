@@ -1,10 +1,10 @@
 ---
-title: "解除 Azure Rights Management 服务授权和停用 Azure Rights Management 服务 | Azure 信息保护"
+title: "解除授权和停用 Azure RMS"
 description: "如果你决定不再想要使用 Azure 信息保护中的此信息保护服务，本文提供相关的信息和说明。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 14f986ee7166122eed096188a66a1d1132d8d935
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: b88d4587be0549ea7364c9745c218865480a8d18
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -89,10 +90,5 @@ ms.openlocfilehash: 14f986ee7166122eed096188a66a1d1132d8d935
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

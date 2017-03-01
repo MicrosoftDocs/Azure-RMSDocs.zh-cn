@@ -1,5 +1,5 @@
 ---
-title: "Azure 信息保护客户端的仅保护模式"
+title: "Azure 信息保护的仅保护模式"
 description: "此信息适用于以仅保护模式运行 Azure 信息保护客户端的用户。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: bc81b8587e999e6cbb036942e1c5d37e1e2b319b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 55254496b23e49fe7e2dbd19721a824739004b21
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -50,9 +51,4 @@ ms.openlocfilehash: bc81b8587e999e6cbb036942e1c5d37e1e2b319b
 - 从 Office 应用程序访问文档跟踪站点。 但是，必须具有用于跟踪和撤销来自此站点的文档的有效订阅。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

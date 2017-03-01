@@ -1,10 +1,10 @@
 ---
-title: "客户评论的内部规则 | Azure 信息保护"
+title: "客户评论的内部规则 - AIP"
 description: "用于 Azure 信息保护文档的 Livefyre 评论和边栏的范围和目的。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 95e1b3502d06c96f666da665739f4f97050c0b67
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 587c4f188603f49605191a15d71180441f16e3c9
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -40,10 +41,5 @@ Livefyre 评论和旁注不适用于以下内容：
 可以在 [Azure 信息保护的信息和支持](./get-started/information-support.md)中找到其他的资源。 
 
 请注意：如果是 Microsoft 员工，请使用内部通信信道。
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

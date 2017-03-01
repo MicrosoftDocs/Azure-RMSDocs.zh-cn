@@ -1,5 +1,5 @@
 ---
-title: "运行 Windows Server 和使用文件分类基础结构 (FCI) 的文件服务器 | Azure 信息保护"
+title: "使用 FCI 的文件服务器 - Azure 信息保护"
 description: "部署 RMS 连接器时如何将 Windows Server 文件分类基础结构与 Azure RMS 结合使用以自动保护 Office 文档。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
-ms.openlocfilehash: dd94145bc2a6f338bb8a8c0ac0712ed1c86517d4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 909ff4f7c96af65172604bb903173dd38d95dcf9
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -41,10 +42,5 @@ ms.openlocfilehash: dd94145bc2a6f338bb8a8c0ac0712ed1c86517d4
 现在你已经了解应用程序和服务如何支持 Azure RMS，你可能会希望将 Azure RMS 与Rights Management、Active Directory Rights Management Services (AD RMS) 的本地版本进行比较。 有关功能、要求和安全控制的比较，请参阅 [比较 Azure Rights Management 和 AD RMS](compare-azure-rms-ad-rms.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

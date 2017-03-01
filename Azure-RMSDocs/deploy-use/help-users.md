@@ -1,5 +1,5 @@
 ---
-title: "通过使用 Azure Rights Management 服务帮助用户保护文件 | Azure 信息保护"
+title: "使用 Azure RMS 帮助用户保护文件 - AIP"
 description: "此信息可帮助你在部署和配置 Azure 信息保护中的 Azure Rights Management 之后，为用户、管理员和技术支持提供指导。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
-ms.openlocfilehash: 0af15bf3238d020b1ee45b45bc780256c88b5e55
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 61f7a7208b13a28f2e8cfb85489cceb2a2caf077
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -109,10 +110,5 @@ ms.openlocfilehash: 0af15bf3238d020b1ee45b45bc780256c88b5e55
 与查看受保护文档相似，当收件人接收电子邮件时，首先会对他们进行身份验证。 如果他们已被授权查看电子邮件，则电子邮件将会打开，并提供为该用户指定的受限使用权限。 例如，如果你选择了 **“不要全部答复”**，则电子邮件窗口中的 **“全部答复”** 选项不可用。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

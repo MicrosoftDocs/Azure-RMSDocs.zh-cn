@@ -1,5 +1,5 @@
 ---
-title: "为 Azure Rights Management 服务配置自定义模板 | Azure 信息保护"
+title: "为 Azure RMS 配置自定义模板 - AIP"
 description: "面向管理员提供的有关配置和管理使用权限模板的信息和说明。 模板可使用户和其他管理员轻松地将策略应用于限制授权用户访问的敏感文件。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: efab4cdc455237b4bb064252dfe6702ec40539d2
-ms.openlocfilehash: a5a27e9d1d12381b7c4c945596480171f7265552
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 0818f8e65f2065e70ef66732819d21aa85c912fa
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -64,10 +65,5 @@ ms.openlocfilehash: a5a27e9d1d12381b7c4c945596480171f7265552
 -   [使用 PowerShell 管理模板](configure-templates-with-powershell.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

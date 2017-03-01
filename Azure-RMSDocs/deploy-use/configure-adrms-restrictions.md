@@ -1,18 +1,19 @@
 ---
-title: "HYOK 限制 | Azure 信息保护"
-description: "如果选择具有 Azure 信息保护的 AD RMS 保护，请确定限制、先决条件和建议。 此解决方案有时也称为“自留密钥”(HYOK)。"
+title: "Azure 信息保护的 HYOK 限制"
+description: "如果选择具有 Azure 信息保护的 HYOK (AD RMS) 保护，请确定限制、先决条件和建议。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
-ms.openlocfilehash: afb676dc133c23123cd3cce6d3c6367b4e80911a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: e918f3fa7c001c4265ffaf72ebe8baa02dc8e407
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: afb676dc133c23123cd3cce6d3c6367b4e80911a
 
 >*适用于：Azure 信息保护*
 
-当你保护最敏感的文档和电子邮件时，通常会为此应用 Azure 权限管理保护，以便从以下优势中受益：
+当你保护最敏感的文档和电子邮件时，通常会为此应用 Azure Rights Management (Azure RMS) 保护，以便从以下优势中受益：
 
 - 无需任何服务器基础结构，从而使该解决方案能够以比本地解决方案更快、更经济高效的方式进行部署和维护。
 
@@ -33,7 +34,7 @@ ms.openlocfilehash: afb676dc133c23123cd3cce6d3c6367b4e80911a
 
 Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你自己管理的私钥（“自带密钥”或 BYOK 方案）来保护组织的文档和电子邮件。 使用 Azure RMS 保护的信息永远不会发送到云；受保护的文档和电子邮件不会存储在 Azure 中，除非你显式将其存储在其中，或者使用另一个云服务将其存储在 Azure 中。 有关租户密钥选项的详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)。 
 
-但是，有些客户可能需要使用本地托管的密钥来保护所选的文档和电子邮件。 例如，可能出于法规和合规性方面的原因需要这样做。 
+但是，有些组织可能需要使用本地托管的密钥来保护文档和电子邮件的较小子集。 例如，可能出于法规和合规性方面的原因需要这样做。  
 
 此配置有时称为“自留密钥”(HYOK)，当你有一个满足下节所述要求的有效 Active Directory Rights Management Services (AD RMS) 部署时，此配置受 Azure 信息保护支持。
 
@@ -41,18 +42,34 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 > [!NOTE]
 > 仅在必要时对需要此配置的文档和电子邮件使用此配置。 AD RMS 保护不提供上面列出的那些使用 Azure RMS 保护时可获得的好处，其用途在于“不惜任何代价确保数据不透明”。
+>
+> 甚至对于使用此配置的组织来说，它通常适用于需要保护的内容少于所有内容的 10% 的情况。 提示：请仅将此用于满足以下所有标准的文档或电子邮件：
+> 
+> - 内容在组织中具有最高分类（“顶级机密”），并且访问权限仅限于少数人。
+> 
+> - 绝不会在组织外部共享内容。
+> 
+> - 将仅在内部网络中使用内容。
+> 
+> - 不会在 Mac 计算机或移动设备上使用内容。
 
-当标签使用 AD RMS 保护，而非 Azure RMS 保护时，用户不会知道。 由于 AD RMS 保护所附带的限制，请确保明确指示用户何时应选择应用 AD RMS 保护的标签。
+当标签使用 AD RMS 保护，而非 Azure RMS 保护时，用户不会知道。 由于 AD RMS 保护所附带的局限性和限制，请确保明确指示用户何时应选择应用 AD RMS 保护的标签的例外情况。 
 
-## <a name="limitations-when-using-hyok"></a>使用 HYOK 时的限制
+[作用域策略](configure-policy-scope.md)是一个不错的方法，可确保只有需要应用 AD RMS 保护的用户才能查看为 AD RMS 保护配置的标签。 
+
+## <a name="additional-limitations-when-using-hyok"></a>使用 HYOK 时的其他限制
 
 将 AD RMS 保护与 Azure 信息保护联用，不仅不支持使用 Azure RMS 保护时可获得的所列益处，还具有以下限制：
 
 - 不支持 Office 2010 或 Office 2007。
 
-- 如果还使用 Azure RMS 保护：配置 Azure RMS 保护的标签时，请勿使用“不要转发”选项。 还必须指示用户不要在 Outlook 中手动选择此选项。 
+- 配置 Azure RMS 保护的标签时，请勿使用“不要转发”选项。 还必须指示用户不要在 Outlook 中手动选择此选项。 
 
     如果由标签或由用户手动应用了“不要转发”选项，则可能由 AD RMS 部署（而不是预期的 Azure 权限管理服务）应用该选项。 在此方案中，外部共享对象将无法打开已应用此“不要转发”选项的电子邮件。
+
+- 如果用户选择了应用 AD RMS 保护的 Outlook 中的标签，然后在发送电子邮件之前改变了主意，并选择了应用 Azure RMS 保护的标签，则新选择的标签将无法应用。 用户将看到以下错误消息：**Azure 信息保护无法应用此标签。你无权执行此操作。**
+    
+    唯一的解决方法是关闭电子邮件并重新启动。 与此类似，如果用户首先选择了应用 Azure RMS 保护的标签，然后改为使用应用 AD RMS 保护的标签，也将产生相同的限制。
 
 ## <a name="requirements-for-hyok"></a>HYOK 要求
 
@@ -88,7 +105,7 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 ## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>查找相关信息以使用 Azure 信息保护标签指定 AD RMS 保护
 
-在配置用于 AD RMS 保护的标签时，必须指定 AD RMS 群集的模板 GUID 和授权 URL。 你可以从 Active Directory Rights Management Services 控制台中找到这两个值：
+在配置用于 **HYOK (AD RMS)** 保护的标签时，必须指定 AD RMS 群集的模板 GUID 和授权 URL。 你可以从 Active Directory Rights Management Services 控制台中找到这两个值：
 
 - 若要找到模板 GUID：请展开该群集，并单击“权限策略模板”。 随后，从“分布式权限策略模板”信息中，可以复制要使用的模板中的 GUID。 例如：82bf3474-6efe-4fa1-8827-d1bd93339119
 
@@ -98,13 +115,8 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 ## <a name="next-steps"></a>后续步骤
 
-若要了解有关此功能的详细信息，请参阅博客文章公告 [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)（具有 HYOK（自留密钥）的 Azure 信息保护）。
+若要了解有关此功能的详细信息和使用指南，请参阅博客文章公告 [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)（具有 HYOK（自留密钥）的 Azure 信息保护）。
 
-若要配置用于 AD RMS 保护的标签，请参阅[如何配置标签以应用权限管理保护](../deploy-use/configure-policy-protection.md)。 
+若要配置用于 AD RMS 保护的标签，请参阅[如何配置标签以进行 Rights Management 保护](../deploy-use/configure-policy-protection.md)。 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

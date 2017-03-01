@@ -1,5 +1,5 @@
 ---
-title: "使用 Azure 信息保护时跟踪和撤销已保护的文档 | Azure 信息保护"
+title: "跟踪和撤销文档 - Azure 信息保护"
 description: "保护文档后，可跟踪用户如何使用它们。 如果用户不应再阅读这些文档，还可撤销其对这些文档的访问权限（如有必要）。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 569c60d502ddcf3169ec0955a76312a50451ec72
-ms.openlocfilehash: ee2160c6c81c5de5bd1e9a9afaea959229e125e3
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 37ab2f78f1ba2f3803ad1aafd011e530ef204acb
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -91,8 +92,3 @@ ms.openlocfilehash: ee2160c6c81c5de5bd1e9a9afaea959229e125e3
 - [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

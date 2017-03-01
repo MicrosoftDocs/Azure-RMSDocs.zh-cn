@@ -1,5 +1,5 @@
 ---
-title: "部署 Azure Rights Management 连接器 | Azure 信息保护"
+title: "部署 Rights Management 连接器 - AIP"
 description: "有关部署 RMS 连接器的说明。该连接器提供数据保护服务，包括保护使用 Exchange Server、SharePoint Server 或 Windows Server 和文件分类基础结构 (FCI) 的现有本地部署。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 5d33e0a8a9c6efbe937a53ae964b2972bf41580c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 93246a239476331f8fc117560c8ce45420eea674
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -98,8 +99,3 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 转到步骤 1：[安装并配置 Azure Rights Management 连接器](install-configure-rms-connector.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

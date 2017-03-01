@@ -1,5 +1,5 @@
 ---
-title: "使用 Azure 信息保护对文件或电子邮件进行分类和保护 | Azure 信息保护"
+title: "使用 Azure 信息保护进行分类和保护"
 description: "说明如何对文档和电子邮件进行分类和保护。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 335da7ca2fd37140cb1a52ca354b571ec822ff49
-ms.openlocfilehash: ab9105b7d83b0cddee80b7c60e78ef18d54992d7
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3db62d81976267155764abf7e45598628259710d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -134,9 +135,4 @@ ms.openlocfilehash: ab9105b7d83b0cddee80b7c60e78ef18d54992d7
 -   [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

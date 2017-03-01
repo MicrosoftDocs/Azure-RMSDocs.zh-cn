@@ -1,5 +1,5 @@
 ---
-title: "用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）| Azure 信息保护"
+title: "适用于 Azure RMS 和 FCI 的 PowerShell 脚本 - AIP"
 description: "要复制和编辑的示例脚本，如“使用 Windows Server 文件分类基础结构的 RMS 保护”说明中所述。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06419438281e0d5a0b976e506d45be2b4eaaef70
-ms.openlocfilehash: 6bccd512c22055e59896e120d9638955ae609393
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 31dc851eeb8e5e20ccc71cf9477a9192ae55deba
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -174,8 +175,3 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 返回到[使用 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

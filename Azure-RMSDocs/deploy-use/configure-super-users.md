@@ -1,5 +1,5 @@
 ---
-title: "为 Azure Rights Management 和发现服务或数据恢复配置超级用户 | Azure 信息保护"
+title: "为 Azure Rights Management 配置超级用户 - AIP"
 description: "了解并实施 Azure 信息保护中的 Azure Rights Management 服务超级用户功能，以便已获授权的用户与服务始终可以阅读和检查 Azure Rights Management 为你的组织保护的数据。 这种功能有时称为“数据推理”，是保持对组织数据进行控制的关键所在。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: bb7b459456fd8fb43997f73b39880d7110f92442
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: f1c50d67ba03cee9846e81f98aad6da0da33a951
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -71,10 +72,5 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 > AIP 模块将替换随 RMS 保护工具一起安装的 RMS 保护 PowerShell 模块。 这两种模块不同于主要的[适用于 Azure 权限管理的 Windows PowerShell 模块](administer-powershell.md)，并且对该模块提供了补充。 AIP 模块支持 Azure 信息保护、适用于 Azure 信息保护的 Azure 权限管理服务 (Azure RMS) 和 Active Directory Rights Management Services (AD RMS)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "适用于 Windows 的 Rights Management 共享应用程序 | Azure 信息保护"
+title: "适用于 Windows 的 Rights Management 共享应用程序 - AIP"
 description: "适用于 Windows 的 Rights Management 共享应用程序的信息资源。 这是一个可免费下载的应用程序，面向使用 Active Directory Rights Management Services (AD RMS) 或 Azure 信息保护的组织，以及没有自身的信息保护基础结构，但又想要使用其他组织通过 Azure 信息保护保护的内容的组织。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 78a796eaea0c6ece4bbaee80e7f287eb2aba29f6
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 0bcafd705949012363f1ad04193e25246bf1f412
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -44,9 +45,4 @@ ms.openlocfilehash: 78a796eaea0c6ece4bbaee80e7f287eb2aba29f6
 [FAQ for Rights Management Sharing Application for Windows](http://technet.microsoft.com/dn467883)（适用于 Windows 的 Rights Management 共享应用程序常见问题解答）
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

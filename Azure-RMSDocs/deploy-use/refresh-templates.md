@@ -1,5 +1,5 @@
 ---
-title: "刷新模板 | Azure 信息保护"
+title: "刷新 Azure RMS 模板 - AIP"
 description: "使用 Azure Rights Management 服务时，模板会自动下载到客户端计算机，因而用户能够从他们的应用程序选择这些模板。 但是，如果对模板进行了更改，可能还需要执行附加步骤。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 15bd23bb727937193cb51e732586d4c334357c04
-ms.openlocfilehash: 325c64b211ed52bdb11685af00507aef2aa85312
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 84056058eedccf354cefb86792d92949bcfb22e8
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -99,7 +100,7 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 通过编辑运行 Office 2016、Office 2013 或适用于 Windows 的 Rights Management (RMS) 共享应用程序的计算机上的注册表，你可以更改自动计划，以便更改的模板在计算机上的刷新频率比其默认值更频繁。 你还可以通过删除注册表值中的现有数据，强制执行即时刷新。
 
 > [!WARNING]
-> 如果你没有正确使用注册表编辑器，则可能导致严重问题，需要你重新安装操作系统。 Microsoft 无法保证你能够解决由于错误使用注册表编辑器而导致的问题。 你自行承担使用注册表编辑器的风险。
+> 如果你没有正确使用注册表编辑器，则可能导致严重问题，需要你重新安装操作系统。 Microsoft 不保证能够解决因注册表编辑器使用不当而导致的问题。 你自行承担使用注册表编辑器的风险。
 
 ### <a name="to-change-the-automatic-schedule"></a>更改自动计划
 
@@ -154,7 +155,7 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 通过编辑运行 Office 2010 的计算机上的注册表，你可以设置值，使得更改的模板在计算机上无需等待用户注销后又重新打开即可刷新。 你还可以通过删除注册表值中的现有数据，强制执行即时刷新。
 
 > [!WARNING]
-> 如果你没有正确使用注册表编辑器，则可能导致严重问题，需要你重新安装操作系统。 Microsoft 无法保证你能够解决由于错误使用注册表编辑器而导致的问题。 你自行承担使用注册表编辑器的风险。
+> 如果你没有正确使用注册表编辑器，则可能导致严重问题，需要你重新安装操作系统。 Microsoft 不保证能够解决因注册表编辑器使用不当而导致的问题。 你自行承担使用注册表编辑器的风险。
 
 ### <a name="to-change-the-update-frequency"></a>更改更新频率
 
@@ -187,8 +188,3 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

@@ -1,18 +1,19 @@
 ---
-title: "如何配置可视标记的标签 | Azure 信息保护"
+title: "为 Azure 信息保护标签配置可视标记"
 description: "当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 7f55f7376c882f3994c596ee76c24a59189fd845
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4ddacf2be34cb7921dfbe282a0476a8cd47de2cf
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -80,10 +81,5 @@ ms.openlocfilehash: 7f55f7376c882f3994c596ee76c24a59189fd845
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

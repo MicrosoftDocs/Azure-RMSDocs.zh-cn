@@ -1,5 +1,5 @@
 ---
-title: "Azure RMS 解决了哪些问题 | Azure 信息保护"
+title: "通过 Azure Rights Management 解决的问题 - AIP"
 description: "确定组织可能具有的要求或问题，并了解 Azure RMS 技术是如何满足这些要求或解决这些问题的。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 949cbe07234f78ca046aec1fc2590adf86f00a06
-ms.openlocfilehash: 40f242c31553545651794e6e5a8f744963bb541b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 5051ed614d8611c89e037ea633f15b7f0f344020
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -75,8 +76,3 @@ Azure 权限管理支持以下安全、合规性和法规要求：
 如果对有关 Azure 权限管理服务工作的详细技术信息感兴趣，请参阅 [Azure RMS 的工作原理](how-does-it-work.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

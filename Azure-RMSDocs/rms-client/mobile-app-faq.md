@@ -1,5 +1,5 @@
 ---
-title: "有关适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题 | Azure 信息保护"
+title: "适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题解答"
 description: 
 keywords: "一些常见问题，帮助你使用适用于 iOS 和 Android 的 Azure 信息保护应用"
 author: cabailey
@@ -14,8 +14,9 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0dc8e4d772ef65e3425203e78c5e569f4e107b8e
-ms.openlocfilehash: a6900a6dadd0c323958f42ff441cbcf936a0f582
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4ac26b3faa61f3a19e71f7f1d1d257c2ded934c7
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -73,8 +74,3 @@ Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
 将你的问题发布到我们的 [Yammer 站点](https://www.yammer.com/AskIPTeam)，或[发送电子邮件到信息保护团队](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

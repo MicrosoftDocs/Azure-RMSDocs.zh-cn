@@ -1,5 +1,5 @@
 ---
-title: "如何发现用户是否已注册个人 RMS | Azure 信息保护"
+title: "用户是否注册了个人 RMS - AIP"
 description: "作为管理员，你如何知道用户是否注册了个人 RMS？ 你可能会分别或结合使用本文所述的任何方法。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 5dae8412277be37cd3ff8cfe76c71a8109277146
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: e696bf596255b5e28aa5589cfc18715f100c5b07
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -35,8 +36,3 @@ ms.openlocfilehash: 5dae8412277be37cd3ff8cfe76c71a8109277146
 -   请注意 Azure 信息保护客户端或 Rights Management 共享应用程序创建的文件扩展名。 .pfile 和 .ppdf 文件扩展名是最明显的示例，但是也有一些其他文件在原本就受权限管理服务保护时会更改其文件扩展名。 有关详细信息，请参阅 Azure 信息保护客户端管理员指南中的[支持保护的文件类型](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

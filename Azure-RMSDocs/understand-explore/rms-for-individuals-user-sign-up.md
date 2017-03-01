@@ -1,5 +1,5 @@
 ---
-title: "用户如何注册个人 RMS | Azure 信息保护"
+title: "用户如何注册个人 RMS - AIP"
 description: "此免费帐户的注册说明以及此过程工作原理的技术信息。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 57e7cb922c0701dbe1088d205cfc56a69dcc4e05
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 1134bff1935b3fada661865f31104e0316e8fecd
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -95,8 +96,3 @@ ms.openlocfilehash: 57e7cb922c0701dbe1088d205cfc56a69dcc4e05
 请参阅[管理员如何才能控制为个人 RMS 创建的帐户](rms-for-individuals-take-control.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

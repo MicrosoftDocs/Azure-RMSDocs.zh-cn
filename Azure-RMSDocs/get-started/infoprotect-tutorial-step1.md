@@ -1,18 +1,19 @@
 ---
-title: "快速入门教程步骤 1 | Azure 信息保护"
+title: "快速入门教程步骤 1 - AIP"
 description: "入门教程第 1 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 20 分钟。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: 420da63412f10431d29c01bad317c69cf72b66ad
-ms.openlocfilehash: a2631af6bf972a8c88d37e42149b90fb96f71763
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 7046a82d83c7bf3197dc2e7cea51f4af0be03a56
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -56,9 +57,4 @@ ms.openlocfilehash: a2631af6bf972a8c88d37e42149b90fb96f71763
 [步骤 2 &#187;](infoprotect-tutorial-step2.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -1,10 +1,10 @@
 ---
-title: "下载并安装 Azure 信息保护客户端 | Azure 信息保护"
+title: "下载并安装 Azure 信息保护客户端"
 description: "说明用户如何安装适用于 Windows 的 Azure 信息保护客户端，以便分类和保护文档和电子邮件。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 633f3dfe12828a21943bb5faf6ad9f69b98fc70b
-ms.openlocfilehash: 303ca72fa8753e417b4a06b4cad475559295eb2a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 37bddeed5b81ce1cd6b881db0b71345bcf4cad49
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -31,19 +32,22 @@ ms.openlocfilehash: 303ca72fa8753e417b4a06b4cad475559295eb2a
 
 ## <a name="to-download-and-install-the-azure-information-protection-client"></a>下载并安装 Azure 信息保护客户端    
 
-1.  请转到 Microsoft 网站上的 [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970)页。    
-2. 单击“Azure 信息保护客户端”的 Windows 图标，然后保存“AzInfoProtection.exe”文件以安装 Azure 信息保护客户端。     
+1.  请转到 Microsoft 网站上的 [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970)页。
 
-2. 双击已下载的可执行文件。 如果系统提示你继续，请单击 **“是”**。    
+    此页面包含指向所有可能使用的常用设备的链接，以便在需要打开受保护的文件时可轻松下载查看其应用。 但是，我们将安装完整的客户端，以便你可以对文件加标签和进行保护。 
 
-3. 在“安装 Azure 信息保护客户端”页面上：     
+2. 找到 **Azure 信息保护客户端**部分，然后单击 Windows 图标。 单击“下载”并保存 **AzInfoProtection.exe** 文件。     
+
+3. 运行已下载的可执行文件。 如果系统提示你继续，请单击 **“是”**。    
+
+4. 在“安装 Azure 信息保护客户端”页面上：     
     - 如果无法连接到云，但出于演示目的，想要通过使用本地策略查看和体验 Azure 信息保护的客户端，则选择此选项以安装演示策略。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。    
 
     - 阅读许可条款和条件后，单击“我同意”。    
 
-4. 如果系统提示继续操作，请单击“是”，然后等待安装完成。    
+5. 如果系统提示继续操作，请单击“是”，然后等待安装完成。    
 
-3. 单击“关闭”。 开始使用 Azure 信息保护客户端之前：    
+6. 单击“关闭”。 开始使用 Azure 信息保护客户端之前：    
 
     - 如果你的计算机运行 Office 2010，请重启计算机，然后转到下一节完成最后步骤。    
         
@@ -69,9 +73,4 @@ ms.openlocfilehash: 303ca72fa8753e417b4a06b4cad475559295eb2a
  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

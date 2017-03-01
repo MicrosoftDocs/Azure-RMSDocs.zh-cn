@@ -1,10 +1,10 @@
 ---
-title: "Azure 信息保护的其他名称 | Azure 信息保护"
+title: "Azure 信息保护也称为"
 description: "Azure 信息保护经过多次名称更改，你可能知道的是它以前的名称。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 1b5268a13538df1537dbf3ea6f66eeda2b5e2292
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 179a145e1b7079b2c5cec7317f6af3e93ee6cd3f
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -43,10 +44,5 @@ Azure Rights Management 的其他名称：此服务最初名为 *Windows Azure A
 
 > [!NOTE]
 > 作为企业信息保护解决方案，Microsoft 信息保护和 Microsoft Rights Management 服务不提供通常防止非法分配数字软件的数字权限管理 (DRM) 解决方案。 
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

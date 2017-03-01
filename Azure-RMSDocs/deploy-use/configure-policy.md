@@ -1,10 +1,10 @@
 ---
-title: "配置策略 | Azure 信息保护"
+title: "配置 Azure 信息保护策略"
 description: "若要配置分类、标记和保护，必须配置 Azure 信息保护策略。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8ad1ff05f642571bfe7f4170cb88e29d05515e59
-ms.openlocfilehash: 2ad10e378c14dbaef09ccd321379a0dbd7c0d23d
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 2510c14fc10411783838516f45fdfd06fd73350d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -67,7 +68,7 @@ Azure 的信息保护附带 [默认策略](configure-policy-default.md)(#默认�
 
 - [如何更改或自定义现有标签](configure-policy-change-label.md)
 
-- [如何配置标签以应用保护](configure-policy-protection.md)
+- [如何配置标签以进行保护](configure-policy-protection.md)
 
 - [如何配置标签以应用可视标记](configure-policy-markings.md)
 
@@ -80,9 +81,4 @@ Azure 的信息保护附带 [默认策略](configure-policy-default.md)(#默认�
 有关如何自定义默认策略并在 Office 应用程序是查看所产生行为的示例，请尝试 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)(#azure-信息保护快速入门教程)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

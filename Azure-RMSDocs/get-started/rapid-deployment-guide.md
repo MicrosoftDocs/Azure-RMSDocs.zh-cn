@@ -1,5 +1,5 @@
 ---
-title: "Azure 权限管理快速部署指南 | Azure 信息保护"
+title: "Azure RMS 快速部署指南 - AIP"
 description: "本指南可帮助你更快地部署和使用 Azure 权限管理服务以保护组织的数据。 首先在要实现的特定方案的列表中进行选择。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: abe3de4cb972053179a87023c91509168ffeffc4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 2e50dc9d53550f35f5c589cdb1b384e0abf585e0
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -147,9 +148,4 @@ ms.openlocfilehash: abe3de4cb972053179a87023c91509168ffeffc4
 我们实施的解决方案将能帮助我们保护重要数据的安全，并为你提供用于控制这些数据的工具。 感谢你在我们实施这些更改的过程中所给予的合作。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

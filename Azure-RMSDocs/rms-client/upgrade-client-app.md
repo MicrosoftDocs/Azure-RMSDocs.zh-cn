@@ -1,5 +1,5 @@
 ---
-title: "用于操作 RMS 共享应用程序的任务"
+title: "使用 RMS 共享应用程序执行的任务 - AIP"
 description: "适用于从 RMS 共享应用程序升级到 Azure 信息保护客户端的用户的说明。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: d7bc2478-c22f-4e19-9992-012658362b25
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: edc17f17d9668ed9c3dbaabab2b5000359fa410d
-ms.openlocfilehash: 678f444d487f020c2806aef4479696f19b6263e6
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d435c583075e2a76ad657cb442630771beb1c68f
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -51,9 +52,4 @@ ms.openlocfilehash: 678f444d487f020c2806aef4479696f19b6263e6
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

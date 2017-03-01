@@ -1,5 +1,5 @@
 ---
-title: "查看和使用受保护文件 | Azure 信息保护"
+title: "使用 AIP 客户端查看和使用受保护的文件"
 description: "查看和使用要求安装 Azure 信息保护客户端的受保护文件的说明。"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5fcd31a570fbd22a488d0a016dd3d3887918f755
-ms.openlocfilehash: 123fc7078e29ca59174d349efb2366df2f39e023
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 408b57c5ff5ce3688763ef7b4c4b87b123ca4ea3
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -79,8 +80,3 @@ ms.openlocfilehash: 123fc7078e29ca59174d349efb2366df2f39e023
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-
