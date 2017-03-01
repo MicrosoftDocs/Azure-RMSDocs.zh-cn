@@ -1,11 +1,11 @@
 ---
-title: "更改受 Rights Management 保护的文件的权限 | Azure 信息保护"
+title: "更改 RMS 保护的文件的权限 - AIP"
 description: "当文件已由 Rights Management 保护时，你可以更改其权限，方法是重新保护它，然后指定有权访问它的所有用户，以及你要给予他们哪些权限。"
 keywords: 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,9 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: c0bfd99229e4d93c91fe8f9efafd887aa7562328
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3290b9436f75c2d0d37c401dd2e0be11bcf2d554
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -96,8 +97,3 @@ ms.openlocfilehash: c0bfd99229e4d93c91fe8f9efafd887aa7562328
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

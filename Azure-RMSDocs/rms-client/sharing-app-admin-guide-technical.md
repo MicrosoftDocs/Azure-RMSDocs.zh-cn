@@ -1,10 +1,10 @@
 ---
-title: "Rights Management 共享应用程序技术概述 | Azure 信息保护"
+title: "RMS 共享应用的技术概述 - AIP"
 description: "面向负责部署适用于 Windows 的 RMS 共享应用程序的企业网络管理员提供的技术详细信息。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/04/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 770be3f7423f8d47439096393bba7464629646c5
-ms.openlocfilehash: b90a0e1ab363c1d7f87d0b1a18503da641bf7cfb
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 532a379aa303e65d111d6ba0e360f34082b25014
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -75,7 +76,6 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 |。tiff|.ptiff|
 |。bmp|。pbmp|
 |.gif|。pgif|
-|。giff|。pgiff|
 |。jpe|。pjpe|
 |。jfif|。pjfif|
 |。jt|。pjt|
@@ -138,9 +138,4 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

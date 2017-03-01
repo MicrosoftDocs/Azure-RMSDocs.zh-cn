@@ -1,10 +1,10 @@
 ---
-title: "方案 - 配置工作文件夹的持续保护 | Azure 信息保护"
+title: "AIP 方案 - 为 RMS 保护配置工作文件夹"
 description: "此方案和支持性的用户文档使用 Azure Rights Management 保护对工作文件夹中的 Office 文档应用持续保护。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 942b9bfffbd4a43c922ada87220f4eecb78f1d11
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 1fa655cd91746d8e5c19f6a9eca0d93a3be8fb23
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -121,8 +122,3 @@ Azure Rights Management 提供的额外保护通过阻止组织外的人员查�
 > 一段时间后，如果你发现存在许多这样的请求，可能会决定为该方案定义你自己的模板，该模板仅授予特定用户（如管理人员或技术支持）共有者选项，同时授予标准用户合著者或任何你认为合适的[权限](../deploy-use/configure-usage-rights.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

@@ -1,10 +1,10 @@
 ---
-title: "使用 Rights Management 共享应用程序移除对文件的保护 | Azure 信息保护"
+title: "通过使用 RMS 共享应用删除保护 - AIP"
 description: "有关删除之前使用 RMS 共享应用程序保护的文件保护（即取消文件保护）的说明。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: de7121919ccb545821a405f47becd443a5dad333
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 370b19894efb53604c798b38be02dda3f8804b8b
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -51,8 +52,3 @@ ms.openlocfilehash: de7121919ccb545821a405f47becd443a5dad333
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-
