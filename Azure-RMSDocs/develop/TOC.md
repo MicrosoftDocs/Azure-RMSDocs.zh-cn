@@ -46,6 +46,7 @@
 ##### [为 ADAL 身份验证配置 Azure RMS](adal-auth.md)
 #### [操作说明：添加显式所有者权限](add-explicit-owner-rights.md)
 #### [操作说明：调试启用权限的应用程序](debugging-applications-that-use-ad-rms.md)
+#### [操作说明：部署应用](how-to-deploy-app.md)
 #### [操作说明：启用文档跟踪和撤销](tracking-content.md)
 #### [操作说明：启用电子邮件通知](how-to-enable-email-notification.md)
 #### [操作说明：使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)
@@ -65,8 +66,3 @@
 #### [Structures](https://msdn.microsoft.com/library/hh535294.aspx)（结构）
 #### [Error codes](https://msdn.microsoft.com/library/hh535248.aspx)（错误代码）
 ## [条款](terms.md) 
-
-
-<!--HONumber=Jan17_HO4-->
-
-
