@@ -4,7 +4,7 @@ description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: fec4ca2541b28fd9d91286fceaee0466fc445364
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 343ac5f79902379e45efcb6979a115ba4c00d1c5
+ms.openlocfilehash: 503cb76825d0092e8562d39281b1d702edaf6438
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -77,7 +77,7 @@ Microsoft .NET Framework
 
 - 安装 Azure 信息保护客户端后，用户可从 Office 应用程序运行的诊断测试和重置选项：在“开始”选项卡的“保护”组中，单击“保护”、“帮助和反馈”，然后单击“运行诊断”。 
 
-    有关此选项的详细信息，请参阅客户端安装文档中的[验证安装、连接状态或发送反馈](client-admin-guide.md#to-verify-installation-connection-status-or-send-feedback)部分。
+    有关此选项的详细信息，请参阅客户端安装文档中的[验证安装、连接状态或发送反馈](client-admin-guide.md#additional-checks-to-verify-installation-connection-status-or-send-feedback)部分。
 
 ## <a name="version-11230"></a>版本 1.1.23.0
 

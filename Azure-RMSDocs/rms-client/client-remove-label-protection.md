@@ -4,7 +4,7 @@ description: "说明了如何从由 Azure 信息保护标记的文件中，或�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid:
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: af6f57c265509f383dfe1354e5d1256665fc155b
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: f77200fa8a305c0306c41470bda7aa5a54951909
+ms.openlocfilehash: e6fe5edfeb165839260371942cbf59922853a342
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -72,6 +72,5 @@ ms.lasthandoff: 02/24/2017
 
 - [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
 
--   [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
