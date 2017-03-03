@@ -13,6 +13,7 @@ ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
 ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
 ms.openlocfilehash: 7d5c759a6b7e206f30588926a8d480b50be20bc4
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -119,8 +120,3 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 通过其他名称了解 Azure 信息保护或 Azure Rights Management？ 请参阅[该服务的替代术语列表](azure-rms-aka.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO4-->
-
-

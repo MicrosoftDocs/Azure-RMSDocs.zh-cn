@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
 ms.openlocfilehash: b864f8223865661184ce5742e23313e88cae1db5
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -40,9 +41,4 @@ ms.openlocfilehash: b864f8223865661184ce5742e23313e88cae1db5
 有关后台操作的分步说明和技术概述，请参阅[用户如何注册个人 RMS](rms-for-individuals-user-sign-up.md)。 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 
