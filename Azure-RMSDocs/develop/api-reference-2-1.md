@@ -17,6 +17,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 61efd11cde36c5f2507a91112cfc3711c1bedfca
 ms.openlocfilehash: a94472b5c240f895bc34b953a93fc78cee67a206
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -37,8 +38,3 @@ Microsoft Rights Management SDK 2.1 支持 Windows 客户端的 RMS 启用。 �
 * [发行说明](release-notes-rtm.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

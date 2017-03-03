@@ -17,6 +17,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 5df7da98abf4e7c8e39b610fe374d67cf2954338
 ms.openlocfilehash: 1c10eb8f7a68138761931d1c8a1715a03b7ff0a9
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -45,8 +46,3 @@ ms.openlocfilehash: 1c10eb8f7a68138761931d1c8a1715a03b7ff0a9
 * [概述](ad-rms-overview.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

@@ -17,6 +17,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 5df7da98abf4e7c8e39b610fe374d67cf2954338
 ms.openlocfilehash: 9906d300debd4d28e21b8fab2c44c30574d47f4b
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -32,8 +33,3 @@ Microsoft Rights Management SDK 4.2 的重点是帮助你构建启用 AD RMS 的
 - [如何使用文档跟踪](how-to-use-document-tracking.md) - 使用文档跟踪功能需要对管理关联元数据以及向服务注册有一些简单了解。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-
