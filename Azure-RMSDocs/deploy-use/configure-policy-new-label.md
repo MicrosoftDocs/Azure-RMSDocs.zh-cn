@@ -4,7 +4,7 @@ description: "尽管 Azure 信息保护附带了可以自定义的默认标签�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -37,8 +37,7 @@ ms.lasthandoff: 02/24/2017
     - 创建新的标签：单击“**添加新的标签**”。
 
     - 创建新的子标签：对于要创建子标签的标签，右键单击或选择上下文菜单 (**...**)，然后单击“**添加子标签**”。
-
-
+    
      如果要添加的新标签位于[作用域内策略](configure-policy-scope.md)中，以便仅应用于所选用户，请首先从初始的“Azure 信息保护”边栏选项卡中选择作用域内策略。
 
 3. 在“**标签**”或“**子标签**”边栏选项卡上，选择要应用于此新标签的选项，然后单击“**保存**”。
