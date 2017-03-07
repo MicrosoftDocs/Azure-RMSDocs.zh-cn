@@ -4,7 +4,7 @@ description: "要复制和编辑的示例脚本，如“使用 Windows Server �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -60,7 +60,7 @@ param(
 ) 
 
 # script information
-[String] $Script:Version = 'version 3.1' 
+[String] $Script:Version = 'version 3.2' 
 [String] $Script:Name = "RMS-Protect-FCI.ps1"
 
 #global working variables
@@ -119,7 +119,6 @@ function Set-RMSConnection ($fappId, $fkey, $fbposId) {
     try {
                Set-RMSServerAuthentication -AppPrincipalId $fappId -Key $fkey -BposTenantId $fbposId
         Write-Host ("Information: " + "Connected to Azure RMS Service with BposTenantId: $fbposId using AppPrincipalId: $fappId")
-        Get-RMSTemplate
         $returnValue = $true
     } catch {
         Write-Host ("ERROR" + "During connection to Azure RMS Service with BposTenantId: $fbposId using AppPrincipalId: $fappId")
