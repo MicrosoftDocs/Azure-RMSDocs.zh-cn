@@ -4,7 +4,7 @@ description: "了解并实施 Azure 信息保护中的 Azure Rights Management �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: f1c50d67ba03cee9846e81f98aad6da0da33a951
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 07236a2820e4d8d4d594eda755cb025d21b96d12
+ms.openlocfilehash: 591ca9ba080da9565e0143d887e3db179b810862
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -38,7 +38,9 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 默认情况下，超级用户功能未启用，并且没有向任何用户分配此角色。 如果你为 Exchange 配置了 Rights Management 连接器，则会自动启用超级用户功能，对于运行 Exchange Online、SharePoint Online 或 SharePoint Server 的标准服务，不需要该功能。
 
-如果需要手动启用超级用户功能，请使用 Windows PowerShell cmdlet [Enable-AadrmSuperUserFeature](https://msdn.microsoft.com/library/azure/dn629400.aspx)，然后根据需要使用 [Add-AadrmSuperUser](https://msdn.microsoft.com/library/azure/dn629411.aspx) cmdlet 或 [Set-AadrmSuperUserGroup](https://msdn.microsoft.com/library/azure/mt653943.aspx) cmdlet 分配用户（或服务帐户），并根据需要向此组添加用户（或其他组）。 
+如果需要手动启用超级用户功能，请使用 PowerShell cmdlet [Enable-AadrmSuperUserFeature](/powershell/aadrm/vlatest/enable-aadrmsuperuserfeature)，然后根据需要使用 [Add-AadrmSuperUser](/powershell/aadrm/vlatest/add-aadrmsuperuser) cmdlet 或 [Set-AadrmSuperUserGroup](/powershell/aadrm/vlatest/set-aadrmsuperusergroup) cmdlet 分配用户（或服务帐户），并根据需要向此组添加用户（或其他组）。 
+
+尽管为超级用户使用组更易管理，但请注意，出于性能原因，Azure 权限管理[缓存组成员身份](../plan-design/prepare.md#group-membership-caching)。 因此，如果需要将新用户分配为超级用户以立即解密内容，请通过使用 Add-AadrmSuperUser 添加用户，而不要将用户添加到已使用 Set-AadrmSuperUserGroup 配置的现有组。
 
 > [!NOTE]
 > 如果你尚未安装适用于 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的 Windows PowerShell 模块，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。

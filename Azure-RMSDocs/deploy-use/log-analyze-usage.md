@@ -4,7 +4,7 @@ description: "有关如何使用 Azure Rights Management (Azure RMS) 的使用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 89c0cae4b0549a0dd86ede26ef3eed0f09200419
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 17824b007444e9539ffc0374bf39f0984efa494c
+ms.openlocfilehash: 5deea0dce593aae09c498e8b6696205890e9f232
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -68,7 +68,7 @@ Azure Rights Management 服务将日志作为一系列 blob 写入 Azure 存储�
 
 ### <a name="to-download-your-usage-logs-by-using-powershell"></a>使用 PowerShell 下载使用日志
 
-1.  使用“以管理员身份运行”选项启动 Windows PowerShell，然后使用 [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) cmdlet 连接到 Azure Rights Management 服务：
+1.  使用“以管理员身份运行”选项启动 Windows PowerShell，然后使用 [Connect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice) cmdlet 连接到 Azure Rights Management 服务：
 
     ```
     Connect-AadrmService
@@ -101,7 +101,7 @@ Azure Rights Management 服务将日志作为一系列 blob 写入 Azure 存储�
 #### <a name="if-you-manually-enabled-azure-rights-management-usage-logging-before-the-logging-change-february-22-2016"></a>如果已在 2016 年 2 月 22 日日志记录更改之前手动启用 Azure Rights Management 使用日志记录
 
 
-如果你在日志记录更改之前已使用使用日志记录，你将会在已配置的 Azure 存储帐户中找到使用日志。 Microsoft 不会将这些日志作为此日志记录更改的一部分，从存储帐户复制到新的 Azure Rights Management 管理的存储帐户。 你负责管理以前生成的日志的生命周期，并可以使用 [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) cmdlet 来下载旧日志。 例如：
+如果你在日志记录更改之前已使用使用日志记录，你将会在已配置的 Azure 存储帐户中找到使用日志。 Microsoft 不会将这些日志作为此日志记录更改的一部分，从存储帐户复制到新的 Azure Rights Management 管理的存储帐户。 你负责管理以前生成的日志的生命周期，并可以使用 [Get-AadrmUsageLog](/powershell/aadrm/vlatest/get-aadrmusagelog) cmdlet 来下载旧日志。 例如：
 
 - 将所有可用日志下载到 E:\logs 文件夹：`Get-AadrmUsageLog -Path "E:\Logs"`
     
@@ -146,13 +146,15 @@ Azure Rights Management 服务将日志作为一系列 blob 写入。
 |result|字符串|如果成功地为请求提供服务，则为 ‘Success’。<br /><br />如果为请求提供服务失败，则在单引号中显示错误类型。|'Success'|
 |correlation-id|文本|在 RMS 客户端日志和服务器日志之间通用的针对给定请求的 GUID。<br /><br />此值有助于你解决客户端问题。|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|文本|包括在大括号中的 GUID，标识受保护内容（例如某个文档）。<br /><br />只有当 request-type 为 AcquireLicense 时，此字段才具有值，对于其他所有请求类型，此字段都为空。|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
-|owner-email|String|文档所有者的电子邮件地址。|alice@contoso.com|
-|issuer|String|文档发布者的电子邮件地址。|alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com’|
-|template-id|字符串|用于保护文档的模板的 ID。|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|file-name|字符串|已保护的文档的文件名。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。|TopSecretDocument.docx|
-|date-published|日期|保护文档时的日期。|2015-10-15T21:37:00|
+|owner-email|String|文档所有者的电子邮件地址。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|alice@contoso.com|
+|issuer|String|文档发布者的电子邮件地址。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com’|
+|template-id|字符串|用于保护文档的模板的 ID。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
+|file-name|字符串|已保护的文档的文件名。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|TopSecretDocument.docx|
+|date-published|日期|保护文档时的日期。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|2015-10-15T21:37:00|
 |c-info|String|有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Address|发出请求的客户端的 IP 地址。|64.51.202.144|
+|admin-action|Bool|管理员是否已在管理员模式下访问文档跟踪站点。|True|
+|acting-as-user|字符串|管理员正在访问其文档跟踪站点的用户的电子邮件地址。 |'joe@contoso.com'|
 
 
 #### <a name="exceptions-for-the-user-id-field"></a>user-id 字段的例外

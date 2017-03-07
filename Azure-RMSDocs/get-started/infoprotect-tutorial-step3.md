@@ -1,19 +1,19 @@
 ---
 title: "快速入门教程步骤 3 - AIP"
-description: "入门教程第 3 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 20 分钟。"
+description: "快速试用 Azure 信息保护入门教程步骤 3 - 安装客户端。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: be4863c06806932916c192624f8f290be59608a4
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: 340cce9bec3eae7e507b5a33ebd380a38e9e7f19
+ms.lasthandoff: 03/01/2017
 
 
 ---

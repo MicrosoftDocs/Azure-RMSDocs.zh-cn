@@ -1,10 +1,10 @@
 ---
 title: "分类和标签的常见问题解答 - AIP"
-description: "对 Azure 信息保护的当前版有疑问？ 请查看此处是否有答案。"
+description: "使用 Azure 信息保护进行分类和设置标签时遇到问题？ 请查看此处是否有答案。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: dfa89dc4c216807fdebd57dce202a7983a18d9fb
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: ccd840fdfc702e209390ed431d24d7e47edf9930
+ms.openlocfilehash: 0ce3ba72eb8a201486eaf2ae39f5d7bf99753cad
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -28,15 +28,9 @@ ms.lasthandoff: 02/24/2017
 
 ## <a name="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection"></a>使用 Azure 信息保护中的分类功能可以做些什么？
 
-Azure 信息保护客户端在 Microsoft Office 应用程序中添加了一个信息保护栏，用户可以使用该栏查看分类标签，并将其分配到他们的 Office 文档和电子邮件。
-
-默认情况下，建议手动应用分类，或者在检测到敏感数据时自动应用。 通过使用 Rights Management 服务，这些标签也可以自动保护数据。 除了 Office 文档和电子邮件，其他文件也可以通过使用文件资源管理器右键单击一个文件、多个文件或一个文件夹来进行分类和保护。 或者，可以使用 PowerShell 在命令行中完成此操作，这样可以更快地批量完成分类和保护。
-
-在 Azure 门户中配置分类标签和行为。 你可以使用默认的内置策略非常快速地评估 Azure 信息保护，或完全自定义你自己的策略。 你可以更改用户使用的分类标签的颜色、名称和顺序。 你还可以配置工具提示和诸如页眉、页脚或水印等分类可视化标记。
-
 请尝试学习我们的快速入门教程，以便在数分钟内了解相关功能：[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护快速入门教程）。
 
-当前版本具有以下限制。 有关其他特性和功能何时可用的信息，请留意[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)和 [Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)上的公告：
+有关其他分类特性和功能何时可用的信息，请留意[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)和 [Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)上的公告。 当前版本具有一些限制，包括以下内容：
 
 - 标签名称和工具提示仅支持一种语言。
 
@@ -44,82 +38,23 @@ Azure 信息保护客户端在 Microsoft Office 应用程序中添加了一个�
 
 - 自动分类的条件必须是短语或模式。
 
-- 暂不支持适用于移动设备（iOS 和 Android） Mac 计算机的 Office 应用和 Office web 应用（Office Online）。
+- 适用于移动设备（iOS 和 Android）和 Mac 计算机的 Office 应用或 Office Web 应用（Office Online）不具有标签功能。
 
-- 未集成 Exchange Online 或 SharePoint Online。
+- 没有分类或标签与 Exchange Online 或 SharePoint Online 集成。
 
-- 适用于合作伙伴和开发人员的 SDK 不可用。
+- 用于合作伙伴和开发人员的 SDK 尚不包括分类和标签。
 
-某些以前列出的限制现已在&2; 月发布的新客户端中可用。 有关详细信息，请参阅博客文章通告。
+2 月发布的版本将删除很多之前的限制。 有关详细信息，请参阅[博客文章通告](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/08/azure-information-protection-december-update-moves-to-general-availability/)。
 
-
-## <a name="do-i-need-to-be-a-global-admin-to-try-azure-information-protection"></a>是否需要是全局管理员才能试用 Azure 信息保护？
+## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>是否需要是全局管理员才能配置分类和标签？
 
 若要配置 Azure 信息保护策略，必须以 Azure Active Directory 全局管理员的身份登录到 Azure 门户。
 
-但是，如果在安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)时选择安装演示策略，则无需登录门户即可查看和试用标签功能。 演示策略在本地安装 Azure 信息保护的默认策略，因此你可以尝试为文档和电子邮件设置标签，但是，在未登录 Azure 门户的情况下你将无法更改或添加新标签。 
+如果在安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)时选择安装演示策略，则无需登录门户即可查看和试用标签功能。 演示策略在本地安装 Azure 信息保护的默认策略，因此你可以尝试为文档和电子邮件设置标签，但是，在未登录 Azure 门户的情况下你将无法更改或添加新标签。 
 
 ## <a name="which-options-in-the-azure-portal-are-p1-or-p2"></a>Azure 门户中的哪些选项是 P1 或 P2？
 
 若要查看 **Azure 信息保护高级版 1** (P1) 订阅与 **Azure 信息保护高级版 2** (P2) 订阅中包含的功能，请参阅 Azure 信息保护站点中的[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。 但是一般原则为，高级功能（如自动分类和保留自己的密钥 (HYOK)）特定于 Azure 信息保护高级版 2 订阅。
-
-## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
-
-Azure 信息保护是一个基于云的解决方案。 如果对在混合方案中部署 Azure 信息保护感兴趣，请发送电子邮件到 askipteam@microsoft.com，联系信息保护团队。
-
-## <a name="how-do-computers-get-the-policy-information-from-azure-information-protection-and-how-often-is-it-refreshed"></a>计算机如何从 Azure 信息保护中获取策略信息，以及这些信息多长时间刷新一次？
-
-每次用户打开 Office 应用程序时，Azure 信息保护客户端就会检查是否存在更新版本的 Azure 信息保护策略。 此外，Office 应用程序每隔 24 小时将进行检查。 如果有更新版本，客户端将使用 HTTPS 链接来下载它以保护数据。 
-
-如果在发布新的 Azure 信息保护策略时加载 Office 应用程序的多个实例，必须关闭所有实例以获取策略的最新版本。 例如，你有两个 Word 文档打开，并且想要在一个文档中测试更新后的 Azure 信息保护策略：关闭两个 Word 文档，并重新打开你想要使用最新策略的文档。
-
-## <a name="where-can-files-be-stored-to-use-azure-information-protection"></a>文件存储在什么位置才可以使用 Azure 信息保护？ 
-
-由于 Azure 信息保护向文件和电子邮件应用永久性标签和保护，因此文件存储在什么位置并没有关系。
-
-## <a name="can-i-classify-only-new-data-or-can-i-also-classify-existing-data"></a>是否只能对新数据进行分类，还是也可以对现有数据进行分类？
-
-对于新内容和现有内容的更改，Azure 信息保护策略操作将在文档已保存和电子邮件已发送时生效。
-
-如果拥有最新版客户端，还可以从文件资源管理器中快速对现有文件分类（并且可选择保护）。 
-
-## <a name="can-i-use-azure-information-protection-for-classification-only-without-enforcing-encryption-and-restricting-usage-rights"></a>是否可以仅将 Azure 信息保护用于分类，而不进行强制加密和限制使用权限？
-
-是。 文件类型支持此操作时，你可以配置仅应用分类而无保护的 Azure 信息保护策略。 事实上，我们预计在只需要保护要求特殊数据管理的一部分文档或电子邮件的网络部署中，这会是一个绝大多数的情况。
-
-## <a name="how-does-automatic-classification-work"></a>自动分类是如何工作的？
-
-在 Azure 门户中，可以使用预定义的模式，如“信用卡号”或“美国社会保障号”。 或者，你可以定义自定义字符串或模式作为自动分类的条件。
-
-你可以在[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护的快速入门教程）中看到该示例。 
-
-分类的准确性取决于配置基于条件的分类规则的方式。 目前，条件支持文本模式和正则表达式。 有关每个可用选项的说明以及测试的建议示例，请参阅[如何配置 Azure 信息保护的自动和建议分类的条件](../deploy-use/configure-policy-classification.md)。 保存了文档或发送了电子邮件之后，将运行检测。
-
-若要获取最佳用户体验并确保业务连续性，我们建议你从用户建议操作开始，而不是完全自动化操作。 这可以使你的用户能够接受标签或保护操作，或者覆盖这些建议。   
-
-## <a name="can-azure-information-protection-prompt-users-to-classify-files-themselves-rather-than-use-automatic-classification"></a>Azure 信息保护是否能够提示用户亲自对文件进行分类，而不是使用自动分类？ 
-
-是。 使用 Azure 门户配置是使用自动分类还是对用户做出建议，此处将选项“选择如何应用标签: 自动还是向用户推荐”设为“推荐”。
-
-你可以在[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护的快速入门教程）中看到该示例。  
-
-## <a name="can-i-force-all-documents-to-be-classified"></a>可以强制对所有文档进行分类吗？
-
-是。 如果要求用户对他们保存的所有文件进行分类，请在 Azure 门户中配置策略，将“所有文档和电子邮件都必须有标签”设为“开”。 
-
-## <a name="can-i-remove-classification-from-a-file"></a>我可以删除文件的分类吗？
-
-是。 [从文件和电子邮件中删除分类标签和保护](../rms-client/client-remove-label-protection.md)用户指南中介绍了此内容 
-
-## <a name="can-i-prompt-users-to-justify-why-they-are-changing-the-classification-level"></a>我是否可以提示用户说明他们更改分类级别的原因？
-
-是。 若要确保用户说明他们更改分类的原因，请在 Azure 门户中，将选项“用户必须提供理由以设置较低分类标签、删除标签或删除保护”设为“开”。 采取此操作时，将在其本地 Windows 事件日志中记录他们的操作和理由：“应用程序和服务日志” > “Microsoft Azure 信息保护”。
-
-## <a name="how-can-i-automatically-protect-the-content-after-its-been-classified"></a>如何自动保护已分类的内容？
-
-在 Azure 门户中，可以根据你指定的分类级别，选择 Rights Management 模板来自动保护内容。
-
-你可以在[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护的快速入门教程）中看到该示例。 有关详细信息，请参阅[如何配置标签以进行 Rights Management 保护](../deploy-use/configure-policy-protection.md)。
 
 ## <a name="can-a-file-have-more-than-one-classification"></a>文件是否可以有多个分类？
 
@@ -166,18 +101,6 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 因为 Azure 信息保护将永久性元数据用于分类，其中包括明文标签，所以该信息可以被 DLP 解决方案和其他应用读取。 对于文件，该元数据存储在自定义属性中；对于电子邮件，该信息存储在电子邮件标头中。
 
-## <a name="how-does-document-tracking-and-revocation-work-for-azure-information-protection"></a>在 Azure 信息保护中如何使用文档跟踪和撤销？
-
-使用 Azure 信息保护进行分类和保护的文件的文档跟踪适用于最新版的 Azure 信息保护客户端（版本 1.3.155.2 或更高版本）。 
-
-有关详细信息，请参阅[使用 Azure 信息保护时跟踪和撤销已保护的文档](../rms-client/client-track-revoke.md)。
-
-## <a name="can-i-control-which-users-can-use-azure-information-protection-to-classify-and-protect-content"></a>是否可以控制哪些用户可以使用 Azure 信息保护对内容进行分类并保护？
-
-你可以通过控制 Azure 信息保护客户端的分布来限制哪些用户可以对数据进行分类并保护。 配置[作用域内策略](../deploy-use\configure-policy-scope.md)时，仅为指定用户添加新标签。 
-
-不管是否安装了 Azure 信息保护客户端，任何用户都可以使用或编辑由 Azure 信息保护分类的文件和电子邮件。 
-
 ## <a name="how-do-i-sign-in-as-a-different-user"></a>如何以其他用户身份登录？
 
 在生产环境中，如果使用的是 Azure 信息保护客户端，通常则不需要以其他用户身份登录。 但是，如果拥有多个租户，则可能需要这样做。 例如，除了拥有组织使用的 Office 365 或 Azure 租户外，还拥有一个测试租户。
@@ -197,13 +120,5 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 - 如果要重新初始化 Azure Rights Management 服务的环境（也称为引导），可以使用 [RMS Analyzer工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)中的“重置”选项进行此操作。
 
 - 如果要删除当前下载的 Azure 信息保护策略，可以从 %localappdata%\Microsoft\MSIP 文件夹中删除 **Policy.msip** 文件以实现此操作。
-
-## <a name="how-can-i-report-a-problem-or-send-feedback-for-azure-information-protection"></a>如何针对 Azure 信息保护报告问题或发送反馈？
-
-若要获取技术支持，请使用标准支持渠道或[联系 Microsoft 支持](information-support.md#to-contact-microsoft-support)。
-
-若要提供反馈（例如，针对改进功能或新功能提出建议）：请在 Office 应用程序的“开始”选项卡的“保护”组中，单击“保护”，然后单击“帮助和反馈”。 在“Microsoft Azure 信息保护”对话框中，单击“发送反馈”。 将向信息保护团队发送电子邮件，并自动附加电脑中的日志文件。 
-
-我们还邀请你加入我们的工程团队：[Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/)。 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

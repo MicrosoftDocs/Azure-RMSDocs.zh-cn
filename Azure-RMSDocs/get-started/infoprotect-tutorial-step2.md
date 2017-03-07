@@ -1,19 +1,19 @@
 ---
 title: "快速入门教程步骤 2 - AIP"
-description: "入门教程第 2 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 20 分钟。"
+description: "快速试用 Azure 信息保护入门教程步骤 2 - 配置策略。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 39dfa8a1c4dabf32f8b62f08a674152f41a5b96a
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: cecf91a6e8bea14002f6760ddbde15e934cb7ef7
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -63,13 +63,13 @@ ms.lasthandoff: 02/24/2017
 
 2. 在“标签：机密”边栏选项卡中，找到“为包含此标签的文档和电子邮件设置权限”部分。
 
-    选择“保护”选项：
+    选择“保护”，然后选择“保护”选项：
     
     ![为 Azure 信息保护标签配置保护权限](../media/info-protect-protection-bar.png) 
     
-    此操作将打开“权限”边栏选项卡。
+    此操作将打开“保护”边栏选项卡。
     
-3. 在“权限”边栏选项卡中，请确保已选中“Azure RMS”和“选择模板”，然后单击下拉框，并选择默认模板“\<你的组织名称> - 机密”。     
+3. 在“保护”边栏选项卡中，请确保已选中“Azure RMS”和“选择模板”，然后单击下拉框，并选择默认模板“\<你的组织名称> - 机密”。     
     
     例如，如果你的组织名称为 VanArsdel, Ltd，你将看到并选择“VanArsdel, Ltd - 机密”： 
     
@@ -77,7 +77,7 @@ ms.lasthandoff: 02/24/2017
     
     如果禁用了此默认 Azure 权限管理模板，请选择替代模板。 但是，如果你选择部门模板，请确保你的帐户包含在范围内。
     
-4. 单击“完成”保存更改，然后关闭“权限”边栏选项卡。
+4. 单击“确定”保存所做的更改，然后关闭“保护”边栏选项卡。
 
 5. 返回“标签：机密”边栏选项卡，找到“设置可视标记”部分：
     

@@ -13,9 +13,9 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: f2413580bf76f0b9b6fa52d8be381c44f9c985fe
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: dccc643ae49521262d5327b4d3d98801f88b3894
+ms.openlocfilehash: ed200df12b3d0665920091c7772ed88a79143e70
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -48,12 +48,6 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 对于这些异常（通常需要保护的内容少于所有内容的 10%），组织可使用本地解决方案 Active Directory Rights Management Services 创建保留在本地的密钥。 通过此解决方案，计算机可从云中获取其 Azure 信息保护策略，但可使用本地密钥来保护此标识的内容。
 
 若要深入了解 HYOK 并确保你了解其局限性和限制及使用指南，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](../deploy-use/configure-adrms-restrictions.md)。
-
-
-## <a name="can-i-integrate-the-azure-rights-management-service-with-my-on-premises-servers"></a>是否可以将 Azure Rights Management 与本地服务器集成？
-是。 Azure Rights Management 可以与本地服务器（如 Exchange Server、SharePoint 和 Windows 文件服务器）集成。 为此，你需要使用 [Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。 或者，如果你只想对 Windows Server 使用文件分类基础结构 (FCI)，则可使用 [RMS 保护 cmdlet](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx)。 你还可以使用 [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)，将 Active Directory 域控制器与 Azure AD 同步和联合，为用户提供更为契合的身份验证体验。
-
-Azure Rights Management 根据需要自动生成并管理 XrML 证书，因此它不使用本地 PKI。 有关 Azure Rights Management 如何使用证书的详细信息，请参阅 [Azure RMS 的工作原理](../understand-explore/how-does-it-work.md)一文中的 [Azure RMS 工作演练：首次使用、内容保护、内容使用](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption)。
 
 ## <a name="where-can-i-find-information-about-3rd-party-solutions-that-integrate-with-azure-rms"></a>在哪里可以找到与 Azure RMS 集成的第三方解决方案的相关信息？
 
@@ -135,7 +129,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 ## <a name="how-do-i-configure-one-drive-for-business-in-sharepoint-online-so-that-users-can-safely-share-their-files-with-people-inside-and-outside-the-company"></a>如何在 SharePoint Online 中配置 OneDrive for Business，以便用户可以安全地与公司内外的人员共享他们的文件？
 默认情况下，作为 Office 365 管理员，你不用执行此配置，用户会进行配置。
 
-正如 SharePoint 站点管理员为其拥有的 SharePoint 库启用并配置 IRM 一样，根据 OneDrive for Business 的设计，用户也需要为自己的 OneDrive for Business 库启用并配置 IRM。  不过，你可以使用 PowerShell 为他们执行此类操作。 有关说明，请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)一文中的 [SharePoint Online 和 OneDrive for Business：IRM 配置](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)部分。
+正如 SharePoint 站点管理员为其拥有的 SharePoint 库启用并配置 IRM 一样，根据 OneDrive for Business 的设计，用户也需要为自己的 OneDrive for Business 库启用并配置 IRM。 不过，你可以使用 PowerShell 为他们执行此类操作。 有关说明，请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)一文中的 [SharePoint Online 和 OneDrive for Business：IRM 配置](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)部分。
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>对于成功部署，是否有任何提示或窍门？
 在考察大量的部署并聆听客户、合作伙伴、顾问和支持工程师的意见后，结合自身的经验，我们很乐意与你分享下面这个极其有效的诀窃： **设计并部署简单的权限策略**。
@@ -143,9 +137,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 由于 Azure 信息保护支持与任何人安全共享，因此，你完全有理由相信自己的数据保护措施的覆盖面。 但是，对权限策略应持保守态度。 对于许多组织而言，对业务产生的最大影响来自于通过应用默认权限策略模板防止数据泄漏，将其访问权限限制给组织中的人员。 当然，你可以根据需要采取粒度级比这高得多的措施 - 例如，防止人员打印、编辑，等等。但是，对于确实需要高级安全性的文档，请将更高粒度级的限制保留为例外措施，并且不要一开始就实施这些限制性更强的策略，而是计划采取分阶段的实施方案。
 
 ## <a name="how-do-we-regain-access-to-files-that-were-protected-by-an-employee-who-has-now-left-the-organization"></a>我们如何重新获取对由已离职员工保护的文件的访问权限？
-使用 Azure RMS 的超级用户功能，它可以让授权用户对组织的 RMS 租户授予的所有使用许可证行使所有者权限。 根据需要，此相同功能可以让授权服务编写文件索引和检查文件。
-
-有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)。
+使用[超级用户功能](../deploy-use/configure-super-users.md)，它可以让授权用户对组织租户授予的所有使用许可证行使使用权限。 根据需要，此相同功能可以让授权服务编写文件索引和检查文件。
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>在文档跟踪站点中测试吊销时，显式的消息提示人们仍可在 30 天内访问此文档—该时间段是否可配置？
 

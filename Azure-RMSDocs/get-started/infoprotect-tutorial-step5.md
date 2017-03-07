@@ -1,11 +1,11 @@
 ---
 title: "快速入门教程步骤 5 - AIP"
-description: "入门教程第 5 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 20 分钟。"
+description: "快速试用 Azure 信息保护入门教程步骤 5 - 共享受保护的文件和跟踪文件。"
 keywords: 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -14,9 +14,9 @@ ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 351ba4f71ac36194494ed315466522120a61692c
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: ea34b900855d43cb1458438b1d15a16fd7cf01bf
+ms.lasthandoff: 03/01/2017
 
 
 ---

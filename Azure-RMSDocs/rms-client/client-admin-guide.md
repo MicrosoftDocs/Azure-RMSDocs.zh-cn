@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid:
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: b6a8477078a333aa23ccfe5904af3582216a1e96
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: b0ddf66acf0db37d0396647a5518ccf48195019c
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -79,7 +79,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 - 如果单独安装 Azure 信息保护查看器，则要求的最低版本为 Microsoft .NET Framework 4.5.2，如果缺少此版本，安装程序会尝试下载并安装它。
 
-- PowerShell 模块需要 Windows PowerShell 4.0 版本，此版本可能需要在旧版操作系统上安装。 有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 **$PSVersionTable**。
+- PowerShell 模块需要 Windows PowerShell 4.0 版本，此版本可能需要在旧版操作系统上安装。 有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 安装程序不会为你检查或安装此必备项。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 **$PSVersionTable**。
 
 - 运行 Windows 7 Service Pack 1 的计算机需要 [KB 2533623](https://support.microsoft.com/en-us/kb/2533623)，可在安装客户端后安装。 如果需要此更新但尚未安装，系统会提示你进行安装。
 
@@ -108,9 +108,11 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
     
     - 对于其他版本的 Office，请重启任一 Office 应用程序和文件管理器的所有实例。 
         
-5. 可通过查看 %temp% 文件夹中的安装日志文件，来确认安装已成功。 此文件具有以下命名格式：`Microsoft_Azure_Information_Protection_<number>_<number>_MSIP.Setup.Main.msi.log`。 例如：**Microsoft_Azure_Information_Protection_20161201093652_000_MSIP.Setup.Main.msi.log**
+5. 可通过查看 %temp% 文件夹中的安装日志文件，来确认安装已成功。 此文件具有以下命名格式：`Microsoft_Azure_Information_Protection_<number>_<number>_MSIP.Setup.Main.msi.log`
     
-    在此日志文件中搜索以下字符串：**Product: Microsoft Azure Information Protection -- Installation completed successfully**（产品：Microsoft Azure 信息保护 - 已成功完成安装）。
+    例如：**Microsoft_Azure_Information_Protection_20161201093652_000_MSIP.Setup.Main.msi.log**
+    
+    在此日志文件中搜索以下字符串：**Product: Microsoft Azure Information Protection -- Installation completed successfully**（产品：Microsoft Azure 信息保护 - 已成功完成安装）。 如果安装失败，此日志文件包含有助于标识并解决任何问题的详细信息。
 
 ### <a name="additional-instructions-for-office-2010-only"></a>仅适用于 Office 2010 的其他说明
 
@@ -154,7 +156,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 - 使用 **/uninstall** 运行可执行文件。 例如： `AzInfoProtection.exe /uninstall`
 
 
-## <a name="to-verify-installation-connection-status-or-send-feedback"></a>验证安装、连接状态或发送反馈
+## <a name="additional-checks-to-verify-installation-connection-status-or-send-feedback"></a>其他检查：验证安装、连接状态或发送反馈
 
 1. 打开 Office 应用程序，在“**主页**”选项卡的“**保护**”组中单击“**保护**”，然后单击“**帮助和反馈**”。
 

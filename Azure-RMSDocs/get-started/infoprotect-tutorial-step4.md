@@ -1,19 +1,19 @@
 ---
 title: "快速入门教程步骤 4 - AIP"
-description: "入门教程第 3 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 20 分钟。"
+description: "快速试用 Azure 信息保护入门教程步骤 4 - 查看设置标签与保护的实际操作。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 57a46c7afe34717dd4335b0f9a19bd539821fc72
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: 8260da1905c6701675b5490e3919ae708f46a5a9
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -28,15 +28,33 @@ ms.lasthandoff: 02/24/2017
 
 ## <a name="to-manually-change-our-default-label"></a>手动更改默认标签
 
-在信息保护栏上，选择“个人”标签，此时系统会提示你输入降低分类级别的理由：
+在信息保护栏上，选择“机密”标签，然后可看到子标签如何显示：
+
+![Azure 信息保护快速入门教程步骤 4 - 选择子标签](../media/info-protect-sub-labels.png)
+
+选择“所有公司”，将看到其他标签如何不再显示在栏上，因为你已为本文档选择标签。 “敏感度”值将更改为“机密\所有公司”，标签颜色也会作出相应更改：
+
+![Azure 信息保护快速入门教程步骤 4 - 已选择子标签](../media/info-protect-sub-label-selected.png)
+
+在信息保护栏上，单击“机密\所有公司”旁边的“编辑标签”图标：
+
+![Azure 信息保护快速入门教程步骤 4 -“编辑标签”图标](../media/info-protect-edit-label-selected.png)
+
+将再次显示可用的标签。
+
+现在选择“个人”标签。 所选标签的分类低于之前为本文档选择的标签，因此系统将提示你确认降低分类级别的原因：
 
 ![Azure 信息保护快速入门教程步骤 4 - 确认降低理由的提示](../media/info-protect-lower-justification.png)
 
-选择“不再应用以前的标签”，然后单击“确认”。 你将看到“敏感度”的值变为“个人”。
+选择“不再应用以前的标签”，然后单击“确认”。 “敏感度”值将更改为“个人”，其他标签将再次隐藏。
 
 ## <a name="to-remove-the-classification-completely"></a>完全删除分类
 
-在信息保护栏上，单击“个人”旁边的“编辑标签”图标。 将显示可用的标签。 但这一次不是选择某个标签，而是单击“删除标签”图标。 这一次请键入“此文档不需要分类”，然后单击“确定”。  
+在信息保护栏上，再次单击“编辑标签”图标。 不要选择某个标签，而是单击“删除标签”图标：
+
+![Azure 信息保护快速入门教程步骤 4 -“删除”图标](../media/delete-icon-from-personal.png)
+
+系统提示时，这一次请键入“此文档不需要分类”，然后单击“确认”。  
 
 你将看到“敏感度”的值显示为“未设置”，即未设置默认标签时，用户看到的最初内容：
 

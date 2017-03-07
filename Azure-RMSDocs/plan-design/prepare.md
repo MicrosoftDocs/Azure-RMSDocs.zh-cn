@@ -4,7 +4,7 @@ description: "检查是否已具备使用 Rights Management 服务的条件，�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 909becbdf902d552a967506b80f173e59cf756c7
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 11ebd66a1ae05535814af159523bd49b7921d46d
+ms.openlocfilehash: fc80a4a65bd5fae1b8604c316a4e2354bbe8c8be
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -33,6 +33,10 @@ ms.lasthandoff: 02/24/2017
 -   云中支持邮件的组，将用于 Azure 信息保护。 这些组可以是内置组或手动创建的组，其中包含使用受保护文档和电子邮件的用户。
 
     如果你有 Exchange Online，则可以使用 Exchange 管理中心创建和使用支持邮件的组。 如果你有 AD DS 并要同步到 Azure AD，则可以创建和使用支持邮件的组（安全组或通讯组）。
+
+### <a name="group-membership-caching"></a>组成员身份缓存
+
+出于性能原因，组成员身份由 Azure 权限管理服务缓存。 这意味着，对组成员身份所做的任何更改最多需要 3 小时才会生效，并且此时间段可能有变。 在 Azure 权限管理服务的配置中使用组时（如配置[自定义模板](../deploy-use/configure-custom-templates.md)）或使用[超级用户功能](../deploy-use/configure-super-users.md)的组时，对所做的任何更改或测试，都请考虑到此延迟。 
 
 ## <a name="activate-the-rights-management-service-for-data-protection"></a>激活数据保护的 Rights Management 服务
 保护文档和电子邮件的工作准备就绪后，请激活 Rights Management 服务来实现这一技术。 有关详细信息，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md)。

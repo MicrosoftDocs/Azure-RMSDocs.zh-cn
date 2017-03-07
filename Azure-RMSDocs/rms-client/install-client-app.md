@@ -4,7 +4,7 @@ description: "说明用户如何安装适用于 Windows 的 Azure 信息保护�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/17/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 37bddeed5b81ce1cd6b881db0b71345bcf4cad49
+ms.sourcegitcommit: 92ad7198aad17664062b8d007fa95524fe535443
+ms.openlocfilehash: d4820070aff013b42ee49f4c7b81e78ffbc7a049
 ms.lasthandoff: 02/24/2017
 
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 02/24/2017
 
 # <a name="download-and-install-the-azure-information-protection-client"></a>下载并安装 Azure 信息保护客户端
 
-如果管理员没有为你安装 Azure 信息保护客户端，你可自行安装。 只有电脑的本地管理员才可安装此客户端。 
+如果管理员没有为你安装 Azure 信息保护客户端，你可自行安装。 必须是电脑的本地管理员才可安装此客户端，这样可对文档和电子邮件进行标记和保护。
 
 此外：
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 02/24/2017
 
 1.  请转到 Microsoft 网站上的 [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970)页。
 
-    此页面包含指向所有可能使用的常用设备的链接，以便在需要打开受保护的文件时可轻松下载查看其应用。 但是，我们将安装完整的客户端，以便你可以对文件加标签和进行保护。 
+    此页面包含指向所有可能使用的常用设备的链接，以便在需要打开受保护的文件时可轻松下载查看其应用。 如果不是电脑的本地管理员，仍可安装适用于 Windows 的查看器应用。 但这些说明用于安装完整的客户端，实现对文件的标记和保护。 
 
 2. 找到 **Azure 信息保护客户端**部分，然后单击 Windows 图标。 单击“下载”并保存 **AzInfoProtection.exe** 文件。     
 

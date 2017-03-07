@@ -4,7 +4,7 @@ description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 865a30bb85c1e9e2f8331ae3a85960e005de5b07
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 17824b007444e9539ffc0374bf39f0984efa494c
+ms.openlocfilehash: d180b0ff4390df45a61b7d50913c267fb3cf35e1
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -36,6 +36,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 |[Get AIPFileStatus](/powershell/azureinformationprotection/vlatest/get-aipfilestatus)|对于共享文件夹，请标识具有特定标签的所有文件。|
 |[Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel)|对于共享文件夹，将指定的标签应用于没有标签的所有文件。|
 
+有关所有 cmdlet 及其相应帮助的列表，请参阅 [AzureInformationProtection 模块](/powershell/azureinformationprotection/vlatest/aip)。
 
 此模块安装在 **\ProgramFiles (x86)\Microsoft Azure Information Protection** 中，并将此文件夹添加到 **PSModulePath** 系统变量。 此模块的 .dll 命名为 **AIP.dll**。
 

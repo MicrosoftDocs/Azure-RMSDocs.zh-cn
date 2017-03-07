@@ -4,7 +4,7 @@ description: "此信息可帮助你在部署和配置 Azure 信息保护中的 A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 61f7a7208b13a28f2e8cfb85489cceb2a2caf077
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 1300b0abb3cb59ad09075418ab8c911466740a2c
+ms.openlocfilehash: f1d2db08951c1d017ea4f011855d99423fa9d577
+ms.lasthandoff: 03/03/2017
 
 
 ---
@@ -43,6 +43,8 @@ ms.lasthandoff: 02/24/2017
 -   **技术支持信息：**
 
     为技术支持人员提供的最有用工具之一是 [RMS 分析器](https://www.microsoft.com/en-us/download/details.aspx?id=46437)。 技术支持操作员可以配合 Azure RMS 管理员选项运行该工具，并且可以要求用户配合 Azure RMS 用户选项运行该工具。 此工具不仅可以帮助识别问题，而且还能修复找到的问题，并且不能修复，则会记录跟踪日志。
+    
+    如果用户运行 Azure 信息保护客户端，技术支持操作人员可要求用户使用“帮助和反馈”、“运行诊断”选项，然后重置客户端。 但与 RMS 分析工具不同，重置不会注销用户或重新引导客户端，且不会自动修正。
 
     如果有人合法请求对受保护文档的完全访问权限（例如，某人离职后，法律部门或经理发出此类请求），请确保技术支持人员使用 Azure Rights Management [超级用户功能](configure-super-users.md) 并遵循相应的流程来处理此请求。
 

@@ -4,7 +4,7 @@ description: "有关在 Azure 经典门户中创建和管理自定义模板的�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: ebc0ad13952f2036f997fc5ba9207f02d1571021
+ms.sourcegitcommit: 11971a176b9c5f413bbe6daa208c062a131343be
+ms.openlocfilehash: 5ab725294d93540f35c395eca08f5f3fbc6ae392
 ms.lasthandoff: 02/24/2017
 
 
@@ -81,7 +81,9 @@ ms.lasthandoff: 02/24/2017
     > [!NOTE]
     > 你选择的用户或组必须有电子邮件地址。 在生产环境中，他们几乎都有电子邮件地址，但在简单的测试环境中，你可能需要为用户帐户或组添加电子邮件地址。
 
-    最佳做法是使用组而不是用户，这样可以简化模板的管理。 如果你具有本地 Active Directory 并同步到 Azure AD，可以使用已启用邮件的安全组或通讯组。 但是，如果你要向组织中的所有用户授予权限，则复制一个默认模板将比指定多个组更有效率。 有关详细信息，请参阅[如何复制模板](copy-template.md)。
+    最佳做法是使用组而不是用户，这样可以简化模板的管理。 但是，如果对组进行更改则请注意，出于性能原因，Azure 权限管理[将缓存组成员身份](../plan-design/prepare.md#group-membership-caching)。 
+    
+    如果你具有本地 Active Directory 并同步到 Azure AD，可以使用已启用邮件的安全组或通讯组。 若要向组织中的所有用户授予权限，则复制一个默认模板将比指定多个组更有效率。 有关详细信息，请参阅[如何复制模板](copy-template.md)。
 
     > [!TIP]
     > 你可以通过选择已启用邮件的组（该组包含 Office 365 或 Exchange Online 的联系人）将组织外的用户（“外部用户”）添加到模板。 这样，你可以按照向组织中的用户分配权限的方式向这些用户分配权限。 例如，可以防止客户编辑你发送给他们的价格列表。 如果组织外部的用户将可通过使用 Outlook Web App 读取受保护的电子邮件，请不要使用此模板配置来保护电子邮件。

@@ -4,16 +4,16 @@ description: "通过配置标签来使用 Rights Management 保护，可保护�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: cd0fa432bbec97b39e7c32f0b40594840d57fb04
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 5bc117cbff3226a2ee0ff375f0aa02fc3232a183
+ms.openlocfilehash: ed6bd63a945b73b792bcafcdc0d07e08e83fc344
+ms.lasthandoff: 02/27/2017
 
 
 ---
@@ -74,11 +74,11 @@ ms.lasthandoff: 02/24/2017
         
         如果用户不具有删除 Rights Management 保护的权限，并选择使用此“删除保护”选项配置的标签，他们将会看到以下消息：**Azure 信息保护无法应用此标签。如果此问题仍然存在，请与管理员联系。**
 
-5. 如果已选择“保护”，现在请选择“保护”来打开“权限”边栏选项卡：
+5. 如果已选择“保护”，现在请选择“保护”将“保护”边栏选项卡打开：
     
     ![为 Azure 信息保护标签配置保护权限](../media/info-protect-protection-bar.png)
 
-6. 在“**权限**”边栏选项卡上，选择“**Azure RMS**”或“**HYOK (AD RMS)**”。 
+6. 在“保护”边栏选项卡上，选择“Azure RMS”或“HYOK (AD RMS)”。 
     
     大多数情况下，你会为权限设置选择“**Azure RMS**”。 请勿选择“**HYOK (AD RMS)**”，除非你已阅读并了解此“*自留密钥*”(HYOK) 配置随附的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。 若要继续配置 HYOK (AD RMS)，请转到步骤 9。
     
@@ -94,7 +94,7 @@ ms.lasthandoff: 02/24/2017
             
 9. 如果为“**HYOK (AD RMS)**”选择了“**选择模板**”，请提供 AD RMS 群集的模板 GUID 和授权 URL。 [详细信息](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
-10. 单击“完成”关闭“权限”边栏选项卡，然后“标签”边栏选项卡上的“保护”选项中会显示你选择的“不要转发”或模板。
+10. 单击“确定”关闭“保护”边栏选项卡，然后“标签”边栏选项卡上的“保护”选项中会显示你选择的“不要转发”或模板。
 
 10. 在“**标签**”边栏选项卡上，单击“**保存**”。
 
