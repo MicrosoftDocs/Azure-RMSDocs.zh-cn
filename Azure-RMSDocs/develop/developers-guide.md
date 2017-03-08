@@ -4,7 +4,7 @@ description: "开发人员可使用 Azure 信息保护来保护和管理所有�
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
 translationtype: Human Translation
-ms.sourcegitcommit: a8cb4f9bf0c38e25045fcd1a01deaa993bc862c8
-ms.openlocfilehash: 7f3c9f95ea86655d04e385eee7fd9c8cc0096ce9
+ms.sourcegitcommit: 9a8b37f8e4e6d3a22c5ae4b43ffb82bfd0482037
+ms.openlocfilehash: ee257e733177077caaf3cf3b579a1b3718479121
+ms.lasthandoff: 02/10/2017
 
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
@@ -35,7 +36,7 @@ ms.openlocfilehash: 7f3c9f95ea86655d04e385eee7fd9c8cc0096ce9
 - [IpcDlp](https://github.com/Azure-Samples/active-directory-dotnet-rms) 是一个启用 RMS 的示例 DLP 应用程序，通过将 RMS 文件 API 用于保护和使用受限制内容，来引导你了解启用 RMS 的 DLP 应用程序应执行的基本步骤。
 - [IpcAzureApp](https://github.com/Azure-Samples/active-directory-dotnet-rms) 是一个示例，演示如何在 Azure 应用程序中使用 RMS SDK 来保护 Azure Blob 存储中的数据。
 - [RmsFileWatcher](https://github.com/Azure-Samples/active-directory-dotnet-rms) 是一个示例，演示如何构建监视文件系统中的目录并对每次更改（例如添加文件或修改文件）应用 RMS 保护策略的 Windows 应用程序。
-- [ProtectFilesInDir](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/EncryptFilesInDir) 是一个简单的控制台应用程序示例，它将目录视为输入并保护仅在该目录中的所有文件，不允许使用递归。
+- [ProtectFilesInDir](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/ProtectFilesInDir) 是一个简单的控制台应用程序示例，它将目录视为输入并保护仅在该目录中的所有文件，不允许使用递归。
 
 ## <a name="powershell-guides"></a>PowerShell 指南
 
@@ -65,7 +66,12 @@ ms.openlocfilehash: 7f3c9f95ea86655d04e385eee7fd9c8cc0096ce9
 
 以下指南将介绍如何使用常用工具，完成应用程序开发环境中特定于操作系统的设置步骤。
 
-|[![iOS/OSX 安装程序](../media/develop/ios-icon.png)](ios-sdk.md) | [![Android 安装程序](../media/develop/android-icon.png)](android-sdk.md) | [![Windows Phone 安装程序](../media/develop/windows-phone-icon.png)](windows-phone-apps.md) | [![Windows 服务安装程序](../media/develop/windows-icon.png)](install-the-rms-sdk.md) | [![Linux 安装程序](../media/develop/linux-icon.png)](linux-setup.md) |
+[![iOS/OSX 安装程序](../media/develop/ios-icon.png)](ios-sdk.md)
+[![Android 安装程序](../media/develop/android-icon.png)](android-sdk.md)
+[![Windows Phone 安装程序](../media/develop/windows-phone-icon.png)](windows-phone-apps.md)
+[Windows 服务安装程序![](../media/develop/windows-icon.png)](install-the-rms-sdk.md)
+[![Linux 安装程序](../media/develop/linux-icon.png)](linux-setup.md)
+
 
 ## <a name="how-tos"></a>操作指南
 
@@ -74,8 +80,10 @@ ms.openlocfilehash: 7f3c9f95ea86655d04e385eee7fd9c8cc0096ce9
 ### <a name="general"></a>常规
 
 - [如何启用文档跟踪和撤销（服务）](tracking-content.md)
+- [如何部署客户端](../rms-client/client-deployment-notes.md)
 - [如何安装和配置 RMS 服务器（服务）](how-to-install-and-configure-an-rms-server.md)
 - [如何使用文档跟踪（用户）](how-to-use-document-tracking.md)
+
 
 ### <a name="security-and-authentication"></a>安全性和身份验证
 
@@ -135,8 +143,3 @@ ms.openlocfilehash: 7f3c9f95ea86655d04e385eee7fd9c8cc0096ce9
 - [Azure 信息保护的术语 - IT 专业人员](../get-started/terminology.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-
