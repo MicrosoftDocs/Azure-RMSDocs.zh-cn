@@ -1,10 +1,11 @@
 ---
-title: "为 ADAL 身份验证配置 Azure RMS | Azure RMS"
-description: "配置 Azure RMS 以使用基于 Azure ADAL 的身份验证步骤概述"
-keywords: "身份验证、RMS、ADAL"
+title: "配置应用以进行 ADAL 身份验证 | Microsoft Docs"
+description: "配置 Azure 信息保护应用以使用基于 Azure ADAL 的身份验证的步骤"
+keywords: "身份验证, RMS, ADAL, 信息保护,"
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,24 +15,24 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 2588d10805ddfdc1c09db3008a424767fb528986
+ms.sourcegitcommit: b7415265d0e27896df2bdf6a62e7c875ba681345
+ms.openlocfilehash: d51730af8a1f410ad890087200f64864eceb2268
 
 
 ---
 
-# 为 ADAL 身份验证配置 Azure RMS
+# <a name="configure-your-app-for-adal-authentication"></a>配置应用以进行 ADAL 身份验证
 
-本主题介绍配置基于 Azure ADAL 的身份验证的步骤。
+本主题介绍配置应用以进行基于 Azure Active Directory 身份验证库 (ADAL) 的步骤。
 
-## Azure 身份验证设置
+## <a name="azure-authentication-setup"></a>Azure 身份验证设置
 
 你将需要以下各项：
 
 - [Microsoft Azure 订阅](https://azure.microsoft.com/en-us/)（使用免费试用版即可）。 有关详细信息，请参阅[用户如何注册个人 RMS](../understand-explore/rms-for-individuals-user-sign-up.md)
 - Microsoft Azure Rights Management 的订阅（使用免费的[个人 RMS](https://technet.microsoft.com/en-us/library/dn592127.aspx) 帐户即可）。
 
-> [!NOTE] 
+> [!NOTE]
 > 询问你的 IT 管理员你是否具有 Microsoft Azure Rights Management 订阅，请你的 IT 管理员执行以下步骤。 如果你的组织没有订阅，应请 IT 管理员创建订阅。 此外，你的 IT 管理员应使用*工作或学校帐户*而不是 *Microsoft 帐户*（即 Hotmail）进行订阅。
 
 注册 Microsoft Azure 后：
@@ -77,19 +78,15 @@ ms.openlocfilehash: 2588d10805ddfdc1c09db3008a424767fb528986
 
 ![选择“配置”](../media/ConfigYourApp.png)
 
->[!NOTE] 
+>[!NOTE]
 > 配置 RMS 客户端时，复制**客户端 ID** 和**重定向 URI** 并将其存储供将来使用。
 
 - 浏览到应用程序设置的底部，选择**其他应用程序的权限**下的**添加应用程序**按钮。
 
->[!NOTE] 
+>[!NOTE]
 > 向 Windows Azure Active Directory 显示的**委托权限**默认情况下是正确的 – 仅应选择一个选项，即**登录并读取用户配置文件**。
 
 ![选择“添加应用程序”](../media/PermissionsToOtherBtn.png)
-
-- 现在，将此 GUID `00000012-0000-0000-c000-000000000000` 添加到**开始**编辑框，然后选中复选按钮。
-
-![添加 GUID](../media/AddGUID.png)
 
 - 选择 **Microsoft Rights Management** 旁边的加号按钮。
 
@@ -97,7 +94,7 @@ ms.openlocfilehash: 2588d10805ddfdc1c09db3008a424767fb528986
 
 - 现在，选中对话框左下角的复选标记。
 
-![选中复选标记](../media/ChooseCheck.png)
+![选中复选标记](../media/choosecheck01.png)
 
 - 现在即可向应用程序添加 Azure RMS 依赖关系。 若要添加依赖关系，请选择**其他应用程序的权限**下的新增 **Microsoft Rights Management Services** 项，然后选择**委托的权限:** 下拉框下的**创建和访问用户受保护内容**复选框。
 
@@ -107,8 +104,9 @@ ms.openlocfilehash: 2588d10805ddfdc1c09db3008a424767fb528986
 
 ![选择“保存”](../media/SaveApplication.png)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

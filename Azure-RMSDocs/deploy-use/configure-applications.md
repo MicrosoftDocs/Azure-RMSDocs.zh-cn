@@ -1,10 +1,10 @@
 ---
-title: "为 Azure Rights Management 服务配置应用程序 | Azure 信息保护"
+title: "为 Azure Rights Management 配置应用程序 - AIP"
 description: "有关管理员配置应用程序和服务以支持 Azure 信息保护的 Azure Rights Management 保护服务的说明。 例如，Word 2013 和 Word 2010 等 Office 应用程序，以及 Exchange Online（传输规则、数据丢失防护、请勿转发和邮件加密）与 SharePoint Online（受保护库）等服务。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: c4b510dac964d0703b7eba8266a244f40b83f403
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 8161315fcb3c3beb40b5273db799a5a3f37e4a7e
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -26,9 +27,9 @@ ms.openlocfilehash: c4b510dac964d0703b7eba8266a244f40b83f403
 > [!NOTE]
 > 此信息适用于已部署了 Azure 信息保护的 IT 管理员和顾问。 如果你要寻找有关如何针对特定应用程序使用 Rights Management 功能，或者如何打开权限保护文件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
 >
-> 例如，对于 Office 应用程序，请单击帮助图标并输入搜索词，例如 **Rights Management** 或 **IRM**。 有关适用于 Windows 的 RMS 共享应用程序，请参阅 [Rights Management 共享应用程序用户指南](../rms-client/sharing-app-user-guide.md)。
+> 例如，对于 Office 应用程序，请单击帮助图标并输入搜索词，例如 **Rights Management** 或 **IRM**。 有关适用于 Windows 的 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端用户指南](../rms-client/client-user-guide.md)。
 
-在为组织部署 Azure 信息保护之后，请使用以下信息配置应用程序和服务以支持 Azure 信息保护中的 Azure Rights Management 服务。 其中包括 Word 2013 和 Word 2010 等 Office 应用程序，以及 Exchange Online（传输规则、数据丢失预防、请勿转发和消息加密）与 SharePoint Online（受保护库）等服务。 有关这些应用程序和服务如何支持 Rights Management 的信息，请参阅[应用程序如何支持 Azure Rights Management 服务](../understand-explore/applications-support.md)。
+为组织部署 Azure 信息保护之后，请使用以下信息配置应用程序、Azure 信息保护客户端和服务。 例如，Word 2016、Word 2013 和 Word 2010 等 Office 应用程序。 以及 Exchange Online（传输规则、数据丢失防护、请勿转发和邮件加密）与 SharePoint Online（受保护库）等服务。 若要了解这些应用程序和服务如何支持 Azure 信息保护中的数据保护服务，请参阅[应用程序如何支持 Azure 权限管理服务](../understand-explore/applications-support.md)。
 
 > [!IMPORTANT]
 > 有关受支持的版本和其他要求的信息，请参阅 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)。
@@ -45,11 +46,9 @@ ms.openlocfilehash: c4b510dac964d0703b7eba8266a244f40b83f403
 
     -   [Office 2010](configure-office-apps.md#office-2010)
 
+-   [Azure 信息保护客户端：安装和配置客户端](configure-sharing-app.md)
+
 -   [共享应用程序：客户端安装和配置](configure-sharing-app.md)
-
-    -   [适用于 Windows 的 RMS 共享应用程序：安装和配置](configure-sharing-app.md#the-rms-sharing-application-for-windows-installation-and-configuration)
-
-    -   [适用于移动平台的 RMS 共享应用程序：安装和管理](configure-sharing-app.md#the-rms-sharing-application-for-mobile-platforms-installation-and-management)
 
 
 若要配置本地服务器，例如 Exchange Server 和 SharePoint Server，请参阅[部署 Azure Rights Management 连接器](deploy-rms-connector.md)。
@@ -71,10 +70,6 @@ ms.openlocfilehash: c4b510dac964d0703b7eba8266a244f40b83f403
 
 - [Azure 信息保护租户密钥的操作](operations-tenant-key.md)
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

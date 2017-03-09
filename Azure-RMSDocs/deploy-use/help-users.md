@@ -1,10 +1,10 @@
 ---
-title: "通过使用 Azure Rights Management 服务帮助用户保护文件 | Azure 信息保护"
+title: "使用 Azure RMS 帮助用户保护文件 - AIP"
 description: "此信息可帮助你在部署和配置 Azure 信息保护中的 Azure Rights Management 之后，为用户、管理员和技术支持提供指导。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 03/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
+ms.sourcegitcommit: 1300b0abb3cb59ad09075418ab8c911466740a2c
+ms.openlocfilehash: f1d2db08951c1d017ea4f011855d99423fa9d577
+ms.lasthandoff: 03/03/2017
 
 
 ---
@@ -42,6 +43,8 @@ ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
 -   **技术支持信息：**
 
     为技术支持人员提供的最有用工具之一是 [RMS 分析器](https://www.microsoft.com/en-us/download/details.aspx?id=46437)。 技术支持操作员可以配合 Azure RMS 管理员选项运行该工具，并且可以要求用户配合 Azure RMS 用户选项运行该工具。 此工具不仅可以帮助识别问题，而且还能修复找到的问题，并且不能修复，则会记录跟踪日志。
+    
+    如果用户运行 Azure 信息保护客户端，技术支持操作人员可要求用户使用“帮助和反馈”、“运行诊断”选项，然后重置客户端。 但与 RMS 分析工具不同，重置不会注销用户或重新引导客户端，且不会自动修正。
 
     如果有人合法请求对受保护文档的完全访问权限（例如，某人离职后，法律部门或经理发出此类请求），请确保技术支持人员使用 Azure Rights Management [超级用户功能](configure-super-users.md) 并遵循相应的流程来处理此请求。
 
@@ -61,20 +64,16 @@ ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
 
 请参阅以下关于应用程序特定信息的部分，帮助用户保护敏感的文档和电子邮件。
 
-## <a name="using-information-protection-with-the-rights-management-sharing-application"></a>使用权限管理共享应用程序提供的信息保护
-如果用户使用 Office 2010，则 Rights Management (RMS) 共享应用程序是他们进行内容保护和使用受保护内容所必需的。另外，我们还建议将其用于支持 Azure Rights Management 服务的所有计算机和移动设备。
+## <a name="using-information-protection-with-the-azure-information-protection-client"></a>在 Azure 信息保护客户端中使用信息保护
+如果用户使用 Office 2010，保护和使用受保护文档和电子邮件则需要 Azure 信息保护客户端。另外，我们还建议将其用于计算机和移动设备。
 
-除了使用户更轻松地保护重要文档以外，RMS 共享应用程序还允许用户跟踪他们保护的文档，并根据需要撤消对文档的访问权限。
+除了使用户更轻松地保护重要文档以外，Azure 信息保护客户端还允许用户跟踪他们保护的文档，并根据需要撤销对文档的访问权限。
 
-有关如何将此应用程序用于 Windows 计算机的说明，请参阅 [Rights Management 共享应用程序用户指南](../rms-client/sharing-app-user-guide.md)。
+有关如何将此客户端用于 Windows 计算机的说明，请参阅 [Azure 信息保护客户端用户指南](../rms-client/client-user-guide.md)。
 
-对于移动设备，请参阅 [适用于移动平台的 Microsoft Rights Management 共享应用程序的常见问题](http://technet.microsoft.com/dn451248)。
-
-> [!TIP]
-> 有关带屏幕截图的高级示例方案，请参阅[用户与移动用户安全地共享附件](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users)。
 
 ## <a name="using-information-protection-with-office-365-office-2016-or-office-2013"></a>在 Office 365、Office 2016 或 Office 2013 中使用信息保护
-如果使用 Azure Rights Management 服务，但尚未安装 Rights Management 共享应用程序，则用户将不会在功能区上看到“共享保护”按钮，也不会在文件资源管理器中看到帮助他们更加轻松地保护文件的“就地保护”选项。 对于这些用户，他们必须遵循类似以下的说明。
+如果使用 Azure 权限管理服务，但尚未安装 Azure 信息保护客户端，则用户将不会在他们的 Office 桌面应用程序中看到 Azure 信息保护栏，不会在功能区上看到“保护”按钮，也不会在文件资源管理器中看到帮助他们更加轻松地保护文件的“分类和保护”。 对于这些用户，他们必须遵循类似以下步骤的说明。
 
 > [!TIP]
 > 若要查找应用程序特定帮助，以及有关在这些应用程序中使用信息保护的说明，请搜索 **IRM** 和应用程序名称及版本。
@@ -112,10 +111,6 @@ ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
 
 与查看受保护文档相似，当收件人接收电子邮件时，首先会对他们进行身份验证。 如果他们已被授权查看电子邮件，则电子邮件将会打开，并提供为该用户指定的受限使用权限。 例如，如果你选择了 **“不要全部答复”**，则电子邮件窗口中的 **“全部答复”** 选项不可用。
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

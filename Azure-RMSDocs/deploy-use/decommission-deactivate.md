@@ -1,10 +1,10 @@
 ---
-title: "解除 Azure Rights Management 服务授权和停用 Azure Rights Management 服务 | Azure 信息保护"
+title: "解除授权和停用 Azure RMS"
 description: "如果你决定不再想要使用 Azure 信息保护中的此信息保护服务，本文提供相关的信息和说明。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 865913eae3e0956c18d2caef4e68ab1dc07d74de
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: b88d4587be0549ea7364c9745c218865480a8d18
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -87,11 +88,7 @@ ms.openlocfilehash: 865913eae3e0956c18d2caef4e68ab1dc07d74de
 
 “权限管理状态”现在应显示为“非活动”，而“停用”选项将替换为“激活”。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
 
 

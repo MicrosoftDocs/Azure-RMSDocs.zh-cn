@@ -1,10 +1,10 @@
 ---
-title: "为 Azure Rights Management 和发现服务或数据恢复配置超级用户 | Azure 信息保护"
+title: "为 Azure Rights Management 配置超级用户 - AIP"
 description: "了解并实施 Azure 信息保护中的 Azure Rights Management 服务超级用户功能，以便已获授权的用户与服务始终可以阅读和检查 Azure Rights Management 为你的组织保护的数据。 这种功能有时称为“数据推理”，是保持对组织数据进行控制的关键所在。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 70c74678ec0ef0b583b2784177520d0ea8a5b7e8
+ms.sourcegitcommit: 07236a2820e4d8d4d594eda755cb025d21b96d12
+ms.openlocfilehash: 591ca9ba080da9565e0143d887e3db179b810862
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -37,7 +38,9 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 默认情况下，超级用户功能未启用，并且没有向任何用户分配此角色。 如果你为 Exchange 配置了 Rights Management 连接器，则会自动启用超级用户功能，对于运行 Exchange Online、SharePoint Online 或 SharePoint Server 的标准服务，不需要该功能。
 
-如果需要手动启用超级用户功能，请使用 Windows PowerShell cmdlet [Enable-AadrmSuperUserFeature](https://msdn.microsoft.com/library/azure/dn629400.aspx)，然后根据需要使用 [Add-AadrmSuperUser](https://msdn.microsoft.com/library/azure/dn629411.aspx) cmdlet 或 [Set-AadrmSuperUserGroup](https://msdn.microsoft.com/library/azure/mt653943.aspx) cmdlet 分配用户（或服务帐户），并根据需要向此组添加用户（或其他组）。 
+如果需要手动启用超级用户功能，请使用 PowerShell cmdlet [Enable-AadrmSuperUserFeature](/powershell/aadrm/vlatest/enable-aadrmsuperuserfeature)，然后根据需要使用 [Add-AadrmSuperUser](/powershell/aadrm/vlatest/add-aadrmsuperuser) cmdlet 或 [Set-AadrmSuperUserGroup](/powershell/aadrm/vlatest/set-aadrmsuperusergroup) cmdlet 分配用户（或服务帐户），并根据需要向此组添加用户（或其他组）。 
+
+尽管为超级用户使用组更易管理，但请注意，出于性能原因，Azure 权限管理[缓存组成员身份](../plan-design/prepare.md#group-membership-caching)。 因此，如果需要将新用户分配为超级用户以立即解密内容，请通过使用 Add-AadrmSuperUser 添加用户，而不要将用户添加到已使用 Set-AadrmSuperUserGroup 配置的现有组。
 
 > [!NOTE]
 > 如果你尚未安装适用于 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的 Windows PowerShell 模块，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
@@ -52,26 +55,24 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 下面的日志提取显示了使用 Get-AadrmAdminLog cmdlet 的一些示例条目。 在此示例中，Contoso Ltd 的管理员确认已禁用超级用户功能、将 Richard Simone 添加为超级用户、检查是否将 Richard 配置为 Azure Rights Management 服务唯一的超级用户，然后启用超级用户功能，以便 Richard 可以解密已离开公司的员工保护的某些文件。
 
-`2015-08-01T18:58:20    admin@contoso.com   GetSuperUserFeatureState    Passed  Disabled`
+`2015-08-01T18:58:20    admin@contoso.com    GetSuperUserFeatureState    Passed    Disabled`
 
-`2015-08-01T18:59:44    admin@contoso.com   AddSuperUser -id rsimone@contoso.com    Passed  True`
+`2015-08-01T18:59:44    admin@contoso.com    AddSuperUser -id rsimone@contoso.com    Passed    True`
 
-`2015-08-01T19:00:51    admin@contoso.com   GetSuperUser    Passed  rsimone@contoso.com`
+`2015-08-01T19:00:51    admin@contoso.com    GetSuperUser    Passed    rsimone@contoso.com`
 
-`2015-08-01T19:01:45    admin@contoso.com   SetSuperUserFeatureState -state Enabled Passed  True`
+`2015-08-01T19:01:45    admin@contoso.com    SetSuperUserFeatureState -state Enabled    Passed    True`
 
 ## <a name="scripting-options-for-super-users"></a>超级用户的脚本选项
-通常，分配为 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 超级用户的某人将需要删除对位于多个位置的多个文件的保护。 尽管可以手动执行此操作，但使用脚本会提高效率（并且通常更可靠）。 为此，请 [下载 RMS 保护工具](http://www.microsoft.com/en-us/download/details.aspx?id=47256)。 然后，根据需要使用 [Unprotect-RMSFile](https://msdn.microsoft.com/library/azure/mt433200.aspx) cmdlet 和 [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx) cmdlet。
+通常，分配为 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 超级用户的某人将需要删除对位于多个位置的多个文件的保护。 尽管可以手动执行此操作，但使用脚本会提高效率（并且通常更可靠）。 为此，请根据需要使用 [Unprotect-RMSFile](/powershell/azureinformationprotection/vlatest/unprotect-rmsfile) cmdlet 和 [Protect-RMSFile](/powershell/azureinformationprotection/vlatest/protect-rmsfile) cmdlet。 
 
-有关使用这些 cmdlet 的详细信息，请参阅 [RMS 保护 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
+如果使用分类和保护，也可以使用 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) 应用未应用保护的新标签，或删除已应用保护的标签。 
+
+有关这些 cmdlet 的详细信息，请参阅 Azure 信息保护客户端管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](../rms-client/client-admin-guide-powershell.md)。
 
 > [!NOTE]
-> RMS 保护工具随附的 RMS Protection PowerShell 模块不同于主要的[适用于 Azure Rights Management 的 Windows PowerShell 模块](administer-powershell.md)，前者为后者做了补充。 RMS 保护模块支持 Azure 信息保护的 Azure Rights Management 服务 (Azure RMS) 和 Active Directory Rights Management Services (AD RMS)。
+> AIP 模块将替换随 RMS 保护工具一起安装的 RMS 保护 PowerShell 模块。 这两种模块不同于主要的[适用于 Azure 权限管理的 Windows PowerShell 模块](administer-powershell.md)，并且对该模块提供了补充。 AIP 模块支持 Azure 信息保护、适用于 Azure 信息保护的 Azure 权限管理服务 (Azure RMS) 和 Active Directory Rights Management Services (AD RMS)。
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

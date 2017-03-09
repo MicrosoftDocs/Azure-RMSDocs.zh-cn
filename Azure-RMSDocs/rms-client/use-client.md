@@ -1,10 +1,10 @@
 ---
-title: "客户端 | Azure 信息保护"
+title: "Azure 信息保护客户端"
 description: "Microsoft Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的数据。 客户端（Azure 信息保护客户端或 Rights Management 客户端）与在计算机和移动设备上运行的应用程序集成。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,15 +14,16 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ced42d0856b992d3539575d64f5a49706f1768b3
-ms.openlocfilehash: 767d19132decd308f028ddca1c3c6136eb862426
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 5b17d639382238ce4669bc02beadb80570b5ca6f
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
->适用于：Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1
+>适用于：Active Directory Rights Management Services、Azure 权限管理、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
 
 Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的文档和电子邮件：
 
@@ -32,27 +33,22 @@ Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织�
 
 除了保护之外，Azure 信息保护客户端还支持分类和标签。 此客户端与 Office 应用程序集成，必须单独安装。
 
-某些应用程序将自动安装 Rights Management (RMS) 客户端，如 Office 应用程序、RMS 共享应用程序和软件供应商提供的启用 RMS 的应用程序。 但是，该客户端也可以自行安装，这种安装方式能够为希望将 Rights Management 保护集成到业务线应用程序的开发人员以及希望通过 RMS 保护工具批量保护文件的管理员或 Power User 提供支持。
+某些应用程序将自动安装 Rights Management (RMS) 客户端，如 Office 应用程序、Azure 信息保护客户端和软件供应商提供的启用 RMS 的应用程序。 但是，该客户端也可以自行安装，这种安装方式能够为希望将 Rights Management 保护集成到业务线应用程序的开发人员提供支持。
 
 当需要了解有关如何部署和使用这些客户端（可以通过 Azure 信息保护和 Active Directory Rights Management Services 使用该客户端保护你组织的数据）的详细信息时，请使用以下文档：
 
-- [安装 Azure 信息保护客户端](info-protect-client.md)
+- [Azure 信息保护客户端](AIP-client.md)
 
 - [RMS 客户端部署说明](client-deployment-notes.md)
 
 - [使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护](configure-fci.md)
 
-- [适用于 Windows 的 Rights Management 共享应用程序](sharing-app-windows.md)
+- [适用于 Windows 的权限管理共享应用程序](sharing-app-windows.md)
+
+请注意，适用于 Windows 的 Rights Management 共享应用程序和 RMS 保护工具现被 Azure 信息保护客户端替代。 
 
 
 ## <a name="see-also"></a>另请参阅
 [比较 Azure 信息保护与 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)
 
-## <a name="comments"></a>注释
-
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Dec16_HO2-->
-
-

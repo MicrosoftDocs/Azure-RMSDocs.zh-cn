@@ -4,7 +4,7 @@ description: "概述这一新版本的 RMS SDK 中的重要更改和功能。"
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection

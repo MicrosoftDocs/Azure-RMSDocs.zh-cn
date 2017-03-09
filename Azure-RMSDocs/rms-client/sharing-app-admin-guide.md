@@ -1,10 +1,10 @@
 ---
-title: "Rights Management 共享应用程序管理员指南 | Azure 信息保护"
+title: "RMS 共享应用程序管理指南 - AIP"
 description: "面向负责部署适用于 Windows 的 Microsoft Rights Management 共享应用程序的企业网络管理员的说明和信息。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/11/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c9a5bcf46597ee65e2e0f36199f19935f8997048
-ms.openlocfilehash: adab568d173845f411fe5913786b137508485ef6
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: ee9d92752bb2839df859d01e80d3b0ecaeb678f9
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -24,6 +25,8 @@ ms.openlocfilehash: adab568d173845f411fe5913786b137508485ef6
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
+> [!IMPORTANT]
+> **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2018 年 1 月 31 日将停止对此旧应用程序的支持。 
 
 如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 [Rights Management 共享应用程序用户指南](sharing-app-user-guide.md)或[适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)以外的更多技术信息，请使用以下信息。
 
@@ -169,7 +172,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 若要验证是否成功，请参阅本文中的[验证安装是否成功](#verifying-installation-success)部分。
 
-### <a name="to-install-the-rms-sharing-application-and-office-addin-only"></a>仅安装 RMS 共享应用程序和 Office 加载项
+### <a name="to-install-the-rms-sharing-application-and-office-add-in-only"></a>仅安装 RMS 共享应用程序和 Office 加载项
 
 1.  使用以下命令安装 AD RMS 客户端和 RMS 共享应用程序，指定现有文件夹创建日志文件：
 
@@ -273,7 +276,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
         DefaultUser="&lt;default_user&gt;"
 
-### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-addin-only"></a>验证仅安装 RMS 共享应用程序和 Office 加载项是否成功
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-add-in-only"></a>验证仅安装 RMS 共享应用程序和 Office 加载项是否成功
 
 1.  若要验证 Setup_ipviewer.exe 命令是否成功运行，请在安装日志文件中搜索以下文本：**安装成功或错误状态：0**
 
@@ -310,7 +313,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
         x86\setup_ipviewer.exe /uninstall /quiet
         ```
 
-### <a name="to-uninstall-the-office-addin"></a>卸载 Office 加载项
+### <a name="to-uninstall-the-office-add-in"></a>卸载 Office 加载项
 
 -   使用以下命令：
 
@@ -404,9 +407,5 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 ## <a name="next-steps"></a>后续步骤
 有关其他技术信息，包括保护级别（本机和通用）之间的区别、支持的文件类型和文件扩展名以及如何更改默认保护级别的相关说明，请参阅 [Rights Management 共享应用程序技术概述](sharing-app-admin-guide-technical.md)。
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

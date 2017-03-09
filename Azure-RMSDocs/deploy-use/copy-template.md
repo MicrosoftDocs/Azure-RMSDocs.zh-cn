@@ -1,10 +1,10 @@
 ---
-title: "复制模板 | Azure 信息保护"
+title: "复制 Azure RMS 模板 - AIP"
 description: "有关复制模板以轻松创建与现有模板具有非常相似设置的新模板的说明。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: f329ce49-e044-4c11-821d-5496d83c1bb3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: e0945e9ab719fd4b686c3fb7932891ed92fa31c6
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: f9549ecc1a1140208dc2d6161424a589d2cb6cba
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,7 +37,4 @@ ms.openlocfilehash: e0945e9ab719fd4b686c3fb7932891ed92fa31c6
 ## <a name="see-also"></a>另请参阅
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

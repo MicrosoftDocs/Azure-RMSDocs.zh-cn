@@ -5,7 +5,7 @@ keywords:
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 503a99f01335f3085b5d13c9faaf0a6f05063490
-ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 847d19feaea442da66296565f0ffb5b0663ad170
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 **注意** 在示例代码以及随后的说明中，我们使用术语 MSIPC (Microsoft Information Protection and Control) 来引用客户端进程。
 
 
-## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>使用 Microsoft Rights Management SDK 4.2 - 重要方案
+## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>使用 Microsoft Rights Management SDK 4.2 - 重要方案
 
 以下是摘取自一个较大示例应用程序的代码示例，表示对你学习此 SDK 十分重要的开发方案。 这些示例演示 Microsoft 受保护的文件格式（称为受保护的文件）的使用、自定义受保护的文件格式的使用以及自定义 UI 控件的使用。
 
@@ -437,7 +437,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
         buffer.close();    customProtectedInputStream.close();  }  catch (IOException e)  {    ...  } }
 
 
-### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>方案：使用自定义（临时）策略创建自定义受保护的文件
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>方案：使用自定义（临时）策略创建自定义受保护的文件
 
 -   **步骤 1**：在用户提供了电子邮件地址的情况下，创建策略描述符。
 
@@ -524,13 +524,9 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
           …
         }
 
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

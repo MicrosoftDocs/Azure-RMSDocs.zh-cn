@@ -1,10 +1,10 @@
 ---
-title: "下载并安装 Rights Management 共享应用程序 | Azure 信息保护"
+title: "下载和安装 RMS 共享应用 - AIP"
 description: "有关以交互方式安装适用于 Windows 的 RMS 共享应用程序，以便可以安全地与他人共享文档的说明。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f1553ebd64f174128e41f55b66582e8791ce9133
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 9c954f750c6f49d3db1bf6383efa2805f291682c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -67,9 +68,5 @@ ms.openlocfilehash: f1553ebd64f174128e41f55b66582e8791ce9133
 ## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

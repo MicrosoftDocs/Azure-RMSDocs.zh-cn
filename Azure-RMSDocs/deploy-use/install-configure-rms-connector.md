@@ -1,10 +1,10 @@
 ---
-title: "安装并配置 Azure Rights Management 连接器 | Azure 信息保护"
+title: "安装和配置 Rights Management 连接器 - AIP"
 description: "此信息可帮助安装并配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到部署 Azure Rights Management 连接器中的步骤 1-4。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: babd3b14cba61aa49cb448c1d132b279dc9ad5da
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 365d4a661a26e687da0445d9c31c644ed9d3ca12
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -240,7 +241,4 @@ ms.openlocfilehash: babd3b14cba61aa49cb448c1d132b279dc9ad5da
 ## <a name="next-steps"></a>后续步骤
 安装和配置 RMS 连接器之后，即可配置本地服务器以使用此连接器。 转至[为 Azure Rights Management 连接器配置服务器](configure-servers-rms-connector.md)。
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -1,10 +1,10 @@
 ---
-title: "Azure 信息保护中数据保护服务 Azure Rights Management 的常见问题 | Azure 信息保护"
+title: "Azure RMS 的常见问题解答 - AIP"
 description: "有关 Azure 信息保护中数据保护服务 Azure Rights Management (Azure RMS) 的一些常见问题。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eb9b9c1308abe6b1b5803cba7ba254d54cbac812
-ms.openlocfilehash: d3d11dba936ca8901b701008e55df8d73be8bded
+ms.sourcegitcommit: dccc643ae49521262d5327b4d3d98801f88b3894
+ms.openlocfilehash: ed200df12b3d0665920091c7772ed88a79143e70
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -36,14 +37,21 @@ Microsoft 提供了多个加密技术，使你能够保护数据以满足不同�
 
 这些加密技术相互补充，使用它们需要单独对其进行启用和配置。 执行此操作时，可以选择使用自己的密钥进行加密，也称为“BYOK”方案。 为其中一种技术启用 BYOK 不影响其他技术。 例如，可对 Azure 信息保护使用 BYOK，而对其他加密技术不使用 BYOK；反之亦然。 不同技术所用密钥可为相同或不同，具体取决于为每种服务配置的加密选项。
 
-## <a name="can-i-integrate-the-azure-rights-management-service-with-my-onpremises-servers"></a>是否可以将 Azure Rights Management 与本地服务器集成？
-是。 Azure Rights Management 可以与本地服务器（如 Exchange Server、SharePoint 和 Windows 文件服务器）集成。 为此，你需要使用 [Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。 或者，如果你只想对 Windows Server 使用文件分类基础结构 (FCI)，则可使用 [RMS 保护 cmdlet](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx)。 你还可以使用 [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)，将 Active Directory 域控制器与 Azure AD 同步和联合，为用户提供更为契合的身份验证体验。
+## <a name="whats-the-difference-between-byok-and-hyok-and-when-should-i-use-them"></a>BYOK 和 HYOK 之间的区别是什么，应何时使用它们？
 
-Azure Rights Management 根据需要自动生成并管理 XrML 证书，因此它不使用本地 PKI。 有关 Azure Rights Management 如何使用证书的详细信息，请参阅 [Azure RMS 的工作原理](../understand-explore/how-does-it-work.md)一文中的 [Azure RMS 工作演练：首次使用、内容保护、内容使用](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption)。
+Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应为 Azure Rights Management 保护创建自己的本地密钥。 然后将该密钥传输到 Azure Key Vault 中的硬件安全模块 (HSM)，你可在其中继续拥有并管理你的密钥。 若不执行此操作，Azure Rights Management 保护会使用 Azure 中自动为你创建并进行管理的密钥。 这种默认配置称为“Microsoft 管理”而不是“客户管理”（BYOK 选项）。
+
+有关 BYOK 以及是否应为组织选择此密钥拓扑的详细信息，请参阅[规划和实现 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)。 
+
+在 Azure 信息保护的上下文中出现**自留密钥** (HYOK)，则表示少量组织的文档或电子邮件自己无法通过存储在云中的密钥进行保护。 对于这些组织来说，即使使用 BYOK 创建和管理密钥，此限制仍然适用。 此限制通常是由于法规或符合性问题引起的，并且 HYOK 配置应仅应用于“顶级机密”信息，此信息永远不会在组织外部共享、仅会在内部网络中使用，并且无需通过移动设备访问。 
+
+对于这些异常（通常需要保护的内容少于所有内容的 10%），组织可使用本地解决方案 Active Directory Rights Management Services 创建保留在本地的密钥。 通过此解决方案，计算机可从云中获取其 Azure 信息保护策略，但可使用本地密钥来保护此标识的内容。
+
+若要深入了解 HYOK 并确保你了解其局限性和限制及使用指南，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](../deploy-use/configure-adrms-restrictions.md)。
 
 ## <a name="where-can-i-find-information-about-3rd-party-solutions-that-integrate-with-azure-rms"></a>在哪里可以找到与 Azure RMS 集成的第三方解决方案的相关信息？
 
-许多软件供应商已经具备或正在实施与 Azure Rights Management 集成的解决方案 — 并且这一数量正在快速增长。 请查看 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)（企业移动性和安全性博客）并从 Twitter 上的 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) 获取最新更新，这可能会对你有所帮助。 但是，如果你有特定的问题，可以向信息保护团队发送电子邮件：askipteam@microsoft.com.
+许多软件供应商已经具备或正在实施与 Azure Rights Management 集成的解决方案 — 并且这一数量正在快速增长。 请查看 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)（企业移动性和安全性博客）并从 Twitter 上的 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) 获取最新更新，这可能会对你有所帮助。 但是，如果有特定的问题，可以向信息保护团队发送电子邮件：askipteam@microsoft.com。
 
 ## <a name="is-there-a-management-pack-or-similar-monitoring-mechanism-for-the-rms-connector"></a>RMS 连接器是否有管理包或类似的监视机制？
 
@@ -86,9 +94,9 @@ Azure Rights Management 服务始终使用 Azure Active Directory 帐户和关�
 这些帐户的身份验证方法各不相同，具体取决于其他组织中的管理员如何配置 Azure Active Directory 帐户。 例如，他们可以使用为这些帐户、多重身份验证 (MFA)、联合身份验证创建的密码，或在 Active Directory 域服务中创建、然后同步到 Azure Active Directory 的密码。
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>能否将外部用户（公司外部人员）添加到自定义模板？
-是。 创建最终用户（和管理员）可以从应用程序中选择的自定义模板，可使用户使用你指定的预定义策略应用信息保护变得简单快捷。 该模板中的设置之一是哪些用户能够访问内容，而且你可以指定组织中的用户和组以及组织之外的用户。
+是。 创建最终用户（和管理员）可以从应用程序中选择的自定义模板，可使用户使用你指定的预定义策略应用信息保护变得简单快捷。 该模板中的设置之一是哪些用户能够访问内容，而且你可以指定组织中的用户和组以及组织外部的用户和组。 
 
-若要从组织外部指定用户，请在配置模板时在 Azure 经典门户中将用户添加为所选组的联系人。 或者使用[适用于 Azure Rights Management 的 Windows PowerShell 模块](../deploy-use/install-powershell.md)：
+若要从组织外部指定用户，请在配置模板时在 Azure 经典门户中将用户添加为所选组的联系人。 若要指定组织外部的组，必须使用[适用于 Azure 权限管理的 Windows PowerShell 模块](../deploy-use/install-powershell.md)，你可以通过此模块指定单个外部用户甚至是另一组织中的所有用户：
 
 -   **使用权限定义对象创建或更新模板**。    在权限定义对象中指定外部电子邮件地址及其权限，然后你将使用该地址创建或更新模板。 指定权限定义对象时，可使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) cmdlet 来创建一个变量，然后将该变量提供给 -RightsDefinition 参数，并可使用 [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx) cmdlet（如果是新模板）或 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) cmdlet（如果需要修改现有模板）。 但是，如果你是将这些用户添加到现有模板中，则需要在模板中为现有组定义权限定义对象，不仅仅只需为外部用户进行此类操作。
 
@@ -97,17 +105,14 @@ Azure Rights Management 服务始终使用 Azure Active Directory 帐户和关�
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Azure RMS 是否适用于 Azure AD 中的动态组？
 Azure AD Premium 功能可让你通过指定[基于属性的规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)为组配置动态成员资格。 在 Azure AD 中创建安全组时，该组类型支持动态成员资格，但不支持电子邮件地址，因此不能用于Azure Rights Management 服务。 但是，现在可以在 Azure AD 中创建支持动态成员身份并启用了邮件的新组类型。 当在 Azure 经典门户中添加新组时，你可以选择 **Office 365“预览版”**的**组类型**。 由于此组启用了邮件，可以将其用于 Azure Rights Management 保护。
 
-正如选项名清楚显示的一样，此新组类型仍为预览版，预期后续将推出其他功能和新文档。 在此期间，我们想要确认是否可以将此新组类型用于 Azure Rights Management 保护。
-
-
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS 支持哪些设备和哪种文件类型？
 有关支持 Azure Rights Management 服务的设备的列表，请参阅[支持 Azure Rights Management 数据保护的客户端设备](../get-started/requirements-client-devices.md)。 由于并非所有受支持的设备目前都能支持所有 Rights Management 功能，因此，请务必查看 [支持 Azure Rights Management 数据保护的应用程序](../get-started/requirements-applications.md)中的表。
 
 Azure Rights Management 服务支持所有文件类型。 对于文字、图像、Microsoft Office（Word、Excel、PowerPoint）文件、.pdf 文件和一些其他应用程序文件类型，Azure Rights Management 提供的本地保护包括对权利（权限）的加密和执行。 对于其他应用程序和文件类型，通用保护提供文件封装和验证以确认用户是否授权打开文件。
 
-对于 Azure Rights Management 直接支持的文件扩展名列表，请参阅 [Rights Management 共享应用程序管理员指南](../rms-client/sharing-app-admin-guide.md)中的[支持的文件类型和文件扩展名](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions)部分。 未列出的文件扩展名支持使用 RMS 共享应用程序，可自动提供通用保护保护这些文件。
+有关 Azure 权限管理本机支持的文件扩展名列表，请参阅 [Azure 信息保护客户端支持的文件类型](../rms-client/client-admin-guide-file-types.md)。 Azure 信息保护客户端支持未列出的文件扩展名，该客户端可自动对这些文件应用常规保护。
 
-## <a name="when-i-open-an-rmsprotected-office-document-does-the-associated-temporary-file-become-rmsprotected-as-well"></a>当我打开受 RMS 保护的 Office 文档时，关联的临时文件是否也将受 RMS 保护？
+## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>当我打开受 RMS 保护的 Office 文档时，关联的临时文件是否也将受 RMS 保护？
 
 否。 在此方案中，关联的临时文件不包含原始文档中的数据，而仅包含该文件打开时用户输入的内容。 与原始文件不同，临时文件明显不适合共享，将保留在设备上，受本地安全控件（例如 BitLocker 和 EFS）保护。
 
@@ -124,7 +129,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 ## <a name="how-do-i-configure-one-drive-for-business-in-sharepoint-online-so-that-users-can-safely-share-their-files-with-people-inside-and-outside-the-company"></a>如何在 SharePoint Online 中配置 OneDrive for Business，以便用户可以安全地与公司内外的人员共享他们的文件？
 默认情况下，作为 Office 365 管理员，你不用执行此配置，用户会进行配置。
 
-正如 SharePoint 站点管理员为其拥有的 SharePoint 库启用并配置 IRM 一样，根据 OneDrive for Business 的设计，用户也需要为自己的 OneDrive for Business 库启用并配置 IRM。  不过，你可以使用 PowerShell 为他们执行此类操作。 有关说明，请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)一文中的 [SharePoint Online 和 OneDrive for Business：IRM 配置](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)部分。
+正如 SharePoint 站点管理员为其拥有的 SharePoint 库启用并配置 IRM 一样，根据 OneDrive for Business 的设计，用户也需要为自己的 OneDrive for Business 库启用并配置 IRM。 不过，你可以使用 PowerShell 为他们执行此类操作。 有关说明，请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)一文中的 [SharePoint Online 和 OneDrive for Business：IRM 配置](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)部分。
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>对于成功部署，是否有任何提示或窍门？
 在考察大量的部署并聆听客户、合作伙伴、顾问和支持工程师的意见后，结合自身的经验，我们很乐意与你分享下面这个极其有效的诀窃： **设计并部署简单的权限策略**。
@@ -132,9 +137,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 由于 Azure 信息保护支持与任何人安全共享，因此，你完全有理由相信自己的数据保护措施的覆盖面。 但是，对权限策略应持保守态度。 对于许多组织而言，对业务产生的最大影响来自于通过应用默认权限策略模板防止数据泄漏，将其访问权限限制给组织中的人员。 当然，你可以根据需要采取粒度级比这高得多的措施 - 例如，防止人员打印、编辑，等等。但是，对于确实需要高级安全性的文档，请将更高粒度级的限制保留为例外措施，并且不要一开始就实施这些限制性更强的策略，而是计划采取分阶段的实施方案。
 
 ## <a name="how-do-we-regain-access-to-files-that-were-protected-by-an-employee-who-has-now-left-the-organization"></a>我们如何重新获取对由已离职员工保护的文件的访问权限？
-使用 Azure RMS 的超级用户功能，它可以让授权用户对组织的 RMS 租户授予的所有使用许可证行使所有者权限。 根据需要，此相同功能可以让授权服务编写文件索引和检查文件。
-
-有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)。
+使用[超级用户功能](../deploy-use/configure-super-users.md)，它可以让授权用户对组织租户授予的所有使用许可证行使使用权限。 根据需要，此相同功能可以让授权服务编写文件索引和检查文件。
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>在文档跟踪站点中测试吊销时，显式的消息提示人们仍可在 30 天内访问此文档—该时间段是否可配置？
 
@@ -143,8 +146,6 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 如果撤销文件，仅在用户对 Azure Rights Management 服务进行身份验证时才会强制执行此操作。 因此，如果文件的使用许可证有效期为 30 天，且用户已经打开过文档，则该用户在使用许可证期间仍继续拥有该文档的访问权限。 使用许可证过期时，用户必须重新进行身份验证，此时由于文件被撤销，因此会拒绝用户访问。
 
 租户使用许可证有效期默认值为 30 天，可使用 PowerShell cmdlet [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx) 配置该值。 可在自定义模板中使用更严格的设置替代此设置。 
-
-用户在使用 RMS 共享应用程序和选择“允许我立即撤消对这些文档的访问权限”选项时可替换租户设置和模板设置。 此设置可有效地将使用许可证有效期设置为 0。 
 
 有关使用许可证的工作原理的详细信息和示例，请参阅 [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx) 的详细说明。
 
@@ -159,11 +160,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 除名称和外观外，**不得转发**既不是“转发”权限的对立面，也不是模板。 它实际上是一组权限，包括限制复制、打印和保存附件以及限制转发电子邮件。 这些权限通过所选收件人动态应用于用户，而不由管理员静态分配。 有关详细信息，请参阅[为 Azure Rights Management 配置使用权限](../deploy-use/configure-usage-rights.md)中的[电子邮件的“不得转发”选项](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)部分。
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "如何从 Azure 经典门户激活 Azure Rights Management | Azure 信息保护"
+title: "使用 Azure 经典门户激活 Azure RMS - AIP"
 description: "有关具有 Azure 门户访问权限时 Azure Rights Management 服务的激活说明。 例如，你有企业移动性套件订阅或 Azure 信息保护高级版订阅。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: fe806c1c2b3f3284b905602a3a10deb79d91425e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 444d74c957ec6e243858fcddfaac36951c257a9d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -58,7 +59,4 @@ ms.openlocfilehash: fe806c1c2b3f3284b905602a3a10deb79d91425e
 ## <a name="next-steps"></a>后续步骤
 返回 [激活 Azure Rights Management](activate-service.md)。
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

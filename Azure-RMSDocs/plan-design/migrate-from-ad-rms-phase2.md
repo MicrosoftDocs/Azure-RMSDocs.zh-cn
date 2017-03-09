@@ -1,10 +1,10 @@
 ---
-title: "从 AD RMS 迁移到 Azure 信息保护 - 阶段 2 | Azure 信息保护"
+title: "迁移 AD RMS-Azure 信息保护 - 第 2 阶段"
 description: "从 AD RMS 迁移到 Azure 信息保护的阶段 2 涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 5。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/12/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,12 +13,13 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: ca8d2ccb68b96095fccf9d55b9cb9392d3a455ec
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: aa1569749abbdd335c8fdff56441441d5c49b21d
+ms.lasthandoff: 02/24/2017
 
 
 ---
-# <a name="migration-phase-2-clientside-configuration"></a>迁移阶段 2 - 客户端配置
+# <a name="migration-phase-2---client-side-configuration"></a>迁移阶段 2 - 客户端配置
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365
 
@@ -133,7 +134,4 @@ Redirect_OnPrem.cmd：
 ## <a name="next-steps"></a>后续步骤
 要继续迁移，请转到[阶段 3 - 支持复制配置](migrate-from-ad-rms-phase3.md)。
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

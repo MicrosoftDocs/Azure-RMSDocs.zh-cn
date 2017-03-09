@@ -1,10 +1,10 @@
 ---
-title: "方案 - 保留对 SharePoint 中所存储文档的控制 | Azure 信息保护"
+title: "AIP 方案 - 控制在 SharePoint 中存储的文档"
 description: "此方案和支持性的用户文档使用 Azure Rights Management 保护，通过使用受保护的库确保对存储在 SharePoint 中的 Office 文档保留控制。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,14 @@ ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 371e566a166dad74b55266db23e034f926942a26
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3d5d1c818323a3723f6837ebe8fedd4995efb467
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="scenario-retain-control-of-documents-stored-in-sharepoint"></a>方案 - 保留对 SharePoint 中所存储文档的控制
+# <a name="scenario---retain-control-of-documents-stored-in-sharepoint"></a>方案 - 保留对 SharePoint 中所存储文档的控制
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -103,9 +104,4 @@ SharePoint 站点 **销售预测和报告**现已进行了安全协作配置。 
 
 -   与技术支持联系：helpdesk@vanarsdelltd.com
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

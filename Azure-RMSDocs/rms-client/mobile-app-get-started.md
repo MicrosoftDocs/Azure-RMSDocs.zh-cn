@@ -1,11 +1,11 @@
 ---
-title: "适用于 iOS 和 Android 的 Azure 信息保护入门 | Azure 信息保护"
+title: "入门 - 适用于 iOS 和 Android 的 AIP 应用"
 description: 
 keywords: "如何使用适用于 iOS 和 Android 的 Azure 信息保护应用查看电子邮件或文件"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -14,8 +14,9 @@ ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 0a0c6e5f68f016ec6f921b16ff3063599b45f465
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 14f0d3ba1c01f0fd1b68d2b793e2bb5c8ee9906e
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -32,9 +33,9 @@ ms.openlocfilehash: 0a0c6e5f68f016ec6f921b16ff3063599b45f465
     
     使用另一台设备可向自己发送权限保护的电子邮件消息，用户可从自己的移动设备访问。 例如，在 Windows 计算机使用 Outlook。 有关本机支持权限管理的电子邮件客户端列表，请参阅[支持 Azure Rights Management 数据保护的应用程序](../get-started/requirements-applications.md)中的“电子邮件”列。
 
-- **权限保护的 PDF 文件**：在本机支持权限管理的 Windows 计算机或 PDF 应用程序上，使用 Rights Management 共享应用程序通过电子邮件以附件方式向自己发送权限保护的 PDF 文件。 或者，使用电子邮件地址将 PDF 文件上传到 SharePoint 保护的库，然后共享。
+- **受权限保护的 PDF 文件**：在 Windows 计算机中，使用 Azure 信息保护客户端[保护 PDF 文件](client-classify-protect.md)，然后通过电子邮件以附件的形式向自己发送此受权限保护的 PDF 文件。 或者，使用电子邮件地址将 PDF 文件上传到 SharePoint 保护的库，然后共享。
 
-- **.ptxt、.pjpg 或.ppng**：在 Windows 计算机上使用 Rights Management 共享应用程序和[共享保护](sharing-app-protect-by-email.md)选项以电子邮件附件形式向自己发送受保护的文件。 有关可用于测试的文件类型的完整列表，请参阅 Rights Management 共享应用程序管理员指南中的[支持的文件类型和文件扩展名](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions)部分中的第一个表。 
+- **.ptxt、.pjpg 或 .ppng**：在 Windows 计算机中，使用 Azure 信息保护客户端保护文本或图像文件，然后以电子邮件附件的形式向自己发送此受保护的文件。 有关可用于测试的文件类型的完整列表，请参阅 Azure 信息保护客户端管理员指南中的[保护支持的文件类型及其文件扩展名](client-admin-guide-file-types.md#supported-file-types-for-protection-and-their-file-name-extensions)部分。 
 
 若要在 Azure 信息保护查看器应用中查看这些文件，请点击此电子邮件附件或链接。 系统提示选择一个应用来打开文件时，请选择“AIP 查看器”应用。 然后系统会提示登录到工作或学校帐户。 身份验证成功后，Azure 信息保护应用会显示电子邮件或文件以供阅读。
 
@@ -44,8 +45,4 @@ ms.openlocfilehash: 0a0c6e5f68f016ec6f921b16ff3063599b45f465
 
 对于其他问题，请访问我们的 [Yammer 站点](https://www.yammer.com/AskIPTeam)或[发送电子邮件到信息保护团队](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app)。
 
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

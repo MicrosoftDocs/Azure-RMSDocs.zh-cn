@@ -1,10 +1,10 @@
 ---
-title: "Azure 信息保护的其他名称 | Azure 信息保护"
+title: "Azure 信息保护也称为"
 description: "Azure 信息保护经过多次名称更改，你可能知道的是它以前的名称。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,40 +13,69 @@ ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 1b5268a13538df1537dbf3ea6f66eeda2b5e2292
+ms.sourcegitcommit: 047578ea1fb89532f35c066d02ced3da58979938
+ms.openlocfilehash: ca8a196f3c9f31d2fee7493d0aa4112b5be8c26f
+ms.lasthandoff: 03/01/2017
 
 
 ---
 
 
-# <a name="azure-information-protection-also-known-as-"></a>Azure 信息保护 - 也称为...
+# <a name="azure-information-protection---also-known-as-"></a>Azure 信息保护 - 也称为...
 
 >*适用于：Azure 信息保护、Office 365*
 
-Azure 信息保护是 Azure Rights Management（也称为Azure Rights Management 服务）的基于云的已重命名解决方案。 由于 RMS 作为其早期版本的缩写已广为人知，所以你通常会看到 Azure Rights Management 缩写为 ***Azure RMS***。
+Azure 信息保护（有时缩写为 AIP）由著名 Microsoft 技术长期发展而形成，实现权限管理保护。 这是个长时演变过程，你可能通过其先前名称了解到此解决方案。 或者，可能在文档、UI 和日志文件中看到对这些名称的引用。 
 
-Azure 信息保护于 2016 年 10 月宣布公开上市。 它为组织的文档和电子邮件提供分类和标签以及权限管理保护。 保护使用 Azure Rights Management 服务实现。 对于必须使用本地密钥进行保护的非常小部分的文档和电子邮件，可以使用本地版本的权限管理技术 Active Directory Rights Management Services (AD RMS) 实现保护。 此本地产品首次发布时是采用 Windows Rights Management Services (Windows RMS) 的形式。
-
-Azure Rights Management 的其他名称：此服务最初名为 *Windows Azure Active Directory Rights Management*（常缩写为 Windows Azure AD Rights Management），然后是 Windows Azure Rights Management，再然后是 Azure Rights Management。
-
-偶尔你还可能看到对 *Microsoft Rights Management*或 *Microsoft Rights Management 服务*的引用，这是可以包括 Azure RMS 和 AD RMS 的集合术语。  “*新 Microsoft RMS*”是 Azure Rights Management 正式发布时，有时会使用的常用标签，以便在与其本地早期版本比较时强调部署的全新易用性。
-
-你是否看到过对信息权限管理（常缩写为 IRM）的引用？ 这是 Rights Management 的 Office 实现，可以支持 Azure RMS 和 AD RMS。 当 Azure RMS 首次发布时，它仅适用于 Office 365（如 Office 365 E3 订阅）。 随后，Azure RMS 技术扩展到其他订阅，如支持进行记录的跟踪和撤消以及保护的企业移动性套件 (EMS)。 随着使用它的新 SDK 和应用程序（如 Rights Management 共享应用程序）的发布，Azure RMS 和 AD RMS 从而可以保护任何文件类型；而不仅仅是 Office 文件。 
+以下部分列出了其中一些名称。
 
 > [!TIP]
-> 你会在 [Azure Rights Management 术语](../get-started/terminology.md)中发现许多这类产品和服务名称及其相关术语。
+> 你会在 [Azure 信息保护术语](../get-started/terminology.md)中发现许多这类产品和服务名称及其相关术语。
 
-现在，Azure RMS 保护包含在 Azure 信息保护中，后者可以作为独立服务进行购买，或是作为一个安全套件（企业移动性 + 安全性套件 (EMS) 或 Secure Productive Enterprise 套件 (SPE)）的一部分进行购买。 Azure RMS 技术还保留在 Office 产品和服务中。
+## <a name="cloud-based-solutions"></a>基于云的解决方案
+
+- **Azure 权限管理**或 **Azure 权限管理服务** - 常缩写为 Azure RMS
+
+- **Azure Active Directory Rights Management** - 常缩写为 AADRM
+
+- **Microsoft Azure Active Directory Rights Management** - 常缩写为 Microsoft Azure AD Rights Management
+
+## <a name="on-premises-solutions"></a>本地解决方案
+
+- **Active Directory Rights Management Services** - 常缩写为 AD RMS
+
+- **Windows Rights Management Services** - 常缩写为 Windows RMS
+
+## <a name="other-names"></a>其他名称
+
+- **Microsoft Rights Management** 或 **Microsoft Rights Management 服务**
+    
+    集合名称，包含当前的本地版本 (AD RMS) 和基于云的版本 (Azure RMS)。
+
+- “**新 Microsoft RMS**”
+    
+    常用标签，有时会在基于云的版本正式发布时使用，以便在与其本地早期版本比较时强调部署的全新易用性。
+
+- **信息权限管理** - 常缩写为 IRM
+    
+    技术的 Office 实现，支持当前的本地版本 (AD RMS) 和基于云的版本 (Azure RMS)。 
+
+- **Rights Management Online** 或 **RMS Online**
+    
+    这是早期针对基于云的 AD RMS 版本的建议名称，此处介绍此名称是因为你可能会在日志文件和错误消息中看到它。
+
+请注意，可能会看到或听到将此技术引用为 **DRM**，即著名的数字版权管理的缩写。 DRM 解决方案通常可防止非法分配数字软件，这与此企业信息保护解决方案十分不同。 
+
+## <a name="does-azure-information-protection-now-replace-all-these-names"></a>“Azure 信息保护”现在是否替换所有这些名称？
+
+针对你所购买的基于云的解决方案是这样。 Azure 信息保护为组织的文档和电子邮件提供新的分类和标签功能，而这些功能又可应用权限管理保护。 
+
+但是，针对 Azure 信息保护以及使用此基于云的权限管理保护的 Office 365 服务，Azure 权限管理仍被用作保护技术。 因此，在 Azure 信息保护所使用的保护技术的情形中，“Azure 权限管理”(Azure RMS) 保留当前名称。
+
+同样，针对 Windows Server 服务器角色（提供本地权限管理保护），“Active Directory Rights Management Services”(AD RMS) 保留当前名称。 此保护技术可用于 Azure 信息保护，并且可能适合极小部分必须由本地密钥保护的文档和电子邮件。 这种情况下，AD RMS 通常被视为“自留密钥”或 HYOK 解决方案。
+
+## <a name="how-to-evaluate-or-purchase-the-latest-version"></a>如何评估或购买最新版本
 
 有关如何购买或评估 Azure 信息保护以及可用于订阅计划的不同功能的详细信息，请参阅 [Azure 信息保护](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)站点。
 
-> [!NOTE]
-> 作为企业信息保护解决方案，Microsoft 信息保护和 Microsoft Rights Management 服务不提供通常防止非法分配数字软件的数字权限管理 (DRM) 解决方案。 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

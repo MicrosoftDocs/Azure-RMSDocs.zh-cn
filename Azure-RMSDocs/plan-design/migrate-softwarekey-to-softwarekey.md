@@ -1,10 +1,10 @@
 ---
-title: "步骤 2&colon; 软件保护密钥到软件保护密钥的迁移 | Azure 信息保护"
+title: "将软件保护密钥迁移到软件保护密钥 - AIP"
 description: "此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的一部分，仅当 AD RMS 密钥是软件保护密钥，且希望使用软件保护租户密钥迁移到 Azure 信息保护时才适用。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5aac7b9fae12642c9846a70c5d271c7600af4096
-ms.openlocfilehash: 07b2a94625f006c07f72c543488f69d4cae3a9ec
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 707d31d8cd2f012a4223a3654b2c1bbcefa2d1a8
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -67,10 +68,6 @@ ms.openlocfilehash: 07b2a94625f006c07f72c543488f69d4cae3a9ec
 
 现在可以转到[步骤 3。激活 Azure 信息保护租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant)。
 
-
-
-
-
-<!--HONumber=Nov16_HO4-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

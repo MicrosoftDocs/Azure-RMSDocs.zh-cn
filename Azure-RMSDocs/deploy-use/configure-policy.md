@@ -1,10 +1,10 @@
 ---
-title: "配置策略 | Azure 信息保护"
+title: "配置 Azure 信息保护策略"
 description: "若要配置分类、标记和保护，必须配置 Azure 信息保护策略。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
-ms.openlocfilehash: 808f72be7c5b6a1f18a06ecefdfdf7fbf6febff6
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 2510c14fc10411783838516f45fdfd06fd73350d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.openlocfilehash: 808f72be7c5b6a1f18a06ecefdfdf7fbf6febff6
 
 2. 导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“更多服务”并在“筛选”框中开始键入**信息保护**。 在结果中选择“Azure 信息保护”。 
 
-    然后，将显示“Azure信息保护”边栏选项卡，它将自动打开所有用户获得的全局信息保护策略的边栏选项卡。 它包含可配置的以下元素：
+    然后，你将看到“Azure 信息保护”边栏选项卡，可在其中打开所有用户获得的“全局”策略。 还可以选择添加和编辑作用域内策略。 **全局** Azure 信息保护策略包含以下可配置的元素：
 
     - 让你和用户对文档和电子邮件进行分类的标签。
 
@@ -67,7 +68,7 @@ Azure 的信息保护附带 [默认策略](configure-policy-default.md)(#默认�
 
 - [如何更改或自定义现有标签](configure-policy-change-label.md)
 
-- [如何配置标签以应用保护](configure-policy-protection.md)
+- [如何配置标签以进行保护](configure-policy-protection.md)
 
 - [如何配置标签以应用可视标记](configure-policy-markings.md)
 
@@ -79,9 +80,5 @@ Azure 的信息保护附带 [默认策略](configure-policy-default.md)(#默认�
 
 有关如何自定义默认策略并在 Office 应用程序是查看所产生行为的示例，请尝试 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)(#azure-信息保护快速入门教程)。
 
-
-
-
-<!--HONumber=Dec16_HO1-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

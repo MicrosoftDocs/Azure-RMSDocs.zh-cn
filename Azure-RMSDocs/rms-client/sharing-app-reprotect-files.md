@@ -1,11 +1,11 @@
 ---
-title: "更改受 Rights Management 保护的文件的权限 | Azure 信息保护"
+title: "更改 RMS 保护的文件的权限 - AIP"
 description: "当文件已由 Rights Management 保护时，你可以更改其权限，方法是重新保护它，然后指定有权访问它的所有用户，以及你要给予他们哪些权限。"
 keywords: 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,9 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3290b9436f75c2d0d37c401dd2e0be11bcf2d554
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -39,7 +40,7 @@ ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
 
 如果你想要完全删除所有权限，以便不再保护文件，请参阅[《Remove protection from a file》](sharing-app-remove-protection.md)（删除文件保护）。
 
-## <a name="to-reprotect-a-file-inplace"></a>若要重新保护现有文件，请执行以下操作
+## <a name="to-re-protect-a-file-in-place"></a>若要重新保护现有文件，请执行以下操作
 
 1.  选择文件资源管理器中要保护的文件。 右键单击该文件，选择“使用 RMS 保护”，然后选择“就地保护”。 例如：
 
@@ -72,7 +73,7 @@ ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
 >     注册时，使用公司的电子邮件地址，而不是个人电子邮件地址。 如果注册的原因是要使用电子邮件发送受保护附件，请使用与用于发送电子邮件相同的电子邮件地址。
 > -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
-## <a name="to-reprotect-a-file-that-you-have-emailed"></a>重新保护已通过电子邮件发送的文件
+## <a name="to-re-protect-a-file-that-you-have-emailed"></a>重新保护已通过电子邮件发送的文件
 
 如果想要更改已通过电子邮件发送的文件的权限：
 
@@ -95,8 +96,4 @@ ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
 ## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

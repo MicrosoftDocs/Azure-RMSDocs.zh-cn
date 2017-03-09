@@ -1,10 +1,10 @@
 ---
-title: "方案 - 与另一组织中的用户共享 Office 文件 | Azure 信息保护"
+title: "AIP 方案 - 与外部用户共享 Office 文件"
 description: "此方案和支持性的用户文档使用 Azure Rights Management 保护，以便用户可以安全地通过电子邮件将 Office 文件发送给另一组织中的用户。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,14 @@ ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 24b4e542a437a824c6783b02bde5bfb848cdeb3a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: ff848fcd67c1d740e042d5bf0391c2a1cf5845e7
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="scenario-share-an-office-file-with-users-in-another-organization"></a>方案 - 与另一组织中的用户共享 Office 文件
+# <a name="scenario---share-an-office-file-with-users-in-another-organization"></a>方案 - 与另一组织中的用户共享 Office 文件
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -152,9 +153,5 @@ ms.openlocfilehash: 24b4e542a437a824c6783b02bde5bfb848cdeb3a
 
     -   电子邮件：helpdesk@vanarsdelltd.com
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
