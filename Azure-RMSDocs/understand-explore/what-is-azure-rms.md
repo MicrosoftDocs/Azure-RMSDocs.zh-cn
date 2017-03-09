@@ -1,10 +1,10 @@
 ---
-title: "Azure 权限管理是什么？ | Azure 信息保护"
+title: "Azure 权限管理是什么？ - AIP"
 description: "Azure Rights Management (Azure RMS) 是 Azure 信息保护使用的保护技术。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e731d9fe973dff7f208502b726ec154129cf7e6
-ms.openlocfilehash: f5f7be6a076c2a2eb962288712630d825edd87c3
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 95920a08ff1322033bc56d9e48b14a786134f69c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -58,8 +59,4 @@ Azure Rights Management (Azure RMS) 是 [Azure 信息保护](what-is-information
 > [!TIP]
 > 有关其他信息和帮助，请使用 [Azure 信息保护的信息和支持](../get-started/information-support.md)中的资源和链接。
 
-
-
-<!--HONumber=Oct16_HO5-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

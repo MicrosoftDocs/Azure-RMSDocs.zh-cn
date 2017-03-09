@@ -1,10 +1,10 @@
 ---
-title: "Rights Management 共享应用程序用户指南 | Azure 信息保护"
+title: "RMS 共享应用用户指南 - AIP"
 description: "适用于 Windows 的 Microsoft Rights Management (RMS) 共享应用程序可帮助你防止外人查看重要文档和图片，保护文档和图片的安全，即使你通过电子邮件发送它们或将其保存到另一台设备也是如此。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: d6c88b1b9bc53dddea000ecff65abb73d06eb7ee
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 439b97bd6a23789b6729e2dc5b62777450f4cb63
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -22,6 +23,9 @@ ms.openlocfilehash: d6c88b1b9bc53dddea000ecff65abb73d06eb7ee
 # <a name="rights-management-sharing-application-user-guide"></a>权限管理共享应用程序用户指南
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+
+> [!IMPORTANT]
+> **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2018 年 1 月 31 日将停止对此旧应用程序的支持。 
 
 适用于 Windows 的 Microsoft Rights Management (RMS) 共享应用程序可帮助你防止外人查看重要文档和图片，保护文档和图片的安全，即使你通过电子邮件发送它们或将其保存到另一台设备也是如此。 你还可以通过此应用程序，打开并使用其他人已通过使用相同的 Rights Management 保护技术保护的文件。
 
@@ -63,11 +67,7 @@ ms.openlocfilehash: d6c88b1b9bc53dddea000ecff65abb73d06eb7ee
 
 - [在对话框中指定设置](sharing-app-dialog-box.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
 
 

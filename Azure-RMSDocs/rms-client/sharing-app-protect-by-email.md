@@ -1,10 +1,10 @@
 ---
-title: "使用 Rights Management 共享应用程序，保护通过电子邮件共享的文件 | Azure 信息保护"
+title: "使用 RMS 共享应用保护的共享 - AIP"
 description: "有关如何通过电子邮件安全共享文档的说明。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
-ms.openlocfilehash: 1eed5f339ede2d96b1de7e486a04416d1a22c871
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4110050a0e45fd75633bc27dd220f71855d50672
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -91,8 +92,4 @@ ms.openlocfilehash: 1eed5f339ede2d96b1de7e486a04416d1a22c871
 ## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
-
-
-<!--HONumber=Nov16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

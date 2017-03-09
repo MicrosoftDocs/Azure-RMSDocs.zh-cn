@@ -4,7 +4,7 @@ description: "启用 RMS 的应用程序是使用 Azure 信息保护最佳实践
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 12/06/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.assetid: 4e9f72d5-9e7c-43e1-bb8a-5972dd22dcee
@@ -13,8 +13,9 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
 translationtype: Human Translation
-ms.sourcegitcommit: 2142a13d742b2dc0b59c3b996db69406cd818149
-ms.openlocfilehash: b225a923b7f067fd7dc0ca67742275e399a8aa7c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: ea2783ec76505681ab60aee9d995e347d4310cad
+ms.lasthandoff: 02/24/2017
 
 ---
 
@@ -53,8 +54,8 @@ Microsoft 不会测试或审查与满足最低标准相关的测试结果；完�
 
 |标准级别|    描述|
 |---|---|
-|最低标准|  必须先确定处理 AIP 受保护信息的应用程序满足最低标准，才能使用从 Microsoft 收到的生产证书对该应用程序进行签名。 通常情况下，合作伙伴只有在自己的内部测试已验证应用程序满足此最低标准后最终发行软件时，才会使用生产层次结构证书。 满足最低标准并不是，并且也不应被认为是 Microsoft 提供的安全保证。 Microsoft 不测试或审查与满足最低标准相关的测试结果；完全由合作伙伴确保满足最低标准。|
-|建议的标准|  建议的准则既描绘了改进应用程序安全性的途径，又指出了在实现更多安全条件的同时 AIP 可能会如何发展。 供应商可能会尝试通过构建此更高级别的安全准则来区分其应用程序。|
+|最低标准|    必须先确定处理 AIP 受保护信息的应用程序满足最低标准，才能使用从 Microsoft 收到的生产证书对该应用程序进行签名。 通常情况下，合作伙伴只有在自己的内部测试已验证应用程序满足此最低标准后最终发行软件时，才会使用生产层次结构证书。 满足最低标准并不是，并且也不应被认为是 Microsoft 提供的安全保证。 Microsoft 不测试或审查与满足最低标准相关的测试结果；完全由合作伙伴确保满足最低标准。|
+|建议的标准|    建议的准则既描绘了改进应用程序安全性的途径，又指出了在实现更多安全条件的同时 AIP 可能会如何发展。 供应商可能会尝试通过构建此更高级别的安全准则来区分其应用程序。|
 |首选标准|    这是当前定义的最高安全类别。 开发被标记为高度安全的应用程序的供应商应以此标准为目标。 遵循此标准的应用程序可能最不容易受到攻击。|
 
 
@@ -92,10 +93,6 @@ API 允许用户解密或不解密信息；该信息没有任何固有保护。 
 
 - 需要将由应用程序实现的新权限中包含的内容所抽象化的任何权限映射到新的术语。 例如，名为 MANAGER 的新权限可能将 PRINT、COPY 和 EDIT 权限包括为抽象权限。
 建议标准（暂时没有）。
-首选标准（暂时没有）。
+首选标准...（暂时没有）。
 
-
-
-<!--HONumber=Dec16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

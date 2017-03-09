@@ -1,18 +1,19 @@
 ---
-title: "如何配置自动和建议分类的条件 | Azure 信息保护"
+title: "为 Azure 信息保护标签配置条件"
 description: "在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: fd410002d2841c834f40a98c77534169ca09aa70
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -78,7 +79,7 @@ ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
 
 ## <a name="information-about-the-built-in-conditions"></a>有关内置条件的信息
 
-在预览期间，可以选择以下条件：
+你可以选择以下条件：
 
 - [SWIFT 代码](#swift-code )
 
@@ -187,11 +188,11 @@ ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
 
     - **格式化**： 
     
-        - 采用以下格式的 9 位数：ddd-dd-dddd 或 ddd dd dddd 
+        - 采用以下格式的&9; 位数：ddd-dd-dddd 或 ddd dd dddd 
         
     - **未格式化**： 
     
-        - 采用以下格式的 9 位数：ddddddddd 
+        - 采用以下格式的&9; 位数：ddddddddd 
 
 
 用于测试的示例：
@@ -221,11 +222,7 @@ ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Dec16_HO1-->
 
 

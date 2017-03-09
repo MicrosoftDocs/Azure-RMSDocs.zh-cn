@@ -1,10 +1,10 @@
 ---
-title: "如何从 Office 365 管理中心预览版激活 Azure Rights Management | Azure 信息保护"
+title: "使用 Office 365 管理中心预览版激活 Azure RMS - AIP"
 description: "有关具有 Office 365 管理中心新预览版（Office 365 管理中心预览）访问权限时的 Azure Rights Management 服务激活说明。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 986cb20b1cf4ecebb08e5f651bbc3af9e28d884b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: bef1ed0e38beadbd86868e8be3535f32b22382df
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -58,9 +59,5 @@ ms.openlocfilehash: 986cb20b1cf4ecebb08e5f651bbc3af9e28d884b
 ## <a name="next-steps"></a>后续步骤
 返回 [激活 Azure Rights Management](activate-service.md)。
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

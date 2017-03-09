@@ -5,18 +5,19 @@ keywords:
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 10/20/2016
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ff150ef29d7ad90e1c53894175a27cfe1f1a4d8e
+ms.sourcegitcommit: 8af3161946b2dfc6ea58d0565491d8e59736d565
+ms.openlocfilehash: 2f4c11f7661a814849ccea41c60edfc2ad2287e8
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -25,7 +26,13 @@ ms.openlocfilehash: ff150ef29d7ad90e1c53894175a27cfe1f1a4d8e
 
 本主题包含有关此版本和以前版本的 RMS SDK 2.1 的重要信息。
 
-## <a name="new-for-the-february-2016---sdk-documentation-update"></a>2016 年 2 月新增内容 - SDK 文档更新
+## <a name="new-for-the-february-2017---sdk-documentation-update"></a>2017 年 2 月新增内容 - SDK 文档更新
+>[!Note]  
+> 本部分中的文档更新适用于 SDK 下载版本 1.03102.0221。
+ 
+- **数据收集** - 现已推出应用程序错误和性能信息收集。 此功能通过新属性 IPC_EI_DATA_COLLECTION_ENABLED（[环境属性](https://msdn.microsoft.com/en-us/library/hh535247.aspx)之一）控制，并可以有管理地进行重写。 
+
+## <a name="february-2016---sdk-documentation-update"></a>2016 年 2 月 - SDK 文档更新
 
 >[!Note]
 > 本部分中的功能文档更新适用于 2015 年 12 月 11 日后下载的 SDK。
@@ -53,7 +60,7 @@ ms.openlocfilehash: ff150ef29d7ad90e1c53894175a27cfe1f1a4d8e
 
 ## <a name="may-2015-update"></a>2015 年 5 月更新
 
--   **服务应用和基于云的 RMS** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 需要 3 部分信息：对称密钥、**AppPrincipalId** 和 **TenantBposId**。 有关此内容的主题已更新，提供了有关处理此信息的指导。 有关此更新，请参阅修订版本的[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
+-   **服务应用和基于云的 RMS** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 需要&3; 部分信息：对称密钥、**AppPrincipalId** 和 **TenantBposId**。 有关此内容的主题已更新，提供了有关处理此信息的指导。 有关此更新，请参阅修订版本的[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
 ## <a name="april-2015-update"></a>2015 年 4 月更新
 
@@ -68,7 +75,7 @@ ms.openlocfilehash: ff150ef29d7ad90e1c53894175a27cfe1f1a4d8e
 
 ## <a name="january-2015-update"></a>2015 年 1 月更新
 
--   **受支持的保护文件 (pfile) 大小增加** - 现在支持大小超过 1 千兆字节 (1 GB) 的 pfile。 有关 pfile 的详细信息，请参阅[支持文件格式](supported-file-formats.md)。
+-   **受支持的保护文件 (pfile) 大小增加** - 现在支持大小超过&1; 千兆字节 (1 GB) 的 pfile。 有关 pfile 的详细信息，请参阅[支持文件格式](supported-file-formats.md)。
 -   **改进日志记录以提高诊断性能** - 对于应审查的消息，日志记录级别将显示 **ERROR** 或 **WARNING**。 其他所有消息（包括仍会显示的例外）将记录为 **INFO**。
 
     我们选择此方法是希望你不错过任何详细信息。 现在，只有重要的消息会显示为 WARNING 级别。
@@ -162,8 +169,3 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 如果检索不到任何名称和描述，则将返回一个错误。 特定 LCID 只能有一个名称和描述。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

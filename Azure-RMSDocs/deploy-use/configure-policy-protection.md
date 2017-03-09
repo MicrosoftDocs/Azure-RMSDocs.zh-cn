@@ -1,29 +1,30 @@
 ---
-title: "如何配置标签以应用 Rights Management 保护 | Azure 信息保护"
-description: "你可以使用权限管理服务的加密、标识和授权策略保护最敏感的文档和电子邮件，以帮助防止数据丢失。 配置标签以使用权限管理模板时，将应用此保护。"
+title: "配置 Azure 信息保护标签以进行保护"
+description: "通过配置标签来使用 Rights Management 保护，可保护最敏感的文档和电子邮件。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
-ms.openlocfilehash: 31ef3e41e84515c02ebe97f01025331578273c71
+ms.sourcegitcommit: 5bc117cbff3226a2ee0ff375f0aa02fc3232a183
+ms.openlocfilehash: ed6bd63a945b73b792bcafcdc0d07e08e83fc344
+ms.lasthandoff: 02/27/2017
 
 
 ---
 
-# <a name="how-to-configure-a-label-to-apply-rights-management-protection"></a>如何配置标签以应用权限管理保护
+# <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
 >*适用于：Azure 信息保护*
 
-你可以使用权限管理服务的加密、标识和授权策略保护最敏感的文档和电子邮件，以帮助防止数据丢失。 配置标签以使用权限管理模板时，将应用此保护。 
+你可以使用权限管理服务的加密、标识和授权策略保护最敏感的文档和电子邮件，以帮助防止数据丢失。 配置标签将 Rights Management 模板用于文档和电子邮件，或将“不要转发”选项用于 Outlook 电子邮件时，均会应用此保护。 
 
-此模板可以是激活 Azure 权限管理时自动创建的默认模板或自定义模板之一。 支持 Azure 权限管理部门模板，但仅当文档或电子邮件作者属于模板配置的作用域时应用保护。 如果用户不在作用域内，则会看到 Azure 信息保护不能应用标签的消息。
+此模板可以是激活 Azure Rights Management 时自动创建的默认模板之一，也可以是自定义模板。 支持 Azure 权限管理部门模板，但仅当文档或电子邮件作者属于模板配置的作用域时应用保护。 如果用户不在作用域内，则会看到 Azure 信息保护不能应用标签的消息。
 
 ## <a name="how-the-protection-works"></a>保护的工作原理
 
@@ -51,50 +52,56 @@ ms.openlocfilehash: 31ef3e41e84515c02ebe97f01025331578273c71
 - 对于 Exchange 内部部署，必须部署 [RMS 连接器并配置 Exchange 服务器](../deploy-use/deploy-rms-connector.md)。 
 
 
-## <a name="to-configure-a-label-to-apply-rights-management-protection"></a>配置标签以应用权限管理保护
+## <a name="to-configure-a-label-for-rights-management-protection"></a>配置权限管理保护标签的具体步骤
 
 1. 如果尚未这样做，请打开一个新的浏览器窗口并以全局管理员的身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
 
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 如果要配置的标签将应用于所有用户，请从“策略:全局”边栏选项卡选择要更改的标签。 
+2. 如果要配置的标签将应用于所有用户，请选择“**Azure 信息保护**”边栏选项卡中“**全局**”。 不过，如果要配置的标签包含在[限定范围的策略](configure-policy-scope.md)中，以便仅应用于选定用户，请改为选择限定范围的相应策略。
 
-     如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，以便仅应用于所选用户，请首先从初始的“Azure 信息保护”边栏选项卡中选择作用域内策略。
+3. 在“**策略**”边栏选项卡上，选择要配置的标签。此时，系统会打开“**标签**”边栏选项卡。 
 
-3. 在“标签”边栏选项卡的“设置 RMS 模板以保护包含此标签的文档和电子邮件”部分的“RMS 模板选择自”中，选择“Azure RMS”或“AD RMS”。
+4. 在“**标签**”边栏选项卡上，找到“为包含此标签的文档和电子邮件设置权限”并选择以下选项之一。
     
-    在大多数情况下，你将选择“Azure RMS”。 请勿选择 AD RMS（有时称为“*自留密钥*”(HYOK)），除非你已阅读并理解此配置附带的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。
+    - **未配置**：如果标签当前配置为应用保护，而你不再需要所选的标签应用保护，请选择此选项。 然后转到步骤 10。
     
-4. 如果选择了 Azure RMS：对于“选择 RMS 模板”，请单击下拉框，并选择想要用来保护带有此标记的文档和电子邮件的[模板](../deploy-use/configure-custom-templates.md)或 Rights Management 选项。
+    - **保护**：选择此选项应用保护，然后转到步骤 5。
     
-    有关选项的详细信息：
-    
-    - 是否已在打开“标签”边栏选项卡后创建了新的模板？ 关闭此边栏选项卡，并返回到步骤 2，以便从 Azure 中检索新创建的模板供你选择。
-    
-    - 如果选择**部门模板**，或者如果已配置[载入控件](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)：
-    
-        - 配置的模板作用域外的用户或从应用 Azure 权限管理保护中排除的用户仍将看到该标签，但不能应用该标签。 如果他们选择该标签，则会看到以下消息：**Azure 信息保护无法应用此标签。如果此问题仍然存在，请与管理员联系。**
+    - **删除保护**：如果已为文档或电子邮件配置保护，选择此选项可删除保护。 然后转到步骤 10。
         
-            请注意，将始终显示所有模板，即使正在配置作用域内策略。 例如，正在为市场营销组配置作用域内策略。 可选择的 Azure RMS 模板不限于作用域为“营销”组的模板，还可以选择所选用户不能使用的部门模板。 为了方便配置和尽量减少故障排除，请考虑命名部门模板以匹配作用域内策略中的标签。 
+        请注意，用户必须具有删除 Rights Management 保护的权限，才能应用具有此选项的标签。 此选项要求用户具有**导出**或**完全控制**[使用权限](../deploy-use/configure-usage-rights.md)，或者为 Rights Management 所有者（自动授予完全控制使用权限）或者为 [Azure Rights Management 的超级用户](../deploy-use/configure-super-users.md)。 默认 Azure Rights Management 模板不包括允许用户删除保护的使用权限。 
+        
+        如果用户不具有删除 Rights Management 保护的权限，并选择使用此“删除保护”选项配置的标签，他们将会看到以下消息：**Azure 信息保护无法应用此标签。如果此问题仍然存在，请与管理员联系。**
+
+5. 如果已选择“保护”，现在请选择“保护”将“保护”边栏选项卡打开：
+    
+    ![为 Azure 信息保护标签配置保护权限](../media/info-protect-protection-bar.png)
+
+6. 在“保护”边栏选项卡上，选择“Azure RMS”或“HYOK (AD RMS)”。 
+    
+    大多数情况下，你会为权限设置选择“**Azure RMS**”。 请勿选择“**HYOK (AD RMS)**”，除非你已阅读并了解此“*自留密钥*”(HYOK) 配置随附的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。 若要继续配置 HYOK (AD RMS)，请转到步骤 9。
+    
+7. 选择“**不要转发**”（如果要为电子邮件设置此 Outlook 选项的话）或“**选择模板**”。 
+    
+8. 如果为“**Azure RMS**”选择了“**选择模板**”，请单击下拉框，然后选择要用于保护包含此标签的文档和电子邮件的[模板](../deploy-use/configure-custom-templates.md)。
+    
+    如果选择**部门模板**，或者如果已配置[载入控件](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)：
+    
+    - 配置的模板作用域外的用户或从应用 Azure 权限管理保护中排除的用户仍将看到该标签，但不能应用该标签。 如果他们选择该标签，则会看到以下消息：**Azure 信息保护无法应用此标签。如果此问题仍然存在，请与管理员联系。**
+    
+        请注意，将始终显示所有模板，即使正在配置作用域内策略。 例如，正在为市场营销组配置作用域内策略。 可选择的 Azure RMS 模板不限于作用域为“营销”组的模板，还可以选择所选用户不能使用的部门模板。 为了方便配置和尽量减少故障排除，请考虑命名部门模板以匹配作用域内策略中的标签。 
             
-    - 如果选择“移除保护”:
-        
-        - 用户必须具有删除 Rights Management 保护的权限，以应用具有此选项的标签。 此选项要求它们具有**导出**（针对 Office 文档）或**完全控制**[使用权限](../deploy-use/configure-usage-rights.md)，或者为 Rights Management 所有者（自动授予完全控制使用权限）或者为 [Azure Rights Management 的超级用户](../deploy-use/configure-super-users.md)。 默认 Rights Management 模板不包括允许用户删除保护的使用权限。 
+9. 如果为“**HYOK (AD RMS)**”选择了“**选择模板**”，请提供 AD RMS 群集的模板 GUID 和授权 URL。 [详细信息](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
-            如果用户不具有删除 Rights Management 保护的权限，并选择此具有“移除保护”选项的标记，他们将会看到以下消息：**Azure 信息保护无法应用此标记。如果此问题仍然存在，请与管理员联系。**
+10. 单击“确定”关闭“保护”边栏选项卡，然后“标签”边栏选项卡上的“保护”选项中会显示你选择的“不要转发”或模板。
 
-5. 如果选择了 AD RMS：请提供 AD RMS 群集的模板 GUID 和授权 URL。 [详细信息](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
+10. 在“**标签**”边栏选项卡上，单击“**保存**”。
 
-6. 单击“保存” 。
-
-7. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
+11. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 
 ## <a name="next-steps"></a>后续步骤
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
-
-
-<!--HONumber=Dec16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

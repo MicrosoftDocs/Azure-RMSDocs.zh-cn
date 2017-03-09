@@ -1,10 +1,10 @@
 ---
-title: "Azure 信息保护部署路线图 | Azure 信息保护"
+title: "Azure 信息保护部署路线图"
 description: "使用这些步骤，为组织准备、实施和管理 Azure 信息保护。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ced42d0856b992d3539575d64f5a49706f1768b3
-ms.openlocfilehash: b4b701d6a88bea91e2adbe7e002f01929d388e91
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4128188d0fba56a5b61fe16a6f0128ec2dc24c4a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -59,7 +60,7 @@ ms.openlocfilehash: b4b701d6a88bea91e2adbe7e002f01929d388e91
 
 重新配置默认的 Azure 信息保护标签以按需更改，使其支持分类决策。 为用户手动标识配置策略，编写解释应用哪个标签、在何时应用标签的用户指南。 有关如何配置 Azure 信息保护策略的详细信息，请参阅 [配置 Azure 信息保护策略](../deploy-use/configure-policy.md)。
 
-然后为用户部署 Azure 信息保护客户端，通过向用户提供何时选择标签的培训和说明，支持客户端的运行。 有关安装客户端的详细信息，请参阅[安装 Azure 信息保护客户端](../rms-client/info-protect-client.md)。
+然后为用户部署 Azure 信息保护客户端，通过向用户提供何时选择标签的培训和说明，支持客户端的运行。 有关安装和支持客户端的详细信息，请参阅 [Azure 信息保护客户端管理员指南](../rms-client/client-admin-guide.md)。
 
 一段时间后，当用户熟悉如何对文档和电子邮件添加标签时再引入更高级的配置。 这些配置可能包括下列各项：
 
@@ -97,32 +98,34 @@ ms.openlocfilehash: b4b701d6a88bea91e2adbe7e002f01929d388e91
 
 1. 更新 Azure 信息保护策略以应用数据保护
     
-    修改 Azure 信息保护策略，使一个或多个标签应用 Rights Management 保护。 有关详细信息，请参阅 [如何配置标签以应用权限管理保护](../deploy-use/configure-policy-protection.md)(#如何配置标签以应用权限管理保护)。
+    修改 Azure 信息保护策略，使一个或多个标签应用 Rights Management 保护。 有关详细信息，请参阅[如何配置标签以进行 Rights Management 保护](../deploy-use/configure-policy-protection.md)。
     
     请注意，即使没有为信息权限管理 (IRM) 配置 Exchange，用户也可以在应用 Rights Management 保护的 Outlook 中应用标签。 但是，在为 IRM 配置 Exchange 之前，组织将无法获得将 Exchange 与 Azure Rights Management 保护配合使用的完整功能。 此附加配置包含在适用于 Exchange Online 的步骤 3 以及适用于 Exchange 内部部署的步骤 6 中。 
 
-2. 部署 Rights Management 共享应用程序
-    
-    为用户安装 Rights Management 共享应用程序，以便用户可以安全地通过电子邮件共享文档、就地保护文件和跟踪其保护的共享文档。 提供此应用程序的用户培训。 有关详细信息，请参阅 [适用于 Windows 的 Rights Management 共享应用程序](../rms-client/sharing-app-windows.md)。
-
-3. 为 IRM 配置 Office 应用程序和服务
+2. 为 IRM 配置 Office 应用程序和服务
     
     在 SharePoint Online 或 Exchange Online 中为信息权限管理 (IRM) 功能配置 Office 应用程序和服务。 有关详细信息，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)。
 
-4. 为数据恢复配置超级用户功能
+3. 为数据恢复配置超级用户功能
     
     如果现有 IT 服务（例如数据泄漏防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure Rights Management 保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)。
 
-5. 批量保护文件 
+4. 批量分类和保护文件 - 按需而定
     
-    为了能够批量保护或批量取消保护所有文件类型，请安装 RMS 保护工具，该工具使用 RMS Protection PowerShell 模块。 有关详细信息，请参阅 [RMS 保护 Cmdlet](https://msdn.microsoft.com/library/mt433195.aspx)。
+    PowerShell cmdlet 允许你对文件提供分类和保护以及删除分类和保护，随 Azure 信息保护客户端一起自动安装。 有关详细信息，请参阅管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](..\rms-client\client-admin-guide-powershell.md)。
 
 6. 部署适用于本地服务器的连接器
     
     如果你拥有想要与 Azure Rights Management 服务共同使用的本地服务，请安装和配置 Rights Management 连接器。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。
 
 ### <a name="step-4-use-and-monitor-your-data-protection-solutions"></a>步骤 4：使用和监视数据保护解决方案
-现在，你可以保护数据，并记录公司如何使用 Rights Management。 有关支持此部署阶段的其他信息，请参阅[通过使用 Azure 权限管理服务帮助用户保护文件](../deploy-use/help-users.md)和[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
+现在，你可以保护数据，并记录公司如何使用已配置的标签和 Rights Management 数据保护。 有关支持此部署阶段的其他信息，请参阅以下内容：
+
+- [使用 Azure Rights Management 服务帮助用户保护文件](../deploy-use/help-users.md)
+
+-  [记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)
+
+- [客户端文件和使用情况日志记录](../rms-client/client-admin-guide-files-and-logging.md)
 
 如果你对在基于 Windows 的文件服务器上使用文件分类基础结构自动保护文件感兴趣，请参阅[使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护](../rms-client/configure-fci.md)。
 
@@ -157,11 +160,11 @@ ms.openlocfilehash: b4b701d6a88bea91e2adbe7e002f01929d388e91
 
 -   使用日志记录，以便你能够监控你组织使用权限管理的情况。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
 
-### <a name="step-3-configure-your-applications-and-services-for-rights-management"></a>步骤 3：配置要运行 Rights Management 的应用程序和服务
+### <a name="step-3-install-the-client-and-configure-applications-and-services-for-rights-management"></a>步骤 3：安装客户端和配置要运行 Rights Management 的应用程序和服务
 
-1. 部署 Rights Management 共享应用程序
+1. 部署 Azure 信息保护客户端
     
-    为用户安装 Rights Management 共享应用程序，以便用户可以安全地通过电子邮件共享文档、保护文件，跟踪保护的共享文档。 提供此应用程序的用户培训。 有关详细信息，请参阅 [适用于 Windows 的 Rights Management 共享应用程序](../rms-client/sharing-app-windows.md)。
+    为用户安装 Azure 信息保护，以支持 Office 2010、保护除 Office 文档和电子邮件以外的文件，并跟踪受保护文档。 提供此客户端的用户培训。 有关详细信息，请参阅[适用于 Windows 的 Azure 信息保护客户端](../rms-client/aip-client.md)。
 
 2. 为 IRM 配置 Office 应用程序和服务
     
@@ -171,9 +174,9 @@ ms.openlocfilehash: b4b701d6a88bea91e2adbe7e002f01929d388e91
     
     如果现有 IT 服务（例如数据泄漏防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure Rights Management 保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)。
 
-4. 批量保护文件 
+4. 批量保护文件 - 按需而定 
     
-    为了能够批量保护或批量取消保护所有文件类型，请安装 RMS 保护工具，该工具使用 RMS Protection PowerShell 模块。 有关详细信息，请参阅 [RMS 保护 Cmdlet](https://msdn.microsoft.com/library/mt433195.aspx)。
+    PowerShell cmdlet 允许你批量保护或批量取消保护多个文件类型，随 Azure 信息保护客户端一起自动安装。 有关详细信息，请参阅管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](..\rms-client\client-admin-guide-powershell.md)。
 
 5. 部署适用于本地服务器的连接器
     
@@ -188,12 +191,5 @@ ms.openlocfilehash: b4b701d6a88bea91e2adbe7e002f01929d388e91
 ### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>步骤 5：根据需要管理租户帐户的 Rights Management 服务
 开始使用 Azure Rights Management 服务时，可能发现 Windows PowerShell 对帮助编写脚本或自动执行管理更改很有用。 有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](../deploy-use/administer-powershell.md)。
 
-## <a name="comments"></a>注释
-
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

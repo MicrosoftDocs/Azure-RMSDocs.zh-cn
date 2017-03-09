@@ -1,10 +1,10 @@
 ---
-title: "方案 - 高级管理人员安全地交换特权信息 | Azure 信息保护"
+title: "AIP 方案 - 高级管理人员交换特权信息"
 description: "此方案和支持性的用户文档使用 Azure Rights Management 保护，以便高级管理人员可以安全地通过电子邮件彼此交换电子邮件和附件，而策略会自动将访问权限限制为高级管理人员而无需他们采取任何特殊操作。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,14 @@ ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: c8c460549df34a746b21f57aa890a52571bf2061
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 1407a7bee800fec0ba8498d0439586378003ed54
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="scenario-executives-securely-exchange-privileged-information"></a>方案 - 高级管理人员安全地交换特权信息
+# <a name="scenario---executives-securely-exchange-privileged-information"></a>方案 - 高级管理人员安全地交换特权信息
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -124,15 +125,11 @@ ms.openlocfilehash: c8c460549df34a746b21f57aa890a52571bf2061
 
 请注意，如果希望其他不是 VanArsdel 高级管理人员的人能够阅读和编辑电子邮件中所发送的信息，必须单独向这些人发送电子邮件。 或者，在电子邮件信息主题中的任何地方键入字母 **DNP**（“不保护”的缩写）以替代自动保护。
 
-将公司机密信息发送给其他 VanArsdel 高级管理人员时，请记得发送到其工作电子邮件地址（名称@vanarsdelltd.com)），而不要发送到私人电子邮件地址。
+将公司机密信息发送给其他 VanArsdel 高级管理人员时，请记得发送到其工作电子邮件地址 (*name*@vanarsdelltd.com)，而不要发送到私人电子邮件地址。
 
 **需要帮助吗？**
 
 -   与技术支持联系：helpdesk@vanarsdelltd.com
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

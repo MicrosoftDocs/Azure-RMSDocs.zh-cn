@@ -1,10 +1,10 @@
 ---
-title: "RMS 连接器的注册表设置 | Azure 信息保护"
+title: "Rights Management 连接器的注册表设置 - AIP"
 description: "有关使用 RMS 连接器在服务器上进行注册表设置的信息。 配置这些设置的推荐方法是使用适用于 Microsoft RMS 连接器的服务器配置工具。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: a0132404bb9ccb202c552aaca680659947d9c888
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: b894be1ef3d41a9faf6c3fd3b3fd8c5b94a62517
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -216,7 +217,4 @@ ms.openlocfilehash: a0132404bb9ccb202c552aaca680659947d9c888
 
 返回到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

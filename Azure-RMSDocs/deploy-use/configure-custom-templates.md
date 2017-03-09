@@ -1,10 +1,10 @@
 ---
-title: "为 Azure Rights Management 服务配置自定义模板 | Azure 信息保护"
+title: "为 Azure RMS 配置自定义模板 - AIP"
 description: "面向管理员提供的有关配置和管理使用权限模板的信息和说明。 模板可使用户和其他管理员轻松地将策略应用于限制授权用户访问的敏感文件。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: ea64bd17994a9ce38ed0d758ec63156a7f64c732
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 0818f8e65f2065e70ef66732819d21aa85c912fa
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -37,7 +38,7 @@ ms.openlocfilehash: ea64bd17994a9ce38ed0d758ec63156a7f64c732
 
     -   特定权限：查看内容、保存文件、编辑内容、查看分配的权限、允许宏、转发、答复、全部答复
 
-此外，[RMS 共享应用程序](../rms-client/sharing-app-windows.md)让用户能够定义他们自己的一组权限。 对于 Outlook 客户端和 Outlook Web Access，用户可选择[“不得转发”选项](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)。
+此外，[Azure 信息保护客户端](../rms-client/aip-client.md)允许用户定义自己的一组权限。 对于 Outlook 客户端和 Outlook Web Access，用户可选择[“不得转发”选项](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)。
 
 对于很多组织，默认模板可能足以满足他们的需求。 但如果你希望创建自己的自定义权限策略模板，也可以这样做。 创建自定义模板有以下原因：
 
@@ -63,10 +64,6 @@ ms.openlocfilehash: ea64bd17994a9ce38ed0d758ec63156a7f64c732
 
 -   [使用 PowerShell 管理模板](configure-templates-with-powershell.md)
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

@@ -1,10 +1,10 @@
 ---
-title: "自定义模板的 PowerShell 参考 | Azure 信息保护"
+title: "适用于 Azure RMS 自定义模板的 PowerShell - AIP"
 description: "在 Azure 经典门户中创建和管理权限管理模板所执行的一切操作均可使用 PowerShell 从命令行执行。 此外，你还能够导出和导入模板，因此能够在租户之间复制模板，或者在模板中执行对复杂属性（例如多语言名称和描述）的批量编辑。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: aad5bc49b15b32c74352d5c9d6d48cd4f1f3cf9c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: fac6f2180c8b108ea237cb36d29058b4907db18a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -59,7 +60,4 @@ ms.openlocfilehash: aad5bc49b15b32c74352d5c9d6d48cd4f1f3cf9c
 ## <a name="see-also"></a>另请参阅
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -1,10 +1,10 @@
 ---
-title: "使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护 | Azure 信息保护"
+title: "使用 Windows Server FCI 的 Azure RMS 保护 - AIP"
 description: "有关将 Rights Management (RMS) 客户端与 RMS 保护工具配合使用，以配置文件服务器资源管理器和文件分类基础结构 (FCI) 的说明。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 88b6c5fffb1be59563c2b93c8db244edc3201f3c
-ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 58a0f117100ff5d19dfd6fee2ac4dd61c6bea36b
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -23,14 +24,14 @@ ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
 
 >*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
 
-使用本文获取相关说明和脚本，以将 Rights Management (RMS) 客户端与 RMS 保护工具配合使用，以配置文件服务器资源管理器和文件分类基础结构 (FCI)。
+通过本文获取相关说明和脚本以使用 Azure 信息保护客户端和 PowerShell 配置文件服务器资源管理器和文件分类基础结构 (FCI)。
 
-此解决方案允许你自动保护运行 Windows Server 的文件服务器上的文件夹中的所有文件或自动保护符合特定条件的文件。 例如，已分类为包含机密或敏感信息的文件。 此解决方案使用 Azure 信息保护中的 Azure Rights Management 服务来保护文件，因此必须将此技术部署在你的组织中。
+此解决方案允许你自动保护运行 Windows Server 的文件服务器上的文件夹中的所有文件或自动保护符合特定条件的文件。 例如，已分类为包含机密或敏感信息的文件。 此解决方案直接连接 Azure 信息保护中的 Azure 权限管理服务来保护文件，因此必须为你的组织部署此服务。
 
 > [!NOTE]
 > 尽管 Azure 信息保护包括支持文件分类基础结构的[连接器](../deploy-use/deploy-rms-connector.md)，但该解决方案仅支持本机保护（例如，Office 文件）。
 > 
-> 若要支持使用文件分类基础结构的所有文件类型，必须使用 Windows PowerShell **RMS 保护** 模块，如本文中所述。 RMS 保护 cmdlet（如 RMS 共享应用程序）支持一般性保护和本机保护，这意味着可以保护所有文件。 有关这些不同保护级别的详细信息，请参阅 [Rights Management 共享应用程序管理员指南 ](sharing-app-admin-guide.md) 中的 [保护级别 – 本机和常规 ](sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic) 部分。
+> 若要支持使用 Windows Server 文件分类基础结构的多个文件类型，必须使用 PowerShell **AzureInformationProtection** 模块，如本文中所述。 Azure 信息保护 cmdlet（如 Azure 信息保护客户端）支持常规保护和本机保护，这意味着可以保护 Office 文档以外的文件类型。 有关详细信息，请参阅 Azure 信息保护客户端管理员指南中的 [Azure 信息保护客户端支持的文件类型](client-admin-guide-file-types.md)。
 
 接下来的说明适用于 Windows Server 2012 R2 或 Windows Server 2012。 如果你运行其他受支持的 Windows 版本，则可能需要调整某些步骤，以适应你的操作系统版本与本文所述的操作系统版本之间的差异。
 
@@ -43,28 +44,20 @@ ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
 
     -   已标识包含要使用 Rights Management 保护的文件的本地文件夹。 例如，C:\FileShare。
 
-    -   你已安装 RMS 保护工具，包括该工具的必备组件（如 RMS 客户端）和 Azure RMS 的必备组件（如服务主体帐户）。 有关详细信息，请参阅 [RMS 保护 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
+    -   你已安装 AzureInformationProtection 模块并已配置 Azure 权限管理的先决条件。 有关详细信息，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](client-admin-guide-powershell.md)。 具体而言，你使用以下值通过服务主体连接到 Azure 权限管理服务：**BposTenantId**、**AppPrincipalId** 和 **Symmetric key**。
 
-    -   如果要更改特定文件扩展名的 RMS 保护的默认级别（本机或常规），需已编辑注册表，如[文件 API 配置](../develop/file-api-configuration.md)页中所述。
+    -   如果要更改特定文件扩展名保护（本机或常规）的默认级别，需已编辑注册表，如管理员指南中的[更改文件的默认保护级别](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)部分所述。
 
     -   已使用配置的计算机设置（如果代理服务器需要）建立 Internet 连接。 例如： `netsh winhttp import proxy source=ie`
 
--   已为你的 Azure 信息保护部署配置附加先决条件，如 [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx) 中所述。 具体而言，你使用以下值通过服务主体连接到 Azure Rights Management 服务：
-
-    -   BposTenantId
-
-    -   AppPrincipalId
-
-    -   对称密钥
-
 -   你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 服务保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此帐户配置的详细信息，请参阅[准备 Azure Rights Management 服务](../plan-design/prepare.md)。
 
--   已确定要使用的 Rights Management 模板，该模板将保护文件。 请确保你通过使用 [Get-RMSTemplate](https://msdn.microsoft.com/library/azure/mt433197.aspx) cmdlet 知道此模板的 ID。
+-   已确定要使用的 Rights Management 模板，该模板将保护文件。 请确保你通过使用 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) cmdlet 知道此模板的 ID。
 
-## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rms-protection"></a>为 Azure RMS 保护配置文件服务器资源管理器 FCI 的说明
-按照这些说明通过使用 Windows PowerShell 脚本作为自定义任务自动保护一个文件夹中的所有文件。 按此顺序执行这些过程：
+## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>为 Azure 权限管理保护配置文件服务器资源管理器 FCI 的说明
+按照这些说明通过使用 PowerShell 脚本作为自定义任务自动保护一个文件夹中的所有文件。 按此顺序执行这些过程：
 
-1.  保存 Windows PowerShell 脚本
+1.  保存 PowerShell 脚本
 
 2.  为 Rights Management (RMS) 创建分类属性
 
@@ -84,7 +77,7 @@ ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
 
 2.  查看脚本，然后进行以下更改：
 
-    -   搜索以下字符串并将其替换为自己的 AppPrincipalId，将在 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet 中使用此 AppPrincipalId 连接到 Azure 权限管理服务：
+    -   搜索以下字符串并将其替换为自己的 AppPrincipalId，将在 [Set-RMSServerAuthentication](/powershell/azureinformationprotection/vlatest/set-rmsserverauthentication) cmdlet 中使用此 AppPrincipalId 连接到 Azure 权限管理服务：
 
         ```
         <enter your AppPrincipalId here>
@@ -95,7 +88,7 @@ ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
 
         `[Parameter(Mandatory = $false)]             [string]$AppPrincipalId = "b5e3f76a-b5c2-4c96-a594-a0807f65bba4",`
 
-    -   搜索以下字符串并将其替换为你自己的对称密钥，你将在 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet 中使用此对称密钥连接到 Azure Rights Management 服务：
+    -   搜索以下字符串并将其替换为你自己的对称密钥，你将在 [Set-RMSServerAuthentication](/powershell/azureinformationprotection/vlatest/set-rmsserverauthentication) cmdlet 中使用此对称密钥连接到 Azure Rights Management 服务：
 
         ```
         <enter your key here>
@@ -106,7 +99,7 @@ ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
 
         `[string]$SymmetricKey = "zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA="`
 
-    -   搜索以下字符串并将其替换为你自己的 BposTenantId（租户 ID），你将在 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet 中使用此对称密钥连接到 Azure Rights Management 服务：
+    -   搜索以下字符串并将其替换为你自己的 BposTenantId（租户 ID），你将在 [Set-RMSServerAuthentication](/powershell/azureinformationprotection/vlatest/set-rmsserverauthentication) cmdlet 中使用此对称密钥连接到 Azure Rights Management 服务：
 
         ```
         <enter your BposTenantId here>
@@ -116,12 +109,6 @@ ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
         `[Parameter(Mandatory = $false)]`
 
         `[string]$BposTenantId = "23976bc6-dcd4-4173-9d96-dad1f48efd42",`
-
-    -   如果你的服务器运行 Windows Server 2012，则可能需要在脚本的开头手动加载 RMSProtection 模块。 添加以下命令或等效命令（如果“Program Files”文件夹位于 C: 驱动器以外的驱动器上）：
-
-        ```
-        Import-Module "C:\Program Files\WindowsPowerShell\Modules\RMSProtection\RMSProtection.dll"
-        ```
 
 3.  为脚本签名。 如果未为脚本签名（更安全），则必须在运行该脚本的服务器上配置 Windows PowerShell。 例如，使用“以管理员身份运行”选项运行 Windows PowerShell 会话，然后键入：“Set-ExecutionPolicy RemoteSigned”。 但是，当未签名的脚本被存储在此服务器上时，此配置将允许所有未签名的脚本运行（不太安全）。
 
@@ -181,7 +168,7 @@ ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
 
     -   配置所有要运行的分类规则的日程安排，其中包括要使用 RMS 属性为文件分类的新规则。
 
-    -   **允许对新文件进行连续分类**：选中此复选框以便将为新文件分类。
+    -   **允许对新文件进行连续分类**：选中此复选框以便将新文件进行分类。
 
     -   可选：进行任何其他所需的更改，例如，为报告和通知配置选项。
 
@@ -278,8 +265,8 @@ ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
     > 
     > -   如果你在报告中看到 **0** （而不是你的文件夹中的文件数），则这指示脚本未运行。 首先，通过在 Windows PowerShell ISE 中加载脚本以验证脚本内容来检查脚本本身，然后尝试运行它以查看是否显示任何错误。 如果未指定任何参数，该脚本将尝试连接到 Azure RMS 并向其进行身份验证。
     > 
-    >     -   如果该脚本报告无法连接到 Azure RMS，请检查它为服务主体帐户显示的值，该帐户在脚本中指定。  有关如何创建此服务主体帐户的详细信息，请参阅 [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)中的第二个先决条件
-    >     -   如果该脚本报告可连接到 Azure RMS，接下来通过直接运行服务器上 Windows PowerShell 的 [Get-RMSTemplate](https://msdn.microsoft.com/library/mt433197.aspx) 检查是否可找到指定的模板。 你应该会看到你所指定的模板返回到结果中。
+    >     -   如果该脚本报告无法连接到 Azure RMS，请检查它为服务主体帐户显示的值，该帐户在脚本中指定。 有关如何创建此服务主体帐户的详细信息，请参阅 Azure 信息保护客户端管理员指南中的[先决条件 3：在不交互的情况下保护或取消保护文件](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction)。
+    >     -   如果该脚本报告可连接到 Azure RMS，接下来通过直接运行服务器上 Windows PowerShell 的 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) 检查是否可找到指定的模板。 你应该会看到你所指定的模板返回到结果中。
     > -   如果该脚本单独在 Windows PowerShell ISE 中运行时未出现错误，请尝试从 PowerShell 会话中按以下方式运行它：指定要保护的文件名，并且不带 -OwnerEmail 参数：
     > 
     >     ```
@@ -288,7 +275,7 @@ ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
     >     -   如果该脚本在此 Windows PowerShell 会话中成功运行，请在文件管理任务操作中检查 **Executive** 和 **Argument** 的条目。  如果已指定 **-OwnerEmail [Source File Owner Email]**，请尝试删除此参数。
     > 
     >         如果文件管理任务在没有 **-OwnerEmail [Source File Owner Email]** 的情况下成功运行，请检查未受保护的文件是否有域用户（而不是 **SYSTEM**）列出为文件所有者。  为此，请使用文件的属性的“安全”选项卡，然后单击“高级”。 **所有者** 值将紧接着显示在文件**名称**之后。 另外，请验证文件服务器是否位于同一域或受信任的域中，以便从 Active Directory 域服务中查找该用户的电子邮件地址。
-    > -   如果你在报告中看到正确的文件数，但文件未受保护，请尝试使用 [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx) cmdlet 手动保护文件以查看是否显示任何错误。
+    > -   如果你在报告中看到正确的文件数，但文件未受保护，请尝试使用 [Protect-RMSFile](/powershell/azureinformationprotection/vlatest/protect-rmsfile) cmdlet 手动保护文件以查看是否显示任何错误。
 
 在确认这些任务成功运行之后，可以关闭文件资源管理器。 新文件将自动受到保护，并且当计划运行时，所有文件将重新受到保护。 重新保护文件可确保对模板的任何更改都应用于文件。
 
@@ -300,9 +287,5 @@ ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
 
 现在你需要做的只是创建新的文件管理任务（该任务使用同一脚本但可能使用不同模板），并为刚配置的分类属性配置条件。 例如，选择将“运算符”值设为“等于”且“值”为“高”的“个人身份信息”属性，而不是我们前面配置的条件（**RMS** 属性，**等于**，**是**）。
 
-
-
-
-<!--HONumber=Nov16_HO1-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

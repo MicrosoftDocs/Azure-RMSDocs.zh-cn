@@ -1,10 +1,10 @@
 ---
-title: "Rights Management 共享应用程序的对话框选项 | Azure 信息保护"
+title: "RMS 共享应用的对话框选项 - AIP"
 description: "此信息可帮助你指定 RMS 共享应用程序“添加保护”对话框或“共享保护”对话框中的选项。 当你保护要共享的文件或就地保护文件以及选择自定义权限时，将看到此对话框。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
-ms.openlocfilehash: 97766046526db5148f03873343a2fb3840392c6a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 190d8ac29bec0fc3825eb9fe099e06bd16e2112f
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -38,7 +39,7 @@ ms.openlocfilehash: 97766046526db5148f03873343a2fb3840392c6a
 
 |选项|描述|
 |----------|---------------|
-|**用户**|如果你还没有从 Outlook 指定电子邮件地址，请键入你希望能够打开文件的用户的电子邮件地址。<br /><br />请注意，RMS 共享应用并不支持所有电子邮件地址。<br /><br />如果你的组织使用本地版本的 Rights Management (AD RMS)，你可以指定的电子邮件地址仅限于组织中的用户。 如果应用此操作，并且你尝试指定外部电子邮件地址，将看到一则消息，说明你公司的配置仅允许在公司内共享受保护内容。 <br /><br /> 如果你的组织使用 Azure RMS，那么你指定的电子邮件地址可以是组织中用户的电子邮件地址，也可以是其他组织中用户的电子邮件地址。<br /><br />例如：**janetm@contoso.com; p.dover@fabrikam.com**<br /><br />RMS 共享应用当前不支持个人电子邮件地址。|
+|**用户**|如果你还没有从 Outlook 指定电子邮件地址，请键入你希望能够打开文件的用户的电子邮件地址。<br /><br />请注意，RMS 共享应用并不支持所有电子邮件地址。<br /><br />如果你的组织使用本地版本的 Rights Management (AD RMS)，你可以指定的电子邮件地址仅限于组织中的用户。 如果应用此操作，并且你尝试指定外部电子邮件地址，将看到一则消息，说明你公司的配置仅允许在公司内共享受保护内容。 <br /><br /> 如果你的组织使用 Azure RMS，那么你指定的电子邮件地址可以是组织中用户的电子邮件地址，也可以是其他组织中用户的电子邮件地址。<br /><br />例如：**janetm@contoso.com；p.dover@fabrikam.com**<br /><br />RMS 共享应用当前不支持个人电子邮件地址。|
 |**一般性保护**|如果选择此选项，则意味着无法本机保护所选文件。 有关详细信息，请参阅： 本页中的[通用保护和内置（本机）保护的区别是什么？](#whats-the-difference-between-generic-protection-and-built-in-native-protection)。|
 |**查看器 – 仅查看**<br /><br />**审阅者 – 查看和编辑**<br /><br />**合著者 – 查看、编辑、复制和打印**<br /><br />**共同所有者 – 所有权限**<br /><br />注意：所有这些选项的名称前都有圆形图标，表示地球仪。 使用此图标的原因是，通常情况下，你在向其他组织的用户发送附件时会选择这些选项之一。|如果你想要定义受保护文档的权限，请选择这些选项之一。 单击每个选项以查看说明。<br /><br />选择这些选项之一时，只有你在“用户”  中指定的用户具有打开和使用文档的指定权限。 例如，将无法打开转发给其他人的文档。|
 |你的管理员配置的策略模板。<br /><br />例如，如果公司名称为“Contoso, Ltd”：**“Contoso, Ltd - 机密，仅供查阅”**<br /><br />注意：所有这些选项的名称前都有方形图标，表示办公楼。 使用此图标的原因是，通常情况下，你在向本组织的用户发送附件时会选择这些选项之一。|当与同事共享文档时，你将看到管理员配置的可用策略模板。 如果文档不应该共享到组织外部，请选择这些选项之一。<br /><br />选择这些选项之一时，你的管理员将定义文档权限和可以打开文档的用户。|
@@ -76,9 +77,5 @@ ms.openlocfilehash: 97766046526db5148f03873343a2fb3840392c6a
 ## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
-
-
-
-<!--HONumber=Nov16_HO1-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

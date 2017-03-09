@@ -10,9 +10,9 @@
 ### [控制为个人 RMS 创建的帐户](rms-for-individuals-take-control.md)
 ### [查看你的用户是否注册了个人 RMS](rms-for-individuals-identify-sign-up.md)
 ## [应用程序如何支持 Azure Rights Management 服务](applications-support.md)
-### [适用于 Windows 和移动平台的 RMS 共享应用程序](sharing-app-support.md)
 ### [Office 应用程序和服务](office-apps-services-support.md)
 ### [运行 Windows Server 和使用文件分类基础结构的文件服务器](file-server-support.md)
+### [适用于 Windows 和移动平台的 RMS 共享应用程序](sharing-app-support.md)
 ### [支持 RMS API 的其他应用程序](api-support.md)
 ## [比较 Azure 信息保护与 AD RMS](compare-on-premise.md)
 ## [合规性和支持信息](compliance.md)
@@ -21,8 +21,3 @@
 # [部署和使用该服务](/information-protection/deploy-use/activate-service)
 # [部署和使用该客户端](/information-protection/rms-client/use-client)
 # [开发和自定义应用](/information-protection/develop/developers-guide)
-
-
-<!--HONumber=Jan17_HO2-->
-
-

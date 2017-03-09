@@ -1,10 +1,10 @@
 ---
-title: "从 AD RMS 迁移到 Azure 信息保护 - 阶段 1 | Azure 信息保护"
+title: "迁移 AD RMS-Azure 信息保护 - 第 1 阶段"
 description: "从 AD RMS 迁移到 Azure 信息保护的阶段 1 涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 1 至 4。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 750919e3d8be88a1a1028d83c89ece55ea4e8690
-ms.openlocfilehash: 65ab175da5c5ab74090bf6bdb88af766dc55e334
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d38d7f89ba780b519ebe4a182161deb5bc9331b5
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -165,7 +166,7 @@ ms.openlocfilehash: 65ab175da5c5ab74090bf6bdb88af766dc55e334
 
 ## <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>AD RMS 中的模板使用 **ANYONE** 组时需执行的过程
 
-如果 AD RMS 中的模板使用 **ANYONE** 组，则当你将这些模板导入 Azure 信息保护时，系统会自动删除该组；必须将相应的组或用户以及相同的权限手动添加到已导入的模板中。 Azure 信息保护的相等组名为 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**。 例如，如果公司为 Contoso，则该组可能会如下所示：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。
+如果 AD RMS 中的模板使用 **ANYONE** 组，则当你将这些模板导入 Azure 信息保护时，系统会自动删除该组；必须将相应的组或用户以及相同的权限手动添加到已导入的模板中。 Azure 信息保护的等效组名为 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**。 例如，如果公司为 Contoso，则该组可能会如下所示：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。
 
 如果不确定 AD RMS 模板是否包括 ANYONE 组，可使用以下 Windows PowerShell 示例脚本来标识这些模板。 有关将 Windows PowerShell 用于 AD RMS 的详细信息，请参阅[使用 Windows PowerShell 管理 AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)。
 
@@ -222,9 +223,5 @@ Remove-PSDrive MyRmsAdmin -force
 ## <a name="next-steps"></a>后续步骤
 转到[阶段 2 - 客户端配置](migrate-from-ad-rms-phase2.md)。
 
-
-
-
-<!--HONumber=Nov16_HO4-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

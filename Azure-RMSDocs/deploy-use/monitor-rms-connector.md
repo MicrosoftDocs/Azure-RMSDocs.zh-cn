@@ -1,10 +1,10 @@
 ---
-title: "监视 Azure Rights Management 连接器 | Azure 信息保护"
+title: "监视 Rights Management 连接器 - AIP"
 description: "帮助监视连接器和组织使用 Azure 信息保护中 Azure Rights Management 服务的信息。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e5939bb469af198a74d81724c5417eb63db7732b
-ms.openlocfilehash: bf73a79218fa8dba2b90115d0c1573a29f791023
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3d9f2e20abe0a4abce3220d53d6373d9c2baf8ee
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -84,7 +85,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 **已更新授权帐户列表。**
 
-当 RMS 连接器下载了有权使用 RMS 连接器的帐户的最新列表（现有帐户及任何更改）时，将记录此事件。 如果 RMS 连接器可以与 Azure Rights Management 服务通信，则此列表每 15 分钟下载一次。
+当 RMS 连接器下载了有权使用 RMS 连接器的帐户的最新列表（现有帐户及任何更改）时，将记录此事件。 如果 RMS 连接器可以与 Azure Rights Management 服务通信，则此列表每&15; 分钟下载一次。
 
 ----
 
@@ -192,9 +193,5 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 5.  当你捕获了所需的跟踪时，还原步骤 3 的行，并再次停止和启动 IIS。
 
-
-
-
-<!--HONumber=Nov16_HO5-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

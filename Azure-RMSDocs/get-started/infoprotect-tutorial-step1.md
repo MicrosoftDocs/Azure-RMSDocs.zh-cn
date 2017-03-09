@@ -1,18 +1,19 @@
 ---
-title: "快速入门教程步骤 1 | Azure 信息保护"
-description: "入门教程第 1 步，该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 30 分钟。"
+title: "快速入门教程步骤 1 - AIP"
+description: "快速试用 Azure 信息保护入门教程步骤 1 - 激活 Azure 权限管理服务。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: edb98a61d247b51319a1eb172f9978e3d64d0e1b
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: aa1808503e92d0afeb7c0f3f7f9da446d2f13b51
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: edb98a61d247b51319a1eb172f9978e3d64d0e1b
 > [!NOTE]
 >如果已为你的租户激活 Azure Rights Management 服务 - 请直接转到[下一步](infoprotect-tutorial-step2.md)。 
 
-当已激活 Azure Rights Management 服务时，你可以保护组织最敏感的文档和电子邮件，并在将其与其他人共享时跟踪其使用方式。 激活此服务的方式有多种，包括使用 Windows PowerShell，以及通过管理门户导航。
+如果已激活 Azure 权限管理服务，则可以保护组织最敏感的文档和电子邮件，并在将这些文档与其他人共享时跟踪受保护文档的使用状况。 激活此服务的方式有多种，包括使用 Windows PowerShell，以及通过管理门户导航。
 
 对于本教程，我们将直接转到 Office 365 管理员的激活页，这也是与 Office 365 经典门户和 Office 365 管理中心预览相同的页面。 
 
@@ -55,8 +56,5 @@ ms.openlocfilehash: edb98a61d247b51319a1eb172f9978e3d64d0e1b
 [&#171; 简介](infoprotect-quick-start-tutorial.md)
 [步骤 2 &#187;](infoprotect-tutorial-step2.md)
 
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

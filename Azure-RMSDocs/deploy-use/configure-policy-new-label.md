@@ -1,18 +1,19 @@
 ---
-title: "如何创建新标签 | Azure 信息保护"
+title: "新的 Azure 信息保护标签"
 description: "尽管 Azure 信息保护附带了可以自定义的默认标签，你还可以创建用户可在信息保护栏中看到的自己的标签。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: 1b0a908f6a372703ce06e3434307a81fd53c020c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 602fef628f882eb79fe78b5acf89bde1721aa0ec
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,8 +37,7 @@ ms.openlocfilehash: 1b0a908f6a372703ce06e3434307a81fd53c020c
     - 创建新的标签：单击“**添加新的标签**”。
 
     - 创建新的子标签：对于要创建子标签的标签，右键单击或选择上下文菜单 (**...**)，然后单击“**添加子标签**”。
-
-
+    
      如果要添加的新标签位于[作用域内策略](configure-policy-scope.md)中，以便仅应用于所选用户，请首先从初始的“Azure 信息保护”边栏选项卡中选择作用域内策略。
 
 3. 在“**标签**”或“**子标签**”边栏选项卡上，选择要应用于此新标签的选项，然后单击“**保存**”。
@@ -51,10 +51,6 @@ ms.openlocfilehash: 1b0a908f6a372703ce06e3434307a81fd53c020c
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
-
-
-
-
-<!--HONumber=Dec16_HO1-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

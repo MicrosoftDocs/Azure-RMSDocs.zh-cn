@@ -1,10 +1,10 @@
 ---
-title: "用户如何注册个人 RMS | Azure 信息保护"
+title: "用户如何注册个人 RMS - AIP"
 description: "此免费帐户的注册说明以及此过程工作原理的技术信息。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 1134bff1935b3fada661865f31104e0316e8fecd
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 
 >*适用于：Azure 信息保护*
 
-若要注册这种免费帐户，可以通过访问 [Microsoft Azure 信息保护页](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)发出请求，并提供工作电子邮件地址。 将你导向此注册页面的最常见方式是接收带有受保护附件的电子邮件，这包含有关如何注册的说明。 你将收到 Microsoft 的回应电子邮件，然后完成注册过程，方法是输入详细信息来创建帐户。 完成后，将出现可在其中下载适用于不同设备的共享应用程序的页面、用户指南链接和本身就支持 Rights Management 保护的应用程序当前列表链接。 
+若要注册这种免费帐户，可以通过访问 [Microsoft Azure 信息保护页](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)发出请求，并提供工作电子邮件地址。 将你导向此注册页面的最常见方式是接收带有受保护附件的电子邮件，这包含有关如何注册的说明。 你将收到 Microsoft 的回应电子邮件，然后完成注册过程，方法是输入详细信息来创建帐户。 完成后，将出现可在其中下载适用于不同设备的 Azure 信息保护的页面、用户指南链接和本身就支持 Rights Management 的应用程序当前列表链接。 
 
 ## <a name="to-sign-up-for-rms-for-individuals"></a>注册个人 RMS
 
@@ -44,11 +45,11 @@ ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 
 6.  然后将出现“最后一项操作...”页，用于完善你的帐户信息。 键入你的名字和姓氏，输入并确认你选择的密码，然后单击“开始”。
 
-7. 创建帐户后，将出现新的 Microsoft Rights Management 页，可以在其中下载和安装共享应用程序，或单击[详细信息](../rms-client/sharing-app-user-guide.md)链接阅读共享应用程序用户指南。
+7. 创建帐户后，将看到新的 Microsoft Azure 信息保护页面，可以在其中下载和安装 Azure 信息保护客户端，或单击[用户指南](../rms-client/client-user-guide.md)链接获取 Windows 计算机的操作说明。
 
 现在你的帐户已经创建，你可以随时开始保护文件并读取其他人保护的文件。 若提示登录以便保护文件或读取受保护文件，请输入你用于创建个人 RMS 帐户的电子邮件地址和密码。
 
-## <a name="technical-overview-of-the-signup-process"></a>注册过程的技术概述
+## <a name="technical-overview-of-the-sign-up-process"></a>注册过程的技术概述
 个人 RMS 使用自助注册过程，该过程也可由其他使用 Microsoft 基于云的技术对用户进行身份验证的服务使用。
 
 以下是用户注册个人 RMS 但其组织没有 Office 365 订阅或 Azure 订阅，因此 Azure 中没有目录可对用户进行身份验证时后台发生的情况：
@@ -60,7 +61,7 @@ ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 
     如果找到了现有租户，将对其进行检查以查看它是否具有 Azure RMS 订阅。 当没有找到订阅时，可以添加免费的个人 RMS 订阅。
 
-2.  将授予组织个人 RMS 订阅。 现在，此用户可使用 Azure 进行身份验证，然后可以使用 Azure Rights Management 来保护文件并读取其他人保护的文件。 若要保护文件和读取受保护文件，用户必须具有启用 RMS 的应用程序，如免费的 [Rights Management 共享应用程序](../rms-client/sharing-app-windows.md)。
+2.  将授予组织个人 RMS 订阅。 现在，此用户可使用 Azure 进行身份验证，然后可以使用 Azure Rights Management 来保护文件并读取其他人保护的文件。 若要保护文件和读取受保护文件，用户必须具有启用 RMS 的应用程序，如免费的 [Azure 信息保护客户端](../rms-client/aip-client.md)。
 
 3.  当同一个组织的第二个用户请求个人 RMS 订阅时，将使用该组织的个人 RMS 订阅将一个新用户帐户添加到前面创建的 Azure 目录。 这第二个用户能够执行第一个用户能够执行的所有操作（保护文件和读取受保护文件），但除此之外，这两位用户现在还能够更加轻松地安全协作，因为他们可以快速将默认模板应用于文件，以仅允许其组织的 Azure 目录中的帐户访问这些文件。
 
@@ -94,10 +95,4 @@ ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 ## <a name="next-steps"></a>后续步骤
 请参阅[管理员如何才能控制为个人 RMS 创建的帐户](rms-for-individuals-take-control.md)。
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -1,11 +1,11 @@
 ---
-title: "开发应用程序 | Azure 信息保护"
+title: "开发应用程序"
 description: "有关基本控制台应用如何使用 AIP 实现文档保护的指南"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 12/05/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7e2f4cfead53bd34673c1ebb85b9d966b8f6f848
-ms.openlocfilehash: 90b6ecd2860214c9b1f26ab9aad421390de8d6ff
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: b5f1d44d950cd020c4b15d5f9505752bc960fa88
 
 
 ---
@@ -231,8 +231,9 @@ ms.openlocfilehash: 90b6ecd2860214c9b1f26ab9aad421390de8d6ff
 
 6. 最后，输入一些策略元数据：策略名称、描述和发布者（Azure AD 租户）显示名称![应用输出 - 步骤6](../media/develop/app-output-6.png)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Feb17_HO4-->
 
 

@@ -1,18 +1,19 @@
 ---
-title: "什么是 Azure 信息保护？ | Azure 信息保护"
+title: "什么是 Azure 信息保护？"
 description: "Azure 信息保护服务概述。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/12/2016
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: dfcaa9a1fef0a4a2011f1385d849c4c2887a022e
-ms.openlocfilehash: ab8aa40f0ed3947264de9d07cd6fa7a7030a6964
+ms.sourcegitcommit: 1085966a885d1cd8223e277be632ce6dae5de294
+ms.openlocfilehash: 61dfc23fa16b12688b79f2b7ffac645c9cc93584
+ms.lasthandoff: 02/27/2017
 
 
 ---
@@ -31,7 +32,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 ## <a name="how-labels-apply-classification"></a>标签如何应用分类
 
-可使用 Azure 信息保护标签对文档和电子邮件应用分类。 执行此操作时，分类在任何时候都是可识别的，无论数据的存储位置在哪或者与谁共享数据。 永久性标签包括可视化标记，如页眉、页脚或水印。 元数据以明文形式添加到文件和电子邮件的标头，以便其他服务（如数据丢失防护解决方案）可以识别分类并执行相应的操作。 
+可使用 Azure 信息保护标签对文档和电子邮件应用分类。 执行此操作时，分类在任何时候都是可识别的，无论数据的存储位置在哪或者与谁共享数据。 标签包括可视化标记，如页眉、页脚或水印。 元数据以明文形式添加到文件和电子邮件的标头，以便其他服务（如数据丢失防护解决方案）可以识别分类并执行相应的操作。 
 
 例如，下面的电子邮件已分类为“内部”。 此标签作为页脚添加到电子邮件，用作所有收件人的可视指示器，旨在供内部使用，不应在组织外部发送。 此标签也嵌入在电子邮件标头中，以便电子邮件服务可以检查此值并且可以创建审核项或阻止在组织外部发送它。
 
@@ -42,7 +43,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 保护技术使用 Azure Rights Management（通常缩写为 Azure RMS）。 此技术已与其他 Microsoft 云服务和应用程序（例如 Office 365 和 Azure Active Directory）集成。 它还可与你自己的业务线应用程序和软件供应商提供的信息保护解决方案搭配使用，无论这些应用程序和解决方案是在本地还是在云中。
 
-此保护技术使用加密、标识和授权策略。 与永久性标签类似，使用权限管理能够始终为文档和电子邮件提供保护，而不受其位置的影响 – 不管是在组织、网络、文件服务器和应用程序的内部还是外部。 此信息保护解决方案让你可以始终控制你的数据，即使在这些数据与他人共享时也是如此。
+此保护技术使用加密、标识和授权策略。 与应用的标签类似，使用权限管理能够始终为文档和电子邮件提供保护，而不受其位置的影响 – 不管是在组织、网络、文件服务器和应用程序的内部还是外部。 此信息保护解决方案让你可以始终控制你的数据，即使在这些数据与他人共享时也是如此。
 
 例如，可以配置报告文档或销售预测电子表格，以便仅允许组织内人员进行访问，并且可以控制是否可以编辑该文档、是否将其限制为只读，以及是否禁止打印它。 同样，你也可以配置电子邮件，并且禁止转发电子邮件或使用“全部答复”选项。 这些保护任务可以使用权限管理模板来简化。
 
@@ -54,7 +55,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 此示例演示如何在从 Azure 门户配置 Azure 信息保护策略时为标签选择模板：
 
-![在 Azure 门户中选择模板的示例](../media/templates-infoprotection-callouts.png)
+![在 Azure 门户中选择模板的示例](../media/info-protect-template-callout.png)
 
 可以从 Exchange 管理中心选择相同模板，以配置支持 Azure Rights Management 技术的 Exchange Online 邮件流规则：
 
@@ -66,11 +67,21 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 安装 Azure 信息保护客户端时，Azure 信息保护会与最终用户的现有工作流集成。 此客户端会将信息保护栏安装到 Office 应用程序（如第一张图片所示）。 相同栏会添加到 Excel、PowerPoint 和 Outlook。 例如：
 
-![Excel 中的 Azure 信息保护栏的示例](../media/excel2013-infoprotect-bar2.png)
+![Excel 中的 Azure 信息保护栏的示例](../media/excel2016-infoprotect-bar.png)
 
 此信息保护栏使最终用户可以方便地为正确分类选择标签，在需要时，这些标签还可以自动保护其文档和电子邮件。
 
-当用户通过电子邮件共享其受保护的文档时，他们可以使用文档跟踪站点监视访问这些文档的人员和时间。 如果他们怀疑存在误用，则还可以撤消对这些文档的访问权限。
+若要对其他文件类型进行分类和保护，并想要一次性支持多个文件，用户可在 Windows 文件资源管理器中右键单击文件或文件夹：
+
+![在文件资源管理器中，右键单击“使用 Azure 信息保护进行分类和保护”](../media/right-click-classify-protect-folder.png)
+
+如果用户在文件资源管理器中选择“分类和保护”菜单选项，那么他们可以选择一个标签，操作方式类似于他们在 Office 桌面应用程序中使用信息保护栏。 如果需要，他们还可以设置自己的自定义权限。
+
+高级用户（和管理员）可能会发现，针对管理和设置多个文件的分类和保护，使用 PowerShell 命令更有效。 虽然你也可以单独安装 PowerShell 模块，但完成此操作的 PowerShell 命令将自动包含在此客户端中。
+
+文档受到保护后，用户和管理员可以使用文档跟踪站点监视访问这些文档的人员和时间。 如果他们怀疑存在误用，还可以撤销对这些文档的访问权限：
+
+![撤销文档跟踪站点中的访问图标](../media/tracking-site-revoke-access-icon.png)
 
 
 ## <a name="resources-for-azure-information-protection"></a>Azure 信息保护的资源
@@ -85,9 +96,9 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 - Yammer：[Azure 信息保护](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)
 
-- 视频概述
+- 视频：“信息保护的 5 大技巧”
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/N9Ip0m6d3G0" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GWcnZFMPcnE" frameborder="0" allowfullscreen></iframe>
 
     此外，Microsoft Ignite 2016 对 Azure 信息保护提供多个按需会话：
 
@@ -104,15 +115,10 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 ## <a name="next-steps"></a>后续步骤
 
+阅读博客文章 [Azure Information Protection: Ready, set, protect!](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/)（Azure 信息保护：准备、设置、保护！）
+
 通过我们的 5 步骤 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)，可为你自己配置和使用 Azure 信息保护。
 
-通过其他名称了解 Azure 信息保护或 Azure Rights Management？ 请参阅[该服务的替代术语列表](azure-rms-aka.md)。
-
-## <a name="comments"></a>注释
+或许你是通过其他名称了解的 Azure 信息保护或 Azure 权限管理。 请参阅[该服务的替代术语列表](azure-rms-aka.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Dec16_HO2-->
-
-

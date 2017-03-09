@@ -1,18 +1,19 @@
 ---
-title: "如何配置策略设置 | Azure 信息保护"
+title: "配置 Azure 信息保护策略设置"
 description: "在 Azure 信息保护策略中配置适用于所有用户、所有设备的设置。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
-ms.openlocfilehash: 9611b1fb11a66bbe1bd2b717d3c16bec6f944874
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: f91e7c322688a562a0060031896bce0827b328a0
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: 9611b1fb11a66bbe1bd2b717d3c16bec6f944874
 
 >*适用于：Azure 信息保护*
 
-除了信息保护栏标题和工具提示，Azure 信息保护策略中有 4 个设置适用于所有用户、所有设备：
+除了信息保护栏标题和工具提示，Azure 信息保护策略中有&4; 个设置适用于所有用户、所有设备：
 
 ![Azure 信息保护策略全局设置](../media/info-protect-policy-settings.png)
 
@@ -62,17 +63,5 @@ ms.openlocfilehash: 9611b1fb11a66bbe1bd2b717d3c16bec6f944874
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
-
-
-
-
-
-
-
-
-
-
-
-<!--HONumber=Dec16_HO1-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

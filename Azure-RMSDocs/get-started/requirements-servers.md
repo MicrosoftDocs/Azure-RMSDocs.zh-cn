@@ -1,10 +1,10 @@
 ---
-title: "数据保护的本地服务器支持 | Azure 信息保护"
+title: "对 Azure RMS 数据保护的服务器支持 - AIP"
 description: "通过使用 Rights Management 连接器识别可使用 Azure 信息保护中的 Azure Rights Management 服务的本地服务器产品。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +13,15 @@ ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: e4bf159cea6298e5a5577a2fa4de3dd3beeb47d9
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 22beea6ab33d6f3fc0c36ff136dd1bc44714a997
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
 
-# <a name="onpremises-servers-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
+# <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -51,19 +52,15 @@ ms.openlocfilehash: e4bf159cea6298e5a5577a2fa4de3dd3beeb47d9
     -   Windows Server 2012
 
     > [!NOTE]
-    > 由于运行 Windows Server 2008 R2 的文件服务器未使用内置文件管理任务操作来应用 Rights Management 保护，在这种情况下，不能使用 Rights Management 连接器。 但是，如果你配置自定义文件管理任务以运行可通过使用 Azure RMS 来保护文件的可执行文件或脚本，则可以在这些操作系统上使用文件分类基础结构和 Azure RMS。 例如，使用 [RMS 保护 cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx) 的 Windows PowerShell 脚本。
+    > 由于运行 Windows Server 2008 R2 的文件服务器未使用内置文件管理任务操作来应用 Rights Management 保护，在这种情况下，不能使用 Rights Management 连接器。 但是，如果你配置自定义文件管理任务以运行可通过使用 Azure RMS 来保护文件的可执行文件或脚本，则可以在这些操作系统上使用文件分类基础结构和 Azure RMS。 例如，使用 [AzureInformationProtection cmdlet](/powershell/azureinformationprotection/vlatest/aip) 的 Windows PowerShell 脚本。
     > 
     > 你也可以在运行更高版本的 Windows Server 的服务器上使用这些 cmdlet，好处是这些 cmdlet 可以保护所有文件类型。 RMS 连接器仅保护 Office 文件。 有关操作说明，请参阅[使用 Windows Server 文件分类基础结构 &#40;FCI&#41; 的 RMS 保护](../rms-client/configure-fci.md)。
 
-Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 支持 Rights Management 连接器。
+Windows Server 2016、Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 支持 Rights Management 连接器。
 
 有关如何为这些本地服务器配置 Rights Management 连接器的详细信息，请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。
 
 ## <a name="next-steps"></a>后续步骤
 若要查看其他要求，请参阅 [Azure Rights Management 的要求](requirements-azure-rms.md)。
 
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

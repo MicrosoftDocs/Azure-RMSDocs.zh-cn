@@ -1,11 +1,11 @@
 ---
-title: "快速入门教程步骤 5 | Azure 信息保护"
-description: "入门教程第 5 步，快速试用适合组织的 Microsoft Azure 信息保护，所需时间大概 30 分钟。"
+title: "快速入门教程步骤 5 - AIP"
+description: "快速试用 Azure 信息保护入门教程步骤 5 - 共享受保护的文件和跟踪文件。"
 keywords: 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,9 @@ ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 5844ddd3f675cdc5a88de3abc3170d7e8a89aee9
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: ea34b900855d43cb1458438b1d15a16fd7cf01bf
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -23,69 +24,61 @@ ms.openlocfilehash: 5844ddd3f675cdc5a88de3abc3170d7e8a89aee9
 
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>步骤 5：了解如何在实际操作中共享受保护的文件和如何跟踪文档 
 
->适用于：Azure 信息保护
+>*适用于：Azure 信息保护*
 
-在本教程的最后一步中，找到已创建的 Word 文档，将其发送到合作伙伴或同事。 就本教程来说，该文档实际包含什么文本并不重要，而之所以需要让其包含一些文本，是为了方便你确认所授权的收件人能够阅读它。
+在本教程的最后一步中，找到已创建的 Word 文档或 Excel 电子表格，将其发送到合作伙伴或同事。 就本教程来说，该文档实际包含什么文本并不重要，而之所以需要让其包含一些文本，是为了方便你确认所授权的收件人能够阅读它。
 
 然后你就可以安全地通过电子邮件共享此文档。 
 
 ## <a name="to-safely-share-your-document-by-email"></a>通过电子邮件安全地共享你的文档
 
-1.  在 Word 中打开文档。 可以看到再次自动应用了默认标签**内部**。 
+1. 在文件资源管理器中，右键单击文档，然后选择“分类和保护”。 “分类和保护 - Azure 信息保护”对话框将打开：
 
-2.  在“主页”选项卡上的“RMS”组中，单击“共享受保护文档”，然后在菜单中单击“共享受保护文档”：
+    ![Azure 信息保护快速入门教程步骤 5 - 右键单击“分类和保护”](../media/classify-protect-dialog.png)
 
-    ![Azure 信息保护快速入门教程步骤 5 — 共享受保护文档](../media/share-protected-callout.png)
+2. 选择“使用自定义权限保护”，这将显示其他选项。
 
-    可看到“共享受保护文档”对话框，类似于此图片：
+3. 对于“选择权限”，请保留默认值“查看器 - 仅查看”。
 
-    ![Azure 信息保护快速入门教程步骤 5 — 共享受保护文档对话框](../media/example-share-protected-dialog.png)
+    使用此设置，收件人能够查看该文档，但不能进行编辑或打印。
 
-3. 在“用户”框中，键入一个或多个企业电子邮件地址，如同将文档发送给与组织有业务往来的某人时的操作一样。 或者，指定同事的电子邮件地址。 请务必指定企业电子邮件地址，例如 **janetm@contoso.com** 或 **p.dover@fabrikam.com**，因为 Azure 信息保护目前不支持个人电子邮件地址。 
+4. 对于“选择用户”，请键入一个或多个企业电子邮件地址，如同将文档发送给与组织有业务往来的某人时的操作一样。 请务必指定企业电子邮件地址，例如 **janetm@contoso.com** 或 **p.dover@fabrikam.com**，因为 Azure 信息保护目前不支持个人电子邮件地址。 
 
-    请不要担心接收电子邮件的人是否也使用 Azure 信息保护。
+    或者，可单击通讯簿选择同事的电子邮件地址：
 
-4. 选择 **“查看者 – 仅查看”**。
-
-    这意味着收件人能够查看该文档，但不能进行编辑或打印。
-
-5. 选择 **“当有人尝试打开这些文档时，给我发电子邮件”**。
-
-    每次收件人尝试打开该附件时，你都会收到电子邮件通知。另外，如果其他人尝试打开该附件（例如，收件人将电子邮件转发给同事），你也会收到电子邮件通知。 如果文档被转发，会看到访问被拒绝，并且可以根据用户详细信息来决定是否向此人发送一份允许其打开的文档。
-
-6. 选择 **“允许我立即撤消对这些文档的访问权限”**。
-
-    此选项要求收件人每次打开该附件时都要有 Internet 连接，但好处是，如果你在以后撤销该文档，则收件人下次将无法打开它。 
-
-4.  单击“发送”可查看要发送给指定收件人的电子邮件，其中包含默认的说明文本。 例如：
-
-    ![共享受保护文档时的示例电子邮件](../media/example-email-share-protected.png)
+    ![Azure 信息保护快速入门教程步骤 5 - 使用自定义权限保护](../media/protect-custom-permissions.png)  
     
-    **注意**：如果安装 Azure 信息保护客户端时 Outlook 为打开状态，则看不到上面图片中的信息保护栏：该信息保护栏并不专门用于演示共享受保护文档的步骤中，因此不需要关闭并重新打开 Outlook 来完成本教程。 如果安装 Azure 信息保护客户端后打开 Outlook，会看到类似于初次打开时的 Word 文档的电子邮件，由于 Azure 信息保护策略中配置的全局设置，该邮件默认应用了**内部**标签。
-    
-    你会注意到有两个附件：原始的 Word 文档和名称相同但具有 **.ppdf** 文件扩展名的文件。 .ppdf 版本是一个由 Rights Management 共享应用程序自动创建的受保护的 PDF 文件，用于预防收件人不具备支持受保护的文档的 Office 版本的情况。 此附加文件使收件人可通过使用随 Rights Management 共享应用程序一同安装的查看器来阅读受保护的文档。
+    指定地址后，请将地址复制到剪贴板，因为我们将在稍后的步骤中用到它们。
 
-    在电子邮件中单击“发送”。
+5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”**。
 
-现在，你已发送受保护文档，你可以要求收件人等待该文档，在其到达后打开它。 但请勿关闭 Word，因为需要在最后一步中再次使用它来跟踪共享的文档。
+4. 返回文件资源管理器，再次右键单击你的文件，这次请选择“发送到” > “邮件收件人”。 此操作会将你的文档附加到电子邮件，我们将更改某些默认文本。
+
+5. 更改默认文本之前，请将之前指定的电子邮件地址粘贴到“收件人”框。 
+
+6. （可选）请在“主题”框中键入想要的主题，例如，“我正在共享受保护的文档”。 
+
+7. 修改默认邮件描述，使其适合你的收件人。 但是，请添加以下文本：
+
+    **我已使用 Microsoft Azure 信息保护对文件提供保护。若是首次使用，请参阅这些说明：https://aka.ms/rms-signup。** 
+
+    ![Azure 信息保护快速入门教程步骤 5 — 通过电子邮件共享受保护的文档](../media/share-protected-email.png)
+
+    单击“发送”。
+
+现在，你已发送受保护文档，你可以要求收件人等待该文档，在其到达后打开它。 
 
 ## <a name="ask-your-recipients-to-open-the-emailed-document"></a>要求收件人打开通过电子邮件发送的文档
 
 收件人可以使用很多设备来阅读你以电子邮件附件形式发送的受保护文档。 这些设备包括 iPad、iPhone、Android 平板电脑和手机、Mac 计算机，以及 Windows 计算机。
 
-要求他们阅读你发送的电子邮件。 如果这是他们第一次收到受 Rights Management 保护的附件，请要求他们单击说明链接。 之后他们看到[欢迎使用 Microsoft RMS！](https://portal.azurerms.com/#/rmshelp) 页面，其中显示了如何安装 RMS 共享应用程序的说明，以及如何在必要时注册免费的帐户。 然后他们就可以阅读受保护的附件。
+要求他们阅读你发送的电子邮件。 如果这是他们第一次收到受 Rights Management 保护的附件，请要求他们单击说明链接。 然后他们将看到 Microsoft Azure 信息保护的“欢迎”页，该页将要求他们输入工作电子邮件地址。
+
+如果他们单击“注册”，Azure 信息保护将检查他们的组织是否具有包含 Azure 权限管理数据保护服务的订阅。 如果没有，则可以申请一个免费帐户。
 
 ### <a name="instructions-for-recipient-to-view-the-protected-document-attachment"></a>收件人说明：查看受保护的文档附件
 
-1. 打开其中一个附件来阅读此文档：
-    
-    - 如果设备上安装了支持 Rights Management 的 Office 版本：
-    
-        -  打开文件扩展名为 **.docx** 的文档。
-        
-    - 如果没有安装支持 Rights Management 的 Office 版本，或者不确定，又或者只是想要尝试 Rights Management 共享应用程序中的查看器，那么： 
-    
-        - 打开文件扩展名为 **.ppdf** 的文档。
+1. 在已安装 Office 的电脑或移动设备上，打开附件以阅读该文档。  
 
 2.  如果系统提示你输入用户名和密码，请在输入用户名时采用与发送电子邮件和附件时所用电子邮件地址相同的格式。 例如，**janetm@contoso.com** 或 **p.dover@fabrikam.com**。 至于密码，请键入注册个人 RMS 时提供的密码。 或者，如果组织有诸如 Office 365 等云服务，或使用 Azure，请输入平时使用的工作密码。
 
@@ -93,11 +86,15 @@ ms.openlocfilehash: 5844ddd3f675cdc5a88de3abc3170d7e8a89aee9
 
 收件人可能将电子邮件转发给原始电子邮件中未指定的其他人。 这些人无法打开附件。 当系统要求他们提供用户名时，将会拒绝其对文档的访问。
 
-现在，收件人已打开该附件并选择性地将其转发给他人，因此正常情况下你会获得电子邮件通知，该通知会报告此活动。 不过，时间越长，电子邮件越不容易查找，因此若要跟踪谁访问了你的文档，更好的方法是使用文档跟踪站点，这会在最后一步进行介绍。
+现在，收件人已打开该附件并选择性地将其转发给他人，你可以跟踪文档。
 
 ## <a name="to-track-your-protected-document"></a>跟踪受保护文档
 
-1.  返回到 Word，在“主页”选项卡的“RMS”组中，单击“共享受保护文档”，然后在菜单中单击“跟踪使用情况”：
+1.  打开保护和共享的文档。 信息横幅将确认你指定的自定义保护设置：
+
+    ![自定义保护的信息横幅](../media/information-banner-custom-protection.png)
+
+2.  在“开始”选项卡中，单击“保护” > “跟踪和撤销”：
 
     ![跟踪使用情况选项](../media/track-usage-callout.png)
 
@@ -119,10 +116,9 @@ ms.openlocfilehash: 5844ddd3f675cdc5a88de3abc3170d7e8a89aee9
 
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
-|有关保护通过电子邮件进行共享的文件的完整说明和替代方法|[使用 Rights Management 共享应用程序保护通过电子邮件共享的文件](../rms-client/sharing-app-protect-by-email.md)|
-|关于“共享保护项”对话框中的选项|[Rights Management 共享应用程序的对话框选项](../rms-client/sharing-app-dialog-box.md)|
+|有关保护之后可安全共享的文件的完整说明|[对文件或电子邮件进行分类和保护](../rms-client/client-classify-protect.md)|
 |关于供其他用户注册的免费帐户|[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)|
-|关于文档跟踪站点的使用|[跟踪和撤消文档](../rms-client/sharing-app-track-revoke.md)
+|关于文档跟踪站点的使用|[跟踪和撤消文档](../rms-client/client-track-revoke.md)
 
 
 ## <a name="next-steps"></a>后续步骤
@@ -133,7 +129,4 @@ ms.openlocfilehash: 5844ddd3f675cdc5a88de3abc3170d7e8a89aee9
 
 你会发现阅读 Azure 信息保护的一些[常见问题](faqs.md)和浏览其他一些文档文章很有用处。 但是，如果已准备好开始为组织部署 Azure 信息保护，那么下一步应为 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)。 
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
