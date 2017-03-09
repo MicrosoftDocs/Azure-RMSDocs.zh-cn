@@ -78,4 +78,4 @@ Azure 信息保护（有时缩写为 AIP）由著名 Microsoft 技术长期发�
 
 有关如何购买或评估 Azure 信息保护以及可用于订阅计划的不同功能的详细信息，请参阅 [Azure 信息保护](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)站点。
 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
