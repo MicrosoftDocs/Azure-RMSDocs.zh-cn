@@ -1,13 +1,6 @@
 ---
 redirect_url: compare-on-premise
-translationtype: Human Translation
-ms.sourcegitcommit: 52b603971c1cfab0822857d192c1330f33dd1770
-ms.openlocfilehash: d703253695d7b3d61a82ca96453c23519b232590
-
+ms.openlocfilehash: 7cc904d7f7dd29113bf435089e1edc75188d5cb9
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
-
-<!--HONumber=Dec16_HO1-->
-
-
