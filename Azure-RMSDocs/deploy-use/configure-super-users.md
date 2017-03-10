@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 07236a2820e4d8d4d594eda755cb025d21b96d12
-ms.openlocfilehash: 591ca9ba080da9565e0143d887e3db179b810862
-ms.lasthandoff: 02/25/2017
-
-
+ms.openlocfilehash: b11367b726a7740d42719b184b6a522e067e205b
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>为 Azure Rights Management 和发现服务或数据恢复配置超级用户
 
 >*适用于：Azure 信息保护、Office 365*
@@ -74,5 +70,4 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 > AIP 模块将替换随 RMS 保护工具一起安装的 RMS 保护 PowerShell 模块。 这两种模块不同于主要的[适用于 Azure 权限管理的 Windows PowerShell 模块](administer-powershell.md)，并且对该模块提供了补充。 AIP 模块支持 Azure 信息保护、适用于 Azure 信息保护的 Azure 权限管理服务 (Azure RMS) 和 Active Directory Rights Management Services (AD RMS)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

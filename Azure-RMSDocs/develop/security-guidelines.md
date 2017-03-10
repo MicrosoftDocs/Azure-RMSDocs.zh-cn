@@ -12,13 +12,10 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: ea2783ec76505681ab60aee9d995e347d4310cad
-ms.lasthandoff: 02/24/2017
-
+ms.openlocfilehash: e940dfd1d3a053c14ea1adb6e72f4cde7d26bba0
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure 信息保护的安全最佳实践
 
 Azure 信息保护 (AIP) 软件开发工具包 (SDK) 提供可靠的系统，用于发布和使用所有类型的受保护信息。 为了帮助 AIP 系统尽可能的强大，启用 AIP 的应用程序必须使用 AIP 最佳实践进行构建。 启用 AIP 的应用程序共同分担责任，帮助维持此生态系统的安全。 识别安全风险，并为应用程序开发期间引入的风险提供缓解，在最大程度上减小不安全的软件实现的可能性。

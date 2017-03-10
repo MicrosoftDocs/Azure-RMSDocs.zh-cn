@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 84056058eedccf354cefb86792d92949bcfb22e8
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: e3f80781c9e998e3d7d0d515ed1b0b13b9656ab4
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="refreshing-templates-for-users"></a>为用户刷新模板
 
 >*适用于：Azure 信息保护、Office 365*

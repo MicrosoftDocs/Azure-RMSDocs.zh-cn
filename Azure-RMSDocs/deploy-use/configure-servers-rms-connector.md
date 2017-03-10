@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 8837b6187aee8bc041df7185527470297e913f49
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 351679b4d3a86948f10a1452350b695df7c21fe3
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
 >*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*

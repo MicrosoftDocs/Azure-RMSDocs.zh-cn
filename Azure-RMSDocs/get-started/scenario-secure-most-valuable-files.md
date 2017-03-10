@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: f096a4ad7333d24c7bce0dd729b40ebb203726c5
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: f509efb599bd17d5a76c08e24a7d503394415785
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="scenario---secure-your-most-few-valuable-files"></a>方案 - 保护你最重要的（几个）文件
 
 >*适用于：Azure 信息保护、Office 365*

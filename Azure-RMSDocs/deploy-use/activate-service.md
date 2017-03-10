@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: dcccc07758cef4428d5ee0430f67047d645f2104
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 5f03b34b825b9fc693741336c54ee4049f636741
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="activating-azure-rights-management"></a>激活 Azure Rights Management
 
 >*适用于：Azure 信息保护、Office 365*

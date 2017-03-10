@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: d8a3c8a054412280df341edd4078294c3e05979e
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 85d77e7f60a6955ca29376583d7a6969bb1f74d1
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
 >*适用于：Azure 信息保护、Office 365*

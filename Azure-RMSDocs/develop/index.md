@@ -13,13 +13,10 @@ ms.assetid: 0510ead4-2fe7-4269-885b-fe16bcc69888
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 85cd61e564b066458618c02b4ac20cddf6b7e183
-
-
+ms.openlocfilehash: c408d7a8f068e2de6616534a58161a86482a2a9c
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rms-developers-guide"></a>RMS 开发人员指南
 
 ## <a name="overview"></a>概述 ##
@@ -51,8 +48,3 @@ ms.openlocfilehash: 85cd61e564b066458618c02b4ac20cddf6b7e183
 | [Android 使用方案](https://msdn.microsoft.com/en-us/library/dn758246(v=vs.85).aspx) |Android|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 及更高版本的 4.x SDK|**Java 代码示例**，表示重要开发方案，以使你熟悉 RMS SDK。 相关示例包括使用 Microsoft 受保护的文件格式、自定义受保护的文件格式和自定义 UI 控件。|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

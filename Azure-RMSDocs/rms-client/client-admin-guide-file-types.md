@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 107bac4e318c08d4fdc6d24fc88a6f7cbe5c0a74
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 8247b75a5e5835b1e091a4b9e380ca33487e60f1
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure 信息保护客户端支持的文件类型
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
@@ -176,4 +171,3 @@ Azure 信息保护客户端支持两个不同级别的保护，如下表中所�
 - [PowerShell 命令](client-admin-guide-powershell.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

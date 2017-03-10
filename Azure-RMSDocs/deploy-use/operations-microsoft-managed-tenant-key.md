@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: caacc4174ddb63e9c9091c0df294b93cf947a7c4
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 0b4e9cd5350f942203129979b05bc1344fb37aa5
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
 >*适用于：Azure 信息保护、Office 365*
@@ -97,5 +92,4 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 |在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户续订他们的租户密钥。|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

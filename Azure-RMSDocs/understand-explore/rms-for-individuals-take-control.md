@@ -12,16 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: ff8cd150ce438a7b9ad5203dfb6d9d01c1a0d85a
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 666408da3bfa0095db1cb6ff956c9a118201cefb
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
-
 # <a name="how-administrators-can-control-the-accounts-created-for-rms-for-individuals"></a>管理员如何才能控制为个人 RMS 创建的帐户
 
 >适用于：Azure 信息保护

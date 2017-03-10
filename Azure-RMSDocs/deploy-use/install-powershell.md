@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 45b9415443de28d78b4bff28da25eaed02f3d052
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 89ba9218821b24bec09471915b8b9387f305463c
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="installing-windows-powershell-for-azure-rights-management"></a>安装适用于 Azure 权限管理的 Windows PowerShell
 
 >*适用于：Azure 信息保护、Office 365*

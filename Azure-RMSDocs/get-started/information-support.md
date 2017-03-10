@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: cb0a66071937ed5afdf1f86833bbc47bdb4ddd50
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 82a377e0b28e3f6614e8d79b5dae0e6f0abb9945
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
 >*适用于：Azure 信息保护、Office 365*
@@ -92,4 +88,3 @@ ms.lasthandoff: 02/24/2017
 -   [论坛：用户 RMS（应用程序）](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmsapps)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

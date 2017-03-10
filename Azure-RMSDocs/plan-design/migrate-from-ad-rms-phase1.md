@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: d38d7f89ba780b519ebe4a182161deb5bc9331b5
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: bbd5cd5be72dfe72f8312f7ee5049dec2e46ac96
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="migration-phase-1---server-side-configuration-for-ad-rms"></a>迁移阶段 1 - AD RMS 的服务器端配置
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365
@@ -43,18 +39,6 @@ ms.lasthandoff: 02/24/2017
 2.  将配置数据导入到 Azure 信息保护中。 此步骤具有不同处理，具体取决于你的当前 AD RMS 部署配置以及 Azure RMS 租户密钥的首选拓扑。
 
 ### <a name="export-the-configuration-data-from-ad-rms"></a>从 AD RMS 导出配置数据
-
-> [!IMPORTANT]
-> 执行此过程之前，首先请确认你的 AD RMS 服务器正在加密模式 2 下运行，这是 Azure 信息保护的要求。
-> 
-> 确认加密模式：
-> 
-> - 对于 Windows Server 2012 R2 和 Windows 2012：“AD RMS 群集属性”>“常规”选项卡。 
-> 
-> - 对于所有支持版本的 AD RMS：使用 [RMS 分析工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)和“AD RMS 管理员”选项可在“RMS 服务信息”中查看加密模式。
-> 
-> 请确保加密模式的值为 **2**。 如果不是，请参阅说明启用 [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)（AD RMS 加密模式）中的加密模式 2。
-
 
 在所有 AD RMS 群集中，针对已保护你组织内容的所有受信任的发布域执行以下过程。 无需在仅授权群集上运行此过程。
 
@@ -224,4 +208,3 @@ Remove-PSDrive MyRmsAdmin -force
 转到[阶段 2 - 客户端配置](migrate-from-ad-rms-phase2.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

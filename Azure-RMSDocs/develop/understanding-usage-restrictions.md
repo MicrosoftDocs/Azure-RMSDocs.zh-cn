@@ -14,13 +14,10 @@ ms.assetid: E388B16C-ECDA-4696-A040-D457D3C96766
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d4ee4581ebc485cf881c8d4970ee90ca4873820e
-ms.openlocfilehash: 07c6c6f918cc0e629583eb177222417dc420ea71
-
-
+ms.openlocfilehash: 8ed5897accf7bf4db08a5fc699af3f0f850740a2
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="understanding-usage-restrictions"></a>了解使用限制
 
 所有启用 RMS 的应用程序都必须强制实施使用限制。 使用限制是在用户尝试执行操作时产生的结果（例如 打印文档），但该文档的 RMS 策略未授予他们执行该操作的权限（例如 打印权限）。
@@ -74,8 +71,3 @@ AD RMS 权限列中列出的每个用户权利都附带有一个说明、一个�
 * [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Nov16_HO4-->
-
-

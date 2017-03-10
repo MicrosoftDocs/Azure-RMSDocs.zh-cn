@@ -13,14 +13,10 @@ ms.technology: techgroup-identity
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 4ac26b3faa61f3a19e71f7f1d1d257c2ded934c7
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: bc3d92cb0dc23ddd2d1f81daf2fc589ad4862977
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 
 *适用于：Active Directory Rights Management Services、Azure 信息保护*
