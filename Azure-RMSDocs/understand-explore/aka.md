@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 047578ea1fb89532f35c066d02ced3da58979938
-ms.openlocfilehash: ca8a196f3c9f31d2fee7493d0aa4112b5be8c26f
-ms.lasthandoff: 03/01/2017
-
-
+ms.openlocfilehash: b6c6dfec138c3be41dcbb8609660a1fd3bcff376
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="azure-information-protection---also-known-as-"></a>Azure 信息保护 - 也称为...
 
 >*适用于：Azure 信息保护、Office 365*

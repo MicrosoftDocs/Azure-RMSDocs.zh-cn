@@ -12,16 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: a7d6c5775f9f3ddedd2177054731b26443a0d2d9
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: fe434fd6d80764b5382ff807dbf87582f07713b5
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
-
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure 信息保护的合规性和支持信息
 
 Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻找的信息与 Azure 信息保护相关，但与如何使用 Azure 信息保护服务无关，请查看以下资源：
@@ -57,4 +51,3 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 - Office 365 库：[Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: e696bf596255b5e28aa5589cfc18715f100c5b07
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 10dfa64146587fe816df6a555e0a3b43c1290c45
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="how-to-find-out-if-your-users-have-signed-up-for-rms-for-individuals"></a>如何发现你的用户注册了个人 RMS？
 
 >*适用于：Azure 信息保护*

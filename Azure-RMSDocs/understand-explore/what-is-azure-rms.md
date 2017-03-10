@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 95920a08ff1322033bc56d9e48b14a786134f69c
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: a85c6135be95bb51ba4ac336ab78131382232626
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
 
 >*适用于：Azure 信息保护、Office 365*

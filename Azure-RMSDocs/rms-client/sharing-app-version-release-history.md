@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 811c89ef6922f6939e7a7d13ed707c6ebe6aafd6
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: cee881a77b695fe38d0f88c05b0699d3d9d14955
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rights-management-sharing-application-version-release-history"></a>权限管理共享应用程序：版本发行历史记录
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
@@ -131,4 +127,3 @@ Azure 信息保护团队定期更新 Rights Management 共享应用程序，以�
 -   **在你的组织内支持多个电子邮件域**：如果你使用 AD RMS，并且组织中的用户具有多个电子邮件域，此更新可让你的用户使用其他域中的组织中的用户保护的内容。 有关详细信息，请参阅 [Rights Management 共享应用程序管理员指南](sharing-app-admin-guide.md)中的[仅限 AD RMS：在组织中支持多个电子邮件域](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization)部分。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

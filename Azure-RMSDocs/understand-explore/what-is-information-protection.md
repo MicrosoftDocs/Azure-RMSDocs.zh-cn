@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-translationtype: Human Translation
-ms.sourcegitcommit: 1085966a885d1cd8223e277be632ce6dae5de294
-ms.openlocfilehash: 61dfc23fa16b12688b79f2b7ffac645c9cc93584
-ms.lasthandoff: 02/27/2017
-
-
+ms.openlocfilehash: 482338f186e3008da155f961c649a80cc61c5780
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
 >适用于：Azure 信息保护

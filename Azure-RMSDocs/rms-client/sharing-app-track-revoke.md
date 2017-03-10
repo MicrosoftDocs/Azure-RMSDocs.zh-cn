@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 36a25c44105d4fa0e8820f99b0b1c7c1568062ec
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: b56bebbdebc79cfd0d53b4e83714f8a04dfb5a25
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>使用 RMS 共享应用程序跟踪和撤销文档
 
 >适用于：Azure 信息保护、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1
