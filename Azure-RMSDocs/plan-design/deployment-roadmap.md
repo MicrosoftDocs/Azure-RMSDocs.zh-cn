@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 4128188d0fba56a5b61fe16a6f0128ec2dc24c4a
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 9300c6d06042a489dd256069da4faa88426df9aa
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
 >*适用于：Azure 信息保护、Office 365*
@@ -192,4 +188,3 @@ ms.lasthandoff: 02/24/2017
 开始使用 Azure Rights Management 服务时，可能发现 Windows PowerShell 对帮助编写脚本或自动执行管理更改很有用。 有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](../deploy-use/administer-powershell.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

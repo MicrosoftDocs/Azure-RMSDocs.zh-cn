@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: d4e67ace9cf56ffdb4e8335dd514e1568bccb9b6
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 08b110d46b41da6582ed59363f6f6d66450c6ec2
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
 >*适用于：Azure 信息保护*

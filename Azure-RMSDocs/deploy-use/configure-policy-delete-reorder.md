@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: df667a8580af71d808752d569a6148852faec82c
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 09fc981338935536974935574409b0a30bfe8e0e
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>如何删除或重排 Azure 信息保护的标签
 
 >*适用于：Azure 信息保护*
@@ -59,5 +55,4 @@ ms.lasthandoff: 02/24/2017
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

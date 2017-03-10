@@ -14,14 +14,10 @@ ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 56c06be077d3d6dc3945cf9fa65d61236ed28536
-ms.openlocfilehash: 3649c678b1f264ed463306d9f2184788b8b4a030
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: a7369ccce6c13219bcf77c8ebeb41c753962ba11
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rights-management-sdk-42"></a>Rights Management SDK 4.2
 
 ## <a name="purpose"></a>目的

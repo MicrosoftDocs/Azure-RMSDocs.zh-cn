@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 37ab2f78f1ba2f3803ad1aafd011e530ef204acb
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: a79c6d1ff5b3a031138cb3d4dde179909134353a
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>使用 Azure 信息保护时跟踪和撤销文档
 
 >适用于：Azure 信息保护、Windows 10、Windows 8.1、Windows 8 以及具有 SP1 的 Windows 7

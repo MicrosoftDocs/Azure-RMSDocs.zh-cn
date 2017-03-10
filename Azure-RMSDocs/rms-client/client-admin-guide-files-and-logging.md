@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: a1211af06c24c79cfce262d1f2e1eb8add2724b8
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 78c355acd1bc87347ef2d4b02ffbb24f2c08bc70
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="azure-information-protection-client-files-and-client-usage-logging"></a>Azure 信息保护客户端文件和客户端使用情况日志记录
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
@@ -101,4 +96,3 @@ ms.lasthandoff: 02/24/2017
 - [PowerShell 命令](client-admin-guide-powershell.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

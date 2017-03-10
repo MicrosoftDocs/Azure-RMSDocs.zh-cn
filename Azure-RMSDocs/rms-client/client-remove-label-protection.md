@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: f77200fa8a305c0306c41470bda7aa5a54951909
-ms.openlocfilehash: e6fe5edfeb165839260371942cbf59922853a342
-ms.lasthandoff: 03/02/2017
-
-
+ms.openlocfilehash: 9aa72b53a53c3cd7f0e49e42403a1669cc777c30
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>从由 Azure 信息保护标记的文件和电子邮件中，或从受 Rights Management 保护的文件和电子邮件中，删除标签和保护
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7

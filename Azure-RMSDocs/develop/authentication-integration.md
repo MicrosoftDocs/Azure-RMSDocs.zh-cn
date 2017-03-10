@@ -14,13 +14,10 @@ ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0f5b3de4607e5e889448b381f5835b4a75c9b0c2
-
-
+ms.openlocfilehash: 0c06a498c62b61c106572e049f8ef40fdb07485f
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>如何使用 Azure AD 注册应用并为其启用 RMS
 
 本主题将指导你了解有关通过 Azure 门户注册应用和启用 RMS，以及使用 Azure Active Directory 身份验证库 (ADAL) 进行用户身份验证的基础知识。
@@ -268,8 +265,3 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
     }
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

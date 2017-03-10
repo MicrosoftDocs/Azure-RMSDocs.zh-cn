@@ -14,14 +14,10 @@ ms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 61efd11cde36c5f2507a91112cfc3711c1bedfca
-ms.openlocfilehash: 9735b9c1d05f2512eab1a11808dc5911e26174be
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 0238f4784b7d8be55b39dd4ab2653962753d531f
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="api-sdk-42-reference"></a>API SDK 4.2 参考
 
 Azure 信息保护 SDK 4.2 支持多种操作系统。 有关特定平台的详细信息，请参阅[新增功能](release-notes.md)。

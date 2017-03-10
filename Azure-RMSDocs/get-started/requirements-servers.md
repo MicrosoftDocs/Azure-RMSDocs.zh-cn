@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 22beea6ab33d6f3fc0c36ff136dd1bc44714a997
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 0278d07ae5afdfc95ffdf3945e5d3df7eae2f459
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
 
 >*适用于：Azure 信息保护、Office 365*

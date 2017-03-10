@@ -5,8 +5,3 @@
 # [部署和使用该客户端](/information-protection/rms-client/use-client)
 # [开发和自定义应用](/information-protection/develop/developers-guide)
 # [Azure 信息保护（预览版）](/information-protection/understand-explore/what-is-azure-information-protection)
-
-
-<!--HONumber=Jan17_HO4-->
-
-

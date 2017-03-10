@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 04d8e694aa33bcc00deca602737e0ab11eafb53d
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 0637f2e52dbeb979e5351ceaee10122dad69309f
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="scenario---send-a-company-confidential-email"></a>方案 - 发送公司机密电子邮件
 
 >*适用于：Azure 信息保护、Office 365*
@@ -157,4 +153,3 @@ ms.lasthandoff: 02/24/2017
     -   电子邮件：helpdesk@vanarsdelltd.com
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

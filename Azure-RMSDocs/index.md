@@ -1,9 +1,8 @@
 ---
 layout: LandingPage
-translationtype: Human Translation
-ms.sourcegitcommit: 04f88ca8040efb6f189691ffc5b45c024693aa55
-ms.openlocfilehash: 713d2484288d1297fd72f976e0dbf000eba7f018
-
+ms.openlocfilehash: 4165fd3f3480810eca2ab336598433857df1c14f
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
 # <a name="azure-information-protection-documentation"></a>Azure 信息保护文档
 
@@ -152,8 +151,3 @@ ms.openlocfilehash: 713d2484288d1297fd72f976e0dbf000eba7f018
         </div>
     </li>  
 </ul>
-
-
-<!--HONumber=Feb17_HO2-->
-
-

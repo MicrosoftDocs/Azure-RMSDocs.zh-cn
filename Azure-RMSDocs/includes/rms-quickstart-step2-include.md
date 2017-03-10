@@ -25,8 +25,3 @@
 |关于适用于 Windows 的权限管理共享应用程序的本地安装以及用户说明   →|[权限管理共享应用程序用户指南](../rms-client/sharing-app-user-guide.md)|
 |关于适用于 Windows 的权限管理共享应用程序的脚本化安装以及更多技术信息   →|[权限管理共享应用程序管理员指南](../rms-client/sharing-app-admin-guide.md)|
 |了解本机保护和常规保护的区别   →|[一般性保护和内置（本机）保护的区别是什么？](../rms-client/sharing-app-dialog-box.md)|
-
-
-<!--HONumber=Jan17_HO1-->
-
-

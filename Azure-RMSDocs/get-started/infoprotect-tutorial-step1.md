@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-translationtype: Human Translation
-ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
-ms.openlocfilehash: aa1808503e92d0afeb7c0f3f7f9da446d2f13b51
-ms.lasthandoff: 03/01/2017
-
-
+ms.openlocfilehash: 7898902c53fc043678e945c821029dd954aeb15f
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="step-1-activate-the-rights-management-service"></a>步骤 1：激活权限管理服务
  
 >适用于：Azure 信息保护
@@ -57,4 +53,3 @@ ms.lasthandoff: 03/01/2017
 [步骤 2 &#187;](infoprotect-tutorial-step2.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

@@ -14,13 +14,10 @@ ms.assetid: F7145090-C2EB-405A-A4CF-0240D57A36DA
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 5075e0856f81561b3e74dd52a3629cfe2dfa5dce
-
-
+ms.openlocfilehash: dedc3fa6c5cab519a0d6fe8ba835d8d92a9da276
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="client"></a>客户端
 
 本主题介绍 Rights Management Services 客户端 2.1 的用途和功能。
@@ -40,8 +37,3 @@ Rights Management Services SDK 2.1 适用于 RMS 客户端 2.1。 在 RMS SDK 2.
 * [有关 RMS 客户端 2.1 的 TechNet 文档](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

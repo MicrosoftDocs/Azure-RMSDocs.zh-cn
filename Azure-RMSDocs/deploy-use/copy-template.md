@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: f329ce49-e044-4c11-821d-5496d83c1bb3
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: f9549ecc1a1140208dc2d6161424a589d2cb6cba
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: faa7a67bfbd8410300081e762dd812a91194091b
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="copy-a-template"></a>复制模板
 
 >*适用于：Azure 信息保护、Office 365*

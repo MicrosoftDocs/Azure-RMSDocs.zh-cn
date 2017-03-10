@@ -12,13 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: f9b61b6b-05ba-4422-b8b0-cd20af774a2b
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: dca5f00dcad1e6e1db2e8558f7ce214dd81a9064
-
-
+ms.openlocfilehash: 380d49c6adb596fb20d0a36f24a4c60297627775
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="azure-information-protection-client-for-windows"></a>适用于 Windows 的 Azure 信息保护客户端
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护*
@@ -38,9 +35,3 @@ ms.openlocfilehash: dca5f00dcad1e6e1db2e8558f7ce214dd81a9064
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -53,8 +53,3 @@
 |--------------------------------|--------------------------|
 |关于如何激活权限管理以后如何在激活该服务后控制谁能对文件和电子邮件进行保护   →|[激活 Azure Rights Management](../deploy-use/activate-azure-classic.md)|
 |关于默认模板以及如何创建新的自定义模板   →|[为 Azure Rights Management 配置自定义模板](../deploy-use/create-template.md)|
-
-
-<!--HONumber=Jan17_HO1-->
-
-

@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 332160a0b2403313acc66f9b196ac068e370fb5c
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: e800818f87ab5b0b39ffdc244f871c04305039ae
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>如何更改或自定义 Azure 信息保护的现有标签
 
 >*适用于：Azure 信息保护*
@@ -49,6 +45,5 @@ ms.lasthandoff: 02/24/2017
 若要详细了解可针对标签配置的选项以及可针对 Azure 信息保护策略配置的其他设置，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-translationtype: Human Translation
-ms.sourcegitcommit: 5bc117cbff3226a2ee0ff375f0aa02fc3232a183
-ms.openlocfilehash: ed6bd63a945b73b792bcafcdc0d07e08e83fc344
-ms.lasthandoff: 02/27/2017
-
-
+ms.openlocfilehash: 696d744ae21d8957225a24d39547493515b63d76
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
 >*适用于：Azure 信息保护*

@@ -14,13 +14,10 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0e138ec62a16b52fd5657037988d8a9b8daa754f
-
-
+ms.openlocfilehash: 1ba0a2baf601c3526ab4ba515b82512561778a1d
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-use-adal-authentication"></a>操作说明：使用 ADAL 身份验证
 
 使用 Azure Active Directory 身份验证库 (ADAL) 为应用向 Azure RMS 进行身份验证。
@@ -124,8 +121,3 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
 - [IPC_AAD_APPLICATION_ID](https://msdn.microsoft.com/library/mt661867.aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-translationtype: Human Translation
-ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
-ms.openlocfilehash: 340cce9bec3eae7e507b5a33ebd380a38e9e7f19
-ms.lasthandoff: 03/01/2017
-
-
+ms.openlocfilehash: 30bb78ede8d882e18bca516d0d8da4c3946f000b
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="step-3-install-the-client"></a>步骤 3：安装客户端
 
 >*适用于：Azure 信息保护*

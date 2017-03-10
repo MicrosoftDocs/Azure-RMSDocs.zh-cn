@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 39d2fb244be91d7fc655efbdda24e4e268ac1329
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 9164ce8155f1d068ea0fa164226ff20df05da8ae
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：安装和配置客户端
 
 >*适用于：Azure 信息保护、Office 365*
@@ -43,6 +39,5 @@ Azure 信息保护客户端通过安装 Office 外接程序与 Office 应用程�
 **如果安装了 Microsoft Intune**：由于 Azure 信息保护应用包括 Microsoft Intune 应用软件开发工具包，因此通过 Intune 注册 iOS 和 Android 设备时，可以为这些设备部署并管理 Azure 信息保护查看器。 更多详细信息，请参阅 Intune 文档中的[在 Microsoft Intune 控制台中配置和部署移动应用程序管理策略](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)。 对于步骤 2，使用说明来发布策略托管应用。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

@@ -31,8 +31,3 @@
 |关于免费订阅：个人 RMS   →|[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)|
 |关于你所看到的两个版本的电子邮件附件文件   →|[自动创建的 .ppdf 文件是什么文件？](../rms-client/sharing-app-dialog-box.md)|
 
-
-
-<!--HONumber=Jan17_HO1-->
-
-

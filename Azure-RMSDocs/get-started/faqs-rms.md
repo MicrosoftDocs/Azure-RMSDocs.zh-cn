@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: dccc643ae49521262d5327b4d3d98801f88b3894
-ms.openlocfilehash: ed200df12b3d0665920091c7772ed88a79143e70
-ms.lasthandoff: 02/25/2017
-
-
+ms.openlocfilehash: 8b1d8a3df125f4d1950e4e657c535f128c6d0b3a
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
 >*适用于：Azure 信息保护、Office 365*
@@ -161,6 +157,5 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 除名称和外观外，**不得转发**既不是“转发”权限的对立面，也不是模板。 它实际上是一组权限，包括限制复制、打印和保存附件以及限制转发电子邮件。 这些权限通过所选收件人动态应用于用户，而不由管理员静态分配。 有关详细信息，请参阅[为 Azure Rights Management 配置使用权限](../deploy-use/configure-usage-rights.md)中的[电子邮件的“不得转发”选项](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)部分。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 602fef628f882eb79fe78b5acf89bde1721aa0ec
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: eb9f68994d92695412c64a7795c6ae2b2b094218
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>如何创建 Azure 信息保护的标签
 
 >*适用于：Azure 信息保护*
@@ -52,5 +48,4 @@ ms.lasthandoff: 02/24/2017
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
