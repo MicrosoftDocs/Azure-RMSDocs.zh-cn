@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: b88d4587be0549ea7364c9745c218865480a8d18
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: f577337cf7ce904a82ff23b165fdc7befe319092
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="decommissioning-and-deactivating-azure-rights-management"></a>解除 Azure Rights Management 授权和停用 Azure Rights Management
 
 >*适用于：Azure 信息保护、Office 365*
@@ -57,22 +53,13 @@ ms.lasthandoff: 02/24/2017
 
 #### <a name="to-deactivate-rights-management-from-the-office-365-admin-center"></a>从 Office 365 管理中心停用权限管理
 
-1.  使用你的工作或学校帐户（Office 365 部署的管理员）[登录到 Office 365](https://portal.office.com/) 。
+1. 转到 Office 365 管理员的 [Rights Management 页](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx)。
+    
+    如果系统提示登录，请使用 Office 365 的全局管理员帐户。    
 
-2.  如果未自动显示 Office 365 管理中心，请选择左上方的“应用启动程序”图标，然后选择“管理”。 “管理”  磁贴只会向 Office 365 管理员显示。
+2. 在“Rights Management”  页面中，单击“停用” 。
 
-    > [!TIP]
-    > 有关管理中心的帮助，请参阅 [关于 Office 365 管理中心 - 管理员帮助](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547)。
-
-3.  在左窗格中，单击“服务设置” 。
-
-4.  单击“权限管理” 。
-
-5.  在 **“权限管理”** 页上，单击 **“管理”**。
-
-6.  在“Rights Management”  页面中，单击“停用” 。
-
-7.  当提示“是否要停用 Rights Management?”时，请单击“停用”。
+3.  当提示“是否要停用 Rights Management?”时，请单击“停用”。
 
 现在，你应该会看到“Rights Management 未激活”  和用于激活的选项。
 
@@ -84,11 +71,10 @@ ms.lasthandoff: 02/24/2017
 
 3.  在 **“Active Directory”** 页中，单击 **“权限管理”**。
 
-4.  为 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 选择要管理的目录，单击“停用”，然后确认你的操作。
+4.  请确保已选择你的租户名称，单击“停用”，然后确认你的操作。
 
 “权限管理状态”现在应显示为“非活动”，而“停用”选项将替换为“激活”。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

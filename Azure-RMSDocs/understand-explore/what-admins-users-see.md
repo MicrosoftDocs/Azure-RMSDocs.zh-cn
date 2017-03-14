@@ -4,7 +4,7 @@ description: "可看到管理员和用户如何查看并使用 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/26/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 4fb412ff1128842fd1f3c95d39a4a626c67f97a0
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 254386ad7cda2d3e178eb9520e6282abe609c158
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="azure-rms-in-action-what-administrators-and-users-see"></a>运行中的 Azure RMS：管理员和用户看到的内容
 
 >*适用于：Azure 信息保护、Office 365*
@@ -128,7 +123,7 @@ ms.lasthandoff: 02/24/2017
 
 已配置规则，以便对包含这些信息并发送到组织外部的电子邮件自动使用 RMS 模板应用权限保护以限制为只有公司员工才能访问这些邮件。
 
-此处将规则配置为使用其中一个默认模板，即我们的第一个示例中的“VanArsdel, Ltd - 机密” 。 但你还可以看到模板选项如何包括你已创建的任何自定义模板以及特定于 Exchange 的“不要转发”选项  。
+此处将规则配置为使用其中一个默认模板，即我们的第一个示例中的“VanArsdel, Ltd - 机密” 。 但你还可以看到模板选项如何包括你已创建的任何自定义模板，以及特定于 Exchange 的“不要转发”选项。
 
 > [!NOTE]
 > 如果你看到的配置选项和图片略有不同，你可能需要在配置规则时，首先选择“更多选项”。 然后，你可以选择“修改消息安全性” > “应用权限保护”，然后选择 RMS 模板。

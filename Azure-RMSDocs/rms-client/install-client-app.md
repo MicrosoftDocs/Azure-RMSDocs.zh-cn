@@ -4,7 +4,7 @@ description: "说明用户如何安装适用于 Windows 的 Azure 信息保护�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 92ad7198aad17664062b8d007fa95524fe535443
-ms.openlocfilehash: d4820070aff013b42ee49f4c7b81e78ffbc7a049
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: f47cad9d613517413ab5f3a61d24a4c8b9f79e15
+ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+translationtype: HT
 ---
-
 # <a name="download-and-install-the-azure-information-protection-client"></a>下载并安装 Azure 信息保护客户端
 
 如果管理员没有为你安装 Azure 信息保护客户端，你可自行安装。 必须是电脑的本地管理员才可安装此客户端，这样可对文档和电子邮件进行标记和保护。
@@ -28,7 +24,7 @@ ms.lasthandoff: 02/24/2017
 
 - Azure 信息保护客户端要求使用的最低版本为 Microsoft .NET Framework 4.6.2，如果缺少此版本，安装程序会尝试下载并安装此必备项。 在客户端安装过程中安装此必备项后，必须重启计算机。
 
-- 如果计算机运行的是 Windows 7 SP1，Azure 信息保护客户端需要特定更新 [KB 2533623](https://support.microsoft.com/kb/2533623)。 如果电脑需要此更新但未安装更新，安装完成后，会显示一条消息，即必须安装此更新才能使用 Azure 信息保护客户端的所有功能。 
+- 如果计算机运行的是 Windows 7 SP1，Azure 信息保护客户端需要特定更新 KB 2533623。 如果电脑需要此更新但未安装更新，则安装完成后会显示一条消息，即 Azure 信息保护客户端需要此更新。 此更新安装完成后，才能使用 Azure 信息保护客户端的所有功能。 
 
 ## <a name="to-download-and-install-the-azure-information-protection-client"></a>下载并安装 Azure 信息保护客户端    
 
@@ -73,4 +69,3 @@ ms.lasthandoff: 02/24/2017
  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  
-

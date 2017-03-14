@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
-ms.openlocfilehash: b0ddf66acf0db37d0396647a5518ccf48195019c
-ms.lasthandoff: 03/01/2017
-
-
+ms.openlocfilehash: adb444f7777304ed40b5b5f988e4efb73268ae14
+ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+translationtype: HT
 ---
-
-
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
@@ -81,7 +76,9 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 - PowerShell 模块需要 Windows PowerShell 4.0 版本，此版本可能需要在旧版操作系统上安装。 有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 安装程序不会为你检查或安装此必备项。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 **$PSVersionTable**。
 
-- 运行 Windows 7 Service Pack 1 的计算机需要 [KB 2533623](https://support.microsoft.com/en-us/kb/2533623)，可在安装客户端后安装。 如果需要此更新但尚未安装，系统会提示你进行安装。
+- 运行 Windows 7 Service Pack 1 的计算机需要 KB 2533623。 有关此更新的详细信息，请参阅 [Microsoft 安全公告：不安全的库加载可能允许远程执行代码](https://support.microsoft.com/en-us/kb/2533623)。 可以直接安装此更新，也可以使用为你安装的另一个更新代替此更新。
+    
+    如果需要此更新且未安装，则客户端安装将警告你必须安装此更新。 可以在安装客户端后安装此更新，但某些操作将被阻止并再次显示该信息。  
 
 > [!NOTE]
 > 安装需要本地管理权限。
@@ -89,8 +86,10 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 除了使用以下说明，Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可通过使用该目录的任意软件更新服务来安装和更新客户端。 
 
 1. 从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#microsoft-下载中心) 下载 Azure 信息保护客户端。 
+    
+    如果存在可用的预览版本，则保留此版本仅供测试使用。 它不用于生产环境中的最终用户。 
 
-2. 对于默认安装，只需运行可执行文件 **AzInfoProtection.exe**。 但是，若要查看安装选项，请先使用 **/help** 运行可执行文件：`AzInfoProtection.exe /help`
+2. 对于默认安装，只需运行可执行文件，例如 **AzInfoProtection.exe**。 但是，若要查看安装选项，请先使用 **/help** 运行可执行文件：`AzInfoProtection.exe /help`
 
    有关无提示安装客户端的示例：`AzInfoProtection.exe /quiet`
    
@@ -196,4 +195,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

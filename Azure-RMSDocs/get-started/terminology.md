@@ -4,7 +4,7 @@ description: "对 Microsoft Azure 信息保护相关的单词、短语或缩略�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: a5cfa773d440e92fe9d3e88e242dfb25f7174400
-
-
+ms.openlocfilehash: 5fecc61fb77625047a5ebedad4ff906fe8c27bbe
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 
 >*适用于：Azure 信息保护、Office 365*
@@ -64,15 +61,10 @@ ms.openlocfilehash: a5cfa773d440e92fe9d3e88e242dfb25f7174400
 |RMS 连接器|请参阅 *Rights Management 连接器*。|
 |个人 RMS|一个免费订阅，当用户的组织未订阅 Office 365 或 Azure Active Directory 时，该用户可通过该订阅来使用 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 。|
 |RMS 共享应用程序|请参阅 *Rights Management 共享应用程序*。|
+|仅保护模式|不存在要应用标签的 Azure 信息保护策略时，Azure 信息保护客户端的一种操作模式。 在此模式下，不显示分类标签，但用户仍可以应用 Rights Management 保护。|
 |超级用户|高度受信任的管理员组，可以解密及访问组织使用 Rights Management 服务保护的文件。 通常，进行合法电子发现时需要此访问级别，并且审核团队也需要此访问级别。|
 |租户密钥|也称为服务器许可方证书 (SLC) 密钥。<br /><br />组织独有的密钥，可为链接到此租户密钥的所有[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]加密功能提供终极保护。|
 |取消保护|从文件或电子邮件中删除 Rights Management 控件，它使用加密、标识和访问控制策略帮助保护数据。|
 |使用许可证|向打开受 Rights Management 服务保护的文件或电子邮件的用户授予的每文档证书。 该证书包含此用户对文件或电子邮件消息所具有的权限、用于加密内容的加密密钥，以及文档策略中定义的其他访问限制。|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO4-->
-
-

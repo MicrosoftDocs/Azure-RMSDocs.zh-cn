@@ -4,7 +4,7 @@ description: "有关在 Azure 经典门户中创建和管理自定义模板的�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 11971a176b9c5f413bbe6daa208c062a131343be
-ms.openlocfilehash: 5ab725294d93540f35c395eca08f5f3fbc6ae392
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 9d0b71db6245e49765a0f79aaa901141a155372d
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="create-configure-and-publish-a-custom-template"></a>创建、配置和发布自定义模板
 
 >*适用于：Azure 信息保护、Office 365*
@@ -49,16 +44,16 @@ ms.lasthandoff: 02/24/2017
 
     -   从 [Azure 经典门户](http://go.microsoft.com/fwlink/p/?LinkID=275081)：
 
-        1.  在左窗格中，单击“ACTIVE DIRECTORY” 。
+        1. 在左窗格中，单击“ACTIVE DIRECTORY” 。
 
-        2.  在 **“Active Directory”** 页中，单击 **“权限管理”**。
+        2. 在 **“Active Directory”** 页中，单击 **“权限管理”**。
 
-        3.  为权限管理选择要管理的目录。
-
-        4.  如果你尚未激活 Rights Management，请单击“激活”并确认你的操作  。
+        3. 如果“Rights Management 状态”显示为“非活动”，请单击“激活”并确认你的操作。
 
             > [!NOTE]
-            > 有关详细信息，请参阅[激活 Azure Rights Management](activate-service.md)。
+            > 有关详细信息，请参阅[激活 Azure Rights Management](activate-service.md)
+            >
+        4. 如果“Rights Management 状态”显示为“活动”，请选择你的 Active Directory 租户的名称。
 
 2.  创建新模板：
 

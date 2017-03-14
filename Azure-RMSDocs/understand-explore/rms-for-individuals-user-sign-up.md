@@ -4,7 +4,7 @@ description: "此免费帐户的注册说明以及此过程工作原理的技术
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 1134bff1935b3fada661865f31104e0316e8fecd
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 12f681ccfbcd7da2192df2be057f92d31a856bda
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-users-sign-up-for-rms-for-individuals"></a>用户如何注册个人 RMS
 
 >*适用于：Azure 信息保护*
@@ -87,7 +83,7 @@ ms.lasthandoff: 02/24/2017
 
     -   记录在组织中使用的所有权限管理活动。 这是一项非常强大的功能，因为你不仅能够监视哪些文件受到保护，哪些用户成功访问了那些受保护文件，还能够识别试图访问受保护文件的未授权用户的潜在可疑行为。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
 
-    -   如果这些 [Azure RMS 订阅](https://technet.microsoft.com/dn858608)支持这些功能，请提供用户跟踪和撤销其受保护的文档的功能。 有关详细信息，请参阅 [RMS 共享应用程序用户指南](../rms-client/sharing-app-user-guide.md)中的[跟踪和撤消文件](../rms-client/sharing-app-track-revoke.md)。
+    -   如果这些[订阅](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)支持这些功能，请提供用户跟踪和撤销其受保护的文档的功能。 有关详细信息，请参阅 [Azure 信息保护用户指南](../rms-client/client-user-guide.md)中的[跟踪和撤销文档](../rms-client/client-track-revoke.md)。
 
     -   实现“自带密钥”解决方案 (BYOK)，以便能够根据 IT 策略，在本地生成 Azure 权限管理的租户密钥，并使用硬件安全模块 (HSM) 将该密钥安全传输到 Microsoft。 有关详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)。
 

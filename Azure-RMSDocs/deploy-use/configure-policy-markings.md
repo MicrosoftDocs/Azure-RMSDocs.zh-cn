@@ -4,27 +4,25 @@ description: "当文档或电子邮件中分配一个标签时，可以选择几
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 4ddacf2be34cb7921dfbe282a0476a8cd47de2cf
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: f1ac1ed3aada5d332764db962794d8d6b5428bd7
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
 >*适用于：Azure 信息保护*
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印：
 
-应用标签和保存文档时，可视标记将应用于 Word、Excel 和 PowerPoint 文档。 对于电子邮件，发送电子邮件时应用可视标记。
+在这些 Office 应用程序中应用标签和保存文档时，会将可视标记应用于 Word、Excel 和 PowerPoint 文档。 对于电子邮件，从 Outlook 发送电子邮件时会应用可视标记。
+
+在以下情况下不会将可视标记应用于文档：使用文件资源管理器和右键单击操作应用标签时。 或者，使用 PowerShell 对文档进行分类时。
 
 有关这些可视标记的其他信息：
 
@@ -81,5 +79,4 @@ ms.lasthandoff: 02/24/2017
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
