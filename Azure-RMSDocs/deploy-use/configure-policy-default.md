@@ -4,14 +4,14 @@ description: "了解如何配置 Azure 信息保护的默认策略。 如果修�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 08b110d46b41da6582ed59363f6f6d66450c6ec2
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 3a2c5af41023021893f0eb751321e798ea523e8c
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
 translationtype: HT
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
@@ -19,6 +19,7 @@ translationtype: HT
 >*适用于：Azure 信息保护*
 
 使用以下信息来了解如何配置 Azure 信息保护的默认策略。 如果修改默认策略，则可以引用这些值以返回默认策略。
+
 
 ## <a name="information-protection-bar"></a>信息保护栏
 
