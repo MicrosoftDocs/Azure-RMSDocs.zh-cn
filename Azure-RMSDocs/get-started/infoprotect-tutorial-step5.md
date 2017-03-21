@@ -5,7 +5,7 @@ keywords:
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 03/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 675a1411bff99983c35f301946e816f2e593caf8
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 5bf04b9d7c2de6fbdfe2a5c19b82343088ff8f89
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
 translationtype: HT
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>步骤 5：了解如何在实际操作中共享受保护的文件和如何跟踪文档 
@@ -89,7 +89,7 @@ translationtype: HT
 
     ![自定义保护的信息横幅](../media/information-banner-custom-protection.png)
 
-2.  在“开始”选项卡中，单击“保护” > “跟踪和撤销”：
+2.  在“**开始**”选项卡中，依次单击“**保护**” > “**跟踪和撤销**”：
 
     ![跟踪使用情况选项](../media/track-usage-callout.png)
 

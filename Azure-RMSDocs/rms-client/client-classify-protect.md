@@ -4,7 +4,7 @@ description: "说明如何对文档和电子邮件进行分类和保护。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6d727cdbfba193a80742441ae1a372d2e8fbd699
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: edc8c7227a0f2b493a64f25a26a64aef3a314e39
+ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
 translationtype: HT
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>使用 Azure 信息保护对文件或电子邮件进行分类和保护
@@ -28,9 +28,9 @@ translationtype: HT
 
 受保护文件可安全地与他人共享。 例如，将文件附加到电子邮件，或从你的 SharePoint 站点发送邀请。
 
-如果你定期与组织外部人员共享文件，管理员可能为你配置了设置保护的标签，以便这些人员可以读取它。 此外，也可以在共享前使用[文件资源管理器设置文件的自定义权限](#using-file-explorer-to-classify-and-protect-files)。 
+如果你定期与组织外部人员共享文件，管理员可能为你配置了设置保护的标签，以便这些人员可以读取它。 此外，也可以在共享前使用 [Office 应用程序来设置自定义权限](#set-custom-permissions-for-a-document)，或使用[文件资源管理器设置文件的自定义权限](#using-file-explorer-to-classify-and-protect-files)。 
 
-如果设置自己的自定义权限，并且文件已受到保护以供内部使用，请首先创建一个副本。 使用此副本设置自定义权限。  
+如果设置你自己的自定义权限，并且文件已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。  
 
 如果使用自定义权限保护文件，请使用标准共享机制共享文件。 如果你要与之共享的人员是第一次接收受保护文件，他们可能需要阅读说明才能查看。 对于这些人，你可以复制并粘贴以下消息：**我已使用 Microsoft Azure 信息保护对此文件提供保护。若是首次使用，请参阅这些[说明](https://aka.ms/rms-signup)。**
 
@@ -61,9 +61,32 @@ translationtype: HT
 
 - 如果管理员最近为你配置了新标签，请尝试关闭 Office 应用程序的所有实例，然后重新打开。 此操作将检查对你的标签所做的更改。
 
-- 如果缺少应用保护的标签，那么可能你使用的 Office 版本不支持应用 Rights Management 保护。 若要验证，请单击“保护” > “帮助和反馈”，检查“客户端状态”部分中是否存在消息“此客户端未获得 Office Professional Plus 许可”。 
+- 如果缺少应用保护的标签，那么可能你使用的 Office 版本不支持应用 Rights Management 保护。 若要验证，请依次单击“**保护**” > “**帮助和反馈**”，检查“**客户端状态**”部分中是否显示消息“**此客户端未获许可使用 Office Professional Plus**”。 
 
 - 此标签采用的作用域策略可能不包括你的帐户。 请与你的技术支持或管理员一起检查。
+
+### <a name="set-custom-permissions-for-a-document"></a>设置文档的自定义权限
+
+可以指定你自己的文档保护设置，而不使用管理员可能与选定标签一起添加的保护设置。
+
+1. 在“**开始**”选项卡上的“**保护**”组中，依次单击“**保护**” > “**自定义权限**”：
+
+    ![“自定义权限”选项](../media/custom-permissions-callout.png)
+    
+    请注意，你指定的任何自定义权限将替换（而不是补充）管理员可能已为选定标签定义的保护设置。  
+
+2. 在“**Microsoft Azure 信息保护**”对话框中，指定以下内容：
+
+    - **使用自定义权限进行保护**：请务必选中此选项，这样才能指定并应用自定义权限。 取消选中此选项即撤销任何自定义权限。
+    
+    - **选择权限**：如果要保护文件，以便只有你可以访问，请选中“**仅限自己访问**”。 否则，请选中“选择希望指定对象拥有的访问级别”。
+
+    - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 请注意，暂不支持个人电子邮件地址。
+        
+    - **过期访问**：仅对具有时效性的文件选择此选项，以使指定的人员无法在指定日期后打开选定的一个文件或多个文件。 你仍可以打开原始文件，但在选定日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
+
+5. 单击“**应用**”，然后等待“**已应用自定义权限**”消息。 然后单击 **“关闭”**。
+
 
 ### <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Azure 信息保护栏的键盘快捷方式
 

@@ -4,7 +4,7 @@ description: "保护文档后，可跟踪用户如何使用它们。 如果用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a79c6d1ff5b3a031138cb3d4dde179909134353a
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 710e614f9ba6e5732046cfb85d3463875ab34566
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
 translationtype: HT
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>使用 Azure 信息保护时跟踪和撤销文档
@@ -48,7 +48,7 @@ translationtype: HT
 
 1. 打开要跟踪或撤销的受保护文档。
 
-2. 在“开始”选项卡的“保护”组中，单击“保护” > “跟踪和撤销”：
+2. 在“**开始**”选项卡上的“**保护**”组中，依次单击“**保护**” > “**跟踪和撤销**”：
 
     ![跟踪使用情况选项](../media/track-usage-callout.png)
 

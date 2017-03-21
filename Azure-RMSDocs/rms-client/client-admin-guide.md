@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: adb444f7777304ed40b5b5f988e4efb73268ae14
-ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+ms.openlocfilehash: 3cc1cf7f35c8cf66423c00332691c2291a8b6106
+ms.sourcegitcommit: 02e860196efca306ef9d1e61c1d89c4d8593c912
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
@@ -70,7 +70,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 此外：
 
-- 完整安装 Azure 信息保护客户端要求使用的最低版本为 Microsoft .NET Framework 4.6.2，如果缺少此版本，安装程序会尝试下载并安装此必备项。 在客户端安装过程中安装此必备项后，将重启计算机。
+- 默认情况下，完整安装的 Azure 信息保护客户端要求至少有 Microsoft .NET Framework 4.6.2；如果没有，那么安装程序会尝试下载并安装此系统必备。 在客户端安装过程中安装此必备项后，将重启计算机。 可以使用自定义安装参数忽略此系统必备，尽管不建议这样做。
 
 - 如果单独安装 Azure 信息保护查看器，则要求的最低版本为 Microsoft .NET Framework 4.5.2，如果缺少此版本，安装程序会尝试下载并安装它。
 
@@ -83,7 +83,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 > [!NOTE]
 > 安装需要本地管理权限。
 
-除了使用以下说明，Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可通过使用该目录的任意软件更新服务来安装和更新客户端。 
+Microsoft 更新目录中也包含 Azure 信息保护客户端，因此可以利用使用该目录的任何软件更新服务来安装和更新客户端。 
 
 1. 从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#microsoft-下载中心) 下载 Azure 信息保护客户端。 
     
@@ -91,11 +91,15 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 2. 对于默认安装，只需运行可执行文件，例如 **AzInfoProtection.exe**。 但是，若要查看安装选项，请先使用 **/help** 运行可执行文件：`AzInfoProtection.exe /help`
 
-   有关无提示安装客户端的示例：`AzInfoProtection.exe /quiet`
-   
-   有关无提示仅安装 PowerShell cmdlet 的示例：`AzInfoProtection.exe  PowerShellOnly=true /quiet`
-   
-   此外，如果在运行 Office 2010 的计算机上安装客户端，并且你的用户不是其计算机的本地管理员，则须指定 **ServiceLocation** 参数（不包括在帮助屏幕中）。 有关详细信息，请参阅下一节。
+    有关无提示安装客户端的示例：`AzInfoProtection.exe /quiet`
+    
+    有关无提示仅安装 PowerShell cmdlet 的示例：`AzInfoProtection.exe  PowerShellOnly=true /quiet`
+    
+    帮助屏幕中未列出的其他参数：
+    
+    - **ServiceLocation**：如果要在运行 Office 2010 的计算机上安装客户端，且你的用户不是其计算机上的本地管理员，或者你不希望系统会向他们发出提示，请使用此参数。 [详细信息](#more-information-about-the-servicelocation-installation-parameter) 
+    
+    - **DowngradeDotNetRequirement**：使用此参数可以不遵守一定要有 Microsoft Framework .NET 版本 4.6.2 的要求。 [详细信息](#more-information-about-the-downgradedotnetrequirement-installation-parameter)
 
 3. 如果以交互方式安装，并且无法连接到 Office 365 或 Azure Active Directory，但出于演示目的，想要通过本地策略看到和体验 Azure 信息保护客户端，请选择此选项安装**演示策略**。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。
     
@@ -107,13 +111,15 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
     
     - 对于其他版本的 Office，请重启任一 Office 应用程序和文件管理器的所有实例。 
         
-5. 可通过查看 %temp% 文件夹中的安装日志文件，来确认安装已成功。 此文件具有以下命名格式：`Microsoft_Azure_Information_Protection_<number>_<number>_MSIP.Setup.Main.msi.log`
+5. 可以查看默认在 %temp% 文件夹中创建的安装日志文件来确认安装是否成功。 可以使用 **/log** 安装参数更改此位置。 
+ 
+    此文件具有以下命名格式：`Microsoft_Azure_Information_Protection_<number>_<number>_MSIP.Setup.Main.msi.log`
     
     例如：**Microsoft_Azure_Information_Protection_20161201093652_000_MSIP.Setup.Main.msi.log**
     
     在此日志文件中搜索以下字符串：**Product: Microsoft Azure Information Protection -- Installation completed successfully**（产品：Microsoft Azure 信息保护 - 已成功完成安装）。 如果安装失败，此日志文件包含有助于标识并解决任何问题的详细信息。
 
-### <a name="additional-instructions-for-office-2010-only"></a>仅适用于 Office 2010 的其他说明
+### <a name="more-information-about-the-servicelocation-installation-parameter"></a>详细了解 ServiceLocation 安装参数
 
 如果为具有 Office 2010 的用户安装客户端，并且他们没有本地管理权限，请指定用于 Azure 权限管理服务的 ServiceLocation 参数和 URL。 此参数和值将创建和设置以下注册表项：
 
@@ -144,6 +150,59 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 有关为 Office 2010 和 Azure RMS 无提示安装客户端的示例：`AzInfoProtection.exe /quiet ServiceLocation=https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com`
 
 
+### <a name="more-information-about-the-downgradedotnetrequirement-installation-parameter"></a>详细了解 DowngradeDotNetRequirement 安装参数
+
+为了使用 Windows 更新支持自动更新，并与 Office 应用程序可靠集成，Azure 信息保护客户端使用 Microsoft .NET Framework 版本 4.6.2。 默认情况下，安装程序会检查是否有此版本；如果没有，则会尝试进行安装。 然后，安装程序要求重启计算机。
+
+如果安装这一 Microsoft .NET Framework 更高版本不可行，可以在安装客户端时使用 **DowngradeDotNetRequirement=True** 参数和值，这样就可以在已安装 Microsoft .NET Framework 版本 4.5.1 的情况下忽略这项要求。
+
+例如： `AzInfoProtection.exe DowngradeDotNetRequirement=True`
+
+建议谨慎使用此参数。还请注意，将 Azure 信息保护客户端与旧版 Microsoft .NET Framework 结合使用时，Office 应用程序存在报告的尚未解决的问题。 如果确实遇到了尚未解决的问题，请先升级到建议的版本，然后再尝试其他故障排除解决方案。 
+
+此外，还请注意，如果使用 Windows 更新来不断更新 Azure 信息保护客户端，还需要使用另一软件部署机制，才能将客户端升级到更高版本。
+
+## <a name="additional-checks-and-troubleshooting"></a>其他检查和故障排除
+
+使用“**帮助和反馈**”选项打开“**Microsoft Azure 信息保护**”对话框：
+
+- 在 Office 应用程序中：在“**开始**”选项卡上的“**保护**”组中，依次选择“**保护**”和“**帮助和反馈**”。
+
+- 在文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“**分类和保护**”和“**帮助和反馈**”。 
+
+### <a name="help-and-feedback-section"></a>“**帮助和反馈**”部分
+
+默认情况下，“**提供详细信息**”链接转到 [Azure 信息保护](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)网站，但也可以根据 Azure 信息保护策略中的一项[策略设置](../deploy-use/configure-policy-settings.md)，将其配置为转到自定义 URL。
+
+使用“**给我们发送反馈**”链接可以向信息保护团队发送建议或请求。 对于技术支持，请勿将此选项，而是参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)。 
+
+**导出日志**用于自动收集并附加 Azure 信息保护客户端的日志文件，如果你必须将日志文件发送给 Microsoft 支持人员的话。 最终用户也可以使用此选项，将这些日志文件发送给你的支持人员。
+
+若要获取诊断信息并重置客户端，请选择“**运行诊断**”。 诊断测试完成后，单击“**复制结果**”，将信息粘贴到电子邮件中，以便你可以发送给 Microsoft 支持人员，或者最终用户可以发送给你的支持人员。 测试完成后，还可以重置客户端。
+
+有关“重置”选项的详细信息：
+
+- 不是本地管理员也能使用此选项，并且不会在事件查看器中记录此操作。 
+
+- 除非文件被锁定，否则此操作将删除 **%localappdata%\Microsoft\MSIPC** 中的所有文件，该路径用于存储客户端证书和权限管理模板。 此操作不会删除 Azure 信息保护策略或客户端日志文件，也不会注销用户。
+
+- 会删除以下注册表项和设置：**HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**。 如果为此注册表项配置设置（例如，由于要从 AD RMS 迁移并且网络上仍有服务连接点，因此配置用于重定向到 Azure 信息保护租户的设置），那么重置客户端后必须重新配置注册表设置。
+
+- 重置客户端后，必须重新初始化用户环境（也称为“引导”），下载客户端证书和最新模板。 为了执行此操作，请关闭 Office 的所有实例，然后重新启动 Office 应用程序。 此操作还会检查是否已下载最新的 Azure 信息保护策略。 完成此操作之前，请勿再次运行诊断测试。
+
+
+### <a name="client-status-section"></a>“**客户端状态**”部分
+
+使用“**连接身份**”值来确认显示的用户名是否是要用于 Azure 信息保护身份验证的帐户。 此用户名必须与用于 Office 365 或 Azure Active Directory 的帐户一致，并与为 Azure 信息保护所配置的租户中的帐户一致。
+
+如果需要以与显示用户名不同的用户身份登录，请参阅[如何以其他用户身份登录？](../get-started/faqs-infoprotect.md#how-do-i-sign-in-as-a-different-user)
+
+“**上次连接时间**”显示客户端最后一次连接组织的 Azure 信息保护服务的时间，并且可与“**信息保护策略安装日期和时间**”结合使用，从而确认 Azure 信息保护策略上次安装或更新的时间。 当客户端连接服务时，如果它发现与其当前策略有差异，则会自动下载最新策略，频率同样也是每 24 小时。 如果在显示时间后完成策略更改，关闭并重新打开 Office 应用程序。
+
+如果看到**此客户端未获许可使用 Office Professional Plus**：Azure 信息保护客户端检测到安装的 Office 版本不支持应用 Rights Management 保护。 执行此检测时，便会发现应用保护的标签未显示在 Azure 信息保护栏上。
+
+使用“**版本**”信息可以确认安装的是哪个版本的客户端。 可以单击“**最近更新**”链接来查看客户端的“[版本发行历史记录](client-version-release-history.md)”，检查是否为最新发行版本以及相应的修补程序和新功能。
+
 ## <a name="to-uninstall-the-azure-information-protection-client"></a>卸载 Azure 信息保护客户端
 
 可以使用以下任何选项：
@@ -153,34 +212,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 - 重新运行可执行文件（如 **AzInfoProtection.exe**），并从“修改安装程序”页上，单击“卸载”。 
 
 - 使用 **/uninstall** 运行可执行文件。 例如： `AzInfoProtection.exe /uninstall`
-
-
-## <a name="additional-checks-to-verify-installation-connection-status-or-send-feedback"></a>其他检查：验证安装、连接状态或发送反馈
-
-1. 打开 Office 应用程序，在“**主页**”选项卡的“**保护**”组中单击“**保护**”，然后单击“**帮助和反馈**”。
-
-2. 在“**Microsoft Azure 信息保护**”对话框中，注意以下各项：
-
-    - 在“客户端状态”部分：使用“版本”值来验证安装是否成功。 此外，还会看到客户端上一次连接到组织的 Azure 信息保护服务的时间，以及上一次安装或更新 Azure 信息保护策略的时间。 当客户端连接到该服务时，如果它发现其当前策略中存在更改，它会自动下载最新的策略。 如果在显示时间后完成策略更改，关闭并重新打开 Office 应用程序。
-    
-        还可以看到标识用于向 Azure 信息保护进行身份验证的帐户的显示用户名。 此用户名必须与用于 Office 365 或 Azure Active Directory 的帐户，以及属于为 Azure 信息保护所配置的某个租户的帐户相匹配。
-
-    - 在“帮助和反馈”部分中：**告诉我详细信息链接**默认转到 [Azure 信息保护](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)网站；但作为 Azure 信息保护策略中的一个[策略设置](../deploy-use/configure-policy-settings.md)，它也可配置为自定义 URL。
-        
-        使用“发送反馈”链接向信息保护团队发送建议或请求。 对于技术支持，请勿将此选项，而是参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)。 
-    
-        若要获取诊断信息以及重置客户端，请单击“运行诊断”。 诊断测试完成后，单击“复制结果”将信息粘贴到电子邮件中，以发送给支持人员或 Microsoft 支持部门。 测试完成后，还可以重置客户端。
-        
-        有关“重置”选项的详细信息：
-        
-        - 不是本地管理员也能使用此选项，并且不会在事件查看器中记录此操作。 
-        
-        - 除非文件被锁定，否则此操作将删除 **%localappdata%\Microsoft\MSIPC** 中的所有文件，该路径用于存储客户端证书和权限管理模板。 此操作不会删除 Azure 信息保护策略或客户端日志文件，也不会注销用户。
-        
-        - 会删除以下注册表项和设置：**HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**。 如果为此注册表项配置设置（例如，由于要从 AD RMS 迁移并且网络上仍有服务连接点，因此配置用于重定向到 Azure 信息保护租户的设置），那么重置客户端后必须重新配置注册表设置。
-        
-        - 重置客户端后，必须重新初始化用户环境（也称为“引导”），下载客户端证书和最新模板。 为了执行此操作，请关闭 Office 的所有实例，然后重新启动 Office 应用程序。 此操作还会检查是否已下载最新的 Azure 信息保护策略。 完成此操作之前，请勿再次运行诊断测试。
-
 
 ## <a name="next-steps"></a>后续步骤
 现在你已安装 Azure 信息保护客户端，若要了解支持此客户端所需的其他信息，请参阅以下内容：

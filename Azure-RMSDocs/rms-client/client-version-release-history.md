@@ -4,7 +4,7 @@ description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/06/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cfd5eae4191cb0b09d8d43f9f708c80ff724d136
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 70c358954a39b02610a77ec81074379dc574158b
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-version-release-history"></a>Azure 信息保护客户端：版本发行历史记录
@@ -30,6 +30,33 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 > 不会列出小修补程序，因此，如果 Azure 信息保护客户端遇到问题，请先检查它是否是最新正式发布版的问题。 如果是，则检查当前预览版本。
 >  
 > 如果仍有问题，请参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
+
+## <a name="version-14210"></a>版本 1.4.21.0
+
+**发布时间**：2017 年 3 月 15 日
+
+**要求变化：**
+
+旧版新增了完整客户端的 Microsoft .NET Framework 4.6.2 系统必备。 可以使用自定义安装参数 **DowngradeDotNetRequirement** 忽略此系统必备，尽管不建议这样做。 有关详细信息，请参阅管理员指南中的[客户端安装部分](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users)。
+
+
+**修补程序**：
+
+- 支持使用映射驱动器分类和保护文件。
+
+- 查看器支持大型文件 (>250MB)。 
+
+- 配置 HYOK 后，Outlook 可以应用已配置为使用 Azure Rights Management 模板或 AD RMS 模板的标签。
+
+
+**新增功能**：
+
+- 能够在 Office 应用程序中设置自定义权限，从而可以为你自己、外部组或另一组织中的所有用户设置保护。 有关详细信息，请参阅用户指南中的[设置文档的自定义权限](client-classify-protect.md#set-custom-permissions-for-a-document)。
+    
+- PDF 文件现支持仅应用分类的标签。
+
+- 对于 PDF 文件，查看器现支持搜索、缩放和旋转等选项。 若要使用这些选项，请右键单击查看器中显示的文件。
+
 
 ## <a name="version-131552"></a>版本 1.3.155.2
 
@@ -75,7 +102,7 @@ Microsoft .NET Framework
 
 - 安装 Azure 信息保护客户端后，用户可从 Office 应用程序运行的诊断测试和重置选项：在“开始”选项卡的“保护”组中，单击“保护”、“帮助和反馈”，然后单击“运行诊断”。 
 
-    有关此选项的详细信息，请参阅客户端安装文档中的[验证安装、连接状态或发送反馈](client-admin-guide.md#additional-checks-to-verify-installation-connection-status-or-send-feedback)部分。
+    若要详细了解此选项，请参阅管理员指南中的[其他检查和故障排除](client-admin-guide.md#additional-checks-and-troubleshooting)部分。
 
 ## <a name="version-11230"></a>版本 1.1.23.0
 

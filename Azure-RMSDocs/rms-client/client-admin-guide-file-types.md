@@ -4,7 +4,7 @@ description: "有关支持的文件类型、文件扩展名以及负责适用于
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8247b75a5e5835b1e091a4b9e380ca33487e60f1
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: fe75945793d28ed78b46f6b9a421bd7aa9ae3dfd
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
 translationtype: HT
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure 信息保护客户端支持的文件类型
@@ -34,6 +34,8 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 以下文件类型仅支持分类。 其他文件类型在受保护时也支持分类。
 
+- **Adobe 可移植文档格式**：pdf
+
 - **Microsoft Visio**：.vsdx、.vsdm、.vssx、.vssm、.vsd、.vdw、.vst
 
 - **Microsoft Project**：.mpp、.mpt
@@ -41,7 +43,6 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 - **Microsoft Publisher**：.pub
 
 - **Microsoft Office 97、Office 2010、Office 2003**：.xls、.xlt、.doc、.dot、.ppt、.pps、.pot
-
 - **Microsoft XPS**：.xps .oxps
 
 - **图像**：.jpg、.jpe、.jpeg、.jif、.jfif、.jfi.png、.tif、.tiff

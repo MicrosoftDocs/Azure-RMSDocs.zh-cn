@@ -1,10 +1,10 @@
 ---
-title: "Azure 信息保护开发人员指南 | Microsoft Docs"
+title: "开发者指南 - AIP"
 description: "开发人员可使用 Azure 信息保护来保护和管理所有类型的文件"
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/09/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: ea8a0f60997ca5d569f10969abfb9b010f0918da
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: fbd76e377c8b11b8e64187685144010dce9bbb25
+ms.sourcegitcommit: ee432bdb6783bfe311a7ebbc9a5f20a7c2ae759c
 translationtype: HT
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
@@ -79,9 +79,9 @@ translationtype: HT
 
 - [如何启用文档跟踪和撤销（服务）](tracking-content.md)
 - [如何部署客户端](../rms-client/client-deployment-notes.md)
+- [如何将服务应用程序部署到不同的租户] (how-to-deploy-app.md)
 - [如何安装和配置 RMS 服务器（服务）](how-to-install-and-configure-an-rms-server.md)
 - [如何使用文档跟踪（用户）](how-to-use-document-tracking.md)
-
 
 ### <a name="security-and-authentication"></a>安全性和身份验证
 

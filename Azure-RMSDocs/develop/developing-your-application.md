@@ -1,11 +1,11 @@
 ---
-title: "开发应用程序"
+title: "开发应用程序 - AIP"
 description: "有关基本控制台应用如何使用 AIP 实现文档保护的指南"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 46aba2289f0e3a41cc2fb09db3d5727cd77feb40
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 24689c3337361fb5e59420684ec8f5e9c723e448
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
 translationtype: HT
 ---
 # <a name="developing-your-application"></a>开发应用程序

@@ -4,14 +4,14 @@ description: "快速试用 Azure 信息保护入门教程步骤 3 - 安装客户
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: 30bb78ede8d882e18bca516d0d8da4c3946f000b
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 61c0d2c97ae1db15bf2ec5c4586aa54270502117
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
 translationtype: HT
 ---
 # <a name="step-3-install-the-client"></a>步骤 3：安装客户端
@@ -39,7 +39,7 @@ translationtype: HT
 
 - 在“主页”选项卡上，有一个新的**保护**组，其中有一个标记为“保护”的按钮。
 
-    单击“保护” > “帮助和反馈”，然后在“Microsoft Azure 信息保护”对话框中，确认客户端状态。 它应显示“连接为”和你的用户名。 此外，还应该看到上次连接的最近时间和日期以及信息保护策略的安装时间。 验证对于租户显示的用户名是否正确。
+    依次单击“**保护**” > “**帮助和反馈**”，然后在“**Microsoft Azure 信息保护**”对话框中，确认客户端状态。 它应显示“连接为”和你的用户名。 此外，还应该看到上次连接的最近时间和日期以及信息保护策略的安装时间。 验证对于租户显示的用户名是否正确。
 
 - 功能区下方有一个新栏：信息保护栏。 该栏的标题显示为“敏感度”，默认标签为我们配置的“供内部使用”。 
     
