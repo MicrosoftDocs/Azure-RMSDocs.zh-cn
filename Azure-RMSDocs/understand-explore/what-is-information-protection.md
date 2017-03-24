@@ -4,14 +4,14 @@ description: "Azure 信息保护服务概述。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 482338f186e3008da155f961c649a80cc61c5780
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: fc25cd11d950199f7ccd8e4e86e4d915c7fb6a95
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
@@ -22,7 +22,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 下图显示实际操作中的 Azure 信息保护示例。 管理员配置了规则来检测敏感数据（在此例中是信用卡信息）。 当用户保存包含信用卡信息的 Word 文档时，她会看到一个自定义工具提示，建议她应用管理员配置的特定标签，该标签可对文档进行分类和（可选）保护。 
 
-![用于 Azure 信息保护的建议分类示例](../media/info-protect-recommend-callouts.png)
+![用于 Azure 信息保护的建议分类示例](../media/info-protect-recommend-calloutsv2.png)
 
 内容进行分类（以及保护（可选））之后，随后可以跟踪并控制其使用方式。 可以分析数据流以深入了解业务、检测危险行为和采取修正措施、跟踪对文档的访问、防止数据泄露或误用，等等。
 
@@ -32,7 +32,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 例如，下面的电子邮件已分类为“内部”。 此标签作为页脚添加到电子邮件，用作所有收件人的可视指示器，旨在供内部使用，不应在组织外部发送。 此标签也嵌入在电子邮件标头中，以便电子邮件服务可以检查此值并且可以创建审核项或阻止在组织外部发送它。
 
-![显示 Azure 信息保护分类的示例电子邮件页脚和标头](../media/example-email-footer-header.png)
+![显示 Azure 信息保护分类的示例电子邮件页脚和标头](../media/example-email-footerv2.png)
 
 
 ## <a name="how-data-is-protected"></a>如何保护数据
@@ -63,7 +63,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 安装 Azure 信息保护客户端时，Azure 信息保护会与最终用户的现有工作流集成。 此客户端会将信息保护栏安装到 Office 应用程序（如第一张图片所示）。 相同栏会添加到 Excel、PowerPoint 和 Outlook。 例如：
 
-![Excel 中的 Azure 信息保护栏的示例](../media/excel2016-infoprotect-bar.png)
+![Excel 中的 Azure 信息保护栏的示例](../media/excel2016-infoprotect-barv2.png)
 
 此信息保护栏使最终用户可以方便地为正确分类选择标签，在需要时，这些标签还可以自动保护其文档和电子邮件。
 
