@@ -4,7 +4,7 @@ description: "使用 Azure 信息保护进行分类和设置标签时遇到问�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 854de3beea1f4b6e05461dee58cec6ca91f79034
-ms.sourcegitcommit: 117e4016794d0cb9b7bd95603fb6c79114d65360
+ms.openlocfilehash: 6af0a81b31fb0a2e5437428dc8373dd997b18406
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
@@ -46,7 +46,7 @@ translationtype: HT
 
 若要配置 Azure 信息保护策略，必须以 Azure Active Directory 全局管理员的身份登录到 Azure 门户。
 
-如果在安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)时选择安装演示策略，则无需登录门户即可查看和试用标签功能。 演示策略在本地安装 Azure 信息保护的默认策略，因此你可以尝试为文档和电子邮件设置标签，但是，在未登录 Azure 门户的情况下你将无法更改或添加新标签。 
+如果在安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)时选择安装演示策略，则无需登录门户即可查看和试用标签功能。 演示策略在本地安装 Azure 信息保护的默认策略，因此可以尝试为文档和电子邮件设置标签，但是，在未登录 Azure 门户的情况下将无法更改或添加新标签。 
 
 ## <a name="which-options-in-the-azure-portal-are-p1-or-p2"></a>Azure 门户中的哪些选项是 P1 或 P2？
 
@@ -56,7 +56,7 @@ translationtype: HT
 
 用户一次仅可为每个文档或电子邮件选择一个标签，这通常只会产生一个分类。 但如果用户选择子标签，这实际上会同时应用两个标签；主标签和次要标签。 通过使用子标签，文件可以有两个分类，表示附加控制级别的父\子关系。
 
-例如，标签 **Secret** 可能包含子标签，如 **Legal** 和 **Finance**。 可对这些子标签应用不同的分类可视化标记和不同的权限管理模板。 用户不能单独选择 **Secret** 标签；只能选择其中一个子标签，如 **Legal**。 因此，看到的集合标签是 **Secret \ Legal**。 该文件的元数据包括 **Secret** 的一个自定义文本属性和 **Legal** 的一个自定义文本属性，以及另一个包含两个值 (**Secret Legal**) 的属性。 
+例如，标签“机密”可能包含子标签，如“法律”和“财务”。 可对这些子标签应用不同的分类可视化标记和不同的权限管理模板。 用户不能单独选择“机密”标签；必须选择其中一个子标签，如“法律”。 因此，会看到设置的标签是“机密\法律”。 该文件的元数据包括“机密”的一个自定义文本属性和“法律”的一个自定义文本属性，以及另一个同时包含两个值（“机密 法律”）的自定义文本属性。 
 
 使用子标签时，请不要在主标签处配置可视标记、保护和条件。 使用子级别时，请仅在子级别配置这些设置。 如果在主标签及其子标签上配置这些设置，那么子标签上的设置具有更高优先级。
 
