@@ -10,8 +10,8 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 9b284e232d6c7f94e51e4ddfab54a967e2b3d9cd
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: c4a0aab69ac8a01175528531fe11f17e86da9a6b
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
@@ -49,7 +49,7 @@ translationtype: HT
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 如果为自动或推荐分类配置的标签将应用于所有用户，请从“策略:全局”边栏选项卡中选择要更改的标签，然后在“标签”边栏选项卡和之后的任何所需边栏选项卡上进行更改。 
+2. 如果为自动或推荐分类配置的标签将应用于所有用户，请从“策略: 全局”边栏选项卡中选择要更改的标签，然后在“标签”边栏选项卡和之后的任何所需边栏选项卡上进行更改。 
 
      如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，以便仅应用于所选用户，请首先从初始的“Azure 信息保护”边栏选项卡中选择作用域内策略。  
 
@@ -184,11 +184,11 @@ translationtype: HT
 
     - **格式化**： 
     
-        - 采用以下格式的&9; 位数：ddd-dd-dddd 或 ddd dd dddd 
+        - 采用以下格式的 9 位数：ddd-dd-dddd 或 ddd dd dddd 
         
     - **未格式化**： 
     
-        - 采用以下格式的&9; 位数：ddddddddd 
+        - 采用以下格式的 9 位数：ddddddddd 
 
 
 用于测试的示例：
