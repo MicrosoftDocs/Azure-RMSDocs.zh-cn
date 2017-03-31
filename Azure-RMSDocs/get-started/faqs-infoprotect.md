@@ -4,7 +4,7 @@ description: "使用 Azure 信息保护进行分类和设置标签时遇到问�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 6af0a81b31fb0a2e5437428dc8373dd997b18406
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+ms.openlocfilehash: 7f2bd30603f88ec72ee51f980c40903362cfdeba
+ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
 translationtype: HT
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
@@ -97,26 +97,5 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 因为 Azure 信息保护将永久性元数据用于分类，其中包括明文标签，所以该信息可以被 DLP 解决方案和其他应用读取。 对于文件，该元数据存储在自定义属性中；对于电子邮件，该信息存储在电子邮件标头中。
 
-## <a name="how-do-i-sign-in-as-a-different-user"></a>如何以其他用户身份登录？
-
-在生产环境中，如果使用的是 Azure 信息保护客户端，通常则不需要以其他用户身份登录。 但是，如果拥有多个租户，则可能需要这样做。 例如，除了拥有组织使用的 Office 365 或 Azure 租户外，还拥有一个测试租户。
-
-可以使用“Microsoft Azure 信息保护”对话框验证当前登录的帐户身份：打开 Office 应用程序，在“主页”选项卡上的“保护”组中，单击“保护”，然后单击“帮助和反馈”。 帐户名称会显示在“客户端状态”部分中。
-
-特别是在使用管理员帐户时，请务必检查所显示的登录帐户的域名。 例如，如果在两个不同的租户中都拥有“admin”帐户，则很容易忽略登录的帐户名正确但域错误的情况。 出现此情况可能导致下载 Azure 信息保护策略失败，或无法看到期望的标签或行为。
-
-若要以其他用户身份登录，则当前必须编辑注册表：
-
-1. 使用注册表编辑器，导航到“HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP”并删除“TokenCache”值。
-
-2. 重新启动任何打开的 Office 应用程序，并使用其他用户帐户登录。 如果在 Office 应用程序中没有看到登录到 Azure 信息保护服务的提示，请返回“Microsoft Azure信息保护”对话框，然后从更新的“客户端状态”部分中单击“登录”。
-
-此外：
-
-- 如果使用的是单一登录，则需要在编辑注册表后注销 Windows，然后使用其他用户帐户登录。 Azure 信息保护客户端会使用当前登录的用户帐户自动进行身份验证。
-
-- 如果要重新初始化 Azure Rights Management 服务的环境（也称为引导），可以使用 [RMS Analyzer工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)中的“重置”选项进行此操作。
-
-- 如果要删除当前下载的 Azure 信息保护策略，可以从 %localappdata%\Microsoft\MSIP 文件夹中删除 **Policy.msip** 文件以实现此操作。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
