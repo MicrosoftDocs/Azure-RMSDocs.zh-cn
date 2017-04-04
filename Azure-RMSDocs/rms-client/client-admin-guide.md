@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 03/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ffa336d352c60f36269cfb23236133bf1ca50d9f
-ms.sourcegitcommit: 9f542a5599ca6332b4b69ebbbbfb9ffdf5464731
+ms.openlocfilehash: 63843acfe9f7b4ded77ccbdcaaab8cb98598dd9f
+ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
@@ -190,20 +190,64 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 - 会删除以下注册表项和设置：**HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**。 如果为此注册表项配置设置（例如，由于要从 AD RMS 迁移并且网络上仍有服务连接点，因此配置用于重定向到 Azure 信息保护租户的设置），那么重置客户端后必须重新配置注册表设置。
 
-- 重置客户端后，必须重新初始化用户环境（也称为“引导”），下载客户端证书和最新模板。 为了执行此操作，请关闭 Office 的所有实例，然后重新启动 Office 应用程序。 此操作还会检查是否已下载最新的 Azure 信息保护策略。 完成此操作之前，请勿再次运行诊断测试。
+- 重置客户端后，必须重新初始化用户环境，下载客户端证书和最新模板。 为了执行此操作，请关闭 Office 的所有实例，然后重新启动 Office 应用程序。 此操作还会检查是否已下载最新的 Azure 信息保护策略。 完成此操作之前，请勿再次运行诊断测试。
 
 
 ### <a name="client-status-section"></a>“**客户端状态**”部分
 
 使用“**连接身份**”值来确认显示的用户名是否是要用于 Azure 信息保护身份验证的帐户。 此用户名必须与用于 Office 365 或 Azure Active Directory 的帐户一致，并与为 Azure 信息保护所配置的租户中的帐户一致。
 
-如果需要以与显示用户名不同的用户身份登录，请参阅[如何以其他用户身份登录？](../get-started/faqs-infoprotect.md#how-do-i-sign-in-as-a-different-user)
+如果需要以与显示用户名不同的用户身份登录，请参阅此页上的[以其他用户身份登录](#sign-in-as-a-different-user)部分。
 
 “**上次连接时间**”显示客户端最后一次连接组织的 Azure 信息保护服务的时间，并且可与“**信息保护策略安装日期和时间**”结合使用，从而确认 Azure 信息保护策略上次安装或更新的时间。 当客户端连接服务时，如果它发现与其当前策略有差异，则会自动下载最新策略，频率同样也是每 24 小时。 如果在显示时间后完成策略更改，关闭并重新打开 Office 应用程序。
 
 如果看到**此客户端未获许可使用 Office Professional Plus**：Azure 信息保护客户端检测到安装的 Office 版本不支持应用 Rights Management 保护。 执行此检测时，便会发现应用保护的标签未显示在 Azure 信息保护栏上。
 
 使用“**版本**”信息可以确认安装的是哪个版本的客户端。 可以单击“**最近更新**”链接来查看客户端的“[版本发行历史记录](client-version-release-history.md)”，检查是否为最新发行版本以及相应的修补程序和新功能。
+
+## <a name="custom-configurations"></a>自定义配置
+
+使用以下高级配置的相关信息，你可能需要将其用于特定方案或用户子集。 
+
+### <a name="sign-in-as-a-different-user"></a>以其他用户身份登录
+
+在生产环境中，如果用户使用的是 Azure 信息保护客户端，则通常不需要以其他用户身份登录。 但是，如果拥有多个租户，则可能需要以管理员身份执行此操作。 例如，除了拥有组织使用的 Office 365 或 Azure 租户外，还拥有一个测试租户。
+
+可以使用“Microsoft Azure 信息保护”对话框验证当前登录的帐户身份：打开 Office 应用程序，在“主页”选项卡上的“保护”组中，单击“保护”，然后单击“帮助和反馈”。 帐户名称会显示在“客户端状态”部分中。
+
+特别是在使用管理员帐户时，请务必检查所显示的登录帐户的域名。 例如，如果在两个不同的租户中都拥有“admin”帐户，则很容易忽略登录的帐户名正确但域错误的情况。 出现此情况可能导致下载 Azure 信息保护策略失败，或无法看到期望的标签或行为。
+
+以其他用户身份登录：
+
+1. 使用注册表编辑器，导航到“HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP”并删除“TokenCache”值（及其关联的值数据）。
+
+2. 重新启动任何打开的 Office 应用程序，并使用其他用户帐户登录。 如果在 Office 应用程序中没有看到登录到 Azure 信息保护服务的提示，请返回“Microsoft Azure信息保护”对话框，然后从更新的“客户端状态”部分中单击“登录”。
+
+此外：
+
+- 如果使用的是单一登录，则需要在编辑注册表后注销 Windows，然后使用其他用户帐户登录。 Azure 信息保护客户端会使用当前登录的用户帐户自动进行身份验证。
+
+- 如果要重新初始化 Azure Rights Management 服务的环境（也称为引导），可以使用 [RMS Analyzer工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)中的“重置”选项进行此操作。
+
+- 如果要删除当前下载的 Azure 信息保护策略，可以从 **%localappdata%\Microsoft\MSIP** 文件夹中删除 **Policy.msip** 文件。
+
+### <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>隐藏 Windows 文件资源管理器中的“分类和保护”菜单选项
+
+如果你具有 1.3.0.0 或更高版本的 Azure 信息保护客户端，可以通过编辑注册表配置此高级配置。 
+
+创建以下 DWORD 值名称（以及任何数值数据）：
+
+**HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\Microsoft.Azip.RightClick\LegacyDisable**
+
+### <a name="support-for-disconnected-computers"></a>对断开连接的计算机的支持
+
+默认情况下，Azure 信息保护客户端会自动尝试连接到 Azure 信息保护服务，以下载最新的 Azure 信息保护策略。 如果你知道你的计算机在一段时间无法内连接到 Internet，可以通过编辑注册表阻止客户端尝试连接到该服务。 
+
+找到以下值名称并将值数据设置为 **0**：
+
+**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+
+确保客户端在 **%localappdata%\Microsoft\MSIP** 文件夹中具有一个名为 **Policy.msip** 的有效策略文件。 如有必要，可以从 Azure 门户中导出策略，并将导出的文件复制到客户端计算机。 此外，还可以使用此方法将已过时的策略文件替换为已发布的最新策略。
 
 ## <a name="to-uninstall-the-azure-information-protection-client"></a>卸载 Azure 信息保护客户端
 

@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 03/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5566f7d2c3ac802f2d8078241be3057d2cb2529
-ms.sourcegitcommit: 117e4016794d0cb9b7bd95603fb6c79114d65360
+ms.openlocfilehash: 5e836d99c59cbd055b219aab6499a67fb62bd1a5
+ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
 translationtype: HT
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
@@ -49,7 +49,7 @@ translationtype: HT
 
 对于其他客户，请根据获取 Azure 信息保护的方式，使用下面的支持渠道：
 
-- **Azure 信息保护高级版**（独立）：打开 [ Azure 门户中的支持请求](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)。 若要使用此选项，必须具有 Azure 订阅和 Azure 支持计划。 有关详细信息，请参阅[针对客户的 Azure 支持](https://azure.microsoft.com/support/plans/)。 
+- **Azure 信息保护高级版**（独立）：打开 [ Azure 门户中的支持请求](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)。 出现提示时，在“基本信息”边栏选项卡上，选择“问题类型”的“技术”，并针对“订阅”选项选择“包含技术支持的订阅”。
 
 - **Office 365 订阅随附的 Azure 信息保护**：请参阅[联系针对业务支持的 Office 365 - 管理员帮助](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)，以获取电话号码以及如何使用 Office 365 管理门户与支持部门联系。 
 
@@ -76,6 +76,8 @@ translationtype: HT
 - 有关如何为正在配置使用 Azure 信息保护的服务和应用程序的最终用户、支持人员和管理员提供支持的信息：请参阅[帮助用户保护文件](../deploy-use/help-users.md)。
 
 - 如果为本地服务器部署了 Rights Management 连接器：请参阅[监视](../deploy-use/monitor-rms-connector.md)信息，其中包括有关事件日志条目、性能计数器和日志记录的详细信息。
+
+- 有关 Windows 的 Azure 信息保护客户端：请参阅管理员指南中的[其他检查和故障排除](../rms-client/client-admin-guide.md#additional-checks-and-troubleshooting)部分。
 
 - 有关自动检查、自动修正和跟踪：请下载并运行 [RMS 分析器工具](http://www.microsoft.com/en-us/download/details.aspx?id=46437)。 有关此工具的详细信息，请参阅下载页面上的“详细信息”和“安装说明”。 
 

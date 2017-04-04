@@ -4,7 +4,7 @@ description: "有关在 Azure 经典门户中创建和管理自定义模板的�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/08/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9d0b71db6245e49765a0f79aaa901141a155372d
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: cf11e0ac3bb13dcb31d14bad5f97ad117bd09953
+ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
 translationtype: HT
 ---
 # <a name="create-configure-and-publish-a-custom-template"></a>创建、配置和发布自定义模板
@@ -75,6 +75,8 @@ translationtype: HT
 
     > [!NOTE]
     > 你选择的用户或组必须有电子邮件地址。 在生产环境中，他们几乎都有电子邮件地址，但在简单的测试环境中，你可能需要为用户帐户或组添加电子邮件地址。
+    > 
+    > 如果在选择用户或组后某个电子邮件地址发生更改，并且你已保存模板，请参阅计划文档中的[电子邮件地址发生更改情况下的注意事项](../plan-design/prepare.md#considerations-if-email-addresses-change)部分。 
 
     最佳做法是使用组而不是用户，这样可以简化模板的管理。 但是，如果对组进行更改则请注意，出于性能原因，Azure 权限管理[将缓存组成员身份](../plan-design/prepare.md#group-membership-caching)。 
     

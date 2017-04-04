@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b946dff4782d1b5571aa0438d1681030f0de092f
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+ms.openlocfilehash: ec57bae71b11b6505ccb94fcdf692f215862191d
+ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
 translationtype: HT
 ---
 # <a name="configuring-azure-information-protection-policy"></a>配置 Azure 信息保护策略
@@ -28,7 +28,7 @@ translationtype: HT
 
 2. 导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“更多服务”并在“筛选”框中开始键入**信息保护**。 在结果中选择“Azure 信息保护”。 
 
-    然后，你将看到“Azure 信息保护”边栏选项卡，可在其中打开所有用户获得的“全局”策略。 还可以选择添加和编辑作用域内策略。 **全局** Azure 信息保护策略包含以下可配置的元素：
+    加载“Azure 信息保护”边栏选项卡后，它会自动打开“策略:全局”边栏选项卡，你可以查看和编辑所有用户获得的全局策略。 然而，你还可以选择添加和编辑作用域内策略。 Azure 信息保护策略包含以下可配置的元素：
 
     - 让你和用户对文档和电子邮件进行分类的标签。
 

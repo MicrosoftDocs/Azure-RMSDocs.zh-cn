@@ -4,7 +4,7 @@ description: "有关如何使用 Azure Rights Management (Azure RMS) 的使用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f179d9b4a9b883e6a7cff15ce3f8e713508b0bd3
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: fd4fa09da3bffe9abdec5754185659393fdbf531
+ms.sourcegitcommit: 96410e06941ec414032d72cf96491884dc11aba0
 translationtype: HT
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>记录和分析 Azure Rights Management 服务的使用情况
@@ -145,7 +145,7 @@ Azure Rights Management 服务将日志作为一系列 blob 写入。
 |owner-email|String|文档所有者的电子邮件地址。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|alice@contoso.com|
 |issuer|String|文档发布者的电子邮件地址。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com’|
 |template-id|字符串|用于保护文档的模板的 ID。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|file-name|字符串|已保护的文档的文件名。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|TopSecretDocument.docx|
+|file-name|字符串|受保护文档的文件名通过使用适用于 Windows 的 Azure 信息保护客户端或适用于 Windows 的 Rights Management 共享应用程序进行跟踪。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|TopSecretDocument.docx|
 |date-published|日期|保护文档时的日期。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|2015-10-15T21:37:00|
 |c-info|String|有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Address|发出请求的客户端的 IP 地址。|64.51.202.144|

@@ -4,7 +4,7 @@ description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 13bed15fa5fff020d77a4362e38903c5ca55d2ce
-ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+ms.openlocfilehash: 90b26239979b42eadb008b11a963e35a74698910
+ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
 translationtype: HT
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>将 PowerShell 与 Azure 信息保护客户端配合使用
@@ -132,9 +132,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 ##### <a name="to-get-the-appprincipalid-and-symmetric-key"></a>获取 AppPrincipalId 和对称密钥
 
-通过从 Azure Active Directory 的 MSOnline PowerShell 模块运行 `New-MsolServicePrincipal` cmdlet 或从较新的 Azure Active Directory 版本 2 PowerShell 模块运行 `New-AzureADServicePrincipal` 来创建新的服务主体。 
-
-以下说明适用于 Azure Active Directory 的 MSOnline PowerShell 模块中的 New-MsolServicePrincipal：
+通过从 Azure Active Directory 的 MSOnline PowerShell 模块运行 `New-MsolServicePrincipal` cmdlet 来创建新的服务主体： 
 
 1. 如果计算机上尚未安装此模块，请参阅[安装 Azure AD 模块](/powershell/azuread/#install-the-azure-ad-module)。
 
@@ -177,7 +175,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
     请务必创建对称密钥的副本，因为在以后无法完整地检索它，所以如果你不知道，在下次需要对 Azure 权限管理服务进行身份验证时，需要创建新的服务主体。
 
-通过这些说明和示例可知，运行 Set-RMSServerAuthentication 需要&3; 个标识符：
+通过这些说明和示例可知，运行 Set-RMSServerAuthentication 需要 3 个标识符：
 
 - 租户 ID：**23976bc6-dcd4-4173-9d96-dad1f48efd42**
 

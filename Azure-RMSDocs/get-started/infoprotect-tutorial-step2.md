@@ -4,14 +4,14 @@ description: "快速试用 Azure 信息保护入门教程步骤 2 - 配置策略
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 7db581d07698edf50fda8379d622e35414ad3671
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+ms.openlocfilehash: 98e65768651c77b4cc0616142e6b7515d275b7a9
+ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
 translationtype: HT
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>步骤 2：配置并发布 Azure 信息保护策略
@@ -29,11 +29,9 @@ translationtype: HT
     > [!TIP] 
     > 选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览到该服务。
 
-3.  在“Azure 信息保护”边栏选项卡上，单击“全局”，然后浏览“策略: 全局”边栏选项卡，其中显示了为租户自动创建的默认信息保护策略。
+3.  浏览“策略:全局”边栏选项卡，它将自动打开并显示自动为租户创建的默认信息保护策略：
     
-    在“策略: 全局”边栏选项卡上，会注意到以下内容：
-    
-    - 用于分类的标签：“个人”、“公共”、“常规”、“机密”和“高度机密”。 请注意，最后两个标签可展开以显示子标签：“所有员工”和“任何人(不受保护)”，并提供有关让类别具有子类别的示例。
+    - 用于分类的标签：“个人”、“公共”、“常规”、“机密”和“高度机密”。 最后两个标签可展开以显示子标签：“所有员工”和“任何人(不受保护)”，并提供有关让类别具有子类别的示例。
     
        > [!NOTE]
        > 你的默认策略可能与本教程中的默认策略稍有不同。 例如，你有名为“内部”的标签，而没有“常规”标签，有“秘密”标签而没有“高度机密”标签。 如果是这种情况，则可能使用的是较旧版本的默认策略。 或者在开始本教程之前，已自行对其进行编辑。
