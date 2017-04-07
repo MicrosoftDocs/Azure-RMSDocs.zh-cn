@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: d5de26f757803f5c354814b9cbcc965de382192c
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 1124019309749574241bf25e6b0eb58a50771afc
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="migration-phase-3---supporting-services-configuration"></a>迁移阶段 3 - 支持服务配置
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365

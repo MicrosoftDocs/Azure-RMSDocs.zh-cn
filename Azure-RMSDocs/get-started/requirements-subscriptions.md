@@ -1,12 +1,6 @@
 ---
 redirect_url: https://www.microsoft.com/en-us/cloud-platform/azure-information-protection
-translationtype: Human Translation
-ms.sourcegitcommit: ac0fee37eb3a79b25223c91980ef1d3c56a9a082
-ms.openlocfilehash: fca3ca810e6a95c055b48d6badfe5ca14cbfdc69
-
+ms.openlocfilehash: 7aece8630406ae30b23028b2d302c20123805246
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
-<!--HONumber=Jan17_HO1-->
-
-

@@ -1,11 +1,11 @@
 ---
-title: "开发应用程序"
+title: "开发应用程序 - AIP"
 description: "有关基本控制台应用如何使用 AIP 实现文档保护的指南"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,13 +14,10 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: b5f1d44d950cd020c4b15d5f9505752bc960fa88
-
-
+ms.openlocfilehash: 24689c3337361fb5e59420684ec8f5e9c723e448
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
+translationtype: HT
 ---
-
 # <a name="developing-your-application"></a>开发应用程序
 
 本示例中将构建与 Azure信息保护服务 (AIP) 交互的简单控制台应用程序。  它将要保护的文件的路径作为输入，然后使用临时策略或 Azure 模板对其进行保护。 应用程序将根据输入应用正确的策略，创建信息受保护的文档。 你将使用的示例代码是 [Azure IP 测试应用程序](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test)，位于 Github 上。
@@ -232,8 +229,3 @@ ms.openlocfilehash: b5f1d44d950cd020c4b15d5f9505752bc960fa88
 6. 最后，输入一些策略元数据：策略名称、描述和发布者（Azure AD 租户）显示名称![应用输出 - 步骤6](../media/develop/app-output-6.png)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO4-->
-
-

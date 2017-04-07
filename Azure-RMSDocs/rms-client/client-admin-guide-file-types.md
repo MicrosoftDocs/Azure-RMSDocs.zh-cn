@@ -4,7 +4,7 @@ description: "有关支持的文件类型、文件扩展名以及负责适用于
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 107bac4e318c08d4fdc6d24fc88a6f7cbe5c0a74
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: fe75945793d28ed78b46f6b9a421bd7aa9ae3dfd
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
+translationtype: HT
 ---
-
-
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure 信息保护客户端支持的文件类型
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
@@ -39,6 +34,8 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 以下文件类型仅支持分类。 其他文件类型在受保护时也支持分类。
 
+- **Adobe 可移植文档格式**：pdf
+
 - **Microsoft Visio**：.vsdx、.vsdm、.vssx、.vssm、.vsd、.vdw、.vst
 
 - **Microsoft Project**：.mpp、.mpt
@@ -46,7 +43,6 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 - **Microsoft Publisher**：.pub
 
 - **Microsoft Office 97、Office 2010、Office 2003**：.xls、.xlt、.doc、.dot、.ppt、.pps、.pot
-
 - **Microsoft XPS**：.xps .oxps
 
 - **图像**：.jpg、.jpe、.jpeg、.jif、.jfif、.jfi.png、.tif、.tiff
@@ -176,4 +172,3 @@ Azure 信息保护客户端支持两个不同级别的保护，如下表中所�
 - [PowerShell 命令](client-admin-guide-powershell.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

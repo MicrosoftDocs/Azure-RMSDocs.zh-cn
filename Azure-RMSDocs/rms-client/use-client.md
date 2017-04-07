@@ -13,14 +13,10 @@ ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
 ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 5b17d639382238ce4669bc02beadb80570b5ca6f
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: cee5b0499a434894e284d4cc8157af962ade99cb
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
 >适用于：Active Directory Rights Management Services、Azure 权限管理、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7

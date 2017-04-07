@@ -1,13 +1,6 @@
 ---
 redirect_url: /information-protection/get-started/requirements-azure-rms
-translationtype: Human Translation
-ms.sourcegitcommit: 3336b75fbc2fce1c9260afb217d909b2b772ed03
-ms.openlocfilehash: 0e977d6801bdb36d283e71ce5320c4832c76f830
-
+ms.openlocfilehash: 39078fa7fe42d6c91490216faf7911988edbaaaa
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
-
-<!--HONumber=Sep16_HO4-->
-
-

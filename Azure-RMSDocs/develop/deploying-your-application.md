@@ -1,24 +1,22 @@
 ---
-title: "部署应用程序"
+title: "部署应用程序 - AIP"
 description: "本主题提供部署应用程序的概述和分步指导"
 keywords: "部署, RMS, AIP"
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 0c16b7c6bd494a0350a511a3b415f781aecf613d
-
-
+ms.openlocfilehash: 67ec662fb54ab9fdcd06bebd01df1a228afe5fb1
+ms.sourcegitcommit: 164c9ac31beb4811bbcd4527613a5d3b57b8ac6c
+translationtype: HT
 ---
 # <a name="deploy-into-production"></a>部署到生产
 
@@ -98,14 +96,13 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 客户端作为可选下�
 
 如果客户端存在，则继续执行应用程序安装。
 
-## <a name="enabling-azure-information-protection--rights-management-services-with-your-application"></a>启用 Azure 信息保护/用于应用程序的 Rights Management Services
+## <a name="enabling-azure-information-protection-services-with-your-application"></a>为应用程序启用 Azure 信息保护服务
 
 > [!NOTE]
 > 如果已迁移到新的 ADAL 模型进行身份验证，则无需安装 **SIA**。 有关详细信息，请参阅[适用于启用了 RMS 的应用程序的 ADAL 身份验证](adal-auth.md)。
 > 你还可以**验证适用于 Windows 10 的应用程序** - 通过将应用程序更新为使用 ADAL 身份验证而不使用 Microsoft Online 登录助手，你和你的客户将能够：使用多重身份验证；无需计算机的管理权限而安装 RMS 客户端 2.1
 
-
-为了使最终用户可以利用信息保护/Rights Management Services，必须部署 Online Services 登录助手 (SIA)。 应用程序开发人员不知道最终用户将通过 RMS（本地），还是通过 Azure 信息保护使用信息保护。
+为了让最终用户可以利用信息保护服务，必须部署 *Online Services 登录助手 (SIA)*。 应用程序开发人员不知道最终用户将通过 RMS（本地），还是通过 Azure 信息保护使用信息保护。
 
 
 > [!IMPORTANT]
@@ -116,6 +113,8 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 客户端作为可选下�
 -   确保已启用权限的应用程序的部署中包括此服务选项的系统必备组件检查。
 -   有关你自己的测试以及你的最终用户使用在线服务的信息，请参阅 TechNet 主题[配置 Rights Management](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx)。
 
+还需要参阅以下指南来配置应用程序：[如何将应用服务应用程序配置为使用 Azure Active Directory 登录](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication)。
+
 有关使你的应用程序能够将 RMS 用于 Azure Rights Management Services 的详细信息，请参阅[使应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
 ## <a name="related-topics"></a>相关主题
@@ -125,8 +124,3 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 客户端作为可选下�
 * [使应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -14,13 +14,10 @@ ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 22c0525adf64c6b3a7fa4ecd51573aef8e31b5bb
-
-
+ms.openlocfilehash: f93df5f204350a56f8280f299c04478cc1b5dfba
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="application-types"></a>应用程序类型
 
 
@@ -62,8 +59,3 @@ Microsoft 记事本是简单的富客户端应用程序。 Microsoft Office 是�
 - [了解使用限制](understanding-usage-restrictions.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

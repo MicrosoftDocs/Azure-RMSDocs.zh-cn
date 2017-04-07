@@ -4,7 +4,7 @@ description: "若要为特定用户配置不同的设置和标签，必须为 Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: e2112ca081ed0520330355734bb0913e4a612c66
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 2fc0059f0cc2d7c1a0eb08d6f8ee89ea2bf4bfbd
+ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
+translationtype: HT
 ---
-
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>如何使用作用域内策略为特定用户配置 Azure 信息保护策略
 
 >*适用于：Azure 信息保护*
@@ -43,7 +39,7 @@ ms.lasthandoff: 02/24/2017
 
     在初始“Azure 信息保护”边栏选项卡上，选择“添加新策略”。 然后，用于显示全局策略的第二个边栏选项卡会刷新，之后就可以配置新的作用域内策略。
 
-3. 在 Azure 门户中指定仅管理员可见的策略名称和说明。 该名称对租户来说必须是唯一的。 然后单击“指定获取此策略的用户/组”，并可在后续边栏选项卡中为此策略搜索和选择用户和组。 在此作用域内策略中配置的标签和设置将仅应用于这些用户。 
+3. 在 Azure 门户中指定仅管理员可见的策略名称和说明。 该名称对租户来说必须是唯一的。 然后单击“指定获取此策略的用户/组”，并可在后续边栏选项卡中为此策略搜索和选择用户和组。 在此作用域内策略中配置的标签和设置将仅应用于这些用户。
 
 4. 现在创建新的标签或配置作用域内策略设置。 始终优先应用全局策略，以便使用新标签补充全局策略，并可以覆盖全局设置。 例如，全局策略可能没有指定的默认标签，并且你为特定部门在不同作用域内策略中配置不同的默认标签。
 
@@ -63,4 +59,3 @@ ms.lasthandoff: 02/24/2017
 有关如何自定义默认策略并在 Office 应用程序是查看所产生行为的示例，请尝试 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)(#azure-信息保护快速入门教程)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

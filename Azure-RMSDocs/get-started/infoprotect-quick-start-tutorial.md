@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 78d019adfeed4f2bc9cb0924fa8f9b932862819a
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 04e1776e4ef92585245ae8854ed63d2d2dc27f07
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure 信息保护快速入门教程 
 
 >*适用于：Azure 信息保护*
@@ -50,5 +46,4 @@ ms.lasthandoff: 02/24/2017
 [&#187; 步骤 1](infoprotect-tutorial-step1.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

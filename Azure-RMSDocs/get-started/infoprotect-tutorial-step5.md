@@ -5,7 +5,7 @@ keywords:
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 03/21/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,15 +13,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
-ms.openlocfilehash: ea34b900855d43cb1458438b1d15a16fd7cf01bf
-ms.lasthandoff: 03/01/2017
-
-
+ms.openlocfilehash: 2b59cbd99430b5474280acc02b1a2c4a2738c793
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+translationtype: HT
 ---
-
-
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>步骤 5：了解如何在实际操作中共享受保护的文件和如何跟踪文档 
 
 >*适用于：Azure 信息保护*
@@ -62,7 +57,7 @@ ms.lasthandoff: 03/01/2017
 
     **我已使用 Microsoft Azure 信息保护对文件提供保护。若是首次使用，请参阅这些说明：https://aka.ms/rms-signup。** 
 
-    ![Azure 信息保护快速入门教程步骤 5 — 通过电子邮件共享受保护的文档](../media/share-protected-email.png)
+    ![Azure 信息保护快速入门教程步骤 5 — 通过电子邮件共享受保护的文档](../media/share-protected-emailv2.png)
 
     单击“发送”。
 
@@ -94,9 +89,9 @@ ms.lasthandoff: 03/01/2017
 
     ![自定义保护的信息横幅](../media/information-banner-custom-protection.png)
 
-2.  在“开始”选项卡中，单击“保护” > “跟踪和撤销”：
+2.  在“**开始**”选项卡中，依次单击“**保护**” > “**跟踪和撤销**”：
 
-    ![跟踪使用情况选项](../media/track-usage-callout.png)
+    ![跟踪使用情况选项](../media/track-usage-calloutv2.png)
 
     该操作可转到文档跟踪站点。
 

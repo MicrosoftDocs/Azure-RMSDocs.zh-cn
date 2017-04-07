@@ -4,7 +4,7 @@ description: "要复制和编辑的示例脚本，如“使用 Windows Server �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 31dc851eeb8e5e20ccc71cf9477a9192ae55deba
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 51d8002dc4dc2a59c38f7eff3cba51fd6b2ddf7d
+ms.sourcegitcommit: 047e6dfe8f44fd13585e902df5ea871b5d0adccb
+translationtype: HT
 ---
-
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）
 
->*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
+>*适用于：Azure 信息保护、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2*
 
 此页包含要复制和编辑的示例脚本，如[使用 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md)中所述。
 

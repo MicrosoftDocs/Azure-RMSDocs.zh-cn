@@ -1,9 +1,6 @@
 ---
 redirect_url: /information-protection/deploy-use/configure-policy-protection
-translationtype: Human Translation
-ms.sourcegitcommit: 3336b75fbc2fce1c9260afb217d909b2b772ed03
-ms.openlocfilehash: a2416e0ae77a2d402fe4ded5232f1f008481bfb3
-ms.lasthandoff: 01/24/2017
-
+ms.openlocfilehash: 62db2dfd4dd252f4ee5921c9705b1d21abd04afb
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-

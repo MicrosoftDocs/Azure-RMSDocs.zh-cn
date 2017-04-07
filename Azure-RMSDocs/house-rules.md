@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 587c4f188603f49605191a15d71180441f16e3c9
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 3451a32476e8c85f98ca8df005e633481caa2256
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>有关 Azure 信息保护文档的评论的内部规则
 
 >*适用于：Azure 信息保护、Office 365*
@@ -41,5 +37,4 @@ Livefyre 评论和旁注不适用于以下内容：
 可以在 [Azure 信息保护的信息和支持](./get-started/information-support.md)中找到其他的资源。 
 
 请注意：如果是 Microsoft 员工，请使用内部通信信道。
-
 

@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: a10162139f2b188640c446477fd9b4756d48c31e
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 43f083ffaf8aefd9b79b2cb64a6408e565818b9b
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>查看和使用受权限管理保护的文件
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
@@ -46,7 +42,7 @@ ms.lasthandoff: 02/24/2017
 
 文件的打开方式取决于保护方式，此保护方式你可以通过查看文件扩展名得知。 在每种情况下，只要文件受到保护，打开它就需要审核并将处于审核状态。 此外，如果文件以电子邮件附件的形式发送，则每次你打开文件时，发件人都会收到电子邮件通知。
 
-- **文件具有 *.pfile* 文件扩展名**
+- **文件具有*.pfile* 文件扩展名**
 
     文件受到一般性保护。
 
@@ -54,7 +50,7 @@ ms.lasthandoff: 02/24/2017
 
     ![使用 RMS 共享应用程序时通过电子邮件共享的 pfile 的对话框](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **该文件具有 *.ppdf* 文件扩展名，或者是受保护的文本或图像文件（如 *.ptxt* 或 *.pjpg*）**
+- **该文件具有*.ppdf* 文件扩展名，或者是受保护的文本或图像文件（如 *.ptxt* 或 *.pjpg*）**
 
     该文件已本机保护为只读副本。
 
@@ -78,7 +74,7 @@ ms.lasthandoff: 02/24/2017
 ## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>使用受保护的文件（例如，编辑和打印文件）
 如果在打开受保护文件后，你想要执行除读取之外的其他操作（例如编辑、复制和打印），请根据文件扩展名按照说明执行操作：
 
-- **文件具有 *.pfile* 文件扩展名**
+- **文件具有*.pfile* 文件扩展名**
 
     保存已打开文件，并赋予其与所要使用的应用程序关联的新文件扩展名。
 
@@ -86,7 +82,7 @@ ms.lasthandoff: 02/24/2017
 
     新文件从此不受保护。 如果你想要保护该文件，必须手动执行此操作。 有关说明，请参阅[使用 Rights Management 共享应用程序保护设备上的文件（就地保护）](sharing-app-protect-in-place.md)。
 
-- **该文件具有 *.ppdf* 文件扩展名，或者是受保护的文本或图像文件（如 *.ptxt* 或 *.pjpg*）**
+- **该文件具有*.ppdf* 文件扩展名，或者是受保护的文本或图像文件（如 *.ptxt* 或 *.pjpg*）**
 
     你仅可以查看文件，并且如果重命名或移动文件，保护将保留在文件上。
 

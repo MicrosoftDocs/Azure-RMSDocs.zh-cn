@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 55254496b23e49fe7e2dbd19721a824739004b21
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 6d7aa4eb4a98db298f6a86b650b8c91a79bdc9b3
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="protection-only-mode-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的仅保护模式
 
 不使用 Azure 信息保护策略运行 Azure 信息保护客户端时，它将显示为处于“仅保护”模式。 例如，使用 Windows 文件资源管理器时，右键单击“分类和保护”：
@@ -51,4 +47,3 @@ ms.lasthandoff: 02/24/2017
 - 从 Office 应用程序访问文档跟踪站点。 但是，必须具有用于跟踪和撤销来自此站点的文档的有效订阅。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  
-

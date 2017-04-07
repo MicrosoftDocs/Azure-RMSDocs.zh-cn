@@ -14,11 +14,9 @@ ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 577f9813203f7bb7be4b5a7fd489dfba8d7fd33f
-
-
+ms.openlocfilehash: 2987c6a8c93ee586ac2f1a05918212f95e67fe3c
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
 # <a name="getting-started"></a>开始使用
 
@@ -72,8 +70,3 @@ RMS SDK 2.1 支持一系列重要的客户端和服务器平台。 有关详细�
 * [AD RMS 开发人员活动角](http://blogs.msdn.com/b/rms/)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

@@ -14,13 +14,10 @@ ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 847d19feaea442da66296565f0ffb5b0663ad170
-
-
+ms.openlocfilehash: 7fe417d8c2e0758fcb6c9dfc88be86208cb8e294
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="android-code-examples"></a>Android 代码示例
 
 本主题向你介绍 Android 版本的 RMS SDK 的重要代码元素。
@@ -525,8 +522,3 @@ ms.openlocfilehash: 847d19feaea442da66296565f0ffb5b0663ad170
         }
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

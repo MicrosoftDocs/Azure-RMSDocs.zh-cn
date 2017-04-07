@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 7553e2719195448c71653ead9950f92bac3928c5
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: c7c91c09ebcd7dcc35c7d91e056b5f83f93d53cd
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-applications-support-the-azure-rights-management-service"></a>应用程序如何支持 Azure Rights Management 服务
 
 >*适用于：Azure 信息保护、Office 365*
@@ -62,4 +58,3 @@ ms.lasthandoff: 02/24/2017
 -   [支持 RMS API 的其他应用程序](api-support.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

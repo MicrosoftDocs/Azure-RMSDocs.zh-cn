@@ -4,7 +4,7 @@ description: "使用 Azure 信息保护进行分类和设置标签时遇到问�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ccd840fdfc702e209390ed431d24d7e47edf9930
-ms.openlocfilehash: 0ce3ba72eb8a201486eaf2ae39f5d7bf99753cad
-ms.lasthandoff: 02/28/2017
-
-
+ms.openlocfilehash: 7f2bd30603f88ec72ee51f980c40903362cfdeba
+ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+translationtype: HT
 ---
-
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
 >*适用于：Azure 信息保护、Office 365*
@@ -50,7 +46,7 @@ ms.lasthandoff: 02/28/2017
 
 若要配置 Azure 信息保护策略，必须以 Azure Active Directory 全局管理员的身份登录到 Azure 门户。
 
-如果在安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)时选择安装演示策略，则无需登录门户即可查看和试用标签功能。 演示策略在本地安装 Azure 信息保护的默认策略，因此你可以尝试为文档和电子邮件设置标签，但是，在未登录 Azure 门户的情况下你将无法更改或添加新标签。 
+如果在安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)时选择安装演示策略，则无需登录门户即可查看和试用标签功能。 演示策略在本地安装 Azure 信息保护的默认策略，因此可以尝试为文档和电子邮件设置标签，但是，在未登录 Azure 门户的情况下将无法更改或添加新标签。 
 
 ## <a name="which-options-in-the-azure-portal-are-p1-or-p2"></a>Azure 门户中的哪些选项是 P1 或 P2？
 
@@ -60,7 +56,7 @@ ms.lasthandoff: 02/28/2017
 
 用户一次仅可为每个文档或电子邮件选择一个标签，这通常只会产生一个分类。 但如果用户选择子标签，这实际上会同时应用两个标签；主标签和次要标签。 通过使用子标签，文件可以有两个分类，表示附加控制级别的父\子关系。
 
-例如，标签 **Secret** 可能包含子标签，如 **Legal** 和 **Finance**。 可对这些子标签应用不同的分类可视化标记和不同的权限管理模板。 用户不能单独选择 **Secret** 标签；只能选择其中一个子标签，如 **Legal**。 因此，看到的集合标签是 ** Secret \ Legal **。 该文件的元数据包括 **Secret** 的一个自定义文本属性和 **Legal** 的一个自定义文本属性，以及另一个包含两个值 (**Secret Legal**) 的属性。 
+例如，标签“机密”可能包含子标签，如“法律”和“财务”。 可对这些子标签应用不同的分类可视化标记和不同的权限管理模板。 用户不能单独选择“机密”标签；必须选择其中一个子标签，如“法律”。 因此，会看到设置的标签是“机密\法律”。 该文件的元数据包括“机密”的一个自定义文本属性和“法律”的一个自定义文本属性，以及另一个同时包含两个值（“机密 法律”）的自定义文本属性。 
 
 使用子标签时，请不要在主标签处配置可视标记、保护和条件。 使用子级别时，请仅在子级别配置这些设置。 如果在主标签及其子标签上配置这些设置，那么子标签上的设置具有更高优先级。
 
@@ -80,7 +76,7 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 2. 为每个标签创建 Exchange 传输规则：邮件属性包括配置的分类时应用规则，并修改邮件属性以设置邮件头。 
 
-    对于邮件头，可通过检查 Office 文件的属性查找要指定的信息，该文件是使用 Azure 信息保护标签进行分类的。 标识格式为 **MSIP_Label_<GUID>_Enabled** 的文件属性，并为邮件头指定此字符串，然后为标头值指定 **True **。 例如，邮件头可能如此字符串所示：**MSIP_Label_132616b8-f72d-5d1e-aec1-dfd89eb8c5b2_Enabled**
+    对于邮件头，可通过检查 Office 文件的属性查找要指定的信息，该文件是使用 Azure 信息保护标签进行分类的。 标识格式为 **MSIP_Label_<GUID>_Enabled** 的文件属性，并为邮件头指定此字符串，然后为标头值指定 **True**。 例如，邮件头可能如此字符串所示：**MSIP_Label_132616b8-f72d-5d1e-aec1-dfd89eb8c5b2_Enabled**
 
 
 用户使用 Outlook Web 访问应用或支持权限管理保护的移动设备客户端时，会发生以下情况： 
@@ -101,24 +97,5 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 因为 Azure 信息保护将永久性元数据用于分类，其中包括明文标签，所以该信息可以被 DLP 解决方案和其他应用读取。 对于文件，该元数据存储在自定义属性中；对于电子邮件，该信息存储在电子邮件标头中。
 
-## <a name="how-do-i-sign-in-as-a-different-user"></a>如何以其他用户身份登录？
-
-在生产环境中，如果使用的是 Azure 信息保护客户端，通常则不需要以其他用户身份登录。 但是，如果拥有多个租户，则可能需要这样做。 例如，除了拥有组织使用的 Office 365 或 Azure 租户外，还拥有一个测试租户。
-
-可以使用“Microsoft Azure 信息保护”对话框验证当前登录的帐户身份：打开 Office 应用程序，在“主页”选项卡上的“保护”组中，单击“保护”，然后单击“帮助和反馈”。 帐户名称会显示在“客户端状态”部分中。
-
-特别是在使用管理员帐户时，请务必检查所显示的登录帐户的域名。 例如，如果在两个不同的租户中都拥有“admin”帐户，则很容易忽略登录的帐户名正确但域错误的情况。 出现此情况可能导致下载 Azure 信息保护策略失败，或无法看到期望的标签或行为。
-
-若要以其他用户身份登录，则当前必须编辑注册表：
-
-1. 使用注册表编辑器，导航到“HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP”并删除“TokenCache”值。
-
-2. 重新启动任何打开的 Office 应用程序，并使用其他用户帐户登录。 如果在 Office 应用程序中没有看到登录到 Azure 信息保护服务的提示，请返回“Microsoft Azure信息保护”对话框，然后从更新的“客户端状态”部分中单击“登录”。
-
-此外：
-
-- 如果要重新初始化 Azure Rights Management 服务的环境（也称为引导），可以使用 [RMS Analyzer工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)中的“重置”选项进行此操作。
-
-- 如果要删除当前下载的 Azure 信息保护策略，可以从 %localappdata%\Microsoft\MSIP 文件夹中删除 **Policy.msip** 文件以实现此操作。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

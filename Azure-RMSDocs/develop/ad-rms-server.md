@@ -14,13 +14,10 @@ ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: e57b98e7ddbcdaef11f73d220eda42231c6c4141
-
-
+ms.openlocfilehash: fa703300c8e751835ec62fdceb49d84c6b57548f
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="server"></a>Server
 
 本主题介绍适用于 Azure 和 Windows Server 的 RMS 服务器的用途和功能。
@@ -54,8 +51,3 @@ ms.openlocfilehash: e57b98e7ddbcdaef11f73d220eda42231c6c4141
 * [Creating an Issuance License](https://msdn.microsoft.com/library/Aa362355)（创建颁发许可证）
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

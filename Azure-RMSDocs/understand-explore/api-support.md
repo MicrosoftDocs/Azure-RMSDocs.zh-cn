@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 0b48cdb5fc233886c41a1c8b963e1353c14dce75
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 8de4554135c738d893bec82985bd7a2baa5a4de0
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="other-applications-that-support-the-rights-management-apis"></a>支持 Rights Management API 的其他应用程序
 
 >*适用于：Azure 信息保护、Office 365*

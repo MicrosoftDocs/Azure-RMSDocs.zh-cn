@@ -4,27 +4,23 @@ description: "尽管 Azure 信息保护附带了可以自定义的默认标签�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/06/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 602fef628f882eb79fe78b5acf89bde1721aa0ec
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: ff0a5af172fa7ae20406ab4362a02a9de3fff5c0
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+translationtype: HT
 ---
-
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>如何创建 Azure 信息保护的标签
 
 >*适用于：Azure 信息保护*
 
 尽管 Azure 信息保护附带了可以自定义的默认标签，你还可以创建用户可在信息保护栏中看到的自己的标签。
 
-可以添加新标签，或在需要更高级别的分类时将新子标签添加到现有标签。 例如，属于 [默认策略](configure-policy-default.md)(#默认策略) 的“**秘密**”标签包含子标签。
+可以添加新标签，或在需要更高级别的分类时将新子标签添加到现有标签。 例如，[默认策略](configure-policy-default.md)中的最后一个标签包含子标签。
 
 使用以下说明将一个新标签添加到 Azure 的信息保护策略。
 
@@ -32,7 +28,7 @@ ms.lasthandoff: 02/24/2017
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 如果要添加的新标签会应用于所有用户，请在“策略:全局”边栏选项卡中执行以下操作之一。 
+2. 如果要添加的新标签会应用于所有用户，请在“策略: 全局”边栏选项卡中执行以下操作之一。 
 
     - 创建新的标签：单击“**添加新的标签**”。
 
@@ -52,5 +48,4 @@ ms.lasthandoff: 02/24/2017
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

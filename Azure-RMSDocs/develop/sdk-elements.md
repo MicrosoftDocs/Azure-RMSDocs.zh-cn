@@ -14,13 +14,10 @@ ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 6443c1955db5ab25caea349575cb376a6ce8dac2
-
-
+ms.openlocfilehash: 8f52c6b737603e8fd71b32c53991bb015f945abc
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="development-environment-files"></a>开发环境文件
 
 本主题展示开发环境文件和它们在计算机上的相对安装位置。
@@ -50,8 +47,3 @@ Rights Management Services SDK 2.1 包括安装在计算机上默认位置或你
 |Genmanifest.exe|\tools|生成清单以在 RMS 启用的引用程序的开发期间使用。|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

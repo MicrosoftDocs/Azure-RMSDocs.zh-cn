@@ -1,11 +1,11 @@
 ---
-title: "配置应用以进行 ADAL 身份验证 | Microsoft Docs"
+title: "为应用程序配置 ADAL 身份验证 - AIP"
 description: "配置 Azure 信息保护应用以使用基于 Azure ADAL 的身份验证的步骤"
 keywords: "身份验证, RMS, ADAL, 信息保护,"
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,13 +14,10 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b7415265d0e27896df2bdf6a62e7c875ba681345
-ms.openlocfilehash: d51730af8a1f410ad890087200f64864eceb2268
-
-
+ms.openlocfilehash: 27674aac7962c7a2f79fda8ccd6f90c366574b9b
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
+translationtype: HT
 ---
-
 # <a name="configure-your-app-for-adal-authentication"></a>配置应用以进行 ADAL 身份验证
 
 本主题介绍配置应用以进行基于 Azure Active Directory 身份验证库 (ADAL) 的步骤。
@@ -70,7 +67,7 @@ ms.openlocfilehash: d51730af8a1f410ad890087200f64864eceb2268
 ![对应用进行命名](../media/TellUsInput.png)
 
 - 添加重定向 URI，并选择“下一步”。
-  重定向 URI 必须是有效的 URI 且对你的目录唯一。 例如，可以使用与 `com.mycompany.myapplication://authorize` 类似的 URI
+  重定向 URI 必须是有效的 URI 且对你的目录唯一。 例如，可以使用与 `https://contoso.azurewebsites.net/.auth/login/done` 类似的 URI
 
 ![添加重定向 URI](../media/RedirectURI.png)
 
@@ -105,8 +102,3 @@ ms.openlocfilehash: d51730af8a1f410ad890087200f64864eceb2268
 ![选择“保存”](../media/SaveApplication.png)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

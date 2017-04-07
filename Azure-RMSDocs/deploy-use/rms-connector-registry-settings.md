@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: b894be1ef3d41a9faf6c3fd3b3fd8c5b94a62517
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: d2ec79f99390a8afba7b679c2a5fdb232df309b4
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 连接器的注册表设置
 
 >*适用于：Azure 信息保护、Office 365*

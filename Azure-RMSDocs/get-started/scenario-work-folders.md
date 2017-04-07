@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 1fa655cd91746d8e5c19f6a9eca0d93a3be8fb23
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 5da891cb6f2220d252704e33486b6450f38375cf
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="scenario---configure-work-folders-for-persistent-protection"></a>方案 - 配置工作文件夹的持续保护
 
 >*适用于：Azure 信息保护、Office 365*

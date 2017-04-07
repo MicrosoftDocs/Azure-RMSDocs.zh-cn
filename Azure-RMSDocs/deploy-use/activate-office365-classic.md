@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: caafaa9e4c38a3e4b605e582db44c6c6b0b810d4
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 01bfbfe287f0e2bf5ea8d32e133c33900d96d0e2
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-classic-admin-center"></a>如何从 Office 365 经典管理中心激活 Azure Rights Management
 
 >*适用于：Azure 信息保护、Office 365*

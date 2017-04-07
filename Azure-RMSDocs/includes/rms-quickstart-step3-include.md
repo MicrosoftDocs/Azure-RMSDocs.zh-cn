@@ -40,8 +40,3 @@
 |--------------------------------|--------------------------|
 |有关保护通过电子邮件进行共享的文件的完整说明和替代方法   →|[使用 Rights Management 共享应用程序保护通过电子邮件共享的文件](../rms-client/sharing-app-protect-by-email.md)|
 |关于 **“共享保护项”** 对话框中的选项   →|[Rights Management 共享应用程序的对话框选项](../rms-client/sharing-app-dialog-box.md)|
-
-
-<!--HONumber=Jan17_HO1-->
-
-

@@ -1,26 +1,23 @@
 ---
-title: "如何使用 Azure AD 注册应用并为其启用 RMS | Azure RMS"
+title: "如何使用 Azure AD 注册应用程序 - AIP"
 description: "介绍针对启用 RMS 的应用的用户身份验证基础知识。"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0f5b3de4607e5e889448b381f5835b4a75c9b0c2
-
-
+ms.openlocfilehash: a98b4eb3bd7705faf268a544f4efa7ba41712816
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
+translationtype: HT
 ---
-
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>如何使用 Azure AD 注册应用并为其启用 RMS
 
 本主题将指导你了解有关通过 Azure 门户注册应用和启用 RMS，以及使用 Azure Active Directory 身份验证库 (ADAL) 进行用户身份验证的基础知识。
@@ -31,8 +28,8 @@ ms.openlocfilehash: 0f5b3de4607e5e889448b381f5835b4a75c9b0c2
 ## <a name="registration-via-azure-portal"></a>通过 Azure 门户注册
 首先，按照此指南开始通过 Azure 门户配置应用的注册，如[为 ADAL 身份验证配置 Azure RMS](adal-auth.md) 中所述。 请务必从此过程复制并保存“客户端 ID”和“重定向 URI”以便稍后使用。
 
-## <a name="complete-your-rights-managagment-license-agreement-rmla"></a>完成你的权限管理许可协议 (RMLA)
-在部署你的应用程序之前，必须与 Microsoft 权限管理团队一起完成 RMLA。 有关完整的详细信息，请参阅该主题的第一部分 [Deploy into production - Request a Production License Agreement](deploying-your-application.md)（部署到生产环境 - 请求生产许可协议）。
+## <a name="complete-your-information-protection-integration-agreement-ipia"></a>完成信息保护集成协议 (IPIA)
+必须先与 Microsoft 信息保护团队一起完成 IPIA，然后才能部署应用程序。 有关全部详细信息，请参阅本主题的第一部分[部署到生产](deploying-your-application.md)。
 
 ## <a name="implement-user-authentication-for-your-app"></a>为你的应用实施用户身份验证
 每个 RMS API 都具有回调，必须实现它才能启用用户的身份验证。 然后 RMS SDK 4.2 会在你未提供访问令牌时、你的访问令牌需要刷新时或是访问令牌已过期时使用你的回调实现。
@@ -268,8 +265,3 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
     }
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-
