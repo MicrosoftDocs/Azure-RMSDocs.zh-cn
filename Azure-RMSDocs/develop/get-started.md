@@ -14,13 +14,10 @@ ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 4dd09720f55f07c08350cdeb79a0c9ec3aaede9e
-
-
+ms.openlocfilehash: 18c9f1f694601aea105eb5a7d97deb0da7f15730
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="get-started"></a>入门
 
 对于 Microsoft Rights Management SDK 4.2 这一版本，第一个应用程序的快速入门方法是通过适用于每种操作系统/平台的开发环境设置指南。 通过以下方式开始创建启用权限的应用程序：
@@ -56,8 +53,3 @@ ms.openlocfilehash: 4dd09720f55f07c08350cdeb79a0c9ec3aaede9e
   |[社区资源](community-resources.md)|不断壮大的开发人员群体可在多个平台上很好地支持 Active Directory Rights Management Services。|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

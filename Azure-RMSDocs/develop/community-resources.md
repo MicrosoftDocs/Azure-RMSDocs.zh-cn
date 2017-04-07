@@ -14,14 +14,10 @@ ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 91a91b55c0dad4cf83d76d18b75e6b0d91c67190
-ms.openlocfilehash: d9ec87cea94248fb0bb34856d0ff7bd343da26f0
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 437a9719c3efbfbbf51403e23a93609215508f33
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="community-resources"></a>社区资源
 
 不断壮大的开发人员群体可在多个平台上很好地支持 Active Directory Rights Management Services。

@@ -14,13 +14,10 @@ ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ca54dd3ceece96c03de140fcfc3202afdd94796a
-
-
+ms.openlocfilehash: bf327be47629532a716cc8239fc76d1a9ee1db46
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-work-with-encryption-settings"></a>操作说明：使用加密设置
 
 本主题将针对加密包，并显示其使用的一些代码段。
@@ -100,8 +97,3 @@ ms.openlocfilehash: ca54dd3ceece96c03de140fcfc3202afdd94796a
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

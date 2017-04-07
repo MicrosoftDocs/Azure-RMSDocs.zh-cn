@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 365d4a661a26e687da0445d9c31c644ed9d3ca12
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 100ac0f42d82eb02635187dbb0c91422d3097872
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
 >*适用于：Azure 信息保护、Office 365*

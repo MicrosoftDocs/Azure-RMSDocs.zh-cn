@@ -4,7 +4,7 @@ description: "有关当你自己管理 Azure 信息保护租户密钥（自带�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: fa92a0f3179c884b7e5fc278525a471a27cb2a96
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 198de18664e2f94209ab3c7224e89c5a9d4c3196
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="customer-managed-tenant-key-lifecycle-operations"></a>客户托管：租户密钥生命周期操作
 
 >*适用于：Azure 信息保护、Office 365*
@@ -42,7 +37,7 @@ ms.lasthandoff: 02/24/2017
 
 当你更新租户密钥时，新内容将使用新租户密钥来保护。 这个过程是分阶段进行的，因此在一段时间内，有些新内容仍将使用旧租户密钥来保护。 以前受到保护的内容仍将使用旧租户密钥来保护。 为了支持此种方案，Azure 信息保护保留旧密钥，使其能够发布旧内容的许可证。
 
-若要更新租户密钥，请先在密钥保管库中更新 Azure 信息保护租户密钥。 然后再次运行 Add-AadrmKeyVaultKey cmdlet，指定新的密钥 URL。
+若要更新租户密钥，请先在密钥保管库中更新 Azure 信息保护租户密钥。 然后再次运行 [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkey) cmdlet，指定新的密钥 URL。
 
 ## <a name="backup-and-recover-your-tenant-key"></a>备份和恢复你的租户密钥
 你负责备份自己的租户密钥。 如果你在 Thales HSM 中生成租户密钥，若要备份该密钥，只需备份标记化密钥文件、安全体系文件和管理员卡即可。
@@ -67,5 +62,4 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 |在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 密钥保管库或 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户更新他们的租户密钥。|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

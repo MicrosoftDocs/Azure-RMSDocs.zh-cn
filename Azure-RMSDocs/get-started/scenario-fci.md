@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: e9cd548d2f2335753349d6a0248c81c0d76c6c97
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 7c7d75c5d8af7e3a723068a719e6850b44a06585
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="scenario---protect-files-on-a-file-server-share"></a>方案 - 保护文件服务器共享上的文件
 
 >*适用于：Azure 信息保护、Office 365*
@@ -155,4 +151,3 @@ ms.lasthandoff: 02/24/2017
 -   与技术支持联系：helpdesk@vanarsdelltd.com
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

@@ -12,16 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: fac6f2180c8b108ea237cb36d29058b4907db18a
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 40db2ba3856cab24f0162a1b46960816b85a5089
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
-
 # <a name="powershell-reference-for-custom-templates"></a>自定义模板的 PowerShell 参考
 
 >*适用于：Azure 信息保护、Office 365*

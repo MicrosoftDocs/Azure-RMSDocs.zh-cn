@@ -4,7 +4,7 @@ description: "有关将 Rights Management (RMS) 客户端与 RMS 保护工具配
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 58a0f117100ff5d19dfd6fee2ac4dd61c6bea36b
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 5e1a193ab54e5d0d85e4f7a22f53ac0b9b39036c
+ms.sourcegitcommit: 047e6dfe8f44fd13585e902df5ea871b5d0adccb
+translationtype: HT
 ---
-
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
->*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
+>*适用于：Azure 信息保护、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2*
 
 通过本文获取相关说明和脚本以使用 Azure 信息保护客户端和 PowerShell 配置文件服务器资源管理器和文件分类基础结构 (FCI)。
 
@@ -44,7 +40,7 @@ ms.lasthandoff: 02/24/2017
 
     -   已标识包含要使用 Rights Management 保护的文件的本地文件夹。 例如，C:\FileShare。
 
-    -   你已安装 AzureInformationProtection 模块并已配置 Azure 权限管理的先决条件。 有关详细信息，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](client-admin-guide-powershell.md)。 具体而言，你使用以下值通过服务主体连接到 Azure 权限管理服务：**BposTenantId**、**AppPrincipalId** 和 **Symmetric key**。
+    -   你已安装 AzureInformationProtection 模块并已配置 Azure 权限管理的先决条件。 有关详细信息，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](client-admin-guide-powershell.md)。 具体而言，你使用以下值通过服务主体连接到 Azure 权限管理服务：**BposTenantId**、**AppPrincipalId** 和 **Symmetric key**。 
 
     -   如果要更改特定文件扩展名保护（本机或常规）的默认级别，需已编辑注册表，如管理员指南中的[更改文件的默认保护级别](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)部分所述。
 
@@ -52,7 +48,7 @@ ms.lasthandoff: 02/24/2017
 
 -   你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 服务保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此帐户配置的详细信息，请参阅[准备 Azure Rights Management 服务](../plan-design/prepare.md)。
 
--   已确定要使用的 Rights Management 模板，该模板将保护文件。 请确保你通过使用 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) cmdlet 知道此模板的 ID。
+-   已将 Rights Management 模板下载到文件服务器，并标识了可保护文件的模板 ID。 若要执行此操作，请使用 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) cmdlet。 此方案不支持部门模板，因此必须使用未配置作用域的模板，或作用域配置必须包含应用程序兼容性选项，以选中“如果应用程序不支持用户标识，则向所有用户显示此模板”复选框。
 
 ## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>为 Azure 权限管理保护配置文件服务器资源管理器 FCI 的说明
 按照这些说明通过使用 PowerShell 脚本作为自定义任务自动保护一个文件夹中的所有文件。 按此顺序执行这些过程：
@@ -70,6 +66,8 @@ ms.lasthandoff: 02/24/2017
 6.  通过手动运行规则和任务来测试配置
 
 在这些说明结束时，所选文件夹中的所有文件都将使用 RMS 的自定义属性进行分类，然后这些文件将受 Rights Management 保护。 对于更复杂的配置（如有选择性地保护某些文件，而不保护其他文件），你可以然后创建或使用不同的分类属性和规则，用于仅保护这些文件的文件管理任务。
+
+请注意，如果更改了用于 FCI 的 Rights Management 模板，则必须在文件服务器计算机上运行 `Get-RMSTemplate -Force` 以获取更新后的模板。 然后将使用更新后的模板来保护新的文件。 如果通过对模板的更改就足以重新保护文件服务器上的文件，则可以通过以交互方式运行 Protect-RMSFile cmdlet 与对文件具有“导出”或“完全控制”使用权限的帐户来执行此操作。 如果发布了想要用于 FCI 的新模板，则还必须在此文件服务器计算机上运行 `Get-RMSTemplate -Force`。
 
 ### <a name="save-the-windows-powershell-script"></a>保存 Windows PowerShell 脚本
 
@@ -288,4 +286,3 @@ ms.lasthandoff: 02/24/2017
 现在你需要做的只是创建新的文件管理任务（该任务使用同一脚本但可能使用不同模板），并为刚配置的分类属性配置条件。 例如，选择将“运算符”值设为“等于”且“值”为“高”的“个人身份信息”属性，而不是我们前面配置的条件（**RMS** 属性，**等于**，**是**）。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

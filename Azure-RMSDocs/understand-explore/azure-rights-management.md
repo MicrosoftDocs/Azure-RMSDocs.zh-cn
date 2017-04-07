@@ -1,9 +1,6 @@
 ---
 redirect_url: /information-protection/understand-explore/what-is-information-protection
-translationtype: Human Translation
-ms.sourcegitcommit: 3336b75fbc2fce1c9260afb217d909b2b772ed03
-ms.openlocfilehash: 91b2a16929f9de250ca05404e2117b81a05908fc
-ms.lasthandoff: 01/24/2017
-
+ms.openlocfilehash: 402982b9c1693ee12a5b798ce59aa7e428e5b522
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-

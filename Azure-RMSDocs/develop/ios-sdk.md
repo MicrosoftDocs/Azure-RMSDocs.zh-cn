@@ -14,13 +14,10 @@ ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 96b281d7bf3073cbe99a844a440a357572813b4a
-
-
+ms.openlocfilehash: 7027e3833344c7734818bf034bd8aa68f04409eb
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="ios-and-os-x-setup"></a>iOS 和 OS X 安装程序
 
 借助 Azure Rights Management (Azure RMS)，iOS 和 OS X 应用程序可使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
@@ -112,8 +109,3 @@ ms.openlocfilehash: 96b281d7bf3073cbe99a844a440a357572813b4a
 * [iOS/OS X API 参考](https://msdn.microsoft.com/library/dn758306.aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

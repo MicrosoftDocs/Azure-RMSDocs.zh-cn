@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: d0bb1cad20acdc16ee47c4a970a0cc095d07dc75
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: dc2b5e083b016953688214dddbe42f15b675641b
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护*
@@ -94,4 +90,3 @@ ms.lasthandoff: 02/24/2017
 现在可以转到[步骤 3。激活 Azure 信息保护租户](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

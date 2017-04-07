@@ -4,7 +4,7 @@ description: "用于将 Active Directory Rights Management Services (AD RMS) 部
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 12bd5b89cf9957521c7d7b4fb573e4ffcd6c865d
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: b82132d45f1d671c11355c44104dacf521e18082
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
@@ -59,12 +55,6 @@ ms.lasthandoff: 02/24/2017
         
         - Windows Server 2016 (x64)
         
-    - 加密模式 2：
-
-        - 在开始迁移到 Azure 信息保护之前，必须在加密模式 2 下运行 AD RMS 服务器和客户端。
-        
-        虽然当前的服务器许可方证书 (SLC) 密钥必须使用加密模式 2，但 Azure 信息保护支持使用以前为加密模式 1 配置的密钥作为存档的密钥。 有关加密模式和如何移至加密模式 2 的详细信息，请参阅 [AD RMS 加密模式](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)。
-        
     - 支持所有有效的 AD RMS 拓扑：
     
         - 单个林、单个 RMS 群集
@@ -73,7 +63,7 @@ ms.lasthandoff: 02/24/2017
         
         - 多个林、多个 RMS 群集
         
-    注意：默认情况下，多个 RMS 群集将迁移到单个 Azure 信息保护租户。 如果你想要迁移到单独的 Azure 信息保护租户，必须将它们视为不同的迁移。 不能将一个 RMS 群集的密钥导入到多个 Azure 信息保护租户。
+    注意：默认情况下，多个 AD RMS 群集将迁移到单个 Azure 信息保护租户。 如果你想要迁移到单独的 Azure 信息保护租户，必须将它们视为不同的迁移。 不能将一个 RMS 群集的密钥导入到多个 Azure 信息保护租户。
 
 - **运行 Azure 信息保护的所有要求，包括 Azure 信息保护租户（未激活）：**
 
@@ -104,7 +94,22 @@ ms.lasthandoff: 02/24/2017
     - 此可选的配置需要 Azure 密钥保管库和一个支持含 HSM 保护密钥的密钥保管库的 Azure 订阅。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。 
 
 
-限制：
+### <a name="cryptographic-mode-considerations"></a>加密模式注意事项
+
+虽然不是迁移的先决条件，但还是建议进行迁移前在加密模式 2 中运行 AD RMS 服务器和客户端。 
+
+有关不同模式以及如何升级的详细信息，请参阅 [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)（AD RMS 加密模式）。
+
+如果 AD RMS 群集处于加密模式 1 且无法升级，则必须在迁移完成时重新键入 Azure 信息保护租户密钥。 重新键入将创建一个新租户密钥，该密钥使用加密模式 2。 将 Azure Rights Management 服务与加密模式 1 配合使用仅在迁移过程中受支持。
+
+确认 AD RMS 加密模式：
+ 
+- 对于 Windows Server 2012 R2 和 Windows 2012：“AD RMS 群集属性”>“常规”选项卡。 
+
+- 对于所有支持版本的 AD RMS：使用 [RMS 分析工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)和“AD RMS 管理员”选项可在“RMS 服务信息”中查看加密模式。
+
+
+### <a name="migration-limitations"></a>迁移限制
 
 -   虽然迁移过程支持将服务器授权证书 (SLC) 密钥迁移到 Azure 信息保护的硬件安全模块 (HSM)，但 Exchange Online 目前对于 Azure 信息保护使用的 Rights Management 服务不支持此配置。 如果你希望在迁移到 Azure 信息保护之后获得 Exchange Online 的完整 IRM 功能，必须[由 Microsoft 管理](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok)你的 Azure 信息保护租户密钥。 你也可以自行管理 Azure 信息保护租户 (BYOK)，在这种情况下，Exchange Online 的 IRM 功能将会受限。 有关将 Exchange Online 与 Azure Rights Management 服务配合使用的详细信息，请参阅这些迁移说明中的[步骤 6.为 Exchange Online 配置 IRM 集成](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online)。
 
@@ -192,11 +197,10 @@ ms.lasthandoff: 02/24/2017
 
 - **步骤 9：更新 Azure 信息保护租户密钥**
 
-    此步骤为可选步骤，但如果你从步骤 2 所选择的 Azure 信息保护租户密钥拓扑由 Microsoft 管理，那么建议你执行此步骤。 如果所选择的 Azure 信息保护租户密钥拓扑由客户管理 (BYOK)，则此步骤不适用。
+    如果在迁移前未运行加密模式 2，此步骤是必需的；对于所有迁移来说，此步骤是可选的但建议执行，以帮助保护 Azure 信息保护租户密钥的安全性。
 
 
 ## <a name="next-steps"></a>后续步骤
 若要开始迁移，请转到[阶段 1 - 服务器端配置](migrate-from-ad-rms-phase1.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

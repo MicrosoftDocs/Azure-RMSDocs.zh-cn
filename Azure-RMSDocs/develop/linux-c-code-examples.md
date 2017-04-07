@@ -14,13 +14,10 @@ ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ca3ec0fdde3b8aa2eeebf056c5e155daf79573b0
-
-
+ms.openlocfilehash: 7dfa61380067bcd2b1886c1e9a2674a4c1150bc9
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="linux-code-examples"></a>Linux 代码示例
 
 本主题向你介绍 Linux 版 RMS SDK 的重要方案和代码元素。
@@ -592,8 +589,3 @@ ms.openlocfilehash: ca3ec0fdde3b8aa2eeebf056c5e155daf79573b0
 **注意** 任何身份验证库方法都可能引发 **rmsauth::Exception**
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

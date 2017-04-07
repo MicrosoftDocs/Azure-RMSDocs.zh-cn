@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: f0f486620f4b13dc8d94fee742eec2f8e4753d78
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 5c1fad4b9e809a597f48d3bf394f3c097ca938e7
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="office-365-configuration-for-clients-and-online-services"></a>Office 365：客户端和联机服务的配置
 
 >*适用于：Azure 信息保护、Office 365*
@@ -1113,4 +1109,3 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 ```
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

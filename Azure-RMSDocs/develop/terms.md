@@ -14,14 +14,10 @@ ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9c0977c57ea8e85b6750fe1f5a063059ee343db9
-ms.openlocfilehash: 4ecf686d8e7e26909c8bda4a2d0df7fc61f413bb
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 0e923d1bb3d4fd8b9b84f065b9dd32ddd041f7ba
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="terms"></a>条款
 
 特定于 Azure 信息保护的开发人员术语定义的集合。

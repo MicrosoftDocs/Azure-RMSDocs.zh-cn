@@ -12,13 +12,10 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: ea2783ec76505681ab60aee9d995e347d4310cad
-ms.lasthandoff: 02/24/2017
-
+ms.openlocfilehash: e940dfd1d3a053c14ea1adb6e72f4cde7d26bba0
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure 信息保护的安全最佳实践
 
 Azure 信息保护 (AIP) 软件开发工具包 (SDK) 提供可靠的系统，用于发布和使用所有类型的受保护信息。 为了帮助 AIP 系统尽可能的强大，启用 AIP 的应用程序必须使用 AIP 最佳实践进行构建。 启用 AIP 的应用程序共同分担责任，帮助维持此生态系统的安全。 识别安全风险，并为应用程序开发期间引入的风险提供缓解，在最大程度上减小不安全的软件实现的可能性。
@@ -69,7 +66,7 @@ AIP 不支持在运行时修改代码或修改导入地址表 (IAT)。 会为加
 
 ### <a name="minimum-standard"></a>最低标准
 - 无法在执行期间修改应用程序进程中的导入地址表。 - 应用程序指定许多在运行时通过使用地址表调用的函数，无法在运行时期间或之后更改这些函数。 除此之外，这意味着无法对通过使用生产证书签名的应用程序执行代码分析。
-- 无法从清单中指定的任何 DLL 内调用 **DebugBreak ** 函数。
+- 无法从清单中指定的任何 DLL 内调用 **DebugBreak** 函数。
 - 无法调用具有 **DONT_RESOLVE_DLL_REFERENCES** 标志设置的 **LoadLibrary**。 此标志会指示加载器跳过绑定到导入的模块，因此修改了导入地址表。
 - 无法通过对 /DELAYLOAD 链接器开关执行运行时或后续更改来更改延迟加载。
 - 无法通过提供自己拥有的 Delayimp.lib helper 函数版本来更改延迟加载。

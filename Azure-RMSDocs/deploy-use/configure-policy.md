@@ -4,7 +4,7 @@ description: "若要配置分类、标记和保护，必须配置 Azure 信息�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 2510c14fc10411783838516f45fdfd06fd73350d
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: ec57bae71b11b6505ccb94fcdf692f215862191d
+ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
+translationtype: HT
 ---
-
 # <a name="configuring-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
 >适用于：Azure 信息保护
@@ -32,7 +28,7 @@ ms.lasthandoff: 02/24/2017
 
 2. 导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“更多服务”并在“筛选”框中开始键入**信息保护**。 在结果中选择“Azure 信息保护”。 
 
-    然后，你将看到“Azure 信息保护”边栏选项卡，可在其中打开所有用户获得的“全局”策略。 还可以选择添加和编辑作用域内策略。 **全局** Azure 信息保护策略包含以下可配置的元素：
+    加载“Azure 信息保护”边栏选项卡后，它会自动打开“策略:全局”边栏选项卡，你可以查看和编辑所有用户获得的全局策略。 然而，你还可以选择添加和编辑作用域内策略。 Azure 信息保护策略包含以下可配置的元素：
 
     - 让你和用户对文档和电子邮件进行分类的标签。
 
@@ -44,15 +40,24 @@ ms.lasthandoff: 02/24/2017
 
     - 当用户选择比原始级别低的敏感度级别时提示用户提供相应原因的选项。
 
+    - 用于自动标记电子邮件的选项（基于电子邮件附件）。
+
     - 为用户提供自定义帮助链接的选项。
 
-Azure 的信息保护附带 [默认策略](configure-policy-default.md)(#默认策略)，其中包含**个人**、**公共**、**内部**、**机密**和**秘密**标签。 可以使用无更改的默认标签，或者你可以自定义它们，或删除它们，并可以创建新标签。
+Azure 信息保护附带[默认策略](configure-policy-default.md)，其中包含五个主要标签。 这些标签可用于组织常规创建和存储的数据，包括从最低等级的个人数据到最高等级的机密数据等各类数据。 可以使用无更改的默认标签，或者你可以自定义它们，或删除它们，并可以创建新标签。
 
 当在“Azure 信息保护”边栏选项卡上进行任何更改时，请单击“**保存**”以保存更改，或者单击“**放弃**”以返回到上一个保存的设置。 
 
 在完成所需更改后，单击“**发布**”。 
 
-在受支持的 Office 应用程序启动并将所做的更改作为其 Azure 信息保护策略下载时，Azure 信息保护客户端会检查任何更改。
+每当受支持的 Office 应用程序启动时，Azure 信息保护客户端都会检查是否有任何变化，并根据最新的 Azure 信息保护策略下载这些更改。 在客户端上刷新策略的其他触发器：
+
+- 右键单击以分类和保护文件或文件夹。
+
+- 运行 PowerShell cmdlet 以实现标记和保护（Get-AIPFileStatus 和 Set-AIPFileLabel）。
+
+- 每 24 小时一次。
+
 
 ## <a name="configuring-your-organizations-policy"></a>配置组织的策略
 
@@ -81,4 +86,3 @@ Azure 的信息保护附带 [默认策略](configure-policy-default.md)(#默认�
 有关如何自定义默认策略并在 Office 应用程序是查看所产生行为的示例，请尝试 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)(#azure-信息保护快速入门教程)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

@@ -12,13 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: c0cbd02cf69ca8039af8f6b397cb71f140eaab50
-
-
+ms.openlocfilehash: 8f249994c2ac1cf02c4572d3f7cb8ba6566cb142
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
 >*适用于：Azure 信息保护、Office 365*
@@ -51,11 +48,5 @@ ms.openlocfilehash: c0cbd02cf69ca8039af8f6b397cb71f140eaab50
 > 支持[从 AD RMS 到 Azure 信息保护](http://technet.microsoft.com/library/Dn858447.aspx)和[从 Azure 信息保护到 AD RMS](http://msdn.microsoft.com/library/azure/dn629429.aspx) 的迁移路径。 如果你部署 Azure 信息保护，然后决定不再想要使用此云服务，请参阅[解除 Azure 信息保护授权和停用 Azure 信息保护](../deploy-use/decommission-deactivate.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-
-<!--HONumber=Feb17_HO4-->
 
 

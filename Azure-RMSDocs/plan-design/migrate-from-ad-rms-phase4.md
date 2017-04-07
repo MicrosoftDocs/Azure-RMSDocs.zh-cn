@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 4 阶段包括从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: fc45ae10101460ea46bf2aa599b213a772eb5626
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: d36f47e586ac1295dcc79e43a9e061b4c7c7fe1e
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="migration-phase-4---post-migration-tasks"></a>迁移阶段 4 - 迁移后任务
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
@@ -47,14 +43,17 @@ ms.lasthandoff: 02/24/2017
 解除 AD RMS 服务器的授权后，你可能想要利用此机会来查看你在 Azure 经典门户中的模板并将其合并以使用户有较少的选项，或重新配置它们，或者甚至添加新模板。 这还将是发布默认模板的好时机。 有关详细信息，请参阅[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)。
 
 ## <a name="step-9-re-key-your-azure-information-protection-tenant-key"></a>步骤 9. 更新 Azure 信息保护租户密钥
-此步骤仅在所选租户密钥拓扑是由 Microsoft 管理，而不是由客户管理（含 Azure 密钥保管库的 BYOK）时适用。
+迁移完成时，如果 AD RMS 部署使用的是 RMS 加密模式 1，则此步骤是必需的，因为重新键入将创建使用 RMS 加密模式 2 的新租户密钥。 将 Azure RMS 与加密模式 1 配合使用仅在迁移过程中受支持。
 
-此步骤为可选步骤，但如果 Azure 信息保护租户密钥由 Microsoft 管理并已从 AD RMS 迁移，则建议执行此步骤。 在此情况下更新密钥有助于保护 Azure 信息保护租户密钥免受 AD RMS 密钥的潜在安全漏洞的影响。
+即使在 RMS 加密模式 2 中运行，也建议在迁移完成后，执行此步骤（此步骤是可选的）。 在此情况下更新密钥有助于保护 Azure 信息保护租户密钥免受 AD RMS 密钥的潜在安全漏洞的影响。
 
 更新 Azure 信息保护租户密钥（也称为“滚动密钥”）时，将创建新的密钥，并将原始密钥存档。 但是，由于将一个密钥更改为另一个密钥的操作不会立即完成，而是需要几周的时间，因此应在迁移完成时，立即更新 Azure 信息保护租户密钥，而不要等到怀疑原始密钥受到破坏时再更新。
 
-若要更新 Microsoft 管理的 Azure 信息保护租户密钥，[请与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)，并打开**从 AD RMS 迁移后，带有更新 Azure 信息保护密钥请求的 Azure 信息保护支持案例**。 必须证明你是 Azure 信息保护租户的管理员，并且了解确认此过程需要几天时间。 收取标准支持费用：重新键入租户密钥并不是免费支持服务。
+更新 Azure 信息保护租户密钥：
 
+- 如果租户密钥由 Microsoft 管理：请联系 [Microsoft 支持部门](../get-started/information-support.md#to-contact-microsoft-support)，并打开**带有从 AD RMS 迁移后更新 Azure 信息保护密钥请求的 Azure 信息保护支持案例**。 必须证明你是 Azure 信息保护租户的管理员，并且了解确认此过程需要几天时间。 收取标准支持费用：重新键入租户密钥并不是免费支持服务。
+
+- 如果租户密钥由你管理 (BYOK)：在 Azure Key Vault 中，重新键入用于 Azure 信息保护租户的密钥，然后再次运行 [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) cmdlet 以指定新密钥 URL。 
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -63,4 +62,3 @@ ms.lasthandoff: 02/24/2017
 完成迁移后，请检查[部署路线图](deployment-roadmap.md)以确定是否需要执行其他任何部署任务。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

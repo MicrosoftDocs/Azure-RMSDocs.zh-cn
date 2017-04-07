@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: bef1ed0e38beadbd86868e8be3535f32b22382df
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: b39c39756ec5f6e6554b87a15186f998eda977b3
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center-preview"></a>如何从 Office 365 管理中心预览激活 Azure Rights Management
 
 >*适用于：Azure 信息保护、Office 365*
@@ -60,4 +56,3 @@ ms.lasthandoff: 02/24/2017
 返回 [激活 Azure Rights Management](activate-service.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

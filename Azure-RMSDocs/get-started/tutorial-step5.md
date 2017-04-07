@@ -1,13 +1,6 @@
 ---
 redirect_url: /information-protection/get-started/infoprotect-tutorial-step5
-translationtype: Human Translation
-ms.sourcegitcommit: 3336b75fbc2fce1c9260afb217d909b2b772ed03
-ms.openlocfilehash: ff20969bdbea7f6605732fdedfabff0298beed02
-
+ms.openlocfilehash: fab079fa028f2ba2e7780810dac121c739ceae01
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
-
-<!--HONumber=Sep16_HO4-->
-
-

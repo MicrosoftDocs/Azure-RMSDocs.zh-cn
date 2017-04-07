@@ -14,13 +14,10 @@ ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 329dce4c8bb5a6de3ecb7bbd7e734b4acbf339c9
-ms.openlocfilehash: 913373504e34321556a1cdd34ea2744d8477f562
-
-
+ms.openlocfilehash: 890319e80941232af636fce6913f362ad48632f6
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="file-api-configuration"></a>文件 API 配置
 
 
@@ -153,8 +150,3 @@ HKEY_LOCAL_MACHINE
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Nov16_HO3-->
-
-

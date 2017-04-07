@@ -4,7 +4,7 @@ description: "如果你了解或以前部署过 Active Directory Rights Manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: d0027fa04824b0c1172ef21da4736895965925d7
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 3ac73576f67bee8d63c714352bfa4e75413ab972
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>比较 Azure 信息保护与 AD RMS
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
@@ -66,15 +62,17 @@ Azure 信息保护的一些主要差异：
 |需要 Office 365 的 Azure 信息保护许可证或 Azure 权限管理许可证才能保护内容。 无需许可证即可使用已受 Azure 信息保护（包括另一个组织的用户）保护的内容。<br /><br />有关详细信息，请参阅 Azure 信息保护网站上的[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|需要 RMS 许可证才能保护内容，以及使用已受 AD RMS 保护的内容。<br /><br />有关 AD RMS 授权的详细信息，如果是一般信息，请参阅 [客户端访问许可证和管理许可证](https://www.microsoft.com/en-us/Licensing/product-licensing/client-access-license.aspx) ，如果是特定信息，请联系 Microsoft 合作伙伴或 Microsoft 代表。|
 
 ## <a name="cryptographic-controls-for-signing-and-encryption"></a>对签名和加密的加密控制
-Azure 信息保护始终将 RSA 2048 用于所有公钥加密，将 SHA 256 用于签名操作。 相比之下，AD RMS 支持 RSA 1024 和 RSA 2048，还将 SHA 1 或 SHA 256 用于签名操作。
+默认情况下，Azure 信息保护将 RSA 2048 用于所有公钥加密，将 SHA 256 用于签名操作。 相比之下，AD RMS 支持 RSA 1024 和 RSA 2048，还将 SHA 1 或 SHA 256 用于签名操作。
 
 Azure 信息保护和 AD RMS 都将 AES 128 用于对称加密。
 
-如果创建了租户密钥并由 Microsoft 管理（默认），或者如果你管理自己的租户密钥（称为 BYOK），Azure 信息保护将遵守 FIPS 140-2。 有关管理租户密钥的详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)。
+租户密钥大小为 2048 位时，Azure 信息保护符合 FIPS 140-2，这是激活 Azure Rights Management 服务时的默认设置。 
+
+有关加密控制的详细信息，请参阅 [Azure RMS 使用的加密控制：算法和密钥长度](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)。
+
 
 ## <a name="next-steps"></a>后续步骤
 如果希望从 AD RMS 迁移到 Azure 信息保护，请参阅[从 AD RMS 迁移到 Azure 信息保护](../plan-design/migrate-from-ad-rms-to-azure-rms.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

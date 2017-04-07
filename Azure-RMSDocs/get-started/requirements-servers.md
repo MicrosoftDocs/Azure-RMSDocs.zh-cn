@@ -4,7 +4,7 @@ description: "通过使用 Rights Management 连接器识别可使用 Azure 信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 22beea6ab33d6f3fc0c36ff136dd1bc44714a997
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 37c354df794ca60271f7c04641a9de6009605179
+ms.sourcegitcommit: 047e6dfe8f44fd13585e902df5ea871b5d0adccb
+translationtype: HT
 ---
-
-
 # <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
 
 >*适用于：Azure 信息保护、Office 365*
@@ -46,6 +41,8 @@ ms.lasthandoff: 02/24/2017
     -   Office SharePoint Server 2010
 
 -   **运行 Windows Server 和使用文件分类基础结构 (FCI) 的文件服务器**：
+
+    -   Windows Server 2016
 
     -   Windows Server 2012 R2
 

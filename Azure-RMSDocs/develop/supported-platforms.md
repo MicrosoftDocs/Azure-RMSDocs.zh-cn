@@ -14,13 +14,10 @@ ms.assetid: 4E46521F-8C2F-401A-A481-113CE130ACF0
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 5f9c19503cebd0888203bf4158ff59d916630453
-
-
+ms.openlocfilehash: 7225ec06dafd9773058ad276ab08fda6bdcab417
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="supported-platforms"></a>受支持的平台
 
 本主题介绍支持 Rights Management Services SDK 2.1 的客户端和服务器平台。
@@ -38,8 +35,3 @@ ms.openlocfilehash: 5f9c19503cebd0888203bf4158ff59d916630453
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

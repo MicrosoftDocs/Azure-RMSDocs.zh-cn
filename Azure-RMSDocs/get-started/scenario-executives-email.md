@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 1407a7bee800fec0ba8498d0439586378003ed54
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 3e4b1d6115d861e692197d9cb3fc850b7574e32e
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="scenario---executives-securely-exchange-privileged-information"></a>方案 - 高级管理人员安全地交换特权信息
 
 >*适用于：Azure 信息保护、Office 365*
@@ -132,4 +128,3 @@ ms.lasthandoff: 02/24/2017
 -   与技术支持联系：helpdesk@vanarsdelltd.com
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

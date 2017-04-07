@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: aa3b80b7369348f87adc440d6f7a91977aa0fc7c
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: f47b177ece91f775d53c72d379d6ffa3a2f3c98b
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="configuring-and-using-document-tracking-for-azure-information-protection"></a>配置和使用 Azure 信息保护的文档跟踪
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
@@ -86,4 +81,3 @@ ms.lasthandoff: 02/24/2017
 - [PowerShell 命令](client-admin-guide-powershell.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

@@ -14,13 +14,10 @@ ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 157055d8e6c91887c0f8e7ca2124806bb37e3f3e
-
-
+ms.openlocfilehash: bae83de7d91d30ce39d2edb1311fac55ca2dafad
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-use-document-tracking"></a>如何：使用文档跟踪
 
 使用文档跟踪功能需要对管理关联元数据以及向服务注册有一些简单了解。
@@ -55,8 +52,3 @@ ms.openlocfilehash: 157055d8e6c91887c0f8e7ca2124806bb37e3f3e
   - iOS - [MSUserPolicy.registerForDocTracking](https://msdn.microsoft.com/library/mt573694.aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

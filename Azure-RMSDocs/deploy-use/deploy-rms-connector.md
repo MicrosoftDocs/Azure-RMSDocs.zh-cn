@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 93246a239476331f8fc117560c8ce45420eea674
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: d6fad45bb6a138fee439019b4ae454feb3fe752f
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="deploying-the-azure-rights-management-connector"></a>部署 Azure Rights Management 连接器
 
 >*适用于：Azure 信息保护、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2。*

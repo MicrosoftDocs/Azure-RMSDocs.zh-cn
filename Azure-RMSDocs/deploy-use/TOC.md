@@ -47,8 +47,3 @@
 # [部署和使用该客户端](/information-protection/rms-client/use-client)
 # [开发和自定义应用](/information-protection/develop/developers-guide)
 
-
-
-<!--HONumber=Feb17_HO3-->
-
-

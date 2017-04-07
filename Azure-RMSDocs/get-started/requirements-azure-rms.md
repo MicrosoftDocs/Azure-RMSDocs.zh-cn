@@ -1,12 +1,6 @@
 ---
 redirect_url: requirements
-translationtype: Human Translation
-ms.sourcegitcommit: 52b603971c1cfab0822857d192c1330f33dd1770
-ms.openlocfilehash: 1aa7a564542e55eaedd88cc58bb7c0ae6f277ac1
-
+ms.openlocfilehash: 5ecaf727369dafb748da1bc4b05e060b5dea4fa1
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
-<!--HONumber=Jan17_HO1-->
-
-

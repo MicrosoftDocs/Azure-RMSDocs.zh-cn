@@ -4,7 +4,7 @@ description: "关于安装、支持的操作系统、注册表设置以及 Right
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: cf7560c1fdeba3cabfb78fc7a8bf0c84e9936c48
-ms.openlocfilehash: 63d2fd256180006924413f416bd03efec7845e48
-ms.lasthandoff: 02/27/2017
-
-
+ms.openlocfilehash: 9b67159136de154b934f70991fcb10799a4cbbb2
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rms-client-deployment-notes"></a>RMS 客户端部署说明
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 7 SP1、Windows 8、Windows 8.1、Windows 10、Windows Server 2008、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016、Windows Vista*
@@ -116,9 +112,9 @@ RMS 客户端将许可证存储在本地磁盘上，并且还在 Windows 注册�
 |如果客户端版本是 1.03102.0221 或更高版本：<br /><br />**控制应用程序数据收集**|**重要提示**：为了尊重用户隐私，作为管理员，你在启用数据收集之前必须征得用户同意。<br /><br />如果启用数据收集，表示你同意通过 Internet 将数据发送到 Microsoft。 Microsoft 利用此数据保证并改进 Microsoft 产品和服务的质量、安全性和完整性。 例如，会分析性能和可靠性（如使用哪些功能、功能的响应速度、设备性能、用户界面交互和遇到的任何产品问题）。 数据还包括软件（如当前运行的软件）以及 IP 地址的配置信息。<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticState<br /><br />**值：**0 表示（默认）通过使用环境属性 [IPC_EI_DATA_COLLECTION_ENABLED](https://msdn.microsoft.com/library/hh535247(v=vs.85).aspx) 定义应用程序；1 表示禁用；2 表示启用<br /><br />**注意**：如果基于 32 位 MSIPC 的应用程序在 64 位版本的 Windows 上运行，则位置将为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC。|
 |仅限 AD RMS：<br /><br />**更新客户端计算机的企业服务位置**|更新以下注册表项：<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: default<br /><br />**值：**\<http or https>://*RMS_Cluster_Name*/_wmcs/Certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: default<br /><br />**值：**\<http or https>://*RMS_Cluster_Name*/_wmcs/Licensing|
 |**启用和禁用跟踪**|更新以下注册表项：<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC<br />REG_DWORD: Trace<br /><br />**Value：** 1 表示启用跟踪，0 表示禁用跟踪（默认）|
-|**更改模板刷新的频率（以天为单位）**|以下注册表值指定当未设置 TemplateUpdateFrequencyInSeconds 值时，在用户计算机上刷新模板的频率。  如果这两个值都未设置，则应用程序使用 RMS 客户端（版本 1.0.1784.0）下载模板所遵循的默认刷新间隔为 1 天。 在低于此版本的版本中，默认刷新间隔值为 7 天。<br /><br />**客户端模式：**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：TemplateUpdateFrequency<br /><br />**Value：** 指定下载间隔天数的整数值（最小为 1）。<br /><br />**服务器模式：**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\*\<SID\>\*<br />REG_DWORD：TemplateUpdateFrequency<br /><br />**值：** 一个指定下载间隔天数（最小为 1）的整数值。|
-|**更改模板刷新的频率（以秒为单位）**<br /><br />重要提示：如果指定此值，将忽略以天为单位的模板刷新频率值。 指定其中一项，而不要同时指定两项。|以下注册表值指定在用户计算机上刷新模板的频率。 如果未设置此值或者用于更改以天为单位的频率的值 (TemplateUpdateFrequency)，则应用程序使用 RMS 客户端（版本 1.0.1784.0）下载模板所遵循的默认刷新间隔为 1 天。 在低于此版本的版本中，默认刷新间隔值为 7 天。<br /><br />**客户端模式：**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：TemplateUpdateFrequencyInSeconds<br /><br />**Value：** 指定下载间隔秒数的整数值（最小为 1）。<br /><br />**服务器模式：**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\*\<SID\>\*<br />REG_DWORD：TemplateUpdateFrequencyInSeconds<br /><br />**值：** 一个指定下载间隔秒数（最小为 1）的整数值。|
-|仅限 AD RMS：<br /><br />**在下一次发布请求时立即下载模板**|在测试和评估期间，你可能希望 RMS 客户端尽快下载模板。 为此，可以删除以下注册表项，使 RMS 客户端在下一次发布请求时立即下载模板，而不是按 TemplateUpdateFrequency 注册表设置指定的时间等待：<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<Server Name>\Template<br /><br />**注意**：\<Server Name\> 可以同时具有外部 (corprights.contoso.com) 和内部 (corprights) URL，因此可能具有两个不同项。|
+|**更改模板刷新的频率（以天为单位）**|以下注册表值指定当未设置 TemplateUpdateFrequencyInSeconds 值时，在用户计算机上刷新模板的频率。  如果这两个值都未设置，则应用程序使用 RMS 客户端（版本 1.0.1784.0）下载模板所遵循的默认刷新间隔为 1 天。 在低于此版本的版本中，默认刷新间隔值为 7 天。<br /><br />**客户端模式：**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：TemplateUpdateFrequency<br /><br />**Value：** 指定下载间隔天数的整数值（最小为 1）。<br /><br />**服务器模式：**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\*\<SID\>*<br />REG_DWORD：TemplateUpdateFrequency<br /><br />**Value：** 指定下载间隔天数的整数值（最小为 1）。|
+|**更改模板刷新的频率（以秒为单位）**<br /><br />重要提示：如果指定此值，将忽略以天为单位的模板刷新频率值。 指定其中一项，而不要同时指定两项。|以下注册表值指定在用户计算机上刷新模板的频率。 如果未设置此值或者用于更改以天为单位的频率的值 (TemplateUpdateFrequency)，则应用程序使用 RMS 客户端（版本 1.0.1784.0）下载模板所遵循的默认刷新间隔为 1 天。 在低于此版本的版本中，默认刷新间隔值为 7 天。<br /><br />**客户端模式：**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：TemplateUpdateFrequencyInSeconds<br /><br />**Value：** 指定下载间隔秒数的整数值（最小为 1）。<br /><br />**服务器模式：**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\*\<SID>*<br />REG_DWORD：TemplateUpdateFrequencyInSeconds<br /><br />**Value：** 指定下载间隔秒数的整数值（最小为 1）。|
+|仅限 AD RMS：<br /><br />**在下一次发布请求时立即下载模板**|在测试和评估期间，你可能希望 RMS 客户端尽快下载模板。 为此，可以删除以下注册表项，使 RMS 客户端在下一次发布请求时立即下载模板，而不是按 TemplateUpdateFrequency 注册表设置指定的时间等待：<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<*Server Name*>\Template <br /><br />**注意**：\<*Server Name*> 可以同时具有外部 (corprights.contoso.com) 和内部 (corprights) URL，因此可能具有两个不同项。|
 |仅限 AD RMS：<br /><br />**启用联合身份验证支持**|如果 RMS 客户端使用联合信任连接到 AD RMS 群集，则你必须配置联合主领域。<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**值：**此注册表项的值是联合身份验证服务的统一资源标识符 (URI)（例如，“http://TreyADFS.trey.net/adfs/services/trust”）。<br /><br /> **请注意**：对于此值，请务必指定 http 而不是 https。 此外，如果基于 32 位 MSIPC 的应用程序在 64 位版本的 Windows 上运行，则位置将为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\Federation。 有关配置示例，请参阅[部署 Active Directory Rights Management Services 与 Active Directory 联合身份验证服务](https://technet.microsoft.com/library/dn758110.aspx)。|
 |仅限 AD RMS：<br /><br />**支持需要对用户输入进行基于窗体的身份验证的合作伙伴联合身份验证服务器**|默认情况下，RMS 客户端在静默模式下运行，并且不需要用户输入。 但是，合作伙伴联合身份验证服务器可能会配置为需要用户输入，例如通过基于窗体的身份验证等方式。 在这种情况下，RMS 客户端必须配置为忽略静默模式，以便联合身份验证窗体显示在浏览器窗口中，并提示用户进行身份验证。<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_DWORD: EnableBrowser<br /><br />**注意**：如果联合身份验证服务器配置为使用基于窗体的身份验证，则此项是必需的。 如果联合身份验证服务器配置为使用 Windows 集成身份验证，则此项不是必需的。|
 |仅限 AD RMS：<br /><br />**阻止 ILS 服务使用**|默认情况下，RMS 客户端支持使用受 ILS 服务保护的内容，但是可以通过设置以下注册表项对它进行配置以阻止此行为。 如果此注册表项设置为阻止 ILS 服务，则对受 ILS 服务保护内容的任何打开和使用尝试都将返回以下错误：<br />HRESULT_FROM_WIN32(ERROR_ACCESS_DISABLED_BY_POLICY)<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：**DisablePassportCertification**<br /><br />**Value：** 1 表示阻止 ILS 使用，0 表示允许 ILS 使用（默认）|

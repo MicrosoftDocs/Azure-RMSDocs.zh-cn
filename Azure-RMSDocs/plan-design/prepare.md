@@ -4,7 +4,7 @@ description: "检查是否已具备使用 Rights Management 服务的条件，�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 11ebd66a1ae05535814af159523bd49b7921d46d
-ms.openlocfilehash: fc80a4a65bd5fae1b8604c316a4e2354bbe8c8be
-ms.lasthandoff: 02/25/2017
-
-
+ms.openlocfilehash: 4b074f9a9a3d72b4d1ab5810b69e92b4792b0711
+ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
+translationtype: HT
 ---
-
 # <a name="preparing-for-azure-information-protection"></a>准备 Azure 信息保护
 
 >*适用于：Azure 信息保护、Office 365*
@@ -38,10 +34,17 @@ ms.lasthandoff: 02/25/2017
 
 出于性能原因，组成员身份由 Azure 权限管理服务缓存。 这意味着，对组成员身份所做的任何更改最多需要 3 小时才会生效，并且此时间段可能有变。 在 Azure 权限管理服务的配置中使用组时（如配置[自定义模板](../deploy-use/configure-custom-templates.md)）或使用[超级用户功能](../deploy-use/configure-super-users.md)的组时，对所做的任何更改或测试，都请考虑到此延迟。 
 
+### <a name="considerations-if-email-addresses-change"></a>电子邮件地址已更改情况下的注意事项
+
+在配置用户或组的使用权限并按其显示名称进行选择时，你的选择将保存并使用该对象的电子邮件地址。 如果稍后更改电子邮件地址，你所选的用户将不会成功获得授权。
+
+如果更改了电子邮件地址，我们建议将旧的电子邮件地址作为代理电子邮件地址（也称为别名或备用电子邮件地址）添加到用户或组，以便保留以前分配的使用权限。 如果无法执行此操作，则必须从配置中删除用户或组，并再次选择它以保存已更新的电子邮件地址，以使新的受保护的内容使用新电子邮件地址。
+
+自定义 Rights Management 模板是一个示例，你可以在其中按显示名称选择用户或组来分配用户权限。 此外，当用户使用 Azure 信息保护客户端配置自定义权限时，他们可以按显示名称选择用户和组。
+
 ## <a name="activate-the-rights-management-service-for-data-protection"></a>激活数据保护的 Rights Management 服务
 保护文档和电子邮件的工作准备就绪后，请激活 Rights Management 服务来实现这一技术。 有关详细信息，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

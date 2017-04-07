@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 3e77cebd642b2b9e983f5cbc81e43e1cc437dc5d
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 9fe4e6173f864711009479e77ff162c307c750e5
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="office-applications-and-services"></a>Office 应用程序和服务
 
 >*适用于：Azure 信息保护、Office 365*

@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 5051ed614d8611c89e037ea633f15b7f0f344020
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 95ece72f7261691f762c8786490c8010aa3e0778
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="what-problems-does-azure-rms-solve"></a>Azure RMS 解决了哪些问题？
 
 >*适用于：Azure 信息保护、Office 365*

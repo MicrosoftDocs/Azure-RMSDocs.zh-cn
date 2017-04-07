@@ -14,23 +14,13 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 8af3161946b2dfc6ea58d0565491d8e59736d565
-ms.openlocfilehash: 2f4c11f7661a814849ccea41c60edfc2ad2287e8
-ms.lasthandoff: 02/28/2017
-
-
+ms.openlocfilehash: 8afff75366e7891ac7f00a1fa28e2939978a8b74
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="release-notes"></a>发行说明
 
 本主题包含有关此版本和以前版本的 RMS SDK 2.1 的重要信息。
-
-## <a name="new-for-the-february-2017---sdk-documentation-update"></a>2017 年 2 月新增内容 - SDK 文档更新
->[!Note]  
-> 本部分中的文档更新适用于 SDK 下载版本 1.03102.0221。
- 
-- **数据收集** - 现已推出应用程序错误和性能信息收集。 此功能通过新属性 IPC_EI_DATA_COLLECTION_ENABLED（[环境属性](https://msdn.microsoft.com/en-us/library/hh535247.aspx)之一）控制，并可以有管理地进行重写。 
 
 ## <a name="february-2016---sdk-documentation-update"></a>2016 年 2 月 - SDK 文档更新
 

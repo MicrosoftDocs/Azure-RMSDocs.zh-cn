@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: ff848fcd67c1d740e042d5bf0391c2a1cf5845e7
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 629717055620af93c5870fff4ef833dc7931e622
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="scenario---share-an-office-file-with-users-in-another-organization"></a>方案 - 与另一组织中的用户共享 Office 文件
 
 >*适用于：Azure 信息保护、Office 365*
@@ -154,4 +150,3 @@ ms.lasthandoff: 02/24/2017
     -   电子邮件：helpdesk@vanarsdelltd.com
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

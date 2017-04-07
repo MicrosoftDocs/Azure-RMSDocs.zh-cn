@@ -38,8 +38,3 @@
 
 当你做好开始部署 Azure RMS 的准备时，请使用 [Azure Rights Management 部署路线图](../plan-design/deployment-roadmap.md)获取部署步骤和操作说明链接。
 
-
-
-<!--HONumber=Jan17_HO1-->
-
-

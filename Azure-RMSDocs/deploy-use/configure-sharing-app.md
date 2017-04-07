@@ -1,5 +1,5 @@
 ---
-title: "RMS 共享应用程序；安装和配置"
+title: "RMS 共享应用程序&colon;安装和配置"
 description: "面向管理员提供的有关在 Windows 计算机和移动设备上部署 Rights Management (RMS) 共享应用程序的信息。"
 author: cabailey
 ms.author: cabailey
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: af5541ab5dcec7224d1048121460b58b1ca13c48
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 4c04c832201fa6b1a76e5e3fe190c7cf022bee5d
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>权限管理共享应用程序：客户端安装和配置
 
 >*适用于：Azure 信息保护、Office 365*
@@ -42,6 +38,5 @@ RMS 共享应用程序提供 Office 2010 的身份验证支持，并且通过安
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

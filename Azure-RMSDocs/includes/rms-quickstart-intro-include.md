@@ -2,7 +2,7 @@
 
 ![快速入门教程的所有步骤](../media/AzRMS_QuickStartStepsAll.PNG)
 
-本教程针对的是 IT 管理员和顾问，目的是帮助他们评估 Azure 权限管理的作用，看其是否适合用作组织的信息保护解决方案。 在生产环境中，应该由管理员按说明来激活服务，由最终用户按说明来发送文档。 这两套说明都包括在本教程中，其所展示的端到端方案说明了如何将机密文档安全地发送到其他组织的人员手中。 如果你在完成本教程的过程中遇到问题，请发送电子邮件至 [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial) ，我们会帮助你解决问题。
+本教程针对的是 IT 管理员和顾问，目的是帮助他们评估 Azure 权限管理的作用，看其是否适合用作组织的信息保护解决方案。 在生产环境中，应该由管理员按说明来激活服务，由最终用户按说明来发送文档。 这两套说明都包括在本教程中，其所展示的端到端方案说明了如何将机密文档安全地发送到其他组织的人员手中。 如果你在完成本教程的过程中遇到问题，请发送电子邮件至 [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial)，我们会帮助你解决问题。
 
 若要完成本教程，你需要满足以下先决条件：
 
@@ -15,8 +15,3 @@
 -   运行 Windows（最低配置为 Windows 7 SP1）并已安装 Office 2016、Office 2013 或 Office 2010 的计算机。
 
 让我们开始吧！
-
-
-<!--HONumber=Jul16_HO3-->
-
-

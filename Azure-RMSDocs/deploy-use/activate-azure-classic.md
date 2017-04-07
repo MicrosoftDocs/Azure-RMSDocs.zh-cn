@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 444d74c957ec6e243858fcddfaac36951c257a9d
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 10ef44bfe62ed9504522a868b96c5a18cf0c611b
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-activate-azure-rights-management-from-the-azure-classic-portal"></a>如何从 Azure 经典门户激活 Azure Rights Management
 
 >适用于：Azure 信息保护

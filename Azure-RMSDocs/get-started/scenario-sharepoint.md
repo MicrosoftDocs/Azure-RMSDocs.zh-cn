@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 3d5d1c818323a3723f6837ebe8fedd4995efb467
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: e90af2d385a28c8cc47e1fde0fc684eb9a02aced
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="scenario---retain-control-of-documents-stored-in-sharepoint"></a>方案 - 保留对 SharePoint 中所存储文档的控制
 
 >*适用于：Azure 信息保护、Office 365*
