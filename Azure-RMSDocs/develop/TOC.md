@@ -28,7 +28,7 @@
 ### [API 参考](api-reference-4-2.md)
 #### [Android API 参考](https://msdn.microsoft.com/library/dn758245.aspx)
 #### [Linux API 参考](linux-c-api-reference.md)
-#### [iOS / OS X API reference](https://msdn.microsoft.com/library/dn758306.aspx)（iOS/OS X API 参考）
+#### [iOS/OS X API 参考](https://msdn.microsoft.com/library/dn758306.aspx)
 #### [Windows API 参考](https://msdn.microsoft.com/library/dn891914.aspx)
 ## [Rights Management SDK 2.1](microsoft-information-protection-and-control-client-portal.md)
 ### [概述](ad-rms-overview.md)
@@ -60,9 +60,9 @@
 #### [支持的平台](supported-platforms.md)
 #### [了解使用限制](understanding-usage-restrictions.md)
 ### [API 参考](api-reference-2-1.md)
-#### [Constants](https://msdn.microsoft.com/library/hh535291.aspx)（常量）
-#### [Data types](https://msdn.microsoft.com/library/hh535288.aspx)（数据类型）
-#### [Functions](https://msdn.microsoft.com/library/hh535289.aspx)（函数）
-#### [Structures](https://msdn.microsoft.com/library/hh535294.aspx)（结构）
-#### [Error codes](https://msdn.microsoft.com/library/hh535248.aspx)（错误代码）
+#### [常量](https://msdn.microsoft.com/library/hh535291.aspx)
+#### [常量](https://msdn.microsoft.com/library/hh535288.aspx)
+#### [函数](https://msdn.microsoft.com/library/hh535289.aspx)
+#### [结构](https://msdn.microsoft.com/library/hh535294.aspx)
+#### [错误代码](https://msdn.microsoft.com/library/hh535248.aspx)
 ## [条款](terms.md) 
