@@ -4,7 +4,7 @@ description: "有关将 Rights Management (RMS) 客户端与 RMS 保护工具配
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/22/2017
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5e1a193ab54e5d0d85e4f7a22f53ac0b9b39036c
-ms.sourcegitcommit: 047e6dfe8f44fd13585e902df5ea871b5d0adccb
+ms.openlocfilehash: 6cb1cd8c70dff0c24125f875c91d23326538e56b
+ms.sourcegitcommit: d2bd2ddc68d9b5a095b57235b28a3b7e9307bd9b
 translationtype: HT
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
@@ -233,7 +233,7 @@ translationtype: HT
 
         -   **运行时间**：配置你的首选计划。
 
-            安排足够的的时间让脚本可以完成。 尽管此解决方案保护文件夹中的所有文件，但该脚本每次对于每个文件只运行一次。 尽管这比同时保护所有文件（RMS 保护工具支持此方式）要费时，但 FCI 的此逐个文件配置更功能强大。 例如，当你使用 [Source File Owner Email] 变量时，受保护的文件可以具有不同的所有者（保留原始所有者），并且如果你稍后更改配置以有选择性地保护文件（而不是文件夹中的所有文件），则需要此逐个文件操作。
+            安排足够的的时间让脚本可以完成。 尽管此解决方案保护文件夹中的所有文件，但该脚本每次对于每个文件只运行一次。 尽管这比同时保护所有文件（Azure 信息保护客户端支持此方式）要费时，但 FCI 的此逐个文件配置更功能强大。 例如，使用 [Source File Owner Email] 变量时，受保护的文件可以具有不同的所有者（保留原始所有者），并且如果稍后更改配置以有选择性地保护文件（而不是文件夹中的所有文件），则需要此逐个文件操作。
 
         -   **连续对新文件运行**：选中此复选框。
 
@@ -253,7 +253,7 @@ translationtype: HT
 
     2.  单击“等待任务完成”，然后单击“确定”。
 
-4.  等待“运行文件管理任务”对话框关闭，然后在自动显示的报告中查看结果  。 你应在“文件”字段中看到所选文件夹中的文件数  。 确认所选文件夹中的文件现已受 RMS 保护。 例如，如果所选文件夹是 C:\FileShare，则在 Windows PowerShell 会话中键入以下内容并确认没有文件处于“未保护”状态：
+4.  等待“运行文件管理任务”对话框关闭，然后在自动显示的报告中查看结果  。 你应在“文件”字段中看到所选文件夹中的文件数  。 确认所选文件夹中的文件现已受权限管理保护。 例如，如果所选文件夹是 C:\FileShare，则在 Windows PowerShell 会话中键入以下内容并确认没有文件处于“未保护”状态：
 
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
@@ -261,9 +261,9 @@ translationtype: HT
     > [!TIP]
     > 一些故障排除技巧：
     > 
-    > -   如果你在报告中看到 **0** （而不是你的文件夹中的文件数），则这指示脚本未运行。 首先，通过在 Windows PowerShell ISE 中加载脚本以验证脚本内容来检查脚本本身，然后尝试运行它以查看是否显示任何错误。 如果未指定任何参数，该脚本将尝试连接到 Azure RMS 并向其进行身份验证。
+    > -   如果你在报告中看到 **0** （而不是你的文件夹中的文件数），则这指示脚本未运行。 首先，通过在 Windows PowerShell ISE 中加载脚本以验证脚本内容来检查脚本本身，然后尝试运行它以查看是否显示任何错误。 如果未指定任何参数，该脚本将尝试连接到 Azure 权限管理服务并向其进行身份验证。
     > 
-    >     -   如果该脚本报告无法连接到 Azure RMS，请检查它为服务主体帐户显示的值，该帐户在脚本中指定。 有关如何创建此服务主体帐户的详细信息，请参阅 Azure 信息保护客户端管理员指南中的[先决条件 3：在不交互的情况下保护或取消保护文件](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction)。
+    >     -   如果该脚本报告无法连接到 Azure 权限管理服务 (Azure RMS)，请检查它为服务主体帐户显示的值，该帐户在脚本中指定。 有关如何创建此服务主体帐户的详细信息，请参阅 Azure 信息保护客户端管理员指南中的[先决条件 3：在不交互的情况下保护或取消保护文件](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction)。
     >     -   如果该脚本报告可连接到 Azure RMS，接下来通过直接运行服务器上 Windows PowerShell 的 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) 检查是否可找到指定的模板。 你应该会看到你所指定的模板返回到结果中。
     > -   如果该脚本单独在 Windows PowerShell ISE 中运行时未出现错误，请尝试从 PowerShell 会话中按以下方式运行它：指定要保护的文件名，并且不带 -OwnerEmail 参数：
     > 
@@ -275,8 +275,7 @@ translationtype: HT
     >         如果文件管理任务在没有 **-OwnerEmail [Source File Owner Email]** 的情况下成功运行，请检查未受保护的文件是否有域用户（而不是 **SYSTEM**）列出为文件所有者。  为此，请使用文件的属性的“安全”选项卡，然后单击“高级”。 **所有者** 值将紧接着显示在文件**名称**之后。 另外，请验证文件服务器是否位于同一域或受信任的域中，以便从 Active Directory 域服务中查找该用户的电子邮件地址。
     > -   如果你在报告中看到正确的文件数，但文件未受保护，请尝试使用 [Protect-RMSFile](/powershell/azureinformationprotection/vlatest/protect-rmsfile) cmdlet 手动保护文件以查看是否显示任何错误。
 
-在确认这些任务成功运行之后，可以关闭文件资源管理器。 新文件将自动受到保护，并且当计划运行时，所有文件将重新受到保护。 重新保护文件可确保对模板的任何更改都应用于文件。
-
+在确认这些任务成功运行之后，可以关闭文件资源管理器。 计划的任务运行时，将自动对新文件进行分类并给予保护。 
 
 ## <a name="modifying-the-instructions-to-selectively-protect-files"></a>修改说明可有选择性地保护文件
 如果你让前面的说明正常操作，则随后可很容易地修改它们以用于更复杂的配置。 例如，使用同一个脚本保护文件，但只针对包含个人身份信息的文件，然后可能选择具有更多限制权限的模板。

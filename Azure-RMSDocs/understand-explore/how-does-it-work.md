@@ -4,7 +4,7 @@ description: "详细解说 Azure RMS 的工作原理、它使用的加密控件�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/06/2017
+ms.date: 04/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,19 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1dcdb7017be2e2bdfbefcfaa348be977ed67f8c0
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: a5f189ab5ad1df43b14fa0b6d23bf4f0eef88142
+ms.sourcegitcommit: d44105d4d45fabf0f1d90765304e4b43dd97c0fc
 translationtype: HT
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
 >*适用于：Azure 信息保护、Office 365*
 
-了解 Azure RMS 工作原理时，一个要点是权限管理服务，另外，在信息保护过程中，Microsoft 不要查看或存储你的数据。 要保护的信息永远不会发送或存储到 Azure 中，除非你显式将其存储在 Azure 中，或者使用其他可用于在 Azure 中存储数据的云服务。 Azure RMS 只会在文档中保存数据，除已获授权的用户和服务以外，其他任何人都无法读取该文档：
+了解 Azure RMS 工作原理时的一个要点是，权限管理服务（和 Microsoft）在信息保护过程中不会查看或存储你的数据。 要保护的信息永远不会发送或存储到 Azure 中，除非你显式将其存储在 Azure 中，或者使用其他可用于在 Azure 中存储数据的云服务。 Azure RMS 只会在文档中保存数据，除已获授权的用户和服务以外，其他任何人都无法读取该文档：
 
--   数据在应用程序级别进行加密，并包含策略用于定义该文档的授权用法。
+- 数据在应用程序级别进行加密，并包含策略用于定义该文档的授权用法。
 
--   当合法用户使用受保护的文档，或者已获授权的服务处理文档时，将会解密文档中的数据，并强制实施策略中定义的权限。
+- 当合法用户使用受保护的文档，或者已获授权的服务处理文档时，将会解密文档中的数据，并强制实施策略中定义的权限。
 
 下图在较高级别显示了此过程的工作方式。 包含机密公式的文档将受到保护，然后成功地由已获授权的用户或服务成功打开。 文档由内容密钥 （图中的绿色钥匙）保护。 每个文档的内容密钥都是唯一的，它放置在文件标头中，并受 Azure 信息保护租户根密钥（图中的红色钥匙）保护。 可以生成并由 Microsoft 管理你的租户密钥，你也可以生成和管理自己的租户密钥。
 
@@ -48,7 +48,7 @@ translationtype: HT
 
 ###### <a name="footnote-1"></a>脚注 1 
 
-当文件具有扩展名 .ppdf 或者是受保护的文本文件或图像文件（例如 .ptxt 或 .pjpg）时，Azure 信息保护客户端和 Rights Management 共享应用程序使用&256; 位进行常规保护和本机保护。
+当文件具有扩展名 .ppdf 或者是受保护的文本文件或图像文件（例如 .ptxt 或 .pjpg）时，Azure 信息保护客户端和 Rights Management 共享应用程序使用 256 位进行常规保护和本机保护。
 
 ###### <a name="footnote-2"></a>脚注 2
 
@@ -103,7 +103,9 @@ translationtype: HT
 
 ![RMS 文档保护 - 步骤 2，策略已创建](../media/AzRMS_documentprotection2.png)
 
-**步骤 2 中发生的情况**：然后，RMS 客户端将会基于模板或者通过指定文档的特定权限为该文档创建包含策略的证书。 此策略包括不同用户或组的权限和其他限制，例如过期日期。
+**步骤 2 中发生的情况**：RMS 客户端随后会为文档创建一个包含策略的证书，策略包括用户或组的[使用权](../deploy-use/configure-usage-rights.md)和其他限制，例如过期日期。 这些设置可在管理员之前配置的模板中进行定义，或在内容受保护时进行指定（有时称为“临时策略”）。   
+
+用于标识所选用户和组的属性是 Azure AD proxyAddress 属性，该属性用于存储用户或组的所有电子邮件地址。
 
 然后，RMS 客户端使用初始化用户环境时获取的组织密钥，并使用此密钥来加密策略和对称内容密钥。 RMS 客户端还使用初始化用户环境时获得的用户证书对策略进行签名。
 
@@ -118,7 +120,7 @@ translationtype: HT
 
 ![RMS 文档使用 - 步骤 1，用户已通过身份验证并获取权限列表](../media/AzRMS_documentconsumption1.png)
 
-**步骤 1 中发生的情况**：经过身份验证的用户将文档策略和用户的证书发送到 Azure Rights Management 服务。 服务解密并评估该策略，并生成用户对该文档拥有的权限列表（如果有）。
+**步骤 1 中发生的情况**：经过身份验证的用户将文档策略和用户的证书发送到 Azure Rights Management 服务。 服务解密并评估该策略，并生成用户对该文档拥有的权限列表（如果有）。 若要标识用户，可将 Azure AD proxyAttribute 用于用户的帐户和该用户所属的组。 出于性能原因，会[缓存](../plan-design/prepare.md#group-membership-caching)组成员身份。
 
 ![RMS 文档使用 - 步骤 2，使用许可证已返回到客户端](../media/AzRMS_documentconsumption2.png)
 

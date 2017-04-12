@@ -5,7 +5,7 @@ keywords: "一些常见问题，帮助你使用适用于 iOS 和 Android 的 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bc3d92cb0dc23ddd2d1f81daf2fc589ad4862977
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: d797dd31c44d985becc92ec81266afbe23cd970c
+ms.sourcegitcommit: 1671466a42e7e00e1cc2702b1f609fb112aac7db
 translationtype: HT
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
@@ -45,7 +45,7 @@ Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
 
 ## <a name="how-do-i-get-started-with-the-viewer-app"></a>如何开始使用查看器应用？
 
-安装该应用后，你无需在该点再执行任何其他操作。 请等待，直到收到受保护的电子邮件或想要查看的文件，然后选择“AIP 查看器”以将其打开。 然后系统会提示使用工作或学校帐户登录。 对你的凭据进行身份验证后，你便可以读取内容。
+安装该应用后，你无需在该点再执行任何其他操作。 请等待，直到收到受保护的电子邮件或想要查看的文件，然后选择“AIP 查看器”以将其打开。 然后系统会提示使用工作或学校帐户登录，或提示选择一个证书。 对这些凭据进行身份验证后，便可以读取内容。
 
 但是，如果你不想等待，则可以使用以下说明向自己发送受保护的电子邮件或要查看的文件：[适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门](mobile-app-get-started.md) 
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>登录此应用应使用什么凭据？

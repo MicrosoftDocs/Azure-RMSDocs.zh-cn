@@ -4,7 +4,7 @@ description: "使用 Azure 信息保护进行分类和设置标签时遇到问�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/29/2017
+ms.date: 03/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 7f2bd30603f88ec72ee51f980c40903362cfdeba
-ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+ms.openlocfilehash: b6980bdcecb02471159f7873e80a05d234726d0e
+ms.sourcegitcommit: 85aaded97659bbc0a3932569aab29b1bf472fea4
 translationtype: HT
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
@@ -64,6 +64,10 @@ translationtype: HT
 
 不能。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件将保持不带标签，或者保留单独应用的标签。 但是，如果电子邮件的标签应用了保护，则该保护也适用于附件。
 
+## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
+
+因为 Azure 信息保护将永久性元数据用于分类，其中包括明文标签，所以该信息可以被 DLP 解决方案和其他应用读取。 对于文件，该元数据存储在自定义属性中；对于电子邮件，该信息存储在电子邮件标头中。
+
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>对于电子邮件来说，Azure 信息保护分类与 Exchange 邮件分类有什么不同？
 
 Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分类，且独立于 Azure 信息保护分类执行。 但是，你可以将这两个解决方案进行集成，以便当用户使用 Outlook Web 应用和在某些移动邮件应用程序中对电子邮件进行分类时，自动添加 Azure 信息保护分类和相应的标签标记。 Exchange 添加分类，Azure 信息保护客户端应用该分类的相应标签设置。
@@ -76,10 +80,15 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 2. 为每个标签创建 Exchange 传输规则：邮件属性包括配置的分类时应用规则，并修改邮件属性以设置邮件头。 
 
-    对于邮件头，可通过检查 Office 文件的属性查找要指定的信息，该文件是使用 Azure 信息保护标签进行分类的。 标识格式为 **MSIP_Label_<GUID>_Enabled** 的文件属性，并为邮件头指定此字符串，然后为标头值指定 **True**。 例如，邮件头可能如此字符串所示：**MSIP_Label_132616b8-f72d-5d1e-aec1-dfd89eb8c5b2_Enabled**
+    对于邮件头，可通过检查所发送的的电子邮件的 Internet 邮件头来查找要指定的信息，这些邮件头是使用 Azure 信息保护标签进行分类的。 查找邮件头 **msip_labels**，以及紧随其后的字符串，直至分号（包括分号）。 以上述示例为例：
+    
+    **msip_labels: MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled=True;**
+    
+    然后，对于此规则中的邮件头，将 **msip_labels** 指定为邮件头，此字符串的其余部分指定为邮件头的值。 例如：
+    
+    ![示例 Exchange Online 传输规则，用于为特定 Azure 信息保护标签设置邮件头](../media/exchange-rule-for-message-header.png)
 
-
-用户使用 Outlook Web 访问应用或支持权限管理保护的移动设备客户端时，会发生以下情况： 
+测试此规则前，请记住，创建或编辑传输规则时通常会存在延迟（例如，等待一个小时）。 但当规则生效后，用户使用 Outlook Web 访问应用或支持权限管理保护的移动设备客户端时，会发生以下情况： 
 
 - 用户选择 Exchange 邮件分类，并发送电子邮件。
 
@@ -91,11 +100,7 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 你还可以配置传输规则来执行反向映射：检测到 Azure 信息保护标签时，请设置相应的 Exchange 邮件分类。 为此，请执行以下操作：
 
-- 对于每个 Azure 信息保护标签，请创建传输规则，并在 **msip_labels** 标头包含标签名称（例如 **Confidential**）时应用，并应用映射到此标签的邮件分类。
-
-## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
-
-因为 Azure 信息保护将永久性元数据用于分类，其中包括明文标签，所以该信息可以被 DLP 解决方案和其他应用读取。 对于文件，该元数据存储在自定义属性中；对于电子邮件，该信息存储在电子邮件标头中。
+- 对于每个 Azure 信息保护标签，请创建在 **msip_labels** 标头包含标签名称（例如 **General**）时应用的传输规则，并应用映射到此标签的邮件分类。
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
