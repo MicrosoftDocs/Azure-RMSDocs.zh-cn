@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/04/2017
+ms.date: 04/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c3838c29d26c8c1bed196ad0a86c63f5f78ad9cc
-ms.sourcegitcommit: d2bd2ddc68d9b5a095b57235b28a3b7e9307bd9b
+ms.openlocfilehash: c8afaa635f34f6d052cd646387d37f68bbcdff45
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
@@ -27,7 +27,7 @@ translationtype: HT
 |请参阅该服务的推荐文档 →|使用 [Azure 信息保护文档](https://docs.microsoft.com/information-protection/)起始页。|
 |提供有关文档的反馈或咨询有关文档的问题 →|发送电子邮件至 [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
 |接收有关信息保护的推文，以及来自产品组的关于文档更新的公告 →|关注帮助领导 Microsoft 信息保护团队的 Dan Plastina 的动态。 参阅 [Dan Plastina @DanPlastina](https://twitter.com/DanPlastina)|
-|检查订阅信息和支持的功能 →|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
+|检查订阅信息和支持的功能 →|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|
 
 
 ## <a name="information-about-new-releases-and-updated-documentation"></a>有关新版本和更新的文档的信息

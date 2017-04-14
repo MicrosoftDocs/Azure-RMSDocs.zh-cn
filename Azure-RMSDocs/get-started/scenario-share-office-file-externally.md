@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 629717055620af93c5870fff4ef833dc7931e622
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 89c563ebcf62dc80cbda15048780adf5e414e70b
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="scenario---share-an-office-file-with-users-in-another-organization"></a>方案 - 与另一组织中的用户共享 Office 文件
@@ -46,7 +46,7 @@ translationtype: HT
 |已激活 Azure Rights Management|[激活 Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |已将 Rights Management 共享应用程序部署到运行 Windows 的用户计算机|[自动部署 Microsoft Rights Management 共享应用程序](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 |用户具有 Office 2013 中的 Outlook|如果用户使用的是 Office 2016 或 Office 2010，请将屏幕截图替换为相应的版本，使图片与用户看到的内容相符。|
-|Azure 信息保护的订阅包括文档跟踪|如果订阅不包括文档跟踪和撤消功能，则用户无法完成用户指令中的所有步骤。 在这种情况下，请购买支持这些功能的订阅，或修改用户指令以删除使用这些功能的步骤。<br /><br />查看 Azure 信息保护网站上的[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
+|Azure 信息保护的订阅包括文档跟踪|如果订阅不包括文档跟踪和撤消功能，则用户无法完成用户指令中的所有步骤。 在这种情况下，请购买支持这些功能的订阅，或修改用户指令以删除使用这些功能的步骤。<br /><br />查看 Azure 信息保护网站上的[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|
 
 ## <a name="user-documentation-instructions"></a>用户文档说明
 使用以下模板，将此用户说明复制并粘贴到最终用户的通信中，并进行这些修改以反映你的环境：

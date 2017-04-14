@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f509efb599bd17d5a76c08e24a7d503394415785
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 8a0ca5fa2d7aa6f1f8f8b5ccab0a3a3bd122b50c
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="scenario---secure-your-most-few-valuable-files"></a>方案 - 保护你最重要的（几个）文件
@@ -51,7 +51,7 @@ translationtype: HT
 |已按下文所述配置了自定义模板|[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)|
 |将 Rights Management 共享应用程序部署到 Windows 计算机中，以便你就地保护这些文件，如下一部分所述|[下载和安装 Rights Management 共享应用程序](../rms-client/install-sharing-app.md)|
 |已授权的用户具有最低版本 Office 2013|如果用户安装的是 Office 2010，则还需安装 Rights Management 共享应用程序。|
-|你的 Azure 信息保护订阅包括文档跟踪|如果订阅不包括文档跟踪和撤销功能，则将无法使用文档跟踪站点以查看访问这些文档的人员，也无法根据需要撤销访问权限。 在这种情况下，可以选择购买支持文档跟踪的订阅，或者接受此限制条件。 还可以考虑使用 Azure 权限管理服务的[使用日志记录](../deploy-use/log-analyze-usage.md)功能，它可以提供信息（如访问过每个文件的人员及访问时间），以帮助检测潜在的可疑行为。<br /><br />查看 Azure 信息保护网站上的[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
+|你的 Azure 信息保护订阅包括文档跟踪|如果订阅不包括文档跟踪和撤销功能，则将无法使用文档跟踪站点以查看访问这些文档的人员，也无法根据需要撤销访问权限。 在这种情况下，可以选择购买支持文档跟踪的订阅，或者接受此限制条件。 还可以考虑使用 Azure 权限管理服务的[使用日志记录](../deploy-use/log-analyze-usage.md)功能，它可以提供信息（如访问过每个文件的人员及访问时间），以帮助检测潜在的可疑行为。<br /><br />查看 Azure 信息保护网站上的[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|
 
 ### <a name="to-configure-the-custom-template"></a>配置自定义模板
 

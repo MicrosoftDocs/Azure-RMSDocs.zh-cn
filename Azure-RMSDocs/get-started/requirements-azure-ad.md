@@ -4,7 +4,7 @@ description: "确定使用 Azure 信息保护的 Azure AD 要求，以便用户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 729d66e8d55d045b74ac5c794cf83ddcc2848d35
-ms.sourcegitcommit: 1671466a42e7e00e1cc2702b1f609fb112aac7db
+ms.openlocfilehash: 29bc3b414a1fde17aec03702a87f4364b565b848
+ms.sourcegitcommit: 65e2d607954dfb6c7529ff200602887b71c39312
 translationtype: HT
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
@@ -42,7 +42,7 @@ translationtype: HT
 
 支持基于证书的身份验证 (CBA)：
 
-- 如果具有最低版本 Android 5.0，适用于 Android 的 Azure 信息保护应用支持基于证书的身份验证。 有关配置基于证书的身份验证的说明，请参阅 [Azure Active Directory 中的基于证书的身份验证入门](/active-directory/active-directory-certificate-based-authentication-get-started)。
+- 如果具有最低版本 Android 5.0，适用于 Android 的 Azure 信息保护应用支持基于证书的身份验证。 有关配置基于证书的身份验证的说明，请参阅 [Azure Active Directory 中的基于证书的身份验证入门](/azure/active-directory/active-directory-certificate-based-authentication-get-started)。
 
 使用 AD FS 或等效的身份验证提供程序进行本地身份验证的移动设备或 Mac 计算机：
 
