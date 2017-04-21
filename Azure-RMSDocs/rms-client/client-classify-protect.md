@@ -4,7 +4,7 @@ description: "说明如何对文档和电子邮件进行分类和保护。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: edc8c7227a0f2b493a64f25a26a64aef3a314e39
-ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
+ms.openlocfilehash: f461b349440043bcf5d8624731eda86968194462
+ms.sourcegitcommit: 52b7502e7049358f9fc0a418625bb460bb81479f
 translationtype: HT
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>使用 Azure 信息保护对文件或电子邮件进行分类和保护
@@ -133,7 +133,7 @@ translationtype: HT
 
     - **选择权限**：选择你希望用户在保护所选文件时具有的访问级别。
     
-    - **选择用户**：指定应对文件具有选定权限的人员。 对于组织中的人员和组，可使用通讯簿进行搜索和选择。 对于另一组织中的人员，必须指定其完整的电子邮件地址。 请确保你使用的是业务电子邮件地址，因为当前不支持个人电子邮件地址。
+    - **选择用户**：指定应对文件具有选定权限的人员。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 请注意，暂不支持个人电子邮件地址。
         
     - **过期访问**：仅对具有时效性的文件选择此选项，以使指定的人员无法在指定日期后打开选定的一个文件或多个文件。 你仍可以打开原始文件，但在选定日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
 
