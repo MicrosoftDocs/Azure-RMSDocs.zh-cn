@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/30/2017
+ms.date: 04/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5e836d99c59cbd055b219aab6499a67fb62bd1a5
-ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+ms.openlocfilehash: c8afaa635f34f6d052cd646387d37f68bbcdff45
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
@@ -22,12 +22,12 @@ translationtype: HT
 
 使用以下资源可帮助你了解、部署和支持组织的 Azure 信息保护。
 
-|要执行的操作…|.. 采取的措施：|
+|要执行的操作…|. 采取的措施：|
 |----------------|---------------|
 |请参阅该服务的推荐文档 →|使用 [Azure 信息保护文档](https://docs.microsoft.com/information-protection/)起始页。|
 |提供有关文档的反馈或咨询有关文档的问题 →|发送电子邮件至 [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
 |接收有关信息保护的推文，以及来自产品组的关于文档更新的公告 →|关注帮助领导 Microsoft 信息保护团队的 Dan Plastina 的动态。 参阅 [Dan Plastina @DanPlastina](https://twitter.com/DanPlastina)|
-|检查订阅信息和支持的功能 →|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
+|检查订阅信息和支持的功能 →|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|
 
 
 ## <a name="information-about-new-releases-and-updated-documentation"></a>有关新版本和更新的文档的信息
@@ -49,13 +49,17 @@ translationtype: HT
 
 对于其他客户，请根据获取 Azure 信息保护的方式，使用下面的支持渠道：
 
-- **Azure 信息保护高级版**（独立）：打开 [ Azure 门户中的支持请求](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)。 出现提示时，在“基本信息”边栏选项卡上，选择“问题类型”的“技术”，并针对“订阅”选项选择“包含技术支持的订阅”。
-
-- **Office 365 订阅随附的 Azure 信息保护**：请参阅[联系针对业务支持的 Office 365 - 管理员帮助](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)，以获取电话号码以及如何使用 Office 365 管理门户与支持部门联系。 
-
-- **企业移动性 + 安全性 (EMS) 随附的 Azure 信息保护**：如果还拥有 Office 365，则可以使用 [Office 365 支持渠道](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。 有关详细信息，请参阅[企业移动性套件：支持常见问题](https://technet.microsoft.com/dn932057.aspx)。
-
-- **Secure Productive Enterprise (SPE) 随附的 Azure 信息保护**：请使用 [Office 365 支持渠道](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。
+- **Azure 信息保护**（独立）： 
+    - 在 Azure 门户中，从[帮助 + 支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)创建**新的请求支持**。 出现提示时，在“基本信息”边栏选项卡上，选择“问题类型”的“技术”，并针对“订阅”选项选择“包含技术支持的订阅”。
+    
+- **Office 365 订阅随附的 Azure 信息保护**： 
+    - 请参阅[联系针对业务支持的 Office 365 - 管理员帮助](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)，以获取电话号码以及如何使用 Office 365 管理门户与支持部门联系。 
+    
+- **企业移动性 + 安全 (EMS) 随附的 Azure 信息保护**： 
+    - 在 Azure 门户中，从[帮助 + 支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)创建**新的请求支持**。 出现提示时，在“基本信息”边栏选项卡上，选择“问题类型”的“技术”，并针对“订阅”选项选择“包含技术支持的订阅”。
+    
+- **Secure Productive Enterprise (SPE) 随附的 Azure 信息保护**： 
+    - 请使用 [Office 365 支持通道](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。
 
 有关其他支持选项，请询问你的 Microsoft 联系人。 
 

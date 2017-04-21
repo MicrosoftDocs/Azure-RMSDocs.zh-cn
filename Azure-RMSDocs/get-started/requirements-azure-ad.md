@@ -4,7 +4,7 @@ description: "确定使用 Azure 信息保护的 Azure AD 要求，以便用户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fa0a9351177b44b4d770e37d24aee85e1e313c2d
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 29bc3b414a1fde17aec03702a87f4364b565b848
+ms.sourcegitcommit: 65e2d607954dfb6c7529ff200602887b71c39312
 translationtype: HT
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
@@ -36,7 +36,13 @@ translationtype: HT
 
 运行 Office 2010 的计算机： 
 
+- 这些计算机需要 [Azure 信息保护客户端](../rms-client/aip-client.md)（推荐）或[适用用于 Windows 的权限管理共享应用程序](../rms-client/sharing-app-windows.md)，对 Azure 信息保护及其数据保护服务 Azure 权限管理进行身份验证。
+
 - 如果你的用户帐户已联合（例如，使用 AD FS），则帐户必须使用 Windows 集成身份验证。 在此方案中，基于表单的身份验证将无法对 Azure 信息保护的用户进行身份验证。
+
+支持基于证书的身份验证 (CBA)：
+
+- 如果具有最低版本 Android 5.0，适用于 Android 的 Azure 信息保护应用支持基于证书的身份验证。 有关配置基于证书的身份验证的说明，请参阅 [Azure Active Directory 中的基于证书的身份验证入门](/azure/active-directory/active-directory-certificate-based-authentication-get-started)。
 
 使用 AD FS 或等效的身份验证提供程序进行本地身份验证的移动设备或 Mac 计算机：
 
@@ -47,7 +53,7 @@ translationtype: HT
 
 -   Office 2013（最低版本）：
 
-    -   如果你拥有 Office 2013，还需要安装[适用于 Office 2013 的 2015 年 6 月 9 日更新 (KB3054853)](https://support.microsoft.com/kb/3054853)。 有关此更新的详细信息以及现代身份验证如何将基于 Active Directory 身份验证库 (ADAL) 的登录加入到 Office 2013 中的详细信息，请参阅 Office 博客上的[已经公布的 Office 2013 现代身份验证公共预览版](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/)。
+    -   如果具有 Office 2013，可能需要安装其他更新以支持 Active Directory 身份验证库 (ADAL)。 例如， [2015 年 6 月 9 日发布的 Office 2013 更新 (KB3054853)](https://support.microsoft.com/kb/3054853)。 有关此更新的详细信息以及现代身份验证如何将基于 Active Directory 身份验证库 (ADAL) 的登录加入到 Office 2013 中的详细信息，请参阅 Office 博客上的[已经公布的 Office 2013 现代身份验证公共预览版](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/)。
 
 - Azure 信息保护客户端：
 
@@ -55,7 +61,7 @@ translationtype: HT
 
 -   适用于 Windows 的权限管理共享应用程序：
 
-    -   你需要安装最低版本的 1.0.1908.0，这可以通过使用“控制面板”、“程序”和“功能”来确认。 请注意，Rights Management 共享应用程序现被 Azure 信息保护客户端替代。 有关共享应用程序的详细信息，请参阅[适用于 Windows 的 Rights Management 共享应用程序](../rms-client/sharing-app-windows.md)。
+    -   你需要安装最低版本的 1.0.1908.0，这可以通过使用“控制面板”、“程序”和“功能”来确认。 请注意，Rights Management 共享应用程序现被 Azure 信息保护客户端替代。 有关共享应用程序的详细信息，请参阅[适用于 Windows 的权限管理共享应用程序](../rms-client/sharing-app-windows.md)。
 
 -   适用于移动设备和 Mac 计算机的 Rights Management 共享应用：
 

@@ -4,14 +4,14 @@ description: "该教程用于快速试用适合你组织的 Microsoft Azure 信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 04/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 04e1776e4ef92585245ae8854ed63d2d2dc27f07
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 13dbb47088c33f72bdb0acdbb7cba1245df14f7f
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure 信息保护快速入门教程 
@@ -27,7 +27,7 @@ translationtype: HT
 ## <a name="prerequisites"></a>先决条件 
 若要完成本教程，你需要满足以下先决条件：
 
-- 包含关于分类、设置标签和保护的 Azure 信息保护的订阅。 本教程包括一些高级的功能，例如根据用户建议自动化数据分类和文档跟踪站点。 请确保你的订阅支持这些功能。 有关详细信息，请参阅 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。
+- 包含关于分类、设置标签和保护的 Azure 信息保护的订阅。 本教程包括一些高级的功能，例如根据用户建议自动化数据分类和文档跟踪站点。 请确保你的订阅支持这些功能。 有关详细信息，请参阅 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。
     
     如果你的订阅不具备这些功能，可注册[企业移动性 + 安全性 E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7) 的免费试用版。
     

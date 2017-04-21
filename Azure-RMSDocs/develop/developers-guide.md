@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: fbd76e377c8b11b8e64187685144010dce9bbb25
-ms.sourcegitcommit: ee432bdb6783bfe311a7ebbc9a5f20a7c2ae759c
+ms.openlocfilehash: 16e2137dead237e59ed1d4db9e88a2a29f9595a9
+ms.sourcegitcommit: bf103c02966357eccad0a4912851ceae6937c7b3
 translationtype: HT
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
@@ -82,6 +82,7 @@ translationtype: HT
 - [如何将服务应用程序部署到不同的租户] (how-to-deploy-app.md)
 - [如何安装和配置 RMS 服务器（服务）](how-to-install-and-configure-an-rms-server.md)
 - [如何使用文档跟踪（用户）](how-to-use-document-tracking.md)
+- [如何在 Azure 信息保护中续订对称密钥](how-to-renew-symmetric-key.md)
 
 ### <a name="security-and-authentication"></a>安全性和身份验证
 
@@ -101,7 +102,7 @@ translationtype: HT
 
 ## <a name="videos"></a>视频
 
-来自 Microsoft 的 Dan Plastina 提供了此 [Azure 信息保护简介](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)
+来自 Microsoft 的 Dan Plastina 提供了此 [Azure 信息保护简介](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
 这些视频来源于 Micorsoft 2016 Ignite 会议
 

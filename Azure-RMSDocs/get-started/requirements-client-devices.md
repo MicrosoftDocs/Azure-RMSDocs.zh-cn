@@ -4,7 +4,7 @@ description: "确定哪些设备支持 Azure 信息保护中的 Azure Rights Man
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/06/2017
+ms.date: 04/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 72ec5e755e3a5defe753741ed4061c30b2db7e82
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 644e5566a5b2305a12139d7d2da666eec0ef8c71
+ms.sourcegitcommit: 1f65f71f742063e2bebcac88f72180d3aa4318a4
 translationtype: HT
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的客户端设备
@@ -33,7 +33,7 @@ translationtype: HT
 
 -   **Windows 10** (x86, x64)
 
--   **Mac OS X**：最低版本的 Mac OS X 10.8 (Mountain Lion)
+-   **macOS**：最低版本为 macOS 10.8 (Mountain Lion)
 
 ## <a name="mobile-devices"></a>移动设备
 以下移动设备操作系统支持 Azure Rights Management 服务：
@@ -44,7 +44,7 @@ translationtype: HT
 
 -   **iPhone 和 iPad**：最低版本的 iOS 7.0
      
-    例外：用于 iOS 和 Android 的 Azure 信息保护客户端最低版本为 iOS 8。
+    异常：Azure 信息保护应用的最低版本为 iOS 8。
 
 -   **Windows 平板电脑**：Windows 10 Mobile 和 Windows 8.1 RT
 
