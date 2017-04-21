@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 4 阶段包括从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c6646b6e3df72105d0808e23b40fe01e444e164a
-ms.sourcegitcommit: 384461f0e3fccd73cd7eda3229b02e51099538d4
+ms.openlocfilehash: 51a689248834f2578655d62752c19b7a387068a5
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
