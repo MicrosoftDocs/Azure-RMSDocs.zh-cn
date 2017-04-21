@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 12f681ccfbcd7da2192df2be057f92d31a856bda
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 859ec4aa127b995ca9acb6409b8644a0c87d7ffd
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="how-users-sign-up-for-rms-for-individuals"></a>用户如何注册个人 RMS
@@ -33,7 +33,7 @@ translationtype: HT
 
 3.  单击“注册”。
 
-    Microsoft 使用电子邮件地址检查组织是否已经拥有 [Azure 信息保护的付费订阅](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)或[使用 Azure 权限管理包含数据保护的 Office 365 订阅](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 如果是这种情况，你无需使用个人 RMS，因此可以立即登录并且个人 RMS 的自助注册将取消。 如果找不到付费订阅，将继续到下一步。
+    Microsoft 使用电子邮件地址检查组织是否已经拥有 [Azure 信息保护的付费订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)或[使用 Azure 权限管理包含数据保护的 Office 365 订阅](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 如果是这种情况，你无需使用个人 RMS，因此可以立即登录并且个人 RMS 的自助注册将取消。 如果找不到付费订阅，将继续到下一步。
 
 4.  等待确认电子邮件发送至你提供的地址。 Office 365 团队 (support@email.microsoftonline.com) 将发送主题为**完成注册 Microsoft Azure 信息保护**的电子邮件。
 
@@ -83,7 +83,7 @@ translationtype: HT
 
     -   记录在组织中使用的所有权限管理活动。 这是一项非常强大的功能，因为你不仅能够监视哪些文件受到保护，哪些用户成功访问了那些受保护文件，还能够识别试图访问受保护文件的未授权用户的潜在可疑行为。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)。
 
-    -   如果这些[订阅](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)支持这些功能，请提供用户跟踪和撤销其受保护的文档的功能。 有关详细信息，请参阅 [Azure 信息保护用户指南](../rms-client/client-user-guide.md)中的[跟踪和撤销文档](../rms-client/client-track-revoke.md)。
+    -   如果这些[订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-features)支持这些功能，请提供用户跟踪和撤销其受保护的文档的功能。 有关详细信息，请参阅 [Azure 信息保护用户指南](../rms-client/client-user-guide.md)中的[跟踪和撤销文档](../rms-client/client-track-revoke.md)。
 
     -   实现“自带密钥”解决方案 (BYOK)，以便能够根据 IT 策略，在本地生成 Azure 权限管理的租户密钥，并使用硬件安全模块 (HSM) 将该密钥安全传输到 Microsoft。 有关详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)。
 

@@ -4,7 +4,7 @@ description: "Azure 信息保护经过多次名称更改，你可能知道的是
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 04/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b6c6dfec138c3be41dcbb8609660a1fd3bcff376
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 73af5d2f3f6bfc601f6c2bf97584f0c41ff9ccaa
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure 信息保护 - 也称为...
@@ -71,6 +71,6 @@ Azure 信息保护（有时缩写为 AIP）由著名 Microsoft 技术长期发�
 
 ## <a name="how-to-evaluate-or-purchase-the-latest-version"></a>如何评估或购买最新版本
 
-有关如何购买或评估 Azure 信息保护以及可用于订阅计划的不同功能的详细信息，请参阅 [Azure 信息保护](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)站点。
+有关如何购买或评估 Azure 信息保护以及可用于订阅计划的不同功能的详细信息，请参阅 [Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)站点。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

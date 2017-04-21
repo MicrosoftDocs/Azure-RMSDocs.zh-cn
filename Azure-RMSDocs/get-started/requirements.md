@@ -4,7 +4,7 @@ description: "确定为组织部署 Azure 信息保护的必备条件。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8f249994c2ac1cf02c4572d3f7cb8ba6566cb142
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 90cfc530d8d4289e4c614e822cd666c50db86b90
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
@@ -24,7 +24,7 @@ translationtype: HT
 
 |要求|更多信息|
 |---------------|--------------------|
-|Azure 信息保护的订阅|查看 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)，以确保组织的订阅具有想要使用的 Azure 信息保护功能。|
+|Azure 信息保护的订阅|查看 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)，以确保组织的订阅具有想要使用的 Azure 信息保护功能。|
 |Azure Active Directory|你的组织必须具有 Azure Active Directory (Azure AD)，以此支持 Azure 信息保护的用户身份验证。 此外，如果你希望使用本地目录 (AD DS) 中的用户帐户，则还必须配置目录集成。<br /><br />具有所需客户端软件并正确配置 MFA 支持基础结构后，Azure 信息保护将支持多重身份验证 (MFA)。<br /><br />有关详细信息，请参阅 [Azure 信息保护的 Azure Active Directory 要求](requirements-azure-ad.md)。|
 |客户端设备|用户必须拥有运行支持 Azure 信息保护的操作系统的客户端设备（计算机或移动设备）。<br /><br />以下设备支持 Azure 信息保护客户端，它可使用户分类并标记其 Office 文档和电子邮件：<br /><br />- Windows 10（x86、x64）<br /><br />- Windows 8.1（x86、x64）<br /><br />- Windows 8（x86、x64）<br /><br />- Windows 7 Service Pack 1（x86、x64）<br /><br />当此客户端可以通过使用 Azure 权限管理服务保护数据时，支持 Azure 权限管理服务的同一设备（Windows、Mac、iOS、Android）可以使用此数据。 <br /><br />有关支持 Azure Rights Management 服务的设备的详细信息，请参阅[支持 Azure Rights Management 数据保护的客户端设备](../get-started/requirements-client-devices.md)。|
 |应用程序|Azure 信息保护客户端可使用以下 Office 套件中的 **Word**、**Excel**、**PowerPoint** 和 **Outlook** 等 Office 应用程序对文件和电子邮件设置标签和进行保护：<br /><br /> - 含 2016 应用或 2013 应用的 Office 365 ProPlus（即点即用或基于 Windows Installer 的安装）<br /><br />- Office Professional Plus 2016<br /><br />- Office Professional Plus 2013 Service Pack 1<br /><br />- Office Professional Plus 2010 <br /><br />有关支持数据保护服务的 Office 版本的信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。|
