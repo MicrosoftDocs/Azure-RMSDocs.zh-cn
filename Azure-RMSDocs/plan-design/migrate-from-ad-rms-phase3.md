@@ -1,214 +1,61 @@
 ---
-title: "迁移 AD RMS-Azure 信息保护 - 第 3 阶段"
-description: "从 AD RMS 迁移到 Azure 信息保护的阶段 3 涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 6 至 7"
+title: "从 AD RMS 迁移到 Azure 信息保护 - 第 3 阶段"
+description: "从 AD RMS 迁移到 Azure 信息保护的第 3 阶段涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 7。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/14/2017
+ms.date: 04/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
-ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
+ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1124019309749574241bf25e6b0eb58a50771afc
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 0f339e66bbbdaf45e15b6b820d3f56d5385083a1
+ms.sourcegitcommit: 384461f0e3fccd73cd7eda3229b02e51099538d4
 translationtype: HT
 ---
-# <a name="migration-phase-3---supporting-services-configuration"></a>迁移阶段 3 - 支持服务配置
+# <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
 
+使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 3。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 7。
 
-使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 3。 这些过程涉及[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 6-7。
+如果无法同时迁移所有客户端，请分批对客户端运行以下过程。 对于批次中具有要迁移的 Windows 计算机的每个用户，将用户添加到之前创建的 **AIPMigrated** 组。
 
+## <a name="step-7-reconfigure-clients-to-use-azure-information-protection"></a>步骤 7. 重新配置客户端以使用 Azure 信息保护
 
-## <a name="step-6-configure-irm-integration-for-exchange-online"></a>步骤 6. 为 Exchange Online 配置 IRM 集成
+此步骤使用迁移脚本重新配置 AD RMS 客户端。 这些脚本将重置 Windows 计算机上的配置，以使其将使用 Azure Rights Management 服务而不是 AD RMS： 
 
-如果以前已将 TDP 从 AD RMS 导入 Exchange Online，则必须删除此 TDP，以避免在迁移到 Azure 信息保护后发生模板和策略冲突。 为此，请在 Exchange Online 中使用 [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) cmdlet。
+**CleanUpRMS.cmd**：
 
-如果你选择了 **Microsoft 管理**的 Azure 信息保护租户密钥拓扑：
+- 删除所有文件夹的内容和 AD RMS 客户端用于存储其配置的注册表项。 此信息包括客户端的 AD RMS 群集的位置。
 
--   请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)文章中的[“Exchange Online：IRM 配置”](../deploy-use/configure-office365.md#exchange-online-irm-configuration)部分。 此部分介绍了一些典型的命令，运行这些命令可以连接到 Exchange Online 服务、从 Azure 信息保护导入租户密钥，以及为 Exchange Online 启用 IRM 功能。 完成这些步骤后，你将获得 Exchange Online 的完整 Azure Rights Management 保护功能。
+**MigrateClient.cmd**：
 
-如果你选择了**客户管理 (BYOK)** 的 Azure 信息保护租户密钥拓扑：
+- 配置客户端，以为 Azure Rights Management 服务初始化用户环境（即启动）。
 
--   Exchange Online 的 Rights Management 保护功能将有所削减，如 [BYOK 定价和限制](byok-price-restrictions.md)文章中所述。
+-  配置客户端以连接到 Azure Rights Management 服务，以便获取 AD RMS 群集保护的内容的使用授权。 
 
-## <a name="step-7-deploy-the-rms-connector"></a>步骤 7. 部署 RMS 连接器
-如果你已将 Exchange Server 或 SharePoint Server 的信息权限管理 (IRM) 功能与 AD RMS 一起使用，则必须先在这些服务器上禁用 IRM 并删除 AD RMS 配置。 然后，部署 Rights Management (RMS) 连接器，该连接器将充当本地服务器和 Azure 信息保护的保护服务之间的通信接口（中继）。
 
-此步骤的最后一步，如果你已将多个用于保护电子邮件的 AD RMS 数据配置文件 (.xml) 导入到 Azure 信息保护，则必须手动编辑 Exchange Server 计算机上的注册表，将所有受信任的发布域 URL 重定向到 RMS 连接器。
+### <a name="client-reconfiguration-by-using-registry-edits"></a>使用注册表编辑重新配置客户端
 
-> [!NOTE]
-> 在开始之前，请从[支持 Azure RMS 的本地服务器](../get-started/requirements-servers.md)中核实 Azure Rights Management 服务所支持的本地服务器的版本。
+1. 返回到之前提取的迁移脚本，**CleanUpRMS.cmd** 和 **MigrateClient.cmd**。
 
-### <a name="disable-irm-on-exchange-servers-and-remove-ad-rms-configuration"></a>在 Exchange 服务器上禁用 IRM 并删除 AD RMS 配置
+2.  按照 **MigrateClient.cmd** 中的说明修改脚本，以便它包含租户的 Azure Rights Management 服务 URL，以及 AD RMS 群集 Extranet 授权 URL 和 Intranet 授权 URL 的服务器名称。
 
-1.  在每个 Exchange 服务器上，找到以下文件夹，并删除该文件夹中的所有条目：\ProgramData\Microsoft\DRM\Server\S-1-5-18
+    > [!IMPORTANT]
+    > 仍然注意，不要在地址前后引入多余空格。
+    > 
+    > 此外，如果 AD RMS 服务器使用 SSL/TLS 服务器证书，请检查字符串中许可 URL 值是否包括端口号 **443**。 例如：https:// rms.treyresearch.net:443/_wmcs/licensing。 单击群集名称并查看“群集详细信息”时，Active Directory Rights Management Services 中会显示此信息。 如果端口号 443 包含在此 URL 中，修改脚本时请将该值包括在内。 例如，https://rms.treyresearch.net:**443**。 
 
-2.  在任一 Exchange 服务器上，使用 Exchange [Set_IRMConfiguration](http://technet.microsoft.com/library/dd979792.aspx) cmdlet，先对向内部收件人发送的消息禁用 IRM 功能：
+    如果需要针对 &lt;YourTenantURL&gt; 检索 Azure Rights Management 服务 URL ，请重新参考[确定 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
 
-    ```
-    Set-IRMConfiguration -InternalLicensingEnabled $false
-    ```
+3.  在 **AIPMigrated** 组的成员所使用的客户端计算机上依次运行 **CleanUpRMS.cmd** 和 **MigrateClient.cmd**。 例如，创建运行这些脚本的组策略对象并将其分配给此用户组。
 
-3.  然后使用同一 cmdlet 对向外部收件人发送的消息禁用 IRM 功能：
-
-    ```
-    Set-IRMConfiguration -ExternalLicensingEnabled $false
-    ```
-
-4.  接下来，使用同一 cmdlet 在 Microsoft Office Outlook Web App 和 Microsoft Exchange ActiveSync 中禁用 IRM：
-
-    ```
-    Set-IRMConfiguration -ClientAccessServerEnabled $false
-    ```
-
-5.  最后，使用同一 cmdlet 清除所有缓存的证书：
-
-    ```
-    Set-IRMConfiguration -RefreshServerCertificates
-    ```
-
-6.  现在，在每个 Exchange Server 上重置 IIS，例如通过以管理员身份运行命令提示符并键入 **iisreset**。
-
-### <a name="disable-irm-on-sharepoint-servers-and-remove-ad-rms-configuration"></a>在 SharePoint 服务器上禁用 IRM 并删除 AD RMS 配置
-
-1.  请确保没有文档从 RMS 保护的库中签出。 如果有，这些文档将在此过程结束时变为不可访问。
-
-2.  在 SharePoint 管理中心网站的“快速启动”部分中，单击“安全性”。
-
-3.  在“安全性”页的“信息策略”部分中，单击“配置信息权限管理”。
-
-4.  在“信息权限管理”页的“信息权限管理”部分中，选择“不在此服务器上使用 IRM”，然后单击“确定”。
-
-5.  在每台 SharePoint Server 计算机上，删除文件夹 \ProgramData\Microsoft\MSIPC\Server\*&lt;运行 SharePoint Server 的帐户的 SID&gt;* 的内容。
-
-#### <a name="install-and-configure-the-rms-connector"></a>安装并配置 RMS 连接器
-
--   使用[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)文章中的说明。
-
-#### <a name="for-exchange-only-and-multiple-tpds-edit-the-registry"></a>对于仅 Exchange 和多个 TPD：编辑注册表
-
--   在每个 Exchange Server 上，手动为每个已导入的附加配置数据文件 (.xml) 添加以下注册表项，将受信任的发布域 URL 重定向到 RMS 连接器。 这些注册表项特定于迁移，并且不是通过 Microsoft RMS 连接器的服务器配置工具添加的。
-
-    进行这些注册表编辑时，请使用以下说明：
-
-    -   将 *ConnectorFQDN* 替换为你在 DNS 中为连接器定义的名称。 例如 **rmsconnector.contoso.com**。
-
-    -   对连接器 URL 使用 HTTP 或 HTTPS 前缀，具体取决于你已将连接器配置为使用 HTTP 还是使用 HTTPS 与本地服务器通信。
-
-对于 Exchange 2013 - 注册表编辑 1：
-
-
-**注册表路径：**
-
-HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
-
-**类型：**
-
-Reg_SZ
-
-**值：**
-
-https://\<AD RMS Intranet 授权 URL\>/_wmcs/licensing
-
-**数据：**
-
-以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
-
-- http://\<连接器 FQDN\>/_wmcs/licensing
-
-- https://\<连接器名称\>/_wmcs/licensing
-
-
----
-
-对于 Exchange 2013 - 注册表编辑 2：
-
-**注册表路径：**
-
-HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection 
-
-
-**类型：**
-
-Reg_SZ
-
-**值：**
-
-https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
-
-
-**数据：**
-
-以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
-
-- http://\<连接器 FQDN\>/_wmcs/licensing
-
-- https://\<连接器 FQDN\>/_wmcs/licensing
-
----
-
-对于 Exchange 2010 - 注册表编辑 1：
-
-
-
-**注册表路径：**
-
-HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
-
-**类型：**
-
-Reg_SZ
-
-**值：**
-
-https://\<AD RMS Intranet 授权 URL\>/_wmcs/licensing
-
-**数据：**
-
-以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
-
-- http://\<连接器 FQDN\>/_wmcs/licensing
-
-- https://\<连接器名称\>/_wmcs/licensing
-
-
----
-
-对于 Exchange 2010 - 注册表编辑 2：
-
-
-**注册表路径：**
-
-HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
- 
-
-**类型：**
-
-Reg_SZ
-
-**值：**
-
-https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
-
-
-**数据：**
-
-以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
-
-- http://\<连接器 FQDN\>/_wmcs/licensing
-
-- https://\<连接器 FQDN\>/_wmcs/licensing
-
----
-
-完成这些过程之后，请务必阅读[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)文章中的“后续步骤”部分。
 
 ## <a name="next-steps"></a>后续步骤
-若要继续迁移，请转到[阶段 4 - 迁移后任务](migrate-from-ad-rms-phase4.md)。
+若要继续迁移，请转到[第 4 阶段 - 支持服务配置](migrate-from-ad-rms-phase3.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
