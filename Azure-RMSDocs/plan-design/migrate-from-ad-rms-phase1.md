@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 1 阶段涉及从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 42cdcb888656df1b623c34775bd3bfe20daee952
-ms.sourcegitcommit: 89e13f6be15a96293e0af0b2529a2e39563a63b6
+ms.openlocfilehash: adb5ad1f599c5996044ad2fce0e1e5889d81c81b
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
@@ -30,7 +30,7 @@ translationtype: HT
 安装工具。 相关说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
 
 > [!NOTE]
-> 如果先前已下载此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 2.5.0.0：`(Get-Module aadrm -ListAvailable).Version`
+> 如果之前已下载了此 Windows PowerShell 模块，请运行以下命令来检查版本号是否高于或等于 **2.9.0.0**：`(Get-Module aadrm -ListAvailable).Version`
 
 若要完成某些迁移说明，需要了解租户的 Azure Rights Management 服务 URL，以便看到对\<租户 URL\> 的引用时将其替换。 Azure Rights Management 服务 URL 采用以下格式：**{GUID}.rms.[Region].aadrm.com**。
 

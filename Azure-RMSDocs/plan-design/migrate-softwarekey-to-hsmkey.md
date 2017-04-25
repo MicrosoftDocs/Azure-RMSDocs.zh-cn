@@ -4,7 +4,7 @@ description: "此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d2e504b2ed387a5bce721fac12e017064006169d
-ms.sourcegitcommit: 384461f0e3fccd73cd7eda3229b02e51099538d4
+ms.openlocfilehash: bcb0d7ffe9576f02e6388451f16a8341ee4325c2
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>步骤 2：软件保护密钥到 HSM 保护密钥的迁移
@@ -35,16 +35,16 @@ translationtype: HT
 
 
 > [!TIP]
-> 如果你将对 Azure 密钥保管库执行配置步骤，而尚不熟悉此 Azure 服务，你可能会发现先阅读 [Get started with Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)（Azure 密钥保管库入门）可能会有所帮助。 
+> 如果你将对 Azure 密钥保管库执行配置步骤，而尚不熟悉此 Azure 服务，你可能会发现先阅读 [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started)（Azure 密钥保管库入门）可能会有所帮助。 
 
 
 ## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-on-premises-hsm"></a>第 1 部分：从配置数据中提取 SLC 密钥，并将密钥导入到本地 HSM
 
-1.  Azure 密钥保管库管理员：使用 Azure 密钥保管库文档的 [Implementing bring your own key (BYOK) for Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault)（为 Azure 密钥保管库实施自带密钥 (BYOK)）部分中的下列步骤：
+1.  Azure Key Vault 管理员：对于想存储在 Azure Key Vault 中的每个导出的 SLC 密钥，请使用 Azure Key Vault 文档的[为 Azure Key Vault 实现自带密钥 (BYOK)](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) 部分中的以下步骤：
 
-    -   **生成密钥并将其传送到 Azure 密钥保管库 HSM**：[步骤 1：准备你的连接 Internet 的工作站](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-1-prepare-your-internet-connected-workstation)
+    -   **生成密钥并将其传送到 Azure 密钥保管库 HSM**：[步骤 1：准备你的连接 Internet 的工作站](/azure/key-vault-hsm-protected-keys/#step-1-prepare-your-internet-connected-workstation)
 
-    -   **生成和传送租户密钥 - 通过 Internet**：[步骤 2：准备你的未连接工作站](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-2-prepare-your-disconnected-workstation)
+    -   **生成和传送租户密钥 - 通过 Internet**：[步骤 2：准备你的未连接工作站](/azure/key-vault-hsm-protected-keys/#step-2-prepare-your-disconnected-workstation)
 
     不用按照这些步骤生成租户密钥，因为你在导出的配置数据 (.xml) 文件中已有等效项。 你将改为运行工具以从该文件中提取此密钥并将其导入到本地 HSM。 在运行时，该工具将创建两个文件：
 
@@ -110,7 +110,7 @@ translationtype: HT
 
 ## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>第 2 部分：打包 HSM 密钥并将其传送到 Azure 密钥保管库
 
-Azure 密钥保管库管理员：使用 Azure 密钥保管库文档的 [Implementing bring your own key (BYOK) for Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault)（为 Azure 密钥保管库实施自带密钥 (BYOK)）部分中的下列步骤：
+Azure Key Vault 管理员：对于想存储在 Azure Key Vault 中的每个导出的 SLC 密钥，请使用 Azure Key Vault 文档的[为 Azure Key Vault 实现自带密钥 (BYOK)](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) 部分中的以下步骤：
 
 - [步骤 4：准备要传送的密钥](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-4-prepare-your-key-for-transfer)
 
@@ -122,40 +122,48 @@ Azure 密钥保管库管理员：使用 Azure 密钥保管库文档的 [Implemen
 
 将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 类似于 **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**。 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure 信息保护中的 Azure Rights Management 服务将此密钥用作租户密钥。
 
+然后使用 [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) cmdlet 授予 Azure 权限管理服务主体访问密钥保管库的权限。 所需的权限有解密、加密、unwrapkey、wrapkey、验证和签名。
+
+例如，如果已将为 Azure 信息保护创建的密钥保管库命名为 contosorms-byok-kv，且资源组名为 contosorms-byok-rg，请运行以下命令：
+    
+    Set-AzureRmKeyVaultAccessPolicy -VaultName "contosorms-byok-kv" -ResourceGroupName "contosorms-byok-rg" -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
+
 现在，你已将 HSM 密钥传送到 Azure 密钥保管库，接下来可以导入 AD RMS 配置数据。
 
 ## <a name="part-3-import-the-configuration-data-to-azure-information-protection"></a>步骤 3：将配置数据导入到 Azure 信息保护
 
-1.  Azure 信息保护管理员：在连接 Internet 的工作站和 PowerShell 会话中，复制在运行 TpdUtil 工具后删除了 SLC 密钥的新配置数据文件 (.xml)。
+1. Azure 信息保护管理员：在连接 Internet 的工作站和 PowerShell 会话中，复制在运行 TpdUtil 工具后删除了 SLC 密钥的新配置数据文件 (.xml)。
 
-2. 使用 [Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd) cmdlet 上传第一个.xml 文件。 如果有多个这些文件（因为有多个受信任的发布域），请选择要与 Azure 信息保护配合使用的 HSM 密钥相对应的文件，以在迁移后保护内容。
+2. 使用 [Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd) cmdlet 上传每个 .xml 文件。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。
 
-    若要运行此 cmdlet，将需要在上一步中标识的密钥的 URL。
+    若要运行此 cmdlet，需要先前为配置数据文件指定的密码以及在上一步中标识的密钥的 URL。
 
-    例如，使用上一步的密钥 URL 值和配置数据文件 C:\contoso_keyless.xml，将运行：
+    例如，使用 C:\contoso_keyless.xml 配置数据文件和我们上一步中的密钥 URL 值，首先运行以下命令以存储密码：
+    
+    ```
+    $TPD_Password = Read-Host -AsSecureString
+    ```
+    
+   输入指定的密码以导出配置数据文件。 然后，运行以下命令并确认希望执行此操作：
 
     ```
-    Import-AadrmTpd -TpdFile "C:\contoso_keyless.xml" -ProtectionPassword –KeyVaultStringUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Active $True -Verbose
+    Import-AadrmTpd -TpdFile "C:\contoso_keyless.xml" -ProtectionPassword $TPD_Password –KeyVaultStringUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Verbose
     ```
 
-    出现提示时，输入你先前为配置数据文件指定的密码，并确认要执行此操作。
+    作为此导入的一部分，将导入 SLC 密钥并且密钥将被自动设置为已存档。
 
-    如果你有多个配置数据文件，请对这些文件的其余部分重复运行此命令。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。 但对于这些文件，在运行 Import 命令时将 **-Active** 设为 **false**。
+3. 在上传完每个文件后，请运行 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) 以指定哪个导入的密钥与 AD RMS 群集中当前活动的 SLC 密钥相匹配。
 
-
-
-3.  使用 [Disconnect-AadrmService](/powershell/aadrm/vlatest/disconnect-aadrmservice) cmdlet 断开与 Azure Rights Management 服务的连接：
+4. 使用 [Disconnect-AadrmService](/powershell/aadrm/vlatest/disconnect-aadrmservice) cmdlet 断开与 Azure Rights Management 服务的连接：
 
     ```
     Disconnect-AadrmService
     ```
 
-    > [!NOTE]
-    > 如果之后需要确认正在 Azure 密钥保管库中使用的 Azure 信息保护租户密钥，请使用 [Get-AadrmKeys](/powershell/aadrm/vlatest/get-aadrmkeys) Azure RMS cmdlet。
+如果之后需要确认正在 Azure 密钥保管库中使用的 Azure 信息保护租户密钥，请使用 [Get-AadrmKeys](/powershell/aadrm/vlatest/get-aadrmkeys) Azure RMS cmdlet。
 
 
-现在可以转到[步骤 5：激活 Azure 信息保护租户](migrate-from-ad-rms-phase2.md#step-5-activate-the-azure-rights-management-service)。
+现在可以转到[步骤 5：激活 Azure 权限管理服务](migrate-from-ad-rms-phase2.md#step-5-activate-the-azure-rights-management-service)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

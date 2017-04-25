@@ -4,7 +4,7 @@ description: "用于将 Active Directory Rights Management Services (AD RMS) 部
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 89ccb599fe21c409d36b9d0ab28e274e6aedaf1e
-ms.sourcegitcommit: 384461f0e3fccd73cd7eda3229b02e51099538d4
+ms.openlocfilehash: b1d643cdb28f46c03e9c0c2707d44f9ff9eedcb3
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
@@ -119,10 +119,6 @@ translationtype: HT
 
 -   如果 Azure 信息保护使用的 Rights Management 服务不支持你的软件和客户端，则它们无法保护或使用受 Azure Rights Management 保护的内容。 请务必查看 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)中的“支持的应用程序和客户端”部分。
 
--   如果你将本地密钥作为存档导入 Azure 信息保护（在导入过程中未将 TPD 设置为活动）并在分阶段迁移过程中分批迁移用户，则 AD RMS 中保留的用户将无法访问已迁移用户最近保护的内容。 在这种情况下，请尽量缩短迁移持续时间，并以逻辑批的形式迁移用户，以便在用户相互协作的情况下会一起迁移。
-
-    如果你在导入过程中将 TPD 设置为活动，则不存在这种限制，因为所有用户将使用同一密钥保护内容。 我们建议采用这种配置，因为这样你就可以根据自己的步调单独迁移所有用户。
-
 -   如果将你的 AD RMS 部署配置为与外部合作伙伴协作（例如，通过使用受信任的用户域或联合），则在你迁移的同时或之后尽早的时间，这些合作伙伴也必须迁移到 Azure 信息保护。 若要继续访问你的组织以前使用 Azure 信息保护进行保护的内容，这些合作伙伴必须进行与你进行的更改（在本文档中提供了这些更改）类似的客户端配置更改。
 
     由于你的合作伙伴进行的配置可能有所变动，确切说明此重新配置已超出了本文档的范围。 但是，有关规划指导及其他帮助，请参阅下一节，[联系 Microsoft 支持部门](../get-started/information-support.md#support-options-and-community-resources)。
@@ -165,7 +161,7 @@ translationtype: HT
 
 - **步骤 4：从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护**
 
-    将 AD RMS 中的配置数据（密钥、模板、URL）导出到 XML 文件，然后使用 Import-AadrmTpd PowerShell cmdlet 将该文件上传到 Azure 信息保护中的 Azure Rights Management 服务。 可能需要其他步骤，具体取决于你的 AD RMS 密钥配置：
+    将 AD RMS 中的配置数据（密钥、模板、URL）导出到 XML 文件，然后使用 Import-AadrmTpd PowerShell cmdlet 将该文件上传到 Azure 信息保护中的 Azure Rights Management 服务。 然后，确定要使用哪个导入的服务器许可方证书 (SLC) 密钥作为 Azure 权限管理服务的租户密钥。 可能需要其他步骤，具体取决于你的 AD RMS 密钥配置：
 
     - **软件保护密钥到软件保护密钥的迁移**：
 
@@ -181,7 +177,7 @@ translationtype: HT
 
 - **步骤 5.激活 Azure Rights Management 服务**
 
-    如果可能，请在执行导入过程之后而不是之前执行此步骤。
+    如果可能，请在执行导入过程之后而不是之前执行此步骤。 如果在导入前已激活服务，则需要执行额外的步骤。
 
 - **步骤 6.配置导入的模板**
 
