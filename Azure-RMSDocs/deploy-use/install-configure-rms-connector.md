@@ -4,7 +4,7 @@ description: "此信息可帮助安装并配置 Azure Rights Management (RMS) �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 100ac0f42d82eb02635187dbb0c91422d3097872
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 21eab2a693147b4e6562a8bcdff8cece7d706432
+ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
 translationtype: HT
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
@@ -53,7 +53,7 @@ translationtype: HT
 ## <a name="entering-credentials"></a>输入凭据
 在能够配置 RMS 连接器之前，你必须输入具有足够 RMS 连接器配置权限的帐户的凭据。 例如，你可以键入 **admin@contoso.com**，然后指定此帐户的密码。
 
-对于此密码有一些字符限制。 不可使用具有下列任一字符的密码：& 号 (**&**)、左括号 (**[**)、右括号 (**]**)、直引号 (**"**) 和撇号 (**'**)。 如果你的密码包含上述任一字符，则尽管你在其他方案中可以使用此帐户和密码成功登录，但 RMS 连接器的身份验证将失败，你将看到错误消息“该用户名和密码组合不正确”。 如果这适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设你的密码使其不包含上述任一特殊字符。
+对于此密码有一些字符限制。 不可使用具有下列任一字符的密码：& 号 (**&**)、左括号 (**[**)、右括号 (**]**)、直引号 (**"**) 和撇号 (**'**)。 如果你的密码包含上述任一字符，尽管在其他方案中你可以使用此帐户和密码成功登录，但针对 RMS 连接器的身份验证也将失败，并且你将看到“该用户名和密码组合不正确”的错误消息。 如果这适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设你的密码使其不包含上述任一特殊字符。
 
 此外，如果你实现了[内置控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保你指定的帐户能够保护内容。 例如，如果你将保护内容的功能限制给“IT 部门”组，则在此指定的帐户必须是该组成员。 若未实现，将显示以下错误消息：**发现管理服务和组织位置的尝试失败。“请确保为你的组织启用了 Microsoft Rights Management 服务。”**
 

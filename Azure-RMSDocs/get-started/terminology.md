@@ -4,7 +4,7 @@ description: "对 Microsoft Azure 信息保护相关的单词、短语或缩略�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/08/2017
+ms.date: 04/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5fecc61fb77625047a5ebedad4ff906fe8c27bbe
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 7ed60b1a2c02007668a11fdf8278bf196ee84521
+ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
 translationtype: HT
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
@@ -24,7 +24,7 @@ translationtype: HT
 
 |项|定义|
 |--------|--------------|
-|AADRM|Azure Rights Management 服务的 Windows PowerShell 模块名称，派生自此前该应用名为 (Windows) Azure Active Directory Rights Management 时的 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的非正式缩写。|
+|AADRM|Azure 权限管理服务的 Windows PowerShell 模块名称，派生自 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 之前名为 (Windows) Azure Active Directory 权限管理时的非正式缩写。|
 |激活|启用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 服务，使组织可以保护其文档和电子邮件。 此操作还会在 Exchange Online 和 SharePoint Online 中启用权限管理功能。|
 |Active Directory 权限管理服务|经常缩写为 *AD RMS*。<br /><br />一个 Windows Server 角色，它使用加密和策略来提供权限管理保护，以帮助保护文档、文件和电子邮件。|
 |AD RMS|请参阅 *Active Directory Rights Management 服务*。|
@@ -43,6 +43,7 @@ translationtype: HT
 |一般性保护|一种保护级别，它可以加密任何文件类型，并阻止未经授权的人员打开该文件。 该文件在打开后将处于未加密状态，并可以在原本不支持[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]的应用程序中使用。|
 |HYOK|请参阅*自留密钥*。|
 |自留密钥|经常缩写为 *HYOK*。<br /><br />一个配置和拓扑选项，面向通常出于法规或合规性方面的原因而想在本地生成并存储自己的密钥的组织。|
+|密钥对象|在租户密钥的上下文中，包含 Azure 权限管理服务进行加密操作时所需的元数据的一个实体。|
 |信息保护|有时缩写为 *IP*。<br /><br />一个符合行业标准的通用术语，表示保护数据和文件以防止未经授权的访问，即使在通过电子邮件或文档共享使这些数据和文件脱离组织边界后，也能提供这种保护。 Microsoft Azure 信息保护就是信息保护 (IP) 解决方案的例子。|
 |信息权限管理|经常缩写为 *IRM*。<br /><br />一个用于 Exchange Server、Word 和 SharePoint Online 等 Office 服务的术语，说明是否支持 Microsoft Rights Management 服务。|
 |IRM|请参阅 *信息权限管理*。|
