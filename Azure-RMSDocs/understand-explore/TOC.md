@@ -3,7 +3,6 @@
 ### [也称为...](aka.md)
 ### [Azure Rights Management 是什么？](what-is-azure-rms.md)
 #### [它能解决哪些问题？](azure-rms-problems-it-solves.md)
-#### [管理员和用户将看到什么？](what-admins-users-see.md)
 #### [它是如何工作的？](how-does-it-work.md)
 ## [个人 RMS 和 Azure 信息保护](rms-for-individuals.md)
 ### [用户如何注册个人 RMS](rms-for-individuals-user-sign-up.md)
