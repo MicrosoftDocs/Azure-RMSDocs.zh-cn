@@ -19,7 +19,7 @@ translationtype: HT
 >*适用于：Azure 信息保护*
 
 > [!NOTE]
->如果知道已为租户激活 Azure 权限管理服务，请直接转到“下一步”[](infoprotect-tutorial-step2.md)。 
+>如果知道已为租户激活 Azure 权限管理服务，请直接转到[“下一步”](infoprotect-tutorial-step2.md)。 
 >
 >如果不确定是否已激活此服务，请使用此步骤中的说明进行检查。
 
@@ -35,7 +35,7 @@ translationtype: HT
     
     如果系统提示登录，请使用 Office 365 的全局管理员帐户。
 
-2. 在“Rights Management”页上，单击“激活”。 如果此按钮显示“停用”，则已激活该服务，可以直接转到“下一步”[](infoprotect-tutorial-step2.md)。 
+2. 在“Rights Management”页上，单击“激活”。 如果此按钮显示“停用”，则已激活该服务，可以直接转到[“下一步”](infoprotect-tutorial-step2.md)。 
 
     ![Azure 信息保护快速入门教程步骤 1 - 激活服务](../media/info-protect-activate.png)
 
