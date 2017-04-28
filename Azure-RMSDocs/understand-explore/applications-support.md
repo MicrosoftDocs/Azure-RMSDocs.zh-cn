@@ -4,7 +4,7 @@ description: "了解最常使用的最终用户应用程序（例如 Office 应�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c7c91c09ebcd7dcc35c7d91e056b5f83f93d53cd
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: db9f67c5baeea678bf288f4f10237ff4517d905b
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>应用程序如何支持 Azure Rights Management 服务
@@ -31,9 +31,6 @@ translationtype: HT
 对于用户必须自行应用信息保护的情况，请务必为他们提供有关信息保护应用方式和时机的说明和指导。 这些说明应该专门针对他们使用的特定应用程序和版本及其使用方式，有关信息保护应用时机和方式的指导应该适用于你的企业。 有关详细信息，请参阅[帮助用户使用 Azure Rights Management 服务保护文件](../deploy-use/help-users.md)。
 
 有关如何为 Azure 信息保护中的 Azure Rights Management 服务配置这些应用程序的信息，请参阅[为 Azure Rights Management 配置应用程序](../deploy-use/configure-applications.md)。
-
-> [!TIP]
-> 有关使用 Azure Rights Management 服务的应用程序的示例和屏幕截图，请参阅[运行中的 Azure RMS：管理员和用户看到的内容](what-admins-users-see.md)。
 
 搜索服务能以不同的方式与 Rights Management 集成。 例如： 
 

@@ -4,7 +4,7 @@ description: "有关部署 RMS 连接器的说明。该连接器提供数据保�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d6fad45bb6a138fee439019b4ae454feb3fe752f
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 04073023841e95abacc0258e061f4742069fbfb0
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>部署 Azure Rights Management 连接器
@@ -22,8 +22,6 @@ translationtype: HT
 
 利用此信息了解 Azure Rights Management 连接器，并了解如何为组织成功部署该连接器。 该连接器提供数据保护，包括保护使用 Microsoft **Exchange Server**、**SharePoint Server** 或运行 Windows Server 和**文件分类基础结构** (FCI) 的文件服务器的现有本地部署。
 
-> [!TIP]
-> 有关带屏幕截图的高级示例方案，请参阅[运行中的 Azure RMS ](../understand-explore/what-admins-users-see.md) 文章中的[自动保护运行 Windows Server 和文件分类基础结构的文件服务器上的文件](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure)部分。
 
 ## <a name="overview-of-the-microsoft-rights-management-connector"></a>Azure Rights Management 连接器概述
 借助 Microsoft Rights Management (RMS) 连接器，你可以迅速让现有本地服务器将信息权限管理 (IRM) 功能用于基于云的 Microsoft Rights Management 服务 (Azure RMS)。 使用此功能，IT 部门和用户能够轻松地保护组织内部和外部的文档和图片，既无需安装其他基础结构，也无需建立与其他组织的信任关系。 

@@ -4,7 +4,7 @@ description: "有关管理员配置应用程序和服务以支持 Azure 信息�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: df08c66daa692137e60a5bd17e1f21cedbc37ec2
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: e3030aca9e7b93d93df583934b2a6ad2f0013903
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>为 Azure Rights Management 配置应用程序
@@ -48,10 +48,6 @@ translationtype: HT
 
 
 若要配置本地服务器，例如 Exchange Server 和 SharePoint Server，请参阅[部署 Azure Rights Management 连接器](deploy-rms-connector.md)。
-
-> [!TIP]
-> 有关配置为使用 Azure Rights Management 服务的应用程序的高级示例和屏幕截图，请参阅[运行中的 Azure RMS：管理员和用户看到的内容](../understand-explore/what-admins-users-see.md)。
-
 
 除了这些应用程序和服务外，还有一些支持 Rights Management API 的其他应用程序。 此类别包括使用 Rights Management SDK 内部编写的业务线应用程序，以及来自软件供应商的使用 Rights Management SDK 编写的应用程序。 对于这些应用程序，请按照应用程序随附的说明操作。
 
