@@ -4,7 +4,7 @@ description: "Azure Rights Management (Azure RMS) 是 Azure 信息保护使用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 53712ee69ac7ab54feb3036ada4eb81383caf786
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
+ms.openlocfilehash: 61b549c38e3e86bc686747adb5f9ebfd1851f446
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
@@ -42,11 +42,7 @@ Azure Rights Management (Azure RMS) 是 [Azure 信息保护](what-is-information
 
 -   [Azure RMS 解决了哪些问题？](azure-rms-problems-it-solves.md)
 
--   [运行中的 Azure RMS：管理员和用户看到的内容](what-admins-users-see.md)
-
 -   [Azure RMS 的工作原理？揭秘](how-does-it-work.md)
-
-
 
 如果想要深入研究并尝试保护自己的文档，请尝试[Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)。 本教程包括当检测到敏感数据时提示保护文档的内容。 还包括保护通过电子邮件共享的文档、跟踪文档以了解其使用情况以及在必要时撤销其访问权限的内容。
 
