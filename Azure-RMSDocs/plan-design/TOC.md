@@ -13,7 +13,7 @@
 ### [迁移后任务](migrate-from-ad-rms-phase5.md)
 ## [计划和实现你的租户密钥](plan-implement-tenant-key.md)
 ### [BYOK 定价和限制](byok-price-restrictions.md)
-## [准备 Azure 信息保护](prepare.md)
+## [准备用户和组](prepare.md)
 # [部署和使用该服务](/information-protection/deploy-use/activate-service)
 # [部署和使用该客户端](/information-protection/rms-client/use-client)
 # [开发和自定义应用](/information-protection/develop/developers-guide)
