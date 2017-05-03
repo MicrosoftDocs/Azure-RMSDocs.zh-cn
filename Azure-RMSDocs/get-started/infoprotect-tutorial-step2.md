@@ -4,14 +4,14 @@ description: "快速试用 Azure 信息保护入门教程步骤 2 - 配置策略
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/27/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 98e65768651c77b4cc0616142e6b7515d275b7a9
-ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
+ms.openlocfilehash: 9a2392df400356e7937db49cec3e0fe1e3d0f228
+ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
 translationtype: HT
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>步骤 2：配置并发布 Azure 信息保护策略
@@ -20,7 +20,7 @@ translationtype: HT
 
 尽管 Azure 信息保护附带了你无需进行配置的默认策略，我们仍然要看一下该策略并进行一些更改。
 
-1. 在新的浏览器窗口中，以租户的全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。
+1. 在新浏览器窗口中，以租户的全局管理员身份或安全管理员身份登录到 [Azure 门户](https://portal.azure.com)。
 
 2. 在中心菜单上，单击“新建”，然后从 **MARKETPLACE** 列表中选择“安全 + 标识”。 在“安全 + 标识”边栏选项卡中，从 **FEATURED APPS** 列表中选择“Azure 信息保护”。 在“Azure 信息保护”边栏选项卡中，单击“创建”。
 
@@ -74,7 +74,7 @@ translationtype: HT
     
     此操作将打开“保护”边栏选项卡。
     
-3. 在“保护”边栏选项卡中，请确保已选中“Azure RMS”和“选择模板”，然后单击下拉框，并选择默认模板“\<你的组织名称> - 机密”。     
+3. 在“保护”边栏选项卡中，请确保已选中“Azure RMS”和“选择预定义模板”，然后单击下拉框，并选择默认模板“\<你的组织名称> - 机密”。     
     
     例如，如果你的组织名称为 VanArsdel, Ltd，你将看到并选择“VanArsdel, Ltd - 机密”： 
     

@@ -4,7 +4,7 @@ description: "确定组织可能具有的要求或问题，并了解 Azure RMS �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 95ece72f7261691f762c8786490c8010aa3e0778
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 65b9d369308505e74e0dde8d96973f9985d209a0
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="what-problems-does-azure-rms-solve"></a>Azure RMS 解决了哪些问题？
@@ -31,7 +31,7 @@ Azure RMS 是 [Azure 信息保护](what-is-information-protection.md)使用的�
 |安全共享信息|√ 当文件[受保护](../rms-client/client-classify-protect.md)时，可以安全地与他人进行共享。 例如，电子邮件的附件或 SharePoint 网站的链接。 如果电子邮件中有敏感信息，则可以保护电子邮件，或只需使用 Outlook 中的“不要转发”选项。 <br /><br />附加受保护文件而不是保护整个电子邮件的好处是，电子邮件文本未加密，因此如果在组织外发送电子邮件，可以附上首次使用的说明。 任何人都可阅读说明，但由于附加文档受到保护，因此只有授权用户才能打开文档，即使将该电子邮件或文档转发给其他用户也是如此。|
 |审核和监视|√ 你可以 [审核和监视受保护文件的使用情况](../deploy-use/log-analyze-usage.md)，即使这些文件已经离开了组织的边界。<br /><br />例如，你为 Contoso, Ltd. 工作 你正在与来自 Fabrikam, Inc 的三名人员一起致力于一个联合项目。你通过电子邮件向这三人发送了一个已保护并限制为只读的文档。 Azure 权限管理审核功能可以提供以下信息：<br /><br />- 你指定的来自 Fabrikam 的人是否打开了该文档，以及打开时间（如果已打开过）。<br /><br />- 你未指定的其他人是否尝试打开该文档却失败了（发生这种情况可能是因为该文档已转发或保存到其他人可以访问的共享位置）。<br /><br />- 指定的任何人是否尝试打印或更改该文档却失败了。<br /><br />此外，[文档跟踪站点](../rms-client/client-track-revoke.md)可让用户和管理员跟踪并在必要时撤销对受保护文档的访问权限。|
 |支持常用设备，而不仅仅是 Windows 计算机|√ [支持的设备](../get-started/requirements-client-devices.md) 包括：<br /><br />- Windows 计算机和手机<br /><br />- Mac 计算机<br /><br />- iOS 平板电脑和手机<br /><br />- Android 平板电脑和手机|
-|支持企业与企业之间的协作|√ 由于 Azure 权限管理是云服务，因此在与其他组织共享受保护内容前，不需要显式配置与这些组织的信任关系。 如果他们已有 Office 365 或 Azure AD 目录，则会自动支持组织间的协作。 如果他们没有 Office&365; 或 Azure AD 目录，则用户可以注册免费的 [个人 RMS](rms-for-individuals.md) 订阅。|
+|支持企业与企业之间的协作|√ 由于 Azure 权限管理是云服务，因此在与其他组织共享受保护内容前，不需要显式配置与这些组织的信任关系。 如果他们已有 Office 365 或 Azure AD 目录，则会自动支持组织间的协作。 如果他们没有 Office 365 或 Azure AD 目录，则用户可以注册免费的 [个人 RMS](rms-for-individuals.md) 订阅。|
 |支持本地服务，以及 Office 365|√ 除了 [与 Office 365 无缝集成](office-apps-services-support.md) 以外，在部署 [RMS 连接器](../deploy-use/deploy-rms-connector.md)时，你还可以将 Azure 权限管理与以下本地服务结合使用：<br /><br />- Exchange Server<br /><br />- SharePoint Server<br /><br />- 运行文件分类基础结构的 Windows Server|
 |轻松激活|√ 为用户[激活 Rights Management 服务](../deploy-use/activate-service.md)只需在管理门户中单击几下鼠标。 或者，如果你喜欢命令行控制，只需使用两个 PowerShell 命令即可。|
 |可以根据需要在整个组织内扩展|√ 由于 Azure 权限管理可作为云服务运行并借助 Azure 灵活地向上和向外扩展，因此，不需要设置或部署其他本地服务器。|
@@ -66,8 +66,6 @@ Azure 权限管理支持以下安全、合规性和法规要求：
 
 ## <a name="next-steps"></a>后续步骤
 
-若要了解 Azure 权限管理服务对于管理员和用户所呈现的内容，请参阅 [运行中的 Azure RMS](what-admins-users-see.md)。
-
-如果对有关 Azure 权限管理服务工作的详细技术信息感兴趣，请参阅 [Azure RMS 的工作原理](how-does-it-work.md)
+有关更多 Azure 权限管理服务工作原理的技术信息，请参阅 [Azure RMS 的工作原理](how-does-it-work.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -4,14 +4,14 @@ description: "在 Azure 信息保护策略中配置适用于所有用户、所�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/29/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: f78de628ab82f8b41001c0c70c8e4ecc52cf20ca
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
+ms.openlocfilehash: 7530b4b778e6c58ecf3ce2f08d857c4fa6bd61c3
+ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
 translationtype: HT
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
@@ -25,7 +25,7 @@ translationtype: HT
 
 配置这些设置：
 
-1. 如果尚未这样做，请在新的浏览器窗口中以全局管理员的身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
+1. 如果尚未执行此操作，请在新的浏览器窗口中以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 

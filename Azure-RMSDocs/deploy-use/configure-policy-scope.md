@@ -4,7 +4,7 @@ description: "若要为特定用户配置不同的设置和标签，必须为 Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/28/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2fc0059f0cc2d7c1a0eb08d6f8ee89ea2bf4bfbd
-ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
+ms.openlocfilehash: 253a08736352b04b4f730b250b888102836f7e6d
+ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
 translationtype: HT
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>如何使用作用域内策略为特定用户配置 Azure 信息保护策略
@@ -33,7 +33,7 @@ translationtype: HT
 
 为 Azure 信息保护配置作用域内策略：
 
-1. 在新的浏览器窗口中，以全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。
+1. 在新浏览器窗口中，以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。
 
 2. 导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“更多服务”并在“筛选”框中开始键入**信息保护**。 在结果中选择“Azure 信息保护”。 
 

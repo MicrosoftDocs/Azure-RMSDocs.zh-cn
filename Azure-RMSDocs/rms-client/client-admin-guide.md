@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d442a9540243cd020b885f7dc2c13d999bbad868
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
+ms.openlocfilehash: 74abbe0db07a155afe500388810945a3ff5a35a5
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
@@ -209,6 +209,16 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 使用以下高级配置的相关信息，你可能需要将其用于特定方案或用户子集。 
 
+### <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>阻止针对仅 AD RMS 计算机出现的登录提示
+
+默认情况下，Azure 信息保护客户端会自动尝试连接到 Azure 信息保护服务。 对于只与 AD RMS 通信的计算机，这可能导致不必要的用户登录提示。 可以通过编辑注册表阻止此登录提示：
+
+找到以下值名称，然后将值数据设置为“0”：
+
+**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+
+无论此设置如何，Azure 信息保护客户端遵循标准的 [RMS 服务发现进程](../rms-client/client-deployment-notes.md#rms-service-discovery)，查找其 AD RMS 群集。
+
 ### <a name="sign-in-as-a-different-user"></a>以其他用户身份登录
 
 在生产环境中，如果用户使用的是 Azure 信息保护客户端，则通常不需要以其他用户身份登录。 但是，如果拥有多个租户，则可能需要以管理员身份执行此操作。 例如，除了拥有组织使用的 Office 365 或 Azure 租户外，还拥有一个测试租户。
@@ -241,9 +251,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 ### <a name="support-for-disconnected-computers"></a>对断开连接的计算机的支持
 
-默认情况下，Azure 信息保护客户端会自动尝试连接到 Azure 信息保护服务，以下载最新的 Azure 信息保护策略。 如果你知道你的计算机在一段时间无法内连接到 Internet，可以通过编辑注册表阻止客户端尝试连接到该服务。 
-
-找到以下值名称并将值数据设置为 **0**：
+默认情况下，Azure 信息保护客户端会自动尝试连接到 Azure 信息保护服务，以下载最新的 Azure 信息保护策略。 如果你知道你的计算机在一段时间无法内连接到 Internet，可以通过编辑注册表阻止客户端尝试连接到该服务。 找到以下值名称并将值数据设置为 **0**：
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
