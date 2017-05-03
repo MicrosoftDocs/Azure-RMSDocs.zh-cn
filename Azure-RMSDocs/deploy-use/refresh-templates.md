@@ -4,7 +4,7 @@ description: "使用 Azure Rights Management 服务时，模板会自动下载�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/27/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 77bd9e7bedf4a319f8f911782c995066a26a7055
-ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
+ms.openlocfilehash: 6f02bffa99719d5cd987bc0fa9c84baabe191ec5
+ms.sourcegitcommit: 2358f76f9a039daff7d70ea68967a45362d3da35
 translationtype: HT
 ---
 # <a name="refreshing-templates-for-users"></a>为用户刷新模板
@@ -24,12 +24,13 @@ translationtype: HT
 
 |应用程序或服务|如何在更改后刷新模板|
 |--------------------------|---------------------------------------------|
-|Exchange Online|需要手动配置来刷新模板。<br /><br />有关配置步骤，请参阅以下部分：[仅适用于 Exchange Online：如何将 Exchange 配置为下载已更改的自定义模板](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates)。|
+|Exchange Online<br /><br />适用于传输规则、DLP 规则和 Outlook Web App|需要手动配置来刷新模板。<br /><br />有关配置步骤，请参阅以下部分：[仅适用于 Exchange Online：如何将 Exchange 配置为下载已更改的自定义模板](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates)。|
 |Azure 信息保护客户端|每当在客户端上的 Azure 信息保护策略刷新时，都会自动刷新：<br /><br /> - 打开支持 Azure 信息保护栏的 Office 应用程序时。 <br /><br /> - 右键单击以分类和保护文件或文件夹时。 <br /><br /> - 运行 PowerShell cmdlet 以实现标记和保护（Get-AIPFileStatus 和 Set-AIPFileLabel）。<br /><br /> - 每 24 小时一次。<br /><br /> 此外，由于 Azure 信息保护客户端与 Office 紧密集成，因此任何适用于 Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护客户端进行刷新。|
 |Office 2016 和 Office 2013<br /><br />适用于 Windows 的 RMS 共享应用程序|自动刷新 – 按计划刷新：<br /><br />- 对于更高版本的 Office：默认刷新时间间隔为 7 天。<br /><br />- 对于 Windows RMS 共享应用程序：对于版本 1.0.1784.0 及更高版本，默认刷新时间间隔为 1 天。 以前版本的默认刷新间隔为 7 天。<br /><br />若要强制早于计划执行刷新，请参阅以下部分 [Office 2016、Office 2013 和 Windows RMS 共享应用程序：如何强制刷新更改的自定义模板](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template)。|
 |Office 2010|当用户注销 Windows 后重新登录并等待长达 1 小时时自动刷新。|
+|Exchange 內部部署与权限管理连接器<br /><br />适用于传输规则和 Outlook Web App|自动刷新 – 无需额外的步骤。 但是，Outlook Web App 可将该 UI 缓存一天。|
 |Office 2016 for Mac|自动刷新 – 无需额外的步骤。|
-|适用于移动设备的 RMS 共享应用程序|自动刷新 – 无需额外的步骤。|
+|适用于 Mac 计算机的 RMS 共享应用|自动刷新 – 无需额外的步骤。|
 
 
 ## <a name="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates"></a>仅适用于 Exchange Online：如何将 Exchange 配置为下载已更改的自定义模板

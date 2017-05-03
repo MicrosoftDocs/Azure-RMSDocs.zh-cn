@@ -4,14 +4,14 @@ description: "通过配置标签来使用 Rights Management 保护，可保护�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 696d744ae21d8957225a24d39547493515b63d76
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 608fa9fe48667c1419736243e5c069b48828ff1b
+ms.sourcegitcommit: 2358f76f9a039daff7d70ea68967a45362d3da35
 translationtype: HT
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
@@ -50,7 +50,7 @@ translationtype: HT
 
 ## <a name="to-configure-a-label-for-rights-management-protection"></a>配置权限管理保护标签的具体步骤
 
-1. 如果尚未这样做，请打开一个新的浏览器窗口并以全局管理员的身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
+1. 如果尚未执行此操作，请打开新的浏览器窗口并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
 
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
@@ -78,9 +78,13 @@ translationtype: HT
     
     大多数情况下，你会为权限设置选择“**Azure RMS**”。 请勿选择“**HYOK (AD RMS)**”，除非你已阅读并了解此“*自留密钥*”(HYOK) 配置随附的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。 若要继续配置 HYOK (AD RMS)，请转到步骤 9。
     
-7. 选择“**不要转发**”（如果要为电子邮件设置此 Outlook 选项的话）或“**选择模板**”。 
+7. 如果要为电子邮件设置此 Outlook 选项，请选择“不转发”，通过“选择预定义模板”以使用任意一种默认模板或配置的自定义模板，或选择“自定义(预览)”在此门户中定义新的保护设置。 
     
-8. 如果为“**Azure RMS**”选择了“**选择模板**”，请单击下拉框，然后选择要用于保护包含此标签的文档和电子邮件的[模板](../deploy-use/configure-custom-templates.md)。
+    请注意，“自定义(预览)”选项具有当前 Azure 经典门户中的大多数配置选项。 此外，可轻松添加组织中的所有用户，并在指定域名时，为单个用户或组，或为其他组织中的所有用户指定外部电子邮件地址。 
+    
+    有关此预览配置的详细信息，请参阅博客文章 [Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/)（当前预览中的 Azure 信息保护统一管理）。 若要深入了解可选择的权限，请参阅 [为 Azure 权限管理配置使用权限](configure-usage-rights.md)。
+    
+8. 如果为 Azure RMS 选择了“选择预配模板”，请单击下拉框，然后选择要用于保护包含此标签的文档和电子邮件的[模板](../deploy-use/configure-custom-templates.md)。
     
     如果选择**部门模板**，或者如果已配置[载入控件](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)：
     
