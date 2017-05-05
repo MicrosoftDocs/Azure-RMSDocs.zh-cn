@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cf11e0ac3bb13dcb31d14bad5f97ad117bd09953
-ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
+ms.openlocfilehash: fe569124494f837e770e5f1f8c6de0c2188a6e40
+ms.sourcegitcommit: ed954c84c9009d205638f0ad54fdbfc02ef5b92c
 translationtype: HT
 ---
 # <a name="create-configure-and-publish-a-custom-template"></a>创建、配置和发布自定义模板
@@ -76,9 +76,9 @@ translationtype: HT
     > [!NOTE]
     > 你选择的用户或组必须有电子邮件地址。 在生产环境中，他们几乎都有电子邮件地址，但在简单的测试环境中，你可能需要为用户帐户或组添加电子邮件地址。
     > 
-    > 如果在选择用户或组后某个电子邮件地址发生更改，并且你已保存模板，请参阅计划文档中的[电子邮件地址发生更改情况下的注意事项](../plan-design/prepare.md#considerations-if-email-addresses-change)部分。 
+    > 如果在选择用户或组后某个电子邮件地址发生更改，并且你已保存模板，请参阅计划文档中的[电子邮件地址发生更改情况下的注意事项](../plan-design/prepare.md#considerations-for-azure-information-protection-if-email-addresses-change)部分。 
 
-    最佳做法是使用组而不是用户，这样可以简化模板的管理。 但是，如果对组进行更改则请注意，出于性能原因，Azure 权限管理[将缓存组成员身份](../plan-design/prepare.md#group-membership-caching)。 
+    最佳做法是使用组而不是用户，这样可以简化模板的管理。 但是，如果对组进行更改则请注意，出于性能原因，Azure 权限管理[将缓存组成员身份](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management)。 
     
     如果你具有本地 Active Directory 并同步到 Azure AD，可以使用已启用邮件的安全组或通讯组。 若要向组织中的所有用户授予权限，则复制一个默认模板将比指定多个组更有效率。 有关详细信息，请参阅[如何复制模板](copy-template.md)。
 
