@@ -4,7 +4,7 @@ description: "适用于 Windows 的 Rights Management 共享应用程序的信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2017
+ms.date: 04/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7767ec1cc1b500432b57ca69af5baba01b624698
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 8ad723e96692919303fe946368c429b8c233d6ef
+ms.sourcegitcommit: ed954c84c9009d205638f0ad54fdbfc02ef5b92c
 translationtype: HT
 ---
 # <a name="rights-management-sharing-application-for-windows"></a>适用于 Windows 的 Rights Management 共享应用程序
