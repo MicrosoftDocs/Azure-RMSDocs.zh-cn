@@ -4,7 +4,7 @@ description: "若要配置分类、标记和保护，必须配置 Azure 信息�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8b6bd6e44fb39c3787e2fe63577c7e7fd9948025
-ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
-translationtype: HT
+ms.openlocfilehash: f412d36e8c58d874360c55c5c90416c2629ed69e
+ms.sourcegitcommit: e3974cc1490581414084669632cad54b12b05d5a
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
 # <a name="configuring-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -58,6 +59,8 @@ Azure 信息保护附带[默认策略](configure-policy-default.md)，其中包�
 
 - 每 24 小时一次。
 
+>[!NOTE]
+>客户端下载策略时，需要等待几分钟，它才能完全正常运行。 实际时间会因多种因素而异，例如策略配置的大小和复杂性以及网络连接。 如果标签生成的操作与最新更改不匹配，请等待最多 15 分钟，然后重试。
 
 ## <a name="configuring-your-organizations-policy"></a>配置组织的策略
 
