@@ -4,7 +4,7 @@ description: "详细解说 Azure RMS 的工作原理、它使用的加密控件�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/21/2017
+ms.date: 04/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d3d174fabb4189d2f4ca7755b6355293261318d4
-ms.sourcegitcommit: 55d8a769084c6422f80aefc5f7c6594ea6855bfa
-translationtype: HT
+ms.openlocfilehash: 3d53e57b8bff94c39426b37755c643c1dc9d9fde
+ms.sourcegitcommit: dd5a63bfee309c8b68ee9f8cd071a574ab0f6b4a
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
@@ -105,7 +106,7 @@ translationtype: HT
 
 **步骤 2 中发生的情况**：RMS 客户端随后会为文档创建一个包含策略的证书，策略包括用户或组的[使用权](../deploy-use/configure-usage-rights.md)和其他限制，例如过期日期。 这些设置可在管理员之前配置的模板中进行定义，或在内容受保护时进行指定（有时称为“临时策略”）。   
 
-用于标识所选用户和组的属性是 Azure AD proxyAddress 属性，该属性用于存储用户或组的所有电子邮件地址。
+用于标识所选用户和组的主要 Azure AD 属性是 Azure AD proxyAddresses 属性，该属性用于存储用户或组的所有电子邮件地址。 但是，如果用户帐户的 AD ProxyAddresses 属性中没有任何值，则改用用户的 UserPrincipalName 值。
 
 然后，RMS 客户端使用初始化用户环境时获取的组织密钥，并使用此密钥来加密策略和对称内容密钥。 RMS 客户端还使用初始化用户环境时获得的用户证书对策略进行签名。
 
@@ -120,7 +121,7 @@ translationtype: HT
 
 ![RMS 文档使用 - 步骤 1，用户已通过身份验证并获取权限列表](../media/AzRMS_documentconsumption1.png)
 
-**步骤 1 中发生的情况**：经过身份验证的用户将文档策略和用户的证书发送到 Azure Rights Management 服务。 服务解密并评估该策略，并生成用户对该文档拥有的权限列表（如果有）。 若要标识用户，可将 Azure AD proxyAddress 属性用于用户的帐户和该用户所属的组。 出于性能原因，会[缓存](../plan-design/prepare.md#group-membership-caching)组成员身份。
+**步骤 1 中发生的情况**：经过身份验证的用户将文档策略和用户的证书发送到 Azure Rights Management 服务。 服务解密并评估该策略，并生成用户对该文档拥有的权限列表（如果有）。 若要标识用户，可将 Azure AD ProxyAddresses 属性用于用户的帐户和该用户所属的组。 出于性能原因，会[缓存](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management)组成员身份。 如果用户帐户的 Azure AD ProxyAddresses 属性中没有任何值，则改用 Azure AD UserPrincipalName 中的值。
 
 ![RMS 文档使用 - 步骤 2，使用许可证已返回到客户端](../media/AzRMS_documentconsumption2.png)
 

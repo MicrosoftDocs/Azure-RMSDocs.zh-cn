@@ -4,15 +4,16 @@ description: "如果选择具有 Azure 信息保护的 HYOK (AD RMS) 保护，�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: b9217412778309917a5d259d09ab52a7bf121b41
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 984bc844187a419cb73ab30527278d1762b70fcb
+ms.sourcegitcommit: 45053160d956587fcf45e021065e452a4c48aa4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 保护的自留密钥 (HYOK) 要求和限制
 
@@ -62,6 +63,8 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 - 配置 Azure RMS 保护的标签时，请勿使用“不要转发”选项。 还必须指示用户不要在 Outlook 中手动选择此选项。 
 
     如果由标签或由用户手动应用了“不要转发”选项，则可能由 AD RMS 部署（而不是预期的 Azure 权限管理服务）应用该选项。 在此方案中，外部共享对象将无法打开已应用此“不要转发”选项的电子邮件。
+
+- 如果用户在你使用 AD RMS (HYOK) 保护和 Azure RMS 保护时配置自定义权限，则文档或电子邮件始终受 Azure 权限管理保护。
 
 - 如果用户选择了应用 AD RMS 保护的 Outlook 中的标签，然后在发送电子邮件之前改变了主意，并选择了应用 Azure RMS 保护的标签，则新选择的标签将无法应用。 用户将看到以下错误消息：**Azure 信息保护无法应用此标签。你无权执行此操作。**
     

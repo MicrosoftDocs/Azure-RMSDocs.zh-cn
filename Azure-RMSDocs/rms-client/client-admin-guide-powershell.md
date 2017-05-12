@@ -4,7 +4,7 @@ description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/28/2017
+ms.date: 05/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 90b26239979b42eadb008b11a963e35a74698910
-ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
-translationtype: HT
+ms.openlocfilehash: 04e04f6e3243283b98df94143773e4aa81351f48
+ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -58,21 +59,27 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 当你的组织在使用 Azure 信息保护和 Azure 权限管理数据保护服务或仅使用 Azure 权限管理服务时，请阅读本节，然后才开始使用 PowerShell 命令。
 
 
-### <a name="prerequisites-for-aip-and-azure-rms"></a>AIP 和 Azure RMS 的先决条件
+### <a name="prerequisites"></a>先决条件
 
 除了安装 AzureInformationProtection 模块的先决条件之外，Azure 信息保护服务和 Azure 权限管理数据保护服务还有其他先决条件：
 
 1. 必须激活 Azure 权限管理服务。
 
-2. 若要使用自己的帐户从他人的文件中删除保护：必须为你的组织启用超级用户功能，而且必须将你的帐户配置为 Azure 权限管理的超级用户。
+2. 使用自己的帐户从他人的文件中删除保护： 
+    
+    - 必须为你的组织启用超级用户功能，而且必须将你的帐户配置为 Azure 权限管理的超级用户。
 
-3. 若要在无用户交互的情况下直接保护或取消保护文件：创建服务主体帐户，运行 Set-RMSServerAuthentication，并考虑将此服务主体作为 Azure 权限管理的超级用户。
+3. 在无用户交互的情况下直接保护或取消保护文件： 
+    
+    - 创建服务主体帐户，运行 Set-RMSServerAuthentication，并考虑将此服务主体作为 Azure 权限管理的超级用户。
 
-4. 对于北美以外的地区：编辑注册表，以便对服务进行身份验证。
+4. 北美以外的区域： 
+    
+    - 编辑注册表，以便对服务进行身份验证。
 
 #### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>先决条件 1：必须激活 Azure 权限管理服务
 
-无论是通过使用标签还是直接连接到 Azure 权限管理服务来应用数据保护，此先决条件都适用。 配置为应用数据保护。
+无论是通过使用标签还是直接连接到 Azure 权限管理服务来应用数据保护，此先决条件都适用。
 
 如果未激活 Azure 信息保护租户，请参阅[激活 Azure 权限管理](../deploy-use/activate-service.md)的说明。
 
@@ -80,7 +87,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 从他人的文件中删除保护的典型方案包括数据发现或数据恢复。 如果使用标签应用保护，则可以通过设置不应用保护的新标签或通过删除标签来删除保护。 但是，你更有可能通过直接连接到 Azure 权限管理服务来删除保护。
 
-用户必须具有从文件删除保护的 Rights Management 权限或者成为超级用户。 对于数据发现或数据恢复，通常会使用超级用户功能。 若要启用此功能并将你的帐户配置为超级用户，请参阅[为 Azure 管理权限和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)。
+用户必须具有从文件删除保护的权限管理使用权限或者成为超级用户。 对于数据发现或数据恢复，通常会使用超级用户功能。 若要启用此功能并将你的帐户配置为超级用户，请参阅[为 Azure 管理权限和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)。
 
 #### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>先决条件 3：在无用户交互的情况下保护或取消保护文件
 
@@ -132,9 +139,12 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 ##### <a name="to-get-the-appprincipalid-and-symmetric-key"></a>获取 AppPrincipalId 和对称密钥
 
-通过从 Azure Active Directory 的 MSOnline PowerShell 模块运行 `New-MsolServicePrincipal` cmdlet 来创建新的服务主体： 
+通过从 Azure Active Directory 的 MSOnline PowerShell 模块运行 `New-MsolServicePrincipal` cmdlet 来创建新的服务主体，然后使用以下说明。 
 
-1. 如果计算机上尚未安装此模块，请参阅[安装 Azure AD 模块](/powershell/azuread/#install-the-azure-ad-module)。
+> [!IMPORTANT]
+> 请勿使用较新的 Azure AD PowerShell cmdlet（即 New-AzureADServicePrincipal）来创建此服务主体。 Azure 权限管理服务不支持 New-AzureADServicePrincipal。 
+
+1. 如果计算机上尚未安装 MSOnline 模块，请运行 `Install-Module MSOnline`。
 
 2. 使用“以管理员身份运行”选项启动 Windows PowerShell。
 
@@ -187,7 +197,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
     Set-RMSServerAuthentication -Key zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=-AppPrincipalId b5e3f76a-b5c2-4c96-a594-a0807f65bba4-BposTenantId 23976bc6-dcd4-4173-9d96-dad1f48efd42
 
-如上一个命令所示，可以使用单个命令提供值，也可以键入 Set-RMSServerAuthentication，并在出现提示时逐个提供值。 命令完成后，你将看到“RmsServerAuthentication 设置为启用”，这意味着现在可以通过使用服务主体来保护和取消保护文件。
+如上一个命令所示，可以使用单个命令提供值，也可以键入 Set-RMSServerAuthentication，并在出现提示时逐个提供值。 命令完成后，将看到“**RmsServerAuthentication 已设置为启用**”，这意味着客户端现在以“服务器模式”运行。 此消息不能确认通过使用你提供的值成功完成身份验证，但可以确认已成功切换到服务器模式。
 
 考虑使此服务主体成为超级用户：要确保此服务主体始终可以取消保护其他人的文件，可以将其配置为超级用户。 通过与将标准用户帐户配置为超级用户相同的方式，使用相同的 Azure RMS cmdlet ([Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md))，但使用 AppPrincipalId 值指定 **-ServicePrincipalId** 参数。
 
@@ -301,7 +311,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 当你的组织仅使用 Active Directory Rights Management Services 时，请阅读本节，然后才开始使用 PowerShell 命令来保护或取消保护文件。
 
 
-### <a name="prerequisites-for-ad-rms"></a>AD RMS 的先决条件
+### <a name="prerequisites"></a>先决条件
 
 除了安装 AzureInformationProtection 模块的先决条件之外，你的帐户必须具有读取和执行权限才能访问 ServerCertification.asmx：
 

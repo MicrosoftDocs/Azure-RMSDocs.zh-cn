@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b1d643cdb28f46c03e9c0c2707d44f9ff9eedcb3
-ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
-translationtype: HT
+ms.openlocfilehash: cc11c4c9cfa9a6886180782c4ae88068bf280895
+ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -83,7 +84,7 @@ translationtype: HT
 
     - 在 Azure Active Directory 中已启用邮件的组
 
-    请参阅[准备 Azure 信息保护](prepare.md)。
+    请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
 
 - **如果你已使用过 Exchange Server 的信息权限管理 (IRM) 功能**（例如，传输规则和 Outlook Web Access）或者带 AD RMS 的 SharePoint Server：
 

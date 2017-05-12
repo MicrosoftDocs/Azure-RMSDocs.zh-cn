@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 1 阶段涉及从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 04/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: adb5ad1f599c5996044ad2fce0e1e5889d81c81b
-ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
-translationtype: HT
+ms.openlocfilehash: 587d24a005452874ca06b8fc179b25e91a7f0130
+ms.sourcegitcommit: ed954c84c9009d205638f0ad54fdbfc02ef5b92c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
 
@@ -86,7 +87,7 @@ translationtype: HT
 
 如果使用的是 Exchange 内部部署或 Exchange Online，可能之前已将 Exchange 与 AD RMS 部署集成过。 此步骤将对它们进行配置，以使用现有的 AD RMS 配置支持 Azure RMS 保护的内容。 
 
-请确保你具有[租户的 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)，以便在下列命令中将该值替换为 &lt;YourTenantURL&gt; 对每个 Exchange 组织运行一次以下各组命令。
+请确保你具有[租户的 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)，以便在下列命令中将该值替换为 &lt;YourTenantURL&gt; 
 
 **如果已将 Exchange Online 与 AD RMS 集成**：打开一个 Exchange Online PowerShell 会话，然后逐一或在脚本中运行以下 PowerShell 命令：
 
@@ -97,22 +98,9 @@ translationtype: HT
     Set-IRMConfiguration -internallicensingenabled $false
     Set-IRMConfiguration -internallicensingenabled $true 
 
-**如果已将 Exchange 内部部署与 AD RMS 集成**：逐一或在脚本中运行以下 PowerShell 命令： 
+**如果你已将 Exchange 本地环境与 AD RMS 集成**：对于每个 Exchange 组织，首先在每个 Exchange 服务器上添加注册表值，然后运行 PowerShell 命令： 
 
-    $irmConfig = Get-IRMConfiguration
-    $list = $irmConfig.LicensingLocation
-    $list += "<YourTenantURL>/_wmcs/licensing"
-    Set-IRMConfiguration -LicensingLocation $list
-    Set-IRMConfiguration -internallicensingenabled $false
-    Set-IRMConfiguration -RefreshServerCertificates
-    Set-IRMConfiguration -internallicensingenabled $true
-    IISReset
-
-此外，对于 Exchange 内部部署，在每个 Exchange 服务器上，必须添加注册表值。
-
-
-对于 Exchange 2013 和 Exchange 2016：
-
+Exchange 2013 和 Exchange 2016 的注册表值：
 
 **注册表路径：**
 
@@ -124,11 +112,9 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
 **数据：**https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
 
-
 ---
 
-对于 Exchange 2010：
-
+Exchange 2010 的注册表值：
 
 **注册表路径：**
 
@@ -140,12 +126,21 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
 **数据：**https://\<AD RMS Extranet 授权 URL>/_wmcs/licensing
 
-
 ---
 
+PowerShell 命令可以逐个运行，也可以在脚本中运行
 
-运行以下命令后，如果 Exchange 服务器已配置为支持 AD RMS 保护的内容，则在迁移后，它们还支持 Azure RMS 保护的内容。 它们将继续使用 AD RMS 支持受保护的内容，直到迁移中后面的某个步骤位置。
+    $irmConfig = Get-IRMConfiguration
+    $list = $irmConfig.LicensingLocation
+    $list += "<YourTenantURL>/_wmcs/licensing"
+    Set-IRMConfiguration -LicensingLocation $list
+    Set-IRMConfiguration -internallicensingenabled $false
+    Set-IRMConfiguration -RefreshServerCertificates
+    Set-IRMConfiguration -internallicensingenabled $true
+    IISReset
 
+
+为 Exchange Online 或 Exchange 本地环境运行这些命令后，如果 Exchange 部署已配置为支持受 AD RMS 保护的内容，则在迁移后，它们还支持受 Azure RMS 保护的内容。 在执行迁移过程中的下一步骤之前，Exchange 部署将继续使用 AD RMS 支持受保护的内容。
 
 
 ## <a name="next-steps"></a>后续步骤
