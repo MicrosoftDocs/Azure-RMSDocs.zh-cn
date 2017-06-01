@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6cb1cd8c70dff0c24125f875c91d23326538e56b
-ms.sourcegitcommit: d2bd2ddc68d9b5a095b57235b28a3b7e9307bd9b
-translationtype: HT
+ms.openlocfilehash: f3bdfee3a3dfa60c7cc81a553f3c889c30134a6a
+ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
@@ -34,36 +35,36 @@ translationtype: HT
 ## <a name="prerequisites-for-azure-rights-management-protection-with-windows-server-fci"></a>使用 Windows Server FCI 的 Azure Rights Management 保护的先决条件
 这些说明的先决条件：
 
--   在你将运行使用文件分类基础结构的文件资源管理器的每个文件服务器上：
-
-    -   你已安装文件服务器资源管理器作为文件服务角色的角色服务之一。
-
-    -   已标识包含要使用 Rights Management 保护的文件的本地文件夹。 例如，C:\FileShare。
-
-    -   你已安装 AzureInformationProtection 模块并已配置 Azure 权限管理的先决条件。 有关详细信息，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](client-admin-guide-powershell.md)。 具体而言，你使用以下值通过服务主体连接到 Azure 权限管理服务：**BposTenantId**、**AppPrincipalId** 和 **Symmetric key**。 
-
-    -   如果要更改特定文件扩展名保护（本机或常规）的默认级别，需已编辑注册表，如管理员指南中的[更改文件的默认保护级别](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)部分所述。
-
-    -   已使用配置的计算机设置（如果代理服务器需要）建立 Internet 连接。 例如： `netsh winhttp import proxy source=ie`
-
--   你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 服务保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此帐户配置的详细信息，请参阅[准备 Azure Rights Management 服务](../plan-design/prepare.md)。
-
--   已将 Rights Management 模板下载到文件服务器，并标识了可保护文件的模板 ID。 若要执行此操作，请使用 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) cmdlet。 此方案不支持部门模板，因此必须使用未配置作用域的模板，或作用域配置必须包含应用程序兼容性选项，以选中“如果应用程序不支持用户标识，则向所有用户显示此模板”复选框。
+-  在你将运行使用文件分类基础结构的文件资源管理器的每个文件服务器上：
+    
+    - 你已安装文件服务器资源管理器作为文件服务角色的角色服务之一。
+    
+    - 已标识包含要使用 Rights Management 保护的文件的本地文件夹。 例如，C:\FileShare。
+    
+    - 你已安装 AzureInformationProtection 模块并已配置 Azure 权限管理的先决条件。 有关详细信息，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](client-admin-guide-powershell.md)。 具体而言，你使用以下值通过服务主体连接到 Azure 权限管理服务：**BposTenantId**、**AppPrincipalId** 和 **Symmetric key**。 
+    
+    - 如果要更改特定文件扩展名保护（本机或常规）的默认级别，需已编辑注册表，如管理员指南中的[更改文件的默认保护级别](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)部分所述。
+    
+    - 已使用配置的计算机设置（如果代理服务器需要）建立 Internet 连接。 例如： `netsh winhttp import proxy source=ie`
+    
+- 你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 服务保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此要求的详细信息，请参阅 [准备用户和组以便使用 Azure 信息保护](../plan-design/prepare.md)。
+    
+- 已将 Rights Management 模板下载到文件服务器，并标识了可保护文件的模板 ID。 若要执行此操作，请使用 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) cmdlet。 此方案不支持部门模板，因此必须使用未配置作用域的模板，或作用域配置必须包含应用程序兼容性选项，以选中“如果应用程序不支持用户标识，则向所有用户显示此模板”复选框。
 
 ## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>为 Azure 权限管理保护配置文件服务器资源管理器 FCI 的说明
 按照这些说明通过使用 PowerShell 脚本作为自定义任务自动保护一个文件夹中的所有文件。 按此顺序执行这些过程：
 
-1.  保存 PowerShell 脚本
+1. 保存 PowerShell 脚本
 
-2.  为 Rights Management (RMS) 创建分类属性
+2. 为 Rights Management (RMS) 创建分类属性
 
-3.  创建分类规则 (Classify for RMS)
+3. 创建分类规则 (Classify for RMS)
 
-4.  配置分类计划
+4. 配置分类计划
 
-5.  创建自定义文件管理任务（使用 RMS 保护文件）
+5. 创建自定义文件管理任务（使用 RMS 保护文件）
 
-6.  通过手动运行规则和任务来测试配置
+6. 通过手动运行规则和任务来测试配置
 
 在这些说明结束时，所选文件夹中的所有文件都将使用 RMS 的自定义属性进行分类，然后这些文件将受 Rights Management 保护。 对于更复杂的配置（如有选择性地保护某些文件，而不保护其他文件），你可以然后创建或使用不同的分类属性和规则，用于仅保护这些文件的文件管理任务。
 
@@ -74,8 +75,8 @@ translationtype: HT
 1.  使用文件服务器资源管理器，复制用于 Azure RMS 保护的 [Windows PowerShell 脚本](fci-script.md)的内容。 粘贴该脚本的内容，并在你自己的计算机上将该文件命名为 **RMS-Protect-FCI.ps1**。
 
 2.  查看脚本，然后进行以下更改：
-
-    -   搜索以下字符串并将其替换为自己的 AppPrincipalId，将在 [Set-RMSServerAuthentication](/powershell/azureinformationprotection/vlatest/set-rmsserverauthentication) cmdlet 中使用此 AppPrincipalId 连接到 Azure 权限管理服务：
+    
+    - 搜索以下字符串并将其替换为自己的 AppPrincipalId，将在 [Set-RMSServerAuthentication](/powershell/azureinformationprotection/vlatest/set-rmsserverauthentication) cmdlet 中使用此 AppPrincipalId 连接到 Azure 权限管理服务：
 
         ```
         <enter your AppPrincipalId here>
