@@ -14,7 +14,8 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 43f083ffaf8aefd9b79b2cb64a6408e565818b9b
 ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>查看和使用受权限管理保护的文件
 
