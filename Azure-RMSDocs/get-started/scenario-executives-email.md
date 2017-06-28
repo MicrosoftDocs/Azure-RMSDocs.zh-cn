@@ -14,7 +14,8 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 3e4b1d6115d861e692197d9cb3fc850b7574e32e
 ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.translationtype: HT
+ms.contentlocale: zh-CN
 ---
 # <a name="scenario---executives-securely-exchange-privileged-information"></a>方案 - 高级管理人员安全地交换特权信息
 
@@ -107,7 +108,7 @@ translationtype: HT
 
 请注意，如果希望其他不是&lt;组织名称&gt;高级管理人员的人能够阅读和编辑电子邮件中所发送的信息，必须单独向这些人发送电子邮件。 或者，在电子邮件信息主题中的任何地方键入字母 **DNP**（“不保护”的缩写）以替代自动保护。
 
-将公司机密信息发送给其他&lt;组织名称&gt;高级管理人员时，请记得发送到其工作电子邮件地址（名称@&lt;emaildomain&gt;），而不要发送到私人电子邮件地址。
+将公司机密信息发送给其他 &lt;组织名称&gt; 高级管理人员时，请记得发送到其工作电子邮件地址（名称@&lt;emaildomain&gt;），而不要发送到私人电子邮件地址。
 
 **需要帮助吗？**
 
