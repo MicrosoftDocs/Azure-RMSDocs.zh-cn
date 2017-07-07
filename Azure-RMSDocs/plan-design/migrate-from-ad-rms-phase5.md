@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e07e9252837fe17c84ce17c3b1fc8e20734190fd
-ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
-translationtype: HT
+ms.openlocfilehash: f7678af1314fe7130d1084309a43d7561f7b9494
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 

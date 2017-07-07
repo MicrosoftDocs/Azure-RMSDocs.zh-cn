@@ -14,9 +14,11 @@ ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8f52c6b737603e8fd71b32c53991bb015f945abc
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 2a3d658e420c7306526aaf85aec61f3e13ef67af
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="development-environment-files"></a>开发环境文件
 

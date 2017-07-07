@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0637f2e52dbeb979e5351ceaee10122dad69309f
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 04d8e694aa33bcc00deca602737e0ab11eafb53d
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="scenario---send-a-company-confidential-email"></a>方案 - 发送公司机密电子邮件
 

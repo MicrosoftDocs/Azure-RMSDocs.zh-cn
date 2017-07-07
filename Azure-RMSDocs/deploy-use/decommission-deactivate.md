@@ -4,7 +4,7 @@ description: "如果你决定不再想要使用 Azure 信息保护中的此信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f577337cf7ce904a82ff23b165fdc7befe319092
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 6dc6a42cf6d4a5e7a2768c927a75522a265432f7
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="decommissioning-and-deactivating-azure-rights-management"></a>解除 Azure Rights Management 授权和停用 Azure Rights Management
 
@@ -31,7 +33,7 @@ translationtype: HT
 
 |如果这适用于你…|… 采取的措施：|
 |----------------------------|--------------|
-|你希望所有用户继续使用 Rights Management，但使用本地解决方案而不使用 Azure 信息保护    →|当现有用户使用经过此更改之后受保护的内容时，请使用 [Set-AadrmMigrationUrl](https://msdn.microsoft.com/library/azure/dn629429.aspx) cmdlet 将他们定向至本地部署。 用户将自动使用 AD RMS 安装以使用受保护内容。<br /><br />对于使用在此更改之前受保护的内容的用户，请将客户端重定向至本地部署，方法是使用 Office 2016 或 Office 2013 的 **LicensingRedirection** 注册表项（如在 RMS 客户端部署注释中的[服务发现部分](../rms-client/client-deployment-notes.md)所述）和 Office 2010 的 **LicenseServerRedirection** 注册表项（如 [Office 注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述）。|
+|你希望所有用户继续使用 Rights Management，但使用本地解决方案而不使用 Azure 信息保护    →|当现有用户使用经过此更改之后受保护的内容时，请使用 [Set-AadrmMigrationUrl](/powershell/module/aadrm/Set-AadrmMigrationUrl) cmdlet 将他们定向至本地部署。 用户将自动使用 AD RMS 安装以使用受保护内容。<br /><br />对于使用在此更改之前受保护的内容的用户，请将客户端重定向至本地部署，方法是使用 Office 2016 或 Office 2013 的 **LicensingRedirection** 注册表项（如在 RMS 客户端部署注释中的[服务发现部分](../rms-client/client-deployment-notes.md)所述）和 Office 2010 的 **LicenseServerRedirection** 注册表项（如 [Office 注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述）。|
 |你想要完全停止使用 Rights Management    →|赋予指定管理员[超级用户权限](../deploy-use/configure-super-users.md)并给予此管理员 [RMS 保护工具](http://www.microsoft.com/en-us/download/details.aspx?id=47256)。<br /><br />随后，此管理员可使用该工具批量解密之前由 Azure Rights Management 服务保护的文件夹中的文件，以便将文件还原为不受保护状态，因此可以不借助 Rights Management 技术（如 Azure 信息保护或 AD RMS）进行读取。 此工具可以与 Azure 信息保护中的 Azure Rights Management 服务和 AD RMS 共同使用，因此你可以选择在停用 Azure Rights Management 服务之前或之后解密文件，或者将两者结合起来。|
 |你无法标识所有由 Azure 信息保护中的 Azure Rights Management 服务保护的文件，或者你希望用户可以自动读取任何丢失的受保护文件    →|在所有客户端计算机上部署注册表设置，方法是使用 Office 2016 和 Office 2013 的 **LicensingRedirection** 注册表项（如在 RMS 客户端部署注释中的[服务发现部分](../rms-client/client-deployment-notes.md)中所述）和 Office 2010 的 **LicenseServerRedirection** 注册表项（如 [Office 注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述）。<br /><br />另外，部署其他注册表设置以防止用户保护新文件，方法是将 **DisableCreation** 设置为 **1**，如 [Office注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述。|
 |你需要针对任何丢失文件的受控的手动恢复服务    →|赋予数据恢复组中的指定用户 [超级用户权限](../deploy-use/configure-super-users.md)，并给予他们 [RMS 保护工具](http://www.microsoft.com/en-us/download/details.aspx?id=47256)，以便在标准用户提出请求时取消文件保护。<br /><br />在所有计算机上部署注册表设置以防止用户保护新文件，方法是将 **DisableCreation** 设置为 **1**（如 [Office 注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述）。|
@@ -49,7 +51,7 @@ translationtype: HT
 使用以下某个过程来停用[!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]。
 
 > [!TIP]
-> 也可以使用 Windows PowerShell cmdlet [Disable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629422.aspx) 来停用 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]。
+> 也可以使用 Windows PowerShell cmdlet [Disable-Aadrm](/powershell/module/aadrm/disable-aadrm) 来停用 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]。
 
 #### <a name="to-deactivate-rights-management-from-the-office-365-admin-center"></a>从 Office 365 管理中心停用权限管理
 

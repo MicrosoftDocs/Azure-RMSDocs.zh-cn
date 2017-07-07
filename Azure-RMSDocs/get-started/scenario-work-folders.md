@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5da891cb6f2220d252704e33486b6450f38375cf
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 1fa655cd91746d8e5c19f6a9eca0d93a3be8fb23
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="scenario---configure-work-folders-for-persistent-protection"></a>方案 - 配置工作文件夹的持续保护
 

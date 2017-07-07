@@ -14,9 +14,11 @@ ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d4f454fe597684c1b1c1e166ad6d6ab26dbe0deb
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: e36595f0921f19d609660824e80e46ab259882b7
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="linux-setup"></a>Linux 安装程序
 

@@ -1,6 +1,8 @@
 ---
 redirect_url: /information-protection/deploy-use/configure-policy-delete-reorder
-ms.openlocfilehash: 7862c301f0ba99dee05426f713ebd64df6e37c15
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 28565494044bd1145de5869ab0ab00d6851691b0
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---

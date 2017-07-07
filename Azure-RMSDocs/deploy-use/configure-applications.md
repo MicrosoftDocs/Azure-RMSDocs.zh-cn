@@ -13,8 +13,10 @@ ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: e3030aca9e7b93d93df583934b2a6ad2f0013903
-ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
-translationtype: HT
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>为 Azure Rights Management 配置应用程序
 
