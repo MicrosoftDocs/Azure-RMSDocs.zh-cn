@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 10cf9371-a61b-495f-9d42-898448806994
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 11aea973a156556e14d474deae04deb97ee1dc73
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 9fc5560381cc8ff3e3b8b1780c97ab88f3dda44a
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
