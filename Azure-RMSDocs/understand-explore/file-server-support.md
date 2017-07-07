@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6fc25683bde3bc640f1575d700ac2f9378cbe478
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 909ff4f7c96af65172604bb903173dd38d95dcf9
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="file-servers-that-run-windows-server-and-use-file-classification-infrastructure-fci"></a>运行 Windows Server 和使用文件分类基础结构 (FCI) 的文件服务器
 

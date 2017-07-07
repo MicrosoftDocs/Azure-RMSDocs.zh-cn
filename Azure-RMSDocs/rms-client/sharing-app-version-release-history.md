@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cee881a77b695fe38d0f88c05b0699d3d9d14955
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 811c89ef6922f6939e7a7d13ed707c6ebe6aafd6
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="rights-management-sharing-application-version-release-history"></a>权限管理共享应用程序：版本发行历史记录
 

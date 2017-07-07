@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fe434fd6d80764b5382ff807dbf87582f07713b5
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: a7d6c5775f9f3ddedd2177054731b26443a0d2d9
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure 信息保护的合规性和支持信息
 

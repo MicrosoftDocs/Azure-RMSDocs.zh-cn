@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6559191b86ac8b2f0ceb8c6998f02aa8cd0f2735
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 9c954f750c6f49d3db1bf6383efa2805f291682c
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="download-and-install-the-rights-management-sharing-application"></a>下载和安装 Rights Management 共享应用程序
 

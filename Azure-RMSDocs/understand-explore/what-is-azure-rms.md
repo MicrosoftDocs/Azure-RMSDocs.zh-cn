@@ -13,8 +13,10 @@ ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 61b549c38e3e86bc686747adb5f9ebfd1851f446
-ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
-translationtype: HT
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
 

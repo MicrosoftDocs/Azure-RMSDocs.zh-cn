@@ -13,9 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c355f3d7f21ece6a63c2b43982fcec8f668cd38a
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 3290b9436f75c2d0d37c401dd2e0be11bcf2d554
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>更改受 Rights Management 保护的文件的权限
 

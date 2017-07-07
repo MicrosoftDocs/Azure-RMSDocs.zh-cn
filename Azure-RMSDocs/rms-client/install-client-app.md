@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f47cad9d613517413ab5f3a61d24a4c8b9f79e15
-ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
-translationtype: HT
+ms.openlocfilehash: 792bb4b2554851eb4a9531e7ed9333c8bebc709a
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="download-and-install-the-azure-information-protection-client"></a>下载并安装 Azure 信息保护客户端
 
