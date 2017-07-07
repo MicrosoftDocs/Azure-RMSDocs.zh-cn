@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 113a3718bb2b7cd505b43e5f2c7146e88dea1d05
-ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
-translationtype: HT
+ms.openlocfilehash: e2f8f92595b21d122dfe76918a604ce7ff21b7ef
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 

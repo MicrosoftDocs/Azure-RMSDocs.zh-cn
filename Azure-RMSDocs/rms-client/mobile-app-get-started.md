@@ -13,9 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 96ab267f22abf31d39a77dcc5450b28a583096e8
-ms.sourcegitcommit: 81b5c111627246a4094ef87da17d260f66ae985c
-translationtype: HT
+ms.openlocfilehash: 351074937c45866f882d51b19e3cd3e4792ae649
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门
 

@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3dd54a7bddbb5d51baf9bb0f2f2f720a7921b939
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 190d8ac29bec0fc3825eb9fe099e06bd16e2112f
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>权限管理共享应用程序的的对话框选项
 

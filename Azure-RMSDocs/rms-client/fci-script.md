@@ -4,7 +4,7 @@ description: "要复制和编辑的示例脚本，如“使用 Windows Server �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/22/2017
+ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 51d8002dc4dc2a59c38f7eff3cba51fd6b2ddf7d
-ms.sourcegitcommit: 047e6dfe8f44fd13585e902df5ea871b5d0adccb
-translationtype: HT
+ms.openlocfilehash: dc43fa78b7c13dc1b4891690e0e29bfe4b0cc07c
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）
 
@@ -56,7 +58,7 @@ param(
 ) 
 
 # script information
-[String] $Script:Version = 'version 3.2' 
+[String] $Script:Version = 'version 3.3' 
 [String] $Script:Name = "RMS-Protect-FCI.ps1"
 
 #global working variables
@@ -95,11 +97,11 @@ function Protect-File ($ffile, $ftemplateId, $fownermail) {
     [bool] $returnValue = $false
     try {
         If ($OwnerMail -eq $null -or $OwnerMail -eq "") {
-            $protectReturn = Protect-RMSFile -File $ffile -InPlace -TemplateID $ftemplateId
+            $protectReturn = Protect-RMSFile -File $ffile -InPlace -DoNotPersistEncryptionKey All -TemplateID $ftemplateId
             $returnValue = $true
             Write-Host ( "Information: " + "Protected File: $ffile with Template: $ftemplateId")
         } else {
-            $protectReturn = Protect-RMSFile -File $ffile -InPlace -TemplateID $ftemplateId -OwnerEmail $fownermail
+            $protectReturn = Protect-RMSFile -File $ffile -InPlace -DoNotPersistEncryptionKey All -TemplateID $ftemplateId -OwnerEmail $fownermail
             $returnValue = $true
             Write-Host ( "Information: " + "Protected File: $ffile with Template: $ftemplateId, set Owner: $fownermail")
         }
@@ -130,17 +132,17 @@ $Script:isScriptProcess = $True
 
 # Validate Azure RMS connection by checking the module and then connection
 if ($Script:isScriptProcess) {
-         if (Check-Module -Module AzureInformationProtection){
+        if (Check-Module -Module AzureInformationProtection){
         $Script:isScriptProcess = $True
     } else {
 
-        Write-Host ("The AzureInformationProtection module is not loaded") -foregroundcolor "yellow" -backgroundcolor "black"            
+        Write-Host ("The AzureInformationProtection module is not loaded") -foregroundcolor "yellow" -backgroundcolor "black"           
         $Script:isScriptProcess = $False
     }
 }
 
 if ($Script:isScriptProcess) {
-    #Write-Host ("Try to connect to Azure RMS with AppId: $AppPrincipalId and BPOSID: $BposTenantId" )    
+    #Write-Host ("Try to connect to Azure RMS with AppId: $AppPrincipalId and BPOSID: $BposTenantId" )  
     if (Set-RMSConnection $AppPrincipalId $SymmetricKey $BposTenantId) {
         Write-Host ("Connected to Azure RMS")
 

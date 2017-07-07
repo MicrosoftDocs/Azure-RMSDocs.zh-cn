@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6d7aa4eb4a98db298f6a86b650b8c91a79bdc9b3
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 55254496b23e49fe7e2dbd19721a824739004b21
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="protection-only-mode-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的仅保护模式
 

@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5d7b07de1612c55a39a3552e47a0053aa6127a0e
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 3c96d8718f42dcedebba03354c149bb2b9667d66
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Windows 和移动平台的 RMS 共享应用程序
 
