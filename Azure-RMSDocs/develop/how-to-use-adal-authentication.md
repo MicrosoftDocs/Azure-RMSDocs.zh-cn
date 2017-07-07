@@ -14,9 +14,11 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1ba0a2baf601c3526ab4ba515b82512561778a1d
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 9144ee7c9eef7f8b573feafd7372fa339a426e03
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="how-to-use-adal-authentication"></a>操作说明：使用 ADAL 身份验证
 

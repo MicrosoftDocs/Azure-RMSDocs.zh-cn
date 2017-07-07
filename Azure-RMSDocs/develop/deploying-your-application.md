@@ -14,9 +14,11 @@ ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 67ec662fb54ab9fdcd06bebd01df1a228afe5fb1
-ms.sourcegitcommit: 164c9ac31beb4811bbcd4527613a5d3b57b8ac6c
-translationtype: HT
+ms.openlocfilehash: 6d098ee566d426108853d9375b4845a5e92299b5
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="deploy-into-production"></a>部署到生产
 

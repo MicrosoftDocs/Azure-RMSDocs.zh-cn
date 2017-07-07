@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 51a689248834f2578655d62752c19b7a387068a5
-ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
-translationtype: HT
+ms.openlocfilehash: 4157148c0109317851ed2f128a5ae74603d82af2
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 

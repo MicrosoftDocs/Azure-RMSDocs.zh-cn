@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4c04c832201fa6b1a76e5e3fe190c7cf022bee5d
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: af5541ab5dcec7224d1048121460b58b1ca13c48
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>权限管理共享应用程序：客户端安装和配置
 

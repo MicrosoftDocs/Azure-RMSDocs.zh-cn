@@ -14,9 +14,11 @@ ms.assetid: E388B16C-ECDA-4696-A040-D457D3C96766
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8ed5897accf7bf4db08a5fc699af3f0f850740a2
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 8862c1be4f084ee1495126b73f4e2adbdeb47acc
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="understanding-usage-restrictions"></a>了解使用限制
 

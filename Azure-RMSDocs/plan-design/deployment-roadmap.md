@@ -12,10 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dcee393a46830b293bde84bc019655ff95d098ad
-ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.openlocfilehash: 52a99ee84f00588aed2ad332e3f46e3f1f9ae97c
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 

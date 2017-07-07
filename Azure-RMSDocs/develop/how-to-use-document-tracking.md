@@ -14,9 +14,11 @@ ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: bae83de7d91d30ce39d2edb1311fac55ca2dafad
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 798d8e5ca7aa22b236a42c8c4e344e6b735c4b75
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="how-to-use-document-tracking"></a>如何：使用文档跟踪
 

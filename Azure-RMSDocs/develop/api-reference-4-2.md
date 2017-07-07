@@ -14,9 +14,11 @@ ms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 0238f4784b7d8be55b39dd4ab2653962753d531f
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: b1547df59050e496242706cc9a789ae46ffccd20
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="api-sdk-42-reference"></a>API SDK 4.2 参考
 

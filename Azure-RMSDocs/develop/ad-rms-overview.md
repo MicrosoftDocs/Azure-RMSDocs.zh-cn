@@ -14,9 +14,11 @@ ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 702bc9049b8027aecdfaf897e184888f010bc0e4
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 03eaa46ca3f16c0a47411ad2f86cb24d27da4ad0
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="overview"></a>概述
 

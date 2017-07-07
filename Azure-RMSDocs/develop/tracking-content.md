@@ -14,11 +14,11 @@ ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-experimental: True
-experiment_id: priyamo-test-20160729
-ms.openlocfilehash: 9ed32d58df81324bbab02aec03f3038dad3925fa
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 6cc1b9d6e1dbc27ca178965bd9bfffd884d0ec9a
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="how-to-enable-document-tracking-and-revocation"></a>操作说明：启用文档跟踪和撤销
 

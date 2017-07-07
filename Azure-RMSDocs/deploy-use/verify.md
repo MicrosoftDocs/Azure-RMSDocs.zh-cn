@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2ab4bfa8d27b44bb4d9cf9f3fecc86f281f0da2a
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 50da38ee5e852d72458845a97ebe005f4949d265
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="verifying-the-azure-rights-management-service"></a>验证 Azure Rights Management 服务
 

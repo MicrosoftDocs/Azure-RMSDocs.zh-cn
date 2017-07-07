@@ -12,10 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a5a40277c95e376042fc77b7ba39bfc66a948fde
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 3d9f2e20abe0a4abce3220d53d6373d9c2baf8ee
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>监视 Azure Rights Management 连接器
 
@@ -82,7 +83,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 **已更新授权帐户列表。**
 
-当 RMS 连接器下载了有权使用 RMS 连接器的帐户的最新列表（现有帐户及任何更改）时，将记录此事件。 如果 RMS 连接器可以与 Azure Rights Management 服务通信，则此列表每&15; 分钟下载一次。
+当 RMS 连接器下载了有权使用 RMS 连接器的帐户的最新列表（现有帐户及任何更改）时，将记录此事件。 如果 RMS 连接器可以与 Azure Rights Management 服务通信，则此列表每 15 分钟下载一次。
 
 ----
 

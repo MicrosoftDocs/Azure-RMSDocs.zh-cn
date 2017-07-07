@@ -4,7 +4,7 @@ description: "有关如何使用 Azure Rights Management (Azure RMS) 的使用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/24/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fd4fa09da3bffe9abdec5754185659393fdbf531
-ms.sourcegitcommit: 96410e06941ec414032d72cf96491884dc11aba0
-translationtype: HT
+ms.openlocfilehash: 92b64867486f64dd5920c578faeb411104f00ebd
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>记录和分析 Azure Rights Management 服务的使用情况
 
@@ -39,7 +41,7 @@ translationtype: HT
     如果遇到信息泄露，安全人员很可能向你询问最近谁访问了特定文档，以及可疑人员最近访问了哪些信息。 使用该日志记录时可以回答这些问题，因为使用受保护内容的用户始终必须获取 Rights Management 许可证才能打开受 Azure Rights Management 服务保护的文档和图片，即便这些文件已通过电子邮件移动或复制到 U 盘/其他存储设备。 这意味着通过 Azure Rights Management 服务保护数据时，能够使用这些日志作为确定性信息源进行取证分析。
 
 > [!NOTE]
-> 如果只希望记录 Azure Rights Management 服务的管理任务，而不希望跟踪用户如何使用 Rights Management 服务，则可使用适用于 Azure Rights Management 的 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet。
+> 如果只希望记录 Azure Rights Management 服务的管理任务，而不希望跟踪用户如何使用 Rights Management 服务，则可使用适用于 Azure Rights Management 的 [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) Windows PowerShell cmdlet。
 > 
 > 你还可以使用 Azure 经典门户获取高级使用情况报告，包括“RMS 摘要”、“RMS 活动用户”、“RMS 设备平台”和“RMS 应用程序使用情况”。 若要从 Azure 经典门户访问这些报告，请单击“Active Directory”，选择并打开一个目录，然后单击“报告”。
 
@@ -213,23 +215,23 @@ Azure Rights Management 服务有很多请求类型，但下表列出了其中�
 
 
 ## <a name="windows-powershell-reference"></a>Windows PowerShell 参考
-从 2016 年 2 月起，Azure Rights Management 使用日志记录需要的唯一 Windows PowerShell cmdlet 为 [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx)。 
+从 2016 年 2 月起，Azure Rights Management 使用日志记录需要的唯一 Windows PowerShell cmdlet 为 [Get-AadrmUserLog](/powershell/module/aadrm/get-aadrmuserlog)。 
 
 在此更改之前，Azure Rights Management 使用日志需要以下 cmdlet（现已弃用）：  
 
--   [Disable-AadrmUsageLogFeature](https://msdn.microsoft.com/library/azure/dn629404.aspx)
+-   [Disable-AadrmUsageLogFeature](/powershell/module/aadrm/disable-aadrmusagelogfeature)
 
--   [Enable-AadrmUsageLogFeature](https://msdn.microsoft.com/library/azure/dn629421.aspx)
+-   [Enable-AadrmUsageLogFeature](/powershell/module/aadrm/enable-aadrmusagelogfeature)
 
--   [Get-AadrmUsageLog](https://msdn.microsoft.com/library/azure/dn629401.aspx)
+-   [Get-AadrmUsageLog](/powershell/module/aadrm/get-aadrmusagelog)
 
--   [Get-AadrmUsageLogFeature](https://msdn.microsoft.com/library/azure/dn629425.aspx)
+-   [Get-AadrmUsageLogFeature](/powershell/module/aadrm/get-aadrmusagelogfeature)
 
--   [Get-AadrmUsageLogLastCounterValue](https://msdn.microsoft.com/library/azure/dn629423.aspx)
+-   [Get-AadrmUsageLogLastCounterValue](/powershell/module/aadrm/get-aadrmusageloglastcountervalue)
 
--   [Get-AadrmUsageLogStorageAccount](https://msdn.microsoft.com/library/azure/dn629419.aspx)
+-   [Get-AadrmUsageLogStorageAccount](/powershell/module/aadrm/get-aadrmusagelogstorageaccount)
 
--   [Set-AadrmUsageLogStorageAccount](https://msdn.microsoft.com/library/azure/dn629426.aspx)
+-   [Set-AadrmUsageLogStorageAccount](/powershell/module/aadrm/set-aadrmusagelogstorageaccount)
 
 如果在 Azure Rights Management 日志记录更改之前在自己的 Azure 存储空间中保存了日志，可以像以前一样使用这些较旧的 cmdlet（如使用 Get-AadrmUsageLog 和Get-AadrmUsageLogLastCounterValue）下载这些日志。 但所有新的使用日志将写入到新的 Azure RMS 存储空间，并且必须使用 Get-AadrmUserLog 下载。
 

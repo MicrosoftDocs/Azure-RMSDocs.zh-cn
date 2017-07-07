@@ -14,9 +14,11 @@ ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: fa703300c8e751835ec62fdceb49d84c6b57548f
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: a1f4fa03ed6e8a96289ddbe10d0fffa7a1676674
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="server"></a>Server
 

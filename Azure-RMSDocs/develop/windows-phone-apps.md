@@ -14,9 +14,11 @@ ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 96dfeb54c866facec73facee7c8356059b107a2f
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 1ec4ccc3c20b821023d32cec33147660feb575f8
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="windows-phone-setup"></a>Windows Phone 安装程序
 

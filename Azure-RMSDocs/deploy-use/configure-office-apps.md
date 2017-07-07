@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 37521bad9e6e1cfb9db9741ba3c8495460a20da6
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 430f390bef496b5e297ae25a03531da42954121d
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="office-apps-configuration-for-clients"></a>Office 应用；客户端配置
 

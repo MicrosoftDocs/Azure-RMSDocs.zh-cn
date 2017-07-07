@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 16e2137dead237e59ed1d4db9e88a2a29f9595a9
-ms.sourcegitcommit: bf103c02966357eccad0a4912851ceae6937c7b3
-translationtype: HT
+ms.openlocfilehash: 3268b175b2e029c55ec5488a8c4ace8ad92fcb18
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 

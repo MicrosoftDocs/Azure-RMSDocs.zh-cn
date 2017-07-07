@@ -13,9 +13,10 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: ed06deca76ed1241f0c9b3f104fd922263c5a6cd
-ms.sourcegitcommit: dd5a63bfee309c8b68ee9f8cd071a574ab0f6b4a
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 

@@ -13,8 +13,10 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 04073023841e95abacc0258e061f4742069fbfb0
-ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
-translationtype: HT
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>部署 Azure Rights Management 连接器
 

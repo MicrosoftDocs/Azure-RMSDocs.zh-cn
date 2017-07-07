@@ -14,9 +14,11 @@ ms.assetid: 5A9F04FD-0FCD-482F-8671-36FE93B783B0
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: cfdf21be0d01eb3e362f9d1e326e7ae9cd7cc8a9
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: a6953bb33c5cff99b7ac034a035a85363c3b4065
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="developer-guidance"></a>开发人员指南
 

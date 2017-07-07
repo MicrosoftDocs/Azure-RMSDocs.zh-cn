@@ -10,9 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: 56ecd7b99f81a3b2399e166c1ca6a50797e65fa3
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
-translationtype: HT
+ms.openlocfilehash: 9a21c10404582000a55ee0cea554aad9b5a552b3
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>步骤 4：查看分类、设置标签和保护的实际操作 
 

@@ -14,10 +14,11 @@ ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 3f08823903b9da03c10e27c82d3edeb3067efd8e
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: d04f1055ec004402b43e9d4e1607e2d7e27a9c5a
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>操作说明：安装和配置 RMS 服务器并用其进行测试
 

@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dd1ecd8bd232e3079ce92eab07288ede52d3de72
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 2e50dc9d53550f35f5c589cdb1b384e0abf585e0
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="rapid-deployment-guide-for-azure-rights-management"></a>Azure Rights Management 快速部署指南
 

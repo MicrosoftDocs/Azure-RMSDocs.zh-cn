@@ -14,9 +14,11 @@ ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: cabf4b23206c3c22270d11dd5b740be4ba005f02
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: c0e4687439689de7d2f53b122454414777ed019d
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="rights-management-services-sdk-21"></a>Rights Management Services SDK 2.1
 

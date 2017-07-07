@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3451a32476e8c85f98ca8df005e633481caa2256
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 587c4f188603f49605191a15d71180441f16e3c9
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>有关 Azure 信息保护文档的评论的内部规则
 

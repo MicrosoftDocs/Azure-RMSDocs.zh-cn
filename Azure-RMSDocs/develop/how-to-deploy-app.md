@@ -14,9 +14,11 @@ ms.assetid: 34dc6d6f-cfe4-4848-9b11-8d90c4b38ef7
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 7f117cd95bb10cb3729211c73aa03ae589b2b03d
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 3b7ff758abeb3f1ddc1ae82349233e437d05dacc
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="deploying-a-service-application-into-a-different-tenant"></a>将服务应用程序部署到不同租户
 

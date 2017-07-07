@@ -14,9 +14,11 @@ ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d7365dc91139d9edc38a52ba66319946470873d5
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 5d4f38e90747f67209e66def1a7b2cb03bab7e4f
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="how-to-add-explicit-owner-rights"></a>操作说明：添加显式所有者权限
 

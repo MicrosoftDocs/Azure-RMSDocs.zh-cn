@@ -4,7 +4,7 @@ description: "此信息可帮助安装并配置 Azure Rights Management (RMS) �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/19/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 21eab2a693147b4e6562a8bcdff8cece7d706432
-ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
-translationtype: HT
+ms.openlocfilehash: d03cb1ff146839e4de805b66f5b2e6a3df851430
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
@@ -66,18 +68,18 @@ translationtype: HT
 -   **Azure Rights Management 连接器管理员**：Azure Active Directory 中已被授权为组织安装和管理 RMS 连接器的帐户。
 
     > [!NOTE]
-    > 通过使用 Azure RMS [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/dn629417.aspx) cmdlet，向帐户分配 Azure Rights Management 全局管理员角色和 Azure Rights Management 连接器管理员角色。
+    > 通过使用 Azure RMS [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) cmdlet，向帐户分配 Azure Rights Management 全局管理员角色和 Azure Rights Management 连接器管理员角色。
     > 
     > 若要使用最小特权运行 RMS 连接器，请为此创建一个专用帐户，然后通过执行以下操作为帐户分配 Azure RMS 连接器管理员角色：
     >
     > 1.  下载并安装适用于 Rights Management 的 Windows PowerShell（如果你尚未这样做）。 有关详细信息，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
     >
-    >     使用“以管理员身份运行”命令启动 Windows PowerShell，并使用 [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) 命令连接到 Azure RMS 服务：
+    >     使用“以管理员身份运行”命令启动 Windows PowerShell，并使用 [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice) 命令连接到 Azure RMS 服务：
     >
     >     ```
     >     Connect-AadrmService                   //provide Office 365 tenant administrator or Azure RMS global administrator credentials
     >     ```
-    > 2.  然后运行 [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/azure/dn629417.aspx) 命令，仅使用以下参数之一：
+    > 2.  然后运行 [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) 命令，仅使用以下参数之一：
     >
     >     ```
     >     Add-AadrmRoleBasedAdministrator -EmailAddress <email address> -Role "ConnectorAdministrator"

@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1bbd2b6c8bc37862106661531dbf0e07c7fb179a
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 8b581f1de58c7a76a9395c51a62aef7ce3271e2f
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="remove-archive-templates"></a>删除（存档）模板
 
