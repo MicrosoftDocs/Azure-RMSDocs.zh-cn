@@ -10,9 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: ba10ce73d5bd9cbfa65d373e247b440150be826b
-ms.sourcegitcommit: 9f542a5599ca6332b4b69ebbbbfb9ffdf5464731
-translationtype: HT
+ms.openlocfilehash: 0edde6cb304a4ad6b34d53ee798a5fbf7ede3b48
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="step-3-install-the-client"></a>步骤 3：安装客户端
 

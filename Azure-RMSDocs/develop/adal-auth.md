@@ -14,9 +14,11 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 27674aac7962c7a2f79fda8ccd6f90c366574b9b
-ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
-translationtype: HT
+ms.openlocfilehash: 32e85caec907cedfb45ade1156cb90ccdd68f96d
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>配置应用以进行 ADAL 身份验证
 

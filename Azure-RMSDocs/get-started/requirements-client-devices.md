@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 644e5566a5b2305a12139d7d2da666eec0ef8c71
-ms.sourcegitcommit: 1f65f71f742063e2bebcac88f72180d3aa4318a4
-translationtype: HT
+ms.openlocfilehash: bba25884f9cb6005e02237e0d79f142c8f1b6c5f
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的客户端设备
 

@@ -14,9 +14,11 @@ ms.assetid: 2BD4F55D-BA88-4516-86FB-E2E6535D1690
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 344c4b94b5b66d672df7be1ac4304d05e33ada3e
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 4856bfcdf0daa5e77e03d24fdb321d7f88129ae3
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="linux-api-reference"></a>Linux API 参考
 

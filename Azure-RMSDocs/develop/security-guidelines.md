@@ -12,9 +12,11 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: e940dfd1d3a053c14ea1adb6e72f4cde7d26bba0
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 37b91a1b3e0a25f6014198998609d33dcc0979ae
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure 信息保护的安全最佳实践
 
@@ -51,8 +53,8 @@ Microsoft 不会测试或审查与满足最低标准相关的测试结果；完�
 
 |标准级别|    描述|
 |---|---|
-|最低标准|    必须先确定处理 AIP 受保护信息的应用程序满足最低标准，才能使用从 Microsoft 收到的生产证书对该应用程序进行签名。 通常情况下，合作伙伴只有在自己的内部测试已验证应用程序满足此最低标准后最终发行软件时，才会使用生产层次结构证书。 满足最低标准并不是，并且也不应被认为是 Microsoft 提供的安全保证。 Microsoft 不测试或审查与满足最低标准相关的测试结果；完全由合作伙伴确保满足最低标准。|
-|建议的标准|    建议的准则既描绘了改进应用程序安全性的途径，又指出了在实现更多安全条件的同时 AIP 可能会如何发展。 供应商可能会尝试通过构建此更高级别的安全准则来区分其应用程序。|
+|最低标准|  必须先确定处理 AIP 受保护信息的应用程序满足最低标准，才能使用从 Microsoft 收到的生产证书对该应用程序进行签名。 通常情况下，合作伙伴只有在自己的内部测试已验证应用程序满足此最低标准后最终发行软件时，才会使用生产层次结构证书。 满足最低标准并不是，并且也不应被认为是 Microsoft 提供的安全保证。 Microsoft 不测试或审查与满足最低标准相关的测试结果；完全由合作伙伴确保满足最低标准。|
+|建议的标准|  建议的准则既描绘了改进应用程序安全性的途径，又指出了在实现更多安全条件的同时 AIP 可能会如何发展。 供应商可能会尝试通过构建此更高级别的安全准则来区分其应用程序。|
 |首选标准|    这是当前定义的最高安全类别。 开发被标记为高度安全的应用程序的供应商应以此标准为目标。 遵循此标准的应用程序可能最不容易受到攻击。|
 
 
@@ -66,7 +68,7 @@ AIP 不支持在运行时修改代码或修改导入地址表 (IAT)。 会为加
 
 ### <a name="minimum-standard"></a>最低标准
 - 无法在执行期间修改应用程序进程中的导入地址表。 - 应用程序指定许多在运行时通过使用地址表调用的函数，无法在运行时期间或之后更改这些函数。 除此之外，这意味着无法对通过使用生产证书签名的应用程序执行代码分析。
-- 无法从清单中指定的任何 DLL 内调用 **DebugBreak** 函数。
+- 无法从清单中指定的任何 DLL 内调用 **DebugBreak**  函数。
 - 无法调用具有 **DONT_RESOLVE_DLL_REFERENCES** 标志设置的 **LoadLibrary**。 此标志会指示加载器跳过绑定到导入的模块，因此修改了导入地址表。
 - 无法通过对 /DELAYLOAD 链接器开关执行运行时或后续更改来更改延迟加载。
 - 无法通过提供自己拥有的 Delayimp.lib helper 函数版本来更改延迟加载。
@@ -90,6 +92,6 @@ API 允许用户解密或不解密信息；该信息没有任何固有保护。 
 
 - 需要将由应用程序实现的新权限中包含的内容所抽象化的任何权限映射到新的术语。 例如，名为 MANAGER 的新权限可能将 PRINT、COPY 和 EDIT 权限包括为抽象权限。
 建议标准（暂时没有）。
-首选标准...（暂时没有）。
+首选标准（暂时没有）。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
