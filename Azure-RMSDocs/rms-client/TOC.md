@@ -8,6 +8,7 @@
 ### [Azure 信息保护客户端](aip-client.md)
 #### [Azure 信息保护客户端：版本发行历史记录](client-version-release-history.md)
 #### [Azure 信息保护客户端管理员指南](client-admin-guide.md)
+##### [自定义](client-admin-guide-customizations.md)
 ##### [客户端文件和使用情况日志记录](client-admin-guide-files-and-logging.md)
 ##### [文档跟踪、](client-admin-guide-document-tracking.md)
 ##### [支持的文件类型](client-admin-guide-file-types.md)
