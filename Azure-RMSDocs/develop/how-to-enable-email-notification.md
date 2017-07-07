@@ -14,9 +14,11 @@ ms.assetid: 5FB975EE-E4E5-4089-B8E1-CAFD5B9B34EC
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 7bb4a4f5e79b87a9111641fb414004c80b1f8533
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 1b9428a79b5c9df76d2b5f7ec1e358be09f0bf7f
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="how-to-enable-email-notification"></a>操作说明：启用电子邮件通知
 

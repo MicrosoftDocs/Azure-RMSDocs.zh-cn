@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f329ce49-e044-4c11-821d-5496d83c1bb3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: faa7a67bfbd8410300081e762dd812a91194091b
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: f9549ecc1a1140208dc2d6161424a589d2cb6cba
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="copy-a-template"></a>复制模板
 

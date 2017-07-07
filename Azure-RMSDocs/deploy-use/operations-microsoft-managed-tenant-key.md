@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0b4e9cd5350f942203129979b05bc1344fb37aa5
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: caacc4174ddb63e9c9091c0df294b93cf947a7c4
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 

@@ -14,9 +14,11 @@ ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 0e923d1bb3d4fd8b9b84f065b9dd32ddd041f7ba
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: a053eb0d117165b02e6dfda3246d416127a9be85
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="terms"></a>条款
 

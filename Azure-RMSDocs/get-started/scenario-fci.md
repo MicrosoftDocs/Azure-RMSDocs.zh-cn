@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7c7d75c5d8af7e3a723068a719e6850b44a06585
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: e9cd548d2f2335753349d6a0248c81c0d76c6c97
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="scenario---protect-files-on-a-file-server-share"></a>方案 - 保护文件服务器共享上的文件
 

@@ -14,9 +14,11 @@ ms.assetid: 296FC4C0-99C6-4997-AD97-5CEE01221B1A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 0c00ecdac59ef6c1b1a90856b44a79f35fef758a
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 6d387347b9baa0ba846853070ad5d1c4ca67ab32
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="setup-developer-environment"></a>设置开发人员环境
 

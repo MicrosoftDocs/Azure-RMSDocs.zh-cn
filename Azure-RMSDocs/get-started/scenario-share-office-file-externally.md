@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 89c563ebcf62dc80cbda15048780adf5e414e70b
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
-translationtype: HT
+ms.openlocfilehash: bf7fac8cf06281fd75376fc3d5d2fa4fe17a6a33
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="scenario---share-an-office-file-with-users-in-another-organization"></a>方案 - 与另一组织中的用户共享 Office 文件
 

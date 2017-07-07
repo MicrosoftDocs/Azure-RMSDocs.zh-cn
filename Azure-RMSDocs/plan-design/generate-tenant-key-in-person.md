@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3281e45e-cf69-4dc5-946b-3029851d3152
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 32719d7334c4b082181588434b24f2f7cd9d4a82
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: e8d9a8b3028ebff85a40b646a8dc1389c98492be
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="generate-and-transfer-your-tenant-key--in-person-retired-content"></a>亲自生成和传送你的租户密钥：RETIRED CONTENT
 

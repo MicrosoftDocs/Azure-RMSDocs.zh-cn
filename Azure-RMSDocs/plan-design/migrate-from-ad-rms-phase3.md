@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 55dfd0ef99e1b220c65c9a8be994de161e98d8ec
-ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
-translationtype: HT
+ms.openlocfilehash: 27dc3de51c72d0142ac3dbdbd97c02c0241e902d
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 

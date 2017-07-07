@@ -1,6 +1,8 @@
 ---
 redirect_url: /information-protection/get-started/infoprotect-tutorial-step3
-ms.openlocfilehash: c6085f865b0a845a994e3c8f02e4bedcc71d9ff6
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 4b53efd01da94d129bb50fc5a9587e17df04e6a1
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---

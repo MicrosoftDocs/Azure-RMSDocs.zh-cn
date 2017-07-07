@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8a0ca5fa2d7aa6f1f8f8b5ccab0a3a3bd122b50c
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
-translationtype: HT
+ms.openlocfilehash: ff3daa9212a7d5a6be26d92e423b19a38e993d9f
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="scenario---secure-your-most-few-valuable-files"></a>方案 - 保护你最重要的（几个）文件
 

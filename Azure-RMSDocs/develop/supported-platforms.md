@@ -14,9 +14,11 @@ ms.assetid: 4E46521F-8C2F-401A-A481-113CE130ACF0
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 7225ec06dafd9773058ad276ab08fda6bdcab417
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: bca46836c8c17a367af1542aafb0de762d5c4356
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="supported-platforms"></a>受支持的平台
 

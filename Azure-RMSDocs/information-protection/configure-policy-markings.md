@@ -1,6 +1,8 @@
 ---
 redirect_url: /information-protection/deploy-use/configure-policy-markings
-ms.openlocfilehash: 5ed05554a867a49734ac40c0345ecd2e959bdddd
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: e1907a619d47730c57db74033f220847ff0618af
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
