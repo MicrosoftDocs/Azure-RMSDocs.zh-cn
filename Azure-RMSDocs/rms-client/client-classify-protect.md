@@ -4,7 +4,7 @@ description: "说明如何对文档和电子邮件进行分类和保护。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/20/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f461b349440043bcf5d8624731eda86968194462
-ms.sourcegitcommit: 52b7502e7049358f9fc0a418625bb460bb81479f
-translationtype: HT
+ms.openlocfilehash: 960fe1abf2fa4f5b8976f190454d31849736298a
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>使用 Azure 信息保护对文件或电子邮件进行分类和保护
+<a id="classify-and-protect-a-file-or-email-by-using-azure-information-protection" class="xliff"></a>
+
+# 使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
 
@@ -24,7 +28,9 @@ translationtype: HT
 
 但是，你也可以使用**文件资源管理器**对文件进行分类和保护，此方法支持其他文件类型，并且是一次性分类和保护多个文件的便捷方式。 此方法支持保护 Office 文档、PDF 文件、文本和图像文件，以及各种其他文件。 
 
-### <a name="safely-share-a-file-with-people-outside-your-organization"></a>与组织外部人员安全共享文件
+<a id="safely-share-a-file-with-people-outside-your-organization" class="xliff"></a>
+
+### 与组织外部人员安全共享文件
 
 受保护文件可安全地与他人共享。 例如，将文件附加到电子邮件，或从你的 SharePoint 站点发送邀请。
 
@@ -35,7 +41,9 @@ translationtype: HT
 如果使用自定义权限保护文件，请使用标准共享机制共享文件。 如果你要与之共享的人员是第一次接收受保护文件，他们可能需要阅读说明才能查看。 对于这些人，你可以复制并粘贴以下消息：**我已使用 Microsoft Azure 信息保护对此文件提供保护。若是首次使用，请参阅这些[说明](https://aka.ms/rms-signup)。**
 
 
-## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>使用 Office 应用对文档和电子邮件进行分类和保护
+<a id="using-office-apps-to-classify-and-protect-your-documents-and-emails" class="xliff"></a>
+
+## 使用 Office 应用对文档和电子邮件进行分类和保护
 
 使用 Azure 信息保护栏并选择其中一个已为你配置的标签。 
 
@@ -51,13 +59,19 @@ translationtype: HT
 
 - 管理员配置了建议提示，当检测到敏感数据时将提示选择特定标签。 你可以接受此建议（应用标签），或拒绝建议（不应用建议标签）。
 
-### <a name="exceptions-for-the-azure-information-protection-bar"></a>Azure 信息保护栏的异常 
+<a id="exceptions-for-the-azure-information-protection-bar" class="xliff"></a>
 
-##### <a name="dont-see-this-information-protection-bar-in-your-office-apps"></a>你的 Office 应用程序中看不到此信息保护栏？
+### Azure 信息保护栏的异常 
+
+<a id="dont-see-this-information-protection-bar-in-your-office-apps" class="xliff"></a>
+
+##### 你的 Office 应用程序中看不到此信息保护栏？
 
 - 你可能没有[安装](install-client-app.md) Azure 信息保护客户端，或客户端正以[仅保护模式](client-protection-only-mode.md)运行。
  
-##### <a name="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar"></a>你希望看到的标签没有显示在栏上？ 
+<a id="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar" class="xliff"></a>
+
+##### 你希望看到的标签没有显示在栏上？ 
 
 - 如果管理员最近为你配置了新标签，请尝试关闭 Office 应用程序的所有实例，然后重新打开。 此操作将检查对你的标签所做的更改。
 
@@ -65,7 +79,9 @@ translationtype: HT
 
 - 此标签采用的作用域策略可能不包括你的帐户。 请与你的技术支持或管理员一起检查。
 
-### <a name="set-custom-permissions-for-a-document"></a>设置文档的自定义权限
+<a id="set-custom-permissions-for-a-document" class="xliff"></a>
+
+### 设置文档的自定义权限
 
 可以指定你自己的文档保护设置，而不使用管理员可能与选定标签一起添加的保护设置。
 
@@ -79,16 +95,18 @@ translationtype: HT
 
     - **使用自定义权限进行保护**：请务必选中此选项，这样才能指定并应用自定义权限。 取消选中此选项即撤销任何自定义权限。
     
-    - **选择权限**：如果要保护文件，以便只有你可以访问，请选中“**仅限自己访问**”。 否则，请选中“选择希望指定对象拥有的访问级别”。
+    - **选择权限**：如果要保护文件，以便只有你可以访问，请选中“**仅限自己访问**”。 否则，请选中“希望对象拥有的访问级别”。
 
     - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 请注意，暂不支持个人电子邮件地址。
         
-    - **过期访问**：仅对具有时效性的文件选择此选项，以使指定的人员无法在指定日期后打开选定的一个文件或多个文件。 你仍可以打开原始文件，但在选定日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
+    - 过期访问：仅为时间敏感文件选择此选项，以便你指定的人员在你设定的日期后无法打开所选文件。你仍然可以打开原始文件，但是在所设定日期的午夜后（当前时区），你指定的用户将无法打开文件。
 
 5. 单击“**应用**”，然后等待“**已应用自定义权限**”消息。 然后单击 **“关闭”**。
 
 
-### <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Azure 信息保护栏的键盘快捷方式
+<a id="keyboard-shortcuts-for-the-azure-information-protection-bar" class="xliff"></a>
+
+### Azure 信息保护栏的键盘快捷方式
 
 若要使用键盘快捷方式访问 Azure 信息保护栏，请使用以下组合键：
 
@@ -96,7 +114,9 @@ translationtype: HT
 
 然后，使用 Tab 键选择标签和保护栏上的其他控件（“隐藏标签”图标和“删除标签”图标），按 Enter 键以将其选中。
 
-## <a name="using-file-explorer-to-classify-and-protect-files"></a>使用文件资源管理器对文件进行分类和保护
+<a id="using-file-explorer-to-classify-and-protect-files" class="xliff"></a>
+
+## 使用文件资源管理器对文件进行分类和保护
 
 使用文件资源管理器时，可快速对单个文件、多个文件或文件夹进行分类和保护。 
 
@@ -109,7 +129,9 @@ translationtype: HT
 管理员指南包含受支持文件类型的完整列表以及自动排除的文件和文件夹的完整列表：[受 Azure 信息保护客户端支持的文件类型](client-admin-guide-file-types.md)。
 
 
-### <a name="to-classify-and-protect-a-file-by-using-file-explorer"></a>使用文件资源管理器对文件进行分类和保护
+<a id="to-classify-and-protect-a-file-by-using-file-explorer" class="xliff"></a>
+
+### 使用文件资源管理器对文件进行分类和保护
 
 1. 在文件资源管理器中，选择你的文件、多个文件或文件夹。 右键单击，然后选择“分类和保护”。 例如：
     
@@ -133,9 +155,11 @@ translationtype: HT
 
     - **选择权限**：选择你希望用户在保护所选文件时具有的访问级别。
     
-    - **选择用户**：指定应对文件具有选定权限的人员。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 请注意，暂不支持个人电子邮件地址。
+    - **选择用户**：指定应对文件具有选定权限的人员。 可以从通讯簿中进行选择（例如，来自组织的人员和来自其他组织的联系人）。 对于其他人员，键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 请注意，暂不支持个人电子邮件地址。
         
-    - **过期访问**：仅对具有时效性的文件选择此选项，以使指定的人员无法在指定日期后打开选定的一个文件或多个文件。 你仍可以打开原始文件，但在选定日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
+    - 过期访问：仅为时间敏感文件选择此选项，以便你指定的人员在你设定的日期后无法打开所选文件。你仍然可以打开原始文件，但是在所设定日期的午夜后（当前时区），你指定的用户将无法打开文件。
+    
+    请注意，如果此设置此前通过 Office 2010 应用的自定义权限配置，则指定到期日期不会显示在此对话框中，但仍然会设置到期日期。 此显示问题仅适用于在 Office 2010 中配置了到期日期的情况。
 
 5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”**。
 
@@ -148,7 +172,9 @@ translationtype: HT
 指定的分类和保护会保留在文件中，即使你通过电子邮件发送文件或将其保存到其他位置也是如此。 如果已保护该文件，则可跟踪用户如何使用它，如果有必要，还可撤销对它的访问。 有关详细信息，请参阅[使用 Azure 信息保护时跟踪和撤销已保护的文档](client-track-revoke.md)。 
 
 
-## <a name="other-instructions"></a>其他说明
+<a id="other-instructions" class="xliff"></a>
+
+## 其他说明
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
 -   [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)

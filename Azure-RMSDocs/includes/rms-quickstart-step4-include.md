@@ -4,14 +4,15 @@
 
 要求他们阅读你发送的电子邮件。 他们会看到你的电子邮件，而在此之前，他们会看到以下文本：
 
-**发件人已使用 Microsoft RMS 保护了附件。必须**[登录](http://aka.ms/rms)
-      **才能打开它们。**
+**发件人已使用 Microsoft RMS 保护了附件。必须**[登录](http://aka.ms/rms)**才能将其打开。**
 
 当他们单击此链接时，会显示相关说明，告知他们如何安装 RMS 共享应用程序，以及如何在必要时注册免费的帐户。 该免费帐户提供个人 RMS 订阅，因此可确保被授权的用户始终能够阅读受保护的文档，即使其组织没有 Azure RMS。 然后，他们就可以根据以下说明阅读受保护的附件。
 
 ![RM 教程屏幕截图](../media/AzRMS_Tutorial_4_Screenshots.png)
 
-#### <a name="to-view-the-protected-document-attachment"></a>查看受保护的文档附件
+<a id="to-view-the-protected-document-attachment" class="xliff"></a>
+
+#### 查看受保护的文档附件
 
 1.  由于 Azure 权限管理对 Word 文档进行了保护，因此该电子邮件有两个附件。 这实际上是同一文件的两个版本，仅文件扩展名不同。 打开文件扩展名为 **.ppdf** 的版本 (**Confidential.ppdf**)。
 

@@ -4,7 +4,7 @@ description: "确定对 Azure 信息保护租户密钥具有的不同级别控�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 05/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 24368df01f680958310b8d01c4f9a5a939e6f706
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 10ce24e72dae1225505592508d4bf88cadb131a2
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="operations-for-your-azure-information-protection-tenant-key"></a>Azure 信息保护租户密钥的操作
+<a id="operations-for-your-azure-information-protection-tenant-key" class="xliff"></a>
+
+# Azure 信息保护租户密钥的操作
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -36,8 +40,9 @@ translationtype: HT
 
 确定实施了哪一种拓扑之后，请选择以下任一部分，获取有关 Azure 信息保护租户密钥的这些操作的详细信息：
 
-
 - [Microsoft 托管的租户密钥](operations-microsoft-managed-tenant-key.md)
 - [客户托管的租户密钥](operations-customer-managed-tenant-key.md)
+
+但是，如果要通过从 Active Directory Rights Management Services 导入受信任的发布域 (TPD) 来创建 Azure 信息保护租户密钥，则执行此导入操作作为[从 AD RMS 迁移到 Azure 信息保护](../plan-design/migrate-from-ad-rms-to-azure-rms.md)的一部分。  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -4,17 +4,21 @@ description: "快速试用 Azure 信息保护入门教程步骤 1 - 激活 Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: 8ccf0ea41e9465e10408595a3b875704baca93d2
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
-translationtype: HT
+ms.openlocfilehash: adc2baa875595d5044b47a9f014cc1381ba85dc2
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="step-1-activate-the-rights-management-service"></a>步骤 1：激活权限管理服务
+<a id="step-1-activate-the-rights-management-service" class="xliff"></a>
+
+# 步骤 1：激活权限管理服务
  
 >*适用于：Azure 信息保护*
 
@@ -25,11 +29,11 @@ translationtype: HT
 
 如果已激活 Azure 权限管理服务，则可以保护组织最敏感的文档和电子邮件，并在将这些文档与其他人共享时跟踪受保护文档的使用状况。 激活此服务的方式有多种，包括使用 Windows PowerShell，以及使用管理门户。
 
-在本教程中，将直接转到 Office 365 管理员管理门户中的“激活”页面。 该页面同时用于 Office 365 经典门户和 Office 365 管理中心预览。 
+在本教程中，将直接转到 Office 365 管理员管理门户中的“激活”页面。 但是，如果想要从 Office 365 管理门户导航到此页而不是直接转到此页，请参阅[激活 Azure 权限管理](../deploy-use/activate-service.md)中的完整说明。 如果你有权访问 Azure 门户，但无权访问 Office 365 管理员门户，也可以使用这些完整说明。
 
-如果想要从 Office 365 管理门户导航到此页而不是直接转到此页，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md) 中的完整说明。 如果你有权访问 Azure 门户，但无权访问 Office 365 管理员门户，也可以使用这些完整说明。
+<a id="to-activate-the-rights-management-service" class="xliff"></a>
 
-## <a name="to-activate-the-rights-management-service"></a>激活 Rights Management 服务
+## 激活 Rights Management 服务
 
 1. 打开一个新的浏览器窗口并直接转到 Office 365 管理员的 [Rights Management 激活页](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx)。
     

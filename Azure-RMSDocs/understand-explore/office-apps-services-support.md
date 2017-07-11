@@ -4,7 +4,7 @@ description: "最终用户 Office 应用程序（例如 Word、Excel、PowerPoin
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/21/2017
+ms.date: 05/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,23 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5c106d46befc2a2d3c42ba8840dac65a243220d9
-ms.sourcegitcommit: 9edcb4a55a331e02f999c78d97eb0beb21f96f07
-translationtype: HT
+ms.openlocfilehash: 7fe044ab9b8e253e3095af5828a33926271bc42b
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="office-applications-and-services"></a>Office 应用程序和服务
+<a id="office-applications-and-services" class="xliff"></a>
+
+# Office 应用程序和服务
 
 >*适用于：Azure 信息保护、Office 365*
 
 最终用户 Office 应用程序（例如 Word、Excel、PowerPoint 和 Outlook）和 Office 服务（例如 Exchange 和 SharePoint）如何使用 Azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的数据。
 
-## <a name="office-applications-word-excel-powerpoint-outlook"></a>Office 应用程序：Word、Excel、PowerPoint、Outlook
+<a id="office-applications-word-excel-powerpoint-outlook" class="xliff"></a>
+
+## Office 应用程序：Word、Excel、PowerPoint、Outlook
 这些应用程序通过使用信息权限管理 (IRM) 以本机方式支持权限管理，让用户能够将保护应用于已保存文档，或者应用于要发送的电子邮件。 用户可以应用模板，在 Word、Excel 和 PowerPoint 中，用户还可以针对访问、权限和使用限制选择高度自定义设置。 
 
 例如，用户可以通过配置 Word 文档仅允许组织内人员访问该文档，还可以控制是否允许编辑 Excel 电子表格、是否将其限制为只读，以及是否禁止打印该电子表格。 对于时间敏感型文件，可以配置一个过期时间（直接由用户配置，或者应用模板进行配置），在过期之后无法再访问该文件。 在 Outlook 中，除了选择模板，用户还可以选择“不要转发”选项来帮助防止数据泄漏。
@@ -35,7 +41,9 @@ translationtype: HT
 
 - 若要安装和配置 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端：安装和配置客户端](../deploy-use/configure-client.md)。
 
-## <a name="exchange-online-and-exchange-server"></a>Exchange Online 和 Exchange Server
+<a id="exchange-online-and-exchange-server" class="xliff"></a>
+
+## Exchange Online 和 Exchange Server
 使用 Exchange Online 或 Exchange Server 时，你可以使用信息权限管理 (IRM) 集成，它提供更多信息保护解决方案：
 
 -   **Exchange ActiveSync IRM** ，让移动设备能够保护和使用受保护的电子邮件。
@@ -59,9 +67,13 @@ translationtype: HT
 - 对于 Exchange 內部部署，请参阅[部署 Azure 权限管理连接器](../deploy-use/deploy-rms-connector.md)。
 
 
-## <a name="sharepoint-online-and-sharepoint-server"></a>SharePoint Online 和 SharePoint Server
+<a id="sharepoint-online-and-sharepoint-server" class="xliff"></a>
+
+## SharePoint Online 和 SharePoint Server
 
 使用 SharePoint Online 或 SharePoint Server 时，可以使用信息权限管理 (IRM) 来保护文档。 通过此配置，管理员可以保护列表或库，这样当用户签出文档时，所下载的文件将会受到保护，如此只有授权人员能够根据指定的信息保护策略来查看和使用文件。 例如，文件可能是只读的，可能会禁用文本复制，可能会阻止保存本地副本，可能会阻止打印文件。
+
+默认情况下，保护仅限于下载文档的人员。 但是，你可以使用配置选项来更改此设置，该选项将保护范围扩展到所有在 SharePoint 或你指定的组中访问文档的用户。
 
 对于 SharePoint 列表和库，始终由管理员（绝不会是最终用户）配置信息保护。 在站点级别设置权限，默认情况下，这些权限将由该站点中的任何列表或库继承。 如果使用 SharePoint Online，用户还可以对其 OneDrive for Business 库配置 IRM 保护。
 
@@ -90,7 +102,9 @@ translationtype: HT
 - 对于 Sharepoint Server，请参阅[部署 Azure 权限管理连接器](../deploy-use/deploy-rms-connector.md)。
 
 
-## <a name="next-steps"></a>后续步骤
+<a id="next-steps" class="xliff"></a>
+
+## 后续步骤
 
 若要查看其他应用程序和服务如何支持 Azure 信息保护中的 Azure Rights Management 服务，请参阅[应用程序如何支持 Azure Rights Management 服务](applications-support.md)。
 

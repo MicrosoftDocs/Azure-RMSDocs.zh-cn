@@ -4,18 +4,21 @@ description: "尽管 Azure 信息保护附带了可以自定义的默认标签�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/05/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 91feb6dfd9421d7c5cccf53b45f8a0f35e74007d
-ms.sourcegitcommit: e3974cc1490581414084669632cad54b12b05d5a
+ms.openlocfilehash: ac12ab9023499d5aac632159ef689a8f10a91418
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="how-to-create-a-new-label-for-azure-information-protection"></a>如何创建 Azure 信息保护的标签
+<a id="how-to-create-a-new-label-for-azure-information-protection" class="xliff"></a>
+
+# 如何创建 Azure 信息保护的标签
 
 >*适用于：Azure 信息保护*
 
@@ -43,7 +46,11 @@ ms.contentlocale: zh-CN
 
 4. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 
-## <a name="next-steps"></a>后续步骤
+5. 如果你希望以不同的语言为用户显示新标签名称和说明，请按照[如何为不同的语言配置标签](configure-policy-languages.md)中的过程操作。 
+
+<a id="next-steps" class="xliff"></a>
+
+## 后续步骤
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 

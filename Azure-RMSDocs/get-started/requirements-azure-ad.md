@@ -12,12 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2022f86a32725ef9dfcf5692b1194348f6c39f3b
-ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.openlocfilehash: 27ce787cbf5370634f6b1e15903cc981f08656a2
+ms.sourcegitcommit: 505a2c182bcd5a87a7dcb43b9aa1e43244f4c537
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 07/03/2017
 ---
-# <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
+<a id="azure-active-directory-requirements-for-azure-information-protection" class="xliff"></a>
+
+# Azure 信息保护的 Azure Active Directory 要求
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -33,7 +36,9 @@ ms.contentlocale: zh-CN
 
 如果要将 Azure AD 目录与本地 AD 林相集成，请参阅[将本地标识与 Azure Active Directory 集成](/active-directory/active-directory-aadconnect)。
 
-### <a name="scenarios-that-have-specific-requirements"></a>具有特定要求的方案 
+<a id="scenarios-that-have-specific-requirements" class="xliff"></a>
+
+### 具有特定要求的方案 
 
 运行 Office 2010 的计算机： 
 
@@ -43,7 +48,7 @@ ms.contentlocale: zh-CN
 
 支持基于证书的身份验证 (CBA)：
 
-- 如果具有最低版本 Android 5.0，适用于 Android 的 Azure 信息保护应用支持基于证书的身份验证。 有关配置基于证书的身份验证的说明，请参阅 [Azure Active Directory 中的基于证书的身份验证入门](/azure/active-directory/active-directory-certificate-based-authentication-get-started)。
+- 适用于 iOS 和 Android 的 Azure 信息保护应用支持基于证书的身份验证。 有关配置基于证书的身份验证的说明，请参阅 [Azure Active Directory 中的基于证书的身份验证入门](/azure/active-directory/active-directory-certificate-based-authentication-get-started)。
 
 用户的 UPN 值与其电子邮件地址不匹配：
 
@@ -55,7 +60,9 @@ ms.contentlocale: zh-CN
 
 - 你必须在最低服务器版的 **Windows Server 2012 R2** 上使用 AD FS，或者使用支持 OAuth 2.0 协议的备用身份验证提供程序。
 
-## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>多重身份验证 (MFA) 和 Azure 信息保护
+<a id="multi-factor-authentication-mfa-and-azure-information-protection" class="xliff"></a>
+
+## 多重身份验证 (MFA) 和 Azure 信息保护
 若要将多因素身份验证 (MFA) 和 Azure 信息保护结合起来使用，至少需要以下条件之一：
 
 -   Office 2013（最低版本）：
@@ -88,7 +95,9 @@ ms.contentlocale: zh-CN
 
         有关此方案的详细信息，请参阅 Office 博客上的[使用 Office 365 – 标识程序现在已简化](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)。
 
-## <a name="next-steps"></a>后续步骤
+<a id="next-steps" class="xliff"></a>
+
+## 后续步骤
 若要查看其他要求，请参阅 [Azure 信息保护的要求](requirements-azure-rms.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
