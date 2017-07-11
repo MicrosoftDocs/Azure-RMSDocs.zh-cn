@@ -12,11 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 27ffbc6eb9e88840f1b33c59b76bdaa5d028cc36
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: d141589c9dc9d90cf3a507db77f624c849f955b5
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>为 Azure Rights Management 服务配置自定义模板
+<a id="configuring-custom-templates-for-the-azure-rights-management-service" class="xliff"></a>
+
+# 为 Azure Rights Management 服务配置自定义模板
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -59,6 +63,10 @@ translationtype: HT
 -   [如何为用户刷新模板](refresh-templates.md)
 
 -   [使用 PowerShell 管理模板](configure-templates-with-powershell.md)
+
+> [!TIP]
+> 用于配置 Azure 权限管理保护的模板和新选项将移动到 Azure 门户。 此功能目前处于预览状态。 有关详细信息，请参阅以下博客文章公告：[Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/)（Azure 信息保护统一管理现为预览版） 
+
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

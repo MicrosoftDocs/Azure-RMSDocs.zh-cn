@@ -4,17 +4,21 @@ description: "快速试用 Azure 信息保护入门教程步骤 2 - 配置策略
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 9a2392df400356e7937db49cec3e0fe1e3d0f228
-ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
-translationtype: HT
+ms.openlocfilehash: b91bfea99170b747bb199b3c966ae8c89fae5359
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>步骤 2：配置并发布 Azure 信息保护策略
+<a id="step-2-configure-and-publish-the-azure-information-protection-policy" class="xliff"></a>
+
+# 步骤 2：配置并发布 Azure 信息保护策略
 
 >适用于：Azure 信息保护
 
@@ -29,7 +33,7 @@ translationtype: HT
     > [!TIP] 
     > 选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览到该服务。
 
-3.  浏览“策略:全局”边栏选项卡，它将自动打开并显示自动为租户创建的默认信息保护策略：
+3. 注意：首次连接到该服务时，系统将自动打开“快速入门”页上的信息。 你可以稍后返回到此信息。 在本教程中，单击“全局策略”以打开“策略: 全局”边栏选项卡。 此边栏选项卡将自动打开，以便执行后续连接到服务的操作，它将显示自动为租户创建的默认信息保护策略：
     
     - 用于分类的标签：“个人”、“公共”、“常规”、“机密”和“高度机密”。 最后两个标签可展开以显示子标签：“所有员工”和“任何人(不受保护)”，并提供有关让类别具有子类别的示例。
     
@@ -46,7 +50,9 @@ translationtype: HT
     
     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy-default-settings.png)
 
-## <a name="changing-the-settings-for-a-default-label-and-prompt-for-justification"></a>更改默认标签和有关提示用户提供理由的设置
+<a id="changing-the-settings-for-a-default-label-and-prompt-for-justification" class="xliff"></a>
+
+## 更改默认标签和有关提示用户提供理由的设置
 
 在本教程中，将更改几个策略设置，以便可以看到它们的工作原理：
 
@@ -56,7 +62,9 @@ translationtype: HT
 
 2. 对于“用户必须提供理由以设置较低分类标签、删除标签或删除保护”，将其设置为“开”。
 
-## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>配置保护的标签、水印和分类提示的条件
+<a id="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification" class="xliff"></a>
+
+## 配置保护的标签、水印和分类提示的条件
 
 现在将更改其中一个子标签的设置，即“机密”主标签中的“所有员工”。 
 

@@ -4,7 +4,7 @@ description: "使用 Azure Rights Management 服务时，模板会自动下载�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6f02bffa99719d5cd987bc0fa9c84baabe191ec5
-ms.sourcegitcommit: 2358f76f9a039daff7d70ea68967a45362d3da35
-translationtype: HT
+ms.openlocfilehash: 374c807862d4922679e8622ee0d0d5a16a156bb0
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="refreshing-templates-for-users"></a>为用户刷新模板
+<a id="refreshing-templates-for-users-and-services" class="xliff"></a>
+
+# 为用户和服务刷新模板
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -32,8 +36,11 @@ translationtype: HT
 |Office 2016 for Mac|自动刷新 – 无需额外的步骤。|
 |适用于 Mac 计算机的 RMS 共享应用|自动刷新 – 无需额外的步骤。|
 
+当客户端应用程序需要下载模板（初始下载或刷新用于更改）时，请准备在下载完成并且新的或更新的模板完全可操作之前等待 15 分钟。 实际时间会因多种因素而异，例如模板配置的大小和复杂性以及网络连接。 
 
-## <a name="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates"></a>仅适用于 Exchange Online：如何将 Exchange 配置为下载已更改的自定义模板
+<a id="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates" class="xliff"></a>
+
+## 仅适用于 Exchange Online：如何将 Exchange 配置为下载已更改的自定义模板
 如果你已经为 Exchange Online 配置了信息权限管理 (IRM)，则不会为用户下载自定义模板，除非你使用 Windows PowerShell 在 Exchange Online 中进行了下列更改：
 
 > [!NOTE]
@@ -41,7 +48,9 @@ translationtype: HT
 
 每次更改模板时，你必须执行此过程。
 
-### <a name="to-update-templates-for-exchange-online"></a>为 Exchange Online 更新模板
+<a id="to-update-templates-for-exchange-online" class="xliff"></a>
+
+### 为 Exchange Online 更新模板
 
 1.  在 Exchange Online 中使用 Windows PowerShell 连接到服务：
 
@@ -94,13 +103,17 @@ translationtype: HT
 Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 ```
 
-## <a name="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>适用于 Windows 的 Office 2016、Office 2013 和 RMS 共享应用程序：如何强制执行针对已更改自定义模板的刷新
+<a id="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template" class="xliff"></a>
+
+## 适用于 Windows 的 Office 2016、Office 2013 和 RMS 共享应用程序：如何强制执行针对已更改自定义模板的刷新
 通过编辑运行 Office 2016、Office 2013 或适用于 Windows 的 Rights Management (RMS) 共享应用程序的计算机上的注册表，你可以更改自动计划，以便更改的模板在计算机上的刷新频率比其默认值更频繁。 你还可以通过删除注册表值中的现有数据，强制执行即时刷新。
 
 > [!WARNING]
 > 如果你没有正确使用注册表编辑器，则可能导致严重问题，需要你重新安装操作系统。 Microsoft 不保证能够解决因注册表编辑器使用不当而导致的问题。 你自行承担使用注册表编辑器的风险。
 
-### <a name="to-change-the-automatic-schedule"></a>更改自动计划
+<a id="to-change-the-automatic-schedule" class="xliff"></a>
+
+### 更改自动计划
 
 1.  使用注册表编辑器，创建并设置以下注册表值中的某一个：
 
@@ -124,7 +137,9 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 
 2.  如果你想要强制即时刷新模板，请转到下一个过程。 否则，请立即重启 Office 应用程序和文件资源管理器实例。
 
-### <a name="to-force-an-immediate-refresh"></a>强制执行即时刷新
+<a id="to-force-an-immediate-refresh" class="xliff"></a>
+
+### 强制执行即时刷新
 
 1.  使用注册表编辑器，删除“LastUpdatedTime”  值的数据。 例如，数据可能显示 **2015-04-20T15:52**；删除 2015-04-20T15:52 后，不会显示任何数据。 使用以下信息查找删除此注册表值数据的注册表路径。
 
@@ -150,7 +165,9 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 3.  请重启 Office 应用程序和文件资源管理器实例。
 
 
-## <a name="see-also"></a>另请参阅
+<a id="see-also" class="xliff"></a>
+
+## 另请参阅
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

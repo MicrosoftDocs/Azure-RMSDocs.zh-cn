@@ -1,10 +1,10 @@
 ---
-title: "使用 Office 365 经典管理中心激活 Azure RMS - AIP"
-description: "有关具有 Office 365 管理中心经典（原始）版本访问权限时 Azure Rights Management 服务的激活说明。"
+title: "使用旧版 Office 365 管理中心激活 Azure RMS - AIP"
+description: "使用旧版 Office 365 管理中心时的 Azure 权限管理服务激活说明。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 05/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,16 +12,20 @@ ms.technology: techgroup-identity
 ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fd08e94dffd3793675eb90e68f108114e5dcadcd
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
-translationtype: HT
+ms.openlocfilehash: 3282606e4ddc5747bf710e0a885318f07b7da457
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="how-to-activate-azure-rights-management-from-the-office-365-classic-admin-center"></a>如何从 Office 365 经典管理中心激活 Azure Rights Management
+<a id="how-to-activate-azure-rights-management-from-the-old-office-365-admin-center" class="xliff"></a>
+
+# 如何从旧版 Office 365 管理中心激活 Azure 权限管理
 
 >*适用于：Azure 信息保护、Office 365*
 
 
-如果你在使用经典（原始）版本的 Office 365 管理中心，请使用以下说明。
+仅在使用旧版 Office 365 管理中心时使用以下说明。
 
 1. 在注册包含 Rights Management 的 Office 365 计划后，[使用你的工作或学校帐户登录到 Office 365](https://portal.office.com/)，该帐户应是 Office 365 部署的全局管理员。
 
@@ -47,7 +51,9 @@ translationtype: HT
 
 现在，应会显示“Rights Management 已激活”  和用于停用的选项。
 
-## <a name="next-steps"></a>后续步骤
+<a id="next-steps" class="xliff"></a>
+
+## 后续步骤
 返回 [激活 Azure Rights Management](activate-service.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
