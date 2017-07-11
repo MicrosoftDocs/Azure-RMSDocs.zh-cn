@@ -4,7 +4,7 @@ description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,27 +12,31 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 04e04f6e3243283b98df94143773e4aa81351f48
-ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.openlocfilehash: e39097a4786ddd71082eda4a5b445b3fb682f6b7
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="using-powershell-with-the-azure-information-protection-client"></a>将 PowerShell 与 Azure 信息保护客户端配合使用
+<a id="using-powershell-with-the-azure-information-protection-client" class="xliff"></a>
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
+# 将 PowerShell 与 Azure 信息保护客户端配合使用
+
+>适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012
 
 安装 Azure 信息保护客户端时，将自动安装 PowerShell 命令，从而通过运行可放入自动化脚本的命令来管理客户端。
 
 cmdlet 随 PowerShell 模块 **AzureInformationProtection** 一起安装，该模块将替代随 RMS 保护工具一起安装的 RMSProtection 模块。 如果在安装 Azure 信息保护客户端时安装了 RMSProtection 工具，则会自动卸载 RMSProtection 模块。
 
-AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Management cmdlet 和使用 Azure 信息保护 (AIP) 服务进行标记的两个新 cmdlet：
+AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Management cmdlet 和使用 Azure 信息保护 (AIP) 服务进行标记的三个新 cmdlet：
 
 |标记 cmdlet|示例用法|
 |----------------|---------------|
-|[Get AIPFileStatus](/powershell/azureinformationprotection/vlatest/get-aipfilestatus)|对于共享文件夹，请标识具有特定标签的所有文件。|
-|[Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel)|对于共享文件夹，将指定的标签应用于没有标签的所有文件。|
+|[Get AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)|对于共享文件夹，请标识具有特定标签的所有文件。|
+|[Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)|对于共享文件夹，检查文件内容，然后根据指定的条件自动标记未标记的文件。|
+|[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)|对于共享文件夹，将指定的标签应用于没有标签的所有文件。|
 
-有关所有 cmdlet 及其相应帮助的列表，请参阅 [AzureInformationProtection 模块](/powershell/azureinformationprotection/vlatest/aip)。
+有关所有 cmdlet 及其相应帮助的列表，请参阅 [AzureInformationProtection 模块](/powershell/module/azureinformationprotection)。 在 PowerShell 会话中，键入 `Get-Help <cmdlet name> -online` 以查看最新帮助以及除英语之外的其他受支持语言。  
 
 此模块安装在 **\ProgramFiles (x86)\Microsoft Azure Information Protection** 中，并将此文件夹添加到 **PSModulePath** 系统变量。 此模块的 .dll 命名为 **AIP.dll**。
 
@@ -54,12 +58,16 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
     - 将仅保护用于 Azure 权限管理的本地版本时适用；Active Directory Rights Management Services (AD RMS)。
 
 
-## <a name="azure-information-protection-service-and-azure-rights-management-service"></a>Azure 信息保护服务和 Azure 权限管理服务
+<a id="azure-information-protection-service-and-azure-rights-management-service" class="xliff"></a>
+
+## Azure 信息保护服务和 Azure 权限管理服务
 
 当你的组织在使用 Azure 信息保护和 Azure 权限管理数据保护服务或仅使用 Azure 权限管理服务时，请阅读本节，然后才开始使用 PowerShell 命令。
 
 
-### <a name="prerequisites"></a>先决条件
+<a id="prerequisites" class="xliff"></a>
+
+### 先决条件
 
 除了安装 AzureInformationProtection 模块的先决条件之外，Azure 信息保护服务和 Azure 权限管理数据保护服务还有其他先决条件：
 
@@ -77,19 +85,25 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
     
     - 编辑注册表，以便对服务进行身份验证。
 
-#### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>先决条件 1：必须激活 Azure 权限管理服务
+<a id="prerequisite-1-the-azure-rights-management-service-must-be-activated" class="xliff"></a>
+
+#### 先决条件 1：必须激活 Azure 权限管理服务
 
 无论是通过使用标签还是直接连接到 Azure 权限管理服务来应用数据保护，此先决条件都适用。
 
 如果未激活 Azure 信息保护租户，请参阅[激活 Azure 权限管理](../deploy-use/activate-service.md)的说明。
 
-#### <a name="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account"></a>先决条件 2：使用自己的帐户从他人的文件中删除保护
+<a id="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account" class="xliff"></a>
+
+#### 先决条件 2：使用自己的帐户从他人的文件中删除保护
 
 从他人的文件中删除保护的典型方案包括数据发现或数据恢复。 如果使用标签应用保护，则可以通过设置不应用保护的新标签或通过删除标签来删除保护。 但是，你更有可能通过直接连接到 Azure 权限管理服务来删除保护。
 
 用户必须具有从文件删除保护的权限管理使用权限或者成为超级用户。 对于数据发现或数据恢复，通常会使用超级用户功能。 若要启用此功能并将你的帐户配置为超级用户，请参阅[为 Azure 管理权限和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)。
 
-#### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>先决条件 3：在无用户交互的情况下保护或取消保护文件
+<a id="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction" class="xliff"></a>
+
+#### 先决条件 3：在无用户交互的情况下保护或取消保护文件
 
 目前，不能以非交互方式应用标签，但可通过非交互方式直接连接到 Azure 权限管理服务以保护或取消保护文件。
 
@@ -103,7 +117,9 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 以下部分将介绍如何获取这些标识符。
 
-##### <a name="to-get-the-bpostenantid"></a>获取 BposTenantId
+<a id="to-get-the-bpostenantid" class="xliff"></a>
+
+##### 获取 BposTenantId
 
 从 Azure RMS Windows PowerShell 模块运行 Get-AadrmConfiguration cmdlet：
 
@@ -137,7 +153,9 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
     
         Disconnect-AadrmService
 
-##### <a name="to-get-the-appprincipalid-and-symmetric-key"></a>获取 AppPrincipalId 和对称密钥
+<a id="to-get-the-appprincipalid-and-symmetric-key" class="xliff"></a>
+
+##### 获取 AppPrincipalId 和对称密钥
 
 通过从 Azure Active Directory 的 MSOnline PowerShell 模块运行 `New-MsolServicePrincipal` cmdlet 来创建新的服务主体，然后使用以下说明。 
 
@@ -206,7 +224,9 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 > [!NOTE]
 > 若要使用自己的帐户对 Azure 权限管理服务进行身份验证，则无需在保护或取消保护文件或获取模板之前运行 Set-RMSServerAuthentication。
 
-#### <a name="prerequisite-4-for-regions-outside-north-america"></a>先决条件 4：北美以外的区域
+<a id="prerequisite-4-for-regions-outside-north-america" class="xliff"></a>
+
+#### 先决条件 4：北美以外的区域
 
 对于 Azure 北美地区以外的身份验证，必须按如下所示编辑注册表。 如果 Azure 信息保护租户位于北美，则不要执行此步骤：
 
@@ -226,7 +246,9 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 5. 关闭注册表编辑器。 无需重启计算机。 但是，如果使用服务主体帐户而不是自己的用户帐户，则必须在此注册表编辑后运行 Set-RMSServerAuthentication 命令。
 
-### <a name="example-scenarios-for-using-the-cmdlets-for-azure-information-protection-and-the-azure-rights-management-service"></a>将 cmdlet 用于 Azure 信息保护和 Azure 权限管理服务的示例方案
+<a id="example-scenarios-for-using-the-cmdlets-for-azure-information-protection-and-the-azure-rights-management-service" class="xliff"></a>
+
+### 将 cmdlet 用于 Azure 信息保护和 Azure 权限管理服务的示例方案
 
 使用标签来分类和保护文件更有效率，因为只需要两个 cmdlet，且它们可以单独或一起运行，这两个 cmdlet 为：[Get-AIPFileStatus](/powershell/azureinformationprotection/vlatest/get-aipfilestatus) 和 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel)。 请使用这两个 cmdlet 的帮助了解详细信息和示例。
 
@@ -306,12 +328,16 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 请注意，如果更改了 Rights Management 模板，则必须使用 `Get-RMSTemplate -force` 再次下载这些模板。 
 
-## <a name="active-directory-rights-management-services"></a>Active Directory 权限管理服务
+<a id="active-directory-rights-management-services" class="xliff"></a>
+
+## Active Directory 权限管理服务
 
 当你的组织仅使用 Active Directory Rights Management Services 时，请阅读本节，然后才开始使用 PowerShell 命令来保护或取消保护文件。
 
 
-### <a name="prerequisites"></a>先决条件
+<a id="prerequisites" class="xliff"></a>
+
+### 先决条件
 
 除了安装 AzureInformationProtection 模块的先决条件之外，你的帐户必须具有读取和执行权限才能访问 ServerCertification.asmx：
 
@@ -335,7 +361,9 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 10.单击“确定”两次。
 
-### <a name="example-scenarios-for-using-the-cmdlets-for-active-directory-rights-management-services"></a>使用适用于 Active Directory Rights Management Services 的 cmdlet 的示例方案
+<a id="example-scenarios-for-using-the-cmdlets-for-active-directory-rights-management-services" class="xliff"></a>
+
+### 使用适用于 Active Directory Rights Management Services 的 cmdlet 的示例方案
 
 这些 cmdlet 的典型方案是通过使用权限策略模板保护文件夹中的所有文件或取消保护文件。 
 
@@ -419,12 +447,16 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
     C:\Test.docx                          C:\Test.docx
 
 
-## <a name="next-steps"></a>后续步骤
+<a id="next-steps" class="xliff"></a>
+
+## 后续步骤
 对于在 PowerShell 会话中时所需的 cmdlet帮助，请使用 Get-Help <cmdlet name> cmdlet，其中 <cmdlet name> 是要研究的 cmdlet 的名称。 例如： 
 
     Get-Help Get-RMSTemplate
 
 有关支持 Azure 信息保护客户端可能需要的其他信息，请参阅以下内容：
+
+- [自定义](client-admin-guide-customizations.md)
 
 - [客户端文件和使用情况日志记录](client-admin-guide-files-and-logging.md)
 

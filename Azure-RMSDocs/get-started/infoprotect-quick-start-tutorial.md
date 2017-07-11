@@ -4,17 +4,21 @@ description: "该教程用于快速试用适合你组织的 Microsoft Azure 信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 13dbb47088c33f72bdb0acdbb7cba1245df14f7f
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
-translationtype: HT
+ms.openlocfilehash: 023330bbd3909290e098bd7379d8cc2a24d36672
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure 信息保护快速入门教程 
+<a id="quick-start-tutorial-for-azure-information-protection" class="xliff"></a>
+
+# Azure 信息保护快速入门教程 
 
 >*适用于：Azure 信息保护*
 
@@ -24,17 +28,17 @@ translationtype: HT
 
 如果在完成本教程、使用 Azure 信息保护中有任何问题，或者想要查看别人对此的评论，请访问 [Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)。
 
-## <a name="prerequisites"></a>先决条件 
+<a id="prerequisites" class="xliff"></a>
+
+## 先决条件 
 若要完成本教程，你需要满足以下先决条件：
 
-- 包含关于分类、设置标签和保护的 Azure 信息保护的订阅。 本教程包括一些高级的功能，例如根据用户建议自动化数据分类和文档跟踪站点。 请确保你的订阅支持这些功能。 有关详细信息，请参阅 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。
+- 包含关于分类、设置标签和保护的 Azure 信息保护的订阅。 本教程包括一些高级的功能，例如根据用户建议自动化数据分类和文档跟踪站点。 确保具有支持本教程这些功能的订阅。 有关详细信息，请参阅 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。
     
     如果你的订阅不具备这些功能，可注册[企业移动性 + 安全性 E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7) 的免费试用版。
     
-- 具有 Azure 订阅，以便你可以访问 Azure 门户以配置 Azure 信息保护策略。 如果你的组织还没有 Azure 订阅，则可以通过注册免费试用版来获取订阅：转到 [Azure 入门](https://account.windowsazure.com/organization)页并按照说明进行操作。
-
   > [!TIP] 
-  > 如果你需要获取其中一个或更多订阅，请提前进行，因为该过程有时需要一定的时间才能完成。
+  > 如果你需要应用某个订阅，请提前进行，因为该过程有时需要一定的时间才能完成。
 
 - 使用全局管理员帐户登录到 Azure 门户以配置 Azure 信息保护策略。 此帐户还必须有电子邮件地址和可用的电子邮件服务（例如，Exchange Online 或 Exchange Server）。
 

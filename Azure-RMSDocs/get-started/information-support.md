@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 06/02/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f22d997b69c5c88c5e83d29de137626facad5849
-ms.sourcegitcommit: 05b7e06e330a33936aeeef32934717f870963612
-translationtype: HT
+ms.openlocfilehash: 23a6e3a2ca5efb6718d4d1fc33312cd481eec000
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
+<a id="information-and-support-for-azure-information-protection" class="xliff"></a>
+
+# Azure 信息保护的信息和支持
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -24,24 +28,32 @@ translationtype: HT
 
 |要执行的操作…|. 采取的措施：|
 |----------------|---------------|
-|请参阅该服务的推荐文档 →|使用 [Azure 信息保护文档](https://docs.microsoft.com/information-protection/)起始页。|
-|提供有关文档的反馈或咨询有关文档的问题 →|发送电子邮件至 [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
-|接收有关信息保护的推文，以及来自产品组的关于文档更新的公告 →|关注帮助领导 Microsoft 信息保护团队的 Dan Plastina 的动态。 参阅 [Dan Plastina @DanPlastina](https://twitter.com/DanPlastina)|
-|检查订阅信息和支持的功能 →|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|
+|请参阅该服务的推荐文档|使用 [Azure 信息保护文档](https://docs.microsoft.com/information-protection/)起始页。|
+|提供有关文档的反馈或咨询有关文档的问题|发送电子邮件至 [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
+|接收有关 Azure 信息保护的推文，以及来自产品组的关于文档更新的公告|关注在 Microsoft 帮助领导 Azure 信息保护团队的 [@DanPlastina](https://twitter.com/DanPlastina) 的动态。|
+|检查订阅信息和支持的功能|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|
 
 
-## <a name="information-about-new-releases-and-updated-documentation"></a>有关新版本和更新的文档的信息
-信息保护产品团队向[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)发送关于新版本和更新的公告。 这些博客文章可为产品文档和技术支持信息提供补充。
+<a id="information-about-new-releases-and-updated-documentation" class="xliff"></a>
 
-每月结束时，你都会看到一份文档更改的总结，标题为“**\<month, year>** Azure 信息保护文档更新”。 这些文章具有[**更新**](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)的内容类型标记，包括新版本的文档更新，及现有版本的更正和说明。
+## 有关新版本和更新的文档的信息
+Azure 信息保护产品团队向[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)发送关于新版本和更新的公告。 这些博客文章可为产品文档和技术支持信息提供补充。
+
+此外，还可以在 [Azure 信息保护 Yammer 网站](https://www.yammer.com/AskIPTeam)上找到有关新功能和预览的信息，也可以在其中申请新功能。
+
+每月结束时，我们都会发布一份文档更改总结的博客文章，标题为“\<month, year> Azure 信息保护文档更新”。 这些文章具有[**更新**](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)的内容类型标记，包括新版本的文档更新，及现有版本的更正和说明。
 
 > [!TIP]
 > 如果要开发使用 Microsoft Rights Management 服务（Azure RMS 或 AD RMS）的应用程序，你可能还会对 [Active Directory Rights Management Services (AD RMS) 开发人员活动角博客](https://blogs.msdn.microsoft.com/rms/)感兴趣。
 
-## <a name="support-options-and-community-resources"></a>支持选项和社区资源
+<a id="support-options-and-community-resources" class="xliff"></a>
+
+## 支持选项和社区资源
 以下部分提供有关支持选项和故障排除选项的信息及社区资源。
 
-### <a name="to-contact-microsoft-support"></a>与 Microsoft 支持部门联系
+<a id="to-contact-microsoft-support" class="xliff"></a>
+
+### 与 Microsoft 支持部门联系
 
 如果你有顶级支持，请访问[针对顶级支持客户的门户](https://premier.microsoft.com/)来提交事件、浏览解决方案，并获得帮助。
 
@@ -59,7 +71,9 @@ translationtype: HT
 有关其他支持选项，请询问你的 Microsoft 联系人。 
 
 
-### <a name="self-help"></a>自助方式
+<a id="self-help" class="xliff"></a>
+
+### 自助方式
 
 点播视频：
 
@@ -81,12 +95,12 @@ translationtype: HT
 
 - 有关自动检查、自动修正和跟踪：请下载并运行 [RMS 分析器工具](http://www.microsoft.com/en-us/download/details.aspx?id=46437)。 有关此工具的详细信息，请参阅下载页面上的“详细信息”和“安装说明”。 
 
-### <a name="community-resources"></a>社区资源
+<a id="community-resources" class="xliff"></a>
 
--   [Yammer：Azure 信息保护](https://www.yammer.com/AskIPTeam)
+### 社区资源
 
--   [论坛：Microsoft RMS（云）](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)
+推荐 [Azure 信息保护的 Yammer 网站](https://www.yammer.com/AskIPTeam)，在这里你可以获取来自 Azure 信息保护团队的直接响应，并受益于其他管理员和顾问分享的经验和知识。
 
--   [论坛：用户 RMS（应用程序）](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmsapps)
+如果你无权访问 Yammer，请尝试访问 [Microsoft RMS（云）的 TechNet 论坛](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

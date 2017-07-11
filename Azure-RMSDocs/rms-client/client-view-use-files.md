@@ -1,10 +1,10 @@
 ---
-title: "使用 AIP 客户端查看和使用受保护的文件"
-description: "查看和使用要求安装 Azure 信息保护客户端的受保护文件的说明。"
+title: "使用 AIP 客户端查看和使用受保护的文档"
+description: "查看和使用要求安装 Azure 信息保护客户端的受保护文档的说明。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/10/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,23 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e68a0b0519cf8a613cbb8c8570eda0669e20e10b
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 6d73a8651b3bea3b8773b4aba49c7d2e85873a80
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>查看和使用受权限管理保护的文件
+<a id="view-and-use-files-that-have-been-protected-by-rights-management" class="xliff"></a>
+
+# 查看和使用受权限管理保护的文件
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
 
-通常，你可以直接打开受保护文件进行查看。 例如，可双击电子邮件中的附件、双击文件资源管理器中的文件或单击文件的链接。
+通常，你可以直接打开受保护文档进行查看。 例如，可双击电子邮件中的附件、双击文件资源管理器中的文件或单击文件的链接。
 
-如果文件未打开，可以使用 **Azure 信息保护查看器**将其打开。 此查看器会作为 Azure 信息保护客户端的一部分自动安装，或者可以单独安装。 你可以从 Microsoft 网站的 [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970)页面中同时安装客户端和查看器。 有关安装客户端的详细信息，请参阅[下载和安装 Azure 信息保护客户端](install-client-app.md)。
+如果没有立即打开文件，Azure 信息保护查看器可能会将其打开。 此查看器可以打开受保护的文本文件、受保护的图像文件、受保护的 PDF 文件，以及具有 .pfile 文件扩展名的所有文件。
+
+此查看器作为 Azure 信息保护客户端的一部分自动安装，你也可以单独进行安装。 你可以从 Microsoft 网站的 [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970)页面中同时安装客户端和查看器。 有关安装客户端的详细信息，请参阅[下载和安装 Azure 信息保护客户端](install-client-app.md)。
 
 > [!NOTE]
 > 虽然安装客户端可提供更多功能，但它需要本地管理员权限，并且完整功能需要组织的相应服务：
@@ -35,7 +41,18 @@ translationtype: HT
 > 
 > 如果另一组织中的某人向你发送了受保护文档，或者你没有访问你的电脑的本地管理员权限，请安装查看器。
 
-## <a name="prompts-for-authentication"></a>身份验证提示
+必须是“已启用 RMS”的应用程序才能打开受保护的文档。 例如，Office 应用和 Azure 信息保护查看器是已启用 RMS 的应用程序。 要按类型和受支持的设备查看应用程序列表，请参阅[启用 RMS 的应用程序](../get-started/requirements-applications.md#rms-enlightened-applications)表格。  
+<a id="messagerpmsg-as-an-email-attachment" class="xliff"></a>
+
+## 作为电子邮件附件的 Message.rpmsg
+
+你在电子邮件中可能会看到作为文件附件的“message.rpmsg”，它不是受保护的文档，而是作为附件显示的受保护的电子邮件。 不能使用适用于 Windows 的 Azure 信息保护查看器来查看 Windows 电脑上受保护的电子邮件。 而是需要一个支持 Rights Management 保护的 Windows 电子邮件应用程序，如 Office Outlook。 或者可以使用 Outlook 网页版。
+
+但是，如果你有 iOS 或 Android 设备，可以使用 Azure 信息保护应用来打开这些受保护的电子邮件。 可以从 Microsoft 网站的 [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970)页中为这些移动设备下载此应用。
+
+<a id="prompts-for-authentication" class="xliff"></a>
+
+## 身份验证提示
 
 在你可以查看受保护文件之前，用于保护文件的 Rights Management 服务必须首先确认你有权查看该文件。 该服务通过检查你的用户名和密码来完成此操作。 在某些情况下，此信息会被缓存下来，所以你不会看到要求出示凭据的提示。 在其他情况下，将提示你提供凭据。
 
@@ -47,7 +64,9 @@ translationtype: HT
     
 -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
-## <a name="to-view-and-use-a-protected-file"></a>查看和使用受保护的文件
+<a id="to-view-and-use-a-protected-document" class="xliff"></a>
+
+## 查看和使用受保护的文档
 
 1. 打开受保护的文件（例如，双击文件或附件，或单击文件的链接）。 如果系统提示你选择应用，请选择“Azure 信息保护查看器”。 
 
@@ -69,7 +88,9 @@ translationtype: HT
 > 如果未打开受保护的文件，请下载并使用 [RMS分析工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)。 按照工具中的说明进行操作，看你的计算机中是否存在妨碍受保护文档打开的问题。
 
 
-## <a name="other-instructions"></a>其他说明
+<a id="other-instructions" class="xliff"></a>
+
+## 其他说明
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
 -   [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)

@@ -4,17 +4,21 @@ description: "可以更改或优化用户可以在信息保护栏看到的标签
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: 48faf9703176ba8f67f57582ea584733fe3e9b01
-ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
-translationtype: HT
+ms.openlocfilehash: ff32ea4759b46683398a86c0a549d50710f9a943
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>如何更改或自定义 Azure 信息保护的现有标签
+<a id="how-to-change-or-customize-an-existing-label-for-azure-information-protection" class="xliff"></a>
+
+# 如何更改或自定义 Azure 信息保护的现有标签
 
 >*适用于：Azure 信息保护*
 
@@ -37,10 +41,14 @@ translationtype: HT
 
 4. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 
+5. 如果更改了标签名称或说明，并针对其他语言进行了配置，则必须再次导出“Azure信息保护”策略，提供新的翻译并导入更改。 有关详细信息，请参阅[如何为不同的语言配置标签](configure-policy-languages.md)。
+
 > [!TIP]
 >如果你想要将其中一个默认标签返回到默认值，请使用 [默认信息保护策略](configure-policy-default.md)(#默认信息保护策略) 中的信息。
 
-## <a name="next-steps"></a>后续步骤
+<a id="next-steps" class="xliff"></a>
+
+## 后续步骤
 
 若要详细了解可针对标签配置的选项以及可针对 Azure 信息保护策略配置的其他设置，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。
 

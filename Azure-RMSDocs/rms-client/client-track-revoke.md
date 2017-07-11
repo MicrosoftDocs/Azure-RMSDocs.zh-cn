@@ -4,7 +4,7 @@ description: "保护文档后，可跟踪用户如何使用它们。 如果用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b95b699b63e6a30cdec0af11670a973eb24323dc
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
-translationtype: HT
+ms.openlocfilehash: 79c02795ca10ff875744f3b6c90cebd582cb8c3e
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>使用 Azure 信息保护时跟踪和撤销文档
+<a id="track-and-revoke-your-documents-when-you-use-azure-information-protection" class="xliff"></a>
+
+# 使用 Azure 信息保护时跟踪和撤销文档
 
 >适用于：Azure 信息保护、Windows 10、Windows 8.1、Windows 8 以及具有 SP1 的 Windows 7
 
@@ -24,25 +28,40 @@ translationtype: HT
 
 访问该站点时，登录即可对文档进行跟踪。 如果你的组织有一个[支持文档跟踪和吊销的订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-features)，而你已被分配了一个该订阅的许可证，你就可以看到谁曾经尝试打开受保护的文件，以及这些用户是否已成功（即成功完成了身份验证）。 还会看到他们访问文档的每一次尝试，以及访问时所在的位置。 此外：
 
--   如果你需要停止共享文档：单击“撤消访问” ，请注意文档将继续可用的时间段，并确定是否允许用户知道你撤消了对之前共享的文档的访问权限，然后提供一条自定义消息。 撤销某个文档时，它并不会删除你共享的文档，但获得授权的用户将不再能够打开该文档：
+- 如果你需要停止共享文档： 
     
-    ![撤销文档跟踪站点中的访问图标](../media/tracking-site-revoke-access-icon.png)
-
--   如果想要导出到 Excel：单击“导出到 CSV”，以便随后修改数据，并创建自己的视图和图形：
+    - 单击“撤销访问权限”，请注意文档将持续可用的时间段，并确定是否允许用户知道你撤销了对之前共享的文档的访问权限，然后提供一条自定义消息。 撤销某个文档时，它并不会删除你共享的文档，但获得授权的用户将不再能够打开该文档：
+        
+        ![撤销文档跟踪站点中的访问图标](../media/tracking-site-revoke-access-icon.png)
+        
+- 如果你想要导出到 Excel： 
     
-    ![导出到文档跟踪站点中的 CSV 图标](../media/tracking-site-export-icon.png)
+    - 单击“导出到 CSV”，方便随后修改数据，并创建你自己的视图和图形：
+         
+        ![导出到文档跟踪站点中的 CSV 图标](../media/tracking-site-export-icon.png)
+         
+- 如果你想要配置电子邮件通知： 
+     
+    - 单击“设置”并选择在访问该文档时是否通过电子邮件发送通知以及发送方式：
+        
+        ![导出到文档跟踪站点中的 CSV 图标](../media/tracking-site-settings-email.png)
 
--   如果想要配置电子邮件通知：单击“设置”并选择在访问该文档时是否通过电子邮件发送通知以及发送方式：
+- 如果想要为其他人跟踪和撤销共享文档：
     
-    ![导出到文档跟踪站点中的 CSV 图标](../media/tracking-site-settings-email.png)
+    - Azure 信息保护管理员可以通过单击“管理员”图标为其他人跟踪和撤销受保护的文档。 只有管理员才能看到该图标：
+        
+        ![文档跟踪站点中的“管理员”图标](../media/tracking-site-admin-icon.png)
 
-- 如果想要为其他人跟踪和撤销共享文档：Azure 信息保护管理员可以通过单击“管理员”图标为其他人跟踪和撤销受保护的文档。 只有管理员才能看到该图标：
-    
-    ![文档跟踪站点中的“管理员”图标](../media/tracking-site-admin-icon.png)
+除非你是管理员，否则只能跟踪和撤销你所保护的文档。 你无法通过使用文档跟踪站点来跟踪受保护的电子邮件。
 
-若要跟踪受保护的文档，必须在文档跟踪站点中注册此文档。 为此，请使用文件资源管理器或 Office 应用程序。
+> [!NOTE] 
+> 如果管理员已为文档跟踪站点配置了隐私控制，你可能无法看到组织中的用户访问你所跟踪的文档的时间。 管理员可以豁免所有用户或仅豁免某些用户。 但是，你始终可以撤销对你所跟踪文档的访问权限。
 
-## <a name="using-office-to-track-or-revoke-the-document"></a>使用 Office 跟踪或撤销文档
+要跟踪已保护的文档，必须使用 Windows 计算机将其注册到文档跟踪站点。 为此，请使用文件资源管理器或 Office 应用程序。
+
+<a id="using-office-to-track-or-revoke-the-document" class="xliff"></a>
+
+## 使用 Office 跟踪或撤销文档
 
 对于 Office 应用程序（Word、Excel、PowerPoint 和 Outlook）： 
 
@@ -54,7 +73,9 @@ translationtype: HT
 
 如果在 Office 应用程序中看不到这些选项，则很可能你的计算机上未安装 Azure 信息保护，必须重新启动 Office 应用程序或重新启动计算机才能完成此安装。 有关如何安装 Azure 信息保护客户端的详细信息，请参阅[下载并安装 Azure 信息保护客户端](install-client-app.md)。
 
-## <a name="using-file-explorer-to-track-or-revoke-the-document"></a>使用文件资源管理器跟踪或撤销文档
+<a id="using-file-explorer-to-track-or-revoke-the-document" class="xliff"></a>
+
+## 使用文件资源管理器跟踪或撤销文档
 
 1. 右键单击受保护的文件，然后选择“分类和保护”。
 
@@ -63,7 +84,9 @@ translationtype: HT
     ![从“分类和保护 - Azure 信息保护”对话框中跟踪和撤销图标](../media/track-and-revoke.png)
 
 
-### <a name="using-a-web-browser-track-and-revoke-documents-that-you-have-registered"></a>使用 Web 浏览器跟踪和撤销已注册的文档
+<a id="using-a-web-browser-to-track-and-revoke-documents-that-you-have-registered" class="xliff"></a>
+
+### 使用 Web 浏览器跟踪和撤销已注册的文档
 
 使用 Office 应用程序或文件资源管理器注册受保护的文档后，可以使用支持的 Web 浏览器跟踪和撤销这些文档：
 
@@ -82,7 +105,9 @@ translationtype: HT
     -   Google Chrome：最低版本 18
 
 
-## <a name="other-instructions"></a>其他说明
+<a id="other-instructions" class="xliff"></a>
+
+## 其他说明
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
 - [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)

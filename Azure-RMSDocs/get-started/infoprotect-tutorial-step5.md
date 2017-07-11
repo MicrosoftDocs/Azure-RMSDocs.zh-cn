@@ -5,7 +5,7 @@ keywords:
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 05/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,15 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2b59cbd99430b5474280acc02b1a2c4a2738c793
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
-translationtype: HT
+ms.openlocfilehash: c9964e013d24bb1f42acb5f1e7a180d2a85a8576
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>步骤 5：了解如何在实际操作中共享受保护的文件和如何跟踪文档 
+<a id="step-5-see-sharing-of-protected-files-in-action-and-track-your-document" class="xliff"></a>
+
+# 步骤 5：了解如何在实际操作中共享受保护的文件和如何跟踪文档 
 
 >*适用于：Azure 信息保护*
 
@@ -25,7 +29,9 @@ translationtype: HT
 
 然后你就可以安全地通过电子邮件共享此文档。 
 
-## <a name="to-safely-share-your-document-by-email"></a>通过电子邮件安全地共享你的文档
+<a id="to-safely-share-your-document-by-email" class="xliff"></a>
+
+## 通过电子邮件安全地共享你的文档
 
 1. 在文件资源管理器中，右键单击文档，然后选择“分类和保护”。 “分类和保护 - Azure 信息保护”对话框将打开：
 
@@ -63,7 +69,9 @@ translationtype: HT
 
 现在，你已发送受保护文档，你可以要求收件人等待该文档，在其到达后打开它。 
 
-## <a name="ask-your-recipients-to-open-the-emailed-document"></a>要求收件人打开通过电子邮件发送的文档
+<a id="ask-your-recipients-to-open-the-emailed-document" class="xliff"></a>
+
+## 要求收件人打开通过电子邮件发送的文档
 
 收件人可以使用很多设备来阅读你以电子邮件附件形式发送的受保护文档。 这些设备包括 iPad、iPhone、Android 平板电脑和手机、Mac 计算机，以及 Windows 计算机。
 
@@ -71,7 +79,9 @@ translationtype: HT
 
 如果他们单击“注册”，Azure 信息保护将检查他们的组织是否具有包含 Azure 权限管理数据保护服务的订阅。 如果没有，则可以申请一个免费帐户。
 
-### <a name="instructions-for-recipient-to-view-the-protected-document-attachment"></a>收件人说明：查看受保护的文档附件
+<a id="instructions-for-recipient-to-view-the-protected-document-attachment" class="xliff"></a>
+
+### 收件人说明：查看受保护的文档附件
 
 1. 在已安装 Office 的电脑或移动设备上，打开附件以阅读该文档。  
 
@@ -83,7 +93,9 @@ translationtype: HT
 
 现在，收件人已打开该附件并选择性地将其转发给他人，你可以跟踪文档。
 
-## <a name="to-track-your-protected-document"></a>跟踪受保护文档
+<a id="to-track-your-protected-document" class="xliff"></a>
+
+## 跟踪受保护文档
 
 1.  打开保护和共享的文档。 信息横幅将确认你指定的自定义保护设置：
 
@@ -116,12 +128,14 @@ translationtype: HT
 |关于文档跟踪站点的使用|[跟踪和撤消文档](../rms-client/client-track-revoke.md)
 
 
-## <a name="next-steps"></a>后续步骤
+<a id="next-steps" class="xliff"></a>
+
+## 后续步骤
 
 现在你已经了解了默认的 Azure 信息保护策略和如何自定义该策略，以及如何在 Word 文档中使用标签，你可以尝试一些其他设置，了解在支持 Azure 信息保护的其他 Office 应用中是如何使用这些设置的：Excel、PowerPoint、Outlook。 如果在安装 Azure 信息保护客户端时这些应用已打开，请关闭并重新打开它们，然后再尝试将它们与 Azure 信息保护结合使用。
 
 尝试共享更多的文档，跟踪文档的使用情况，以及确认文档撤销的方式。
 
-你会发现阅读 Azure 信息保护的一些[常见问题](faqs.md)和浏览其他一些文档文章很有用处。 但是，如果已准备好开始为组织部署 Azure 信息保护，那么下一步应为 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)。 
+然后你会发现以下一系列操作很有用处：返回到 Azure 门户的“快速入门”页，阅读 Azure 信息保护的一些[常见问题](faqs.md)并浏览一些其他文档文章。 但是，如果已准备好开始为组织部署 Azure 信息保护，那么下一步应为 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)。 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

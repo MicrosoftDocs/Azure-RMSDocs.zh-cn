@@ -4,7 +4,7 @@ description: "有关支持的文件类型、文件扩展名以及负责适用于
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/08/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ffd2ed8aa59c3d9eb1ab6d36a9ccac71d449d978
-ms.sourcegitcommit: dabea768a37aa56635b9123f628c1c2b2d6a0f55
+ms.openlocfilehash: 4f187b3fa991fb4ed3a11ded34fa663dc6b4bafc
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2017
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure 信息保护客户端支持的文件类型
+<a id="file-types-supported-by-the-azure-information-protection-client" class="xliff"></a>
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
+# Azure 信息保护客户端支持的文件类型
+
+>适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012
 
 Azure 信息保护客户端可以将以下内容应用于文档和电子邮件：
 
@@ -32,7 +34,9 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 使用以下信息查看支持的文件类型、不同的保护级别、如何更改默认保护级别，以及哪些文件会自动从分类和保护中排除（跳过）。
 
-## <a name="file-types-supported-for-classification-only"></a>支持仅分类的文件类型
+<a id="file-types-supported-for-classification-only" class="xliff"></a>
+
+## 支持仅分类的文件类型
 
 以下文件类型仅支持分类。 当其他文件类型也受到保护时，支持对这些类型进行分类（请参阅[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)部分）。
 
@@ -57,7 +61,9 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 - **数码底片**：.dng
 
-## <a name="file-types-supported-for-protection"></a>支持保护的文件类型
+<a id="file-types-supported-for-protection" class="xliff"></a>
+
+## 支持保护的文件类型
 
 Azure 信息保护客户端支持两个不同级别的保护，如下表中所述。
 
@@ -71,7 +77,25 @@ Azure 信息保护客户端支持两个不同级别的保护，如下表中所�
 
 用户选择管理员配置的标签时，可以自动应用数据保护，也可以使用[权限级别](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels)指定自己的自定义保护设置。 
 
-### <a name="supported-file-types-for-classification-and-protection"></a>支持用于分类和保护的文件类型
+<a id="file-sizes-supported-for-protection" class="xliff"></a>
+
+### 支持保护的文件大小
+
+Azure 信息保护客户端支持保护的最大文件大小。
+
+- **Office 文件：**
+    
+    |Office 应用程序|支持的最大文件大小|
+    |--------------------------------|-------------------------------------|
+    |Word 2007（仅受 AD RMS 支持）<br /><br />Word 2010<br /><br />Word 2013<br /><br />Word 2016|32 位：512 MB<br /><br />64 位：512 MB
+    |Excel 2007（仅受 AD RMS 支持）<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016|32 位：2 GB<br /><br />64 位：仅受可用磁盘空间和内存限制|
+    |PowerPoint 2007（仅受 AD RMS 支持）<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016|32 位：仅受可用磁盘空间和内存限制<br /><br />64 位：仅受可用磁盘空间和内存限制
+
+- **所有其他文件**：1 GB
+
+<a id="supported-file-types-for-classification-and-protection" class="xliff"></a>
+
+### 支持用于分类和保护的文件类型
 
 下表列出了文件类型的一个子集，这些文件类型支持 Azure 信息保护客户端提供的本机保护，并可进行分类。 
 
@@ -85,7 +109,7 @@ Azure 信息保护客户端支持两个不同级别的保护，如下表中所�
 |.txt|。ptxt|
 |。xml|.pxml|
 |。jpg|.pjpg|
-|。jpeg|.ppng|
+|。jpeg|。pjpeg|
 |。pdf|。ppdf|
 |。png|。ppng|
 |.tif|.ptif|
@@ -104,7 +128,9 @@ Azure 信息保护客户端支持两个不同级别的保护，如下表中所�
 |----------------------------------|----------------------------------|
 |。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm|。pptx<br /><br />。thmx<br /><br />。xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx<br /><br />.xps|
 
-### <a name="changing-the-default-protection-level-of-files"></a>更改文件的默认保护级别
+<a id="changing-the-default-protection-level-of-files" class="xliff"></a>
+
+### 更改文件的默认保护级别
 你可以通过编辑注册表来更改 Azure 信息保护客户端保护文件的方式。 例如，可以强制 Azure 信息保护客户端向支持本机保护的文件提供常规保护。
 
 可能要执行此操作的原因是：
@@ -153,7 +179,9 @@ Azure 信息保护客户端支持两个不同级别的保护，如下表中所�
 
 有关其他信息，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 
 
-## <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client"></a>Azure 信息保护客户端从分类和保护中排除的文件类型
+<a id="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client" class="xliff"></a>
+
+## Azure 信息保护客户端从分类和保护中排除的文件类型
 
 为了帮助阻止用户更改对计算机操作至关重要的文件，某些文件类型和文件夹会自动从分类和保护中排除。 如果用户尝试对这些文件进行分类或保护，会看到一条消息，显示这些文件被排除。
 
@@ -166,8 +194,12 @@ Azure 信息保护客户端支持两个不同级别的保护，如下表中所�
     - \AppData（适用于所有用户）
 
 
-## <a name="next-steps"></a>后续步骤
+<a id="next-steps" class="xliff"></a>
+
+## 后续步骤
 现在你已识别了 Azure 信息保护客户端支持的文件类型，若要了解支持此客户端所需的其他信息，请参阅以下内容：
+
+- [自定义](client-admin-guide-customizations.md)
 
 - [客户端文件和使用情况日志记录](client-admin-guide-files-and-logging.md)
 

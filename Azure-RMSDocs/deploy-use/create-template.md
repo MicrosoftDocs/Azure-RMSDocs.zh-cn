@@ -4,7 +4,7 @@ description: "有关在 Azure 经典门户中创建和管理自定义模板的�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/28/2017
+ms.date: 05/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,26 +12,35 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fe569124494f837e770e5f1f8c6de0c2188a6e40
-ms.sourcegitcommit: ed954c84c9009d205638f0ad54fdbfc02ef5b92c
-translationtype: HT
+ms.openlocfilehash: 56a17c745ba55c2c7b97bd444be42e3554e795b9
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="create-configure-and-publish-a-custom-template"></a>创建、配置和发布自定义模板
+<a id="create-configure-and-publish-a-custom-template" class="xliff"></a>
+
+# 创建、配置和发布自定义模板
 
 >*适用于：Azure 信息保护、Office 365*
 
 
 你可以在 Azure 经典门户中创建和管理自定义模板。 可以直接从 Azure 经典门户执行这些操作，也可以登录到 Office 365 管理中心，并选择 Rights Management 的“高级功能”，它会将你重定向至 Azure 经典门户。
 
+> [!TIP]
+> 用于配置 Azure 权限管理保护的模板和新选项将移动到 Azure 门户。 此功能目前处于预览状态。 有关详细信息，请参阅以下博客文章公告：[Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/)（Azure 信息保护统一管理现为预览版） 
+
 必须是全局管理员才能在 Azure 经典门户中创建和管理模板。 如果已将 Azure Rights Management 服务的全局管理员角色分配给其他用户，他们也可以创建和管理模板，但必须使用 [PowerShell](configure-templates-with-powershell.md)。 有关详细信息，请参阅[是否必须是全局管理员才能配置 Azure RMS？我可以委派给其他管理员吗？](../get-started/faqs-rms.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 请使用以下过程为权限管理创建、配置和发布自定义模板。
 
-## <a name="to-create-a-custom-template"></a>创建自定义模板
+<a id="to-create-a-custom-template" class="xliff"></a>
+
+## 创建自定义模板
 
 1.  根据你是登录到 Office 365 管理中心还是登录到 Azure 经典门户，执行以下操作之一：
 
-    -   在 **Office 365 管理中心**，导航取决于你是使用 Office 365 管理中心预览版（以及哪个版本），还是使用 Office 365 经典管理中心。 但是，对于所有版本，都可直接转到 [rights management](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx) 页： 
+    -   可以从“Office 365 管理中心”直接访问[权限管理](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx)页： 
 
         1.  在“其他配置”部分中，单击“高级功能”。
 
@@ -67,7 +76,9 @@ translationtype: HT
 
 4. 在“开始使用 Rights Management”快速启动页中，现在可单击“管理你的权限策略模板”。 你将看到新创建的模板已添加到模板列表中，其状态为“已存档” 。 在这个阶段，模板已创建但尚未配置，对用户是不可见的。
 
-## <a name="to-configure-and-publish-a-custom-template"></a>配置和发布自定义模板
+<a id="to-configure-and-publish-a-custom-template" class="xliff"></a>
+
+## 配置和发布自定义模板
 
 1.  在 Azure 经典门户的“模板”页中选择你新创建的模板。
 
@@ -159,7 +170,9 @@ translationtype: HT
 > [!WARNING]
 > 当你对以前保存的模板进行更改时，客户端将不会看到对模板的这些更改，直至这些模板在它们的计算机上刷新。 有关详细信息，请参阅[为用户刷新模板](refresh-templates.md)。
 
-## <a name="see-also"></a>另請參閱
+<a id="see-also" class="xliff"></a>
+
+## 另請參閱
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

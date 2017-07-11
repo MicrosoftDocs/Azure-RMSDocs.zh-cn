@@ -4,7 +4,7 @@ description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 70c358954a39b02610a77ec81074379dc574158b
-ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
-translationtype: HT
+ms.openlocfilehash: 9ee487f65f417c9faaf71f3c50b5d4e35659c55f
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="azure-information-protection-client-version-release-history"></a>Azure 信息保护客户端：版本发行历史记录
+<a id="azure-information-protection-client-version-release-history" class="xliff"></a>
+
+# Azure 信息保护客户端：版本发行历史记录
 
 >*适用于：Azure 信息保护*
 
@@ -31,7 +35,37 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 >  
 > 如果仍有问题，请参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
-## <a name="version-14210"></a>版本 1.4.21.0
+
+<a id="version-172100" class="xliff"></a>
+
+## 版本 1.7.210.0
+
+**发布日期**：2017/06/06
+
+此版本包括 RMS 客户端的 MSIPC 1.0.2217.1 版本。
+
+**修补程序**：
+
+- 未连接到 Internet 但具备有效 Azure 信息保护策略的计算机现在支持所有标记和分类 cmdlet。
+
+- 为保持一致性，[Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) cmdlet 的输出参数从英式英语 (IsLabelled) 更改为美式英语 (IsLabeled)。 如果你有用于查找此参数的脚本或自动化进程，请更新此参数的拼写。
+
+- 稳定性的常规修复包括：
+
+    - 对于 Outlook：修复崩溃、高内存消耗和菜单显示问题。
+    
+    - 对于 Word、Excel 和 PowerPoint：修复 CPU 使用率过高、保存大型 Excel 文件时的显示问题或应用程序停止响应等问题。 
+    
+    此外，对于这些应用程序，若要提高使用 SharePoint Online 和 OneDrive for Business 的 Office 2016 性能，请在文件关闭而不是保存时（自动保存或用户选择保存）应用自动和建议标记。 同样，如果设置“所有文档和电子邮件都必须具有一个标签”处于启用状态，那么在该文件关闭之前，系统不会提示用户选择标签。 Word 2016 和 Excel 2016 为例外情况，用户选择“另存为”选项。 然后，此操作触发这些标记行为（如果已配置）。 
+
+**新增功能**：
+
+- 新的 PowerShell cmdlet：[Set-AIPFileClassification](/powershell/module/azureinformationprotection/Set-AIPFileClassification)。 运行此 cmdlet 时，它会检查文件内容，并根据你在 Azure 信息保护策略中指定的条件自动将标签应用到未标记的文件。
+
+
+<a id="version-14210" class="xliff"></a>
+
+## 版本 1.4.21.0
 
 **发布时间**：2017 年 3 月 15 日
 
@@ -58,7 +92,9 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 - 对于 PDF 文件，查看器现支持搜索、缩放和旋转等选项。 若要使用这些选项，请右键单击查看器中显示的文件。
 
 
-## <a name="version-131552"></a>版本 1.3.155.2
+<a id="version-131552" class="xliff"></a>
+
+## 版本 1.3.155.2
 
 **发布日期**：2017/02/08
 
@@ -86,7 +122,9 @@ Microsoft .NET Framework
 - [Azure 信息保护用户指南](client-user-guide.md)
 
 
-## <a name="version-1240"></a>版本 1.2.4.0
+<a id="version-1240" class="xliff"></a>
+
+## 版本 1.2.4.0
 
 **发布日期**：2016/10/27
 
@@ -104,13 +142,17 @@ Microsoft .NET Framework
 
     若要详细了解此选项，请参阅管理员指南中的[其他检查和故障排除](client-admin-guide.md#additional-checks-and-troubleshooting)部分。
 
-## <a name="version-11230"></a>版本 1.1.23.0
+<a id="version-11230" class="xliff"></a>
+
+## 版本 1.1.23.0
 
 **发布日期**：2016/10/01
 
 正式发布。
 
-## <a name="next-steps"></a>后续步骤
+<a id="next-steps" class="xliff"></a>
+
+## 后续步骤
 
 有关安装客户端的详细信息：
 
