@@ -4,18 +4,21 @@ description: "如果选择具有 Azure 信息保护的 HYOK (AD RMS) 保护，�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/02/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 984bc844187a419cb73ab30527278d1762b70fcb
-ms.sourcegitcommit: 45053160d956587fcf45e021065e452a4c48aa4c
+ms.openlocfilehash: ca0fe89178840917fba4ae672547f6852123d699
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 保护的自留密钥 (HYOK) 要求和限制
+<a id="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection" class="xliff"></a>
+
+# AD RMS 保护的自留密钥 (HYOK) 要求和限制
 
 >*适用于：Azure 信息保护*
 
@@ -54,7 +57,9 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 [作用域策略](configure-policy-scope.md)是一个不错的方法，可确保只有需要应用 AD RMS 保护的用户才能查看为 AD RMS 保护配置的标签。 
 
-## <a name="additional-limitations-when-using-hyok"></a>使用 HYOK 时的其他限制
+<a id="additional-limitations-when-using-hyok" class="xliff"></a>
+
+## 使用 HYOK 时的其他限制
 
 将 AD RMS 保护与 Azure 信息保护联用，不仅不支持使用 Azure RMS 保护时可获得的所列益处，还具有以下限制：
 
@@ -70,7 +75,9 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
     
     唯一的解决方法是关闭电子邮件并重新启动。 与此类似，如果用户首先选择了应用 Azure RMS 保护的标签，然后改为使用应用 AD RMS 保护的标签，也将产生相同的限制。
 
-## <a name="requirements-for-hyok"></a>HYOK 要求
+<a id="requirements-for-hyok" class="xliff"></a>
+
+## HYOK 要求
 
 确保你的 AD RMS 部署满足以下要求，以便为 Azure 信息保护提供 AD RMS 保护。
 
@@ -102,7 +109,9 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 有关 AD RMS 的部署信息和说明，请参阅 Windows Server 库中的 [Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx)。 
 
 
-## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>查找相关信息以使用 Azure 信息保护标签指定 AD RMS 保护
+<a id="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label" class="xliff"></a>
+
+## 查找相关信息以使用 Azure 信息保护标签指定 AD RMS 保护
 
 在配置用于 **HYOK (AD RMS)** 保护的标签时，必须指定 AD RMS 群集的模板 GUID 和授权 URL。 你可以从 Active Directory Rights Management Services 控制台中找到这两个值：
 
@@ -112,7 +121,9 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
     
     如果你有一个 Extranet 授权值和一个 Intranet 授权值，并且两个值不同：仅当与定义为具有显式点对点信任关系的合作伙伴共享受保护的文档或电子邮件时，才指定 Extranet 值。 否则使用 Intranet 值，并确保针对 Azure 信息保护使用 AD RMS 保护的所有客户端计算机均通过 Intranet 连接进行连接（例如，远程计算机使用 VPN 连接）。
 
-## <a name="next-steps"></a>后续步骤
+<a id="next-steps" class="xliff"></a>
+
+## 后续步骤
 
 若要了解有关此功能的详细信息和使用指南，请参阅博客文章公告 [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)（具有 HYOK（自留密钥）的 Azure 信息保护）。
 
