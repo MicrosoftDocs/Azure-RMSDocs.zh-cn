@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="classify-and-protect-a-file-or-email-by-using-azure-information-protection" class="xliff"></a>
-
-# 使用 Azure 信息保护对文件或电子邮件进行分类和保护
+# <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
 
@@ -28,9 +26,7 @@ ms.lasthandoff: 06/30/2017
 
 但是，你也可以使用**文件资源管理器**对文件进行分类和保护，此方法支持其他文件类型，并且是一次性分类和保护多个文件的便捷方式。 此方法支持保护 Office 文档、PDF 文件、文本和图像文件，以及各种其他文件。 
 
-<a id="safely-share-a-file-with-people-outside-your-organization" class="xliff"></a>
-
-### 与组织外部人员安全共享文件
+### <a name="safely-share-a-file-with-people-outside-your-organization"></a>与组织外部人员安全共享文件
 
 受保护文件可安全地与他人共享。 例如，将文件附加到电子邮件，或从你的 SharePoint 站点发送邀请。
 
@@ -41,9 +37,7 @@ ms.lasthandoff: 06/30/2017
 如果使用自定义权限保护文件，请使用标准共享机制共享文件。 如果你要与之共享的人员是第一次接收受保护文件，他们可能需要阅读说明才能查看。 对于这些人，你可以复制并粘贴以下消息：**我已使用 Microsoft Azure 信息保护对此文件提供保护。若是首次使用，请参阅这些[说明](https://aka.ms/rms-signup)。**
 
 
-<a id="using-office-apps-to-classify-and-protect-your-documents-and-emails" class="xliff"></a>
-
-## 使用 Office 应用对文档和电子邮件进行分类和保护
+## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>使用 Office 应用对文档和电子邮件进行分类和保护
 
 使用 Azure 信息保护栏并选择其中一个已为你配置的标签。 
 
@@ -59,19 +53,13 @@ ms.lasthandoff: 06/30/2017
 
 - 管理员配置了建议提示，当检测到敏感数据时将提示选择特定标签。 你可以接受此建议（应用标签），或拒绝建议（不应用建议标签）。
 
-<a id="exceptions-for-the-azure-information-protection-bar" class="xliff"></a>
+### <a name="exceptions-for-the-azure-information-protection-bar"></a>Azure 信息保护栏的异常 
 
-### Azure 信息保护栏的异常 
-
-<a id="dont-see-this-information-protection-bar-in-your-office-apps" class="xliff"></a>
-
-##### 你的 Office 应用程序中看不到此信息保护栏？
+##### <a name="dont-see-this-information-protection-bar-in-your-office-apps"></a>你的 Office 应用程序中看不到此信息保护栏？
 
 - 你可能没有[安装](install-client-app.md) Azure 信息保护客户端，或客户端正以[仅保护模式](client-protection-only-mode.md)运行。
  
-<a id="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar" class="xliff"></a>
-
-##### 你希望看到的标签没有显示在栏上？ 
+##### <a name="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar"></a>你希望看到的标签没有显示在栏上？ 
 
 - 如果管理员最近为你配置了新标签，请尝试关闭 Office 应用程序的所有实例，然后重新打开。 此操作将检查对你的标签所做的更改。
 
@@ -79,9 +67,7 @@ ms.lasthandoff: 06/30/2017
 
 - 此标签采用的作用域策略可能不包括你的帐户。 请与你的技术支持或管理员一起检查。
 
-<a id="set-custom-permissions-for-a-document" class="xliff"></a>
-
-### 设置文档的自定义权限
+### <a name="set-custom-permissions-for-a-document"></a>设置文档的自定义权限
 
 可以指定你自己的文档保护设置，而不使用管理员可能与选定标签一起添加的保护设置。
 
@@ -104,9 +90,7 @@ ms.lasthandoff: 06/30/2017
 5. 单击“**应用**”，然后等待“**已应用自定义权限**”消息。 然后单击 **“关闭”**。
 
 
-<a id="keyboard-shortcuts-for-the-azure-information-protection-bar" class="xliff"></a>
-
-### Azure 信息保护栏的键盘快捷方式
+### <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Azure 信息保护栏的键盘快捷方式
 
 若要使用键盘快捷方式访问 Azure 信息保护栏，请使用以下组合键：
 
@@ -114,9 +98,7 @@ ms.lasthandoff: 06/30/2017
 
 然后，使用 Tab 键选择标签和保护栏上的其他控件（“隐藏标签”图标和“删除标签”图标），按 Enter 键以将其选中。
 
-<a id="using-file-explorer-to-classify-and-protect-files" class="xliff"></a>
-
-## 使用文件资源管理器对文件进行分类和保护
+## <a name="using-file-explorer-to-classify-and-protect-files"></a>使用文件资源管理器对文件进行分类和保护
 
 使用文件资源管理器时，可快速对单个文件、多个文件或文件夹进行分类和保护。 
 
@@ -129,9 +111,7 @@ ms.lasthandoff: 06/30/2017
 管理员指南包含受支持文件类型的完整列表以及自动排除的文件和文件夹的完整列表：[受 Azure 信息保护客户端支持的文件类型](client-admin-guide-file-types.md)。
 
 
-<a id="to-classify-and-protect-a-file-by-using-file-explorer" class="xliff"></a>
-
-### 使用文件资源管理器对文件进行分类和保护
+### <a name="to-classify-and-protect-a-file-by-using-file-explorer"></a>使用文件资源管理器对文件进行分类和保护
 
 1. 在文件资源管理器中，选择你的文件、多个文件或文件夹。 右键单击，然后选择“分类和保护”。 例如：
     
@@ -172,9 +152,7 @@ ms.lasthandoff: 06/30/2017
 指定的分类和保护会保留在文件中，即使你通过电子邮件发送文件或将其保存到其他位置也是如此。 如果已保护该文件，则可跟踪用户如何使用它，如果有必要，还可撤销对它的访问。 有关详细信息，请参阅[使用 Azure 信息保护时跟踪和撤销已保护的文档](client-track-revoke.md)。 
 
 
-<a id="other-instructions" class="xliff"></a>
-
-## 其他说明
+## <a name="other-instructions"></a>其他说明
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
 -   [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)

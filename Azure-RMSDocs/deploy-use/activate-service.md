@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="activating-azure-rights-management" class="xliff"></a>
-
-# 激活 Azure Rights Management
+# <a name="activating-azure-rights-management"></a>激活 Azure Rights Management
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -55,9 +53,7 @@ ms.lasthandoff: 06/30/2017
 
 3. 运行 [Enable-Aadrm](/powershell/module/aadrm/enable-aadrm)，该命令将激活 Azure Rights Management 服务。
 
-<a id="configuring-onboarding-controls-for-a-phased-deployment" class="xliff"></a>
-
-## 为分阶段部署配置加入控制
+## <a name="configuring-onboarding-controls-for-a-phased-deployment"></a>为分阶段部署配置加入控制
 如果不希望所有用户都能立即使用 Azure Rights Management 保护文件，则可以使用 [Set-AadrmOnboardingControlPolicy](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy) PowerShell 命令来配置用户加入控制。 在激活 Azure Rights Management 服务之前或之后，你可以运行此命令。
 
 > [!IMPORTANT]
@@ -91,9 +87,7 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
 使用这些加入控制时，组织中的所有用户始终可以使用由用户的子集保护的受保护内容，但他们自身将不能从客户端应用程序应用信息保护。 例如，他们将在其 Office 客户端中看不到激活 Azure Rights Management 时自动发布的默认模板，也看不到你可能会配置的自定义模板。  服务器端应用程序（如 Exchange）可以为 Rights Management 集成实现自己的每用户控制，以获得相同的结果。
 
 
-<a id="next-steps" class="xliff"></a>
-
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 为组织激活 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 之后，向用户和管理员推出 Azure 信息保护之前，可使用 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)来检查是否还需要执行其他配置步骤。 
 
 例如，你可能需要使用[自定义模板](configure-custom-templates.md)使用户更方便地对文件应用信息保护，通过安装 [Rights Management 连接器](deploy-rms-connector.md)来连接本地服务器以使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]，以及部署 [Azure 信息保护客户端](../rms-client/aip-client.md)以便对所有设备上的所有文件类型进行保护。 

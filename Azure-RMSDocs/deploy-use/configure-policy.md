@@ -18,17 +18,13 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="configuring-azure-information-protection-policy" class="xliff"></a>
-
-# 配置 Azure 信息保护策略
+# <a name="configuring-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
 >适用于：Azure 信息保护
 
 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。 然后将此策略下载到已安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#azure-信息保护客户端) 的计算机。
 
-<a id="subscription-support" class="xliff"></a>
-
-## 订阅支持
+## <a name="subscription-support"></a>订阅支持
 
 Azure 信息保护策略支持不同级别的订阅：
 
@@ -46,9 +42,7 @@ Azure 信息保护策略支持不同级别的订阅：
 
 有关如何配置作用域内策略的详细信息，请参阅[如何使用作用域内策略为特定用户配置策略](configure-policy-scope.md)。
 
-<a id="how-to-configure-the-azure-information-protection-policy" class="xliff"></a>
-
-## 如何配置 Azure 信息保护策略
+## <a name="how-to-configure-the-azure-information-protection-policy"></a>如何配置 Azure 信息保护策略
 
 1. 在新浏览器窗口中，以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。
 
@@ -91,9 +85,7 @@ Azure 信息保护附带[默认策略](configure-policy-default.md)，其中包�
 >[!NOTE]
 >客户端下载策略时，需要等待几分钟，它才能完全正常运行。 实际时间会因多种因素而异，例如策略配置的大小和复杂性以及网络连接。 如果标签生成的操作与最新更改不匹配，请等待最多 15 分钟，然后重试。
 
-<a id="configuring-your-organizations-policy" class="xliff"></a>
-
-### 配置组织的策略
+### <a name="configuring-your-organizations-policy"></a>配置组织的策略
 
 使用以下信息来帮助你配置你的 Azure 信息保护策略：
 
@@ -119,9 +111,7 @@ Azure 信息保护附带[默认策略](configure-policy-default.md)，其中包�
 
 - [如何为不同语言配置标签](configure-policy-languages.md)
 
-<a id="next-steps" class="xliff"></a>
-
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 有关如何自定义默认策略并在 Office 应用程序是查看所产生行为的示例，请尝试 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)(#azure-信息保护快速入门教程)。
 

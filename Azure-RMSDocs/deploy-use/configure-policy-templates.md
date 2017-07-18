@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="configuring-and-managing-templates-in-the-azure-information-protection-policy" class="xliff"></a>
-
-# 在 Azure 信息保护策略中配置和管理模板
+# <a name="configuring-and-managing-templates-in-the-azure-information-protection-policy"></a>在 Azure 信息保护策略中配置和管理模板
 
 >*适用于：Azure 信息保护*
 
@@ -43,9 +41,7 @@ ms.lasthandoff: 06/30/2017
 - 租户的权限管理模板显示为标签，目前也可以使用特定于分类和设置标签的配置设置。 
 
 
-<a id="considerations-for-templates-in-the-azure-portal" class="xliff"></a>
-
-## Azure 门户中的模板的注意事项
+## <a name="considerations-for-templates-in-the-azure-portal"></a>Azure 门户中的模板的注意事项
 
 在 Azure 门户中编辑这些模板或将其转换为标签之前，在 Azure 经典门户中管理模板时，请注意实现过程中的以下更改。 预期会在预览期间解决一些限制问题：
 
@@ -69,9 +65,7 @@ ms.lasthandoff: 06/30/2017
 
 - 不会从“模板”容器创建新模板；而是创建一个具有保护设置的标签，并从“保护”边栏选项卡配置使用权限和设置。 有关完整说明，请参阅[创建新模板](#to-create-a-new-template)。
 
-<a id="to-configure-the-templates-in-the-azure-information-protection-policy" class="xliff"></a>
-
-## 在 Azure 信息保护策略中配置模板
+## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>在 Azure 信息保护策略中配置模板
 
 1. 在新浏览器窗口中，以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。
 
@@ -93,9 +87,7 @@ ms.lasthandoff: 06/30/2017
 
 6. 若要使所做的更改适用于用户应用程序和服务，在“Azure 信息保护”边栏选项卡上单击“发布”。
 
-<a id="to-convert-templates-to-labels" class="xliff"></a>
-
-## 将模板转换为标签
+## <a name="to-convert-templates-to-labels"></a>将模板转换为标签
 
 如果订阅包含分类、设置标签和保护，可将模板转换为标签。 执行此操作时，将保留原始模板，但在 Azure 门户中，它现在显示为新标签的一部分。
 
@@ -115,9 +107,7 @@ ms.lasthandoff: 06/30/2017
 
 - 原始模板不再显示在“模板”下，要在 Azure 门户中进行编辑，现在可以编辑已创建的标签。 该模板仍可用于 Azure 权限管理服务，仍然可以使用 [PowerShell 命令](administer-powershell.md)进行管理。  
 
-<a id="to-create-a-new-template" class="xliff"></a>
-
-## 创建新模板
+## <a name="to-create-a-new-template"></a>创建新模板
 
 创建一个具有 Azure RMS 保护设置的新标签时，它会在后台创建一个新的自定义模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。
 
@@ -138,9 +128,7 @@ ms.lasthandoff: 06/30/2017
 5. 若要使这些模板适用于用户应用程序和服务，在“Azure 信息保护”边栏选项卡上单击“发布”。
 
 
-<a id="next-steps" class="xliff"></a>
-
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 与 Azure 信息保护策略的所有更改一样，运行 Azure 信息保护客户端的计算机可能需要 15 分钟才能完成下载这些模板的操作。 有关计算机和服务如何下载并刷新模板的信息，请参阅[为用户和服务刷新模板](refresh-templates.md)。
 

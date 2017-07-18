@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="how-to-activate-azure-rights-management-from-the-office-365-admin-center" class="xliff"></a>
-
-# 如何从 Office 365 管理中心激活 Azure 权限管理
+# <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>如何从 Office 365 管理中心激活 Azure 权限管理
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -51,9 +49,7 @@ ms.lasthandoff: 06/30/2017
 现在，应会显示“Rights Management 已激活”  和用于停用的选项。
 
 
-<a id="next-steps" class="xliff"></a>
-
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 返回 [激活 Azure Rights Management](activate-service.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

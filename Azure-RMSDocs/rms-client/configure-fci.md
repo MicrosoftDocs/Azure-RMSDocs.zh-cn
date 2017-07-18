@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="rms-protection-with-windows-server-file-classification-infrastructure-fci" class="xliff"></a>
-
-# 使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
+# <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
 >*适用于：Azure 信息保护、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2*
 
@@ -35,9 +33,7 @@ ms.lasthandoff: 06/30/2017
 
 接下来的说明适用于 Windows Server 2012 R2 或 Windows Server 2012。 如果你运行其他受支持的 Windows 版本，则可能需要调整某些步骤，以适应你的操作系统版本与本文所述的操作系统版本之间的差异。
 
-<a id="prerequisites-for-azure-rights-management-protection-with-windows-server-fci" class="xliff"></a>
-
-## 使用 Windows Server FCI 的 Azure Rights Management 保护的先决条件
+## <a name="prerequisites-for-azure-rights-management-protection-with-windows-server-fci"></a>使用 Windows Server FCI 的 Azure Rights Management 保护的先决条件
 这些说明的先决条件：
 
 -  在你将运行使用文件分类基础结构的文件资源管理器的每个文件服务器上：
@@ -60,9 +56,7 @@ ms.lasthandoff: 06/30/2017
     
 - 已将 Rights Management 模板下载到文件服务器，并标识了可保护文件的模板 ID。 若要执行此操作，请使用 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) cmdlet。 此方案不支持部门模板，因此必须使用未配置作用域的模板，或作用域配置必须包含应用程序兼容性选项，以选中“如果应用程序不支持用户标识，则向所有用户显示此模板”复选框。
 
-<a id="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection" class="xliff"></a>
-
-## 为 Azure 权限管理保护配置文件服务器资源管理器 FCI 的说明
+## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>为 Azure 权限管理保护配置文件服务器资源管理器 FCI 的说明
 按照这些说明通过使用 PowerShell 脚本作为自定义任务自动保护一个文件夹中的所有文件。 按此顺序执行这些过程：
 
 1. 保存 PowerShell 脚本
@@ -81,9 +75,7 @@ ms.lasthandoff: 06/30/2017
 
 请注意，如果更改了用于 FCI 的 Rights Management 模板，则必须在文件服务器计算机上运行 `Get-RMSTemplate -Force` 以获取更新后的模板。 然后将使用更新后的模板来保护新的文件。 如果通过对模板的更改就足以重新保护文件服务器上的文件，则可以通过以交互方式运行 Protect-RMSFile cmdlet 与对文件具有“导出”或“完全控制”使用权限的帐户来执行此操作。 如果发布了想要用于 FCI 的新模板，则还必须在此文件服务器计算机上运行 `Get-RMSTemplate -Force`。
 
-<a id="save-the-windows-powershell-script" class="xliff"></a>
-
-### 保存 Windows PowerShell 脚本
+### <a name="save-the-windows-powershell-script"></a>保存 Windows PowerShell 脚本
 
 1.  使用文件服务器资源管理器，复制用于 Azure RMS 保护的 [Windows PowerShell 脚本](fci-script.md)的内容。 粘贴该脚本的内容，并在你自己的计算机上将该文件命名为 **RMS-Protect-FCI.ps1**。
 
@@ -130,9 +122,7 @@ ms.lasthandoff: 06/30/2017
 
 现在，你可以开始配置文件服务器资源管理器。
 
-<a id="create-a-classification-property-for-rights-management-rms" class="xliff"></a>
-
-### 为 Rights Management (RMS) 创建分类属性
+### <a name="create-a-classification-property-for-rights-management-rms"></a>为 Rights Management (RMS) 创建分类属性
 
 -   在文件服务器资源管理器中，为“分类管理”创建新的本地属性：
 
@@ -146,9 +136,7 @@ ms.lasthandoff: 06/30/2017
 
 我们现在可以创建使用此属性的分类规则。
 
-<a id="create-a-classification-rule-classify-for-rms" class="xliff"></a>
-
-### 创建分类规则 (Classify for RMS)
+### <a name="create-a-classification-rule-classify-for-rms"></a>创建分类规则 (Classify for RMS)
 
 -   创建新的分类规则：
 
@@ -176,9 +164,7 @@ ms.lasthandoff: 06/30/2017
 
 虽然你可以手动运行分类规则，但是对于正在进行的操作，你将需要按计划运行此规则，以便新文件将使用 RMS 属性进行分类。
 
-<a id="configure-the-classification-schedule" class="xliff"></a>
-
-### 配置分类计划
+### <a name="configure-the-classification-schedule"></a>配置分类计划
 
 -   在“自动分类”选项卡上  ：
 
@@ -192,9 +178,7 @@ ms.lasthandoff: 06/30/2017
 
 现在你已完成分类配置，已可以配置管理任务，以将 RMS 保护应用于这些文件。
 
-<a id="create-a-custom-file-management-task-protect-files-with-rms" class="xliff"></a>
-
-### 创建自定义文件管理任务（使用 RMS 保护文件）
+### <a name="create-a-custom-file-management-task-protect-files-with-rms"></a>创建自定义文件管理任务（使用 RMS 保护文件）
 
 -   在“文件管理任务”中，创建新的文件管理任务 ：
 
@@ -259,9 +243,7 @@ ms.lasthandoff: 06/30/2017
 
         -   **连续对新文件运行**：选中此复选框。
 
-<a id="test-the-configuration-by-manually-running-the-rule-and-task" class="xliff"></a>
-
-### 通过手动运行规则和任务来测试配置
+### <a name="test-the-configuration-by-manually-running-the-rule-and-task"></a>通过手动运行规则和任务来测试配置
 
 1.  运行分类规则：
 
@@ -301,9 +283,7 @@ ms.lasthandoff: 06/30/2017
 
 在确认这些任务成功运行之后，可以关闭文件资源管理器。 计划的任务运行时，将自动对新文件进行分类并给予保护。 
 
-<a id="modifying-the-instructions-to-selectively-protect-files" class="xliff"></a>
-
-## 修改说明可有选择性地保护文件
+## <a name="modifying-the-instructions-to-selectively-protect-files"></a>修改说明可有选择性地保护文件
 如果你让前面的说明正常操作，则随后可很容易地修改它们以用于更复杂的配置。 例如，使用同一个脚本保护文件，但只针对包含个人身份信息的文件，然后可能选择具有更多限制权限的模板。
 
 为此，请使用内置分类属性之一（例如，**个人身份信息**）或创建你自己的新属性。 然后创建一个使用此属性的新规则。 例如，可能会选择“内容分类器”，为“个人身份信息”属性选择值“高”，并配置字符串或表达式模式（如字符串“出生日期”）以标识要为此属性配置的文件。

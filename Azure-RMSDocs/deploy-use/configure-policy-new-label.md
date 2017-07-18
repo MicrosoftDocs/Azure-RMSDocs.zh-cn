@@ -16,9 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="how-to-create-a-new-label-for-azure-information-protection" class="xliff"></a>
-
-# 如何创建 Azure 信息保护的标签
+# <a name="how-to-create-a-new-label-for-azure-information-protection"></a>如何创建 Azure 信息保护的标签
 
 >*适用于：Azure 信息保护*
 
@@ -48,9 +46,7 @@ ms.lasthandoff: 06/30/2017
 
 5. 如果你希望以不同的语言为用户显示新标签名称和说明，请按照[如何为不同的语言配置标签](configure-policy-languages.md)中的过程操作。 
 
-<a id="next-steps" class="xliff"></a>
-
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
