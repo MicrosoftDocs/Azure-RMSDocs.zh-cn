@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="administering-the-azure-rights-management-service-by-using-windows-powershell" class="xliff"></a>
-
-# 使用 Windows PowerShell 管理 Azure Rights Management 服务
+# <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>使用 Windows PowerShell 管理 Azure Rights Management 服务
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -37,9 +35,7 @@ ms.lasthandoff: 06/30/2017
 
 除了此服务端 PowerShell 模块，Azure 信息保护客户端还将安装一个补充 PowerShell 模块 **AzureInformationProtection**。 此客户端模块支持对多个文件进行分类和保护，这样可以方便某些操作，例如批量保护文件夹中的所有文件。 有关详细信息，请参阅管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](../rms-client/client-admin-guide-powershell.md)。
 
-<a id="cmdlets-grouped-by-administration-task" class="xliff"></a>
-
-## 按管理任务对 cmdlet 进行分组
+## <a name="cmdlets-grouped-by-administration-task"></a>按管理任务对 cmdlet 进行分组
 
 |如果你需要…|…请使用以下 cmdlet|
 |-------------------|------------------------------|

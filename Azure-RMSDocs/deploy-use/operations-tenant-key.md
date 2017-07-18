@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="operations-for-your-azure-information-protection-tenant-key" class="xliff"></a>
-
-# Azure 信息保护租户密钥的操作
+# <a name="operations-for-your-azure-information-protection-tenant-key"></a>Azure 信息保护租户密钥的操作
 
 >*适用于：Azure 信息保护、Office 365*
 

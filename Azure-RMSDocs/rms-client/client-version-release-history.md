@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="azure-information-protection-client-version-release-history" class="xliff"></a>
-
-# Azure 信息保护客户端：版本发行历史记录
+# <a name="azure-information-protection-client-version-release-history"></a>Azure 信息保护客户端：版本发行历史记录
 
 >*适用于：Azure 信息保护*
 
@@ -36,9 +34,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 > 如果仍有问题，请参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
 
-<a id="version-172100" class="xliff"></a>
-
-## 版本 1.7.210.0
+## <a name="version-172100"></a>版本 1.7.210.0
 
 **发布日期**：2017/06/06
 
@@ -63,9 +59,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 - 新的 PowerShell cmdlet：[Set-AIPFileClassification](/powershell/module/azureinformationprotection/Set-AIPFileClassification)。 运行此 cmdlet 时，它会检查文件内容，并根据你在 Azure 信息保护策略中指定的条件自动将标签应用到未标记的文件。
 
 
-<a id="version-14210" class="xliff"></a>
-
-## 版本 1.4.21.0
+## <a name="version-14210"></a>版本 1.4.21.0
 
 **发布时间**：2017 年 3 月 15 日
 
@@ -92,9 +86,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 - 对于 PDF 文件，查看器现支持搜索、缩放和旋转等选项。 若要使用这些选项，请右键单击查看器中显示的文件。
 
 
-<a id="version-131552" class="xliff"></a>
-
-## 版本 1.3.155.2
+## <a name="version-131552"></a>版本 1.3.155.2
 
 **发布日期**：2017/02/08
 
@@ -122,9 +114,7 @@ Microsoft .NET Framework
 - [Azure 信息保护用户指南](client-user-guide.md)
 
 
-<a id="version-1240" class="xliff"></a>
-
-## 版本 1.2.4.0
+## <a name="version-1240"></a>版本 1.2.4.0
 
 **发布日期**：2016/10/27
 
@@ -142,17 +132,13 @@ Microsoft .NET Framework
 
     若要详细了解此选项，请参阅管理员指南中的[其他检查和故障排除](client-admin-guide.md#additional-checks-and-troubleshooting)部分。
 
-<a id="version-11230" class="xliff"></a>
-
-## 版本 1.1.23.0
+## <a name="version-11230"></a>版本 1.1.23.0
 
 **发布日期**：2016/10/01
 
 正式发布。
 
-<a id="next-steps" class="xliff"></a>
-
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 有关安装客户端的详细信息：
 

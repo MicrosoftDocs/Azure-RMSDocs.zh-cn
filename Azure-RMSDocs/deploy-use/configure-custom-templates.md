@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="configuring-custom-templates-for-the-azure-rights-management-service" class="xliff"></a>
-
-# 为 Azure Rights Management 服务配置自定义模板
+# <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>为 Azure Rights Management 服务配置自定义模板
 
 >*适用于：Azure 信息保护、Office 365*
 

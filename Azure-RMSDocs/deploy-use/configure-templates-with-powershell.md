@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="powershell-reference-for-custom-templates" class="xliff"></a>
-
-# 自定义模板的 PowerShell 参考
+# <a name="powershell-reference-for-custom-templates"></a>自定义模板的 PowerShell 参考
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -55,9 +53,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另请参阅
+## <a name="see-also"></a>另请参阅
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

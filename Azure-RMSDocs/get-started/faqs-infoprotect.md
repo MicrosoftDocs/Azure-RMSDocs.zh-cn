@@ -18,17 +18,13 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection" class="xliff"></a>
-
-# 有关 Azure 信息保护中的分类和标签的常见问题
+# <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
 >*适用于：Azure 信息保护、Office 365*
 
 遇到有关 Azure 信息保护的专门与分类和标签有关的问题？  请查看此处是否有答案。 
 
-<a id="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection" class="xliff"></a>
-
-## 使用 Azure 信息保护中的分类功能可以做些什么？
+## <a name="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection"></a>使用 Azure 信息保护中的分类功能可以做些什么？
 
 请尝试学习我们的快速入门教程，以便在数分钟内了解相关功能：[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护快速入门教程）。
 
@@ -48,23 +44,17 @@ ms.lasthandoff: 06/30/2017
 
 2 月发布的版本将删除很多之前的限制。 有关详细信息，请参阅[博客文章通告](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/08/azure-information-protection-december-update-moves-to-general-availability/)。
 
-<a id="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels" class="xliff"></a>
-
-## 是否需要是全局管理员才能配置分类和标签？
+## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>是否需要是全局管理员才能配置分类和标签？
 
 若要配置 Azure 信息保护策略，不必再以 Azure Active Directory 全局管理员的身份登录到 Azure 门户。 现在还可以使用具有安全管理员角色的帐户执行此操作。
 
 如果在安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)时选择安装演示策略，则无需登录门户即可查看和试用标签功能。 演示策略在本地安装 Azure 信息保护的默认策略，因此可以尝试为文档和电子邮件设置标签，但是，在未登录 Azure 门户的情况下将无法更改或添加新标签。 
 
-<a id="which-options-in-the-azure-portal-are-p2" class="xliff"></a>
-
-## Azure 门户中的哪些选项是 P2？
+## <a name="which-options-in-the-azure-portal-are-p2"></a>Azure 门户中的哪些选项是 P2？
 
 Azure 门户中需要 Azure 信息保护高级版 2 (P2) 订阅的选项现在具有弹出消息信息，便于识别。 若要深入了解 P1 和 P1 订阅中包含的功能信息，请参阅 Azure 信息保护站点中的[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。
 
-<a id="can-a-file-have-more-than-one-classification" class="xliff"></a>
-
-## 文件是否可以有多个分类？
+## <a name="can-a-file-have-more-than-one-classification"></a>文件是否可以有多个分类？
 
 用户一次仅可为每个文档或电子邮件选择一个标签，这通常只会产生一个分类。 但如果用户选择子标签，这实际上会同时应用两个标签；主标签和次要标签。 通过使用子标签，文件可以有两个分类，表示附加控制级别的父\子关系。
 
@@ -72,21 +62,15 @@ Azure 门户中需要 Azure 信息保护高级版 2 (P2) 订阅的选项现在�
 
 使用子标签时，请不要在主标签处配置可视标记、保护和条件。 使用子级别时，请仅在子级别配置这些设置。 如果在主标签及其子标签上配置这些设置，那么子标签上的设置具有更高优先级。
 
-<a id="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling" class="xliff"></a>
-
-## 标记一封电子邮件时，是否有任何附件会自动获得相同的标记？
+## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>标记一封电子邮件时，是否有任何附件会自动获得相同的标记？
 
 不能。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 但是，如果电子邮件的标签应用了保护，则该保护也适用于附件。
 
-<a id="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection" class="xliff"></a>
-
-## DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
+## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
 
 因为 Azure 信息保护将永久性元数据用于分类，其中包括明文标签，所以该信息可以被 DLP 解决方案和其他应用读取。 在文件中，此元数据存储在自定义属性中。 在电子邮件中，此信息位于电子邮件标头中。
 
-<a id="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification" class="xliff"></a>
-
-## 对于电子邮件来说，Azure 信息保护分类与 Exchange 邮件分类有什么不同？
+## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>对于电子邮件来说，Azure 信息保护分类与 Exchange 邮件分类有什么不同？
 
 Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分类，且独立于 Azure 信息保护分类执行。 
 

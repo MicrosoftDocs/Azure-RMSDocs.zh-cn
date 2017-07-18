@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="planning-and-implementing-your-azure-information-protection-tenant-key" class="xliff"></a>
-
-# 计划和实施 Azure 信息保护租户密钥
+# <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -40,9 +38,7 @@ ms.lasthandoff: 06/30/2017
 如有需要，可以在部署后通过使用 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) cmdlet 来更改租户密钥拓扑。
 
 
-<a id="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok" class="xliff"></a>
-
-## 选择你的租户密钥拓扑：由 Microsoft 管理（默认设置）或由你管理 (BYOK)
+## <a name="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok"></a>选择你的租户密钥拓扑：由 Microsoft 管理（默认设置）或由你管理 (BYOK)
 确定哪种租户密钥拓扑最适合你的组织。 默认情况下，Azure 信息保护生成你的租户密钥，并管理租户密钥生命周期的大多数方面。 这是最简单的选项，管理开销最低。 大多数情况下，你甚至不需要知道自己有租户密钥。 你只需注册 Azure 信息保护，密钥管理过程的剩余部分将由 Microsoft 处理。
 
 或者，你可能希望通过使用 [Azure 密钥保管库](https://azure.microsoft.com/services/key-vault/)完全控制你的租户密钥。 此方案涉及到创建你的租户密钥并将主控副本保存在本地。 这种方案通常称为自带密钥 (BYOK)。 使用这种选项的过程如下：
@@ -58,9 +54,7 @@ ms.lasthandoff: 06/30/2017
 > [!NOTE]
 > 作为一种附加保护措施，Azure 密钥保管库在位于北美、EMEA（欧洲、中东和非州）和亚洲等地区的数据中心使用单独的安全域。 对于 Azure 的其他实例，如 Microsoft Azure 德国和 Azure 政府。 管理自己的租户密钥时，它将关联到你的 Azure 信息保护租户注册所在地区或实例的安全域。 例如，欧洲客户的租户密钥无法在北美或亚洲的数据中心使用。
 
-<a id="the-tenant-key-lifecycle" class="xliff"></a>
-
-## 租户密钥生命周期
+## <a name="the-tenant-key-lifecycle"></a>租户密钥生命周期
 如果你决定由 Microsoft 管理你的租户密钥，Microsoft 将处理大多数密钥生命周期操作。 但是，如果你决定自行管理租户密钥，则要负责 Azure 密钥保管库中的很多密钥生命周期操作，以及其他一些过程。
 
 下图显示和比较了这两个选项。 第一张图显示在由 Microsoft 管理租户密钥的默认配置中，管理员开销非常低。
@@ -75,9 +69,7 @@ ms.lasthandoff: 06/30/2017
 
 如果你决定自行管理租户密钥，请阅读以下部分以获取更多信息。
 
-<a id="implementing-your-azure-information-protection-tenant-key" class="xliff"></a>
-
-## 实施 Azure 信息保护租户密钥
+## <a name="implementing-your-azure-information-protection-tenant-key"></a>实施 Azure 信息保护租户密钥
 
 如果你决定自行生成和管理租户密钥，请使用本部分中的信息和过程；“自带密钥”(BYOK) 方案：
 
@@ -87,9 +79,7 @@ ms.lasthandoff: 06/30/2017
 > 
 > 如果你的组织制定了关于密钥处理的特定策略，也[请与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)。
 
-<a id="prerequisites-for-byok" class="xliff"></a>
-
-### BYOK 的先决条件
+### <a name="prerequisites-for-byok"></a>BYOK 的先决条件
 有关自带密钥 (BYOK) 的先决条件列表，请参阅以下表格。
 
 |要求|更多信息|
@@ -101,9 +91,7 @@ ms.lasthandoff: 06/30/2017
 
 有关 Thales HSM 及其如何与 Azure 密钥保管库一起使用的详细信息，请参阅 [Thales website](https://www.thales-esecurity.com/msrms/cloud)（Thales 网站）。
 
-<a id="instructions-for-byok" class="xliff"></a>
-
-### BYOK 的说明
+### <a name="instructions-for-byok"></a>BYOK 的说明
 
 若要生成你自己的租户密钥并将其传送到 Azure 密钥保管库，请按照 Azure 密钥保管库文档 [How to generate and transfer HSM-protected keys for Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/)（如何为 Azure 密钥保管库生成和传输受 HSM 保护的密钥）中的过程。
 
@@ -131,9 +119,7 @@ ms.lasthandoff: 06/30/2017
 最后，如果已激活 Azure 权限管理服务，请运行 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) 以告诉 Azure 权限管理将此密钥用作 Azure 权限管理服务的活动租户密钥。 如果不执行此步骤，Azure 权限管理则将继续使用激活服务时自动创建的默认的 Microsoft 托管密钥。
 
 
-<a id="next-steps" class="xliff"></a>
-
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 现在，你已经规划并根据需要生成了租户密钥，请执行以下操作：
 

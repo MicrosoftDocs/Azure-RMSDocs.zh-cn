@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="create-configure-and-publish-a-custom-template" class="xliff"></a>
-
-# 创建、配置和发布自定义模板
+# <a name="create-configure-and-publish-a-custom-template"></a>创建、配置和发布自定义模板
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -34,9 +32,7 @@ ms.lasthandoff: 06/30/2017
 
 请使用以下过程为权限管理创建、配置和发布自定义模板。
 
-<a id="to-create-a-custom-template" class="xliff"></a>
-
-## 创建自定义模板
+## <a name="to-create-a-custom-template"></a>创建自定义模板
 
 1.  根据你是登录到 Office 365 管理中心还是登录到 Azure 经典门户，执行以下操作之一：
 
@@ -76,9 +72,7 @@ ms.lasthandoff: 06/30/2017
 
 4. 在“开始使用 Rights Management”快速启动页中，现在可单击“管理你的权限策略模板”。 你将看到新创建的模板已添加到模板列表中，其状态为“已存档” 。 在这个阶段，模板已创建但尚未配置，对用户是不可见的。
 
-<a id="to-configure-and-publish-a-custom-template" class="xliff"></a>
-
-## 配置和发布自定义模板
+## <a name="to-configure-and-publish-a-custom-template"></a>配置和发布自定义模板
 
 1.  在 Azure 经典门户的“模板”页中选择你新创建的模板。
 
@@ -170,9 +164,7 @@ ms.lasthandoff: 06/30/2017
 > [!WARNING]
 > 当你对以前保存的模板进行更改时，客户端将不会看到对模板的这些更改，直至这些模板在它们的计算机上刷新。 有关详细信息，请参阅[为用户刷新模板](refresh-templates.md)。
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [为 Azure Rights Management 配置自定义模板](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

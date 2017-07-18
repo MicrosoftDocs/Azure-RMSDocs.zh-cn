@@ -16,9 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
 ---
-<a id="step-1-activate-the-rights-management-service" class="xliff"></a>
-
-# 步骤 1：激活权限管理服务
+# <a name="step-1-activate-the-rights-management-service"></a>步骤 1：激活权限管理服务
  
 >*适用于：Azure 信息保护*
 
@@ -31,9 +29,7 @@ ms.lasthandoff: 06/30/2017
 
 在本教程中，将直接转到 Office 365 管理员管理门户中的“激活”页面。 但是，如果想要从 Office 365 管理门户导航到此页而不是直接转到此页，请参阅[激活 Azure 权限管理](../deploy-use/activate-service.md)中的完整说明。 如果你有权访问 Azure 门户，但无权访问 Office 365 管理员门户，也可以使用这些完整说明。
 
-<a id="to-activate-the-rights-management-service" class="xliff"></a>
-
-## 激活 Rights Management 服务
+## <a name="to-activate-the-rights-management-service"></a>激活 Rights Management 服务
 
 1. 打开一个新的浏览器窗口并直接转到 Office 365 管理员的 [Rights Management 激活页](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx)。
     
