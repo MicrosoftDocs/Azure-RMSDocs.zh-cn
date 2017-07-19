@@ -16,9 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/05/2017
 ---
-<a id="how-to-configure-labels-for-different-languages-in-azure-information-protection" class="xliff"></a>
-
-# 如何在 Azure 信息保护中配置不同语言标签
+# <a name="how-to-configure-labels-for-different-languages-in-azure-information-protection"></a>如何在 Azure 信息保护中配置不同语言标签
 
 >适用于：Azure 信息保护
 
@@ -29,9 +27,7 @@ ms.lasthandoff: 07/05/2017
 
 为 Office 和 Windows 选择与用户的语言设置相匹配的语言。 这些标签名称和说明随后会分别显示在 Office 应用中的 Azure 信息保护栏，以及“分类和保护 - Azure 信息保护”对话框中。 有关所选语言的详细信息，请参阅此页上的 [Azure 信息保护客户端如何确定要显示的语言](#how-the-azure-information-protection-client-determines-the-language-to- display)部分。 
 
-<a id="to-configure-labels-to-display-in-different-languages" class="xliff"></a>
-
-## 配置标签以显示不同语言
+## <a name="to-configure-labels-to-display-in-different-languages"></a>配置标签以显示不同语言
 
 1. 如果尚未执行此操作，请在新的浏览器窗口中以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
     
@@ -66,9 +62,7 @@ ms.lasthandoff: 07/05/2017
     
     导入完成后，本地化的标签名称和说明将在你下次发布 Azure 信息保护策略后为用户下载。 可以单击“全局策略”或“范围策略”边栏选项卡中的“发布”。
 
-<a id="how-the-azure-information-protection-client-determines-the-language-to-display" class="xliff"></a>
-
-## Azure 信息保护客户端如何确定要显示的语言
+## <a name="how-the-azure-information-protection-client-determines-the-language-to-display"></a>Azure 信息保护客户端如何确定要显示的语言
 
 当用户下载可支持不同语言的 Azure 信息保护策略时，用户看到的标签名称和工具提示的语言由以下逻辑决定：
 
@@ -84,9 +78,7 @@ ms.lasthandoff: 07/05/2017
 
 - 如果操作系统的语言无匹配项，标签名称和说明会以你默认为所有用户指定的语言显示。 此语言通常是英语，它是默认策略中使用的语言。
 
-<a id="when-localized-label-names-are-not-used" class="xliff"></a>
-
-## 不使用本地化标签名称
+## <a name="when-localized-label-names-are-not-used"></a>不使用本地化标签名称
 
 在以下情况下，不使用本地化标签（和子标签）名称。 为了保持租户的一致性，始终将默认语言用于以下项：
 
@@ -97,9 +89,7 @@ ms.lasthandoff: 07/05/2017
 - 文档元数据和电子邮件标头
 
 
-<a id="next-steps" class="xliff"></a>
-
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 若要详细了解可针对标签配置的选项以及可针对 Azure 信息保护策略配置的其他设置，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。
 

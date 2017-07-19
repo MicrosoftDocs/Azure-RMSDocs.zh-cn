@@ -18,22 +18,19 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 客户托管：租户密钥生命周期操作
-<a id="customer-managed-tenant-key-lifecycle-operations" class="xliff"></a>
+# <a name="customer-managed-tenant-key-lifecycle-operations"></a>客户托管：租户密钥生命周期操作
 
 >*适用于：Azure 信息保护、Office 365*
 
 如果你自己管理 Azure 信息保护租户密钥（自带密钥方案，简称 BYOK），请阅读以下部分，获取有关此拓扑的相关生命周期操作的详细信息。
 
-## 撤消你的租户密钥
-<a id="revoke-your-tenant-key" class="xliff"></a>
+## <a name="revoke-your-tenant-key"></a>撤消你的租户密钥
 在 Azure 密钥保管库中，可以更改密钥保管库的权限，包括 Azure 信息保护租户密钥，使 Azure Rights Management 服务不再能够访问该密钥。 但是，执行此操作时，任何人都将无法打开之前使用 Azure Rights Management 服务保护的文档和电子邮件。
 
 取消 Azure 信息保护订阅时，Azure 信息保护会停止使用租户密钥，用户无需执行任何操作。
 
 
-## 更新你的租户密钥
-<a id="re-key-your-tenant-key" class="xliff"></a>
+## <a name="re-key-your-tenant-key"></a>更新你的租户密钥
 更新密钥也称为滚动密钥。 不要更新你的租户密钥，除非在真正必要的情况下。 旧版客户端（例如 Office 2010）无法适当处理密钥更改。 在这种情况下，必须通过使用组策略或同等机制，清除计算机上的 Rights Management 状态。 但是，某些法律事件可能迫使你更新租户密钥。 例如：
 
 -   你的公司拆分为两家或更多公司。 当你更新你的租户密钥时，新公司将无法访问你的员工发布的新内容。 如果有旧租户密钥的副本，他们可以访问旧内容。
@@ -44,18 +41,15 @@ ms.lasthandoff: 07/13/2017
 
 若要更新租户密钥，请先在密钥保管库中更新 Azure 信息保护租户密钥。 然后再次运行 [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey) cmdlet，指定新的密钥 URL。
 
-## 备份和恢复你的租户密钥
-<a id="backup-and-recover-your-tenant-key" class="xliff"></a>
+## <a name="backup-and-recover-your-tenant-key"></a>备份和恢复你的租户密钥
 你负责备份自己的租户密钥。 如果你在 Thales HSM 中生成租户密钥，若要备份该密钥，只需备份标记化密钥文件、安全体系文件和管理员卡即可。
 
 因为你按照[计划和实现你的 Azure Rights Management 租户密钥](../plan-design/plan-implement-tenant-key.md)文章中的[实现自带密钥 (BYOK)](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key) 部分中的程序传送密钥，因此密钥保管库将保留标记化密钥文件，以防止任何服务节点发生故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将它作为完全备份。 例如，如果你需要密钥的明文副本在 Thales HSM 外部使用，则 Azure 密钥保管库将无法为你检索该副本，因为它仅有不可恢复的副本。
 
-## 导出你的租户密钥
-<a id="export-your-tenant-key" class="xliff"></a>
+## <a name="export-your-tenant-key"></a>导出你的租户密钥
 如果使用 BYOK，则你无法从 Azure 密钥保管库或 Azure 信息保护导出租户密钥。 Azure 密钥保管库中的副本是不可恢复的。 
 
-## 对违规行为做出响应
-<a id="respond-to-a-breach" class="xliff"></a>
+## <a name="respond-to-a-breach"></a>对违规行为做出响应
 如果没有违规响应流程，无论如何强大的安全系统都是不完整的。 你的租户密钥可能泄漏或失窃。 即便它得到了很好的保护，在当前这代的 HSM 技术或当前的密钥长度和算法方面也可以找到一些漏洞。
 
 Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全事件。 当收到某个事件的可信报告时，该团队将参与调查事件的范围、根本原因和缓解办法。 如果该事件影响到资产，则 Microsoft 将使用在订阅时提供的地址，通过电子邮件通知 Azure 信息保护租户管理员。

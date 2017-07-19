@@ -16,9 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/05/2017
 ---
-<a id="how-to-configure-a-label-for-rights-management-protection" class="xliff"></a>
-
-# 如何配置标签以进行 Rights Management 保护
+# <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
 >*适用于：Azure 信息保护*
 
@@ -26,9 +24,7 @@ ms.lasthandoff: 07/05/2017
 
 此模板可以是激活 Azure Rights Management 时自动创建的默认模板之一，也可以是自定义模板。 支持 Azure 权限管理部门模板，但仅当文档或电子邮件作者属于模板配置的作用域时应用保护。 如果用户不在作用域内，则会看到 Azure 信息保护不能应用标签的消息。
 
-<a id="how-the-protection-works" class="xliff"></a>
-
-## 保护的工作原理
+## <a name="how-the-protection-works"></a>保护的工作原理
 
 当文档或电子邮件受权限管理保护时，它会在处于静态时和传输过程中进行加密，并且只能由授权用户进行解密。 文档或电子邮件的这种加密保持不变，即使将其重命名。 此外，你可以配置使用权限和限制，如下面的示例：
 
@@ -54,9 +50,7 @@ ms.lasthandoff: 07/05/2017
 - 对于 Exchange 内部部署，必须部署 [RMS 连接器并配置 Exchange 服务器](../deploy-use/deploy-rms-connector.md)。 
 
 
-<a id="to-configure-a-label-for-rights-management-protection" class="xliff"></a>
-
-## 配置权限管理保护标签的具体步骤
+## <a name="to-configure-a-label-for-rights-management-protection"></a>配置权限管理保护标签的具体步骤
 
 1. 如果尚未执行此操作，请打开新的浏览器窗口并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
 
@@ -125,9 +119,7 @@ ms.lasthandoff: 07/05/2017
 
 13. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 
-<a id="next-steps" class="xliff"></a>
-
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
