@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e3910ecc2bed3f95660be86b6139e568815f24a0
-ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.openlocfilehash: 491d3191a713bf30ef0da58e359249869d3c82a9
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012
+>适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 如果你负责企业网络上的 Azure 信息保护客户端，或如果你想要获取除了 [Azure 信息保护客户端用户指南](client-user-guide.md)以外的更多技术信息，请使用本指南中的信息。 
 
