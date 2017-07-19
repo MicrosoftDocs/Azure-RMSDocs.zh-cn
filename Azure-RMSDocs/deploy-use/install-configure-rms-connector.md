@@ -4,7 +4,7 @@ description: "此信息可帮助安装并配置 Azure Rights Management (RMS) �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d03cb1ff146839e4de805b66f5b2e6a3df851430
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: e3444ee0812d54988ad12461e0f492fe07637209
+ms.sourcegitcommit: 1128ccda089727ac4a638e99532516474cef0ef4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/11/2017
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 06/30/2017
 1.  确定将要运行 RMS 连接器的计算机（最少两台）。 它们必须满足先决条件中列出的最低规格。
 
     > [!NOTE]
-    > 你将为每个租户（Office 365 租户或 Azure AD 租户）安装单个 RMS 连接器（包含多个服务器以实现高可用性）。 与 Active Directory RMS 不同，你无需在每个林中安装 RMS 连接器。
+    > 为每个租户（Office 365 租户或 Azure AD 租户）安装单个 RMS 连接器（包含多个服务器以实现高可用性）。 与 Active Directory RMS 不同，你无需在每个林中安装 RMS 连接器。
 
 2.  从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkId=314106)下载 RMS 连接器的源文件。
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 06/30/2017
 ## <a name="entering-credentials"></a>输入凭据
 在能够配置 RMS 连接器之前，你必须输入具有足够 RMS 连接器配置权限的帐户的凭据。 例如，你可以键入 **admin@contoso.com**，然后指定此帐户的密码。
 
-对于此密码有一些字符限制。 不可使用具有下列任一字符的密码：& 号 (**&**)、左括号 (**[**)、右括号 (**]**)、直引号 (**"**) 和撇号 (**'**)。 如果你的密码包含上述任一字符，尽管在其他方案中你可以使用此帐户和密码成功登录，但针对 RMS 连接器的身份验证也将失败，并且你将看到“该用户名和密码组合不正确”的错误消息。 如果这适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设你的密码使其不包含上述任一特殊字符。
+此帐户不能要求多重身份验证 (MFA)，因为连接器不支持 MFA。 连接器对于此密码还有一些字符限制。 不可使用具有下列任一字符的密码：& 号 (**&**)、左括号 (**[**)、右括号 (**]**)、直引号 (**"**) 和撇号 (**'**)。 如果你的密码包含上述任一字符，尽管在其他方案中可以使用此帐户和密码成功登录，但针对 RMS 连接器的身份验证也会失败，并且你会看到“该用户名和密码组合不正确”的错误消息。 如果方案适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设密码使其不包含上述任一特殊字符。
 
 此外，如果你实现了[内置控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保你指定的帐户能够保护内容。 例如，如果你将保护内容的功能限制给“IT 部门”组，则在此指定的帐户必须是该组成员。 若未实现，将显示以下错误消息：**发现管理服务和组织位置的尝试失败。“请确保为你的组织启用了 Microsoft Rights Management 服务。”**
 
@@ -98,7 +98,7 @@ ms.lasthandoff: 06/30/2017
 
 在 RMS 连接器安装过程中，将会验证和安装所有必备软件。如果还没有 Internet Information Services (IIS)，则会安装该服务。另外还要安装和配置连接器软件。 此外，还会创建以下各项，做好配置 Azure RMS 的准备：
 
--   一个空表，用于列出被授权使用连接器与 Azure RMS 通信的服务器。 你以后可将服务器添加至此表。
+-   一个空表，用于列出被授权使用连接器与 Azure RMS 通信的服务器。 以后可将服务器添加至此表。
 
 -   一组连接器安全令牌，授权对 Azure RMS 所进行的操作。 可从 Azure RMS 下载这些令牌，并安装在注册表中的本地计算机上。 它们通过使用数据保护应用程序编程接口 (DPAPI) 和本地系统帐户凭据得到保护。
 
@@ -122,9 +122,9 @@ ms.lasthandoff: 06/30/2017
 
 当你向这些服务器授权时，请注意以下事项：
 
--   你添加的服务器将被授予特殊权限。 你在连接器配置中为 Exchange Server 角色指定的所有帐户将在 Azure RMS 中授予 [超级用户角色](configure-super-users.md)，这将给予他们访问此 RMS 租户的所有内容的权限。 如有必要，超级用户功能将在此时自动启用。 为了避免权限提升带来的安全风险，请注意仅指定你的组织的 Exchange 服务器使用的帐户。 配置为 SharePoint 服务器的所有服务器或使用 FCI 的文件服务器将被授予常规用户权限。
+- 你添加的服务器会被授予特殊权限。 你在连接器配置中为 Exchange Server 角色指定的所有帐户在 Azure RMS 中授予[超级用户角色](configure-super-users.md)，这会给予他们访问此 RMS 租户的所有内容的权限。 如有必要，超级用户功能将在此时自动启用。 为了避免权限提升带来的安全风险，请注意仅指定你的组织的 Exchange 服务器使用的帐户。 配置为 SharePoint 服务器的所有服务器或使用 FCI 的文件服务器会被授予常规用户权限。
 
--   你可以通过指定 Active Directory 安全或分发组，或由多台服务器使用的服务帐户，添加多个服务器作为单个条目。 当你使用此配置时，服务器组将共享相同的 RMS 证书，并且会被视为其中任何一个服务器保护的内容的所有者。 为了最大程度地减少管理开销，我们建议你使用这种单组配置，而不是使用单独服务器的配置，为组织的 Exchange 服务器或 SharePoint 服务器场授权。
+- 你可以通过指定 Active Directory 安全或分发组，或由多台服务器使用的服务帐户，添加多个服务器作为单个条目。 当你使用此配置时，服务器组共享相同的 RMS 证书，并且被视为其中任何一个服务器保护的内容的所有者。 为了最大程度地减少管理开销，我们建议你使用这种单组配置，而不是使用单独服务器的配置，为组织的 Exchange 服务器或 SharePoint 服务器场授权。
 
 在“被允许使用连接器的服务器”页上，单击“添加”。
 
@@ -188,7 +188,7 @@ ms.lasthandoff: 06/30/2017
 
 虽然使用 TLS 或 SSL 对于 RMS 连接器是可选的，但我们建议将其用于任何基于 HTTP 的安全敏感服务。 在此配置中，运行连接器的服务器向使用连接器的 Exchange 和 SharePoint 服务器进行身份验证。 此外，从这些服务器向连接器发送的所有数据都进行了加密。
 
-若要让 RMS 连接器能够使用 TLS，请在运行 RMS 连接器的每个服务器上安装服务器身份验证证书，其中包含你将用于连接器的名称。 例如，如果你在 DNS 中定义的 RMS 连接器名称为 **rmsconnector.contoso.com**，则请部署一个服务器身份验证证书，其中的证书使用者包含 **rmsconnector.contoso.com** 作为通用名称。 也可在证书备选名称中指定 **rmsconnector.contoso.com** 作为 DNS 值。 证书不一定必须包括服务器的名称。 然后在 IIS 中，将此证书绑定到默认网站。
+若要让 RMS 连接器能够使用 TLS，请在运行 RMS 连接器的每个服务器上安装服务器身份验证证书，其中包含用于连接器的名称。 例如，如果你在 DNS 中定义的 RMS 连接器名称为 **rmsconnector.contoso.com**，则请部署一个服务器身份验证证书，其中的证书使用者包含 **rmsconnector.contoso.com** 作为通用名称。 也可在证书备选名称中指定 **rmsconnector.contoso.com** 作为 DNS 值。 证书不一定必须包括服务器的名称。 然后在 IIS 中，将此证书绑定到默认网站。
 
 如果你使用 HTTPS 选项，请确保运行连接器的所有服务器都具有有效的服务器身份验证证书，该证书链接到 Exchange 和 SharePoint 服务器信任的根 CA。 此外，如果为连接器服务器颁发证书的证书颁发机构 (CA) 发布了证书吊销列表 (CRL)，则 Exchange 和 SharePoint 服务器必须能够下载此 CRL。
 

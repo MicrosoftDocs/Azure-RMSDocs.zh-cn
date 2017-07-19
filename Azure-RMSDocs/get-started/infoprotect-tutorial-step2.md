@@ -4,21 +4,19 @@ description: "快速试用 Azure 信息保护入门教程步骤 2 - 配置策略
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: b91bfea99170b747bb199b3c966ae8c89fae5359
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: f6cd01357db99ee9d299606172aa85f7e2f44ba0
+ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/13/2017
 ---
-<a id="step-2-configure-and-publish-the-azure-information-protection-policy" class="xliff"></a>
-
-# 步骤 2：配置并发布 Azure 信息保护策略
+# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>步骤 2：配置并发布 Azure 信息保护策略
 
 >适用于：Azure 信息保护
 
@@ -46,13 +44,11 @@ ms.lasthandoff: 06/30/2017
     
     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy-default-labelsv2.png)
     
-    此外，未设置某些策略设置，以便实现（比如）：并非所有文档和电子邮件都需要标签，没有默认标签，用户更改标签时无需提供理由：
+    此外，未设置某些策略设置。 例如，并非所有文档和电子邮件都需要标签，没有默认标签，以及用户更改标签时无需提供理由：
     
     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy-default-settings.png)
 
-<a id="changing-the-settings-for-a-default-label-and-prompt-for-justification" class="xliff"></a>
-
-## 更改默认标签和有关提示用户提供理由的设置
+## <a name="changing-the-settings-for-a-default-label-and-prompt-for-justification"></a>更改默认标签和有关提示用户提供理由的设置
 
 在本教程中，将更改几个策略设置，以便可以看到它们的工作原理：
 
@@ -62,9 +58,7 @@ ms.lasthandoff: 06/30/2017
 
 2. 对于“用户必须提供理由以设置较低分类标签、删除标签或删除保护”，将其设置为“开”。
 
-<a id="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification" class="xliff"></a>
-
-## 配置保护的标签、水印和分类提示的条件
+## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>配置保护的标签、水印和分类提示的条件
 
 现在将更改其中一个子标签的设置，即“机密”主标签中的“所有员工”。 
 
@@ -82,9 +76,11 @@ ms.lasthandoff: 06/30/2017
     
     此操作将打开“保护”边栏选项卡。
     
-3. 在“保护”边栏选项卡中，请确保已选中“Azure RMS”和“选择预定义模板”，然后单击下拉框，并选择默认模板“\<你的组织名称> - 机密”。     
+3. 在“保护”边栏选项卡中，请务必选中“Azure RMS”，并选中“选择预定义模板”。 然后，单击下拉列表框并选择默认模板，以便组织中的所有用户可以查看和编辑受保护的内容。 
     
-    例如，如果你的组织名称为 VanArsdel, Ltd，你将看到并选择“VanArsdel, Ltd - 机密”： 
+    如果你最近已激活 Azure 权限管理服务，此模板会被命名为“机密\所有员工”。 
+    
+    如果在开始本教程前已经激活 Azure 权限管理服务，默认模板可能会被命名为“\<你的组织名称> - 机密”。 例如，如果你的组织名称为 VanArsdel, Ltd，你会看到并选择“VanArsdel, Ltd - 机密”： 
     
     ![Azure 信息保护快速入门教程步骤 3 - 设置 Azure RMS 保护](../media/step2-select-rms-template.png)
     
@@ -118,7 +114,7 @@ ms.lasthandoff: 06/30/2017
     
     单击“保存”返回到“标签: 所有员工”边栏选项卡。
 
-7. 在“标签: 所有员工”边栏选项卡中，会看到“信用卡卡号”显示为 **CONDITION NAME**，**OCCURRENCES** 为 **1**：
+7. 在“标签: 所有员工”边栏选项卡中，会看到“信用卡卡号”显示为“CONDITION NAME”，“OCCURRENCES”为“1”：
     
     ![Azure 信息保护快速入门教程步骤 3 - 配置信用卡条件](../media/step2-see-condition.png)
 
