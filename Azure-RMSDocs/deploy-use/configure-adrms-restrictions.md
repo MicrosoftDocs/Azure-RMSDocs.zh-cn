@@ -4,25 +4,23 @@ description: "如果选择具有 Azure 信息保护的 HYOK (AD RMS) 保护，�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2017
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: ca0fe89178840917fba4ae672547f6852123d699
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: f1ae8d75b3fd3900b7c863be332656b71c647e1f
+ms.sourcegitcommit: 834b6bcab70a185018b4876b2d24b145e5089ac4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/07/2017
 ---
-<a id="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection" class="xliff"></a>
-
-# AD RMS 保护的自留密钥 (HYOK) 要求和限制
+# <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 保护的自留密钥 (HYOK) 要求和限制
 
 >*适用于：Azure 信息保护*
 
-当你保护最敏感的文档和电子邮件时，通常会为此应用 Azure Rights Management (Azure RMS) 保护，以便从以下优势中受益：
+保护最敏感的文档和电子邮件时，通常会为此应用 Azure 权限管理 (Azure RMS) 保护，以便从以下优势中受益：
 
 - 无需任何服务器基础结构，从而使该解决方案能够以比本地解决方案更快、更经济高效的方式进行部署和维护。
 
@@ -49,7 +47,7 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 > 
 > - 绝不会在组织外部共享内容。
 > 
-> - 将仅在内部网络中使用内容。
+> - 仅在内部网络中使用内容。
 > 
 > - 不会在 Mac 计算机或移动设备上使用内容。
 
@@ -57,9 +55,7 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 [作用域策略](configure-policy-scope.md)是一个不错的方法，可确保只有需要应用 AD RMS 保护的用户才能查看为 AD RMS 保护配置的标签。 
 
-<a id="additional-limitations-when-using-hyok" class="xliff"></a>
-
-## 使用 HYOK 时的其他限制
+## <a name="additional-limitations-when-using-hyok"></a>使用 HYOK 时的其他限制
 
 将 AD RMS 保护与 Azure 信息保护联用，不仅不支持使用 Azure RMS 保护时可获得的所列益处，还具有以下限制：
 
@@ -67,17 +63,15 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 - 配置 Azure RMS 保护的标签时，请勿使用“不要转发”选项。 还必须指示用户不要在 Outlook 中手动选择此选项。 
 
-    如果由标签或由用户手动应用了“不要转发”选项，则可能由 AD RMS 部署（而不是预期的 Azure 权限管理服务）应用该选项。 在此方案中，外部共享对象将无法打开已应用此“不要转发”选项的电子邮件。
+    如果由标签或由用户手动应用了“不要转发”选项，则可能由 AD RMS 部署（而不是预期的 Azure 权限管理服务）应用该选项。 在此方案中，外部共享对象无法打开已应用此“不要转发”选项的电子邮件。
 
 - 如果用户在你使用 AD RMS (HYOK) 保护和 Azure RMS 保护时配置自定义权限，则文档或电子邮件始终受 Azure 权限管理保护。
 
-- 如果用户选择了应用 AD RMS 保护的 Outlook 中的标签，然后在发送电子邮件之前改变了主意，并选择了应用 Azure RMS 保护的标签，则新选择的标签将无法应用。 用户将看到以下错误消息：**Azure 信息保护无法应用此标签。你无权执行此操作。**
+- 如果用户选择了应用 AD RMS 保护的 Outlook 中的标签，然后在发送电子邮件之前改变了主意，并选择了应用 Azure RMS 保护的标签，则无法应用新选择的标签。 用户将看到以下错误消息：**Azure 信息保护无法应用此标签。你无权执行此操作。**
     
     唯一的解决方法是关闭电子邮件并重新启动。 与此类似，如果用户首先选择了应用 Azure RMS 保护的标签，然后改为使用应用 AD RMS 保护的标签，也将产生相同的限制。
 
-<a id="requirements-for-hyok" class="xliff"></a>
-
-## HYOK 要求
+## <a name="requirements-for-hyok"></a>HYOK 要求
 
 确保你的 AD RMS 部署满足以下要求，以便为 Azure 信息保护提供 AD RMS 保护。
 
@@ -97,9 +91,9 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 - 在本地 Active Directory 和 Azure Active Directory 之间配置了目录同步，并且为将使用 AD RMS 保护的用户配置了单一登录。
 
-- 如果将与组织外的其他人共享由 AD RMS 保护的文档或电子邮件：请通过受信任用户域 (TUD) 或使用 Active Directory 联合身份验证服务 (AD FS) 创建的联合信任，在与其他组织的直接点对点关系中为 AD RMS 配置显式定义的信任。
+- 如果与组织外的其他人共享由 AD RMS 保护的文档或电子邮件：请通过受信任用户域 (TUD) 或使用 Active Directory 联合身份验证服务 (AD FS) 创建的联合信任，在与其他组织的直接点对点关系中为 AD RMS 配置显式定义的信任。
 
-- 用户拥有的 Office 版本为 Office 2013 Pro Plus with Service 1 或 Office 2016 Pro Plus，并且在 Windows 7 Service Pack 1 或更高版本上运行。 请注意，此方案不支持 Office 2010 和 Office 2007。
+- 用户拥有的 Office 版本为 Office 2013 Pro Plus Service Pack 1 或 Office 2016 Pro Plus，并且在 Windows 7 Service Pack 1 或更高版本上运行。 请注意，此方案不支持 Office 2010 和 Office 2007。
 
 > [!IMPORTANT]
 > 为了实现此方案提供的高确定性，建议不要将 AD RMS 服务器放在外围网络中，并且只能由管理完善的计算机（例如，非移动设备或工作组计算机）使用这些服务器。 
@@ -109,9 +103,7 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 有关 AD RMS 的部署信息和说明，请参阅 Windows Server 库中的 [Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx)。 
 
 
-<a id="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label" class="xliff"></a>
-
-## 查找相关信息以使用 Azure 信息保护标签指定 AD RMS 保护
+## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>查找相关信息以使用 Azure 信息保护标签指定 AD RMS 保护
 
 在配置用于 **HYOK (AD RMS)** 保护的标签时，必须指定 AD RMS 群集的模板 GUID 和授权 URL。 你可以从 Active Directory Rights Management Services 控制台中找到这两个值：
 
@@ -121,9 +113,7 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
     
     如果你有一个 Extranet 授权值和一个 Intranet 授权值，并且两个值不同：仅当与定义为具有显式点对点信任关系的合作伙伴共享受保护的文档或电子邮件时，才指定 Extranet 值。 否则使用 Intranet 值，并确保针对 Azure 信息保护使用 AD RMS 保护的所有客户端计算机均通过 Intranet 连接进行连接（例如，远程计算机使用 VPN 连接）。
 
-<a id="next-steps" class="xliff"></a>
-
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 若要了解有关此功能的详细信息和使用指南，请参阅博客文章公告 [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)（具有 HYOK（自留密钥）的 Azure 信息保护）。
 

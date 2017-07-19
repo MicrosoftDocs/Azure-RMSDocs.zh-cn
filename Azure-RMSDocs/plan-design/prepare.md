@@ -4,7 +4,7 @@ description: "查看你是否拥有可以开始对组织的文档和电子邮件
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/03/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 362c5108238a0561c35d72faa556417f0f0f8566
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: f49d00317503f23d03ae64aa3608375b871b3854
+ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
@@ -70,7 +70,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 - 若要授权用户，请使用 Azure AD 中的两个属性：**proxyAddresses** 和 **userPrincipalName**。
 
-- **Azure AD proxyAddresses** 属性存储帐户的所有电子邮件地址，并能以不同的方式填充。 例如，Office 365 中具有 Exchange Online 邮箱的用户将自动具有存储在此属性中的电子邮件地址。 如果你为 Office 365 用户分配备用电子邮件地址，那么该地址也会保存在此属性中。 它也可以由从本地帐户同步的电子邮件地址填充。 
+- **Azure AD proxyAddresses** 属性存储帐户的所有电子邮件地址，并能以不同的方式填充。 例如，Office 365 中具有 Exchange Online 邮箱的用户自动具有存储在此属性中的电子邮件地址。 如果你为 Office 365 用户分配备用电子邮件地址，那么该地址也会保存在此属性中。 它也可以由从本地帐户同步的电子邮件地址填充。 
     
     如果已将域添加到你的租户（“已验证的域”），Azure 信息保护可以使用此 Azure AD proxyAddresses 属性中的任何值。 有关验证域的详细信息，请参阅：
     
@@ -88,13 +88,13 @@ Azure 信息保护使用用户和组的方式有三种：
 
 用于分配标签：
 
-- 你可以在 Azure AD 中使用任何类型的组来配置为组成员分配其他标签的作用域策略。
+- 若要配置将其他标签分配给组成员的作用域策略，可以使用 Azure AD 中的任何类型的组，但需要具有包含用户租户的已验证域的电子邮件地址。 具有电子邮件地址的组通常称为启用邮件的组。
+    
+    例如，你可以使用启用邮件的安全组、通讯组（可以是静态或动态）和 Office 365 组。 不能使用安全组（动态或静态），因为该组类型没有电子邮件地址。
 
 对于分配使用权限和访问控制权限：
 
 - 可以使用 Azure AD 中的任何类型的组，但需要具有包含用户租户的已验证域的电子邮件地址。 具有电子邮件地址的组通常称为启用邮件的组。 
-    
-    例如，你可以使用启用邮件的安全组、通讯组（可以是静态或动态）和 Office 365 组。 不能使用安全组（动态或静态），因为该组类型没有电子邮件地址。
 
 对于配置 Azure 权限管理服务：
 
@@ -112,7 +112,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 同步帐户时，无需同步所有属性。 有关必须同步的属性列表，请参阅 Azure Active Directory 文档中的 [Azure RMS 部分](/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#azure-rms)。 
 
-从 Azure 权限管理的属性列表中可以看到，对于用户而言，需要本地 AD属性 **mail**、**proxyAddresses** 和 **userPrincipalName** 进行同步。 **mail** 和 **proxyAddresses** 的值同步到 Azure AD proxyAddresses 属性。 有关详细信息，请参阅[如何在 Azure AD 中填充 proxyAddresses 属性](https://support.microsoft.com/help/3190357/how-the-proxyaddresses-attribute-is-populated-in-azure-ad)
+从 Azure 权限管理的属性列表中可以看到，对于用户而言，需要本地 AD属性 mail、proxyAddresses 和 userPrincipalName 进行同步。 **mail** 和 **proxyAddresses** 的值同步到 Azure AD proxyAddresses 属性。 有关详细信息，请参阅[如何在 Azure AD 中填充 proxyAddresses 属性](https://support.microsoft.com/help/3190357/how-the-proxyaddresses-attribute-is-populated-in-azure-ad)
 
 ## <a name="confirming-your-users-and-groups-are-prepared-for-azure-information-protection"></a>确认已准备好用户和组以使用 Azure 信息保护
 
@@ -139,7 +139,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 然后查看是否填充了 **ProxyAddresses** 列。 如果是，则使用此列中的电子邮件值授权用户以用于 Azure 权限管理服务。 
 
-如果 **ProxyAddresses** 列未填充，则使用 **UserPrincipalName** 中的值授权用户以用于 Azure 权限管理服务。
+如果“ProxyAddresses”列未填充，则使用“UserPrincipalName”中的值授权用户以用于 Azure 权限管理服务。
 
 例如： 
     
@@ -193,7 +193,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 ## <a name="group-membership-caching-by-azure-rights-management"></a>Azure 权限管理缓存组成员身份
 
-出于性能原因，组成员身份由 Azure 权限管理服务缓存。 这意味着，Azure 权限管理使用这些组时，对 Azure AD 中的组成员身份所做的任何更改将在 3 小时内生效，并且此时间段可能会发生变化。 
+出于性能原因，组成员身份由 Azure 权限管理服务缓存。 这意味着，Azure 权限管理使用这些组时，对 Azure AD 中的组成员身份所做的任何更改将在三小时内生效，并且此时间段可能会发生变化。 
 
 请注意，此延迟归因于将组用于 Azure 权限管理时执行的任何更改或测试，例如分配使用权限或配置 Azure 权限管理服务。 
 

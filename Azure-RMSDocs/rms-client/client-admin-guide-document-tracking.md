@@ -4,7 +4,7 @@ description: "管理员配置和使用 Azure 信息保护的文档跟踪的说�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,29 +12,25 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3b7ed22afea6b8575d12f6f83dcfc8419200c003
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 2f8e3310eee90f3e81da4f513d795af478015222
+ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/10/2017
 ---
-<a id="configuring-and-using-document-tracking-for-azure-information-protection" class="xliff"></a>
-
-# 配置和使用 Azure 信息保护的文档跟踪
+# <a name="configuring-and-using-document-tracking-for-azure-information-protection"></a>配置和使用 Azure 信息保护的文档跟踪
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012
 
 如果你有[支持文档跟踪的订阅](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。 文档跟踪为用户和管理员提供有关受保护文档访问时间的信息，如有必要，可以撤销已跟踪的文档。
 
-<a id="privacy-controls-for-your-document-tracking-site" class="xliff"></a>
-
-## 文档跟踪站点的隐私控制
+## <a name="privacy-controls-for-your-document-tracking-site"></a>文档跟踪站点的隐私控制
 
 如果你的组织出于隐私要求需要禁止显示所有文档跟踪信息，可以使用 [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature) cmdlet 禁用文档跟踪。 
 
 此 cmdlet 禁用对文档跟踪站点的访问，以使组织中的所有用户无法跟踪或撤销对已保护文档的访问权限。 你随时可以使用 [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature) 来重新启用文档跟踪，并可以使用 [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature) 来查看当前是已启用还是已禁用文档跟踪。 若要运行这些 cmdlet，必须至少安装适用于 PowerShell 的 Azure 权限管理 (AADRM) 模块的 2.3.0.0 版本。 
 
-启用文档跟踪站点后，它会默认显示尝试访问受保护文档的人员的电子邮件地址、这些人员尝试访问这些文档的时间以及他们所在的位置等信息。 这个级别的信息非常有助于确定使用共享文档的方式，以及在发现可疑活动时，是否应撤销这些文档。 但是，出于隐私原因，你可能需要为部分或所有用户禁用此用户信息。 
+启用文档跟踪站点后，它会默认显示尝试访问受保护文档的人员的电子邮件地址、这些人员尝试访问这些文档的时间以及他们所在的位置等信息。 这个级别的信息有助于确定使用共享文档的方式，以及在发现可疑活动时，是否应撤销这些文档。 但是，出于隐私原因，你可能需要为部分或所有用户禁用此用户信息。 
 
 如果存在不应跟踪此活动的用户，请将其添加到存储于 Azure AD 中的组，并使用 [Set-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Set-AadrmDoNotTrackUserGroup) cmdlet 指定此组。 运行此 cmdlet 时，必须指定单个组。 不过，该组可以包含嵌套组。 
 
@@ -47,9 +43,7 @@ ms.lasthandoff: 06/30/2017
 有关每个 cmdlet 的详细信息，请使用提供的链接。 有关 PowerShell 模块的安装说明，请参阅[安装适用于 Azure 权限管理的 Windows PowerShell](../deploy-use/install-powershell.md)。 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号：`(Get-Module aadrm –ListAvailable).Version`
 
 
-<a id="destination-urls-used-by-the-document-tracking-site" class="xliff"></a>
-
-## 文档跟踪站点使用的目标 URL
+## <a name="destination-urls-used-by-the-document-tracking-site"></a>文档跟踪站点使用的目标 URL
 
 以下 URL 用于文档跟踪，必须在运行 Azure 信息保护客户端和 Internet 的客户端之间的所有设备和服务上允许它们。 例如，如果你使用的是具有增强安全性的 Internet Explorer，请将这些 URL 添加到防火墙，或添加到受信任的站点。
 
@@ -63,17 +57,17 @@ ms.lasthandoff: 06/30/2017
 
 这些 URL 是 Azure 权限管理服务的标准，但用于必应地图以显示用户位置的 virtualearth.net URL 除外。
 
-<a id="tracking-and-revoking-documents-for-users" class="xliff"></a>
+## <a name="tracking-and-revoking-documents-for-users"></a>为用户跟踪和撤销文档
 
-## 为用户跟踪和撤销文档
-
-用户登录到文档跟踪站点时，他们可以跟踪和撤销通过使用 Azure 信息保护客户端保护或通过使用 Rights Management 共享应用程序共享的文档。 以 Azure 信息保护管理员（全局管理员）的身份登录时，可以单击“管理员”图标，切换到管理员模式，这样就可以看到组织中的用户已共享的文档：
+用户登录到文档跟踪站点时，他们可以跟踪和撤销通过使用 Azure 信息保护客户端保护或通过使用 Rights Management 共享应用程序共享的文档。 以 Azure 信息保护管理员（全局管理员）的身份登录时，可以单击“管理员”图标切换到管理员模式。 在此模式下，可以查看组织中用户通过 Azure 信息保护客户端选择进行跟踪的文档，或查看通过 Rights Management 共享应用程序共享的文档：
 
 ![文档跟踪站点中的“管理员”图标](../media/tracking-site-admin-icon.png)
 
 在管理员模式下执行的操作会经过审核并记录在使用情况日志文件中，必须确认后才能继续。 有关此日志记录的详细信息，请参阅下一节。
 
-处于管理员模式时，可以按用户或文档进行搜索。 如果按用户搜索，将看到指定用户共享的所有文档。 如果按文档搜索，将看到组织中共享该文档的所有用户。 之后，如有必要，你可以钻取到搜索结果，以便跟踪用户共享的文档以及撤销这些文档。 
+处于管理员模式时，可以按用户或文档进行搜索。 如果按用户进行搜索，可以查看指定用户通过 Azure 信息保护客户端选择进行跟踪的所有文档，或查看通过 Rights Management 共享应用程序共享的所有文档。 
+
+如果按文档进行搜索，可以查看组织中通过 Azure 信息保护客户端跟踪该文档的所有用户，或查看通过 Rights Management 共享应用程序共享的所有用户。 之后，如有必要，你可以钻取到搜索结果，以便跟踪用户保护的文档以及撤销这些文档。 
 
 若要离开管理员模式，请单击“退出管理员模式”旁边的“X”：
 
@@ -81,9 +75,7 @@ ms.lasthandoff: 06/30/2017
 
 有关如何使用文档跟踪站点的说明，请参阅用户指南中的[跟踪和撤销文档](client-track-revoke.md)。
 
-<a id="usage-logging-for-the-document-tracking-site" class="xliff"></a>
-
-## 文档跟踪站点的使用情况日志记录
+## <a name="usage-logging-for-the-document-tracking-site"></a>文档跟踪站点的使用情况日志记录
 
 使用情况日志文件中的以下两个字段适用于文档跟踪：**AdminAction** 和 **ActingAsUser**。
 
@@ -98,9 +90,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="next-steps" class="xliff"></a>
-
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 现在你配置了 Azure 信息保护客户端的文档跟踪站点，若要了解支持此客户端所需的其他信息，请参阅以下内容：
 
 - [自定义](client-admin-guide-customizations.md)

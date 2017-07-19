@@ -5,7 +5,7 @@ keywords: "一些常见问题，帮助你使用适用于 iOS 和 Android 的 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/05/2017
+ms.date: 07/08/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5ea28525653966d2de609c118bd18079cff99b2d
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: dc6b9ee8c557ce04019534c4713c526265c207e0
+ms.sourcegitcommit: 0b097f0817fee0fb025caef3c46fdd887c782a43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/07/2017
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 
@@ -60,7 +60,9 @@ Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
 
 ## <a name="which-file-extensions-can-i-open-with-this-app"></a>使用此应用可打开哪些文件扩展名？
 
-可以打开 .rpmsg、.pdf、.ppdf、.pjpg、.ptxt 以及几个其他的文本和图像文件格式。
+可以打开 .rpmsg、.pdf、.ppdf、.pjpg、.pjpeg、.ptiff、.ppng、.ptxt、.pxml 以及几个其他的文本和图像文件格式。
+
+有关文本和图像文件扩展名的完整列表，请参阅管理员指南中[分类和保护的支持文件类型](client-admin-guide-file-types.md#supported-file-types-for-classification-and-protection)部分中的第一个表格。
 
 ##  <a name="how-do-i-provide-feedback-about-this-app"></a>如何提供有关此应用的反馈？
 
