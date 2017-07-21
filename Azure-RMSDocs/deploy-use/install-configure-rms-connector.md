@@ -4,7 +4,7 @@ description: "此信息可帮助安装并配置 Azure Rights Management (RMS) �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e3444ee0812d54988ad12461e0f492fe07637209
-ms.sourcegitcommit: 1128ccda089727ac4a638e99532516474cef0ef4
+ms.openlocfilehash: be09e2c974d9d542b94bc16f140e764858cc9282
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
@@ -55,9 +55,11 @@ ms.lasthandoff: 07/11/2017
 ## <a name="entering-credentials"></a>输入凭据
 在能够配置 RMS 连接器之前，你必须输入具有足够 RMS 连接器配置权限的帐户的凭据。 例如，你可以键入 **admin@contoso.com**，然后指定此帐户的密码。
 
-此帐户不能要求多重身份验证 (MFA)，因为连接器不支持 MFA。 连接器对于此密码还有一些字符限制。 不可使用具有下列任一字符的密码：& 号 (**&**)、左括号 (**[**)、右括号 (**]**)、直引号 (**"**) 和撇号 (**'**)。 如果你的密码包含上述任一字符，尽管在其他方案中可以使用此帐户和密码成功登录，但针对 RMS 连接器的身份验证也会失败，并且你会看到“该用户名和密码组合不正确”的错误消息。 如果方案适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设密码使其不包含上述任一特殊字符。
+此帐户不得要求进行多重身份验证 (MFA)，因为 Microsoft Rights Management 管理工具不支持对此帐户进行 MFA。 
 
-此外，如果你实现了[内置控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保你指定的帐户能够保护内容。 例如，如果你将保护内容的功能限制给“IT 部门”组，则在此指定的帐户必须是该组成员。 若未实现，将显示以下错误消息：**发现管理服务和组织位置的尝试失败。“请确保为你的组织启用了 Microsoft Rights Management 服务。”**
+连接器对于此密码还有一些字符限制。 不可使用具有下列任一字符的密码：& 号 (**&**)、左括号 (**[**)、右括号 (**]**)、直引号 (**"**) 和撇号 (**'**)。 如果你的密码包含上述任一字符，尽管在其他方案中可以使用此帐户和密码成功登录，但针对 RMS 连接器的身份验证也会失败，并且你会看到“该用户名和密码组合不正确”的错误消息。 如果方案适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设密码使其不包含上述任一特殊字符。
+
+此外，如果你实现了[内置控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保你指定的帐户能够保护内容。 例如，如果限制为只有“IT 部门”组可以保护内容，那么在此处指定的帐户必须是该组成员。 若未实现，将显示以下错误消息：**发现管理服务和组织位置的尝试失败。“请确保为你的组织启用了 Microsoft Rights Management 服务。”**
 
 你可以使用具有以下某一种权限的帐户：
 
