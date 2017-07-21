@@ -4,7 +4,7 @@ description: "使用这些步骤，为组织准备、实施和管理 Azure 信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 52a99ee84f00588aed2ad332e3f46e3f1f9ae97c
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 54f72dad3f7dbc259df602f0f613124c46ce5846
+ms.sourcegitcommit: d42c6bb914563ae798d4171bb017c85b7077abfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
@@ -98,7 +98,7 @@ ms.lasthandoff: 06/30/2017
     
     修改 Azure 信息保护策略，使一个或多个标签应用 Rights Management 保护。 有关详细信息，请参阅[如何配置标签以进行 Rights Management 保护](../deploy-use/configure-policy-protection.md)。
     
-    请注意，即使没有为信息权限管理 (IRM) 配置 Exchange，用户也可以在应用 Rights Management 保护的 Outlook 中应用标签。 但是，在为 IRM 配置 Exchange 之前，组织将无法获得将 Exchange 与 Azure Rights Management 保护配合使用的完整功能。 此附加配置包含在适用于 Exchange Online 的步骤 3 以及适用于 Exchange 内部部署的步骤 6 中。 
+    请注意，即使没有为信息权限管理 (IRM) 配置 Exchange，用户也可以在应用 Rights Management 保护的 Outlook 中应用标签。 但是，在为 IRM 配置 Exchange 之前，组织将无法获得将 Exchange 与 Azure Rights Management 保护配合使用的完整功能。 此附加配置包含在以下列表中（对于 Exchange Online，则为 2；对于 Exchange 本地，则为 5）。 
 
 2. 为 IRM 配置 Office 应用程序和服务
     
@@ -116,7 +116,7 @@ ms.lasthandoff: 06/30/2017
     
     如果你拥有想要与 Azure Rights Management 服务共同使用的本地服务，请安装和配置 Rights Management 连接器。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](../deploy-use/deploy-rms-connector.md)。
 
-### <a name="step-4-use-and-monitor-your-data-protection-solutions"></a>步骤 4：使用和监视数据保护解决方案
+### <a name="step-6-use-and-monitor-your-data-protection-solutions"></a>第 6 步：使用和监视数据保护解决方案
 现在，你可以保护数据，并记录公司如何使用已配置的标签和 Rights Management 数据保护。 有关支持此部署阶段的其他信息，请参阅以下内容：
 
 - [使用 Azure Rights Management 服务帮助用户保护文件](../deploy-use/help-users.md)
@@ -127,7 +127,7 @@ ms.lasthandoff: 06/30/2017
 
 如果你对在基于 Windows 的文件服务器上使用文件分类基础结构自动保护文件感兴趣，请参阅[使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护](../rms-client/configure-fci.md)。
 
-### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>步骤 5：根据需要管理租户帐户的 Rights Management 服务
+### <a name="step-7-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>第 7 步：根据需要为租户帐户管理 Rights Management 服务
 开始使用 Azure Rights Management 服务时，可能发现 Windows PowerShell 对帮助编写脚本或自动执行管理更改很有用。 有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](../deploy-use/administer-powershell.md)。
 
 

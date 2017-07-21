@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/02/2017
+ms.date: 07/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 23a6e3a2ca5efb6718d4d1fc33312cd481eec000
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 666ea0288a06b7a7e7f25b4a6cff0ac62888587c
+ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/18/2017
 ---
-<a id="information-and-support-for-azure-information-protection" class="xliff"></a>
-
-# Azure 信息保护的信息和支持
+# <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
 >*适用于：Azure 信息保护、Office 365*
 
@@ -30,13 +28,11 @@ ms.lasthandoff: 06/30/2017
 |----------------|---------------|
 |请参阅该服务的推荐文档|使用 [Azure 信息保护文档](https://docs.microsoft.com/information-protection/)起始页。|
 |提供有关文档的反馈或咨询有关文档的问题|发送电子邮件至 [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
-|接收有关 Azure 信息保护的推文，以及来自产品组的关于文档更新的公告|关注在 Microsoft 帮助领导 Azure 信息保护团队的 [@DanPlastina](https://twitter.com/DanPlastina) 的动态。|
+|接收产品组发送的有关 Azure 信息保护和文档更新公告的推文|关注在 Microsoft 帮助领导 Azure 信息保护团队的 [@DanPlastina](https://twitter.com/DanPlastina) 的动态。|
 |检查订阅信息和支持的功能|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|
 
 
-<a id="information-about-new-releases-and-updated-documentation" class="xliff"></a>
-
-## 有关新版本和更新的文档的信息
+## <a name="information-about-new-releases-and-updated-documentation"></a>有关新版本和更新的文档的信息
 Azure 信息保护产品团队向[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)发送关于新版本和更新的公告。 这些博客文章可为产品文档和技术支持信息提供补充。
 
 此外，还可以在 [Azure 信息保护 Yammer 网站](https://www.yammer.com/AskIPTeam)上找到有关新功能和预览的信息，也可以在其中申请新功能。
@@ -46,14 +42,10 @@ Azure 信息保护产品团队向[企业移动性和安全性博客](https://blo
 > [!TIP]
 > 如果要开发使用 Microsoft Rights Management 服务（Azure RMS 或 AD RMS）的应用程序，你可能还会对 [Active Directory Rights Management Services (AD RMS) 开发人员活动角博客](https://blogs.msdn.microsoft.com/rms/)感兴趣。
 
-<a id="support-options-and-community-resources" class="xliff"></a>
-
-## 支持选项和社区资源
+## <a name="support-options-and-community-resources"></a>支持选项和社区资源
 以下部分提供有关支持选项和故障排除选项的信息及社区资源。
 
-<a id="to-contact-microsoft-support" class="xliff"></a>
-
-### 与 Microsoft 支持部门联系
+### <a name="to-contact-microsoft-support"></a>与 Microsoft 支持部门联系
 
 如果你有顶级支持，请访问[针对顶级支持客户的门户](https://premier.microsoft.com/)来提交事件、浏览解决方案，并获得帮助。
 
@@ -71,9 +63,7 @@ Azure 信息保护产品团队向[企业移动性和安全性博客](https://blo
 有关其他支持选项，请询问你的 Microsoft 联系人。 
 
 
-<a id="self-help" class="xliff"></a>
-
-### 自助方式
+### <a name="self-help"></a>自助方式
 
 点播视频：
 
@@ -93,13 +83,9 @@ Azure 信息保护产品团队向[企业移动性和安全性博客](https://blo
 
 - 有关 Windows 的 Azure 信息保护客户端：请参阅管理员指南中的[其他检查和故障排除](../rms-client/client-admin-guide.md#additional-checks-and-troubleshooting)部分。
 
-- 有关自动检查、自动修正和跟踪：请下载并运行 [RMS 分析器工具](http://www.microsoft.com/en-us/download/details.aspx?id=46437)。 有关此工具的详细信息，请参阅下载页面上的“详细信息”和“安装说明”。 
+### <a name="community-resources"></a>社区资源
 
-<a id="community-resources" class="xliff"></a>
-
-### 社区资源
-
-推荐 [Azure 信息保护的 Yammer 网站](https://www.yammer.com/AskIPTeam)，在这里你可以获取来自 Azure 信息保护团队的直接响应，并受益于其他管理员和顾问分享的经验和知识。
+建议访问 [Azure 信息保护的 Yammer 网站](https://www.yammer.com/AskIPTeam)。 借助此资源，可获取 Azure 信息保护团队的直接响应，并受益于其他管理员和顾问分享的经验和知识。
 
 如果你无权访问 Yammer，请尝试访问 [Microsoft RMS（云）的 TechNet 论坛](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)。
 
