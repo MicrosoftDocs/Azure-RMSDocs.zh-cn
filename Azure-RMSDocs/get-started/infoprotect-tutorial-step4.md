@@ -4,17 +4,17 @@ description: "快速试用 Azure 信息保护入门教程步骤 4 - 查看设置
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: 9a21c10404582000a55ee0cea554aad9b5a552b3
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: d397ed8290d8b792b55ee78865cdbd41e330f8a9
+ms.sourcegitcommit: d42c6bb914563ae798d4171bb017c85b7077abfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>步骤 4：查看分类、设置标签和保护的实际操作 
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 06/30/2017
 
 既然已安装 Azure 信息保护客户端，并打开了 Word 文档，就可以知道使用我们配置的策略开始为文档设置标签并保护文档有多么简单。
 
-分类和保护在保存文档后进行，但在保存文档之前，我们将使用未保存的文档来看应用并更改标签是多么容易。
+保存文档后便会启用分类和保护，但我们将使用未保存的文档，了解如何轻松应用和更改标签。
 
 ## <a name="to-manually-change-our-default-label"></a>手动更改默认标签
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 06/30/2017
 
 将再次显示可用的标签。
 
-现在，选择第一个标签：“个人”。 所选标签的分类低于之前为本文档选择的标签，因此系统将提示你确认降低分类级别的原因：
+现在，选择第一个标签：“个人”。 由于所选标签的分类低于之前为此文档选择的标签分类，因此将会看到阐明为什么要降低分类级别的提示：
 
 ![Azure 信息保护快速入门教程步骤 4 - 确认降低理由的提示](../media/info-protect-lower-justification.png)
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 06/30/2017
 
 系统提示时，这一次请键入“此文档不需要分类”，然后单击“确认”。  
 
-你将看到“敏感度”的值显示为“未设置”，即未设置默认标签时，用户看到的最初内容：
+将看到“敏感度”值为“未设置”（这是在未设置默认标签时用户最初看到的内容）：
 
 ![Azure 信息保护快速入门教程步骤 4 - 删除分类](../media/sensitivity-not-setv2.png)
 
@@ -69,7 +69,7 @@ ms.lasthandoff: 06/30/2017
 
     ![Azure 信息保护快速入门教程步骤 4 - 推荐提示](../media/change-nowv2.png)
 
-    除了可看到一个文档，显示已应用配置的标签（例如，**机密\所有员工**），还可立即在页面上看到组织名称的水印，并且还应用了页脚**归类为机密**。 
+    此时，除了表明已应用配置的标签（例如，“机密\所有员工”）的文档之外，整个页面上还显示组织名称的水印，并且还应用了页脚“分类为机密”。 
 
     该文档仍使用你指定的 Azure Rights Management 模板进行保护，你可以单击“文件”选项卡并查看“保护文档”的信息来确认。 如果你使用默认的机密模板，将看到以下信息：该文档仅供内部用户使用（组织外部的用户将无法打开该文档），并且文档的内容不可复制或打印。 作为文档的所有者，你可以复制和打印该文档，但是如果将其通过电子邮件发送给组织中的其他用户，那么他们将无法执行这些操作。
 

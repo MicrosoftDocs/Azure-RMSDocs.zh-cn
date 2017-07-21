@@ -4,7 +4,7 @@ description: "部署 RMS 连接器时如何将 Windows Server 文件分类基础
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 909ff4f7c96af65172604bb903173dd38d95dcf9
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 7f49fc1613afcfdbad1f1f13e827a866b8ebe6f9
+ms.sourcegitcommit: 0fd2e63822280ec96ab957e22868c63de9ef3d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="file-servers-that-run-windows-server-and-use-file-classification-infrastructure-fci"></a>运行 Windows Server 和使用文件分类基础结构 (FCI) 的文件服务器
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 06/30/2017
 
 
 ## <a name="next-steps"></a>后续步骤
-现在你已经了解应用程序和服务如何支持 Azure RMS，你可能会希望将 Azure RMS 与Rights Management、Active Directory Rights Management Services (AD RMS) 的本地版本进行比较。 有关功能、要求和安全控制的比较，请参阅 [比较 Azure Rights Management 和 AD RMS](compare-azure-rms-ad-rms.md)。
+至此，已了解应用程序和服务如何支持 Azure RMS，建议比较 Azure RMS 与本地版 Rights Management、Active Directory Rights Management Services (AD RMS)。 有关功能、要求和安全控制的比较，请参阅 [比较 Azure Rights Management 和 AD RMS](compare-azure-rms-ad-rms.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
