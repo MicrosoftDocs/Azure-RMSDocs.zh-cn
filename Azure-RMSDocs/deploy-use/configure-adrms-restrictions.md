@@ -4,17 +4,17 @@ description: "如果选择具有 Azure 信息保护的 HYOK (AD RMS) 保护，�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/07/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: f1ae8d75b3fd3900b7c863be332656b71c647e1f
-ms.sourcegitcommit: 834b6bcab70a185018b4876b2d24b145e5089ac4
+ms.openlocfilehash: ac4068885df92c58ecba2a90e7aa0aeaaa34e8e9
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 保护的自留密钥 (HYOK) 要求和限制
 
@@ -64,6 +64,8 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 - 配置 Azure RMS 保护的标签时，请勿使用“不要转发”选项。 还必须指示用户不要在 Outlook 中手动选择此选项。 
 
     如果由标签或由用户手动应用了“不要转发”选项，则可能由 AD RMS 部署（而不是预期的 Azure 权限管理服务）应用该选项。 在此方案中，外部共享对象无法打开已应用此“不要转发”选项的电子邮件。
+    
+    自 1.9.58.0 版 Azure 信息保护客户端（当前处于预览阶段）起，Outlook 中的“不转发”按钮始终使用 Azure RMS。 此设置既不会影响 Outlook“不转发”菜单选项，也不会影响配置保护标签时使用的“不转发”选项。 如果不需要此行为，可以配置[高级客户端设置](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)，从而在 Outlook 中隐藏“不转发”按钮。
 
 - 如果用户在你使用 AD RMS (HYOK) 保护和 Azure RMS 保护时配置自定义权限，则文档或电子邮件始终受 Azure 权限管理保护。
 
