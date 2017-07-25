@@ -4,7 +4,7 @@ description: "此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e2f8f92595b21d122dfe76918a604ce7ff21b7ef
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 1a75a5db529ce3b520e38fb439c18a58230ceb0e
+ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 
@@ -32,24 +32,24 @@ ms.lasthandoff: 06/30/2017
 
 此过程分为两部分，可将 HSM 密钥和 AD RMS 配置导入到 Azure 信息保护，以生成由你管理的 Azure 信息保护租户密钥 (BYOK)。
 
-因为你的 Azure 信息保护租户密钥将由 Azure 密钥保管库存储并进行管理，所以除 Azure 信息保护以外，此部分的迁移还需要 Azure 密钥保管库中的管理。 如果 Azure 密钥保管库由你以外的管理员为你的组织管理，则你需要与该管理员协作完成这些过程。
+因为你的 Azure 信息保护租户密钥将由 Azure 密钥保管库存储并进行管理，所以除 Azure 信息保护以外，此部分的迁移还需要 Azure 密钥保管库中的管理。 如果 Azure Key Vault 由你以外的其他管理员为贵组织进行管理，则你必须与该管理员协作完成这些过程。
 
 在开始之前，请确保你的组织有一个已在 Azure 密钥保管库中创建的密钥保管库，且该保管库支持 HSM 保护的密钥。 尽管不是必需的，但我们建议你有一个专用于 Azure 信息保护的密钥保管库。 此密钥保管库将配置为允许 Azure Rights Management 服务访问，所以此密钥保管库存储的密钥应限制为仅适用于 Azure 信息保护密钥。
 
 
 > [!TIP]
-> 如果你将对 Azure 密钥保管库执行配置步骤，而尚不熟悉此 Azure 服务，你可能会发现先阅读 [Get started with Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)（Azure 密钥保管库入门）可能会有所帮助。 
+> 如果即将对 Azure 密钥保管库执行配置步骤，而尚不熟悉此 Azure 服务，则可能会发现先阅读 [Azure Key Vault 入门](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)可能会有所帮助。 
 
 
 ## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>第 1 部分：将 HSM 密钥传送到 Azure 密钥保管库
 
 由 Azure 密钥保管库的管理员完成这些过程。
 
-1. 对于想存储在 Azure Key Vault 中的每个导出的 SLC 密钥，请按照 Azure Key Vault 文档中的说明，使用[为 Azure Key Vault 实现自带密钥 (BYOK)](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault)，但以下情况例外：
+1. 对于想存储在 Azure Key Vault 中的每个导出的 SLC 密钥，请按照 Azure Key Vault 文档中的说明，使用[为 Azure Key Vault 实现自带密钥 (BYOK)](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azurekey-vault)，但以下情况例外：
 
     - 不要执行**生成你的租户密钥**中的步骤，因为你已从 AD RMS 部署获得等效物。 而是标识 AD RMS 服务器使用的从 Thales 安装获得的密钥，并在迁移期间使用此密钥。 Thales 加密的密钥文件通常在本地服务器上名为 **key<*keyAppName*><*keyIdentifier*>**。
 
-    将密钥上传到 Azure 密钥保管库后，可以看到密钥显示的属性，其中包括密钥 ID。 类似于 https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333。 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure Rights Management 服务将此密钥用作租户密钥。
+    将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 类似于 https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333。 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure Rights Management 服务将此密钥用作其租户密钥。
 
 2. 在连接 Internet 的工作站上的 PowerShell 会话中，使用 [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) cmdlet 来授权 Azure Rights Management 服务主体访问将存储 Azure 信息保护租户密钥的密钥保管库。 所需的权限有解密、加密、unwrapkey、wrapkey、验证和签名。
     
@@ -84,7 +84,7 @@ ms.lasthandoff: 06/30/2017
     
     作为此导入的一部分，将导入 SLC 密钥并且密钥将被自动设置为已存档。
 
-2.  在上传完每个文件后，请运行 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) 以指定哪个导入的密钥与 AD RMS 群集中当前活动的 SLC 密钥相匹配。 该密钥将成为 Azure 权限管理服务的活动租户密钥。
+2.  在上传完每个文件后，请运行 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) 以指定哪个导入的密钥与 AD RMS 群集中当前活动的 SLC 密钥相匹配。 该密钥将成为 Azure Rights Management 服务的活动租户密钥。
 
 3.  使用 [Disconnect-AadrmService](/powershell/aadrm/vlatest/disconnect-aadrmservice) cmdlet 断开与 Azure Rights Management 服务的连接：
 

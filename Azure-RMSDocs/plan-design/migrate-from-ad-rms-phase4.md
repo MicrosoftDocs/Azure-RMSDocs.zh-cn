@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 4 阶段包括从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4157148c0109317851ed2f128a5ae74603d82af2
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6c93f38b0ae725c1bc1d3423baf64931593af3b7
+ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/19/2017
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 06/30/2017
 
 如果你已将 Exchange Server 或 SharePoint Server 的信息权限管理 (IRM) 与 AD RMS 集成，则需要部署 Rights Management (RMS) 连接器，以充当本地服务器与 Azure 信息保护的保护服务之间的通信接口（中继）。
 
-这包括以下步骤：安装和配置连接器；对 Exchange 和 SharePoint 禁用 IRM；以及配置这些服务器以使用该连接器。 最后，如果你已将用于保护电子邮件的 AD RMS 数据配置文件 (.xml) 导入到 Azure 信息保护，则必须手动编辑 Exchange Server 计算机上的注册表，将所有受信任的发布域 URL 重定向到 RMS 连接器。
+此步骤包括安装和配置连接器、对 Exchange 和 SharePoint 禁用 IRM，以及配置这些服务器以使用该连接器。 最后，如果你已将用于保护电子邮件的 AD RMS 数据配置文件 (.xml) 导入到 Azure 信息保护，则必须手动编辑 Exchange Server 计算机上的注册表，将所有受信任的发布域 URL 重定向到 RMS 连接器。
 
 > [!NOTE]
 > 在开始之前，请从[支持 Azure RMS 的本地服务器](../get-started/requirements-servers.md)中核实 Azure Rights Management 服务所支持的本地服务器的版本。
@@ -75,7 +75,7 @@ ms.lasthandoff: 06/30/2017
 
         $irmConfig = Get-IRMConfiguration
         $list = $irmConfig.LicensingLocation 
-        $list + "<Your Tenant URL>/_wmcs/licensing"
+        $list += "<Your Tenant URL>/_wmcs/licensing"
         Set-IRMConfiguration -LicensingLocation $list
 
 3.  现在对向外部收件人发送的消息禁用 IRM 功能：

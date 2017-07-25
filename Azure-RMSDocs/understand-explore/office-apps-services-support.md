@@ -4,7 +4,7 @@ description: "最终用户 Office 应用程序（例如 Word、Excel、PowerPoin
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/11/2017
+ms.date: 07/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7fe044ab9b8e253e3095af5828a33926271bc42b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: d812476d882525b1fd5686418151188e57afa80d
+ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/21/2017
 ---
 # <a name="office-applications-and-services"></a>Office 应用程序和服务
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 06/30/2017
 最终用户 Office 应用程序（例如 Word、Excel、PowerPoint 和 Outlook）和 Office 服务（例如 Exchange 和 SharePoint）如何使用 Azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的数据。
 
 ## <a name="office-applications-word-excel-powerpoint-outlook"></a>Office 应用程序：Word、Excel、PowerPoint、Outlook
-这些应用程序通过使用信息权限管理 (IRM) 以本机方式支持权限管理，让用户能够将保护应用于已保存文档，或者应用于要发送的电子邮件。 用户可以应用模板，在 Word、Excel 和 PowerPoint 中，用户还可以针对访问、权限和使用限制选择高度自定义设置。 
+这些应用程序通过使用信息权限管理 (IRM) 以本机方式支持权限管理，让用户能够将保护应用于已保存文档，或者应用于要发送的电子邮件。 用户可以应用模板，在 Word、Excel 和 PowerPoint 中，用户还可以针对访问、权限和使用限制选择自定义设置。 
 
 例如，用户可以通过配置 Word 文档仅允许组织内人员访问该文档，还可以控制是否允许编辑 Excel 电子表格、是否将其限制为只读，以及是否禁止打印该电子表格。 对于时间敏感型文件，可以配置一个过期时间（直接由用户配置，或者应用模板进行配置），在过期之后无法再访问该文件。 在 Outlook 中，除了选择模板，用户还可以选择“不要转发”选项来帮助防止数据泄漏。
 
@@ -44,11 +44,11 @@ ms.lasthandoff: 06/30/2017
 
 -   **Outlook Web 应用**的 RMS 支持，其实施方法与 Outlook 客户端类似，让用户能够通过模板或指定各个选项来保护电子邮件，用户能够阅读和使用发送给他们的受保护电子邮件。
 
--   适用于 Outlook 客户端的**保护规则**，管理员能够配置这些规则，以便自动将 Rights Management 模板应用于发送给指定收件人的电子邮件。 例如，在将内部电子邮件发送至法律部门时，只允许法律部门成员阅读这些邮件，而且不能转发。 在发送电子邮件之前，用户可以看到应用于电子邮件的保护，而默认情况下，如果他们确定该电子邮件不是必须发送的，则可将其删除。 电子邮件在发送之前进行了加密。 有关详细信息，请参阅 Exchange 库中的 [Outlook 保护规则](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx)和[创建 Outlook 保护规则](https://technet.microsoft.com/library/dd638196%28v=exchg.150%29.aspx)。
+-   适用于 Outlook 客户端的**保护规则**，管理员能够配置这些规则，以便自动将 Rights Management 模板应用于发送给指定收件人的电子邮件。 例如，在将内部电子邮件发送至法律部门时，只允许法律部门成员阅读这些邮件，而且不能转发。 在发送电子邮件之前，用户可以看到应用于电子邮件的保护，而默认情况下，如果他们确定不需要这种保护，则可将其删除。 电子邮件在发送之前进行了加密。 有关详细信息，请参阅 Exchange 库中的 [Outlook 保护规则](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx)和[创建 Outlook 保护规则](https://technet.microsoft.com/library/dd638196%28v=exchg.150%29.aspx)。
 
 -   **传输规则**，管理员能够配置这些规则，以便根据各种属性（例如发件人、收件人、邮件主题和内容），自动将 Rights Management 模板应用于电子邮件。 这些规则在概念上类似于保护规则，但不允许用户取消保护；这些规则可以应用于 Outlook Web Access 和通过移动设备发送的电子邮件；在从客户端发送电子邮件之前，这些规则不对其进行加密。 有关详细信息，请参阅 Exchange 库中的[创建传输保护规则](https://technet.microsoft.com/library/dd302432.aspx)。
 
--   **数据丢失预防 (DLP) 策略** ，包含一系列筛选邮件的条件，有助于防止机密或敏感内容（例如个人信息或信用卡信息）的数据丢失。 检测到敏感数据时，可以使用策略提示，根据电子邮件中的内容，警告用户他们可能需要应用信息保护。 有关详细信息，请参阅 Exchange 库中的[数据丢失预防](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx)。
+-   **数据丢失预防 (DLP) 策略** ，包含一系列筛选邮件的条件，有助于防止机密或敏感内容（例如个人信息或信用卡信息）的数据丢失。 检测到敏感数据时，可以使用策略提示，根据电子邮件中的内容，警告用户他们可能需要应用信息保护。 有关详细信息，请参阅 Exchange 库中的[数据丢失防护](https://technet.microsoft.com/library/jj150527(v=exchg.160).aspx)。
 
 -   **Office 365 邮件加密** ，使用传输规则将加密电子邮件发送到公司外部人员，该电子邮件在浏览器中阅读，浏览器界面与 Outlook Web App 相似。 你可以在公司的加密电子邮件中自定义免责声明文本和标题文本，甚至添加你公司的徽标。 有关详细信息，请参阅 Office 网站上的 [Office 365 邮件加密](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx)。
 
@@ -96,8 +96,10 @@ ms.lasthandoff: 06/30/2017
 
 ## <a name="next-steps"></a>后续步骤
 
+如果你有 Office 365，则可能有兴趣查看 [Office 365 中的文件保护解决方案](https://technet.microsoft.com/library/dn919927.aspx#BKMK_O365fileprotect)，其中提供了用于保护 Office 365 中的文件的建议功能。
+
 若要查看其他应用程序和服务如何支持 Azure 信息保护中的 Azure Rights Management 服务，请参阅[应用程序如何支持 Azure Rights Management 服务](applications-support.md)。
 
-如果已准备好开始部署（包括配置这些应用程序和服务），请参阅 [Azure 信息保护部署路线图](/plan-design/deployment-roadmap.md)。
+如果已准备好开始部署（包括配置这些应用程序和服务），请参阅 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

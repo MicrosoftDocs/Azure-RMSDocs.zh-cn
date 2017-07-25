@@ -4,7 +4,7 @@ description: "确定使用 RMS API 本机支持 Azure 信息保护中的 Azure R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2017
+ms.date: 07/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9b2395ad67bfee226bf10f36613cb6465eb0b019
-ms.sourcegitcommit: 0fd2e63822280ec96ab957e22868c63de9ef3d47
+ms.openlocfilehash: a85aafd3f3f23b1aa138fd3d44e206be143f7643
+ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/21/2017
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -85,7 +85,7 @@ ms.lasthandoff: 07/18/2017
 
 Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，在这些应用中，此功能通常称为信息权限管理 (IRM)。 
 
-以下 Office 客户端版本支持使用 Azure RMS 保护 Windows 计算机上的文件和电子邮件：
+以下 Office 客户端套件支持使用 Azure RMS 保护 Windows 计算机上的文件和电子邮件：
 
 - Office 365 ProPlus：Office 2016 和 Office 2013
 
@@ -105,11 +105,13 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 - 不支持联合用户帐户基于表单的身份验证。 这些帐户必须使用 Windows 集成身份验证。
 
-以下 Office 客户端版本支持使用 Azure RMS 保护 macOS 上的文件和电子邮件：
+以下 Office 客户端套件支持使用 Azure RMS 保护 macOS 上的文件和电子邮件：
 
 - Office 365 专业增强版：Office 2016
 
-- Office 2016 for Mac
+- Office Standard 2016 for Mac
+
+另请参阅：[Office 应用程序服务说明](https://technet.microsoft.com/library/office-applications-service-description.aspx)
 
 ### <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>有关适用于 iOS 和 Android 的 Azure 信息保护应用的详细信息
 

@@ -4,7 +4,7 @@ description: "有关当你自己管理 Azure 信息保护租户密钥（自带�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 781e534566fe01bca4583d2fb5a1a430db77429b
-ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
+ms.openlocfilehash: 1f96c6be6b1b6b52450351ce0ec8994aac6f026e
+ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/19/2017
 ---
 # <a name="customer-managed-tenant-key-lifecycle-operations"></a>客户托管：租户密钥生命周期操作
 
@@ -29,17 +29,16 @@ ms.lasthandoff: 07/13/2017
 
 取消 Azure 信息保护订阅时，Azure 信息保护会停止使用租户密钥，用户无需执行任何操作。
 
+## <a name="rekey-your-tenant-key"></a>重新生成租户密钥
+重新生成密钥也称为滚动密钥。 不要重新生成租户密钥，除非在真正必要的情况下。 旧版客户端（例如 Office 2010）无法适当处理密钥更改。 在这种情况下，必须通过使用组策略或同等机制，清除计算机上的 Rights Management 状态。 但是，某些法律事件可能迫使你重新生成租户密钥。 例如：
 
-## <a name="re-key-your-tenant-key"></a>更新你的租户密钥
-更新密钥也称为滚动密钥。 不要更新你的租户密钥，除非在真正必要的情况下。 旧版客户端（例如 Office 2010）无法适当处理密钥更改。 在这种情况下，必须通过使用组策略或同等机制，清除计算机上的 Rights Management 状态。 但是，某些法律事件可能迫使你更新租户密钥。 例如：
-
--   你的公司拆分为两家或更多公司。 当你更新你的租户密钥时，新公司将无法访问你的员工发布的新内容。 如果有旧租户密钥的副本，他们可以访问旧内容。
+-   你的公司拆分为两家或更多公司。 在重新生成租户密钥时，新公司将无法访问员工发布的新内容。 如果有旧租户密钥的副本，他们可以访问旧内容。
 
 -   你认为租户密钥的主副本（你掌握的副本）已泄漏。
 
-当你更新租户密钥时，新内容将使用新租户密钥来保护。 这个过程是分阶段进行的，因此在一段时间内，有些新内容仍将使用旧租户密钥来保护。 以前受到保护的内容仍将使用旧租户密钥来保护。 为了支持此种方案，Azure 信息保护保留旧密钥，使其能够发布旧内容的许可证。
+在重新生成租户密钥时，将使用新租户密钥来保护新内容。 这个过程是分阶段进行的，因此在一段时间内，有些新内容仍将使用旧租户密钥来保护。 以前受到保护的内容仍将使用旧租户密钥来保护。 为了支持此种方案，Azure 信息保护保留旧密钥，使其能够发布旧内容的许可证。
 
-若要更新租户密钥，请先在密钥保管库中更新 Azure 信息保护租户密钥。 然后再次运行 [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey) cmdlet，指定新的密钥 URL。
+若要重新生成租户密钥，请先在 Key Vault 中重新生成 Azure 信息保护租户密钥。 然后再次运行 [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey) cmdlet，指定新的密钥 URL。
 
 ## <a name="backup-and-recover-your-tenant-key"></a>备份和恢复你的租户密钥
 你负责备份自己的租户密钥。 如果你在 Thales HSM 中生成租户密钥，若要备份该密钥，只需备份标记化密钥文件、安全体系文件和管理员卡即可。
@@ -58,8 +57,8 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 
 |事件描述|可能的响应|
 |------------------------|-------------------|
-|你的租户密钥泄露。|更新你的租户密钥。 请参阅[更新你的租户密钥](#re-key-your-tenant-key)。|
-|未经授权的个人或恶意软件获取了使用你的租户密钥的权限，但密钥本身并未泄露。|更新你的租户密钥在这种情况下并不奏效，需要进行根源分析。 如果进程或软件 Bug 是导致未经授权的个人获得访问权限的原因，则必须解决这一问题。|
+|你的租户密钥泄露。|重新生成租户密钥。 请参阅[重新生成租户密钥](#rkey-your-tenant-key)。|
+|未经授权的个人或恶意软件获取了使用你的租户密钥的权限，但密钥本身并未泄露。|重新生成租户密钥在这种情况下并不奏效，需要进行根源分析。 如果进程或软件 Bug 是导致未经授权的个人获得访问权限的原因，则必须解决这一问题。|
 |在当前这代 HSM 技术中发现的漏洞。|Microsoft 必须更新 HSM。 如果有理由认为这些漏洞泄露了密钥，则 Microsoft 将指示所有客户更新他们的租户密钥。|
 |在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 密钥保管库或 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户更新他们的租户密钥。|
 

@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 07/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 491d3191a713bf30ef0da58e359249869d3c82a9
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: 036fae62087bf71e0f3bf5ef2859acac701c5e62
+ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 07/21/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -252,16 +252,46 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 若要获取诊断信息并重置客户端，请选择“**运行诊断**”。 诊断测试完成后，单击“**复制结果**”，将信息粘贴到电子邮件中，以便你可以发送给 Microsoft 支持人员，或者最终用户可以发送给你的支持人员。 测试完成后，还可以重置客户端。
 
-有关“重置”选项的详细信息：
+> [!NOTE]
+> 在客户端的预览版本中，“运行诊断”已删除并替换为“重置设置”。 此外，此选项的行为[已更改](#more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client)。
+
+#### <a name="more-information-about-the-reset-option-for-the-general-availability-ga-version-of-the-azure-information-protection-client"></a>有关 Azure 信息保护客户端的正式发布 (GA) 版本的重置选项的详细信息
 
 - 不是本地管理员也能使用此选项，并且不会在事件查看器中记录此操作。 
 
-- 除非文件被锁定，否则此操作将删除 **%localappdata%\Microsoft\MSIPC** 中的所有文件，该路径用于存储客户端证书和权限管理模板。 此操作不会删除 Azure 信息保护策略或客户端日志文件，也不会注销用户。
+- 除非文件被锁定，否则此操作将删除 %LocalAppData%\Microsoft\MSIPC 中的所有文件，该路径用于存储客户端证书和 Rights Management 模板。 此操作不会删除 Azure 信息保护策略或客户端日志文件，也不会注销用户。
 
 - 会删除以下注册表项和设置：**HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**。 如果配置了此注册表项的设置，则必须在重置客户端后重新配置注册表设置。 例如，由于要从 AD RMS 迁移并且网络上仍有服务连接点，因此配置了用于重定向到 Azure 信息保护租户的设置。
 
 - 重置客户端后，必须重新初始化用户环境，下载客户端证书和最新模板。 为了执行此操作，请关闭 Office 的所有实例，然后重新启动 Office 应用程序。 此操作还检查是否已下载最新的 Azure 信息保护策略。 完成此操作之前，请勿再次运行诊断测试。
 
+#### <a name="more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client"></a>有关 Azure 信息保护客户端的当前预览版本的重置选项的详细信息
+
+- 不是本地管理员也能使用此选项，并且不会在事件查看器中记录此操作。 
+
+- 除非文件被锁定，否则此操作将删除以下位置中的所有文件。 这些文件包括客户端证书、Rights Management 模板、Azure 信息保护策略和缓存的用户凭据。 不会删除客户端日志文件。
+    
+    - %LocalAppData%\Microsoft\DRM
+    
+    - %LocalAppData%\Microsoft\MSIPC
+    
+    - %LocalAppData%\Microsoft\MSIP\Policy.msip
+    
+    - %LocalAppData%\Microsoft\MSIP\TokenCache
+
+- 将删除以下注册表项和设置。 如果配置了以下任意注册表项的设置，则必须在重置客户端后重新对其进行配置。 例如，由于要从 AD RMS 迁移并且网络上仍有服务连接点，因此配置了用于重定向到 Azure 信息保护租户的设置：
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\14.0\Common\DRM
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\DRM
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\16.0\Common\DRM
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\MSIPC    
+
+- 当前登录的用户已注销。
 
 ### <a name="client-status-section"></a>“**客户端状态**”部分
 
