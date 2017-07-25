@@ -4,17 +4,17 @@ description: "快速试用 Azure 信息保护入门教程步骤 4 - 查看设置
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/14/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: d397ed8290d8b792b55ee78865cdbd41e330f8a9
-ms.sourcegitcommit: d42c6bb914563ae798d4171bb017c85b7077abfb
+ms.openlocfilehash: 5ceb351e72ec30015697d2b27111ae76fb3b2b58
+ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 07/19/2017
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>步骤 4：查看分类、设置标签和保护的实际操作 
 
@@ -80,9 +80,7 @@ ms.lasthandoff: 07/14/2017
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
 |有关标记和保护文件的完整说明 |[对文件或电子邮件进行分类和保护](../rms-client/client-classify-protect.md)|
-
-
-
+|记录标记活动的位置 |[Azure 信息保护客户端的使用情况日志记录](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)|
 
 
 >[!div class="step-by-step"]

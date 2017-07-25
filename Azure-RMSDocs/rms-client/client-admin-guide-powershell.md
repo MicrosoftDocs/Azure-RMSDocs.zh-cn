@@ -4,7 +4,7 @@ description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2f8ad221d1193f5a6f40cc773548b9342ffd6659
-ms.sourcegitcommit: 0fd2e63822280ec96ab957e22868c63de9ef3d47
+ms.openlocfilehash: 8dd4917b23b3732e0d835f957191db9c4578f60d
+ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/19/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -432,7 +432,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 若要控制访问令牌的过期时间，请在运行此 cmdlet 时使用参数。 这样一来，可以配置有效期为一年、两年或永不过期的访问令牌。 若要执行此配置，必须拥有在 Azure Active Directory 中注册的两个应用程序：Web/API 应用程序和本机应用程序。 此 cmdlet 的参数使用这些应用程序提供的值。
 
-运行此 cmdlet 后，可以在创建的用户帐户上下文中运行标记 cmdlet。 若要使用多个帐户，那么每个帐户都必须有自己的 Azure AD 注册应用程序，因此必须对每个帐户运行此 cmdlet。
+运行此 cmdlet 后，可以在创建的用户帐户上下文中运行标记 cmdlet。
 
 ### <a name="to-create-and-configure-the-azure-ad-applications-for-set-aipauthentication"></a>为 Set-AIPAuthentication 创建和配置 Azure AD 应用程序的具体步骤
 
@@ -444,15 +444,17 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
     
     - 名称：AIPOnBehalfOf
     
+    如果愿意的话，请指定其他名称。 该名称对于每个租户必须是唯一的。
+    
     - 应用程序类型：Web/API 应用程序
     
     - 登录 URL：http://localhost
-    
-4. 选择刚刚创建的应用程序 AIPOnBehalfOf，再选择“设置”边栏选项卡中的“属性”。 在“属性”边栏选项卡中，复制“应用程序 ID”值，再关闭此边栏选项卡。 
+
+4. 选择刚刚创建的应用程序，例如，AIPOnBehalfOf。 然后，在“设置”边栏选项卡上，选择“属性”。 在“属性”边栏选项卡中，复制“应用程序 ID”值，再关闭此边栏选项卡。 
     
     运行 Set-AIPAuthentication cmdlet 时，此值用于 `WebAppId` 参数。
 
-5. 在“设置”边栏选项卡中，选择“密钥”。 指定说明和选定的持续时间（1 年、2 年或永不过期），添加新密钥。 然后，选择“保存”，并复制显示的“值”字符串。 请务必保存此字符串，因为它不会再次显示，并且无法检索。
+5. 在“设置”边栏选项卡中，选择“密钥”。 指定说明和选定的持续时间（1 年、2 年或永不过期），添加新密钥。 然后，选择“保存”，并复制显示的“值”字符串。 请务必保存此字符串，因为它不会再次显示，并且无法检索。 与所使用的任何密钥一样，安全地存储保存的值，并限制对它的访问。
     
     运行 Set-AIPAuthentication cmdlet 时，此值用于 `WebAppKey` 参数。
 
@@ -460,11 +462,13 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
     
     - 名称：AIPClient
     
+    如果愿意的话，请指定其他名称。 该名称对于每个租户必须是唯一的。
+    
     - 应用程序类型：本机
     
     - 登录 URL：http://localhost
 
-7. 选择刚刚创建的应用程序 AIPClient，再选择“设置”边栏选项卡中的“属性”。 在“属性”边栏选项卡中，复制“应用程序 ID”值，再关闭此边栏选项卡。
+7. 选择刚刚创建的应用程序，例如，AIPClient。 然后，在“设置”边栏选项卡上，选择“属性”。 在“属性”边栏选项卡中，复制“应用程序 ID”值，再关闭此边栏选项卡。
     
     运行 Set-AIPAuthentication cmdlet 时，此值用于 `NativeAppId` 参数。
 

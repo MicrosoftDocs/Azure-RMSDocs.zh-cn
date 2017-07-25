@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5b5f8b336e1946bc4c394b9154eed50844b6b72b
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: 41e9e8aff35727a40413e0bf18e46f1ad14e9222
+ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/21/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的自定义配置
 
@@ -56,25 +56,33 @@ ms.lasthandoff: 07/18/2017
 
 ## <a name="sign-in-as-a-different-user"></a>以其他用户身份登录
 
-在生产环境中，如果用户使用的是 Azure 信息保护客户端，则通常不需要以其他用户身份登录。 不过，作为管理员，可能需要以其他用户身份登录。 例如，除了拥有组织在生产环境中使用的 Office 365 或 Azure 租户外，还拥有测试租户。
+在生产环境中，如果用户使用的是 Azure 信息保护客户端，则通常不需要以其他用户身份登录。 不过，作为管理员，你在测试阶段可能需要以其他用户身份登录。 
 
 可以使用“Microsoft Azure 信息保护”对话框验证当前登录的帐户身份：打开 Office 应用程序，在“主页”选项卡上的“保护”组中，单击“保护”，然后单击“帮助和反馈”。 帐户名称会显示在“客户端状态”部分中。
 
-特别是在使用管理员帐户时，请务必检查所显示的登录帐户的域名。 例如，如果在两个不同的租户中都拥有“admin”帐户，则很容易忽略登录的帐户名正确但域错误的情况。 使用错误帐户的症状是，无法下载 Azure 信息保护策略，或看不到预期的标签或行为。
+请确保还要检查所显示的登录帐户的域名。 很容易忽视的一点是，使用正确的帐户名登录，但域不正确。 使用错误帐户的症状是，无法下载 Azure 信息保护策略，或看不到预期的标签或行为。
 
 以其他用户身份登录：
 
-1. 使用注册表编辑器，导航到“HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP”并删除“TokenCache”值（及其关联的值数据）。
+1. 具体取决于 Azure 信息保护客户端的版本： 
+    
+    - 对于 Azure 信息保护客户端的正式发布版本：使用注册表编辑器，导航到“HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP”并删除“TokenCache”值（及其关联的值数据）。
+    
+    - 对于 Azure 信息保护客户端的当前预览版本：导航到“%localappdata%\Microsoft\MSIP”并删除“TokenCache”文件。
 
 2. 重新启动任何打开的 Office 应用程序，并使用其他用户帐户登录。 如果在 Office 应用程序中没有看到登录到 Azure 信息保护服务的提示，请返回“Microsoft Azure信息保护”对话框，然后从更新的“客户端状态”部分中单击“登录”。
 
 此外：
+
+- 此解决方案支持以同一租户中的其他用户身份登录。 不支持以不同租户中的其他用户身份登录。 若要使用多个租户测试 Azure 信息保护，请使用不同的计算机。
 
 - 如果使用的是单一登录，必须在编辑注册表后注销 Windows，再使用其他用户帐户登录。 然后，Azure 信息保护客户端会使用当前登录的用户帐户，自动进行身份验证。
 
 - 若要重置 Azure Rights Management 服务的用户设置，可以使用“帮助和反馈”选项。
 
 - 如果要删除当前下载的 Azure 信息保护策略，可以从 **%localappdata%\Microsoft\MSIP** 文件夹中删除 **Policy.msip** 文件。
+
+- 如果有 Azure 信息保护客户端的当前预览版本，则可以使用“帮助和反馈”中的“重置设置”选项注销并删除当前已下载的 Azure 信息保护策略。
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>隐藏 Windows 文件资源管理器中的“分类和保护”菜单选项
 

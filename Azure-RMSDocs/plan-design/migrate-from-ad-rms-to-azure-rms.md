@@ -4,7 +4,7 @@ description: "用于将 Active Directory Rights Management Services (AD RMS) 部
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cc11c4c9cfa9a6886180782c4ae88068bf280895
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6ce3936b36a716cfdc2651cda9f59eb9b552eeb3
+ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -34,11 +34,11 @@ ms.lasthandoff: 06/30/2017
 
 ## <a name="recommended-reading-before-you-migrate-to-azure-information-protection"></a>建议在迁移到 Azure 信息保护之前阅读的内容
 
-虽然不是必需的，但在开始迁移之前阅读以下内容可能会有所帮助，这样可以更好地理解与迁移步骤相关的技术的工作原理：
+虽然不是必需的，但在开始迁移之前，阅读以下文档可能会很有用。 这一知识可以让你更好地了解与迁移步骤相关的技术的工作原理。
 
 - [规划和实现 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)：了解可用于 Azure 信息保护租户的密钥管理选项；其中，云中的 SLC 密钥等效项要么由 Microsoft（默认）管理，要么由自己管理（“自带密钥”或 BYOK 配置）。 
 
-- [RMS 服务发现](../rms-client/client-deployment-notes.md#rms-service-discovery)：RMS 客户端部署备注的此部分说明了服务发现的顺序依次是**注册表**、**SCP**、**云**。 在迁移过程中，如果仍在安装 SCP，则可以使用 Azure 信息保护租户的注册表设置来配置客户端，以确保它们不会使用从 SCP 返回的 AD RMS 群集。
+- [RMS 服务发现](../rms-client/client-deployment-notes.md#rms-service-discovery)：RMS 客户端部署备注的此部分说明了服务发现的顺序依次是注册表、SCP 和云。 在迁移过程中，如果仍在安装 SCP，则可以使用 Azure 信息保护租户的注册表设置来配置客户端，以确保它们不会使用从 SCP 返回的 AD RMS 群集。
 
 - [ 连接器概述](../deploy-use/deploy-rms-connector.md#overview-of-the-microsoft-rights-management-connector)：RMS 连接器文档的此部分说明了本地服务器如何连接到 Azure 权限管理服务以保护文档和电子邮件。
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 06/30/2017
 
 有关不同模式以及如何升级的详细信息，请参阅 [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)（AD RMS 加密模式）。
 
-如果 AD RMS 群集处于加密模式 1 且无法升级，则必须在迁移完成时重新键入 Azure 信息保护租户密钥。 重新键入将创建一个新租户密钥，该密钥使用加密模式 2。 将 Azure Rights Management 服务与加密模式 1 配合使用仅在迁移过程中受支持。
+如果 AD RMS 群集处于加密模式 1 且无法升级，则必须在迁移完成时重新生成 Azure 信息保护租户密钥。 重新生成密钥将创建一个新租户密钥，该密钥使用加密模式 2。 将 Azure Rights Management 服务与加密模式 1 配合使用仅在迁移过程中受支持。
 
 确认 AD RMS 加密模式：
  
@@ -135,25 +135,25 @@ ms.lasthandoff: 06/30/2017
 
 - 他们的 Azure Rights Management 服务尚未激活，但他们知道其 Azure Rights Management 服务 URL。
 
-    他们可以通过安装 Azure Rights Management 工具，连接到该服务获取此信息 ([Connect-Aadrmservice](/powershell/aadrm/vlatest/connect-aadrmservice))，然后查看其 Azure Rights Management 服务的租户信息 ([Get-AadrmConfiguration](/powershell/aadrm/vlatest/get-aadrmconfiguration))。
+    他们可以通过安装 Azure Rights Management 工具，连接到服务获取此信息 ([Connect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice))，然后查看其 Azure Rights Management 服务的租户信息 ([Get-AadrmConfiguration](/powershell/aadrm/vlatest/get-aadrmconfiguration))。
 
 - 他们向你提供其 AD RMS 群集的 URL 及其 Azure Rights Management 服务 URL，以便你可以配置已迁移客户端，将其受 AD RMS 保护的内容的请求重定向到其租户的 Azure Rights Management 服务中。 步骤 7 说明了如何配置客户端重定向。
 
-- 他们需先将其 AD RMS 群集根项 (SLC) 导入到其租户中，然后你才能开始迁移你的用户。 同样，你也需要先导入你的 AD RMS 群集根项，然后他们才能开始迁移其用户。 有关此迁移过程中导入项的说明，请参阅[步骤 4：从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)。 
+- 他们需先将其 AD RMS 群集根项 (SLC) 导入到其租户中，然后你才能开始迁移你的用户。 同样，你也需要先导入你的 AD RMS 群集根项，然后他们才能开始迁移其用户。 有关此迁移过程中导入密钥的说明，请参阅[步骤 4：从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)。 
 
 ## <a name="overview-of-the-steps-for-migrating-ad-rms-to-azure-information-protection"></a>将 AD RMS 迁移到 Azure 信息保护的步骤概述
 
-迁移步骤可分为 5 个阶段，在不同的时间由不同的管理员执行。
+迁移步骤可分为五个阶段，在不同的时间由不同的管理员执行。
 
 [**第 1 阶段：迁移准备工作**](migrate-from-ad-rms-phase1.md)
 
 - **步骤 1：下载“Azure RMS 管理”管理工具，然后确定租户 URL**
 
-    迁移过程要求你从随“Azure RMS 管理”管理工具一起安装的 Azure RMS 模块中运行一个或多个 PowerShell cmdlet。 你还需要知道租户 Azure Rights Management 服务 URL 才能完成多个迁移步骤，且可使用 PowerShell 确定该值。
+    迁移过程要求你从随“Azure RMS 管理”管理工具一起安装的 Azure RMS 模块中运行一个或多个 PowerShell cmdlet。 还需要知道租户的 Azure Rights Management 服务 URL 才能完成多个迁移步骤。 可以使用 PowerShell 确定该值。
 
 - **步骤 2：客户端迁移准备**
 
-     如果无法一次迁移所有客户端，但可分批次进行迁移，请使用载入控件并部署预迁移脚本。
+     如果无法一次迁移所有客户端，并且将其分批次进行迁移，请使用载入控件并部署预迁移脚本。
 
 - **步骤 3：准备迁移 Exchange 部署**
 
@@ -183,7 +183,7 @@ ms.lasthandoff: 06/30/2017
 
 - **步骤 6.配置导入的模板**
 
-    当你导入权限策略模板时，系统会将其状态存档。 如果你希望用户能够查看并使用这些模板，则必须在 Azure 经典门户中将模板状态更改为“已发布”。
+    当你导入权限策略模板时，系统会将其状态存档。 如果希望用户能够查看并使用这些模板，则必须在 Azure 经典门户中将模板状态更改为“已发布”。
 
 
 [**第 3 阶段：客户端配置**](migrate-from-ad-rms-phase3.md)
@@ -216,7 +216,7 @@ ms.lasthandoff: 06/30/2017
 
     不再需要准备阶段配置的载入控件。
 
-- **步骤 12：更新 Azure 信息保护租户密钥**
+- **步骤 12：重新生成 Azure 信息保护租户密钥**
 
     如果在迁移前未运行加密模式 2，此步骤是必需的；对于所有迁移来说，此步骤是可选的但建议执行，以帮助保护 Azure 信息保护租户密钥的安全性。
 
