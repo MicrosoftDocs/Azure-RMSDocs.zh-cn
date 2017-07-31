@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 036fae62087bf71e0f3bf5ef2859acac701c5e62
-ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
+ms.openlocfilehash: 9359d83ec2ee85edeef6a3d2680f95633d22546e
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -115,8 +115,25 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
     
     如果需要此更新且未安装，则客户端安装将警告你必须安装此更新。 可以在安装客户端后安装此更新，但某些操作将被阻止并再次显示该信息。  
 
+- 请勿为 Office 应用程序禁用“Microsoft Azure 信息保护”加载项
+    
+    如果已配置组策略设置“托管加载项列表”，请通过为 Azure 信息保护指定以下编程标识符 (ProgID) 来添加 Office 应用程序的 Microsoft Azure 信息保护加载项，并将选项设置为“1：始终启用加载项”。
+    
+    - 对于 Outlook：`MSIP.OutlookAddin`
+    
+    - 对于 Word：`MSIP.WordAddin`
+    
+    - 对于 Excel：`MSIP.ExcelAddin`
+    
+    - 对于 PowerPoint：`MSIP.PowerPointAddin`
+    
+    即使尚未配置“托管加载项列表”组策略设置，如果收到报告称将禁用“Microsoft Azure 信息保护”加载项，也可能需要对其进行配置。 禁用此加载项后，Office 应用程序中将不会显示“Azure 信息保护”栏。
+    
+    有关此组策略设置的详细信息，请参阅 [Office 2013 和 Office 2016 程序的组策略设置导致未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)。
+
 > [!IMPORTANT]
 > 安装 Azure 信息保护客户端需要本地管理权限。
+
 
 ### <a name="options-to-install-the-azure-information-protection-client-for-users"></a>为用户安装 Azure 信息保护客户端的选项
 
@@ -305,6 +322,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 使用“**版本**”信息可以确认安装的是哪个版本的客户端。 可以单击“**最近更新**”链接来查看客户端的“[版本发行历史记录](client-version-release-history.md)”，检查是否为最新发行版本以及相应的修补程序和新功能。
 
+## <a name="support-for-multiple-languages"></a>支持多种语言
+
+Azure 信息保护客户端支持 Office 支持的所有客户端语言。 例如，将以用户语言显示菜单选项、对话框和消息。 由于有一个安装程序可检测语言，因此不需要进行额外配置即可安装不同语言的客户端。 
+
+但是，对于[默认策略](../deploy-use/configure-policy-default.md)或你指定的标签名称，用户看到的标签名称不会自动翻译。 要使用其他语言向用户显示标签，必须提供你的翻译将 Azure 信息保护策略配置为使用这些翻译。 有关详细信息，请参阅[如何在 Azure 信息保护中配置不同语言的标签](../deploy-use/configure-policy-languages.md)。
 
 ## <a name="to-uninstall-the-azure-information-protection-client"></a>卸载 Azure 信息保护客户端
 

@@ -4,7 +4,7 @@ description: "了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ed06deca76ed1241f0c9b3f104fd922263c5a6cd
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: a093ca8cdd02448c877554ff87e971e956eab789
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -78,8 +78,8 @@ ms.lasthandoff: 06/30/2017
 
 |显示名称|包括的权限（通用名称）|
 |----------------|---------------------------------|
-|&lt;组织名称&gt; - 机密信息，仅供查阅|查看、打开、读取|
-|&lt;组织名称&gt; - 机密信息|查看、打开、读取；保存；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
+|&lt;组织名称&gt; - 机密信息，仅供查阅 <br /><br />或<br /><br /> *高度机密\所有员工*|查看、打开、读取|
+|&lt;组织名称&gt; - 机密信息 <br /><br />或 <br /><br />*机密\所有员工*|查看、打开、读取；保存；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
 
 ## <a name="do-not-forward-option-for-emails"></a>电子邮件的“不得转发”选项
 
