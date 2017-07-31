@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 2 阶段涉及从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7fb7beccf2f9fdf788f13e76796702ff64bffbbc
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 24e832c63ce7ff4f774bbc2ec10a7b35f72e050a
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 06/30/2017
 ### <a name="import-the-configuration-data-to-azure-information-protection"></a>将配置数据导入到 Azure 信息保护
 此步骤的确切过程取决于当前的 AD RMS 部署配置以及 Azure 信息保护租户密钥的首选拓扑。
 
-你的当前 AD RMS 部署将对服务器许可方证书 (SLC) 密钥使用以下配置之一：
+当前 AD RMS 部署对服务器许可方证书 (SLC) 密钥使用以下配置之一：
 
 - AD RMS 数据库中的密码保护。 这是默认设置。
 
@@ -80,16 +80,19 @@ ms.lasthandoff: 06/30/2017
 > [!IMPORTANT]
 > Exchange Online 当前与 Azure 信息保护中的 BYOK 不兼容。 如果你想要在迁移后使用 BYOK 并打算使用 Exchange Online，请务必了解，这种配置会缩减 Exchange Online 的 IRM 功能。 请查看 [BYOK 定价和限制](byok-price-restrictions.md)中的信息，以帮助选择最适合迁移方案的 Azure 信息保护租户密钥拓扑。
 
-使用下表来确定要使用哪个过程进行迁移。 不支持未列出的组合。
+使用下表来确定要使用哪个过程进行迁移。 
 
 |当前的 AD RMS 部署|选择的 Azure 信息保护租户密钥拓扑|迁移说明|
 |-----------------------------|----------------------------------------|--------------------------|
 |AD RMS 数据库中的密码保护|由 Microsoft 管理|请参阅此表后面的 **软件保护密钥到软件保护密钥**的迁移过程。<br /><br />这是最简单的迁移路径，只需要将配置数据传送到 Azure 信息保护。|
-|通过使用 Thales nShield 硬件安全模块 (HSM) 进行 HSM 保护|由客户管理 (BYOK)|请参阅此表后面的**HSM 保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 Azure 密钥保管库 BYOK 工具集和以下三组步骤：首先将密钥从本地 HSM 传送到 Azure 密钥保管库 HSM，然后授权 Azure 信息保护中的 Azure Rights Management 服务使用你的租户密钥，最后将配置数据传送到 Azure 信息保护。|
+|通过使用 Thales nShield 硬件安全模块 (HSM) 进行 HSM 保护 |由客户管理 (BYOK)|请参阅此表后面的**HSM 保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 Azure Key Vault BYOK 工具集和以下三组步骤：首先将密钥从本地 HSM 传输到 Azure Key Vault HSM，然后授权 Azure 信息保护中的 Azure Rights Management 服务使用租户密钥，最后将配置数据传输到 Azure 信息保护。|
 |AD RMS 数据库中的密码保护|由客户管理 (BYOK)|请参阅此表后面的**软件保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 Azure 密钥保管库 BYOK 工具集和以下四组步骤：首先提取软件密钥并将其导入到本地 HSM，然后将密钥从本地 HSM 传送到 Azure 信息保护 HSM，之后将密钥保管库数据传送到 Azure 信息保护，最后将配置数据传送到 Azure 信息保护。|
-|通过使用 Thales 以外的供应商提供的硬件安全模块 (HSM) 进行 HSM 保护|由客户管理 (BYOK)|与 HSM 供应商联系以获取有关如何将密钥从此 HSM 传送到 Thales nShield 硬件安全模块 (HSM) 的说明。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
+|通过使用 Thales 以外的供应商提供的硬件安全模块 (HSM) 进行 HSM 保护 |由客户管理 (BYOK)|与 HSM 供应商联系，获取有关如何将密钥从此 HSM 传输到 Thales nShield 硬件安全模块 (HSM) 的说明。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
 |通过使用外部加密提供程序进行密码保护|由客户管理 (BYOK)|与加密提供程序的供应商联系以获取有关如何将密钥传输到 Thales nShield 硬件安全模块 (HSM) 的说明。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
-在开始这些过程之前，请确保你可以访问先前在导出受信任的发布域时创建的 .xml 文件。 例如，可以将这些文件保存到从 AD RMS 服务器移到接入 Internet 的工作站的 U 盘。
+
+如果拥有无法导出的 HSM 保护密钥，仍可通过将 AD RMS 群集配置为只读模式来迁移到 Azure 信息保护。 在只读模式下，仍可打开之前受保护的内容，但新的受保护内容使用由你 (BYOK) 或 Microsoft 管理的新租户密钥。 有关详细信息，请参阅[可更新 Office 以支持从 AD RMS 到 Azure RMS 的迁移](https://support.microsoft.com/help/4023955/an-update-is-available-for-office-to-support-migrations-from-ad-rms-to)。
+
+在开始这些密钥迁移过程之前，请确保可以访问先前在导出受信任的发布域时创建的 .xml 文件。 例如，可以将这些文件保存到从 AD RMS 服务器移到接入 Internet 的工作站的 U 盘。
 
 > [!NOTE]
 > 但是，你将存储这些文件，请使用安全最佳做法来保护它们，因为此数据包含你的私钥。
@@ -116,7 +119,7 @@ ms.lasthandoff: 06/30/2017
 
 如果你的 Azure 信息保护租户已激活并且可以识别这些计算机，请确保根据[步骤 7](migrate-from-ad-rms-phase3.md#step-7-reconfigure-clients-to-use-azure-information-protection) 中所述，在这些计算机上运行 CleanUpRMS.cmd 脚本。 运行此脚本会强制这些计算机重新初始化用户环境，以便下载更新的租户密钥和导入的模板。
 
-此外，如果已经创建要在迁移后使用的自定义模板，则必须导出并导入这些模板。 下一步中介绍了此过程。 
+此外，如果已经创建要在迁移后使用的自定义模板，则必须导出然后导入这些模板。 下一步中介绍了此过程。 
 
 ## <a name="step-6-configure-imported-templates"></a>步骤 6. 配置导入的模板
 

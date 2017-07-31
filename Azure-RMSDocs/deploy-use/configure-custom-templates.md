@@ -4,7 +4,7 @@ description: "面向管理员提供的有关配置和管理使用权限模板的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,27 +12,27 @@ ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d141589c9dc9d90cf3a507db77f624c849f955b5
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6c3f066a373d253d8488c805828a65513370e3a4
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>为 Azure Rights Management 服务配置自定义模板
 
 >*适用于：Azure 信息保护、Office 365*
 
-[激活了](activate-service.md) Azure Rights Management 服务时，用户能够自动使用两个默认模板，这些模板让他们能够轻松地将权限管理策略应用于在组织中限制访问授权用户的敏感文件。 这两个模板具有以下权限策略限制：
+Azure Rights Management 服务处于[激活](activate-service.md)状态时，将自动向用户开放两个默认模板。 借助这些模板，可将权限管理策略轻松应用于敏感文件，将其访问权限限制于组织中经授权的用户。 这两个模板具有以下权限策略限制：
 
 -   受保护内容的只读查看
 
-    -   显示名称：**&lt;组织名称&gt; - 机密，仅供查阅**
+    -   显示名称：“&lt;组织名称&gt; - 机密，仅供查阅”或“高度机密\所有员工”
 
     -   特定权限：查看内容
 
 -   受保护内容的读取或修改权限
 
-    -   显示名称：**&lt;组织名称&gt; - 机密**
+    -   显示名称：“&lt;组织名称&gt; - 机密”或“机密\所有员工”
 
     -   特定权限：查看内容、保存文件、编辑内容、查看分配的权限、允许宏、转发、答复、全部答复
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 06/30/2017
 
 -   你希望在模板中配置更多选项，包括过期日期，以及是否能够在没有 Internet 连接的情况下访问内容。
 
-要让用户能够选择包含此类设置的自定义模板，你必须首先创建一个自定义模板，对其进行配置，然后发布该模板。 尽管你可能只需要几个模板，但在 Azure 中可最多保存 500 个自定义模板。 
+要让用户能够选择包含此类设置的自定义模板，你必须首先创建一个自定义模板，对其进行配置，然后发布该模板。 尽管可能只需要几个模板，但在 Azure 中可最多保存 500 个自定义模板。 
 
 使用以下信息可帮助你配置和使用自定义模板：
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 06/30/2017
 -   [使用 PowerShell 管理模板](configure-templates-with-powershell.md)
 
 > [!TIP]
-> 用于配置 Azure 权限管理保护的模板和新选项将移动到 Azure 门户。 此功能目前处于预览状态。 有关详细信息，请参阅以下博客文章公告：[Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/)（Azure 信息保护统一管理现为预览版） 
+> 用于配置 Azure 权限管理保护的模板和新选项将移动到 Azure 门户。 此功能目前处于预览状态。 有关详细信息，请参阅以下博客文章公告：[Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/)（Azure 信息保护统一管理目前处于预览状态） 
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: f6cd01357db99ee9d299606172aa85f7e2f44ba0
-ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
+ms.openlocfilehash: db87ffaa15802f081439f7983ef1060a60c0b24c
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>步骤 2：配置并发布 Azure 信息保护策略
 
@@ -78,9 +78,9 @@ ms.lasthandoff: 07/13/2017
     
 3. 在“保护”边栏选项卡中，请务必选中“Azure RMS”，并选中“选择预定义模板”。 然后，单击下拉列表框并选择默认模板，以便组织中的所有用户可以查看和编辑受保护的内容。 
     
-    如果你最近已激活 Azure 权限管理服务，此模板会被命名为“机密\所有员工”。 
+    若是最近获得的订阅，则该模板名为“机密\所有员工”。 
     
-    如果在开始本教程前已经激活 Azure 权限管理服务，默认模板可能会被命名为“\<你的组织名称> - 机密”。 例如，如果你的组织名称为 VanArsdel, Ltd，你会看到并选择“VanArsdel, Ltd - 机密”： 
+    如果获得订阅已有有一段时间，则默认模板可能名为“\<组织名称> - 机密” 。 例如，如果你的组织名称为 VanArsdel, Ltd，你会看到并选择“VanArsdel, Ltd - 机密”： 
     
     ![Azure 信息保护快速入门教程步骤 3 - 设置 Azure RMS 保护](../media/step2-select-rms-template.png)
     

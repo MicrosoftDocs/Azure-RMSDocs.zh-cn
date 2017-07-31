@@ -4,7 +4,7 @@ description: "最终用户 Office 应用程序（例如 Word、Excel、PowerPoin
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d812476d882525b1fd5686418151188e57afa80d
-ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
+ms.openlocfilehash: 96707d0790747b4dac668508f58e9584f4649370
+ms.sourcegitcommit: 72208cabecaa233cdade0dae0c448037370f2c2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 07/28/2017
 ---
 # <a name="office-applications-and-services"></a>Office 应用程序和服务
 
 >*适用于：Azure 信息保护、Office 365*
 
-最终用户 Office 应用程序（例如 Word、Excel、PowerPoint 和 Outlook）和 Office 服务（例如 Exchange 和 SharePoint）如何使用 Azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的数据。
+最终用户 Office 应用程序和 Office 服务（例如 Exchange 和 SharePoint）可使用 Azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的数据。 Office 应用程序包括 Word、Excel、PowerPoint 和 Outlook。 Office 服务包括 Exchange 和 SharePoint。 
 
 ## <a name="office-applications-word-excel-powerpoint-outlook"></a>Office 应用程序：Word、Excel、PowerPoint、Outlook
 这些应用程序通过使用信息权限管理 (IRM) 以本机方式支持权限管理，让用户能够将保护应用于已保存文档，或者应用于要发送的电子邮件。 用户可以应用模板，在 Word、Excel 和 PowerPoint 中，用户还可以针对访问、权限和使用限制选择自定义设置。 
@@ -78,12 +78,13 @@ ms.lasthandoff: 07/21/2017
 > [!NOTE]
 > 目前，使用 SharePoint IRM 时存在一些限制：
 > 
-> - 不能使用在 Azure 经典门户中管理的默认模板或自定义模板。 
+> - 不能使用在 Azure 门户中管理的默认模板或自定义模板。 
 > 
 > - 不支持带 .PPDF 文件扩展名的受保护 PDF 文件。 使用本机支持 Rights Management 的 PDF 阅读器时，支持带 .PDF 文件扩展名的文件以及受 Rights Management 本机保护的文件。
+> 
+> - 如果在保护文件后将其上传到 SharePoint 库或 OneDrive for Business，则以下各项不适用于此文件：共同创作、Office Online、编制索引和搜索。
 
-
-使用 IRM 保护时，Azure 权限管理服务会在从 SharePoint 下载文档时为文档应用使用限制和数据加密，而不是在 SharePoint 中首次创建文档或将其上传到库时进行此类操作。 有关如何在下载文档前对其进行保护的信息，请参阅 SharePoint 文档中的 [OneDrive for Business 和 SharePoint Online 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx) 。
+使用 SharePoint IRM 保护时，Azure Rights Management 服务会在从 SharePoint 下载文档时为文档应用使用限制和数据加密，而不是在 SharePoint 中首次创建文档或将其上传到库时进行此操作。 有关如何在下载文档前对其进行保护的信息，请参阅 SharePoint 文档中的 [OneDrive for Business 和 SharePoint Online 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx) 。
 
 虽然不再是新文章，但以下 Office 博客中的帖子中仍可能提供了一些有用的附加信息：[What’s New with Information Rights Management in SharePoint and SharePoint Online](https://blogs.office.com/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)（SharePoint 和 SharePoint Online 中信息权限管理的新增内容）
 

@@ -4,7 +4,7 @@ description: "有关自定义适用于 Windows 的 Azure 信息保护客户端�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 41e9e8aff35727a40413e0bf18e46f1ad14e9222
-ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
+ms.openlocfilehash: 32226274c8b50b02e453f1c1b6655fb01b4ec942
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的自定义配置
 
@@ -24,11 +24,11 @@ ms.lasthandoff: 07/21/2017
 
 请参阅以下高级配置相关信息，在管理 Azure 信息保护客户端时，可能需要用于特定方案或一部分用户。
 
-其中一些设置需要编辑注册表，一些使用的是高级设置，必须先在 Azure 门户中进行配置，再发布以供客户端下载。 
-
-此外，一些设置可能仅在预览版 Azure 信息保护客户端中可用。 对于这些设置，已记录最低客户端版本。 对于客户端正式发布版支持的设置和配置，未记录最低客户端版本号。
+其中一些设置需要编辑注册表，一些使用的是高级设置，必须先在 Azure 门户中进行配置，再发布以供客户端下载。 此外，一些设置可能仅在预览版 Azure 信息保护客户端中可用。 对于这些设置，已记录最低客户端版本。 对于客户端正式发布版支持的设置和配置，未记录最低客户端版本号。
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>在门户中配置高级客户端配置设置的具体步骤
+
+此配置目前处于预览状态。
 
 1. 如果尚未执行此操作，请在新的浏览器窗口中以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。
 
@@ -86,6 +86,8 @@ ms.lasthandoff: 07/21/2017
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>隐藏 Windows 文件资源管理器中的“分类和保护”菜单选项
 
+此配置选项目前处于预览状态。
+
 如果 Azure 信息保护客户端版本为 1.3.0.0 或更高版本，可以通过编辑注册表来配置此高级配置。 
 
 创建以下 DWORD 值名称（以及任何数值数据）：
@@ -104,6 +106,8 @@ ms.lasthandoff: 07/21/2017
 
 ## <a name="hide-the-do-not-forward-button-in-outlook"></a>在 Outlook 中隐藏“不转发”按钮
 
+此配置选项目前处于预览状态。
+
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 此设置还要求使用最低版本为 1.8.41.0 的预览版 Azure 信息保护客户端。
 
 配置此设置后，将在 Outlook 的功能区中隐藏“不转发”按钮。 但不会在 Office 菜单中隐藏此选项。
@@ -115,6 +119,8 @@ ms.lasthandoff: 07/21/2017
 - 值：True
 
 ## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>让用户无法使用“自定义权限”选项
+
+此配置选项目前处于预览状态。
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
