@@ -4,7 +4,7 @@ description: "若要配置分类、标记和保护，必须配置 Azure 信息�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/12/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7a4922384a228457b683653e80afe4b8c8db6df2
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 88843833b87eb054f534a7c85e6a7c2e52797e9b
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="configuring-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 

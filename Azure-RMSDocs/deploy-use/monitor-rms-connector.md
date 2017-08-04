@@ -4,7 +4,7 @@ description: "帮助监视连接器和组织使用 Azure 信息保护中 Azure R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c7d9e5a948aa0e81341eb99038302677268c522e
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: e759d47e45455616cac34d2b5703a567907a826f
+ms.sourcegitcommit: 2a1c690ca84611e5774ac8fac0fb4caba09fef2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>监视 Azure Rights Management 连接器
 
@@ -33,7 +33,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 - ID 1000：用于确认连接器服务是否已启动
 
 - ID 1002：当服务器成功连接到 RMS 连接器
-- 
+
 - ID 1004：每当授权帐户列表（列出所有帐户）下载到连接器时 
 
 如果你还未将连接器配置为使用 HTTP，你应该会看到一个警告 ID 2002：客户正在使用不安全的 (HTTP) 连接。
