@@ -4,7 +4,7 @@ description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8dd4917b23b3732e0d835f957191db9c4578f60d
-ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
+ms.openlocfilehash: 618e8b6a160ccc699658bf8c317c40ed2ded3bee
+ms.sourcegitcommit: 87f0c7a8f9f1fdf7eece0f9d0c114ecf91f57683
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>将 PowerShell 与 Azure 信息保护客户端配合使用
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、Windows 7 SP1、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
-安装 Azure 信息保护客户端时，将自动安装 PowerShell 命令，从而通过运行可放入自动化脚本的命令来管理客户端。
+安装 Azure 信息保护客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
 cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 此模块替换随 RMS 保护工具一起安装的 RMSProtection 模块。 如果在安装 Azure 信息保护客户端时安装了 RMSProtection 工具，则会自动卸载 RMSProtection 模块。
 
@@ -46,7 +46,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 在开始使用这些 cmdlet 之前，请参阅与你的部署对应的其他先决条件和说明：
 
-- [Azure 信息保护服务和 Azure 权限管理服务](#azure-information-protection-service-and-azure-rights-management-service)
+- [Azure 信息保护和 Azure 权限管理服务](#azure-information-protection-service-and-azure-rights-management-service)
 
     - 将仅分类或分类用于 Rights Management 保护时适用：具有包含 Azure 信息保护的订阅（例如，企业移动性 + 安全性）。
     - 将仅保护用于 Azure 权限管理服务时适用：具有包含 Azure 权限管理服务的订阅（例如，Office 365 E3 和 Office 365 E5）。
@@ -56,14 +56,14 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
     - 将仅保护用于 Azure 权限管理的本地版本时适用；Active Directory Rights Management Services (AD RMS)。
 
 
-## <a name="azure-information-protection-service-and-azure-rights-management-service"></a>Azure 信息保护服务和 Azure 权限管理服务
+## <a name="azure-information-protection-and-azure-rights-management-service"></a>Azure 信息保护和 Azure 权限管理服务
 
-如果组织使用 Azure 信息保护和 Azure Rights Management 数据保护服务，或仅使用 Azure Rights Management 服务，请先阅读本部分，再开始使用 PowerShell 命令。
+如果组织使用 Azure 信息保护进行分类和保护，或仅使用 Azure 权限管理服务进行数据保护，请先阅读本部分，再开始使用 PowerShell 命令。
 
 
 ### <a name="prerequisites"></a>先决条件
 
-除了安装 AzureInformationProtection 模块这一先决条件之外，Azure 信息保护服务和 Azure Rights Management 数据保护服务还有其他先决条件：
+除了安装 AzureInformationProtection 模块这一先决条件之外，Azure 信息保护标签和 Azure 权限管理数据保护服务还有其他先决条件：
 
 1. 必须激活 Azure 权限管理服务。
 
@@ -93,9 +93,9 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 #### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>先决条件 3：在无用户交互的情况下保护或取消保护文件
 
-目前，不能以非交互方式应用标签，但可通过非交互方式直接连接到 Azure 权限管理服务以保护或取消保护文件。
+可通过非交互方式直接连接到 Azure 权限管理服务以保护或取消保护文件。
 
-用户必须使用服务主体以非交互方式连接到 Azure 权限管理服务，通过使用 `Set-RMSServerAuthentication` cmdlet 可完成此操作。 必须对运行直接连接到 Azure 权限管理服务的 cmdlet 的每个 Windows PowerShell 会话执行此操作。 运行此 cmdlet 之前，请确保具有以下三个标识符：
+用户必须使用服务主体以非交互方式连接到 Azure 权限管理服务，通过使用 `Set-RMSServerAuthentication` cmdlet 可完成此操作。 必须对运行直接连接到 Azure 权限管理服务的 cmdlet 的每个 Windows PowerShell 会话执行此操作。 运行此 cmdlet 之前，必须具有以下三个标识符：
 
 - BposTenantId
 
@@ -103,7 +103,28 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 - 对称密钥
 
-以下部分将介绍如何获取这些标识符。
+可使用以下 PowerShell 命令和注释的说明自动获取标识符的值并运行 Set-RMSServerAuthentication cmdlet。 或者，可以手动获取和指定值。
+
+若要自动获取值并运行 Set-RMSServerAuthentication：
+
+````
+# Make sure that you have the AADRM and MSOnline modules installed
+
+$newServicePrincipalName="<new service principal name>"
+Connect-AadrmService
+$bposTenantID=(Get-AadrmConfiguration).BPOSId
+Disconnect-AadrmService
+New-MsolServicePrincipal -DisplayName $servicePrincipalName
+
+# Copy the value of the generated symmetric key
+
+$symmetricKey="<value from the display of the New-MsolServicePrincipal command>"
+$appPrincipalID=(Get-MsolServicePrincipal | Where { $_.DisplayName -eq $servicePrincipalName }).AppPrincipalId
+Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -BposTenantId $bposTenantID
+
+````
+
+下一部分介绍如何手动获取并指定这些值，其中包含有关每个操作的详细信息。
 
 ##### <a name="to-get-the-bpostenantid"></a>获取 BposTenantId
 
@@ -117,7 +138,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
     
         Connect-AadrmService
     
-    出现提示时，输入 Azure 信息保护租户管理员凭据（通常使用 Azure Active Directory 或 Office 365 全局管理员帐户）。
+    系统提示时，输入你的 Azure 信息保护租户管理员凭据。 通常使用作为 Azure Active Directory 或 Office 365 的全局管理员的帐户。
     
 4. 运行 `Get-AadrmConfiguration` 并创建 BPOSId 值的副本。
     
@@ -154,7 +175,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
     
         Connect-MsolService
     
-    出现提示时，输入 Azure AD 租户管理员凭据（通常，将使用作为 Azure Active Directory 或 Office 365 的全局管理员的帐户）。
+    系统提示时，输入 Azure AD 租户管理员凭据（通常使用作为 Azure Active Directory 或 Office 365 的全局管理员的帐户）。
 
 4. 运行 New-MsolServicePrincipal cmdlet 以创建新的服务主体：
     
@@ -185,7 +206,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 5. 在此输出中，记下对称密钥和 AppPrincialId。
 
-    请务必创建对称密钥的副本，因为之后无法完整检索，所以如果不知道，下次需要向 Azure Rights Management 服务进行身份验证时，必须新建服务主体。
+    请务必立刻制作此对称密钥的副本。 以后无法检索此密钥，因此，如果稍后需要对 Azure 权限管理服务进行身份验证时，不知道此密钥，则必须创建新的服务主体。
 
 通过这些说明和示例可知，运行 Set-RMSServerAuthentication 需要 3 个标识符：
 
@@ -201,12 +222,15 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 如上一个命令所示，可以使用单个命令提供值，也可以键入 Set-RMSServerAuthentication，并在出现提示时逐个提供值。 命令完成后，将看到“**RmsServerAuthentication 已设置为启用**”，这意味着客户端现在以“服务器模式”运行。 此消息不能确认通过使用你提供的值成功完成身份验证，但可以确认已成功切换到服务器模式。
 
-考虑使此服务主体成为超级用户：要确保此服务主体始终可以取消保护其他人的文件，可以将其配置为超级用户。 通过与将标准用户帐户配置为超级用户相同的方式，使用相同的 Azure RMS cmdlet ([Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md))，但使用 AppPrincipalId 值指定 **-ServicePrincipalId** 参数。
+考虑使此服务主体成为超级用户：要确保此服务主体始终可以取消保护其他人的文件，可以将其配置为超级用户。 通过与将标准用户帐户配置为超级用户相同的方式，使用相同的 Azure RMS cmdlet ([Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md))，但使用 AppPrincipalId 值指定“ServicePrincipalId”参数。
 
 有关超级用户的详细信息，请参阅[为 Azure 权限管理和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)。
 
 > [!NOTE]
 > 若要使用自己的帐户对 Azure 权限管理服务进行身份验证，则无需在保护或取消保护文件或获取模板之前运行 Set-RMSServerAuthentication。
+
+
+
 
 #### <a name="prerequisite-4-for-regions-outside-north-america"></a>先决条件 4：北美以外的区域
 
@@ -220,11 +244,15 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 4. 对于 **ServiceLocation** 项，创建两个项（若不存在），并分别命名为 **EnterpriseCertification** 和 **EnterprisePublishing**。 
     
-    创建这些 REG_SZ 项时，不要更改“（默认）”的名称，但对其进行编辑以设置值数据：
+    对于为这些密钥自动创建的字符串值，请勿更改“（默认值）”的名称，但编辑字符串以设置值数据：
 
     - 对于 **EnterpriseCertification**，粘贴 CertificationExtranetDistributionPointUrl 值。
     
     - 对于 **EnterprisePublishing**，粘贴 LicensingExtranetDistributionPointUrl 值。
+    
+    例如，EnterpriseCertification 的注册表项应类似于以下：
+    
+    ![编辑北美以外区域的 Azure 信息保护 PowerShell 模块的注册表](../media/registry-example-rmsprotection.png)
 
 5. 关闭注册表编辑器。 无需重启计算机。 但是，如果使用服务主体帐户而不是自己的用户帐户，则必须在此注册表编辑后运行 Set-RMSServerAuthentication 命令。
 
@@ -296,7 +324,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
     --------                              ------
     \Server1\Documents\Test1.docx         Protected
 
-若要取消保护文件，则必须从文件受保护起具有“所有者”或“提取”权限，或者必须以超级用户身份运行 cmdlet。 然后使用 Unprotect cmdlet。 例如：
+若要取消保护文件，则必须从文件受保护起具有“所有者”或“提取”权限。 或者，必须以超级用户身份运行 cmdlet。 然后使用 Unprotect cmdlet。 例如：
 
     Unprotect-RMSFile C:\test.docx -InPlace
 
@@ -400,7 +428,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
     \\Server1\Documents\Test3.docx     \\Server1\Documents\Test3.docx   
     \\Server1\Documents\Test4.docx     \\Server1\Documents\Test4.docx   
 
-如果应用 RMS 保护后文件扩展名不更改，则以后可以始终使用 Get-RMSFileStatus cmdlet 来检查文件是否受保护。 例如： 
+如果应用保护后文件扩展名不更改，则以后可以始终使用 Get-RMSFileStatus cmdlet 来检查文件是否受保护。 例如： 
 
     Get-RMSFileStatus -File \\Server1\Documents\Test1.docx
 

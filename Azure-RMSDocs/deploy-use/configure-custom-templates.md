@@ -4,7 +4,7 @@ description: "面向管理员提供的有关配置和管理使用权限模板的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/21/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,59 +12,21 @@ ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6c3f066a373d253d8488c805828a65513370e3a4
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 2111953057792e2f3a97a2460d1cffee41cb2e31
+ms.sourcegitcommit: a183baf227428bbb7f30edc04d8034e287874213
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>为 Azure Rights Management 服务配置自定义模板
 
 >*适用于：Azure 信息保护、Office 365*
 
-Azure Rights Management 服务处于[激活](activate-service.md)状态时，将自动向用户开放两个默认模板。 借助这些模板，可将权限管理策略轻松应用于敏感文件，将其访问权限限制于组织中经授权的用户。 这两个模板具有以下权限策略限制：
+现在可以在 Azure 门户中配置自定义模板。 现已弃用在 Azure 经典门户中配置模板的功能。
 
--   受保护内容的只读查看
+虽然仍可在 Azure 经典门户中创建和管理模板，但由于实现方式存在差异，我们不建议你通过 Azure 经典门户和 Azure 门户管理相同的模板。
 
-    -   显示名称：“&lt;组织名称&gt; - 机密，仅供查阅”或“高度机密\所有员工”
-
-    -   特定权限：查看内容
-
--   受保护内容的读取或修改权限
-
-    -   显示名称：“&lt;组织名称&gt; - 机密”或“机密\所有员工”
-
-    -   特定权限：查看内容、保存文件、编辑内容、查看分配的权限、允许宏、转发、答复、全部答复
-
-此外，[Azure 信息保护客户端](../rms-client/aip-client.md)允许用户定义自己的一组权限。 对于 Outlook 客户端和 Outlook Web Access，用户可选择[“不得转发”选项](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)。
-
-对于很多组织，默认模板可能足以满足他们的需求。 但如果你希望创建自己的自定义权限策略模板，也可以这样做。 创建自定义模板有以下原因：
-
--   你希望模板仅向组织内的一部分用户授权，而不是向所有用户授权。
-
--   你希望只有用户的子集能够在应用程序中查看和选择模板（部门模板），而不是组织中的所有用户都可以查看和选择模板。
-
--   你希望为模板定义一种自定义权限，例如查看和编辑，而不是复制和打印。
-
--   你希望在模板中配置更多选项，包括过期日期，以及是否能够在没有 Internet 连接的情况下访问内容。
-
-要让用户能够选择包含此类设置的自定义模板，你必须首先创建一个自定义模板，对其进行配置，然后发布该模板。 尽管可能只需要几个模板，但在 Azure 中可最多保存 500 个自定义模板。 
-
-使用以下信息可帮助你配置和使用自定义模板：
-
--   [如何创建、配置和发布自定义模板](create-template.md)
-
--   [如何复制模板](copy-template.md)
-
--   [如何删除（存档）模板](remove-template.md)
-
--   [如何为用户刷新模板](refresh-templates.md)
-
--   [使用 PowerShell 管理模板](configure-templates-with-powershell.md)
-
-> [!TIP]
-> 用于配置 Azure 权限管理保护的模板和新选项将移动到 Azure 门户。 此功能目前处于预览状态。 有关详细信息，请参阅以下博客文章公告：[Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/)（Azure 信息保护统一管理目前处于预览状态） 
-
+在 Azure 门户中配置模板的说明：[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

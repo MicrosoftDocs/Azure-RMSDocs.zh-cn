@@ -4,7 +4,7 @@ description: "有关自定义适用于 Windows 的 Azure 信息保护客户端�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/25/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 32226274c8b50b02e453f1c1b6655fb01b4ec942
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 28b4e89cd6300c9b206abdf45f5d580b4474eaa5
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的自定义配置
 
@@ -102,7 +102,20 @@ ms.lasthandoff: 07/27/2017
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-确保客户端在 **%localappdata%\Microsoft\MSIP** 文件夹中具有一个名为 **Policy.msip** 的有效策略文件。 如有必要，可以从 Azure 门户中导出策略，并将导出的文件复制到客户端计算机。 此外，还可以使用此方法，将已过时的策略文件替换为已发布的最新策略。
+确保客户端在 %LocalAppData%\Microsoft\MSIP 文件夹中具有一个名为 Policy.msip 的有效策略文件。 如有必要，可以从 Azure 门户中导出策略，并将导出的文件复制到客户端计算机。 此外，还可以使用此方法，将已过时的策略文件替换为已发布的最新策略。
+
+导出策略时，此操作会下载包含多个版本的策略的压缩文件，这些策略对应于不同版本的 Azure 信息保护客户端：
+
+1. 解压缩文件，然后使用下表来确定所需要的策略文件。 
+    
+    |文件名|相应的客户端版本|
+    |--------------------------|---------------------------------------------|
+    |Policy1.1.msip |版本 1.2|
+    |Policy1.2.msip |版本 1.3 - 1.7|
+    |Policy1.3.msip |1.8 和更高版本|
+    
+2. 将已标识的文件重命名为 **Policy.msip**，然后将其复制到安装了 Azure 信息保护客户端的计算机上的 **%LocalAppData%\Microsoft\MSIP** 文件夹。 
+
 
 ## <a name="hide-the-do-not-forward-button-in-outlook"></a>在 Outlook 中隐藏“不转发”按钮
 

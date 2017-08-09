@@ -4,7 +4,7 @@ description: "此信息可帮助安装并配置 Azure Rights Management (RMS) �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: be09e2c974d9d542b94bc16f140e764858cc9282
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: a8cfa6a5baf1661495fc8b485ac0a6535c22233d
+ms.sourcegitcommit: 2a1c690ca84611e5774ac8fac0fb4caba09fef2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 07/17/2017
 
 连接器对于此密码还有一些字符限制。 不可使用具有下列任一字符的密码：& 号 (**&**)、左括号 (**[**)、右括号 (**]**)、直引号 (**"**) 和撇号 (**'**)。 如果你的密码包含上述任一字符，尽管在其他方案中可以使用此帐户和密码成功登录，但针对 RMS 连接器的身份验证也会失败，并且你会看到“该用户名和密码组合不正确”的错误消息。 如果方案适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设密码使其不包含上述任一特殊字符。
 
-此外，如果你实现了[内置控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保你指定的帐户能够保护内容。 例如，如果限制为只有“IT 部门”组可以保护内容，那么在此处指定的帐户必须是该组成员。 若未实现，将显示以下错误消息：**发现管理服务和组织位置的尝试失败。“请确保为你的组织启用了 Microsoft Rights Management 服务。”**
+此外，如果你实现了[内置控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保你指定的帐户能够保护内容。 例如，如果限制为只有“IT 部门”组可以保护内容，那么在此处指定的帐户必须是该组成员。 若未实现，会显示以下错误消息：**发现管理服务和组织位置的尝试失败。“请确保为你的组织启用了 Microsoft Rights Management 服务。”**
 
 你可以使用具有以下某一种权限的帐户：
 
@@ -116,6 +116,10 @@ ms.lasthandoff: 07/17/2017
 > -   从 Web 浏览器连接至 **http://&lt;connectoraddress&gt;/_wmcs/certification/servercertification.asmx**，将 *&lt;connectoraddress&gt;* 替换为安装 RMS 连接器的服务器地址或名称。 如果成功连接，则将显示 **ServerCertificationWebService** 页。
 
 如果你需要卸载 RMS 连接器，请再次运行向导并选择卸载选项。
+
+如果在安装过程中遇到任何问题，请检查安装日志：**%LocalAppData%\Temp\Microsoft Rights Management connector_\<date and time>.log** 
+
+例如，安装日志可能类似于 C:\Users\Administrator\AppData\Local\Temp\Microsoft Rights Management connector_20170803110352.log
 
 ## <a name="authorizing-servers-to-use-the-rms-connector"></a>授权服务器使用 RMS 连接器
 在至少两台计算机上安装 RMS 连接器之后，即可为你希望其使用 RMS 连接器的服务器和服务授权。 例如运行 Exchange Server 2013 或 SharePoint Server 2013 的服务器。

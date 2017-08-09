@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 2 阶段涉及从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/27/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 24e832c63ce7ff4f774bbc2ec10a7b35f72e050a
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 9f04698064037343719d274e793eb560b703b031
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -125,7 +125,7 @@ ms.lasthandoff: 07/27/2017
 
 由于所导入的模板具有“已存档”的默认状态，如果你希望用户能够将这些模板用于 Azure Rights Management 服务，必须将此状态更改为“已发布”。
 
-你从 AD RMS 导入的模板的外观和行为就像你可以在 Azure 经典门户中创建的自定义模板一样。 若要将导入的模板更改为“已发布”，以便用户可以查看它们以及从应用程序中选择它们，请参阅[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)。
+从 AD RMS 导入的模板的外观和行为就像可以在 Azure 门户中创建的自定义模板一样。 若要将导入的模板更改为“已发布”，以便用户可以查看它们以及从应用程序中选择它们，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
 
 除了发布新导入的模板，可能还需要对模板进行两项重要更改，才能继续迁移。 为了在迁移过程中向用户提供更一致的体验，请不要对导入的模板进行额外的更改，也不要发布 Azure 信息保护附带的两个默认模板，或在此时创建新模板。 相反，请等到迁移过程完成并已取消预配 AD RMS 服务器。
 

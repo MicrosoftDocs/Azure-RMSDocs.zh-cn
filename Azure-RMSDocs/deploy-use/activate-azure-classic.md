@@ -4,7 +4,7 @@ description: "有关具有 Azure 门户访问权限时 Azure Rights Management �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,20 @@ ms.technology: techgroup-identity
 ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1066ff9dc628c5df379fe3ce9126b42639ed23b1
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: d757d4fa93bfb1277ed38a955f563bcd2595fe4e
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-classic-portal"></a>如何从 Azure 经典门户激活 Azure Rights Management
 
 >适用于：Azure 信息保护
 
+> [!NOTE]
+>此功能将迁移到 Azure 门户，目前处于预览状态。 有关详细信息，请参阅[如何从 Azure 门户激活 Azure 权限管理](activate-azure.md)。
 
-如果你有权访问 Azure 门户，请使用这些说明。 例如，你有企业移动性套件订阅或 Azure 信息保护高级版订阅。
+如果你有权访问 Azure 经典门户，请使用这些说明。 例如，你有企业移动性套件订阅或 Azure 信息保护高级版订阅。
 
 > [!TIP]
 > 观看 2 分钟的视频：[如何激活 Azure RMS](https://channel9.msdn.com/series/pit-stop-enterprise-mobility-suite/activate-azure-rms)
@@ -55,6 +57,6 @@ ms.lasthandoff: 07/20/2017
 |**未授权**|你无权查看[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]服务的状态。 例如，你的帐户已被锁定，或者你不是所选租户的全局管理员。|
 
 ## <a name="next-steps"></a>后续步骤
-返回 [激活 Azure Rights Management](activate-service.md)。
+继续阅读[激活 Azure 权限管理](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

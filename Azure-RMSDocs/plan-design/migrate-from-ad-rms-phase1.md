@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 587d24a005452874ca06b8fc179b25e91a7f0130
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: a1f448a51ee4bfecfd0d680b842eed44aa816ed1
+ms.sourcegitcommit: e4199d243d9f6c80efccc0f0d5574d069d69f46d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/02/2017
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
 
@@ -50,7 +50,11 @@ ms.lasthandoff: 06/30/2017
     
 3. 复制针对 **LicensingIntranetDistributionPointUrl** 显示的值，并从此字符串删除 `/_wmcs\licensing`。 
     
-    剩下的就是 Azure 信息保护租户的 Azure Rights Management 服务 URL，在以下迁移说明中通常缩写为“租户 URL”。
+    剩余的是 Azure 信息保护租户的 Azure 权限管理服务 URL。 此值在以下迁移说明中通常缩写为你的租户 URL。
+    
+    可以通过运行以下 PowerShell 命令验证是否具有正确的值：
+    
+            (Get-AadrmConfiguration).LicensingIntranetDistributionPointUrl -match "https:\/\/[0-9A-Za-z\.-]*" | Out-Null; $matches[0]
 
 ## <a name="step-2-prepare-for-client-migration"></a>步骤 2。 客户端迁移准备
 

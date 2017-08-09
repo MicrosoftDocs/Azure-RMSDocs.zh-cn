@@ -4,7 +4,7 @@ description: "有关将 Rights Management (RMS) 客户端与 RMS 保护工具配
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/18/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b56955d8a01876f4107cafa5b1b8df922c0f8ad0
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: e67bc3d82c1269343cd4e64f8a608a2a86d381ef
+ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/01/2017
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
@@ -46,11 +46,11 @@ ms.lasthandoff: 06/30/2017
     
     Azure 信息保护客户端附带 AzureInformationProtection PowerShell 模块。 有关安装说明，请参阅 Azure 信息保护管理员指南中的[如何为用户安装 Azure 信息保护客户端](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users)。 如有需要，可以使用 `PowerShellOnly=true` 参数仅安装 PowerShell 模块。
     
-    如果你的租户在北美以外的地区，则[使用此 PowerShell 模块的先决条件](client-admin-guide-powershell.md#azure-information-protection-service-and-azure-rights-management-service)包括激活 Azure 权限管理服务、创建服务主体，以及编辑注册表。 在按照本文说明开始操作之前，请确保你具有 BposTenantId、AppPrincipalId 以及对称密钥的值，如先决条件中所述。 
+    如果你的租户在北美以外的地区，则[使用此 PowerShell 模块的先决条件](client-admin-guide-powershell.md#azure-information-protection-and-azure-rights-management-service)包括激活 Azure 权限管理服务、创建服务主体，以及编辑注册表。 在按照本文说明开始操作之前，请确保你具有 BposTenantId、AppPrincipalId 以及对称密钥的值，如先决条件中所述。 
     
     - 如果要更改特定文件扩展名保护（本机或常规）的默认级别，需已编辑注册表，如管理员指南中的[更改文件的默认保护级别](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)部分所述。
     
-    - 已使用配置的计算机设置（如果代理服务器需要）建立 Internet 连接。 例如： `netsh winhttp import proxy source=ie`
+    - 具有 Internet 连接，并且已配置计算机设置（如果代理服务器要求）。 例如： `netsh winhttp import proxy source=ie`
     
 - 你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 服务保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此要求的详细信息，请参阅 [准备用户和组以便使用 Azure 信息保护](../plan-design/prepare.md)。
     
@@ -73,7 +73,7 @@ ms.lasthandoff: 06/30/2017
 
 在这些说明结束时，所选文件夹中的所有文件都将使用 RMS 的自定义属性进行分类，然后这些文件将受 Rights Management 保护。 对于更复杂的配置（如有选择性地保护某些文件，而不保护其他文件），你可以然后创建或使用不同的分类属性和规则，用于仅保护这些文件的文件管理任务。
 
-请注意，如果更改了用于 FCI 的 Rights Management 模板，则必须在文件服务器计算机上运行 `Get-RMSTemplate -Force` 以获取更新后的模板。 然后将使用更新后的模板来保护新的文件。 如果通过对模板的更改就足以重新保护文件服务器上的文件，则可以通过以交互方式运行 Protect-RMSFile cmdlet 与对文件具有“导出”或“完全控制”使用权限的帐户来执行此操作。 如果发布了想要用于 FCI 的新模板，则还必须在此文件服务器计算机上运行 `Get-RMSTemplate -Force`。
+请注意，如果更改了用于 FCI 的 Rights Management 模板，则必须在文件服务器计算机上运行 `Get-RMSTemplate -Force` 以获取更新后的模板。 然后使用更新后的模板来保护新的文件。 如果通过对模板的更改就足以重新保护文件服务器上的文件，则可以通过以交互方式运行 Protect-RMSFile cmdlet 与对文件具有“导出”或“完全控制”使用权限的帐户来执行此操作。 如果发布了想要用于 FCI 的新模板，则还必须在此文件服务器计算机上运行 `Get-RMSTemplate -Force`。
 
 ### <a name="save-the-windows-powershell-script"></a>保存 Windows PowerShell 脚本
 
@@ -118,7 +118,7 @@ ms.lasthandoff: 06/30/2017
 
     有关为 Windows PowerShell 脚本签名的详细信息，请参阅 PowerShell 文档库中的 [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) 。
 
-4.  将文件本地保存到将运行使用文件分类基础结构的文件资源管理器的每个文件服务器上： 例如，将文件保存到 **C:\RMS-Protection** 中。 如果你使用不同的路径或文件夹名称，则选择不含空格的路径和文件夹。 使用 NTFS 权限保护此文件，使未经授权的用户不能修改它。
+4.  将文件本地保存到运行使用文件分类基础结构的文件资源管理器的每个文件服务器上。 例如，将文件保存到 **C:\RMS-Protection** 中。 如果你使用不同的路径或文件夹名称，则选择不含空格的路径和文件夹。 使用 NTFS 权限保护此文件，使未经授权的用户不能修改它。
 
 现在，你可以开始配置文件服务器资源管理器。
 
@@ -162,7 +162,7 @@ ms.lasthandoff: 06/30/2017
 
     -   属性 **值**：选择“是” 
 
-虽然你可以手动运行分类规则，但是对于正在进行的操作，你将需要按计划运行此规则，以便新文件将使用 RMS 属性进行分类。
+虽然可以手动运行分类规则，但是对于正在进行的操作，需要按计划运行此规则，使新文件使用 RMS 属性进行分类。
 
 ### <a name="configure-the-classification-schedule"></a>配置分类计划
 
@@ -172,7 +172,7 @@ ms.lasthandoff: 06/30/2017
 
     -   配置所有要运行的分类规则的日程安排，其中包括要使用 RMS 属性为文件分类的新规则。
 
-    -   **允许对新文件进行连续分类**：选中此复选框以便将新文件进行分类。
+    -   允许对新文件进行连续分类：选中此复选框以便将新文件进行分类。
 
     -   可选：进行任何其他所需的更改，例如，为报告和通知配置选项。
 
@@ -216,12 +216,12 @@ ms.lasthandoff: 06/30/2017
 
             `-Noprofile -Command "C:\RMS-Protection\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID e6ee2481-26b9-45e5-b34a-f744eacd53b0 -OwnerMail [Source File Owner Email]"`
 
-            在此命令中，**[Source File Path]** 和 **[Source File Owner Email]** 都是特定于 FCI 的变量，因此键入这些项时要与出现在上面的命令中的内容完全一致。 第一个变量由 FCI 用于自动指定文件夹中标识的文件，第二个变量供 FCI 用于自动检索所标识文件的命名所有者的电子邮件地址。 对文件夹中的每个文件重复执行此命令，在我们的示例中为 C:\FileShare 文件夹中还使用 RMS 作为文件分类属性的每个文件。
+            在此命令中，[Source File Path] 和 [Source File Owner Email] 都是特定于 FCI 的变量，因此键入这些项时要与出现在之前的命令中的内容完全一致。 第一个变量由 FCI 用于自动指定文件夹中标识的文件，第二个变量供 FCI 用于自动检索所标识文件的命名所有者的电子邮件地址。 对文件夹中的每个文件重复执行此命令，在我们的示例中为 C:\FileShare 文件夹中还使用 RMS 作为文件分类属性的每个文件。
 
             > [!NOTE]
-            > **-OwnerMail [Source File Owner Email]** 参数和值可确保在文件受保护之后，向文件的原始所有者授予文件的 Rights Management 所有者的权限。 这可确保原始文件所有者对其自己的文件具有所有 Rights Management 权限。 当域用户创建文件时，将自动使用文件 Owner 属性中的用户帐户名称从 Active Directory 中检索电子邮件地址。 要做到这一点，文件服务器必须与用户在同一个域或受信任的域中。
+            > **-OwnerMail [Source File Owner Email]** 参数和值可确保在文件受保护之后，向文件的原始所有者授予文件的 Rights Management 所有者的权限。 此配置可确保原始文件所有者对其自己的文件具有所有 Rights Management 权限。 当域用户创建文件时，将自动使用文件 Owner 属性中的用户帐户名称从 Active Directory 中检索电子邮件地址。 要做到这一点，文件服务器必须与用户在同一个域或受信任的域中。
             > 
-            > 尽可能将原始所有者分配给受保护的文档，以确保这些用户继续对他们创建的文件具有完全控制权。 但是，如果按上面所述使用 [Source File Owner Email] 变量并且文件没有将域用户定义为所有者（例如，使用本地帐户创建的该文件，因此所有者显示 SYSTEM），则脚本将失败。
+            > 尽可能将原始所有者分配给受保护的文档，以确保这些用户继续对他们创建的文件具有完全控制权。 但是，如果按之前的命令中所示使用 [Source File Owner Email] 变量并且文件没有将域用户定义为所有者（例如，使用本地帐户创建的该文件，因此所有者显示 SYSTEM），则脚本会失败。
             > 
             > 对于未使用域用户作为所有者的文件，你可以作为域用户自行复制并保存这些文件，使你只是成为这些文件的所有者。 或者，如果你有权限，你可以手动更改所有者。  或者，你也可以提供特定电子邮件地址（例如，你自己的电子邮件地址或 IT 部门的组地址）而不使用 [Source File Owner Email] 变量，这意味着你通过使用此脚本保护的所有文件都将使用此电子邮件地址来定义新的所有者。
 
@@ -259,7 +259,7 @@ ms.lasthandoff: 06/30/2017
 
     2.  单击“等待任务完成”，然后单击“确定”。
 
-4.  等待“运行文件管理任务”对话框关闭，然后在自动显示的报告中查看结果  。 你应在“文件”字段中看到所选文件夹中的文件数  。 确认所选文件夹中的文件现已受权限管理保护。 例如，如果所选文件夹是 C:\FileShare，则在 Windows PowerShell 会话中键入以下内容并确认没有文件处于“未保护”状态：
+4.  等待“运行文件管理任务”对话框关闭，然后在自动显示的报告中查看结果  。 你应在“文件”字段中看到所选文件夹中的文件数  。 确认所选文件夹中的文件现已受权限管理保护。 例如，如果所选文件夹是 C:\FileShare，则在 Windows PowerShell 会话中键入以下命令并确认没有文件处于“未保护”状态：
 
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
@@ -267,7 +267,7 @@ ms.lasthandoff: 06/30/2017
     > [!TIP]
     > 一些故障排除技巧：
     > 
-    > -   如果你在报告中看到 **0** （而不是你的文件夹中的文件数），则这指示脚本未运行。 首先，通过在 Windows PowerShell ISE 中加载脚本以验证脚本内容来检查脚本本身，然后尝试运行它以查看是否显示任何错误。 如果未指定任何参数，该脚本将尝试连接到 Azure 权限管理服务并向其进行身份验证。
+    > -   如果你在报告中看到“0”（而不是你的文件夹中的文件数），则此输出指示脚本未运行。 首先，通过在 Windows PowerShell ISE 中加载脚本以验证脚本内容来检查脚本本身，然后尝试运行它以查看是否显示任何错误。 如果未指定任何参数，该脚本会尝试连接到 Azure 权限管理服务并向其进行身份验证。
     > 
     >     -   如果该脚本报告无法连接到 Azure 权限管理服务 (Azure RMS)，请检查它为服务主体帐户显示的值，该帐户在脚本中指定。 有关如何创建此服务主体帐户的详细信息，请参阅 Azure 信息保护客户端管理员指南中的[先决条件 3：在不交互的情况下保护或取消保护文件](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction)。
     >     -   如果该脚本报告可连接到 Azure RMS，接下来通过直接运行服务器上 Windows PowerShell 的 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) 检查是否可找到指定的模板。 你应该会看到你所指定的模板返回到结果中。
@@ -278,15 +278,15 @@ ms.lasthandoff: 06/30/2017
     >     ```
     >     -   如果该脚本在此 Windows PowerShell 会话中成功运行，请在文件管理任务操作中检查 **Executive** 和 **Argument** 的条目。  如果已指定 **-OwnerEmail [Source File Owner Email]**，请尝试删除此参数。
     > 
-    >         如果文件管理任务在没有 **-OwnerEmail [Source File Owner Email]** 的情况下成功运行，请检查未受保护的文件是否有域用户（而不是 **SYSTEM**）列出为文件所有者。  为此，请使用文件的属性的“安全”选项卡，然后单击“高级”。 **所有者** 值将紧接着显示在文件**名称**之后。 另外，请验证文件服务器是否位于同一域或受信任的域中，以便从 Active Directory 域服务中查找该用户的电子邮件地址。
+    >         如果文件管理任务在没有 **-OwnerEmail [Source File Owner Email]** 的情况下成功运行，请检查未受保护的文件是否有域用户（而不是 **SYSTEM**）列出为文件所有者。  若要执行此检查，请使用文件的属性的“安全”选项卡，然后单击“高级”。 **所有者** 值将紧接着显示在文件**名称**之后。 另外，请验证文件服务器是否位于同一域或受信任的域中，以便从 Active Directory 域服务中查找该用户的电子邮件地址。
     > -   如果你在报告中看到正确的文件数，但文件未受保护，请尝试使用 [Protect-RMSFile](/powershell/azureinformationprotection/vlatest/protect-rmsfile) cmdlet 手动保护文件以查看是否显示任何错误。
 
-在确认这些任务成功运行之后，可以关闭文件资源管理器。 计划的任务运行时，将自动对新文件进行分类并给予保护。 
+在确认这些任务成功运行之后，可以关闭文件资源管理器。 计划的任务运行时，会自动对新文件进行分类并给予保护。 
 
 ## <a name="modifying-the-instructions-to-selectively-protect-files"></a>修改说明可有选择性地保护文件
-如果你让前面的说明正常操作，则随后可很容易地修改它们以用于更复杂的配置。 例如，使用同一个脚本保护文件，但只针对包含个人身份信息的文件，然后可能选择具有更多限制权限的模板。
+如果按前面的说明正常操作，则可轻松修改它们以实现更复杂的配置。 例如，使用同一个脚本保护文件，但只针对包含个人身份信息的文件，然后可能选择具有更多限制权限的模板。
 
-为此，请使用内置分类属性之一（例如，**个人身份信息**）或创建你自己的新属性。 然后创建一个使用此属性的新规则。 例如，可能会选择“内容分类器”，为“个人身份信息”属性选择值“高”，并配置字符串或表达式模式（如字符串“出生日期”）以标识要为此属性配置的文件。
+若要进行此修改，请使用内置分类属性之一（例如“个人身份信息”）或创建你自己的新属性。 然后创建一个使用此属性的新规则。 例如，可能会选择“内容分类器”，为“个人身份信息”属性选择值“高”，并配置字符串或表达式模式（如字符串“出生日期”）以标识要为此属性配置的文件。
 
 现在你需要做的只是创建新的文件管理任务（该任务使用同一脚本但可能使用不同模板），并为刚配置的分类属性配置条件。 例如，选择将“运算符”值设为“等于”且“值”为“高”的“个人身份信息”属性，而不是我们前面配置的条件（**RMS** 属性，**等于**，**是**）。
 

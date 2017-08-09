@@ -4,7 +4,7 @@ description: "有关如何使用 Azure Rights Management (Azure RMS) 的使用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 92b64867486f64dd5920c578faeb411104f00ebd
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 032fb5525d1bd4f32419358cdeae5efe1be30f56
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>记录和分析 Azure Rights Management 服务的使用情况
 
@@ -175,27 +175,27 @@ Azure Rights Management 服务有很多请求类型，但下表列出了其中�
 |AcquirePreLicense|客户端代表用户为受 RMS 保护的内容请求许可证。|
 |AcquireTemplates|进行调用以基于模板 ID 获取模板|
 |AcquireTemplateInformation|进行调用以从服务获取模板的 ID。|
-|AddTemplate|从 Azure 经典门户进行调用以添加模板。|
+|AddTemplate|从 Azure 门户进行调用以添加模板。|
 |AllDocsCsv|从文档跟踪站点进行调用，以便从“所有文档”页面下载 CSV 文件。|
 |BECreateEndUserLicenseV1|从移动设备进行调用以创建最终用户许可证。|
 |BEGetAllTemplatesV1|从移动设备（后端）进行调用以获取所有模板。|
 |Certify|客户端正在认证要保护的内容。|
-|DeleteTemplateById|从 Azure 经典门户进行调用以按模板 ID 删除模板。|
+|DeleteTemplateById|从 Azure 门户进行调用以按模板 ID 删除模板。|
 |DocumentEventsCsv|从文档跟踪站点进行调用，以便下载单个文档的 .CSV 文件。|
-|ExportTemplateById|从 Azure 经典门户进行调用以基于模板 ID 导出模板。|
+|ExportTemplateById|从 Azure 门户进行调用以基于模板 ID 导出模板。|
 |FECreateEndUserLicenseV1|类似于 AcquireLicense 请求，但来自移动设备。|
 |FECreatePublishingLicenseV1|与 Certify 和 GetClientLicensorCert 组合请求相同，来自移动客户端。|
 |FEGetAllTemplates|从移动设备（前端）进行调用以获取模板。|
 |FindServiceLocationsForUser|进行调用以查询 URL，使用该项来调用 Certify 或 AcquireLicense。|
 |GetAllDocs|从文档跟踪站点进行调用，以便为用户加载“所有文档”页面，或者搜索该租户的所有文档。 将此值与 admin-action 和 acting-as-admin 字段结合使用：<br /><br />- admin-action 为空：用户在“所有文档”页面中查看自己的文档。<br /><br />- admin-action 为 true 且 acting-as-user 为空：管理员查看其租户的所有文档。<br /><br />- admin-action 为 true 且 acting-as-user 不为空：管理员查看用户的“所有文档”页面。|
-|GetAllTemplates|从 Azure 经典门户进行调用以获取所有模板。|
+|GetAllTemplates|从 Azure 门户进行调用以获取所有模板。|
 |GetClientLicensorCert|客户端正在从基于 Windows 的计算机请求发布证书（随后用于保护内容）。|
 |GetConfiguration|调用 Azure PowerShell cmdlet 以获取 Azure RMS 租户的配置。|
 |GetConnectorAuthorizations|从 RMS 连接器进行调用以从云中获取其配置。|
 |GetRecipients|从文档跟踪站点进行调用，以便导航到单个文档的列表视图。|
 |GetSingle|从文档跟踪站点进行调用，以便导航到“单个文档”页面。|
-|GetTenantFunctionalState|Azure 经典门户正在检查是否已激活 Azure Rights Management 服务。|
-|GetTemplateById|从 Azure 经典门户进行调用以通过指定模板 ID 来获取模板。|
+|GetTenantFunctionalState|Azure 门户正在检查是否已激活 Azure 权限管理服务。|
+|GetTemplateById|从 Azure 门户进行调用以通过指定模板 ID 来获取模板。|
 |KeyVaultDecryptRequest|客户端正在尝试解密受 RMS 保护的内容。 仅适用于 Azure 密钥保管库中客户托管的租户密钥 (BYOK)。|
 |KeyVaultGetKeyInfoRequest|进行调用以验证指定用在 Azure 信息保护租户密钥的 Azure 密钥保管库中的密钥可访问，并且未使用。|
 |KeyVaultSignDigest|在将 Azure 密钥保管库中客户托管的密钥 (BYOK) 用于签名时进行调用。 通常是针对每个 AcquireLicence（或 FECreateEndUserLicenseV1）、Certify 和 GetClientLicensorCert（或 FECreatePublishingLicenseV1）请求调用一次此项。|
@@ -204,14 +204,14 @@ Azure Rights Management 服务有很多请求类型，但下表列出了其中�
 |LoadEventsForMap|从文档跟踪站点进行调用，以便导航到单个文档的映射视图。|
 |LoadEventsForSummary|从文档跟踪站点进行调用，以便导航到单个文档的时间线视图。|
 |LoadEventsForTimeline|从文档跟踪站点进行调用，以便导航到单个文档的映射视图。|
-|ImportTemplate|从 Azure 经典门户进行调用以导入模板。|
+|ImportTemplate|从 Azure 门户进行调用以导入模板。|
 |RevokeAccess|从文档跟踪站点进行调用以撤销文档。|
 |SearchUsers |从文档跟踪站点进行调用，以便搜索某个租户中的所有用户。|
 |ServerCertify|从已启用 RMS 的客户端（如 SharePoint）进行调用以认证服务器。|
 |SetUsageLogFeatureState|进行调用以启用使用日志记录。|
 |SetUsageLogStorageAccount|进行调用以指定 Azure Rights Management 服务日志的位置。|
 |UpdateNotificationSettings|从文档跟踪站点进行调用，以便更改单个文档的通知设置。|
-|UpdateTemplate|从 Azure 经典门户进行调用以更新现有模板。|
+|UpdateTemplate|从 Azure 门户进行调用以更新现有模板。|
 
 
 ## <a name="windows-powershell-reference"></a>Windows PowerShell 参考
