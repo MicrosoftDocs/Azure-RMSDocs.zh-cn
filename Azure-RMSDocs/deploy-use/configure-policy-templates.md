@@ -4,7 +4,7 @@ description: "目前在预览版中，可以通过 Azure 信息保护策略配�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,38 +12,72 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 1f41aad2d132e087e9122b2683be4b45185527de
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: b9c6b808de6c5967885f4937965b4e0e759668f3
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
-# <a name="configuring-and-managing-templates-in-the-azure-information-protection-policy"></a>在 Azure 信息保护策略中配置和管理模板
+# <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 >[!NOTE]
->此功能目前为预览版，可能会进行频繁更改。
+>此功能将替代在 Azure 经典门户中配置自定义模板。
 >
->使用在 Azure 经典门户中创建的自定义模板测试此预览功能之前，请考虑是否具有模板的最新备份。 可以使用 [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate) PowerShell cmdlet 备份自定义模板，如有必要，使用 [Import-AadrmTemplate](/powershell/module/aadrm/import-aadrmtemplate) 还原它们。
->
->由于实现方式存在差异，我们不建议你通过 Azure 经典门户和 Azure 门户管理相同的模板。
+>虽然仍可在 Azure 经典门户中创建和管理模板，但不建议通过 Azure 经典门户和 Azure 门户管理相同的模板。 在这些不同门户中配置模板的实现已更改，因此在不同门户中配置相同模板可能导致配置不可靠。
 
 
-权限管理模板现已与 Azure 信息保护策略集成。 
+Rights Management 模板现已与 Azure 信息保护策略集成。 
 
 **订阅包含分类、设置标签和保护（Azure 信息保护 P1 或 P2）：**
 
-- 设置标签后，租户的权限管理模板显示在新“模板”部分。 你可以将这些模板转换为标签，也可以将其作为单独的模板继续管理，并在为标签配置保护时链接到它们。 
+- 未与租户的标签集成的 Rights Management 模板显示在“Azure 信息保护 - 全局策略”边栏选项卡中标签后的“模板”部分中。 你可以将这些模板转换为标签，也可以将其作为单独的模板继续管理，并在为标签配置保护时链接到它们。 
 
 **订阅仅包含保护（包括 Azure 权限管理服务的 Office 365 订阅）：**
 
-- 租户的权限管理模板显示为标签，目前也可以使用特定于分类和设置标签的配置设置。 
+- 租户的 Rights Management 模板显示在“模板”部分中的“Azure 信息保护 - 全局策略”边栏选项卡中。 不显示任何标签。 还可以看到特定于分类和标签的配置设置，但它们要么对模板没有任何影响，要么无法进行配置。 
 
+## <a name="default-templates"></a>默认模板
+
+当你获得 Azure 信息保护订阅或包含 Azure 权限管理服务的 Office 365 订阅时，将为你的租户自动创建两个默认模板，这些模板限制对你组织中授权用户的访问。 这两个模板具有以下限制： 
+
+- 受保护内容的读取或修改权限
+    
+    特定权限：查看内容、保存文件、编辑内容、查看分配的权限、允许宏、转发、答复、全部答复
+
+- 受保护内容的只读查看
+    
+    - 特定权限：查看内容
+
+通过这些模板，你和其他人可立即轻松开始保护你组织的敏感数据。 这些模板可与 Azure 信息保护标签一起使用，或通过可使用 Rights Management 模板的[应用程序和服务](../understand-explore/applications-support.md)独立使用。
+
+你还可以创建自已的自定义模板。 尽管可能只需要几个模板，但在 Azure 中可最多保存 500 个自定义模板。
+
+### <a name="default-template-names"></a>默认模板名称
+
+如果你最近获得了 Azure 信息保护的订阅，则默认模板名称如下所示：
+
+- 机密\所有员工，具有受保护内容的读取或修改权限。
+
+- 高度机密\所有员工，具有受保护内容的只读查看权限。
+
+如果在一段时间以前获得了 Azure 信息保护订阅，或者如果没有 Azure 信息保护订阅，但具有包含 Azure 权限管理的 Office 365 订阅，则默认模板的名称如下所示：
+
+- \<组织名称> - 机密，具有受保护内容的读取或修改权限。
+
+- \<组织名称> - 仅机密查看，具有受保护内容的只读查看权限。 
+
+>[!NOTE]
+>如果没有在“Azure 信息保护 - 全局策略”边栏选项卡中看到默认模板，则这些模板转换为标签。 它们仍作为模板存在，但在 Azure 门户中，你会看到它们属于包含 Azure RMS 保护的标签配置。 可以始终通过从 [AADRM PowerShell 模块](administer-powershell.md)运行 [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) 来确认租户具有哪些模板。
+>
+>可以手动转换模板（如后面部分[将模板转换为标签](#to-convert-templates-to-labels)中所述），然后对其重命名（如果需要）。 或者，如果最近创建了默认 Azure 信息保护策略，并且同时激活了租户的 Azure 权限管理服务，则将自动转换这些模板。
+
+存档的模板在“Azure 信息保护 - 全局策略”边栏选项卡中显示为不可用。 无法为标签选择这些模板，但可以将其转换为标签。
 
 ## <a name="considerations-for-templates-in-the-azure-portal"></a>Azure 门户中的模板的注意事项
 
-在 Azure 门户中编辑这些模板或将其转换为标签之前，在 Azure 经典门户中管理模板时，请注意实现过程中的以下更改。 预期会在预览期间解决一些限制问题：
+在编辑这些模板或将其转换为标签之前，请确保了解以下更改和注意事项。 由于实现更改，因此如果你之前在 Azure 经典门户中管理模板，则以下列表尤其重要。
 
 - 编辑或转换模板并保存 Azure 信息保护策略后，将对初始[使用权限](configure-usage-rights.md)进行以下更改。 如有必要，可以使用 PowerShell 的 [New-AadrmRightsDefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) 和 [Set-AadrmTemplatePropert](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet 添加或删除个人使用权限。
     
@@ -51,19 +85,22 @@ ms.lasthandoff: 06/30/2017
     
     - 自动添加了“允许宏”（公用名）。 Office 应用中的 Azure 信息保护栏要求此使用权限。
     
-- 目前可以显示默认模板，但无法进行编辑或转换。 
 
-- 无法复制或删除模板。 要删除模板，请使用 PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) cmdlet。 
+- “发布”和“已存档”设置在“标签”边栏选项卡上分别显示为“已启用: 打开”和“已启用: 关闭”。 对于想要保留但对用户或服务不可见的模板，将其设置为“已启用”：“关闭”。
 
-- 目前，使用 Azure 经典门户或 PowerShell 为语言配置的模板不会显示这些语言的名称和说明，但会保留这些信息。
-
-- “发布”和“已存档”设置在“标签”边栏选项卡上分别显示为“已启用: 打开”和“已启用: 关闭”。
+- 无法在 Azure 门户中复制或删除模板。 将模板转换为标签时，可以通过选择“为包含此标签的文档和电子邮件设置权限”选项的“未配置”配置该标签以停止使用该模板。 或者，可以删除标签。 但是，在这两种方案中，模板均不会被删除且模板仍保持已存档状态。
+    
+    现在可以通过使用 PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) cmdlet 删除模板。 还可以为未转换为标签的模板使用此 PowerShell cmdlet。 但是，如果删除已用于保护内容的模板，则不能再打开该内容。 仅当确定模板未用于保护生产中的文档或电子邮件时，才可删除模板。 作为一种预防措施，可能需要考虑首先通过使用 [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate) cmdlet 将模板作为备份导出。 
 
 - 在全局策略中显示部门模板（为作用域配置的模板）。 目前，如果编辑并保存部门模板，则会删除作用域配置。 Azure 信息保护策略中的作用域内模板相当于[作用域内策略](configure-policy-scope.md)。 如果将模板转换为标签，则可以选择现有作用域。
     
     此外，目前无法设置部门模板的应用程序兼容性设置。 如有必要，可以使用 PowerShell 的 [Set-aadrmtemplateproperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 进行设置。
 
-- 不会从“模板”容器创建新模板；而是创建一个具有保护设置的标签，并从“保护”边栏选项卡配置使用权限和设置。 有关完整说明，请参阅[创建新模板](#to-create-a-new-template)。
+- 目前，使用 Azure 经典门户或 PowerShell 为多种语言配置的模板不会显示这些语言的名称和说明，但会保留这些信息。
+
+- 将模板转换为标签或将模板链接到标签后，其他标签不能再使用该模板。
+
+- 不会从“模板”容器创建新模板。 而是创建一个具有“保护”设置的标签，并从“保护”边栏选项卡配置使用权限和设置。 有关完整说明，请参阅[创建新模板](#to-create-a-new-template)。
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>在 Azure 信息保护策略中配置模板
 
@@ -105,7 +142,7 @@ ms.lasthandoff: 06/30/2017
 
 - 会保留保护设置，你可以根据需要进行编辑，还可以添加其他标签设置，如视觉对象标记和条件。
 
-- 原始模板不再显示在“模板”下，要在 Azure 门户中进行编辑，现在可以编辑已创建的标签。 该模板仍可用于 Azure 权限管理服务，仍然可以使用 [PowerShell 命令](administer-powershell.md)进行管理。  
+- 为标签配置保护时，原始模板不再显示在“模板”下，且不能选择为预定义模板。 若要在 Azure 门户中编辑此模板，现在编辑在转换模板时创建的标签。 该模板仍可用于 Azure 权限管理服务，仍然可以使用 [PowerShell 命令](administer-powershell.md)进行管理。  
 
 ## <a name="to-create-a-new-template"></a>创建新模板
 
@@ -131,6 +168,8 @@ ms.lasthandoff: 06/30/2017
 ## <a name="next-steps"></a>后续步骤
 
 与 Azure 信息保护策略的所有更改一样，运行 Azure 信息保护客户端的计算机可能需要 15 分钟才能完成下载这些模板的操作。 有关计算机和服务如何下载并刷新模板的信息，请参阅[为用户和服务刷新模板](refresh-templates.md)。
+
+可在 Azure 门户中配置的用于创建和管理模板的所有设置均可通过使用 PowerShell 实现。 此外，PowerShell 还提供了门户中未提供的更多选项。 有关详细信息，请参阅[保护模板的 PowerShell 参考](configure-templates-with-powershell.md)。 
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 

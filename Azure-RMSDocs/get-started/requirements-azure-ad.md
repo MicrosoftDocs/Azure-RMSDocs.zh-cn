@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ac14cb491c39f57c7a0f81d71300db3917587cd9
-ms.sourcegitcommit: 55c36739e1d9f3f0cf2e1777fe4302b443a49b8e
+ms.openlocfilehash: 2a079dbc1df01c8c9402d7d79e3f587f13b44654
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
 
 >*适用于：Azure 信息保护、Office 365*
 
-必须拥有 Azure AD 目录才能使用 Azure 信息保护。 你可以使用此目录的组织帐户登录 Azure 经典门户，并在该门户中进行 Rights Management 模板的配置和管理之类的操作。
+必须拥有 Azure AD 目录才能使用 Azure 信息保护。 可以使用此目录的组织帐户登录 Azure 门户，并在该门户中进行 Rights Management 模板的配置和管理之类的操作。
 
 如果你的组织还没有 Azure 订阅，则可通过注册免费试用版获取订阅。 请转到 [Azure 入门](https://account.windowsazure.com/organization)页并按照说明操作。
 

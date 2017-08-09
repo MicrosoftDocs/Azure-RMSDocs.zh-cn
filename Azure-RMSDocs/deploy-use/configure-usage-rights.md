@@ -4,7 +4,7 @@ description: "了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/24/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a093ca8cdd02448c877554ff87e971e956eab789
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 62ea1579b61b096e1f7fe6900d72b1b8077c9ff1
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
 >*适用于：Azure 信息保护、Office 365*
 
-在文件或电子邮件上使用 Azure 信息保护中的 Azure 权限管理服务设置保护并且不使用模板时，必须自行配置使用权限。 此外，在为 Azure 权限管理配置自定义模板时，可以选择随后在用户、管理员或配置的服务选择模板时会自动应用的使用权限。 例如，在 Azure 经典门户中，可以选择配置使用权限逻辑分组的角色，也可以配置单个权限。
+在文件或电子邮件上使用 Azure 信息保护中的 Azure 权限管理服务设置保护并且不使用模板时，必须自行配置使用权限。 此外，在为 Azure 权限管理保护配置模板或标签时，可以选择随后在用户、管理员或配置的服务选择模板或标签时会自动应用的使用权限。 例如，在 Azure 门户中，可以选择配置使用权限逻辑分组的角色，或者可以配置单个权限。
 
 使用本文章可帮助为当前使用的应用程序配置所需的使用权限，并了解应用程序如何解释这些权限。
 
@@ -85,7 +85,7 @@ ms.lasthandoff: 07/27/2017
 
 Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应用和 Exchange 传输规则）有一个附加的电子邮件信息权限保护选项：**不得转发**。 
 
-尽管**不得转发**看似用户（和 Exchange 管理员）可选择的默认权限管理模板，但此选项并不是模板。 因此在 Azure 经典门户中查看和管理 Azure 权限管理模板时，你看不到此选项。 相反，**不得转发**选项是用户对其电子邮件收件人动态应用的一组权限。
+尽管**不得转发**看似用户（和 Exchange 管理员）可选择的默认权限管理模板，但此选项并不是模板。 因此，查看和管理 Azure 权限管理的模板时，在 Azure 门户中看不到该模板。 相反，**不得转发**选项是用户对其电子邮件收件人动态应用的一组权限。
 
 对电子邮件应用**不得转发**选项时，收件人将无法转发、打印或复制电子邮件，也无法保存附件或另存为其他名称。 例如，在 Outlook 客户端中，“转发”按钮和**另存为**、**保存附件**和**打印**菜单选项将不可用，并且无法添加或更改**收件人**、**抄送**或**密件抄送**框中的收件人。
 
@@ -129,7 +129,7 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 请注意，权限管理所有者独立于 Windows 文件系统所有者。 两者通常是相同的，但也可以不同，即使不使用 SDK 或 PowerShell 也是如此。
 
 ## <a name="see-also"></a>另请参阅
-[为 Azure Rights Management 服务配置自定义模板](configure-custom-templates.md)
+[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)
 
 [为 Azure 权限管理和发现服务或数据恢复配置超级用户](configure-super-users.md)
 

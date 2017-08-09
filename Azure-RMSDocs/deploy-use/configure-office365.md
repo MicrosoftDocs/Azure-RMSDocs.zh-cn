@@ -1,10 +1,10 @@
 ---
-title: "Office 365&colon;配置客户端和在线服务 - AIP"
+title: "配置 Office 365 客户端和联机服务，以使用 AIP 中的 Azure RMS"
 description: "面向管理员提供的有关配置 Office 365 以使用 Azure 信息保护中的 Azure Rights Management 服务的信息和说明。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/21/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d6a9183f764394c2580d4766c8decfbaaeec853a
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: dd8e9604c819f61f94bfdd51194744d127bbf55c
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
-# <a name="office-365-configuration-for-clients-and-online-services"></a>Office 365：客户端和联机服务的配置
+# <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365：配置客户端和联机服务，以使用 Azure 权限管理服务
 
 >*适用于：Azure 信息保护、Office 365*
 
-由于 Office 365 以本机方式支持 Azure 信息保护中的 Azure Rights Management 服务，因此无需客户端计算机配置即可支持各个应用程序（例如 Word、Excel、PowerPoint、Outlook 和 Outlook Web App）的信息权限管理 (IRM) 功能。 用户只需使用他们的 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 凭据登录 Office 应用程序，即可保护文件和电子邮件，并可使用其他人保护的文件和电子邮件。
+由于 Office 365 以本机方式支持 Azure 信息保护中的 Azure 权限管理服务，因此无需客户端计算机配置即可支持各个应用程序（例如 Word、Excel、PowerPoint、Outlook 和 Outlook 网页版）的信息权限管理 (IRM) 功能。 用户需要做的只是使用其 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 凭据登录到 Office 应用程序。 然后，他们可保护文件和电子邮件，并使用受他人保护的文件和电子邮件。
 
 但是，我们建议你使用 Azure 信息保护客户端，为这些应用程序提供补充，使得用户能够发挥 Office 外接程序的优势。 有关详细信息，请参阅 [Azure 信息保护客户端：安装和配置客户端](configure-client.md)。
 
@@ -123,7 +123,7 @@ ms.lasthandoff: 06/30/2017
 现在用户可以使用 Azure Rights Management 服务来保护其电子邮件。 例如，在 Outlook Web App 中，从扩展菜单 ( **...** ) 中选择“设置权限”，然后选择“不转发”或可用模板之一，以便将信息保护应用于电子邮件和任何附件  。 但是，由于 Outlook Web App 将缓存 UI 一天时间，请在运行这些配置命令后并在尝试将信息保护应用于电子邮件前，等待经过这段时间。 在 UI 更新以反映新配置之前，你将在“设置权限”菜单中看不到任何选项  。
 
 > [!IMPORTANT]
-> 如果为 Azure Rights Management 创建了新的[自定义模板](configure-custom-templates.md)或更新了这些模板，则每次都必须运行以下 Exchange Online PowerShell 命令（如有必要，请先运行步骤 2 和步骤 3）以将这些更改同步到 Exchange Online：`Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
+> 如果为 Azure 权限管理创建或更新[模板](configure-policy-templates.md)，则每次都必须运行以下 Exchange Ogit add .nline PowerShell 命令（如有必要，请先运行步骤 2 和步骤 3）以将这些更改同步到 Exchange Online：`Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
 
 作为 Exchange 管理员，你现在可以配置自动应用信息保护的功能，如[传输规则](https://technet.microsoft.com/library/dd302432.aspx)、[数据丢失防护 (DLP) 策略](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx)和[受保护的语音邮件](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx)（统一消息传送）。
 

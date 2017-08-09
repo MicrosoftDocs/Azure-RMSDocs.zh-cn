@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护中数据保护服务 Azure Rights Manage
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a73dcc5e2a38c5874361f0fc2845229f505b2d3e
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 5a9f592584c090d8b0bb62acabd5775238b5e411
+ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/01/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -63,20 +63,22 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 需要注意的事项：
 
-- 只有 Office 365 的全局管理员和 Azure AD 的全局管理员才能使用管理门户（Office 365 管理中心或 Azure 经典门户）来配置 Azure RMS。 分配有 Azure RMS 全局管理员角色的用户必须使用 Azure RMS PowerShell 命令来配置 Azure RMS。 请参阅[使用 Windows PowerShell 管理 Azure Rights Management](../deploy-use/administer-powershell.md)，以帮助查找特定任务的正确 cmdlet。
+- 只有 Office 365 的全局管理员和 Azure AD 的全局管理员才能使用 Office 365 管理中心或 Azure 经典门户来配置 Azure RMS。 如果将 Azure 门户用于 Azure 信息保护，也可以安全管理员身份登录。
+
+- 分配有 Azure RMS 全局管理员角色的用户必须使用 Azure RMS PowerShell 命令来配置 Azure RMS。 请参阅[使用 Windows PowerShell 管理 Azure Rights Management](../deploy-use/administer-powershell.md)，以帮助查找特定任务的正确 cmdlet。
 
 - 如果配置了[加入控制](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，此配置不会影响管理 Azure RMS 的能力，但会影响管理 RMS 连接器的能力。 例如，如果配置了加入控制，以致仅允许“IT 部门”组保护内容，那么，用于安装和配置 RMS 连接器的帐户必须是该组的成员。 
 
-- 任何 Azure RMS 管理员（租户全局管理员或 Azure RMS 全局管理员）都不能对受 Azure RMS 保护的文档或电子邮件自动解除保护。 只有在启用了超级用户功能的情况下，分配为 Azure RMS 超级用户的用户才能执行此操作。 但是，租户全局管理员和所有 Azure RMS 全局管理员都可以将用户分配为超级用户，包括其自己的帐户。 他们还可以启用超级用户功能。 这些操作记录在 Azure RMS 管理员日志中。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)中的“最佳安全做法”部分。 
+- 任何 Azure RMS 管理员（例如租户全局管理员或 Azure RMS 全局管理员）都不能对受 Azure RMS 保护的文档或电子邮件自动解除保护。 只有在启用了超级用户功能的情况下，分配为 Azure RMS 超级用户的用户才能执行此操作。 但是，租户全局管理员和所有 Azure RMS 全局管理员都可以将用户分配为超级用户，包括其自己的帐户。 他们还可以启用超级用户功能。 这些操作记录在 Azure RMS 管理员日志中。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)中的“最佳安全做法”部分。 
 
 >[!NOTE]
-> 用于配置 Azure 权限管理保护的模板和新选项将移动到 Azure 门户，除支持全局管理员访问之外，该网站还支持安全管理员访问。 有关详细信息，请参阅以下博客文章公告：[Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/)（Azure 信息保护统一管理现为预览版）和 [Azure Information Protection unified administration phase two](https://blogs.technet.microsoft.com/enterprisemobility/2017/05/23/azure-information-protection-unified-administration-phase-two/)（Azure 信息保护统一管理第二阶段）。
+> 用于配置 Azure 权限管理保护的模板和新选项已移动到 Azure 门户，除支持全局管理员访问之外，该网站还支持安全管理员访问。 
 
 ## <a name="how-do-i-create-a-new-custom-template-in-the-azure-portal"></a>如何在 Azure 门户中创建新的自定义模板？
 
-目前在预览版中，自定义模板移动到 Azure 门户，你可以在该门户中继续将其作为模板进行管理，或将其转换为标签。 要创建新模板，请创建新标签并为 Azure RMS 配置数据保护设置。 这会在后台创建一个新模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。
+自定义模板已移动到 Azure 门户，可以在该门户中继续将其作为模板进行管理，或将其转换为标签。 要创建新模板，请创建新标签并为 Azure RMS 配置数据保护设置。 这会在后台创建一个新模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。
 
-有关在 Azure 门户中配置模板的详细信息，请参阅[在 Azure 信息保护策略中配置和管理模板](../deploy-use/configure-policy-templates.md)。
+有关 Azure 门户中的模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>我对 Exchange 采用混合部署：Exchange Online 上存在一些用户，而其他用户则在 Exchange Server 上。Azure RMS 支持这种部署吗？
 绝对支持，而且很棒的是，用户将受到无缝保护，并可以在两种 Exchange 部署上使用受保护的电子邮件和附件。 对于此配置，[激活 Azure RMS](../deploy-use/activate-service.md) 并[启用适用于 Exchange Online 的 IRM](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)，然后[部署并配置适用于 Exchange Server 的 RMS 连接器](../deploy-use/deploy-rms-connector.md)。
@@ -99,19 +101,14 @@ Azure Rights Management 服务始终使用 Azure Active Directory 帐户和关�
 
 这些帐户的身份验证方法各不相同，具体取决于其他组织中的管理员如何配置 Azure Active Directory 帐户。 例如，他们可以使用为这些帐户、多重身份验证 (MFA)、联合身份验证创建的密码，或在 Active Directory 域服务中创建、然后同步到 Azure Active Directory 的密码。
 
-## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>能否将外部用户（公司外部人员）添加到自定义模板？
-是。 创建最终用户（和管理员）可以从应用程序中选择的自定义模板，可使用户使用你指定的预定义策略应用信息保护变得简单快捷。 该模板中的设置之一是哪些用户能够访问内容，而且你可以指定组织中的用户和组以及组织外部的用户和组。 
+## <a name="can-i-add-external-users-people-from-outside-my-company-to-templates"></a>能否将外部用户（公司外部人员）添加到模板？
+是。 创建最终用户（和管理员）可以从应用程序中选择的模板，可使用户使用你指定的预定义策略应用信息保护变得简单快捷。 该模板中的设置之一是哪些用户能够访问内容，而且你可以指定组织中的用户和组以及组织外部的用户和组。 甚至可以指定另一组织中的所有用户。
 
-若要从组织外部指定用户，请在配置模板时在 Azure 经典门户中将用户添加为所选组的联系人。 若要指定组织外部的组，必须使用[适用于 Azure 权限管理的 Windows PowerShell 模块](../deploy-use/install-powershell.md)，你可以通过此模块指定单个外部用户甚至是另一组织中的所有用户：
+配置[保护设置](../deploy-use/configure-policy-protection.md)时，可以使用 Azure 门户来执行此配置。 或者，可以使用 PowerShell 来执行此配置。 若要使用 PowerShell：
 
--   **使用权限定义对象创建或更新模板**。    在权限定义对象中指定外部电子邮件地址及其权限，然后你将使用该地址创建或更新模板。 指定权限定义对象时，可使用 [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet 来创建一个变量，然后将该变量提供给 -RightsDefinition 参数，并可使用 [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) cmdlet（如果是新模板）或 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet（如果需要修改现有模板）。 但是，如果你是将这些用户添加到现有模板中，则需要在模板中为现有组定义权限定义对象，不仅仅只需为外部用户执行此类操作。
+-   **使用权限定义对象创建或更新模板**。  在权限定义对象中指定外部电子邮件地址及其权限，然后你将使用该地址创建或更新模板。 指定权限定义对象时，可使用 [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet 来创建一个变量，然后通过 [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) cmdlet（如果是新模板）或 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet（如果需要修改现有模板）将该变量提供给 RightsDefinition 参数。 但是，如果你是将这些用户添加到现有模板中，则需要在模板中为现有组定义权限定义对象，不仅仅只需为外部用户执行此类操作。
 
-有关自定义模板的详细信息，请参阅[为 Azure 权限管理服务配置自定义模板](../deploy-use/configure-custom-templates.md)。
-
-> [!TIP]
-> 用于配置 Azure 权限管理保护的模板和新选项将移动到 Azure 门户。 这些新选项使指定外部用户更加容易，让你无需再使用 PowerShell 或包含外部用户的组。 此功能目前处于预览状态：[Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/)（Azure 信息保护统一管理现为预览版）。 
-
-> 有关说明，请参阅[配置标签以进行 Rights Management 保护](../deploy-use/configure-policy-protection.md#to-configure-a-label-for-rights-management-protection)。
+有关模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
 
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Azure RMS 是否适用于 Azure AD 中的动态组？
 借助 Azure AD Premium 功能，你可以通过指定[基于属性的规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)为安全组配置动态成员资格。 此组类型不支持电子邮件地址，因此不能与 Azure 权限管理服务一起使用。 但是，Office 365 组支持动态组成员资格并已启用邮件。 由于此组启用了邮件，可以将其用于 Azure Rights Management 保护。
@@ -120,7 +117,7 @@ Azure Rights Management 服务始终使用 Azure Active Directory 帐户和关�
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>如何向 Gmail 或 Hotmail 帐户发送受保护的电子邮件？
 
-你可能已查看关于 Azure 信息保护如何向 Gmail 或 Hotmail 帐户发送受保护的电子邮件的参考资料或演示。 此功能仍处于个人预览阶段，所以在公共预览版发布前，无法在本文档中找到有关此功能的详细信息。
+你可能已查看关于 Azure 信息保护如何向 Gmail 或 Hotmail 帐户发送受保护的电子邮件的参考资料或演示。 此功能仍处于个人预览阶段，所以在完全发布前，无法在本文档中找到有关此功能的详细信息。
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS 支持哪些设备和哪种文件类型？
 有关支持 Azure Rights Management 服务的设备的列表，请参阅[支持 Azure Rights Management 数据保护的客户端设备](../get-started/requirements-client-devices.md)。 由于并非所有受支持的设备目前都能支持全部的 Rights Management 功能，因此，还请务必查看[启用 RMS 的应用程序](../get-started/requirements-applications.md#rms-enlightened-applications)表。
@@ -154,7 +151,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 但是，如果公司策略要求使用硬件安全模块 (HSM)，而这会阻止 Azure 信息保护的部署，那么另一种选择是将 Azure 信息保护和 BYOK 一起部署，只不过 Exchange 的 Rights Management 保护功能会减弱。 有关详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)中的 [BYOK 定价和限制](../plan-design/byok-price-restrictions.md)。
 
 ## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>我正在寻找的一项功能看起来不适用于 SharePoint 保护的库。是否计划了针对此功能的支持？
-当前，SharePoint 通过使用 IRM 保护的库来支持 Rights Management 保护的文档，但是该库不支持自定义模板、文档跟踪和其他一些功能。 有关详细信息，请参阅 [Office 应用程序和服务](../understand-explore/office-apps-services-support.md)一文中的 [SharePoint Online 和 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server)部分。
+目前，SharePoint 通过使用受 IRM 保护的库来支持受 RMS 保护的文档，但是该库不支持 Rights Management 模板、文档跟踪和一些其他功能。 有关详细信息，请参阅 [Office 应用程序和服务](../understand-explore/office-apps-services-support.md)一文中的 [SharePoint Online 和 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server)部分。
 
 如果对尚不支持的某项特定功能感兴趣，请务必关注 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)（企业移动性和安全性博客）上的公告。
 
@@ -164,7 +161,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 正如 SharePoint 站点管理员为其拥有的 SharePoint 库启用并配置 IRM 一样，根据 OneDrive for Business 的设计，用户也需要为自己的 OneDrive for Business 库启用并配置 IRM。 不过，你可以使用 PowerShell 为他们执行此类操作。 有关说明，请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)一文中的 [SharePoint Online 和 OneDrive for Business：IRM 配置](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)部分。
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>对于成功部署，是否有任何提示或窍门？
-在考察大量的部署并聆听客户、合作伙伴、顾问和支持工程师的意见后，结合自身的经验，我们很乐意与你分享下面这个极其有效的诀窍：设计并部署简单策略。
+在考察大量的部署并聆听客户、合作伙伴、顾问和支持工程师的意见后，结合自身的经验，我们很乐意与你分享下面这个极其有效的诀窍：“设计并部署简单策略”。
 
 由于 Azure 信息保护支持与任何人安全共享，因此，你完全有理由相信自己的数据保护措施的覆盖面。 但是，对权限策略应持保守态度。 对于许多组织而言，对业务产生的最大影响来自于通过应用默认权限策略模板防止数据泄漏，将其访问权限限制给组织中的人员。 当然，你可以根据需要采取粒度级比这高得多的措施 - 例如，防止人员打印、编辑，等等。但是，对于确实需要高级安全性的文档，请将更高粒度级的限制保留为例外措施，并且不要一开始就实施这些限制性更强的策略，而是计划采取分阶段的实施方案。
 
@@ -179,7 +176,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 保护文档的用户，即 [Rights Management 颁发者](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)不受此撤销的限制，始终能够访问其文档。 
 
-租户使用许可证有效期默认值为 30 天，可使用 PowerShell cmdlet **Set-AadrmMaxUseLicenseValidityTime** 配置该值。 可在自定义模板中使用更严格的设置替代此设置。 
+租户使用许可证有效期默认值为 30 天，可使用 PowerShell cmdlet **Set-AadrmMaxUseLicenseValidityTime** 配置该值。 可在模板中使用更严格的设置替代此设置。 
 
 有关使用许可证的工作原理的详细信息和示例，请参阅 [Set-AadrmMaxUseLicenseValidityTime](/powershell/module/aadrm/set-aadrmmaxuselicensevaliditytime) 的详细说明。
 

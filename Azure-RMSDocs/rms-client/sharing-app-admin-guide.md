@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 Microsoft Rights Managemen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cfe5822e426748dcf6df3bb0c25949a85f69db1f
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 4cd74b6fcee53acc99e0c89d7cbb606d8aab2d54
+ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/28/2017
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>保护级别 – 本机和常规
 
 >*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
 
 > [!IMPORTANT]
-> **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2018 年 1 月 31 日将停止对此旧应用程序的支持。 
+> **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 
 
 如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 [Rights Management 共享应用程序用户指南](sharing-app-user-guide.md)或[适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)以外的更多技术信息，请使用以下信息。
 
@@ -46,7 +46,7 @@ Windows 版 RMS 共享应用程序支持脚本化安装，因此适合企业部�
 
 RMS 共享应用程序的安装包支持不同的部署方案，包括以下方案：
 
-|说明|部署方案|
+|描述|部署方案|
 |---------------|-----------------------|
 |Microsoft Online 登录助手|Office 2010 和 Azure 信息保护<br /><br />Office 2013 和 Azure 信息保护，如果尚未安装 [2015 年 6 月 9 日发布的 Office 2013 更新](https://support.microsoft.com/kb/3054853) (KB3054853)|
 |Office 修补程序 (KB 2596501)|Office 2010 和 Azure 信息保护<br /><br />Office 2010 和 Active Directory RMS|
@@ -187,7 +187,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     例如： `\\server5\apps\rms\x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "C:\Log files\ipviewerinstall.log"`
     
-    如果此命令无法成功运行，由于 **/quiet** 参数的原因，将不会显示任何错误消息。 为有助于解决安装失败的问题，请返回不含 /quiet 的命令以查看错误消息。
+    如果此命令无法成功运行，由于 /quiet 参数的原因，将不会显示任何错误消息。 为有助于解决安装失败的问题，请返回不含 /quiet 的命令以查看错误消息。
 
 2.  使用以下命令安装 Office 加载项，指定现有文件夹创建日志文件：
 
@@ -205,7 +205,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     例如： `\\server5\apps\rms\msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "C:\Log files\rmsofficeinstall.log"`
     
-    如果此命令无法成功运行，由于 **/quiet** 参数的原因，将不会显示任何错误消息。 为有助于解决安装失败的问题，请返回不含 /quiet 的命令以查看错误消息。
+    如果此命令无法成功运行，由于 /quiet 参数的原因，将不会显示任何错误消息。 为有助于解决安装失败的问题，请返回不含 /quiet 的命令以查看错误消息。
 
 若要验证是否成功，请参阅本文中的[验证安装是否成功](#verifying-installation-success)部分。
 

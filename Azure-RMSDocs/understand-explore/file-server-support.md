@@ -1,5 +1,5 @@
 ---
-title: "使用 FCI 的文件服务器 - Azure 信息保护"
+title: "使用 FCI 的文件服务器如何支持 AIP 中的 Azure RMS"
 description: "部署 RMS 连接器时如何将 Windows Server 文件分类基础结构与 Azure RMS 结合使用以自动保护 Office 文档。"
 author: cabailey
 ms.author: cabailey
@@ -12,20 +12,20 @@ ms.technology: techgroup-identity
 ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7f49fc1613afcfdbad1f1f13e827a866b8ebe6f9
-ms.sourcegitcommit: 0fd2e63822280ec96ab957e22868c63de9ef3d47
+ms.openlocfilehash: 3f7a06edc5d685d9ca103d9e7cd0f70c3a5f7874
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/31/2017
 ---
-# <a name="file-servers-that-run-windows-server-and-use-file-classification-infrastructure-fci"></a>运行 Windows Server 和使用文件分类基础结构 (FCI) 的文件服务器
+# <a name="how-file-servers-that-run-windows-server-and-use-file-classification-infrastructure-fci-support-azure-rights-management"></a>运行 Windows Server 和使用文件分类基础结构 (FCI) 的文件服务器如何支持 Azure 权限管理
 
 >*适用于：Azure 信息保护、Office 365*
 
 
 当你将 Windows Server 配置为使用文件分类基础结构时，此文件服务器资源管理器功能可以扫描本地文件，并确定它们是否包含敏感数据。 对于满足此条件的文件，可以使用管理员定义的分类属性，对其进行标记。 然后，文件分类基础结构可根据分类执行自动操作。 其中一种操作是使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 来应用信息保护，并部署 Rights Management 连接器（也称为 RMS 连接器）。 然后，由 Azure RMS 自动保护 Office 文件。
 
-若要保护所有文件类型，应不使用 RMS 连接器，而是改为运行 Windows PowerShell 脚本，该脚本使用 [Azure 信息保护模块](../rms-client/client-admin-guide-powershell.md)中提供的 cmdlet。
+若要保护所有文件类型，请不要使用 RMS 连接器，而是改为运行 Windows PowerShell 脚本，该脚本使用 [Azure 信息保护模块](../rms-client/client-admin-guide-powershell.md)中的 cmdlet。
 
 分类策略是完全可以配置的，并且具有高度的可扩展性，因此你可以防止未授权和已授权用户可能发生的数据泄漏。 它甚至有助于降低网络管理员的数据泄漏风险，因为你可以配置不要求这些管理员具有文件访问权限的策略。
 

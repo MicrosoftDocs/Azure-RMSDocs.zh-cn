@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护及其数据保护服务 Azure Rights Man
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/15/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cbceb3f3e68c558576cc275793dac6feb3b9245b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 7e8f49a9775ac6eab89b72a50f8ca866875313a5
+ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/28/2017
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -45,7 +45,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 如果安装了适用于 Windows 的 Azure 信息保护客户端，但没有 Azure 信息保护策略，那么客户端会在[仅保护模式](../rms-client/client-protection-only-mode.md)下自动运行。 在这种模式下，用户可以轻松应用 Rights Management 模板和自定义权限。 如果以后购买确实包含分类和标记的订阅，客户端会在下载 Azure 信息保护策略后自动切换到标准模式。
 
-如果当前使用的是 Windows Rights Management 共享应用程序，建议使用 Azure 信息保护客户端取而代之。 将于 2018 年 1 月 31 日停止提供对共享应用程序的支持。 若要顺利过渡，请参阅[用于操作 RMS 共享应用程序的任务](../rms-client/upgrade-client-app.md)。
+如果当前使用的是 Windows Rights Management 共享应用程序，建议使用 Azure 信息保护客户端取而代之。 将于 2019 年 1 月 31 日停止提供对共享应用程序的支持。 若要顺利过渡，请参阅[用于操作 RMS 共享应用程序的任务](../rms-client/upgrade-client-app.md)。
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 

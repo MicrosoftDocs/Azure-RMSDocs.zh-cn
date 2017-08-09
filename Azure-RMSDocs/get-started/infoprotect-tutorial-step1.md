@@ -4,17 +4,17 @@ description: "快速试用 Azure 信息保护入门教程步骤 1 - 激活 Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: adc2baa875595d5044b47a9f014cc1381ba85dc2
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 1779eb6f2bcf31ce3515b58b6ed955208fafb237
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="step-1-activate-the-rights-management-service"></a>步骤 1：激活权限管理服务
  
@@ -43,14 +43,14 @@ ms.lasthandoff: 06/30/2017
 
     你现在应该看到 **“权限管理已激活”** 以及停用选项（可能需要手动刷新该页）。
 
-    此时请勿单击 **“高级功能”**。 单击该选项会将你转到可在其中配置自定义模板的 Azure 经典门户，这些模板不是本教程所必需的。 相反，你可以关闭此页面。
+    此时请勿单击 **“高级功能”**。 相反，你可以关闭此页面。
 
-这就是完成本教程第一步所要执行的所有操作。 对于生产部署，你可能想要另外配置自定义模板，或者将自定义模板替代两个默认的 Azure 权限管理模板。 但本教程不需要使用自定义模板，因此你可以转到步骤 2。
+这就是完成本教程第一步所要执行的所有操作。 可以转到步骤 2。
 
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
 |关于激活 Rights Management|[激活 Azure Rights Management](../deploy-use/activate-service.md)|
-|关于默认模板以及如何创建新的自定义模板|[为 Azure Rights Management 服务配置自定义模板](../deploy-use/configure-custom-templates.md)|
+
 
 >[!div class="step-by-step"]
 [&#171; 简介](infoprotect-quick-start-tutorial.md)
