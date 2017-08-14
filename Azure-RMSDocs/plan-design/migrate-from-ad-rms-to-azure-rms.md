@@ -4,7 +4,7 @@ description: "用于将 Active Directory Rights Management Services (AD RMS) 部
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6ce3936b36a716cfdc2651cda9f59eb9b552eeb3
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: 1e9a124e4b115491c014bb54977cdb9d922cad45
+ms.sourcegitcommit: 238657f9450f18213c2b9fb453174df0ce1f1aef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -102,18 +102,15 @@ ms.lasthandoff: 07/20/2017
 
 ### <a name="cryptographic-mode-considerations"></a>加密模式注意事项
 
-虽然不是迁移的先决条件，但还是建议进行迁移前在加密模式 2 中运行 AD RMS 服务器和客户端。 
+如果 AD RMS 群集当前处于加密模式 1，则在开始迁移前，请勿将此群集升级到加密模式 2。 请改为使用加密模式 1 进行迁移，并在迁移结束时重新生成租户密钥，将其作为迁移后的任务之一。
 
-有关不同模式以及如何升级的详细信息，请参阅 [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)（AD RMS 加密模式）。
-
-如果 AD RMS 群集处于加密模式 1 且无法升级，则必须在迁移完成时重新生成 Azure 信息保护租户密钥。 重新生成密钥将创建一个新租户密钥，该密钥使用加密模式 2。 将 Azure Rights Management 服务与加密模式 1 配合使用仅在迁移过程中受支持。
+仅在迁移过程中支持加密模式 1。
 
 确认 AD RMS 加密模式：
  
 - 对于 Windows Server 2012 R2 和 Windows 2012：“AD RMS 群集属性”>“常规”选项卡。 
 
 - 对于所有支持版本的 AD RMS：使用 [RMS 分析工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)和“AD RMS 管理员”选项可在“RMS 服务信息”中查看加密模式。
-
 
 ### <a name="migration-limitations"></a>迁移限制
 

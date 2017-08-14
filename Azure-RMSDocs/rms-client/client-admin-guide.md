@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 275f08ca0ea267c29f5b743300507d66ee1d1118
-ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
+ms.openlocfilehash: e942555c7a985db10054aa3f13be5ebcda2269a3
+ms.sourcegitcommit: 5ea919b1b2bcb9c4b3e5dd1939ff8d0d937e1168
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -242,14 +242,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     
     |Office 版本|操作系统|软件|操作|
     |--------------------|--------------|----------------|---------------------|
-    |Office 2013|所有支持的版本|[KB 3054941](https://www.microsoft.com/en-us/download/details.aspx?id=49337)<br /><br /> 文件名中包含的版本号：v3|安装|
+    |Office 2016|所有支持的版本|64 位：[KB317866](https://www.microsoft.com/en-us/download/details.aspx?id=55073)<br /><br />32 位：[KB317866](https://www.microsoft.com/en-us/download/details.aspx?id=55058)<br /><br /> 版本：1.0|安装|
+    |Office 2013|所有支持的版本|64 位：[KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54992)<br /><br /> 32 位：[KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54979) <br /><br />版本：1.0|安装|
     |Office 2010|所有支持的版本|[Microsoft Online Services 登录助手](https://www.microsoft.com/en-us/download/details.aspx?id=28177)<br /><br /> 版本：2.1|安装|
-    |Office 2010|Windows 8.1 和 Windows Server 2012 R2|[KB 2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB 2843630 或 KB 2919355，则进行安装|
-    |Office 2010|Windows 8 和 Windows Server 2012|[KB 2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
-    |Office 2010|Windows 7|[KB 2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB 3125574，则进行安装|
-    |不适用|Windows 7|KB 2627273 <br /><br /> 文件名中包含的版本号：v4|卸载|
+    |Office 2010|Windows 8.1 和 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB2843630 或 KB2919355，则进行安装|
+    |Office 2010|Windows 8 和 Windows Server 2012|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
+    |Office 2010|Windows 7|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB3125574，则进行安装|
+    |不适用|Windows 7|KB2627273 <br /><br /> 文件名中包含的版本号：v4|卸载|
     
-    Office 2016 没有其他依赖项。
 
 3. 对于默认安装，将 .msi 与 /quiet/ 一起运行，例如，`AzInfoProtection.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)中记录的其他安装参数。  
 
@@ -326,7 +326,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 ## <a name="support-for-multiple-languages"></a>支持多种语言
 
-Azure 信息保护客户端支持 Office 支持的所有客户端语言。 例如，将以用户语言显示菜单选项、对话框和消息。 由于有一个安装程序可检测语言，因此不需要进行额外配置即可安装不同语言的客户端。 
+Azure 信息保护客户端支持 Office 365 支持的同种语言。 有关这些语言的列表，请参阅 Office [国际可用性](https://products.office.com/business/international-availability)页面的 Office 365、Exchange Online Protection 和 Power BI 部分。
+
+对于这些语言，Azure 信息保护客户端中的菜单选项、对话框和消息将以用户的语言显示。 由于有一个安装程序可检测语言，因此不需要进行额外配置即可安装不同语言的 Azure 信息保护客户端。 
 
 但是，对于[默认策略](../deploy-use/configure-policy-default.md)或你指定的标签名称，用户看到的标签名称不会自动翻译。 要使用其他语言向用户显示标签，必须提供你的翻译将 Azure 信息保护策略配置为使用这些翻译。 有关详细信息，请参阅[如何在 Azure 信息保护中配置不同语言的标签](../deploy-use/configure-policy-languages.md)。
 

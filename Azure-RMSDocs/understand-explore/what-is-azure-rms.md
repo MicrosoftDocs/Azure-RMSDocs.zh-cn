@@ -4,7 +4,7 @@ description: "Azure Rights Management (Azure RMS) 是 Azure 信息保护使用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2017
+ms.date: 08/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 61b549c38e3e86bc686747adb5f9ebfd1851f446
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: b002ebf624fe2d314af2cf1df1a1cb452042138e
+ms.sourcegitcommit: a4f4edcbf0f0a7de74d1dcec9ce6e661c6882a74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
 
@@ -29,9 +29,9 @@ Azure Rights Management (Azure RMS) 是 [Azure 信息保护](what-is-information
 
 例如，员工可能会将文档发送给合作伙伴公司，或者将文档保存到云驱动器。 Azure RMS 提供的持续保护不仅有助于保护公司数据，而且从法律上讲还可能是遵循合规性或法律发现要求或单纯遵循良好信息管理实践所必需的。
 
-但非常重要的是，获得授权的人员和服务（如搜索和索引）可以继续读取和检查由 Azure RMS 保护的数据，这是使用对等加密的其他信息保护解决方案所无法轻易实现的。 这种功能有时称为“数据推理”，是保持对组织数据进行控制的关键所在。
+但是非常重要的一点是，经过授权的人员和服务（例如搜索和索引）可以继续读取和检查 Azure RMS 保护的数据。 无法通过其他使用对等加密的信息保护解决方案轻松实现此功能。 你可能已了解到这种功能叫做“数据推理”，并且其是保持对组织数据进行控制的关键所在。
 
-下图说明了在使用 Office 365 以及本地服务器和服务的情况下，Azure RMS 是如何发挥权限管理解决方案作用的。 此外，你还会发现该解决方案支持运行 Windows、Mac OS、iOS、Android 和 Windows Phone 的常见最终用户设备。
+下图说明了在使用 Office 365 以及本地服务器和服务的情况下，Azure RMS 是如何发挥 Rights Management 解决方案作用的。 此外，还会发现 Azure RMS 支持运行 Windows、Mac OS、iOS、Android 和 Windows Phone 的常见最终用户设备。
 
 
 ![Azure RMS 工作方式](../media/AzRMS_elements.png)
@@ -42,9 +42,11 @@ Azure Rights Management (Azure RMS) 是 [Azure 信息保护](what-is-information
 
 了解有关 Azure 信息保护中的此数据保护服务的详细信息：
 
--   [Azure RMS 解决了哪些问题？](azure-rms-problems-it-solves.md)
+- [应用程序如何支持 Azure Rights Management 服务](applications-support.md)
 
--   [Azure RMS 的工作原理？揭秘](how-does-it-work.md)
+- [Azure RMS 解决了哪些问题？](azure-rms-problems-it-solves.md)
+
+- [Azure RMS 的工作原理？揭秘](how-does-it-work.md)
 
 如果想要深入研究并尝试保护自己的文档，请尝试[Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)。 本教程包括当检测到敏感数据时提示保护文档的内容。 还包括保护通过电子邮件共享的文档、跟踪文档以了解其使用情况以及在必要时撤销其访问权限的内容。
 
