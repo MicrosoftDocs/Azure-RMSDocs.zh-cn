@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护中数据保护服务 Azure Rights Manage
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5a9f592584c090d8b0bb62acabd5775238b5e411
-ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
+ms.openlocfilehash: a2c0a8ef4534f8d5149178986688c4d00b4cee9f
+ms.sourcegitcommit: 5ea919b1b2bcb9c4b3e5dd1939ff8d0d937e1168
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -101,14 +101,11 @@ Azure Rights Management 服务始终使用 Azure Active Directory 帐户和关�
 
 这些帐户的身份验证方法各不相同，具体取决于其他组织中的管理员如何配置 Azure Active Directory 帐户。 例如，他们可以使用为这些帐户、多重身份验证 (MFA)、联合身份验证创建的密码，或在 Active Directory 域服务中创建、然后同步到 Azure Active Directory 的密码。
 
-## <a name="can-i-add-external-users-people-from-outside-my-company-to-templates"></a>能否将外部用户（公司外部人员）添加到模板？
-是。 创建最终用户（和管理员）可以从应用程序中选择的模板，可使用户使用你指定的预定义策略应用信息保护变得简单快捷。 该模板中的设置之一是哪些用户能够访问内容，而且你可以指定组织中的用户和组以及组织外部的用户和组。 甚至可以指定另一组织中的所有用户。
+## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>能否将外部用户（公司外部人员）添加到自定义模板？
 
-配置[保护设置](../deploy-use/configure-policy-protection.md)时，可以使用 Azure 门户来执行此配置。 或者，可以使用 PowerShell 来执行此配置。 若要使用 PowerShell：
+是。 在 Azure 门户中将模板转换为标签后，可以配置[保护设置](../deploy-use/configure-policy-protection.md)，来为组织外的用户和组甚至其他组织中的所有用户添加权限。 或者，可以使用 PowerShell 来执行此配置。
 
--   **使用权限定义对象创建或更新模板**。  在权限定义对象中指定外部电子邮件地址及其权限，然后你将使用该地址创建或更新模板。 指定权限定义对象时，可使用 [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet 来创建一个变量，然后通过 [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) cmdlet（如果是新模板）或 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet（如果需要修改现有模板）将该变量提供给 RightsDefinition 参数。 但是，如果你是将这些用户添加到现有模板中，则需要在模板中为现有组定义权限定义对象，不仅仅只需为外部用户执行此类操作。
-
-有关模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
+有关将自定义模板转换为标签以便可以轻松添加外部用户的详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
 
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Azure RMS 是否适用于 Azure AD 中的动态组？
 借助 Azure AD Premium 功能，你可以通过指定[基于属性的规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)为安全组配置动态成员资格。 此组类型不支持电子邮件地址，因此不能与 Azure 权限管理服务一起使用。 但是，Office 365 组支持动态组成员资格并已启用邮件。 由于此组启用了邮件，可以将其用于 Azure Rights Management 保护。
