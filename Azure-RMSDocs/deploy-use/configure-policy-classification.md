@@ -4,17 +4,17 @@ description: "在配置标签的条件时，可以自动将标签分配到文档
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 510375dec4fc4e28197270e62655375698580b95
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 3aad6eb4956b6565e44c4b1019c984a28cb41fdc
+ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
@@ -41,9 +41,9 @@ ms.lasthandoff: 06/30/2017
 
 通过自定义策略提示配置条件以将标签应用于建议的操作的示例提示：
 
-![Azure 信息保护检测和建议](../media/info-protect-recommend-callouts.png)
+![Azure 信息保护检测和建议](../media/info-protect-recommend-calloutsv2.png)
 
-在此示例中，用户可以单击“**立即更改**”应用建议的标签，或通过关闭栏来覆盖该建议。
+在此示例中，用户可以单击“立即更改”应用建议的标签，或通过选择“消除”来替代该建议。
 
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>配置标签的建议或自动分类
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 06/30/2017
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 如果为自动或推荐分类配置的标签将应用于所有用户，请从“策略: 全局”边栏选项卡中选择要更改的标签，然后在“标签”边栏选项卡和之后的任何所需边栏选项卡上进行更改。 
+2. 如果将为自动或推荐分类配置的标签应用于所有用户，请从“策略: 全局”边栏选项卡中选择要更改的标签，然后在“标签”边栏选项卡和之后的任何所需边栏选项卡上进行更改。 
 
      如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，以便仅应用于所选用户，请首先从初始的“Azure 信息保护”边栏选项卡中选择作用域内策略。  
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 06/30/2017
 
 4. 在“**条件**”边栏选项卡上，选择“**内置**”（如果想要使用预定义的条件），或“**自定义**”（如果想要指定自己的条件），然后单击“**保存**”：
 
-    - 对于“**内置**”：从可用条件列表中选择，然后选择发生的最小数目以及发生计数中是否应具有唯一的值。
+    - 对于“内置”：从可用条件列表中选择，然后选择发生的最小数目以及发生计数中是否应具有唯一的值。
         
         有关这些条件的检测规则和一些示例的详细信息，请参阅 [内置条件的相关信息](#information-about-the-built-in-conditions)(#内置条件的相关信息) 部分。
 

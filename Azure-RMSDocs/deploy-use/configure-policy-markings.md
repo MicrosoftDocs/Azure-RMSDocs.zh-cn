@@ -4,27 +4,23 @@ description: "当文档或电子邮件中分配一个标签时，可以选择几
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: efc60ee6126a6a0b2798f66c46c2242942878829
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: a65299651abd97adb0fc7641be2f2f3c6f1d8d2f
+ms.sourcegitcommit: adb38b008656ac706920a8488fd2beafedadbc97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
 >*适用于：Azure 信息保护*
 
-当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印：
-
-在这些 Office 应用程序中应用标签和保存文档时，会将可视标记应用于 Word、Excel 和 PowerPoint 文档。 对于电子邮件，从 Outlook 发送电子邮件时会应用可视标记。
-
-在以下情况下不会将可视标记应用于文档：使用文件资源管理器和右键单击操作应用标签时。 或者，使用 PowerShell 对文档进行分类时。
+当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
 
 有关这些可视标记的其他信息：
 
@@ -33,10 +29,32 @@ ms.lasthandoff: 06/30/2017
 - 水印适用于 Word、Excel 和 PowerPoint：
 
     - Excel：水印仅在页面布局和打印预览模式及打印后可见。
-
+    
     - PowerPoint：水印应用于母板幻灯片，作为背景图像。
+    
+    - 当使用 Azure 信息保护客户端的当前预览版本时，可支持多行文本。
 
 - 你可以简单地指定文本字符串，也可以使用[变量](#using-variables-in-the-text-string)在应用页眉、页脚或水印时动态创建文本字符串。
+
+## <a name="when-visual-markings-are-applied"></a>应用视觉标记的情况
+
+对于电子邮件，从 Outlook 发送电子邮件时会应用可视标记。
+
+对于文档，视觉标记应用如下所示：
+
+- 对于 Azure 信息保护客户端的通用版本： 
+    
+    - 在 Office 应用中，当应用标签以及在保存文档时，均会应用来自标签的视觉标记。 
+    
+    - 当使用文件资源管理器或 PowerShell 标记文档时，不会立即应用视觉标记，但在 Office 应用中打开文档以及每次保存文档时都会应用视觉标记。
+
+- 对于 Azure 信息保护客户端的当前预览版本： 
+    
+    - 在 Office 应用中，会在应用标签时应用来自标签的视觉标记。 打开标记的文档以及首次保存该文档时，也会应用视觉标记。  
+    
+    - 当使用文件资源管理器或 PowerShell 标记文档时，不会立即应用视觉标记，但在 Office 应用中打开文档以及首次保存文档时都会应用视觉标记。
+
+## <a name="to-configure-visual-markings-for-a-label"></a>配置标签的视觉标记
 
 请按照以下说明来配置标签的可视标记。
 
