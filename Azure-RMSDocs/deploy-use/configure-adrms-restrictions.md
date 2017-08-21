@@ -4,17 +4,17 @@ description: "如果选择具有 Azure 信息保护的 HYOK (AD RMS) 保护，�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: ac4068885df92c58ecba2a90e7aa0aeaaa34e8e9
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: 4730c2e27a78ec8bf106f43b3ac7097a40e0555d
+ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 保护的自留密钥 (HYOK) 要求和限制
 
@@ -83,7 +83,7 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
     
     - 单个 AD RMS 根群集。
     
-    - [Cryptographic Mode 2](https://technet.microsoft.com/library/hh867439.aspx)（加密模式 2）：可以通过使用 [RMS Analyzer tool](https://www.microsoft.com/en-us/download/details.aspx?id=46437)（RMS Analyzer 工具）确认 AD RMS 群集加密模式的版本，及其总体运行状况。   
+    - [加密模式 2](https://technet.microsoft.com/library/hh867439.aspx)：可以通过检查 AD RMS 群集属性、“常规”选项卡来确认该模式。
     
     - Active Directory 中未注册服务连接点 (SCP)：结合使用 AD RMS 保护和 Azure 信息保护时未使用 SCP。 如果已就 AD RMS 部署注册了 SCP，必须将其删除，以便 Azure 权限管理保护功能成功[发现服务](../rms-client/client-deployment-notes.md#rms-service-discovery)。
     

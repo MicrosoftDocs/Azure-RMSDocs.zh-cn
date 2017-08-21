@@ -4,7 +4,7 @@ description: "管理员配置和使用 Azure 信息保护的文档跟踪的说�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f815fb9f9f1092ce83e9edc72f91381d3e8b46f3
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: dd8b2dcf785d47ec779b314072fb5edddf556163
+ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="configuring-and-using-document-tracking-for-azure-information-protection"></a>配置和使用 Azure 信息保护的文档跟踪
 
@@ -32,11 +32,13 @@ ms.lasthandoff: 07/17/2017
 
 启用文档跟踪站点后，它会默认显示尝试访问受保护文档的人员的电子邮件地址、这些人员尝试访问这些文档的时间以及他们所在的位置等信息。 这个级别的信息有助于确定使用共享文档的方式，以及在发现可疑活动时，是否应撤销这些文档。 但是，出于隐私原因，你可能需要为部分或所有用户禁用此用户信息。 
 
-如果存在不应跟踪此活动的用户，请将其添加到存储于 Azure AD 中的组，并使用 [Set-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Set-AadrmDoNotTrackUserGroup) cmdlet 指定此组。 运行此 cmdlet 时，必须指定单个组。 不过，该组可以包含嵌套组。 
+如果存在不应让其他用户跟踪此活动的用户，请将其添加到存储于 Azure AD 中的组，并使用 [Set-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Set-AadrmDoNotTrackUserGroup) cmdlet 指定此组。 运行此 cmdlet 时，必须指定单个组。 不过，该组可以包含嵌套组。 
 
-对于这些组成员而言，与其他人共享的文档相关的活动不会记录到文档跟踪站点。 另外，不会向共享文档的用户发送电子邮件通知。
+对于这些组成员，当相应活动与这些组成员与用户共享的文档相关时，用户在文档跟踪站点上看不到任何活动。 另外，不会向共享文档的用户发送电子邮件通知。
 
 使用此配置时，所有用户仍可以使用文档跟踪站点，以及撤销对已保护文档的访问权限。 但是，他们无法看到你通过 Set-AadrmDoNotTrackUserGroup cmdlet 指定的用户的活动。
+
+此设置仅会影响最终用户。 Azure 信息保护的管理员可以随时跟踪所有用户的活动，即使是使用 Set-AadrmDoNotTrackUserGroup 指定的这些用户也是如此。 有关管理员如何跟踪用户文档的详细信息，请参阅[跟踪和撤销用户文档](#tracking-and-revoking-documents-for-users)部分。
 
 如果不再需要此选项，可以使用 [Clear-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Clear-AadrmDoNotTrackUserGroup)。 或者选择性地删除用户，将其从组中删除，但请注意[组缓存](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management)。 可以使用 [Get-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/get-AadrmDoNotTrackUserGroup) 检查此选项是否正在使用。 若要为此组配置运行 cmdlet，必须至少安装适用于 PowerShell 的 Azure 权限管理 (AADRM) 模块的 **2.10.0.0** 版本。
 
