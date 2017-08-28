@@ -4,7 +4,7 @@ description: "确定组织可能具有的要求或问题，并了解 Azure RMS �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 65b9d369308505e74e0dde8d96973f9985d209a0
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 0bf2b22e7297a18c035431ef42359c305095f33d
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="what-problems-does-azure-rms-solve"></a>Azure RMS 解决了哪些问题？
 
@@ -37,7 +37,7 @@ Azure RMS 是 [Azure 信息保护](what-is-information-protection.md)使用的�
 |支持本地服务，以及 Office 365|√ 除了 [与 Office 365 无缝集成](office-apps-services-support.md) 以外，在部署 [RMS 连接器](../deploy-use/deploy-rms-connector.md)时，你还可以将 Azure 权限管理与以下本地服务结合使用：<br /><br />- Exchange Server<br /><br />- SharePoint Server<br /><br />- 运行文件分类基础结构的 Windows Server|
 |轻松激活|√ 为用户[激活 Rights Management 服务](../deploy-use/activate-service.md)只需在管理门户中单击几下鼠标。 或者，如果你喜欢命令行控制，只需使用两个 PowerShell 命令即可。|
 |可以根据需要在整个组织内扩展|√ 由于 Azure 权限管理可作为云服务运行并借助 Azure 灵活地向上和向外扩展，因此，不需要设置或部署其他本地服务器。|
-|可以创建简单灵活的策略|√ [自定义权限策略模板](../deploy-use/configure-custom-templates.md) 提供了一款便捷的解决方案。通过该解决方案，管理员可以应用策略，用户可以对每个文档应用适当级别的保护，并将访问权限限制给组织内部人员。<br /><br />例如，为了与所有员工共享公司范围内的策略文档，你可以对所有内部员工应用只读策略。 此外，对于更敏感的文档，如财务报表，你可以将访问权限仅提供给高管。|
+|可以创建简单灵活的策略|√ [自定义保护模板](../deploy-use/configure-policy-templates.md)提供了一款便捷的解决方案。通过该解决方案，管理员可以应用策略，用户可以对每个文档应用适当级别的保护，并将访问权限限制给组织内部人员。<br /><br />例如，为了与所有员工共享公司范围内的策略文档，你可以对所有内部员工应用只读策略。 此外，对于更敏感的文档，如财务报表，你可以将访问权限仅提供给高管。|
 |广泛的应用程序支持|√ Azure 权限管理可与 Microsoft Office 应用程序和服务紧密集成，并使用 [Azure 信息保护客户端](../rms-client/aip-client.md )扩展对其他应用程序的支持。<br /><br />√ [Azure 信息保护 SDK](../develop/developers-guide.md) 为内部开发人员和软件供应商提供了 API，用于编写支持 Azure 信息保护的自定义应用程序。<br /><br />有关详细信息，请参阅[支持 Rights Management API 的其他应用程序](api-support.md)。|
 |IT 部门必须保持对数据的控制|√ 组织可以选择管理其自己的租户密钥，使用“[自带密钥](../plan-design/plan-implement-tenant-key.md)”(BYOK) 解决方案，并将其租户密钥存储在硬件安全模块 (HSM) 中。<br /><br />√ 支持审核和 [使用日志记录](../deploy-use/log-analyze-usage.md)，因此，你可以通过分析信息来获得业务见解、通过监视信息来了解滥用情况，并可在出现信息泄露的情况下执行取证分析。<br /><br />√ 使用 [超级用户功能](../deploy-use/configure-super-users.md) 委托访问确保 IT 部门始终可以访问受保护的内容，即使文档是由后来从组织离职的员工实施保护的。 相比之下，使用对等加密解决方案会面临丧失公司数据访问权限的风险。<br /><br />√ 仅同步[Azure RMS 所需的目录属性](/active-directory/active-directory-aadconnectsync-attributes-synchronized#azure-rms)即可对本地 Active Directory 帐户使用通用标识，而且只需使用[目录同步工具](/active-directory/active-directory-hybrid-identity-design-considerations-tools-comparison)（例如 Azure AD Connect）即可。<br /><br />√ 使用 AD FS 来启用单一登录，而无需将密码复制到云中。<br /><br />√ 组织始终可以选择停止使用 Azure 权限管理服务，而不会失去对以前受 Azure 权限管理保护的内容的访问权限。 有关解除授权选项的信息，请参阅 [解除 Azure Rights Management 授权和停用 Azure Rights Management](../deploy-use/decommission-deactivate.md)。 此外，部署了 Active Directory Rights Management Services (AD RMS) 的组织还可以[迁移到 Azure 权限管理服务](../plan-design/migrate-from-ad-rms-to-azure-rms.md)，而不会失去对以前受 AD RMS 保护的数据的访问权限。|
 > [!TIP]
