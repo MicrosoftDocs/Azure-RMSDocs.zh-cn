@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8f81eee3c15b771e60c24a83f66d13a4a654a7e3
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: a4337d197e08cd75b974594fdd797c9bb383c1f9
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -103,8 +103,6 @@ ms.lasthandoff: 08/11/2017
 ### <a name="cryptographic-mode-considerations"></a>加密模式注意事项
 
 如果 AD RMS 群集当前处于加密模式 1，则在开始迁移前，请勿将此群集升级到加密模式 2。 请改为使用加密模式 1 进行迁移，并在迁移结束时重新生成租户密钥，将其作为迁移后的任务之一。
-
-仅在迁移过程中支持加密模式 1。
 
 确认 AD RMS 加密模式：
  
@@ -215,7 +213,7 @@ ms.lasthandoff: 08/11/2017
 
 - **步骤 12：重新生成 Azure 信息保护租户密钥**
 
-    如果在迁移前未运行加密模式 2，此步骤是必需的；对于所有迁移来说，此步骤是可选的但建议执行，以帮助保护 Azure 信息保护租户密钥的安全性。
+    如果迁移前未在加密模式 2 中运行，建议执行此步骤。
 
 
 ## <a name="next-steps"></a>后续步骤

@@ -4,7 +4,7 @@ description: "详细解说 Azure RMS 的工作原理、它使用的加密控件�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3d53e57b8bff94c39426b37755c643c1dc9d9fde
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 26c82884c706c8397eae63197ed0307faa3562d3
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
@@ -56,11 +56,13 @@ ms.lasthandoff: 06/30/2017
 
 2048 位是激活 Azure Rights Management 服务时的密钥长度。 1024 位支持以下可选方案：
 
-- 在从本地进行迁移的过程中，如果 AD RMS 群集在加密模式 1 中运行，并且不能升级到加密模式 2。
+- 在从本地进行迁移的过程中 - 如果 AD RMS 群集在加密模式 1 中运行。
+
+- 在从本地进行迁移后 - 如果 AD RMS 群集使用 Exchange Online。
 
 - 用于迁移前在本地创建的存档密钥，以便在迁移到 Azure Rights Management 后可以继续打开由 AD RMS 保护的内容。
 
-- 如果客户选择使用 Azure Key Vault 来创建其自己的密钥 (BYOK)。 建议但不强制使用最小密钥大小 2048 位。
+- 如果客户选择使用 Azure Key Vault 来创建其自己的密钥 (BYOK)。 Azure 信息保护支持的密钥长度是 1024 位和 2048 位。 为了提高安全性，建议使用长度为 2048 位的密钥。
 
 ### <a name="how-the-azure-rms-cryptographic-keys-are-stored-and-secured"></a>如何存储和保护 Azure RMS 加密密钥
 
@@ -68,7 +70,7 @@ ms.lasthandoff: 06/30/2017
 
 内容密钥作为文档中的策略的一部分，使用组织的 RSA 密钥（称为“Azure 信息保护租户密钥”）进行保护，并且策略也由文档的作者签名。 此租户密钥由受 Azure Rights Management 服务保护的组织的所有文档和电子邮件共有，如果组织使用的是客户管理的租户密钥（称为“自带密钥”或 BYOK），则此密钥只能由 Azure 信息保护管理员更改。 
 
-此租户密钥在 Microsoft Online Services 中、在高度控制的环境中和严密监视下进行保护。 当你使用客户管理的租户密钥 (BYOK) 时，通过在每个 Azure 区域中使用一组高端硬件安全模块 (HSM) 增强了此安全性，从而在任何情况下都无法提取、导出或共享这些密钥。 有关租户密钥和 BYOK 的详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)。
+此租户密钥在 Microsoft Online Services 中、在高度控制的环境中和严密监视下进行保护。 当你使用客户托管的租户密钥 (BYOK) 时，通过在每个 Azure 区域中使用一组高端硬件安全模块 (HSM) 增强了此安全性，从而在任何情况下都无法提取、导出或共享这些密钥。 有关租户密钥和 BYOK 的详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)。
 
 发送到 Windows 设备的许可证和证书使用客户端设备私钥（用户在设备上第一次使用 Azure RMS 时创建）进行保护。 而该私钥则使用客户端上的 DPAPI 进行保护，DPAPI 使用从用户的密码派生的密钥来保护这些机密。 在移动设备上，只使用这些密钥一次，因此由于这些密钥不存储在客户端上，而无需在设备上保护这些密钥。 
 
@@ -149,7 +151,7 @@ ms.lasthandoff: 06/30/2017
 
 -   **常规保护 (.pfile)**：当 Azure Rights Management 服务对文件提供一般性保护时，流程基本上与内容保护相同，不过，RMS 客户端将创建一个授予所有权限的策略。 使用该文件时，会先将它解密，然后将它传递到目标应用程序。 这种方案允许你保护所有文件，即使它们本机不支持 RMS。
 
--   **受保护的 PDF (.ppdf)**：Azure Rights Management 服务本机保护 Office 文件时，还会创建该文件的副本，并以相同的方法保护该副本。 唯一的差别在于，文件副本采用 PPDF 文件格式，Azure 信息保护客户端查看器和 RMS 共享应用程序只知道如何打开该格式进行查看。 这种方案允许你通过电子邮件发送受保护的附件，知道移动设备上的收件人始终能够读取它们，即使移动设备没有相应的应用程序可本机支持受保护的 Office 文件。
+-   **受保护的 PDF (.ppdf)**：Azure Rights Management 服务本机保护 Office 文件时，还会创建该文件的副本，并以相同的方法保护该副本。 唯一的差别在于，文件副本采用 PPDF 文件格式，Azure 信息保护客户端查看器和 RMS 共享应用程序只知道如何打开该格式进行查看。 这种方案允许你通过电子邮件发送受保护的附件，知道移动设备上的收件人始终能够读取它们，即使移动设备没有相应的应用可本机支持受保护的 Office 文件。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -1,10 +1,10 @@
 ---
-title: "Microsoft 管理 - AIP 租户密钥生命周期操作"
-description: "当 Microsoft 管理 Azure 信息保护租户密钥（默认）时相关生命周期操作的信息。"
+title: "Microsoft 托管 - AIP 租户密钥生命周期操作"
+description: "当 Microsoft 管理 Azure 信息保护租户密钥（默认）时生命周期操作的相关信息。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cacaa10d1a5cbf3a2de903cd4e9f893b546e5609
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: e4a484660aaf5a1820b04892ff006c08cceb5080
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
@@ -28,25 +28,37 @@ ms.lasthandoff: 07/20/2017
 取消 Azure 信息保护订阅时，Azure 信息保护会停止使用租户密钥，用户无需执行任何操作。
 
 ## <a name="rekey-your-tenant-key"></a>重新生成租户密钥
-重新生成密钥也称为滚动密钥。 不要重新生成租户密钥，除非在真正必要的情况下。 旧版客户端（例如 Office 2010）无法适当处理密钥更改。 在这种情况下，必须通过使用组策略或同等机制，清除计算机上的 Rights Management 状态。 但是，某些法律事件可能迫使你重新生成租户密钥。 例如：
+重新生成密钥也称为滚动密钥。 执行此操作时，Azure 信息保护会停止使用现有租户密钥保护文档和电子邮件，而开始使用其他密钥。 策略和模板将立即进行重新签名，但对于使用 Azure 信息保护的现有客户端和服务，此转换将逐渐完成。 因此在一段时间内，有些新内容继续使用旧租户密钥进行保护。
 
--   你的公司拆分为两家或更多公司。 在重新生成租户密钥时，新公司将无法访问员工发布的新内容。 如果有旧租户密钥的副本，他们可以访问旧内容。
+要重新生成密钥，必须配置租户密钥对象并指定要使用的备用密钥。 然后，以前使用的密钥将自动为 Azure 信息保护 标记为“已存档”。 此配置可确保通过使用此密钥进行保护的内容仍可访问。
 
--   你认为租户密钥的主副本（你掌握的副本）已泄漏。
+可能需要重新生成 Azure 信息保护密钥的情况示例：
 
-可以通过 [与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)打开带有重新生成 Azure 信息保护租户密钥请求的 Azure 信息保护支持案例来重新生成租户密钥。 必须证明你是 Azure 信息保护租户的管理员，并且了解确认此过程需要几天时间。 收取标准支持费用；重新生成租户密钥并不是免费支持服务。
+- 使用加密模式 1 密钥从 Active Directory Rights Management Services (AD RMS) 迁移。 迁移完成后，想要改为使用加密模式 2 密钥。
 
-在重新生成租户密钥时，将使用新租户密钥来保护新内容。 这个过程是分阶段进行的，因此在一段时间内，有些新内容继续使用旧租户密钥来保护。 以前受到保护的内容仍将使用旧租户密钥来保护。 为了支持此种方案，Azure 信息保护保留旧密钥，使其能够发布旧内容的许可证。
+- 你的公司拆分为两家或更多公司。 在重新生成租户密钥时，新公司将无法访问员工发布的新内容。 如果有旧租户密钥的副本，他们可以访问旧内容。
+
+- 你认为租户密钥的主控副本已泄露。
+
+要重新生成密钥，可选择其他 Microsoft 托管密钥作为租户密钥，但不能创建新的 Microsoft 托管密钥。 要创新新密钥，必须将密钥拓扑更改为客户托管 (BYOK)。
+
+如果从 Active Directory Rights Management Services (AD RMS) 进行迁移，并且为 Azure 信息保护选择 Microsoft 托管密钥拓扑，那么将具有多个 Microsoft 托管密钥。 在此方案中，租户具有至少 2 个 Microsoft 托管密钥。 这一个密钥或多个密钥是从 AD RMS 导出的密钥。 还将拥有为 Azure 信息保护租户自动创建的默认密钥。
+
+要选择其他密钥作为 Azure 信息保护的活动租户密钥，请使用 AADRM 模块中的 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) cmdlet。 要帮助确定将使用哪个密钥，请使用 [Get-AadrmKeys](/powershell/module/aadrm/get-aadrmkeys) cmdlet。 通过运行以下命令，可以确定为 Azure 信息保护租户自动创建的默认密钥：
+
+    (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
+
+要将密钥拓扑更改为客户托管 (BYOK)，请参阅[实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key)。
 
 ## <a name="backup-and-recover-your-tenant-key"></a>备份和恢复你的租户密钥
 Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 ## <a name="export-your-tenant-key"></a>导出你的租户密钥
-可以按照以下三个步骤的说明，导出 Azure 信息保护配置和租户密钥：
+可以按照以下 3 个步骤的说明，导出 Azure 信息保护配置和租户密钥：
 
 ### <a name="step-1-initiate-export"></a>步骤 1：启动导出
 
--   若要执行此操作，请[与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)，以打开**带有 Azure 信息保护密钥导出请求的 Azure 信息保护支持案例**。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 收取标准支持费用；导出租户密钥并不是免费支持服务。
+- 请[与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)，以打开**带有 Azure 信息保护密钥导出请求的 Azure 信息保护支持案例**。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 收取标准支持费用；导出租户密钥并不是免费支持服务。
 
 ### <a name="step-2-wait-for-verification"></a>步骤 2：等待验证
 
@@ -61,7 +73,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
     ```
     这样可以生成 RSA 密钥对，并将公有部分和私有部分保存为当前文件夹中的文件。 例如：**PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** 和 **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**。
 
-    回复来自 CSS 的电子邮件，附加名称以 **PublicKey** 开头的文件。 CSS 随后将向你发送一个作为 .xml 文件的 TPD 文件，该文件使用你的 RSA 密钥进行加密。 将此文件复制到与你最初运行 AadrmTpd 工具时的相同文件夹，并使用以 **PrivateKey** 开头的文件和来自 CSS 的文件再次运行该工具。 例如：
+    回复来自 CSS 的电子邮件，附加名称以 **PublicKey** 开头的文件。 CSS 随后向你发送一个作为 .xml 文件的 TPD 文件，该文件使用你的 RSA 密钥进行加密。 将此文件复制到与你最初运行 AadrmTpd 工具时的相同文件夹，并使用以 **PrivateKey** 开头的文件和来自 CSS 的文件再次运行该工具。 例如：
 
     ```
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml
@@ -76,12 +88,12 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 ### <a name="step-4-ongoing-protect-your-tenant-key"></a>步骤 4：日常：保护你的租户密钥。
 
--   在收到你的租户密钥后，对其进行良好的保护，因为如果有人得到了它，他们将可以解密由该密钥保护的所有文档。
+在收到你的租户密钥后，对其进行良好的保护，因为如果有人得到了它，他们将可以解密由该密钥保护的所有文档。
 
-    如果导出租户密钥的原因是不再需要使用 Azure 信息保护，最佳做法是立即从 Azure 信息保护租户中停用 Azure Rights Management 服务。 不要拖延到收到租户密钥后再执行此操作，因为此预防措施可以帮助用户将不该得到租户密钥的人得到它后导致的后果降至最低。 相关说明请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](decommission-deactivate.md)。
+如果导出租户密钥的原因是不再需要使用 Azure 信息保护，最佳做法是立即从 Azure 信息保护租户中停用 Azure Rights Management 服务。 不要拖延到收到租户密钥后再执行此操作，因为此预防措施可以帮助用户将不该得到租户密钥的人得到它后导致的后果降至最低。 相关说明请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](decommission-deactivate.md)。
 
 ## <a name="respond-to-a-breach"></a>对违规行为做出响应
-如果没有违规响应流程，无论如何强大的安全系统都是不完整的。 你的租户密钥可能泄漏或失窃。 即便它得到了很好的保护，在当前这代的 HSM 技术或当前的密钥长度和算法方面也可以找到一些漏洞。
+如果没有违规响应流程，无论如何强大的安全系统都是不完整的。 你的租户密钥可能泄漏或失窃。 即便它得到了很好的保护，在当前这代密钥技术或当前的密钥长度和算法方面也可以找到一些漏洞。
 
 Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全事件。 当收到某个事件的可信报告时，该团队将参与调查事件的范围、根本原因和缓解办法。 如果该事件影响到资产，则 Microsoft 将使用在订阅时提供的地址，通过电子邮件通知 Azure 信息保护租户管理员。
 
