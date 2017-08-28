@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 2 阶段涉及从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9f04698064037343719d274e793eb560b703b031
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 22b43c2b149c7a7fd5ce79ca3ceef8100b9d5e7b
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -133,7 +133,9 @@ ms.lasthandoff: 07/31/2017
 
 - 如果在迁移前创建了 Azure 信息保护自定义模板，则必须手动导出并导入它们。
 
-- 如果 AD RMS 中的模板使用 **ANYONE** 组，则必须手动添加相应的组和权限。
+- 如果 AD RMS 中的模板使用 ANYONE 组，可能需要从组织外部添加用户或组。 
+    
+    在 AD RMS 中，ANYONE 组向所有经过身份验证的用户授予了权限。 此组将自动转换为 Azure AD 租户中的所有用户。 如果不需要向任何额外用户授予权限，则无需进一步操作。 但如果使用 ANYONE 组来包括外部用户，必须手动添加这些用户以及要向他们授予的权限。
 
 ### <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>在迁移前创建了自定义模板时需执行的过程
 
@@ -149,24 +151,18 @@ ms.lasthandoff: 07/31/2017
 
 ### <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>AD RMS 中的模板使用 **ANYONE** 组时需执行的过程
 
-如果 AD RMS 中的模板使用 **ANYONE** 组，则当你将这些模板导入 Azure 信息保护时，系统会自动删除该组；必须将相应的组或用户以及相同的权限手动添加到已导入的模板中。 Azure 信息保护的等效组名为 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com**。 例如，如果公司为 Contoso，则该组可能会如下所示：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。
+如果 AD RMS 中的模板使用 ANYONE 组，此组将自动转换为使用名为 AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com 的组。例如，如果公司为 Contoso，则该组可能会如下所示：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。此组包含 Azure AD 租户中的所有用户。
+
+如果在 Azure 门户中管理模板和标签，此组将显示为 Azure AD 中的租户域名。 例如，如果公司为 Contoso，此组可能类似于：contoso.onmicrosoft.com。要添加此组，选项将显示“添加 \<组织名称> - 所有成员”。
 
 如果不确定 AD RMS 模板是否包括 ANYONE 组，可使用以下 Windows PowerShell 示例脚本来标识这些模板。 有关将 Windows PowerShell 用于 AD RMS 的详细信息，请参阅[使用 Windows PowerShell 管理 AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)。
 
-你可以看到组织自动创建的组，前提是将某个默认权限策略模板复制到 Azure 经典门户中，然后确定“权限”页上的“用户名”。 但是，你不能使用经典门户将该组添加到已手动创建或导入的模板中，而是必须使用以下 Azure RMS PowerShell 选项之一：
+如果在 Azure 门户中将模板转换为标签，可以轻松将外部用户添加到这些模板。 然后，在“添加权限”边栏选项卡上，选择“输入详细信息”，手动为这些用户指定电子邮件地址。 
 
-- 使用 [New-AadrmRightsDefinition](/powershell/aadrm/vlatest/new-aadrmrightsdefinition) PowerShell cmdlet 将“AllStaff”组和权限定义为权限定义对象，然后除了 ANYONE 组外，还要再次对原始模板中已被授予权限的每个其他组或用户运行此命令。 然后，使用 [Set-AadrmTemplateProperty](/powershell/aadrm/vlatest/set-aadrmtemplateproperty) cmdlet 将所有这些权限定义对象添加到模板中。
-
-- 使用 [Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate) cmdlet 将模板导出到 .XML 文件中，可通过编辑该文件将“AllStaff”组和权限添加到现有组和权限中，然后使用 [Import-AadrmTemplate](/powershell/aadrm/vlatest/import-aadrmtemplate) cmdlet 将所做的更改导回到 Azure 信息保护中。
-
-> [!NOTE]
-> 这个相应的“AllStaff”组并非完全等同于 AD RMS 中的 ANYONE 组：“AllStaff”组包括你的 Azure 租户中的所有用户，而 ANYONE 组则包括所有经过身份验证的用户，这些用户可能不在你的组织中。
-> 
-> 由于这两个组存在这种差异，你可能还需要向“AllStaff”组添加外部用户。 目前不支持对组使用外部电子邮件地址。
-
+有关此配置的详细信息，请参阅[如何配置标签以进行 Rights Management 保护](../deploy-use/configure-policy-protection.md)。
 
 #### <a name="sample-windows-powershell-script-to-identify-ad-rms-templates-that-include-the-anyone-group"></a>示例 Windows PowerShell 脚本，用于识别包括 ANYONE 组的 AD RMS 模板
-本节包含示例脚本，用于帮助你确定定义有 ANYONE 组的 AD RMS 模板，如前一节所述。
+本节包含示例脚本，可帮助你确定任何定义了 ANYONE 组的 AD RMS 模板，如前一节所述。
 
 **免责声明：**此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
 

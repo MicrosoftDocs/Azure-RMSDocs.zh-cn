@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 5 阶段包括从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/07/2017
+ms.date: 08/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: aeffd9780001f4c91ea8600f11d8fc3b36abce73
-ms.sourcegitcommit: 238657f9450f18213c2b9fb453174df0ce1f1aef
+ms.openlocfilehash: 11775c64cbd5abd7c10a145a2d48f335db2d5b69
+ms.sourcegitcommit: 8251e4db274519a2eb8033d3135a22c27130bd30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
@@ -71,19 +71,27 @@ ms.lasthandoff: 08/07/2017
     在输出中，**授权**应显示 **False**，并且对于 **SecurityGroupOjbectId** 未显示任何 GUID
 
 ## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>步骤 12： 重新生成 Azure 信息保护租户密钥
-如果 AD RMS 部署使用的是 RMS 加密模式 1，则迁移完成后需要执行此步骤。 重新生成密钥将创建一个新租户密钥，该密钥使用 RMS 加密模式 2。 仅在迁移过程中，支持将加密模式 1 用于 Azure 信息保护。
 
-迁移完成后，重新生成密钥也有助于保护 Azure 信息保护租户密钥免受 AD RMS 密钥的潜在安全漏洞的影响。
+如果 AD RMS 部署使用 RMS 加密模式 1，则迁移完成后建议执行此步骤。 重新生成密钥将生成保护，该保护使用 RMS 加密模式 2。 
 
-重新生成 Azure 信息保护租户密钥（也称为“滚动密钥”）时，将创建新的密钥，并将原始密钥存档。 但是，将一个密钥更改为另一个密钥的操作不会立即完成，而是需要几周的时间。 由于不是立即完成，因此在迁移完成后，立即重新生成 Azure 信息保护租户密钥，而不要等到怀疑原始密钥受到破坏时才进行操作。
+虽然 AD RMS 部署使用加密模式 2，但仍建议执行此步骤，因为新密钥有助于保护租户避免 AD RMS 密钥的潜在安全漏洞。
+
+但是，如果将 Exchange Online 和 AD RMS 配合使用，请勿重新生成密钥。 Exchange Online 不支持更改加密模式。 
+
+重新生成 Azure 信息保护租户密钥（也称为“滚动密钥”）时，当前活动密钥将存档，Azure 信息保护开始使用指定的其他密钥。 这个其他密钥可以是你在 Azure Key Vault 中创建的新密钥，也可以是为租户自动创建的默认密钥。
+
+从一个密钥更改到另一个密钥的操作不会立即完成，而是需要几周的时间。 由于不是立即完成，因此在迁移完成后，请立即执行此步骤，而不要等到怀疑原始密钥受到破坏时才进行操作。
 
 重新生成 Azure 信息保护租户密钥：
 
-- 如果租户密钥由 Microsoft 管理：请联系 [Microsoft 支持部门](../get-started/information-support.md#to-contact-microsoft-support)，并打开带有从 AD RMS 迁移后重新生成 Azure 信息保护密钥请求的 Azure 信息保护支持案例。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 收取标准支持费用；重新生成租户密钥并不是免费支持服务。
+- 如果租户密钥由 Microsoft 托管：请运行 PowerShell cmdlet [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties)，然后为针对租户自动创建的密钥指定密钥标识符。 通过运行 [Get-AadrmKeys](/powershell/module/aadrm/get-aadrmkeys) cmdlet 可标识要指定的值。 为租户自动创建的密钥包含最早创建日期，因此可以使用以下命令对其进行标识：
+    
+        (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-- 如果租户密钥由你管理 (BYOK)：在 Azure Key Vault 中，重新生成用于 Azure 信息保护租户的密钥，然后再次运行 [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) cmdlet 以指定新密钥 URL。 
+- 如果租户密钥由你管理 (BYOK)：在 Azure Key Vault 中，为 Azure 信息保护租户重复密钥创建流程，然后再次运行 [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) cmdlet 以指定新密钥的 URI。 
 
 有关管理 Azure 信息保护租户密钥的详细信息，请参阅[针对 Azure Rights Management 租户密钥的操作](../deploy-use/operations-tenant-key.md)。
+
 
 ## <a name="next-steps"></a>后续步骤
 
