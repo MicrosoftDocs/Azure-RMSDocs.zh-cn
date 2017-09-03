@@ -4,7 +4,6 @@
 # [部署和使用该服务](activate-service.md)
 ## [激活服务](activate-service.md)
 ### [Office 365 管理中心](activate-office365.md)
-### [Azure 经典门户](activate-azure-classic.md)
 ### [Azure 门户](activate-azure.md)
 ## [配置应用程序](configure-applications.md)
 ### [Office 365](configure-office365.md)
