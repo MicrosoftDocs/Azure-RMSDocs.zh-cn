@@ -4,46 +4,57 @@ description: "快速试用 Azure 信息保护入门教程步骤 1 - 激活 Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: 1779eb6f2bcf31ce3515b58b6ed955208fafb237
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: ac28e18573ec1bd8f0a3f1e715a8c8e1b7c2854e
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="step-1-activate-the-rights-management-service"></a>步骤 1：激活权限管理服务
  
 >*适用于：Azure 信息保护*
 
 > [!NOTE]
->如果知道已为租户激活 Azure 权限管理服务，请直接转到[“下一步”](infoprotect-tutorial-step2.md)。 
->
->如果不确定是否已激活此服务，请使用此步骤中的说明进行检查。
+>即使已为租户激活了 Azure Rights Management 服务，仍请完成此步骤确认激活状态。 说明包括登录到 Azure 门户和创建 Azure 信息保护边栏选项卡的相关信息，以便为执行步骤 2 做好准备。 
 
 如果已激活 Azure 权限管理服务，则可以保护组织最敏感的文档和电子邮件，并在将这些文档与其他人共享时跟踪受保护文档的使用状况。 激活此服务的方式有多种，包括使用 Windows PowerShell，以及使用管理门户。
 
-在本教程中，将直接转到 Office 365 管理员管理门户中的“激活”页面。 但是，如果想要从 Office 365 管理门户导航到此页而不是直接转到此页，请参阅[激活 Azure 权限管理](../deploy-use/activate-service.md)中的完整说明。 如果你有权访问 Azure 门户，但无权访问 Office 365 管理员门户，也可以使用这些完整说明。
+对于本教程，我们将使用 Azure 门户，该门户也是为用户配置标签的位置。 
 
-## <a name="to-activate-the-rights-management-service"></a>激活 Rights Management 服务
+## <a name="to-activate-the-azure-rights-management-service"></a>激活 Azure Rights Management 服务
 
-1. 打开一个新的浏览器窗口并直接转到 Office 365 管理员的 [Rights Management 激活页](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx)。
+1. 以租户的全局管理员身份或安全管理员身份登录到 [Azure 门户](https://portal.azure.com)。
+
+2. 在中心菜单上，单击“新建”，然后从 **MARKETPLACE** 列表中选择“安全 + 标识”。 
     
-    如果系统提示登录，请使用 Office 365 的全局管理员帐户。
+3.  在“安全 + 标识”边栏选项卡上，从“特别推荐的应用”列表中选择“Azure 信息保护”。 然后，在“Azure 信息保护”边栏选项卡上，单击“创建”。
+    
+    此操作将创建“Azure 信息保护”边栏选项卡，以便下次登录到门户时，可以从中心的“更多服务”列表中选择该服务。 
+    
+    > [!TIP] 
+    > 选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览到该服务。
 
-2. 在“Rights Management”页上，单击“激活”。 如果此按钮显示“停用”，则已激活该服务，可以直接转到[“下一步”](infoprotect-tutorial-step2.md)。 
+4. 注意：首次连接到该服务时，系统将自动打开“快速入门”页上的信息。 你可以稍后返回到此信息。 在本教程中，选择“RMS 设置”。  
 
-    ![Azure 信息保护快速入门教程步骤 1 - 激活服务](../media/info-protect-activate.png)
+5. 现在，可查看是否已为租户激活 Azure Rights Management 服务。 
+    
+    - 如果服务已激活，会看到以下确认信息：
+        
+        ![Azure RMS 的 Azure 信息保护状态](../media/info-protect-azurerms-activated.png)
+        
+    - 如果服务未激活，会在状态信息中看到此反馈和激活选项：
+        
+        ![Azure RMS 的 Azure 信息保护状态](../media/info-protect-azurerms-deactivated.png)
 
-3. 提示“是否要激活权限管理 ?”时，请单击“激活”以确认。
+6. 如果服务未激活，请选择“激活”。 
 
-    你现在应该看到 **“权限管理已激活”** 以及停用选项（可能需要手动刷新该页）。
-
-    此时请勿单击 **“高级功能”**。 相反，你可以关闭此页面。
+    激活完成后，信息栏将显示“激活已成功完成”。
 
 这就是完成本教程第一步所要执行的所有操作。 可以转到步骤 2。
 

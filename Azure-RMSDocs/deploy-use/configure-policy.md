@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 88843833b87eb054f534a7c85e6a7c2e52797e9b
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 7f3b64e5e4b0dfbccf694a986a85f1c207580915
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="configuring-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -48,7 +48,7 @@ Azure 信息保护策略支持不同级别的订阅：
 
 2. 导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“更多服务”并在“筛选”框中开始键入**信息保护**。 在结果中选择“Azure 信息保护”。 
     
-    首次连接到服务时，“快速入门”页会自动打开。 要配置所有用户均可获取的策略，请单击“全局策略”以打开“策略: 全局”边栏选项卡。 此边栏选项卡自动打开，以便执行后续连接到服务的操作，方便你查看和编辑所有用户获取的全局策略。 
+    首次连接到该服务时，系统将自动打开“Azure 信息保护 - 快速入门”边栏选项卡。 要配置用于所有用户的策略，请从“策略”菜单选项中选择“全局策略”，打开“Azure 信息保护 - 全局策略”边栏选项卡。 此边栏选项卡自动打开，以便执行后续连接到服务的操作，方便你查看和编辑所有用户获取的全局策略。 
     
     Azure 信息保护策略包含以下可配置的元素：
     
@@ -70,7 +70,7 @@ Azure 信息保护附带[默认策略](configure-policy-default.md)，其中包�
 
 可以使用无更改的默认标签，或者你可以自定义它们，或删除它们，并可以创建新标签。 有关详细信息，请使用下一节中的链接来帮助你找到相关选项以及配置方法。 
 
-当在“Azure 信息保护”边栏选项卡上进行任何更改时，请单击“**保存**”以保存更改，或者单击“**放弃**”以返回到上一个保存的设置。 
+当在“Azure 信息保护”边栏选项卡上进行任何更改时，请单击“**保存**”以保存更改，或者单击“**放弃**”以返回到上一个保存的设置。
 
 在完成所需更改后，单击“**发布**”。 
 

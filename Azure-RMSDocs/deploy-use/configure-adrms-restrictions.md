@@ -4,17 +4,17 @@ description: "如果选择具有 Azure 信息保护的 HYOK (AD RMS) 保护，�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 4730c2e27a78ec8bf106f43b3ac7097a40e0555d
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: 80e7cb411132fa3c3fdff7f8c80febde68b071fa
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 保护的自留密钥 (HYOK) 要求和限制
 
@@ -61,13 +61,17 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 - 不支持 Office 2010 或 Office 2007。
 
-- 配置 Azure RMS 保护的标签时，请勿使用“不要转发”选项。 还必须指示用户不要在 Outlook 中手动选择此选项。 
+- 指示用户不要在 Outlook 中选择“不转发”，或提供具体指导。 
 
-    如果由标签或由用户手动应用了“不要转发”选项，则可能由 AD RMS 部署（而不是预期的 Azure 权限管理服务）应用该选项。 在此方案中，外部共享对象无法打开已应用此“不要转发”选项的电子邮件。
+    虽然可以为“不转发”配置标签以使用 HYOK 或 Azure Rights Management 服务，但用户也可自行选择“不转发”。 可使用 Office 功能区“邮件”选项卡上的“不转发”按钮或使用 Outlook 菜单选项来选择此选项。 “不转发”菜单选项位于“文件” > “权限”中，此外也可通过功能区上“选项”选项卡中的“权限”按钮进行选择。 
     
-    自 1.9.58.0 版 Azure 信息保护客户端（当前处于预览阶段）起，Outlook 中的“不转发”按钮始终使用 Azure RMS。 此设置既不会影响 Outlook“不转发”菜单选项，也不会影响配置保护标签时使用的“不转发”选项。 如果不需要此行为，可以配置[高级客户端设置](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)，从而在 Outlook 中隐藏“不转发”按钮。
+    用户选择“不转发”按钮后，即可使用 Azure RMS 或 AD RMS，该选择不是确定性选择。 若用户从 Outlook 菜单选项选择“不转发”，则他们可以选择 Azure RMS 或 AD RMS，但可能不知道应为电子邮件选择哪一个选项。 对于这两种方案，如果在应使用 Azure RMS 的情况下使用了 AD RMS，则与其进行外部共享的人员无法打开这些电子邮件。
+    
+    用户在 Outlook 中选择“不转发”按钮时，Azure 信息保护客户端的当前预览版本始终使用 Azure RMS。 如果不需要此行为，可以配置[高级客户端设置](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)，从而在 Outlook 中隐藏“不转发”按钮。 
 
-- 如果用户在你使用 AD RMS (HYOK) 保护和 Azure RMS 保护时配置自定义权限，则文档或电子邮件始终受 Azure 权限管理保护。
+- 对于 Azure 信息保护客户端的当前通用版本：如果用户在你使用 AD RMS (HYOK) 保护和 Azure RMS 保护时配置自定义权限，则文档或电子邮件始终受 Azure Rights Management 保护。 此限制不适用于客户端的当前预览版本。
+
+- 如果为 Word、Excel、PowerPoint 和文件资源管理器（受 Azure 信息保护客户端当前预览版本支持）配置用户定义的权限：在“文件资源管理器”中，始终通过使用 Azure RMS 而不是 HYOK (AD RMS) 进行保护。 
 
 - 如果用户选择了应用 AD RMS 保护的 Outlook 中的标签，然后在发送电子邮件之前改变了主意，并选择了应用 Azure RMS 保护的标签，则无法应用新选择的标签。 用户将看到以下错误消息：**Azure 信息保护无法应用此标签。你无权执行此操作。**
     
@@ -107,9 +111,11 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 ## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>查找相关信息以使用 Azure 信息保护标签指定 AD RMS 保护
 
-在配置用于 **HYOK (AD RMS)** 保护的标签时，必须指定 AD RMS 群集的模板 GUID 和授权 URL。 你可以从 Active Directory Rights Management Services 控制台中找到这两个值：
+配置用于 HYOK (AD RMS) 保护的标签时，必须指定 AD RMS 群集的授权 URL。 此外，必须指定已为要授予用户的权限配置的模板，或者让用户定义权限和用户。 
 
-- 若要找到模板 GUID：请展开该群集，并单击“权限策略模板”。 随后，从“分布式权限策略模板”信息中，可以复制要使用的模板中的 GUID。 例如：82bf3474-6efe-4fa1-8827-d1bd93339119
+可以从 Active Directory Rights Management Services 控制台中找到模板 GUID 和授权 URL 的值：
+
+- 要找到模板 GUID：请展开该群集，并单击“权限策略模板”。 随后，从“分布式权限策略模板”信息中，可以复制要使用的模板中的 GUID。 例如：82bf3474-6efe-4fa1-8827-d1bd93339119
 
 - 若要查找授权 URL：请单击群集名称。 从“群集详细信息”信息中，复制除 **/_wmcs/licensing** 字符串以外的“授权”值。 例如：https://rmscluster.contoso.com 
     

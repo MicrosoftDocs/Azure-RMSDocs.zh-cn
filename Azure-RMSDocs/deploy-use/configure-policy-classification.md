@@ -4,17 +4,17 @@ description: "在配置标签的条件时，可以自动将标签分配到文档
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 3aad6eb4956b6565e44c4b1019c984a28cb41fdc
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: ef84f3ceb8f732dd475b4db8eae489e715d4b7da
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 08/11/2017
  
 - 保存文件时，将建议的分类应用于 Word、Excel 和 PowerPoint。
 
-配置条件时，可以使用预定义的模式，如“信用卡号”或“美国身份证号”。 或者，你可以定义自定义字符串或模式作为自动分类的条件。 这些条件适用于文档和电子邮件中的正文文本和页眉及页脚。 有关条件的详细信息，请参阅 [内置条件的相关信息](#information-about-the-built-in-conditions)(#内置条件的相关信息) 部分。
+配置条件时，可以使用预定义的模式，如“信用卡号”或“美国社会安全号码 (SSN)”。 或者，你可以定义自定义字符串或模式作为自动分类的条件。 这些条件适用于文档和电子邮件中的正文文本和页眉及页脚。 有关条件的详细信息，请参阅[信息类型详细信息](#details-about-the-information-types)部分。
 
 它们应用于多个标签时，将如何计算多个条件：
 
@@ -47,37 +47,42 @@ ms.lasthandoff: 08/11/2017
 
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>配置标签的建议或自动分类
 
-1. 如果尚未执行此操作，请在新的浏览器窗口中以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”边栏选项卡。 
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 如果将为自动或推荐分类配置的标签应用于所有用户，请从“策略: 全局”边栏选项卡中选择要更改的标签，然后在“标签”边栏选项卡和之后的任何所需边栏选项卡上进行更改。 
+2. 如果要配置的标签将应用于所有用户，请选择“Azure 信息保护 - 全局策略”边栏选项卡。
+    
+    如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，仅应用于所选用户，请从“策略”菜单选项中选择“作用域内策略”。 然后从“Azure 信息保护 - 作用域内策略”边栏选项卡选择作用域内策略。
 
-     如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，以便仅应用于所选用户，请首先从初始的“Azure 信息保护”边栏选项卡中选择作用域内策略。  
+3. 从“Azure 信息保护 - 全局策略”边栏选项卡或“策略: \<名称>”边栏选项卡中，选择要配置的标签。 
 
-3. 在“**标签**”边栏选项卡上的“**配置条件以自动应用该标签**”部分中，单击“**添加新的条件**”。
+4. 在“**标签**”边栏选项卡上的“**配置条件以自动应用该标签**”部分中，单击“**添加新的条件**”。
 
-4. 在“**条件**”边栏选项卡上，选择“**内置**”（如果想要使用预定义的条件），或“**自定义**”（如果想要指定自己的条件），然后单击“**保存**”：
-
-    - 对于“内置”：从可用条件列表中选择，然后选择发生的最小数目以及发生计数中是否应具有唯一的值。
+5. 在“条件”边栏选项卡上，选择“信息类型”（如果要使用预定义的条件）或“自定义”（如果要指定自己的条件），然后单击“保存”：
+    - 对于“信息类型”：从可用条件列表中选择，然后选择最小出现次数以及出现计数中是否应具有唯一的值。
         
-        有关这些条件的检测规则和一些示例的详细信息，请参阅 [内置条件的相关信息](#information-about-the-built-in-conditions)(#内置条件的相关信息) 部分。
-
+        要使用完整的条件列表，必须使用 Azure 信息保护客户端的当前预览版本。 如果具有客户端的当前通用版本，则仅支持以下五个条件：SWIFT 代码、信用卡号、ABA 银行代号、美国社会安全号码 (SSN) 和国际银行帐号 (IBAN)。 [详细信息](#details-about-the-information-types)
+    
     - 对于“**自定义**”：指定匹配的名称和短语，其必须排除引号和特殊字符。 然后指定是否匹配正则表达式，区分大小写，发生的最小数目以及发生计数中是否应具有唯一的值。
         
-    **发生计数选项示例**：选择内置身份证号选项并将最小计数设置为 2，并且文档已列出两次同一身份证号码：如果设置“**仅计算唯一值的发生次数**”为“**打开**”，将不符合条件；如果此选项设置为“**关闭**”，将满足条件。
+        如果具有 Azure 信息保护客户端的当前预览版本，则正则表达式使用 Office 365 正则表达式模式。 有关详细信息，请参阅 Office 文档中的[基于匹配定义正则表达式](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2)。 
+        
+    出现计数选项示例：选择内置社会安全号码选项并将最小出现次数设置为 2，并且文档已两次列出同一社会安全号码：如果将“仅计算包含唯一值的出现次数”设置为“开”，则不符合条件。 如果将此选项设置为“关闭”，则满足条件。
 
-5. 在“**标签**”边栏选项卡上，配置以下内容，然后单击“**保存**”：
-
+6. 在“**标签**”边栏选项卡上，配置以下内容，然后单击“**保存**”：
+    
     - 选择自动或建议的分类：对于**选择如何应用该标签：自动或向用户建议**，选择“**自动**”或“**建议**”。
-
+    
     - 指定用户提示或策略提示文本：保持默认文本或指定你自己的字符串。
 
-6. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
+7. 若要使所做的更改适用于用户，请在初始“Azure 信息保护”边栏选项卡，单击“发布”。
 
-## <a name="information-about-the-built-in-conditions"></a>有关内置条件的信息
+## <a name="details-about-the-information-types"></a>信息类型详细信息
 
-你可以选择以下条件：
+如果具有 Azure 信息保护客户端的当前预览版本，则支持完整的信息类型列表，并使用 Office 365 数据丢失防护 (DLP) 敏感信息类型和模式检测。 可以从多种常见敏感信息类型中进行选择，其中某些类型特定于不同的区域。 有关详细信息，请参阅 Office 文档中的 [What the sensitive information types look for](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)（敏感信息类型查找的内容）。 Azure 信息保护评估这些信息类型时，不使用 Office DLP 置信度设置，而是根据最低置信度进行匹配。  
+
+如果具有客户端的当前通用版本，则仅支持以下信息类型：
 
 - [SWIFT 代码](#swift-code )
 
@@ -89,6 +94,7 @@ ms.lasthandoff: 08/11/2017
 
 - [国际银行帐号 (IBAN)](#international-banking-account-number-iban)
 
+有关客户端通用版本每种信息类型的详细信息，请参阅以下部分。
 
 ### <a name="swift-code"></a>SWIFT 代码
 

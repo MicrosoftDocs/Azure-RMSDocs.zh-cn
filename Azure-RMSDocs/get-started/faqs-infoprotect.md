@@ -4,7 +4,7 @@ description: "使用 Azure 信息保护进行分类和设置标签时遇到问�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/12/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 80efd633bc814af1ac28e4b6bf2d0b3062b27d01
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 2ac8211b338b9d35bb7962455a117d02f9c1fa32
+ms.sourcegitcommit: 4b7f025e9f78d25c6f3079cceb42bc33f3f3a612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -30,19 +30,15 @@ ms.lasthandoff: 06/30/2017
 
 有关其他分类特性和功能何时可用的信息，请留意[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)和 [Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)上的公告。 当前版本具有一些限制，包括以下内容：
 
-- 标签名称和工具提示仅支持一种语言。 但是，多语言支持现为预览版。 有关详细信息，请参阅[如何为不同的语言配置标签](../deploy-use/configure-policy-languages.md)。
+- 标签名称和工具提示仅支持一种语言。 但是，多语言支持现为预览版。 有关详细信息，请参阅[如何配置不同语言的标签和模板](../deploy-use/configure-policy-languages.md)。
 
 - 对于分类和标签没有任何集中式日志记录。
 
-- 自动分类的条件必须是短语或模式。
-
-- 适用于移动设备（iOS 和 Android）和 Mac 计算机的 Office 应用或 Office Web 应用（Office Online）不具有标签功能。
+- 适用于移动设备（iOS 和 Android）和 Mac 计算机的 Office 应用或 Office Web 应用 (Office Online) 不具有标签功能。
 
 - 没有分类或标签与 Exchange Online 或 SharePoint Online 集成。
 
-- 用于合作伙伴和开发人员的 SDK 尚不包括分类和标签。
-
-2 月发布的版本将删除很多之前的限制。 有关详细信息，请参阅[博客文章通告](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/08/azure-information-protection-december-update-moves-to-general-availability/)。
+通过访问 Azure 信息保护的 [User Voice 站点](https://msip.uservoice.com/)，请求新功能并对请求进行投票。
 
 ## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>是否需要是全局管理员才能配置分类和标签？
 

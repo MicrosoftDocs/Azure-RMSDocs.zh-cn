@@ -4,7 +4,7 @@ description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6077b9eba8ee04bf22c17612183f3d41b6b71e35
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 3a4a84356d59692dd3693b4bbaa00a3e39c95597
+ms.sourcegitcommit: adeab31c7aa99eab115dd12035fc5d9dffec4e9c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/29/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -220,7 +220,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
     Set-RMSServerAuthentication -Key zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=-AppPrincipalId b5e3f76a-b5c2-4c96-a594-a0807f65bba4-BposTenantId 23976bc6-dcd4-4173-9d96-dad1f48efd42
 
-如上一个命令所示，可以使用单个命令提供值，也可以键入 Set-RMSServerAuthentication，并在出现提示时逐个提供值。 命令完成后，将看到“**RmsServerAuthentication 已设置为启用**”，这意味着客户端现在以“服务器模式”运行。 此消息不能确认通过使用你提供的值成功完成身份验证，但可以确认已成功切换到服务器模式。
+如上一命令所示，可以使用单个命令提供多个值，将在以非交互方式运行的脚本中执行此操作。 但是出于测试目的，可以仅键入 Set-RMSServerAuthentication，并根据提示逐个提供值。 命令完成后，客户端现以“服务器模式”运行，这适用于脚本和 Windows Server 文件分类基础结构等非交互式使用。
 
 考虑使此服务主体成为超级用户：要确保此服务主体始终可以取消保护其他人的文件，可以将其配置为超级用户。 通过与将标准用户帐户配置为超级用户相同的方式，使用相同的 Azure RMS cmdlet ([Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md))，但使用 AppPrincipalId 值指定“ServicePrincipalId”参数。
 
