@@ -4,7 +4,7 @@ description: "有关自定义适用于 Windows 的 Azure 信息保护客户端�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 28b4e89cd6300c9b206abdf45f5d580b4474eaa5
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 9e7e5e67b664d177f60a445aa54df3f6072ff9c7
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的自定义配置
 
@@ -134,6 +134,9 @@ ms.lasthandoff: 07/31/2017
 ## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>让用户无法使用“自定义权限”选项
 
 此配置选项目前处于预览状态。
+
+> [!IMPORTANT]
+> 如果具有为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置的标签，则请勿使用此选项。 如果使用此选项，应用标签时，系统不会提示用户配置自定义权限。 结果是：标记文档，但并未按预期保护文档。
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 

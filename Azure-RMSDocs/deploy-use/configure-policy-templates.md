@@ -1,10 +1,10 @@
 ---
-title: "配置并管理 Azure 信息保护策略中的模板"
-description: "目前在预览版中，可以通过 Azure 信息保护策略配置和管理权限管理模板。"
+title: "配置和管理 Azure 信息保护的模板"
+description: "通过 Azure 门户配置和管理 Rights Management 模板。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: dc39a52ca09ec7818b70a5bac320024bdc4de657
-ms.sourcegitcommit: 4186c8fadea7bcd32cce7d468916374a9cdf151b
+ms.openlocfilehash: 5075c8cbab441a376595baabd7863005b15b84e3
+ms.sourcegitcommit: 5bcb916106021f624a69d620bbcc2c4a51398771
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
@@ -40,33 +40,40 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 ## <a name="default-templates"></a>默认模板
 
-当你获得 Azure 信息保护订阅或包含 Azure 权限管理服务的 Office 365 订阅时，将为你的租户自动创建两个默认模板，这些模板限制对你组织中授权用户的访问。 这两个模板具有以下限制： 
+当你获得 Azure 信息保护订阅或包含 Azure 权限管理服务的 Office 365 订阅时，将为你的租户自动创建两个默认模板，这些模板限制对你组织中授权用户的访问。 这两个模板创建完成后，它们具有以下限制： 
 
 - 受保护内容的读取或修改权限
     
-    特定权限：查看内容、保存文件、编辑内容、查看分配的权限、允许宏、转发、答复、全部答复
+    - 特定权限：查看内容、保存文件、编辑内容、查看分配的权限、允许宏、转发、答复、全部答复
 
 - 受保护内容的只读查看
     
     - 特定权限：查看内容
 
-通过这些模板，你和其他人可立即轻松开始保护你组织的敏感数据。 这些模板可与 Azure 信息保护标签一起使用，或通过可使用 Rights Management 模板的[应用程序和服务](../understand-explore/applications-support.md)独立使用。
+此外，模板配置为允许为期七天的脱机访问，没有到期日期。
+
+>[!NOTE]
+> 可以更改这些设置以及默认模板的名称和说明。 Azure 经典门户曾无法使用此功能，且PowerShell 仍不支持该功能。
+
+通过这些默认模板，你和其他人可立即轻松开始保护组织的敏感数据。 这些模板可与 Azure 信息保护标签一起使用，或通过可使用 Rights Management 模板的[应用程序和服务](../understand-explore/applications-support.md)独立使用。
 
 你还可以创建自已的自定义模板。 尽管可能只需要几个模板，但在 Azure 中可最多保存 500 个自定义模板。
 
 ### <a name="default-template-names"></a>默认模板名称
 
-如果你最近获得了 Azure 信息保护的订阅，则默认模板名称如下所示：
+如果最近获得了 Azure 信息保护的订阅，则使用以下名称创建默认模板：
 
 - 机密\所有员工，具有受保护内容的读取或修改权限。
 
 - 高度机密\所有员工，具有受保护内容的只读查看权限。
 
-如果在一段时间以前获得了 Azure 信息保护订阅，或者如果没有 Azure 信息保护订阅，但具有包含 Azure 权限管理的 Office 365 订阅，则默认模板的名称如下所示：
+如果在一段时间以前获得了 Azure 信息保护订阅，或者如果没有 Azure 信息保护订阅，但具有包含 Azure Rights Management 的 Office 365 订阅，则将使用以下名称创建默认模板：
 
 - \<组织名称> - 机密，具有受保护内容的读取或修改权限。
 
 - \<组织名称> - 仅机密查看，具有受保护内容的只读查看权限。 
+
+可以在使用 Azure 门户时重命名（和重新配置）这些默认模板。
 
 >[!NOTE]
 >如果没有在“Azure 信息保护 - 全局策略”边栏选项卡中看到默认模板，则这些模板已转换为标签或链接到标签。 它们仍作为模板存在，但在 Azure 门户中，你会看到它们属于包含 Azure RMS 保护的标签配置。 可以始终通过从 [AADRM PowerShell 模块](administer-powershell.md)运行 [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) 来确认租户具有哪些模板。
@@ -96,21 +103,21 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
     
     此外，目前无法设置部门模板的应用程序兼容性设置。 如有必要，可以使用 PowerShell 的 [Set-aadrmtemplateproperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 进行设置。
 
-- 目前，使用 Azure 经典门户或 PowerShell 为多种语言配置的模板不会显示这些语言的名称和说明，但会保留这些信息。
-
-- 将模板转换为标签或将模板链接到标签后，其他标签不能再使用该模板。
+- 将模板转换为标签或将模板链接到标签后，其他标签不能再使用该模板。 此外，此模板不再显示在“模板”部分中。
 
 - 不会从“模板”容器创建新模板。 而是创建一个具有“保护”设置的标签，并从“保护”边栏选项卡配置使用权限和设置。 有关完整说明，请参阅[创建新模板](#to-create-a-new-template)。
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>在 Azure 信息保护策略中配置模板
 
-1. 在新浏览器窗口中，以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”边栏选项卡。 
+    
+    例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“更多服务”并在“筛选”框中开始键入**信息保护**。 在结果中选择“Azure 信息保护”。 
+2. 如果要配置的模板将用于所有用户，请选择“Azure 信息保护 - 全局策略”边栏选项卡。
+    
+    如果要配置的模板位于[作用域内策略](configure-policy-scope.md)中，仅应用于所选用户，请从“策略”菜单选项中选择“作用域内策略”。 然后从“Azure 信息保护 - 作用域内策略”边栏选项卡选择作用域内策略。
 
-2. 如果要配置的模板将应用于所有用户，请选择“Azure 信息保护”边栏选项卡中的“全局”。 不过，如果要配置的模板包含在[作用域内策略](configure-policy-scope.md)中，以便仅应用于选定用户，请改为选择作用域内策略。
-
-3. 在策略边栏选项卡上，找到想要配置的模板：
+3. 从“Azure 信息保护 - 全局策略”边栏选项卡或“策略: \<名称>”边栏选项卡中，找到要配置的模板：
     
     - 如果订阅包含分类、设置标签和保护：在设置标签后展开模板。
     
@@ -122,7 +129,10 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
     
     单击“确定”保留所做更改，然后在“标签”边栏选项卡上单击“保存”。
 
-6. 若要使所做的更改适用于用户应用程序和服务，在“Azure 信息保护”边栏选项卡上单击“发布”。
+6. 要使用户应用程序和服务可以使用你所做的更改，请在初始“Azure 信息保护”边栏选项卡上单击“发布”。
+
+> [!NOTE]
+> 如果已将某个标签配置为使用预定义模板，则也可以使用“保护”边栏选项卡上的“编辑模板”按钮来编辑模板。 假如没有其它标签也同样使用选定的这一个模板，此按钮将模板转换为标签，并转到步骤 5。 若要深入了解将模板转换为标签时会发生什么情况，请参阅下一节。
 
 ## <a name="to-convert-templates-to-labels"></a>将模板转换为标签
 
@@ -132,7 +142,9 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 不要求将所有模板都转换为标签，但当你执行此操作时，保护设置会与标签的完整功能完全集成，这样你就不必单独维护设置。
 
-若要将模板转换为标签，右键单击相应模板，然后选择“转换为标签”。 或者使用上下文菜单选择此选项。
+若要将模板转换为标签，右键单击相应模板，然后选择“转换为标签”。 或者使用上下文菜单选择此选项。 
+
+使用“编辑模板”按钮还可在配置保护标签和预定义模板时将模板转换为标签。 
 
 将模板转换为标签时：
 
@@ -148,21 +160,23 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 创建一个具有 Azure RMS 保护设置的新标签时，它会在后台创建一个新的自定义模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。
 
-1. 如果要将创建的新模板应用于所有用户，请在“策略: 全局”边栏选项卡上单击“添加新标签”。
+1. 如果新模板面向所有用户，请选择“Azure 信息保护 - 全局策略”边栏选项卡。
     
-     如果要创建的新模板是部门模板，并且要使其仅适用于所选用户，请首先从初始“Azure 信息保护”边栏选项卡中选择或创建作用域内策略。
+     如果新模板为部门模板，以便仅应用于所选用户，请从“策略”菜单选项中选择“作用域内策略”。 然后从“Azure 信息保护 - 作用域内策略”边栏选项卡创建或选择[作用域内策略](configure-policy-scope.md)。
 
-2. 在“标签”边栏选项卡上，保留默认值“已启用: 打开”以发布此新模板，或将此设置更改为“关闭”，创建该模板作为已存档模板。 然后输入标签名称和说明用作模板名称和说明。
+2. 从“Azure 信息保护 - 全局策略”边栏选项卡或“策略: \<名称>”边栏选项卡中，单击“添加新标签”。
 
-3. 对于“设置包含此标签的文档和电子邮件的权限”，选择“保护”，然后选择“保护”：
+3. 在“标签”边栏选项卡上，保留默认值“已启用: 打开”以发布此新模板，或将此设置更改为“关闭”，创建该模板作为已存档模板。 然后输入标签名称和说明用作模板名称和说明。
+
+4. 对于“设置包含此标签的文档和电子邮件的权限”，选择“保护”，然后选择“保护”：
     
-     ![为 Azure 信息保护标签配置保护权限](../media/info-protect-protection-bar.png)
+     ![为 Azure 信息保护标签配置保护权限](../media/info-protect-protection-bar-configured.png)
 
-4. 在“保护”边栏选项卡上，可以更改权限、内容有效期限和脱机访问设置。 有关配置这些保护设置的详细信息，请参阅[如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)
+5. 在“保护”边栏选项卡上，可以更改权限、内容有效期限和脱机访问设置。 有关配置这些保护设置的详细信息，请参阅[如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)
     
     单击“确定”保留所做更改，然后在“标签”边栏选项卡上单击“保存”。
 
-5. 若要使这些模板适用于用户应用程序和服务，在“Azure 信息保护”边栏选项卡上单击“发布”。
+6. 要使用户应用程序和服务可以使用这些模板，请在初始“Azure 信息保护”边栏选项卡上单击“发布”。
 
 
 ## <a name="next-steps"></a>后续步骤

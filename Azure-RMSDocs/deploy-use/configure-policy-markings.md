@@ -4,17 +4,17 @@ description: "当文档或电子邮件中分配一个标签时，可以选择几
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/16/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: a65299651abd97adb0fc7641be2f2f3c6f1d8d2f
-ms.sourcegitcommit: adb38b008656ac706920a8488fd2beafedadbc97
+ms.openlocfilehash: 09e8bfdc9bae9979db6e6bc39457bdcdcf6dabca
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -35,6 +35,8 @@ ms.lasthandoff: 08/16/2017
     - 当使用 Azure 信息保护客户端的当前预览版本时，可支持多行文本。
 
 - 你可以简单地指定文本字符串，也可以使用[变量](#using-variables-in-the-text-string)在应用页眉、页脚或水印时动态创建文本字符串。
+
+- 视觉标记仅支持一种语言。
 
 ## <a name="when-visual-markings-are-applied"></a>应用视觉标记的情况
 
@@ -58,13 +60,13 @@ ms.lasthandoff: 08/16/2017
 
 请按照以下说明来配置标签的可视标记。
 
-1. 如果尚未执行此操作，请在新的浏览器窗口中以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。
-
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”边栏选项卡。 
+    
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 如果为视觉标记配置的标签将应用于所有用户，请从“策略: 全局”边栏选项卡中选择要更改的标签。
-
-     如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，以便仅应用于所选用户，请首先从初始的“Azure 信息保护”边栏选项卡中选择作用域内策略。
+2. 如果要配置的标签将应用于所有用户，请选择“Azure 信息保护 - 全局策略”边栏选项卡。
+    
+    如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，仅应用于所选用户，请从“策略”菜单选项中选择“作用域内策略”。 然后从“Azure 信息保护 - 作用域内策略”边栏选项卡选择作用域内策略。
 
 3. 在“**标签**”边栏选项卡的“**设置可视标记（如页眉或页脚）**”部分中，配置所需可视标记的设置，然后单击设置“**保存**”：
 

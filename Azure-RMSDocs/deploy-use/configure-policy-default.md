@@ -4,17 +4,17 @@ description: "了解如何配置 Azure 信息保护的默认策略。 如果修�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 51b5f7d332a86c16ceb6928ea99039812dd54802
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 712d273e735d2c9fc791a1f15c3f8dc9e917a1c3
+ms.sourcegitcommit: 5bcb916106021f624a69d620bbcc2c4a51398771
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
@@ -44,6 +44,8 @@ ms.lasthandoff: 07/31/2017
 
 将保护应用于“所有员工”子标签时，将通过在 Azure 门户中自动转换为标签的默认模板来配置该保护。 有关这些模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
+自 2017 年 8 月 30 日起，此版默认策略包括标签名称和说明的翻译版本。 
+
 #### <a name="more-information-about-the-recipients-only-sub-label"></a>有关“仅收件人”子标签的详细信息
 
 用户仅在 Outlook 中看到此标签。 他们不会在 Word、Excel、PowerPoint 或文件资源管理器中看到此标签。 
@@ -68,16 +70,16 @@ ms.lasthandoff: 07/31/2017
 |-------------------------------|---------------------------|-----------------|
 |机密\所有员工|需保护的机密数据，所有员工具有完全权限。 数据所有者可跟踪和撤消内容。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为机密<br /><br />**条件**：无<br /><br />保护：Azure RMS [[1]](#footnote-1)|
 |机密\任何人（不受保护）|无需保护的数据。 使用此选项时需谨慎，并具有选择此选项的合理业务理由。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为机密 <br /><br />**条件**：无<br /><br />**保护**：无|
-|机密\仅收件人|需要保护且仅收件人可以查看的机密数据。|**已启用**：打开 <br /><br />视觉标记：页脚（电子邮件）<br /><br />归类为机密 <br /><br />**条件**：无<br /><br />保护：不要转发|
+|机密\仅收件人|需要保护且仅收件人可以查看的机密数据。|**已启用**：打开 <br /><br />视觉标记：页脚（电子邮件）<br /><br />归类为机密 <br /><br />**条件**：无<br /><br />“保护”：设置用户定义的权限（预览版），在 Outlook 中应用“不转发”|
 |高度机密\所有员工|高度机密数据，所有员工具有查看、编辑和回复此内容的权限。 数据所有者可跟踪和撤消内容。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为高度机密<br /><br />**条件**：无<br /><br />保护：Azure RMS [[2]](#footnote-2)|
 |高度机密\任何人（不受保护）|无需保护的数据。 使用此选项时需谨慎，并具有选择此选项的合理业务理由。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为高度机密<br /><br />**条件**：无<br /><br />**保护**：无|
-|高度机密\仅收件人|需要保护且仅收件人可以查看的高度机密数据。|**已启用**：打开 <br /><br />视觉标记：页脚（电子邮件）<br /><br />归类为高度机密 <br /><br />**条件**：无<br /><br />保护：不要转发|
+|高度机密\仅收件人|需要保护且仅收件人可以查看的高度机密数据。|**已启用**：打开 <br /><br />视觉标记：页脚（电子邮件）<br /><br />归类为高度机密 <br /><br />**条件**：无<br /><br />“保护”：设置用户定义的权限（预览版），在 Outlook 中应用“不转发”|
 
 ###### <a name="footnote-1"></a>脚注 1
-保护设置使用默认模板，**机密\所有员工**。
+保护权限与[默认模板](configure-policy-templates.md#default-templates)“机密\所有员工”中的保护权限相匹配。
 
 ###### <a name="footnote-2"></a>脚注 2 
-保护设置使用默认模板，**高度机密\所有员工**。
+保护权限与[默认模板](configure-policy-templates.md#default-templates)“高度机密\所有员工”中的保护权限相匹配。
 
 
 ### <a name="information-protection-bar"></a>信息保护栏

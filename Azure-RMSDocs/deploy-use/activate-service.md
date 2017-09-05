@@ -4,7 +4,7 @@ description: "必须先激活 Azure Rights Management 服务，然后组织才�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f6d13d05c7139635c9a43770e418c1d7e11f880e
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 6aa009795e45281df1c9406357f810b8d25302bc
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="activating-azure-rights-management"></a>激活 Azure Rights Management
 
@@ -42,11 +42,9 @@ ms.lasthandoff: 07/31/2017
 
 激活 Azure Rights Management 服务时，你的组织中的所有用户将可以对其文件应用信息保护，并且所有用户均可打开（使用）受 Azure Rights Management 服务保护的文件。 但是，如果你愿意，可以通过对分阶段部署使用加入控制来限制哪些人员可以应用信息保护。 有关详细信息，请参阅本文中的 [为分阶段部署配置加入控制](#configuring-onboarding-controls-for-a-phased-deployment) 部分。
 
-有关如何从管理门户激活 Rights Management 服务的说明，请选择是使用 Office 365 管理中心、Azure 经典门户，还是 Azure 门户（最后一种方法目前处于预览状态）：
+有关如何从管理门户激活 Rights Management 服务的说明，请选择是使用 Office 365 管理中心还是 Azure 门户：
 
 - [Office 365 管理中心](activate-office365.md) - 需要全局管理员帐户
-
-- [Azure 经典门户](activate-azure-classic.md) - 需要全局管理员帐户
 
 - [Azure 门户](activate-azure.md) - 需要全局管理员帐户或[安全管理员帐户](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)
 

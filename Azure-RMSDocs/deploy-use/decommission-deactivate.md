@@ -4,7 +4,7 @@ description: "如果你决定不再想要使用 Azure 信息保护中的此信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 277630708fb1d88d59b418146d0e42615ebf495c
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: bebc3bf5593c2e8d166645b6cc18ad02d739d9ba
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="decommissioning-and-deactivating-azure-rights-management"></a>解除 Azure Rights Management 授权和停用 Azure Rights Management
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 07/31/2017
 
 可以通过使用 Azure 信息保护中的 Azure 权限管理服务，始终控制你组织是否保护内容。 如果你确定不再想要使用此信息保护服务，我们可以保证你仍可以访问以前保护的内容。
 
-如果你不需要继续访问之前受保护的内容，仅需停用该服务，让 Azure 信息保护订阅过期即可。 例如，这适用于完成测试 Azure 信息保护后再在生产环境中部署它的情况。
+如果不需要继续访问之前受保护的内容，请停用该服务，让 Azure 信息保护订阅过期。 例如，这适用于完成测试 Azure 信息保护后再在生产环境中部署它的情况。
 
 但是，如果已在生产中部署 Azure 信息保护并保护文档和电子邮件，请确保在停用 Azure 权限管理服务前，拥有 Azure 信息保护租户密钥的副本。 请确保在订阅过期前拥有密钥副本，以确保在停用服务后，可以保留对由 Azure 权限管理保护的内容的访问权限。 如果你使用了可以在 HSM 中生成和管理自己的密钥的自带密钥 (BYOK) 解决方案，则你已经具有 Azure 信息保护租户密钥。 但如果该密钥由 Microsoft 管理（默认），请参阅 [Azure Rights Management 租户密钥的操作](operations-tenant-key.md)文章中有关导出租户密钥的说明。
 
@@ -67,29 +67,15 @@ ms.lasthandoff: 07/31/2017
 
 现在，你应该会看到“Rights Management 未激活”  和用于激活的选项。
 
-#### <a name="to-deactivate-rights-management-from-the-azure-classic-portal"></a>从 Azure 经典门户停用 Rights Management
-
-1.  登录到 [Azure 经典门户](http://go.microsoft.com/fwlink/p/?LinkID=275081)。
-
-2.  在左窗格中，单击“ACTIVE DIRECTORY” 。
-
-3.  在 **“Active Directory”** 页中，单击 **“权限管理”**。
-
-4.  请确保已选择你的租户名称，单击“停用”，然后确认你的操作。
-
-“权限管理状态”现在应显示为“非活动”，而“停用”选项将替换为“激活”。
-
 #### <a name="to-deactivate-rights-management-from-the-azure-portal"></a>从 Azure 门户停用 Rights Management
 
-此方法当前处于预览状态。
-
-1. 如果尚未执行此操作，请打开新的浏览器窗口并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”边栏选项卡。
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 在初始“Azure 信息保护”边栏选项卡上，选择“RMS 设置(预览)”。 
+2. 在初始“Azure 信息保护”边栏选项卡上，选择“RMS 设置”。 
 
-3.  在“Azure 信息保护 - RMS 设置(预览)”边栏选项卡上，选择“停用”。 选择“是”以确认你的选择。
+3.  在“Azure 信息保护 - RMS 设置”边栏选项卡上，选择“停用”。 选择“是”以确认你的选择。
 
 信息栏会显示“停用已成功完成”且“停用”现在已替换为“激活”。 
 

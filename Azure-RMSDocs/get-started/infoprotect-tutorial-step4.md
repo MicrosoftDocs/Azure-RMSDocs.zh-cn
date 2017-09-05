@@ -4,17 +4,17 @@ description: "快速试用 Azure 信息保护入门教程步骤 4 - 查看设置
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: 5ceb351e72ec30015697d2b27111ae76fb3b2b58
-ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
+ms.openlocfilehash: 3a5e3fc018bb19480a52729345ad2ac6d4c851be
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>步骤 4：查看分类、设置标签和保护的实际操作 
 
@@ -54,24 +54,23 @@ ms.lasthandoff: 07/19/2017
 
 系统提示时，这一次请键入“此文档不需要分类”，然后单击“确认”。  
 
-将看到“敏感度”值为“未设置”（这是在未设置默认标签时用户最初看到的内容）：
-
-![Azure 信息保护快速入门教程步骤 4 - 删除分类](../media/sensitivity-not-setv2.png)
-
+可看到“敏感度”值显示为“未设置”（这是在未设置默认标签时用户最初看到的内容）。
 
 ## <a name="to-see-a-recommendation-prompt-for-labeling-and-automatic-protection"></a>查看标签和自动保护的推荐提示
 
 1. 在 Word 文档中，键入有效的信用卡号，例如：**4242-4242-4242-4242**。 
 
-2. 保存文档（使用任何文件名、任何位置）。 
+2. 使用任意文件名在本地保存文档。 
 
 3. 现在，检测到信用卡卡号时，将看到一条提示，提示用户使用针对保护配置的标签。 如果不同意这条建议，可通过选择“忽略”来拒绝这一建议。 提供建议同时允许用户重写，可帮助减少使用自动分类时的误报。 在本教程中，请单击“立即更改”。
 
     ![Azure 信息保护快速入门教程步骤 4 - 推荐提示](../media/change-nowv2.png)
 
-    此时，除了表明已应用配置的标签（例如，“机密\所有员工”）的文档之外，整个页面上还显示组织名称的水印，并且还应用了页脚“分类为机密”。 
+    此时，除了表明已应用所配置标签（例如“机密\财务”）的文档外，还可立即在整个页面上看到组织名称的水印，并且还应用了页脚“分类为机密”。 
 
-    该文档仍使用你指定的 Azure Rights Management 模板进行保护，你可以单击“文件”选项卡并查看“保护文档”的信息来确认。 如果你使用默认的机密模板，将看到以下信息：该文档仅供内部用户使用（组织外部的用户将无法打开该文档），并且文档的内容不可复制或打印。 作为文档的所有者，你可以复制和打印该文档，但是如果将其通过电子邮件发送给组织中的其他用户，那么他们将无法执行这些操作。
+    该文档还受到为此标签指定的权限的保护。 单击“文件”选项卡可以确认文档是否处于受保护状态，然后查看“保护文档”的信息。 看到该文档受“机密\财务”的保护以及标签说明。 
+    
+    由于标签的保护配置，只有员工可以打开该文档，且其某些操作受限。 例如，因为他们没有打印、复制和提取内容权限，所以无法打印文档或从中复制内容。 这样的限制有助于防止数据丢失。 作为文档的所有者，可以打印该文档和从中复制内容，但是如果将它通过电子邮件发送给组织中的其他用户，他们将无法执行这些操作。
 
 4. 现在可以关闭此文档。
 

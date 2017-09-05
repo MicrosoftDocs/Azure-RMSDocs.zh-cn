@@ -4,17 +4,17 @@ description: "该教程用于快速试用适合你组织的 Microsoft Azure 信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 9afee2da9cb6fdd787dfb6bdafe2ae64fdef9475
-ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.openlocfilehash: 34a20c3e83b2d3d6fde15d1226535ccb90431126
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure 信息保护快速入门教程 
 
@@ -36,9 +36,11 @@ ms.lasthandoff: 07/10/2017
   > [!TIP] 
   > 如果你需要应用某个订阅，请提前进行，因为该过程有时需要一定的时间才能完成。
 
-- 使用全局管理员帐户登录到 Azure 门户以配置 Azure 信息保护策略。 此帐户还必须有电子邮件地址和可用的电子邮件服务（例如，Exchange Online 或 Exchange Server）。
+- 使用全局管理员帐户或安全管理员帐户登录到 Azure 门户，配置 Azure 信息保护策略。 此帐户还必须有电子邮件地址和可用的电子邮件服务（如 Exchange Online）。
 
-- 运行 Windows（最低配置为带 Service Pack 1 的 Windows 7）并已安装含 2016 应用或 2013 应用的 Office 365 ProPlus、Office Professional Plus 2016、带 Service Pack 1 的 Office Professional Plus 2013 或者带 Service Pack 2 的 Office Professional Plus 2010 的计算机。 必须使用你的云帐户登录到 Office 应用。
+- 运行 Windows（最低配置为带 Service Pack 1 的 Windows 7）并已安装含 2016 应用或 2013 应用的 Office 365 ProPlus、Office Professional Plus 2016、带 Service Pack 1 的 Office Professional Plus 2013 或者带 Service Pack 2 的 Office Professional Plus 2010 的计算机。 
+    
+    要将这些应用程序与 Azure 信息保护配合使用，必须具有[包含使用 Azure Rights Management 服务的 Office 365 订阅](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 例如，Office 365 E3 或 Office 365 E5 订阅。 要使用此订阅中的许可证，需要登录到 Office 应用。
 
 让我们开始吧。
 

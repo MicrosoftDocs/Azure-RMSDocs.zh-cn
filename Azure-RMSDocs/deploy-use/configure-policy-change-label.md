@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: ff32ea4759b46683398a86c0a549d50710f9a943
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 343b38caa14d3f67a932eedae37ed10c55f371ff
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>如何更改或自定义 Azure 信息保护的现有标签
 
@@ -26,12 +26,11 @@ ms.lasthandoff: 06/30/2017
 
 若要更改标签，请按照以下说明操作。
 
-
-1. 如果尚未执行此操作，请在新的浏览器窗口中以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。 
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”边栏选项卡。 
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 若要从全局策略中更改标签以使其适用于所有用户，请从“策略: 全局”边栏选项卡中选择要更改的标签，然后在“标签”边栏选项卡和之后所需的任何边栏选项卡上进行更改。 如果要从[作用域内策略](configure-policy-scope.md)中更改标签，以使其适用于所选用户，请首先在初始的“Azure 信息保护”边栏选项卡中选择该策略。
+2. 要更改全局策略中的标签，使其适用于所有用户，请从“Azure 信息保护 - 全局策略”边栏选项卡中选择要更改的标签，之后根据需要选择任何边栏选项卡进行更改。 要更改[作用域内策略](configure-policy-scope.md)中的标签，使其仅应用于所选用户，请先从“策略”菜单选项中选择“作用域内策略”。 然后从“Azure 信息保护 - 作用域内策略”边栏选项卡选择作用域内策略。
 
     例外情况是，如果想要重排标签，可在全局策略或选定作用域内策略的策略边栏选项卡上执行操作：右键单击标签或选择标签的上下文菜单，然后选择“上移”或“下移”选项。
 
