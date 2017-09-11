@@ -4,7 +4,7 @@ description: "此信息适用于以仅保护模式运行 Azure 信息保护客�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,24 +12,30 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 55254496b23e49fe7e2dbd19721a824739004b21
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 84644f717a6005245847c9e9598b87c5af885aa7
+ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="protection-only-mode-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的仅保护模式
 
-不使用 Azure 信息保护策略运行 Azure 信息保护客户端时，它将显示为处于“仅保护”模式。 例如，使用 Windows 文件资源管理器时，右键单击“分类和保护”：
+当 Azure 信息保护客户端没有用于对文档和电子邮件进行分类的标签，它将在仅保护模式下运行。 例如，在此模式中，当使用 Windows 文件资源管理器，右键单击“分类和保护”，可能会看到以下项：
 
 ![仅保护模式](../media/protection-only-mode.png)
 
- 此模式将在以下情况下运行：
+仅保护模式将在以下情况下运行：
 
-- 你的组织未订阅 Azure 信息保护（用于数据的分类和保护），但是订阅了 Azure 权限管理服务（用于通过 Office 365 保护数据）。 
-    - 这是受支持的方案，你可以使用 Azure 信息保护客户端保护文件和查看受保护的文件。
+- 贵组织未订阅包含分类和标签功能的 Azure 信息保护，但是订阅了包含使用 Azure 权限管理服务进行数据保护的 Office 365。 
+    
+    - 可以使用 Azure 信息保护客户端保护文件和查看受保护的文件。 无法对文档和电子邮件进行分类或添加标签。
+
+- 贵组织仅为部分用户订阅了 Azure 信息保护：
+    
+    - 对于此组合订阅，管理员有责任确保仅部分用户可以使用分类和标签功能。 其余用户应在仅保护模式下运行 Azure 信息保护客户端。 
 
 - 你的组织已订阅 Azure 信息保护，但是你无法下载 Azure 信息保护策略。 
+    
     - 这可能是因为配置不正确，也可能因为你没有成功登录。 请联系技术支持或管理员，但在此期间，你可以使用 Azure 信息保护客户端保护文件和查看受保护的文件。
 
 ## <a name="limitations-for-protection-only-mode"></a>仅保护模式的限制

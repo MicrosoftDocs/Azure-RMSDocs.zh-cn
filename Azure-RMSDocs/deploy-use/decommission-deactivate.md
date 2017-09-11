@@ -4,7 +4,7 @@ description: "如果你决定不再想要使用 Azure 信息保护中的此信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bebc3bf5593c2e8d166645b6cc18ad02d739d9ba
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 33566381cf4d45c82f7f1a5ab210bccfd953fa49
+ms.sourcegitcommit: eea0e4eacfeb7307b94181c28626177b4467623d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 ---
 # <a name="decommissioning-and-deactivating-azure-rights-management"></a>解除 Azure Rights Management 授权和停用 Azure Rights Management
 
@@ -36,16 +36,18 @@ ms.lasthandoff: 08/30/2017
 |如果这适用于你…|… 采取的措施：|
 |----------------------------|--------------|
 |你希望所有用户继续使用 Rights Management，但使用本地解决方案而不使用 Azure 信息保护    →|当现有用户使用经过此更改之后受保护的内容时，请使用 [Set-AadrmMigrationUrl](/powershell/module/aadrm/Set-AadrmMigrationUrl) cmdlet 将他们定向至本地部署。 用户将自动使用 AD RMS 安装以使用受保护内容。<br /><br />对于要使用此更改之前受保护内容的用户，可使用 Office 2016 或 Office 2013 的“LicensingRedirection”注册表项将客户端重定向到本地部署。 有关说明，请参阅 RMS 客户端部署说明中的[服务发现部分](../rms-client/client-deployment-notes.md)，以及 Office 2010 的 LicenseServerRedirection 注册表项，如 [Office Registry Settings](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)（Office 注册表设置）中所述。|
-|你想要完全停止使用 Rights Management    →|赋予指定管理员[超级用户权限](../deploy-use/configure-super-users.md)并给予此管理员 [RMS 保护工具](http://www.microsoft.com/en-us/download/details.aspx?id=47256)。<br /><br />然后，此管理员可以使用该工具批量解密受 Azure 权限管理服务保护的文件夹中的文件。 文件还原到未受保护状态，因此可在不使用 Azure 信息保护或 AD RMS 等 Rights Management 技术的情况下进行读取。 因为此工具可以与 Azure 信息保护中的 Azure 权限管理服务和 AD RMS 共同使用，因此你可以选择在停用 Azure 权限管理服务之前或之后解密文件，或者将两者结合起来。|
+|你想要完全停止使用 Rights Management    →|赋予指定管理员[超级用户权限](../deploy-use/configure-super-users.md)，并为此用户安装 [Azure 信息保护客户端](../rms-client/client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users)。<br /><br />然后，此管理员可以使用此客户端的 PowerShell 模块批量解密受 Azure 权限管理服务保护的文件夹中的文件。 文件还原到未受保护状态，因此可在不使用 Azure 信息保护或 AD RMS 等 Rights Management 技术的情况下进行读取。 因为此 PowerShell 模块可以与 Azure 信息保护中的 Azure 权限管理服务和 AD RMS 共同使用，因此可以选择在停用 Azure 权限管理服务之前或之后解密文件，或者将两者结合起来。|
 |无法标识所有由 Azure 信息保护中的 Azure 权限管理服务保护的文件。 或者，你希望所有用户都可以自动读取任何丢失的受保护的文件   →|在所有客户端计算机上部署注册表设置，方法是使用 Office 2016 和 Office 2013 的 **LicensingRedirection** 注册表项（如在 RMS 客户端部署注释中的[服务发现部分](../rms-client/client-deployment-notes.md)中所述）和 Office 2010 的 **LicenseServerRedirection** 注册表项（如 [Office 注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述）。<br /><br />另外，部署其他注册表设置以防止用户保护新文件，方法是将 **DisableCreation** 设置为 **1**，如 [Office注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述。|
-|你需要针对任何丢失文件的受控的手动恢复服务    →|赋予数据恢复组中的指定用户 [超级用户权限](../deploy-use/configure-super-users.md)，并给予他们 [RMS 保护工具](http://www.microsoft.com/en-us/download/details.aspx?id=47256)，以便在标准用户提出请求时取消文件保护。<br /><br />在所有计算机上部署注册表设置以防止用户保护新文件，方法是将 **DisableCreation** 设置为 **1**（如 [Office 注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述）。|
+|你需要针对任何丢失文件的受控的手动恢复服务    →|赋予数据恢复组中的指定用户[超级用户权限](../deploy-use/configure-super-users.md)，并为这些用户安装 [Azure 信息保护客户端](../rms-client/client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users)，以便在标准用户请求此操作时取消文件保护。<br /><br />在所有计算机上部署注册表设置以防止用户保护新文件，方法是将 **DisableCreation** 设置为 **1**（如 [Office 注册表设置](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)中所述）。|
 有关此表中的步骤的详细信息，请参阅以下资源：
 
--   有关 AD RMS 和部署引用的信息，请参阅 [Active Directory Rights Management Service 概述](https://technet.microsoft.com/library/hh831364.aspx)。
+- 有关 AD RMS 和部署引用的信息，请参阅 [Active Directory Rights Management Service 概述](https://technet.microsoft.com/library/hh831364.aspx)。
 
--   有关将 Azure 信息保护租户密钥导入为 TPD 文件的说明，请参阅 [添加可信发布域](https://technet.microsoft.com/library/cc771460.aspx)。
+- 有关将 Azure 信息保护租户密钥导入为 TPD 文件的说明，请参阅 [添加可信发布域](https://technet.microsoft.com/library/cc771460.aspx)。
 
--   如果你需要安装适用于 Azure Rights Management 的 Windows PowerShell 模块以设置迁移 URL，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
+- 如果你需要安装适用于 Azure Rights Management 的 Windows PowerShell 模块以设置迁移 URL，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
+
+- 若要将 PowerShell 与 Azure 信息保护客户端配合使用，请参阅将 [PowerShell 与 Azure 信息保护客户端配合使用](../rms-client/client-admin-guide-powershell.md)。
 
 准备好为组织停用 Azure Rights Management 服务时，请使用以下说明。
 

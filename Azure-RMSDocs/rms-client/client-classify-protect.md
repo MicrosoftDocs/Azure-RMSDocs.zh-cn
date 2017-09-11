@@ -4,7 +4,7 @@ description: "说明如何对文档和电子邮件进行分类和保护。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/08/2017
+ms.date: 08/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 954b69213c055c4b94981fabef40df29aa0e19ba
-ms.sourcegitcommit: 5a087ff509162a98f3d09fda4ef5a114028e5664
+ms.openlocfilehash: 5e8329a441dcc871a155ef1b1484544732bec212
+ms.sourcegitcommit: 23aeb2bcce05968b850313333e359c99dd99a56f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
@@ -85,8 +85,6 @@ ms.lasthandoff: 08/08/2017
     - **选择权限**：如果要保护文件，以便只有你可以访问，请选中“**仅限自己访问**”。 否则，请选中“希望对象拥有的访问级别”。
 
     - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 请注意，暂不支持个人电子邮件地址。
-    
-    如果具有 Azure 信息保护客户端的当前预览版本，也可以使用“选择用户、组或组织”按钮。 此按钮将显示本地 Active Directory 的“选择用户或组”对话框。 如果要指定的用户或组位于 Active Directory 中，可从此对话框对其进行搜索和选择。 若要使用此选项，计算机必须连接到内部网络且必须加入域，而你必须具有本地 Active Directory。 如果不满足这些条件中的任何一个，将看到以下消息：“找不到任何位置，因此程序无法打开所需对话框”。
         
     - 过期访问：仅对具有时效性的文件选择此选项，以使指定的人员无法在设置日期后打开选定的一个文件或多个文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
 
@@ -131,7 +129,7 @@ ms.lasthandoff: 08/08/2017
     
     - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 请注意，暂不支持个人电子邮件地址。
     
-    或者，可以使用“选择用户、组或组织”按钮从 Outlook 通讯簿选择用户或组。 如果具有 Azure 信息保护客户端的当前预览版本，此按钮将显示本地 Active Directory 的“选择用户或组”对话框。 如果要指定的用户或组位于 Active Directory 中，可从此对话框对其进行搜索和选择。 若要使用此选项，计算机必须连接到内部网络且必须加入域，而你必须具有本地 Active Directory。 如果不满足这些条件中的任何一个，将看到以下消息：“找不到任何位置，因此程序无法打开所需对话框”。
+    或者，可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
         
     - 过期访问：仅为时间敏感文件选择此选项，以便你指定的人员在你设定的日期后无法打开所选文件。你仍然可以打开原始文件，但是在所设定日期的午夜后（当前时区），你指定的用户将无法打开文件。
     

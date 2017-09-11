@@ -4,7 +4,7 @@ description: "若要配置分类、标记和保护，必须配置 Azure 信息�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7f3b64e5e4b0dfbccf694a986a85f1c207580915
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 23f41199f03bb6a6530f668c20c030b52613d3c2
+ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="configuring-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 08/30/2017
 
 ## <a name="subscription-support"></a>订阅支持
 
-Azure 信息保护策略支持不同级别的订阅：
+Azure 信息保护支持不同级别的订阅：
 
 - Azure 信息保护 P2：支持所有分类、设置标签和保护功能。
 
@@ -34,13 +34,16 @@ Azure 信息保护策略支持不同级别的订阅：
 
 - 包括 Azure 权限管理服务的 Office 365：支持保护，但不支持分类和设置标签功能。
 
-现在，需要 Azure 信息保护 P2 订阅的选项在门户中进行标识。
+需要 Azure 信息保护 P2 订阅的选项在门户中进行标识。
 
-如果你具有租户的用户混合订阅，则有责任确保用户下载的 Azure 信息保护策略不包含未授权给其帐户使用的配置选项。 配置并非所有用户都获许可使用的选项时，请使用作用域内策略，这样就不会将用户配置为使用他们不具有许可证的功能。
+如果贵组织拥有组合订阅，则你有责任确保用户不会使用其帐户未授权使用的功能。 Azure 信息保护客户端不会进行许可证检查以及强制执行。 在配置并非所有用户都具有相应许可证的选项时，请使用作用域内策略或注册表设置，以确保组织符合许可证：
+
+- **当组织具备 Azure 信息保护 P1 和 Azure 信息保护 P2 的组合许可证时**：对于具有 P2 许可证的用户，请在配置需要 Azure 信息保护 P2 许可证的选项时创建并使用一个或多个[作用域内策略](configure-policy-scope.md)。 请确保全局策略不包含需要 Azure 信息保护 P2 许可证的选项。
+
+- **当组织具有 Azure 信息保护订阅，但有些用户只有包含 Azure 权限管理服务的 Office 365 许可证时**：对于没有 Azure 信息保护许可证的用户，可在其计算机上编辑注册表，以防止他们下载 Azure 信息保护策略。 有关说明，请参阅管理员指南了解以下自定义项：[当组织具备组合许可证时，强制执行仅保护模式](../rms-client/client-admin-guide-customizations.md#enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses)。
 
 有关订阅的详细信息，请参阅 [需要为 Azure 信息保护准备哪个订阅，它包括哪些功能？](../get-started/faqs.md#what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included)
 
-有关如何配置作用域内策略的详细信息，请参阅[如何使用作用域内策略为特定用户配置策略](configure-policy-scope.md)。
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>如何配置 Azure 信息保护策略
 
