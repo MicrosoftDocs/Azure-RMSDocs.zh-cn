@@ -4,7 +4,7 @@ description: "如果你决定不再想要使用 Azure 信息保护中的此信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/05/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 33566381cf4d45c82f7f1a5ab210bccfd953fa49
-ms.sourcegitcommit: eea0e4eacfeb7307b94181c28626177b4467623d
+ms.openlocfilehash: 1f8d7a56cec4df8f0ef50f4f83ef662ad8923f17
+ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="decommissioning-and-deactivating-azure-rights-management"></a>解除 Azure Rights Management 授权和停用 Azure Rights Management
 
@@ -75,9 +75,9 @@ ms.lasthandoff: 09/06/2017
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 在初始“Azure 信息保护”边栏选项卡上，选择“RMS 设置”。 
+2. 在初始“Azure 信息保护”边栏选项卡上，选择“RMS 设置”或“保护激活”。 此选项正处于重命名的过程中。 
 
-3.  在“Azure 信息保护 - RMS 设置”边栏选项卡上，选择“停用”。 选择“是”以确认你的选择。
+3.  在“Azure 信息保护 - RMS 设置”或“Azure 信息保护 - 保护激活”边栏选项卡上，选择“停用”。 选择“是”以确认你的选择。
 
 信息栏会显示“停用已成功完成”且“停用”现在已替换为“激活”。 
 

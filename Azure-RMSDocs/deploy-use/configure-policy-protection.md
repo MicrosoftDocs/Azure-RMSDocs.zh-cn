@@ -4,17 +4,17 @@ description: "通过配置标签来使用 Rights Management 保护，可保护�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 2f6bc027353f38e272a6765c10e770643b739d26
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: fce3c905f2f48c2723ee7f0b55ff5ddb77f6258a
+ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 08/30/2017
 > [!IMPORTANT]
 > 要配置标签来应用此保护，必须为组织激活 Azure Rights Management 服务。 如果尚未这样做，请参阅 [激活 Azure 权限管理](../deploy-use/activate-service.md)(#激活-azure-权限管理)。
 
-标签应用保护时，受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 对于受保护的文件，这些位置不支持以下内容：共同创作、Office Online、搜索、文档预览、缩略图和电子数据展示。 
+标签应用保护时，受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 对于受保护的文件，这些位置不支持以下内容：共同创作、Office Online、搜索、文档预览、缩略图、电子数据展示和数据丢失防护 (DLP)。 
 
 用户可以在 Outlook 中应用标签以保护其电子邮件之前，不必为信息权限管理 (IRM) 配置 Exchange。 但是，在为 IRM 配置 Exchange 之前，你无法获得将 Exchange 与Azure Rights Management 保护配合使用的完整功能。 例如，用户无法在移动电话上或通过 Outlook 网页版查看受保护的电子邮件，无法将受保护的电子邮件编入索引用于搜索，并且你无法为权限管理保护配置 Exchange Online DLP。 若要将 Exchange 配置为支持这些其他的方案，请参阅以下资源：
 
@@ -67,14 +67,15 @@ ms.lasthandoff: 08/30/2017
         
         请注意，用户必须具有删除 Rights Management 保护的权限，才能应用具有此选项的标签。 此要求意味着用户必须具有“导出”或“完全控制”[使用权](../deploy-use/configure-usage-rights.md)。 或者，他们必须为 Rights Management 所有者（自动授予完全控制使用权限）或者为 [Azure 权限管理的超级用户](../deploy-use/configure-super-users.md)。 默认 Azure 权限管理模板不包括允许用户删除保护的使用权限。 
         
-        如果用户不具有删除 Rights Management 保护的权限，并选择配置有此“删除保护”选项的标签，他们将会看到以下消息：Azure 信息保护无法应用此标签。如果此问题仍然存在，请与管理员联系。
+        如果用户不具有删除 Rights Management 保护的权限，并选择配置有此“删除保护”选项的标签，他们将会看到以下消息：Azure 信息保护无法应用此标签。如果此问题仍然存在，请与管理员联系。**
 
 5. 如果已选择“保护”，现在请选择“保护”将“保护”边栏选项卡打开：
     
     ![为 Azure 信息保护标签配置保护权限](../media/info-protect-protection-bar-configured.png)
 
-6. 在“保护”边栏选项卡上，选择“Azure RMS”或“HYOK (AD RMS)”。     
-    大多数情况下，为权限设置选择“Azure RMS”。 请勿选择“**HYOK (AD RMS)**”，除非你已阅读并了解此“*自留密钥*”(HYOK) 配置随附的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。 若要继续配置 HYOK (AD RMS)，请转到步骤 10。
+6. 在“保护”边栏选项卡上，选择“Azure RMS”或“Azure (云密钥)”或选择“HYOK (AD RMS)”。 第一个选项正处于重命名的过程中。
+    
+    大多数情况下，为权限设置选择“Azure RMS”或“Azure (云密钥)”。 请勿选择“**HYOK (AD RMS)**”，除非你已阅读并了解此“*自留密钥*”(HYOK) 配置随附的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。 若要继续配置 HYOK (AD RMS)，请转到步骤 10。
     
 7. 选择下列选项之一：
     
@@ -88,15 +89,15 @@ ms.lasthandoff: 08/30/2017
         
         如果选择 Word、Excel、PowerPoint 和文件资源管理器选项：此选项需要 Azure 信息保护客户端的预览版本。 设置了此选项且用户具有预览版客户端时，标签显示在这些应用程序中。 用户应用标签时产生的行为是显示对话框，以便用户选择自定义权限。 在此对话框中，用户必须指定权限、用户或组以及任意到期日期。 确保用户具有关于如何提供这些值的说明和指导。
 
-8. 如果为“Azure RMS”选择了“选择预配模板”，请单击下拉框，然后选择要用于保护包含此标签的文档和电子邮件的[模板](../deploy-use/configure-policy-templates.md)。 看不到已存档的模板或已为另一个标签选择的模板。
+8. 如果为“Azure RMS”或“Azure (云密钥)”选择了“选择预配模板”，请单击下拉框，然后选择要用于保护包含此标签的文档和电子邮件的[模板](../deploy-use/configure-policy-templates.md)。 看不到已存档的模板或已为另一个标签选择的模板。
     
     如果选择“部门模板”，或者如果已配置[载入控件](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)：
     
     - 配置的模板作用域外的用户或从应用 Azure 权限管理保护中排除的用户仍将看到该标签，但不能应用该标签。 如果他们选择该标签，则会看到以下消息：**Azure 信息保护无法应用此标签。如果此问题仍然存在，请与管理员联系。**
         
-        请注意，将始终显示所有已发布的模板，即使正在配置作用域内策略。 例如，正在为市场营销组配置作用域内策略。 可选择的 Azure RMS 模板不限于作用域为“营销”组的模板，还可以选择所选用户不能使用的部门模板。 为了方便配置和尽量减少故障排除，请考虑命名部门模板以匹配作用域内策略中的标签。 
+        请注意，将始终显示所有已发布的模板，即使正在配置作用域内策略。 例如，正在为市场营销组配置作用域内策略。 可选择的模板不限于作用域为“营销”组的模板，还可以选择所选用户不能使用的部门模板。 为了方便配置和尽量减少故障排除，请考虑命名部门模板以匹配作用域内策略中的标签。 
             
-9. 如果为“Azure RMS”选择“设置权限”，此选项将允许配置可在模板中配置的相同设置。 
+9. 如果为“Azure RMS”或“Azure (云密钥)”选择“设置权限”，此选项将允许配置可在模板中配置的相同设置。 
     
     选择“添加权限”，在“添加权限”边栏选项卡上，选择有权使用所选标签保护的内容的第一组用户和组：
     
@@ -143,7 +144,15 @@ ms.lasthandoff: 08/30/2017
 
 12. 在“**标签**”边栏选项卡上，单击“**保存**”。
 
-13. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
+13. 在“Azure 信息保护”边栏选项卡上，使用“保护”列确认标签现在显示你所需的保护设置：
+    
+    - Azure RMS 或 HYOK (AD RMS)，或一个复选标记（若已配置保护）。 
+    
+    - 删除保护或 x 标记，表示取消（若已将标签配置为删除保护）。
+    
+    - 未设置保护时，为空白字段。 
+
+13. 若要使所做的更改应用于用户，请单击“**发布**”。
 
 ## <a name="next-steps"></a>后续步骤
 
