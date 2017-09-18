@@ -1,7 +1,5 @@
 {
   "build_entry_point": "docs.ps1",
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
       "docset_name": "Azure-RMSDocs",
@@ -15,7 +13,8 @@
     }
   ],
   "notification_subscribers": [
-    ""
+    "CnE_Content_Brno@moravia.com",
+    "CnE_UE_Bugfixing_ENG@moravia.com"
   ],
   "branches_to_filter": [
     "live-oldev",
@@ -25,20 +24,25 @@
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
-  "contribution_branch_mappings":{
+  "contribution_branch_mappings": {
     "live-sxs": "live"
   },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft.zh-cn",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/Microsoft/Azure-RMSDocs-pr",
-      "branch": "live"
+      "branch": "live",
+      "branch_mapping": {}
     }
   ],
-  "need_generate_pdf_url_template": false
+  "branch_target_mapping": {},
+  "need_generate_pdf_url_template": false,
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false
 }
