@@ -4,17 +4,17 @@ description: "如果选择具有 Azure 信息保护的 HYOK (AD RMS) 保护，�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 80e7cb411132fa3c3fdff7f8c80febde68b071fa
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: ef39c5489e63a67e0880e4faab4d9675a49f5f90
+ms.sourcegitcommit: 4e31a4797eb8df64af3ae8932d2b49839e7a4524
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 保护的自留密钥 (HYOK) 要求和限制
 
@@ -85,7 +85,15 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
     
     - 最小版本的 Windows Server 2012 R2：生产环境需要此版本，但用于测试或评估时，可以使用带 Service Pack 1 的 Windows Server 2008 R2 的最小版本。
     
-    - 单个 AD RMS 根群集。
+    - 以下拓扑之一：
+        
+        - 具有单个 AD RMS 根群集的单个林。 
+        
+        - 具有独立 AD RMS 根群集的多个林，用户无法访问由其他林的用户保护的内容。
+        
+        - 多个林，每个林中有 AD RMS 群集。 每个 AD RMS 群集共享指向相同 AD RMS 群集的许可 URL。 在此 AD RMS 群集上，必须从所有其他 AD RMS 群集导入所有受信任用户域 (TUD) 证书。 有关此拓扑的详细信息，请参阅 [受信任的用户域](https://technet.microsoft.com/library/dd983944(v=ws.10\).aspx)。
+        
+    如果单独的林中具有多个 AD RMS 群集，删除应用 HYOK (AD RMS) 保护并为每个群集配置[作用域策略](configure-policy-scope.md)的全局策略中的任何标签。 将每个群集的用户分配到其作用域策略，确保不使用会导致用户分配到多个作用域策略的组。 结果应是每个用户仅有一个 AD RMS 群集的标签。 
     
     - [加密模式 2](https://technet.microsoft.com/library/hh867439.aspx)：可以通过检查 AD RMS 群集属性、“常规”选项卡来确认该模式。
     

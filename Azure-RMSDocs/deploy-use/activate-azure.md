@@ -1,10 +1,10 @@
 ---
 title: "使用 Azure 门户激活 Azure RMS - AIP"
-description: "用于保护文档和电子邮件的 Azure 权限管理服务的激活说明。"
+description: "Azure 门户提供有关保护激活的说明，以便你的组织可开始保护文件和电子邮件。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 12df794b35b5a5c979709cee61cd61e11b2fb5d4
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 56c75286280905065539b2d865aa0886edfd226f
+ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>如何从 Azure 门户激活 Azure 权限管理
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 08/30/2017
     
     要打开 Azure 信息保护边栏选项卡，必须拥有 [Azure 信息保护高级计划](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)或[包含 Rights Management 的 Office 365 计划](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 如果具有这些订阅之一但看到消息“找不到有效订阅”，请发送电子邮件至 [askipteam](mailto:askipteam@microsoft.com?subject=I%20cannot%20activate%20RMS)。
 
-2. 找到“管理”菜单选项，然后选择选择“RMS 设置”。  
+2. 找到“管理”菜单选项，选择“RMS 设置”或“保护激活”。 此选项正处于重命名的过程中。
     
     单击“激活”，然后确认操作。 
 
