@@ -26,6 +26,7 @@
 ### [配置和管理模板](configure-policy-templates.md)
 #### [为用户刷新模板](refresh-templates.md)
 #### [PowerShell 参考](configure-templates-with-powershell.md)
+#### [从 Azure 经典门户迁移](migrate-portal.md)
 ### [配置语言](configure-policy-languages.md)
 ## [部署 RMS 连接器](deploy-rms-connector.md)
 ### [安装并配置连接器](install-configure-rms-connector.md)
