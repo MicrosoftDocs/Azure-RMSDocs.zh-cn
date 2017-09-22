@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 23f41199f03bb6a6530f668c20c030b52613d3c2
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: 4c656ed4e7fdb7945b6ccf466a1138cdb68a2189
+ms.sourcegitcommit: f7ef0f040ae4af4bf1283ebcb0750b65b6939313
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-azure-information-protection-policy"></a>配置 Azure 信息保护策略
+# <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
->适用于：Azure 信息保护
+>*适用于：Azure 信息保护*
 
 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。 然后将此策略下载到已安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#azure-信息保护客户端) 的计算机。
 
