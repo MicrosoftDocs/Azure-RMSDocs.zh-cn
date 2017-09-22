@@ -4,17 +4,17 @@ description: "快速试用 Azure 信息保护入门教程步骤 3 - 安装客户
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: ccc52f1fca6e968ac1794d7bad437c271f4bd485
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: cfe2fdf41174caf6184d3e160ce9f4d439d55566
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="step-3-install-the-client"></a>步骤 3：安装客户端
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/30/2017
 
 ## <a name="install-the-azure-information-protection-client"></a>安装 Azure 信息保护客户端
 
-1. 在已安装 Office 的 PC 上（当前未打开 Word），转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)并下载 AzInfoProtection.exe。 这是此客户端的通用版本，支持将其用于生产网络。 但是，如果想要体验包含所有最新功能和修补程序的最新预览版，请下载 AzInfoProtection_PREVIEW_1.10.52.0.exe。
+1. 在已安装 Office 的 PC 上（当前未打开 Word），转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)并下载 AzInfoProtection.exe。
     
 2. 运行刚下载的可执行文件，并按照提示安装客户端。
     

@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 2 阶段涉及从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 22b43c2b149c7a7fd5ce79ca3ceef8100b9d5e7b
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 3274cb1ddd457647159034b955c47e9ab775f00c
+ms.sourcegitcommit: f7ef0f040ae4af4bf1283ebcb0750b65b6939313
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/20/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -113,7 +113,7 @@ ms.lasthandoff: 08/24/2017
 
 2. 激活 Azure Rights Management 服务：
     
-        Enable-Aadrmservice
+        Enable-Aadrm
 
 **如果 Azure 信息保护租户已激活，会怎么样？** 如果已为你的组织激活了 Azure Rights Management 服务，则用户可能已使用 Azure 信息保护和自动生成的租户密钥（及默认模板）而不是 AD RMS 中的现有密钥（和模板）来保护内容。 在 Intranet 中妥善管理的计算机上不太可能会发生这种情况，因为这些计算机会自动根据 AD RMS 基础结构进行配置。 但是，在工作组计算机或很少连接到 Intranet 的计算机上，可能会发生这种情况。 遗憾的是，这些计算机也很难识别，正因如此，我们建议在从 AD RMS 导入配置数据之前不要激活该服务。
 
