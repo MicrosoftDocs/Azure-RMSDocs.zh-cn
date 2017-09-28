@@ -4,7 +4,7 @@ description: "有关支持的文件类型、文件扩展名以及负责适用于
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 219f39913261d22709238ee5393e8cc8080070f5
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: 9db73573eb6ccb6ab5f09d926e395a31f94404ea
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure 信息保护客户端支持的文件类型
 
@@ -81,11 +81,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
     |Excel 2007（仅受 AD RMS 支持）<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016|32 位：2 GB<br /><br />64 位：仅受可用磁盘空间和内存限制|
     |PowerPoint 2007（仅受 AD RMS 支持）<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016|32 位：仅受可用磁盘空间和内存限制<br /><br />64 位：仅受可用磁盘空间和内存限制
 
-- **对于其他所有文件**：
-    
-    - 对于客户端正式发布版：1GB
-    
-    - 对于预览客户端（最低版本为 1.8.41.0）：仅受可用磁盘空间和内存限制
+- 对于所有其他文件：仅受可用磁盘空间和内存限制。
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>支持用于分类和保护的文件类型
 

@@ -4,7 +4,7 @@ description: "有关自定义适用于 Windows 的 Azure 信息保护客户端�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/07/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e590bd7983b0f3e4e4d1348fbe120452e9ceb79b
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: d5345f794fb69ddbfb4d6ffcddfcffd41ecacff5
+ms.sourcegitcommit: ff2fadacf9ef4c6ee27d9d08c4c455ffd48f21f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的自定义配置
 
@@ -24,11 +24,9 @@ ms.lasthandoff: 09/08/2017
 
 请参阅以下高级配置相关信息，在管理 Azure 信息保护客户端时，可能需要用于特定方案或一部分用户。
 
-其中一些设置需要编辑注册表，一些使用的是高级设置，必须先在 Azure 门户中进行配置，再发布以供客户端下载。 此外，一些设置可能仅在预览版 Azure 信息保护客户端中可用。 对于这些设置，已记录最低客户端版本。 对于客户端正式发布版支持的设置和配置，未记录最低客户端版本号。
+其中一些设置需要编辑注册表，一些使用的是高级设置，必须先在 Azure 门户中进行配置，再发布以供客户端下载。  
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>在门户中配置高级客户端配置设置的具体步骤
-
-此配置目前处于预览状态。
 
 1. 如果尚未执行此操作，请在新的浏览器窗口中以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)，然后导航到“Azure 信息保护”边栏选项卡。
 
@@ -64,11 +62,7 @@ ms.lasthandoff: 09/08/2017
 
 以其他用户身份登录：
 
-1. 具体取决于 Azure 信息保护客户端的版本： 
-    
-    - 对于 Azure 信息保护客户端的正式发布版本：使用注册表编辑器，导航到“HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP”并删除“TokenCache”值（及其关联的值数据）。
-    
-    - 对于 Azure 信息保护客户端的当前预览版本：导航到“%localappdata%\Microsoft\MSIP”并删除“TokenCache”文件。
+1. 导航到 %localappdata%\Microsoft\MSIP 并删除 TokenCache 文件。
 
 2. 重新启动任何打开的 Office 应用程序，并使用其他用户帐户登录。 如果在 Office 应用程序中没有看到登录到 Azure 信息保护服务的提示，请返回“Microsoft Azure信息保护”对话框，然后从更新的“客户端状态”部分中单击“登录”。
 
@@ -78,11 +72,7 @@ ms.lasthandoff: 09/08/2017
 
 - 如果使用的是单一登录，必须在编辑注册表后注销 Windows，再使用其他用户帐户登录。 然后，Azure 信息保护客户端会使用当前登录的用户帐户，自动进行身份验证。
 
-- 若要重置 Azure Rights Management 服务的用户设置，可以使用“帮助和反馈”选项。
-
-- 如果要删除当前下载的 Azure 信息保护策略，可以从 **%localappdata%\Microsoft\MSIP** 文件夹中删除 **Policy.msip** 文件。
-
-- 如果有 Azure 信息保护客户端的当前预览版本，则可以使用“帮助和反馈”中的“重置设置”选项注销并删除当前已下载的 Azure 信息保护策略。
+- 可以使用“帮助和反馈”中的“重置设置”选项注销并删除当前已下载的 Azure 信息保护策略。
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>如果组织拥有组合许可证，则强制执行仅保护模式
 
@@ -99,10 +89,6 @@ ms.lasthandoff: 09/08/2017
 此外，请确保这些计算机的 %LocalAppData%\Microsoft\MSIP 文件夹中不具有名为 Policy.msip 的文件。 如果此文件存在，请将其删除。 此文件包含 Azure 信息保护策略，并且可能在编辑注册表之前已下载，如果使用演示选项安装了 Azure 信息保护客户端，那么也可能已下载此文件。
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>隐藏 Windows 文件资源管理器中的“分类和保护”菜单选项
-
-此配置选项目前处于预览状态。
-
-如果 Azure 信息保护客户端版本为 1.3.0.0 或更高版本，可以通过编辑注册表来配置此高级配置。 
 
 创建以下 DWORD 值名称（以及任何数值数据）：
 
@@ -133,9 +119,7 @@ ms.lasthandoff: 09/08/2017
 
 ## <a name="hide-the-do-not-forward-button-in-outlook"></a>在 Outlook 中隐藏“不转发”按钮
 
-此配置选项目前处于预览状态。
-
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 此设置还要求使用最低版本为 1.8.41.0 的预览版 Azure 信息保护客户端。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
 配置此设置后，将在 Outlook 的功能区中隐藏“不转发”按钮。 但不会在 Office 菜单中隐藏此选项。
 
@@ -147,10 +131,8 @@ ms.lasthandoff: 09/08/2017
 
 ## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>让用户无法使用“自定义权限”选项
 
-此配置选项目前处于预览状态。
-
 > [!IMPORTANT]
-> 如果具有为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置的标签，则请勿使用此选项。 如果使用此选项，应用标签时，系统不会提示用户配置自定义权限。 结果是：标记文档，但并未按预期保护文档。
+> 如果具有为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置的标签，除非使用当前预览版本的客户端，否则请勿使用此选项。 如果使用此选项，应用标签时，系统不会提示用户配置自定义权限。 结果是：标记文档，但并未按预期保护文档。
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
@@ -170,7 +152,7 @@ ms.lasthandoff: 09/08/2017
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>永久隐藏 Azure 信息保护栏
 
-此配置使用必须在 Azure 门户中配置的高级设置。 此设置还要求使用最低版本为 1.9.58.0 的预览版 Azure 信息保护客户端。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
 配置此设置并为用户发布策略后，如果用户选择不在 Office 应用程序中显示 Azure 信息保护栏，此栏保持隐藏。 当用户通过依次单击“主页”选项卡、“保护组”和“保护”按钮取消选中“显示栏”选项时，就会发生这种情况。 如果用户使用“关闭信息保护栏”图标关闭此栏，此设置将不起作用。
 
@@ -181,6 +163,39 @@ ms.lasthandoff: 09/08/2017
 - 键：EnableBarHiding
 
 - 值：True
+
+
+## <a name="enable-recommended-classification-in-outlook"></a>在 Outlook 中启用建议的分类
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+
+为建议的分类配置标签时，系统将提示用户接受或关闭 Word、Excel 和 PowerPoint 中建议的标签。 此设置将此标签建议扩展到也在 Outlook 中显示。
+
+若要配置此高级设置，请输入以下字符串：
+
+- 键：OutlookRecommendationEnabled
+
+- 值：True
+
+
+## <a name="set-a-different-default-label-for-outlook"></a>为 Outlook 设置不同的默认标签
+
+此配置选项目前处于预览状态并需要预览版本的客户端。
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+
+配置此设置时，Outlook 不会应用 Azure 信息保护策略中为“选择默认标签”设置配置的默认标签。 相反，Outlook 可以应用不同的标签，也可以不使用标签。
+
+要应用不同的标签，必须指定标签 ID。 在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值将显示在“标签”边栏选项卡上。 对于应用了标签的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 标识标签 ID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，始终指定子标签（而不是父标签）的 ID。
+
+因此 Outlook 不会应用默认标签，请指定“无”。
+
+若要配置此高级设置，请输入以下字符串：
+
+- 键：OutlookDefaultLabel
+
+- 值：\<label ID> 或 None
+
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>与 Exchange 邮件分类集成以实现移动设备标记解决方案
 

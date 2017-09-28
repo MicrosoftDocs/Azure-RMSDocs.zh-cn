@@ -5,7 +5,7 @@ keywords:
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 09/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c9964e013d24bb1f42acb5f1e7a180d2a85a8576
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6d62b6dd588b035ded582a87f5faf04a04df6ab6
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>步骤 5：了解如何在实际操作中共享受保护的文件和如何跟踪文档 
 
@@ -39,9 +39,11 @@ ms.lasthandoff: 06/30/2017
 
     使用此设置，收件人能够查看该文档，但不能进行编辑或打印。
 
-4. 对于“选择用户”，请键入一个或多个企业电子邮件地址，如同将文档发送给与组织有业务往来的某人时的操作一样。 请务必指定企业电子邮件地址，例如 **janetm@contoso.com** 或 **p.dover@fabrikam.com**，因为 Azure 信息保护目前不支持个人电子邮件地址。 
+4. 对于“选择用户”，请键入一个或多个企业电子邮件地址，如同将文档发送给与组织有业务往来的某人时的操作一样。 若要指定多个地址，请使用分号，或按 Enter。 
 
-    或者，可单击通讯簿选择同事的电子邮件地址：
+    请务必指定企业电子邮件地址，例如 janetm@contoso.com 或 p.dover@fabrikam.com，因为 Azure 信息保护目前不支持此方案的个人电子邮件地址。 
+
+    或者，可单击“选择用户、组或组织”图标，选择同事的电子邮件地址：
 
     ![Azure 信息保护快速入门教程步骤 5 - 使用自定义权限保护](../media/protect-custom-permissions.png)  
     
@@ -77,7 +79,7 @@ ms.lasthandoff: 06/30/2017
 
 1. 在已安装 Office 的电脑或移动设备上，打开附件以阅读该文档。  
 
-2.  如果系统提示你输入用户名和密码，请在输入用户名时采用与发送电子邮件和附件时所用电子邮件地址相同的格式。 例如，**janetm@contoso.com** 或 **p.dover@fabrikam.com**。 至于密码，请键入注册个人 RMS 时提供的密码。 或者，如果组织有诸如 Office 365 等云服务，或使用 Azure，请输入平时使用的工作密码。
+2.  如果系统提示你输入用户名和密码，请在输入用户名时采用与发送电子邮件和附件时所用电子邮件地址相同的格式。 例如，**janetm@contoso.com** 或 **p.dover@fabrikam.com**。至于密码，请键入注册个人 RMS 时提供的密码。 或者，如果组织有诸如 Office 365 等云服务，或使用 Azure，请输入平时使用的工作密码。
 
 3. 打开后请阅读文档内容。 由于该文档为只读文档，因此无法更改其内容。
 
@@ -93,7 +95,7 @@ ms.lasthandoff: 06/30/2017
 
 2.  在“**开始**”选项卡中，依次单击“**保护**” > “**跟踪和撤销**”：
 
-    ![跟踪使用情况选项](../media/track-usage-calloutv2.png)
+    ![跟踪使用情况选项](../media/track-usage-calloutv3.png)
 
     该操作可转到文档跟踪站点。
 

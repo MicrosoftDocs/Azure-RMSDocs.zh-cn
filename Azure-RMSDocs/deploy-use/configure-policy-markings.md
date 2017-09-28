@@ -4,17 +4,17 @@ description: "当文档或电子邮件中分配一个标签时，可以选择几
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 09e8bfdc9bae9979db6e6bc39457bdcdcf6dabca
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 0da5df139d98f0468f49e7e3f17cd1cd2358a015
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/30/2017
     
     - PowerPoint：水印应用于母板幻灯片，作为背景图像。
     
-    - 当使用 Azure 信息保护客户端的当前预览版本时，可支持多行文本。
+    - 支持多行文本。
 
 - 你可以简单地指定文本字符串，也可以使用[变量](#using-variables-in-the-text-string)在应用页眉、页脚或水印时动态创建文本字符串。
 
@@ -44,17 +44,9 @@ ms.lasthandoff: 08/30/2017
 
 对于文档，视觉标记应用如下所示：
 
-- 对于 Azure 信息保护客户端的通用版本： 
-    
-    - 在 Office 应用中，当应用标签以及在保存文档时，均会应用来自标签的视觉标记。 
-    
-    - 当使用文件资源管理器或 PowerShell 标记文档时，不会立即应用视觉标记，但在 Office 应用中打开文档以及每次保存文档时都会应用视觉标记。
+- 在 Office 应用中，会在应用标签时应用来自标签的视觉标记。 打开标记的文档以及首次保存该文档时，也会应用视觉标记。  
 
-- 对于 Azure 信息保护客户端的当前预览版本： 
-    
-    - 在 Office 应用中，会在应用标签时应用来自标签的视觉标记。 打开标记的文档以及首次保存该文档时，也会应用视觉标记。  
-    
-    - 当使用文件资源管理器或 PowerShell 标记文档时，不会立即应用视觉标记，但在 Office 应用中打开文档以及首次保存文档时都会应用视觉标记。
+- 当使用文件资源管理器或 PowerShell 标记文档时，不会立即应用视觉标记，但在 Office 应用中打开文档以及首次保存文档时都会应用视觉标记。
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>配置标签的视觉标记
 
@@ -69,12 +61,12 @@ ms.lasthandoff: 08/30/2017
     如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，仅应用于所选用户，请从“策略”菜单选项中选择“作用域内策略”。 然后从“Azure 信息保护 - 作用域内策略”边栏选项卡选择作用域内策略。
 
 3. 在“**标签**”边栏选项卡的“**设置可视标记（如页眉或页脚）**”部分中，配置所需可视标记的设置，然后单击设置“**保存**”：
-
-    - 配置一个页眉：针对“**文档的此标签具有页眉**”，选择“**打开**”（如果希望具有页眉），或“**关闭**”（如果不希望这样做）。 如果选择“**打开**”，然后指定页眉的文本、大小、颜色和对齐方式。
-
-    - 配置一个页脚：针对**文档的此标签具有页脚**，选择“**打开**”（如果希望具有页脚），或“**关闭**”（如果不希望这样做）。 如果选择“**打开**”，然后指定页脚的文本、大小、颜色和对齐方式。
-
-    - 配置一个水印：针对**文档的此标签具有水印**，选择“**打开**”（如果希望具有水印），或“**关闭**”（如果不希望这样做）。 如果选择“**打开**”，然后指定页眉的水印文本、大小、颜色和布局。
+    
+    - 配置一个页眉：针对“**文档的此标签具有页眉**”，选择“**打开**”（如果希望具有页眉），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定页眉的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
+    
+    - 配置一个页脚：针对**文档的此标签具有页脚**，选择“**打开**”（如果希望具有页脚），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定页脚的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
+    
+    - 配置一个水印：针对**文档的此标签具有水印**，选择“**打开**”（如果希望具有水印），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定水印的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
 
 4. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 
@@ -95,6 +87,18 @@ ms.lasthandoff: 08/30/2017
 - `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016/8/16 下午 1:30
 
 示例：如果为“常规”标签页脚指定字符串 `Document: ${item.name}  Classification: ${item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 **Document: project.docx  Classification: General**。
+
+### <a name="setting-the-font-name"></a>设置字体名称
+
+此设置当前处于预览状态。
+
+Calibri 是页眉、页脚和水印文字的默认字体。 如果指定替代字体名称，请确保它在将应用视觉对象标记的客户端设备上可用。 否则，使用的字体将不确定。 
+
+### <a name="setting-the-font-color"></a>设置字体颜色
+
+可从可用颜色列表中进行选择，或输入颜色的红绿蓝 (RGB) 组成的十六进制三元色代码来指定自定义颜色。 例如，#DAA520。 
+
+如果需要引用这些代码，请参阅 MSDN 文档中的 [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85).aspx)（按名称分类的颜色），这是一个有用的起点。 也可在许多可编辑图片的应用程序中找到这些代码。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 
 ## <a name="next-steps"></a>后续步骤
 

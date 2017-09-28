@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: cf84cef5d6bc4d3df32a4e3c8bc3a6ac7380655c
-ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
+ms.openlocfilehash: 4fb571f84e9916fb5573d551ec0f0bf374e5df2f
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>步骤 2：配置并发布 Azure 信息保护策略
 
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/13/2017
     
     ![为 Azure 信息保护标签配置的保护](../media/info-protect-protection-bar-configured.png) 
     
-4. 在“保护”边栏选项卡中，确保选中“Azure RMS”或“Azure (云密钥)”。 此选项正处于重命名的过程中。 此外，请确保也选中“设置权限”。 然后选择“添加权限”。
+4. 在“保护”边栏选项卡中，确保选中“Azure (云密钥)”。 此选项使用 Azure Rights Management 服务保护文档和电子邮件。 此外，请确保也选中“设置权限”。 然后选择“添加权限”。
 
 5. 在“添加权限”边栏选项卡上，选择“添加 \<组织名称> - 所有成员”。 例如，如果组织名称为 VanArsdel Ltd，则会看到以下选项可供选择：
     

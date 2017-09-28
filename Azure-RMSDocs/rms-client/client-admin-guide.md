@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f07d39e5110ae9bfb58a81585a042e8afdbbc639
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 6786ffde8d9903ee5c9d553159710052a6d5e7a2
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -269,22 +269,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 “导出日志”自动收集并附加 Azure 信息保护客户端的日志文件，如果必须将日志文件发送给 Microsoft 支持人员的话。 最终用户也可以使用此选项，将这些日志文件发送给你的支持人员。
 
-若要获取诊断信息并重置客户端，请选择“**运行诊断**”。 诊断测试完成后，单击“**复制结果**”，将信息粘贴到电子邮件中，以便你可以发送给 Microsoft 支持人员，或者最终用户可以发送给你的支持人员。 测试完成后，还可以重置客户端。
+“重置设置”会注销用户、删除当前下载的 Azure 信息保护策略，并重置 Azure Rights Management 服务的用户设置。
 
-> [!NOTE]
-> 在客户端的预览版本中，“运行诊断”已删除并替换为“重置设置”。 此外，此选项的行为[已更改](#more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client)。
-
-#### <a name="more-information-about-the-reset-option-for-the-general-availability-ga-version-of-the-azure-information-protection-client"></a>有关 Azure 信息保护客户端的正式发布 (GA) 版本的重置选项的详细信息
-
-- 不是本地管理员也能使用此选项，并且不会在事件查看器中记录此操作。 
-
-- 除非文件被锁定，否则此操作将删除 %LocalAppData%\Microsoft\MSIPC 中的所有文件，该路径用于存储客户端证书和 Rights Management 模板。 此操作不会删除 Azure 信息保护策略或客户端日志文件，也不会注销用户。
-
-- 会删除以下注册表项和设置：**HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**。 如果配置了此注册表项的设置，则必须在重置客户端后重新配置注册表设置。 例如，由于要从 AD RMS 迁移并且网络上仍有服务连接点，因此配置了用于重定向到 Azure 信息保护租户的设置。
-
-- 重置客户端后，必须重新初始化用户环境，下载客户端证书和最新模板。 为了执行此操作，请关闭 Office 的所有实例，然后重新启动 Office 应用程序。 此操作还检查是否已下载最新的 Azure 信息保护策略。 完成此操作之前，请勿再次运行诊断测试。
-
-#### <a name="more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client"></a>有关 Azure 信息保护客户端的当前预览版本的重置选项的详细信息
+#### <a name="more-information-about-the-reset-settings-option"></a>有关“重置设置”选项的详细信息
 
 - 不是本地管理员也能使用此选项，并且不会在事件查看器中记录此操作。 
 

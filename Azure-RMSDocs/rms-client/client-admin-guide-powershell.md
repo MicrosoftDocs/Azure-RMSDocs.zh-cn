@@ -4,7 +4,7 @@ description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3a4a84356d59692dd3693b4bbaa00a3e39c95597
-ms.sourcegitcommit: adeab31c7aa99eab115dd12035fc5d9dffec4e9c
+ms.openlocfilehash: 99cb5d1ca256977cb07c41bbe153e5ca248b9efd
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -26,13 +26,15 @@ ms.lasthandoff: 08/29/2017
 
 cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 此模块替换随 RMS 保护工具一起安装的 RMSProtection 模块。 如果在安装 Azure 信息保护客户端时安装了 RMSProtection 工具，则会自动卸载 RMSProtection 模块。
 
-AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Management cmdlet 和使用 Azure 信息保护 (AIP) 服务进行标记的三个新 cmdlet：
+AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Management cmdlet。 以及使用 Azure 信息保护 (AIP) 服务进行标记的两个新 cmdlet。 例如：
 
 |标记 cmdlet|示例用法|
 |----------------|---------------|
 |[Get AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)|对于共享文件夹，请标识具有特定标签的所有文件。|
 |[Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)|对于共享文件夹，检查文件内容，然后根据指定的条件自动标记未标记的文件。|
 |[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)|对于共享文件夹，将指定的标签应用于没有标签的所有文件。|
+|[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipsuthentication)|以非交互方式标记文件，例如使用按计划运行的脚本。|
+
 
 有关所有 cmdlet 及其相应帮助的列表，请参阅 [AzureInformationProtection 模块](/powershell/module/azureinformationprotection)。 在 PowerShell 会话中，键入 `Get-Help <cmdlet name> -online` 以查看最新帮助以及除英语之外的其他受支持语言。  
 
@@ -95,7 +97,7 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 
 可通过非交互方式直接连接到 Azure 权限管理服务以保护或取消保护文件。
 
-用户必须使用服务主体以非交互方式连接到 Azure 权限管理服务，通过使用 `Set-RMSServerAuthentication` cmdlet 可完成此操作。 必须对运行直接连接到 Azure 权限管理服务的 cmdlet 的每个 Windows PowerShell 会话执行此操作。 运行此 cmdlet 之前，必须具有以下三个标识符：
+用户必须使用服务主体帐户以非交互方式连接到 Azure Rights Management 服务，通过使用 `Set-RMSServerAuthentication` cmdlet 可完成此操作。 必须对运行直接连接到 Azure 权限管理服务的 cmdlet 的每个 Windows PowerShell 会话执行此操作。 运行此 cmdlet 之前，必须具有以下三个标识符：
 
 - BposTenantId
 
@@ -222,7 +224,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 如上一命令所示，可以使用单个命令提供多个值，将在以非交互方式运行的脚本中执行此操作。 但是出于测试目的，可以仅键入 Set-RMSServerAuthentication，并根据提示逐个提供值。 命令完成后，客户端现以“服务器模式”运行，这适用于脚本和 Windows Server 文件分类基础结构等非交互式使用。
 
-考虑使此服务主体成为超级用户：要确保此服务主体始终可以取消保护其他人的文件，可以将其配置为超级用户。 通过与将标准用户帐户配置为超级用户相同的方式，使用相同的 Azure RMS cmdlet ([Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md))，但使用 AppPrincipalId 值指定“ServicePrincipalId”参数。
+考虑使此服务主体帐户成为超级用户：要确保此服务主体帐户始终可以取消保护其他人的文件，可以将其配置为超级用户。 通过与将标准用户帐户配置为超级用户相同的方式，使用相同的 Azure RMS cmdlet ([Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md))，但使用 AppPrincipalId 值指定“ServicePrincipalId”参数。
 
 有关超级用户的详细信息，请参阅[为 Azure 权限管理和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)。
 
@@ -259,7 +261,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 但是，若要通过直接连接到 Azure 权限管理服务来保护或取消保护文件，一般必须运行一系列 cmdlet，如下所述。
 
-首先，如果需要使用服务主体而不是自己的帐户对 Azure 权限管理进行身份验证，请在 Powershell 会话中键入：
+首先，如果需要使用服务主体帐户而不是自己的帐户对 Azure Rights Management 服务进行身份验证，请在 PowerShell 会话中键入：
 
     Set-RMSServerAuthentication
 
@@ -340,7 +342,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 ### <a name="prerequisites"></a>先决条件
 
-除了安装 AzureInformationProtection 模块的先决条件之外，你的帐户必须具有读取和执行权限才能访问 ServerCertification.asmx：
+除了安装 AzureInformationProtection 模块的先决条件之外，用于保护或取消保护文件的帐户必须具有读取和执行权限才能访问 ServerCertification.asmx：
 
 1. 登录到 AD RMS 服务器。
 
@@ -356,7 +358,9 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 7. 在“ServerCertification.asmx 的权限”对话框中，单击“添加”。 
 
-8. 添加你的帐户名称。 如果其他 AD RMS 管理员也将使用这些 cmdlet 保护和取消保护文件，也请添加其名称。
+8. 添加你的帐户名称。 如果其他 AD RMS 管理员或服务帐户也将使用这些 cmdlet 保护和取消保护文件，也请添加这些帐户。 
+    
+    若要以非交互式方式保护或取消保护文件，请添加相关的计算机帐户。 例如，添加配置为文件分类基础结构的 Windows Server 计算机的计算机帐户，并使用 PowerShell 脚本保护文件。 此方案需要 Azure 信息保护客户端的当前预览版本。
 
 9. 在“允许”列中，请确保选中“读取和执行”和“读取”复选框。
 
@@ -435,7 +439,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
     --------                              ------
     \\Server1\Documents\Test1.docx        Protected
 
-若要取消保护文件，则必须从文件受保护起具有“所有者”或“提取”权限，或者是 AD RMS 的超级用户。 然后使用 Unprotect cmdlet。 例如：
+要取消保护文件，必须从文件受保护起具有“所有者”或“提取使用情况”权限，或者是 AD RMS 的超级用户。 然后使用 Unprotect cmdlet。 例如：
 
     Unprotect-RMSFile C:\test.docx -InPlace
 
@@ -447,7 +451,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>如何以非交互方式为 Azure 信息保护标记文件
 
-自 1.8.41.0 版 Azure 信息保护客户端（当前处于预览阶段）起，可以使用 Set-AIPAuthentication cmdlet，以非交互方式运行标记 cmdlet。
+可以使用 Set-AIPAuthentication cmdlet，以非交互方式运行标记 cmdlet。
 
 默认情况下，运行 cmdlet 进行标记时，命令会在交互式 PowerShell 会话中你自己的用户上下文运行。 若要在无人参与的情况下运行这些命令，请为此新建一个 Azure AD 用户帐户。 然后，在相应用户的上下文中，运行 Set-AIPAuthentication cmdlet，以使用 Azure AD 中的访问令牌设置并存储凭据。 此用户帐户会进行身份验证，并启动以供 Azure Rights Management 服务使用。 此帐户下载 Azure 信息保护策略，以及标签使用的任何 Rights Management 模板。
 

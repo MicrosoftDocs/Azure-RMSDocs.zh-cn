@@ -4,7 +4,7 @@ description: "适用于 Windows 的 Azure 信息保护客户端的客户端文�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 63249b98578b952177351cc5547ef92c67164f06
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: d1802fbd3c659b154d585224a3f7b412b8995e5b
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="azure-information-protection-client-files-and-client-usage-logging"></a>Azure 信息保护客户端文件和客户端使用情况日志记录
 
@@ -75,6 +75,11 @@ ms.lasthandoff: 07/17/2017
     - 自动  
     
     - 系统（用于登录和下载策略）
+    
+    - DefaultAutomatic
+        
+        此 DefaultAutomatic 源操作仅用于预览版客户端，并引用通过使用 Azure 信息保护策略中的“选择默认标签”设置的标签。
+
     
 - 操作前后的标签 
     
