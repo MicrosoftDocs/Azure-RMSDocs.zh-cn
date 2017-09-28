@@ -4,7 +4,7 @@ description: "此信息可帮助你在部署和配置 Azure 信息保护中的 A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 192f4ade987e9f9f88f5f30bb17c70e113569002
-ms.sourcegitcommit: 8b6fc2201d99d72ee9bb43bb73356040893eceeb
+ms.openlocfilehash: d4ce0ea6a3c04c5ca52dae1750e48d5618eeef76
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
@@ -41,9 +41,9 @@ ms.lasthandoff: 08/02/2017
     
 -   技术支持信息
     
-    如果用户具有 Azure 信息保护客户端，技术支持操作人员可要求用户使用“帮助和反馈”、“运行诊断”选项，然后重置客户端。 不过，重置既不会注销用户，也不会重启客户端，并且不提供自动修正。
+    如果用户拥有 Azure 信息保护客户端，支持人员可要求他们使用“帮助和反馈”选项，获取例如 Office 版本是否无法支持保护，以及当前登录的用户帐户等信息。 还可使用此选项收集日志文件并重置客户端。 有关详细信息，请参阅管理员指南：[其他检查和故障排除](../rms-client/client-admin-guide.md#additional-checks-and-troubleshooting)。
     
-    如果有人合法请求获取对受保护文档的完全访问权限，请确保支持人员可以按流程操作，使用 Azure Rights Management [超级用户功能](configure-super-users.md)请求获取此访问权限。 例如，法律部门或经理可能会在某员工离职后发出此类请求。 
+    如果有人合法请求获取对受保护文档的完全访问权限，请确保支持人员可以按流程操作，使用 Azure Rights Management [超级用户功能](configure-super-users.md)请求获取此访问权限。 例如，法律部门或经理可能会在某员工离职后发出此类请求。
     
     此外，用户可能会报告的一些典型问题分为以下几类：
     

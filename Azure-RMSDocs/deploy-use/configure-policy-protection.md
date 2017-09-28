@@ -4,27 +4,27 @@ description: "通过配置标签来使用 Rights Management 保护，可保护�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: fce3c905f2f48c2723ee7f0b55ff5ddb77f6258a
-ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
+ms.openlocfilehash: dccd5f86dd75cf053336426df161e927b4cd9e5b
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
 >适用于：Azure 信息保护
 
-可通过使用 Rights Management 服务保护最敏感的文档和电子邮件。 此服务使用加密、标识和身份验证策略，有助于防止数据丢失。 配置标签将 Rights Management 保护用于文档和电子邮件，或将“不要转发”选项用于 Outlook 电子邮件时，均会应用此保护。 
+可通过使用 Rights Management 服务保护最敏感的文档和电子邮件。 此服务使用加密、标识和身份验证策略，有助于防止数据丢失。 保护应用于配置为使用 Rights Management 保护文档和电子邮件的标签，用户还可以在 Outlook 中选择“不可转发”按钮。 
 
 ## <a name="how-the-protection-works"></a>保护的工作原理
 
-当文档或电子邮件受权限管理保护时，它会在处于静态时和传输过程中进行加密，并且只能由授权用户进行解密。 文档或电子邮件的这种加密保持不变，即使将其重命名。 此外，你可以配置使用权限和限制，如下面的示例：
+当文档或电子邮件受 Rights Management 服务保护时，它会在处于静态时和传输过程中进行加密。 而且只能由授权用户进行解密。 文档或电子邮件的这种加密保持不变，即使将其重命名。 此外，你可以配置使用权限和限制，如下面的示例：
 
 - 只有组织内的用户才能打开公司机密文档或电子邮件。
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/13/2017
 
 标签应用保护时，受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 对于受保护的文件，这些位置不支持以下内容：共同创作、Office Online、搜索、文档预览、缩略图、电子数据展示和数据丢失防护 (DLP)。 
 
-用户可以在 Outlook 中应用标签以保护其电子邮件之前，不必为信息权限管理 (IRM) 配置 Exchange。 但是，在为 IRM 配置 Exchange 之前，你无法获得将 Exchange 与Azure Rights Management 保护配合使用的完整功能。 例如，用户无法在移动电话上或通过 Outlook 网页版查看受保护的电子邮件，无法将受保护的电子邮件编入索引用于搜索，并且你无法为权限管理保护配置 Exchange Online DLP。 若要将 Exchange 配置为支持这些其他的方案，请参阅以下资源：
+用户不必事先为信息权限管理 (IRM) 配置 Exchange 即可在 Outlook 中应用标签保护其电子邮件。 但是，在为 IRM 配置 Exchange 之前，你无法获得将 Exchange 与Azure Rights Management 保护配合使用的完整功能。 例如，用户无法在移动电话上或通过 Outlook 网页版查看受保护的电子邮件，无法将受保护的电子邮件编入索引用于搜索，并且无法为 Rights Management 保护配置 Exchange Online DLP。 若要将 Exchange 配置为支持这些其他的方案，请参阅以下资源：
 
 - 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](../deploy-use/configure-office365.md#exchange-online-irm-configuration)简介。
 
@@ -73,13 +73,15 @@ ms.lasthandoff: 09/13/2017
     
     ![为 Azure 信息保护标签配置保护权限](../media/info-protect-protection-bar-configured.png)
 
-6. 在“保护”边栏选项卡上，选择“Azure RMS”或“Azure (云密钥)”或选择“HYOK (AD RMS)”。 第一个选项正处于重命名的过程中。
+6. 在“保护”边栏选项卡上，选择“Azure (云密钥)”或“HYOK (AD RMS)”。
     
-    大多数情况下，为权限设置选择“Azure RMS”或“Azure (云密钥)”。 请勿选择“**HYOK (AD RMS)**”，除非你已阅读并了解此“*自留密钥*”(HYOK) 配置随附的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。 若要继续配置 HYOK (AD RMS)，请转到步骤 10。
+    大多数情况下，为权限设置选择“Azure (云密钥)”。 请勿选择“**HYOK (AD RMS)**”，除非你已阅读并了解此“*自留密钥*”(HYOK) 配置随附的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。 若要继续配置 HYOK (AD RMS)，请转到步骤 10。
     
 7. 选择下列选项之一：
     
     - 选择预定义的模板：使用已配置的一个默认模板或自定义模板。 此模板必须为已发布（未存档），且必须未链接到另一个标签。 选中此选项后，可以使用“编辑模板”按钮[将模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)。
+    
+    提示：如果使用“编辑模板”按钮，请参考[曾使用 Azure 经典门户执行的任务](migrate-portal.md)获取帮助。。
     
     - “设置权限”：在此门户中定义新的保护设置。
     
@@ -87,9 +89,9 @@ ms.lasthandoff: 09/13/2017
         
         如果选择 Outlook 选项：标签显示在 Outlook 中，并且用户应用该标签时产生的行为与“不转发”选项相同。
         
-        如果选择 Word、Excel、PowerPoint 和文件资源管理器选项：此选项需要 Azure 信息保护客户端的预览版本。 设置了此选项且用户具有预览版客户端时，标签显示在这些应用程序中。 用户应用标签时产生的行为是显示对话框，以便用户选择自定义权限。 在此对话框中，用户必须指定权限、用户或组以及任意到期日期。 确保用户具有关于如何提供这些值的说明和指导。
+        如果为 Word、Excel、PowerPoint 和文件资源管理器选择此选项：设置此选项后，标签将显示在这些应用程序中。 用户应用标签时产生的行为是显示对话框，以便用户选择自定义权限。 在此对话框中，用户必须指定权限、用户或组以及任意到期日期。 确保用户具有关于如何提供这些值的说明和指导。
 
-8. 如果为“Azure RMS”或“Azure (云密钥)”选择了“选择预配模板”，请单击下拉框，然后选择要用于保护包含此标签的文档和电子邮件的[模板](../deploy-use/configure-policy-templates.md)。 看不到已存档的模板或已为另一个标签选择的模板。
+8. 如果为“Azure (云密钥)”选择了“选择预配模板”，请单击下拉框，然后选择要用于保护包含此标签的文档和电子邮件的[模板](../deploy-use/configure-policy-templates.md)。 看不到已存档的模板或已为另一个标签选择的模板。
     
     如果选择“部门模板”，或者如果已配置[载入控件](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)：
     
@@ -97,7 +99,7 @@ ms.lasthandoff: 09/13/2017
         
         请注意，将始终显示所有已发布的模板，即使正在配置作用域内策略。 例如，正在为市场营销组配置作用域内策略。 可选择的模板不限于作用域为“营销”组的模板，还可以选择所选用户不能使用的部门模板。 为了方便配置和尽量减少故障排除，请考虑命名部门模板以匹配作用域内策略中的标签。 
             
-9. 如果为“Azure RMS”或“Azure (云密钥)”选择“设置权限”，此选项将允许配置可在模板中配置的相同设置。 
+9. 如果为“Azure (云密钥)”选择了“设置权限”，此选项允许配置可在模板中配置的相同设置。 
     
     选择“添加权限”，在“添加权限”边栏选项卡上，选择有权使用所选标签保护的内容的第一组用户和组：
     
@@ -134,21 +136,21 @@ ms.lasthandoff: 09/13/2017
     
     有关指定模板 GUID 和授权 URL 的说明，请参阅[查找相关信息以使用 Azure 信息保护标签指定 AD RMS 保护](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)。
     
-    要使用用户定义的权限选项，必须具有 Azure 信息保护客户端的预览版本。 此选项使用户可以指定应向其授予权限的人员并指定具体的权限。 然后，可以优化此选项并选择仅 Outlook（默认）或 Word、Excel、PowerPoint 和文件资源管理器。 
+    “用户定义的权限”选项允许用户指定应向其授予权限的人员并指定具体的权限。 然后，可以优化此选项并选择仅 Outlook（默认）或 Word、Excel、PowerPoint 和文件资源管理器。 
     
     如果选择 Outlook 选项：标签显示在 Outlook 中，并且用户应用该标签时产生的行为与“不转发”选项相同。
     
-    如果选择 Word、Excel、PowerPoint 和文件资源管理器选项：标签将显示在这些应用程序中。 用户应用标签时产生的行为是显示对话框，以便用户选择自定义权限。 在此对话框中，用户必须指定权限、用户或组以及任意到期日期。 确保用户具有关于如何提供这些值的说明和指导。 目前，在文件资源管理器中，此选项始终使用 Azure RMS 保护，而不是 HYOK (AD RMS) 保护。
+    如果选择 Word、Excel、PowerPoint 和文件资源管理器选项：标签将显示在这些应用程序中。 用户应用标签时产生的行为是显示对话框，以便用户选择自定义权限。 在此对话框中，用户必须指定权限、用户或组以及任意到期日期。 确保用户具有关于如何提供这些值的说明和指导。 请注意，文件资源管理器的此选项始终使用 Azure RMS 保护，而不是 HYOK (AD RMS) 保护，除非使用客户端的预览版本。
 
-11. 单击“确定”关闭“保护”边栏选项卡，然后“标签”边栏选项卡上的“保护”选项中会显示你选择的“不要转发”或模板。
+11. 单击“确定”关闭“保护”边栏选项卡，然后“标签”边栏选项卡上的“保护”选项中会显示你选择的“用户定义的模板”或模板。
 
 12. 在“**标签**”边栏选项卡上，单击“**保存**”。
 
 13. 在“Azure 信息保护”边栏选项卡上，使用“保护”列确认标签现在显示你所需的保护设置：
     
-    - Azure RMS 或 HYOK (AD RMS)，或一个复选标记（若已配置保护）。 
+    - 一个复选标记（若已配置保护）。 
     
-    - 删除保护或 x 标记，表示取消（若已将标签配置为删除保护）。
+    - 一个表示取消的 x 标记（若已将标签配置为删除保护）。
     
     - 未设置保护时，为空白字段。 
 

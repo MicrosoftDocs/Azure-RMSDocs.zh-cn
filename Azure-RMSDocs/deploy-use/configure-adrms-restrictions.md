@@ -4,17 +4,17 @@ description: "如果选择具有 Azure 信息保护的 HYOK (AD RMS) 保护，�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/13/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: ef39c5489e63a67e0880e4faab4d9675a49f5f90
-ms.sourcegitcommit: 4e31a4797eb8df64af3ae8932d2b49839e7a4524
+ms.openlocfilehash: cceacbe94983e66bdde6de0947ae59b44e29a54e
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 保护的自留密钥 (HYOK) 要求和限制
 
@@ -65,13 +65,11 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
     虽然可以为“不转发”配置标签以使用 HYOK 或 Azure Rights Management 服务，但用户也可自行选择“不转发”。 可使用 Office 功能区“邮件”选项卡上的“不转发”按钮或使用 Outlook 菜单选项来选择此选项。 “不转发”菜单选项位于“文件” > “权限”中，此外也可通过功能区上“选项”选项卡中的“权限”按钮进行选择。 
     
-    用户选择“不转发”按钮后，即可使用 Azure RMS 或 AD RMS，该选择不是确定性选择。 若用户从 Outlook 菜单选项选择“不转发”，则他们可以选择 Azure RMS 或 AD RMS，但可能不知道应为电子邮件选择哪一个选项。 对于这两种方案，如果在应使用 Azure RMS 的情况下使用了 AD RMS，则与其进行外部共享的人员无法打开这些电子邮件。
+    用户在 Outlook 中选择“不可转发”按钮时，Azure 信息保护客户端始终使用 Azure RMS。 如果不需要此行为，可以配置[高级客户端设置](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)，从而在 Outlook 中隐藏“不转发”按钮。 
     
-    用户在 Outlook 中选择“不转发”按钮时，Azure 信息保护客户端的当前预览版本始终使用 Azure RMS。 如果不需要此行为，可以配置[高级客户端设置](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)，从而在 Outlook 中隐藏“不转发”按钮。 
+    若用户从 Outlook 菜单选项选择“不转发”，则他们可以选择 Azure RMS 或 AD RMS，但可能不知道应为电子邮件选择哪一个选项。 如果在应使用 Azure RMS 的情况下使用了 AD RMS，则与其进行外部共享的人员无法打开这些电子邮件
 
-- 对于 Azure 信息保护客户端的当前通用版本：如果用户在你使用 AD RMS (HYOK) 保护和 Azure RMS 保护时配置自定义权限，则文档或电子邮件始终受 Azure Rights Management 保护。 此限制不适用于客户端的当前预览版本。
-
-- 如果为 Word、Excel、PowerPoint 和文件资源管理器（受 Azure 信息保护客户端当前预览版本支持）配置用户定义的权限：在“文件资源管理器”中，始终通过使用 Azure RMS 而不是 HYOK (AD RMS) 进行保护。 
+- 如果为 Word、Excel、PowerPoint 和文件资源管理器配置用户定义的权限：在“文件资源管理器”中，始终通过使用 Azure RMS 而不是 HYOK (AD RMS) 进行保护。 此限制不适用于客户端的当前预览版本。
 
 - 如果用户选择了应用 AD RMS 保护的 Outlook 中的标签，然后在发送电子邮件之前改变了主意，并选择了应用 Azure RMS 保护的标签，则无法应用新选择的标签。 用户将看到以下错误消息：**Azure 信息保护无法应用此标签。你无权执行此操作。**
     

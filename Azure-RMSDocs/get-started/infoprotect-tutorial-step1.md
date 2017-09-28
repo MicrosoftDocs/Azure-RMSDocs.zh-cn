@@ -4,17 +4,17 @@ description: "快速试用 Azure 信息保护入门教程步骤 1 - 激活 Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: e80d47d1a477c03296b9a2e0eb4373929cfaa66b
-ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
+ms.openlocfilehash: c168f54d873d8e5b1f2d455c9ae2d12cda8926b3
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="step-1-activate-the-rights-management-service"></a>步骤 1：激活权限管理服务
  
@@ -40,15 +40,15 @@ ms.lasthandoff: 09/13/2017
     > [!TIP] 
     > 选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览到该服务。
 
-4. 注意：首次连接到该服务时，系统将自动打开“快速入门”页上的信息。 你可以稍后返回到此信息。 对于本教程，选择“RMS 设置”或“保护激活”。 此选项正处于重命名的过程中。 
+4. 注意：首次连接到该服务时，系统将自动打开“快速入门”页上的信息。 你可以稍后返回到此信息。 对于本教程，选择“保护激活”。 
 
 5. 现在，可查看是否已为租户激活 Azure Rights Management 服务。 
     
-    - 如果服务已激活，会看到类似以下内容的信息：
+    - 如果服务已激活，会看到以下确认信息：
         
         ![Azure RMS 的 Azure 信息保护状态](../media/info-protect-azurerms-activated.png)
         
-    - 如果服务未激活，会在状态信息中看到此反馈和激活选项。 例如：
+    - 如果服务未激活，会在状态信息中看到此反馈和激活选项：
         
         ![Azure RMS 的 Azure 信息保护状态](../media/info-protect-azurerms-deactivated.png)
 

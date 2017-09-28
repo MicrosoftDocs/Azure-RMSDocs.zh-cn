@@ -4,7 +4,7 @@ description: "说明如何对文档和电子邮件进行分类和保护。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/04/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5e8329a441dcc871a155ef1b1484544732bec212
-ms.sourcegitcommit: 23aeb2bcce05968b850313333e359c99dd99a56f
+ms.openlocfilehash: b82904da81b73f0ae7ab5ab758a4cf3a982eb6ee
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
@@ -42,11 +42,14 @@ ms.lasthandoff: 09/05/2017
 
 使用 Azure 信息保护栏并选择其中一个已为你配置的标签。 
 
-例如，在下图中，因为“敏感度”显示“未设置”，因此尚未标记文档。 若要设置标签，例如“内部”，请单击“内部”。 如果你不确定要将哪种标签应用于当前文档或电子邮件，请使用标签工具提示详细了解每种标签及其应用情况。
+例如，在下图中，因为“敏感度”显示“未设置”，因此尚未标记文档。 要设置标签，例如“常规”，请单击“常规”。 如果你不确定要将哪种标签应用于当前文档或电子邮件，请使用标签工具提示详细了解每种标签及其应用情况。 
 
 ![Azure 信息保护栏示例](../media/info-protect-bar-not-set-callout.png)
 
 如果已将某种标签应用于文档，并且想要进行更改，可以选择其他标签。 如果标签没有显示在栏上，请首先单击当前标签值旁边的“编辑标签”图标。
+
+> [!TIP]
+> 还可从“文件”选项卡上的“保护”按钮中选择标签。
 
 除了手动选择标签，还可通过以下方式应用标签：
 
@@ -83,9 +86,11 @@ ms.lasthandoff: 09/05/2017
     - **使用自定义权限进行保护**：请务必选中此选项，这样才能指定并应用自定义权限。 取消选中此选项即撤销任何自定义权限。
     
     - **选择权限**：如果要保护文件，以便只有你可以访问，请选中“**仅限自己访问**”。 否则，请选中“希望对象拥有的访问级别”。
-
+    
     - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 请注意，暂不支持个人电子邮件地址。
         
+        如果具有当前预览版本的客户端，还可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
+    
     - 过期访问：仅对具有时效性的文件选择此选项，以使指定的人员无法在设置日期后打开选定的一个文件或多个文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
 
 5. 单击“**应用**”，然后等待“**已应用自定义权限**”消息。 然后单击 **“关闭”**。
