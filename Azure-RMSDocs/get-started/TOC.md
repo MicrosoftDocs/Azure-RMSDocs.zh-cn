@@ -11,7 +11,7 @@
 ## [信息和支持](information-support.md)
 ## [术语](terminology.md)
 ## [快速入门教程](infoprotect-quick-start-tutorial.md)
-### [步骤 1：激活服务](infoprotect-tutorial-step1.md)
+### [步骤 1： 激活保护](infoprotect-tutorial-step1.md)
 ### [步骤 2： 配置并发布策略](infoprotect-tutorial-step2.md)
 ### [步骤 3：安装客户端](infoprotect-tutorial-step3.md)
 ### [步骤 4：在实际操作中了解功能 — 标签、分类和保护](infoprotect-tutorial-step4.md)
