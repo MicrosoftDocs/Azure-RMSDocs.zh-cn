@@ -4,7 +4,7 @@ description: "用于将 Active Directory Rights Management Services (AD RMS) 部
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a4337d197e08cd75b974594fdd797c9bb383c1f9
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 6651c812c207494bc98d5a1b22e359910a94c3cc
+ms.sourcegitcommit: 7d07b82da9aca52fe9e38fa1bada144226168a6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 10/05/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -111,8 +111,6 @@ ms.lasthandoff: 08/24/2017
 - 对于 Windows Server 2008 R2：检查是否已安装[在 Windows Server 2008 R2 和 Windows Server 2008 中，AD RMS 的 RSA 密钥长度增加到 2048 位](https://support.microsoft.com/help/2627272/rsa-key-length-is-increased-to-2048-bits-for-ad-rms-in-windows-server )修补程序。 如果不是，AD RMS 群集正以加密模式 1 运行。
 
 ### <a name="migration-limitations"></a>迁移限制
-
--   虽然迁移过程支持将服务器授权证书 (SLC) 密钥迁移到 Azure 信息保护的硬件安全模块 (HSM)，但 Exchange Online 目前对于 Azure 信息保护使用的 Rights Management 服务不支持此配置。 如果你希望在迁移到 Azure 信息保护之后获得 Exchange Online 的完整 IRM 功能，必须[由 Microsoft 管理](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok)你的 Azure 信息保护租户密钥。 你也可以自行管理 Azure 信息保护租户 (BYOK) 密钥，在这种情况下，Exchange Online 的 IRM 功能将会受限。 有关将 Exchange Online 与 Azure Rights Management 服务配合使用的详细信息，请参阅这些迁移说明中的[步骤 8：为 Exchange Online 配置 IRM 集成](migrate-from-ad-rms-phase4.md#step-8-configure-irm-integration-for-exchange-online)。
 
 -   如果 Azure 信息保护使用的 Rights Management 服务不支持你的软件和客户端，则它们无法保护或使用受 Azure Rights Management 保护的内容。 请务必查看 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)中的“支持的应用程序和客户端”部分。
 
