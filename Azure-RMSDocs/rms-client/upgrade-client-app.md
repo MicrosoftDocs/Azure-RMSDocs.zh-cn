@@ -13,10 +13,10 @@ ms.assetid: d7bc2478-c22f-4e19-9992-012658362b25
 ms.reviewer: eymanor
 ms.suite: ems
 ms.openlocfilehash: 417294ff0890f2371909915a867fbdf56669e972
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.sourcegitcommit: 2bca892231ca8393b88bd5da7d0890a573770a09
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>用于操作 RMS 共享应用程序的任务
 
