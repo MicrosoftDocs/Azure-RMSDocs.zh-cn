@@ -1,22 +1,21 @@
 ---
-title: "开发者指南 - AIP"
+title: "Azure 信息保护开发人员指南"
 description: "开发人员可使用 Azure 信息保护来保护和管理所有类型的文件"
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 03/13/2017
+ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 3268b175b2e029c55ec5488a8c4ace8ad92fcb18
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: ea13c3dbf37dd22a6e93786390bd6be4da7a6959
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 
@@ -104,7 +103,7 @@ ms.lasthandoff: 06/30/2017
 
 ## <a name="videos"></a>视频
 
-来自 Microsoft 的 Dan Plastina 提供了此 [Azure 信息保护简介](https://www.microsoft.com/cloud-platform/azure-information-protection)
+[Azure 信息保护简介](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
 这些视频来源于 Micorsoft 2016 Ignite 会议
 

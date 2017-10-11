@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护中数据保护服务 Azure Rights Manage
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a2c0a8ef4534f8d5149178986688c4d00b4cee9f
-ms.sourcegitcommit: 5ea919b1b2bcb9c4b3e5dd1939ff8d0d937e1168
+ms.openlocfilehash: 381eaee2aa33a2a6a715c31616ad92a0f957e8b0
+ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -47,9 +47,15 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 若要深入了解 HYOK 并确保你了解其局限性和限制及使用指南，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](../deploy-use/configure-adrms-restrictions.md)。
 
+## <a name="can-i-now-use-byok-with-exchange-online"></a>现在我是否可以结合使用 BYOK 和 Exchange Online？
+
+可以，在按照 [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)（设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能）中的说明进行操作时，现在可以结合使用 BYOK 和 Exchange Online。 这些说明介绍如何启用 Exchange Online 中的新功能，这些功能支持将 BYOK 用于 Azure 信息保护和新的 Office 365 邮件加密。
+
+有关此更改的详细信息，请参阅博客公告：[具有新功能的 Office 365 邮件加密](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)
+
 ## <a name="where-can-i-find-information-about-third-party-solutions-that-integrate-with-azure-rms"></a>在哪里可以找到与 Azure RMS 集成的第三方解决方案的相关信息？
 
-许多软件供应商已经具备或正在实施与 Azure 权限管理集成的解决方案，并且这一数量正在快速增长。 你可能会发现查看[启用 RMS 的解决方案](requirements-applications.md#rms-enlightened-solutions)列表，并通过 Twitter 上的 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) 了解最新动态非常有用。 但是，如果有特定的问题，可以向信息保护团队发送电子邮件：askipteam@microsoft.com。
+许多软件供应商已经具备或正在实施与 Azure 权限管理集成的解决方案，并且这一数量正在快速增长。 你可能会发现，查看[启用 RMS 的解决方案](requirements-applications.md#rms-enlightened-solutions)列表，并在 Twitter 上从 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility) 了解最新更新非常有用。 但是，如果有特定的问题，可以向信息保护团队发送电子邮件：askipteam@microsoft.com。
 
 ## <a name="is-there-a-management-pack-or-similar-monitoring-mechanism-for-the-rms-connector"></a>RMS 连接器是否有管理包或类似的监视机制？
 
@@ -86,7 +92,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 ## <a name="if-i-use-this-protection-for-my-production-environment-is-my-company-then-locked-into-the-solution-or-risk-losing-access-to-content-that-we-protected-with-azure-rms"></a>如果在我的生产环境中使用该保护，那么我的公司是否就只能使用该解决方案？或者是否存在无法访问由 Azure RMS 进行保护的内容的风险？
 不会，你可以始终控制并继续访问数据，即使你决定不再使用 Azure Rights Management 服务也是如此。 有关详细信息，请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](../deploy-use/decommission-deactivate.md)。
 
-但是，在你解除 Azure RMS 部署授权前，我们希望倾听你的意见，了解你为什么做出这个决定。 如果 Azure Rights Management 保护未能满足你的业务需求，请联系我们，以确认在不久的将来是否会有新的功能，或者是否存在替代功能。 将电子邮件发送到 [AskIPTeam@Microsoft.com](mailto:askipteam@microsoft.com?subject=Planning%20to%20decommission%20Azure%20RMS)，我们将很高兴讨论你的技术和商业要求。
+但是，在你解除 Azure Rights Management 服务授权前，我们希望倾听你的意见，了解你为什么做出这个决定。 如果 Azure Rights Management 保护未能满足你的业务需求，请联系我们，以确认在不久的将来是否会有新的功能，或者是否存在替代功能。 将电子邮件发送到 [AskIPTeam@Microsoft.com](mailto:askipteam@microsoft.com?subject=Planning%20to%20decommission%20Azure%20RMS)，我们将很高兴讨论你的技术和商业要求。
 
 ## <a name="can-i-control-which-of-my-users-can-use-azure-rms-to-protect-content"></a>是否可以控制哪些用户能够使用 Azure RMS 来保护内容？
 是的，Azure Rights Management 服务具有针对这一应用场景的用户载入控制。 有关详细信息，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md) 一文中的[为分阶段部署配置加入控制](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)部分。
@@ -97,9 +103,12 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 我们未提供相应的管理选项来防止用户与特定的组织安全共享文档。 例如，你想要阻止某家你不信任的或者竞争的组织。 阻止 Azure 权限管理服务向这些组织的用户发送受保护文档没有任何意义，因为你的用户之后还是会共享未保护的文档，而这也许是你最不希望发生的事情。 例如，你无法识别谁在与这些组织的用户共享公司机密文档，但是，如果文档（或电子邮件）受 Azure Rights Management 服务的保护，则可以识别。
 
 ## <a name="when-i-share-a-protected-document-with-somebody-outside-my-company-how-does-that-user-get-authenticated"></a>如果我与公司之外的用户共享受保护文档，该用户如何进行身份验证。
-Azure Rights Management 服务始终使用 Azure Active Directory 帐户和关联的电子邮件地址进行用户身份验证，这可以为管理员建立企业间的无缝协作。 如果其他组织使用 Azure 服务，用户已具有 Azure Active Directory 帐户，即使这些帐户是在本地创建和进行管理，然后同步到 Azure。 如果组织具有 Office 365，此服务在后台还会将 Azure Active Directory 用于用户帐户。 如果用户的组织在 Azure 中没有托管帐户，用户可以注册[个人 RMS](../understand-explore/rms-for-individuals.md)，并使用该用户帐户为组织创建非托管的 Azure 租户和目录，以便可以在 Azure Rights Management 服务中对此用户（和后续用户）进行身份验证。
+
+默认情况下，Azure Rights Management 服务使用 Azure Active Directory 帐户和关联的电子邮件地址进行用户身份验证，这可以为管理员建立企业到企业的无缝协作。 如果其他组织使用 Azure 服务，用户将具有 Azure Active Directory 帐户，即使这些帐户是在本地创建和进行管理，然后同步到 Azure。 如果组织具有 Office 365，此服务在后台还会将 Azure Active Directory 用于用户帐户。 如果用户的组织在 Azure 中没有托管帐户，用户可以注册[个人 RMS](../understand-explore/rms-for-individuals.md)，并使用该用户帐户为组织创建非托管的 Azure 租户和目录，以便可以在 Azure Rights Management 服务中对此用户（和后续用户）进行身份验证。
 
 这些帐户的身份验证方法各不相同，具体取决于其他组织中的管理员如何配置 Azure Active Directory 帐户。 例如，他们可以使用为这些帐户、多重身份验证 (MFA)、联合身份验证创建的密码，或在 Active Directory 域服务中创建、然后同步到 Azure Active Directory 的密码。
+
+如果针对在 Azure AD 中没有帐户的用户保护含有 Office 文档附件的电子邮件，身份验证方法则会发生改变。 Azure Rights Management 服务会通过一些常用社交标识提供者进行身份验证，例如 Gmail。 如果用户的电子邮件提供商受支持，用户可登录到该服务，其电子邮件提供商负责对其进行身份验证。 如果用户的电子邮件提供商不受支持，或者作为首选项，用户可申请用于对他们进行身份验证的一次性密码，并在 Web 浏览器中显示含有受保护文档的电子邮件。
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>能否将外部用户（公司外部人员）添加到自定义模板？
 
@@ -107,14 +116,20 @@ Azure Rights Management 服务始终使用 Azure Active Directory 帐户和关�
 
 有关将自定义模板转换为标签以便可以轻松添加外部用户的详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
 
-## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Azure RMS 是否适用于 Azure AD 中的动态组？
-借助 Azure AD Premium 功能，你可以通过指定[基于属性的规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)为安全组配置动态成员资格。 此组类型不支持电子邮件地址，因此不能与 Azure 权限管理服务一起使用。 但是，Office 365 组支持动态组成员资格并已启用邮件。 由于此组启用了邮件，可以将其用于 Azure Rights Management 保护。
+有关将自定义模板转换为标签的详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
 
-有关可用于 Azure 权限管理服务的用户和组的要求详细信息，请参阅[准备用户和组以用于 Azure 信息保护](../plan-design/prepare.md)。
+## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>我可以对 Azure RMS 使用什么类型的组？
+大多数情况下，可以使用具有电子邮件地址的 Azure AD 中的任何组类型。 尽管分配使用权限时此经验法则始终适用，但在管理 Azure Rights Management 服务时存在一些例外。 有关详细信息，请参阅[组帐户 Azure 信息保护要求](../plan-design/prepare.md#azure-information-protection-requirements-for-group-accounts)。
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>如何向 Gmail 或 Hotmail 帐户发送受保护的电子邮件？
 
-你可能已查看关于 Azure 信息保护如何向 Gmail 或 Hotmail 帐户发送受保护的电子邮件的参考资料或演示。 此功能仍处于个人预览阶段，所以在完全发布前，无法在本文档中找到有关此功能的详细信息。
+使用 Exchange Online 和 Azure Rights Management 服务时，必须将电子邮件作为受保护的邮件进行发送。 例如，可以在 Outlook 网页版中的命令栏上选择新的“保护”按钮，使用 Outlook 的“不要转发”选项，选择一个从 Azure Rights Management 应用保护的 Azure 信息保护标签，或者可通过 Exchange Online 传输规则来应用保护。
+
+收件人会看见一个登录到他们 Gmail、Yahoo 或 Microsoft 帐户的选项，然后可以阅读受保护的邮件。 或者，他们可选择一次性密码选项在浏览器中阅读此电子邮件。
+
+若要支持此方案，必须为 Azure Rights Management 服务和 Office 365 邮件加密中的新功能启用 Exchange Online。 有关此配置的详细信息，请参阅 [Exchange Online：IRM 配置](../deploy-use/configure-office365.md#exchange-online-irm-configuration)。
+
+若要详细了解支持所有设备上的所有电子邮件帐户的新功能，请参阅以下博客文章：[Announcing new capabilities available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)（宣布在 Office 365 邮件加密中推出新功能）。
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS 支持哪些设备和哪种文件类型？
 有关支持 Azure Rights Management 服务的设备的列表，请参阅[支持 Azure Rights Management 数据保护的客户端设备](../get-started/requirements-client-devices.md)。 由于并非所有受支持的设备目前都能支持全部的 Rights Management 功能，因此，还请务必查看[启用 RMS 的应用程序](../get-started/requirements-applications.md#rms-enlightened-applications)表。
@@ -125,7 +140,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 ## <a name="how-do-i-configure-a-mac-computer-to-protect-and-track-documents"></a>如何配置 Mac 计算机以保护和跟踪文档？
 
-首先，请确保已使用 https://portal.office.com 上的软件安装链接安装了 Office for Mac。 有关完整说明，请参阅[在电脑或 Mac 上下载并安装或重新安装 Office 365 或 Office 2016](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658)。
+首先，请确保已使用 https://portal.office.com 上的软件安装链接安装了 Office for Mac。有关完整说明，请参阅[在电脑或 Mac 上下载并安装或重新安装 Office 365 或 Office 2016](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658)。
 
 打开 Outlook 并使用 Office 365 工作或学校帐户创建配置文件。 然后，创建新邮件，并执行以下操作来配置 Office，使其可以使用 Azure 权限管理服务来保护文档和电子邮件：
 
@@ -142,11 +157,6 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>当我打开受 RMS 保护的 Office 文档时，关联的临时文件是否也将受 RMS 保护？
 否。 在此方案中，关联的临时文件不包含原始文档中的数据，而仅包含该文件打开时用户输入的内容。 与原始文件不同，临时文件明显不适合共享，将保留在设备上，受本地安全控件（例如 BitLocker 和 EFS）保护。
 
-## <a name="we-really-want-to-use-byok-with-azure-information-protection-but-learned-that-this-isnt-compatible-with-exchange-onlinewhats-your-advice"></a>我们确实很想将 BYOK 和 Azure 信息保护结合使用，但是 BYOK 与 Exchange Online 不兼容 — 你有什么建议呢？
-不要因目前这种限制而推迟使用 Azure 信息保护的 Azure Rights Management 服务。 如果具有 Exchange Online 并想要使用自带密钥 (BYOK)，我们建议暂时以默认密钥管理模式部署 Azure 信息保护，该模式由 Microsoft 生成和管理密钥。 如此一来，你现在可以获取保护重要文件和电子邮件的所有好处，并可以选择以后移动到 BYOK（例如，当 Exchange Online 不支持 BYOK 时）。 移动到 BYOK 时，以前受保护的文档和电子邮件仍然能够通过使用存档的密钥进行访问。
-
-但是，如果公司策略要求使用硬件安全模块 (HSM)，而这会阻止 Azure 信息保护的部署，那么另一种选择是将 Azure 信息保护和 BYOK 一起部署，只不过 Exchange 的 Rights Management 保护功能会减弱。 有关详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md)中的 [BYOK 定价和限制](../plan-design/byok-price-restrictions.md)。
-
 ## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>我正在寻找的一项功能看起来不适用于 SharePoint 保护的库。是否计划了针对此功能的支持？
 目前，SharePoint 通过使用受 IRM 保护的库来支持受 RMS 保护的文档，但是该库不支持 Rights Management 模板、文档跟踪和一些其他功能。 有关详细信息，请参阅 [Office 应用程序和服务](../understand-explore/office-apps-services-support.md)一文中的 [SharePoint Online 和 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server)部分。
 
@@ -158,12 +168,13 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 正如 SharePoint 站点管理员为其拥有的 SharePoint 库启用并配置 IRM 一样，根据 OneDrive for Business 的设计，用户也需要为自己的 OneDrive for Business 库启用并配置 IRM。 不过，你可以使用 PowerShell 为他们执行此类操作。 有关说明，请参阅 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)一文中的 [SharePoint Online 和 OneDrive for Business：IRM 配置](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)部分。
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>对于成功部署，是否有任何提示或窍门？
-在考察大量的部署并聆听客户、合作伙伴、顾问和支持工程师的意见后，结合自身的经验，我们很乐意与你分享下面这个极其有效的诀窍：“设计并部署简单策略”。
 
-由于 Azure 信息保护支持与任何人安全共享，因此，你完全有理由相信自己的数据保护措施的覆盖面。 但是，对权限策略应持保守态度。 对于许多组织而言，对业务产生的最大影响来自于通过应用默认权限策略模板防止数据泄漏，将其访问权限限制给组织中的人员。 当然，你可以根据需要采取粒度级比这高得多的措施 - 例如，防止人员打印、编辑，等等。但是，对于确实需要高级安全性的文档，请将更高粒度级的限制保留为例外措施，并且不要一开始就实施这些限制性更强的策略，而是计划采取分阶段的实施方案。
+在考察大量的部署并聆听客户、合作伙伴、顾问和支持工程师的意见后，结合自身的经验，我们很乐意与你分享下面这个极其有效的诀窍：设计并部署简单策略。
+
+由于 Azure 信息保护支持与任何人安全共享，因此，你完全有理由相信自己的数据保护措施的覆盖面。 但是在配置权限使用限制时请保守一点。 对许多组织而言，最大的业务影响来自于通过将访问权限限制为组织内部人员的方式来防止数据泄露。 当然，你可以根据需要采取粒度级比这高得多的措施 - 例如，防止人员打印、编辑，等等。但是，对于确实需要高级安全性的文档，请将更高粒度级的限制保留为例外措施，并且不要一开始就实施这些限制性更强的使用权限，而是计划采取分阶段的实施方案。
 
 ## <a name="how-do-we-regain-access-to-files-that-were-protected-by-an-employee-who-has-now-left-the-organization"></a>我们如何重新获取对由已离职员工保护的文件的访问权限？
-使用[超级用户功能](../deploy-use/configure-super-users.md)，它可以让授权用户对组织租户授予的所有使用许可证行使使用权限。 根据需要，此相同功能可以让授权服务编写文件索引和检查文件。
+请使用[超级用户功能](../deploy-use/configure-super-users.md)，对于受租户保护的所有文档和电子邮件，此功能会向授权用户授予完全控制使用权限。 超级用户可始终阅读此受保护的内容，并可根据需要移除保护或针对不同的用户进行重新保护。 根据需要，此相同功能可以让授权服务编写文件索引和检查文件。
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>在文档跟踪站点中测试吊销时，显式的消息提示人们仍可在 30 天内访问此文档—该时间段是否可配置？
 

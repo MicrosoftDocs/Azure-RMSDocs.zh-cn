@@ -1,6 +1,6 @@
 ---
 title: "快速入门教程步骤 1 - AIP"
-description: "快速试用 Azure 信息保护入门教程步骤 1 - 激活 Azure 权限管理服务。"
+description: "快速试用 Azure 信息保护入门教程步骤 1 - 激活保护服务。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -10,20 +10,20 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: c168f54d873d8e5b1f2d455c9ae2d12cda8926b3
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: 91eb9ec61f4fa1ebd7aac3cf0c244878ef450bb9
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="step-1-activate-the-rights-management-service"></a>步骤 1：激活权限管理服务
+# <a name="step-1-activate-protection"></a>步骤 1：激活保护
  
 >*适用于：Azure 信息保护*
 
 > [!NOTE]
 >即使已为租户激活了 Azure Rights Management 服务，仍请完成此步骤确认激活状态。 说明包括登录到 Azure 门户和创建 Azure 信息保护边栏选项卡的相关信息，以便为执行步骤 2 做好准备。 
 
-如果已激活 Azure 权限管理服务，则可以保护组织最敏感的文档和电子邮件，并在将这些文档与其他人共享时跟踪受保护文档的使用状况。 激活此服务的方式有多种，包括使用 Windows PowerShell，以及使用管理门户。
+如果已激活 Azure 权限管理服务，则可以保护组织最敏感的文档和电子邮件，并在将这些文档与其他人共享时跟踪受保护文档的使用状况。 激活保护的方式有多种，包括使用 Windows PowerShell，以及使用管理门户。
 
 对于本教程，我们将使用 Azure 门户，该门户也是为用户配置标签的位置。 
 

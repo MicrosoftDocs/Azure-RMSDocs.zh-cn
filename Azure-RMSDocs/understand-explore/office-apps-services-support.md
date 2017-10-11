@@ -4,7 +4,7 @@ description: "最终用户 Office 应用程序（例如 Word 和 Outlook）和 O
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ede24547a01bc38e528ce02dac9abe0ade396c2d
-ms.sourcegitcommit: 6636defa6eca24360f15fb9ef93c2b82dc36cf76
+ms.openlocfilehash: eb40f6d2b43f175af71fd58b3bef4eb3d992152b
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/08/2017
 
 -   “数据丢失预防 (DLP) 策略”，包含一系列筛选邮件的条件，有助于防止机密或敏感内容的数据丢失。 机密或敏感内容的示例包括个人信息或信用卡信息。 检测到敏感数据时，可以使用策略提示，警告用户他们可能需要应用保护。 有关详细信息，请参阅 Exchange 库中的 [数据丢失防护](https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx)。
 
--   “Office 365 邮件加密”，使用传输规则将加密电子邮件发送到公司外部人员，该电子邮件在浏览器中阅读，浏览器界面与 Outlook 网页版相似。 你可以在公司的加密电子邮件中自定义免责声明文本和标题文本，甚至添加你公司的徽标。 有关详细信息，请参阅 Office 网站上的 [Office 365 邮件加密](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx)。
+-   **Office 365 邮件加密**，支持以附件形式向任何设备上的任何地址发送受保护的电子邮件和受保护的 Office 文档。 对于没有使用 Azure AD 的用户帐户，Web 体验支持社交标识提供者或一次性密码。 有关详细信息，请参阅 Office 网站上的 [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)（设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能）。
 
 如果使用本地 Exchange，可以通过部署 Azure 权限管理连接器结合使用 Azure 权限管理服务和 IRM 功能。 此连接器充当本地服务器和 Azure 权限管理服务之间的中继。
 

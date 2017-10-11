@@ -4,27 +4,39 @@ description: "可以删除或重排用户可以在信息保护栏看到的标签
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 09/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 2d11eb649ecec835d2ddf0045d8672c5b45af95f
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: f17e149dcd8cfb7398909cbe3a83cdcf71b80b33
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>如何删除或重排 Azure 信息保护的标签
 
 >*适用于：Azure 信息保护*
 
-可以删除或重排用户可以在信息保护栏看到的标签，方法是在 Azure 信息保护策略中对此进行配置。
+可以删除或重排用户可以在信息保护栏上看到的标签，方法是在 Azure 信息保护策略中选择这些操作。
 
 ![在 Azure 信息保护策略中删除或重排标签](../media/info-protect-contextmenu.png)
 
 删除应用于文档和电子邮件的标签并发布 Azure 信息保护策略时，该标签在下次由 Azure 信息保护客户端打开时会自动从这些文档或电子邮件中删除。
+
+但是，如果标签已应用保护，该标签则不会被删除。 标签中的保护设置将保留并显示在“保护模板”中。 现在可以将此模板转换为新的标签或链接到标签。 此模板存在时，无法创建与已删除标签的名称相同的新标签。 如果想那么做，有如下选项可供选择：
+
+- 将模板转换为标签。 
+    
+    建议采用此操作，因为随后可以按需更改此模板的名称并修改保护设置。
+
+- 使用 PowerShell 重命名模板或将它删除。
+    
+    在执行这些操作前，请考虑其他的管理员或服务是否正在使用此模板，并按其当前名称对其进行标识。 仅在无需打开由模板保护的文档或电子邮件时才删除此模板。
+
+有关管理保护模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
 删除标签前，请考虑是否要将其改为禁用。 禁用已应用到文档和电子邮件的标签时，将不会从这些文档和电子邮件中删除已应用的标签，但此标签将不再显示为“信息保护”栏上用户可以选择的标签。 通过禁用此标签，可保持原始配置，以供希望用户以后选择此标签时使用，在此情况下，只需重新启用此标签即可。
 

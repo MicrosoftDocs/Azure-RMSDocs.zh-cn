@@ -4,7 +4,7 @@ description: "如果你了解或以前部署过 Active Directory Rights Manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7b3a49925fc0486f7be161da501a59c1ec2ebdfc
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 4e9aa6a3e1742fc88f3c1e8e297f1391e2e89b75
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>比较 Azure 信息保护与 AD RMS
 
@@ -52,6 +52,7 @@ Azure 信息保护的一些主要差异：
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------|
 |支持 Microsoft Online Services（例如  Exchange Online 和 SharePoint Online 以及 Office 365）中的信息权限管理 (IRM) 功能。<br /><br />还支持本地 Microsoft 服务器产品，例如 Exchange Server、SharePoint Server 以及运行 Windows Server 和文件分类基础结构 (FCI) 的文件服务器。|支持本地 Microsoft 服务器产品，例如 Exchange Server、SharePoint Server 以及运行 Windows Server 和文件分类基础结构 (FCI) 的文件服务器。|
 |实现组织之间和任何组织内用户之间的隐式信任。 这意味着在用户使用 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 或 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]的情况下，或在用户注册了个人 RMS 的情况下，受保护内容可在同一组织或不同组织的用户之间共享。|信任必须在两个组织间以直接点对点的关系显式定义，方法是使用受信任用户域 (TUD) 或使用 Active Directory 联合身份验证服务 (AD FS) 创建的联合信任。|
+|在不存在信任关系时，通过社交标识提供者或一次性密码和 Web 浏览器使用联合身份验证，向用户发送受保护的电子邮件（包括自动受保护的 Office 文档附件）供其查看。|不存在信任关系时不支持发送保护的电子邮件。|
 |提供两个默认权限策略模板，将内容的访问权限仅限于自己的组织范围内；一个模板提供受保护内容的只读查看，另一个模板提供受保护内容的写入或修改权限。<br /><br />你还可以创建自己的自定义模板，其中包括只对用户的子集可见的部门模板。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。<br /><br />此外，如果模板不能满足需求，用户可以定义自己的一组权限。|没有默认模板；必须创建这些模板，然后分发它们。 有关详细信息，请参阅 [AD RMS 策略模板注意事项](http://go.microsoft.com/fwlink/?LinkId=154765)。<br /><br />此外，如果模板不能满足需求，用户可以定义自己的一组权限。|
 |支持的 Microsoft Office 最低版本为 Office 2010，它需要 [Azure 信息保护客户端](../rms-client/aip-client.md)或 RMS 共享应用程序。<br /><br />Microsoft Office for Mac：<br /><br />- Microsoft Office for Mac 2016：受支持<br /><br />- Microsoft Office for Mac 2011：不受支持|支持的 Microsoft Office 最低版本为 Office 2007。<br /><br />Microsoft Office for Mac：<br /><br />- Microsoft Office for Mac 2016：受支持<br /><br />- Microsoft Office for Mac 2011：受支持|
 |支持适用于 Windows、iOS 和 Android 的 [Azure 信息保护客户端](../rms-client/aip-client.md)。 RMS 共享应用继续支持 Mac 计算机和 Windows Phone。<br /><br />此外，Azure 信息保护客户端支持以下各项：<br /><br />- 与其他组织的用户共享。<br /><br />- 适用于用户的文档跟踪站点，包括撤消文档的功能。|支持适用于 Windows、iOS 和 Android 的 [Azure 信息保护客户端](../rms-client/aip-client.md)。 RMS 共享应用继续支持 Mac 计算机和 Windows Phone。 但是，共享不支持与其他组织的用户共享或文档跟踪站点以及用户撤销文档的功能。|
