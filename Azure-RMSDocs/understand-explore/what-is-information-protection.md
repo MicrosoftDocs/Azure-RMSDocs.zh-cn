@@ -4,17 +4,17 @@ description: "Azure 信息保护服务概述。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: fff96103544242510b7e53b1636f1f95fbd4bb2b
-ms.sourcegitcommit: c5e117f5329c6e5a93d5858a3b4609aadd8a6e7e
+ms.openlocfilehash: ba39c332437e2710554d1e8f69c3f676f0d870db
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -43,13 +43,13 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 此保护技术使用加密、标识和授权策略。 与应用的标签类似，使用权限管理能够始终为文档和电子邮件提供保护，而不受其位置的影响 – 不管是在组织、网络、文件服务器和应用程序的内部还是外部。 此信息保护解决方案让你可以始终控制你的数据，即使在这些数据与他人共享时也是如此。
 
-例如，可以配置报告文档或销售预测电子表格，以便仅允许组织内人员进行访问，并且可以控制是否可以编辑该文档、是否将其限制为只读，以及是否禁止打印它。 同样，你也可以配置电子邮件，并禁止转发电子邮件或使用“全部答复”选项。 这些保护任务可以使用权限管理模板来简化。
+例如，可以配置报告文档或销售预测电子表格，以便仅允许组织内人员进行访问，并且可以控制是否可以编辑该文档、是否将其限制为只读，以及是否禁止打印它。 同样，你也可以配置电子邮件，并禁止转发电子邮件或使用“全部答复”选项。 这些保护任务可以使用 Rights Management 模板来简化。
 
-### <a name="rights-management-templates"></a>权限管理模板
+### <a name="rights-management-templates"></a>Rights Management 模板
 
-激活 Azure Rights Management 服务之后，便会为你创建两个默认模板，仅限你组织内的用户才能访问数据。 可以使用这些模板立即帮助防止从你的组织泄露数据。 还可以通过配置应用更多限制性控件的你自己的自定义模板来补充这些默认模板。
+在激活 Azure Rights Management 服务之后，便会为你提供两个默认模板，用于将数据访问权限限制为你组织内的用户。 可以使用这些模板立即帮助防止从你的组织泄露数据。 你还可以通过配置应用更多限制性控件的自己的保护设置来补充这些默认模板。
 
-这些模板可以是标签配置的一部分，以便当特定标签应用于文档或电子邮件时，数据进行分类并自动受保护。 这些模板也可以由用户或管理员在支持 Azure Rights Management 技术的产品和服务中进行选择。
+模板可作为标签配置的一部分。 当该标签应用到文档或电子邮件后，数据会同时被分类并自动受到保护。 这些模板也可以由用户或管理员在支持 Azure Rights Management 技术的产品和服务中进行选择。
 
 此示例演示如何在从 Azure 门户配置 Azure 信息保护策略时为标签选择模板：
 
@@ -84,8 +84,6 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 ## <a name="resources-for-azure-information-protection"></a>Azure 信息保护的资源
 
-- 公告：[Azure 信息保护现已推出正式版](https://blogs.technet.microsoft.com/enterprisemobility/2016/10/04/azure-information-protection-is-now-generally-available/)
-
 - 免费试用版：[企业移动性 + 安全性 E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)
 
 - 下载客户端：[Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
@@ -98,17 +96,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/GWcnZFMPcnE" frameborder="0" allowfullscreen></iframe>
 
-    此外，Microsoft Ignite 2016 对 Azure 信息保护提供多个按需会话：
-
-    - [BRK2127：采用综合标识驱动解决方案安全地保护和共享数据](https://myignite.microsoft.com/videos?q=BRK2127)
-    
-    - [THR2107：使用 Azure 信息保护进行安全协作](https://myignite.microsoft.com/videos?q=THR2107)
-    
-    - [THR2108：通过 Azure 信息保护确保全面保护数据](https://myignite.microsoft.com/videos?q=THR2108)
-    
-    - [BRK3095：了解分类、标记和保护如何提供持续的数据保护](https://myignite.microsoft.com/videos?q=BRK3095)
-    
-    - [BRK2128：利用 Microsoft Office 365 和 Azure 信息保护，向任何人发送安全电子邮件](https://myignite.microsoft.com/videos?q=BRK2128)
+此外，Microsoft Ignite 2017 具有将针对 Azure 信息保护按需提供的许多研讨会。 当这些研讨会可用时，可在 Ignite 网站上[搜索和查找](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522)它们。 有关公告摘要，请参阅 [What’s new in Azure Information Protection @ Ignite 2017](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)（Azure 信息保护中的新增功能 @ Ignite 2017）。
 
 
 ## <a name="next-steps"></a>后续步骤

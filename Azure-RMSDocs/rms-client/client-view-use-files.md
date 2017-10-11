@@ -4,7 +4,7 @@ description: "查看和使用要求安装 Azure 信息保护客户端的受保�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d8fd80d6ff97118cd37dd62e293768b145c98595
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: 8ed2480892d5a48075d986ee64733b0144bbc5b4
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>查看和使用受权限管理保护的文件
 
@@ -50,13 +50,11 @@ ms.lasthandoff: 07/18/2017
 
 在你可以查看受保护文件之前，用于保护文件的 Rights Management 服务必须首先确认你有权查看该文件。 该服务通过检查你的用户名和密码来完成此操作。 在某些情况下，此信息会被缓存下来，所以你不会看到要求出示凭据的提示。 在其他情况下，将提示你提供凭据。
 
-如果你的组织没有基于云的帐户供你使用（用于 Office 365 或 Azure），并且未使用等效的本地版本 (AD RMS)，你可以申请一个用于接受凭据的免费帐户，以便打开 Rights Management 保护的文件：
+如果你的组织没有基于云的帐户供你使用（用于 Office 365 或 Azure），并且没有使用等效的本地版本 (AD RMS)，则有两个选择：
 
--   若要申请此帐户，请单击链接以申请 [个人 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
-    
-    注册时，使用公司的电子邮件地址，而不是个人电子邮件地址。 如果注册的原因是要使用电子邮件发送受保护附件，请使用与用于发送电子邮件相同的电子邮件地址。
-    
--   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
+- 如果他人向你发送受保护的电子邮件，请按照说明使用社交标识提供者登录（例如对于 Gmail 帐户使用 Google）或申请一次性密码。
+
+- 可以申请一个接受你的凭据的免费帐户，使你能够打开受 Rights Management 保护的文档。 若要申请此帐户，请单击链接以申请[个人 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)，然后使用公司电子邮件地址而不是个人电子邮件地址。 
 
 ## <a name="to-view-and-use-a-protected-document"></a>查看和使用受保护的文档
 
@@ -64,7 +62,7 @@ ms.lasthandoff: 07/18/2017
 
 2. 如果看到“登录”或“注册”页面：请点击“登录”并输入凭据。 如果受保护的文件是以附件形式发送给你的，请务必指定用于向你发送该文件的同一电子邮件地址。
     
-    如果没有被接受的帐户，请参阅本页中的[身份验证提示](#prompts-for-authentication)部分。 注册一个免费帐户，然后返回到这些说明。
+    如果没有被接受的帐户，请参阅本页中的[身份验证提示](#prompts-for-authentication)部分。
 
 3. 该文件的只读版本会在 **Azure 信息保护查看器**中打开。 如果有足够的权限，你可以打印该文件，并对其进行编辑。 
 
@@ -77,8 +75,7 @@ ms.lasthandoff: 07/18/2017
 5. 如果要打开其他受保护的文件，可以使用“打开”选项从查看器中直接浏览它们。 所选文件将替换查看器中的原始文件。 
 
 > [!TIP]
-> 如果未打开受保护文件，请使用 Azure 信息保护的“帮助和反馈”选项，再选择“运行诊断”。 测试完成后，可以重置客户端，这样做可能会解决问题。
-
+> 如果受保护文件未打开，可以从 Azure 信息保护客户端的“保护” > “帮助和反馈”中使用“运行诊断”选项，检查计算机上是否存在可能阻止打开受保护文档的问题。
 
 ## <a name="other-instructions"></a>其他说明
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：

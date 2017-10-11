@@ -4,7 +4,7 @@ description: "若要配置分类、标记和保护，必须配置 Azure 信息�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/07/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 4c656ed4e7fdb7945b6ccf466a1138cdb68a2189
-ms.sourcegitcommit: f7ef0f040ae4af4bf1283ebcb0750b65b6939313
+ms.openlocfilehash: 660f29506e22feb742edf4041d7baed0cf749b8c
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -71,7 +71,9 @@ Azure 信息保护支持不同级别的订阅：
 
 Azure 信息保护附带[默认策略](configure-policy-default.md)，其中包含五个主要标签。 这些标签可用于组织常规创建和存储的数据，包括从最低等级的个人数据到最高等级的机密数据等各类数据。 
 
-可以使用无更改的默认标签，或者你可以自定义它们，或删除它们，并可以创建新标签。 有关详细信息，请使用下一节中的链接来帮助你找到相关选项以及配置方法。 
+可以使用无更改的默认标签，或者你可以自定义它们，或删除它们，并可以创建新标签。 有关详细信息，请使用下一节中的链接来帮助你找到相关选项以及配置方法。
+
+可以创建任意数量的标签。 但是，如果因标签数量过多而导致用户难以看见并选择正确的标签，可以创建作用域内策略，使用户仅看见相关的标签。 应用保护的标签具有数量上限（500 个）。
 
 当在“Azure 信息保护”边栏选项卡上进行任何更改时，请单击“**保存**”以保存更改，或者单击“**放弃**”以返回到上一个保存的设置。
 

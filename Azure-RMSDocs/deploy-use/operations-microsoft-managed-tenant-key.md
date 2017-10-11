@@ -4,7 +4,7 @@ description: "当 Microsoft 管理 Azure 信息保护租户密钥（默认）时
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e4a484660aaf5a1820b04892ff006c08cceb5080
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 5aaf4393e39412a8c8b18678f4edea7a61c148dc
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/23/2017
 ---
-# <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
+# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
 >*适用于：Azure 信息保护、Office 365*
 
-如果由 Microsoft 管理 Azure 信息保护租户密钥（默认），请阅读以下部分，获取有关此拓扑的相关生命周期操作的详细信息。
+如果由 Microsoft 管理 Azure 信息保护的租户密钥（默认），请阅读以下部分，获取与此拓扑相关的生命周期操作的详细信息。
 
 ## <a name="revoke-your-tenant-key"></a>撤消你的租户密钥
 取消 Azure 信息保护订阅时，Azure 信息保护会停止使用租户密钥，用户无需执行任何操作。
@@ -38,6 +38,8 @@ ms.lasthandoff: 08/24/2017
 
 - 你的公司拆分为两家或更多公司。 在重新生成租户密钥时，新公司将无法访问员工发布的新内容。 如果有旧租户密钥的副本，他们可以访问旧内容。
 
+- 想从一个密钥管理拓扑移动到另一个拓扑。
+
 - 你认为租户密钥的主控副本已泄露。
 
 要重新生成密钥，可选择其他 Microsoft 托管密钥作为租户密钥，但不能创建新的 Microsoft 托管密钥。 要创新新密钥，必须将密钥拓扑更改为客户托管 (BYOK)。
@@ -48,7 +50,7 @@ ms.lasthandoff: 08/24/2017
 
     (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-要将密钥拓扑更改为客户托管 (BYOK)，请参阅[实施 Azure 信息保护租户密钥](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key)。
+要将密钥拓扑更改为客户托管 (BYOK)，请参阅[为 Azure 信息保护租户密钥实现 BYOK](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)。
 
 ## <a name="backup-and-recover-your-tenant-key"></a>备份和恢复你的租户密钥
 Microsoft 负责备份你的租户密钥，无需你进行任何操作。
@@ -62,11 +64,11 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 ### <a name="step-2-wait-for-verification"></a>步骤 2：等待验证
 
--   Microsoft 将验证发放 Azure 信息保护租户密钥的请求是否合法。 此过程最多可能需要三周时间。
+- Microsoft 将验证发放 Azure 信息保护租户密钥的请求是否合法。 此过程最多可能需要三周时间。
 
 ### <a name="step-3-receive-key-instructions-from-css"></a>步骤 3：接收来自 CSS 的密钥说明
 
--   Microsoft 客户支持服务 (CSS) 将 Azure 信息保护配置和在一个受密码保护的文件中加密的租户密钥发送给用户。 此文件的文件扩展名为 .tpd。 执行此操作时，CSS 首先通过电子邮件向你（即启动导出的人员）发送一个工具。 你必须从命令提示符处运行该工具，如下所示：
+- Microsoft 客户支持服务 (CSS) 将 Azure 信息保护配置和在一个受密码保护的文件中加密的租户密钥发送给用户。 此文件的文件扩展名为 .tpd。 执行此操作时，CSS 首先通过电子邮件向你（即启动导出的人员）发送一个工具。 你必须从命令提示符处运行该工具，如下所示：
 
     ```
     AadrmTpd.exe -createkey
@@ -95,7 +97,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 ## <a name="respond-to-a-breach"></a>对违规行为做出响应
 如果没有违规响应流程，无论如何强大的安全系统都是不完整的。 你的租户密钥可能泄漏或失窃。 即便它得到了很好的保护，在当前这代密钥技术或当前的密钥长度和算法方面也可以找到一些漏洞。
 
-Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全事件。 当收到某个事件的可信报告时，该团队将参与调查事件的范围、根本原因和缓解办法。 如果该事件影响到资产，则 Microsoft 将使用在订阅时提供的地址，通过电子邮件通知 Azure 信息保护租户管理员。
+Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全事件。 当收到某个事件的可信报告时，该团队将参与调查事件的范围、根本原因和缓解办法。 如果该事件影响到资产，Microsoft 则将使用在订阅时提供的电子邮件地址，通过电子邮件通知 Azure 信息保护租户管理员。
 
 如果你发现了安全违规行为，则你或 Microsoft 能够采取的最佳行动取决于安全违规的范围；Microsoft 将与你共同完成这个过程。 下表显示了一些典型情况以及可能的响应，但具体的响应要取决于在调查过程中揭示的所有信息。
 

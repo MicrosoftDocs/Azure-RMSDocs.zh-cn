@@ -4,7 +4,7 @@ description: "说明如何对文档和电子邮件进行分类和保护。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b82904da81b73f0ae7ab5ab758a4cf3a982eb6ee
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 996835254652a307f66c472fdc74707a59041fe0
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
@@ -32,9 +32,7 @@ ms.lasthandoff: 09/18/2017
 
 受保护文件可安全地与他人共享。 例如，将文件附加到电子邮件。
 
-如果你定期与组织外部人员共享文件，管理员可能为你配置了设置保护的标签，以便这些人员可以读取它。 此外，也可以在共享前使用 [Office 应用程序来设置自定义权限](#set-custom-permissions-for-a-document)，或使用[文件资源管理器设置文件的自定义权限](#using-file-explorer-to-classify-and-protect-files)。 
-
-如果设置你自己的自定义权限，并且文件已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。  
+如果你定期与组织外部人员共享文件，管理员可能为你配置了设置保护的标签，以便这些人员可以读取它。 此外，也可以在共享前使用 [Office 应用程序来设置自定义权限](#set-custom-permissions-for-a-document)，或使用[文件资源管理器设置文件的自定义权限](#using-file-explorer-to-classify-and-protect-files)。 如果设置你自己的自定义权限，并且文件已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。  
 
 如果使用自定义权限保护文件，请使用标准共享机制共享文件。 如果你要与之共享的人员是第一次接收受保护文件，他们可能需要阅读说明才能查看。 对于这些人，你可以复制并粘贴以下消息：**我已使用 Microsoft Azure 信息保护对此文件提供保护。若是首次使用，请参阅这些[说明](https://aka.ms/rms-signup)。**
 
@@ -94,6 +92,16 @@ ms.lasthandoff: 09/18/2017
     - 过期访问：仅对具有时效性的文件选择此选项，以使指定的人员无法在设置日期后打开选定的一个文件或多个文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
 
 5. 单击“**应用**”，然后等待“**已应用自定义权限**”消息。 然后单击 **“关闭”**。
+
+### <a name="safely-sharing-by-email"></a>通过电子邮件实现安全共享
+
+通过电子邮件共享 Office 文档时，可将文档附加到所保护的电子邮件中，应用到此电子邮件的相同限制会自动保护此文档。 
+
+但是，我们建议首先保护文档，然后再将它附加到电子邮件中。 如果电子邮件中包含敏感信息，也需要保护电子邮件。 将文档附加到电子邮件前保护它有两个好处：
+
+- 通过电子邮件发送文档后可以跟踪并根据需要撤消此文档。
+
+- 可以对文档应用不同于电子邮件的权限。
 
 ## <a name="using-file-explorer-to-classify-and-protect-files"></a>使用文件资源管理器对文件进行分类和保护
 

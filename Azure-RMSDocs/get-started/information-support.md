@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 09/26/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0d8c6a1ccfaf52af25ab0cfb5fb8074019939b90
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 0b788b8a380132d830fb6593f579dca9c8ac61bc
+ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -26,9 +26,10 @@ ms.lasthandoff: 07/31/2017
 
 |要执行的操作…|. 采取的措施：|
 |----------------|---------------|
-|请参阅该服务的推荐文档|使用 [Azure 信息保护文档](https://docs.microsoft.com/information-protection/)起始页。|
-|提供有关文档的反馈或咨询有关文档的问题|发送电子邮件至 [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)。|
-|接收产品组发送的有关 Azure 信息保护和文档更新公告的推文|关注在 Microsoft 帮助领导 Azure 信息保护团队的 [@DanPlastina](https://twitter.com/DanPlastina) 的动态。|
+|请参阅最常使用的文档|阅读前 5 页： <br /><br />[入门 - 适用于 iOS 和 Android 的 AIP 应用 ](../rms-client/mobile-app-get-started.md) <br /><br /> [什么是 Azure 信息保护？](../understand-explore/what-is-information-protection.md)<br /><br /> [Azure Rights Management 是什么？](../understand-explore/what-is-azure-rms.md)<br /><br />[激活 Azure Rights Management](../deploy-use/activate-service.md)<br /><br />[Azure 信息保护的要求](../get-started/requirements.md)|
+|与产品团队和同行沟通|访问 Azure 信息保护的 [Yammer 网站](https://www.yammer.com/AskIPTeam)。|
+|请求新功能或更改功能|访问 Azure 信息保护的 [User Voice 网站](https://msip.uservoice.com)|
+|接收来自产品组的推文|在 Twitter 上关注 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)。|
 |检查订阅信息和支持的功能|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|
 
 
@@ -41,7 +42,7 @@ Azure 信息保护产品团队向[企业移动性和安全性博客](https://blo
 
 - 文档更改摘要包括对任何新版本、支持声明更新以及现有版本更正和说明的记录。 这些文章的标题为：“\<月份/年份> 的 Azure 信息保护文档更新” 
 
-此外，还可以在 [Azure 信息保护 Yammer 网站](https://www.yammer.com/AskIPTeam)上找到有关新功能和预览版的信息，也可以在该网站上提出有关 Azure 信息保护的问题。 若要对新功能提出建议和投票，请访问 Azure 信息保护的 [User Voice 网站](https://msip.uservoice.com)。
+此外，还可以在 Azure 信息保护 [ Yammer 网站](https://www.yammer.com/AskIPTeam)上找到有关新功能和预览版的信息，也可以在该网站上提出有关 Azure 信息保护的问题。 若要建议新功能或对新功能进行投票，请访问 Azure 信息保护的 [User Voice](https://msip.uservoice.com) 网站。
 
 ## <a name="support-options-and-community-resources"></a>支持选项和社区资源
 以下部分提供有关支持选项和故障排除选项的信息及社区资源。
@@ -67,6 +68,8 @@ Azure 信息保护产品团队向[企业移动性和安全性博客](https://blo
 ### <a name="self-help"></a>自助方式
 
 点播视频：
+
+- Microsoft Ignite 2017 的 [Azure 信息保护](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522)研讨会。
 
 - Microsoft Ignite 2016 的 [Azure 信息保护](https://myignite.microsoft.com/videos?f=%5B%7B%22name%22:%22Azure%20Rights%20Management%22,%22facetName%22:%22products%22%7D,%7B%22name%22:%22Azure%20Information%20Protection%22,%22facetName%22:%22products%22%7D%5D)研讨会。
 
