@@ -4,7 +4,7 @@ description: "面向管理员提供的有关配置 Office 365 以使用 Azure �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 09/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 53d93a36d4b18c93f54349633046e5fc242e7c2b
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: 5d652f938ac7a9008e36ee75b52f2b4b7b6612d1
+ms.sourcegitcommit: 9ed2c454a7aaf965ff1cceda0447928111001488
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365：配置客户端和联机服务，以使用 Azure 权限管理服务
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/28/2017
 
 若要将 Exchange Online 配置为使用 Azure Rights Management 服务，请参阅 [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)（设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能）。
 
-如果之前已通过导入受信任的发布域 (TPD) 将 Exchange Online 配置为使用 Azure Rights Management 服务，请使用同一系列的说明在 Exchange Online 中启用这些新功能。
+如果之前已通过导入受信任的发布域将 Exchange Online IRM 配置为使用 Azure Rights Management 服务，请使用同一系列的说明在 Exchange Online 中启用这些新功能。
 
 在将 Exchange Online 配置为使用 Azure Rights Management 服务后，现在可以配置自动应用信息保护的功能，如[传输规则](https://technet.microsoft.com/library/dd302432.aspx)、[数据丢失防护 (DLP) 策略](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx)和[受保护的语音邮件](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx)（统一消息）。
 

@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/26/2017
+ms.date: 10/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0b788b8a380132d830fb6593f579dca9c8ac61bc
-ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
+ms.openlocfilehash: 83148b97e7aca46365aa681c4a08c2029924fdd0
+ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -51,7 +51,7 @@ Azure 信息保护产品团队向[企业移动性和安全性博客](https://blo
 
 如果你有顶级支持，请访问[针对顶级支持客户的门户](https://premier.microsoft.com/)来提交事件、浏览解决方案，并获得帮助。
 
-你可能符合 FastTrack 的条件：如果在符合条件的 Azure 信息保护计划中购买的许可证至少达到 150 个，可以使用 FastTrack 中心权益。 FastTrack 中心权益使你可以与 Microsoft 专家共同进行评估、修正并启用符合条件的服务。 有关详细信息，请参阅 [Azure Rights Management 的 FastTrack 中心权益](/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program)。
+你可能符合 FastTrack 的条件：如果在符合条件的 Azure 信息保护计划中购买的许可证至少达到 150 个，可以使用 FastTrack 中心权益。 FastTrack 中心权益使你可以与 Microsoft 专家共同进行评估、修正并启用符合条件的服务。 有关详细信息，请参阅 [FastTrack 企业移动性 + 安全性 (EMS) 中心权益](/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-enterprise-mobility-suite-ems)。
 
 对于其他客户，请根据 Azure 信息保护的订阅，使用下表中的支持渠道。
 

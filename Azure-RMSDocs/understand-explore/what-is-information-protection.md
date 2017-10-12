@@ -4,17 +4,17 @@ description: "Azure 信息保护服务概述。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: ba39c332437e2710554d1e8f69c3f676f0d870db
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: 1564f6dc0a21017151254b1ae1fab1586761e766
+ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -92,11 +92,18 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 - Yammer：[Azure 信息保护](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)
 
-- 视频：“信息保护的 5 大技巧”
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GWcnZFMPcnE" frameborder="0" allowfullscreen></iframe>
+此外，Microsoft Ignite 2017 具有将针对 Azure 信息保护按需提供的许多会话。 有关该会议公告的摘要，请参阅 [What’s new in Azure Information Protection @ Ignite 2017](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)（Azure 信息保护中的新增功能 @ Ignite 2017）。 
 
-此外，Microsoft Ignite 2017 具有将针对 Azure 信息保护按需提供的许多研讨会。 当这些研讨会可用时，可在 Ignite 网站上[搜索和查找](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522)它们。 有关公告摘要，请参阅 [What’s new in Azure Information Protection @ Ignite 2017](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)（Azure 信息保护中的新增功能 @ Ignite 2017）。
+可以前往 Ignite 网站[搜索并查找](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522)标记有 Azure 信息保护的会话。 但建议从以下会话开始：
+
+- [Protecting complete data lifecycle using Microsoft information protection capabilities](https://myignite.microsoft.com/videos/55397)（使用 Microsoft 信息保护功能保护完整的数据生命周期）
+
+- [Accelerate Azure information protection deployment and adoption](https://myignite.microsoft.com/videos/53454)（促进 Azure 信息保护的部署和使用）
+
+- [Discover what’s new in Azure Information Protection and learn about the roadmap and strategy](https://myignite.microsoft.com/videos/53453)（发现 Azure 信息保护中的新增功能并了解相关路线图和策略）
+
+- [Protect and control your sensitive emails with new Office 365 Message Encryption capabilities](https://myignite.microsoft.com/videos/53230)（使用 Office 365 邮件加密功能保护和控制敏感的电子邮件）
 
 
 ## <a name="next-steps"></a>后续步骤
