@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 5 阶段包括从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 11775c64cbd5abd7c10a145a2d48f335db2d5b69
-ms.sourcegitcommit: 8251e4db274519a2eb8033d3135a22c27130bd30
+ms.openlocfilehash: db6cb1c6327808616ee98b9e5b14f2a92a590bff
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
@@ -48,11 +48,35 @@ ms.lasthandoff: 08/25/2017
 >[!IMPORTANT]
 > 此迁移结束时，AD RMS 群集不能与 Azure 信息保护和自控密钥 (HYOK) 选项结合使用。 如果决定要对 Azure 信息保护标签使用 HYOK，由于重定向现均已到位，因此所用 AD RMS 群集中的授权 URL 必须与已迁移群集中的授权 URL 不同。
 
-## <a name="step-11-remove-onboarding-controls"></a>步骤 11： 删除载入控件
+## <a name="step-11-reconfigure-mobile-device-clients-and-mac-computers-and-remove-onboarding-controls"></a>步骤 11： 重新配置移动设备客户端和 Mac 计算机，并删除载入控件
 
-现有客户端均已迁移到 Azure 信息保护后，便没有理由继续使用载入控件并保留针对迁移过程创建的 **AIPMigrated** 组了。 
+对于移动设备客户端和 Mac 计算机：删除在部署 [AD RMS 移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)时创建的 DNS SRV 记录。
 
-首先删除载入控件，然后才能删除 AIPMigrated 组和为了部署重定向而创建的任何软件部署任务。
+当这些 DNS 更改得到传播时，这些客户端会自动发现并开始使用 Azure Rights Management 服务。 但运行 Office Mac 的 Mac 计算机会缓存 AD RMS 中的信息。 这些计算机执行此过程最多可能需要 30 天。 
+
+若要强制 Mac 计算机立即在密钥链中运行发现过程，请搜索“adal”并删除所有 ADAL 条目。 然后在这些计算机上运行下列命令：
+
+````
+
+rm -r ~/Library/Cache/MSRightsManagement
+
+rm -r ~/Library/Caches/com.microsoft.RMS-XPCService
+
+rm -r ~/Library/Caches/Microsoft\ Rights\ Management\ Services
+
+rm -r ~/Library/Containers/com.microsoft.RMS-XPCService
+
+rm -r ~/Library/Containers/com.microsoft.RMSTestApp
+
+rm ~/Library/Group\ Containers/UBF8T346G9.Office/DRM.plist
+
+killall cfprefsd
+
+````
+
+所有现有 Windows 计算机均已迁移到 Azure 信息保护后，便没有理由继续使用载入控件并保留针对迁移过程创建的 AIPMigrated 组了。 
+
+首先删除载入控件，然后才能删除 AIPMigrated 组和为了部署迁移脚本而创建的任何软件部署方法。
 
 删除载入控件：
 
@@ -63,6 +87,8 @@ ms.lasthandoff: 08/25/2017
 2. 运行以下命令，并输入 **Y** 进行确认：
 
         Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
+    
+    请注意，此命令会删除所有针对 Azure Rights Management 保护服务的许可证强制执行，使所有计算机都可保护文档和电子邮件。
 
 3. 确认不再设置载入控件：
 

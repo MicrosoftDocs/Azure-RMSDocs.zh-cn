@@ -4,7 +4,7 @@ description: "有关支持的文件类型、文件扩展名以及负责适用于
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5a3d13861e3eff0cfaf4a92eb005b8192f2b447c
-ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
+ms.openlocfilehash: 0bd9bbdc6b29e8cd9497712dddb7205f3d8372b1
+ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure 信息保护客户端支持的文件类型
 
@@ -34,7 +34,7 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 ## <a name="file-types-supported-for-classification-only"></a>支持仅分类的文件类型
 
-以下文件类型仅支持分类。 当其他文件类型也受到保护时，支持对这些类型进行分类（请参阅[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)部分）。
+可对以下文件类型进行分类（即使在它们未受保护时也可）。
 
 - **Adobe 可移植文档格式**：pdf
 
@@ -45,15 +45,22 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 - **Microsoft Publisher**：.pub
 
 - **Microsoft Office 97、Office 2010、Office 2003**：.xls、.xlt、.doc、.dot、.ppt、.pps、.pot
+
 - **Microsoft XPS**：.xps .oxps
 
-- **图像**：.jpg、.jpe、.jpeg、.jif、.jfif、.jfi.png、.tif、.tiff
+- 图像：.jpg、.jpe、.jpeg、.jif、.jfif、.jfi、 .png、.tif、.tiff
 
 - **Autodesk Design Review 2013**：.dwfx
 
 - **Adobe Photoshop**：.psd
 
 - **数码底片**：.dng
+
+其他文件类型在受保护时也支持分类。 有关这些文件类型，请参阅[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)部分。
+
+例如，在当前[默认策略](../deploy-use/configure-policy-default.md)中，“常规”标签适用于分类，而不适用于保护。 可以将“常规”标签应用到名为 sales.pdf 的文件，但不可将该标签应用到名为 sales.txt 的文件。 
+
+此外，在当前默认策略中，“机密\所有员工”适用于分类和保护。 此标签可应用到名为 sales.pdf 和名为 sales.txt 的文件。 还可以只对这些文件应用保护，而不应用分类。
 
 ## <a name="file-types-supported-for-protection"></a>支持保护的文件类型
 
@@ -108,13 +115,15 @@ Azure 信息保护客户端支持保护的最大文件大小。
 |。jfif|。pjfif|
 |。jt|。pjt|
 
+
 下一个表列出了其余的文件类型，这些文件类型通过 Azure 信息保护客户端支持本机保护，并且还可进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 
 
 对于这些文件，在文件受 Rights Management 服务保护后，文件扩展名仍保持不变。
 
 |Office 支持的文件类型|Office 支持的文件类型|
 |----------------------------------|----------------------------------|
-|。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm|。pptx<br /><br />。thmx<br /><br />。xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx<br /><br />.xps|
+|。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm<br /><br />。pptx<br /><br />。pptx<br /><br />。thmx|.vsdm<br /><br />.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />。xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx<br /><br />.xps|
+
 
 ### <a name="changing-the-default-protection-level-of-files"></a>更改文件的默认保护级别
 你可以通过编辑注册表来更改 Azure 信息保护客户端保护文件的方式。 例如，可以强制 Azure 信息保护客户端向支持本机保护的文件提供常规保护。
@@ -181,15 +190,15 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 任何不受密码保护的文件无法通过 Azure 信息保护客户端进行本机保护。 最常看到的是受密码保护的 PDF 文件，但 Office 应用等其他应用程序也提供此功能。
 
-此外，Windows 的 Azure 信息保护客户端无法对以下任一情况下的 PDF 文件进行本机保护（或取消保护）：
+此外，Windows 的 Azure 信息保护客户端可查看以下文件，但无法对以下任一情况下的 PDF 文件进行本机保护或取消保护：
 
 - 基于窗体的 PDF 文件。
 
 - 文件扩展名为 .pdf 的受保护 PDF 文件。 
     
-    Azure 信息保护客户端可以保护不受保护的 PDF 文件，并重新保护扩展名为 .ppdf 的受保护 PDF 文件。
+    Azure 信息保护客户端可以保护不受保护的 PDF 文件，并且可取消保护和重新保护扩展名为 .ppdf 的受保护 PDF 文件。
 
-作为这些文件的一种替代解决方法，可以按照[更改文件的默认保护级别](#changing-the-default-protection-level-of-files)部分中的说明对其进行常规保护。 但是，此方法在计算机级别更改文件扩展名为 .pdf 的所有文件的保护级别。 只是不能对满足所列条件的文件定义常规保护。
+作为保护这些文件的一种替代解决方法，可以按照[更改文件的默认保护级别](#changing-the-default-protection-level-of-files)部分中的说明对其进行常规保护。 但是，此方法在计算机级别更改文件扩展名为 .pdf 的所有文件的保护级别。 只是不能对满足所列条件的文件定义常规保护。
 
 如果保护这些文件非常重要，可以暂时将它们复制到另一计算机，以一般方式对其进行保护，然后再将其复制回。
 

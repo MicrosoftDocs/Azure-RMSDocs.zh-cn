@@ -4,7 +4,7 @@ description: "了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2017
+ms.date: 10/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a1fa8edb262f7ee35b91e069ac5556124c0bc754
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: f82eb8bc415b064793c1efd9b7b88795b1ec6ff2
+ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -27,12 +27,12 @@ ms.lasthandoff: 09/28/2017
 使用本文章可帮助为当前使用的应用程序配置所需的使用权限，并了解应用程序如何解释这些权限。
 
 ## <a name="usage-rights-and-descriptions"></a>使用权限和说明
-下表列出并说明了 Rights Management 支持的使用权限，以及它们的使用和解释方式。 它们按**公用名**列出，公用名通常是你看待使用权限作为在代码中使用的单字值（**策略中的编码**值）的更友好版本进行显示或引用的方式。 
+下表列出并说明了 Rights Management 支持的使用权限，以及它们的使用和解释方式。 它们按公用名列出，公用名通常是你看待使用权限作为在代码中使用的单字值（策略中的编码值）的更友好版本进行显示或引用的方式。 
 
 **API 常量或值**是 MSIPC API 调用的 SDK 名称，在你编写检查使用权限的启用 RMS 的应用程序，或向策略添加使用权限时使用。
 
 
-|Right|说明|实现|
+|使用权限|说明|实现|
 |-------------------------------|---------------------------|-----------------|
 |公用名：**编辑内容，编辑** <br /><br />策略中的编码：**DOCEDIT**|允许用户对应用程序中的内容进行修改、重新排列、设置格式或筛选。 它不会授权保存编辑过的副本。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**编辑内容**<br /><br />Azure 门户中的名称：包含在“编辑和保存”中<br /><br />AD RMS 模板中的名称：**编辑** <br /><br />API 常量或值：不适用。|
 |公用名：**保存** <br /><br />策略中的编码：**EDIT**|允许用户将文档保存到当前位置。<br /><br />在 Office 应用程序中，此权限还允许用户修改文档。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**保存文件**<br /><br />Azure 门户中的名称：包含在“编辑和保存”中<br /><br />AD RMS 模板中的名称：**保存** <br /><br />API 常量或值：`IPC_GENERIC_WRITE L"EDIT"`|
@@ -51,9 +51,9 @@ ms.lasthandoff: 09/28/2017
 
 某些应用程序会将使用权限组合成不同的权限级别，这样可以更容易地选择那些通常在一起使用的使用权限。 这些权限级别可帮助减少用户操作的复杂性，用户只需按角色选择相应选项即可。  例如，**审阅者**和**合著者**。 虽然这些选项通常会向用户显示这些权限的摘要，但可能并不包括前一表中列出的每个权限。
 
-可通过下表查看这些权限级别的列表，以及这些权限级别所含权限的完整列表。
+可通过下表查看这些权限级别的列表，以及这些权限级别所含使用权限的完整列表。 使用权限按各自的[公用名](#usage-rights-and-descriptions)列出。
 
-|权限级别|应用程序|包括的权限（通用名称）|
+|权限级别|应用程序|包含的使用权限|
 |---------------------|----------------|---------------------------------|
 |查看器|Azure 经典门户 <br /><br />Azure 门户<br /><br /> 适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；答复；全部答复；允许宏 [[1]](#footnote-1)<br /><br />注意：对于电子邮件，请使用审阅者级别而不是此权限级别，确保接收到的电子邮件答复为电子邮件而不是附件。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也需要审阅者权限。 或者，对于组织内无需使用 Azure Rights Management 服务的用户来说，也需要此权限，因为你已实施了[载入控件](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)。|
 |审阅者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；答复：全部答复 [[2]](#footnote-2)；转发 [[2]](#footnote-2)；允许宏 [[1]](#footnote-1)|
@@ -74,12 +74,14 @@ ms.lasthandoff: 09/28/2017
 
 
 ## <a name="rights-included-in-the-default-templates"></a>默认模板中包括的权限
-默认模板中包括的权限如下：
+下表列出了创建默认模板时包含的使用权限。 使用权限按各自的[公用名](#usage-rights-and-descriptions)列出。
 
-|显示名称|包括的权限（通用名称）|
-|----------------|---------------------------------|
-|&lt;组织名称&gt; - 机密信息，仅供查阅 <br /><br />或<br /><br /> *高度机密\所有员工*|查看、打开、读取|
-|&lt;组织名称&gt; - 机密信息 <br /><br />或 <br /><br />*机密\所有员工*|查看、打开、读取；保存；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
+这些默认模板在购买订阅时进行创建，并且名称和使用权限可在 Azure 门户中[更改](configure-policy-templates.md)。 
+
+|模板的显示名称|2017 年 10 月 6 日到当前日期的使用权限|2017 年 10 月 6 日之前的使用权限|
+|----------------|--------------------|----------|
+|\<组织名称> - 机密，仅供查阅 <br /><br />或<br /><br /> *高度机密\所有员工*|查看、打开、读取；复制；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑|查看、打开、读取|
+|\<组织名称> - 机密 <br /><br />或 <br /><br />*机密\所有员工*|查看、打开、读取；另存为、导出；复制；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑；完全控制|查看、打开、读取；另存为、导出；编辑内容、编辑；允许宏；转发；答复；全部答复|
 
 ## <a name="do-not-forward-option-for-emails"></a>电子邮件的“不得转发”选项
 
@@ -122,11 +124,30 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 如果权利管理颁发者代表用户提供保护，分配权限管理所有者可确保原始文档或电子邮件所有者对其受保护内容拥有同一级别的控制，就如同由其自己启动保护一样。 
 
-例如，即使文档现在受不含打印使用权限的模板的保护，创建该文档的用户仍可打印文档。 同一用户始终可访问其文档，而无需考虑离线访问设置或可能在该模板中配置的到期日期。 此外，由于权限管理所有者具有完全控制使用权限，因此该用户还可以重新保护文档以向更多用户授予访问权限（此时该用户成为权限管理颁发者以及权限管理所有者），甚至可以删除保护。 但是，只有权限管理颁发者可跟踪和撤销文档。
+例如，即使文档现在受不含打印使用权限的模板的保护，创建该文档的用户仍可打印文档。 同一用户始终可访问其文档，而无需考虑离线访问设置或可能在该模板中配置的到期日期。 此外，由于 Rights Management 所有者具有完全控制使用权限，因此该用户还可以重新保护文档以向更多用户授予访问权限（此时该用户成为 Rights Management 颁发者以及 Rights Management 所有者），甚至可以删除保护。 但是，只有权限管理颁发者可跟踪和撤销文档。
 
 在[使用情况日志](log-analyze-usage.md#how-to-interpret-your-azure-rights-management-usage-logs)中，文档或电子邮件的权限管理所有者记录为“所有者-电子邮件”字段。
 
 请注意，权限管理所有者独立于 Windows 文件系统所有者。 两者通常是相同的，但也可以不同，即使不使用 SDK 或 PowerShell 也是如此。
+
+## <a name="rights-management-use-license"></a>Rights Management 使用许可证
+
+用户打开已受 Azure Rights Management 保护的文档或电子邮件时，会向该用户授予 Rights Management 使用许可证。 此使用许可证是一个证书，它包含用户对文档或电子邮件的使用权限，以及用于加密内容的加密密钥。 此使用许可证还包含一个到期日期（如果已设置）及其有效时长。
+
+使用许可证有效期内，不会对用户重新进行身份验证或重新授权。 这样即使没有 Internet 连接，用户也能够打开受保护的文档或电子邮件。 使用许可证有效期到期后，用户下次访问受保护的文档或电子邮件时就必须重新进行身份验证并重新进行授权。 
+
+如果文档和电子邮件是通过标签或定义保护设置的模板进行保护，可更改标签或模板中的这些设置，而无需重新保护内容。 如果用户已访问过内容，则所做的更改将在他们的使用许可证过期后生效。 但如果用户应用了自定义权限（也称为临时权限策略），且这些权限需要在保护文档或电子邮件后更改，则必须使用新权限再次保护该内容。 通过“不转发”选项实现电子邮件的自定义权限。
+
+租户使用许可证的默认有效期为 30 天，可使用 PowerShell cmdlet [Set-AadrmMaxUseLicenseValidityTime](/powershell/module/aadrm/set-aadrmmaxuselicensevaliditytime) 配置该值。 可使用标签或模板，为何时应用保护配置限制性更强的设置：
+
+- 在 Azure 门户中配置标签或模板时，使用许可证有效期从“允许脱机访问设置”取得其值。 
+    
+    有关在 Azure 门户中配置此设置的详细信息和指南，请参阅[如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)的步骤 9 中的表。
+
+- 使用 PowerShell 配置模板时，使用许可证有效期从 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) 和 [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) cmdlet 中的 LicenseValidityDuration 参数中取得其值。
+    
+    有关使用 PowerShell 配置此设置的详细信息和指南，请参阅每个 cmdlet 的帮助。
+
 
 ## <a name="see-also"></a>另请参阅
 [配置和管理 Azure 信息保护的模板](configure-policy-templates.md)
