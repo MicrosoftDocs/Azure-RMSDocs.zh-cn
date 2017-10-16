@@ -4,7 +4,7 @@ description: "用于将 Active Directory Rights Management Services (AD RMS) 部
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6651c812c207494bc98d5a1b22e359910a94c3cc
-ms.sourcegitcommit: 7d07b82da9aca52fe9e38fa1bada144226168a6b
+ms.openlocfilehash: 910d131ece4bae0cf5ef2685291431a3dc319264
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -181,12 +181,9 @@ ms.lasthandoff: 10/05/2017
 
 [**第 3 阶段：客户端配置**](migrate-from-ad-rms-phase3.md)
 
-- **步骤 7：重新配置客户端以使用 Azure 信息保护**
+- 步骤 7：重新配置 Windows 计算机以使用 Azure 信息保护
 
     必须将现有 Windows 计算机重新配置为使用 Azure Rights Management 服务而不是 AD RMS。 此步骤适用于你组织中的计算机以及合作伙伴组织(如果你在运行 AD RMS 时已与其协作)中的计算机。
-
-    此外，如果部署了[移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)以支持移动设备（如 iOS 手机和 iPad、Android 手机和平板电脑、Windows Phone 以及 Mac 计算机），则必须删除 DNS 中重定向这些客户端的 SRV 记录才能使用 AD RMS。
-
 
 [**第 4 阶段：支持服务配置**](migrate-from-ad-rms-phase4.md)
 
@@ -203,13 +200,15 @@ ms.lasthandoff: 10/05/2017
 
 - **步骤 10：取消预配 AD RMS**
 
-    如果已确认所有客户端均使用 Azure Rights Management 而不再访问 AD RMS 服务器，则可以取消预配 AD RMS 部署。
+    如果已确认所有 Windows 计算机均使用 Azure Rights Management 服务而不再访问 AD RMS 服务器，则可以取消预配 AD RMS 部署。
 
-- **步骤 11：删除载入控件**
+- 步骤 11：重新配置移动设备客户端和 Mac 计算机，并删除载入控件
 
+    如果部署了[移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)以支持移动设备（如 iOS 手机和 iPad、Android 手机和平板电脑、Windows Phone 以及 Mac 计算机），则必须删除 DNS 中重定向这些客户端的 SRV 记录才能使用 AD RMS。 
+    
     不再需要准备阶段配置的载入控件。
 
-- **步骤 12：重新生成 Azure 信息保护租户密钥**
+- 步骤 12：重新生成 Azure 信息保护租户密钥
 
     如果迁移前未在加密模式 2 中运行，建议执行此步骤。
 

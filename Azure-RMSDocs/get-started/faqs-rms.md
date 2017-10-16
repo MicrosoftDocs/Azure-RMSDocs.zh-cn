@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护中数据保护服务 Azure Rights Manage
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 381eaee2aa33a2a6a715c31616ad92a0f957e8b0
-ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
+ms.openlocfilehash: 9983b088b5856f8c2223d05624c3bee21b80fd15
+ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -86,6 +86,18 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 有关 Azure 门户中的模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
 
+## <a name="ive-protected-a-document-and-now-want-to-change-the-usage-rights-or-add-usersdo-i-need-to-reprotect-the-document"></a>我已保护一个文档，但现在想要更改使用权限或添加用户，是否需要重新保护该文档？
+
+如果该文档使用的是标签或模板进行保护，则无需重新保护该文档。 通过更改使用权限来修改标签或模板或者添加新组（或用户），然后保存并发布这些更改：
+
+- 如果用户在你进行更改之前没有访问过该文档，则更改会在他们打开该文档时立即生效。 
+
+- 如果用户已访问过文档，则所做的更改将在他们的[使用许可证](../deploy-use/configure-usage-rights.md#rights-management-use-license)过期时生效。 只有在等不及使用许可证过期时才需要重新保护文档。 重新保护操作会有效地创建一个新的文档版本，并因此为用户创建新的使用许可证。
+
+或者，如果已为所需权限配置了一个组，则可更改组成员身份以包含或排除用户，而无需更改标签或模板。 更改生效前可能稍有延迟，因为组成员身份由 Azure Rights Management 服务[缓存](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management)。
+
+如果文档通过自定义权限保护，则无法更改现有文档的权限。 必须再次保护文档，并指定这一新的文档版本所需的所有用户和所有使用权限。 若要重新保护受保护的文档，必须具有“完全控制”使用权限。 
+
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>我对 Exchange 采用混合部署：Exchange Online 上存在一些用户，而其他用户则在 Exchange Server 上。Azure RMS 支持这种部署吗？
 绝对支持，而且很棒的是，用户将受到无缝保护，并可以在两种 Exchange 部署上使用受保护的电子邮件和附件。 对于此配置，[激活 Azure RMS](../deploy-use/activate-service.md) 并[启用适用于 Exchange Online 的 IRM](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)，然后[部署并配置适用于 Exchange Server 的 RMS 连接器](../deploy-use/deploy-rms-connector.md)。
 
@@ -116,8 +128,6 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 有关将自定义模板转换为标签以便可以轻松添加外部用户的详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
 
-有关将自定义模板转换为标签的详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
-
 ## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>我可以对 Azure RMS 使用什么类型的组？
 大多数情况下，可以使用具有电子邮件地址的 Azure AD 中的任何组类型。 尽管分配使用权限时此经验法则始终适用，但在管理 Azure Rights Management 服务时存在一些例外。 有关详细信息，请参阅[组帐户 Azure 信息保护要求](../plan-design/prepare.md#azure-information-protection-requirements-for-group-accounts)。
 
@@ -129,7 +139,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 若要支持此方案，必须为 Azure Rights Management 服务和 Office 365 邮件加密中的新功能启用 Exchange Online。 有关此配置的详细信息，请参阅 [Exchange Online：IRM 配置](../deploy-use/configure-office365.md#exchange-online-irm-configuration)。
 
-若要详细了解支持所有设备上的所有电子邮件帐户的新功能，请参阅以下博客文章：[Announcing new capabilities available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)（宣布在 Office 365 邮件加密中推出新功能）。
+若要详细了解新功能（包括在所有设备上支持所有电子邮件帐户），请参阅以下博客文章：[Announcing new capabilities available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)（宣布在 Office 365 邮件加密中推出新功能）。
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS 支持哪些设备和哪种文件类型？
 有关支持 Azure Rights Management 服务的设备的列表，请参阅[支持 Azure Rights Management 数据保护的客户端设备](../get-started/requirements-client-devices.md)。 由于并非所有受支持的设备目前都能支持全部的 Rights Management 功能，因此，还请务必查看[启用 RMS 的应用程序](../get-started/requirements-applications.md#rms-enlightened-applications)表。
@@ -178,15 +188,13 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>在文档跟踪站点中测试吊销时，显式的消息提示人们仍可在 30 天内访问此文档—该时间段是否可配置？
 
-是。 该消息反映了此特定文件的使用许可证。 使用许可证是为打开受保护文件或电子邮件消息的用户所授予的每个文档证书。 该证书包含此用户对文件或电子邮件消息所具有的权限、用于加密内容的加密密钥，以及文档策略中定义的其他访问限制。 该使用许可证的有效期已过期，当某用户尝试打开该文件或电子邮件消息时，必须向 Azure Rights Management 服务重新提交其用户凭据。 
+是。 该消息反映了此特定文件的[使用许可证](../deploy-use/configure-usage-rights.md#rights-management-use-license)。 
 
 如果撤销文件，仅在用户对 Azure Rights Management 服务进行身份验证时才会强制执行此操作。 因此，如果文件的使用许可证有效期为 30 天，且用户已经打开过文档，则该用户在使用许可证期间仍继续拥有该文档的访问权限。 使用许可证过期时，用户必须重新进行身份验证，此时由于文件被撤销，因此会拒绝用户访问。
 
 保护文档的用户，即 [Rights Management 颁发者](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)不受此撤销的限制，始终能够访问其文档。 
 
-租户使用许可证有效期默认值为 30 天，可使用 PowerShell cmdlet **Set-AadrmMaxUseLicenseValidityTime** 配置该值。 可在模板中使用更严格的设置替代此设置。 
-
-有关使用许可证的工作原理的详细信息和示例，请参阅 [Set-AadrmMaxUseLicenseValidityTime](/powershell/module/aadrm/set-aadrmmaxuselicensevaliditytime) 的详细说明。
+租户使用许可证有效期的默认值为 30 天，此设置可通过标签或模板中限制性更强的设置进行替代。 若要详细了解使用许可证以及如何对其进行配置，请参阅 [ 使用许可证](../deploy-use/configure-usage-rights.md#rights-management-use-license)文档。
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>Rights Management 可以防止屏幕截图吗？
 通过不授予复制[使用权限](../deploy-use/configure-usage-rights.md)，Rights Management 可以阻止许多常用屏幕捕获工具在 Windows 平台（Windows 7、Windows 8.1、Windows 10、Windows Phone）和 Android 上进行屏幕捕获。 但是，iOS 和 Mac 设备不允许任何应用阻止屏幕捕获，而浏览器（例如，与 Outlook Web App 和 Office Online 一起使用时）也不能阻止屏幕捕获。

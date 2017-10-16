@@ -4,7 +4,7 @@ description: "当你自己管理 Azure 信息保护租户密钥（自带密钥�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2f3ae7a0558cf209f3ec710a5114dbbc9a0dda9d
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 47f2e19e7eed107a44ac1bed744015c878876e9f
+ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
 
@@ -57,9 +57,11 @@ ms.lasthandoff: 09/23/2017
 - 若要重新生成改为由 Microsoft 为你管理的密钥，请参阅 Microsoft 托管操作的[重新生成租户密钥](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key)部分。
 
 ## <a name="backup-and-recover-your-tenant-key"></a>备份和恢复你的租户密钥
-你负责备份自己的租户密钥。 如果你在 Thales HSM 中生成租户密钥，若要备份该密钥，只需备份标记化密钥文件、安全体系文件和管理员卡即可。
+由于是你本人管理自己的租户密钥，因此你需负责备份 Azure 信息保护使用的密钥。 
 
-因为你按照[为 Azure 信息保护租户密钥实现 BYOK](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key) 中的过程传输了密钥，因此 Key Vault 将保留标记化密钥文件，以防止任何服务节点发生故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将它作为完全备份。 例如，如果需要密钥的明文副本以在 Thales HSM 外部使用，则 Azure Key Vault 无法为你检索该副本，因为它仅有不可恢复的副本。
+如果在 Thales HSM 中已本地生成租户密钥：若要备份该密钥，请备份标记化密钥文件、安全体系文件和管理员卡。 将密钥传送到 Azure Key Vault 时，该服务将保存已标记化的密钥文件，以防出现任何服务节点故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将它作为完全备份。 例如，如果需要密钥的明文副本以在 Thales HSM 外部使用，则 Azure Key Vault 无法为你检索该副本，因为它仅有不可恢复的副本。
+
+Azure Key Vault 具有一个[备份 cmdlet](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey)，可通过将其下载并存储到一个文件中来备份密钥。 由于下载的内容已加密，因此它不能在 Azure Key Vault 外使用。 
 
 ## <a name="export-your-tenant-key"></a>导出你的租户密钥
 如果使用 BYOK，则你无法从 Azure 密钥保管库或 Azure 信息保护导出租户密钥。 Azure 密钥保管库中的副本是不可恢复的。 

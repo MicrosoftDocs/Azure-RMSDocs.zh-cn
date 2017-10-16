@@ -4,7 +4,7 @@ description: "通过 Azure 门户配置和管理 Rights Management 模板。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2017
+ms.date: 10/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c27f239467bf546479827c7ca215a8892553e9c0
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: 5afd71e059ef22eed61347e6916b9cbb6c2dc7f0
+ms.sourcegitcommit: 326930de25b259c18469f4100ec5774a04bedc7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/08/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
@@ -40,15 +40,7 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 ## <a name="default-templates"></a>默认模板
 
-当你获得 Azure 信息保护订阅或包含 Azure 权限管理服务的 Office 365 订阅时，将为你的租户自动创建两个默认模板，这些模板限制对你组织中授权用户的访问。 这两个模板创建完成后，它们具有以下限制： 
-
-- 受保护内容的读取或修改权限
-    
-    - 特定权限：查看内容、保存文件、编辑内容、查看分配的权限、允许宏、转发、答复、全部答复
-
-- 受保护内容的只读查看
-    
-    - 特定权限：查看内容
+当你获得 Azure 信息保护订阅或包含 Azure 权限管理服务的 Office 365 订阅时，将为你的租户自动创建两个默认模板，这些模板限制对你组织中授权用户的访问。 创建这两个模板时，它们具有[为 Azure Rights Management 配置使用权限](configure-usage-rights.md#rights-included-in-the-default-templates)文档中列出的权限。
 
 此外，模板配置为允许为期七天的脱机访问，没有到期日期。
 
@@ -63,22 +55,22 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 如果最近获得了 Azure 信息保护的订阅，则使用以下名称创建默认模板：
 
-- 机密\所有员工，具有受保护内容的读取或修改权限。
+- 机密\所有员工，授予受保护内容的读取或修改权限。
 
-- 高度机密\所有员工，具有受保护内容的只读查看权限。
+- 高度机密\所有员工，授予受保护内容的只读权限。
 
 如果在一段时间以前获得了 Azure 信息保护订阅，或者如果没有 Azure 信息保护订阅，但具有包含 Azure Rights Management 的 Office 365 订阅，则将使用以下名称创建默认模板：
 
-- \<组织名称> - 机密，具有受保护内容的读取或修改权限。
+- \<组织名称> - 机密，授予受保护内容的读取或修改权限。
 
-- \<组织名称> - 仅机密查看，具有受保护内容的只读查看权限。 
+- \<组织名称> - 机密（仅供查阅），授予受保护内容的只读权限。 
 
 可以在使用 Azure 门户时重命名（和重新配置）这些默认模板。
 
 >[!NOTE]
 >如果没有在“Azure 信息保护 - 全局策略”边栏选项卡中看到默认模板，则这些模板已转换为标签或链接到标签。 它们仍作为模板存在，但在 Azure 门户中，你会看到它们属于包含 Azure RMS 保护的标签配置。 可以始终通过从 [AADRM PowerShell 模块](administer-powershell.md)运行 [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) 来确认租户具有哪些模板。
 >
->可以手动转换模板（如后面部分[将模板转换为标签](#to-convert-templates-to-labels)中所述），然后对其重命名（如果需要）。 或者，如果最近创建了默认 Azure 信息保护策略，并且同时激活了租户的 Azure 权限管理服务，则将自动转换这些模板。
+>可以手动转换模板（如后面部分[将模板转换为标签](#to-convert-templates-to-labels)中所述），然后对其重命名（如果需要）。 或者，如果最近创建了默认 Azure 信息保护策略，并且同时激活了租户的 Azure Rights Management 服务，则将自动转换这些模板。
 
 存档的模板在“Azure 信息保护 - 全局策略”边栏选项卡中显示为不可用。 无法为标签选择这些模板，但可以将其转换为标签。
 
@@ -97,11 +89,11 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 - 无法在 Azure 门户中复制或删除模板。 将模板转换为标签时，可以通过选择“为包含此标签的文档和电子邮件设置权限”选项的“未配置”配置该标签以停止使用该模板。 或者，可以删除标签。 但是，在这两种方案中，模板均不会被删除且模板仍保持已存档状态。
     
-    现在可以通过使用 PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) cmdlet 删除模板。 还可以为未转换为标签的模板使用此 PowerShell cmdlet。 但是，如果删除已用于保护内容的模板，则不能再打开该内容。 仅当确定模板未用于保护生产中的文档或电子邮件时，才可删除模板。 作为一种预防措施，可能需要考虑首先通过使用 [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate) cmdlet 将模板作为备份导出。 
+    现在可以通过使用 PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) cmdlet 删除模板。 还可以为未转换为标签的模板使用此 PowerShell cmdlet。 但是，如果删除已用于保护内容的模板，则不能再打开该内容。 仅当确定模板未用于保护生产中的文档或电子邮件时，才可删除模板。 作为一种预防措施，建议考虑首先使用 [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate) cmdlet 将模板作为备份导出。 
 
 - 在全局策略中显示部门模板（为作用域配置的模板）。 目前，如果编辑并保存部门模板，则会删除作用域配置。 Azure 信息保护策略中的作用域内模板相当于[作用域内策略](configure-policy-scope.md)。 如果将模板转换为标签，则可以选择现有作用域。
     
-    此外，目前无法设置部门模板的应用程序兼容性设置。 如有必要，可以使用 PowerShell 的 [Set-aadrmtemplateproperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 进行设置。
+    此外，目前无法设置部门模板的应用程序兼容性设置。 如有必要，可以使用 PowerShell 和 [Set-aadrmtemplateproperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 设置应用程序兼容性设置。
 
 - 将模板转换为标签或将模板链接到标签后，其他标签不能再使用该模板。 此外，此模板不再显示在“模板”或“保护模板”部分中。 此部分正处于重命名的过程中。
 

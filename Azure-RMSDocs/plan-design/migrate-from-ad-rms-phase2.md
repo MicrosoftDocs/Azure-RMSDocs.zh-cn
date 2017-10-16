@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 2 阶段涉及从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: db8f8de9cdda00f5983ff448aa895a5767d953b1
-ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
+ms.openlocfilehash: c81d7131bfb2a5f1e0742cd8dd55d52e3a65984a
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -112,11 +112,7 @@ ms.lasthandoff: 09/29/2017
     
         Enable-Aadrm
 
-**如果 Azure 信息保护租户已激活，会怎么样？** 如果已为你的组织激活了 Azure Rights Management 服务，则用户可能已使用 Azure 信息保护和自动生成的租户密钥（及默认模板）而不是 AD RMS 中的现有密钥（和模板）来保护内容。 在 Intranet 中妥善管理的计算机上不太可能会发生这种情况，因为这些计算机会自动根据 AD RMS 基础结构进行配置。 但是，在工作组计算机或很少连接到 Intranet 的计算机上，可能会发生这种情况。 遗憾的是，这些计算机也很难识别，正因如此，我们建议在从 AD RMS 导入配置数据之前不要激活该服务。
-
-如果你的 Azure 信息保护租户已激活并且可以识别这些计算机，请确保根据[步骤 7](migrate-from-ad-rms-phase3.md#step-7-reconfigure-clients-to-use-azure-information-protection) 中所述，在这些计算机上运行 CleanUpRMS.cmd 脚本。 运行此脚本会强制这些计算机重新初始化用户环境，以便下载更新的租户密钥和导入的模板。
-
-此外，如果已经创建要在迁移后使用的自定义模板，则必须导出然后导入这些模板。 下一步中介绍了此过程。 
+**如果 Azure 信息保护租户已激活，会怎么样？** 如果已为组织激活 Azure Rights Management 服务，并且已创建想要在迁移后使用的自定义模板，则必须导出和导入这些模板。 下一步中介绍了此过程。 
 
 ## <a name="step-6-configure-imported-templates"></a>步骤 6. 配置导入的模板
 

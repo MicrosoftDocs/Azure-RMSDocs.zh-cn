@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 1 阶段涉及从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/27/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a1f448a51ee4bfecfd0d680b842eed44aa816ed1
-ms.sourcegitcommit: e4199d243d9f6c80efccc0f0d5574d069d69f46d
+ms.openlocfilehash: 198698bbef8fbb778545c2599798afd1255a01bc
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
 
@@ -70,13 +70,13 @@ ms.lasthandoff: 08/02/2017
 
     然后为载入控件配置此组，将组对象 ID 替换为本例中的对象 ID，并在出现以下提示时输入 **Y** 进行确认：
 
-        Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False -SecurityGroupObjectId "fba99fed-32a0-44e0-b032-37b419009501"
+        Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False -SecurityGroupObjectId "fba99fed-32a0-44e0-b032-37b419009501" -Scope WindowsApp
 
 3. [下载下列文件](https://go.microsoft.com/fwlink/?LinkId=524619)，其中包含客户端迁移脚本：
     
-    **ClientMigration.zip**
+    Migration-Scripts.zip
     
-4. 提取文件，然后按照 **PrepareClient.cmd** 中的说明操作，以使其包含 AD RMS 群集 Extranet 授权 URL 的服务器名称。 
+4. 提取文件，然后按照 PrepareClient.cmd 中的说明操作，使其包含 AD RMS 群集 Extranet 授权 URL 的服务器名称。 
     
     若要找到此名称：在 Active Directory Rights Management Services 控制台中，请单击群集名称。 在**群集详情**信息中，复制 Extranet 群集 URL 部分**授权**值的服务器名称。 例如：**rmscluster.contoso.com**.
 
