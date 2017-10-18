@@ -1,10 +1,10 @@
 ---
 layout: LandingPage
-ms.openlocfilehash: 713d2484288d1297fd72f976e0dbf000eba7f018
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 7b26e03c121847008f5f507e6fef3263871c1621
+ms.sourcegitcommit: c37b7a95dbef32377ddfba4b24e063a3ede2642a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="azure-information-protection-documentation"></a>Azure 信息保护文档
 
@@ -131,22 +131,6 @@ ms.lasthandoff: 06/30/2017
                 <div class="card">
                     <div class="cardText">
                         <p><a href="/enterprise-mobility-security/solutions/infoprotect-secure-classify-scenario">开发人员指南</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>  
-</ul>
-
-<h2>解决方案</h2>
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="/enterprise-mobility-security/solutions/infoprotect-secure-classify-scenario">使用分类、标记和保护来保护数据</a></p>
-                        <p><a href="/enterprise-mobility-security/solutions/share-sensitive-data">在内部和外部共享敏感数据</a></p>
                     </div>
                 </div>
             </div>
