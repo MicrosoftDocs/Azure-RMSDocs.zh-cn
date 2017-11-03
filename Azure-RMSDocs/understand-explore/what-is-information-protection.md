@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 1cbbad16590bde0fa6278764fe9351b1a4e0b996
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: c17453cddec7d570901ccf18287e8d1db2fd3f01
+ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -92,7 +92,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 - 常见问题：[Azure 信息保护的常见问题](../get-started/faqs.md)
 
-- Yammer：[Azure 信息保护](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)
+- Yammer：[Azure 信息保护](https://www.yammer.com/AskIPTeam)
 
 
 此外，Microsoft Ignite 2017 具有将针对 Azure 信息保护按需提供的许多会话。 有关该会议公告的摘要，请参阅 [What’s new in Azure Information Protection @ Ignite 2017](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)（Azure 信息保护中的新增功能 @ Ignite 2017）。 

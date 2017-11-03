@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5de30d095e1c279babb8f8be74a5a9b9d54db204
-ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
+ms.openlocfilehash: ca2c8156489b55911ee340fd52f85e68b5280915
+ms.sourcegitcommit: 3952fc01c6182c143df7f0d2e748594e49bf1da8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
@@ -76,6 +76,6 @@ ms.lasthandoff: 10/12/2017
 3. 使用此步骤开始处的说明，配置脚本部署方法，在由 AIPMigrated 组成员使用的 Windows 客户端计算机上运行 Migrate-Client.cmd 和 Migrate-User.cmd。 
 
 ## <a name="next-steps"></a>后续步骤
-若要继续迁移，请转到[第 4 阶段 - 支持服务配置](migrate-from-ad-rms-phase3.md)。
+若要继续迁移，请转到[第 4 阶段 - 支持服务配置](migrate-from-ad-rms-phase4.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

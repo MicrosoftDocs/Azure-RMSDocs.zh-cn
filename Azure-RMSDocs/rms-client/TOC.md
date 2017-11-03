@@ -16,6 +16,7 @@
 ##### [PowerShell 命令](client-admin-guide-powershell.md)
 #### [Azure 信息保护用户指南](client-user-guide.md)
 ##### [下载并安装客户端](install-client-app.md)
+##### [对文件或电子邮件进行分类](client-classify.md)
 ##### [对文件或电子邮件进行分类和保护](client-classify-protect.md)
 ##### [跟踪和撤消文档](client-track-revoke.md)
 ##### [打开受保护的文件](client-view-use-files.md)
