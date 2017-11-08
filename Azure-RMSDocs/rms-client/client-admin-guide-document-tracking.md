@@ -4,7 +4,7 @@ description: "管理员配置和使用 Azure 信息保护的文档跟踪的说�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: dd8b2dcf785d47ec779b314072fb5edddf556163
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: bca186ebe78d79926a6ef775b1f5be7006e89df5
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="configuring-and-using-document-tracking-for-azure-information-protection"></a>配置和使用 Azure 信息保护的文档跟踪
+# <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>管理员指南：配置和使用 Azure 信息保护的文档跟踪
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
@@ -64,6 +64,9 @@ ms.lasthandoff: 08/11/2017
 用户登录到文档跟踪站点时，他们可以跟踪和撤销通过使用 Azure 信息保护客户端保护或通过使用 Rights Management 共享应用程序共享的文档。 以 Azure 信息保护管理员（全局管理员）的身份登录时，可以单击“管理员”图标切换到管理员模式。 在此模式下，可以查看组织中用户通过 Azure 信息保护客户端选择进行跟踪的文档，或查看通过 Rights Management 共享应用程序共享的文档：
 
 ![文档跟踪站点中的“管理员”图标](../media/tracking-site-admin-icon.png)
+
+> [!NOTE] 
+> 如果是全局管理员，但看不到此图标，则是因为你尚未分享任何文档。 在这种情况下，请使用以下 URL 访问文档跟踪站点：https://portal.azurerms.com/#/admin
 
 在管理员模式下执行的操作会经过审核并记录在使用情况日志文件中，必须确认后才能继续。 有关此日志记录的详细信息，请参阅下一节。
 

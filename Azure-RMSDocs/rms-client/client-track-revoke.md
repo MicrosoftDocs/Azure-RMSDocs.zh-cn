@@ -4,7 +4,7 @@ description: "保护文档后，可跟踪用户如何使用它们。 如果用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8a908097e4207889b6441e3224e7e4110fa2f9ae
-ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.openlocfilehash: d5c8d326b68b5f60e8223112d2d5bd28ed3925bc
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>使用 Azure 信息保护时跟踪和撤销文档
+# <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>用户指南：使用 Azure 信息保护时跟踪和撤销文档
 
 >适用于：Azure 信息保护、Windows 10、Windows 8.1、Windows 8 以及具有 SP1 的 Windows 7
 
@@ -49,11 +49,13 @@ ms.lasthandoff: 07/10/2017
     - Azure 信息保护管理员可以单击管理员图标，在用户通过文档跟踪站点注册文档后，跟踪和撤销这些用户的受保护文档。 只有管理员才能看到该图标：
         
         ![文档跟踪站点中的“管理员”图标](../media/tracking-site-admin-icon.png)
+        
+        如果是全局管理员，但看不到此图标，则是因为你尚未分享任何文档。 在这种情况下，请使用以下 URL 访问文档跟踪站点：https://portal.azurerms.com/#/admin
 
 除非你是管理员，否则只能跟踪和撤销你所保护的文档。 你无法通过使用文档跟踪站点来跟踪受保护的电子邮件。
 
 > [!NOTE] 
-> 如果管理员已为文档跟踪站点配置了隐私控制，你可能无法看到组织中的用户访问你所跟踪的文档的时间。 管理员可以豁免所有用户或仅豁免某些用户。 但是，你始终可以撤销对你所跟踪文档的访问权限。
+> 如果管理员已为文档跟踪站点配置了隐私控制，你可能无法看到组织中的用户访问你所跟踪的文档的时间。管理员可以豁免所有用户或仅豁免某些用户。 但是，你始终可以撤销对你所跟踪文档的访问权限。
 
 要跟踪已保护的文档，必须使用 Windows 计算机将其注册到文档跟踪站点。 为此，请使用文件资源管理器或 Office 应用程序。
 
@@ -109,5 +111,8 @@ ms.lasthandoff: 07/10/2017
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
 - [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
+
+## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
+请参阅[管理员指南](client-admin-guide.md)中的[配置和使用 Azure 信息保护的文档跟踪](client-admin-guide-document-tracking.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

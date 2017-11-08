@@ -4,7 +4,7 @@ description: "使用这些步骤，为组织准备、实施和管理 Azure 信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2a3e9eec089999d6ef2ab6fbb738260be23f6bb8
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 71565ddaeccda9171a6cd8775c93e2ac0785ba59
+ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
 >*适用于：Azure 信息保护、Office 365*
 
-使用以下步骤，为组织准备、实施和管理 Azure 信息保护。
+建议使用以下步骤，为组织准备、实施和管理 Azure 信息保护。
 
 不过，如果只想快速试用 Azure 信息保护，而不将其部署在生产环境中，请参阅 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)。
 

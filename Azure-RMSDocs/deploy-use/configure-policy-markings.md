@@ -4,17 +4,17 @@ description: "当文档或电子邮件中分配一个标签时，可以选择几
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 0da5df139d98f0468f49e7e3f17cd1cd2358a015
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: ff444afb1912239ec817882c76fc735f6d35ed1e
+ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -93,6 +93,8 @@ ms.lasthandoff: 09/22/2017
 此设置当前处于预览状态。
 
 Calibri 是页眉、页脚和水印文字的默认字体。 如果指定替代字体名称，请确保它在将应用视觉对象标记的客户端设备上可用。 否则，使用的字体将不确定。 
+
+如果使用预览版 Azure 信息保护客户端，则指定的字体不可用，客户端会回退为使用 Calibri 字体。
 
 ### <a name="setting-the-font-color"></a>设置字体颜色
 

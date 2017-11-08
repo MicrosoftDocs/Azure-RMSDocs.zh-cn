@@ -4,24 +4,24 @@ description: "开发人员可使用 Azure 信息保护来保护和管理所有�
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: ea13c3dbf37dd22a6e93786390bd6be4da7a6959
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: a9a94744aa2eacb3ddb4bbda3989ae857ff708fd
+ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 
-本指南将介绍用于扩展和集成 Azure 信息保护权限管理服务的工具。 本指南的目的是使希望利用权限管理系统的开发人员可为一系列支持的平台构建不同类型的应用程序。
+本指南将介绍用于扩展和集成 Azure 信息保护权限管理服务的工具。
 
->当前的 Azure 信息保护 SDK 具有权限管理组件，分类和标签处于开发阶段。
+>当前的 Azure 信息保护 SDK 包含 Rights Management 组件。 分类和标签组件还在开发中。
 
 ## <a name="service-applications"></a>服务应用程序
 
@@ -39,15 +39,12 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="powershell-guides"></a>PowerShell 指南
 
-这些脚本通常由 Azure Rights management 管理员使用，可用于开发和测试服务应用程序。
-
-- [Azure 权限管理 Cmdlet](https://msdn.microsoft.com/library/azure/dn629398.aspx) 可实现从命令行管理 Azure RMS。 这不仅可以实现自动化，而且还支持使用可靠、重复的过程来帮助降低管理开销。 此外，某些 Azure RMS 高级配置和操作还需要 Azure PowerShell。
-- [RMS 保护 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx) 可与 Azure 信息保护中的 Azure 权限管理 (Azure RMS) 数据保护结合使用，也可与 Active Directory Rights Management Services (AD RMS) 结合使用，以及补充这些权限管理部署的其他 PowerShell 模块。 使用这些 RMS 保护 cmdlet 可批量保护和取消保护任何类型的文件
+PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开发和测试服务应用程序。 有关详细信息，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](/information-protection/rms-client/client-admin-guide-powershell)。
 
 ## <a name="user-applications"></a>用户应用程序
 
 可以使用 RMS SDK 2.1 或 RMS SDK 4.2 构建用户应用程序。
-4.2 版本基于 REST 客户端，其 API 特定于几种常见操作系统：iOS/OSX、Android、Linux 以及 Windows。 2.1 版本用于构建基于 Windows 的本地应用程序。
+4.2 版本基于 REST 客户端，其 API 特定于几种常见操作系统：iOS/OSX、Android、Linux 以及 Windows。 2.1 版本用于构建基于 Windows 的本机应用程序。
 
 ### <a name="user-application-development-guides"></a>用户应用程序开发指南
 
@@ -105,11 +102,11 @@ ms.lasthandoff: 09/28/2017
 
 [Azure 信息保护简介](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
-这些视频来源于 Micorsoft 2016 Ignite 会议
+这些视频来源于 Microsoft 2016 Ignite 会议
 
 - [组织内的电子邮件安全](https://myignite.microsoft.com/videos/2787)
 - [采用综合标识驱动解决方案安全地保护和共享数据](https://myignite.microsoft.com/videos/2784)
-- [了解分类、标记和保护如何提供持续的数据保护](https://myignite.microsoft.com/videos/2786)
+- [了解分类、标签和保护如何提供持续的数据保护](https://myignite.microsoft.com/videos/2786)
 
 ## <a name="other-resources"></a>其他资源
 
@@ -122,6 +119,17 @@ ms.lasthandoff: 09/28/2017
 - [支持的文件格式](supported-file-formats.md)
 - [支持的平台](supported-platforms.md)
 - [了解使用限制](understanding-usage-restrictions.md)
+
+### <a name="message-protocol-and-file-formats"></a>消息协议和文件格式
+
+- [Client-to-Server Protocol](https://msdn.microsoft.com/library/cc243191.aspx)（客户端到服务器协议）
+- [Rights-Managed Email Object Protocol](https://msdn.microsoft.com/library/cc463909(v=EXCHG.80).aspx)（权限管理电子邮件对象协议）
+- [复合文件二进制文件格式](https://msdn.microsoft.com/library/dd942138.aspx)（复合文件二进制文件格式）
+
+#### <a name="rights-managed-email-message"></a>权限管理电子邮件
+
+- [.MSG File Format (Part 1)](https://blogs.msdn.microsoft.com/openspecification/2009/11/06/msg-file-format-part-1/)（.MSG 文件格式（第 1 部分））
+- [.MSG File Format (Part 2)](https://blogs.msdn.microsoft.com/openspecification/2010/06/20/msg-file-format-rights-managed-email-message-part-2/)（.MSG 文件格式（第 2 部分））
 
 ### <a name="api-reference"></a>API 参考
 

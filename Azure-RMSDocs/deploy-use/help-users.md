@@ -4,7 +4,7 @@ description: "此信息可帮助你在部署和配置 Azure 信息保护中的 A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d4ce0ea6a3c04c5ca52dae1750e48d5618eeef76
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 29a85bf1bf216c785a1b9cd6511069fe688327db
+ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/18/2017
     
     > [!TIP]
     > 最终用户示例视频
-    > -   [Azure RMS user experience](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)（Azure RMS 用户体验）
+    > -   [Microsoft Azure 信息保护](https://youtu.be/ToShAUdlrPo?list=PL8nfc9haGeb6qSm1kLU8n3Zqg398764h5)
     > -   [Azure RMS Document Tracking and Revocation](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)（Azure RMS 文档跟踪和撤消）
 
 -   管理员信息
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/18/2017
     
 -   技术支持信息
     
-    如果用户拥有 Azure 信息保护客户端，支持人员可要求他们使用“帮助和反馈”选项，获取例如 Office 版本是否无法支持保护，以及当前登录的用户帐户等信息。 还可使用此选项收集日志文件并重置客户端。 有关详细信息，请参阅管理员指南：[其他检查和故障排除](../rms-client/client-admin-guide.md#additional-checks-and-troubleshooting)。
+    如果用户拥有 Azure 信息保护客户端，支持人员可要求他们使用“帮助和反馈”选项，获取例如 Office 版本是否无法支持保护，以及当前登录的用户帐户等信息。 还可使用此选项收集日志文件并重置客户端。 有关详细信息，请参阅管理员指南：[安装检查和疑难解答](../rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)。
     
     如果有人合法请求获取对受保护文档的完全访问权限，请确保支持人员可以按流程操作，使用 Azure Rights Management [超级用户功能](configure-super-users.md)请求获取此访问权限。 例如，法律部门或经理可能会在某员工离职后发出此类请求。
     

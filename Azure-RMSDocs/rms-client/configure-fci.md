@@ -4,7 +4,7 @@ description: "有关将 Rights Management (RMS) 客户端与 RMS 保护工具配
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e67bc3d82c1269343cd4e64f8a608a2a86d381ef
-ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
+ms.openlocfilehash: cd580b14e35697d00a3c42abd51d2afc94d6959d
+ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 08/01/2017
     
     - 你已安装 AzureInfAormationProtection PowerShell 模块并已为此模块配置先决条件以连接到 Azure 权限管理服务。
     
-    Azure 信息保护客户端附带 AzureInformationProtection PowerShell 模块。 有关安装说明，请参阅 Azure 信息保护管理员指南中的[如何为用户安装 Azure 信息保护客户端](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users)。 如有需要，可以使用 `PowerShellOnly=true` 参数仅安装 PowerShell 模块。
+    Azure 信息保护客户端附带 AzureInformationProtection PowerShell 模块。 有关安装说明，请参阅 Azure 信息保护管理员指南中的[为用户安装 Azure 信息保护客户端](client-admin-guide-install.md)。 如有需要，可以使用 `PowerShellOnly=true` 参数仅安装 PowerShell 模块。
     
     如果你的租户在北美以外的地区，则[使用此 PowerShell 模块的先决条件](client-admin-guide-powershell.md#azure-information-protection-and-azure-rights-management-service)包括激活 Azure 权限管理服务、创建服务主体，以及编辑注册表。 在按照本文说明开始操作之前，请确保你具有 BposTenantId、AppPrincipalId 以及对称密钥的值，如先决条件中所述。 
     

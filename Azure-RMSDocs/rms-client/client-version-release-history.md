@@ -4,7 +4,7 @@ description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/09/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,26 +12,32 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ccd6d0cec6a71527fad0303369baad90dd733958
-ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
+ms.openlocfilehash: ec73c1e0c0c2d5ef959f15975b2a972086a3bcff
+ms.sourcegitcommit: 91585427fe62956fd78d4e7897ec8abe55b3c11d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="azure-information-protection-client-version-release-history"></a>Azure 信息保护客户端：版本发行历史记录
 
 >*适用于：Azure 信息保护*
 
-Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 客户端包含在 Microsoft 更新目录（类别：Azure 信息保护）中，还可以随时从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式发布版 (GA) 和即将发布的版本（预览版本）。
+Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 客户端包含在 Microsoft 更新目录（类别：Azure 信息保护）中，还可随时从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式发布版 (GA) 和当前预览版。 
 
 不应在生产网络上为最终用户部署预览版本。 而应使用预览版本来查看和尝试在下一正式发布版中将出现的新功能或修补程序。 
 
-使用以下信息查看正式发布版中的新增内容或更改的内容。 最新版本会最先列出。 有关当前预览版本中的更改，请参阅下载页上的信息。
+使用以下信息查看正式发布版中的新增内容或更改的内容。 最新版本会最先列出。 
 
 > [!NOTE]
 > 不会列出小修补程序，因此，如果 Azure 信息保护客户端遇到问题，请先检查它是否是最新正式发布版的问题。 如果是，则检查当前预览版本。
 >  
-> 如果仍有问题，请参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
+> 有关技术支持，请参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
+
+## <a name="versions-later-than-110560"></a>1.10.56.0 以上版本
+
+如果客户端版本高于 1.10.56.0，则这是用于测试和评估的预览内部版本。 
+
+要了解自上次推出正式发布版客户端以来，当前预览版中新增或更改的内容，请参阅[下载页面](https://www.microsoft.com/en-us/download/details.aspx?id=53018)中的“详细信息”部分。 
 
 ## <a name="version-110560"></a>版本 1.10.56.0
 
@@ -41,9 +47,9 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **新增功能**：
 
-- 支持为用户定义的操作配置的标签。 对于 Outlook，此标签自动应用 Outlook 的“不要转发”选项。 对于 Word、Excel、PowerPoint 和文件资源管理器，此标签提示用户指定自定义权限。 有关详细信息，请参阅[配置 Azure 信息保护标签以进行保护](../deploy-use/configure-policy-protection.md)。
-
 - 支持可为标签配置的新 Office 365 DLP 条件。 有关详细信息，请参阅[为 Azure 信息保护标签配置条件](../deploy-use/configure-policy-classification.md)。
+
+- 支持为用户定义的操作配置的标签。 对于 Outlook，此标签自动应用 Outlook 的“不要转发”选项。 对于 Word、Excel、PowerPoint 和文件资源管理器，此标签提示用户指定自定义权限。 有关详细信息，请参阅[配置 Azure 信息保护标签以进行保护](../deploy-use/configure-policy-protection.md)。
 
 - 除了在“信息保护”栏上显示外，Office 功能区上的“保护”按钮也会显示标签。 
 
@@ -115,7 +121,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **要求变化：**
 
-旧版新增了完整客户端的 Microsoft .NET Framework 4.6.2 系统必备。 可以使用自定义安装参数 **DowngradeDotNetRequirement** 忽略此系统必备，尽管不建议这样做。 有关详细信息，请参阅管理员指南中的[客户端安装部分](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users)。
+旧版新增了完整客户端的 Microsoft .NET Framework 4.6.2 系统必备。 可以使用自定义安装参数 **DowngradeDotNetRequirement** 忽略此系统必备，尽管不建议这样做。 有关详细信息，请参阅管理员指南中的[为用户安装 Azure 信息保护客户端](client-admin-guide-install.md)。
 
 **新增功能**：
 
@@ -149,7 +155,7 @@ Microsoft .NET Framework
 
 - 一个新的统一客户端，它将适用于 Windows 的 Rights Management 共享应用程序中的功能与 Azure 信息保护客户端组合在一起。 包括：
     
-    - 与 Windows 文件资源管理器集成（右键单击）以应用标签和保护。 支持其他文件格式和多个文件部分。
+    - 与 Windows 文件资源管理器集成（右键单击）以应用标签和保护。 支持其他文件格式和多文件选择。
     - 适用于受保护文档的查看器（包括用于 SharePoint 的受保护 PDF）。
     - PowerShell cmdlet，可用于获取和设置存储在本地或存储在网络共享上的文件的标签。 这些 cmdlet 与 RMS 保护工具（RMSProtection 模块）之前随附的 cmdlet 一起安装。
     - 客户端使用情况日志，记录应用的标签、应用方式、应用者等信息。
@@ -169,7 +175,7 @@ Microsoft .NET Framework
 
 - 安装 Azure 信息保护客户端后，用户可从 Office 应用程序运行的诊断测试和重置选项：在“开始”选项卡的“保护”组中，单击“保护”、“帮助和反馈”，然后单击“运行诊断”。 
 
-    若要详细了解此选项，请参阅管理员指南中的[其他检查和故障排除](client-admin-guide.md#additional-checks-and-troubleshooting)部分。
+    若要详细了解此选项，请参阅管理员指南中的[其他检查和故障排除](client-admin-guide.md#installation-checks-and-troubleshooting)部分。
 
 **修补程序**：
 

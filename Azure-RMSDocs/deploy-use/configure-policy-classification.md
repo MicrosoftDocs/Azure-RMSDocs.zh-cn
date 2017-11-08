@@ -4,40 +4,27 @@ description: "在配置标签的条件时，可以自动将标签分配到文档
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: aa41d4f34f0ed43682f9ba426ec18204457980c3
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 1c37f1b05126b8e8d9a5e64f033c503f27a8a1fc
+ms.sourcegitcommit: a8140a7215c8704f34c247f602e1f12eb7b49aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
 >*适用于：Azure 信息保护*
 
-在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签： 
+在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。 
 
-- 自动分类适用于 Word、Excel 和 PowerPoint（如果文件已保存，并在发送电子邮件时将应用到 Outlook）。 自动分类不能用于以前手动标记的文件。
- 
-- 保存文件时，将建议的分类应用于 Word、Excel 和 PowerPoint。
+配置这些条件时，可使用预定义的模式，如“信用卡号”或“美国社会安全号码 (SSN)”。 或者，你可以定义自定义字符串或模式作为自动分类的条件。 这些条件适用于文档和电子邮件中的正文文本和页眉及页脚。 有关这些条件的详细信息，请参阅[以下过程](#to-configure-recommended-or-automatic-classification-for-a-label)中的步骤 5。
 
-配置条件时，可以使用预定义的模式，如“信用卡号”或“美国社会安全号码 (SSN)”。 或者，你可以定义自定义字符串或模式作为自动分类的条件。 这些条件适用于文档和电子邮件中的正文文本和页眉及页脚。 有关这些条件的详细信息，请参阅[以下过程](#to-configure-recommended-or-automatic-classification-for-a-label)中的步骤 5。
-
-它们应用于多个标签时，将如何计算多个条件：
-
-1. 根据在策略中指定的位置，将标签排序以供评估：排在第一的标签具有最低的位置（敏感度最低），排在最后的标签具有最高位置（敏感度最高）。
-
-2. 应用最敏感的标签。
- 
-3. 应用最后一个子标签。
-
-> [!TIP]
->若要获取最佳用户体验并确保业务连续性，我们建议你从用户建议分类开始，而不是自动操作。 此配置使你的用户能够接受标记或保护操作中，或覆盖这些建议（如果它们不适用于其文档或电子邮件）。
+若要获取最佳用户体验并确保业务连续性，我们建议你从用户建议分类开始，而不是自动操作。 此配置使你的用户能够接受分类和任何关联保护，或覆盖这些建议（如果它们不适用于其文档或电子邮件）。
 
 通过自定义策略提示配置条件以将标签应用于建议的操作的示例提示：
 
@@ -45,10 +32,54 @@ ms.lasthandoff: 09/18/2017
 
 在此示例中，用户可以单击“立即更改”应用建议的标签，或通过选择“消除”来替代该建议。
 
+> [!IMPORTANT]
+>请勿为自动分类和用户定义的权限配置标签。 “用户定义的权限”选项是一个[保护设置](configure-policy-protection.md)，允许用户指定应向其授予权限的人员。
+>
+>如果为自动分类和用户定义的权限配置标签，则会检查内容是否符合条件，并且不会应用用户定义的权限设置。 可使用建议的分类和用户定义的权限。
+
+## <a name="how-automatic-or-recommended-labels-are-applied"></a>如何应用自动标签或建议的标签
+
+**对于 Azure 信息保护客户端的正式发布版：**
+
+- 自动分类会在保存文档时应用到 Word、Excel 和 PowerPoint，并在发送电子邮件时应用到 Outlook。 
+    
+    如果文档和电子邮件之前已手动添加标签（或之前已使用更高级别的分类添加标签），则不能使用自动分类。 
+
+- 建议的分类会在保存文档时应用到 Word、Excel 和 PowerPoint。 不能将建议的分类用于 Outlook。
+    
+    对于之前已设置标签（无论是否是更高级别的分类标签）的文档，可使用建议的分类。 
+
+
+**对于 Azure 信息保护客户端的当前预览版本：**
+
+- 自动分类应用于 Word、Excel、PowerPoint 和 Outlook。 对于文档，自动分类[在后台持续运行](#more-information-about-running-continuously)。 对于 Outlook，自动分类在发送电子邮件时运行。 
+    
+    如果文档之前已手动添加标签（或之前已使用更高级别的分类添加标签），则不能使用自动分类。 但也有例外情况，如果使用 Azure 信息保护扫描程序并且其 OverrideLabel 参数设置为开启，则可以使用自动分类。
+
+- 建议的分类应用于 Word、Excel 和 PowerPoint。 对于这些文档，建议的分类[在后台持续运行](#more-information-about-running-continuously)。 不能将建议的分类用于 Outlook。
+    
+    对于之前已设置标签（无论是否是更高级别的分类标签）的文档，可使用建议的分类。 
+
+#### <a name="more-information-about-running-continuously"></a>有关持续运行的详细信息
+
+Azure 信息保护客户端的当前预览版本定期检查文档是否符合指定的条件规则。 此行为将为存储在 SharePoint Online 中的文档启用自动和建议的分类及保护。 由于已运行条件规则，因此大型文件可实现更快保存。 
+
+条件规则不会作为用户类型实时运行。 而会在文档发生修改时作为后台任务定期运行。 
+
+### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>多条件应用到多个标签时的评估方式
+
+对于 Azure 信息保护客户端和当前预览客户端的正式发布版：
+
+1. 根据在策略中指定的位置，将标签排序以供评估：排在第一的标签具有最低的位置（敏感度最低），排在最后的标签具有最高位置（敏感度最高）。
+
+2. 应用最敏感的标签。
+ 
+3. 应用最后一个子标签。
+
+
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>配置标签的建议或自动分类
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”边栏选项卡。 
-    
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”边栏选项卡。     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
 2. 如果要配置的标签将应用于所有用户，请选择“Azure 信息保护 - 全局策略”边栏选项卡。
@@ -86,8 +117,9 @@ ms.lasthandoff: 09/18/2017
 
 ## <a name="next-steps"></a>后续步骤
 
-有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
+请考虑部署 [Azure 信息保护扫描程序](deploy-aip-scanner.md)，它可使用自动分类规则发现和保护网络共享和本地文件存储中的文件并对其进行分类。  
+
+有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
