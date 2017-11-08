@@ -4,7 +4,7 @@ description: "使用 RMS 共享应用程序保护你的文档后，你可以跟�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 34025b7080b4365c0c1fdd77355e78a7c8742ce2
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 71f08e7500fbc9326bed3a5b37d694ecc5e37984
+ms.sourcegitcommit: 02e48f0e5137ba777ec9a2bccde08130e6075c20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>使用 RMS 共享应用程序跟踪和撤销文档
 
@@ -37,6 +37,8 @@ ms.lasthandoff: 06/30/2017
 -   如果你想要配置电子邮件通知：单击“设置”  并选择在访问该文档时是否通过电子邮件发送通知以及发送方式。
 
 - 如果想要为其他人跟踪和撤销共享文档：Azure 信息保护管理员可以通过单击“管理员”图标为其他人跟踪和撤销文档。 只有管理员才能看到该图标。
+    
+    注意：如果是全局管理员，但看不到此图标，则是因为你尚未分享任何文档。 在这种情况下，请使用以下 URL 访问文档跟踪站点：https://portal.azurerms.com/#/admin
 
 -   如有疑问或想要提供有关文档跟踪站点的反馈：单击“帮助”图标访问 [文档跟踪常见问题](http://go.microsoft.com/fwlink/?LinkId=523977)。
 

@@ -4,7 +4,7 @@ description: "适用于 Windows 的 Azure 信息保护客户端的客户端文�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d1802fbd3c659b154d585224a3f7b412b8995e5b
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 64e6e17beb134fca1e51b35b39ff9f130c88ecbb
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="azure-information-protection-client-files-and-client-usage-logging"></a>Azure 信息保护客户端文件和客户端使用情况日志记录
+# <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护客户端文件和客户端使用情况日志记录
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、Windows 7 SP1、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 安装 Azure 信息保护客户端后，请了解文件所在位置并监控客户端的使用状况。
 
@@ -76,9 +76,9 @@ ms.lasthandoff: 09/18/2017
     
     - 系统（用于登录和下载策略）
     
-    - DefaultAutomatic
+    - 默认
         
-        此 DefaultAutomatic 源操作仅用于预览版客户端，并引用通过使用 Azure 信息保护策略中的“选择默认标签”设置的标签。
+        此默认源操作仅适用于预览版客户端，并引用通过使用 Azure 信息保护策略中的“选择默认标签”设置的标签。
 
     
 - 操作前后的标签 

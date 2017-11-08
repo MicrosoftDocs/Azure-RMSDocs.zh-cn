@@ -5,20 +5,20 @@ keywords:
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 42c772b870c700da84d5dfaf04c1ac5c2cd51f96
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 252300e1d370a0c9b8260fb93315782dd01787c7
+ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="file-api-configuration"></a>文件 API 配置
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 06/30/2017
 -   **本机保护** -文件基于其 MIME 类型（文件扩展名）使用 AD RMS 格式得到保护。
 -   **PFile 保护** - 文件使用 AD RMS 保护文件 (PFile) 格式得到保护。
 
-有关受支持的文件格式的详细信息，请参阅本主题中的**文件 API 文件支持详细信息**。
+有关受支持的文件格式的详细信息，请参阅本文中的“文件 API 文件支持详细信息”。
 
 ## <a name="keykey-value-types-and-descriptions"></a>密钥/密钥值类型和描述
 
@@ -48,11 +48,11 @@ ms.lasthandoff: 06/30/2017
 
 **描述**：指定特定文件扩展名的配置信息，例如 TXT 和 JPG 等。
 
-- 允许通配符“*”，但是，特定扩展的设置优先于通配符设置。 通配符不会影响 Microsoft Office 文件的设置；必须按文件类型显式禁用这些设置。
+- 允许使用通配符“*”，但是，特定扩展名的设置优先于通配符设置。 通配符不会影响 Microsoft Office 文件的设置；必须按文件类型显式禁用这些设置。
 - 若要指定没有扩展名的文件，请使用“.”
 - 指定特定文件扩展名的密钥时请勿指定“.”字符；例如，使用 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\TXT` 来指定.txt 文件的设置。 （请勿使用 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\.TXT`）。
 
-在密钥中设置 **Encryption** 值来指定保护行为。 如果未设置 **Encryption** 值，则会观察到该文件类型的默认行为。
+要指定保护行为，请在密钥中设置“Encryption”值。 如果未设置 **Encryption** 值，则会观察到该文件类型的默认行为。
 
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>\Encryption*`
@@ -66,7 +66,7 @@ ms.lasthandoff: 06/30/2017
 > [!Note]
 > 此设置对解密没有任何影响。 只要用户具有 **EXTRACT** 权限，就可解密任何加密文件（无论是使用本机保护还是 Pfile 保护进行加密）。
 
-- **Native**：使用本机加密。 对于 Office 文件，加密文件将具有与原始文件相同的扩展名。 例如，文件扩展名为 .docx 的文件将被加密为扩展名为 .docx 的文件。 对于其他可以应用本机保护的文件，会将文件加密为具有 p*zzz* 扩展名格式的文件，其中 *zzz* 是原始文件扩展名。 例如，.txt 文件将加密为扩展名为 .ptxt 的文件。 下面包含了可以应用本机保护的文件扩展名的列表。
+- **Native**：使用本机加密。 对于 Office 文件，加密文件将具有与原始文件相同的扩展名。 例如，文件扩展名为 .docx 的文件将被加密为扩展名为 .docx 的文件。 对于其他可以应用本机保护的文件，会将文件加密为具有 p*zzz* 扩展名格式的文件，其中 *zzz* 是原始文件扩展名。 例如，.txt 文件会被加密为扩展名为 .ptxt 的文件。 下面是可应用本机保护的文件扩展名列表。
 
 - **Pfile**：使用 PFile 加密。 加密的文件会将 .pfile 追加到原来的扩展名。 例如，加密后，.txt 文件的文件扩展名将为 .txt.pfile。
 
@@ -86,11 +86,11 @@ ms.lasthandoff: 06/30/2017
 
 ### <a name="file-api---file-support-details"></a>文件 API - 文件支持详细信息
 
-可以为任何文件类型（扩展名）添加本机支持。 例如，对于任何扩展 &lt;ext&gt;（非 office），如果该扩展的管理配置是“NATIVE”，则将使用 \*.p&lt;ext&gt;。
+可为任何文件类型（扩展名）添加本机支持。 例如，对于任何扩展 &lt;ext&gt;（非 office），如果该扩展的管理配置是“NATIVE”，则将使用 \*.p&lt;ext&gt;。
 
 **Office 文件**
 
--   文件扩展名：doc、dot、xla、xls、xlt、pps、ppt、docm、docx、dotm、dotx、xlam、xlsb、xlsm、xlsx、xltm、xltx、xps、potm、potx、ppsx、ppsm、pptm、pptx、thmx。
+-   文件扩展名：doc、dot、xla、xls、xlt、pps、ppt、docm、docx、dotm、dotx、xlam、xlsb、xlsm、xlsx、xltm、xltx、xps、potm、potx、ppsx、ppsm、pptm、pptx、thmx、vsdx、vsdm、vssx、vssm、vstx 和 vstm。 
 -   保护类型 = Native（默认）：sample.docx 加密为 sample.docx
 -   保护类型 = Pfile：对于 Office 文件，具有与 Native 相同的效果。
 -   Off：禁用加密。
@@ -146,7 +146,7 @@ HKEY_LOCAL_MACHINE
                   Encryption = Off
 ```
 
-## <a name="related-topics"></a>相关主题
+## <a name="related-articles"></a>相关文章
 
 - [开发人员说明](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)

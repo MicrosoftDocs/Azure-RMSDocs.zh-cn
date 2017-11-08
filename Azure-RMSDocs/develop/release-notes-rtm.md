@@ -1,11 +1,11 @@
 ---
-title: "发行说明 | Azure RMS"
-description: 
+title: "发行说明"
+description: "按修订列出的 SDK 更新及其他开发人员信息。"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,22 +14,27 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 875584683bcf1d35037691f21ac7d78d17806a07
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 52733dd7cac356879408e774c79331d705a71ea0
+ms.sourcegitcommit: 02e48f0e5137ba777ec9a2bccde08130e6075c20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="release-notes"></a>发行说明
 
-本主题包含有关此版本和以前版本的 RMS SDK 2.1 的重要信息。
+本文包含有关此版本和早前版本 RMS SDK 2.1 的重要信息。
+
+## <a name="october-2017---update"></a>2017 年 10 月更新
+
+- 添加了 2 个用于初始化和取消初始化环境的新 API。 有关信息，请参阅 [IpcInitializeEnvironment](https://msdn.microsoft.com/library/hh535289.aspx) 和 [IpcUninitializeEnvironment](https://msdn.microsoft.com/library/hh535289.aspx)。
+- 现可支持 Visio 文件类型。 有关详细信息，请参阅[文件 API 配置](file-api-configuration.md)。
 
 ## <a name="february-2016---sdk-documentation-update"></a>2016 年 2 月 - SDK 文档更新
 
 >[!Note]
 > 本部分中的功能文档更新适用于 2015 年 12 月 11 日后下载的 SDK。
 
-- **改进的身份验证流程** - 使用基于通过 [Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/)（Active Directory 身份验证库）的身份验证的 OAuth2 令牌。 有关此过程及其 API 扩展的详细信息，请参阅 [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md)（适用于启用了 RMS 的应用程序的 ADAL 身份验证）。
+- 改进了身份验证流程 - 通过 [Azure Active Directory 身份验证库 (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) 使用基于 OAuth2 令牌的身份验证。 有关此过程及其 API 扩展的详细信息，请参阅 [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md)（适用于启用了 RMS 的应用程序的 ADAL 身份验证）。
 
 - **更新到 ADAL**：通过更新应用程序来使用 ADAL 身份验证而不使用 Microsoft Online 登录助手，你和你的客户将能够：
 
@@ -52,7 +57,7 @@ ms.lasthandoff: 06/30/2017
 
 ## <a name="may-2015-update"></a>2015 年 5 月更新
 
--   **服务应用和基于云的 RMS** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 需要 3 部分信息：对称密钥、**AppPrincipalId** 和 **TenantBposId**。 有关此内容的主题已更新，提供了有关处理此信息的指导。 有关此更新，请参阅修订版本的[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
+-   服务应用和基于云的 RMS - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 需要 3 部分信息：对称密钥、AppPrincipalId 和 TenantBposId。 有关此内容的文章已更新，提供了有关处理此信息的指导。 有关此更新，请参阅修订版本的[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
 ## <a name="april-2015-update"></a>2015 年 4 月更新
 
@@ -68,7 +73,7 @@ ms.lasthandoff: 06/30/2017
 ## <a name="january-2015-update"></a>2015 年 1 月更新
 
 -   **受支持的保护文件 (pfile) 大小增加** - 现在支持大小超过 1 千兆字节 (1 GB) 的 pfile。 有关 pfile 的详细信息，请参阅[支持文件格式](supported-file-formats.md)。
--   **改进日志记录以提高诊断性能** - 对于应审查的消息，日志记录级别将显示 **ERROR** 或 **WARNING**。 其他所有消息（包括仍会显示的例外）将记录为 **INFO**。
+-   **改进日志记录以提高诊断性能** - 对于应审查的消息，日志记录级别将显示 **ERROR** 或 **WARNING**。 其他所有消息（包括仍会显示的例外）将记录为 INFO。
 
     我们选择此方法是希望你不错过任何详细信息。 现在，只有重要的消息会显示为 WARNING 级别。
 
@@ -78,7 +83,7 @@ ms.lasthandoff: 06/30/2017
 ## <a name="october-2014-update"></a>2014 年 10 月更新
 
 -   SDK 的文件 API 组件的默认行为已更新。 有关详细信息，请参阅[文件 API 配置](file-api-configuration.md)。
--   开发人员说明主题[启用电子邮件通知](how-to-enable-email-notification.md)中介绍了一项新功能，即电子邮件通知。
+-   开发人员说明文章[启用电子邮件通知](how-to-enable-email-notification.md)中介绍了一项新功能，即电子邮件通知。
 
 ## <a name="july-2014-update"></a>2014 年 7 月更新
 
@@ -89,7 +94,7 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
     本版本中添加的功能：
 
-    **注意** - 文件 API 扩展中添加了更多支持数据类型和结构，但此处未列出。 本版本中已更新的所有主题都标记为**初步文档，可能随时更改**。
+    **注意** - 文件 API 扩展中添加了更多支持数据类型和结构，但此处未列出。 本版本中已更新的所有文章都标记为“初步文档，可能随时更改”。
 
     -   [IpcfOpenFileOnHandle](https://msdn.microsoft.com/library/dn771751.aspx)
     -   [IpcfOpenFileOnILockBytes](https://msdn.microsoft.com/library/dn771752.aspx)
@@ -132,7 +137,7 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
       - 除了系统文件和 Office 文件以外的所有文件都可使用 RMS 受保护的文件格式 (PFile) 进行保护。
 
-    文件 API 通过以下四个新函数实现：[IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx)[IpcfEncryptFile](https://msdn.microsoft.com/library/dn133059.aspx)、[IpcfGetSerializedLicenseFromFile](https://msdn.microsoft.com/library/dn133060.aspx) 和 [IpcfIsFileEncrypted](https://msdn.microsoft.com/library/dn133061.aspx)。
+    文件 API 通过以下四个新函数实现：[IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx)、[IpcfEncryptFile](https://msdn.microsoft.com/library/dn133059.aspx)、[IpcfGetSerializedLicenseFromFile](https://msdn.microsoft.com/library/dn133060.aspx) 和 [IpcfIsFileEncrypted](https://msdn.microsoft.com/library/dn133061.aspx)。
 
     文件 API 要求客户端计算机上安装 Rights Management Service 客户端 2.1 ，并要求该计算机连接到 RMS 服务器。 有关 RMS 服务器、RMS 客户端及其功能的详细信息，请参阅 TechNet 内容以获取[针对 RMS 的 IT 专业人员文档](https://technet.microsoft.com/en-us/library/cc771234(v=ws.10).aspx)。
 

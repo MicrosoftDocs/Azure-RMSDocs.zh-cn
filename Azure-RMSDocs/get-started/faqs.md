@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护及其数据保护服务 Azure Rights Man
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/11/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 54116659e37c22dbc20221d335e2e55443dff899
-ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
+ms.openlocfilehash: 324eb3eb5d749021da93213e807f6316ca784485
+ms.sourcegitcommit: a8140a7215c8704f34c247f602e1f12eb7b49aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 10/11/2017
 
 是否有关于 Azure 信息保护或 Azure Rights Management 服务 (Azure RMS) 的问题？ 请查看此处是否有答案。
 
-定期更新这些常见问题页，其中新添加的内容在 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)（企业移动性和安全性博客）上的每月文档更新公告中列出。
+定期更新这些常见问题解答页，其中新添加的内容在[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)上的每月文档更新公告中列出。
 
 ## <a name="whats-the-difference-between-azure-information-protection-and-azure-rights-management"></a>Azure 信息保护和 Azure Rights Management 之间有何不同？
 
@@ -45,7 +45,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 如果安装了适用于 Windows 的 Azure 信息保护客户端，但没有 Azure 信息保护策略，那么客户端会在[仅保护模式](../rms-client/client-protection-only-mode.md)下自动运行。 在这种模式下，用户可以轻松应用 Rights Management 模板和自定义权限。 如果以后购买确实包含分类和标记的订阅，客户端会在下载 Azure 信息保护策略后自动切换到标准模式。
 
-如果当前使用的是 Windows Rights Management 共享应用程序，建议使用 Azure 信息保护客户端取而代之。 将于 2019 年 1 月 31 日停止提供对共享应用程序的支持。 若要顺利过渡，请参阅[用于操作 RMS 共享应用程序的任务](../rms-client/upgrade-client-app.md)。
+如果当前使用 Windows 版 Rights Management 共享应用程序，建议使用 Azure 信息保护客户端替换此应用程序。 将于 2019 年 1 月 31 日停止提供对共享应用程序的支持。 若要顺利过渡，请参阅[用于操作 RMS 共享应用程序的任务](../rms-client/upgrade-client-app.md)。
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 
@@ -55,12 +55,29 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 Azure 权限管理服务根据需要自动生成并管理 XrML 证书，因此它不使用本地 PKI。 有关 Azure Rights Management 如何使用证书的详细信息，请参阅 [Azure RMS 的工作原理](../understand-explore/how-does-it-work.md)一文中的 [Azure RMS 工作演练：首次使用、内容保护、内容使用](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption)。
 
+## <a name="i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work"></a>我看到 Azure 信息保护被列为可用于条件访问的云应用 - 工作原理是什么？
+
+是，作为公共预览版产品/服务，现可为 Azure 信息保护配置 Azure AD 条件访问。
+
+当用户打开受 Azure 信息保护保护的文档时，管理员现可基于标准条件访问控制，阻止其租户中用户的访问或授予他们访问权限。 最常见的请求条件之一是需要多重身份验证 (MFA)。 另一常见请求条件是，设备必须[遵守 Intune 策略](/intune/conditional-access-intune-common-ways-use)（以便移动设备满足密码要求和最低操作系统版本），并且计算机必须已加入域。
+
+有关详细信息和演练示例，请参阅以下博客文章：[Conditional Access policies for Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2017/10/17/conditional-access-policies-for-azure-information-protection/)（Azure 信息保护的条件访问策略）。
+
+其他信息:
+
+- Windows 计算机：对于当前预览版本，[初始化用户环境](../understand-explore/how-does-it-work.md#initializing-the-user-environment)时会对 Azure 信息保护的条件访问策略进行评估（此过程也称为引导），之后每 30 天评估一次。
+
+- 建议对条件访问策略的评估频率进行微调。 可通过配置令牌生存期来执行此操作。 有关详细信息，请参阅 [Azure Active Directory 中的可配置令牌生存期](/azure/active-directory/active-directory-configurable-token-lifetimes)。
+
+- 建议不要将管理员帐户添加到条件访问策略，因为这些帐户无法访问 Azure 门户中的“Azure 信息保护”边栏选项卡。
+
+- 如果针对条件访问使用大量云应用，则列表中可能不会显示“Microsoft Azure 信息保护”选项，因此无法进行选择。 在这种情况下，可使用列表顶部的搜索框。 开始键入“Microsoft Azure 信息保护”，筛选可用应用。 如果已有受支持的订阅，则可以看到“Microsoft Azure 信息保护”选项，可进行选择。 
+
 ## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure 信息保护中的标签和 Office 365 中的标签之间有何不同？
 
 通过 Azure 信息保护中的标签，可对文档和电子邮件应用一致分类和保护策略，无论它们在本地还是在云中。 此分类和保护与内容的存储位置或其移动方式无关。 通过 [Office 365 中标签的安全性和符合性](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，可在内容处于 Office 365 服务中时，对文档和电子邮件进行分类以供审核和保留。 
 
 当前，用户需单独应用和管理这些标签，但 Microsoft 致力于推出针对多个服务（包括 Azure 信息保护、Office 365、Microsoft Cloud App Security 和 Windows 信息保护）的全面且统一的标记策略。 这一相同的标记架构和存储也可用于软件供应商。 有关详细信息，请参阅 Microsoft Ignite 2017 会话 [Protecting complete data lifecycle using Microsoft information protection capabilities](https://myignite.microsoft.com/videos/55397)（使用 Microsoft 信息保护功能保护完整的数据生命周期）。
-
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>听说很快将发布新版 Azure 信息保护 — 何时发布？
 
@@ -74,11 +91,13 @@ Azure 权限管理服务根据需要自动生成并管理 XrML 证书，因此�
 
 若要获取技术支持，请使用标准支持渠道或[联系 Microsoft 支持](information-support.md#to-contact-microsoft-support)。
 
-若要提供反馈（例如，针对改进功能或新功能提出建议）：请在 Office 应用程序的“开始”选项卡的“保护”组中，单击“保护”，然后单击“帮助和反馈”。 在“Microsoft Azure 信息保护”对话框中，单击“发送反馈”。 这将打开一封要发送到信息保护团队的电子邮件。 我们还邀请你加入我们的工程团队：[Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/)。 
+若要提供反馈（例如，针对改进功能或新功能提出建议）：请在 Office 应用程序的“开始”选项卡的“保护”组中，单击“保护”，然后单击“帮助和反馈”。 在“Microsoft Azure 信息保护”对话框中，单击“发送反馈”。 选择此选项将打开一封要发送到信息保护团队的电子邮件。
+
+我们还邀请你加入我们的工程团队：[Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/)。 
 
 ## <a name="what-do-i-do-if-my-question-isnt-here"></a>如果我的问题不在这里，我该如何操作？
 
-首先，查看特定于分类和标签，或特定于数据保护的常见问题。 Azure 权限管理服务 (Azure RMS) 为 Azure 信息保护提供数据保护技术，Azure RMS 可与或者不与分类和标签结合使用： 
+首先，查看以下特定于分类和标签，或特定于数据保护的常见问题解答。 Azure Rights Management 服务 (Azure RMS) 为 Azure 信息保护提供数据保护技术。 Azure RMS 可与分类和标签结合使用，也可单独使用。 
 
 - [分类和标签的常见问题解答](faqs-infoprotect.md)
 

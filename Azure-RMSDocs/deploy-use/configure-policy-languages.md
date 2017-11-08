@@ -4,24 +4,21 @@ description: "可以为用户在信息保护栏上看到的标签以及用户看
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 76650461c0af6e705f7ab124d31cdb598889bbc8
-ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
+ms.openlocfilehash: 7a77b517531d5b4586871abbcb22d2158673d56c
+ms.sourcegitcommit: 222318da363a45c3a533f7b77b02f4e31a258979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>如何在 Azure 信息保护中配置不同语言的标签和模板
 
 >*适用于：Azure 信息保护*
-
->[!NOTE]
->此功能目前处于预览状态。
 
 虽然 Azure 信息保护的默认标签支持多种语言，但必须配置对指定标签名称和说明的支持。 此配置要求执行以下操作：
 
@@ -47,11 +44,11 @@ ms.lasthandoff: 10/11/2017
     
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
-2. 在“管理”菜单选项中，选择“语言(预览)”。
+2. 在“管理”菜单选项中，选择“语言”。
 
-3. 在“Azure 信息保护 - 语言(预览)”边栏选项卡中，选择“添加新语言以进行翻译”。 选择要添加的语言，然后选择“确定”。 可以在搜索框中键入语言名称，也可以滚动浏览可用语言列表进行选择
+3. 在“Azure 信息保护 - 语言”边栏选项卡中，选择“添加新语言以进行翻译”。 选择要添加的语言，然后选择“确定”。 可以在搜索框中键入语言名称，也可以滚动浏览可用语言列表进行选择
 
-4. 现在，所选语言显示在“Azure 信息保护 - 语言(预览)”边栏选项卡上：
+4. 现在，所选语言显示在“Azure 信息保护 - 语言”边栏选项卡上：
     
     - 要添加其他语言，请选择“添加新语言以进行翻译”并重复执行上一步骤。 
         
@@ -70,7 +67,7 @@ ms.lasthandoff: 10/11/2017
 
 8. 编辑每个 .xml 文件后，创建一个新的压缩 (zipped) 文件夹来包含这些文件。 压缩文件夹可以具有任何名称，但必须具有 .zip 扩展名。
 
-9. 返回到“Azure 信息保护 - 语言(预览)”边栏选项卡，然后选择“导入”。 请注意，如果此选项不可用，则首先清除“语言名称”复选框或单独选择的语言对应的复选框。
+9. 返回到“Azure 信息保护 - 语言”边栏选项卡，然后选择“导入”。 请注意，如果此选项不可用，则首先清除“语言名称”复选框或单独选择的语言对应的复选框。
     
     导入完成后，本地化的名称和说明将在下次发布 Azure 信息保护策略后为用户下载。 可以单击“全局策略”或“范围策略”边栏选项卡中的“发布”。
 

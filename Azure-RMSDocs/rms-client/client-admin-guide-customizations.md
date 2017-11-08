@@ -4,7 +4,7 @@ description: "有关自定义适用于 Windows 的 Azure 信息保护客户端�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d5345f794fb69ddbfb4d6ffcddfcffd41ecacff5
-ms.sourcegitcommit: ff2fadacf9ef4c6ee27d9d08c4c455ffd48f21f8
+ms.openlocfilehash: 304425a2c64fb306615bbd5c6edf5e78e10b8e80
+ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 10/30/2017
 ---
-# <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的自定义配置
+# <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、Windows 7 SP1、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 请参阅以下高级配置相关信息，在管理 Azure 信息保护客户端时，可能需要用于特定方案或一部分用户。
 
@@ -167,6 +167,8 @@ ms.lasthandoff: 09/19/2017
 
 ## <a name="enable-recommended-classification-in-outlook"></a>在 Outlook 中启用建议的分类
 
+此配置选项目前处于预览状态，可能随时更改。
+
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
 为建议的分类配置标签时，系统将提示用户接受或关闭 Word、Excel 和 PowerPoint 中建议的标签。 此设置将此标签建议扩展到也在 Outlook 中显示。
@@ -180,11 +182,11 @@ ms.lasthandoff: 09/19/2017
 
 ## <a name="set-a-different-default-label-for-outlook"></a>为 Outlook 设置不同的默认标签
 
-此配置选项目前处于预览状态并需要预览版本的客户端。
+此配置选项目前处于预览状态，可能随时更改。 此外，此配置选项需要预览版的客户端。
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
-配置此设置时，Outlook 不会应用 Azure 信息保护策略中为“选择默认标签”设置配置的默认标签。 相反，Outlook 可以应用不同的标签，也可以不使用标签。
+配置此设置时，Outlook 不会应用 Azure 信息保护策略中为“选择默认标签”设置配置的默认标签。 相反，Outlook 可应用不同的默认标签，也可不应用标签。
 
 要应用不同的标签，必须指定标签 ID。 在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值将显示在“标签”边栏选项卡上。 对于应用了标签的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 标识标签 ID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，始终指定子标签（而不是父标签）的 ID。
 

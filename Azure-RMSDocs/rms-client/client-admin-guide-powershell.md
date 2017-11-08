@@ -4,7 +4,7 @@ description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c0fc9052199486653cb0d9ac3865af4e2174d30f
-ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
+ms.openlocfilehash: 197e3c8e908849665231040fd86cd79bd47cd1eb
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="using-powershell-with-the-azure-information-protection-client"></a>将 PowerShell 与 Azure 信息保护客户端配合使用
+# <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
 >适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
@@ -36,7 +36,9 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 |[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|以非交互方式标记文件，例如使用按计划运行的脚本。|
 
 
-有关所有 cmdlet 及其相应帮助的列表，请参阅 [AzureInformationProtection 模块](/powershell/module/azureinformationprotection)。 在 PowerShell 会话中，键入 `Get-Help <cmdlet name> -online` 以查看最新帮助以及除英语之外的其他受支持语言。  
+此外，[Azure 信息保护扫描程序](../deploy-use/deploy-aip-scanner.md)（当前为预览版）使用 cmdlet 在 Windows Server 上安装和配置服务。 然后，可使用此扫描程序发现和保护数据存储中的文件并对其进行分类。
+
+有关所有 cmdlet 及其相应帮助的列表，请参阅 [AzureInformationProtection 模块](/powershell/module/azureinformationprotection)。 在 PowerShell 会话中，键入 `Get-Help <cmdlet name> -online` 以查看最新帮助。  
 
 此模块安装在 **\ProgramFiles (x86)\Microsoft Azure Information Protection** 中，并将此文件夹添加到 **PSModulePath** 系统变量。 此模块的 .dll 命名为 **AIP.dll**。
 

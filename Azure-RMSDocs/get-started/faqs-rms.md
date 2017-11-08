@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护中数据保护服务 Azure Rights Manage
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/09/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9983b088b5856f8c2223d05624c3bee21b80fd15
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: 038cb3a81bac9f16055038f33d825daed6642479
+ms.sourcegitcommit: 91585427fe62956fd78d4e7897ec8abe55b3c11d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -124,16 +124,24 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>能否将外部用户（公司外部人员）添加到自定义模板？
 
-是。 在 Azure 门户中将模板转换为标签后，可以配置[保护设置](../deploy-use/configure-policy-protection.md)，来为组织外的用户和组甚至其他组织中的所有用户添加权限。 或者，可以使用 PowerShell 来执行此配置。
+是。 利用[保护设置](../deploy-use/configure-policy-protection.md)（可在 Azure 门户中配置），可为组织外的用户和组甚至其他组织中的所有用户添加权限。 除非模板专用于通过 [Office 365 邮件加密新功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)发送电子邮件，否则请勿添加来自社交标识（如 Gmail 和 Microsoft）的帐户或其他不在 Azure AD 中的帐户。
 
-有关将自定义模板转换为标签以便可以轻松添加外部用户的详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
+注意，如果具有 Azure 信息保护标签，必须先将自定义模板转换为标签，然后再在 Azure 门户中配置这些保护设置。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
+
+此外，也可使用 PowerShell 将外部用户添加到自定义模板和标签。 此配置要求使用权限定义对象（用于更新模板）：
+
+1. 在权限定义对象中指定外部电子邮件地址及其权限，方法是使用 [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet 创建变量。
+
+2. 使用 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 将此变量提供给 RightsDefinition 参数。
+    
+    如果将用户添加到现有模板，除新用户以外，还须在模板中为现有用户定义权限定义对象。 对于此方案，建议查看[示例](/powershell/module/aadrm/set-aadrmtemplateproperty#examples)部分的“示例 3：将新用户和权限添加到自定义模板”，这可帮助你了解相关 cmdlet。 
 
 ## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>我可以对 Azure RMS 使用什么类型的组？
 大多数情况下，可以使用具有电子邮件地址的 Azure AD 中的任何组类型。 尽管分配使用权限时此经验法则始终适用，但在管理 Azure Rights Management 服务时存在一些例外。 有关详细信息，请参阅[组帐户 Azure 信息保护要求](../plan-design/prepare.md#azure-information-protection-requirements-for-group-accounts)。
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>如何向 Gmail 或 Hotmail 帐户发送受保护的电子邮件？
 
-使用 Exchange Online 和 Azure Rights Management 服务时，必须将电子邮件作为受保护的邮件进行发送。 例如，可以在 Outlook 网页版中的命令栏上选择新的“保护”按钮，使用 Outlook 的“不要转发”选项，选择一个从 Azure Rights Management 应用保护的 Azure 信息保护标签，或者可通过 Exchange Online 传输规则来应用保护。
+使用 Exchange Online 和 Azure Rights Management 服务时，必须将电子邮件作为受保护的邮件发送给用户。 例如，可在 Outlook 网页版的命令栏中选择新的“保护”按钮，使用 Outlook“不要转发”按钮或菜单选项。 或者，可选择 Azure 信息保护标签，自动应用“不要转发”功能，并对电子邮件进行分类。 
 
 收件人会看见一个登录到他们 Gmail、Yahoo 或 Microsoft 帐户的选项，然后可以阅读受保护的邮件。 或者，他们可选择一次性密码选项在浏览器中阅读此电子邮件。
 

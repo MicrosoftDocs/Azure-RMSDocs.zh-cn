@@ -4,7 +4,7 @@ description: "此信息可帮助你配置将使用 Azure Rights Management (RMS)
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 10/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8837b6187aee8bc041df7185527470297e913f49
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 674acfafb305d8ac6ff530710ba311160c850288
+ms.sourcegitcommit: 8ba50d1fc813214b6e66baea140e626c74c5a518
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/16/2017
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 06/30/2017
     Get-help .\GenConnectorConfig.ps1 -detailed
     ```
 
-若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如 https://connector.contoso.com。 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
+若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如 https://connector.contoso.com。然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
 
 > [!IMPORTANT]
 > 当你运行此工具时，请确保指定组织的负载平衡 RMS 连接器的名称，而不要指定运行 RMS 连接器服务的单个服务器的名称。
@@ -198,7 +198,7 @@ ms.lasthandoff: 06/30/2017
 
 ### <a name="to-configure-sharepoint-servers-to-use-the-connector"></a>将 SharePoint 服务器配置为使用连接器
 
-1. 通过使用 RMS 连接器管理工具和[授权服务器使用 RMS 连接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)部分的信息，确保 SharePoint 服务器有权使用 RMS 连接器。 需要此配置，以便 Exchange 可以使用 RMS 连接器。
+1. 通过使用 RMS 连接器管理工具和[授权服务器使用 RMS 连接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)部分的信息，确保 SharePoint 服务器有权使用 RMS 连接器。 需要此配置，以便 SharePoint 客户端可使用 RMS 连接器。
 
 2.  在与 RMS 连接器通信的 SharePoint 服务器上执行以下任一操作：
 
@@ -230,7 +230,7 @@ ms.lasthandoff: 06/30/2017
 
 ### <a name="to-configure-file-servers-to-use-the-connector"></a>将文件服务器配置为使用连接器
 
-1.  通过使用 RMS 连接器管理工具和[授权服务器使用 RMS 连接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)部分的信息，确保文件服务器有权使用 RMS 连接器。 需要此配置，以便 Exchange 可以使用 RMS 连接器。
+1.  通过使用 RMS 连接器管理工具和[授权服务器使用 RMS 连接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)部分的信息，确保文件服务器有权使用 RMS 连接器。 需要此配置，以便文件客户端可使用 RMS 连接器。
 
 2.  在为文件分类基础结构配置的、将与 RMS 连接器通信的文件服务器上执行以下任一操作：
 
