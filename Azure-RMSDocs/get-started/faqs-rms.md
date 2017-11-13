@@ -4,19 +4,20 @@ description: "有关 Azure 信息保护中数据保护服务 Azure Rights Manage
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/01/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
+ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 038cb3a81bac9f16055038f33d825daed6642479
-ms.sourcegitcommit: 91585427fe62956fd78d4e7897ec8abe55b3c11d
+ms.openlocfilehash: fb2af56222f686149e40afcd54b20c04114c2a1f
+ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -55,7 +56,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 ## <a name="where-can-i-find-information-about-third-party-solutions-that-integrate-with-azure-rms"></a>在哪里可以找到与 Azure RMS 集成的第三方解决方案的相关信息？
 
-许多软件供应商已经具备或正在实施与 Azure 权限管理集成的解决方案，并且这一数量正在快速增长。 你可能会发现，查看[启用 RMS 的解决方案](requirements-applications.md#rms-enlightened-solutions)列表，并在 Twitter 上从 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility) 了解最新更新非常有用。 但是，如果有特定的问题，可以向信息保护团队发送电子邮件：askipteam@microsoft.com。
+许多软件供应商已经具备或正在实施与 Azure 权限管理集成的解决方案，并且这一数量正在快速增长。 你可能会发现，查看[启用 RMS 的解决方案](requirements-applications.md#rms-enlightened-solutions)列表，并在 Twitter 上从 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility) 了解最新更新非常有用。 此外，请查看[开发人员指南](../develop/developers-guide.md)并在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上发布任何特定的集成问题。
 
 ## <a name="is-there-a-management-pack-or-similar-monitoring-mechanism-for-the-rms-connector"></a>RMS 连接器是否有管理包或类似的监视机制？
 
@@ -103,8 +104,6 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 ## <a name="if-i-use-this-protection-for-my-production-environment-is-my-company-then-locked-into-the-solution-or-risk-losing-access-to-content-that-we-protected-with-azure-rms"></a>如果在我的生产环境中使用该保护，那么我的公司是否就只能使用该解决方案？或者是否存在无法访问由 Azure RMS 进行保护的内容的风险？
 不会，你可以始终控制并继续访问数据，即使你决定不再使用 Azure Rights Management 服务也是如此。 有关详细信息，请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](../deploy-use/decommission-deactivate.md)。
-
-但是，在你解除 Azure Rights Management 服务授权前，我们希望倾听你的意见，了解你为什么做出这个决定。 如果 Azure Rights Management 保护未能满足你的业务需求，请联系我们，以确认在不久的将来是否会有新的功能，或者是否存在替代功能。 将电子邮件发送到 [AskIPTeam@Microsoft.com](mailto:askipteam@microsoft.com?subject=Planning%20to%20decommission%20Azure%20RMS)，我们将很高兴讨论你的技术和商业要求。
 
 ## <a name="can-i-control-which-of-my-users-can-use-azure-rms-to-protect-content"></a>是否可以控制哪些用户能够使用 Azure RMS 来保护内容？
 是的，Azure Rights Management 服务具有针对这一应用场景的用户载入控制。 有关详细信息，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md) 一文中的[为分阶段部署配置加入控制](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)部分。

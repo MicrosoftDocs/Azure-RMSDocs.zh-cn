@@ -4,19 +4,20 @@ description: "使用新版 Office 365 管理中心时的 Azure 权限管理服�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
+ms.custom: askipteam
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0bb1a1c466546582d4c21609ca86ba308d4bd9f9
-ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
+ms.openlocfilehash: a614e65e4c8e401c9add41d4594d8261eef69d12
+ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>如何从 Office 365 管理中心激活 Azure 权限管理
 
@@ -32,15 +33,17 @@ ms.lasthandoff: 09/29/2017
     > 有关管理中心的帮助，请参阅[关于 Office 365 管理中心](https://support.office.com/article/About-the-Office-365-Admin-Center-758befc4-0888-4009-9f14-0d147402fd23)。
 
 3. 导航到“权限管理”页，或使用搜索功能。
-
+    
     - 若要浏览：请选择“设置” > “服务和外接程序” > “Microsoft Azure 信息保护” > “管理 Microsoft Azure 信息保护设置”
-
+    
     - 搜索：在“开始”页面上的搜索框中，键入“权限管理”，然后在搜索结果中依次单击“Azure 权限管理设置”和“管理 Microsoft Azure 信息保护设置”。 
     
     > [!NOTE]
     >如果到此选项，那么根据你的显示器，可能需要进行滚动才能看到此选项。 但如果页面上未列出此选项，并且搜索结果中未返回此选项，则可能是因为你的服务计划不包括 Azure 信息保护的 Azure 权限管理服务。
     >
-    >若要激活 Azure 权限管理服务，必须拥有 [Azure Information Protection Premium plan](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)（Azure 信息保护高级计划）或 [Office 365 plan that includes Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)（包含权限管理的 Office 365 计划）。 若要获取有关此问题的帮助，请发送电子邮件至 [askipteam](mailto:askipteam@microsoft.com?subject=I%20cannot%20activate%20RMS)。
+    >若要激活 Azure 权限管理服务，必须拥有 [Azure Information Protection Premium plan](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)（Azure 信息保护高级计划）或 [Office 365 plan that includes Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)（包含权限管理的 Office 365 计划）。 
+    
+    如需激活服务的相关帮助，或对订阅要求有任何疑问，请[联系 Microsoft 支持部门](../get-started/information-support.md#to-contact-microsoft-support)或使用标准的支持渠道。
 
 4. 在“Rights Management”页上，单击“激活”。
 
