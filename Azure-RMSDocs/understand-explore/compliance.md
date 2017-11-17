@@ -4,7 +4,7 @@ description: "Azure 信息保护的支持信息，包括法律、合规性和 SL
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a7d6c5775f9f3ddedd2177054731b26443a0d2d9
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: b1157eaff62100d4c47dd00c1ef1d99ea50c064c
+ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure 信息保护的合规性和支持信息
 
