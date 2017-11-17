@@ -4,7 +4,7 @@ description: "说明如何安装、配置和运行 Azure 信息保护扫描程�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/02/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 924a9e0b19203f60827693adecc9b74fa62edef1
-ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
+ms.openlocfilehash: 5df68e177d9e3d77a4fd9441e07f1779fa714b23
+ms.sourcegitcommit: a63b3ac3949e66cc38e20d7f14ac129b8e3224c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 11/03/2017
 
 ![Azure 信息保护扫描程序概述](../media/infoprotect-scanner.png)
 
-自动分类使用 Office 365 内置数据丢失防护 (DLP) 敏感信息类型和模式检测，或 Office 365 正则表达式模式。 因为扫描程序使用 Azure 信息保护客户端，所以它可以对相同[文件类型](../rms-client/client-admin-guide-file-types.md)进行分类和保护。
+通过使用计算机上安装的 iFilters，扫描程序可检查 Windows 能编制索引的任何文件。 然后，为了确定是否需要标记文件，扫描程序会使用 Office 365 内置数据丢失防护 (DLP) 敏感信息类型和模式检测，或 Office 365 正则表达式模式。 因为扫描程序使用 Azure 信息保护客户端，所以它可以对相同[文件类型](../rms-client/client-admin-guide-file-types.md)进行分类和保护。
 
 可仅在发现模式下运行扫描程序，利用报告确认对文件设置标签时会发生什么情况。 或者，可运行扫描程序自动应用标签。
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 11/03/2017
 
 |要求|更多信息|
 |---------------|--------------------|
-|运行扫描程序服务的 Windows Server 计算机：<br /><br />- 4 个进程<br /><br />- 4 GB 的 RAM|Windows Server 2016 或 Windows Server 2012 R2。<br /><br />此服务器可是物理或虚拟计算机，并且可以快速、可靠地通过网络连接到要进行扫描的数据存储。 <br /><br />确保此服务器具有 Azure 信息保护所需的 [Internet 连接](../get-started/requirements.md#firewalls-and-network-infrastructure)。 或者，必须将其配置为[断开连接的计算机](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers)。|
+|运行扫描程序服务的 Windows Server 计算机：<br /><br />- 4 个进程<br /><br />- 4 GB 的 RAM|Windows Server 2016 或 Windows Server 2012 R2。 <br /><br />注意：在非生产环境中出于测试或评估目的时，可以使用 [Azure 信息保护客户端支持的](../get-started/requirements.md#client-devices) Windows 客户端操作系统。<br /><br />此计算机可以是物理或虚拟计算机，需拥有快速可靠的网络，可连接到要进行扫描的数据存储。 <br /><br />确保此计算机具有 Azure 信息保护所需的 [Internet 连接](../get-started/requirements.md#firewalls-and-network-infrastructure)。 或者，必须将其配置为[断开连接的计算机](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers)。 |
 |存储扫描程序配置的 SQL Server：<br /><br />- 本地或远程实例|SQL Server 2012 R2 是以下版本的最低版：<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express|
 |运行扫描程序服务的服务帐户|此帐户必须是同步到 Azure AD 的 Active Directory 帐户，并满足以下额外要求：<br /><br />- “本地登录”权限。 此权限是安装和配置扫描程序所必需的，但不可用于操作。 必须将此权限授予服务帐户，但当确认扫描程序可发现、保护文件并对其进行分类后，可删除此权限。<br /><br />- “作为服务登录”权限。 扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。 <br /><br />- 数据存储库的权限：必须授予“读取”和“写入”权限才可扫描文件，然后将分类和保护应用到满足 Azure 信息保护策略中条件的文件。 若仅在发现模式下运行扫描程序，则只需“读取”权限即可。<br /><br />- 对于可重新保护或移除保护的标签：要确保扫描程序始终能够访问受保护的文件，请将此帐户设置为 Azure Rights Management 服务的[超级用户](configure-super-users.md)，并确保已启用超级用户功能。 要详细了解应用保护的帐户要求，请参阅[准备用户和组以便使用 Azure 信息保护](../plan-design/prepare.md)。|
 |在 Windows Server 计算机上安装 Azure 信息保护客户端|当前，Azure 信息保护扫描程序需要 Azure 信息保护客户端预览版。<br /><br />如果愿意，可通过用于安装和配置扫描程序的 PowerShell 模块 (AzureInformationProtection) 来安装客户端。<br /><br />有关客户端安装说明，请参阅[管理员指南](../rms-client/client-admin-guide.md)。|
@@ -129,7 +129,7 @@ ms.lasthandoff: 11/03/2017
 
 1. 使用“管理工具” > “服务”，启动“Azure 信息保护扫描程序”服务。
 
-2. 等待扫描程序完成其周期。 当扫描程序浏览完指定数据存储中所有文件时，服务停止。 可使用 Windows 应用程序事件日志、Azure 信息保护扫描程序来确认服务的停止时间。 请查看信息事件 ID 911。
+2. 等待扫描程序完成其周期。 当扫描程序浏览完指定数据存储中所有文件时，服务停止。 可使用本机 Windows 应用程序和服务事件日志、Azure 信息保护来确认服务的停止时间。 请查看信息事件 ID 911。
 
 3. 查看存储在 %localappdata%\Microsoft\MSIP\Scanner\Reports 中的报告，这些报告的文件格式为 .csv。 利用扫描程序默认配置，只有满足自动分类条件的文件才会被包括在这些报告中。
     
@@ -178,7 +178,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="event-log-ids-and-descriptions"></a>事件日志 ID 和说明
 
-利用以下部分，确定扫描程序可能的事件 ID 和说明。
+利用以下部分，确定扫描程序可能的事件 ID 和说明。 这些事件记录在扫描程序服务的服务器上、Windows 应用程序和服务事件日志和 Azure 信息保护中。
 
 -----
 
@@ -202,9 +202,9 @@ ms.lasthandoff: 11/03/2017
 
 **扫描程序已停止，因为扫描程序被设置为“从不”。**
 
-如果扫描程序被配置为运行一次（而不是连续运行），并且启动计算机后已手动重启 Azure 信息保护扫描程序服务，则会记录此事件。  
+如果配置扫描程序运行一次（而不是连续运行），并且启动计算机后已手动重启 Azure 信息保护扫描程序服务，则会记录此事件。  
 
-要再次扫描文件，必须手动启用服务。 要更改此行为以使扫描程序连续运行，请使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet 并将“Schedule”参数设置为“连续”。
+若要再次扫描文件，必须将计划设置为“一次”或“连续”，然后手动重启该服务。 若要更改计划，请使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet 和 Schedule 参数。
 
 ----
 

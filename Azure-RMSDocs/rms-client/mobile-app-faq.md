@@ -5,19 +5,20 @@ keywords: "一些常见问题，帮助你使用适用于 iOS 和 Android 的 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/08/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
 ms.technology: techgroup-identity
+ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dc6b9ee8c557ce04019534c4713c526265c207e0
-ms.sourcegitcommit: 0b097f0817fee0fb025caef3c46fdd887c782a43
+ms.openlocfilehash: a12fce4f7e235ee67cc9f202c38f52f01204078b
+ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 
@@ -71,6 +72,6 @@ Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
 
 ## <a name="my-question-has-not-been-answeredwhat-should-i-do"></a>我的问题没有得到相应解答 - 应采取何种操作？
 
-将你的问题发布到我们的 [Yammer 站点](https://www.yammer.com/AskIPTeam)，或[发送电子邮件到信息保护团队](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app)。
+请在我们的 [Yammer 网站](https://www.yammer.com/AskIPTeam)中发布问题。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
