@@ -1,10 +1,10 @@
 ---
-title: "Azure 信息保护客户端&colon;版本发行历史记录"
-description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本的新增功能或改进功能。"
+title: "Azure 信息保护客户端&colon; 版本发行历史记录和支持策略"
+description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本的新增功能或改进功能，并了解支持的生命周期策略。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,24 +12,33 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ec73c1e0c0c2d5ef959f15975b2a972086a3bcff
-ms.sourcegitcommit: 91585427fe62956fd78d4e7897ec8abe55b3c11d
+ms.openlocfilehash: e107d796ebda1b1942e19ede8c794f79defbf64e
+ms.sourcegitcommit: fd3932ab19a00229b56efc3e301abaf9cff3f70b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/17/2017
 ---
-# <a name="azure-information-protection-client-version-release-history"></a>Azure 信息保护客户端：版本发行历史记录
+# <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
 >*适用于：Azure 信息保护*
 
-Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 客户端包含在 Microsoft 更新目录（类别：Azure 信息保护）中，还可随时从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式发布版 (GA) 和当前预览版。 
+Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 
 
-不应在生产网络上为最终用户部署预览版本。 而应使用预览版本来查看和尝试在下一正式发布版中将出现的新功能或修补程序。 
+可从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新的 GA 发行版和当前预览版。 这些版本还随附在 Microsoft 更新目录（类别：Azure 信息保护）中，可利用 WSUS/配置管理器或者使用 Microsoft 更新的其他软件部署机制来部署客户端。
 
-使用以下信息查看正式发布版中的新增内容或更改的内容。 最新版本会最先列出。 
+### <a name="servicing-information-and-timelines"></a>维护信息和日程表
+
+Azure 信息保护客户端的正式发布 (GA) 版本自发行之日期可获取 6 个月的支持。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
+
+不应在生产网络上为最终用户部署预览版本。 而是使用最新预览版来查看和试用即将在下一 GA 版本中推出的新功能或修补程序。 仅支持当前预览版。
+
+### <a name="release-history"></a>版本历史
+
+请查看以下信息，了解适用于 Windows 的 Azure 信息保护客户端受支持版本的新增功能或更改之处。 最新版本会最先列出。 
+
 
 > [!NOTE]
-> 不会列出小修补程序，因此，如果 Azure 信息保护客户端遇到问题，请先检查它是否是最新正式发布版的问题。 如果是，则检查当前预览版本。
+> 小的修补程序不予列出，因此如果遇到 Azure 信息保护客户端相关问题，建议检查它是否已在最新 GA 版本中得到修复。 如果问题仍然存在，请检查当前预览版。
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
@@ -115,86 +124,9 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     
     此外，对于这些应用程序，若要提高使用 SharePoint Online 和 OneDrive for Business 的 Office 2016 性能，请在文件关闭而不是保存时（自动保存或用户选择保存）应用自动和建议标记。 同样，如果设置“所有文档和电子邮件都必须具有一个标签”处于启用状态，那么在该文件关闭之前，系统不会提示用户选择标签。 Word 2016 和 Excel 2016 为例外情况，用户选择“另存为”选项。 然后，此操作触发这些标记行为（如果已配置）。 
 
-## <a name="version-14210"></a>版本 1.4.21.0
-
-**发布时间**：2017 年 3 月 15 日
-
-**要求变化：**
-
-旧版新增了完整客户端的 Microsoft .NET Framework 4.6.2 系统必备。 可以使用自定义安装参数 **DowngradeDotNetRequirement** 忽略此系统必备，尽管不建议这样做。 有关详细信息，请参阅管理员指南中的[为用户安装 Azure 信息保护客户端](client-admin-guide-install.md)。
-
-**新增功能**：
-
-- 能够在 Office 应用程序中设置自定义权限，从而可以为你自己、外部组或另一组织中的所有用户设置保护。 有关详细信息，请参阅用户指南中的[设置文档的自定义权限](client-classify-protect.md#set-custom-permissions-for-a-document)。
-    
-- PDF 文件现支持仅应用分类的标签。
-
-- 对于 PDF 文件，查看器现支持搜索、缩放和旋转等选项。 若要使用这些选项，请右键单击查看器中显示的文件。
-
-**修补程序**：
-
-- 支持使用映射驱动器分类和保护文件。
-
-- 支持 Azure 信息保护客户端查看器中的大文件（大于 250 MB）。 
-
-- 配置 HYOK 后，Outlook 可以应用已配置为使用 Azure Rights Management 模板或 AD RMS 模板的标签。
-
-## <a name="version-131552"></a>版本 1.3.155.2
-
-**发布日期**：2017/02/08
-
-**新要求**：
-
-Microsoft .NET Framework
-
-- 此版本的 Azure 信息保护客户端要求使用的最低版本为 Microsoft .NET Framework 4.6.2，如果缺少此版本，安装程序会尝试下载并安装它。 Azure 信息保护客户端完成安装后，可能需要重启计算机。
-
-- 如果单独安装 Azure 信息保护查看器，则要求的最低版本为 Microsoft .NET Framework 4.5.2，如果缺少此版本，安装程序会尝试下载并安装它。
-
-**新增功能**：
-
-- 一个新的统一客户端，它将适用于 Windows 的 Rights Management 共享应用程序中的功能与 Azure 信息保护客户端组合在一起。 包括：
-    
-    - 与 Windows 文件资源管理器集成（右键单击）以应用标签和保护。 支持其他文件格式和多文件选择。
-    - 适用于受保护文档的查看器（包括用于 SharePoint 的受保护 PDF）。
-    - PowerShell cmdlet，可用于获取和设置存储在本地或存储在网络共享上的文件的标签。 这些 cmdlet 与 RMS 保护工具（RMSProtection 模块）之前随附的 cmdlet 一起安装。
-    - 客户端使用情况日志，记录应用的标签、应用方式、应用者等信息。
-
-此客户端版本是 2016 年 12 月首次发布的预览版客户端的[公开发行版本](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/08/azure-information-protection-december-update-moves-to-general-availability/)。 有关此版本的客户端的详细信息，请参阅以下指南：
-
-- [Azure 信息保护客户端管理员指南](client-admin-guide.md)
-
-- [Azure 信息保护用户指南](client-user-guide.md)
-
-
-## <a name="version-1240"></a>版本 1.2.4.0
-
-**发布日期**：2016/10/27
-
-**新功能**：
-
-- 安装 Azure 信息保护客户端后，用户可从 Office 应用程序运行的诊断测试和重置选项：在“开始”选项卡的“保护”组中，单击“保护”、“帮助和反馈”，然后单击“运行诊断”。 
-
-    若要详细了解此选项，请参阅管理员指南中的[其他检查和故障排除](client-admin-guide.md#installation-checks-and-troubleshooting)部分。
-
-**修补程序**：
-
-- 禁用 Windows 更新服务时，客户端安装完成。
-
-- 在 Office 2016 中，在保存文档并且为页眉或页脚配置应用的标签时，光标不会跳转到页眉或页脚。
-
-- 在 Word 中，自动分类适用于捆绑文本框中的文本。
-
-
-## <a name="version-11230"></a>版本 1.1.23.0
-
-**发布日期**：2016/10/01
-
-正式发布。
-
 ## <a name="next-steps"></a>后续步骤
 
-有关安装和使用客户端的详细信息：
+有关安装和使用客户端的详细信息： 
 
 - 用户请参阅：[下载并安装客户端](install-client-app.md)
 

@@ -4,7 +4,7 @@ description: "有关自定义适用于 Windows 的 Azure 信息保护客户端�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/30/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 304425a2c64fb306615bbd5c6edf5e78e10b8e80
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: 67ef633fe429eef208f1f24e71a274959ad7077b
+ms.sourcegitcommit: 8810f9d68489a89601c43ce0aacff737728b1d02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -198,6 +198,33 @@ ms.lasthandoff: 10/30/2017
 
 - 值：\<label ID> 或 None
 
+## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>使用现有自定义属性标记 Office 文档
+
+此配置选项目前处于预览状态，可能随时更改。 
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+
+配置此设置时，如果 Office 文档具备现有自定义属性且该属性带有与某个标记名称相匹配的值，则可对此文档进行分类（并选择性地保护）。 此自定义属性可从另一分类解决方案进行设置，也可由 SharePoint 设置为属性。
+
+凭借此配置，如果某用户在 Office 应用中打开并保存未带 Azure 信息保护标记的文档，则进行文档标记，使其与相应的属性值相匹配。 
+
+此配置要求你指定两个相互配合的高级设置。 第一个设置名为 SyncPropertyName，它是基于另一分类解决方案设置的自定义属性，或是由 SharePoint 设置的属性。 第二个名为 SyncPropertyState 且必须设置为“单向”。
+
+若要配置此高级设置，请输入以下字符串：
+
+- 键 1：SyncPropertyName
+
+- 键 1 值：\<属性名称> 
+
+- 键 2：SyncPropertyState
+
+- 键 2 值：单向
+
+例如，你有一个名为“分类”的 SharePoint 列，该列可能有三个值：“公共”、“常规”和“机密”。 文档存储在 SharePoint 中，且具有为分类属性设置的某个值。
+
+要标记带有上述某个分类值的 Office 文档，请将“SyncPropertyName”设置为“分类”），将“SyncPropertyState”设置为“单向”。 
+
+随后，当用户打开和保存上述某个 Office 文档时，该文档将标记为“公共”、“常规”或“机密”（若在 Azure 信息保护策略中具备带这些名称的标记）。 如果没有带这些名称的标记，则不会标记文档。
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>与 Exchange 邮件分类集成以实现移动设备标记解决方案
 

@@ -4,17 +4,17 @@ description: "快速试用 Azure 信息保护入门教程步骤 2 - 配置策略
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 4fb571f84e9916fb5573d551ec0f0bf374e5df2f
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: cf9c30baab257c9a90c3383eaf6bfcadd0275184
+ms.sourcegitcommit: 63a8186d727bec185903a5201f3b1efc9b4fa8b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>步骤 2：配置并发布 Azure 信息保护策略
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/22/2017
     
     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy-default-labelsv2.png)
     
-3. 还看到并未设置某些策略设置。 并非所有文档和电子邮件都需要标签，没有默认标签，用户更改标签时无需提供理由：
+3. 还会看到存在一些策略设置。 例如，未设置默认标签，文档和电子邮件无需具备标签，且用户在更改标签时无需提供理由：
     
     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy-default-settings.png)
 

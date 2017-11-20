@@ -4,7 +4,7 @@ description: "必须先激活 Azure Rights Management 服务，然后组织才�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 11/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6aa009795e45281df1c9406357f810b8d25302bc
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 75c0bf83c84cb8b5d2116b05dbf2def790562b4e
+ms.sourcegitcommit: fd3932ab19a00229b56efc3e301abaf9cff3f70b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="activating-azure-rights-management"></a>激活 Azure Rights Management
 
@@ -26,7 +26,9 @@ ms.lasthandoff: 08/30/2017
 > 此配置信息适用于负责应用于组织中所有用户的服务的管理员。 如果你要寻找针对特定应用程序使用 Rights Management 功能，或者如何打开受权限保护的文件或电子邮件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
 >
 > 例如，对于 Office 应用程序，请单击帮助图标并输入搜索词，例如 **Rights Management** 或 **IRM**。 有关适用于 Windows 的 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端用户指南](../rms-client/client-user-guide.md)。
- 
+>
+> 有关技术支持和其他服务问题，请参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)信息。
+
 为租户激活 Azure 信息保护的 Azure 权限管理服务后，你的组织便可以开始使用支持此信息保护解决方案的应用程序和服务保护重要数据了。 管理员还可以管理和监视你的组织拥有的受保护文件和电子邮件。 能够开始在 Office、SharePoint 和 Exchange 中使用信息权限管理 (IRM) 功能保护任何敏感或机密文件之前，必须启用此服务。
 
 如果你要在激活该服务之前了解有关 Azure Rights Management 服务的详细信息（例如，它解决了哪些业务问题、一些典型用例以及它的工作原理），请参阅[什么是 Azure Rights Management？](../understand-explore/what-is-azure-rms.md)
