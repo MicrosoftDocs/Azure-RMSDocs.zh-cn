@@ -4,7 +4,7 @@ description: "如果已部署 Azure Rights Management 和 AD RMS，请参阅本�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 11ffa730-c5dc-4b6b-9c1e-c58eff8aafc2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2e8f6596216e06e2af773c0a19a2c5eaafd096b8
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: b20bbc1fe0de90b9b0151098e1b77d3c7a98c431
+ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="preparing-the-environment-for-azure-rights-management-when-you-also-have-active-directory-rights-management-services-ad-rms"></a>在已有 Active Directory Rights Management Services (AD RMS) 的情况下，为 Azure Rights Management 准备环境
 
@@ -24,9 +24,9 @@ ms.lasthandoff: 08/30/2017
 
 如果已在使用 Active Directory Rights Management Services (AD RMS)，并且遇到了下面的情况，请参阅此重要指南：
 
-## <a name="you-see-an-option-to-activate-azure-rms-when-you-configure-azure-information-protection"></a>配置 Azure 信息保护时，系统显示激活 Azure RMS 的选项
+## <a name="you-see-an-option-to-activate-protection-when-you-configure-azure-information-protection"></a>配置 Azure 信息保护时，会看到一个激活保护的选项
 
-可在“Azure 信息保护 - RMS 设置”边栏选项卡中选择激活 Azure Rights Management 服务 (Azure RMS)。 
+“Azure 信息保护 - 保护激活”边栏选项卡上有一个激活 Azure 权限管理服务 (Azure RMS) 的选项。 
 
 如果还使用 Active Directory Rights Management Services (AD RMS)，请不要选择“激活”选项。 在还具有 AD RMS 的情况下无法激活 Azure Rights Management，因为两者不兼容。 这种情况不受支持且会产生不可靠的结果，因此，请勿在此时激活 Azure Rights Management。 
 

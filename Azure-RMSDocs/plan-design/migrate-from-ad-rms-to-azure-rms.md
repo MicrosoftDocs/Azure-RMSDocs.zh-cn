@@ -4,7 +4,7 @@ description: "用于将 Active Directory Rights Management Services (AD RMS) 部
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/11/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 910d131ece4bae0cf5ef2685291431a3dc319264
-ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
+ms.openlocfilehash: 1b1c7a084aa5d81a0abfd50021b95ae8af32d034
+ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -28,9 +28,9 @@ ms.lasthandoff: 10/12/2017
 
 不确定这种 AD RMS 迁移是否适合你的组织？
 
--   有关 Azure 信息保护的简介，请参阅[什么是 Azure 信息保护？](../understand-explore/what-is-information-protection.md)
+- 有关 Azure 信息保护的简介，请参阅[什么是 Azure 信息保护？](../understand-explore/what-is-information-protection.md)
 
--   有关 Azure 信息保护与 AD RMS 的比较，请参阅[比较 Azure 信息保护与 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。
+- 有关 Azure 信息保护与 AD RMS 的比较，请参阅[比较 Azure 信息保护与 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。
 
 ## <a name="recommended-reading-before-you-migrate-to-azure-information-protection"></a>建议在迁移到 Azure 信息保护之前阅读的内容
 
@@ -112,10 +112,10 @@ ms.lasthandoff: 10/12/2017
 
 ### <a name="migration-limitations"></a>迁移限制
 
--   如果 Azure 信息保护使用的 Rights Management 服务不支持你的软件和客户端，则它们无法保护或使用受 Azure Rights Management 保护的内容。 请务必查看 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)中的“支持的应用程序和客户端”部分。
+- 如果 Azure 信息保护使用的 Rights Management 服务不支持你的软件和客户端，则它们无法保护或使用受 Azure Rights Management 保护的内容。 请务必查看 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)中的“支持的应用程序和客户端”部分。
 
--   如果将你的 AD RMS 部署配置为与外部合作伙伴协作（例如，通过使用受信任的用户域或联合），则在你迁移的同时或之后尽早的时间，这些合作伙伴也必须迁移到 Azure 信息保护。 若要继续访问你的组织以前使用 Azure 信息保护进行保护的内容，这些合作伙伴必须进行与你进行的更改（在本文档中提供了这些更改）类似的客户端配置更改。
-
+- 如果将你的 AD RMS 部署配置为与外部合作伙伴协作（例如，通过使用受信任的用户域或联合），则在你迁移的同时或之后尽早的时间，这些合作伙伴也必须迁移到 Azure 信息保护。 若要继续访问你的组织以前使用 Azure 信息保护进行保护的内容，这些合作伙伴必须进行与你进行的更改（在本文档中提供了这些更改）类似的客户端配置更改。
+    
     由于你的合作伙伴进行的配置可能有所变动，确切说明此重新配置已超出了本文档的范围。 但是，有关规划指导及其他帮助，请参阅下一节，[联系 Microsoft 支持部门](../get-started/information-support.md#support-options-and-community-resources)。
 
 ## <a name="migration-planning-if-you-collaborate-with-external-partners"></a>与外部伙伴协作时的迁移规划
@@ -146,11 +146,11 @@ ms.lasthandoff: 10/12/2017
 
 - **步骤 2：客户端迁移准备**
 
-     如果无法一次迁移所有客户端，并且将其分批次进行迁移，请使用载入控件并部署预迁移脚本。
+    如果无法一次迁移所有客户端，并且将其分批次进行迁移，请使用载入控件并部署预迁移脚本。 但是，如果要同时迁移所有内容，而不是分步迁移，可跳过此步骤。
 
 - **步骤 3：准备迁移 Exchange 部署**
 
-    如果当前正在使用 Exchange Online 的 IRM 功能或 Exchange 本地部署保护电子邮件，则需要此步骤。
+    如果当前正在使用 Exchange Online 的 IRM 功能或 Exchange 本地部署保护电子邮件，则需要此步骤。 但是，如果要同时迁移所有内容，而不是分步迁移，可跳过此步骤。
 
 [**第 2 阶段：AD RMS 的服务器端配置**](migrate-from-ad-rms-phase2.md)
 
@@ -206,7 +206,7 @@ ms.lasthandoff: 10/12/2017
 
     如果部署了[移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)以支持移动设备（如 iOS 手机和 iPad、Android 手机和平板电脑、Windows Phone 以及 Mac 计算机），则必须删除 DNS 中重定向这些客户端的 SRV 记录才能使用 AD RMS。 
     
-    不再需要准备阶段配置的载入控件。
+    不再需要准备阶段配置的载入控件。 但是，如果因选择同时迁移所有内容（而非分步迁移）而未使用载入控件，可跳过有关删除载入控件的说明。
 
 - 步骤 12：重新生成 Azure 信息保护租户密钥
 
