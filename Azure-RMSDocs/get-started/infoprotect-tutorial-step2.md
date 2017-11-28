@@ -4,17 +4,17 @@ description: "快速试用 Azure 信息保护入门教程步骤 2 - 配置策略
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: cf9c30baab257c9a90c3383eaf6bfcadd0275184
-ms.sourcegitcommit: 63a8186d727bec185903a5201f3b1efc9b4fa8b5
+ms.openlocfilehash: 0e10a1809aaf792ac8c5960e30917aabd5c44548
+ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>步骤 2：配置并发布 Azure 信息保护策略
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 11/14/2017
 
 尽管 Azure 信息保护附带了你无需进行配置的默认策略，我们仍然要看一下该策略并进行一些更改。
 
-1. 仍然在 Azure 门户中，选择“全局策略”，打开“策略: 全局”边栏选项卡。 此边栏选项卡将自动打开，以便执行后续连接到服务的操作，它将显示为租户创建的默认信息保护策略。
+1. 继续[步骤 1](infoprotect-tutorial-step1.md) 的操作，仍然在 Azure 门户中，选择“全局策略”，打开“策略: 全局”边栏选项卡。 此边栏选项卡将自动打开，以便执行后续连接到服务的操作，它将显示为租户创建的默认信息保护策略。
 
 2. 花几分钟时间了解显示的标签：
     

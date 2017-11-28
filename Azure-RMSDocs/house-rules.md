@@ -4,7 +4,7 @@ description: "用于 Azure 信息保护文档的 Livefyre 评论和边栏的范�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 64f354ed87fbfaccfcc6a102c6d8c2ea88b75b39
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: 4040e67a7bae2ee5a208d61134b842762ef4ace1
+ms.sourcegitcommit: 9de66368b75ffd003289f998c7b1e78736736524
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>有关 Azure 信息保护文档的评论的内部规则
 
@@ -29,7 +29,9 @@ ms.lasthandoff: 11/03/2017
  
 请勿对以下内容使用 Livefyre 评论和旁注：
  
-- **技术支持**。 例如，某一项功能无法工作，你查看了相关要求并按照文档说明进行了操作。 或者你有与授权相关的问题。 在这种情况下，请改为[联系 Microsoft 支持部门](./get-started/information-support.md#to-contact-microsoft-support)或使用标准支持渠道。 或者，在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上参与社区互动。
+- **组织的订阅问题**。 例如，现有的订阅是否支持要使用的功能，以及是否已查看 [Azure 信息保护的订阅要求](./get-started/requirements.md#subscription-for-azure-information-protection)。 在这种情况下，请改为联系 Microsoft 客户经理或 [Microsoft 支持部门](./get-started/information-support.md#to-contact-microsoft-support)。
+
+- **技术支持**。 例如，某一项功能无法工作，你查看了相关要求并按照文档说明进行了操作。 也已检查使用的是支持的 Azure 信息保护客户端[版本](./rms-client/client-version-release-history.md#servicing-information-and-timelines)。 在这种情况下，请改为联系 [Microsoft 支持部门](./get-started/information-support.md#to-contact-microsoft-support)或使用标准支持渠道。 或者，在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上参与社区互动。
 
 - **产品开发规划信息**。 例如，询问新版本的发布时间或计划开发的其他功能。 对于此信息，请访问[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)或在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上提出相关问题。 还可以查看 Azure 信息保护的[User Voice 网站](https://msip.uservoice.com)并使用此资源请求新功能。
 

@@ -4,7 +4,7 @@ description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e107d796ebda1b1942e19ede8c794f79defbf64e
-ms.sourcegitcommit: fd3932ab19a00229b56efc3e301abaf9cff3f70b
+ms.openlocfilehash: c3c0acad413ddbbcd1caccd4f1a73c7b0884ae7c
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -28,14 +28,13 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ### <a name="servicing-information-and-timelines"></a>维护信息和日程表
 
-Azure 信息保护客户端的正式发布 (GA) 版本自发行之日期可获取 6 个月的支持。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
+Azure 信息保护客户端的正式发布 (GA) 版本可获得自发布日起为期 6 个月的支持。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
 
 不应在生产网络上为最终用户部署预览版本。 而是使用最新预览版来查看和试用即将在下一 GA 版本中推出的新功能或修补程序。 仅支持当前预览版。
 
 ### <a name="release-history"></a>版本历史
 
 请查看以下信息，了解适用于 Windows 的 Azure 信息保护客户端受支持版本的新增功能或更改之处。 最新版本会最先列出。 
-
 
 > [!NOTE]
 > 小的修补程序不予列出，因此如果遇到 Azure 信息保护客户端相关问题，建议检查它是否已在最新 GA 版本中得到修复。 如果问题仍然存在，请检查当前预览版。
@@ -60,17 +59,19 @@ Azure 信息保护客户端的正式发布 (GA) 版本自发行之日期可获�
 
 - 支持为用户定义的操作配置的标签。 对于 Outlook，此标签自动应用 Outlook 的“不要转发”选项。 对于 Word、Excel、PowerPoint 和文件资源管理器，此标签提示用户指定自定义权限。 有关详细信息，请参阅[配置 Azure 信息保护标签以进行保护](../deploy-use/configure-policy-protection.md)。
 
+- 标签支持多种语言。 自 2017 年 8 月 30 日起，[默认策略](../deploy-use/configure-policy-default.md)支持此版本客户端向用户显示的多种语言。 用户若要查看此日期前默认策略首选语言中的标签以及配置的标签，请参阅[如何在 Azure 信息保护中配置不同语言的标签](../deploy-use/configure-policy-languages.md)。
+
 - 除了在“信息保护”栏上显示外，Office 功能区上的“保护”按钮也会显示标签。 
 
 - 对于以下 Visio 文件类型的本机保护：.vsdm、.vsdx、.vssm、.vssx、.vstm、.vstx
 
 - 支持用户在 Azure 门户中配置的高级客户端配置。 这些配置包括：
     
-    - [在 Outlook 中隐藏“不要转发”按钮](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)
+    - [在 Outlook 中隐藏或显示“不转发”按钮](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
     
-    - [使“自定义权限”选项对用户不可见](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-unavailable-to-users)
+    - [设置用户是否能够使用自定义权限选项](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
     
-    - [永久隐藏 Azure 信息保护栏](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-unavailable-to-users)
+    - [永久隐藏 Azure 信息保护栏](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
     
     - [在 Outlook 中启用建议的分类](../rms-client/client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
 

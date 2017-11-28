@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 4 阶段包括从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 11/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6c93f38b0ae725c1bc1d3423baf64931593af3b7
-ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
+ms.openlocfilehash: beda6273c306a55130223c7b4b9ed9fc4d088fac
+ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
@@ -29,11 +29,9 @@ ms.lasthandoff: 07/19/2017
 
 ## <a name="step-8-configure-irm-integration-for-exchange-online"></a>步骤 8. 为 Exchange Online 配置 IRM 集成
 
-如果以前已将 TDP 从 AD RMS 导入 Exchange Online，则必须删除此 TDP，以避免在迁移到 Azure 信息保护后发生模板和策略冲突。 为此，请在 Exchange Online 中使用 [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) cmdlet。
+使用选择的 Azure 信息保护租户密钥拓扑单独执行以下操作：
 
-如果你选择了 **Microsoft 管理**的 Azure 信息保护租户密钥拓扑：
-
-1. 请使用 [Office 365：客户端和联机服务的配置](../deploy-use/configure-office365.md)一文中的[“Exchange Online：IRM 配置”](../deploy-use/configure-office365.md#exchange-online-irm-configuration)部分的说明。 此部分介绍了一些典型的命令，运行这些命令可以连接到 Exchange Online 服务、从 Azure 信息保护导入租户密钥，以及为 Exchange Online 启用 IRM 功能。 完成这些步骤后，你将获得 Exchange Online 的完整 Azure Rights Management 保护功能。
+1. 若要将 Exchange Online 配置为使用 Azure Rights Management 服务，请参阅 [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)（设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能）。 
 
 2. 除了为 Exchange Online 启用 IRM 的标准配置外，还可运行以下 PowerShell 命令以确保用户能够读取使用 AD RMS 保护发送的电子邮件。
 
@@ -45,11 +43,6 @@ ms.lasthandoff: 07/19/2017
         Set-IRMConfiguration -LicensingLocation $list
         Set-IRMConfiguration -internallicensingenabled $false
         Set-IRMConfiguration -internallicensingenabled $true
-
-
-如果你选择了**客户管理 (BYOK)** 的 Azure 信息保护租户密钥拓扑：
-
--   Exchange Online 的 Rights Management 保护功能将有所削减，如 [BYOK 定价和限制](byok-price-restrictions.md)一文中所述。
 
 
 ## <a name="step-9-configure-irm-integration-for-exchange-server-and-sharepoint-server"></a>步骤 9. 为 Exchange Server 和 SharePoint Server 配置 IRM 集成
