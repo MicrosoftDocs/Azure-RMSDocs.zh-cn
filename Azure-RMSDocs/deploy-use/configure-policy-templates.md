@@ -4,7 +4,7 @@ description: "通过 Azure 门户配置和管理 Rights Management 模板。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/06/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5afd71e059ef22eed61347e6916b9cbb6c2dc7f0
-ms.sourcegitcommit: 326930de25b259c18469f4100ec5774a04bedc7b
+ms.openlocfilehash: 74f3f9e22e5607c8b85b752bcd3881d5b7a092b1
+ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
@@ -32,11 +32,11 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 **订阅包含分类、设置标签和保护（Azure 信息保护 P1 或 P2）：**
 
-- 未与租户的标签集成的 Rights Management 模板显示在“Azure 信息保护 - 全局策略”边栏选项卡中标签后的“模板”部分中。 可以将这些模板转换为标签，也可以在为标签配置保护时链接到它们。 
+- 未与租户的标签集成的 Rights Management 模板显示在“Azure 信息保护 - 全局策略”边栏选项卡中标签后的“保护模板”部分中。 可以将这些模板转换为标签，也可以在为标签配置保护时链接到它们。 
 
 **订阅仅包含保护（包括 Azure 权限管理服务的 Office 365 订阅）：**
 
-- 租户的 Rights Management 模板显示在“模板”部分中的“Azure 信息保护 - 全局策略”边栏选项卡中。 不显示任何标签。 还可以看到特定于分类和标签的配置设置，但它们要么对模板没有任何影响，要么无法进行配置。 
+- 租户的 Rights Management 模板显示在“保护模板”部分中的“Azure 信息保护 - 全局策略”边栏选项卡中。 不显示任何标签。 还可以看到特定于分类和标签的配置设置，但它们要么对模板没有任何影响，要么无法进行配置。 
 
 ## <a name="default-templates"></a>默认模板
 
@@ -95,9 +95,9 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
     
     此外，目前无法设置部门模板的应用程序兼容性设置。 如有必要，可以使用 PowerShell 和 [Set-aadrmtemplateproperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 设置应用程序兼容性设置。
 
-- 将模板转换为标签或将模板链接到标签后，其他标签不能再使用该模板。 此外，此模板不再显示在“模板”或“保护模板”部分中。 此部分正处于重命名的过程中。
+- 将模板转换为标签或将模板链接到标签后，其他标签不能再使用该模板。 此外，此模板不再显示在“保护模板”部分中。 
 
-- 不会从“模板”或“保护模板”部分创建新模板。 而是创建一个具有“保护”设置的标签，并从“保护”边栏选项卡配置使用权限和设置。 有关完整说明，请参阅[创建新模板](#to-create-a-new-template)。
+- 不从“保护模板”部分创建新模板。 而是创建一个具有“保护”设置的标签，并从“保护”边栏选项卡配置使用权限和设置。 有关完整说明，请参阅[创建新模板](#to-create-a-new-template)。
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>在 Azure 信息保护策略中配置模板
 
@@ -145,7 +145,7 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 - 会保留保护设置，你可以根据需要进行编辑，还可以添加其他标签设置，如视觉对象标记和条件。
 
-- 为标签配置保护时，原始模板不再显示在“模板”或“保护模板”下，且不能选择为预定义模板。 若要在 Azure 门户中编辑此模板，现在编辑在转换模板时创建的标签。 该模板仍可用于 Azure 权限管理服务，仍然可以使用 [PowerShell 命令](administer-powershell.md)进行管理。  
+- 为标签配置保护时，原始模板不再显示在“保护模板”中，且不能选择为预定义模板。 若要在 Azure 门户中编辑此模板，现在编辑在转换模板时创建的标签。 该模板仍可用于 Azure 权限管理服务，仍然可以使用 [PowerShell 命令](administer-powershell.md)进行管理。  
 
 ## <a name="to-create-a-new-template"></a>创建新模板
 

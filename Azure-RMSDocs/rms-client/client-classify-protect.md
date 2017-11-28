@@ -4,7 +4,7 @@ description: "说明如何对文档和电子邮件进行分类和保护。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/02/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 13d751bf9754ba3645cb7bb7417e7f5be394eb27
-ms.sourcegitcommit: 769057f5ffb366fc645bff542a32b2eab4f20c70
+ms.openlocfilehash: 683764d005e3223f6e5bdaa49b1d4c881a8daed4
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>用户指南：使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
@@ -41,16 +41,13 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>使用 Office 应用对文档和电子邮件进行分类和保护
 
-使用 Azure 信息保护栏并选择其中一个已为你配置的标签。 
+使用 Azure 信息保护栏或功能区上的“保护”按钮，选择已为你配置的某一个标签。 
 
-例如，在下图中，因为“敏感度”显示“未设置”，因此尚未标记文档。 要设置标签，例如“常规”，请单击“常规”。 如果你不确定要将哪种标签应用于当前文档或电子邮件，请使用标签工具提示详细了解每种标签及其应用情况。 
+例如，在下图中，因为 Azure 信息保护栏上的“敏感度”显示“未设置”，因此尚未标记文档。 要设置标签，例如“常规”，请单击“常规”。 如果你不确定要将哪种标签应用于当前文档或电子邮件，请使用标签工具提示详细了解每种标签及其应用情况。 
 
 ![Azure 信息保护栏示例](../media/info-protect-bar-not-set-callout.png)
 
 如果已将某种标签应用于文档，并且想要进行更改，可以选择其他标签。 如果标签没有显示在栏上，请首先单击当前标签值旁边的“编辑标签”图标。
-
-> [!TIP]
-> 还可从“文件”选项卡上的“保护”按钮中选择标签。
 
 除了手动选择标签，还可通过以下方式应用标签：
 
@@ -62,9 +59,17 @@ ms.lasthandoff: 11/06/2017
 
 ##### <a name="dont-see-this-information-protection-bar-in-your-office-apps"></a>你的 Office 应用程序中看不到此信息保护栏？
 
-- 你可能没有[安装](install-client-app.md) Azure 信息保护客户端，或客户端正以[仅保护模式](client-protection-only-mode.md)运行。
+可能的原因：
+
+- 未[安装](install-client-app.md) Azure 信息保护客户端。
+
+- 安装了客户端，但管理员配置的设置不显示信息保护栏。 可改为从 Office 功能区“文件”选项卡上的“保护”按钮选择标签。 
+
+- 客户端正以[仅保护模式](client-protection-only-mode.md)运行。
  
-##### <a name="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar"></a>你希望看到的标签没有显示在栏上？ 
+##### <a name="is-the-label-that-you-expect-to-see-not-displayed"></a>没有显示希望看到的标签？ 
+
+可能的原因：
 
 - 如果管理员最近为你配置了新标签，请尝试关闭 Office 应用程序的所有实例，然后重新打开。 此操作将检查对你的标签所做的更改。
 
@@ -74,11 +79,13 @@ ms.lasthandoff: 11/06/2017
 
 ### <a name="set-custom-permissions-for-a-document"></a>设置文档的自定义权限
 
-可以指定你自己的文档保护设置，而不使用管理员可能与选定标签一起添加的保护设置。
+如果得到管理员的允许，可以指定你自己的文档保护设置，而不使用管理员可能已包含在所选标签中的保护设置。
 
 1. 在“**开始**”选项卡上的“**保护**”组中，依次单击“**保护**” > “**自定义权限**”：
 
     ![“自定义权限”选项](../media/custom-permissions-callout.png)
+    
+    如果无法选择“自定义权限”，意味着管理员不允许你使用此选项。
     
     请注意，你指定的任何自定义权限将替换（而不是补充）管理员可能已为选定标签定义的保护设置。  
 
@@ -135,7 +142,9 @@ ms.lasthandoff: 11/06/2017
     
     ![“分类和保护 - Azure 信息保护”对话框中无任何标签](../media/info-protect-dialog-labels-protection-only.png)
     
-3. 如果想要指定自己的保护设置，而不使用管理员可能已包含在所选标签中的保护设置，请选择“使用自定义权限保护”。
+3. 如果得到管理员的允许，可以指定你自己的保护设置，而不使用管理员可能已包含在所选标签中的保护设置。 若要执行此操作，请选择“使用自定义权限进行保护”。
+    
+    如果无法选择“使用自定义权限进行保护”，意味着管理员不允许你使用此选项。
     
     指定的任何自定义权限将替换而不是补充管理员可能已为所选标签定义的保护设置。  
 

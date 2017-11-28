@@ -4,7 +4,7 @@ description: "有关自定义适用于 Windows 的 Azure 信息保护客户端�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 67ef633fe429eef208f1f24e71a274959ad7077b
-ms.sourcegitcommit: 8810f9d68489a89601c43ce0aacff737728b1d02
+ms.openlocfilehash: 0bd05c0553cdcab792c674c6945d7dfea5f02eaf
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -117,46 +117,40 @@ ms.lasthandoff: 11/14/2017
 2. 将已标识的文件重命名为 **Policy.msip**，然后将其复制到安装了 Azure 信息保护客户端的计算机上的 **%LocalAppData%\Microsoft\MSIP** 文件夹。 
 
 
-## <a name="hide-the-do-not-forward-button-in-outlook"></a>在 Outlook 中隐藏“不转发”按钮
+## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>在 Outlook 中隐藏或显示“不转发”按钮
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+建议使用“向 Outlook 功能区添加‘不转发’按钮”这一[策略设置](../deploy-use/configure-policy-settings.md)来配置此选项。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。
 
-配置此设置后，将在 Outlook 的功能区中隐藏“不转发”按钮。 但不会在 Office 菜单中隐藏此选项。
+配置此设置后，将在 Outlook 功能区中隐藏或显示“不转发”按钮。 此设置对 Office 菜单中的“不转发”选项没有影响。
 
 若要配置此高级设置，请输入以下字符串：
 
 - 键：DisableDNF
 
-- 值：True
+- 值：输入 True 隐藏按钮，输入 False 显示按钮
 
-## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>让用户无法使用“自定义权限”选项
+## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>设置用户是否能够使用自定义权限选项
 
-> [!IMPORTANT]
-> 如果具有为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置的标签，除非使用当前预览版本的客户端，否则请勿使用此选项。 如果使用此选项，应用标签时，系统不会提示用户配置自定义权限。 结果是：标记文档，但并未按预期保护文档。
+建议使用“设置用户是否能够使用自定义权限选项”这一[策略设置](../deploy-use/configure-policy-settings.md)来配置此选项。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。 
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
-
-配置此设置并为用户发布策略后，用户将无法在以下位置选择“自定义权限”选项：
-
-- 在 Office 应用程序中：“主页”选项卡 >“保护组”>“保护” > “自定义权限”
-
-- 在文件资源管理器中：右键单击 >“分类并保护” > “自定义权限”
-
-此设置对可以使用 Office 菜单选项配置的自定义权限没有任何影响。 
+配置此设置并为用户发布策略后，用户就可以使用自定义权限选项选择自己的保护设置，或者无法使用这些选项选择保护设置（除非系统出现提示）。
 
 若要配置此高级设置，请输入以下字符串：
 
 - 键：EnableCustomPermissions
 
-- 值：False
+- 值：输入 True 使自定义权限选项可用，输入 False 使其不可用
+
+> [!IMPORTANT]
+> 如果具有为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置的标签，除非使用当前预览版本的客户端，否则请勿将此选项设置为 False。 如果使用此选项，应用标签时，系统不会提示用户配置自定义权限。 结果是：标记文档，但并未按预期保护文档。
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>永久隐藏 Azure 信息保护栏
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 仅当“在 Office 应用中显示信息保护栏”这一项[策略设置](../deploy-use/configure-policy-settings.md)设置为“开”时，才使用此配置。
 
 配置此设置并为用户发布策略后，如果用户选择不在 Office 应用程序中显示 Azure 信息保护栏，此栏保持隐藏。 当用户通过依次单击“主页”选项卡、“保护组”和“保护”按钮取消选中“显示栏”选项时，就会发生这种情况。 如果用户使用“关闭信息保护栏”图标关闭此栏，此设置将不起作用。
 
-即使 Azure 信息保护栏保持隐藏，如果已配置了推荐分类，或者文档或电子邮件必须有标签，用户仍可以从临时显示的栏中选择标签。 此设置也不会影响你或其他人配置的标签，如手动或自动分类，或设置的默认标签。
+即使 Azure 信息保护栏保持隐藏，如果已配置了推荐分类，或者文档或电子邮件必须有标签，用户仍可以从临时显示的栏中选择标签。 
 
 若要配置此高级设置，请输入以下字符串：
 
@@ -219,6 +213,8 @@ ms.lasthandoff: 11/14/2017
 - 键 2：SyncPropertyState
 
 - 键 2 值：单向
+
+仅对一个自定义属性使用这些键和相应的值。
 
 例如，你有一个名为“分类”的 SharePoint 列，该列可能有三个值：“公共”、“常规”和“机密”。 文档存储在 SharePoint 中，且具有为分类属性设置的某个值。
 

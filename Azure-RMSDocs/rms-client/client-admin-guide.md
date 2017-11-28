@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/20/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 96eb4a9fde5c5664a41ad7f68c550af697e8216f
-ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
+ms.openlocfilehash: c338fe4258d6d8b20a4d8c285bc821981810b409
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 10/21/2017
 
 Azure 信息保护客户端包括以下内容：
 
-- 一个 Office 加载项，可安装 Azure 信息保护栏以便用户选择分类标签；一个功能区上的“保护”按钮，可获取其他选项。 对于 Outlook，还会将“不要转发”按钮添加到功能区。
+- 一个 Office 加载项，可安装 Azure 信息保护栏以便用户选择分类标签；一个功能区上的“保护”按钮，可获取其他选项。 对于 Outlook，在功能区上还可以使用“不转发”按钮。
 
 - Windows 文件资源管理器，便于用户将分类标签和保护应用到文件的右键单击选项。
 
@@ -127,7 +127,9 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
     
     - %LocalAppData%\Microsoft\MSIP\TokenCache
 
-- 将删除以下注册表项和设置。 如果配置了以下任意注册表项的设置，则必须在重置客户端后重新对其进行配置。 例如，由于要从 AD RMS 迁移并且网络上仍有服务连接点，因此配置了用于重定向到 Azure 信息保护租户的设置：
+- 将删除以下注册表项和设置。 如果以下任意注册表项具有自定义值，则必须在重置客户端后重新对其进行配置。 
+    
+    对于企业网络，通常使用组策略配置这些设置，在这种情况下，在计算机上刷新组策略时，将自动重新应用这些设置。 但是，某些设置可能通过脚本一次性配置，或手动配置。 在这些情况下，必须执行其他步骤来重新配置这些设置。 例如，由于要从 AD RMS 迁移并且网络上仍有服务连接点，因此计算机要运行一次脚本才能配置用于重定向到 Azure 信息保护的设置。 重置客户端后，计算机必须再次运行此脚本。
     
     - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity
     
