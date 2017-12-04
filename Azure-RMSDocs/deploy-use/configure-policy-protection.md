@@ -4,17 +4,17 @@ description: "通过配置标签来使用 Rights Management 保护，可保护�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 17f95d9875320c64d2983fcd176e371ee45d2f48
-ms.sourcegitcommit: 9de66368b75ffd003289f998c7b1e78736736524
+ms.openlocfilehash: 1b16d3ab7923592a011b6be39586a02a378f39f0
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -101,7 +101,7 @@ ms.lasthandoff: 11/21/2017
         
         用户或组必须有电子邮件地址。 在生产环境中，他们几乎都有电子邮件地址，但在简单的测试环境中，可能需要为用户帐户或组添加电子邮件地址。
         
-    - 选择“输入详细信息”以手动为单个用户或组（内部或外部）指定电子邮件地址。 或者，通过输入另一个组织的域名来指定该组织中的所有用户。 
+    - 选择“输入详细信息”以手动为单个用户或组（内部或外部）指定电子邮件地址。 或者，通过输入另一个组织的域名来指定该组织中的所有用户。 不要输入支持个人电子邮件帐户的社交提供商的域名。 例如，不要输入 gmail.com、hotmail.com 或 outlook.com。
         
     >[!NOTE]
     >如果在选择用户或组后某个电子邮件地址发生更改，请参阅计划文档中的[电子邮件地址发生更改情况下的注意事项](../plan-design/prepare.md#considerations-for-azure-information-protection-if-email-addresses-change)部分。

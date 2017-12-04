@@ -4,17 +4,17 @@ description: "快速试用 Azure 信息保护入门教程步骤 2 - 配置策略
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/17/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 0e10a1809aaf792ac8c5960e30917aabd5c44548
-ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
+ms.openlocfilehash: 3dd58454709dd5a73edc23578f12e79d85a9b9c9
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>步骤 2：配置并发布 Azure 信息保护策略
 
@@ -50,6 +50,10 @@ ms.lasthandoff: 11/18/2017
     如果因使用旧版本的策略而不具有此标签，请选择“内部”作为等效标签。
 
 2. 对于“用户必须提供设置较低分类标签、删除标签或删除保护的理由”，请将此选项设置为“开”。
+
+3. 此外，请找到“使用户可使用自定义权限选项”设置。 若设置为“关”，请将其更改为“开”。
+    
+    可能无需更改此设置，因为默认设置取决于你何时获得订阅。 在教程的稍后部分，我们将使用自定义权限与在文件资源管理器中右键单击文件时指定的用户共享受保护的文档。
 
 ## <a name="creating-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>创建新标签，设置保护、视觉标记和分类提示条件
 
@@ -142,7 +146,7 @@ ms.lasthandoff: 11/18/2017
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
 |关于默认策略和不同版本|[默认 Azure 信息保护策略](../deploy-use/configure-policy-default.md)|
-|有关策略的配置选项|[配置 Azure 信息保护策略](../deploy-use/configure-policy.md)|
+|有关策略配置|[配置 Azure 信息保护策略](../deploy-use/configure-policy.md)|
 |配置标签以进行保护的详细说明|[如何配置标签以进行 Rights Management 保护](../deploy-use/configure-policy-protection.md)|
 |有关权限的详细信息|[为 Azure Rights Management 配置使用权限](../deploy-use/configure-usage-rights.md)|
 
