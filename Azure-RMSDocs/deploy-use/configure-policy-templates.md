@@ -4,7 +4,7 @@ description: "通过 Azure 门户配置和管理 Rights Management 模板。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/17/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 74f3f9e22e5607c8b85b752bcd3881d5b7a092b1
-ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
+ms.openlocfilehash: bb6aeea8f939614b9c1903d8e006815228f99723
+ms.sourcegitcommit: f6ba613445463c3c4c64b1620095d54b48194650
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
@@ -53,13 +53,13 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 ### <a name="default-template-names"></a>默认模板名称
 
-如果最近获得了 Azure 信息保护的订阅，则使用以下名称创建默认模板：
+如果是最近获得的订阅，则使用以下名称创建默认模板：
 
 - 机密\所有员工，授予受保护内容的读取或修改权限。
 
 - 高度机密\所有员工，授予受保护内容的只读权限。
 
-如果在一段时间以前获得了 Azure 信息保护订阅，或者如果没有 Azure 信息保护订阅，但具有包含 Azure Rights Management 的 Office 365 订阅，则将使用以下名称创建默认模板：
+如果是不久前获得的订阅，则使用以下名称创建默认模板：
 
 - \<组织名称> - 机密，授予受保护内容的读取或修改权限。
 

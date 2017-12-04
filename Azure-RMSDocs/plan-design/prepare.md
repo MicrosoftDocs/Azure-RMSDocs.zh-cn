@@ -4,7 +4,7 @@ description: "查看你是否拥有可以开始对组织的文档和电子邮件
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 41269f709df4b00a6f127e81aa060a062ab1005f
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 8f29aec107c344489ae38afabfa79129fd3fa000
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
@@ -207,7 +207,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 如果更改用户或组的电子邮件地址，我们建议你向用户或组添加旧电子邮件地址作为第二个电子邮件地址（也称为代理地址、别名或备用电子邮件地址）。 执行此操作后，旧电子邮件地址将添加到 Azure AD proxyAddresses 属性。 此帐户管理功能可确保在使用旧电子邮件地址时保存的任何使用权限或其他配置的业务连续性。 
 
-如果你无法执行此操作，则具有新电子邮件地址的用户或组会面临被拒绝访问以前受保护的文档和电子邮件的风险，以及使用旧值会出现其他错误配置的风险。 在这种情况下，必须重复配置以保存新的电子邮件地址。
+如果无法如此操作，则具有新电子邮件地址的用户或组可能无法访问先前受旧电子邮件地址保护的文档和电子邮件。 此情况下，必须重复保护配置以保护新的电子邮件地址。 例如，如果向用户或组授予了模板或标签的使用权限，则他们可使用与你向旧电子邮件地址授予的相同使用权限编辑这些模板或标签，还可按相同权限指定新的电子邮件地址。
 
 请注意，一个组更改其电子邮件地址的情况很少见，如果你为某个组而不是单个用户分配使用权限，则用户的电子邮件地址是否更改无关紧要。 在这种情况下，使用权限分配给组电子邮件地址，而不是单个用户电子邮件地址。 这是管理员在配置可保护文档和电子邮件的使用权限时最有可能采用的方法，同时也是推荐的方法。 但是，用户通常更有可能为单个用户分配自定义权限。 由于你无法随时了解用户帐户或组是否已用于授予访问权限，因此，始终添加旧电子邮件地址作为第二个电子邮件地址是最安全的做法。
 

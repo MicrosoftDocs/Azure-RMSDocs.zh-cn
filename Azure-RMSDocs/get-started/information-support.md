@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/08/2017
+ms.date: 11/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 89f0863f11d43a19a81b31a648de13fd1733df75
-ms.sourcegitcommit: a63b3ac3949e66cc38e20d7f14ac129b8e3224c3
+ms.openlocfilehash: 91ba855bb9bd9c41c81ae819b7b3afee1f04adb8
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -26,9 +26,9 @@ ms.lasthandoff: 11/09/2017
 
 |要执行的操作…|. 采取的措施：|
 |----------------|---------------|
-|请参阅最常使用的文档|阅读前 5 页： <br /><br />[入门 - 适用于 iOS 和 Android 的 AIP 应用 ](../rms-client/mobile-app-get-started.md) <br /><br /> [什么是 Azure 信息保护？](../understand-explore/what-is-information-protection.md)<br /><br /> [Azure Rights Management 是什么？](../understand-explore/what-is-azure-rms.md)<br /><br />[激活 Azure Rights Management](../deploy-use/activate-service.md)<br /><br />[Azure 信息保护的要求](../get-started/requirements.md)|
+|请参阅最常使用的文档|阅读前 5 页：<br /><br /> - [什么是 Azure 信息保护？](../understand-explore/what-is-information-protection.md)<br /> - [什么是 Azure 权限管理？](../understand-explore/what-is-azure-rms.md)<br />- [入门 - 适用于 iOS 和 Android 的 AIP 应用](../rms-client/mobile-app-get-started.md) <br />- [激活 Azure 权限管理](../deploy-use/activate-service.md)<br />- [Azure 信息保护的要求](../get-started/requirements.md)|
 |与产品团队和同行沟通|访问 Azure 信息保护的 [Yammer 网站](https://www.yammer.com/AskIPTeam)。|
-|请求新功能或更改功能|访问 Azure 信息保护的 [User Voice 网站](https://msip.uservoice.com)|
+|请求新功能或更改功能|访问 Azure 信息保护的 [UserVoice](https://msip.uservoice.com) 网站|
 |接收来自产品组的推文|在 Twitter 上关注 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)。|
 |检查订阅信息和支持的功能|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|
 
@@ -83,12 +83,14 @@ Azure 信息保护产品团队向[企业移动性和安全性博客](https://blo
 
 - 如果为本地服务器部署了 Rights Management 连接器：请参阅[监视](../deploy-use/monitor-rms-connector.md)信息，其中包括有关事件日志条目、性能计数器和日志记录的详细信息。
 
-- 有关 Windows 的 Azure 信息保护客户端：请参阅管理员指南中的[安装检查和疑难解答](../rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)部分。
+- 有关 Windows 的 Azure 信息保护客户端：请参阅管理员指南中的[安装检查和疑难解答](../rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)部分，并检查当前使用的版本是否是[受支持的版本](../rms-client/client-version-release-history.md#servicing-information-and-timelines)。
 
 ### <a name="community-resources"></a>社区资源
 
 建议访问 [Azure 信息保护的 Yammer 网站](https://www.yammer.com/AskIPTeam)。 借助此资源，可获取 Azure 信息保护团队的直接答复，以及其他管理员和顾问所分享的经验和知识。
 
-如果你无权访问 Yammer，请尝试访问 [Microsoft RMS（云）的 TechNet 论坛](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)。
+请检查内容不断丰富的[技术社区](https:/techcommunity.microsoft.com)，其中有一个 [Azure 信息保护区域](https:/techcommunity.microsoft.com/t5/Azure-Information-Protection/bd-p/Azure-Information-Protection)，可在此提问和分享信息。
+
+如果你无权访问这些网站，请尝试 [Microsoft RMS 的 TechNet 论坛（云）](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
