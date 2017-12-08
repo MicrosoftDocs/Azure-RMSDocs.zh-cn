@@ -14,6 +14,8 @@ ms.assetid: 9142dd29-f1f4-4c2f-82ac-534f14b8bba1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
+experimental: True
+experiment_id: priyamo-TableVsFlatList-20160805
 ms.openlocfilehash: ecc6e420633c42cc5044e9df0a5d86c604a5b24e
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
