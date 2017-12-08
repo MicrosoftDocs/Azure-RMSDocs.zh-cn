@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 2 阶段涉及从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 12/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b65e3d803f94e6c8a494217e2a494c704640e5fc
-ms.sourcegitcommit: 3952fc01c6182c143df7f0d2e748594e49bf1da8
+ms.openlocfilehash: 0dff1b664cbac830dda2750cc6120ab4476c8183
+ms.sourcegitcommit: c5408506170bdb00d9e677b02161b9f61d4d5d3c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -138,7 +138,7 @@ ms.lasthandoff: 11/01/2017
 
 2. 通过使用 Azure RMS PowerShell cmdlet [Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate) 导出模板。
 
-3. 通过使用 Azure RMS PowerShell cmdlet [Import-AadrmTemplate](/powershell/aadrm/vlatest/Import-AadrmTpd) 导入模板。
+3. 通过使用 Azure RMS PowerShell cmdlet [Import-AadrmTemplate](/powershell/module/aadrm/import-aadrmtemplate) 导入模板。
 
 然后可以发布或存档这些模板，就像迁移后创建的任何其他模板一样。
 

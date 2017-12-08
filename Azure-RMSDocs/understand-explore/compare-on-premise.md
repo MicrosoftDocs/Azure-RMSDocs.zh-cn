@@ -4,7 +4,7 @@ description: "如果你了解或以前部署过 Active Directory Rights Manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2017
+ms.date: 12/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 60765865a0c422f4baac72ed88a6bca9b96ed66f
-ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
+ms.openlocfilehash: 124bef6f9c54fc154bdf95322ca418d01f5b5636
+ms.sourcegitcommit: 3cbea6b4191b97c69d06d04cbbd852aacacdd9c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/05/2017
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>比较 Azure 信息保护与 AD RMS
 
@@ -57,7 +57,7 @@ Azure 信息保护的一些主要差异：
 |支持的 Microsoft Office 最低版本为 Office 2010，它需要 [Azure 信息保护客户端](../rms-client/aip-client.md)或 RMS 共享应用程序。<br /><br />Microsoft Office for Mac：<br /><br />- Microsoft Office for Mac 2016：受支持<br /><br />- Microsoft Office for Mac 2011：不受支持|支持的 Microsoft Office 最低版本为 Office 2007。<br /><br />Microsoft Office for Mac：<br /><br />- Microsoft Office for Mac 2016：受支持<br /><br />- Microsoft Office for Mac 2011：受支持|
 |支持适用于 Windows、iOS 和 Android 的 [Azure 信息保护客户端](../rms-client/aip-client.md)。 RMS 共享应用继续支持 Mac 计算机和 Windows Phone。<br /><br />此外，Azure 信息保护客户端支持以下各项：<br /><br />- 与其他组织的用户共享。<br /><br />- 适用于用户的文档跟踪站点，包括撤消文档的功能。|支持适用于 Windows、iOS 和 Android 的 [Azure 信息保护客户端](../rms-client/aip-client.md)。 RMS 共享应用继续支持 Mac 计算机和 Windows Phone。 但是，共享不支持与其他组织的用户共享或文档跟踪站点以及用户撤销文档的功能。|
 |使用 Azure 信息保护客户端时，可以对大多数[文件类型](../rms-client/client-admin-guide-file-types.md)进行分类和保护。<br /><br />对于其他应用程序，检查[支持 Azure Rights Management 数据保护的应用程序](../get-started/requirements-applications.md)中的表。|使用 Azure 信息保护客户端时，可以对大多数[文件类型](../rms-client/client-admin-guide-file-types.md)进行保护。<br /><br />对于其他应用程序，检查[支持 Azure Rights Management 数据保护的应用程序](../get-started/requirements-applications.md)中的表。|
-|支持的 Windows 客户端最低版本为 Windows 7 SP1。|支持的 Windows 客户端最低版本为 Windows Vista Service Pack 2。|
+|支持的 Windows 客户端最低版本为 Windows 7 SP1。|支持的 Windows 客户端最低版本为 Windows 7 SP1。|
 |移动设备支持包括 Windows Phone、Android、iOS 和 Windows RT。<br /><br />在支持 Exchange ActiveSync IRM 协议的所有移动设备平台上，也支持使用该协议管理电子邮件。|移动设备支持包括 Windows Phone、Android、iOS 和 Windows RT，并需要 [Active Directory Rights Management 服务移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)。<br /><br />在支持 Exchange ActiveSync IRM 协议的所有移动设备平台上，支持使用 Exchange ActiveSync IRM 管理电子邮件。|
 |支持适用于计算机和移动设备的多因素身份验证 (MFA)。<br /><br />有关详细信息，请参阅[多重身份验证 (MFA) 和 Azure 信息保护](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection)。|如果将 IIS 配置为请求证书，将支持智能卡身份验证。|
 |支持加密模式 2，而无需额外配置，该模式针对各种密钥长度和加密算法提供更强大的安全性。<br /><br />有关详细信息，请参阅本文中的[对签名和加密的加密控制](#cryptographic-controls-for-signing-and-encryption)部分以及 [AD RMS 加密模式](http://go.microsoft.com/fwlink/?LinkId=266659)。|默认情况下支持加密模式 1，需要额外配置才能支持加密算法 2，以提供更强大的安全性。<br /><br />有关详细信息，请参阅本文中的[对签名和加密的加密控制](#cryptographic-controls-for-signing-and-encryption)部分以及 [AD RMS 加密模式](http://go.microsoft.com/fwlink/?LinkId=266659)。|
