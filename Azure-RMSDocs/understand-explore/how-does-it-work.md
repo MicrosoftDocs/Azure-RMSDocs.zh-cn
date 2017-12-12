@@ -4,7 +4,7 @@ description: "详细解说 Azure RMS 的工作原理、它使用的加密控件�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 26c82884c706c8397eae63197ed0307faa3562d3
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 1a7075287eebe2c68534de95d01cef455ebe63b5
+ms.sourcegitcommit: f185b1d742c345a465927f88e606413421fe1150
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
 >*适用于：Azure 信息保护、Office 365*
 
-了解 Azure RMS 工作原理时的一个要点是，权限管理服务（和 Microsoft）在信息保护过程中不会查看或存储你的数据。 要保护的信息永远不会发送或存储到 Azure 中，除非你显式将其存储在 Azure 中，或者使用其他可用于在 Azure 中存储数据的云服务。 Azure RMS 只会在文档中保存数据，除已获授权的用户和服务以外，其他任何人都无法读取该文档：
+了解 Azure RMS 工作原理时的一个要点是，Azure 信息保护的这种数据保护服务不会在保护过程中查看或存储你的数据。 要保护的信息永远不会发送或存储到 Azure 中，除非你将其显式存储在 Azure 中，或者使用其他可在 Azure 中存储数据的云服务。 Azure RMS 只会在文档中保存数据，除已获授权的用户和服务以外，其他任何人都无法读取该文档：
 
 - 数据在应用程序级别进行加密，并包含策略用于定义该文档的授权用法。
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 08/24/2017
 有关 Azure RMS 使用的算法和密钥长度的技术详细信息，请参阅下一部分。
 
 ## <a name="cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths"></a>Azure RMS 使用的加密控制：算法和密钥长度
-尽管你不需要知道 RMS 的工作原理，但可能会有人询问你使用的加密控制，以确保安全保护符合行业标准。
+即使你不太了解此技术的工作原理，也可能会被问到它使用的加密控件。 例如，确认安全保护是否符合行业标准时。
 
 
 |加密控件|在 Azure RMS 中使用|
@@ -60,7 +60,7 @@ ms.lasthandoff: 08/24/2017
 
 - 在从本地进行迁移后 - 如果 AD RMS 群集使用 Exchange Online。
 
-- 用于迁移前在本地创建的存档密钥，以便在迁移到 Azure Rights Management 后可以继续打开由 AD RMS 保护的内容。
+- 用于迁移前在本地创建的存档密钥，以便迁移后可以继续通过 Azure Rights Management 服务打开先前由 AD RMS 保护的内容。
 
 - 如果客户选择使用 Azure Key Vault 来创建其自己的密钥 (BYOK)。 Azure 信息保护支持的密钥长度是 1024 位和 2048 位。 为了提高安全性，建议使用长度为 2048 位的密钥。
 

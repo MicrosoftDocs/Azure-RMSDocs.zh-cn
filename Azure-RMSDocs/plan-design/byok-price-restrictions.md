@@ -4,7 +4,7 @@ description: "了解结合使用客户托管的密钥（称为“自带密钥”
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: afc25e638cff4bddc342ed29dee7fab304d67bd7
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: 981f7349c9ae279d48f5cb4795ffc2087f5ae4d8
+ms.sourcegitcommit: 850869505942f9d1b74720085d253de4b54b19c1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 定价和限制
 
@@ -27,7 +27,11 @@ ms.lasthandoff: 09/28/2017
 
 密钥必须存储在 Azure Key Vault 中（Azure Key Vault 需要 Azure 订阅）。 若要使用受 HSM 保护的密钥，则必须使用 Azure Key Vault 高级服务层。 在 Azure 密钥保管库中使用密钥会按月产生费用。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。
 
-为 Azure 信息保护租户密钥使用 Azure Key Vault 时，建议为此密钥使用具有专用订阅的专用密钥保管库。 此配置有助于确保它仅被 Azure Rights Management 服务使用。 
+为 Azure 信息保护租户密钥使用 Azure Key Vault 时，建议为此密钥使用专用密钥保管库，帮助确保只有 Azure Rights Management 服务能使用它。 此配置可确保其他服务的调用不会导致超出密钥保管库的[服务限制](/azure/key-vault/key-vault-service-limits)，否则可能会限制 Azure Rights Management 服务的响应时间。  
+
+此外，由于每个使用 Azure Key Vault 的服务通常具有不同的密钥管理需求，因此建议为此密钥保管库使用单独的 Azure 订阅，帮助防止配置错误。 
+
+但是，如果希望与使用 Azure Key Vault 的其他服务共享 Azure 订阅，请确保该订阅共用一组通用的管理员。 此预防措施意味着，使用该订阅的管理员非常了解他们有权访问的所有密钥，因此他们不太可能在配置时犯错。 例如，如果 Azure 信息保护租户密钥的管理员同时负责管理 Office 365 Customer Key 和 CRM Online 密钥，则建议共享 Azure 订阅。 但是，如果管理 Customer Key 或 CRM Online 密钥的管理员不同时负责管理 Azure 信息保护租户密钥，则建议不共享 Azure 信息保护的 Azure 订阅。
 
 ## <a name="benefits-of-using-azure-key-vault"></a>使用 Azure 密钥保管库的好处
 
@@ -49,7 +53,7 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="restrictions-when-using-byok"></a>使用 BYOK 时的限制
 
-BYOK 和使用情况日志记录可无缝地适用于与 Azure 信息保护使用的 Azure Rights Management 服务集成的每个应用程序。 其中包括 SharePoint Online 等云服务、运行 Exchange 和 SharePoint 的本地服务器（它们通过使用 RMS 连接器来使用 Azure Rights Management 服务）、Office 2016 和 Office 2013 等客户端应用程序。 无论哪个应用程序请求 Azure Rights Management 服务，你都将获得密钥使用情况日志。
+BYOK 和使用情况日志记录可无缝地适用于与 Azure 信息保护使用的 Azure Rights Management 服务集成的每个应用程序。 其中包括 SharePoint Online 等云服务、运行 Exchange 和 SharePoint 的本地服务器（它们通过使用 RMS 连接器来使用 Azure Rights Management 服务）、Office 2016 和 Office 2013 等客户端应用程序。 无论哪个应用程序请求 Azure Rights Management 服务，你都可获得密钥使用情况日志。
 
 如果先前已通过从 Azure RMS 导入受信任的发布域 (TPD) 启用了 Exchange Online IRM，请按照 [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)（设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能）中的说明，在支持将 BYOK 用于 Azure 信息保护的 Exchange Online 中启用这些新功能。
 
