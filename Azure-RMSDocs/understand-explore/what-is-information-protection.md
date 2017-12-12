@@ -4,17 +4,17 @@ description: "Azure 信息保护服务概述。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: c17453cddec7d570901ccf18287e8d1db2fd3f01
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: 7e16be928a12142b695f2eac60bdbd3e353c3119
+ms.sourcegitcommit: 43d77093d97509170bbdfa72bc28e1c2100228ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -43,19 +43,17 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 此保护技术使用加密、标识和授权策略。 与应用的标签类似，使用权限管理能够始终为文档和电子邮件提供保护，而不受其位置的影响 – 不管是在组织、网络、文件服务器和应用程序的内部还是外部。 此信息保护解决方案让你可以始终控制你的数据，即使在这些数据与他人共享时也是如此。
 
-例如，可以配置报告文档或销售预测电子表格，以便仅允许组织内人员进行访问，并且可以控制是否可以编辑该文档、是否将其限制为只读，以及是否禁止打印它。 同样，你也可以配置电子邮件，并禁止转发电子邮件或使用“全部答复”选项。 这些保护任务可以使用 Rights Management 模板来简化。
+例如，可以配置报告文档或销售预测电子表格，以便仅允许组织内人员进行访问，并且可以控制是否可以编辑该文档、是否将其限制为只读，以及是否禁止打印它。 同样，你也可以配置电子邮件，并禁止转发电子邮件或使用“全部答复”选项。 
+
+这些保护设置可以是标签配置的一部分，这样用户就只需应用标签即可分类并保护文档和电子邮件。 不过，支持保护的应用程序和服务也可以使用相同的保护设置，但不能应用标签。 对于这些应用程序和服务，保护设置显示为 Rights Management 模板。
 
 ### <a name="rights-management-templates"></a>Rights Management 模板
 
 在激活 Azure Rights Management 服务之后，便会为你提供两个默认模板，用于将数据访问权限限制为你组织内的用户。 可以使用这些模板立即帮助防止从你的组织泄露数据。 你还可以通过配置应用更多限制性控件的自己的保护设置来补充这些默认模板。
 
-模板可作为标签配置的一部分。 当该标签应用到文档或电子邮件后，数据会同时被分类并自动受到保护。 这些模板也可以由用户或管理员在支持 Azure Rights Management 技术的产品和服务中进行选择。
+事实上，针对包含保护设置的 Azure 信息保护创建标签时，此操作会创建相应的 Rights Management 模板。 然后，可将该模板用于支持 Azure Rights Management 的应用程序和服务。
 
-此示例演示如何在从 Azure 门户配置 Azure 信息保护策略时为标签选择模板：
-
-![在 Azure 门户中选择模板的示例](../media/info-protect-template-callout.png)
-
-可以从 Exchange 管理中心选择相同的模板。 例如，可以配置 Exchange Online 邮件流规则来使用这些模板，因为 Exchange 支持 Azure Rights Management 技术：
+例如，可从 Exchange 管理中心配置 Exchange Online 邮件流规则来使用这些模板：
 
 ![为 Exchange Online 选择模板的示例](../media/templates-exchangeonline-callouts.png)
 

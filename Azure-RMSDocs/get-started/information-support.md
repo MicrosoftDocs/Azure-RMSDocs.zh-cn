@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 12/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 91ba855bb9bd9c41c81ae819b7b3afee1f04adb8
-ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
+ms.openlocfilehash: d6937e86fd0fd544ff2030e52d03c32daa67a134
+ms.sourcegitcommit: a9376b5431dc6ae9819833146a84fc1dd5e685fb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -89,8 +89,6 @@ Azure 信息保护产品团队向[企业移动性和安全性博客](https://blo
 
 建议访问 [Azure 信息保护的 Yammer 网站](https://www.yammer.com/AskIPTeam)。 借助此资源，可获取 Azure 信息保护团队的直接答复，以及其他管理员和顾问所分享的经验和知识。
 
-请检查内容不断丰富的[技术社区](https:/techcommunity.microsoft.com)，其中有一个 [Azure 信息保护区域](https:/techcommunity.microsoft.com/t5/Azure-Information-Protection/bd-p/Azure-Information-Protection)，可在此提问和分享信息。
-
-如果你无权访问这些网站，请尝试 [Microsoft RMS 的 TechNet 论坛（云）](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)。
+如果你无权访问此站点，请尝试 [Microsoft RMS 的 TechNet 论坛（云）](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
