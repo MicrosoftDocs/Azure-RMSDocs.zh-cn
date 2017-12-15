@@ -4,7 +4,7 @@ description: "Azure Rights Management (Azure RMS) 是 Azure 信息保护使用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/7/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b002ebf624fe2d314af2cf1df1a1cb452042138e
-ms.sourcegitcommit: a4f4edcbf0f0a7de74d1dcec9ce6e661c6882a74
+ms.openlocfilehash: c9ca7db4b880a8f09d51912db1c25c2f526978d8
+ms.sourcegitcommit: 8ff20119a9ce26c1dc7db729742d4e8ade083981
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
 

@@ -11,11 +11,11 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: a9a94744aa2eacb3ddb4bbda3989ae857ff708fd
-ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
+ms.openlocfilehash: 2aba222457dfb56cca29e1a2948cc08041552d9f
+ms.sourcegitcommit: f3d5a1de317b9bd114d802b3965bf6b679d7ccf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 10/17/2017
 
 从企业内容管理系统、业务应用程序或基于云的业务解决方案导出信息时，服务应用程序可提供保护信息的功能。 数据丢失防护 (DLP) 和云应用程序安全性 (CAS) 应用程序都是服务应用程序的示例。 用于开发服务应用程序的 SDK 可通过两种编程模型获取。
 
-- [C++](https://www.microsoft.com/en-us/download/details.aspx?id=38397)
+- [C++](https://www.microsoft.com/download/details.aspx?id=38397)
 - [C# 托管 API](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcManagedAPI)
 
 ### <a name="examples-of-service-applications"></a>服务应用程序的示例
@@ -84,7 +84,7 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 
 ### <a name="security-and-authentication"></a>安全性和身份验证
 
-- [How to configure your app service application to use Azure Active Directory login](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication)（如何配置应用服务应用程序以使用 Azure Active Directory 登录）
+- [How to configure your app service application to use Azure Active Directory login](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication)（如何配置应用服务应用程序以使用 Azure Active Directory 登录）
 - [如何使用 Azure Active Directory 身份验证 (ADAL) 进行身份验证](how-to-use-adal-authentication.md)
 - [配置 Azure RMS 进行身份验证（服务）](adal-auth.md)
 - [设置 API 安全模式（服务）](setting-the-api-security-mode-api-mode.md)
@@ -112,7 +112,7 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 
 - [最佳安全实践指南](security-guidelines.md)
 - [RMS 开发人员活动角（博客）](https://blogs.msdn.microsoft.com/rms/)
-- [Azure 信息保护的常见问题](https://docs.microsoft.com/en-us/information-protection/get-started/faqs)
+- [Azure 信息保护的常见问题](https://docs.microsoft.com/information-protection/get-started/faqs)
 
 ### <a name="support-articles"></a>支持文章
 
@@ -133,17 +133,17 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 
 ### <a name="api-reference"></a>API 参考
 
-- [Windows API 参考](https://msdn.microsoft.com/en-us/library/hh535292.aspx)
+- [Windows API 参考](https://msdn.microsoft.com/library/hh535292.aspx)
   - [Windows SDK 错误代码](https://msdn.microsoft.com/library/hh535248.aspx)
 - [Windows Phone 和 Windows 应用商店 API 参考](https://msdn.microsoft.com/library/dn891914.aspx)
-- [iOS/OSX API 参考](https://msdn.microsoft.com/en-us/library/dn758306.aspx)
-- [Android API 参考](https://msdn.microsoft.com/en-us/library/dn758245.aspx)
+- [iOS/OSX API 参考](https://msdn.microsoft.com/library/dn758306.aspx)
+- [Android API 参考](https://msdn.microsoft.com/library/dn758245.aspx)
 - [Linux API 参考](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)
 
 ### <a name="previous-versions"></a>早期版本
 
-- [AD RMS SDK](https://msdn.microsoft.com/en-us/library/cc530379.aspx) 是 RMS SDK 的第一个版本。
-- [AD RMS 脚本工具](https://msdn.microsoft.com/en-us/library/bb968797.aspx) 是 AD RMS 安装的管理工具。
+- [AD RMS SDK](https://msdn.microsoft.com/library/cc530379.aspx) 是 RMS SDK 的第一个版本。
+- [AD RMS 脚本工具](https://msdn.microsoft.com/library/bb968797.aspx) 是 AD RMS 安装的管理工具。
 
 ### <a name="see-also"></a>另请参阅
 
