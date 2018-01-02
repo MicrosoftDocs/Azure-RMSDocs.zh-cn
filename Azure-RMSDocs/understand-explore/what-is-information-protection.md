@@ -4,17 +4,17 @@ description: "Azure 信息保护服务概述。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/01/2017
+ms.date: 12/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 7e16be928a12142b695f2eac60bdbd3e353c3119
-ms.sourcegitcommit: 43d77093d97509170bbdfa72bc28e1c2100228ee
+ms.openlocfilehash: 18ec6241d09eb8de2417dd939237de0544a401e8
+ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -45,13 +45,13 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 例如，可以配置报告文档或销售预测电子表格，以便仅允许组织内人员进行访问，并且可以控制是否可以编辑该文档、是否将其限制为只读，以及是否禁止打印它。 同样，你也可以配置电子邮件，并禁止转发电子邮件或使用“全部答复”选项。 
 
-这些保护设置可以是标签配置的一部分，这样用户就只需应用标签即可分类并保护文档和电子邮件。 不过，支持保护的应用程序和服务也可以使用相同的保护设置，但不能应用标签。 对于这些应用程序和服务，保护设置显示为 Rights Management 模板。
+这些保护设置可以是标签配置的一部分，这样用户就只需应用标签即可分类并保护文档和电子邮件。 不过，支持保护的应用程序和服务也可以使用相同的保护设置，但不能应用标签。 对于这些应用程序和服务，保护设置以 Rights Management 模板形式提供。
 
 ### <a name="rights-management-templates"></a>Rights Management 模板
 
 在激活 Azure Rights Management 服务之后，便会为你提供两个默认模板，用于将数据访问权限限制为你组织内的用户。 可以使用这些模板立即帮助防止从你的组织泄露数据。 你还可以通过配置应用更多限制性控件的自己的保护设置来补充这些默认模板。
 
-事实上，针对包含保护设置的 Azure 信息保护创建标签时，此操作会创建相应的 Rights Management 模板。 然后，可将该模板用于支持 Azure Rights Management 的应用程序和服务。
+事实上，针对包含保护设置的 Azure 信息保护创建标签时，此操作会创建相应的 Rights Management 模板。 然后，还可将该模板用于支持 Azure Rights Management 的应用程序和服务。
 
 例如，可从 Exchange 管理中心配置 Exchange Online 邮件流规则来使用这些模板：
 
@@ -59,7 +59,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 有关 Azure Rights Management 保护的详细信息，请参阅[什么是 Azure Rights Management？](what-is-azure-rms.md)
 
-## <a name="integration-with-end-user-workflows"></a>与最终用户工作流集成
+## <a name="integration-with-end-user-workflows-for-documents-and-emails"></a>与文档和电子邮件的最终用户工作流集成
 
 安装 Azure 信息保护客户端时，Azure 信息保护会与最终用户的现有工作流集成。 此客户端会将信息保护栏安装到 Office 应用程序（如在 Word 中显示此栏的第一张图片所示）。 相同的信息保护栏会添加到 Excel、PowerPoint 和 Outlook。 例如：
 
@@ -79,6 +79,25 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 ![撤销文档跟踪站点中的访问图标](../media/tracking-site-revoke-access-icon.png)
 
+### <a name="additional-integration-for-email"></a>其他电子邮件集成
+
+如果将 Azure 信息保护用于 Exchange Online，还可获得其他好处：可将受保护电子邮件发送到任何用户，他们可在任何设备上阅读电子邮件。
+
+例如，用户需要将敏感信息发送到使用 Gmail、Hotmail 或 Microsoft 帐户的个人电子邮件帐户。 或者，向在 Office 365 或 Azure AD 中没有帐户的用户发送敏感信息。 这些电子邮件应静态加密并在传输中加密，且只有原始收件人才能阅读。
+
+此方案需要[ Office 365 邮件加密中的新功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)。 如果收件人在本机电子邮件客户端中无法打开受保护的电子邮件，可以使用一次性密码，通过浏览器阅读敏感信息。
+
+例如，Gmail 用户在电子邮件中看到以下信息：
+
+![OME 和 AIP 的 Gmail 收件人体验](../media/ome-message.png)
+
+对于发送电子邮件的用户，他们的工作流与将受保护电子邮件发送到其组织内的用户相同。 例如，他们可以选择“不要转发”按钮，Azure 信息保护客户端可以将该按钮添加到 Outlook 功能区。 或者，此“不要转发”功能可以集成到用户选择的标签，使电子邮件分类并受到保护：
+
+![选择配置为“不要转发”的标签](../media/recipients-only-label.png)
+
+或者，可以通过使用应用权限保护的邮件流规则，为用户自动提供保护。 
+
+将 Office 文档附加到这些电子邮件时，这些文档也会自动受到保护。
 
 ## <a name="resources-for-azure-information-protection"></a>Azure 信息保护的资源
 

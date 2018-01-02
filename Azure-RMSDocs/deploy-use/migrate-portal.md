@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3beb637b4a9ffe662455f32281e24ecfeb230bca
-ms.sourcegitcommit: 43d77093d97509170bbdfa72bc28e1c2100228ee
+ms.openlocfilehash: 194c746298024ef294c8a6a6fa0361d21cbd869e
+ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>曾使用 Azure 经典门户执行的任务
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/02/2017
 > [!NOTE]
 > Azure 经典门户将于 2018 年 1 月 08 日停用。 在此之后，如果尝试使用此门户，则将自动重定向到新的 Azure 门户。 
 > 
-> 有关详细信息，请参阅博客文章公告 [Marching into the future of the Azure AD admin experience: retiring the Azure classic portal](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/)（迈进 Azure AD 管理员体验的未来：告别 Azure 经典门户）。 有关停用日期的临时扩展，请参阅 [Update on retirement of Azure AD classic portal experience and migration of conditional access policies](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/)（关于停用 Azure AD 经典门户体验和迁移条件访问策略的更新）。
+> 有关详细信息，请参阅博客文章公告 [Marching into the future of the Azure AD admin experience: retiring the Azure classic portal](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/)（迈进 Azure AD 管理员体验的未来：告别 Azure 经典门户）。 有关原始停用日期的临时扩展，请参阅 [Update on retirement of Azure AD classic portal experience and migration of conditional access policies](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/)（关于停用 Azure AD 经典门户体验和迁移条件访问策略的更新）。
 
 ## <a name="how-to-do-your-familiar-admin-tasks"></a>如何执行熟悉的管理任务
 

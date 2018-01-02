@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ebfd7ce4266061cef3099fb8fb096c95b01e6fb4
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: a7a983ed075e41ee6f3328634b451107e579134d
+ms.sourcegitcommit: e089661f23f199b122b0ca9ba4748792b349bc27
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>记录和分析 Azure Rights Management 服务的使用情况
 
@@ -42,9 +42,9 @@ ms.lasthandoff: 09/08/2017
 
 除了此使用日志记录之外，还可以使用以下日志记录选项：
 
-|日志记录选项|说明|
+|日志记录选项|描述|
 |----------------|---------------|
-|管理员日志|记录 Azure 权限管理服务的管理任务。 例如，在停用服务的情况下，启用超级用户功能时，以及向用户委派服务的管理员权限时。 <br /><br />有关详细信息，请参阅 PowerShell cmdlet，[Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog)。|
+|管理员日志|Azure Rights Management 服务的日志管理任务。 例如，在停用服务的情况下，启用超级用户功能时，以及向用户委派服务的管理员权限时。 <br /><br />有关详细信息，请参阅 PowerShell cmdlet，[Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog)。|
 |Web 报表|Azure 经典门户中的高级使用情况报表：“RMS 摘要”、“RMS 活动用户”、“RMS 设备平台”和“RMS 应用程序使用情况”。 <br /><br />若要从 Azure 经典门户访问这些报表，请单击“Active Directory”，选择并打开一个目录，然后单击“报表”。|
 |文档跟踪|允许用户跟踪和撤销其使用 Azure 信息保护客户端或 RMS 共享应用跟踪的文档。 全局管理员也可以代表用户跟踪这些文档。 <br /><br />有关详细信息，请参阅[配置和使用 Azure 信息保护的文档跟踪](../rms-client/client-admin-guide-document-tracking.md)。|
 |客户端事件日志|Azure 信息保护客户端的使用活动记录在本地 Windows“应用程序和服务”事件日志和“Azure 信息保护”中。 <br /><br />有关详细信息，请参阅 [Azure 信息保护客户端的使用日志记录](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)。|
