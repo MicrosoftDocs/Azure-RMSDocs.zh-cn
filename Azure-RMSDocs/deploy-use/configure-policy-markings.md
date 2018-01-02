@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: ff444afb1912239ec817882c76fc735f6d35ed1e
-ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
+ms.openlocfilehash: 99aba6560f9dcdbd564f317e8d9e0ce89845f4a9
+ms.sourcegitcommit: f78f5209f0e19c6edfd1815d76e0e9750b4ce71d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -100,7 +100,7 @@ Calibri 是页眉、页脚和水印文字的默认字体。 如果指定替代�
 
 可从可用颜色列表中进行选择，或输入颜色的红绿蓝 (RGB) 组成的十六进制三元色代码来指定自定义颜色。 例如，#DAA520。 
 
-如果需要引用这些代码，请参阅 MSDN 文档中的 [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85).aspx)（按名称分类的颜色），这是一个有用的起点。 也可在许多可编辑图片的应用程序中找到这些代码。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
+如果需要引用这些代码，请参阅 MSDN 文档中的 [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85\).aspx)（按名称分类的颜色），这是一个有用的起点。 也可在许多可编辑图片的应用程序中找到这些代码。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 
 ## <a name="next-steps"></a>后续步骤
 

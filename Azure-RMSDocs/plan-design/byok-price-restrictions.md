@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 981f7349c9ae279d48f5cb4795ffc2087f5ae4d8
-ms.sourcegitcommit: 850869505942f9d1b74720085d253de4b54b19c1
+ms.openlocfilehash: 837026a45529312dbdb1657cc563e8b02bff6675
+ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 定价和限制
 
