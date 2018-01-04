@@ -100,8 +100,8 @@ RMS 客户端将许可证存储在本地磁盘上，并且还在 Windows 注册�
 
 |说明|客户端模式路径|服务器模式路径|
 |---------------|---------------------|---------------------|
-|许可证存储位置|%localappdata%\Microsoft\MSIPC|%allusersprofile%\Microsoft\MSIPC\Server\*<SID>*\|
-|模板存储位置|%localappdata%\Microsoft\MSIPC\Templates|%allusersprofile%\Microsoft\MSIPC\Server\Templates\*<SID>*\|
+|许可证存储位置|%localappdata%\Microsoft\MSIPC|%allusersprofile%\Microsoft\MSIPC\Server\*<SID>\*\|
+|模板存储位置|%localappdata%\Microsoft\MSIPC\Templates|%allusersprofile%\Microsoft\MSIPC\Server\Templates\*<SID>\*\|
 |注册表位置|HKEY_CURRENT_USER<br /> \Software<br /> \Classes<br /> \Local Settings<br /> \Software<br /> \Microsoft<br /> \MSIPC|HKEY_CURRENT_USER<br /> \Software<br /> \Microsoft<br /> \MSIPC<br /> \Server<br /> \*<SID>*|
 > [!NOTE]
 > \<SID\> 是用于运行服务器应用程序的帐户的安全标识符 (SID)。 例如，如果应用程序在内置的网络服务帐户下运行，请使用该帐户的已知 SID 的值 (S-1-5-20) 替换 *<SID>*。
@@ -126,7 +126,7 @@ RMS 客户端将许可证存储在本地磁盘上，并且还在 Windows 注册�
 
 **客户端模式：** %localappdata%\Microsoft\MSIPC\UnmanagedTemplates
 
-**服务器模式：** %allusersprofile%\Microsoft\MSIPC\Server\UnmanagedTemplates\\*\<SID\>\*
+**服务器模式：** %allusersprofile%\Microsoft\MSIPC\Server\UnmanagedTemplates\\\*\<SID\>\*
 
 如果你使用此文件夹，则除了模板应由 AD RMS 服务器发布，并且应使用 .xml 文件扩展名以外，没有其他必须遵循的特殊命名约定。 例如，Contoso-Confidential.xml 或 Contoso-ReadOnly.xml 是有效的名称。
 
