@@ -4,7 +4,7 @@ description: "使用 Azure 信息保护进行分类和设置标签时遇到问�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 4332b37a3c89cb68d8e090e44666f2620d5b0064
-ms.sourcegitcommit: fd3932ab19a00229b56efc3e301abaf9cff3f70b
+ms.openlocfilehash: 7bc1e4021eeb2620857577f3970d1da9db21b6e8
+ms.sourcegitcommit: 51b93125988e6e63077b1df721985b89059f425e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -29,8 +29,6 @@ ms.lasthandoff: 11/17/2017
 请尝试学习我们的快速入门教程，以便在数分钟内了解相关功能：[《Quick start tutorial for Azure Information Protection》](infoprotect-quick-start-tutorial.md)（Azure 信息保护快速入门教程）。
 
 有关其他分类特性和功能何时可用的信息，请留意[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)和 [Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)上的公告。 当前版本具有一些限制，包括以下内容：
-
-- 标签名称和工具提示仅支持一种语言。 但是，多语言支持现为预览版。 有关详细信息，请参阅[如何配置不同语言的标签和模板](../deploy-use/configure-policy-languages.md)。
 
 - 对于分类和标签没有任何集中式日志记录。
 

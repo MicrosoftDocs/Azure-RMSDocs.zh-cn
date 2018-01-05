@@ -14,11 +14,11 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: c4334bad5a7ca6650c087425e4794c348b73501b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 1854329b9cb949a6b4318d00f981f0be9065a33e
+ms.sourcegitcommit: 1b6af3c85ed32e8d80ed10cb6ba86fc61026eaa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="developing-your-application"></a>开发应用程序
 
@@ -35,9 +35,9 @@ ms.lasthandoff: 06/30/2017
 
 ### <a name="azure-ad-tenant-configuration"></a>Azure AD 租户配置
 
-若要为 Azure 信息保护配置 Azure AD 环境，请按照[激活 Azure Rights Management](https://docs.microsoft.com/en-us/information-protection/deploy-use/activate-service)中的指导进行操作。
+若要为 Azure 信息保护配置 Azure AD 环境，请按照[激活 Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service)中的指导进行操作。
 
-激活服务后，你需要 PowerShell 组件来执行后续步骤。 请按照[使用 Windows PowerShell 管理 Azure Rights Management 服务](https://docs.microsoft.com/en-us/information-protection/deploy-use/administer-powershell)中的说明完成此操作。
+激活服务后，你需要 PowerShell 组件来执行后续步骤。 请按照[使用 Windows PowerShell 管理 Azure Rights Management 服务](https://docs.microsoft.com/information-protection/deploy-use/administer-powershell)中的说明完成此操作。
 
 ### <a name="getting-your-tenant-id"></a>获取租户 ID
 
