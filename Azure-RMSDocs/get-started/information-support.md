@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2017
+ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d6937e86fd0fd544ff2030e52d03c32daa67a134
-ms.sourcegitcommit: a9376b5431dc6ae9819833146a84fc1dd5e685fb
+ms.openlocfilehash: e1fb9251722656811752f7d47cb52388b5d18dc5
+ms.sourcegitcommit: 42c1e72320197534f720ca78bf25da9f139a17de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -24,25 +24,21 @@ ms.lasthandoff: 12/08/2017
 
 使用以下资源可帮助你了解、部署和支持组织的 Azure 信息保护。
 
-|要执行的操作…|. 采取的措施：|
+|要执行的操作…|...执行此操作：|
 |----------------|---------------|
 |请参阅最常使用的文档|阅读前 5 页：<br /><br /> - [什么是 Azure 信息保护？](../understand-explore/what-is-information-protection.md)<br /> - [什么是 Azure 权限管理？](../understand-explore/what-is-azure-rms.md)<br />- [入门 - 适用于 iOS 和 Android 的 AIP 应用](../rms-client/mobile-app-get-started.md) <br />- [激活 Azure 权限管理](../deploy-use/activate-service.md)<br />- [Azure 信息保护的要求](../get-started/requirements.md)|
 |与产品团队和同行沟通|访问 Azure 信息保护的 [Yammer 网站](https://www.yammer.com/AskIPTeam)。|
-|请求新功能或更改功能|访问 Azure 信息保护的 [UserVoice](https://msip.uservoice.com) 网站|
+|请求新功能或更改功能|访问 Azure 信息保护的 [UserVoice](https://msip.uservoice.com) 网站。|
 |接收来自产品组的推文|在 Twitter 上关注 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)。|
 |检查订阅信息和支持的功能|使用 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|
 
 
-## <a name="information-about-new-releases-and-updated-documentation"></a>有关新版本和更新的文档的信息
-Azure 信息保护产品团队向[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)发送关于新版本和更新的公告。 这些博客文章可为产品文档和技术支持信息提供补充。
+## <a name="information-about-new-releases-and-updates"></a>有关新版本和更新的信息
+Azure 信息保护产品团队在[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)上发布关于新版本的公告。 这些博客文章可为产品文档和技术支持信息提供补充。
 
-我们将每月发布以下[**更新**](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)，帮助用户保持最新状态：
+此外，信息和威胁防护主管组 PM 经理会定期发布[更新](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)，帮助你及时更新。
 
-- 新增功能的状态更新。 这些文章的标题为：“Azure 信息保护状态更新 - \<月份/年份>”
-
-- 文档更改摘要包括对任何新版本、支持声明更新以及现有版本更正和说明的记录。 这些文章的标题为：“\<月份/年份> 的 Azure 信息保护文档更新” 
-
-此外，还可以在 Azure 信息保护 [ Yammer 网站](https://www.yammer.com/AskIPTeam)上找到有关新功能和预览版的信息，也可以在该网站上提出有关 Azure 信息保护的问题。 若要建议新功能或对新功能进行投票，请访问 Azure 信息保护的 [User Voice](https://msip.uservoice.com) 网站。
+[Azure 信息保护技术博客](https://aka.ms/AIPblog)每个月都会发布文档更改摘要。 以前的摘要发布在[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)上。 这些文档更新包括新版本信息、支持声明更新以及对现有版本的更正和说明。 这些文章的标题为：“\<月份/年份> 的 Azure 信息保护文档更新”。
 
 ## <a name="support-options-and-community-resources"></a>支持选项和社区资源
 以下部分提供有关支持选项和故障排除选项的信息及社区资源。

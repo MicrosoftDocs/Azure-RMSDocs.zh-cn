@@ -4,7 +4,7 @@ description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 12/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c3c0acad413ddbbcd1caccd4f1a73c7b0884ae7c
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: 20ee380a48fa8fb303a5c71f43df17b8740b0cb4
+ms.sourcegitcommit: fc9a4487e2a0bc3481a814c7c308939868d52db9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 
 
@@ -28,7 +28,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ### <a name="servicing-information-and-timelines"></a>维护信息和日程表
 
-Azure 信息保护客户端的正式发布 (GA) 版本可获得自发布日起为期 6 个月的支持。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
+在发布新的通用版本 (GA) 前，原有的 Azure 信息保护客户端的支持期限最多为六个月。 此页面不包含不支持的客户端版本。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
 
 不应在生产网络上为最终用户部署预览版本。 而是使用最新预览版来查看和试用即将在下一 GA 版本中推出的新功能或修补程序。 仅支持当前预览版。
 

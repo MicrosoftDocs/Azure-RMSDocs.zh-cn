@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护中数据保护服务 Azure Rights Manage
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fb2af56222f686149e40afcd54b20c04114c2a1f
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: b23fe95721c442529237ea72d30b3df490ad02dc
+ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -97,7 +97,9 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 或者，如果已为所需权限配置了一个组，则可更改组成员身份以包含或排除用户，而无需更改标签或模板。 更改生效前可能稍有延迟，因为组成员身份由 Azure Rights Management 服务[缓存](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management)。
 
-如果文档通过自定义权限保护，则无法更改现有文档的权限。 必须再次保护文档，并指定这一新的文档版本所需的所有用户和所有使用权限。 若要重新保护受保护的文档，必须具有“完全控制”使用权限。 
+如果文档通过自定义权限保护，则无法更改现有文档的权限。 必须再次保护文档，并指定这一新的文档版本所需的所有用户和所有使用权限。 若要重新保护受保护的文档，必须具有“完全控制”使用权限。
+
+提示：要检查文档是受模板保护还是受自定义权限保护，请使用 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet。 如果是自定义权限，则始终能看到访问受限的模板描述，以及运行 [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate) 时不会显示的唯一模板 ID。
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>我对 Exchange 采用混合部署：Exchange Online 上存在一些用户，而其他用户则在 Exchange Server 上。Azure RMS 支持这种部署吗？
 绝对支持，而且很棒的是，用户将受到无缝保护，并可以在两种 Exchange 部署上使用受保护的电子邮件和附件。 对于此配置，[激活 Azure RMS](../deploy-use/activate-service.md) 并[启用适用于 Exchange Online 的 IRM](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)，然后[部署并配置适用于 Exchange Server 的 RMS 连接器](../deploy-use/deploy-rms-connector.md)。
@@ -172,7 +174,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 在保护文档之后跟踪文档：在安装了 Azure 信息保护客户端的 Windows 计算机上，使用 Office 应用程序或文件资源管理器将文档注册到文档跟踪站点。 有关说明，请参阅[跟踪和撤销文档](../rms-client/client-track-revoke.md)。 现在可以从 Mac 计算机使用 Web 浏览器访问文档跟踪站点 (https://track.azurerms.com) 来跟踪和撤销此文档。
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>当我打开受 RMS 保护的 Office 文档时，关联的临时文件是否也将受 RMS 保护？
-否。 在此方案中，关联的临时文件不包含原始文档中的数据，而仅包含该文件打开时用户输入的内容。 与原始文件不同，临时文件明显不适合共享，将保留在设备上，受本地安全控件（例如 BitLocker 和 EFS）保护。
+不能。 在此方案中，关联的临时文件不包含原始文档中的数据，而仅包含该文件打开时用户输入的内容。 与原始文件不同，临时文件明显不适合共享，将保留在设备上，受本地安全控件（例如 BitLocker 和 EFS）保护。
 
 ## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>我正在寻找的一项功能看起来不适用于 SharePoint 保护的库。是否计划了针对此功能的支持？
 目前，SharePoint 通过使用受 IRM 保护的库来支持受 RMS 保护的文档，但是该库不支持 Rights Management 模板、文档跟踪和一些其他功能。 有关详细信息，请参阅 [Office 应用程序和服务](../understand-explore/office-apps-services-support.md)一文中的 [SharePoint Online 和 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server)部分。
