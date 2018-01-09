@@ -4,7 +4,7 @@ description: "概览 Azure 门户中的管理任务，这些任务过去在 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/01/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 194c746298024ef294c8a6a6fa0361d21cbd869e
-ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
+ms.openlocfilehash: 2764c1349847ca862147a5cc9f21fbd9c4a83624
+ms.sourcegitcommit: 2a7f20684a041385e2d2425ab886e46917d2da9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>曾使用 Azure 经典门户执行的任务
 
@@ -31,7 +31,9 @@ ms.lasthandoff: 12/11/2017
 
 ## <a name="how-to-do-your-familiar-admin-tasks"></a>如何执行熟悉的管理任务
 
-使用以下信息可帮助你快速过渡到新门户：
+使用以下信息可帮助你快速过渡到新门户。
+
+但是，订阅 Office 365 美国政府版（政府社区云）的客户目前无法使用 Azure 门户，必须改用 [PowerShell](configure-templates-with-powershell.md) 来管理模板。 
 
 |Azure 经典门户|如何在 Azure 门户中执行此任务
 |-----------|--------------------|
@@ -42,7 +44,7 @@ ms.lasthandoff: 12/11/2017
 |创建作用域内模板|创建作用域内策略，并在作用域内创建应用保护的标签。 <br /><br />有关详细信息，请参阅[如何使用作用域内策略为特定用户配置 Azure 信息保护策略](configure-policy-scope.md)。
 |复制模板|无法在 Azure 门户中复制模板。 如果希望两个标签具有相同的保护设置，则必须设置每个标签的权限。 <br /><br />有关详细信息，请参阅[配置标签以进行 Rights Management 保护](configure-policy-protection.md#to-configure-a-label-for-rights-management-protection)。
 |删除模板|删除模板可能导致无法访问数据，因此 Azure 门户不支持此操作。 但是，可以删除标签，然后使用 PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) cmdlet 来删除模板。 <br /><br />有关详细信息，请参阅[如何删除或重排 Azure 信息保护的标签](configure-policy-delete-reorder.md)。
-|多语言支持|从“管理”菜单选择中，选择“语言(预览)”，导出包含模板名称和描述的可自定义字段。 翻译字符串，然后将这些字符串导入门户。 <br /><br />有关详细信息，请参阅[如何在 Azure 信息保护中配置不同语言的标签和模板](configure-policy-languages.md)。
+|多语言支持|从“管理”菜单选择中，选择“语言”，导出包含模板名称和描述的可自定义字段。 翻译字符串，然后将这些字符串导入门户。 <br /><br />有关详细信息，请参阅[如何在 Azure 信息保护中配置不同语言的标签和模板](configure-policy-languages.md)。
 |Rights Management Web 报表|使用 PowerShell [Get-AadrmUsageLog ](/powershell/module/aadrm/Get-AadrmUsageLog) cmdlet 下载 Azure Rights Management 服务的使用日志。 然后可使用此数据创建自定义报表。 <br /><br />有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](log-analyze-usage.md)。<br /><br />提示：查看[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)上的公告，了解 Azure 信息保护新的集中式解决方案。 
 |激活和停用 Rights Management 服务|从“管理”菜单选项中，选择“RMS 设置”或“保护激活”。 此选项正处于重命名的过程中。<br /><br />有关详细信息，请参阅[如何从 Azure 门户激活 Azure 权限管理](activate-azure.md)。
 

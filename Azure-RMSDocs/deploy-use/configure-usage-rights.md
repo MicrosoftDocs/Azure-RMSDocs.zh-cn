@@ -4,7 +4,7 @@ description: "了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/06/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f82eb8bc415b064793c1efd9b7b88795b1ec6ff2
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: 5d57f1cc7728fef1b877fc25fce01bbc9c768b3c
+ms.sourcegitcommit: 24b35e27b3aa861ae8ba6bacab571b0071b058d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 10/10/2017
 **API 常量或值**是 MSIPC API 调用的 SDK 名称，在你编写检查使用权限的启用 RMS 的应用程序，或向策略添加使用权限时使用。
 
 
-|使用权限|说明|实现|
+|使用权限|描述|实现|
 |-------------------------------|---------------------------|-----------------|
 |公用名：**编辑内容，编辑** <br /><br />策略中的编码：**DOCEDIT**|允许用户对应用程序中的内容进行修改、重新排列、设置格式或筛选。 它不会授权保存编辑过的副本。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**编辑内容**<br /><br />Azure 门户中的名称：包含在“编辑和保存”中<br /><br />AD RMS 模板中的名称：**编辑** <br /><br />API 常量或值：不适用。|
 |公用名：**保存** <br /><br />策略中的编码：**EDIT**|允许用户将文档保存到当前位置。<br /><br />在 Office 应用程序中，此权限还允许用户修改文档。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**保存文件**<br /><br />Azure 门户中的名称：包含在“编辑和保存”中<br /><br />AD RMS 模板中的名称：**保存** <br /><br />API 常量或值：`IPC_GENERIC_WRITE L"EDIT"`|
@@ -57,8 +57,8 @@ ms.lasthandoff: 10/10/2017
 |---------------------|----------------|---------------------------------|
 |查看器|Azure 经典门户 <br /><br />Azure 门户<br /><br /> 适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；答复；全部答复；允许宏 [[1]](#footnote-1)<br /><br />注意：对于电子邮件，请使用审阅者级别而不是此权限级别，确保接收到的电子邮件答复为电子邮件而不是附件。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也需要审阅者权限。 或者，对于组织内无需使用 Azure Rights Management 服务的用户来说，也需要此权限，因为你已实施了[载入控件](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)。|
 |审阅者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；答复：全部答复 [[2]](#footnote-2)；转发 [[2]](#footnote-2)；允许宏 [[1]](#footnote-1)|
-|合著者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出 [[3]](#footnote-3)；打印；答复 [[2]](#footnote-2)；全部答复 [[2]](#footnote-2)；转发 [[2]](#footnote-2)|
-|共有者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出；打印；答复 [[2]](#footnote-2)；全部答复 [[2]](#footnote-2)；转发 [[2]](#footnote-2)；完全控制|
+|合著者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；允许宏；另存为、导出 [[3]](#footnote-3)；打印；答复 [[2]](#footnote-2)；全部答复 [[2]](#footnote-2)；转发 [[2]](#footnote-2)|
+|共有者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；允许宏；另存为、导出；打印；答复 [[2]](#footnote-2)；全部答复 [[2]](#footnote-2)；转发 [[2]](#footnote-2)；完全控制|
 
 ----
 
@@ -70,8 +70,7 @@ ms.lasthandoff: 10/10/2017
 不适用项：适用于 Windows 的 Azure 信息保护客户端或适用于 Windows 的 Rights Management 共享应用程序。
 
 ###### <a name="footnote-3"></a>脚注 3
-不包括在适用于 Windows 的 Azure 信息保护客户端中。 在此客户端中，导出使用权限包括删除保护的功能。
-
+不包括在 Azure 门户或适用于 Windows 的 Azure 信息保护客户端中。
 
 ## <a name="rights-included-in-the-default-templates"></a>默认模板中包括的权限
 下表列出了创建默认模板时包含的使用权限。 使用权限按各自的[公用名](#usage-rights-and-descriptions)列出。

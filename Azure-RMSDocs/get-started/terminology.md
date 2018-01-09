@@ -4,7 +4,7 @@ description: "对 Microsoft Azure 信息保护相关的单词、短语或缩略�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 12/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f2c0053a8f1f4cde5193b65e5b8e521a2b6934c1
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: da20ac2ea327b5b97f021c85f62d97b9aa1b9824
+ms.sourcegitcommit: fc205eae0c0b378d41da5f1eceb0c699e60ad66f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 
@@ -26,11 +26,11 @@ ms.lasthandoff: 06/30/2017
 
 |项|定义|
 |--------|--------------|
-|AADRM|Azure 权限管理服务的 Windows PowerShell 模块名称，派生自 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 之前名为 (Windows) Azure Active Directory 权限管理时的非正式缩写。|
-|激活|启用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 服务，使组织可以保护其文档和电子邮件。 此操作还会在 Exchange Online 和 SharePoint Online 中启用权限管理功能。|
+|AADRM|Azure 权限管理服务的 Windows PowerShell 模块名称，派生自 Azure 权限管理之前名为 (Windows) Azure Active Directory 权限管理时的非正式缩写。|
+|激活|启用 Azure 权限管理服务，使组织可以保护其文档和电子邮件。 此操作还会在 Exchange Online 和 SharePoint Online 中启用权限管理功能。|
 |Active Directory 权限管理服务|经常缩写为 *AD RMS*。<br /><br />一个 Windows Server 角色，它使用加密和策略来提供权限管理保护，以帮助保护文档、文件和电子邮件。|
 |AD RMS|请参阅 *Active Directory Rights Management 服务*。|
-|Azure 信息保护|一种基于云的服务，使用分类、标签和保护来帮助保护文档和电子邮件的。 Azure 权限管理通过使用加密、标识和授权策略提供保护。|
+|Azure Information Protection|一种基于云的服务，使用分类、标签和保护来帮助保护文档和电子邮件的。 Azure 权限管理通过使用加密、标识和授权策略提供保护。|
 |Azure 权限管理|常缩写为 *Azure RMS*。<br /><br />Azure 信息保护使用的一种 Azure 服务，它使用加密和策略来帮助保护文档、文件和电子邮件。  也称为 *Azure Rights Management 服务*。 之前的名称包括：<br /><br />- Windows Azure Active Directory Rights Management：常缩写为 Windows Azure AD Rights Management Service。<br /><br />- *RMS Online*：原始的建议名称，有时可能在错误消息和日志文件条目中看到。|
 |Azure RMS|请参阅 *Azure Rights Management*。|
 |BYOK|请参阅 *自带密钥*。|
@@ -58,6 +58,8 @@ ms.lasthandoff: 06/30/2017
 |保护|使用加密、标识和访问控制策略，将 Rights Management 控件添加到文件或电子邮件，以帮助保护数据。|
 |publish|用于保护某个文件，以防他人在未经授权的情况下访问和使用该文件。|
 |权限管理连接器|可为 Exchange Server 和 SharePoint 等本地服务部署的出站代理中继，用于通过 Azure Rights Management 服务保护数据。|
+|权限管理颁发者|保护文档或电子邮件的帐户。|
+|权限管理所有者|此帐户通过自动授予“权限管理完全控制”使用权保留受保护文档或电子邮件的完全控制权，并且不受任何到期日期或离线设置限制。|
 |权限管理服务|适用于 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 云版本 ([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]) 和 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 本地版本 (AD RMS) 的通用术语。|
 |权限管理共享应用程序|一个可选应用程序，适用于 Windows 和大多数流行移动设备，用于支持安全共享本地文件以及通过电子邮件发送的文件，现在由 Azure 信息保护客户端替代。|
 |RMS|请参阅 *Rights Management 服务*。|

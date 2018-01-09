@@ -4,7 +4,7 @@ description: "面向管理员的说明和信息，介绍如何在企业网络中
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 675afc962da542a03b90bea2dcb5d004829e361a
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: d4ad7c3419d3ad83389baece95c1e30c32f06da6
+ms.sourcegitcommit: 7b90b3692bbef6fafab41c0f8c56bd4350985f37
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -50,6 +50,12 @@ ms.lasthandoff: 10/24/2017
     
     如果需要此更新且未安装，则客户端安装将警告你必须安装此更新。 可以在安装客户端后安装此更新，但某些操作将被阻止并再次显示该信息。  
 
+- Visual C++ Redistributable for Visual Studio 2015（32 位版）
+    
+    对于运行 Windows 7 服务包 1 的计算机，请从以下下载页面 - [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145) 安装 vc_redist.x86.exe
+    
+    客户端安装不会检查此必备项，但需要 Azure 信息保护客户端分类和保护 PDF 文件。
+
 - 请勿为 Office 应用程序禁用“Microsoft Azure 信息保护”加载项
     
     如果已配置组策略设置“托管加载项列表”，请通过为 Azure 信息保护指定以下编程标识符 (ProgID) 来添加 Office 应用程序的 Microsoft Azure 信息保护加载项，并将选项设置为“1：始终启用加载项”。
@@ -65,6 +71,14 @@ ms.lasthandoff: 10/24/2017
     即使尚未配置“托管加载项列表”组策略设置，如果收到报告称将禁用“Microsoft Azure 信息保护”加载项，也可能需要对其进行配置。 禁用此加载项后，Office 应用程序中将不会显示“Azure 信息保护”栏。
     
     有关此组策略设置的详细信息，请参阅 [Office 2013 和 Office 2016 程序的组策略设置导致未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)。
+
+- 对于 Office 版本 16.0.8628.2010 和更高版本（即点即用）：请启用原有的监视器支持
+    
+    若要防止 Azure 信息保护栏在这些 Office 版本以外的 Office 应用程序中显示，请启用原有的监视器支持。 若要配置 Office 应用程序：“文件” > “常规” > “用户界面”选项：
+    
+    - 如果发现“使用多种显示时”选项设置为“优化以获得最佳外观”，改为选择“优化以提高兼容性（需要重启应用程序）”。 
+        
+    - 如果看到已选中“对显示使用最佳设置”选项，请删除此选择。
 
 > [!IMPORTANT]
 > 安装 Azure 信息保护客户端需要本地管理权限。
@@ -157,7 +171,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果安装这一 Microsoft .NET Framework 更高版本不可行，可以在安装客户端时使用 **DowngradeDotNetRequirement=True** 参数和值，这样就可以在已安装 Microsoft .NET Framework 版本 4.5.1 的情况下忽略这项要求。
 
-例如： `AzInfoProtection.exe DowngradeDotNetRequirement=True`
+例如：`AzInfoProtection.exe DowngradeDotNetRequirement=True`
 
 建议谨慎使用此参数。还请注意，将 Azure 信息保护客户端与旧版 Microsoft .NET Framework 结合使用时，Office 应用程序存在报告的尚未解决的问题。 如果确实遇到了尚未解决的问题，请先升级到建议的版本，然后再尝试其他故障排除解决方案。 
 
@@ -183,8 +197,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     |Office 2010|Windows 8.1 和 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB2843630 或 KB2919355，则进行安装|
     |Office 2010|Windows 8 和 Windows Server 2012|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
     |Office 2010|Windows 7|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB3125574，则进行安装|
-    |不适用|Windows 7|KB2627273 <br /><br /> 文件名中包含的版本号：v4|卸载|
-    
+    |“不适用”|Windows 7|[vc_redist.x86.exe](https://www.microsoft.com/en-us/download/details.aspx?id=48145)|安装|
+    |“不适用”|Windows 7|KB2627273 <br /><br /> 文件名中包含的版本号：v4|卸载|
 
 3. 对于默认安装，将 .msi 与 /quiet/ 一起运行，例如，`AzInfoProtection.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)中记录的其他安装参数。  
 
