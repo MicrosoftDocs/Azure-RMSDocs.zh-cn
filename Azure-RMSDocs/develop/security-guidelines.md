@@ -1,8 +1,8 @@
 ---
 title: "安全最佳实践 | Microsoft 信息保护"
 description: "启用 RMS 的应用程序是使用 Azure 信息保护最佳实践构建的。"
-author: BrucePerlerMS
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 37b91a1b3e0a25f6014198998609d33dcc0979ae
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 04fc73bac667b461a37e87a1c726c5a645495197
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure 信息保护的安全最佳实践
 
@@ -82,7 +82,7 @@ AIP 不支持在运行时修改代码或修改导入地址表 (IAT)。 会为加
 
 AIP 系统将权限编为几组。 有关详细信息，请参阅 [Configuring usage rights for Azure Rights Management](../deploy-use/configure-usage-rights.md)（为 Azure Rights Management 配置使用权限）。
 
-### <a name="azure-information-protection"></a>Azure 信息保护  
+### <a name="azure-information-protection"></a>Azure Information Protection  
 API 允许用户解密或不解密信息；该信息没有任何固有保护。 如果用户有权解密信息，API 则允许此操作，并且在解密完成后，应用程序会负责管理或保护该信息。 应用程序负责管理其环境和接口，以防止未经授权使用信息的行为；例如，如果许可证仅授予“播放”权限，则会禁用“打印”和“复制”按钮。 测试套件应验证应用程序是否根据其所识别的所有许可证权限进行正确地操作。
 
 ### <a name="minimum-standard"></a>最低标准
