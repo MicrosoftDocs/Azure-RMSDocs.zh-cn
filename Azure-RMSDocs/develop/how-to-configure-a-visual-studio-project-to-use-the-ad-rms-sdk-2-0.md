@@ -2,8 +2,8 @@
 title: "配置 Visual Studio | Azure RMS"
 description: "有关如何配置 Visual Studio 项目以使用 RMS SDK 2.1 的说明。"
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -14,17 +14,17 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 4ba694db4debe2b5d92825ec3331200ea3f0f6c9
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: ec030c2bb5f29c5a9df39203e7e9df03f64d6d44
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="configure-visual-studio"></a>配置 Visual Studio
 
 本主题包含有关如何配置 Visual Studio 项目以使用 Rights Management Services SDK 2.1 的说明。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 -   [安装 SDK](install-the-rms-sdk.md)
 

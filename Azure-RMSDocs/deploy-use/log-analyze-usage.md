@@ -4,7 +4,7 @@ description: "有关如何使用 Azure Rights Management (Azure RMS) 的使用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a7a983ed075e41ee6f3328634b451107e579134d
-ms.sourcegitcommit: e089661f23f199b122b0ca9ba4748792b349bc27
+ms.openlocfilehash: cf919749b74727412ab6fa76cc52a5c71b69efcd
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>记录和分析 Azure Rights Management 服务的使用情况
 
@@ -45,7 +45,6 @@ ms.lasthandoff: 12/13/2017
 |日志记录选项|描述|
 |----------------|---------------|
 |管理员日志|Azure Rights Management 服务的日志管理任务。 例如，在停用服务的情况下，启用超级用户功能时，以及向用户委派服务的管理员权限时。 <br /><br />有关详细信息，请参阅 PowerShell cmdlet，[Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog)。|
-|Web 报表|Azure 经典门户中的高级使用情况报表：“RMS 摘要”、“RMS 活动用户”、“RMS 设备平台”和“RMS 应用程序使用情况”。 <br /><br />若要从 Azure 经典门户访问这些报表，请单击“Active Directory”，选择并打开一个目录，然后单击“报表”。|
 |文档跟踪|允许用户跟踪和撤销其使用 Azure 信息保护客户端或 RMS 共享应用跟踪的文档。 全局管理员也可以代表用户跟踪这些文档。 <br /><br />有关详细信息，请参阅[配置和使用 Azure 信息保护的文档跟踪](../rms-client/client-admin-guide-document-tracking.md)。|
 |客户端事件日志|Azure 信息保护客户端的使用活动记录在本地 Windows“应用程序和服务”事件日志和“Azure 信息保护”中。 <br /><br />有关详细信息，请参阅 [Azure 信息保护客户端的使用日志记录](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)。|
 |客户端日志文件|有关 Azure 信息保护客户端的疑难解答日志，位于 %localappdata%\Microsoft\MSIP 中。 <br /><br />这些文件专门设计供 Microsoft 支持部门使用。|
@@ -140,22 +139,22 @@ Azure Rights Management 服务将日志作为一系列 blob 写入。
 
 后面的每行都是日志记录。 这些字段的值与前一行具有相同的顺序，并且以制表符分隔。 请使用下表分析这些字段。
 
-|字段名称|W3C 数据类型|说明|示例值|
+|字段名称|W3C 数据类型|描述|示例值|
 |--------------|-----------------|---------------|-----------------|
 |date|日期|为请求提供服务时的 UTC 日期。<br /><br />源是为请求提供服务的服务器上的本地时钟。|2013-06-25|
 |time|时间|为请求提供服务时的 UTC 时间（24 小时格式）。<br /><br />源是为请求提供服务的服务器上的本地时钟。|21:59:28|
 |row-id|文本|此日志记录的唯一 GUID。 如果不存在值，则使用 correlation-id 值来标识该条目。<br /><br />在你整合日志或将日志复制为其他格式时，这个值是有用的。|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
-|request-type|Name|所请求的 RMS API 的名称。|AcquireLicense|
-|user-id|String|发出请求的用户。<br /><br />该值包括在单引号中。 由你管理的租户密钥 (BYOK) 所发出的调用具有值 **"**，这也适用于请求类型为匿名时的情况。|‘joe@contoso.com’|
+|request-type|名称|所请求的 RMS API 的名称。|AcquireLicense|
+|user-id|字符串|发出请求的用户。<br /><br />该值包括在单引号中。 由你管理的租户密钥 (BYOK) 所发出的调用具有值 **"**，这也适用于请求类型为匿名时的情况。|‘joe@contoso.com’|
 |result|字符串|如果成功地为请求提供服务，则为 ‘Success’。<br /><br />如果为请求提供服务失败，则在单引号中显示错误类型。|'Success'|
 |correlation-id|文本|在 RMS 客户端日志和服务器日志之间通用的针对给定请求的 GUID。<br /><br />此值有助于你解决客户端问题。|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|文本|包括在大括号中的 GUID，标识受保护内容（例如某个文档）。<br /><br />只有当 request-type 为 AcquireLicense 时，此字段才具有值，对于其他所有请求类型，此字段都为空。|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
-|owner-email|String|文档所有者的电子邮件地址。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|alice@contoso.com|
-|issuer|String|文档发布者的电子邮件地址。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com’|
+|owner-email|字符串|文档所有者的电子邮件地址。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|alice@contoso.com|
+|issuer|字符串|文档发布者的电子邮件地址。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com’|
 |template-id|字符串|用于保护文档的模板的 ID。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
 |file-name|字符串|受保护文档的文件名通过使用适用于 Windows 的 Azure 信息保护客户端或适用于 Windows 的 Rights Management 共享应用程序进行跟踪。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|TopSecretDocument.docx|
 |date-published|日期|保护文档时的日期。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。|2015-10-15T21:37:00|
-|c-info|String|有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
+|c-info|字符串|有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Address|发出请求的客户端的 IP 地址。|64.51.202.144|
 |admin-action|Bool|管理员是否已在管理员模式下访问文档跟踪站点。|True|
 |acting-as-user|字符串|管理员正在访问其文档跟踪站点的用户的电子邮件地址。 |'joe@contoso.com'|
@@ -175,7 +174,7 @@ Azure Rights Management 服务将日志作为一系列 blob 写入。
 #### <a name="typical-request-types"></a>典型请求类型
 Azure Rights Management 服务有很多请求类型，但下表列出了其中一些最常用的请求类型。
 
-|请求类型|说明|
+|请求类型|描述|
 |----------------|---------------|
 |AcquireLicense|基于 Windows 的计算机上的客户端为受 RMS 保护的内容请求许可证。|
 |AcquirePreLicense|客户端代表用户为受 RMS 保护的内容请求许可证。|

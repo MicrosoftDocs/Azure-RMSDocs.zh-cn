@@ -2,8 +2,8 @@
 title: "部署应用程序 - AIP"
 description: "本主题提供部署应用程序的概述和分步指导"
 keywords: "部署, RMS, AIP"
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 03/13/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 6d098ee566d426108853d9375b4845a5e92299b5
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 9275bce1e56107648905875c19b2e4e78a05afe6
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="deploy-into-production"></a>部署到生产
 

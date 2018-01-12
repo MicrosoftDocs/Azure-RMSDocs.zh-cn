@@ -2,8 +2,8 @@
 title: "Linux 安装程序"
 description: "多种版本的 Linux 操作系统现可使用 Rights Management SDK 4.x。"
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 7a1ed54937f9977a80f79b0e5b2feb6e932db1c1
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: bd987e1433554ddb55dc06babf4e4b6f5e0d93fe
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="linux-setup"></a>Linux 安装程序
 
@@ -41,7 +41,7 @@ Windows 和 OSX 上也已成功编译了库和示例，但此时它们并未完�
 - [如何构建库和示例应用](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_build_it.md)
 - [如何在用户系统上安装和使用应用](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_use_it.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>另请参阅
 
 - [入门](get-started.md)
 - [新增功能](release-notes.md)

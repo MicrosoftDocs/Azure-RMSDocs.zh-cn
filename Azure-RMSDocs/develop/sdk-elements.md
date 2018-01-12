@@ -2,8 +2,8 @@
 title: "开发环境文件 | Azure RMS"
 description: "本主题展示开发环境文件和它们在计算机上的相对安装位置。"
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 2a3d658e420c7306526aaf85aec61f3e13ef67af
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: f79c0d60bf460c0f8cca68f6b0447303a383c686
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="development-environment-files"></a>开发环境文件
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 06/30/2017
 
 Rights Management Services SDK 2.1 包括安装在计算机上默认位置或你指定的位置处的以下文件：%MsipcSDKDir%。
 
-|文件|路径|说明|
+|文件|路径|描述|
 |----|----|-----------|
 |ReadMe.htm| \ | 包含 RMS 帮助和[发行说明](release-notes-rtm.md)的链接。|
 |Isvtier5appsigningprivkey.dat|\bin|包含一个私钥，用于生成支持 RMS 的应用程序开发期间要使用的清单。|

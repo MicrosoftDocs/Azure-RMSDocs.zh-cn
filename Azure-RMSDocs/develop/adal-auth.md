@@ -2,8 +2,8 @@
 title: "为应用程序配置 ADAL 身份验证 - AIP"
 description: "配置 Azure 信息保护应用以使用基于 Azure ADAL 的身份验证的步骤"
 keywords: "身份验证, RMS, ADAL, 信息保护,"
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 03/13/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 32e85caec907cedfb45ade1156cb90ccdd68f96d
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 4ff8fd5b3c188f73e2210a64ec770b3e5f347142
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>配置应用以进行 ADAL 身份验证
 
