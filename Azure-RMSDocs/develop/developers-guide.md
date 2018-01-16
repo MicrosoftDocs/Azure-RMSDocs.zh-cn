@@ -1,8 +1,8 @@
 ---
 title: "Azure 信息保护开发人员指南"
 description: "开发人员可使用 Azure 信息保护来保护和管理所有类型的文件"
-author: BrucePerlerMS
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 10/11/2017
 ms.topic: article
@@ -11,11 +11,11 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 2aba222457dfb56cca29e1a2948cc08041552d9f
-ms.sourcegitcommit: f3d5a1de317b9bd114d802b3965bf6b679d7ccf2
+ms.openlocfilehash: a32f4d774b67007ccc6638e3151bd6038e3f274c
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 
@@ -98,15 +98,9 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 - [如何使用内置权限（用户）](built-in-rights-usage-restriction-reference.md)
 - [如何启用错误和性能日志记录（用户）](enabling-logging.md)
 
-## <a name="videos"></a>视频
+## <a name="introduction-and-datasheets"></a>简介和数据表
 
 [Azure 信息保护简介](https://www.microsoft.com/cloud-platform/azure-information-protection)
-
-这些视频来源于 Microsoft 2016 Ignite 会议
-
-- [组织内的电子邮件安全](https://myignite.microsoft.com/videos/2787)
-- [采用综合标识驱动解决方案安全地保护和共享数据](https://myignite.microsoft.com/videos/2784)
-- [了解分类、标签和保护如何提供持续的数据保护](https://myignite.microsoft.com/videos/2786)
 
 ## <a name="other-resources"></a>其他资源
 

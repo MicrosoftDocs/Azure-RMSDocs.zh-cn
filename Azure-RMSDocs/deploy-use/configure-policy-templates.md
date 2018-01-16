@@ -4,7 +4,7 @@ description: "通过 Azure 门户配置和管理 Rights Management 模板。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bb6aeea8f939614b9c1903d8e006815228f99723
-ms.sourcegitcommit: f6ba613445463c3c4c64b1620095d54b48194650
+ms.openlocfilehash: f69a163566a9654ee6286c4bf9ca4d018e8f8db5
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
 >适用于：Azure 信息保护
 
 >[!NOTE]
->此功能将替代在 Azure 经典门户中配置自定义模板。 有关快速操作指南映射，请参阅[曾使用 Azure 经典门户执行的任务](migrate-portal.md)。
->
->虽然仍可在 Azure 经典门户中创建和管理模板，但不建议通过 Azure 经典门户和 Azure 门户管理相同的模板。 在这些不同门户中配置模板的实现已更改，因此在不同门户中配置相同模板可能导致配置不可靠。
+>此功能将替代在 Azure 经典门户中配置自定义模板。 经典门户现已停用，因此必须使用 Azure 门户。 有关快速操作指南映射，请参阅[曾使用 Azure 经典门户执行的任务](migrate-portal.md)。
 
 
 Rights Management 模板现已与 Azure 信息保护策略集成。 
@@ -36,11 +34,11 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 **订阅仅包含保护（包括 Azure 权限管理服务的 Office 365 订阅）：**
 
-- 租户的 Rights Management 模板显示在“保护模板”部分中的“Azure 信息保护 - 全局策略”边栏选项卡中。 不显示任何标签。 还可以看到特定于分类和标签的配置设置，但它们要么对模板没有任何影响，要么无法进行配置。 
+- 租户的 Rights Management 模板显示在“保护模板”部分中的“Azure 信息保护 - 全局策略”边栏选项卡中。 不显示任何标签。 还可看到特定于分类和标签的配置设置，但这些设置要么对模板没有任何影响，要么无法进行配置。 
 
 ## <a name="default-templates"></a>默认模板
 
-当你获得 Azure 信息保护订阅或包含 Azure 权限管理服务的 Office 365 订阅时，将为你的租户自动创建两个默认模板，这些模板限制对你组织中授权用户的访问。 创建这两个模板时，它们具有[为 Azure Rights Management 配置使用权限](configure-usage-rights.md#rights-included-in-the-default-templates)文档中列出的权限。
+当你获得 Azure 信息保护订阅或获得包含 Azure Rights Management 服务的 Office 365 订阅时，会为你的租户自动创建两个默认模板。 这些模板限制对你组织中授权用户的访问。 创建这些模板时，它们拥有[为 Azure Rights Management 配置使用权限](configure-usage-rights.md#rights-included-in-the-default-templates)文档中列出的权限。
 
 此外，模板配置为允许为期七天的脱机访问，没有到期日期。
 
@@ -102,6 +100,7 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>在 Azure 信息保护策略中配置模板
 
 1. 如果尚未执行此操作，请打开新的浏览器窗口，并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”边栏选项卡。     
+    
     例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
 
 2. 如果要配置的模板将用于所有用户，请选择“Azure 信息保护 - 全局策略”边栏选项卡。
@@ -127,7 +126,7 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 ## <a name="to-convert-templates-to-labels"></a>将模板转换为标签
 
-如果订阅包含分类、设置标签和保护，可将模板转换为标签。 执行此操作时，将保留原始模板，但在 Azure 门户中，它现在显示为新标签的一部分。
+如果订阅包含分类、设置标签和保护，可将模板转换为标签。 转换模板时，将保留原始模板，但在 Azure 门户中，它现在会显示为新标签的一部分。
 
 例如，如果你要转换一个名为“市场营销”的标签（该标签向市场营销组授予使用权限），那么在 Azure 门户中，它将显示为具有相同保护设置的名为“市场营销”的标签。 可以在模板中更改新创建标签的保护设置，使用此模板的任何用户或服务在下一次模板刷新时都会获取新保护设置。 
 
@@ -149,7 +148,7 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 ## <a name="to-create-a-new-template"></a>创建新模板
 
-创建一个具有 Azure RMS 或 Azure（密钥）保护设置的新标签时，它会在后台创建一个新的自定义模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。
+创建一个具有 Azure RMS 或 Azure（密钥）保护设置的新标签时，此操作会在后台创建一个新的自定义模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。
 
 1. 如果新模板面向所有用户，请选择“Azure 信息保护 - 全局策略”边栏选项卡。
     
