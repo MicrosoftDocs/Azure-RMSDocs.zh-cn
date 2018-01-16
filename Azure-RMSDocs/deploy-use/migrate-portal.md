@@ -4,7 +4,7 @@ description: "概览 Azure 门户中的管理任务，这些任务过去在 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/14/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 2764c1349847ca862147a5cc9f21fbd9c4a83624
-ms.sourcegitcommit: 2a7f20684a041385e2d2425ab886e46917d2da9a
+ms.openlocfilehash: 367189865266e85df967c398b17153d970241e98
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>曾使用 Azure 经典门户执行的任务
 
@@ -24,16 +24,16 @@ ms.lasthandoff: 01/03/2018
 
 习惯了使用 Azure 经典门户管理 Azure Rights Management 服务，并在转移到 Azure 门户时需要一些帮助？ 
 
-> [!NOTE]
-> Azure 经典门户将于 2018 年 1 月 08 日停用。 在此之后，如果尝试使用此门户，则将自动重定向到新的 Azure 门户。 
-> 
-> 有关详细信息，请参阅博客文章公告 [Marching into the future of the Azure AD admin experience: retiring the Azure classic portal](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/)（迈进 Azure AD 管理员体验的未来：告别 Azure 经典门户）。 有关原始停用日期的临时扩展，请参阅 [Update on retirement of Azure AD classic portal experience and migration of conditional access policies](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/)（关于停用 Azure AD 经典门户体验和迁移条件访问策略的更新）。
+Azure 经典门户已于 2018 年 1 月 8 日停用。 此日期之后，用户将不能通过经典门户管理 Azure Rights Management 服务和自定义模板。 如果尝试访问经典门户，则会看到一个链接，可通过此连接转到新的 Azure 门户。 
+
+有关经典门户停用的详细信息，请参阅博客文章公告：[Marching into the future of the Azure AD admin experience: retiring the Azure classic portal](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/)（迈进 Azure AD 管理员体验的未来：告别 Azure 经典门户）。 有关原始停用日期的临时扩展，请参阅 [Update on retirement of Azure AD classic portal experience and migration of conditional access policies](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/)（关于停用 Azure AD 经典门户体验和迁移条件访问策略的更新）。
 
 ## <a name="how-to-do-your-familiar-admin-tasks"></a>如何执行熟悉的管理任务
 
 使用以下信息可帮助你快速过渡到新门户。
 
 但是，订阅 Office 365 美国政府版（政府社区云）的客户目前无法使用 Azure 门户，必须改用 [PowerShell](configure-templates-with-powershell.md) 来管理模板。 
+
 
 |Azure 经典门户|如何在 Azure 门户中执行此任务
 |-----------|--------------------|

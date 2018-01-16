@@ -4,7 +4,7 @@ description: "管理员资源，其中包括有关新版本、支持选项以及
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/29/2017
+ms.date: 01/08/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e1fb9251722656811752f7d47cb52388b5d18dc5
-ms.sourcegitcommit: 42c1e72320197534f720ca78bf25da9f139a17de
+ms.openlocfilehash: 1021d9ddfef8a9fcb256aaf71c7dc575e3befe2e
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -53,9 +53,9 @@ Azure 信息保护产品团队在[企业移动性和安全性博客](https://blo
 
 |订阅|说明|
 |----------------|---------------|
-|Azure 信息保护（独立）|在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”。<br /><br />出现提示时，在“基础信息”边栏选项卡上，针对“问题类型”选择“技术”，然后针对服务选择“信息保护”。 <br /><br />此外，请确保选择了以下任一选项：<br /><br />- **已包括技术支持的订阅**：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - 技术支持 - 已包括：如果具有免费的 Azure 订阅来配置 Azure 经典门户中的 Azure Active Directory 和 Azure 权限管理，或没有 Azure 订阅，则会看到此选项。|
+|Azure 信息保护（独立）|在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”。<br /><br />出现提示时，在“基础信息”边栏选项卡上，针对“问题类型”选择“技术”，然后针对服务选择“信息保护”。 <br /><br />此外，请确保选择了以下任一选项：<br /><br />- **已包括技术支持的订阅**：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - **技术支持 - 已包括**：如果没有 Azure 订阅，你会看到此选项。|
 |Azure 信息保护和 Office 365 订阅<br /><br />Office 365 订阅随附的 Azure 权限管理|请参阅[联系针对业务支持的 Office 365 - 管理员帮助](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)，以获取电话号码以及如何使用 Office 365 管理门户与支持部门联系。|
-|企业移动性 + 安全性 (EMS) 随附的 Azure 信息保护|在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”。<br /><br />出现提示时，在“基础信息”边栏选项卡上，针对“问题类型”选择“技术”，然后针对服务选择“信息保护”。 <br /><br />此外，请确保选择了以下任一选项：<br /><br />- **已包括技术支持的订阅**：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - **技术支持 - 已包括**：如果具有免费的 Azure 订阅来配置 Azure Active Directory 和 Azure 权限管理自定义模板，或没有 Azure 订阅，则会看到此选项。|
+|企业移动性 + 安全性 (EMS) 随附的 Azure 信息保护|在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”。<br /><br />出现提示时，在“基础信息”边栏选项卡上，针对“问题类型”选择“技术”，然后针对服务选择“信息保护”。 <br /><br />此外，请确保选择了以下任一选项：<br /><br />- **已包括技术支持的订阅**：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - **技术支持 - 已包括**：如果没有 Azure 订阅，你会看到此选项。|
 |Microsoft 365 企业版随附的 Azure 信息保护|请使用 [Office 365 支持通道](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。|
 
 有关其他支持选项，请询问你的 Microsoft 联系人。 

@@ -1,23 +1,9 @@
+# <a name="required-metadata"></a>必需元数据
+
+title: 新增功能和发行说明 description: 概述此版本和早期版本中的重要更改和功能。
+author: lleonard-msft ms.author: alleonar manager: mbaldwin ms.date: 2017/09/25 ms.topic: article ms.service: information-protection ms.technology: techgroup-identity ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af audience: developer ms.reviewer: kartikk ms.suite: ems
 ---
-title: "新增功能和发行说明"
-description: "概述此版本和早期版本中的重要更改和功能。"
-author: bruceperlerms
-ms.author: bruceper
-manager: mbaldwin
-ms.date: 09/25/2017
-ms.topic: article
-ms.service: information-protection
-ms.technology: techgroup-identity
-ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
-audience: developer
-ms.reviewer: kartikk
-ms.suite: ems
-ms.openlocfilehash: 6587685e3bd40d696ce24a9aa0ed80d1f6f43f55
-ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
----
+
 # <a name="whats-new-and-release-notes"></a>新增功能和发行说明
 
 ## <a name="whats-new"></a>新增功能
@@ -150,7 +136,7 @@ ms.lasthandoff: 10/17/2017
 
 -   RMS SDK 4.x API 并非*线程安全*。
 
-**Android**
+**Outlook Web Access (OWA)**
 
 -   当你在 Amazon® Kindle 设备上使用示例应用程序以查看 .ptxt 附件时，必须首先下载文件，然后才能查看。
 
@@ -215,7 +201,7 @@ ms.lasthandoff: 10/17/2017
 
 **A**：不是，从 3.0 版本开始的 Rights Management SDK 中不再需要清单。
 
-**Android**
+**Outlook Web Access (OWA)**
 
 **Q**：已使用哪些开发环境对 SDK 进行了测试？
 

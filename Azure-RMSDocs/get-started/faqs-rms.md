@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护中数据保护服务 Azure Rights Manage
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/03/2018
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b23fe95721c442529237ea72d30b3df490ad02dc
-ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
+ms.openlocfilehash: d2f88d35550b47a4f73e87eeca9ecd6309a3c73e
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -70,7 +70,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 需要注意的事项：
 
-- 只有 Office 365 的全局管理员和 Azure AD 的全局管理员才能使用 Office 365 管理中心或 Azure 经典门户来配置 Azure RMS。 如果将 Azure 门户用于 Azure 信息保护，也可以安全管理员身份登录。
+- 只有 Office 365 的全局管理员和 Azure AD 的全局管理员才能使用 Office 365 管理中心来配置 Azure RMS。 如果使用 Azure 门户进行 Azure 信息保护，可凭全局管理员或安全管理员身份登录。
 
 - 分配有 Azure RMS 全局管理员角色的用户必须使用 Azure RMS PowerShell 命令来配置 Azure RMS。 请参阅[使用 Windows PowerShell 管理 Azure Rights Management](../deploy-use/administer-powershell.md)，以帮助查找特定任务的正确 cmdlet。
 
