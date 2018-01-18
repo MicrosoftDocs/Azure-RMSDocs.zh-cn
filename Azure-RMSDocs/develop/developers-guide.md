@@ -65,7 +65,7 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 [![iOS/OSX 安装程序](../media/develop/ios-icon.png)](ios-sdk.md)
 [![Android 安装程序](../media/develop/android-icon.png)](android-sdk.md)
 [![Windows Phone 安装程序](../media/develop/windows-phone-icon.png)](windows-phone-apps.md)
-[Windows 服务安装程序![](../media/develop/windows-icon.png)](install-the-rms-sdk.md)
+[![Windows 服务安装程序](../media/develop/windows-icon.png)](install-the-rms-sdk.md)
 [![Linux 安装程序](../media/develop/linux-icon.png)](linux-setup.md)
 
 
