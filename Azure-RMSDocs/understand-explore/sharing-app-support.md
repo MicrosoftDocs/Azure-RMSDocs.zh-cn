@@ -4,7 +4,7 @@ description: "RMS 共享应用程序如何作为支持 Office 2010 所必需的�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 16/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3c96d8718f42dcedebba03354c149bb2b9667d66
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: b7c2b05d9bf360b08ea6a35efd959559132df864
+ms.sourcegitcommit: 3a2177df7a23d65f93d3ce2eea3fc3e042ea901c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Windows 和移动平台的 RMS 共享应用程序
 
 >*适用于：Azure 信息保护、Office 365*
 
 > [!IMPORTANT]
-> **终止支持通知**：[Azure 信息保护客户端](../rms-client/aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2018 年 1 月 31 日将停止对此旧应用程序的支持。 
+> **终止支持通知**：[Azure 信息保护客户端](../rms-client/aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 
  
 RMS 共享应用程序是支持适用于 Windows 计算机的 Office 2010 的可下载应用程序，通常建议将其用于所有 Windows 计算机和移动设备。 同时建议将其用于 Mac 计算机和 Windows Phone 设备。 它的一大优点是能够为无法以本机方式支持 Azure Rights Management 服务的应用程序和文件提供通用保护，这意味着所有文件都能得到保护。 有关不同保护级别的详细信息，请参阅 [Rights Management 共享应用程序管理员指南](../rms-client/sharing-app-admin-guide.md)中的[保护级别 – 本机和常规](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic)部分。
 
