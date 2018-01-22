@@ -2,20 +2,20 @@
 title: "如何在 Azure 信息保护中续订对称密钥"
 description: "本文介绍了在 Azure 信息保护中续订对称密钥的过程。"
 keywords: 
-author: kkanakas
+author: lleonard-msft
 manager: mbaldwin
-ms.author: kartikk
+ms.author: alleonar
 ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0b8c8f0-6ed5-48bb-8155-ac4f319ec178
-ms.openlocfilehash: 6153067c308206cb93ad99de1075913c68d1fa3b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 159e5b58883490e4417ecbdb9815340c9ccaa66d
+ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="how-to-renew-the-symmetric-key-in-azure-information-protection"></a>如何：在 Azure 信息保护中续订对称密钥
 
@@ -23,9 +23,9 @@ ms.lasthandoff: 06/30/2017
 
 在 Azure Active Directory (Azure AD) 中，创建一个服务主体对象来代表一个应用程序时，该过程还会生成一个用于验证该应用程序的 256 位对称密钥。 此对称密钥的默认有效期为一年。 
 
-以下步骤概述了如何续订对称密钥。 
+下面逐步介绍了如何续订对称密钥。 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 * 必须按照 [Azure AD Powershell 参考](https://docs.microsoft.com/powershell/msonline/)中的指示安装 Azure Active Directory (Azure AD) PowerShell 模块。
 
@@ -60,7 +60,7 @@ EndDate : 3/22/2018 3:27:53 PM
 Usage : Verify
 ```
 
-在上面的示例中创建的对称密钥过期日期为 2018/3/22 下午 3:27:53。 此时间之后，必须续订该对称密钥才能继续使用服务主体。 可以使用 [`New-MsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/new-msolserviceprincipalcredential) 命令来实现此目的。 
+此对称密钥的到期时间为 2018 年 3 月 22 日下午 3:27:53。 若要在此时间之后使用服务主体，需要续订对称密钥。 为此，请运行 [`New-MsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/new-msolserviceprincipalcredential) 命令。 
 
 ```
 New-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963
@@ -71,10 +71,10 @@ New-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427
 ```
 The following symmetric key was created as one was not supplied ON8YYaMYNmwSfMX625Ei4eC6N1zaeCxbc219W090v28-
 ```
-如下所示，可以使用 [`GetMsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/get-msolserviceprincipalcredential) 命令验证新对称密钥是否与正确的服务主体相关联。 请注意，该命令将列出当前与服务主体关联的所有密钥。
+如下所示，可以使用 [`GetMsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/get-msolserviceprincipalcredential) 命令验证新对称密钥是否与正确的服务主体相关联。 请注意，此命令会列出当前与服务主体关联的所有密钥。
 
 ```
-Get-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963 -ReturnKeyValues true
+Get-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963 -ReturnKeyValues $true
 
 Type : Symmetric
 Value :
@@ -101,5 +101,5 @@ Remove-MsolServicePrincipalCredential -KeyId acb9ad1b-36ce-4a7d-956c-40e5ac29dcb
 
 ## <a name="related-topics"></a>相关主题
 
-* [操作说明：使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)
+* [如何：让服务应用可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)
 * [Azure Active Directory MSOnline Powershell 参考](https://docs.microsoft.com/powershell/msonline/)

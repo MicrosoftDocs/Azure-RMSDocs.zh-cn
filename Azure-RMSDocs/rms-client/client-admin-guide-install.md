@@ -4,7 +4,7 @@ description: "面向管理员的说明和信息，介绍如何在企业网络中
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/04/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d4ad7c3419d3ad83389baece95c1e30c32f06da6
-ms.sourcegitcommit: 7b90b3692bbef6fafab41c0f8c56bd4350985f37
+ms.openlocfilehash: 3ff9a63f5b8565cac131e7b69a674fc8be902d0f
+ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 01/05/2018
 
 - 对于 Office 版本 16.0.8628.2010 和更高版本（即点即用）：请启用原有的监视器支持
     
-    若要防止 Azure 信息保护栏在这些 Office 版本以外的 Office 应用程序中显示，请启用原有的监视器支持。 若要配置 Office 应用程序：“文件” > “常规” > “用户界面”选项：
+    若要防止 Azure 信息保护栏在这些 Office 版本以外的 Office 应用程序中显示，请启用原有的监视器支持。 若要配置 Office 应用，请依次使用“文件” > “选项” > “常规” > “用户界面选项”：
     
     - 如果发现“使用多种显示时”选项设置为“优化以获得最佳外观”，改为选择“优化以提高兼容性（需要重启应用程序）”。 
         
@@ -191,7 +191,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     
     |Office 版本|操作系统|软件|操作|
     |--------------------|--------------|----------------|---------------------|
-    |Office 2016|所有支持的版本|64 位：[KB317866](https://www.microsoft.com/en-us/download/details.aspx?id=55073)<br /><br />32 位：[KB317866](https://www.microsoft.com/en-us/download/details.aspx?id=55058)<br /><br /> 版本：1.0|安装|
+    |Office 2016|所有支持的版本|64 位：[KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=55007)<br /><br />32 位：[KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=54999)<br /><br /> 版本：1.0|安装|
     |Office 2013|所有支持的版本|64 位：[KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54992)<br /><br /> 32 位：[KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54979) <br /><br />版本：1.0|安装|
     |Office 2010|所有支持的版本|[Microsoft Online Services 登录助手](https://www.microsoft.com/en-us/download/details.aspx?id=28177)<br /><br /> 版本：2.1|安装|
     |Office 2010|Windows 8.1 和 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB2843630 或 KB2919355，则进行安装|
