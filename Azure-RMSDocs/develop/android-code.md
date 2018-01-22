@@ -14,35 +14,38 @@ ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 95c7fd5f23efec8203f6e7c5a91f0c786defd3c7
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: f23f8d1d4deddb1a0ee70a755cf94637396337c0
+ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="android-code-examples"></a>Android 代码示例
 
-本主题向你介绍 Android 版本的 RMS SDK 的重要代码元素。
+本文介绍了如何为 Android 版 RMS SDK 编码元素。
 
-**注意** 在示例代码以及随后的说明中，我们使用术语 MSIPC (Microsoft Information Protection and Control) 来引用客户端进程。
+**注意：**在本文中，MSIPC (Microsoft Information Protection and Control) 一词是指客户端流程。
 
 
 ## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>使用 Microsoft Rights Management SDK 4.2 - 重要方案
 
-以下是摘取自一个较大示例应用程序的代码示例，表示对你学习此 SDK 十分重要的开发方案。 这些示例演示 Microsoft 受保护的文件格式（称为受保护的文件）的使用、自定义受保护的文件格式的使用以及自定义 UI 控件的使用。
+这些代码示例摘自较大的示例应用，即对熟悉此 SDK 十分重要的开发方案。 它们展示了如何使用以下对象：
 
+- Microsoft 受保护的文件格式（亦称为“受保护的文件”。
+- 自定义受保护的文件格式
+- 自定义用户界面 (UI) 控件
 
-
-示例应用程序 *MSIPCSampleApp* 可针对 Android 操作系统用于此 SDK。 请参阅 GitHub 上的 [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android) 以便可以访问此示例应用程序。
+MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合使用。 若要了解详细信息，请参阅 [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android)。
 
 ### <a name="scenario-consume-an-rms-protected-file"></a>方案：使用受 RMS 保护的文件
 
--   **步骤 1**：创建 [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx)
+- **第 1 步**：创建 [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx)。
 
     **源**：*MsipcAuthenticationCallback.java*
 
-    **说明**：通过 create 方法实例化 [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx) 对象，该方法使用 [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758250.aspx) 实现服务身份验证，以便通过将 **AuthenticationRequestCallback** 的实例作为参数 *mRmsAuthCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码节结尾附近的 [ProtectedFileInputStream.create](https://msdn.microsoft.com/library/dn790851.aspx) 调用。
+    **说明**：实例化 [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx) 对象，并实现服务身份验证。  使用 [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758250.aspx) 获取令牌，具体是通过将 AuthenticationRequestCallback 实例作为参数 mRmsAuthCallback 传递到 MSIPC API。 请参阅以下示例代码节结尾附近的 [ProtectedFileInputStream.create](https://msdn.microsoft.com/library/dn790851.aspx) 调用。
 
+    ``` java
         public void startContentConsumptionFromPtxtFileFormat(InputStream inputStream)
         {
             CreationCallback<ProtectedFileInputStream> protectedFileInputStreamCreationCallback =
@@ -100,15 +103,16 @@ ms.lasthandoff: 01/11/2018
                 …
             }
         }
+    ```
 
-
--   **步骤 2**：使用 Active Directory 身份验证库 (ADAL) 设置身份验证。
+- **第 2 步**：使用 Active Directory Authentication Library (ADAL) 设置身份验证。
 
     **源**：*MsipcAuthenticationCallback.java*。
 
-    **说明**：此步骤中会介绍用于通过示例身份验证参数来实现 [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) 的 ADAL。 有关使用 ADAL 的详细信息，请参阅 [Azure AD 身份验证库 (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。
+    **说明**：在这一步中，需要使用 ADAL 实现包含示例身份验证参数的 [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx)。 若要了解详细信息，请参阅 [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。
 
 
+    ``` java
         class MsipcAuthenticationCallback implements AuthenticationRequestCallback
         {
 
@@ -180,13 +184,13 @@ ms.lasthandoff: 01/11/2018
 
                             );
                       }
+    ```
 
-
--   **步骤 3**：通过 [UserPolicy.accessCheck](https://msdn.microsoft.comlibrary/dn790885.aspx) 方法检查此用户对于该内容是否具有 **Edit** 权限。
+- **步骤 3**：通过 [UserPolicy.accessCheck](https://msdn.microsoft.comlibrary/dn790885.aspx) 方法检查此用户对于该内容是否具有 **Edit** 权限。
 
     **源**：*TextEditorFragment.java*
 
-
+    ``` java
          //check if user has edit rights and apply enforcements
                 if (!mUserPolicy.accessCheck(EditableDocumentRights.Edit))
                 {
@@ -195,19 +199,24 @@ ms.lasthandoff: 01/11/2018
                     mTextEditor.setEnabled(false);
                     …
                 }
+    ```
 
 
 ### <a name="scenario-create-a-new-protected-file-using-a-template"></a>方案：使用模板创建新的受保护文件
 
 此方案首先获取模板列表，选择第一个模板以创建策略，然后创建并写入新的受保护的文件。
 
--   **步骤 1**：通过 [TemplateDescriptor](https://msdn.microsoft.com/library/dn790871.aspx) 对象获取模板列表。
+- **步骤 1**：通过 [TemplateDescriptor](https://msdn.microsoft.com/library/dn790871.aspx) 对象获取模板列表。
 
     **源**：*MsipcTaskFragment.java*
 
-
-
-    CreationCallback<List<TemplateDescriptor>> getTemplatesCreationCallback = new CreationCallback<List<TemplateDescriptor>>() { @Override public Context getContext() { …
+    ``` java
+    CreationCallback<List<TemplateDescriptor>> getTemplatesCreationCallback = new CreationCallback<List<TemplateDescriptor>>()
+      {
+          @Override
+          public Context getContext()
+          {
+              …
           }
 
           @Override
@@ -227,18 +236,29 @@ ms.lasthandoff: 01/11/2018
           {
              …
           }
-      }; try { …
-          mIAsyncControl = TemplateDescriptor.getTemplates(emailId, mRmsAuthCallback, getTemplatesCreationCallback); } catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e) { …
+      };
+      try
+      {
+              …
+          mIAsyncControl = TemplateDescriptor.getTemplates(emailId, mRmsAuthCallback, getTemplatesCreationCallback);
       }
+      catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e)
+      {
+              …
+      }
+    ```
 
-
--    **步骤 2**：使用列表中的第一个模板创建 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
+- **步骤 2**：使用列表中的第一个模板创建 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
 
     **源**：*MsipcTaskFragment.java*
 
-
-
-      CreationCallback<UserPolicy> userPolicyCreationCallback = new CreationCallback<UserPolicy>() { @Override public Context getContext() { …
+    ``` java
+      CreationCallback<UserPolicy> userPolicyCreationCallback = new CreationCallback<UserPolicy>()
+      {
+          @Override
+          public Context getContext()
+          {
+              …
           }
 
           @Override
@@ -258,19 +278,34 @@ ms.lasthandoff: 01/11/2018
           {
               …
           }
-      }; try { …
-          mIAsyncControl = UserPolicy.create((TemplateDescriptor)selectedDescriptor, mEmailId, mRmsAuthCallback, UserPolicyCreationFlags.NONE, userPolicyCreationCallback); …
-      } catch (InvalidParameterException e) { …
+      };
+      try
+      {
+           …
+          mIAsyncControl = UserPolicy.create((TemplateDescriptor)selectedDescriptor, mEmailId, mRmsAuthCallback,
+                            UserPolicyCreationFlags.NONE, userPolicyCreationCallback);
+           …
       }
+      catch (InvalidParameterException e)
+      {
+              …
+      }
+    ```
 
-
--    **步骤 3**：创建 [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx) 并向其中写入内容。
+-  **步骤 3**：创建 [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx) 并向其中写入内容。
 
     **源**：*MsipcTaskFragment.java*
 
-
-    private void createPTxt(final byte[] contentToProtect) { …
-            CreationCallback<ProtectedFileOutputStream> protectedFileOutputStreamCreationCallback = new CreationCallback<ProtectedFileOutputStream>() { @Override public Context getContext() { …
+    ``` java
+    private void createPTxt(final byte[] contentToProtect)
+        {
+             …
+            CreationCallback<ProtectedFileOutputStream> protectedFileOutputStreamCreationCallback = new CreationCallback<ProtectedFileOutputStream>()
+            {
+                @Override
+                public Context getContext()
+                {
+                 …
                 }
 
                 @Override
@@ -318,17 +353,22 @@ ms.lasthandoff: 01/11/2018
                  …
             }
         }
-
+    ```
 
 
 ### <a name="scenario-open-a-custom-protected-file"></a>方案：打开自定义受保护的文件
 
--   **步骤 1**：从 *serializedContentPolicy* 创建 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
+- **步骤 1**：从 *serializedContentPolicy* 创建 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
 
     **源**：*MsipcTaskFragment.java*
 
-
-    CreationCallback<UserPolicy> userPolicyCreationCallbackFromSerializedContentPolicy = new CreationCallback<UserPolicy>() { @Override public void onSuccess(UserPolicy userPolicy) { …
+    ``` java
+    CreationCallback<UserPolicy> userPolicyCreationCallbackFromSerializedContentPolicy = new CreationCallback<UserPolicy>()
+            {
+                @Override
+                public void onSuccess(UserPolicy userPolicy)
+                {
+                  …
                 }
 
                 @Override
@@ -351,27 +391,44 @@ ms.lasthandoff: 01/11/2018
             };
 
 
-    try {   ...
+    try
+    {
+      ...
 
       // Read the serializedContentPolicyLength from the inputStream.
       long serializedContentPolicyLength = readUnsignedInt(inputStream);
 
       // Read the PL bytes from the input stream using the PL size.
-      byte[] serializedContentPolicy = new byte[(int)serializedContentPolicyLength]; inputStream.read(serializedContentPolicy);
+      byte[] serializedContentPolicy = new byte[(int)serializedContentPolicyLength];
+      inputStream.read(serializedContentPolicy);
 
       ...
 
-      UserPolicy.acquire(serializedContentPolicy, null, mRmsAuthCallback, PolicyAcquisitionFlags.NONE,           userPolicyCreationCallbackFromSerializedContentPolicy); } catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e) {   ... } catch (IOException e) {   ... }
+      UserPolicy.acquire(serializedContentPolicy, null, mRmsAuthCallback, PolicyAcquisitionFlags.NONE,
+              userPolicyCreationCallbackFromSerializedContentPolicy);
+    }
+    catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e)
+    {
+      ...
+    }
+    catch (IOException e)
+    {
+      ...
+    }
+    ```
 
 
-
--    **步骤 2**：使用 **步骤 1** 中的 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) 创建 [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx)。
+- **步骤 2**：使用 **步骤 1** 中的 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) 创建 [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx)。
 
     **源**：*MsipcTaskFragment.java*
 
-
-
-      CreationCallback<CustomProtectedInputStream> customProtectedInputStreamCreationCallback = new CreationCallback<CustomProtectedInputStream>() { @Override public Context getContext() { …
+    ``` java
+      CreationCallback<CustomProtectedInputStream> customProtectedInputStreamCreationCallback = new CreationCallback<CustomProtectedInputStream>()
+      {
+         @Override
+         public Context getContext()
+         {
+             …
          }
 
          @Override
@@ -409,64 +466,110 @@ ms.lasthandoff: 01/11/2018
          }
      };
 
-    try {  ...
+    try
+    {
+      ...
 
       // Retrieve the encrypted content size.
       long encryptedContentLength = readUnsignedInt(inputStream);
 
       updateTaskStatus(new TaskStatus(TaskState.Starting, "Consuming content", true));
 
-      CustomProtectedInputStream.create(userPolicy, inputStream,                                 encryptedContentLength,                                 customProtectedInputStreamCreationCallback); } catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e) {  ... } catch (IOException e) {  ... }
+      CustomProtectedInputStream.create(userPolicy, inputStream,
+                                     encryptedContentLength,
+                                     customProtectedInputStreamCreationCallback);
+    }
+    catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e)
+    {
+      ...
+    }
+    catch (IOException e)
+    {
+      ...
+    }
+    ```
 
-
--    **步骤 3**：将内容从 [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx) 读取到 *mDecryptedContent* 中，然后关闭。
+- **步骤 3**：将内容从 [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx) 读取到 *mDecryptedContent* 中，然后关闭。
 
     **源**：*MsipcTaskFragment.java*
 
-
-    @Override public void onSuccess(CustomProtectedInputStream customProtectedInputStream) {  mUserPolicy = customProtectedInputStream.getUserPolicy();  ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+    ``` java
+    @Override
+    public void onSuccess(CustomProtectedInputStream customProtectedInputStream)
+    {
+      mUserPolicy = customProtectedInputStream.getUserPolicy();
+      ByteArrayOutputStream buffer = new ByteArrayOutputStream();
 
       int nRead;                      
       byte[] dataChunk = new byte[16384];
 
-      try  {    while ((nRead = customProtectedInputStream.read(dataChunk, 0,                                                        dataChunk.length)) != -1)    {       buffer.write(dataChunk, 0, nRead);    }
+      try
+      {
+        while ((nRead = customProtectedInputStream.read(dataChunk, 0,
+                                                            dataChunk.length)) != -1)
+        {
+           buffer.write(dataChunk, 0, nRead);
+        }
 
-        buffer.flush();    mDecryptedContent = new String(buffer.toByteArray(), Charset.forName("UTF-8"));
+        buffer.flush();
+        mDecryptedContent = new String(buffer.toByteArray(), Charset.forName("UTF-8"));
 
-        buffer.close();    customProtectedInputStream.close();  }  catch (IOException e)  {    ...  } }
+        buffer.close();
+        customProtectedInputStream.close();
+      }
+      catch (IOException e)
+      {
+        ...
+      }
+    }
+    ```
 
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-policy"></a>方案：使用自定义策略创建自定义受保护的文件
 
-### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>方案：使用自定义（临时）策略创建自定义受保护的文件
-
--   **步骤 1**：在用户提供了电子邮件地址的情况下，创建策略描述符。
-
-    **源**：*MsipcTaskFragment.java*
-
-    **说明**：实际上，会使用来自设备接口的用户输入创建以下对象；[UserRights](https://msdn.microsoft.com/library/dn790911.aspx) 和 [PolicyDescriptor](https://msdn.microsoft.com/library/dn790843.aspx)。
-
-
-
-      // create userRights list   UserRights userRights = new UserRights(Arrays.asList("consumer@domain.com"),     Arrays.asList( CommonRights.View, EditableDocumentRights.Print));   ArrayList<UserRights> usersRigthsList = new ArrayList<UserRights>();   usersRigthsList.add(userRights);
-
-      // Create PolicyDescriptor using userRights list   PolicyDescriptor policyDescriptor = PolicyDescriptor.createPolicyDescriptorFromUserRights(                                                          usersRigthsList);   policyDescriptor.setOfflineCacheLifetimeInDays(10);   policyDescriptor.setContentValidUntil(new Date());
-
-
-
--    **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
-
-    **源**：*MsipcTaskFragment.java*
-
-
-       mIAsyncControl = UserPolicy.create((PolicyDescriptor)selectedDescriptor,                                          mEmailId, mRmsAuthCallback,                                          UserPolicyCreationFlags.NONE,                                          userPolicyCreationCallback);
-
-
-
--   **步骤 3**：创建内容并写入 [CustomProtectedOutputStream](https://msdn.microsoft.com/library/dn758274.aspx)，然后关闭。
+- **步骤 1**：在用户提供了电子邮件地址的情况下，创建策略描述符。
 
     **源**：*MsipcTaskFragment.java*
 
+    **说明**：实际上，将使用用户在设备界面中输入的内容创建以下对象；[UserRights](https://msdn.microsoft.com/library/dn790911.aspx) 和 [PolicyDescriptor](https://msdn.microsoft.com/library/dn790843.aspx)。
 
-    File file = new File(filePath); final OutputStream outputStream = new FileOutputStream(file); CreationCallback<CustomProtectedOutputStream> customProtectedOutputStreamCreationCallback = new CreationCallback<CustomProtectedOutputStream>() { @Override public Context getContext() { …
+    ``` java
+      // create userRights list
+      UserRights userRights = new UserRights(Arrays.asList("consumer@domain.com"),
+        Arrays.asList( CommonRights.View, EditableDocumentRights.Print));
+      ArrayList<UserRights> usersRigthsList = new ArrayList<UserRights>();
+      usersRigthsList.add(userRights);
+
+      // Create PolicyDescriptor using userRights list
+      PolicyDescriptor policyDescriptor = PolicyDescriptor.createPolicyDescriptorFromUserRights(
+                                                             usersRigthsList);
+      policyDescriptor.setOfflineCacheLifetimeInDays(10);
+      policyDescriptor.setContentValidUntil(new Date());
+    ```
+
+
+- **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
+
+    **源**：*MsipcTaskFragment.java*
+
+    ``` java
+       mIAsyncControl = UserPolicy.create((PolicyDescriptor)selectedDescriptor,
+         mEmailId, mRmsAuthCallback, UserPolicyCreationFlags.NONE, userPolicyCreationCallback);
+    ```
+
+
+- **步骤 3**：创建内容并写入 [CustomProtectedOutputStream](https://msdn.microsoft.com/library/dn758274.aspx)，然后关闭。
+
+    **源**：*MsipcTaskFragment.java*
+
+    ``` java
+    File file = new File(filePath);
+        final OutputStream outputStream = new FileOutputStream(file);
+        CreationCallback<CustomProtectedOutputStream> customProtectedOutputStreamCreationCallback = new CreationCallback<CustomProtectedOutputStream>()
+        {
+            @Override
+            public Context getContext()
+            {
+              …
             }
 
             @Override
@@ -522,5 +625,6 @@ ms.lasthandoff: 01/11/2018
         {
           …
         }
+    ```
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
