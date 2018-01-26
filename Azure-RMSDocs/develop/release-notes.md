@@ -26,7 +26,7 @@ author: lleonard-msft ms.author: alleonar manager: mbaldwin ms.date: 2017/09/25 
 
 7 月发行的更新包括 SDK 的递增修订，现在为 4.2.5。
 
-- Android SDK：应用现可通过 Android SDK 实时设置日志记录级别。 有关详细信息，请参阅[如何：启用错误和性能日志记录](https://docs.microsoft.com/en-us/information-protection/develop/enabling-logging)
+- Android SDK：应用现可通过 Android SDK 实时设置日志记录级别。 有关详细信息，请参阅[如何：启用错误和性能日志记录](https://docs.microsoft.com/information-protection/develop/enabling-logging)
 - iOS SDK 不支持日志记录级别。 
 - 此 SDK 现在会返回 NULL 访问令牌的错误。
 
