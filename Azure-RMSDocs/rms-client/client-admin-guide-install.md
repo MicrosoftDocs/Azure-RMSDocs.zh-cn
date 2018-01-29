@@ -4,7 +4,7 @@ description: "面向管理员的说明和信息，介绍如何在企业网络中
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/18/2018
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3ff9a63f5b8565cac131e7b69a674fc8be902d0f
-ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
+ms.openlocfilehash: 0af9b6847c920d486d727cb6748b84aa581012d1
+ms.sourcegitcommit: d3b82dd8dbafb86ddbe698cdcd0edee445fff416
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -74,11 +74,15 @@ ms.lasthandoff: 01/19/2018
 
 - 对于 Office 版本 16.0.8628.2010 和更高版本（即点即用）：请启用原有的监视器支持
     
-    若要防止 Azure 信息保护栏在这些 Office 版本以外的 Office 应用程序中显示，请启用原有的监视器支持。 若要配置 Office 应用，请依次使用“文件” > “选项” > “常规” > “用户界面选项”：
+    若要防止 Azure 信息保护栏在这些 Office 版本以外的 Office 应用程序中显示，可能需要启用原有的监视器支持。 如果此方案中信息保护栏的显示不正确，可能会显示为“AdxTaskPane”。 
+    
+    若要为此要求配置 Office 应用，请依次使用“文件” > “选项” > “常规” > “用户界面选项”：
     
     - 如果发现“使用多种显示时”选项设置为“优化以获得最佳外观”，改为选择“优化以提高兼容性（需要重启应用程序）”。 
         
     - 如果看到已选中“对显示使用最佳设置”选项，请删除此选择。
+    
+    - 如果看不到这些选项，则表示无需任何其他配置。
 
 > [!IMPORTANT]
 > 安装 Azure 信息保护客户端需要本地管理权限。
