@@ -4,7 +4,7 @@ description: "确定为组织部署 Azure 信息保护的必备条件。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/18/2018
+ms.date: 01/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 21faf358d5e0aa137e615dab9b411ecdcd5a7a73
-ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
+ms.openlocfilehash: 9496696791c343b01f5c311cb140333bcbbe7b2c
+ms.sourcegitcommit: eeeb1123349ab5e7eb2d352509670af6217123de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -85,6 +85,8 @@ Azure 信息保护客户端可使用以下 Office 版本中的 Word、Excel、Po
 
 Office 的其他版本无法通过使用 Rights Management 服务保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护分类。 应用保护的标签不会显示在 Azure 信息保护栏上。 
 
+Azure 信息保护客户端不支持同一台计算机上的多个 Office 版本。 此客户端也不支持在 Office 中的不同用户帐户之间切换。
+
 有关支持数据保护服务的 Office 版本的信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。
 
 ## <a name="firewalls-and-network-infrastructure"></a>防火墙和网络基础结构
@@ -103,7 +105,7 @@ Office 的其他版本无法通过使用 Rights Management 服务保护文档和
     
     - 提示：鉴于 Chrome 在地址栏中显示安全连接的方式，可以使用此浏览器在访问 Azure Rights Management 服务前，快速检查客户端连接是否已终止。 请在此浏览器地址栏中输入以下 URL：`https://admin.na.aadrm.com/admin/admin.svc` 
     
-        不必担心浏览器窗口显示什么内容。 相反，单击地址栏中的挂锁，即可查看网站信息。 在网站信息中，可以查看证书发证机构 (CA)。 如果证书不是由 Microsoft CA 颁发，表明客户端与服务的连接很可能即将终止，并需要重新配置防火墙。 下图中的示例展示了 Microsoft 证书发证机构 (CA)。 如果看到的是内部 CA 颁发的证书，表明此配置与 Azure 信息保护不兼容。
+        不必担心浏览器窗口显示什么内容。 相反，单击地址栏中的挂锁，即可查看网站信息。 在网站信息中，可以查看证书发证机构 (CA)。 如果证书不是由 Microsoft CA 颁发，表明客户端与服务的安全连接很可能即将终止，并需要重新配置防火墙。 下图中的示例展示了 Microsoft 证书发证机构 (CA)。 如果看到的是内部 CA 颁发的证书，表明此配置与 Azure 信息保护不兼容。
         
         ![检查为 Azure 信息保护连接颁发的证书](../media/certificate-checking.png)
 

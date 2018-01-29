@@ -4,17 +4,17 @@ description: "Azure 信息保护服务概述。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/08/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 18ec6241d09eb8de2417dd939237de0544a401e8
-ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
+ms.openlocfilehash: 0eeb9a6cf8eb819c19a32dbcf76e4d0104c18b99
+ms.sourcegitcommit: ae4cdee7211796182c47a11c1853232464673834
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -73,7 +73,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 如果用户在文件资源管理器中选择“分类和保护”菜单选项，那么他们可以选择一个标签，操作方式类似于他们在 Office 桌面应用程序中使用信息保护栏。 如果需要，他们还可以设置自己的自定义权限。
 
-高级用户（和管理员）可能会发现，针对管理和设置多个文件的分类和保护，使用 PowerShell 命令更有效。 虽然你也可以单独安装 PowerShell 模块，但完成此操作的 PowerShell 命令将自动包含在此客户端中。
+高级用户（和管理员）可能会发现，针对管理和设置多个文件的分类和保护，使用 PowerShell 命令更有效。 虽然也可以单独安装 PowerShell 模块，但完成这些操作的 PowerShell 命令会自动包含在此客户端中。
 
 文档受到保护后，用户和管理员可以使用文档跟踪站点监视访问这些文档的人员和时间。 如果他们怀疑存在误用，还可以撤销对这些文档的访问权限：
 
@@ -93,7 +93,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 对于发送电子邮件的用户，他们的工作流与将受保护电子邮件发送到其组织内的用户相同。 例如，他们可以选择“不要转发”按钮，Azure 信息保护客户端可以将该按钮添加到 Outlook 功能区。 或者，此“不要转发”功能可以集成到用户选择的标签，使电子邮件分类并受到保护：
 
-![选择配置为“不要转发”的标签](../media/recipients-only-label.png)
+![选择配置为“不转发”的标签](../media/recipients-only-label.png)
 
 或者，可以通过使用应用权限保护的邮件流规则，为用户自动提供保护。 
 
@@ -131,8 +131,8 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 阅读博客文章 [Azure Information Protection: Ready, set, protect!](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/)（Azure 信息保护：准备、设置、保护！）
 
-通过我们的 5 步骤 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)，可为你自己配置和使用 Azure 信息保护。
+可通过观看我们的 5 步骤[快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)，配置和使用 Azure 信息保护。 或如果已准备好为组织部署此服务，请参阅 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)。
 
-或许你是通过其他名称了解的 Azure 信息保护或 Azure 权限管理。 请参阅[该服务的替代术语列表](azure-rms-aka.md)。
+或许你是通过其他名称了解的 Azure 信息保护？ 请参阅[该服务的替代术语列表](azure-rms-aka.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

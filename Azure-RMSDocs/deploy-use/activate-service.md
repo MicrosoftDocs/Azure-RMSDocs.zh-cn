@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 75c0bf83c84cb8b5d2116b05dbf2def790562b4e
-ms.sourcegitcommit: fd3932ab19a00229b56efc3e301abaf9cff3f70b
+ms.openlocfilehash: e8fede85cddc44318ce93497a9ac454c689673d3
+ms.sourcegitcommit: c3d57b175a4e7b5e136f7183c837fa08e7ac982e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="activating-azure-rights-management"></a>激活 Azure Rights Management
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/17/2017
 
 为租户激活 Azure 信息保护的 Azure 权限管理服务后，你的组织便可以开始使用支持此信息保护解决方案的应用程序和服务保护重要数据了。 管理员还可以管理和监视你的组织拥有的受保护文件和电子邮件。 能够开始在 Office、SharePoint 和 Exchange 中使用信息权限管理 (IRM) 功能保护任何敏感或机密文件之前，必须启用此服务。
 
-如果你要在激活该服务之前了解有关 Azure Rights Management 服务的详细信息（例如，它解决了哪些业务问题、一些典型用例以及它的工作原理），请参阅[什么是 Azure Rights Management？](../understand-explore/what-is-azure-rms.md)
+如果要在激活该服务之前了解有关 Azure Rights Management 服务的详细信息（例如，它解决哪些业务问题、一些典型用例以及工作原理），请参阅[什么是 Azure Rights Management？](../understand-explore/what-is-azure-rms.md)
 
 > [!IMPORTANT]
 > 如果为组织部署了 Active Directory Rights Management Services (AD RMS)，则不要激活 Azure 权限管理服务。 [详细信息](prepare-environment-adrms.md)
