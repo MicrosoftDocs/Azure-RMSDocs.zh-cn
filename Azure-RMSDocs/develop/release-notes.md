@@ -66,7 +66,7 @@ author: lleonard-msft ms.author: alleonar manager: mbaldwin ms.date: 2017/09/25 
 
     [UserPolicy.acquire 同步方法](https://msdn.microsoft.com/library/mt631384.aspx)
 
-    [UserPolicy.create (PolicyDescriptor…) 同步方法**](https://msdn.microsoft.com/library/mt631385.aspx)
+    [UserPolicy.create (PolicyDescriptor…) 同步方法** ](https://msdn.microsoft.com/library/mt631385.aspx)
 
     [UserPolicy.create (TempalteDescriptor…) 同步方法](https://msdn.microsoft.com/library/mt631386.aspx)
 
