@@ -4,7 +4,7 @@ description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/22/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 20ee380a48fa8fb303a5c71f43df17b8740b0cb4
-ms.sourcegitcommit: fc9a4487e2a0bc3481a814c7c308939868d52db9
+ms.openlocfilehash: 19390c05719ebfee7e3442437d3f5bdfd303c652
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -43,9 +43,63 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ## <a name="versions-later-than-110560"></a>1.10.56.0 以上版本
 
-如果客户端版本高于 1.10.56.0，则这是用于测试和评估的预览内部版本。 
+如果客户端版本高于 1.10.56.0，则这是用于测试和评估的预览内部版本。
 
-要了解自上次推出正式发布版客户端以来，当前预览版中新增或更改的内容，请参阅[下载页面](https://www.microsoft.com/en-us/download/details.aspx?id=53018)中的“详细信息”部分。 
+当前的预览版本为 **1.21.203.0**，在客户端的最新正式版之后具有以下更改。
+
+此版本包括 RMS 客户端的 MSIPC 1.0.3403.1224 版本。
+
+**新增功能**：
+
+- Azure 信息保护扫描程序：客户端附带的 PowerShell 模块包含新的 cmdlet，用于安装和配置扫描程序，以便可以发现本地数据存储上的文件并对其进行分类和保护。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-use/deploy-aip-scanner.md)。 
+
+- 对于 Office 应用，自动和建议分类持续在后台运行，而不是在保存文档时运行。 通过此行为更改，现在可以为存储在 SharePoint Online 中的文档应用自动和建议的分类。 [详细信息](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) 
+
+- 现在可以通过在文本字符串中使用“If.App”变量语句并标识应用程序类型为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记。 [详细信息](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
+
+- 支持[策略设置](../deploy-use/configure-policy-settings.md)“在 Office 应用中显示“信息保护”栏”。 此设置已关闭时，用户可以通过功能区上的“保护”按钮选择标签。
+
+- 这是一条新的高级客户端设置，使 Outlook 不会应用 Azure 信息保护策略中配置的默认标签。 相反，Outlook 可应用不同的默认标签，也可不应用标签。 [详细信息](client-admin-guide-customizations.md#set-a-different-default-label-for-outlook) 
+
+- 对于 Office 应用，当你指定自定义权限时，现在可以通过“通讯簿”图标浏览并选择用户。 使用文件资源管理器指定自定义权限时，此选项会将奇偶校验带到用户体验。
+
+- 对于使用 PowerShell 但无法被授予**本地登录**权限的服务帐户，支持完全非交互式身份验证方法。 此身份验证方法需要对 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/Set-AIPAuthentication) 使用新的 *Token* 参数，并将 PowerShell 脚本作为任务运行。 [详细信息](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)
+
+- [Set-RMSServerAuthentication](/powershell/module/azureinformationprotection/set-rmsserverauthentication) 的新参数 *IntegratedAuth*。 此参数支持 AD RMS 的服务器模式，AD RMS 需要处于该模式才能支持 Windows Server FCI。
+
+
+**修补程序**：
+
+修复了包括以下特定方案的稳定性：
+
+- 对于 Office 16.0.8628.2010 版及更高版本（即点即用），Azure 信息保护栏支持以前可能会导致该栏显示在 Office 应用程序外部的最新监视器显示选项。
+
+- 当两个组织使用 Azure 信息保护共享标记的文档和电子邮件时，将保留他们自己的标签，而不会替换为另一个组织的标签。
+
+- 支持 Excel 中包含交叉引用（以前会导致该单元格中的文本损坏）的单元格。
+
+- 支持更改 Office 主题或 Windows 主题，以前更改主题后会导致 Excel 不显示任何数据。
+
+- 现在可以检查具有 .xml 文件扩展名的文件，以便进行建议或自动分类。
+
+- 查看器现在可以打开大于 20 MB 的基于文本的受保护文件（.ptxt 和 .pxml）。 
+
+- 使用 Outlook 提醒时，可防止 Outlook 挂起。
+
+- 会以 Office 64 位成功启动，以便可以保护文档和电子邮件。
+
+- 可以现在为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置标签，也可使用高级客户端设置隐藏自定义权限选项。 [详细信息](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users) 
+
+- 如果为 Azure 信息保护策略中的视觉标记配置了客户端上未安装的字体名称，则将回退到宋体字体。
+
+- 升级 Azure 信息保护客户端后，可防止 Office 崩溃。
+
+- 对于 Office 应用，改进性能和内存占用率。
+
+- 为用户定义的权限和 HYOK (AD RMS) 保护配置了标签时，该保护不再错误地使用 Azure Rights Management 服务。
+
+- 为了获得更一致的管理体验，子标签不再继承其父标签的视觉标记和保护设置。
+
 
 ## <a name="version-110560"></a>版本 1.10.56.0
 

@@ -4,7 +4,7 @@ description: "说明如何安装、配置和运行 Azure 信息保护扫描程�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/08/2018
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 7dfd670df89b652f8ff55452198d8483b55c59cd
-ms.sourcegitcommit: 2a7f20684a041385e2d2425ab886e46917d2da9a
+ms.openlocfilehash: 21388d4a3617c50012f0f2055fce0ba48bdb66d5
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 01/03/2018
 |---------------|--------------------|
 |运行扫描程序服务的 Windows Server 计算机：<br /><br />- 4 个处理器<br /><br />- 4 GB 的 RAM|Windows Server 2016 或 Windows Server 2012 R2。 <br /><br />注意：在非生产环境中出于测试或评估目的时，可以使用 [Azure 信息保护客户端支持的](../get-started/requirements.md#client-devices) Windows 客户端操作系统。<br /><br />此计算机可以是物理或虚拟计算机，需拥有快速可靠的网络，可连接到要进行扫描的数据存储。 <br /><br />确保此计算机具有 Azure 信息保护所需的 [Internet 连接](../get-started/requirements.md#firewalls-and-network-infrastructure)。 或者，必须将其配置为[断开连接的计算机](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers)。 |
 |存储扫描程序配置的 SQL Server：<br /><br />- 本地或远程实例|SQL Server 2012 是以下版本的最低版本：<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express|
-|运行扫描程序服务的服务帐户|此帐户必须是同步到 Azure AD 的 Active Directory 帐户，并满足以下额外要求：<br /><br />- “本地登录”权限。 此权限是安装和配置扫描程序所必需的，但不可用于操作。 必须将此权限授予服务帐户，但当确认扫描程序可发现、保护文件并对其进行分类后，可删除此权限。<br /><br />- “作为服务登录”权限。 扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。 <br /><br />- 数据存储库的权限：必须授予“读取”和“写入”权限才可扫描文件，然后将分类和保护应用到满足 Azure 信息保护策略中条件的文件。 若仅在发现模式下运行扫描程序，则只需“读取”权限即可。<br /><br />- 对于可重新保护或移除保护的标签：要确保扫描程序始终能够访问受保护的文件，请将此帐户设置为 Azure Rights Management 服务的[超级用户](configure-super-users.md)，并确保已启用超级用户功能。 要详细了解应用保护的帐户要求，请参阅[准备用户和组以便使用 Azure 信息保护](../plan-design/prepare.md)。|
+|运行扫描程序服务的服务帐户|此帐户必须是同步到 Azure AD 的 Active Directory 帐户，并满足以下额外要求：<br /><br />- “本地登录”权限。 此权限是安装和配置扫描程序所必需的，但不可用于操作。 必须将此权限授予服务帐户，但当确认扫描程序可发现、保护文件并对其进行分类后，可删除此权限。<br /><br />注意：如果内部策略不允许服务帐户具有此权限，但服务帐户可以被授予“作为批处理作业登录”权限，则可以通过其他配置满足此要求。 有关说明，请参阅管理员指南中的[针对 Set-AIPAuthentication 指定和使用 Token 参数](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)。<br /><br />- “作为服务登录”权限。 扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。 <br /><br />- 数据存储库的权限：必须授予“读取”和“写入”权限才可扫描文件，然后将分类和保护应用到满足 Azure 信息保护策略中条件的文件。 若仅在发现模式下运行扫描程序，则只需“读取”权限即可。<br /><br />- 对于可重新保护或移除保护的标签：要确保扫描程序始终能够访问受保护的文件，请将此帐户设置为 Azure Rights Management 服务的[超级用户](configure-super-users.md)，并确保已启用超级用户功能。 要详细了解应用保护的帐户要求，请参阅[准备用户和组以便使用 Azure 信息保护](../plan-design/prepare.md)。|
 |在 Windows Server 计算机上安装 Azure 信息保护客户端|当前，Azure 信息保护扫描程序需要 Azure 信息保护客户端预览版。<br /><br />必须安装扫描程序的完整客户端。 请勿安装只带有 PowerShell 模块的客户端。<br /><br />有关客户端安装说明，请参阅[管理员指南](../rms-client/client-admin-guide.md)。|
 |已配置可应用自动分类和保护（可选）的标签|有关如何配置条件的详细信息，请参阅[如何配置 Azure 信息保护的自动和建议分类的条件](configure-policy-classification.md)。<br /><br />要详细了解如何配置标签以将保护应用到文件，请参阅[如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)。<br /><br />这些标签可位于全局策略中，或位于一个或多个[作用域内策略](configure-policy-scope.md)中。|
 
@@ -159,6 +159,46 @@ ms.lasthandoff: 01/03/2018
 
 因为我们将计划配置为持续运行，所以当扫描程序扫描完所有文件时，它将开始新周期，以便可发现新文件和更改的文件。
 
+
+## <a name="how-files-are-scanned-by-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序如何扫描文件
+
+扫描程序会自动跳过[从分类和保护中排除](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client)的文件，如可执行文件和系统文件。
+
+然后扫描程序使用 Windows iFilter 扫描以下文件类型。 对于以下文件类型，将使用为标签指定的条件标记文档。
+
+|应用程序类型|文件类型|
+|--------------------------------|-------------------------------------|
+|Word|.docx; .docm; .dotm; .dotx|
+|Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
+|PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
+|Project|.mpp; .mpt|
+|PDF|。pdf|
+|文本|.txt; .xml; .csv|
+
+
+最后，对于剩余的文件类型，扫描程序将应用 Azure 信息保护策略中的默认标签。
+
+|应用程序类型|文件类型|
+|--------------------------------|-------------------------------------|
+|Project|.mpp; .mpt|
+|发布者|.pub|
+|Visio|.vsd; .vdw; .vst; .vss; .vsdx; .vsdm; .vssx; .vssm; .vstx; .vstm|
+|XPS|.xps; .oxps; .dwfx|
+|Solidworks|.sldprt; .slddrw; .sldasm|
+|Jpeg |.jpg; .jpeg; .jpe; .jif; .jfif; .jfi|
+|Png |。png|
+|Gif|.gif|
+|位图|.bmp; .giff|
+|Tiff|.tif; .tiff|
+|Photoshop|.psdv|
+|DigitalNegative|.dng|
+|Pfile|。pfile|
+
+请注意，当标签将常规保护应用于文档时，文件扩展名将更改为 .pfile。 此外，文件将变为只读，直到该文件被已授权用户打开并以本机格式保存。 文本和图像文件也可以更改其文件扩展名并变为只读。 如果不想要此行为，可以禁止特定文件类型的文件受保护。 例如，禁止 PDF 文件变为受保护的 PDF (.ppdf) 文件，禁止 .txt 文件变为受保护的文本 (.ptxt) 文件。
+
+有关对不同文件类型的不同保护级别以及如何控制保护行为的详细信息，请参阅管理员指南中的[保护支持的文件类型](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection)部分。
+
+
 ## <a name="when-files-are-rescanned-by-the-azure-information-protection-scanner"></a>当文件由 Azure 信息保护扫描程序重新扫描时
 
 在第一个扫描周期，扫描程序会检查所配置的数据存储中的所有文件，然后在后续扫描中仅检查新文件或修改后的文件。 
@@ -226,6 +266,8 @@ ms.lasthandoff: 01/03/2018
 - [Set-AIPScanner](/powershell/module/azureinformationprotection/Set-AIPScanner)
 
 - [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)
+
+- [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository)
 
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
 

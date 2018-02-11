@@ -4,7 +4,7 @@ description: "有关自定义适用于 Windows 的 Azure 信息保护客户端�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0bd05c0553cdcab792c674c6945d7dfea5f02eaf
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: 3ee5bd789b62261867d6de4f56efaa3890dc1a57
+ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -52,6 +52,15 @@ ms.lasthandoff: 11/20/2017
 
 无论此设置如何，Azure 信息保护客户端遵循标准的 [RMS 服务发现进程](../rms-client/client-deployment-notes.md#rms-service-discovery)，查找其 AD RMS 群集。
 
+## <a name="suppress-the-initial-congratulations-welcome-page"></a>禁止显示初始“祝贺你!” “欢迎使用”页
+
+首次在计算机上安装 Azure 信息保护客户端时，如果用户打开 Word、Excel、PowerPoint 或 Outlook，将显示“祝贺你!” 页，其中包含有关如何使用新的信息保护栏选择标签的简短说明。 可以通过编辑注册表来禁止显示此页。
+
+找到以下值名称并将值数据设置为 **0**：
+
+**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnableWelcomeExperience** 
+
+
 ## <a name="sign-in-as-a-different-user"></a>以其他用户身份登录
 
 在生产环境中，如果用户使用的是 Azure 信息保护客户端，则通常不需要以其他用户身份登录。 不过，作为管理员，你在测试阶段可能需要以其他用户身份登录。 
@@ -73,6 +82,7 @@ ms.lasthandoff: 11/20/2017
 - 如果使用的是单一登录，必须在编辑注册表后注销 Windows，再使用其他用户帐户登录。 然后，Azure 信息保护客户端会使用当前登录的用户帐户，自动进行身份验证。
 
 - 可以使用“帮助和反馈”中的“重置设置”选项注销并删除当前已下载的 Azure 信息保护策略。
+
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>如果组织拥有组合许可证，则强制执行仅保护模式
 
