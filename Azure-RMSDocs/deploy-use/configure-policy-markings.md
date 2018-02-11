@@ -4,21 +4,21 @@ description: "当文档或电子邮件中分配一个标签时，可以选择几
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 99aba6560f9dcdbd564f317e8d9e0ce89845f4a9
-ms.sourcegitcommit: f78f5209f0e19c6edfd1815d76e0e9750b4ce71d
+ms.openlocfilehash: 01208dda12b5989e546c1042b48c17e166d48687
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
 
@@ -87,6 +87,38 @@ ms.lasthandoff: 12/12/2017
 - `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016/8/16 下午 1:30
 
 示例：如果为“常规”标签页脚指定字符串 `Document: ${item.name}  Classification: ${item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 **Document: project.docx  Classification: General**。
+
+## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记
+
+此设置目前处于预览状态，并且需要 Azure 信息保护客户端预览版。
+
+默认情况下，指定的视觉标记将应用于 Word、Excel、PowerPoint 和 Outlook。 但是，在文本字符串中使用“If.App”变量语句并使用值 **Word**、**Excel**、**PowerPoint** 或 **Outlook** 标识应用程序类型时，可以为每个 Office 应用程序类型指定视觉标记。 还可以简化这些值，当想要在同一 If.App 语句中指定多个值时，这很有必要。
+
+使用以下语法：
+
+    ${If.App.<application type>}<your visual markings text> ${If.End}
+
+此语句中的该语法区分大小写。
+
+例如：
+
+- **仅为 Word 文档设置页眉文本：**
+    
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+    
+    仅在 Word 文档页眉中，标签应用页眉文本“此 Word 文档包含敏感内容”。 没有页眉文本应用于其他 Office 应用程序。
+
+- **为 Word、Excel 和 Outlook 设置页脚文本，为 PowerPoint 设置不同的页脚文本：**
+    
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+    
+    在 Word、Excel 和 Outlook 中，标签应用页脚文本“此内容是机密的”。 在 PowerPoint 中，标签应用页脚文本“此演示文稿是机密的”。
+
+- **为 Word 和 PowerPoint 设置特定的水印文本，然后为 Word、Excel 和 PowerPoint 设置水印文本：**
+    
+    `${If.App.WP}This content is ${If.End}Confidential`
+    
+    在 Word 和 PointPoint 中，标签应用水印文本“此内容是机密的”。 在 Excel 中，标签应用水印文本“机密”。 在 Outlook 中，标签不应用任何水印文本，因为 Outlook 不支持将水印作为视觉标记。
 
 ### <a name="setting-the-font-name"></a>设置字体名称
 

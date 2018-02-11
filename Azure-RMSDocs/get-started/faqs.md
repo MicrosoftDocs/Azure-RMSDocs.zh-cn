@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护及其数据保护服务 Azure Rights Man
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da0ba7876b1098671428e87117bed97c4f464071
-ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
+ms.openlocfilehash: 23c2b24a830b6d1ab7e0712fc1d1d70056f5d736
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -96,7 +96,7 @@ Azure 权限管理服务根据需要自动生成并管理 XrML 证书，因此�
 
 - 对于 Windows Server FCI：可以将所有文件的 Rights Management 所有者设置为单个帐户，也可以为每个文件动态设置 Rights Management 所有者。 若要动态设置 Rights Management 所有者，请使用 -OwnerMail [源文件所有者电子邮件] 参数和值。 此配置使用文件“所有者”属性中的用户帐户名从 Active Directory 检索用户的电子邮件地址。
 
-- 对于 Azure 信息保护扫描程序：可以将所有文件的 Rights Management 所有者设置为单个帐户，但不能为每个文件动态设置 Rights Management 所有者。 若要设置帐户，请指定[扫描程序配置](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration?view=azureipps#optional-parameters)的 -DefaultOwner 可选参数。
+- 对于 Azure 信息保护扫描程序：可以将指定数据存储上所有文件的 Rights Management 所有者设置为单个帐户，但不能为每个文件动态设置 Rights Management 所有者。 若要设置帐户，请为[数据存储库配置文件](/powershell/module/azureinformationprotection/Set-AIPScannerRepository?view=azureipps#optional-parameters)指定 **-DefaultOwner** 参数。
 
 扫描程序保护 SharePoint 网站和库上的文件时，通过使用 SharePoint 创建者值来动态地设置每个文件的 Rights Management 所有者。
 
