@@ -4,7 +4,7 @@ description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/03/2018
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: aee9a9f665d3aa0a0e8a8c568f3abbd044469fc7
-ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
+ms.openlocfilehash: 27799ff64e8c224c64b0ffc858b79818650d74af
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -461,7 +461,11 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 > [!NOTE]
 > 如果使用[作用域内策略](../deploy-use/configure-policy-scope.md)，请记住，你可能需要将此帐户添加到作用域内策略中。
 
-首次运行此 cmdlet 时，会看到登录提示，以便使用 Azure 信息保护。 指定为无人参与用户帐户创建的用户帐户名称和密码。 在这之后，此帐户可以在身份验证令牌过期前，以非交互方式运行标记 cmdlet。 令牌过期后，再次运行此 cmdlet，以获取新令牌：
+首次运行此 cmdlet 时，会看到登录提示，以便使用 Azure 信息保护。 指定为无人参与用户帐户创建的用户帐户名称和密码。 在这之后，此帐户可以在身份验证令牌过期前，以非交互方式运行标记 cmdlet。 
+
+要使用户在这第一次能够以交互方式登录，该帐户必须具有**本地登录**权限。 此权限是用户帐户的标准配置，但是你的公司策略可能为服务帐户禁用了此配置。 如果是这种情况，可以运行 Set-AIPAuthentication 并使用 *Token* 参数，以便在没有登录提示的情况下完成身份验证。 可以将此命令作为计划任务运行，并向帐户授予**作为批处理作业登录**这一较低权限。 有关详细信息，请参阅以下各部分。 
+
+令牌过期后，再次运行此 cmdlet，以获取新令牌。
 
 如果在运行此 cmdlet 时没有使用参数，用户帐户将获取有效期为 90 天或与密码有效期一样的访问令牌。  
 
@@ -517,7 +521,85 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 12. 在“必需权限”边栏选项卡上，选择“授予权限”，单击“是”进行确认，然后关闭此边栏选项卡。
     
-至此，已配置完两个应用程序，并获取了使用参数运行 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 所需的值。
+至此，你已配置完两个应用，并获得了使用参数 *WebAppId*、*WebAppKey* 和 *NativeAppId* 运行 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 所需的值。 例如：
+
+`Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f"`
+
+请在将以非交互模式对文档进行标记和保护的帐户的上下文中运行此命令。 例如，你的 PowerShell 脚本的用户帐户或用于运行 Azure 信息保护扫描程序的服务帐户。  
+
+首次运行此命令时，会提示你进行登录，这将在 %localappdata%\Microsoft\MSIP 中创建并安全地存储你的帐户的访问令牌。 在此初次登录后，可以在计算机上以非交互方式对文件进行标记和保护。 但是，如果使用某个服务帐户来对文件进行标记和保护，则此服务帐户无法以交互方式登录，请使用以下部分中的说明以便服务帐户可以使用令牌进行身份验证。
+
+### <a name="specify-and-use-the-token-parameter-for-set-aipauthentication"></a>为 Set-AIPAuthentication 指定并使用 Token 参数
+
+> [!NOTE]
+> 此选项目前为预览版，且需要 Azure 信息保护客户端的当前预览版本。
+
+对于对文件进行标记和保护的帐户，请使用以下附加步骤和说明来避免初次交互式登录。 通常，只有无法为向此帐户授予**本地登录**权限但向其授予了**作为批处理作业登录**权限时才需要执行这些附加步骤。 例如，对于运行 Azure 信息保护扫描程序的服务帐户，情况可能如此。
+
+1. 在本地计算机上创建一个 PowerShell 脚本。
+
+2. 运行 Set-AIPAuthentication 来获取一个访问令牌并将其复制到剪贴板。
+
+2. 修改该 PowerShell 脚本以包括该令牌。
+
+3. 创建一个任务，使其在对文件进行标记和保护的服务帐户的上下文中运行该 PowerShell 脚本。
+
+4. 确认为该服务帐户保存了令牌，并删除该 PowerShell 脚本。
+
+
+#### <a name="step-1-create-a-powershell-script-on-your-local-computer"></a>步骤 1：在本地计算机上创建一个 PowerShell 脚本
+
+1. 在计算机上，创建一个新的名为 Aipauthentication.ps1 的 PowerShell 脚本。
+
+2. 将以下命令复制并粘贴到此脚本中：
+    
+         Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
+
+3. 使用上一部分中的说明修改此命令：为 **WebAppId**、**WebAppkey** 和 **NativeAppId** 参数指定你自己的值。 此时，对于你稍后将指定的 **Token** 参数，你还没有准备好其值。 
+    
+    例如：`Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f -Token <token value>`
+    
+#### <a name="step-2-run-set-aipauthentication-to-get-an-access-token-and-copy-it-to-the-clipboard"></a>步骤 2：运行 Set-AIPAuthentication 来获取一个访问令牌并将其复制到剪贴板
+
+1. 打开一个 Windows PowerShell 会话。
+
+2. 使用与你在脚本中指定的值相同的值运行以下命令：
+    
+        (Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application >).token | clip
+    
+    例如：`(Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f").token | clip`
+
+#### <a name="step-3-modify-the-powershell-script-to-supply-the-token"></a>步骤 3：修改 PowerShell 脚本以提供令牌。
+
+1. 在 PowerShell 脚本中，通过从剪切板粘贴字符串来指定令牌值，然后保存文件。
+
+2. 为脚本签名。 如果没有为脚本签名（更安全），则必须在将运行标记命令的计算机上配置 Windows PowerShell。 例如，使用“以管理员身份运行”选项运行 Windows PowerShell 会话，然后键入：`Set-ExecutionPolicy RemoteSigned`。 但是，当未签名的脚本存储在此计算机上时，此配置将允许所有未签名的脚本运行（不太安全）。
+    
+    有关为 Windows PowerShell 脚本签名的详细信息，请参阅 PowerShell 文档库中的 [about_Signing](/powershell/module/microsoft.powershell.core/about/about_signing) 。
+
+3. 将此 PowerShell 脚本复制到将对文件进行标记和保护的计算机上，并删除计算机上的原始脚本。 例如，将 PowerShell 脚本复制为 Windows Server 计算机上的 C:\Scripts\Aipauthentication.ps1。
+
+#### <a name="step-4-create-a-task-that-runs-the-powershell-script"></a>步骤 4：创建一个运行 PowerShell 脚本的任务
+
+1. 确保将对文件进行标记和保护的服务帐户具有**作为批处理作业登录**权限。
+
+2. 在将对文件进行标记和保护的计算机上，打开任务计划程序并创建一个新任务。 将此任务配置为作为将对文件进行标记和保护的服务帐户运行，然后为“操作”配置以下值：
+    
+    - **操作**：`Start a program`
+    - **程序/脚本**：`Powershell.exe`
+    - **添加参数(可选)**：`-NoProfile -WindowStyle Hidden -command "&{C:\Scripts\Aipauthentication.ps1}"` 
+    
+    对于参数行，指定你自己的路径和文件名（如果它们与示例中的不同）。
+
+3. 手动运行此任务。
+
+#### <a name="step-4-confirm-that-the-token-is-saved-and-delete-the-powershell-script"></a>步骤 4：确认保存了令牌，并删除该 PowerShell 脚本
+
+1. 确认令牌现在存储在服务帐户配置文件的 %localappdata%\Microsoft\MSIP 文件夹中。 此值由服务帐户提供保护。
+
+2. 删除包含令牌值的 PowerShell 脚本（例如 Aipauthentication.ps1）。
+    
+    还可以删除任务。 如果令牌过期，你必须重复此过程，为应对这种情况，请保留已配置的任务以使其在你复制包含新令牌值的新 PowerShell 脚本时可随时重新运行，这可以提供更大的便利。
 
 ## <a name="next-steps"></a>后续步骤
 若要在 PowerShell 会话中获取 cmdlet 帮助，请键入“`Get-Help <cmdlet name> cmdlet`”，并使用联机参数读取最新信息。 例如： 
