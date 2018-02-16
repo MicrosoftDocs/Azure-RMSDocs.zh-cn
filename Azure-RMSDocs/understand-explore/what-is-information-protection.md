@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 0eeb9a6cf8eb819c19a32dbcf76e4d0104c18b99
-ms.sourcegitcommit: ae4cdee7211796182c47a11c1853232464673834
+ms.openlocfilehash: c3bbf2a9e0fee14ddeb2f18fa5671209ad92cfd4
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -112,7 +112,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 - Yammer：[Azure 信息保护](https://www.yammer.com/AskIPTeam)
 
 
-此外，Microsoft Ignite 2017 具有将针对 Azure 信息保护按需提供的许多会话。 有关该会议公告的摘要，请参阅 [What’s new in Azure Information Protection @ Ignite 2017](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)（Azure 信息保护中的新增功能 @ Ignite 2017）。 
+此外，Microsoft Ignite 2017 具有将针对 Azure 信息保护按需提供的许多会话。 有关该会议公告的摘要，请参阅 [What’s new in Azure Information Protection @ Ignite 2017](https://cloudblogs.microsoft.com/ENTERPRISEMOBILITY/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)（Azure 信息保护中的新增功能 @ Ignite 2017）。 
 
 可以前往 Ignite 网站[搜索并查找](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522)标记有 Azure 信息保护的会话。 但建议从以下会话开始：
 
@@ -129,7 +129,7 @@ Azure 信息保护是基于云的解决方案，可帮助组织对其文档和�
 
 ## <a name="next-steps"></a>后续步骤
 
-阅读博客文章 [Azure Information Protection: Ready, set, protect!](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/)（Azure 信息保护：准备、设置、保护！）
+阅读博客文章 [Azure Information Protection: Ready, set, protect!](https://cloudblogs.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/)（Azure 信息保护：准备、设置、保护！）
 
 可通过观看我们的 5 步骤[快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)，配置和使用 Azure 信息保护。 或如果已准备好为组织部署此服务，请参阅 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)。
 

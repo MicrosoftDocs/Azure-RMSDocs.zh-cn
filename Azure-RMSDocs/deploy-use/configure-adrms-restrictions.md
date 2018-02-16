@@ -10,15 +10,15 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: d7788b909da4219ae80475bac4bd26b2a2ec8da9
-ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
+ms.openlocfilehash: 00b17536467e2990d807c3494c645fa8a559f241
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 保护的自留密钥 (HYOK) 要求和限制
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 保护最敏感的文档和电子邮件时，通常会为此应用 Azure 权限管理 (Azure RMS) 保护，以便从以下优势中受益：
 
@@ -129,7 +129,7 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 ## <a name="next-steps"></a>后续步骤
 
-若要了解有关此功能的详细信息和使用指南，请参阅博客文章公告 [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)（具有 HYOK（自留密钥）的 Azure 信息保护）。
+若要了解有关此功能的详细信息和使用指南，请参阅博客文章公告 [Azure Information Protection with HYOK (Hold Your Own Key)](https://cloudblogs.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)（具有 HYOK（自留密钥）的 Azure 信息保护）。
 
 若要配置用于 AD RMS 保护的标签，请参阅[如何配置标签以进行 Rights Management 保护](../deploy-use/configure-policy-protection.md)。 
 

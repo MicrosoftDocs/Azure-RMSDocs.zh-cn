@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4040e67a7bae2ee5a208d61134b842762ef4ace1
-ms.sourcegitcommit: 9de66368b75ffd003289f998c7b1e78736736524
+ms.openlocfilehash: 014b4d7100a0be36951a21db9a1dcf35bdbe5dd6
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>有关 Azure 信息保护文档的评论的内部规则
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/21/2017
 
 - **技术支持**。 例如，某一项功能无法工作，你查看了相关要求并按照文档说明进行了操作。 也已检查使用的是支持的 Azure 信息保护客户端[版本](./rms-client/client-version-release-history.md#servicing-information-and-timelines)。 在这种情况下，请改为联系 [Microsoft 支持部门](./get-started/information-support.md#to-contact-microsoft-support)或使用标准支持渠道。 或者，在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上参与社区互动。
 
-- **产品开发规划信息**。 例如，询问新版本的发布时间或计划开发的其他功能。 对于此信息，请访问[企业移动性和安全性博客](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)或在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上提出相关问题。 还可以查看 Azure 信息保护的[User Voice 网站](https://msip.uservoice.com)并使用此资源请求新功能。
+- **产品开发规划信息**。 例如，询问新版本的发布时间或计划开发的其他功能。 对于此信息，请访问[企业移动性和安全性博客](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)或在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上提出相关问题。 还可以查看 Azure 信息保护的[User Voice 网站](https://msip.uservoice.com)并使用此资源请求新功能。
 
 - **产品反馈**。 例如，提供改进产品或新功能的建议。 相反，请访问 Azure 信息保护的 [User Voice 网站](https://msip.uservoice.com)来提出新功能，对其他人发布的内容进行投票，并查看由 Azure 信息保护团队会审的当前状态。 有关常规反馈、问题和建议，请在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上进行交流。 
 
