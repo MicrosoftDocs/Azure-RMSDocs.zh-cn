@@ -14,11 +14,11 @@ ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: bd987e1433554ddb55dc06babf4e4b6f5e0d93fe
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: e6ae24f35aa03996bd26ff891a9cb5a14d751d44
+ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="linux-setup"></a>Linux 安装程序
 
@@ -38,8 +38,8 @@ Windows 和 OSX 上也已成功编译了库和示例，但此时它们并未完�
  
 ## <a name="how-to-build-and-use"></a>如何生成和使用
 
-- [如何构建库和示例应用](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_build_it.md)
-- [如何在用户系统上安装和使用应用](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_use_it.md)
+- [如何构建库和示例应用](https://github.com/AzureAD/rms-sdk-for-cpp/wiki/How-to-Build)
+- [如何在用户系统上安装和使用应用](https://github.com/AzureAD/rms-sdk-for-cpp/wiki/How-to-Use)
 
 ## <a name="see-also"></a>另请参阅
 
