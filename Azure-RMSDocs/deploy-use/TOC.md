@@ -42,7 +42,7 @@
 ### [由客户管理](operations-customer-managed-tenant-key.md)
 ## [解除授权并停用](decommission-deactivate.md)
 ## [使用 PowerShell 进行管理](administer-powershell.md)
-### [安装适用于 Azure RMS 的 Windows PowerShell](install-powershell.md)
+### [安装 AADRM PowerShell 模块](install-powershell.md)
 # [部署和使用该客户端](/information-protection/rms-client/use-client)
 # [开发和自定义应用](/information-protection/develop/developers-guide)
 
