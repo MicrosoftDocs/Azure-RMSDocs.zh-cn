@@ -4,7 +4,7 @@ description: "面向管理员的说明和信息，介绍如何在企业网络中
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d91c52ac5ae1f70ed664e54a549c906d934fdb16
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 92e4f6c05378b36165db0628f14941b0ccd26cb7
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -211,7 +211,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 ## <a name="how-to-install-the-azure-information-protection-scanner"></a>如何安装 Azure 信息保护扫描程序
 
-当前的 Azure 信息保护客户端预览版包括 Azure 信息保护扫描程序。 客户端包括的 PowerShell 模块具有用于安装和配置扫描程序的 cmdlet。
+目前，Azure 信息保护扫描程序的正式版 (GA) 需在 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)单独下载，名为 AzInfoProtectionScanner.exe。 扫描程序的后续版本将包括在 Azure 信息保护客户端中。
+
+当前的 Azure 信息保护客户端预览版也包括 Azure 信息保护扫描程序。 
+
+扫描程序和预览客户端包括的 PowerShell 模块具有用于安装和配置扫描程序的 cmdlet。
 
 要安装客户端以获取扫描程序，请按照前面部分中的相同说明进行操作。 注意，如果不需要所有客户端组件（例如，Office 加载项和查看器），可只安装 PowerShell 模块。 例如，可使用 `PowerShellOnly=true /quiet` 运行可执行文件。
 

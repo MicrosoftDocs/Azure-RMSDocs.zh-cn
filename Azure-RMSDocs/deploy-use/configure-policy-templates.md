@@ -1,10 +1,10 @@
 ---
-title: "配置和管理用于 Azure 信息保护的模板"
+title: "配置和管理 Azure 信息保护的模板"
 description: "通过 Azure 门户配置和管理 Rights Management 模板。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,29 +12,29 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 671d1d5d706225fcd5c680ddc8687aa889b59b59
-ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
+ms.openlocfilehash: 66008a89f04c99b2255027f4defc22cf97bc1e0d
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理用于 Azure 信息保护的模板
+# <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 >[!NOTE]
->此功能替代了在 Azure 经典门户中配置自定义模板。 经典门户现已停用，因此必须使用 Azure 门户。 有关快速操作指南映射，请参阅[过去使用 Azure 经典门户执行的任务](migrate-portal.md)。
+>此功能将替代在 Azure 经典门户中配置自定义模板。 经典门户现已停用，因此必须使用 Azure 门户。 有关快速操作指南映射，请参阅[曾使用 Azure 经典门户执行的任务](migrate-portal.md)。
 
 
 Rights Management 模板现已与 Azure 信息保护策略集成。 
 
-**订阅包含分类、设置标签和保护（Azure 信息保护 P1 或 P2）时：**
+**订阅包含分类、设置标签和保护（Azure 信息保护 P1 或 P2）：**
 
 - 未与租户的标签集成的 Rights Management 模板显示在“Azure 信息保护 - 全局策略”边栏选项卡中标签后的“保护模板”部分中。 可以将这些模板转换为标签，也可以在为标签配置保护时链接到它们。 
 
 **订阅仅包含保护（包括 Azure 权限管理服务的 Office 365 订阅）：**
 
-- 租户的 Rights Management 模板显示在“保护模板”部分中的“Azure 信息保护 - 全局策略”边栏选项卡中。 不会显示任何标签。 还可看到特定于分类和标签的配置设置，但这些设置要么对模板没有任何影响，要么无法进行配置。 
+- 租户的 Rights Management 模板显示在“保护模板”部分中的“Azure 信息保护 - 全局策略”边栏选项卡中。 不显示任何标签。 还可看到特定于分类和标签的配置设置，但这些设置要么对模板没有任何影响，要么无法进行配置。 
 
 ## <a name="default-templates"></a>默认模板
 
@@ -53,15 +53,15 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 如果是最近获得的订阅，则使用以下名称创建默认模板：
 
-- **机密\所有员工**，授予对受保护内容的读取或修改权限。
+- 机密\所有员工，授予受保护内容的读取或修改权限。
 
-- **高度机密\所有员工**，授予对受保护内容的只读权限。
+- 高度机密\所有员工，授予受保护内容的只读权限。
 
 如果是不久前获得的订阅，则使用以下名称创建默认模板：
 
-- **\<组织名称> - 机密**，授予受保护内容的读取或修改权限。
+- \<组织名称> - 机密，授予受保护内容的读取或修改权限。
 
-- **\<组织名称> - 机密（仅供查阅）**，授予受保护内容的只读权限。 
+- \<组织名称> - 机密（仅供查阅），授予受保护内容的只读权限。 
 
 可以在使用 Azure 门户时重命名（和重新配置）这些默认模板。
 
@@ -76,9 +76,9 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 在编辑这些模板或将其转换为标签之前，请确保了解以下更改和注意事项。 由于实现更改，因此如果你之前在 Azure 经典门户中管理模板，则以下列表尤其重要。
 
-- 编辑或转换模板并保存 Azure 信息保护策略后，将对初始[使用权限](configure-usage-rights.md)进行以下更改。 如果需要，可以使用 Azure 门户添加或删除各个使用权限。 另外，也可以通过 PowerShell 使用 [New-AadrmRightsDefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) 和 [Set-AadrmTemplateProperty](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet 执行这些操作。
+- 编辑或转换模板并保存 Azure 信息保护策略后，将对初始[使用权限](configure-usage-rights.md)进行以下更改。 如果需要，可以通过使用 Azure 门户来添加或删除各使用权限。 或者，在 PowerShell 中使用 [New-aadrmrightsdefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) 和 [Set-aadrmtemplateproperty](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet。
     
-    - 自动添加了“允许宏”（公用名）。 Office 应用中的 Azure 信息保护栏需要此使用权限。
+    - 自动添加了“允许宏”（公用名）。 Office 应用中的 Azure 信息保护栏要求此使用权限。
 
 - “发布”和“已存档”设置在“标签”边栏选项卡上分别显示为“已启用: 打开”和“已启用: 关闭”。 对于想要保留但对用户或服务不可见的模板，将其设置为“已启用”：“关闭”。
 
@@ -86,9 +86,9 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
     
     现在可以通过使用 PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) cmdlet 删除模板。 还可以为未转换为标签的模板使用此 PowerShell cmdlet。 但是，如果删除已用于保护内容的模板，则不能再打开该内容。 仅当确定模板未用于保护生产中的文档或电子邮件时，才可删除模板。 作为一种预防措施，建议考虑首先使用 [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate) cmdlet 将模板作为备份导出。 
 
-- 在全局策略中显示部门模板（为作用域配置的模板）。 目前，如果编辑并保存部门模板，则会删除作用域配置。 Azure 信息保护策略中的作用域内模板相当于[作用域内策略](configure-policy-scope.md)。 如果将模板转换为标签，则可以选择现有作用域。
+- 部门模板（为作用域配置的模板）显示在全局策略中。 目前，如果编辑并保存部门模板，则会删除作用域配置。 Azure 信息保护策略中的作用域内模板相当于[作用域内策略](configure-policy-scope.md)。 如果将模板转换为标签，则可以选择现有作用域。
     
-    此外，目前无法设置部门模板的应用程序兼容性设置。 如有必要，可以使用 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 和 *EnableInLegacyApps* 参数设置应用程序兼容性设置。
+    此外，目前无法设置部门模板的应用程序兼容性设置。 如有必要，可以使用 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 和 *EnableInLegacyApps* 参数来设置应用程序兼容性设置。
 
 - 将模板转换为标签或将模板链接到标签后，其他标签不能再使用该模板。 此外，此模板不再显示在“保护模板”部分中。 
 
@@ -96,9 +96,9 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>在 Azure 信息保护策略中配置模板
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”边栏选项卡。     
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。
     
-    例如，在中心菜单上单击“更多服务”，然后开始在筛选框中键入“信息”。 选择“Azure 信息保护”。
+    例如，在中心菜单上单击“更多服务”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
 
 2. 如果要配置的模板将用于所有用户，请选择“Azure 信息保护 - 全局策略”边栏选项卡。
     
@@ -119,7 +119,7 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 6. 要使用户应用程序和服务可以使用你所做的更改，请在初始“Azure 信息保护”边栏选项卡上单击“发布”。
 
 > [!NOTE]
-> 如果已将某个标签配置为使用预定义模板，则也可以使用“保护”边栏选项卡上的“编辑模板”按钮来编辑模板。 假如没有其他标签也同样使用选定的这一个模板，此按钮将模板转换为标签，并转到步骤 5。 若要深入了解将模板转换为标签时会发生什么情况，请参阅下一部分。
+> 如果已将某个标签配置为使用预定义模板，则也可以使用“保护”边栏选项卡上的“编辑模板”按钮来编辑模板。 假如没有其它标签也同样使用选定的这一个模板，此按钮将模板转换为标签，并转到步骤 5。 若要深入了解将模板转换为标签时会发生什么情况，请参阅下一节。
 
 ## <a name="to-convert-templates-to-labels"></a>将模板转换为标签
 
@@ -157,7 +157,7 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 4. 对于“设置包含此标签的文档和电子邮件的权限”，选择“保护”，然后选择“保护”：
     
-     ![为 Azure 信息保护标签配置保护](../media/info-protect-protection-bar-configured.png)
+     ![为 Azure 信息保护标签配置保护权限](../media/info-protect-protection-bar-configured.png)
 
 5. 在“保护”边栏选项卡上，可以更改权限、内容有效期限和脱机访问设置。 有关配置这些保护设置的详细信息，请参阅[如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)
     
@@ -172,6 +172,6 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 可在 Azure 门户中配置的用于创建和管理模板的所有设置均可通过使用 PowerShell 实现。 此外，PowerShell 还提供了门户中未提供的更多选项。 有关详细信息，请参阅[保护模板的 PowerShell 参考](configure-templates-with-powershell.md)。 
 
-有关配置 Azure 信息保护策略的详细信息，请使用[配置组织的策略](configure-policy.md#configuring-your-organizations-policy)部分中的链接。  
+有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

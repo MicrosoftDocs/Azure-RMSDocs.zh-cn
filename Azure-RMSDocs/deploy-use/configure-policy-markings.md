@@ -1,26 +1,26 @@
 ---
-title: "为 Azure 信息保护标签配置可视标记"
-description: "当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。"
+title: "为 Azure 信息保护标签配置视觉标记"
+description: "当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些视觉标记是页眉、页脚和水印。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 01208dda12b5989e546c1042b48c17e166d48687
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 53a6e42ef0ecdb1388c82e3af4090bb3d6778983
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
+# <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护视觉标记的标签
 
 >适用于：Azure 信息保护
 
-当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
+当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些视觉标记是页眉、页脚和水印。
 
 有关这些可视标记的其他信息：
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="when-visual-markings-are-applied"></a>应用视觉标记的情况
 
-对于电子邮件，从 Outlook 发送电子邮件时会应用可视标记。
+对于电子邮件，从 Outlook 发送电子邮件时会应用视觉标记。
 
 对于文档，视觉标记应用如下所示：
 
@@ -50,17 +50,17 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>配置标签的视觉标记
 
-请按照以下说明来配置标签的可视标记。
+请按照以下说明来配置标签的视觉标记。
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并以安全管理员或全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”边栏选项卡。 
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。 
     
-    例如，在中心菜单上单击“更多服务”，然后在筛选框中开始键入**信息**。 选择“Azure 信息保护”。
+    例如，在中心菜单上单击“更多服务”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
 
 2. 如果要配置的标签将应用于所有用户，请选择“Azure 信息保护 - 全局策略”边栏选项卡。
     
     如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，仅应用于所选用户，请从“策略”菜单选项中选择“作用域内策略”。 然后从“Azure 信息保护 - 作用域内策略”边栏选项卡选择作用域内策略。
 
-3. 在“**标签**”边栏选项卡的“**设置可视标记（如页眉或页脚）**”部分中，配置所需可视标记的设置，然后单击设置“**保存**”：
+3. 在“**标签**”边栏选项卡的“**设置视觉标记（如页眉或页脚）**”部分中，配置所需视觉标记的设置，然后单击设置“**保存**”：
     
     - 配置一个页眉：针对“**文档的此标签具有页眉**”，选择“**打开**”（如果希望具有页眉），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定页眉的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
     

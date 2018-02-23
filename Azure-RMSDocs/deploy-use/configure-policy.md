@@ -4,7 +4,7 @@ description: "若要配置分类、标记和保护，必须配置 Azure 信息�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/25/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b04c7881f982b33094107b6de33920a83b17b960
-ms.sourcegitcommit: a7cdf911088fdf663e43894484530ea15150284f
+ms.openlocfilehash: 6b0556755597fe20755e7b798a24498a780b87b5
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。 然后将此策略下载到已安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#azure-信息保护客户端) 的计算机。
 
@@ -44,9 +44,24 @@ Azure 信息保护支持不同级别的订阅：
 
 有关订阅的详细信息，请参阅 [需要为 Azure 信息保护准备哪个订阅，它包括哪些功能？](../get-started/faqs.md#what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included)
 
+## <a name="signing-in-to-the-azure-portal"></a>登录到 Azure 门户
+
+若要登录到 Azure 门户以配置和管理 Azure 信息保护：
+
+- 使用以下链接：https://portal.azure.com
+
+- 使用具有以下[管理员角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一的帐户：
+    
+    - **信息保护管理员**（当前为预览版）
+
+    - **安全管理员**
+
+    - **全局管理员/公司管理员**
+
+
 ## <a name="to-access-the-azure-information-protection-blade-for-the-first-time"></a>首次访问“Azure 信息保护”边栏选项卡
 
-1. 以租户的全局管理员身份或安全管理员身份登录到 [Azure 门户](https://portal.azure.com)。
+1. 登录到 Azure 门户。
 
 2. 在中心菜单上，单击“新建”，然后从 **MARKETPLACE** 列表中选择“安全 + 标识”。 
     
@@ -63,7 +78,7 @@ Azure 信息保护支持不同级别的订阅：
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>如何配置 Azure 信息保护策略
 
-1. 务必以安全管理员或全局管理员身份登录 [Azure 门户](https://portal.azure.com)。
+1. 请确保使用以下管理角色之一登录到 Azure 门户：信息保护管理员、安全管理员或全局管理员。 请参阅[前述部分](#signing-in-to-the-azure-portal)了解有关这些管理角色的详细信息。
 
 2. 如有必要，可导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“更多服务”并开始在“筛选”框中键入“信息保护”。 在结果中选择“Azure 信息保护”。 
     
@@ -127,7 +142,7 @@ Azure 信息保护标签可用于组织常规创建和存储的数据，包括�
 
 - [如何配置标签以进行保护](configure-policy-protection.md)
 
-- [如何配置标签以应用可视标记](configure-policy-markings.md)
+- [如何配置标签以应用视觉标记](configure-policy-markings.md)
 
 - [如何为自动和建议分类配置条件](configure-policy-classification.md)
 

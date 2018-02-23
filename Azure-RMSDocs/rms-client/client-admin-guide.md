@@ -4,7 +4,7 @@ description: "面向负责部署适用于 Windows 的 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c338fe4258d6d8b20a4d8c285bc821981810b409
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: a7412378655ea75500bd1339c0ba41f677fe4d9a
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -54,7 +54,7 @@ Azure 信息保护客户端包括以下内容：
 
 - 一个 PowerShell 模块，用于从文件应用和删除分类标签和保护。 
     
-    此模块包括的 cmdlet 可用于安装和配置 [Azure 信息保护扫描程序](../deploy-use/deploy-aip-scanner.md)（当前为预览版），该扫描程序在 Windows Server 上作为服务运行。 借助此服务，可发现和保护数据存储（例如，网络共享和 SharePoint Server 库）中的文件并对其进行分类。
+    此模块包括的 cmdlet 可用于安装和配置 [Azure 信息保护扫描程序](../deploy-use/deploy-aip-scanner.md)，该扫描程序在 Windows Server 上作为服务运行。 借助此服务，可发现和保护数据存储（例如，网络共享和 SharePoint Server 库）中的文件并对其进行分类。
 
 - 权限管理客户端，可与 Azure 权限管理 (Azure RMS) 或 Active Directory Rights Management Services (AD RMS) 进行通信。
 
@@ -73,7 +73,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 - 想要通过使用 PowerShell 命令运行对文档进行分类（或保护）的脚本。
 
-- 想要运行一项服务来发现（或保护）存储在本地的文件并对其进行分类。 此扫描程序服务当前以预览版提供。
+- 想要运行一项服务来发现（或保护）存储在本地的文件并对其进行分类。
 
 - 想要在本机应用程序显示未安装文件或无法打开这些文档时查看受保护的文档。
 
@@ -171,7 +171,7 @@ Azure 信息保护客户端支持 Office 365 支持的同种语言。 有关这�
 
 - 重新运行可执行文件（如 **AzInfoProtection.exe**），并从“修改安装程序”页上，单击“卸载”。 
 
-- 使用 **/uninstall** 运行可执行文件。 例如： `AzInfoProtection.exe /uninstall`
+- 使用 **/uninstall** 运行可执行文件。 例如：`AzInfoProtection.exe /uninstall`
 
 ## <a name="next-steps"></a>后续步骤
 要安装客户端，请参阅[为用户安装 Azure 信息保护客户端](client-admin-guide-install.md)。
