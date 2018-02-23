@@ -4,7 +4,7 @@ description: "安装适用于 Azure 信息保护中的 Azure Rights Management �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0deb1b47036a4439f393bf7351c5d149a8e85559
-ms.sourcegitcommit: 152b4855e23f443c04ac27fedfdc1dcc9fda8949
+ms.openlocfilehash: 5946ab7315b646abf119cb32cd66ac62535253c9
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="installing-windows-powershell-for-azure-rights-management"></a>安装适用于 Azure 权限管理的 Windows PowerShell
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 01/18/2018
 |要求|更多信息|
 |---------------|--------------------|
 |支持[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]管理模块的 Windows 版本|查看 [Azure Rights Management 管理工具下载页](http://go.microsoft.com/fwlink/?LinkId=257721)的“系统要求”部分中的受支持操作系统列表。|
-|Windows PowerShell 的最低版本：2.0<br /><br /> |默认情况下，大多数 Windows 操作系统至少安装了 Windows PowerShell 2.0 版本。 如果你需要安装此受支持的最低版本，请参阅[安装 Windows PowerShell 2.0](https://msdn.microsoft.com/library/ff637750.aspx)。<br /><br />提示：你可在 PowerShell 会话中键入 `$PSVersionTable`，以确认正在运行的 Windows PowerShell 的版本。 <br /><br /> 如果已安装此最低版本，必须先在 PowerShell 会话中通过运行 `Import-Module AADRM` 手动加载此模块，然后才能使用 Rights Management 管理模块中的任何 cmdlet。 如果你安装了 Windows PowerShell v3 及更高版本，该模块会自动加载，不需要再执行此命令。|
+|Windows PowerShell 的最低版本：3.0|你可在 PowerShell 会话中键入 `$PSVersionTable`，以确认正在运行的 Windows PowerShell 的版本。 <br /><br /> 如果需要安装更高版本的 Windows PowerShell，请参阅[升级现有的 Windows PowerShell](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell)。|
 |Microsoft .NET Framework 的最低版本：4.5<br /><br />请注意：较高版本的操作系统都附带此版本的 Microsoft .NET Framework，因此只有在你的客户端操作系统低于 Windows 8.0 或服务器操作系统低于 Windows Server 2012 的情况下，才需要手动安装它。|如果尚未安装 Microsoft .NET Framework 的最低版本，则可下载 [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)。<br /><br />此最低版本的 Microsoft .NET Framework 是 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 管理模块使用的某些类所必需的。|
 
 > [!NOTE]

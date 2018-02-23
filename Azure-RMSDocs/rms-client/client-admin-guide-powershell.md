@@ -4,7 +4,7 @@ description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 27799ff64e8c224c64b0ffc858b79818650d74af
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: a6ca8145768559a556b051974f59620a0750c660
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -24,9 +24,7 @@ ms.lasthandoff: 02/09/2018
 
 安装 Azure 信息保护客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
-cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 此模块替换随 RMS 保护工具一起安装的 RMSProtection 模块。 如果在安装 Azure 信息保护客户端时安装了 RMSProtection 工具，则会自动卸载 RMSProtection 模块。
-
-AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Management cmdlet。 以及使用 Azure 信息保护 (AIP) 服务进行标记的两个新 cmdlet。 例如：
+cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 此模块包括 RMS 保护工具（不再支持）的所有 Rights Management cmdlet。 以及使用 Azure 信息保护 (AIP) 服务进行标记的两个新 cmdlet。 例如：
 
 |标记 cmdlet|示例用法|
 |----------------|---------------|
@@ -36,13 +34,13 @@ AzureInformationProtection 模块包括 RMS 保护工具的所有 Rights Managem
 |[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|以非交互方式标记文件，例如使用按计划运行的脚本。|
 
 
-此外，[Azure 信息保护扫描程序](../deploy-use/deploy-aip-scanner.md)（当前为预览版）使用 cmdlet 在 Windows Server 上安装和配置服务。 然后，可使用此扫描程序发现和保护数据存储中的文件并对其进行分类。
+此外，[Azure 信息保护扫描程序](../deploy-use/deploy-aip-scanner.md)使用 cmdlet 在 Windows Server 上安装和配置服务。 然后，可使用此扫描程序发现和保护数据存储中的文件并对其进行分类。
 
 有关所有 cmdlet 及其相应帮助的列表，请参阅 [AzureInformationProtection 模块](/powershell/module/azureinformationprotection)。 在 PowerShell 会话中，键入 `Get-Help <cmdlet name> -online` 以查看最新帮助。  
 
 此模块安装在 **\ProgramFiles (x86)\Microsoft Azure Information Protection** 中，并将此文件夹添加到 **PSModulePath** 系统变量。 此模块的 .dll 命名为 **AIP.dll**。
 
-与 RMSProtection 模块一样，AzureInformationProtection 模块的当前版本具有以下限制：
+AzureInformationProtection 模块的当前版本具有以下限制：
 
 - 可以取消保护 Outlook 个人文件夹（.pst 文件），但当前无法使用 PowerShell 模块本机保护这些文件或其他容器文件。
 
@@ -147,7 +145,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
     
 4. 运行 `Get-AadrmConfiguration` 并创建 BPOSId 值的副本。
     
-    以下是 Get-AadrmConfiguration 的输出示例：
+    Get-AadrmConfiguration 的输出示例：
     
             BPOSId                                   : 23976bc6-dcd4-4173-9d96-dad1f48efd42
         
@@ -454,7 +452,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>如何以非交互方式为 Azure 信息保护标记文件
 
-可以使用 Set-AIPAuthentication cmdlet，以非交互方式运行标记 cmdlet。 Azure 信息保护扫描程序（现为预览版）也需要非交互式操作。
+可以使用 Set-AIPAuthentication cmdlet，以非交互方式运行标记 cmdlet。 Azure 信息保护扫描程序也需要非交互式操作。
 
 默认情况下，运行 cmdlet 进行标记时，命令会在交互式 PowerShell 会话中你自己的用户上下文运行。 若要在无人参与的情况下运行这些命令，请为此新建一个 Azure AD 用户帐户。 然后，在相应用户的上下文中，运行 Set-AIPAuthentication cmdlet，以使用 Azure AD 中的访问令牌设置并存储凭据。 此用户帐户会进行身份验证，并启动以供 Azure Rights Management 服务使用。 此帐户下载 Azure 信息保护策略，以及标签使用的任何 Rights Management 模板。
 
@@ -521,6 +519,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 12. 在“必需权限”边栏选项卡上，选择“授予权限”，单击“是”进行确认，然后关闭此边栏选项卡。
     
+
 至此，你已配置完两个应用，并获得了使用参数 *WebAppId*、*WebAppKey* 和 *NativeAppId* 运行 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 所需的值。 例如：
 
 `Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f"`
@@ -532,7 +531,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 ### <a name="specify-and-use-the-token-parameter-for-set-aipauthentication"></a>为 Set-AIPAuthentication 指定并使用 Token 参数
 
 > [!NOTE]
-> 此选项目前为预览版，且需要 Azure 信息保护客户端的当前预览版本。
+> 此选项需要 Azure 信息保护扫描程序的正式版 (GA)，或 Azure 信息保护客户端的当前预览版。
 
 对于对文件进行标记和保护的帐户，请使用以下附加步骤和说明来避免初次交互式登录。 通常，只有无法为向此帐户授予**本地登录**权限但向其授予了**作为批处理作业登录**权限时才需要执行这些附加步骤。 例如，对于运行 Azure 信息保护扫描程序的服务帐户，情况可能如此。
 
@@ -540,12 +539,11 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 2. 运行 Set-AIPAuthentication 来获取一个访问令牌并将其复制到剪贴板。
 
-2. 修改该 PowerShell 脚本以包括该令牌。
+3. 修改该 PowerShell 脚本以包括该令牌。
 
-3. 创建一个任务，使其在对文件进行标记和保护的服务帐户的上下文中运行该 PowerShell 脚本。
+4. 创建一个任务，使其在对文件进行标记和保护的服务帐户的上下文中运行该 PowerShell 脚本。
 
-4. 确认为该服务帐户保存了令牌，并删除该 PowerShell 脚本。
-
+5. 确认为该服务帐户保存了令牌，并删除 PowerShell 脚本。
 
 #### <a name="step-1-create-a-powershell-script-on-your-local-computer"></a>步骤 1：在本地计算机上创建一个 PowerShell 脚本
 

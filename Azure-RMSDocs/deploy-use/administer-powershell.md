@@ -4,7 +4,7 @@ description: "了解如何使用适用于 Azure 信息保护的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,19 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 94ec0107930e64d42ed55bce407c4b8c92f1df32
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 597590dbf33dd43329d27ccadf081e5e8d9fd0b6
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>使用 Windows PowerShell 管理 Azure Rights Management 服务
 
 >*适用于：Azure 信息保护、Office 365*
 
-是否需要使用 PowerShell 管理适用于 Azure 信息保护的 Azure 权限管理服务？ 如果你是全局管理员或[安全管理员](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)，则不需要。此服务需要的唯一配置是将其激活（或停用），然后配置 Rights Management 模板。
-
-但是，对于更高级的配置则需要使用 PowerShell，并且如果你不是全局管理员或安全管理员，但全局管理员已向你授予管理此服务的权限，也需要使用 PowerShell。 如果想要让命令行控制和脚本编写更高效，也请使用 PowerShell。
+是否需要使用 PowerShell 管理适用于 Azure 信息保护的 Azure 权限管理服务？ 如果所有配置都可以在 Azure 门户或 Office 365 门户中完成，则可能不需要。 但是，需要使用 PowerShell 进行某些高级配置，并且可能还需使用 PowerShell 以进行更高效的命令行控制和脚本编写。
 
 下一部分中的表格包括一些使用 PowerShell 的高级配置方案。 如果不使用 PowerShell 也可完成配置，则此信息也包括在表中。
 
