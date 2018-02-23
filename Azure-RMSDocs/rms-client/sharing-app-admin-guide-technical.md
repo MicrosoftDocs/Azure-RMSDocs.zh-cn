@@ -101,7 +101,7 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
 若要将 RMS 共享应用程序配置为将常规保护应用于默认已应用本机保护的所有文件，请对注册表进行以下编辑。 请注意，如果不存在 RmsSharingApp 或 FileProtection 项，必须手动创建它们。
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**：创建名为 * 的新项。
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**：创建名为 \* 的新项。
 
     此设置表示文件可具有任意文件扩展名。
 
