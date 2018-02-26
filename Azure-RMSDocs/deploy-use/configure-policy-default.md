@@ -4,21 +4,21 @@ description: "了解如何配置 Azure 信息保护的默认策略。 如果修�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 86b04d47797f7e3201dd4fd7b7e5a9c662254d12
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: da8557be0a70cee0e7a207a8ed285f6e843ac626
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
->*适用于：Azure 信息保护*
+>适用于：Azure 信息保护
 
 使用以下信息来了解如何配置 Azure 信息保护的默认策略。
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/24/2017
 
 此版本的默认策略为 2017 年 7 月 31 日发布的版本。
 
-仅当创建策略时激活 Azure 权限管理服务，才创建此默认策略。 如果未激活此服务，则默认策略不会为以下子标签配置保护：
+仅当 Azure Rights Management 服务在创建策略时已被[激活](activate-service.md)才会创建此默认策略。 如果未激活此服务，则默认策略不会为以下子标签配置保护：
 
 - **机密\所有员工**
 
@@ -42,11 +42,11 @@ ms.lasthandoff: 10/24/2017
 
 当没有为这些子标签自动配置保护时，默认策略会保持与[以前的默认策略](#default-policy-before-july-31-2017)相同。
 
-将保护应用于“所有员工”子标签时，将通过在 Azure 门户中自动转换为标签的默认模板来配置该保护。 有关这些模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
+将保护应用于“所有员工”子标签时，将通过使用在 Azure 门户中自动转换为标签的默认模板来配置此保护。 有关这些模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
 自 2017 年 8 月 30 日起，此版默认策略包括标签名称和说明的多语言版本。 
 
-#### <a name="more-information-about-the-recipients-only-sub-label"></a>有关“仅收件人”子标签的详细信息
+#### <a name="more-information-about-the-recipients-only-sublabel"></a>有关“仅收件人”子标签的详细信息
 
 用户仅在 Outlook 中看到此标签。 他们不会在 Word、Excel、PowerPoint 或文件资源管理器中看到此标签。 
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 10/24/2017
 |高度机密|与未经授权的人员共享时会导致业务损失的高度敏感业务数据。 例如员工和客户信息、密码、源代码和预先公布的财务报表。|**已启用**：打开 <br /><br />**颜色**：红色<br /><br />**可视标记**：关闭<br /><br />**条件**：无<br /><br />**保护**：无|
 
 
-### <a name="sub-labels"></a>子标签
+### <a name="sublabels"></a>子标签
 
 |Label|工具提示|设置|
 |-------------------------------|---------------------------|-----------------|
@@ -117,7 +117,7 @@ ms.lasthandoff: 10/24/2017
 |高度机密|与未经授权的人员共享时会导致业务损失的高度敏感业务数据。 例如员工和客户信息、密码、源代码和预先公布的财务报表。|**已启用**：打开 <br /><br />**颜色**：红色<br /><br />**可视标记**：关闭<br /><br />**条件**：无<br /><br />**保护**：无|
 
 
-### <a name="sub-labels"></a>子标签
+### <a name="sublabels"></a>子标签
 
 |Label|工具提示|设置|
 |-------------------------------|---------------------------|-----------------|
@@ -157,7 +157,7 @@ ms.lasthandoff: 10/24/2017
 |秘密|此数据包括必须予以保护的高度敏感业务信息。 向未经授权的用户公开秘密数据可能会对组织造成严重损坏。 有关秘密信息的示例包括个人身份信息、客户记录、源代码和预先公布的财务报告。|**已启用**：打开 <br /><br />**颜色**：红色<br /><br />**可视标记**：页脚（文档和电子邮件）：<br /><br /> 敏感级别：秘密<br /><br />**条件**：无<br /><br />**保护**：无|
 
 
-### <a name="sub-labels"></a>子标签
+### <a name="sublabels"></a>子标签
 
 |Label|工具提示|设置|
 |-------------------------------|---------------------------|-----------------|

@@ -4,17 +4,17 @@ description: "可以更改或优化用户可以在信息保护栏看到的标签
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: e289bf3f36bda1728b89c756db5afbcac126f3f1
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: da89ea5986ac78cdf79e97336d74c54e9db2a825
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>如何更改或自定义 Azure 信息保护的现有标签
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/14/2018
 
 1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。 
     
-    例如，在中心菜单上单击“更多服务”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
+    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
 2. 要更改全局策略中的标签，使其适用于所有用户，请从“Azure 信息保护 - 全局策略”边栏选项卡中选择要更改的标签，之后根据需要选择任何边栏选项卡进行更改。 要更改[作用域内策略](configure-policy-scope.md)中的标签，使其仅应用于所选用户，请先从“策略”菜单选项中选择“作用域内策略”。 然后从“Azure 信息保护 - 作用域内策略”边栏选项卡选择作用域内策略。
 

@@ -4,7 +4,7 @@ description: "概览 Azure 门户中的管理任务，这些任务过去在 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 5f160d766abb4a81864ac1ff466362b8ae24027d
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 25604d8537aedb4421b460850ce34723c8047964
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>曾使用 Azure 经典门户执行的任务
 
@@ -37,7 +37,7 @@ Azure 经典门户已于 2018 年 1 月 8 日停用。 此日期之后，用户�
 
 |Azure 经典门户|如何在 Azure 门户中执行此任务
 |-----------|--------------------|
-|首次访问配置设置|1.[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。<br /><br />2.在中心菜单上，单击“新建”，然后从 **MARKETPLACE** 列表中选择“安全 + 标识”。<br /><br />3.在“安全 + 标识”边栏选项卡上，从“特别推荐的应用”列表中选择“Azure 信息保护”。 然后，在“Azure 信息保护”边栏选项卡上，单击“创建”。<br /><br />此操作将创建“Azure 信息保护”边栏选项卡，以便下次登录到门户时，可以从中心的“更多服务”列表中选择该服务。
+|首次访问配置设置|1.[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。<br /><br />2.在中心菜单上，单击“创建资源”，然后从“MARKETPLACE”列表中选择“安全 + 标识”。<br /><br />3.在“安全 + 标识”边栏选项卡上，从“特别推荐的应用”列表中选择“Azure 信息保护”。 然后，在“Azure 信息保护”边栏选项卡上，单击“创建”。<br /><br />此操作将创建“Azure 信息保护”边栏选项卡，使你在下次登录到门户时，可以从中心的“所有服务”列表中选择此服务。
 |创建新模板|创建应用保护的标签，并使用“设置权限”来定义权限、有效期限和脱机访问。 <br /><br />此配置会在后台创建一个新的自定义模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。<br /><br />有关详细信息，请参阅[创建新模板](configure-policy-templates.md#to-create-a-new-template)。
 |编辑模板属性： <br /><br />- 模板名称和描述<br /><br />- 使用权限、内容有效期限和脱机访问设置|如果尚未这样做，请[将模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)，然后执行以下操作<br /><br />1.更改标签名称和描述<br /><br />2.更改标签上的保护设置，以更改权限、有效期限和脱机访问设置。<br /><br />有关详细信息，请参阅[配置标签以进行 Rights Management 保护](configure-policy-protection.md#to-configure-a-label-for-rights-management-protection)。
 |存档模板|将标签状态设置为“禁用”。

@@ -4,17 +4,17 @@ description: "在配置标签的条件时，可以自动将标签分配到文档
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 94d7f3a743597ef61472c5b03b5b931a0c1eecd8
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: d24a38420c0ae9d543d0e9c6de54ad0ce4cbc804
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
@@ -72,7 +72,7 @@ Azure 信息保护客户端的当前预览版本定期检查文档是否符合�
 
 1. 根据在策略中指定的位置，将标签排序以供评估：排在第一的标签具有最低的位置（敏感度最低），排在最后的标签具有最高位置（敏感度最高）。
 
-2. 将应用最敏感的标签。
+2. 应用最敏感的标签。
  
 3. 将应用最后一个子标签。
 
@@ -81,7 +81,7 @@ Azure 信息保护客户端的当前预览版本定期检查文档是否符合�
 
 1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。 
     
-    例如，在中心菜单上单击“更多服务”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
+    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
 2. 如果要配置的标签将应用于所有用户，请选择“Azure 信息保护 - 全局策略”边栏选项卡。
     
@@ -94,7 +94,7 @@ Azure 信息保护客户端的当前预览版本定期检查文档是否符合�
 5. 在“条件”边栏选项卡上，选择“信息类型”（如果要使用预定义的条件）或“自定义”（如果要指定自己的条件）：
     - 对于“信息类型”：从可用条件列表中选择，然后选择最小出现次数以及出现计数中是否应具有唯一的值。
         
-        信息类型使用 Office 365 数据丢失防护 (DLP) 敏感信息类型和模式检测。 可以从多种常见敏感信息类型中进行选择，其中某些类型特定于不同的区域。 有关详细信息，请参阅 Office 文档中的 [What the sensitive information types look for](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)（敏感信息类型查找的内容）。 
+        信息类型使用 Office 365 数据丢失防护 (DLP) 敏感信息类型和模式检测。 可以从多种常见敏感信息类型中进行选择，其中某些类型特定于不同的区域。 有关详细信息，请参阅 Office 文档中的 [What the sensitive information types look for](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)（敏感信息类型查找的内容）。
         
         可从 Azure 门户选择的信息类型列表会定期更新，以包含任何新的 Office DLP 添加。 但是，该列表不包含作为规则包定义和上传到 Office 365 安全与合规中心的任何自定义敏感信息类型。 
         
@@ -102,7 +102,7 @@ Azure 信息保护客户端的当前预览版本定期检查文档是否符合�
     
     - 对于“**自定义**”：指定匹配的名称和短语，其必须排除引号和特殊字符。 然后指定是否匹配正则表达式，区分大小写，发生的最小数目以及发生计数中是否应具有唯一的值。
         
-        正则表达式使用 Office 365 正则表达式模式。 有关详细信息，请参阅 Office 文档中的[基于匹配定义正则表达式](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2)。
+        正则表达式使用 Office 365 正则表达式模式。 有关详细信息，请参阅 Office 文档中的[基于匹配定义正则表达式](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2)。 此外，你可能会发现参考 Boost 中的 [Perl Regular Expression Syntax](http://www.boost.org/doc/libs/1_66_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)（Perl 正则表达式语法）将有所帮助。
         
 6. 确定是否需要更改“最小出现次数”和“仅计算唯一值的出现次数”，然后选择“保存”。 
     

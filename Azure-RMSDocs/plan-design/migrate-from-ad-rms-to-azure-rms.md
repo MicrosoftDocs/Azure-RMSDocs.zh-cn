@@ -4,7 +4,7 @@ description: "用于将 Active Directory Rights Management Services (AD RMS) 部
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a65e1178594e14c7d8f4faaedee96d827a9412e5
-ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
+ms.openlocfilehash: 2ba3ae79308ddee15dc77700b7b660fd4bd91b49
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -140,9 +140,9 @@ ms.lasthandoff: 11/21/2017
 
 [**第 1 阶段：迁移准备工作**](migrate-from-ad-rms-phase1.md)
 
-- **步骤 1：下载“Azure RMS 管理”管理工具，然后确定租户 URL**
+- **步骤 1：安装 AADRM PowerShell 模块，并识别你的租户 URL**
 
-    迁移过程要求你从随“Azure RMS 管理”管理工具一起安装的 Azure RMS 模块中运行一个或多个 PowerShell cmdlet。 还需要知道租户的 Azure Rights Management 服务 URL 才能完成多个迁移步骤。 可以使用 PowerShell 确定该值。
+    迁移过程要求你从 AADRM 模块运行一个或多个 PowerShell cmdlet。 你还需要知道你的租户的 Azure Rights Management 服务 URL 才能完成多个迁移步骤，并且可使用 PowerShell 来确定此值。
 
 - **步骤 2：客户端迁移准备**
 

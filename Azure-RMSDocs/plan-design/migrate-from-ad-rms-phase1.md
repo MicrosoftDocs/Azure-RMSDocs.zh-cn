@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 1 阶段涉及从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/11/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 198698bbef8fbb778545c2599798afd1255a01bc
-ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
+ms.openlocfilehash: c74bbf88adced03ba73c2431c4c3ccd2ea3359d1
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
 
@@ -25,11 +25,11 @@ ms.lasthandoff: 10/12/2017
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 1。 这些过程涉及[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)的步骤 1 至 3，以及准备好迁移环境但确保对用户无任何影响。
 
 
-## <a name="step-1-download-the-azure-rights-management-administration-tool-and-identify-your-tenant-url"></a>步骤 1：下载“Azure Rights Management”管理工具，然后确定租户 URL
+## <a name="step-1-install-the-aadrm-powershell-module-and-identify-your-tenant-url"></a>步骤 1：安装 AADRM PowerShell 模块，并识别你的租户 URL
 
-转到 Microsoft 下载中心并下载 [Azure Rights Management 管理工具](https://go.microsoft.com/fwlink/?LinkId=257721)，其中包含 Windows PowerShell 的 Azure Rights Management 管理模块。 Azure Rights Management (Azure RMS) 是为 Azure 信息保护提供数据保护的服务。
+安装 AADRM 模块，这样使你可以配置和管理针对 Azure 信息保护提供数据保护的服务。
 
-安装工具。 相关说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
+有关说明，请参阅[安装 AADRM PowerShell 模块](../deploy-use/install-powershell.md)。
 
 > [!NOTE]
 > 如果之前已下载了此 Windows PowerShell 模块，请运行以下命令来检查版本号是否高于或等于 **2.9.0.0**：`(Get-Module aadrm -ListAvailable).Version`

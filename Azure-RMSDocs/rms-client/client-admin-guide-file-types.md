@@ -4,7 +4,7 @@ description: "有关支持的文件类型、文件扩展名以及负责适用于
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e1adb23e00b447d5633b37b310e3b9ce96d0becf
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: e9b281fbce9ad423249137c5dfff5a6f88dd2178
+ms.sourcegitcommit: bf3967c5b74d2bc57b0f93239a297ccd56682178
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -30,7 +30,7 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 - 仅保护
 
-使用以下信息查看支持的文件类型、不同的保护级别、如何更改默认保护级别，以及哪些文件会自动从分类和保护中排除（跳过）。
+使用以下信息查看 Azure 信息保护客户端支持的文件类型，了解不同的保护级别、如何更改默认保护级别，以及如何确定哪些文件会自动从分类和保护中被排除（跳过）。
 
 ## <a name="file-types-supported-for-classification-only"></a>支持仅分类的文件类型
 
@@ -38,13 +38,9 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 - **Adobe 可移植文档格式**：pdf
 
-- **Microsoft Visio**：.vsdx、.vsdm、.vssx、.vssm、.vsd、.vdw、.vst
-
 - **Microsoft Project**：.mpp、.mpt
 
 - **Microsoft Publisher**：.pub
-
-- **Microsoft Office 97、Office 2010、Office 2003**：.xls、.xlt、.doc、.dot、.ppt、.pps、.pot
 
 - **Microsoft XPS**：.xps .oxps
 
@@ -55,6 +51,12 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 - **Adobe Photoshop**：.psd
 
 - **数码底片**：.dng
+
+- **Microsoft Office**：下表中的文件类型：
+    
+    |Office 文件类型|Office 文件类型|
+    |----------------------------------|----------------------------------|
+    |。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm<br /><br />。pptx<br /><br />.vdw<br /><br />.vsd<br /><br />.vsdm|.vsdx<br /><br />.vss<br /><br />.vssm<br /><br />.vst<br /><br />.vstm<br /><br />.vssx<br /><br />.vstx<br /><br />。xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx|
 
 其他文件类型在受保护时也支持分类。 有关这些文件类型，请参阅[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)部分。
 
@@ -69,7 +71,7 @@ Azure 信息保护客户端支持两个不同级别的保护，如下表中所�
 |保护类型|本机|泛型|
 |----------------------|----------|-----------|
 |描述|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他所有应用程序和文件类型，常规保护提供了一种保护级别，该保护级别既包括使用 .pfile 文件类型的文件封装，又包括用于验证用户是否有权打开该文件的身份验证。|
-|保护|通过以下方式强制执行文件保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 Azure 信息保护查看器（适用于受保护的文本和图像文件）还是关联的应用程序（适用于其他所有受支持的文件类型）呈现内容，都会完全执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的用户或被授予访问权限的用户成功通过身份验证之后，才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将对已授权的用户打开和访问文件的操作执行审核日志记录。 但不强制执行使用权限。|
+|保护|通过以下方式强制执行文件保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 Azure 信息保护查看器（适用于受保护的文本和图像文件）还是使用关联的应用程序（适用于其他所有受支持的文件类型）呈现内容时，都会强制执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的人员以及被授予访问权限的人员成功通过身份验证之后才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将对已授权的用户打开和访问文件的操作执行审核日志记录。 但不强制执行使用权限。|
 |文件类型默认值|这是以下文件类型的默认保护级别：<br /><br />- 文本和图像文件<br /><br />- Microsoft Office（Word、Excel、PowerPoint）文件<br /><br />- 可移植文档格式 (.pdf)<br /><br />有关详细信息，请参阅以下部分：[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)。|这是针对不受本机保护支持的其他所有文件类型（例如 .vsdx、.rtf 等）的默认保护。|
 
 可以更改 Azure 信息保护客户端应用的默认保护级别。 可以将默认级别从本机更改为常规，从常规更改为本机，甚至可以禁止 Azure 信息保护客户端应用保护。 有关详细信息，请参阅本文中的[更改文件的默认保护级别](#changing-the-default-protection-level-of-files)部分。
@@ -101,7 +103,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 这些文件类型单独进行标识，因为它们受到本机保护时，原始文件扩展名将更改，这些文件将变为只读。 请注意，以常规形式保护文件时，原始文件扩展名将始终更改为 .pfile。
 
 > [!WARNING]
-> 如果你拥有可根据文件扩展名检查并采取操作的防火墙、Web 代理或者安全软件，你可能需要重新配置它们以支持这些新的文件扩展名。
+> 如果拥有可根据文件扩展名进行检查并采取操作的防火墙、Web 代理或者安全软件，你可能需要重新配置这些网络设备和软件以支持这些新的文件扩展名。
 
 |原始文件扩展名|受保护的文件扩展名|
 |--------------------------------|-------------------------------------|
@@ -126,7 +128,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 |Office 支持的文件类型|Office 支持的文件类型|
 |----------------------------------|----------------------------------|
-|。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm<br /><br />。pptx<br /><br />。pptx<br /><br />。thmx|.vsdm<br /><br />.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />。xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx<br /><br />.xps|
+|。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm<br /><br />。pptx<br /><br />.vsdm|.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />。xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx<br /><br />.xps|
 
 
 ### <a name="changing-the-default-protection-level-of-files"></a>更改文件的默认保护级别
@@ -138,9 +140,9 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 - 为了适应根据文件扩展名对文件采取操作的安全系统，可将其重新配置为适应 .pfile 文件扩展名，但无法将其重新配置为适应已应用本机保护的多个文件扩展名。
 
-同样，也可以强制 Azure 信息保护客户端将本机保护应用到已默认应用常规保护的文件。 这在你具有支持 RMS API 的应用程序（例如，由内部开发人员编写的业务线应用程序或从独立软件供应商 (ISV) 处购买的应用程序）时可能正合适。
+同样，也可以强制 Azure 信息保护客户端将本机保护应用到已默认应用常规保护的文件。 如果你拥有支持 RMS API 的应用程序，则可能适合采取此操作。 例如，由内部开发人员编写的业务线应用程序或从独立软件供应商 (ISV) 处购买的应用程序。
 
-也可以强制 Azure 信息保护客户端阻止文件保护（而不是应用本机保护或常规保护）。 例如，如果你具有一个必须能够打开特定文件才能处理其内容的自动应用程序或服务，这可能是必需的。 当阻止保护某一文件类型时，用户无法使用 Azure 信息保护客户端保护具有该文件类型的文件。 他们将在尝试保护此类文件时看到一条消息，提示管理员已阻止保护，并且他们必须取消保护该文件的操作。
+也可以强制 Azure 信息保护客户端阻止文件保护（而不是应用本机保护或常规保护）。 例如，如果你拥有一个必须能够打开特定文件才能处理其内容的自动应用程序或服务，则可能需要采取此操作。 当阻止保护某一文件类型时，用户无法使用 Azure 信息保护客户端保护具有该文件类型的文件。 他们将在尝试保护此类文件时看到一条消息，提示管理员已阻止保护，并且他们必须取消保护该文件的操作。
 
 若要将 Azure 信息保护客户端配置为将常规保护应用于已默认应用本机保护的所有文件，请对注册表进行以下编辑。 请注意，如果不存在 FileProtection 项，则必须手动创建。
 
@@ -164,7 +166,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 3. 在新添加的文件类型项（例如 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX**）中，创建一个名为 **Encryption**、值为 **Native** 的新字符串值。
 
-应用这些设置后，所有文件均受常规保护，但文件扩展名为 .docx 的文件除外，因为它们受 Azure 信息保护客户端的本机保护。
+应用这些设置后，所有文件均会受到常规保护，但文件扩展名为 .docx 的文件除外。 这些文件受到 Azure 信息保护客户端的本机保护。
 
 对于要将其定义为例外的其他文件类型重复这三个步骤，因为它们支持本机保护，而你不希望它们由 Azure 信息保护客户端进行常规保护。
 
@@ -176,7 +178,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 - **Off**：阻止保护
 
-有关其他信息，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 
+有关详细信息，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 
 
 ## <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client"></a>Azure 信息保护客户端从分类和保护中排除的文件类型
 
@@ -215,7 +217,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 如果容器文件包括已分类和受保护的文件，必须先提取这些文件，以更改其分类或保护设置。 但是，使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet，可删除受支持容器文件中所有文件的保护。
 
 ## <a name="next-steps"></a>后续步骤
-现在你已识别了 Azure 信息保护客户端支持的文件类型，若要了解支持此客户端所需的其他信息，请参阅以下内容：
+现在你已识别了 Azure 信息保护客户端支持的文件类型，若要了解支持此客户端所需的其他信息，请参阅以下资源：
 
 - [自定义](client-admin-guide-customizations.md)
 

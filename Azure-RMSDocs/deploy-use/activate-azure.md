@@ -4,7 +4,7 @@ description: "Azure 门户提供有关保护激活的说明，以便你的组织
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4c492f3a9075d5c560c2ec83b1371dc374b77bba
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 709af7b7484c39fc52ec60394641656761ad5c5d
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>如何从 Azure 门户激活 Azure 权限管理
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/14/2018
 
 1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。
     
-    例如，在中心菜单上单击“更多服务”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
+    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
     
     如果之前尚未访问过 Azure 信息保护边栏选项卡，请参阅一次性执行的[其他步骤](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time)来向门户添加此边栏选项卡。
     
