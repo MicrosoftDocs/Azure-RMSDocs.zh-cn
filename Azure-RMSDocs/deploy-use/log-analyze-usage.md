@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cf919749b74727412ab6fa76cc52a5c71b69efcd
-ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
+ms.openlocfilehash: 09d076299f70718b65bb3746486f559a880a2660
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>记录和分析 Azure Rights Management 服务的使用情况
 
@@ -67,7 +67,7 @@ Azure Rights Management 服务将日志作为一系列 blob 写入 Azure 存储�
 
 在 Azure Rights Management 操作之后，日志需要一段时间才能显示在你的存储帐户中。 大多数日志在 15 分钟之内显示。 我们建议你将日志下载到本地存储，例如本地文件夹、数据库或 map-reduce 存储库。
 
-若要下载使用日志，可使用适用于 Windows PowerShell 的 Azure Rights Management 管理模块。 有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。 如果先前已下载此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 **2.4.0.0**：`(Get-Module aadrm -ListAvailable).Version` 
+若要下载使用日志，可使用适用于 Windows PowerShell 的 Azure Rights Management 管理模块。 有关安装说明，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。 如果先前已下载此 Windows PowerShell 模块，请运行以下命令来检查你的版本号是否至少为 **2.4.0.0**：`(Get-Module aadrm -ListAvailable).Version` 
 
 ### <a name="to-download-your-usage-logs-by-using-powershell"></a>使用 PowerShell 下载使用日志
 

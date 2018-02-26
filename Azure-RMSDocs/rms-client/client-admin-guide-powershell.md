@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a6ca8145768559a556b051974f59620a0750c660
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 714afa8c839d91ba61043a643433c5045a4aad7d
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -133,7 +133,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 从 Azure RMS Windows PowerShell 模块运行 Get-AadrmConfiguration cmdlet：
 
-1. 如果计算机上尚未安装此模块，请参阅[安装适用于 Azure 权限管理的 Windows PowerShell](../deploy-use/install-powershell.md)。
+1. 如果计算机上尚未安装此模块，请参阅[安装 AADRM PowerShell 模块](../deploy-use/install-powershell.md)。
 
 2. 使用“以管理员身份运行”选项启动 Windows PowerShell。
 

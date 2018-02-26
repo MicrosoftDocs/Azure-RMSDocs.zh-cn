@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d8925b2bf7cf599d580f1e3e25a8b96a433bfe8e
-ms.sourcegitcommit: e4199d243d9f6c80efccc0f0d5574d069d69f46d
+ms.openlocfilehash: 976493cd23c7690420094f80cade32179c3f7998
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 连接器的注册表设置
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/02/2017
 
 -   \<YourTenantURL> 是 Azure 信息保护租户的 Azure 权限管理服务 URL。 查找此值：
 
-    1.  为 Azure 权限管理服务运行 [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet。 如果你尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
+    1.  为 Azure 权限管理服务运行 [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet。 如果尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。
 
     2.  在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
 

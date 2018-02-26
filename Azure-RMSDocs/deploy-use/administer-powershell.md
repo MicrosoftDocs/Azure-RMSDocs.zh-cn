@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 597590dbf33dd43329d27ccadf081e5e8d9fd0b6
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: cdd35669360b172d456254c1e8e9f1d980117cdb
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>使用 Windows PowerShell 管理 Azure Rights Management 服务
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/14/2018
 有关此模块可用 cmdlet 的完整列表，以及每个 cmdlet 的详细信息，请参阅 [AADRM](/powershell/module/aadrm/?view=azureipps#aadrm)。
 
 > [!NOTE]
-> 若要安装此 PowerShell 模块，请参阅[安装适用于 Azure 权限管理的 Windows PowerShell](install-powershell.md)。
+> 若要安装此 PowerShell 模块，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。
 
 除了此服务端 PowerShell 模块，Azure 信息保护客户端还将安装一个补充 PowerShell 模块 **AzureInformationProtection**。 此客户端模块支持对多个文件进行分类和保护，这样可以方便某些操作，例如批量保护文件夹中的所有文件。 有关详细信息，请参阅管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](../rms-client/client-admin-guide-powershell.md)。
 

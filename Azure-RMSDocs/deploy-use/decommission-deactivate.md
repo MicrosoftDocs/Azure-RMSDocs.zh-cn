@@ -4,7 +4,7 @@ description: "有关决定不再使用 Azure 信息保护中基于云的保护�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 14887bb14599b24d95a19ee111ec3ab30ea95612
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 18eff00f6b316c48dbca5a9a8ec2c2ab4e58f76c
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>解除 Azure 信息保护授权并停用对 Azure 信息保护的保护
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 02/14/2018
 
 - 有关将 Azure 信息保护租户密钥导入为 TPD 文件的说明，请参阅 [添加可信发布域](https://technet.microsoft.com/library/cc771460.aspx)。
 
-- 如果你需要安装适用于 Azure Rights Management 的 Windows PowerShell 模块以设置迁移 URL，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
+- 若要安装适用于 Azure Rights Management 的 Windows PowerShell 模块以设置迁移 URL，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。
 
 - 若要将 PowerShell 与 Azure 信息保护客户端配合使用，请参阅将 [PowerShell 与 Azure 信息保护客户端配合使用](../rms-client/client-admin-guide-powershell.md)。
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 02/14/2018
 
 1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。
     
-    例如，在中心菜单上单击“更多服务”，然后在“筛选”框中开始键入**信息**。 选择“Azure 信息保护”。
+    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
 2. 在初始“Azure 信息保护”边栏选项卡上，选择“保护激活”。 
 

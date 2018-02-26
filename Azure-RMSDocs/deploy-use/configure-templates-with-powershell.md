@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c3b1662275b051ea75dcc104c4f09b5db53dbe3e
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: d8e31eb4f573a149ae39c32c89607775de61bfce
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="powershell-reference-for-custom-templates"></a>自定义模板的 PowerShell 参考
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 07/31/2017
 > 
 > 如果之前已经安装了此 PowerShell 模块，请在 PowerShell 窗口中运行以下命令以检查版本号：`(Get-Module aadrm -ListAvailable).Version`
 
-有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](install-powershell.md)。
+有关安装说明，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。
 
 支持创建和管理模板的 cmdlet：
 

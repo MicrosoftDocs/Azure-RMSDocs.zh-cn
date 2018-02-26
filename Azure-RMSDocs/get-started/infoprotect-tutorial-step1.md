@@ -4,28 +4,28 @@ description: "快速试用 Azure 信息保护入门教程步骤 1 - 激活保护
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: 30f86870bb2302ff61641ffa4c10e3da6b5c3f9b
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 952431771e89e934be4a725ece4f3d9cd47165fe
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="step-1-activate-protection"></a>步骤 1：激活保护
  
 >适用于：Azure 信息保护
 
 > [!NOTE]
->即使已为租户激活了 Azure Rights Management 服务，仍请完成此步骤确认激活状态。 说明包括登录到 Azure 门户和创建 Azure 信息保护边栏选项卡的相关信息，以便为执行步骤 2 做好准备。 
+>即使已为你的租户激活了 Azure Rights Management 服务，仍请完成此步骤以确认激活状态。 这些说明包括登录到 Azure 门户和创建 Azure 信息保护边栏选项卡的相关信息，以便为你执行步骤 2 做好准备。
 
-如果已激活 Azure 权限管理服务，则可以保护组织最敏感的文档和电子邮件，并在将这些文档与其他人共享时跟踪受保护文档的使用状况。 激活保护的方式有多种，包括使用 Windows PowerShell，以及使用管理门户。
+在 Azure Rights Management 服务激活后，你便可以开始保护组织最敏感的文档和电子邮件。 还可以在将受保护的文档与他人共享时跟踪这些文档的使用方式。 
 
-对于本教程，我们将使用 Azure 门户，该门户也是为用户配置标签的位置。 
+可以使用不同的方式激活保护。 可以使用 PowerShell 和管理门户。 但对于本教程，我们将使用 Azure 门户，此门户也是你为用户配置标签的位置。 
 
 ## <a name="to-activate-the-azure-rights-management-service"></a>激活 Azure Rights Management 服务
 
@@ -33,11 +33,11 @@ ms.lasthandoff: 02/14/2018
     
     如果你不是全局管理员，可以使用以下[管理角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一：信息保护管理员或安全管理员。
 
-2. 在中心菜单上，单击“新建”，然后从 **MARKETPLACE** 列表中选择“安全 + 标识”。 
+2. 在中心菜单上，单击“创建资源”，然后从“MARKETPLACE”列表中选择“安全 + 标识”。 
     
 3.  在“安全 + 标识”边栏选项卡上，从“特别推荐的应用”列表中选择“Azure 信息保护”。 然后，在“Azure 信息保护”边栏选项卡上，单击“创建”。
     
-    此操作将创建“Azure 信息保护”边栏选项卡，以便下次登录到门户时，可以从中心的“更多服务”列表中选择该服务。 
+    此操作将创建“Azure 信息保护”边栏选项卡，使你在下次登录到门户时，可以从中心的“所有服务”列表中选择此服务。 
     
     > [!TIP] 
     > 选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览到该服务。

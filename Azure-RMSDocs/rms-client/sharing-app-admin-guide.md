@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4cd74b6fcee53acc99e0c89d7cbb606d8aab2d54
-ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
+ms.openlocfilehash: 46ed6ac05e696ec65527d39ab38c312f6aba8411
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>保护级别 – 本机和常规
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 > [!IMPORTANT]
 > **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 
@@ -185,7 +185,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
         X86\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "<log file path and name>"
         ```
 
-    例如： `\\server5\apps\rms\x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "C:\Log files\ipviewerinstall.log"`
+    例如：`\\server5\apps\rms\x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "C:\Log files\ipviewerinstall.log"`
     
     如果此命令无法成功运行，由于 /quiet 参数的原因，将不会显示任何错误消息。 为有助于解决安装失败的问题，请返回不含 /quiet 的命令以查看错误消息。
 
@@ -203,7 +203,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
         msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x86\Setup.msi" /L*v "<log file path and name>"
         ```
 
-    例如： `\\server5\apps\rms\msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "C:\Log files\rmsofficeinstall.log"`
+    例如：`\\server5\apps\rms\msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "C:\Log files\rmsofficeinstall.log"`
     
     如果此命令无法成功运行，由于 /quiet 参数的原因，将不会显示任何错误消息。 为有助于解决安装失败的问题，请返回不含 /quiet 的命令以查看错误消息。
 
@@ -344,7 +344,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 ## <a name="azure-information-protection-only-configuring-document-tracking"></a>仅限 Azure 信息保护：配置文档跟踪
 如果你有[支持文档跟踪的订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-features)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。 文档跟踪会显示尝试访问用户共享的受保护文档的人员的电子邮件地址、其尝试访问这些文档的时间以及他们所在的位置。 如果你的组织出于隐私要求而要禁止显示此类信息，你可以使用 [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature) cmdlet 来禁用对文档跟踪站点的访问。 你随时可以使用 [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature) 来重新启用对该站点的访问，并可以使用 [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature) 来查看当前是已启用还是已禁用这种访问。
 
-若要运行这些 cmdlet，必须安装最低版本为 **2.3.0.0**，适用于 Windows PowerShell 的 Azure Rights Management 模块。 有关安装说明，请参阅[安装适用于 Azure Rights Management 的 Windows PowerShell](../deploy-use/install-powershell.md)。
+若要运行这些 cmdlet，必须安装最低版本为 **2.3.0.0**，适用于 Windows PowerShell 的 Azure Rights Management 模块。 有关安装说明，请参阅[安装 AADRM PowerShell 模块](../deploy-use/install-powershell.md)。
 
 > [!TIP]
 > 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号：`(Get-Module aadrm –ListAvailable).Version`
