@@ -4,7 +4,7 @@ description: "了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e71904ec44f095424db0973cf0d044d8ed8ed58a
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: faa00eee76e6c084db1a4dfb1d477e491fae5fee
+ms.sourcegitcommit: 3e9b3c2206807e82cc4721a50862b74152906f63
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 02/23/2018
 |公用名：**编辑内容，编辑** <br /><br />策略中的编码：**DOCEDIT**|允许用户对应用程序中的内容进行修改、重新排列、设置格式或筛选。 它不会授权保存编辑过的副本。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**编辑内容**<br /><br />Azure 门户中的名称：**编辑内容、编辑(DOCEDIT)**<br /><br />AD RMS 模板中的名称：**编辑** <br /><br />API 常量或值：不适用。|
 |公用名：**保存** <br /><br />策略中的编码：**EDIT**|允许用户将文档保存到当前位置。<br /><br />在 Office 应用程序中，此权限还允许用户修改文档。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**保存文件**<br /><br />Azure 门户中的名称：**保存(EDIT)**<br /><br />AD RMS 模板中的名称：**保存** <br /><br />API 常量或值：`IPC_GENERIC_WRITE L"EDIT"`|
 |公用名：**注释** <br /><br />策略中的编码：**COMMENT**|启用向内容添加批注或注释的选项。<br /><br />此权限可用于 SDK、在 AzureInformationProtection 和适用于 Windows PowerShell 的 RMS 保护模块中作为即席策略提供，并且已在一些软件供应商应用程序中实现。 但是，它尚未广泛使用，并且当前也不受 Office 应用程序支持。|Office 自定义权限：未实现。 <br /><br />Azure 经典门户中的名称：未实现。<br /><br />Azure 门户中的名称：未实现。<br /><br />AD RMS 模板中的名称：未实现。 <br /><br />API 常量或值：`IPC_GENERIC_COMMENT L"COMMENT`|
-|公用名：**另存为，导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 对于 Office 文档和 Azure 信息保护客户端，该文件可在不受保护的情况下进行保存。<br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote” 。<br /><br /> 注意：如果未授予此权限，并且所选的文件格式以本机方式支持 Rights Management 保护，则 Office 应用程序允许用户将文档另存为一个新的名称。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**导出内容(另存为)** <br /><br />Azure 门户中的名称：**另存为、导出(EXPORT)**<br /><br />AD RMS 模板中的名称：**导出(另存为)** <br /><br />API 常量或值：`IPC_GENERIC_EXPORT L"EXPORT"`|
+|公用名：**另存为，导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 <br /><br />对于 Office 文档和 Azure 信息保护客户端，文件可在不受保护的情况下进行保存，也可使用新设置和权限重新保护。 这些允许的操作意味着，具有此权限的用户可以从受保护的文档或电子邮件对 Azure 信息保护标签进行更改或删除。 <br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote” 。<br /><br /> 注意：如果未授予此权限，并且所选的文件格式以本机方式支持 Rights Management 保护，则 Office 应用程序允许用户将文档另存为一个新的名称。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**导出内容(另存为)** <br /><br />Azure 门户中的名称：**另存为、导出(EXPORT)**<br /><br />AD RMS 模板中的名称：**导出(另存为)** <br /><br />API 常量或值：`IPC_GENERIC_EXPORT L"EXPORT"`|
 |公用名：**转发** <br /><br />策略中的编码：**FORWARD**|启用此选项以转发电子邮件，并将收件人添加到“收件人”  和“抄送”  行。 此权限不适用于文档；仅适用于电子邮件。<br /><br />不允许转发器授予其他用户权限作为转发操作的一部分。 <br /><br />授予此权限时，同时授予“编辑内容，编辑”权限（通用名称），以确保原始电子邮件包含在转发的电子邮件中，且不是附件。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也需要此权限。 或者，对于组织内无需使用 Azure Rights Management 服务的用户来说，也需要此权限，因为你已实施了[载入控件](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)。|Office 自定义权限：使用“不要转发”标准策略时拒绝。<br /><br />Azure 经典门户中的名称：**转发**<br /><br />Azure 门户中的名称：**转发(FORWARD)**<br /><br />AD RMS 模板中的名称：**转发** <br /><br />API 常量或值：`IPC_EMAIL_FORWARD L"FORWARD"`|
 |公用名：**完全控制** <br /><br />策略中的编码：**OWNER**|授予对文档的所有权限，并且所有可用操作都可以执行。<br /><br />包括删除保护和重新保护文档的功能。 <br /><br />请注意，此使用权限不等同于[权限管理所有者](#rights-management-issuer-and-rights-management-owner)。|Office 自定义权限：作为“完全控制”自定义选项。<br /><br />Azure 经典门户中的名称：**完全控制**<br /><br />Azure 门户中的名称：**完全控制(OWNER)**<br /><br />AD RMS 模板中的名称：**完全控制** <br /><br />API 常量或值：`IPC_GENERIC_ALL L"OWNER"`|
 |公用名：**打印** <br /><br />策略中的编码：**PRINT**|启用打印内容的选项。|Office 自定义权限：作为自定义权限中的“打印内容”选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**打印**<br /><br />Azure 门户中的名称：**打印(PRINT)**<br /><br />AD RMS 模板中的名称：**打印** <br /><br />API 常量或值：`IPC_GENERIC_PRINT L"PRINT"`|
@@ -99,7 +99,7 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 尽管**不得转发**看似用户（和 Exchange 管理员）可选择的默认权限管理模板，但此选项并不是模板。 因此，查看和管理 Azure 权限管理的模板时，在 Azure 门户中看不到该模板。 相反，**不得转发**选项是用户对其电子邮件收件人动态应用的一组权限。
 
-当“不要转发”选项应用于一封电子邮件后，此电子邮件会被加密，且收件人必须要进行身份验证。 收件人无法转发、打印或从此电子邮件中进行复制，也无法保存附件或另存为其他名称。 例如，在 Outlook 客户端中，“转发”按钮和**另存为**、**保存附件**和**打印**菜单选项将不可用，并且无法添加或更改**收件人**、**抄送**或**密件抄送**框中的收件人。
+当“不要转发”选项应用于一封电子邮件后，此电子邮件会被加密，且收件人必须要进行身份验证。 收件人无法转发、打印或从此电子邮件中进行复制，也无法保存附件或另存为其他名称。 例如，在 Outlook 客户端中，“转发”按钮和“另存为”、“保存附件”和“打印”菜单选项将不可用，并且无法添加或更改“收件人”、“抄送”或“密件抄送”框中的收件人。
 
 应用**不得转发**选项和应用不授予电子邮件“转发”权限的模板有重要区别：**不得转发**选项使用基于原始邮件用户所选收件人的授权用户动态列表；而模板中的权限使用由管理员事先指定的授权用户静态列表。 区别是什么？ 让我们举个例子： 
 
@@ -116,7 +116,7 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 当 Exchange Online 使用 Office 365 邮件加密的新功能后，一项新的电子邮件选项将变为可用：“仅加密”。
 
-此选项会被部署到使用 Exchange Online 的租户，最初只适用于 Outlook 网页版以及作为适用于传输规则的一个权限保护选项。
+此选项会被部署到使用 Exchange Online 的租户，最初只适用于 Outlook 网页版以及作为适用于传输规则的一个权限保护选项。 有关详细信息，请参阅来自 office 团队的下列博客文章公告：[Office 365 邮件加密即将推出“仅加密”](https://aka.ms/omefeb2018)。
 
 选择此选项后，电子邮件会被加密，且收件人必须要进行身份验证。 收件人将具有除完全控制以外的所有使用权限。 此使用权限的组合意味着除了无法删除保护外，收件人不会有任何限制。 例如，收件人可以复制、打印和转发此电子邮件。 同样，可以保存、复制和打印任何附加并自动受保护的 Office 文档。
 

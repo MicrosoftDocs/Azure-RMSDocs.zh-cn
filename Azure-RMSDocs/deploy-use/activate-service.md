@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4817736329fe78084d66467f68ea2f5392ec95e2
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: d521b105b3cc8077a5e30a825007e18f9b5a59f0
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="activating-azure-rights-management"></a>激活 Azure Rights Management
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/23/2018
 
 如果你拥有包含 Azure Rights Management 的服务计划，则可能不需要激活此服务：
 
-- 如果包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月期间或之后获取的，将自动为你激活此服务。 除非你或你组织的其他全局管理员停用了 Azure Rights Management，否则你无需激活此服务。
+- 如果包含 Azure 权限管理或 Azure 信息保护的订阅是在 2018 年 2 月底或之后获取的，将自动为你激活此服务。 除非你或你组织的其他全局管理员停用了 Azure Rights Management，否则你无需激活此服务。
 
 - 如果你的订阅是在本月之前获取的，则必须自己激活此服务。 
 

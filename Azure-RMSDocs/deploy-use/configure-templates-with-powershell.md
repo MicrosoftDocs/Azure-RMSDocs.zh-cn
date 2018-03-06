@@ -1,10 +1,10 @@
 ---
-title: "适用于 Azure RMS 自定义模板的 PowerShell - AIP"
-description: "在 Azure 门户中创建和管理权限管理模板所执行的一切操作均可使用 PowerShell 从命令行执行。 此外，你还能够导出和导入模板，因此能够在租户之间复制模板，或者在模板中执行对复杂属性（例如多语言名称和描述）的批量编辑。"
+title: "保护模板的 PowerShell - Azure 信息保护"
+description: "在 Azure 门户中创建和管理保护模板所需执行的一切操作均可使用 PowerShell 从命令行执行。 此外，你还能够导出和导入模板，因此能够在租户之间复制模板，或者在模板中执行对复杂属性（例如多语言名称和描述）的批量编辑。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,28 +12,25 @@ ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d8e31eb4f573a149ae39c32c89607775de61bfce
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 051144562b1c26a22953f6e83a41b4902404fd2f
+ms.sourcegitcommit: 85250f5ea80c2ee22197058ff2f65a79503b0f0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 02/24/2018
 ---
-# <a name="powershell-reference-for-custom-templates"></a>自定义模板的 PowerShell 参考
+# <a name="powershell-reference-for-protection-templates"></a>保护模板的 PowerShell 参考
 
 >*适用于：Azure 信息保护、Office 365*
 
-在 Azure 门户中创建和管理模板所需执行的一切操作均可使用 PowerShell 从命令行执行。 此外，你还能够导出和导入模板，因此能够在租户之间复制模板，或者在模板中执行对复杂属性（例如多语言名称和描述）的批量编辑。
+Azure 信息保护的保护设置保存在保护模板中。 在 Azure 门户中创建和管理保护设置所需执行的一切操作均可使用 PowerShell 从命令行执行。 
 
-你还可以使用导出和导入来备份和还原自定义模板，最好是经常备份你的自定义模板，这样一来，如果你发现所做的更改不是你想要的，即可轻松还原到以前的版本。
+此外，还可导出和导入保护模板。 通过这两个操作，可以在租户间复制保护模板，也可以执行复杂属性的批量编辑，如多语言名称和说明。
 
-> [!IMPORTANT]
-> 若要使用 PowerShell 来创建和管理 Azure 权限管理模板，必须至少安装 2.0.0.0 版的[适用于 Azure RMS 的 Windows PowerShell 模块](https://go.microsoft.com/fwlink/?LinkId=257721)。
-> 
-> 如果之前已经安装了此 PowerShell 模块，请在 PowerShell 窗口中运行以下命令以检查版本号：`(Get-Module aadrm -ListAvailable).Version`
+还可通过导出和导入来备份和还原保护模板。 定期备份模板是一种最佳做法。 如果意外更改了保护设置，可轻松还原至先前版本。
 
 有关安装说明，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。
 
-支持创建和管理模板的 cmdlet：
+支持创建和管理保护模板的 cmdlet：
 
 - [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate)
 
