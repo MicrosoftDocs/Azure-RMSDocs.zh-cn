@@ -4,7 +4,7 @@ description: "概览 Azure 门户中的管理任务，这些任务过去在 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 25604d8537aedb4421b460850ce34723c8047964
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 066e6e028012aa47953f0fe9ce80556f0f0ac6d4
+ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>曾使用 Azure 经典门户执行的任务
 
@@ -46,7 +46,7 @@ Azure 经典门户已于 2018 年 1 月 8 日停用。 此日期之后，用户�
 |删除模板|删除模板可能导致无法访问数据，因此 Azure 门户不支持此操作。 但是，可以删除标签，然后使用 PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) cmdlet 来删除模板。 <br /><br />有关详细信息，请参阅[如何删除或重排 Azure 信息保护的标签](configure-policy-delete-reorder.md)。
 |多语言支持|从“管理”菜单选择中，选择“语言”，导出包含模板名称和描述的可自定义字段。 翻译字符串，然后将这些字符串导入门户。 <br /><br />有关详细信息，请参阅[如何在 Azure 信息保护中配置不同语言的标签和模板](configure-policy-languages.md)。
 |Rights Management Web 报表|使用 PowerShell [Get-AadrmUsageLog ](/powershell/module/aadrm/Get-AadrmUsageLog) cmdlet 下载 Azure Rights Management 服务的使用日志。 然后可使用此数据创建自定义报表。 <br /><br />有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](log-analyze-usage.md)。<br /><br />提示：查看[企业移动性和安全性博客](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection)上的公告，了解 Azure 信息保护新的集中式解决方案。
-|激活和停用 Rights Management 服务|从“管理”菜单选项中，选择“RMS 设置”或“保护激活”。 此选项正处于重命名的过程中。<br /><br />有关详细信息，请参阅[如何从 Azure 门户激活 Azure 权限管理](activate-azure.md)。
+|激活和停用 Rights Management 服务|从“管理”菜单选项中，选择“保护激活”。<br /><br />有关详细信息，请参阅[如何从 Azure 门户激活 Azure 权限管理](activate-azure.md)。
 
 在编辑模板或将其转换为 Azure 门户中的标签之前，请参阅[Azure 门户中的模板的注意事项](configure-policy-templates.md#considerations-for-templates-in-the-azure-portal)。
 

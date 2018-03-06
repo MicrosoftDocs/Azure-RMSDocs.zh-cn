@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 11ffa730-c5dc-4b6b-9c1e-c58eff8aafc2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5ab34172a4e822373161752142d9e082014285e1
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: de42f0d87f42c304c2df906fe037816be7f2ba25
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="preparing-the-environment-for-azure-rights-management-when-you-also-have-active-directory-rights-management-services-ad-rms"></a>在已有 Active Directory Rights Management Services (AD RMS) 的情况下，为 Azure Rights Management 准备环境
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/23/2018
 
 ## <a name="your-subscription-was-purchased-during-or-after-february-2018"></a>你的订阅是在 2018 年 2 月期间或之后购买的
 
-如果包含 Azure Rights Management 的订阅是在 2018 年 2 月期间或之后购买的，Azure Rights Management 服务则默认为激活状态。 如果还使用 Active Directory Rights Management Services (AD RMS)，此组合则不兼容。 无需执行额外的步骤，一些计算机即可能会自动开始使用 Azure Rights Management 服务，并且还连接到你的 AD RMS 群集。 这种情况是不受支持的且会产生不可靠的结果，因此，请务必尽快停用 Azure Rights Management 服务。 
+至 2018 年 2 月底，包含 Azure 信息保护的新订阅默认激活 Azure 权限管理服务。 如果此服务已自动激活，且你同时使用 Active Directory Rights Management Services (AD RMS)，则此组合不兼容。 无需执行额外的步骤，一些计算机即可能会自动开始使用 Azure Rights Management 服务，并且还连接到你的 AD RMS 群集。 这种情况是不受支持的且会产生不可靠的结果，因此，请务必尽快停用 Azure Rights Management 服务。 
 
 准备好将计算机从 AD RMS 移动到 Azure Rights Management 服务后，即可开始进行迁移过程。 迁移的其中一步是再次激活服务，但需要先将配置信息从 AD RMS 导出到 Azure Rights Management 服务后再执行此步骤。 按此顺序操作可确保迁移后仍可打开受 AD RMS 保护的文档和电子邮件。
 

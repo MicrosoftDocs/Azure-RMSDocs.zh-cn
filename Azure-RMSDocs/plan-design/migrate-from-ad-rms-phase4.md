@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 4 阶段包括从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: beda6273c306a55130223c7b4b9ed9fc4d088fac
-ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
+ms.openlocfilehash: d516d9c82ce0c7bfd35dbb839cd861a301c3443f
+ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
@@ -31,9 +31,15 @@ ms.lasthandoff: 11/22/2017
 
 使用选择的 Azure 信息保护租户密钥拓扑单独执行以下操作：
 
-1. 若要将 Exchange Online 配置为使用 Azure Rights Management 服务，请参阅 [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)（设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能）。 
+1. 运行 Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) 命令。 如需运行此命令的帮助，请参阅 [Exchange Online：IRM 配置](/..deploy-use/configure-office365.md#exchange-online-irm-configuration)中的分步说明。
+    
+    在输出中，检查“AzureRMSLicensingEnabled”是否设置为“True”：
+    
+    - 如果 AzureRMSLicensingEnabled 设置为“True”，则此步骤中无需进一步配置。 
+    
+    - 如果 AzureRMSLicensingEnabled 设置为“False”，请运行 [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)（设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能）中的命令。 
 
-2. 除了为 Exchange Online 启用 IRM 的标准配置外，还可运行以下 PowerShell 命令以确保用户能够读取使用 AD RMS 保护发送的电子邮件。
+2. 运行以下 PowerShell 命令，以确保用户能够读取使用 AD RMS 保护发送的电子邮件。
 
     将自已的组织域名替换为 \<yourcompany.domain>。
 

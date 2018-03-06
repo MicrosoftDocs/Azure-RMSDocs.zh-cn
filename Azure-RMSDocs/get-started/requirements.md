@@ -4,7 +4,7 @@ description: "确定为组织部署 Azure 信息保护的必备条件。"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/22/2018
+ms.date: 02/26/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9496696791c343b01f5c311cb140333bcbbe7b2c
-ms.sourcegitcommit: eeeb1123349ab5e7eb2d352509670af6217123de
+ms.openlocfilehash: f256d8d972c8f74152f40b92bc5adb8bbc340fc7
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -26,14 +26,20 @@ ms.lasthandoff: 01/23/2018
 
 ## <a name="subscription-for-azure-information-protection"></a>Azure 信息保护订阅
 
-对于分类、设置标签和保护，必须具有 [Azure 信息保护计划](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)。 
+对于分类、设置标签和保护：必须具有 [Azure 信息保护计划](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)。 
 
-对于仅保护，必须具有[包括 Rights Management 的 Office 365计划](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
+对于仅保护：必须具有[包括 Rights Management 的 Office 365计划](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
 
 若要确保组织的订阅具有想要使用的 Azure 信息保护功能，请查看 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。
 
-> [!NOTE]
-> 如果对订阅或许可有任何疑问，请勿将问题发布在此页面上，而是联系你的 Microsoft 客户经理或 [Microsoft 支持部门](information-support.md#to-contact-microsoft-support)。
+> [!TIP]
+> 查看 Office 365 计划或 Exchange Online 独立计划是否支持 [Office 365 邮件加密的新增功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)，以向个人电子邮件地址发送受保护的电子邮件。 例如 Gmail、Yahoo 和 Microsoft。 请参阅以下资源：
+>
+> [Exchange Online Service Description](https://technet.microsoft.com/library/exchange-online-service-description.aspx)（Exchange Online 服务说明）
+>
+> [Office 365 教育版](https://technet.microsoft.com/library/mt844095.aspx)
+
+如果对订阅或许可有任何疑问，请勿将问题发布在此页面上，而是联系你的 Microsoft 客户经理或 [Microsoft 支持部门](information-support.md#to-contact-microsoft-support)。
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 

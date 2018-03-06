@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护及其数据保护服务 Azure Rights Man
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/14/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 78d6e75b432635420405f9cb7280c5e2548b65f2
-ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
+ms.openlocfilehash: a6316872d3d3d0987da731a634c13fc4f4a0887b
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 02/15/2018
 
 是否有关于 Azure 信息保护或 Azure Rights Management 服务 (Azure RMS) 的问题？ 请查看此处是否有答案。
 
-定期更新这些常见问题解答页，其中新添加的内容在[企业移动性和安全性博客](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)上的每月文档更新公告中列出。
+这些常见问题页将定期更新，其中新添加的内容将在 [Azure 信息保护技术博客](https://aka.ms/AIPblog)上的每月文档更新公告中列出。
 
 ## <a name="whats-the-difference-between-azure-information-protection-and-azure-rights-management"></a>Azure 信息保护和 Azure Rights Management 之间有何不同？
 
@@ -37,7 +37,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 ## <a name="what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included"></a>需要为 Azure 信息保护准备哪个订阅，以及它包括哪些功能？
 请参阅 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。 
 
-如果你的 Office 365 订阅包含权限管理，请从“功能”页下载 [Azure 信息保护授权数据表](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
+如果你的 Office 365 订阅包含 Rights Management，请下载 [Azure 信息保护许可数据表](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)，其中包含许多有关许可的常见问题。
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure 信息保护客户端是否只适用于包含分类和标记的订阅？
 
@@ -106,7 +106,7 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 
 通过 Azure 信息保护中的标签，可对文档和电子邮件应用一致分类和保护策略，无论它们在本地还是在云中。 此分类和保护与内容的存储位置或其移动方式无关。 通过 [Office 365 中标签的安全性和符合性](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，可在内容处于 Office 365 服务中时，对文档和电子邮件进行分类以供审核和保留。 
 
-当前，用户需单独应用和管理这些标签，但 Microsoft 致力于推出针对多个服务（包括 Azure 信息保护、Office 365、Microsoft Cloud App Security 和 Windows 信息保护）的全面且统一的标记策略。 这一相同的标记架构和存储也可用于软件供应商。 有关详细信息，请参阅 Microsoft Ignite 2017 会话 [Protecting complete data lifecycle using Microsoft information protection capabilities](https://myignite.microsoft.com/videos/55397)（使用 Microsoft 信息保护功能保护完整的数据生命周期）。
+当前，用户需单独应用和管理这些标签，但 Microsoft 致力于推出针对多个服务（包括 Azure 信息保护、Office 365、Microsoft Cloud App Security 和 Windows 信息保护）的全面且统一的标记策略。 你可能听说过此策略，它称为“Microsoft 信息保护”(MIP)。 这一相同的标记架构和存储也可用于软件供应商。 有关详细信息，请参阅博客文章 [Consistent labeling and protection policies coming to Office 365 and Azure Information Protection](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Consistent-labeling-and-protection-policies-coming-to-Office-365/ba-p/161553)（Office 365 和 Azure 即将推出一致的标签和保护策略）。
 
 ## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI 和 Azure 信息保护扫描程序有何区别？
 
@@ -133,8 +133,15 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 
 本技术文档不包含即将发布的版本的相关信息。 有关此类信息和发布公告，请查看 [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)（企业移动性和安全性博客）并在 Twitter 上从 [MicrosoftMobility@MSFTMobility](https://twitter.com/MSFTMobility) 了解最新更新。 如果你对 Office 版本感兴趣，还请务必查看 [Office 博客](https://blogs.office.com/)。
 
-## <a name="where-can-i-find-supporting-information-for-azure-information-protectionsuch-as-legal-compliance-and-slas"></a>在何处可以找到 Azure 信息保护的支持信息 — 例如法律、合规性和 SLA？
+## <a name="is-azure-information-protection-suitable-for-my-country"></a>Azure 信息保护是否适用于我所在的国家/地区？
 
+不同国家/地区的要求和法规不同。 要帮助你的组织回答此问题，请参阅[针对不同国家/地区的适用性](../understand-explore/compliance.md#suitability-for-different-countries)。
+
+## <a name="how-can-azure-information-protection-help-with-gdpr"></a>Azure 信息保护如何帮助你符合 GDPR？
+
+要了解 Azure 信息保护如何帮助你满足一般数据保护条例 (GDPR)，请参阅包含视频的下列博客文章公告：[Microsoft 365 provides an information protection strategy to help with the GDPR](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)（Microsoft 365 提供可帮助你符合 GDPR 的信息保护策略）。
+
+## <a name="where-can-i-find-supporting-information-for-azure-information-protectionsuch-as-legal-compliance-and-slas"></a>在何处可以找到 Azure 信息保护的支持信息 — 例如法律、合规性和 SLA？
 请参阅 [Azure 信息保护的合规性和支持信息](../understand-explore/compliance.md)。
 
 ## <a name="how-can-i-report-a-problem-or-send-feedback-for-azure-information-protection"></a>如何针对 Azure 信息保护报告问题或发送反馈？
