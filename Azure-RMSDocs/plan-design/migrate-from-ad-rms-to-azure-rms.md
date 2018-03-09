@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2ba3ae79308ddee15dc77700b7b660fd4bd91b49
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 6ed025029e3d901a4ee2090bbc9334e396da646c
+ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -97,7 +97,7 @@ ms.lasthandoff: 02/20/2018
 
 - **如果想要通过使用 HSM 保护的密钥管理自己的 Azure 信息保护租户密钥**：
 
-    - 此可选的配置需要 Azure 密钥保管库和一个支持含 HSM 保护密钥的密钥保管库的 Azure 订阅。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。 
+    - 此可选的配置需要 Azure 密钥保管库和一个支持含 HSM 保护密钥的密钥保管库的 Azure 订阅。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/pricing/details/key-vault/)。 
 
 
 ### <a name="cryptographic-mode-considerations"></a>加密模式注意事项

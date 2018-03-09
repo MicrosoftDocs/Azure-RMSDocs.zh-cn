@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2cf486a5319d6addcd150351054d44db62c250b0
-ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
+ms.openlocfilehash: 0c15bcca607992a2782611286205509377f9fd4d
+ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
@@ -103,8 +103,6 @@ killall cfprefsd
 如果 AD RMS 部署使用 RMS 加密模式 1，则迁移完成后建议执行此步骤。 重新生成密钥将生成保护，该保护使用 RMS 加密模式 2。 
 
 虽然 AD RMS 部署使用加密模式 2，但仍建议执行此步骤，因为新密钥有助于保护租户避免 AD RMS 密钥的潜在安全漏洞。
-
-但是，如果将 Exchange Online 和 AD RMS 配合使用，请勿重新生成密钥。 Exchange Online 不支持更改加密模式。 
 
 重新生成 Azure 信息保护租户密钥（也称为“滚动密钥”）时，当前活动密钥将存档，Azure 信息保护开始使用指定的其他密钥。 这个其他密钥可以是你在 Azure Key Vault 中创建的新密钥，也可以是为租户自动创建的默认密钥。
 

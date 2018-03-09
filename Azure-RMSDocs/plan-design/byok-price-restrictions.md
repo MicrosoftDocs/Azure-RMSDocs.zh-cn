@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 614adfa0aca5b65750704d45f52355780c19c137
-ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
+ms.openlocfilehash: 6e0f63857e3b11af82dae18c23080aa849a9d03b
+ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 定价和限制
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 02/12/2018
 
 拥有订阅（包含 Azure 信息保护）的组织可以将 Azure 信息保护租户配置为使用客户托管的密钥 (BYOK)，并[记录其使用情况](../deploy-use/log-analyze-usage.md)（无需额外付费）。 
 
-密钥必须存储在 Azure Key Vault 中（Azure Key Vault 需要 Azure 订阅）。 若要使用受 HSM 保护的密钥，则必须使用 Azure Key Vault 高级服务层。 在 Azure 密钥保管库中使用密钥会按月产生费用。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。
+密钥必须存储在 Azure Key Vault 中（Azure Key Vault 需要 Azure 订阅）。 若要使用受 HSM 保护的密钥，则必须使用 Azure Key Vault 高级服务层。 在 Azure 密钥保管库中使用密钥会按月产生费用。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/pricing/details/key-vault/)。
 
 为 Azure 信息保护租户密钥使用 Azure Key Vault 时，建议为此密钥使用专用密钥保管库，帮助确保只有 Azure Rights Management 服务能使用它。 此配置可确保其他服务的调用不会导致超出密钥保管库的[服务限制](/azure/key-vault/key-vault-service-limits)，否则可能会限制 Azure Rights Management 服务的响应时间。  
 
