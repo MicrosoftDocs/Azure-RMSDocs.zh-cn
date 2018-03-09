@@ -19,7 +19,7 @@
 ### [删除或重排标签](configure-policy-delete-reorder.md)
 ### [更改标签](configure-policy-change-label.md)
 ### [配置保护](configure-policy-protection.md)
-#### [HYOK 限制](configure-adrms-restrictions.md)
+#### [HYOK](configure-adrms-restrictions.md)
 ### [配置视觉标记](configure-policy-markings.md)
 ### [配置条件](configure-policy-classification.md)
 ### [配置作用域内策略](configure-policy-scope.md)
