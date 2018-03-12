@@ -4,7 +4,7 @@ description: "有关 Azure 信息保护及其数据保护服务 Azure Rights Man
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a6316872d3d3d0987da731a634c13fc4f4a0887b
-ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
+ms.openlocfilehash: 0a351c59b9c0cb3d26b5c7e623928ecb53900f41
+ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -35,7 +35,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 用户必须具有有效的用户名和密码才能访问受 Azure 信息保护保护的内容。 要详细了解 Azure 信息保护如何帮助保护数据，请参阅 [Azure 信息保护在保护数据方面的角色](/enterprise-mobility-security/solutions/azure-information-protection-securing-data)。 
 
 ## <a name="what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included"></a>需要为 Azure 信息保护准备哪个订阅，以及它包括哪些功能？
-请参阅 Azure 信息保护网站上的[订阅信息](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)和[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。 
+请参阅 [Azure 信息保护](https://azure.microsoft.com/en-us/pricing/details/information-protection)页面上的订阅信息和功能列表。 
 
 如果你的 Office 365 订阅包含 Rights Management，请下载 [Azure 信息保护许可数据表](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)，其中包含许多有关许可的常见问题。
 
@@ -139,7 +139,7 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 
 ## <a name="how-can-azure-information-protection-help-with-gdpr"></a>Azure 信息保护如何帮助你符合 GDPR？
 
-要了解 Azure 信息保护如何帮助你满足一般数据保护条例 (GDPR)，请参阅包含视频的下列博客文章公告：[Microsoft 365 provides an information protection strategy to help with the GDPR](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)（Microsoft 365 提供可帮助你符合 GDPR 的信息保护策略）。
+要了解 Azure 信息保护如何帮助你满足一般数据保护条例 (GDPR)，请参阅包含视频的下列博客文章公告：[Microsoft 365 提供可帮助你符合 GDPR 的信息保护策略](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)。
 
 ## <a name="where-can-i-find-supporting-information-for-azure-information-protectionsuch-as-legal-compliance-and-slas"></a>在何处可以找到 Azure 信息保护的支持信息 — 例如法律、合规性和 SLA？
 请参阅 [Azure 信息保护的合规性和支持信息](../understand-explore/compliance.md)。

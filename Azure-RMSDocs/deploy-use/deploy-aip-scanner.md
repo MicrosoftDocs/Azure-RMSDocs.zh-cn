@@ -4,7 +4,7 @@ description: "说明如何安装、配置和运行 Azure 信息保护扫描程�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: badc9ea2db84e0537ab394ccb616c0d172469e35
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: 3c15fe1e43f5a9d93ad70e6ac401592bbd41754b
+ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -202,10 +202,14 @@ ms.lasthandoff: 02/23/2018
 
 可通过运行 `-Type` 参数设为 Full 的 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)强制扫描程序重新检查所有文件。 在你希望报告包含所有文件时，此配置非常有用；且它通常在扫描程序于发现模式中运行时使用。 完成全部扫描后，扫描类型自动更改为“增量”，以便后续扫描仅扫描新文件或修改后的文件。
 
-此外，在扫描程序下载具有新条件或更改后的条件时，会检查所有文件。 扫描程序每小时刷新一次策略，当服务启动时以及策略执行一小时之后，也会刷新。
+此外，在扫描程序下载具有新条件或更改后的条件时，会检查所有文件。 扫描程序每小时刷新一次策略，当服务启动时以及策略执行一小时之后，也会刷新。  
 
 > [!TIP]
-> 如需以低于一小时的间隔刷新策略（例如在测试期间）：请手动删除策略文件 %LocalAppData%\Microsoft\MSIP\Policy.msip，并重启 Azure 信息扫描程序服务。
+> 如需以低于一小时的间隔刷新策略（例如在测试期间）：请从 **%LocalAppData%\Microsoft\MSIP\Policy.msip** 和 **%LocalAppData%\Microsoft\MSIP\Scanner** 手动删除策略文件 **Policy.msip**。 然后重新启动 Azure 信息扫描程序服务。
+> 
+> 如果更改了此策略中的保护设置，请在保存保护设置后等待 15 分钟，再重新启动该服务。
+
+如果扫描程序下载了未配置任何自动条件的策略，不会更新扫描程序文件夹中的策略文件副本。 在此方案中，必须删除 **%LocalAppData%\Microsoft\MSIP\Scanner\Policy.msip** 文件，扫描程序才能使用正确配置了自动条件标签的新下载的策略文件。
 
 ## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>优化 Azure 信息保护扫描程序的性能
 

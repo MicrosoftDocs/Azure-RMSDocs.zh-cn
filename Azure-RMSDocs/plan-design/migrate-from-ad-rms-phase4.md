@@ -4,7 +4,7 @@ description: "从 AD RMS 迁移到 Azure 信息保护的第 4 阶段包括从 AD
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d516d9c82ce0c7bfd35dbb839cd861a301c3443f
-ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
+ms.openlocfilehash: c4279991a91dee1f4645209eda937ca288716761
+ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
@@ -29,27 +29,20 @@ ms.lasthandoff: 02/28/2018
 
 ## <a name="step-8-configure-irm-integration-for-exchange-online"></a>步骤 8. 为 Exchange Online 配置 IRM 集成
 
+> [!IMPORTANT]
+> 因为无法控制哪些迁移了用户的收件人可能选择受保护的电子邮件，请确保组织中所有用户和启用邮件的组在 Azure AD 中都有一个可用于 Azure 信息保护的帐户。 [详细信息](prepare.md)
+
 使用选择的 Azure 信息保护租户密钥拓扑单独执行以下操作：
 
-1. 运行 Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) 命令。 如需运行此命令的帮助，请参阅 [Exchange Online：IRM 配置](/..deploy-use/configure-office365.md#exchange-online-irm-configuration)中的分步说明。
+1. 若要确保用户能够读取使用 AD RMS 保护发送的电子邮件，请确保你拥有 AD RMS 群集的 DNS SRV 记录。 如果未在步骤 7 中创建 DNS SRV 记录以实现客户端重新配置，请立即创建此记录以支持 Exchange Online。 [说明](migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)
+
+2. 运行 Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) 命令。 如需运行此命令的帮助，请参阅 [Exchange Online：IRM 配置](/..deploy-use/configure-office365.md#exchange-online-irm-configuration)中的分步说明。
     
     在输出中，检查“AzureRMSLicensingEnabled”是否设置为“True”：
     
     - 如果 AzureRMSLicensingEnabled 设置为“True”，则此步骤中无需进一步配置。 
     
     - 如果 AzureRMSLicensingEnabled 设置为“False”，请运行 [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)（设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能）中的命令。 
-
-2. 运行以下 PowerShell 命令，以确保用户能够读取使用 AD RMS 保护发送的电子邮件。
-
-    将自已的组织域名替换为 \<yourcompany.domain>。
-
-        $irmConfig = Get-IRMConfiguration
-        $list = $irmConfig.LicensingLocation
-        $list += "https://adrms.<yourcompany.domain>/_wmcs/licensing"
-        Set-IRMConfiguration -LicensingLocation $list
-        Set-IRMConfiguration -internallicensingenabled $false
-        Set-IRMConfiguration -internallicensingenabled $true
-
 
 ## <a name="step-9-configure-irm-integration-for-exchange-server-and-sharepoint-server"></a>步骤 9. 为 Exchange Server 和 SharePoint Server 配置 IRM 集成
 

@@ -4,7 +4,7 @@ description: "此信息有助于规划和管理 Azure 信息保护租户密钥�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7a3ed134c84c5293ecc2391fdaec32ccfc425910
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 05b6a4facc4158cc7e2cb7ab4067c6b19566ef69
+ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 02/20/2018
 
 确定哪种租户密钥拓扑最适合你的组织：
 
-- **由 Microsoft 托管**：Azure 信息保护自动为组织生成一个租户密钥。 默认情况下，Microsoft 将此密钥用于租户并管理租户密钥生命周期的大多数方面。 
+- **由 Microsoft 托管**：Microsoft 会为你的组织自动生成一个专用于 Azure 信息保护的租户密钥。 默认情况下，Microsoft 将此密钥用于租户并管理租户密钥生命周期的大多数方面。 
     
     这是最简单的选项，管理开销最低。 大多数情况下，你甚至不需要知道自己有租户密钥。 你只需注册 Azure 信息保护，密钥管理过程的剩余部分将由 Microsoft 处理。
 
