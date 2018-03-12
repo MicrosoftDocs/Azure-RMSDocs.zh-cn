@@ -4,7 +4,7 @@ description: "当你自己管理 Azure 信息保护租户密钥（自带密钥�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/10/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 47f2e19e7eed107a44ac1bed744015c878876e9f
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: 70d34253300e2bef442cdd7d8cf2c06ac8a9fd88
+ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 10/10/2017
 ## <a name="backup-and-recover-your-tenant-key"></a>备份和恢复你的租户密钥
 由于是你本人管理自己的租户密钥，因此你需负责备份 Azure 信息保护使用的密钥。 
 
-如果在 Thales HSM 中已本地生成租户密钥：若要备份该密钥，请备份标记化密钥文件、安全体系文件和管理员卡。 将密钥传送到 Azure Key Vault 时，该服务将保存已标记化的密钥文件，以防出现任何服务节点故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将它作为完全备份。 例如，如果需要密钥的明文副本以在 Thales HSM 外部使用，则 Azure Key Vault 无法为你检索该副本，因为它仅有不可恢复的副本。
+如果在 Thales HSM 中已本地生成租户密钥：若要备份该密钥，请备份标记化密钥文件、安全体系文件和管理员卡。 将密钥传送到 Azure Key Vault 时，该服务将保存已标记化的密钥文件，以防出现任何服务节点故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将此标记化密钥文件作为完全备份。 例如，如果需要密钥的明文副本以在 Thales HSM 外部使用，则 Azure Key Vault 无法为你检索该副本，因为它仅有不可恢复的副本。
 
 Azure Key Vault 具有一个[备份 cmdlet](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey)，可通过将其下载并存储到一个文件中来备份密钥。 由于下载的内容已加密，因此它不能在 Azure Key Vault 外使用。 
 
@@ -75,10 +75,10 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 
 |事件描述|可能的响应|
 |------------------------|-------------------|
-|你的租户密钥泄露。|重新生成租户密钥。 请参阅[重新生成租户密钥](#rkey-your-tenant-key)。|
+|你的租户密钥泄露。|重新生成租户密钥。 请参阅[重新生成租户密钥](#rekey-your-tenant-key)。|
 |未经授权的个人或恶意软件获取了使用你的租户密钥的权限，但密钥本身并未泄露。|重新生成租户密钥在这种情况下并不奏效，需要进行根源分析。 如果进程或软件 Bug 是导致未经授权的个人获得访问权限的原因，则必须解决这一问题。|
-|在当前这代 HSM 技术中发现的漏洞。|Microsoft 必须更新 HSM。 如果有理由认为这些漏洞泄露了密钥，Microsoft 将指示所有客户更新他们的租户密钥。|
-|在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 密钥保管库或 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户更新他们的租户密钥。|
+|在当前这代 HSM 技术中发现的漏洞。|Microsoft 必须更新 HSM。 如果有理由认为这些漏洞泄露了密钥，Microsoft 将指示所有客户重新生成他们的租户密钥。|
+|在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 密钥保管库或 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户重新生成他们的租户密钥。|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

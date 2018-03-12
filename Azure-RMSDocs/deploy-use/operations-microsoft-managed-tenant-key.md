@@ -4,7 +4,7 @@ description: "当 Microsoft 管理 Azure 信息保护租户密钥（默认）时
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5aaf4393e39412a8c8b18678f4edea7a61c148dc
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: dea6fffc32876b548e5daa33a76e7891088f1e9b
+ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
@@ -103,9 +103,9 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 
 |事件描述|可能的响应|
 |------------------------|-------------------|
-|你的租户密钥泄露。|重新生成租户密钥。 请参阅本文中的[重新生成租户密钥](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key)部分。|
+|你的租户密钥泄露。|重新生成租户密钥。 请参阅本文中的[重新生成租户密钥](#rekey-your-tenant-key)部分。|
 |未经授权的个人或恶意软件获取了使用你的租户密钥的权限，但密钥本身并未泄露。|重新生成租户密钥在这种情况下并不奏效，需要进行根源分析。 如果进程或软件 Bug 是导致未经授权的个人获得访问权限的原因，则必须解决这一问题。|
-|在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户续订他们的租户密钥。|
+|在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户重新生成他们的租户密钥。|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
