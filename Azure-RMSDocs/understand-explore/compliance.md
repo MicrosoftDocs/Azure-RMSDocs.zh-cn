@@ -4,7 +4,7 @@ description: "Azure 信息保护的支持信息，包括法律、合规性和 SL
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ef0b40db5dbbb66d7cbf45028862576a58886051
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: 2980032c72905ec237dea799e8d6d13e11746df3
+ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure 信息保护的合规性和支持信息
 
@@ -56,11 +56,11 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 ## <a name="service-level-agreements"></a>服务级别协议
 
-- 按所选区域的 Azure 信息保护服务级别协议：[从产品许可搜索页下载](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=37)
+- [Azure 信息保护的 SLA](https://azure.microsoft.com/support/legal/sla/information-protection/v1_0/)
 
-    - 例如，单击 **OnlineSvcsConsolidatedSLA(WW)(English)(March2016)** 以下载适用于北美的 2016 年 3 月服务级别协议。
+- [Azure Active Directory 的 SLA](https://azure.microsoft.com/en-us/support/legal/sla/active-directory/v1_0/)
 
--   Azure Active Directory 的服务级别协议： [服务级别协议](http://azure.microsoft.com/support/legal/sla/)
+- [Azure Key Vault 的 SLA](https://azure.microsoft.com/en-us/support/legal/sla/key-vault/v1_0/)
 
 ## <a name="documentation"></a>文档
 

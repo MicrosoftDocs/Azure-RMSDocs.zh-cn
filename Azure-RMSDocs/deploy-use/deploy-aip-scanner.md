@@ -4,7 +4,7 @@ description: "说明如何安装、配置和运行 Azure 信息保护扫描程�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/08/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3c15fe1e43f5a9d93ad70e6ac401592bbd41754b
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: f3c302b2379262a6dac87873cb607cf3cd408bcd
+ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/09/2018
 
 ## <a name="install-the-azure-information-protection-scanner"></a>安装 Azure 信息保护扫描程序
 
-1. 使用为运行扫描程序而创建的服务帐户，登录运行该扫描程序的 Windows Server 计算机。
+1. 登录到将要运行扫描程序的 Windows Server 计算机。 使用具有本地管理员权限并具有写入到 SQL Server master 数据库权限的帐户。
 
 2. 使用“以管理员身份运行”选项打开 Windows PowerShell 会话。
 
@@ -92,15 +92,17 @@ ms.lasthandoff: 03/09/2018
     
     要创建这些应用程序，请按照管理员指南中[如何以非交互方式为 Azure 信息保护标记文件](../rms-client/client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)的说明执行操作。
 
-2. 在 Windows Server 计算机中，仍使用扫描程序服务帐户登录，然后运行 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)（指定从上一步中复制的值）：
+2. 在 Windows Server 计算机中，如果你的扫描程序服务帐户已就安装授予了“本地登录”权限：使用此帐户登录并启动 PowerShell 会话。 运行 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)，指定从上一步骤中复制的值：
     
     ```
     Set-AIPAuthentication -webAppId <ID of the "Web app / API" application>  -webAppKey <key value generated in the "Web app / API" application> -nativeAppId <ID of the "Native" application >
     ```
+    
+    系统提示时，请为 Azure AD 的服务帐户凭据指定密码，然后单击“接受”。
+    
+    如果你的扫描程序服务帐户无法就安装授予“本地登录”权限：请按照管理员指南中[指定和使用 Set-AIPAuthentication 的令牌参数](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)一节中的说明来操作。 
 
-3. 系统提示时，请为 Azure AD 的服务帐户凭据指定密码，然后单击“接受”。
-
-扫描程序现已拥有一个令牌，可向 Azure AD 进行身份验证。该令牌的有效期为 1 年、2 年或永不过期，具体取决于 Azure AD 中“Web 应用/API”的配置。 如果令牌过期，则须重复步骤 1 到 3。
+扫描程序现已拥有一个令牌，可向 Azure AD 进行身份验证。该令牌的有效期为 1 年、2 年或永不过期，具体取决于 Azure AD 中“Web 应用/API”的配置。 如果令牌过期，则须重复步骤 1 和步骤 2。
 
 现可指定要扫描的数据存储。 
 
@@ -209,7 +211,7 @@ ms.lasthandoff: 03/09/2018
 > 
 > 如果更改了此策略中的保护设置，请在保存保护设置后等待 15 分钟，再重新启动该服务。
 
-如果扫描程序下载了未配置任何自动条件的策略，不会更新扫描程序文件夹中的策略文件副本。 在此方案中，必须删除 **%LocalAppData%\Microsoft\MSIP\Scanner\Policy.msip** 文件，扫描程序才能使用正确配置了自动条件标签的新下载的策略文件。
+如果扫描程序下载了未配置任何自动条件的策略，不会更新扫描程序文件夹中的策略文件副本。 在此方案中，必须从 **%LocalAppData%\Microsoft\MSIP\Policy.msip** 和 **%LocalAppData%\Microsoft\MSIP\Scanner** 中删除策略文件 **Policy.msip**，然后扫描程序才能够使用正确配置了自动条件标签的新下载的策略文件。
 
 ## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>优化 Azure 信息保护扫描程序的性能
 

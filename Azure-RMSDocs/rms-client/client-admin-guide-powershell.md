@@ -4,7 +4,7 @@ description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 714afa8c839d91ba61043a643433c5045a4aad7d
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 5bd2af4da402c0096cb58bba1d44684ad73656d6
+ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -535,6 +535,8 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 对于对文件进行标记和保护的帐户，请使用以下附加步骤和说明来避免初次交互式登录。 通常，只有无法为向此帐户授予**本地登录**权限但向其授予了**作为批处理作业登录**权限时才需要执行这些附加步骤。 例如，对于运行 Azure 信息保护扫描程序的服务帐户，情况可能如此。
 
+高级步骤：
+
 1. 在本地计算机上创建一个 PowerShell 脚本。
 
 2. 运行 Set-AIPAuthentication 来获取一个访问令牌并将其复制到剪贴板。
@@ -543,7 +545,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 4. 创建一个任务，使其在对文件进行标记和保护的服务帐户的上下文中运行该 PowerShell 脚本。
 
-5. 确认为该服务帐户保存了令牌，并删除 PowerShell 脚本。
+5. 确认为该服务帐户保存了令牌，并删除该 PowerShell 脚本。
 
 #### <a name="step-1-create-a-powershell-script-on-your-local-computer"></a>步骤 1：在本地计算机上创建一个 PowerShell 脚本
 

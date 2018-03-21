@@ -4,7 +4,7 @@ description: "了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2018
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: faa00eee76e6c084db1a4dfb1d477e491fae5fee
-ms.sourcegitcommit: 3e9b3c2206807e82cc4721a50862b74152906f63
+ms.openlocfilehash: 8411fd46305da69e8fe06ae3851d5066695cdc24
+ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 02/28/2018
 
 ## <a name="do-not-forward-option-for-emails"></a>电子邮件的“不得转发”选项
 
-Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应用和 Exchange 传输规则）有一个附加的电子邮件信息权限保护选项：“不得转发”。 
+Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应用和 Exchange 邮件流规则）有一个针对电子邮件的附加信息权限保护选项：“不得转发”。 
 
 尽管**不得转发**看似用户（和 Exchange 管理员）可选择的默认权限管理模板，但此选项并不是模板。 因此，查看和管理 Azure 权限管理的模板时，在 Azure 门户中看不到该模板。 相反，**不得转发**选项是用户对其电子邮件收件人动态应用的一组权限。
 
@@ -116,7 +116,7 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 当 Exchange Online 使用 Office 365 邮件加密的新功能后，一项新的电子邮件选项将变为可用：“仅加密”。
 
-此选项会被部署到使用 Exchange Online 的租户，最初只适用于 Outlook 网页版以及作为适用于传输规则的一个权限保护选项。 有关详细信息，请参阅来自 office 团队的下列博客文章公告：[Office 365 邮件加密即将推出“仅加密”](https://aka.ms/omefeb2018)。
+此选项会被部署到使用 Exchange Online 的租户，最初只适用于 Outlook 网页版，以及作为适用于邮件流规则的一个权限保护选项。 有关详细信息，请参阅来自 office 团队的下列博客文章公告：[Office 365 邮件加密即将推出“仅加密”](https://aka.ms/omefeb2018)。
 
 选择此选项后，电子邮件会被加密，且收件人必须要进行身份验证。 收件人将具有除完全控制以外的所有使用权限。 此使用权限的组合意味着除了无法删除保护外，收件人不会有任何限制。 例如，收件人可以复制、打印和转发此电子邮件。 同样，可以保存、复制和打印任何附加并自动受保护的 Office 文档。
 
@@ -165,7 +165,6 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 - 使用 PowerShell 配置模板时，使用许可证有效期从 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) 和 [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) cmdlet 中的 LicenseValidityDuration 参数中取得其值。
     
     有关使用 PowerShell 配置此设置的详细信息和指南，请参阅每个 cmdlet 的帮助。
-
 
 ## <a name="see-also"></a>另请参阅
 [配置和管理 Azure 信息保护的模板](configure-policy-templates.md)

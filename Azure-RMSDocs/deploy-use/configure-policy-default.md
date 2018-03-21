@@ -4,17 +4,17 @@ description: "了解如何配置 Azure 信息保护的默认策略。 如果修�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: da8557be0a70cee0e7a207a8ed285f6e843ac626
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: d89acde3a2d9e4db529c429fdedf2f3ed05e2fe5
+ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
@@ -30,7 +30,11 @@ ms.lasthandoff: 02/23/2018
 
 此版本的默认策略为 2017 年 7 月 31 日发布的版本。
 
-仅当 Azure Rights Management 服务在创建策略时已被[激活](activate-service.md)才会创建此默认策略。 如果未激活此服务，则默认策略不会为以下子标签配置保护：
+此默认策略是在 Azure Rights Management 服务激活时创建的（从 2018 年 2 月开始对新租户可用）。 有关详细信息，请参阅博客文章公告[对 Azure 信息保护中的保护堆栈所做的改进](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection)。
+
+如果在创建策略前已手动[激活此服务](activate-service.md)，也会创建此默认策略。 
+
+如果未激活此服务，则默认策略不会为以下子标签配置保护：
 
 - **机密\所有员工**
 
@@ -44,7 +48,7 @@ ms.lasthandoff: 02/23/2018
 
 将保护应用于“所有员工”子标签时，将通过使用在 Azure 门户中自动转换为标签的默认模板来配置此保护。 有关这些模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
-自 2017 年 8 月 30 日起，此版默认策略包括标签名称和说明的多语言版本。 
+自 2017 年 8 月 30 日起，此版默认策略包括多语言版本的标签名称和说明。 
 
 #### <a name="more-information-about-the-recipients-only-sublabel"></a>有关“仅收件人”子标签的详细信息
 
