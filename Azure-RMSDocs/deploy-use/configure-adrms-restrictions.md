@@ -4,17 +4,17 @@ description: "如果选择具有 Azure 信息保护的 HYOK (AD RMS) 保护，�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/08/2017
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 6167b99593bacdf9e717c3b57839440bac39ecec
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.openlocfilehash: a0329d66ee71ee815c0700a63172617d1fddf30a
+ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 保护的自留密钥 (HYOK) 要求和限制
 
@@ -95,7 +95,13 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
     
     - [加密模式 2](https://technet.microsoft.com/library/hh867439.aspx)：可以通过检查 AD RMS 群集属性、“常规”选项卡来确认该模式。
     
-    - Active Directory 中未注册服务连接点 (SCP)：结合使用 AD RMS 保护和 Azure 信息保护时未使用 SCP。 如果已就 AD RMS 部署注册了 SCP，必须将其删除，以便 Azure 权限管理保护功能成功[发现服务](../rms-client/client-deployment-notes.md#rms-service-discovery)。
+    - 每个 AD RMS 服务器都针对证书 URL 进行了配置。 [说明](#configuring-ad-rms-servers-to-locate-the-certification-url) 
+    
+    - Active Directory 中未注册服务连接点 (SCP)：结合使用 AD RMS 保护和 Azure 信息保护时未使用 SCP。 
+    
+        - 如果已就 AD RMS 部署注册了 SCP，必须将其删除，以便 Azure 权限管理保护功能成功[发现服务](../rms-client/client-deployment-notes.md#rms-service-discovery)。 
+        
+        - 如果你正在为 HYOK 安装新的 AD RMS 群集，则跳过在配置第一个节点期间注册 SCP 的步骤。 对于每个其他节点，请确保在添加 AD RMS 角色并加入现有群集前，服务器已针对证书 URL 进行了配置。
     
     - 配置 AD RMS 服务器，以搭配使用 SSL/TLS 和受连接的客户端信任的有效 x.509 证书：生产环境需要，但用于测试或评估时不需要。
     
@@ -114,6 +120,24 @@ Azure RMS 通过为组织使用由 Microsoft 管理的私钥（默认）或你�
 
 有关 AD RMS 的部署信息和说明，请参阅 Windows Server 库中的 [Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx)。 
 
+
+## <a name="configuring-ad-rms-servers-to-locate-the-certification-url"></a>配置 AD RMS 服务器以找到证书 URL
+
+1. 在群集中的每个 AD RMS 服务器上，创建以下注册表项：
+
+    `Computer\HKEY_LOCAL_MACHINE\Software\Microsoft\DRMS\GICURL = "<string>"`
+    
+    对于 \<字符串值 >，请指定下列值之一：
+    
+    - 对于使用 SSL/TLS 的 AD RMS 群集：
+
+            https://<cluster_name>/_wmcs/certification/certification.asmx
+    
+    - 对于不使用 SSL/TLS 的 AD RMS 群集（仅测试网络）：
+        
+            http://<cluster_name>/_wmcs/certification/certification.asmx
+
+2. 重新启动 IIS。
 
 ## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>查找相关信息以使用 Azure 信息保护标签指定 AD RMS 保护
 
