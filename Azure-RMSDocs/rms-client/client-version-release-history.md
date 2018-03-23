@@ -1,22 +1,22 @@
 ---
-title: "Azure 信息保护客户端&colon; 版本发行历史记录和支持策略"
-description: "请参阅适用于 Windows 的 Azure 信息保护客户端版本的新增功能或改进功能，并了解支持的生命周期策略。"
+title: Azure 信息保护客户端&colon; 版本发行历史记录和支持策略
+description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的新增功能或改进功能，并了解支持的生命周期策略。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 19390c05719ebfee7e3442437d3f5bdfd303c652
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 10fe839ff24994af0c50fff6aeac303d57a19ea6
+ms.sourcegitcommit: 65d6b0ecfbca5071afe29e63aea6226ad7a911b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -154,30 +154,6 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 - 用户指定自定义权限时的电子邮件验证。 此外，现在可以通过按 Enter 指定多个电子邮件地址。
 
 - 当父标签的所有子标签都配置为保护，并且客户端没有支持保护的 Office 版本时，不会显示父标签。 
-
-## <a name="version-172100"></a>版本 1.7.210.0
-
-**发布日期**：2017/06/06
-
-此版本包括 RMS 客户端的 MSIPC 1.0.2217.1 版本。
-
-**新增功能**：
-
-- 新的 PowerShell cmdlet：[Set-AIPFileClassification](/powershell/module/azureinformationprotection/Set-AIPFileClassification)。 运行此 cmdlet 时，它会检查文件内容，并根据你在 Azure 信息保护策略中指定的条件自动将标签应用到未标记的文件。
-
-**修补程序**：
-
-- 未连接到 Internet 但具备有效 Azure 信息保护策略的计算机现在支持所有标记和分类 cmdlet。
-
-- 为保持一致性，[Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) cmdlet 的输出参数从英式英语 (IsLabelled) 更改为美式英语 (IsLabeled)。 如果你有用于查找此参数的脚本或自动化进程，请更新此参数的拼写。
-
-- 稳定性的常规修复包括：
-
-    - 对于 Outlook：修复崩溃、高内存消耗和菜单显示问题。
-    
-    - 对于 Word、Excel 和 PowerPoint：修复 CPU 使用率过高、保存大型 Excel 文件时的显示问题或应用程序停止响应等问题。 
-    
-    此外，对于这些应用程序，若要提高使用 SharePoint Online 和 OneDrive for Business 的 Office 2016 性能，请在文件关闭而不是保存时（自动保存或用户选择保存）应用自动和建议标记。 同样，如果设置“所有文档和电子邮件都必须具有一个标签”处于启用状态，那么在该文件关闭之前，系统不会提示用户选择标签。 Word 2016 和 Excel 2016 为例外情况，用户选择“另存为”选项。 然后，此操作触发这些标记行为（如果已配置）。 
 
 ## <a name="next-steps"></a>后续步骤
 
