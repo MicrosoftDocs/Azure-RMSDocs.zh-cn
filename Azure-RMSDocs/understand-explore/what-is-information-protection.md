@@ -1,26 +1,26 @@
 ---
-title: "什么是 Azure 信息保护？"
-description: "Azure 信息保护服务概述。"
+title: 什么是 Azure 信息保护？
+description: Azure 信息保护服务概述。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/24/2018
+ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: c3bbf2a9e0fee14ddeb2f18fa5671209ad92cfd4
-ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
+ms.openlocfilehash: 22cb2afc014ce7538d7163edc3b12e7d7a137c72
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
 >适用于：Azure 信息保护
 
-Azure 信息保护是基于云的解决方案，可帮助组织对其文档和电子邮件进行分类、添加标签和保护。 这可以由定义规则和条件的管理员自动进行、由用户手动进行或是组合进行（在这种情况下会向用户提供建议）。 
+Azure 信息保护（有时亦称为 AIP）是基于云的解决方案，有助于组织对其文档和电子邮件进行分类、标记和保护。 这可以由定义规则和条件的管理员自动进行、由用户手动进行或是组合进行（在这种情况下会向用户提供建议）。 
 
 下图显示实际操作中的 Azure 信息保护示例。 管理员配置了规则来检测敏感数据（在此例中是信用卡信息）。 当用户保存包含信用卡信息的 Word 文档时，她会看到一个自定义工具提示，建议她应用管理员配置的特定标签。 该标签可对文档进行分类并（可选）根据配置进行保护。 
 

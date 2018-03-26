@@ -1,20 +1,20 @@
 ---
-title: "新的 Azure 信息保护标签"
-description: "尽管 Azure 信息保护附带了可以自定义的默认标签，你还可以创建用户可在信息保护栏中看到的自己的标签。"
+title: 新的 Azure 信息保护标签
+description: 尽管 Azure 信息保护附带了可以自定义的默认标签，你还可以创建用户可在信息保护栏中看到的自己的标签。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2018
+ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 8628fa5b17659a49ff9f63ae6dad32f073e8ced6
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: cbfa670d3a80068754e604ebb77892f320095ae9
+ms.sourcegitcommit: 32b233bc1f8cef0885d9f4782874f1781170b83d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>如何创建 Azure 信息保护的标签
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 02/23/2018
 
 可以添加新标签，或在需要更高级别的分类时将新子标签添加到现有标签。 例如，[默认策略](configure-policy-default.md)中的最后一个标签包含子标签。
 
-在为标签创建首个子标签时，用户不能再选择原始的父标签。 如有需要，可通过新建子标签的方式来重新创建父标签设置，以便用户应用相同的设置。
+创建标签的首个子标签时，用户不能再选择原始父标签。 如有必要，请新建子标签来重新创建父标签设置，让用户能够应用相同的设置。
 
 使用以下说明将一个新标签添加到 Azure 的信息保护策略。
 
@@ -44,7 +44,9 @@ ms.lasthandoff: 02/23/2018
 
 4. 在“**标签**”或“**子标签**”边栏选项卡上，选择要应用于此新标签的选项，然后单击“**保存**”。
     
-    请注意，新标签将自动分配为黑色。 从颜色列表中选择一种可区分的颜色，或者输入颜色的红色、绿色和蓝色 (RGB) 组成的十六进制三元色代码。 例如，#DAA520。 如果需要有关这些代码的参考，可首先查看 MSDN 文档中实用的[按名称排列颜色](https://msdn.microsoft.com/library/aa358802\(v=vs.85\).aspx)。可在多种图片编辑程序（例如 Microsoft 画图，用户可在此程序中通过调色板选择自定义颜色，它会自动显示 RGB 值）中找到这些代码。
+    指定显示名称时，禁止指定一些字符（如反斜杠和 & 号），因为并非所有使用 Azure 信息保护的服务和应用程序都支持这些字符。 除了禁止指定的字符外，还请不要指定 # 字符。    
+    
+    请注意，新标签将自动分配为黑色。 从颜色列表中选择一种可区分的颜色，或者输入颜色的红色、绿色和蓝色 (RGB) 组成的十六进制三元色代码。 例如，#DAA520。 如果需要有关这些代码的参考，可首先查看 MSDN 文档中实用的[按名称排列颜色](https://msdn.microsoft.com/library/aa358802\(v=vs.85).aspx)。这些代码应用于许多图片编辑程序（例如Microsoft 画图，用户可在此程序中通过调色板选择自定义颜色，它会自动显示 RGB 值）。
 
 5. 若要使所做的更改适用于用户，请在初始“Azure 信息保护”边栏选项卡，单击“发布”。
 

@@ -1,22 +1,22 @@
 ---
-title: "BYOK 定价和限制 - Azure 信息保护"
-description: "了解结合使用客户托管的密钥（称为“自带密钥”或 BYOK）与 Azure 信息保护时的限制。"
+title: BYOK 定价和限制 - Azure 信息保护
+description: 了解结合使用客户托管的密钥（称为“自带密钥”或 BYOK）与 Azure 信息保护时的限制。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 12/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6e0f63857e3b11af82dae18c23080aa849a9d03b
-ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
+ms.openlocfilehash: ac9324a0418a557682714b6f2b5621a2d9f7530e
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 定价和限制
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 03/02/2018
 
 - 作为广受认可的安全性最佳实践，Azure 密钥保管库提供角色分离。 Azure 信息保护管理员可专注于管理数据分类和保护，Azure 密钥保管库管理员则可专注于管理加密密钥和任何有可能要求安全性或合规性的特殊策略。
 
-- 某些组织对其主密钥在何处生存有所限制。 由于该服务在许多 Azure 区域内都可用，因此 Azure 密钥保管库可提供对主密钥存储位置的高级别控制。 目前，可以从 28 个区域中进行选择，而且这个数字还将不断地增加。 有关详细信息，请参阅 Azure 网站上的 [可用产品(按区域)] 页 (https://azure.microsoft.com/regions/services/)。
+- 某些组织对其主密钥在何处生存有所限制。 由于该服务在许多 Azure 区域内都可用，因此 Azure 密钥保管库可提供对主密钥存储位置的高级别控制。 目前，可以从 28 个区域中进行选择，而且这个数字还将不断地增加。 有关详细信息，请参阅 Azure 网站上的[可用产品（按区域）] (https://azure.microsoft.com/regions/services/) 页。
 
 除管理密钥外，Azure 密钥保管库还为安全管理员提供其他使用加密的服务和应用程序的存储、访问、管理证书和机密（如密码）的相同管理体验。 
 
@@ -59,8 +59,8 @@ BYOK 和使用情况日志记录可无缝地适用于与 Azure 信息保护使�
 
 ## <a name="next-steps"></a>后续步骤
 
-如果你已决定管理自己的密钥，转至[实现你的 Azure Rights Management 租户密钥](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)。
+如果已决定管理自己的密钥，请转到[实现 Azure 信息保护租户密钥](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)。
 
-如果你已决定保留默认配置，让 Microsoft 管理你的租户密钥，请参阅“计划和实现你的 Azure Rights Management 租户密钥”文章中的[后续步骤](plan-implement-tenant-key.md#next-steps)。
+如果已决定保留默认配置，让 Microsoft 管理租户密钥，请参阅“计划和实现 Azure 信息保护租户密钥”一文中的[后续步骤](plan-implement-tenant-key.md#next-steps)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

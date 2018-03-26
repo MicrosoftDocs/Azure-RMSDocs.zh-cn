@@ -1,22 +1,22 @@
 ---
-title: "从 AD RMS 迁移到 Azure 信息保护 - 第 5 阶段"
-description: "从 AD RMS 迁移到 Azure 信息保护的第 5 阶段包括从 AD RMS 迁移到 Azure 信息保护的步骤 10 至 12。"
+title: 从 AD RMS 迁移到 Azure 信息保护 - 第 5 阶段
+description: 从 AD RMS 迁移到 Azure 信息保护的第 5 阶段包括从 AD RMS 迁移到 Azure 信息保护的步骤 10 至 12。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0c15bcca607992a2782611286205509377f9fd4d
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: 520773a2a893e7e88feb970a2539db4100287a72
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
@@ -116,7 +116,7 @@ killall cfprefsd
 
 - 如果租户密钥由你管理 (BYOK)：在 Azure Key Vault 中，为 Azure 信息保护租户重复密钥创建流程，然后再次运行 [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) cmdlet 以指定新密钥的 URI。 
 
-有关管理 Azure 信息保护租户密钥的详细信息，请参阅[针对 Azure Rights Management 租户密钥的操作](../deploy-use/operations-tenant-key.md)。
+若要详细了解如何管理 Azure 信息保护租户密钥，请参阅 [Azure 信息保护租户密钥操作](../deploy-use/operations-tenant-key.md)。
 
 
 ## <a name="next-steps"></a>后续步骤

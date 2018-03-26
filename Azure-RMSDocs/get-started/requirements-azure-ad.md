@@ -1,22 +1,22 @@
 ---
-title: "对 AIP 的 Azure Active Directory 要求"
-description: "确定使用 Azure 信息保护的 Azure AD 要求，以便用户可以成功进行身份验证。"
+title: 对 AIP 的 Azure Active Directory 要求
+description: 确定使用 Azure 信息保护的 Azure AD 要求，以便用户可以成功进行身份验证。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2017
+ms.date: 03/19/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2a079dbc1df01c8c9402d7d79e3f587f13b44654
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 62c9bba17c561fda86393ed4e76c00895613d0e3
+ms.sourcegitcommit: 1b44f6bd25b756fa85fa5f47aa4c0486f9486832
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
 
@@ -89,7 +89,13 @@ ms.lasthandoff: 07/31/2017
 
         有关此方案的详细信息，请参阅 Office 博客上的[使用 Office 365 – 标识程序现在已简化](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)。
 
-Rights Management 连接器不支持 MFA。 如果为本地服务器部署此连接器，必须将一个帐户用于不需要 MFA 的连接器。
+Rights Management 连接器和 Azure 信息保护扫描程序不支持 MFA。 如果部署连接器或扫描程序，以下帐户不得要求执行 MFA：
+
+- 安装和配置连接器的帐户。
+
+- 连接器在 Azure AD 中创建的服务主体帐户 Aadrm_S-1-7-0。
+ 
+- 运行扫描程序的服务帐户。
 
 ## <a name="next-steps"></a>后续步骤
 若要查看其他要求，请参阅 [Azure 信息保护的要求](requirements-azure-rms.md)。

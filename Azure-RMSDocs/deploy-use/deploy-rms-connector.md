@@ -1,22 +1,22 @@
 ---
-title: "部署 Rights Management 连接器 - AIP"
-description: "有关部署 RMS 连接器的说明。该连接器提供数据保护服务，包括保护使用 Exchange Server、SharePoint Server 或 Windows Server 和文件分类基础结构 (FCI) 的现有本地部署。"
+title: 部署 Rights Management 连接器 - AIP
+description: 有关部署 RMS 连接器的说明。该连接器提供数据保护服务，包括保护使用 Exchange Server、SharePoint Server 或 Windows Server 和文件分类基础结构 (FCI) 的现有本地部署。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6560381eb07d582d817d00cc76be880998f676f2
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: 87746ad526f191907ad2670604c357e5e926b84e
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>部署 Azure Rights Management 连接器
 
@@ -51,7 +51,7 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 
 如果你自行管理 Azure RMS 的租户密钥（自带密钥，即 BYOK 方案），RMS 连接器和使用该连接器的本地服务器不会访问包含你的租户密钥的硬件安全模块 (HSM)。 这是因为，使用租户密钥的所有加密操作都是在 Azure RMS 中执行的，而不是在在本地。
 
-若要了解有关此由用户管理租户密钥方案的详细信息，请参阅[计划和实现 Azure Rights Management 租户密钥](../plan-design\plan-implement-tenant-key.md)。
+若要详细了解管理租户密钥的此方案，请参阅[计划和实现 Azure 信息保护租户密钥](../plan-design\plan-implement-tenant-key.md)。
 
 ## <a name="prerequisites-for-the-rms-connector"></a>RMS 连接器的必备组件
 在安装 RMS 连接器之前，请确保符合以下要求。
