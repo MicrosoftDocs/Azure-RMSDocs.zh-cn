@@ -1,22 +1,22 @@
 ---
-title: "Azure 信息保护的要求"
-description: "确定为组织部署 Azure 信息保护的必备条件。"
+title: Azure 信息保护的要求
+description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 03/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 20726f99a10328fac777dc22cb59372db0ab384d
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: 9542eb6f679d931de556f706afa3b51cfd9d2bb8
+ms.sourcegitcommit: 58cd89cc6f6407648854e2e2d28a61325b5c8922
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -38,12 +38,16 @@ ms.lasthandoff: 03/09/2018
 > [Exchange Online 服务说明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)
 >
 > [Office 365 教育版](https://technet.microsoft.com/library/mt844095.aspx)
+>
+> [Office 365 美国政府版](https://technet.microsoft.com/library/mt774581.aspx)
 
 如果对订阅或许可有任何疑问，请勿将问题发布在此页面上，而是联系你的 Microsoft 客户经理或 [Microsoft 支持部门](information-support.md#to-contact-microsoft-support)。
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
 你的组织必须具有 Azure Active Directory (Azure AD) 才能支持用户身份验证和 Azure 信息保护身份授权。 此外，如果你希望使用本地目录 (AD DS) 中的用户帐户，则还必须配置目录集成。
+
+Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户输入凭据。 如果使用其他供应商解决方案进行联合，请与相应供应商确认如何针对 Azure AD 配置它。 WS-Trust 是这些解决方案支持单一登录所需满足的常见要求。 
 
 具有所需客户端软件并正确配置 MFA 支持基础结构后，Azure 信息保护将支持多重身份验证 (MFA)。
 

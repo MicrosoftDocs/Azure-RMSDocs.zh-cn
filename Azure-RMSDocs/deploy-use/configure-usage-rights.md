@@ -1,22 +1,22 @@
 ---
-title: "为 Azure Rights Management 配置使用权限 - AIP"
-description: "了解和确定在使用 Azure 信息保护中的 Azure 权限管理服务保护文件或电子邮件时使用的特定权限。"
+title: 为 Azure Rights Management 配置使用权限 - AIP
+description: 了解和确定在使用 Azure 信息保护中的 Azure 权限管理服务保护文件或电子邮件时使用的特定权限。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/14/2018
+ms.date: 03/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8411fd46305da69e8fe06ae3851d5066695cdc24
-ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
+ms.openlocfilehash: d597be35e509fae655ee18fe9fc0344603385382
+ms.sourcegitcommit: 58cd89cc6f6407648854e2e2d28a61325b5c8922
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 03/15/2018
 
 |使用权限|描述|实现|
 |-------------------------------|---------------------------|-----------------|
-|公用名：**编辑内容，编辑** <br /><br />策略中的编码：**DOCEDIT**|允许用户对应用程序中的内容进行修改、重新排列、设置格式或筛选。 它不会授权保存编辑过的副本。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**编辑内容**<br /><br />Azure 门户中的名称：**编辑内容、编辑(DOCEDIT)**<br /><br />AD RMS 模板中的名称：**编辑** <br /><br />API 常量或值：不适用。|
+|公用名：**编辑内容，编辑** <br /><br />策略中的编码：**DOCEDIT**|允许用户对应用程序中的内容进行修改、重新排列、设置格式或筛选。 它不会授权保存编辑过的副本。<br /><br />在 Word 中，此权限不足以启用或禁用“跟踪更改”，也不足以审阅者身份使用所有跟踪更改功能。 必须拥有“完全控制”权限，才能使用所有跟踪更改选项。 |Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**编辑内容**<br /><br />Azure 门户中的名称：**编辑内容、编辑(DOCEDIT)**<br /><br />AD RMS 模板中的名称：**编辑** <br /><br />API 常量或值：不适用。|
 |公用名：**保存** <br /><br />策略中的编码：**EDIT**|允许用户将文档保存到当前位置。<br /><br />在 Office 应用程序中，此权限还允许用户修改文档。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**保存文件**<br /><br />Azure 门户中的名称：**保存(EDIT)**<br /><br />AD RMS 模板中的名称：**保存** <br /><br />API 常量或值：`IPC_GENERIC_WRITE L"EDIT"`|
 |公用名：**注释** <br /><br />策略中的编码：**COMMENT**|启用向内容添加批注或注释的选项。<br /><br />此权限可用于 SDK、在 AzureInformationProtection 和适用于 Windows PowerShell 的 RMS 保护模块中作为即席策略提供，并且已在一些软件供应商应用程序中实现。 但是，它尚未广泛使用，并且当前也不受 Office 应用程序支持。|Office 自定义权限：未实现。 <br /><br />Azure 经典门户中的名称：未实现。<br /><br />Azure 门户中的名称：未实现。<br /><br />AD RMS 模板中的名称：未实现。 <br /><br />API 常量或值：`IPC_GENERIC_COMMENT L"COMMENT`|
 |公用名：**另存为，导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 <br /><br />对于 Office 文档和 Azure 信息保护客户端，文件可在不受保护的情况下进行保存，也可使用新设置和权限重新保护。 这些允许的操作意味着，具有此权限的用户可以从受保护的文档或电子邮件对 Azure 信息保护标签进行更改或删除。 <br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote” 。<br /><br /> 注意：如果未授予此权限，并且所选的文件格式以本机方式支持 Rights Management 保护，则 Office 应用程序允许用户将文档另存为一个新的名称。|Office 自定义权限：作为“更改”和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**导出内容(另存为)** <br /><br />Azure 门户中的名称：**另存为、导出(EXPORT)**<br /><br />AD RMS 模板中的名称：**导出(另存为)** <br /><br />API 常量或值：`IPC_GENERIC_EXPORT L"EXPORT"`|
@@ -48,8 +48,8 @@ ms.lasthandoff: 03/15/2018
 |公用名：**打印** <br /><br />策略中的编码：**PRINT**|启用打印内容的选项。|Office 自定义权限：作为自定义权限中的“打印内容”选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**打印**<br /><br />Azure 门户中的名称：**打印(PRINT)**<br /><br />AD RMS 模板中的名称：**打印** <br /><br />API 常量或值：`IPC_GENERIC_PRINT L"PRINT"`|
 |公用名：**答复** <br /><br />策略中的编码：**REPLY**|启用邮件客户端中的“答复”选项，但不允许更改“收件人”或“抄送”行。<br /><br />授予此权限时，同时授予“编辑内容，编辑”权限（通用名称），以确保原始电子邮件包含在转发的电子邮件中，且不是附件。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也需要此权限。 或者，对于组织内无需使用 Azure Rights Management 服务的用户来说，也需要此权限，因为你已实施了[载入控件](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**答复**<br /><br />Azure 经典门户中的名称：**答复(REPLY)**<br /><br />AD RMS 模板中的名称：**答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLY`|
 |公用名：**全部答复** <br /><br />策略中的编码：**REPLYALL**|启用邮件客户端中的“全部答复”  选项，但不允许用户将收件人添加到“收件人”  或“抄送”  行。<br /><br />授予此权限时，同时授予“编辑内容，编辑”权限（通用名称），以确保原始电子邮件包含在转发的电子邮件中，且不是附件。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也需要此权限。 或者，对于组织内无需使用 Azure Rights Management 服务的用户来说，也需要此权限，因为你已实施了[载入控件](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**全部答复**<br /><br />Azure 门户中的名称：**全部答复(REPLY ALL)**<br /><br />AD RMS 模板中的名称：**全部答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLYALL L"REPLYALL"`|
-|公用名：**查看，打开，读取** <br /><br />策略中的编码：**VIEW**|允许用户打开文档，并查看内容。|Office 自定义权限：作为“读取”自定义策略的“查看”选项。<br /><br />Azure 经典门户中的名称：**查看**<br /><br />Azure 门户中的名称：**查看、打开、读取(VIEW)**<br /><br />AD RMS 模板中的名称：**全部答复** <br /><br />API 常量或值：`IPC_GENERIC_READ L"VIEW"`|
-|公用名：**复制** <br /><br />策略中的编码：**EXTRACT**|启用将数据（包括屏幕捕获）从文档复制到同一文档或其他文档的选项。<br /><br />在某些应用程序中，它还允许以不受保护的形式保存整个文档。|Office 自定义权限：作为“允许具有读取权限的用户复制内容”自定义策略选项。<br /><br />Azure 经典门户中的名称：**复制并提取内容**<br /><br />Azure 门户中的名称：**复制(EXTRACT)**<br /><br />AD RMS 模板中的名称：**提取** <br /><br />API 常量或值：`IPC_GENERIC_EXTRACT L"EXTRACT"`|
+|公用名：**查看，打开，读取** <br /><br />策略中的编码：**VIEW**|允许用户打开文档，并查看内容。<br /><br /> 在 Excel 中，此权限不足以排序和筛选数据，也不足以创建数据透视表。 必须拥有“编辑内容、编辑”权限，才能执行这些操作。 [详细信息](https://cloudblogs.microsoft.com/enterprisemobility/2015/12/09/enabling-document-interaction-sort-filter-etc-while-disabling-saving-with-rms/)|Office 自定义权限：作为“读取”自定义策略的“查看”选项。<br /><br />Azure 经典门户中的名称：**查看**<br /><br />Azure 门户中的名称：**查看、打开、读取(VIEW)**<br /><br />AD RMS 模板中的名称：**全部答复** <br /><br />API 常量或值：`IPC_GENERIC_READ L"VIEW"`|
+|公用名：**复制** <br /><br />策略中的编码：**EXTRACT**|启用将数据（包括屏幕捕获）从文档复制到同一文档或其他文档的选项。<br /><br />在某些应用程序中，它还允许以不受保护的形式保存整个文档。<br /><br />在 Skype for Business 和类似屏幕共享应用程序中，演示者必须拥有此权限，才能成功展示受保护文档。 如果演示者没有此权限，与会者便无法查看文档，且文档显示为对与会者禁用。|Office 自定义权限：作为“允许具有读取权限的用户复制内容”自定义策略选项。<br /><br />Azure 经典门户中的名称：**复制并提取内容**<br /><br />Azure 门户中的名称：**复制(EXTRACT)**<br /><br />AD RMS 模板中的名称：**提取** <br /><br />API 常量或值：`IPC_GENERIC_EXTRACT L"EXTRACT"`|
 |公用名：**查看权限** <br /><br />策略中的编码：**VIEWRIGHTSDATA**|允许用户查看应用于文档的策略。|Office 自定义权限：未实现。<br /><br />Azure 经典门户中的名称：**查看分配的权限**<br /><br />Azure 门户中的名称：**查看权限(VIEWRIGHTSDATA)**。<br /><br />AD RMS 模板中的名称：**查看权限** <br /><br />API 常量或值：`IPC_READ_RIGHTS L"VIEWRIGHTSDATA"`|
 |公用名：**更改权限** <br /><br />策略中的编码：**EDITRIGHTSDATA**|允许用户更改应用于文档的策略。 包括删除的保护。|Office 自定义权限：未实现。<br /><br />Azure 经典门户中的名称：**更改权限**<br /><br />Azure 门户中的名称：**编辑权限(EDITRIGHTSDATA)**。<br /><br />AD RMS 模板中的名称：**编辑权限** <br /><br />API 常量或值：`PC_WRITE_RIGHTS L"EDITRIGHTSDATA"`|
 |公用名：**允许宏** <br /><br />策略中的编码：**OBJMODEL**|启用运行宏或执行其他编程或远程访问文档内容的选项。|Office 自定义权限：作为“允许编程访问”自定义策略选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**允许宏**<br /><br />Azure 门户中的名称：**允许宏(OBJMODEL)**<br /><br />AD RMS 模板中的名称：**允许宏** <br /><br />API 常量或值：未实现。|

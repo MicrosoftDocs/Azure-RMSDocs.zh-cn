@@ -1,22 +1,22 @@
 ---
-title: "解除授权和停用 Azure RMS"
-description: "有关决定不再使用 Azure 信息保护中基于云的保护服务的相关信息和说明。"
+title: 解除授权和停用 Azure RMS
+description: 有关决定不再使用 Azure 信息保护中基于云的保护服务的相关信息和说明。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 18eff00f6b316c48dbca5a9a8ec2c2ab4e58f76c
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: fc2fd8d043c04c3820de30d2087ff498b4ea4e90
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>解除 Azure 信息保护授权并停用对 Azure 信息保护的保护
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 02/23/2018
 
 如果不需要继续访问之前受保护的内容，请停用该服务，让 Azure 信息保护订阅过期。 例如，这适用于完成测试 Azure 信息保护后再在生产环境中部署它的情况。
 
-但是，如果已在生产中部署 Azure 信息保护并保护文档和电子邮件，请确保在停用 Azure 权限管理服务前，拥有 Azure 信息保护租户密钥的副本。 请确保在订阅过期前拥有密钥副本，以确保在停用服务后，可以保留对由 Azure 权限管理保护的内容的访问权限。 如果你使用了可以在 HSM 中生成和管理自己的密钥的自带密钥 (BYOK) 解决方案，则你已经具有 Azure 信息保护租户密钥。 但如果该密钥由 Microsoft 管理（默认），请参阅 [Azure Rights Management 租户密钥的操作](operations-tenant-key.md)文章中有关导出租户密钥的说明。
+但是，如果已在生产中部署 Azure 信息保护并保护文档和电子邮件，请确保在停用 Azure 权限管理服务前，拥有 Azure 信息保护租户密钥的副本。 请确保在订阅过期前拥有密钥副本，以确保在停用服务后，可以保留对由 Azure 权限管理保护的内容的访问权限。 如果你使用了可以在 HSM 中生成和管理自己的密钥的自带密钥 (BYOK) 解决方案，则你已经具有 Azure 信息保护租户密钥。 不过，如果密钥是由 Microsoft 管理（默认情况），请参阅 [Azure 信息保护租户密钥操作](operations-tenant-key.md)一文，了解如何导出租户密钥。
 
 > [!TIP]
 > 即使在订阅到期后，Azure 信息保护租户仍可在延长期内用于使用内容。 但是，你将无法再导出租户密钥。

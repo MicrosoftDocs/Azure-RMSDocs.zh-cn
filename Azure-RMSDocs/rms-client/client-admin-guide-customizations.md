@@ -1,22 +1,22 @@
 ---
-title: "Azure 信息保护客户端的自定义配置"
-description: "有关自定义适用于 Windows 的 Azure 信息保护客户端的信息。"
+title: Azure 信息保护客户端的自定义配置
+description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的信息。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 662ed627fc6138e1ff16efb731b209964784432f
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: e5c71068f979c13b2d8c9ee7c9c5c43e2ad3a7ad
+ms.sourcegitcommit: 32b233bc1f8cef0885d9f4782874f1781170b83d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -202,9 +202,91 @@ ms.lasthandoff: 02/14/2018
 
 - 值：\<label ID> 或 None
 
+## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>从 Secure Islands 和其他标记解决方案迁移标签
+
+此配置选项目前处于预览状态，可能随时更改。 此外，此配置选项需要预览版的客户端。
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+
+对于 Secure Islands 标记的 Office 文档和 PDF 文档，可以使用所定义的映射，利用 Azure 信息保护标签重新标记这些文档。 此外，这种方法还可用于重用其他解决方案对 Office 文档标记的标签。 
+
+由于有此配置选项，Azure 信息保护客户端按如下所述应用新 Azure 信息保护标签：
+
+- 对于 Office 文档：当文档在桌面应用程序中打开时，新 Azure 信息保护标签显示为已设置，并在文档保存时应用。
+
+- 对于文件资源管理器：在“Azure 信息保护”对话框中，新 Azure 信息保护标签显示为已设置，并在用户选择“应用”时应用。 如果用户选择“取消”，新标签就不会应用。
+
+- 对于 Powershell：[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 应用新 Azure 信息保护标签。 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) 不会显示新 Azure 信息保护标签，除非标签由另一种方法设置。
+
+- 对于 Azure 信息保护扫描程序：发现功能可报告何时会设置新 Azure 信息保护标签，此标签可以通过强制模式进行应用。
+
+若要执行此配置，必须为要映射到旧标签的所有 Azure 信息保护标签都指定“LabelbyCustomProperty”高级客户端设置。 然后，使用以下语法设置每个条目的值：
+
+`[Azure Information Protection label ID],[migration rule name],[Secure Islands custom property name],[Secure Islands metadata Regex value]`
+
+在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值将显示在“标签”边栏选项卡上。 若要指定子标签，父标签必须位于同一范围中，或位于全局策略中。
+
+指定所选的迁移规则名称。 请使用描述性名称，这有助于确定应如何将旧标记解决方案中的一个或多个标签映射到 Azure 信息保护标签。 此名称显示在扫描程序报告和事件查看器中。 
+
+### <a name="example-1-one-to-one-mapping-of-the-same-label-name"></a>示例 1：相同标签名称的一对一映射
+
+对于 Secure Islands 标记为“机密”的文档，应由 Azure 信息保护重新标记为“机密”。
+
+在此示例中：
+
+- Azure 信息保护标签“机密”的标签 ID 为 1ace2cc3-14bc-4142-9125-bf946a70542c。 
+
+- Secure Islands 标签存储在“Classification”自定义属性中。
+
+高级客户端设置：
+
+    
+|名称|值|
+|---------------------|---------|
+|LabelbyCustomProperty|1ace2cc3-14bc-4142-9125-bf946a70542c,"Secure Islands label is Confidential",Classification,Confidential|
+
+### <a name="example-2-one-to-one-mapping-for-a-different-label-name"></a>示例 2：不同标签名称的一对一映射
+
+对于 Secure Islands 标记为“敏感”的文档，应由 Azure 信息保护重新标记为“高度机密”。
+
+在此示例中：
+
+- Azure 信息保护标签“高度机密”的标签 ID 为 3e9df74d-3168-48af-8b11-037e3021813f。
+
+- Secure Islands 标签存储在“Classification”自定义属性中。
+
+高级客户端设置：
+
+    
+|名称|值|
+|---------------------|---------|
+|LabelbyCustomProperty|3e9df74d-3168-48af-8b11-037e3021813f,"Secure Islands label is Sensitive",Classification,Sensitive|
+
+
+### <a name="example-3-many-to-one-mapping-of-label-names"></a>示例 3：标签名称的多对一映射
+
+有两个 Secure Islands 标签均包含“内部”一词，并且希望 Azure 信息保护将标有这两个 Secure Islands 标签之一的文档重新标记为“常规”。
+
+在此示例中：
+
+- Azure 信息保护标签“常规”的标签 ID 为 2beb8fe7-8293-444c-9768-7fdc6f75014d。
+
+- Secure Islands 标签存储在“Classification”自定义属性中。
+
+高级客户端设置：
+
+    
+|名称|值|
+|---------------------|---------|
+|LabelbyCustomProperty|2beb8fe7-8293-444c-9768-7fdc6f75014d,"Secure Islands label contains Internal",Classification,.\*Internal.\*|
+
+
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>使用现有自定义属性标记 Office 文档
 
-此配置选项目前处于预览状态，可能随时更改。 
+此配置选项目前处于预览状态，可能随时更改。
+
+> [!NOTE]
+> 如果结合使用此配置和上一部分中的配置，从另一个标记解决方案进行迁移，将优先考虑标记迁移设置。 
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
