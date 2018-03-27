@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/20/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e5c71068f979c13b2d8c9ee7c9c5c43e2ad3a7ad
-ms.sourcegitcommit: 32b233bc1f8cef0885d9f4782874f1781170b83d
+ms.openlocfilehash: bb478a91a0af035bc07a77e4aae8c2f6c19eab4a
+ms.sourcegitcommit: c66da7a66f25a3c080e43c548e7945fec35ed751
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -204,7 +204,7 @@ ms.lasthandoff: 03/20/2018
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>从 Secure Islands 和其他标记解决方案迁移标签
 
-此配置选项目前处于预览状态，可能随时更改。 此外，此配置选项需要预览版的客户端。
+此配置选项目前处于预览状态，可能随时更改。 另外，必须有预览版的客户端或 Azure 信息保护扫描程序，才能使用此配置选项。
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
@@ -316,13 +316,13 @@ ms.lasthandoff: 03/20/2018
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>与 Exchange 邮件分类集成以实现移动设备标记解决方案
 
-虽然 Outlook 网页版尚不支持本机 Azure 信息保护分类和保护，但可以使用 Exchange 邮件分类将 Azure 信息保护标签扩展到移动用户。
+虽然 Outlook 网页版尚不支持本机 Azure 信息保护分类和保护，但在移动用户使用 Outlook 网页版时，可以使用 Exchange 邮件分类，将 Azure 信息保护标签扩展到这些用户。 Outlook Mobile 不支持 Exchange 邮件分类。
 
 要实现此解决方案： 
 
 1. 使用 [New-MessageClassification](https://technet.microsoft.com/library/bb124400) Exchange PowerShell cmdlet 创建邮件分类，其 Name 属性映射到 Azure 信息保护策略中的标签名称。 
 
-2. 为每个标签创建 Exchange 传输规则：邮件属性包括配置的分类时应用规则，并修改邮件属性以设置邮件头。 
+2. 为每个标签创建 Exchange 邮件流规则：在邮件属性包括配置的分类时应用规则，并将邮件属性修改为设置邮件头。 
 
     对于邮件头，可检查已发送且使用 Azure 信息保护标签进行分类的电子邮件的 Internet 邮件头，查找要指定的信息。 查找邮件头 **msip_labels**，以及紧随其后的字符串，直至分号（包括分号）。 以上述示例为例：
     
@@ -330,9 +330,9 @@ ms.lasthandoff: 03/20/2018
     
     然后，对于此规则中的邮件头，将 **msip_labels** 指定为邮件头，此字符串的其余部分指定为邮件头的值。 例如：
     
-    ![示例 Exchange Online 传输规则，用于为特定 Azure 信息保护标签设置邮件头](../media/exchange-rule-for-message-header.png)
+    ![示例 Exchange Online 邮件流规则，用于为特定 Azure 信息保护标签设置邮件头](../media/exchange-rule-for-message-header.png)
 
-测试此配置前，请注意，创建或编辑传输规则时通常都会有延迟（例如，等待一小时）。 当规则生效后，如果用户使用 Outlook 网页版或支持 Rights Management 保护的移动设备客户端，则会发生以下事件： 
+测试此配置前，请注意，创建或编辑邮件流规则时通常都会有延迟（例如，等待一小时）。 当规则生效后，如果用户使用 Outlook 网页版或支持 Exchange ActiveSync IRM 的移动设备客户端，则会发生以下事件： 
 
 - 用户选择 Exchange 邮件分类，并发送电子邮件。
 
@@ -340,11 +340,11 @@ ms.lasthandoff: 03/20/2018
 
 - 当收件人在 Outlook 中查看电子邮件，且已安装 Azure 信息保护客户端时，他们将看到分配的 Azure 信息保护标签，以及所有对应的电子邮件头、页脚或水印。 
 
-如果 Azure 信息保护标签应用权限管理保护，请将此保护添加到规则配置，具体方法是选择用于修改邮件安全性的选项，应用权限保护，再选择 RMS 模板或“不转发”选项。
+如果 Azure 信息保护标签应用保护，请将此保护添加到规则配置，具体方法是选择用于修改邮件安全性的选项，应用权限保护，再选择 RMS 模板或“不转发”选项。
 
-还可以通过配置传输规则来执行反向映射。 检测到 Azure 信息保护标签时，请设置相应的 Exchange 邮件分类：
+还可以将邮件流规则配置为执行反向映射。 检测到 Azure 信息保护标签时，请设置相应的 Exchange 邮件分类：
 
-- 对于每个 Azure 信息保护标签，请创建在 msip_labels 头包含标签名称（例如 General）时应用的传输规则，并应用映射到此标签的邮件分类。
+- 对于每个 Azure 信息保护标签，请创建在 msip_labels 头包含标签名称（例如 General）时应用的邮件流规则，并应用映射到此标签的邮件分类。
 
 
 ## <a name="next-steps"></a>后续步骤
