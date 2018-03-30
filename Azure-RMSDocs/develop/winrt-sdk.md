@@ -1,24 +1,24 @@
 ---
-title: "Windows 应用商店安装程序 | Azure RMS"
-description: "Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。"
-keywords: 
+title: Windows 应用商店安装程序 | Azure RMS
+description: Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 4dfbb1ba71aedaa0d818b00b3696b422e57ac0d4
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: dde2b47ddf91c6f79d50df5ad776d981c1494047
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="windows-store-setup"></a>Windows 应用商店安装程序
 
@@ -40,7 +40,7 @@ Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2
 -   [适用于 Windows 8.1 的 Windows SDK](https://msdn.microsoft.com/windows/desktop/bg162891.aspx)
 -   Microsoft [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview) 或更高版本，或 Visual Studio Express 2012，后者包含在适用于 Windows 8.0/8.1 的 Windows SDK中。
 -   适用于 Windows 应用商店应用程序的 MS RMS SDK 4.2 包。 有关详细信息，请参阅[入门](get-started.md)。
--   身份验证库：我们建议使用 [Azure AD 身份验证库](https://msdn.microsoft.com/en-us/library/jj573266.aspx)和其他可用的身份验证库。
+-   身份验证库：我们建议使用 [Azure AD 身份验证库](https://msdn.microsoft.com/library/jj573266.aspx)和其他可用的身份验证库。
 
 有关 API 更新、设备和环境信息、发行说明和常见问题 (FAQ) 的信息，请阅读[新增功能](release-notes.md)主题。
 

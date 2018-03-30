@@ -1,24 +1,24 @@
 ---
-title: "Windows Phone 安装程序 | Azure RMS"
-description: "Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。"
-keywords: 
+title: Windows Phone 安装程序 | Azure RMS
+description: Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d695f2b29c1b0f9a4af3f942e9bf8c12553a929d
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: e606703aa764f8e4fea009131f41c9394ebb29fb
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="windows-phone-setup"></a>Windows Phone 安装程序
 
@@ -40,7 +40,7 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 -   [Windows Phone 8.1 开发工具 (SDK)](http://dev.windowsphone.com/en-us/downloadsdk)
 -   Microsoft [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview) 或更高版本，或 Visual Studio Express 2012，后者包含在 Windows Phone SDK 8.0/8.1 中
 -   Windows Phone 的 MS RMS SDK 4.2 包。 有关详细信息，请参阅[入门](get-started.md)。
--   身份验证库：我们建议使用 [Azure AD 身份验证库](https://msdn.microsoft.com/en-us/library/jj573266.aspx)和其他可用的身份验证库。
+-   身份验证库：我们建议使用 [Azure AD 身份验证库](https://msdn.microsoft.com/library/jj573266.aspx)和其他可用的身份验证库。
 
 有关 API 更新、设备和环境信息、发行说明和常见问题 (FAQ) 的信息，请阅读[新增功能](release-notes.md)主题。
 
