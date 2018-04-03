@@ -1,24 +1,24 @@
 ---
-title: "为 Azure 信息保护标签配置可视标记"
-description: "当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。"
+title: 为 Azure 信息保护标签配置可视标记
+description: 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 03e7e2a4e2fc6dc75bd6c56c117c627e0c854f98
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: c5b0c4c82fc35ab560b55c4884cf67fe126ede2b
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
->适用于：Azure 信息保护
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 02/23/2018
 
 此语句中的该语法区分大小写。
 
-例如：
+示例：
 
 - **仅为 Word 文档设置页眉文本：**
     

@@ -1,26 +1,26 @@
 ---
-title: "通过使用 RMS 共享应用删除保护 - AIP"
-description: "有关删除之前使用 RMS 共享应用程序保护的文件保护（即取消文件保护）的说明。"
+title: 通过使用 RMS 共享应用删除保护 - AIP
+description: 有关删除之前使用 RMS 共享应用程序保护的文件保护（即取消文件保护）的说明。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 370b19894efb53604c798b38be02dda3f8804b8b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: e467557f8e22c1bb41fdab07ae6335c85bdc2987
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="remove-protection-from-a-file-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序移除对文件的保护
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
 
 若要移除之前使用 RMS 共享应用程序保护的文件保护（即取消文件保护），请从文件资源管理器中使用“移除保护”选项  。
 

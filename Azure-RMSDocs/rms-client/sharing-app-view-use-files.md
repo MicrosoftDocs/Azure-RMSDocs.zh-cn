@@ -1,26 +1,26 @@
 ---
-title: "使用 RMS 共享应用打开 RMS 保护的文件 - AIP"
-description: "有关查看和使用受保护文件（需要安装 Rights Management (RMS) 共享应用程序）的说明。"
+title: 使用 RMS 共享应用打开 RMS 保护的文件 - AIP
+description: 有关查看和使用受保护文件（需要安装 Rights Management (RMS) 共享应用程序）的说明。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0a510d559573e942b8a2bf392f36a1300dfbfb7a
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: 393db5da6f2a563b073b071e873a8c5d555a76e6
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>查看和使用受权限管理保护的文件
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
 
 如果[计算机安装了权限管理 (RMS) 共享应用程序](install-sharing-app.md)，你只需双击受保护文件即可查看它。 此文件也许是电子邮件中的附件，或者你可能在使用文件资源管理器时看到它。
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 07/18/2017
 
 文件的打开方式取决于保护方式，此保护方式你可以通过查看文件扩展名得知。 在每种情况下，只要文件受到保护，打开它就需要审核并将处于审核状态。 此外，如果文件以电子邮件附件的形式发送，则每次你打开文件时，发件人都会收到电子邮件通知。
 
-- **文件具有*.pfile* 文件扩展名**
+- **文件具有*.pfile*文件扩展名**
 
     文件受到一般性保护。
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 07/18/2017
 ## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>使用受保护的文件（例如，编辑和打印文件）
 如果在打开受保护文件后，你想要执行除读取之外的其他操作（例如编辑、复制和打印），请根据文件扩展名按照说明执行操作：
 
-- **文件具有*.pfile* 文件扩展名**
+- **文件具有*.pfile*文件扩展名**
 
     保存已打开文件，并赋予其与所要使用的应用程序关联的新文件扩展名。
 

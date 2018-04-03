@@ -1,24 +1,24 @@
 ---
-title: "快速入门教程步骤 3 - AIP"
-description: "快速试用 Azure 信息保护入门教程步骤 3 - 安装客户端。"
+title: 快速入门教程步骤 3 - AIP
+description: 快速试用 Azure 信息保护入门教程步骤 3 - 安装客户端。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: cfe2fdf41174caf6184d3e160ce9f4d439d55566
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 363902fac8036b118ce28c3ea87c812e262c3d47
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-3-install-the-client"></a>步骤 3：安装客户端
 
->*适用于：Azure 信息保护*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 在该步骤中，你将安装 Azure 信息保护客户端，因此刚配置的策略将下载到 Windows PC 上，并在 Office 应用中显示标签。
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/18/2017
 
 你现在已准备好查看运行中的 Azure 信息保护。
 
-|如果你想了解更多信息|其他信息|
+|如果你想了解更多信息|附加信息|
 |--------------------------------|--------------------------|
 |关于安装 Azure 信息保护客户端|[下载并安装 Azure 信息保护客户端](../rms-client/install-client-app.md)|
 |Azure 信息保护客户端的管理员说明|[Azure 信息保护客户端管理员指南](../rms-client/client-admin-guide.md)|

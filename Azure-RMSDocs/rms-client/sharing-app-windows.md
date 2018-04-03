@@ -1,26 +1,26 @@
 ---
-title: "适用于 Windows 的 Rights Management 共享应用程序 - AIP"
-description: "适用于 Windows 的 Rights Management 共享应用程序的信息资源。 这是一个可免费下载的应用程序，面向使用 Active Directory Rights Management Services (AD RMS) 或 Azure 信息保护的组织，以及没有自身的信息保护基础结构，但又想要使用其他组织通过 Azure 信息保护保护的内容的组织。"
+title: 适用于 Windows 的 Rights Management 共享应用程序 - AIP
+description: 适用于 Windows 的 Rights Management 共享应用程序的信息资源。 这是一个可免费下载的应用程序，面向使用 Active Directory Rights Management Services (AD RMS) 或 Azure 信息保护的组织，以及没有自身的信息保护基础结构，但又想要使用其他组织通过 Azure 信息保护保护的内容的组织。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a496ed482f6973f03c63b3792fd1f3ccc4b9403e
-ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
+ms.openlocfilehash: 4a5541e076fa4324c4a79df4d18daacc6b3dafb5
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rights-management-sharing-application-for-windows"></a>适用于 Windows 的 Rights Management 共享应用程序
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护*
+>*适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 
 > [!IMPORTANT]
 > **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 

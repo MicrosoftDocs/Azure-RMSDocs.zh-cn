@@ -1,26 +1,29 @@
 ---
-title: "下载和安装 RMS 共享应用 - AIP"
-description: "有关以交互方式安装适用于 Windows 的 RMS 共享应用程序，以便可以安全地与他人共享文档的说明。"
+title: 下载和安装 RMS 共享应用 - AIP
+description: 有关以交互方式安装适用于 Windows 的 RMS 共享应用程序，以便可以安全地与他人共享文档的说明。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9c954f750c6f49d3db1bf6383efa2805f291682c
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6c9fe3e28cb44812a6f3a5830546128975522b5f
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="download-and-install-the-rights-management-sharing-application"></a>下载和安装 Rights Management 共享应用程序
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
+
+> [!IMPORTANT]
+> **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。
 
 你无需是本地管理员就能安装 RMS 共享应用程序。 但是，如果你不是本地管理员而使用 Office 2010，就会有一些限制。 有关详细信息，请参阅本页上的[如果你不是本地管理员，并且使用 Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) 部分。
 

@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bce7efc1f35f5e455f76a24f2f96e7d62f568425
-ms.sourcegitcommit: 1b44f6bd25b756fa85fa5f47aa4c0486f9486832
+ms.openlocfilehash: fadaac4b5ea7828c53544485b1685226176a2a75
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>个人 RMS 和 Azure 信息保护
 
->适用于：Azure 信息保护
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 RMS 个人版是免费的自助式订阅，适用于需要打开受 Azure 信息保护保护的文件的用户。 如果 Azure Active Directory 无法对这些用户进行身份验证，并且他们的组织没有 Active Directory Rights Management (AD RMS)，此免费登录服务会在 Azure Active Directory 中为用户创建一个帐户。 因此，这些用户现在可以使用其公司电子邮件地址进行身份验证，然后在计算机或移动设备上阅读受保护的文件。
 

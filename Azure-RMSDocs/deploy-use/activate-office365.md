@@ -1,27 +1,27 @@
 ---
-title: "使用 Office 365 管理中心激活 Azure RMS - AIP"
-description: "使用新版 Office 365 管理中心时的 Azure 权限管理服务激活说明。"
+title: 使用 Office 365 管理中心激活 Azure RMS - AIP
+description: 使用新版 Office 365 管理中心时的 Azure 权限管理服务激活说明。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.custom: askipteam
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a614e65e4c8e401c9add41d4594d8261eef69d12
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: 77d511cc466441ffc28d813be9a0ec86ff3d8fa7
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>如何从 Office 365 管理中心激活 Azure 权限管理
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 如果你具有从 Office 365 管理中心访问 Azure 权限管理服务的权限，请使用以下说明。 例如，如果你拥有 Office 365 E3 或 Office 365 E5 订阅。
 

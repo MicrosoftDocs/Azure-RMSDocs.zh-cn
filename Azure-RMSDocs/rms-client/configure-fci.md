@@ -1,26 +1,26 @@
 ---
-title: "使用 Windows Server FCI 的 Azure RMS 保护 - AIP"
-description: "有关将 Rights Management (RMS) 客户端与 Azure 信息保护客户端配合使用，以配置文件服务器资源管理器和文件分类基础结构 (FCI) 的说明。"
+title: 使用 Windows Server FCI 的 Azure RMS 保护 - AIP
+description: 有关将 Rights Management (RMS) 客户端与 Azure 信息保护客户端配合使用，以配置文件服务器资源管理器和文件分类基础结构 (FCI) 的说明。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 49133bec323b00541c92ac3739fafab266cc92cf
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: be2c1a7c0432d3054eb5eced844ba42f402481d6
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
->*适用于：Azure 信息保护、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2
 
 通过本文获取相关说明和脚本以使用 Azure 信息保护客户端和 PowerShell 配置文件服务器资源管理器和文件分类基础结构 (FCI)。
 

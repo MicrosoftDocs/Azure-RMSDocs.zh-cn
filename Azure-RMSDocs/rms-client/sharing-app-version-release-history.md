@@ -1,27 +1,27 @@
 ---
-title: "RMS 共享应用&colon;版本发行历史记录 - AIP"
-description: "查看适用于 Windows 的 Rights Management 共享应用程序版本中新增或更改的内容。"
+title: RMS 共享应用&colon;版本发行历史记录 - AIP
+description: 查看适用于 Windows 的 Rights Management 共享应用程序版本中新增或更改的内容。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.custom: askipteam
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ed3725f65d5e1b357a2cd1cda1e28a8ddcb8fae6
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: 1e3dc88f69b1fb4ed178f3f2d1268c47fae13621
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rights-management-sharing-application-version-release-history"></a>权限管理共享应用程序：版本发行历史记录
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
 
 Azure 信息保护团队定期更新 Rights Management 共享应用程序，以提供修补程序和新功能。 使用以下信息查看版本中的新增内容或更改的内容。 最新版本会最先列出。
 

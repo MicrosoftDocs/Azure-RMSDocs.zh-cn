@@ -1,26 +1,26 @@
 ---
-title: "Office 应用和服务如何支持 AIP 中的 Azure RMS"
-description: "最终用户 Office 应用程序（例如 Word 和 Outlook）和 Office 服务（例如 Exchange 和 SharePoint）如何使用 AIP 中的 Azure 权限管理服务来帮助保护组织的数据。"
+title: Office 应用和服务如何支持 AIP 中的 Azure RMS
+description: 最终用户 Office 应用程序（例如 Word 和 Outlook）和 Office 服务（例如 Exchange 和 SharePoint）如何使用 AIP 中的 Azure 权限管理服务来帮助保护组织的数据。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb40f6d2b43f175af71fd58b3bef4eb3d992152b
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: be1c41c2f17720d522770f9e023c7468602ceb67
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 最终用户 Office 应用程序和 Office 服务可使用 Azure 信息保护中的 Azure 权限管理服务来帮助保护组织的数据。 Office 应用程序包括 Word、Excel、PowerPoint 和 Outlook。 Office 服务包括 Exchange 和 SharePoint。 支持 Azure 权限管理服务的 Office 配置通常使用术语“信息权限管理 (IRM)”。
 

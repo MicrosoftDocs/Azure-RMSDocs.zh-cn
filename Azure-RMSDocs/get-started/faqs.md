@@ -1,26 +1,26 @@
 ---
-title: "Azure 信息保护的常见问题解答"
-description: "有关 Azure 信息保护及其数据保护服务 Azure Rights Management (Azure RMS) 的一些常见问题。"
+title: Azure 信息保护的常见问题解答
+description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Management (Azure RMS) 的一些常见问题。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 604f675b34bfdc4dddb3c36c73c13dcccae40f11
-ms.sourcegitcommit: 2749d8d41fd374a9e4e2697a684eeb2bf85082d8
+ms.openlocfilehash: 42d3437b204f97b5d9caa4a2fa67b60fc1a570e4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 是否有关于 Azure 信息保护或 Azure Rights Management 服务 (Azure RMS) 的问题？ 请查看此处是否有答案。
 
@@ -72,7 +72,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 
-是。 尽管 Azure 信息保护是基于云的解决方案，但它可对存储在本地和云中的文档和电子邮件进行分类、标签设置和保护。
+是的。 尽管 Azure 信息保护是基于云的解决方案，但它可对存储在本地和云中的文档和电子邮件进行分类、标签设置和保护。
 
 如果具有 Exchange Server、SharePoint Server 和 Windows 文件服务器，则可部署[权限管理连接器](../deploy-use/deploy-rms-connector.md)，便于这些本地服务器可使用 Azure 权限管理服务保护电子邮件和文档。 你还可以使用 [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)，将 Active Directory 域控制器与 Azure AD 同步和联合，为用户提供更为契合的身份验证体验。
 

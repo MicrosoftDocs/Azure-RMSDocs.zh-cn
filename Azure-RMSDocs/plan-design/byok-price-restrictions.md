@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ac9324a0418a557682714b6f2b5621a2d9f7530e
-ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
+ms.openlocfilehash: ccbca7f0309e03128ebbe0544e55b341ece47d0f
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 定价和限制
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 
 拥有订阅（包含 Azure 信息保护）的组织可以将 Azure 信息保护租户配置为使用客户托管的密钥 (BYOK)，并[记录其使用情况](../deploy-use/log-analyze-usage.md)（无需额外付费）。 

@@ -1,27 +1,27 @@
 ---
-title: "更改 RMS 保护的文件的权限 - AIP"
-description: "当文件已由 Rights Management 保护时，你可以更改其权限，方法是重新保护它，然后指定有权访问它的所有用户，以及你要给予他们哪些权限。"
-keywords: 
+title: 更改 RMS 保护的文件的权限 - AIP
+description: 当文件已由 Rights Management 保护时，你可以更改其权限，方法是重新保护它，然后指定有权访问它的所有用户，以及你要给予他们哪些权限。
+keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3290b9436f75c2d0d37c401dd2e0be11bcf2d554
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 766acd68d1c5c5f59530b0b61fadee315185ec4a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>更改受 Rights Management 保护的文件的权限
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
 
 当文件已由 Rights Management 保护时，你可以更改其权限，方法是重新保护它，然后指定有权访问它的所有用户，以及你要给予他们哪些权限。
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 06/30/2017
     > [!NOTE]
     > 如果没有看到“使用 RMS 保护”  选项，可能是计算机上没有安装 RMS 共享应用程序，或者是必须重新启动计算机以完成安装。 有关如何安装 RMS 共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md)。
 
-2.  执行以下操作之一：
+2.  执行下列操作之一：
 
     -   选择策略模板：一般而言，它们是将访问权限和使用限制给你的组织成员的预定义权限。 例如，如果组织名称为“Contoso, Ltd”，你可能会看到“Contoso, Ltd - 机密，仅供查阅”。 如果这是你首次在此电脑上保护文件，将需要首先选择“公司定义的保护”以下载模板。
 

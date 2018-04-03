@@ -1,26 +1,26 @@
 ---
-title: "验证 Azure Rights Management - AIP"
-description: "有关使用一个用户帐户来保护文件或电子邮件，然后尝试从另一个用户帐户打开和使用这些受保护的内容，从而验证服务是否按预期方式工作的说明。"
+title: 验证 Azure Rights Management - AIP
+description: 有关使用一个用户帐户来保护文件或电子邮件，然后尝试从另一个用户帐户打开和使用这些受保护的内容，从而验证服务是否按预期方式工作的说明。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6dcc7fd3cfbb4bf1cf215936a4307244d62f0240
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: 43689f942bae88c9b7099f45a980f0fd96b1bdaf
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="verifying-the-azure-rights-management-service"></a>验证 Azure Rights Management 服务
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 在激活 Azure 信息保护的 Azure Rights Management 服务，并执行组织需要的其他所有配置步骤后，就可以验证此保护服务是否正常运行。 
 

@@ -1,24 +1,24 @@
 ---
-title: "快速入门教程步骤 4 - AIP"
-description: "快速试用 Azure 信息保护入门教程步骤 4 - 查看设置标签与保护的实际操作。"
+title: 快速入门教程步骤 4 - AIP
+description: 快速试用 Azure 信息保护入门教程步骤 4 - 查看设置标签与保护的实际操作。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: 3a5e3fc018bb19480a52729345ad2ac6d4c851be
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: f92953acfe652238ef8a36f67cdd8051324c6f18
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>步骤 4：查看分类、设置标签和保护的实际操作 
 
->适用于：Azure 信息保护
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 既然已安装 Azure 信息保护客户端，并打开了 Word 文档，就可以知道使用我们配置的策略开始为文档设置标签并保护文档有多么简单。
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 08/30/2017
 
 现在你已经在实际操作中了解了分类、标记和保护，我们来看看已在另一组织中与其他人共享你的文档的情况下，如何保护你的文档。 你甚至可以跟踪它们的使用方式，并撤销对它们的访问权限。
 
-|如果你想了解更多信息|其他信息|
+|如果你想了解更多信息|附加信息|
 |--------------------------------|--------------------------|
 |有关标记和保护文件的完整说明 |[对文件或电子邮件进行分类和保护](../rms-client/client-classify-protect.md)|
 |记录标记活动的位置 |[Azure 信息保护客户端的使用情况日志记录](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)|

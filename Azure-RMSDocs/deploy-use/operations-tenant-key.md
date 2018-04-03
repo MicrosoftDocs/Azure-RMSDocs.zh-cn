@@ -1,26 +1,26 @@
 ---
-title: "Azure 信息保护租户密钥的操作"
-description: "确定对 Azure 信息保护租户密钥具有的不同级别控制权和责任。"
+title: Azure 信息保护租户密钥的操作
+description: 确定对 Azure 信息保护租户密钥具有的不同级别控制权和责任。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: afe33bcee3516589bd87642b0f15206b90a4bb41
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: f459504f43c8e361e36832b19011f93d1cbaccc4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="operations-for-your-azure-information-protection-tenant-key"></a>Azure 信息保护租户密钥的操作
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 根据你的租户密钥拓扑，可以对 Azure 信息保护租户密钥进行不同级别的控制并承担相应责任。 两种密钥拓扑分别由 Microsoft 托管和客户托管。
 

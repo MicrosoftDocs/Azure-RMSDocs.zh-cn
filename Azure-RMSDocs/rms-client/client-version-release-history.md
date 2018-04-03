@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 10fe839ff24994af0c50fff6aeac303d57a19ea6
-ms.sourcegitcommit: 65d6b0ecfbca5071afe29e63aea6226ad7a911b8
+ms.openlocfilehash: 1da6a647715389f912af5192b5b70a80f0bd35e9
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
->适用于：Azure 信息保护
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 
 

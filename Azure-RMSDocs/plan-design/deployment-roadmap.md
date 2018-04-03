@@ -1,26 +1,26 @@
 ---
-title: "Azure 信息保护部署路线图"
-description: "使用这些步骤，为组织准备、实施和管理 Azure 信息保护。"
+title: Azure 信息保护部署路线图
+description: 使用这些步骤，为组织准备、实施和管理 Azure 信息保护。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ebfdb466be6dde9b0f1e48865c2af5d61cb038d1
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.openlocfilehash: b459babbf16b536b1cd73d0bb0ec2c36a499f9e1
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 建议使用以下步骤，为组织准备、实施和管理 Azure 信息保护。
 

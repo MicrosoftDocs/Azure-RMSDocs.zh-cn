@@ -1,26 +1,26 @@
 ---
-title: "Azure 信息保护的管理信息和支持"
-description: "管理员资源，其中包括有关新版本、支持选项以及如何与 Microsoft 联系以报告问题的信息。"
+title: Azure 信息保护的管理信息和支持
+description: 管理员资源，其中包括有关新版本、支持选项以及如何与 Microsoft 联系以报告问题的信息。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/07/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2822f05392c9ed07fda6556e8f3b1b8aa59fa7e1
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.openlocfilehash: 72d1c9872acd603f545f796550d44415dd996ab4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用以下资源可帮助你了解、部署和支持组织的 Azure 信息保护。
 

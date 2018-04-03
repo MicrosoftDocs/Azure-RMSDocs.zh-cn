@@ -1,26 +1,26 @@
 ---
-title: "Azure 信息保护也称为"
-description: "Azure 信息保护经过多次名称更改，你可能知道的是它以前的名称。"
+title: Azure 信息保护也称为
+description: Azure 信息保护经过多次名称更改，你可能知道的是它以前的名称。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 04/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 81e49f6904f43552dc6222f489c3719f02e59928
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: ee5c0406f351c8d46b42c25793a0f94823bf4ef3
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure 信息保护 - 也称为...
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 Azure 信息保护（有时缩写为 AIP）由著名 Microsoft 技术长期发展而形成，实现权限管理保护。 这是个长时演变过程，你可能通过其先前名称了解到此解决方案。 或者，可能在文档、UI 和日志文件中看到对这些名称的引用。 
 

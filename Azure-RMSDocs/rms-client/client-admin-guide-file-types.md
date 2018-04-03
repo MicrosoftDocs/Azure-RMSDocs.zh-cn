@@ -1,26 +1,26 @@
 ---
-title: "Azure 信息保护支持的文件类型"
-description: "有关支持的文件类型、文件扩展名以及负责适用于 Windows 的 Azure 信息保护客户端的管理员的保护级别的技术详细信息。"
+title: Azure 信息保护支持的文件类型
+description: 有关支持的文件类型、文件扩展名以及负责适用于 Windows 的 Azure 信息保护客户端的管理员的保护级别的技术详细信息。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
-ms.assetid: 
+ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e9b281fbce9ad423249137c5dfff5a6f88dd2178
-ms.sourcegitcommit: bf3967c5b74d2bc57b0f93239a297ccd56682178
+ms.openlocfilehash: a8a159813dba899cf79a13f15d10e2ff10c11494
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 Azure 信息保护客户端可以将以下内容应用于文档和电子邮件：
 
@@ -194,7 +194,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>默认不受保护的文件
 
-任何不受密码保护的文件无法通过 Azure 信息保护客户端进行本机保护。 最常看到的是受密码保护的 PDF 文件，但 Office 应用等其他应用程序也提供此功能。
+受密码保护的任何文件都不能由 Azure 信息保护客户端本机保护，除非该文件当前在应用保护的应用程序中打开。 最常看到的是受密码保护的 PDF 文件，但 Office 应用等其他应用程序也提供此功能。
 
 此外，Windows 的 Azure 信息保护客户端可查看以下文件，但无法对以下任一情况下的 PDF 文件进行本机保护或取消保护：
 

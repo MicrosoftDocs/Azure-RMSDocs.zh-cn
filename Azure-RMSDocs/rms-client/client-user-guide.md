@@ -1,26 +1,26 @@
 ---
-title: "Azure 信息保护用户指南"
-description: "适用于 Windows 的 Azure 信息保护客户端可帮助用户保护重要文档和电子邮件，使其不对特定人员可见（即使电子邮件被转发或将文档保存到另一个位置也是如此）。"
+title: Azure 信息保护用户指南
+description: 适用于 Windows 的 Azure 信息保护客户端可帮助用户保护重要文档和电子邮件，使其不对特定人员可见（即使电子邮件被转发或将文档保存到另一个位置也是如此）。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2cf46bf9-7d23-4f49-b5c1-7ed7b71c858f
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f1ea192bcacc856b1a4452e2ad3b21f4de45d511
-ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
+ms.openlocfilehash: 1e6ce5660a0ccc8385c6ab728c4d2c1c202023ed
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection-user-guide"></a>Azure 信息保护用户指南
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7
 
 适用于 Windows 的 Azure 信息保护客户端可帮助用户保护重要文档和电子邮件，使其不对特定人员可见（即使电子邮件被转发或将文档保存到另一个位置也是如此）。 还可通过此客户端打开他人已通过使用 Azure 信息保护中的 Rights Management 保护技术保护的文件。
 

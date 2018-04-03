@@ -1,24 +1,24 @@
 ---
-title: "快速入门教程步骤 2 - AIP"
-description: "快速试用 Azure 信息保护入门教程步骤 2 - 配置策略。"
+title: 快速入门教程步骤 2 - AIP
+description: 快速试用 Azure 信息保护入门教程步骤 2 - 配置策略。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 3dd58454709dd5a73edc23578f12e79d85a9b9c9
-ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
+ms.openlocfilehash: fecf9887937d3d17347e85759e2ed10b124ae8a1
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>步骤 2：配置并发布 Azure 信息保护策略
 
->适用于：Azure 信息保护
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 尽管 Azure 信息保护附带了你无需进行配置的默认策略，我们仍然要看一下该策略并进行一些更改。
 
@@ -107,7 +107,7 @@ ms.lasthandoff: 12/01/2017
     
     a. “选择条件类型”：保留默认设置“信息类型”。
     
-    b。 在“选择信息类型”搜索框中：键入“信用卡号”。 然后，从搜索结果中选择“信用卡号”。
+    b. 在“选择信息类型”搜索框中：键入“信用卡号”。 然后，从搜索结果中选择“信用卡号”。
     
     c. “最小出现次数” ：保留默认值“1”。
     
@@ -143,7 +143,7 @@ ms.lasthandoff: 12/01/2017
 
 现在你已经了解了默认策略并进行了一些更改，下一步是安装 Azure 信息保护客户端。
 
-|如果你想了解更多信息|其他信息|
+|如果你想了解更多信息|附加信息|
 |--------------------------------|--------------------------|
 |关于默认策略和不同版本|[默认 Azure 信息保护策略](../deploy-use/configure-policy-default.md)|
 |有关策略配置|[配置 Azure 信息保护策略](../deploy-use/configure-policy.md)|

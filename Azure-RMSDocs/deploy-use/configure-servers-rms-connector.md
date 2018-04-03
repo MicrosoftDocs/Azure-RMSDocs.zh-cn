@@ -1,26 +1,26 @@
 ---
-title: "为 Rights Management 连接器配置服务器 - AIP"
-description: "此信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及部署 Azure Rights Management 连接器中的步骤 5。"
+title: 为 Rights Management 连接器配置服务器 - AIP
+description: 此信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及部署 Azure Rights Management 连接器中的步骤 5。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 674acfafb305d8ac6ff530710ba311160c850288
-ms.sourcegitcommit: 8ba50d1fc813214b6e66baea140e626c74c5a518
+ms.openlocfilehash: c15c18f7d0a0f43e4f91193ee4a11b324f0187f2
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
->*适用于：Azure 信息保护、Windows Server 2012、Windows Server 2012 R2*
+>适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2012、Windows Server 2012 R2
 
 
 使用以下信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 5。
@@ -106,7 +106,7 @@ ms.lasthandoff: 10/16/2017
     Get-help .\GenConnectorConfig.ps1 -detailed
     ```
 
-若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如 https://connector.contoso.com。然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
+若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，https://connector.contoso.com。然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
 
 > [!IMPORTANT]
 > 当你运行此工具时，请确保指定组织的负载平衡 RMS 连接器的名称，而不要指定运行 RMS 连接器服务的单个服务器的名称。

@@ -1,24 +1,27 @@
 ---
-title: "Azure 信息保护的仅保护模式"
-description: "此信息适用于以仅保护模式运行 Azure 信息保护客户端的用户。"
+title: Azure 信息保护的仅保护模式
+description: 此信息适用于以仅保护模式运行 Azure 信息保护客户端的用户。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 201415526b57d691d999ddba6af2451df4d36de4
-ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
+ms.openlocfilehash: aed3c59465f822e27411eb84df793bf7ad63b061
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>用户指南：Azure 信息保护客户端的仅保护模式
+
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7
+
 
 当 Azure 信息保护客户端没有用于对文档和电子邮件进行分类的标签，它将在仅保护模式下运行。 例如，在此模式中，当使用 Windows 文件资源管理器，右键单击“分类和保护”，可能会看到以下项：
 

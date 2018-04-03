@@ -1,37 +1,37 @@
 ---
-title: "Azure 信息保护的术语"
-description: "对 Microsoft Azure 信息保护相关的单词、短语或缩略词感到迷惑吗？ 在此处查找特定于 Azure 信息保护或具有特定含义（如果在此服务上下文中使用）的术语和缩写的定义。"
+title: Azure 信息保护的术语
+description: 对 Microsoft Azure 信息保护相关的单词、短语或缩略词感到迷惑吗？ 在此处查找特定于 Azure 信息保护或具有特定含义（如果在此服务上下文中使用）的术语和缩写的定义。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 12/15/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da20ac2ea327b5b97f021c85f62d97b9aa1b9824
-ms.sourcegitcommit: fc205eae0c0b378d41da5f1eceb0c699e60ad66f
+ms.openlocfilehash: b3513a4ec00abf8727e2a5e07f9b4a67c96b7574
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 对 Microsoft Azure 信息保护相关的单词、短语或缩略词感到迷惑吗？ 在此处查找特定于 Azure 信息保护或具有特定含义（如果在此服务上下文中使用）的术语和缩写的定义。
 
-|项|定义|
+|术语|定义|
 |--------|--------------|
 |AADRM|Azure 权限管理服务的 Windows PowerShell 模块名称，派生自 Azure 权限管理之前名为 (Windows) Azure Active Directory 权限管理时的非正式缩写。|
 |激活|启用 Azure 权限管理服务，使组织可以保护其文档和电子邮件。 此操作还会在 Exchange Online 和 SharePoint Online 中启用权限管理功能。|
 |Active Directory 权限管理服务|经常缩写为 *AD RMS*。<br /><br />一个 Windows Server 角色，它使用加密和策略来提供权限管理保护，以帮助保护文档、文件和电子邮件。|
 |AD RMS|请参阅 *Active Directory Rights Management 服务*。|
 |Azure Information Protection|一种基于云的服务，使用分类、标签和保护来帮助保护文档和电子邮件的。 Azure 权限管理通过使用加密、标识和授权策略提供保护。|
-|Azure 权限管理|常缩写为 *Azure RMS*。<br /><br />Azure 信息保护使用的一种 Azure 服务，它使用加密和策略来帮助保护文档、文件和电子邮件。  也称为 *Azure Rights Management 服务*。 之前的名称包括：<br /><br />- Windows Azure Active Directory Rights Management：常缩写为 Windows Azure AD Rights Management Service。<br /><br />- *RMS Online*：原始的建议名称，有时可能在错误消息和日志文件条目中看到。|
+|Azure Rights Management|常缩写为 *Azure RMS*。<br /><br />Azure 信息保护使用的一种 Azure 服务，它使用加密和策略来帮助保护文档、文件和电子邮件。  也称为 *Azure Rights Management 服务*。 之前的名称包括：<br /><br />- Windows Azure Active Directory Rights Management：常缩写为 Windows Azure AD Rights Management Service。<br /><br />- *RMS Online*：原始的建议名称，有时可能在错误消息和日志文件条目中看到。|
 |Azure RMS|请参阅 *Azure Rights Management*。|
 |BYOK|请参阅 *自带密钥*。|
 |自带密钥|经常缩写为 *BYOK*。<br /><br />想要为 Azure 信息保护生成和管理自己的租户密钥的组织选择的配置和拓扑选项。|

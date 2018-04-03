@@ -1,24 +1,24 @@
 ---
-title: "配置 Azure 信息保护策略设置"
-description: "在 Azure 信息保护策略中配置适用于所有用户、所有设备的设置。"
+title: 配置 Azure 信息保护策略设置
+description: 在 Azure 信息保护策略中配置适用于所有用户、所有设备的设置。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 0a31316b2f69ffb2640fdd1672af4b740c863f85
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 0ba75a1898d8618ebe38bcf2680e8a9623c79265
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
->适用于：Azure 信息保护
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 除了信息保护栏标题和工具提示，Azure 信息保护策略中还有一些可以在标签中单独配置的设置：
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 02/23/2018
     
     - **为 Azure 信息保护客户端“告诉我详细信息”网页提供自定义 URL**：当用户在其 Office 应用程序中从“开始”选项卡选择“保护” > “帮助和反馈”时，将在“帮助和反馈”部分的“Microsoft Azure 信息保护”对话框中看到此链接。 默认情况下，此链接将转到 [Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)网站。 如果希望此链接转到备选网页，可输入 HTTP 或 HTTPS（推荐）URL。 不进行检查来验证输入的自定义 URL 是否可供访问或是否可在所有设备上正确显示。
         
-        例如，对于支持人员，输入的 Microsoft 文档页可包含有关安装和使用客户端的信息 (**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) 或者有关发布版本的信息 (**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**)。 另外，可以发布自己的网页，提供供用户联系支持人员的信息，或提供指导用户如何使用已配置标签的视频。
+        例如，对于支持人员，你可能输入包含客户端安装和使用信息 (**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) 或发行版信息 (**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**) 的 Microsoft 文档页。 另外，可以发布自己的网页，提供供用户联系支持人员的信息，或提供指导用户如何使用已配置标签的视频。
 
 3. 单击“**保存**”以保存更改。
 

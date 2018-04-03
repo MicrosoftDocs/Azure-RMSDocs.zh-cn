@@ -1,26 +1,26 @@
 ---
-title: "通过使用 RMS 共享应用进行就地保护 - AIP"
-description: "有关如何将文件安全地存储在计算机、服务器或其他存储设备上的说明。"
+title: 通过使用 RMS 共享应用进行就地保护 - AIP
+description: 有关如何将文件安全地存储在计算机、服务器或其他存储设备上的说明。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a0654dba53f493551b2cc4d1fbb8790f246e0c18
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 0d819fd242e57402a790e9acb40ffa48eeb701b4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序保护设备上的文件（就地保护）。
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
 
 当你就地保护文件时，它将替换未受保护的原始文件。 然后，你可以将文件保留在原来位置、将其复制到其他文件夹或设备，或共享其所在的文件夹，同时该文件将仍处于受保护状态。 你还可以将受保护文件附加到电子邮件，虽然我们建议直接从文件资源管理器或 Office 应用程序中（请参阅[使用 Rights Management 共享应用程序保护通过电子邮件共享的文件](sharing-app-protect-by-email.md)）通过电子邮件共享受保护文件。
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 06/30/2017
     > [!NOTE]
     > 如果没有看到“使用 RMS 保护”  选项，可能是计算机上没有安装 RMS 共享应用程序，或者是必须重新启动计算机以完成安装。 有关如何安装 RMS 共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md)。
 
-2.  执行以下操作之一：
+2.  执行下列操作之一：
 
     -   选择策略模板：一般而言，它们是将访问权限和使用限制给你的组织成员的预定义权限。 例如，如果组织名称为“Contoso, Ltd”，你可能会看到“Contoso, Ltd - 机密，仅供查阅”。 如果这是你首次在此电脑上保护文件，将需要首先选择“公司定义的保护”以下载模板。
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 06/30/2017
 
         选择策略模板时，也可以保护多个文件和某个文件夹。 选择某个文件夹时，将自动选择该文件夹中的所有文件进行保护，但不会自动保护在该文件夹中创建的新文件。
 
-    -   选择“自定义权限” ：如果模板没有提供所需的保护级别，或你想要自己显式设置保护选项，请选择此选项。 在[添加保护](sharing-app-dialog-box.md)对话框中指定此文件所需的选项，然后单击“应用”。
+    -   选择“自定义权限” ：如果模板没有提供所需的保护级别，或你想要自己显式设置保护选项，请选择此选项。 在“添加保护”[](sharing-app-dialog-box.md)对话框中指定此文件所需的选项，然后单击“应用”。
 
 3.  你可能很快就会看到一个对话框，告诉你文件处于受保护状态，然后焦点返回到文件资源管理器。 现在，所选文件处于受保护状态。 在某些情况下（添加的保护更改了文件扩展名时），文件资源管理器中的原始文件将为具有 Rights Management 保护锁状图标的新文件所替代。 例如：
 

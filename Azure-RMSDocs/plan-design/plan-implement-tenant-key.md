@@ -1,26 +1,26 @@
 ---
-title: "你的 Azure 信息保护租户密钥"
-description: "此信息有助于规划和管理 Azure 信息保护租户密钥。 为了遵守适用于组织的特别规定，你可能想要自行管理租户密钥，而不是由 Microsoft 管理你的租户密钥（默认设置）。 自行管理租户密钥也称为自带密钥 (BYOK)。"
+title: 你的 Azure 信息保护租户密钥
+description: 此信息有助于规划和管理 Azure 信息保护租户密钥。 为了遵守适用于组织的特别规定，你可能想要自行管理租户密钥，而不是由 Microsoft 管理你的租户密钥（默认设置）。 自行管理租户密钥也称为自带密钥 (BYOK)。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 05b6a4facc4158cc7e2cb7ab4067c6b19566ef69
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.openlocfilehash: 714d00036d263cc64e44b67b547d743ff4cbab4b
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用此文章中的信息可帮助你规划和管理 Azure 信息保护租户密钥。 例如，为了遵守组织的具体规定，你不能让 Microsoft 管理你的租户密钥（默认设置），而想要自行管理租户密钥。 自行管理租户密钥也称为自带密钥 (BYOK)。
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 03/08/2018
 ### <a name="prerequisites-for-byok"></a>BYOK 的先决条件
 有关自带密钥 (BYOK) 的先决条件列表，请参阅以下表格。
 
-|要求|更多信息|
+|要求|详细信息|
 |---------------|--------------------|
 |你的 Azure 信息保护租户必须具有 Azure 订阅。 如果没有订阅，可以注册[免费帐户](https://azure.microsoft.com/pricing/free-trial/)。 <br /><br /> 若要使用受 HSM 保护的密钥，必须拥有 Azure Key Vault 高级服务层。|免费的 Azure 订阅提供相应的访问权限，可配置 Azure Active Directory 以及 Azure 权限管理自定义模板（**可访问 Azure Active Directory**），但不足以使用 Azure 密钥保管库。 若要确认拥有可用于 BYOK 的 Azure 订阅，请使用 [Azure 资源管理器](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx) PowerShell cmdlet： <br /><br /> 1.若要启动 Azure PowerShell 会话，请选择“以管理员身份运行”选项，并使用以下命令以 Azure 信息保护租户的全局管理员身份登录：`Login-AzureRmAccount`<br /><br />2.键入以下命令，并确认可以看到显示了订阅名称和 ID 以及 Azure 信息保护租户 ID 的值，并且状态为“已启用”：`Get-AzureRmSubscription`<br /><br />如果没有显示任何值，并且返回到提示，则表示没有可用于 BYOK 的 Azure 订阅。 <br /><br />**注意**：如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，则除 BYOK 先决条件以外，必须拥有最低版本为 11.62 的 Thales 固件。|
 |若要使用本地创建的受 HSM 保护的密钥：为 Key Vault BYOK 所列出的所有先决条件。 |请参阅 Azure 密钥保管库文档中的 [Prerequisites for BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br /> **注意**：如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，则除 BYOK 先决条件以外，必须拥有最低版本为 11.62 的 Thales 固件。|

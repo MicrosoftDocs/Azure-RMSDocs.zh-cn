@@ -1,24 +1,24 @@
 ---
-title: "快速入门教程步骤 1 - AIP"
-description: "快速试用 Azure 信息保护入门教程步骤 1 - 激活保护服务。"
+title: 快速入门教程步骤 1 - AIP
+description: 快速试用 Azure 信息保护入门教程步骤 1 - 激活保护服务。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: 952431771e89e934be4a725ece4f3d9cd47165fe
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: cfeed994bb23469694e906132e175aabf925290e
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-1-activate-protection"></a>步骤 1：激活保护
  
->适用于：Azure 信息保护
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 > [!NOTE]
 >即使已为你的租户激活了 Azure Rights Management 服务，仍请完成此步骤以确认激活状态。 这些说明包括登录到 Azure 门户和创建 Azure 信息保护边栏选项卡的相关信息，以便为你执行步骤 2 做好准备。
@@ -60,7 +60,7 @@ ms.lasthandoff: 02/23/2018
 
 这就是完成本教程第一步所要执行的所有操作。 可以转到步骤 2。
 
-|如果你想了解更多信息|其他信息|
+|如果你想了解更多信息|附加信息|
 |--------------------------------|--------------------------|
 |关于激活 Rights Management|[激活 Azure Rights Management](../deploy-use/activate-service.md)|
 

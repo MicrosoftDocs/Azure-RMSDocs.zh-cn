@@ -1,26 +1,26 @@
 ---
-title: "删除 Azure 信息保护标签"
-description: "说明了如何从由 Azure 信息保护标记的文件中，或从受 Rights Management 保护的文件中，删除标签和保护。"
+title: 删除 Azure 信息保护标签
+description: 说明了如何从由 Azure 信息保护标记的文件中，或从受 Rights Management 保护的文件中，删除标签和保护。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
-ms.assetid: 
+ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b7651b39760f9ebf71970ec744d553a71f5e9c9c
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 6e68a3ab1aca0d32f8105bad7d2b5e8985dab1ae
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>用户指南：从由 Azure 信息保护标记的文件和电子邮件中，或从受 Rights Management 保护的文件和电子邮件中，删除标签和保护
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7
 
 如果[计算机上安装了 Azure 信息保护客户端](install-client-app.md)，你可以从文件和电子邮件中删除分类标签和保护。
 

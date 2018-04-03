@@ -1,26 +1,26 @@
 ---
-title: "从 Azure 信息保护为 Azure Rights Management 服务配置 Exchange Online IRM"
-description: "当 Office 365 租户不支持 Office 365 邮件加密中的新功能时，管理员为 Azure Rights Management 服务配置 Exchange Online 的信息和说明。"
+title: 从 Azure 信息保护为 Azure Rights Management 服务配置 Exchange Online IRM
+description: 当 Office 365 租户不支持 Office 365 邮件加密中的新功能时，管理员为 Azure Rights Management 服务配置 Exchange Online 的信息和说明。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
-ms.assetid: 
+ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a0c6fe7f7b6a34eea21b646ce5573ca03b13be3c
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 022eb960ef58e69c0a4c2d8a76962ed792a9ed38
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="exchange-online-irm-configuration-when-you-have-imported-a-trusted-publishing-domain"></a>已导入受信任的发布域时的 Exchange Online IRM 配置
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 仅在先前已通过导入受信任的发布域 (TPD) 为 IRM 配置了 Exchange Online 且需要解密先前已加密的电子邮件时才使用这些说明。
 

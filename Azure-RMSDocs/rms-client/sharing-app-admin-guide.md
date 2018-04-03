@@ -1,26 +1,26 @@
 ---
-title: "RMS 共享应用程序管理指南 - AIP"
-description: "面向负责部署适用于 Windows 的 Microsoft Rights Management 共享应用程序的企业网络管理员的说明和信息。"
+title: RMS 共享应用程序管理指南 - AIP
+description: 面向负责部署适用于 Windows 的 Microsoft Rights Management 共享应用程序的企业网络管理员的说明和信息。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 46ed6ac05e696ec65527d39ab38c312f6aba8411
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: e1f3520a74b3ae57984e635ca68ba429dd6ad131
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>保护级别 – 本机和常规
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
 
 > [!IMPORTANT]
 > **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 
