@@ -1,24 +1,24 @@
 ---
-title: "为应用程序配置 ADAL 身份验证 - AIP"
-description: "配置 Azure 信息保护应用以使用基于 Azure ADAL 的身份验证的步骤"
-keywords: "身份验证, RMS, ADAL, 信息保护,"
+title: 为应用程序配置 ADAL 身份验证 - AIP
+description: 配置 Azure 信息保护应用以使用基于 Azure ADAL 的身份验证的步骤
+keywords: 身份验证, RMS, ADAL, 信息保护,
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 03/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 4ff8fd5b3c188f73e2210a64ec770b3e5f347142
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 5900a011a4470a46cc86e1bca1ada32b43cb0213
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>配置应用以进行 ADAL 身份验证
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 01/11/2018
 
 你将需要以下各项：
 
-- [Microsoft Azure 订阅](https://azure.microsoft.com/en-us/)（使用免费试用版即可）。 有关详细信息，请参阅[用户如何注册个人 RMS](../understand-explore/rms-for-individuals-user-sign-up.md)
-- Microsoft Azure Rights Management 的订阅（使用免费的[个人 RMS](https://technet.microsoft.com/en-us/library/dn592127.aspx) 帐户即可）。
+- [Microsoft Azure 订阅](https://azure.microsoft.com/)（使用免费试用版即可）。 有关详细信息，请参阅[用户如何注册个人 RMS](../understand-explore/rms-for-individuals-user-sign-up.md)
+- Microsoft Azure Rights Management 的订阅（使用免费的[个人 RMS](https://technet.microsoft.com/library/dn592127.aspx) 帐户即可）。
 
 > [!NOTE]
 > 询问你的 IT 管理员你是否具有 Microsoft Azure Rights Management 订阅，请你的 IT 管理员执行以下步骤。 如果你的组织没有订阅，应请 IT 管理员创建订阅。 此外，你的 IT 管理员应使用*工作或学校帐户*而不是 *Microsoft 帐户*（即 Hotmail）进行订阅。

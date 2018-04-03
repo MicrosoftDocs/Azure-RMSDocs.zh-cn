@@ -1,24 +1,24 @@
 ---
-title: "Azure 信息保护快速入门教程"
-description: "该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 20 分钟。"
+title: Azure 信息保护快速入门教程
+description: 该教程用于快速试用适合你组织的 Microsoft Azure 信息保护，所需时间大概 20 分钟。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: e20b3e4d84b2230cf7bcbc64c31970fd53d5a7ae
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: 997c4c873eb7c9340fb765f513c1e06cd3725fdd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure 信息保护快速入门教程 
 
->适用于：Azure 信息保护
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 使用该教程以快速试用适合你组织的 Microsoft Azure 信息保护，只需 5 个步骤，所需时间大概 20 分钟。 本教程为自我引导式教程，旨在快速显示某些 Azure 信息保护提供的特性和功能的案例。 它不包括所有可用功能，也不是你组织的部署指南。 如果想要为你的组织部署 Azure 信息保护，请参阅[部署路线图文档](../plan-design/deployment-roadmap.md)。 
 

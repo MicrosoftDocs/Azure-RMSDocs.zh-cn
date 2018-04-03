@@ -1,7 +1,7 @@
 ---
-title: "入门 - 适用于 iOS 和 Android 的 AIP 应用"
-description: 
-keywords: "如何使用适用于 iOS 和 Android 的 Azure 信息保护应用查看电子邮件或文件"
+title: 入门 - 适用于 iOS 和 Android 的 AIP 应用
+description: ''
+keywords: 如何使用适用于 iOS 和 Android 的 Azure 信息保护应用查看电子邮件或文件
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -13,15 +13,15 @@ ms.technology: techgroup-identity
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d4fbec69d4185004f4ce10bcc8904b2dfb9a7f24
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.openlocfilehash: ccee69ba4f0b17440e9748787502a480e692de7c
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门
 
-*适用于：Active Directory Rights Management Services、Azure 信息保护*
+适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 在使用本页上的说明之前，请务必阅读[有关 iOS 版和 Android 版 Azure 信息保护应用的常见问题解答](mobile-app-faq.md)。 此页面说明了应用的作用、支持的设备，以及有关应用使用方法的基本信息。
 

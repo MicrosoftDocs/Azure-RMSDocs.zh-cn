@@ -1,26 +1,26 @@
 ---
-title: "使用 RMS 共享应用跟踪和撤销文档 - AIP"
-description: "使用 RMS 共享应用程序保护你的文档后，你可以跟踪用户如何使用受保护的文档。 如有必要（即需要停止对这些文件的共享），你还可以撤消对这些文件的访问权限。"
+title: 使用 RMS 共享应用跟踪和撤销文档 - AIP
+description: 使用 RMS 共享应用程序保护你的文档后，你可以跟踪用户如何使用受保护的文档。 如有必要（即需要停止对这些文件的共享），你还可以撤消对这些文件的访问权限。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 71f08e7500fbc9326bed3a5b37d694ecc5e37984
-ms.sourcegitcommit: 02e48f0e5137ba777ec9a2bccde08130e6075c20
+ms.openlocfilehash: 86da59d624d197aaad25e3f6fb04cfdd47ad1c3e
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>使用 RMS 共享应用程序跟踪和撤销文档
 
->适用于：Azure 信息保护、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
 
 通过 RMS 共享应用程序对文档进行保护以后，如果你的组织使用的是 Azure 信息保护而不是 Active Directory Rights Management Services，则可跟踪人们是如何使用你的受保护文档的。 如有必要（即需要停止对这些文件的共享），你还可以撤消对这些文件的访问权限。 若要进行此操作，你可以使用**文档跟踪站点**，这些站点可以通过 Windows 计算机、Mac 计算机甚至平板电脑和手机进行访问。
 

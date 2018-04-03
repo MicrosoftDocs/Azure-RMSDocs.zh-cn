@@ -1,26 +1,26 @@
 ---
-title: "Azure RMS 服务的日志和分析使用情况 - AIP"
-description: "有关如何使用 Azure Rights Management (Azure RMS) 的使用日志记录功能的信息和说明。"
+title: Azure RMS 服务的日志和分析使用情况 - AIP
+description: 有关如何使用 Azure Rights Management (Azure RMS) 的使用日志记录功能的信息和说明。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 09d076299f70718b65bb3746486f559a880a2660
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: b4a9c6b259e5863bb5be276f89beb0de33002ca4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>记录和分析 Azure Rights Management 服务的使用情况
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用此信息以帮助用户了解如何使用 Azure 信息保护中的 Azure Rights Management 服务使用情况日志记录。 该服务为组织的文档和电子邮件提供数据保护，并且可以将每个请求记录下来。 这些请求包括在用户保护文档和电子邮件以及使用此内容时，管理员为该服务执行的操作，以及 Microsoft 操作员为了支持 Azure 信息保护部署而执行的操作。 
 

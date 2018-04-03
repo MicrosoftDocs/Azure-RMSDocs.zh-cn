@@ -1,27 +1,27 @@
 ---
-title: "快速入门教程步骤 5 - AIP"
-description: "快速试用 Azure 信息保护入门教程步骤 5 - 共享受保护的文件和跟踪文件。"
-keywords: 
+title: 快速入门教程步骤 5 - AIP
+description: 快速试用 Azure 信息保护入门教程步骤 5 - 共享受保护的文件和跟踪文件。
+keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/18/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6d62b6dd588b035ded582a87f5faf04a04df6ab6
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 718c15769e5719d5e8dde612cf66e4215f1e235d
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>步骤 5：了解如何在实际操作中共享受保护的文件和如何跟踪文档 
 
->*适用于：Azure 信息保护*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 在本教程的最后一步中，找到已创建的 Word 文档或 Excel 电子表格，将其发送到合作伙伴或同事。 就本教程来说，该文档实际包含什么文本并不重要，而之所以需要让其包含一些文本，是为了方便你确认所授权的收件人能够阅读它。
 
@@ -113,7 +113,7 @@ ms.lasthandoff: 09/18/2017
 
 
 
-|如果你想了解更多信息|其他信息|
+|如果你想了解更多信息|附加信息|
 |--------------------------------|--------------------------|
 |有关保护之后可安全共享的文件的完整说明|[对文件或电子邮件进行分类和保护](../rms-client/client-classify-protect.md)|
 |关于供其他用户注册的免费帐户|[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)|

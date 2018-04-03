@@ -1,26 +1,26 @@
 ---
-title: "对数据保护的客户端设备支持 - AIP"
-description: "确定哪些设备支持 Azure 信息保护中的 Azure Rights Management 服务。"
+title: 对数据保护的客户端设备支持 - AIP
+description: 确定哪些设备支持 Azure 信息保护中的 Azure Rights Management 服务。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/14/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da7eebf48f3ad450051e07520b4f3d6157949b50
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: d436a7fd52ccf28d884eab9bfcba0dbdf3321cba
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的客户端设备
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 若要确定哪些设备支持 Azure Rights Management 服务，请参阅以下部分。 此服务为 Azure 信息保护提供数据保护。
 

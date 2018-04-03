@@ -1,26 +1,26 @@
 ---
-title: "安装和配置 Rights Management 连接器 - AIP"
-description: "此信息可帮助安装并配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到部署 Azure Rights Management 连接器中的步骤 1-4。"
+title: 安装和配置 Rights Management 连接器 - AIP
+description: 此信息可帮助安装并配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到部署 Azure Rights Management 连接器中的步骤 1-4。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 73cbcc73b2ce96b2e41f6fef90d70cee71ee3dff
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: a1526c3efea1a03a82baed526d65b748d2aa7bae
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用以下信息可帮助你安装并配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 1-4。
 

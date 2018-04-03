@@ -1,30 +1,30 @@
 ---
-title: "从 AD RMS 迁移到 Azure 信息保护 - 第 3 阶段"
-description: "从 AD RMS 迁移到 Azure 信息保护的第 3 阶段涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 7。"
+title: 从 AD RMS 迁移到 Azure 信息保护 - 第 3 阶段
+description: 从 AD RMS 迁移到 Azure 信息保护的第 3 阶段涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 7。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 18ddadd2f46cdf20d437b2f754084bc25f737d8e
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: e5e1f0fa043a0a15ef34c9e4d5690e974cf6bddd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 3。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 7。
 
-## <a name="step-7-reconfigure-windows-computers-to-use-azure-information-protection"></a>步骤 7. 重新配置 Windows 计算机以使用 Azure 信息保护
+## <a name="step-7-reconfigure-windows-computers-to-use-azure-information-protection"></a>步骤 7： 重新配置 Windows 计算机以使用 Azure 信息保护
 
 对于使用 Office 2016 即点即用桌面应用的 Windows 计算机：
 
@@ -132,7 +132,7 @@ ms.lasthandoff: 03/09/2018
     > [!IMPORTANT]
     > 仍然注意，不要在地址前后引入多余空格。
     > 
-    > 此外，如果 AD RMS 服务器使用 SSL/TLS 服务器证书，请检查字符串中许可 URL 值是否包括端口号 **443**。 例如：https:// rms.treyresearch.net:443/_wmcs/licensing。 单击群集名称并查看“**群集详细信息**”时，Active Directory Rights Management Services 中会显示此信息。 如果端口号 443 包含在此 URL 中，修改脚本时请将该值包括在内。 例如，https://rms.treyresearch.net:**443**。 
+    > 此外，如果 AD RMS 服务器使用 SSL/TLS 服务器证书，请检查字符串中许可 URL 值是否包括端口号 **443**。 例如：https:// rms.treyresearch.net:443/_wmcs/licensing。 单击群集名称并查看“**群集详细信息**”时，Active Directory Rights Management Services 中会显示此信息。 如果端口号 443 包含在此 URL 中，修改脚本时请将该值包括在内。 例如 https://rms.treyresearch.net:**443**。 
     
     如果需要针对 &lt;YourTenantURL&gt; 检索 Azure Rights Management 服务 URL ，请重新参考[确定 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
 

@@ -1,24 +1,24 @@
 ---
-title: "配置 Azure 信息保护标签以进行保护"
-description: "通过配置标签来使用 Rights Management 保护，可保护最敏感的文档和电子邮件。"
+title: 配置 Azure 信息保护标签以进行保护
+description: 通过配置标签来使用 Rights Management 保护，可保护最敏感的文档和电子邮件。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: a00c6e669f01a8166b53ae1ae0a5a63737253d61
-ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
+ms.openlocfilehash: d27dcff090aa33cb5c7a3bcb6641ac635ed8a104
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
->适用于：Azure 信息保护
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 可通过使用 Rights Management 服务保护最敏感的文档和电子邮件。 此服务使用加密、标识和身份验证策略，有助于防止数据丢失。 保护应用于配置为使用 Rights Management 保护文档和电子邮件的标签，用户还可以在 Outlook 中选择“不可转发”按钮。 
 
@@ -63,7 +63,9 @@ ms.lasthandoff: 02/27/2018
         
         先前配置的保护设置将保留为存档的保护模板，如果将选项更改回“保护”，则会再次显示。 Azure 门户中不会显示此模板，但如有需要，仍可通过 [PowerShell](configure-templates-with-powershell.md) 管理该模板。 这一行为表示，如果内容具有先前应用了保护设置的此标签，则仍可以访问该内容。
     
-    - **保护**：选择此选项应用保护，然后转到步骤 5。
+    - **保护**：选择此选项应用保护，然后转到步骤 5 配置保护设置。
+    
+    注意：你可以在此阶段保存新标签，无需进一步配置。 如果保存新标签，标签将配置为应用保护，这样，只有应用标签的人员才可以打开文档或电子邮件，且无任何使用限制。 在某些情况下，这可能是必需的结果，这样用户便可将文件保存到任何位置，并确保只有他们能够打开它。 如果此结果符合你的要求，并且其他人不需要协作处理受保护内容，请直接跳至步骤 12 而不是步骤 5。
     
     - “删除保护”：如果文档或电子邮件受到保护，选择此选项可删除保护。 然后转到步骤 11。
         
@@ -81,7 +83,7 @@ ms.lasthandoff: 02/27/2018
     
     大多数情况下，为权限设置选择“Azure (云密钥)”。 请勿选择“**HYOK (AD RMS)**”，除非你已阅读并了解此“*自留密钥*”(HYOK) 配置随附的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。 若要继续配置 HYOK (AD RMS)，请转到步骤 10。
     
-7. 选择下列选项之一：
+7. 选择以下选项之一：
     
     - “设置权限”：在此门户中定义新的保护设置。
     
@@ -121,7 +123,7 @@ ms.lasthandoff: 02/27/2018
     
     对于指定的所有用户和组，在“保护”边栏选项卡上，立即检查是否想要对以下设置进行任何更改。 请注意，这些设置和权限一样，它们并不适用于 [Rights Management 颁发者或 Rights Management 所有者](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)，也不适用于任何已分配的[超级用户](configure-super-users.md)。
     
-    |Setting|更多信息|推荐设置
+    |设置|详细信息|推荐设置
     |-----------|--------------------|--------------------|
     |**内容过期时间**|定义一个日期或天数，在此期间不应为选定的用户打开受模板保护的文档或电子邮件。 你可以指定一个日期，也可以指定对内容应用保护后所经历的天数。<br /><br />如果你指定一个日期，它将在你当前时区的午夜生效。|除非内容具有特定的时间限制要求，否则**内容永不过期**。|
     |**允许脱机访问**|使用此设置在你的任何安全需求（包括吊销后的访问权限）与所选用户在没有 Internet 连接的情况下是否能够打开受保护的内容之间实现平衡。<br /><br />如果你指定内容在没有 Internet 连接的情况下不可用，或者指定内容仅在指定天数内可用，则在到达该阈值时，这些用户必须重新进行身份验证，他们的访问也将被记录。 发生这种情况时，如果用户的凭据不缓存，他们会收到提示，指示登录后才能打开文档或电子邮件。<br /><br />除了重新进行身份验证之外，还会重新评估策略和用户组成员身份。 这意味着，如果策略或组成员身份相比用户上一次访问文档或电子邮件时发生变化，则他们可能获得与上一次访问相同内容时不同的访问结果。 如果文档已被[撤销](../rms-client/client-track-revoke.md)，则可能不包含访问权限。|取决于内容的敏感程度：<br /><br />- **在没有 Internet 连接的情况下内容的可用天数** = **7**用于如果与未经授权的人员共享可能导致业务损失的敏感业务数据。 此建议提供灵活性和安全性之间的平衡折中。 例如合同、安全报告、预测摘要和销售客户数据。<br /><br />- **禁止访问**对于高度敏感的业务数据，如果与未经授权的人员共享将会导致业务损失。 此建议优先考虑安全性而不是灵活性，并确保一旦文档被撤销，那么所有授权用户都无法打开文档。 例如员工和客户信息、密码、源代码和预先公布的财务报表。|
@@ -229,8 +231,9 @@ ms.lasthandoff: 02/27/2018
 此标签不可限制到 Outlook，但可提供限制性低于“不要转发”的控制。 例如，希望收件人能够复制电子邮件或附件，或者打印和保存附件。
 
 如果指定没有 Azure AD 帐户的外部用户，请确保告知用户仅将此标签用于电子邮件，而不用于文档。 此外，要支持这些外部用户，还须为 Exchange Online 配置 [Office 365 邮件加密新功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)。  
+
 > [!NOTE]
-> Exchange Online 即将推出新选项 - [仅加密](configure-usage-rights.md#encrypt-only-option-for-emails)。 此选项不可用于标签配置。
+> Exchange Online 即将推出新选项 - [仅加密](configure-usage-rights.md#encrypt-only-option-for-emails)。 此选项不可用于标签配置。 但是，你可以使用此示例配置具有相同使用权限集的标签。
 
 用户在“收件人”框中指定电子邮件地址时，该地址必须与为此标签配置指定的用户地址相同。 因为用户可能属于组并且拥有多个电子邮件地址，所以他们指定的电子邮件地址不必与你为权限指定的电子邮件地址匹配。 然而，指定同一电子邮件地址是确保成功对收件人授权的最简单的方法。 要详细了解如何向用户授予权限，请参阅[准备用户和组以便使用 Azure 信息保护](../plan-design/prepare.md)。 
 
@@ -242,9 +245,11 @@ ms.lasthandoff: 02/27/2018
     
     重复此步骤，指定其他应具有相同权限的用户。
 
-4. 对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。 
+4. 对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。
     
-    注意：请勿对电子邮件选择“查看器”，并且如果选择“自定义”，请确保包括“编辑和保存”。 
+    注意：请勿对电子邮件选择“查看器”，并且如果选择“自定义”，请确保包括“编辑和保存”。
+    
+    要从 Exchange Online 中选择与新的“仅加密”选项匹配的相同权限，请选择“自定义”。 然后选择“另存为，导出(导出)”和“完全控制(所有者)”之外的所有权限。
 
 5. 要指定其他应具有不同权限的用户，请重复步骤 3 和 4。
 

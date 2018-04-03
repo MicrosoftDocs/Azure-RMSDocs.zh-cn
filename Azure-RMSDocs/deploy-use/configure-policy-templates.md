@@ -1,26 +1,26 @@
 ---
-title: "配置和管理 Azure 信息保护的模板"
-description: "通过 Azure 门户配置和管理 Rights Management 模板。"
+title: 配置和管理 Azure 信息保护的模板
+description: 通过 Azure 门户配置和管理 Rights Management 模板。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c9c2ef1338f1d5e1c3d360ad261f89f652a804ec
-ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
+ms.openlocfilehash: 4f0cc5be090a425c7be28c81f20b85eef485772d
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
->适用于：Azure 信息保护
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 >[!NOTE]
 >此功能将替代在 Azure 经典门户中配置自定义模板。 经典门户现已停用，因此必须使用 Azure 门户。 有关快速操作指南映射，请参阅[曾使用 Azure 经典门户执行的任务](migrate-portal.md)。

@@ -1,24 +1,24 @@
 ---
-title: "删除或重排 Azure 信息保护标签"
-description: "可以删除或重排用户在信息保护栏看到的标签，方法是在 Azure 信息保护策略中对此进行配置。"
+title: 删除或重排 Azure 信息保护标签
+description: 可以删除或重排用户在信息保护栏看到的标签，方法是在 Azure 信息保护策略中对此进行配置。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 85d8e612d95358ce7f5d883450dc207e54549828
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: c24cd0bb9aae5b3a6b830151579d70561d56f7e0
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>如何删除或重排 Azure 信息保护的标签
 
->适用于：Azure 信息保护
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 可以删除或重排用户在信息保护栏看到的标签，方法是在 Azure 信息保护策略中选择这些操作。
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 02/23/2018
 
     - 禁用标签：选择你想要禁用的标签。 在“**标签**”边栏选项卡上，针对“**启用**”，单击“**关闭**”，然后单击“**保存**”。
 
-    - 重排标签：针对想要重排的标签，右键单击或选择上下文菜单 (**...**)，然后单击“**上移**”或“**下移**”直到标签位于所需的顺序。 然后，单击“**保存**”。 
+    - 重排标签：针对想要重排的标签，右键单击或选择上下文菜单 (**...**)，然后单击“**上移**”或“**下移**”直到标签位于所需的顺序。 单击“保存”。 
 
 4. 若要使所做的更改适用于用户，在“**Azure 信息保护**”边栏选项卡，单击“**发布**”。
 

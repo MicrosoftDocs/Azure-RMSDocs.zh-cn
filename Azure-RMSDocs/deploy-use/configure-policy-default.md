@@ -1,24 +1,24 @@
 ---
-title: "Azure 信息保护的默认策略"
-description: "了解如何配置 Azure 信息保护的默认策略。 如果修改默认策略，则可以引用这些值以返回默认策略。"
+title: Azure 信息保护的默认策略
+description: 了解如何配置 Azure 信息保护的默认策略。 如果修改默认策略，则可以引用这些值以返回默认策略。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: d89acde3a2d9e4db529c429fdedf2f3ed05e2fe5
-ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
+ms.openlocfilehash: 57c7321f9bcff12ff0afe4030038495ad4668020
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
->适用于：Azure 信息保护
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 使用以下信息来了解如何配置 Azure 信息保护的默认策略。
 
@@ -88,7 +88,7 @@ ms.lasthandoff: 03/12/2018
 
 ### <a name="information-protection-bar"></a>信息保护栏
 
-|Setting|值|
+|设置|值|
 |-------------------------------|---------------------------|
 |标题|敏感度|
 |工具提示|此内容的当前标签。 此设置的作用是在与组织内外未经授权的人员共享此内容时识别业务风险。|
@@ -96,7 +96,7 @@ ms.lasthandoff: 03/12/2018
 
 ### <a name="settings"></a>设置
 
-|Setting|值|
+|设置|值|
 |-------------------------------|---------------------------|
 |所有文档和电子邮件都必须自动应用或由用户应用标签|关|
 |选择默认标签|无|
@@ -132,7 +132,7 @@ ms.lasthandoff: 03/12/2018
 
 ### <a name="information-protection-bar"></a>信息保护栏
 
-|Setting|值|
+|设置|值|
 |-------------------------------|---------------------------|
 |标题|敏感度|
 |工具提示|此内容的当前标签。 此设置的作用是在与组织内外未经授权的人员共享此内容时识别业务风险。|
@@ -140,7 +140,7 @@ ms.lasthandoff: 03/12/2018
 
 ### <a name="settings"></a>设置
 
-|Setting|值|
+|设置|值|
 |-------------------------------|---------------------------|
 |所有文档和电子邮件都必须自动应用或由用户应用标签|关|
 |选择默认标签|无|
@@ -170,7 +170,7 @@ ms.lasthandoff: 03/12/2018
 
 ### <a name="information-protection-bar"></a>信息保护栏
 
-|Setting|值|
+|设置|值|
 |-------------------------------|---------------------------|
 |标题|敏感度|
 |工具提示|信息敏感度包含四个不同级别（公共、内部、机密、秘密），使用户可确定向企业内部或外部未经授权的用户公开信息的风险。|
@@ -178,7 +178,7 @@ ms.lasthandoff: 03/12/2018
 
 ### <a name="settings"></a>设置
 
-|Setting|值|
+|设置|值|
 |-------------------------------|---------------------------|
 |所有文档和电子邮件都必须自动应用或由用户应用标签|关|
 |选择默认标签|无|

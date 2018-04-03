@@ -1,26 +1,26 @@
 ---
-title: "适用于 Windows 和移动平台的 RMS 共享应用 - AIP"
-description: "RMS 共享应用程序如何作为支持 Office 2010 所必需的免费可下载应用程序来支持 Azure RMS，但我们也建议将其用于 Windows 计算机、Mac 计算机和移动设备。"
+title: 适用于 Windows 和移动平台的 RMS 共享应用 - AIP
+description: RMS 共享应用程序如何作为支持 Office 2010 所必需的免费可下载应用程序来支持 Azure RMS，但我们也建议将其用于 Windows 计算机、Mac 计算机和移动设备。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 16/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b7c2b05d9bf360b08ea6a35efd959559132df864
-ms.sourcegitcommit: 3a2177df7a23d65f93d3ce2eea3fc3e042ea901c
+ms.openlocfilehash: f0b7204695ade31df0f6132684fd379704a4b338
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Windows 和移动平台的 RMS 共享应用程序
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!IMPORTANT]
 > **终止支持通知**：[Azure 信息保护客户端](../rms-client/aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 
@@ -39,7 +39,7 @@ RMS 共享应用程序是支持适用于 Windows 计算机的 Office 2010 的可
 
 -   Office 2010 的后端配置，让此套件的 Word、Excel、PowerPoint 和 Outlook 能够与 Azure 权限管理服务无缝集成。
 
-虽然可通过使用 [Microsoft Rights Management 页](http://go.microsoft.com/fwlink/?LinkId=303970)为单台计算机下载和安装适用于 Windows 的 RMS 共享应用程序，但它也支持企业部署的静默安装和自定义配置。 有关详细信息，请参阅下列资源：
+虽然可通过使用 [Microsoft Rights Management 页](http://go.microsoft.com/fwlink/?LinkId=303970)为单台计算机下载和安装适用于 Windows 的 RMS 共享应用程序，但它也支持企业部署的静默安装和自定义配置。 有关详情，请参阅以下资源：
 
 -   [权限管理共享应用程序管理员指南](../rms-client/sharing-app-admin-guide.md)
 

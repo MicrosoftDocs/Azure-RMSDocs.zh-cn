@@ -1,24 +1,24 @@
 ---
-title: "发行说明"
-description: "按修订列出的 SDK 更新及其他开发人员信息。"
-keywords: 
+title: 发行说明
+description: 按修订列出的 SDK 更新及其他开发人员信息。
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 10/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: f05191f2c2700e59bb83a79d025ba181b799ab5a
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 74f4eacb7601d137e8eb459fad3853ac5ec52e97
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="release-notes"></a>发行说明
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/11/2018
 >[!Note]
 > 本部分中的功能文档更新适用于 2015 年 12 月 11 日后下载的 SDK。
 
-- 改进了身份验证流程 - 通过 [Azure Active Directory 身份验证库 (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) 使用基于 OAuth2 令牌的身份验证。 有关此过程及其 API 扩展的详细信息，请参阅 [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md)（适用于启用了 RMS 的应用程序的 ADAL 身份验证）。
+- 改进了身份验证流程 - 通过 [Azure Active Directory 身份验证库 (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) 使用基于 OAuth2 令牌的身份验证。 有关此过程及其 API 扩展的详细信息，请参阅 [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md)（适用于启用了 RMS 的应用程序的 ADAL 身份验证）。
 
 - **更新到 ADAL**：通过更新应用程序来使用 ADAL 身份验证而不使用 Microsoft Online 登录助手，你和你的客户将能够：
 
@@ -121,7 +121,7 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
     有关受支持的文件类型的详细信息，请参阅[文件 API 配置](file-api-configuration.md)。
 
--   不带更新 [KB2533623](https://support.microsoft.com/en-us/kb/2533623) 的 **Windows 7 SP1 和 Windows Server 2008 R2 SP1 计算机**可能出现以下错误以保护任何 office 文件“参数不正确。 错误代码 0x80070057”。 如果看到此错误，请安装更新，然后重试。 如果问题仍然存在，请联系 RMS SDK Beta 反馈别名 <rmcstbeta@microsoft.com>。
+-   不带更新 [KB2533623](https://support.microsoft.com/kb/2533623) 的 **Windows 7 SP1 和 Windows Server 2008 R2 SP1 计算机**可能出现以下错误以保护任何 office 文件“参数不正确。 错误代码 0x80070057”。 如果看到此错误，请安装更新，然后重试。 如果问题仍然存在，请联系 RMS SDK Beta 反馈别名 <rmcstbeta@microsoft.com>。
 
     **注意**：自 2015 年 4 月版本起，此 KB 的安装流程中添加了检查程序。
 
@@ -139,7 +139,7 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
     文件 API 通过以下四个新函数实现：[IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx)、[IpcfEncryptFile](https://msdn.microsoft.com/library/dn133059.aspx)、[IpcfGetSerializedLicenseFromFile](https://msdn.microsoft.com/library/dn133060.aspx) 和 [IpcfIsFileEncrypted](https://msdn.microsoft.com/library/dn133061.aspx)。
 
-    文件 API 要求客户端计算机上安装 Rights Management Service 客户端 2.1 ，并要求该计算机连接到 RMS 服务器。 有关 RMS 服务器、RMS 客户端及其功能的详细信息，请参阅 TechNet 内容以获取[针对 RMS 的 IT 专业人员文档](https://technet.microsoft.com/en-us/library/cc771234(v=ws.10).aspx)。
+    文件 API 要求客户端计算机上安装 Rights Management Service 客户端 2.1 ，并要求该计算机连接到 RMS 服务器。 有关 RMS 服务器、RMS 客户端及其功能的详细信息，请参阅 TechNet 内容以获取[针对 RMS 的 IT 专业人员文档](https://technet.microsoft.com/library/cc771234(v=ws.10).aspx)。
 
 -   **问题**：从头开始创建许可证时，必须明确授予所有权。
 

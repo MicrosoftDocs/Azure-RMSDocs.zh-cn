@@ -1,26 +1,26 @@
 ---
-title: "部署 Azure 信息保护扫描程序"
-description: "说明如何安装、配置和运行 Azure 信息保护扫描程序以发现和保护数据存储中的文件并对其进行分类。"
+title: 部署 Azure 信息保护扫描程序
+description: 说明如何安装、配置和运行 Azure 信息保护扫描程序以发现和保护数据存储中的文件并对其进行分类。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: f3c302b2379262a6dac87873cb607cf3cd408bcd
-ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
+ms.openlocfilehash: c4e71ec21d6ec06a3bab32bf6bb62e6f614a7e33
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
->适用于：Azure 信息保护、Windows Server 2016、Windows Server 2012 R2
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2
 
 利用此信息了解 Azure 信息保护扫描程序，并了解如何成功安装、配置和运行该扫描程序。 
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/12/2018
 ## <a name="prerequisites-for-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序的先决条件
 安装 Azure 信息保护扫描程序之前，请确保已满足以下要求。
 
-|要求|更多信息|
+|要求|详细信息|
 |---------------|--------------------|
 |运行扫描程序服务的 Windows Server 计算机：<br /><br />- 4 个处理器<br /><br />- 4 GB 的 RAM|Windows Server 2016 或 Windows Server 2012 R2。 <br /><br />注意：在非生产环境中出于测试或评估目的时，可以使用 [Azure 信息保护客户端支持的](../get-started/requirements.md#client-devices) Windows 客户端操作系统。<br /><br />此计算机可以是物理或虚拟计算机，需拥有快速可靠的网络，可连接到要进行扫描的数据存储。 <br /><br />确保此计算机具有 Azure 信息保护所需的 [Internet 连接](../get-started/requirements.md#firewalls-and-network-infrastructure)。 或者，必须将其配置为[断开连接的计算机](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers)。 |
 |存储扫描程序配置的 SQL Server：<br /><br />- 本地或远程实例<br /><br />- 安装扫描程序的 Sysadmin 角色|SQL Server 2012 是以下版本的最低版本：<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express<br /><br />安装扫描程序的帐户需要权限以写入 master 数据库（必须为 db_datawriter 角色的成员）。 安装过程会将 db-owner 角色授予运行扫描程序的服务帐户。 或者，可以在安装扫描程序，并将 db-owner 角色分配给扫描程序服务帐户之前手动创建 AzInfoProtectionScanner 数据库。|
@@ -68,7 +68,7 @@ ms.lasthandoff: 03/12/2018
     Install-AIPScanner -SqlServerInstance <database name>
     ```
     
-    例如：
+    示例：
     
     对于默认实例：`Install-AIPScanner -SqlServerInstance SQLSERVER1`
     

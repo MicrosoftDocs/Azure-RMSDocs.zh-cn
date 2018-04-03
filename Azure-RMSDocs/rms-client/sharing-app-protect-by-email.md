@@ -1,26 +1,26 @@
 ---
-title: "使用 RMS 共享应用保护的共享 - AIP"
-description: "有关如何通过电子邮件安全共享文档的说明。"
+title: 使用 RMS 共享应用保护的共享 - AIP
+description: 有关如何通过电子邮件安全共享文档的说明。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4110050a0e45fd75633bc27dd220f71855d50672
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 71bc303aaadf6856cce2f63db0acf5280fbe172b
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序保护通过电子邮件共享的文件
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
 
 在保护你通过电子邮件共享的文件时，将会创建原始文件的新版本。 原始文件仍处于未受保护状态，而新版本已受保护并自动附加到你之后要发送的电子邮件中。
 

@@ -1,26 +1,26 @@
 ---
-title: "使用 AIP 客户端查看和使用受保护的文档"
-description: "查看和使用要求安装 Azure 信息保护客户端的受保护文档的说明。"
+title: 使用 AIP 客户端查看和使用受保护的文档
+description: 查看和使用要求安装 Azure 信息保护客户端的受保护文档的说明。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 87ae9b546a791c20b71625f938265c584980ae43
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: a81585ae1acb791dcf33f8d047268a9e4e9f2f2e
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>用户指南：查看和使用受 Rights Management 保护的文件
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、具有 SP1 的 Windows 7
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7
 
 通常，你可以直接打开受保护文档进行查看。 例如，可双击电子邮件中的附件、双击文件资源管理器中的文件或单击文件的链接。
 

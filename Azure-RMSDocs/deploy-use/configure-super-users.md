@@ -1,26 +1,26 @@
 ---
-title: "为 Azure Rights Management 配置超级用户 - AIP"
-description: "了解并实施 Azure 信息保护中的 Azure Rights Management 服务超级用户功能，以便已获授权的用户与服务始终可以阅读和检查 Azure Rights Management 为你的组织保护的数据。 这种功能有时称为“数据推理”，是保持对组织数据进行控制的关键所在。"
+title: 为 Azure Rights Management 配置超级用户 - AIP
+description: 了解并实施 Azure 信息保护中的 Azure Rights Management 服务超级用户功能，以便已获授权的用户与服务始终可以阅读和检查 Azure Rights Management 为你的组织保护的数据。 这种功能有时称为“数据推理”，是保持对组织数据进行控制的关键所在。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 686b1dc007da43ca5fbd68e510a3bff374867431
-ms.sourcegitcommit: 85250f5ea80c2ee22197058ff2f65a79503b0f0c
+ms.openlocfilehash: 5d35f7faed0e02a253e5ba48cbdb2bca0aa76419
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>为 Azure Rights Management 和发现服务或数据恢复配置超级用户
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确保已获授权的用户与服务始终可以阅读和检查 Azure Rights Management 为你的组织保护的数据。 如有需要，超级用户可以删除保护，或者更改以前应用的保护。 
 

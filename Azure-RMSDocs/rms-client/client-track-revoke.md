@@ -1,26 +1,26 @@
 ---
-title: "跟踪和撤销文档 - Azure 信息保护"
-description: "保护文档后，可跟踪用户如何使用它们。 如果用户不应再阅读这些文档，还可撤销其对这些文档的访问权限（如有必要）。"
+title: 跟踪和撤销文档 - Azure 信息保护
+description: 保护文档后，可跟踪用户如何使用它们。 如果用户不应再阅读这些文档，还可撤销其对这些文档的访问权限（如有必要）。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5c8d326b68b5f60e8223112d2d5bd28ed3925bc
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 84f5f0ed8b98895b8c056ff03295afef379e6b74
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>用户指南：使用 Azure 信息保护时跟踪和撤销文档
 
->适用于：Azure 信息保护、Windows 10、Windows 8.1、Windows 8 以及具有 SP1 的 Windows 7
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8，带 SP1 的 Windows 7
 
 使用 Azure 信息保护来保护你的文档后，可跟踪用户如何使用这些文档。 如果用户不应再阅读这些文档，还可撤销其对这些文档的访问权限（如有必要）。 若要执行此操作，请使用“文档跟踪站点”。 可以通过 Windows 计算机、Mac 计算机甚至平板电脑和手机访问此站点。
 

@@ -1,26 +1,26 @@
 ---
-title: "对 Azure RMS 数据保护的服务器支持 - AIP"
-description: "通过使用 Rights Management 连接器识别可使用 Azure 信息保护中的 Azure Rights Management 服务的本地服务器产品。"
+title: 对 Azure RMS 数据保护的服务器支持 - AIP
+description: 通过使用 Rights Management 连接器识别可使用 Azure 信息保护中的 Azure Rights Management 服务的本地服务器产品。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/22/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 87e887bb121b3d92065153a5d264767ef87d517b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: dbd75a31d5c4105f5a22051ca1460b62371ac413
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用 Azure Rights Management 连接器时 Azure 信息保护支持以下本地服务器产品。 该连接器充当本地服务器和 Azure Rights Management 服务（Azure 信息保护使用该服务保护 Office 文档和电子邮件）之间的通信接口（中继）。 
 

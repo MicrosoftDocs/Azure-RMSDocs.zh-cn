@@ -1,26 +1,26 @@
 ---
-title: "RMS 共享应用用户指南 - AIP"
-description: "适用于 Windows 的 Microsoft Rights Management (RMS) 共享应用程序可帮助你防止外人查看重要文档和图片，保护文档和图片的安全，即使你通过电子邮件发送它们或将其保存到另一台设备也是如此。"
+title: RMS 共享应用用户指南 - AIP
+description: 适用于 Windows 的 Microsoft Rights Management (RMS) 共享应用程序可帮助你防止外人查看重要文档和图片，保护文档和图片的安全，即使你通过电子邮件发送它们或将其保存到另一台设备也是如此。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 02eab7970b98cbc0ed27a3928a9a3c68ebd2927a
-ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
+ms.openlocfilehash: c361c3fadb1bc4a65d94c79f7a41f8aebb6f247a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rights-management-sharing-application-user-guide"></a>权限管理共享应用程序用户指南
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
 
 > [!IMPORTANT]
 > **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 

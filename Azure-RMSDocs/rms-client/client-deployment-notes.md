@@ -1,26 +1,26 @@
 ---
-title: "RMS 客户端部署说明 - Azure 信息保护"
-description: "关于安装、支持的操作系统、注册表设置以及 Rights Management Service 客户端（RMS 客户端）版本 2（也称为 MSIPC 客户端）的服务发现的信息。"
+title: RMS 客户端部署说明 - Azure 信息保护
+description: 关于安装、支持的操作系统、注册表设置以及 Rights Management Service 客户端（RMS 客户端）版本 2（也称为 MSIPC 客户端）的服务发现的信息。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6518b9d91e8f73b9ac6c0fb9e4bb5c2bbcebd612
-ms.sourcegitcommit: 704700acf7302d258e9c58c365c3244e833a86cd
+ms.openlocfilehash: edaa24b6e86fc1cacecfa79185b7fe4ddb1d34c9
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rms-client-deployment-notes"></a>RMS 客户端部署说明
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、带 SP1 的 Windows 7、Windows 8、Windows 8.1、Windows 10、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、带 SP1 的 Windows 7、Windows 8、Windows 8.1、Windows 10、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016
 
 Rights Management 服务客户端（RMS 客户端）版本 2 也称为 MSIPC 客户端。 它是在 Windows 计算机上安装的软件，可用来与本地或云中的 Microsoft Rights Management 服务通信，以帮助保护对流经应用程序和设备的信息的访问和使用，无论这些信息是在组织边界的内部还是受管边界的外部。 
 
@@ -163,7 +163,7 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 
     如果按[下一部分](#ad-rms-only-enabling-server-side-service-discovery-by-using-active-directory)所述注册了一个 SCP，则会将 AD RMS 服务器的 URL 返回给 RMS 客户端使用。
 
-3. **Azure 权限管理发现服务**：RMS 客户端连接到 **https://discover.aadrm.com**，此时会提示用户进行身份验证。
+3. **Azure Rights Management 发现服务**：RMS 客户端连接到 https://discover.aadrm.com，此时会提示用户进行身份验证。
 
     身份验证成功后，将使用进行身份验证所用的用户名（和域）来标识要使用的 Azure 信息保护租户。 会向 RMS 客户端返回该用户帐户要使用的 Azure 信息保护 URL。 URL 采用以下格式：https://\<YourTenantURL\>/_wmcs/licensing 
 
@@ -174,7 +174,7 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 > [!NOTE]
 > 此服务发现流有三种重要的例外情况：
 > 
-> - 移动设备最适合使用云服务，因此它们默认使用 Azure 权限管理服务的服务发现 (https://discover.aadrm.com) 。 要替代此默认设置以便移动设备使用 AD RMS，而不是 Azure Rights Management 服务，请在 DNS 中指定 SRV 记录，并按 [Active Directory Rights Management Services 移动设备扩展](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx)中所述安装移动设备扩展。 
+> - 移动设备最适合使用云服务，因此它们默认使用 Azure Rights Management 服务的服务发现 (https://discover.aadrm.com)。 要替代此默认设置以便移动设备使用 AD RMS，而不是 Azure Rights Management 服务，请在 DNS 中指定 SRV 记录，并按 [Active Directory Rights Management Services 移动设备扩展](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx)中所述安装移动设备扩展。 
 >
 > - 通过 Azure 信息保护标签调用权限管理服务时，将不会执行服务发现。 相反，会直接在 Azure 信息保护策略配置的标签设置中指定 URL。  
 

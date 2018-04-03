@@ -1,7 +1,7 @@
 ---
-title: "适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题解答"
-description: 
-keywords: "一些常见问题，帮助你使用适用于 iOS 和 Android 的 Azure 信息保护应用"
+title: 适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题解答
+description: ''
+keywords: 一些常见问题，帮助你使用适用于 iOS 和 Android 的 Azure 信息保护应用
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -14,15 +14,15 @@ ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a12fce4f7e235ee67cc9f202c38f52f01204078b
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: 91b44fefdcd12dd29042df5a2255a9eb50207db6
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 
-*适用于：Active Directory Rights Management Services、Azure 信息保护*
+适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 此页提供有关适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题的解答。
 

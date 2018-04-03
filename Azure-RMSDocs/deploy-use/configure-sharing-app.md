@@ -1,26 +1,26 @@
 ---
-title: "RMS 共享应用程序&colon;安装和配置"
-description: "面向管理员提供的有关在 Windows 计算机和移动设备上部署 Rights Management (RMS) 共享应用程序的信息。"
+title: RMS 共享应用程序&colon;安装和配置
+description: 面向管理员提供的有关在 Windows 计算机和移动设备上部署 Rights Management (RMS) 共享应用程序的信息。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 65b4a60909f93090fa2e6d27660e1ed20f410955
-ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
+ms.openlocfilehash: 6acedb72d270bb5d4153701a6d42aa2757fbacbd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>权限管理共享应用程序：客户端安装和配置
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!IMPORTANT]
 > **终止支持通知**：[Azure 信息保护客户端](../rms-client/aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 

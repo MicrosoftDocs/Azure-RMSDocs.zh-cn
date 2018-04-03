@@ -1,26 +1,26 @@
 ---
-title: "将 PowerShell 与 Azure 信息保护客户端配合使用"
-description: "管理员通过使用 PowerShell 管理 Azure 信息保护客户端的说明和信息。"
+title: 将 PowerShell 与 Azure 信息保护客户端配合使用
+description: 管理员通过使用 PowerShell 管理 Azure 信息保护客户端的说明和信息。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5bd2af4da402c0096cb58bba1d44684ad73656d6
-ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
+ms.openlocfilehash: 32ae599bc9251fd1504adc2b7c60190e9d78f5fd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
->适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 安装 Azure 信息保护客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
@@ -238,9 +238,11 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 1. 再次运行 Get-AadrmConfiguration cmdlet，并记下 **CertificationExtranetDistributionPointUrl** 和 **LicensingExtranetDistributionPointUrl** 的值。
 
-2. 在运行 AzureInformationProtection cmdlet 的每台计算机上，打开注册表编辑器，并转到 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC`
+2. 在运行 AzureInformationProtection cmdlet 的每台计算机上，打开注册表编辑器。
 
-3. 如果没有看到 **ServiceLocation** 项，请创建一个，然后注册表路径将显示 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation**
+3. 导航到以下路径：`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation`。 
+    
+    如果看不到 MSIPC 密钥或 ServiceLocation 密钥，请创建它们。
 
 4. 对于 **ServiceLocation** 项，创建两个项（若不存在），并分别命名为 **EnterpriseCertification** 和 **EnterprisePublishing**。 
     
@@ -485,7 +487,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
     
     - 应用程序类型：Web/API 应用程序
     
-    - 登录 URL：http://localhost
+    - 登录 URL：**http://localhost**
 
 4. 选择刚刚创建的应用程序，例如，AIPOnBehalfOf。 然后，在“设置”边栏选项卡上，选择“属性”。 在“属性”边栏选项卡中，复制“应用程序 ID”值，再关闭此边栏选项卡。 
     
@@ -505,7 +507,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
     
     - 应用程序类型：本机
     
-    - 登录 URL：http://localhost
+    - 登录 URL：**http://localhost**
 
 8. 选择刚刚创建的应用程序，例如，AIPClient。 然后，在“设置”边栏选项卡上，选择“属性”。 在“属性”边栏选项卡中，复制“应用程序 ID”值，再关闭此边栏选项卡。
     

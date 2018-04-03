@@ -1,26 +1,26 @@
 ---
-title: "RMS 共享应用的对话框选项 - AIP"
-description: "此信息可帮助你指定 RMS 共享应用程序“添加保护”对话框或“共享保护”对话框中的选项。 当你保护要共享的文件或就地保护文件以及选择自定义权限时，将看到此对话框。"
+title: RMS 共享应用的对话框选项 - AIP
+description: 此信息可帮助你指定 RMS 共享应用程序“添加保护”对话框或“共享保护”对话框中的选项。 当你保护要共享的文件或就地保护文件以及选择自定义权限时，将看到此对话框。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 190d8ac29bec0fc3825eb9fe099e06bd16e2112f
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 429be436bc1a9fec3d31933d9cb6e8f88de7506a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>权限管理共享应用程序的的对话框选项
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Windows 10、具有 SP1 的 Windows 7、Windows 8、Windows 8.1*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
 
 使用此信息帮助你指定 RMS 共享应用程序“添加保护”  对话框或“共享保护”  对话框中的选项。 当你[保护要共享的文件](sharing-app-protect-by-email.md)或[就地保护文件](sharing-app-protect-in-place.md)以及选择自定义权限时，将看到此对话框。
 

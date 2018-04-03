@@ -1,26 +1,26 @@
 ---
-title: "Azure 信息保护客户端&colon;安装和配置"
-description: "面向管理员提供的有关在 Windows 计算机和移动设备上部署 Azure 信息保护客户端的信息。"
+title: Azure 信息保护客户端&colon;安装和配置
+description: 面向管理员提供的有关在 Windows 计算机和移动设备上部署 Azure 信息保护客户端的信息。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 39d2fb244be91d7fc655efbdda24e4e268ac1329
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 54e66d8ffde33e3e73b24e39fa609686fa2601b0
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：安装和配置客户端
 
->*适用于：Azure 信息保护、Office 365*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 运行 Office 2010 的计算机需要安装 Azure 信息保护客户端（或 Rights Management 共享应用程序），对 Azure 权限管理服务和 Azure 信息保护服务进行身份验证。 同时建议将此客户端用于所有支持 Azure 权限管理服务和 Azure 信息保护的 Windows 计算机以及 iOS 和 Android 设备。 
 

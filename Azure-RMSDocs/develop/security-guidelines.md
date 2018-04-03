@@ -1,30 +1,30 @@
 ---
-title: "安全最佳实践 | Microsoft 信息保护"
-description: "启用 RMS 的应用程序是使用 Azure 信息保护最佳实践构建的。"
+title: 安全最佳实践 | Microsoft 信息保护
+description: 启用 RMS 的应用程序是使用 Azure 信息保护最佳实践构建的。
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.assetid: 4e9f72d5-9e7c-43e1-bb8a-5972dd22dcee
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 04fc73bac667b461a37e87a1c726c5a645495197
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 6c3669c1ada24afcf3b9ec48ea5bb9c38939b47e
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure 信息保护的安全最佳实践
 
 Azure 信息保护 (AIP) 软件开发工具包 (SDK) 提供可靠的系统，用于发布和使用所有类型的受保护信息。 为了帮助 AIP 系统尽可能的强大，启用 AIP 的应用程序必须使用 AIP 最佳实践进行构建。 启用 AIP 的应用程序共同分担责任，帮助维持此生态系统的安全。 识别安全风险，并为应用程序开发期间引入的风险提供缓解，在最大程度上减小不安全的软件实现的可能性。
 
 使用 Azure 信息保护软件开发工具包 (SDK) 实现应用程序的最佳实践包括以下类别的建议：
-- [Threat Models and Mitigations](https://msdn.microsoft.com/en-us/library/aa362751.aspx)（威胁模型和缓解）
-- [Security Attacks](https://msdn.microsoft.com/en-us/library/aa362736.aspx)（安全攻击）
+- [Threat Models and Mitigations](https://msdn.microsoft.com/library/aa362751.aspx)（威胁模型和缓解）
+- [Security Attacks](https://msdn.microsoft.com/library/aa362736.aspx)（安全攻击）
 
 此信息补充了必须签署的法律协议，以获取使用 AIP SDK 实现应用程序所需的数字证书。
 
@@ -86,7 +86,7 @@ AIP 系统将权限编为几组。 有关详细信息，请参阅 [Configuring u
 API 允许用户解密或不解密信息；该信息没有任何固有保护。 如果用户有权解密信息，API 则允许此操作，并且在解密完成后，应用程序会负责管理或保护该信息。 应用程序负责管理其环境和接口，以防止未经授权使用信息的行为；例如，如果许可证仅授予“播放”权限，则会禁用“打印”和“复制”按钮。 测试套件应验证应用程序是否根据其所识别的所有许可证权限进行正确地操作。
 
 ### <a name="minimum-standard"></a>最低标准
-- 如 XrML 规范中所述，XrML v.1.2 权限的客户实现应与这些权限的定义相一致，可在 XrML 网站 (http://www.xrml.org) 上查看这些规范。 必须为所有对应用程序感兴趣的实体定义特定于应用程序的权限。
+- 如 XrML 规范中所述，XrML v.1.2 权限的客户实现应与这些权限的定义相一致，可在 XrML 网站 (http://www.xrml.org)) 上查看这些规范。 必须为所有对应用程序感兴趣的实体定义特定于应用程序的权限。
 - 测试套件和测试过程应验证应用程序是否根据应用程序所支持的权限进行正确地操作，并且没有根据不受支持的权限进行操作。
 - 如果要构建发布应用程序，则必须提供可用的信息，这些信息说明发布应用程序支持和不支持的内部权限，以及如何解释这些权限。 此外，用户界面应向最终用户说明每个权限授予或拒绝个别信息的含义。
 

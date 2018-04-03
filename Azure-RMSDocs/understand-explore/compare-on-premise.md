@@ -1,26 +1,26 @@
 ---
-title: "比较 Azure 信息保护和 AD RMS"
-description: "如果你了解或以前部署过 Active Directory Rights Management Services (AD RMS)，你可能想知道 Azure 信息保护在功能和要求方面与它相比有何差别。"
+title: 比较 Azure 信息保护和 AD RMS
+description: 如果你了解或以前部署过 Active Directory Rights Management Services (AD RMS)，你可能想知道 Azure 信息保护在功能和要求方面与它相比有何差别。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 12/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 124bef6f9c54fc154bdf95322ca418d01f5b5636
-ms.sourcegitcommit: 3cbea6b4191b97c69d06d04cbbd852aacacdd9c7
+ms.openlocfilehash: 5c550ae18b8bb72895833f22e3eadab758e26b42
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>比较 Azure 信息保护与 AD RMS
 
->*适用于：Active Directory Rights Management Services、Azure 信息保护、Office 365*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 如果你了解或以前部署过 Active Directory Rights Management Services (AD RMS)，你可能想知道 Azure 信息保护作为信息保护解决方案在功能和要求方面与它相比有何差别。
 
@@ -48,7 +48,7 @@ Azure 信息保护的一些主要差异：
 > [!NOTE]
 > 为了简化这种比较，本文重复了 [Azure 信息保护的要求](../get-started/requirements-azure-rms.md)中的一些信息。 使用该资源了解有关 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的更具体的支持和版本信息。
 
-|Azure 信息保护|AD RMS|
+|Azure Information Protection|AD RMS|
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------|
 |支持 Microsoft Online Services（例如  Exchange Online 和 SharePoint Online 以及 Office 365）中的信息权限管理 (IRM) 功能。<br /><br />还支持本地 Microsoft 服务器产品，例如 Exchange Server、SharePoint Server 以及运行 Windows Server 和文件分类基础结构 (FCI) 的文件服务器。|支持本地 Microsoft 服务器产品，例如 Exchange Server、SharePoint Server 以及运行 Windows Server 和文件分类基础结构 (FCI) 的文件服务器。|
 |与任何也使用 Azure AD 进行身份验证的组织自动实现文档的安全协作。 这意味着组织可以保护其与外部或其他组织共享的文档。|在组织外部实现文档的安全协作要求在两个组织之间以直接点对点的关系显式定义身份验证信任。 必须配置受信任的用户域 (TUD) 或使用 Active Directory 联合身份验证服务 (AD FS) 创建的联合信任。|
