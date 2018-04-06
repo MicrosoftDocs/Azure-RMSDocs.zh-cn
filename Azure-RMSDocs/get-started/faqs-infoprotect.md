@@ -4,7 +4,7 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2018
+ms.date: 03/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 543abf11ce2d107c3d2a52a24c6c2a474b80cfbd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 24e99c6645832bcddbbf881a2b5728af3589f1e5
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -44,10 +44,6 @@ ms.lasthandoff: 03/28/2018
 
 如果在安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)时选择安装演示策略，则无需登录门户即可查看和试用标签功能。 演示策略在本地安装 Azure 信息保护的默认策略，因此可以尝试为文档和电子邮件设置标签，但是，在未登录 Azure 门户的情况下将无法更改或添加新标签。 
 
-## <a name="which-options-in-the-azure-portal-are-p2"></a>Azure 门户中的哪些选项是 P2？
-
-Azure 门户中需要 Azure 信息保护高级版 2 (P2) 订阅的选项现在具有弹出消息信息，便于识别。 若要深入了解 P1 和 P1 订阅中包含的功能信息，请参阅 Azure 信息保护站点中的[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。
-
 ## <a name="can-a-file-have-more-than-one-classification"></a>文件是否可以有多个分类？
 
 用户一次仅可为每个文档或电子邮件选择一个标签，这通常只会产生一个分类。 但如果用户选择子标签，这实际上会同时应用两个标签；主标签和次要标签。 通过使用子标签，文件可以有两个分类，表示附加控制级别的父\子关系。
@@ -60,7 +56,7 @@ Azure 门户中需要 Azure 信息保护高级版 2 (P2) 订阅的选项现在�
 
 尽管[策略设置](../deploy-use/configure-policy-settings.md)要求用户说明降低分类标签、删除标签或删除保护的理由，但此设置无法阻止上述操作。 要防止用户删除或更改标签，内容必须已受到保护，并且保护权限不向用户授予导出或完全控制[使用权限](../deploy-use/configure-usage-rights.md)。 
 
-# <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>标记一封电子邮件时，是否有任何附件会自动获得相同的标记？
+## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>标记一封电子邮件时，是否有任何附件会自动获得相同的标记？
 
 不能。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 但是，如果电子邮件的标签应用了保护，则该保护也适用于附件。
 
