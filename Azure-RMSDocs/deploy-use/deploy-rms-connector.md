@@ -4,7 +4,7 @@ description: 有关部署 RMS 连接器的说明。该连接器提供数据保�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2017
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d389816fbe438cbf13ddbe1302872f81afcb6bf5
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 4124671899e3d51a8297ab7103cd12fcebdcc4fd
+ms.sourcegitcommit: d1987b1abb65f3466bbbb8f8c28e30668d629e50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>部署 Azure Rights Management 连接器
 
@@ -56,11 +56,10 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 ## <a name="prerequisites-for-the-rms-connector"></a>RMS 连接器的必备组件
 在安装 RMS 连接器之前，请确保符合以下要求。
 
-|要求|详细信息|
+|要求|更多信息|
 |---------------|--------------------|
 |权限管理服务 (RMS) 已激活|[激活 Azure Rights Management](activate-service.md)|
-|本地 Active Directory 林和 Azure Active Directory 之间的目录同步|RMS 激活之后，必须将 Azure Active Directory 配置为用于 Active Directory 数据库中的用户和组。<br /><br />**重要提示**：要使 RMS 连接器正常工作，你必须执行此目录同步步骤，即使对于测试网络，也是如此。 尽管你可以通过在 Azure Active Directory 中手动创建的帐户来使用 Office 365 和 Azure Active Directory，但此连接器要求 Azure Active Directory 中的帐户必须与 Active Directory 域服务同步；进行手动密码同步是不够的。<br /><br />有关详情，请参阅以下资源：<br /><br />[将本地标识与 Azure Active Directory 集成](/active-directory/active-directory-aadconnect)<br /><br />[混合身份目录集成工具比较](/active-directory/active-directory-hybrid-identity-design-considerations-tools-comparison)|
-|只是可选但也推荐的选项：<br /><br />启用本地 Active Directory 和 Azure Active Directory 之间的联合身份验证|你可以启用本地目录和 Azure Active Directory 之间的联合身份验证。 此配置使用 RMS 服务单一登录，实现更加无缝的用户体验。 而如果没有单一登录，用户在能够使用权限保护内容之前，会收到提供凭据的提示。<br /><br />有关使用 Active Directory 联合身份验证服务 (AD FS) 来配置 Active Directory 域服务和 Azure Active Directory 之间的联合身份验证的说明，请参阅 Windows Server 库中的 [清单：使用 AD FS 实现和管理单一登录](http://technet.microsoft.com/library/jj205462.aspx) 。|
+|本地 Active Directory 林和 Azure Active Directory 之间的目录同步|RMS 激活之后，必须将 Azure Active Directory 配置为用于 Active Directory 数据库中的用户和组。<br /><br />**重要提示**：要使 RMS 连接器正常工作，你必须执行此目录同步步骤，即使对于测试网络，也是如此。 尽管你可以通过在 Azure Active Directory 中手动创建的帐户来使用 Office 365 和 Azure Active Directory，但此连接器要求 Azure Active Directory 中的帐户必须与 Active Directory 域服务同步；进行手动密码同步是不够的。<br /><br />有关详细信息，请参阅下列资源：<br /><br />[将本地标识与 Azure Active Directory 集成](/active-directory/active-directory-aadconnect)<br /><br />[混合身份目录集成工具比较](/active-directory/active-directory-hybrid-identity-design-considerations-tools-comparison)|
 |在最少两台成员计算机上安装 RMS 连接器：<br /><br />- 64 位物理或虚拟计算机，运行以下操作系统之一：Windows Server 2016、Windows Server 2012 R2、Windows Server 2012 或 Windows Server 2008 R2。<br /><br />- 至少 1 GB 的 RAM。<br /><br />- 至少 64 GB 的磁盘空间。<br /><br />- 至少一个网络接口。<br /><br />- 通过防火墙（或 Web 代理）访问 Internet，无需进行身份验证。<br /><br />- 必须位于某个林或域中，而该林或域信任组织内的其他林（包含要用于 RMS 连接器的 Exchange 或 SharePoint 服务器安装）。|为了实现容错和高可用性，你必须在至少两台计算机上安装 RMS 连接器。<br /><br />**提示**：如果你正在使用 Outlook Web Access 或装有 Exchange ActiveSync IRM 的移动设备，并且你必须保持对 Azure RMS 保护的电子邮件和附件的访问权限，则我们建议你部署一组负载平衡的连接器服务器，以确保高可用性。<br /><br />你不需要专用服务器来运行连接器，但必须在将要使用连接器的服务器之外的独立计算机上安装连接器。<br /><br />**重要提示**：如果你希望在使用这些服务提供的功能时运行 Azure RMS，请不要将连接器安装在运行 Exchange Server、SharePoint Server 或文件服务器（已针对文件分类基础结构进行配置，前提是你希望将这些服务提供的功能用于 Azure RMS）的计算机上。 此外，请不要在域控制器上安装此连接器。<br /><br />如果有想要用于 RMS 连接器的服务器工作负载，但其服务器所在的域不被要在其中运行连接器的域所信任，则可以在这些不受信任的域或其林中的其他域中安装附加 RMS 连接器服务器。 <br /><br />可以为组织运行的连接器服务器的数量没有限制，并且在一个组织中安装的所有连接器服务器共享相同的配置。 但是，若要配置连接器来授权服务器，必须能够浏览想要授权的服务器或服务帐户，这意味着必须在可从其中浏览这些帐户的林中运行 RMS 管理工具。|
 
 
