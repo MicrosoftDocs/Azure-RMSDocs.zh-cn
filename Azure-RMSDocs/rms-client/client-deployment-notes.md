@@ -4,7 +4,7 @@ description: 关于安装、支持的操作系统、注册表设置以及 Rights
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/08/2018
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: edaa24b6e86fc1cacecfa79185b7fe4ddb1d34c9
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: df86d75cd7337fa4642a9b758312923a3577325f
+ms.sourcegitcommit: 40ac805183589a1c8ef22bc1bd9556bcc92f65e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="rms-client-deployment-notes"></a>RMS 客户端部署说明
 
@@ -112,7 +112,7 @@ RMS 客户端将许可证存储在本地磁盘上，并且还在 Windows 注册�
 
 |任务|设置|
 |--------|------------|
-|如果客户端版本是 1.03102.0221 或更高版本：<br /><br />**控制应用程序数据收集**|**重要提示**：为了尊重用户隐私，作为管理员，你在启用数据收集之前必须征得用户同意。<br /><br />如果启用数据收集，表示你同意通过 Internet 将数据发送到 Microsoft。 Microsoft 利用此数据保证并改进 Microsoft 产品和服务的质量、安全性和完整性。 例如，Microsoft 会分析性能和可靠性（如使用哪些功能、功能的响应速度、设备性能、用户界面交互和遇到的任何产品问题）。 数据还包括软件（如当前运行的软件）以及 IP 地址的配置信息。<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticState<br /><br />**值：**0 表示（默认）通过使用环境属性 [IPC_EI_DATA_COLLECTION_ENABLED](https://msdn.microsoft.com/library/hh535247(v=vs.85).aspx) 定义应用程序；1 表示禁用；2 表示启用<br /><br />**注意**：如果基于 32 位 MSIPC 的应用程序在 64 位版本的 Windows 上运行，则位置为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC。|
+|如果客户端版本是 1.03102.0221 或更高版本：<br /><br />**控制应用程序数据收集**|**重要提示**：为了尊重用户隐私，作为管理员，你在启用数据收集之前必须征得用户同意。<br /><br />如果启用数据收集，表示你同意通过 Internet 将数据发送到 Microsoft。 Microsoft 利用此数据保证并改进 Microsoft 产品和服务的质量、安全性和完整性。 例如，Microsoft 会分析性能和可靠性（如使用哪些功能、功能的响应速度、设备性能、用户界面交互和遇到的任何产品问题）。 数据还包括软件（如当前运行的软件）以及 IP 地址的配置信息。<br /><br />对于版本 1.0.3356 或更高版本： <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticAvailability<br /><br />对于 1.0.3356 之前的版本： <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticState<br /><br />**值：**0 表示（默认）通过使用环境属性 [IPC_EI_DATA_COLLECTION_ENABLED](https://msdn.microsoft.com/library/hh535247(v=vs.85).aspx) 定义应用程序；1 表示禁用；2 表示启用<br /><br />**注意**：如果基于 32 位 MSIPC 的应用程序在 64 位版本的 Windows 上运行，则位置为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC。|
 |仅限 AD RMS：<br /><br />**更新客户端计算机的企业服务位置**|更新以下注册表项：<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: default<br /><br />**值：**\<http or https>://*RMS_Cluster_Name*/_wmcs/Certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: default<br /><br />**值：**\<http or https>://*RMS_Cluster_Name*/_wmcs/Licensing|
 |**启用和禁用跟踪**|更新以下注册表项：<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC<br />REG_DWORD: Trace<br /><br />**Value：** 1 表示启用跟踪，0 表示禁用跟踪（默认）|
 |**更改模板刷新的频率（以天为单位）**|以下注册表值指定当未设置 TemplateUpdateFrequencyInSeconds 值时，在用户计算机上刷新模板的频率。  如果这两个值都未设置，则应用程序使用 RMS 客户端（版本 1.0.1784.0）下载模板所遵循的默认刷新间隔为 1 天。 在以前的版本中，默认值为 7 天。<br /><br />**客户端模式：**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：TemplateUpdateFrequency<br /><br />**Value：** 指定下载间隔天数的整数值（最小为 1）。<br /><br />**服务器模式：**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\<SID\><br />REG_DWORD：TemplateUpdateFrequency<br /><br />**Value：** 指定下载间隔天数的整数值（最小为 1）。|

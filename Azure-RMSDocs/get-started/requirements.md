@@ -4,7 +4,7 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/26/2018
+ms.date: 04/04/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 91c7ec9b7d9c0ed1d85ccbdd0b4c7750fd5b007c
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 380b2f715ead6f3f8c8e497c911ff425c12424e8
+ms.sourcegitcommit: 40ac805183589a1c8ef22bc1bd9556bcc92f65e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -111,9 +111,11 @@ Azure 信息保护客户端不支持同一台计算机上的多个 Office 版本
 
 - 允许 TCP 443 上的 HTTPS 流量流入 api.informationprotection.azure.com。
 
+- 允许 TCP 443 上的 HTTPS 流量流入 mobile.pipe.aria.microsoft.com。
+
 - 如果使用要求进行身份验证的 Web 代理，必须将其配置为将集成 Windows 身份验证与用户的 Active Directory 登录凭据配合使用。
 
-- 不要终止 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 这样做会中断 RMS 客户端用于 Microsoft 托管 CA 的证书固定，之所以使用固定是为了帮助保护它们与 Azure Rights Management 服务的通信安全。
+- 不要终止 Azure Rights Management 服务的 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 这样做会中断 RMS 客户端用于 Microsoft 托管 CA 的证书固定，之所以使用固定是为了帮助保护它们与 Azure Rights Management 服务的通信安全。
     
     - 提示：鉴于 Chrome 在地址栏中显示安全连接的方式，可以使用此浏览器在访问 Azure Rights Management 服务前，快速检查客户端连接是否已终止。 请在此浏览器地址栏中输入以下 URL：`https://admin.na.aadrm.com/admin/admin.svc` 
     

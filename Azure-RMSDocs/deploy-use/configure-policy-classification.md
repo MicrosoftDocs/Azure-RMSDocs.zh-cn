@@ -4,17 +4,17 @@ description: 在配置标签的条件时，可以自动将标签分配到文档�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 80537b32bee11df72673b869932f2d59cef11469
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: f7242c05d830ecd1b702e4e9bb049e72740843f3
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
@@ -62,9 +62,11 @@ ms.lasthandoff: 03/28/2018
 
 #### <a name="more-information-about-running-continuously"></a>有关持续运行的详细信息
 
-Azure 信息保护客户端的当前预览版本定期检查文档是否符合指定的条件规则。 此行为将为存储在 SharePoint Online 中的文档启用自动和建议的分类及保护。 由于已运行条件规则，因此大型文件可实现更快保存。 
+默认情况下，Azure 信息保护客户端的当前预览版本定期检查文档是否符合指定的条件规则。 此行为将为存储在 SharePoint Online 中的文档启用自动和建议的分类及保护。 由于已运行条件规则，因此大型文件可实现更快保存。 
 
-条件规则不会作为用户类型实时运行。 而会在文档发生修改时作为后台任务定期运行。 
+条件规则不会作为用户类型实时运行。 而会在文档发生修改时作为后台任务定期运行。
+
+可以更改此行为，以便 Azure 信息保护客户端采用与该客户端通用版本相同的方式应用自动和建议标签。 此配置需要[高级客户端设置](../rms-client/client-admin-guide-customizations.md#turn-off-classification-running-continuously-in-the-background)。
 
 ### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>多条件应用到多个标签时的评估方式
 

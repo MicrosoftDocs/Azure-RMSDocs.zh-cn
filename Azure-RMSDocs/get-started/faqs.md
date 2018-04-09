@@ -4,7 +4,7 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2018
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 42d3437b204f97b5d9caa4a2fa67b60fc1a570e4
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 37619ad71fea842617556219c1684a3e837c3cc7
+ms.sourcegitcommit: 3af39b88d321d75038caad266e906f6e622011d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -37,7 +37,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 ## <a name="what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included"></a>需要为 Azure 信息保护准备哪个订阅，以及它包括哪些功能？
 请参阅 [Azure 信息保护](https://azure.microsoft.com/en-us/pricing/details/information-protection)页面上的订阅信息和功能列表。 
 
-如果你的 Office 365 订阅包含 Rights Management，请下载 [Azure 信息保护许可数据表](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)，其中包含许多有关许可的常见问题。
+如果你的 Office 365 订阅包含 Azure Rights Management 数据保护，请下载 [Azure 信息保护许可数据表](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)，其中还包含一些有关许可的常见问题解答。
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure 信息保护客户端是否只适用于包含分类和标记的订阅？
 
@@ -51,7 +51,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 很显然，Office 365 租户或 Azure AD 租户的全局管理员可以运行 Azure 信息保护的所有管理任务。 但是，如果想要将管理权限分配给其他用户，可以使用以下选项：
 
-- 信息保护管理员：此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护的所有方面，但不能配置其他服务。 具有此角色的管理员可以激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置 Azure 信息保护策略。 此外，具有此角色的管理员可以运行所有[来自 AADRM 模块的 PowerShell cmdlet](../deploy-use/administer-powershell.md)。 
+- 信息保护管理员：此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护的所有方面，但不能配置其他服务。 具有此角色的管理员可以激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置 Azure 信息保护策略。 此外，具有此角色的管理员可以运行针对 [Azure 信息保护客户端](../rms-client/client-admin-guide-powershell.md)以及来自 [AADRM 模块](../deploy-use/administer-powershell.md)的所有 PowerShell cmdlet。 
     
     若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。
 
@@ -72,7 +72,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 
-是的。 尽管 Azure 信息保护是基于云的解决方案，但它可对存储在本地和云中的文档和电子邮件进行分类、标签设置和保护。
+是。 尽管 Azure 信息保护是基于云的解决方案，但它可对存储在本地和云中的文档和电子邮件进行分类、标签设置和保护。
 
 如果具有 Exchange Server、SharePoint Server 和 Windows 文件服务器，则可部署[权限管理连接器](../deploy-use/deploy-rms-connector.md)，便于这些本地服务器可使用 Azure 权限管理服务保护电子邮件和文档。 你还可以使用 [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)，将 Active Directory 域控制器与 Azure AD 同步和联合，为用户提供更为契合的身份验证体验。
 

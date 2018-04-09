@@ -4,7 +4,7 @@ description: 说明如何对文档和电子邮件进行分类和保护。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 49518c1324ad541c4880c7930b6e661a2aba46d8
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 0d5f4e081ea68f3e8c9ddcb46409370b486f6210
+ms.sourcegitcommit: d1987b1abb65f3466bbbb8f8c28e30668d629e50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>用户指南：使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
@@ -79,7 +79,7 @@ ms.lasthandoff: 03/28/2018
 
 ### <a name="set-custom-permissions-for-a-document"></a>设置文档的自定义权限
 
-如果得到管理员的允许，可以指定你自己的文档保护设置，而不使用管理员可能已包含在所选标签中的保护设置。
+如果得到管理员的允许，可以指定你自己的文档保护设置，而不使用管理员可能已包含在所选标签中的保护设置。 此选项特定于文档，不适用于 Outlook。
 
 1. 在“**开始**”选项卡上的“**保护**”组中，依次单击“**保护**” > “**自定义权限**”：
 

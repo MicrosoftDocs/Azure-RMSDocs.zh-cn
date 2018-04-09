@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/22/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 47b7a82ba7dc6ba7dc3fc21ed114452578b62593
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 08412c2c1cf1182b6d8bdae6e68d53d0b46f4b41
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -201,6 +201,20 @@ ms.lasthandoff: 03/28/2018
 - 键：OutlookDefaultLabel
 
 - 值：\<label ID> 或 None
+
+## <a name="turn-off-classification-running-continuously-in-the-background"></a>关闭在后台持续运行的分类
+
+此配置选项目前处于预览状态，可能随时更改。 此外，此配置选项需要预览版的客户端。
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+
+配置此设置时，Azure 信息保护客户端的预览版本不会定期检查文档是否符合指定的条件规则。 相反，自动和建议标签的应用方式将与 [Azure 信息保护客户端通用版的应用方式相同](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)。 出于性能原因，可能需要此设置。
+
+若要配置此高级设置，请输入以下字符串：
+
+- 键：RunPolicyInBackground
+
+- 值：False
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>从 Secure Islands 和其他标记解决方案迁移标签
 
