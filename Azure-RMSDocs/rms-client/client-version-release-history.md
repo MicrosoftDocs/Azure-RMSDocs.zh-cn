@@ -1,5 +1,5 @@
 ---
-title: Azure 信息保护客户端&colon; 版本发行历史记录和支持策略
+title: Azure 信息保护客户端 - 版本发行历史记录和支持策略
 description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的新增功能或改进功能，并了解支持的生命周期策略。
 author: cabailey
 ms.author: cabailey
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1da6a647715389f912af5192b5b70a80f0bd35e9
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: ff9d6a4ce66deed8add68d7b1efc889ee9448f53
+ms.sourcegitcommit: 5866509c17872e274720d3014fe218ed95e86ee3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
