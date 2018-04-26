@@ -4,7 +4,7 @@ description: 管理员通过使用 PowerShell 管理 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/26/2018
+ms.date: 04/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 32ae599bc9251fd1504adc2b7c60190e9d78f5fd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: c791baa300fff3c251c49ddb92b6bf3765933a99
+ms.sourcegitcommit: 2eb5245b6afb291eae5ba87034e1698f096139dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -363,7 +363,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 8. 添加你的帐户名称。 如果其他 AD RMS 管理员或服务帐户也将使用这些 cmdlet 保护和取消保护文件，也请添加这些帐户。 
     
-    若要以非交互式方式保护或取消保护文件，请添加相关的计算机帐户。 例如，添加配置为文件分类基础结构的 Windows Server 计算机的计算机帐户，并使用 PowerShell 脚本保护文件。 此方案需要 Azure 信息保护客户端的当前预览版本。
+    若要以非交互式方式保护或取消保护文件，请添加相关的计算机帐户。 例如，添加配置为文件分类基础结构的 Windows Server 计算机的计算机帐户，并使用 PowerShell 脚本保护文件。
 
 9. 在“允许”列中，请确保选中“读取和执行”和“读取”复选框。
 
@@ -531,9 +531,6 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 首次运行此命令时，会提示你进行登录，这将在 %localappdata%\Microsoft\MSIP 中创建并安全地存储你的帐户的访问令牌。 在此初次登录后，可以在计算机上以非交互方式对文件进行标记和保护。 但是，如果使用某个服务帐户来对文件进行标记和保护，则此服务帐户无法以交互方式登录，请使用以下部分中的说明以便服务帐户可以使用令牌进行身份验证。
 
 ### <a name="specify-and-use-the-token-parameter-for-set-aipauthentication"></a>为 Set-AIPAuthentication 指定并使用 Token 参数
-
-> [!NOTE]
-> 此选项需要 Azure 信息保护扫描程序的正式版 (GA)，或 Azure 信息保护客户端的当前预览版。
 
 对于对文件进行标记和保护的帐户，请使用以下附加步骤和说明来避免初次交互式登录。 通常，只有无法为向此帐户授予**本地登录**权限但向其授予了**作为批处理作业登录**权限时才需要执行这些附加步骤。 例如，对于运行 Azure 信息保护扫描程序的服务帐户，情况可能如此。
 

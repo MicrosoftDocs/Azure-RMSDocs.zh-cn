@@ -4,7 +4,7 @@ description: 面向管理员提供的有关配置 Office 365 以使用 Azure 信
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/27/2018
+ms.date: 04/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ecf30ece9370a732e0bf302be5733273b64eea1a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 22182613f3bc12e5ed5aec0079c7b3e54ba8f69d
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365：配置客户端和联机服务，以使用 Azure 权限管理服务
 
@@ -110,7 +110,7 @@ ms.lasthandoff: 03/28/2018
 
 3. 选择“设置”图标。 在“设置”窗格中，如果“功能区”设置为“关”，请选择此设置以启用功能区。
 
-4. 要配置所有 OneDrive for Business 文件进行保护，选择从功能区中“库”，然后选择“库设置”选项卡。 要选择特定文件夹中的所有文件进行保护，请先选择该文件夹。
+4. 要配置所有 OneDrive for Business 文件进行保护，选择从功能区中“库”，然后选择“库设置”选项卡。
 
 5. 在“文档”>“设置”页上的“权限和管理”部分中，单击“信息权限管理”。
 
