@@ -16,6 +16,7 @@
 ### [默认策略](configure-policy-default.md)
 ### [配置策略设置](configure-policy-settings.md)
 ### [创建新标签](configure-policy-new-label.md)
+### [添加或删除标签](configure-policy-add-remove-label.md)
 ### [删除或重排标签](configure-policy-delete-reorder.md)
 ### [更改标签](configure-policy-change-label.md)
 ### [配置保护](configure-policy-protection.md)

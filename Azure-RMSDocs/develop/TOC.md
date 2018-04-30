@@ -5,6 +5,7 @@
 # [部署和使用该客户端](/information-protection/rms-client/use-client)
 # [开发和自定义应用](developers-guide.md)
 ## [开发人员指南](developers-guide.md)
+## Microsoft 信息保护
 ## [Rights Management SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
 ### [概述](overview.md)
 ### [入门](get-started.md)
