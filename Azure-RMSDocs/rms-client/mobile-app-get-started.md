@@ -5,7 +5,7 @@ keywords: 如何使用适用于 iOS 和 Android 的 Azure 信息保护应用查�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/05/2017
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ccee69ba4f0b17440e9748787502a480e692de7c
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: c3f012c58255e86c3a133348733e31327faa0417
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门
 
