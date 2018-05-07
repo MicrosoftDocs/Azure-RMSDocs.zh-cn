@@ -4,24 +4,21 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: b4db47cecb190b47854565beaeac72d768aa8e28
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: bcbc3e79da3c158ca3d6582e5dcd4882c327f7b6
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
-
->[!NOTE]
-> 本文反映了 Azure 门户的最新更新，它允许你独立于全局策略或限定范围的策略来创建标签。 还将删除发布策略的选项。 如果租户尚未更新这些更改，例如，你仍看到 Azure 信息保护的“发布”选项，而没有看到“分类”菜单选项，请等待几天，然后再返回查看这些说明。
 
 可通过使用 Rights Management 服务保护最敏感的文档和电子邮件。 此服务使用加密、标识和身份验证策略，有助于防止数据丢失。 保护应用于配置为使用 Rights Management 保护文档和电子邮件的标签，用户还可以在 Outlook 中选择“不可转发”按钮。
 

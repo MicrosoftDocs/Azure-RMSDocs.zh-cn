@@ -4,24 +4,21 @@ description: 向所有用户的全局策略或子集用户的作用域内策略�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: 73152d2202096775d315f874b30269c89213f8e1
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: ad74efff44738c5475e988d861fda8d93686e794
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>向 Azure 信息保护策略添加标签或从中删除标签
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
-
->[!NOTE]
-> 本文反映了 Azure 门户的最新更新，它允许你独立于全局策略或作用域内策略来创建标签。 还将删除发布策略的选项。 如果租户尚未更新这些更改，例如，你仍看到 Azure 信息保护的“发布”选项，而没有看到“分类”菜单选项，请等待几天，然后再返回查看这些说明。  
 
 创建 Azure 信息保护标签后，可以将其添加到策略，以便它可供用户使用。 如果标签面向所有用户，则将标签添加到全局策略。 如果标签面向所有子集用户，则将标签添加到作用域内策略。 目前，只能将标签添加到一个策略。 若要添加子标签，其父标签必须位于同一策略中，或位于全局策略中。
 

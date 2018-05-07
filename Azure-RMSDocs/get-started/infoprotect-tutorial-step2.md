@@ -4,24 +4,21 @@ description: 快速试用 Azure 信息保护入门教程步骤 2 - 配置策略�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: e2850a0f67f18febdbd98e59d01b2f28b00bff2a
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 3b9dbbc16fe26d7f111d37dbcd28d6477372a5d9
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>步骤 2：配置 Azure 信息保护策略
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
-
->[!NOTE]
-> 本教程的此步骤反映了 Azure 门户的最新更新。 如果看不到“分类”菜单选项，但仍看到“发布”选项，则导航指令与你所看到的内容不完全匹配。 如果是这种情况，当租户对最新更改进行更新时，请考虑在几天内返回到本教程的这一步。
 
 尽管 Azure 信息保护附带了你无需进行配置的默认策略，我们仍然要看一下该策略并进行一些更改。
 

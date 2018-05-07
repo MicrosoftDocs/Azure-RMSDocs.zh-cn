@@ -4,24 +4,21 @@ description: 可以为用户在信息保护栏上看到的标签以及用户看�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 09bf1d5bd1e9435fe0b665243deeea8873bb368e
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 4131e3afae338d906011a9fe02a941baa61cf892
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>如何在 Azure 信息保护中配置不同语言的标签和模板
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
-
->[!NOTE]
-> 本文反映了 Azure 门户的最新更新，它允许你独立于全局策略或作用域内策略来创建标签。 还将删除发布策略的选项。 如果租户尚未更新这些更改，例如，你仍看到 Azure 信息保护的“发布”选项，而没有看到“分类”菜单选项，请等待几天，然后再返回查看这些说明。
 
 虽然 Azure 信息保护的默认标签支持多种语言，但必须配置对指定标签名称和说明的支持。 此配置要求执行以下操作：
 
