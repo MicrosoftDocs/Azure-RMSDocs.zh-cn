@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/02/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 08412c2c1cf1182b6d8bdae6e68d53d0b46f4b41
-ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
+ms.openlocfilehash: bb48a3e35d18c111d3df1907b7cc7a2832e0ae13
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -28,19 +28,22 @@ ms.lasthandoff: 04/03/2018
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>在门户中配置高级客户端配置设置的具体步骤
 
+>[!NOTE]
+> 这些说明反映了 Azure 门户的最新更新。 如果看不到“分类”菜单选项，但仍看到“发布”选项，则导航指令与你所看到的内容不完全匹配。 如果是这种情况，当租户对最新更改进行更新时，请考虑在几天内返回到此过程。
+
 1. 如果尚未这样做，请在新的浏览器窗口中[登录到 Azure 门户](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal)，然后导航到“Azure 信息保护”边栏选项卡。
 
-2. 在最初的“Azure 信息保护”边栏选项卡中，选择“作用域内策略”。
+2. 从“分类” > “标签”菜单选项：选择“策略”。
 
-3. 在“Azure 信息保护 - 作用域内策略”边栏选项卡中，选择此策略旁边的上下文菜单 (...)，以添加高级设置。 再选择“高级设置”。
+3. 在“Azure 信息保护 - 策略”边栏选项卡中，选择此策略旁边的上下文菜单 (...)，以添加高级设置。 再选择“高级设置”。
     
     可以为全局策略和作用域内策略配置高级设置。
 
 4. 在“高级设置”边栏选项卡中，键入高级设置名称和值，再选择“保存并关闭”。
 
-5. 单击“发布”，并确保此策略的用户重启打开过的任何 Office 应用程序。
+5. 确保此策略的用户重启打开过的任何 Office 应用程序。
 
-6. 如果不再需要此设置，并希望还原为默认行为：在“高级设置”边栏选项卡中，选择不再需要的设置旁边的上下文菜单 (...)，再选择“删除”。 然后，单击“保存并关闭”，再重新发布已修改的策略。
+6. 如果不再需要此设置，并希望还原为默认行为：在“高级设置”边栏选项卡中，选择不再需要的设置旁边的上下文菜单 (...)，再选择“删除”。 然后单击“保存并关闭”。
 
 ## <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>阻止针对仅 AD RMS 计算机出现的登录提示
 
@@ -151,8 +154,6 @@ ms.lasthandoff: 04/03/2018
 
 - 值：输入 True 使自定义权限选项可用，输入 False 使其不可用
 
-> [!IMPORTANT]
-> 如果具有为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置的标签，除非使用当前预览版本的客户端，否则请勿将此选项设置为 False。 如果使用此选项，应用标签时，系统不会提示用户配置自定义权限。 结果是：标记文档，但并未按预期保护文档。
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>永久隐藏 Azure 信息保护栏
 
@@ -171,9 +172,7 @@ ms.lasthandoff: 04/03/2018
 
 ## <a name="enable-recommended-classification-in-outlook"></a>在 Outlook 中启用建议的分类
 
-此配置选项目前处于预览状态，可能随时更改。
-
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 此设置处于预览状态，并且可能会更改。
 
 为建议的分类配置标签时，系统将提示用户接受或关闭 Word、Excel 和 PowerPoint 中建议的标签。 此设置将此标签建议扩展到也在 Outlook 中显示。
 
@@ -185,8 +184,6 @@ ms.lasthandoff: 04/03/2018
 
 
 ## <a name="set-a-different-default-label-for-outlook"></a>为 Outlook 设置不同的默认标签
-
-此配置选项目前处于预览状态，可能随时更改。 此外，此配置选项需要预览版的客户端。
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
@@ -202,19 +199,45 @@ ms.lasthandoff: 04/03/2018
 
 - 值：\<label ID> 或 None
 
-## <a name="turn-off-classification-running-continuously-in-the-background"></a>关闭在后台持续运行的分类
-
-此配置选项目前处于预览状态，可能随时更改。 此外，此配置选项需要预览版的客户端。
+## <a name="remove-not-now-for-documents-when-you-use-mandatory-labeling"></a>使用强制标签时，删除文档的“以后再说”
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
-配置此设置时，Azure 信息保护客户端的预览版本不会定期检查文档是否符合指定的条件规则。 相反，自动和建议标签的应用方式将与 [Azure 信息保护客户端通用版的应用方式相同](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)。 出于性能原因，可能需要此设置。
+在使用“所有文档和电子邮件都必须有一个标签”的[策略设置](../deploy-use/configure-policy-settings.md)时，当用户首次保存 Office 文档和发送电子邮件，系统会提示选择标签。 对于文档，用户可以选择“以后再说”暂时关闭提示以选择标签，并返回到文档。 但是不能在未选择标签的情况下关闭已保存的文档。 
+
+在配置此设置时，将删除“以后再说”选项，以便首次保存文档时用户必须选择一个标签。
+
+若要配置此高级设置，请输入以下字符串：
+
+- 键：PostponeMandatoryBeforeSave
+
+- 值：False
+
+## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>开启在后台持续运行的分类
+
+此配置选项目前处于预览状态，可能随时更改。
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+
+在配置此设置时，将更改 Azure 信息保护客户端应用自动和建议标签方式的[默认行为](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)，如下所示：
+
+- 自动分类应用于 Word、Excel、PowerPoint 和 Outlook。 对于文档，自动分类在后台持续运行。 对于 Outlook，自动分类在发送电子邮件时运行。 
+    
+    如果文档之前已手动添加标签（或之前已使用更高级别的分类添加标签），则不能使用自动分类。 但也有例外情况，如果使用 Azure 信息保护扫描程序并且其 OverrideLabel 参数设置为开启，则可以使用自动分类。
+
+- 建议的分类应用于 Word、Excel 和 PowerPoint。 对于这些文档，建议的分类在后台持续运行。 不能将建议的分类用于 Outlook。
+    
+    对于之前已设置标签（无论是否是更高级别的分类标签）的文档，可使用建议的分类。 
+
+如果 Azure 信息保护客户端定期检查你指定的条件规则文档，此行为将为存储在 SharePoint Online 中的文档启用自动和建议的分类以及保护。 由于已运行条件规则，因此大型文件可实现更快保存。 
+
+条件规则不会作为用户类型实时运行。 而会在文档发生修改时作为后台任务定期运行。
 
 若要配置此高级设置，请输入以下字符串：
 
 - 键：RunPolicyInBackground
 
-- 值：False
+- 值：True
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>从 Secure Islands 和其他标记解决方案迁移标签
 
@@ -296,8 +319,6 @@ ms.lasthandoff: 04/03/2018
 
 
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>使用现有自定义属性标记 Office 文档
-
-此配置选项目前处于预览状态，可能随时更改。
 
 > [!NOTE]
 > 如果结合使用此配置和上一部分中的配置，从另一个标记解决方案进行迁移，将优先考虑标记迁移设置。 

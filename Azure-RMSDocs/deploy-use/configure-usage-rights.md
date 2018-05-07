@@ -4,7 +4,7 @@ description: 了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/26/2018
+ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0ec4710618227573fa7442a8fe1f0bd52b2c8f6f
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 297e530406c33ca50d1e8287509e4c3a6f3c7a80
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -90,8 +90,8 @@ ms.lasthandoff: 03/28/2018
 
 |模板的显示名称|2017 年 10 月 6 日到当前日期的使用权限|2017 年 10 月 6 日之前的使用权限|
 |----------------|--------------------|----------|
-|\<组织名称> - 机密，仅供查阅 <br /><br />、<br /><br /> *高度机密\所有员工*|查看、打开、读取；复制；查看权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑|查看、打开、读取|
-|\<组织名称> - 机密 <br /><br />、 <br /><br />*机密\所有员工*|查看、打开、读取；另存为、导出；复制；查看权限；更改权限；允许宏；打印；转发；答复；全部答复；保存；编辑内容、编辑；完全控制|查看、打开、读取；另存为、导出；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
+|\<组织名称> - 机密，仅供查阅 <br /><br />或<br /><br /> *高度机密\所有员工*|查看、打开、读取；复制；查看权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑|查看、打开、读取|
+|\<组织名称> - 机密 <br /><br />或 <br /><br />*机密\所有员工*|查看、打开、读取；另存为、导出；复制；查看权限；更改权限；允许宏；打印；转发；答复；全部答复；保存；编辑内容、编辑；完全控制|查看、打开、读取；另存为、导出；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
 
 ## <a name="do-not-forward-option-for-emails"></a>电子邮件的“不得转发”选项
 
@@ -158,7 +158,9 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 用户打开已受 Azure Rights Management 保护的文档或电子邮件时，会向该用户授予 Rights Management 使用许可证。 此使用许可证是一个证书，它包含用户对文档或电子邮件的使用权限，以及用于加密内容的加密密钥。 此使用许可证还包含一个到期日期（如果已设置）及其有效时长。
 
-使用许可证有效期内，不会对用户重新进行身份验证或重新授权。 这样即使没有 Internet 连接，用户也能够打开受保护的文档或电子邮件。 使用许可证有效期到期后，用户下次访问受保护的文档或电子邮件时就必须重新进行身份验证并重新进行授权。 
+除了权限帐户证书 (RAC)，用户还必须具有一个有效的使用许可证才能打开内容，这是在[初始化用户环境](../understand-explore/how-does-it-work.md#initializing-the-user-environment)时授予的证书，然后每隔 31 天续订一次。
+
+使用许可证有效期内，无需对用户重新进行身份验证或重新授权即可获取内容。 这样即使没有 Internet 连接，用户也能够打开受保护的文档或电子邮件。 使用许可证有效期到期后，用户下次访问受保护的文档或电子邮件时就必须重新进行身份验证并重新进行授权。 
 
 如果文档和电子邮件是通过标签或定义保护设置的模板进行保护，可更改标签或模板中的这些设置，而无需重新保护内容。 如果用户已访问过内容，则所做的更改将在他们的使用许可证过期后生效。 但如果用户应用了自定义权限（也称为临时权限策略），且这些权限需要在保护文档或电子邮件后更改，则必须使用新权限再次保护该内容。 通过“不转发”选项实现电子邮件的自定义权限。
 

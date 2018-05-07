@@ -4,7 +4,7 @@ description: 管理员配置和使用 Azure 信息保护的文档跟踪的说明
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2018
+ms.date: 04/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 04b6f65495c6b7251d000ff438ecab20c3a44db7
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e24d91f04dc3186a9451546c8a962c49129f326b
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>管理员指南：配置和使用 Azure 信息保护的文档跟踪
 
@@ -24,11 +24,17 @@ ms.lasthandoff: 03/28/2018
 
 如果你有[支持文档跟踪的订阅](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。 文档跟踪为用户和管理员提供有关受保护文档访问时间的信息，如有必要，可以撤销已跟踪的文档。
 
-## <a name="privacy-controls-for-your-document-tracking-site"></a>文档跟踪站点的隐私控制
+## <a name="using-powershell-to-manage-the-document-tracking-site"></a>使用 PowerShell 管理文档跟踪站点
+
+以下各节包含有关如何使用 PowerShell 管理文档跟踪站点的信息。 有关 PowerShell 模块的安装说明，请参阅[安装 AADRM PowerShell 模块](../deploy-use/install-powershell.md)。 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号：`(Get-Module aadrm –ListAvailable).Version`
+
+有关每个 cmdlet 的详细信息，请使用提供的链接。
+
+### <a name="privacy-controls-for-your-document-tracking-site"></a>文档跟踪站点的隐私控制
 
 如果你的组织出于隐私要求需要禁止显示所有文档跟踪信息，可以使用 [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature) cmdlet 禁用文档跟踪。 
 
-此 cmdlet 禁用对文档跟踪站点的访问，以使组织中的所有用户无法跟踪或撤销对已保护文档的访问权限。 你随时可以使用 [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature) 来重新启用文档跟踪，并可以使用 [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature) 来查看当前是已启用还是已禁用文档跟踪。 若要运行这些 cmdlet，必须至少安装适用于 PowerShell 的 Azure 权限管理 (AADRM) 模块的 2.3.0.0 版本。 
+此 cmdlet 禁用对文档跟踪站点的访问，以使组织中的所有用户无法跟踪或撤销对已保护文档的访问权限。 你随时可以使用 [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature) 来重新启用文档跟踪，并可以使用 [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature) 来查看当前是已启用还是已禁用文档跟踪。 若要运行这些 cmdlet，必须至少安装适用于 PowerShell 的 AADRM 模块的 2.3.0.0 版本。 
 
 启用文档跟踪站点后，它会默认显示尝试访问受保护文档的人员的电子邮件地址、这些人员尝试访问这些文档的时间以及他们所在的位置等信息。 这个级别的信息有助于确定使用共享文档的方式，以及在发现可疑活动时，是否应撤销这些文档。 但是，出于隐私原因，你可能需要为部分或所有用户禁用此用户信息。 
 
@@ -40,11 +46,19 @@ ms.lasthandoff: 03/28/2018
 
 此设置仅会影响最终用户。 Azure 信息保护的管理员可以随时跟踪所有用户的活动，即使是使用 Set-AadrmDoNotTrackUserGroup 指定的这些用户也是如此。 有关管理员如何跟踪用户文档的详细信息，请参阅[跟踪和撤销用户文档](#tracking-and-revoking-documents-for-users)部分。
 
-如果不再需要此选项，可以使用 [Clear-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Clear-AadrmDoNotTrackUserGroup)。 或者选择性地删除用户，将其从组中删除，但请注意[组缓存](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection)。 可以使用 [Get-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/get-AadrmDoNotTrackUserGroup) 检查此选项是否正在使用。 若要为此组配置运行 cmdlet，必须至少安装适用于 PowerShell 的 Azure 权限管理 (AADRM) 模块的 **2.10.0.0** 版本。
 
-有关每个 cmdlet 的详细信息，请使用提供的链接。 有关 PowerShell 模块的安装说明，请参阅[安装 AADRM PowerShell 模块](../deploy-use/install-powershell.md)。 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号：`(Get-Module aadrm –ListAvailable).Version`
+### <a name="logging-information-from-the-document-tracking-site"></a>文档跟踪站点中的日志记录信息
 
+如果安装了最低版本 2.13.0.0 的 AADRM 模块，可以使用以下 cmdlet 从文档跟踪站点下载日志记录信息：
 
+- [Get-AadrmTrackingLog](/powershell/module/aadrm/Get-AadrmTrackingLog)
+    
+    此 cmdlet 向指定用户返回有关受保护文档的跟踪信息，该用户为文档提供保护（Rights Management 颁发者）或已访问受保护的文档。 使用此 cmdlet 来帮助回答问题“指定用户跟踪或访问了哪些受保护的文档？”
+
+- [Get-AadrmDocumentLog](/powershell/module/aadrm/Get-AadrmDocumentLog)
+    
+    如果用户为文档提供保护（Rights Management 颁发者）或者是文档的 Rights Management 所有者，或者受保护的文档被配置为直接授予该用户访问权限，那么此 cmdlet 会对该指定用户返回有关跟踪文档的保护信息。 使用此 cmdlet 来帮助回答问题“如何保护指定用户的文档？”
+ 
 ## <a name="destination-urls-used-by-the-document-tracking-site"></a>文档跟踪站点使用的目标 URL
 
 以下 URL 用于文档跟踪，必须在运行 Azure 信息保护客户端和 Internet 的客户端之间的所有设备和服务上允许它们。 例如，如果你使用的是具有增强安全性的 Internet Explorer，请将这些 URL 添加到防火墙，或添加到受信任的站点。

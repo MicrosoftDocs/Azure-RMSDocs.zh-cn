@@ -4,7 +4,7 @@ description: 若要配置分类、标记和保护，必须配置 Azure 信息保
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a0194b1cf6b1b134c3fd37ae9f042f117570d9ce
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e8d641fd3165346ab052daad7ec7040b0d9e543f
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+
+>[!NOTE]
+> 本文反映了 Azure 门户的最新更新，它允许你独立于全局策略或作用域内策略来创建标签。 还将删除发布策略的选项。 如果租户尚未更新这些更改，例如，你仍看到 Azure 信息保护的“发布”选项，而没有看到“分类”菜单选项，请等待几天，然后再返回查看这些说明。
 
 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。 然后将此策略下载到已安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#azure-信息保护客户端) 的计算机。
 
@@ -74,7 +77,7 @@ Azure 信息保护支持不同级别的订阅：
 
 4. 首次连接到该服务时，“快速入门”页会自动打开。 浏览建议的资源，或使用其他菜单选项。 要配置用户可选择的标签，请使用以下过程。
 
-下次访问“Azure 信息保护”边栏选项卡时，将自动选择“策略” > “全局策略”选项，以便可为所有用户配置标签。 从“常规”菜单进行选择即可返回“快速入门”页。
+下次访问“Azure 信息保护”边栏选项卡时，将自动选择“标签”选项，以便可以查看并为所有用户配置标签。 从“常规”菜单进行选择即可返回“快速入门”页。
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>如何配置 Azure 信息保护策略
 
@@ -82,21 +85,29 @@ Azure 信息保护支持不同级别的订阅：
 
 2. 如有必要，可导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“所有服务”并开始在“筛选”框中键入“信息保护”。 在结果中选择“Azure 信息保护”。 
     
-    “Azure 信息保护 - 全局策略”边栏选项卡会自动打开，你可以查看和编辑所有用户获得的全局策略。 
+    “Azure 信息保护 - 标签”边栏选项卡会自动打开，你可以查看和编辑可用标签。 可通过从策略中添加或删除标签，使标签可供所有用户和选定用户使用，或不供用户使用。
+
+3. 若要查看和编辑策略，从菜单选项选择“策略”。 若要查看和编辑所有用户都可以获得的策略，请选择“全局”策略。 若要创建所选用户的自定义策略，请选择“添加新策略”。
     
     Azure 信息保护策略包含以下可配置的元素：
     
-    - 让你和用户对文档和电子邮件进行分类的标签。
+    - 包含哪些允许管理员和用户对文档和电子邮件进行分类的标签。
     
     - 用户在 Office 应用程序中看到的信息保护栏的标题和工具提示。
     
-    - 在用户保存文档和发送电子邮件时强制执行分类的选项。
-    
     - 将默认标签设置为对文档和电子邮件进行分类的起始点的选项。
+     
+    - 在用户保存文档和发送电子邮件时强制执行分类的选项。
     
     - 当用户选择比原始级别低的敏感度级别时提示用户提供相应原因的选项。
     
     - 用于自动标记电子邮件的选项（基于电子邮件附件）。
+
+    - 控制是否将信息保护栏显示在 Office 应用程序中的选项。
+
+    - 控制是否在 Outlook 中显示“不转发”按钮的选项。
+    
+    - 允许用户指定自己文档权限的选项。
     
     - 为用户提供自定义帮助链接的选项。
 
@@ -108,9 +119,7 @@ Azure 信息保护标签可用于组织常规创建和存储的数据，包括�
 
 可以创建任意数量的标签。 但是，如果因标签数量过多而导致用户难以看见并选择正确的标签，可以创建作用域内策略，使用户仅看见相关的标签。 应用保护的标签具有数量上限（500 个）。
 
-当在“Azure 信息保护”边栏选项卡上进行任何更改时，请单击“**保存**”以保存更改，或者单击“**放弃**”以返回到上一个保存的设置。
-
-在完成所需更改后，单击“**发布**”。 
+当在“Azure 信息保护”边栏选项卡上进行任何更改时，请单击“**保存**”以保存更改，或者单击“**放弃**”以返回到上一个保存的设置。 在策略中保存更改，或对添加到策略中的标签进行更改时，这些更改将自动发布。 不提供单独发布选项。
 
 每当受支持的 Office 应用程序启动时，Azure 信息保护客户端都会检查是否有任何变化，并根据最新的 Azure 信息保护策略下载这些更改。 在客户端上刷新策略的其他触发器：
 
@@ -136,6 +145,8 @@ Azure 信息保护标签可用于组织常规创建和存储的数据，包括�
 
 - [如何创建新标签](configure-policy-new-label.md)
 
+- [如何添加或删除标签](configure-policy-add-remove-label.md)
+ 
 - [如何删除或重排标签](configure-policy-delete-reorder.md)
 
 - [如何更改或自定义现有标签](configure-policy-change-label.md)

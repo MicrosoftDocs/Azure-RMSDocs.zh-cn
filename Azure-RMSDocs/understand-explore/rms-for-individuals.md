@@ -12,25 +12,25 @@ ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fadaac4b5ea7828c53544485b1685226176a2a75
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: df2d97fd8abdf7c2f210d857287d3590838222db
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>个人 RMS 和 Azure 信息保护
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
-RMS 个人版是免费的自助式订阅，适用于需要打开受 Azure 信息保护保护的文件的用户。 如果 Azure Active Directory 无法对这些用户进行身份验证，并且他们的组织没有 Active Directory Rights Management (AD RMS)，此免费登录服务会在 Azure Active Directory 中为用户创建一个帐户。 因此，这些用户现在可以使用其公司电子邮件地址进行身份验证，然后在计算机或移动设备上阅读受保护的文件。
+RMS 个人版是免费的自助式订阅，适用于需要打开受 Azure 信息保护保护的文件的用户。 如果 Azure Active Directory 无法对这些用户进行身份验证，此免费登录服务会在 Azure Active Directory 中为用户创建一个帐户。 因此，这些用户现在可以使用其公司电子邮件地址进行身份验证，然后在计算机或移动设备上阅读受保护的文件。
 
-RMS 个人版采用 Azure Active Directory 自助式注册。 如果用户已为组织创建帐户，作为组织管理员，你可以声明所有权，并控制这些帐户。 
+RMS 个人版采用 Azure Active Directory 自助式注册。 如果用户已使用此订阅为组织创建帐户，作为组织管理员，你可以声明所有权，并[控制这些帐户](/active-directory/domains-admin-takeover#external-admin-takeover)。 
 
 
 > [!NOTE]
 > 此免费订阅是帮助确保组织外部的授权人员可始终阅读受组织保护的文件的一种方式。 另一种方式是使用[具有新功能的 Office 365 邮件加密](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)以电子邮件的形式发送文档。 此电子邮件解决方案适用于所有设备上的任何电子邮件地址，也是通过电子邮件方式与组织外部人员安全共享信息和查看 Office 文档的推荐方法。 
 
-若要注册此免费帐户，请转到 [Microsoft Azure 信息保护页](https://aka.ms/rms-signup)，并提供工作电子邮件地址。 将收到 Microsoft 的回应电子邮件，再输入创建帐户所需的详细信息，以完成注册流程。 
+若要注册此免费帐户，用户可以转到 [Microsoft Azure 信息保护页](https://aka.ms/rms-signup)，并提供其工作电子邮件地址。 他们将收到 Microsoft 的回应电子邮件，然后通过输入详细信息以创建帐户，从而完成注册过程。 
 
 创建帐户后，最终页面显示各种设备的 Azure 信息保护客户端或查看器的下载链接、用户指南链接，以及本机支持 Rights Management 保护的当前应用程序列表的链接。 
 

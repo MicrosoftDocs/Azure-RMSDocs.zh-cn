@@ -4,7 +4,7 @@ description: 适用于 Windows 的 Azure 信息保护客户端的客户端文件
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a60169a2c98a751c787a7ca4a8aee31f99a18590
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 13f82bc12fd77d4f145b059c2962af01094760c3
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护客户端文件和客户端使用情况日志记录
 
@@ -40,9 +40,9 @@ ms.lasthandoff: 03/28/2018
 
 客户端将用户活动记录到本地 Windows 事件日志“应用程序和服务日志” > “Azure 信息保护”中。 这些事件包括以下信息：
 
-- 日期、客户端版本、策略 ID
+- 客户端版本、策略 ID
 
-- 登录的用户名、计算机名称
+- 登录用户的 IP 地址
 
 - 文件名和位置
 
@@ -76,10 +76,7 @@ ms.lasthandoff: 03/28/2018
     
     - 系统（用于登录和下载策略）
     
-    - 默认值
-        
-        此默认源操作仅适用于预览版客户端，并引用通过使用 Azure 信息保护策略中的“选择默认标签”设置的标签。
-
+    - 默认
     
 - 操作前后的标签 
     

@@ -4,21 +4,24 @@ description: 可以为用户在信息保护栏上看到的标签以及用户看�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: b3341237d494766242ef790798ad1f97404919e9
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 09bf1d5bd1e9435fe0b665243deeea8873bb368e
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>如何在 Azure 信息保护中配置不同语言的标签和模板
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+
+>[!NOTE]
+> 本文反映了 Azure 门户的最新更新，它允许你独立于全局策略或作用域内策略来创建标签。 还将删除发布策略的选项。 如果租户尚未更新这些更改，例如，你仍看到 Azure 信息保护的“发布”选项，而没有看到“分类”菜单选项，请等待几天，然后再返回查看这些说明。
 
 虽然 Azure 信息保护的默认标签支持多种语言，但必须配置对指定标签名称和说明的支持。 此配置要求执行以下操作：
 
@@ -44,11 +47,9 @@ ms.lasthandoff: 03/28/2018
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
-2. 在“管理”菜单选项中，选择“语言”。
+2. 从“管理” > “语言”菜单选项：在“Azure 信息保护 - 语言”边栏选项卡中，选择“添加新语言以进行翻译”。 选择要添加的语言，然后选择“确定”。 可以在搜索框中键入语言名称，也可以滚动浏览可用语言列表进行选择
 
-3. 在“Azure 信息保护 - 语言”边栏选项卡中，选择“添加新语言以进行翻译”。 选择要添加的语言，然后选择“确定”。 可以在搜索框中键入语言名称，也可以滚动浏览可用语言列表进行选择
-
-4. 现在，所选语言显示在“Azure 信息保护 - 语言”边栏选项卡上：
+3. 现在，所选语言显示在“Azure 信息保护 - 语言”边栏选项卡上：
     
     - 要添加其他语言，请选择“添加新语言以进行翻译”并重复执行上一步骤。 
         
@@ -57,19 +58,19 @@ ms.lasthandoff: 03/28/2018
         
     - 如果要更改已添加的任何语言，从列表中选择该条目，然后单击“删除”。
 
-5. 列出你想要支持的所有语言后，选中“语言名称”旁边的复选框以选中所有条目（或者选择单个条目），然后单击“导出”，将现有标签名称和说明的本地副本保存到文件。 
+4. 列出你想要支持的所有语言后，选中“语言名称”旁边的复选框以选中所有条目（或者选择单个条目），然后单击“导出”，将现有标签名称和说明的本地副本保存到文件。 
     
     下载的文件名为“exported localization.zip”，保存在本地“下载”文件夹中。 此外，还可以通过在 Azure 门户的状态栏上选择此文件名对其进行访问。
 
-6. 从“exported localization.zip”中提取文件，这样，你所选的每种语言都有可供下载的 .xml 文件。 
+5. 从“exported localization.zip”中提取文件，这样，你所选的每种语言都有可供下载的 .xml 文件。 
 
-7. 编辑每个 .xml 文件：对于 `<LocalizedText>` 标签中的每个字符串，为每种所选语言提供你想要的翻译。 
+6. 编辑每个 .xml 文件：对于 `<LocalizedText>` 标签中的每个字符串，为每种所选语言提供你想要的翻译。 
 
-8. 编辑每个 .xml 文件后，创建一个新的压缩 (zipped) 文件夹来包含这些文件。 压缩文件夹可以具有任何名称，但必须具有 .zip 扩展名。
+7. 编辑每个 .xml 文件后，创建一个新的压缩 (zipped) 文件夹来包含这些文件。 压缩文件夹可以具有任何名称，但必须具有 .zip 扩展名。
 
-9. 返回到“Azure 信息保护 - 语言”边栏选项卡，然后选择“导入”。 请注意，如果此选项不可用，则首先清除“语言名称”复选框或单独选择的语言对应的复选框。
+8. 返回到“Azure 信息保护 - 语言”边栏选项卡，然后选择“导入”。 请注意，如果此选项不可用，则首先清除“语言名称”复选框或单独选择的语言对应的复选框。
     
-    导入完成后，本地化的名称和说明将在下次发布 Azure 信息保护策略后为用户下载。 可以单击“全局策略”或“范围策略”边栏选项卡中的“发布”。
+    完成导入后，将为用户下载本地化名称和说明。
 
 ## <a name="how-the-azure-information-protection-client-determines-the-language-to-display"></a>Azure 信息保护客户端如何确定要显示的语言
 
@@ -100,7 +101,7 @@ ms.lasthandoff: 03/28/2018
 
 ## <a name="next-steps"></a>后续步骤
 
-若要详细了解可针对标签配置的选项以及可针对 Azure 信息保护策略配置的其他设置，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。
+若要详细了解可针对标签配置的选项以及可针对 Azure 信息保护策略配置的其他设置，请使用[配置组织策略](configure-policy.md#configuring-your-organizations-policy)部分中的链接。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

@@ -4,7 +4,7 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/04/2018
+ms.date: 04/17/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 380b2f715ead6f3f8c8e497c911ff425c12424e8
-ms.sourcegitcommit: 40ac805183589a1c8ef22bc1bd9556bcc92f65e6
+ms.openlocfilehash: c031bffeb5f4f3d6edbdab71e157b3f1580d46ed
+ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -64,6 +64,8 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 以下设备支持 Azure 信息保护客户端，它可使用户分类并标记其文档和电子邮件：
 
 - Windows 10（x86、x64）
+    
+    - 预览体验成员的 Windows 10 RS4 内部版本中不支持手写。 
 
 - Windows 8.1（x86、x64）
 

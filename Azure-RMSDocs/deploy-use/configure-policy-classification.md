@@ -4,21 +4,24 @@ description: 在配置标签的条件时，可以自动将标签分配到文档�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/02/2018
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: f7242c05d830ecd1b702e4e9bb049e72740843f3
-ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
+ms.openlocfilehash: 1019b7d7ea32b26a24aa2417a77345ff87e52e4b
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+
+>[!NOTE]
+> 本文反映了 Azure 门户的最新更新，它允许你独立于全局策略或作用域内策略来创建标签。 还将删除发布策略的选项。 如果租户尚未更新这些更改，例如，你仍看到 Azure 信息保护的“发布”选项，而没有看到“分类”菜单选项，请等待几天，然后再返回查看这些说明。
 
 在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。 
 
@@ -30,7 +33,7 @@ ms.lasthandoff: 04/03/2018
 
 ![Azure 信息保护检测和建议](../media/info-protect-recommend-calloutsv2.png)
 
-在此示例中，用户可以单击“立即更改”应用建议的标签，或通过选择“消除”来替代该建议。
+在此示例中，用户可以单击“立即更改”应用建议的标签，或通过选择“消除”来替代该建议。 如果用户选择消除建议并且在下一次打开文档时该条件仍然适用，会再次显示标签建议。 
 
 > [!IMPORTANT]
 >请勿为自动分类和用户定义的权限配置标签。 “用户定义的权限”选项是一个[保护设置](configure-policy-protection.md)，允许用户指定应向其授予权限的人员。
@@ -38,8 +41,6 @@ ms.lasthandoff: 04/03/2018
 >如果为自动分类和用户定义的权限配置标签，则会检查内容是否符合条件，并且不会应用用户定义的权限设置。 可使用建议的分类和用户定义的权限。
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>如何应用自动标签或建议的标签
-
-**对于 Azure 信息保护客户端的正式发布版：**
 
 - 自动分类会在保存文档时应用到 Word、Excel 和 PowerPoint，并在发送电子邮件时应用到 Outlook。 
     
@@ -49,28 +50,9 @@ ms.lasthandoff: 04/03/2018
     
     对于之前已设置标签（无论是否是更高级别的分类标签）的文档，可使用建议的分类。 
 
-
-**对于 Azure 信息保护客户端的当前预览版本：**
-
-- 自动分类应用于 Word、Excel、PowerPoint 和 Outlook。 对于文档，自动分类[在后台持续运行](#more-information-about-running-continuously)。 对于 Outlook，自动分类在发送电子邮件时运行。 
-    
-    如果文档之前已手动添加标签（或之前已使用更高级别的分类添加标签），则不能使用自动分类。 但也有例外情况，如果使用 Azure 信息保护扫描程序并且其 OverrideLabel 参数设置为开启，则可以使用自动分类。
-
-- 建议的分类应用于 Word、Excel 和 PowerPoint。 对于这些文档，建议的分类[在后台持续运行](#more-information-about-running-continuously)。 不能将建议的分类用于 Outlook。
-    
-    对于之前已设置标签（无论是否是更高级别的分类标签）的文档，可使用建议的分类。 
-
-#### <a name="more-information-about-running-continuously"></a>有关持续运行的详细信息
-
-默认情况下，Azure 信息保护客户端的当前预览版本定期检查文档是否符合指定的条件规则。 此行为将为存储在 SharePoint Online 中的文档启用自动和建议的分类及保护。 由于已运行条件规则，因此大型文件可实现更快保存。 
-
-条件规则不会作为用户类型实时运行。 而会在文档发生修改时作为后台任务定期运行。
-
-可以更改此行为，以便 Azure 信息保护客户端采用与该客户端通用版本相同的方式应用自动和建议标签。 此配置需要[高级客户端设置](../rms-client/client-admin-guide-customizations.md#turn-off-classification-running-continuously-in-the-background)。
+可以更改此行为，以便 Azure 信息保护客户端定期检查文档是否符合指定的条件规则。 此配置需要当前为预览效果的[高级客户端设置](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)。
 
 ### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>多条件应用到多个标签时的评估方式
-
-对于 Azure 信息保护客户端和当前预览客户端的正式发布版：
 
 1. 根据在策略中指定的位置，将标签排序以供评估：排在第一的标签具有最低的位置（敏感度最低），排在最后的标签具有最高位置（敏感度最高）。
 
@@ -85,15 +67,11 @@ ms.lasthandoff: 04/03/2018
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
-2. 如果要配置的标签将应用于所有用户，请选择“Azure 信息保护 - 全局策略”边栏选项卡。
-    
-    如果要配置的标签位于[作用域内策略](configure-policy-scope.md)中，仅应用于所选用户，请从“策略”菜单选项中选择“作用域内策略”。 然后从“Azure 信息保护 - 作用域内策略”边栏选项卡选择作用域内策略。
+2. 从“分类” > “标签”菜单选项：在“Azure 信息保护 - 标签”边栏选项卡上，选择要配置的标签。
 
-3. 从“Azure 信息保护 - 全局策略”边栏选项卡或“策略: \<名称>”边栏选项卡中，选择要配置的标签。 
+3. 在“**标签**”边栏选项卡上的“**配置条件以自动应用该标签**”部分中，单击“**添加新的条件**”。
 
-4. 在“**标签**”边栏选项卡上的“**配置条件以自动应用该标签**”部分中，单击“**添加新的条件**”。
-
-5. 在“条件”边栏选项卡上，选择“信息类型”（如果要使用预定义的条件）或“自定义”（如果要指定自己的条件）：
+4. 在“条件”边栏选项卡上，选择“信息类型”（如果要使用预定义的条件）或“自定义”（如果要指定自己的条件）：
     - 对于“信息类型”：从可用条件列表中选择，然后选择最小出现次数以及出现计数中是否应具有唯一的值。
         
         信息类型使用 Office 365 数据丢失防护 (DLP) 敏感信息类型和模式检测。 可以从多种常见敏感信息类型中进行选择，其中某些类型特定于不同的区域。 有关详细信息，请参阅 Office 文档中的 [What the sensitive information types look for](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)（敏感信息类型查找的内容）。
@@ -106,17 +84,17 @@ ms.lasthandoff: 04/03/2018
         
         正则表达式使用 Office 365 正则表达式模式。 有关详细信息，请参阅 Office 文档中的[基于匹配定义正则表达式](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2)。 此外，你可能会发现参考 Boost 中的 [Perl Regular Expression Syntax](http://www.boost.org/doc/libs/1_66_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)（Perl 正则表达式语法）将有所帮助。
         
-6. 确定是否需要更改“最小出现次数”和“仅计算唯一值的出现次数”，然后选择“保存”。 
+5. 确定是否需要更改“最小出现次数”和“仅计算唯一值的出现次数”，然后选择“保存”。 
     
     出现次数选项示例：选择社会安全号码的信息类型并将最小出现次数设置为 2，并且文档已两次列出同一社会安全号码：如果将“仅计算唯一值的出现次数”设置为“开”，则不符合条件。 如果将此选项设置为“关闭”，则满足条件。
 
-7. 返回到“标签”边栏选项卡上，配置以下内容，然后单击“保存”：
+6. 返回到“标签”边栏选项卡上，配置以下内容，然后单击“保存”：
     
     - 选择自动或建议的分类：对于**选择如何应用该标签：自动或向用户建议**，选择“**自动**”或“**建议**”。
     
     - 指定用户提示或策略提示文本：保持默认文本或指定你自己的字符串。
 
-8. 若要使所做的更改适用于用户，请在初始“Azure 信息保护”边栏选项卡，单击“发布”。
+单击“保存”时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -4,7 +4,7 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 3 阶段涉及从 AD 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e5e1f0fa043a0a15ef34c9e4d5690e974cf6bddd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 62f854264f48b51e6177c033d95dabaf75e2dc5d
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/28/2018
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 3。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 7。
 
-## <a name="step-7-reconfigure-windows-computers-to-use-azure-information-protection"></a>步骤 7： 重新配置 Windows 计算机以使用 Azure 信息保护
+## <a name="step-7-reconfigure-windows-computers-to-use-azure-information-protection"></a>步骤 7. 重新配置 Windows 计算机以使用 Azure 信息保护
 
 对于使用 Office 2016 即点即用桌面应用的 Windows 计算机：
 
@@ -72,17 +72,17 @@ ms.lasthandoff: 03/28/2018
 
     a. 在群集中的某个 AD RMS 服务器上，启动 Internet Information Services (IIS) 管理器控制台。
 
-    b. 导航到“**默认网站**” > “**_wmcs**” > “**许可**” > “**publish.asmx**”
+    b. 导航到“默认网站” > “_wmcs” > “许可” > “licensing.asmx”
 
-    c. 右键单击“**publish.asmx**” > “**属性**” > “**编辑**”
+    c. 右键单击“licensing.asmx” > “属性” > “编辑”
 
-    d. 在“**publish.asmx 权限**”对话框中，选择“**用户**”以为所有用户设置重定向，或单击“**添加**”并指定包含需重定向用户的组。
+    d. 在“licensing.asmx 权限”对话框中，选择“用户”以为所有用户设置重定向，或单击“添加”并指定包含需重定向用户的组。
     
     即使所有用户都使用 Office 2016，最好还是先指定部分用户来进行分阶段迁移。
     
     e. 对于所选组，为“**读取和执行**”及“**读取**”权限选择“**拒绝**”，然后两次单击“**确定**”。
 
-    f. 若要确认此配置按预期工作，请尝试从浏览器直接连接到 publish.asmx 文件。 应看到以下错误消息，它将触发运行 Office 2016 的客户端查找 SRV 记录：
+    f. 若要确认此配置按预期工作，请尝试从浏览器直接连接到 licensing.asmx 文件。 应看到以下错误消息，它将触发运行 Office 2016 的客户端查找 SRV 记录：
     
     **错误消息 401.3: 无权使用所提供的凭据查看此目录或页面（由于访问控制列表，访问被拒绝）。**
 
@@ -132,7 +132,7 @@ ms.lasthandoff: 03/28/2018
     > [!IMPORTANT]
     > 仍然注意，不要在地址前后引入多余空格。
     > 
-    > 此外，如果 AD RMS 服务器使用 SSL/TLS 服务器证书，请检查字符串中许可 URL 值是否包括端口号 **443**。 例如：https:// rms.treyresearch.net:443/_wmcs/licensing。 单击群集名称并查看“**群集详细信息**”时，Active Directory Rights Management Services 中会显示此信息。 如果端口号 443 包含在此 URL 中，修改脚本时请将该值包括在内。 例如 https://rms.treyresearch.net:**443**。 
+    > 此外，如果 AD RMS 服务器使用 SSL/TLS 服务器证书，请检查字符串中许可 URL 值是否包括端口号 **443**。 例如：https://rms.treyresearch.net:443/_wmcs/licensing。 单击群集名称并查看“**群集详细信息**”时，Active Directory Rights Management Services 中会显示此信息。 如果端口号 443 包含在此 URL 中，修改脚本时请将该值包括在内。 例如 https://rms.treyresearch.net:**443**。 
     
     如果需要针对 &lt;YourTenantURL&gt; 检索 Azure Rights Management 服务 URL ，请重新参考[确定 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
 

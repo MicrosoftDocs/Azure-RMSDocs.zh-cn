@@ -4,7 +4,7 @@ description: 安装适用于 Azure 信息保护中的 Azure Rights Management �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d061a7e65bce1e5072e4e06fd3ed1ef2132810c8
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e69714fdb983d7235c7fca940bebc37a14892397
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="installing-the-aadrm-powershell-module"></a>安装 AADRM PowerShell 模块
 
@@ -29,20 +29,21 @@ ms.lasthandoff: 03/28/2018
 ## <a name="prerequisites"></a>必备条件
 此表列出了安装和使用适用于 Azure 信息保护中的 Azure Rights Management 服务的 AADRM PowerShell 模块的先决条件。
 
-|要求|详细信息|
+|要求|更多信息|
 |---------------|--------------------|
 |Windows PowerShell 的最低版本：3.0|你可在 PowerShell 会话中键入 `$PSVersionTable`，以确认正在运行的 Windows PowerShell 的版本。 <br /><br /> 如果需要安装更高版本的 Windows PowerShell，请参阅[升级现有的 Windows PowerShell](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell)。|
 |Microsoft .NET Framework 的最低版本：4.5<br /><br />请注意：较高版本的操作系统都附带此版本的 Microsoft .NET Framework，因此只有在你的客户端操作系统低于 Windows 8.0 或服务器操作系统低于 Windows Server 2012 的情况下，才需要手动安装它。|如果尚未安装 Microsoft .NET Framework 的最低版本，则可下载 [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)。<br /><br />此最低版本的 Microsoft .NET Framework 是 AADRM 模块使用的某些类所必需的。|
 
+从 AADRM 模块的 2.5.0.0 版本开始，不再需要 Microsoft Online Services 登录助手了。
+
 > [!NOTE]
-> 从 AADRM 模块的 2.5.0.0 版本开始，不再需要 Microsoft Online Services 登录助手了。
 > 
-> 如果安装了 AADRM 模块的早期版本，请在安装最新版本之前使用“程序和功能”卸载 Windows Azure AD Rights Management 管理。
+> 如果你安装有带 Azure Rights Management 管理工具的 AADRM 模块版本，请在从 PowerShell 库中安装最新版本的 AADRM 模块之前使用“程序和功能”卸载“Windows Azure AD Rights Management 管理”。
 
 
 ## <a name="how-to-install-the-aadrm-module"></a>如何安装 AADRM 模块
 
-尽管 AADRM 模块将移至 [PowerShell 库](/powershell/gallery/readme)，但在有限的一段时间内也会在 Microsoft 下载中心中提供。 
+AADRM 模块已移至 [PowerShell 库](/powershell/gallery/readme)，且不能再从 Microsoft 下载中心获取。 
 
 ### <a name="to-install-the-aadrm-module-from-the-powershell-gallery"></a>从 PowerShell 库安装 AADRM 模块
 
@@ -50,18 +51,16 @@ ms.lasthandoff: 03/28/2018
 
 若要在 PowerShell 库上查看有关 AADRM 模块的详细信息，请访问 [AADRM 页面](https://www.powershellgallery.com/packages/AADRM)。
 
-若要安装 AADRM 模块，请启动 PowerShell 会话并键入：
+要安装 AADRM 模块，请使用“以管理员身份运行”选项启动 Windows PowerShell 会话，然后键入：
 
     Install-Module -Name AADRM
 
+如果从不受信任的存储库安装，将收到警告，可以按 Y 键确认。 或者，按 N 键并使用命令 `Set-PSRepository -Name PSGallery -InstallationPolicy Trusted` 将 PowerShell 库配置为受信任的存储库，然后重新运行命令以安装 AADRM 模块。  
 
-### <a name="to-install-the-aadrm-module-from-the-microsoft-download-center"></a>从 Microsoft 下载中心安装 AADRM 模块
+如果已从库安装了 AADRM 模块的先前版本，请键入以下内容将其更新至最新版本：
 
-1. 转到 Microsoft 下载中心，并找到 [Azure Rights Management 管理工具](https://go.microsoft.com/fwlink/?LinkId=257721)，其中包含 Windows PowerShell 的 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 管理模块。
+    Update-Module -Name AADRM
 
-2. 下载并保存 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 安装程序文件 WindowsAzureADRightsManagementAdministration_x64。 然后，双击此文件，以启动 Azure AD Rights Management 管理工具安装程序向导。
-
-3.  完成此向导，这将安装 AADRM PowerShell 模块。
 
 ## <a name="next-steps"></a>后续步骤
 在 Windows PowerShell 会话中，确认已安装模块的版本。 如果从较旧版本进行升级，则此检查非常重要：

@@ -4,7 +4,7 @@ description: 管理员资源，其中包括有关新版本、支持选项以及�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 04/23/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 72d1c9872acd603f545f796550d44415dd996ab4
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 9eafa28bb6a259c7f845f54268a30c8cdc6fc988
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/28/2018
 
 |要执行的操作…|...执行此操作：|
 |----------------|---------------|
-|请参阅最常使用的文档|阅读前 5 页：<br /><br /> - [适用于 iOS 和 Android 的 Azure 信息保护应用入门](../rms-client/mobile-app-get-started.md)<br /> - [激活 Azure 权限管理](../deploy-use/activate-service.md)<br />- [Azure 信息保护的要求](requirements.md) <br />- [部署 Azure 信息保护扫描程序](../deploy-use/deploy-aip-scanner.md)<br />- [如何从 Office 365 管理中心激活 Azure 权限管理](../deploy-use/activate-office365.md)|
+|请参阅最常使用的文档|阅读前 5 页：<br /><br /> - [为 Azure Rights Management 配置使用权限](../deploy-use/configure-usage-rights.md)<br /> - [Azure 信息保护的常见问题](../get-started/faqs.md)<br />- [Azure 信息保护的要求](requirements.md) <br />- [部署 Azure 信息保护扫描程序](../deploy-use/deploy-aip-scanner.md)<br />- [默认 Azure 信息保护策略](../deploy-use/configure-policy-default.md)|
 |与产品团队和同行沟通|访问 Azure 信息保护的 [Yammer 网站](https://www.yammer.com/AskIPTeam)。|
 |请求新功能或更改功能|访问 Azure 信息保护的 [UserVoice](https://msip.uservoice.com) 网站。|
 |接收来自产品组的推文|在 Twitter 上关注 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)。|

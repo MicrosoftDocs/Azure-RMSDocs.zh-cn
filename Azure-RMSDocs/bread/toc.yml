@@ -1,0 +1,67 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: 企业移动性 + 安全性
+      tocHref: /enterprise-mobility-security/
+      topicHref: /enterprise-mobility-security
+      items:
+        - name: Azure Information Protection
+          tocHref: /azure/information-protection/
+          topicHref: /azure/information-protection
+          items:
+            - name: 了解和浏览
+              tocHref: /azure/information-protection/understand-explore/
+              topicHref: /azure/information-protection/understand-explore/what-is-azure-rights-management
+            - name: 开始使用
+              tocHref: /azure/information-protection/get-started/
+              topicHref: /azure/information-protection/get-started/requirements-for-azure-rights-management
+            - name: 规划和设计
+              tocHref: /azure/information-protection/plan-design/
+              topicHref: /azure/information-protection/plan-design/deployment-roadmap
+            - name: 部署和使用该服务
+              tocHref: /azure/information-protection/deploy-use/
+              topicHref: /azure/information-protection/deploy-use/activate-service
+            - name: 部署和使用该客户端
+              tocHref: /azure/information-protection/rms-client/
+              topicHref: /azure/information-protection/rms-client/use-client
+            - name: 开发和自定义应用
+              tocHref: /azure/information-protection/develop/
+              topicHref: /azure/information-protection/develop/developers-guide
+              items:
+                - name: SDK 4.2
+                  tocHref: /azure/information-protection/sdk/4.2/api/
+                  topicHref: /azure/information-protection/develop/api-reference-4-2
+                  items:
+                    - name: Android
+                      tocHref: /azure/information-protection/sdk/4.2/api/android/
+                      topicHref: /azure/information-protection/develop/android-namespaces
+                    - name: iOS
+                      tocHref: /azure/information-protection/sdk/4.2/api/iOS/
+                      topicHref: /azure/information-protection/sdk/4.2/api/iOS/iOS
+                    - name: WinRT
+                      tocHref: /azure/information-protection/sdk/4.2/api/winrt/
+                      topicHref: /azure/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement
+                - name: SDK 2.1
+                  tocHref: /azure/information-protection/sdk/2.1/api/
+                  topicHref: /azure/information-protection/develop/api-reference-2-1
+                  items:
+                    - name: Win 开头的所有虚拟机
+                      tocHref: /azure/information-protection/sdk/2.1/api/win/
+                      topicHref: /azure/information-protection/develop/api-reference-2-1
+                      items:
+                        - name: 常量
+                          tocHref: /azure/information-protection/sdk/2.1/api/win/constants/
+                          topicHref: /azure/information-protection/sdk/2.1/api/win/constants
+                        - name: 数据类型
+                          tocHref: /azure/information-protection/sdk/2.1/api/win/data%20types/
+                          topicHref: /azure/information-protection/sdk/2.1/api/win/data%20types
+                        - name: 函数
+                          tocHref: /azure/information-protection/sdk/2.1/api/win/functions/
+                          topicHref: /azure/information-protection/sdk/2.1/api/win/functions
+                        - name: 结构
+                          tocHref: /azure/information-protection/sdk/2.1/api/win/structures/
+                          topicHref: /azure/information-protection/sdk/2.1/api/win/structures
+    - name: Microsoft 信息保护 SDK
+      tocHref: /azure/information-protection/develop/mip/
+      topicHref: /azure/information-protection/develop/mip

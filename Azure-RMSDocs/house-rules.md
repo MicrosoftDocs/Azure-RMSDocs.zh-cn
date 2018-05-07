@@ -4,7 +4,7 @@ description: 用于 Azure 信息保护文档的 Livefyre 评论和边栏的范�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b337324d31fa2e12c6cac2d93545498e4f778f4b
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 647e68050ebfd5cdb74b495a7823e7eb3a6f9307
+ms.sourcegitcommit: 2eb5245b6afb291eae5ba87034e1698f096139dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>有关 Azure 信息保护文档的评论的内部规则
 
@@ -29,7 +29,9 @@ ms.lasthandoff: 03/28/2018
  
 请勿对以下内容使用 Livefyre 评论和旁注：
  
-- **组织的订阅问题**。 例如，现有的订阅是否支持要使用的功能，以及是否已查看 [Azure 信息保护的订阅要求](./get-started/requirements.md#subscription-for-azure-information-protection)。 在这种情况下，请改为联系 Microsoft 客户经理或 [Microsoft 支持部门](./get-started/information-support.md#to-contact-microsoft-support)。
+- **组织的订阅问题**。 例如，现有的订阅是否支持要使用的功能，或者有关于用户是否需要特定许可证的问题，以及是否已查看 [Azure 信息保护的订阅要求](./get-started/requirements.md#subscription-for-azure-information-protection)。 在这种情况下，请改为联系 Microsoft 客户经理或 [Microsoft 支持部门](./get-started/information-support.md#to-contact-microsoft-support)。
+    
+    注意：我们当前正在请求有关订阅和 Azure 信息保护授权信息的反馈。 可以使用以下 Yammer 帖子将反馈发送给相应团队：https://www.yammer.com/askipteam/#/threads/show?threadId=1048644961 
 
 - **技术支持**。 例如，某一项功能无法工作，你查看了相关要求并按照文档说明进行了操作。 也已检查使用的是支持的 Azure 信息保护客户端[版本](./rms-client/client-version-release-history.md#servicing-information-and-timelines)。 在这种情况下，请改为联系 [Microsoft 支持部门](./get-started/information-support.md#to-contact-microsoft-support)或使用标准支持渠道。 或者，在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上参与社区互动。
 

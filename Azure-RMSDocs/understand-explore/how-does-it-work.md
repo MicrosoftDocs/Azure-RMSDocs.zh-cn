@@ -4,7 +4,7 @@ description: 详细解说 Azure RMS 的工作原理、它使用的加密控件�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2018
+ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a261e356e167687190cc71eed4b2da715ab45697
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 321b18946c934878a422bd28a115c06d443b8d18
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
@@ -96,7 +96,9 @@ ms.lasthandoff: 03/28/2018
 
 **步骤 2 中发生的情况**：对用户进行身份验证后，连接将自动重定向到组织的 Azure 信息保护租户，该租户将颁发证书，让用户在 Azure Rights Management 服务上进行身份验证，以便使用受保护内容并脱机保护内容。
 
-用户证书的副本存储在 Azure 中，因此，如果用户移到另一台设备，将使用相同的密钥创建证书。
+其中一个证书是通常缩写为 RAC 的权限帐户证书。 此证书对 Azure Active Directory 用户进行身份验证，有效期为 31 天。 如果用户帐户仍然在 Azure Active Directory 中并且启用了该帐户，RMS 客户端将自动续订证书。 该证书不可由管理员进行配置。 
+
+证书副本存储在 Azure 中，因此，如果用户转移到另一台设备，将使用相同的密钥创建证书。
 
 ### <a name="content-protection"></a>内容保护
 当用户保护文档时，RMS 客户端将对未受保护的文档执行以下操作：

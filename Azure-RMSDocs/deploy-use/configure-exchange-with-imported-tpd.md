@@ -4,7 +4,7 @@ description: 当 Office 365 租户不支持 Office 365 邮件加密中的新功�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,30 +12,34 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 022eb960ef58e69c0a4c2d8a76962ed792a9ed38
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e452f5ac4e3297106a54a2034d64f57d8f6d5302
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="exchange-online-irm-configuration-when-you-have-imported-a-trusted-publishing-domain"></a>已导入受信任的发布域时的 Exchange Online IRM 配置
+# <a name="exchange-online-irm-configuration-to-import-a-trusted-publishing-domain"></a>用于导入受信任的发布域的 Exchange Online IRM 配置
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
-仅在先前已通过导入受信任的发布域 (TPD) 为 IRM 配置了 Exchange Online 且需要解密先前已加密的电子邮件时才使用这些说明。
+只有当租户无法使用 Office 365 邮件加密的新功能时才使用这些说明。 若要确认，请运行 Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) 命令，并检查是否有“AzureRMSLicensingEnabled”参数。 如果看到此参数，则租户可以使用 Office 365 邮件加密的新功能：
 
-如果上述任何条件皆不适用，请勿使用这些说明，应改为使用 [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)（设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能）中的说明。
+- 如果“AzureRMSLicensingEnabled”设置为“True”，则租户已在使用 Office 365 邮件加密的新功能，不应使用下节中的说明。
 
-## <a name="exchange-online-irm-configuration-if-you-have-an-imported-tpd"></a>具有已导入的 TPD 时的 Exchange Online IRM 配置
+- 如果“AzureRMSLicensingEnabled”设置“False”，则租户支持 Office 365 邮件加密的新功能，但尚未配置进行此操作。 若要为租户配置这些新功能，请参阅[设置构建在 Azure 信息保护之上的新 Office 365 邮件加密功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)。 
 
-若要配置 Exchange Online 以支持 Azure Rights Management 服务，你必须为 Exchange Online 配置信息权限管理 (IRM) 服务。 为此，你可以使用 Windows PowerShell（无需安装单独的模块）并运行[适用于 Exchange Online 的 PowerShell 命令](https://technet.microsoft.com/library/jj200677.aspx)。
+只有当租户无法支持 Office 365 邮件加密的新功能时才使用以下说明。
+
+## <a name="exchange-online-irm-configuration"></a>Exchange Online IRM 配置
+
+若要配置 Exchange Online，可以使用 Windows PowerShell（无需安装单独的模块）并运行[适用于 Exchange Online 的 PowerShell 命令](https://technet.microsoft.com/library/jj200677.aspx)。
 
 > [!NOTE]
-> 在 Microsoft 迁移你的 Office 365 租户之前，如果你为 Azure 信息保护使用客户管理的租户密钥 (BYOK)，而不是默认配置（即 Microsoft 管理的租户密钥），则不能将 Exchange Online 配置为支持 Azure Rights Management 服务。
+> 在 Microsoft 迁移你的 Office 365 租户以支持新功能之前，如果你为 Azure 信息保护使用客户管理的租户密钥 (BYOK)，而不是默认配置（即 Microsoft 管理的租户密钥），则不能将 Exchange Online 配置为支持 Azure Rights Management 服务。
 >
 > 如果你尝试在 Azure Rights Management 服务使用 BYOK 时配置 Exchange Online，则导入密钥命令（下面过程中的步骤 5）将失败并显示错误消息 **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**。
 
-以下步骤提供了一组典型的命令，你可以针对此方案运行这些命令，使 Exchange Online 能够使用 Azure Rights Management 服务：
+以下步骤提供了一组典型的命令，你可以运行这些命令以启用 Exchange Online IRM：
 
 1.  如果这是你第一次在计算机上使用 Windows PowerShell for Exchange Online，必须配置 Windows PowerShell 以运行签名的脚本。 使用“以管理员身份运行”选项启动 Windows PowerShell 会话，然后键入  ：
 

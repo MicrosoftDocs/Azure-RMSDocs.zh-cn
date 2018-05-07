@@ -4,21 +4,24 @@ description: 在 Azure 信息保护策略中配置适用于所有用户、所有
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 0ba75a1898d8618ebe38bcf2680e8a9623c79265
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: f4b79f66bc3f747285b2811327ea158bb83af03d
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+
+>[!NOTE]
+> 本文反映了 Azure 门户的最新更新，它允许你独立于全局策略或限定范围的策略来创建标签。 还将删除发布策略的选项。 如果租户尚未更新这些更改，例如，你仍看到 Azure 信息保护的“发布”选项，而没有看到“分类”菜单选项，请等待几天，然后再返回查看这些说明。
 
 除了信息保护栏标题和工具提示，Azure 信息保护策略中还有一些可以在标签中单独配置的设置：
 
@@ -32,11 +35,11 @@ ms.lasthandoff: 03/28/2018
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
-2. 如果要配置的设置将应用于所有用户，请选择“Azure 信息保护 - 全局策略”边栏选项卡。
+2. 从“分类” > “策略”菜单选项：在“Azure 信息保护 - 策略”边栏选项卡上，如果要配置的设置将应用于所有用户，请选择“全局”。
     
-    如果要配置的设置位于[作用域内策略](configure-policy-scope.md)中，仅应用于所选用户，请从“策略”菜单选项中选择“作用域内策略”。 然后从“Azure 信息保护 - 作用域内策略”边栏选项卡选择作用域内策略。
+    如果要配置的设置位于[作用域内策略](configure-policy-scope.md)中，为了使其仅应用于所选用户，请改为选择你的作用域内策略。
 
-3. 从“Azure 信息保护 - 全局策略”边栏选项卡或“策略: \<名称>”边栏选项卡中，配置以下设置：
+3. 在“策略”边栏选项卡上，配置以下设置：
     
     - **选择默认标签**：当设置此选项时，选择标签以分配给没有标签的文档和电子邮件。 如果具有子标签，不能将标签设置为默认标签。 
     
@@ -56,9 +59,6 @@ ms.lasthandoff: 03/28/2018
     
     - **在 Office 应用中显示信息保护栏**：关闭此设置后，用户无法在 Word、Excel、PowerPoint 和 Outlook 中从信息保护栏选择标签。 在此情况下，用户必须通过功能区上的“保护”按钮选择标签。 打开此设置后，用户可以通过信息保护栏或“保护”按钮选择标签。
         
-        > [!IMPORTANT]
-        > 此设置在预览版中，且需要 Azure 信息保护客户端的当前预览版本。
-        
         打开此设置后，可以将其与高级客户端设置配合使用，因此如果用户选择不显示该栏，可以[永久隐藏 Azure 信息保护栏](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)。 从“保护”按钮清除“显示信息保护栏”选项，即可实现此操作。
     
     - **向 Outlook 功能区添加“不转发”按钮**：打开此设置后，除了从 Outlook 菜单中选择“不转发”按钮之外，用户也可以从 Outlook 功能区上的“保护”组中选择此按钮。 若要帮助确保用户对其电子邮件进行分类和保护，可以首选不添加此标签，并改为[配置用于保护的标签](configure-policy-protection.md)和 Outlook 的用户定义权限。 此保护设置的功能与选择“不转发”按钮相同，但当此功能附带标签时，意味着对电子邮件进行了分类和保护。
@@ -66,9 +66,6 @@ ms.lasthandoff: 03/28/2018
         也可以使用高级客户端设置将此策略设置配置为[客户端自定义](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)。
     
     - **使用户可以使用自定义权限选项**：打开此设置后，用户可以设置自己的保护设置并替代标签配置所包括的任何保护设置。 关闭此设置后，用户无法选择自定义权限选项。
-        
-        > [!IMPORTANT]
-        > 如果具有为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置的标签，除非使用当前预览版本的客户端，否则请勿使用“关闭”设置。 如果使用此选项，应用标签时，系统不会提示用户配置自定义权限。 结果是：标记文档，但并未按预期保护文档。
         
         请注意，此策略设置对用户可以通过 Office 菜单选项配置的自定义权限没有任何影响。 但是，也可以使用高级客户端设置将其配置为[客户端自定义](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)。
         
@@ -82,9 +79,9 @@ ms.lasthandoff: 03/28/2018
         
         例如，对于支持人员，你可能输入包含客户端安装和使用信息 (**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) 或发行版信息 (**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**) 的 Microsoft 文档页。 另外，可以发布自己的网页，提供供用户联系支持人员的信息，或提供指导用户如何使用已配置标签的视频。
 
-3. 单击“**保存**”以保存更改。
+3. 若要保存所做的更改并将它们提供给用户，请单击“保存”。
 
-4. 若要使所做的更改适用于用户，请在初始“Azure 信息保护”边栏选项卡，单击“发布”。
+单击“保存”时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
 
 ## <a name="next-steps"></a>后续步骤
 
