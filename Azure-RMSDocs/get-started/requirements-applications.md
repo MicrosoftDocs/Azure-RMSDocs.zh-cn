@@ -4,7 +4,7 @@ description: 确定使用 RMS API 本机支持 Azure 信息保护中的 Azure Ri
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/23/2018
+ms.date: 04/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b304f65d70361b3fdb4dbf93291f408be93d363f
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: d044ac76ea910f2874219bd20fe262d8bd5c4c59
+ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -78,6 +78,10 @@ ms.lasthandoff: 04/26/2018
 
 Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，在这些应用中，此功能通常称为信息权限管理 (IRM)。 
 
+另请参阅：[Office 应用程序服务说明](https://technet.microsoft.com/library/office-applications-service-description.aspx)
+
+#### <a name="windows-computers-for-information-rights-management-irm"></a>用于信息权限管理 (IRM) 的 Windows 计算机
+
 以下 Office 客户端套件支持使用 Azure RMS 保护 Windows 计算机上的文件和电子邮件：
 
 - Office 365 ProPlus：Office 2016 和 Office 2013
@@ -102,17 +106,19 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 - 不支持使用用户通过 Azure 信息保护客户端选择的自定义权限来替代模板保护。 在此方案中，必须首先删除原始保护才能应用自定义权限。
 
+#### <a name="mac-computers-for-information-rights-management-irm"></a>用于信息权限管理 (IRM) 的 Mac 计算机
+
 以下 Office 客户端套件支持使用 Azure RMS 保护 macOS 上的文件和电子邮件：
 
 - Office 365 专业增强版：Office 2016
 
 - Office Standard 2016 for Mac
 
-另请参阅：[Office 应用程序服务说明](https://technet.microsoft.com/library/office-applications-service-description.aspx)
+提示：要开始使用 Office for Mac 保护文档，以下常见问题可能有用：[如何配置 Mac 计算机以保护和跟踪文档？](faqs-rms.md#how-do-i-configure-a-mac-computer-to-protect-and-track-documents)
 
 ### <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>有关适用于 iOS 和 Android 的 Azure 信息保护应用的详细信息
 
-适用于 iOS 和 Android 的 Azure 信息保护应用将替换这些设备的 RMS 共享应用程序。 它提供相同的功能，此外，还支持受权限保护的电子邮件和 SharePoint Online 上受权限保护的 PDF 文件。
+适用于 iOS 和 Android 的 Azure 信息保护查看器应用将替换这些设备的 RMS 共享应用程序。 它提供相同的功能，此外，还支持受权限保护的电子邮件和 SharePoint Online 上受权限保护的 PDF 文件。
 
 如果 iOS 和 Android 设备是通过 Microsoft Intune 注册的，则可以使用策略托管的应用部署和管理此应用。 更多详细信息，请参阅 Intune 文档中的[在 Microsoft Intune 控制台中配置和部署移动应用程序管理策略](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)。 对于此 Intune 文档中的步骤 2，使用说明来发布策略托管的应用。
 
@@ -135,7 +141,9 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 ### <a name="more-information-about-the-rights-management-sharing-application"></a>有关 Rights Management 共享应用程序的详细信息
 
-此应用程序现由 Azure 信息保护客户端替代。 它仍然是 Mac 计算机和 Windows Phone 移动设备所必需的应用程序。
+此应用程序现由 Azure 信息保护客户端替代。 它仍然是使用 Windows Phone 移动设备查看受保护文件的必需应用程序。 
+
+对于 Mac 计算机，它提供了一个查看器，可查看受保护的 PDF 文件 (.ppdf)、受保护的文本图像和受常规保护的文件。 适用于 Mac 的 RMS 共享应用也可保护图像文件，但不能保护其他文件。 要保护 Office 文件，请使用 Office for Mac。 
 
 有关详细信息，请参阅下列资源：
 
@@ -145,7 +153,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 -   [适用于移动平台的 Microsoft Rights Management 共享应用程序的常见问题解答](https://technet.microsoft.com/dn451248)
 
-使用 [Microsoft Azure 信息保护页](http://go.microsoft.com/fwlink/?LinkId=303970)上的链接下载适用于 Mac 计算机和 Windows Phone 的应用。
+使用 [Microsoft Azure 信息保护页](http://go.microsoft.com/fwlink/?LinkId=303970)上的链接下载适用于 Mac 计算机和 Windows Phone 的查看器。
 
 
 ### <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>有关其他支持 Azure 信息保护的应用程序的详细信息

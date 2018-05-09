@@ -4,24 +4,21 @@ description: 在配置标签的条件时，可以自动将标签分配到文档�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 1019b7d7ea32b26a24aa2417a77345ff87e52e4b
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 053d8dfd51d8c79cdc733f4395226c12ab6e2102
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
-
->[!NOTE]
-> 本文反映了 Azure 门户的最新更新，它允许你独立于全局策略或作用域内策略来创建标签。 还将删除发布策略的选项。 如果租户尚未更新这些更改，例如，你仍看到 Azure 信息保护的“发布”选项，而没有看到“分类”菜单选项，请等待几天，然后再返回查看这些说明。
 
 在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。 
 
@@ -48,7 +45,7 @@ ms.lasthandoff: 04/23/2018
 
 - 建议的分类会在保存文档时应用到 Word、Excel 和 PowerPoint。 不能将建议的分类用于 Outlook。
     
-    对于之前已设置标签（无论是否是更高级别的分类标签）的文档，可使用建议的分类。 
+    对于之前已设置标签（更高级别的分类标签）的文档，无法使用建议的分类。 
 
 可以更改此行为，以便 Azure 信息保护客户端定期检查文档是否符合指定的条件规则。 此配置需要当前为预览效果的[高级客户端设置](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)。
 
