@@ -4,7 +4,7 @@ description: 查看你是否拥有可以开始对组织的文档和电子邮件�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7d9c58649eb06b614a25e28c909d34318ea80133
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 760fe51d8c864ff28f599dd3cf1f84ae72c03343
+ms.sourcegitcommit: 2b031166026b4b6dd87e0dbaec44a99204c8691c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
@@ -41,24 +41,6 @@ ms.lasthandoff: 03/28/2018
 ## <a name="how-users-and-groups-are-used-by-azure-information-protection"></a>Azure 信息保护如何使用用户和组
 
 Azure 信息保护使用用户和组的方式有三种：
-
-- 使用标签和分类时用于向用户分配标签。 仅管理员选择这些组：
-    
-    - 默认的 Azure 信息保护策略将自动分配给租户的 Azure AD 中的所有用户。 但是，你也可以使用作用域策略为指定用户或组分配其他标签。
-
-- 在使用 Azure 权限管理服务保护文档和电子邮件时，**用于分配使用权限和访问控制权限**。 管理员和用户均可选择这些用户和组：
-
-    - 使用权限可决定用户是否能够打开文档或电子邮件以及如何使用它们。 例如，用户是只能阅读，可以阅读并打印，还是可以阅读并编辑。
-
-    - 访问控制权限包括到期日期以及是否需要连接到 Internet 进行访问。
-
-- **用于配置 Azure 权限管理服务**以支持特定方案，因此只有管理员可以选择这些组。 示例包括配置下列各项：
-
-    - 超级用户，以便指定的服务或人员可以打开加密的内容（如果电子数据展示或数据恢复需要）。
-
-    - Azure 权限管理服务的委派管理。
-
-    - 支持分阶段部署的加入控制。
 
 配置 Azure 信息保护策略时，**用于将标签分配给用户**，以便将标签应用于文档和电子邮件。 只有管理员可以选择这些用户和组：
 
