@@ -4,7 +4,7 @@ description: 保护文档后，可跟踪用户如何使用它们。 如果用户
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 84f5f0ed8b98895b8c056ff03295afef379e6b74
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e4e35659ab964a636c6ca0c7066b1c809cc5958b
+ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>用户指南：使用 Azure 信息保护时跟踪和撤销文档
 
@@ -24,7 +24,9 @@ ms.lasthandoff: 03/28/2018
 
 使用 Azure 信息保护来保护你的文档后，可跟踪用户如何使用这些文档。 如果用户不应再阅读这些文档，还可撤销其对这些文档的访问权限（如有必要）。 若要执行此操作，请使用“文档跟踪站点”。 可以通过 Windows 计算机、Mac 计算机甚至平板电脑和手机访问此站点。
 
-访问该站点时，登录即可对文档进行跟踪。 如果你的组织有一个[支持文档跟踪和吊销的订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-features)，而你已被分配了一个该订阅的许可证，你就可以看到谁曾经尝试打开受保护的文件，以及这些用户是否已成功（即成功完成了身份验证）。 还会看到他们访问文档的每一次尝试，以及访问时所在的位置。 此外：
+访问该站点时，登录即可对文档进行跟踪。 如果你的组织有一个[支持文档跟踪和吊销的订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-features)，而你已被分配了一个该订阅的许可证，你就可以看到谁曾经尝试打开受保护的文件，以及这些用户是否已成功（即成功完成了身份验证）。 还会看到他们访问文档的每一次尝试，以及访问时所在的位置。 但是，在极少数情况下，报告的位置可能不准确。 例如，当用户使用 VPN 连接打开受保护的文档时，或当其计算机具有 IPv6 地址时。
+
+可在文档跟踪站点中执行的操作是：
 
 - 如果你需要停止共享文档： 
     

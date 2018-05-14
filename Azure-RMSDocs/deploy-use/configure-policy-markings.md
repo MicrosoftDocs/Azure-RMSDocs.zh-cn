@@ -4,17 +4,17 @@ description: 当文档或电子邮件中分配一个标签时，可以选择几�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 1fc9e3babd83368f1fa6389da3e2b66e8080d308
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 3a732f49a299b4d66af70da3d26df193eaca36ac
+ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -47,6 +47,8 @@ ms.lasthandoff: 05/03/2018
 - 在 Office 应用中，会在应用标签时应用来自标签的视觉标记。 打开标记的文档以及首次保存该文档时，也会应用视觉标记。  
 
 - 当使用文件资源管理器或 PowerShell 标记文档时，不会立即应用视觉标记，但在 Office 应用中打开文档以及首次保存文档时都会应用视觉标记。
+    
+    例外情况是当你在 Office 2016 中为保存在 SharePoint Online、OneDrive 或 OneDrive for Business 中的文件使用[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)时：当“自动保存”开启时，将不会应用视觉标记，除非配置[高级客户端设置](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)打开分类以在后台持续运行。 
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>配置标签的视觉标记
 

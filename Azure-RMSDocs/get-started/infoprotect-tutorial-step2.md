@@ -4,17 +4,17 @@ description: 快速试用 Azure 信息保护入门教程步骤 2 - 配置策略�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 3b9dbbc16fe26d7f111d37dbcd28d6477372a5d9
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: ffae0c9ef0e9ffd1fc9a4c25ef5c60e8da6de5ca
+ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>步骤 2：配置 Azure 信息保护策略
 
@@ -55,11 +55,13 @@ ms.lasthandoff: 05/03/2018
     
     可能无需更改此设置，因为默认设置取决于你何时获得订阅。 在教程的稍后部分，我们将使用自定义权限与在文件资源管理器中右键单击文件时指定的用户共享受保护的文档。
 
+4. 选择此“策略: 全局”边栏选项卡上的“保存”，如果系统提示确认你的操作，请选择“确定”。 关闭此边栏选项卡。
+
 ## <a name="creating-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>创建新标签，设置保护、视觉标记和分类提示条件
 
 现在，将为“机密”创建一个新的子标签。
 
-1. 右键单击“机密”标签，然后选择“添加子标签”。
+1. 从“分类” > “标签”菜单选项：右击“机密”标签，然后选择“添加子标签”。
     
     如果没有名为“机密”的标签，可以选择另一个标签，或者可以创建一个新标签，具体操作步骤仍与本教程相同，只存在细微差异。
 
@@ -125,9 +127,13 @@ ms.lasthandoff: 05/03/2018
 
 12. 在“输入内部管理的注释”框中，键入“仅用于测试”。
 
-13. 在此“子标签”边栏选项卡上单击“保存”。 然后在“策略: 全局”边栏选项卡上，再次单击“保存”。
-    
-    现在看到新的子标签，它配置了视觉标记和保护。 例如：
+13. 在此“子标签”边栏选项卡上单击“保存”。 如果系统提示你确认，请单击“确定”。 将创建和保存新标签，但尚未将其添加到策略。
+
+14. 从“分类” > “策略”菜单选项：再次选择“全局”，然后选择标签后的“添加或删除标签”链接。
+
+15. 从“策略: 添加或删除标签”边栏选项卡中，选择刚创建的标签（名为“财务”的子标签），然后单击“确定”。
+
+16. 在“策略: 全局”边栏选项卡上，现在可以在全局策略中看到针对视觉标记和保护配置的新子标签。 例如：
 
     ![Azure 信息保护快速入门教程步骤 3 - 已配置默认策略](../media/info-protect-policy-configuredv2.png)
     
@@ -135,6 +141,9 @@ ms.lasthandoff: 05/03/2018
     
     ![Azure 信息保护快速入门教程步骤 3 - 配置设置](../media/info-protect-settings-configuredv2.png)
     
+
+17. 单击此“策略: 全局”边栏选项卡上的“保存”。 如果系统提示你确认此操作，请单击“确定”。
+
 完成本教程后你可以关闭 Azure 门户，或将其保留为打开状态以尝试其他配置选项。
 
 现在你已经了解了默认策略并进行了一些更改，下一步是安装 Azure 信息保护客户端。

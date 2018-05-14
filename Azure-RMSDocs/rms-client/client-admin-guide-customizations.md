@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 80f0b29b05f3a63972f7bc45e14ee721cf289a86
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 0b71519002816f5bae272f002bfec123186a65a1
+ms.sourcegitcommit: 22072325721cfd26b6546ef625e8b38f5551d30b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -56,10 +56,21 @@ ms.lasthandoff: 05/03/2018
 
 首次在计算机上安装 Azure 信息保护客户端时，如果用户打开 Word、Excel、PowerPoint 或 Outlook，将显示“祝贺你!” 页，其中包含有关如何使用新的信息保护栏选择标签的简短说明。 可以通过编辑注册表来禁止显示此页。
 
-找到以下值名称并将值数据设置为 **0**：
+1. 如果以下注册表项不存在，请创建：
+    
+    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
 
-**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnableWelcomeExperience** 
+2. 如果名为 EnableWelcomeExperience 的 DWORD（32 位）值 (REG-DWORD) 不存在，请创建它并将数据值设置为 0：
 
+## <a name="suppress-the-whats-new-in-azure-information-protection-page"></a>取消显示“Azure 信息保护中的新增功能?” 页面
+
+在计算机上第一次安装或升级 Azure 信息保护客户端，并在 Word、Excel、PowerPoint 或 Outlook 中显示 Azure 信息保护栏时，将显示“Azure 信息保护中的新增功能?”页，以提示用户有关自定义权限和跟踪使用情况。 可以通过编辑注册表来禁止显示此页。
+
+1. 如果以下注册表项不存在，请创建：
+    
+    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
+
+2.  如果名为 WhatsNewVersion 的字符串值 (REG-SZ) 不存在，请创建它并将数据值设置为 1.4。
 
 ## <a name="sign-in-as-a-different-user"></a>以其他用户身份登录
 

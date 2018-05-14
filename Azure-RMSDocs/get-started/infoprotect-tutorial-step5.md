@@ -5,7 +5,7 @@ keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 05/09/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 718c15769e5719d5e8dde612cf66e4215f1e235d
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 7c6acb5a4b5c8f33193cbf5d8833201e0d68287e
+ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>步骤 5：了解如何在实际操作中共享受保护的文件和如何跟踪文档 
 
@@ -103,7 +103,7 @@ ms.lasthandoff: 03/28/2018
 
 3.  在“你的共享文档”页上，可看到共享的文档名称。 此时，该文档是唯一显示的文件，但当你共享更多的受保护文档时，此列表会扩大。
 
-    在此页上，你会看到你何时共享了该文档（何时发送了带受保护附件的电子邮件）、上次活动的日期，以及你向其发送电子邮件的收件人的名称。 单击文档名可获取更多详细信息。
+    在此页上，你会看到你何时共享了该文档（何时发送了带受保护附件的电子邮件）、其当前状态（活动、撤销或过期），以及你向其发送电子邮件的收件人的名称。 单击文档名可获取更多详细信息。
 
 4.  在新页（包含你所单击的文件的名称）上，你只会看到该文档的摘要详细信息，以及可供文档使用的其他选项的列表（**“列表”**、 **“时间线”**、 **“映射”**、 **“设置”**）。
 
@@ -113,7 +113,7 @@ ms.lasthandoff: 03/28/2018
 
 
 
-|如果你想了解更多信息|附加信息|
+|如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
 |有关保护之后可安全共享的文件的完整说明|[对文件或电子邮件进行分类和保护](../rms-client/client-classify-protect.md)|
 |关于供其他用户注册的免费帐户|[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)|

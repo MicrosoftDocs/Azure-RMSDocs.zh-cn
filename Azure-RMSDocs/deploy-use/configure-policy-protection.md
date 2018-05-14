@@ -4,17 +4,17 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: bcbc3e79da3c158ca3d6582e5dcd4882c327f7b6
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 8b1024a26e086cb8cbd4696dc37d66350968a0b4
+ms.sourcegitcommit: fbc83d699b9e4e9c8e0e7d36f574630af6a4e3d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -103,7 +103,7 @@ ms.lasthandoff: 05/03/2018
     
     选择“添加权限”，在“添加权限”边栏选项卡上，选择有权使用所选标签保护的内容的第一组用户和组：
     
-    - 选择“从列表中选择”以添加组织中的所有用户或浏览目录。
+    - 选择“从列表中选择”以添加组织中的所有用户，方法是通过选择“添加 \<组织名称 > -所有成员”。 此设置不包括来宾帐户。 或者，浏览目录。
         
         用户或组必须有电子邮件地址。 在生产环境中，他们几乎始终都有电子邮件地址，但在简单的测试环境中，可能需要为用户帐户或组添加电子邮件地址。
         
@@ -244,7 +244,7 @@ ms.lasthandoff: 05/03/2018
     
 2. 务必选中“设置权限”，然后选择“添加权限”。
 
-3. 要向组织中的用户授予权限：请在“添加权限”边栏选项卡上选择“添加 \<组织名称> - 所有成员”以选择租户中所有用户，或选择“浏览目录”以选择特定组。 若要向外部用户授予权限或者键入电子邮件地址，请选择“输入详细信息”，然后键入用户或 Azure AD 组的电子邮件地址或键入域名。
+3. 要向组织中的用户授予权限：请在“添加权限”边栏选项卡上选择“添加 \<组织名称> - 所有成员”以选择租户中所有用户。 此设置不包括来宾帐户。 或者，选择“浏览目录”以选择特定组。 若要向外部用户授予权限或者键入电子邮件地址，请选择“输入详细信息”，然后键入用户或 Azure AD 组的电子邮件地址或键入域名。
     
     重复此步骤，指定其他应具有相同权限的用户。
 
