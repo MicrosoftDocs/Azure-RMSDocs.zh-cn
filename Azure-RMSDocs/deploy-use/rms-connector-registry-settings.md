@@ -4,7 +4,7 @@ description: 有关使用 RMS 连接器在服务器上进行注册表设置的�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/01/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bc0cb2a7349bf19ee19a42bdb283cd86297748bc
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 9334a781378ffdbe76dd9fe9d78f5db5913766d1
+ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 连接器的注册表设置
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 
 只有当需要在运行 Exchange、SharePoint 或 Windows Server 的服务器上手动添加或检查注册表设置时，才使用以下部分的表格。 这些注册表设置将服务器配置为使用 [RMS 连接器](deploy-rms-connector.md)。 配置这些服务器的推荐方法是使用适用于 Microsoft RMS 连接器的服务器配置工具。
@@ -77,7 +77,7 @@ ms.lasthandoff: 03/28/2018
 值：https://\<YourTenantURL>
 
 
-**数据：**以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
 - http://<\ConnectorFQDN>
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 03/28/2018
 值：https://<\YourTenantURL>
 
 
-**数据：**以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
 - http://<\ConnectorFQDN>
 
@@ -127,7 +127,7 @@ ms.lasthandoff: 03/28/2018
 
 值：https://<\YourTenantURL>
 
-**数据：**以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
 - http://<\ConnectorFQDN>
 
@@ -141,7 +141,7 @@ ms.lasthandoff: 03/28/2018
 
 值：https://<\YourTenantURL>
 
-**数据：**以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
 - http://<\ConnectorFQDN>
 
@@ -157,7 +157,7 @@ ms.lasthandoff: 03/28/2018
 值：https://<\YourTenantURL>/_wmcs/licensing
 
 
-**数据：**以下前缀之一，具体取决于 SharePoint 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据：** 以下前缀之一，具体取决于 SharePoint 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
 - http://<\ConnectorFQDN>/_wmcs/licensing
 
@@ -171,7 +171,7 @@ ms.lasthandoff: 03/28/2018
 
 **值：** 默认
 
-**数据：**以下前缀之一，具体取决于 SharePoint 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据：** 以下前缀之一，具体取决于 SharePoint 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
 - http://<\ConnectorFQDN>/_wmcs/certification
 
@@ -186,7 +186,7 @@ ms.lasthandoff: 03/28/2018
 **值：** 默认
 
 
-**数据：**以下前缀之一，具体取决于 SharePoint 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据：** 以下前缀之一，具体取决于 SharePoint 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
 - http://<\ConnectorFQDN>/_wmcs/licensing
 
