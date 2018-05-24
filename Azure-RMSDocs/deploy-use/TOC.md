@@ -41,6 +41,7 @@
 ## [租户密钥的操作](operations-tenant-key.md)
 ### [由 Microsoft 管理](operations-microsoft-managed-tenant-key.md)
 ### [由客户管理](operations-customer-managed-tenant-key.md)
+## [管理用于 Azure 信息保护的个人数据](manage-personal-data.md)
 ## [解除授权并停用](decommission-deactivate.md)
 ## [使用 PowerShell 进行管理](administer-powershell.md)
 ### [安装 AADRM PowerShell 模块](install-powershell.md)
