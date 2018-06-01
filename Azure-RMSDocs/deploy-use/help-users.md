@@ -4,7 +4,7 @@ description: 此信息可帮助你在部署和配置 Azure 信息保护中的 Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 468550dd2389407b20d66adb814a7487988180bd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 0243961b4dfdf3bb8c8b04059793098b26880615
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444259"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 03/28/2018
     
     - 登录帮助
         
-        当 Azure Rights Management 服务需要对用户进行身份验证且无法使用缓存的凭据时，可能提示用户提供凭据。 所需的凭据是用户的工作或学校帐户和密码，与 Office 365 租户或 Azure Active Directory 租户相关联。 所需的凭据不是 Microsoft 帐户（前身为 Microsoft Live ID）或用户的个人电子邮件帐户，因为 Azure Rights Management 服务暂不支持这些帐户。 
+        当 Azure Rights Management 服务需要对用户进行身份验证且无法使用缓存的凭据时，可能提示用户提供凭据。 所需的凭据通常是用户的工作或学校帐户和密码，与 Office 365 租户或 Azure Active Directory 租户相关联。 尽管 Azure Rights Management 服务可以对 Azure AD 帐户进行身份验证，但某些应用程序也可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
         
         为用户和你的技术支持提供说明，阐明在具有使用 Azure 权限管理服务的应用程序时，如果提示用户提供凭据，应该使用何种帐户。
         
@@ -57,7 +58,7 @@ ms.lasthandoff: 03/28/2018
         
         确保用户获得了有关他们所用应用程序的相应说明，并使用 Azure 权限管理服务支持的应用程序和设备。 有关支持的应用程序和设备的详细信息，请参阅 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)。
         
-        身份验证和授权依赖 Azure Active Directory 中的帐户和组。 若要确认能否授权特定用户或组使用受保护内容，请使用[准备用户和组以便使用 Azure 信息保护](../plan-design/prepare.md)中的验证检查。
+        若要确认 Azure Active Directory 能否授权特定用户或组保护或使用受保护内容，请使用[准备用户和组以便使用 Azure 信息保护](../plan-design/prepare.md)中的验证检查。
         
         如果用户报告称可以打开受保护内容，但没有相应权限，问题可能在于用户不在为 Rights Management 模板配置的正确组中。 或者，问题可能在于[需要重新为用户或组配置模板](configure-policy-templates.md)。 
         

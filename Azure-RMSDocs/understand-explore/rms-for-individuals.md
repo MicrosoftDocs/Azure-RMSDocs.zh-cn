@@ -4,7 +4,7 @@ description: 介绍了 RMS 个人版，这是免费的自助式订阅，适用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/19/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: df2d97fd8abdf7c2f210d857287d3590838222db
-ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
+ms.openlocfilehash: 358ef172192b3bed65dd8f1853705c8f189cbf97
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444310"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>个人 RMS 和 Azure 信息保护
 
@@ -28,7 +29,9 @@ RMS 个人版采用 Azure Active Directory 自助式注册。 如果用户已使
 
 
 > [!NOTE]
-> 此免费订阅是帮助确保组织外部的授权人员可始终阅读受组织保护的文件的一种方式。 另一种方式是使用[具有新功能的 Office 365 邮件加密](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)以电子邮件的形式发送文档。 此电子邮件解决方案适用于所有设备上的任何电子邮件地址，也是通过电子邮件方式与组织外部人员安全共享信息和查看 Office 文档的推荐方法。 
+> 此免费订阅是帮助确保组织外部的授权人员可始终阅读受组织保护的文件的一种方式。 另一种方式是使用[具有新功能的 Office 365 邮件加密](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)以电子邮件的形式发送文档。 此电子邮件解决方案适用于所有设备上的所有电子邮件地址，并且是与组织外部人员安全地共享信息和在浏览器中查看 Office 文档的建议方式。
+> 
+> 另一选项是使用 Microsoft 帐户。 但是，并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
 
 若要注册此免费帐户，用户可以转到 [Microsoft Azure 信息保护页](https://aka.ms/rms-signup)，并提供其工作电子邮件地址。 他们将收到 Microsoft 的回应电子邮件，然后通过输入详细信息以创建帐户，从而完成注册过程。 
 

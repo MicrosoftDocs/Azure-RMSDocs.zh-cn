@@ -4,7 +4,7 @@ description: 了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/02/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f5006ef3d0401b6a7f018be1f65979c079cf04fc
-ms.sourcegitcommit: fdcfc006108f61fcd380ff6f3c3208c78ecf4056
+ms.openlocfilehash: 697fa4674699fd3b24f7f7353ff9f9d476040bd8
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34423351"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -168,7 +169,7 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 - 在 Azure 门户中配置标签或模板时，使用许可证有效期从“允许脱机访问设置”取得其值。 
     
-    有关在 Azure 门户中配置此设置的详细信息和指南，请参阅[如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)的步骤 9 中的表。
+    有关在 Azure 门户中配置此设置的详细信息和指导，请参阅如何为 Rights Management 保护配置标签的说明中的[保护设置相关信息](../deploy-use/configure-policy-protection.md#information-about-the-protection-settings)表。
 
 - 使用 PowerShell 配置模板时，使用许可证有效期从 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) 和 [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) cmdlet 中的 LicenseValidityDuration 参数中取得其值。
     

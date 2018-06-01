@@ -4,7 +4,7 @@ description: 说明如何对文档和电子邮件进行分类和保护。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9462795fb46c6eef857d3fd42bfe873ac869e51c
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: 223dd5681b6b5c6911a90cf6540b2ab4c9d7f54e
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444125"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>用户指南：使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
@@ -33,11 +34,14 @@ ms.lasthandoff: 04/18/2018
 
 ### <a name="safely-share-a-file-with-people-outside-your-organization"></a>与组织外部人员安全共享文件
 
-受保护文件可安全地与他人共享。 例如，将文件附加到电子邮件。
+受保护文件可安全地与他人共享。 例如，你将受保护的文档附加到一封电子邮件。
 
-如果你定期与组织外部人员共享文件，管理员可能为你配置了设置保护的标签，以便这些人员可以读取它。 此外，也可以在共享前使用 [Office 应用程序来设置自定义权限](#set-custom-permissions-for-a-document)，或使用[文件资源管理器设置文件的自定义权限](#using-file-explorer-to-classify-and-protect-files)。 如果设置你自己的自定义权限，并且文件已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。  
+在与组织外部人员共享文件之前，请咨询你的支持人员或管理员如何为外部用户保护文件。
 
-如果使用自定义权限保护文件，请使用标准共享机制共享文件。 如果你要与之共享的人员是第一次接收受保护文件，他们可能需要阅读说明才能查看。 对于这些人，你可以复制并粘贴以下消息：**我已使用 Microsoft Azure 信息保护对此文件提供保护。若是首次使用，请参阅这些[说明](https://aka.ms/rms-signup)。**
+例如，如果你的组织定期与另一组织中的人员进行通信，则管理员可能已经配置了设置保护以便这些人员可以阅读和使用受保护文档的标签。 然后，选择这些标签对要共享的文档进行分类和保护。
+
+或者，如果外部用户具有为其创建的 [企业到企业 (B2B) 帐户](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)，你可以在共享文档之前，使用 [Office 应用设置自定义权限](#set-custom-permissions-for-a-document)或使用[文件资源管理器设置自定义权限](#using-file-explorer-to-classify-and-protect-files) 如果设置你自己的自定义权限，并且文档已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。
+
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>使用 Office 应用对文档和电子邮件进行分类和保护
 
@@ -95,7 +99,7 @@ ms.lasthandoff: 04/18/2018
     
     - **选择权限**：如果要保护文件，以便只有你可以访问，请选中“**仅限自己访问**”。 否则，请选中“希望对象拥有的访问级别”。
     
-    - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 请注意，暂不支持个人电子邮件地址。
+    - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 
         
         此外，还可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
     
@@ -152,7 +156,7 @@ ms.lasthandoff: 04/18/2018
 
     - **选择权限**：选择你希望用户在保护所选文件时具有的访问级别。
     
-    - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 请注意，暂不支持个人电子邮件地址。
+    - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 
     
     或者，可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
         

@@ -4,7 +4,7 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 359e374f23b9a3b8931d67c765949befa5b7c105
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: 17fa8d2269bce0d6ef01506bcbadafd01fc768b6
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444225"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -162,6 +163,14 @@ Azure 信息保护客户端支持 Office 365 支持的同种语言。 有关这�
 对于这些语言，Azure 信息保护客户端中的菜单选项、对话框和消息将以用户的语言显示。 由于有一个安装程序可检测语言，因此不需要进行额外配置即可安装不同语言的 Azure 信息保护客户端。 
 
 但是，在 Azure 信息保护策略中配置标签时，不会自动翻译指定的标签名称和说明。 从 2017 年 8 月 30 日起，当前的[默认政策](../deploy-use/configure-policy-default.md)包含对部分语言的支持。 若要以用户首选语言向其显示标签，必须提供你的翻译并将 Azure 信息保护策略配置为使用这些翻译。 有关详细信息，请参阅[如何在 Azure 信息保护中配置不同语言的标签](../deploy-use/configure-policy-languages.md)。 视觉标记未翻译，且不支持多种语言。
+
+## <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>升级和维护 Azure 信息保护客户端
+
+Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供新功能和修补程序。 公告会发布到团队的 [Yammer 网站](https://www.yammer.com/AskIPTeam)。
+
+如果你是使用可执行文件或 Windows 安装程序文件安装的客户端，则必须从 Microsoft 下载中心手动下载新版本，为客户端安装更新。 如果你是使用 Windows 更新安装的客户端，新版本会在发布几周后自动在目录中变为可供下载。 
+
+使用[版本发行历史记录和支持策略](../rms-client/client-version-release-history.md)了解 Azure 信息保护客户端的支持策略、目前支持的版本以及受支持版本的新增功能和变更之处。 
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>卸载 Azure 信息保护客户端
 

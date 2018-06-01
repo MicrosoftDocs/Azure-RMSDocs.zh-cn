@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 02e54d3d1f324aa6d67e9fb81c3f5f83e785fe81
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: 4ff64b5bb4f73533352aa5497a98263c86842800
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34423249"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -40,6 +41,40 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 > 小的修补程序不予列出，因此如果遇到 Azure 信息保护客户端相关问题，建议检查它是否已在最新 GA 版本中得到修复。 如果问题仍然存在，请检查当前预览版。
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
+
+## <a name="versions-later-than-12660"></a>高于 1.26.6.0 的版本
+
+如果客户端版本高于 1.26.6.0，则这是用于测试和评估的预览内部版本。 
+ 
+发布日期：2018/05/21 
+
+当前的预览版本为“1.27.48.0”，在客户端的最新正式版之后具有以下更改。  
+
+**新增功能**： 
+
+- 对于 Azure 信息保护扫描程序：
+    
+    - 你可以指定要列入扫描范围或者从扫描范围中排除的文件类型列表。 若要指定此列表，请使用 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)。 在指定了文件类型列表后，可以使用 [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType) 添加新的文件类型，使用 [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType) 从列表中删除文件类型。
+    
+    - 不通过应用默认标签来检查内容也可标记文件。 使用 [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository) cmdlet，并将“MatchPolicy” 参数设置为“关闭” 
+    
+    - 无需配置用于自动分类的标签，也可发现具有敏感信息类型的文件。 使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet，并将“DiscoverInformationTypes”参数设置为“全部”
+    
+    - 默认情况下，只有 Office 文档类型会受到保护。 在注册表中定义其他文件类型时它们可以受到保护。 有关说明，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。
+    
+    - 默认情况下，扫描程序现以低完整性级别运行以获得更高安全性，以防你使用具有特权的帐户运行扫描程序。 当运行扫描程序的服务帐户只在[扫描程序先决条件](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)中记录了权限时，低完整性级别不是必需的且不推荐使用，因为它会对性能产生负面影响。 你可以使用高级客户端设置禁用低完整性级别。 [详细信息](../rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
+    
+- 对于 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/Get-AIPFileStatus)，输出现在包括 Rights Management 所有者和 Rights Management 颁发者以及内容受保护日期。
+ 
+**其他更改**：
+
+- 对于 Azure 信息保护扫描程序： 
+    
+    - [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) 的“ScanMode” 参数被重命名为“Enforce”其值为“Off”和“On”。
+    
+    - 若要使用默认标签，不再需要将默认标签配置为策略设置。 相反，只需通过存储库配置指定此默认标签。 
+
+- 删除“祝贺你!” 欢迎页和“Azure 信息保护中的新增功能有哪些”页，首次使用时，Office 应用程序中会显示这些页面。
 
 ## <a name="version-12660"></a>版本 1.26.6.0
 

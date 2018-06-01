@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/11/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: de7829532139556b6407506d61bc89de936b3739
-ms.sourcegitcommit: 9e2719ab070fa2d1e3ac8f6f11e57640939a1dff
+ms.openlocfilehash: c0e1011da16c9e3e91595cd06375cb744aa8fe00
+ms.sourcegitcommit: 10f530fa1a43928581da4830a32f020c96736bc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34402262"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -54,6 +55,8 @@ ms.lasthandoff: 05/12/2018
 
 ## <a name="suppress-the-initial-congratulations-welcome-page"></a>禁止显示初始“祝贺你!” “欢迎使用”页
 
+预览客户端不再显示此“祝贺你!” 欢迎页。
+
 首次在计算机上安装 Azure 信息保护客户端时，如果用户打开 Word、Excel、PowerPoint 或 Outlook，将显示“祝贺你!” 页，其中包含有关如何使用新的信息保护栏选择标签的简短说明。 可以通过编辑注册表来禁止显示此页。
 
 1. 如果以下注册表项不存在，请创建：
@@ -64,13 +67,15 @@ ms.lasthandoff: 05/12/2018
 
 ## <a name="suppress-the-whats-new-in-azure-information-protection-page"></a>取消显示“Azure 信息保护中的新增功能?” 页面
 
+预览客户端不再显示此“Azure 信息保护中的新增功能有哪些?” 页上。
+
 在计算机上第一次安装或升级 Azure 信息保护客户端，并在 Word、Excel、PowerPoint 或 Outlook 中显示 Azure 信息保护栏时，将显示“Azure 信息保护中的新增功能?”页，以提示用户有关自定义权限和跟踪使用情况。 可以通过编辑注册表来禁止显示此页。
 
 1. 如果以下注册表项不存在，请创建：
     
     **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
 
-2.  如果名为 WhatsNewVersion 的字符串值 (REG-SZ) 不存在，请创建它并将数据值设置为 1.4。
+2. 如果名为 WhatsNewVersion 的字符串值 (REG-SZ) 不存在，请创建它并将数据值设置为 1.4。
 
 ## <a name="sign-in-as-a-different-user"></a>以其他用户身份登录
 
@@ -356,6 +361,25 @@ ms.lasthandoff: 05/12/2018
 要标记带有上述某个分类值的 Office 文档，请将“SyncPropertyName”设置为“分类”），将“SyncPropertyState”设置为“单向”。 
 
 随后，当用户打开和保存上述某个 Office 文档时，该文档将标记为“公共”、“常规”或“机密”（若在 Azure 信息保护策略中具备带这些名称的标签）。 如果没有带这些名称的标记，则不会标记文档。
+
+## <a name="disable-the-low-integrity-level-for-the-scanner"></a>禁用扫描程序的低完整性级别
+
+此配置选项目前处于预览状态，可能随时更改。 它还需要 Azure 信息保护客户端的当前预览版本。
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+
+默认情况下，Azure 信息保护扫描程序的预览版本以低完整性级别运行。 此设置可以提供更强大的安全隔离，但会牺牲性能。 如果你使用具有特权的帐户（例如本地管理员帐户）运行扫描程序，则低完整性级别是适合的，因为此设置有助于保护运行扫描程序的计算机。
+
+但是，当运行扫描程序的服务帐户只在[扫描程序先决条件](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)中记录了权限时，低完整性级别不是必需的且不推荐使用，因为它会对性能产生负面影响。 
+
+有关 Windows 完整性级别的详细信息，请参阅 [Windows 完整性机制是什么？](https://msdn.microsoft.com/library/bb625957.aspx)
+
+若要配置此高级设置，以便扫描程序以 Windows 自动分配的完整性级别运行（标准用户帐户以中等完整性级别运行），请输入以下字符串：
+
+- 键：**ProcessUsingLowIntegrity**
+
+- 值：False
+
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>与 Exchange 邮件分类集成以实现移动设备标记解决方案
 

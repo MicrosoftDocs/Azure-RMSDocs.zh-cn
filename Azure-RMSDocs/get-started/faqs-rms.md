@@ -4,7 +4,7 @@ description: 有关 Azure 信息保护中数据保护服务 Azure Rights Managem
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -13,11 +13,12 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b1968f277ca7c9237487d4d767b8a85eb15a9331
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: af2157b8163d9ad5adbb69e057330b3b03259fd0
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444174"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -106,11 +107,15 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 这些帐户的身份验证方法各不相同，具体取决于其他组织中的管理员如何配置 Azure Active Directory 帐户。 例如，他们可以使用为这些帐户、多重身份验证 (MFA)、联合身份验证创建的密码，或在 Active Directory 域服务中创建、然后同步到 Azure Active Directory 的密码。
 
-如果针对在 Azure AD 中没有帐户的用户保护含有 Office 文档附件的电子邮件，身份验证方法则会发生改变。 Azure Rights Management 服务会通过一些常用社交标识提供者进行身份验证，例如 Gmail。 如果用户的电子邮件提供商受支持，用户可登录到该服务，其电子邮件提供商负责对其进行身份验证。 如果用户的电子邮件提供商不受支持，或者作为首选项，用户可申请用于对他们进行身份验证的一次性密码，并在 Web 浏览器中显示含有受保护文档的电子邮件。
+其他身份验证方法：
+
+- 如果针对在 Azure AD 中没有帐户的用户保护含有 Office 文档附件的电子邮件，身份验证方法则会发生改变。 Azure Rights Management 服务会通过一些常用社交标识提供者进行身份验证，例如 Gmail。 如果用户的电子邮件提供商受支持，用户可登录到该服务，其电子邮件提供商负责对其进行身份验证。 如果用户的电子邮件提供商不受支持，或者作为首选项，用户可申请用于对他们进行身份验证的一次性密码，并在 Web 浏览器中显示含有受保护文档的电子邮件。
+
+- Azure 信息保护可以将 Microsoft 帐户用于支持的应用程序。 目前，并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>能否将外部用户（公司外部人员）添加到自定义模板？
 
-是的。 利用[保护设置](../deploy-use/configure-policy-protection.md)（可在 Azure 门户中配置），可为组织外的用户和组甚至其他组织中的所有用户添加权限。 除非模板专用于通过 [Office 365 邮件加密新功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)发送电子邮件，否则请勿添加来自社交标识（如 Gmail 和 Microsoft）的帐户或其他不在 Azure AD 中的帐户。
+是。 利用[保护设置](../deploy-use/configure-policy-protection.md)（可在 Azure 门户中配置），可为组织外的用户和组甚至其他组织中的所有用户添加权限。 你可能会发现引用分步示例，[使用 Azure 信息保护保护文档协作](secure-collaboration-documents.md)很有用。 
 
 注意，如果具有 Azure 信息保护标签，必须先将自定义模板转换为标签，然后再在 Azure 门户中配置这些保护设置。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](../deploy-use/configure-policy-templates.md)。
 
@@ -182,7 +187,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>在文档跟踪站点中测试吊销时，显式的消息提示人们仍可在 30 天内访问此文档—该时间段是否可配置？
 
-是的。 该消息反映了此特定文件的[使用许可证](../deploy-use/configure-usage-rights.md#rights-management-use-license)。
+是。 该消息反映了此特定文件的[使用许可证](../deploy-use/configure-usage-rights.md#rights-management-use-license)。
 
 如果撤销文件，仅在用户对 Azure Rights Management 服务进行身份验证时才会强制执行此操作。 因此，如果文件的使用许可证有效期为 30 天，且用户已经打开过文档，则该用户在使用许可证期间仍继续拥有该文档的访问权限。 使用许可证过期时，用户必须重新进行身份验证，此时由于文件被撤销，因此会拒绝用户访问。
 

@@ -4,17 +4,18 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/10/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 8b1024a26e086cb8cbd4696dc37d66350968a0b4
-ms.sourcegitcommit: fbc83d699b9e4e9c8e0e7d36f574630af6a4e3d9
+ms.openlocfilehash: 00305b1ba4f9ff750dd0fde9eb6a524cead39094
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444208"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -231,9 +232,14 @@ ms.lasthandoff: 05/10/2018
 
 ### <a name="example-4-label-for-protected-email-that-supports-less-restrictive-permissions-than-do-not-forward"></a>示例 4：针对受保护电子邮件并提供限制性低于“不要转发”的权限的标签
 
-此标签不可限制到 Outlook，但可提供限制性低于“不要转发”的控制。 例如，希望收件人能够复制电子邮件或附件，或者打印和保存附件。
+此标签不可限制到 Outlook，但可提供限制性低于“不要转发”的控制。 例如，希望收件人能够复制电子邮件或附件，或者保存和编辑附件。
 
-如果指定没有 Azure AD 帐户的外部用户，请确保告知用户仅将此标签用于电子邮件，而不用于文档。 此外，要支持这些外部用户，还须为 Exchange Online 配置 [Office 365 邮件加密新功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)。  
+如果指定 Azure AD 中没有帐户的外部用户：
+
+- 当 Exchange Online 使用 [Office 365 邮件加密中的新功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)时，此标签适用于电子邮件。 
+ 
+- 对于自动受保护的 Office 附件，可在浏览器中查看这些文档。 若要编辑这些文档，请使用 Office 2016 即点即用和使用相同电子邮件地址的 Microsoft 帐户下载和编辑它们。 [详细信息](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+
 
 > [!NOTE]
 > Exchange Online 即将推出新选项 - [仅加密](configure-usage-rights.md#encrypt-only-option-for-emails)。 此选项不可用于标签配置。 但是，你可以使用此示例配置具有相同使用权限集的标签。

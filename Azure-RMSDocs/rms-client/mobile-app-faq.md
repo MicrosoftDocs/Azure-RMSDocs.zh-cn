@@ -5,7 +5,7 @@ keywords: 一些常见问题，帮助你使用适用于 iOS 和 Android 的 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -14,11 +14,12 @@ ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 655829682f6fe962a27eb48ecf73deb9cabc481a
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 190fce3f1725775ae699dbc523a810dc79b96f88
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444242"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 
@@ -51,13 +52,18 @@ Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
 安装该应用后，你无需在该点再执行任何其他操作。 请等待，直到收到受保护的电子邮件或想要查看的文件，然后选择“AIP 查看器”以将其打开。 然后系统会提示使用工作或学校帐户登录，或提示选择一个证书。 对这些凭据进行身份验证后，便可以读取内容。
 
 但是，如果你不想等待，则可以使用以下说明向自己发送受保护的电子邮件或要查看的文件：[适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门](mobile-app-get-started.md) 
+
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>登录此应用应使用什么凭据？
 
-如果你的组织已经具有本地 AD RMS（带有移动设备扩展名），或使用 Azure Rights Management 服务，则可以使用你的凭据进行登录。 如果没有，则可以使用 [Azure 信息保护页](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)注册一个免费的新帐户。
+如果你的组织已经具有本地 AD RMS（带有移动设备扩展名），或使用 Azure Rights Management 服务，则使用你的工作凭据进行登录。 
+
+如果你的个人电子邮件地址用于保护该文件，则使用免费 [Microsoft 帐户](https://signup.live.com)的凭据进行登录。
 
 ## <a name="can-i-sign-up-for-the-free-account-with-my-personal-email-address-such-as-a-hotmail-or-gmail-account"></a>可以使用个人电子邮件地址（如 Hotmail 或 Gmail 帐户）注册免费帐户吗？
 
-不行。 现在，只能使用业务电子邮件地址（工作或学校帐户）注册。 我们正致力于研究对个人单子邮件地址的支持，会在其可用时更新此项。
+可以，当你申请 Microsoft 帐户时，可以指定你的 Hotmail 或 Gmail 电子邮件地址或你拥有的任何其他电子邮件地址。 
+
+但是，尽管此查看器可以打开受此帐户保护的文件，但是并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 ## <a name="which-file-extensions-can-i-open-with-this-app"></a>使用此应用可打开哪些文件扩展名？
 

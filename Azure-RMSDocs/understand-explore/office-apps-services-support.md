@@ -4,7 +4,7 @@ description: 最终用户 Office 应用程序（例如 Word 和 Outlook）和 Of
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/04/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: caf89d6df51adcd556db319a8140cbe936102ef3
-ms.sourcegitcommit: fa64f9c2a4d367d7586d64def0fd02764ad2e00b
+ms.openlocfilehash: 4358299a1f02e87da29b88e69551a40c08131a1e
+ms.sourcegitcommit: 09072591f1aa9878d063feb78ffcc4accec63fd1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2018
+ms.lasthandoff: 05/18/2018
+ms.locfileid: "34308199"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/06/2018
 
 -   “邮件流规则”，管理员配置该规则将保护模板自动应用于电子邮件。 该规则基于发件人、收件人、邮件主题和内容等属性。 该规则在概念上类似于保护规则，但不允许用户删除保护。 该规则可应用于 Outlook 网页版和通过移动设备发送的电子邮件。 此外，在从客户端发送电子邮件之前，该规则不会对电子邮件进行加密。 有关详细信息，请参阅 Exchange 库中的[创建传输保护规则](https://technet.microsoft.com/library/dd302432.aspx)。
 
--   “数据丢失预防 (DLP) 策略”，包含一系列筛选邮件的条件，有助于防止机密或敏感内容的数据丢失。 机密或敏感内容的示例包括个人信息或信用卡信息。 检测到敏感数据时，可以使用策略提示，警告用户他们可能需要应用保护。 有关详细信息，请参阅 Exchange 库中的 [数据丢失防护](https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx)。
+-   “数据丢失预防 (DLP) 策略”，包含一系列筛选邮件的条件，有助于防止机密或敏感内容的数据丢失。 机密或敏感内容的示例包括个人信息或信用卡信息。 检测到敏感数据时，可以使用策略提示，警告用户他们可能需要应用保护。 有关详细信息，请参阅 Exchange 库中的[数据防护丢失](https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx)。
 
 -   **Office 365 邮件加密**，支持以附件形式向任何设备上的任何地址发送受保护的电子邮件和受保护的 Office 文档。 对于没有使用 Azure AD 的用户帐户，Web 体验支持社交标识提供者或一次性密码。 有关详细信息，请参阅 Office 网站上的 [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)（设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能）。
 
@@ -88,7 +89,7 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 
 使用 SharePoint IRM 保护时，Azure Rights Management 服务会在从 SharePoint 下载文档时为文档应用使用限制和数据加密，而不是在 SharePoint 中首次创建文档或将其上传到库时进行此操作。 有关如何在下载文档前对其进行保护的信息，请参阅 SharePoint 文档中的 [OneDrive for Business 和 SharePoint Online 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx) 。
 
-虽然不再是新文章，但以下 Office 博客中的帖子中仍可能提供了一些有用的附加信息：[What’s New with Information Rights Management in SharePoint and SharePoint Online](https://blogs.office.com/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)（SharePoint 和 SharePoint Online 中信息权限管理的新增内容）
+虽然不再是新文章，但以下 Office 365 博客中的帖子中仍可能提供了一些有用的附加信息：[SharePoint 和 SharePoint Online 中信息权限管理的新增内容](https://www.microsoft.com/en-us/microsoft-365/blog/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)
 
 如果已准备好为 SharePoint 配置 IRM ：
 
