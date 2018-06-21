@@ -1,13 +1,13 @@
 ---
-title: "部署应用程序 - AIP"
-description: "本主题概述并引导你完成应用程序部署"
-keywords: "部署, RMS, AIP"
+title: 部署应用程序 - AIP
+description: 本主题概述并引导你完成应用程序部署
+keywords: 部署, RMS, AIP
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 03/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
@@ -19,6 +19,7 @@ ms.sourcegitcommit: e21fb3385de6f0e251167e5dc973e90f0e7f2bcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/01/2018
+ms.locfileid: "28908079"
 ---
 # <a name="deploy-into-production"></a>部署到生产环境
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 02/01/2018
 ### <a name="begin-the-process"></a>开始流程
 通过向 **IPIA@microsoft.com** 发送包含以下信息的电子邮件来获取你的 IPIA：
 
-**主题：**为 *Company Name* 申请 IPIA
+**主题：** 为 *Company Name* 申请 IPIA
 
 在电子邮件的正文中，包括：
 - 应用程序和产品名称

@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30204966"
 ---
 # <a name="generate-and-transfer-your-tenant-key--in-person-retired-content"></a>亲自生成和传送你的租户密钥：RETIRED CONTENT
 

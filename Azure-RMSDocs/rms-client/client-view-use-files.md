@@ -17,6 +17,7 @@ ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31441856"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>用户指南：查看和使用受 Rights Management 保护的文件
 

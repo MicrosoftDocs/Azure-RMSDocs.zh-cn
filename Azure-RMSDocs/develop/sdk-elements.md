@@ -1,13 +1,13 @@
 ---
-title: "开发环境文件 | Azure RMS"
-description: "本主题展示开发环境文件和它们在计算机上的相对安装位置。"
-keywords: 
+title: 开发环境文件 | Azure RMS
+description: 本主题展示开发环境文件和它们在计算机上的相对安装位置。
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765776"
 ---
 # <a name="development-environment-files"></a>开发环境文件
 

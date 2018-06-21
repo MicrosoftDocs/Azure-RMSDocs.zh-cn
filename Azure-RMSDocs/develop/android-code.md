@@ -1,13 +1,13 @@
 ---
-title: "Android 代码示例 | Azure RMS"
-description: "本主题向你介绍 Android 版本的 RMS SDK 的重要代码元素。"
-keywords: 
+title: Android 代码示例 | Azure RMS
+description: 本主题向你介绍 Android 版本的 RMS SDK 的重要代码元素。
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
@@ -19,12 +19,13 @@ ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/19/2018
+ms.locfileid: "27927118"
 ---
 # <a name="android-code-examples"></a>Android 代码示例
 
 本文介绍了如何为 Android 版 RMS SDK 编码元素。
 
-**注意：**在本文中，MSIPC (Microsoft Information Protection and Control) 一词是指客户端流程。
+**注意：** 在本文中，MSIPC (Microsoft Information Protection and Control) 一词是指客户端流程。
 
 
 ## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>使用 Microsoft Rights Management SDK 4.2 - 重要方案

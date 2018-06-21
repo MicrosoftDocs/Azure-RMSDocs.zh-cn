@@ -1,13 +1,13 @@
 ---
-title: "iOS 和 OS X 安装程序 | Azure RMS"
-description: "通过 AAD RM，iOS 和 OS X 应用程序可使用 RMS SDK 4.2 在其应用程序中启用集成信息保护。"
-keywords: 
+title: iOS 和 OS X 安装程序 | Azure RMS
+description: 通过 AAD RM，iOS 和 OS X 应用程序可使用 RMS SDK 4.2 在其应用程序中启用集成信息保护。
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765611"
 ---
 # <a name="ios-and-os-x-setup"></a>iOS 和 OS X 安装程序
 

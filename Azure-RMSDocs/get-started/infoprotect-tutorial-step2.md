@@ -15,6 +15,7 @@ ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33946362"
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>步骤 2：配置 Azure 信息保护策略
 

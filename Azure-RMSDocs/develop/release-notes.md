@@ -1,6 +1,6 @@
 ---
-title: "新增功能和发行说明"
-description: "概述此版本和以前版本中的重要更改和功能。"
+title: 新增功能和发行说明
+description: 概述此版本和以前版本中的重要更改和功能。
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/29/2018
+ms.locfileid: "28878929"
 ---
 # <a name="whats-new-and-release-notes"></a>新增功能和发行说明
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206011"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
@@ -48,19 +49,19 @@ ms.lasthandoff: 03/28/2018
 
     - 设置以天为单位的更新频率（最少为 1 天）：创建名为“TemplateUpdateFrequency”  的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以天为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
 
-        **注册表路径：**HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
+        **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
-        **类型：**REG_DWORD
+        **类型：** REG_DWORD
 
-        **值：**TemplateUpdateFrequency
+        **值：** TemplateUpdateFrequency
 
     - 设置以秒为单位的更新频率（最少为 1 秒）：创建名为“TemplateUpdateFrequencyInSeconds”  的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以秒为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
 
-        **注册表路径：**HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
+        **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
-        **类型：**REG_DWORD
+        **类型：** REG_DWORD
 
-        **值：**TemplateUpdateFrequencyInSeconds
+        **值：** TemplateUpdateFrequencyInSeconds
 
     请确保你创建并设置这两个注册表值中的其中一个，而不是对这两个注册表值都执行此操作。 如果两者均存在，将忽略 **TemplateUpdateFrequency** 。
 
@@ -74,7 +75,7 @@ ms.lasthandoff: 03/28/2018
 
     **类型：** REG_SZ
 
-    **值：**LastUpdatedTime
+    **值：** LastUpdatedTime
 
     > [!TIP]
     > 在注册表路径中，<*MicrosoftRMS_FQDN*> 是指你的 Microsoft RMS 服务 FQDN。 如果你想要验证此值：

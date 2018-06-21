@@ -1,6 +1,6 @@
 ---
-title: "Azure 信息保护开发人员指南"
-description: "开发人员可使用 Azure 信息保护来保护和管理所有类型的文件"
+title: Azure 信息保护开发人员指南
+description: 开发人员可使用 Azure 信息保护来保护和管理所有类型的文件
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765521"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 

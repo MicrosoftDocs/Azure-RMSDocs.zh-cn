@@ -1,13 +1,13 @@
 ---
-title: "如何启用文档跟踪和撤销 | Azure RMS"
-description: "实现文档内容跟踪的基本指南，以及用于元数据更新和应用的“跟踪使用情况”按钮的示例代码。"
-keywords: 
+title: 如何启用文档跟踪和撤销 | Azure RMS
+description: 实现文档内容跟踪的基本指南，以及用于元数据更新和应用的“跟踪使用情况”按钮的示例代码。
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
@@ -19,10 +19,11 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765419"
 ---
 # <a name="how-to-enable-document-tracking-and-revocation"></a>操作说明：启用文档跟踪和撤销
 
-本主题涵盖实现文档内容跟踪的基本指导，并提供用于元数据更新和为应用创建**“跟踪使用情况”按钮**的示例代码。
+本主题涵盖实现文档内容跟踪的基本指导，并提供用于元数据更新和为应用创建 **“跟踪使用情况”按钮**的示例代码。
 
 ## <a name="steps-to-implement-document-tracking"></a>实现文档跟踪的步骤
 

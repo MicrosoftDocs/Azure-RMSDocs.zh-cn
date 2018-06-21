@@ -1,13 +1,13 @@
 ---
-title: "如何部署应用 - AIP"
-description: "本文介绍如何将服务应用程序部署到租户中，该租户不同于最初开发时使用的租户。"
-keywords: 
+title: 如何部署应用 - AIP
+description: 本文介绍如何将服务应用程序部署到租户中，该租户不同于最初开发时使用的租户。
+keywords: ''
 author: kkanakas
 ms.author: kartikk
 manager: mbaldwin
 ms.date: 02/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 34dc6d6f-cfe4-4848-9b11-8d90c4b38ef7
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/30/2017
+ms.locfileid: "20232830"
 ---
 # <a name="deploying-a-service-application-into-a-different-tenant"></a>将服务应用程序部署到不同租户
 

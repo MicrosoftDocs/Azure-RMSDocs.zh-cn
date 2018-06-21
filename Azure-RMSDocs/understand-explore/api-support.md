@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207268"
 ---
 # <a name="other-applications-that-support-the-rights-management-apis"></a>支持 Rights Management API 的其他应用程序
 

@@ -1,13 +1,13 @@
 ---
-title: "如何添加显式所有者权限 | Azure RMS"
-description: "应用程序在从头开始创建许可证时应显式添加“所有者”权限。"
-keywords: 
+title: 如何添加显式所有者权限 | Azure RMS
+description: 应用程序在从头开始创建许可证时应显式添加“所有者”权限。
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765538"
 ---
 # <a name="how-to-add-explicit-owner-rights"></a>操作说明：添加显式所有者权限
 

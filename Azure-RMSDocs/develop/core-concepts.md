@@ -1,13 +1,13 @@
 ---
-title: "Azure 信息保护 SDK 4.2 开发人员指南 | Microsoft Docs"
-description: "开发 AIP SDK 4.2 的操作指南集合"
-keywords: 
+title: Azure 信息保护 SDK 4.2 开发人员指南 | Microsoft Docs
+description: 开发 AIP SDK 4.2 的操作指南集合
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27764550"
 ---
 # <a name="developer-guidance"></a>开发人员指南
 Microsoft Rights Management SDK 4.2 的重点是帮助你构建启用 AD RMS 的应用程序，该应用程序尽可能简单地利用 Active Directory Right Management Services (AD RMS)。

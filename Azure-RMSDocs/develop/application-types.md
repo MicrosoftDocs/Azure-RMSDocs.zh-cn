@@ -1,13 +1,13 @@
 ---
-title: "应用程序类型 | Azure RMS"
-description: "本主题介绍可以选择创建为启用权限形式的应用程序类型。"
-keywords: 
+title: 应用程序类型 | Azure RMS
+description: 本主题介绍可以选择创建为启用权限形式的应用程序类型。
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765279"
 ---
 # <a name="application-types"></a>应用程序类型
 

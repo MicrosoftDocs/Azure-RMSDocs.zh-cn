@@ -1,13 +1,13 @@
 ---
-title: "Linux 代码示例 | Azure RMS"
-description: "本主题向你介绍 Linux 版 RMS SDK 的重要方案和代码元素。"
-keywords: 
+title: Linux 代码示例 | Azure RMS
+description: 本主题向你介绍 Linux 版 RMS SDK 的重要方案和代码元素。
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765504"
 ---
 # <a name="linux-code-examples"></a>Linux 代码示例
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208356"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
@@ -148,7 +149,7 @@ ms.lasthandoff: 03/28/2018
 
         -   **说明**：键入“对&lt;文件夹名称&gt;中的所有文件进行分类以便使用 Rights Management”。
 
-            将*&lt;文件夹名称&gt;*替换为所选的文件夹名称。 例如，“为 Rights Management 的 C:\FileShare 文件夹中的所有文件分类”
+            将*&lt;文件夹名称&gt;* 替换为所选的文件夹名称。 例如，“为 Rights Management 的 C:\FileShare 文件夹中的所有文件分类”
 
         -   **范围**：添加所选的文件夹。 例如，**C:\FileShare**。
 
@@ -190,7 +191,7 @@ ms.lasthandoff: 03/28/2018
 
         -   **说明**：键入**使用 Windows PowerShell 脚本通过 Rights Management 和模板保护&lt;文件夹名称&gt;中的文件。**
 
-            将*&lt;文件夹名称&gt;*替换为所选的文件夹名称。 例如，“使用 Windows PowerShell 脚本通过 Rights Management 和模板保护 C:\FileShare 中的文件”
+            将*&lt;文件夹名称&gt;* 替换为所选的文件夹名称。 例如，“使用 Windows PowerShell 脚本通过 Rights Management 和模板保护 C:\FileShare 中的文件”
 
         -   **范围**：选择所选的文件夹。 例如，**C:\FileShare**。
 

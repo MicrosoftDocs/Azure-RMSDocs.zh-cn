@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/29/2018
+ms.locfileid: "30258769"
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure 信息保护的安全最佳实践
 

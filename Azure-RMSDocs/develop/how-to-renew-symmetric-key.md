@@ -1,13 +1,13 @@
 ---
-title: "如何在 Azure 信息保护中续订对称密钥"
-description: "本文介绍了在 Azure 信息保护中续订对称密钥的过程。"
-keywords: 
+title: 如何在 Azure 信息保护中续订对称密钥
+description: 本文介绍了在 Azure 信息保护中续订对称密钥的过程。
+keywords: ''
 author: lleonard-msft
 manager: mbaldwin
 ms.author: alleonar
 ms.date: 03/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0b8c8f0-6ed5-48bb-8155-ac4f319ec178
@@ -16,6 +16,7 @@ ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/19/2018
+ms.locfileid: "27927101"
 ---
 # <a name="how-to-renew-the-symmetric-key-in-azure-information-protection"></a>如何：在 Azure 信息保护中续订对称密钥
 

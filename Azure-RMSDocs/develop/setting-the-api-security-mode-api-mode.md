@@ -1,13 +1,13 @@
 ---
-title: "如何设置 API 安全模式 | Azure RMS"
-description: "选择你的文件 API 应用程序运行的安全模式。"
-keywords: 
+title: 如何设置 API 安全模式 | Azure RMS
+description: 选择你的文件 API 应用程序运行的安全模式。
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765347"
 ---
 # <a name="how-to-set-the-api-security-mode"></a>操作说明：设置 API 安全模式
 

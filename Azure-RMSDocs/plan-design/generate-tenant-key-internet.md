@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30205159"
 ---
 # <a name="generate-and-transfer-your-tenant-key--over-the-internet-retired-content"></a>生成和传送租户密钥 - 通过 Internet：RETIRED CONTENT
 

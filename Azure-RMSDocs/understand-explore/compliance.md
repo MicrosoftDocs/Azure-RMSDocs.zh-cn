@@ -1,12 +1,12 @@
 ---
-title: "Azure 信息保护的符合性和信息"
-description: "Azure 信息保护的支持信息，包括法律、合规性和 SLA。"
+title: Azure 信息保护的符合性和信息
+description: Azure 信息保护的支持信息，包括法律、合规性和 SLA。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/15/2018
+ms.locfileid: "29884167"
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure 信息保护的合规性和支持信息
 

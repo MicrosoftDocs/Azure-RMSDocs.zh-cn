@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206717"
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
 
@@ -113,9 +114,9 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
 **类型：** Reg_SZ
 
-**值：**https://\<租户 URL\>/_wmcs/licensing
+**值：** https://\<租户 URL\>/_wmcs/licensing
 
-**数据：**https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
+**数据：** https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
 
 ---
 
@@ -127,9 +128,9 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
 **类型：** Reg_SZ
 
-**值：**https://\<租户 URL\>/_wmcs/licensing
+**值：** https://\<租户 URL\>/_wmcs/licensing
 
-**数据：**https://\<AD RMS Extranet 授权 URL>/_wmcs/licensing
+**数据：** https://\<AD RMS Extranet 授权 URL>/_wmcs/licensing
 
 ---
 

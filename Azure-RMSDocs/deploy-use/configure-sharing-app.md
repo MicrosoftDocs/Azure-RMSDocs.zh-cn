@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30204809"
 ---
 # <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>权限管理共享应用程序：客户端安装和配置
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30205527"
 ---
 # <a name="remove-protection-from-a-file-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序移除对文件的保护
 

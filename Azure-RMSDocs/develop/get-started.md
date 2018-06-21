@@ -1,13 +1,13 @@
 ---
-title: "入门 | Azure RMS"
-description: "第一个应用程序的快速入门指南是通过适用于每种操作系统/平台的开发环境设置指南。"
-keywords: 
+title: 入门 | Azure RMS
+description: 第一个应用程序的快速入门指南是通过适用于每种操作系统/平台的开发环境设置指南。
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27764525"
 ---
 # <a name="get-started"></a>入门
 

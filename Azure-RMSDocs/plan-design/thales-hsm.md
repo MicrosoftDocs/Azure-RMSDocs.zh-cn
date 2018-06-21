@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30204667"
 ---
 # <a name="more-information-about-thales-hsms-and-microsoft-additions-retired-content"></a>有关 Thales HSM 和 Microsoft 添加件的详细信息：RETIRED CONTENT
 

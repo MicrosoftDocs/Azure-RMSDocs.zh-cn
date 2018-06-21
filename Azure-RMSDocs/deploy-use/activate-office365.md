@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30205030"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>如何从 Office 365 管理中心激活 Azure 权限管理
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 03/28/2018
 
 4. 在“Rights Management”页上，单击“激活”。
 
-5. 当提示 **“是否要激活权限管理?”**时，请单击 **“激活”**。
+5. 当提示 **“是否要激活权限管理?”** 时，请单击 **“激活”**。
 
 现在，应会显示“Rights Management 已激活”  和用于停用的选项。
 

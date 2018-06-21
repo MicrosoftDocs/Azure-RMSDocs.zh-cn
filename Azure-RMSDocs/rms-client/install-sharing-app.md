@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206634"
 ---
 # <a name="download-and-install-the-rights-management-sharing-application"></a>下载和安装 Rights Management 共享应用程序
 

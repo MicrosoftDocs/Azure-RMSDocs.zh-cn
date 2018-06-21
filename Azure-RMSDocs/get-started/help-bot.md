@@ -1,12 +1,12 @@
 ---
-title: "Azure 信息保护的帮助机器人"
-description: "Azure 信息保护的帮助机器人可帮助回答你的问题、搜索文档，或者在你需要技术支持的情况下帮助打开支持票证。"
+title: Azure 信息保护的帮助机器人
+description: Azure 信息保护的帮助机器人可帮助回答你的问题、搜索文档，或者在你需要技术支持的情况下帮助打开支持票证。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 98105d30-ff81-4b9c-9f41-9e9ffd6e7aa6
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29476246"
 ---
 # <a name="help-bot-for-azure-information-protection"></a>Azure 信息保护的帮助机器人
 

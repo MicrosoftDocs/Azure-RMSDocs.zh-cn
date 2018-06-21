@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208577"
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>查看和使用受权限管理保护的文件
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 03/28/2018
 
 文件的打开方式取决于保护方式，此保护方式你可以通过查看文件扩展名得知。 在每种情况下，只要文件受到保护，打开它就需要审核并将处于审核状态。 此外，如果文件以电子邮件附件的形式发送，则每次你打开文件时，发件人都会收到电子邮件通知。
 
-- **文件具有*.pfile*文件扩展名**
+- **文件具有 *.pfile*文件扩展名**
 
     文件受到一般性保护。
 
@@ -73,7 +74,7 @@ ms.lasthandoff: 03/28/2018
 ## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>使用受保护的文件（例如，编辑和打印文件）
 如果在打开受保护文件后，你想要执行除读取之外的其他操作（例如编辑、复制和打印），请根据文件扩展名按照说明执行操作：
 
-- **文件具有*.pfile*文件扩展名**
+- **文件具有 *.pfile*文件扩展名**
 
     保存已打开文件，并赋予其与所要使用的应用程序关联的新文件扩展名。
 
