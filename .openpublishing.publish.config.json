@@ -16,6 +16,9 @@
     "CnE_Content_Brno@moravia.com",
     "CnE_UE_Bugfixing_ENG@moravia.com"
   ],
+  "sync_notification_subscribers": [
+    "ceicnotifications@microsoft.com"
+  ],
   "branches_to_filter": [
     "live-oldev",
     "live"
@@ -43,6 +46,7 @@
   ],
   "branch_target_mapping": {},
   "need_generate_pdf_url_template": false,
+  "targets": {},
   "need_generate_pdf": false,
   "need_generate_intellisense": false
 }
