@@ -4,7 +4,7 @@ description: 面向管理员的说明和信息，介绍如何在企业网络中�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b8cd6aeb13398bdfd65ba3e743e3e12bf3cc5f53
-ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
+ms.openlocfilehash: 511fea3a6176cf047eb4c1568d2efa755c46f39c
+ms.sourcegitcommit: e0a47ccee898b50907374cc74fcfd9abf59cd98d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34423283"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36949821"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -74,14 +74,6 @@ ms.locfileid: "34423283"
     即使尚未配置“托管加载项列表”组策略设置，如果收到报告称将禁用“Microsoft Azure 信息保护”加载项，也可能需要对其进行配置。 禁用此加载项后，Office 应用程序中将不会显示“Azure 信息保护”栏。
     
     有关此组策略设置的详细信息，请参阅 [Office 2013 和 Office 2016 程序的组策略设置导致未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)。
-
-- 对于 Outlook 即点即用版本 16.0.9324.1000 和更高版本：请启用原有的监视器支持
-    
-    若要防止 Azure 信息保护栏在识别出的即点即用版本的 Outlook 外部显示，可能需要启用原有的监视器支持。 如果此方案中信息保护栏的显示不正确，可能会显示为“AdxTaskPane”。 
-    
-    若要按此要求配置 Outlook：“文件” > “选项” > “常规”：
-    
-    - 在“用户界面选项”部分中，如果看到已选中“对显示使用最佳设置”选项，请清除此选择。
 
 > [!IMPORTANT]
 > 安装 Azure 信息保护客户端需要本地管理权限。

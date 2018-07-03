@@ -4,7 +4,7 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/26/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a8a159813dba899cf79a13f15d10e2ff10c11494
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 88fa2fa62e4090e962f96868b7c1070114d740c1
+ms.sourcegitcommit: 0437ff841f278f5293a74b3ff7d41f81ccfef414
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208322"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36310255"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -57,7 +57,7 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
     
     |Office 文件类型|Office 文件类型|
     |----------------------------------|----------------------------------|
-    |。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm<br /><br />。pptx<br /><br />.vdw<br /><br />.vsd<br /><br />.vsdm|.vsdx<br /><br />.vss<br /><br />.vssm<br /><br />.vst<br /><br />.vstm<br /><br />.vssx<br /><br />.vstx<br /><br />。xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx|
+    |。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm<br /><br />。pptx<br /><br />.vdw<br /><br />.vsd|.vsdm<br /><br /> .vsdx<br /><br />.vss<br /><br />.vssm<br /><br />.vst<br /><br />.vstm<br /><br />.vssx<br /><br />.vstx<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx|
 
 其他文件类型在受保护时也支持分类。 有关这些文件类型，请参阅[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)部分。
 
