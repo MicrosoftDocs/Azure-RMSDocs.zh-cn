@@ -29,6 +29,7 @@
 #### [PowerShell 参考](configure-templates-with-powershell.md)
 #### [从 Azure 经典门户迁移](migrate-portal.md)
 ### [配置语言](configure-policy-languages.md)
+## [配置 Azure 信息保护标签的邮件流规则](configure-exo-rules.md)
 ## [部署 Azure 信息保护扫描程序](deploy-aip-scanner.md)
 ## [部署 RMS 连接器](deploy-rms-connector.md)
 ### [安装并配置连接器](install-configure-rms-connector.md)
