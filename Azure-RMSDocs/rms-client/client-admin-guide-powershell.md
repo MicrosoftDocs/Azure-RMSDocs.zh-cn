@@ -4,7 +4,7 @@ description: 管理员通过使用 PowerShell 管理 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 06/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b4376d9f2b0cde836b37553eb83efd8068e6c2f8
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: a830fa6172df3dab2701109fd30484156c69fc29
+ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "35726807"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 05/17/2018
 
 安装 Azure 信息保护客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
-cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 此模块包括 RMS 保护工具（不再支持）的所有 Rights Management cmdlet。 以及使用 Azure 信息保护 (AIP) 服务进行标记的两个新 cmdlet。 例如：
+cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 此模块包括 RMS 保护工具（不再支持）的所有 Rights Management cmdlet。 另外，还包括使用 Azure 信息保护进行标记的 cmdlet。 例如：
 
 |标记 cmdlet|示例用法|
 |----------------|---------------|
@@ -33,8 +34,12 @@ cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 �
 |[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)|对于共享文件夹，将指定的标签应用于没有标签的所有文件。|
 |[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|以非交互方式标记文件，例如使用按计划运行的脚本。|
 
+> [!TIP]
+> 若要使用路径长度超过 260 个字符的 cmdlet，请使用 Windows 10 周年更新中提供的以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)：<br /> “本地计算机策略” > “计算机配置” > “管理模板” > “所有设置” > “NTFS” > “启用 Win32 长路径” 
+> 
+> 对于 Windows Server 2016，在安装 Windows 10 的最新管理模板 (.admx) 时，可以使用相同的组策略设置。
 
-此外，[Azure 信息保护扫描程序](../deploy-use/deploy-aip-scanner.md)使用 cmdlet 在 Windows Server 上安装和配置服务。 然后，可使用此扫描程序发现和保护数据存储中的文件并对其进行分类。
+[Azure 信息保护扫描程序](../deploy-use/deploy-aip-scanner.md)使用 AzureInformationProtection 模块中的 cmdlet 在 Windows Server 上安装和配置服务。 然后，可使用此扫描程序发现和保护数据存储中的文件并对其进行分类。
 
 有关所有 cmdlet 及其相应帮助的列表，请参阅 [AzureInformationProtection 模块](/powershell/module/azureinformationprotection)。 在 PowerShell 会话中，键入 `Get-Help <cmdlet name> -online` 以查看最新帮助。  
 
