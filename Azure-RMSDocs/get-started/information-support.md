@@ -4,7 +4,7 @@ description: 管理员资源，其中包括有关新版本、支持选项以及�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 05/31/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3ed8c53c235520d53c3d0a3666aa4aba45c174f5
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: f6b65ef43535152e03d456533b48e2c792cedd48
+ms.sourcegitcommit: 2e85f87f7276b284b4f17de1d4e752c790eff651
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34686670"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 05/03/2018
 |----------------|---------------|
 |请参阅最常使用的文档|阅读前 5 页：<br /><br /> - [什么是 Azure 信息保护？](../understand-explore/what-is-information-protection.md)<br /> - [为用户安装 Azure 信息保护客户端](../rms-client/client-admin-guide-install.md)<br />- [Azure 信息保护的要求](requirements.md) <br />- [部署 Azure 信息保护扫描程序](../deploy-use/deploy-aip-scanner.md)<br />- [默认 Azure 信息保护策略](../deploy-use/configure-policy-default.md)|
 |与产品团队和同行沟通|访问 Azure 信息保护的 [Yammer 网站](https://www.yammer.com/AskIPTeam)。|
-|请求新功能或更改功能|访问 Azure 信息保护的 [UserVoice](https://msip.uservoice.com) 网站。|
+|请求新功能或更改功能|请访问适用于 Azure 信息保护的 [UserVoice](https://msip.uservoice.com) 网站，并使用公司电子邮件地址登录。|
 |接收来自产品组的推文|在 Twitter 上关注 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)。|
 |检查订阅信息和支持的功能|请利用 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)页面上的订阅信息和功能列表。|
 

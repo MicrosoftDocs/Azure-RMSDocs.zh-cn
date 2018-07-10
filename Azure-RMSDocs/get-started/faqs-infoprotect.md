@@ -4,7 +4,7 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/30/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 24e99c6645832bcddbbf881a2b5728af3589f1e5
-ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
+ms.openlocfilehash: 0b8c0ecbf85a49101372c741c534b3b1e35c8dde
+ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
-ms.locfileid: "30297728"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37069098"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -59,17 +59,13 @@ ms.locfileid: "30297728"
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>标记一封电子邮件时，是否有任何附件会自动获得相同的标记？
 
-不能。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 但是，如果电子邮件的标签应用了保护，则该保护也适用于附件。
+不能。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 不过，如果电子邮件的标签应用了保护配置，此保护配置也会应用于 Office 附件。
 
 ## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
 
-因为 Azure 信息保护将永久性元数据用于分类，其中包括明文标签，所以该信息可以被 DLP 解决方案和其他应用读取。 
+因为 Azure 信息保护将永久性元数据用于分类（包括明文标签），所以此信息可供 DLP 解决方案和其他应用程序读取。 
 
-- 对于 Word 文档（.doc 和 .docx）、Excel 电子表格（.xls 和 .xlsx）、PowerPoint 演示文稿（.ppt 和 .pptx）以及 PDF 文档 (.pdf)，此元数据存储在以下自定义属性中：MSIP_Label_\<GUID>_Enabled=True  
-
-- 在电子邮件中，此应用存储在 x 标头中：msip_labels: MSIP_Label_\<GUID>_Enabled=True;  
-
-要标识标记的 GUID，请在 Azure 门户中查看或配置 Azure 信息保护策略时，在“标记”边栏选项卡上找到标记 ID 值。 对于应用了标记的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 来标识 GUID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 GUID。
+若要详细了解如何将此元数据与 Exchange Online 邮件流规则配合使用和相关示例，请参阅[配置 Azure 信息保护标签的 Exchange Online 邮件流规则](../deploy-use/configure-exo-rules.md)。
 
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>对于电子邮件来说，Azure 信息保护分类与 Exchange 邮件分类有什么不同？
 

@@ -4,7 +4,7 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 54106b67888f8c8a669d2c93e60f9967d484ebf3
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: f0ae817fb8b60b0086d2684b620fa17da970f8e8
+ms.sourcegitcommit: 92bb6d3163e455250a84281dac62b5af82f8c4f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37043343"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -59,7 +60,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
     
     若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。 若要查看具有此角色的用户还拥有哪些其他权限，请参阅 Azure Active Directory 文档的[可用角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)部分。
 
-- Azure Rights Management **全局管理员**和**连接器管理员**：对于这些 Azure Rights Management 管理员角色，第一个可授予用户权限以运行所有[来自 AADRM 模块的 PowerShell cmdlet](../deploy-use/administer-powershell.md) 而不使其成为其他云服务的全局管理员，第二个角色授予权限来仅运行 Rights Management (RMS) 连接器。 这些管理角色都不会授予对管理控制台的权限。
+- Azure Rights Management **全局管理员**和**连接器管理员**：对于这些 Azure Rights Management 管理员角色，第一个可授予用户权限以运行所有[来自 AADRM 模块的 PowerShell cmdlet](../deploy-use/administer-powershell.md) 而不使其成为其他云服务的全局管理员，第二个角色授予权限来仅运行 Rights Management (RMS) 连接器。 这两种管理角色都不会授权访问管理控制台，也不会授权在文档跟踪网站中使用管理模式。
 
     若要分配其中任一管理角色，请使用 AADRM PowerShell cmdlet [Add-aadrmrolebasedadministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator)。
 
@@ -120,6 +121,7 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 |--------------------------------|-------------------------------------|
 |支持的数据存储： <br /><br />- Windows Server 上的本地文件夹|支持的数据存储： <br /><br />- Windows Server 上的本地文件夹<br /><br />- Windows 文件共享和网络连接存储<br /><br />- SharePoint Server 2016 和 SharePoint Server 2013|
 |操作模式： <br /><br />- 实时|操作模式： <br /><br />- 系统地抓取数据存储，且此周期可以运行一次或多次|
+|对文件类型的支持： <br /><br />- 默认保护所有文件类型 <br /><br />- 通过编辑注册表，可以从保护配置中排除特定文件类型|对文件类型的支持： <br /><br />- 默认保护 Office 文件类型 <br /><br />- 通过编辑注册表，可以将特定文件类型纳入保护|
 
 目前，在本地文件夹或网络共享上受到保护的文件设置 [Rights Management 所有者](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)方面存在差异。 默认情况下，这两个解决方案的 Rights Management 所有者均设置为保护文件的帐户，但可以替代此设置：
 

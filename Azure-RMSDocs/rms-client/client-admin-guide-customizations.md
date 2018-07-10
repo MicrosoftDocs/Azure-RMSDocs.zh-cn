@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c0e1011da16c9e3e91595cd06375cb744aa8fe00
-ms.sourcegitcommit: 10f530fa1a43928581da4830a32f020c96736bc8
+ms.openlocfilehash: c078536a3f8501b52c8980b4d71f9138971a8e05
+ms.sourcegitcommit: b1e739bd911579ab9af09654b5517c4d0a23f482
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34402262"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36271447"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -52,30 +52,6 @@ ms.locfileid: "34402262"
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
 无论此设置如何，Azure 信息保护客户端遵循标准的 [RMS 服务发现进程](../rms-client/client-deployment-notes.md#rms-service-discovery)，查找其 AD RMS 群集。
-
-## <a name="suppress-the-initial-congratulations-welcome-page"></a>禁止显示初始“祝贺你!” “欢迎使用”页
-
-预览客户端不再显示此“祝贺你!” 欢迎页。
-
-首次在计算机上安装 Azure 信息保护客户端时，如果用户打开 Word、Excel、PowerPoint 或 Outlook，将显示“祝贺你!” 页，其中包含有关如何使用新的信息保护栏选择标签的简短说明。 可以通过编辑注册表来禁止显示此页。
-
-1. 如果以下注册表项不存在，请创建：
-    
-    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
-
-2. 如果名为 EnableWelcomeExperience 的 DWORD（32 位）值 (REG-DWORD) 不存在，请创建它并将数据值设置为 0：
-
-## <a name="suppress-the-whats-new-in-azure-information-protection-page"></a>取消显示“Azure 信息保护中的新增功能?” 页面
-
-预览客户端不再显示此“Azure 信息保护中的新增功能有哪些?” 页上。
-
-在计算机上第一次安装或升级 Azure 信息保护客户端，并在 Word、Excel、PowerPoint 或 Outlook 中显示 Azure 信息保护栏时，将显示“Azure 信息保护中的新增功能?”页，以提示用户有关自定义权限和跟踪使用情况。 可以通过编辑注册表来禁止显示此页。
-
-1. 如果以下注册表项不存在，请创建：
-    
-    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
-
-2. 如果名为 WhatsNewVersion 的字符串值 (REG-SZ) 不存在，请创建它并将数据值设置为 1.4。
 
 ## <a name="sign-in-as-a-different-user"></a>以其他用户身份登录
 
@@ -338,7 +314,7 @@ ms.locfileid: "34402262"
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
-配置此设置时，如果 Office 文档具备现有自定义属性且该属性带有与某个标记名称相匹配的值，则可对此文档进行分类（并选择性地保护）。 此自定义属性可从另一分类解决方案进行设置，也可由 SharePoint 设置为属性。
+配置此设置时，如果 Office 文档具备现有自定义属性且该属性带有与某个标记名称相匹配的值，则可对此文档进行分类（并选择性地保护）。 此自定义属性可通过另一个分类解决方案进行设置，也可由 SharePoint 设置为属性。
 
 凭借此配置，如果某用户在 Office 应用中打开并保存未带 Azure 信息保护标记的文档，则进行文档标记，使其与相应的属性值相匹配。 
 
@@ -356,19 +332,17 @@ ms.locfileid: "34402262"
 
 仅对一个自定义属性使用这些键和相应的值。
 
-例如，你有一个名为“分类”的 SharePoint 列，该列可能有三个值：“公共”、“常规”和“机密”。 文档存储在 SharePoint 中，且具有为分类属性设置的某个值。
+例如，假设有 SharePoint 列“分类”，此列的可取值为以下三个：“公开”、“常规”和“高度机密\所有员工”。 文档存储在 SharePoint 中，且“分类 属性值设置为“公开”、“常规”或“高度机密\所有员工”。
 
 要标记带有上述某个分类值的 Office 文档，请将“SyncPropertyName”设置为“分类”），将“SyncPropertyState”设置为“单向”。 
 
-随后，当用户打开和保存上述某个 Office 文档时，该文档将标记为“公共”、“常规”或“机密”（若在 Azure 信息保护策略中具备带这些名称的标签）。 如果没有带这些名称的标记，则不会标记文档。
+现在，当用户打开和保存这些 Office 文档之一时，文档标记为“公开”、“常规”或“高度机密\所有员工”，前提是 Azure 信息保护策略已包含有这些名称的标签。 如果没有带这些名称的标记，则不会标记文档。
 
 ## <a name="disable-the-low-integrity-level-for-the-scanner"></a>禁用扫描程序的低完整性级别
 
-此配置选项目前处于预览状态，可能随时更改。 它还需要 Azure 信息保护客户端的当前预览版本。
-
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
-默认情况下，Azure 信息保护扫描程序的预览版本以低完整性级别运行。 此设置可以提供更强大的安全隔离，但会牺牲性能。 如果你使用具有特权的帐户（例如本地管理员帐户）运行扫描程序，则低完整性级别是适合的，因为此设置有助于保护运行扫描程序的计算机。
+默认情况下，Azure 信息保护扫描程序在运行时的完整性级别低。 此设置可以提供更强大的安全隔离，但会牺牲性能。 如果你使用具有特权的帐户（例如本地管理员帐户）运行扫描程序，则低完整性级别是适合的，因为此设置有助于保护运行扫描程序的计算机。
 
 但是，当运行扫描程序的服务帐户只在[扫描程序先决条件](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)中记录了权限时，低完整性级别不是必需的且不推荐使用，因为它会对性能产生负面影响。 
 
@@ -407,7 +381,7 @@ ms.locfileid: "34402262"
 
 - Exchange 规则检测 Exchange 分类，并对应修改邮件头以添加 Azure 信息保护分类。
 
-- 当收件人在 Outlook 中查看电子邮件，且已安装 Azure 信息保护客户端时，他们将看到分配的 Azure 信息保护标签，以及所有对应的电子邮件头、页脚或水印。 
+- 如果内部收件人在 Outlook 中查看电子邮件，且已安装 Azure 信息保护客户端，就会看到已分配的 Azure 信息保护标签。 
 
 如果 Azure 信息保护标签应用保护，请将此保护添加到规则配置，具体方法是选择用于修改邮件安全性的选项，应用权限保护，再选择 RMS 模板或“不转发”选项。
 

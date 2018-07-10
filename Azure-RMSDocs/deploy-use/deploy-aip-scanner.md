@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行 Azure 信息保护扫描程序
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 207f3b91e656bb65820a42137ce3bd66109f36e1
-ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
+ms.openlocfilehash: 0b663f8f514aadf51b0ad549761d90d30e07811d
+ms.sourcegitcommit: 92bb6d3163e455250a84281dac62b5af82f8c4f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34423317"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042875"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -33,6 +33,8 @@ ms.locfileid: "34423317"
 
 - SharePoint Server 2016 和 SharePoint Server 2013 的站点和库。
 
+若要扫描云存储库上的文件并为之设置标签，请使用 [Cloud App Security](https://docs.microsoft.com/cloud-app-security/)。
+
 ## <a name="overview-of-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序概述
 
 为应用自动分类的标签配置 [Azure 信息保护策略](configure-policy.md)后，可为此扫描程序发现的文件设置标签。 标签可应用分类，并且可以应用保护或移除保护：
@@ -41,31 +43,74 @@ ms.locfileid: "34423317"
 
 通过使用计算机上安装的 iFilters，扫描程序可检查 Windows 能编制索引的任何文件。 然后，为了确定是否需要标记文件，扫描程序会使用 Office 365 内置数据丢失防护 (DLP) 敏感信息类型和模式检测，或 Office 365 正则表达式模式。 因为扫描程序使用 Azure 信息保护客户端，所以它可以对相同[文件类型](../rms-client/client-admin-guide-file-types.md)进行分类和保护。
 
-可仅在发现模式下运行扫描程序，利用报告确认对文件设置标签时会发生什么情况。 或者，可运行扫描程序自动应用标签。 还可以仅对预览版本运行扫描程序以发现包含敏感信息类型的文件，而无需为应用自动分类的条件配置标签。
+可仅在发现模式下运行扫描程序，利用报告确认对文件设置标签时会发生什么情况。 或者，可运行扫描程序自动应用标签。 还可以运行扫描程序来发现包含敏感信息类型的文件，无需配置条件标签来应用自动分类。
 
 注意，扫描程序不会实时发现和标记。 它会系统地浏览指定数据存储中的文件，可将此周期配置为运行一次或多次。
 
-特定于扫描程序的预览版本：
+可以指定要扫描或排除不进行扫描的文件类型。 若要限制扫描程序检查的文件，可使用 [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType) 定义一个文件类型列表。
 
-- 默认情况下，仅保护 Office 文档，而非保护所有文件类型。 [管理员指南](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection)中的“Office 支持的文件类型”表中列出了支持的 Office 文件类型的完整列表。 
-    
-    例如，若要更改此默认行为，以常规方式保护其他文件类型，则必须手动编辑注册表并指定想要保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。
-
-- 可以指定要扫描或排除不进行扫描的文件类型。 若要限制扫描程序检查的文件，可使用 [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType) 定义一个文件类型列表。
-
-- 可以配置扫描程序来检查文件的所有敏感信息类型，或应用默认标签而不做任何文件检查。 [详细信息](#using-the-scanner-with-alternative-configurations)
 
 ## <a name="prerequisites-for-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序的先决条件
 安装 Azure 信息保护扫描程序之前，请确保已满足以下要求。
 
 |要求|更多信息|
 |---------------|--------------------|
-|运行扫描程序服务的 Windows Server 计算机：<br /><br />- 4 个处理器<br /><br />- 4 GB 的 RAM|Windows Server 2016 或 Windows Server 2012 R2。 <br /><br />注意：在非生产环境中出于测试或评估目的时，可以使用 [Azure 信息保护客户端支持的](../get-started/requirements.md#client-devices) Windows 客户端操作系统。<br /><br />此计算机可以是物理或虚拟计算机，需拥有快速可靠的网络，可连接到要进行扫描的数据存储。 <br /><br />确保此计算机具有 Azure 信息保护所需的 [Internet 连接](../get-started/requirements.md#firewalls-and-network-infrastructure)。 或者，必须将其配置为[断开连接的计算机](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers)。|
-|存储扫描程序配置的 SQL Server：<br /><br />- 本地或远程实例<br /><br />- 安装扫描程序的 Sysadmin 角色|SQL Server 2012 是以下版本的最低版本：<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express<br /><br />安装扫描程序的帐户需要权限以写入 master 数据库（必须为 db_datawriter 角色的成员）。 安装过程会将 db-owner 角色授予运行扫描程序的服务帐户。 或者，可以在安装扫描程序，并将 db-owner 角色分配给扫描程序服务帐户之前手动创建 AzInfoProtectionScanner 数据库。|
-|运行扫描程序服务的服务帐户|除了运行扫描程序服务，此帐户还对 Azure AD 进行身份验证，并下载 Azure 信息保护策略。 因此，此帐户必须是同步到 Azure AD 的 Active Directory 帐户，并满足以下额外要求：<br /><br />- “本地登录”权限。 此权限是安装和配置扫描程序所必需的，但不可用于操作。 必须将此权限授予服务帐户，但当确认扫描程序可发现、保护文件并对其进行分类后，可删除此权限。 <br /><br />注意：如果内部策略不允许服务帐户具有此权限，但服务帐户可以被授予“作为批处理作业登录”权限，则可以通过其他配置满足此要求。 有关说明，请参阅管理员指南中的[针对 Set-AIPAuthentication 指定和使用 Token 参数](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)。<br /><br />- “作为服务登录”权限。 扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。 <br /><br />- 数据存储库的权限：必须授予“读取”和“写入”权限才可扫描文件，然后将分类和保护应用到满足 Azure 信息保护策略中条件的文件。 若仅在发现模式下运行扫描程序，则只需“读取”权限即可。<br /><br />- 对于可重新保护或移除保护的标签：要确保扫描程序始终能够访问受保护的文件，请将此帐户设置为 Azure Rights Management 服务的[超级用户](configure-super-users.md)，并确保已启用超级用户功能。 要详细了解应用保护的帐户要求，请参阅[准备用户和组以便使用 Azure 信息保护](../plan-design/prepare.md)。|
-|在 Windows Server 计算机上安装 Azure 信息保护客户端|必须安装扫描程序的完整客户端。 请勿安装只带有 PowerShell 模块的客户端。<br /><br />有关客户端安装说明，请参阅[管理员指南](../rms-client/client-admin-guide.md)。<br /><br />注意：现在，可以安装用于测试目的的扫描程序预览版本。 若要安装此预览，请从 Microsoft 下载中心下载并安装客户端的预览版本。|
-|已配置可应用自动分类和保护（可选）的标签|有关如何在 Azure 信息保护策略中配置条件的详细信息，请参阅[如何配置 Azure 信息保护的自动和建议分类的条件](configure-policy-classification.md)。<br /><br />要详细了解如何配置标签以将保护应用到文件，请参阅[如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)。<br /><br />这些标签可位于全局策略中，或位于一个或多个[作用域内策略](configure-policy-scope.md)中。<br /><br />注意：对于预览版本，即使尚未配置应用自动分类的标签，现在也可以运行扫描程序，但这些说明并未涵盖这种情况。 [详细信息](#using-the-scanner-without-automatic-classification)|
-|如果一个或多个数据存储库中的所有文件都必须具有标签：<br /><br />- 配置为策略设置的默认标签|有关如何配置默认标签设置的详细信息，请参阅[如何为 Azure 信息保护配置策略设置](configure-policy-settings.md)。<br /><br />此默认标签设置必须存在于扫描程序的全局策略或作用域策略中。 但是，此默认标签设置可被在数据存储库级别配置的不同默认标签替代。<br /><br />注意：对于预览版本，不再需要在策略中配置默认标签。| 
+|运行扫描程序服务的 Windows Server 计算机：<br /><br />- 4 核处理器<br /><br />- 4 GB 的 RAM<br /><br />- 临时文件 10GB 可用空间（平均）|Windows Server 2016 或 Windows Server 2012 R2。 <br /><br />注意：在非生产环境中出于测试或评估目的时，可以使用 [Azure 信息保护客户端支持的](../get-started/requirements.md#client-devices) Windows 客户端操作系统。<br /><br />此计算机可以是物理或虚拟计算机，需拥有快速可靠的网络，可连接到要进行扫描的数据存储。<br /><br /> 扫描程序需要足够的磁盘空间，才能为其扫描的每个文件（每个核心四个文件）创建临时文件。 借助建议的 10GB 磁盘空间，4 核处理器可以扫描 16 个文件，每个文件的大小为 625MB。 <br /><br />确保此计算机具有 Azure 信息保护所需的 [Internet 连接](../get-started/requirements.md#firewalls-and-network-infrastructure)。 如果由于组织策略而无法连接到 Internet，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。|
+|存储扫描程序配置的 SQL Server：<br /><br />- 本地或远程实例<br /><br />- 安装扫描程序的 Sysadmin 角色|SQL Server 2012 是以下版本的最低版本：<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express<br /><br />如果安装扫描程序且帐户拥有 Sysadmin 角色，那么在安装过程中会自动创建 AzInfoProtectionScanner 数据库，并向运行扫描程序的服务帐户授予相应 db_owner 角色。  如果无法获得 Sysadmin 角色或组织策略要求手动创建和配置数据库，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。|
+|运行扫描程序服务的服务帐户|除了运行扫描程序服务，此帐户还对 Azure AD 进行身份验证，并下载 Azure 信息保护策略。 此帐户必须是同步到 Azure AD 的 Active Directory 帐户。 如果由于组织策略而无法同步此帐户，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />此服务帐户有以下要求：<br /><br />- “本地登录”权限。 此权限是安装和配置扫描程序所必需的，但不可用于操作。 必须将此权限授予服务帐户，但当确认扫描程序可发现、保护文件并对其进行分类后，可删除此权限。 如果由于组织策略的限制而甚至无法在短时间内授予此权限，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />- “作为服务登录”权限。 扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。 <br /><br />- 数据存储库的权限：必须授予“读取”和“写入”权限才可扫描文件，然后将分类和保护应用到满足 Azure 信息保护策略中条件的文件。 若仅在发现模式下运行扫描程序，则只需“读取”权限即可。<br /><br />- 对于可重新保护或移除保护的标签：要确保扫描程序始终能够访问受保护的文件，请将此帐户设置为 Azure Rights Management 服务的[超级用户](configure-super-users.md)，并确保已启用超级用户功能。 要详细了解应用保护的帐户要求，请参阅[准备用户和组以便使用 Azure 信息保护](../plan-design/prepare.md)。 此外，如果对分阶段部署实现了[载入控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，还请确保已配置的载入控件中包含此帐户。|
+|在 Windows Server 计算机上安装 Azure 信息保护客户端|必须安装扫描程序的完整客户端。 请勿安装只带有 PowerShell 模块的客户端。<br /><br />有关客户端安装说明，请参阅[管理员指南](../rms-client/client-admin-guide.md)。 如果现在需要将已安装的旧扫描程序升级到更高版本，请参阅[升级 Azure 信息保护扫描程序](../rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。|
+|已配置可应用自动分类和保护（可选）的标签|有关如何在 Azure 信息保护策略中配置条件的详细信息，请参阅[如何配置 Azure 信息保护的自动和建议分类的条件](configure-policy-classification.md)。<br /><br />要详细了解如何配置标签以将保护应用到文件，请参阅[如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)。<br /><br />这些标签可位于全局策略中，或位于一个或多个[作用域内策略](configure-policy-scope.md)中。<br /><br />注意：即使尚未配置标签来应用自动分类，也可以运行扫描程序。尽管如此，这些说明并未涵盖此方案。 [详细信息](#using-the-scanner-with-alternative-configurations)| 
+
+如果由于组织策略禁止而无法满足表中的所有要求，请参阅下一部分中介绍的备用配置。
+
+如果满足所有要求，请直接转到[安装部分](#install-the-azure-information-protection-scanner)。
+
+### <a name="deploying-the-scanner-with-alternative-configurations"></a>使用备用配置部署扫描程序
+
+表中列出的先决条件是扫描程序的默认要求，之所以建议是因为它们是用于扫描程序部署的最简单配置。 它们应适用于初始测试，以便能够检查扫描程序的功能。 不过，在产品环境中，组织策略可能会禁止这些默认要求，因为存在下列一个或多个限制：
+
+- 禁止服务器连接到 Internet
+
+- 无法获得 Sysadmin 角色，或必须手动创建和配置数据库
+
+- 无法向服务帐户授予“本地登录”权限
+
+- 服务帐户无法同步到 Azure Active Directory，但服务器可以连接到 Internet
+
+虽然扫描程序可以适应这些限制，但需要其他配置。
+
+
+#### <a name="restriction-the-scanner-server-cannot-have-internet-connectivity"></a>限制：扫描程序服务器无法连接到 Internet
+
+请按照适用于[已断开连接的计算机](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers)的说明操作。 
+
+请注意，在此配置中，扫描程序无法使用组织的基于云的密钥来应用（或删除）保护配置。 相反，扫描程序只能使用应用分类或 [HYOK](configure-adrms-restrictions.md) 保护的标签。 
+
+#### <a name="restriction-you-cannot-be-granted-sysadmin-or-databases-must-be-created-and-configured-manually"></a>限制：无法获得 Sysadmin 角色，或必须手动创建和配置数据库
+
+如果可以获得 Sysadmin 角色来安装扫描程序，就能在扫描程序安装完成后删除此角色。 使用此配置时，数据库会自动创建，而且扫描程序的服务帐户也会自动获得相应权限。 不过，配置扫描程序的用户帐户需要拥有 AzInfoProtectionScanner 数据库的 db_owner 角色，你必须手动向用户帐户授予此角色。
+
+如果无法临时获得 Sysadmin 角色，必须在安装扫描程序前手动创建 AzInfoProtectionScanner 数据库。 使用此配置时，请分配以下角色：
+    
+|帐户|数据库级角色|
+|--------------------------------|---------------------|
+|扫描程序的服务帐户|db_owner|
+|用于安装扫描程序的用户帐户|db_owner|
+|用于配置扫描程序的用户帐户 |db_owner|
+
+用于安装和配置扫描程序的用户帐户通常是相同的。 不过，如果使用不同的帐户，它们都需要拥有 AzInfoProtectionScanner 数据库的 db_owner 角色。
+
+#### <a name="restriction-the-service-account-for-the-scanner-cannot-be-granted-the-log-on-locally-right"></a>限制：无法向扫描程序的服务帐户授予“本地登录”权限
+
+如果组织策略禁止向服务帐户授予“本地登录”权限，但允许授予“以批处理作业形式登录”权限，请按照管理员指南内[对 Set-AIPAuthentication 指定和使用 Token 参数](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)一文中的说明操作。
+
+#### <a name="restriction-the-scanner-service-account-cannot-be-synchronized-to-azure-active-directory-but-the-server-has-internet-connectivity"></a>限制：扫描程序服务帐户无法同步到 Azure Active Directory，但服务器可以连接到 Internet
+
+可以使用一个帐户来运行扫描程序服务，并使用另一个帐户对 Azure Active Directory 进行身份验证：
+
+- 对于扫描程序服务帐户，可以使用本地 Windows 帐户或 Active Directory 帐户。
+
+- 如果使用 Azure Active Directory 帐户，请按照管理员指南内[对 Set-AIPAuthentication 指定和使用 Token 参数](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)一文中的说明操作。
 
 
 ## <a name="install-the-azure-information-protection-scanner"></a>安装 Azure 信息保护扫描程序
@@ -159,13 +204,7 @@ ms.locfileid: "34423317"
 在其默认设置中，扫描程序在仅报告模式下运行一次。 要更改这些设置，请运行 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet。
 
 1. 在 Windows Server 计算机上的 PowerShell 会话中，运行以下命令：
-    
-    对于正式发布版本：
-    
-        Set-AIPScannerConfiguration -ScanMode Enforce -Schedule Continuous
-    
-    对于预览版本：
-    
+       
         Set-AIPScannerConfiguration -Enforce On -Schedule Continuous
     
     你可能还希望更改其他配置设置。 例如，是否更改文件属性，以及报告中应记录的内容。 此外，如果 Azure 信息保护策略包括需要理由信息以降低分类级别或移除保护的设置，请使用此 cmdlet 指定该信息。 有关每个配置设置的详细信息，请使用[联机帮助](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters)。 
@@ -181,7 +220,7 @@ ms.locfileid: "34423317"
 
 扫描程序会自动跳过[从分类和保护中排除](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client)的文件，如可执行文件和系统文件。
 
-对于预览版本，可以通过定义要扫描或排除不进行扫描的文件类型列表来更改此行为。 在指定此列表并且不指定数据存储库时，该列表适用于未指定其自己列表的所有数据存储库。 若要指定此列表，请使用 [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType)。 在指定了文件类型列表后，可以使用 [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType) 向列表中添加新的文件类型，并使用 [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType) 从列表中删除文件类型。
+可以定义要扫描或不要扫描的文件类型列表，从而更改此行为。 在指定此列表并且不指定数据存储库时，该列表适用于未指定其自己列表的所有数据存储库。 若要指定此列表，请使用 [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType)。 在指定了文件类型列表后，可以使用 [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType) 向列表中添加新的文件类型，并使用 [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType) 从列表中删除文件类型。
 
 然后扫描程序使用 Windows iFilter 扫描以下文件类型。 对于以下文件类型，将使用为标签指定的条件标记文档。
 
@@ -213,19 +252,9 @@ ms.locfileid: "34423317"
 |DigitalNegative|.dng|
 |Pfile|。pfile|
 
-请注意，当标签将常规保护应用于文档时，文件扩展名将更改为 .pfile。 此外，文件将变为只读，直到该文件被已授权用户打开并以本机格式保存。 文本和图像文件也可以更改其文件扩展名并变为只读。 如果不想要此行为，可以禁止特定文件类型的文件受保护。 例如，禁止 PDF 文件变为受保护的 PDF (.ppdf) 文件，禁止 .txt 文件变为受保护的文本 (.ptxt) 文件。
+如果扫描程序应用保护标签，默认只有 Office 文件类型受到保护。 可以更改此行为，让其他文件类型也受到保护。 不过，如果标签向文档应用常规保护，文件扩展名变成 .pfile。 此外，文件将变为只读，直到该文件被已授权用户打开并以本机格式保存。 文本和图像文件也可以更改其文件扩展名并变为只读。 
 
-有关对不同文件类型的不同保护级别以及如何通过编辑注册表来控制保护行为的详细信息，请参阅管理员指南中的[保护支持的文件类型](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection)部分。
-
-对于扫描程序的正式发布版本：
-
-- 默认情况下，所有文件类型都会受到保护。
-
-
-对于扫描程序的预览版本：
-
-- 默认情况下，只有 Office 类型类型会受到保护。
-
+例如，若要将此默认扫描程序行为更改为以常规方式保护其他文件类型，必须手动编辑注册表，并指定要保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 在面向开发人员的本文档中，常规保护被称为“PFile”
 
 ## <a name="when-files-are-rescanned-by-the-azure-information-protection-scanner"></a>当文件由 Azure 信息保护扫描程序重新扫描时
 
@@ -244,7 +273,7 @@ ms.locfileid: "34423317"
 
 ## <a name="using-the-scanner-with-alternative-configurations"></a>使用具有备选配置的扫描程序
 
-在使用扫描程序的预览版本时，扫描程序支持两种备选方案，其中对于任何情况都不需要配置标签： 
+扫描程序支持两种备选方案，在任何一种方案中都无需配置标签： 
 
 - 将默认标签应用于数据存储库中的所有文件。
     
@@ -301,7 +330,7 @@ ms.locfileid: "34423317"
     
     - 扫描大型文件明显比扫描小文件耗时更多。
 
-- 对于扫描程序的预览版本：
+- 此外：
     
     - 确认运行扫描程序的服务帐户仅具有[扫描程序先决条件](#prerequisites-for-the-azure-information-protection-scanner)部分中记录的权限，然后再将[高级客户端属性](../rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner)配置为禁用扫描程序的低完整性级别。
     
@@ -314,6 +343,8 @@ ms.locfileid: "34423317"
 
 利用其他适用于扫描程序的 cmdle，可更改该扫描程序的服务帐户和数据库、获取扫描程序的当前设置，以及卸载扫描程序服务。 扫描程序使用以下 cmdlet：
 
+- [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)
+
 - [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/Add-AIPScannerRepository)
 
 - [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration)
@@ -324,21 +355,17 @@ ms.locfileid: "34423317"
 
 - [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/Remove-AIPScannerRepository)
 
+- [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes)
+
 - [Set-AIPScanner](/powershell/module/azureinformationprotection/Set-AIPScanner)
 
 - [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)
 
+- [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)
+
 - [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository)
 
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
-
-扫描程序预览版本中的其他 cmdlet：
-
-- [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType)
-
-- [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType)
-
-- [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)
 
 
 ## <a name="event-log-ids-and-descriptions"></a>事件日志 ID 和说明
@@ -361,38 +388,9 @@ ms.locfileid: "34423317"
 
 如果服务器启动后，扫描程序已完成其一次性扫描，或扫描程序已完成连续计划的一个周期，则会记录此事件。
 
-----
-
-信息 913
-
-**扫描程序已停止，因为扫描程序被设置为“从不”。**
-
-如果配置扫描程序运行一次（而不是连续运行），并且启动计算机后已手动重启 Azure 信息保护扫描程序服务，则会记录此事件。  
-
-若要再次扫描文件，必须将计划设置为“一次”或“连续”，然后手动重启该服务。 若要更改计划，请使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet 和 Schedule 参数。
+如果扫描程序配置为运行一次（而不是连续运行），必须将计划设置为“一次”或“连续”，并手动重启服务，然后才能重新扫描文件。 若要更改计划，请使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet 和 Schedule 参数。
 
 ----
-
-错误 912
-
-**出现未知错误。**
-
-详细报告中记录了更多信息，该报告的存储位置为 %localappdata%\Microsoft\MSIP\Scanner\Reports\DetailedReport_YYYY_MM_DD_HH_MM.csv。
-
-如果此事件继续被记录，请联系 [Microsoft 支持部门](../get-started/information-support.md#to-contact-microsoft-support)。 
-
-----
-
-错误 914
-
-**由于配置出错，服务自动停止：策略文件丢失或损坏。**
-
-如果 Azure 信息保护客户端未向要运行的扫描程序提供有效策略文件，则会记录此事件。
-
-Azure 信息保护策略存储在 %localappdata%\Microsoft\MSIP 中，并且必须使用标签（具有应用自动分类的条件）进行配置。 或者，必须将策略配置为使用默认标签。
-
-请确保防火墙不会阻止所需的 Internet 连接。 有关详细信息，请参阅 Azure 信息保护的[防火墙和网络基础结构](../get-started/requirements.md#firewalls-and-network-infrastructure)要求。 如果无法实现 Internet 连接，请按照说明进行操作，以支持使用[断开连接的计算机](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers)。
-
 
 ## <a name="next-steps"></a>后续步骤
 

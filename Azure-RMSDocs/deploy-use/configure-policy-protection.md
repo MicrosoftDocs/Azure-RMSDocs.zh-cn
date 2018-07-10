@@ -4,18 +4,18 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 00305b1ba4f9ff750dd0fde9eb6a524cead39094
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 0cac50caf3a7ecf9189d7731f1248e543871be9a
+ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444208"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37068931"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -100,13 +100,26 @@ ms.locfileid: "34444208"
     
     提示：如果习惯于创建和编辑自定义模板，请参考[曾使用 Azure 经典门户执行的任务](migrate-portal.md)获取帮助。
 
+    - 选择预定义的模板：使用已配置的一个默认模板或自定义模板。 请注意，如果正在编辑的标签之前曾使用“设置权限”选项，则不会显示此选项。
+    
+    若要选择预定义的模板，此模板必须为已发布（未存档），且必须未链接到另一个标签。 选中此选项后，可以使用“编辑模板”按钮[将模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)。
+    
+    提示：如果习惯于创建和编辑自定义模板，请参考[曾使用 Azure 经典门户执行的任务](migrate-portal.md)获取帮助。
+
 7. 如果为“Azure (云密钥)”选择了“设置权限”，此选项允许配置可在模板中配置的相同设置。 
     
     选择“添加权限”，在“添加权限”边栏选项卡上，选择有权使用所选标签保护的内容的第一组用户和组：
     
-    - 选择“从列表中选择”以添加组织中的所有用户，方法是通过选择“添加 \<组织名称 > -所有成员”。 此设置不包括来宾帐户。 或者，浏览目录。
+    - 依次选择“从列表中选择”和“添加\<组织名称> - 所有成员”，添加组织中的所有用户。 此设置不包括来宾帐户。 也可以选择“添加任何身份已验证的用户(预览)”或浏览目录。
         
-        用户或组必须有电子邮件地址。 在生产环境中，他们几乎始终都有电子邮件地址，但在简单的测试环境中，可能需要为用户帐户或组添加电子邮件地址。
+        选择所有成员或浏览目录时，用户和组必须有电子邮件地址。 在生产环境中，他们几乎始终都有电子邮件地址，但在简单的测试环境中，可能需要为用户帐户或组添加电子邮件地址。
+        
+        ###### <a name="more-information-about-add-any-authenticated-users"></a>详细了解如何**添加任何身份已验证的用户** 
+        此设置不限制谁能访问标签保护的内容，同时仍加密内容，并提供限制内容使用方式（权限）和访问方式（到期和脱机访问）的选项。 不过，打开受保护内容的应用程序必须能够支持所使用的身份验证。 鉴于此，Google 等联合社交提供程序以及一次性密码身份验证应仅在你使用 Exchange Online 和 Office 365 邮件加密的新功能时，才只用于电子邮件。 可以将 Microsoft 帐户与 Azure 信息保护查看器和 Office 2016 即点即用结合使用。 
+        
+        下面介绍了一些典型方案，适用于任何身份已验证的用户的设置：- 任何人都可以查看内容，但要限制内容的使用方式。 例如，不希望对内容执行编辑、复制或打印操作。
+            - 无需限制谁能访问内容，但要能够跟踪谁打开和可能撤销了内容。
+            - 要求必须加密内容（无论是静态还是传输中），但无需执行访问控制。     
         
     - 选择“输入详细信息”以手动为单个用户或组（内部或外部）指定电子邮件地址。 或者，使用此选项，通过输入另一个组织的任何域名来指定该组织中的所有用户。 还可以通过输入社交提供程序程序的域名（例，如 gmail.com、hotmail.com 或 outlook.com），将此选项用于这些程序。
         
@@ -188,7 +201,7 @@ ms.locfileid: "34444208"
 
 4. 如果已选中，请清除以下选项：“在 Word、Excel、PowerPoint 和文件资源管理器中提示用户获取自定义权限”。
 
-5. 单击“保护”边栏选项卡上的“确定”。
+5. 单击“保护”边栏选项卡上的“确定”，再单击“标签”边栏选项卡上的“保存”。
 
 
 ### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization-and-that-supports-immediate-revocation"></a>示例 2：将只读权限限制到其他组织中所有用户并且支持即时撤销的标签
@@ -203,13 +216,13 @@ ms.locfileid: "34444208"
 
 3. 在“添加权限”边栏选项卡，选择“输入详细信息”。
 
-4. 输入其他组织的域名，例如 fabrikam.com。然后选择“添加”。
+4. 输入其他组织的域名，例如 fabrikam.com。 然后选择“添加”。
 
 5. 在“从预设中选择权限”中，选择“查看器”，然后选择“确定”。
 
 6. 回到“保护”边栏选项卡，为“允许脱机访问设置”选择“从不”。
 
-7. 单击“保护”边栏选项卡上的“确定”。
+7. 单击“保护”边栏选项卡上的“确定”，再单击“标签”边栏选项卡上的“保存”。
 
 
 ### <a name="example-3-add-external-users-to-an-existing-label"></a>示例 3：将外部用户添加到现有标签
@@ -228,7 +241,7 @@ ms.locfileid: "34444208"
 
 6. 为每个要添加此标签的用户（或组）重复步骤 4 和 5。 然后单击“确定” 。
 
-7. 在”保护”边栏选项卡上，单击“确定”。
+7. 单击“保护”边栏选项卡上的“确定”，再单击“标签”边栏选项卡上的“保存”。
 
 ### <a name="example-4-label-for-protected-email-that-supports-less-restrictive-permissions-than-do-not-forward"></a>示例 4：针对受保护电子邮件并提供限制性低于“不要转发”的权限的标签
 
@@ -238,11 +251,11 @@ ms.locfileid: "34444208"
 
 - 当 Exchange Online 使用 [Office 365 邮件加密中的新功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)时，此标签适用于电子邮件。 
  
-- 对于自动受保护的 Office 附件，可在浏览器中查看这些文档。 若要编辑这些文档，请使用 Office 2016 即点即用和使用相同电子邮件地址的 Microsoft 帐户下载和编辑它们。 [详细信息](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- 对于自动受保护的 Office 附件，可以在浏览器中查看这些文档。 若要编辑这些文档，请使用 Office 2016 即点即用和使用相同电子邮件地址的 Microsoft 帐户下载和编辑它们。 [详细信息](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 
 > [!NOTE]
-> Exchange Online 即将推出新选项 - [仅加密](configure-usage-rights.md#encrypt-only-option-for-emails)。 此选项不可用于标签配置。 但是，你可以使用此示例配置具有相同使用权限集的标签。
+> Exchange Online 即将推出新选项 - [仅加密](configure-usage-rights.md#encrypt-only-option-for-emails)。 此选项不可用于标签配置。 不过，如果知道收件人是谁，可以使用此示例来配置拥有同一组使用权限的标签。 
 
 用户在“收件人”框中指定电子邮件地址时，该地址必须与为此标签配置指定的用户地址相同。 因为用户可能属于组并且拥有多个电子邮件地址，所以他们指定的电子邮件地址不必与你为权限指定的电子邮件地址匹配。 然而，指定同一电子邮件地址是确保成功对收件人授权的最简单的方法。 要详细了解如何向用户授予权限，请参阅[准备用户和组以便使用 Azure 信息保护](../plan-design/prepare.md)。 
 
@@ -264,10 +277,30 @@ ms.locfileid: "34444208"
 
 6. 在“添加权限”边栏选项卡上单击“确定”。
 
-7. 在”保护”边栏选项卡上，单击“确定”。
+7. 单击“保护”边栏选项卡上的“确定”，再单击“标签”边栏选项卡上的“保存”。
+
+
+### <a name="example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>示例 5：加密内容但不限制谁能访问内容的标签
+
+此配置的优势在于，无需指定用户、组或域来保护电子邮件或文档。 仍可以加密内容，并指定使用权限、到期日期和脱机访问。 仅当无需限制谁能打开受保护文档或电子邮件时，才使用此配置。 [详细了解此设置](#more-information-about-add-any-authenticated-users)
+
+1. 在“保护”边栏选项卡，确保选中“Azure (云密钥)”。
+    
+2. 请务必依次选择“设置权限”和“添加权限”。
+
+3. 在“添加权限”边栏选项卡上的“从列表中选择”选项卡中，选择“添加任何身份已验证的用户(预览)”。
+
+4. 选择相应权限，再单击“确定”。
+
+5. 如有需要，返回到“保护”边栏选项卡，配置“内容有效期限”和“允许脱机访问”设置，再单击“确定”。
+
+6. 在“标签”边栏选项卡上，选择“保存”。
+
 
 ## <a name="next-steps"></a>后续步骤
 
-有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
+有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。 
+
+Exchange 邮件流规则还能根据标签应用保护。 有关详细信息和示例，请参阅[配置 Azure 信息保护标签的 Exchange Online 邮件流规则](configure-exo-rules.md)。  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

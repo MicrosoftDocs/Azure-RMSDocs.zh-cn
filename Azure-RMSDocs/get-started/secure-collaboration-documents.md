@@ -4,7 +4,7 @@ description: 用于在受 Azure 信息保护保护的文档上进行协作的端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/21/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5c24747bcb05f7004f7d42b0145ce6cc1bbade5
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 4a642960e81a7d1a5cb6f8433e4098bed06a663d
+ms.sourcegitcommit: dc98226f339339c10fd01535a1adf7e30a817a41
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444328"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36300017"
 ---
 # <a name="secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护保护文档协作
 
@@ -27,7 +27,7 @@ ms.locfileid: "34444328"
 
 这些权限被称为使用权限，并包含查看、编辑、打印等权限。 你可以在文档受到保护时定义个人使用权限，也可以定义一组使用权限，这被称为权限级别。 通过权限级别，你可以更轻松地选择通常一起使用的使用权限，例如审阅者和合著者。 有关使用权限和权限级别的详细信息，请参阅[配置 Azure Rights Management 的使用权限](../deploy-use/configure-usage-rights.md)。
 
-当你配置这些权限时，还可以指定它们适用于哪些用户：
+配置这些权限时，可以指定向哪些用户授予它们：
 
 - **对于你自己的组织或使用 Azure Active Directory 的另一组织中的用户**：可以指定 Azure AD 用户帐户、Azure AD 组或该组织中的所有用户。 
 
@@ -35,14 +35,18 @@ ms.locfileid: "34444328"
     
     若要使用 Microsoft 帐户打开文档，用户必须使用 Office 2016 即点即用。 其他 Office 版本尚不支持使用 Microsoft 帐户打开受 Office 保护的文档。
 
+- **对于任何身份已验证的用户**：此选项适用于不需要控制谁能访问受保护文档的情况，前提是可以验证用户身份。 如果内容受 Office 365 邮件加密的新功能保护，可以通过 Azure AD（使用 Microsoft 帐户），甚至是联合社交提供程序或一次性密码进行身份验证。 
+
 作为管理员，你可以配置 Azure 信息保护标签以应用权限和授权用户。 此配置使用户和其他管理员应用正确的保护设置变得非常简单，因为他们只需应用标签而无需指定任何详细信息。 以下部分提供了一个演练示例，用于保护支持与内外部用户进行安全协作的文档。
 
 
 ## <a name="example-configuration-for-a-label-to-apply-protection-to-support-internal-and-external-collaboration"></a>让标签应用保护以支持外部协作的配置示例
 
-此示例演示了如何配置现有标签以应用保护，以便组织中的用户可以与另一个拥有 Office 365 或 Azure AD 的组织中的所有用户、其他具有 Office 365 或 Azure AD 的组织中的组以及在 Azure AD 中没有帐户而是使用 Gmail 电子邮件地址的用户就文档进行协作。 
+此示例演示了如何配置现有标签以应用保护，以便组织中的用户可以与另一个拥有 Office 365 或 Azure AD 的组织中的所有用户、其他具有 Office 365 或 Azure AD 的组织中的组以及在 Azure AD 中没有帐户而是使用 Gmail 电子邮件地址的用户就文档进行协作。
 
-1. 选择已在全局策略中或指定了作用域的策略中的标签。 在“保护”边栏选项卡中，确保选中“Azure (云密钥)”。
+由于方案限制为只有特定人员拥有访问权限，因此不包括任何身份已验证的用户的设置。 有关如何使用此设置配置标签的示例，请参阅[示例 5：加密内容但不限制谁能访问内容的标签](../deploy-use/configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it)。  
+
+1. 选择已在全局策略中或指定了作用域的策略中的标签。 在“保护”边栏选项卡，确保选中“Azure (云密钥)”。
     
 2. 务必选中“设置权限”，然后选择“添加权限”。
 
@@ -62,11 +66,11 @@ ms.locfileid: "34444328"
         
     ![为安全协作配置权限](../media/collaboration-permissions.png)
 
-
-
 5. 在“添加权限”边栏选项卡上单击“确定”。
 
-6. 在”保护”边栏选项卡上，单击“确定”。 
+6. 在”保护”边栏选项卡上，单击“确定”。
+
+7. 在“标签”边栏选项卡上，选择“保存”。 
 
 ## <a name="applying-the-label-that-supports-secure-collaboration"></a>应用支持安全协作的标签
 
@@ -98,8 +102,9 @@ ms.locfileid: "34444328"
 
 ![Azure 信息保护权限对话框示例](../media/example-permisisons-popup.png)
 
+注意：如果文档由同时使用 Azure 信息保护的外部用户打开，Office 应用程序不会显示文档的分类标签，尽管仍保留标签中的任何视觉标记。 相反，外部用户可以根据组织的分类来应用自己的标签。 如果这些外部用户随后将编辑过的文档发回给你，Office 会在文档重新打开时显示原始分类标签。
 
-在文档打开之前，会发生以下身份验证流程之一：
+在受保护文档打开前，将会发生以下身份验证流之一：
 
 - 对于拥有 Azure AD 帐户的用户，他们使用自己的 Azure AD 凭据由 Azure AD 进行身份验证，随后文档打开。 
 
@@ -118,15 +123,19 @@ ms.locfileid: "34444328"
 
 ### <a name="supported-scenarios-for-opening-protected-documents"></a>用于打开受保护的文档的受支持场景
 
-下表总结了所支持的可用于打开和编辑受保护文档的不同身份验证方法。
+下表总结了不同的身份验证方法，支持使用这些方法来查看和编辑受保护文档。
 
-此外，适用于 iOS 和 Android 的 Azure 信息保护查看器可以使用 Microsoft 帐户打开文件进行查看。
+此外，以下方案也支持查看文档：
 
-|用于打开和编辑文档的平台： <br />Word、Excel、PowerPoint|身份验证方法：<br />Azure AD|身份验证方法：<br />Microsoft 帐户|
+- 适用于 Windows、iOS 和 Android 的 Azure 信息保护查看器可以使用 Microsoft 帐户打开文件。 
+
+- 如果社交提供程序和一次性密码与 Exchange Online 和 Office 365 邮件加密的新功能一起用于执行身份验证，浏览器可以打开受保护附件。 
+
+|用于查看和编辑文档的平台： <br />Word、Excel、PowerPoint|身份验证方法：<br />Azure AD|身份验证方法：<br />Microsoft 帐户|
 |---------------|----------|-----------|-----------|
 |Windows|是 [[1]](#footnote-1)|是 [[2]](#footnote-2)|
 |iOS|是 [[1]](#footnote-1)|否|
-|Android|是 [[1]](#footnote-1)|否 |
+|Android|是 [[1]](#footnote-1)|否|
 |MacOS|是 [[1]](#footnote-1)|否|
 
 ###### <a name="footnote-1"></a>脚注 1
@@ -134,6 +143,8 @@ ms.locfileid: "34444328"
 
 ###### <a name="footnote-2"></a>脚注 2
 当前仅受 Office 2016 即点即用支持。
+
+
 
 
 ## <a name="next-steps"></a>后续步骤

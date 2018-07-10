@@ -4,7 +4,7 @@ description: 此信息有助于规划和管理 Azure 信息保护租户密钥。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/05/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 714d00036d263cc64e44b67b547d743ff4cbab4b
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 6456bb5e124b1ec29090132e0bce750260c10f25
+ms.sourcegitcommit: b993c332e53d7aa48d93d4bbd42c80abcf79b351
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208645"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37107009"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
@@ -107,10 +107,11 @@ ms.locfileid: "30208645"
 ### <a name="prerequisites-for-byok"></a>BYOK 的先决条件
 有关自带密钥 (BYOK) 的先决条件列表，请参阅以下表格。
 
-|要求|详细信息|
+|要求|更多信息|
 |---------------|--------------------|
 |你的 Azure 信息保护租户必须具有 Azure 订阅。 如果没有订阅，可以注册[免费帐户](https://azure.microsoft.com/pricing/free-trial/)。 <br /><br /> 若要使用受 HSM 保护的密钥，必须拥有 Azure Key Vault 高级服务层。|免费的 Azure 订阅提供相应的访问权限，可配置 Azure Active Directory 以及 Azure 权限管理自定义模板（**可访问 Azure Active Directory**），但不足以使用 Azure 密钥保管库。 若要确认拥有可用于 BYOK 的 Azure 订阅，请使用 [Azure 资源管理器](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx) PowerShell cmdlet： <br /><br /> 1.若要启动 Azure PowerShell 会话，请选择“以管理员身份运行”选项，并使用以下命令以 Azure 信息保护租户的全局管理员身份登录：`Login-AzureRmAccount`<br /><br />2.键入以下命令，并确认可以看到显示了订阅名称和 ID 以及 Azure 信息保护租户 ID 的值，并且状态为“已启用”：`Get-AzureRmSubscription`<br /><br />如果没有显示任何值，并且返回到提示，则表示没有可用于 BYOK 的 Azure 订阅。 <br /><br />**注意**：如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，则除 BYOK 先决条件以外，必须拥有最低版本为 11.62 的 Thales 固件。|
-|若要使用本地创建的受 HSM 保护的密钥：为 Key Vault BYOK 所列出的所有先决条件。 |请参阅 Azure 密钥保管库文档中的 [Prerequisites for BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br /> **注意**：如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，则除 BYOK 先决条件以外，必须拥有最低版本为 11.62 的 Thales 固件。|
+|若要使用本地创建的受 HSM 保护密钥，请执行以下操作： <br /><br />- 针对 Key Vault BYOK 列出的所有先决条件。 |请参阅 Azure 密钥保管库文档中的 [Prerequisites for BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br /> **注意**：如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，则除 BYOK 先决条件以外，必须拥有最低版本为 11.62 的 Thales 固件。|
+|如果包含租户密钥的密钥保管库使用 Key Vault 虚拟网络服务终结点（当前处于预览阶段）： <br /><br />- 选择允许受信任 Microsoft 服务绕过此防火墙的选项。|有关详细信息，请参阅[宣布推出 Key Vault 虚拟网络服务终结点（预览版）](https://blogs.technet.microsoft.com/kv/2018/06/25/announcing-virtual-network-service-endpoints-for-key-vault-preview/)。|
 |适用于 Windows PowerShell 的 Azure Rights Management 管理模块。|有关安装说明，请参阅[安装 AADRM PowerShell 模块](../deploy-use/install-powershell.md)。 <br /><br />如果之前已安装了此 Windows PowerShell 模块，请运行以下命令检查版本号是否高于或等于 **2.9.0.0**：`(Get-Module aadrm -ListAvailable).Version`|
 
 有关 Thales HSM 及其如何与 Azure 密钥保管库一起使用的详细信息，请参阅 [Thales website](https://www.thales-esecurity.com/msrms/cloud)（Thales 网站）。

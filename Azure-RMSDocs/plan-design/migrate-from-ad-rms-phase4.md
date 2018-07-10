@@ -4,7 +4,7 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 4 阶段包括从 AD 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7aaec205863bf855cc68887f3eafed27386ee49f
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 254e3ecc1292d2b9db0e291f9c45af343f3ccb9c
+ms.sourcegitcommit: 93e83ed71250e408e11fb098551e486282494013
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36324302"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
@@ -34,7 +35,9 @@ ms.lasthandoff: 03/28/2018
 
 使用选择的 Azure 信息保护租户密钥拓扑单独执行以下操作：
 
-1. 若要确保用户能够读取使用 AD RMS 保护发送的电子邮件，请确保你拥有 AD RMS 群集的 DNS SRV 记录。 如果未在步骤 7 中创建 DNS SRV 记录以实现客户端重新配置，请立即创建此记录以支持 Exchange Online。 [说明](migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)
+1. Exchange Online 必须知道与租户中的密钥对应的群集 AD RMS URL，才能解密受 AD RMS 保护的电子邮件。 这是通过 AD RMS 群集的 DNS SRV 记录完成，此记录还用于将 Office 客户端重新配置为使用 Azure 信息保护。 如果未在步骤 7 中创建 DNS SRV 记录以实现客户端重新配置，请立即创建此记录以支持 Exchange Online。 [说明](migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)
+    
+    此 DNS 记录就位后，使用 Outlook 网页版和移动电子邮件客户端的用户便能在这些应用中查看受 AD RMS 保护的电子邮件，并且 Exchange 可以使用你从 AD RMS 导入的密钥，对已受 AD RMS 保护的内容执行解密、编制索引、日志记录和保护操作。  
 
 2. 运行 Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) 命令。 如需运行此命令的帮助，请参阅 [Exchange Online：IRM 配置](/..deploy-use/configure-office365.md#exchange-online-irm-configuration)中的分步说明。
     
@@ -118,12 +121,9 @@ ms.lasthandoff: 03/28/2018
 
 #### <a name="registry-edits-for-exchange"></a>Exchange 的注册表编辑
 
-对于所有 Exchange Server，请删除在准备阶段针对 LicenseServerRedirection 添加的注册表值。 这些值已被添加到以下路径：
+对于所有 Exchange 服务器，将以下注册表值添加到 LicenseServerRedirection，具体视 Exchange 版本而定：
 
-HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
-
-HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
-
+---
 
 对于 Exchange 2013 和 Exchange 2016 - 注册表编辑 1：
 
@@ -134,7 +134,7 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
 **类型：** Reg_SZ
 
-**值：**https://\<AD RMS Intranet 授权 URL\>/_wmcs/licensing
+**值：** https://\<AD RMS Intranet 授权 URL\>/_wmcs/licensing
 
 **数据：**
 
@@ -147,7 +147,7 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
 ---
 
-对于 Exchange 2013 - 注册表编辑 2：
+Exchange 2013 - 注册表编辑 2：
 
 **注册表路径：**
 
@@ -155,7 +155,7 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
 **类型：** Reg_SZ
 
-**值：**https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
+**值：** https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
 
 **数据：**
 
@@ -176,7 +176,7 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
 **类型：** Reg_SZ
 
-**值：**https://\<AD RMS Intranet 授权 URL\>/_wmcs/licensing
+**值：** https://\<AD RMS Intranet 授权 URL\>/_wmcs/licensing
 
 **数据：**
 
@@ -198,7 +198,7 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
 **类型：** Reg_SZ
 
-**值：**https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
+**值：** https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
 
 **数据：**
 

@@ -4,7 +4,7 @@ description: 了解并实施 Azure 信息保护中的 Azure Rights Management �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2018
+ms.date: 05/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5d35f7faed0e02a253e5ba48cbdb2bca0aa76419
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: aed109667fe5c58f50735b8cc223f02009ebde55
+ms.sourcegitcommit: 0782e460d29e11974ec1c4bb9286572d0ef000d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37102824"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>为 Azure Rights Management 和发现服务或数据恢复配置超级用户
 
@@ -53,7 +54,7 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 - 使用 [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) cmdlet 限制和监视分配为 Office 365 或 Azure 信息保护租户全局管理员或获得了 GlobalAdministrator 角色的管理员。 这些用户可以启用超级用户功能并将用户（包括其自己）分配为超级用户，并且可能解密组织保护的所有文件。
 
-- 若要查看已将哪些用户和服务帐户单独分配为超级用户，请使用 [Get-AadrmSuperUser cmdlet](/powershell/module/aadrm/get-aadrmsuperuser)。 若要确定是否配置了超级用户组，请使用 [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperusergroup) cmdlet 和标准用户管理工具查看哪些用户是该组的成员。 与所有管理操作一样，对于启用或禁用超级功能，以及添加或删除超级用户操作，将会加以记录，并且可使用 [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) 进行审核。 有关示例，请参阅下一部分。 超级用户解密文件时，会记录此操作，并且可使用[使用情况日志记录](log-analyze-usage.md)进行审核。
+- 若要确定已将哪些用户和服务帐户单独分配为超级用户，请使用 [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperuser) cmdlet。 若要确定是否配置了超级用户组，请使用 [Get-AadrmSuperUserGroup](/powershell/module/aadrm/get-aadrmsuperusergroup) cmdlet 和标准用户管理工具，以确认哪些用户是此组的成员。 与所有管理操作一样，对于启用或禁用超级功能，以及添加或删除超级用户操作，将会加以记录，并且可使用 [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) 进行审核。 有关示例，请参阅下一部分。 超级用户解密文件时，会记录此操作，并且可使用[使用情况日志记录](log-analyze-usage.md)进行审核。
 
 - 如果你不需要日常服务的超级用户功能，仅在需要时启用该功能，并使用 [Disable-AadrmSuperUserFeature](/powershell/module/aadrm/disable-aadrmsuperuserfeature) cmdlet 再次禁用。
 

@@ -4,18 +4,18 @@ description: 在配置标签的条件时，可以自动将标签分配到文档�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 053d8dfd51d8c79cdc733f4395226c12ab6e2102
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: c7ef58cd42a793cacb3b64aec33d2cd0a0b105f4
+ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32326746"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37068873"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
@@ -44,7 +44,7 @@ ms.locfileid: "32326746"
     
     如果文档和电子邮件之前已手动添加标签（或之前已使用更高级别的分类添加标签），则不能使用自动分类。 
 
-- 建议的分类会在保存文档时应用到 Word、Excel 和 PowerPoint。 不能将建议的分类用于 Outlook。
+- 建议的分类会在保存文档时应用到 Word、Excel 和 PowerPoint。 除非配置当前处于预览阶段的[高级客户端设置](../rms-client/client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)，否则无法使用建议的 Outlook 分类。
     
     对于之前已设置标签（更高级别的分类标签）的文档，无法使用建议的分类。 
 

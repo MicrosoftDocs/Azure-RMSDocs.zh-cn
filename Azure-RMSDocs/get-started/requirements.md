@@ -4,7 +4,7 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/18/2018
+ms.date: 06/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9cdb205488c300f1df1e002be105765a90ce1a1a
-ms.sourcegitcommit: 09072591f1aa9878d063feb78ffcc4accec63fd1
+ms.openlocfilehash: 18168f89c762011146f7f3f131079f5a502820ac
+ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2018
-ms.locfileid: "34308165"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37069370"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -83,6 +83,8 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 对于列出的服务器版本，远程桌面服务支持用于 Azure 信息保护客户端。 将 Azure 信息保护客户端与远程桌面服务结合使用时，如果删除用户配置文件，请勿删除“%Appdata%\Microsoft\Protect”文件夹。
 
 当 Azure 信息保护客户端通过使用 Azure 权限管理服务保护数据时，支持 Azure 权限管理服务的[同一设备](requirements-client-devices.md)可以使用此数据。
+
+Azure 信息保护客户端有[其他先决条件](../rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client)，管理员指南中列出了这些条件。
 
 ## <a name="applications"></a>应用程序
 

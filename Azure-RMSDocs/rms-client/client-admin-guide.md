@@ -4,7 +4,7 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 17fa8d2269bce0d6ef01506bcbadafd01fc768b6
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 50eefe938a4d37dc63d2209a71b5a06f84a24587
+ms.sourcegitcommit: b5cefaefdd460ed5249db8747f232972b470c619
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444225"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263308"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -168,9 +168,19 @@ Azure 信息保护客户端支持 Office 365 支持的同种语言。 有关这�
 
 Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供新功能和修补程序。 公告会发布到团队的 [Yammer 网站](https://www.yammer.com/AskIPTeam)。
 
-如果你是使用可执行文件或 Windows 安装程序文件安装的客户端，则必须从 Microsoft 下载中心手动下载新版本，为客户端安装更新。 如果你是使用 Windows 更新安装的客户端，新版本会在发布几周后自动在目录中变为可供下载。 
+如果使用的是 Windows 更新，Azure 信息保护客户端会自动升级客户端的正式版本，无论客户端是如何安装的。 新客户端版本会在发布后的几周内发布到目录中。
+
+也可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载新版本，手动升级客户端。 然后，安装新版本来升级客户端。 必须使用这种方法来升级预览版。
+
+手动升级时，只有当要更改安装方法时，才需要先卸载旧版本。 例如，从客户端的可执行文件 (.exe) 版本更改为客户端的 Windows 安装程序 (.msi) 版本。 或当需要安装旧版客户端时。 例如，出于测试目的已安装当前预览版，现在需要还原到当前正式版本。
 
 使用[版本发行历史记录和支持策略](../rms-client/client-version-release-history.md)了解 Azure 信息保护客户端的支持策略、目前支持的版本以及受支持版本的新增功能和变更之处。 
+
+### <a name="upgrading-the-azure-information-protection-scanner"></a>升级 Azure 信息保护扫描程序
+
+若要升级 Azure 信息保护扫描程序，请安装最新版 Azure 信息保护客户端。
+
+如果安装的旧客户端版本是 1.26.6.0 或更低版本，请使用 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) 重新运行扫描程序安装命令。 扫描程序和存储库的配置设置将会得到保留。 重新安装扫描程序会向扫描程序服务帐户授予对扫描程序数据库的删除权限，这是报表所必需的权限。
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>卸载 Azure 信息保护客户端
 

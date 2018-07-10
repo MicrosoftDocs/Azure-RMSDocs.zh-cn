@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ff64b5bb4f73533352aa5497a98263c86842800
-ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
+ms.openlocfilehash: 732eb98b1cbd1af575f15ddc992349d77b436131
+ms.sourcegitcommit: 78d368a4480cc1febedc8535c6c3e184e69caf7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34423249"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37088253"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -25,7 +25,9 @@ ms.locfileid: "34423249"
 
 Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 
 
-可从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新的 GA 发行版和当前预览版。 这些版本还随附在 Microsoft 更新目录（类别：Azure 信息保护）中，可利用 WSUS/配置管理器或者使用 Microsoft 更新的其他软件部署机制来部署客户端。
+可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式版本和当前预览版（若有）。 Microsoft 更新目录（类别：“Azure 信息保护”）还随附正式版本，所以可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
+
+有关详细信息，请参阅[升级和维护 Azure 信息保护客户端](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)。
 
 ### <a name="servicing-information-and-timelines"></a>维护信息和日程表
 
@@ -42,19 +44,34 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
-## <a name="versions-later-than-12660"></a>高于 1.26.6.0 的版本
+## <a name="version-12950"></a>版本 1.29.5.0 
 
-如果客户端版本高于 1.26.6.0，则这是用于测试和评估的预览内部版本。 
- 
-发布日期：2018/05/21 
+**发布日期**：2018 年 6 月 26 日
 
-当前的预览版本为“1.27.48.0”，在客户端的最新正式版之后具有以下更改。  
+此版本包括 RMS 客户端的 MSIPC 1.0.3403.1224 版本。
+
+**修补程序**：
+
+- 对于 Outlook 版本 16.0.9324.1000 及更高版本（即点即用），Azure 信息保护栏支持最新监视器显示选项，旧选项可能会导致栏显示在 Outlook 应用程序外面。
+
+- [按 Office 应用程序类型](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)配置的视觉标记现在替换 Azure 信息保护标签应用的旧页眉或页脚。
+
+- 如果 Excel 文件已有标签，当标签应用视觉标记时，新工作表现在也应用标签的视觉标记。
+
+- 借助高级客户端设置[使用现有自定义属性来设置 Office 文档的标签](client-admin-guide-customizations.md#label-an-office-document-by-using-an-existing-custom-property)时，自动标签不会替代手动标签。
+
+
+## <a name="version-127480"></a>版本 1.27.48.0
+
+**发布日期**：2018 年 5 月 30 日
+
+此版本包括 RMS 客户端的 MSIPC 1.0.3403.1224 版本。
 
 **新增功能**： 
 
 - 对于 Azure 信息保护扫描程序：
     
-    - 你可以指定要列入扫描范围或者从扫描范围中排除的文件类型列表。 若要指定此列表，请使用 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)。 在指定了文件类型列表后，可以使用 [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType) 添加新的文件类型，使用 [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType) 从列表中删除文件类型。
+    - 你可以指定要列入扫描范围或者从扫描范围中排除的文件类型列表。 若要指定此列表，请使用 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)。 指定文件类型列表后，可以使用 [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes) 向列表添加新文件类型，并能使用 [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes) 从列表中删除文件类型。
     
     - 不通过应用默认标签来检查内容也可标记文件。 使用 [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository) cmdlet，并将“MatchPolicy” 参数设置为“关闭” 
     
@@ -69,6 +86,8 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 **其他更改**：
 
 - 对于 Azure 信息保护扫描程序： 
+    
+    - 如果安装了旧版扫描程序，请在升级 Azure 信息保护客户端后，使用 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) 重新运行扫描程序安装命令。 扫描程序和存储库的配置设置将会得到保留。 重新安装扫描程序会向扫描程序服务帐户授予对扫描程序数据库的删除权限，这是报表所必需的权限。    
     
     - [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) 的“ScanMode” 参数被重命名为“Enforce”其值为“Off”和“On”。
     
@@ -128,7 +147,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 会以 Office 64 位成功启动，以便可以保护文档和电子邮件。
 
-- 可以现在为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置标签，也可使用高级客户端设置隐藏自定义权限选项。 [详细信息](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users) 
+- 现在可以针对 Word、Excel、PowerPoint 和文件资源管理器为用户定义的权限配置标签，并能使用高级客户端设置隐藏自定义权限选项。 [详细信息](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users) 
 
 - 如果为 Azure 信息保护策略中的视觉标记配置了客户端上未安装的字体名称，则将回退到宋体字体。
 
@@ -136,10 +155,13 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 对于 Office 应用，改进性能和内存占用率。
 
-- 为用户定义的权限和 HYOK (AD RMS) 保护配置了标签时，该保护不再错误地使用 Azure Rights Management 服务。
+- 为用户定义的权限和 HYOK (AD RMS) 保护配置标签时，保护配置不再错误地使用 Azure Rights Management 服务。
 
 - 为了获得更一致的管理体验，子标签不再继承其父标签的视觉标记和保护设置。
 
+**其他更改**：
+
+- 对于[客户端使用情况日志记录](client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client )：将事件 ID 102 和 ID 103 替换为事件 ID 101。
 
 ## <a name="version-110560"></a>版本 1.10.56.0
 

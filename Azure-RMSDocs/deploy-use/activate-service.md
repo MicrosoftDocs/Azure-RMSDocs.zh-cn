@@ -4,7 +4,7 @@ description: 必须先激活 Azure Rights Management 服务，然后组织才可
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 06/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7c257b16737a916d597be858fcfeaf6c475bb423
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 8e8a5062efe3b14f1867cf8440dc91c368a810f5
+ms.sourcegitcommit: 6bdc1e5c328ad3b63aeb6f60ba9905551261a7a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/30/2018
+ms.locfileid: "37137774"
 ---
 # <a name="activating-azure-rights-management"></a>激活 Azure Rights Management
 
@@ -36,11 +37,13 @@ ms.lasthandoff: 03/28/2018
 
 如果你拥有包含 Azure Rights Management 的服务计划，则可能不需要激活此服务：
 
-- 如果包含 Azure 权限管理或 Azure 信息保护的订阅是在 2018 年 2 月底或之后获取的，将自动为你激活此服务。 除非你或你组织的其他全局管理员停用了 Azure Rights Management，否则你无需激活此服务。
+- **如果包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月底或之后获取：** 此服务会自动激活。 除非你或你组织的其他全局管理员停用了 Azure Rights Management，否则你无需激活此服务。
 
-- 如果你的订阅是在本月之前获取的，则必须自己激活此服务。 
+- **如果包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月之前或期间获取：** 如果租户使用的是 Exchange Online，Microsoft 即将开始为这些订阅激活 Azure Rights Management 服务。 对于这些订阅，自动激活将于 2018 年 8 月 1 日开始推出，届时将为你激活此服务，除非在运行 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps) 时看到 AutomaticServiceUpdateEnabled 设置为 false。 
 
-激活 Azure Rights Management 服务时，你的组织中的所有用户将可以对其文件应用信息保护，并且所有用户均可打开（使用）受 Azure Rights Management 服务保护的文件。 但是，如果你愿意，可以通过对分阶段部署使用加入控制来限制哪些人员可以应用信息保护。 有关详细信息，请参阅本文中的 [为分阶段部署配置加入控制](#configuring-onboarding-controls-for-a-phased-deployment) 部分。
+如果两种后续方案都不适用，必须手动激活保护服务。 
+
+激活此服务后，组织中的所有用户都可以对文档和电子邮件应用信息保护，并且所有用户都能打开（使用）受 Azure Rights Management 服务保护的文档和电子邮件。 但是，如果你愿意，可以通过对分阶段部署使用加入控制来限制哪些人员可以应用信息保护。 有关详细信息，请参阅本文中的 [为分阶段部署配置加入控制](#configuring-onboarding-controls-for-a-phased-deployment) 部分。
 
 ## <a name="how-to-activate-or-confirm-the-status-of-the-azure-rights-management-service"></a>如何激活或确认 Azure Rights Management 服务的状态 
 
@@ -53,7 +56,7 @@ ms.lasthandoff: 03/28/2018
 
 - [包含 Rights Management 的 Office 365 计划](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
 
-激活 Azure Rights Management 服务时，你的组织中的所有用户将可以对其文件应用信息保护，并且所有用户均可打开（使用）受 Azure Rights Management 服务保护的文件。 但是，如果你愿意，可以通过对分阶段部署使用加入控制来限制哪些人员可以应用信息保护。 有关详细信息，请参阅本文中的 [为分阶段部署配置加入控制](#configuring-onboarding-controls-for-a-phased-deployment) 部分。
+激活 Azure Rights Management 服务后，组织中的所有用户都可以对文档和电子邮件应用信息保护，并且所有用户都能打开（使用）受 Azure Rights Management 服务保护的文档和电子邮件。 但是，如果你愿意，可以通过对分阶段部署使用加入控制来限制哪些人员可以应用信息保护。 有关详细信息，请参阅本文中的 [为分阶段部署配置加入控制](#configuring-onboarding-controls-for-a-phased-deployment) 部分。
 
 ## <a name="choosing-your-activation-method"></a>选择激活方法
 
@@ -74,7 +77,7 @@ ms.lasthandoff: 03/28/2018
 4. 若要激活此服务，请运行 [Enable-Aadrm](/powershell/aadrm/vlatest/enable-aadrm)。
 
 ## <a name="configuring-onboarding-controls-for-a-phased-deployment"></a>为分阶段部署配置加入控制
-如果不希望所有用户都能立即使用 Azure Rights Management 保护文件，则可以使用 [Set-AadrmOnboardingControlPolicy](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy) PowerShell 命令来配置用户加入控制。 在激活 Azure Rights Management 服务之前或之后，你可以运行此命令。
+如果不希望所有用户都能立即使用 Azure Rights Management 保护文档和电子邮件，可以使用 [Set-AadrmOnboardingControlPolicy](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy) PowerShell 命令来配置用户载入控件。 在激活 Azure Rights Management 服务之前或之后，你可以运行此命令。
 
 > [!IMPORTANT]
 > 若要使用此命令，必须安装至少 **2.1.0.0** 版的 [Azure Rights Management PowerShell 模块](https://go.microsoft.com/fwlink/?LinkId=257721)。
@@ -103,7 +106,7 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
 
 有关此 cmdlet 的详细信息和其他示例，请参阅 [Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy) 帮助。
 
-使用这些加入控制时，组织中的所有用户始终可以使用由用户的子集保护的受保护内容，但他们自身将不能从客户端应用程序应用信息保护。 例如，他们将在其 Office 客户端中看不到激活 Azure Rights Management 时自动发布的默认模板，也看不到你可能会配置的自定义模板。  服务器端应用程序（如 Exchange）可以为 Rights Management 集成实现自己的每用户控制，以获得相同的结果。
+使用这些加入控制时，组织中的所有用户始终可以使用由用户的子集保护的受保护内容，但他们自身将不能从客户端应用程序应用信息保护。 例如，他们将在其 Office 客户端中看不到激活 Azure Rights Management 时自动发布的默认模板，也看不到你可能会配置的自定义模板。 服务器端应用程序（如 Exchange）可以为 Rights Management 集成实现自己的每用户控制，以获得相同的结果。
 
 
 ## <a name="next-steps"></a>后续步骤
