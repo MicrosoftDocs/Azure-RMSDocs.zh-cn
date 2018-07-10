@@ -4,7 +4,7 @@ description: 若要配置分类、标记和保护，必须配置 Azure 信息保
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0b95db2e96ca2fc250e7031f394e2e0bd8d4fdef
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 43fade205d4d518f6fc8f5dd7c7280a80d2c7eae
+ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "34562171"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -63,14 +64,14 @@ Azure 信息保护支持不同级别的订阅：
 
 1. 登录到 Azure 门户。
 
-2. 在中心菜单上，单击“创建资源”，然后从“MARKETPLACE”列表中选择“安全 + 标识”。 
+2. 在中心菜单上，选择“创建资源”，然后在市场的搜索框中键入“Azure 信息保护”。 
     
-3. 在“安全 + 标识”边栏选项卡上，从“特别推荐的应用”列表中选择“Azure 信息保护”。 然后，在“Azure 信息保护”边栏选项卡上，单击“创建”。
-    
-    此操作将为你的租户创建“Azure 信息保护”边栏选项卡，使你下次登录门户时，可以从中心的“所有服务”列表中选择此服务。 
+3. 在结果列表中选择“Azure 信息保护”。 在“Azure 信息保护”边栏选项卡中，单击“创建”。
     
     > [!TIP] 
-    > 选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览到该服务。
+    > （可选）选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览到该服务。
+    
+    再次单击“创建”。
 
 4. 首次连接到该服务时，“快速入门”页会自动打开。 浏览建议的资源，或使用其他菜单选项。 要配置用户可选择的标签，请使用以下过程。
 

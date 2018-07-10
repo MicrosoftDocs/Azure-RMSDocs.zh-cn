@@ -4,7 +4,7 @@ description: 通过 Azure 门户配置和管理 Rights Management 模板。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 05/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d26b69bc06a4c0d4f9c097e791b8b10bfc9feb1d
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 44c1166ce4205d6e77b4877d6aca0eaf16911530
+ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "34562137"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
@@ -96,9 +97,6 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>在 Azure 信息保护策略中配置模板
 
->[!NOTE]
-> 这些说明反映了 Azure 门户的最新更新。 如果看不到“分类”菜单选项，但仍看到“发布”选项，则导航指令与你所看到的内容不完全匹配。 如果是这种情况，当租户对最新更改进行更新时，请考虑在几天内返回到此过程。
-
 1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护 - 标签”边栏选项卡。
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
@@ -138,14 +136,11 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 ## <a name="to-create-a-new-template"></a>创建新模板
 
->[!NOTE]
-> 这些说明反映了 Azure 门户的最新更新。 如果看不到“分类”菜单选项，但仍看到“发布”选项，则导航指令与你所看到的内容不完全匹配。 如果是这种情况，当租户对最新更改进行更新时，请考虑在几天内返回到此过程。
-
 创建一个具有 Azure（云密钥）保护设置的新标签时，此操作会在后台创建一个新的自定义模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。
 
 1. 从“分类” > “标签”菜单选项：在“Azure 信息保护 - 标签”边栏选项卡上，选择“添加新标签”。
 
-2. 在“标签”边栏选项卡上，保留默认值“已启用: 打开”以发布此新模板，或将此设置更改为“关闭”，创建该模板作为已存档模板。 然后输入标签名称和说明用作模板名称和说明。
+2. 在“标签”边栏选项卡中，保持默认值“已启用: 打开”，然后输入标签名称和说明用作模板名称和说明。
 
 3. 对于“设置包含此标签的文档和电子邮件的权限”，选择“保护”，然后选择“保护”：
     
@@ -156,19 +151,10 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
     单击“确定”保留所做更改，然后在“标签”边栏选项卡上单击“保存”。
     
     在“Azure 信息保护 - 标签”边栏选项卡上，现在会看到在“保护”列中显示的新标签，指明它包含保护设置。 这些保护设置显示为支持 Azure Rights Management 服务的应用程序和服务的模板。
+    
+    虽然标签已启用，但默认情况下，模板已存档。 因此，应用程序和服务可以使用该模板来保护文档和电子邮件，完成发布模板的最后一步。
 
-5. 如果新创建的模板不应供所有用户使用，则必须将新创建的标签添加到不是全局策略的策略中：
-    
-    a. 从“分类” > “策略”菜单选项，选择“策略”。
-    
-    b. 选择“添加新策略”，然后在“策略”边栏选项卡上，指定用户范围的名称和说明。 然后使用以下选项选择子集用户：“选择哪些用户或组获取此策略。**组必须已启用电子邮件。”**
-    
-    或者，如果子集用户已存在策略，则改为从“策略”边栏选项卡选择该策略。
-    
-    c. 从“策略”边栏选项卡，选择“添加或删除标签”。 然后，在“策略: 添加或删除标签”边栏选项卡上，选择新创建的标签，其中包含你的保护设置，然后单击“确定”。
-    
-    d. 重新回到“策略”边栏选项卡，单击“保存”。  
-
+5. 从“分类” > “策略”菜单选项中，选择要包含新保护设置的策略。 然后选择“添加或删除标签”。 从“策略: 添加或删除标签”边栏选项卡上，选择新创建的标签，其中包含你的保护设置，单击“确定”，然后选择“保存”。
 
 ## <a name="next-steps"></a>后续步骤
 
