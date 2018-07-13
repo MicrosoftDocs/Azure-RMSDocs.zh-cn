@@ -4,7 +4,7 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 1 阶段涉及从 AD 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ea4c121d8945aabb4bb5a13a043a100e32e5924a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 683609cd2da2d13e11f92599813753a2a4747bd2
+ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206717"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38973365"
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
 
@@ -57,7 +57,7 @@ ms.locfileid: "30206717"
     
             (Get-AadrmConfiguration).LicensingIntranetDistributionPointUrl -match "https:\/\/[0-9A-Za-z\.-]*" | Out-Null; $matches[0]
 
-## <a name="step-2-prepare-for-client-migration"></a>步骤 2： 客户端迁移准备
+## <a name="step-2-prepare-for-client-migration"></a>步骤 2。 客户端迁移准备
 
 对于大多数迁移，一次性迁移所有客户端并不现实，因此很可能分批迁移客户端。 这意味着，一段时间内，一些客户端将使用 Azure 信息保护，而一些客户端仍将使用 AD RMS。 若要同时支持预迁移和已迁移用户，请使用载入控件并部署预迁移脚本。 此步骤在迁移过程期间是必需的，以便尚未迁移的用户可以使用已受已迁移用户（当前使用的是 Azure Rights Management）保护的内容。
 
@@ -89,7 +89,7 @@ ms.locfileid: "30206717"
 
     可以使用组策略或其他软件部署机制来部署此脚本。
 
-## <a name="step-3-prepare-your-exchange-deployment-for-migration"></a>步骤 3： 准备迁移 Exchange 部署
+## <a name="step-3-prepare-your-exchange-deployment-for-migration"></a>步骤 3. 准备迁移 Exchange 部署
 
 如果使用的是 Exchange 内部部署或 Exchange Online，可能之前已将 Exchange 与 AD RMS 部署集成过。 此步骤将对它们进行配置，以使用现有的 AD RMS 配置支持 Azure RMS 保护的内容。 
 

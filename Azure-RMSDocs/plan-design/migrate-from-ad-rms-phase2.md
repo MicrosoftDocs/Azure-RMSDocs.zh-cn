@@ -4,7 +4,7 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 2 阶段涉及从 AD 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/02/2017
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9871c5890be8b5aa019d9788ecdfe929cfab0eb9
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 033504a26ae04bae3e4f1179503855bcfce63d73
+ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208458"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38973396"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -26,7 +26,7 @@ ms.locfileid: "30208458"
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 2。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 4-6。
 
 
-## <a name="step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection"></a>步骤 4： 从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护中
+## <a name="step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection"></a>步骤 4. 从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护中
 此步骤是一个分为两部分的过程：
 
 1. 通过将受信任的发布域 (TPD) 导出到 .xml 文件，从 AD RMS 导出配置数据。 此过程对于所有迁移是相同的。
@@ -101,7 +101,7 @@ ms.locfileid: "30208458"
 - [HSM 保护密钥到 HSM 保护密钥](migrate-hsmkey-to-hsmkey.md)
 - [软件保护密钥到 HSM 保护密钥](migrate-softwarekey-to-hsmkey.md)
 
-## <a name="step-5-activate-the-azure-rights-management-service"></a>步骤 5： 激活 Azure Rights Management 服务
+## <a name="step-5-activate-the-azure-rights-management-service"></a>步骤 5. 激活 Azure Rights Management 服务
 
 打开 PowerShell 会话并运行下列命令：
 
@@ -115,7 +115,7 @@ ms.locfileid: "30208458"
 
 **如果 Azure 信息保护租户已激活，会怎么样？** 如果已为组织激活 Azure Rights Management 服务，并且已创建想要在迁移后使用的自定义模板，则必须导出和导入这些模板。 下一步中介绍了此过程。 
 
-## <a name="step-6-configure-imported-templates"></a>步骤 6： 配置导入的模板
+## <a name="step-6-configure-imported-templates"></a>步骤 6. 配置导入的模板
 
 由于所导入的模板具有“已存档”的默认状态，如果你希望用户能够将这些模板用于 Azure Rights Management 服务，必须将此状态更改为“已发布”。
 
@@ -145,9 +145,9 @@ ms.locfileid: "30208458"
 
 ### <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>AD RMS 中的模板使用 **ANYONE** 组时需执行的过程
 
-如果 AD RMS 中的模板使用 ANYONE 组，此组将自动转换为使用名为 AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com 的组。例如，如果公司为 Contoso，则该组可能会如下所示：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。此组包含 Azure AD 租户中的所有用户。
+如果 AD RMS 中的模板使用 ANYONE 组，此组将自动转换为使用名为 AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com 的组。 例如，如果公司为 Contoso，则该组可能会如下所示：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。 此组包含 Azure AD 租户中的所有用户。
 
-如果在 Azure 门户中管理模板和标签，此组将显示为 Azure AD 中的租户域名。 例如，如果公司为 Contoso，此组可能类似于：contoso.onmicrosoft.com。要添加此组，选项将显示“添加 \<组织名称> - 所有成员”。
+如果在 Azure 门户中管理模板和标签，此组将显示为 Azure AD 中的租户域名。 例如，如果公司为 Contoso，此组可能类似于：contoso.onmicrosoft.com。 要添加此组，选项将显示“添加 \<组织名称> - 所有成员”。
 
 如果不确定 AD RMS 模板是否包括 ANYONE 组，可使用以下 Windows PowerShell 示例脚本来标识这些模板。 有关将 Windows PowerShell 用于 AD RMS 的详细信息，请参阅[使用 Windows PowerShell 管理 AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)。
 
