@@ -4,7 +4,7 @@ description: 确定使用 RMS API 本机支持 Azure 信息保护中的 Azure Ri
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2018
+ms.date: 07/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d044ac76ea910f2874219bd20fe262d8bd5c4c59
-ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
+ms.openlocfilehash: 2da56d52fbc2c53d16932ebc774e61e34284b652
+ms.sourcegitcommit: 55c7461f705a46f385a967753187ba2dda642238
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32018529"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38230173"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -38,7 +38,9 @@ ms.locfileid: "32018529"
 
 -   **受保护的 PDF**：这些文件可以具有 .pdf 或 .ppdf 文件扩展名。
 
--   **电子邮件：** 所列电子邮件客户端可以保护电子邮件本身，而电子邮件会自动保护任何不再受保护的附加 Office 文件。 在这种情况下，客户端的预览功能可以向授权收件人显示受保护的内容（邮件和附件）。 但是，如果未保护电子邮件本身，而保护了附件，则客户端的预览功能将无法向授权收件人显示受保护的附件。
+-   **电子邮件：** 所列电子邮件客户端可以保护电子邮件本身，而电子邮件会自动保护任何不再受保护的附加 Office 文件。 在这种情况下，客户端的预览功能可以向授权收件人显示受保护的内容（邮件和附件）。 但是，如果未保护电子邮件本身，而保护了附件，则客户端的预览功能将无法向授权收件人显示受保护的附件。 
+    
+    提示：对于不支持保护电子邮件的电子邮件客户端，请考虑使用 [Exchange Online 邮件流规则来应用此保护](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8)。
 
 -   **其他文件类型**：文本和图像文件包括文件扩展名为 .txt、.xml、.jpg 和 .jpeg 之类的文件。 这些文件在接受 Rights Management 提供的本机保护以后，会更改其文件扩展名，变为只读文件。 不能进行本机保护的文件在接受 Rights Management 提供的常规保护以后，其文件扩展名为 .pfile。 有关详细信息，请参阅 Azure 信息保护客户端管理员指南中的[支持的文件类型](../rms-client/client-admin-guide-file-types.md)。
 

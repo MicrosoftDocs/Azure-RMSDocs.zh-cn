@@ -4,17 +4,18 @@ description: 当文档或电子邮件中分配一个标签时，可以选择几�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/07/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 3a732f49a299b4d66af70da3d26df193eaca36ac
-ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
+ms.openlocfilehash: c41dcb0a11e61be4a2dfd974d9bf6803a992b858
+ms.sourcegitcommit: ef3d187da900107095d499de7e7dac5c947e4b13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37947448"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 05/07/2018
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
 
-有关这些可视标记的其他信息：
+有关这些视觉标记的其他信息：
 
 - 页眉和页脚适用于 Word、Excel、PowerPoint 和 Outlook。
 
@@ -30,11 +31,13 @@ ms.lasthandoff: 05/07/2018
 
     - Excel：水印仅在页面布局和打印预览模式及打印后可见。
     
-    - PowerPoint：水印应用于母板幻灯片，作为背景图像。
+    - PowerPoint：水印应用于母板幻灯片，作为背景图像。 在“视图”选项卡上的“幻灯片母版”中，确保未选中“隐藏背景图形”复选框。
     
     - 支持多行文本。
 
 - 你可以简单地指定文本字符串，也可以使用[变量](#using-variables-in-the-text-string)在应用页眉、页脚或水印时动态创建文本字符串。
+
+- Word、PowerPoint 和 Outlook 支持使用不同颜色的视觉标记。 对颜色进行了配置的视觉标记在 Excel 中将始终显示为黑色。
 
 - 视觉标记仅支持一种语言。
 
@@ -46,7 +49,7 @@ ms.lasthandoff: 05/07/2018
 
 - 在 Office 应用中，会在应用标签时应用来自标签的视觉标记。 打开标记的文档以及首次保存该文档时，也会应用视觉标记。  
 
-- 当使用文件资源管理器或 PowerShell 标记文档时，不会立即应用视觉标记，但在 Office 应用中打开文档以及首次保存文档时都会应用视觉标记。
+- 当使用文件资源管理器、PowerShell 或 Azure 信息保护扫描程序标记文档时，不会立即应用视觉标记，但在 Office 应用中打开文档以及首次保存文档时会通过 Azure 信息保护客户端应用视觉标记。
     
     例外情况是当你在 Office 2016 中为保存在 SharePoint Online、OneDrive 或 OneDrive for Business 中的文件使用[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)时：当“自动保存”开启时，将不会应用视觉标记，除非配置[高级客户端设置](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)打开分类以在后台持续运行。 
 
@@ -60,7 +63,7 @@ ms.lasthandoff: 05/07/2018
 
 2. 从“分类” > “标签”菜单选项：在“Azure 信息保护 - 标签”边栏选项卡上，选择包含要添加或更改的视觉标记的标签。
 
-3. 在“**标签**”边栏选项卡的“**设置可视标记（如页眉或页脚）**”部分中，配置所需可视标记的设置，然后单击设置“**保存**”：
+3. 在“标签”边栏选项卡的“设置视觉标记（如页眉或页脚）”部分中，配置所需视觉标记的设置，然后单击设置“保存”：
     
     - 配置一个页眉：针对“**文档的此标签具有页眉**”，选择“**打开**”（如果希望具有页眉），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定页眉的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
     
@@ -121,7 +124,7 @@ ms.lasthandoff: 05/07/2018
 
 ### <a name="setting-the-font-name"></a>设置字体名称
 
-Calibri 是页眉、页脚和水印文字的默认字体。 如果指定替代字体名称，请确保它在将应用视觉对象标记的客户端设备上可用。 
+Calibri 是页眉、页脚和水印文字的默认字体。 如果指定替代字体名称，请确保它在将应用视觉标记的客户端设备上可用。 
 
 如果指定字体不可用，客户端将回退使用 Calibri 字体。
 

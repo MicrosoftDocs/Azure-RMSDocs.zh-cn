@@ -4,26 +4,26 @@ description: Azure 信息保护服务概述。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2018
+ms.date: 07/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 5a9edbb36384af4aee531854b973adfa28362bda
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: c851c2f6af3d355b017c7fbc3de188d15ed16e90
+ms.sourcegitcommit: 7a58d6bec0b504b889980c83e8551301d49e44f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208118"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37910085"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
-Azure 信息保护（有时亦称为 AIP）是基于云的解决方案，有助于组织对其文档和电子邮件进行分类、标记和保护。 这可以由定义规则和条件的管理员自动进行、由用户手动进行或是组合进行（在这种情况下会向用户提供建议）。 
+Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助于组织通过应用标签对其文档和电子邮件进行分类和有选择地保护。 标签可以由定义规则和条件的管理员自动应用、由用户手动应用或是二者组合应用（在这种情况下会向用户提供建议）。 
 
-下图显示实际操作中的 Azure 信息保护示例。 管理员配置了规则来检测敏感数据（在此例中是信用卡信息）。 当用户保存包含信用卡信息的 Word 文档时，她会看到一个自定义工具提示，建议她应用管理员配置的特定标签。 该标签可对文档进行分类并（可选）根据配置进行保护。 
+下图显示在用户计算机上实际操作中的 Azure 信息保护示例。 管理员已配置具有检测敏感数据的规则的标签，在我们的示例中，敏感数据是信用卡信息。 当用户保存包含信用卡号的 Word 文档时，她会看到一个自定义工具提示，建议她应用管理员配置的标签。 此标签将对文档进行分类并保护。 
 
 ![用于 Azure 信息保护的建议分类示例](../media/info-protect-recommend-calloutsv2.png)
 
@@ -31,9 +31,9 @@ Azure 信息保护（有时亦称为 AIP）是基于云的解决方案，有助�
 
 ## <a name="how-labels-apply-classification"></a>标签如何应用分类
 
-可使用 Azure 信息保护标签对文档和电子邮件应用分类。 执行此操作时，分类在任何时候都是可识别的，无论数据的存储位置在哪或者与谁共享数据。 标签包括可视化标记，如页眉、页脚或水印。 元数据以明文形式添加到文件和电子邮件标头。 明文形式确保其他服务（如数据丢失防护解决方案）可以识别分类并执行相应的操作。 
+可使用 Azure 信息保护标签对文档和电子邮件应用分类。 执行此操作时，分类是可识别的，无论数据的存储位置在哪里或者与谁共享。 标签可包括视觉标记，如页眉、页脚或水印。 元数据以明文形式添加到文件和电子邮件标头。 明文形式确保其他服务（如数据丢失防护解决方案）可以识别分类并执行相应的操作。 
 
-例如，下面的电子邮件已分类为“常规”。 此标签作为页脚添加到电子邮件。 此页脚是所有收件人的一个可视指示器，它用于一般业务数据，不应在组织外部发送。 该标签也嵌入在电子邮件标头中，以便电子邮件服务可以检查此值并且可以创建审核项或阻止在组织外部发送它。
+例如，下面的电子邮件已分类为“常规”。 对电子邮件的标签添加了“敏感度: 常规”的页脚。 此页脚是所有收件人的一个可视指示器，它用于一般业务数据，不应在组织外部发送。 该标签嵌入在电子邮件标头中，以便电子邮件服务可以检查此值，并且可以创建审核项或阻止在组织外部发送它。
 
 ![显示 Azure 信息保护分类的示例电子邮件页脚和标头](../media/example-email-footerv2.png)
 
@@ -99,6 +99,17 @@ Azure 信息保护（有时亦称为 AIP）是基于云的解决方案，有助�
 或者，可以通过使用应用权限保护的邮件流规则，为用户自动提供保护。 
 
 将 Office 文档附加到这些电子邮件时，这些文档也会自动受到保护。
+
+## <a name="classifying-and-protecting-existing-documents"></a>对现有文档进行分类和保护
+
+理想情况下，在首次创建文档和电子邮件时，就对其进行标记。 但是，你可能在数据存储中已经有很多文档，并且希望对这些文档也进行分类和保护。 这些文档存储可能是在本地，也可能是在云中。
+
+对于你的本地数据存储，请使用 Azure 信息保护扫描程序，以发现本地文件夹、网络共享以及 SharePoint Server 站点和库中的文档，并对其进行分类和保护。 扫描程序在 SharePoint Server 上将作为服务运行。 可在策略中使用同一规则，以检测敏感信息，并向文档应用特定标签。 或者，也可以向数据存储库中的所有文档应用默认标签，无需检查文件内容。 此外，也可以仅在报告模式下使用扫描程序，以帮助你发现可能不知道的敏感信息。 
+
+有关部署和使用扫描程序的详细信息，请参阅[部署 Azure 信息保护扫描程序，以自动对文件进行分类和保护](../deploy-use/deploy-rms-connector.md)。
+
+对于你的云数据存储，请使用 Microsoft Cloud App Security，将你的标签应用于 Box、SharePoint Online 和 OneDrive for Business 中的文档。 有关详细信息，请参阅[自动应用 Azure 信息保护分类标签](/cloud-app-security/use-case-information-protection)和 [Azure 信息保护集成](/cloud-app-security/azip-integration)。
+
 
 ## <a name="resources-for-azure-information-protection"></a>Azure 信息保护的资源
 

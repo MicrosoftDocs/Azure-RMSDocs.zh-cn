@@ -4,7 +4,7 @@ description: 必须先激活 Azure Rights Management 服务，然后组织才可
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2018
+ms.date: 07/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8e8a5062efe3b14f1867cf8440dc91c368a810f5
-ms.sourcegitcommit: 6bdc1e5c328ad3b63aeb6f60ba9905551261a7a1
+ms.openlocfilehash: 46c13b70e0b922b9b4d403d9801a192bb649497f
+ms.sourcegitcommit: 4bda470156d18ee8289752d37789feb1ae758a6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2018
-ms.locfileid: "37137774"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925018"
 ---
 # <a name="activating-azure-rights-management"></a>激活 Azure Rights Management
 
@@ -106,7 +106,7 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
 
 有关此 cmdlet 的详细信息和其他示例，请参阅 [Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy) 帮助。
 
-使用这些加入控制时，组织中的所有用户始终可以使用由用户的子集保护的受保护内容，但他们自身将不能从客户端应用程序应用信息保护。 例如，他们将在其 Office 客户端中看不到激活 Azure Rights Management 时自动发布的默认模板，也看不到你可能会配置的自定义模板。 服务器端应用程序（如 Exchange）可以为 Rights Management 集成实现自己的每用户控制，以获得相同的结果。
+使用这些加入控制时，组织中的所有用户始终可以使用由用户的子集保护的受保护内容，但他们自身将不能从客户端应用程序应用信息保护。 例如，他们在其 Office 应用中看不到激活 Azure Rights Management 时自动发布的默认模板，也看不到你可能会配置的自定义模板。 服务器端应用程序（如 Exchange）可以为 Rights Management 集成实现自己的每用户控制，以获得相同的结果。 例如，若要阻止用户保护网页版 Outlook 中的电子邮件，请使用 [Set-OwaMailboxPolicy](/powershell/module/exchange/client-access/set-owamailboxpolicy?view=exchange-ps)，以将 IRMEnabled 参数设置为 $false。
 
 
 ## <a name="next-steps"></a>后续步骤

@@ -4,7 +4,7 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/21/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 88fa2fa62e4090e962f96868b7c1070114d740c1
-ms.sourcegitcommit: 0437ff841f278f5293a74b3ff7d41f81ccfef414
+ms.openlocfilehash: da4e3a5efec9ba7a19131a1b03fc2ddd5a7651ef
+ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310255"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37935709"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -181,9 +181,9 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 有关详细信息，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 
 
-## <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client"></a>Azure 信息保护客户端从分类和保护中排除的文件类型
+## <a name="file-types-that-are-excluded-from-classification-and-protection"></a>从分类和保护中排除的文件类型
 
-为了帮助阻止用户更改对计算机操作至关重要的文件，某些文件类型和文件夹会自动从分类和保护中排除。 如果用户尝试对这些文件进行分类或保护，会看到一条消息，显示这些文件被排除。
+为了帮助阻止用户更改对计算机操作至关重要的文件，某些文件类型和文件夹会自动从分类和保护中排除。 如果用户尝试使用 Azure 信息保护客户端对这些文件进行分类或保护，则会看到一条消息，显示这些文件被排除。
 
 - **排除的文件类型**：.lnk、.exe、.com、.cmd、.bat、.dll、.ini、.pst、.sca、.drm、.sys、.cpl、.inf、.drv、.dat、.tmp、.msp、.msi、.pdb、.jar
 
@@ -192,6 +192,18 @@ Azure 信息保护客户端支持保护的最大文件大小。
     - Program Files（\Program Files 和 \Program Files (x86)）
     - \ProgramData 
     - \AppData（适用于所有用户）
+
+### <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序从分类和保护中排除的文件类型
+
+默认情况下，扫描程序也会排除与 Azure 信息保护客户端相同的文件类型。 但是，可以使用以下 PowerShell cmdlet 来更改扫描程序的这一行为：
+
+- [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)
+
+- [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)
+
+- [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes)
+
+默认情况下，扫描程序仅保护 Office 文件类型。 若要更改扫描程序的这一行为，请编辑注册表并指定想要得到保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>默认不受保护的文件
 
