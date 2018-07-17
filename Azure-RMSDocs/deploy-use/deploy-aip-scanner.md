@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行 Azure 信息保护扫描程序
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 07/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 0b663f8f514aadf51b0ad549761d90d30e07811d
-ms.sourcegitcommit: 92bb6d3163e455250a84281dac62b5af82f8c4f1
+ms.openlocfilehash: 3df9e33542d40d00f601ded599b454b2a9f8f045
+ms.sourcegitcommit: 666308d042c079b2d6bedfbe85ab0bf2450f255b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042875"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433625"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -47,7 +47,7 @@ ms.locfileid: "37042875"
 
 注意，扫描程序不会实时发现和标记。 它会系统地浏览指定数据存储中的文件，可将此周期配置为运行一次或多次。
 
-可以指定要扫描或排除不进行扫描的文件类型。 若要限制扫描程序检查的文件，可使用 [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType) 定义一个文件类型列表。
+可以指定要扫描或排除不进行扫描的文件类型。 若要限制扫描程序检查的文件，可使用 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes) 定义一个文件类型列表。
 
 
 ## <a name="prerequisites-for-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序的先决条件
@@ -220,7 +220,7 @@ ms.locfileid: "37042875"
 
 扫描程序会自动跳过[从分类和保护中排除](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client)的文件，如可执行文件和系统文件。
 
-可以定义要扫描或不要扫描的文件类型列表，从而更改此行为。 在指定此列表并且不指定数据存储库时，该列表适用于未指定其自己列表的所有数据存储库。 若要指定此列表，请使用 [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType)。 在指定了文件类型列表后，可以使用 [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType) 向列表中添加新的文件类型，并使用 [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType) 从列表中删除文件类型。
+可以定义要扫描或不要扫描的文件类型列表，从而更改此行为。 在指定此列表并且不指定数据存储库时，该列表适用于未指定其自己列表的所有数据存储库。 若要指定此列表，请使用 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)。 指定文件类型列表后，可以使用 [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes) 向列表添加新文件类型，并能使用 [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes) 从列表中删除文件类型。
 
 然后扫描程序使用 Windows iFilter 扫描以下文件类型。 对于以下文件类型，将使用为标签指定的条件标记文档。
 
