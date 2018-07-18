@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行 Azure 信息保护扫描程序
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/03/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3df9e33542d40d00f601ded599b454b2a9f8f045
-ms.sourcegitcommit: 666308d042c079b2d6bedfbe85ab0bf2450f255b
+ms.openlocfilehash: 77204e78a46b536d7a5b42c2765d5eaea8cd745a
+ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433625"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37935726"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -113,7 +113,7 @@ ms.locfileid: "37433625"
 - 如果使用 Azure Active Directory 帐户，请按照管理员指南内[对 Set-AIPAuthentication 指定和使用 Token 参数](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)一文中的说明操作。
 
 
-## <a name="install-the-azure-information-protection-scanner"></a>安装 Azure 信息保护扫描程序
+## <a name="install-the-scanner"></a>安装扫描程序
 
 1. 登录到将要运行扫描程序的 Windows Server 计算机。 使用具有本地管理员权限并具有写入到 SQL Server master 数据库权限的帐户。
 
@@ -143,7 +143,9 @@ ms.locfileid: "37433625"
 
 现已安装扫描程序，需获取 Azure AD 令牌以便扫描程序服务帐户进行身份验证，从而实现以无人参与的方式运行。 
 
-## <a name="get-an-azure-ad-token-for-the-scanner-service-account-to-authenticate-to-the-azure-information-protection-service"></a>获取 Azure AD 令牌以便扫描程序服务帐户向 Azure 信息保护服务进行身份验证
+## <a name="get-an-azure-ad-token-for-the-scanner"></a>获取扫描程序的 Azure AD 令牌
+
+借助 Azure AD 令牌，Azure 信息保护服务可以验证扫描程序服务帐户。
 
 1. 通过同一台 Windows Server 计算机或通过桌面登录 Azure 门户，创建 2 个 Azure AD 应用程序 - 指定用于身份验证的访问令牌时需使用这两个应用程序。 首次以交互方式登录后，此令牌将允许扫描程序以非交互方式运行。
     
@@ -163,7 +165,7 @@ ms.locfileid: "37433625"
 
 现可指定要扫描的数据存储。 
 
-## <a name="specify-data-stores-for-the-azure-information-protection-scanner"></a>为 Azure 信息保护扫描程序指定数据存储
+## <a name="specify-data-stores-for-the-scanner"></a>指定扫描程序的数据存储
 
 使用 [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/Add-AIPScannerRepository) cmdlet 指定将由 Azure 信息保护扫描程序进行扫描的数据存储。 可指定本地文件夹、UNC 路径以及 SharePoint 站点和库的 SharePoint Server URL。 
 
@@ -185,7 +187,7 @@ ms.locfileid: "37433625"
 
 利用扫描程序的默认配置，现在可在发现模式下运行首次扫描。
 
-## <a name="run-a-discovery-cycle-and-view-reports-for-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序的发现周期运行和报告查看
+## <a name="run-a-discovery-cycle-and-view-reports-for-the-scanner"></a>运行发现周期并查看扫描程序报告
 
 1. 使用“管理工具” > “服务”，启动“Azure 信息保护扫描程序”服务。
 
@@ -199,7 +201,7 @@ ms.locfileid: "37433625"
 
 如果已准备好对扫描程序发现的文件进行自动标记，请继续下一步。 
 
-## <a name="configure-the-azure-information-protection-scanner-to-apply-classification-and-protection-to-discovered-files"></a>配置 Azure 信息保护扫描程序以对发现文件应用分类和保护
+## <a name="configure-the-scanner-to-apply-classification-and-protection"></a>将扫描程序配置为应用分类和保护
 
 在其默认设置中，扫描程序在仅报告模式下运行一次。 要更改这些设置，请运行 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet。
 
@@ -216,9 +218,9 @@ ms.locfileid: "37433625"
 因为我们将计划配置为持续运行，所以当扫描程序扫描完所有文件时，它将开始新周期，以便可发现新文件和更改的文件。
 
 
-## <a name="how-files-are-scanned-by-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序如何扫描文件
+## <a name="how-files-are-scanned"></a>如何扫描文件
 
-扫描程序会自动跳过[从分类和保护中排除](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client)的文件，如可执行文件和系统文件。
+扫描程序会自动跳过[从分类和保护中排除](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection)的文件，如可执行文件和系统文件。
 
 可以定义要扫描或不要扫描的文件类型列表，从而更改此行为。 在指定此列表并且不指定数据存储库时，该列表适用于未指定其自己列表的所有数据存储库。 若要指定此列表，请使用 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)。 指定文件类型列表后，可以使用 [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes) 向列表添加新文件类型，并能使用 [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes) 从列表中删除文件类型。
 
@@ -256,7 +258,7 @@ ms.locfileid: "37433625"
 
 例如，若要将此默认扫描程序行为更改为以常规方式保护其他文件类型，必须手动编辑注册表，并指定要保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 在面向开发人员的本文档中，常规保护被称为“PFile”
 
-## <a name="when-files-are-rescanned-by-the-azure-information-protection-scanner"></a>当文件由 Azure 信息保护扫描程序重新扫描时
+## <a name="when-files-are-rescanned"></a>重新扫描文件时的情况
 
 在第一个扫描周期，扫描程序会检查所配置的数据存储中的所有文件，然后在后续扫描中仅检查新文件或修改后的文件。 
 
@@ -273,7 +275,7 @@ ms.locfileid: "37433625"
 
 ## <a name="using-the-scanner-with-alternative-configurations"></a>使用具有备选配置的扫描程序
 
-扫描程序支持两种备选方案，在任何一种方案中都无需配置标签： 
+Azure 信息保护扫描程序支持两种备选方案，在任何一种方案中都无需配置标签： 
 
 - 将默认标签应用于数据存储库中的所有文件。
     
@@ -288,7 +290,7 @@ ms.locfileid: "37433625"
     
     扫描程序使用为 Azure 信息保护策略中的标签指定的任何自定义条件以及可指定用于 Azure 信息保护策略中的标签的信息类型列表。 
 
-## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>优化 Azure 信息保护扫描程序的性能
+## <a name="optimizing-the-performance-of-the-scanner"></a>优化扫描程序性能
 
 若要最大程度实现扫描程序的性能：
 
@@ -339,7 +341,7 @@ ms.locfileid: "37433625"
     - 在使用[备选配置](#using-the-scanner-with-alternative-configurations)标识所有自定义条件和已知敏感信息类型时，扫描程序的运行速度更为缓慢。
     
 
-## <a name="list-of-cmdlets-for-the-azure-information-protection-scanner"></a>适用于 Azure 信息保护扫描程序的 cmdlet 列表 
+## <a name="list-of-cmdlets-for-the-scanner"></a>适用于扫描程序的 cmdlet 列表 
 
 利用其他适用于扫描程序的 cmdle，可更改该扫描程序的服务帐户和数据库、获取扫描程序的当前设置，以及卸载扫描程序服务。 扫描程序使用以下 cmdlet：
 
@@ -368,7 +370,7 @@ ms.locfileid: "37433625"
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
 
 
-## <a name="event-log-ids-and-descriptions"></a>事件日志 ID 和说明
+## <a name="event-log-ids-and-descriptions-for-the-scanner"></a>扫描程序的事件日志 ID 和说明
 
 利用以下部分，确定扫描程序可能的事件 ID 和说明。 这些事件记录在扫描程序服务的服务器上、Windows 应用程序和服务事件日志和 Azure 信息保护中。
 
