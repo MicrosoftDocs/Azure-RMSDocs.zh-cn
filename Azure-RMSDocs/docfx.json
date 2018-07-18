@@ -30,6 +30,9 @@
     "dest": "Azure-RMSDocs",
     "template": "docs.html",
     "globalMetadata": {
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/azure-rmsdocs.zh-cn",
+      "feedback_product_url": "https://msip.uservoice.com/", 
       "layout": "Conceptual",
       "breadcrumb_path": "/enterprise-mobility/toc.json"
     }
