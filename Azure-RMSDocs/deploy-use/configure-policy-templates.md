@@ -4,7 +4,7 @@ description: 通过 Azure 门户配置和管理 Rights Management 模板。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/28/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 44c1166ce4205d6e77b4877d6aca0eaf16911530
-ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
+ms.openlocfilehash: ba56e6b165cd378c957b2c54bd41ce54f1830797
+ms.sourcegitcommit: 1b0c387b2848b7dfaee0b0548dde7e41383ffe6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "34562137"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39138298"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
@@ -77,7 +77,7 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 在编辑这些模板或将其转换为标签之前，请确保了解以下更改和注意事项。 由于实现更改，因此如果你之前在 Azure 经典门户中管理模板，则以下列表尤其重要。
 
-- 编辑或转换模板并保存 Azure 信息保护策略后，将对初始[使用权限](configure-usage-rights.md)进行以下更改。 如果需要，可以通过使用 Azure 门户来添加或删除各使用权限。 或者，在 PowerShell 中使用 [New-aadrmrightsdefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) 和 [Set-aadrmtemplateproperty](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet。
+- 编辑或转换模板并保存 Azure 信息保护策略后，将对初始[使用权限](configure-usage-rights.md)进行以下更改。 如果需要，可以通过使用 Azure 门户来添加或删除各使用权限。 或者，在 PowerShell 中使用 [New-aadrmrightsdefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) 和 [Set-aadrmtemplateproperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet。
     
     - 自动添加了“允许宏”（公用名）。 Office 应用中的 Azure 信息保护栏要求此使用权限。
 
