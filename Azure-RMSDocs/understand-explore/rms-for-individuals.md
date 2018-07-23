@@ -4,7 +4,7 @@ description: 介绍了 RMS 个人版，这是免费的自助式订阅，适用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 358ef172192b3bed65dd8f1853705c8f189cbf97
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 3885dfcdf9c5858fe6e3a43b3980e0862dc4cb51
+ms.sourcegitcommit: 85a56a778973be1c95df08bcd5b56e4f0bc12ad7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444310"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39104924"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>个人 RMS 和 Azure 信息保护
 
@@ -45,7 +45,7 @@ RMS 个人版采用 Azure Active Directory 自助式注册。 如果用户已使
 
 3. 单击“注册”。
 
-    Microsoft 使用电子邮件地址，检查组织是否已拥有 Azure 信息保护高级版订阅 (https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)，或[使用 Azure 信息保护添加数据保护的 Office 365 订阅](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 如果找到任一订阅，则无需使用个人 RMS。 可以立即登录且个人 RMS 的自助注册将取消。 如未找到任一订阅，则继续下一步。
+    Microsoft 使用电子邮件地址检查组织是否已拥有 [Azure 信息保护高级版订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)或 [Office 365 订阅](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)（后者使用 Azure 信息保护添加数据保护）。 如果找到任一订阅，则无需使用个人 RMS。 可以立即登录且个人 RMS 的自助注册将取消。 如未找到任一订阅，则继续下一步。
 
 4. 等待确认电子邮件发送至你提供的地址。 Office 365 团队 (support@email.microsoftonline.com) 将发送主题为**完成注册 Microsoft Azure 信息保护**的电子邮件。
 

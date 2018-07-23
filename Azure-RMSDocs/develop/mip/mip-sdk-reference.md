@@ -1,0 +1,73 @@
+# <a name="mip-sdk-for-c-preview-reference"></a>MIP SDK for C++（预览版）参考
+
+Microsoft 信息保护 (MIP) SDK for C++（预览版）允许开发人员管理数据保护策略，并将其应用于数据和其他数字资产。  
+
+要了解详细信息，请参阅 [MIP 开发人员博客](https://aka.ms/MIPDevelopers)<!-- and [MIP samples](https://aka.ms/mipsdksamples)-->。
+
+MIP SDK for C++ 包括：
+
+- [枚举和结构](mip-enums-and-structs.md)
+- [函数](mip-functions.md)
+- 下列类：
+
+| 类名称 | 描述 |
+| :----------|:------------|
+[ConsentDelegate](class_consentdelegate.md)  |  针对内容相关操作的委托。
+[mip::AccessDeniedError](class_mip_accessdeniederror.md)  |  用户无法获取内容的访问权限，例如访问遭拒和内容被撤消等。
+[mip::Action](class_mip_action.md)  |  操作的接口。 每个操作都转换为，出于应用标签目的，应用程序需要执行的步骤（如策略所定义）
+[mip::AddContentFooterAction](class_mip_addcontentfooteraction.md)  |  一个操作类，它指定要添加到文档的内容脚注。
+[mip::AddContentHeaderAction](class_mip_addcontentheaderaction.md)  |  指定添加内容头的操作类。
+[mip::AddWatermarkAction](class_mip_addwatermarkaction.md)  |  指定添加水印的操作类。
+[mip::ApplyLabelAction](class_mip_applylabelaction.md)  |  应用标签操作要求，必须调用应用程序，才能应用特定标签。
+[mip::BadInputError](class_mip_badinputerror.md)  |  输入不正确的错误，在 SDK API 输入无效时抛出。
+[mip::ClassificationResult](class_mip_classificationresult.md)  |  包含对执行状态进行分类调用的结果的类。
+[mip::ContentLabel](class_mip_contentlabel.md)  |  Microsoft 信息保护标签的抽象，应用于一段内容，通常是一个文档。
+[mip::CustomAction](class_mip_customaction.md)  |  [CustomAction](class_mip_customaction.md) 是一个泛型操作类，它捕获操作的所有子属性作为一个属性包。 调用方负责理解操作的含义。
+[mip::Error](class_mip_error.md)  |  将从 MIP SDK 报告（引发或返回）的所有错误的基类。
+[mip::ExecutionState](class_mip_executionstate.md)  |  执行引擎所需的所有状态的接口。
+[mip::FileEngine](class_mip_fileengine.md)  |  适用于所有引擎功能的接口。
+[mip::FileEngine::Settings](class_mip_fileengine::settings.md)  | _尚无记录。_
+[mip::FileHandler](class_mip_filehandler.md)  |  适用于所有文件处理函数的接口。
+[mip::FileHandler::Observer](class_mip_filehandler::observer.md)  |  [Observer](class_mip_filehandler_observer.md) 接口，供客户端获取文件处理程序相关事件的通知。
+[mip::FileIOError](class_mip_fileioerror.md)  |  文件 IO 错误。
+[mip::FileProfile](class_mip_fileprofile.md)  |  [FileProfile](class_mip_fileprofile.md) 类是用于使用 Microsoft 信息保护操作的根类。
+[mip::FileProfile::Observer](class_mip_fileprofile_observer.md)  |  [Observer](class_mip_fileprofile_observer.md) 接口，供客户端获取配置文件相关事件的通知。
+[mip::FileProfile::Settings](class_mip_fileprofile_settings.md)  |  [FileProfile](class_mip_fileprofile.md) 在其创建期间及其整个生存期内使用的 [Settings](class_mip_fileprofile_settings.md)。
+[mip::InternalError](class_mip_internalerror.md)  |  内部错误。 如果在执行期间出现意外，就会抛出此错误。
+[mip::JustificationRequiredError](class_mip_justificationrequirederror.md)  | _尚无记录。_
+[mip::JustifyAction](class_mip_justifyaction.md)  |  Justify[Action](class_mip_action.md) 要求必须合理解释标签降级，并设置执行状态下的响应。
+[mip::Label](class_mip_label.md)  |  单个 Microsoft 信息保护标签的抽象。
+[mip::LabelingOptions](class_mip_labelingoptions.md)  |  用于为 SetLabel 方法配置标记选项的接口。
+[mip::LoggerDelegate](class_mip_loggerdelegate.md)  |  定义 MIP SDK 记录器接口的类。
+[mip::MetadataAction](class_mip_metadataaction.md)  |  将元数据信息添加到内容的 [Action](class_mip_action.md)。
+[mip::NetworkError](class_mip_networkerror.md)  |  网络错误。 对服务终结点执行网络调用时，由于意外行为所致。
+[mip::NotSupportedError](class_mip_notsupportederror.md)  |  SDK 不支持应用程序请求执行的操作。
+[mip::PolicyEngine](class_mip_policyengine.md)  |  此类提供适用于所有引擎功能的接口。
+[mip::PolicyEngine::Settings](class_mip_policyengine_settings.md)  |  此类中带有适当参数的一个实例，必须提供此实例才可启动引擎。
+[mip::PrivilegedRequiredError](class_mip_privilegedrequirederror.md)  |  由于当前标签被指定为特权操作（相当于管理员操作），因此无法替代。
+[mip::Profile](class_mip_profile.md)  |  [Profile](class_mip_profile.md) 类是用于使用 Microsoft 信息保护操作的根类。 一个典型的应用程序只需要一个[配置文件](class_mip_profile.md)，但它可以按需创建多个配置文件。
+[mip::Profile::Observer](class_mip_profile_observer.md)  |  [Observer](class_mip_profile_observer.md) 接口，供客户端获取配置文件相关事件的通知。
+[mip::Profile::Settings](class_mip_profile_settings.md)  |  [Profile](class_mip_profile.md) 在其创建期间及其整个生存期内使用的 [Settings](class_mip_profile_settings.md)。
+[mip::ProtectAdhocAction](class_mip_protectadhocaction.md)  |  指定向文档添加临时保护的操作类。
+[mip::ProtectByTemplateAction](class_mip_protectbytemplateaction.md)  |  指定向文档添加模板保护的操作类。
+[mip::ProtectDoNotForwardAction](class_mip_protectdonotforwardaction.md)  |  指定向文档添加不转发保护的操作类。
+[mip::ProtectionDescriptor](class_mip_protectiondescriptor.md)  |  表示与受保护的内容关联的临时策略。
+[mip::ProtectionDescriptorBuilder](class_mip_protectiondescriptorbuilder.md)  |  表示与受保护的内容关联的临时策略。
+[mip::ProtectionEngine](class_mip_protectionengine.md)  |  执行与特定标识有关的保护相关操作。
+[mip::ProtectionEngine::Observer](class_mip_protectionengine_observer.md)  |  接收 [ProtectionEngine](class_mip_protectionengine.md) 相关通知的接口。
+[mip::ProtectionEngine::Settings](class_mip_protectionengine_settings.md)  |  [ProtectionEngine](class_mip_protectionengine.md) 在其创建期间及其整个生存期内使用的 [Settings](class_mip_protectionengine_settings.md)。
+[mip::ProtectionHandler](class_mip_protectionhandler.md)  |  对特定保护配置（即用户、权限、角色等）执行保护相关操作
+[mip::ProtectionHandler::Observer](class_mip_protectionhandler_observer.md)  |  接收 [ProtectionHandler](class_mip_protectionhandler.md) 相关通知的接口。
+[mip::ProtectionProfile](class_mip_protectionprofile.md)  |  [ProtectionProfile](class_mip_protectionprofile.md) 是用于执行保护操作的根类。
+[mip::ProtectionProfile::Observer](class_mip_protectionprofile_observer.md)  |  接收与 [ProtectionProfile](class_mip_protectionprofile.md) 相关通知的接口。
+[mip::ProtectionProfile::Settings](class_mip_protectionprofile_settings.md)  |  由 [ProtectionProfile](class_mip_protectionprofile.md) 在创建期间及其整个生存期内使用的[设置](class_mip_protectionprofile_settings.md)。
+[mip::RecommendLabelAction](class_mip_recommendlabelaction.md)  |  建议标签操作是向用户建议标签。 在用户忽略建议标签后，应通过对执行状态采取受支持的操作来取消此调用。
+[mip::RemoveContentFooterAction](class_mip_removecontentfooteraction.md)  |  指定从文档中删除内容脚注的操作类。
+[mip::RemoveContentHeaderAction](class_mip_removecontentheaderaction.md)  |  指定从文档中删除内容头的操作类。
+[mip::RemoveProtectionAction](class_mip_removeprotectionaction.md)  |  指定从文档中删除保护的操作类。
+[mip::RemoveWatermarkAction](class_mip_removewatermarkaction.md)  |  指定从文档中删除水印的操作类。
+[mip::Stream](class_mip_stream.md)  |  一个类，它定义 MIP SDK 和基于流的内容之间的接口。
+[mip::UserRights](class_mip_userrights.md)  |  表示一组用户和与之关联的权限。
+[mip::UserRoles](class_mip_userroles.md)  |  表示一组用户和与之关联的角色。
+
+ 

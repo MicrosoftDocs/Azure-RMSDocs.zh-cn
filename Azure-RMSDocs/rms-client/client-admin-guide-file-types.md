@@ -4,7 +4,7 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/09/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da4e3a5efec9ba7a19131a1b03fc2ddd5a7651ef
-ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
+ms.openlocfilehash: d8472b8146aa80f00ae8c66f04ee253f7a0777da
+ms.sourcegitcommit: 3276c1f3f32137cb5450f335f4f55e3b5858694d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37935709"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39157776"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -53,7 +53,9 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 - **数码底片**：.dng
 
-- **Microsoft Office**：下表中的文件类型：
+- **Microsoft Office**：下表中的文件类型。
+    
+    这些文件类型支持的文件格式：Office 97-2003 文件的最小值和 Open Office XML
     
     |Office 文件类型|Office 文件类型|
     |----------------------------------|----------------------------------|
@@ -123,14 +125,13 @@ Azure 信息保护客户端支持保护的最大文件大小。
 |。jt|。pjt|
 
 
-下一个表列出了其余的文件类型，这些文件类型通过 Azure 信息保护客户端支持本机保护，并且还可进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 
+下一个表列出了其余的文件类型，这些文件类型通过 Azure 信息保护客户端支持本机保护，并且还可进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 这些文件支持的文件格式：Office 97-2003 文件的最小值和 Open Office XML。 
 
 对于这些文件，在文件受 Rights Management 服务保护后，文件扩展名仍保持不变。
 
 |Office 支持的文件类型|Office 支持的文件类型|
 |----------------------------------|----------------------------------|
 |。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm<br /><br />。pptx<br /><br />.vsdm|.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />。xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx<br /><br />.xps|
-
 
 ### <a name="changing-the-default-protection-level-of-files"></a>更改文件的默认保护级别
 你可以通过编辑注册表来更改 Azure 信息保护客户端保护文件的方式。 例如，可以强制 Azure 信息保护客户端向支持本机保护的文件提供常规保护。

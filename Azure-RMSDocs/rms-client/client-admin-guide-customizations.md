@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/20/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8cc13eabc504c876c2118a18f1fb7bdb5bb9cfc4
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: 6b5a2856f54ec6d38ae69007e80d9eb22d416799
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973488"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029927"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -135,13 +135,13 @@ ms.locfileid: "38973488"
 
 建议使用“设置用户是否能够使用自定义权限选项”这一[策略设置](../deploy-use/configure-policy-settings.md)来配置此选项。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。 
 
-配置此设置并为用户发布策略后，用户就可以使用自定义权限选项选择自己的保护设置，或者无法使用这些选项选择保护设置（除非系统出现提示）。
+配置此设置并为用户发布策略后，用户可看到自定义权限选项，它们可用于自行选择保护设置；这些选项也可能隐藏，使得用户无法自行选择保护设置（除非系统出现提示）。
 
 若要配置此高级设置，请输入以下字符串：
 
 - 键：EnableCustomPermissions
 
-- 值：输入 True 使自定义权限选项可用，输入 False 使其不可用
+- 值：输入 True 使自定义权限选项可用，输入 False 隐藏此选项
 
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>永久隐藏 Azure 信息保护栏

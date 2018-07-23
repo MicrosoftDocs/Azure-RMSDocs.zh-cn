@@ -4,18 +4,18 @@ description: 在 Azure 信息保护策略中配置适用于所有用户、所有
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: cfdb1537ad5444ef478c18380b535f38b5f7c667
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: c03ec14c8c2fefd72e7972c486120e3a2dd1760d
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32326542"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029910"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
@@ -63,7 +63,7 @@ ms.locfileid: "32326542"
     
         也可以使用高级客户端设置将此策略设置配置为[客户端自定义](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)。
     
-    - **使用户可以使用自定义权限选项**：打开此设置后，用户可以设置自己的保护设置并替代标签配置所包括的任何保护设置。 关闭此设置后，用户无法选择自定义权限选项。
+    - **让自定义权限选项可供用户使用**：启用此设置后，用户会看到用于自行设定保护设置的选项，这些设置能够替代标签配置可能自带的任何保护设置。 用户还能看到一个用于删除保护的选项。 关闭此设置后，用户不再看到这些选项。
         
         请注意，此策略设置对用户可以通过 Office 菜单选项配置的自定义权限没有任何影响。 但是，也可以使用高级客户端设置将其配置为[客户端自定义](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)。
         

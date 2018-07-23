@@ -4,7 +4,7 @@ description: 说明如何对文档和电子邮件进行分类和保护。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 223dd5681b6b5c6911a90cf6540b2ab4c9d7f54e
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 07abfb8da932dea6fe29507cca9f3066eaf546cf
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444125"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029893"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>用户指南：使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
@@ -89,7 +89,7 @@ ms.locfileid: "34444125"
 
     ![“自定义权限”选项](../media/custom-permissions-callout.png)
     
-    如果无法选择“自定义权限”，意味着管理员不允许你使用此选项。
+    如果看不到“自定义权限”，则表示管理员禁止你使用此选项。
     
     请注意，你指定的任何自定义权限将替换（而不是补充）管理员可能已为选定标签定义的保护设置。  
 
@@ -146,9 +146,9 @@ ms.locfileid: "34444125"
     
     ![“分类和保护 - Azure 信息保护”对话框中无任何标签](../media/info-protect-dialog-labels-protection-only.png)
     
-3. 如果得到管理员的允许，可以指定你自己的保护设置，而不使用管理员可能已包含在所选标签中的保护设置。 若要执行此操作，请选择“使用自定义权限进行保护”。
+3. 如果得到管理员的准许，则可自行指定保护设置，而不使用管理员可能在所选标签中随附的保护设置。 若要执行此操作，请选择“使用自定义权限进行保护”。
     
-    如果无法选择“使用自定义权限进行保护”，意味着管理员不允许你使用此选项。
+    如果看不到“使用自定义权限进行保护”，则表示管理员禁止你使用此选项。
     
     指定的任何自定义权限将替换而不是补充管理员可能已为所选标签定义的保护设置。  
 
@@ -181,6 +181,8 @@ ms.locfileid: "34444125"
 -   [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
-请参阅[配置 Azure 信息保护策略](../deploy-use/configure-policy.md)。
+有关启用“让自定义权限选项可供用户使用”策略设置的配置说明，请参阅[配置 Azure 信息保护策略设置](../deploy-use/configure-policy-settings.md)。
+
+其他配置说明：[配置 Azure 信息保护策略](../deploy-use/configure-policy.md)。
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

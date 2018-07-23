@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行 Azure 信息保护扫描程序
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/09/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 77204e78a46b536d7a5b42c2765d5eaea8cd745a
-ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
+ms.openlocfilehash: 794a8649b803407eff0e651a0b9396d164355380
+ms.sourcegitcommit: 61a4cda950706c823233b19e63951668fdcd5ef3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37935726"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39088626"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -256,7 +256,7 @@ ms.locfileid: "37935726"
 
 如果扫描程序应用保护标签，默认只有 Office 文件类型受到保护。 可以更改此行为，让其他文件类型也受到保护。 不过，如果标签向文档应用常规保护，文件扩展名变成 .pfile。 此外，文件将变为只读，直到该文件被已授权用户打开并以本机格式保存。 文本和图像文件也可以更改其文件扩展名并变为只读。 
 
-例如，若要将此默认扫描程序行为更改为以常规方式保护其他文件类型，必须手动编辑注册表，并指定要保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 在面向开发人员的本文档中，常规保护被称为“PFile”
+例如，若要将此默认扫描程序行为更改为以常规方式保护其他文件类型，必须手动编辑注册表，并指定要保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 对于扫描程序，必须指定特定文件名扩展，且不可使用 `*` 通配符。
 
 ## <a name="when-files-are-rescanned"></a>重新扫描文件时的情况
 

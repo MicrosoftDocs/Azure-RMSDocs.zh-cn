@@ -4,7 +4,7 @@ description: 说明了如何从由 Azure 信息保护标记的文件中，或从
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ce5a6de0c2f0ab1ad374b4a0fbc01e755f28abe3
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 429af8c070b40f20b67f4e859e0659870dee177c
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327307"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029876"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>用户指南：从由 Azure 信息保护标记的文件和电子邮件中，或从受 Rights Management 保护的文件和电子邮件中，删除标签和保护
 
@@ -30,7 +30,7 @@ ms.locfileid: "32327307"
 > [!IMPORTANT]
 > 必须是文件所有者才能删除保护，或者已被授予删除保护的权限（Rights Management 提取或完全控制权限）。
 
-如果想要选择其他标签或一组其他的保护设置，则无需删除标签或保护。 请改为选择一个新标签，如有必要，可定义自定义权限。 
+如果想要选择其他标签或一组其他的保护设置，则无需删除标签或保护。 转而选择新的标签，必要时可定义自定义权限（若管理员允许此配置）。 
 
 在 Office 桌面应用程序（**Word**、**Excel**、**PowerPoint**、**Outlook**）中创建或编辑 Office 文档和电子邮件时，你可以从中删除标签和保护。 
 
@@ -57,13 +57,17 @@ ms.locfileid: "32327307"
 
 使用文件资源管理器时，可快速从单个文件、多个文件或文件夹中删除标签和保护。 选择文件夹时，将自动选择该文件夹及其所有子文件夹中的所有文件。 
 
-1.  在文件资源管理器中，选择你的文件、多个文件或文件夹。 右键单击，然后选择“分类和保护”。
+1. 在文件资源管理器中，选择你的文件、多个文件或文件夹。 右键单击，然后选择“分类和保护”。
 
 2. 删除标签：在“分类和保护 - Azure 信息保护”对话框中，单击“删除标签”。 如果标签已配置为应用保护，将自动删除该保护。
 
-3. 从单个文件删除自定义保护：在“分类和保护 - Azure 信息保护”对话框中，清除“使用自定义权限保护”选项。
+3. 从单个文件删除自定义保护：在“分类和保护 - Azure 信息保护”对话框中，清除“使用自定义权限保护”选项。 
+    
+    如果未看到“使用自定义权限进行保护”选项，则表示管理员禁止你使用此选项。
     
 4. 从多个文件删除自定义保护：在“分类和保护 - Azure 信息保护”对话框中，单击“删除自定义权限”。
+    
+    如果未看到“删除自定义权限”选项，则表示管理员禁止你使用此选项。
 
 5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”**。
 
@@ -72,6 +76,11 @@ ms.locfileid: "32327307"
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
 - [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
+
+## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
+有关启用“让自定义权限选项可供用户使用”策略设置的配置说明，请参阅[配置 Azure 信息保护策略设置](../deploy-use/configure-policy-settings.md)。
+
+其他配置说明：[配置 Azure 信息保护策略](../deploy-use/configure-policy.md)。
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
