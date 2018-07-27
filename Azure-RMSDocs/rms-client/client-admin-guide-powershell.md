@@ -4,7 +4,7 @@ description: 管理员通过使用 PowerShell 管理 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/15/2018
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a830fa6172df3dab2701109fd30484156c69fc29
-ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
+ms.openlocfilehash: 0d2ca2ddfea8bfd58392e6849457c53a29566d5e
+ms.sourcegitcommit: 1f5a5cb650be2b4c302ad4b7a0b109246da3eb80
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "35726807"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39295536"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -119,17 +119,17 @@ AzureInformationProtection 模块的当前版本具有以下限制：
 ````
 # Make sure that you have the AADRM and MSOnline modules installed
 
-$newServicePrincipalName="<new service principal name>"
+$ServicePrincipalName="<new service principal name>"
 Connect-AadrmService
 $bposTenantID=(Get-AadrmConfiguration).BPOSId
 Disconnect-AadrmService
 Connect-MsolService
-New-MsolServicePrincipal -DisplayName $servicePrincipalName
+New-MsolServicePrincipal -DisplayName $ServicePrincipalName
 
 # Copy the value of the generated symmetric key
 
 $symmetricKey="<value from the display of the New-MsolServicePrincipal command>"
-$appPrincipalID=(Get-MsolServicePrincipal | Where { $_.DisplayName -eq $servicePrincipalName }).AppPrincipalId
+$appPrincipalID=(Get-MsolServicePrincipal | Where { $_.DisplayName -eq $ServicePrincipalName }).AppPrincipalId
 Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -BposTenantId $bposTenantID
 
 ````

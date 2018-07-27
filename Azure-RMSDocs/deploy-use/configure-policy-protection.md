@@ -4,18 +4,18 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 0cac50caf3a7ecf9189d7731f1248e543871be9a
-ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
+ms.openlocfilehash: c551c83a41a7fbf6340a9e5fbd867b825a971ad6
+ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37068931"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39217886"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -94,12 +94,6 @@ ms.locfileid: "37068931"
         
         如果为 Word、Excel、PowerPoint 和文件资源管理器选择此选项：设置此选项后，标签将显示在这些应用程序中。 用户应用标签时产生的行为是显示对话框，以便用户选择自定义权限。 在此对话框中，用户必须指定权限、用户或组以及任意到期日期。 确保用户具有关于如何提供这些值的说明和指导。
     
-    - 选择预定义的模板：使用已配置的一个默认模板或自定义模板。 请注意，如果正在编辑的标签之前曾使用“设置权限”选项，则不会显示此选项。
-    
-    若要选择预定义的模板，此模板必须为已发布（未存档），且必须未链接到另一个标签。 选中此选项后，可以使用“编辑模板”按钮[将模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)。
-    
-    提示：如果习惯于创建和编辑自定义模板，请参考[曾使用 Azure 经典门户执行的任务](migrate-portal.md)获取帮助。
-
     - 选择预定义的模板：使用已配置的一个默认模板或自定义模板。 请注意，如果正在编辑的标签之前曾使用“设置权限”选项，则不会显示此选项。
     
     若要选择预定义的模板，此模板必须为已发布（未存档），且必须未链接到另一个标签。 选中此选项后，可以使用“编辑模板”按钮[将模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)。
