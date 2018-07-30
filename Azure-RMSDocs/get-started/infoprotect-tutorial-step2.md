@@ -4,18 +4,18 @@ description: 快速试用 Azure 信息保护入门教程步骤 2 - 配置策略�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2018
+ms.date: 07/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: ffae0c9ef0e9ffd1fc9a4c25ef5c60e8da6de5ca
-ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
+ms.openlocfilehash: 994b9fb3db3c4a1616896ffac7fcd68b0aff7887
+ms.sourcegitcommit: c7e943700189eeaad3f4c919cc0fa3410fd4df5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33946362"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204452"
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>步骤 2：配置 Azure 信息保护策略
 
@@ -38,13 +38,13 @@ ms.locfileid: "33946362"
     
     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy-default-labelsv2.png)
     
-3. 还会看到存在一些策略设置。 例如，未设置默认标签，文档和电子邮件无需具备标签，且用户在更改标签时无需提供理由：
+3. “配置要对信息保护最终用户显示和应用的设置”部分中的标签后面还显示一些策略设置。 例如，未设置默认标签，文档和电子邮件无需具备标签，且用户在更改标签时无需提供理由：
     
     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](../media/info-protect-policy-default-settings.png)
 
 ## <a name="changing-the-settings-for-a-default-label-and-prompt-for-justification"></a>更改默认标签和有关提示用户提供理由的设置
 
-在本教程中，将更改几个策略设置，以便可以看到它们的工作原理：
+本教程将更改其中几个策略设置，以展示它们的工作原理：
 
 1. 对于“选择默认标签”，请选择“常规”。 
 
@@ -52,7 +52,7 @@ ms.locfileid: "33946362"
 
 2. 对于“用户必须提供设置较低分类标签、删除标签或删除保护的理由”，请将此选项设置为“开”。
 
-3. 此外，请找到“使用户可使用自定义权限选项”设置。 若设置为“关”，请将其更改为“开”。
+3. 此外，请找到“使用户可使用自定义权限选项”设置。 如果此设置为“关”，将它更改为“开”。
     
     可能无需更改此设置，因为默认设置取决于你何时获得订阅。 在教程的稍后部分，我们将使用自定义权限与在文件资源管理器中右键单击文件时指定的用户共享受保护的文档。
 
@@ -74,7 +74,7 @@ ms.locfileid: "33946362"
     
     ![为 Azure 信息保护标签配置的保护](../media/info-protect-protection-bar-configured.png) 
     
-4. 在“保护”边栏选项卡中，确保选中“Azure (云密钥)”。 此选项使用 Azure Rights Management 服务保护文档和电子邮件。 此外，请确保也选中“设置权限”。 然后选择“添加权限”。
+4. 在“保护”边栏选项卡中，确保选中“Azure (云密钥)”。 此选项使用 Azure Rights Management 服务保护文档和电子邮件。 还请务必选择“设置权限”选项。 然后选择“添加权限”。
 
 5. 在“添加权限”边栏选项卡上，选择“添加 \<组织名称> - 所有成员”。 例如，如果组织名称为 VanArsdel Ltd，则会看到以下选项可供选择：
     
@@ -92,7 +92,7 @@ ms.locfileid: "33946362"
     
      ![显示 Azure 信息保护标签权限配置的“保护”边栏选项卡](../media/info-protect-protection-configured.png)
     
-    如果选择“添加权限”，则会再次打开“添加权限”边栏选项卡，以便可以添加更多用户并向他们授予不同的权限。 例如，为特定组授予仅查看访问权限。 但对于本教程，将为所有用户保留一组权限。
+    如果选择“添加权限”，此操作会再次打开“添加权限”边栏选项卡，以方便添加更多用户，并向他们授予不同的权限。 例如，为特定组授予仅查看访问权限。 但对于本教程，将为所有用户保留一组权限。
 
 8. 查看并保留内容有效期限和脱机访问的默认值，然后单击“确定”，保存并关闭此“保护”边栏选项卡。
 

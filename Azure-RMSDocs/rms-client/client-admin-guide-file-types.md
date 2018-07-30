@@ -4,7 +4,7 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d8472b8146aa80f00ae8c66f04ee253f7a0777da
-ms.sourcegitcommit: 3276c1f3f32137cb5450f335f4f55e3b5858694d
+ms.openlocfilehash: 90dac73ce15382b4be58e5eb191e44167bdee56f
+ms.sourcegitcommit: 1f5a5cb650be2b4c302ad4b7a0b109246da3eb80
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157776"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39295434"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -55,7 +55,7 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 - **Microsoft Office**：下表中的文件类型。
     
-    这些文件类型支持的文件格式：Office 97-2003 文件的最小值和 Open Office XML
+    这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。 
     
     |Office 文件类型|Office 文件类型|
     |----------------------------------|----------------------------------|
@@ -95,9 +95,9 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 - **对于其他所有文件**： 
     
-    - 保护这些文件：文件大小仅受可用磁盘空间和内存限制。
+    - 若要保护其他文件类型，并在 Azure 信息保护查看器中打开这些文件类型：文件大小上限仅受可用磁盘空间和内存限制。
     
-    - 若要在 Azure 信息保护查看器中打开这些文件：除非你有最新的 Azure 信息保护客户端预览版，否则基于文本的文件（.ptxt 和 .pxml）支持的最大文件大小为 20 MB。 对于基于图片的文件和 PDF 文件，最大文件大小仅受内存限制。
+    - 若要使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 取消保护文件：.pst 文件支持的文件大小上限为 5GB。 其他文件类型的文件大小上限仅受可用磁盘空间和内存限制。
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>支持用于分类和保护的文件类型
 
@@ -125,7 +125,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 |。jt|。pjt|
 
 
-下一个表列出了其余的文件类型，这些文件类型通过 Azure 信息保护客户端支持本机保护，并且还可进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 这些文件支持的文件格式：Office 97-2003 文件的最小值和 Open Office XML。 
+下一个表列出了其余的文件类型，这些文件类型通过 Azure 信息保护客户端支持本机保护，并且还可进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
 
 对于这些文件，在文件受 Rights Management 服务保护后，文件扩展名仍保持不变。
 

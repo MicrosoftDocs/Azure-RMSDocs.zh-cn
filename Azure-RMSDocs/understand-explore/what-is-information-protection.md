@@ -4,18 +4,18 @@ description: Azure 信息保护服务概述。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/06/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: c851c2f6af3d355b017c7fbc3de188d15ed16e90
-ms.sourcegitcommit: 7a58d6bec0b504b889980c83e8551301d49e44f4
+ms.openlocfilehash: a30607f0a4be292827a3d8ef20f45332e688ae28
+ms.sourcegitcommit: c7e943700189eeaad3f4c919cc0fa3410fd4df5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37910085"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204486"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -114,6 +114,8 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 ## <a name="resources-for-azure-information-protection"></a>Azure 信息保护的资源
 
 - 免费试用版：[企业移动性 + 安全性 E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)
+
+- 订阅选项和定价：[Azure 信息保护定价](https://azure.microsoft.com/pricing/details/information-protection)
 
 - 下载客户端：[Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
 
