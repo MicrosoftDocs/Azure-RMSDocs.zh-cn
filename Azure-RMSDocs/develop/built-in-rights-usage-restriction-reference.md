@@ -14,12 +14,12 @@ ms.assetid: 9142dd29-f1f4-4c2f-82ac-534f14b8bba1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 3340b1c1f3c4495db9092ed741049f50d64596cb
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: f7efcec2b1bedd6e6013a857060255d38dec7421
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765660"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373577"
 ---
 # <a name="how-to-use-built-in-rights"></a>如何：使用内置权限
 
@@ -76,7 +76,7 @@ ms.locfileid: "27765660"
 - Windows 应用商店和 Windows Phone：[EditableDocumentRights.Export](https://msdn.microsoft.com/library/microsoft.rightsmanagement.editabledocumentrights.export.aspx)
 - Linux：[EditableDocumentRights::Export](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EditableDocumentRights.html)
 
-**提取** - 从受保护的格式中提取内容并将其置于不受保护的格式中。 通常情况下，授予权限后，应用使用户可从受保护内容复制和粘贴信息。 如果应用实施“另存为”<em></em>功能，应用程序可能也会使用户将受保护内容保存到不受保护的格式以及其他受保护的格式。 此权限与电子邮件的“提取”权限具有相同的值。
+**提取** - 从受保护的格式中提取内容并将其置于不受保护的格式中。 通常情况下，授予权限后，应用使用户可从受保护内容复制和粘贴信息。 如果应用实施“另存为”功能，应用程序可能也会使用户将受保护内容保存到不受保护的格式以及其他受保护的格式。 此权限与电子邮件的“提取”权限具有相同的值。
 
 - Android：[EditableDocumentRights.Extract](https://msdn.microsoft.com/library/dn758284.aspx)
 - iOS 和 OS X：[MSEditableDocumentRights extract](https://msdn.microsoft.com/library/dn758318.aspx)
@@ -100,7 +100,7 @@ ms.locfileid: "27765660"
 - Windows 应用商店和 Windows Phone：[EmailRights.All](https://msdn.microsoft.com/library/microsoft.rightsmanagement.emailrights.all.aspx)
 - Linux：[EmailRights::All](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EmailRights.html)
 
-**提取** - 从受保护的格式中提取内容并将其置于不受保护的格式中。 通常情况下，授予权限后，应用允许电子邮件收件人从受保护电子邮件复制和粘贴信息。 如果应用实施“另存为”<em></em>功能，应用程序可能也会允许收件人将受保护内容保存为不受保护的格式以及其他受保护的格式。 此权限与可编辑文档的“提取”权限具有相同的值。
+**提取** - 从受保护的格式中提取内容并将其置于不受保护的格式中。 通常情况下，授予权限后，应用允许电子邮件收件人从受保护电子邮件复制和粘贴信息。 如果应用实施“另存为”功能，应用程序可能也会允许收件人将受保护内容保存为不受保护的格式以及其他受保护的格式。 此权限与可编辑文档的“提取”权限具有相同的值。
 
 - Android：[EmailRights.Extract](https://msdn.microsoft.com/library/dn758285.aspx)
 - iOS 和 OS X：[MSEmailRights extract](https://msdn.microsoft.com/library/dn758319.aspx)
@@ -133,5 +133,3 @@ ms.locfileid: "27765660"
 - iOS 和 OS X：[MSEmailRights replyAll](https://msdn.microsoft.com/library/dn758319.aspx)
 - Windows 应用商店和 Windows Phone：[EmailRights.ReplyAll](https://msdn.microsoft.com/library/microsoft.rightsmanagement.emailrights.replyall.aspx)
 - Linux：[EmailRights::ReplyAll](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EmailRights.html)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: f0fc9b01b042c3210abf69804d552607d92c5928
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: f42e1318e8be0d805216cffd402a9b87a1259e1e
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444329"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473842"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
 
@@ -254,7 +254,7 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 使用下面的三个步骤请求 Microsoft 删除 Azure Rights Management 服务的文档跟踪日志、管理日志或使用情况日志中的个人数据。 
 
 步骤 1：启动删除请求
-[与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)，以打开带有删除租户数据请求的 Azure 信息保护支持案例。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 提交请求时，你将需要提供其他信息，具体取决于需要被删除的数据。
+[与 Microsoft 支持部门联系](../information-support.md#to-contact-microsoft-support)，以打开带有删除租户数据请求的 Azure 信息保护支持案例。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 提交请求时，你将需要提供其他信息，具体取决于需要被删除的数据。
 
 - 若要删除管理日志，请提供结束日期。 将删除直到该结束日期的所有管理日志。
 - 若要删除使用情况日志，请提供结束日期。 将删除直到该结束日期的所有使用情况日志。
@@ -277,4 +277,3 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 对于删除操作，支持请求充当 Microsoft 执行的操作的审核和报告跟踪。 删除后，将不可搜索和导出已删除的数据，管理员可从 AADRM 模块使用 Get cmdlet 来对此进行验证。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 4131e3afae338d906011a9fe02a941baa61cf892
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 191a89d62abcb4faefd7f23f2353ed785450d12e
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32326797"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370493"
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>如何在 Azure 信息保护中配置不同语言的标签和模板
 
@@ -101,6 +101,5 @@ ms.locfileid: "32326797"
 
 若要详细了解可针对标签配置的选项以及可针对 Azure 信息保护策略配置的其他设置，请使用[配置组织策略](configure-policy.md#configuring-your-organizations-policy)部分中的链接。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

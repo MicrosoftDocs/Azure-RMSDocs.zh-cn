@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 07abfb8da932dea6fe29507cca9f3066eaf546cf
-ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
+ms.openlocfilehash: baf3edc435672c8339c15ea74f5b5e14d6951f96
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39029893"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371537"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>用户指南：使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
@@ -185,4 +185,3 @@ ms.locfileid: "39029893"
 
 其他配置说明：[配置 Azure 信息保护策略](../deploy-use/configure-policy.md)。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,22 +12,22 @@ ms.technology: techgroup-identity
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4a5541e076fa4324c4a79df4d18daacc6b3dafb5
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 43f0496854b17ee476c04b7b5ea3e3430b704c92
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206982"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473274"
 ---
 # <a name="rights-management-sharing-application-for-windows"></a>适用于 Windows 的 Rights Management 共享应用程序
 
->*适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 > [!IMPORTANT]
 > **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 
 
 
-对于使用 [Active Directory Rights Management Services](https://technet.microsoft.com/library/cc772403.aspx) (AD RMS) 或 [Azure 信息保护](../understand-explore/what-is-information-protection.md)的组织来说，适用于 Windows 的 Rights Management 共享应用程序（也称为“RMS 共享应用”）是一种免费、可下载的应用程序。 此应用程序还适用于没有自己的信息保护基础结构，但希望使用其他组织通过 Azure 信息保护的 Azure 权限管理服务保护的内容的组织。
+对于使用 [Active Directory Rights Management Services](https://technet.microsoft.com/library/cc772403.aspx) (AD RMS) 或 [Azure 信息保护](../what-is-information-protection.md)的组织来说，适用于 Windows 的 Rights Management 共享应用程序（也称为“RMS 共享应用”）是一种免费、可下载的应用程序。 此应用程序还适用于没有自己的信息保护基础结构，但希望使用其他组织通过 Azure 信息保护的 Azure 权限管理服务保护的内容的组织。
 
 -   [ 共享应用程序：版本发行历史记录](sharing-app-version-release-history.md)
 
@@ -43,4 +43,3 @@ ms.locfileid: "30206982"
 ## <a name="see-also"></a>另请参阅
 [FAQ for Rights Management Sharing Application for Windows](http://technet.microsoft.com/dn467883)（适用于 Windows 的 Rights Management 共享应用程序常见问题解答）
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

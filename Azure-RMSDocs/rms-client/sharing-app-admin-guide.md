@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e1f3520a74b3ae57984e635ca68ba429dd6ad131
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 65fa46d7a978eb87b455d34075bdb3f939a133f7
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208543"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474032"
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>保护级别 – 本机和常规
 
@@ -28,7 +28,7 @@ ms.locfileid: "30208543"
 
 如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 [Rights Management 共享应用程序用户指南](sharing-app-user-guide.md)或[适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)以外的更多技术信息，请使用以下信息。
 
-RMS 共享应用程序最适合与 Azure 信息保护配合使用，因为这种部署配置支持向另一组织中的用户发送受保护的附件，并提供电子邮件通知、文档跟踪和撤消等选项。 不过，它也能够与本地版本的 AD RMS 配合使用，只是存在一些限制。 有关 Azure 信息保护和 AD RMS 所支持功能的全面比较，请参阅[比较 Azure信息保护和 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。 如果安装了 AD RMS，想迁移到 Azure 信息保护，请参阅[从 AD RMS 迁移到 Azure 信息保护](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
+RMS 共享应用程序最适合与 Azure 信息保护配合使用，因为这种部署配置支持向另一组织中的用户发送受保护的附件，并提供电子邮件通知、文档跟踪和撤消等选项。 不过，它也能够与本地版本的 AD RMS 配合使用，只是存在一些限制。 有关 Azure 信息保护和 AD RMS 所支持功能的全面比较，请参阅[比较 Azure信息保护和 AD RMS](../compare-on-premise.md)。 如果安装了 AD RMS，想迁移到 Azure 信息保护，请参阅[从 AD RMS 迁移到 Azure 信息保护](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
 
 有关 Rights Management 共享应用程序的技术概览和有关本机和通用保护、支持的文件类型、文件扩展名以及如何更改默认保护级别的信息，请参阅[《Technical overview and protection details for the Rights Management sharing application》](sharing-app-admin-guide-technical.md)（Rights Management 共享应用程序的技术概览和保护详细信息）。 
 
@@ -405,4 +405,3 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 ## <a name="next-steps"></a>后续步骤
 有关其他技术信息，包括保护级别（本机和通用）之间的区别、支持的文件类型和文件扩展名以及如何更改默认保护级别的相关说明，请参阅 [Rights Management 共享应用程序技术概述](sharing-app-admin-guide-technical.md)。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

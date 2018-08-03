@@ -13,12 +13,12 @@ ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
 ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: efbc164b27e1dfe1b839e2ace893c4e3c5e656aa
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: f9dcd216a3591dee9fc328dac9d17d9338a9a978
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205123"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474420"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -48,6 +48,4 @@ Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织�
 
 
 ## <a name="see-also"></a>另请参阅
-[比较 Azure 信息保护与 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
+[比较 Azure 信息保护与 AD RMS](../compare-on-premise.md)

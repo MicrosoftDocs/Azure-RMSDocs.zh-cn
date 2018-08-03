@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 511fea3a6176cf047eb4c1568d2efa755c46f39c
-ms.sourcegitcommit: e0a47ccee898b50907374cc74fcfd9abf59cd98d
+ms.openlocfilehash: af9cfca4d328dba7646c1c319744476fe0e6b43f
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36949821"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474165"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
 >适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
-在企业网络中安装 Azure 信息保护客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序：[Azure 信息保护要求](../get-started/requirements-azure-rms.md)。 
+在企业网络中安装 Azure 信息保护客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序：[Azure 信息保护要求](../requirements.md)。 
 
 然后检查 Azure 信息保护客户端可能需要的其他先决条件（如下一部分所述）。 安装程序不会检查所有先决条件。
 
@@ -218,4 +218,3 @@ Azure 信息保护客户端包括的 PowerShell 模块具有用于安装和配�
 - [PowerShell 命令](client-admin-guide-powershell.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

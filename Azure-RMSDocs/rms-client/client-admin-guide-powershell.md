@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0d2ca2ddfea8bfd58392e6849457c53a29566d5e
-ms.sourcegitcommit: 1f5a5cb650be2b4c302ad4b7a0b109246da3eb80
+ms.openlocfilehash: 7853cfc577329e04a1f378a419f0e1ef3eca0f2a
+ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39295536"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39411064"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -559,7 +559,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 2. 将以下命令复制并粘贴到此脚本中：
     
-         Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
+         Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application> -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
 
 3. 使用上一部分中的说明修改此命令：为 **WebAppId**、**WebAppkey** 和 **NativeAppId** 参数指定你自己的值。 此时，对于你稍后将指定的 **Token** 参数，你还没有准备好其值。 
     
@@ -623,4 +623,3 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 - [支持的文件类型](client-admin-guide-file-types.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

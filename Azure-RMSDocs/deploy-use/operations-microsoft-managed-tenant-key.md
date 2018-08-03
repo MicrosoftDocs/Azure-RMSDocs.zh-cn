@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 47653ccfb7ce512f8b9ac2a1a5540a62a7295ec2
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: cac2506f7c98431048c29291ca95f197a02c7fcd
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208186"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473757"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
@@ -61,7 +61,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 ### <a name="step-1-initiate-export"></a>步骤 1：启动导出
 
-- 请[与 Microsoft 支持部门联系](../get-started/information-support.md#to-contact-microsoft-support)，以打开**带有 Azure 信息保护密钥导出请求的 Azure 信息保护支持案例**。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 收取标准支持费用；导出租户密钥并不是免费支持服务。
+- 请[与 Microsoft 支持部门联系](../information-support.md#to-contact-microsoft-support)，以打开**带有 Azure 信息保护密钥导出请求的 Azure 信息保护支持案例**。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 收取标准支持费用；导出租户密钥并不是免费支持服务。
 
 ### <a name="step-2-wait-for-verification"></a>步骤 2：等待验证
 
@@ -108,5 +108,4 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 |未经授权的个人或恶意软件获取了使用你的租户密钥的权限，但密钥本身并未泄露。|重新生成租户密钥在这种情况下并不奏效，需要进行根源分析。 如果进程或软件 Bug 是导致未经授权的个人获得访问权限的原因，则必须解决这一问题。|
 |在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户重新生成他们的租户密钥。|
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

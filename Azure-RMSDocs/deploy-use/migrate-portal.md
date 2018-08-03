@@ -4,7 +4,7 @@ description: 概览 Azure 门户中的管理任务，这些任务过去在 Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 06/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: ff1cae1695ac37c3e884053e6633a631e236efbe
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 0eb56adc41c18427a2f5058affc525ecfbbf68ba
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39376521"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>曾使用 Azure 经典门户执行的任务
 
@@ -32,12 +33,9 @@ Azure 经典门户已于 2018 年 1 月 8 日停用。 此日期之后，用户�
 
 使用以下信息可帮助你快速过渡到新门户。
 
-但是，订阅 Office 365 美国政府版（政府社区云）的客户目前无法使用 Azure 门户，必须改用 [PowerShell](configure-templates-with-powershell.md) 来管理模板。
-
-
 |Azure 经典门户|如何在 Azure 门户中执行此任务
 |-----------|--------------------|
-|首次访问配置设置|1.[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。<br /><br />2.在中心菜单上，单击“创建资源”，然后从“MARKETPLACE”列表中选择“安全 + 标识”。<br /><br />3.在“安全 + 标识”边栏选项卡上，从“特别推荐的应用”列表中选择“Azure 信息保护”。 然后，在“Azure 信息保护”边栏选项卡上，单击“创建”。<br /><br />此操作将创建“Azure 信息保护”边栏选项卡，使你在下次登录到门户时，可以从中心的“所有服务”列表中选择此服务。
+|首次访问配置设置|1.[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。<br /><br />2.在中心菜单上，单击“创建资源”，然后从“市场”列表中选择“安全 + 标识”。<br /><br />3.在“安全 + 标识”边栏选项卡上，从“特别推荐的应用”列表中选择“Azure 信息保护”。 然后，在“Azure 信息保护”边栏选项卡上，单击“创建”。<br /><br />此操作将创建“Azure 信息保护”边栏选项卡，使你在下次登录到门户时，可以从中心的“所有服务”列表中选择此服务。
 |创建新模板|创建应用保护的标签，并使用“设置权限”来定义权限、有效期限和脱机访问。 <br /><br />此配置会在后台创建一个新的自定义模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。<br /><br />有关详细信息，请参阅[创建新模板](configure-policy-templates.md#to-create-a-new-template)。
 |编辑模板属性： <br /><br />- 模板名称和描述<br /><br />- 使用权限、内容有效期限和脱机访问设置|如果尚未这样做，请[将模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)，然后执行以下操作<br /><br />1.更改标签名称和描述<br /><br />2.更改标签上的保护设置，以更改权限、有效期限和脱机访问设置。<br /><br />有关详细信息，请参阅[配置标签以保护设置](configure-policy-protection.md#to-configure-a-label-for-protection-settings)。
 |存档模板|将标签状态设置为“禁用”。
@@ -66,4 +64,3 @@ Azure 门户中的新功能：
 ## <a name="see-also"></a>另请参阅
 有关详细信息，请参阅[使用 Azure 信息保护策略配置和管理模板](../deploy-use/configure-policy-templates.md)。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

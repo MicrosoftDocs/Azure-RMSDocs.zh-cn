@@ -13,12 +13,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 766acd68d1c5c5f59530b0b61fadee315185ec4a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: a503c4232847828bf32d889f4702fbfed39463ad
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207795"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473706"
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>更改受 Rights Management 保护的文件的权限
 
@@ -48,7 +48,7 @@ ms.locfileid: "30207795"
     > [!NOTE]
     > 如果没有看到“使用 RMS 保护”  选项，可能是计算机上没有安装 RMS 共享应用程序，或者是必须重新启动计算机以完成安装。 有关如何安装 RMS 共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md)。
 
-2.  执行下列操作之一：
+2.  执行以下操作之一：
 
     -   选择策略模板：一般而言，它们是将访问权限和使用限制给你的组织成员的预定义权限。 例如，如果组织名称为“Contoso, Ltd”，你可能会看到“Contoso, Ltd - 机密，仅供查阅”。 如果这是你首次在此电脑上保护文件，将需要首先选择“公司定义的保护”以下载模板。
 
@@ -70,7 +70,7 @@ ms.locfileid: "30207795"
 > -   若要申请此帐户，请单击链接以申请 [个人 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
 >
 >     注册时，使用公司的电子邮件地址，而不是个人电子邮件地址。 如果注册的原因是要使用电子邮件发送受保护附件，请使用与用于发送电子邮件相同的电子邮件地址。
-> -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
+> -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../rms-for-individuals.md)。
 
 ## <a name="to-re-protect-a-file-that-you-have-emailed"></a>重新保护已通过电子邮件发送的文件
 
@@ -94,5 +94,3 @@ ms.locfileid: "30207795"
 
 ## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

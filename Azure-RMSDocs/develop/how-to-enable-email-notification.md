@@ -14,12 +14,12 @@ ms.assetid: 5FB975EE-E4E5-4089-B8E1-CAFD5B9B34EC
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 2869fc76bb45ca6f1e22cd1d7ffc232bbc60c0b4
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 29512c1b98fee619eb8a9bf2086529205b8c04d0
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765827"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369650"
 ---
 # <a name="how-to-enable-email-notification"></a>操作说明：启用电子邮件通知
 
@@ -62,5 +62,3 @@ ms.locfileid: "27765827"
 - [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
 - [IPC\_LI\_APP\_SPECIFIC\_DATA](https://msdn.microsoft.com/library/hh535287.aspx)
 - [IPC\_NAME\_VALUE\_LIST](https://msdn.microsoft.com/library/hh535277.aspx)。
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

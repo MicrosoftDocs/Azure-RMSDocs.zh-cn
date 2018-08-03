@@ -14,12 +14,12 @@ ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 84b0f1ec7e5ef647161c5e44059140ea59ffab77
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: d9dce9a1335bfa8b6f26f43cedebe0297a4d79c0
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765793"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373094"
 ---
 # <a name="file-api-configuration"></a>文件 API 配置
 
@@ -151,5 +151,3 @@ HKEY_LOCAL_MACHINE
 
 - [开发人员说明](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

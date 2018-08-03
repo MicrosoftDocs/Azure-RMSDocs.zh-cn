@@ -14,12 +14,12 @@ ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 33401c6119d56ad8b24dbbc70b209bf5cbd92a6b
-ms.sourcegitcommit: d1a3f35ea2d2c246a5b1e3f3da75df9c182fd0da
+ms.openlocfilehash: ca186c72d74d688e5ef0ad0b26581c3fdfc86767
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34480164"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374947"
 ---
 # <a name="install-the-sdk"></a>安装 SDK
 
@@ -41,5 +41,3 @@ ms.locfileid: "34480164"
 ## <a name="related-topics"></a>相关主题
 
 * [开发环境文件](sdk-elements.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

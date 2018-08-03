@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c49306a731bf629f3678dc9aa95b23b8ee46190e
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: 5e7003c2b2dbcd81ee980dda1dfab14291e81088
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34217016"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473393"
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>部署 Azure Rights Management 连接器
 
@@ -41,7 +41,7 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 > [!NOTE]
 > 如果想要通过使用文件分类基础结构保护多个文件类型（不仅是 Office 文档），请勿使用 RMS 连接器，而是使用 [AzureInformationProtection cmdlet](/powershell/azureinformationprotection/vlatest/aip)。
 
-有关这些受 RMS 连接器支持的本地服务器的版本，请参阅[支持 Azure RMS 的本地服务器](..\get-started\requirements-servers.md)。
+有关这些受 RMS 连接器支持的本地服务器的版本，请参阅[支持 Azure RMS 的本地服务器](../requirements-servers.md)。
 
 
 ### <a name="support-for-hybrid-scenarios"></a>支持混合方案
@@ -94,5 +94,3 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 ## <a name="next-steps"></a>后续步骤
 
 转到步骤 1：[安装并配置 Azure Rights Management 连接器](install-configure-rms-connector.md)。
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

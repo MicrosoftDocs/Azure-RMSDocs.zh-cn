@@ -13,12 +13,12 @@ ms.custom: askipteam
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1e3dc88f69b1fb4ed178f3f2d1268c47fae13621
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 1ebeef2847a8404d5970673acd3163b336cf0406
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208611"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473349"
 ---
 # <a name="rights-management-sharing-application-version-release-history"></a>权限管理共享应用程序：版本发行历史记录
 
@@ -81,7 +81,7 @@ Azure 信息保护团队定期更新 Rights Management 共享应用程序，以�
 
 -   对 Azure RMS 的 Multi-Factor Authentication (MFA) 的支持也将删除 Microsoft 登录助手（使用新式身份验证）的依赖关系。
 
-    有关详细信息，请参阅 [Azure 信息保护的 Azure Active Directory 要求](../get-started/requirements-azure-ad.md)中的[多重身份验证 (MFA) 和 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection) 部分。
+    有关详细信息，请参阅 [Azure 信息保护的 Azure Active Directory 要求](../requirements-servers.md)中的[多重身份验证 (MFA) 和 Azure RMS](../requirements-servers.md) 部分。
 
 ## <a name="version-1017840"></a>版本 1.0.1784.0
 **发布日期**：2015/7/30
@@ -130,4 +130,3 @@ Azure 信息保护团队定期更新 Rights Management 共享应用程序，以�
 
 -   **在你的组织内支持多个电子邮件域**：如果你使用 AD RMS，并且组织中的用户具有多个电子邮件域，此更新可让你的用户使用其他域中的组织中的用户保护的内容。 有关详细信息，请参阅 [Rights Management 共享应用程序管理员指南](sharing-app-admin-guide.md)中的[仅限 AD RMS：在组织中支持多个电子邮件域](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization)部分。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

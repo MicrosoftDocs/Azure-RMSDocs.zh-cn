@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 393db5da6f2a563b073b071e873a8c5d555a76e6
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 4143cd12138e82bcf94331ef0911033acdb1942c
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208577"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474369"
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>查看和使用受权限管理保护的文件
 
@@ -33,7 +33,7 @@ ms.locfileid: "30208577"
 > -   若要申请此帐户，请单击链接以申请 [个人 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
 >
 >     注册时，使用公司的电子邮件地址，而不是个人电子邮件地址。 如果注册的原因是要使用电子邮件发送受保护附件，请使用与用于发送电子邮件相同的电子邮件地址。
-> -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
+> -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../rms-for-individuals.md)。
 
 ## <a name="to-view-a-protected-file"></a>查看受保护文件
 通过使用文件资源管理器或包含附件的电子邮件，双击受保护文件，然后在收到提示时输入凭据。
@@ -102,5 +102,3 @@ ms.locfileid: "30208577"
 
 ## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

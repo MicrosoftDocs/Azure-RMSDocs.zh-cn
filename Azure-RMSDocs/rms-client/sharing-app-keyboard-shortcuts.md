@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 39787218e1c9e1d130748aa309ae49790b64275a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 1c260cd3d27d38328c3e09c71b3db77bb30ecfaa
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206948"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375379"
 ---
 # <a name="use-keyboard-shortcuts-in-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序中的键盘快捷键
 
@@ -38,5 +38,3 @@ ms.locfileid: "30206948"
 
 ## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -14,19 +14,19 @@ ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6c1500b13a0c7ddabd3a01deb08c81fa3d4d72c7
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 5f9bd177f3f438e591c9c0974f159c6e85c6f1e9
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258985"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473434"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>操作说明：使服务应用程序可以使用基于云的 RMS
 
 本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。 有关详细信息，请参阅 [Azure Rights Management 入门](https://technet.microsoft.com/library/jj585016.aspx)。
 
 **重要说明**  
-为了通过 Azure RMS 使用 Rights Management Services SDK 2.1 服务应用程序，你需要创建自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](../get-started/requirements-subscriptions.md)
+为了通过 Azure RMS 使用 Rights Management Services SDK 2.1 服务应用程序，你需要创建自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](./requirements-subscriptions.md)
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -179,5 +179,3 @@ ms.locfileid: "30258985"
 * [IpcfEncrcyptFile](https://msdn.microsoft.com/library/dn133059.aspx)
 * [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)
 * [IpcCreateLicenseFromTemplateID](https://msdn.microsoft.com/library/hh535257.aspx)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

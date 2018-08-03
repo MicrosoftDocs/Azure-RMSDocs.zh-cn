@@ -14,12 +14,12 @@ ms.assetid: 34dc6d6f-cfe4-4848-9b11-8d90c4b38ef7
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 3b7ff758abeb3f1ddc1ae82349233e437d05dacc
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 3299981f6e45cc8c82da66e2fce07cece552c81f
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2017
-ms.locfileid: "20232830"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372268"
 ---
 # <a name="deploying-a-service-application-into-a-different-tenant"></a>将服务应用程序部署到不同租户
 
@@ -51,5 +51,3 @@ ABC 购买 CoolApp 的解决方案后，ABC 的 IT 管理员必须创建 CoolApp
 ## <a name="flow-2-abc-it-administrator-provides-the-key-to-the-coolapp-team"></a>流程 2：ABC IT 管理员向 CoolApp 团队提供密钥
 
 ABC IT 管理员创建服务主体后（如**图 1** 所示），ABC 向 CoolApp 团队提供信息。 然后 CoolApp 团队继续在 CoolApp 应用程序中嵌入信息，以供 ABC 的租户使用。
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

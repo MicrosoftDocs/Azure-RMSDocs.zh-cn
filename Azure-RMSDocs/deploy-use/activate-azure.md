@@ -13,12 +13,12 @@ ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 976d03abfb512060aecb2e6f6809f8c491d6fc1b
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 9f8c81f30e9d1a115026d2888a3a4c696627c74e
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207166"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474454"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>如何从 Azure 门户激活 Azure 权限管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "30207166"
     
     如果之前尚未访问过 Azure 信息保护边栏选项卡，请参阅一次性执行的[其他步骤](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time)来向门户添加此边栏选项卡。
     
-    要打开 Azure 信息保护边栏选项卡，必须拥有 [Azure 信息保护高级计划](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)或[包含 Rights Management 的 Office 365 计划](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 如果拥有这些订阅其中之一，但看到消息“找不到有效订阅”，请[联系 Microsoft 支持部门](../get-started/information-support.md#to-contact-microsoft-support)或使用标准的支持通道。
+    要打开 Azure 信息保护边栏选项卡，必须拥有 [Azure 信息保护高级计划](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)或[包含 Rights Management 的 Office 365 计划](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 如果拥有这些订阅其中之一，但看到消息“找不到有效订阅”，请[联系 Microsoft 支持部门](../information-support.md#to-contact-microsoft-support)或使用标准的支持通道。
 
 2. 找到“管理”菜单选项，选择“保护激活”。 
     
@@ -44,5 +44,3 @@ ms.locfileid: "30207166"
 ## <a name="next-steps"></a>后续步骤
 继续阅读[激活 Azure 权限管理](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)。
 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

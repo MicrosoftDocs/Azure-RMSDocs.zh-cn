@@ -14,12 +14,12 @@ ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 906746990fd08a749d2879fbc04b054e49e65f01
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 68ed6db23caf5cab0a98e4704a36366c721d4194
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27764448"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373383"
 ---
 # <a name="how-to-enable-error-and-performance-logging"></a>如何：启用错误和性能日志记录
 Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性能日志上传。
@@ -98,5 +98,3 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
 **请注意** - 上面的 Windows 代码片段使用的是 C++。 对于 C\#，请使用“.” 而不是“::”更新语法。
 
 **Linux / C++** - 此 SDK 中包含一些基本的日志记录，它们没有其他平台的日志记录那样宽泛。 有关详细信息，请参阅[可移植 C++ 的 RMS SDK](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting) 中的“README.md”的**疑难解答**部分。
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

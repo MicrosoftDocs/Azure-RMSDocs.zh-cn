@@ -14,12 +14,12 @@ ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 9c142de580e6e77c0f1c84f12d60158f11751c15
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: afa2b49a8ff918a02852fba1b6947be2def43e23
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258813"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375237"
 ---
 # <a name="overview"></a>概述
 
@@ -56,5 +56,3 @@ MS RMS SDK 4.2 提供了一些很棒的新功能，包括以下方面：
 * [入门](get-started.md)
 * [Azure AD 身份验证库](https://msdn.microsoft.com/library/jj573266.aspx)
 * [GitHub 帐户](https://github.com/AzureAD/)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

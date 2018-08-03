@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c4f37d2c3e7a90171662d91a4f78d61b629dd650
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 9aa69746786100df389997a7dca674a159edcb26
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207472"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373798"
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 共享应用程序的技术概览和保护详细信息
 
@@ -135,4 +135,3 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 ## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

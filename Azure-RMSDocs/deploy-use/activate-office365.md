@@ -13,12 +13,12 @@ ms.custom: askipteam
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 77d511cc466441ffc28d813be9a0ec86ff3d8fa7
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 9cc8d49b62155354b96ad04f76c335be2124f15a
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205030"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473502"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>如何从 Office 365 管理中心激活 Azure 权限管理
 
@@ -44,7 +44,7 @@ ms.locfileid: "30205030"
     >
     >若要激活 Azure 权限管理服务，必须拥有 [Azure Information Protection Premium plan](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)（Azure 信息保护高级计划）或 [Office 365 plan that includes Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)（包含权限管理的 Office 365 计划）。 
     
-    如需激活服务的相关帮助，或对订阅要求有任何疑问，请[联系 Microsoft 支持部门](../get-started/information-support.md#to-contact-microsoft-support)或使用标准的支持渠道。
+    如需激活服务的相关帮助，或对订阅要求有任何疑问，请[联系 Microsoft 支持部门](../information-support.md#to-contact-microsoft-support)或使用标准的支持渠道。
 
 4. 在“Rights Management”页上，单击“激活”。
 
@@ -56,4 +56,3 @@ ms.locfileid: "30205030"
 ## <a name="next-steps"></a>后续步骤
 继续阅读[激活 Azure 权限管理](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2477432e53a3aaeee89781a8bd7a595315e86561
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 3e7949075e7bd2a307bc74dfba082decdb1902a5
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207730"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473257"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>为 Azure Rights Management 配置应用程序
 
@@ -28,10 +28,10 @@ ms.locfileid: "30207730"
 >
 > 例如，对于 Office 应用程序，请单击帮助图标并输入搜索词，例如 **Rights Management** 或 **IRM**。 有关适用于 Windows 的 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端用户指南](../rms-client/client-user-guide.md)。
 
-为组织部署 Azure 信息保护之后，请使用以下信息配置应用程序、Azure 信息保护客户端和服务。 例如，Word 2016、Word 2013 和 Word 2010 等 Office 应用程序。 以及 Exchange Online（传输规则、数据丢失防护、请勿转发和邮件加密）与 SharePoint Online（受保护库）等服务。 若要了解这些应用程序和服务如何支持 Azure 信息保护中的数据保护服务，请参阅[应用程序如何支持 Azure 权限管理服务](../understand-explore/applications-support.md)。
+为组织部署 Azure 信息保护之后，请使用以下信息配置应用程序、Azure 信息保护客户端和服务。 例如，Word 2016、Word 2013 和 Word 2010 等 Office 应用程序。 以及 Exchange Online（传输规则、数据丢失防护、请勿转发和邮件加密）与 SharePoint Online（受保护库）等服务。 若要了解这些应用程序和服务如何支持 Azure 信息保护中的数据保护服务，请参阅[应用程序如何支持 Azure 权限管理服务](../applications-support.md)。
 
 > [!IMPORTANT]
-> 有关受支持的版本和其他要求的信息，请参阅 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)。
+> 有关受支持的版本和其他要求的信息，请参阅 [Azure Rights Management 的要求](../requirements.md)。
 
 -   [Office 365：客户端和联机服务配置](configure-office365.md)
 
@@ -65,5 +65,4 @@ ms.locfileid: "30207730"
 
 - [Azure 信息保护租户密钥的操作](operations-tenant-key.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

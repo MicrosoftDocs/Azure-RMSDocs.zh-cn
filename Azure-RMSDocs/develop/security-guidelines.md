@@ -12,12 +12,12 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 6c3669c1ada24afcf3b9ec48ea5bb9c38939b47e
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 194e676807145dffdf326fe782f4b4051876552d
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258769"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371843"
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure 信息保护的安全最佳实践
 
@@ -94,5 +94,3 @@ API 允许用户解密或不解密信息；该信息没有任何固有保护。 
 - 需要将由应用程序实现的新权限中包含的内容所抽象化的任何权限映射到新的术语。 例如，名为 MANAGER 的新权限可能将 PRINT、COPY 和 EDIT 权限包括为抽象权限。
 建议标准（暂时没有）。
 首选标准（暂时没有）。
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

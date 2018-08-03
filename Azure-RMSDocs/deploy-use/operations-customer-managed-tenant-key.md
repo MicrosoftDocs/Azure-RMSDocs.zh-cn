@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 16ded8f9bbe06069e1fefb925166af491d1b0caa
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: d1c2f96dfd915134385fd4e790e9477c77fa17ad
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208220"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375168"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
 
@@ -81,5 +81,4 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 |在当前这代 HSM 技术中发现的漏洞。|Microsoft 必须更新 HSM。 如果有理由认为这些漏洞泄露了密钥，Microsoft 将指示所有客户重新生成他们的租户密钥。|
 |在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 密钥保管库或 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户重新生成他们的租户密钥。|
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

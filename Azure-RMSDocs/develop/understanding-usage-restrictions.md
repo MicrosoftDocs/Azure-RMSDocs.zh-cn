@@ -14,12 +14,12 @@ ms.assetid: E388B16C-ECDA-4696-A040-D457D3C96766
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d21ae836ca0d0d8d91422fa4078b872393942eec
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 389067db1bd0638b56a2a5e04058ecdd750cbd81
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765742"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371826"
 ---
 # <a name="understanding-usage-restrictions"></a>了解使用限制
 
@@ -72,5 +72,3 @@ AD RMS 权限列中列出的每个用户权利都附带有一个说明、一个�
 ## <a name="related-topics"></a>相关主题
 
 * [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

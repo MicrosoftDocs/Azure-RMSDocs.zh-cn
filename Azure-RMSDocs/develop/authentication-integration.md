@@ -14,12 +14,12 @@ ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 1d7a5a41c16a8a1354933b13449875de7ec0902e
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: cb9e5ef5cd60fff43174071938525b7544e5eb9e
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765339"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369592"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>如何使用 Azure AD 注册应用并为其启用 RMS
 
@@ -75,7 +75,7 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
     iOS: `<app-scheme>://<bundle-id>`
 
 >[!NOTE] 
-> 如果应用未遵循这些指导原则，则 Azure RMS 和 Azure AD 工作流可能会失败，并且不受 Microsoft.com 支持。而且，如果在生产应用中使用无效客户端 Id，则可能会违反权限管理许可协议 (RMLA)。
+> 如果应用未遵循这些指导原则，则 Azure RMS 和 Azure AD 工作流可能会失败，并且不受 Microsoft.com 支持。 而且，如果在生产应用中使用无效客户端 Id，则可能会违反权限管理许可协议 (RMLA)。
 
 ### <a name="what-should-an-authentication-callback-implementation-look-like"></a>身份验证回调实现应呈现的内容
 **身份验证代码示例** - 此 SDK 具有演示身份验证回调的使用的示例代码。 为方便起见，这些代码示例在此处以及以下每个链接的主题中进行了表示。
@@ -266,5 +266,3 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
         throw;
       }
     }
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

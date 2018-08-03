@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: f9b61b6b-05ba-4422-b8b0-cd20af774a2b
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2abc976c1185d7031af383af96f2da8f19b1493f
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 71ab8c0ab309e219850ad118d6acf2d3fba9a52d
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204925"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474386"
 ---
 # <a name="azure-information-protection-client-for-windows"></a>适用于 Windows 的 Azure 信息保护客户端
 
 >适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
 
-适用于 Windows 的 Azure 信息保护客户端是可下载的免费客户端，适用于使用 [Azure 信息保护](../understand-explore/what-is-information-protection.md)来分类和保护文档和电子邮件或使用 Rights Management 服务来保护其数据的组织。 此客户端还有一个查看器，可用于没有自己的信息保护基础结构，但希望使用其他组织通过 Microsoft 的 Rights Management 服务保护的内容的组织。
+适用于 Windows 的 Azure 信息保护客户端是可下载的免费客户端，适用于使用 [Azure 信息保护](../what-is-information-protection.md)来分类和保护文档和电子邮件或使用 Rights Management 服务来保护其数据的组织。 此客户端还有一个查看器，可用于没有自己的信息保护基础结构，但希望使用其他组织通过 Microsoft 的 Rights Management 服务保护的内容的组织。
 
 - [Azure 信息保护客户端：版本发行历史记录](client-version-release-history.md)
 
@@ -37,4 +37,3 @@ ms.locfileid: "30204925"
 > 对于 Mac 计算机和 Windows Phone：使用移动设备的 RMS 共享应用并阅读[适用于移动设备和 Mac 平台的 Rights Management 共享应用程序常见问题](http://technet.microsoft.com/dn451248)。
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: cbb34f8417f3f4d63369399ffe962e7c957f65a6
-ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
+ms.openlocfilehash: cebfc618e4d1660bbae371d1f54f764b67f642b0
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37069455"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372778"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>配置 Azure 信息保护标签的 Exchange Online 邮件流规则
 
@@ -131,4 +131,3 @@ ms.locfileid: "37069455"
 此外，若要分类包含附件的电子邮件，请考虑使用以下 Azure 信息保护[策略设置](configure-policy-settings.md)：对于有附件的电子邮件，应用与这些附件的最高分类匹配的标签。
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

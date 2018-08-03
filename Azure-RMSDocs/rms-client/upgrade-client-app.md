@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: d7bc2478-c22f-4e19-9992-012658362b25
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 79befd96ba20fa3dcb86dbb5a511e0fec6bc8447
-ms.sourcegitcommit: b993c332e53d7aa48d93d4bbd42c80abcf79b351
+ms.openlocfilehash: 27bc46bd6afb94b4a87836d2cad18d3cb6ea9b9f
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37106992"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375566"
 ---
 # <a name="user-guide-tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>用户指南：用于操作 RMS 共享应用程序的任务
 
@@ -55,5 +55,4 @@ ms.locfileid: "37106992"
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 请参阅 [Azure 信息保护客户端管理员指南](client-admin-guide.md)。
 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]  
+  

@@ -14,12 +14,12 @@ ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: c67e60e4b0255d658a661c429ce7993595143ed1
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 5dc4cc7a54e7976339ad0def3f2a1d71c8204991
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765080"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369918"
 ---
 # <a name="supported-file-formats"></a>支持的文件格式
 
@@ -39,4 +39,3 @@ ms.locfileid: "27765080"
 * [开发人员说明](developer-notes.md)
 * [文件 API 配置](file-api-configuration.md)
  
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

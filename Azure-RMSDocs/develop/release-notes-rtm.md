@@ -14,12 +14,12 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 74f4eacb7601d137e8eb459fad3853ac5ec52e97
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 7f634e554b342e35b359fe870a5b0f033794b9c1
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30259024"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373696"
 ---
 # <a name="release-notes"></a>发行说明
 
@@ -165,5 +165,3 @@ SDK 的文件 API 组件已扩展并提供以下功能：
     3 - The first available language specified in the Rights Management Server (RMS) template.
 
 如果检索不到任何名称和描述，则将返回一个错误。 特定 LCID 只能有一个名称和描述。
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

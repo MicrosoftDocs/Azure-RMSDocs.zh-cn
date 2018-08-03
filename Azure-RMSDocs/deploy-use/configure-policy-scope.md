@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 88aa83d5e23da59592b15a4d8fa66735eebcbdb1
-ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
+ms.openlocfilehash: 2119bf25aa83b9f764ba753b0c8b975dc8528e2d
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39217784"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473485"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>如何使用作用域内策略为特定用户配置 Azure 信息保护策略
 
@@ -59,6 +59,5 @@ ms.locfileid: "39217784"
 
 ## <a name="next-steps"></a>后续步骤
 
-有关如何自定义默认策略并在 Office 应用程序是查看所产生行为的示例，请尝试 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)(#azure-信息保护快速入门教程)。
+有关如何自定义默认策略并在 Office 应用程序是查看所产生行为的示例，请尝试 [Azure 信息保护快速入门教程](../infoprotect-quick-start-tutorial.md)(#azure-信息保护快速入门教程)。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

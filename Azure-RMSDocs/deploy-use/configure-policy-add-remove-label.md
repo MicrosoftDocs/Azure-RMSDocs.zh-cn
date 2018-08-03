@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: ad74efff44738c5475e988d861fda8d93686e794
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: bca42c43f8e25ae4a9bb4b1818244834551f9ba1
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32326297"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373402"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>向 Azure 信息保护策略添加标签或从中删除标签
 
@@ -60,4 +60,3 @@ ms.locfileid: "32326297"
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

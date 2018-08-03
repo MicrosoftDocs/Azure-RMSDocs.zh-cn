@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b459babbf16b536b1cd73d0bb0ec2c36a499f9e1
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 2943d976e617a4ea2fae42f115b99d65774fb732
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207924"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473978"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
@@ -25,10 +25,10 @@ ms.locfileid: "30207924"
 
 建议使用以下步骤，为组织准备、实施和管理 Azure 信息保护。
 
-不过，如果只想快速试用 Azure 信息保护，而不将其部署在生产环境中，请参阅 [Azure 信息保护快速入门教程](../get-started/infoprotect-quick-start-tutorial.md)。
+不过，如果只想快速试用 Azure 信息保护，而不将其部署在生产环境中，请参阅 [Azure 信息保护快速入门教程](../infoprotect-quick-start-tutorial.md)。
 
 > [!IMPORTANT]
-> 在执行以下步骤之前，请确保已查看 [Azure 信息保护的要求](../get-started/requirements-azure-rms.md)。
+> 在执行以下步骤之前，请确保已查看 [Azure 信息保护的要求](../requirements.md)。
 
 选择适用于组织，并与所需[订阅功能和特性](https://azure.microsoft.com/pricing/details/information-protection/)相匹配的部署路线图：
 
@@ -45,7 +45,7 @@ ms.locfileid: "30207924"
 ### <a name="step-1-confirm-your-subscription-and-assign-user-licenses"></a>步骤 1：确认订阅，分配用户许可证
 查看 [Azure 信息保护定价](https://azure.microsoft.com/pricing/details/information-protection)页面上的订阅信息和功能列表，以确认组织具有包含所需功能和特性的订阅。 然后，将该订阅中的许可证分配给组织中的每位用户，这些用户将对文档和电子邮件进行分类、标记和保护。
 
-注意：不要从个人订阅的免费 RMS 手动分配用户许可证，不要使用此许可证来管理组织的 Azure Rights Management 服务。 这些许可证在 Office 365 管理中心显示为 **Rights Management 即席**，当运行 Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx) 时显示为 **RIGHTSMANAGEMENT_ADHOC**。 有关如何将个人订阅 RMS 自动授权和分配给用户的详细信息，请参阅[个人 RMS 和 Azure 信息保护](../understand-explore/rms-for-individuals.md)。
+注意：不要从个人订阅的免费 RMS 手动分配用户许可证，不要使用此许可证来管理组织的 Azure Rights Management 服务。 这些许可证在 Office 365 管理中心显示为 **Rights Management 即席**，当运行 Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx) 时显示为 **RIGHTSMANAGEMENT_ADHOC**。 有关如何将个人订阅 RMS 自动授权和分配给用户的详细信息，请参阅[个人 RMS 和 Azure 信息保护](../rms-for-individuals.md)。
 
 
 ### <a name="step-2-prepare-your-tenant-to-use-azure-information-protection"></a>步骤 2：准备租户以使用 Azure 信息保护
@@ -137,7 +137,7 @@ ms.locfileid: "30207924"
 ### <a name="step-1-confirm-that-you-have-a-subscription-that-includes-the-protection-service-from-azure-information-protection"></a>步骤 1：确认你拥有包括 Azure 信息保护所提供保护服务的订阅
 查看 [Azure 信息保护定价](https://azure.microsoft.com/pricing/details/information-protection)页面上的订阅信息和功能列表，以确认组织具有包含所需功能和特性的订阅。 然后，将该订阅中的许可证分配给组织中的每位用户，这些用户将对文档和电子邮件进行保护。
 
-注意：不要从个人订阅的免费 RMS 手动分配用户许可证，不要使用此许可证来管理组织的 Azure Rights Management 服务。 这些许可证在 Office 365 管理中心显示为 **Rights Management 即席**，当运行 Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx) 时显示为 **RIGHTSMANAGEMENT_ADHOC**。 有关如何将个人订阅 RMS 自动授权和分配给用户的详细信息，请参阅[个人 RMS 和 Azure 信息保护](../understand-explore/rms-for-individuals.md)。
+注意：不要从个人订阅的免费 RMS 手动分配用户许可证，不要使用此许可证来管理组织的 Azure Rights Management 服务。 这些许可证在 Office 365 管理中心显示为 **Rights Management 即席**，当运行 Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx) 时显示为 **RIGHTSMANAGEMENT_ADHOC**。 有关如何将个人订阅 RMS 自动授权和分配给用户的详细信息，请参阅[个人 RMS 和 Azure 信息保护](../rms-for-individuals.md)。
 
 
 ### <a name="step-2-prepare-your-tenant-to-use-azure-information-protection"></a>步骤 2：准备租户以使用 Azure 信息保护
@@ -190,4 +190,3 @@ ms.locfileid: "30207924"
 ### <a name="step-5-administer-the-protection-service-for-your-tenant-account-as-needed"></a>步骤 5：根据需要管理租户帐户的保护服务
 开始使用保护服务时，可以利用 PowerShell 帮助编写脚本或自动执行管理更改。 有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](../deploy-use/administer-powershell.md)。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

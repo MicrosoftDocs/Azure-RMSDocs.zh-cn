@@ -14,12 +14,12 @@ ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 190fce3f1725775ae699dbc523a810dc79b96f88
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 09e75b1d8fd841295924dccfbacf8dcb6d753182
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444242"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473468"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 
@@ -63,7 +63,7 @@ Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
 
 可以，当你申请 Microsoft 帐户时，可以指定你的 Hotmail 或 Gmail 电子邮件地址或你拥有的任何其他电子邮件地址。 
 
-但是，尽管此查看器可以打开受此帐户保护的文件，但是并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+但是，尽管此查看器可以打开受此帐户保护的文件，但是并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 ## <a name="which-file-extensions-can-i-open-with-this-app"></a>使用此应用可打开哪些文件扩展名？
 
@@ -79,5 +79,3 @@ Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
 ## <a name="my-question-has-not-been-answeredwhat-should-i-do"></a>我的问题没有得到相应解答 - 应采取何种操作？
 
 请在我们的 [Yammer 网站](https://www.yammer.com/AskIPTeam)中发布问题。
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

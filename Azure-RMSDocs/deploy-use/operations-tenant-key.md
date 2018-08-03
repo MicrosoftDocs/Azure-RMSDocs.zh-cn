@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f459504f43c8e361e36832b19011f93d1cbaccc4
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: a12d0a885b4ed4762124511929bb9f139e8c02db
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205789"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369769"
 ---
 # <a name="operations-for-your-azure-information-protection-tenant-key"></a>Azure 信息保护租户密钥的操作
 
@@ -44,4 +44,3 @@ ms.locfileid: "30205789"
 
 但是，如果要通过从 Active Directory Rights Management Services 导入受信任的发布域 (TPD) 来创建 Azure 信息保护租户密钥，则执行此导入操作作为[从 AD RMS 迁移到 Azure 信息保护](../plan-design/migrate-from-ad-rms-to-azure-rms.md)的一部分。  
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

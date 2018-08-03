@@ -14,12 +14,12 @@ ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8426b8c1425677e7ddc5772d4f3c4f6d38b01083
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: d3836c9ace6ccfa7fbd87aa577598837ff4a4651
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765538"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369633"
 ---
 # <a name="how-to-add-explicit-owner-rights"></a>操作说明：添加显式所有者权限
 
@@ -111,5 +111,3 @@ ms.locfileid: "27765538"
 - [开发人员说明](developer-notes.md)
 - [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
 - [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

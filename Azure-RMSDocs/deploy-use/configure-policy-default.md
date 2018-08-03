@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 57c7321f9bcff12ff0afe4030038495ad4668020
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e8830047e57352d71810d43315ca033ec4ae91e5
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208050"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371418"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
@@ -89,7 +89,7 @@ ms.locfileid: "30208050"
 
 ### <a name="information-protection-bar"></a>信息保护栏
 
-|设置|值|
+|Setting|值|
 |-------------------------------|---------------------------|
 |标题|敏感度|
 |工具提示|此内容的当前标签。 此设置的作用是在与组织内外未经授权的人员共享此内容时识别业务风险。|
@@ -97,7 +97,7 @@ ms.locfileid: "30208050"
 
 ### <a name="settings"></a>设置
 
-|设置|值|
+|Setting|值|
 |-------------------------------|---------------------------|
 |所有文档和电子邮件都必须自动应用或由用户应用标签|关|
 |选择默认标签|无|
@@ -133,7 +133,7 @@ ms.locfileid: "30208050"
 
 ### <a name="information-protection-bar"></a>信息保护栏
 
-|设置|值|
+|Setting|值|
 |-------------------------------|---------------------------|
 |标题|敏感度|
 |工具提示|此内容的当前标签。 此设置的作用是在与组织内外未经授权的人员共享此内容时识别业务风险。|
@@ -141,7 +141,7 @@ ms.locfileid: "30208050"
 
 ### <a name="settings"></a>设置
 
-|设置|值|
+|Setting|值|
 |-------------------------------|---------------------------|
 |所有文档和电子邮件都必须自动应用或由用户应用标签|关|
 |选择默认标签|无|
@@ -171,7 +171,7 @@ ms.locfileid: "30208050"
 
 ### <a name="information-protection-bar"></a>信息保护栏
 
-|设置|值|
+|Setting|值|
 |-------------------------------|---------------------------|
 |标题|敏感度|
 |工具提示|信息敏感度包含四个不同级别（公共、内部、机密、秘密），使用户可确定向企业内部或外部未经授权的用户公开信息的风险。|
@@ -179,7 +179,7 @@ ms.locfileid: "30208050"
 
 ### <a name="settings"></a>设置
 
-|设置|值|
+|Setting|值|
 |-------------------------------|---------------------------|
 |所有文档和电子邮件都必须自动应用或由用户应用标签|关|
 |选择默认标签|无|
@@ -190,5 +190,3 @@ ms.locfileid: "30208050"
 ## <a name="next-steps"></a>后续步骤
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

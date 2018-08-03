@@ -4,7 +4,7 @@ description: 此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2018
+ms.date: 07/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 757b3af36fb15c3069c5bef7ca4509ff92cee1f9
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: ccd62b7a539906c6e1f375e8bfc51e461f4cd547
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973318"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370510"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 
@@ -80,7 +80,7 @@ ms.locfileid: "38973318"
     输入指定的密码以导出配置数据文件。 然后，运行以下命令并确认希望执行此操作：
     
     ```
-    Import-AadrmTpd -TpdFile "C:\contoso-tpd1.xml" -ProtectionPassword $TPD_Password –KeyVaultStringUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Verbose
+    Import-AadrmTpd -TpdFile "C:\contoso-tpd1.xml" -ProtectionPassword $TPD_Password –KeyVaultKeyUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Verbose
     ```
     
     作为此导入的一部分，将导入 SLC 密钥并且密钥将被自动设置为已存档。
@@ -97,5 +97,4 @@ ms.locfileid: "38973318"
 
 现在可以转到[步骤 5：激活 Azure 权限管理服务](migrate-from-ad-rms-phase2.md#step-5-activate-the-azure-rights-management-service)。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

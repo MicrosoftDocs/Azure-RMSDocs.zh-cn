@@ -14,12 +14,12 @@ ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 17f53f66957a946a88b406c471f132e65ee4b540
-ms.sourcegitcommit: d1a3f35ea2d2c246a5b1e3f3da75df9c182fd0da
+ms.openlocfilehash: 847c3edcf88c2da965c5074739a5d44fe652f7fc
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34480130"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370085"
 ---
 # <a name="rights-management-services-sdk-21"></a>Rights Management Services SDK 2.1
 
@@ -54,5 +54,3 @@ RMS SDK 2.1 可在 Microsoft 下载中心的 [RMS SDK 2.1 下载页](http://www.
 * [RMS SDK 2.1 下载页面](http://www.microsoft.com/en-us/download/details.aspx?id=38397)
 * [RMS 开发人员活动角](http://blogs.msdn.com/b/rms/archive/2012/05/31/official-release-of-ad-rms-sdk-2-0-and-ad-rms-client-2-0.aspx)
 * [RMS 常见问题解答](http://aka.ms/adrmsfaq )
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f5380dc364255fd085c82fd9c0a834afea368c97
-ms.sourcegitcommit: 10f530fa1a43928581da4830a32f020c96736bc8
+ms.openlocfilehash: c40e1b628c4a6160d6ab665293c37b9cefa3fe0c
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34402143"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375238"
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 定价和限制
 
@@ -64,4 +64,3 @@ BYOK 和使用情况日志记录可无缝地适用于与 Azure 信息保护使�
 
 如果已决定保留默认配置，让 Microsoft 管理租户密钥，请参阅“计划和实现 Azure 信息保护租户密钥”一文中的[后续步骤](plan-implement-tenant-key.md#next-steps)。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

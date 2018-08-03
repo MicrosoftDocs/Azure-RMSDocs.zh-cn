@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0330b8a18c52d76ba3aa926e66085b1f33f4dd0f
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: 39eb09eaf3810ec8cb7152499d704be47e6ad045
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973471"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372169"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
@@ -124,4 +124,3 @@ killall cfprefsd
 
 完成迁移后，请检查[部署路线图](deployment-roadmap.md)以确定是否需要执行其他任何部署任务。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

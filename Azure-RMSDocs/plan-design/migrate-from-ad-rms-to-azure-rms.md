@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 740a97298d27f5abb2cda8e0b6f3ce931c1a6d91
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: 937d9b1e91690ed7633d2112725f49e1325afcbd
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973454"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473920"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -29,9 +29,9 @@ ms.locfileid: "38973454"
 
 不确定这种 AD RMS 迁移是否适合你的组织？
 
-- 有关 Azure 信息保护的简介，请参阅[什么是 Azure 信息保护？](../understand-explore/what-is-information-protection.md)
+- 有关 Azure 信息保护的简介，请参阅[什么是 Azure 信息保护？](../what-is-information-protection.md)
 
-- 有关 Azure 信息保护与 AD RMS 的比较，请参阅[比较 Azure 信息保护与 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。
+- 有关 Azure 信息保护与 AD RMS 的比较，请参阅[比较 Azure 信息保护与 AD RMS](../compare-on-premise.md)。
 
 ## <a name="recommended-reading-before-you-migrate-to-azure-information-protection"></a>建议在迁移到 Azure 信息保护之前阅读的内容
 
@@ -43,7 +43,7 @@ ms.locfileid: "38973454"
 
 - [ 连接器概述](../deploy-use/deploy-rms-connector.md#overview-of-the-microsoft-rights-management-connector)：RMS 连接器文档的此部分说明了本地服务器如何连接到 Azure 权限管理服务以保护文档和电子邮件。
 
-此外，如果熟悉 AD RMS 的工作方式，就会发现阅读[Azure RMS 的工作原理？揭秘](../understand-explore/how-does-it-work.md)非常有用，可帮助识别不同云版本的哪些技术过程是相同的或不同的。
+此外，如果熟悉 AD RMS 的工作方式，就会发现阅读[Azure RMS 的工作原理？揭秘](../how-does-it-work.md)非常有用，可帮助识别不同云版本的哪些技术过程是相同的或不同的。
 
 ## <a name="prerequisites-for-migrating-ad-rms-to-azure-information-protection"></a>将 AD RMS 迁移到 Azure 信息保护的先决条件
 
@@ -73,7 +73,7 @@ ms.locfileid: "38973454"
 
 - **运行 Azure 信息保护的所有要求，包括 Azure 信息保护租户（Azure Rights Management 服务未激活）订阅：**
 
-    请参阅 [Azure 信息保护的要求](../get-started/requirements-azure-rms.md)。
+    请参阅 [Azure 信息保护的要求](../requirements.md)。
 
     请注意，如果拥有运行 Office 2010 的计算机，必须安装 Azure 信息保护客户端，因为此客户端可提供对云服务用户进行身份验证的功能。 对于更高版本的 Office，Azure 信息保护客户端是分类和标记所必需的，但如果只想保护数据，该客户端是可选的，但建议你使用它。 有关详细信息，请参阅 [Azure 信息保护客户端管理员指南](../rms-client/client-admin-guide.md)。
 
@@ -113,11 +113,11 @@ ms.locfileid: "38973454"
 
 ### <a name="migration-limitations"></a>迁移限制
 
-- 如果 Azure 信息保护使用的 Rights Management 服务不支持你的软件和客户端，则它们无法保护或使用受 Azure Rights Management 保护的内容。 请务必查看 [Azure Rights Management 的要求](../get-started/requirements-azure-rms.md)中的“支持的应用程序和客户端”部分。
+- 如果 Azure 信息保护使用的 Rights Management 服务不支持你的软件和客户端，则它们无法保护或使用受 Azure Rights Management 保护的内容。 请务必查看 [Azure Rights Management 的要求](../requirements.md)中的“支持的应用程序和客户端”部分。
 
 - 如果将你的 AD RMS 部署配置为与外部合作伙伴协作（例如，通过使用受信任的用户域或联合），则在你迁移的同时或之后尽早的时间，这些合作伙伴也必须迁移到 Azure 信息保护。 若要继续访问你的组织以前使用 Azure 信息保护进行保护的内容，这些合作伙伴必须进行与你进行的更改（在本文档中提供了这些更改）类似的客户端配置更改。
     
-    由于你的合作伙伴进行的配置可能有所变动，确切说明此重新配置已超出了本文档的范围。 但是，有关规划指导及其他帮助，请参阅下一节，[联系 Microsoft 支持部门](../get-started/information-support.md#support-options-and-community-resources)。
+    由于你的合作伙伴进行的配置可能有所变动，确切说明此重新配置已超出了本文档的范围。 但是，有关规划指导及其他帮助，请参阅下一节，[联系 Microsoft 支持部门](../information-support.md#support-options-and-community-resources)。
 
 ## <a name="migration-planning-if-you-collaborate-with-external-partners"></a>与外部伙伴协作时的迁移规划
 
@@ -219,4 +219,3 @@ ms.locfileid: "38973454"
 ## <a name="next-steps"></a>后续步骤
 若要开始迁移，请转到[第 1 阶段：准备](migrate-from-ad-rms-phase1.md)。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

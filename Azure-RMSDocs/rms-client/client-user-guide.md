@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 2cf46bf9-7d23-4f49-b5c1-7ed7b71c858f
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 1e6ce5660a0ccc8385c6ab728c4d2c1c202023ed
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: d1014f139d0ddf81034708c636f3e13d946f3e06
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205833"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370816"
 ---
 # <a name="azure-information-protection-user-guide"></a>Azure 信息保护用户指南
 
@@ -48,5 +48,3 @@ ms.locfileid: "30205833"
 > [!NOTE]
 > 如果你是负责企业网络上 Azure 信息保护客户端的管理员，请参阅 [Azure 信息保护客户端管理员指南](client-admin-guide.md)以获取更多技术信息。 
 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

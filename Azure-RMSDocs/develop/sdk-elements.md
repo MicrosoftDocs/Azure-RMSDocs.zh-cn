@@ -14,12 +14,12 @@ ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: f79c0d60bf460c0f8cca68f6b0447303a383c686
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 2fe2745a0966c7ff6d9d0c9a2c1b3dd5d73156ac
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765776"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369949"
 ---
 # <a name="development-environment-files"></a>开发环境文件
 
@@ -48,5 +48,3 @@ Rights Management Services SDK 2.1 包括安装在计算机上默认位置或你
 |Msipc.lib|\lib\x64|当使用 RMS SDK 2.1 生成 x64 应用程序时要与之链接的库。|
 |Msipc_s.lib|\lib\x64|为 x64 应用程序提供 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) 的入口点。|
 |Genmanifest.exe|\tools|生成清单以在 RMS 启用的引用程序的开发期间使用。|
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

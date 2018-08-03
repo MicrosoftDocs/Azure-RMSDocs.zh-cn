@@ -14,12 +14,12 @@ ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: bddbc42a555ee6ccbd4dd7b41a4183374a1db070
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 34ad679cf5af056b1397a8ec4bdab6542f29c7f8
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27764525"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371700"
 ---
 # <a name="get-started"></a>入门
 
@@ -54,5 +54,3 @@ ms.locfileid: "27764525"
   |[设置开发人员环境](setup-developer-environment.md)|以下主题说明必须设置开发环境以便将 AD RMS SDK API 用于特定操作系统。|
   |[代码示例](code-examples.md)|MS RMS SDK 4.2 包括适用于一些支持的操作系统的示例代码和工作项目。|
   |[社区资源](community-resources.md)|不断壮大的开发人员群体可在多个平台上很好地支持 Active Directory Rights Management Services。|
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

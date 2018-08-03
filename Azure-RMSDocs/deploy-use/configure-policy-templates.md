@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ba56e6b165cd378c957b2c54bd41ce54f1830797
-ms.sourcegitcommit: 1b0c387b2848b7dfaee0b0548dde7e41383ffe6e
+ms.openlocfilehash: fed57de220a5448a16a866fae76969eb4f9332de
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138298"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473859"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
@@ -46,7 +46,7 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 >[!NOTE]
 > 可以更改这些设置以及默认模板的名称和说明。 Azure 经典门户曾无法使用此功能，且PowerShell 仍不支持该功能。
 
-通过这些默认模板，你和其他人可立即轻松开始保护组织的敏感数据。 这些模板可与 Azure 信息保护标签一起使用，或通过可使用 Rights Management 模板的[应用程序和服务](../understand-explore/applications-support.md)独立使用。
+通过这些默认模板，你和其他人可立即轻松开始保护组织的敏感数据。 这些模板可与 Azure 信息保护标签一起使用，或通过可使用 Rights Management 模板的[应用程序和服务](../applications-support.md)独立使用。
 
 你还可以创建自已的自定义模板。 尽管可能只需要几个模板，但在 Azure 中可最多保存 500 个自定义模板。
 
@@ -164,4 +164,3 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

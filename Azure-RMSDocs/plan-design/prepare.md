@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bb38d33972fb99596fcde8bc54e53c38e3817336
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: e14844a5bd1b0ace4085eaaa9c15be6b3c814146
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444106"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473740"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
@@ -87,7 +87,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 其他授权方法：
 
-- 对于 Azure AD 中不存在的电子邮件地址，Azure 信息保护可以在使用 Microsoft 帐户对这些电子邮件地址进行 身份验证后对它们进行授权。 但是，并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- 对于 Azure AD 中不存在的电子邮件地址，Azure 信息保护可以在使用 Microsoft 帐户对这些电子邮件地址进行 身份验证后对它们进行授权。 但是，并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 - 使用具有新功能的 Office 365 邮件加密向 Azure AD 中没有帐户的用户发送电子邮件时，会通过社交标识提供者使用联合身份验证或使用一次性密码对此用户进行身份验证。 然后使用受保护电子邮件中指定的电子邮件地址向此用户授权。
 
@@ -215,4 +215,3 @@ Azure 信息保护使用用户和组的方式有三种：
 
 有关检查激活状态等详细信息，请参阅[激活 Azure Rights Management](../deploy-use/activate-service.md)。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

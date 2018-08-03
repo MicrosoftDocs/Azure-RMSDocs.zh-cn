@@ -14,12 +14,12 @@ ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: adab957779dac2baec22cb73b060f9a8a0075a1a
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: e778b734e3fb41477f3991c843f02621139b27d9
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765436"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375113"
 ---
 # <a name="how-to-debug-a-rights-enabled-application"></a>操作说明：调试启用权限的应用程序
 
@@ -65,5 +65,3 @@ HKEY_LOCAL_MACHINE
 **wevtutil sl Microsoft-RMS-MSIPC/Debug /e:true /l:4**
 
 **注意** 在 Windows 事件查看器的“视图”菜单中，选择“显示分析和调试日志”以使 MSIPC 调试日志可见。
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d00e0037634601cd92b9f0858c197975ea9f896b
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 984bc1b53b7c4b1ed16183f84853923d7b3f5e79
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207009"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373594"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）
 
@@ -171,5 +171,3 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 ---
 
 返回到[使用 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md)。
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

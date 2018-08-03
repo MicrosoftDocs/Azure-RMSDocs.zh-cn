@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 43689f942bae88c9b7099f45a980f0fd96b1bdaf
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 4cdf429527bfc97b4e02438ae45aae80754e5fe1
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204949"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474345"
 ---
 # <a name="verifying-the-azure-rights-management-service"></a>验证 Azure Rights Management 服务
 
@@ -32,12 +32,11 @@ ms.locfileid: "30204949"
 如果测试失败，请查看 [Azure 信息保护部署路线图](../plan-design/deployment-roadmap.md)中的配置步骤。
 
 > [!TIP]
-> 如果需要更多帮助，请参阅 [Azure 信息保护的信息和支持](../get-started/information-support.md)一文中的[支持选项和社区资源](../get-started/information-support.md#support-options-and-community-resources)部分。
+> 如果需要更多帮助，请参阅 [Azure 信息保护的信息和支持](../information-support.md)一文中的[支持选项和社区资源](../information-support.md#support-options-and-community-resources)部分。
 
 ## <a name="next-steps"></a>后续步骤
 
 可以使用日志记录监视你组织使用 Azure Rights Management 服务的情况。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](log-analyze-usage.md)。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

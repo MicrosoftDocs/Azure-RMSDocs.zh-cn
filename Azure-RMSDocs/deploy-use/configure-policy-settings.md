@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: c03ec14c8c2fefd72e7972c486120e3a2dd1760d
-ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
+ms.openlocfilehash: a552a580097c4d95043ba4f9b3fe0cb6b4b7de29
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39029910"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370740"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
@@ -85,4 +85,3 @@ ms.locfileid: "39029910"
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

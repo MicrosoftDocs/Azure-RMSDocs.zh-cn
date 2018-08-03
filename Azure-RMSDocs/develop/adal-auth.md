@@ -14,12 +14,12 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5900a011a4470a46cc86e1bca1ada32b43cb0213
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 01202f34d31569d7835ad57a70e2a2d0d49a9678
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258950"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473410"
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>配置应用以进行 ADAL 身份验证
 
@@ -29,7 +29,7 @@ ms.locfileid: "30258950"
 
 你将需要以下各项：
 
-- [Microsoft Azure 订阅](https://azure.microsoft.com/)（使用免费试用版即可）。 有关详细信息，请参阅[用户如何注册个人 RMS](../understand-explore/rms-for-individuals-user-sign-up.md)
+- [Microsoft Azure 订阅](https://azure.microsoft.com/)（使用免费试用版即可）。 有关详细信息，请参阅[用户如何注册个人 RMS](../rms-for-individuals-user-sign-up.md)
 - Microsoft Azure Rights Management 的订阅（使用免费的[个人 RMS](https://technet.microsoft.com/library/dn592127.aspx) 帐户即可）。
 
 > [!NOTE]
@@ -104,4 +104,3 @@ ms.locfileid: "30258950"
 
 ![选择“保存”](../media/SaveApplication.png)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

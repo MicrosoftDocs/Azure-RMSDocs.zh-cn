@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6acedb72d270bb5d4153701a6d42aa2757fbacbd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 4da8df0696ce011e2bbe91ee8a1fd53fd5e854f5
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204809"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371911"
 ---
 # <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>权限管理共享应用程序：客户端安装和配置
 
@@ -26,7 +26,7 @@ ms.locfileid: "30204809"
 > [!IMPORTANT]
 > **终止支持通知**：[Azure 信息保护客户端](../rms-client/aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 
  
-RMS 共享应用程序提供 Office 2010 的身份验证支持，并且通过安装 Office 外接程序与 Office 应用程序集成，方便用户从功能区直接保护文件和电子邮件。 此应用程序还针对 Azure 权限管理服务无法以本机方式支持的文件类型提供常规保护；它还提供一个文档跟踪站点，以便让用户跟踪和撤销受保护的文件。
+RMS 共享应用程序提供 Office 2010 的身份验证支持，并且通过安装 Office 外接程序与 Office 应用程序集成，方便用户从功能区直接保护文件和电子邮件。 此应用程序还针对 Azure Rights Management 服务无法以本机方式支持的文件类型提供常规保护；它还提供一个文档跟踪站点，以便让用户跟踪和撤销受保护的文件。
 
 ## <a name="the-rms-sharing-application-for-windows-installation-and-configuration"></a>适用于 Windows 的 RMS 共享应用程序：安装和配置
 有关适用于 Windows 的 RMS 共享应用程序的企业安装和配置，请参阅 [Rights Management 共享应用程序管理员指南](../rms-client/sharing-app-admin-guide.md)。
@@ -40,6 +40,5 @@ RMS 共享应用程序提供 Office 2010 的身份验证支持，并且通过安
 无法再从此页面下载适用于 iOS 和 Android 的 RMS 共享应用；这些移动设备的链接现可用于下载 Azure 信息保护客户端。 
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

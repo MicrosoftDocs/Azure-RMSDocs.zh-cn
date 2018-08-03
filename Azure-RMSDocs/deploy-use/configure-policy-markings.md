@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: c41dcb0a11e61be4a2dfd974d9bf6803a992b858
-ms.sourcegitcommit: ef3d187da900107095d499de7e7dac5c947e4b13
+ms.openlocfilehash: 85f2952dd9abcb6e22e8932e8479ded540af8ea2
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37947448"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374192"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -138,4 +138,3 @@ Calibri 是页眉、页脚和水印文字的默认字体。 如果指定替代�
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
