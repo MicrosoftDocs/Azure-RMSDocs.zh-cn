@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 610a1e5f147ab8ce0cca3adb59191d145d01a1ae
-ms.sourcegitcommit: 78d368a4480cc1febedc8535c6c3e184e69caf7f
+ms.openlocfilehash: c62179f67d7b7176886f6bb8c003a1cb58868a58
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37088270"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372210"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>用户指南：使用 Azure 信息保护时跟踪和撤销文档
 
@@ -117,5 +117,3 @@ ms.locfileid: "37088270"
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 请参阅[管理员指南](client-admin-guide.md)中的[配置和使用 Azure 信息保护的文档跟踪](client-admin-guide-document-tracking.md)。
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

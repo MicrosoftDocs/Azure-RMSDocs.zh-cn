@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 62f854264f48b51e6177c033d95dabaf75e2dc5d
-ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
+ms.openlocfilehash: 07da614bf7971ee4ef89ec9ec3830be188483201
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31009111"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371758"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
@@ -51,7 +51,7 @@ ms.locfileid: "31009111"
     
     对于 *\<AD RMS 群集>*，请指定你的 AD RMS 群集的 FQDN。 例如 **rmscluster.contoso.com**。
     
-    或者，如果你在该域中只有一个 AD RMS 群集，可以指定该 AD RMS 群集的域名。 在本示例中，即 **contoso.com**。在此记录中指定域名时，重定向将应用到该域中的所有 AD RMS 群集。
+    或者，如果你在该域中只有一个 AD RMS 群集，可以指定该 AD RMS 群集的域名。 在本示例中，即 **contoso.com**。 在此记录中指定域名时，重定向将应用到该域中的所有 AD RMS 群集。
     
     *\<端口>* 号将被忽略。
     
@@ -67,7 +67,8 @@ ms.locfileid: "31009111"
     |**优先级**|0|  
     |**权重**|0|  
     |**端口号**|80|  
-    |**提供此服务的主机**|5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com|  
+    |
+  **提供此服务的主机**|5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com|  
 
 2. 在 AD RMS 发布终结点上为 Office 2016 用户设置拒绝权限：
 
@@ -141,5 +142,3 @@ ms.locfileid: "31009111"
 
 ## <a name="next-steps"></a>后续步骤
 若要继续迁移，请转到[第 4 阶段 - 支持服务配置](migrate-from-ad-rms-phase4.md)。
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

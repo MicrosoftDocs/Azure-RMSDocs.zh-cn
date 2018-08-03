@@ -14,12 +14,12 @@ ms.assetid: 6dcfa840-026b-4728-b53c-2c9c730fcf84
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 4d7e034c67b8617a54b8379a8df3f96f82d249ec
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 1b5d48509a2260269aa89e469035c4fbf83e80ca
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765895"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374885"
 ---
 # <a name="api-reference"></a>API 参考
 
@@ -35,5 +35,3 @@ Microsoft Rights Management SDK 2.1 支持 Windows 客户端的 RMS 启用。 �
 ## <a name="related-topics"></a>相关主题
 
 * [发行说明](release-notes-rtm.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
