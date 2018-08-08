@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/23/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: fe04cc36f99e641cb11ef832e967699106728749
-ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
+ms.openlocfilehash: 7bc9e67ae029cedc734f3060fe43f62367a805ba
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39217835"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371486"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -114,7 +114,8 @@ ms.locfileid: "39217835"
     |--------------------------|---------------------------------------------|
     |Policy1.1.msip |版本 1.2|
     |Policy1.2.msip |版本 1.3 - 1.7|
-    |Policy1.3.msip |1.8 和更高版本|
+    |Policy1.3.msip |版本 1.8 - 1.29|
+    |Policy1.4.msip |版本 1.32 及更高版本|
     
 2. 将已标识的文件重命名为 Policy.msip，再将它复制到已安装 Azure 信息保护客户端的计算机上的 %LocalAppData%\Microsoft\MSIP 文件夹。 
 
@@ -228,6 +229,51 @@ ms.locfileid: "39217835"
 
 - 值：True
 
+## <a name="protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>使用 PDF 加密 ISO 标准来保护 PDF 文件
+
+此配置选项目前处于预览状态，可能随时更改。 它还需要预览版本的 Azure 信息保护客户端。
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+
+默认情况下，当 Azure 信息保护客户端保护 PDF 文件时，生成文件的文件扩展名为 .ppdf。 可更改此行为，使文件扩展名仍为 .pdf，并符合 PDF 加密 ISO 标准。 有关此标准的详细信息，请参阅[派生自 ISO 32000-1 的文档](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf)（由 Adobe Systems Incorporated 发布）中的第 7.6 节加密。  
+
+要配置此高级设置，请输入以下字符串：
+
+- 键：EnablePDFv2Protection
+
+- 值：True
+
+配置此选项后，当 Azure 信息保护客户端保护 PDF 文件时，此操作会创建一个受保护的 PDF 文档，可使用 Windows 版 Azure 信息保护客户端的预览版本以及支持 PDF 加密 ISO 标准的其他 PDF 阅读器打开该文档。 iOS 和 Android 版 Azure 信息保护应用当前不支持 PDF 加密 ISO 标准。
+
+要使 Azure 信息保护扫描程序使用新设置，必须重启扫描程序服务。
+
+当前预览版的已知问题：在文档属性中，受保护 PDF 显示的创建者值不正确。
+
+## <a name="support-for-files-protected-by-secure-islands"></a>支持受 Secure Islands 保护的文件
+
+此配置选项目前处于预览状态，可能随时更改。 它还需要预览版本的 Azure 信息保护客户端、Azure 信息保护扫描程序或 Azure 信息保护查看器。
+
+如果使用 Secure Islands 保护文档，可能因这种保护产生受保护的文本和图片文件以及通常受保护的文件。 例如，文件扩展名为 .ptxt、.pjpeg 或 .pfile 的文件。 按如下方式编辑注册表时，Azure 信息保护可以解密这些文件：
+
+
+将以下 EnableIQPFormats 的 DWORD 值添加到以下注册表路径，并将值数据设置为 1：
+
+- 对于 64 位 Windows 版本：HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\MSIP
+
+- 对于 32 位 Windows 版本：HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\MSIP
+
+对注册表进行此编辑后，即支持以下方案：
+
+- Azure 信息保护查看器可打开这些受保护的文件。
+
+- 文件资源管理器和 PowerShell 可以取消保护这些文件，或使用 Azure 信息保护重新保护它们。
+
+- 文件资源管理器、PowerShell 和 Azure 信息保护扫描程序可以标记这些文件。
+
+- Azure 信息保护扫描程序可以检查这些文件中的敏感信息。
+
+- 可使用[标签迁移客户端自定义](#migrate-labels-from-secure-islands-and-other-labeling-solutions)将这些受保护文件上的 Secure Islands 标签转换为 Azure 信息保护标签。
+
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>从 Secure Islands 和其他标记解决方案迁移标签
 
 此配置选项目前处于预览状态，可能随时更改。
@@ -235,6 +281,9 @@ ms.locfileid: "39217835"
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
 对于 Secure Islands 标记的 Office 文档和 PDF 文档，可以使用所定义的映射，利用 Azure 信息保护标签重新标记这些文档。 此外，这种方法还可用于重用其他解决方案对 Office 文档标记的标签。 
+
+> [!NOTE]
+> 如果除 PDF 和 Office 文档外，还有其他受 Secure Islands 保护的文件，则可在编辑注册表后重新标记这些文件，如[前面部分](#support-for-files-protected-by-secure-islands)中所述。 
 
 由于有此配置选项，Azure 信息保护客户端按如下所述应用新 Azure 信息保护标签：
 
@@ -402,4 +451,3 @@ ms.locfileid: "39217835"
 - [PowerShell 命令](client-admin-guide-powershell.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
