@@ -4,7 +4,7 @@ description: 关于安装、支持的操作系统、注册表设置以及 Rights
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/04/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: df86d75cd7337fa4642a9b758312923a3577325f
-ms.sourcegitcommit: 40ac805183589a1c8ef22bc1bd9556bcc92f65e6
+ms.openlocfilehash: 751f1a5bf2728a848bd450ce1081a15ea1e35456
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39376531"
 ---
 # <a name="rms-client-deployment-notes"></a>RMS 客户端部署说明
 
@@ -112,13 +113,13 @@ RMS 客户端将许可证存储在本地磁盘上，并且还在 Windows 注册�
 
 |任务|设置|
 |--------|------------|
-|如果客户端版本是 1.03102.0221 或更高版本：<br /><br />**控制应用程序数据收集**|**重要提示**：为了尊重用户隐私，作为管理员，你在启用数据收集之前必须征得用户同意。<br /><br />如果启用数据收集，表示你同意通过 Internet 将数据发送到 Microsoft。 Microsoft 利用此数据保证并改进 Microsoft 产品和服务的质量、安全性和完整性。 例如，Microsoft 会分析性能和可靠性（如使用哪些功能、功能的响应速度、设备性能、用户界面交互和遇到的任何产品问题）。 数据还包括软件（如当前运行的软件）以及 IP 地址的配置信息。<br /><br />对于版本 1.0.3356 或更高版本： <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticAvailability<br /><br />对于 1.0.3356 之前的版本： <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticState<br /><br />**值：**0 表示（默认）通过使用环境属性 [IPC_EI_DATA_COLLECTION_ENABLED](https://msdn.microsoft.com/library/hh535247(v=vs.85).aspx) 定义应用程序；1 表示禁用；2 表示启用<br /><br />**注意**：如果基于 32 位 MSIPC 的应用程序在 64 位版本的 Windows 上运行，则位置为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC。|
+|如果客户端版本是 1.03102.0221 或更高版本：<br /><br />**控制应用程序数据收集**|**重要提示**：为了尊重用户隐私，作为管理员，你在启用数据收集之前必须征得用户同意。<br /><br />如果启用数据收集，表示你同意通过 Internet 将数据发送到 Microsoft。 Microsoft 利用此数据保证并改进 Microsoft 产品和服务的质量、安全性和完整性。 例如，Microsoft 会分析性能和可靠性（如使用哪些功能、功能的响应速度、设备性能、用户界面交互和遇到的任何产品问题）。 数据还包括软件（如当前运行的软件）以及 IP 地址的配置信息。<br /><br />对于版本 1.0.3356 或更高版本： <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticAvailability<br /><br />对于 1.0.3356 之前的版本： <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticState<br /><br />**值：** 0 表示（默认）通过使用环境属性 [IPC_EI_DATA_COLLECTION_ENABLED](https://msdn.microsoft.com/library/hh535247(v=vs.85).aspx) 定义应用程序；1 表示禁用；2 表示启用<br /><br />**注意**：如果基于 32 位 MSIPC 的应用程序在 64 位版本的 Windows 上运行，则位置为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC。|
 |仅限 AD RMS：<br /><br />**更新客户端计算机的企业服务位置**|更新以下注册表项：<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: default<br /><br />**值：**\<http or https>://*RMS_Cluster_Name*/_wmcs/Certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: default<br /><br />**值：**\<http or https>://*RMS_Cluster_Name*/_wmcs/Licensing|
 |**启用和禁用跟踪**|更新以下注册表项：<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC<br />REG_DWORD: Trace<br /><br />**Value：** 1 表示启用跟踪，0 表示禁用跟踪（默认）|
 |**更改模板刷新的频率（以天为单位）**|以下注册表值指定当未设置 TemplateUpdateFrequencyInSeconds 值时，在用户计算机上刷新模板的频率。  如果这两个值都未设置，则应用程序使用 RMS 客户端（版本 1.0.1784.0）下载模板所遵循的默认刷新间隔为 1 天。 在以前的版本中，默认值为 7 天。<br /><br />**客户端模式：**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：TemplateUpdateFrequency<br /><br />**Value：** 指定下载间隔天数的整数值（最小为 1）。<br /><br />**服务器模式：**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\<SID\><br />REG_DWORD：TemplateUpdateFrequency<br /><br />**Value：** 指定下载间隔天数的整数值（最小为 1）。|
 |**更改模板刷新的频率（以秒为单位）**<br /><br />重要提示：如果指定此设置，将忽略以天为单位的模板刷新频率值。 指定其中一项，而不要同时指定两项。|以下注册表值指定在用户计算机上刷新模板的频率。 如果未设置此值或者用于更改以天为单位的频率的值 (TemplateUpdateFrequency)，则应用程序使用 RMS 客户端（版本 1.0.1784.0）下载模板所遵循的默认刷新间隔为 1 天。 在以前的版本中，默认值为 7 天。<br /><br />**客户端模式：**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：TemplateUpdateFrequencyInSeconds<br /><br />**Value：** 指定下载间隔秒数的整数值（最小为 1）。<br /><br />**服务器模式：**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\<*SID*><br />REG_DWORD：TemplateUpdateFrequencyInSeconds<br /><br />**Value：** 指定下载间隔秒数的整数值（最小为 1）。|
 |仅限 AD RMS：<br /><br />**在下一次发布请求时立即下载模板**|在测试和评估期间，你可能希望 RMS 客户端尽快下载模板。 对于此配置，可删除以下注册表项，使 RMS 客户端在下一次发布请求时立即下载模板，而不是按 TemplateUpdateFrequency 注册表设置指定的时间等待：<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<*Server Name*>\Template <br /><br />**注意**：\<*Server Name*> 可以同时具有外部 (corprights.contoso.com) 和内部 (corprights) URL，因此可能具有两个不同项。|
-|仅限 AD RMS：<br /><br />**启用联合身份验证支持**|如果 RMS 客户端使用联合信任连接到 AD RMS 群集，则你必须配置联合主领域。<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**值：**此注册表项的值是联合身份验证服务的统一资源标识符 (URI)（例如，“http://TreyADFS.trey.net/adfs/services/trust”）。<br /><br /> **请注意**：对于此值，请务必指定 http 而不是 https。 此外，如果基于 32 位 MSIPC 的应用程序在 64 位版本的 Windows 上运行，则位置为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\Federation。 有关配置示例，请参阅[部署 Active Directory Rights Management Services 与 Active Directory 联合身份验证服务](https://technet.microsoft.com/library/dn758110.aspx)。|
+|仅限 AD RMS：<br /><br />**启用联合身份验证支持**|如果 RMS 客户端使用联合信任连接到 AD RMS 群集，则你必须配置联合主领域。<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**值：** 此注册表项的值是联合身份验证服务的统一资源标识符 (URI)（例如，“http://TreyADFS.trey.net/adfs/services/trust”）。<br /><br /> **请注意**：对于此值，请务必指定 http 而不是 https。 此外，如果基于 32 位 MSIPC 的应用程序在 64 位版本的 Windows 上运行，则位置为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\Federation。 有关配置示例，请参阅[部署 Active Directory Rights Management Services 与 Active Directory 联合身份验证服务](https://technet.microsoft.com/library/dn758110.aspx)。|
 |仅限 AD RMS：<br /><br />**支持需要对用户输入进行基于窗体的身份验证的合作伙伴联合身份验证服务器**|默认情况下，RMS 客户端在静默模式下运行，并且不需要用户输入。 但是，合作伙伴联合身份验证服务器可能会配置为需要用户输入，例如通过基于窗体的身份验证等方式。 在这种情况下，RMS 客户端必须配置为忽略静默模式，以便联合身份验证窗体显示在浏览器窗口中，并提示用户进行身份验证。<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_DWORD: EnableBrowser<br /><br />**注意**：如果联合身份验证服务器配置为使用基于窗体的身份验证，则此项是必需的。 如果联合服务器配置为使用集成 Windows 身份验证，则此项不是必需的。|
 |仅限 AD RMS：<br /><br />**阻止 ILS 服务使用**|默认情况下，RMS 客户端支持使用受 ILS 服务保护的内容，但是可以通过设置以下注册表项对它进行配置以阻止此行为。 如果此注册表项设置为阻止 ILS 服务，则对受 ILS 服务保护的内容的任何打开和使用尝试都将返回以下错误：<br />HRESULT_FROM_WIN32(ERROR_ACCESS_DISABLED_BY_POLICY)<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：**DisablePassportCertification**<br /><br />**Value：** 1 表示阻止 ILS 使用，0 表示允许 ILS 使用（默认）|
 
@@ -140,7 +141,7 @@ RMS 客户端将许可证存储在本地磁盘上，并且还在 Windows 注册�
    
     REG_DWORD：AllowTrustedServersOnly
     
-    **值：**如果指定一个非零值，则 RMS 客户端只信任 TrustedServers 列表中配置的特定服务器以及 Azure Rights Management 服务。
+    **值：** 如果指定一个非零值，则 RMS 客户端只信任 TrustedServers 列表中配置的特定服务器以及 Azure Rights Management 服务。
 
 **将成员添加到受信任的 AD RMS 服务器列表**
 
@@ -148,7 +149,7 @@ RMS 客户端将许可证存储在本地磁盘上，并且还在 Windows 注册�
     
     REG_SZ：\<URL_or_HostName>
     
-    **值：**在此注册表项位置中的字符串值可以是 DNS 域名格式（例如 adrms.contoso.com），也可以是指向受信任 AD RMS 服务器的完整 URL（例如 https://adrms.contoso.com）。 如果指定的 URL 以 https:// 开头，RMS 客户端会使用 SSL 或 TLS 来联系指定的 AD RMS 服务器。
+    **值：** 在此注册表项位置中的字符串值可以是 DNS 域名格式（例如 adrms.contoso.com），也可以是指向受信任 AD RMS 服务器的完整 URL（例如 https://adrms.contoso.com）。 如果指定的 URL 以 https:// 开头，RMS 客户端会使用 SSL 或 TLS 来联系指定的 AD RMS 服务器。
 
 ## <a name="rms-service-discovery"></a>RMS 服务发现
 RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 服务器或服务通信。 当 RMS 客户端使用受保护的内容时，也可能会发生服务发现，不过，这种情况很少出现，因为附加到内容的策略包含首选的 RMS 服务器或服务。 仅当该策略的执行不成功时，客户端才会运行服务发现。
@@ -172,13 +173,15 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
     *\<租户 URL\>* 采用以下格式：**{GUID}.rms.[Region].aadrm.com**。在对 Azure RMS 运行 [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet 时，可以通过标识 **RightsManagementServiceId** 值找到此值。
 
 > [!NOTE]
-> 此服务发现流有三种重要的例外情况：
+> 此服务发现流有四种重要的例外情况：
 > 
 > - 移动设备最适合使用云服务，因此它们默认使用 Azure Rights Management 服务的服务发现 (https://discover.aadrm.com)。 要替代此默认设置以便移动设备使用 AD RMS，而不是 Azure Rights Management 服务，请在 DNS 中指定 SRV 记录，并按 [Active Directory Rights Management Services 移动设备扩展](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx)中所述安装移动设备扩展。 
 >
-> - 通过 Azure 信息保护标签调用权限管理服务时，将不会执行服务发现。 相反，会直接在 Azure 信息保护策略配置的标签设置中指定 URL。  
-
+> - 通过 Azure 信息保护标签调用权限管理服务时，将不会执行服务发现。 相反，会直接在 Azure 信息保护策略配置的标签设置中指定 URL。 
+>  
 > - 当用户从 Office 应用程序启动登录时，将使用进行身份验证所用的用户名（和域）来标识要使用的 Azure 信息保护租户。 在这种情况下，不需要注册表设置，也不会检查 SCP。
+> 
+> - 为 Office 2016 即点即用桌面应用配置 [DNS 重定向](../plan-design/migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)后，RMS 客户端可通过拒绝访问以前发现的 AD RMS 群集，查找 Azure Rights Management 服务。 此拒绝操作会触发客户端查找 SRV 记录，将客户端重定向到租户的 Azure Rights Management 服务。 此 SRV 记录还允许 Exchange Online 解密受 AD RMS 群集保护的电子邮件。 
 
 ### <a name="ad-rms-only-enabling-server-side-service-discovery-by-using-active-directory"></a>仅限 AD RMS：使用 Active Directory 启用服务器端服务发现
 如果你的帐户拥有足够的权限（AD RMS 服务器的企业管理员和本地管理员），则可以在安装 AD RMS 根群集服务器时自动注册服务连接点 (SCP)。 如果 SCP 已存在于林中，则必须先删除现有的 SCP，然后才能注册新的 SCP。
@@ -259,4 +262,3 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 
 6.  关闭注册表编辑器。
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
