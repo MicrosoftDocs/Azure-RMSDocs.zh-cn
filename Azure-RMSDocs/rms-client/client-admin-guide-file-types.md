@@ -4,7 +4,7 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cdf710737c4bcf5ffbfdd3ab6476f6b5cd118854
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: fcba3a4bf59c3c18dab53de9e06d5484e092465c
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371275"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575584"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -63,7 +63,7 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 其他文件类型在受保护时也支持分类。 有关这些文件类型，请参阅[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)部分。
 
-例如，在当前[默认策略](../deploy-use/configure-policy-default.md)中，“常规”标签适用于分类，而不适用于保护。 可以将“常规”标签应用到名为 sales.pdf 的文件，但不可将该标签应用到名为 sales.txt 的文件。 
+例如，在当前[默认策略](../configure-policy-default.md)中，“常规”标签适用于分类，而不适用于保护。 可以将“常规”标签应用到名为 sales.pdf 的文件，但不可将该标签应用到名为 sales.txt 的文件。 
 
 此外，在当前默认策略中，“机密\所有员工”适用于分类和保护。 此标签可应用到名为 sales.pdf 和名为 sales.txt 的文件。 还可以只对这些文件应用保护，而不应用分类。
 
@@ -79,7 +79,7 @@ Azure 信息保护客户端支持两个不同级别的保护，如下表中所�
 
 可以更改 Azure 信息保护客户端应用的默认保护级别。 可以将默认级别从本机更改为常规，从常规更改为本机，甚至可以禁止 Azure 信息保护客户端应用保护。 有关详细信息，请参阅本文中的[更改文件的默认保护级别](#changing-the-default-protection-level-of-files)部分。
 
-用户选择管理员配置的标签时，可以自动应用数据保护，也可以使用[权限级别](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels)指定自己的自定义保护设置。 
+用户选择管理员配置的标签时，可以自动应用数据保护，也可以使用[权限级别](../configure-usage-rights.md#rights-included-in-permissions-levels)指定自己的自定义保护设置。 
 
 ### <a name="file-sizes-supported-for-protection"></a>支持保护的文件大小
 

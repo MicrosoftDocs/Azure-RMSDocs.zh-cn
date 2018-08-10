@@ -13,12 +13,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a503c4232847828bf32d889f4702fbfed39463ad
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 15df93cfe3a88e3aaafefcb0df05579a726e6d84
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473706"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575822"
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>更改受 Rights Management 保护的文件的权限
 
@@ -33,7 +33,7 @@ ms.locfileid: "39473706"
 >
 > 同样，如果你想要添加或删除权限，则不能只指定要添加或删除的权限，而必须指定你希望所指定用户拥有的所有权限。
 
-如果你是想要重新保护的文件的所有者（例如，你最初使用共享应用程序保护该文件），则你将自动拥有重新保护该文件的权限。 如果你不是所有者，那么你可能有或没有重新保护该文件的权限，具体取决于当前受保护文件具有的权限。 若要重新保护文件，则需要[完全控制使用权限](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions)。
+如果你是想要重新保护的文件的所有者（例如，你最初使用共享应用程序保护该文件），则你将自动拥有重新保护该文件的权限。 如果你不是所有者，那么你可能有或没有重新保护该文件的权限，具体取决于当前受保护文件具有的权限。 若要重新保护文件，则需要[完全控制使用权限](../configure-usage-rights.md#usage-rights-and-descriptions)。
 
 例如，如果其他人使用 Rights Management 共享应用程序保护了该文件，并且指定了你所属的组和**共同所有者**作为自定义权限，那么你将能够重新保护该文件。 但是，如果他们没有指定你的名称或你所属的组，或者如果他们选择**审阅者 - 查看和编辑**或者是不允许你删除权限的模板，则你将不能重新保护该文件。 弄清自己是否具有相应权限的最简单的办法是尝试重新保护该文件。
 

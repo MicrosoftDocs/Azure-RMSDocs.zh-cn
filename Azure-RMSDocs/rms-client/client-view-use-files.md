@@ -4,7 +4,7 @@ description: 查看和使用要求安装 Azure 信息保护客户端的受保护
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a9b09347531bc27c965222e5d8b3c23fe593cd72
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 84a41cb828d2ccd931191f5f0fcf094e3903fb21
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473318"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575492"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>用户指南：查看和使用受 Rights Management 保护的文件
 
@@ -69,7 +69,7 @@ ms.locfileid: "39473318"
 
     可通过单击“权限”来检查你对该文件的权限。 如果要请求具有其他权限的新版本文件，在“权限”对话框中，你还可以标识要联系的文件所有者。
     
-    有关每个权限级别中包含的权限和使用情况权限的详细信息，请参阅[权限级别中包含的权限](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels)。
+    有关每个权限级别中包含的权限和使用情况权限的详细信息，请参阅[权限级别中包含的权限](../configure-usage-rights.md#rights-included-in-permissions-levels)。
 
 4. 若要编辑文件，请单击“另存为”，这样就可以在没有标签和不保护其原始文件扩展名的情况下保存文件。 然后，可使用与该文件类型相关联的应用程序来编辑该文件。 
     

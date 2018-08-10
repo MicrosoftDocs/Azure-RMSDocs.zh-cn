@@ -12,12 +12,12 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 194e676807145dffdf326fe782f4b4051876552d
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: cb4195b1b63c39d1d6e47d1c94d2f7e1c2c83e63
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371843"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575839"
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure 信息保护的安全最佳实践
 
@@ -69,7 +69,7 @@ AIP 不支持在运行时修改代码或修改导入地址表 (IAT)。 会为加
 
 ### <a name="minimum-standard"></a>最低标准
 - 无法在执行期间修改应用程序进程中的导入地址表。 - 应用程序指定许多在运行时通过使用地址表调用的函数，无法在运行时期间或之后更改这些函数。 除此之外，这意味着无法对通过使用生产证书签名的应用程序执行代码分析。
-- 无法从清单中指定的任何 DLL 内调用 **DebugBreak**  函数。
+- 无法从清单中指定的任何 DLL 内调用 **DebugBreak** 函数。
 - 无法调用具有 **DONT_RESOLVE_DLL_REFERENCES** 标志设置的 **LoadLibrary**。 此标志会指示加载器跳过绑定到导入的模块，因此修改了导入地址表。
 - 无法通过对 /DELAYLOAD 链接器开关执行运行时或后续更改来更改延迟加载。
 - 无法通过提供自己拥有的 Delayimp.lib helper 函数版本来更改延迟加载。
@@ -81,7 +81,7 @@ AIP 不支持在运行时修改代码或修改导入地址表 (IAT)。 会为加
 
 如果应用程序没有正确地解释并强制执行 AIP 发行许可证中所表达的权限，则可能会以信息所有者不希望的方式提供信息。 该情况的一个示例是在发行许可证仅授予查看信息权限的情况下，应用程序允许用户将未加密的信息保存到新的介质。
 
-AIP 系统将权限编为几组。 有关详细信息，请参阅 [Configuring usage rights for Azure Rights Management](../deploy-use/configure-usage-rights.md)（为 Azure Rights Management 配置使用权限）。
+AIP 系统将权限编为几组。 有关详细信息，请参阅 [Configuring usage rights for Azure Rights Management](../configure-usage-rights.md)（为 Azure Rights Management 配置使用权限）。
 
 ### <a name="azure-information-protection"></a>Azure Information Protection  
 API 允许用户解密或不解密信息；该信息没有任何固有保护。 如果用户有权解密信息，API 则允许此操作，并且在解密完成后，应用程序会负责管理或保护该信息。 应用程序负责管理其环境和接口，以防止未经授权使用信息的行为；例如，如果许可证仅授予“播放”权限，则会禁用“打印”和“复制”按钮。 测试套件应验证应用程序是否根据其所识别的所有许可证权限进行正确地操作。

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c7af3c166eafda4d0fa5ec5a85c47353b593776b
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 96eb395f9fb8a73d903422d2f6afbba22b7df91b
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475034"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489241"
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
 
@@ -51,7 +51,7 @@ Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](w
 
 如果想通过使用 Azure 信息保护标签深入研究并尝试保护自己的文档，请尝试 [Azure 信息保护快速入门教程](infoprotect-quick-start-tutorial.md)。 本教程包括当检测到敏感数据时提示保护文档的内容。 还包括保护通过电子邮件共享的文档、跟踪文档以了解其使用情况以及在必要时撤销其访问权限的内容。
 
-但是，如果已准备好开始为组织部署 Azure 信息保护以便管理员和用户可以开始保护文档和电子邮件，请使用 [Azure 信息保护部署路线图](./plan-design/deployment-roadmap.md)获取部署步骤和操作说明链接。
+但是，如果已准备好开始为组织部署 Azure 信息保护以便管理员和用户可以开始保护文档和电子邮件，请使用 [Azure 信息保护部署路线图](deployment-roadmap.md)获取部署步骤和操作说明链接。
 
 > [!TIP]
 > 有关其他信息和帮助，请使用 [Azure 信息保护的信息和支持](information-support.md)中的资源和链接。

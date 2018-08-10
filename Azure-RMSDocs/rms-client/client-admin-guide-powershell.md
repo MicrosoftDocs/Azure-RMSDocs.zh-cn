@@ -4,7 +4,7 @@ description: 管理员通过使用 PowerShell 管理 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/26/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7853cfc577329e04a1f378a419f0e1ef3eca0f2a
-ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
+ms.openlocfilehash: 69aa0078f854c04c6eaf360e8f17a0597523f832
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39411064"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575635"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -39,7 +39,7 @@ cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 �
 > 
 > 对于 Windows Server 2016，在安装 Windows 10 的最新管理模板 (.admx) 时，可以使用相同的组策略设置。
 
-[Azure 信息保护扫描程序](../deploy-use/deploy-aip-scanner.md)使用 AzureInformationProtection 模块中的 cmdlet 在 Windows Server 上安装和配置服务。 然后，可使用此扫描程序发现和保护数据存储中的文件并对其进行分类。
+[Azure 信息保护扫描程序](../deploy-aip-scanner.md)使用 AzureInformationProtection 模块中的 cmdlet 在 Windows Server 上安装和配置服务。 然后，可使用此扫描程序发现和保护数据存储中的文件并对其进行分类。
 
 有关所有 cmdlet 及其相应帮助的列表，请参阅 [AzureInformationProtection 模块](/powershell/module/azureinformationprotection)。 在 PowerShell 会话中，键入 `Get-Help <cmdlet name> -online` 以查看最新帮助。  
 
@@ -92,13 +92,13 @@ AzureInformationProtection 模块的当前版本具有以下限制：
 
 无论是通过使用标签还是直接连接到 Azure 权限管理服务来应用数据保护，此先决条件都适用。
 
-如果未激活 Azure 信息保护租户，请参阅[激活 Azure 权限管理](../deploy-use/activate-service.md)的说明。
+如果未激活 Azure 信息保护租户，请参阅[激活 Azure 权限管理](../activate-service.md)的说明。
 
 #### <a name="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account"></a>先决条件 2：使用自己的帐户从他人的文件中删除保护
 
 从他人的文件中删除保护的典型方案包括数据发现或数据恢复。 如果使用标签应用保护，则可以通过设置不应用保护的新标签或通过删除标签来删除保护。 但是，你更有可能通过直接连接到 Azure 权限管理服务来删除保护。
 
-用户必须具有从文件删除保护的权限管理使用权限或者成为超级用户。 对于数据发现或数据恢复，通常会使用超级用户功能。 若要启用此功能并将你的帐户配置为超级用户，请参阅[为 Azure 管理权限和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)。
+用户必须具有从文件删除保护的权限管理使用权限或者成为超级用户。 对于数据发现或数据恢复，通常会使用超级用户功能。 若要启用此功能并将你的帐户配置为超级用户，请参阅[为 Azure 管理权限和发现服务或数据恢复配置超级用户](../configure-super-users.md)。
 
 #### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>先决条件 3：在无用户交互的情况下保护或取消保护文件
 
@@ -140,7 +140,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 从 Azure RMS Windows PowerShell 模块运行 Get-AadrmConfiguration cmdlet：
 
-1. 如果计算机上尚未安装此模块，请参阅[安装 AADRM PowerShell 模块](../deploy-use/install-powershell.md)。
+1. 如果计算机上尚未安装此模块，请参阅[安装 AADRM PowerShell 模块](../install-powershell.md)。
 
 2. 使用“以管理员身份运行”选项启动 Windows PowerShell。
 
@@ -234,7 +234,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 考虑使此服务主体帐户成为超级用户：要确保此服务主体帐户始终可以取消保护其他人的文件，可以将其配置为超级用户。 通过与将标准用户帐户配置为超级用户相同的方式，使用相同的 Azure RMS cmdlet ([Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md))，但使用 AppPrincipalId 值指定“ServicePrincipalId”参数。
 
-有关超级用户的详细信息，请参阅[为 Azure 权限管理和发现服务或数据恢复配置超级用户](../deploy-use/configure-super-users.md)。
+有关超级用户的详细信息，请参阅[为 Azure 权限管理和发现服务或数据恢复配置超级用户](../configure-super-users.md)。
 
 > [!NOTE]
 > 若要使用自己的帐户对 Azure 权限管理服务进行身份验证，则无需在保护或取消保护文件或获取模板之前运行 Set-RMSServerAuthentication。
@@ -466,7 +466,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 默认情况下，运行 cmdlet 进行标记时，命令会在交互式 PowerShell 会话中你自己的用户上下文运行。 若要在无人参与的情况下运行这些命令，请为此新建一个 Azure AD 用户帐户。 然后，在相应用户的上下文中，运行 Set-AIPAuthentication cmdlet，以使用 Azure AD 中的访问令牌设置并存储凭据。 此用户帐户会进行身份验证，并启动以供 Azure Rights Management 服务使用。 此帐户下载 Azure 信息保护策略，以及标签使用的任何 Rights Management 模板。
 
 > [!NOTE]
-> 如果使用[作用域内策略](../deploy-use/configure-policy-scope.md)，请记住，你可能需要将此帐户添加到作用域内策略中。
+> 如果使用[作用域内策略](../configure-policy-scope.md)，请记住，你可能需要将此帐户添加到作用域内策略中。
 
 首次运行此 cmdlet 时，会看到登录提示，以便使用 Azure 信息保护。 指定为无人参与用户帐户创建的用户帐户名称和密码。 在这之后，此帐户可以在身份验证令牌过期前，以非交互方式运行标记 cmdlet。 
 

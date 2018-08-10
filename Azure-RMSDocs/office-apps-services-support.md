@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6c500c099a382d4a4a070b05a55043bc66dc9543
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: aa1b24e24d05487014280fd6334d013466b6777f
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474644"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489121"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
@@ -34,9 +34,9 @@ ms.locfileid: "39474644"
 
 如果已准备好配置 Office 应用和 Azure 信息保护客户端：
 
-- 若要配置 Office 应用，请参阅 [Office 应用：客户端配置](./deploy-use/configure-office-apps.md)。
+- 若要配置 Office 应用，请参阅 [Office 应用：客户端配置](configure-office-apps.md)。
 
-- 若要安装和配置 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端：安装和配置客户端](./deploy-use/configure-client.md)。
+- 若要安装和配置 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端：安装和配置客户端](configure-client.md)。
 
 ## <a name="exchange-online-and-exchange-server"></a>Exchange Online 和 Exchange Server
 在使用 Exchange Online 或 Exchange Server 时，可以配置支持 Azure 权限管理的信息权限管理 (IRM) 选项。 此配置允许 Exchange 提供以下保护解决方案：
@@ -57,9 +57,9 @@ ms.locfileid: "39474644"
 
 如果准备为 Exchange 配置 IRM：
 
-- 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](./deploy-use/configure-office365.md#exchange-online-irm-configuration)。
+- 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchange-online-irm-configuration)。
 
-- 对于 Exchange 內部部署，请参阅[部署 Azure 权限管理连接器](./deploy-use/deploy-rms-connector.md)。
+- 对于 Exchange 內部部署，请参阅[部署 Azure 权限管理连接器](deploy-rms-connector.md)。
 
 
 ## <a name="sharepoint-online-and-sharepoint-server"></a>SharePoint Online 和 SharePoint Server
@@ -74,7 +74,7 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 
 必须首先为 SharePoint 启用 IRM 服务。 然后，为库指定 IRM 权限。 对于 SharePoint Online 和 OneDrive for Business，用户还可以为其 OneDrive for Business 库指定 IRM 权限。 SharePoint 不使用权限策略模板，虽然可以选择的 SharePoint 配置设置与可以在模板中指定的某些设置相匹配。
 
-如果使用 SharePoint Server，可通过部署 Azure 权限管理连接器，使用此 IRM 保护。 此连接器充当本地服务器和权限管理云服务之间的中继。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](./deploy-use/deploy-rms-connector.md)。
+如果使用 SharePoint Server，可通过部署 Azure 权限管理连接器，使用此 IRM 保护。 此连接器充当本地服务器和权限管理云服务之间的中继。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](deploy-rms-connector.md)。
 
 > [!NOTE]
 > 目前，使用 SharePoint IRM 时存在一些限制：
@@ -93,9 +93,9 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 
 如果已准备好为 SharePoint 配置 IRM ：
 
-- 对于 SharePoint Online，请参阅 [SharePoint Online 和 OneDrive for Business：IRM 配置](./deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)。
+- 对于 SharePoint Online，请参阅 [SharePoint Online 和 OneDrive for Business：IRM 配置](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)。
 
-- 对于 Sharepoint Server，请参阅[部署 Azure 权限管理连接器](./deploy-use/deploy-rms-connector.md)。
+- 对于 Sharepoint Server，请参阅[部署 Azure 权限管理连接器](deploy-rms-connector.md)。
 
 
 ## <a name="next-steps"></a>后续步骤
@@ -104,4 +104,4 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 
 若要查看其他应用程序和服务如何支持 Azure 信息保护中的 Azure Rights Management 服务，请参阅[应用程序如何支持 Azure Rights Management 服务](applications-support.md)。
 
-如果已准备好开始部署（包括配置这些应用程序和服务），请参阅 [Azure 信息保护部署路线图](./plan-design/deployment-roadmap.md)。
+如果已准备好开始部署（包括配置这些应用程序和服务），请参阅 [Azure 信息保护部署路线图](deployment-roadmap.md)。

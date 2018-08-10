@@ -4,7 +4,7 @@ description: 说明如何对文档和电子邮件进行分类。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 08/06/2017
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: d65c7690-fab7-4823-845c-8c73903e9c79
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 045df42bf847630b89458dabb6e8438a6f97d5b0
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: c33892fab0a8b954ea7cd299872bf2994c99162f
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39372975"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575788"
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>用户指南：使用 Azure 信息保护对文件或电子邮件进行分类
 
@@ -99,5 +99,5 @@ ms.locfileid: "39372975"
 - [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
-请参阅[配置 Azure 信息保护策略](../deploy-use/configure-policy.md)。
+请参阅[配置 Azure 信息保护策略](../configure-policy.md)。
 

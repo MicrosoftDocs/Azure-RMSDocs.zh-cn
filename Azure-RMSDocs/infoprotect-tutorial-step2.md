@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 403d5d2222438136e5d449dbe4b26b693ad566d0
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: eb99fb447702dd2f453c1caacbb8ccd341ed127b
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474634"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489478"
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>步骤 2：配置 Azure 信息保护策略
 
@@ -32,7 +32,7 @@ ms.locfileid: "39474634"
        > [!NOTE]
        > 你的默认策略可能与本教程中的默认策略稍有不同。 例如，你有名为“内部”的标签，而没有“常规”标签，有“秘密”标签而没有“高度机密”标签。 也许没有名为“仅收件人”的子标签，或者根本没有任何标签。 这些变化是因为存在不同版本的默认策略，具体取决于为租户创建默认策略的时间。 或者在开始本教程之前，已自行对其进行编辑。
        > 
-       > 如果你的默认策略不同，仍可使用本教程，但使用其中的说明和图片时，应注意这些更改。 如果要修改自己默认策略以符合当前的默认策略，请参阅[默认 Azure 信息保护策略](./deploy-use/configure-policy-default.md)。
+       > 如果你的默认策略不同，仍可使用本教程，但使用其中的说明和图片时，应注意这些更改。 如果要修改自己默认策略以符合当前的默认策略，请参阅[默认 Azure 信息保护策略](configure-policy-default.md)。
     
     - 在默认配置中，某些标签未配置视觉标记。 视觉标记即页脚、页眉和水印。 某些标签可能设置了保护，具体取决于默认策略。 例如： 
     
@@ -151,10 +151,10 @@ ms.locfileid: "39474634"
 
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
-|关于默认策略和不同版本|[默认 Azure 信息保护策略](./deploy-use/configure-policy-default.md)|
-|有关策略配置|[配置 Azure 信息保护策略](./deploy-use/configure-policy.md)|
-|配置标签以进行保护的详细说明|[如何配置标签以进行 Rights Management 保护](./deploy-use/configure-policy-protection.md)|
-|有关权限的详细信息|[为 Azure Rights Management 配置使用权限](./deploy-use/configure-usage-rights.md)|
+|关于默认策略和不同版本|[默认 Azure 信息保护策略](configure-policy-default.md)|
+|有关策略配置|[配置 Azure 信息保护策略](configure-policy.md)|
+|配置标签以进行保护的详细说明|[如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)|
+|有关权限的详细信息|[为 Azure Rights Management 配置使用权限](configure-usage-rights.md)|
 
 
 

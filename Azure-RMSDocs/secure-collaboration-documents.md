@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e8f2facdeda749987bb1fffae84a3f1bf033e1ad
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: f08c458ce779149d34d573ba145452f98d612c8c
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474714"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489495"
 ---
 # <a name="secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护保护文档协作
 
@@ -25,7 +25,7 @@ ms.locfileid: "39474714"
 
 当你使用 Azure 信息保护时，你可以保护你的文档，而无需牺牲授权用户的协作。 一个用户创建并与他人共享以进行查看和编辑的大多数文档将是 Word、Excel 和 PowerPoint 等 Office 文档。 这些文档支持本地保护，这意味着除了授权和加密的保护功能外，它们还支持受限权限以实现更细化的控制。 
 
-这些权限被称为使用权限，并包含查看、编辑、打印等权限。 你可以在文档受到保护时定义个人使用权限，也可以定义一组使用权限，这被称为权限级别。 通过权限级别，你可以更轻松地选择通常一起使用的使用权限，例如审阅者和合著者。 有关使用权限和权限级别的详细信息，请参阅[配置 Azure Rights Management 的使用权限](./deploy-use/configure-usage-rights.md)。
+这些权限被称为使用权限，并包含查看、编辑、打印等权限。 你可以在文档受到保护时定义个人使用权限，也可以定义一组使用权限，这被称为权限级别。 通过权限级别，你可以更轻松地选择通常一起使用的使用权限，例如审阅者和合著者。 有关使用权限和权限级别的详细信息，请参阅[配置 Azure Rights Management 的使用权限](configure-usage-rights.md)。
 
 配置这些权限时，可以指定向哪些用户授予它们：
 
@@ -44,7 +44,7 @@ ms.locfileid: "39474714"
 
 此示例演示了如何配置现有标签以应用保护，以便组织中的用户可以与另一个拥有 Office 365 或 Azure AD 的组织中的所有用户、其他具有 Office 365 或 Azure AD 的组织中的组以及在 Azure AD 中没有帐户而是使用 Gmail 电子邮件地址的用户就文档进行协作。
 
-由于方案限制为只有特定人员拥有访问权限，因此不包括任何身份已验证的用户的设置。 有关如何使用此设置配置标签的示例，请参阅[示例 5：加密内容但不限制谁能访问内容的标签](./deploy-use/configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it)。  
+由于方案限制为只有特定人员拥有访问权限，因此不包括任何身份已验证的用户的设置。 有关如何使用此设置配置标签的示例，请参阅[示例 5：加密内容但不限制谁能访问内容的标签](configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it)。  
 
 1. 选择已在全局策略中或指定了作用域的策略中的标签。 在“保护”边栏选项卡，确保选中“Azure (云密钥)”。
     
@@ -79,10 +79,10 @@ ms.locfileid: "39474714"
 |应用标签的不同方式|更多信息|
 |---------------|----------|
 |用户在 Office 应用程序中创建文档时，手动选择标签。|用户从 Office 功能区上的“保护”按钮或从 Azure 信息保护栏选择标签。|
-|系统提示用户在保存新文档时选择一个标签。|你已配置名为“所有文档和电子邮件必须具有标签”的 Azure 信息保护[策略设置](./deploy-use/configure-policy-settings.md)。|
+|系统提示用户在保存新文档时选择一个标签。|你已配置名为“所有文档和电子邮件必须具有标签”的 Azure 信息保护[策略设置](configure-policy-settings.md)。|
 |用户通过电子邮件共享文档并在 Outlook 中手动选择标签。|用户从 Office 功能区上的“保护”按钮或从 Azure 信息保护栏选择标签，并使用相同的设置自动保护附加的文档。|
 |管理员使用 PowerShell 将标签应用于文档。|使用 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) cmdlet 将标签应用于特定文档或文件夹中的所有文档。|
-|你还额外配置了标签以应用自动分类，而现在可以使用 Azure 信息保护扫描程序或 PowerShell 应用自动分类。|请参阅[如何配置 Azure 信息保护的自动和建议分类条件](./deploy-use/configure-policy-classification.md)。|
+|你还额外配置了标签以应用自动分类，而现在可以使用 Azure 信息保护扫描程序或 PowerShell 应用自动分类。|请参阅[如何配置 Azure 信息保护的自动和建议分类条件](configure-policy-classification.md)。|
 
 若要完成本演练，请在 Office 应用程序中创建文档时手动应用标签： 
 
@@ -149,9 +149,9 @@ ms.locfileid: "39474714"
 
 ## <a name="next-steps"></a>后续步骤
 
-有关要将保护应用于常见场景的标签，请参阅其他[配置示例](./deploy-use/configure-policy-protection.md#example-configurations)。 本文还包含有关保护设置的更多详细信息。
+有关要将保护应用于常见场景的标签，请参阅其他[配置示例](configure-policy-protection.md#example-configurations)。 本文还包含有关保护设置的更多详细信息。
 
-有关可以为标签配置的其他选项和设置的详细信息，请参阅[配置 Azure 信息保护策略](./deploy-use/configure-policy.md)。 
+有关可以为标签配置的其他选项和设置的详细信息，请参阅[配置 Azure 信息保护策略](configure-policy.md)。 
 
 本文中配置的标签也通过相同的名称创建保护模板。 如果你拥有的应用程序和服务与 Azure 信息保护的保护模板相集成，则可以应用此模板。 例如，DLP 解决方案和邮件流规则。 Web 上的 Outlook 自动显示 Azure 信息保护全局策略中的保护模板。 
 

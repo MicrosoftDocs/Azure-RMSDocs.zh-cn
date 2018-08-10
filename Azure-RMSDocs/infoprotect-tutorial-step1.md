@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: 81fd0bf7a85cdb0f59265bab22fee284bc248e26
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: c1c9d9eed2bc9a54500d13a93ce3d74187ee24a2
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474974"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488652"
 ---
 # <a name="step-1-activate-protection"></a>步骤 1：激活保护
  
@@ -63,7 +63,7 @@ ms.locfileid: "39474974"
 
 |如果你想了解更多信息|其他信息|
 |--------------------------------|--------------------------|
-|有关激活保护|[激活 Azure Rights Management](./deploy-use/activate-service.md)|
+|有关激活保护|[激活 Azure Rights Management](activate-service.md)|
 
 
 >[!div class="step-by-step"]

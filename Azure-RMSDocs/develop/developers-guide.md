@@ -11,12 +11,12 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: cfd090df79e640ef6106f2c72001b2b05969cdf6
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 096f5d02e4bcb39390bcd6f6ed64476f4a74d5eb
+ms.sourcegitcommit: 7ed2a257f68435fe6807af8975a5477801ec2537
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473893"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501262"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 
@@ -40,7 +40,7 @@ ms.locfileid: "39473893"
 
 ## <a name="powershell-guides"></a>PowerShell 指南
 
-PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开发和测试服务应用程序。 有关详细信息，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](/information-protection/rms-client/client-admin-guide-powershell)。
+PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开发和测试服务应用程序。 有关详细信息，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](/azure/information-protection/rms-client/client-admin-guide-powershell)。
 
 ## <a name="user-applications"></a>用户应用程序
 
@@ -143,5 +143,5 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 ### <a name="see-also"></a>另请参阅
 
 - [开发人员术语](terms.md)
-- [Azure 信息保护的术语 - IT 专业人员](./terminology.md)
+- [Azure 信息保护的术语 - IT 专业人员](../terminology.md)
 

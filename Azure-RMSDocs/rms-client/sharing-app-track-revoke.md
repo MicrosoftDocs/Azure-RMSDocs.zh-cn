@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d6d53635a7f86c9ecc27f654885f9d66569f2b1e
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 4c515388df31d0541ee88a21fa88da761a5cde30
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39374233"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489046"
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>使用 RMS 共享应用程序跟踪和撤销文档
 
@@ -54,7 +54,7 @@ ms.locfileid: "39374233"
 如果看不到这些用于 RMS 的选项，则很可能你的计算机上未安装 RMS 共享应用程序、未安装最新版本，或必须重启计算机才能完成安装。 有关如何安装共享应用程序的详细信息，请参阅[下载和安装 Rights Management 共享应用程序](install-sharing-app.md)。
 
 > [!NOTE] 
-> 如果安装了 [Azure 信息保护客户端](../rms-client/info-protect-client.md)，则还可以使用“保护”按钮访问文档跟踪站点： 
+> 如果安装了 [Azure 信息保护客户端](info-protect-client.md)，则还可以使用“保护”按钮访问文档跟踪站点： 
 > 
 > - 在 Office 应用程序的“主页”选项卡的“保护”组中，单击“保护” > “跟踪使用情况”。 
 

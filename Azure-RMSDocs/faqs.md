@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb50971c3bdfd464927866a72e2657f7acffd515
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 8fccb3dccfdef523bf1ffdee4bc5be175b3f94fd
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474704"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488944"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -52,30 +52,30 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 很显然，Office 365 租户或 Azure AD 租户的全局管理员可以运行 Azure 信息保护的所有管理任务。 但是，如果想要将管理权限分配给其他用户，可以使用以下选项：
 
-- 信息保护管理员：此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护的所有方面，但不能配置其他服务。 具有此角色的管理员可以激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置 Azure 信息保护策略。 此外，具有此角色的管理员可以运行针对 [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)以及来自 [AADRM 模块](./deploy-use/administer-powershell.md)的所有 PowerShell cmdlet。 
+- 信息保护管理员：此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护的所有方面，但不能配置其他服务。 具有此角色的管理员可以激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置 Azure 信息保护策略。 此外，具有此角色的管理员可以运行针对 [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)以及来自 [AADRM 模块](administer-powershell.md)的所有 PowerShell cmdlet。 
     
     若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。
 
-- **安全管理员**：此 Azure Active Directory 管理员角色允许管理员在 Azure 门户中配置 Azure 信息保护的所有方面，同时还可以配置其他 Azure 服务的某些方面。 具有此角色的管理员无法运行任何[来自 AADRM 模块的 PowerShell cmdlet](./deploy-use/administer-powershell.md)。
+- **安全管理员**：此 Azure Active Directory 管理员角色允许管理员在 Azure 门户中配置 Azure 信息保护的所有方面，同时还可以配置其他 Azure 服务的某些方面。 具有此角色的管理员无法运行任何[来自 AADRM 模块的 PowerShell cmdlet](administer-powershell.md)。
     
     若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。 若要查看具有此角色的用户还拥有哪些其他权限，请参阅 Azure Active Directory 文档的[可用角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)部分。
 
-- Azure Rights Management **全局管理员**和**连接器管理员**：对于这些 Azure Rights Management 管理员角色，第一个可授予用户权限以运行所有[来自 AADRM 模块的 PowerShell cmdlet](./deploy-use/administer-powershell.md) 而不使其成为其他云服务的全局管理员，第二个角色授予权限来仅运行 Rights Management (RMS) 连接器。 这两种管理角色都不会授权访问管理控制台，也不会授权在文档跟踪网站中使用管理模式。
+- Azure Rights Management **全局管理员**和**连接器管理员**：对于这些 Azure Rights Management 管理员角色，第一个可授予用户权限以运行所有[来自 AADRM 模块的 PowerShell cmdlet](administer-powershell.md) 而不使其成为其他云服务的全局管理员，第二个角色授予权限来仅运行 Rights Management (RMS) 连接器。 这两种管理角色都不会授权访问管理控制台，也不会授权在文档跟踪网站中使用管理模式。
 
     若要分配其中任一管理角色，请使用 AADRM PowerShell cmdlet [Add-aadrmrolebasedadministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator)。
 
 需要注意的事项：
 
-- 如果配置了[加入控制](./deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，此配置不会影响管理 Azure 信息保护的能力（RMS 连接器除外）。 例如，如果配置了加入控制，以致仅允许“IT 部门”组保护内容，那么，用于安装和配置 RMS 连接器的帐户必须是该组的成员。 
+- 如果配置了[加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，此配置不会影响管理 Azure 信息保护的能力（RMS 连接器除外）。 例如，如果配置了加入控制，以致仅允许“IT 部门”组保护内容，那么，用于安装和配置 RMS 连接器的帐户必须是该组的成员。 
 
-- 分配了管理角色的用户无法从受 Azure 信息保护保护的文档或电子邮件中自动删除保护。 只有在启用了超级用户功能的情况下，分配为超级用户的用户才能执行此操作。 但是，你将管理权限分配给 Azure 信息保护的任何用户可以将用户分配为超级用户，包括其自己的帐户。 他们还可以启用超级用户功能。 这些操作记录在管理员日志中。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](./deploy-use/configure-super-users.md)中的“最佳安全做法”部分。 
+- 分配了管理角色的用户无法从受 Azure 信息保护保护的文档或电子邮件中自动删除保护。 只有在启用了超级用户功能的情况下，分配为超级用户的用户才能执行此操作。 但是，你将管理权限分配给 Azure 信息保护的任何用户可以将用户分配为超级用户，包括其自己的帐户。 他们还可以启用超级用户功能。 这些操作记录在管理员日志中。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](configure-super-users.md)中的“最佳安全做法”部分。 
 
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 
 是。 尽管 Azure 信息保护是基于云的解决方案，但它可对存储在本地和云中的文档和电子邮件进行分类、标签设置和保护。
 
-如果具有 Exchange Server、SharePoint Server 和 Windows 文件服务器，则可部署[权限管理连接器](./deploy-use/deploy-rms-connector.md)，便于这些本地服务器可使用 Azure 权限管理服务保护电子邮件和文档。 你还可以使用 [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)，将 Active Directory 域控制器与 Azure AD 同步和联合，为用户提供更为契合的身份验证体验。
+如果具有 Exchange Server、SharePoint Server 和 Windows 文件服务器，则可部署[权限管理连接器](deploy-rms-connector.md)，便于这些本地服务器可使用 Azure 权限管理服务保护电子邮件和文档。 你还可以使用 [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)，将 Active Directory 域控制器与 Azure AD 同步和联合，为用户提供更为契合的身份验证体验。
 
 Azure 权限管理服务根据需要自动生成并管理 XrML 证书，因此它不使用本地 PKI。 有关 Azure Rights Management 如何使用证书的详细信息，请参阅 [Azure RMS 的工作原理](./how-does-it-work.md)一文中的 [Azure RMS 工作演练：首次使用、内容保护、内容使用](./how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption)。
 
@@ -111,9 +111,9 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 
 ## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI 和 Azure 信息保护扫描程序有何区别？
 
-在一段时间内，已可以使用 Windows Server 文件分类基础结构对文档进行分类，然后使用 [Rights Management 连接器](./deploy-use/deploy-rms-connector.md)（仅 Office 文档）或 [PowerShell脚本](./rms-client/configure-fci.md)（所有文件类型）保护文档。 
+在一段时间内，已可以使用 Windows Server 文件分类基础结构对文档进行分类，然后使用 [Rights Management 连接器](deploy-rms-connector.md)（仅 Office 文档）或 [PowerShell脚本](./rms-client/configure-fci.md)（所有文件类型）保护文档。 
 
-现在可以使用 [Azure 信息保护扫描程序](./deploy-use/deploy-aip-scanner.md)。 扫描程序使用 Azure 信息保护客户端和 Azure 信息保护策略来为文档（所有文件类型）添加标签，然后可以对这些文档进行分类并且还可根据需要保护文档。
+现在可以使用 [Azure 信息保护扫描程序](deploy-aip-scanner.md)。 扫描程序使用 Azure 信息保护客户端和 Azure 信息保护策略来为文档（所有文件类型）添加标签，然后可以对这些文档进行分类并且还可根据需要保护文档。
 
 这两种解决方案的主要差异是：
 
@@ -123,7 +123,7 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 |操作模式： <br /><br />- 实时|操作模式： <br /><br />- 系统地抓取数据存储，且此周期可以运行一次或多次|
 |对文件类型的支持： <br /><br />- 默认保护所有文件类型 <br /><br />- 通过编辑注册表，可以从保护配置中排除特定文件类型|对文件类型的支持： <br /><br />- 默认保护 Office 文件类型 <br /><br />- 通过编辑注册表，可以将特定文件类型纳入保护|
 
-目前，在本地文件夹或网络共享上受到保护的文件设置 [Rights Management 所有者](./deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)方面存在差异。 默认情况下，这两个解决方案的 Rights Management 所有者均设置为保护文件的帐户，但可以替代此设置：
+目前，在本地文件夹或网络共享上受到保护的文件设置 [Rights Management 所有者](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)方面存在差异。 默认情况下，这两个解决方案的 Rights Management 所有者均设置为保护文件的帐户，但可以替代此设置：
 
 - 对于 Windows Server FCI：可以将所有文件的 Rights Management 所有者设置为单个帐户，也可以为每个文件动态设置 Rights Management 所有者。 若要动态设置 Rights Management 所有者，请使用 -OwnerMail [源文件所有者电子邮件] 参数和值。 此配置使用文件“所有者”属性中的用户帐户名从 Active Directory 检索用户的电子邮件地址。
 

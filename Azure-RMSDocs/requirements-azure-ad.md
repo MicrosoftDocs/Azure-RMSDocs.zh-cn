@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d15e4a5e22089fa1ac98303fb00b95d082be872a
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: f6aa26cb64a07e8ccc2415b874e7240897633cd0
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474994"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489242"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
 
@@ -47,7 +47,7 @@ ms.locfileid: "39474994"
 
 - 这不是推荐的配置。 如果无法更改 UPN 值，请为用户配置备用登录 ID，并指导他们使用此备用登录方式登录 Office。 有关详细信息，请参阅[配置备用登录 ID](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) 和 [Office 应用程序定期提示输入 SharePoint Online、OneDrive 和 Lync Online 的凭据](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)。
     
-    如果 UPN 值中的域名已针对你的租户进行验证，请将用户的 UPN 值作为另一个电子邮件地址添加到 Azure AD proxyAddresses 属性。 如果在授予使用权限时指定了用户的 UPN 值，则可以对用户进行 Azure 权限管理授权。 有关这一点及如何对用户帐户授权的详细信息，请参阅[准备用户和组以便使用 Azure 信息保护](./plan-design/prepare.md)。
+    如果 UPN 值中的域名已针对你的租户进行验证，请将用户的 UPN 值作为另一个电子邮件地址添加到 Azure AD proxyAddresses 属性。 如果在授予使用权限时指定了用户的 UPN 值，则可以对用户进行 Azure 权限管理授权。 有关这一点及如何对用户帐户授权的详细信息，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
 
 使用 AD FS 或等效的身份验证提供程序进行本地身份验证的移动设备或 Mac 计算机：
 

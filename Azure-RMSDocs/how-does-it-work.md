@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 93e5af9843ef215ec074024179c71d577722096b
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: cebca1f9ce2bb7d73f29e3e1ea7d6fd2fc6a5742
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474744"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489876"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
@@ -71,13 +71,13 @@ ms.locfileid: "39474744"
 
 内容密钥作为文档中的策略的一部分，使用组织的 RSA 密钥（称为“Azure 信息保护租户密钥”）进行保护，并且策略也由文档的作者签名。 此租户密钥由受 Azure Rights Management 服务保护的组织的所有文档和电子邮件共有，如果组织使用的是客户管理的租户密钥（称为“自带密钥”或 BYOK），则此密钥只能由 Azure 信息保护管理员更改。 
 
-此租户密钥在 Microsoft Online Services 中、在高度控制的环境中和严密监视下进行保护。 当你使用客户托管的租户密钥 (BYOK) 时，通过在每个 Azure 区域中使用一组高端硬件安全模块 (HSM) 增强了此安全性，从而在任何情况下都无法提取、导出或共享这些密钥。 有关租户密钥和 BYOK 的详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](./plan-design/plan-implement-tenant-key.md)。
+此租户密钥在 Microsoft Online Services 中、在高度控制的环境中和严密监视下进行保护。 当你使用客户托管的租户密钥 (BYOK) 时，通过在每个 Azure 区域中使用一组高端硬件安全模块 (HSM) 增强了此安全性，从而在任何情况下都无法提取、导出或共享这些密钥。 有关租户密钥和 BYOK 的详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](plan-implement-tenant-key.md)。
 
 发送到 Windows 设备的许可证和证书使用客户端设备私钥（用户在设备上第一次使用 Azure RMS 时创建）进行保护。 而该私钥则使用客户端上的 DPAPI 进行保护，DPAPI 使用从用户的密码派生的密钥来保护这些机密。 在移动设备上，只使用这些密钥一次，因此由于这些密钥不存储在客户端上，而无需在设备上保护这些密钥。 
 
 
 ## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 工作原理演练：首次使用、内容保护、内容使用
-为了更详细地了解 Azure RMS 的工作原理，让我们通过在[激活 Azure Rights Management 服务](./deploy-use/activate-service.md)之后，当用户首次在其 Windows 计算机上使用权限管理服务（有时称为**初始化用户环境**或引导的过程）时，**保护内容**（文档或电子邮件），然后**使用**（打开并使用）被其他某人保护的内容，来演练一个典型的工作流。
+为了更详细地了解 Azure RMS 的工作原理，让我们通过在[激活 Azure Rights Management 服务](activate-service.md)之后，当用户首次在其 Windows 计算机上使用权限管理服务（有时称为**初始化用户环境**或引导的过程）时，**保护内容**（文档或电子邮件），然后**使用**（打开并使用）被其他某人保护的内容，来演练一个典型的工作流。
 
 初始化用户环境后，该用户可以保护文档，或使用该计算机上的受保护文档。
 
@@ -110,7 +110,7 @@ ms.locfileid: "39474744"
 
 ![RMS 文档保护 - 步骤 2，策略已创建](./media/AzRMS_documentprotection2.png)
 
-**步骤 2 中发生的情况**：RMS 客户端随后会为文档创建一个包含策略的证书，策略包括用户或组的[使用权](./deploy-use/configure-usage-rights.md)和其他限制，例如过期日期。 这些设置可在管理员之前配置的模板中进行定义，或在内容受保护时进行指定（有时称为“临时策略”）。   
+**步骤 2 中发生的情况**：RMS 客户端随后会为文档创建一个包含策略的证书，策略包括用户或组的[使用权](configure-usage-rights.md)和其他限制，例如过期日期。 这些设置可在管理员之前配置的模板中进行定义，或在内容受保护时进行指定（有时称为“临时策略”）。   
 
 用于标识所选用户和组的主要 Azure AD 属性是 Azure AD proxyAddresses 属性，该属性用于存储用户或组的所有电子邮件地址。 但是，如果用户帐户的 AD ProxyAddresses 属性中没有任何值，则改用用户的 UserPrincipalName 值。
 
@@ -127,7 +127,7 @@ ms.locfileid: "39474744"
 
 ![RMS 文档使用 - 步骤 1，用户已通过身份验证并获取权限列表](./media/AzRMS_documentconsumption1.png)
 
-**步骤 1 中发生的情况**：经过身份验证的用户将文档策略和用户的证书发送到 Azure Rights Management 服务。 服务解密并评估该策略，并生成用户对该文档拥有的权限列表（如果有）。 若要标识用户，可将 Azure AD ProxyAddresses 属性用于用户的帐户和该用户所属的组。 出于性能原因，会[缓存](./plan-design/prepare.md#group-membership-caching-by-azure-information-protection)组成员身份。 如果用户帐户的 Azure AD ProxyAddresses 属性中没有任何值，则改用 Azure AD UserPrincipalName 中的值。
+**步骤 1 中发生的情况**：经过身份验证的用户将文档策略和用户的证书发送到 Azure Rights Management 服务。 服务解密并评估该策略，并生成用户对该文档拥有的权限列表（如果有）。 若要标识用户，可将 Azure AD ProxyAddresses 属性用于用户的帐户和该用户所属的组。 出于性能原因，会[缓存](prepare.md#group-membership-caching-by-azure-information-protection)组成员身份。 如果用户帐户的 Azure AD ProxyAddresses 属性中没有任何值，则改用 Azure AD UserPrincipalName 中的值。
 
 ![RMS 文档使用 - 步骤 2，使用许可证已返回到客户端](./media/AzRMS_documentconsumption2.png)
 
@@ -166,7 +166,7 @@ ms.locfileid: "39474744"
 
 请查看 [Azure 信息保护术语](./terminology.md)，以便熟悉在配置和使用 Azure Rights Management 服务时可能遇到的术语。此外，还要确保在开始部署前查看 [Azure 信息保护的要求](requirements.md)。 如果你要进一步研究并亲自尝试一下，请使用 [Azure 信息保护快速入门教程](infoprotect-quick-start-tutorial.md)。
 
-当做好开始为组织部署数据保护的准备时，请使用 [Azure 信息保护部署路线图](./plan-design/deployment-roadmap.md)获取部署步骤和操作说明链接。
+当做好开始为组织部署数据保护的准备时，请使用 [Azure 信息保护部署路线图](deployment-roadmap.md)获取部署步骤和操作说明链接。
 
 > [!TIP]
 > 有关其他信息和帮助，请使用 [Azure 信息保护的信息和支持](information-support.md)中的资源和链接。

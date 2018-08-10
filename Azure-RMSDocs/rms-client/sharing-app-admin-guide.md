@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 65fa46d7a978eb87b455d34075bdb3f939a133f7
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: b535b90afe43cd262cb637606eb6060c7c2ee277
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474032"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575652"
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>保护级别 – 本机和常规
 
@@ -28,7 +28,7 @@ ms.locfileid: "39474032"
 
 如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 [Rights Management 共享应用程序用户指南](sharing-app-user-guide.md)或[适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)以外的更多技术信息，请使用以下信息。
 
-RMS 共享应用程序最适合与 Azure 信息保护配合使用，因为这种部署配置支持向另一组织中的用户发送受保护的附件，并提供电子邮件通知、文档跟踪和撤消等选项。 不过，它也能够与本地版本的 AD RMS 配合使用，只是存在一些限制。 有关 Azure 信息保护和 AD RMS 所支持功能的全面比较，请参阅[比较 Azure信息保护和 AD RMS](../compare-on-premise.md)。 如果安装了 AD RMS，想迁移到 Azure 信息保护，请参阅[从 AD RMS 迁移到 Azure 信息保护](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
+RMS 共享应用程序最适合与 Azure 信息保护配合使用，因为这种部署配置支持向另一组织中的用户发送受保护的附件，并提供电子邮件通知、文档跟踪和撤消等选项。 不过，它也能够与本地版本的 AD RMS 配合使用，只是存在一些限制。 有关 Azure 信息保护和 AD RMS 所支持功能的全面比较，请参阅[比较 Azure信息保护和 AD RMS](../compare-on-premise.md)。 如果安装了 AD RMS，想迁移到 Azure 信息保护，请参阅[从 AD RMS 迁移到 Azure 信息保护](../migrate-from-ad-rms-to-azure-rms.md)。
 
 有关 Rights Management 共享应用程序的技术概览和有关本机和通用保护、支持的文件类型、文件扩展名以及如何更改默认保护级别的信息，请参阅[《Technical overview and protection details for the Rights Management sharing application》](sharing-app-admin-guide-technical.md)（Rights Management 共享应用程序的技术概览和保护详细信息）。 
 
@@ -345,7 +345,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 ## <a name="azure-information-protection-only-configuring-document-tracking"></a>仅限 Azure 信息保护：配置文档跟踪
 如果你有[支持文档跟踪的订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-features)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。 文档跟踪会显示尝试访问用户共享的受保护文档的人员的电子邮件地址、其尝试访问这些文档的时间以及他们所在的位置。 如果你的组织出于隐私要求而要禁止显示此类信息，你可以使用 [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature) cmdlet 来禁用对文档跟踪站点的访问。 你随时可以使用 [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature) 来重新启用对该站点的访问，并可以使用 [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature) 来查看当前是已启用还是已禁用这种访问。
 
-若要运行这些 cmdlet，必须安装最低版本为 **2.3.0.0**，适用于 Windows PowerShell 的 Azure Rights Management 模块。 有关安装说明，请参阅[安装 AADRM PowerShell 模块](../deploy-use/install-powershell.md)。
+若要运行这些 cmdlet，必须安装最低版本为 **2.3.0.0**，适用于 Windows PowerShell 的 Azure Rights Management 模块。 有关安装说明，请参阅[安装 AADRM PowerShell 模块](../install-powershell.md)。
 
 > [!TIP]
 > 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号：`(Get-Module aadrm –ListAvailable).Version`
@@ -388,7 +388,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 此外，还有记录用户和管理员如何使用文档跟踪站点的请求类型。 例如，**RevokeAccess** 是用户或代表用户的管理员已撤销文档跟踪站点中的文档时的请求类型。 通过将此请求类型与 AdminAction 字段结合使用，可确定是用户撤销了自己的文档（AdminAction 字段为空），还是管理员代表用户撤销了文档（AdminAction 为 true）。
 
 
-有关使用情况日志记录的详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)
+有关使用情况日志记录的详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../log-analyze-usage.md)
 
 ## <a name="ad-rms-only-support-for-multiple-email-domains-within-your-organization"></a>仅限 AD RMS：在组织中支持多个电子邮件域
 如果你使用 AD RMS 且你所在组织中的用户具有多个电子邮件域（可能由于组织的合并或收购而引起），则必须对注册表进行以下编辑：

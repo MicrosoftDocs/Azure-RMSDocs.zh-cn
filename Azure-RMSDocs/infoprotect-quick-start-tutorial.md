@@ -10,18 +10,18 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 601b60d7ece2cf1c67865b25b6e897b8f2905dc8
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: b060288efd080397f754d6aecd71abc4bbaabf81
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475144"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488804"
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure 信息保护快速入门教程 
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
-使用该教程以快速试用适合你组织的 Microsoft Azure 信息保护，只需 5 个步骤，所需时间大概 20 分钟。 本教程为自我引导式教程，旨在快速显示某些 Azure 信息保护提供的特性和功能的案例。 它不包括所有可用功能，也不是你组织的部署指南。 如果想要为你的组织部署 Azure 信息保护，请参阅[部署路线图文档](./plan-design/deployment-roadmap.md)。 
+使用该教程以快速试用适合你组织的 Microsoft Azure 信息保护，只需 5 个步骤，所需时间大概 20 分钟。 本教程为自我引导式教程，旨在快速显示某些 Azure 信息保护提供的特性和功能的案例。 它不包括所有可用功能，也不是你组织的部署指南。 如果想要为你的组织部署 Azure 信息保护，请参阅[部署路线图文档](deployment-roadmap.md)。 
 
 本教程针对的是 IT 管理员和顾问，旨在帮助他们将 Azure 信息保护作为组织的企业信息保护解决方案进行评估。 在生产环境中，配置信息保护策略、为用户安装客户端等步骤由管理员执行。 为文档设置标签和通过电子邮件安全共享及跟踪文档等步骤由最终用户完成。 本教程包含了所有这些步骤，用于演示对组织的数据进行分类、设置标签和保护的典型端到端方案。 
 

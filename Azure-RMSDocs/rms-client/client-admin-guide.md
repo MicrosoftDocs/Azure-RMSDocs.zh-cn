@@ -4,7 +4,7 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 74cb6b6cd03621f52860012331fbf4cf518459dc
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: f9189de08c7089087ba37964a9d7acee3f537d02
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473961"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575669"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -55,13 +55,13 @@ Azure 信息保护客户端包括以下内容：
 
 - 一个 PowerShell 模块，用于从文件应用和删除分类标签和保护。 
     
-    此模块包括的 cmdlet 可用于安装和配置 [Azure 信息保护扫描程序](../deploy-use/deploy-aip-scanner.md)，该扫描程序在 Windows Server 上作为服务运行。 借助此服务，可发现和保护数据存储（例如，网络共享和 SharePoint Server 库）中的文件并对其进行分类。
+    此模块包括的 cmdlet 可用于安装和配置 [Azure 信息保护扫描程序](../deploy-aip-scanner.md)，该扫描程序在 Windows Server 上作为服务运行。 借助此服务，可发现和保护数据存储（例如，网络共享和 SharePoint Server 库）中的文件并对其进行分类。
 
 - 权限管理客户端，可与 Azure 权限管理 (Azure RMS) 或 Active Directory Rights Management Services (AD RMS) 进行通信。
 
 Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护及其数据保护服务（Azure 权限管理）。 不过，Azure 信息保护客户端也可用于本地版本的 Rights Management ( AD RMS)，只是存在一些限制。 有关 Azure 信息保护和 AD RMS 所支持功能的全面比较，请参阅[比较 Azure信息保护和 AD RMS](../compare-on-premise.md)。 
 
-如果安装了 AD RMS，想迁移到 Azure 信息保护，请参阅[从 AD RMS 迁移到 Azure 信息保护](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
+如果安装了 AD RMS，想迁移到 Azure 信息保护，请参阅[从 AD RMS 迁移到 Azure 信息保护](../migrate-from-ad-rms-to-azure-rms.md)。
 
 
 ## <a name="should-you-deploy-the-azure-information-protection-client"></a>你是否应该部署 Azure 信息保护客户端？
@@ -106,7 +106,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 #### <a name="help-and-feedback-section"></a>“**帮助和反馈**”部分
 
-默认情况下，“提供详细信息”链接转到 [Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)网站，但也可以根据 Azure 信息保护策略中的一项[策略设置](../deploy-use/configure-policy-settings.md)，将其配置为转到自定义 URL。
+默认情况下，“提供详细信息”链接转到 [Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)网站，但也可以根据 Azure 信息保护策略中的一项[策略设置](../configure-policy-settings.md)，将其配置为转到自定义 URL。
 
 使用“**给我们发送反馈**”链接可以向信息保护团队发送建议或请求。 对于技术支持，请勿将此选项，而是参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)。 
 
@@ -162,7 +162,7 @@ Azure 信息保护客户端支持 Office 365 支持的同种语言。 有关这�
 
 对于这些语言，Azure 信息保护客户端中的菜单选项、对话框和消息将以用户的语言显示。 由于有一个安装程序可检测语言，因此不需要进行额外配置即可安装不同语言的 Azure 信息保护客户端。 
 
-但是，在 Azure 信息保护策略中配置标签时，不会自动翻译指定的标签名称和说明。 从 2017 年 8 月 30 日起，当前的[默认政策](../deploy-use/configure-policy-default.md)包含对部分语言的支持。 若要以用户首选语言向其显示标签，必须提供你的翻译并将 Azure 信息保护策略配置为使用这些翻译。 有关详细信息，请参阅[如何在 Azure 信息保护中配置不同语言的标签](../deploy-use/configure-policy-languages.md)。 视觉标记未翻译，且不支持多种语言。
+但是，在 Azure 信息保护策略中配置标签时，不会自动翻译指定的标签名称和说明。 从 2017 年 8 月 30 日起，当前的[默认政策](../configure-policy-default.md)包含对部分语言的支持。 若要以用户首选语言向其显示标签，必须提供你的翻译并将 Azure 信息保护策略配置为使用这些翻译。 有关详细信息，请参阅[如何在 Azure 信息保护中配置不同语言的标签](../configure-policy-languages.md)。 视觉标记未翻译，且不支持多种语言。
 
 ## <a name="post-installation-tasks"></a>安装后的任务
 
@@ -196,7 +196,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 手动升级时，只有当要更改安装方法时，才需要先卸载旧版本。 例如，从客户端的可执行文件 (.exe) 版本更改为客户端的 Windows 安装程序 (.msi) 版本。 或当需要安装旧版客户端时。 例如，出于测试目的已安装当前预览版，现在需要还原到当前正式版本。
 
-使用[版本发行历史记录和支持策略](../rms-client/client-version-release-history.md)了解 Azure 信息保护客户端的支持策略、目前支持的版本以及受支持版本的新增功能和变更之处。 
+使用[版本发行历史记录和支持策略](client-version-release-history.md)了解 Azure 信息保护客户端的支持策略、目前支持的版本以及受支持版本的新增功能和变更之处。 
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>升级 Azure 信息保护扫描程序
 

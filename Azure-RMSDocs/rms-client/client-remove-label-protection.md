@@ -4,7 +4,7 @@ description: 说明了如何从由 Azure 信息保护标记的文件中，或从
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2b7973c2f0a0edeeba262d647243bfce643f7f88
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: f74354ea3c588093b4fefcf98ce0b4cbf807aedb
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39372999"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575771"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>用户指南：从由 Azure 信息保护标记的文件和电子邮件中，或从受 Rights Management 保护的文件和电子邮件中，删除标签和保护
 
@@ -78,7 +78,7 @@ ms.locfileid: "39372999"
 - [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
-有关启用“让自定义权限选项可供用户使用”策略设置的配置说明，请参阅[配置 Azure 信息保护策略设置](../deploy-use/configure-policy-settings.md)。
+有关启用“让自定义权限选项可供用户使用”策略设置的配置说明，请参阅[配置 Azure 信息保护策略设置](../configure-policy-settings.md)。
 
-其他配置说明：[配置 Azure 信息保护策略](../deploy-use/configure-policy.md)。
+其他配置说明：[配置 Azure 信息保护策略](../configure-policy.md)。
 

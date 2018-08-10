@@ -13,12 +13,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 01bf7e0e090482a74c8f5e162bb8771cf8ee941b
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 288b945f785f3f12226d48ad7a91aab8a2747c77
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474574"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489342"
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>步骤 5：了解如何在实际操作中共享受保护的文件和如何跟踪文档 
 
@@ -127,4 +127,4 @@ ms.locfileid: "39474574"
 
 尝试共享更多的文档，跟踪文档的使用情况，以及确认文档撤销的方式。
 
-然后你会发现以下一系列操作很有用处：返回到 Azure 门户的“快速入门”页，阅读 Azure 信息保护的一些[常见问题](faqs.md)并浏览一些其他文档文章。 但是，如果已准备好开始为组织部署 Azure 信息保护，那么下一步应为 [Azure 信息保护部署路线图](./plan-design/deployment-roadmap.md)。 
+然后你会发现以下一系列操作很有用处：返回到 Azure 门户的“快速入门”页，阅读 Azure 信息保护的一些[常见问题](faqs.md)并浏览一些其他文档文章。 但是，如果已准备好开始为组织部署 Azure 信息保护，那么下一步应为 [Azure 信息保护部署路线图](deployment-roadmap.md)。 

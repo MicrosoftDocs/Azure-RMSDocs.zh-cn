@@ -13,12 +13,12 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ee408c47572bcdfcbfccc6d193ed432b92c6f4a1
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 1fccd7712c75ea6f0b45e706377d444b0ae46507
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474764"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489648"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -41,13 +41,13 @@ Microsoft 提供了多个加密技术，使你能够保护数据以满足不同�
 
 Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应为 Azure Rights Management 保护创建自己的本地密钥。 然后将该密钥传输到 Azure Key Vault 中的硬件安全模块 (HSM)，你可在其中继续拥有并管理你的密钥。 若不执行此操作，Azure Rights Management 保护会使用 Azure 中自动为你创建并进行管理的密钥。 这种默认配置称为“Microsoft 管理”而不是“客户管理”（BYOK 选项）。
 
-有关 BYOK 以及是否应为组织选择此密钥拓扑的详细信息，请参阅[规划和实现 Azure 信息保护租户密钥](./plan-design/plan-implement-tenant-key.md)。
+有关 BYOK 以及是否应为组织选择此密钥拓扑的详细信息，请参阅[规划和实现 Azure 信息保护租户密钥](plan-implement-tenant-key.md)。
 
 在 Azure 信息保护的上下文中出现**自留密钥** (HYOK)，则表示少量组织的文档或电子邮件自己无法通过存储在云中的密钥进行保护。 对于这些组织来说，即使使用 BYOK 创建和管理密钥，此限制仍然适用。 此限制通常是由于法规或符合性问题引起的，并且 HYOK 配置应仅应用于“顶级机密”信息，此信息永远不会在组织外部共享、仅会在内部网络中使用，并且无需通过移动设备访问。
 
 对于这些异常（通常需要保护的内容少于所有内容的 10%），组织可使用本地解决方案 Active Directory Rights Management Services 创建保留在本地的密钥。 通过此解决方案，计算机可从云中获取其 Azure 信息保护策略，但可使用本地密钥来保护此标识的内容。
 
-若要深入了解 HYOK 并确保你了解其局限性和限制及使用指南，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](./deploy-use/configure-adrms-restrictions.md)。
+若要深入了解 HYOK 并确保你了解其局限性和限制及使用指南，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。
 
 ## <a name="can-i-now-use-byok-with-exchange-online"></a>现在我是否可以结合使用 BYOK 和 Exchange Online？
 
@@ -61,7 +61,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 ## <a name="is-there-a-management-pack-or-similar-monitoring-mechanism-for-the-rms-connector"></a>RMS 连接器是否有管理包或类似的监视机制？
 
-虽然 Rights Management 连接器会将信息、警告和错误消息记录到事件日志中，但不提供用于监视这些事件的管理包。 不过，[监视 Azure Rights Management 连接器](./deploy-use/monitor-rms-connector.md)中记录了事件及其说明的列表，并提供更多帮助你采取纠正措施的信息。
+虽然 Rights Management 连接器会将信息、警告和错误消息记录到事件日志中，但不提供用于监视这些事件的管理包。 不过，[监视 Azure Rights Management 连接器](monitor-rms-connector.md)中记录了事件及其说明的列表，并提供更多帮助你采取纠正措施的信息。
 
 ## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators"></a>是否必须是全局管理员才能配置 Azure RMS？我可以委派给其他管理员吗？
 
@@ -71,7 +71,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 自定义模板已移动到 Azure 门户，可以在该门户中继续将其作为模板进行管理，或将其转换为标签。 要创建新模板，请创建新标签并为 Azure RMS 配置数据保护设置。 这会在后台创建一个新模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。
 
-有关 Azure 门户中的模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](./deploy-use/configure-policy-templates.md)。
+有关 Azure 门户中的模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
 ## <a name="ive-protected-a-document-and-now-want-to-change-the-usage-rights-or-add-usersdo-i-need-to-reprotect-the-document"></a>我已保护一个文档，但现在想要更改使用权限或添加用户，是否需要重新保护该文档？
 
@@ -79,22 +79,22 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 - 如果用户在你进行更改之前没有访问过该文档，则更改会在他们打开该文档时立即生效。
 
-- 如果用户已访问过文档，则所做的更改将在他们的[使用许可证](./deploy-use/configure-usage-rights.md#rights-management-use-license)过期时生效。 只有在等不及使用许可证过期时才需要重新保护文档。 重新保护操作会有效地创建一个新的文档版本，并因此为用户创建新的使用许可证。
+- 如果用户已访问过文档，则所做的更改将在他们的[使用许可证](configure-usage-rights.md#rights-management-use-license)过期时生效。 只有在等不及使用许可证过期时才需要重新保护文档。 重新保护操作会有效地创建一个新的文档版本，并因此为用户创建新的使用许可证。
 
-或者，如果已为所需权限配置了一个组，则可更改组成员身份以包含或排除用户，而无需更改标签或模板。 更改生效前可能稍有延迟，因为组成员身份由 Azure Rights Management 服务[缓存](./plan-design/prepare.md#group-membership-caching-by-azure-information-protection)。
+或者，如果已为所需权限配置了一个组，则可更改组成员身份以包含或排除用户，而无需更改标签或模板。 更改生效前可能稍有延迟，因为组成员身份由 Azure Rights Management 服务[缓存](prepare.md#group-membership-caching-by-azure-information-protection)。
 
 如果文档通过自定义权限保护，则无法更改现有文档的权限。 必须再次保护文档，并指定这一新的文档版本所需的所有用户和所有使用权限。 若要重新保护受保护的文档，必须具有“完全控制”使用权限。
 
 提示：要检查文档是受模板保护还是受自定义权限保护，请使用 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet。 如果是自定义权限，则始终能看到访问受限的模板描述，以及运行 [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate) 时不会显示的唯一模板 ID。
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>我对 Exchange 采用混合部署：Exchange Online 上存在一些用户，而其他用户则在 Exchange Server 上。Azure RMS 支持这种部署吗？
-绝对支持，而且很棒的是，用户能够在两种 Exchange 部署上无缝保护并使用受保护的电子邮件和附件。 对于此配置，[激活 Azure RMS](./deploy-use/activate-service.md) 并[启用适用于 Exchange Online 的 IRM](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)，然后[部署并配置适用于 Exchange Server 的 RMS 连接器](./deploy-use/deploy-rms-connector.md)。
+绝对支持，而且很棒的是，用户能够在两种 Exchange 部署上无缝保护并使用受保护的电子邮件和附件。 对于此配置，[激活 Azure RMS](activate-service.md) 并[启用适用于 Exchange Online 的 IRM](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)，然后[部署并配置适用于 Exchange Server 的 RMS 连接器](deploy-rms-connector.md)。
 
 ## <a name="if-i-use-this-protection-for-my-production-environment-is-my-company-then-locked-into-the-solution-or-risk-losing-access-to-content-that-we-protected-with-azure-rms"></a>如果在我的生产环境中使用该保护，那么我的公司是否就只能使用该解决方案？或者是否存在无法访问由 Azure RMS 进行保护的内容的风险？
-不会，你可以始终控制并继续访问数据，即使你决定不再使用 Azure Rights Management 服务也是如此。 有关详细信息，请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](./deploy-use/decommission-deactivate.md)。
+不会，你可以始终控制并继续访问数据，即使你决定不再使用 Azure Rights Management 服务也是如此。 有关详细信息，请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](decommission-deactivate.md)。
 
 ## <a name="can-i-control-which-of-my-users-can-use-azure-rms-to-protect-content"></a>是否可以控制哪些用户能够使用 Azure RMS 来保护内容？
-是的，Azure Rights Management 服务具有针对这一应用场景的用户载入控制。 有关详细信息，请参阅[激活 Azure Rights Management](./deploy-use/activate-service.md) 一文中的[为分阶段部署配置加入控制](./deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)部分。
+是的，Azure Rights Management 服务具有针对这一应用场景的用户载入控制。 有关详细信息，请参阅[激活 Azure Rights Management](activate-service.md) 一文中的[为分阶段部署配置加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)部分。
 
 ## <a name="can-i-prevent-users-from-sharing-protected-documents-with-specific-organizations"></a>是否可以防止用户与特定的组织共享受保护文档？
 在数据保护中使用 Azure Rights Management 服务的最大优势之一在于，它支持企业与企业的协作，同时，无需为每个合作伙伴组织配置显式信任关系，因为 Azure AD 会代你处理好身份验证。
@@ -115,9 +115,9 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>能否将外部用户（公司外部人员）添加到自定义模板？
 
-是。 利用[保护设置](./deploy-use/configure-policy-protection.md)（可在 Azure 门户中配置），可为组织外的用户和组甚至其他组织中的所有用户添加权限。 你可能会发现引用分步示例，[使用 Azure 信息保护保护文档协作](secure-collaboration-documents.md)很有用。 
+是。 利用[保护设置](configure-policy-protection.md)（可在 Azure 门户中配置），可为组织外的用户和组甚至其他组织中的所有用户添加权限。 你可能会发现引用分步示例，[使用 Azure 信息保护保护文档协作](secure-collaboration-documents.md)很有用。 
 
-注意，如果具有 Azure 信息保护标签，必须先将自定义模板转换为标签，然后再在 Azure 门户中配置这些保护设置。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](./deploy-use/configure-policy-templates.md)。
+注意，如果具有 Azure 信息保护标签，必须先将自定义模板转换为标签，然后再在 Azure 门户中配置这些保护设置。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
 此外，也可使用 PowerShell 将外部用户添加到自定义模板和标签。 此配置要求使用权限定义对象（用于更新模板）：
 
@@ -128,7 +128,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
     如果将用户添加到现有模板，除新用户以外，还须在模板中为现有用户定义权限定义对象。 对于此方案，建议查看[示例](/powershell/module/aadrm/set-aadrmtemplateproperty#examples)部分的“示例 3：将新用户和权限添加到自定义模板”，这可帮助你了解相关 cmdlet。
 
 ## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>我可以对 Azure RMS 使用什么类型的组？
-大多数情况下，可以使用具有电子邮件地址的 Azure AD 中的任何组类型。 尽管分配使用权限时此经验法则始终适用，但在管理 Azure Rights Management 服务时存在一些例外。 有关详细信息，请参阅[组帐户 Azure 信息保护要求](./plan-design/prepare.md#azure-information-protection-requirements-for-group-accounts)。
+大多数情况下，可以使用具有电子邮件地址的 Azure AD 中的任何组类型。 尽管分配使用权限时此经验法则始终适用，但在管理 Azure Rights Management 服务时存在一些例外。 有关详细信息，请参阅[组帐户 Azure 信息保护要求](prepare.md#azure-information-protection-requirements-for-group-accounts)。
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>如何向 Gmail 或 Hotmail 帐户发送受保护的电子邮件？
 
@@ -136,7 +136,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 收件人会看见一个登录到他们的 Gmail、Yahoo 或 Microsoft 帐户的选项，然后可以阅读受保护的邮件。 或者，他们可选择一次性密码选项在浏览器中阅读此电子邮件。
 
-若要支持此方案，必须为 Azure Rights Management 服务和 Office 365 邮件加密中的新功能启用 Exchange Online。 有关此配置的详细信息，请参阅 [Exchange Online：IRM 配置](./deploy-use/configure-office365.md#exchange-online-irm-configuration)。
+若要支持此方案，必须为 Azure Rights Management 服务和 Office 365 邮件加密中的新功能启用 Exchange Online。 有关此配置的详细信息，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchange-online-irm-configuration)。
 
 若要详细了解新功能（包括在所有设备上支持所有电子邮件帐户），请参阅以下博客文章：[Announcing new capabilities available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)（宣布在 Office 365 邮件加密中推出新功能）。
 
@@ -174,7 +174,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 ## <a name="how-do-i-configure-one-drive-for-business-in-sharepoint-online-so-that-users-can-safely-share-their-files-with-people-inside-and-outside-the-company"></a>如何在 SharePoint Online 中配置 OneDrive for Business，以便用户可以安全地与公司内外的人员共享他们的文件？
 默认情况下，作为 Office 365 管理员，你不用执行此配置，用户会进行配置。
 
-正如 SharePoint 站点管理员为其拥有的 SharePoint 库启用并配置 IRM 一样，根据 OneDrive for Business 的设计，用户也需要为自己的 OneDrive for Business 库启用并配置 IRM。 不过，你可以使用 PowerShell 为他们执行此类操作。 有关说明，请参阅 [Office 365：客户端和联机服务的配置](./deploy-use/configure-office365.md)一文中的 [SharePoint Online 和 OneDrive for Business：IRM 配置](./deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)部分。
+正如 SharePoint 站点管理员为其拥有的 SharePoint 库启用并配置 IRM 一样，根据 OneDrive for Business 的设计，用户也需要为自己的 OneDrive for Business 库启用并配置 IRM。 不过，你可以使用 PowerShell 为他们执行此类操作。 有关说明，请参阅 [Office 365：客户端和联机服务的配置](configure-office365.md)一文中的 [SharePoint Online 和 OneDrive for Business：IRM 配置](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)部分。
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>对于成功部署，是否有任何提示或窍门？
 
@@ -183,20 +183,20 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 由于 Azure 信息保护支持与任何人安全共享，因此，你完全有理由相信自己的数据保护措施的覆盖面。 但是在配置权限使用限制时请保守一点。 对许多组织而言，最大的业务影响来自于通过将访问权限限制为组织内部人员的方式来防止数据泄露。 当然，你可以根据需要采取粒度级比这高得多的措施 - 例如，防止人员打印、编辑，等等。但是，对于确实需要高级安全性的文档，请将更高粒度级的限制保留为例外措施，并且不要一开始就实施这些限制性更强的使用权限，而是计划采取分阶段的实施方案。
 
 ## <a name="how-do-we-regain-access-to-files-that-were-protected-by-an-employee-who-has-now-left-the-organization"></a>我们如何重新获取对由已离职员工保护的文件的访问权限？
-请使用[超级用户功能](./deploy-use/configure-super-users.md)，对于受租户保护的所有文档和电子邮件，此功能会向授权用户授予完全控制使用权限。 超级用户可始终阅读此受保护的内容，并可根据需要移除保护或针对不同的用户进行重新保护。 根据需要，此相同功能可以让授权服务编写文件索引和检查文件。
+请使用[超级用户功能](configure-super-users.md)，对于受租户保护的所有文档和电子邮件，此功能会向授权用户授予完全控制使用权限。 超级用户可始终阅读此受保护的内容，并可根据需要移除保护或针对不同的用户进行重新保护。 根据需要，此相同功能可以让授权服务编写文件索引和检查文件。
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>在文档跟踪站点中测试吊销时，显式的消息提示人们仍可在 30 天内访问此文档—该时间段是否可配置？
 
-是。 该消息反映了此特定文件的[使用许可证](./deploy-use/configure-usage-rights.md#rights-management-use-license)。
+是。 该消息反映了此特定文件的[使用许可证](configure-usage-rights.md#rights-management-use-license)。
 
 如果撤销文件，仅在用户对 Azure Rights Management 服务进行身份验证时才会强制执行此操作。 因此，如果文件的使用许可证有效期为 30 天，且用户已经打开过文档，则该用户在使用许可证期间仍继续拥有该文档的访问权限。 使用许可证过期时，用户必须重新进行身份验证，此时由于文件被撤销，因此会拒绝用户访问。
 
-保护文档的用户，即 [Rights Management 颁发者](./deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)不受此撤销的限制，始终能够访问其文档。
+保护文档的用户，即 [Rights Management 颁发者](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)不受此撤销的限制，始终能够访问其文档。
 
-租户使用许可证有效期的默认值为 30 天，此设置可通过标签或模板中限制性更强的设置进行替代。 若要详细了解使用许可证以及如何对其进行配置，请参阅 [ 使用许可证](./deploy-use/configure-usage-rights.md#rights-management-use-license)文档。
+租户使用许可证有效期的默认值为 30 天，此设置可通过标签或模板中限制性更强的设置进行替代。 若要详细了解使用许可证以及如何对其进行配置，请参阅 [ 使用许可证](configure-usage-rights.md#rights-management-use-license)文档。
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>Rights Management 可以防止屏幕截图吗？
-通过不授予复制[使用权限](./deploy-use/configure-usage-rights.md)，Rights Management 可以阻止许多常用屏幕捕获工具在 Windows 平台（Windows 7、Windows 8.1、Windows 10、Windows Phone）和 Android 上进行屏幕捕获。 但是，iOS 和 Mac 设备不允许任何应用阻止屏幕捕获，而浏览器（例如，与 Outlook Web App 和 Office Online 一起使用时）也不能阻止屏幕捕获。
+通过不授予复制[使用权限](configure-usage-rights.md)，Rights Management 可以阻止许多常用屏幕捕获工具在 Windows 平台（Windows 7、Windows 8.1、Windows 10、Windows Phone）和 Android 上进行屏幕捕获。 但是，iOS 和 Mac 设备不允许任何应用阻止屏幕捕获，而浏览器（例如，与 Outlook Web App 和 Office Online 一起使用时）也不能阻止屏幕捕获。
 
 阻止屏幕捕获可帮助避免意外或疏忽披露机密或敏感信息。 不过，用户可以通过多种方式来共享显示在屏幕上的数据，进行屏幕截图只是其中一种方法。 例如，如果想要共享所显示的信息，用户可以使用带相机的手机拍照，可以重新键入相关数据，还可以直接通过口头方式将其传达给某人。
 
@@ -204,5 +204,5 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 ## <a name="whats-the-difference-between-a-user-protecting-an-email-with-do-not-forward-and-a-template-that-doesnt-include-the-forward-right"></a>用户通过“不得转发”和不包括“转发”权限的模板来保护电子邮件有什么区别？
 
-除名称和外观外，“不转发”既不是“转发”权限的相反权限，也不是模板。 它实际上是一组权限，包括限制复制、打印和保存附件以及限制转发电子邮件。 这些权限通过所选收件人动态应用于用户，而不由管理员静态分配。 有关详细信息，请参阅[为 Azure Rights Management 配置使用权限](./deploy-use/configure-usage-rights.md)中的[电子邮件的“不得转发”选项](./deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)部分。
+除名称和外观外，“不转发”既不是“转发”权限的相反权限，也不是模板。 它实际上是一组权限，包括限制复制、打印和保存附件以及限制转发电子邮件。 这些权限通过所选收件人动态应用于用户，而不由管理员静态分配。 有关详细信息，请参阅[为 Azure Rights Management 配置使用权限](configure-usage-rights.md)中的[电子邮件的“不得转发”选项](configure-usage-rights.md#do-not-forward-option-for-emails)部分。
 

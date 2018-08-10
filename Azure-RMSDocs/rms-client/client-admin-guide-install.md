@@ -4,7 +4,7 @@ description: 面向管理员的说明和信息，介绍如何在企业网络中�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: af9cfca4d328dba7646c1c319744476fe0e6b43f
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 5c162b1a25332c977d2c4976338854904abfcc54
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474165"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575543"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -117,7 +117,7 @@ ms.locfileid: "39474165"
 
     - 如果计算机运行的是 Office 2010，请重新启动计算机。 
         
-        如果未使用 ServiceLocation 参数安装客户端，首次打开一个使用 Azure 信息保护栏的 Office 应用程序（如 Word）时，必须确认是否有任何要求首次使用时更新注册表的提示。 利用[服务发现](../rms-client/client-deployment-notes.md#rms-service-discovery)功能填充注册表项。 
+        如果未使用 ServiceLocation 参数安装客户端，首次打开一个使用 Azure 信息保护栏的 Office 应用程序（如 Word）时，必须确认是否有任何要求首次使用时更新注册表的提示。 利用[服务发现](client-deployment-notes.md#rms-service-discovery)功能填充注册表项。 
     
     - 对于其他版本的 Office，请重启任一 Office 应用程序和文件管理器的所有实例。 
         
@@ -147,7 +147,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 1. 对于 PowerShell 会话，请先运行 [Connect-AadrmService](https://docs.microsoft.com/powershell/aadrm/vlatest/connect-aadrmservice)，并指定要连接到 Azure 权限管理服务的管理员凭据。 然后运行 [Get-AadrmConfiguration](https://docs.microsoft.com/powershell/aadrm/vlatest/get-aadrmconfiguration)。 
  
-    如果尚未安装适用于 Azure Rights Management 服务的 PowerShell 模块，请参阅[安装 AADRM PowerShell 模块](../deploy-use/install-powershell.md)。
+    如果尚未安装适用于 Azure Rights Management 服务的 PowerShell 模块，请参阅[安装 AADRM PowerShell 模块](../install-powershell.md)。
 
 2. 在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
 
@@ -202,7 +202,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 Azure 信息保护客户端包括的 PowerShell 模块具有用于安装和配置扫描程序的 cmdlet。 但是，要使用扫描程序，必须安装完整版本的客户端，而不能仅安装 PowerShell 模块。
 
-要安装客户端以获取扫描程序，请按照前面部分中的相同说明进行操作。 然后，即可安装扫描程序。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-use/deploy-aip-scanner.md)。
+要安装客户端以获取扫描程序，请按照前面部分中的相同说明进行操作。 然后，即可安装扫描程序。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-aip-scanner.md)。
 
 ## <a name="next-steps"></a>后续步骤
 现在你已安装 Azure 信息保护客户端，若要了解支持此客户端所需的其他信息，请参阅以下内容：

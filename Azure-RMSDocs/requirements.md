@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f126fe6b76a0d637e202d86bde9f257561c5a72e
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 98c4f32e0964b736c16d28ada37a1d59ee565d41
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474684"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489359"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -56,7 +56,7 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 有关身份验证要求的详细信息，请参阅 [Azure 信息保护的 Azure Active Directory 要求](requirements-azure-ad.md)。 
 
-有关对用户和组帐户进行授权的要求的详细信息，请参阅[准备用户和组以便使用 Azure 信息保护](./plan-design/prepare.md)。
+有关对用户和组帐户进行授权的要求的详细信息，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
 
 ## <a name="client-devices"></a>客户端设备
 
@@ -142,11 +142,11 @@ Azure 信息保护客户端不支持同一台计算机上的多个 Office 版本
 
 ### <a name="coexistence-of-ad-rms-with-azure-rms"></a>AD RMS 和 Azure RMS 共存
 
-不支持以下部署方案，除非将 AD RMS for [HYOK 保护](./deploy-use/configure-adrms-restrictions.md)与 Azure 信息保护配合使用（“自留密钥”配置）：
+不支持以下部署方案，除非将 AD RMS for [HYOK 保护](configure-adrms-restrictions.md)与 Azure 信息保护配合使用（“自留密钥”配置）：
 
-- 在同一个组织中并行运行 AD RMS 和 Azure RMS，除非是在迁移过程中，如[从 AD RMS 迁移到 Azure 信息保护](./plan-design/migrate-from-ad-rms-to-azure-rms.md)所述。
+- 在同一个组织中并行运行 AD RMS 和 Azure RMS，除非是在迁移过程中，如[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)所述。
 
-支持[从 AD RMS 到 Azure 信息保护](http://technet.microsoft.com/library/Dn858447.aspx)和[从 Azure 信息保护到 AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl) 的迁移路径。 如果你部署 Azure 信息保护，然后决定不再想要使用此云服务，请参阅[解除 Azure 信息保护授权和停用 Azure 信息保护](./deploy-use/decommission-deactivate.md)。
+支持[从 AD RMS 到 Azure 信息保护](http://technet.microsoft.com/library/Dn858447.aspx)和[从 Azure 信息保护到 AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl) 的迁移路径。 如果你部署 Azure 信息保护，然后决定不再想要使用此云服务，请参阅[解除 Azure 信息保护授权和停用 Azure 信息保护](decommission-deactivate.md)。
 
 
 

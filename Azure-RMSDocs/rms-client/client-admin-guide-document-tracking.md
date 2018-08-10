@@ -4,7 +4,7 @@ description: 管理员配置和使用 Azure 信息保护的文档跟踪的说明
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8153b189a6e4f77e2a4c1f7d630fbb2f32b667f1
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 00e044274f27409b39c06b4e6cbd2beaa58eb8f2
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39373730"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575424"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>管理员指南：配置和使用 Azure 信息保护的文档跟踪
 
@@ -27,7 +27,7 @@ ms.locfileid: "39373730"
 
 ## <a name="using-powershell-to-manage-the-document-tracking-site"></a>使用 PowerShell 管理文档跟踪站点
 
-以下各节包含有关如何使用 PowerShell 管理文档跟踪站点的信息。 有关 PowerShell 模块的安装说明，请参阅[安装 AADRM PowerShell 模块](../deploy-use/install-powershell.md)。 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号：`(Get-Module aadrm –ListAvailable).Version`
+以下各节包含有关如何使用 PowerShell 管理文档跟踪站点的信息。 有关 PowerShell 模块的安装说明，请参阅[安装 AADRM PowerShell 模块](../install-powershell.md)。 如果你以前已下载并安装过该模块，请通过运行以下命令检查版本号：`(Get-Module aadrm –ListAvailable).Version`
 
 有关每个 cmdlet 的详细信息，请使用提供的链接。
 
@@ -108,7 +108,7 @@ ms.locfileid: "39373730"
 此外，还有记录用户和管理员如何使用文档跟踪站点的请求类型。 例如，**RevokeAccess** 是用户或代表用户的管理员已撤销文档跟踪站点中的文档时的请求类型。 通过将此请求类型与 AdminAction 字段结合使用，可确定是用户撤销了自己的文档（AdminAction 字段为空），还是管理员代表用户撤销了文档（AdminAction 为 true）。
 
 
-有关使用情况日志记录的详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../deploy-use/log-analyze-usage.md)
+有关使用情况日志记录的详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../log-analyze-usage.md)
 
 
 

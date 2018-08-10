@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 751f1a5bf2728a848bd450ce1081a15ea1e35456
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 571545905a0fac6bb1ea9b80c351b96f9f70899b
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39376531"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489437"
 ---
 # <a name="rms-client-deployment-notes"></a>RMS 客户端部署说明
 
@@ -158,7 +158,7 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 
 1. **本地计算机上的 Windows 注册表**：如果注册表中配置了服务发现设置，则先尝试这些设置。 
 
-    默认情况下，不会在注册表中配置这些设置，但管理员可以按[下一部分](#enabling-client-side-service-discovery-by-using-the-windows-registry)所述为 AD RMS 配置它们。 管理员通常在从 AD RMS 到 Azure 信息保护的[迁移过程](../plan-design/migrate-from-ad-rms-phase2.md)中为 Azure 权限管理服务配置这些设置。
+    默认情况下，不会在注册表中配置这些设置，但管理员可以按[下一部分](#enabling-client-side-service-discovery-by-using-the-windows-registry)所述为 AD RMS 配置它们。 管理员通常在从 AD RMS 到 Azure 信息保护的[迁移过程](../migrate-from-ad-rms-phase2.md)中为 Azure 权限管理服务配置这些设置。
 
 2. **Active Directory 域服务**：已加入域的计算机将在 Active Directory 中查询服务连接点 (SCP)。 
 
@@ -181,7 +181,7 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 >  
 > - 当用户从 Office 应用程序启动登录时，将使用进行身份验证所用的用户名（和域）来标识要使用的 Azure 信息保护租户。 在这种情况下，不需要注册表设置，也不会检查 SCP。
 > 
-> - 为 Office 2016 即点即用桌面应用配置 [DNS 重定向](../plan-design/migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)后，RMS 客户端可通过拒绝访问以前发现的 AD RMS 群集，查找 Azure Rights Management 服务。 此拒绝操作会触发客户端查找 SRV 记录，将客户端重定向到租户的 Azure Rights Management 服务。 此 SRV 记录还允许 Exchange Online 解密受 AD RMS 群集保护的电子邮件。 
+> - 为 Office 2016 即点即用桌面应用配置 [DNS 重定向](../migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)后，RMS 客户端可通过拒绝访问以前发现的 AD RMS 群集，查找 Azure Rights Management 服务。 此拒绝操作会触发客户端查找 SRV 记录，将客户端重定向到租户的 Azure Rights Management 服务。 此 SRV 记录还允许 Exchange Online 解密受 AD RMS 群集保护的电子邮件。 
 
 ### <a name="ad-rms-only-enabling-server-side-service-discovery-by-using-active-directory"></a>仅限 AD RMS：使用 Active Directory 启用服务器端服务发现
 如果你的帐户拥有足够的权限（AD RMS 服务器的企业管理员和本地管理员），则可以在安装 AD RMS 根群集服务器时自动注册服务连接点 (SCP)。 如果 SCP 已存在于林中，则必须先删除现有的 SCP，然后才能注册新的 SCP。

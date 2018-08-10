@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 772b6a27dd1e3b9a3f6f36df55793ce105736284
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: d3daeefc4053cbe4cd7740a7cd3ad07c94c63c08
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475004"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488720"
 ---
 # <a name="how-file-servers-that-run-windows-server-and-use-file-classification-infrastructure-fci-support-azure-rights-management"></a>运行 Windows Server 和使用文件分类基础结构 (FCI) 的文件服务器如何支持 Azure 权限管理
 
@@ -30,7 +30,7 @@ ms.locfileid: "39475004"
 
 分类策略是完全可以配置的，并且具有高度的可扩展性，因此你可以防止未授权和已授权用户可能发生的数据泄漏。 它甚至有助于降低网络管理员的数据泄漏风险，因为你可以配置不要求这些管理员具有文件访问权限的策略。
 
-有关为 Office 文件部署和配置 RMS 连接器的说明，请参阅[部署 Azure Rights Management 连接器](./deploy-use/deploy-rms-connector.md)。
+有关为 Office 文件部署和配置 RMS 连接器的说明，请参阅[部署 Azure Rights Management 连接器](deploy-rms-connector.md)。
 
 有关针对所有文件类型使用 Windows PowerShell 脚本的说明，请参阅[使用 Windows Server 文件分类基础结构 &#40;FCI&#41; 的 RMS 保护](./rms-client/configure-fci.md)。
 
