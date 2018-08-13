@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 61762157ff6419bb325d92470d5264dc9b55f840
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 1c41e1e6622dc76a2a2afe68a48d0761573ccf06
+ms.sourcegitcommit: 6eab0086306a4e12cbcf7d8578cb5fd42abe1e66
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474209"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020594"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -52,7 +52,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **新增功能**： 
 
-- 支持新的敏感信息类型，可帮助对包含个人信息的文档进行分类。 [详细信息](../deploy-use/configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
+- 支持新的敏感信息类型，可帮助对包含个人信息的文档进行分类。 [详细信息](../configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
 
 - 对 Word、Excel 和 PowerPoint 文件中“Strict Open XML 文档”格式的标签支持。 有关 Open XML 格式的详细信息，请参阅 Office 博客文章[新 Office 中的新文件格式选项](https://www.microsoft.com/en-us/microsoft-365/blog/2012/08/13/new-file-format-options-in-the-new-office/)。 
 
@@ -92,7 +92,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     
     - Schedule 参数的值不再为“OneTime”、“Continuous”和“Never”，而是“Manual”和“Always”。
         
-    - Type 参数已删除，因此在运行 [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration) 时也会从输出中删除该参数。
+    - Type 参数已删除，因此在运行 [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration) 时也会从输出中删除该参数。 默认情况下，在首个扫描周期后，只检查新文件或经过修改的文件。 如果之前为了重新扫描所有文件将 Type 参数设置为 Full，现在使用 Reset 参数运行 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)。 另外，还必须为扫描程序配置人工计划，这就需要使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) 将 Schedule 参数设置为 Manual。
     
 - 对于扫描程序，默认排除列表现在包括 .rtf 文件。 [详细信息](client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner)
 
@@ -109,7 +109,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 对于 Outlook 版本 16.0.9324.1000 及更高版本（即点即用），Azure 信息保护栏支持最新监视器显示选项，旧选项可能会导致栏显示在 Outlook 应用程序外面。
 
-- [按 Office 应用程序类型](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)配置的视觉标记现在替换 Azure 信息保护标签应用的旧页眉或页脚。
+- [按 Office 应用程序类型](../configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)配置的视觉标记现在替换 Azure 信息保护标签应用的旧页眉或页脚。
 
 - 如果 Excel 文件已有标签，当标签应用视觉标记时，新工作表现在也应用标签的视觉标记。
 
@@ -133,7 +133,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     
     - 默认情况下，只有 Office 文档类型会受到保护。 在注册表中定义其他文件类型时它们可以受到保护。 有关说明，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。
     
-    - 默认情况下，扫描程序现以低完整性级别运行以获得更高安全性，以防你使用具有特权的帐户运行扫描程序。 当运行扫描程序的服务帐户只在[扫描程序先决条件](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)中记录了权限时，低完整性级别不是必需的且不推荐使用，因为它会对性能产生负面影响。 你可以使用高级客户端设置禁用低完整性级别。 [详细信息](../rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
+    - 默认情况下，扫描程序现以低完整性级别运行以获得更高安全性，以防你使用具有特权的帐户运行扫描程序。 当运行扫描程序的服务帐户只在[扫描程序先决条件](../deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)中记录了权限时，低完整性级别不是必需的且不推荐使用，因为它会对性能产生负面影响。 你可以使用高级客户端设置禁用低完整性级别。 [详细信息](client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
     
 - 对于 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/Get-AIPFileStatus)，输出现在包括 Rights Management 所有者和 Rights Management 颁发者以及内容受保护日期。
  
@@ -157,11 +157,11 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **新增功能**：
 
-- Azure 信息保护扫描程序：客户端附带的 PowerShell 模块包含新的 cmdlet，用于安装和配置扫描程序，以便可以发现本地数据存储上的文件并对其进行分类和保护。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-use/deploy-aip-scanner.md)。 
+- Azure 信息保护扫描程序：客户端附带的 PowerShell 模块包含新的 cmdlet，用于安装和配置扫描程序，以便可以发现本地数据存储上的文件并对其进行分类和保护。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-aip-scanner.md)。 
 
-- 现在可以通过在文本字符串中使用“If.App”变量语句并标识应用程序类型为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记。 [详细信息](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
+- 现在可以通过在文本字符串中使用“If.App”变量语句并标识应用程序类型为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记。 [更多信息]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
-- 支持[策略设置](../deploy-use/configure-policy-settings.md)“在 Office 应用中显示“信息保护”栏”。 此设置已关闭时，用户可以通过功能区上的“保护”按钮选择标签。
+- 支持[策略设置](../configure-policy-settings.md)“在 Office 应用中显示“信息保护”栏”。 此设置已关闭时，用户可以通过功能区上的“保护”按钮选择标签。
 
 - 一个新的高级客户端设置（仍处于预览阶段），可以用于开启分类在后台继续运行。 在启用此设置时，对于 Office 应用，自动和建议分类持续在后台运行，而不是在保存文档时运行。 通过此行为更改，现在可以为存储在 SharePoint Online 中的文档应用自动和建议的分类。 [详细信息](client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)
 
@@ -169,7 +169,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 对于 Office 应用，当你指定自定义权限时，现在可以通过“通讯簿”图标浏览并选择用户。 使用文件资源管理器指定自定义权限时，此选项会将奇偶校验带到用户体验。
 
-- 对于使用 PowerShell 但无法被授予**本地登录**权限的服务帐户，支持完全非交互式身份验证方法。 此身份验证方法需要对 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/Set-AIPAuthentication) 使用新的 *Token* 参数，并将 PowerShell 脚本作为任务运行。 [详细信息](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)
+- 对于使用 PowerShell 但无法被授予**本地登录**权限的服务帐户，支持完全非交互式身份验证方法。 此身份验证方法需要对 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/Set-AIPAuthentication) 使用新的 *Token* 参数，并将 PowerShell 脚本作为任务运行。 [详细信息](client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)
 
 - [Set-RMSServerAuthentication](/powershell/module/azureinformationprotection/set-rmsserverauthentication) 的新参数 *IntegratedAuth*。 此参数支持 AD RMS 的服务器模式，AD RMS 需要处于该模式才能支持 Windows Server FCI。
 
@@ -225,11 +225,11 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **新增功能**：
 
-- 支持可为标签配置的新 Office 365 DLP 条件。 有关详细信息，请参阅[为 Azure 信息保护标签配置条件](../deploy-use/configure-policy-classification.md)。
+- 支持可为标签配置的新 Office 365 DLP 条件。 有关详细信息，请参阅[为 Azure 信息保护标签配置条件](../configure-policy-classification.md)。
 
-- 支持为用户定义的操作配置的标签。 对于 Outlook，此标签自动应用 Outlook 的“不要转发”选项。 对于 Word、Excel、PowerPoint 和文件资源管理器，此标签提示用户指定自定义权限。 有关详细信息，请参阅[配置 Azure 信息保护标签以进行保护](../deploy-use/configure-policy-protection.md)。
+- 支持为用户定义的操作配置的标签。 对于 Outlook，此标签自动应用 Outlook 的“不要转发”选项。 对于 Word、Excel、PowerPoint 和文件资源管理器，此标签提示用户指定自定义权限。 有关详细信息，请参阅[配置 Azure 信息保护标签以进行保护](../configure-policy-protection.md)。
 
-- 标签支持多种语言。 自 2017 年 8 月 30 日起，[默认策略](../deploy-use/configure-policy-default.md)支持此版本客户端向用户显示的多种语言。 用户若要查看此日期前默认策略首选语言中的标签以及配置的标签，请参阅[如何在 Azure 信息保护中配置不同语言的标签](../deploy-use/configure-policy-languages.md)。
+- 标签支持多种语言。 自 2017 年 8 月 30 日起，[默认策略](../configure-policy-default.md)支持此版本客户端向用户显示的多种语言。 在此日期前用户若要查看默认策略中的首选语言标签以及配置的标签，请参阅[如何在 Azure 信息保护中配置不同语言的标签]configure-policy-languages.md)。
 
 - 除了在“信息保护”栏上显示外，Office 功能区上的“保护”按钮也会显示标签。 
 
@@ -237,15 +237,15 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 支持用户在 Azure 门户中配置的高级客户端配置。 这些配置包括：
     
-    - [在 Outlook 中隐藏或显示“不转发”按钮](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
+    - [在 Outlook 中隐藏或显示“不转发”按钮](client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
     
-    - [设置用户是否能够使用自定义权限选项](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
+    - [设置用户是否能够使用自定义权限选项](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
     
-    - [永久隐藏 Azure 信息保护栏](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
+    - [永久隐藏 Azure 信息保护栏](client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
     
-    - [在 Outlook 中启用建议的分类](../rms-client/client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
+    - [在 Outlook 中启用建议的分类](client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
 
-- 对于 PowerShell，支持通过使用新的PowerShell cmdlet、[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 和 [Clear-AIPAuthentication](/powershell/module/azureinformationprotection/clear-aipauthentication)，以非交互式方式标记文件。 有关如何使用这些 cmdlet 的详细信息，请参阅管理员指南的 [PowerShell 部分](../rms-client/client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
+- 对于 PowerShell，支持通过使用新的PowerShell cmdlet、[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 和 [Clear-AIPAuthentication](/powershell/module/azureinformationprotection/clear-aipauthentication)，以非交互式方式标记文件。 有关如何使用这些 cmdlet 的详细信息，请参阅管理员指南的 [PowerShell 部分](client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
 
 - 对于 PowerShell cmdlet、[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 和 [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)，新参数为：Owner 和 PreserveFileDetails。 这些参数允许用户为 Owner 自定义属性指定电子邮件地址，并使标记的文档的日期保持不变。
 
@@ -259,7 +259,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 支持标记和保护存储在 SharePoint Server 上的文件。
 
-- 水印现在支持多行。 此外，视觉标记现在[仅在第一次保存时](../deploy-use/configure-policy-markings.md#when-visual-markings-are-applied)（而不是每次保存文档时）应用于文档。
+- 水印现在支持多行。 此外，视觉标记现在[仅在第一次文档保存时]configure-policy-markings.md#when-visual-markings-are-applied)应用于文档，而不是每次文档保存都应用。
 
 - “帮助和反馈”对话框中的“运行诊断”选项被替换为“重置设置”。 此操作的行为已更改为包括注销用户和删除 Azure 信息保护策略。 有关详细信息，请参阅管理员指南中的[有关“重置设置”选项的详细信息](..\rms-client\client-admin-guide.md#more-information-about-the-reset-settings-option)。
 

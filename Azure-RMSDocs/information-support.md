@@ -1,10 +1,10 @@
 ---
-title: Azure 信息保护的管理信息和支持
+title: Azure 信息保护的信息和支持
 description: 管理员资源，其中包括有关新版本、支持选项以及如何与 Microsoft 联系以报告问题的信息。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/31/2018
+ms.date: 08/06/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 427f758dd541c111f5a5554221983f10072b6ffd
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 0b0c83e987ad2fa1e6e8638970e2f4450024997a
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474674"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575526"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -27,15 +27,15 @@ ms.locfileid: "39474674"
 
 |要执行的操作…|...执行此操作：|
 |----------------|---------------|
-|请参阅最常使用的文档|阅读前 5 页：<br /><br /> - [什么是 Azure 信息保护？](./what-is-information-protection.md)<br /> - [为用户安装 Azure 信息保护客户端](./rms-client/client-admin-guide-install.md)<br />- [Azure 信息保护的要求](requirements.md) <br />- [部署 Azure 信息保护扫描程序](./deploy-use/deploy-aip-scanner.md)<br />- [默认 Azure 信息保护策略](./deploy-use/configure-policy-default.md)|
-|与产品团队和同行沟通|访问 Azure 信息保护的 [Yammer 网站](https://www.yammer.com/AskIPTeam)。|
-|请求新功能或更改功能|请访问适用于 Azure 信息保护的 [UserVoice](https://msip.uservoice.com) 网站，并使用公司电子邮件地址登录。|
-|接收来自产品组的推文|在 Twitter 上关注 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)。|
+|了解新版本和即将发布的版本|请参阅本页面上的[了解新版本和更新](#information-about-new-releases-and-updates)部分。|
+|获取产品帮助|请参阅本页面上的[支持选项和社区资源](#support-options-and-community-resources)部分。|
 |检查订阅信息和支持的功能|请利用 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)页面上的订阅信息和功能列表。|
-
+|请求新功能或更改功能|请访问适用于 Azure 信息保护的 [UserVoice](https://msip.uservoice.com) 网站，并使用公司电子邮件地址登录。|
+|与产品团队和同行沟通|访问 Azure 信息保护的 [Yammer 网站](https://www.yammer.com/AskIPTeam)。|
+|了解 Azure 信息保护专用术语|请在[术语](terminology.md)页上搜索术语或缩写。|
 
 ## <a name="information-about-new-releases-and-updates"></a>有关新版本和更新的信息
-Azure 信息保护产品团队向[企业移动性和安全性博客](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection)发送关于新版本和更新的公告。 这些博客文章可为产品文档和技术支持信息提供补充。
+Azure 信息保护产品团队在[企业移动性 + 安全性博客](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection)上发布主要新版本的公告。 次要版本的公告发布在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上。还可以查看 [UserVoice 网站](https://msip.uservoice.com)，了解请求获取的功能的状态。
 
 此外，[Azure 信息保护技术博客](https://aka.ms/AIPblog)每个月都会发布文档更改摘要。 这些文档更新包括新版本信息、支持声明更新以及对现有版本的更正和说明。 这些文章的标题为：“\<月份/年份> 的 Azure 信息保护文档更新”。
 
@@ -76,9 +76,9 @@ Azure 信息保护产品团队向[企业移动性和安全性博客](https://clo
 
 - 如果对 Azure 信息保护的支持声明有疑问：请参阅定期更新的[要求](requirements.md)信息。
 
-- 有关如何为正在配置使用 Azure 信息保护的服务和应用程序的最终用户、支持人员和管理员提供支持的信息：请参阅[帮助用户保护文件](./deploy-use/help-users.md)。
+- 若要了解如何为要配置使用 Azure 信息保护服务的服务和应用程序的最终用户、支持人员和管理员提供支持，请参阅[帮助用户保护文件](help-users.md)。
 
-- 如果为本地服务器部署了 Rights Management 连接器：请参阅[监视](./deploy-use/monitor-rms-connector.md)信息，其中包括有关事件日志条目、性能计数器和日志记录的详细信息。
+- 如果为本地服务器部署了 Rights Management 连接器：请参阅[监视](monitor-rms-connector.md)信息，其中包括有关事件日志条目、性能计数器和日志记录的详细信息。
 
 - 有关 Windows 的 Azure 信息保护客户端：请参阅管理员指南中的[安装检查和疑难解答](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)部分，并检查当前使用的版本是否是[受支持的版本](./rms-client/client-version-release-history.md#servicing-information-and-timelines)。
 

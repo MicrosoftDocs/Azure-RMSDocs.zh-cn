@@ -4,18 +4,18 @@ description: Azure 信息保护服务概述。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/23/2018
+ms.date: 08/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 9031309c7fbc109d23ea3ddba6fe97dc6db8c00d
-ms.sourcegitcommit: cf930d768536980b7754f7992f604aa99548ee73
+ms.openlocfilehash: 11ac7ab7a1c1b55811f2f62b426dceedfa9c4874
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39476952"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489393"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -106,7 +106,7 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 对于你的本地数据存储，请使用 Azure 信息保护扫描程序，以发现本地文件夹、网络共享以及 SharePoint Server 站点和库中的文档，并对其进行分类和保护。 扫描程序在 SharePoint Server 上将作为服务运行。 可在策略中使用同一规则，以检测敏感信息，并向文档应用特定标签。 或者，也可以向数据存储库中的所有文档应用默认标签，无需检查文件内容。 此外，也可以仅在报告模式下使用扫描程序，以帮助你发现可能不知道的敏感信息。 
 
-有关部署和使用扫描程序的详细信息，请参阅[部署 Azure 信息保护扫描程序，以自动对文件进行分类和保护](./deploy-use/deploy-rms-connector.md)。
+有关部署和使用扫描程序的详细信息，请参阅[部署 Azure 信息保护扫描程序，以自动对文件进行分类和保护](deploy-rms-connector.md)。
 
 对于你的云数据存储，请使用 Microsoft Cloud App Security，将你的标签应用于 Box、SharePoint Online 和 OneDrive for Business 中的文档。 有关详细信息，请参阅[自动应用 Azure 信息保护分类标签](/cloud-app-security/use-case-information-protection)和 [Azure 信息保护集成](/cloud-app-security/azip-integration)。
 
@@ -125,8 +125,11 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 - Yammer：[Azure 信息保护](https://www.yammer.com/AskIPTeam)
 
+其他资源：[Azure 信息保护的信息和支持](information-support.md)
 
-此外，Microsoft Ignite 2017 具有针对 Azure 信息保护按需提供的许多会话。 有关该会议公告的摘要，请参阅 [What’s new in Azure Information Protection @ Ignite 2017](https://cloudblogs.microsoft.com/ENTERPRISEMOBILITY/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)（Azure 信息保护中的新增功能 @ Ignite 2017）。 
+### <a name="microsoft-ignite"></a>Microsoft Ignite
+
+Microsoft Ignite 2017 有许多按需提供的 Azure 信息保护会话。 有关该会议公告的摘要，请参阅 [What’s new in Azure Information Protection @ Ignite 2017](https://cloudblogs.microsoft.com/ENTERPRISEMOBILITY/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)（Azure 信息保护中的新增功能 @ Ignite 2017）。 
 
 可以前往 Ignite 网站[搜索并查找](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522)标记有 Azure 信息保护的会话。 但建议从以下会话开始：
 
@@ -145,7 +148,7 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 阅读博客文章 [Azure Information Protection: Ready, set, protect!](https://cloudblogs.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/)（Azure 信息保护：准备、设置、保护！）
 
-可通过观看我们的 5 步骤[快速入门教程](infoprotect-quick-start-tutorial.md)，配置和使用 Azure 信息保护。 或如果已准备好为组织部署此服务，请参阅 [Azure 信息保护部署路线图](./plan-design/deployment-roadmap.md)。
+可通过观看我们的 5 步骤[快速入门教程](infoprotect-quick-start-tutorial.md)，配置和使用 Azure 信息保护。 或如果已准备好为组织部署此服务，请参阅 [Azure 信息保护部署路线图](deployment-roadmap.md)。
 
 或许你是通过其他名称了解的 Azure 信息保护？ 请参阅[该服务的替代术语列表](aka.md)。
 

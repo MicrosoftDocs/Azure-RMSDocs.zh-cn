@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7bc9e67ae029cedc734f3060fe43f62367a805ba
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 2008a40e03e502c4dad85826d957434b218b151e
+ms.sourcegitcommit: 1eddd81dc659ffa38872b81a1bf4b5f69f71c30e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371486"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39631565"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -29,7 +29,7 @@ ms.locfileid: "39371486"
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>在门户中配置高级客户端配置设置的具体步骤
 
-1. 如果尚未这样做，请在新的浏览器窗口中[登录到 Azure 门户](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal)，然后导航到“Azure 信息保护”边栏选项卡。
+1. 如果尚未这样做，请在新的浏览器窗口中[登录到 Azure 门户](../configure-policy.md#signing-in-to-the-azure-portal)，然后导航到“Azure 信息保护”边栏选项卡。
 
 2. 从“分类” > “标签”菜单选项：选择“策略”。
 
@@ -51,7 +51,7 @@ ms.locfileid: "39371486"
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-无论此设置如何，Azure 信息保护客户端遵循标准的 [RMS 服务发现进程](../rms-client/client-deployment-notes.md#rms-service-discovery)，查找其 AD RMS 群集。
+无论此设置如何，Azure 信息保护客户端遵循标准的 [RMS 服务发现进程](client-deployment-notes.md#rms-service-discovery)，查找其 AD RMS 群集。
 
 ## <a name="sign-in-as-a-different-user"></a>以其他用户身份登录
 
@@ -78,7 +78,7 @@ ms.locfileid: "39371486"
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>如果组织拥有组合许可证，则强制执行仅保护模式
 
-如果组织不具有任何 Azure 信息保护许可证，但有包含用于数据保护的 Azure 权限管理服务的 Office 365 许可证，则用于 Windows 的 Azure 信息保护客户端会自动在[仅保护模式](../rms-client/client-protection-only-mode.md)下运行。
+如果组织不具有任何 Azure 信息保护许可证，但有包含用于数据保护的 Azure 权限管理服务的 Office 365 许可证，则用于 Windows 的 Azure 信息保护客户端会自动在[仅保护模式](client-protection-only-mode.md)下运行。
 
 但是，如果贵组织已订阅 Azure 信息保护，默认情况下所有 Windows 计算机都可以下载 Azure 信息保护策略。 Azure 信息保护客户端不会进行许可证检查以及强制执行。 
 
@@ -104,9 +104,9 @@ ms.locfileid: "39371486"
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-确保客户端在 %LocalAppData%\Microsoft\MSIP 文件夹中具有一个名为 Policy.msip 的有效策略文件。 如有必要，可以从 Azure 门户中导出全局策略或范围内策略，并将导出的文件复制到客户端计算机。 此外，还可以使用此方法，将已过时的策略文件替换为已发布的最新策略。 不过，如果用户属于多个范围内策略，就不支持导出策略。
+确保客户端在 %LocalAppData%\Microsoft\MSIP 文件夹中具有一个名为 Policy.msip 的有效策略文件。 如有必要，可以从 Azure 门户中导出全局策略或范围内策略，并将导出的文件复制到客户端计算机。 此外，还可以使用此方法，将已过时的策略文件替换为已发布的最新策略。 不过，如果用户属于多个范围内策略，就不支持导出策略。 另请注意，如果用户选择[“帮助和反馈”](client-admin-guide.md#help-and-feedback-section)中的“重置设置”选项，此操作会删除策略文件，并导致客户端无法正常运行，直到你手动替换策略文件或客户端连接到服务并下载策略为止。
 
-导出策略时，此操作会下载包含多个版本的策略的压缩文件，这些策略对应于不同版本的 Azure 信息保护客户端：
+从 Azure 门户导出策略时，下载的压缩文件包含多个版本的策略。 这些策略版本对应于 Azure 信息保护客户端的不同版本：
 
 1. 解压缩文件，然后使用下表来确定所需要的策略文件。 
     
@@ -122,7 +122,7 @@ ms.locfileid: "39371486"
 
 ## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>在 Outlook 中隐藏或显示“不转发”按钮
 
-建议使用“向 Outlook 功能区添加‘不转发’按钮”这一[策略设置](../deploy-use/configure-policy-settings.md)来配置此选项。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。
+建议使用“向 Outlook 功能区添加‘不转发’按钮”这一[策略设置](../configure-policy-settings.md)来配置此选项。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。
 
 配置此设置后，将在 Outlook 功能区中隐藏或显示“不转发”按钮。 此设置对 Office 菜单中的“不转发”选项没有影响。
 
@@ -134,7 +134,7 @@ ms.locfileid: "39371486"
 
 ## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>设置用户是否能够使用自定义权限选项
 
-建议使用“设置用户是否能够使用自定义权限选项”这一[策略设置](../deploy-use/configure-policy-settings.md)来配置此选项。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。 
+建议使用“设置用户是否能够使用自定义权限选项”这一[策略设置](../configure-policy-settings.md)来配置此选项。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。 
 
 配置此设置并为用户发布策略后，用户可看到自定义权限选项，它们可用于自行选择保护设置；这些选项也可能隐藏，使得用户无法自行选择保护设置（除非系统出现提示）。
 
@@ -147,7 +147,7 @@ ms.locfileid: "39371486"
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>永久隐藏 Azure 信息保护栏
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 仅当“在 Office 应用中显示信息保护栏”这一项[策略设置](../deploy-use/configure-policy-settings.md)设置为“开”时，才使用此配置。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 仅当“在 Office 应用中显示信息保护栏”这一项[策略设置](../configure-policy-settings.md)设置为“开”时，才使用此配置。
 
 配置此设置并为用户发布策略后，如果用户选择不在 Office 应用程序中显示 Azure 信息保护栏，此栏保持隐藏。 当用户通过依次单击“主页”选项卡、“保护组”和“保护”按钮取消选中“显示栏”选项时，就会发生这种情况。 如果用户使用“关闭信息保护栏”图标关闭此栏，此设置将不起作用。
 
@@ -193,7 +193,7 @@ ms.locfileid: "39371486"
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
-在使用“所有文档和电子邮件都必须有一个标签”的[策略设置](../deploy-use/configure-policy-settings.md)时，当用户首次保存 Office 文档和发送电子邮件，系统会提示选择标签。 对于文档，用户可以选择“以后再说”暂时关闭提示以选择标签，并返回到文档。 但是不能在未选择标签的情况下关闭已保存的文档。 
+在使用“所有文档和电子邮件都必须有一个标签”的[策略设置](../configure-policy-settings.md)时，当用户首次保存 Office 文档和发送电子邮件，系统会提示选择标签。 对于文档，用户可以选择“以后再说”暂时关闭提示以选择标签，并返回到文档。 但是不能在未选择标签的情况下关闭已保存的文档。 
 
 在配置此设置时，将删除“以后再说”选项，以便首次保存文档时用户必须选择一个标签。
 
@@ -209,15 +209,11 @@ ms.locfileid: "39371486"
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
-在配置此设置时，将更改 Azure 信息保护客户端应用自动和建议标签方式的[默认行为](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)，如下所示：
+在你配置此设置时，它更改 Azure 信息保护客户端向文档应用自动和建议标签的[默认行为](../configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)： 
 
-- 自动分类应用于 Word、Excel、PowerPoint 和 Outlook。 对于文档，自动分类在后台持续运行。 对于 Outlook，自动分类在发送电子邮件时运行。 
-    
-    如果文档之前已手动添加标签（或之前已使用更高级别的分类添加标签），则不能使用自动分类。 但也有例外情况，如果使用 Azure 信息保护扫描程序并且其 OverrideLabel 参数设置为开启，则可以使用自动分类。
+- 对于 Word、Excel 和 PowerPoint，自动分类在后台持续运行。  
 
-- 建议的分类应用于 Word、Excel 和 PowerPoint。 对于这些文档，建议的分类在后台持续运行。 不能将建议的分类用于 Outlook。
-    
-    对于之前已设置标签（无论是否是更高级别的分类标签）的文档，可使用建议的分类。 
+此行为不会对 Outlook 变化。
 
 如果 Azure 信息保护客户端定期检查你指定的条件规则文档，此行为将为存储在 SharePoint Online 中的文档启用自动和建议的分类以及保护。 由于已运行条件规则，因此大型文件可实现更快保存。 
 
@@ -393,7 +389,7 @@ ms.locfileid: "39371486"
 
 默认情况下，Azure 信息保护扫描程序在运行时的完整性级别低。 此设置可以提供更强大的安全隔离，但会牺牲性能。 如果你使用具有特权的帐户（例如本地管理员帐户）运行扫描程序，则低完整性级别是适合的，因为此设置有助于保护运行扫描程序的计算机。
 
-但是，当运行扫描程序的服务帐户只在[扫描程序先决条件](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)中记录了权限时，低完整性级别不是必需的且不推荐使用，因为它会对性能产生负面影响。 
+但是，当运行扫描程序的服务帐户只在[扫描程序先决条件](../deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)中记录了权限时，低完整性级别不是必需的且不推荐使用，因为它会对性能产生负面影响。 
 
 有关 Windows 完整性级别的详细信息，请参阅 [Windows 完整性机制是什么？](https://msdn.microsoft.com/library/bb625957.aspx)
 
