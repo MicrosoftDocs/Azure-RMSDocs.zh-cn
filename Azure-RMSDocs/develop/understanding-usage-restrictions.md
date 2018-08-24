@@ -7,19 +7,17 @@ ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: E388B16C-ECDA-4696-A040-D457D3C96766
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 389067db1bd0638b56a2a5e04058ecdd750cbd81
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 8ebd4808d2cd16a7410d7958c149da4595eaab9f
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371826"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42804820"
 ---
 # <a name="understanding-usage-restrictions"></a>了解使用限制
 

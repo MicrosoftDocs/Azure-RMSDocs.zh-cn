@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8fc94edec250fd0cef1be5f3030e19ce8628cc92
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 2ac07d7ceb26fd1574059499442778f8ac3e5927
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39370153"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42807680"
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>权限管理共享应用程序的的对话框选项
 

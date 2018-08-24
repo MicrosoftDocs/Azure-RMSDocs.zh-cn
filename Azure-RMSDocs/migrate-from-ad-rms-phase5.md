@@ -4,20 +4,18 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 5 阶段包括从 AD 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/11/2018
+ms.date: 08/22/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9cb5f30f5af9031829b1d416b34da45170cd8db4
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: b1092a8a23af5249a3b74968d2de2ee1cc2b71fe
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490200"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805819"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 

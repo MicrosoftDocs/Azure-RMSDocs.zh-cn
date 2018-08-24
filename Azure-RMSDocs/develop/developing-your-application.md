@@ -7,19 +7,17 @@ ms.author: alleonar
 manager: mbaldwin
 ms.date: 03/13/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: ecbc6ced2b67f3f378a03e98cd6a12b488efbce4
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 9b70a85eead932d34c8b9c78af2c4e1aec6e5c6d
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39373033"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42803237"
 ---
 # <a name="developing-your-application"></a>开发应用程序
 

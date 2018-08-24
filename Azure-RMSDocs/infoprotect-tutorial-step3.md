@@ -6,16 +6,14 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/18/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: 456128642fab59b43908ec4441a7cca745457058
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 5c7fda1ce117a1bca63af147766d282b3a630cf8
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475054"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42802991"
 ---
 # <a name="step-3-install-the-client"></a>步骤 3：安装客户端
 

@@ -7,17 +7,16 @@ manager: mbaldwin
 ms.date: 09/25/2017
 ms.topic: article
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 2780d81684942fe616ae13a1d2645b5290dbc65d
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: d0edc0337e7913b1d149f6e84cb0ce7536528ffb
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371894"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42807094"
 ---
 # <a name="whats-new-and-release-notes"></a>新增功能和发行说明
 

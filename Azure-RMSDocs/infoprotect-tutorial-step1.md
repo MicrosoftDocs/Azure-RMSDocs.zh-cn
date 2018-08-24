@@ -6,16 +6,14 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 05/28/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: c1c9d9eed2bc9a54500d13a93ce3d74187ee24a2
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 3d397227420efb8b149eb1ac157702868745ba23
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39488652"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805090"
 ---
 # <a name="step-1-activate-protection"></a>步骤 1：激活保护
  

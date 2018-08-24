@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/18/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: A1C99424-D986-4A5A-B2E1-6D18EEF11B21
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: ad06423affdcf4b9de3fe2e714f8beec6b4ac59b
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 602c8d72a30dec1ff018db50bc8e5e5fa80145d1
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489930"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42806206"
 ---
 # <a name="add-aadrmkey"></a>Add-AadrmKey
 

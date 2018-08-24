@@ -4,20 +4,18 @@ description: RMS 共享应用程序如何作为支持 Office 2010 所必需的�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 16/01/2018
+ms.date: 08/22/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fd6bb74620f6ffa08759b1aec6da2f3897dfee0a
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: f950e2a8ac15a073a5edc960d49ab4e21c14bfbe
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474594"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42806582"
 ---
 # <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Windows 和移动平台的 RMS 共享应用程序
 

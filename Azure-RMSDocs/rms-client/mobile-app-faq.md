@@ -7,19 +7,17 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: azure
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 09e75b1d8fd841295924dccfbacf8dcb6d753182
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: d7543ceec6a749b3f6fad6a5ac9bd368f345eac4
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473468"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42803526"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 

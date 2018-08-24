@@ -7,19 +7,17 @@ ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 6dcfa840-026b-4728-b53c-2c9c730fcf84
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1b5d48509a2260269aa89e469035c4fbf83e80ca
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 0fd9eb602c597bc26849faf8bdf71b693dc0e27f
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39374885"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42804028"
 ---
 # <a name="api-reference"></a>API 参考
 

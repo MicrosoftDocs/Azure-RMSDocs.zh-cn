@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/04/2018
 ms.topic: get-started-article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0921e853efac8e6a8a4924a8062c694ad013476a
-ms.sourcegitcommit: edc51fdbcff9a2bdb09a3ff05f2dd4edc2330aba
+ms.openlocfilehash: 4ef9a140c351ae2500da320733662025ab735fef
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39572033"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42808982"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 

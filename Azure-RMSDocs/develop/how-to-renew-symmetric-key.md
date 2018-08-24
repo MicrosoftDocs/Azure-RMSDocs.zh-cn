@@ -7,16 +7,14 @@ manager: mbaldwin
 ms.author: alleonar
 ms.date: 03/27/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: a0b8c8f0-6ed5-48bb-8155-ac4f319ec178
-ms.openlocfilehash: 159e5b58883490e4417ecbdb9815340c9ccaa66d
-ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
+ms.openlocfilehash: b369a9644698f1ad9fbd1c1e037a5a9be7bc6dc6
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
-ms.locfileid: "27927101"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42806964"
 ---
 # <a name="how-to-renew-the-symmetric-key-in-azure-information-protection"></a>如何：在 Azure 信息保护中续订对称密钥
 

@@ -6,18 +6,16 @@ ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: ''
 ms.assetid: 4e9f72d5-9e7c-43e1-bb8a-5972dd22dcee
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: cb4195b1b63c39d1d6e47d1c94d2f7e1c2c83e63
-ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
+ms.openlocfilehash: 2b6c8e0d9e568c9ee87f9754240781695d2de2ba
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575839"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42807282"
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure 信息保护的安全最佳实践
 

@@ -7,18 +7,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: azure
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6c8561a54f80ff623881713c8dd05e334ec56ead
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 7890400bb6b9f578a4277b5b61d8fab5dddedff1
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474403"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42804365"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门
 

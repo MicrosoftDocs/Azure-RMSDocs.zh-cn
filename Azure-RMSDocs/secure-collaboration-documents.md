@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 06/21/2018
 ms.topic: get-started-article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f08c458ce779149d34d573ba145452f98d612c8c
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 50182f5d0df5d204e8ffbfe3f1d27feafa3eee8e
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489495"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42807660"
 ---
 # <a name="secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护保护文档协作
 

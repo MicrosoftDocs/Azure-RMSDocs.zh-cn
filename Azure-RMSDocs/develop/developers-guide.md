@@ -7,16 +7,15 @@ manager: mbaldwin
 ms.date: 10/11/2017
 ms.topic: article
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 096f5d02e4bcb39390bcd6f6ed64476f4a74d5eb
-ms.sourcegitcommit: 7ed2a257f68435fe6807af8975a5477801ec2537
+ms.openlocfilehash: 59c9a2db3f0959a5c4bfb9e65248598b14276825
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39501262"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42808553"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 

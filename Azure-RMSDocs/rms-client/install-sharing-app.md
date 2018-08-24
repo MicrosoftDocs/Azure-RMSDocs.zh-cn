@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 80ae87e28e02a208af9ea4ece2b74df1a7f841b0
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 89900a1231ec4a5a6458287cf5580bf0ad5f28b1
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39374552"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42804527"
 ---
 # <a name="download-and-install-the-rights-management-sharing-application"></a>下载和安装 Rights Management 共享应用程序
 

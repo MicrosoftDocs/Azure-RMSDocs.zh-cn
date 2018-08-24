@@ -6,16 +6,14 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/03/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 11ac7ab7a1c1b55811f2f62b426dceedfa9c4874
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: e85395dcd8b2d839d4baa0a21ce7aedcf99d0957
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489393"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805184"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
