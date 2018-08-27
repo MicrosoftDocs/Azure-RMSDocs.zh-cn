@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f687e82965d3a5b219d4fbb0f1054b72f9b0f7f6
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: f03c449b0c1153af1942ee9cc395ab14f959c531
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39374312"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805166"
 ---
 # <a name="protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序保护设备上的文件（就地保护）。
 
@@ -45,7 +43,7 @@ ms.locfileid: "39374312"
 
         选择策略模板时，也可以保护多个文件和某个文件夹。 选择某个文件夹时，将自动选择该文件夹中的所有文件进行保护，但不会自动保护在该文件夹中创建的新文件。
 
-    -   选择“自定义权限” ：如果模板没有提供所需的保护级别，或你想要自己显式设置保护选项，请选择此选项。 在 [添加保护](sharing-app-dialog-box.md) 对话框中指定此文件所需的选项，然后单击“应用”。
+    -   选择“自定义权限” ：如果模板没有提供所需的保护级别，或你想要自己显式设置保护选项，请选择此选项。 在[添加保护](sharing-app-dialog-box.md)对话框中指定此文件所需的选项，然后单击“应用”。
 
 3.  你可能很快就会看到一个对话框，告诉你文件处于受保护状态，然后焦点返回到文件资源管理器。 现在，所选文件处于受保护状态。 在某些情况下（添加的保护更改了文件扩展名时），文件资源管理器中的原始文件将为具有 Rights Management 保护锁状图标的新文件所替代。 例如：
 
