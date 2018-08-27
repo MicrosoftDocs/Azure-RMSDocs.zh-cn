@@ -4,20 +4,18 @@ description: 最终用户 Office 应用程序（例如 Word 和 Outlook）和 Of
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/17/2018
+ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: aa1b24e24d05487014280fd6334d013466b6777f
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: c302972e8a048ec851af85cdba9d86bd7fbcc971
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489121"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42803813"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
@@ -66,7 +64,7 @@ ms.locfileid: "39489121"
 
 使用 SharePoint Online 或 SharePoint Server 时，可以使用 SharePoint 信息权限管理 (IRM) 功能来保护文档。 通过此功能，管理员可以保护列表或库，这样当用户签出文档时，所下载的文件将会受到保护，如此只有授权人员能够根据指定的信息保护策略来查看和使用文件。 例如，文件可能是只读的，可能会禁用文本复制，可能会阻止保存本地副本，可能会阻止打印文件。
 
-Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 默认情况下，保护仅限于下载文档的人员。 可以使用配置选项来更改此默认设置，该选项将保护范围扩展到所有在 SharePoint 或你指定的组中访问文档的用户。
+Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 默认情况下，保护仅限于下载文档的人员。 可以使用名为“允许组保护”的配置选项更改此默认值，该选项将保护扩展到你指定的组。 例如，可以指定一个具有编辑库中文档权限的组，以便同一组用户可以在 SharePoint 的外部编辑该文档，而不考虑是哪个用户下载了该文档。 或者，可以指定未在 SharePoint 中授予权限的组，但该组中的用户需要从 SharePoint 外部访问该文档。 
 
 对于 SharePoint 列表和库，始终由管理员（绝不会是最终用户）配置此保护。 在站点级别设置权限，默认情况下，这些权限将由该站点中的任何列表或库继承。 如果使用 SharePoint Online，用户还可以对其 OneDrive for Business 库配置 IRM 保护。
 

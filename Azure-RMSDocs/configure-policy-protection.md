@@ -4,18 +4,16 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2018
+ms.date: 08/14/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: b41add3430fbf00a372a5ec54d1ecd8c27fa7fa6
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 16cb22a7f16b82056d58d569dc0d65b3b16d0ae1
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490670"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42807063"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -90,9 +88,9 @@ ms.locfileid: "39490670"
     
     - “设置用户定义的权限(预览)”：允许用户指定应向其授予权限的人员并指定具体的权限。 然后，可优化此选项并选择仅 Outlook 或 Word、Excel、PowerPoint 和文件资源管理器。 如果为[自动分类](configure-policy-classification.md)配置了标签，则不支持且无法使用此选项。
         
-        如果选择 Outlook 选项：标签显示在 Outlook 中，并且用户应用该标签时产生的行为与“不转发”选项相同。
+        如果选择 Outlook 选项：标签显示在 Outlook 中，并且用户应用该标签时产生的行为与[不转发](configure-usage-rights.md#do-not-forward-option-for-emails)选项相同。
         
-        如果为 Word、Excel、PowerPoint 和文件资源管理器选择此选项：设置此选项后，标签将显示在这些应用程序中。 用户应用标签时产生的行为是显示对话框，以便用户选择自定义权限。 在此对话框中，用户必须指定权限、用户或组以及任意到期日期。 确保用户具有关于如何提供这些值的说明和指导。
+        如果为 Word、Excel、PowerPoint 和文件资源管理器选择此选项：设置此选项后，标签将显示在这些应用程序中。 用户应用标签时产生的行为是显示对话框，以便用户选择自定义权限。 在此对话框中，用户选择其中一个[预定义权限级别](configure-usage-rights.md#rights-included-in-permissions-levels)，浏览或指定用户或组，并可选择设置到期日期。 确保用户具有关于如何提供这些值的说明和指导。
     
     - 选择预定义的模板：使用已配置的一个默认模板或自定义模板。 请注意，如果正在编辑的标签之前曾使用“设置权限”选项，则不会对新标签显示此选项。
     
@@ -110,10 +108,11 @@ ms.locfileid: "39490670"
         
         ###### <a name="more-information-about-add-any-authenticated-users"></a>详细了解如何**添加任何身份已验证的用户** 
         此设置不限制谁能访问标签保护的内容，同时仍加密内容，并提供限制内容使用方式（权限）和访问方式（到期和脱机访问）的选项。 不过，打开受保护内容的应用程序必须能够支持所使用的身份验证。 鉴于此，Google 等联合社交提供程序以及一次性密码身份验证应仅在你使用 Exchange Online 和 Office 365 邮件加密的新功能时，才只用于电子邮件。 可以将 Microsoft 帐户与 Azure 信息保护查看器和 Office 2016 即点即用结合使用。 
-        
-        下面介绍了一些典型方案，适用于任何身份已验证的用户的设置：- 任何人都可以查看内容，但要限制内容的使用方式。 例如，不希望对内容执行编辑、复制或打印操作。
-            - 无需限制谁能访问内容，但要能够跟踪谁打开和可能撤销了内容。
-            - 要求必须加密内容（无论是静态还是传输中），但无需执行访问控制。     
+          
+        任何经过身份验证的用户设置的一些典型方案：  
+                - 不介意谁可以查看内容，但希望限制内容的使用方式。 例如，不希望对内容执行编辑、复制或打印操作。  
+                - 无需限制谁能访问内容，但要能够跟踪谁打开和可能撤销了内容。  
+                - 要求必须加密内容（无论是静态还是传输中），但无需执行访问控制。  
         
     - 选择“输入详细信息”以手动为单个用户或组（内部或外部）指定电子邮件地址。 或者，使用此选项，通过输入另一个组织的任何域名来指定该组织中的所有用户。 还可以通过输入社交提供程序程序的域名（例，如 gmail.com、hotmail.com 或 outlook.com），将此选项用于这些程序。
         
@@ -156,9 +155,9 @@ ms.locfileid: "39490670"
     
     “用户定义的权限”选项允许用户指定应向其授予权限的人员并指定具体的权限。 然后，可以优化此选项并选择仅 Outlook（默认）或 Word、Excel、PowerPoint 和文件资源管理器。 如果为[自动分类](configure-policy-classification.md)配置了标签，则不支持且无法使用此选项。
     
-    如果选择 Outlook 选项：标签显示在 Outlook 中，并且用户应用该标签时产生的行为与“不转发”选项相同。
+    如果选择 Outlook 选项：标签显示在 Outlook 中，并且用户应用该标签时产生的行为与[不转发](configure-usage-rights.md#do-not-forward-option-for-emails)选项相同。
     
-    如果选择 Word、Excel、PowerPoint 和文件资源管理器选项：标签将显示在这些应用程序中。 用户应用标签时产生的行为是显示对话框，以便用户选择自定义权限。 在此对话框中，用户必须指定权限、用户或组以及任意到期日期。 确保用户具有关于如何提供这些值的说明和指导。
+    如果为 Word、Excel、PowerPoint 和文件资源管理器选择此选项：设置此选项后，标签将显示在这些应用程序中。 用户应用标签时产生的行为是显示对话框，以便用户选择自定义权限。 在此对话框中，用户选择其中一个[预定义权限级别](configure-usage-rights.md#rights-included-in-permissions-levels)，浏览或指定用户或组，并可选择设置到期日期。 确保用户具有关于如何提供这些值的说明和指导。
 
 10. 单击“确定”关闭“保护”边栏选项卡，然后“标签”边栏选项卡上的“保护”选项中会显示你选择的“用户定义的模板”或模板。
 

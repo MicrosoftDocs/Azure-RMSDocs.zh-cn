@@ -4,20 +4,18 @@ description: 说明如何安装、配置和运行 Azure 信息保护扫描程序
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 1545c7bd931ab6aa4a76ddfd256a916d31d262bc
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 77d24243d4f6b38338b2a6d709a252cc4859a2b3
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490560"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42806045"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -246,9 +244,14 @@ ms.locfileid: "39490560"
 |Word|.docx; .docm; .dotm; .dotx|
 |Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
 |PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
-|PDF|。pdf|
+|PDF |。pdf|
 |文本|.txt; .xml; .csv|
 
+默认情况下，只有 Office 文件类型受扫描程序保护，因此除非[编辑注册表](develop/file-api-configuration.md)以指定文件类型，否则 PDF 和文本文件不会受到保护：
+
+- 如果未将 .pdf 文件类型添加到注册表：则将标记具有此文件扩展名的文件，但如果标签配置为保护，则不应用保护。
+
+- 如果未将 .txt、.xml 或 .csv 文件类型添加到注册表：则不会标记具有这些文件扩展名的文件，因为这些文件类型不支持仅分类。
 
 最后，对于剩余的文件类型，扫描程序将应用 Azure 信息保护策略中的默认标签，或应用为扫描程序配置的默认标签。
 
@@ -270,7 +273,11 @@ ms.locfileid: "39490560"
 
 如果扫描程序应用保护标签，默认只有 Office 文件类型受到保护。 可以更改此行为，让其他文件类型也受到保护。 不过，如果标签向文档应用常规保护，文件扩展名变成 .pfile。 此外，文件将变为只读，直到该文件被已授权用户打开并以本机格式保存。 文本和图像文件也可以更改其文件扩展名并变为只读。 
 
-例如，若要将此默认扫描程序行为更改为以常规方式保护其他文件类型，必须手动编辑注册表，并指定要保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 对于扫描程序，必须指定特定文件名扩展，且不可使用 `*` 通配符。
+例如，若要将此默认扫描程序行为更改为以常规方式保护其他文件类型，必须手动编辑注册表，并指定要保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 此外，特定于扫描程序：
+
+- 必须指定特定文件扩展名，且不可使用 `*` 通配符。
+
+- 扫描程序具有其自己的默认行为：默认情况下，仅保护 Office 文件格式。 扫描程序不会保护未添加到注册表的任何其他文件格式。
 
 ## <a name="when-files-are-rescanned"></a>重新扫描文件时的情况
 

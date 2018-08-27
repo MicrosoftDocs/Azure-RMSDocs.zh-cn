@@ -4,38 +4,35 @@ description: 通过 Azure 门户配置和管理 Rights Management 模板。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2018
+ms.date: 08/20/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9f3dc55f8443b4280cd5e108f1b5c5e3093748d4
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 0ce3fd1da5ee17baf8a778447f9e3aa6188d6eee
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490060"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42806703"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
->[!NOTE]
->此功能将替代在 Azure 经典门户中配置自定义模板。 经典门户现已停用，因此必须使用 Azure 门户。 有关快速操作指南映射，请参阅[曾使用 Azure 经典门户执行的任务](migrate-portal.md)。
-
-
-Rights Management 模板现已与 Azure 信息保护策略集成。 
+保护模板（也称为 Rights Management 模板）是 Azure 信息保护的一组管理员定义的保护设置。 这些设置包括为授权用户选择的[使用权限](configure-usage-rights.md)，以及对到期和离线访问的访问控制。 这些模板已与 Azure 信息保护策略集成： 
 
 **订阅包含分类、设置标签和保护（Azure 信息保护 P1 或 P2）：**
 
-- 未与租户的标签集成的 Rights Management 模板显示在“Azure 信息保护 - 标签”边栏选项卡上标签后的“保护模板”部分。 若要导航到此边栏选项卡，请选择“分类” > “标签”菜单选项。 可以将这些模板转换为标签，也可以在为标签配置保护时链接到它们。 
+- 未与租户的标签集成的模板显示在“Azure 信息保护 - 标签”边栏选项卡上标签后的“保护模板”部分。 若要导航到此边栏选项卡，请选择“分类” > “标签”菜单选项。 可以将这些模板转换为标签，也可以在为标签配置保护时链接到它们。 
 
 **订阅仅包含保护（包括 Azure 权限管理服务的 Office 365 订阅）：**
 
-- 租户的 Rights Management 模板显示在“Azure 信息保护 - 标签”边栏选项卡上的“保护模板”部分。 若要导航到此边栏选项卡，请选择“分类” > “标签”菜单选项。 不显示任何标签。 还可看到特定于分类和标签的配置设置，但这些设置要么对模板没有任何影响，要么无法进行配置。 
+- 租户的模板显示在“Azure 信息保护 - 标签”边栏选项卡上的“保护模板”部分。 若要导航到此边栏选项卡，请选择“分类” > “标签”菜单选项。 不显示任何标签。 还可看到特定于分类和标签的配置设置，但这些设置要么对模板没有任何影响，要么无法进行配置。 
+
+>[!NOTE]
+>在某些应用程序和服务中，你可能会看到[不转发](configure-usage-rights.md#do-not-forward-option-for-emails)和[仅加密](configure-usage-rights.md#encrypt-only-option-for-emails)（或加密）显示为模板。 这些不是可以编辑或删除的模板，而是默认情况下随 Exchange 服务提供的选项。
 
 ## <a name="default-templates"></a>默认模板
 
@@ -49,6 +46,7 @@ Rights Management 模板现已与 Azure 信息保护策略集成。
 通过这些默认模板，你和其他人可立即轻松开始保护组织的敏感数据。 这些模板可与 Azure 信息保护标签一起使用，或通过可使用 Rights Management 模板的[应用程序和服务](applications-support.md)独立使用。
 
 你还可以创建自已的自定义模板。 尽管可能只需要几个模板，但在 Azure 中可最多保存 500 个自定义模板。
+
 
 ### <a name="default-template-names"></a>默认模板名称
 

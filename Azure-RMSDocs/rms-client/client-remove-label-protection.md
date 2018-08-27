@@ -4,20 +4,18 @@ description: 说明了如何从由 Azure 信息保护标记的文件中，或从
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f74354ea3c588093b4fefcf98ce0b4cbf807aedb
-ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
+ms.openlocfilehash: a18014a210607b2c9a38cc4c68e955e01403c986
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575771"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805776"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>用户指南：从由 Azure 信息保护标记的文件和电子邮件中，或从受 Rights Management 保护的文件和电子邮件中，删除标签和保护
 
@@ -28,7 +26,7 @@ ms.locfileid: "39575771"
 如果你删除的标签已配置为应用保护，此操作也可从文件删除保护。 系统可能会提示你记录删除该标签的原因。
 
 > [!IMPORTANT]
-> 必须是文件所有者才能删除保护，或者已被授予删除保护的权限（Rights Management 提取或完全控制权限）。
+> 必须是文件所有者才能删除保护，或者已被授予删除保护的权限（导出或完全控制 Rights Management 权限）。
 
 如果想要选择其他标签或一组其他的保护设置，则无需删除标签或保护。 转而选择新的标签，必要时可定义自定义权限（若管理员允许此配置）。 
 

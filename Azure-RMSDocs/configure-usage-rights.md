@@ -4,20 +4,18 @@ description: 了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/30/2018
+ms.date: 08/22/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 48a2cf7c8d827ce5a9be9b35e6f03e5d5479aa71
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 61d57cb33175c3c3e87d615cee65e2b82f21ab74
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490480"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42808766"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -127,7 +125,13 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 同样，默认情况下，附加到电子邮件的未受保护 [Office 文档](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)也会继承相同的权限。 这些文档会自动受到保护，收件人可以在 Office 应用程序中保存、编辑、复制和打印已下载的这些文档。 当收件人保存文档时，可以将其保存为新的名称，甚至保存为不同的格式。 但是，只有支持保护的文件格式才可用，以确保在没有原始保护的情况下无法保存文档。 如果附件需要不同的使用权限或者你的附件不是支持此继承保护的 Office 文档，请先保护文件，然后再将其附加到电子邮件。 然后，你可以为该文件分配所需的特定使用权限。
 
-也可以对在浏览器中查看文档的收件人更改文档的这种加密继承。 如果无需在用户通过身份验证后保留文档的原始保护，建议使用这种配置。 若要执行此更改，请运行 Exchange Online PowerShell 命令 `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`。 然后，保护设置会在这些收件人下载文档后遭删除。 有关详细信息，请参阅 Office 博客文章 [Office 365 邮件加密中现在提供的附件管理控制](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)。 如果确实需要在下载文档后保留原始保护，请参阅[使用 Azure 信息保护来保护文档协作](secure-collaboration-documents.md)。      
+或者，可以使用通过 [Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) 命令 Set-IRMConfiguration 设置的以下任一配置参数来更改此文档的保护继承。 如果无需在用户通过身份验证后保留文档的原始保护，请使用这些选项：
+
+- 若要仅为在其浏览器中查看文档的收件人删除文档的保护（通常是因为该文档发送至社交提供商地址，例如 Gmail）：`Set-IRMConfiguration -DecryptAttachmentFromPortal $true`。 保护会在这些收件人下载文档后遭删除。
+
+- 若要始终为所有收件人删除文档保护：`Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true`。 当这些收件人打开电子邮件时，文档不受保护。
+
+有关仅为在其浏览器中查看文档的收件人删除保护设置的详细信息，请参阅 Office 博客文章：[Office 365 邮件加密中现在提供的附件管理控制](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)。 如果确实需要附加的文档以保留原始保护，请参阅[使用 Azure 信息保护来保护文档协作](secure-collaboration-documents.md)。
 
 ## <a name="rights-management-issuer-and-rights-management-owner"></a>权限管理颁发者和权限管理所有者
 

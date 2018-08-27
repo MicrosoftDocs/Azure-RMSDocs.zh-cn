@@ -4,20 +4,18 @@ description: 此信息有助于规划和管理 Azure 信息保护租户密钥。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 05aee77b60b5fd5a7239b51665e2afb122704afb
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 65f1b158e9745efa39d4088dcb615016ddecb206
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490120"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42807263"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
@@ -36,14 +34,13 @@ ms.locfileid: "39490120"
 |业务要求|建议的租户密钥拓扑|
 |------------------------|-----------------------------------|
 |无需特殊的硬件、额外的软件或 Azure 订阅即可快速部署 Azure 信息保护。<br /><br />例如，测试环境以及当组织没有针对密钥管理的法规要求时。|由 Microsoft 管理|
-|合规性规定、额外的安全性以及对所有生命周期操作的控制。 <br /><br />例如：密钥必须由硬件安全模块 (HSM) 保护。|BYOK [[1]](#footnote-1)|
+|合规性规定、额外的安全性以及对所有生命周期操作的控制。 <br /><br />例如：密钥必须由硬件安全模块 (HSM) 保护。|BYOK|
 
 
 如有需要，可以在部署后通过使用 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) cmdlet 来更改租户密钥拓扑。
 
 
 ## <a name="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok"></a>选择你的租户密钥拓扑：由 Microsoft 管理（默认设置）或由你管理 (BYOK)
-确定哪种租户密钥拓扑最适合你的组织。 默认情况下，Azure 信息保护生成你的租户密钥，并管理租户密钥生命周期的大多数方面。 这是最简单的选项，管理开销最低。 大多数情况下，你甚至不需要知道自己有租户密钥。 你只需注册 Azure 信息保护，密钥管理过程的剩余部分将由 Microsoft 处理。
 
 确定哪种租户密钥拓扑最适合你的组织：
 
@@ -93,7 +90,7 @@ ms.locfileid: "39490120"
 
 - 除非从 AD RMS 迁移，否则对于为租户生成密钥你无需进行任何额外的操作，可以直接转至[后续步骤](plan-implement-tenant-key.md#next-steps)。
 
-- 如果当前已具有 AD RMS，且想迁移到 Azure 信息保护，请参阅迁移说明：从 AD RMS 迁移到 Azure 信息保护。 
+- 如果当前已具有 AD RMS，且想迁移到 Azure 信息保护，请使用迁移说明：[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)。 
 
 如果你决定自行管理租户密钥，请阅读以下部分以获取更多信息。
 
@@ -181,11 +178,11 @@ Key Vault 中存储的密钥具有密钥 ID。 此密钥 ID 是包含密钥保�
 
 1.  开始使用你的租户密钥：
     
-    - 如果尚未开始使用，则必须立即激活 Rights Management 服务，以便你的组织能够开始使用 Azure 信息保护。 用户立即开始使用你的租户密钥（在 Azure Key Vault 中由 Microsoft 管理或由你管理）。
+    - 如果尚未激活保护服务，则必须立即激活 Rights Management 服务，以便贵组织能够开始使用 Azure 信息保护。 用户立即开始使用你的租户密钥（在 Azure Key Vault 中由 Microsoft 管理或由你管理）。
     
         有关激活的详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
         
-    - 如果你已经激活了 Rights Management 服务，然后决定自行管理租户密钥，用户将逐渐从旧租户密钥迁移到新租户密钥，这种交错式迁移可能需要花费几周才能完成。 受旧租户密钥保护的文档和文件仍然可供授权用户访问。
+    - 如果已经激活了 Rights Management 服务，然后决定管理自己的租户密钥，用户将逐渐从旧租户密钥迁移到新租户密钥。 这种交错式转换可能需要花费几周才能完成。 受旧租户密钥保护的文档和文件仍然可供授权用户访问。
         
 2. 请考虑启用使用日志记录，该功能记录了 Azure Rights Management 服务执行的每一个事务。
     
