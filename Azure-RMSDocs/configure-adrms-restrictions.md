@@ -4,18 +4,16 @@ description: 具有 Azure 信息保护的 HYOK (AD RMS) 保护概述、其支持
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 08/16/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 07ce6d2bc9a606692ccaffb42cfe6717092c72b6
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 050ffcf6e500316912ac4b0894594b99b441aab5
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490320"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42804300"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>用于 Azure 信息保护的保留自己的密钥 (HYOK) 保护
 
@@ -92,7 +90,7 @@ ms.locfileid: "39490320"
 
 此外，对 Azure 信息保护标签使用 HYOK 保护具有以下限制：
 
-- 不支持 Office 2010 或 Office 2007。
+- 不支持 Office 2013 之前的 Office 版本。
 
 - Office 365 服务和其他在线服务将无法解密受 HYOK 保护的文档和电子邮件以检查内容并对其采取相应措施。 此限制适用于使用 Rights Management 连接器保护的受 HYOK 保护的文档和电子邮件。 
     
