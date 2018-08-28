@@ -27,8 +27,7 @@ Azure RMS 是 [Azure 信息保护](what-is-information-protection.md)使用的�
 
 |要求或问题|Azure RMS 所解决的问题|
 |--------------------------|-----------------------|
-|保护多个文件类型|√ 在 Rights Management 的早期实现中，只有 Office 文件才能使用本机 Rights Management 保护功能获得保护。 
-  **常规保护** 以前由 Rights Management 共享应用程序提供，现在由 Azure 信息保护客户端提供，这意味着现在可以支持更多[文件类型](./rms-client/client-admin-guide-file-types.md)。|
+|保护多个文件类型|√ 在 Rights Management 的早期实现中，只有 Office 文件才能使用本机 Rights Management 保护功能获得保护。 **常规保护** 以前由 Rights Management 共享应用程序提供，现在由 Azure 信息保护客户端提供，这意味着现在可以支持更多[文件类型](./rms-client/client-admin-guide-file-types.md)。|
 |随处保护文件|√ 文件一旦[受保护](./rms-client/client-classify-protect.md)，便会始终受到保护，即使它被保存或复制到不受 IT 部门控制的存储（如云存储服务），也是如此。|
 |安全共享信息|√ 当文件[受保护](./rms-client/client-classify-protect.md)时，可以安全地与他人进行共享。 例如，电子邮件的附件或 SharePoint 网站的链接。 如果电子邮件中有敏感信息，则可以保护电子邮件，或只需使用 Outlook 中的“不要转发”选项。 <br /><br />附加受保护文件而不是保护整个电子邮件的好处是，电子邮件文本未加密，因此如果在组织外发送电子邮件，可以附上首次使用的说明。 任何人都可阅读说明，但由于附加文档受到保护，因此只有授权用户才能打开文档，即使将该电子邮件或文档转发给其他用户也是如此。|
 |审核和监视|√ 你可以 [审核和监视受保护文件的使用情况](log-analyze-usage.md)，即使这些文件已经离开了组织的边界。<br /><br />例如，你为 Contoso, Ltd. 工作你正在与来自 Fabrikam, Inc 的三名人员一起致力于一个联合项目。你通过电子邮件向这三人发送了一个已保护并限制为只读的文档。 Azure 权限管理审核功能可以提供以下信息：<br /><br />- 你指定的来自 Fabrikam 的人是否打开了该文档，以及打开时间（如果已打开过）。<br /><br />- 你未指定的其他人是否尝试打开该文档却失败了（发生这种情况可能是因为该文档已转发或保存到其他人可以访问的共享位置）。<br /><br />- 指定的任何人是否尝试打印或更改该文档却失败了。<br /><br />此外，[文档跟踪站点](./rms-client/client-track-revoke.md)可让用户和管理员跟踪并在必要时撤销对受保护文档的访问权限。|
