@@ -173,7 +173,7 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 > [!NOTE]
 > 此服务发现流有四种重要的例外情况：
 > 
-> - 移动设备最适合使用云服务，因此它们默认使用 Azure Rights Management 服务的服务发现 (https://discover.aadrm.com)。 要替代此默认设置以便移动设备使用 AD RMS，而不是 Azure Rights Management 服务，请在 DNS 中指定 SRV 记录，并按 [Active Directory Rights Management Services 移动设备扩展](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx)中所述安装移动设备扩展。 
+> - 移动设备最适合使用云服务，因此它们默认使用 Azure Rights Management 服务的服务发现 (https://discover.aadrm.com) 。 要替代此默认设置以便移动设备使用 AD RMS，而不是 Azure Rights Management 服务，请在 DNS 中指定 SRV 记录，并按 [Active Directory Rights Management Services 移动设备扩展](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx)中所述安装移动设备扩展。 
 >
 > - 通过 Azure 信息保护标签调用权限管理服务时，将不会执行服务发现。 相反，会直接在 Azure 信息保护策略配置的标签设置中指定 URL。 
 >  
