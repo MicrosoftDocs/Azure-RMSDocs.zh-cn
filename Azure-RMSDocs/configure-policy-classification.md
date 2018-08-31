@@ -4,16 +4,16 @@ description: 在配置标签的条件时，可以自动将标签分配到文档�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/16/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 7d9e128dd771f6d4d4882bedcd7f49aeefb41809
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 605173136442ed3af5b50e565cae79a94b16fb27
+ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804177"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43297984"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
@@ -96,9 +96,6 @@ ms.locfileid: "42804177"
 单击“保存”时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
 
 ### <a name="sensitive-information-types-that-require-a-minimum-version-of-the-client"></a>需要最低版本客户端的敏感信息类型
-
-> [!NOTE]
-> 正在向租户推出以下敏感信息类型，但可能尚未显示这些类型供选择。 但是，如果将 Azure 信息保护扫描程序配置为[识别所有自定义条件和已知敏感信息类型](deploy-aip-scanner.md#using-the-scanner-with-alternative-configurations)，那么即使无法在 Azure 门户中选择它们，预览版扫描程序也可以检测这些新信息类型。
 
 以下敏感信息类型当前需要 Azure 信息保护客户端预览版：
 

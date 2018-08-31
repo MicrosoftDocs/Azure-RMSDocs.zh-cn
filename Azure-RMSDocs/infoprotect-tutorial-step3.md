@@ -4,16 +4,16 @@ description: 快速试用 Azure 信息保护入门教程步骤 3 - 安装客户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: 5c7fda1ce117a1bca63af147766d282b3a630cf8
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 1b657b1cf1aa6ea942e3e0d87da340312b6dcadf
+ms.sourcegitcommit: b0c4fe8c522987a7863958ffdc6866a91ebabf86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42802991"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43242039"
 ---
 # <a name="step-3-install-the-client"></a>步骤 3：安装客户端
 

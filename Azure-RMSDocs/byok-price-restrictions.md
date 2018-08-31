@@ -4,18 +4,18 @@ description: 了解结合使用客户托管的密钥（称为“自带密钥”�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/18/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 96d655d0715553f9e04b98c3dd6ec91f6188618b
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: d5bd02bc1151352fc6aec4339ab9c12779c3a582
+ms.sourcegitcommit: b0c4fe8c522987a7863958ffdc6866a91ebabf86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806734"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43242232"
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 定价和限制
 
