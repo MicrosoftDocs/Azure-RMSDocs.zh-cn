@@ -4,18 +4,18 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c147b6ac668e27f4e07257b3189e272a1c8093af
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: d5ff45ee8c48e1843010692cbd22d146a3fa9970
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808288"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43117904"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -30,6 +30,8 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 - 仅保护
 
 使用以下信息查看 Azure 信息保护客户端支持的文件类型，了解不同的保护级别、如何更改默认保护级别，以及如何确定哪些文件会自动从分类和保护中被排除（跳过）。
+
+对于列出的文件类型，WebDav 位置不受支持。
 
 ## <a name="file-types-supported-for-classification-only"></a>支持仅分类的文件类型
 
@@ -53,7 +55,7 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 - **Microsoft Office**：下表中的文件类型。
     
-    这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。 除非有 Azure 信息保护客户端预览版，否则不支持 Strict Open XML 文档格式
+    这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。 除非有 Azure 信息保护客户端预览版，否则不支持 Strict Open XML 文档格式。
     
     |Office 文件类型|Office 文件类型|
     |----------------------------------|----------------------------------|
@@ -123,7 +125,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 |。jt|。pjt|
 
 ###### <a name="footnote-1"></a>脚注 1
-如果使用 Azure 信息保护客户端预览版，并将其配置为[使用 PDF 加密 ISO 标准保护 PDF 文件](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，则受保护 PDF 文档的文件扩展名仍为 .pdf。
+如果使用 Azure 信息保护客户端预览版，[在默认情况下](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，受保护 PDF 文档的文件扩展名仍为 .pdf。
 
 下一个表列出了其余的文件类型，这些文件类型通过 Azure 信息保护客户端支持本机保护，并且还可进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。 除非有 Azure 信息保护客户端预览版，否则不支持 Strict Open XML 文档格式。
 
@@ -196,7 +198,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 ### <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序从分类和保护中排除的文件类型
 
-默认情况下，扫描程序还会排除与 Azure 信息保护客户端相同的文件类型，扫描程序预览版除外：还将排除 .rtf。 
+默认情况下，扫描程序还会排除与 Azure 信息保护客户端相同的文件类型，以下扫描程序预览版除外：.rar、.rtf、.msg 和 .zip。 
 
 使用以下 PowerShell cmdlet 时，可更改扫描程序检查文件时包含或排除的文件类型：
 
@@ -227,7 +229,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 如果保护这些文件非常重要，可以暂时将它们复制到另一计算机，以一般方式对其进行保护，然后再将其复制回。 或者，使用 Azure 信息保护客户端的预览版本。
 
-当使用 Azure 信息保护客户端的预览版本并将其配置为[使用 PDF 加密 ISO 标准保护 PDF 文件](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)时，可对以下两种情况下的 PDF 文件进行本机保护或取消保护：
+当使用 Azure 信息保护客户端的当前预览版本时，[在默认情况下](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，可对以下两种情况下的 PDF 文件进行本机保护或取消保护：
 
 - 基于窗体的 PDF 文件。
 

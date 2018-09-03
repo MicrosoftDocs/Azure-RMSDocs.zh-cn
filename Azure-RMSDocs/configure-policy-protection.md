@@ -4,16 +4,16 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/14/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 16cb22a7f16b82056d58d569dc0d65b3b16d0ae1
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: bc60f1791cd7c36f179851b1759a46ba3980dd96
+ms.sourcegitcommit: b2d5c77bf8a0271d8d23f170314c0f49c3a328b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807063"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42920300"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -62,9 +62,7 @@ ms.locfileid: "42807063"
         
         先前配置的保护设置将保留为存档的保护模板，如果将选项更改回“保护”，则会再次显示。 Azure 门户中不会显示此模板，但如有需要，仍可通过 [PowerShell](configure-templates-with-powershell.md) 管理该模板。 这一行为表示，如果内容具有先前应用了保护设置的此标签，则仍可以访问该内容。
     
-    - **保护**：选择此选项应用保护，然后转到步骤 5 配置保护设置。
-    
-    注意：你可以在此阶段保存新标签，无需进一步配置。 如果保存新标签，标签将配置为应用保护，这样，只有应用标签的人员才可以打开文档或电子邮件，且无任何使用限制。 在某些情况下，这可能是必需的结果，这样用户便可将文件保存到任何位置，并确保只有他们能够打开它。 如果此结果符合你的要求，并且其他人不需要协作处理受保护内容，请直接跳至步骤 12 而不是步骤 5。
+    - 保护：选择此选项应用保护，然后转到步骤 4。
     
     - “删除保护”：如果文档或电子邮件受到保护，选择此选项可删除保护。 然后转到步骤 11。
         

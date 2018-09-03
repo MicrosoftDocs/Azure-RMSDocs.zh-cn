@@ -4,16 +4,16 @@ description: 快速试用 Azure 信息保护入门教程步骤 4 - 查看设置�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: caa7ea12daf9bd946e967dc71bcc5ed275e1a965
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 2429a56163c79468bab681a9544c828c6d218392
+ms.sourcegitcommit: b0c4fe8c522987a7863958ffdc6866a91ebabf86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42803219"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43242184"
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>步骤 4：查看分类、设置标签和保护的实际操作 
 
@@ -21,7 +21,7 @@ ms.locfileid: "42803219"
 
 既然已安装 Azure 信息保护客户端，并打开了 Word 文档，就可以知道使用我们配置的策略开始为文档设置标签并保护文档有多么简单。
 
-保存文档后便会启用分类和保护，但我们将使用未保存的文档，了解如何轻松应用和更改标签。
+保存文档后便会启用分类和保护。 但在我们执行此操作前，我们将使用未保存的文档，了解如何轻松应用和更改标签。
 
 ## <a name="to-manually-change-our-default-label"></a>手动更改默认标签
 
@@ -69,7 +69,7 @@ ms.locfileid: "42803219"
 
     该文档还受到为此标签指定的权限的保护。 单击“文件”选项卡可以确认文档是否处于受保护状态，然后查看“保护文档”的信息。 看到该文档受“机密\财务”的保护以及标签说明。 
     
-    由于标签的保护配置，只有员工可以打开该文档，且其某些操作受限。 例如，因为他们没有打印、复制和提取内容权限，所以无法打印文档或从中复制内容。 这样的限制有助于防止数据丢失。 作为文档的所有者，可以打印该文档和从中复制内容，但是如果将它通过电子邮件发送给组织中的其他用户，他们将无法执行这些操作。
+    由于标签的保护配置，只有员工可以打开该文档，且其某些操作受限。 例如，因为他们没有打印、复制和提取内容权限，所以无法打印文档或从中复制内容。 这样的限制有助于防止数据丢失。 作为文档所有者，你可以打印它并从中进行复制。 但是，如果你将该文档以电子邮件的形式发送给组织中的其他用户，他们将无法执行这些操作。
 
 4. 现在可以关闭此文档。
 

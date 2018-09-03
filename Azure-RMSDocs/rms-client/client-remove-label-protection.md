@@ -4,18 +4,18 @@ description: 说明了如何从由 Azure 信息保护标记的文件中，或从
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a18014a210607b2c9a38cc4c68e955e01403c986
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 4031a332d900e91f66026dd661d83fb07d47e6d7
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805776"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43117849"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>用户指南：从由 Azure 信息保护标记的文件和电子邮件中，或从受 Rights Management 保护的文件和电子邮件中，删除标签和保护
 
@@ -43,6 +43,8 @@ ms.locfileid: "42805776"
 如果不能直接使用“删除标签”图标，请先单击“编辑标签”图标：
 
 ![Azure 信息保护栏 - 编辑标签](../media/edit-label.png)
+
+如果仍然看不到“删除标签”图标，则表示管理员禁止你使用此选项。
 
 > [!NOTE]
 > 如果没有在 Office 应用程序中看到此信息保护栏：

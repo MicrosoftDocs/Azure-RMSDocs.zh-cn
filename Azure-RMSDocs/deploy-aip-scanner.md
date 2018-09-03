@@ -4,18 +4,18 @@ description: 说明如何安装、配置和运行 Azure 信息保护扫描程序
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 77d24243d4f6b38338b2a6d709a252cc4859a2b3
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: ddf9ebcdce4cf51e35dfc76b099194873796919f
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806045"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43117879"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -275,9 +275,9 @@ ms.locfileid: "42806045"
 
 例如，若要将此默认扫描程序行为更改为以常规方式保护其他文件类型，必须手动编辑注册表，并指定要保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 此外，特定于扫描程序：
 
-- 必须指定特定文件扩展名，且不可使用 `*` 通配符。
+- 扫描程序具有其自己的默认行为：默认情况下，仅保护 Office 文件格式。 如果未修改注册表，则扫描程序不会保护任何其他文件类型。
 
-- 扫描程序具有其自己的默认行为：默认情况下，仅保护 Office 文件格式。 扫描程序不会保护未添加到注册表的任何其他文件格式。
+- 除非你使用的是扫描程序的当前预览版，否则必须指定特定文件扩展名，且不可使用 `*` 通配符。 扫描程序的预览版不支持此通配符。
 
 ## <a name="when-files-are-rescanned"></a>重新扫描文件时的情况
 

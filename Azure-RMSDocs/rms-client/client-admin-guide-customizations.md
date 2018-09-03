@@ -4,18 +4,18 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/08/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bb724f8c35ae5ae34f81cfec01fcbabffcbcff44
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 8a91b39b0f503ebb53b8b652de21423ef4cae9c8
+ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805109"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43298008"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -88,6 +88,20 @@ ms.locfileid: "42805109"
 
 此外，请确保这些计算机的 %LocalAppData%\Microsoft\MSIP 文件夹中不具有名为 Policy.msip 的文件。 如果此文件存在，请将其删除。 此文件包含 Azure 信息保护策略，并且可能在编辑注册表之前已下载，如果使用演示选项安装了 Azure 信息保护客户端，那么也可能已下载此文件。
 
+## <a name="modify-the-email-address-for-the-report-an-issue-link"></a>修改“报告问题”链接的电子邮件地址
+
+此配置选项目前处于预览状态，可能随时更改。 它还需要预览版本的 Azure 信息保护客户端。
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+
+当用户从“帮助和反馈”客户端对话框中选择“报告问题”链接时，默认情况下，将在电子邮件中填充 Microsoft 地址。 使用以下高级客户端设置来修改该地址。 例如，为支持人员指定电子邮件地址：`mailto:helpdesk@contoso.com`。 
+
+若要配置此高级设置，请输入以下字符串：
+
+- 密钥：ReportAnIssueLink
+
+- 值：\<HTTP string>
+
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>隐藏 Windows 文件资源管理器中的“分类和保护”菜单选项
 
 创建以下 DWORD 值名称（以及任何数值数据）：
@@ -98,7 +112,9 @@ ms.locfileid: "42805109"
 
 默认情况下，Azure 信息保护客户端会自动尝试连接到 Azure 信息保护服务，以下载最新的 Azure 信息保护策略。 如果知道有计算机在一段时间内无法连接到 Internet，可以编辑注册表，以阻止客户端尝试连接到服务。 
 
-找到以下值名称并将值数据设置为 **0**：
+请注意，在没有 Internet 连接的情况下，客户端无法使用组织的基于云的密钥来应用保护（或删除保护）。 相反，客户端只能使用应用分类或 [HYOK](../configure-adrms-restrictions.md) 保护的标签。
+
+若要配置此设置，请在注册表中找到以下值名称，并将值数据设置为 0：
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
@@ -223,25 +239,21 @@ ms.locfileid: "42805109"
 
 - 值：True
 
-## <a name="protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>使用 PDF 加密 ISO 标准来保护 PDF 文件
+## <a name="dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>不使用 PDF 加密 ISO 标准来保护 PDF 文件
 
 此配置选项目前处于预览状态，可能随时更改。 它还需要预览版本的 Azure 信息保护客户端。
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
-默认情况下，当 Azure 信息保护客户端保护 PDF 文件时，生成文件的文件扩展名为 .ppdf。 可更改此行为，使文件扩展名仍为 .pdf，并符合 PDF 加密 ISO 标准。 有关此标准的详细信息，请参阅[派生自 ISO 32000-1 的文档](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf)（由 Adobe Systems Incorporated 发布）中的第 7.6 节加密。  
+当 Azure 信息保护客户端通用版本 (GA) 保护 PDF 文件时，生成文件的文件扩展名为 .ppdf。 但是，当 Azure 信息保护客户端的当前预览版本保护 PDF 文件时，生成的文件扩展名仍为 .pdf 并遵守 PDF 加密 ISO 标准。 有关此标准的详细信息，请参阅[派生自 ISO 32000-1 的文档](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf)（由 Adobe Systems Incorporated 发布）中的第 7.6 节加密。
 
-要配置此高级设置，请输入以下字符串：
+如果需要客户端的当前预览版还原为 GA 行为，请通过输入以下字符串来使用以下高级设置：
 
 - 键：EnablePDFv2Protection
 
-- 值：True
-
-配置此选项后，当 Azure 信息保护客户端保护 PDF 文件时，此操作会创建一个受保护的 PDF 文档，可使用 Windows 版 Azure 信息保护客户端的预览版本以及支持 PDF 加密 ISO 标准的其他 PDF 阅读器打开该文档。 iOS 和 Android 版 Azure 信息保护应用当前不支持 PDF 加密 ISO 标准。
+- 值：False
 
 要使 Azure 信息保护扫描程序使用新设置，必须重启扫描程序服务。
-
-当前预览版的已知问题：在文档属性中，受保护 PDF 显示的创建者值不正确。
 
 ## <a name="support-for-files-protected-by-secure-islands"></a>支持受 Secure Islands 保护的文件
 

@@ -4,18 +4,18 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/13/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f0f3c6a5f46024083d8e4d105dd535abc1b46552
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 7510350957c867e144704af261053b73fa04651a
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805436"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43118000"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -106,7 +106,9 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 默认情况下，“提供详细信息”链接转到 [Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)网站，但也可以根据 Azure 信息保护策略中的一项[策略设置](../configure-policy-settings.md)，将其配置为转到自定义 URL。
 
-使用“**给我们发送反馈**”链接可以向信息保护团队发送建议或请求。 对于技术支持，请勿将此选项，而是参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)。 
+使用“给我们发送反馈”链接（通用版本）可以向信息保护团队发送建议或请求。 对于技术支持，请勿将此选项，而是参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)。 
+
+“报告问题”链接替换了客户端预览版中的“给我们发送反馈”链接。 默认情况下，此选项向 Microsoft 发送一封电子邮件，但可以通过指定[高级客户端设置](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)来为你的用户配置 HTTP 字符串。 例如，指定支持人员的电子邮件地址。
 
 “导出日志”自动收集并附加 Azure 信息保护客户端的日志文件，如果必须将日志文件发送给 Microsoft 支持人员的话。 最终用户也可以使用此选项，将这些日志文件发送给你的支持人员。
 
@@ -206,7 +208,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 对于预览版本： 
 
-- 安装客户端后运行 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)。 扫描程序和存储库的配置设置将会得到保留。 需要运行此 cmdlet 以更新扫描程序的数据库架构，如果需要，还应为扫描程序服务帐户授予针对扫描程序数据库的删除权限。 
+- 从通用版本 1.29.5.0 或更低版本升级 Azure 信息保护客户端后，运行 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)。 扫描程序和存储库的配置设置将会得到保留。 需要运行此 cmdlet 以更新扫描程序的数据库架构，如果需要，还应为扫描程序服务帐户授予针对扫描程序数据库的删除权限。 
     
     在运行此更新 cmdlet 之前，扫描程序不会运行，通常会在 Windows 事件日志中看到事件 ID 1000，并显示以下错误消息：无效的对象名称“ScannerStatus”。
 

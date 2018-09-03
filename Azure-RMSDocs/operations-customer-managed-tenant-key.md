@@ -4,18 +4,18 @@ description: 当你自己管理 Azure 信息保护租户密钥（自带密钥方
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e910ad5226310f0c76de437c30e95fb7f6ba8f87
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 4dd322c95d9aadc6df73e426fb92d2bb77312ed4
+ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804047"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43298032"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
 
@@ -41,7 +41,7 @@ ms.locfileid: "42804047"
 
 - 你认为租户密钥的主控副本（你掌握的副本）已泄露。
 
-若要将密钥重新生成为所管理的其他密钥，可在 Azure Key Vault 中创建新的密钥，或使用 Azure Key Vault 中已有的其他密钥。 然后按照为 Azure 信息保护实现 BYOK 的相同过程进行操作。
+若要将密钥重新生成为所管理的其他密钥，可在 Azure Key Vault 中创建新的密钥，或使用 Azure Key Vault 中已有的其他密钥。 然后按照为 Azure 信息保护实现 BYOK 的相同过程进行操作。 
 
 1. 仅当新密钥所在密钥保管库与已用于 Azure 信息保护的密钥保管库不同时：授权 Azure 信息保护使用此密钥保管库，方法是使用 [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) cmdlet。
 
@@ -52,6 +52,8 @@ ms.locfileid: "42804047"
 关于每个步骤的详细信息：
 
 - 若要将密钥重新生成为所管理的其他密钥，请参阅[为 Azure 信息保护租户密钥实现 BYOK](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)。
+    
+    如果你重新生成在本地创建的受 HSM 保护的密钥并传输到密钥保管库，则可以使用与当前密钥相同的安全环境和访问卡。
 
 - 若要重新生成改为由 Microsoft 为你管理的密钥，请参阅 Microsoft 托管操作的[重新生成租户密钥](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key)部分。
 

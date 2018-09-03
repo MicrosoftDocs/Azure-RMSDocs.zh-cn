@@ -4,18 +4,18 @@ description: 查看和使用要求安装 Azure 信息保护客户端的受保护
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 518fd44053f6a6ee0c4b45024d5be0ac0122ec22
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 54042dfd49c1f12fc50eca127dfc0441686b1513
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808215"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43117952"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>用户指南：查看和使用受 Rights Management 保护的文件
 
@@ -28,13 +28,7 @@ ms.locfileid: "42808215"
 此查看器作为 Azure 信息保护客户端的一部分自动安装，你也可以单独进行安装。 你可以从 Microsoft 网站的 [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970)页面中同时安装客户端和查看器。 有关安装客户端的详细信息，请参阅[下载和安装 Azure 信息保护客户端](install-client-app.md)。
 
 > [!NOTE]
-> 虽然安装客户端可提供更多功能，但它需要本地管理员权限，并且完整功能需要组织的相应服务：
-> 
->-Azure 信息保护
-> 
->Azure Rights Management
-> 
->Active Directory Rights Management Services 
+> 虽然安装客户端可提供更多功能，但它需要本地管理员权限，并且完整功能需要组织的相应服务。 例如，Azure 信息保护或 Active Directory Rights Management Services。
 > 
 > 如果另一组织中的某人向你发送了受保护文档，或者你没有访问你的电脑的本地管理员权限，请安装查看器。
 

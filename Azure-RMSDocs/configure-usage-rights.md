@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 61d57cb33175c3c3e87d615cee65e2b82f21ab74
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 9f7c9ef4e6a6eccc1f42fa60a78550f53d4a64b6
+ms.sourcegitcommit: b2d5c77bf8a0271d8d23f170314c0f49c3a328b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808766"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42920663"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -98,7 +98,7 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 尽管**不得转发**看似用户（和 Exchange 管理员）可选择的默认权限管理模板，但此选项并不是模板。 因此在 Azure 门户中查看和管理保护模板时，你看不到此选项。 相反，“不得转发”选项是用户对其电子邮件收件人动态应用的一组使用权限。
 
-当“不要转发”选项应用于一封电子邮件后，此电子邮件会被加密，且收件人必须要进行身份验证。 收件人无法转发、打印或从此电子邮件中进行复制，也无法保存附件或另存为其他名称。 例如，在 Outlook 客户端中，“转发”按钮和“另存为”、“保存附件”和“打印”菜单选项将不可用，并且无法添加或更改“收件人”、“抄送”或“密件抄送”框中的收件人。
+当“不要转发”选项应用于一封电子邮件后，此电子邮件会被加密，且收件人必须要进行身份验证。 然后，收件人将无法转发、打印它或从中进行复制。 例如，在 Outlook 客户端中，“转发”按钮将不可用，“另存为”和“打印”菜单选项将不可用，并且无法添加或更改“收件人”、“抄送”或“密件抄送”框中的收件人。
 
 附加到该电子邮件的未受保护 [Office 文档](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)自动继承相同的限制。 应用于这些文档的使用权限是“编辑内容，编辑”、“保存”、“查看，打开，读取”和“允许使用宏”。 如果附件需要不同的使用权限或者你的附件不是支持此继承保护的 Office 文档，请先保护文件，然后再将其附加到电子邮件。 然后，你可以为该文件分配所需的特定使用权限。 
 
@@ -127,9 +127,9 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 或者，可以使用通过 [Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) 命令 Set-IRMConfiguration 设置的以下任一配置参数来更改此文档的保护继承。 如果无需在用户通过身份验证后保留文档的原始保护，请使用这些选项：
 
-- 若要仅为在其浏览器中查看文档的收件人删除文档的保护（通常是因为该文档发送至社交提供商地址，例如 Gmail）：`Set-IRMConfiguration -DecryptAttachmentFromPortal $true`。 保护会在这些收件人下载文档后遭删除。
+- 若要为所有收件人删除文档保护：`Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true`。 当这些收件人打开电子邮件时，文档不受保护。
 
-- 若要始终为所有收件人删除文档保护：`Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true`。 当这些收件人打开电子邮件时，文档不受保护。
+- 若要仅为在其浏览器中查看文档的收件人删除文档的保护（通常是因为该文档发送至社交提供商地址，例如 Gmail）：`Set-IRMConfiguration -DecryptAttachmentFromPortal $true`。 保护会在这些收件人下载文档后遭删除。
 
 有关仅为在其浏览器中查看文档的收件人删除保护设置的详细信息，请参阅 Office 博客文章：[Office 365 邮件加密中现在提供的附件管理控制](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)。 如果确实需要附加的文档以保留原始保护，请参阅[使用 Azure 信息保护来保护文档协作](secure-collaboration-documents.md)。
 

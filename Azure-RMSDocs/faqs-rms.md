@@ -4,19 +4,19 @@ description: 有关 Azure 信息保护中数据保护服务 Azure Rights Managem
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0964d6de3f06d8620de89d9c4c9cca65a64b71c1
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 67a3720f38faab750f04e91d7a4848cf88ae4eef
+ms.sourcegitcommit: b0c4fe8c522987a7863958ffdc6866a91ebabf86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805947"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43242208"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -73,7 +73,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 ## <a name="ive-protected-a-document-and-now-want-to-change-the-usage-rights-or-add-usersdo-i-need-to-reprotect-the-document"></a>我已保护一个文档，但现在想要更改使用权限或添加用户，是否需要重新保护该文档？
 
-如果该文档使用的是标签或模板进行保护，则无需重新保护该文档。 通过更改使用权限来修改标签或模板或者添加新组（或用户），然后保存并发布这些更改：
+如果该文档使用的是标签或模板进行保护，则无需重新保护该文档。 通过更改使用权限来修改标签或模板或者添加新组（或用户），然后保存这些更改：
 
 - 如果用户在你进行更改之前没有访问过该文档，则更改会在他们打开该文档时立即生效。
 
