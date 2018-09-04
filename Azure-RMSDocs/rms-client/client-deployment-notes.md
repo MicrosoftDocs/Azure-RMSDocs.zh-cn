@@ -164,7 +164,7 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 
 3. **Azure Rights Management 发现服务**：RMS 客户端连接到 https://discover.aadrm.com，此时会提示用户进行身份验证。
 
-    身份验证成功后，将使用进行身份验证所用的用户名（和域）来标识要使用的 Azure 信息保护租户。 会向 RMS 客户端返回该用户帐户要使用的 Azure 信息保护 URL。 URL 采用以下格式：https://\<YourTenantURL\>/_wmcs/licensing 
+    身份验证成功后，将使用进行身份验证所用的用户名（和域）来标识要使用的 Azure 信息保护租户。 会向 RMS 客户端返回该用户帐户要使用的 Azure 信息保护 URL。 URL 采用以下格式： https://\<YourTenantURL\>/_wmcs/licensing 
 
     例如：5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing
 
