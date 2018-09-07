@@ -4,18 +4,18 @@ description: 适用于 Windows 的 Azure 信息保护客户端可帮助用户保
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/02/2017
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 2cf46bf9-7d23-4f49-b5c1-7ed7b71c858f
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8773c1e9bded5bdf0f34ce070c41cb94ac079d44
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: cb8b747c4ea2951848a668560107c4e4555c710c
+ms.sourcegitcommit: 99b33cee47bc4588174d44e90ade16edba12ee44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807220"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380778"
 ---
 # <a name="azure-information-protection-user-guide"></a>Azure 信息保护用户指南
 
