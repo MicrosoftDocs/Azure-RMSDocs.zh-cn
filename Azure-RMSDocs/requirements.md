@@ -4,18 +4,18 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/22/2018
+ms.date: 08/31/2018
 ms.topic: get-started-article
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 03b97ca4324b9352db7abec37666e7de262e6f39
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 0cfaaa199178b7bede1d5b0d3fe54dd43dcfbf01
+ms.sourcegitcommit: beb4e480e0e821e32c9d35e86f2cf4321005c521
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808028"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43663393"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -90,7 +90,7 @@ Azure 信息保护客户端可使用以下 Office 版本中的 Word、Excel、Po
 
 - 含 2016 应用或 2013 应用的 Office 365 ProPlus（即点即用或基于 Windows Installer 的安装）
     
-    包含 Azure 信息保护数据保护的大多数 Office 365 订阅（并非所有）都附带这些版本的 Office。 检查你的订阅信息，确定是否包含 Office 365 专业增强版。 你还可以在 [Azure 信息保护数据表](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)中找到此信息。
+    包含 Azure 信息保护数据保护功能的大多数 Office 365 订阅（并非所有）都附带这些版本的 Office。 检查你的订阅信息，确定是否包含 Office 365 专业增强版。 你还可以在 [Azure 信息保护数据表](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)中找到此信息。
 
 - Office Professional Plus 2016
 
@@ -102,7 +102,7 @@ Office 的其他版本无法通过使用 Rights Management 服务保护文档和
 
 Azure 信息保护客户端不支持同一台计算机上的多个 Office 版本。 此客户端也不支持在 Office 中的不同用户帐户之间切换。
 
-有关支持数据保护服务的 Office 版本的信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。
+有关支持保护服务的 Office 版本的信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。
 
 ## <a name="firewalls-and-network-infrastructure"></a>防火墙和网络基础结构
 
@@ -110,7 +110,7 @@ Azure 信息保护客户端不支持同一台计算机上的多个 Office 版本
 
 除了 Office 文章中特定于 Azure 信息保护的信息外：
 
-- 允许 TCP 443 上的 HTTPS 流量流入 api.informationprotection.azure.com。
+- 允许 TCP 443 上的 HTTPS 流量流入 informationprotection.hosting.portal.azure.net。
 
 - 如果使用要求进行身份验证的 Web 代理，必须将其配置为将集成 Windows 身份验证与用户的 Active Directory 登录凭据配合使用。
 

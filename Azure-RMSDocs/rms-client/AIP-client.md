@@ -4,18 +4,18 @@ description: 有关适用于 Windows 的 Azure 信息保护客户端的信息资
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: f9b61b6b-05ba-4422-b8b0-cd20af774a2b
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c10558c9a24d5348bd3188cbdf352653df993867
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 33312efdaaa9a9b65e79f2f5b40fd910db35a686
+ms.sourcegitcommit: 99b33cee47bc4588174d44e90ade16edba12ee44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808910"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380695"
 ---
 # <a name="azure-information-protection-client-for-windows"></a>适用于 Windows 的 Azure 信息保护客户端
 
@@ -33,5 +33,12 @@ ms.locfileid: "42808910"
 > 还有适用于 iOS 和 Android 的 Azure 信息保护。 有关详细信息，请参阅[适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题](mobile-app-faq.md )
 > 
 > 对于 Mac 计算机和 Windows Phone：使用移动设备的 RMS 共享应用并阅读[适用于移动设备和 Mac 平台的 Rights Management 共享应用程序常见问题](http://technet.microsoft.com/dn451248)。
+
+## <a name="install-instructions"></a>安装说明
+
+- [管理员](client-admin-guide-install.md)
+
+- [最终用户](install-client-app.md)
+
 
 

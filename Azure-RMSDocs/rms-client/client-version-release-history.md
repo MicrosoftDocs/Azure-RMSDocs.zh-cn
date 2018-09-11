@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 945b05a99122b7caf1d9a73ea8b75717a5522660
-ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
+ms.openlocfilehash: 3e067f42b216efda48d46cd95be66c4939bf6240
+ms.sourcegitcommit: ba7ef4fe439bbf00cdad888017cbb8f44c801f77
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43117921"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43348685"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -59,6 +59,8 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 - 支持受 Secure Islands 保护的文件（PDF 和 Office 文档以外的文件）。 例如，受保护的文本和图片文件。 或者，文件扩展名为 .pfile 的文件。 此支持可实现新方案，例如 Azure 信息保护扫描程序可检查这些文件中的敏感信息，并自动为 Azure 信息保护重新标记它们。 [详细信息](client-admin-guide-customizations.md#support-for-files-protected-by-secure-islands)
 
 - “帮助和反馈”对话框中的“给我们发送反馈”链接被替换为“报告问题”，可以对其进行自定义。 默认情况下，此选项向 Microsoft 发送一封电子邮件。 可以更改此电子邮件地址，以便当你的用户选择此选项时，它将使用你所指定的 HTTP 字符串。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 若要修改此地址，请使用[高级客户端设置](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)。
+
+- 用以删除其他标记解决方案已将其应用到文档中的页眉和页脚的新高级客户端设置。 [详细信息](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)
 
 - 对于 Azure 信息保护扫描程序：
 
@@ -161,7 +163,6 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 **新增功能**：
 
 - Azure 信息保护扫描程序：客户端附带的 PowerShell 模块包含新的 cmdlet，用于安装和配置扫描程序，以便可以发现本地数据存储上的文件并对其进行分类和保护。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-aip-scanner.md)。 
-
 - 现在可以通过在文本字符串中使用“If.App”变量语句并标识应用程序类型为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记。 [更多信息]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
 - 支持[策略设置](../configure-policy-settings.md)“在 Office 应用中显示“信息保护”栏”。 此设置已关闭时，用户可以通过功能区上的“保护”按钮选择标签。
