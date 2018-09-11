@@ -4,18 +4,18 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 09/04/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8a91b39b0f503ebb53b8b652de21423ef4cae9c8
-ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
+ms.openlocfilehash: 3e6d5f30e3db48eced850649976ac4da56271622
+ms.sourcegitcommit: a42bb93adbb5be2cd39606fed3de0785ac52dd65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43298008"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43703924"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -76,7 +76,7 @@ ms.locfileid: "43298008"
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>如果组织拥有组合许可证，则强制执行仅保护模式
 
-如果组织不具有任何 Azure 信息保护许可证，但有包含用于数据保护的 Azure 权限管理服务的 Office 365 许可证，则用于 Windows 的 Azure 信息保护客户端会自动在[仅保护模式](client-protection-only-mode.md)下运行。
+如果组织不具有任何 Azure 信息保护许可证，但有包含用于数据保护的 Azure Rights Management 服务的 Office 365 许可证，则用于 Windows 的 Azure 信息保护客户端会自动在[仅保护模式](client-protection-only-mode.md)下运行。
 
 但是，如果贵组织已订阅 Azure 信息保护，默认情况下所有 Windows 计算机都可以下载 Azure 信息保护策略。 Azure 信息保护客户端不会进行许可证检查以及强制执行。 
 
@@ -309,6 +309,8 @@ ms.locfileid: "43298008"
 
 指定所选的迁移规则名称。 请使用描述性名称，这有助于确定应如何将旧标记解决方案中的一个或多个标签映射到 Azure 信息保护标签。 此名称显示在扫描程序报告和事件查看器中。 
 
+请注意，此设置不删除旧标签可能已应用的任何视觉标记。 若要删除页眉和页脚，请参阅下一部分[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)。
+
 ### <a name="example-1-one-to-one-mapping-of-the-same-label-name"></a>示例 1：相同标签名称的一对一映射
 
 对于 Secure Islands 标记为“机密”的文档，应由 Azure 信息保护重新标记为“机密”。
@@ -362,10 +364,107 @@ ms.locfileid: "43298008"
 |LabelbyCustomProperty|2beb8fe7-8293-444c-9768-7fdc6f75014d,"Secure Islands label contains Internal",Classification,.\*Internal.\*|
 
 
+## <a name="remove-headers-and-footers-from-other-labeling-solutions"></a>删除其他标记解决方案中的页眉和页脚
+
+此配置选项目前处于预览状态，可能随时更改。 它还需要预览版本的 Azure 信息保护客户端。
+
+此配置使用必须在 Azure 门户中配置的多项[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+
+这些设置允许在其他标记解决方案已应用这些视觉标记的情况下从文档中删除或替换页眉或页脚。 例如，旧页脚包含旧标签的名称，现在使用新的标签名及其自己的页脚将标签迁移到 Azure 信息保护。
+
+当客户端在其策略中获取此配置时，如果文档在 Office 应用中打开并且任何 Azure 信息保护标签已应用到该文档，则删除或替换旧的页眉和页脚。
+
+Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint 中使用它时，会对这些应用的性能产生负面影响。 该配置允许你根据应用程序来定义设置，例如，搜索 Word 文档页眉和页脚中的文本，而不是 Excel 电子表格或 PowerPoint 演示文稿中的。
+
+由于该模式匹配会影响用户的性能，建议你将 Office 应用程序类型（Word、Excel、PowerPoint）限制为仅需要在其中进行搜索的那些类型：
+
+- 键：RemoveExternalContentMarkingInApp
+
+- 值：\<Office 应用程序类型 WXP> 
+
+例如：
+
+- 若要仅搜索 Word 文档，请指定 W。
+
+- 若要搜索 Word 文档和 PowerPoint 演示文稿，请指定 WP。
+
+然后需要至少一个高级客户端设置 ExternalContentMarkingToRemove，指定页眉或页脚的内容以及如何删除或替换它们。
+
+### <a name="how-to-configure-externalcontentmarkingtoremove"></a>如何配置 ExternalContentMarkingToRemove
+
+指定 ExternalContentMarkingToRemove 键的字符串值时，拥有三个使用正则表达式的选项：
+
+- 用以删除页眉或页脚中所有内容的部分匹配。
+    
+    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 想要完全删除这些页面或页脚。 可指定值：`*TEXT*`。
+
+- 用以删除页眉或页脚中特定字词的完全匹配。
+    
+    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 只想删除单词 TEXT，结果使页眉或页脚字符串变为 TO REMOVE。 可指定值：`TEXT `。
+
+- 用以删除页眉或页脚中所有内容的完全匹配。
+    
+    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 想要删除其字符串为 TEXT TO REMOVE 的页眉或页脚。 可指定值：`^TEXT TO REMOVE$`。
+    
+
+指定的字符串的匹配模式不区分大小写。 最大字符串长度为 255 个字符。
+
+因为某些文档可能包括不可见字符或者不同类型的空格或制表符，可能检测不到指定的短语或句子的字符串。 只要有可能，指定单个易区分的单词作为值，并确保在生产环境中部署之前测试结果。
+
+- 键：ExternalContentMarkingToRemove
+
+- 值：\<要匹配的字符串，定义为正则表达式> 
+
+#### <a name="multiline-headers-or-footers"></a>多行页眉或页脚
+
+如果页眉或页脚文本不只一行，则为每行创建一个键和值。 例如，下面是具有两行文本的页脚：
+
+The file is classified as Confidential
+
+Label applied manually
+
+若要删除这个多行页脚，可以创建以下两个条目：
+
+- 键 1：ExternalContentMarkingToRemove
+
+- 键值 1：\*Confidential*
+
+- 键 2：ExternalContentMarkingToRemove
+
+- 键值 2：**\*Label applied*** 
+
+#### <a name="optimization-for-powerpoint"></a>针对 PowerPoint 的优化
+
+PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你指定的但不属于页面或页脚的形状，可使用以下附加高级客户端设置：PowerPointShapeNameToRemove。 我们还建议使用此设置来避免检查所有形状中的文本，因为这将占用大量资源。
+
+如果未指定这项附加的高级客户端设置，并且 PowerPoint 包括在 RemoveExternalContentMarkingInApp 键值中，将对所有形状检查你在 ExternalContentMarkingToRemove 值中指定的文本。 
+
+查找用作页眉或页脚的形状的名称：
+
+1. 在 PowerPoint 中，显示“选择”窗格：“格式”选项卡 >“排列”组 >“选择”窗格。
+
+2. 选择幻灯片上包含页眉或页脚的形状。 所选形状的名称现在突出显示在“选择”窗格中。
+
+使用形状的名称为 PowerPointShapeNameToRemove 键指定一个字符串字。 
+
+示例：形状名称是 fc。 若要删除具有此名称的形状，则指定值：`fc`。
+
+- 键：PowerPointShapeNameToRemove
+
+- 值：\<PowerPoint 形状名称> 
+
+若要删除多个 PowerPoint 形状，则有多少要删除的形状就创建多少个 PowerPointShapeNameToRemove 键。 对于每个条目，指定要删除的形状的名称。
+
+默认情况下，只检查主幻灯片的页眉和页脚。 若要将检查范围扩展到所有幻灯片，将占用大量资源，则可以使用 RemoveExternalContentMarkingInAllSlides 附加高级客户端设置：
+
+- 键：RemoveExternalContentMarkingInAllSlides
+
+- 值：True
+
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>使用现有自定义属性标记 Office 文档
 
 > [!NOTE]
-> 如果结合使用此配置和上一部分中的配置，从另一个标记解决方案进行迁移，将优先考虑标记迁移设置。 
+> 如果结合使用此配置和用于[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)的配置，将优先考虑标记迁移设置。 
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
