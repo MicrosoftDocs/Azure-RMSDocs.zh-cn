@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/27/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8ed59d980721072668f8a970495689ef0d70d615
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 959d0b8fb8d36c7a3a9205140b33a2e71dce2d7a
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805630"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44149372"
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>保护级别 – 本机和常规
 

@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6228eb08940b9b27d751ca548a5286ed3c1e2145
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 0642dcf6b2d8db1921cd2c5d4d662a36e8f78ead
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42803856"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44149389"
 ---
 # <a name="activating-azure-rights-management"></a>激活 Azure Rights Management
 

@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 05/16/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6aeef8c679a55043f2838cba9281c1e04787911c
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: f147ad04ec61e7a5796cbb1f02c7fa33afdeae7d
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805278"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44149678"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>记录和分析 Azure Rights Management 服务的使用情况
 

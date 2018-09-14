@@ -5,18 +5,18 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/31/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
 ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 36f4cf97035ff43060d1838ba7276bf5a5ca6d86
-ms.sourcegitcommit: 99b33cee47bc4588174d44e90ade16edba12ee44
+ms.openlocfilehash: 8fe14ef040b00e2f54f535be2927efd7284a5287
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43380723"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44148261"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
