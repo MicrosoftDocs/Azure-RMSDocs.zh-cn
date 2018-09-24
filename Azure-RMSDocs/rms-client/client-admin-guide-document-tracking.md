@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ae3600be6093321499a6202a08612daad8bd0ae3
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 181183d701cb5fa4891be0aa3e0ea3028682bea7
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804597"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44150834"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>管理员指南：配置和使用 Azure 信息保护的文档跟踪
 
@@ -81,7 +81,7 @@ ms.locfileid: "42804597"
 通过管理员模式，可以查看组织用户选择通过 Azure 信息保护客户端进行跟踪的文档，或组织用户通过 Rights Management 共享应用程序共享的文档。
 
 > [!NOTE] 
-> 如果是全局管理员，但仍看不到此图标，原因是尚未自行分享任何文档。 在这种情况下，请使用以下 URL 访问文档跟踪站点：https://portal.azurerms.com/#/admin
+> 如果是全局管理员，但仍看不到此图标，原因是尚未自行分享任何文档。 在这种情况下，请使用以下 URL 访问文档跟踪站点： https://portal.azurerms.com/#/admin
 
 在管理员模式下执行的操作会经过审核并记录在使用情况日志文件中，必须确认后才能继续。 有关此日志记录的详细信息，请参阅下一节。
 

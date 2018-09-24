@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: db416a1d6a6e367614e892675955663461fe67de
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 3ce77f2e90f1bdf6cf709b10202a673d4bea0c2e
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808735"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44146703"
 ---
 # <a name="use-keyboard-shortcuts-in-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序中的键盘快捷键
 

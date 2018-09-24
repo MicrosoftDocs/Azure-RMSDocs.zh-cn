@@ -6,18 +6,18 @@ author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 2BD4F55D-BA88-4516-86FB-E2E6535D1690
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1737d1a1899cd8d794e837b9ed7752d2b883e82e
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 204b68981ff63ae62e0690c209c9d6e29f43b237
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808642"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44150290"
 ---
 # <a name="linux-api-reference"></a>Linux API 参考
 

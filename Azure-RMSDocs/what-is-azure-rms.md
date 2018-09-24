@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 05/01/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b6b19595e855c6a2eb9c1eba7193110c7e96af4b
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 9cc8b1a52a4d538e2bd1ccd622cf0c68bbe16d0b
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807353"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44147227"
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
 

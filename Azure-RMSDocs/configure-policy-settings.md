@@ -5,15 +5,15 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/12/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 29dc6601bfa33fed84f0b26e46a5caf54df582d0
-ms.sourcegitcommit: beb4e480e0e821e32c9d35e86f2cf4321005c521
+ms.openlocfilehash: 118b65d1dc76e2df7b1fd639b6ea224cb5e8220c
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43663410"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151735"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 

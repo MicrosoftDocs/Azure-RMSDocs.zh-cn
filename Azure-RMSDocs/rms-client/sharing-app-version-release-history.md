@@ -5,18 +5,18 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.custom: askipteam
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cb26f5ca4df2c409a6d655eb0bc6a6332f08e054
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 54b8a2adaaa88c028c35184e9edf533491861001
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42803193"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44149797"
 ---
 # <a name="rights-management-sharing-application-version-release-history"></a>权限管理共享应用程序：版本发行历史记录
 

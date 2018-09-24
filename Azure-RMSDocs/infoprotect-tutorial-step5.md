@@ -6,17 +6,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dda9bf1ae16f76bcfa8d4abf95529ce933c71a67
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 076c7f78f4a1458a4d83272b0a8b281341ebb75d
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807333"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44148624"
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>步骤 5：了解如何在实际操作中共享受保护的文件和如何跟踪文档 
 
@@ -58,7 +58,7 @@ ms.locfileid: "42807333"
 
 7. 修改默认邮件描述，使其适合你的收件人。 但是，请添加以下文本：
 
-    **我已使用 Microsoft Azure 信息保护对文件提供保护。若是首次使用，请参阅这些说明：https://aka.ms/rms-signup。** 
+    **我已使用 Microsoft Azure 信息保护对文件提供保护。若是首次使用，请参阅这些说明： https://aka.ms/rms-signup。** 
 
     ![Azure 信息保护快速入门教程步骤 5 — 通过电子邮件共享受保护的文档](./media/share-protected-emailv2.png)
 

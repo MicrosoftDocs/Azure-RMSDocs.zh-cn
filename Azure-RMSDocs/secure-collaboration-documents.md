@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 06/21/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 50182f5d0df5d204e8ffbfe3f1d27feafa3eee8e
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 5cacc32cab0526e1083ec9e3caa7203a70a0ec6a
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807660"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44148155"
 ---
 # <a name="secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护保护文档协作
 
@@ -54,9 +54,9 @@ ms.locfileid: "42807660"
     
     - 对于第一个外部组织中的所有用户：选择“输入详细信息”，然后在组织的租户中键入域名。 例如，fabrikam.com。
     
-    - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如，sales@contoso.com。
+    - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如，sales@contoso.com 。
     
-    - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，键入用户的电子邮件地址。 例如，bengi.turan@gmail.com。 
+    - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，键入用户的电子邮件地址。 例如，bengi.turan@gmail.com 。 
 
 4. 若要向所有这些用户授予相同的权限：对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。
     

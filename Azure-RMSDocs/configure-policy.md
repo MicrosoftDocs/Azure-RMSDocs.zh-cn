@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 1c57b2ba8ef5582fd68744c58e97bcbdc1dcd388
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 57c410432377d5a98c132239ac1805293d1a5133
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807518"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151480"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -53,7 +53,7 @@ Azure 信息保护支持不同级别的订阅：
 
 若要登录到 Azure 门户以配置和管理 Azure 信息保护：
 
-- 使用以下链接：https://portal.azure.com
+- 使用以下链接： https://portal.azure.com
 
 - 使用具有以下[管理员角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一的帐户：
     

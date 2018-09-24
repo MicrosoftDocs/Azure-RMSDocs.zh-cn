@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bb55fa6156eb27adf6ef2aaa2fde37142baf28af
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: c876d4ffb3ecfb04aeb8aaad3dab83ea20ac35fa
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805297"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44148964"
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365：配置客户端和联机服务，以使用 Azure 权限管理服务
 
@@ -495,7 +495,7 @@ ms.locfileid: "42805297"
 
     1.  搜索 `$sharepointAdminCenterUrl` 并将示例值替换为你自己的 SharePoint 管理中心 URL。
 
-        当你进入 SharePoint 管理中心时，会发现此值用作基 URL，并且具有以下格式：https://*&lt;tenant_name&gt;*-admin.sharepoint.com
+        当你进入 SharePoint 管理中心时，会发现此值用作基 URL，并且具有以下格式： https://*&lt;tenant_name&gt;*-admin.sharepoint.com
 
         例如，如果租户名称为“contoso”，则会指定：**https://contoso-admin.sharepoint.com**
 
@@ -509,7 +509,7 @@ ms.locfileid: "42805297"
 
         或者，请参见脚本中有关如何通过导入包含需要配置的所有 URL 的 .CSV 文件来替换此数组的注释。  我们提供了另一个示例脚本，用于自动搜索并提取 URL 以填充此 .CSV 文件。 当你准备好执行此操作时，立即在这些步骤之后使用[将所有 OneDrive for Business URL 输出到一个 .CSV 文件的其他脚本](#additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file)部分。
 
-        用户的 OneDrive for Business 的 Web URL 采用以下格式：https://*&lt;tenant name&gt;*-my.sharepoint.com/personal/*&lt;user_name&gt;*_*&lt;tenant name&gt;*_com
+        用户的 OneDrive for Business 的 Web URL 采用以下格式： https://*&lt;tenant name&gt;*-my.sharepoint.com/personal/*&lt;user_name&gt;*_*&lt;tenant name&gt;*_com
 
         例如，如果用户在 contoso 租户中的用户名为“rsimone”，则会指定：**https://contoso-my.sharepoint.com/personal/rsimone_contoso_com**
 
@@ -526,7 +526,7 @@ ms.locfileid: "42805297"
 > [!TIP]
 > 你还可以使用此脚本为 SharePoint Online 库配置 IRM。 对于此配置，你可能希望启用附加选项“不允许用户上传不支持 IRM 的文档”，以确保库只包含受保护的文档。    为此，请将 `-IrmReject` 参数添加到脚本中的 Set-IrmConfiguration 命令。
 >
-> 你还需要修改 `$webUrls` 变量（例如，https://contoso.sharepoint.com）和 `$listTitle` 变量（例如，$Reports）。
+> 你还需要修改 `$webUrls` 变量（例如， https://contoso.sharepoint.com）和 `$listTitle` 变量（例如，$Reports）。
 
 如果需要对用户的 OneDrive for Business 库禁用 IRM，请参阅[对 OneDrive for Business 禁用 IRM 的脚本](#script-to-disable-irm-for-onedrive-for-business)部分。
 

@@ -5,15 +5,15 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/24/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: bc60f1791cd7c36f179851b1759a46ba3980dd96
-ms.sourcegitcommit: b2d5c77bf8a0271d8d23f170314c0f49c3a328b1
+ms.openlocfilehash: 6329c9b3316c2d64cb07cfae259998204d04112d
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42920300"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151072"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 

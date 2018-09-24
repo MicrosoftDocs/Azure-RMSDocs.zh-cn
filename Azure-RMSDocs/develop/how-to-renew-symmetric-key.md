@@ -6,15 +6,15 @@ author: lleonard-msft
 manager: mbaldwin
 ms.author: alleonar
 ms.date: 03/27/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a0b8c8f0-6ed5-48bb-8155-ac4f319ec178
-ms.openlocfilehash: b369a9644698f1ad9fbd1c1e037a5a9be7bc6dc6
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 3c9af3b0ab1fc810e85a08b62980b8d275a678c1
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806964"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44147176"
 ---
 # <a name="how-to-renew-the-symmetric-key-in-azure-information-protection"></a>如何：在 Azure 信息保护中续订对称密钥
 
