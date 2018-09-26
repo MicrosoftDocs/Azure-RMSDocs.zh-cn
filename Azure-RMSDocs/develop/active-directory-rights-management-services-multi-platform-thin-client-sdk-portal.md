@@ -6,18 +6,18 @@ author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 09bc3a73dc0cb12ba7fd0797df0fb54c78aa791d
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 12da69e59b45348a113ec878f77a037eed2a8fdd
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42802948"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151578"
 ---
 # <a name="rights-management-sdk-42"></a>Rights Management SDK 4.2
 

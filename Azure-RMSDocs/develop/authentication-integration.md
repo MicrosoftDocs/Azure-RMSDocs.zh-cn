@@ -6,18 +6,18 @@ author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 03/13/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: f54e0ab37bf5f46f1d83ff64d0bd10571c640c5e
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 1adb21ac41a922ebb3636fcce9e13c9fd785930d
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804774"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151650"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>如何使用 Azure AD 注册应用并为其启用 RMS
 

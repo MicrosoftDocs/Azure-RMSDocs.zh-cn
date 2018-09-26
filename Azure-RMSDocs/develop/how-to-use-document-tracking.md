@@ -6,18 +6,18 @@ author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 99c9e8ee774c5048e4ab88170fc2feccda921a9e
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 1f9d929cc10f78bbdb98ac47083d8ff9d9d8136c
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808807"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151397"
 ---
 # <a name="how-to-use-document-tracking"></a>如何：使用文档跟踪
 

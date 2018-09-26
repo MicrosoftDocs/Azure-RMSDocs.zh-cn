@@ -5,15 +5,15 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: 1b657b1cf1aa6ea942e3e0d87da340312b6dcadf
-ms.sourcegitcommit: b0c4fe8c522987a7863958ffdc6866a91ebabf86
+ms.openlocfilehash: 203964dfb153b45c515fa93c8cb6b69ebe3fbd37
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43242039"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151633"
 ---
 # <a name="step-3-install-the-client"></a>步骤 3：安装客户端
 

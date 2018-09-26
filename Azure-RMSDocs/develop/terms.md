@@ -6,18 +6,18 @@ author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 01/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 2ed024f518c41c10f010030622a632649b86b0e5
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 8ddf0b8722111ff2cd4c433337c4e0c930b02009
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42803568"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151548"
 ---
 # <a name="terms"></a>条款
 

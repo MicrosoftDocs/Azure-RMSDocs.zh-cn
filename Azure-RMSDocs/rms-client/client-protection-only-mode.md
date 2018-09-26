@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: abedd5d586bc498160f55f8d150f6f90d666a604
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 5a2b01af0e246e732d087a344ecf037c13a47546
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42803873"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151554"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>用户指南：Azure 信息保护客户端的仅保护模式
 

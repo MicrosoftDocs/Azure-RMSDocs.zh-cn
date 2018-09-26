@@ -2,20 +2,20 @@
 title: Azure 信息保护开发人员指南
 description: 开发人员可使用 Azure 信息保护来保护和管理所有类型的文件
 author: lleonard-msft
-ms.author: alleonar
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 10/11/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 59c9a2db3f0959a5c4bfb9e65248598b14276825
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 54eaa9819ce1bffd85bb11b7e1936abacbd5457b
+ms.sourcegitcommit: 07af86511a394274f10cf1340de4cf4bad6d1675
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808553"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46473794"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 

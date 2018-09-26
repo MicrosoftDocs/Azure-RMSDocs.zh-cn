@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4f6491e63cf5eca1274ddc7727320dc739f4fe43
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 871a9c34e3b02fcf1e7295228d1c79f9840f719b
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42803423"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151565"
 ---
 # <a name="remove-protection-from-a-file-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序移除对文件的保护
 

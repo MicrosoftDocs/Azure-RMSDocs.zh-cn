@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 05/16/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5b48fc00306b9d1d6cef9cfc3b32136cc3e17340
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 36ca84c29891efc3bdcaa42c633b4c87ad4ce1b6
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806599"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151429"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
@@ -105,7 +105,7 @@ ms.locfileid: "42806599"
     Get-help .\GenConnectorConfig.ps1 -detailed
     ```
 
-若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，https://connector.contoso.com。 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
+若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如， https://connector.contoso.com 。 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
 
 > [!IMPORTANT]
 > 当你运行此工具时，请确保指定组织的负载平衡 RMS 连接器的名称，而不要指定运行 RMS 连接器服务的单个服务器的名称。
