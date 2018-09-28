@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6fd4c5768d29a231960b3e048c74d4c0e5ec3e7d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 7e72aa9af0d248f54880f8b5bb6df0ce75018f2b
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149916"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211218"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护客户端文件和客户端使用情况日志记录
 
@@ -87,7 +87,7 @@ ms.locfileid: "44149916"
     
 若要了解保护服务的使用情况日志记录，请参阅[记录和分析 Azure 权限管理服务的使用情况](../log-analyze-usage.md)
 
-
+若要了解保护服务的使用情况日志记录，请参阅[记录和分析 Azure 权限管理服务的使用情况](../log-analyze-usage.md)
 
 ## <a name="next-steps"></a>后续步骤
 现在你已识别了与 Azure 信息保护客户端关联的所有日志文件，若要了解支持此客户端所需的其他信息，请参阅以下内容：
