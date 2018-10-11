@@ -52,7 +52,7 @@ Windows 应用商店应用程序可以使用 Microsoft Rights Management SDK 4.2
 
 -   打开 Visual Studio。
 -   依次单击“文件”、“新建”和“项目”。
--   在“新建项目”对话框中，单击“Visual C”**\#，选择“空白应用(Windows)”****，然后单击“确定”**。
+-   在“新建项目”对话框中，单击“Visual C”\#，选择“空白应用(Windows)”，然后单击“确定”。
 
     ![新建项目](../media/winrtsetup-newproj.png)
 

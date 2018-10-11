@@ -83,7 +83,7 @@ ms.locfileid: "44150358"
     ![添加资源包](../media/iOS-add-resource-bundle-02a.png)
 
 -   按复制框架时的方式一样，选择“为添加的所有文件夹创建组”选项按钮，然后清除“将项目复制到目标组的文件夹(若必需)”复选框。
--   SDK 依赖于其他框架，包括：**CoreData****MessageUI****SystemConfiguration****Libresolv** 和 **Security**。 若要添加这些框架，请导航至目标的“摘要”面板的“已链接框架和库”部分，然后展开此部分以添加框架。
+-   SDK 依赖于其他框架，包括：**CoreData** **MessageUI** **SystemConfiguration** **Libresolv** 和 **Security**。 若要添加这些框架，请导航至目标的“摘要”面板的“已链接框架和库”部分，然后展开此部分以添加框架。
 
     **UIKit** 和 **Foundation** 框架是必需的，且通常默认存在。
 

@@ -50,7 +50,7 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 
 -   打开 *Visual Studio*。
 -   单击“文件”。 在“文件”菜单上，单击“新建”，然后单击“项目”。
--   在“新建项目”对话框中，依次选择“Visual C”**\#和“空白应用(Windows Phone)”****，然后单击“确定”**。
+-   在“新建项目”对话框中，依次选择“Visual C”\#和“空白应用(Windows Phone)”，然后单击“确定”。
 
     ![新建项目](../media/wpsetup-newproj.png)
 
