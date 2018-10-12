@@ -1,3 +1,18 @@
+---
+title: 类 ConsentDelegate
+description: class ConsentDelegate 的引用
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 841049b1e6b369eb2f6a34d9701ed34eca028af6
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446356"
+---
 # <a name="class-consentdelegate"></a>类 ConsentDelegate 
 执行许可相关操作的委托。
 此委托由客户端应用程序实现，以了解应何时向用户显示许可请求通知。

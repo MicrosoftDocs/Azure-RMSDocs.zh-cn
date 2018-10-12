@@ -4,18 +4,18 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/04/2018
-ms.topic: article
+ms.date: 09/27/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3e6d5f30e3db48eced850649976ac4da56271622
-ms.sourcegitcommit: a42bb93adbb5be2cd39606fed3de0785ac52dd65
+ms.openlocfilehash: 40415c25befd3eea8d33a2b8572b0d48f7ee918c
+ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43703924"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403091"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -90,11 +90,9 @@ ms.locfileid: "43703924"
 
 ## <a name="modify-the-email-address-for-the-report-an-issue-link"></a>修改“报告问题”链接的电子邮件地址
 
-此配置选项目前处于预览状态，可能随时更改。 它还需要预览版本的 Azure 信息保护客户端。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 此设置仅适用于 Azure 信息保护客户端的预览版，因为此客户端的正式版不会显示“报告问题”链接。
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
-
-当用户从“帮助和反馈”客户端对话框中选择“报告问题”链接时，默认情况下，将在电子邮件中填充 Microsoft 地址。 使用以下高级客户端设置来修改该地址。 例如，为支持人员指定电子邮件地址：`mailto:helpdesk@contoso.com`。 
+当用户从该客户端预览版的“帮助和反馈”客户端对话框中选择“报告问题”链接时，默认情况下，将在电子邮件中填充 Microsoft 地址。 使用以下高级客户端设置来修改该地址。 例如，为支持人员指定电子邮件地址：`mailto:helpdesk@contoso.com`。 
 
 若要配置此高级设置，请输入以下字符串：
 
@@ -219,9 +217,7 @@ ms.locfileid: "43703924"
 
 ## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>开启在后台持续运行的分类
 
-此配置选项目前处于预览状态，可能随时更改。
-
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 此设置处于预览状态，并且可能会更改。
 
 在你配置此设置时，它更改 Azure 信息保护客户端向文档应用自动和建议标签的[默认行为](../configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)： 
 
@@ -239,25 +235,61 @@ ms.locfileid: "43703924"
 
 - 值：True
 
-## <a name="dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>不使用 PDF 加密 ISO 标准来保护 PDF 文件
-
-此配置选项目前处于预览状态，可能随时更改。 它还需要预览版本的 Azure 信息保护客户端。
+## <a name="protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>使用 PDF 加密 ISO 标准来保护 PDF 文件
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
 
-当 Azure 信息保护客户端通用版本 (GA) 保护 PDF 文件时，生成文件的文件扩展名为 .ppdf。 但是，当 Azure 信息保护客户端的当前预览版本保护 PDF 文件时，生成的文件扩展名仍为 .pdf 并遵守 PDF 加密 ISO 标准。 有关此标准的详细信息，请参阅[派生自 ISO 32000-1 的文档](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf)（由 Adobe Systems Incorporated 发布）中的第 7.6 节加密。
+默认情况下，当 Azure 信息保护客户端保护 PDF 文件时，生成文件的文件扩展名为 .ppdf。 可更改此行为，使文件扩展名仍为 .pdf，并符合 PDF 加密 ISO 标准。 有关此标准的详细信息，请参阅[派生自 ISO 32000-1 的文档](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf)（由 Adobe Systems Incorporated 发布）中的第 7.6 节加密。
 
-如果需要客户端的当前预览版还原为 GA 行为，请通过输入以下字符串来使用以下高级设置：
+要配置此高级设置，请输入以下字符串：
 
 - 键：EnablePDFv2Protection
 
-- 值：False
+- 值：True
+
+配置此选项后，当 Azure 信息保护客户端保护 PDF 文件时，此操作会创建一个受保护的 PDF 文档，可使用 Windows 版 Azure 信息保护客户端的最新版本以及支持 PDF 加密 ISO 标准的其他 PDF 阅读器打开该文档。 iOS 和 Android 版 Azure 信息保护应用当前不支持 PDF 加密 ISO 标准。 有关 Adobe Acrobat Reader 的最新信息，请参阅[自 10 月起，将 Adobe Acrobat Reader 用于受 Microsoft 信息保护保护的 PDF](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738)。
 
 要使 Azure 信息保护扫描程序使用新设置，必须重启扫描程序服务。
 
+有关此 PDF 加密的详细信息，请参阅博客文章[使用 Microsoft 信息保护进行 PDF 加密的新支持](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/2627570)。
+
+### <a name="to-convert-existing-ppdf-files-to-protected-pdf-files"></a>将现有的 .ppdf 文件转换为受保护的 .pdf 文件
+
+Azure 信息保护客户端已下载包含该新设置的客户端策略时，可以使用 PowerShell 命令将现有的 .ppdf 文件转换为使用 PDF 加密 ISO 标准的受保护 .pdf 文件。 
+
+用户必须具有从文件删除保护的[权限管理使用权限](../configure-usage-rights.md)或者成为超级用户，才能将以下说明用于自己未保护的文件。 若要启用超级用户功能并将帐户配置为超级用户，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](../configure-super-users.md)。
+
+此外，当将这些说明用于自己未保护的文件时，则会成为 [RMS 颁发者](../configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)。 在此情况下，最初保护该文档的用户无法再跟踪和撤销它。 如果用户需要跟踪和撤销自己受保护的 PDF 文档，他们可以手动删除，然后通过使用文件资源管理器并右击，重新应用此标签。
+
+使用 PowerShell 命令将现有的 .ppdf 文件转换为使用 PDF 加密 ISO 标准的受保护 .pdf 文件：
+
+1. 将 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) 用于 .ppdf 文件。 例如：
+    
+        Get-AIPFileStatus -Path \\Finance\Projectx\sales.ppdf
+
+2. 从输出中记录以下参数值：
+    
+    - SubLabelId 的值（(GUID)，如果有）。 如果此值为空，表明未使用子标签，则改为记录 MainLabelId 的值。
+    
+    注意：如果也不存在 MainLabelId 的值，则未标记此文件。 在此情况下，可以使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) 命令和 [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile) 命令来代替步骤 3 和步骤 4 中的命令。
+    
+    - RMSTemplateId 的值。 如果此值为“受限访问”，则用户已使用自定义权限保护该文件，而非为此标签配置的保护设置。 若继续，该标签的保护设置将覆盖这些自定义权限。 决定是否继续，或要求用户（RMSIssuer 的显示值）删除此标签并将此标签和初始自定义权限一起重新应用。
+
+3. 使用 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 和 *RemoveLabel* 参数删除此标签。 如果使用的是包含“用户必须提供理由以设置较低分类标签、删除标签或删除保护”的[策略设置](../configure-policy-settings.md)，还必须使用原因指定“理由”参数。 例如： 
+    
+        Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
+    
+    若由于正在将强制标签作为[策略设置](../configure-policy-settings.md)（所有文档和电子邮件均必须具有标签）而无法删除标签，则暂时改为应用其他标签。
+
+4. 为在步骤 1 中标识的标签指定值，重新应用初始标签。 例如：
+    
+        Set-AIPFileLabel \\Finance\Projectx\sales.pdf -LabelId d9f23ae3-1234-1234-1234-f515f824c57b
+
+文件保留了 .pdf 文件扩展名，但它的分类与之前相同，并且通过使用 PDF 加密 ISO 标准对它进行保护。
+
 ## <a name="support-for-files-protected-by-secure-islands"></a>支持受 Secure Islands 保护的文件
 
-此配置选项目前处于预览状态，可能随时更改。 它还需要预览版本的 Azure 信息保护客户端、Azure 信息保护扫描程序或 Azure 信息保护查看器。
+此配置选项目前处于预览状态，可能随时更改。
 
 如果使用 Secure Islands 保护文档，可能因这种保护产生受保护的文本和图片文件以及通常受保护的文件。 例如，文件扩展名为 .ptxt、.pjpeg 或 .pfile 的文件。 按如下方式编辑注册表时，Azure 信息保护可以解密这些文件：
 
@@ -282,9 +314,9 @@ ms.locfileid: "43703924"
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>从 Secure Islands 和其他标记解决方案迁移标签
 
-此配置选项目前处于预览状态，可能随时更改。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 此设置处于预览状态，并且可能会更改。
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+当前此配置与[使用 PDF 加密 ISO 标准保护 PDF 文件](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)设置不兼容。 同时使用这两个设置时，将无法通过文件资源管理器、PowerShell 或扫描程序打开 .ppdf 文件。
 
 对于 Secure Islands 标记的 Office 文档和 PDF 文档，可以使用所定义的映射，利用 Azure 信息保护标签重新标记这些文档。 此外，这种方法还可用于重用其他解决方案对 Office 文档标记的标签。 
 
@@ -366,9 +398,7 @@ ms.locfileid: "43703924"
 
 ## <a name="remove-headers-and-footers-from-other-labeling-solutions"></a>删除其他标记解决方案中的页眉和页脚
 
-此配置选项目前处于预览状态，可能随时更改。 它还需要预览版本的 Azure 信息保护客户端。
-
-此配置使用必须在 Azure 门户中配置的多项[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的多项[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 这些设置处于预览状态，并且可能会更改。
 
 这些设置允许在其他标记解决方案已应用这些视觉标记的情况下从文档中删除或替换页眉或页脚。 例如，旧页脚包含旧标签的名称，现在使用新的标签名及其自己的页脚将标签迁移到 Azure 信息保护。
 

@@ -1,3 +1,18 @@
+---
+title: class mip Label
+description: class mip Label 的引用
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 2a80748430df83a16a4d5ee716344d17ce7deee4
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446271"
+---
 # <a name="class-miplabel"></a>class mip::Label 
 单个 Microsoft 信息保护标签的抽象。
   
@@ -20,7 +35,7 @@ public const std::vector<std::shared_ptr<Label>>& GetChildren() const  |  获取
 获取标签 ID。
 
   
-**返回结果**：标签 ID。
+返回结果：标签 ID。
   
 ### <a name="getname"></a>GetName
 获取标签名称。

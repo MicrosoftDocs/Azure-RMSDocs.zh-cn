@@ -1,20 +1,20 @@
 ---
-title: class mip Error
-description: class mip Error 的引用
+title: class mip PolicySyncError
+description: class mip PolicySyncError 的引用
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: fea8b3724f88a981123032166c6f3b98c8eedd50
+ms.openlocfilehash: 29b107f94303d39a233b798996d1ee9fd28b3b40
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445863"
+ms.locfileid: "47446837"
 ---
-# <a name="class-miperror"></a>class mip::Error 
-将从 MIP SDK 报告（引发或返回）的所有错误的基类。
+# <a name="class-mippolicysyncerror"></a>class mip::PolicySyncError 
+同步策略数据尝试失败。
   
 ## <a name="summary"></a>“摘要”
  成員                        | 描述                                

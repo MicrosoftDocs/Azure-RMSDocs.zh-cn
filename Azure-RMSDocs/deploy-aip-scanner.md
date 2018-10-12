@@ -4,18 +4,18 @@ description: 说明如何安装、配置和运行 Azure 信息保护扫描程序
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
-ms.topic: article
+ms.date: 09/17/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: ddf9ebcdce4cf51e35dfc76b099194873796919f
-ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
+ms.openlocfilehash: 5a61018b9e93a7a622c288f56110e9d99b30404f
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43117879"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211303"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -29,7 +29,7 @@ ms.locfileid: "43117879"
 
 - 使用服务器消息块 (SMB) 协议的网络共享 UNC 路径。
 
-- SharePoint Server 2016 和 SharePoint Server 2013 的站点和库。 对于[具有对此版本 SharePoint 的延长支持](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)，并且正在使用预览版扫描程序的客户，也支持 SharePoint 2010。
+- SharePoint Server 2016 和 SharePoint Server 2013 的站点和库。 对于具有[对此版本 SharePoint 的延长支持](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)的客户，还支持 SharePoint 2010。
 
 若要扫描云存储库上的文件并为之设置标签，请使用 [Cloud App Security](https://docs.microsoft.com/cloud-app-security/)。
 
@@ -168,7 +168,7 @@ ms.locfileid: "43117879"
 
 使用 [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/Add-AIPScannerRepository) cmdlet 指定将由 Azure 信息保护扫描程序进行扫描的数据存储。 可指定本地文件夹、UNC 路径以及 SharePoint 站点和库的 SharePoint Server URL。 
 
-支持的 SharePoint 版本：SharePoint Server 2016 和 SharePoint Server 2013。 对于[具有对此版本 SharePoint 的延长支持](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)，并且正在使用预览版扫描程序的客户，也支持 SharePoint Server 2010。
+支持的 SharePoint 版本：SharePoint Server 2016 和 SharePoint Server 2013。 对于具有[对此版本 SharePoint 的延长支持](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)的客户，还支持 SharePoint Server 2010。
 
 1. 在同一台 Windows Server 计算机中，通过在 PowerShell 会话中运行以下命令来添加第一个数据存储：
     
@@ -188,43 +188,34 @@ ms.locfileid: "43117879"
 
 ## <a name="run-a-discovery-cycle-and-view-reports-for-the-scanner"></a>运行发现周期并查看扫描程序报告
 
-1. 使用“管理工具” > “服务”，启动“Azure 信息保护扫描程序”服务。
+1. 在 PowerShell 会话中，通过运行以下命令重启 Azure 信息保护扫描程序服务：
     
-    如果有扫描程序的当前预览版本，则还可在 PowerShell 会话中运行 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)。
+        Start-AIPScan
 
 2. 等待扫描程序完成其周期。 当扫描程序浏览完指定数据存储中所有文件时，服务停止。 可使用本机 Windows 应用程序和服务事件日志、Azure 信息保护来确认服务的停止时间。 请查看信息事件 ID 911。
 
 3. 查看存储在 %localappdata%\Microsoft\MSIP\Scanner\Reports 中的报告，这些报告的文件格式为 .csv。 利用扫描程序默认配置，只有满足自动分类条件的文件才会被包括在这些报告中。
     
+    > [!TIP]
+    > 当前在预览版中，这些报表中的信息现在会发送到 Azure 信息保护，以便能够从 Azure 门户中查看它们。 有关详细信息，请参阅 [Azure 信息保护报表](reports-aip.md)。 
+        
     如果结果与预期不符，建议对在 Azure 信息保护策略中指定的条件进行微调。 如果是这种情况，请重复步骤 1 到 3，直到可更改配置以应用分类和保护（可选）。 
-    
-    对于当前 GA 版本的扫描程序：每当重复这些步骤时，请先在 Windows Server 计算机上运行以下 PowerShell 命令：
-  
-        Set-AIPScannerConfiguration -Schedule OneTime
-    
-    如果有该扫描程序的当前预览版本，请勿运行 Set-AIPScannerConfiguration 命令。
-  
+
 如果已准备好对扫描程序发现的文件进行自动标记，请继续下一步。 
 
 ## <a name="configure-the-scanner-to-apply-classification-and-protection"></a>将扫描程序配置为应用分类和保护
 
 在其默认设置中，扫描程序在仅报告模式下运行一次。 要更改这些设置，请运行 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet。
 
-1. 在 Windows Server 计算机上的 PowerShell 会话中，运行以下某个命令：
+1. 在 Windows Server 计算机上的 PowerShell 会话中，运行以下命令：
     
-    对于扫描程序的当前 GA 版本：
-       
-        Set-AIPScannerConfiguration -Enforce On -Schedule Continuous
-    
-    对于扫描程序的预览版本：
-       
         Set-AIPScannerConfiguration -Enforce On -Schedule Always
     
     你可能还希望更改其他配置设置。 例如，是否更改文件属性，以及报告中应记录的内容。 此外，如果 Azure 信息保护策略包括需要理由信息以降低分类级别或移除保护的设置，请使用此 cmdlet 指定该信息。 有关每个配置设置的详细信息，请使用[联机帮助](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters)。 
 
-2. 使用“管理工具” > “服务”，重启“Azure 信息保护扫描程序”服务。
+2. 通过运行以下命令重启 Azure 信息保护扫描程序服务：
     
-    如果有扫描程序的当前预览版本，则还可在 PowerShell 会话中运行 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)。
+        Start-AIPScan
 
 3. 如前所述，监视事件日志和报告，了解标记了哪些文件、应用了什么分类以及是否应用了保护。
 
@@ -273,25 +264,16 @@ ms.locfileid: "43117879"
 
 如果扫描程序应用保护标签，默认只有 Office 文件类型受到保护。 可以更改此行为，让其他文件类型也受到保护。 不过，如果标签向文档应用常规保护，文件扩展名变成 .pfile。 此外，文件将变为只读，直到该文件被已授权用户打开并以本机格式保存。 文本和图像文件也可以更改其文件扩展名并变为只读。 
 
-例如，若要将此默认扫描程序行为更改为以常规方式保护其他文件类型，必须手动编辑注册表，并指定要保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 此外，特定于扫描程序：
+例如，若要将此默认扫描程序行为更改为以常规方式保护其他文件类型，必须手动编辑注册表，并指定要保护的其他文件类型。 或者，可以通过指定 `*` 通配符保护所有文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 此外，特定于扫描程序：
 
 - 扫描程序具有其自己的默认行为：默认情况下，仅保护 Office 文件格式。 如果未修改注册表，则扫描程序不会保护任何其他文件类型。
 
-- 除非你使用的是扫描程序的当前预览版，否则必须指定特定文件扩展名，且不可使用 `*` 通配符。 扫描程序的预览版不支持此通配符。
 
 ## <a name="when-files-are-rescanned"></a>重新扫描文件时的情况
 
 在第一个扫描周期，扫描程序会检查所配置的数据存储中的所有文件，然后在后续扫描中仅检查新文件或修改后的文件。 
 
-可通过运行以下命令强制扫描程序再次检查所有文件：
-
-- 对于扫描程序的当前 GA 版本：
-    
-    运行 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)，并将 `-Type` 参数设置为“Full”。
-
-- 对于扫描程序的预览版本：
-    
-    使用 `-Reset` 参数运行 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)。 必须为手动计划配置扫描程序，这需要使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) 将 `-Schedule` 参数设置为“Manual”。
+可通过运行具有 `-Reset` 参数的 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) 强制扫描程序重新检查所有文件。 必须为手动计划配置扫描程序，这需要使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) 将 `-Schedule` 参数设置为“Manual”。
 
 如果希望报告包含所有文件，再次检查所有文件非常有用；且当扫描程序在发现模式下运行时，通常会使用此配置选项。 完成全部扫描后，扫描类型自动更改为“增量”，以便后续扫描仅扫描新文件或修改后的文件。
 
@@ -384,6 +366,8 @@ Azure 信息保护扫描程序支持两种备选方案，在任何一种方案�
 
 - [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/Get-AIPScannerRepository)
 
+- [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus)
+
 - [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)
 
 - [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/Remove-AIPScannerRepository)
@@ -398,14 +382,9 @@ Azure 信息保护扫描程序支持两种备选方案，在任何一种方案�
 
 - [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository)
 
+- [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)
+
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
-
-
-预览版本中的其他 cmdlet：
-
-- [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus)
-
-- [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) 
 
 - [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)
 

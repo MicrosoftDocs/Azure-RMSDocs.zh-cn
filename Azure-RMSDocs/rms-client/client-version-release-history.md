@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
-ms.topic: article
+ms.date: 09/27/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3e067f42b216efda48d46cd95be66c4939bf6240
-ms.sourcegitcommit: ba7ef4fe439bbf00cdad888017cbb8f44c801f77
+ms.openlocfilehash: 12d5674fdebd3c857e7458b84f430cf3ee6755c2
+ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43348685"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403074"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -42,29 +42,40 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
-## <a name="versions-later-than-12950"></a>高于 1.29.5.0 的版本
+## <a name="versions-later-than-137190"></a>高于 1.37.19.0 的版本
 
-如果客户端版本高于 1.29.5.0，则这是用于测试和评估的预览内部版本。
+如果客户端版本高于 1.37.19.0，则这是用于测试和评估的预览内部版本。
+
+发布日期：2018 年 9 月 20 日
+
+**新功能：**
+
+- Microsoft Ignite 中宣布支持 Azure 信息保护分析功能的[中心报告](../reports-aip.md)。
+
+
+## <a name="version-137190"></a>版本 1.37.19.0
+
+发布日期：2018 年 9 月 17 日
 
 此版本包括 RMS 客户端的 MSIPC 1.0.3592.627 版本。
 
 **新增功能**： 
 
-- 支持 PDF 加密的 ISO 标准，以便你保护的文档在默认情况下仍保留其 .pdf 文件扩展名，并且可以通过支持此 ISO 标准的 PDF 阅读器打开。 目前，必须指示用户通过使用 Azure 信息保护查看器来手动打开这些受保护的 PDF。 若要帮助用户实现此操作，当他们打开这些受保护的 PDF 之一时，他们将看到含有图标的页面，让他们针对其操作系统进行选择。 如果你不想发生此行为，而是要求对 Azure 信息保护客户端的通用版本进行奇偶校验，则可以配置[高级客户端配置](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)。
+- 通过配置新的[高级客户端配置](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，支持 PDF 加密 ISO 标准。 配置此选项后，受保护 PDF 文档的文件扩展名仍为. pdf（而不是更改为 .ppdf），并且可以通过支持此 ISO 标准的 PDF 阅读器打开。 目前，必须指示用户通过使用 Azure 信息保护查看器来手动打开这些受保护的 PDF。 若要帮助用户实现此操作，当他们打开这些受保护的 PDF 之一时，他们将看到含有图标的页面，让他们针对其操作系统进行选择。
 
 - 支持新的敏感信息类型，可帮助对包含个人信息的文档进行分类。 [详细信息](../configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
+
+- 当为用户分配了 Azure Rights Management（也称为 Office 365 Azure 信息保护）许可证时，应用保护的标签现在显示在 Office 2016 应用（最低版本为 1805，生成号 9330.2078）中。
 
 - 对 Word、Excel 和 PowerPoint 文件中“Strict Open XML 文档”格式的标签支持。 有关 Open XML 格式的详细信息，请参阅 Office 博客文章[新 Office 中的新文件格式选项](https://www.microsoft.com/en-us/microsoft-365/blog/2012/08/13/new-file-format-options-in-the-new-office/)。 
 
 - 支持受 Secure Islands 保护的文件（PDF 和 Office 文档以外的文件）。 例如，受保护的文本和图片文件。 或者，文件扩展名为 .pfile 的文件。 此支持可实现新方案，例如 Azure 信息保护扫描程序可检查这些文件中的敏感信息，并自动为 Azure 信息保护重新标记它们。 [详细信息](client-admin-guide-customizations.md#support-for-files-protected-by-secure-islands)
 
-- “帮助和反馈”对话框中的“给我们发送反馈”链接被替换为“报告问题”，可以对其进行自定义。 默认情况下，此选项向 Microsoft 发送一封电子邮件。 可以更改此电子邮件地址，以便当你的用户选择此选项时，它将使用你所指定的 HTTP 字符串。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 若要修改此地址，请使用[高级客户端设置](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)。
-
 - 用以删除其他标记解决方案已将其应用到文档中的页眉和页脚的新高级客户端设置。 [详细信息](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)
 
 - 对于 Azure 信息保护扫描程序：
 
-    - 新 cmdlet [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)：从当前通用版本 (1.29.5.0) 或更低版本升级后需要运行一次。
+    - 新 cmdlet [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)：从当前正式版本 (1.29.5.0) 或更低版本升级后需要运行一次。
     
     - 新 cmdlet [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus)：获取扫描程序服务的当前状态。  
     
@@ -79,6 +90,8 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     - 对于在 SharePoint 库中受保护的文档，如果未对数据存储库使用 DefaultOwner 参数，则 SharePoint 编辑器值现在用作默认值而不是“创建者”值。
     
     - 扫描程序报告包括 Office 文档的“上次修改者”。
+    
+    - 现在编辑注册表时可以通过使用 `*` 通配符来保护所有文件类型，如[文件 API 配置](../develop/file-api-configuration.md)说明中所述。
 
 - 使用 PowerShell 或扫描程序进行分类和保护时，不会删除或加密 Office 文档元数据。
 
@@ -93,16 +106,18 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 - 当你配置“所有文档和电子邮件必须具有标签”的[“策略设置”](../configure-policy-settings.md)时，“删除标签”图标不会在客户端应用（Word、Excel、PowerPoint 和 Outlook）中显示。
 
 **其他更改**：
-   
+
 - 对于 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)：
     
     - Schedule 参数的值不再为“OneTime”、“Continuous”和“Never”，而是“Manual”和“Always”。
         
     - Type 参数已删除，因此在运行 [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration) 时也会从输出中删除该参数。 默认情况下，在首个扫描周期后，只检查新文件或经过修改的文件。 如果之前为了重新扫描所有文件将 Type 参数设置为 Full，现在使用 Reset 参数运行 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)。 另外，还必须为扫描程序配置人工计划，这就需要使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) 将 Schedule 参数设置为 Manual。
     
-- 对于扫描程序，默认排除列表现在包括 .msg、.rar、.rtf 和 .zip 文件。 [详细信息](client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner)
+- 客户端和扫描程序的默认排除列表现在包括 .msg、.rar 和 .zip 文件。 扫描程序还会排除 .rtf 文件。 [详细信息](client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection)
 
 - 策略版本更改为 1.4。 [配置断开连接的计算机](client-admin-guide-customizations.md#support-for-disconnected-computers)需要标识版本号。
+
+- “帮助和反馈”对话框中的“给我们发送反馈”链接会被删除。 它暂时替换为“报告问题”，但此链接现在仅显示在预览版本中。 默认情况下，此选项会向 Microsoft 发送一封电子邮件，但可以将此电子邮件地址更改为指定的 HTTP 字符串。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 若要修改此地址，请使用[高级客户端设置](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)。
 
 ## <a name="version-12950"></a>版本 1.29.5.0 
 

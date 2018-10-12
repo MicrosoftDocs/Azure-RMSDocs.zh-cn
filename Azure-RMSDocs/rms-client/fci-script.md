@@ -4,18 +4,18 @@ description: 要复制和编辑的示例脚本，如“使用 Windows Server 文
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
-ms.topic: article
+ms.date: 09/26/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0ec3346af01ac259df603a268b1a25d154addacb
-ms.sourcegitcommit: 99b33cee47bc4588174d44e90ade16edba12ee44
+ms.openlocfilehash: be5b7c658fcdd2c5d4d03de21a89bfda51039539
+ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43380635"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47233688"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）
 
@@ -25,8 +25,7 @@ ms.locfileid: "43380635"
 
 对于 AzureInformationProtection 模块，此脚本使用的最低版本为 **1.3.155.2**。 运行以下命令以检查版本：`(Get-Module AzureInformationProtection -ListAvailable).Version` 
 
-*&#42;&#42;免责声明&#42;&#42;：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。此示例*
-*脚本按原样提供，不提供任何形式的保证。*
+*&#42;&#42;免责声明&#42;&#42;：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。此示例脚本按原样提供，不提供任何形式的保证。*
 
 ```
 <#
@@ -57,7 +56,7 @@ param(
 ) 
 
 # script information
-[String] $Script:Version = 'version 3.3' 
+[String] $Script:Version = 'version 3.4' 
 [String] $Script:Name = "RMS-Protect-FCI.ps1"
 
 #global working variables
@@ -116,6 +115,7 @@ function Set-RMSConnection ($fappId, $fkey, $fbposId) {
     try {
                Set-RMSServerAuthentication -AppPrincipalId $fappId -Key $fkey -BposTenantId $fbposId
         Write-Host ("Information: " + "Connected to Azure RMS Service with BposTenantId: $fbposId using AppPrincipalId: $fappId")
+#       Get-RMSTemplate -Force
         $returnValue = $true
     } catch {
         Write-Host ("ERROR" + "During connection to Azure RMS Service with BposTenantId: $fbposId using AppPrincipalId: $fappId")

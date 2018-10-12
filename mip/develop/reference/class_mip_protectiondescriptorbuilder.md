@@ -1,5 +1,20 @@
+---
+title: class mip ProtectionDescriptorBuilder
+description: class mip ProtectionDescriptorBuilder 的引用
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 42e44cfaf269a43d0210c0c040ea70ccc1fb192e
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446628"
+---
 # <a name="class-mipprotectiondescriptorbuilder"></a>类 mip::ProtectionDescriptorBuilder 
-表示与受保护的内容关联的临时策略。
+构造 [ProtectionDescriptor](class_mip_protectiondescriptor.md)，用于描述与一段内容相关的保护。
   
 ## <a name="summary"></a>“摘要”
  成員                        | 描述                                
@@ -50,7 +65,7 @@ public void SetSignedAppData(const std::map<std::string, std::string>& value)  |
 设置保护策略是否允许脱机访问内容。
 
 参数：  
-* **value**：策略是否允许离线访问内容
+* value：策略是否允许脱机访问内容
 
 
   

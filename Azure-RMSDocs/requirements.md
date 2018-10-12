@@ -4,18 +4,18 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
-ms.topic: get-started-article
+ms.date: 09/19/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0cfaaa199178b7bede1d5b0d3fe54dd43dcfbf01
-ms.sourcegitcommit: beb4e480e0e821e32c9d35e86f2cf4321005c521
+ms.openlocfilehash: 00daf488568fef8569f97db378b771383a221ce3
+ms.sourcegitcommit: 07af86511a394274f10cf1340de4cf4bad6d1675
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43663393"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46473811"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -78,6 +78,8 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 - Windows Server 2008 R2 
 
+除了在物理计算机上安装 Azure 信息保护客户端，还可以在虚拟机上安装它。 检查虚拟桌面解决方案的软件供应商是否具有可能需要运行 Azure 信息保护客户端的其他配置。 例如，对于 Citrix 解决方案，你可能需要对 Office（winword.exe、excel.exe、outlook.exe、powerpoint.exe）和 Azure 信息保护客户端（msip.app.exe、msip.viewer.exe）[禁用 Citrix 应用程序编程接口 (API) 挂钩](https://support.citrix.com/article/CTX107825)。
+
 对于列出的服务器版本，远程桌面服务支持用于 Azure 信息保护客户端。 将 Azure 信息保护客户端与远程桌面服务结合使用时，如果删除用户配置文件，请勿删除“%Appdata%\Microsoft\Protect”文件夹。
 
 当 Azure 信息保护客户端通过使用 Azure 权限管理服务保护数据时，支持 Azure 权限管理服务的[同一设备](requirements-client-devices.md)可以使用此数据。
@@ -88,9 +90,9 @@ Azure 信息保护客户端有[其他先决条件](./rms-client/client-admin-gui
 
 Azure 信息保护客户端可使用以下 Office 版本中的 Word、Excel、PowerPoint 和 Outlook 等 Office 应用程序对文档和电子邮件设置标签和进行保护：
 
+- 当为用户分配了 Azure Rights Management（也称为 Office 365 Azure 信息保护）许可证，可以使用含 Office 2016 应用的 Office 365（最低版本为 1805，生成号 9330.2078）
+
 - 含 2016 应用或 2013 应用的 Office 365 ProPlus（即点即用或基于 Windows Installer 的安装）
-    
-    包含 Azure 信息保护数据保护功能的大多数 Office 365 订阅（并非所有）都附带这些版本的 Office。 检查你的订阅信息，确定是否包含 Office 365 专业增强版。 你还可以在 [Azure 信息保护数据表](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)中找到此信息。
 
 - Office Professional Plus 2016
 

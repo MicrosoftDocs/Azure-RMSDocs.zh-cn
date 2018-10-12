@@ -1,3 +1,18 @@
+---
+title: class mip AddContentHeaderAction
+description: class mip AddContentHeaderAction 的引用
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: bc60fe32005a0c6bc8088ab7687a3f711ae7a99a
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445642"
+---
 # <a name="class-mipaddcontentheaderaction"></a>class mip::AddContentHeaderAction 
 指定添加内容头的操作类。
   
@@ -43,7 +58,7 @@
 获取用于显示内容页眉的字体颜色。
 
   
-**返回结果**：字符串形式的字体颜色（例如“#000000”）。
+返回结果：字符串形式的字体颜色（例如“#000000”）。
   
 ### <a name="getalignment"></a>GetAlignment
 获取内容页眉的对齐方式。
@@ -57,7 +72,7 @@
 从底部获取标头的边距。
 
   
-**返回结果**：表示文档底部边距的整数（例如，10 毫米）。
+返回结果：文档底部的边距（例如 10 毫米）。
   
 ### <a name="actiontype"></a>ActionType
 获取[操作](class_mip_action.md)类型。

@@ -4,18 +4,18 @@ description: 此信息适用于以仅保护模式运行 Azure 信息保护客户
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5a2b01af0e246e732d087a344ecf037c13a47546
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c9f8408c4417b1b5131a51276a829a16687f1870
+ms.sourcegitcommit: ccc99efd2402a8b93912c8df4df330fa1311aacb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151554"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48812412"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>用户指南：Azure 信息保护客户端的仅保护模式
 
@@ -36,7 +36,7 @@ ms.locfileid: "44151554"
     
     - 对于此组合订阅，管理员有责任确保仅部分用户可以使用分类和标签功能。 其余用户应在仅保护模式下运行 Azure 信息保护客户端。 
 
-- 你的组织订阅了 Azure 信息保护，但你没有任何为你配置的标签。
+- 你的组织订阅了 Azure 信息保护，但你没有为自己配置任何标签。
     
     - 如果全局策略中的所有标签都被禁用，且你的帐户未添加到作用域策略中，则会发生此情况。 这可能是因为你的 IT 部门才刚开始推出 Azure 信息保护，但尚未向你提供标签来对文档和电子邮件进行分类。 在这段期间，可以使用 Azure 信息保护客户端保护文件和查看受保护的文件。
 

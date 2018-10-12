@@ -4,18 +4,18 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 63e84e8a5d072f0bb57bb72754f97ca8963a2c76
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c415868045e2064696181217f66262e90887e25a
+ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149100"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403006"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -106,9 +106,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 默认情况下，“提供详细信息”链接转到 [Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)网站，但也可以根据 Azure 信息保护策略中的一项[策略设置](../configure-policy-settings.md)，将其配置为转到自定义 URL。
 
-使用“给我们发送反馈”链接（通用版本）可以向信息保护团队发送建议或请求。 对于技术支持，请勿将此选项，而是参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)。 
-
-“报告问题”链接替换了客户端预览版中的“给我们发送反馈”链接。 默认情况下，此选项向 Microsoft 发送一封电子邮件，但可以通过指定[高级客户端设置](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)来为你的用户配置 HTTP 字符串。 例如，指定支持人员的电子邮件地址。
+“报告问题”链接显示在客户端的预览版本而不在正式发布版本中。 默认情况下，此选项向 Microsoft 发送一封电子邮件，但可以通过指定[高级客户端设置](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)来为你的用户配置 HTTP 字符串。 例如，指定支持人员的电子邮件地址。
 
 “导出日志”自动收集并附加 Azure 信息保护客户端的日志文件，如果必须将日志文件发送给 Microsoft 支持人员的话。 最终用户也可以使用此选项，将这些日志文件发送给你的支持人员。
 

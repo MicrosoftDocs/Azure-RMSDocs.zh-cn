@@ -1,3 +1,18 @@
+---
+title: class mip AddWatermarkAction
+description: class mip AddWatermarkAction 的引用
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: f49bd7aa16ae12aef240d05fff6acf507ddc341d
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446084"
+---
 # <a name="class-mipaddwatermarkaction"></a>class mip::AddWatermarkAction 
 指定添加水印的操作类。
   
@@ -48,7 +63,7 @@
 获取用于显示水印的字体颜色。
 
   
-**返回结果**：字符串形式的字体颜色（例如“#000000”）。
+返回结果：字符串形式的字体颜色（例如“#000000”）。
   
 ### <a name="actiontype"></a>ActionType
 获取[操作](class_mip_action.md)类型。

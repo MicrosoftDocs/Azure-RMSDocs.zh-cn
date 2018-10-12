@@ -4,18 +4,18 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 6048867049046384a7a226d3caeed10fd09bb264
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: a6df966c75a1d556aeb3341804fa18d912389e24
+ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147570"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47233722"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -29,13 +29,17 @@ ms.locfileid: "44147570"
 
 有关其他分类特性和功能何时可用的信息，请留意[企业移动性和安全性博客](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection)和 [Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)上的公告。 当前版本具有一些限制，包括以下内容：
 
-- 对于分类和标签没有任何集中式日志记录。
-
-- 适用于移动设备（iOS 和 Android）和 Mac 计算机的 Office 应用或 Office Web 应用 (Office Online) 不具有标签功能。
+- Office Web 应用 (Office Online) 中不具有标签功能。
 
 - 没有分类或标签与 Exchange Online 或 SharePoint Online 集成。
 
-通过访问 Azure 信息保护的 [User Voice 站点](https://msip.uservoice.com/)，请求新功能并对请求进行投票。
+> [!NOTE]
+> 现提供预览：
+> - 分类和标签的集中式报告。 有关详细信息，请参阅 [Azure 信息保护的中心报告](reports-aip.md)。
+> - 适用于移动设备（iOS 和 Android）和 Mac 计算机的 Office 应用的标签功能可供选择加入 [Office 预览体验计划](https://support.office.com/article/what-is-office-insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)的客户使用。 有关详细信息，请参阅[将敏感标签应用于 Office 中的文档和电子邮件](https://aka.ms/officemipdocs)。
+
+
+通过访问 Azure 信息保护的 [UserVoice 站点](https://msip.uservoice.com/)，请求新功能并对请求进行投票。
 
 ## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>是否需要是全局管理员才能配置分类和标签？
 

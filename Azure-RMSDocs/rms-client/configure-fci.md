@@ -4,18 +4,18 @@ description: 有关将 Rights Management (RMS) 客户端与 Azure 信息保护�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
-ms.topic: article
+ms.date: 09/14/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e8eed649c89e854a4499260af15af8af510a39ea
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 099b4985a0e595c22ec29fd2d682d092a5b445b5
+ms.sourcegitcommit: 395918e9e3513e1d791bbfc16c0fc90e4dd605eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804678"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45750622"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
@@ -53,7 +53,7 @@ ms.locfileid: "42804678"
     
 - 你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 服务保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此要求的详细信息，请参阅 [准备用户和组以便使用 Azure 信息保护](../prepare.md)。
     
-- 已将 Rights Management 模板下载到文件服务器，并标识了可保护文件的模板 ID。 若要执行此操作，请使用 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) cmdlet。 此方案不支持部门模板，因此必须使用未配置作用域的模板，或作用域配置必须包含应用程序兼容性选项，以选中“如果应用程序不支持用户标识，则向所有用户显示此模板”复选框。
+- 这种情况不支持部门模板，因此必须使用不是为作用域配置的模板，或者使用 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 和 EnableInLegacyApps 参数。
 
 ## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>为 Azure 权限管理保护配置文件服务器资源管理器 FCI 的说明
 按照这些说明通过使用 PowerShell 脚本作为自定义任务自动保护一个文件夹中的所有文件。 按此顺序执行这些过程：
@@ -72,7 +72,7 @@ ms.locfileid: "42804678"
 
 在这些说明结束时，所选文件夹中的所有文件都将使用 RMS 的自定义属性进行分类，然后这些文件将受 Rights Management 保护。 对于更复杂的配置（如有选择性地保护某些文件，而不保护其他文件），你可以然后创建或使用不同的分类属性和规则，用于仅保护这些文件的文件管理任务。
 
-请注意，如果更改了用于 FCI 的 Rights Management 模板，则必须在文件服务器计算机上运行 `Get-RMSTemplate -Force` 以获取更新后的模板。 然后使用更新后的模板来保护新的文件。 如果通过对模板的更改就足以重新保护文件服务器上的文件，则可以通过以交互方式运行 Protect-RMSFile cmdlet 与对文件具有“导出”或“完全控制”使用权限的帐户来执行此操作。 如果发布了想要用于 FCI 的新模板，则还必须在此文件服务器计算机上运行 `Get-RMSTemplate -Force`。
+请注意，如果对用于 FCI 的 Rights Management 模板进行更改，运行脚本以保护文件的计算机帐户不会自动获得更新的模板。 为此，在脚本中，找到被注释掉的 `Get-RMSTemplate -Force` 命令，并删除 `#` 注释字符。 当下载更新模板（该脚本至少运行一次），可以注释掉此附加命令，以便不会每次不必要地下载模板。 如果通过对模板的更改就足以重新保护文件服务器上的文件，则可以通过运行 Protect-RMSFile cmdlet 与对文件具有“导出”或“完全控制”使用权限的帐户以交互方式执行此操作。 如果发布了想要用于 FCI 的新模板，则还必须运行 `Get-RMSTemplate -Force`。
 
 ### <a name="save-the-windows-powershell-script"></a>保存 Windows PowerShell 脚本
 
@@ -209,11 +209,11 @@ ms.locfileid: "42804678"
         -   **参数**：指定下列各项，为&lt;路径&gt;和&lt;模板 ID&gt;提供自己的值：
 
             ```
-            -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID <template GUID> -OwnerMail [Source File Owner Email]"
+            -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID <template GUID> -OwnerMail '[Source File Owner Email]'"
             ```
             例如，如果你将该脚本复制到 C:\RMS-Protection 并且从必备组件找到的模板 ID 是 e6ee2481-26b9-45e5-b34a-f744eacd53b0，请指定以下项：
 
-            `-Noprofile -Command "C:\RMS-Protection\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID e6ee2481-26b9-45e5-b34a-f744eacd53b0 -OwnerMail [Source File Owner Email]"`
+            `-Noprofile -Command "C:\RMS-Protection\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID e6ee2481-26b9-45e5-b34a-f744eacd53b0 -OwnerMail '[Source File Owner Email]'"`
 
             在此命令中，[Source File Path] 和 [Source File Owner Email] 都是特定于 FCI 的变量，因此键入这些项时要与出现在之前的命令中的内容完全一致。 第一个变量由 FCI 用于自动指定文件夹中标识的文件，第二个变量供 FCI 用于自动检索所标识文件的命名所有者的电子邮件地址。 对文件夹中的每个文件重复执行此命令，在我们的示例中为 C:\FileShare 文件夹中还使用 RMS 作为文件分类属性的每个文件。
 
@@ -266,7 +266,7 @@ ms.locfileid: "42804678"
     > [!TIP]
     > 一些故障排除技巧：
     > 
-    > -   如果你在报告中看到“0”（而不是你的文件夹中的文件数），则此输出指示脚本未运行。 首先，通过在 Windows PowerShell ISE 中加载脚本以验证脚本内容来检查脚本本身，然后尝试运行它以查看是否显示任何错误。 如果未指定任何参数，该脚本会尝试连接到 Azure 权限管理服务并向其进行身份验证。
+    > -   如果你在报告中看到“0”（而不是你的文件夹中的文件数），则此输出指示脚本未运行。 首先，通过在 Windows PowerShell ISE 中加载脚本以验证脚本内容来检查脚本本身，然后尝试在相同的 PowerShell 会话中运行脚本一次，查看是否显示任何错误。 如果未指定任何参数，该脚本会尝试连接到 Azure 权限管理服务并向其进行身份验证。
     > 
     >     -   如果该脚本报告无法连接到 Azure 权限管理服务 (Azure RMS)，请检查它为服务主体帐户显示的值，该帐户在脚本中指定。 有关如何创建此服务主体帐户的详细信息，请参阅 Azure 信息保护客户端管理员指南中的[先决条件 3：在不交互的情况下保护或取消保护文件](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction)。
     >     -   如果该脚本报告可连接到 Azure RMS，接下来通过直接运行服务器上 Windows PowerShell 的 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) 检查是否可找到指定的模板。 你应该会看到你所指定的模板返回到结果中。
@@ -281,6 +281,14 @@ ms.locfileid: "42804678"
     > -   如果你在报告中看到正确的文件数，但文件未受保护，请尝试使用 [Protect-RMSFile](/powershell/azureinformationprotection/vlatest/protect-rmsfile) cmdlet 手动保护文件以查看是否显示任何错误。
 
 在确认这些任务成功运行之后，可以关闭文件资源管理器。 计划的任务运行时，会自动对新文件进行分类并给予保护。 
+
+## <a name="action-required-if-you-make-changes-to-the-rights-management-template"></a>对 Rights Management 模板进行更改所需的操作
+
+如果对脚本引用的 Rights Management 模板进行更改，运行脚本以保护文件的计算机帐户不会自动获得更新的模板。 在脚本中，查找出 Set-RMSConnection 函数中注释掉的 `Get-RMSTemplate -Force` 命令，并删除行开头的注释字符。 下次该脚本运行时，会下载更新的模板。 若要优化性能，以便不会不必要地下载模板，则可以再次注释掉此行。 
+
+如果通过对模板的更改就足以重新保护文件服务器上的文件，则可以通过运行 Protect-RMSFile cmdlet 与对文件具有“导出”或“完全控制”使用权限的帐户以交互方式执行此操作。 
+
+此外，如果发布了想要用于 FCI 的新模板，并且在自定义文件管理任务的参数行中更改模板 ID，请在脚本中运行该行。
 
 ## <a name="modifying-the-instructions-to-selectively-protect-files"></a>修改说明可有选择性地保护文件
 如果按前面的说明正常操作，则可轻松修改它们以实现更复杂的配置。 例如，使用同一个脚本保护文件，但只针对包含个人身份信息的文件，然后可能选择具有更多限制权限的模板。

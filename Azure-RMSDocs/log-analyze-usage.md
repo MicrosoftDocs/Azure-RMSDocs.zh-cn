@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f147ad04ec61e7a5796cbb1f02c7fa33afdeae7d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 1deea1b4353e2d48c85ae24625ab29eca96a3968
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149678"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211320"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>记录和分析 Azure Rights Management 服务的使用情况
 
@@ -48,6 +48,7 @@ ms.locfileid: "44149678"
 |客户端事件日志|Azure 信息保护客户端的使用活动记录在本地 Windows“应用程序和服务”事件日志和“Azure 信息保护”中。 <br /><br />有关详细信息，请参阅 [Azure 信息保护客户端的使用日志记录](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)。|
 |客户端日志文件|有关 Azure 信息保护客户端的疑难解答日志，位于 %localappdata%\Microsoft\MSIP 中。 <br /><br />这些文件专门设计供 Microsoft 支持部门使用。|
 
+此外，会收集并聚合 Azure 信息保护客户端使用情况日志和 Azure 信息保护扫描程序中的信息以在 Azure 门户中创建报表。 有关详细信息，请参阅 [Azure 信息保护报表](reports-aip.md)。
 
 有关 Azure 权限管理服务使用日志记录的详细信息，请参阅以下部分。 
 
@@ -58,8 +59,6 @@ ms.locfileid: "44149678"
 > 不针对日志存储或日志记录功能收取额外的费用。
 > 
 > 在 2016 年 2 月以前，如果使用 Azure Rights Management 的使用日志记录，则需在 Azure 上拥有订阅和足够的存储空间，而现在不再需要这些条件。
-
-
 
 ## <a name="how-to-access-and-use-your-azure-rights-management-usage-logs"></a>如何访问和使用 Azure Rights Management 使用日志
 Azure Rights Management 服务将日志作为一系列 blob 写入 Azure 存储帐户。 每个 Blob 包含一条或多条日志记录，采用 W3C 扩展日志格式。 Blob 名称为数字，按创建顺序排列。 本文档后面的[如何解释 Azure Rights Management 使用日志](#how-to-interpret-your-azure-rights-management-usage-logs)部分包含了有关日志内容及其创建情况的更多信息。

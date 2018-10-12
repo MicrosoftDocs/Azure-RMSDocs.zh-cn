@@ -4,16 +4,16 @@ description: 在 Azure 信息保护策略中配置适用于所有用户、所有
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2018
+ms.date: 10/01/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 118b65d1dc76e2df7b1fd639b6ea224cb5e8220c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: eb2f539486464d93e99f8485fc8d0812f9a7953d
+ms.sourcegitcommit: 4e2493d7856dc35bb3f5869fff1276c98bf88192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151735"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864102"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
@@ -37,7 +37,7 @@ ms.locfileid: "44151735"
 
 3. 在“策略”边栏选项卡上，配置以下设置：
     
-    - **选择默认标签**：当设置此选项时，选择标签以分配给没有标签的文档和电子邮件。 如果具有子标签，不能将标签设置为默认标签。 
+    - **选择默认标签**：当设置此选项时，选择标签以分配给没有标签的文档和电子邮件。 如果具有子标签，则不能将标签设置为默认标签。 
     
     - **所有文档和电子邮件都必须有标签**：此选项设置为“**打开**”时，所有已保存的文档和发送的电子邮件都必须应用标签。 标记可能由用户手动分配，或因[条件](configure-policy-classification.md)自动分配，或（通过设置“**选择默认标签**”选项）默认分配。
         
@@ -49,7 +49,7 @@ ms.locfileid: "44151735"
         
         ![Azure 信息保护提示新分类是否较低](./media/info-protect-lower-justification.png)
         
-        此选项不适用于子标签。
+        此选项不适用于降低同一父标签下子标签的分类。
         
     - **对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签**：将此选项设置为“推荐”时，系统会提示用户将标签应用到其电子邮件中。 将基于应用于附件的分类标签动态选择标签，并选择最高等级的标签。 附件必须是物理文件，并且不能是指向文件的链接（例如，指向 SharePoint 或 OneDrive for Business 文件的链接）。 用户可接受或忽略该建议。 将此选项设置为“自动”时，将自动应用该标签，但用户可以在发送电子邮件之前删除该标签或选择另一个标签。  
     

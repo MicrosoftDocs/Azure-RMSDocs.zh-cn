@@ -4,16 +4,16 @@ description: 可以删除或重排用户可见的 Azure 信息保护标签。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 9589985fa0ab5f80ce78483dedac8c7bc4b9879e
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0b4631cd5664ba7951db04ce9ba221a19c0674ff
+ms.sourcegitcommit: 1cedaa9cefea49775f574f2ede61539bc6f0b813
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151701"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48794304"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>如何删除或重排 Azure 信息保护的标签
 
@@ -25,7 +25,7 @@ ms.locfileid: "44151701"
 
 在删除已应用到文档和电子邮件的标签时，当 Azure 信息保护客户端在下一次打开这些文档和客户端，用户将看到标签的“未设置”状态。 但是，标签信息仍然保留在元数据中，并且仍可以通过查找此标签信息的服务进行读取。
 
-此外，如果删除的标签已应用保护，该保护就不会被删除。 标签中的保护设置将保留并显示在“保护模板”部分。 现在可以将此模板转换为新的标签或链接到标签。 此模板存在时，无法创建与已删除标签的名称相同的新标签。 如果想那么做，有如下选项可供选择：
+此外，如果删除的标签已应用保护，该保护就不会被删除。 标签中的保护设置将保留并显示在“保护模板”部分。 现在可以将此模板转换为新的标签。 此模板存在时，无法创建与已删除标签的名称相同的新标签。 如果想那么做，有如下选项可供选择：
 
 - 将模板转换为标签。 
     

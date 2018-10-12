@@ -4,18 +4,18 @@ description: 说明如何对文档和电子邮件进行分类和保护。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 09/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 01637807680e4172af8938a3c63b092191ef41cd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 355d71f844d64fb26898c482d2414ca388ac38be
+ms.sourcegitcommit: ea8207da513f61bc0691c952da1f8b61ceb10887
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148676"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45696511"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>用户指南：使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
@@ -76,6 +76,8 @@ ms.locfileid: "44148676"
 - 如果管理员最近为你配置了新标签，请尝试关闭 Office 应用程序的所有实例，然后重新打开。 此操作将检查对你的标签所做的更改。
 
 - 如果缺少应用保护的标签，那么可能你使用的 Office 版本不支持应用 Rights Management 保护。 若要验证，单击“保护” > “帮助和反馈”。 在对话框中，检查“客户端状态”部分中是否显示消息“此客户端未获许可使用 Office Professional Plus”。 
+    
+    如果你安装了最低版本 1805 生成号为 9330.2078 的 Office 2016 应用，并且你的帐户分配了一个 Azure Rights Management（也称为 Office 365 Azure 信息保护）许可证，则不需要安装 Office Professional Plus。
 
 - 此标签采用的作用域策略可能不包括你的帐户。 请与你的技术支持或管理员一起检查。
 

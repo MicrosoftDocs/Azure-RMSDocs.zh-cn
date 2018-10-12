@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 57c410432377d5a98c132239ac1805293d1a5133
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: e63b98118cda3a927577a90c7c0999d8781f8d93
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151480"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211286"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -168,7 +168,11 @@ Azure 信息保护标签可用于组织常规创建和存储的数据，包括�
 
 - [如何为不同语言配置标签](configure-policy-languages.md)
 
+- [如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](configure-policy-migrate-labels.md)
+
 ## <a name="next-steps"></a>后续步骤
 
 有关如何自定义默认策略并在 Office 应用程序是查看所产生行为的示例，请尝试 [Azure 信息保护快速入门教程](infoprotect-quick-start-tutorial.md)(#azure-信息保护快速入门教程)。
+
+若要查看策略的执行情况，请参阅 [Azure 信息保护报表](reports-aip.md)。
 

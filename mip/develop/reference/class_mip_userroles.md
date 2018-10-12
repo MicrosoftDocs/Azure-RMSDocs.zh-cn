@@ -1,5 +1,20 @@
+---
+title: class mip UserRoles
+description: class mip UserRoles 的引用
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 1cc1da6f443fa22095f216bb2ec2f0e51e75bf78
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445251"
+---
 # <a name="class-mipuserroles"></a>class mip::UserRoles 
-表示一组用户以及与之关联的角色。
+一组用户以及与之关联的角色。
   
 ## <a name="summary"></a>“摘要”
  成員                        | 描述                                

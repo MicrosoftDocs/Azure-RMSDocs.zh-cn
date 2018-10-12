@@ -4,18 +4,18 @@ description: 管理员资源，其中包括有关新版本、支持选项以及�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 10/01/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: aa5fffe039c8e5b8dc960d6197ecd8a03837e5e6
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 145889772dd3d2a8e29967264c1f0f7de7a7c222
+ms.sourcegitcommit: d5669b9bcc4aebabf64e8891eda4e20ea3acb2a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150035"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48046982"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -35,7 +35,7 @@ ms.locfileid: "44150035"
 ## <a name="information-about-new-releases-and-updates"></a>有关新版本和更新的信息
 Azure 信息保护产品团队在[企业移动性 + 安全性博客](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection)上发布主要新版本的公告。 次要版本的公告发布在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上。还可以查看 [UserVoice 网站](https://msip.uservoice.com)，了解请求获取的功能的状态。
 
-此外，[Azure 信息保护技术博客](https://aka.ms/AIPblog)每个月都会发布文档更改摘要。 这些文档更新包括新版本信息、支持声明更新以及对现有版本的更正和说明。 这些文章的标题为：“\<月份/年份> 的 Azure 信息保护文档更新”。
+可以在 [Azure 信息保护技术博客](https://aka.ms/AIPblog)上找到其他更详细的信息。 例如，每月发布一个文档更改摘要，以告知有关任何新版本、支持声明更新以及现有版本更正和说明的信息。 这些文档更新帖子的标题为：“\<月份/年份> 的 Azure 信息保护文档更新”。
 
 ## <a name="support-options-and-community-resources"></a>支持选项和社区资源
 以下部分提供有关支持选项和故障排除选项的信息及社区资源。
@@ -64,7 +64,9 @@ Azure 信息保护产品团队在[企业移动性 + 安全性博客](https://clo
 
 点播视频：
 
-- Microsoft Ignite 2017 的 [Azure 信息保护](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522)研讨会。
+- Microsoft Ignite 2018 的 [Azure 信息保护](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Information%2520Protection)研讨会：
+    
+    - 请参阅我们推荐的[前五个](what-is-information-protection.md#microsoft-ignite)会话。
 
 - 包含 [Azure 信息保护](https://mva.microsoft.com/search/SearchResults.aspx#!q=Azure%20Information%20protection)的 Microsoft Virtual Academy 研讨会。
 

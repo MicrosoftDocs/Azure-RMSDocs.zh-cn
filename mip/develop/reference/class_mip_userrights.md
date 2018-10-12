@@ -1,5 +1,20 @@
+---
+title: class mip UserRights
+description: class mip UserRights 的引用
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: c1ef7aaba00bf595d80f07f318aa5808f3a56409
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445115"
+---
 # <a name="class-mipuserrights"></a>class mip::UserRights 
-表示一组用户和与之关联的权限。
+一组用户和与之关联的权限。
   
 ## <a name="summary"></a>“摘要”
  成員                        | 描述                                

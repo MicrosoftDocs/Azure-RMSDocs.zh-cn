@@ -4,18 +4,18 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
-ms.topic: article
+ms.date: 09/24/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5ff45ee8c48e1843010692cbd22d146a3fa9970
-ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
+ms.openlocfilehash: f9def0ae81a3887f9f6e1c99f7e1f02c54581fdb
+ms.sourcegitcommit: c1274d6d7ab486590dcd2a4e6aca3dcd3d284c1b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43117904"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168754"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -55,7 +55,7 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 - **Microsoft Office**：下表中的文件类型。
     
-    这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。 除非有 Azure 信息保护客户端预览版，否则不支持 Strict Open XML 文档格式。
+    这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
     
     |Office 文件类型|Office 文件类型|
     |----------------------------------|----------------------------------|
@@ -125,9 +125,9 @@ Azure 信息保护客户端支持保护的最大文件大小。
 |。jt|。pjt|
 
 ###### <a name="footnote-1"></a>脚注 1
-如果使用 Azure 信息保护客户端预览版，[在默认情况下](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，受保护 PDF 文档的文件扩展名仍为 .pdf。
+如果将 Azure 信息保护客户端配置为[使用 PDF 加密 ISO 标准保护 PDF 文件](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，则受保护 PDF 文档的文件扩展名仍为 .pdf。
 
-下一个表列出了其余的文件类型，这些文件类型通过 Azure 信息保护客户端支持本机保护，并且还可进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。 除非有 Azure 信息保护客户端预览版，否则不支持 Strict Open XML 文档格式。
+下一个表列出了其余的文件类型，这些文件类型通过 Azure 信息保护客户端支持本机保护，并且还可进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
 
 对于这些文件，在文件受 Rights Management 服务保护后，文件扩展名仍保持不变。
 
@@ -188,7 +188,9 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 为了帮助阻止用户更改对计算机操作至关重要的文件，某些文件类型和文件夹会自动从分类和保护中排除。 如果用户尝试使用 Azure 信息保护客户端对这些文件进行分类或保护，则会看到一条消息，显示这些文件被排除。
 
-- **排除的文件类型**：.lnk、.exe、.com、.cmd、.bat、.dll、.ini、.pst、.sca、.drm、.sys、.cpl、.inf、.drv、.dat、.tmp、.msp、.msi、.pdb、.jar
+- 排除的文件类型：.lnk、.exe、.com、.cmd、.bat、.dll、.ini、.pst、.sca、.drm、.sys、.cpl、.inf、.drv、.dat、.tmp、.msg、.msp、.msi、.pdb、.jar
+    
+    现在还排除了以下文件类型：.zip、.msg 和 .rar。 
 
 - **排除的文件夹**： 
     - Windows
@@ -198,7 +200,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 ### <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序从分类和保护中排除的文件类型
 
-默认情况下，扫描程序还会排除与 Azure 信息保护客户端相同的文件类型，以下扫描程序预览版除外：.rar、.rtf、.msg 和 .zip。 
+默认情况下，扫描程序还会排除与 Azure 信息保护客户端相同的文件类型，此外还会排除 .rtf。 
 
 使用以下 PowerShell cmdlet 时，可更改扫描程序检查文件时包含或排除的文件类型：
 
@@ -217,23 +219,19 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 受密码保护的任何文件都不能由 Azure 信息保护客户端本机保护，除非该文件当前在应用保护的应用程序中打开。 最常看到的是受密码保护的 PDF 文件，但 Office 应用等其他应用程序也提供此功能。
 
-此外，Windows 版 Azure 信息保护客户端的正式发布 (GA) 版本支持查看以下文件，但无法对以下任一情况下的 PDF 文件进行本机保护或取消保护：
-
-- 基于窗体的 PDF 文件。 
-
-- 文件扩展名为 .pdf 的受保护 PDF 文件。
-    
-    Azure 信息保护客户端可以保护不受保护的 PDF 文件，并且可取消保护和重新保护扩展名为 .ppdf 的受保护 PDF 文件。
-
-作为保护这些文件的一种替代解决方法，可以按照[更改文件的默认保护级别](#changing-the-default-protection-level-of-files)部分中的说明对其进行常规保护。 但是，此方法在计算机级别更改文件扩展名为 .pdf 的所有文件的保护级别。 只是不能对满足所列条件的文件定义常规保护。
-
-如果保护这些文件非常重要，可以暂时将它们复制到另一计算机，以一般方式对其进行保护，然后再将其复制回。 或者，使用 Azure 信息保护客户端的预览版本。
-
-当使用 Azure 信息保护客户端的当前预览版本时，[在默认情况下](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，可对以下两种情况下的 PDF 文件进行本机保护或取消保护：
+此外，除非 Azure 信息保护客户端配置为[使用 PDF 加密 ISO 标准保护 PDF 文件](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，否则此客户端可以查看以下文件，但无法对以下两种情况下的 PDF 文件进行本机保护或取消保护：
 
 - 基于窗体的 PDF 文件。
 
-- 文件扩展名为 .pdf 的受保护 PDF 文件。 
+- 文件扩展名为 .pdf 的受保护 PDF 文件。
+
+作为保护这些文件的一种替代解决方法，可以按照[更改文件的默认保护级别](#changing-the-default-protection-level-of-files)部分中的说明对其进行常规保护。 但是，此方法在计算机级别更改文件扩展名为 .pdf 的所有文件的保护级别。 只是不能对满足所列条件的文件定义常规保护。
+
+如果保护这些文件非常重要，可以暂时将它们复制到另一计算机，以一般方式对其进行保护，然后再将其复制回。 或者，将该客户端配置为[使用 PDF 加密 ISO 标准保护 PDF 文件](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，以便能够对以下两种情况下的 PDF 文件进行本机保护或取消保护：
+
+- 基于窗体的 PDF 文件。
+
+- 文件扩展名为 .pdf 的受保护 PDF 文件。
 
 ### <a name="limitations-for-container-files-such-as-zip-files"></a>容器文件（如 .zip 文件）的限制
 

@@ -1,3 +1,18 @@
+---
+title: class mip RemoveProtectionAction
+description: class mip RemoveProtectionAction 的引用
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: a6f2d0b806491f286c8e80112bb1bd2024ddb3ee
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445552"
+---
 # <a name="class-mipremoveprotectionaction"></a>class mip::RemoveProtectionAction 
 指定从文档中删除保护的操作类。
   

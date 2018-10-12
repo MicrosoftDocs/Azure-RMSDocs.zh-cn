@@ -4,16 +4,16 @@ description: 该教程用于快速试用适合你组织的 Microsoft Azure 信�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/08/2018
-ms.topic: article
+ms.date: 09/17/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 4989b0feb9bb355fac1813b8730f436295e8beab
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 2eb58e0177ca397548b5dda6df7b6b5a5fde0031
+ms.sourcegitcommit: ea8207da513f61bc0691c952da1f8b61ceb10887
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804382"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45696477"
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure 信息保护快速入门教程 
 
@@ -37,9 +37,18 @@ ms.locfileid: "42804382"
 
 - 一个全局管理员帐户，用于登录到 Azure 门户以激活保护并配置 Azure 信息保护策略。 或者，可以使用具有以下任一管理角色的帐户：[信息保护管理员或安全管理员](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)。 此帐户还必须有电子邮件地址和可用的电子邮件服务（如 Exchange Online）。
 
-- 运行 Windows（最低配置为带 Service Pack 1 的 Windows 7）并已安装含 2016 应用或 2013 应用的 Office 365 ProPlus、Office Professional Plus 2016、带 Service Pack 1 的 Office Professional Plus 2013 或者带 Service Pack 2 的 Office Professional Plus 2010 的计算机。 
+- 运行 Windows（最低配置为 Windows 7 Service Pack 1）的计算机，并在此计算机上，从以下类别之一登录到 Office 应用程序：
     
-    要将这些应用程序与 Azure 信息保护配合使用，必须具有[包含使用 Azure Rights Management 服务的 Office 365 订阅](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 例如，Office 365 E3 或 Office 365 E5 订阅。 要使用此订阅中的许可证，需要登录到 Office 应用。
+    - 含 Office 2016 应用的 Office 365（最低版本为 1805，生成号 9330.2078）。 若要使用此选项，必须为帐户分配 Azure Rights Management 许可证。 此许可证包含在 Azure 信息保护订阅中。
+    
+    - 含 2016 应用或 2013 应用的 Office 365 专业增强版（即点即用或基于 Windows Installer 的安装）。
+    
+    - Office Professional Plus 2016。
+    
+    - Office Professional Plus 2013 Service Pack 1。
+    
+    - Office Professional Plus 2010 Service Pack 2。
+
 
 让我们开始吧。
 

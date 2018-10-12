@@ -1,10 +1,25 @@
+---
+title: class mip AccessDeniedError
+description: class mip AccessDeniedError 的引用
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: fd2e1990a315324a43fffe5f547c2f72c61e9539
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445812"
+---
 # <a name="class-mipaccessdeniederror"></a>class mip::AccessDeniedError 
-用户无法访问内容。 例如，无权限、内容已撤销等。
+用户无法访问内容。 例如，无权限、内容已撤销。
   
 ## <a name="summary"></a>“摘要”
  成員                        | 描述                                
 --------------------------------|---------------------------------------------
- public char const* what() const  |  获取 cstring 错误消息。
+ public char const* what() const  |  获取错误消息。
 public std::shared_ptr<Error> Clone() const  |  克隆错误。
  public virtual ErrorType GetErrorType() const  |  获取错误类型。
  public virtual const std::string& GetErrorName() const  |  获取错误名称。
@@ -14,10 +29,10 @@ public std::shared_ptr<Error> Clone() const  |  克隆错误。
 ## <a name="members"></a>成員
   
 ### <a name="what"></a>what
-获取 cstring 错误消息。
+获取错误消息。
 
   
-**返回结果**：cstring 错误消息
+返回结果：错误消息
   
 ### <a name="error"></a>错误
 克隆错误。
