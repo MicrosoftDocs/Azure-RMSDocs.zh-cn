@@ -8,16 +8,15 @@ ms.date: 09/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: ce166eda2090a6682d51ed347521ef23f3206691
-ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
+ms.openlocfilehash: cf951bba3cc74a82e31841986dde9e75ec34a630
+ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47233705"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862118"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
