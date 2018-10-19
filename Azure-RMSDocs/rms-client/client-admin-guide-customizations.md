@@ -4,18 +4,18 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 40415c25befd3eea8d33a2b8572b0d48f7ee918c
-ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
+ms.openlocfilehash: 7657969916f69424a2823cb8b1dd79f9a50b6011
+ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403091"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382640"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -251,7 +251,7 @@ ms.locfileid: "47403091"
 
 要使 Azure 信息保护扫描程序使用新设置，必须重启扫描程序服务。
 
-有关此 PDF 加密的详细信息，请参阅博客文章[使用 Microsoft 信息保护进行 PDF 加密的新支持](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/2627570)。
+有关此 PDF 加密的详细信息，请参阅博客文章[使用 Microsoft 信息保护进行 PDF 加密的新支持](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)。
 
 ### <a name="to-convert-existing-ppdf-files-to-protected-pdf-files"></a>将现有的 .ppdf 文件转换为受保护的 .pdf 文件
 
@@ -278,8 +278,6 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 3. 使用 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 和 *RemoveLabel* 参数删除此标签。 如果使用的是包含“用户必须提供理由以设置较低分类标签、删除标签或删除保护”的[策略设置](../configure-policy-settings.md)，还必须使用原因指定“理由”参数。 例如： 
     
         Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
-    
-    若由于正在将强制标签作为[策略设置](../configure-policy-settings.md)（所有文档和电子邮件均必须具有标签）而无法删除标签，则暂时改为应用其他标签。
 
 4. 为在步骤 1 中标识的标签指定值，重新应用初始标签。 例如：
     
