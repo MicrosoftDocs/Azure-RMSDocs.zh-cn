@@ -4,18 +4,18 @@ description: 查看和使用要求安装 Azure 信息保护客户端的受保护
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 358463bbfd7cd89ccd11c815e73516f688086817
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 3b4dfc62950166ca7221002169005fa3693a5998
+ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150749"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862084"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>用户指南：查看和使用受 Rights Management 保护的文件
 
@@ -63,11 +63,13 @@ ms.locfileid: "44150749"
     
     有关每个权限级别中包含的权限和使用情况权限的详细信息，请参阅[权限级别中包含的权限](../configure-usage-rights.md#rights-included-in-permissions-levels)。
 
-4. 若要编辑文件，请单击“另存为”，这样就可以在没有标签和不保护其原始文件扩展名的情况下保存文件。 然后，可使用与该文件类型相关联的应用程序来编辑该文件。 
+4. 要编辑文件，请单击“另存为”，这样可以将受保护的文件保存为其原始文件扩展名。 然后，可使用与该文件类型相关联的应用程序来编辑该文件。 此时，文件的标签和保护将被删除。
     
-    完成编辑文件时，在文件资源管理器中，右键单击该文件以重新应用标签，进而重新应用保护。
+    请注意，由于查看器是受保护的文件，因此仅对受保护的文件启用“另存为”按钮。
+    
+5. 编辑完文件后，在“文件资源管理器”中，右键单击该文件以重新应用标签。 此操作会重新应用保护。
 
-5. 如果要打开其他受保护的文件，可以使用“打开”选项从查看器中直接浏览它们。 所选文件将替换查看器中的原始文件。 
+6. 如果要打开其他受保护的文件，可以使用“打开”选项从查看器中直接浏览它们。 所选文件将替换查看器中的原始文件。 
 
 > [!TIP]
 > 如果受保护的文件未打开，并且已安装完整的 Azure 信息保护客户端，请尝试“重置设置”选项。 要访问此选项，请从 Office 应用中依次选择“保护”按钮 >“帮助和反馈” > “重置设置”。 

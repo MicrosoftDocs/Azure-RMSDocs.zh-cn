@@ -4,18 +4,18 @@ description: 使用这些步骤，为组织准备、实施和管理 Azure 信息
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/05/2018
+ms.date: 10/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 20fcfa3790dc9ad1612a508f4fe28f72997fc475
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 4d1a63ac3ea5fae9782588b1779d7c7950738e23
+ms.sourcegitcommit: 3b41a6e730fa40660a2bdf5b1a73d155c87aacc2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47211269"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48834600"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
@@ -25,10 +25,16 @@ ms.locfileid: "47211269"
 
 不过，如果只想快速试用 Azure 信息保护，而不将其部署在生产环境中，请参阅 [Azure 信息保护快速入门教程](./infoprotect-quick-start-tutorial.md)。
 
-> [!IMPORTANT]
-> 在执行以下步骤之前，请确保已查看 [Azure 信息保护的要求](./requirements.md)。
+> [!NOTE]
+> 如果正在寻找产品发布路线图，请参阅我们的[有关新发布和更新的信息](information-support.md#information-about-new-releases-and-updates)部分。
+> 
+> 有关 Microsoft Ignite 2018 中当前预览和公布的统一标签体验的信息，请参阅 [Announcing availability of information protection capabilities to help protect your sensitive data](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)（宣布信息保护功能的可用性，以帮助保护敏感数据）。
 
-选择适用于组织，并与所需[订阅功能和特性](https://azure.microsoft.com/pricing/details/information-protection/)相匹配的部署路线图：
+### <a name="identify-your-deployment-roadmap"></a>标识部署路线图
+
+在执行以下步骤以部署 Azure 信息保护之前，请确保已查看 [Azure 信息保护要求](./requirements.md)。
+
+然后选择适用于组织，并与所需[订阅功能和特性](https://azure.microsoft.com/pricing/details/information-protection/)相匹配的部署路线图：
 
 - [使用分类、标记和保护](#deployment-roadmap-for-classification-labeling-and-protection)
 
@@ -45,17 +51,21 @@ ms.locfileid: "47211269"
 
 注意：不要从个人订阅的免费 RMS 手动分配用户许可证，不要使用此许可证来管理组织的 Azure Rights Management 服务。 这些许可证在 Office 365 管理中心显示为 **Rights Management 即席**，当运行 Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx) 时显示为 **RIGHTSMANAGEMENT_ADHOC**。 有关如何将个人订阅 RMS 自动授权和分配给用户的详细信息，请参阅[个人 RMS 和 Azure 信息保护](./rms-for-individuals.md)。
 
-
 ### <a name="step-2-prepare-your-tenant-to-use-azure-information-protection"></a>步骤 2：准备租户以使用 Azure 信息保护
-开始使用 Azure 信息保护之前，请执行以下准备工作：
+在开始使用 Azure 信息保护之前，请确保在 Office 365 或 Azure Active Directory 中具有用户帐户和组。 Azure 信息保护将使用这些用户帐户和组对组织中的用户进行身份验证和授权。 如有必要，请创建这些帐户和组，或者从本地目录同步这些帐户和组。 
 
-- 请确保在 Office 365 或 Azure Active Directory 中拥有用户帐户和组，Azure 信息保护将使用这些帐户和组对组织的用户进行身份验证和授权。 如有必要，请创建这些帐户和组，或者从本地目录同步这些帐户和组。 有关详细信息，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
+有关详细信息，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
 
 ### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>步骤 3：配置、部署分类和标记
 
-如果还没有分类策略，请查看[默认的 Azure 信息保护策略](./configure-policy-default.md)并将此作为基础，确定要将哪些分类标签分配给组织数据。 可以自定义这些标签以满足业务需求。 
+> [!TIP]
+> **可选但建议**：建议部署 [Azure 信息保护扫描程序](deploy-aip-scanner.md)以发现本地数据存储上的敏感信息。 扫描程序找到的信息有助于进行类别分类，提供有关所需的标签类型以及需要保护的文件的重要信息。
+> 
+> 可以将扫描程序配置为在 Windows Server 上的本地文件、网络共享中的文件以及 SharePoint 的本地版本中的文件中查找常见的敏感信息类型。 由于此配置不需要配置标签，而且还定义了类别分类，因此以这种方式运行扫描程序适用于部署的早期阶段。 此外，还可以与以下部署步骤并行使用此扫描程序配置，直到为标签配置条件。
 
-重新配置默认的 Azure 信息保护标签以按需更改，使其支持分类决策。 为用户手动标识配置策略，编写解释应用哪个标签、在何时应用标签的用户指南。 如果默认策略在创建时带有自动应用保护的标签，请删除保护设置或禁用标签。 有关如何配置 Azure 信息保护策略的详细信息，请参阅 [配置 Azure 信息保护策略](./configure-policy.md)。
+如果还没有分类策略，请查看[默认的 Azure 信息保护策略](./configure-policy-default.md)并将此作为基础，确定要将哪些分类标签分配给组织数据。 可以自定义这些标签以满足业务需求。
+
+重新配置默认的 Azure 信息保护标签以按需更改，使其支持分类决策。 为用户手动标识配置策略，编写解释应用哪个标签、在何时应用标签的用户指南。 如果默认策略在创建时带有自动应用保护的标签，请暂时删除保护设置或禁用标签。 有关如何配置 Azure 信息保护策略的详细信息，请参阅 [配置 Azure 信息保护策略](./configure-policy.md)。
 
 然后为用户部署 Azure 信息保护客户端，通过向用户提供何时选择标签的培训和说明，支持客户端的运行。 有关安装和支持客户端的详细信息，请参阅 [Azure 信息保护客户端管理员指南](./rms-client/client-admin-guide.md)。
 
@@ -63,7 +73,7 @@ ms.locfileid: "47211269"
 
 - 应用默认的标签
 
-- 如果用户选择较低的分类级别的标签，提示用户提供理由
+- 如果用户选择分类级别较低的标签或删除标签，提示用户提供理由
 
 - 强制所有文档和电子邮件都具有标签
 
@@ -71,7 +81,7 @@ ms.locfileid: "47211269"
 
 - 支持推荐选项和自动设置标签的条件
 
-在此阶段，不要选择保护文档和电子邮件的选项。
+在此阶段，不要选择保护文档和电子邮件的选项。 但是，在为自动标签配置标签后，请在发现模式下在本地数据存储上运行 [Azure 信息保护扫描程序](deploy-aip-scanner.md)并匹配策略。 使用此配置运行扫描程序可明白应用到文件的标签类型。 此信息有助于微调标签配置，并为批量分类和保护文件做好准备。 
 
 ### <a name="step-4-prepare-for-data-protection"></a>步骤 4：准备数据保护
 
@@ -83,13 +93,11 @@ ms.locfileid: "47211269"
 
 3. 如果当前正在使用 AD RMS：请进行迁移，将密钥、模板和 URL 移动到云中。 有关详细信息，请参阅[从 AD RMS 迁移到信息保护](migrate-from-ad-rms-to-azure-rms.md)。
 
-4. 确保保护服务已激活，以便开始保护文档和电子邮件。 如果需要分阶段部署，请配置用户载入控件以将其使用限于特定用户。 有关详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
+4. 确保保护服务已激活，以便开始保护文档和电子邮件。 如果需要分阶段部署，请配置用户载入控制以限制用户应用保护的能力。 有关详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
 
 （可选）考虑进行以下配置：
 
--   如果默认模板不足以满足你组织的要求，可自定义保护设置模板。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](./configure-policy-templates.md)。
-
--   使用日志记录，以便你能够监视组织如何使用保护服务。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](./log-analyze-usage.md)。
+- 使用日志记录，以便你能够监视组织如何使用保护服务。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](./log-analyze-usage.md)。
 
 ### <a name="step-5-configure-your-azure-information-protection-policy-applications-and-services-for-data-protection"></a>步骤 5：配置 Azure 信息保护策略、应用程序和服务，以进行数据保护
 
@@ -101,35 +109,35 @@ ms.locfileid: "47211269"
 
 2. 配置 Office 应用程序和服务
     
-    在 SharePoint Online 或 Exchange Online 中为信息权限管理 (IRM) 功能配置 Office 应用程序和服务。 有关详细信息，请参阅[为 Azure Rights Management 配置应用程序](./configure-applications.md)。
+    在 SharePoint Online 或 Exchange Online 中为信息权限管理 (IRM) 功能配置 Office 应用程序和服务。 有关详细信息，请参阅[为 Azure Rights Management 配置应用程序](configure-applications.md)。
 
 3. 为数据恢复配置超级用户功能
     
     如果现有 IT 服务（例如数据泄漏防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure 信息保护将保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](./configure-super-users.md)。
 
-4. 批量分类和保护文件 - 按需而定
+4. 批量分类和保护现有文件
     
-    PowerShell cmdlet 允许你对文件提供分类和保护以及删除分类和保护，随 Azure 信息保护客户端一起自动安装。 有关详细信息，请参阅管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)。
+    对于本地数据存储，现在以强制模式运行 [Azure 信息保护扫描程序](deploy-aip-scanner.md)，以便自动标记文件。 对于基于云的数据存储，请使用 [Azure Cloud App Security](https://docs.microsoft.com/cloud-app-security)。
+    
+    对于电脑上的文件，可以使用 PowerShell cmdlet 对其进行分类和保护。 有关详细信息，请参阅管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)。
 
-6. 部署适用于本地服务器的连接器
+6. 在 SharePoint Server 上部署受 IRM 保护的库的连接器，为本地 Exchange 部署受 IRM 保护的电子邮件
     
-    如果你拥有想要与保护服务共同使用的本地服务，请安装和配置 Rights Management 连接器。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](./deploy-rms-connector.md)。
+    如果具有本地 SharePoint 和 Exchange 并希望使用其信息权限管理 (IRM) 功能，请安装和配置 Rights Management 连接器。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](./deploy-rms-connector.md)。
 
 ### <a name="step-6-use-and-monitor-your-data-protection-solutions"></a>第 6 步：使用和监视数据保护解决方案
-现在，你可以保护数据，并记录公司如何使用已配置的标签和数据保护。 有关支持此部署阶段的其他信息，请参阅以下内容：
+你现在可以监视组织如何使用已配置的标签，并确认保护敏感信息。 有关支持此部署阶段的其他信息，请参阅以下内容：
 
-- [Azure 信息保护报表](reports-aip.md)
-
-- [使用 Azure Rights Management 服务帮助用户保护文件](./help-users.md)
-
-- [记录和分析 Azure 权限管理服务的使用情况](./log-analyze-usage.md)
+- [Azure 信息保护报表](reports-aip.md) - 现已发布预览版
 
 - [客户端文件和使用情况日志记录](./rms-client/client-admin-guide-files-and-logging.md)
 
-如果你对在基于 Windows 的文件服务器上使用文件分类基础结构自动保护文件感兴趣，请参阅[使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护](./rms-client/configure-fci.md)。
+- [记录和分析 Azure 权限管理服务的使用情况](./log-analyze-usage.md)
 
 ### <a name="step-7-administer-the-protection-service-for-your-tenant-account-as-needed"></a>步骤 7：根据需要管理租户帐户的保护服务
-开始使用保护服务时，可以利用 PowerShell 帮助编写脚本或自动执行管理更改。 有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](./administer-powershell.md)。
+开始使用保护服务时，可以利用 PowerShell 帮助编写脚本或自动执行管理更改。 某些高级配置可能还需要使用 PowerShell。 
+
+有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](./administer-powershell.md)。
 
 
 ## <a name="deployment-roadmap-for-data-protection-only"></a>仅用于数据保护的部署路线图
@@ -143,7 +151,7 @@ ms.locfileid: "47211269"
 ### <a name="step-2-prepare-your-tenant-to-use-azure-information-protection"></a>步骤 2：准备租户以使用 Azure 信息保护
 开始使用 Azure 信息保护提供的保护服务之前，请执行以下准备工作：
 
-1.  确保 Office 365 租户包含 Azure 信息保护用来对组织中的用户进行身份验证和授权的用户帐户和组。 如有必要，请创建这些帐户和组，或者从本地目录同步这些帐户和组。 有关详细信息，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
+1. 确保 Office 365 租户包含 Azure 信息保护用来对组织中的用户进行身份验证和授权的用户帐户和组。 如有必要，请创建这些帐户和组，或者从本地目录同步这些帐户和组。 有关详细信息，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
 
 2. 决定你是希望 Microsoft 管理你的租户密钥（默认设置），还是自行生成和管理你的租户密钥（也称为“自带密钥”，简称 BYOK）。 有关详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](plan-implement-tenant-key.md)。
 
@@ -151,11 +159,11 @@ ms.locfileid: "47211269"
 
 4. 如果当前正在使用 AD RMS：请进行迁移，将密钥、模板和 URL 移动到云中。 有关详细信息，请参阅[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)。
 
-5. 确保保护服务已激活，以便开始保护文档和电子邮件。 如果需要分阶段部署，请配置用户载入控件以将其使用限于特定用户。 有关详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
+5. 确保保护服务已激活，以便开始保护文档和电子邮件。 如果需要分阶段部署，请配置用户载入控制以限制用户应用保护的能力。 有关详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
 
 （可选）考虑进行以下配置：
 
--   如果默认模板不足以满足你组织的要求，可自定义保护设置模板。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](./configure-policy-templates.md)。
+- 如果默认模板不足以满足你组织的要求，可自定义保护设置模板。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](./configure-policy-templates.md)。
 
 - 使用日志记录，以便你能够监视组织如何使用保护服务。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](./log-analyze-usage.md)。
 
@@ -173,20 +181,20 @@ ms.locfileid: "47211269"
     
     如果现有 IT 服务（例如数据泄漏防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure 信息保护将保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](./configure-super-users.md)。
 
-4. 批量保护文件 - 按需而定 
+4. 批量保护现有文件 
     
-    PowerShell cmdlet 允许你批量保护或批量取消保护多个文件类型，随 Azure 信息保护客户端一起自动安装。 有关详细信息，请参阅管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)。
+    可以使用 PowerShell cmdlet 批量保护或批量取消保护多种文件类型。 有关详细信息，请参阅管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)。
+    
+    对于基于 Windows 的文件服务器上的文件，可以将这些 cmdlet 与脚本和 Windows Server 文件分类基础结构一起使用。 有关详细信息，请参阅[使用 Windows Server 文件分类基础结构 (FCI) 进行 RMS 保护](./rms-client/configure-fci.md)。
 
 5. 部署适用于本地服务器的连接器
     
     如果你拥有想要与保护服务共同使用的本地服务，请安装和配置 Rights Management 连接器。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](./deploy-rms-connector.md)。
 
-
 ### <a name="step-4-use-and-monitor-your-data-protection-solutions"></a>步骤 4：使用和监视数据保护解决方案
 现在，你可以保护数据，并记录公司如何使用保护服务。 有关支持此部署阶段的其他信息，请参阅[通过使用 Azure 权限管理服务帮助用户保护文件](./help-users.md)和[记录和分析 Azure 权限管理服务的使用情况](./log-analyze-usage.md)。
 
-如果你对在基于 Windows 的文件服务器上使用文件分类基础结构自动保护文件感兴趣，请参阅[使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护](./rms-client/configure-fci.md)。
-
 ### <a name="step-5-administer-the-protection-service-for-your-tenant-account-as-needed"></a>步骤 5：根据需要管理租户帐户的保护服务
-开始使用保护服务时，可以利用 PowerShell 帮助编写脚本或自动执行管理更改。 有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](./administer-powershell.md)。
+开始使用保护服务时，可以利用 PowerShell 帮助编写脚本或自动执行管理更改。 某些高级配置可能还需要使用 PowerShell。 
 
+有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](./administer-powershell.md)。

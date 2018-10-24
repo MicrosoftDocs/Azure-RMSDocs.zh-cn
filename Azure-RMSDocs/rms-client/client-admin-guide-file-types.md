@@ -4,18 +4,18 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/24/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f9def0ae81a3887f9f6e1c99f7e1f02c54581fdb
-ms.sourcegitcommit: c1274d6d7ab486590dcd2a4e6aca3dcd3d284c1b
+ms.openlocfilehash: 23baab9ba6ab9a7b1d43dd1f5f12947f383d9d28
+ms.sourcegitcommit: d049c23ddd0bb7f4c4d40153c753f178b3a04d43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168754"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072470"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -97,7 +97,9 @@ Azure 信息保护客户端支持保护的最大文件大小。
     
     - 若要保护其他文件类型，并在 Azure 信息保护查看器中打开这些文件类型：文件大小上限仅受可用磁盘空间和内存限制。
     
-    - 若要使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 取消保护文件：.pst 文件支持的文件大小上限为 5GB。 其他文件类型的文件大小上限仅受可用磁盘空间和内存限制。
+    - 若要使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 取消保护文件：.pst 文件支持的文件大小上限为 5GB。 其他文件类型的文件大小上限仅受可用磁盘空间和内存限制
+    
+    提示：如果需要在大型 .pst 文件中搜索或恢复受保护的项目，请参阅[使用 Unprotect-RMSFile 进行电子数据展示的指南](../configure-super-users.md#guidance-for-using-unprotect-rmsfile-for-ediscovery)。
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>支持用于分类和保护的文件类型
 
@@ -214,6 +216,22 @@ Azure 信息保护客户端支持保护的最大文件大小。
 > 如果在扫描时包含 .rtf 文件，请仔细监视扫描程序。 扫描程序无法成功检查某些 .rtf 文件，对于这些文件，未完成检查，必须重启服务。 
 
 默认情况下，扫描程序仅保护 Office 文件类型。 若要更改扫描程序的这一行为，请编辑注册表并指定想要得到保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。
+
+#### <a name="to-scan-zip-files"></a>扫描 .zip 文件
+
+按照以下说明操作时，扫描程序可以检查 .zip 文件：
+
+1. 对于运行扫描程序的 Windows Server 计算机，请安装 [Office 2010 Filter Pack SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2)。
+
+2. 如上一节所述，配置扫描程序以包含要检查的 .zip 文件。
+
+3. 如上一节所述，除应对 .zip 文件进行检查已发现是否存在明感信息外，如果还应对其进行分类和保护，请为具有此文件扩展名的文件添加注册表项以具有通用保护 (pfile)。
+
+执行这些步骤后的示例方案： 
+
+名为“accounts.zip”的文件包含带有信用卡号的 Excel 电子表格。 Azure 信息保护策略具有名为“机密\财务”的标签，该标签配置为发现信用卡号，并自动应用带有保护的标签，以限制对财务组进行访问。 
+
+检查文件后，扫描程序将此文件归类为“机密\财务”，对文件应用通用保护，以便只有财务组的成员可以解压缩它，并重命名文件“accounts.zip.pfile”。
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>默认不受保护的文件
 

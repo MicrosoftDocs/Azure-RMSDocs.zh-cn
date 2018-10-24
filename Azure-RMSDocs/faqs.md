@@ -4,18 +4,18 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
-ms.topic: article
+ms.date: 10/03/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 661f6bb0fa434483593cfc80053100376ec7f0f8
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: e49912fd777a97c51f9ef7b4e7cff5a2aeb2c3ad
+ms.sourcegitcommit: 1cedaa9cefea49775f574f2ede61539bc6f0b813
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806021"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48794321"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -99,13 +99,17 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 
 - 建议不要将管理员帐户添加到条件访问策略，因为这些帐户无法访问 Azure 门户中的“Azure 信息保护”边栏选项卡。
 
+- 如果在条件访问策略中使用 MFA 与其他组织展开协作 (B2B)，则必须使用 [Azure AD B2B 协作](/active-directory/b2b/what-is-b2b)，并为要在其他组织中共享的用户创建来宾帐户。
+
 - 如果针对条件访问使用许多云应用，则列表中可能不会显示“Microsoft Azure 信息保护”选项，因此无法进行选择。 在这种情况下，可使用列表顶部的搜索框。 开始键入“Microsoft Azure 信息保护”，筛选可用应用。 如果已有受支持的订阅，则可以看到“Microsoft Azure 信息保护”选项，可进行选择。 
 
 ## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure 信息保护中的标签和 Office 365 中的标签之间有何不同？
 
-通过 Azure 信息保护中的标签，可对文档和电子邮件应用一致分类和保护策略，无论它们在本地还是在云中。 此分类和保护与内容的存储位置或其移动方式无关。 通过 [Office 365 中标签的安全性和符合性](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，可在内容处于 Office 365 服务中时，对文档和电子邮件进行分类以供审核和保留。 
+通过 Azure 信息保护中的标签，可对文档和电子邮件应用一致分类和保护策略，无论它们在本地还是在云中。 此分类和保护与内容的存储位置或其移动方式无关。 直到最近，Office 365 还只有[保留标签](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，用于在文档和电子邮件处于 Office 365 服务中时，对该内容进行分类以供审核和保留。 
 
-当前，用户需单独应用和管理这些标签，但 Microsoft 致力于推出针对多个服务（包括 Azure 信息保护、Office 365、Microsoft Cloud App Security 和 Windows 信息保护）的全面且统一的标记策略。 你可能听说过此策略，它称为“Microsoft 信息保护”(MIP)。 这一相同的标记架构和存储也可用于软件供应商。 有关详细信息，请参阅博客文章 [Consistent labeling and protection policies coming to Office 365 and Azure Information Protection](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Consistent-labeling-and-protection-policies-coming-to-Office-365/ba-p/161553)（Office 365 和 Azure 即将推出一致的标签和保护策略）。
+Microsoft 一直致力于推出针对多个服务（包括 Azure 信息保护、Office 365、Microsoft Cloud App Security 和 Windows 信息保护）的全面且统一的标记策略。  你可能听说过此策略，它称为“Microsoft 信息保护”。 通过使用 MIP SDK，也可以为软件供应商提供这一相同的标记架构和存储。
+
+除了 Office 365 安全与合规中心的保留标签外，现在还可以看到配置**敏感度标签**的选项，该选项是在 Microsoft Ignite 2018 大会上推出的。 有关在不同服务中统一标签的进度的详细信息，请阅读博客文章 [Announcing availability of information protection capabilities to help protect your sensitive data](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)（宣布推出信息保护功能来帮助保护你的敏感数据）。
 
 ## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI 和 Azure 信息保护扫描程序有何区别？
 
@@ -117,7 +121,7 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 
 |Windows Server FCI|Azure 信息保护扫描程序|
 |--------------------------------|-------------------------------------|
-|支持的数据存储： <br /><br />- Windows Server 上的本地文件夹|支持的数据存储： <br /><br />- Windows Server 上的本地文件夹<br /><br />- Windows 文件共享和网络连接存储<br /><br />- SharePoint Server 2016 和 SharePoint Server 2013。 对于[具有对此版本 SharePoint 的延长支持](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)，并且正在使用预览版扫描程序的客户，也支持 SharePoint Server 2010。|
+|支持的数据存储： <br /><br />- Windows Server 上的本地文件夹|支持的数据存储： <br /><br />- Windows Server 上的本地文件夹<br /><br />- Windows 文件共享和网络连接存储<br /><br />- SharePoint Server 2016 和 SharePoint Server 2013。 对于具有[对此版本 SharePoint 的延长支持](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)的客户，还支持 SharePoint Server 2010。|
 |操作模式： <br /><br />- 实时|操作模式： <br /><br />- 系统地抓取数据存储，且此周期可以运行一次或多次|
 |对文件类型的支持： <br /><br />- 默认保护所有文件类型 <br /><br />- 通过编辑注册表，可以从保护配置中排除特定文件类型|对文件类型的支持： <br /><br />- 默认保护 Office 文件类型 <br /><br />- 通过编辑注册表，可以将特定文件类型纳入保护|
 

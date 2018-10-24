@@ -4,16 +4,16 @@ description: 在配置标签的条件时，可以自动将标签分配到文档�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/29/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 252b92a7a6ea6b64858acb0e7ace1cf9c56c1f63
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 3e911d8190e524efe56677d6afaec8f679c773b9
+ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148148"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862098"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
@@ -97,7 +97,7 @@ ms.locfileid: "44148148"
 
 ### <a name="sensitive-information-types-that-require-a-minimum-version-of-the-client"></a>需要最低版本客户端的敏感信息类型
 
-以下敏感信息类型当前需要 Azure 信息保护客户端预览版：
+以下敏感信息类型要求 Azure 信息保护客户端的最低版本为 1.37.19.0：
 
 - **欧盟电话号码**
 - **欧盟移动电话号码**

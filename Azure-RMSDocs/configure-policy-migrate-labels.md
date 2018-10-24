@@ -4,17 +4,17 @@ description: 为支持统一标签的客户端将 Azure 信息保护标签迁移
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/28/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 64063af186f01a5829b7aa668260928e3b13656d
-ms.sourcegitcommit: 304702a3f2f2ab2b32493c4aedeb5ee8424b925c
+ms.openlocfilehash: 075330138910da90049cad3c1ccc74a1a360a218
+ms.sourcegitcommit: 39403f0e9fe5912d467b119ed45da94bccd1cc80
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47415003"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100624"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心
 
@@ -93,7 +93,7 @@ Azure 信息保护客户端可以使用这些标签设置，而不会出现任�
 
 2. 在“Azure 信息保护 - 统一标签”边栏选项卡上，选择“激活”并按照联机说明进行操作。
 
-对于成功迁移的标签，当这些标签在安全与合规中心发布时，它们现在可由[支持统一标签的客户端](#clients-that-support-unified-labeling)使用。
+成功迁移的标签现在可被[支持统一标签的客户端](#clients-that-support-unified-labeling)使用。 但必须先在安全与合规中心发布这些标签。
 
 
 ### <a name="clients-that-support-unified-labeling"></a>支持统一标签的客户端
@@ -107,4 +107,4 @@ Azure 信息保护客户端可以使用这些标签设置，而不会出现任�
 
 ## <a name="next-steps"></a>后续步骤
 
-有关 Office 365 安全与合规中心配置迁移标签的详细信息，请参阅博客文章，[宣布在安全与合规中心推出统一标签管理](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)。
+有关在 Office 365 安全与合规中心配置和发布迁移标签的详细信息，请参阅博客文章 [Announcing the availability of unified labeling management in the Security & Compliance Center](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)（宣布在安全与合规中心推出统一标签管理）。

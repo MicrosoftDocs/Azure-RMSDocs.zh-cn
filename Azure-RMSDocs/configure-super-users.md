@@ -4,24 +4,24 @@ description: 了解并实施 Azure 信息保护中的 Azure Rights Management �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/31/2018
+ms.date: 10/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 762b46ac33b57bd81b5c1ab36d07f4d33305b4c0
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 07b780721bc0f22de6c36d88d98a2c8360af67b8
+ms.sourcegitcommit: f5395541fa3f74839402805dab68d0c2de395249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150987"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101828"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>为 Azure Rights Management 和发现服务或数据恢复配置超级用户
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
-Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确保已获授权的用户与服务始终可以阅读和检查 Azure Rights Management 为你的组织保护的数据。 如有需要，超级用户可以删除保护，或者更改以前应用的保护。 
+Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确保已获授权的用户与服务始终可以阅读和检查 Azure Rights Management 为你的组织保护的数据。 如有必要，可以删除或更改保护。
 
 对于受你的组织 Azure 信息保护租户保护的文档和电子邮件，超级用户始终具有权限管理完全控制[使用权](configure-usage-rights.md)。 这种功能有时称为“数据推理”，是保持对组织数据进行控制的关键所在。 例如，对于以下任何情况，你可以使用此功能：
 
@@ -78,6 +78,23 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 有关这些 cmdlet 的详细信息，请参阅 Azure 信息保护客户端管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)。
 
 > [!NOTE]
-> AzureInformationProtection 模块将替换随 RMS 保护工具一起安装的 RMS 保护 PowerShell 模块。 这两种模块不同于[适用于 Azure 权限管理的 PowerShell 模块](administer-powershell.md)，并且对该模块提供了补充。 AzureInformationProtection 模块支持 Azure 信息保护、适用于 Azure 信息保护的 Azure Rights Management 服务 (Azure RMS) 和 Active Directory Rights Management Services (AD RMS)。
+> AzureInformationProtection 模块与管理 Azure 信息保护的 Azure Rights Management 服务的 [ AADRM PowerShell 模块](administer-powershell.md)不同，并对其进行了补充。
 
+### <a name="guidance-for-using-unprotect-rmsfile-for-ediscovery"></a>使用 Unprotect-RMSFile 进行电子数据展示的指南
+
+虽然可以使用 Unprotect-RMSFile cmdlet 解密 PST 文件中的受保护内容，但请策略性地将此 cmdlet 用作电子数据展示过程的一部分。 在计算机上的大型文件上运行 Unprotect-RMSFile 是资源密集型的（内存和磁盘空间），而此 cmdlet 支持的最大文件大小为 5 GB。
+
+理想情况下，使用 [Office 365 电子数据展示](/office365/securitycompliance/ediscovery)在电子邮件中搜索和提取受保护的电子邮件和受保护的附件。 超级用户功能自动与 Exchange Online 集成，以便 Office 365 安全与合规中心中的电子数据展示可以在导出之前搜索加密项目，或在导出时解密加密电子邮件。
+
+如果无法使用 Office 365 电子数据展示，则可能有另一个与 Azure Rights Management 服务集成的电子数据展示解决方案，对数据进行类似推理。 或者，如果你的电子数据展示解决方案无法自动读取和解密受保护的内容，则仍然可以在多步骤过程中使用此解决方案，以便更有效地运行 Unprotect-RMSFile：
+
+1. 将有问题的电子邮件从 Exchange Online 或 Exchange 服务器中导出为 PST 文件，或从用户存储其电子邮件的工作站导出。
+
+2. 将 PST 文件导入电子数据展示工具。 由于该工具无法读取受保护的内容，因此预计这些项会产生错误。
+
+3. 从该工具无法打开的所有项目中，生成此次新的 PST 文件，仅包含受保护的项目。 第二个 PST 文件可能比原始 PST 文件小得多。
+
+4. 在第二个 PST 文件上运行 Unprotect-RMSFile 来解密这个小得多的文件的内容。 在输出中，将现已解密的 PST 文件导入发现工具中。
+
+有关跨邮箱和 PST 文件执行电子数据展示的更多详细信息和指南，请参阅以下博客文章：[Azure Information Process and eDiscovery Processes](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-and-eDiscovery-Processes/ba-p/270216)（Azure 信息流程和电子数据展示流程）。
 

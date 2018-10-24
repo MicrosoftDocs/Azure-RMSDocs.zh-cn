@@ -4,18 +4,18 @@ description: 此信息有助于规划和管理 Azure 信息保护租户密钥。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 72b2fe408f77742b8ca5f1ba8727e3a065818322
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 42451d8b50b0ad1edb75d767e622e697b12acf90
+ms.sourcegitcommit: 4767afef8fb7b81065a6bf207cd0a5518bf0e97a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151140"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48907155"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
@@ -152,9 +152,24 @@ ms.locfileid: "44151140"
 
 Key Vault 中存储的密钥具有密钥 ID。 此密钥 ID 是包含密钥保管库名称、密钥容器、密钥名称和密钥版本的一个 URL。 例如：**https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**。 若要使用此密钥，必须通过指定其 Key Vault URL 来配置 Azure 信息保护。
 
-在 Azure 信息保护可以使用此密钥之前，必须授权 Azure Rights Management 服务在你组织的密钥保管库中使用该密钥。 为此，Azure Key Vault 管理员将使用 Key Vault PowerShell cmdlet [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy)，并通过使用 GUID 00000012-0000-0000-c000-000000000000 向 Azure 权限管理服务主体授予权限。 例如：
+在 Azure 信息保护可以使用此密钥之前，必须授权 Azure Rights Management 服务在你组织的密钥保管库中使用该密钥。 要执行此操作，Azure Key Vault 管理员可以使用 Azure 门户或 Azure PowerShell：
 
-    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
+使用 Azure 门户进行配置：
+
+1. 依次导航至“密钥保管库” > \< 你的密钥保管库名称 > > “访问政策” > “添加新项”。
+
+2. 在“添加访问策略”边栏选项卡中，在“根据模板配置(可选)”列表框中选择“Azure 信息保护 BYOK”，然后单击“OK”。
+    
+    所选模板具有以下配置：
+    
+    - 自动为“选择主体”分配“Microsoft Rights Management Services”。
+    - 自动选择“获取”、“解密”和“签名”作为关键权限。 
+
+使用 PowerShell 进行配置：
+
+- 运行密钥保管库 PowerShell cmdlet [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy)，并通过使用 GUID 00000012-0000-0000-c000-000000000000 向 Azure Rights Management 服务主体授予权限。 例如：
+    
+        Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
 
 现在可开始配置 Azure 信息保护以将此密钥用作你的组织的 Azure 信息保护租户密钥。 使用 Azure RMS cmdlet，首先连接到 Azure Rights Management 服务，并登录：
 
@@ -180,7 +195,7 @@ Key Vault 中存储的密钥具有密钥 ID。 此密钥 ID 是包含密钥保�
 
 1.  开始使用你的租户密钥：
     
-    - 如果尚未激活保护服务，则必须立即激活 Rights Management 服务，以便贵组织能够开始使用 Azure 信息保护。 用户立即开始使用你的租户密钥（在 Azure Key Vault 中由 Microsoft 管理或由你管理）。
+    - 如果尚未激活保护服务，则必须立即激活 Rights Management 服务，以便组织能够开始使用 Azure 信息保护。 用户立即开始使用你的租户密钥（在 Azure Key Vault 中由 Microsoft 管理或由你管理）。
     
         有关激活的详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
         

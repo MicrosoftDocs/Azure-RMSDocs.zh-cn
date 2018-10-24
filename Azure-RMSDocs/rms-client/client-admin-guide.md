@@ -4,18 +4,18 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c415868045e2064696181217f66262e90887e25a
-ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
+ms.openlocfilehash: b5eccdd62d828bc5104815746458d4c7036594fd
+ms.sourcegitcommit: 39403f0e9fe5912d467b119ed45da94bccd1cc80
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403006"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100625"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -198,7 +198,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>升级 Azure 信息保护扫描程序
 
-若要升级 Azure 信息保护扫描程序，请安装最新版 Azure 信息保护客户端。 然后执行以下某个一次性操作：
+若要升级 Azure 信息保护扫描程序，请安装最新版 Azure 信息保护客户端。 然后执行以下某个一次性操作。 执行此操作后，无需重新扫描已扫描的文件。
 
 对于当前 GA 版本： 
 

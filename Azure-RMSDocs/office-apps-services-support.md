@@ -4,18 +4,18 @@ description: 最终用户 Office 应用程序（例如 Word 和 Outlook）和 Of
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b6b2a696ac6006754ece851a97701939df9e7870
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: b17e0f850fbd319011e0a50cccc2b661f773adc8
+ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148933"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866163"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
@@ -24,9 +24,9 @@ ms.locfileid: "44148933"
 最终用户 Office 应用程序和 Office 服务可使用 Azure 信息保护中的 Azure 权限管理服务来帮助保护组织的数据。 Office 应用程序包括 Word、Excel、PowerPoint 和 Outlook。 Office 服务包括 Exchange 和 SharePoint。 支持 Azure 权限管理服务的 Office 配置通常使用术语“信息权限管理 (IRM)”。
 
 ## <a name="office-applications-word-excel-powerpoint-outlook"></a>Office 应用程序：Word、Excel、PowerPoint、Outlook
-这些应用程序可以本机方式支持 Azure 权限管理，让用户能够将保护应用于已保存文档，或者应用于要发送的电子邮件。 用户可以应用模板以应用保护。 或者，在 Word、Excel 和 PowerPoint 中，用户还可以针对访问、权限和使用限制选择自定义设置。 
+这些应用程序可以本机方式支持 Azure 权限管理，让用户能够将保护应用于已保存文档，或者应用于要发送的电子邮件。 用户可以应用[模板](configure-policy-templates.md)以应用保护。 或者，在 Word、Excel 和 PowerPoint 中，用户还可以针对访问、权限和使用限制选择自定义设置。
 
-例如，用户可以配置 Word 文档，使仅组织中的人员可以访问该文档。 或者，控制 Excel 电子表格是否可以编辑，或限制为只读，或者禁止打印。 对于时间敏感型文件，可以配置一个过期时间，在过期之后无法再访问该文件。 此配置可由用户或通过应用模板直接执行。 对于 Outlook，用户还可以选择“不要转发”选项来帮助防止数据泄漏  。
+例如，用户可以配置 Word 文档，使仅组织中的人员可以访问该文档。 或者，控制 Excel 电子表格是否可以编辑，或限制为只读，或者禁止打印。 对于时间敏感型文件，可以配置一个过期时间，在过期之后无法再访问该文件。 此配置可由用户或通过应用保护模板直接执行。 对于 Outlook，用户还可以选择“不要转发”选项来帮助防止数据泄漏  。
 
 除了对 Azure 权限管理的本机 Office 支持之外，这些应用程序还支持与 [Azure 信息保护客户端](./rms-client/aip-client.md)一起安装的 Azure 信息保护栏。 此栏会显示标签，方便用户对包含敏感数据的文档和电子邮件自动应用保护。
 
@@ -37,23 +37,27 @@ ms.locfileid: "44148933"
 - 若要安装和配置 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端：安装和配置客户端](configure-client.md)。
 
 ## <a name="exchange-online-and-exchange-server"></a>Exchange Online 和 Exchange Server
-在使用 Exchange Online 或 Exchange Server 时，可以配置支持 Azure 权限管理的信息权限管理 (IRM) 选项。 此配置允许 Exchange 提供以下保护解决方案：
+使用 Exchange Online 或 Exchange 服务器 时，可以配置 Azure 信息保护的选项。 此配置允许 Exchange 提供以下保护解决方案：
 
 -   **Exchange ActiveSync IRM** ，让移动设备能够保护和使用受保护的电子邮件。
 
--   针对“Outlook 网页版”的电子邮件保护支持，其实现方式类似于 Outlook 客户端。 此配置允许用户通过使用模板或指定单个选项来保护电子邮件。 用户可以阅读和使用他们接收到的受保护的电子邮件。
+-   针对“Outlook 网页版”的电子邮件保护支持，其实现方式类似于 Outlook 客户端。 此配置允许用户通过使用保护模板或选项来保护电子邮件。 用户可以阅读和使用他们接收到的受保护的电子邮件。
 
--   适用于 Outlook 客户端的“保护规则”，管理员能够配置这些规则，以便自动将保护模板应用于发送给指定收件人的电子邮件。 例如，在将内部电子邮件发送至法律部门时，只允许法律部门成员阅读这些邮件，而且不能转发。 在发送电子邮件之前，用户可以看到应用于电子邮件的保护，而默认情况下，如果他们确定不需要这种保护，则可将其删除。 电子邮件在发送之前进行了加密。 有关详细信息，请参阅 Exchange 库中的 [Outlook 保护规则](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx)和[创建 Outlook 保护规则](https://technet.microsoft.com/library/dd638196%28v=exchg.150%29.aspx)。
+-   管理员可以配置适用于 Outlook 客户端的“保护规则”，以便自动将保护模板和选项应用于发送给指定收件人的电子邮件。 例如，在将内部电子邮件发送至法律部门时，只允许法律部门成员阅读这些邮件，而且不能转发。 在发送电子邮件之前，用户可以看到应用于电子邮件的保护，而默认情况下，如果他们确定不需要这种保护，则可将其删除。 电子邮件在发送之前进行了加密。 有关详细信息，请参阅 Exchange 库中的 [Outlook 保护规则](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx)和[创建 Outlook 保护规则](https://technet.microsoft.com/library/dd638196%28v=exchg.150%29.aspx)。
 
--   “邮件流规则”，管理员配置该规则将保护模板自动应用于电子邮件。 该规则基于发件人、收件人、邮件主题和内容等属性。 该规则在概念上类似于保护规则，但不允许用户删除保护。 该规则可应用于 Outlook 网页版和通过移动设备发送的电子邮件。 此外，在从客户端发送电子邮件之前，该规则不会对电子邮件进行加密。 有关详细信息，请参阅 Exchange 库中的[创建传输保护规则](https://technet.microsoft.com/library/dd302432.aspx)。
+-   管理员可以配置“邮件流规则”，以便将保护模板自动应用于电子邮件。 该规则基于发件人、收件人、邮件主题和内容等属性。 这些规则在概念上与保护规则类似，但不允许用户删除保护，因为保护是由 Exchange 服务而不是客户端设置的。 由于保护是由服务设置的，因此用户使用何种设备或操作系统并不重要。 有关详细信息，请参阅针对 Exchange 本地部署的 [Exchange Online 中的电子邮件流规则（传输规则）](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)和[创建传输保护规则](https://technet.microsoft.com/library/dd302432.aspx)。
 
--   “数据丢失预防 (DLP) 策略”，包含一系列筛选邮件的条件，有助于防止机密或敏感内容的数据丢失。 机密或敏感内容的示例包括个人信息或信用卡信息。 检测到敏感数据时，可以使用策略提示，警告用户他们可能需要应用保护。 有关详细信息，请参阅 Exchange 库中的[数据防护丢失](https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx)。
+-   “数据丢失预防 (DLP) 策略”包含一系列筛选邮件的条件，有助于防止机密或敏感内容的数据丢失。 其中，可以指定的操作之一是通过指定一个保护模板或选项来应用加密作为保护。 检测到敏感数据时，可以使用策略提示，警告用户他们可能需要应用保护。 有关详细信息，请参阅 Exchange Online 文档中的[数据丢失防护](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)。
 
--   **Office 365 邮件加密**，支持以附件形式向任何设备上的任何地址发送受保护的电子邮件和受保护的 Office 文档。 对于没有使用 Azure AD 的用户帐户，Web 体验支持社交标识提供者或一次性密码。 有关详细信息，请参阅 Office 网站上的 [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)（设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能）。
+-   Office 365 邮件加密支持以附件形式向任何设备上的任何电子邮件地址发送受保护的电子邮件和受保护的 Office 文档。 对于没有使用 Azure AD 的用户帐户，Web 体验支持社交标识提供者或一次性密码。 有关详细信息，请参阅 Office 365 文档[在 Azure 信息保护上设置全新的 Office 365 邮件加密功能](/office365/securitycompliance/set-up-new-message-encryption-capabilities)。 如需查找与此配置相关的其他信息，请参阅 [Office 365 邮件加密](https://docs.microsoft.com/office365/securitycompliance/ome)。
 
 如果使用本地 Exchange，可以通过部署 Azure 权限管理连接器结合使用 Azure 权限管理服务和 IRM 功能。 此连接器充当本地服务器和 Azure 权限管理服务之间的中继。
 
-如果准备为 Exchange 配置 IRM：
+有关保护模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
+
+如需深入了解可用于保护电子邮件的电子邮件选项，请参阅[电子邮件的“不得转发”选项](configure-usage-rights.md#do-not-forward-option-for-emails)和[电子邮件的“仅加密”选项](configure-usage-rights.md#encrypt-only-option-for-emails)。
+
+如果已准备好配置 Exchange 以保护电子邮件：
 
 - 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchange-online-irm-configuration)。
 
@@ -81,7 +85,7 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 > 
 > - 不支持带 .ppdf 文件扩展名的受保护 PDF 文件。 支持含 .pdf 文件扩展名的文件，并在下载该文件时，可使用在本地支持权限管理的 PDF 应用程序打开它。 例如，适用于 Windows 的 Azure 信息保护客户端包含这些受保护的 PDF 文件的查看器。 在[启用 RMS 的应用程序表](./requirements-applications.md#rms-enlightened-applications)中列出了备用 PDF 查看器。
 > 
-> - 当同时有多人对文档进行编辑时，不支持共同创作。 若要在受 IRM 保护的库中编辑文档，必须首先签出和下载文档，然后在 Office 应用程序中编辑该文档。 因此，一次只能有一人编辑文档。
+> - 不支持共同创作（多人同时对文档进行编辑）。 若要在受 IRM 保护的库中编辑文档，必须首先签出和下载文档，然后在 Office 应用程序中编辑该文档。 因此，一次只能有一人编辑文档。
 
 对于不受 IRM 保护的库，如果保护要上传到 SharePoint 或 OneDrive 的文件，则以下各项不适用于此文件：共同创作、Office Online、搜索、文档预览、缩略图、电子数据展示和数据丢失防护 (DLP)。
 

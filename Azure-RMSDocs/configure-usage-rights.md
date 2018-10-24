@@ -4,18 +4,18 @@ description: 了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 698d92cc38081a8b56f27ede4005cf8b514ed212
-ms.sourcegitcommit: a327dc124974c8b489340993d4b2b364ecf5fec5
+ms.openlocfilehash: ab94d732144613d810c959f7fad0f34a842da9c7
+ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46289271"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866180"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -94,7 +94,7 @@ ms.locfileid: "46289271"
 
 ## <a name="do-not-forward-option-for-emails"></a>电子邮件的“不得转发”选项
 
-Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应用和 Exchange 邮件流规则）有一个针对电子邮件的附加信息权限保护选项：“不得转发”。 
+Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、Exchange 邮件流规则和 Exchange 的 DLP 操作）具有电子邮件的附加信息权限保护选项：不得转发。 
 
 尽管**不得转发**看似用户（和 Exchange 管理员）可选择的默认权限管理模板，但此选项并不是模板。 因此在 Azure 门户中查看和管理保护模板时，你看不到此选项。 相反，“不得转发”选项是用户对其电子邮件收件人动态应用的一组使用权限。
 
@@ -119,7 +119,7 @@ Exchange 客户端和服务（例如 Outlook 客户端、Outlook Web Access 应�
 
 当 Exchange Online 使用 Office 365 邮件加密的新功能后，一项新的电子邮件选项将变为可用：“仅加密”。
 
-此选项可供使用 Exchange Online 的租户使用，可以在 Outlook 网页版中作为邮件流规则的另一个权限保护选项选择，如果安装了最低版本为 [1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4) 的 Office 365 专业增强版，还可从 Outlook 中选择。 有关详细信息，请参阅来自 office 团队的下列博客文章公告：[Office 365 邮件加密即将推出“仅加密”](https://aka.ms/omefeb2018)。
+此选项可供使用 Exchange Online 的租户使用，可以在网页版 Outlook 中作为邮件流规则的另一个权限保护选项（作为 Office 365 DLP 操作）选择，如果安装了最低版本为 [1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4) 的 Office 365 专业增强版，还可从 Outlook 中选择。 有关详细信息，请参阅来自 office 团队的下列博客文章公告：[Office 365 邮件加密即将推出“仅加密”](https://aka.ms/omefeb2018)。
 
 选择此选项后，电子邮件会被加密，且收件人必须要进行身份验证。 收件人将具有除“另存为，导出”和“完全控制”以外的所有使用权限。 此使用权限的组合意味着除了无法删除保护外，收件人不会有任何限制。 例如，收件人可以复制、打印和转发此电子邮件。 
 

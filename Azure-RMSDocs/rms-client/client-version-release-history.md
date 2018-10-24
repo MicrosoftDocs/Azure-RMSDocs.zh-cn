@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 12d5674fdebd3c857e7458b84f430cf3ee6755c2
-ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
+ms.openlocfilehash: b7aed6f8cdf6cf95b6b7af0bfa06554bde79dc02
+ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403074"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862169"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -44,7 +44,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ## <a name="versions-later-than-137190"></a>高于 1.37.19.0 的版本
 
-如果客户端版本高于 1.37.19.0，则这是用于测试和评估的预览内部版本。
+如果客户端之一的版本高于 1.37.19.0，则这是用于测试和评估的预览内部版本。
 
 发布日期：2018 年 9 月 20 日
 
@@ -52,6 +52,17 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - Microsoft Ignite 中宣布支持 Azure 信息保护分析功能的[中心报告](../reports-aip.md)。
 
+**其他信息**：
+
+要在此预览版中使用扫描程序，必须执行以下步骤：
+
+1. 安装客户端的当前正式发布版 (1.37.19.0)。
+2. 安装并配置扫描程序。
+3. 启动扫描程序。
+4. 将 Azure 信息保护客户端升级到此预览版本。
+5. 启动扫描程序。
+
+如果需要安装、配置和启动扫描程序的说明，请参阅[部署 Azure 信息保护扫描程序以自动分类和保护文件](../deploy-aip-scanner.md)。
 
 ## <a name="version-137190"></a>版本 1.37.19.0
 
