@@ -6,32 +6,26 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: c889c736b6e67ef3c581ee1acaa3c04138773d20
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: 430e130a5ba2026c0a3c69a59dddd6f9d6b4e8f0
+ms.sourcegitcommit: cc65c3851d4b8169a1a62c83afaf0f75402f7631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862135"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49476198"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置 
 
 快速入门和教程文章主要介绍使用 MIP SDK 库和 API 构建应用程序。 本文介绍如何安装和配置 Office 365 订阅和客户端工作站，为使用 SDK 做准备。
+
+以下平台支持 MIP SDK：  
+
+[!INCLUDE [MIP SDK platform support](../include/mip-sdk-platform-support.md)]
 
 在开始之前，请务必查看以下主题：
 
 - [什么是 Office 365 安全与合规中心？](https://docs.microsoft.com/office365/securitycompliance/security-and-compliance)
 - [什么是 Azure 信息保护？](/azure/information-protection/understand-explore/what-is-information-protection)
 - [如何使用 Azure 信息保护进行保护？](/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
-
-以下平台支持 MIP SDK：
-
-| 操作系统 | 版本 |  
-|------------------|----------|
-| Ubuntu  |  16.04 |
-| RedHat Enterprise Linux 7 | （带有 devtoolset-7） |
-| Debian  | 9 |
-| macOS   | High Sierra 及更高版本 |
-| Windows | 所有支持的版本，32 位和 64 位 |
 
 ## <a name="sign-up-for-an-office-365-subscription"></a>注册 Office 365 订阅
 

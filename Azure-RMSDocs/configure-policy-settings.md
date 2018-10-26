@@ -4,16 +4,16 @@ description: 在 Azure 信息保护策略中配置适用于所有用户、所有
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/01/2018
+ms.date: 10/16/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: eb2f539486464d93e99f8485fc8d0812f9a7953d
-ms.sourcegitcommit: 4e2493d7856dc35bb3f5869fff1276c98bf88192
+ms.openlocfilehash: 03736896f73fc83f699191677846e757eaf17be7
+ms.sourcegitcommit: d6c29e0d23c079045f9a9a2a270cf3cf22d628d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864102"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336453"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
@@ -44,6 +44,8 @@ ms.locfileid: "47864102"
         如果在用户保存文档或发送电子邮件时未分配标签，系统会提示用户选择一个标签。 例如：
         
         ![Azure 信息保护提示（如果强制实施了标记）](./media/info-protect-enforce-labelv2.png)
+        
+        使用带有 RemoveLabel 参数的 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) PowerShell cmdlet 删除标签时，此选项不适用。
         
     - **用户必须提供理由以设置较低分类标签、删除标签或删除保护**：此选项设置为“开”时，如果用户执行下列任一操作（例如，将“公共”标签更改为“个人”），则系统会提示用户提供此操作的理由。 例如，用户可能会解释该文档不再包含敏感信息。 操作和相应的理由会记录在其本地 Windows 事件日志中：“应用程序和服务日志” > “Azure 信息保护”。  
         

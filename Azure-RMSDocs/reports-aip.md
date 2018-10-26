@@ -4,19 +4,19 @@ description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: cf951bba3cc74a82e31841986dde9e75ec34a630
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: 424be5910d6a4498bc9d2684888cd2bf9af010af
+ms.sourcegitcommit: 26e1ccdd0c4339a51ec7812082b399f13ef73b2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862118"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324875"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -90,7 +90,7 @@ ms.locfileid: "48862118"
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
     
-2. 找到“管理”菜单选项，然后选择“配置分析(预览版)”。
+2. 找到“管理”菜单选项，然后选择“配置分析（预览版）”。
 
 3. 在“Azure 信息保护日志分析”边栏选项卡上，可以看到由你的租户拥有的任何 Log Analytics 工作区的列表。 执行以下操作之一：
     
@@ -104,11 +104,11 @@ ms.locfileid: "48862118"
 
 ## <a name="how-to-view-the-reports"></a>如何查看报告
 
-在 Azure 信息保护边栏选项卡中，找到“仪表板(预览版)”菜单选项，然后选择以下选项之一：
+在“Azure 信息保护”边栏选项卡中，找到“仪表板”菜单选项，然后选择以下选项之一：
 
-- “使用情况报表”：使用此报表查看标签是如何使用的。 
+- 使用情况报表（预览版）：使用此报表查看标签是如何使用的。 
 
-- “数据发现”：使用此报表查看有关扫描程序找到的文件的信息。
+- 数据发现（预览版）：使用此报表以查看有关扫描程序找到的文件的信息。
 
 ## <a name="how-to-modify-the-reports"></a>如何修改报表
 
@@ -116,6 +116,8 @@ ms.locfileid: "48862118"
 
 ![自定义 Azure 信息保护报表的 Log Analytics 图标](./media/log-analytics-icon.png)
 
+
+Azure 信息保护的记录数据存储在下表中：InformationProtectionLogs_CL
 
 ## <a name="next-steps"></a>后续步骤
 查看报表中的信息后，你可能会决定对你的 Azure 信息保护策略进行更改。 有关说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。

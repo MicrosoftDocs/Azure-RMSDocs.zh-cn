@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 867fd325b5c41ce500689d92868ca96c88ceb9da
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 71444804ab21dfbe09e0cf13ab1b75425f7a84d0
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169815"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
@@ -25,11 +25,11 @@ ms.locfileid: "44149287"
 
 **订阅包含分类、设置标签和保护（Azure 信息保护 P1 或 P2）：**
 
-- 未与租户的标签集成的模板显示在“Azure 信息保护 - 标签”边栏选项卡上标签后的“保护模板”部分。 若要导航到此边栏选项卡，请选择“分类” > “标签”菜单选项。 可以将这些模板转换为标签，也可以在为标签配置保护时链接到它们。 
+- 未与租户的标签集成的模板显示在“Azure 信息保护 - 标签”边栏选项卡上标签后的“保护模板”部分。 要导航到此边栏选项卡，请选择“分类” > “标签”菜单选项。 可以将这些模板转换为标签，也可以在为标签配置保护时链接到它们。 
 
 **订阅仅包含保护（包括 Azure 权限管理服务的 Office 365 订阅）：**
 
-- 租户的模板显示在“Azure 信息保护 - 标签”边栏选项卡上的“保护模板”部分。 若要导航到此边栏选项卡，请选择“分类” > “标签”菜单选项。 不显示任何标签。 还可看到特定于分类和标签的配置设置，但这些设置要么对模板没有任何影响，要么无法进行配置。 
+- 租户的模板显示在“Azure 信息保护 - 标签”边栏选项卡上的“保护模板”部分。 要导航到此边栏选项卡，请选择“分类” > “标签”菜单选项。 不显示任何标签。 还可看到特定于分类和标签的配置设置，但这些设置要么对模板没有任何影响，要么无法进行配置。 
 
 >[!NOTE]
 >在某些应用程序和服务中，你可能会看到[不转发](configure-usage-rights.md#do-not-forward-option-for-emails)和[仅加密](configure-usage-rights.md#encrypt-only-option-for-emails)（或加密）显示为模板。 这些不是可以编辑或删除的模板，而是默认情况下随 Exchange 服务提供的选项。
