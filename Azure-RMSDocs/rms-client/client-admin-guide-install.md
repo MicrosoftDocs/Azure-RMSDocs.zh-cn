@@ -4,18 +4,18 @@ description: 面向管理员的说明和信息，介绍如何在企业网络中�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d8818ff71acbd338ebb4959f9eb3ef617655b25d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 2b6e3a40f7faab35053c1bd3146bfc08767e0066
+ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149270"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49366999"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -57,9 +57,9 @@ ms.locfileid: "44149270"
     
     客户端安装不会检查此必备项，但需要 Azure 信息保护客户端分类和保护 PDF 文件。
 
-- 请勿为 Office 应用程序禁用“Microsoft Azure 信息保护”加载项
+- 托管外接程序列表的组策略配置
     
-    如果已配置组策略设置“托管加载项列表”，请通过为 Azure 信息保护指定以下编程标识符 (ProgID) 来添加 Office 应用程序的 Microsoft Azure 信息保护加载项，并将选项设置为“1：始终启用加载项”。
+    对于 Office 2013 及更高版本，配置托管外接程序列表的组策略设置，并为 Office 应用程序添加 Microsoft Azure 信息保护外接程序。 为 Azure 信息保护指定以下编程标识符 (ProgID)，并将该选项设置为 1：始终启用外接程序。
     
     - 对于 Outlook：`MSIP.OutlookAddin`
     
@@ -69,9 +69,9 @@ ms.locfileid: "44149270"
     
     - 对于 PowerPoint：`MSIP.PowerPointAddin`
     
-    即使尚未配置“托管加载项列表”组策略设置，如果收到报告称将禁用“Microsoft Azure 信息保护”加载项，也可能需要对其进行配置。 禁用此加载项后，Office 应用程序中将不会显示“Azure 信息保护”栏。
+    如果不配置此设置，则可能禁用 Microsoft Azure 信息保护外接程序，并且用户无法在其 Office 应用程序中标记其文档和电子邮件。
     
-    有关此组策略设置的详细信息，请参阅 [Office 2013 和 Office 2016 程序的组策略设置导致未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)。
+    有关配置此组策略设置的详细信息，请参阅 Office 文档中的[系统管理员对外接程序的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)。
 
 > [!IMPORTANT]
 > 安装 Azure 信息保护客户端需要本地管理权限。
