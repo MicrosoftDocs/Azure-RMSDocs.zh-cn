@@ -4,18 +4,18 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2018
+ms.date: 10/18/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e49912fd777a97c51f9ef7b4e7cff5a2aeb2c3ad
-ms.sourcegitcommit: 1cedaa9cefea49775f574f2ede61539bc6f0b813
+ms.openlocfilehash: dbc6cfc22e887ec9866586be50ffe807f3a4cbba
+ms.sourcegitcommit: 00e508f97c9191035763384959a8b8fa9f742d4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48794321"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49399886"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -24,6 +24,16 @@ ms.locfileid: "48794321"
 是否有关于 Azure 信息保护或 Azure Rights Management 服务 (Azure RMS) 的问题？ 请查看此处是否有答案。
 
 这些常见问题页将定期更新，其中新添加的内容将在 [Azure 信息保护技术博客](https://aka.ms/AIPblog)上的每月文档更新公告中列出。
+
+## <a name="whats-the-difference-between-azure-information-protection-and-microsoft-information-protection"></a>Azure 信息保护和 Microsoft 信息保护之间有何不同？
+
+与 Azure 信息保护不同，Microsoft 信息保护不是可以购买的订阅或产品。 相反，它是可帮助你保护组织的敏感信息的产品和集成功能的框架：
+
+- 此框架中的各个产品包括 Azure 信息保护、Office 365 信息保护（例如，Office 365 DLP）、Windows 信息保护和 Microsoft Cloud App Security。 
+
+- 此框架中的集成功能包括统一标记管理、基于 Office 应用的最终用户标记体验、Windows 了解统一标记并将保护应用于数据的能力、Microsoft 信息保护 SDK、以及 Adobe Acrobat Reader 中用于查看已标记且受保护的 PDF 的新功能。
+
+有关详细信息，请参阅[宣布推出信息保护功能以帮助保护你的敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
 
 ## <a name="whats-the-difference-between-azure-information-protection-and-azure-rights-management"></a>Azure 信息保护和 Azure Rights Management 之间有何不同？
 
@@ -68,6 +78,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 - 分配了管理角色的用户无法从受 Azure 信息保护保护的文档或电子邮件中自动删除保护。 只有在启用了超级用户功能的情况下，分配为超级用户的用户才能执行此操作。 但是，你将管理权限分配给 Azure 信息保护的任何用户可以将用户分配为超级用户，包括其自己的帐户。 他们还可以启用超级用户功能。 这些操作记录在管理员日志中。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](configure-super-users.md)中的“最佳安全做法”部分。 
 
+- 如果要将 Azure 信息保护标记迁移到 Office 365，请务必阅读标记迁移文档中的以下部分：[有关管理角色的重要信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)。
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 
@@ -105,17 +116,19 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 
 ## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure 信息保护中的标签和 Office 365 中的标签之间有何不同？
 
-通过 Azure 信息保护中的标签，可对文档和电子邮件应用一致分类和保护策略，无论它们在本地还是在云中。 此分类和保护与内容的存储位置或其移动方式无关。 直到最近，Office 365 还只有[保留标签](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，用于在文档和电子邮件处于 Office 365 服务中时，对该内容进行分类以供审核和保留。 
+直到最近，Office 365 还只有[保留标签](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，用于在文档和电子邮件处于 Office 365 服务中时，对该内容进行分类以供审核和保留。 相比之下，通过 Azure 信息保护标记，可对文档和电子邮件应用一致分类和保护策略，无论它们在本地还是在云中。
 
-Microsoft 一直致力于推出针对多个服务（包括 Azure 信息保护、Office 365、Microsoft Cloud App Security 和 Windows 信息保护）的全面且统一的标记策略。  你可能听说过此策略，它称为“Microsoft 信息保护”。 通过使用 MIP SDK，也可以为软件供应商提供这一相同的标记架构和存储。
+除了 Office 365 安全与合规中心的保留标记外，现在还可以看到创建和配置[敏感度标记](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)的选项，该选项是在 Microsoft Ignite 2018 大会上推出的。 此外，该选项现在处于预览状态，你可以将现有的 Azure 信息保护标记迁移到新的统一标记存储。 
 
-除了 Office 365 安全与合规中心的保留标签外，现在还可以看到配置**敏感度标签**的选项，该选项是在 Microsoft Ignite 2018 大会上推出的。 有关在不同服务中统一标签的进度的详细信息，请阅读博客文章 [Announcing availability of information protection capabilities to help protect your sensitive data](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)（宣布推出信息保护功能来帮助保护你的敏感数据）。
+有关统一标记管理以及如何支持这些标记的详细信息，请阅读博客文章[宣布推出信息保护功能以帮助保护你的敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
+
+有关迁移现有标记的详细信息，请参阅[如何将 Azure 信息保护标记迁移到 Office 365 安全与合规中心](configure-policy-migrate-labels.md)。
 
 ## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI 和 Azure 信息保护扫描程序有何区别？
 
-在一段时间内，已可以使用 Windows Server 文件分类基础结构对文档进行分类，然后使用 [Rights Management 连接器](deploy-rms-connector.md)（仅 Office 文档）或 [PowerShell脚本](./rms-client/configure-fci.md)（所有文件类型）保护文档。 
+Windows Server 文件分类基础结构在过去一直都有一个选项：对文档进行分类，然后使用 [Rights Management 连接器](deploy-rms-connector.md)（仅 Office 文档）或 [PowerShell 脚本](./rms-client/configure-fci.md)（所有文件类型）保护文档。 
 
-现在可以使用 [Azure 信息保护扫描程序](deploy-aip-scanner.md)。 扫描程序使用 Azure 信息保护客户端和 Azure 信息保护策略来为文档（所有文件类型）添加标签，然后可以对这些文档进行分类并且还可根据需要保护文档。
+我们现在建议你使用 [Azure 信息保护扫描程序](deploy-aip-scanner.md)。 扫描程序使用 Azure 信息保护客户端和 Azure 信息保护策略来为文档（所有文件类型）添加标签，然后可以对这些文档进行分类并且还可根据需要保护文档。
 
 这两种解决方案的主要差异是：
 
@@ -135,7 +148,7 @@ Microsoft 一直致力于推出针对多个服务（包括 Azure 信息保护、
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>听说很快将发布新版 Azure 信息保护 — 何时发布？
 
-本技术文档不包含即将发布的版本的相关信息。 有关此类信息和发布公告，请查看 [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)（企业移动性和安全性博客）并在 Twitter 上从 [MicrosoftMobility@MSFTMobility](https://twitter.com/MSFTMobility) 了解最新更新。 如果你对 Office 版本感兴趣，还请务必查看 [Office 博客](https://blogs.office.com/)。
+本技术文档不包含即将发布的版本的相关信息。 有关此类信息和发布公告，请查看 [Enterprise Mobility and Security Blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity?product=azure-information-protection,azure-rights-management-services)（企业移动性和安全性博客）并在 Twitter 上从 [MicrosoftMobility@MSFTMobility](https://twitter.com/MSFTMobility) 了解最新更新。 如果你对 Office 版本感兴趣，还请务必查看 [Office 365 博客](https://techcommunity.microsoft.com/t5/Office-365-Blog/bg-p/Office365Blog)和 [Office 应用博客](https://techcommunity.microsoft.com/t5/Office-Apps-Blog/bg-p/OfficeAppsBlog)。
 
 ## <a name="is-azure-information-protection-suitable-for-my-country"></a>Azure 信息保护是否适用于我所在的国家/地区？
 

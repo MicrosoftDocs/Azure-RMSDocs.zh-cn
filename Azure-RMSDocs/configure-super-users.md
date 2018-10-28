@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 07b780721bc0f22de6c36d88d98a2c8360af67b8
-ms.sourcegitcommit: f5395541fa3f74839402805dab68d0c2de395249
+ms.openlocfilehash: c4b4df01be10ce033dd7369e71420e949750e667
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101828"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169901"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>为 Azure Rights Management 和发现服务或数据恢复配置超级用户
 
@@ -96,5 +96,5 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 4. 在第二个 PST 文件上运行 Unprotect-RMSFile 来解密这个小得多的文件的内容。 在输出中，将现已解密的 PST 文件导入发现工具中。
 
-有关跨邮箱和 PST 文件执行电子数据展示的更多详细信息和指南，请参阅以下博客文章：[Azure Information Process and eDiscovery Processes](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-and-eDiscovery-Processes/ba-p/270216)（Azure 信息流程和电子数据展示流程）。
+有关跨邮箱和 PST 文件执行电子数据展示的更多详细信息和指南，请参阅以下博客文章：[Azure 信息保护和电子数据展示流程](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-and-eDiscovery-Processes/ba-p/270216)。
 

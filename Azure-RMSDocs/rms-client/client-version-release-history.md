@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/07/2018
+ms.date: 10/18/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b7aed6f8cdf6cf95b6b7af0bfa06554bde79dc02
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: 4ccf6468ff1cfb2ee786e1f1bef95c9c07f39afe
+ms.sourcegitcommit: 00e508f97c9191035763384959a8b8fa9f742d4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862169"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49399903"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -44,7 +44,10 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ## <a name="versions-later-than-137190"></a>高于 1.37.19.0 的版本
 
-如果客户端之一的版本高于 1.37.19.0，则这是用于测试和评估的预览内部版本。
+如果客户端之一的版本高于 1.37.19.0，则这是用于测试和评估的预览内部版本。 
+
+> [!TIP]
+> 由于你的标记是从 Office 365 安全与合规中心发布的，因此是否对评估 Azure 信息保护统一标记客户端感兴趣？ 请参阅 [Azure 信息保护统一标记客户端：版本发布信息](unifiedlabelingclient-version-release-history.md)。
 
 发布日期：2018 年 9 月 20 日
 
@@ -54,13 +57,19 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **其他信息**：
 
-要在此预览版中使用扫描程序，必须执行以下步骤：
+仅适用于特定于扫描程序的预览版本：
 
-1. 安装客户端的当前正式发布版 (1.37.19.0)。
-2. 安装并配置扫描程序。
-3. 启动扫描程序。
-4. 将 Azure 信息保护客户端升级到此预览版本。
-5. 启动扫描程序。
+- 通过执行以下步骤安装扫描程序：
+    
+    1. 安装客户端的当前正式发布版 (1.37.19.0)。
+    2. 安装并配置扫描程序。
+    3. 启动扫描程序。
+    4. 将 Azure 信息保护客户端升级到此预览版本。
+    5. 启动扫描程序。
+
+- 扫描大型数据集的已知问题：
+    
+    使用此预览版本，逐渐增加要扫描的文件数并监视进度。 如果扫描程序状态报告它正在运行，但未对新文件进行扫描，请减少要扫描的文件数并重新启动扫描程序。 
 
 如果需要安装、配置和启动扫描程序的说明，请参阅[部署 Azure 信息保护扫描程序以自动分类和保护文件](../deploy-aip-scanner.md)。
 
@@ -246,60 +255,6 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 **其他更改**：
 
 - 对于[客户端使用情况日志记录](client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client )：将事件 ID 102 和 ID 103 替换为事件 ID 101。
-
-## <a name="version-110560"></a>版本 1.10.56.0
-
-发布日期：2017/09/18
-
-此版本包括 RMS 客户端的 MSIPC 1.0.3219.0619 版本。
-
-**新增功能**：
-
-- 支持可为标签配置的新 Office 365 DLP 条件。 有关详细信息，请参阅[为 Azure 信息保护标签配置条件](../configure-policy-classification.md)。
-
-- 支持为用户定义的操作配置的标签。 对于 Outlook，此标签自动应用 Outlook 的“不要转发”选项。 对于 Word、Excel、PowerPoint 和文件资源管理器，此标签提示用户指定自定义权限。 有关详细信息，请参阅[配置 Azure 信息保护标签以进行保护](../configure-policy-protection.md)。
-
-- 标签支持多种语言。 自 2017 年 8 月 30 日起，[默认策略](../configure-policy-default.md)支持此版本客户端向用户显示的多种语言。 在此日期前用户若要查看默认策略中的首选语言标签以及配置的标签，请参阅[如何在 Azure 信息保护中配置不同语言的标签]configure-policy-languages.md)。
-
-- 除了在“信息保护”栏上显示外，Office 功能区上的“保护”按钮也会显示标签。 
-
-- 对于以下 Visio 文件类型的本机保护：.vsdm、.vsdx、.vssm、.vssx、.vstm、.vstx
-
-- 支持用户在 Azure 门户中配置的高级客户端配置。 这些配置包括：
-    
-    - [在 Outlook 中隐藏或显示“不转发”按钮](client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
-    
-    - [设置用户是否能够使用自定义权限选项](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
-    
-    - [永久隐藏 Azure 信息保护栏](client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
-    
-    - [在 Outlook 中启用建议的分类](client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
-
-- 对于 PowerShell，支持通过使用新的PowerShell cmdlet、[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 和 [Clear-AIPAuthentication](/powershell/module/azureinformationprotection/clear-aipauthentication)，以非交互式方式标记文件。 有关如何使用这些 cmdlet 的详细信息，请参阅管理员指南的 [PowerShell 部分](client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
-
-- 对于 PowerShell cmdlet、[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 和 [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)，新参数为：Owner 和 PreserveFileDetails。 这些参数允许用户为 Owner 自定义属性指定电子邮件地址，并使标记的文档的日期保持不变。
-
-**修补程序**：
-
-修复了包括以下特定方案的稳定性：
-
-- 支持以常规方式保护大文件，此前该方式可能会导致大于 1 GB 的文件损坏。 现在，文件大小仅受可用硬盘空间和可用内存限制。 有关文件大小限制的详细信息，请参阅管理员指南中的[支持保护的文件大小](client-admin-guide-file-types.md#file-sizes-supported-for-protection)。
-
-- Azure 信息保护客户端查看器以只读方式打开受保护的 PDF (.ppdf) 文件。
-
-- 支持标记和保护存储在 SharePoint Server 上的文件。
-
-- 水印现在支持多行。 此外，视觉标记现在[仅在第一次文档保存时]configure-policy-markings.md#when-visual-markings-are-applied)应用于文档，而不是每次文档保存都应用。
-
-- “帮助和反馈”对话框中的“运行诊断”选项被替换为“重置设置”。 此操作的行为已更改为包括注销用户和删除 Azure 信息保护策略。 有关详细信息，请参阅管理员指南中的[有关“重置设置”选项的详细信息](..\rms-client\client-admin-guide.md#more-information-about-the-reset-settings-option)。
-
-- 支持代理身份验证。
-
-添加了修补程序以提供更好的用户体验，包括：
-
-- 用户指定自定义权限时的电子邮件验证。 此外，现在可以通过按 Enter 指定多个电子邮件地址。
-
-- 当父标签的所有子标签都配置为保护，并且客户端没有支持保护的 Office 版本时，不会显示父标签。 
 
 ## <a name="next-steps"></a>后续步骤
 

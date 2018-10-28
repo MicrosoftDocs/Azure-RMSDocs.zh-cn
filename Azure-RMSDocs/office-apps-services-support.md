@@ -4,18 +4,18 @@ description: 最终用户 Office 应用程序（例如 Word 和 Outlook）和 Of
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/08/2018
+ms.date: 10/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b17e0f850fbd319011e0a50cccc2b661f773adc8
-ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
+ms.openlocfilehash: 22df24a7af17dd87dd6f3947e39ea72d7b7b1372
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169934"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
@@ -83,7 +83,7 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 > 
 > - 不能使用在 Azure 门户中管理的默认模板或自定义保护模板。 
 > 
-> - 不支持带 .ppdf 文件扩展名的受保护 PDF 文件。 支持含 .pdf 文件扩展名的文件，并在下载该文件时，可使用在本地支持权限管理的 PDF 应用程序打开它。 例如，适用于 Windows 的 Azure 信息保护客户端包含这些受保护的 PDF 文件的查看器。 在[启用 RMS 的应用程序表](./requirements-applications.md#rms-enlightened-applications)中列出了备用 PDF 查看器。
+> - 不支持带 .ppdf 文件扩展名的受保护 PDF 文件。 有关查看受保护的 PDF 文档的详细信息，请参阅 [Microsoft 信息保护的受保护 PDF 阅读器](./rms-client/protected-pdf-readers.md)。
 > 
 > - 不支持共同创作（多人同时对文档进行编辑）。 若要在受 IRM 保护的库中编辑文档，必须首先签出和下载文档，然后在 Office 应用程序中编辑该文档。 因此，一次只能有一人编辑文档。
 
