@@ -4,17 +4,17 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 10/23/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: f05c1e96222eb70a7257123301d14ef7d885564d
-ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
+ms.openlocfilehash: a1544e0fa3c6d09328d1801a75ffbccd496e3482
+ms.sourcegitcommit: b275c1f82bf9176fe3fb36016c6f8692b8418295
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951833"
 ---
 # <a name="azure-information-protection-unified-labeling-client-version-release-information"></a>Azure 信息保护统一标签客户端：版本发布信息
 
@@ -50,6 +50,8 @@ ms.locfileid: "49382589"
 - 如果用户降低敏感度级别，系统提示说明理由
 
 - “帮助和反馈”对话框，其中包括重置设置和导出日志
+
+- 每个 Office 应用每 4 小时刷新一次安全与合规中心策略。
 
 此预览版不提供以下功能：
 

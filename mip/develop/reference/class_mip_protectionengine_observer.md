@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: reference
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 5c5b5e807a80c8db3cbdb69ea5d09da1e79aec6e
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.openlocfilehash: 9999b450d614b4465f151f0b2df80892a83bc143
+ms.sourcegitcommit: 4cd90fcf94ac6e2543d8be10e6e29e8218d5fd9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49651339"
 ---
 # <a name="class-mipprotectionengineobserver"></a>类 mip::ProtectionEngine::Observer 
 接收 [ProtectionEngine](class_mip_protectionengine.md) 相关通知的接口。
@@ -24,7 +24,7 @@ public virtual void OnGetTemplatesSuccess(const std::shared_ptr<std::vector<std:
 public virtual void OnGetTemplatesFailure(const std::exception_ptr& error, const std::shared_ptr<void>& context)  |  在检索模板出错时调用。
 public virtual void OnGetRightsForLabelIdSuccess(const std::shared_ptr<std::vector<std::string>>& rights, const std::shared_ptr<void>& context)  |  在成功检索到权限时调用。
 public virtual void OnGetRightsForLabelIdFailure(const std::exception_ptr& error, const std::shared_ptr<void>& context)  |  在检索用户的标签 ID 权限时调用。
-public virtual void OnGetGrantingLabelIdsSuccess(const std::shared_ptr<std::vector<std::string>>& lableIds, const std::shared_ptr<void>& context)  |  在成功检索到标签 ID 时调用。
+public virtual void OnGetGrantingLabelIdsSuccess(const std::shared_ptr<std::vector<std::string>>& labelIds, const std::shared_ptr<void>& context)  |  在成功检索到标签 ID 时调用。
 public virtual void OnGetGrantingLabelIdsFailure(const std::exception_ptr& error, const std::shared_ptr<void>& context)  |  在检索用户的标签 ID 时调用。
   
 ## <a name="members"></a>成員
@@ -81,7 +81,7 @@ public virtual void OnGetGrantingLabelIdsFailure(const std::exception_ptr& error
 在成功检索到标签 ID 时调用。
 
 参数：  
-* **lableIds**：对检索到的标签 ID 的列表的引用 
+* labelIds：对检索到的标签 ID 的列表的引用 
 
 
 * **context**：传递到 [ProtectionEngine::GetGrantingLabelIdsAsync](class_mip_protectionengine.md#getgrantinglabelidsasync) 的相同上下文

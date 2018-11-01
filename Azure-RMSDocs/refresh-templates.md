@@ -4,18 +4,18 @@ description: 使用 Azure Rights Management 服务时，模板会自动下载到
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2018
+ms.date: 10/25/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b801266dfb757286599b5bd2fd3b36c9590717f2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 90c046f0cf2f954e70a17d127bc99b0479115928
+ms.sourcegitcommit: a5fd0afd84b62f84c3b9f0d076fab1b674267bf3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148505"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083874"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
@@ -26,12 +26,14 @@ ms.locfileid: "44148505"
 |应用程序或服务|如何在更改后刷新模板|
 |--------------------------|---------------------------------------------|
 |Exchange Online<br /><br />适用于传输规则和 Outlook Web App |1 小时内自动刷新 – 无需额外的步骤。<br /><br />如果使用[具有新功能的 Office 365 邮件加密](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)，则会出现这种情况。 如果之前已通过导入受信任的发布域 (TPD) 将 Exchange Online 配置为使用 Azure Rights Management 服务，请使用同一系列的说明在 Exchange Online 中启用这些新功能。|
-|Azure 信息保护客户端|每当在客户端上的 Azure 信息保护策略刷新时，都会自动刷新：<br /><br /> - 打开支持 Azure 信息保护栏的 Office 应用程序时。 <br /><br /> - 右键单击以分类和保护文件或文件夹时。 <br /><br /> - 运行 PowerShell cmdlet 以实现标记和保护（Get-AIPFileStatus 和 Set-AIPFileLabel）。<br /><br /> - 启动 Azure 信息保护扫描程序服务时，以及本地策略已执行超过一小时时。 此外，扫描程序服务每小时检查一次更改，并将在下一个扫描周期中使用这些更改。<br /><br /> - 每 24 小时一次。<br /><br /> 此外，由于 Azure 信息保护客户端与 Office 紧密集成，因此任何适用于 Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护客户端进行刷新。|
+|Azure 信息保护客户端|每当在客户端上的 Azure 信息保护策略刷新时，都会自动刷新：<br /><br /> - 打开支持 Azure 信息保护栏的 Office 应用程序时。 <br /><br /> - 右键单击以分类和保护文件或文件夹时。 <br /><br /> - 运行 PowerShell cmdlet 以实现标记和保护（Get-AIPFileStatus 和 Set-AIPFileLabel）。<br /><br /> - 启动 Azure 信息保护扫描程序服务时，以及本地策略已执行超过一小时时。 此外，扫描程序服务每小时检查一次更改，并将在下一个扫描周期中使用这些更改。<br /><br /> - 每 24 小时一次。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此任何适用于 Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护客户端进行刷新。|
+|Azure 信息保护统一标签客户端（预览版）|每个 Office 应用每 4 小时自动刷新。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此任何适用于 Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护统一标签客户端进行刷新。|
 |Office 2016 和 Office 2013<br /><br />适用于 Windows 的 RMS 共享应用程序|自动刷新 – 按计划刷新：<br /><br />- 对于更高版本的 Office：默认刷新时间间隔为 7 天。<br /><br />- 对于 Windows RMS 共享应用程序：对于版本 1.0.1784.0 及更高版本，默认刷新时间间隔为 1 天。 以前版本的默认刷新间隔为 7 天。<br /><br />若要强制早于计划执行刷新，请参阅以下部分 [Office 2016、Office 2013 和 Windows RMS 共享应用程序：如何强制刷新更改的自定义模板](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template)。|
 |Office 2010|当用户注销 Windows 后重新登录并等待长达 1 小时时自动刷新。|
 |Exchange 內部部署与权限管理连接器<br /><br />适用于传输规则和 Outlook Web App|自动刷新 – 无需额外的步骤。 但是，Outlook Web App 可将该 UI 缓存一天。|
 |Office 2016 for Mac|自动刷新 – 无需额外的步骤。|
 |适用于 Mac 计算机的 RMS 共享应用|自动刷新 – 无需额外的步骤。|
+|[支持敏感度功能](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)的 Office 应用|这些客户端不下载模板，而是对其联机访问，无需执行其他步骤。|
 
 当客户端应用程序需要下载模板（初始下载或刷新用于更改）时，请准备在下载完成并且新的或更新的模板完全可操作之前等待 15 分钟。 实际时间会因多种因素而异，例如模板配置的大小和复杂性以及网络连接。 
 
