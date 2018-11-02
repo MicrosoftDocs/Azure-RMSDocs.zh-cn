@@ -4,16 +4,16 @@ description: Azure 信息保护服务概述。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/30/2018
+ms.date: 10/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 0984cfc7b71c30d4a333b8cc6e24d8c3fbef216b
-ms.sourcegitcommit: 5cda0c64b486280ff0581e7f190d198b013a87d6
+ms.openlocfilehash: b789697a398a0e201cbf041b36d7cd41a82a9e0d
+ms.sourcegitcommit: 2c4e72120213407516a49286368f9b2860505f56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47593755"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236826"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -104,7 +104,7 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 对于你的本地数据存储，请使用 Azure 信息保护扫描程序，以发现本地文件夹、网络共享以及 SharePoint Server 站点和库中的文档，并对其进行分类和保护。 扫描程序在 SharePoint Server 上将作为服务运行。 可在策略中使用同一规则，以检测敏感信息，并向文档应用特定标签。 或者，也可以向数据存储库中的所有文档应用默认标签，无需检查文件内容。 此外，也可以仅在报告模式下使用扫描程序，以帮助你发现可能不知道的敏感信息。 
 
-有关部署和使用扫描程序的详细信息，请参阅[部署 Azure 信息保护扫描程序，以自动对文件进行分类和保护](deploy-rms-connector.md)。
+有关部署和使用扫描程序的详细信息，请参阅[部署 Azure 信息保护扫描程序，以自动对文件进行分类和保护](deploy-aip-scanner.md)。
 
 对于你的云数据存储，请使用 Microsoft Cloud App Security，将你的标签应用于 Box、SharePoint Online 和 OneDrive for Business 中的文档。 有关详细信息，请参阅[自动应用 Azure 信息保护分类标签](/cloud-app-security/use-case-information-protection)和 [Azure 信息保护集成](/cloud-app-security/azip-integration)。
 
