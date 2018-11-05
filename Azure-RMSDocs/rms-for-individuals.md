@@ -4,18 +4,18 @@ description: 介绍了 RMS 个人版，这是免费的自助式订阅，适用�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2018
+ms.date: 11/02/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 321464e50a517c17518e35a715e154d0c7c8b07d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 40cc70864d68b4bdcc1081f908539663ba8366a8
+ms.sourcegitcommit: d969a82dc801f3d653163de2b18a3a772607b74c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146669"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915557"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>个人 RMS 和 Azure 信息保护
 
@@ -23,7 +23,7 @@ ms.locfileid: "44146669"
 
 RMS 个人版是免费的自助式订阅，适用于需要打开受 Azure 信息保护保护的文件的用户。 如果 Azure Active Directory 无法对这些用户进行身份验证，此免费登录服务会在 Azure Active Directory 中为用户创建一个帐户。 因此，这些用户现在可以使用其公司电子邮件地址进行身份验证，然后在计算机或移动设备上阅读受保护的文件。
 
-RMS 个人版采用 Azure Active Directory 自助式注册。 如果用户已使用此订阅为组织创建帐户，作为组织管理员，你可以声明所有权，并[控制这些帐户](/active-directory/domains-admin-takeover#external-admin-takeover)。 
+RMS 个人版采用 Azure Active Directory 自助式注册。 如果用户已使用此订阅为组织创建帐户，作为组织管理员，你可以声明所有权，并[控制这些帐户](/azure/active-directory/users-groups-roles/domains-admin-takeover#external-admin-takeover)。 
 
 
 > [!NOTE]
@@ -60,5 +60,5 @@ RMS 个人版采用 Azure Active Directory 自助式注册。 如果用户已使
 
 
 ## <a name="next-steps"></a>后续步骤
-RMS 个人版便属于使用 Azure Active Directory 支持的自助式注册。 有关其工作原理的详细信息，请参阅 Azure Active Directory 文档中的[什么是 Azure 自助注册？](/active-directory/active-directory-self-service-signup)。
+RMS 个人版便属于使用 Azure Active Directory 支持的自助式注册。 有关其工作原理的详细信息，请参阅 Azure Active Directory 文档中的[什么是 Azure Active Directory 自助注册？](/azure/active-directory/users-groups-roles/directory-self-service-signup)
 

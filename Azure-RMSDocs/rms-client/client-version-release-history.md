@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 10/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ccf6468ff1cfb2ee786e1f1bef95c9c07f39afe
-ms.sourcegitcommit: 00e508f97c9191035763384959a8b8fa9f742d4c
+ms.openlocfilehash: b05b41b802b54d874d13dcf13f541374d4150564
+ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49399903"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751247"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -103,6 +103,8 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     
     - 对于具有[对此版本 SharePoint 的延长支持](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)的客户，支持 SharePoint Server 2010。
     
+- 支持 Azure 门户中的新“Azure 信息保护 - 节点(预览)”边栏选项卡，让你能够从一个中心位置管理扫描程序。 部署的扫描程序连接 Azure 后每 5 分钟更新一次信息。 可以从此边栏选项卡执行以下操作：启动扫描程序进行一次性扫描、重新扫描所有文件、查看扫描程序的状态，以及查看扫描速度。
+
 **修复程序**
 
 - 对于 Azure 信息保护扫描程序：
@@ -111,7 +113,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     
     - 扫描程序报告包括 Office 文档的“上次修改者”。
     
-    - 现在编辑注册表时可以通过使用 `*` 通配符来保护所有文件类型，如[文件 API 配置](../develop/file-api-configuration.md)说明中所述。
+    - 如[编辑扫描程序的注册表](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner)一节中所述，现在可以通过在编辑注册表时使用 `*` 通配符来保护所有文件类型。
 
 - 使用 PowerShell 或扫描程序进行分类和保护时，不会删除或加密 Office 文档元数据。
 

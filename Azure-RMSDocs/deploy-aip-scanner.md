@@ -4,18 +4,18 @@ description: 说明如何安装、配置和运行 Azure 信息保护扫描程序
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/24/2018
+ms.date: 10/31/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 315c1e04d6d941643ee6625053b1cae8bd08b292
-ms.sourcegitcommit: 51c99ea4c98b867cde964f51c35450eaa22fac27
+ms.openlocfilehash: 47a8633852139bf0a84e6c55321c69b1af2c2892
+ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991371"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751281"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -191,13 +191,23 @@ ms.locfileid: "49991371"
 1. 在 PowerShell 会话中，通过运行以下命令重启 Azure 信息保护扫描程序服务：
     
         Start-AIPScan
+    
+    或者，也可以从 Azure 门户的“Azure 信息保护”边栏选项卡启动此扫描程序（使用“扫描程序” > “节点(预览)” > \**<* 扫描程序节点*>**> **立即扫描**选项）。
 
-2. 等待扫描程序完成其周期。 当扫描程序浏览完指定数据存储中所有文件时，扫描程序停止（尽管扫描程序服务仍在运行）。 可使用本机 Windows 应用程序和服务事件日志、Azure 信息保护来确认扫描程序停止的时间。 请查看信息事件 ID 911。
+2. 运行以下命令，等待扫描程序完成其周期：
+    
+    Get-AIPScannerStatus
+    
+    查找显示“空闲”而非“正在扫描”的状态。 当扫描程序浏览完指定数据存储中所有文件时，扫描程序停止（尽管扫描程序服务仍在运行）。 
+    
+    或者，也可以从 Azure 门户的“Azure 信息保护”边栏选项卡查看状态（查看“扫描程序” > “节点(预览)” > \**<* 扫描程序节点*>**”>**状态**列）。
+    
+    查看本地 Windows 应用程序和服务事件日志和 Azure 信息保护。 另外，此日志还会报告扫描程序完成扫描的时间，以及结果摘要。 请查看信息事件 ID 911。
 
 3. 查看存储在 %localappdata%\Microsoft\MSIP\Scanner\Reports 中的报告，这些报告的文件格式为 .csv。 利用扫描程序默认配置，只有满足自动分类条件的文件才会被包括在这些报告中。
     
     > [!TIP]
-    > 当前在预览版中，这些报表中的信息现在会发送到 Azure 信息保护，以便能够从 Azure 门户中查看它们。 有关详细信息，请参阅 [Azure 信息保护报表](reports-aip.md)。 
+    > 当前在预览版状态下，在安装此扫描程序的预览版后，扫描程序会每 5 分钟向 Azure 信息保护发送一次此信息，以便你可以近乎实时地从 Azure 门户查看结果。 有关详细信息，请参阅 [Azure 信息保护报表](reports-aip.md)。 
         
     如果结果与预期不符，建议对在 Azure 信息保护策略中指定的条件进行微调。 如果是这种情况，请重复步骤 1 到 3，直到可更改配置以应用分类和保护（可选）。 
 
@@ -213,13 +223,17 @@ ms.locfileid: "49991371"
     
     你可能还希望更改其他配置设置。 例如，是否更改文件属性，以及报告中应记录的内容。 此外，如果 Azure 信息保护策略包括需要理由信息以降低分类级别或移除保护的设置，请使用此 cmdlet 指定该信息。 有关每个配置设置的详细信息，请使用[联机帮助](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters)。 
 
-2. 通过运行以下命令重启 Azure 信息保护扫描程序服务：
+2. 记录当前时间，并通过运行以下命令重新启动扫描程序：
     
         Start-AIPScan
+    
+    或者，也可以从 Azure 门户的“Azure 信息保护”边栏选项卡启动此扫描程序（使用“扫描程序” > “节点(预览)” > \**<* 扫描程序节点*>**> **立即扫描**选项）。
 
-3. 如前所述，监视事件日志和报告，了解标记了哪些文件、应用了什么分类以及是否应用了保护。
+3. 重新监视 911 信息类型的事件日志，并且时间戳要晚于上个步骤启动扫描时的时间。 
+    
+    然后查看报告，详细了解标记了哪些文件、向每个文件应用了什么分类，以及是否向它们应用了保护。 或者，使用 Azure 门户，更轻松地了解此信息。
 
-因为我们将计划配置为持续运行，所以当扫描程序扫描完所有文件时，它将开始新周期，以便可发现新文件和更改的文件。
+因为我们将计划配置为持续运行，所以当扫描程序扫描完所有文件时，它将开始一个新周期，以便发现任何新文件和更改的文件。
 
 
 ## <a name="how-files-are-scanned"></a>如何扫描文件
@@ -283,6 +297,8 @@ ms.locfileid: "49991371"
 在第一个扫描周期，扫描程序会检查所配置的数据存储中的所有文件，然后在后续扫描中仅检查新文件或修改后的文件。 
 
 可通过运行具有 `-Reset` 参数的 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) 强制扫描程序重新检查所有文件。 必须为手动计划配置扫描程序，这需要使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) 将 `-Schedule` 参数设置为“Manual”。
+
+或者，也可以从 Azure 门户的“Azure 信息保护”边栏选项卡强制此扫描程序重新检查所有文件（使用“扫描程序” > “节点(预览)” > \**<* 扫描程序节点*>**”> **重新扫描所有文件**选项）。
 
 如果希望报告包含所有文件，再次检查所有文件非常有用；且当扫描程序在发现模式下运行时，通常会使用此配置选项。 完成全部扫描后，扫描类型自动更改为“增量”，以便后续扫描仅扫描新文件或修改后的文件。
 
@@ -425,6 +441,8 @@ Azure 信息保护扫描程序支持两种备选方案，在任何一种方案�
 ----
 
 ## <a name="next-steps"></a>后续步骤
+
+想了解 Microsoft 的 Core Services 工程和运行团队是如何实现此扫描程序的？  请阅读以下技术案例研究：[使用 Azure 信息保护扫描程序自动执行数据保护](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner)。
 
 你可能想知道：[Windows Server FCI 和 Azure 信息保护扫描程序有何区别？](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
 

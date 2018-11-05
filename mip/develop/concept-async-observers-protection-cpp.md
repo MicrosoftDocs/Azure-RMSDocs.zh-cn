@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: d7077678ba336b031f7a8f812a3c4e90d8c5b05a
-ms.sourcegitcommit: d677088db8588fb2cc4a5d7dd296e76d0d9a2e9c
+ms.openlocfilehash: 35c0fb8eb358c5872ab378755d303425cc8e80a4
+ms.sourcegitcommit: 2c4e72120213407516a49286368f9b2860505f56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251703"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236809"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-observers"></a>Microsoft 信息保护 SDK - 保护 API 观察程序
 
@@ -25,7 +25,7 @@ ms.locfileid: "48251703"
 
 下面的示例演示了 SDK 样例所使用的 promise/future 模式，可扩展该模式以实现所需的回叫行为。 
 
-## <a name="protection-protection-observer-implementation"></a>保护观察程序实现
+## <a name="protectionprofile-observer-implementation"></a>ProtectionProfile 观察程序实现
 
 在以下示例中，我们创建了一个派生自 `mip::ProtectionProfile::Observer` 的 `ProtectionProfileObserverImpl` 类。 已重写成员函数以使用整个示例中使用的 promise/future 模式。
 
