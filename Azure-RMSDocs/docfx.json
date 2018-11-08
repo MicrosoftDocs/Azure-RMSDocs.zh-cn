@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+	  "**/**.md", 
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -34,12 +35,8 @@
       "feedback_github_repo": "MicrosoftDocs/azure-rmsdocs.zh-cn",
       "feedback_product_url": "https://msip.uservoice.com/", 
       "layout": "Conceptual",
-      "breadcrumb_path": "/enterprise-mobility/toc.json"
+      "breadcrumb_path": "/azure/information-protection/bread/toc.json",
+      "searchScope": ["Information Protection"]
     }
-  },
-  "render": {
-    "theme": "hyde",
-    "dest": "_output"
-  },
-  "basepath": "/rights-management"
+  }
 }
