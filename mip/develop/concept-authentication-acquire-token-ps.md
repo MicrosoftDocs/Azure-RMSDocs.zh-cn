@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 3206fb99cd72c5d609375ec673e7798d33c735c3
-ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
+ms.openlocfilehash: a5ce346d044a9a56d37777e569582087026c9ce6
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453378"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223869"
 ---
 # <a name="acquire-an-access-token-powershell"></a>获取访问令牌 (PowerShell)
 
@@ -76,7 +76,7 @@ $authority = "https://login.windows.net/common/oauth2/authorize"
 $resourceUrl = "https://dataservice.o365filtering.com"
 #clientId and redirectUri are from the RMS Sharing Application. 
 #Once custom app registration is supported, a custom id and uri will be required. 
-$clientId = "6b069eef-9dde-4a29-b402-8ce866edc897"
+$clientId = "0edbblll-8773-44de-b87c-b8c6276d41eb"
 $redirectUri = "com.microsoft.rms-sharing-for-win://authorize"
 
 $response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always

@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: a7577bab58b701e945bea9829d7ed31b41909f88
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.openlocfilehash: 4d6db3d2bd2e2b980770027e07104f7528264e66
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445778"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223870"
 ---
 # <a name="acquire-an-access-token-python"></a>获取访问令牌 (Python)
 
@@ -104,7 +104,7 @@ namespace sample {
     cmd += " -r ";
     cmd += resource;
     cmd += " -c ";
-    cmd += (!clientId.empty() ? clientId : "6b069eef-9dde-4a29-b402-8ce866edc897");
+    cmd += (!clientId.empty() ? clientId : "0edbblll-8773-44de-b87c-b8c6276d41eb");
 
     string result = sample::Execute(cmd.c_str());
     if (result.empty())

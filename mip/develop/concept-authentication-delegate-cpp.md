@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 9a9256d4c67845f43eeb1598926ea5c02f07f822
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.openlocfilehash: f80eb1f7ade5e024bd6d7d68775624b51f3f1809
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445727"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223902"
 ---
 # <a name="microsoft-information-protection-sdk---implementing-an-authentication-delegate-c"></a>Microsoft 信息保护 SDK - 实现身份验证委托 (C++)
 
@@ -23,7 +23,7 @@ MIP SDK 实现了一个身份验证委托，用于处理身份验证质询以及
 
 ### <a name="authdelegateimplh"></a>auth_delegate_impl.h
 
-在此示例中，默认构造函数仅接受用户名、密码和应用程​​序的[应用程序 ID](/azure/active-directory/develop/developer-glossary.md#application-id-client-id)。 这些信息将存储在私有变量 `mUserName`、`mPassword` 和 `mClientId` 中。
+在此示例中，默认构造函数仅接受用户名、密码和应用程​​序的[应用程序 ID](/azure/active-directory/develop/developer-glossary#application-id-client-id)。 这些信息将存储在私有变量 `mUserName`、`mPassword` 和 `mClientId` 中。
 
 请务必注意，不必实现标识提供者或资源 URI 等信息，至少不必在 `AuthDelegateImpl` 构造函数中实现。 这些信息作为 `OAuth2Challenge` 对象中 `AcquireOAuth2Token` 的一部分传递。 而我们将这些详细信息传递给 `AcquireOAuth2Token` 中的 `AcquireToken` 调用。
 
