@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 430e130a5ba2026c0a3c69a59dddd6f9d6b4e8f0
-ms.sourcegitcommit: cc65c3851d4b8169a1a62c83afaf0f75402f7631
-ms.translationtype: HT
+ms.openlocfilehash: 6c0b9a878f98081312a0b81b965e75bcc0ade7e8
+ms.sourcegitcommit: 13b5b8e7457b09e1b828dad3cdfae086fd019819
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49476198"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51508436"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置 
 
@@ -169,7 +169,49 @@ ms.locfileid: "49476198"
 
 有关向注册添加 API 和权限的详细信息，请参阅[更新应用程序、配置客户端应用程序以访问 Web API 部分](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#updating-an-application)。 此处可以找到有关添加客户端应用程序所需的 API 和权限信息。  
 
+## <a name="request-an-information-protection-integration-agreement-ipia"></a>请求信息保护集成协议 (IPIA)
+
+您可以发布使用 MIP 开发的应用程序之前，必须申请并完成与 Microsoft 达成的正式协议。
+
+1. 向 [IPIA@microsoft.com](mailto:IPIA@microsoft.com?subject=Requesting%20IPIA%20for%20<company-name>) 发送一封包含以下信息的电子邮件以获取 IPIA：
+
+   **主题：** 为公司名称请求 IPIA
+
+   电子邮件的正文中应包含：
+   - 应用程序和产品名称
+   - 请求者的姓氏和名字
+   - 请求者的电子邮件地址
+
+2. 收到 IPIA 请求后，我们会将一份表格（Word 文档格式）发送给你。 请查看 IPIA 的条款和条件，然后将包含以下信息的表格通过电子邮件发送到 [IPIA@microsoft.com](mailto:IPIA@microsoft.com?subject=IPIA%20Response%20for%20<company-name>)：
+
+   - 公司依法登记的名称
+   - 公司注册地的州/省（美国/加拿大）或国家/地区
+   - 公司 URL
+   - 联系人的电子邮件地址
+   - 公司的其他地址（可选）
+   - 公司应用程序名称
+   - 应用程序的简要描述
+   - Azure 租户 ID
+   - 应用程序的*应用程序 ID*
+   - 用于紧急情况通信的公司联系人、电子邮件和电话号码
+
+3. 收到你的表格后，我们会将用于数字签名的最终 IPIA 链接发送给你。 你在协议上签名后，协议将由相应的 Microsoft 客户代表签名，协议就此完成。
+
+### <a name="already-have-a-signed-ipia"></a>已有已签名的 IPIA？
+
+如果已有已签名的 IPIA 并希望为要发布的应用程序添加新的应用程序 ID，请发送电子邮件至 [IPIA@microsoft.com](mailto:IPIA@microsoft.com?subject=Updating%20IPIA%20for%20<company-name>)，向我们提供以下信息：
+
+- 公司应用程序名称
+- 应用程序的简要描述
+- Azure 租户 ID（即使与以前提供的信息相同，也需要再次提供）
+- 应用程序的应用程序 ID
+- 用于紧急情况通信的公司联系人、电子邮件和电话号码
+
+你发送电子邮件后，我们会在最多 72 小时内向你发送已收到邮件的确认信。
+
 ## <a name="next-steps"></a>后续步骤
 
 - 在学习快速入门部分前，请务必阅读 [MIP SDK 中的观察程序](concept-async-observers.md)，因为 MIP SDK 几乎完全是异步的。
 - 如果已具备 SDK 的实际操作经验，请从[快速入门：客户端应用程序初始化 (C++)](quick-app-initialization-cpp.md) 开始。
+
+
