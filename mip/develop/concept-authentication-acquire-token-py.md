@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 4d6db3d2bd2e2b980770027e07104f7528264e66
 ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2018
 ms.locfileid: "51223870"
