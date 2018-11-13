@@ -4,16 +4,15 @@ description: 了解如何配置 Azure 信息保护的默认策略。 如果修�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2018
-ms.topic: article
+ms.date: 11/06/2018
+ms.topic: conceptual
 ms.service: information-protection
-ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: ada4e4b2b7f8ef4bcf95307184d9c262a930c9f0
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: d74dfcd35dca2f3ab5e88a66eaaba37b13636e4d
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807316"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223970"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
@@ -21,19 +20,19 @@ ms.locfileid: "42807316"
 
 使用以下信息来了解如何配置 Azure 信息保护的默认策略。
 
-管理员使用 Azure 门户初次连接到 Azure 信息保护服务时，将创建该租户的默认策略。 有时，Microsoft 会对默认策略进行更改，但如果在修改默认策略之前就已经在使用该服务，将不会更新早期版本的默认策略，因为可能已对其进行配置并将其部署到生产环境中。
+管理员使用 Azure 门户初次连接到 Azure 信息保护服务时，将创建该租户的 Azure 信息保护默认策略。 有时，Microsoft 会对默认策略进行更改，但如果在修改默认策略之前就已经在使用该服务，将不会更新 Azure 信息保护早期版本的默认策略，因为可能已对其进行配置并将其部署到生产环境中。
 
-引用以下值可以将策略返回到默认，或将策略更新为最新值。
+引用以下值可以将 Azure 信息保护策略返回到默认策略，或将 Azure 信息保护策略更新为最新值。
 
 ## <a name="current-default-policy"></a>当前默认策略
 
-此版本的默认策略为 2017 年 7 月 31 日发布的版本。
+此版 Azure 信息保护默认策略从 2017 年 7 月 31 日开始提供。
 
-此默认策略是在 Azure Rights Management 服务激活时创建的（从 2018 年 2 月开始对新租户可用）。 有关详细信息，请参阅博客文章公告[对 Azure 信息保护中的保护堆栈所做的改进](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection)。
+此 Azure 信息保护默认策略是在 Azure Rights Management 服务激活时创建的（从 2018 年 2 月开始对新租户可用）。 有关详细信息，请参阅博客文章公告[对 Azure 信息保护中的保护堆栈所做的改进](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection)。
 
-如果在创建策略前已手动[激活此服务](activate-service.md)，也会创建此默认策略。 
+如果在 Azure 信息保护创建策略前已手动[激活此服务](activate-service.md)，也会创建此 Azure 信息保护默认策略。 
 
-如果未激活此服务，则默认策略不会为以下子标签配置保护：
+如果未激活此服务，则 Azure 信息保护默认策略不会为以下子标签配置保护：
 
 - **机密\所有员工**
 
@@ -43,11 +42,11 @@ ms.locfileid: "42807316"
 
 - 高度机密\仅收件人 
 
-当没有为这些子标签自动配置保护时，默认策略会保持与[以前的默认策略](#default-policy-before-july-31-2017)相同。
+如果没有为这些子标签自动配置保护，Azure 信息保护默认策略会与[旧版默认策略](#default-policy-before-july-31-2017)保持一致。
 
 将保护应用于“所有员工”子标签时，将通过使用在 Azure 门户中自动转换为标签的默认模板来配置此保护。 有关这些模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
-自 2017 年 8 月 30 日起，此版默认策略包括多语言版本的标签名称和说明。 
+自 2017 年 8 月 30 日起，此版 Azure 信息保护默认策略包括多语言版本的标签名称和说明。 
 
 #### <a name="more-information-about-the-recipients-only-sublabel"></a>有关“仅收件人”子标签的详细信息
 

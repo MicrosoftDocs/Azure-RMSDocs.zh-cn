@@ -1,21 +1,23 @@
 ---
 title: 常见问题解答和已知问题 - Microsoft 信息保护 SDK。
-description: Microsoft 信息保护 (MIP) SDK 常见问题解答和已知问题的疑难解答指南。
+description: Microsoft 信息保护 (MIP) SDK 常见问题解答以及问题和错误的疑难解答指南。
 author: BryanLa
 ms.service: information-protection
 ms.topic: troubleshooting
 ms.date: 10/19/2018
 ms.author: bryanla
-ms.openlocfilehash: cb3bdd6f2d9328a57156580f3d345d25983fccad
-ms.sourcegitcommit: cc65c3851d4b8169a1a62c83afaf0f75402f7631
-ms.translationtype: HT
+ms.openlocfilehash: f213b31d9b0e41ea9c1e076055a90e9f62b31b3a
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49476409"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223919"
 ---
-# <a name="microsoft-information-protection-mip-sdk-faqs-and-known-issues"></a>Microsoft 信息保护 (MIP) SDK 常见问题解答和已知问题
+# <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Microsoft 信息保护 (MIP) SDK 常见问题解答和问题
 
-## <a name="frequently-asked-questions-faqs"></a>常见问题 (FAQ)
+本文提供对常见问题 (FAQ) 的解答，以及针对已知问题和常见错误的疑难解答指南。
+
+## <a name="frequently-asked-questions"></a>常见问题 
 
 ### <a name="question-which-platforms-are-supported-by-the-mip-sdk"></a>问：MIP SDK 支持哪些平台？
 
@@ -33,7 +35,13 @@ SDK 旨在跨平台使用，并使用 [UTF-8（Unicode 转换格式 - 8 位）](
 | .NET | 对于 .NET SDK 客户端，所有字符串都使用默认的 UTF-16 编码，不需要使用任何特殊转换。 MIP SDK 在内部管理 UTF-16 的转换。 |
 | 其他平台 | MIP SDK 支持的所有其他平台都具有对 UTF-8 的本机支持。 |
 
-## <a name="known-issues"></a>已知问题
+## <a name="issues-and-errors-reference"></a>问题和错误参考
+
+### <a name="error-file-format-not-supported"></a>错误：“不支持的文件格式”  
+
+| 错误 | 解决方案 |
+|-|-|
+|不支持的文件格式| 尝试保护或标记已经过数字签名或受密码保护的 PDF 文件时，会导致此异常。 有关保护或标记 PDF 文件的详细信息，请参阅[使用 Microsoft 信息保护进行 PDF 加密的新支持](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)。|
 
 ### <a name="error-failed-to-parse-the-acquired-compliance-policy"></a>错误：“无法分析获得的符合性策略”  
 
@@ -41,4 +49,4 @@ SDK 旨在跨平台使用，并使用 [UTF-8（Unicode 转换格式 - 8 位）](
 
 | 错误 | 解决方案 |
 |-|-|
-|*发生了意外：无法分析获得的符合性策略。Failed with: [class mip::CompliancePolicyParserException] Tag not found: policy, NodeType: 15, Name: No Name Found, Value: , Ancestors: <SyncFile><Content>, correlationId:[34668a40-blll-4ef8-b2af-00005aa674z9]*| 这表示你尚未将你的标签从 Azure 信息保护迁移到统一标记体验！ 请按照[如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](/azure/information-protection/configure-policy-migrate-labels)的步骤操作，以迁移标签，然后在 Office 365 安全与合规中心创建标签策略。 一旦完成该操作，示例将成功运行。|
+|*发生了意外：无法分析获得的符合性策略。Failed with: [class mip::CompliancePolicyParserException] Tag not found: policy, NodeType: 15, Name: No Name Found, Value: , Ancestors: <SyncFile><Content>, correlationId:[34668a40-blll-4ef8-b2af-00005aa674z9]*| 这表示你尚未将你的标签从 Azure 信息保护迁移到统一标记体验。 请按照[如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](/azure/information-protection/configure-policy-migrate-labels)的步骤操作，以迁移标签，然后在 Office 365 安全与合规中心创建标签策略。 一旦完成该操作，示例将成功运行。|

@@ -4,18 +4,18 @@ description: 若要为特定用户配置不同的设置和标签，必须为 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b40431632d02445d12e1faac012c28c1b1e6f8e2
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: f1623c14377feb545f945a447363e7f3d12e8dd3
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169951"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026564"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>如何使用作用域内策略为特定用户配置 Azure 信息保护策略
 
@@ -57,5 +57,5 @@ ms.locfileid: "49169951"
 
 ## <a name="next-steps"></a>后续步骤
 
-有关如何自定义默认策略并在 Office 应用程序是查看所产生行为的示例，请尝试 [Azure 信息保护快速入门教程](infoprotect-quick-start-tutorial.md)(#azure-信息保护快速入门教程)。
+有关如何自定义默认策略并在 Office 应用程序中查看所产生行为的示例，请尝试学习[编辑策略并创建新标签](infoprotect-quick-start-tutorial.md)教程。
 

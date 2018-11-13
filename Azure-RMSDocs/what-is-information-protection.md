@@ -4,16 +4,16 @@ description: Azure 信息保护服务概述。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/30/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: b789697a398a0e201cbf041b36d7cd41a82a9e0d
-ms.sourcegitcommit: 2c4e72120213407516a49286368f9b2860505f56
+ms.openlocfilehash: 979f0acfc2177ba05e57f7c36d5bf3ca3840a65f
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236826"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026685"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -144,9 +144,4 @@ Microsoft Ignite 2018 大会在美国奥兰多开幕，期间举办了多场以 
 
 ## <a name="next-steps"></a>后续步骤
 
-阅读博客文章 [Azure Information Protection: Ready, set, protect!](https://cloudblogs.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/)（Azure 信息保护：准备、设置、保护！）
-
-可通过观看我们的 5 步骤[快速入门教程](infoprotect-quick-start-tutorial.md)，配置和使用 Azure 信息保护。 或如果已准备好为组织部署此服务，请参阅 [Azure 信息保护部署路线图](deployment-roadmap.md)。
-
-或许你是通过其他名称了解的 Azure 信息保护？ 请参阅[该服务的替代术语列表](aka.md)。
-
+可通过观看我们的[快速入门教程](quickstart-viewpolicy.md)和[教程](infoprotect-quick-start-tutorial.md)，自行配置和使用 Azure 信息保护。 或者，如果已准备好部署组织的此项服务，请转到[针对常见应用场景的操作方法指南](how-to-guides.md)。

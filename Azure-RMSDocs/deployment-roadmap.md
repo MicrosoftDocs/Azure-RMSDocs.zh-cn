@@ -4,18 +4,18 @@ description: 使用这些步骤，为组织准备、实施和管理 Azure 信息
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4d1a63ac3ea5fae9782588b1779d7c7950738e23
-ms.sourcegitcommit: 3b41a6e730fa40660a2bdf5b1a73d155c87aacc2
+ms.openlocfilehash: 4e2fa20d542a9509476c78ebe21143e49863b788
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48834600"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026819"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
@@ -23,7 +23,7 @@ ms.locfileid: "48834600"
 
 建议使用以下步骤，为组织准备、实施和管理 Azure 信息保护。
 
-不过，如果只想快速试用 Azure 信息保护，而不将其部署在生产环境中，请参阅 [Azure 信息保护快速入门教程](./infoprotect-quick-start-tutorial.md)。
+但是，如果要查找基于应用场景的说明，请参阅[使用 Azure 信息保护的常见应用场景操作方法指南](how-to-guides.md)。
 
 > [!NOTE]
 > 如果正在寻找产品发布路线图，请参阅我们的[有关新发布和更新的信息](information-support.md#information-about-new-releases-and-updates)部分。
@@ -32,7 +32,7 @@ ms.locfileid: "48834600"
 
 ### <a name="identify-your-deployment-roadmap"></a>标识部署路线图
 
-在执行以下步骤以部署 Azure 信息保护之前，请确保已查看 [Azure 信息保护要求](./requirements.md)。
+在执行以下任意步骤以部署 Azure 信息保护之前，请确保已查看 [Azure 信息保护要求](./requirements.md)。
 
 然后选择适用于组织，并与所需[订阅功能和特性](https://azure.microsoft.com/pricing/details/information-protection/)相匹配的部署路线图：
 
@@ -59,7 +59,7 @@ ms.locfileid: "48834600"
 ### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>步骤 3：配置、部署分类和标记
 
 > [!TIP]
-> **可选但建议**：建议部署 [Azure 信息保护扫描程序](deploy-aip-scanner.md)以发现本地数据存储上的敏感信息。 扫描程序找到的信息有助于进行类别分类，提供有关所需的标签类型以及需要保护的文件的重要信息。
+> 可选但建议：建议部署 Azure 信息保护扫描程序以发现本地数据存储上的敏感信息。 我们的[快速入门教程](quickstart-findsensitiveinfo.md)介绍了此应用场景。 扫描程序找到的信息有助于进行类别分类，提供有关所需的标签类型以及需要保护的文件的重要信息。
 > 
 > 可以将扫描程序配置为在 Windows Server 上的本地文件、网络共享中的文件以及 SharePoint 的本地版本中的文件中查找常见的敏感信息类型。 由于此配置不需要配置标签，而且还定义了类别分类，因此以这种方式运行扫描程序适用于部署的早期阶段。 此外，还可以与以下部署步骤并行使用此扫描程序配置，直到为标签配置条件。
 
@@ -113,7 +113,7 @@ ms.locfileid: "48834600"
 
 3. 为数据恢复配置超级用户功能
     
-    如果现有 IT 服务（例如数据泄漏防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure 信息保护将保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](./configure-super-users.md)。
+    如果现有 IT 服务（例如数据泄露防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure 信息保护将保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](./configure-super-users.md)。
 
 4. 批量分类和保护现有文件
     
@@ -179,7 +179,7 @@ ms.locfileid: "48834600"
 
 3. 为数据恢复配置超级用户功能
     
-    如果现有 IT 服务（例如数据泄漏防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure 信息保护将保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](./configure-super-users.md)。
+    如果现有 IT 服务（例如数据泄露防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure 信息保护将保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](./configure-super-users.md)。
 
 4. 批量保护现有文件 
     

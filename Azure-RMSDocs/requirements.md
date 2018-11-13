@@ -4,18 +4,18 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/19/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 00daf488568fef8569f97db378b771383a221ce3
-ms.sourcegitcommit: 07af86511a394274f10cf1340de4cf4bad6d1675
+ms.openlocfilehash: 92b7ca3feceb70bc9b8b085b58c26231d2ae70ce
+ms.sourcegitcommit: 8a4bab8dc6ee4c322a54d79091af04ec9449e5c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46473811"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51020048"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -44,7 +44,7 @@ ms.locfileid: "46473811"
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
-你的组织必须具有 Azure Active Directory (Azure AD) 才能支持用户身份验证和 Azure 信息保护身份授权。 此外，如果你希望使用本地目录 (AD DS) 中的用户帐户，则还必须配置目录集成。
+你的组织必须具有 Azure Active Directory (Azure AD) 才能支持用户身份验证和 Azure 信息保护身份授权。 此外，如果你希望使用本地目录 (AD DS) 中的用户帐户，则还必须配置目录集成。
 
 Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户输入凭据。 如果使用其他供应商解决方案进行联合，请与相应供应商确认如何针对 Azure AD 配置它。 WS-Trust 是这些解决方案支持单一登录所需满足的常见要求。 
 
@@ -112,8 +112,6 @@ Azure 信息保护客户端不支持同一台计算机上的多个 Office 版本
 
 除了 Office 文章中特定于 Azure 信息保护的信息外：
 
-- 允许 TCP 443 上的 HTTPS 流量流入 informationprotection.hosting.portal.azure.net。
-
 - 如果使用要求进行身份验证的 Web 代理，必须将其配置为将集成 Windows 身份验证与用户的 Active Directory 登录凭据配合使用。
 
 - 不要终止与 aadrm.com URL 的 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 这样做会中断 RMS 客户端用于 Microsoft 托管 CA 的证书固定，之所以使用固定是为了帮助保护它们与 Azure Rights Management 服务的通信安全。
@@ -140,7 +138,7 @@ Azure 信息保护客户端不支持同一台计算机上的多个 Office 版本
 
 不支持以下部署方案，除非将 AD RMS for [HYOK 保护](configure-adrms-restrictions.md)与 Azure 信息保护配合使用（“自留密钥”配置）：
 
-- 在同一个组织中并行运行 AD RMS 和 Azure RMS，除非是在迁移过程中，如[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)所述。
+- 在同一个组织中并行运行 AD RMS 和 Azure RMS（在迁移过程中的情形除外），如[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)所述。
 
 支持[从 AD RMS 到 Azure 信息保护](http://technet.microsoft.com/library/Dn858447.aspx)和[从 Azure 信息保护到 AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl) 的迁移路径。 如果你部署 Azure 信息保护，然后决定不再想要使用此云服务，请参阅[解除 Azure 信息保护授权和停用 Azure 信息保护](decommission-deactivate.md)。
 

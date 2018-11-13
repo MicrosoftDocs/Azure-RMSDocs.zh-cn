@@ -4,19 +4,19 @@ description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/15/2018
+ms.date: 11/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 424be5910d6a4498bc9d2684888cd2bf9af010af
-ms.sourcegitcommit: 26e1ccdd0c4339a51ec7812082b399f13ef73b2b
+ms.openlocfilehash: 4cb496e6cca01d7a4ad6636acc315bd40dc4c58c
+ms.sourcegitcommit: 8e43a41998045fe574710e9da0b7747eaeccdba1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324875"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273576"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -62,17 +62,25 @@ ms.locfileid: "49324875"
 
 - 标签操作。 例如，设置标签、更改标签、添加或删除保护、自动和建议的标签。
 
+- 标签操作之前和之后的标签名称。
+
 - 组织的租户 ID。
 
 - 用户 ID（电子邮件地址或 UPN）。
 
-- 被标记的文档的文件路径和文件名。
+- 用户设备的名称。
+
+- 对于文档：被标记的文档的文件路径和文件名。
+
+- 对于电子邮件：被标记的电子邮件的电子邮件主题、电子邮件发件人和电子邮件收件人。 
+
+- 在内容中已检测到的敏感信息类型（[预定义](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)和自定义）。
 
 - Azure 信息保护客户端版本。
 
 - 客户端操作系统版本。
 
-此信息存储在你拥有的 Azure Log Analytics 工作区中。
+此信息存储在由你拥有并且可以由具有此工作区访问权限的用户查看的 Azure Log Analytics 工作区中。 有关配置对你的工作区访问权限的信息，请参阅 Azure 文档中的[管理帐户和用户](/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor#manage-accounts-and-users)部分。
 
 ## <a name="prerequisites-for-azure-information-protection-analytics"></a>Azure 信息保护分析的先决条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。

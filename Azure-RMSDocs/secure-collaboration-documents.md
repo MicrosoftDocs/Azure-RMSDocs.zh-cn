@@ -1,5 +1,5 @@
 ---
-title: 使用 Azure 信息保护保护文档协作
+title: 使用 Azure 信息保护配置可靠的文档协作
 description: 用于在受 Azure 信息保护保护的文档上进行协作的端到端工作流。
 author: cabailey
 ms.author: cabailey
@@ -10,14 +10,14 @@ ms.service: information-protection
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5cacc32cab0526e1083ec9e3caa7203a70a0ec6a
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 1b11f50bcf2090129211f3dd09cff867cfbdcb7b
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148155"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026649"
 ---
-# <a name="secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护保护文档协作
+# <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 

@@ -4,18 +4,18 @@ description: 详细解说 Azure RMS 的工作原理、它使用的加密控件�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 821038f555a73e89748541d5b512d5a631094fa8
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 19b45c3e24de5eba9f0bd243baf73797b66431f7
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149355"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026768"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
@@ -150,7 +150,7 @@ ms.locfileid: "44149355"
 
 - **移动设备**：当移动设备通过 Azure Rights Management 服务保护或使用文件时，流程要简单得多。 因为每个事务（保护或使用内容）是独立的，移动设备首先不会经历用户初始化过程。 与 Windows 计算机一样，移动设备将连接到 Azure Rights Management 服务并进行身份验证。 为了保护内容，移动设备将提交一个策略，然后 Azure Rights Management 服务将为移动设备发送一个发布许可证和对称密钥用于保护文档。 为了使用内容，当移动设备连接到 Azure Rights Management 服务并进行身份验证时，它们将文档策略发送到 Azure Rights Management 服务，并请求一个使用许可证以使用文档。 在响应中，Azure Rights Management 服务会将所需的密钥和限制发送到移动设备。 这两个进程使用 TLS 来保护密钥交换和其他通信。
 
-- **RMS 连接器**：当 Azure Rights Management 服务与 RMS 连接器结合使用时，流程保持不变。 唯一的差别在于，连接器充当本地服务（如 Exchange Server 和 SharePoint Server）与 Azure Rights Management 服务之间的中继。 连接器本身不执行任何操作，例如用户环境初始化，或者加密或解密。 它只会中继通常要定向到 AD RMS 服务器的通信，处理每一端使用的协议之间的转换。 此方案使你可以将 Azure Rights Management 服务与本地服务结合使用。
+- RMS 连接器：当 Azure Rights Management 服务与 RMS 连接器结合使用时，处理流程保持不变。 唯一的差别在于，连接器充当本地服务（如 Exchange Server 和 SharePoint Server）与 Azure Rights Management 服务之间的中继。 连接器本身不执行任何操作，例如用户环境初始化，或者加密或解密。 它只会中继通常要定向到 AD RMS 服务器的通信，处理每一端使用的协议之间的转换。 此方案让你可以将 Azure Rights Management 服务与本地服务结合使用。
 
 - **常规保护 (.pfile)**：当 Azure Rights Management 服务对文件提供一般性保护时，流程基本上与内容保护相同，不过，RMS 客户端将创建一个授予所有权限的策略。 使用该文件时，会先将它解密，然后将它传递到目标应用程序。 这种方案允许你保护所有文件，即使它们本机不支持 RMS。
 
@@ -160,9 +160,9 @@ ms.locfileid: "44149355"
 
 ## <a name="next-steps"></a>后续步骤
 
-若要了解 Azure Rights Management 服务的详细信息，请参阅**了解和探索**部分中的其他文章（如[应用程序如何支持 Azure Rights Management 服务](applications-support.md)），了解你的现有应用程序如何通过与 Azure Rights Management 集成来提供信息保护解决方案。 
+若要了解 Azure Rights Management 服务的详细信息，请参阅“了解和探索”部分中的其他文章（如[应用程序如何支持 Azure Rights Management 服务](applications-support.md)），了解你的现有应用程序如何通过与 Azure Rights Management 集成来提供信息保护解决方案。 
 
-请查看 [Azure 信息保护术语](./terminology.md)，以便熟悉在配置和使用 Azure Rights Management 服务时可能遇到的术语。此外，还要确保在开始部署前查看 [Azure 信息保护的要求](requirements.md)。 如果你要进一步研究并亲自尝试一下，请使用 [Azure 信息保护快速入门教程](infoprotect-quick-start-tutorial.md)。
+请查看 [Azure 信息保护术语](./terminology.md)，以便熟悉在配置和使用 Azure Rights Management 服务时可能遇到的术语。此外，还要确保在开始部署前查看 [Azure 信息保护的要求](requirements.md)。 如果要进一步研究并亲自尝试一下，请使用[编辑策略并创建新标签](infoprotect-quick-start-tutorial.md)教程。
 
 当做好开始为组织部署数据保护的准备时，请使用 [Azure 信息保护部署路线图](deployment-roadmap.md)获取部署步骤和操作说明链接。
 

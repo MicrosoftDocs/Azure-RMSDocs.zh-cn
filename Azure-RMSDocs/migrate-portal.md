@@ -4,18 +4,18 @@ description: 概览 Azure 门户中的管理任务，这些任务过去在 Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2018
+ms.date: 11/07/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: fa32a5d00c161d2f6a78acd7cbe45ce00b34660c
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: 0f94a36f7653ef4aff590bb6815c75210768f7c5
+ms.sourcegitcommit: 227f54a8e90aa57d778ab60c646179c10e5edb44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170138"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51272357"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>曾使用 Azure 经典门户执行的任务
 
@@ -33,7 +33,7 @@ Azure 经典门户已于 2018 年 1 月 8 日停用。 此日期之后，用户�
 
 |Azure 经典门户|如何在 Azure 门户中执行此任务
 |-----------|--------------------|
-|首次访问配置设置|1.[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。<br /><br />2.在中心菜单上，单击“创建资源”，然后从“市场”列表中选择“安全 + 标识”。<br /><br />3.在“安全 + 标识”边栏选项卡上，从“特别推荐的应用”列表中选择“Azure 信息保护”。 然后，在“Azure 信息保护”边栏选项卡上，单击“创建”。<br /><br />此操作将创建“Azure 信息保护”边栏选项卡，使你在下次登录到门户时，可以从中心的“所有服务”列表中选择此服务。
+|首次访问配置设置|1.[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。<br /><br />2.按照[首次访问“Azure 信息保护”边栏选项卡](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time)的说明操作。
 |创建新模板|创建应用保护的标签，并使用“设置权限”来定义权限、有效期限和脱机访问。 <br /><br />此配置会在后台创建一个新的自定义模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。<br /><br />有关详细信息，请参阅[创建新模板](configure-policy-templates.md#to-create-a-new-template)。
 |编辑模板属性： <br /><br />- 模板名称和描述<br /><br />- 使用权限、内容有效期限和脱机访问设置|如果尚未这样做，请[将模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)，然后执行以下操作<br /><br />1.更改标签名称和描述<br /><br />2.更改标签上的保护设置，以更改权限、有效期限和脱机访问设置。<br /><br />有关详细信息，请参阅[配置标签以保护设置](configure-policy-protection.md#to-configure-a-label-for-protection-settings)。
 |存档模板|将标签状态设置为“禁用”。
@@ -41,7 +41,7 @@ Azure 经典门户已于 2018 年 1 月 8 日停用。 此日期之后，用户�
 |复制模板|无法在 Azure 门户中复制模板。 如果希望两个标签具有相同的保护设置，则必须设置每个标签的权限。 <br /><br />有关详细信息，请参阅[配置标签以保护设置](configure-policy-protection.md#to-configure-a-label-for-protection-settings)。
 |删除模板|删除模板可能导致无法访问数据，因此 Azure 门户不支持此操作。 但是，可以删除标签，然后使用 PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) cmdlet 来删除模板。 <br /><br />有关详细信息，请参阅[如何删除或重排 Azure 信息保护的标签](configure-policy-delete-reorder.md)。
 |多语言支持|从“管理”菜单选择中，选择“语言”，导出包含模板名称和描述的可自定义字段。 翻译字符串，然后将这些字符串导入门户。 <br /><br />有关详细信息，请参阅[如何在 Azure 信息保护中配置不同语言的标签和模板](configure-policy-languages.md)。
-|Rights Management Web 报表|使用 PowerShell [Get-AadrmUsageLog ](/powershell/module/aadrm/Get-AadrmUsageLog) cmdlet 下载 Azure Rights Management 服务的使用日志。 然后可使用此数据创建自定义报表。 <br /><br />有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](log-analyze-usage.md)。<br /><br />提示：查看[企业移动性和安全性博客](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection)上的公告，了解 Azure 信息保护新的集中式解决方案。
+|Rights Management Web 报表|[Azure 信息保护的集中式报告](reports-aip.md)现已发布预览版。<br /><br />另外，还可以使用 PowerShell [Get-AadrmUsageLog ](/powershell/module/aadrm/Get-AadrmUsageLog) cmdlet 下载 Azure Rights Management 服务的使用情况日志。 然后可使用此数据创建自定义报表。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](log-analyze-usage.md)。
 |激活和停用 Rights Management 服务|从“管理”菜单选项中，选择“保护激活”。<br /><br />有关详细信息，请参阅[如何从 Azure 门户激活 Azure 权限管理](activate-azure.md)。
 
 在编辑模板或将其转换为 Azure 门户中的标签之前，请参阅[Azure 门户中的模板的注意事项](configure-policy-templates.md#considerations-for-templates-in-the-azure-portal)。

@@ -1,6 +1,6 @@
 ---
 title: Azure 信息保护的符合性和信息
-description: Azure 信息保护的支持信息，包括法律、合规性和 SLA。
+description: Azure 信息保护的支持信息，包括法律、符合性和 SLA。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -10,14 +10,14 @@ ms.service: information-protection
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e7c6c078d992bc4d3be9480227715be2157178f2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0269888af84f4f1b17ce5523bb5bbc8648d0d1a7
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150770"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026683"
 ---
-# <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure 信息保护的合规性和支持信息
+# <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Azure 信息保护的符合性和支持信息
 
 Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻找的信息与 Azure 信息保护相关，但与如何使用 Azure 信息保护服务无关，请查看以下资源：
 
@@ -39,13 +39,13 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 ## <a name="legal-and-privacy"></a>法律和隐私
 
-- 对于 Microsoft Azure 协议信息： [Microsoft Azure 协议](http://azure.microsoft.com/support/legal/subscription-agreement/)
+- 对于 Microsoft Azure 协议信息：[Microsoft Azure 协议](http://azure.microsoft.com/support/legal/subscription-agreement/)
 
-- 对于 Microsoft Azure 隐私信息： [Microsoft Azure 隐私声明](http://azure.microsoft.com/support/legal/privacy-statement/)
+- 对于 Microsoft Azure 隐私信息：[Microsoft Azure 隐私声明](http://azure.microsoft.com/support/legal/privacy-statement/)
 
 ## <a name="security-compliance-and-auditing"></a>安全、合规性和审核
 
-请参阅 [Azure RMS 解决了哪些问题？](./azure-rms-problems-it-solves.md)一文中的[安全、合规性和法规要求](./azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements)，了解有关特定 Azure 权限管理服务证书的信息。 此外：
+请参阅 [Azure RMS 解决了哪些问题？](./azure-rms-problems-it-solves.md)一文中的[安全、合规性和法规要求](./what-is-azure-rms.md#security-compliance-and-regulatory-requirements)，了解有关特定 Azure 权限管理服务证书的信息。 此外：
 
 - 对于 Azure 信息保护的外部认证：[Microsoft Azure 信任中心](http://azure.microsoft.com/support/trust-center/)
 

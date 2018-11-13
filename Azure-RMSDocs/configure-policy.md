@@ -4,18 +4,18 @@ description: 若要配置分类、标记和保护，必须配置 Azure 信息保
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bc6ec93104f2fc4f037b2410d53d7e3e70874725
-ms.sourcegitcommit: 4cd90fcf94ac6e2543d8be10e6e29e8218d5fd9d
+ms.openlocfilehash: 98c3d09a72a74ce8f2abc679df1e155b3a9ee5d8
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49651322"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026581"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -92,35 +92,7 @@ Azure 信息保护支持不同级别的订阅：
 3. 若要查看和编辑策略，从菜单选项选择“策略”。 若要查看和编辑所有用户都可以获得的策略，请选择“全局”策略。 若要创建所选用户的自定义策略，请选择“添加新策略”。
     
 
-### <a name="overview-of-the-policy"></a>策略概述
-
-Azure 信息保护策略包含以下可配置的元素：
-    
-- 包含哪些允许管理员和用户对文档和电子邮件进行分类（并选择性地保护）的标签。
-
-- 用户在 Office 应用程序中看到的信息保护栏的标题和工具提示。
-
-- 将默认标签设置为对文档和电子邮件进行分类的起始点的选项。
-
-- 在用户保存文档和发送电子邮件时强制执行分类的选项。
-
-- 当用户选择比原始级别低的敏感度级别时提示用户提供相应原因的选项。
-
-- 用于自动标记电子邮件的选项（基于电子邮件附件）。
-
-- 控制是否将信息保护栏显示在 Office 应用程序中的选项。
-
-- 控制是否在 Outlook 中显示“不转发”按钮的选项。
-
-- 允许用户指定自己文档权限的选项。
-
-- 为用户提供自定义帮助链接的选项。
-
-Azure 信息保护附带[默认策略](configure-policy-default.md)，其中包含五个主要标签。 这些标签中有 2 个包含子标签，可根据需要提供子类别。 为子标签配置标签时，用户不能选择主标签，但必须选择一个子标签。
-
-Azure 信息保护标签可用于组织常规创建和存储的数据，包括从最低等级的个人数据到最高等级的机密数据等各类数据。 
-
-可以使用无更改的默认标签，或者你可以自定义它们，或删除它们，并可以创建新标签。 有关详细信息，请使用下一节中的链接来帮助你找到相关选项以及配置方法。
+### <a name="making-changes-to-the-policy"></a>对策略进行更改
 
 可以创建任意数量的标签。 但是，如果因标签数量过多而导致用户难以看见并选择正确的标签，可以创建作用域内策略，使用户仅看见相关的标签。 应用保护的标签具有数量上限（500 个）。
 
@@ -172,7 +144,11 @@ Azure 信息保护标签可用于组织常规创建和存储的数据，包括�
 
 ## <a name="next-steps"></a>后续步骤
 
-有关如何自定义默认策略并在 Office 应用程序是查看所产生行为的示例，请尝试 [Azure 信息保护快速入门教程](infoprotect-quick-start-tutorial.md)(#azure-信息保护快速入门教程)。
+有关如何自定义 Azure 信息保护策略以及查看所导致的用户行为的示例，请尝试学习以下教程：
+
+- [编辑 Azure 信息保护策略并创建新标签](infoprotect-quick-start-tutorial.md)
+
+- [配置协同工作的 Azure 信息保护策略设置](infoprotect-settings-tutorial.md)
 
 若要查看策略的执行情况，请参阅 [Azure 信息保护报表](reports-aip.md)。
 
