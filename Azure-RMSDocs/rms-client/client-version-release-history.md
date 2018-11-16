@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/30/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b05b41b802b54d874d13dcf13f541374d4150564
-ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
+ms.openlocfilehash: d4b9419ee12dfef0db29604dc7a396eedd7225fc
+ms.sourcegitcommit: a547dee247e4961e8f7c1f08e39b03dff710a74c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751247"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51628065"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -114,8 +114,6 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     - 扫描程序报告包括 Office 文档的“上次修改者”。
     
     - 如[编辑扫描程序的注册表](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner)一节中所述，现在可以通过在编辑注册表时使用 `*` 通配符来保护所有文件类型。
-
-- 使用 PowerShell 或扫描程序进行分类和保护时，不会删除或加密 Office 文档元数据。
 
 - 使用快速访问工具栏上的“下一项”和“上一项”箭头图标查看电子邮件时，将显示每封电子邮件的正确标签。
 
