@@ -4,18 +4,18 @@ description: 面向管理员的说明和信息，介绍如何在企业网络中�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2b6e3a40f7faab35053c1bd3146bfc08767e0066
-ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
+ms.openlocfilehash: f4067698a97ded8aa4c7fd6144fa7738822f1910
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49366999"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644669"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -41,6 +41,11 @@ ms.locfileid: "49366999"
     
     客户端的 PowerShell 模块需要 Windows PowerShell 4.0 版本，此版本可能需要在旧版操作系统上安装。 有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 安装程序不会为你检查或安装此必备项。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 `$PSVersionTable`。
 
+- 屏幕分辨率大于 800 x 600
+    
+    当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”对话框。
+
+
 - Microsoft Online Services 登录助手 7.250.4303.0
     
     运行 Office 2010 的计算机需要安装 Microsoft Online Services 登录助手版本 7.250.4303.0。 此版本包含在客户端安装中。 如果已安装登录助手的更高版本，请先将其卸载，然后再安装 Azure 信息保护客户端。 例如，通过使用“控制面板” > “程序和功能” > “卸载或更改程序”来检查版本和卸载登录助手。
@@ -57,21 +62,21 @@ ms.locfileid: "49366999"
     
     客户端安装不会检查此必备项，但需要 Azure 信息保护客户端分类和保护 PDF 文件。
 
-- 托管外接程序列表的组策略配置
+- 配置组策略，以免 Azure 信息保护加载项被禁用
     
-    对于 Office 2013 及更高版本，配置托管外接程序列表的组策略设置，并为 Office 应用程序添加 Microsoft Azure 信息保护外接程序。 为 Azure 信息保护指定以下编程标识符 (ProgID)，并将该选项设置为 1：始终启用外接程序。
+    对于 Office 2013 及更高版本，配置组策略以确保始终为 Office 应用程序启用 Microsoft Azure 信息保护加载项。 如果没有此配置，则可能禁用 Microsoft Azure 信息保护加载项，并且用户无法在其 Office 应用程序中标记其文档和电子邮件。
     
-    - 对于 Outlook：`MSIP.OutlookAddin`
+    - 对于 Outlook：使用 Office 文档的[系统管理员对加载项的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中记录的组策略设置。
     
-    - 对于 Word：`MSIP.WordAddin`
-    
-    - 对于 Excel：`MSIP.ExcelAddin`
-    
-    - 对于 PowerPoint：`MSIP.PowerPointAddin`
-    
-    如果不配置此设置，则可能禁用 Microsoft Azure 信息保护外接程序，并且用户无法在其 Office 应用程序中标记其文档和电子邮件。
-    
-    有关配置此组策略设置的详细信息，请参阅 Office 文档中的[系统管理员对外接程序的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)。
+    - 对于 Word、Excel 和 PowerPoint：使用支持文章[由于 Office 2013 和 Office 2016 项目的组策略设置，没有加载加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中记录的组策略设置托管加载项列表。 
+        
+        为 Azure 信息保护指定以下编程标识符 (ProgID)，并将该选项设置为 1：始终启用外接程序。
+        
+        对于 Word：`MSIP.WordAddin`
+        
+        对于 Excel：`MSIP.ExcelAddin`
+        
+        对于 PowerPoint：`MSIP.PowerPointAddin`
 
 > [!IMPORTANT]
 > 安装 Azure 信息保护客户端需要本地管理权限。

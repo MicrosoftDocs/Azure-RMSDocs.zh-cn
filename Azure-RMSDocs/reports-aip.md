@@ -4,19 +4,19 @@ description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 4cb496e6cca01d7a4ad6636acc315bd40dc4c58c
-ms.sourcegitcommit: 8e43a41998045fe574710e9da0b7747eaeccdba1
+ms.openlocfilehash: 85ca097a1808c2940ce534c7ce3d0542aaf3f27a
+ms.sourcegitcommit: 0f9e2ba05b61f8db08387576a697b8deff45fd36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273576"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51611414"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -28,7 +28,7 @@ ms.locfileid: "51273576"
 
 为中心报告使用 Azure 信息保护分析，以跟踪 Azure 信息保护标签的采用，并监视用户对标记的文档和电子邮件的访问，以及对其分类所做的任何更改。 此外，还可以标识包含敏感信息的文档（必须对这些文档进行保护）。
 
-你看到的数据是从 Azure 信息保护客户端、Azure 信息保护扫描程序以及[支持统一标记的客户端](configure-policy-migrate-labels.md#clients-that-support-unified-labeling)聚合的。
+当前，你看到的数据是从 Azure 信息保护客户端和 Azure 信息保护扫描程序聚合的。
 
 例如，你将能够看到以下数据：
 

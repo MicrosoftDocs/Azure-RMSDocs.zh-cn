@@ -4,15 +4,15 @@ description: 本入门教程介绍如何配置 Azure 信息保护策略设置，
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: ead65d9fef1b6c4f0087757e044caccee14805df
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: b9f60d0e8cc61a1d38b2992c0d430507bf494d18
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026943"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644637"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
@@ -69,9 +69,11 @@ ms.locfileid: "51026943"
 
 我们将使用 Azure 门户编辑全局策略以更改所有用户的策略设置。
 
-1. 打开新的浏览器窗口，[登录到 Azure 门户](https://portal.azure.com)。 然后导航到“Azure 信息保护”。 
+1. 打开新的浏览器窗口，以全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”。 
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+    
+    如果你不是全局管理员，请使用以下链接获取替代角色：[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)
 
 2. 选择“分类” > “策略” > “全局”，打开“策略: 全局”边栏选项卡。 
 

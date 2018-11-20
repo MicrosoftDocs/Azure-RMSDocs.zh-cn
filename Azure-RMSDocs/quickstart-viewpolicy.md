@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/05/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: aa541481aa11ad904a486b28d0bf37b85fd72543
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: adcaa1e0f15536d83a20c54017813d7e1546d860
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026935"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644703"
 ---
 # <a name="quickstart-get-started-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始
 
@@ -36,7 +36,7 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
 
 1. 使用租户的全局管理员帐户登录到 [Azure 门户](https://portal.azure.com)。 
     
-    如果你不是全局管理员，可以使用以下[管理角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一：信息保护管理员或安全管理员。
+    如果你不是全局管理员，请使用以下链接获取替代角色：[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)
 
 2. 在中心菜单上，选择“创建资源”，然后在市场的搜索框中键入“Azure 信息保护”。 
     

@@ -4,15 +4,15 @@ description: 通过自动应用“不得转发”保护，为用户配置可保�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/14/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: 6beb55b6dbcd82582cc24c7beb787bf4b232f518
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 793c3ff3b68de66dce5876c25cb4ba5455d19c33
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026930"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644686"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>快速入门：为用户配置标签，以便轻松保护包含敏感信息的电子邮件
 
@@ -64,9 +64,11 @@ ms.locfileid: "51026930"
 
 ## <a name="configure-an-existing-label-to-apply-the-do-not-forward-protection"></a>配置现有标签以应用“不得转发”保护
 
-1. 打开新的浏览器窗口，[登录到 Azure 门户](https://portal.azure.com)。 然后导航到“Azure 信息保护”。 
+1. 打开新的浏览器窗口，以全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”。 
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+    
+    如果你不是全局管理员，请使用以下链接获取替代角色：[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)
 
 2. 在“分类” > “标签”菜单选项的“Azure 信息保护 - 标签”边栏选项卡上，选择要配置为应用保护的标签。 
 

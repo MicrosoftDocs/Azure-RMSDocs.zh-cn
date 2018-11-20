@@ -4,24 +4,24 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 04cafed6317bd17f08e6b09a7f0b42b2cb2e20c7
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 06434646727b93da5746f66f062fb49f986aaa95
+ms.sourcegitcommit: e70480e4d3dabbc1b5ae03a56cf54473400d25e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026666"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51527784"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
-是否有关于 Azure 信息保护或 Rights Management 保护 (Azure RMS) 的问题？ 请查看此处是否有答案。
+是否有关于 Azure 信息保护或 Azure Rights Management 服务 (Azure RMS) 的问题？ 请查看此处是否有答案。
 
 这些常见问题页将定期更新，其中新添加的内容将在 [Azure 信息保护技术博客](https://aka.ms/AIPblog)上的每月文档更新公告中列出。
 
@@ -47,10 +47,6 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 请参阅 [Azure 信息保护](https://azure.microsoft.com/en-us/pricing/details/information-protection)页面上的订阅信息和功能列表。 
 
 如果你的 Office 365 订阅包含 Azure Rights Management 数据保护，请下载 [Azure 信息保护许可数据表](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)，其中还包含一些有关许可的常见问题解答。
-
-## <a name="ive-just-got-my-azure-information-protection-subscriptionhow-do-i-get-going"></a>我刚刚获取我的 Azure 信息保护订阅，下一步应该怎么做？
-
-如果你是初次接触 Azure 信息保护并很想使用它，请先转到我们的[快速入门教程](quickstart-viewpolicy.md)，然后查看[针对常见应用场景的操作方法指南](how-to-guides.md)。
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure 信息保护客户端是否只适用于包含分类和标记的订阅？
 
@@ -117,6 +113,16 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 - 如果在条件访问策略中使用 MFA 与其他组织展开协作 (B2B)，则必须使用 [Azure AD B2B 协作](/active-directory/b2b/what-is-b2b)，并为要在其他组织中共享的用户创建来宾帐户。
 
 - 如果针对条件访问使用许多云应用，则列表中可能不会显示“Microsoft Azure 信息保护”选项，因此无法进行选择。 在这种情况下，可使用列表顶部的搜索框。 开始键入“Microsoft Azure 信息保护”，筛选可用应用。 如果已有受支持的订阅，则可以看到“Microsoft Azure 信息保护”选项，可进行选择。 
+
+## <a name="i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive"></a>我看到 Azure 信息保护被列为 Microsoft Graph 安全提供商，它是如何工作的？我将收到哪些警报？
+
+是，作为公共预览版产品/服务，现可收到有关 **Azure 信息保护异常数据访问**的警报。 当尝试访问由 Azure 信息保护进行保护的数据存在异常时，将触发此警报。 例如，访问大量的数据，在某天的异常时间访问或者从未知位置访问。
+
+此类警报可以帮助你检测环境中与数据相关的高级攻击和内部威胁。 这些警报使用机器学习来分析访问受保护数据的用户的行为。 
+
+可以通过[使用 Microsoft Graph 安全 API](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/security-api-overview) 来访问 Azure信息保护警报，也可以使用 Azure Monitor 将[警报流式传输](https://developer.microsoft.com/en-us/graph/docs/concepts/security_siemintegration)到 SIEM 解决方案，例如 Splunk 和 IBM Qradar。
+
+有关 Microsoft Graph 安全 API 的详细信息，请参阅 [Microsoft Graph 安全 API 概述](https://developer.microsoft.com/graph/docs/concepts/security-concept-overview)。
 
 ## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure 信息保护中的标签和 Office 365 中的标签之间有何不同？
 

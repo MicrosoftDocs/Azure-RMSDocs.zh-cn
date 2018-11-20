@@ -4,18 +4,18 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 2 阶段涉及从 AD 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 04ca9cdfe3f528d71ee45a88a81b59268a6357aa
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: ebc5a9867bad267b71f2f4ae6ebe0e22c9e7a607
+ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150460"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51707753"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -125,9 +125,9 @@ ms.locfileid: "44150460"
 
 - 如果在迁移前创建了 Azure 信息保护自定义模板，则必须手动导出并导入它们。
 
-- 如果 AD RMS 中的模板使用 ANYONE 组，可能需要从组织外部添加用户或组。 
+- 如果 AD RMS 中的模板使用 ANYONE 组，可能需要手动添加用户或组。 
     
-    在 AD RMS 中，ANYONE 组向所有经过身份验证的用户授予了权限。 此组将自动转换为 Azure AD 租户中的所有用户。 如果不需要向任何额外用户授予权限，则无需进一步操作。 但如果使用 ANYONE 组来包括外部用户，必须手动添加这些用户以及要向他们授予的权限。
+    在 AD RMS 中，ANYONE 组将权限授予由本地 Active Directory 进行身份验证的所有用户，而 Azure 信息保护不支持此组。 与之最相似的是为 Azure AD 租户中的所有用户自动创建的组。 如果你当时对 AD RMS 模板使用 ANYONE 组，可能需要添加用户和要授予给他们的权限。
 
 ### <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>在迁移前创建了自定义模板时需执行的过程
 
@@ -143,9 +143,9 @@ ms.locfileid: "44150460"
 
 ### <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>AD RMS 中的模板使用 **ANYONE** 组时需执行的过程
 
-如果 AD RMS 中的模板使用 ANYONE 组，此组将自动转换为使用名为 AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com 的组。 例如，如果公司为 Contoso，则该组可能会如下所示：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。 此组包含 Azure AD 租户中的所有用户。
+如果 AD RMS 中的模板使用 ANYONE 组，Azure 信息保护中最接近的等效组将命名为 AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com。 例如，如果公司为 Contoso，则该组可能会如下所示：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。 此组包含 Azure AD 租户中的所有用户。
 
-如果在 Azure 门户中管理模板和标签，此组将显示为 Azure AD 中的租户域名。 例如，如果公司为 Contoso，此组可能类似于：contoso.onmicrosoft.com。 要添加此组，选项将显示“添加 \<组织名称> - 所有成员”。
+如果在 Azure 门户中管理模板和标签，此组将显示为 Azure AD 中的租户域名。 例如，如果公司为 Contoso，此组可能类似于：contoso.onmicrosoft.com。 要添加此组，选项将显示“添加 \<组织名称> - 所有成员”****。
 
 如果不确定 AD RMS 模板是否包括 ANYONE 组，可使用以下 Windows PowerShell 示例脚本来标识这些模板。 有关将 Windows PowerShell 用于 AD RMS 的详细信息，请参阅[使用 Windows PowerShell 管理 AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)。
 
