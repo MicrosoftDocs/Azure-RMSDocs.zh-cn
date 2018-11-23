@@ -4,18 +4,18 @@ description: 有关 AADRM 模块中 Add-AadrmKey 的帮助。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: A1C99424-D986-4A5A-B2E1-6D18EEF11B21
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: 98ac49ffac2dcf4baadb961247e3e3447e2d128c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 95a5d6f1f3bed4d007c02861d754ed9ec46cf207
+ms.sourcegitcommit: 03a9fc3f1b96a4edc0e2a9d538ce04a0579023be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147259"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52268030"
 ---
 # <a name="add-aadrmkey"></a>Add-AadrmKey
 
