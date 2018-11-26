@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f1623c14377feb545f945a447363e7f3d12e8dd3
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: a55a073a0b567e9e92b11fdcb1a5c8032c4e94c7
+ms.sourcegitcommit: 03a9fc3f1b96a4edc0e2a9d538ce04a0579023be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026564"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52268047"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>如何使用作用域内策略为特定用户配置 Azure 信息保护策略
 
@@ -28,6 +28,8 @@ ms.locfileid: "51026564"
 请注意，除支持 Azure 信息保护客户端的 Office 桌面应用程序外，PowerShell 和 Azure 信息保护扫描程序也支持标签。 也就是说，可以为运行 Powershell 命令或扫描程序的帐户创建和配置范围内策略。 
 
 作用域内策略与标签相似，都会在 Azure 门户中排序。 如果为用户配置了多个作用域，则会在下载之前为用户计算有效策略。 根据策略的顺序，应用最后一个策略设置。 用户看到的标签来自全局策略，而其他标签来自用户所属的作用域内策略。
+
+当你的租户中的用户打开标记的文档或电子邮件且此用户不在标签的作用域内时例外。 在此情况下，用户会看到标签集的名称，但标签不会显示为可供选择。  
 
 由于作用域内策略始终继承全局策略中的标签和设置，因此在创建或编辑作用域内策略时会显示全局策略中的标签。 但是，编辑作用域内策略时，无法从全局策略中编辑标签。 但可将子标签添加到这些继承的标签中。
 
@@ -58,4 +60,3 @@ ms.locfileid: "51026564"
 ## <a name="next-steps"></a>后续步骤
 
 有关如何自定义默认策略并在 Office 应用程序中查看所产生行为的示例，请尝试学习[编辑策略并创建新标签](infoprotect-quick-start-tutorial.md)教程。
-

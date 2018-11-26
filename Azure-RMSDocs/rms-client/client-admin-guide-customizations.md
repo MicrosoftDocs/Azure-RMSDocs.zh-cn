@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 62d53acd482b9efdd0425d5a944d2241f8a33b30
-ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
+ms.openlocfilehash: 4d3a44426de151ad9d1f1262cae967fdddf0da6f
+ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223987"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52292586"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -43,7 +43,7 @@ ms.locfileid: "51223987"
 
 #### <a name="available-advanced-client-settings"></a>可用高级客户端设置
 
-|Setting|应用场景和说明|
+|设置|应用场景和说明|
 |----------------|---------------|
 |DisableDNF|[在 Outlook 中隐藏或显示“不转发”按钮](#hide-or-show-the-do-not-forward-button-in-outlook)|
 |EnableBarHiding|[永久隐藏 Azure 信息保护栏](#permanently-hide-the-azure-information-protection-bar)|
@@ -86,9 +86,11 @@ ms.locfileid: "51223987"
 
 此外：
 
-- 此解决方案支持以同一租户中的其他用户身份登录。 不支持以不同租户中的其他用户身份登录。 若要使用多个租户测试 Azure 信息保护，请使用不同的计算机。
+- 完成这些步骤后，若 Azure 信息保护客户端仍使用旧帐户登录，则从 Internet Explorer 删除所有 cookie，然后重复步骤 1 和步骤 2。
 
-- 如果使用的是单一登录，必须在编辑注册表后注销 Windows，再使用其他用户帐户登录。 然后，Azure 信息保护客户端会使用当前登录的用户帐户，自动进行身份验证。
+- 如果使用的是单一登录，必须在删除令牌文件后注销 Windows，再使用其他用户帐户登录。 然后，Azure 信息保护客户端会使用当前登录的用户帐户，自动进行身份验证。
+
+- 此解决方案支持以同一租户中的其他用户身份登录。 不支持以不同租户中的其他用户身份登录。 若要使用多个租户测试 Azure 信息保护，请使用不同的计算机。
 
 - 可以使用“帮助和反馈”中的“重置设置”选项注销并删除当前已下载的 Azure 信息保护策略。
 
@@ -427,7 +429,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 值：\<Office 应用程序类型 WXP> 
 
-例如：
+示例：
 
 - 若要仅搜索 Word 文档，请指定 W。
 

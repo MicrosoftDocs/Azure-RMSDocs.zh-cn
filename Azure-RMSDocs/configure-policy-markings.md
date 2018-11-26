@@ -8,30 +8,30 @@ ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 0e40e0044c38e58690b3e4130a4980042296edf4
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 1a2702d1cff5cdf62b8969829f0389c15b5c7fae
+ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644720"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52292603"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
-当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
+当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。 
 
 有关这些视觉标记的其他信息：
 
-- 页眉和页脚支持适用于 Word、Excel、PowerPoint 和 Outlook 的单行文本。
+- 所有视觉标记均支持多行文本。
+
+- 页眉和页脚适用于 Word、Excel、PowerPoint 和 Outlook。
 
 - 水印适用于 Word、Excel 和 PowerPoint：
 
     - Excel：水印仅在页面布局和打印预览模式及打印后可见。
     
     - PowerPoint：水印应用于母板幻灯片，作为背景图像。 在“视图”选项卡上的“幻灯片母版”中，确保未选中“隐藏背景图形”复选框。
-    
-    - 支持多行文本。
 
 - 最大字符串长度：
     
@@ -106,7 +106,7 @@ ms.locfileid: "51644720"
 
 此语句中的该语法区分大小写。
 
-例如：
+示例：
 
 - **仅为 Word 文档设置页眉文本：**
     
