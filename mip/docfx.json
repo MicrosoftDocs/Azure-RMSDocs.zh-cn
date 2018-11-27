@@ -39,7 +39,7 @@
       "breadcrumb_path": "/information-protection/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/azure-rmsdocs",
+      "feedback_github_repo": "MicrosoftDocs/azure-rmsdocs.zh-cn",
       "feedback_product_url": "https://msip.uservoice.com/"
     },
     "fileMetadata": {},
