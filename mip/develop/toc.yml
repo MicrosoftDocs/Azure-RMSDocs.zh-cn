@@ -55,16 +55,18 @@ items:
     - name: 策略 API 处理程序 (C++)
       href: concept-handler-policy-cpp.md
       items:
-      - name: 审核
-        href: concept-auditing-policy-cpp.md
       - name: 执行状态
-        href: concept-auditing-policy-executionstate-cpp.md
+        href: concept-handler-policy-executionstate-cpp.md
       - name: 计算操作
-        href: concept-auditing-policy-computeactions-cpp.md
+        href: concept-handler-policy-computeactions-cpp.md
+      - name: 审核
+        href: concept-handler-policy-auditing-cpp.md
     - name: 保护 API 处理程序 (C++)
       href: concept-handler-protection-cpp.md
   - name: 标签
     href: concept-classification-labels.md
+  - name: 元数据
+    href: concept-mip-metadata.md
   - name: 异步观察程序 (C++)
     href: concept-async-observers.md
     items:
@@ -225,9 +227,9 @@ items:
     href: http://aka.ms/mipsdk
   - name: 示例
     href: https://azure.microsoft.com/resources/samples/?sort=0&term=mip+sdk
-ms.openlocfilehash: 44d1e464abc351e4e4e270c6992172d783e3f09e
-ms.sourcegitcommit: 05fdaf43f74013eecb5886b95b09dd5e00670753
+ms.openlocfilehash: 62fe0af32efa5c68828cb8ab307f70350c8992be
+ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51527862"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304008"
