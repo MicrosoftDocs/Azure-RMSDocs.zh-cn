@@ -223,13 +223,15 @@ items:
     href: faqs-known-issues.md
   - name: 论坛
     href: https://stackoverflow.com/questions/tagged/microsoft-information-protection
-  - name: SDK（公共预览版）
-    href: http://aka.ms/mipsdk
   - name: 示例
     href: https://azure.microsoft.com/resources/samples/?sort=0&term=mip+sdk
-ms.openlocfilehash: 62fe0af32efa5c68828cb8ab307f70350c8992be
-ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
+  - name: SDK（公共预览版）
+    href: http://aka.ms/mipsdk
+  - name: 安全最佳方案
+    href: /azure/information-protection/develop/security-guidelines?context=/information-protection/develop/rc/rc
+ms.openlocfilehash: 6659c72b4cfb554c5fa5c30e9d811d71fc09db78
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304008"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386689"
