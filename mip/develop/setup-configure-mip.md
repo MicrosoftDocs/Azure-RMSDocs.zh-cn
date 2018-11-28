@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 6c0b9a878f98081312a0b81b965e75bcc0ade7e8
-ms.sourcegitcommit: 13b5b8e7457b09e1b828dad3cdfae086fd019819
+ms.openlocfilehash: 2790c64095a6fca4a33f70aeada68fa0c6668020
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508436"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386723"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置 
 
@@ -21,11 +21,18 @@ ms.locfileid: "51508436"
 
 [!INCLUDE [MIP SDK platform support](../include/mip-sdk-platform-support.md)]
 
+## <a name="prerequisites"></a>必要條件
+
 在开始之前，请务必查看以下主题：
 
 - [什么是 Office 365 安全与合规中心？](https://docs.microsoft.com/office365/securitycompliance/security-and-compliance)
 - [什么是 Azure 信息保护？](/azure/information-protection/understand-explore/what-is-information-protection)
 - [如何使用 Azure 信息保护进行保护？](/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
+
+> [!IMPORTANT]
+> **为了尊重用户隐私，必须要求用户先同意才能启用自动日志记录。** 下面的示例是 Microsoft 用于日志记录通知的标准消息：
+>
+> *启用错误和性能日志记录即表示同意向 Microsoft 发送错误和性能数据。Microsoft 会通过 Internet 收集错误和性能数据（统称“数据”）。Microsoft 利用此数据来保证并改进 Microsoft 产品和服务的质量、安全性和完整性。例如，会分析性能和可靠性（如使用哪些功能、功能的响应速度、设备性能、用户界面交互和遇到的任何产品问题）。数据还包括当前运行的软件以及 IP 地址的配置信息。*
 
 ## <a name="sign-up-for-an-office-365-subscription"></a>注册 Office 365 订阅
 
@@ -41,7 +48,7 @@ ms.locfileid: "51508436"
 
 ## <a name="configure-sensitivity-labels"></a>配置敏感度标签
 
-如果当前正在使用 Azure 信息保护，则必须采取措施将标签迁移到 Office 365 安全与合规中心。 有关该过程的详细信息，请参阅[如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](/azure/information-protection/configure-policy-migrate-labels)。 
+如果当前正在使用 Azure 信息保护，则必须迁移到 Office 365 安全与合规中心的标签。 有关该过程的详细信息，请参阅[如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](/azure/information-protection/configure-policy-migrate-labels)。 
 
 ## <a name="configure-your-client-workstation"></a>配置客户端工作站
 
