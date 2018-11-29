@@ -145,7 +145,7 @@ ms.locfileid: "51707753"
 
 如果 AD RMS 中的模板使用 ANYONE 组，Azure 信息保护中最接近的等效组将命名为 AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com。 例如，如果公司为 Contoso，则该组可能会如下所示：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。 此组包含 Azure AD 租户中的所有用户。
 
-如果在 Azure 门户中管理模板和标签，此组将显示为 Azure AD 中的租户域名。 例如，如果公司为 Contoso，此组可能类似于：contoso.onmicrosoft.com。 要添加此组，选项将显示“添加 \<组织名称> - 所有成员”****。
+如果在 Azure 门户中管理模板和标签，此组将显示为 Azure AD 中的租户域名。 例如，如果公司为 Contoso，此组可能类似于：contoso.onmicrosoft.com。 要添加此组，选项将显示“添加 \<组织名称> - 所有成员”。
 
 如果不确定 AD RMS 模板是否包括 ANYONE 组，可使用以下 Windows PowerShell 示例脚本来标识这些模板。 有关将 Windows PowerShell 用于 AD RMS 的详细信息，请参阅[使用 Windows PowerShell 管理 AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)。
 
