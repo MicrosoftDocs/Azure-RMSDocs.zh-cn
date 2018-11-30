@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/13/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 778d83926e67a3f15fb182de3d2658d9881c29a5
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 7ddaf0a54aa116a317cee8699caf437faae9676f
+ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807076"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52330305"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 
@@ -37,14 +37,14 @@ ms.locfileid: "42807076"
 
 
 > [!TIP]
-> 如果即将对 Azure 密钥保管库执行配置步骤，而尚不熟悉此 Azure 服务，则可能会发现先阅读 [Azure Key Vault 入门](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)可能会有所帮助。 
+> 如果即将对 Azure 密钥保管库执行配置步骤，而尚不熟悉此 Azure 服务，则可能会发现先阅读 [Azure Key Vault 入门](/azure/key-vault/key-vault-get-started)可能会有所帮助。 
 
 
 ## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>第 1 部分：将 HSM 密钥传送到 Azure 密钥保管库
 
 由 Azure 密钥保管库的管理员完成这些过程。
 
-1. 对于想存储在 Azure Key Vault 中的每个导出的 SLC 密钥，请按照 Azure Key Vault 文档中的说明，使用[为 Azure Key Vault 实现自带密钥 (BYOK)](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azurekey-vault)，但以下情况例外：
+1. 对于想存储在 Azure Key Vault 中的每个导出的 SLC 密钥，请按照 Azure Key Vault 文档中的说明，使用[为 Azure Key Vault 实现自带密钥 (BYOK)](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)，但以下情况例外：
 
     - 不要执行**生成你的租户密钥**中的步骤，因为你已从 AD RMS 部署获得等效物。 而是标识 AD RMS 服务器使用的从 Thales 安装获得的密钥，并在迁移期间使用此密钥。 Thales 加密的密钥文件通常在本地服务器上名为 key<keyAppName><keyIdentifier>。
 

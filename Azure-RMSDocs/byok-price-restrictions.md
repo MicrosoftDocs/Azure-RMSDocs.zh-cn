@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 57914b0268102e8f7f5049ee1c63b58bf54c9a14
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 93e538b882da557715b04e8675b5a3b86de018b0
+ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149134"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52330270"
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 定价和限制
 
@@ -34,7 +34,7 @@ ms.locfileid: "44149134"
 
 ## <a name="benefits-of-using-azure-key-vault"></a>使用 Azure 密钥保管库的好处
 
-除使用 Azure 信息保护使用情况日志记录之外，为实现额外的保证，你还可以使用 [Azure 密钥保管库日志记录](https://azure.microsoft.com/documentation/articles/key-vault-logging/)对其进行交叉引用，从而独立监视，确保只有 Azure 权限管理服务使用此密钥。 如有必要，可以通过删除密钥保管库上的权限来立即撤消对密钥的访问权限。
+除使用 Azure 信息保护使用情况日志记录之外，为实现额外的保证，你还可以使用 [Azure 密钥保管库日志记录](/azure/key-vault/key-vault-logging)对其进行交叉引用，从而独立监视，确保只有 Azure 权限管理服务使用此密钥。 如有必要，可以通过删除密钥保管库上的权限来立即撤消对密钥的访问权限。
 
 将 Azure 密钥保管库用于 Azure 信息保护租户密钥的其他好处：
 

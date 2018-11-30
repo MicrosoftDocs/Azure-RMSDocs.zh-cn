@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 06434646727b93da5746f66f062fb49f986aaa95
-ms.sourcegitcommit: e70480e4d3dabbc1b5ae03a56cf54473400d25e2
+ms.openlocfilehash: 5e78630e39c63f69037dd7288f764c435ff5c81e
+ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51527784"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304053"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -84,7 +84,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 是。 尽管 Azure 信息保护是基于云的解决方案，但它可对存储在本地和云中的文档和电子邮件进行分类、标签设置和保护。
 
-如果具有 Exchange Server、SharePoint Server 和 Windows 文件服务器，可以部署 [Rights Management 连接器](deploy-rms-connector.md)，以便这些本地服务器使用 Azure Rights Management 服务保护电子邮件和文档。 还可以使用 [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)，将 Active Directory 域控制器与 Azure AD 同步和联合，为用户提供更为契合的身份验证体验。
+如果具有 Exchange Server、SharePoint Server 和 Windows 文件服务器，可以部署 [Rights Management 连接器](deploy-rms-connector.md)，以便这些本地服务器使用 Azure Rights Management 服务保护电子邮件和文档。 还可以使用 [Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity#what-is-azure-ad-connect)，将 Active Directory 域控制器与 Azure AD 同步和联合，为用户提供更为契合的身份验证体验。
 
 Azure Rights Management 服务根据需要自动生成并管理 XrML 证书，因此它不使用本地 PKI。 有关 Azure Rights Management 如何使用证书的详细信息，请参阅 [Azure RMS 的工作原理](./how-does-it-work.md)一文中的 [Azure RMS 工作演练：首次使用、内容保护、内容使用](./how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption)部分。
 
