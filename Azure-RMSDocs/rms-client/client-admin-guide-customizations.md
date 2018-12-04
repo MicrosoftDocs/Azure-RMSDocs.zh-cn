@@ -4,18 +4,18 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/06/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 4d3a44426de151ad9d1f1262cae967fdddf0da6f
-ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
+ms.openlocfilehash: 41e092b379cfb52db286a61ad715703514e500d0
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52292586"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386774"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -43,17 +43,19 @@ ms.locfileid: "52292586"
 
 #### <a name="available-advanced-client-settings"></a>可用高级客户端设置
 
-|设置|应用场景和说明|
+|Setting|应用场景和说明|
 |----------------|---------------|
 |DisableDNF|[在 Outlook 中隐藏或显示“不转发”按钮](#hide-or-show-the-do-not-forward-button-in-outlook)|
 |EnableBarHiding|[永久隐藏 Azure 信息保护栏](#permanently-hide-the-azure-information-protection-bar)|
 |EnableCustomPermissions|[设置用户是否能够使用自定义权限选项](#make-the-custom-permissions-options-available-or-unavailable-to-users)|
 |EnablePDFv2Protection|[使用 PDF 加密 ISO 标准来保护 PDF 文件](#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
 |LabelbyCustomProperty|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
+|LabelToSMIME|[将标签配置为在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook)|
 |OutlookDefaultLabel|[为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook)|
 |OutlookRecommendationEnabled|[在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)|
 |PostponeMandatoryBeforeSave|[使用强制标签时，删除文档的“以后再说”](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
 |ProcessUsingLowIntegrity|[禁用扫描程序的低完整性级别](#disable-the-low-integrity-level-for-the-scanner)|
+|PullPolicy|[对已断开连接计算机的支持](#support-for-disconnected-computers)
 |RemoveExternalContentMarkingInApp|[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)|
 |ReportAnIssueLink|[修改“报告问题”链接的电子邮件地址](#modify-the-email-address-for-the-report-an-issue-link)|
 |RunPolicyInBackground|[开启在后台持续运行的分类](#turn-on-classification-to-run-continuously-in-the-background)|
@@ -62,13 +64,13 @@ ms.locfileid: "52292586"
 
 ## <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>阻止针对仅 AD RMS 计算机出现的登录提示
 
-默认情况下，Azure 信息保护客户端会自动尝试连接到 Azure 信息保护服务。 对于只与 AD RMS 通信的计算机，此配置可能导致不必要的用户登录提示。 可以通过编辑注册表阻止此登录提示：
+默认情况下，Azure 信息保护客户端会自动尝试连接到 Azure 信息保护服务。 对于只与 AD RMS 通信的计算机，此配置可能导致不必要的用户登录提示。 可以通过编辑注册表来阻止此登录提示。
 
-找到以下值名称，然后将值数据设置为“0”：
+ - 找到以下值名称，然后将值数据设置为“0”：
+    
+    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
-
-无论此设置如何，Azure 信息保护客户端遵循标准的 [RMS 服务发现进程](client-deployment-notes.md#rms-service-discovery)，查找其 AD RMS 群集。
+无论此设置如何，Azure 信息保护客户端仍遵循标准的 [RMS 服务发现流程](client-deployment-notes.md#rms-service-discovery)来查找它的 AD RMS 群集。
 
 ## <a name="sign-in-as-a-different-user"></a>以其他用户身份登录
 
@@ -133,11 +135,28 @@ ms.locfileid: "52292586"
 
 请注意，在没有 Internet 连接的情况下，客户端无法使用组织的基于云的密钥来应用保护（或删除保护）。 相反，客户端只能使用应用分类或 [HYOK](../configure-adrms-restrictions.md) 保护的标签。
 
-若要配置此设置，请在注册表中找到以下值名称，并将值数据设置为 0：
+若要阻止 Azure 信息保护服务登录提示，可使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)，然后为计算机下载策略。 或者，也可以通过编辑注册表来阻止此登录提示。
 
-**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+- 若要配置高级客户端设置，请执行以下操作：
+    
+    1. 输入以下字符串：
+    
+        - 键：PullPolicy
+        
+        - 值：False
+    
+    2. 下载包含此设置的策略，并按照随附的说明操作，将它安装在计算机上。
 
-确保客户端在 %LocalAppData%\Microsoft\MSIP 文件夹中具有一个名为 Policy.msip 的有效策略文件。 如有必要，可以从 Azure 门户中导出全局策略或范围内策略，并将导出的文件复制到客户端计算机。 此外，还可以使用此方法，将已过时的策略文件替换为已发布的最新策略。 不过，如果用户属于多个范围内策略，就不支持导出策略。 另请注意，如果用户选择[“帮助和反馈”](client-admin-guide.md#help-and-feedback-section)中的“重置设置”选项，此操作会删除策略文件，并导致客户端无法正常运行，直到你手动替换策略文件或客户端连接到服务并下载策略为止。
+- 或者，若要编辑注册表，请执行以下操作：
+    
+    - 找到以下值名称，然后将值数据设置为“0”：
+    
+        **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+
+
+客户端必须在 %LocalAppData%\Microsoft\MSIP 文件夹中有名为 Policy.msip 的有效策略文件。
+
+可以从 Azure 门户中导出全局策略或范围内策略，并将导出的文件复制到客户端计算机。 此外，还可以使用此方法，将已过时的策略文件替换为最新策略。 不过，如果用户属于多个范围内策略，就不支持导出策略。 另请注意，如果用户选择[“帮助和反馈”](client-admin-guide.md#help-and-feedback-section)中的“重置设置”选项，此操作会删除策略文件，并导致客户端无法正常运行，直到你手动替换策略文件或客户端连接到服务并下载策略为止。
 
 从 Azure 门户导出策略时，下载的压缩文件包含多个版本的策略。 这些策略版本对应于 Azure 信息保护客户端的不同版本：
 
@@ -222,6 +241,46 @@ ms.locfileid: "52292586"
 
 - 值：\<label ID> 或 None
 
+## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>将标签配置为在 Outlook 中应用 S/MIME 保护
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 此设置处于预览状态，并且可能会更改。
+
+仅当具有有效的 [S/MIME 部署](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption)，且希望标签自动对电子邮件应用此保护方法（而不是 Azure 信息保护中的权限管理保护）时，才使用此设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
+
+若要使用此配置，必须为要应用 S/MIME 保护的所有 Azure 信息保护标签都指定“LabelToSMIME”高级客户端设置。 然后，使用以下语法设置每个条目的值：
+
+`[Azure Information Protection label ID];[S/MIME action]`
+
+在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值将显示在“标签”边栏选项卡上。 若要使用包含子标签的 S/MIME，请始终仅指定子标签（而非父标签）的 ID。 指定子标签时，父标签必须位于同一范围内，或位于全局策略中。
+
+S/MIME 操作可以是：
+
+- `Sign;Encrypt`：应用数字签名和 S/MIME 加密
+
+- `Encrypt`：仅应用 S/MIME 加密
+
+- `Sign`：仅应用数字签名
+
+dcf781ba-727f-4860-b3c1-73479e31912b 的标签 ID 示例值：
+
+- 应用数字签名和 S/MIME 加密：
+    
+    **dcf781ba-727f-4860-b3c1-73479e31912b;Sign;Encrypt**
+
+- 仅应用 S/MIME 加密：
+    
+    **dcf781ba-727f-4860-b3c1-73479e31912b;Encrypt**
+    
+- 仅应用数字签名：
+    
+    **dcf781ba-727f-4860-b3c1-73479e31912b;Sign**
+
+使用此配置的结果是，当你对电子邮件应用标签后，除了标签中的分类，系统还会对电子邮件应用 S/MIME 保护。
+
+如果你在 Azure 门户中为指定的标签配置了权限管理保护，S/MIME 保护仅在 Outlook 中替换权限管理保护。 对于支持标记的其他所有情况，应用的都是权限管理保护。
+
+如果希望标签仅在 Outlook 中可见，请将标签配置为应用“不要转发”的单一用户定义操作，如[快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件](../quickstart-label-dnf-protectedemail.md)中所述。
+
 ## <a name="remove-not-now-for-documents-when-you-use-mandatory-labeling"></a>使用强制标签时，删除文档的“以后再说”
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
@@ -296,7 +355,8 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
     
     - RMSTemplateId 的值。 如果此值为“受限访问”，则用户已使用自定义权限保护该文件，而非为此标签配置的保护设置。 若继续，该标签的保护设置将覆盖这些自定义权限。 决定是否继续，或要求用户（RMSIssuer 的显示值）删除此标签并将此标签和初始自定义权限一起重新应用。
 
-3. 使用 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 和 *RemoveLabel* 参数删除此标签。 如果使用的是包含“用户必须提供理由以设置较低分类标签、删除标签或删除保护”的[策略设置](../configure-policy-settings.md)，还必须使用原因指定“理由”参数。 例如： 
+3. 使用 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 和 *RemoveLabel* 参数删除此标签。 如果使用的是
+4. “用户必须提供设置较低分类标签、删除标签或撤消保护的理由”的[策略设置](../configure-settings.md)，还必须随原因一起指定“理由”参数。 例如： 
     
         Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
 
@@ -417,7 +477,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 此配置使用必须在 Azure 门户中配置的多项[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 这些设置处于预览状态，并且可能会更改。
 
-这些设置允许在其他标记解决方案已应用这些视觉标记的情况下从文档中删除或替换页眉或页脚。 例如，旧页脚包含旧标签的名称，现在使用新的标签名及其自己的页脚将标签迁移到 Azure 信息保护。
+借助这些设置，可以在其他标记解决方案已应用这些视觉标记的情况下，从文档中删除或替换基于文本的页眉或页脚。 例如，旧页脚包含旧标签的名称，现在使用新的标签名及其自己的页脚将标签迁移到 Azure 信息保护。
 
 当客户端在其策略中获取此配置时，如果文档在 Office 应用中打开并且任何 Azure 信息保护标签已应用到该文档，则删除或替换旧的页眉和页脚。
 
@@ -429,7 +489,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 值：\<Office 应用程序类型 WXP> 
 
-示例：
+例如：
 
 - 若要仅搜索 Word 文档，请指定 W。
 

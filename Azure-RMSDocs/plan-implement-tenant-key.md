@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 42451d8b50b0ad1edb75d767e622e697b12acf90
-ms.sourcegitcommit: 4767afef8fb7b81065a6bf207cd0a5518bf0e97a
+ms.openlocfilehash: 2f0088cb2b95a9c0f7a50c780d89dec0b91111f4
+ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48907155"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52330287"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
@@ -80,7 +80,7 @@ ms.locfileid: "48907155"
 
 > [!NOTE]
 
-> 作为一种附加保护措施，Azure 密钥保管库在位于北美、EMEA（欧洲、中东和非州）和亚洲等地区的数据中心使用单独的安全域。 Azure Key Vault 还使用 Azure 的其他实例，如 Microsoft Azure 德国和 Azure 政府。 
+> 作为一种附加保护措施，Azure 密钥保管库对位于北美、EMEA（欧洲、中东和非州）和亚洲等地区的数据中心使用独立安全域。 Azure Key Vault 还使用 Azure 的其他实例，如 Microsoft Azure 德国和 Azure 政府。 
 
 虽然这是可选的，但你可能希望使用 Azure 信息保护提供的接近实时的使用日志，以便准确了解租户密钥的使用时间和方式。
 
@@ -106,8 +106,8 @@ ms.locfileid: "48907155"
 
 |要求|更多信息|
 |---------------|--------------------|
-|你的 Azure 信息保护租户必须具有 Azure 订阅。 如果没有订阅，可以注册[免费帐户](https://azure.microsoft.com/pricing/free-trial/)。 <br /><br /> 若要使用受 HSM 保护的密钥，必须拥有 Azure Key Vault 高级服务层。|免费的 Azure 订阅提供相应的访问权限，可配置 Azure Active Directory 以及 Azure 权限管理自定义模板（**可访问 Azure Active Directory**），但不足以使用 Azure 密钥保管库。 若要确认拥有可用于 BYOK 的 Azure 订阅，请使用 [Azure 资源管理器](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx) PowerShell cmdlet： <br /><br /> 1.若要启动 Azure PowerShell 会话，请选择“以管理员身份运行”选项，并使用以下命令以 Azure 信息保护租户的全局管理员身份登录：`Login-AzureRmAccount`<br /><br />2.键入以下命令，并确认可以看到显示了订阅名称和 ID 以及 Azure 信息保护租户 ID 的值，并且状态为“已启用”：`Get-AzureRmSubscription`<br /><br />如果没有显示任何值，并且返回到提示，则表示没有可用于 BYOK 的 Azure 订阅。 <br /><br />**注意**：如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，则除 BYOK 先决条件以外，必须拥有最低版本为 11.62 的 Thales 固件。|
-|若要使用本地创建的受 HSM 保护密钥，请执行以下操作： <br /><br />- 针对 Key Vault BYOK 列出的所有先决条件。 |请参阅 Azure 密钥保管库文档中的 [Prerequisites for BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br /> **注意**：如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，则除 BYOK 先决条件以外，必须拥有最低版本为 11.62 的 Thales 固件。|
+|你的 Azure 信息保护租户必须具有 Azure 订阅。 如果没有订阅，可以注册[免费帐户](https://azure.microsoft.com/pricing/free-trial/)。 <br /><br /> 若要使用受 HSM 保护的密钥，必须拥有 Azure Key Vault 高级服务层。|免费的 Azure 订阅提供相应的访问权限，可配置 Azure Active Directory 以及 Azure 权限管理自定义模板（**可访问 Azure Active Directory**），但不足以使用 Azure 密钥保管库。 若要确认拥有可用于 BYOK 的 Azure 订阅，请使用 [Azure 资源管理器](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx) PowerShell cmdlet： <br /><br /> 1.若要启动 Azure PowerShell 会话，请选择“以管理员身份运行”选项，并使用以下命令以 Azure 信息保护租户的全局管理员身份登录：`Login-AzureRmAccount`<br /><br />2.键入以下命令，并确认可以看到显示了订阅名称和 ID 以及 Azure 信息保护租户 ID 的值，并且状态为“已启用”：`Get-AzureRmSubscription`<br /><br />如果没有显示任何值，并且返回到提示，则表示没有可用于 BYOK 的 Azure 订阅。 <br /><br />**注意**：若要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，那么除了满足 BYOK 先决条件以外，还必须拥有最低版本为 11.62 的 Thales 固件。|
+|若要使用本地创建的受 HSM 保护密钥，请执行以下操作： <br /><br />- 针对 Key Vault BYOK 列出的所有先决条件。 |请参阅 Azure 密钥保管库文档中的 [Prerequisites for BYOK](/azure/key-vault/key-vault-hsm-protected-keys#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br /> **注意**：若要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，那么除了满足 BYOK 先决条件以外，还必须拥有最低版本为 11.62 的 Thales 固件。|
 |如果包含租户密钥的密钥保管库使用 Azure Key Vault 虚拟网络服务终结点： <br /><br />- 允许受信任 Microsoft 服务绕过此防火墙。|有关详细信息，请参阅 [Azure Key Vault 虚拟网络服务终结点](/azure/key-vault/key-vault-overview-vnet-service-endpoints)。|
 |适用于 Windows PowerShell 的 Azure Rights Management 管理模块。|有关安装说明，请参阅[安装 AADRM PowerShell 模块](./install-powershell.md)。 <br /><br />如果之前已安装了此 Windows PowerShell 模块，请运行以下命令检查版本号是否高于或等于 **2.9.0.0**：`(Get-Module aadrm -ListAvailable).Version`|
 
@@ -146,7 +146,7 @@ ms.locfileid: "48907155"
 
 确保密钥长度为 2048 位（推荐）或 1024 位。 Azure 信息保护不支持其他的密钥长度。
 
-若要本地创建受 HSM 保护的密钥并将它传输到密钥保管库作为受 HSM 保护的密钥，请按照[如何为 Azure 密钥保管库生成和传输受 HSM 保护的密钥](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/)中的过程进行操作。
+若要本地创建受 HSM 保护的密钥并将它传输到密钥保管库作为受 HSM 保护的密钥，请按照[如何为 Azure 密钥保管库生成和传输受 HSM 保护的密钥](/azure/key-vault/key-vault-hsm-protected-keys)中的过程进行操作。
 
 为使 Azure 信息保护使用密钥，所有密钥保管库操作必须允许使用密钥。 这是默认配置，且操作将被加密、解密、包装、解包、签名和验证。 可以通过使用 [Get-AzureKeyVauktKey](/powershell/module/azurerm.keyvault/get-azurekeyvaultkey) 并验证“密钥”详细信息中返回的 key_ops 值来检查密钥所允许的操作。 如有必要，使用 [Update-AzureKeyVaultKey](/powershell/module/azurerm.keyvault/update-azurekeyvaultkey) 和 KeyOps 参数添加允许的操作。
 

@@ -4,18 +4,17 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 11/29/2018
 ms.topic: conceptual
 ms.service: information-protection
-ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d4b9419ee12dfef0db29604dc7a396eedd7225fc
-ms.sourcegitcommit: a547dee247e4961e8f7c1f08e39b03dff710a74c
+ms.openlocfilehash: b0dc98bb1c626737fb087c78691bb3a9e35a445e
+ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51628065"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52586003"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -42,36 +41,42 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
-## <a name="versions-later-than-137190"></a>高于 1.37.19.0 的版本
-
-如果客户端之一的版本高于 1.37.19.0，则这是用于测试和评估的预览内部版本。 
+## <a name="version-141510"></a>版本 1.41.51.0
 
 > [!TIP]
 > 由于你的标记是从 Office 365 安全与合规中心发布的，因此是否对评估 Azure 信息保护统一标记客户端感兴趣？ 请参阅 [Azure 信息保护统一标记客户端：版本发布信息](unifiedlabelingclient-version-release-history.md)。
 
-发布日期：2018 年 9 月 20 日
+**发布日期**：2018 年 11 月 27 日
+
+此版本包括 RMS 客户端的 MSIPC 1.0.3592.627 版本。
 
 **新功能：**
 
 - Microsoft Ignite 中宣布支持 Azure 信息保护分析功能的[中心报告](../reports-aip.md)。
 
-**其他信息**：
+- Excel 现在还支持使用不同颜色的[视觉标记](../configure-policy-markings.md)。
 
-仅适用于特定于扫描程序的预览版本：
+- 对于现有 S/MIME 部署，新增了以下高级客户端设置（预览版）：将标签配置为在 Outlook 中自动应用 S/MIME 保护。 [详细信息](client-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
 
-- 通过执行以下步骤安装扫描程序：
+- 新增了高级客户端设置，作为通过编辑注册表来阻止对[已断开连接计算机](client-admin-guide-customizations.md#support-for-disconnected-computers)显示 Azure 信息保护服务登录提示的替代方法。
+
+**修补程序**：
+
+- Azure 信息保护客户端不再对文件资源管理器（右键单击）和 PowerShell 命令排除 .msg、.rar 和 .zip 文件扩展名。 不过，扫描程序仍默认排除这些文件扩展名。 
+
+- 当你使用文件资源管理器（右键单击）时，Azure 信息保护客户端可以取消保护多个文件（选择多个文件或一个包含受保护文件的文件夹）。
+
+- 对于 Excel：
     
-    1. 安装客户端的当前正式发布版 (1.37.19.0)。
-    2. 安装并配置扫描程序。
-    3. 启动扫描程序。
-    4. 将 Azure 信息保护客户端升级到此预览版本。
-    5. 启动扫描程序。
-
-- 扫描大型数据集的已知问题：
+    - 如果你在编辑单元格时保存电子表格，系统现在会应用视觉标记。
     
-    使用此预览版本，逐渐增加要扫描的文件数并监视进度。 如果扫描程序状态报告它正在运行，但未对新文件进行扫描，请减少要扫描的文件数并重新启动扫描程序。 
+    - Excel 2010：如果使用共同创作[权限级别](../configure-usage-rights.md#rights-included-in-permissions-levels)保护电子表格，现在可以在右键单击文件并选择“分类和保护”时使用“删除标签”按钮。
 
-如果需要安装、配置和启动扫描程序的说明，请参阅[部署 Azure 信息保护扫描程序以自动分类和保护文件](../deploy-aip-scanner.md)。
+- 可以[从其他标记解决方案中删除页眉和页脚](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)的高级客户端设置现在支持自定义布局。
+
+**其他变化：**
+
+- 如果扫描程序的日程安排设置为“始终”，两次扫描之间现在有 30 秒延迟。
 
 ## <a name="version-137190"></a>版本 1.37.19.0
 
@@ -116,6 +121,8 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     - 如[编辑扫描程序的注册表](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner)一节中所述，现在可以通过在编辑注册表时使用 `*` 通配符来保护所有文件类型。
 
 - 使用快速访问工具栏上的“下一项”和“上一项”箭头图标查看电子邮件时，将显示每封电子邮件的正确标签。
+
+- 如果你使用文件资源管理器、PowerShell 或扫描程序进行分类和保护，系统不会删除或加密 Office 文档元数据。
 
 - 自定义权限支持包含撇号的收件人电子邮件地址。
 
@@ -198,9 +205,12 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 **新增功能**：
 
 - Azure 信息保护扫描程序：客户端附带的 PowerShell 模块包含新的 cmdlet，用于安装和配置扫描程序，以便可以发现本地数据存储上的文件并对其进行分类和保护。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-aip-scanner.md)。 
-- 现在可以通过在文本字符串中使用“If.App”变量语句并标识应用程序类型为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记。 [更多信息]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
+
+- 现在可以通过在文本字符串中使用“If.App”变量语句并标识应用程序类型为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记。 [详细信息](../configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
 - 支持[策略设置](../configure-policy-settings.md)“在 Office 应用中显示“信息保护”栏”。 此设置已关闭时，用户可以通过功能区上的“保护”按钮选择标签。
+
+- Word、Excel 和 PowerPoint 中的页眉和页脚现在支持多行文本。
 
 - 一个新的高级客户端设置（仍处于预览阶段），可以用于开启分类在后台继续运行。 在启用此设置时，对于 Office 应用，自动和建议分类持续在后台运行，而不是在保存文档时运行。 通过此行为更改，现在可以为存储在 SharePoint Online 中的文档应用自动和建议的分类。 [详细信息](client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)
 

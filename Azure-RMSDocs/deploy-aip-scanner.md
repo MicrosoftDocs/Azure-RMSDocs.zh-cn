@@ -4,18 +4,18 @@ description: 说明如何安装、配置和运行 Azure 信息保护扫描程序
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 9c5c07d09096d5d0f75c53fd03f85f5e29af1640
-ms.sourcegitcommit: 74d13c7162a0a94cda4762556a975a1d12433a13
+ms.openlocfilehash: 3e331c859c3808ceba2305224a6dd524b1a5ea6c
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281303"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386791"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -39,7 +39,7 @@ ms.locfileid: "52281303"
 
 ![Azure 信息保护扫描程序体系结构概述](./media/infoprotect-scanner.png)
 
-通过使用计算机上安装的 iFilters，扫描程序可检查 Windows 能编制索引的任何文件。 然后，为了确定是否需要标记文件，扫描程序会使用 Office 365 内置数据丢失防护 (DLP) 敏感信息类型和模式检测，或 Office 365 正则表达式模式。 因为扫描程序使用 Azure 信息保护客户端，所以它可以对相同[文件类型](./rms-client/client-admin-guide-file-types.md)进行分类和保护。
+通过使用计算机上安装的 iFilter，扫描程序可检查 Windows 能编制索引的任何文件。 然后，为了确定是否需要标记文件，扫描程序会使用 Office 365 内置数据丢失防护 (DLP) 敏感信息类型和模式检测，或 Office 365 正则表达式模式。 因为扫描程序使用 Azure 信息保护客户端，所以它可以对相同[文件类型](./rms-client/client-admin-guide-file-types.md)进行分类和保护。
 
 可仅在发现模式下运行扫描程序，利用报告确认对文件设置标签时会发生什么情况。 或者，可运行扫描程序自动应用标签。 还可以运行扫描程序来发现包含敏感信息类型的文件，无需配置条件标签来应用自动分类。
 
@@ -124,7 +124,7 @@ ms.locfileid: "52281303"
     Install-AIPScanner -SqlServerInstance <database name>
     ```
     
-    示例：
+    例如：
     
     对于默认实例：`Install-AIPScanner -SqlServerInstance SQLSERVER1`
     
@@ -192,7 +192,7 @@ ms.locfileid: "52281303"
     
         Start-AIPScan
     
-    或者，也可以从 Azure 门户的“Azure 信息保护”边栏选项卡启动此扫描程序（使用“扫描程序” > “节点(预览)” > \**<* 扫描程序节点*>**> **立即扫描**选项）。
+    或者，也可以在 Azure 门户内的“Azure 信息保护”边栏选项卡中启动扫描程序（使用“扫描程序” > “节点(预览版)” > “<扫描程序节点>”\**>“立即扫描”选项）。
 
 2. 运行以下命令，等待扫描程序完成其周期：
     
@@ -207,7 +207,7 @@ ms.locfileid: "52281303"
 3. 查看存储在 %localappdata%\Microsoft\MSIP\Scanner\Reports 中的报告，这些报告的文件格式为 .csv。 利用扫描程序默认配置，只有满足自动分类条件的文件才会被包括在这些报告中。
     
     > [!TIP]
-    > 当前在预览版状态下，在安装此扫描程序的预览版后，扫描程序会每 5 分钟向 Azure 信息保护发送一次此信息，以便你可以近乎实时地从 Azure 门户查看结果。 有关详细信息，请参阅 [Azure 信息保护报表](reports-aip.md)。 
+    > 扫描程序会每 5 分钟向 Azure 信息保护发送一次此信息，这样你就可以准实时地在 Azure 门户中查看结果。 有关详细信息，请参阅 [Azure 信息保护报表](reports-aip.md)。 
         
     如果结果与预期不符，建议对在 Azure 信息保护策略中指定的条件进行微调。 如果是这种情况，请重复步骤 1 到 3，直到可更改配置以应用分类和保护（可选）。 
 
@@ -242,39 +242,43 @@ ms.locfileid: "52281303"
 
 可以定义要扫描或不要扫描的文件类型列表，从而更改此行为。 在指定此列表并且不指定数据存储库时，该列表适用于未指定其自己列表的所有数据存储库。 若要指定此列表，请使用 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)。 指定文件类型列表后，可以使用 [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes) 向列表添加新文件类型，并能使用 [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes) 从列表中删除文件类型。
 
-然后扫描程序使用 Windows iFilter 扫描以下文件类型。 对于以下文件类型，将使用为标签指定的条件标记文档。
+然后，扫描程序使用 Windows IFilter 扫描以下文件类型。 对于以下文件类型，将使用为标签指定的条件标记文档。
 
 |应用程序类型|文件类型|
 |--------------------------------|-------------------------------------|
 |Word|.docx; .docm; .dotm; .dotx|
 |Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
 |PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
-|PDF |.pdf|
+|PDF |。pdf|
 |文本|.txt; .xml; .csv|
 
-默认情况下，只有 Office 文件类型受扫描程序保护，因此除非[编辑注册表](#editing-the-registry-for-the-scanner)以指定文件类型，否则 PDF 和文本文件不会受到保护：
+此外，如果你在运行扫描程序的计算机上配置 [Windows TIFF IFilter 设置](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)，扫描程序还可以使用光学字符识别 (OCR) 检查文件扩展名为 .tiff 的 TIFF 图像。
+
+默认情况下，只有 Office 文件类型受扫描程序保护，因此除非通过[编辑注册表](#editing-the-registry-for-the-scanner)来指定文件类型，否则 PDF 文档、文本文件和 TIFF 图像不会受到保护：
 
 - 如果未将 .pdf 文件类型添加到注册表：则将标记具有此文件扩展名的文件，但如果标签配置为保护，则不应用保护。
 
 - 如果未将 .txt、.xml 或 .csv 文件类型添加到注册表：则不会标记具有这些文件扩展名的文件，因为这些文件类型不支持仅分类。
 
-最后，对于剩余的文件类型，扫描程序将应用 Azure 信息保护策略中的默认标签，或应用为扫描程序配置的默认标签。
+- 如果在配置 Windows TIFF IFilter 后未将 .tiff 文件类型添加到注册表：虽然具有此文件扩展名的文件会得到标记，但即使标签配置为应用保护，系统也不会应用保护。
+
+最后，对于剩余的文件类型，扫描程序不会检查它们，但会应用 Azure 信息保护策略中的默认标签，或应用你为扫描程序配置的默认标签。
 
 |应用程序类型|文件类型|
 |--------------------------------|-------------------------------------|
-|项目|.mpp; .mpt|
-|发布服务器|.pub|
+|Project|.mpp; .mpt|
+|发布者|.pub|
 |Visio|.vsd; .vdw; .vst; .vss; .vsdx; .vsdm; .vssx; .vssm; .vstx; .vstm|
 |XPS|.xps; .oxps; .dwfx|
 |Solidworks|.sldprt; .slddrw; .sldasm|
 |Jpeg |.jpg; .jpeg; .jpe; .jif; .jfif; .jfi|
-|Png |.png|
+|Png |。png|
 |Gif|.gif|
 |位图|.bmp; .giff|
 |Tiff|.tif; .tiff|
 |Photoshop|.psdv|
 |DigitalNegative|.dng|
-|Pfile|.pfile|
+|Pfile|。pfile|
 
 如果扫描程序应用保护标签，默认只有 Office 文件类型受到保护。 可以更改此行为，让其他文件类型也受到保护。 不过，如果标签向文档应用常规保护，文件扩展名变成 .pfile。 其他文件类型也可以更改其文件扩展名。 此外，这些文件将变为只读，直到它们被已授权用户打开并以本机格式保存。
 
@@ -380,7 +384,7 @@ Azure 信息保护扫描程序支持两种备选方案，在任何一种方案�
     
     - 在使用[备选配置](#using-the-scanner-with-alternative-configurations)将默认标签应用于所有文件时，扫描程序可以更快地运行，因为扫描程序不检查文件内容。
     
-    - 在使用[备选配置](#using-the-scanner-with-alternative-configurations)标识所有自定义条件和已知敏感信息类型时，扫描程序的运行速度更为缓慢。
+    - 如果你使用[替换配置](#using-the-scanner-with-alternative-configurations)标识所有自定义条件和已知敏感信息类型，扫描程序的运行速度会更慢。
     
 
 ## <a name="list-of-cmdlets-for-the-scanner"></a>适用于扫描程序的 cmdlet 列表 

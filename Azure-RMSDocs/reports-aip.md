@@ -4,19 +4,19 @@ description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 85ca097a1808c2940ce534c7ce3d0542aaf3f27a
-ms.sourcegitcommit: 0f9e2ba05b61f8db08387576a697b8deff45fd36
+ms.openlocfilehash: 98403232311731b137719c613b2ce061a236b706
+ms.sourcegitcommit: ff77e4da1f7c7cf2262c208f8e58b85cfdb54903
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51611414"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52421005"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -44,6 +44,18 @@ ms.locfileid: "51611414"
     
     - 用于标记的应用程序
 
+- 在可以选择时间段的“活动日志”中：
+    
+    - 特定用户已执行的标记操作
+    
+    - 在特定设备中已执行的标记操作
+    
+    - 已访问特定标记文档的用户
+    
+    - 已对特定文件路径执行的标记操作
+    
+    - 特定应用程序已执行的标记操作，如文件资源管理器（右键单击）或 AzureInformationProtection PowerShell 模块
+
 - 在“数据发现”报表中：
 
     - 扫描的数据存储库上的文件
@@ -52,7 +64,7 @@ ms.locfileid: "51611414"
     
     - 包含已知类别的敏感信息（例如财务数据和个人信息）的文件，以及按这些类别分类的文件的位置
     
-报表使用 [Azure Log Analytics](/azure/log-analytics/log-analytics-overview) 将数据存储在你拥有的工作区中。 如果你熟悉查询语言，可以修改这些查询，并创建新报表和 Power BI 仪表板。 以下教程可能有助于你了解查询语言：[Analytics 门户入门](https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal)。 
+报表使用 [Azure Log Analytics](/azure/log-analytics/log-analytics-overview) 将数据存储在组织拥有的工作区中。 如果你熟悉查询语言，可以修改这些查询，并创建新报表和 Power BI 仪表板。 以下教程可能有助于你了解查询语言：[Analytics 门户入门](https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal)。 
 
 有关详细信息，请参阅博客文章：[Microsoft 信息保护中有关你的所有数据的数据发现、报告和分析](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)。
 
@@ -80,7 +92,7 @@ ms.locfileid: "51611414"
 
 - 客户端操作系统版本。
 
-此信息存储在由你拥有并且可以由具有此工作区访问权限的用户查看的 Azure Log Analytics 工作区中。 有关配置对你的工作区访问权限的信息，请参阅 Azure 文档中的[管理帐户和用户](/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor#manage-accounts-and-users)部分。
+此信息存储在组织拥有的 Azure Log Analytics 工作区中，并可供有权访问此工作区的用户查看。 有关配置对你的工作区访问权限的信息，请参阅 Azure 文档中的[管理帐户和用户](/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor#manage-accounts-and-users)部分。
 
 ## <a name="prerequisites-for-azure-information-protection-analytics"></a>Azure 信息保护分析的先决条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
@@ -88,7 +100,7 @@ ms.locfileid: "51611414"
 |要求|更多信息|
 |---------------|--------------------|
 |包含 Log Analytics 的 Azure 订阅|请参阅 [Azure Log Analytics 定价](https://azure.microsoft.com/pricing/details/log-analytics)页面。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
-|Azure 信息保护客户端的当前预览版。|如果你尚未安装客户端的当前预览版，可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载和安装它。|
+|Azure 信息保护客户端的当前正式版。|如果尚未安装此版本的客户端，可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载和安装它。|
 |对于“发现和风险”报表： <br /><br />- 你至少已部署其中一个 Azure 信息保护扫描程序的实例（当前预览版）|有关安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />如果从以前版本的扫描程序升级，请参阅[升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。|
 
 
@@ -115,6 +127,12 @@ ms.locfileid: "51611414"
 在“Azure 信息保护”边栏选项卡中，找到“仪表板”菜单选项，然后选择以下选项之一：
 
 - 使用情况报表（预览版）：使用此报表查看标签是如何使用的。 
+
+- **活动日志（预览版）**：使用此报表可查看用户执行的标记操作，以及在设备中和对文件路径执行的标记操作。
+    
+    此报表目前正在向租户推出，因此如果看不到它，请在几天后重试。 
+    
+    此报表有“列”选项，可用于显示默认显示信息之外的更多活动信息。 其中一列是“设备风险”，用于在相应应用程序与 Azure 信息保护集成时显示 Windows Defender 中的数据。
 
 - 数据发现（预览版）：使用此报表以查看有关扫描程序找到的文件的信息。
 

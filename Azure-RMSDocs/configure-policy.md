@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9813f71535de9058c2cb3382ae590ba5f8102fd1
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: d6870982e86c1740b2492dac720578d6c771666c
+ms.sourcegitcommit: aae91cee32c59277a6dfffab35177cd4247169e4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644788"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52450098"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -64,7 +64,7 @@ Azure 信息保护支持不同级别的订阅：
     - **全局管理员/公司管理员**
     
     > [!NOTE] 
-    > 如果你的团队已迁移到统一标记存储，要管理 Azure 门户中的标签，你的帐户还必须有权访问 Office 365 安全与合规中心。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
+    > 如果租户已迁移到统一标记存储，你的帐户还必须有权访问 Office 365 安全与合规中心，才能在 Azure 门户中管理标签。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
 
 ## <a name="to-access-the-azure-information-protection-blade-for-the-first-time"></a>首次访问“Azure 信息保护”边栏选项卡
 

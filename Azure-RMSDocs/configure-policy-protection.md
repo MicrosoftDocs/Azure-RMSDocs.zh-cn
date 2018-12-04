@@ -8,12 +8,12 @@ ms.date: 10/31/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 0ee7333baebd0a34f518ff9500df95ed57ed2b01
-ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
+ms.openlocfilehash: e16c50422268a05596ebc28e09d464959fd1e0b2
+ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751162"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52303917"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -107,9 +107,10 @@ ms.locfileid: "50751162"
         ###### <a name="more-information-about-add-any-authenticated-users"></a>详细了解如何**添加任何身份已验证的用户** 
         此设置不限制谁能访问标签保护的内容，同时仍加密内容，并提供限制内容使用方式（权限）和访问方式（到期和脱机访问）的选项。 不过，打开受保护内容的应用程序必须能够支持所使用的身份验证。 鉴于此，Google 等联合社交提供程序以及一次性密码身份验证应仅在你使用 Exchange Online 和 Office 365 邮件加密的新功能时，才只用于电子邮件。 可以将 Microsoft 帐户与 Azure 信息保护查看器和 Office 2016 即点即用结合使用。 
           
-        下面介绍了一些典型方案，适用于任何身份已验证的用户的设置：- 任何人都可以查看内容，但要限制内容的使用方式。 例如，不希望对内容执行编辑、复制或打印操作。  
-            - 无需限制谁能访问内容，但要能够跟踪谁打开和可能撤销了内容。  
-            - 要求必须加密内容（无论是静态还是传输中），但无需执行访问控制。
+        任何经过身份验证的用户设置的一些典型方案：
+        - 不介意谁查看内容，但希望限制内容的使用方式。 例如，不希望对内容执行编辑、复制或打印操作。
+        - 无需限制谁有权访问内容，但要能够跟踪谁打开和可能撤销了内容。
+        - 有要求必须加密内容（无论是静态还是传输中），但无需执行访问控制。
         
     - 选择“输入详细信息”以手动为单个用户或组（内部或外部）指定电子邮件地址。 或者，使用此选项，通过输入另一个组织的任何域名来指定该组织中的所有用户。 还可以通过输入社交提供程序程序的域名（例，如 gmail.com、hotmail.com 或 outlook.com），将此选项用于这些程序。
         

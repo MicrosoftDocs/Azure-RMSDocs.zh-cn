@@ -4,18 +4,18 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 2c0d391e2d00ec7d0bc09d98de3fe6f502f999a4
-ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
+ms.openlocfilehash: a4aa5b1a6375655b9b6ab20f092a7def47187225
+ms.sourcegitcommit: ff77e4da1f7c7cf2262c208f8e58b85cfdb54903
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51707736"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52421031"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -68,6 +68,24 @@ ms.locfileid: "51707736"
 因为 Azure 信息保护将永久性元数据用于分类（包括明文标签），所以此信息可供 DLP 解决方案和其他应用程序读取。 
 
 若要详细了解如何将此元数据与 Exchange Online 邮件流规则配合使用和相关示例，请参阅[配置 Azure 信息保护标签的 Exchange Online 邮件流规则](configure-exo-rules.md)。
+
+## <a name="can-i-create-a-document-template-that-automatically-includes-the-classification"></a>我能否创建自动包含分类的文档模板？
+
+是。 可以将标签配置为，[应用包含标签名称的页眉或页脚](configure-policy-markings.md)。 不过，如果这无法满足你的要求，可以创建包含所需格式设置的文档模板，并将分类添加为域代码。 
+
+例如，文档的页眉中可能有一个显示分类的表。 或者，对引用文档分类的简介使用具体的字词。
+
+若要在文档中添加此域代码，请执行以下操作：
+
+1. 标记并保存文档。 此操作新建可立即用于域代码的元数据字段。
+
+2. 在文档中，将光标置于要添加标签分类的位置，再在“插入”选项卡中依次选择“文本” > “文档部件” > “字段”。
+
+3. 在“字段”对话框中，选择“类别”下拉列表中的“文档信息”。 然后，选择“字段名称”下拉列表中的“DocProperty”。
+
+4. 在“属性”下拉列表中，依次选择“敏感度”和“确定”。
+
+此时，当前标签的分类显示在文档中，并且这个值会在你每次打开文档或使用模板时自动刷新。 因此，如果标签发生更改，那么对此域代码显示的分类也会在文档中自动更新。
 
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>对于电子邮件来说，Azure 信息保护分类与 Exchange 邮件分类有什么不同？
 

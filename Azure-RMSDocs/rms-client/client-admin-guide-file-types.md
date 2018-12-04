@@ -4,18 +4,18 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/10/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 23baab9ba6ab9a7b1d43dd1f5f12947f383d9d28
-ms.sourcegitcommit: d049c23ddd0bb7f4c4d40153c753f178b3a04d43
+ms.openlocfilehash: 9bc0bbcf6eb74d889e7cd31e6d7ff3f0b6320050
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072470"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386740"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -129,7 +129,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 ###### <a name="footnote-1"></a>脚注 1
 如果将 Azure 信息保护客户端配置为[使用 PDF 加密 ISO 标准保护 PDF 文件](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，则受保护 PDF 文档的文件扩展名仍为 .pdf。
 
-下一个表列出了其余的文件类型，这些文件类型通过 Azure 信息保护客户端支持本机保护，并且还可进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
+下一个表列出了其余的文件类型，这些文件类型通过 Azure 信息保护客户端支持本机保护，并且还可进行分类。 将把这些识别为用于 Microsoft Office 应用的文件类型。 这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
 
 对于这些文件，在文件受 Rights Management 服务保护后，文件扩展名仍保持不变。
 
@@ -192,7 +192,6 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 - 排除的文件类型：.lnk、.exe、.com、.cmd、.bat、.dll、.ini、.pst、.sca、.drm、.sys、.cpl、.inf、.drv、.dat、.tmp、.msg、.msp、.msi、.pdb、.jar
     
-    现在还排除了以下文件类型：.zip、.msg 和 .rar。 
 
 - **排除的文件夹**： 
     - Windows
@@ -202,7 +201,9 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 ### <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序从分类和保护中排除的文件类型
 
-默认情况下，扫描程序还会排除与 Azure 信息保护客户端相同的文件类型，此外还会排除 .rtf。 
+默认情况下，扫描程序还会排除 Azure 信息保护客户端支持的相同文件类型，要排除的例外情况如下：
+
+    - .rtf、.rar 和 .zip 也被排除
 
 使用以下 PowerShell cmdlet 时，可更改扫描程序检查文件时包含或排除的文件类型：
 

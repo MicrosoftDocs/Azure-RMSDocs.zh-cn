@@ -4,16 +4,16 @@ description: 当文档或电子邮件中分配一个标签时，可以选择几�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 11/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 1a2702d1cff5cdf62b8969829f0389c15b5c7fae
-ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
+ms.openlocfilehash: 23185d2d6b5b1bb14633647c345d0e58eeda3bdc
+ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52292603"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52585986"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -23,8 +23,6 @@ ms.locfileid: "52292603"
 
 有关这些视觉标记的其他信息：
 
-- 所有视觉标记均支持多行文本。
-
 - 页眉和页脚适用于 Word、Excel、PowerPoint 和 Outlook。
 
 - 水印适用于 Word、Excel 和 PowerPoint：
@@ -32,6 +30,8 @@ ms.locfileid: "52292603"
     - Excel：水印仅在页面布局和打印预览模式及打印后可见。
     
     - PowerPoint：水印应用于母板幻灯片，作为背景图像。 在“视图”选项卡上的“幻灯片母版”中，确保未选中“隐藏背景图形”复选框。
+
+- Word、Excel 和 PowerPoint 中的水印、页眉和页脚支持多行。 如果为 Outlook 中应用的标签页眉或页脚指定多行，这些行就会连接到一起。 在这种情况下，请考虑使用配置来[为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记](##setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)。
 
 - 最大字符串长度：
     
@@ -41,7 +41,7 @@ ms.locfileid: "52292603"
 
 - 你可以简单地指定文本字符串，也可以使用[变量](#using-variables-in-the-text-string)在应用页眉、页脚或水印时动态创建文本字符串。
 
-- Word、PowerPoint 和 Outlook 支持使用不同颜色的视觉标记。 对颜色进行了配置的视觉标记在 Excel 中将始终显示为黑色。
+- Word、PowerPoint 和 Outlook 支持使用不同颜色的视觉标记，现在 Excel 也不例外。
 
 - 视觉标记仅支持一种语言。
 
@@ -82,7 +82,7 @@ ms.locfileid: "52292603"
 
 你可以在文本字符串中为页眉、页脚或水印使用以下变量：
 
-- `${Item.Label}`，针对所选标签。 例如：Internal
+- `${Item.Label}`，针对所选标签。 例如：“常规”
 
 - `${Item.Name}`，针对文件名或电子邮件主题。 例如：JulySales.docx
 
@@ -96,6 +96,9 @@ ms.locfileid: "52292603"
 
 示例：如果为“常规”标签页脚指定字符串 `Document: ${item.name}  Classification: ${item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 **Document: project.docx  Classification: General**。
 
+>[!TIP]
+> 还使用[域代码将标签名称插入](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification)文档或模板中。
+
 ## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记
 
 默认情况下，指定的视觉标记将应用于 Word、Excel、PowerPoint 和 Outlook。 但是，在文本字符串中使用“If.App”变量语句并使用值 **Word**、**Excel**、**PowerPoint** 或 **Outlook** 标识应用程序类型时，可以为每个 Office 应用程序类型指定视觉标记。 还可以简化这些值，当想要在同一 If.App 语句中指定多个值时，这很有必要。
@@ -106,7 +109,7 @@ ms.locfileid: "52292603"
 
 此语句中的该语法区分大小写。
 
-示例：
+例如：
 
 - **仅为 Word 文档设置页眉文本：**
     
