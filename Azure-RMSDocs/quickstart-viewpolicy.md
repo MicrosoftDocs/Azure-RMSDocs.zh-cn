@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/05/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: adcaa1e0f15536d83a20c54017813d7e1546d860
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 351b026429a803bf1ac74cdddd547c73a29dfa18
+ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644703"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52953340"
 ---
 # <a name="quickstart-get-started-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始
 
@@ -24,7 +24,7 @@ ms.locfileid: "51644703"
 
 要完成本快速入门，需要具备以下条件：
 
-- 包含 Azure 信息保护计划 1 或计划 1 的订阅。
+- 包含 Azure 信息保护计划 1 或计划 2 的订阅。
     
     如果没有上述任一订阅，可以为组织创建一个[免费](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
 

@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: b9f60d0e8cc61a1d38b2992c0d430507bf494d18
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 75a13413cbbbb1a7ab653522fcec9606c002f7d8
+ms.sourcegitcommit: dce7b4f95c216afc9ec6524a686a02287e6bdcf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644637"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "53007492"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
@@ -35,7 +35,7 @@ ms.locfileid: "51644637"
 
 若要完成本教程，你需要：
 
-1. 包含 Azure 信息保护计划 2 的订阅。
+1. 包含 Azure 信息保护计划 1 或计划 2 的订阅。
     
     如果没有包含此计划的订阅，可以为组织创建一个[免费](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
 
