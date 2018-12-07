@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 218f20f7ad42b3f7b6e1a47a8c1f57556df612c3
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 9156f7af9cb7915595f911b6d0ff8fa70332d8d7
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150715"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023441"
 ---
 # <a name="protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共享应用程序保护设备上的文件（就地保护）。
 
@@ -24,7 +24,7 @@ ms.locfileid: "44150715"
 当你就地保护文件时，它将替换未受保护的原始文件。 然后，你可以将文件保留在原来位置、将其复制到其他文件夹或设备，或共享其所在的文件夹，同时该文件将仍处于受保护状态。 你还可以将受保护文件附加到电子邮件，虽然我们建议直接从文件资源管理器或 Office 应用程序中（请参阅[使用 Rights Management 共享应用程序保护通过电子邮件共享的文件](sharing-app-protect-by-email.md)）通过电子邮件共享受保护文件。
 
 > [!TIP]
-> 当你尝试保护文件时看到任何错误，请参阅 [适用于 Windows 的 Microsoft Rights Management 共享应用程序的常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)。
+> 当你尝试保护文件时看到任何错误，请参阅 [适用于 Windows 的 Microsoft Rights Management 共享应用程序的常见问题](https://go.microsoft.com/fwlink/?LinkId=303971)。
 
 ## <a name="to-protect-a-file-on-a-device-protect-in-place"></a>保护设备上的文件（就地保护）
 

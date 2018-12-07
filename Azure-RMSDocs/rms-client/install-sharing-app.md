@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 944d47d77efa06999e21ebe42b03a5b35733cc05
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 139198780f5a83b1336715dccf8540c2962cda00
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150086"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023278"
 ---
 # <a name="download-and-install-the-rights-management-sharing-application"></a>下载和安装 Rights Management 共享应用程序
 
@@ -28,7 +28,7 @@ ms.locfileid: "44150086"
 
 ## <a name="to-download-and-install-the-rights-management-sharing-application"></a>下载并安装权限管理共享应用程序
 
-1.  转到 Microsoft 网站上的 [Microsoft 权限管理](http://go.microsoft.com/fwlink/?LinkId=303970) 页。
+1.  转到 Microsoft 网站上的 [Microsoft 权限管理](https://go.microsoft.com/fwlink/?LinkId=303970) 页。
 
 2.  在“计算机”  部分中，单击“适用于 Windows 的 RMS 应用”  图标，并保存用于安装 Microsoft Rights Management 共享应用程序的 **Setup.exe** 文件。
 

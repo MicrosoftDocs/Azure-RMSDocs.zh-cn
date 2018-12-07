@@ -4,18 +4,18 @@ description: 面向管理员提供的有关在 Windows 计算机和移动设备�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 58b569fef27050388e94440af371e605cd3c1f91
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: e60ef4d683abe920072fdc9cf6a0b8e9537cf5ff
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149576"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023407"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：安装和配置客户端
 
@@ -32,7 +32,7 @@ Azure 信息保护客户端通过安装 Office 外接程序与 Office 应用程�
 > 若要为单台计算机快速安装和测试 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端用户指南](./rms-client/client-user-guide.md)中的[下载和安装 Azure 信息保护客户端](./rms-client/install-client-app.md)。
 
 ## <a name="the-azure-information-protection-client-for-ios-and-android-installation-and-management"></a>适用于 iOS 和 Android 的 Azure 信息保护客户端：安装和管理
-若要安装适用于这些常用移动平台的 Azure 信息保护客户端，可通过使用 [Microsoft Azure 信息保护页](http://go.microsoft.com/fwlink/?LinkId=303970)上的链接下载相关应用。 不需要配置。
+若要安装适用于这些常用移动平台的 Azure 信息保护客户端，可通过使用 [Microsoft Azure 信息保护页](https://go.microsoft.com/fwlink/?LinkId=303970)上的链接下载相关应用。 不需要配置。
 
 > [!NOTE]
 > 针对 Mac 计算机和 Windows Phone，可通过此页中的链接下载适用于移动设备的 RMS 共享应用。 这些设备当前不支持 Azure 信息保护客户端。

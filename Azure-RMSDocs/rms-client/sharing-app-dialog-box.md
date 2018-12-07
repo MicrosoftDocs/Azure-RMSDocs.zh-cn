@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 435432c1c759c040482096393c3a36cdee02691b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: f6e84919653d68fb4f09671b233ccdc31bf1a82f
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148488"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024274"
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>权限管理共享应用程序的的对话框选项
 
@@ -24,7 +24,7 @@ ms.locfileid: "44148488"
 使用此信息帮助你指定 RMS 共享应用程序“添加保护”  对话框或“共享保护”  对话框中的选项。 当你[保护要共享的文件](sharing-app-protect-by-email.md)或[就地保护文件](sharing-app-protect-in-place.md)以及选择自定义权限时，将看到此对话框。
 
 > [!IMPORTANT]
-> 如果你看到的选项与此处记录的不同，可能是没有安装最新版的共享应用程序。 你可以从 [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) 页面下载最新版本。
+> 如果你看到的选项与此处记录的不同，可能是没有安装最新版的共享应用程序。 你可以从 [Microsoft Rights Management](https://go.microsoft.com/fwlink/?LinkId=303970) 页面下载最新版本。
 > 
 > 你如何知道是否拥有最新版本？ 查找程序和功能中列出的 **Microsoft Rights Management 共享应用程序** ，查看相应的版本号。 若要查看并使用表中的选项，版本最低应是“1.0.1770.0” 。 你可以从下载页检查最新版本号。
 

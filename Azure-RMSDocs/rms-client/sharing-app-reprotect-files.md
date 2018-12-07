@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 283e3dc21997f455301fcd7a6edb3caf84f82572
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 9ca34cc149f86fa99174ea9792d05d7dfecc35dc
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150817"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023563"
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>更改受 Rights Management 保护的文件的权限
 
@@ -65,7 +65,7 @@ ms.locfileid: "44150817"
 >
 > 如果你的组织不使用 Azure 信息保护或 AD RMS，你可以申请会接受你的凭据的免费帐户，以便可以使用受 RMS 保护的文件：
 >
-> -   若要申请此帐户，请单击链接以申请 [个人 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
+> -   若要申请此帐户，请单击链接以申请 [个人 RMS](https://go.microsoft.com/fwlink/?LinkId=309469)。
 >
 >     注册时，使用公司的电子邮件地址，而不是个人电子邮件地址。 如果注册的原因是要使用电子邮件发送受保护附件，请使用与用于发送电子邮件相同的电子邮件地址。
 > -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../rms-for-individuals.md)。
