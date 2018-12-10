@@ -1,5 +1,5 @@
 ---
-title: 配置和管理 Azure 信息保护的模板
+title: 配置和管理 Azure 信息保护的模板 - AIP
 description: 通过 Azure 门户配置和管理 Rights Management 模板。
 author: cabailey
 ms.author: cabailey
@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6e6200849a5d62001317708e000fbb7da4a7ac6d
-ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
+ms.openlocfilehash: 1571939554e64459acd7ec0b7c32e9d40f7bd7eb
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52585969"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024308"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 

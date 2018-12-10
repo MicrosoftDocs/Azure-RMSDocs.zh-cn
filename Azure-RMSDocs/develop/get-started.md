@@ -12,12 +12,12 @@ ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6234cb19d58bcdad7ea34bad791abbbfa57706ed
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0503baead6ef46c7b09f4e1d8b055279c795c007
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147995"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023356"
 ---
 # <a name="get-started"></a>入门
 
@@ -27,12 +27,12 @@ ms.locfileid: "44147995"
 
   |RMS SDK 4.2|
   |---------------|
-  |[Android SDK](http://Go.Microsoft.Com/FWLink/p/?LinkId=404271)|
-  |[iOS SDK](http://Go.Microsoft.Com/FWLink/p/?LinkId=404272)|
+  |[Android SDK](https://go.microsoft.com/fwlink/p/?LinkId=404271)|
+  |[iOS SDK](https://go.microsoft.com/fwlink/p/?LinkId=404272)|
   |[Linux / C++ SDK](https://github.com/AzureAD/rms-sdk-for-cpp)，在 Github 上作为开放源代码项目提供|
-  |[OS X SDK](http://Go.Microsoft.Com/FWLink/p/?LinkId=404273)|
-  |[Windows Phone](http://go.microsoft.com/fwlink/p/?LinkId=524758)|
-  |[Windows 应用商店应用程序](http://go.microsoft.com/fwlink/p/?LinkID=526163)|
+  |[OS X SDK](https://go.microsoft.com/fwlink/p/?LinkId=404273)|
+  |[Windows Phone](https://go.microsoft.com/fwlink/p/?LinkId=524758)|
+  |[Windows 应用商店应用程序](https://go.microsoft.com/fwlink/p/?LinkID=526163)|
 
 2. **继续执行适用于你操作系统的设置指南**。
 

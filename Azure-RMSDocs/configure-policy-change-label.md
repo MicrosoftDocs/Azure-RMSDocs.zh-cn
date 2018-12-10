@@ -1,5 +1,5 @@
 ---
-title: 更改 Azure 信息保护标签
+title: 更改 Azure 信息保护标签 - AIP
 description: 可以更改或优化用户可以在信息保护栏看到的标签，方法是在 Azure 信息保护策略中对其进行配置。
 author: cabailey
 ms.author: cabailey
@@ -8,12 +8,12 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: bb6d9e6ea17f91652c04741ae7915a4fe431d695
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: b2323e4dc372ee7f1649230d06c7ecb58cd6943b
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170223"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023460"
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>如何更改或自定义 Azure 信息保护的现有标签
 

@@ -12,17 +12,17 @@ ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 2a239c802ae818a3b51eb0fb05f98f509f469e3c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 5a3fabd4d76dc86b52d0d8891b7032d1e017cf28
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146313"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023275"
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>操作说明：安装和配置 RMS 服务器并用其进行测试
 
 本主题介绍用于连接 RMS 服务器或 Azure RMS 以便测试启用权限的应用程序的步骤。
- 
+ 
 ## <a name="instructions"></a>说明
 
 ### <a name="step-1-setup-your-rms-server"></a>步骤 1：设置 RMS 服务器
@@ -38,7 +38,7 @@ ms.locfileid: "44146313"
 
     从 Windows Server 2008 开始，客户端和服务器组件包括在操作系统中。 可以从以下位置下载以前操作系统的服务器组件。
 
-    -   [RMS Server v1.0 SP2](http://go.microsoft.com/fwlink/p/?linkid=73722)
+    -   [RMS Server v1.0 SP2](https://go.microsoft.com/fwlink/p/?linkid=73722)
 
     若要在 Windows Server 2008 上配置服务器组件，必须安装 AD RMS 角色。 如果要针对以前的服务器操作系统开发应用程序，请在安装 RMS server v1.0 SP2 之后，但是设置 RMS 服务之前配置注册表。
 
@@ -48,7 +48,7 @@ ms.locfileid: "44146313"
 
     -   **自动注册**
 
-        从 Windows Server 2008 开始，你可以在相应的层次结构中注册 RMS 服务器而不向 Microsoft 发送信息。 安装 RMS 角色时，还会安装自动注册证书和私钥。 这些用于自动创建服务器许可发放方证书。 不会与 Microsoft 交换任何信息。
+        从 Windows Server 2008 开始，可以在相应的层次结构中注册 RMS 服务器而不向 Microsoft 发送信息。 安装 RMS 角色时，还会安装自动注册证书和私钥。 这些用于自动创建服务器许可发放方证书。 不会与 Microsoft 交换任何信息。
 
     -   **联机注册**
 

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c20ead2b01b2a37d63bbf3b2b0295f37c9421fdd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: d0efb37ee0d424593b9cdb4c2690088e11afc29d
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151684"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024053"
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>使用 RMS 共享应用程序跟踪和撤销文档
 
@@ -37,7 +37,7 @@ ms.locfileid: "44151684"
     
     注意：如果是全局管理员，但看不到此图标，则是因为你尚未分享任何文档。 在这种情况下，请使用以下 URL 访问文档跟踪站点： https://portal.azurerms.com/#/admin
 
-- 如有疑问或想要提供有关文档跟踪站点的反馈：单击“帮助”图标访问 [文档跟踪常见问题](http://go.microsoft.com/fwlink/?LinkId=523977)。
+- 如有疑问或想要提供有关文档跟踪站点的反馈：单击“帮助”图标访问 [文档跟踪常见问题](https://go.microsoft.com/fwlink/?LinkId=523977)。
 
 ## <a name="using-office-to-access-the-document-tracking-site"></a>使用 Office 访问文档跟踪站点
 
@@ -67,9 +67,9 @@ ms.locfileid: "44151684"
 
 #### <a name="using-a-web-browser-to-access-the-doc-tracking-site"></a>使用 Web 浏览器访问文档跟踪站点
 
-- 使用受支持的浏览器转到 [文档跟踪站点](http://go.microsoft.com/fwlink/?LinkId=529562)。
+- 使用受支持的浏览器转到 [文档跟踪站点](https://go.microsoft.com/fwlink/?LinkId=529562)。
 
-    支持的浏览器：建议使用最低版本为 10 的 Internet Explorer，但你可以通过以下任一浏览器使用文档跟踪站点：
+    支持的浏览器：建议使用最低版本为 10 的 Internet Explorer，但可以通过以下任一浏览器使用文档跟踪站点：
 
     -   Internet Explorer：最低版本 10
 

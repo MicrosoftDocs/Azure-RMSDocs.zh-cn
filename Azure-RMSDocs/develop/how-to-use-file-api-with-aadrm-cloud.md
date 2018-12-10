@@ -12,19 +12,18 @@ ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8c047aaf0d78c9389720345551b9c19038b82ad1
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 7f9965628cce150c8bb53e02b206c4291677f8bc
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149661"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023459"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>操作说明：使服务应用程序可以使用基于云的 RMS
 
 本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。 有关详细信息，请参阅 [Azure Rights Management 入门](https://technet.microsoft.com/library/jj585016.aspx)。
 
-**重要说明**  
-为了通过 Azure RMS 使用 Rights Management Services SDK 2.1 服务应用程序，你需要创建自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](../requirements.md)
+**重要说明**  ：为了通过 Azure RMS 使用 Rights Management Services SDK 2.1 服务应用程序，你需要创建自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](../requirements.md)
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -41,9 +40,9 @@ ms.locfileid: "44149661"
         IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
 
-  **注意**  有关详细信息，请参阅 [设置 API 安全模式](setting-the-api-security-mode-api-mode.md)
+  **注意**  有关详细信息，请参阅[设置 API 安全模式](setting-the-api-security-mode-api-mode.md)
 
-     
+     
 -   以下步骤是用于创建 [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) 结构的实例的设置，其中 *pcCredential* ([IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx)) 成员使用来自 Azure Rights Management 服务的连接信息进行填充。
 -   创建 [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 结构的实例时，使用来自对称密钥服务标识创建的信息（请参阅本主题前面列出的先决条件）来设置 *wszServicePrincipal*、*wszBposTenantId* 和 *cbKey* 参数。
 
@@ -53,10 +52,10 @@ ms.locfileid: "44149661"
 
 ### <a name="instructions-to-generate-a-symmetric-key"></a>用于生成对称密钥的说明
 
--   安装 [Microsoft Online 登录助手](http://go.microsoft.com/fwlink/p/?LinkID=286152)
+-   安装 [Microsoft Online 登录助手](https://go.microsoft.com/fwlink/p/?LinkID=286152)
 -   安装 [Azure AD Powershell 模块](https://bposast.vo.msecnd.net/MSOPMW/8073.4/amd64/AdministrationConfig-en.msi)。
 
-**注意** - 必须是租户管理员才能使用 Powershell cmdlet。
+**注意**  - 必须是租户管理员才能使用 Powershell cmdlet。
 
 - 启动 Powershell 并运行以下命令以生成密钥
 
@@ -104,7 +103,7 @@ ms.locfileid: "44149661"
 
 -   创建 [IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx) 结构的实例（包含 [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 实例）。
 
-**注意** - *connectionInfo* 成员使用来自前面的 `Get-AadrmConfiguration` 调用的 URL 进行设置，在此处使用这些字段名称进行注明。
+**注意** - connectionInfo 成员使用来自前面的 `Get-AadrmConfiguration` 调用的 URL 进行设置，在此处使用这些字段名称进行注明。
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};

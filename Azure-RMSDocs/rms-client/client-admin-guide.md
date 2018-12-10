@@ -4,18 +4,18 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/12/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b5eccdd62d828bc5104815746458d4c7036594fd
-ms.sourcegitcommit: 39403f0e9fe5912d467b119ed45da94bccd1cc80
+ms.openlocfilehash: be6477edae471bddbcf3a5d4e6c7bb0cfcec1e4e
+ms.sourcegitcommit: 4f22874c3c2fb9632d57932148664c40b3907a78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100625"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52831249"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -198,15 +198,9 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>升级 Azure 信息保护扫描程序
 
-若要升级 Azure 信息保护扫描程序，请安装最新版 Azure 信息保护客户端。 然后执行以下某个一次性操作。 执行此操作后，无需重新扫描已扫描的文件。
+若要升级 Azure 信息保护扫描程序，请安装最新版 Azure 信息保护客户端。 然后执行以下一次性操作。 执行此操作后，无需重新扫描已扫描的文件。
 
-对于当前 GA 版本： 
-
-- 使用 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) 重新运行扫描程序安装命令。 扫描程序和存储库的配置设置将会得到保留。 重新安装扫描程序会向扫描程序服务帐户授予对扫描程序数据库的删除权限，这是报表所必需的权限。
-
-对于预览版本： 
-
-- 从通用版本 1.29.5.0 或更低版本升级 Azure 信息保护客户端后，运行 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)。 扫描程序和存储库的配置设置将会得到保留。 需要运行此 cmdlet 以更新扫描程序的数据库架构，如果需要，还应为扫描程序服务帐户授予针对扫描程序数据库的删除权限。 
+- 升级 Azure 信息保护客户端后，运行 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)。 扫描程序和存储库的配置设置将会得到保留。 需要运行此 cmdlet 以更新扫描程序的数据库架构，如果需要，还应为扫描程序服务帐户授予针对扫描程序数据库的删除权限。 
     
     在运行此更新 cmdlet 之前，扫描程序不会运行，通常会在 Windows 事件日志中看到事件 ID 1000，并显示以下错误消息：无效的对象名称“ScannerStatus”。
 

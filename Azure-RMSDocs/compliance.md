@@ -4,18 +4,18 @@ description: Azure 信息保护的支持信息，包括法律、符合性和 SLA
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/12/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0269888af84f4f1b17ce5523bb5bbc8648d0d1a7
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 96746e39d564c87471205fa442976a3904ddf992
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026683"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023784"
 ---
 # <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Azure 信息保护的符合性和支持信息
 
@@ -63,7 +63,7 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 ## <a name="documentation"></a>文档
 
-- Azure Active Directory 文档：[Azure Active Directory](/active-directory/)
+- Azure Active Directory 文档：[Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
 
-- Office 365 库：[Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
+- Office 365 企业版文档：[Office 365](https://docs.microsoft.com/en-us/Office365/Enterprise/)
 

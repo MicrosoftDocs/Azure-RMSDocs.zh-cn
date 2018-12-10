@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 959d0b8fb8d36c7a3a9205140b33a2e71dce2d7a
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 7be58d201ddd24497ff79935554c2a68efd04a3f
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149372"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024427"
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>保护级别 – 本机和常规
 
@@ -24,7 +24,7 @@ ms.locfileid: "44149372"
 > [!IMPORTANT]
 > **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 
 
-如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 [Rights Management 共享应用程序用户指南](sharing-app-user-guide.md)或[适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题](http://go.microsoft.com/fwlink/?LinkId=303971)以外的更多技术信息，请使用以下信息。
+如果你负责企业网络上的 Microsoft Rights Management 共享应用程序，或者如果你希望获取除了 [Rights Management 共享应用程序用户指南](sharing-app-user-guide.md)或[适用于 Windows 的 Microsoft Rights Management 共享应用程序常见问题](https://go.microsoft.com/fwlink/?LinkId=303971)以外的更多技术信息，请使用以下信息。
 
 RMS 共享应用程序最适合与 Azure 信息保护配合使用，因为这种部署配置支持向另一组织中的用户发送受保护的附件，并提供电子邮件通知、文档跟踪和撤消等选项。 不过，它也能够与本地版本的 AD RMS 配合使用，只是存在一些限制。 有关 Azure 信息保护和 AD RMS 所支持功能的全面比较，请参阅[比较 Azure信息保护和 AD RMS](../compare-on-premise.md)。 如果安装了 AD RMS，想迁移到 Azure 信息保护，请参阅[从 AD RMS 迁移到 Azure 信息保护](../migrate-from-ad-rms-to-azure-rms.md)。
 
@@ -33,7 +33,7 @@ RMS 共享应用程序最适合与 Azure 信息保护配合使用，因为这种
 ## <a name="automatic-deployment-for-the-microsoft-rights-management-sharing-application"></a>自动部署 Microsoft Rights Management 共享应用程序
 Windows 版 RMS 共享应用程序支持脚本化安装，因此适合企业部署。
 
-安装的唯一先决条件是，计算机运行最低版本的 Windows 7 Service Pack 1 且已安装 Microsoft Framework（最低版本为 4.0）。 如果你需要安装 Microsoft.NET Framework 4.0，可以 [从 Microsoft 下载中心下载并安装](http://www.microsoft.com/download/details.aspx?id=17718)。
+安装的唯一先决条件是，计算机运行最低版本的 Windows 7 Service Pack 1 且已安装 Microsoft Framework（最低版本为 4.0）。 如果你需要安装 Microsoft.NET Framework 4.0，可以[从 Microsoft 下载中心下载并安装](http://www.microsoft.com/download/details.aspx?id=17718)。
 
 ### <a name="to-download-the-rms-sharing-application-for-automatic-deployment"></a>下载要自动部署的 RMS 共享应用程序
 
@@ -48,7 +48,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 |描述|部署方案|
 |---------------|-----------------------|
 |Microsoft Online 登录助手|Office 2010 和 Azure 信息保护<br /><br />Office 2013 和 Azure 信息保护，如果尚未安装 [2015 年 6 月 9 日发布的 Office 2013 更新](https://support.microsoft.com/kb/3054853) (KB3054853)|
-|Office 修补程序 (KB 2596501)|Office 2010 和 Azure 信息保护<br /><br />Office 2010 和 Active Directory RMS|
+|适用于 Office 的修补程序 (KB 2596501)|Office 2010 和 Azure 信息保护<br /><br />Office 2010 和 Active Directory RMS|
 |用于使 AD RMS 客户端 1.0 与 Azure 信息保护协同工作的修补程序 (KB 2843630)|Office 2010 和 Azure 信息保护<br /><br />Office 2010 和 Active Directory RMS|
 |AD RMS 客户端和 RMS 共享应用程序|Office 2016 或 Office 2013，以及 Azure 信息保护或 Active Directory RMS<br /><br />Office 2010 和 Azure 信息保护<br /><br />Office 2010 和 Active Directory RMS<br /><br />仅 RMS 共享应用程序和 Office 加载项|
 |功能区的 Office 加载项|Office 2016 或 Office 2013，以及 Azure 信息保护或 Active Directory RMS<br /><br />Office 2010 和 Azure 信息保护<br /><br />Office 2010 和 Active Directory RMS<br /><br />仅 RMS 共享应用程序和 Office 加载项|
@@ -76,7 +76,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 若要针对每个步骤完成安装，必须重新启动计算机。 可以使用类似于 **shutdown /i** 的命令实现自动重新启动。
 
-### <a name="to-deploy-the-rms-sharing-application-for-office-2016-or-office-2013-and-azure-information-protection-or-active-directory-rms"></a>为 Office 2016 或 Office 2013 和 Azure 信息保护或 Active Directory RMS 部署 RMS 共享应用程序
+### <a name="to-deploy-the-rms-sharing-application-for-office2016-or-office-2013-and-azure-information-protection-or-active-directory-rms"></a>为 Office 2016 或 Office 2013 和 Azure 信息保护或 Active Directory RMS 部署 RMS 共享应用程序
 
 -   在要安装 RMS 共享应用程序及相关组件的每台计算机上，使用提升的权限运行以下命令：
 
@@ -131,7 +131,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 若要验证是否成功，请参阅本文中的[验证安装是否成功](#verifying-installation-success)部分。
 
-### <a name="to-deploy-the-rms-sharing-application-for-office-2010-and-active-directory-rms"></a>为 Office 2010 和 Active Directory RMS 部署 RMS 共享应用程序
+### <a name="to-deploy-the-rms-sharing-application-for-office2010-and-active-directoryrms"></a>为 Office 2010 和 Active Directory RMS 部署 RMS 共享应用程序
 
 1.  在要安装 RMS 共享应用程序的每台计算机上，使用提升的权限运行以下命令：
 
@@ -211,7 +211,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 ## <a name="verifying-installation-success"></a>验证安装是否成功
 可以使用安装日志文件来验证安装是否成功。
 
-### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office-2016-or-office-2013-and-azure-information-protection-or-active-directory-rms"></a>验证是否为 Office 2016 或 Office 2013 和 Azure 信息保护或 Active Directory RMS 成功安装 RMS 共享应用程序
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office2016-or-office-2013-and-azure-information-protection-or-active-directory-rms"></a>验证是否为 Office 2016 或 Office 2013 和 Azure 信息保护或 Active Directory RMS 成功安装 RMS 共享应用程序
 
 -   若要验证 Setup.exe 命令是否成功运行，请在每台计算机上的 *%temp%\RMS_installer_&lt;guid&gt;* 文件夹中搜索安装日志文件 **RMInstaller.log**，然后查看退出代码。
 
@@ -219,7 +219,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     示例日志文件名：**C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0\RMInstaller.log**
 
-### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office-2010-and-azure-information-protection"></a>验证是否为 Office 2010 和 Azure 信息保护成功安装 RMS 共享应用程序
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office2010-and-azure-information-protection"></a>验证是否为 Office 2010 和 Azure 信息保护成功安装 RMS 共享应用程序
 
 1.  若要验证 Setup.exe 命令是否成功运行，请在每台计算机上的 *%temp%\RMS_installer_&lt;guid&gt;* 文件夹中搜索安装日志文件 **RMInstaller.log**，然后查看退出代码。
 
@@ -293,7 +293,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 ## <a name="uninstall-commands"></a>卸载命令
 并非这些部署所需的所有安装命令都支持卸载命令。 你可以卸载 AD RMS 客户端和共享应用程序，也可以卸载 Office 加载项。 请使用以下命令卸载这些元素。
 
-### <a name="to-uninstall-the-ad-rms-client-and-the-rms-sharing-application"></a>卸载 AD RMS 客户端和 RMS 共享应用程序
+### <a name="to-uninstall-the-adrms-client-and-the-rms-sharing-application"></a>卸载 AD RMS 客户端和 RMS 共享应用程序
 
 -   使用以下命令：
 

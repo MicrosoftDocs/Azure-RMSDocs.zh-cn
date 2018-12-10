@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ff3e9f93de5a46ec12ae001d798ec0292da8526a
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 79dbf817086aa3f4b7919d87136008222a0bb1a6
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148998"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024257"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -51,11 +51,11 @@ ms.locfileid: "44148998"
     
     - 以下版本的 AD RMS 支持到 Azure 信息保护的迁移：
     
-        - Windows Server 2008 R2 (x64)
+        - Windows Server 2008 R2 (x64)
         
         - Windows Server 2012 (x64)
         
-        - Windows Server 2012 R2 (x64)
+        - Windows Server 2012 R2 (x64)
         
         - Windows Server 2016 (x64)
         
@@ -86,7 +86,7 @@ ms.locfileid: "44148998"
 
     请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
 
-- **如果你已使用过 Exchange Server 的信息权限管理 (IRM) 功能**（例如，传输规则和 Outlook Web Access）或者带 AD RMS 的 SharePoint Server：
+- 如果你已使用过 Exchange Server 的信息权限管理 (IRM) 功能（例如，传输规则和 Outlook Web Access）或者带 AD RMS 的 SharePoint Server：
 
     - 为这些服务器上未提供 IRM 的较短期间拟定计划
  
@@ -203,7 +203,7 @@ ms.locfileid: "44148998"
 
 - **步骤 11：完成客户端迁移任务**
 
-    如果部署了[移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)以支持移动设备（如 iOS 手机和 iPad、Android 手机和平板电脑、Windows Phone 以及 Mac 计算机），则必须删除 DNS 中重定向这些客户端的 SRV 记录才能使用 AD RMS。 
+    如果部署了[移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)以支持移动设备（如 iOS 手机和 iPad、Android 手机和平板电脑、Windows Phone 以及 Mac 计算机），则必须删除 DNS 中重定向这些客户端的 SRV 记录才能使用 AD RMS。 
     
     不再需要准备阶段配置的载入控件。 但是，如果因选择同时迁移所有内容（而非分步迁移）而未使用载入控件，可跳过有关删除载入控件的说明。
     

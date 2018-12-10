@@ -1,5 +1,5 @@
 ---
-title: 快速入门 - 为特定用户创建新的 Azure 信息保护标签
+title: 快速入门 - 为特定用户创建新的 Azure 信息保护标签 - AIP
 description: 使用范围策略，为特定用户创建和配置可分类文档和电子邮件的新标签。
 author: cabailey
 ms.author: cabailey
@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/14/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: dca90c7635702226e7414947aad6f3d89cf91efd
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 1a8af09681411e49936c067c6161376c9d4f9f16
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644636"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023561"
 ---
 # <a name="quickstart-create-a-new-azure-information-protection-label-for-specific-users"></a>快速入门：为特定用户创建新的 Azure 信息保护标签
 

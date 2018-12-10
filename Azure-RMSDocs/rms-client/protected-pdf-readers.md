@@ -5,19 +5,19 @@ keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/13/2018
+ms.date: 12/04/2018
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
 ms.reviewer: kartikka
 ms.suite: ems
-ms.openlocfilehash: ab3d141394a9a042a8a3e15e35d1daffab20ad98
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: d4421caa4ec6846456c12aa831644e957c5b4fd9
+ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170222"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861194"
 ---
 # <a name="supported-pdf-readers-for-microsoft-information-protection"></a>适用于 Microsoft 信息保护的受支持的 PDF 阅读器
 
@@ -33,7 +33,7 @@ Microsoft 和 Adobe 之间的协作使得你在处理经过分类和受保护（
 
 - 对 PDF 加密的 ISO 标准的支持。
     
-    此受保护的 PDF 文件格式必须[由管理员启用](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)。 设置此配置后，文件扩展名仍然为 .pdf，不会更改为 .ppdf。
+    如今，除非此功能被[管理员禁用](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，否则 Azure 信息保护客户端的最新版本会默认为启用该受保护的 PDF 文件格式。
 
 有关详细信息，请参阅以下博客文章：[自 10 月起，将 Adobe Acrobat Reader 用于受 Microsoft 信息保护保护的 PDF](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738)
 
@@ -56,6 +56,6 @@ Microsoft 和 Adobe 之间的协作使得你在处理经过分类和受保护（
 
 |操作系统|受支持的阅读器|
 |----------------|-----------------------------------|
-|Windows 10 及以前版本<br />通过 Windows 7 Service Pack 1|Azure 信息保护查看器<br /><br />Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 共享应用程序|
+|Windows 10 及以前版本<br />通过 Windows 7 Service Pack 1|Azure 信息保护查看器<br /><br />Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 共享应用程序|
 |Android|Azure 信息保护应用<br /><br />具有 RMS 的 Foxit MobilePDF<br /><br />适用于 Android 的 GigaTrust 应用|
 |iOS|Azure 信息保护应用<br /><br />具有 RMS 的 Foxit MobilePDF<br /><br />TITUS 文档|

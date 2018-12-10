@@ -4,18 +4,18 @@ description: 说明如何安装、配置和运行 Azure 信息保护扫描程序
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/27/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3e331c859c3808ceba2305224a6dd524b1a5ea6c
-ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
+ms.openlocfilehash: d29203359bcfdda09d7792f1f65a7c85723ee18f
+ms.sourcegitcommit: c1c34529f10dd7c1545ca37be9629b52be87e33e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386791"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52731143"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -252,7 +252,7 @@ ms.locfileid: "52386791"
 |PDF |。pdf|
 |文本|.txt; .xml; .csv|
 
-此外，如果你在运行扫描程序的计算机上配置 [Windows TIFF IFilter 设置](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)，扫描程序还可以使用光学字符识别 (OCR) 检查文件扩展名为 .tiff 的 TIFF 图像。
+此外，如果你在运行扫描程序的计算机上安装 Windows TIFF IFilter 功能并配置 [Windows TIFF IFilter 设置](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)，扫描程序还可以使用光学字符识别 (OCR) 检查文件扩展名为 .tiff 的 TIFF 图像。
 
 默认情况下，只有 Office 文件类型受扫描程序保护，因此除非通过[编辑注册表](#editing-the-registry-for-the-scanner)来指定文件类型，否则 PDF 文档、文本文件和 TIFF 图像不会受到保护：
 

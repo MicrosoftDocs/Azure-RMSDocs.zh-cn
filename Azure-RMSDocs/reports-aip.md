@@ -4,19 +4,19 @@ description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/27/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 98403232311731b137719c613b2ce061a236b706
-ms.sourcegitcommit: ff77e4da1f7c7cf2262c208f8e58b85cfdb54903
+ms.openlocfilehash: 8dc53c6bad6c8f68ac5786afb0600cafb6398765
+ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52421005"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52953306"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -25,10 +25,13 @@ ms.locfileid: "52421005"
 > [!NOTE]
 > 此功能目前处于预览状态，随时可能更改。 当此功能正式发布后，在此预览期间收集的任何数据可能不再受支持。
 
+下表中的 PDF 阅读器支持具有 .ppdf 文件扩展名的受保护的 PDF 文档和具有 .pdf 文件扩展名的旧格式。 此外：
 
-为中心报告使用 Azure 信息保护分析，以跟踪 Azure 信息保护标签的采用，并监视用户对标记的文档和电子邮件的访问，以及对其分类所做的任何更改。 此外，还可以标识包含敏感信息的文档（必须对这些文档进行保护）。
+- 下表中的 PDF 阅读器支持具有 .ppdf 文件扩展名的受保护的 PDF 文档和具有 .pdf 文件扩展名的旧格式。 
 
-当前，你看到的数据是从 Azure 信息保护客户端和 Azure 信息保护扫描程序聚合的。
+- 标识包含必须保护的敏感信息的文档。
+
+当前，你看到的数据是从 Azure 信息保护客户端和 Azure 信息保护扫描程序，以及运行 [Windows Defender 高级威胁防护 (Windows Defender ATP)](/windows/security/threat-protection/windows-defender-atp/overview) 的 Windows 计算机聚合的。
 
 例如，你将能够看到以下数据：
 
@@ -58,7 +61,7 @@ ms.locfileid: "52421005"
 
 - 在“数据发现”报表中：
 
-    - 扫描的数据存储库上的文件
+    - 扫描的数据存储库或 Windows 10 计算机上的文件
     
     - 被标记和被保护的文件，以及按标签分类的文件的位置
     
@@ -101,8 +104,7 @@ ms.locfileid: "52421005"
 |---------------|--------------------|
 |包含 Log Analytics 的 Azure 订阅|请参阅 [Azure Log Analytics 定价](https://azure.microsoft.com/pricing/details/log-analytics)页面。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
 |Azure 信息保护客户端的当前正式版。|如果尚未安装此版本的客户端，可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载和安装它。|
-|对于“发现和风险”报表： <br /><br />- 你至少已部署其中一个 Azure 信息保护扫描程序的实例（当前预览版）|有关安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />如果从以前版本的扫描程序升级，请参阅[升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。|
-
+|对于“发现和风险”报表： <br /><br />- 若要显示本地数据存储中的数据，你至少已部署其中一个 Azure 信息保护扫描程序的实例（当前 GA 版） <br /><br />- 若要显示 Windows 10 计算机中的数据，这些计算机必须为最低版本 1809，你在使用 Windows Defender 高级威胁防护 (Windows Defender ATP)，并且你已从 Windows Defender 安全中心启用 Azure 信息保护集成功能|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 如果从以前版本的扫描程序升级，请参阅[升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。<br /><br />有关从 Windows Defender 安全中心配置和使用 Azure 信息保护集成功能的信息，请参阅 [Windows 中的信息保护概述](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview)。|
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>配置报表的 Log Analytics 工作区
 
@@ -130,11 +132,11 @@ ms.locfileid: "52421005"
 
 - **活动日志（预览版）**：使用此报表可查看用户执行的标记操作，以及在设备中和对文件路径执行的标记操作。
     
-    此报表目前正在向租户推出，因此如果看不到它，请在几天后重试。 
+    此报表目前正在向租户推出，因此如果看不到它，请在几天后重试。
     
-    此报表有“列”选项，可用于显示默认显示信息之外的更多活动信息。 其中一列是“设备风险”，用于在相应应用程序与 Azure 信息保护集成时显示 Windows Defender 中的数据。
+    此报表有“列”选项，可用于显示默认显示信息之外的更多活动信息。
 
-- 数据发现（预览版）：使用此报表以查看有关扫描程序找到的文件的信息。
+- **数据发现（预览版）**：使用此报表查看扫描程序或 Windows Defender ATP 找到的文件的相关信息。
 
 ## <a name="how-to-modify-the-reports"></a>如何修改报表
 

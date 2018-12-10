@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 27de9df7062f6072e7e15b66759f540d5ce81dba
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 926a6d34b34b486577f6a8481010d058e465b3e8
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148046"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023985"
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>查看和使用受权限管理保护的文件
 
@@ -28,7 +28,7 @@ ms.locfileid: "44148046"
 >
 > 如果你的组织不使用 Azure 信息保护或 AD RMS，你可以申请会接受你的凭据的免费帐户，以便可以使用 RMS 打开受保护文件：
 >
-> -   若要申请此帐户，请单击链接以申请 [个人 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
+> -   若要申请此帐户，请单击链接以申请 [个人 RMS](https://go.microsoft.com/fwlink/?LinkId=309469)。
 >
 >     注册时，使用公司的电子邮件地址，而不是个人电子邮件地址。 如果注册的原因是要使用电子邮件发送受保护附件，请使用与用于发送电子邮件相同的电子邮件地址。
 > -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../rms-for-individuals.md)。

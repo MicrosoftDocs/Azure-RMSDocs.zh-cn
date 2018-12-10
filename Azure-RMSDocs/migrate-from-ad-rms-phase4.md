@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 84bd09aef5390c9ff8eee299febf41e91c2cb606
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 6ea5a80ad9d08873f817f21a9f6ac4d059618af7
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149474"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024036"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
@@ -37,7 +37,7 @@ ms.locfileid: "44149474"
     
     此 DNS 记录就位后，使用 Outlook 网页版和移动电子邮件客户端的用户便能在这些应用中查看受 AD RMS 保护的电子邮件，并且 Exchange 可以使用你从 AD RMS 导入的密钥，对已受 AD RMS 保护的内容执行解密、编制索引、日志记录和保护操作。  
 
-2. 运行 Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) 命令。 如需运行此命令的帮助，请参阅 [Exchange Online：IRM 配置](/..deploy-use/configure-office365.md#exchange-online-irm-configuration)中的分步说明。
+2. 运行 Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) 命令。 如需运行此命令的帮助，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchange-online-irm-configuration)中的分步说明。
     
     在输出中，检查“AzureRMSLicensingEnabled”是否设置为“True”：
     

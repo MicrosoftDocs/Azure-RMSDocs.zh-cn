@@ -1,6 +1,6 @@
 ---
-title: 为 Azure 信息保护标签配置条件
-description: 在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。
+title: 为 Azure 信息保护标签配置条件 - AIP
+description: 可以自动将标签分配到文档或电子邮件的条件。 或者，可以提示用户选择建议的标签。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -8,12 +8,12 @@ ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 49d3879dd4dd5d9a5459638b1b539f4fa233ee2f
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: adf877a3f5f08d0adefd1cbe8864a0c0c2bb17b1
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026547"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023849"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 

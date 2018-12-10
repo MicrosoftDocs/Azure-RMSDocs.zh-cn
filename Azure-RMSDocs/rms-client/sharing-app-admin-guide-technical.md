@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f9b02f62ff31665e60455cdcd77e0de9da4db9af
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: ec0c231e2036dc66b941be7f764bb5e5fd5c518a
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148415"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023770"
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 共享应用程序的技术概览和保护详细信息
 
@@ -36,7 +36,7 @@ Microsoft Rights Management 共享应用程序是一个可选且可下载的适�
 
 Microsoft Rights Management 共享应用程序使用 [AD RMS 客户端 2.1 运行时](http://www.microsoft.com/download/details.aspx?id=38396)。 通过使用 AD RMS 2.1 的功能，Microsoft Rights Management 共享应用程序为最终用户提供了简单的保护和使用体验。
 
-借助 2013 年 10 月版的 RMS，可以使用 Office 2010 本机保护文档，还可以将这些文档发送给其他公司的用户，这样他们便可以通过使用 Azure 信息保护中的 Azure Rights Management 服务使用这些文档。 此外，在此版本中，如果在加密模式 2 中使用 AD RMS，则可以使用面向个人的 RMS，并可以使用其他公司中使用 Azure Rights Management 服务的用户提供的内容。 有关加密模式 2 的详细信息，请参阅 [AD RMS 加密模式](http://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx)。
+借助 2013 年 10 月版的 RMS，可以使用 Office 2010 本机保护文档，还可以将这些文档发送给其他公司的用户，这样他们便可以通过使用 Azure 信息保护中的 Azure Rights Management 服务使用这些文档。 此外，在此版本中，如果在加密模式 2 中使用 AD RMS，则可以使用面向个人的 RMS，并可以使用其他公司中使用 Azure Rights Management 服务的用户提供的内容。 有关加密模式 2 的详细信息，请参阅 [AD RMS 加密模式](https://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx)。
 
 有关部署信息，请参阅[自动部署 Microsoft Rights Management 共享应用程序](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)
 
@@ -75,7 +75,7 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 |。jpe|。pjpe|
 |。jfif|。pjfif|
 |。jt|.pjt|
-¹ 由 Foxit 提供技术支持的 PDF Rendering。 Foxit Corporation 版权所有 © 2003–2014。
+¹ 由 Foxit 提供技术支持的 PDF Rendering。 Foxit Corporation 版权所有 © 2003–2014。
 
 下表列出了 Microsoft Rights Management 共享应用程序本身在 Microsoft Office 2016、Office 2013 和 Office 2010 中支持的文件类型。 对于这些文件，在文件受 Rights Management 服务保护后，文件扩展名仍保持不变。
 

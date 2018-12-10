@@ -1,21 +1,21 @@
 ---
-title: 对 AIP 的 Azure Active Directory 要求
+title: Azure 信息保护的 Azure AD 要求 - AIP
 description: 确定使用 Azure 信息保护的 Azure AD 要求，以便用户可以成功进行身份验证。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 442c1b6ec44421696aef928c38692ded70911966
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 58de817eec541c4bbb1b5d4541469cda0d93e417
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146864"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024189"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
 
@@ -25,9 +25,9 @@ ms.locfileid: "44146864"
 
 如果拥有包含 Azure 信息保护或 Azure Rights Management 的订阅，你的 Azure AD 目录则将自动为你创建（如有需要）。  
 
-有关 Azure AD 的详细信息，请参阅[什么是 Azure AD Directory？](/active-directory/active-directory-whatis)
+有关 Azure AD 的详细信息，请参阅[什么是 Azure AD Directory？](/azure/active-directory/fundamentals/active-directory-whatis)
 
-若要将 Azure AD 目录与本地 AD 林相集成，请参阅[将本地标识与 Azure Active Directory 集成](/active-directory/active-directory-aadconnect)。
+若要将 Azure AD 目录与本地 AD 林相集成，请参阅[将本地 Active Directory 域与 Azure Active Directory 集成](/azure/architecture/reference-architectures/identity/azure-ad)。
 
 ### <a name="scenarios-that-have-specific-requirements"></a>具有特定要求的方案 
 
@@ -49,7 +49,7 @@ ms.locfileid: "44146864"
 
 使用 AD FS 或等效的身份验证提供程序进行本地身份验证的移动设备或 Mac 计算机：
 
-- 你必须在最低服务器版的 **Windows Server 2012 R2** 上使用 AD FS，或者使用支持 OAuth 2.0 协议的备用身份验证提供程序。
+- 必须在最低服务器版的 Windows Server 2012 R2 上使用 AD FS，或者使用支持 OAuth 2.0 协议的备用身份验证提供程序。
 
 ## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>多重身份验证 (MFA) 和 Azure 信息保护
 若要将多因素身份验证 (MFA) 和 Azure 信息保护结合起来使用，至少需要以下条件之一：

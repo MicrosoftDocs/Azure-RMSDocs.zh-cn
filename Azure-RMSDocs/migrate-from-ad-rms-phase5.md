@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 16d3aa308395a65f7d3af6e74f817d88d6033747
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: e535295c4393d2d7267174f587fcbbf34fa986b0
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150579"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023866"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
@@ -38,7 +38,7 @@ ms.locfileid: "44150579"
 
 4. 选择“删除当前 SCP”，然后单击“确定”。
 
-现在监视 AD RMS 服务器的活动。 例如，检查[系统运行状况报告中的请求](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx)、[ServiceRequest 表](http://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx)，或者[审核用户对受保护内容的访问权限](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx)。 
+现在监视 AD RMS 服务器的活动。 例如，检查[系统运行状况报告中的请求](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx)、[ServiceRequest 表](https://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx)，或者[审核用户对受保护内容的访问权限](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx)。 
 
 当确认 RMS 客户端不再与这些服务器进行通信，并且客户端成功使用 Azure 信息保护时，可以从这些服务器中删除 AD RMS 服务器角色。 如果使用的是专用服务器，则可首选完成警告的步骤，即先关闭服务器一段时间。 这样则可以在这段时间确保在调查客户端未使用 Azure 信息保护的原因时没有报告要求你重启这些服务器以保证服务连续性的问题。
 
@@ -49,7 +49,7 @@ ms.locfileid: "44150579"
 
 ## <a name="step-11-complete-client-migration-tasks"></a>步骤 11： 完成客户端迁移任务
 
-对于移动设备客户端和 Mac 计算机：删除在部署 [AD RMS 移动设备扩展](http://technet.microsoft.com/library/dn673574.aspx)时创建的 DNS SRV 记录。
+对于移动设备客户端和 Mac 计算机：删除在部署 [AD RMS 移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)时创建的 DNS SRV 记录。
 
 当这些 DNS 更改得到传播时，这些客户端会自动发现并开始使用 Azure Rights Management 服务。 但运行 Office Mac 的 Mac 计算机会缓存 AD RMS 中的信息。 这些计算机执行此过程最多可能需要 30 天。 
 

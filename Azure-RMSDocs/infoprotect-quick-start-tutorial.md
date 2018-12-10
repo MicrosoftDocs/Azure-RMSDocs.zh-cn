@@ -1,5 +1,5 @@
 ---
-title: 教程 - 编辑 Azure 信息保护策略并创建新标签
+title: 教程 - 编辑 Azure 信息保护策略并创建新标签 - AIP
 description: 本入门教程适用于编辑组织的 Azure 信息保护策略，所需时间大概 15 分钟。
 author: cabailey
 ms.author: cabailey
@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: 7f8fc76b0ad3d90d422cc18229d10b1f1a8d6e8d
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: a619a05607f5061f51bae93d97cfd44086cefd55
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644737"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024172"
 ---
 # <a name="tutorial-edit-the-azure-information-protection-policy-and-create-a-new-label"></a>教程：编辑 Azure 信息保护策略并创建新标签
 

@@ -4,18 +4,18 @@ description: 查看你是否拥有可以开始对组织的文档和电子邮件�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0277b638f9d069d2cfb1084136068d7ef58b1e2b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: abbb7e5af52952dc3ed69f2825a8e32d25ab9982
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151616"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024088"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
@@ -73,9 +73,9 @@ Azure 信息保护使用用户和组的方式有三种：
     
     如果已将域添加到你的租户（“已验证的域”），Azure 信息保护可以使用此 Azure AD proxyAddresses 属性中的任何值。 有关验证域的详细信息，请参阅：
     
-    - 对于 Azure AD：[将自定义域名添加到 Azure Active Directory](/active-directory/active-directory-add-domain)
+    - 对于 Azure AD：[将自定义域名添加到 Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 
-    - 对于 office 365：[将域和用户添加到 Office 365](https://go.microsoft.com/fwlinkid/?linkid=847121)
+    - 对于 Office 365：[将域添加到 Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
 
 - 仅当租户中的帐户在 Azure AD proxyAddresses 属性中没有值时，才会使用 **Azure AD userPrincipalName** 属性。 例如，你可以在 Azure 门户中创建用户，或者创建没有邮箱的 Office 365 用户。
 

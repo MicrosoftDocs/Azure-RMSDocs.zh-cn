@@ -1,5 +1,5 @@
 ---
-title: 为 Azure 信息保护标签配置可视标记
+title: 为 Azure 信息保护标签配置可视标记 - AIP
 description: 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
 author: cabailey
 ms.author: cabailey
@@ -8,12 +8,12 @@ ms.date: 11/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 23185d2d6b5b1bb14633647c345d0e58eeda3bdc
-ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
+ms.openlocfilehash: 3f94e9b1993573e8fe392dc75bcf999452bab626
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52585986"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023968"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 

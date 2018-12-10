@@ -4,16 +4,16 @@ description: 在 Azure 信息保护策略中配置适用于所有用户、所有
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: f8967b16f864939bfcb06f786e8ee1eff0603ac2
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 3533a8a83d5fa24eb98ae36092eaf08d4ff75ccc
+ms.sourcegitcommit: 4f22874c3c2fb9632d57932148664c40b3907a78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026598"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52831215"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
@@ -53,7 +53,9 @@ ms.locfileid: "51026598"
         
         此选项不适用于降低同一父标签下子标签的分类。
         
-    - **对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签**：将此选项设置为“推荐”时，系统会提示用户将标签应用到其电子邮件中。 将基于应用于附件的分类标签动态选择标签，并选择最高等级的标签。 附件必须是物理文件，并且不能是指向文件的链接（例如，指向 SharePoint 或 OneDrive for Business 文件的链接）。 用户可接受或忽略该建议。 将此选项设置为“自动”时，将自动应用该标签，但用户可以在发送电子邮件之前删除该标签或选择另一个标签。  
+    - **对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签**：将此选项设置为“推荐”时，系统会提示用户将标签应用到其电子邮件中。 将基于应用于附件的分类标签动态选择标签，并选择最高等级的标签。 附件必须是物理文件，并且不能是指向文件的链接（例如，指向 SharePoint 或 OneDrive for Business 文件的链接）。 用户可接受或忽略该建议。 将此选项设置为“自动”时，将自动应用该标签，但用户可以在发送电子邮件之前删除该标签或选择另一个标签。
+    
+    当为具有最高等级分类标签的附件配置包含用户定义的权限的预览设置保护时，会使用同一分类标签标记电子邮件，但不会应用保护。
     
     - **在 Office 应用中显示信息保护栏**：关闭此设置后，用户无法在 Word、Excel、PowerPoint 和 Outlook 中从信息保护栏选择标签。 在此情况下，用户必须通过功能区上的“保护”按钮选择标签。 打开此设置后，用户可以通过信息保护栏或“保护”按钮选择标签。
         

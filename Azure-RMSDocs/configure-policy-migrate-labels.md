@@ -4,17 +4,17 @@ description: 为支持统一标签的客户端将 Azure 信息保护标签迁移
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 2d0ed8103ce4e0b42d67ea87b6b464dfb8f04f36
-ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
+ms.openlocfilehash: 771cbb26a842cbf19184ace94ae47ba9d549a33f
+ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382606"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52953323"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心
 
@@ -48,7 +48,7 @@ ms.locfileid: "49382606"
     
     为了获得更一致的用户体验，建议在安全与合规中心的相同范围内发布相同标签。
 
-- 安全与合规中心并不支持已迁移标签中的所有设置。 使用[安全与合规中心不支持的标签设置](#label-settings-that-are-not-supported-in-the-security--compliance-center)部分中的表，以帮助识别这些设置以及是否应在安全与合规中心从发布中排除已迁移的标签。
+- 安全与合规中心并不支持已迁移标签中的所有设置。 使用[安全与合规中心不支持的标签设置](#label-settings-that-are-not-supported-in-the-security--compliance-center)部分中的表，来帮助识别安全与合规中心不支持的设置。
 
 - 保护模板：
     
@@ -66,17 +66,15 @@ ms.locfileid: "49382606"
 
 - 不迁移标签的任何本地化字符串。 必须在安全与合规中心为迁移的标签定义新的本地化字符串。
 
-- 迁移之后，当你在 Azure 门户中编辑标签时，相同的更改将自动反应在安全与合规中心。 但是，当在安全与合规中心编辑已迁移的标签，必须更新 Azure 门户中的标签，以便标签选取更改。 例如，编辑“标签”边栏选项卡上的“添加备注以供管理员使用”框。 
-
-- 仍向租户推出统一标签。 如果尚不支持你的租户，迁移将不会成功，并适当地撤消任何更改。 在支持所有租户之前，必须使用特殊的链接来访问用于迁移租户和标签的选项。 在后面的说明中提供了此链接。
+- 迁移之后，当你在 Azure 门户中编辑标签时，相同的更改将自动反应在安全与合规中心。 但是，当在安全与合规中心编辑已迁移的标签，必须返回到 Azure 门户的“Azure 信息保护 - 统一标记”边栏选项卡，并选择“发布”。 Azure 信息保护客户端需要通过此附加操作来获取标签更改。
 
 ### <a name="label-settings-that-are-not-supported-in-the-security--compliance-center"></a>安全与合规中心不支持的标签设置
 
-使用下表来标识哪些已迁移标签的配置设置不支持使用这些标签的客户端，以及是否应在安全与合规中心编辑和发布迁移的标签。 如果发布标识为要从发布中排除的标签，则没有标签显示支持统一标签的客户端。
+使用下表来识别迁移的标签的哪些配置设置不受统一标记客户端的支持，或受到有限的支持。 为避免混淆，建议不要配置对统一标记客户端无效的设置。
 
 Azure 信息保护客户端可以使用这些标签设置，而不会出现任何问题，因为它们继续从 Azure 门户下载标签。
 
-|标签配置|在安全与合规中心中受支持|不包括安全与合规中心的编辑和发布|
+|标签配置|受统一标记客户端的支持|不包括安全与合规中心的编辑|
 |-------------------|---------------------------------------------|-------------------------|
 |启用或禁用状态<br /><br />说明：不会同步到安全与合规中心 |“不适用”|“不适用”|
 |标签颜色：从列表中选择或使用 RGB 代码指定<br /><br />说明：安全与合规中心不支持标签颜色 |“不适用”|“不适用”|
@@ -91,12 +89,7 @@ Azure 信息保护客户端可以使用这些标签设置，而不会出现任�
 
 ## <a name="to-migrate-azure-information-protection-labels"></a>若要迁移 Azure 信息保护标签
 
-> [!IMPORTANT]
-> 在确认可以在 Office 365 安全与合规中心编辑和发布敏感度标签之前，请勿迁移标签。 敏感度标签开始向 Office 365 租户推出，但尚不可供所有租户使用。
-> 
-> 若要检查：从 Office 365 安全与合规中心，转到“分类” > “标签”，并查看是否有“敏感度”选项卡。如果没有看到此选项卡，则租户尚且没有准备好使用敏感度标签，此时不应迁移 Azure 信息保护标签。
-
-如果已确认租户支持安全与合规中心的敏感度标签，则使用以下说明迁移租户和 Azure 信息保护标签。
+请使用以下说明迁移租户和 Azure 信息保护标签，来使用新的统一标记存储。
 
 你必须是全局管理员才能迁移标记。
 
@@ -106,6 +99,8 @@ Azure 信息保护客户端可以使用这些标签设置，而不会出现任�
 
 成功迁移的标签现在可被[支持统一标签的客户端](#clients-that-support-unified-labeling)使用。 但必须先在安全与合规中心发布这些标签。
 
+> [!IMPORTANT]
+> 在 Azure 信息保护客户端的 Azure 门户外部编辑标签时，请返回该“Azure 信息保护 - 统一标记”边栏选项卡，并选择“发布”。
 
 ### <a name="clients-that-support-unified-labeling"></a>支持统一标签的客户端
 

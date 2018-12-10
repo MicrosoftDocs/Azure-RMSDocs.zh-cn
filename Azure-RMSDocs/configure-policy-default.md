@@ -1,5 +1,5 @@
 ---
-title: Azure 信息保护的默认策略
+title: Azure 信息保护的默认策略 - AIP
 description: 了解如何配置 Azure 信息保护的默认策略。 如果修改默认策略，则可以引用这些值以返回默认策略。
 author: cabailey
 ms.author: cabailey
@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/06/2018
 ms.topic: conceptual
 ms.service: information-protection
-ms.openlocfilehash: d74dfcd35dca2f3ab5e88a66eaaba37b13636e4d
-ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
+ms.openlocfilehash: f4e5301ec9c1f2bd1a98da6acedd58f3f42f5ffa
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223970"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024376"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 

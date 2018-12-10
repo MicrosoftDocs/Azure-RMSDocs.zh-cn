@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b632319b595c3745be576fa2d508ebcb089ec8aa
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: e3c4e28fc9f67faeefcb1e6c98dda99711f1ef2b
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170155"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024410"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -45,12 +45,12 @@ ms.locfileid: "49170155"
 
 |**设备操作系统**|Word、Excel、PowerPoint|Email|其他文件类型|
 |---------------------------|-----------------------|-----------------|---------|
-|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Online（查看受保护的文档）[[1]](#footnote-1)<br /><br />Web 浏览器 [[2]](#footnote-2)|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Web 浏览器 [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4) |适用于 Windows 的 Azure 信息保护客户端：文本、图像、pfile<br /><br />适用于 Windows 的 RMS 共享应用程序：文本、图像、pfile<br /><br />适用于 AutoCAD 的 SealPath RMS 插件：.dwg|
+|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Online（查看受保护的文档）[[1]](#footnote-1)<br /><br />Web 浏览器 [[2]](#footnote-2)|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Web 浏览器 [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4) |适用于 Windows 的 Azure 信息保护客户端：文本、图像、pfile<br /><br />适用于 Windows 的 RMS 共享应用程序：文本、图像、pfile<br /><br />适用于 AutoCAD 的 SealPath RMS 插件：.dwg|
 |**iOS**|GigaTrust<br /><br /> Office Mobile（查看和编辑受保护的文档）<br /><br />Office Online [[1]](#footnote-1)<br /><br />TITUS 文档<br /><br />Web 浏览器 [[2]](#footnote-2)|Azure 信息保护应用（查看受保护的电子邮件）<br /><br />BlackBerry Work<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />iPad 和 iPhone 版 Outlook [[4]](#footnote-4)<br /><br />TITUS Mail <br /><br />Web 浏览器 [[3]](#footnote-3)|Azure 信息保护应用（查看正在保护的文本和图像）<br /><br />TITUS 文档：Pfile|
-|**Outlook Web Access (OWA)**|适用于 Android 的 GigaTrust 应用<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile <br /><br />Web 浏览器 [[2]](#footnote-2)|9Folders [[4]](#footnote-4)<br /><br />Azure 信息保护应用（查看受保护的电子邮件）<br /><br />BlackBerry Work <br /><br />适用于 Android 的 GigaTrust 应用程序 [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook for Android [[4]](#footnote-4)<br /><br />Samsung Email（S3 及更高版本）[[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />Web 浏览器 [[3]](#footnote-3)|Azure 信息保护应用（查看受保护的文本和图像）|
+|**Outlook Web Access (OWA)**|适用于 Android 的 GigaTrust 应用程序<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile <br /><br />Web 浏览器 [[2]](#footnote-2)|9Folders [[4]](#footnote-4)<br /><br />Azure 信息保护应用（查看受保护的电子邮件）<br /><br />BlackBerry Work <br /><br />适用于 Android 的 GigaTrust 应用程序 [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook for Android [[4]](#footnote-4)<br /><br />Samsung Email（S3 及更高版本）[[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />Web 浏览器 [[3]](#footnote-3)|Azure 信息保护应用（查看受保护的文本和图像）|
 |**macOS**|Office 2016 for Mac<br /><br />Office Online [[1]](#footnote-1)<br /><br />Web 浏览器 [[2]](#footnote-2)|Outlook 2016 for Mac<br /><br />Web 浏览器 [[3]](#footnote-3)|RMS 共享应用（查看受保护的文本、图像、常规受保护的文件）|
 |**Windows 10 移动版**|Office Mobile 应用（查看使用 Azure RMS 的受保护文档） <br /><br />Web 浏览器 [[2]](#footnote-2)|Citrix WorxMail <br /><br />Outlook 邮件（查看受保护的电子邮件） <br /><br />Web 浏览器 [[3]](#footnote-3)|不支持|
-|**Windows RT**|Office 2013 RT<br /><br />Office Online [[1]](#footnote-1)<br /><br />Web 浏览器 [[2]](#footnote-2)|Outlook 2013 RT<br /><br />Windows 相关邮件应用程序<br /><br />Web 浏览器 [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|Siemens JT2Go：JT 文件|
+|**Windows RT**|Office 2013 RT<br /><br />Office Online [[1]](#footnote-1)<br /><br />Web 浏览器 [[2]](#footnote-2)|Outlook 2013 RT<br /><br />Windows 相关邮件应用程序<br /><br />Web 浏览器 [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|Siemens JT2Go：JT 文件|
 |**Windows Phone 8.1**|Office Mobile（仅适用于 AD RMS）<br /><br />Web 浏览器 [[2]](#footnote-2)|Outlook Mobile [[4]](#footnote-4) <br /><br />Web 浏览器 [[3]](#footnote-3)|RMS 共享应用（查看受保护的文本、图像、常规受保护的文件）|
 |**Blackberry 10**|Web 浏览器 [[2]](#footnote-2)|Blackberry 电子邮件 [[4]](#footnote-4) <br /><br />Web 浏览器 [[3]](#footnote-3)|不支持|
 
@@ -139,7 +139,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 - [适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题解答](./rms-client/mobile-app-faq.md)
 
-使用 [Microsoft Azure 信息保护页](http://go.microsoft.com/fwlink/?LinkId=303970)上的链接下载相关应用。
+使用 [Microsoft Azure 信息保护页](https://go.microsoft.com/fwlink/?LinkId=303970)上的链接下载相关应用。
 
 ### <a name="more-information-about-the-rights-management-sharing-application"></a>有关 Rights Management 共享应用程序的详细信息
 
@@ -155,7 +155,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 -   [适用于移动平台的 Microsoft Rights Management 共享应用程序的常见问题解答](https://technet.microsoft.com/dn451248)
 
-使用 [Microsoft Azure 信息保护页](http://go.microsoft.com/fwlink/?LinkId=303970)上的链接下载适用于 Mac 计算机和 Windows Phone 的查看器。
+使用 [Microsoft Azure 信息保护页](https://go.microsoft.com/fwlink/?LinkId=303970)上的链接下载适用于 Mac 计算机和 Windows Phone 的查看器。
 
 
 ### <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>有关其他支持 Azure 信息保护的应用程序的详细信息
@@ -172,7 +172,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 Azure RMS 当前不支持以下应用程序：
 
--   Microsoft OneDrive for Business for SharePoint Server 2013
+-   Microsoft OneDrive for Business for SharePoint Server 2013
 
 -   XPS 查看器
 

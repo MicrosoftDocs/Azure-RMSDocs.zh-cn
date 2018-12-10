@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 05/16/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d39986951808cce23cbdc1ca817e14dcb6629f43
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 2e3babe4a402b8f77700e9b9890dc5f826a5850a
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805988"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026892"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
@@ -28,12 +28,13 @@ ms.locfileid: "42805988"
 
 ## <a name="installing-the-rms-connector"></a>安装 RMS 连接器
 
-1.  确定将要运行 RMS 连接器的计算机（最少两台）。 它们必须满足先决条件中列出的最低规格。
+1.  确定将要运行 RMS 连接器的计算机（最少两台）
+2.  。 它们必须满足先决条件中列出的最低规格。
 
     > [!NOTE]
     > 为每个租户（Office 365 租户或 Azure AD 租户）安装单个 RMS 连接器（包含多个服务器以实现高可用性）。 与 Active Directory RMS 不同，你无需在每个林中安装 RMS 连接器。
 
-2.  从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkId=314106)下载 RMS 连接器的源文件。
+2.  从 [Microsoft 下载中心](https://go.microsoft.com/fwlink/?LinkId=314106)下载 RMS 连接器的源文件。
 
     若要安装 RMS 连接器，请下载 RMSConnectorSetup.exe。
 
@@ -173,7 +174,7 @@ ms.locfileid: "42805988"
 > [!IMPORTANT]
 > 在将 Exchange 或 SharePoint 服务器配置为使用连接器之后，我们建议你不要更改该名称，因为你随后必须清除这些服务器的所有 IRM 配置，然后重新进行配置。
 
-在 DNS 中创建名称并配置 IP 地址之后，请配置该地址的负载平衡，将流量定向到连接器服务器。 你可以使用任何基于 IP 的负载平衡器来达到此目的，该负载平衡器应包括 Windows Server 中的网络负载平衡 (NLB) 功能。 有关详细信息，请参阅 [负载平衡部署指南](http://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx)。
+在 DNS 中创建名称并配置 IP 地址之后，请配置该地址的负载平衡，将流量定向到连接器服务器。 你可以使用任何基于 IP 的负载平衡器来达到此目的，该负载平衡器应包括 Windows Server 中的网络负载平衡 (NLB) 功能。 有关详细信息，请参阅 [负载平衡部署指南](https://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx)。
 
 使用以下设置来配置 NLB 群集：
 
@@ -200,9 +201,9 @@ ms.locfileid: "42805988"
 > [!TIP]
 > 你可以使用以下信息和资源，帮助请求和安装服务器身份验证证书，并将此证书绑定到 IIS 中的默认网站：
 >
-> -   如果使用 Active Directory 证书服务 (AD CS) 和企业证书颁发机构 (CA) 来部署这些服务器身份验证证书，则你可以复制和使用 Web 服务器证书模板。 此证书模板使用“在请求中提供”作为证书使用者名称，这意味着在你请求证书时，可以提供 RMS 连接器名称的 FQDN 作为证书使用者名称或使用者备选名称  。
-> -   如果你使用独立 CA 或从其他公司购买此证书，请参阅 TechNet 上 [Web 服务器 (IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 文档库中的[配置 Internet 服务器证书 (IIS 7)](http://technet.microsoft.com/library/cc731977%28v=ws.10%29.aspx)。
-> -   若要将 IIS 配置为使用证书，请参阅 TechNet 上 [Web 服务器 (IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 文档库中的[添加网站绑定 (IIS 7)](http://technet.microsoft.com/library/cc731692.aspx)。
+> - 如果使用 Active Directory 证书服务 (AD CS) 和企业证书颁发机构 (CA) 来部署这些服务器身份验证证书，则你可以复制和使用 Web 服务器证书模板。 此证书模板使用“在请求中提供”作为证书使用者名称，这意味着在你请求证书时，可以提供 RMS 连接器名称的 FQDN 作为证书使用者名称或使用者备选名称  。
+> -   如果你使用独立 CA 或从其他公司购买此证书，请参阅 TechNet 上 [Web 服务器 (IIS)](https://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 文档库中的[配置 Internet 服务器证书 (IIS 7)](https://technet.microsoft.com/library/cc731977%28v=ws.10%29.aspx)。
+> - 若要将 IIS 配置为使用证书，请参阅 TechNet 上 [Web 服务器 (IIS)](https://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 文档库中的[添加网站绑定 (IIS 7)](https://technet.microsoft.com/library/cc731692.aspx)。
 
 ## <a name="configuring-the-rms-connector-for-a-web-proxy-server"></a>为 Web 代理服务器配置 RMS 连接器
 如果你的连接器服务器安装在没有直接 Internet 连接的网络中，需要手动配置出站 Internet 访问的 Web 代理服务器，则必须在 RMS 连接器的这些服务器上配置注册表。
@@ -238,7 +239,7 @@ ms.locfileid: "42805988"
 
 -   对于 64 位计算机：RMSConnectorSetup.exe
 
-如果你尚未下载这些文件，可从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkId=314106)下载。
+如果你尚未下载这些文件，可从 [Microsoft 下载中心](https://go.microsoft.com/fwlink/?LinkId=314106)下载。
 
 
 ## <a name="next-steps"></a>后续步骤

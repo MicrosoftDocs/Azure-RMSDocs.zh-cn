@@ -4,17 +4,17 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2018
+ms.date: 12/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b0dc98bb1c626737fb087c78691bb3a9e35a445e
-ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
+ms.openlocfilehash: bfca9c6aab0625a9d35d7648a53f7cce6b74bce6
+ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52586003"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861211"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -22,7 +22,7 @@ ms.locfileid: "52586003"
 
 Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 
 
-可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式版本和当前预览版（若有）。 Microsoft 更新目录（类别：“Azure 信息保护”）还随附正式版本，所以可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
+可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式版本和当前预览版（若有）。 经过短暂的延迟后（通常是几周的时间），正式版本也会包含在 Microsoft 更新目录中（类别：Azure 信息保护）。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
 
 有关详细信息，请参阅[升级和维护 Azure 信息保护客户端](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)。
 
@@ -52,6 +52,10 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **新功能：**
 
+- 现在 Azure 信息保护客户端默认为使用 PDF 加密 ISO 标准保护 PDF 文件。 之前需要使用高级客户端设置启用此支持。
+    
+    若想要将客户端还原为使用 .ppdf 文件扩展名保护 PDF 文件，请使用相同的[高级客户端设置](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，但指定“False”。
+
 - Microsoft Ignite 中宣布支持 Azure 信息保护分析功能的[中心报告](../reports-aip.md)。
 
 - Excel 现在还支持使用不同颜色的[视觉标记](../configure-policy-markings.md)。
@@ -78,6 +82,8 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 如果扫描程序的日程安排设置为“始终”，两次扫描之间现在有 30 秒延迟。
 
+- 当扫描程序标记的文件已受到保护时，它不再更改该文件的 Rights Management 所有者。
+
 ## <a name="version-137190"></a>版本 1.37.19.0
 
 发布日期：2018 年 9 月 17 日
@@ -86,7 +92,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **新增功能**： 
 
-- 通过配置新的[高级客户端配置](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，支持 PDF 加密 ISO 标准。 配置此选项后，受保护 PDF 文档的文件扩展名仍为. pdf（而不是更改为 .ppdf），并且可以通过支持此 ISO 标准的 PDF 阅读器打开。 目前，必须指示用户通过使用 Azure 信息保护查看器来手动打开这些受保护的 PDF。 若要帮助用户实现此操作，当他们打开这些受保护的 PDF 之一时，他们将看到含有图标的页面，让他们针对其操作系统进行选择。
+- 通过配置新的[高级客户端配置](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，支持 PDF 加密 ISO 标准。 此选项设置为“True”时，受保护 PDF 文档的文件扩展名仍为. pdf（而不是更改为 .ppdf），并且可以通过支持此 ISO 标准的 PDF 阅读器打开。 目前，必须指示用户通过使用 Azure 信息保护查看器来手动打开这些受保护的 PDF。 若要帮助用户实现此操作，当他们打开这些受保护的 PDF 之一时，他们将看到含有图标的页面，让他们针对其操作系统进行选择。
 
 - 支持新的敏感信息类型，可帮助对包含个人信息的文档进行分类。 [详细信息](../configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
 
@@ -196,76 +202,6 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 删除“祝贺你!” 欢迎页和“Azure 信息保护中的新增功能有哪些”页，首次使用时，Office 应用程序中会显示这些页面。
 
-## <a name="version-12660"></a>版本 1.26.6.0
-
-发布日期：2018/04/17
-
-此版本包括 RMS 客户端的 MSIPC 1.0.3403.1224 版本。
-
-**新增功能**：
-
-- Azure 信息保护扫描程序：客户端附带的 PowerShell 模块包含新的 cmdlet，用于安装和配置扫描程序，以便可以发现本地数据存储上的文件并对其进行分类和保护。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-aip-scanner.md)。 
-
-- 现在可以通过在文本字符串中使用“If.App”变量语句并标识应用程序类型为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记。 [详细信息](../configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
-
-- 支持[策略设置](../configure-policy-settings.md)“在 Office 应用中显示“信息保护”栏”。 此设置已关闭时，用户可以通过功能区上的“保护”按钮选择标签。
-
-- Word、Excel 和 PowerPoint 中的页眉和页脚现在支持多行文本。
-
-- 一个新的高级客户端设置（仍处于预览阶段），可以用于开启分类在后台继续运行。 在启用此设置时，对于 Office 应用，自动和建议分类持续在后台运行，而不是在保存文档时运行。 通过此行为更改，现在可以为存储在 SharePoint Online 中的文档应用自动和建议的分类。 [详细信息](client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)
-
-- 这是一条新的高级客户端设置，使 Outlook 不会应用 Azure 信息保护策略中配置的默认标签。 相反，Outlook 可应用不同的默认标签，也可不应用标签。 [详细信息](client-admin-guide-customizations.md#set-a-different-default-label-for-outlook) 
-
-- 对于 Office 应用，当你指定自定义权限时，现在可以通过“通讯簿”图标浏览并选择用户。 使用文件资源管理器指定自定义权限时，此选项会将奇偶校验带到用户体验。
-
-- 对于使用 PowerShell 但无法被授予**本地登录**权限的服务帐户，支持完全非交互式身份验证方法。 此身份验证方法需要对 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/Set-AIPAuthentication) 使用新的 *Token* 参数，并将 PowerShell 脚本作为任务运行。 [详细信息](client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)
-
-- [Set-RMSServerAuthentication](/powershell/module/azureinformationprotection/set-rmsserverauthentication) 的新参数 *IntegratedAuth*。 此参数支持 AD RMS 的服务器模式，AD RMS 需要处于该模式才能支持 Windows Server FCI。
-
-
-**修补程序**：
-
-修复了包括以下特定方案的稳定性：
-
-- 对于 Office 16.0.8628.2010 版及更高版本（即点即用），Azure 信息保护栏支持以前可能会导致该栏显示在 Office 应用程序外部的最新监视器显示选项。
-
-- 当两个组织使用 Azure 信息保护共享标记的文档和电子邮件时，将保留他们自己的标签，而不会替换为另一个组织的标签。
-
-- 对于 Excel：
-        
-    - 支持更改 Office 主题或 Windows 主题，以前更改主题后会导致 Excel 不显示任何数据。
-        
-    - 支持包含交叉引用（以前会导致该单元格中的文本损坏）的单元格。
-    
-    - 支持键入日语、简体中文或韩语字符，这些字符以前会关闭窗口，因此无法选择这些字符。
-    
-    - 对注释的支持，之前在键入时关闭了注释。
-
-- 对于 Powerpoint：支持共同编写，以前可能会导致数据丢失。
-
-- 现在可以检查具有 .xml 文件扩展名的文件，以便进行建议或自动分类。
-
-- 查看器现在可以打开大于 20 MB 的基于文本的受保护文件（.ptxt 和 .pxml）。 
-- 使用 Outlook 提醒时，可防止 Outlook 挂起。
-
-- 会以 Office 64 位成功启动，以便可以保护文档和电子邮件。
-
-- 现在可以针对 Word、Excel、PowerPoint 和文件资源管理器为用户定义的权限配置标签，并能使用高级客户端设置隐藏自定义权限选项。 [详细信息](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users) 
-
-- 如果为 Azure 信息保护策略中的视觉标记配置了客户端上未安装的字体名称，则将回退到宋体字体。
-
-- 升级 Azure 信息保护客户端后，可防止 Office 崩溃。
-
-- 对于 Office 应用，改进性能和内存占用率。
-
-- 为用户定义的权限和 HYOK (AD RMS) 保护配置标签时，保护配置不再错误地使用 Azure Rights Management 服务。
-
-- 为了获得更一致的管理体验，子标签不再继承其父标签的视觉标记和保护设置。
-
-**其他更改**：
-
-- 对于[客户端使用情况日志记录](client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client )：将事件 ID 102 和 ID 103 替换为事件 ID 101。
-
 ## <a name="next-steps"></a>后续步骤
 
 有关安装和使用客户端的详细信息： 
@@ -273,5 +209,4 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 - 用户请参阅：[下载并安装客户端](install-client-app.md)
 
 - 管理员请参阅：[Azure 信息保护客户端管理员指南](client-admin-guide.md)
-
 

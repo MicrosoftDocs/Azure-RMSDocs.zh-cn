@@ -4,18 +4,18 @@ description: 此信息可帮助你在部署和配置 Azure 信息保护中的 Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0359329513bdd2825f7121a95d4e940a76c401a5
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 43bc10ce43a4ba7a26958e562c4acc6e245ad76a
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148794"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024070"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
@@ -30,7 +30,7 @@ ms.locfileid: "44148794"
     > [!TIP]
     > 最终用户示例视频
     > -   [Microsoft Azure 信息保护](https://youtu.be/ToShAUdlrPo?list=PL8nfc9haGeb6qSm1kLU8n3Zqg398764h5)
-    > -   [Azure RMS Document Tracking and Revocation](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)（Azure RMS 文档跟踪和撤消）
+    > -   [Azure RMS Document Tracking and Revocation](https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)（Azure RMS 文档跟踪和撤消）
 
 -   管理员信息
     
@@ -73,13 +73,13 @@ ms.locfileid: "44148794"
 有关如何将此客户端用于 Windows 计算机的说明，请参阅 [Azure 信息保护客户端用户指南](./rms-client/client-user-guide.md)。
 
 
-## <a name="using-information-protection-with-office-365-office-2016-or-office-2013"></a>在 Office 365、Office 2016 或 Office 2013 中使用信息保护
+## <a name="using-information-protection-with-office365-office-2016-or-office2013"></a>在 Office 365、Office 2016 或 Office 2013 中使用信息保护
 如果使用的是 Azure 权限管理服务，但尚未安装 Azure 信息保护客户端，那么用户就不会在 Office 桌面应用程序中看到 Azure 信息保护栏。 他们也不会在功能区上看到“保护”按钮，或在文件资源管理器中看到“分类和保护”。 这些附加内容有助于用户更轻松地保护文档和电子邮件。 对于这些用户，他们必须遵循类似以下步骤的说明。
 
 > [!TIP]
 > 若要查找应用程序特定帮助，以及有关在这些应用程序中使用信息保护的说明，请搜索 **IRM** 和应用程序名称及版本。
 
-#### <a name="to-protect-a-document-in-word-2013"></a>在 Word 2013 中保护文档
+#### <a name="to-protect-a-document-in-word2013"></a>在 Word 2013 中保护文档
 
 1.  在 Microsoft Word 中，创建一个文档。
 
@@ -98,7 +98,7 @@ ms.locfileid: "44148794"
 
 这些使用权限以限制横幅方式显示在文档顶部。 该横幅可能显示适用于文档的权限，或者提供显示权限的链接。
 
-#### <a name="to-protect-an-email-message-using-outlook-2013-and-exchange-online"></a>使用 Outlook 2013 和 Exchange Online 保护电子邮件
+#### <a name="to-protect-an-email-message-using-outlook2013-and-exchange-online"></a>使用 Outlook 2013 和 Exchange Online 保护电子邮件
 
 1.  在 Outlook 中，创建一封发送给组织内收件人地址的邮件。
 
