@@ -4,19 +4,20 @@ description: 现在可使用三代的 Rights Management SDK。
 keywords: ''
 author: bryanla
 manager: mbaldwin
-ms.date: 09/07/2018
+ms.author: bryanla
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0510ead4-2fe7-4269-885b-fe16bcc69888
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6f964c6a6cf36cbd6f78cf58096f8c912fb0ff68
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c94965a6007ea93e657e719c6c9cd963cf54e66c
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "51527817"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266427"
 ---
 # <a name="rms-developers-guide"></a>RMS 开发人员指南
 
@@ -28,15 +29,14 @@ ms.locfileid: "51527817"
 |------|---------|
 | [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | 简化的下一代工具集，可提供轻型开发体验，以便通过 Microsoft Rights Managemen 实现对 Android、iOS、Mac OS X、Windows Phone/RT 和 Linux/C++ 设备应用的信息保护 |
 | [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | 为 Windows 桌面应用程序开发人员和基于服务器的解决方案提供商而提供的功能强大的 SDK，可实现对产品的权限管理|
-|[AD RMS SDK]()|** 注意 ** - AD RMS SDK 利用客户端在 Msdrm.dll 中公开的功能，可用于 Windows Server 2012、Windows 8、Windows Server 2008 R2、Windows 7、Windows Server 2008 和 Windows Vista。 它可能在后续版本中变更或不可用。 请改用 Microsoft Rights Management Services SDK 2.1（它利用客户端在 Msipc.dll 中公开的功能）。|
-|[AD RMS 脚本编写 API]()| 用于创建脚本以管理 AD RMS 安装|
+|[AD RMS SDK](/azure/information-protection/develop/) |** 注意 ** - AD RMS SDK 利用客户端在 Msdrm.dll 中公开的功能，可用于 Windows Server 2012、Windows 8、Windows Server 2008 R2、Windows 7、Windows Server 2008 和 Windows Vista。 它可能在后续版本中变更或不可用。 请改用 Microsoft Rights Management Services SDK 2.1（它利用客户端在 Msipc.dll 中公开的功能）。|
+|[AD RMS 脚本编写 API](/azure/information-protection/develop/) | 用于创建脚本以管理 AD RMS 安装|
 
 ## <a name="code-samples-and-tools"></a>代码示例和工具 ##
 这一 Microsoft 提供的 RMS 代码示例和开发人员支持工具集合跨越所有支持的操作系统（Android、iOS/OS X、Windows Phone 和 Windows 桌面），会定期更新以保持与其支持的 SDK 之间的兼容性。
 
 | 项目 | 操作系统 | 支持 SDK 版本 | 描述 |
 |------|------------------|------------------------|-------------|
-| [读取受 PFILE 保护的 PDF](https://blogs.msdn.microsoft.com/rms/2015/11/09/reading-a-pfile-protected-pdf/) | Windows 桌面| [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 及更高版本的 2.x SDK | **读取受 PFILE 保护的 PDF** 是我们 RMS 开发人员活动角博客上的一个简单代码示例，它使用 MSIPC 文件 API 来解密并打开受 PFILE 保护的 PDF 文档。|
 | [IpcManagedAPI](https://github.com/Azure-Samples/active-directory-dotnet-rms) | Windows 桌面 | [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 及更高版本的 2.x SDK | **IpcManagedAPI** 是 RMS SDK 2.1 的 .NET (C#) 表示形式，通过它可方便地使托管应用程序启用 RMS。|
 | [IPCNotepad](https://code.msdn.microsoft.com/ipcnotepad-sample-f67dae80) | Windows 桌面 | [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 及更高版本的 2.x SDK| **IPCNotepad** 是一个启用 RMS 的示例应用程序，可引导你了解在保护和使用受限制内容时每个启用 RMS 的应用程序应执行的基本步骤。|
 | [IpcDlp](https://github.com/Azure-Samples/active-directory-dotnet-rms)|Windows 桌面|[RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 及更高版本的 2.x SDK|**IpcDlp** 是一个启用 RMS 的示例数据泄漏防护 (DLP) 应用程序，通过将文件 API 用于保护和使用受限制内容，来引导你了解启用 RMS 的 DLP 应用程序应执行的基本步骤。|
