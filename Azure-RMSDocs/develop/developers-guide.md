@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 54eaa9819ce1bffd85bb11b7e1936abacbd5457b
-ms.sourcegitcommit: 07af86511a394274f10cf1340de4cf4bad6d1675
+ms.openlocfilehash: 122a7b3c8614e8f5a18b1a2a87d4d673d5dae049
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46473794"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266709"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 
@@ -105,8 +105,7 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 ## <a name="other-resources"></a>其他资源
 
 - [最佳安全实践指南](security-guidelines.md)
-- [RMS 开发人员活动角（博客）](https://blogs.msdn.microsoft.com/rms/)
-- [Azure 信息保护的常见问题](https://docs.microsoft.com/information-protection/get-started/faqs)
+- [Azure 信息保护的常见问题](/azure/information-protection/faqs)
 
 ### <a name="support-articles"></a>支持文章
 
@@ -132,7 +131,7 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 - [Windows Phone 和 Windows 应用商店 API 参考](https://msdn.microsoft.com/library/dn891914.aspx)
 - [iOS/OSX API 参考](https://msdn.microsoft.com/library/dn758306.aspx)
 - [Android API 参考](https://msdn.microsoft.com/library/dn758245.aspx)
-- [Linux API 参考](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)
+- [Linux API 参考](https://azuread.github.io/rms-sdk-for-cpp/annotated.html)
 
 ### <a name="previous-versions"></a>早期版本
 

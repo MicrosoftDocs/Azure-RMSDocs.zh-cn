@@ -12,13 +12,13 @@ ms.assetid: 2BD4F55D-BA88-4516-86FB-E2E6535D1690
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 204b68981ff63ae62e0690c209c9d6e29f43b237
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: deda881f3ae3d4d406487ff0bbe0fe785fa78be9
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150290"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266488"
 ---
 # <a name="linux-api-reference"></a>Linux API 参考
 
-Linux 适用的操作系统支持的 API 参考在 Github 上进行承载 - [RMS SDK for C++](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)。 有关详细信息，请参阅[入门](get-started.md)。
+Linux 适用的操作系统支持的 API 参考在 Github 上进行承载 - [RMS SDK for C++](https://azuread.github.io/rms-sdk-for-cpp/annotated.html)。 有关详细信息，请参阅[入门](get-started.md)。

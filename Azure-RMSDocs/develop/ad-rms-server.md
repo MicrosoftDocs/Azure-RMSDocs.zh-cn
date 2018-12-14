@@ -12,12 +12,12 @@ ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d190dd1559378473e52c2c741fcf4693f9e43a59
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0f937825a55eee3b58dc60830748a35982c5a8c8
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151327"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266471"
 ---
 # <a name="server"></a>Server
 
@@ -28,7 +28,7 @@ ms.locfileid: "44151327"
 > [!IMPORTANT] 
 > 我们建议通过 Azure RMS 开发和测试你的应用程序。
 
-**Windows Server** - 对于本地服务器上的 RMS，从 Windows Server 2008 开始，可以通过将 RMS 服务作为角色进行添加来安装和配置它。 若要在以前的操作系统上安装该服务，请从 Microsoft 下载中心下载它（地址是 [Microsoft Windows Rights Management Services with Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909)）。
+**Windows Server** - 对于本地服务器上的 RMS，从 Windows Server 2008 开始，可以通过将 RMS 服务作为角色进行添加来安装和配置它。 若要在以前的操作系统上安装该服务，请从 Microsoft 下载中心下载它（地址是 [Microsoft Windows Rights Management Services with Service Pack 2](https://www.microsoft.com/download/details.aspx?id=4909)）。
 
 在安装的多个 Web 服务中，以下服务对于 Windows Server 上的 RMS 服务器的应用程序开发十分重要。
 
@@ -43,9 +43,9 @@ ms.locfileid: "44151327"
 
 ## <a name="related-topics"></a>相关主题 ##
 * [概述](ad-rms-overview.md)
-* [Microsoft Internet Information Services](http://www.iis.net/overview)
+* [Microsoft Internet Information Services](https://www.iis.net/overview)
 * [使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)
-* [Microsoft Windows Rights Management Services Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909)
+* [Microsoft Windows Rights Management Services Service Pack 2](https://www.microsoft.com/download/details.aspx?id=4909)
 * [Active Directory Rights Management Services Scripting API](https://msdn.microsoft.com/library/Bb968797)（Active Directory Rights Management Services 脚本编写 API）
 * [Activating a Computer](https://msdn.microsoft.com/library/Cc530377)（激活计算机）
 * [Activating a User](https://msdn.microsoft.com/library/Cc530378)（激活用户）

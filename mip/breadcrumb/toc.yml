@@ -12,10 +12,10 @@ items:
       - name: 开发
         href: /information-protection/test/
       - name: 开发
-        href: /azure/information-protection/develop
-ms.openlocfilehash: de418320d5201fd565b0157c9475b4980c35529e
-ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
+        href: /azure/information-protection/develop/
+ms.openlocfilehash: 545fa6309845d04f6a07501bdd794d1579ab2e2c
+ms.sourcegitcommit: c9a0d81c18ea79a2520baa4b3777b06a72f87f60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386621"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53382429"
