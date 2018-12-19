@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 04a93c57e2ea940384a171284da57b5d7c1572d9
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: b53bb0a914871ba2a53ad7ff4c3bd6fca0d32dde
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148556"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173258"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>为 Azure Rights Management 配置应用程序
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!NOTE]
 > 此信息适用于已部署了 Azure 信息保护的 IT 管理员和顾问。 如果你要寻找有关如何针对特定应用程序使用 Rights Management 功能，或者如何打开权限保护文件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
@@ -31,21 +31,21 @@ ms.locfileid: "44148556"
 > [!IMPORTANT]
 > 有关受支持的版本和其他要求的信息，请参阅 [Azure Rights Management 的要求](requirements.md)。
 
--   [Office 365：客户端和联机服务配置](configure-office365.md)
+-   [Office 365：客户端和联机服务的配置](configure-office365.md)
 
-    -   [Exchange Online：IRM 配置](configure-office365.md#exchange-online-irm-configuration)
+    -   [Exchange Online：IRM 配置](configure-office365.md#exchange-online-irm-configuration)
 
-    -   [SharePoint Online 和 OneDrive for Business：IRM 配置](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)
+    -   [SharePoint Online 和 OneDrive for Business：IRM 配置](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)
 
 - [Office 应用程序：客户端配置](configure-office-apps.md)
 
     -   [Office 2016 和 Office 2013](configure-office-apps.md#office-2016-and-office-2013)
 
-    -   [Office 2010](configure-office-apps.md#office-2010)
+    -   [Office 2010](configure-office-apps.md#office-2010)
 
--   [Azure 信息保护客户端：安装和配置客户端](configure-sharing-app.md)
+-   [Azure 信息保护客户端：客户端安装和配置](configure-sharing-app.md)
 
--   [共享应用程序：客户端安装和配置](configure-sharing-app.md)
+-   [Rights Management 共享应用程序：客户端安装和配置](configure-sharing-app.md)
 
 
 若要配置本地服务器，例如 Exchange Server 和 SharePoint Server，请参阅[部署 Azure Rights Management 连接器](deploy-rms-connector.md)。

@@ -12,12 +12,12 @@ ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: a3385f260928dabc7254a49f3265b647c2920703
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: b1525665fb488aed1ad98a77ac66f92f7ee4509b
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150052"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266675"
 ---
 # <a name="deploy-into-production"></a>部署到生产
 
@@ -67,16 +67,16 @@ ms.locfileid: "44150052"
 
 若要部署使用 Azure 信息保护 (AIP) / Rights Management Services (RMS) 工具生成的应用程序，需要在最终用户的计算机上部署 RMS 客户端 2.1。
 
-### <a name="rms-client-21"></a>RMS 客户端 2.1
+### <a name="rmsclient21"></a>RMS 客户端 2.1
 RMS 客户端 2.1 用于保护通过启用 AIP/RMS 的（安装在本地或 Microsoft 数据中心的）应用程序流动的信息的访问和使用。
 
 RMS 客户端 2.1 不是 Windows 操作系统组件。 客户端作为可选下载随附，可以在确认和接受许可协议后通过应用程序自由分发。
 
 > [!IMPORTANT]
-> RMS 客户端 2.1 特定于体系结构，必须与目标操作系统的体系结构匹配。
+> RMS 客户端 2.1 特定于体系结构，并且必须与目标操作系统的体系结构相匹配。
 
 
-## <a name="rms-client-21-installation-options"></a>RMS 客户端 2.1 的安装选项
+## <a name="rmsclient21-installation-options"></a>RMS 客户端 2.1 的安装选项
 
 ### <a name="creating-your-deployment-package"></a>创建部署包
 
@@ -89,7 +89,7 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 客户端作为可选下�
 
 将 RMS 客户端 2.1 与应用程序集成的一个示例是 [Rights Protected Folder Explorer](https://technet.microsoft.com/library/rights-protected-folder-explorer(v=ws.10).aspx)（权限受保护的文件夹资源管理器）包。 请尝试自行安装以了解此方法。
 
-### <a name="make-rms-client-21-a-pre-requisite-for-your-application-install"></a>使 RMS 客户端 2.1 成为应用程序安装的先决条件
+### <a name="make-rmsclient21-a-pre-requisite-for-your-application-install"></a>使 RMS 客户端 2.1 成为应用程序安装的先决条件
 
 在这种情况下，将创建先决条件，这样，如果最终用户计算机上不存在 RMS 客户端 2.1，应用程序安装将会失败。
 
@@ -101,7 +101,7 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 客户端作为可选下�
 
 > [!NOTE]
 > 如果已迁移到新的 ADAL 模型进行身份验证，则无需安装 **SIA**。 有关详细信息，请参阅[适用于启用了 RMS 的应用程序的 ADAL 身份验证](adal-auth.md)。
-> 你还可以**验证适用于 Windows 10 的应用程序** - 通过将应用程序更新为使用 ADAL 身份验证而不使用 Microsoft Online 登录助手，你和你的客户将能够：使用多重身份验证；无需计算机的管理权限而安装 RMS 客户端 2.1
+> 另外，还可以**验证适用于 Windows 10 的应用程序** - 通过更新应用程序来使用 ADAL 身份验证，而不是使用 Microsoft Online 登录助手，你和你的客户将能够：利用多重身份验证安装 RMS 客户端 2.1，而无需拥有对计算机的管理权限
 
 为了让最终用户可以利用信息保护服务，必须部署 *Online Services 登录助手 (SIA)*。 应用程序开发人员不知道最终用户将通过 RMS（本地），还是通过 Azure 信息保护使用信息保护。
 
@@ -110,7 +110,7 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 客户端作为可选下�
 > 如果要使用基于 Azure 的 RMS 运行客户端应用程序，你需要创建自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](../requirements.md)。
 > 有关使用 Azure RMS 运行的详细信息，请参阅[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
--   从 Microsoft 下载中心下载 [Microsoft Online Services 登录助手](http://www.microsoft.com/download/details.aspx?id=28177)。
+-   从 Microsoft 下载中心下载 [Microsoft Online Services 登录助手](https://www.microsoft.com/download/details.aspx?id=28177)。
 -   确保已启用权限的应用程序的部署中包括此服务选项的系统必备组件检查。
 -   有关你自己的测试以及你的最终用户使用在线服务的信息，请参阅 TechNet 主题[配置 Rights Management](https://TechNet.Microsoft.Com/library/jj585002.aspx)。
 
@@ -120,7 +120,7 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 客户端作为可选下�
 
 ## <a name="related-topics"></a>相关主题
 
-* [Microsoft Online Services 登录助手](http://www.microsoft.com/download/details.aspx?id=28177)
+* [Microsoft Online Services 登录助手](https://www.microsoft.com/download/details.aspx?id=28177)
 * [配置 Rights Management](https://TechNet.Microsoft.Com/library/jj585002.aspx)
 * [使应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)
 

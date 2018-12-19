@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: abbb7e5af52952dc3ed69f2825a8e32d25ab9982
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: e5717d83ece5f188476c0f7bca677088aa4373ae
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024088"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173870"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 在为组织部署 Azure 信息保护之前，请确保你的组织租户在 Azure AD 中具有用户和组帐户。
 
@@ -113,7 +113,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 ## <a name="using-accounts-from-active-directory-on-premises-for-azure-information-protection"></a>将 Active Directory 本地帐户用于 Azure 信息保护
 
-如果你希望将本地托管的帐户用于 Azure 信息保护，则必须将其同步到 Azure AD。 为方便部署，我们建议使用 [Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect)。 但是，你可以使用可实现相同结果的任何目录同步方法。
+如果你希望将本地托管的帐户用于 Azure 信息保护，则必须将其同步到 Azure AD。 为方便部署，我们建议使用 [Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect)。 但是，你可以使用可实现相同结果的任何目录同步方法。
 
 同步帐户时，无需同步所有属性。 有关必须同步的属性列表，请参阅 Azure Active Directory 文档中的 [Azure RMS 部分](/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#azure-rms)。
 
@@ -209,7 +209,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 - 从 2018 年 2 月开始：如果包含 Azure Rights Management 或 Azure 信息保护的订阅是在当月或之后获取的，将自动为你激活此服务。 
 
-- 如果你的订阅是在 2018 年 2 月之前获取的：必须自己激活此服务。 
+- 如果订阅是在 2018 年 2 月之前获取的：则必须自己激活此服务。 
 
 有关检查激活状态等详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
 

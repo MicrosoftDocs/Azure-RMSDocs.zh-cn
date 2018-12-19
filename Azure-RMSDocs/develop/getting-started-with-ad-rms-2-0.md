@@ -1,6 +1,6 @@
 ---
 title: 入门 | Azure RMS
-description: 借助 RMS SDK 2.1 平台，开发人员可构建利用 RMS 信息保护的应用程序。
+description: 借助 RMS SDK 2.1 平台，开发人员可构建利用 RMS 信息保护的应用程序。
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -12,18 +12,18 @@ ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 2113d408356fc80efa90838bf667712d47ce7e0f
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 43e63165fcf8c19760a9f82619a02923ba55e97e
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147332"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266335"
 ---
 # <a name="getting-started"></a>开始使用
 
 Rights Management Services SDK 2.1 平台使开发人员可以通过 RMS 服务器或 Azure RMS 构建利用 RMS 信息保护的应用程序。 该平台可处理复杂的安全实践（如密钥管理、加密和解密处理），并提供简化 API 以便轻松开发应用程序。
 
-## <a name="get-started-with-rms-sdk-21"></a>RMS SDK 2.1 入门
+## <a name="get-started-with-rmssdk21"></a>RMS SDK 2.1 入门
 
 本主题将指导你完成设置过程以及在测试环境中运行启用权限的应用程序的过程。 以下主题讨论如何设置开发环境，其列出方式表示执行任务时可以使用的建议顺序。
 
@@ -39,7 +39,7 @@ Rights Management Services SDK 2.1 平台使开发人员可以通过 RMS 服务�
 | [部署到生产](deploying-your-application.md) |本主题将引导你完成启用权限的应用程序的部署选项。|
 
 
-遵循以下这些主题中的指导原则来尝试使用 RMS SDK 2.1：
+遵循以下这些主题中的指导原则来尝试使用 RMS SDK 2.1：
 
 - [安装 SDK](install-the-rms-sdk.md)
 - [配置 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
@@ -47,9 +47,9 @@ Rights Management Services SDK 2.1 平台使开发人员可以通过 RMS 服务�
 - [测试应用程序](how-to-set-up-your-test-environment.md)
 - [部署到生产](deploying-your-application.md)
 
-### <a name="why-use-rms-sdk-21-for-protecting-your-content"></a>为什么使用 RMS SDK 2.1 保护你的内容
+### <a name="why-use-rmssdk21-for-protecting-your-content"></a>为什么使用 RMS SDK 2.1 保护你的内容
 
-对于要向其新的和现有应用程序添加 RMS 支持的开发人员，RMS SDK 2.1 可帮助使以下工作更容易：
+对于要向其新的和现有应用程序添加 RMS 支持的开发人员，RMS SDK 2.1 可帮助使以下工作更容易：
 
 -   创建可管理、符合标准且强健的感知 RMS 的应用程序。
 -   持久加密用户数据。 数据保持加密状态，不考虑环境、设备或操作系统。
@@ -57,7 +57,7 @@ Rights Management Services SDK 2.1 平台使开发人员可以通过 RMS 服务�
 -   支持企业管理的保护策略。
 -   随着新身份验证机制和加密算法可用而支持它们。
 
-RMS SDK 2.1 支持一系列重要的客户端和服务器平台。 有关详细信息，请参阅 [支持的平台](supported-platforms.md)。
+RMS SDK 2.1 支持一系列重要的客户端和服务器平台。 有关详细信息，请参阅 [支持的平台](supported-platforms.md)。
 
 ## <a name="core-principles"></a>核心原则
 
@@ -68,4 +68,3 @@ RMS SDK 2.1 支持一系列重要的客户端和服务器平台。 有关详细�
 ## <a name="related-topics"></a>相关主题
 
 * [RMS 开发人员指南](developers-guide.md)
-* [AD RMS 开发人员活动角](http://blogs.msdn.com/b/rms/)

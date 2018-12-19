@@ -5,28 +5,28 @@ keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: bf1958dca3c4c1c461fa7c66758a9a6f97377569
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 8537a4a9e51b99e0dd37e7abc720473b364cd879
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147451"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173683"
 ---
 # <a name="android-code-examples"></a>Android 代码示例
 
 本文介绍了如何为 Android 版 RMS SDK 编码元素。
 
-**注意：** 在本文中，MSIPC (Microsoft Information Protection and Control) 一词是指客户端流程。
+**注意** ：在本文中，MSIPC (Microsoft Information Protection and Control) 一词是指客户端流程。
 
 
-## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>使用 Microsoft Rights Management SDK 4.2 - 重要方案
+## <a name="using-the-microsoft-rights-management-sdk42---key-scenarios"></a>使用 Microsoft Rights Management SDK 4.2 - 重要方案
 
 这些代码示例摘自较大的示例应用，即对熟悉此 SDK 十分重要的开发方案。 它们展示了如何使用以下对象：
 
@@ -38,7 +38,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
 
 ### <a name="scenario-consume-an-rms-protected-file"></a>方案：使用受 RMS 保护的文件
 
-- **第 1 步**：创建 [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx)。
+- **步骤 1**：创建 [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx)。
 
     **源**：*MsipcAuthenticationCallback.java*
 
@@ -104,11 +104,11 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
         }
     ```
 
-- **第 2 步**：使用 Active Directory Authentication Library (ADAL) 设置身份验证。
+- **步骤 2**：使用 Active Directory 身份验证库 (ADAL) 设置身份验证。
 
     **源**：*MsipcAuthenticationCallback.java*。
 
-    **说明**：在这一步中，需要使用 ADAL 实现包含示例身份验证参数的 [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx)。 若要了解详细信息，请参阅 [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。
+    **说明**：此步骤中需要使用 ADAL 来实现具有示例身份验证参数的 [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx)。 若要了解详细信息，请参阅 [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。
 
 
     ``` java
@@ -185,7 +185,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
                       }
     ```
 
-- **步骤 3**：通过 [UserPolicy.accessCheck](https://msdn.microsoft.comlibrary/dn790885.aspx) 方法检查此用户对于该内容是否具有 **Edit** 权限。
+- **步骤 3**：通过 [UserPolicy.accessCheck](https://msdn.microsoft.com/library/dn790885.aspx) 方法检查此用户对于此内容是否具有 Edit 权限。
 
     **源**：*TextEditorFragment.java*
 
@@ -357,7 +357,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
 
 ### <a name="scenario-open-a-custom-protected-file"></a>方案：打开自定义受保护的文件
 
-- **步骤 1**：从 *serializedContentPolicy* 创建 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
+- **步骤 1**：从 serializedContentPolicy 创建 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -417,7 +417,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
     ```
 
 
-- **步骤 2**：使用 **步骤 1** 中的 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) 创建 [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx)。
+- **步骤 2**：使用步骤 1 中的 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) 创建 [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx)。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -488,7 +488,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
     }
     ```
 
-- **步骤 3**：将内容从 [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx) 读取到 *mDecryptedContent* 中，然后关闭。
+- **步骤 3**：将内容从 [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx) 读取到 mDecryptedContent 中，然后关闭。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -529,7 +529,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
 
     **源**：*MsipcTaskFragment.java*
 
-    **说明**：实际上，将使用用户在设备界面中输入的内容创建以下对象；[UserRights](https://msdn.microsoft.com/library/dn790911.aspx) 和 [PolicyDescriptor](https://msdn.microsoft.com/library/dn790843.aspx)。
+    **说明**：在实践中，将使用用户在设备界面中输入的内容创建以下对象；[UserRights](https://msdn.microsoft.com/library/dn790911.aspx) 和 [PolicyDescriptor](https://msdn.microsoft.com/library/dn790843.aspx)。
 
     ``` java
       // create userRights list
@@ -546,7 +546,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
     ```
 
 
-- **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
+- **步骤 2**：通过策略描述符 selectedDescriptor 创建自定义 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
 
     **源**：*MsipcTaskFragment.java*
 

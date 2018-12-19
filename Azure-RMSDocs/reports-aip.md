@@ -4,19 +4,19 @@ description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 12/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 8dc53c6bad6c8f68ac5786afb0600cafb6398765
-ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
+ms.openlocfilehash: 58ea955deef9341ec80b516b89feec609389b9ad
+ms.sourcegitcommit: 4caf3aa13506554928c5fda38994301ddcbdfb41
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52953306"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068803"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -69,7 +69,11 @@ ms.locfileid: "52953306"
     
 报表使用 [Azure Log Analytics](/azure/log-analytics/log-analytics-overview) 将数据存储在组织拥有的工作区中。 如果你熟悉查询语言，可以修改这些查询，并创建新报表和 Power BI 仪表板。 以下教程可能有助于你了解查询语言：[Analytics 门户入门](https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal)。 
 
-有关详细信息，请参阅博客文章：[Microsoft 信息保护中有关你的所有数据的数据发现、报告和分析](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)。
+有关详细信息，请参阅以下博客文章： 
+
+- [Microsoft 信息保护中有关所有数据的数据发现、报告和分析](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)
+
+- [通过 Azure 信息保护和 Windows Defender ATP 发现和保护敏感数据](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Discover-and-protect-sensitive-data-through-Azure-Information/ba-p/297292)
 
 ### <a name="information-collected-and-sent-to-microsoft"></a>收集和发送到 Microsoft 的信息
 
@@ -116,9 +120,9 @@ ms.locfileid: "52953306"
 
 3. 在“Azure 信息保护日志分析”边栏选项卡上，可以看到由你的租户拥有的任何 Log Analytics 工作区的列表。 执行以下操作之一：
     
-    - 若要新建 Log Analytics 工作区，请选择“创建新工作区”，并在“Log Analytics 工作区”边栏选项卡上提供所需信息。
+    - 创建新的 Log Analytics 工作区：请选择“创建新工作区”，并在“Log Analytics 工作区”边栏选项卡上提供所需信息。
     
-    - 若要使用现有 Log Analytics 工作区：从列表中选择工作区。
+    - 使用现有的 Log Analytics 工作区：从列表中选择工作区。
 
 如果需要创建 Log Analytics 工作区的帮助，请参阅[在 Azure 门户中创建 Log Analytics 工作区](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace)。
 
@@ -128,15 +132,15 @@ ms.locfileid: "52953306"
 
 在“Azure 信息保护”边栏选项卡中，找到“仪表板”菜单选项，然后选择以下选项之一：
 
-- 使用情况报表（预览版）：使用此报表查看标签是如何使用的。 
+- **使用情况报表(预览版)**：使用此报表查看标签是如何使用的。 
 
-- **活动日志（预览版）**：使用此报表可查看用户执行的标记操作，以及在设备中和对文件路径执行的标记操作。
+- **活动日志(预览版)**：使用此报表查看用户执行的标记操作，以及设备上和对文件路径执行的标记操作。
     
     此报表目前正在向租户推出，因此如果看不到它，请在几天后重试。
     
     此报表有“列”选项，可用于显示默认显示信息之外的更多活动信息。
 
-- **数据发现（预览版）**：使用此报表查看扫描程序或 Windows Defender ATP 找到的文件的相关信息。
+- **数据发现(预览版)**：使用此报表查看扫描程序或 Windows Defender ATP 找到的文件的相关信息。
 
 ## <a name="how-to-modify-the-reports"></a>如何修改报表
 
@@ -145,7 +149,7 @@ ms.locfileid: "52953306"
 ![自定义 Azure 信息保护报表的 Log Analytics 图标](./media/log-analytics-icon.png)
 
 
-Azure 信息保护的记录数据存储在下表中：InformationProtectionLogs_CL
+Azure 信息保护的记录数据存储在下表中：**InformationProtectionLogs_CL**
 
 ## <a name="next-steps"></a>后续步骤
 查看报表中的信息后，你可能会决定对你的 Azure 信息保护策略进行更改。 有关说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。

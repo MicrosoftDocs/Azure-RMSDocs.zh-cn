@@ -4,48 +4,48 @@ description: 确定哪些设备支持 Azure 信息保护中的 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/14/2017
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2004ca8962f1ef40c101ad75b7ea06b1ac30dccd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 673e57a9a63dfb88ab9ef5f92a0f692ed31d7cdb
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146431"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304938"
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的客户端设备
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 若要确定哪些设备支持 Azure Rights Management 服务，请参阅以下部分。 此服务为 Azure 信息保护提供数据保护。
 
 ## <a name="computers"></a>计算机
-以下计算机操作系统支持 Azure Rights Management 服务：
+以下计算机操作系统支持 Azure Rights Management 服务：
 
 -   **Windows 7** (x86, x64)
 
--   **Windows 8** (x86, x64)
+-   **Windows 8** (x86, x64)
 
--   **Windows 8.1** (x86, x64)
+-   **Windows 8.1** (x86, x64)
 
--   **Windows 10** (x86, x64)
+-   **Windows 10** (x86, x64)
 
--   **macOS**：最低版本为 macOS 10.8 (Mountain Lion)
+-   **macOS**：最低版本为 macOS 10.8 (Mountain Lion)
 
 ## <a name="mobile-devices"></a>移动设备
-以下移动设备操作系统支持 Azure Rights Management 服务：
+以下移动设备操作系统支持 Azure Rights Management 服务：
 
 -   **Windows Phone**：Windows Phone 8.1
 
--   **Android 手机和平板电脑**：最低版本的 Android 4.4
+-   **Android 手机和平板电脑**:最低版本为 Android 4.4
 
--   **iPhone 和 iPad**：最低版本为 iOS 8.0
+-   **iPhone 和 iPad**:最低版本为 iOS 8.0
 
--   **Windows 平板电脑**：Windows 10 Mobile 和 Windows 8.1 RT
+-   **Windows 平板电脑**:Windows 10 移动版和 Windows Phone 8.1 RT
 
 
 ## <a name="next-steps"></a>后续步骤

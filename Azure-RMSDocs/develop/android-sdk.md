@@ -1,6 +1,6 @@
 ---
 title: Android 安装程序 |Azure RMS
-description: Android 应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
+description: Android 应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -12,16 +12,16 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d6a851cc5568b14b1f18ad71169b2c0e6efc136b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 242700c089e34bc69eef10a45ea761f9668f4a42
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147505"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266641"
 ---
 # <a name="android-setup"></a>Android 安装程序
 
-Android 应用程序可以通过使用 Azure Active Directory Rights Management (AAD RM)，利用 Microsoft Rights Management SDK 4.2 在其应用中启用集成信息保护。
+Android 应用程序可以通过使用 Azure Active Directory Rights Management (AAD RM)，利用 Microsoft Rights Management SDK 4.2 在其应用中启用集成信息保护。
 
 本主题将指导你完成环境设置过程，以创建自己的新应用。
 
@@ -34,14 +34,14 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 我们建议在开发系统上安装以下软件：
 
--   Windows 或 OS X 操作系统，用于运行 [Eclipse](http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html) 开发环境。
+-   Windows 或 OS X 操作系统，用于运行 [Eclipse](https://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html) 开发环境。
 -   本指南假定你在使用从 Eclipse Juno 4.2 开始的 Eclipse SDK 并使用默认安装。
 -   从 Java 1.6 开始的 Java。
--   [Android 开发人员工具 (ADT) 插件](http://developer.android.com/sdk/installing/index.html)。 注意 - 可能会请你重新启动 Eclipse 以完成安装。
+-   [Android 开发人员工具 (ADT) 插件](https://developer.android.com/studio/install)。 注意 - 可能会请你重新启动 Eclipse 以完成安装。
 
-     
+     
 
--   Android 的 MS RMS SDK 4.2 包。 有关详细信息，请参阅[入门](get-started.md)。
+-   适用于 Android 的 MS RMS SDK 4.2 包。 有关详细信息，请参阅[入门](get-started.md)。
 
     此 SDK 可以用于为 Android 4.0.3（API 级别 15）及更高版本进行开发。
 
@@ -49,9 +49,9 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
     有关详细信息，请参阅 [ADAL for Android](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)
 
-    **注意**  如果应用程序未使用 ADAL 库作为 OAuth 2.0 身份验证库，则你应该查看本 Android 指南 [一些 SecureRandom 想法](http://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html)。
+    **注意**  如果应用程序未使用 ADAL 库作为 OAuth 2.0 身份验证库，则你应该查看本 Android 指南 - [一些 SecureRandom 想法](https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html)。
 
-     
+     
 
 有关 API 更新、发行说明和常见问题解答 (FAQ) 的信息，请阅读[新增功能](release-notes.md)主题。
 
@@ -61,9 +61,9 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 ## <a name="configuring-your-development-environment"></a>配置开发环境
 
-**注意**  MS RMS SDK 4.2 预览版本中：在此预览版本中，屏幕截图尚未更新为可显示路径名称从 com/microsoft/protection 到 com/microsoft/rightsmanagment 的更改。 不过文本已进行了更新。
+**请注意**  MS RMS SDK 4.2 预览版本：在此预览版本中，屏幕截图尚未更新为可显示路径名称从 com/microsoft/protection 到 com/microsoft/rightsmanagment 的更改。 不过文本已进行了更新。
 
- 
+ 
 -   打开 Eclipse 开发环境。
 -   若要创建新 Android 应用程序项目，请在 **“文件”** 菜单上，单击 **“新建”**，单击 **“项目”**，然后选择 **“Android 应用程序项目”**。
 
@@ -117,7 +117,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 -   单击" **确定**"。
 
-    因为 MS RMS SDK 4.2 与 AAD RM 相连接，所以必须向应用程序授予 **INTERNET** 和 **ACCESS\_NETWORK\_STATE** 权限。 为此，请在项目的根目录中打开 *AndroidManifest.xml* 文件。
+    因为 MS RMS SDK 4.2 与 AAD RM 相连接，所以必须向应用程序授予 INTERNET 和 ACCESS\_NETWORK\_STATE 权限。 为此，请在项目的根目录中打开 *AndroidManifest.xml* 文件。
 
     若要添加权限，请单击 **“添加”**，然后选择 **“使用权限”**。
 
@@ -134,7 +134,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
     <uses-permission/>
    ```
 
-**注意**  SDK 使用 *android.support.v4*
+**注意**  SDK 使用 android.support.v4
 
 -   你现在已准备就绪，可创建新 Android 应用。
 

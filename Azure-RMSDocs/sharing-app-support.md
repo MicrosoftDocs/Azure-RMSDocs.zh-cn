@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e78a870afea9828bf2020aca7007db9a766a1076
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 16110efd8d0874ba1235cc02576848d122203ea8
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023281"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173428"
 ---
 # <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Windows 和移动平台的 RMS 共享应用程序
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!IMPORTANT]
 > **终止支持通知**：[Azure 信息保护客户端](./rms-client/aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 
@@ -46,7 +46,7 @@ RMS 共享应用程序是支持适用于 Windows 计算机的 Office 2010 的可
 
 适用于移动设备的 RMS 共享应用程序支持最常用的移动设备，例如 iPad 和 iPhone、Android、Windows Phone 和 Windows RT。 用户可以从相关应用商店下载此应用， [Microsoft 权限管理页](https://go.microsoft.com/fwlink/?LinkId=303970)提供这些应用商店的链接。
 
-**如果你有 Microsoft Intune**：因为 RMS 共享应用包括了 Microsoft Intune 应用软件开发工具包，所以你可以使用以下选项：
+**如果有 Microsoft Intune**：因为 RMS 共享应用包括了 Microsoft Intune 应用软件开发工具包，所以你可以使用以下选项：
 
 -   为通过 Intune 注册的 iOS 和 Android 设备部署和管理该应用。
 

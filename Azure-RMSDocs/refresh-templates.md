@@ -4,22 +4,22 @@ description: 使用 Azure Rights Management 服务时，模板会自动下载到
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/25/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 90c046f0cf2f954e70a17d127bc99b0479115928
-ms.sourcegitcommit: a5fd0afd84b62f84c3b9f0d076fab1b674267bf3
+ms.openlocfilehash: 10e381e68c75f2f401439ee330bf952b01b22c30
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083874"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305278"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用 Azure 信息保护的 Azure Rights Management 服务时，模板会自动下载到客户端计算机，因而用户能够从他们的应用程序选择这些模板。 但是，如果你对模板进行了更改，可能还需要执行附加步骤：
 
@@ -28,7 +28,7 @@ ms.locfileid: "50083874"
 |Exchange Online<br /><br />适用于传输规则和 Outlook Web App |1 小时内自动刷新 – 无需额外的步骤。<br /><br />如果使用[具有新功能的 Office 365 邮件加密](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)，则会出现这种情况。 如果之前已通过导入受信任的发布域 (TPD) 将 Exchange Online 配置为使用 Azure Rights Management 服务，请使用同一系列的说明在 Exchange Online 中启用这些新功能。|
 |Azure 信息保护客户端|每当在客户端上的 Azure 信息保护策略刷新时，都会自动刷新：<br /><br /> - 打开支持 Azure 信息保护栏的 Office 应用程序时。 <br /><br /> - 右键单击以分类和保护文件或文件夹时。 <br /><br /> - 运行 PowerShell cmdlet 以实现标记和保护（Get-AIPFileStatus 和 Set-AIPFileLabel）。<br /><br /> - 启动 Azure 信息保护扫描程序服务时，以及本地策略已执行超过一小时时。 此外，扫描程序服务每小时检查一次更改，并将在下一个扫描周期中使用这些更改。<br /><br /> - 每 24 小时一次。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此任何适用于 Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护客户端进行刷新。|
 |Azure 信息保护统一标签客户端（预览版）|每个 Office 应用每 4 小时自动刷新。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此任何适用于 Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护统一标签客户端进行刷新。|
-|Office 2016 和 Office 2013<br /><br />适用于 Windows 的 RMS 共享应用程序|自动刷新 – 按计划刷新：<br /><br />- 对于更高版本的 Office：默认刷新时间间隔为 7 天。<br /><br />- 对于 Windows RMS 共享应用程序：对于版本 1.0.1784.0 及更高版本，默认刷新时间间隔为 1 天。 以前版本的默认刷新间隔为 7 天。<br /><br />若要强制早于计划执行刷新，请参阅以下部分 [Office 2016、Office 2013 和 Windows RMS 共享应用程序：如何强制刷新更改的自定义模板](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template)。|
+|Office 2016 和 Office 2013<br /><br />适用于 Windows 的 RMS 共享应用程序|自动刷新 – 按计划刷新：<br /><br />- 对于这些更高版本的 Office：默认刷新间隔是 7 天。<br /><br />- 对于适用于 Windows 的 RMS 共享应用程序：从版本 1.0.1784.0 开始，默认刷新间隔是 1 天。 以前版本的默认刷新间隔为 7 天。<br /><br />若要早于计划强制执行刷新，请参阅以下部分 [Office 2016、Office 2013 和 Windows RMS 共享应用程序：如何强制刷新更改的自定义模板](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template)。|
 |Office 2010|当用户注销 Windows 后重新登录并等待长达 1 小时时自动刷新。|
 |Exchange 內部部署与权限管理连接器<br /><br />适用于传输规则和 Outlook Web App|自动刷新 – 无需额外的步骤。 但是，Outlook Web App 可将该 UI 缓存一天。|
 |Office 2016 for Mac|自动刷新 – 无需额外的步骤。|
@@ -47,7 +47,7 @@ ms.locfileid: "50083874"
 
 1.  使用注册表编辑器，创建并设置以下注册表值中的某一个：
 
-    - 设置以天为单位的更新频率（最少为 1 天）：创建名为“TemplateUpdateFrequency”  的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以天为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
+    - 设置以天为单位的更新频率（最少为 1 天）：创建名为“TemplateUpdateFrequency”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以天为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
 
         **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -55,7 +55,7 @@ ms.locfileid: "50083874"
 
         **值：** TemplateUpdateFrequency
 
-    - 设置以秒为单位的更新频率（最少为 1 秒）：创建名为“TemplateUpdateFrequencyInSeconds”  的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以秒为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
+    - 设置以秒为单位的更新频率（最少为 1 秒）：创建名为“TemplateUpdateFrequencyInSeconds”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以秒为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
 
         **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -71,7 +71,7 @@ ms.locfileid: "50083874"
 
 1.  使用注册表编辑器，删除“LastUpdatedTime”  值的数据。 例如，数据可能显示 **2015-04-20T15:52**；删除 2015-04-20T15:52 后，不会显示任何数据。 使用以下信息查找删除此注册表值数据的注册表路径。
 
-    **注册表路径**：HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<MicrosoftRMS_FQDN>\Template\\<user_alias>
+    **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<MicrosoftRMS_FQDN>\Template\\<user_alias>
 
     **类型：** REG_SZ
 
@@ -80,11 +80,11 @@ ms.locfileid: "50083874"
     > [!TIP]
     > 在注册表路径中，<*MicrosoftRMS_FQDN*> 是指你的 Microsoft RMS 服务 FQDN。 如果你想要验证此值：
 
-    > 对 Azure RMS 运行 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet。 如果尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。
+    > 对 Azure RMS 运行 [Get-AadrmConfiguration](/powershell/module/aadrm/get-aadrmconfiguration) cmdlet。 如果尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。
     >
     > 在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
     >
-    > 例如：LicensingIntranetDistributionPointUrl：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
+    > 例如：**LicensingIntranetDistributionPointUrl： https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
     > 
     > 在该值中，将 **https://** 和 **/_wmcs/licensing** 从该字符串中删除。 剩下的值就是 Microsoft RMS 服务 FQDN。 在我们的示例中，Microsoft RMS 服务 FQDN 会是以下值：
     >

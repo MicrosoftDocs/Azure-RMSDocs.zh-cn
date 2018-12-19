@@ -10,24 +10,24 @@ ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 43ff5d8fabf8197ba8ea235b01258dff12a5acd4
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 4ef35134a8f5d6a3a8a615be6c956ec5e445557d
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024138"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173734"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 为组织部署 Azure 信息保护之前，请确保具备以下必备条件。 
 
 ## <a name="subscription-for-azure-information-protection"></a>Azure 信息保护订阅
 
-**若要使用分类、设置标签和保护**，必须拥有 [Azure 信息保护计划](https://azure.microsoft.com/pricing/details/information-protection/)。 
+**对于分类、标记和保护**：必须拥有一个 [Azure 信息保护计划](https://azure.microsoft.com/pricing/details/information-protection/)。 
 
-**若仅需保护**，必须拥有[包括 Azure 信息保护的 Office 365计划](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
+**对于仅保护**：必须拥有一个[包括 Azure 信息保护的 Office 365 计划](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
 
 若要确认组织的订阅包括所需的 Azure 信息保护功能，请查看 [Azure 信息保护定价](https://azure.microsoft.com/pricing/details/information-protection)页面中的功能列表。
 
@@ -116,7 +116,7 @@ Azure 信息保护客户端不支持同一台计算机上的多个 Office 版本
 
 - 不要终止与 aadrm.com URL 的 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 这样做会中断 RMS 客户端用于 Microsoft 托管 CA 的证书固定，之所以使用固定是为了帮助保护它们与 Azure Rights Management 服务的通信安全。
     
-    - 提示：鉴于 Chrome 在地址栏中显示安全连接的方式，可以使用此浏览器在访问 Azure Rights Management 服务前，快速检查客户端连接是否已终止。 请在此浏览器地址栏中输入以下 URL：`https://admin.na.aadrm.com/admin/admin.svc` 
+    - 提示：鉴于 Chrome 在地址栏中显示安全连接的方式，可以使用此浏览器在访问 Azure Rights Management 服务前快速检查客户端连接是否已终止。 请在此浏览器地址栏中输入以下 URL：`https://admin.na.aadrm.com/admin/admin.svc` 
     
         不必担心浏览器窗口显示什么内容。 相反，单击地址栏中的挂锁，即可查看网站信息。 在网站信息中，可以查看证书发证机构 (CA)。 如果证书不是由 Microsoft CA 颁发，表明客户端与服务的安全连接很可能即将终止，并需要重新配置防火墙。 下图中的示例展示了 Microsoft 证书发证机构 (CA)。 如果看到的是内部 CA 颁发的证书，表明此配置与 Azure 信息保护不兼容。
         

@@ -4,24 +4,24 @@ description: 有关如何使用 Azure Rights Management (Azure RMS) 的使用日
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1deea1b4353e2d48c85ae24625ab29eca96a3968
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 3d287df4fbea3f4b040444182aed89da7c470ea1
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47211320"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305635"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>记录和分析 Azure Rights Management 服务的使用情况
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
-使用此信息以帮助用户了解如何使用 Azure 信息保护中的 Azure Rights Management 服务使用情况日志记录。 该服务为组织的文档和电子邮件提供数据保护，并且可以将每个请求记录下来。 这些请求包括在用户保护文档和电子邮件以及使用此内容时，管理员为该服务执行的操作，以及 Microsoft 操作员为了支持 Azure 信息保护部署而执行的操作。 
+使用此信息以帮助了解如何使用 Azure 信息保护中的 Azure Rights Management 服务使用情况日志记录。 该服务为组织的文档和电子邮件提供数据保护，并且可以将每个请求记录下来。 这些请求包括在用户保护文档和电子邮件以及使用此内容时，管理员为该服务执行的操作，以及 Microsoft 操作员为了支持 Azure 信息保护部署而执行的操作。 
 
 可以使用这些 Azure Rights Management 服务日志来支持以下业务方案：
 
@@ -37,7 +37,7 @@ ms.locfileid: "47211320"
 
 -   **执行取证分析**
 
-    如果遇到信息泄露，安全人员很可能向你询问最近谁访问了特定文档，以及可疑人员最近访问了哪些信息。 使用该日志记录时可以回答这些问题，因为使用受保护内容的用户始终必须获取 Rights Management 许可证才能打开受 Azure Rights Management 服务保护的文档和图片，即便这些文件已通过电子邮件移动或复制到 U 盘/其他存储设备。 这意味着通过 Azure Rights Management 服务保护数据时，能够使用这些日志作为确定性信息源进行取证分析。
+    如果遇到信息泄露，安全人员很可能向你询问最近谁访问了特定文档，以及可疑人员最近访问了哪些信息。 使用此日志记录时可以回答这些问题，因为使用受保护内容的用户始终必须获取 Rights Management 许可证才能打开受 Azure Rights Management 服务保护的文档和图片，即便这些文件已通过电子邮件移动或复制到 U 盘/其他存储设备。 这意味着通过使用 Azure Rights Management 服务保护数据时，能够使用这些日志作为确定性信息源进行取证分析。
 
 除了此使用日志记录之外，还可以使用以下日志记录选项：
 
@@ -50,10 +50,10 @@ ms.locfileid: "47211320"
 
 此外，会收集并聚合 Azure 信息保护客户端使用情况日志和 Azure 信息保护扫描程序中的信息以在 Azure 门户中创建报表。 有关详细信息，请参阅 [Azure 信息保护报表](reports-aip.md)。
 
-有关 Azure 权限管理服务使用日志记录的详细信息，请参阅以下部分。 
+有关 Azure Rights Management 服务使用日志记录的详细信息，请参阅以下部分。 
 
-## <a name="how-to-enable-azure-rights-management-usage-logging"></a>如何启用 Azure Rights Management 使用日志记录
-从 2016 年 2 月开始，Azure Rights Management 使用日志记录功能默认为对所有用户启用。 这适用于在 2016 年 2 月以前已激活其 Azure Rights Management 服务的客户和在 2016 年 2 月后激活该服务的客户。 
+## <a name="how-to-enable-azure-rightsmanagement-usage-logging"></a>如何启用 Azure Rights Management 使用日志记录
+从 2016 年 2 月开始，默认情况下为所有客户启用 Azure Rights Management 使用日志记录。 这适用于在 2016 年 2 月以前已激活其 Azure Rights Management 服务的客户和在 2016 年 2 月后激活该服务的客户。 
 
 > [!NOTE]
 > 不针对日志存储或日志记录功能收取额外的费用。
@@ -125,15 +125,15 @@ Azure Rights Management 服务将日志作为一系列 blob 写入。
 ### <a name="the-blob-format"></a>Blob 格式
 所有 Blob 都采用 W3C 扩展日志格式。 开头是以下两行：
 
-**#软件：RMS**
+**#Software:RMS**
 
-**#版本：1.1**
+**#Version:1.1**
 
 第一行标识这些是 Azure Rights Management 日志。 第二行标识 Blob 的剩余部分遵循版本 1.1 规范。 我们建议，用于解析这些日志的任何应用程序都应先验证这两行，然后再继续解析 Blob 的剩余部分。
 
 第三行枚举字段名称列表，以制表符分隔：
 
-**#字段: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
+**#Fields: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
 
 后面的每行都是日志记录。 这些字段的值与前一行具有相同的顺序，并且以制表符分隔。 请使用下表分析这些字段。
 
@@ -163,7 +163,7 @@ Azure Rights Management 服务将日志作为一系列 blob 写入。
 
 -   值 **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**。
 
-    它指示 Office 365 服务（例如 Exchange Online 或 Sharepoint Online）正在发出请求。 在此字符串中，*&lt;YourTenantID&gt;* 是你租户的 GUID，*&lt;region&gt;* 是你租户注册的区域。 例如， **na** 代表北美， **eu** 代表欧洲， **ap** 代表亚洲。
+    它指示 Office 365 服务（例如 Exchange Online 或 SharePoint Online）正在发出请求。 在此字符串中，*&lt;YourTenantID&gt;* 是你租户的 GUID，*&lt;region&gt;* 是你租户注册的区域。 例如， **na** 代表北美， **eu** 代表欧洲， **ap** 代表亚洲。
 
 -   如果你使用 RMS 连接器。
 

@@ -4,18 +4,18 @@ description: 有关使用 RMS 连接器在服务器上进行注册表设置的�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
-ms.topic: article
+ms.date: 12/06/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9b99f914e78adafbcfd0f01f0937c6d636f43159
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 6af7fe3a7b23f655a79d67421f67292416792792
+ms.sourcegitcommit: 0632c89a316ff31f588e9752dd474445983b1690
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808690"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53120573"
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 连接器的注册表设置
 
@@ -28,11 +28,11 @@ ms.locfileid: "42808690"
 
 -   \<YourTenantURL> 是 Azure 信息保护租户的 Azure 权限管理服务 URL。 查找此值：
 
-    1.  为 Azure 权限管理服务运行 [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet。 如果尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。
+    1.  为 Azure 权限管理服务运行 [Get-AadrmConfiguration](/powershell/module/aadrm/get-aadrmconfiguration) cmdlet。 如果尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。
 
     2.  在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
 
-        例如：LicensingIntranetDistributionPointUrl：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
+        例如：LicensingIntranetDistributionPointUrl： https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing
 
     3.  在该值中，将 **/_wmcs/licensing** 从此字符串删除。 剩余字符串为 Azure 权限管理服务 URL。 在本示例中，Azure 权限管理服务 URL 为以下值：
 
@@ -55,7 +55,7 @@ ms.locfileid: "42808690"
 
 **值：** 默认
 
-数据：https://\<YourTenantURL>/_wmcs/certification
+数据： https://\<YourTenantURL>/_wmcs/certification
 
 ---
 
@@ -88,7 +88,7 @@ ms.locfileid: "42808690"
 
 **类型：** Reg_SZ
 
-值：https://<\YourTenantURL>
+值： https://<\YourTenantURL>
 
 
 **数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
@@ -106,7 +106,7 @@ ms.locfileid: "42808690"
 
 **值：** 默认
 
-数据：https://<\YourTenantURL>/_wmcs/certification
+数据： https://<\YourTenantURL>/_wmcs/certification
 
 ---
 
@@ -116,7 +116,7 @@ ms.locfileid: "42808690"
 
 **值：** 默认
 
-数据：https://<\YourTenantURL>/_wmcs/Licensing
+数据： https://<\YourTenantURL>/_wmcs/Licensing
 
 ---
 
@@ -124,7 +124,7 @@ ms.locfileid: "42808690"
 
 **类型：** Reg_SZ
 
-值：https://<\YourTenantURL>
+值： https://<\YourTenantURL>
 
 **数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
@@ -138,7 +138,7 @@ ms.locfileid: "42808690"
 
 **类型：** Reg_SZ
 
-值：https://<\YourTenantURL>
+值： https://<\YourTenantURL>
 
 **数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
@@ -153,7 +153,7 @@ ms.locfileid: "42808690"
 
 **类型：** Reg_SZ
 
-值：https://<\YourTenantURL>/_wmcs/licensing
+值： https://<\YourTenantURL>/_wmcs/licensing
 
 
 **数据：** 以下前缀之一，具体取决于 SharePoint 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
@@ -164,7 +164,7 @@ ms.locfileid: "42808690"
 
 ---
 
-**注册表路径:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification
+**注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification
 
 **类型：** Reg_SZ
 
@@ -202,7 +202,7 @@ ms.locfileid: "42808690"
 
 **值：** 默认
 
-数据：http://<\ConnectorFQDN>/_wmcs/licensing
+数据： http://<\ConnectorFQDN>/_wmcs/licensing
 
 ---
 

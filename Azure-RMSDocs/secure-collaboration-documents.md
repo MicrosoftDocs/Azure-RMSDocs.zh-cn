@@ -4,22 +4,22 @@ description: 用于在受 Azure 信息保护保护的文档上进行协作的端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/21/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1b11f50bcf2090129211f3dd09cff867cfbdcb7b
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: eb2e2538246ea5c8ca42f6270e535c73dda71774
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026649"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305499"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 当你使用 Azure 信息保护时，你可以保护你的文档，而无需牺牲授权用户的协作。 一个用户创建并与他人共享以进行查看和编辑的大多数文档将是 Word、Excel 和 PowerPoint 等 Office 文档。 这些文档支持本地保护，这意味着除了授权和加密的保护功能外，它们还支持受限权限以实现更细化的控制。 
 
@@ -27,9 +27,9 @@ ms.locfileid: "51026649"
 
 配置这些权限时，可以指定向哪些用户授予它们：
 
-- **对于你自己的组织或使用 Azure Active Directory 的另一组织中的用户**：可以指定 Azure AD 用户帐户、Azure AD 组或该组织中的所有用户。 
+- **对于自己组织中或其他组织中使用 Azure Active Directory 的用户**：可以指定 Azure AD 用户帐户、Azure AD 组或该组织中的所有用户。 
 
-- **对于没有 Azure Active Directory 帐户的用户**：指定将与 Microsoft 帐户一起使用的电子邮件地址。 此帐户可能已经存在，或者用户可以在打开受保护文档时进行创建。 
+- **对于不具有 Azure Active Directory 帐户的用户**：指定将与 Microsoft 帐户一起使用的电子邮件地址。 此帐户可能已经存在，或者用户可以在打开受保护文档时进行创建。 
     
     若要使用 Microsoft 帐户打开文档，用户必须使用 Office 2016 即点即用。 其他 Office 版本尚不支持使用 Microsoft 帐户打开受 Office 保护的文档。
 
@@ -56,9 +56,9 @@ ms.locfileid: "51026649"
     
     - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如，sales@contoso.com 。
     
-    - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，键入用户的电子邮件地址。 例如，bengi.turan@gmail.com 。 
+    - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，输入用户的电子邮件地址。 例如，bengi.turan@gmail.com 。 
 
-4. 若要向所有这些用户授予相同的权限：对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。
+4. 向这些用户授予相同的权限：对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。
     
     例如，你配置的权限可能与以下内容相似：
         

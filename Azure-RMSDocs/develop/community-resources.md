@@ -12,19 +12,20 @@ ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 08ea1a1dfda69221657e738459f2b758a5014b05
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c6a1c0fa6d3783ce7eb618f56316fdbe1141bd77
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150239"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266454"
 ---
 # <a name="community-resources"></a>社区资源
 
 不断壮大的开发人员群体可在多个平台上很好地支持 Active Directory Rights Management Services。
 
 ## <a name="developers-blog"></a>开发人员博客
-[RMS 开发人员活动角（博客）](http://blogs.msdn.com/b/rms/)是信息保护开发人员的活动中心。
+[Microsoft RMS 云 TechNet 论坛](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)。
+[Stack Overflow Azure RMS](https://stackoverflow.com/search?q=Azure+RMS)
 
 ## <a name="microsoft-connect"></a>Microsoft Connect
 在 Connect 站点上的 Rights Management Services 部分上，你可找到当前可交付结果并有机会提供反馈。
@@ -33,7 +34,7 @@ ms.locfileid: "44150239"
 >
 >如果你尚未在 Microsoft Connect 上注册，请执行以下操作：
 >
->-   导航到 [Microsoft Connect](http://connect.microsoft.com) (http://connect.microsoft.com))
+>-   导航到 [Microsoft Connect](https://connect.microsoft.com) (https://connect.microsoft.com))
 >-   使用你的 Microsoft 帐户登录
 >-   单击命令栏上的“目录”
 >-   搜索“Rights Management Services”

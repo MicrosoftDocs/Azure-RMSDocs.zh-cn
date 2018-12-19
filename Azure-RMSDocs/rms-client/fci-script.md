@@ -4,18 +4,18 @@ description: 要复制和编辑的示例脚本，如“使用 Windows Server 文
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/26/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: be5b7c658fcdd2c5d4d03de21a89bfda51039539
-ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
+ms.openlocfilehash: 9a59be70117f4ed2dd0a0c3bb14bc9fa6f0c530d
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47233688"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305108"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）
 
@@ -25,7 +25,7 @@ ms.locfileid: "47233688"
 
 对于 AzureInformationProtection 模块，此脚本使用的最低版本为 **1.3.155.2**。 运行以下命令以检查版本：`(Get-Module AzureInformationProtection -ListAvailable).Version` 
 
-*&#42;&#42;免责声明&#42;&#42;：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。此示例脚本按原样提供，不提供任何形式的保证。*
+*&#42;&#42;免责声明&#42;&#42;:此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。此示例脚本按原样提供，不提供任何形式的保证。*
 
 ```
 <#

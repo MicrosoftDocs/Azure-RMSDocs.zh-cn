@@ -11,20 +11,20 @@ ms.custom: askipteam
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ab3d976a1aa39829e83aaef0c34fdf5f3f377fe7
-ms.sourcegitcommit: eefbf103e5360594248969281b8091c8c096b352
+ms.openlocfilehash: 416cb479be67f575e4d59bfaecf1dd86eb98aab0
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52671023"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53172884"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>如何从 Office 365 管理中心激活 Azure 权限管理
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 如果你有权可以在 Office 365 管理中心内访问 Azure 权限管理服务，并且是全局管理员，请按照下列说明操作。 
 
-若要激活 Azure 权限管理服务，必须拥有 [Azure Information Protection Premium plan](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)（Azure 信息保护高级计划）或 [Office 365 plan that includes Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)（包含权限管理的 Office 365 计划）。 例如，组织有 Office 365 E3 或 Office 365 E5 计划。 
+若要激活 Azure 权限管理服务，必须拥有 [Azure Information Protection Premium plan](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)（Azure 信息保护高级计划）或 [Office 365 plan that includes Rights Management](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)（包含权限管理的 Office 365 计划）。 例如，组织有 Office 365 E3 或 Office 365 E5 计划。 
 
 如果你对订阅要求有任何疑问，或需要获取激活服务方面的帮助，请[联系 Microsoft 支持部门](information-support.md#to-contact-microsoft-support)或使用标准支持渠道。
 
@@ -35,7 +35,7 @@ ms.locfileid: "52671023"
     > [!TIP]
     > 有关管理中心的帮助，请参阅[关于 Office 365 管理中心](https://support.office.com/article/About-the-Office-365-Admin-Center-758befc4-0888-4009-9f14-0d147402fd23)。
     
-    若要从管理中心转到“权限管理”页，请依次选择“设置” > “服务和加载项” > “Microsoft Azure 信息保护” > “管理 Microsoft Azure 信息保护设置”
+    如果偏好通过管理中心导航到“权限管理”页：请选择“设置” > “服务和外接程序” > “Microsoft Azure 信息保护” > “管理 Microsoft Azure 信息保护设置”
 
 2. 在“Rights Management”页上，单击“激活”。
 

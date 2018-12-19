@@ -4,22 +4,22 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/02/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: be6477edae471bddbcf3a5d4e6c7bb0cfcec1e4e
-ms.sourcegitcommit: 4f22874c3c2fb9632d57932148664c40b3907a78
+ms.openlocfilehash: a9f54931d8409fd88bddb6be85f1a0d7c2b416a1
+ms.sourcegitcommit: 40ea9568688b9da95d72b48f02b4152e54da17c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52831249"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53029398"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 如果你负责企业网络上的 Azure 信息保护客户端，或如果你想要获取除了 [Azure 信息保护客户端用户指南](client-user-guide.md)以外的更多技术信息，请使用本指南中的信息。 
 
@@ -98,15 +98,15 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 安装客户端后，请使用“帮助和反馈”选项打开“Microsoft Azure 信息保护”对话框：
 
-- 在 Office 应用程序中：在“**开始**”选项卡上的“**保护**”组中，依次选择“**保护**”和“**帮助和反馈**”。
+- 从 Office 应用程序：在“开始”选项卡上的“保护”组中，依次选择“保护”和“帮助和反馈”。
 
-- 在文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“**分类和保护**”和“**帮助和反馈**”。 
+- 从文件资源管理器：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”。 
 
 #### <a name="help-and-feedback-section"></a>“**帮助和反馈**”部分
 
 默认情况下，“提供详细信息”链接转到 [Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)网站，但也可以根据 Azure 信息保护策略中的一项[策略设置](../configure-policy-settings.md)，将其配置为转到自定义 URL。
 
-“报告问题”链接显示在客户端的预览版本而不在正式发布版本中。 默认情况下，此选项向 Microsoft 发送一封电子邮件，但可以通过指定[高级客户端设置](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)来为你的用户配置 HTTP 字符串。 例如，指定支持人员的电子邮件地址。
+仅当指定[高级客户端设置](client-admin-guide-customizations.md#add-report-an-issue-for-users)时，才会显示“报告问题”链接。 配置此设置时，指定 HTTP 链接，例如支持人员的电子邮件地址。
 
 “导出日志”自动收集并附加 Azure 信息保护客户端的日志文件，如果必须将日志文件发送给 Microsoft 支持人员的话。 最终用户也可以使用此选项，将这些日志文件发送给你的支持人员。
 
@@ -166,9 +166,9 @@ Azure 信息保护客户端支持 Office 365 支持的同种语言。 有关这�
 
 安装 Azure 信息保护客户端后，请务必告知用户如何标记文档和电子邮件，并指导用户如何选择适合特定方案的标签。 例如：
 
-- 联机用户说明：[Azure 信息保护用户指南](client-user-guide.md)
+- 联机用户指令：[Azure 信息保护用户指南](client-user-guide.md)
 
-- 下载可自定义用户指南：[Azure Information Protection End User Adoption Guide](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)（Azure 信息保护最终用户采用指南）
+- 下载可自定义的用户指南：[Azure 信息保护最终用户采用指南](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
 
 ### <a name="update-macros-in-excel-spreadsheets"></a>更新 Excel 电子表格中的宏
 
@@ -202,13 +202,13 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 升级 Azure 信息保护客户端后，运行 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)。 扫描程序和存储库的配置设置将会得到保留。 需要运行此 cmdlet 以更新扫描程序的数据库架构，如果需要，还应为扫描程序服务帐户授予针对扫描程序数据库的删除权限。 
     
-    在运行此更新 cmdlet 之前，扫描程序不会运行，通常会在 Windows 事件日志中看到事件 ID 1000，并显示以下错误消息：无效的对象名称“ScannerStatus”。
+    在运行此更新 cmdlet 之前，扫描程序不会运行，通常会在 Windows 事件日志中看到事件 ID 1000，并显示以下错误消息：无效的对象名称 "ScannerStatus"。
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>卸载 Azure 信息保护客户端
 
 可使用以下任一选项卸载客户端：
 
-- 使用控制面板卸载程序：单击“**Microsoft Azure 信息保护** > **卸载**”
+- 使用控制面板卸载程序：单击“Microsoft Azure 信息保护” > “卸载”
 
 - 重新运行可执行文件（如 **AzInfoProtection.exe**），并从“修改安装程序”页上，单击“卸载”。 
 

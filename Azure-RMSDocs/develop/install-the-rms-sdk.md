@@ -12,12 +12,12 @@ ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1b801e3928c335846f5f2ec56953ec8bc4998718
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 4a19f6d1bf594d6a181b41685ecc1f1ba82a4408
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148760"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266403"
 ---
 # <a name="install-the-sdk"></a>安装 SDK
 
@@ -27,12 +27,12 @@ ms.locfileid: "44148760"
 
 ### <a name="install-the-developer-tools"></a>安装开发人员工具
 
-1.  从 Microsoft 下载中心下载 [Rights Management Services SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397)，仔细选择适用于计算机的正确体系结构版本。
+1.  从 Microsoft 下载中心下载 [Rights Management Services SDK 2.1](https://www.microsoft.com/download/details.aspx?id=38397)，仔细选择适用于计算机的正确体系结构版本。
 2.  从安装位置运行该安装程序包：
 
     **...\\setup\_sdk.exe**
 
-    Setup\_sdk.exe 文件会安装 RMS SDK 2.1 和 Active Directory Rights Management Services Client 2.1。
+    Setup\_sdk.exe 文件会安装 RMS SDK 2.1 和 Active Directory Rights Management Services 客户端 2.1。
 
 有关通过“setup\_sdk.exe”在系统上安装的文件的详细信息，请参阅[开发环境文件](sdk-elements.md)
 

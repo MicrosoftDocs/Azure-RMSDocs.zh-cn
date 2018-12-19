@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fa7bf6ae5eb60b6fc6b0310c11e9acfbbd3b240c
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: ba44c23b56c2832268f0ed6df122a347c9a8fdf3
+ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024147"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53218453"
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 
 Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](what-is-information-protection.md)使用的保护技术。
@@ -62,13 +62,13 @@ Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](w
 ## <a name="security-compliance-and-regulatory-requirements"></a>安全、合规性和法规要求
 Azure Rights Management 支持以下安全性、符合性和法规要求：
 
-√ 使用符合业界标准的加密功能，支持 FIPS 140-2。 有关详细信息，请参阅 [Azure RMS 使用的加密控制：算法和密钥长度](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths) 信息。
+√ 使用符合业界标准的加密功能，支持 FIPS 140-2。 有关详细信息，请参阅 [Azure RMS 使用的加密控制：算法和密钥长度](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)信息。
 
 √ 支持 Thales 硬件安全模块 (HSM)，允许将你的租户密钥存储在 Microsoft Azure 数据中心内。 Azure Rights Management 对北美、EMEA（欧洲、中东和非洲）和亚洲的数据中心使用单独的安全体系，因此，你的密钥只能在你所在的地区使用。
 
 √ 已针对以下项进行认证：
 
--   ISO/IEC 27001:2013（./包括 [ISO/IEC 27018](http://azure.microsoft.com/blog/2015/02/16/azure-first-cloud-computing-platform-to-conform-to-isoiec-27018-only-international-set-of-privacy-controls-in-the-cloud/)）
+-   ISO/IEC 27001:2013（./包括 [ISO/IEC 27018](https://azure.microsoft.com/blog/2015/02/16/azure-first-cloud-computing-platform-to-conform-to-isoiec-27018-only-international-set-of-privacy-controls-in-the-cloud/)）
 
 -   SOC 2 SSAE 16/ISAE 3402 证明
 
@@ -80,7 +80,7 @@ Azure Rights Management 支持以下安全性、符合性和法规要求：
 
 -   PCI DSS 级别 1
 
-有关这些外部认证的详细信息，请参阅 [Azure 信任中心](http://azure.microsoft.com/support/trust-center/compliance/)。
+有关这些外部认证的详细信息，请参阅 [Azure 信任中心](https://azure.microsoft.com/support/trust-center/compliance/)。
 
 ## <a name="next-steps"></a>后续步骤
 

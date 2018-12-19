@@ -12,12 +12,12 @@ ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 1adb21ac41a922ebb3636fcce9e13c9fd785930d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 42a1944dcb643c1647ee7299456307815f1023b4
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151650"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266624"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>如何使用 Azure AD 注册应用并为其启用 RMS
 
@@ -33,12 +33,12 @@ ms.locfileid: "44151650"
 必须先与 Microsoft 信息保护团队一起完成 IPIA，然后才能部署应用程序。 有关全部详细信息，请参阅本主题的第一部分[部署到生产](deploying-your-application.md)。
 
 ## <a name="implement-user-authentication-for-your-app"></a>为你的应用实施用户身份验证
-每个 RMS API 都具有回调，必须实现它才能启用用户的身份验证。 然后 RMS SDK 4.2 会在你未提供访问令牌时、你的访问令牌需要刷新时或是访问令牌已过期时使用你的回调实现。
+每个 RMS API 都具有回调，必须实现它才能启用用户的身份验证。 然后 RMS SDK 4.2 会在你未提供访问令牌时、你的访问令牌需要刷新时或是访问令牌已过期时使用你的回调实现。
 
 - Android -  [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) 和 [AuthenticationCompletionCallback](https://msdn.microsoft.com/library/dn758250.aspx) 接口。
 - iOS / OS X -  [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) 协议。
 -  Windows Phone / Window RT -  [IAuthenticationCallback](https://msdn.microsoft.com/library/microsoft.rightsmanagement.iauthenticationcallback.aspx) 接口。
-- Linux -  [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html) 接口。
+- Linux -  [IAuthenticationCallback](https://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html) 接口。
 
 ### <a name="what-library-to-use-for-authentication"></a>要用于身份验证的库是什么
 若要实现身份验证回调，需要下载相应的库并配置开发环境以使用它。 可在 GitHub 上找到适用于这些平台的 ADAL 库。
@@ -51,8 +51,7 @@ ms.locfileid: "44151650"
 -   [适用于 dotnet 的 Windows Azure Active Directory 身份验证库 (ADAL)](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 -   对于 Linux SDK，ADAL 库与 SDK 源（可通过 [Github](https://github.com/AzureAD/rms-sdk-for-cpp) 获取）一起打包。
 
->[!NOTE]  
-> 我们建议使用 ADAL 之一，不过你可以使用其他身份验证库。
+>[!NOTE]   我们建议使用 ADAL 之一，不过你可以使用其他身份验证库。
 
 ### <a name="authentication-parameters"></a>身份验证参数
 
@@ -72,8 +71,7 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
 
     iOS: `<app-scheme>://<bundle-id>`
 
->[!NOTE] 
-> 如果应用未遵循这些指导原则，则 Azure RMS 和 Azure AD 工作流可能会失败，并且不受 Microsoft.com 支持。 而且，如果在生产应用中使用无效客户端 Id，则可能会违反权限管理许可协议 (RMLA)。
+>[!NOTE]  如果应用未遵循这些指导原则，则 Azure RMS 和 Azure AD 工作流可能会失败，并且不受 Microsoft.com 支持。 而且，如果在生产应用中使用无效客户端 Id，则可能会违反权限管理许可协议 (RMLA)。
 
 ### <a name="what-should-an-authentication-callback-implementation-look-like"></a>身份验证回调实现应呈现的内容
 **身份验证代码示例** - 此 SDK 具有演示身份验证回调的使用的示例代码。 为方便起见，这些代码示例在此处以及以下每个链接的主题中进行了表示。

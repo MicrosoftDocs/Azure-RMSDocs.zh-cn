@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7be58d201ddd24497ff79935554c2a68efd04a3f
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 84f013014f0256a01c30d9518089f2604ed9a668
+ms.sourcegitcommit: b2414cc00d50ccefe10f8c3719eb3f6c1e78fc65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024427"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53246184"
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>保护级别 – 本机和常规
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 7（含 SP1）、Windows 8、Windows 8.1
 
 > [!IMPORTANT]
 > **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 
@@ -33,11 +33,11 @@ RMS 共享应用程序最适合与 Azure 信息保护配合使用，因为这种
 ## <a name="automatic-deployment-for-the-microsoft-rights-management-sharing-application"></a>自动部署 Microsoft Rights Management 共享应用程序
 Windows 版 RMS 共享应用程序支持脚本化安装，因此适合企业部署。
 
-安装的唯一先决条件是，计算机运行最低版本的 Windows 7 Service Pack 1 且已安装 Microsoft Framework（最低版本为 4.0）。 如果你需要安装 Microsoft.NET Framework 4.0，可以[从 Microsoft 下载中心下载并安装](http://www.microsoft.com/download/details.aspx?id=17718)。
+安装的唯一先决条件是，计算机运行最低版本的 Windows 7 Service Pack 1 且已安装 Microsoft Framework（最低版本为 4.0）。 如果你需要安装 Microsoft.NET Framework 4.0，可以[从 Microsoft 下载中心下载并安装](https://www.microsoft.com/download/details.aspx?id=17718)。
 
 ### <a name="to-download-the-rms-sharing-application-for-automatic-deployment"></a>下载要自动部署的 RMS 共享应用程序
 
-1.  在 Microsoft 下载中心转到 [适用于 Windows 的 Rights Management 共享应用程序](http://www.microsoft.com/download/details.aspx?id=40857) 页，然后单击“下载”。 
+1.  在 Microsoft 下载中心转到 [适用于 Windows 的 Rights Management 共享应用程序](https://www.microsoft.com/download/details.aspx?id=40857) 页，然后单击“下载”。 
 
 2.  选择并下载所需文件。 有两个客户端安装包：一个适用于 64 位 Windows (Microsoft Rights Management sharing application x64.zip)，另一个适用于 32 位 Windows (Microsoft Rights Management sharing application x86.zip)。
 
@@ -92,7 +92,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     1.  使用本地管理员帐户登录到计算机。
 
-    2.  在该计算机上， [下载并安装 Microsoft Online 登录助手](http://www.microsoft.com/download/details.aspx?id=28177)。
+    2.  在该计算机上， [下载并安装 Microsoft Online 登录助手](https://www.microsoft.com/download/details.aspx?id=28177)。
 
     3.  运行以下命令以查看显示在屏幕上的证书服务 URL，然后可以复制并保存该 URL 以供下一步使用：
 
@@ -217,7 +217,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     如果退出代码为 0，则表示安装成功；如果退出代码为其他任何数字，则表示安装失败。
 
-    示例日志文件名：**C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0\RMInstaller.log**
+    示例日志文件名称：**C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0\RMInstaller.log**
 
 ### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office2010-and-azure-information-protection"></a>验证是否为 Office 2010 和 Azure 信息保护成功安装 RMS 共享应用程序
 
@@ -225,7 +225,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     如果退出代码为 0，则表示安装成功；如果退出代码为其他任何数字，则表示安装失败。
 
-    示例日志文件名：**C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0**
+    示例日志文件名称：**C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0**
 
 2.  若要验证 RMSSetup.exe 命令是否成功运行，用户应在其 *%localappdata%\microsoft\drm* 文件夹中创建以下文件：
 
@@ -247,7 +247,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     如果退出代码为 0，则表示安装成功；如果退出代码为其他任何数字，则表示安装失败。
 
-    示例日志文件名：**C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0**
+    示例日志文件名称：**C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0**
 
 2.  若要验证 aadrmprep.exe 命令是否成功运行，请在安装日志文件中搜索以下文本： **aadrmprep.exe exited with status SUCCESS**
 
@@ -278,17 +278,17 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
     成功安装时包含的示例行：
 
-    **MSI (s) (F0:B8) [14:19:57:854]: Product: Active Directory Rights Management Services Client 2.1 -- 安装已成功完成。**
+    **MSI (s) (F0:B8) [14:19:57:854]:产品：Active Directory Rights Management Services 客户端 2.1 -- 安装已成功完成。**
 
-    **MSI (s) (F0:B8) [14:19:57:854]: Windows Installer 已安装该产品。Product Name:Active Directory Rights Management Services Client 2.1.Product Version:1.0.1179.1.Product Language:1033.制造商:Microsoft Corporation.安装成功或错误状态：0。**
+    **MSI (s) (F0:B8) [14:19:57:854]:Windows Installer 已安装该产品。产品名称：Active Directory Rights Management Services Client 2.1.产品版本：1.0.1179.1.Product Language:1033.制造商：Microsoft Corporation.安装成功或错误状态：0.**
 
-2.  若要验证 Office 加载项是否成功安装，请在安装日志文件中搜索以下文本：**安装成功或错误状态：0**
+2.  若要验证 Office 加载项是否成功安装，请在每台计算机的安装日志文件中搜索以下文本：**安装成功或错误状态：0**
 
     成功安装时包含的示例行：
 
-    **MSI (s) (9C:88) [18:49:04:007]: Product: Microsoft RMS Office Addins -- 安装已成功完成。**
+    **MSI (s) (9C:88) [18:49:04:007]:产品：Microsoft RMS Office 加载项 - 安装已成功完成。**
 
-    **MSI (s) (9C:88) [18:49:04:007]: Windows Installer 已安装该产品。Product Name:Microsoft RMS Office Addins.Product Version:1.0.7.Product Language:1033.制造商:Microsoft.安装成功或错误状态：0。**
+    **MSI (s) (9C:88) [18:49:04:007]:Windows Installer 已安装该产品。Product Name:Microsoft RMS Office Addins.Product Version:1.0.7.产品语言：1033.制造商:Microsoft.安装成功或错误状态：0.**
 
 ## <a name="uninstall-commands"></a>卸载命令
 并非这些部署所需的所有安装命令都支持卸载命令。 你可以卸载 AD RMS 客户端和共享应用程序，也可以卸载 Office 加载项。 请使用以下命令卸载这些元素。
@@ -340,7 +340,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 3.  在测试完成且解决了所有问题之后，使用本指南中的自动部署说明将最新版本部署到所有用户。
 
-## <a name="azure-information-protection-only-configuring-document-tracking"></a>仅限 Azure 信息保护：配置文档跟踪
+## <a name="azure-information-protection-only-configuring-document-tracking"></a>仅 Azure 信息保护：配置文档跟踪
 如果你有[支持文档跟踪的订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-features)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。 文档跟踪会显示尝试访问用户共享的受保护文档的人员的电子邮件地址、其尝试访问这些文档的时间以及他们所在的位置。 如果你的组织出于隐私要求而要禁止显示此类信息，你可以使用 [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature) cmdlet 来禁用对文档跟踪站点的访问。 你随时可以使用 [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature) 来重新启用对该站点的访问，并可以使用 [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature) 来查看当前是已启用还是已禁用这种访问。
 
 若要运行这些 cmdlet，必须安装最低版本为 **2.3.0.0**，适用于 Windows PowerShell 的 Azure Rights Management 模块。 有关安装说明，请参阅[安装 AADRM PowerShell 模块](../install-powershell.md)。
@@ -377,7 +377,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 ### <a name="usage-logging-for-the-document-tracking-site"></a>文档跟踪站点的使用情况日志记录
 
-使用情况日志文件中的以下两个字段适用于文档跟踪：**AdminAction** 和 **ActingAsUser**。
+使用情况日志文件中的以下两个字段适用于文档跟踪：AdminAction 和 ActingAsUser。
 
 **AdminAction** — 当管理员在管理员模式下使用文档跟踪站点时，例如，代表用户撤销文档或查看其共享时间，此字段的值为 true。 当用户登录到文档跟踪站点时，此字段为空。
 
@@ -395,7 +395,7 @@ RMS 共享应用程序的安装包支持不同的部署方案，包括以下方�
 
 2.  选择 **RmsSharingApp**，创建一个名为 **FederatedDomains** 的新多字符串值，然后添加组织使用的域和所有子域。 不支持使用通配符。
 
-    例如：Coho Vineyard &amp; Winery 公司拥有标准的电子邮件域 **cohovineyardandwinery.com**，但由于合并，它们也使用电子邮件域 **cohowinery.com**、**eastcoast.cohowinery.com** 和 **cohovineyard**。 对于 **FederatedDomains** 值数据，管理员可以输入：**cohowinery.com；eastcoast.cohowinery.com；cohovineyard**
+    例如：Coho Vineyard &amp; Winery 公司拥有标准的电子邮件域 cohovineyardandwinery.com，但由于合并，它们也使用电子邮件域 cohowinery.com、eastcoast.cohowinery.com 和 cohovineyard。 对于 **FederatedDomains** 值数据，管理员可以输入：**cohowinery.com；eastcoast.cohowinery.com；cohovineyard**
 
 如果未对该注册表进行更改，则用户可能无法使用由所在组织中的其他用户所保护的内容。 如果使用 Azure 信息保护，则不需要编辑该注册表。
 

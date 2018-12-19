@@ -4,22 +4,22 @@ description: 了解结合使用客户托管的密钥（称为“自带密钥”�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 93e538b882da557715b04e8675b5a3b86de018b0
-ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
+ms.openlocfilehash: 68e479eb7f19f60d6d68b913eae46dd287b5a04f
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52330270"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305142"
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 定价和限制
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 
 拥有订阅（包含 Azure 信息保护）的组织可以将 Azure 信息保护租户配置为使用客户托管的密钥 (BYOK)，并[记录其使用情况](./log-analyze-usage.md)。 
@@ -44,11 +44,11 @@ ms.locfileid: "52330270"
 
 - 作为广受认可的安全性最佳实践，Azure 密钥保管库提供角色分离。 Azure 信息保护管理员可专注于管理数据分类和保护，Azure 密钥保管库管理员则可专注于管理加密密钥和任何有可能要求安全性或合规性的特殊策略。
 
-- 某些组织对其主密钥在何处生存有所限制。 由于该服务在许多 Azure 区域内都可用，因此 Azure 密钥保管库可提供对主密钥存储位置的高级别控制。 目前，可以从 28 个区域中进行选择，而且这个数字还将不断地增加。 有关详细信息，请参阅 Azure 网站上的[可用产品（按区域）] (https://azure.microsoft.com/regions/services/) 页。
+- 某些组织对其主密钥在何处生存有所限制。 由于该服务在许多 Azure 区域内都可用，因此 Azure 密钥保管库可提供对主密钥存储位置的高级别控制。 目前，可以从 28 个区域中进行选择，而且这个数字还将不断地增加。 有关详细信息，请参阅 Azure 网站上的[可用产品（按区域）](https://azure.microsoft.com/regions/services/)页。
 
 除管理密钥外，Azure 密钥保管库还为安全管理员提供其他使用加密的服务和应用程序的存储、访问、管理证书和机密（如密码）的相同管理体验。 
 
-有关 Azure 密钥保管库的详细信息，请参阅[什么是 Azure 密钥保管库？](/azure/key-vault/key-vault-whatis)并访问 [Azure 密钥保管库团队博客](https://cloudblogs.microsoft.com/kv/)，以获取最新信息并了解其他服务如何使用此技术。
+有关 Azure 密钥保管库的详细信息，请参阅[什么是 Azure 密钥保管库？](/azure/key-vault/key-vault-whatis)并访问 [Azure 密钥保管库团队博客](https://blogs.technet.microsoft.com/kv/)，以获取最新信息并了解其他服务如何使用此技术。
 
 ## <a name="restrictions-when-using-byok"></a>使用 BYOK 时的限制
 

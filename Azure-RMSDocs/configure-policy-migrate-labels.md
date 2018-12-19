@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: be48797931dc0e8c76f29094715df37d6488f800
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 84f3aa3cc5dc7955056c98a957fa5d307340da1d
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024002"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174125"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!IMPORTANT]
 > 此功能处于预览状态，并且将租户迁移到新平台也处于预览状态。 迁移不可撤消。 新平台支持统一标签，以便你创建和管理的标签可由多个客户端和服务使用。
@@ -76,15 +76,15 @@ Azure 信息保护客户端可以使用这些标签设置，而不会出现任�
 
 |标签配置|受统一标记客户端的支持|不包括安全与合规中心的编辑|
 |-------------------|---------------------------------------------|-------------------------|
-|启用或禁用状态<br /><br />说明：不会同步到安全与合规中心 |“不适用”|“不适用”|
-|标签颜色：从列表中选择或使用 RGB 代码指定<br /><br />说明：安全与合规中心不支持标签颜色 |“不适用”|“不适用”|
+|启用或禁用状态<br /><br />注意：不会同步到安全与合规中心 |“不适用”|“不适用”|
+|标签颜色：从列表中选择或使用 RGB 代码指定<br /><br />注意：安全与合规中心不支持标签颜色 |“不适用”|“不适用”|
 |使用预定义模板的基于云的保护或基于 HYOK 的保护 |否|是|
 |使用 Word、Excel 和 PowerPoint 中用户定义的权限的基于云的保护 |否|是|
 |使用 Outlook for Do Not Forward 中用户定义的权限的基于 HYOK 的保护 |否|是|
 |删除保护 |否|是|
-|视觉标记（页眉、页脚、水印）：依据 RGB 代码的自定义字体和自定义字体颜色|否|如果使用变量则建议<br /><br />- 在客户端，变量显示为文本而不是显示动态值|
+|视觉标记（页眉、页脚、水印）：由 RGB 代码指定的自定义字体和字体颜色|否|如果使用变量则建议<br /><br />- 在客户端，变量显示为文本而不是显示动态值|
 |每个应用的视觉标记|否|如果使用变量则建议<br /><br />- 在客户端，变量显示为文本而不是显示动态值|
-|条件和关联设置 <br /><br />说明：包括自动和建议标签及其工具提示|“不适用”|否|
+|条件和关联设置 <br /><br />注意：包括自动和建议标签及其工具提示|“不适用”|否|
 
 
 ## <a name="to-migrate-azure-information-protection-labels"></a>若要迁移 Azure 信息保护标签

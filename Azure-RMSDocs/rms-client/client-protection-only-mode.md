@@ -4,22 +4,22 @@ description: 此信息适用于以仅保护模式运行 Azure 信息保护客户
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c9f8408c4417b1b5131a51276a829a16687f1870
-ms.sourcegitcommit: ccc99efd2402a8b93912c8df4df330fa1311aacb
+ms.openlocfilehash: 2f73f8bf107aaebe0e87588c410e1e7f66093ef7
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48812412"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305091"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>用户指南：Azure 信息保护客户端的仅保护模式
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）
 
 
 当 Azure 信息保护客户端没有用于对文档和电子邮件进行分类的标签，它将在仅保护模式下运行。 例如，在此模式中，当使用 Windows 文件资源管理器，右键单击“分类和保护”，可能会看到以下项：
@@ -55,9 +55,9 @@ ms.locfileid: "48812412"
 
 ## <a name="supported-tasks-for-protection-only-mode"></a>仅保护模式支持的任务
 
-- 通过使用 Office 信息权限管理 (IRM) 功能，保护（和取消保护）Office 应用程序中的文档和电子邮件：例如，单击“文件” > “信息” > “保护文档” > “限制访问”。 有关详细信息，请参阅[在 Office 365、Office 2016 或 Office 2013 中使用信息保护](../help-users.md)。
+- 通过使用 Office 信息权限管理 (IRM) 功能保护（和取消保护）Office 应用中的文档和电子邮件：例如：单击“文件” > “信息” > “保护文档” > “限制访问”。 有关详细信息，请参阅[在 Office 365、Office 2016 或 Office 2013 中使用信息保护](../help-users.md)。
 
-- 通过使用 Windows 文件资源管理器保护（和取消保护）文件：右键单击单个文件、多个文件或文件夹 >“分类和保护”。 若要应用管理员已配置的保护，请在“分类和保护 - Azure 信息保护”对话框中，单击“选择模版”，然后选择任一可用模板。
+- 使用 Windows 文件资源管理器保护（和取消保护）文件：右键单击文件或文件夹，然后单击“分类和保护”。 若要应用管理员已配置的保护，请在“分类和保护 - Azure 信息保护”对话框中，单击“选择模版”，然后选择任一可用模板。
 
 - 通过使用 Azure 信息保护查看器查看受保护的文件。
 

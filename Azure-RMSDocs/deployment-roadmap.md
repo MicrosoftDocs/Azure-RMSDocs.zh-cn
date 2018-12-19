@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4e2fa20d542a9509476c78ebe21143e49863b788
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: a74478895c7bdb500b40dc4732c871cbc130fe36
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026819"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174040"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 建议使用以下步骤，为组织准备、实施和管理 Azure 信息保护。
 
@@ -59,7 +59,7 @@ ms.locfileid: "51026819"
 ### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>步骤 3：配置、部署分类和标记
 
 > [!TIP]
-> 可选但建议：建议部署 Azure 信息保护扫描程序以发现本地数据存储上的敏感信息。 我们的[快速入门教程](quickstart-findsensitiveinfo.md)介绍了此应用场景。 扫描程序找到的信息有助于进行类别分类，提供有关所需的标签类型以及需要保护的文件的重要信息。
+> **可选但建议**：建议部署 Azure 信息保护扫描程序以发现本地数据存储上的敏感信息。 我们的[快速入门教程](quickstart-findsensitiveinfo.md)介绍了此应用场景。 扫描程序找到的信息有助于进行类别分类，提供有关所需的标签类型以及需要保护的文件的重要信息。
 > 
 > 可以将扫描程序配置为在 Windows Server 上的本地文件、网络共享中的文件以及 SharePoint 的本地版本中的文件中查找常见的敏感信息类型。 由于此配置不需要配置标签，而且还定义了类别分类，因此以这种方式运行扫描程序适用于部署的早期阶段。 此外，还可以与以下部署步骤并行使用此扫描程序配置，直到为标签配置条件。
 
@@ -91,7 +91,7 @@ ms.locfileid: "51026819"
 
 2. 至少在一台可以访问 Internet 的计算机上安装适用于 AADRM 的 PowerShell 模块。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[安装 AADRM PowerShell 模块](./install-powershell.md)。
 
-3. 如果当前正在使用 AD RMS：请进行迁移，将密钥、模板和 URL 移动到云中。 有关详细信息，请参阅[从 AD RMS 迁移到信息保护](migrate-from-ad-rms-to-azure-rms.md)。
+3. 如果当前正在使用 AD RMS：执行迁移操作以将密钥、模板和 URL 移到云中。 有关详细信息，请参阅[从 AD RMS 迁移到信息保护](migrate-from-ad-rms-to-azure-rms.md)。
 
 4. 确保保护服务已激活，以便开始保护文档和电子邮件。 如果需要分阶段部署，请配置用户载入控制以限制用户应用保护的能力。 有关详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
 
@@ -125,7 +125,7 @@ ms.locfileid: "51026819"
     
     如果具有本地 SharePoint 和 Exchange 并希望使用其信息权限管理 (IRM) 功能，请安装和配置 Rights Management 连接器。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](./deploy-rms-connector.md)。
 
-### <a name="step-6-use-and-monitor-your-data-protection-solutions"></a>第 6 步：使用和监视数据保护解决方案
+### <a name="step-6-use-and-monitor-your-data-protection-solutions"></a>步骤 6：使用和监视数据保护解决方案
 你现在可以监视组织如何使用已配置的标签，并确认保护敏感信息。 有关支持此部署阶段的其他信息，请参阅以下内容：
 
 - [Azure 信息保护报表](reports-aip.md) - 现已发布预览版
@@ -157,7 +157,7 @@ ms.locfileid: "51026819"
 
 3. 至少在一台可以访问 Internet 的计算机上安装适用于 AADRM 的 PowerShell 模块。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[安装 AADRM PowerShell 模块](./install-powershell.md)。
 
-4. 如果当前正在使用 AD RMS：请进行迁移，将密钥、模板和 URL 移动到云中。 有关详细信息，请参阅[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)。
+4. 如果当前正在使用 AD RMS：执行迁移操作以将密钥、模板和 URL 移到云中。 有关详细信息，请参阅[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)。
 
 5. 确保保护服务已激活，以便开始保护文档和电子邮件。 如果需要分阶段部署，请配置用户载入控制以限制用户应用保护的能力。 有关详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
 

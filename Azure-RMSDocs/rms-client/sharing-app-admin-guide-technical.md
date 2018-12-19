@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ec0c231e2036dc66b941be7f764bb5e5fd5c518a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 7104da9852458cbe9100600c3e14b43ee4aa7986
+ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023770"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53218470"
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 共享应用程序的技术概览和保护详细信息
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 7（含 SP1）、Windows 8、Windows 8.1
 
 
 Microsoft Rights Management 共享应用程序是一个可选且可下载的适用于 Microsoft Windows 和其他平台的应用程序，它提供以下功能：
@@ -34,7 +34,7 @@ Microsoft Rights Management 共享应用程序是一个可选且可下载的适�
 
 -   与通过文件分类基础结构（FCI）和支持的 PDF 创作工具保护的 PDF 文件的完全互操作性。
 
-Microsoft Rights Management 共享应用程序使用 [AD RMS 客户端 2.1 运行时](http://www.microsoft.com/download/details.aspx?id=38396)。 通过使用 AD RMS 2.1 的功能，Microsoft Rights Management 共享应用程序为最终用户提供了简单的保护和使用体验。
+Microsoft Rights Management 共享应用程序使用 [AD RMS 客户端 2.1 运行时](https://www.microsoft.com/download/details.aspx?id=38396)。 通过使用 AD RMS 2.1 的功能，Microsoft Rights Management 共享应用程序为最终用户提供了简单的保护和使用体验。
 
 借助 2013 年 10 月版的 RMS，可以使用 Office 2010 本机保护文档，还可以将这些文档发送给其他公司的用户，这样他们便可以通过使用 Azure 信息保护中的 Azure Rights Management 服务使用这些文档。 此外，在此版本中，如果在加密模式 2 中使用 AD RMS，则可以使用面向个人的 RMS，并可以使用其他公司中使用 Azure Rights Management 服务的用户提供的内容。 有关加密模式 2 的详细信息，请参阅 [AD RMS 加密模式](https://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx)。
 
@@ -100,7 +100,7 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
 若要将 RMS 共享应用程序配置为将常规保护应用于默认已应用本机保护的所有文件，请对注册表进行以下编辑。 请注意，如果不存在 RmsSharingApp 或 FileProtection 项，必须手动创建它们。
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**：创建名为 * 的新项。
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**：创建一个名为“*”的新项。
 
     此设置表示文件可具有任意文件扩展名。
 
@@ -124,11 +124,11 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 
 通过更改支持以下值的 **Encryption** 字符串的值，你可以在其他情况下进行类似的注册表编辑：
 
--   **Pfile**:一般性保护
+-   **Pfile**：常规保护
 
--   **Native**：本机保护
+-   **本机**：本机保护
 
--   **Off**：阻止保护
+-   **关闭**：阻止保护
 
 ## <a name="see-also"></a>另请参阅
 [权限管理共享应用程序用户指南](sharing-app-user-guide.md)

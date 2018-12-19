@@ -1,5 +1,5 @@
 ---
-title: 使用 RMS 共享应用打开 RMS 保护的文件 - AIP
+title: 使用 RMS 共享应用打开受 RMS 保护的文件
 description: 有关查看和使用受保护文件（需要安装 Rights Management (RMS) 共享应用程序）的说明。
 author: cabailey
 ms.author: cabailey
@@ -10,28 +10,31 @@ ms.service: information-protection
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 926a6d34b34b486577f6a8481010d058e465b3e8
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: f3e3158e8cd5fb054daab65a3b86a0e99074bee3
+ms.sourcegitcommit: db60fe8f74ffaa4f6ffbf5defb22efc476c28312
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023985"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53319459"
 ---
-# <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>查看和使用受权限管理保护的文件
+# <a name="use-the-rights-management-sharing-application-to-view-and-use-protected-files"></a>使用 Rights Management 共享应用程序查看和使用受保护的文件
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、带 SP1 的 Windows 7、Windows 8、Windows 8.1
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 7（含 SP1）、Windows 8、Windows 8.1
 
-如果[计算机安装了权限管理 (RMS) 共享应用程序](install-sharing-app.md)，你只需双击受保护文件即可查看它。 此文件也许是电子邮件中的附件，或者你可能在使用文件资源管理器时看到它。
+> [!IMPORTANT]
+> **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。
 
-> [!NOTE]
-> 在你可以查看受保护文件之前，Rights Management 服务必须首先确认你有权查看该文件，方法是检查你的用户名和密码。 在某些情况下，此信息会被缓存下来，所以你不会看到要求出示凭据的提示。 在其他情况下，将提示你提供凭据。
->
-> 如果你的组织不使用 Azure 信息保护或 AD RMS，你可以申请会接受你的凭据的免费帐户，以便可以使用 RMS 打开受保护文件：
->
-> -   若要申请此帐户，请单击链接以申请 [个人 RMS](https://go.microsoft.com/fwlink/?LinkId=309469)。
->
->     注册时，使用公司的电子邮件地址，而不是个人电子邮件地址。 如果注册的原因是要使用电子邮件发送受保护附件，请使用与用于发送电子邮件相同的电子邮件地址。
-> -   有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../rms-for-individuals.md)。
+如果[计算机上安装了 Rights Management (RMS) 共享应用程序](install-sharing-app.md)，只需双击受保护文件即可查看它。 此文件也许是电子邮件中的附件，或者你可能在使用文件资源管理器时看到它。
+
+在你可以查看受保护文件之前，Rights Management 服务必须首先确认你有权查看该文件，方法是检查你的用户名和密码。 在某些情况下，此信息会被缓存下来，所以你不会看到要求出示凭据的提示。 在其他情况下，将提示你提供凭据。
+
+如果你的组织不使用 Azure 信息保护或 AD RMS，你可以申请会接受你的凭据的免费帐户，以便可以使用 RMS 打开受保护文件：
+
+- 若要申请此帐户，请单击链接以申请 [个人 RMS](https://go.microsoft.com/fwlink/?LinkId=309469)。 
+    
+    注册时，使用公司的电子邮件地址，而不是个人电子邮件地址。 如果注册的原因是要使用电子邮件发送受保护附件，请使用与用于发送电子邮件相同的电子邮件地址。
+
+- 有关详细信息，请参阅[个人 RMS 和 Azure Rights Management](../rms-for-individuals.md)。
 
 ## <a name="to-view-a-protected-file"></a>查看受保护文件
 通过使用文件资源管理器或包含附件的电子邮件，双击受保护文件，然后在收到提示时输入凭据。

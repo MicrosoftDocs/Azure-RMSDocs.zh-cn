@@ -1,6 +1,6 @@
 ---
 title: API SDK 4.2 参考 | Microsoft Docs
-description: Azure 信息保护 SDK 4.2 支持多种操作系统：Android、iOS、OS X、Linux、Windows Phone 和 Windows 应用商店。
+description: Azure 信息保护 SDK 4.2 支持多种操作系统。 包括 Android、iOS、OS X、Linux、Windows Phone 和 Windows Store。
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -12,16 +12,16 @@ ms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 939870b13d98d7ece7e67944d358c175dff0939c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 79b5bb05e92dae9edfbd8c574ba6aeea9feb3f1d
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149868"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266420"
 ---
 # <a name="api-sdk-42-reference"></a>API SDK 4.2 参考
 
-Azure 信息保护 SDK 4.2 支持多种操作系统。 有关特定平台的详细信息，请参阅[新增功能](release-notes.md)。
+Azure 信息保护 SDK 4.2 支持多种操作系统。 有关特定平台的详细信息，请参阅[新增功能](release-notes.md)。
 
 ### <a name="apple"></a>Apple
 - [iOS/OS X API 参考](https://msdn.microsoft.com/library/dn758306.aspx) - 适用于 Apple iOS 和 OS X 操作系统的 API 参考。
@@ -30,7 +30,7 @@ Azure 信息保护 SDK 4.2 支持多种操作系统。 有关特定平台的详�
 - [Android 命名空间](https://msdn.microsoft.com/library/dn758245.aspx)
 
 ### <a name="linux"></a>Linux
-- [Linux API 参考](linux-c-api-reference.md) - 适用于我们 Linux 风格操作系统支持的 API 参考在 Github 上承载 - [适用于 C++ 的 RMS SDK](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)。
+- [Linux API 参考](linux-c-api-reference.md) - 适用于我们 Linux 风格操作系统支持的 API 参考在 Github 上承载 - [适用于 C++ 的 RMS SDK](https://azuread.github.io/rms-sdk-for-cpp/annotated.html)。
 
 ### <a name="microsoft"></a>Microsoft
 - [Windows API 参考](https://msdn.microsoft.com/library/dn891914.aspx) - 适用于 Windows Phone 和 Windows 应用商店应用程序 SDK 的 API 参考。

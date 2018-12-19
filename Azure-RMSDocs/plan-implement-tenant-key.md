@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2f0088cb2b95a9c0f7a50c780d89dec0b91111f4
-ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
+ms.openlocfilehash: 3efae21dfabdb347826b177d5c58a3498d3276c5
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52330287"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173955"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用此文章中的信息可帮助你规划和管理 Azure 信息保护租户密钥。 例如，为了遵守组织的具体规定，你不能让 Microsoft 管理你的租户密钥（默认设置），而想要自行管理租户密钥。 自行管理租户密钥也称为自带密钥 (BYOK)。
 
@@ -33,7 +33,7 @@ ms.locfileid: "52330287"
 
 |业务要求|建议的租户密钥拓扑|
 |------------------------|-----------------------------------|
-|无需特殊的硬件、额外的软件或 Azure 订阅即可快速部署 Azure 信息保护。<br /><br />例如，测试环境以及当组织没有针对密钥管理的法规要求时。|由 Microsoft 管理|
+|无需特殊的硬件、额外的软件或 Azure 订阅即可快速部署 Azure 信息保护。<br /><br />例如：测试环境以及当组织没有针对密钥管理的法规要求时。|由 Microsoft 管理|
 |合规性规定、额外的安全性以及对所有生命周期操作的控制。 <br /><br />例如：密钥必须由硬件安全模块 (HSM) 保护。|BYOK|
 
 
@@ -48,7 +48,7 @@ ms.locfileid: "52330287"
     
     这是最简单的选项，管理开销最低。 大多数情况下，你甚至不需要知道自己有租户密钥。 你只需注册 Azure 信息保护，密钥管理过程的剩余部分将由 Microsoft 处理。
 
-- **由你管理 (BYOK)**：如果要完全控制租户密钥，请结合使用 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) 和 Azure 信息保护。 对于此租户密钥拓扑，可以直接在 Key Vault 中创建密钥或本地创建密钥。 如果本地创建密钥，接着需要将此密钥传输或导入到 Key Vault 中。 然后将 Azure 信息保护配置为使用此密钥，并在 Azure Key Vault 中管理它。
+- **自行管理 (BYOK)**：如果要完全控制租户密钥，请结合使用 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) 和 Azure 信息保护。 对于此租户密钥拓扑，可以直接在 Key Vault 中创建密钥或本地创建密钥。 如果本地创建密钥，接着需要将此密钥传输或导入到 Key Vault 中。 然后将 Azure 信息保护配置为使用此密钥，并在 Azure Key Vault 中管理它。
     
 
 ### <a name="more-information-about-byok"></a>有关 BYOK 的详细信息
@@ -106,8 +106,8 @@ ms.locfileid: "52330287"
 
 |要求|更多信息|
 |---------------|--------------------|
-|你的 Azure 信息保护租户必须具有 Azure 订阅。 如果没有订阅，可以注册[免费帐户](https://azure.microsoft.com/pricing/free-trial/)。 <br /><br /> 若要使用受 HSM 保护的密钥，必须拥有 Azure Key Vault 高级服务层。|免费的 Azure 订阅提供相应的访问权限，可配置 Azure Active Directory 以及 Azure 权限管理自定义模板（**可访问 Azure Active Directory**），但不足以使用 Azure 密钥保管库。 若要确认拥有可用于 BYOK 的 Azure 订阅，请使用 [Azure 资源管理器](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx) PowerShell cmdlet： <br /><br /> 1.若要启动 Azure PowerShell 会话，请选择“以管理员身份运行”选项，并使用以下命令以 Azure 信息保护租户的全局管理员身份登录：`Login-AzureRmAccount`<br /><br />2.键入以下命令，并确认可以看到显示了订阅名称和 ID 以及 Azure 信息保护租户 ID 的值，并且状态为“已启用”：`Get-AzureRmSubscription`<br /><br />如果没有显示任何值，并且返回到提示，则表示没有可用于 BYOK 的 Azure 订阅。 <br /><br />**注意**：若要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，那么除了满足 BYOK 先决条件以外，还必须拥有最低版本为 11.62 的 Thales 固件。|
-|若要使用本地创建的受 HSM 保护密钥，请执行以下操作： <br /><br />- 针对 Key Vault BYOK 列出的所有先决条件。 |请参阅 Azure 密钥保管库文档中的 [Prerequisites for BYOK](/azure/key-vault/key-vault-hsm-protected-keys#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br /> **注意**：若要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，那么除了满足 BYOK 先决条件以外，还必须拥有最低版本为 11.62 的 Thales 固件。|
+|你的 Azure 信息保护租户必须具有 Azure 订阅。 如果没有订阅，可以注册[免费帐户](https://azure.microsoft.com/pricing/free-trial/)。 <br /><br /> 若要使用受 HSM 保护的密钥，必须拥有 Azure Key Vault 高级服务层。|免费的 Azure 订阅提供相应的访问权限，可配置 Azure Active Directory 以及 Azure 权限管理自定义模板（**可访问 Azure Active Directory**），但不足以使用 Azure 密钥保管库。 若要确认拥有可用于 BYOK 的 Azure 订阅，请使用 [Azure 资源管理器](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx) PowerShell cmdlet： <br /><br /> 1.若要启动 Azure PowerShell 会话，请选择“以管理员身份运行”选项，并使用以下命令以 Azure 信息保护租户的全局管理员身份登录：`Login-AzureRmAccount`<br /><br />2.键入以下命令，并确认可以看到显示了订阅名称和 ID 以及 Azure 信息保护租户 ID 的值，并且状态为“已启用”：`Get-AzureRmSubscription`<br /><br />如果没有显示任何值，并且返回到提示，则表示没有可用于 BYOK 的 Azure 订阅。 <br /><br />**注意**：若要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，除了满足 BYOK 先决条件以外，还必须拥有最低版本为 11.62 的 Thales 固件。|
+|若要使用本地创建的受 HSM 保护密钥，请执行以下操作： <br /><br />- 针对 Key Vault BYOK 列出的所有先决条件。 |请参阅 Azure 密钥保管库文档中的 [Prerequisites for BYOK](/azure/key-vault/key-vault-hsm-protected-keys#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br /> **注意**：若要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，除了满足 BYOK 先决条件以外，还必须拥有最低版本为 11.62 的 Thales 固件。|
 |如果包含租户密钥的密钥保管库使用 Azure Key Vault 虚拟网络服务终结点： <br /><br />- 允许受信任 Microsoft 服务绕过此防火墙。|有关详细信息，请参阅 [Azure Key Vault 虚拟网络服务终结点](/azure/key-vault/key-vault-overview-vnet-service-endpoints)。|
 |适用于 Windows PowerShell 的 Azure Rights Management 管理模块。|有关安装说明，请参阅[安装 AADRM PowerShell 模块](./install-powershell.md)。 <br /><br />如果之前已安装了此 Windows PowerShell 模块，请运行以下命令检查版本号是否高于或等于 **2.9.0.0**：`(Get-Module aadrm -ListAvailable).Version`|
 
@@ -184,7 +184,7 @@ Key Vault 中存储的密钥具有密钥 ID。 此密钥 ID 是包含密钥保�
 >
 >在运行此命令时，除了密钥名称外，请确保还指定了密钥版本。 可以使用 Azure 密钥保管库 cmd [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey) 来获取当前密钥的版本号。 例如：`Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
 
-如果需要确认是否为 Azure 信息保护正确设置了密钥 URL，请在 Azure Key Vault 中运行 [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey) 以查看密钥 URL。
+如果需要确认已为 Azure 信息保护正确设置了密钥 URL：在 Azure Key Vault 中，运行 [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey) 以查看密钥 URL。
 
 最后，如果 Azure Rights Management 服务已激活，请运行 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) 以告诉 Azure 信息保护将此密钥用作 Azure Rights Management 服务的活动租户密钥。 如果不执行此步骤，Azure 信息保护将继续使用为租户自动创建的默认 Microsoft 托管密钥。
 

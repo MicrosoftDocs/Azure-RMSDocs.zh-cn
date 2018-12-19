@@ -4,16 +4,16 @@ description: 可以删除或重排用户可见的 Azure 信息保护标签。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: ccb5f4ff84e590640ed4e5204d2170384611775f
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 1f957874649fe9e5697c3dd0164b0b0b255d1e6e
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023390"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304870"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>如何删除或重排 Azure 信息保护的标签
 
@@ -55,13 +55,13 @@ ms.locfileid: "53023390"
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
-2. 从“分类” > “标签”菜单选项：在“Azure 信息保护 - 标签”边栏选项卡上，执行以下一项或多项操作： 
+2. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，执行以下一个或多个操作： 
 
-    - 删除标签：对于你想要删除的标签，右键单击或选择上下文菜单 (...)，单击“删除此标签”，然后单击“确定”以确认。 
+    - 删除标签：针对想要删除的标签，右键单击或选择上下文菜单（“...”），单击“删除此标签”，然后单击“确定”以确认。 
 
-    - 禁用标签：选择你想要禁用的标签。 在“标签”边栏选项卡上，针对“启用”，选择“关闭”，然后单击“保存”。
+    - 禁用标签：选择要禁用的标签。 在“标签”边栏选项卡上，针对“启用”，选择“关闭”，然后单击“保存”。
 
-    - 重排标签：针对想要重排的标签，右键单击或选择上下文菜单 (**...**)，然后单击“**上移**”或“**下移**”直到标签位于所需的顺序。  
+    - 重排标签：针对想要重排的标签，右键单击或选择上下文菜单（“...”），然后单击“上移”或“下移”，直到标签成为所需的顺序。  
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -4,22 +4,22 @@ description: 必须先激活 Azure Rights Management 服务，然后组织才可
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/06/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0642dcf6b2d8db1921cd2c5d4d662a36e8f78ead
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 4eb4b477091990bfff036288cf2d33795bafeb3d
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149389"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305421"
 ---
 # <a name="activating-azure-rights-management"></a>激活 Azure Rights Management
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!NOTE]
 > 此配置信息适用于负责应用于组织中所有用户的服务的管理员。 如果你要寻找针对特定应用程序使用 Rights Management 功能，或者如何打开受权限保护的文件或电子邮件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
@@ -35,9 +35,9 @@ ms.locfileid: "44149389"
 
 如果你拥有包含 Azure Rights Management 的服务计划，则可能不需要激活此服务：
 
-- **如果包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月底或之后获取：** 此服务会自动激活。 除非你或你组织的其他全局管理员停用了 Azure Rights Management，否则你无需激活此服务。
+- **如果你包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月底或之后获取的：** 此服务会自动为你激活。 除非你或你组织的其他全局管理员停用了 Azure Rights Management，否则你无需激活此服务。
 
-- **如果包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月之前或期间获取：** 如果租户使用的是 Exchange Online，Microsoft 即将开始为这些订阅激活 Azure Rights Management 服务。 对于这些订阅，自动激活将于 2018 年 8 月 1 日开始推出，届时将为你激活此服务，除非在运行 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps) 时看到 AutomaticServiceUpdateEnabled 设置为 false。 
+- **如果你包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月期间或之前获取的：** 如果租户使用的是 Exchange Online，Microsoft 将开始为这些订阅激活 Azure Rights Management 服务。 对于这些订阅，自动激活将于 2018 年 8 月 1 日开始推出，届时将为你激活此服务，除非在运行 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps) 时看到 AutomaticServiceUpdateEnabled 设置为 false。 
 
 如果两种后续方案都不适用，必须手动激活保护服务。 
 
@@ -52,7 +52,7 @@ ms.locfileid: "44149389"
 
 - [Azure 信息保护计划](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 
 
-- [包含 Rights Management 的 Office 365 计划](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
+- [包含 Rights Management 的 Office 365 计划](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
 
 激活 Azure Rights Management 服务后，组织中的所有用户都可以对文档和电子邮件应用信息保护，并且所有用户都能打开（使用）受 Azure Rights Management 服务保护的文档和电子邮件。 但是，如果你愿意，可以通过对分阶段部署使用加入控制来限制哪些人员可以应用信息保护。 有关详细信息，请参阅本文中的 [为分阶段部署配置加入控制](#configuring-onboarding-controls-for-a-phased-deployment) 部分。
 
@@ -75,12 +75,12 @@ ms.locfileid: "44149389"
 4. 若要激活此服务，请运行 [Enable-Aadrm](/powershell/aadrm/vlatest/enable-aadrm)。
 
 ## <a name="configuring-onboarding-controls-for-a-phased-deployment"></a>为分阶段部署配置加入控制
-如果不希望所有用户都能立即使用 Azure Rights Management 保护文档和电子邮件，可以使用 [Set-AadrmOnboardingControlPolicy](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy) PowerShell 命令来配置用户载入控件。 在激活 Azure Rights Management 服务之前或之后，你可以运行此命令。
+如果你不希望所有用户能够立即使用 Azure Rights Management 来保护文档和电子邮件，可以使用 [Set-AadrmOnboardingControlPolicy](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy) PowerShell 命令来配置用户载入控件。 在激活 Azure Rights Management 服务之前或之后，你可以运行此命令。
 
 > [!IMPORTANT]
-> 若要使用此命令，必须安装至少 **2.1.0.0** 版的 [Azure Rights Management PowerShell 模块](https://go.microsoft.com/fwlink/?LinkId=257721)。
+> 若要使用此命令，必须安装至少 **2.1.0.0** 版的 [Azure Rights Management PowerShell 模块](https://www.powershellgallery.com/packages/AADRM)。
 >
-> 若要检查已安装的版本，请运行：**(Get-Module aadrm –ListAvailable).Version**
+> 若要查看已安装的版本，请运行：**(Get-Module aadrm –ListAvailable).Version**
 
 例如，如果出于测试目的，你最初只想让“IT 部门”组（具有对象 ID fbb99ded-32a0-45f1-b038-38b519009503）中的管理员能够保护内容，请使用以下命令：
 

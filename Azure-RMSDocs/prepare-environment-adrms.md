@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 11ffa730-c5dc-4b6b-9c1e-c58eff8aafc2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d93e761db545ac9934ca04f7cad148203cdb8c12
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 1a09edc0ed8a9bad27aa599282c9aaaf42ffc07a
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151769"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173666"
 ---
 # <a name="preparing-the-environment-for-azure-rights-management-when-you-also-have-active-directory-rights-management-services-ad-rms"></a>在已有 Active Directory Rights Management Services (AD RMS) 的情况下，为 Azure Rights Management 准备环境
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!IMPORTANT]
 > 使用 Active Directory Rights Management Services (AD RMS) 时的指南
@@ -57,7 +57,7 @@ ms.locfileid: "44151769"
 使用以下某个过程来停用 Azure Rights Management。
 
 > [!TIP]
-> 也可以使用 Windows PowerShell cmdlet [Disable-Aadrm](/powershell/module/aadrm/disable-aadrm) 来停用 Azure Rights Management 服务。
+> 也可以使用 Windows PowerShell cmdlet [Disable-Aadrm](/powershell/module/aadrm/disable-aadrm) 来停用 Azure Rights Management 服务。
 
 #### <a name="to-deactivate-rights-management-from-the-office-365-admin-center"></a>从 Office 365 管理中心停用权限管理
 
@@ -96,7 +96,7 @@ Microsoft 即将开始为包含 Azure Rights Management 或 Azure 信息保护�
 
 如果此服务已自动激活，且同时还要使用 AD RMS，这样的组合不兼容。因此，请务必让租户选择退出自动服务更新。 
 
-### <a name="step-1-opt-out-from-the-automatic-service-update"></a>第 1 步：选择退出自动服务更新
+### <a name="step-1-opt-out-from-the-automatic-service-update"></a>步骤 1：选择退出自动服务更新
 
 运行以下 [Set-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration) Exchange Online PowerShell 命令：`Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false`
 
@@ -121,7 +121,7 @@ Microsoft 即将开始为包含 Azure Rights Management 或 Azure 信息保护�
 
 请参阅迁移指南：[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)
 
-### <a name="step-3-configure-labels-for-protection"></a>第 3 步：为实现保护而配置标签
+### <a name="step-3-configure-labels-for-protection"></a>步骤 3：为实现保护而配置标签
 
 在迁移过程中激活 Azure Rights Management 服务后，可配置标签以便进行数据保护。 但是，如果分批迁移用户，请确保应用保护的标签的适用范围仅为已迁移用户。
 

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 96746e39d564c87471205fa442976a3904ddf992
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: e6586c60934bf0db48295c3d9a7a40ece84f4ad2
+ms.sourcegitcommit: 4caf3aa13506554928c5fda38994301ddcbdfb41
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023784"
+ms.locfileid: "53068854"
 ---
 # <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Azure 信息保护的符合性和支持信息
 
@@ -39,17 +39,17 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 ## <a name="legal-and-privacy"></a>法律和隐私
 
-- 对于 Microsoft Azure 协议信息：[Microsoft Azure 协议](http://azure.microsoft.com/support/legal/subscription-agreement/)
+- 对于 Microsoft Azure 协议信息：[Microsoft Azure 协议](https://azure.microsoft.com/support/legal/subscription-agreement/)
 
-- 对于 Microsoft Azure 隐私信息：[Microsoft Azure 隐私声明](http://azure.microsoft.com/support/legal/privacy-statement/)
+- 对于 Microsoft Azure 隐私信息：[Microsoft Azure 隐私声明](https://azure.microsoft.com/support/legal/privacy-statement/)
 
 ## <a name="security-compliance-and-auditing"></a>安全、合规性和审核
 
 请参阅 [Azure RMS 解决了哪些问题？](./azure-rms-problems-it-solves.md)一文中的[安全、合规性和法规要求](./what-is-azure-rms.md#security-compliance-and-regulatory-requirements)，了解有关特定 Azure 权限管理服务证书的信息。 此外：
 
-- 对于 Azure 信息保护的外部认证：[Microsoft Azure 信任中心](http://azure.microsoft.com/support/trust-center/)
+- 对于 Azure 信息保护的外部认证：[Microsoft Azure 信任中心](https://azure.microsoft.com/support/trust-center/)
 
-- 对于 FIPS 140 信息： [FIPS 140 验证](https://technet.microsoft.com/library/security/cc750357.aspx)
+- 对于 FIPS 140 信息：[FIPS 140 验证](https://technet.microsoft.com/library/security/cc750357.aspx)
 
 若要详细了解保护技术如何工作的技术信息，请参阅 [Azure RMS 的工作原理](./how-does-it-work.md) 
 

@@ -4,22 +4,22 @@ description: 当你自己管理 Azure 信息保护租户密钥（自带密钥方
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/29/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 098f7834e4765dcb020817014f9357139e42207a
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 92b5b2dad15c2ec33169e72e69f87bddec5e56df
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147094"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305312"
 ---
-# <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
+# <a name="customer-managed-tenant-key-life-cycle-operations"></a>由客户管理：租户密钥生命周期操作
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 如果你自己管理 Azure 信息保护租户密钥（自带密钥方案，简称 BYOK），请阅读以下部分，详细了解此拓扑相关的生命周期操作。
 
@@ -43,7 +43,7 @@ ms.locfileid: "44147094"
 
 若要将密钥重新生成为所管理的其他密钥，可在 Azure Key Vault 中创建新的密钥，或使用 Azure Key Vault 中已有的其他密钥。 然后按照为 Azure 信息保护实现 BYOK 的相同过程进行操作。 
 
-1. 仅当新密钥所在密钥保管库与已用于 Azure 信息保护的密钥保管库不同时：授权 Azure 信息保护使用此密钥保管库，方法是使用 [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) cmdlet。
+1. 仅当新密钥与已用于 Azure 信息保护的密钥位于不同的密钥保管库中时：通过使用 [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) cmdlet 授予 Azure 信息保护使用密匙保管库的权限。
 
 2. 如果 Azure 信息保护还不知道你要使用的密钥，请运行 [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey) cmdlet。
 
@@ -60,7 +60,7 @@ ms.locfileid: "44147094"
 ## <a name="backup-and-recover-your-tenant-key"></a>备份和恢复你的租户密钥
 由于是你本人管理自己的租户密钥，因此你需负责备份 Azure 信息保护使用的密钥。 
 
-如果在 Thales HSM 中已本地生成租户密钥：若要备份该密钥，请备份标记化密钥文件、安全体系文件和管理员卡。 将密钥传送到 Azure Key Vault 时，该服务将保存已标记化的密钥文件，以防出现任何服务节点故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将此标记化密钥文件作为完全备份。 例如，如果需要密钥的明文副本以在 Thales HSM 外部使用，则 Azure Key Vault 无法为你检索该副本，因为它仅有不可恢复的副本。
+如果在 Thales HSM 中本地生成了租户密钥：若要备份此密钥，需备份已标记化密钥文件、体系文件和管理员卡。 将密钥传送到 Azure Key Vault 时，该服务将保存已标记化的密钥文件，以防出现任何服务节点故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将此标记化密钥文件作为完全备份。 例如，如果需要密钥的明文副本以在 Thales HSM 外部使用，则 Azure Key Vault 无法为你检索该副本，因为它仅有不可恢复的副本。
 
 Azure Key Vault 具有一个[备份 cmdlet](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey)，可通过将其下载并存储到一个文件中来备份密钥。 由于下载的内容已加密，因此它不能在 Azure Key Vault 外使用。 
 

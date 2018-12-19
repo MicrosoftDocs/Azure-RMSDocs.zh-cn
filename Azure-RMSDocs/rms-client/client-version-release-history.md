@@ -4,25 +4,25 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/05/2018
+ms.date: 12/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bfca9c6aab0625a9d35d7648a53f7cce6b74bce6
-ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
+ms.openlocfilehash: c6312d3f10a70ffcb3cc48447fcbc751b7072a0d
+ms.sourcegitcommit: db24caa96033fd0c7a0fad4e36518a816a570c94
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861211"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53335517"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 
 
-可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式版本和当前预览版（若有）。 经过短暂的延迟后（通常是几周的时间），正式版本也会包含在 Microsoft 更新目录中（类别：Azure 信息保护）。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
+可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式版本和当前预览版（若有）。 经过短暂的延迟后（通常是几周的时间），正式发布版本也会包含在 Microsoft 更新目录中（类别：Azure 信息保护）。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
 
 有关详细信息，请参阅[升级和维护 Azure 信息保护客户端](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)。
 
@@ -44,7 +44,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 ## <a name="version-141510"></a>版本 1.41.51.0
 
 > [!TIP]
-> 由于你的标记是从 Office 365 安全与合规中心发布的，因此是否对评估 Azure 信息保护统一标记客户端感兴趣？ 请参阅 [Azure 信息保护统一标记客户端：版本发布信息](unifiedlabelingclient-version-release-history.md)。
+> 由于你的标记是从 Office 365 安全与合规中心发布的，因此是否对评估 Azure 信息保护统一标记客户端感兴趣？ 请参阅 [Azure 信息保护统一标签客户端：版本发布信息](unifiedlabelingclient-version-release-history.md)。
 
 **发布日期**：2018 年 11 月 27 日
 
@@ -74,7 +74,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     
     - 如果你在编辑单元格时保存电子表格，系统现在会应用视觉标记。
     
-    - Excel 2010：如果使用共同创作[权限级别](../configure-usage-rights.md#rights-included-in-permissions-levels)保护电子表格，现在可以在右键单击文件并选择“分类和保护”时使用“删除标签”按钮。
+    - Excel 2010：如果是使用共同创作[权限级别](../configure-usage-rights.md#rights-included-in-permissions-levels)来保护电子表格的，现在可以在右键单击文件并选择“分类和保护”时使用“删除标签”按钮。
 
 - 可以[从其他标记解决方案中删除页眉和页脚](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)的高级客户端设置现在支持自定义布局。
 
@@ -86,7 +86,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ## <a name="version-137190"></a>版本 1.37.19.0
 
-发布日期：2018 年 9 月 17 日
+**发布日期**：2018 年 09 月 17 日
 
 此版本包括 RMS 客户端的 MSIPC 1.0.3592.627 版本。
 
@@ -106,11 +106,13 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 对于 Azure 信息保护扫描程序：
 
-    - 新 cmdlet [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)：从当前正式版本 (1.29.5.0) 或更低版本升级后需要运行一次。
+    - 新 cmdlet，[Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)：从之前的正式发布版本 (1.29.5.0) 或更早版本升级后需要运行一次。
     
-    - 新 cmdlet [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus)：获取扫描程序服务的当前状态。  
+    - 新 cmdlet，[Get AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus)：获取扫描程序服务的当前状态。  
     
-    - 新 cmdlet [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)：当计划设置为手动时，指示扫描程序开始一次扫描周期。
+    - 新 cmdlet，[Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)：当计划设置为手动时，指示扫描程序开始一次扫描周期。
+    
+    - 将 ISO 标准用于 PDF 加密时，PDF 文档现在会默认受到保护。
     
     - 对于具有[对此版本 SharePoint 的延长支持](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)的客户，支持 SharePoint Server 2010。
     
@@ -150,11 +152,11 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 策略版本更改为 1.4。 [配置断开连接的计算机](client-admin-guide-customizations.md#support-for-disconnected-computers)需要标识版本号。
 
-- “帮助和反馈”对话框中的“给我们发送反馈”链接会被删除。 它暂时替换为“报告问题”，但此链接现在仅显示在预览版本中。 默认情况下，此选项会向 Microsoft 发送一封电子邮件，但可以将此电子邮件地址更改为指定的 HTTP 字符串。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 若要修改此地址，请使用[高级客户端设置](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)。
+- “帮助和反馈”对话框中的“给我们发送反馈”链接会被删除。 它将被暂时替换为“报告问题”，默认情况下，会向 Microsoft 发送一封电子邮件。 从 2018 年 12 月起，默认不会显示“报告问题”选项，但可以使用在其中为链接指定 HTTP 字符串的[高级客户端设置](client-admin-guide-customizations.md#add-report-an-issue-for-users)进行添加。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 
 
 ## <a name="version-12950"></a>版本 1.29.5.0 
 
-**发布日期**：2018 年 6 月 26 日
+**发布日期**：2018 年 06 月 26 日
 
 此版本包括 RMS 客户端的 MSIPC 1.0.3403.1224 版本。
 
@@ -170,7 +172,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ## <a name="version-127480"></a>版本 1.27.48.0
 
-**发布日期**：2018 年 5 月 30 日
+**发布日期**：2018 年 05 月 30 日
 
 此版本包括 RMS 客户端的 MSIPC 1.0.3403.1224 版本。
 
@@ -206,7 +208,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 有关安装和使用客户端的详细信息： 
 
-- 用户请参阅：[下载并安装客户端](install-client-app.md)
+- 面向用户：[下载并安装客户端](install-client-app.md)
 
-- 管理员请参阅：[Azure 信息保护客户端管理员指南](client-admin-guide.md)
+- 面向管理员：[Azure 信息保护客户端管理员指南](client-admin-guide.md)
 
