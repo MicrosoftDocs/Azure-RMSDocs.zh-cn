@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 1571939554e64459acd7ec0b7c32e9d40f7bd7eb
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 412b84b705d12efd7259066c0fece68e2ab8c099
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024308"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173930"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 保护模板（也称为 Rights Management 模板）是 Azure 信息保护的一组管理员定义的保护设置。 这些设置包括为授权用户选择的[使用权限](configure-usage-rights.md)，以及对到期和离线访问的访问控制。 这些模板已与 Azure 信息保护策略集成： 
 
@@ -79,7 +79,7 @@ ms.locfileid: "53024308"
     
     - 自动添加了“允许宏”（公用名）。 Office 应用中的 Azure 信息保护栏要求此使用权限。
 
-- “发布”和“已存档”设置在“标签”边栏选项卡上分别显示为“已启用: 打开”和“已启用: 关闭”。 对于想要保留但对用户或服务不可见的模板，将其设置为“已启用”：“关闭”。
+- “已发布”和“已存档”设置在“标签”选项卡上分别显示为“启用: 开”和“启用: 关”。 对于想要保留但对用户或服务不可见的模板，将其设置为“启用: 关”。
 
 - 无法在 Azure 门户中复制或删除模板。 将模板转换为标签时，可以通过选择“为包含此标签的文档和电子邮件设置权限”选项的“未配置”配置该标签以停止使用该模板。 或者，可以删除标签。 但是，在这两种方案中，模板均不会被删除且模板仍保持已存档状态。
     
@@ -99,7 +99,7 @@ ms.locfileid: "53024308"
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
-2. 从“分类” > “标签”菜单选项：在“Azure 信息保护 - 标签”边栏选项卡上，展开“保护模板”，然后找到要配置的模板。
+2. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，展开“保护模板”，然后找到要配置的模板。
     
 3. 选择模板，在“标签”边栏选项卡上，通过编辑“标签显示名称”和“说明”，可以根据需要更改模板名称和说明。 然后，选择值为“Azure (云密钥)”的“保护”，打开“保护”边栏选项卡。
 
@@ -126,7 +126,7 @@ ms.locfileid: "53024308"
 
 - 模板的名称转换为新的标签名称，并且模板说明转换为标签工具提示。 
 
-- 如果模板的状态已发布，此设置会映射到标签的“已启用: 打开”，当你下次发布 Azure 信息保护策略时，该设置向用户显示为此标签。 如果模板的状态已存档，则此设置映射到标签的“已启用: 关闭”，不会显示为用户可用的标签。
+- 如果模板的状态已发布，此设置针对标签映射为“启用: 开”，当你下次发布 Azure 信息保护策略时，模板向用户显示为此标签。 如果模板的状态已存档，此设置针对标签映射为“启用: 关”，且模板不会向用户显示为可用标签。
 
 - 会保留保护设置，你可以根据需要进行编辑，还可以添加其他标签设置，如视觉对象标记和条件。
 
@@ -136,9 +136,9 @@ ms.locfileid: "53024308"
 
 创建一个具有 Azure（云密钥）保护设置的新标签时，此操作会在后台创建一个新的自定义模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。
 
-1. 从“分类” > “标签”菜单选项：在“Azure 信息保护 - 标签”边栏选项卡上，选择“添加新标签”。
+1. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，选择“添加新标签”。
 
-2. 在“标签”边栏选项卡中，保持默认值“已启用: 打开”，然后输入标签名称和说明用作模板名称和说明。
+2. 在“标签”边栏选项卡，保留默认设置“启用: 开”，然后输入标签名称和说明用作模板名称和说明。
 
 3. 对于“设置包含此标签的文档和电子邮件的权限”，选择“保护”，然后选择“保护”：
     
@@ -152,7 +152,7 @@ ms.locfileid: "53024308"
     
     虽然标签已启用，但默认情况下，模板已存档。 因此，应用程序和服务可以使用该模板来保护文档和电子邮件，完成发布模板的最后一步。
 
-5. 从“分类” > “策略”菜单选项中，选择要包含新保护设置的策略。 然后选择“添加或删除标签”。 从“策略: 添加或删除标签”边栏选项卡上，选择新创建的标签，其中包含你的保护设置，单击“确定”，然后选择“保存”。
+5. 从“分类” > “策略”菜单选项中，选择要包含新保护设置的策略。 然后选择“添加或删除标签”。 从“策略: 添加或删除标签”边栏选项卡上，选择新创建的标签，其中包含你的保护设置，选择“确定”，然后选择“保存”。
 
 ## <a name="next-steps"></a>后续步骤
 
