@@ -2,8 +2,8 @@
 title: 如何使用加密设置 | Azure RMS
 description: Azure RMS 加密包及其使用的代码片段的方向。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d8d5c76c08c7518c8279267a6c1e15f559d6ea54
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 6c46df1ac7aca8d4668ff71bb91195d059f8a3a6
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147145"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071708"
 ---
 # <a name="how-to-work-with-encryption-settings"></a>操作说明：使用加密设置
 
@@ -30,7 +30,7 @@ ms.locfileid: "44147145"
 > [!IMPORTANT]
 > 对 *AES 256* 受保护的文件的使用支持自 [2014 年 10 月的版本](release-notes-rtm.md)起已存在。 如果正在运行使用 2014 年 10 月之前的 SDK 版本构建的应用程序，此更新将中断该应用程序。 请确保正在构建的应用程序的客户使用更新后的 SDK，或愿意立即更新该应用程序的最新版本。
 
- 
+ 
 ## <a name="api-encryption-support"></a>API 加密支持
 
 从 [2015 年 3 月更新](release-notes-rtm.md)开始，我们已经将下列三个标记合并到我们的 API 及其关联的加密包中：

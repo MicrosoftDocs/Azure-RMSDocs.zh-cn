@@ -1,8 +1,8 @@
 ---
 title: 新增功能和发行说明
 description: 概述此版本和早期版本中的重要更改和功能。
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 12/11/2018
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 6433352f05401fcaafc84704a0441941ff87bdf3
-ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
+ms.openlocfilehash: 260e6103c90db3da70f4feddfe65b9a8008fc95c
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266692"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071754"
 ---
 # <a name="whats-new-and-release-notes"></a>新增功能和发行说明
 

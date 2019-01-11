@@ -2,8 +2,8 @@
 title: Windows 应用商店安装程序 | Azure RMS
 description: Windows Store 应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 12/10/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6d16237ff8d4fbfe1b26a73577c16b78b31849e1
-ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
+ms.openlocfilehash: b7317dcd85cf8dd1792dee583a96bfa370673b4d
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266352"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071788"
 ---
 # <a name="windows-store-setup"></a>Windows 应用商店安装程序
 

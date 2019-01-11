@@ -2,8 +2,8 @@
 title: 入门 | Azure RMS
 description: 借助 RMS SDK 2.1 平台，开发人员可构建利用 RMS 信息保护的应用程序。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 43e63165fcf8c19760a9f82619a02923ba55e97e
-ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
+ms.openlocfilehash: b1d53d6d79f9d3bd8174e4cf8cf2ae6caff4eb94
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266335"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071737"
 ---
 # <a name="getting-started"></a>开始使用
 

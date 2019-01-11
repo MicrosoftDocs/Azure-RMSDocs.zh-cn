@@ -2,8 +2,8 @@
 title: Android 代码示例 | Azure RMS
 description: 本主题向你介绍 Android 版本的 RMS SDK 的重要代码元素。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 12/10/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8537a4a9e51b99e0dd37e7abc720473b364cd879
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: a634cea9cf6665b5db08fdb359e6a69cd507a47f
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173683"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070326"
 ---
 # <a name="android-code-examples"></a>Android 代码示例
 
