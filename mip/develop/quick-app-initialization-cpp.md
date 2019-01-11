@@ -4,23 +4,23 @@ description: 快速入门教程，演示如何为 Microsoft 信息保护 (MIP) S
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
-ms.date: 09/27/2018
+ms.date: 01/08/2019
 ms.author: bryanla
-ms.openlocfilehash: 578c5aa69faa986663ea6c164d94e5940580167d
-ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
-ms.translationtype: HT
+ms.openlocfilehash: 686321c4f376679103b92419b5b86abaa74dc394
+ms.sourcegitcommit: adc4621ec4738c0abb6c1fa81a6598a6dfc5ace6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866130"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136219"
 ---
-# <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C++)
+# <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 （c + +）
 
 本快速入门教程将演示如何实现 MIP C++ SDK 在运行时使用的客户端初始化模式。 
 
 > [!NOTE]
 > 对于使用 MIP 文件、策略或保护 AP 的任何客户端应用程序，都需要执行本快速入门中概述的步骤。 虽然本快速入门演示的是文件 API 的使用，但同样的模式也适用于使用策略和保护 API 的客户端。 之后的快速入门应是按顺序完成的，因为每一个都是在前一个的基础上构建的，本快速入门是第一个。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>必备组件
 
 如果尚未准备，请务必：
 
@@ -259,8 +259,8 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
    int main()
    {
      // Construct/initialize objects required by the application's profile object
-     ApplicationInfo appInfo{"<application-id>",                    // ApplicationInfo object (App ID, friendly name)
-                 "<friendly-name>" };
+     ApplicationInfo appInfo{"<application-id>",                    // ApplicationInfo object (App ID, app name)
+                 "<application-name>" };
      auto profileObserver = make_shared<ProfileObserver>();         // Observer object                  
      auto authDelegateImpl = make_shared<AuthDelegateImpl>(         // Authentication delegate object (App ID)
                  "<application-id>");
@@ -312,8 +312,8 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
    | 占位符 | 值 | 示例 |
    |:----------- |:----- |:--------|
-   | \<应用程序 ID\> | 分配给在“MIP SDK 安装和配置”中注册的应用程序的 Azure AD 应用程序 ID（2 个实例）。  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
-   | \<友好名称\> | 用户定义的应用程序友好名称。 | AppInitialization |
+   | \<应用程序 ID\> | Azure AD 应用程序 ID (GUID) 分配给应用程序中注册[步骤 #2 的"MIP SDK 安装和配置"](/information-protection/develop/setup-configure-mip#register-a-client-application-with-azure-active-directory)一文。 将为 2 个实例。  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
+   | \<应用程序名称\> | 用户定义的应用程序友好名称。 必须包含有效的 ASCII 字符 (不包括;)，而且理想情况下在 Azure AD 注册中使用的应用程序名称匹配。 | AppInitialization |
    | \<引擎帐户\> | 用于引擎标识的帐户。 在令牌获取期间使用用户帐户进行身份验证时，它必须与此值匹配。 | user1@tenant.onmicrosoft.com |
    | \<引擎状态\> | 用户定义的与引擎关联的状态。 | MyAppState |
 

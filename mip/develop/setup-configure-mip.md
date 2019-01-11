@@ -4,14 +4,14 @@ description: 提供安装和配置先决条件，以便使用 Microsoft 信息�
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
-ms.date: 09/27/2018
+ms.date: 01/08/2019
 ms.author: bryanla
-ms.openlocfilehash: 2790c64095a6fca4a33f70aeada68fa0c6668020
-ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
+ms.openlocfilehash: 2f84cfd8a0ae15a66cd624fe591f2891ff549768
+ms.sourcegitcommit: adc4621ec4738c0abb6c1fa81a6598a6dfc5ace6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386723"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136220"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置 
 
@@ -21,7 +21,7 @@ ms.locfileid: "52386723"
 
 [!INCLUDE [MIP SDK platform support](../include/mip-sdk-platform-support.md)]
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必备组件
 
 在开始之前，请务必查看以下主题：
 
@@ -38,7 +38,7 @@ ms.locfileid: "52386723"
 
 许多 SDK 示例都需要访问 Office 365 订阅的权限。 如果尚未注册，请务必注册以下订阅类型之一：
 
-| 名称 | 注册 |
+| “属性” | 注册 |
 |------|---------|
 | Office 365 企业版 E3 试用版（30 天免费试用） | https://go.microsoft.com/fwlink/p/?LinkID=403802 |
 | Office 365 企业版 E3 或 E5 | https://products.office.com/business/office-365-enterprise-e3-business-software |
@@ -113,8 +113,8 @@ ms.locfileid: "52386723"
 
    每个 .zip 或 tarball 包含三个目录：
 
-   - **：** 适用于每个平台体系结构的已编译二进制文件。
-   - **包含：** Microsoft 信息保护 SDK 标头文件
+   - **箱：** 编译二进制文件的每个平台体系结构中，在适用的情况。
+   - **包括：** Microsoft 信息保护 SDK 头文件
    - **示例：** 示例应用程序的源代码
 
    如果正在进行 Visual Studio 开发，也可以通过 NuGet 包管理器控制台安装 SDK：
@@ -139,7 +139,7 @@ ms.locfileid: "52386723"
 
 ## <a name="register-a-client-application-with-azure-active-directory"></a>向 Azure Active Directory 注册将客户端应用程序
 
-在 Office 365 订阅预配过程中，将创建关联的 Azure AD 租户。 Azure AD 租户为 Office 365 用户帐户和应用程序帐户提供标识和访问管理。 应用程序需要应用程序帐户才能访问受保护的 API（例如 MIP API）。
+作为 Office 365 订阅预配过程的一部分，创建一个关联的 Azure Active Directory (Azure AD) 租户。 Azure AD 租户为 Office 365 用户帐户和应用程序帐户提供标识和访问管理。 应用程序需要应用程序帐户才能访问受保护的 API（例如 MIP API）。
 
 对于运行时的身份验证和授权，帐户由安全主体表示，该安全主体派生自帐户的标识信息。 表示应用程序帐户的安全主体称为[*服务主体*](/azure/active-directory/develop/developer-glossary#service-principal-object)。 
 
@@ -149,7 +149,7 @@ ms.locfileid: "52386723"
   > 要访问 Azure AD 租户管理以创建帐户，需要使用用户帐户登录 Azure 门户，该用户帐户应是[订阅上“所有者”角色](/azure/billing/billing-add-change-azure-subscription-administrator)的成员。 根据租户的配置，可能还需要成为“全局管理员”目录角色的成员才能[注册应用程序](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)。
   > 建议使用受限帐户进行测试。 请确保该帐户仅具有访问必要 SCC 终结点的权限。 日志记录系统可收集通过命令行传递的明文密码。
 
-1. 请按照[将应用程序与 Azure Active Directory 集成，“添加应用程序”部分](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#adding-an-application)中的步骤进行操作。 出于测试目的，在完成指导步骤时，请对给定属性使用以下值： 
+1. 按照中的步骤[与 Azure AD 注册应用，注册新的应用程序](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#register-a-new-application-using-the-azure-portal)部分。 出于测试目的，在完成指导步骤时，请对给定属性使用以下值： 
     - **应用程序类型** - 选择“本机”，因为 SDK 演示的应用程序是本机安装的控制台应用程序。 OAuth2 将本机应用程序视为“公共”客户端，因为它们无法以安全的方式存储/使用应用程序凭据。 与基于服务器的“机密”应用程序（如 Web 应用程序）不同，后者使用自己的凭据进行注册。 
     - **重定向 URI** - 由于 SDK 使用简单的控制台客户端应用程序，因此请使用格式为 `<app-name>://authorize` 的 URI。
 
@@ -174,7 +174,7 @@ ms.locfileid: "52386723"
    [![Azure AD 应用注册](media/setup-mip-client/aad-app-registration.png)](media/setup-mip-client/aad-app-registration.png#lightbox)
 
 
-有关向注册添加 API 和权限的详细信息，请参阅[更新应用程序、配置客户端应用程序以访问 Web API 部分](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#updating-an-application)。 此处可以找到有关添加客户端应用程序所需的 API 和权限信息。  
+将 Api 和权限添加到注册的详细信息，请参阅[更新应用程序在 Azure AD 中的配置客户端应用程序以访问 web Api](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app#configure-a-client-application-to-access-web-apis)。 此处可以找到有关添加客户端应用程序所需的 API 和权限信息。  
 
 ## <a name="request-an-information-protection-integration-agreement-ipia"></a>请求信息保护集成协议 (IPIA)
 
@@ -219,6 +219,6 @@ ms.locfileid: "52386723"
 ## <a name="next-steps"></a>后续步骤
 
 - 在学习快速入门部分前，请务必阅读 [MIP SDK 中的观察程序](concept-async-observers.md)，因为 MIP SDK 几乎完全是异步的。
-- 如果已具备 SDK 的实际操作经验，请从[快速入门：客户端应用程序初始化 (C++)](quick-app-initialization-cpp.md) 开始。
+- 如果您准备好获取 SDK 的某些实践经验，请先使用[快速入门：客户端应用程序初始化 （c + +）](quick-app-initialization-cpp.md)。
 
 
