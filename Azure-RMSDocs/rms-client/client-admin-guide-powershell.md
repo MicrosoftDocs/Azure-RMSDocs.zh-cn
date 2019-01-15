@@ -4,18 +4,18 @@ description: 管理员通过使用 PowerShell 管理 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 12/25/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d707f32062df54975237d9ae6f7218d33cfe337a
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 8c46dfb6aafa9162be6725202516f8d1fa871cc8
+ms.sourcegitcommit: 60223377a914269c93d73b3522d87b8161ecf854
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305652"
+ms.lasthandoff: 12/26/2018
+ms.locfileid: "53786311"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -33,9 +33,11 @@ cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 �
 |[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|以非交互方式标记文件，例如使用按计划运行的脚本。|
 
 > [!TIP]
-> 若要使用路径长度超过 260 个字符的 cmdlet，请使用 Windows 10 周年更新中提供的以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)：<br /> “本地计算机策略” > “计算机配置” > “管理模板” > “所有设置” > “NTFS” > “启用 Win32 长路径” 
+> 若要使用路径长度超过 260 个字符的 cmdlet，请使用自 Windows 10 版本 1607 开始提供的以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)：<br /> “本地计算机策略” > “计算机配置” > “管理模板” > “所有设置” > “NTFS” > “启用 Win32 长路径” 
 > 
 > 对于 Windows Server 2016，在安装 Windows 10 的最新管理模板 (.admx) 时，可以使用相同的组策略设置。
+>
+> 有关详细信息，请参阅 Windows 10 开发人员文档中的[最大路径长度限制](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation)一节。
 
 [Azure 信息保护扫描程序](../deploy-aip-scanner.md)使用 AzureInformationProtection 模块中的 cmdlet 在 Windows Server 上安装和配置服务。 然后，可使用此扫描程序发现和保护数据存储中的文件并对其进行分类。
 

@@ -2,8 +2,8 @@
 title: AIP 开发人员术语 | Microsoft Docs
 description: 特定于 Rights Management Services 的开发人员术语定义的集合。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8ddf0b8722111ff2cd4c433337c4e0c930b02009
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 1cf0080c899bc3095ff036f651c1f31f63b70ffe
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151548"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071364"
 ---
 # <a name="terms"></a>条款
 

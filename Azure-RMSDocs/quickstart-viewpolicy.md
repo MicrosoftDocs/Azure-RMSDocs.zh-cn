@@ -4,15 +4,15 @@ description: 如果你的组织刚刚开始使用 Azure 信息保护，请从此
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 12/15/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: f5cf70b0827e36ffae6644634ef198385ef6d11a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: c890d6acf2557093441a175bc8ed8657e8d1d9da
+ms.sourcegitcommit: bc082cffaa698b89b28aef7034290553c26f667b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023509"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53411807"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
@@ -83,12 +83,12 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
     
 3. “配置要对信息保护最终用户显示和应用的设置”部分中的标签后面还显示一些策略设置。 例如，未设置默认标签，文档和电子邮件无需具备标签，且用户在更改标签时无需提供理由：
     
-    ![Azure 信息保护快速入门教程步骤 3 - 默认策略](./media/info-protect-policy-default-settings.png) 
+    ![Azure 信息保护快速入门教程步骤 3 - 默认策略](./media/info-protect-policy-default-settings-quickstart.png) 
 
 4. 由于只查看标签和设置，可以关闭已打开的任何边栏选项卡。
 
 ## <a name="next-steps"></a>后续步骤
 
-现在可以在 Azure 门户中看到标签和策略设置，在下一步执行以下教程，可能对你很有帮助：[编辑策略并为 Azure 信息保护创建新标签](infoprotect-quick-start-tutorial.md)。
+现在可以在 Azure 门户中看到标签和策略设置，在下一步执行以下教程可能很有帮助：[编辑策略并为 Azure 信息保护创建新标签](infoprotect-quick-start-tutorial.md)。
 
 或者，有关配置 Azure 信息保护策略的所有方面的详细说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。

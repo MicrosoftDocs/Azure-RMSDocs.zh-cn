@@ -4,18 +4,18 @@ description: 确定使用 RMS API 本机支持 Azure 信息保护中的 Azure Ri
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/13/2018
+ms.date: 12/15/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cc823bcb175c9f4181d365a8caf99da33171c338
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 51883da128580be5f6bfd4dd725b8dfdf10f844f
+ms.sourcegitcommit: 5b48131ace3bbaf82f22fcb7eedf735c2f73d962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173904"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429876"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -115,6 +115,8 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 - Office 365 专业增强版：Office 2016
 
 - Office Standard 2016 for Mac
+
+所有版本的 Office for Mac 2016 都支持使用受保护的内容。
 
 提示：要开始使用 Office for Mac 保护文档，以下常见问题解答可能有用：[如何配置 Mac 计算机以保护和跟踪文档？](faqs-rms.md#how-do-i-configure-a-mac-computer-to-protect-and-track-documents)
 

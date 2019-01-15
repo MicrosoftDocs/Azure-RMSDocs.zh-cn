@@ -4,18 +4,18 @@ description: 通过 Azure 门户配置和管理 Rights Management 模板。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2018
+ms.date: 12/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 412b84b705d12efd7259066c0fece68e2ab8c099
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 6147a065f6aff31dd40c339699f0dc35f1ebaa82
+ms.sourcegitcommit: b10df82d9f00b3f826bce38beb7b666ce3f56e84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173930"
+ms.lasthandoff: 12/28/2018
+ms.locfileid: "53814231"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
@@ -83,7 +83,7 @@ ms.locfileid: "53173930"
 
 - 无法在 Azure 门户中复制或删除模板。 将模板转换为标签时，可以通过选择“为包含此标签的文档和电子邮件设置权限”选项的“未配置”配置该标签以停止使用该模板。 或者，可以删除标签。 但是，在这两种方案中，模板均不会被删除且模板仍保持已存档状态。
     
-    现在可以通过使用 PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) cmdlet 删除模板。 还可以为未转换为标签的模板使用此 PowerShell cmdlet。 但是，如果删除已用于保护内容的模板，则不能再打开该内容。 仅当确定模板未用于保护生产中的文档或电子邮件时，才可删除模板。 作为一种预防措施，建议考虑首先使用 [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate) cmdlet 将模板作为备份导出。 
+    现在可以通过使用 PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) cmdlet 删除模板。 还可以为未转换为标签的模板使用此 PowerShell cmdlet。 但是，为了确保能够按预期打开和使用以前受到保护的内容，通常建议不要删除模板。 最佳做法是仅当确定模板未用于保护生产中的文档或电子邮件时，才可删除模板。 作为一种预防措施，建议考虑首先使用 [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate) cmdlet 将模板作为备份导出。 
 
 - 目前，如果编辑并保存部门模板，则会删除作用域配置。 Azure 信息保护策略中的作用域内模板相当于[作用域内策略](configure-policy-scope.md)。 如果将模板转换为标签，则可以选择现有作用域。
     

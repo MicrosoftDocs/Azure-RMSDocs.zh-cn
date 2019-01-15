@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ab2ea0f153d33e192958bf84800fc713d1b5b336
-ms.sourcegitcommit: c9a0d81c18ea79a2520baa4b3777b06a72f87f60
+ms.openlocfilehash: a7bf1e202fdff99375054647e04d44d44eecdb85
+ms.sourcegitcommit: 5b48131ace3bbaf82f22fcb7eedf735c2f73d962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53382497"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429893"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -129,7 +129,7 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 如果确实需要附加的文档以保留原始保护，请参阅[使用 Azure 信息保护来保护文档协作](secure-collaboration-documents.md)。
 
-注意：如果看到了对 DecryptAttachmentFromPortal 的引用，请注意现已为 [Set-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps) 弃用了此参数并且将不再可用。
+注意：如果看到了对 DecryptAttachmentFromPortal 的引用，请注意对于 [Set-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps)现已弃用此参数。 除非之前设置了此参数，否则它不可用。 
 
 ## <a name="rights-management-issuer-and-rights-management-owner"></a>权限管理颁发者和权限管理所有者
 

@@ -4,16 +4,16 @@ description: 可以删除或重排用户可见的 Azure 信息保护标签。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 12/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 1f957874649fe9e5697c3dd0164b0b0b255d1e6e
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 6e5348eb55451747ff9f10b3bd4f7a2f868b03c5
+ms.sourcegitcommit: 95f16f89a46d9dffa8a114f7683816024d65ff02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53304870"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996059"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>如何删除或重排 Azure 信息保护的标签
 
@@ -33,7 +33,7 @@ ms.locfileid: "53304870"
 
 - 使用 PowerShell 重命名模板或将它删除。
     
-    在执行这些操作前，请考虑其他的管理员或服务是否正在使用此模板，并按其当前名称对其进行标识。 仅在无需打开由模板保护的文档或电子邮件时才删除此模板。
+    在执行这些操作前，请考虑其他管理员或服务是否正在使用此模板或者曾经使用过此模板。 可以通过不会更改的模板 ID 或模板名称（可以更改）来标识模板。 最佳做法是仅在确信用户无需打开受模板保护的文档或电子邮件时，才可删除模板。
 
 有关管理保护模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 

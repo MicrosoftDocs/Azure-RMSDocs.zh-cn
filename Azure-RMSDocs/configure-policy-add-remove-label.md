@@ -4,22 +4,24 @@ description: 向所有用户的全局策略或子集用户的作用域内策略�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: 367426324af487cbdf0ddaac53eb86aa89c168b7
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 154b8d5b61169208cdc01a2445be918ea6e2f77b
+ms.sourcegitcommit: b10df82d9f00b3f826bce38beb7b666ce3f56e84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53304840"
+ms.lasthandoff: 12/28/2018
+ms.locfileid: "53814197"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>向 Azure 信息保护策略添加标签或从中删除标签
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
-创建 Azure 信息保护标签后，可以将其添加到策略，以便它可供用户使用。 如果标签面向所有用户，则将标签添加到全局策略。 如果标签面向所有子集用户，则将标签添加到作用域内策略。 目前，只能将标签添加到一个策略。 若要添加子标签，其父标签必须位于同一策略中，或位于全局策略中。
+创建 Azure 信息保护标签后，可以将其添加到策略，以便它可供用户使用。 如果标签面向所有用户，则将标签添加到全局策略。 如果标签面向所有子集用户，则将标签添加到作用域内策略。 只能将标签添加到一个策略。 
+
+若要添加子标签，其父标签必须位于同一策略中，或位于全局策略中。 添加子标签时，不会继承主标签中的设置。 对于在策略中分配了子标签的用户，仅支持主标签作为名称和颜色的显示容器。 在此情况下，不支持将主标签中的其他配置设置用于视觉标记、保护和条件。 尽管仍然可以配置它们，但是仅支持将主标签中的这些设置用于策略中具有主标签但没有子标签的用户。
 
 对于已存在于一个策略中的标签，可以从策略中将其删除。 此操作不会删除标签。 仍可以在另一个策略中使用。
 
@@ -56,5 +58,4 @@ ms.locfileid: "53304840"
 
 ## <a name="next-steps"></a>后续步骤
 
-有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。  
-
+有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。

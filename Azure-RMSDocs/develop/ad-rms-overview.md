@@ -2,8 +2,8 @@
 title: 概述 - RMS SDK 2.1 | Azure RMS
 description: Rights Management Services (RMS) 是一种信息保护技术，可帮助保护数字信息免遭未经授权的使用。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 50dc99a83cbd45b977c2ddb22a2a3034f648c396
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: edd4cb0d28c68491348e61ac5a90d03087059144
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147410"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070275"
 ---
 # <a name="overview"></a>概述
 

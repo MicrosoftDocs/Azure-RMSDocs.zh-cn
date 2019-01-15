@@ -2,8 +2,8 @@
 title: 文件 API 配置 |Azure RMS
 description: 可通过注册表中的设置来配置文件 API 的行为。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 10/11/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 1323984258b64e9d28142a0209a89d3791ab03dd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0b05498730d064dfa2b7fb2183b1a8694c1fbf63
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148641"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070615"
 ---
 # <a name="file-api-configuration"></a>文件 API 配置
 
@@ -37,15 +37,15 @@ ms.locfileid: "44148641"
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection`
 
-**类型**：密钥
+**类型**：Key
 
-**描述**：包含文件 API 的常规配置。
+**说明**：包含文件 API 的常规配置。
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>`
 
-**类型**：密钥
+**类型**：Key
 
-**描述**：指定特定文件扩展名的配置信息，例如 TXT 和 JPG 等。
+**说明**：指定特定文件扩展名的配置信息，例如 TXT 和 JPG 等。
 
 - 允许使用通配符“*”，但是，特定扩展名的设置优先于通配符设置。 通配符不会影响 Microsoft Office 文件的设置；必须按文件类型显式禁用这些设置。
 - 若要指定没有扩展名的文件，请使用“.”
@@ -58,14 +58,14 @@ ms.locfileid: "44148641"
 
 **类型**：REG_SZ
 
-**描述**：包含以下三个值之一：
+**说明**：包含以下三个值之一：
 
-- **Off**：禁用加密。
+- **关闭**：禁用加密。
 
 > [!Note]
 > 此设置对解密没有任何影响。 只要用户具有 **EXTRACT** 权限，就可解密任何加密文件（无论是使用本机保护还是 Pfile 保护进行加密）。
 
-- **Native**：使用本机加密。 对于 Office 文件，加密文件将具有与原始文件相同的扩展名。 例如，文件扩展名为 .docx 的文件将被加密为扩展名为 .docx 的文件。 对于其他可以应用本机保护的文件，会将文件加密为具有 p*zzz* 扩展名格式的文件，其中 *zzz* 是原始文件扩展名。 例如，.txt 文件会被加密为扩展名为 .ptxt 的文件。 下面是可应用本机保护的文件扩展名列表。
+- **本机**：使用本机加密。 对于 Office 文件，加密文件将具有与原始文件相同的扩展名。 例如，文件扩展名为 .docx 的文件将被加密为扩展名为 .docx 的文件。 对于其他可以应用本机保护的文件，会将文件加密为具有 p*zzz* 扩展名格式的文件，其中 *zzz* 是原始文件扩展名。 例如，.txt 文件会被加密为扩展名为 .ptxt 的文件。 下面是可应用本机保护的文件扩展名列表。
 
 - **Pfile**：使用 PFile 加密。 加密的文件会将 .pfile 追加到原来的扩展名。 例如，加密后，.txt 文件的文件扩展名将为 .txt.pfile。
 
@@ -92,18 +92,18 @@ ms.locfileid: "44148641"
 -   文件扩展名：doc、dot、xla、xls、xlt、pps、ppt、docm、docx、dotm、dotx、xlam、xlsb、xlsm、xlsx、xltm、xltx、xps、potm、potx、ppsx、ppsm、pptm、pptx、thmx、vsdx、vsdm、vssx、vssm、vstx 和 vstm。 
 -   保护类型 = Native（默认）：sample.docx 加密为 sample.docx
 -   保护类型 = Pfile：对于 Office 文件，具有与 Native 相同的效果。
--   Off：禁用加密。
+-   关闭：禁用加密。
 
 **PDF 文件**
 
 -   保护类型 = Native：sample.pdf 被加密，并命名为 sample.ppdf
 -   保护类型 = Pfile：sample.pdf 被加密，并命名为 sample.pdf.pfile。
--   Off：禁用加密。
+-   关闭：禁用加密。
 
 **所有其他文件格式**
 
 -   保护类型 = Pfile：sample.*zzz* 被加密，并命名为 sample.*zzz*.pfile；其中 *zzz* 是原始文件扩展名。
--   Off：禁用加密。
+-   关闭：禁用加密。
 
 ### <a name="examples"></a>示例
 
@@ -111,38 +111,38 @@ ms.locfileid: "44148641"
 
 ```
 HKEY_LOCAL_MACHINE
-   Software
-      Microsoft
-         MSIPC
-            FileProtection
-               txt
-                  Encryption = Pfile
+   Software
+      Microsoft
+         MSIPC
+            FileProtection
+               txt
+                  Encryption = Pfile
 ```
 
 以下设置为所有非 Office 文件（txt 文件除外）启用 PFile 加密。 Office 文件将应用本机保护（默认），txt 文件将阻止保护，所有其他文件将应用 PFile 保护。
 
 ```
 HKEY_LOCAL_MACHINE
-   Software
-      Microsoft
-         MSIPC
-            FileProtection
-               *
-                  Encryption = Pfile
-               txt
-                  Encryption = Off
+   Software
+      Microsoft
+         MSIPC
+            FileProtection
+               *
+                  Encryption = Pfile
+               txt
+                  Encryption = Off
 ```
 
 以下设置对 docx 文件禁用本机加密。 Office 文件（docx 文件除外）将应用本机保护（默认），所有其他文件都将阻止保护（默认）。
 
 ```
 HKEY_LOCAL_MACHINE
-   Software
-      Microsoft
-         MSIPC
-            FileProtection
-               docx
-                  Encryption = Off
+   Software
+      Microsoft
+         MSIPC
+            FileProtection
+               docx
+                  Encryption = Off
 ```
 
 ## <a name="related-articles"></a>相关文章

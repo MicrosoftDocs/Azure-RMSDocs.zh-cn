@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a9f54931d8409fd88bddb6be85f1a0d7c2b416a1
-ms.sourcegitcommit: 40ea9568688b9da95d72b48f02b4152e54da17c6
+ms.openlocfilehash: e66ad53b23a76a263d4ec74e184597db12fdaa9d
+ms.sourcegitcommit: 8deca8163a6adea73f28aaf300a958154f842e4a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53029398"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210492"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -90,7 +90,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 ## <a name="installing-and-supporting-the-azure-information-protection-client"></a>安装和支持 Azure 信息保护客户端
 
-可通过使用 Windows 更新、可执行文件或 Windows Installer 文件来安装 Azure 信息保护客户端。 如需详细了解每个选项和说明，请参阅[为用户安装 Azure 信息保护客户端](client-admin-guide-install.md)。  
+可通过使用可执行文件或 Windows Installer 文件来安装 Azure 信息保护客户端。 如需详细了解每个选项和说明，请参阅[为用户安装 Azure 信息保护客户端](client-admin-guide-install.md)。  
 
 使用以下部分获取有关安装客户端的支持信息。 
 

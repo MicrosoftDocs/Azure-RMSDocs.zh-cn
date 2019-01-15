@@ -2,8 +2,8 @@
 title: 如何&#58;启用错误和性能日志记录 | Azure RMS
 description: Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性能日志上传。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 4dece185bdbfd83d8ee98d815ead5545ca007754
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 5b454ea2917fc5807326493fdf303e508bda7f0f
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147349"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071805"
 ---
 # <a name="how-to-enable-error-and-performance-logging"></a>如何：启用错误和性能日志记录
 Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性能日志上传。
@@ -79,7 +79,7 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
 获取日志级别控制设置
 
     [[NSUserDefaults standardUserDefaults] boolForKey:@&quot;IpcLogLevel&quot;];
- 
+ 
 
 ## <a name="windows"></a>Windows ##
 启用自动日志记录

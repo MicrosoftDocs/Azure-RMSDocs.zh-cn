@@ -1,9 +1,9 @@
 ---
-title: Rights Management SDK 4.2 - AIP
+title: Rights Management SDK 4.2 - API
 description: RMS SDK 4.2 是一种简化的新一代 API，可用于在使用 Rights Management 技术升级设备应用时提供轻型开发体验。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 12da69e59b45348a113ec878f77a037eed2a8fdd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 7780f7d540de4a36a53aa430da6625258234f673
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151578"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071244"
 ---
-# <a name="rights-management-sdk-42"></a>Rights Management SDK 4.2
+# <a name="rights-management-sdk42"></a>Rights Management SDK 4.2
 
 ## <a name="purpose"></a>目的
 
@@ -43,7 +43,7 @@ RMS SDK 4.2 这一版本可用于以下操作系统：
 
 [概述](overview.md) - Rights Management Services 是一种信息保护技术，可帮助保护数字信息免遭未经授权的使用。 通过启用权限的应用程序，内容所有者将能够定义可以对其内容进行打开、修改、打印、转发或执行其他操作的人员。
 
-[入门](get-started.md) - 对于 RMS SDK 4.2 这一版本，第一个应用程序的快速入门方法是通过适用于每种操作系统/平台的开发环境设置指南。
+[入门](get-started.md) - 对于 RMS SDK 4.2 这一版本，第一个应用程序的快速入门方法是浏览适用于每种操作系统/平台的开发环境设置指南。
 
 [开发人员指南和术语](core-concepts.md) - RMS SDK 4.2 的重点是帮助构建启用 AD RMS 的应用程序，尽可能降低利用 Right Management Services 的复杂性。
 

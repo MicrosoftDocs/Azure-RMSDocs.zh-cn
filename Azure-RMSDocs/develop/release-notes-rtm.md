@@ -2,8 +2,8 @@
 title: 发行说明
 description: 按修订列出的 SDK 更新及其他开发人员信息。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 10/18/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 05ac80a9032467fafe09e39941117c6b4c52d439
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 8132fd2afba45402f8f9c835f2d6db69dd8e81f2
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151341"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071193"
 ---
 # <a name="release-notes"></a>发行说明
 
@@ -56,14 +56,14 @@ ms.locfileid: "44151341"
 
 ## <a name="may-2015-update"></a>2015 年 5 月更新
 
--   服务应用和基于云的 RMS - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 需要 3 部分信息：对称密钥、AppPrincipalId 和 TenantBposId。 有关此内容的文章已更新，提供了有关处理此信息的指导。 有关此更新，请参阅修订版本的[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
+-   服务应用和基于云的 RMS - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 需要 3 部分信息：对称密钥、**AppPrincipalId** 和 **TenantBposId**。 有关此内容的文章已更新，提供了有关处理此信息的指导。 有关此更新，请参阅修订版本的[使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
 ## <a name="april-2015-update"></a>2015 年 4 月更新
 
 -   现在可通过一组新的 API 进行**文档跟踪**。 有关详细信息，请参阅[跟踪内容](tracking-content.md)。
 -   **加密类型** - 我们现在支持针对加密包选择的 API 级别控制。 有关详细信息，请参阅[使用加密](working-with-encryption.md)。
 
-    **注意**：我们将不再公开 API 中的 **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** 标志。 这意味着，如果以后的应用程序引用此标志，则这些应用程序将无法再编译，但已构建的应用程序可以继续工作，因为我们遵循 API 代码中的专用标志。 只需更改一个标志，仍然能获得旧的不推荐使用的加密算法标志的益处。 有关详细信息，请参阅[使用加密](working-with-encryption.md)。
+    请注意  ：我们将不再公开 API 中的 IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS 标志。 这意味着，如果以后的应用程序引用此标志，则这些应用程序将无法再编译，但已构建的应用程序可以继续工作，因为我们遵循 API 代码中的专用标志。 只需更改一个标志，仍然能获得旧的不推荐使用的加密算法标志的益处。 有关详细信息，请参阅[使用加密](working-with-encryption.md)。
 
 -   **服务器模式应用程序**，其 [API 模式值](https://msdn.microsoft.com/library/hh535236.aspx)为 **IPC\_API\_MODE\_SERVER**，不再需要应用程序清单。 你可以针对生产 RMS 服务器对应用程序进行测试，切换到生产环境时无需获取生产许可证。 有关服务器模式应用程序的详细信息，请参阅[应用程序类型](application-types.md)。
 -   现在通过文件和针对 Windows 的事件跟踪这两种方法实施**日志记录**。
@@ -93,7 +93,7 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
     本版本中添加的功能：
 
-    **注意** - 文件 API 扩展中添加了更多支持数据类型和结构，但此处未列出。 本版本中已更新的所有文章都标记为“初步文档，可能随时更改”。
+    请注意 ：文件 API 扩展中添加了更多支持数据类型和结构，但此处未列出。 本版本中已更新的所有文章都标记为“初步文档，可能随时更改”。
 
     -   [IpcfOpenFileOnHandle](https://msdn.microsoft.com/library/dn771751.aspx)
     -   [IpcfOpenFileOnILockBytes](https://msdn.microsoft.com/library/dn771752.aspx)
@@ -120,11 +120,11 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
     有关受支持的文件类型的详细信息，请参阅[文件 API 配置](file-api-configuration.md)。
 
--   不带更新 [KB2533623](https://support.microsoft.com/kb/2533623) 的 **Windows 7 SP1 和 Windows Server 2008 R2 SP1 计算机**可能出现以下错误以保护任何 office 文件“参数不正确。 错误代码 0x80070057”。 如果看到此错误，请安装更新，然后重试。 如果问题仍然存在，请联系 RMS SDK Beta 反馈别名 <rmcstbeta@microsoft.com>。
+-   不带更新 [KB2533623](https://support.microsoft.com/kb/2533623) 的 **Windows 7 SP1 和 Windows Server 2008 R2 SP1 计算机**可能因保护任何 Office 文件而出现以下错误：“参数不正确。 错误代码 0x80070057”。 如果看到此错误，请安装更新，然后重试。 如果问题仍然存在，请联系 RMS SDK Beta 反馈别名 <rmcstbeta@microsoft.com>。
 
-    **注意**：自 2015 年 4 月版本起，此 KB 的安装流程中添加了检查程序。
+    请注意  ：自 2015 年 4 月版本起，此 KB 的安装流程中添加了检查程序。
 
-     
+     
 
 -   **文件 API 集成**
 
@@ -140,23 +140,23 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
     文件 API 要求客户端计算机上安装 Rights Management Service 客户端 2.1 ，并要求该计算机连接到 RMS 服务器。 有关 RMS 服务器、RMS 客户端及其功能的详细信息，请参阅 TechNet 内容以获取[针对 RMS 的 IT 专业人员文档](https://technet.microsoft.com/library/cc771234(v=ws.10).aspx)。
 
--   **问题**：从头开始创建许可证时，必须明确授予所有权。
+-   **问题**：从头开始创建许可证时，必须显式授予所有权。
 
     **解决方案**：使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 从头开始创建许可证时，应用程序必须向许可证所有者显式添加“所有者”权限。 有关详细信息，请参阅[添加显式所有者权限](add-explicit-owner-rights.md)。
 
--   **问题**：如果应用程序使用手柄为同一窗口两次调用 [IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx) 或 [IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx)，则 RMS SDK 2.1 将在 **HRESULT** 中返回一个故障。
+-   **问题**：如果应用程序使用手柄为同一窗口两次调用 [IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx) 或 [IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx)，则 RMS SDK 2.1 将在 HRESULT 中返回一个故障。
 
     **解决方案**：有关此问题的具体指导，请参阅 [IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx) 和 [IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx) 中的“备注”部分。
 
 -   **问题**：为多个体系结构进行构建时，必须使用此指导。
 
-    **解决方案**：如果要对不同的体系结构使用 Ipcsecproc\*isv.dll（例如，你已经在 64 位计算机上安装了 64 位 SDK，但现在想要在需要 Ipcsecproc\*isv.dll 的 32 位计算机上部署），则你必须安装在其他计算机上安装 32 位 SDK，然后将 Ipcsecproc\*isv.dll 文件从“%PROGRAMFILES%\\Microsoft Information Protection And Control”文件夹（默认位置，或者你选择安装 SDK 的任何位置）复制到该计算机上。
+    **解决方案**：如果要对不同的体系结构使用 Ipcsecproc\*isv.dll（例如，你已经在 64 位计算机上安装了 64 位 SDK，但现在想要在需要 Ipcsecproc\*isv.dll 的 32 位计算机上部署），则必须在其他计算机上安装 32 位 SDK，然后将 Ipcsecproc\*isv.dll 文件从“%PROGRAMFILES%\\Microsoft Information Protection And Control”文件夹（默认位置，或者你选择安装 SDK 的任何位置）复制到该计算机。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
-**Q**：默认语言行为如何使用包含 LCID 参数的功能？
+**问**：默认语言行为如何使用包含 LCID 参数的功能？
 
-**A**：使用 0 作为默认区域设置。 在这种情况下，AD RMS Client 2.1 会按以下顺序查找名称和描述，并检索第一个可用名称：
+**答**：使用 0 作为默认区域设置。 在这种情况下，AD RMS Client 2.1 会按以下顺序查找名称和描述，并检索第一个可用名称：
 
     1 - User preferred LCID.
     2 - System locale LCID.

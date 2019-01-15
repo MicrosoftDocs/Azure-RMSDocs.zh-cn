@@ -4,17 +4,17 @@ description: 了解 Azure 信息保护策略中的标签和设置。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e66a2c117523eb01089881b8210f12ed2f657ed4
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 6483600d8ba74a29a54965010441fe10dc309d8e
+ms.sourcegitcommit: b10df82d9f00b3f826bce38beb7b666ce3f56e84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53304887"
+ms.lasthandoff: 12/28/2018
+ms.locfileid: "53814180"
 ---
 # <a name="overview-of-the-azure-information-protection-policy"></a>Azure 信息保护策略概述
 
@@ -42,7 +42,9 @@ Azure 信息保护策略包含以下可配置的元素：
 
 - 为用户提供自定义帮助链接的选项。
 
-Azure 信息保护附带[默认策略](configure-policy-default.md)，其中包含五个主要标签。 这些标签中有 2 个包含子标签，可根据需要提供子类别。 为子标签配置标签时，用户不能选择主标签，但必须选择一个子标签。
+Azure 信息保护附带[默认策略](configure-policy-default.md)，其中包含五个主要标签。 这些标签中有 2 个包含子标签，可根据需要提供子类别。 
+
+为子标签配置标签时，用户不能选择主标签，但必须选择一个子标签。 在此情况下，支持将主标签仅作为名称和颜色的显示容器。
 
 Azure 信息保护标签可用于组织常规创建和存储的数据，包括从最低等级的个人数据到最高等级的机密数据等各类数据。 
 

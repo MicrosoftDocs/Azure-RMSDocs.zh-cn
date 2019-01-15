@@ -2,8 +2,8 @@
 title: 如何使用文档跟踪 | Azure RMS
 description: 文档跟踪功能需要对管理关联元数据以及向服务注册有一些简单了解。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1f9d929cc10f78bbdb98ac47083d8ff9d9d8136c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 7415e1408c5e3c3c782506a9ce25b4b8d90403f2
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151397"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071839"
 ---
 # <a name="how-to-use-document-tracking"></a>如何：使用文档跟踪
 
@@ -44,9 +44,9 @@ ms.locfileid: "44151397"
   - Android - [PolicyDescriptor.setLicenseMetadata](https://msdn.microsoft.com/library/mt573698.aspx)
   - iOS - [MSPolicyDescriptor.licenseMetadata](https://msdn.microsoft.com/library/mt573693.aspx)。
 
-    **注意**  许可证元数据对象只能在针对给定用户策略设置文档跟踪的过程中直接访问。 创建用户策略对象之后，无法访问关联许可证元数据，即更改许可证元数据的值会不起作用。
+    请注意  只能在针对给定用户策略设置文档跟踪的过程中直接访问许可证元数据对象。 创建用户策略对象之后，无法访问关联许可证元数据，即更改许可证元数据的值会不起作用。
 
-     
+     
 
 -   最后，调用文档跟踪的平台注册方法
   - Android - [UserPolicy.registerForDocTracking asynchronous](https://msdn.microsoft.com/library/mt573699.aspx) 或 [UserPolicy.registerForDocTracking synchronous](https://msdn.microsoft.com/library/mt631387.aspx)

@@ -2,8 +2,8 @@
 title: 如何调试启用权限的应用程序 | Azure RMS
 description: 下面的主题演示如何调试应用程序和使用 Windows 事件日志。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: ed627c98238028fc14f977f2ce7475f356ceb889
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: cb77177ecb0c92f3e991e0f6d06a55fa2c332873
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147366"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071537"
 ---
 # <a name="how-to-debug-a-rights-enabled-application"></a>操作说明：调试启用权限的应用程序
 
@@ -32,21 +32,21 @@ Rights Management Services SDK 2.1 中禁用了运行时的开发人员版本的
 
 ```
 HKEY_LOCAL_MACHINE
-   SOFTWARE
-      Microsoft
-         MSIPC
-            "Trace" = 00000001
-            Data type
-            dword
+   SOFTWARE
+      Microsoft
+         MSIPC
+            "Trace" = 00000001
+            Data type
+            dword
 ```
 
 ### <a name="application-logging-by-using-the-windows-event-log"></a>使用 Windows 事件日志的应用程序日志记录
 
 事件日志的名称为“Microsoft-RMS-MSIPC/Debug”。 这意味着，在 Windows 事件查看器中，你的日志会显示为“Application and Services Logs\\Microsoft\\RMS\\MSIPC\\Debug”。
 
-**注意** 默认情况下，此日志处于启用状态，其详细程度级别设置为 3。
+请注意  默认情况下，此日志处于启用状态，其详细程度级别设置为 3。
 
- 
+ 
 
 若要更改日志记录功能的设置，可以使用 Windows 事件查看器的 UI或者 Wevtutil（一种Windows 中内置的命令行工具）。
 
@@ -62,4 +62,4 @@ HKEY_LOCAL_MACHINE
 
 **wevtutil sl Microsoft-RMS-MSIPC/Debug /e:true /l:4**
 
-**注意** 在 Windows 事件查看器的“视图”菜单中，选择“显示分析和调试日志”以使 MSIPC 调试日志可见。
+请注意：在 Windows 事件查看器的“视图”菜单中，选择“显示分析和调试日志”可使 MSIPC 调试日志可见  。

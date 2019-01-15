@@ -4,19 +4,19 @@ description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/08/2018
+ms.date: 12/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 58ea955deef9341ec80b516b89feec609389b9ad
-ms.sourcegitcommit: 4caf3aa13506554928c5fda38994301ddcbdfb41
+ms.openlocfilehash: 0c2309fb635a05f6b0c836b7d4caf04d1c17a23a
+ms.sourcegitcommit: 6651546fa69538e2099b5c2b92ab0902d568a96a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068803"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "53815116"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -101,6 +101,11 @@ ms.locfileid: "53068803"
 
 此信息存储在组织拥有的 Azure Log Analytics 工作区中，并可供有权访问此工作区的用户查看。 有关配置对你的工作区访问权限的信息，请参阅 Azure 文档中的[管理帐户和用户](/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor#manage-accounts-and-users)部分。
 
+> [!NOTE]
+> Azure 信息保护的 Azure Log Analytics 工作区包含一个文档内容匹配复选框。 选中此复选框时，还将收集由敏感信息类型或自定义条件标识的实际数据。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 如果不想收集此数据，请不要选中此复选框。
+>
+> 目前，此类信息未在报告中显示，但可以通过查询进行查看和检索。
+
 ## <a name="prerequisites-for-azure-information-protection-analytics"></a>Azure 信息保护分析的先决条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
 
@@ -124,7 +129,7 @@ ms.locfileid: "53068803"
     
     - 使用现有的 Log Analytics 工作区：从列表中选择工作区。
 
-如果需要创建 Log Analytics 工作区的帮助，请参阅[在 Azure 门户中创建 Log Analytics 工作区](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace)。
+如果需要关于创建 Log Analytics 工作区的帮助，请参阅[在 Azure 门户中创建 Log Analytics 工作区](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace)。
 
 配置工作区后，即可开始查看报表。
 
@@ -141,6 +146,9 @@ ms.locfileid: "53068803"
     此报表有“列”选项，可用于显示默认显示信息之外的更多活动信息。
 
 - **数据发现(预览版)**：使用此报表查看扫描程序或 Windows Defender ATP 找到的文件的相关信息。
+
+> [!NOTE]
+> 当“发送操作系统区域设置”为英语时，会出现一个当前已知的问题，即在路径和文件名中显示问号 (?)，而不是非 ASCII 字符。
 
 ## <a name="how-to-modify-the-reports"></a>如何修改报表
 

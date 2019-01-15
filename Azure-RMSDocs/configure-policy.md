@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6c6c2be34250cca486004a0ed1b1fcd8fddfce35
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 6afbf2e95f6e9d21d1bfa9c4c05df288accf716d
+ms.sourcegitcommit: f13c6db055c1fc69cf92e47609465270a42bbdac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023730"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54085069"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -37,15 +37,15 @@ Azure 信息保护支持不同级别的订阅：
 
 - Azure 信息保护 P1：支持大多数分类、设置标签和保护功能，但不支持自动分类或 HYOK。
 
-- 包括 Azure 权限管理服务的 Office 365：支持保护，但不支持分类和设置标签功能。
+- 包含 Azure Rights Management 服务的 Office 365：支持保护，但不支持分类和设置标签功能。
 
 需要 Azure 信息保护 P2 订阅的选项在门户中进行标识。
 
 如果贵组织拥有组合订阅，则你有责任确保用户不会使用其帐户未授权使用的功能。 Azure 信息保护客户端不会进行许可证检查以及强制执行。 在配置并非所有用户都具有相应许可证的选项时，请使用作用域内策略或注册表设置，以确保组织符合许可证：
 
-- **当组织具备 Azure 信息保护 P1 和 Azure 信息保护 P2 的组合许可证时**：对于具有 P2 许可证的用户，请在配置需要 Azure 信息保护 P2 许可证的选项时创建并使用一个或多个[作用域内策略](configure-policy-scope.md)。 请确保全局策略不包含需要 Azure 信息保护 P2 许可证的选项。
+- 当组织具备 Azure 信息保护 P1 和 Azure 信息保护 P2 的组合许可证时：对于具有 P2 许可证的用户，请在配置需要 Azure 信息保护 P2 许可证的选项时创建并使用一个或多个[作用域内策略](configure-policy-scope.md)。 请确保全局策略不包含需要 Azure 信息保护 P2 许可证的选项。
 
-- **当组织具有 Azure 信息保护订阅，但有些用户只有包含 Azure 权限管理服务的 Office 365 许可证时**：对于没有 Azure 信息保护许可证的用户，可在其计算机上编辑注册表，以防止他们下载 Azure 信息保护策略。 有关说明，请参阅管理员指南了解以下自定义项：[当组织具备组合许可证时，强制执行仅保护模式](./rms-client/client-admin-guide-customizations.md#enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses)。
+- 当组织具有 Azure 信息保护订阅，但有些用户只有包含 Azure 权限管理服务的 Office 365 许可证时：对于没有 Azure 信息保护许可证的用户，可在其计算机上编辑注册表，以防止他们下载 Azure 信息保护策略。 有关说明，请参阅管理员指南了解以下自定义项：[组织具备组合许可证时，强制执行仅保护模式](./rms-client/client-admin-guide-customizations.md#enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses)。
 
 有关订阅的详细信息，请参阅 [需要为 Azure 信息保护准备哪个订阅，它包括哪些功能？](faqs.md#what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included)
 
@@ -85,9 +85,9 @@ Azure 信息保护支持不同级别的订阅：
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>如何配置 Azure 信息保护策略
 
-1. 请确保使用以下管理角色之一登录到 Azure 门户：信息保护管理员、安全管理员或全局管理员。 请参阅[前述部分](#signing-in-to-the-azure-portal)了解有关这些管理角色的详细信息。
+1. 确保使用以下管理角色之一登录到 Azure 门户：信息保护管理员、安全管理员或全局管理。 请参阅[前述部分](#signing-in-to-the-azure-portal)了解有关这些管理角色的详细信息。
 
-2. 如有必要，可导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“所有服务”并开始在“筛选”框中键入“信息保护”。 在结果中选择“Azure 信息保护”。 
+2. 如有必要，请导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息保护”。 在结果中选择“Azure 信息保护”。 
     
     “Azure 信息保护 - 标签”边栏选项卡会自动打开，你可以查看和编辑可用标签。 可通过从策略中添加或删除标签，使标签可供所有用户和选定用户使用，或不供用户使用。
 
@@ -108,7 +108,7 @@ Azure 信息保护支持不同级别的订阅：
 
 - 每 24 小时一次。
 
-- 关于 [Azure 信息保护扫描程序](deploy-aip-scanner.md)：当服务启动时（如果策略超过一小时），以及操作期间每小时。
+- 对于 [Azure 信息保护扫描程序](deploy-aip-scanner.md)：当服务启动时（如果策略超过一小时），以及操作期间每小时。
 
 
 >[!NOTE]

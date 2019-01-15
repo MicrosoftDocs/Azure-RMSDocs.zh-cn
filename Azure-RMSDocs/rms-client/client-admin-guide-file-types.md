@@ -4,22 +4,22 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/04/2018
+ms.date: 01/04/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e228c1c49481a9772e2f86164926db6075fe2924
-ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
+ms.openlocfilehash: 444181d82c028feb50df12d55d279ecbeda97560
+ms.sourcegitcommit: 630f03a91f84d79219e04b4085bdfb5bc6478e88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861228"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54012001"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 Azure 信息保护客户端可以将以下内容应用于文档和电子邮件：
 
@@ -28,6 +28,8 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 - 分类和保护
 
 - 仅保护
+
+Azure 信息保护客户端还可以使用已知的敏感信息类型或用户定义的正则表达式来检查某些文件类型的内容。
 
 使用以下信息查看 Azure 信息保护客户端支持的文件类型，了解不同的保护级别、如何更改默认保护级别，以及如何确定哪些文件会自动从分类和保护中被排除（跳过）。
 
@@ -53,7 +55,7 @@ Azure 信息保护客户端可以将以下内容应用于文档和电子邮件�
 
 - **数码底片**：.dng
 
-- **Microsoft Office**：下表中的文件类型。
+- Microsoft Office：下表中的文件类型。
     
     这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
     
@@ -95,9 +97,9 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 - **对于其他所有文件**： 
     
-    - 若要保护其他文件类型，并在 Azure 信息保护查看器中打开这些文件类型：文件大小上限仅受可用磁盘空间和内存限制。
+    - 若要保护其他文件类型，并在 Azure 信息保护查看器中打开这些文件类型：最大文件大小仅受可用磁盘空间和内存限制。
     
-    - 若要使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 取消保护文件：.pst 文件支持的文件大小上限为 5GB。 其他文件类型的文件大小上限仅受可用磁盘空间和内存限制
+    - 若要使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 取消文件保护：.pst 文件支持的最大文件大小为 5 GB。 其他文件类型的文件大小上限仅受可用磁盘空间和内存限制
     
     提示：如果需要在大型 .pst 文件中搜索或恢复受保护的项目，请参阅[使用 Unprotect-RMSFile 进行电子数据展示的指南](../configure-super-users.md#guidance-for-using-unprotect-rmsfile-for-ediscovery)。
 
@@ -154,9 +156,9 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 1. 为以下注册表路径创建名为 * 的新项，该项使用文件扩展名表示文件：
     
-    - 对于 32 位版本 Windows：HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
+    - 对于 32 位版本的 Windows：HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
     
-    - 对于 64 位版本 Windows：HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection
+    - 对于 64 位版本的 Windows：HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection
 
 2. 在新添加的项（例如 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\\\*）中，创建一个名为“Encryption”、数据值为 Pfile 的新字符串值 (REG_SZ)。
 
@@ -178,11 +180,11 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 通过更改支持以下值的 **Encryption** 字符串的值，你可以在其他情况下进行类似的注册表编辑：
 
-- **Pfile**:一般性保护
+- **Pfile**：常规保护
 
-- **Native**：本机保护
+- **本机**：本机保护
 
-- **Off**：阻止保护
+- **关闭**：阻止保护
 
 有关详细信息，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 
 
@@ -203,7 +205,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 默认情况下，扫描程序还会排除 Azure 信息保护客户端支持的相同文件类型，要排除的例外情况如下：
 
-    - .rtf、.rar 和 .zip 也被排除
+- .rtf、.rar 和 .zip 也被排除
 
 使用以下 PowerShell cmdlet 时，可更改扫描程序检查文件时包含或排除的文件类型：
 
@@ -216,23 +218,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 > [!NOTE]
 > 如果在扫描时包含 .rtf 文件，请仔细监视扫描程序。 扫描程序无法成功检查某些 .rtf 文件，对于这些文件，未完成检查，必须重启服务。 
 
-默认情况下，扫描程序仅保护 Office 文件类型。 若要更改扫描程序的这一行为，请编辑注册表并指定想要得到保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。
-
-#### <a name="to-scan-zip-files"></a>扫描 .zip 文件
-
-按照以下说明操作时，扫描程序可以检查 .zip 文件：
-
-1. 对于运行扫描程序的 Windows Server 计算机，请安装 [Office 2010 Filter Pack SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2)。
-
-2. 如上一节所述，配置扫描程序以包含要检查的 .zip 文件。
-
-3. 如上一节所述，除应对 .zip 文件进行检查已发现是否存在明感信息外，如果还应对其进行分类和保护，请为具有此文件扩展名的文件添加注册表项以具有通用保护 (pfile)。
-
-执行这些步骤后的示例方案： 
-
-名为“accounts.zip”的文件包含带有信用卡号的 Excel 电子表格。 Azure 信息保护策略具有名为“机密\财务”的标签，该标签配置为发现信用卡号，并自动应用带有保护的标签，以限制对财务组进行访问。 
-
-检查文件后，扫描程序将此文件归类为“机密\财务”，对文件应用通用保护，以便只有财务组的成员可以解压缩它，并重命名文件“accounts.zip.pfile”。
+默认情况下，扫描程序仅保护 Office 文件类型，以及 PDF 文件（使用 ISO PDF 加密标准进行保护时）。 若要更改扫描程序的这一行为，请编辑注册表并指定想要得到保护的其他文件类型。 有关说明，请参阅扫描程序部署说明中的[编辑扫描程序的注册表](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner)。
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>默认不受保护的文件
 
@@ -253,6 +239,46 @@ Azure 信息保护客户端支持保护的最大文件大小。
 可对这些容器文件进行分类和保护，但分类和保护不会应用到容器内每个文件。
 
 如果容器文件包括已分类和受保护的文件，必须先提取这些文件，以更改其分类或保护设置。 但是，使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet，可删除受支持容器文件中所有文件的保护。
+
+## <a name="file-types-supported-for-inspection"></a>支持检查的文件类型
+
+无需任何额外配置，Azure 信息保护客户端即可使用 Windows IFilter 来检查文档内容。 Windows Search 使用 Windows IFilter 来编制索引。 因此，使用 [Azure 信息保护扫描程序](../deploy-aip-scanner.md)或[Set-AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令时，可以检查以下文件类型。
+
+|应用程序类型|文件类型|
+|--------------------------------|-------------------------------------|
+|Word|.docx; .docm; .dotm; .dotx|
+|Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
+|PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
+|PDF |。pdf|
+|文本|.txt; .xml; .csv|
+
+通过进行额外配置，还可以检查其他文件类型。 例如，可以[注册自定义文件扩展名，使用现有 Windows 筛选器处理程序处理文本文件](https://docs.microsoft.com/windows/desktop/search/-search-ifilter-registering-filters)，还可以安装软件供应商提供的其他筛选器。
+
+若要检查安装了哪些筛选器，请参阅 Windows Search 开发人员指南中的[查找给定文件扩展名的筛选器处理程序](https://docs.microsoft.com/windows/desktop/search/-search-ifilter-registering-filters#finding-a-filter-handler-for-a-given-file-extension)一节。
+
+以下各节提供了检查 .zip 文件和 .tiff 文件的配置说明。
+
+### <a name="to-inspect-zip-files"></a>检查 .zip 文件
+
+按照以下说明，可使用 Azure 信息保护扫描程序和 [Set-AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令检查 .zip 文件：
+
+1. 对于运行扫描程序或 PowerShell 会话的计算机，请安装 [Office 2010 Filter Pack SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2)。
+
+2. 对于扫描程序：包括要检查的 .zip 文件，如 [Azure 信息保护扫描程序](#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner)一节所述。
+
+3. 对于扫描程序：找到敏感信息之后，如果 .zip 文件应该用标签进行分类和保护，则为此文件扩展名添加注册表项，以获得常规保护 (pfile)，如扫描程序部署说明中的[为扫描程序编辑注册表](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner)一节所述。
+
+执行这些步骤后的示例方案： 
+
+名为“accounts.zip”的文件包含带有信用卡号的 Excel 电子表格。 Azure 信息保护策略具有名为“机密\财务”的标签，该标签配置为发现信用卡号，并自动应用带有保护的标签，以限制对财务组进行访问。 
+
+检查文件后，扫描程序将此文件归类为“机密\财务”，对文件应用通用保护，以便只有财务组的成员可以解压缩它，并重命名文件“accounts.zip.pfile”。
+
+### <a name="to-inspect-tiff-files-by-using-ocr"></a>使用 OCR 检查 .tiff 文件
+
+如果运行扫描程序或 PowerShell 会话的计算机上安装 Windows TIFF IFilter 功能并配置 [Windows TIFF IFilter 设置](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)，Azure 信息保护扫描程序和 [Set-AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令可以使用光学字符识别 (OCR) 来检查文件扩展名为 .tiff 的 TIFF 图像。
+
+对于扫描程序：找到敏感信息之后，如果 .tiff 文件应该用标签进行分类和保护，则为此文件扩展名添加注册表项，以获得本机保护，如扫描程序部署说明中的[为扫描程序编辑注册表](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner)一节所述。
 
 ## <a name="next-steps"></a>后续步骤
 现在你已识别了 Azure 信息保护客户端支持的文件类型，若要了解支持此客户端所需的其他信息，请参阅以下资源：

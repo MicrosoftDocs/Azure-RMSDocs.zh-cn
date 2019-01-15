@@ -4,17 +4,17 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/13/2018
+ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c6312d3f10a70ffcb3cc48447fcbc751b7072a0d
-ms.sourcegitcommit: db24caa96033fd0c7a0fad4e36518a816a570c94
+ms.openlocfilehash: 94120417c5e2e61f1d28fc16d714ec1c91a4ed0f
+ms.sourcegitcommit: 630f03a91f84d79219e04b4085bdfb5bc6478e88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53335517"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54011967"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -22,13 +22,13 @@ ms.locfileid: "53335517"
 
 Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 
 
-可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式版本和当前预览版（若有）。 经过短暂的延迟后（通常是几周的时间），正式发布版本也会包含在 Microsoft 更新目录中（类别：Azure 信息保护）。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
+可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式版本和当前预览版（若有）。 经过短暂的延迟后（通常是几周的时间），最新的正式发布版本也会包含在 Microsoft 更新目录中（类别：Azure 信息保护）。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
 
 有关详细信息，请参阅[升级和维护 Azure 信息保护客户端](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)。
 
 ### <a name="servicing-information-and-timelines"></a>维护信息和日程表
 
-在发布新的通用版本 (GA) 前，原有的 Azure 信息保护客户端的支持期限最多为六个月。 此页面不包含不支持的客户端版本。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
+在发布新的通用版本 (GA) 前，原有的 Azure 信息保护客户端的支持期限最多为六个月。 文档不包括关于不支持的客户端版本的信息。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
 
 不应在生产网络上为最终用户部署预览版本。 而是使用最新预览版来查看和试用即将在下一 GA 版本中推出的新功能或修补程序。 仅支持当前预览版。
 
@@ -170,40 +170,6 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 借助高级客户端设置[使用现有自定义属性来设置 Office 文档的标签](client-admin-guide-customizations.md#label-an-office-document-by-using-an-existing-custom-property)时，自动标签不会替代手动标签。
 
-## <a name="version-127480"></a>版本 1.27.48.0
-
-**发布日期**：2018 年 05 月 30 日
-
-此版本包括 RMS 客户端的 MSIPC 1.0.3403.1224 版本。
-
-**新增功能**： 
-
-- 对于 Azure 信息保护扫描程序：
-    
-    - 你可以指定要列入扫描范围或者从扫描范围中排除的文件类型列表。 若要指定此列表，请使用 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)。 指定文件类型列表后，可以使用 [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes) 向列表添加新文件类型，并能使用 [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes) 从列表中删除文件类型。
-    
-    - 不通过应用默认标签来检查内容也可标记文件。 使用 [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository) cmdlet，并将“MatchPolicy” 参数设置为“关闭” 
-    
-    - 无需配置用于自动分类的标签，也可发现具有敏感信息类型的文件。 使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet，并将“DiscoverInformationTypes”参数设置为“全部”
-    
-    - 默认情况下，只有 Office 文档类型会受到保护。 在注册表中定义其他文件类型时它们可以受到保护。 有关说明，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。
-    
-    - 默认情况下，扫描程序现以低完整性级别运行以获得更高安全性，以防你使用具有特权的帐户运行扫描程序。 当运行扫描程序的服务帐户只在[扫描程序先决条件](../deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)中记录了权限时，低完整性级别不是必需的且不推荐使用，因为它会对性能产生负面影响。 你可以使用高级客户端设置禁用低完整性级别。 [详细信息](client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
-    
-- 对于 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/Get-AIPFileStatus)，输出现在包括 Rights Management 所有者和 Rights Management 颁发者以及内容受保护日期。
- 
-**其他更改**：
-
-- 对于 Azure 信息保护扫描程序： 
-    
-    - 如果安装了旧版扫描程序，请在升级 Azure 信息保护客户端后，使用 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) 重新运行扫描程序安装命令。 扫描程序和存储库的配置设置将会得到保留。 重新安装扫描程序会向扫描程序服务帐户授予对扫描程序数据库的删除权限，这是报表所必需的权限。    
-    
-    - [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) 的“ScanMode” 参数被重命名为“Enforce”其值为“Off”和“On”。
-    
-    - 若要使用默认标签，不再需要将默认标签配置为策略设置。 相反，只需通过存储库配置指定此默认标签。 
-
-- 删除“祝贺你!” 欢迎页和“Azure 信息保护中的新增功能有哪些”页，首次使用时，Office 应用程序中会显示这些页面。
-
 ## <a name="next-steps"></a>后续步骤
 
 有关安装和使用客户端的详细信息： 
@@ -211,4 +177,3 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 - 面向用户：[下载并安装客户端](install-client-app.md)
 
 - 面向管理员：[Azure 信息保护客户端管理员指南](client-admin-guide.md)
-

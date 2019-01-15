@@ -2,8 +2,8 @@
 title: 开发应用程序 - AIP
 description: 有关基本控制台应用如何使用 AIP 实现文档保护的指南
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 03/13/2017
 ms.topic: conceptual
@@ -12,21 +12,21 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: ef75dcff64d5ad2adaf2ffc9938490a65ac9bee9
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 6f0fdcaf6d21047f28c470dc896a1cd64fee752d
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148726"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071295"
 ---
 # <a name="developing-your-application"></a>开发应用程序
 
 本示例中将构建与 Azure信息保护服务 (AIP) 交互的简单控制台应用程序。  它将要保护的文件的路径作为输入，然后使用临时策略或 Azure 模板对其进行保护。 应用程序将根据输入应用正确的策略，创建信息受保护的文档。 你将使用的示例代码是 [Azure IP 测试应用程序](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test)，位于 Github 上。
 
 ## <a name="sample-app-prerequisites"></a>示例应用程序必备组件
-- **操作系统**：Windows 10、Windows 8、Windows 7、Windows Server 2008、Windows Server 2008 R2 或 Windows Server 2012
-- **编程语言**：C#（.NET Framework 3.0 及更高版本）
-- **开发环境**：Visual Studio 2015（以及更高版本）
+- 操作系统：Windows 10、Windows 8、Windows 7、Windows Server 2008、Windows Server 2008 R2 或 Windows Server 2012
+- 编程语言：C#（.NET Framework 3.0 及更高版本）
+- 开发环境：Visual Studio 2015（及更高版本）
 
 ## <a name="setting-up-your-azure-configuration"></a>设置 Azure 配置
 

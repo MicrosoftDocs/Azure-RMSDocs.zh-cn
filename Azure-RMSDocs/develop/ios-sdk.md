@@ -2,8 +2,8 @@
 title: iOS 和 OS X 安装程序 | Azure RMS
 description: 通过 AAD RM，iOS 和 OS X 应用程序可使用 RMS SDK 4.2 在其应用程序中启用集成信息保护。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 39856dc34396e1aa32a73f436da9744583519c86
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 620412b55ca583d8a84cf8d167ba890cea742b7f
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150358"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070210"
 ---
 # <a name="ios-and-os-x-setup"></a>iOS 和 OS X 安装程序
 
@@ -25,7 +25,7 @@ ms.locfileid: "44150358"
 
 本主题将指导你完成环境设置过程，以创建自己的新应用。
 
-**注意** 此 SDK 不支持 iPod Touch。
+请注意：  此 SDK 不支持 iPod Touch。
 
 
 -   [必备条件](#prerequisites)
@@ -42,7 +42,7 @@ ms.locfileid: "44150358"
 
     Xcode 可通过 [Mac 应用商店](https://developer.apple.com/technologies/mac/)获取。
 
--   适用于 iOS 和 OS X 的 MS RMS SDK 4.2 包。有关详细信息，请参阅[入门](get-started.md)。
+-   有关适用于 iOS 和 OS X 的 MS RMS SDK 4.2 包的详细信息，请参阅[入门](get-started.md)。
 
     此 SDK 可用于为 iOS 7.0、OS X 10.8 及更高版本进行开发。
 
@@ -83,7 +83,7 @@ ms.locfileid: "44150358"
     ![添加资源包](../media/iOS-add-resource-bundle-02a.png)
 
 -   按复制框架时的方式一样，选择“为添加的所有文件夹创建组”选项按钮，然后清除“将项目复制到目标组的文件夹(若必需)”复选框。
--   SDK 依赖于其他框架，包括：**CoreData** **MessageUI** **SystemConfiguration** **Libresolv** 和 **Security**。 若要添加这些框架，请导航至目标的“摘要”面板的“已链接框架和库”部分，然后展开此部分以添加框架。
+-   SDK 依赖于其他框架，包括：CoreData、MessageUI、SystemConfiguration、Libresolv 和 Security。 若要添加这些框架，请导航至目标的“摘要”面板的“已链接框架和库”部分，然后展开此部分以添加框架。
 
     **UIKit** 和 **Foundation** 框架是必需的，且通常默认存在。
 

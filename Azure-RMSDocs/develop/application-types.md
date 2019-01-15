@@ -2,8 +2,8 @@
 title: 应用程序类型 | Azure RMS
 description: 本主题介绍可以选择创建为启用权限形式的应用程序类型。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: fbd49df82faec0f9ea198e0ba7ad334bc5b2a831
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 744a5648bc436bb903cf1b8feb47ca91b19bb7fc
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149933"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071652"
 ---
 # <a name="application-types"></a>应用程序类型
 
@@ -34,7 +34,7 @@ Rights Management Services SDK 2.1 当前支持以下应用程序类型
 
 *服务器模式* 面向使用、保护或处理受 RMS 保护的内容的非交互式应用程序。 一个示例是 *数据丢失防护* 应用程序，该应用程序在文件服务器上作为服务运行，会自动保护敏感文档。 有关此应用程序类型的示例，请参阅 [IpcDlp 示例](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcDlpApp)。
 
-如果应用程序使用 *服务器模式*，则它应以无提示方式向 RMS 服务器进行身份验证。 与 *客户端模式* 不同，RMS SDK 2.1 在未能以无提示方式进行身份验证时不会打开凭据提示。 此外，在 *服务器模式* 下运行时，无需应用程序清单。
+如果应用程序使用 *服务器模式*，则它应以无提示方式向 RMS 服务器进行身份验证。 与“客户端模式”不同，RMS SDK 2.1 在未能以无提示方式进行身份验证时不会打开凭据提示。 此外，在 *服务器模式* 下运行时，无需应用程序清单。
 
 有关设置 API 安全模式的详细信息，请参阅 [设置 API 安全模式](setting-the-api-security-mode-api-mode.md)。
 

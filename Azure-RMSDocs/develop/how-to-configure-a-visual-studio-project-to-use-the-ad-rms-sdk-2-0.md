@@ -2,8 +2,8 @@
 title: 配置 Visual Studio | Azure RMS
 description: 有关如何配置 Visual Studio 项目以使用 RMS SDK 2.1 的说明。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 0713bbc51b90e95d93917f7c43c3401a7cbe8ef2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: f26400ba1230ef1b274fa04120c22995d2f6620c
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151123"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071482"
 ---
 # <a name="configure-visual-studio"></a>配置 Visual Studio
 
@@ -29,7 +29,7 @@ ms.locfileid: "44151123"
 
 **说明**
 
-### <a name="step-1-configure-a-visual-studio-project-to-use-rms-sdk-21"></a>步骤 1：配置 Visual Studio 项目以使用 RMS SDK 2.1
+### <a name="step-1-configure-a-visual-studio-project-to-use-rmssdk21"></a>步骤 1：配置 Visual Studio 项目以使用 RMS SDK 2.1
 
 这些说明特定于 Microsoft Visual Studio 2010。 如果使用不同版本的 Microsoft Visual Studio，则设置对话框可能略有不同。
 
@@ -37,13 +37,13 @@ ms.locfileid: "44151123"
 
 1.  将 RMS SDK 2.1 包含目录添加到 Visual Studio 2010 项目。
 
-    在**配置属性**下，选择 **VC++ 目录**，然后将 RMS SDK 2.1 包含目录 **$(MSIPCSDKDIR)\\inc** 添加到**包含目录**字段。
+    在“配置属性”下，选择“VC++ 目录”，并将 RMS SDK 2.1 包含目录 $(MSIPCSDKDIR)\\inc 添加到“包含目录”字段。
 
     ![配置属性包含目录字段](../media/include_directories.png)
 
 2.  将 RMS SDK 2.1 库目录添加到 Visual Studio 2010 项目。
 
-    在 **“配置属性”** 下，选择 **“VC++ 目录”**，然后针对你的平台将 RMS SDK 2.1 库目录添加到 **“库目录”** 字段。
+    在“配置属性”下，选择“VC++ 目录”，并针对你的平台将 RMS SDK 2.1 库目录添加到“库目录”字段。
 
     -   对于 Win32，使用 **$(MSIPCSDKDIR)\\lib**
     -   对于 x64，使用 **$(MSIPCSDKDIR)\\lib\\x64**
@@ -52,13 +52,13 @@ ms.locfileid: "44151123"
 
 3.  将 RMS SDK 2.1 库文件添加为 Visual Studio 2010 依赖项。
 
-    在**链接器**下，选择**输入**，然后将 RMS SDK 2.1 库文件 **Msipc.lib** 和 **Msipc\_s.lib** 添加到**附加依赖项**字段。
+    在“链接器”下，选择“输入”，然后将 RMS SDK 2.1 库文件 Msipc.lib 和 Msipc\_s.lib 添加到“附加依赖项”字段。
 
     ![链接器库依赖项字段](../media/additional_dependencies.png)
 
 4.  将 RMS SDK 2.1 动态链接库 (DLL) 添加为延迟加载的 DLL。
 
-    在 **“链接器”** 下，选择 **“输入”**，然后将 RMS SDK 2.1 DLL 文件 **Msipc.dll** 添加到 **“延迟加载的 DLL”** 字段。
+    在“链接器”下，选择“输入”，并将 RMS SDK 2.1 DLL 文件 Msipc.dll 添加到“延迟加载的 DLL”字段。
 
     ![链接器延迟加载的库字段](../media/delay_loaded.png)
 

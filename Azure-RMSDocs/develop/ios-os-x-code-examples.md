@@ -2,8 +2,8 @@
 title: iOS/OS X 代码示例 | Azure RMS
 description: 本主题向你介绍 iOS/OS X 版 RMS SDK 的重要代码元素。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: fc918b10dc8924002efd5eb71725b8c157461d7e
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c71fe41da2eb29645c3c25d0044f969ebdca1c9a
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150902"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070211"
 ---
 # <a name="iosos-x-code-examples"></a>iOS/OS X 代码示例
 
@@ -37,7 +37,7 @@ ms.locfileid: "44150902"
 
 - **步骤 1**：创建 [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) 对象
 
- **说明**：通过 create 方法实例化 [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) 对象，该方法使用 [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) 实现服务身份验证，以便通过将 **MSAuthenticationCallback** 的实例作为参数 *authenticationCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码部分中对 [MSProtectedData protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx) 的调用。
+ **说明**：通过 create 方法实例化 [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) 对象，该方法使用 [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) 实现服务身份验证，以便通过将 MSAuthenticationCallback 的实例作为参数 authenticationCallback 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码部分中对 [MSProtectedData protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx) 的调用。
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -55,7 +55,7 @@ ms.locfileid: "44150902"
 
 - **步骤 2**：使用 Active Directory 身份验证库 (ADAL) 设置身份验证。
 
-  **说明**：此步骤中会介绍用于通过示例身份验证参数来实现 [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) 的 ADAL。 若要深入了解如何使用 ADAL，请参阅 Azure AD 身份验证库 (ADAL)。
+  **说明**：此步骤介绍了用于通过示例身份验证参数来实现 [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) 的 ADAL。 若要深入了解如何使用 ADAL，请参阅 Azure AD 身份验证库 (ADAL)。
 
       // AuthenticationCallback holds the necessary information to retrieve an access token.
       @interface MsipcAuthenticationCallback : NSObject<MSAuthenticationCallback>
@@ -94,7 +94,7 @@ ms.locfileid: "44150902"
                           }];
        }
 
--   **步骤 3**：通过 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 对象的 [MSUserPolicy accessCheck](https://msdn.microsoft.com/library/dn790789.aspx) 方法，检查此用户对于该内容是否具有 Edit 权限。
+-   **步骤 3**：通过 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 对象的 [MSUserPolicy accessCheck](https://msdn.microsoft.com/library/dn790789.aspx) 方法，检查此用户对于该内容是否具有编辑权限。
 
         - (void)accessCheckWithProtectedData:(MSProtectedData *)protectedData
         {
@@ -184,7 +184,7 @@ ms.locfileid: "44150902"
             }];
          }
 
--   **步骤 2**：使用**步骤 1** 中的 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 创建 [MSCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx)，并从中读取信息。
+-   **步骤 2**：使用步骤 1 中的 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 创建 [MSCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx)，并从中读取信息。
 
         + (void)customProtectedDataWith:(NSData *)protectedData
         {
@@ -211,12 +211,12 @@ ms.locfileid: "44150902"
             }];
          }
 
-### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>方案：使用自定义（临时）策略创建自定义受保护的文件
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>方案：使用自定义（临时）策略创建自定义受保护文件
 
 
 -   **步骤 1**：在用户提供了电子邮件地址的情况下，创建策略描述符。
 
-    **说明**：实际上，会使用来自设备接口的用户输入创建以下对象；[MSUserRights](https://msdn.microsoft.com/library/dn790811.aspx) 和 [MSPolicyDescriptor](https://msdn.microsoft.com/library/dn758339.aspx)。
+    **说明**：实际上，使用来自设备接口的用户输入创建以下对象；[MSUserRights](https://msdn.microsoft.com/library/dn790811.aspx) 和 [MSPolicyDescriptor](https://msdn.microsoft.com/library/dn758339.aspx)。
 
         + (void)policyDescriptor
         {
@@ -227,7 +227,7 @@ ms.locfileid: "44150902"
             policyDescriptor.offlineCacheLifetimeInDays = 10;
         }
 
--   **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx)。
+-   **步骤 2**：通过策略描述符 selectedDescriptor 创建自定义 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx)。
 
         + (void)userPolicyWithPolicyDescriptor:(MSPolicyDescriptor *)policyDescriptor
         {
@@ -241,7 +241,7 @@ ms.locfileid: "44150902"
             }];
         }
 
--   **步骤 3**：创建 [MSMutableCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx) 并向其写入内容，然后关闭。
+-   **步骤 3**：创建 [MSMutableCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx) 并向其中写入内容，然后关闭。
 
         + (void)mutableCustomProtectedData:(NSMutableData *)backingData policy:(MSUserPolicy *)policy contentToProtect:(NSString *)contentToProtect
         {

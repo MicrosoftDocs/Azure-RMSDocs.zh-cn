@@ -4,18 +4,18 @@ description: 说明如何安装、配置和运行 Azure 信息保护扫描程序
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/13/2018
+ms.date: 01/08/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: fba2a1a804c085c44efc79d0f0ac69988f681aaa
-ms.sourcegitcommit: c9a0d81c18ea79a2520baa4b3777b06a72f87f60
+ms.openlocfilehash: 87e82a34e38bb66df2ecb10b91ec371f35bd5652
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53382514"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071312"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -53,12 +53,13 @@ ms.locfileid: "53382514"
 
 |要求|更多信息|
 |---------------|--------------------|
-|运行扫描程序服务的 Windows Server 计算机：<br /><br />- 4 核处理器<br /><br />- 4 GB 的 RAM<br /><br />- 临时文件 10GB 可用空间（平均）|Windows Server 2016 或 Windows Server 2012 R2。 <br /><br />注意：出于在非生产环境中进行测试或评估的目的，可以使用[受 Azure 信息保护客户端支持](requirements.md#client-devices)的 Windows 客户端操作系统。<br /><br />此计算机可以是物理或虚拟计算机，需拥有快速可靠的网络，可连接到要进行扫描的数据存储。<br /><br /> 扫描程序需要足够的磁盘空间，才能为其扫描的每个文件（每个核心四个文件）创建临时文件。 借助建议的 10GB 磁盘空间，4 核处理器可以扫描 16 个文件，每个文件的大小为 625MB。 <br /><br />确保此计算机具有 Azure 信息保护所需的 [Internet 连接](requirements.md#firewalls-and-network-infrastructure)。 如果由于组织策略而无法连接到 Internet，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。|
+|运行扫描程序服务的 Windows Server 计算机：<br /><br />- 4 核处理器<br /><br />- 8 GB RAM<br /><br />- 临时文件 10GB 可用空间（平均）|Windows Server 2016 或 Windows Server 2012 R2。 <br /><br />注意：出于在非生产环境中进行测试或评估的目的，可以使用[受 Azure 信息保护客户端支持](requirements.md#client-devices)的 Windows 客户端操作系统。<br /><br />此计算机可以是物理或虚拟计算机，需拥有快速可靠的网络，可连接到要进行扫描的数据存储。<br /><br /> 扫描程序需要足够的磁盘空间，才能为其扫描的每个文件（每个核心四个文件）创建临时文件。 借助建议的 10GB 磁盘空间，4 核处理器可以扫描 16 个文件，每个文件的大小为 625MB。 <br /><br />确保此计算机具有 Azure 信息保护所需的 [Internet 连接](requirements.md#firewalls-and-network-infrastructure)。 如果由于组织策略而无法连接到 Internet，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。|
 |存储扫描程序配置的 SQL Server：<br /><br />- 本地或远程实例<br /><br />- 安装扫描程序的 Sysadmin 角色|SQL Server 2012 是以下版本的最低版本：<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express<br /><br />如果安装了多个扫描程序实例，则每个扫描程序实例都需要自己的 SQL Server 实例。<br /><br />如果安装扫描程序且帐户拥有 Sysadmin 角色，那么在安装过程中会自动创建 AzInfoProtectionScanner 数据库，并向运行扫描程序的服务帐户授予相应 db_owner 角色。 如果无法获得 Sysadmin 角色或组织策略要求手动创建和配置数据库，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />每个部署的配置数据库大小不同，建议为要扫描的每 1 百万个文件分配 500 MB。 |
 |运行扫描程序服务的服务帐户|除了运行扫描程序服务，此帐户还对 Azure AD 进行身份验证，并下载 Azure 信息保护策略。 此帐户必须是同步到 Azure AD 的 Active Directory 帐户。 如果由于组织策略而无法同步此帐户，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />此服务帐户有以下要求：<br /><br />- “本地登录”权限。 此权限是安装和配置扫描程序所必需的，但不可用于操作。 必须将此权限授予服务帐户，但当确认扫描程序可发现、保护文件并对其进行分类后，可删除此权限。 如果由于组织策略的限制而甚至无法在短时间内授予此权限，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />- “作为服务登录”权限。 扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。 <br /><br />- 针对数据存储库的权限：必须授予“读取”和“写入”权限才能扫描文件，然后将分类和保护应用到满足 Azure 信息保护策略中的条件的文件。 若仅在发现模式下运行扫描程序，则只需“读取”权限即可。<br /><br />- 对于重新保护或删除保护的标签：若要确保扫描程序始终有权访问受保护的文件，请将此帐户设置为 Azure Rights Management 服务的[超级用户](configure-super-users.md)，并确保已启用超级用户功能。 要详细了解应用保护的帐户要求，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。 此外，如果对分阶段部署实现了[载入控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，还请确保已配置的载入控件中包含此帐户。|
 |在 Windows Server 计算机上安装 Azure 信息保护客户端|必须安装扫描程序的完整客户端。 请勿安装只带有 PowerShell 模块的客户端。<br /><br />有关客户端安装说明，请参阅[管理员指南](./rms-client/client-admin-guide.md)。 如果现在需要将已安装的旧扫描程序升级到更高版本，请参阅[升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。|
 |已配置可应用自动分类和保护（可选）的标签|有关如何在 Azure 信息保护策略中配置条件的详细信息，请参阅[如何配置 Azure 信息保护的自动和建议分类的条件](configure-policy-classification.md)。<br /><br />要详细了解如何配置标签以将保护应用到文件，请参阅[如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)。<br /><br />这些标签可位于全局策略中，或位于一个或多个[作用域内策略](configure-policy-scope.md)中。<br /><br />注意：尽管即使你尚未配置应用自动分类的标签，仍然可以运行扫描程序，但这些说明中并未涵盖此方案。 [详细信息](#using-the-scanner-with-alternative-configurations)|
-|对于要扫描的 Office 文档：<br /><br />- Word、Excel 和 PowerPoint 的 97-2003 文件格式和 Office Open XML 格式|若要详细了解扫描程序对这些文件格式支持的文件类型，请参阅 [Azure 信息保护客户端支持的文件类型](./rms-client/client-admin-guide-file-types.md)。 
+|对于要扫描的 Office 文档：<br /><br />- Word、Excel 和 PowerPoint 的 97-2003 文件格式和 Office Open XML 格式|若要详细了解扫描程序对这些文件格式支持的文件类型，请参阅 [Azure 信息保护客户端支持的文件类型](./rms-client/client-admin-guide-file-types.md)|
+|对于长路径：<br /><br />- 最多 260 个字符，除非扫描程序安装在 Windows 2016 上，并且该计算机配置为支持长路径|Windows 10 和 Windows Server 2016 使用以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)，支持超过 260 个字符的路径长度：“本地计算机策略” > “计算机配置” > “管理模板” > “所有设置” > “NTFS” > “启用 Win32 长路径”<br /><br /> 有关支持长文件路径的详细信息，请参阅 Windows 10 开发人员文档中的[最大路径长度限制](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation)一节。
 
 如果由于组织策略禁止而无法满足表中的所有要求，请参阅下一部分中介绍的备用配置。
 
@@ -192,7 +193,7 @@ SharePoint 受支持的版本：SharePoint Server 2016 和 SharePoint Server 201
     
         Start-AIPScan
     
-    或者，也可以在 Azure 门户内的“Azure 信息保护”边栏选项卡中启动扫描程序（使用“扫描程序” > “节点(预览版)” > “<扫描程序节点>”\**>“立即扫描”选项）。
+    或者，也可以从 Azure 门户的“Azure 信息保护”边栏选项卡启动此扫描程序（使用“扫描程序” > “节点(预览)” > “\<扫描程序节点>”> “立即扫描”选项时）。
 
 2. 运行以下命令，等待扫描程序完成其周期：
     
@@ -227,7 +228,7 @@ SharePoint 受支持的版本：SharePoint Server 2016 和 SharePoint Server 201
     
         Start-AIPScan
     
-    或者，也可以从 Azure 门户的“Azure 信息保护”边栏选项卡启动此扫描程序（使用“扫描程序” > “节点(预览)” > \**<* 扫描程序节点*>**> **立即扫描**选项）。
+    或者，也可以从 Azure 门户的“Azure 信息保护”边栏选项卡启动此扫描程序（使用“扫描程序”\>“节点(预览)”\>“\<扫描程序节点\>”\>“立即扫描”选项时）。
 
 3. 重新监视 911 信息类型的事件日志，并且时间戳要晚于上个步骤启动扫描时的时间。 
     
@@ -238,61 +239,72 @@ SharePoint 受支持的版本：SharePoint Server 2016 和 SharePoint Server 201
 
 ## <a name="how-files-are-scanned"></a>如何扫描文件
 
-扫描程序会自动跳过[从分类和保护中排除](./rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection)的文件，如可执行文件和系统文件。
+扫描程序在扫描文件时运行以下过程。
 
-可以定义要扫描或不要扫描的文件类型列表，从而更改此行为。 在指定此列表并且不指定数据存储库时，该列表适用于未指定其自己列表的所有数据存储库。 若要指定此列表，请使用 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)。 指定文件类型列表后，可以使用 [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes) 向列表添加新文件类型，并能使用 [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes) 从列表中删除文件类型。
+### <a name="1-determine-whether-files-are-included-or-excluded-for-scanning"></a>1.确定要在扫描范围内加入或排除的文件 
+扫描程序自动跳过[从分类和保护中排除](./rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection)的文件，如可执行文件和系统文件。
 
-然后，扫描程序使用 Windows IFilter 扫描以下文件类型。 对于以下文件类型，将使用为标签指定的条件标记文档。
+可以定义要扫描或不要扫描的文件类型列表，从而更改此行为。 在指定此列表并且不指定数据存储库时，该列表适用于未指定其自己列表的所有数据存储库。 若要指定此列表，请使用 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)。 
 
-|应用程序类型|文件类型|
-|--------------------------------|-------------------------------------|
-|Word|.docx; .docm; .dotm; .dotx|
-|Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
-|PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
-|PDF |。pdf|
-|文本|.txt; .xml; .csv|
+指定文件类型列表后，可以使用 [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes) 向列表添加新文件类型，并能使用 [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes) 从列表中删除文件类型。
 
-此外，如果你在运行扫描程序的计算机上安装 Windows TIFF IFilter 功能并配置 [Windows TIFF IFilter 设置](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)，扫描程序还可以使用光学字符识别 (OCR) 检查文件扩展名为 .tiff 的 TIFF 图像。
+### <a name="2-inspect-and-label-files"></a>2.检查文件并为其设置标签
 
-默认情况下，只有 Office 文件类型和 PDF 文件受扫描程序保护，所有文本和图像文件不会受到保护，除非[编辑注册表](#editing-the-registry-for-the-scanner)以指定文件类型：
+然后，扫描程序使用筛选器来扫描支持的文件类型。 操作系统也可使用这些筛选器来进行 Windows 搜索和索引编制。 无需任何额外配置，即可使用 Windows IFilter 来扫描 Word、Excel、PowerPoint 使用文件类型，以及用于 PDF 文档和文本文件的文件类型。
 
-- 如果没有向注册表添加 .txt、.xml 或 .csv 文件类型：将不会标记具有这些文件扩展名的文件，因为这些文件类型不支持仅分类。
+有关默认支持的文件类型的完整列表，以及有关如何配置包括 .zip 文件和 .tiff 文件的现有筛选器的详细信息，请参阅[支持检查的文件类型](./rms-client/client-admin-guide-file-types.md#file-types-supported-for-inspection)。
 
-- 如果在配置 Windows TIFF IFilter 后没有向注册表添加 .tiff 文件类型：将标记具有此文件扩展名的文件，但如果标签已配置为保护，则没有应用保护。
+检查之后，可以使用为标签指定的条件为这些文件类型设置标签。 或者，如果要使用发现模式，可以报告这些文件，在其中包含为标签指定的条件，或所有已知敏感信息类型。 
 
-最后，对于剩余的文件类型，扫描程序不会检查它们，但会应用 Azure 信息保护策略中的默认标签，或应用你为扫描程序配置的默认标签。
+但在以下情况下，扫描程序无法为文件设置标签：
 
-|应用程序类型|文件类型|
-|--------------------------------|-------------------------------------|
-|Project|.mpp; .mpt|
-|发布者|.pub|
-|Visio|.vsd; .vdw; .vst; .vss; .vsdx; .vsdm; .vssx; .vssm; .vstx; .vstm|
-|XPS|.xps; .oxps; .dwfx|
-|Solidworks|.sldprt; .slddrw; .sldasm|
-|Jpeg |.jpg; .jpeg; .jpe; .jif; .jfif; .jfi|
-|Png |。png|
-|Gif|.gif|
-|位图|.bmp; .giff|
-|Tiff|.tif; .tiff|
-|Photoshop|.psdv|
-|DigitalNegative|.dng|
-|Pfile|。pfile|
+- 如果标签应用分类而不应用保护，并且文件类型不[只支持分类](./rms-client/client-admin-guide-file-types.md#file-types-supported-for-classification-only)。
 
-如果扫描程序应用保护的标签，默认只有 Office 文件类型和 PDF 文件受到保护。 可以更改此行为，让其他文件类型也受到保护。 不过，如果标签向文档应用常规保护，文件扩展名变成 .pfile。 其他文件类型也可以更改其文件扩展名。 此外，这些文件将变为只读，直到它们被已授权用户打开并以本机格式保存。
+- 如果标签应用分类和保护，但扫描程序不保护该文件类型。
+    
+    默认情况下，扫描程序仅保护 Office 文件类型，以及 PDF 文件（使用 ISO PDF 加密标准进行保护时）。 可通过[编辑注册表](#editing-the-registry-for-the-scanner)来保护其他文件类型，如下一节所述。
+
+例如，检查文件扩展名为 .txt 的文件之后，扫描程序无法应用为分类而非保护配置的标签，因为 .txt 文件类型不支持仅分类。 如果为分类和保护配置了标签，并且针对 .txt 文件类型编辑了注册表，则扫描程序可为文件设置标签。 
+
+> [!TIP]
+> 在此过程中，如果扫描程序停止并且未完成扫描存储库的大量文件，则可能需要增加动态端口数，以便操作系统托管文件。 SharePoint 的服务器强化可能是导致扫描程序超出允许的网络连接数并因此停止的一个原因。
+> 
+> 要检查这是否是导致扫描程序停止的原因，请在 %localappdata%\Microsoft\MSIP\Logs\MSIPScanner.iplog（如有多个日志，则为压缩文件）中查看是否记录了扫描程序的以下错误消息：无法连接到远程服务器 ---> System.Net.Sockets.SocketException:每个套接字地址（协议/网络地址/端口）的唯一用法通常是 IP:port
+>
+> 有关如何查看当前端口范围以及增加该范围的详细信息，请参阅[可通过修改设置来提高网络性能](https://docs.microsoft.com/biztalk/technical-guides/settings-that-can-be-modified-to-improve-network-performance) 
+
+
+
+### <a name="3-label-files-that-cant-be-inspected"></a>3.无法检查的标签文件
+对于无法检查的文件类型，扫描程序应用 Azure 信息保护策略中的默认标签或为扫描程序配置的默认标签。
+
+与上述步骤相同，在下列情况下，扫描程序无法为文件设置标签：
+
+- 如果标签应用分类而不应用保护，并且文件类型不[只支持分类](./rms-client/client-admin-guide-file-types.md#file-types-supported-for-classification-only)。
+
+- 如果标签应用分类和保护，但扫描程序不保护该文件类型。
+    
+    默认情况下，扫描程序仅保护 Office 文件类型，以及 PDF 文件（使用 ISO PDF 加密标准进行保护时）。 可通过[编辑注册表](#editing-the-registry-for-the-scanner)来保护其他文件类型，如下文所述。
+
 
 ### <a name="editing-the-registry-for-the-scanner"></a>编辑扫描程序的注册表
 
-若要更改默认扫描程序行为以保护 Office 文件和 PDF 以外的文件类型，必须手动编辑注册表并指定想要保护的其他文件类型。 有关说明，请参阅开发人员指南中的[文件 API 配置](develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 此外，特定于扫描程序：
+若要更改默认扫描程序行为以保护 Office 文件和 PDF 以外的文件类型，必须手动编辑注册表并指定想要保护的其他文件类型以及保护类型（本机或泛型）。 有关说明，请参阅开发人员指南中的[文件 API 配置](develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 此外，特定于扫描程序：
 
-- 扫描程序具有自己的默认行为：默认情况下，只有 Office 文件格式和 PDF 文档受到保护。 如果未修改注册表，则扫描程序不会保护任何其他文件类型。
+- 扫描程序具有自己的默认行为：默认情况下，只有 Office 文件格式和 PDF 文档受到保护。 如果未修改注册表，则扫描程序不会保护任何其他文件类型或为其设置标签。
 
 - 如果要使用 Azure 信息保护客户端的同一默认保护行为（其中所有文件都自动以本机或常规保护的方式受到保护）：指定 `*` 通配符作为注册表项，并指定 `Default` 作为值数据。
 
 编辑注册表时，如果 MSIPC 密钥和 FileProtection 密钥不存在，则手动创建这些密钥，并创建每个文件扩展名的密钥。
 
-例如，除了 Office 文件和 PDF 之外，若要使扫描程序还保护 TIFF 图像，编辑后的注册表将与下图类似：
+例如，除了 Office 文件和 PDF 之外，若要使扫描程序还保护 TIFF 图像，编辑后的注册表将与下图类似。 作为图像文件，TIFF 文件支持本机保护，且生成的文件扩展名为 .ptiff。
 
 ![编辑扫描程序的注册表以应用保护](./media/editregistry-scanner.png)
+
+有关同样支持本机保护但必须在注册表中进行指定的文本和图像文件类型列表，请参阅管理员指南中的[分类和保护的支持文件类型](./rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection)。
+
+对于不支持本机保护的文件，请将文件扩展名指定为新密钥，并为 PFile 获取常规保护。 对于受保护的文件，生成的文件扩展名为 .pfile。
+
 
 ## <a name="when-files-are-rescanned"></a>重新扫描文件时的情况
 
@@ -300,7 +312,7 @@ SharePoint 受支持的版本：SharePoint Server 2016 和 SharePoint Server 201
 
 可通过运行具有 `-Reset` 参数的 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) 强制扫描程序重新检查所有文件。 必须为手动计划配置扫描程序，这需要使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) 将 `-Schedule` 参数设置为“Manual”。
 
-或者，也可以从 Azure 门户的“Azure 信息保护”边栏选项卡强制此扫描程序重新检查所有文件（使用“扫描程序” > “节点(预览)” > \**<* 扫描程序节点*>**”> **重新扫描所有文件**选项）。
+或者，也可以从 Azure 门户的“Azure 信息保护”边栏选项卡强制此扫描程序重新检查所有文件（使用“扫描程序”\>“节点(预览)”\>“\<扫描程序节点\>”\>“重新扫描所有文件”选项时）。
 
 如果希望报告包含所有文件，再次检查所有文件非常有用；且当扫描程序在发现模式下运行时，通常会使用此配置选项。 完成全部扫描后，扫描类型自动更改为“增量”，以便后续扫描仅扫描新文件或修改后的文件。
 
@@ -438,9 +450,9 @@ Azure 信息保护扫描程序支持两种备选方案，在任何一种方案�
 
 **扫描程序周期已结束。**
 
-如果服务器启动后，扫描程序已完成其一次性扫描，或扫描程序已完成连续计划的一个周期，则会记录此事件。
+扫描程序完成手动扫描，或完成连续计划的一个周期后，会记录此事件。
 
-如果扫描程序配置为运行一次（而不是连续运行），必须将计划设置为“一次”或“连续”，并手动重启服务，然后才能重新扫描文件。 若要更改计划，请使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet 和 Schedule 参数。
+如果扫描程序配置为手动运行而不是连续运行，那么若要运行新的扫描，请使用 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) cmdlet。 若要更改计划，请使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet 和 Schedule 参数。
 
 ----
 

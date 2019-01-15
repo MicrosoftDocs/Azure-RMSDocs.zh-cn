@@ -2,8 +2,8 @@
 title: 开发环境文件 | Azure RMS
 description: 本主题展示开发环境文件和它们在计算机上的相对安装位置。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,18 +12,18 @@ ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 3dffcdddae1ba7522671694cb909c21b4e096c89
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 80993b63a50e4d180429f841698638219f7725a0
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147757"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071431"
 ---
 # <a name="development-environment-files"></a>开发环境文件
 
 本主题展示开发环境文件和它们在计算机上的相对安装位置。
 
-Rights Management Services SDK 2.1 包括安装在计算机上默认位置或你指定的位置处的以下文件：%MsipcSDKDir%。
+Rights Management Services SDK 2.1 包括安装在计算机上默认位置或指定位置的以下文件：%MsipcSDKDir%。
 
 |文件|路径|描述|
 |----|----|-----------|
@@ -32,8 +32,8 @@ Rights Management Services SDK 2.1 包括安装在计算机上默认位置或你
 |Isvtier5appsigningpubkey.dat|\bin|包含用于生成清单以在 RMS 启用的引用程序的开发期间使用的公匙。|
 |Isvtier5appsignsdk_client.xml|\bin|用于生成清单以在 RMS 启用的引用程序的开发期间使用。|
 |YourAppName.isv.mcf|\bin|一个样板清单配置文件，可用于在支持 RMS 的应用程序开发期间生成清单。|
-|Ipcsecproc_isv.dll|\bin\x86|由 Active Directory Rights Management Services Client 2.1 在 ISV 层次结构中进行操作时内部用于 x86 应用程序的 DLL。|
-|Ipcsecproc_ssp_isv.dll|\bin\x86|由 AD RMS 2.1 在 ISV 层次结构中进行操作时内部用于 x86 应用程序的 DLL。|
+|Ipcsecproc_isv.dll|\bin\x86|在 ISV 层次结构中进行操作时由 Active Directory Rights Management Services Client 2.1 在内部用于 x86 应用程序的 DLL。|
+|Ipcsecproc_ssp_isv.dll|\bin\x86|在 ISV 层次结构中进行操作时由 AD RMS 2.1 在内部用于 x86 应用程序的 DLL。|
 |Ipcsecproc_isv.dll|\bin\x64|由 AD RMS Client 2.1 在 ISV 层次结构中进行操作时内部用于 x64 应用程序的 DLL。|
 |Ipcsecproc_ssp_isv.dll|\bin\x64|由 AD RMS Client 2.1 在 ISV 层次结构中进行操作时内部用于 x64 应用程序的 DLL。|
 |Msipc.h|\inc|主要包括用于 RMS SDK 2.1 的文件。|

@@ -4,18 +4,18 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 01/05/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a513f495b2dd6ef75a3c2f219a207a98f1f6e143
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 393cac6703016235359e0eb2812b31c585d4b524
+ms.sourcegitcommit: b2619c522298eaee3bd0067f2827e80fa9d4bfc2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53174091"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060308"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -96,7 +96,7 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 
 ## <a name="i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work"></a>我看到 Azure 信息保护被列为可用于条件访问的云应用 - 工作原理是什么？
 
-是，作为公共预览版产品/服务，现可为 Azure 信息保护配置 Azure AD 条件访问。
+是，作为预览版产品/服务，现可为 Azure 信息保护配置 Azure AD 条件访问。
 
 当用户打开受 Azure 信息保护保护的文档时，管理员现可基于标准条件访问控制，阻止其租户中用户的访问或授予他们访问权限。 最常见的请求条件之一是需要多重身份验证 (MFA)。 另一常见请求条件是，设备必须[遵守 Intune 策略](/intune/conditional-access-intune-common-ways-use)（以便移动设备满足密码要求和最低操作系统版本），并且计算机必须已加入域。
 
@@ -111,6 +111,8 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 - 建议不要将管理员帐户添加到条件访问策略，因为这些帐户无法访问 Azure 门户中的“Azure 信息保护”边栏选项卡。
 
 - 如果在条件访问策略中使用 MFA 与其他组织展开协作 (B2B)，则必须使用 [Azure AD B2B 协作](/azure/active-directory/b2b/what-is-b2b)，并为要在其他组织中共享的用户创建来宾帐户。
+
+- 由于 Azure AD 2018 年 12 月预览版的发布，现在可以在用户第一次打开受保护文档之前提示他们接受使用条款。 有关详细信息，请参阅以下博客文章声明：[条件访问范围内对 Azure AD 使用条款功能的更新](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Updates-to-Azure-AD-Terms-of-Use-functionality-within/ba-p/294822)
 
 - 如果针对条件访问使用许多云应用，则列表中可能不会显示“Microsoft Azure 信息保护”选项，因此无法进行选择。 在这种情况下，可使用列表顶部的搜索框。 开始键入“Microsoft Azure 信息保护”，筛选可用应用。 如果已有受支持的订阅，则可以看到“Microsoft Azure 信息保护”选项，可进行选择。 
 
@@ -146,15 +148,15 @@ Windows Server 文件分类基础结构在过去一直都有一个选项：对�
 |--------------------------------|-------------------------------------|
 |支持的数据存储： <br /><br />- Windows Server 上的本地文件夹|支持的数据存储： <br /><br />- Windows Server 上的本地文件夹<br /><br />- Windows 文件共享和网络连接存储<br /><br />- SharePoint Server 2016 和 SharePoint Server 2013。 对于具有[对此版本 SharePoint 的延长支持](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)的客户，还支持 SharePoint Server 2010。|
 |操作模式： <br /><br />- 实时|操作模式： <br /><br />- 系统地抓取数据存储，且此周期可以运行一次或多次|
-|对文件类型的支持： <br /><br />- 默认保护所有文件类型 <br /><br />- 通过编辑注册表，可以从保护配置中排除特定文件类型|对文件类型的支持： <br /><br />- 默认保护 Office 文件类型 <br /><br />- 通过编辑注册表，可以将特定文件类型纳入保护|
+|对文件类型的支持： <br /><br />- 默认保护所有文件类型 <br /><br />- 通过编辑注册表，可以从保护配置中排除特定文件类型|对文件类型的支持： <br /><br />- 默认保护 Office 文件类型和 PDF 文档 <br /><br />- 通过编辑注册表，可以将其他文件类型纳入保护|
 
 目前，在本地文件夹或网络共享上受到保护的文件设置 [Rights Management 所有者](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)方面存在差异。 默认情况下，这两个解决方案的 Rights Management 所有者均设置为保护文件的帐户，但可以替代此设置：
 
 - 对于 Windows Server FCI：可以将所有文件的 Rights Management 所有者设置为单个帐户，也可以为每个文件动态设置 Rights Management 所有者。 若要动态设置 Rights Management 所有者，请使用 -OwnerMail [源文件所有者电子邮件] 参数和值。 此配置使用文件“所有者”属性中的用户帐户名从 Active Directory 检索用户的电子邮件地址。
 
-- 对于 Azure 信息保护扫描程序：可以将指定数据存储上所有文件的 Rights Management 所有者设置为单个帐户，但不能为每个文件动态设置 Rights Management 所有者。 若要设置帐户，请为[数据存储库配置文件](/powershell/module/azureinformationprotection/Set-AIPScannerRepository?view=azureipps#optional-parameters)指定 **-DefaultOwner** 参数。
+- 对于 Azure 信息保护扫描程序：对于新受保护的文件，可以将指定数据存储上所有文件的 Rights Management 所有者设置为单个帐户，但不能为每个文件动态设置 Rights Management 所有者。 对先前受保护的文件，不更改 Rights Management 所有者。 若要设置帐户，请为[数据存储库配置文件](/powershell/module/azureinformationprotection/Set-AIPScannerRepository?view=azureipps#optional-parameters)指定 **-DefaultOwner** 参数。
 
-扫描程序保护 SharePoint 网站和库上的文件时，通过使用 SharePoint 创建者值来动态地设置每个文件的 Rights Management 所有者。
+扫描程序保护 SharePoint 网站和库上的文件时，通过使用 SharePoint 编辑者值来动态地设置每个文件的 Rights Management 所有者。
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>听说很快将发布新版 Azure 信息保护 — 何时发布？
 
