@@ -2,8 +2,8 @@
 title: 如何添加显式所有者权限 | Azure RMS
 description: 应用程序在从头开始创建许可证时应显式添加“所有者”权限。
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6322831ee15266a4709284da0f9eb113f6d3eaf0
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: ee003510feaebfb0615eaf8e8408e0276cc082d6
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147113"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071159"
 ---
 # <a name="how-to-add-explicit-owner-rights"></a>操作说明：添加显式所有者权限
 
@@ -27,13 +27,12 @@ ms.locfileid: "44147113"
 
 应用程序在使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 创建许可证句柄时，还必须显式授予所有者完全权力（权限）。
 
->[!NOTE] 
-> 使用 [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx) 以及 **IPC\_LI\_OWNER** 属性将用户设置为“所有者”不会授予所有者完全权限。
+>[!NOTE] 使用 [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx) 以及 **IPC\_LI\_OWNER** 属性将用户设置为“所有者”不会授予所有者完全权限。
 
 下列示例代码仅演示创建特定权限并添加到给定许可证时所涉及的步骤。
 
 ## <a name="instructions"></a>说明
- 
+ 
 ## <a name="step-1-example-scenario"></a>步骤 1：示例方案
 
 在此示例中，所需权限会添加到使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 创建的许可证。 该示例演示如何通过权限列表创建权限并分配给许可证。
