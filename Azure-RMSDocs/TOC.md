@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f761dc1b000145ccaaf68f8734c1f847e877917d
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314775"
+---
 # [概述](/azure/information-protection/what-is-information-protection)
 ## [什么是 Azure 信息保护？](what-is-information-protection.md)
 ## [比较 Azure 信息保护与 AD RMS](compare-on-premise.md)
@@ -88,6 +96,7 @@
 ## [配置安全文档协作](secure-collaboration-documents.md)
 ## [配置 Azure 信息保护标签的邮件流规则](configure-exo-rules.md)
 ## [部署 Azure 信息保护扫描程序](deploy-aip-scanner.md)
+## [部署 Azure 信息保护扫描程序（预览版）](deploy-aip-scanner-preview.md)
 ## [Azure 信息保护报表](reports-aip.md)
 ## [部署 RMS 连接器](deploy-rms-connector.md)
 ### [安装并配置连接器](install-configure-rms-connector.md)
