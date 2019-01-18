@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 12/15/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: c890d6acf2557093441a175bc8ed8657e8d1d9da
-ms.sourcegitcommit: bc082cffaa698b89b28aef7034290553c26f667b
+ms.openlocfilehash: 91a9a124c53d7c8f1aab31213595a8fc2f3627dd
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53411807"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393986"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
@@ -75,11 +75,11 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
     
 2. 花几分钟时间了解显示的标签：
     
-    - 用于分类的标签：“个人”、“公共”、“常规”、“机密”和“高度机密”。 最后两个标签展开可显示子标签，这提供了有关如何使分类具有子类别的示例：
+   - 用于分类的标签：“个人”、“公共”、“常规”、“机密”和“高度机密”。 最后两个标签展开可显示子标签，这提供了有关如何使分类具有子类别的示例：
     
-    - 在默认配置中，某些标签未配置视觉标记。 视觉标记即页脚、页眉和水印。 某些标签可能设置了保护，具体取决于默认策略。 例如： 
+   - 在默认配置中，某些标签未配置视觉标记。 视觉标记即页脚、页眉和水印。 某些标签可能设置了保护，具体取决于默认策略。 例如： 
     
-    ![Azure 信息保护快速入门教程步骤 3 - 默认策略](./media/info-protect-policy-default-labelsv2.png)
+     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](./media/info-protect-policy-default-labelsv2.png)
     
 3. “配置要对信息保护最终用户显示和应用的设置”部分中的标签后面还显示一些策略设置。 例如，未设置默认标签，文档和电子邮件无需具备标签，且用户在更改标签时无需提供理由：
     

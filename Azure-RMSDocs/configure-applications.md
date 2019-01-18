@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b53bb0a914871ba2a53ad7ff4c3bd6fca0d32dde
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 99c0871d879d7326a4142b99753acfe00cd27cf5
+ms.sourcegitcommit: 73b5884ee9fe8aabb1a9fc9baace64d5fd433f4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173258"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54324074"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>为 Azure Rights Management 配置应用程序
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!NOTE]
 > 此信息适用于已部署了 Azure 信息保护的 IT 管理员和顾问。 如果你要寻找有关如何针对特定应用程序使用 Rights Management 功能，或者如何打开权限保护文件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
@@ -43,7 +43,7 @@ ms.locfileid: "53173258"
 
     -   [Office 2010](configure-office-apps.md#office-2010)
 
--   [Azure 信息保护客户端：客户端安装和配置](configure-sharing-app.md)
+-   [Azure 信息保护客户端：客户端安装和配置](configure-client.md)
 
 -   [Rights Management 共享应用程序：客户端安装和配置](configure-sharing-app.md)
 

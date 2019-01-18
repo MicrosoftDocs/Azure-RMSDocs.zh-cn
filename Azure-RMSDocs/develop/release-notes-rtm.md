@@ -12,12 +12,12 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 8132fd2afba45402f8f9c835f2d6db69dd8e81f2
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 695251277b62d44166e7a4569881b804db34279e
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071193"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394250"
 ---
 # <a name="release-notes"></a>发行说明
 
@@ -37,9 +37,9 @@ ms.locfileid: "54071193"
 
 - **更新到 ADAL**：通过更新应用程序来使用 ADAL 身份验证而不使用 Microsoft Online 登录助手，你和你的客户将能够：
 
- - 使用多重身份验证
- - 安装 RMS 2.1 Client，而无需对计算机的管理特权
- - 验证适用于 Windows 10 的应用程序
+  - 使用多重身份验证
+  - 安装 RMS 2.1 Client，而无需对计算机的管理特权
+  - 验证适用于 Windows 10 的应用程序
 
 - **RMS SDK 将不再支持 Microsoft Online 登录助手 (SIA)。** 我们将继续支持使用 SIA 6 个月，之后将停止对其的支持。
 
@@ -124,7 +124,7 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
     请注意  ：自 2015 年 4 月版本起，此 KB 的安装流程中添加了检查程序。
 
-     
+     
 
 -   **文件 API 集成**
 

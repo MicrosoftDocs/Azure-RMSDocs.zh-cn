@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8c46dfb6aafa9162be6725202516f8d1fa871cc8
-ms.sourcegitcommit: 60223377a914269c93d73b3522d87b8161ecf854
+ms.openlocfilehash: 53a08a06351e4095e8e5662a4e1bf85f15f77f1d
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/26/2018
-ms.locfileid: "53786311"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394324"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
 
 安装 Azure 信息保护客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
@@ -77,15 +77,15 @@ AzureInformationProtection 模块的当前版本具有以下限制：
 1. 必须激活 Azure 权限管理服务。
 
 2. 使用自己的帐户从他人的文件中删除保护： 
-    
+
     - 必须为你的组织启用超级用户功能，而且必须将你的帐户配置为 Azure 权限管理的超级用户。
 
 3. 在无用户交互的情况下直接保护或取消保护文件： 
-    
+
     - 创建服务主体帐户，运行 Set-RMSServerAuthentication，并考虑将此服务主体作为 Azure 权限管理的超级用户。
 
 4. 北美以外的区域： 
-    
+
     - 编辑服务目录的注册表。
 
 #### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>先决条件 1：必须激活 Azure Rights Management 服务
@@ -131,7 +131,6 @@ New-MsolServicePrincipal -DisplayName $ServicePrincipalName
 $symmetricKey="<value from the display of the New-MsolServicePrincipal command>"
 $appPrincipalID=(Get-MsolServicePrincipal | Where { $_.DisplayName -eq $ServicePrincipalName }).AppPrincipalId
 Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -BposTenantId $bposTenantID
-
 ````
 
 下一部分介绍如何手动获取并指定这些值，其中包含有关每个操作的详细信息。
@@ -145,29 +144,29 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 2. 使用“以管理员身份运行”选项启动 Windows PowerShell。
 
 3. 使用 `Connect-AadrmService` cmdlet 连接到 Azure 权限管理服务：
-    
+
         Connect-AadrmService
-    
+
     系统提示时，输入你的 Azure 信息保护租户管理员凭据。 通常使用作为 Azure Active Directory 或 Office 365 的全局管理员的帐户。
-    
+
 4. 运行 `Get-AadrmConfiguration` 并创建 BPOSId 值的副本。
-    
+
     Get-AadrmConfiguration 的输出示例：
-    
+
             BPOSId                                   : 23976bc6-dcd4-4173-9d96-dad1f48efd42
-        
+
             RightsManagement ServiceId               : 1a302373-f233-440600909-4cdf305e2e76
-        
+
             LicensingIntranetDistributionPointUrl    : https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/licensing
-        
+
             LicensingExtranetDistributionPointUrl    : https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/licensing
-        
+
             CertificationIntranetDistributionPointUrl: https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/certification
-        
+
             CertificationExtranetDistributionPointUrl: https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/certification
 
 5. 从服务断开连接：
-    
+
         Disconnect-AadrmService
 
 ##### <a name="to-get-the-appprincipalid-and-symmetric-key"></a>获取 AppPrincipalId 和对称密钥
@@ -182,25 +181,25 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 2. 使用“以管理员身份运行”选项启动 Windows PowerShell。
 
 3. 使用 **Connect-MsolService** cmdlet 连接到 Azure AD：
-    
+
         Connect-MsolService
-    
+
     系统提示时，输入 Azure AD 租户管理员凭据（通常使用作为 Azure Active Directory 或 Office 365 的全局管理员的帐户）。
 
 4. 运行 New-MsolServicePrincipal cmdlet 以创建新的服务主体：
-    
+
         New-MsolServicePrincipal
-    
+
     出现提示时，输入为此服务主体选择的显示名称，这样有助于确定之后将它用作连接到 Azure Rights Management 服务的帐户，以便可以保护和取消保护文件。
-    
+
     New-MsolServicePrincipal 的输出示例：
-    
+
         Supply values for the following parameters:
-        
+
         DisplayName: AzureRMSProtectionServicePrincipal
         The following symmetric key was created as one was not supplied
         zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=
-        
+
         Display Name: AzureRMSProtectionServicePrincipal
         ServicePrincipalNames: (b5e3f7g1-b5c2-4c96-a594-a0807f65bba4)
         ObjectId: 23720996-593c-4122-bfc7-1abb5a0b5109
@@ -248,20 +247,20 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 2. 在运行 AzureInformationProtection cmdlet 的每台计算机上，打开注册表编辑器。
 
 3. 导航到以下路径：`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation`。 
-    
+
     如果看不到 MSIPC 密钥或 ServiceLocation 密钥，请创建它们。
 
 4. 对于 **ServiceLocation** 项，创建两个项（若不存在），并分别命名为 **EnterpriseCertification** 和 **EnterprisePublishing**。 
-    
+
     对于为这些密钥自动创建的字符串值，请勿更改“（默认值）”的名称，但编辑字符串以设置值数据：
 
-    - 对于 **EnterpriseCertification**，粘贴 CertificationExtranetDistributionPointUrl 值。
-    
-    - 对于 **EnterprisePublishing**，粘贴 LicensingExtranetDistributionPointUrl 值。
-    
-    例如，EnterpriseCertification 的注册表项应类似于以下：
-    
-    ![编辑北美以外区域的 Azure 信息保护 PowerShell 模块的注册表](../media/registry-example-rmsprotection.png)
+   - 对于 **EnterpriseCertification**，粘贴 CertificationExtranetDistributionPointUrl 值。
+
+   - 对于 **EnterprisePublishing**，粘贴 LicensingExtranetDistributionPointUrl 值。
+
+     例如，EnterpriseCertification 的注册表项应类似于以下：
+
+     ![编辑北美以外区域的 Azure 信息保护 PowerShell 模块的注册表](../media/registry-example-rmsprotection.png)
 
 5. 关闭注册表编辑器。 无需重启计算机。 但是，如果使用服务主体帐户而不是自己的用户帐户，则必须在此注册表编辑后运行 Set-RMSServerAuthentication 命令。
 
@@ -280,7 +279,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 另外，还必须将 Rights Management 模板下载到计算机，并确定要使用的模板及其相应的 ID 号，然后才可以保护文件。 然后可从输出复制模板 ID：
 
     Get-RMSTemplate
-    
+
 输出可能与以下内容类似：
 
     TemplateId        : {82bf3474-6efe-4fa1-8827-d1bd93339119}
@@ -289,7 +288,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
     Name              : Contoso, Ltd - Confidential View Only
     IssuerDisplayName : Contoso, Ltd
     FromTemplate      : True
-    
+
     TemplateId        : {e6ee2481-26b9-45e5-b34a-f744eacd53b0}
     CultureInfo       : en-US
     Description       : This content is proprietary information intended for internal users only. This content can be modified but cannot be copied and printed.
@@ -369,7 +368,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 7. 在“ServerCertification.asmx 的权限”对话框中，单击“添加”。 
 
 8. 添加你的帐户名称。 如果其他 AD RMS 管理员或服务帐户也将使用这些 cmdlet 保护和取消保护文件，也请添加这些帐户。 
-    
+
     若要以非交互式方式保护或取消保护文件，请添加相关的计算机帐户。 例如，添加配置为文件分类基础结构的 Windows Server 计算机的计算机帐户，并使用 PowerShell 脚本保护文件。
 
 9. 在“允许”列中，请确保选中“读取和执行”和“读取”复选框。
@@ -406,8 +405,8 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
     Name              : Contoso, Ltd - Confidential View Only
     IssuerDisplayName : Contoso, Ltd
     FromTemplate      : True
-    
-    
+
+
     TemplateId        : {e6ee2481-26b9-45e5-b34a-f744eacd53b0}
     CultureInfo       : en-US
     Description       : This content is proprietary information intended for internal users only. This content can be modified but cannot be copied and printed.
@@ -487,37 +486,37 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 2. 对于与 Azure 信息保护结合使用的 Azure AD 租户，依次转到“Azure Active Directory” > “应用程序注册”。 
 
 3. 选择“新应用程序注册”，以创建 Web/API 应用程序。 在“创建”标签上，指定以下值，再单击“创建”：
-    
-    - 名称：AIPOnBehalfOf
-    
-    如果愿意的话，请指定其他名称。 该名称对于每个租户必须是唯一的。
-    
-    - 应用程序类型：Web 应用/API
-    
-    - 登录 URL：**http://localhost**
+
+   - 名称：AIPOnBehalfOf
+
+     如果愿意的话，请指定其他名称。 该名称对于每个租户必须是唯一的。
+
+   - 应用程序类型：Web 应用/API
+
+   - 登录 URL：**http://localhost**
 
 4. 选择刚刚创建的应用程序，例如，AIPOnBehalfOf。 然后，在“设置”边栏选项卡上，选择“属性”。 在“属性”边栏选项卡中，复制“应用程序 ID”值，再关闭此边栏选项卡。 
-    
+
     运行 Set-AIPAuthentication cmdlet 时，此值用于 `WebAppId` 参数。 粘贴并保存，以供日后参考。
 
 5. 在“设置”边栏选项卡上，选择“必需权限”。 在“必需权限”边栏选项卡上，选择“授予权限”，单击“是”进行确认，然后关闭此边栏选项卡。
 
 6. 在“设置”边栏选项卡上，选择“密钥”。 指定说明和选定的持续时间（1 年、2 年或永不过期），添加新密钥。 然后，选择“保存”，并复制显示的“值”字符串。 请务必保存此字符串，因为它不会再次显示，并且无法检索。 与所使用的任何密钥一样，安全地存储保存的值，并限制对它的访问。
-    
+
     运行 Set-AIPAuthentication cmdlet 时，此值用于 `WebAppKey` 参数。
 
 7. 回到“应用程序注册”边栏选项卡，选择“新应用程序注册”，创建本机应用程序。 在“创建”标签上，指定以下值，再单击“创建”：
-    
-    - 名称：AIPClient
-    
-    如果愿意的话，请指定其他名称。 该名称对于每个租户必须是唯一的。
-    
-    - 应用程序类型：本机
-    
-    - 登录 URL：**http://localhost**
+
+   - 名称：AIPClient
+
+     如果愿意的话，请指定其他名称。 该名称对于每个租户必须是唯一的。
+
+   - 应用程序类型：本机
+
+   - 登录 URL：**http://localhost**
 
 8. 选择刚刚创建的应用程序，例如，AIPClient。 然后，在“设置”边栏选项卡上，选择“属性”。 在“属性”边栏选项卡中，复制“应用程序 ID”值，再关闭此边栏选项卡。
-    
+
     运行 Set-AIPAuthentication cmdlet 时，此值用于 `NativeAppId` 参数。 粘贴并保存，以供日后参考。
 
 9. 在“设置”边栏选项卡中，选择“必需权限”。 
@@ -527,7 +526,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 11. 在“启用访问”边栏选项卡中，选择“AIPOnBehalfOf”，再依次单击“选择”和“完成”。
 
 12. 在“必需权限”边栏选项卡上，选择“授予权限”，单击“是”进行确认，然后关闭此边栏选项卡。
-    
+
 
 至此，你已配置完两个应用，并获得了使用参数 *WebAppId*、*WebAppKey* 和 *NativeAppId* 运行 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 所需的值。 例如：
 
@@ -558,21 +557,21 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 1. 在计算机上，创建一个新的名为 Aipauthentication.ps1 的 PowerShell 脚本。
 
 2. 将以下命令复制并粘贴到此脚本中：
-    
+
          Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application> -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
 
 3. 使用上一部分中的说明修改此命令：为 **WebAppId**、**WebAppkey** 和 **NativeAppId** 参数指定你自己的值。 此时，对于你稍后将指定的 **Token** 参数，你还没有准备好其值。 
-    
+
     例如：`Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f -Token <token value>`
-    
+
 #### <a name="step-2-run-set-aipauthentication-to-get-an-access-token-and-copy-it-to-the-clipboard"></a>步骤 2：运行 Set-AIPAuthentication 来获取一个访问令牌并将其复制到剪贴板
 
 1. 打开一个 Windows PowerShell 会话。
 
 2. 使用与你在脚本中指定的值相同的值运行以下命令：
-    
+
         (Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application >).token | clip
-    
+
     例如：`(Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f").token | clip`
 
 #### <a name="step-3-modify-the-powershell-script-to-supply-the-token"></a>步骤 3：修改 PowerShell 脚本以提供令牌
@@ -580,7 +579,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 1. 在 PowerShell 脚本中，通过从剪切板粘贴字符串来指定令牌值，然后保存文件。
 
 2. 为脚本签名。 如果没有为脚本签名（更安全），则必须在将运行标记命令的计算机上配置 Windows PowerShell。 例如，使用“以管理员身份运行”选项运行 Windows PowerShell 会话，然后键入：`Set-ExecutionPolicy RemoteSigned`。 但是，当未签名的脚本存储在此计算机上时，此配置将允许所有未签名的脚本运行（不太安全）。
-    
+
     有关为 Windows PowerShell 脚本签名的详细信息，请参阅 PowerShell 文档库中的 [about_Signing](/powershell/module/microsoft.powershell.core/about/about_signing) 。
 
 3. 将此 PowerShell 脚本复制到将对文件进行标记和保护的计算机上，并删除计算机上的原始脚本。 例如，将 PowerShell 脚本复制为 Windows Server 计算机上的 C:\Scripts\Aipauthentication.ps1。
@@ -590,12 +589,12 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 1. 确保将对文件进行标记和保护的服务帐户具有**作为批处理作业登录**权限。
 
 2. 在将对文件进行标记和保护的计算机上，打开任务计划程序并创建一个新任务。 将此任务配置为作为将对文件进行标记和保护的服务帐户运行，然后为“操作”配置以下值：
-    
-    - **操作**：`Start a program`
-    - **程序/脚本**：`Powershell.exe`
-    - **添加参数(可选)**：`-NoProfile -WindowStyle Hidden -command "&{C:\Scripts\Aipauthentication.ps1}"` 
-    
-    对于参数行，指定你自己的路径和文件名（如果它们与示例中的不同）。
+
+   - **操作**：`Start a program`
+   - **程序/脚本**：`Powershell.exe`
+   - **添加参数(可选)**：`-NoProfile -WindowStyle Hidden -command "&{C:\Scripts\Aipauthentication.ps1}"` 
+
+     对于参数行，指定你自己的路径和文件名（如果它们与示例中的不同）。
 
 3. 手动运行此任务。
 
@@ -604,7 +603,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 1. 确认令牌现在存储在服务帐户配置文件的 %localappdata%\Microsoft\MSIP 文件夹中。 此值由服务帐户提供保护。
 
 2. 删除包含令牌值的 PowerShell 脚本（例如 Aipauthentication.ps1）。
-    
+
     还可以删除任务。 如果令牌过期，你必须重复此过程，为应对这种情况，请保留已配置的任务以使其在你复制包含新令牌值的新 PowerShell 脚本时可随时重新运行，这可以提供更大的便利。
 
 ## <a name="next-steps"></a>后续步骤

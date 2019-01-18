@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 29c79d3da5e82b0d5702a1d85a22608f9177d271
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: b1d46cb3c98c520ab6900f910f691af920337334
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305687"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393476"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>用户指南：使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类和保护。 如果只需对文档和电子邮件进行分类（但不保护），请参阅[仅分类说明](client-classify.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
@@ -138,13 +138,13 @@ ms.locfileid: "53305687"
 
 2. 在“分类和保护 - Azure信息保护”对话框中，请像在 Office 应用程序中那样使用标签，这样可以按管理员定义的方式设置分类和保护。 
 
-    - 如果没有标签可以选择（它们呈灰显状态）：所选文件不支持分类，但可以通过自定义权限保护它（步骤 3）。 例如：
+   - 如果没有标签可以选择（它们呈灰显状态）：所选文件不支持分类，但可以通过自定义权限保护它（步骤 3）。 例如：
 
-    ![“分类和保护 - Azure 信息保护”对话框中无可用标签](../media/info-protect-dialog-labels-dimmed.png)
+     ![“分类和保护 - Azure 信息保护”对话框中无可用标签](../media/info-protect-dialog-labels-dimmed.png)
     
-    - 如果看不到标签，但是“公司预定义的保护”选项出现在此对话框中，表明：客户端正以[仅保护模式](client-protection-only-mode.md)运行。 选择模板以应用管理员为你配置的保护，或者选择“自定义权限”指定自己的保护设置，然后转到步骤 4.
+   - 如果看不到标签，但是“公司预定义的保护”选项出现在此对话框中，表明：客户端正以[仅保护模式](client-protection-only-mode.md)运行。 选择模板以应用管理员为你配置的保护，或者选择“自定义权限”指定自己的保护设置，然后转到步骤 4.
     
-    ![“分类和保护 - Azure 信息保护”对话框中无任何标签](../media/info-protect-dialog-labels-protection-only.png)
+     ![“分类和保护 - Azure 信息保护”对话框中无任何标签](../media/info-protect-dialog-labels-protection-only.png)
     
 3. 如果得到管理员的准许，则可自行指定保护设置，而不使用管理员可能在所选标签中随附的保护设置。 若要执行此操作，请选择“使用自定义权限进行保护”。
     
@@ -154,15 +154,15 @@ ms.locfileid: "53305687"
 
 4. 如果已选择自定义权限选项，此时指定以下项：
 
-    - **选择权限**：在保护所选文件时选择希望用户具有的访问级别。
+   - **选择权限**：在保护所选文件时选择希望用户具有的访问级别。
     
-    - **选择用户、组或组织**：指定应对文件具有选定权限的人员。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 
+   - **选择用户、组或组织**：指定应对文件具有选定权限的人员。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 
     
-    或者，可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
+     或者，可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
         
-    - **过期访问**：仅对具有时效性的文件选择此选项，使指定的人员无法在你设置的日期后打开所选的一个文件或多个文件。你仍然可以打开原始文件，但是在所设定日期的午夜后（当前时区），你指定的人员将无法打开文件。
+   - **过期访问**：仅对具有时效性的文件选择此选项，使指定的人员无法在你设置的日期后打开所选的一个文件或多个文件。你仍然可以打开原始文件，但是在所设定日期的午夜后（当前时区），你指定的人员将无法打开文件。
     
-    请注意，如果此设置此前通过 Office 2010 应用的自定义权限配置，则指定到期日期不会显示在此对话框中，但仍然会设置到期日期。 此显示问题仅适用于在 Office 2010 中配置了到期日期的情况。
+     请注意，如果此设置此前通过 Office 2010 应用的自定义权限配置，则指定到期日期不会显示在此对话框中，但仍然会设置到期日期。 此显示问题仅适用于在 Office 2010 中配置了到期日期的情况。
 
 5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”**。
 

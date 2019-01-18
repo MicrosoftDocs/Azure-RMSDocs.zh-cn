@@ -12,12 +12,12 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 6f0fdcaf6d21047f28c470dc896a1cd64fee752d
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 580dc90bae499a5cc64238a6157612bea5eb3282
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071295"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394178"
 ---
 # <a name="developing-your-application"></a>开发应用程序
 
@@ -62,7 +62,7 @@ ms.locfileid: "54071295"
 - 使用分配的用户凭据 `Connect-MsolService` 连接到在线服务
 - 通过运行 `New-MsolServicePrincipal` 创建新服务主体
 - 为服务主体提供名称
-> 记录对称密钥和应用程序主体 ID 以供将来使用。
+  > 记录对称密钥和应用程序主体 ID 以供将来使用。
 
 *示例输出*
 ![cmdlet 输出](../media/develop/output-of-NewMsolServicePrincipal.png)
@@ -80,8 +80,8 @@ ms.locfileid: "54071295"
 ![设计摘要](../media/develop/design-summary.png)
 
 1. 用户输入：
-  - 要保护的文件的路径
-  - 选择模板或创建临时策略
+   - 要保护的文件的路径
+   - 选择模板或创建临时策略
 2. 应用程序请求使用 AIP 进行身份验证。
 3. AIP 确认身份验证
 4. 应用程序从 AIP 请求模板。
@@ -216,16 +216,16 @@ ms.locfileid: "54071295"
 ![应用输出 - 步骤 1](../media/develop/app-output-1.png)
 
 2. 你需要提供要保护的文件的路径。
-![应用输出 - 步骤 2](../media/develop/app-output-2.png)
+   ![应用输出 - 步骤 2](../media/develop/app-output-2.png)
 
 3. 系统将提示你输入许可证所有者的电子邮件（此所有者必须对 Azure AD 租户具有全局管理员权限）。
-![应用输出 - 步骤 3](../media/develop/app-output-3.png)
+   ![应用输出 - 步骤 3](../media/develop/app-output-3.png)
 
 4. 输入有权访问该文件的用户的电子邮件地址（电子邮件必须以空格分隔）。
-![应用输出 - 步骤 4](../media/develop/app-output-4.png)
+   ![应用输出 - 步骤 4](../media/develop/app-output-4.png)
 
 5. 从要向授权用户提供的权限列表中进行选择。
-![应用输出 - 步骤 5](../media/develop/app-output-5.png)
+   ![应用输出 - 步骤 5](../media/develop/app-output-5.png)
 
 6. 最后，输入一些策略元数据：策略名称、描述和发布者（Azure AD 租户）显示名称![应用输出 - 步骤6](../media/develop/app-output-6.png)
 

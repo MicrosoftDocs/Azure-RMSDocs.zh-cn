@@ -12,12 +12,12 @@ ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 3922236e6118045b6f01f55926a9c6de8aa9df72
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 2cdd5f88edd8cad446ebaecbdd4065fdc18de51e
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071635"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394113"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>如何使用 Azure AD 注册应用并为其启用 RMS
 
@@ -51,7 +51,8 @@ ms.locfileid: "54071635"
 -   [适用于 dotnet 的 Windows Azure Active Directory 身份验证库 (ADAL)](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 -   对于 Linux SDK，ADAL 库与 SDK 源（可通过 [Github](https://github.com/AzureAD/rms-sdk-for-cpp) 获取）一起打包。
 
->[!NOTE]   我们建议使用 ADAL 之一，不过你可以使用其他身份验证库。
+> [!NOTE]
+> 我们建议使用 ADAL 之一，不过你可以使用其他身份验证库。
 
 ### <a name="authentication-parameters"></a>身份验证参数
 
@@ -64,14 +65,15 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
 来自上一个注册步骤（通过 Azure 门户）。
 - **重定向 Uri** – 向身份验证库提供身份验证代码的 URI 目标。 iOS 和 Android 需要特定的格式。 ADAL 相应的 GitHub 存储库的 README 文件中对此已有说明。 该值来自上一个注册步骤（通过 Azure 门户）。
 
->[!NOTE]
+> [!NOTE]
 > “范围”当前未使用，但可能会使用，因此会保留供将来使用。
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
 
     iOS: `<app-scheme>://<bundle-id>`
 
->[!NOTE]  如果应用未遵循这些指导原则，则 Azure RMS 和 Azure AD 工作流可能会失败，并且不受 Microsoft.com 支持。 而且，如果在生产应用中使用无效客户端 Id，则可能会违反权限管理许可协议 (RMLA)。
+> [!NOTE]
+> 如果应用未遵循这些指导原则，则 Azure RMS 和 Azure AD 工作流可能会失败，并且不受 Microsoft.com 支持。 而且，如果在生产应用中使用无效客户端 Id，则可能会违反权限管理许可协议 (RMLA)。
 
 ### <a name="what-should-an-authentication-callback-implementation-look-like"></a>身份验证回调实现应呈现的内容
 **身份验证代码示例** - 此 SDK 具有演示身份验证回调的使用的示例代码。 为方便起见，这些代码示例在此处以及以下每个链接的主题中进行了表示。

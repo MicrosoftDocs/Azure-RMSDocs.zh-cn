@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c0fc5812eedd7cce5c0e17231d9ee19dbf4edd1b
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 57dd5faad33681bbf87045b61335e11baaa973a2
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305669"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393946"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
 
 使用以下信息可帮助你安装并配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 1-4。
 
@@ -53,7 +53,7 @@ ms.locfileid: "53305669"
 若要继续，请输入帐号和密码以配置 RMS 连接器。
 
 ## <a name="entering-credentials"></a>输入凭据
-在能够配置 RMS 连接器之前，你必须输入具有足够 RMS 连接器配置权限的帐户的凭据。 例如，你可以键入 **admin@contoso.com**，然后指定此帐户的密码。
+在能够配置 RMS 连接器之前，你必须输入具有足够 RMS 连接器配置权限的帐户的凭据。 例如，你可以键入 <strong>admin@contoso.com</strong>，然后指定此帐户的密码。
 
 此帐户不得要求进行多重身份验证 (MFA)，因为 Microsoft Rights Management 管理工具不支持对此帐户进行 MFA。 
 
@@ -63,40 +63,40 @@ ms.locfileid: "53305669"
 
 你可以使用具有以下某一种权限的帐户：
 
--   **租户的全局管理员**：Office 365 租户或 Azure AD 租户的全局管理员帐户。
+- **租户的全局管理员**：Office 365 租户或 Azure AD 租户的全局管理员帐户。
 
--   **Azure Rights Management 全局管理员**：Azure Active Directory 中已分配为 Azure RMS 全局管理员角色的帐户。
+- **Azure Rights Management 全局管理员**：Azure Active Directory 中已分配为 Azure RMS 全局管理员角色的帐户。
 
--   **Azure Rights Management 连接器管理员**：Azure Active Directory 中的一个帐户，已被授予为你的组织安装和管理 RMS 连接器的权限。
+- **Azure Rights Management 连接器管理员**：Azure Active Directory 中的一个帐户，已被授予为你的组织安装和管理 RMS 连接器的权限。
 
-    > [!NOTE]
-    > 通过使用 Azure RMS [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) cmdlet，向帐户分配 Azure Rights Management 全局管理员角色和 Azure Rights Management 连接器管理员角色。
-    > 
-    > 若要使用最小特权运行 RMS 连接器，请为此创建一个专用帐户，然后通过执行以下操作为帐户分配 Azure RMS 连接器管理员角色：
-    >
-    > 1.  下载并安装适用于 Rights Management 的 Windows PowerShell（如果你尚未这样做）。 有关详细信息，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。
-    >
-    >     使用“以管理员身份运行”命令启动 Windows PowerShell，并使用 [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice) 命令连接到 Azure RMS 服务：
-    >
-    >     ```
-    >     Connect-AadrmService                   //provide Office 365 tenant administrator or Azure RMS global administrator credentials
-    >     ```
-    > 2.  然后运行 [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) 命令，仅使用以下参数之一：
-    >
-    >     ```
-    >     Add-AadrmRoleBasedAdministrator -EmailAddress <email address> -Role "ConnectorAdministrator"
-    >     ```
-    >
-    >     ```
-    >     Add-AadrmRoleBasedAdministrator -ObjectId <object id> -Role "ConnectorAdministrator"
-    >     ```
-    >
-    >     ```
-    >     Add-AadrmRoleBasedAdministrator -SecurityGroupDisplayName <group Name> -Role "ConnectorAdministrator"
-    >     ```
-    >     例如，键入：Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role "ConnectorAdministrator"
-    >
-    >     尽管这些命令会分配连接器管理员角色，但你也可以在此处使用 GlobalAdministrator 角色。
+  > [!NOTE]
+  > 通过使用 Azure RMS [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) cmdlet，向帐户分配 Azure Rights Management 全局管理员角色和 Azure Rights Management 连接器管理员角色。
+  > 
+  > 若要使用最小特权运行 RMS 连接器，请为此创建一个专用帐户，然后通过执行以下操作为帐户分配 Azure RMS 连接器管理员角色：
+  > 
+  > 1. 下载并安装适用于 Rights Management 的 Windows PowerShell（如果你尚未这样做）。 有关详细信息，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。
+  > 
+  >    使用“以管理员身份运行”命令启动 Windows PowerShell，并使用 [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice) 命令连接到 Azure RMS 服务：
+  > 
+  >    ```
+  >    Connect-AadrmService                   //provide Office 365 tenant administrator or Azure RMS global administrator credentials
+  >    ```
+  > 2. 然后运行 [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) 命令，仅使用以下参数之一：
+  > 
+  >    ```
+  >    Add-AadrmRoleBasedAdministrator -EmailAddress <email address> -Role "ConnectorAdministrator"
+  >    ```
+  > 
+  >    ```
+  >    Add-AadrmRoleBasedAdministrator -ObjectId <object id> -Role "ConnectorAdministrator"
+  >    ```
+  > 
+  >    ```
+  >    Add-AadrmRoleBasedAdministrator -SecurityGroupDisplayName <group Name> -Role "ConnectorAdministrator"
+  >    ```
+  >    例如，键入：Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role "ConnectorAdministrator"
+  > 
+  >    尽管这些命令会分配连接器管理员角色，但你也可以在此处使用 GlobalAdministrator 角色。
 
 在 RMS 连接器安装过程中，将会验证和安装所有必备软件。如果还没有 Internet Information Services (IIS)，则会安装该服务。另外还要安装和配置连接器软件。 此外，还会创建以下各项，做好配置 Azure RMS 的准备：
 

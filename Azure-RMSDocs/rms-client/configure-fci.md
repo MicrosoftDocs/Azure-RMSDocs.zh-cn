@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 19a295076ce86da0c93685250cd62b0ca1ca41e6
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 35f8ddcefb5cbc7ab07fd311edfa783fb5a83aa0
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305688"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394129"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2*
 
 通过本文获取相关说明和脚本以使用 Azure 信息保护客户端和 PowerShell 配置文件服务器资源管理器和文件分类基础结构 (FCI)。
 
@@ -35,21 +35,21 @@ ms.locfileid: "53305688"
 ## <a name="prerequisites-for-azure-rights-management-protection-with-windows-server-fci"></a>使用 Windows Server FCI 的 Azure Rights Management 保护的先决条件
 这些说明的先决条件：
 
--  在你将运行使用文件分类基础结构的文件资源管理器的每个文件服务器上：
+- 在你将运行使用文件分类基础结构的文件资源管理器的每个文件服务器上：
     
-    - 你已安装文件服务器资源管理器作为文件服务角色的角色服务之一。
+  - 你已安装文件服务器资源管理器作为文件服务角色的角色服务之一。
     
-    - 已标识包含要使用 Rights Management 保护的文件的本地文件夹。 例如，C:\FileShare。
+  - 已标识包含要使用 Rights Management 保护的文件的本地文件夹。 例如，C:\FileShare。
     
-    - 你已安装 AzureInfAormationProtection PowerShell 模块并已为此模块配置先决条件以连接到 Azure 权限管理服务。
+  - 你已安装 AzureInfAormationProtection PowerShell 模块并已为此模块配置先决条件以连接到 Azure 权限管理服务。
     
     Azure 信息保护客户端附带 AzureInformationProtection PowerShell 模块。 有关安装说明，请参阅 Azure 信息保护管理员指南中的[为用户安装 Azure 信息保护客户端](client-admin-guide-install.md)。 如有需要，可以使用 `PowerShellOnly=true` 参数仅安装 PowerShell 模块。
     
     如果你的租户在北美以外的地区，则[使用此 PowerShell 模块的先决条件](client-admin-guide-powershell.md#azure-information-protection-and-azure-rights-management-service)包括激活 Azure 权限管理服务、创建服务主体，以及编辑注册表。 在按照本文说明开始操作之前，请确保你具有 BposTenantId、AppPrincipalId 以及对称密钥的值，如先决条件中所述。 
     
-    - 如果要更改特定文件扩展名保护（本机或常规）的默认级别，需已编辑注册表，如管理员指南中的[更改文件的默认保护级别](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)部分所述。
+  - 如果要更改特定文件扩展名保护（本机或常规）的默认级别，需已编辑注册表，如管理员指南中的[更改文件的默认保护级别](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)部分所述。
     
-    - 具有 Internet 连接，并且已配置计算机设置（如果代理服务器要求）。 例如：`netsh winhttp import proxy source=ie`
+  - 具有 Internet 连接，并且已配置计算机设置（如果代理服务器要求）。 例如：`netsh winhttp import proxy source=ie`
     
 - 你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 服务保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此要求的详细信息，请参阅 [准备用户和组以便使用 Azure 信息保护](../prepare.md)。
     

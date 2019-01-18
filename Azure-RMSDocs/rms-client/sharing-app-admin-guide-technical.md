@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7104da9852458cbe9100600c3e14b43ee4aa7986
-ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
+ms.openlocfilehash: 8556bb8e2ba5df713b925cbb05628c73284b3df1
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53218470"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393873"
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 共享应用程序的技术概览和保护详细信息
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 7（含 SP1）、Windows 8、Windows 8.1
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 7（含 SP1）、Windows 8、Windows 8.1*
 
 
 Microsoft Rights Management 共享应用程序是一个可选且可下载的适用于 Microsoft Windows 和其他平台的应用程序，它提供以下功能：
@@ -43,11 +43,13 @@ Microsoft Rights Management 共享应用程序使用 [AD RMS 客户端 2.1 运�
 ## <a name="levels-of-protection--native-and-generic"></a>保护级别 – 本机和常规
 Microsoft Rights Management 共享应用程序支持两个不同级别的保护，如下表中所述。
 
-|保护类型|本机|泛型|
-|----------------------|----------|-----------|
-|描述|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他所有应用程序和文件类型，常规保护提供了一种保护级别，该保护级别既包括使用 .pfile 文件类型的文件封装，又包括用于验证用户是否有权打开该文件的身份验证。|
-|保护|对文件进行完全加密，并采用以下方式强制执行保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 IP 查看器（适用于受保护的文本和图像文件）还是关联的应用程序（适用于其他所有受支持的文件类型）呈现内容，都会完全执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的用户或被授予访问权限的用户成功通过身份验证之后，才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将出现授权用户打开和访问文件的审核日志记录，但是，不支持的应用程序不强制执行任何使用权限。|
-|文件类型默认值|这是以下文件类型的默认保护级别：<br /><br />- 文本和图像文件<br /><br />- Microsoft Office（Word、Excel、PowerPoint）文件<br /><br />- 可移植文档格式 (.pdf)<br /><br />有关详细信息，请参阅以下部分：[支持的文件类型和文件扩展名](#supported-file-types-and-file-name-extensions)。|这是针对不受完整保护支持的其他所有文件类型（例如 .vsdx、.rtf 等）的默认保护。|
+
+|   保护类型   |                                                                                                                                                                                                                                                                             本机                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                            泛型                                                                                                                                                                                                                                                                             |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      描述       |                                                                                                                                    对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。                                                                                                                                     |                                                                                                                                                              对于其他所有应用程序和文件类型，常规保护提供了一种保护级别，该保护级别既包括使用 .pfile 文件类型的文件封装，又包括用于验证用户是否有权打开该文件的身份验证。                                                                                                                                                              |
+|       保护       | 对文件进行完全加密，并采用以下方式强制执行保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 IP 查看器（适用于受保护的文本和图像文件）还是关联的应用程序（适用于其他所有受支持的文件类型）呈现内容，都会完全执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。 | 通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的用户或被授予访问权限的用户成功通过身份验证之后，才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将出现授权用户打开和访问文件的审核日志记录，但是，不支持的应用程序不强制执行任何使用权限。 |
+| 文件类型默认值 |                                                                                         这是以下文件类型的默认保护级别：<br /><br />- 文本和图像文件<br /><br />- Microsoft Office（Word、Excel、PowerPoint）文件<br /><br />- 可移植文档格式 (.pdf)<br /><br />有关详细信息，请参阅以下部分：[支持的文件类型和文件扩展名](#supported-file-types-and-file-name-extensions)。                                                                                         |                                                                                                                                                                                                              这是针对不受完整保护支持的其他所有文件类型（例如 .vsdx、.rtf 等）的默认保护。                                                                                                                                                                                                               |
+
 可以更改 RMS 共享应用程序所应用的默认保护级别。 可以将默认级别从本机更改为常规，从常规更改为本机，甚至可以禁止 RMS 共享应用程序应用保护。 有关详细信息，请参阅本文中的[更改文件的默认保护级别](#changing-the-default-protection-level-of-files)部分。
 
 ## <a name="supported-file-types-and-file-name-extensions"></a>支持的文件类型和文件扩展名
@@ -60,22 +62,23 @@ Microsoft Rights Management 共享应用程序支持两个不同级别的保护�
 > [!WARNING]
 > 如果你拥有可根据文件扩展名检查并采取操作的防火墙、Web 代理或者安全软件，你可能需要重新配置它们以支持这些新的文件扩展名。
 
-|原始文件扩展名|受 RMS 保护的文件扩展名|
-|--------------------------------|-------------------------------------|
-|.txt|。ptxt|
-|。xml|.pxml|
-|。jpg|.pjpg|
-|。jpeg|.pjeg|
-|。pdf|。ppdf|
-|。png|。ppng|
-|.tif|.ptif|
-|。tiff|.ptiff|
-|。bmp|。pbmp|
-|.gif|。pgif|
-|。jpe|。pjpe|
-|。jfif|。pjfif|
-|。jt|.pjt|
-¹ 由 Foxit 提供技术支持的 PDF Rendering。 Foxit Corporation 版权所有 © 2003–2014。
+| 原始文件扩展名 | 受 RMS 保护的文件扩展名 |
+|------------------------------|-----------------------------------|
+|             .txt             |               。ptxt               |
+|             。xml             |               .pxml               |
+|             。jpg             |               .pjpg               |
+|            。jpeg             |               .pjeg               |
+|             。pdf             |               。ppdf               |
+|             。png             |               。ppng               |
+|             .tif             |               .ptif               |
+|            。tiff             |              .ptiff               |
+|             。bmp             |               。pbmp               |
+|             .gif             |               。pgif               |
+|             。jpe             |               。pjpe               |
+|            。jfif             |              。pjfif               |
+|             。jt              |               .pjt                |
+
+¹ 由 Foxit 提供技术支持的 PDF Rendering。 Foxit Corporation 版权所有 © 2003–2014。
 
 下表列出了 Microsoft Rights Management 共享应用程序本身在 Microsoft Office 2016、Office 2013 和 Office 2010 中支持的文件类型。 对于这些文件，在文件受 Rights Management 服务保护后，文件扩展名仍保持不变。
 

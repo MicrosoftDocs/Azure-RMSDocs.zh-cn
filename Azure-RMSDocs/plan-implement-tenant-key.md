@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3efae21dfabdb347826b177d5c58a3498d3276c5
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 17de145dc063b7a79f07562b111a932aa5959065
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173955"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394392"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 使用此文章中的信息可帮助你规划和管理 Azure 信息保护租户密钥。 例如，为了遵守组织的具体规定，你不能让 Microsoft 管理你的租户密钥（默认设置），而想要自行管理租户密钥。 自行管理租户密钥也称为自带密钥 (BYOK)。
 
@@ -79,7 +79,7 @@ ms.locfileid: "53173955"
 3. 此密钥的副本受 Azure Key Vault 保护。
 
 > [!NOTE]
-
+> 
 > 作为一种附加保护措施，Azure 密钥保管库对位于北美、EMEA（欧洲、中东和非州）和亚洲等地区的数据中心使用独立安全域。 Azure Key Vault 还使用 Azure 的其他实例，如 Microsoft Azure 德国和 Azure 政府。 
 
 虽然这是可选的，但你可能希望使用 Azure 信息保护提供的接近实时的使用日志，以便准确了解租户密钥的使用时间和方式。
@@ -181,10 +181,10 @@ Key Vault 中存储的密钥具有密钥 ID。 此密钥 ID 是包含密钥保�
 
 > [!IMPORTANT]
 > 在此示例中，“aaaabbbbcccc111122223333”是要使用的密钥版本。 如果不指定版本，则将使用当前版本的密钥而不发出警告，并且显示命令以进行工作。 但是，如果后来对密钥保管库中的密钥进行了更新（已续订），则即使你再次运行 Use-AadrmKeyVaultKey 命令，Azure Rights Management 服务也将停止为你的租户工作。
->
->在运行此命令时，除了密钥名称外，请确保还指定了密钥版本。 可以使用 Azure 密钥保管库 cmd [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey) 来获取当前密钥的版本号。 例如：`Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
+> 
+> 在运行此命令时，除了密钥名称外，请确保还指定了密钥版本。 可以使用 Azure 密钥保管库 cmd [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault/get-azurekeyvaultkey) 来获取当前密钥的版本号。 例如：`Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
 
-如果需要确认已为 Azure 信息保护正确设置了密钥 URL：在 Azure Key Vault 中，运行 [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey) 以查看密钥 URL。
+如果需要确认已为 Azure 信息保护正确设置了密钥 URL：在 Azure Key Vault 中，运行 [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault/get-azurekeyvaultkey) 以查看密钥 URL。
 
 最后，如果 Azure Rights Management 服务已激活，请运行 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) 以告诉 Azure 信息保护将此密钥用作 Azure Rights Management 服务的活动租户密钥。 如果不执行此步骤，Azure 信息保护将继续使用为租户自动创建的默认 Microsoft 托管密钥。
 

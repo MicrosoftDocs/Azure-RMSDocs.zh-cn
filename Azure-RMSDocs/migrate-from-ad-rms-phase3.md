@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 13729d124ce0e49eddeda6c4c19aeae2c62eb8c6
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 5aa86c3806dd23787d2661b4a4ac2e6850d1e907
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53174244"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393892"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 3。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 7。
 
@@ -83,7 +83,7 @@ ms.locfileid: "53174244"
 
     f. 若要确认此配置按预期工作，请尝试从浏览器直接连接到 licensing.asmx 文件。 应看到以下错误消息，它将触发运行 Office 2016 的客户端查找 SRV 记录：
     
-    错误消息 401.3: 无权使用所提供的凭据查看此目录或页面(由于访问控制列表，访问被拒绝)
+    错误消息 401.3: 无权使用所提供的凭据查看此目录或页面(由于访问控制列表，访问被拒绝)**
 
 
 ## <a name="client-reconfiguration-by-using-registry-edits"></a>使用注册表编辑重新配置客户端
@@ -126,14 +126,14 @@ ms.locfileid: "53174244"
 
 1. 返回到迁移脚本 Migrate-Client.cmd 和 Migrate-User.cmd 中，这是之前在[准备阶段](migrate-from-ad-rms-phase1.md#step-2-prepare-for-client-migration)下载这些脚本时提取的。
 
-2.  按照 MigrateClient.cmd 中的说明修改脚本，以便它包含租户的 Azure Rights Management 服务 URL，以及 AD RMS 群集 Extranet 授权 URL 和 Intranet 授权 URL 的服务器名称。 然后，使上述脚本版本递增。 若要跟踪脚本版本，最好采用以下格式使用今天的日期：YYYYMMDD
+2. 按照 MigrateClient.cmd 中的说明修改脚本，以便它包含租户的 Azure Rights Management 服务 URL，以及 AD RMS 群集 Extranet 授权 URL 和 Intranet 授权 URL 的服务器名称。 然后，使上述脚本版本递增。 若要跟踪脚本版本，最好采用以下格式使用今天的日期：YYYYMMDD
     
-    > [!IMPORTANT]
-    > 仍然注意，不要在地址前后引入多余空格。
-    > 
-    > 此外，如果 AD RMS 服务器使用 SSL/TLS 服务器证书，请检查字符串中许可 URL 值是否包括端口号 **443**。 例如： https://rms.treyresearch.net:443/_wmcs/licensing。 单击群集名称并查看“**群集详细信息**”时，Active Directory Rights Management Services 中会显示此信息。 如果端口号 443 包含在此 URL 中，修改脚本时请将该值包括在内。 例如 https://rms.treyresearch.net:**443**。 
+   > [!IMPORTANT]
+   > 仍然注意，不要在地址前后引入多余空格。
+   > 
+   > 此外，如果 AD RMS 服务器使用 SSL/TLS 服务器证书，请检查字符串中许可 URL 值是否包括端口号 **443**。 例如： https://rms.treyresearch.net:443/_wmcs/licensing。 单击群集名称并查看“**群集详细信息**”时，Active Directory Rights Management Services 中会显示此信息。 如果端口号 443 包含在此 URL 中，修改脚本时请将该值包括在内。 例如 https://rms.treyresearch.net:<strong>443</strong>。 
     
-    如果需要针对 &lt;YourTenantURL&gt; 检索 Azure Rights Management 服务 URL ，请重新参考[确定 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
+   如果需要针对 &lt;YourTenantURL&gt; 检索 Azure Rights Management 服务 URL ，请重新参考[确定 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
 
 3. 使用此步骤开始处的说明，配置脚本部署方法，在由 AIPMigrated 组成员使用的 Windows 客户端计算机上运行 Migrate-Client.cmd 和 Migrate-User.cmd。 
 

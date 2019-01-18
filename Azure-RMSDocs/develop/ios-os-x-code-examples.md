@@ -12,12 +12,12 @@ ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: c71fe41da2eb29645c3c25d0044f969ebdca1c9a
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: aee986c462dd5bba1966017eada2f97f4fbbb1a8
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070211"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394169"
 ---
 # <a name="iosos-x-code-examples"></a>iOS/OS X 代码示例
 
@@ -37,7 +37,7 @@ ms.locfileid: "54070211"
 
 - **步骤 1**：创建 [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) 对象
 
- **说明**：通过 create 方法实例化 [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) 对象，该方法使用 [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) 实现服务身份验证，以便通过将 MSAuthenticationCallback 的实例作为参数 authenticationCallback 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码部分中对 [MSProtectedData protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx) 的调用。
+  **说明**：通过 create 方法实例化 [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) 对象，该方法使用 [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) 实现服务身份验证，以便通过将 MSAuthenticationCallback 的实例作为参数 authenticationCallback 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码部分中对 [MSProtectedData protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx) 的调用。
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -94,19 +94,19 @@ ms.locfileid: "54070211"
                           }];
        }
 
--   **步骤 3**：通过 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 对象的 [MSUserPolicy accessCheck](https://msdn.microsoft.com/library/dn790789.aspx) 方法，检查此用户对于该内容是否具有编辑权限。
+- **步骤 3**：通过 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 对象的 [MSUserPolicy accessCheck](https://msdn.microsoft.com/library/dn790789.aspx) 方法，检查此用户对于该内容是否具有编辑权限。
 
-        - (void)accessCheckWithProtectedData:(MSProtectedData *)protectedData
-        {
-            //check if user has edit rights and apply enforcements
-            if (!protectedData.userPolicy.accessCheck(EditableDocumentRights.Edit))
-            {
-                // enforce on the UI
-                textEditor.focusableInTouchMode = NO;
-                textEditor.focusable = NO;
-                textEditor.enabled = NO;
-            }
-        }
+      - (void)accessCheckWithProtectedData:(MSProtectedData *)protectedData
+      {
+          //check if user has edit rights and apply enforcements
+          if (!protectedData.userPolicy.accessCheck(EditableDocumentRights.Edit))
+          {
+              // enforce on the UI
+              textEditor.focusableInTouchMode = NO;
+              textEditor.focusable = NO;
+              textEditor.enabled = NO;
+          }
+      }
 
 ### <a name="scenario-create-a-new-protected-file-using-a-template"></a>方案：使用模板创建新的受保护文件
 

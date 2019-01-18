@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d9b79faa2444560ec209faa199072f2a745152cd
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 3f7c06a6415160b5c2245dc60e94bf7d9633ef7f
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305567"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393754"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 使用下面的一组指令将 Active Directory Rights Management Services (AD RMS) 部署迁移到 Azure 信息保护。 
 
@@ -49,23 +49,23 @@ ms.locfileid: "53305567"
 
 - **支持的 RMS 部署：**
     
-    - 以下版本的 AD RMS 支持到 Azure 信息保护的迁移：
+  - 以下版本的 AD RMS 支持到 Azure 信息保护的迁移：
     
-        - Windows Server 2008 R2 (x64)
+      - Windows Server 2008 R2 (x64)
         
-        - Windows Server 2012 (x64)
+      - Windows Server 2012 (x64)
         
-        - Windows Server 2012 R2 (x64)
+      - Windows Server 2012 R2 (x64)
         
-        - Windows Server 2016 (x64)
+      - Windows Server 2016 (x64)
         
-    - 支持所有有效的 AD RMS 拓扑：
+  - 支持所有有效的 AD RMS 拓扑：
     
-        - 单个林、单个 RMS 群集
+      - 单个林、单个 RMS 群集
         
-        - 单个林、多个仅授权 RMS 群集
+      - 单个林、多个仅授权 RMS 群集
         
-        - 多个林、多个 RMS 群集
+      - 多个林、多个 RMS 群集
         
     注意：默认情况下，多个 AD RMS 群集将迁移到单个 Azure 信息保护的租户。 如果想要迁移到单独的 Azure 信息保护租户，必须将它们视为不同的迁移。 不能将一个 RMS 群集的密钥导入到多个租户中。
 
@@ -80,15 +80,15 @@ ms.locfileid: "53305567"
 
 - **Azure 信息保护的准备工作：**
 
-    - 在本地目录和 Azure Active Directory 之间进行目录同步
+  - 在本地目录和 Azure Active Directory 之间进行目录同步
 
-    - 在 Azure Active Directory 中已启用邮件的组
+  - 在 Azure Active Directory 中已启用邮件的组
 
     请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
 
 - 如果你已使用过 Exchange Server 的信息权限管理 (IRM) 功能（例如，传输规则和 Outlook Web Access）或者带 AD RMS 的 SharePoint Server：
 
-    - 为这些服务器上未提供 IRM 的较短期间拟定计划
+  - 为这些服务器上未提供 IRM 的较短期间拟定计划
  
     在迁移后，你可以继续在这些服务器上使用 IRM。 但是，其中一个迁移步骤是暂时禁用 IRM 服务、安装并配置连接器、重新配置服务器，然后重新启用 IRM。
 

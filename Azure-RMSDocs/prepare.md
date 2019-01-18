@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e5717d83ece5f188476c0f7bca677088aa4373ae
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: e707e84ccfafc7b3ed161d05cadac9f2314ad3ae
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173870"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394281"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 在为组织部署 Azure 信息保护之前，请确保你的组织租户在 Azure AD 中具有用户和组帐户。
 
@@ -70,9 +70,9 @@ Azure 信息保护使用用户和组的方式有三种：
 - 若要授权用户，请使用 Azure AD 中的两个属性：**proxyAddresses** 和 **userPrincipalName**。
 
 - **Azure AD proxyAddresses** 属性存储帐户的所有电子邮件地址，并能以不同的方式填充。 例如，Office 365 中具有 Exchange Online 邮箱的用户自动具有存储在此属性中的电子邮件地址。 如果你为 Office 365 用户分配备用电子邮件地址，那么该地址也会保存在此属性中。 它也可以由从本地帐户同步的电子邮件地址填充。 
-    
+
     如果已将域添加到你的租户（“已验证的域”），Azure 信息保护可以使用此 Azure AD proxyAddresses 属性中的任何值。 有关验证域的详细信息，请参阅：
-    
+
     - 对于 Azure AD：[将自定义域名添加到 Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 
     - 对于 Office 365：[将域添加到 Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
@@ -94,7 +94,7 @@ Azure 信息保护使用用户和组的方式有三种：
 用于分配标签：
 
 - 若要配置将其他标签分配给组成员的作用域策略，可以使用 Azure AD 中的任何类型的组，但需要具有包含用户租户的已验证域的电子邮件地址。 具有电子邮件地址的组通常称为启用邮件的组。
-    
+
     例如，你可以使用启用邮件的安全组、通讯组（可以是静态或动态）和 Office 365 组。 不能使用安全组（动态或静态），因为该组类型没有电子邮件地址。
 
 对于分配使用权限和访问控制权限：
@@ -148,16 +148,17 @@ Azure 信息保护使用用户和组的方式有三种：
 
 例如：
 
-|显示名称|UserPrincipalName|ProxyAddresses
-|-------------------|-----------------|--------------------|
-|Jagannath Reddy |jagannathreddy@contoso.com|{}|
-|Ankur Roy|ankurroy@contoso.com|{SMTP:ankur.roy@contoso.com, smtp: ankur.roy@onmicrosoft.contoso.com}|
+
+|  显示名称   |     UserPrincipalName      |                            ProxyAddresses                             |
+|-----------------|----------------------------|-----------------------------------------------------------------------|
+| Jagannath Reddy | jagannathreddy@contoso.com |                                  {}                                   |
+|    Ankur Roy    |    ankurroy@contoso.com    | {SMTP:ankur.roy@contoso.com, smtp: ankur.roy@onmicrosoft.contoso.com} |
 
 在此示例中：
 
-- Jagannath Reddy 的用户帐户将通过 **jagannathreddy@contoso.com** 进行授权。
+- Jagannath Reddy 的用户帐户将通过 <strong>jagannathreddy@contoso.com</strong> 进行授权。
 
--  Ankur Roy 的用户帐户将使用 **ankur.roy@contoso.com** 和 **ankur.roy@onmicrosoft.contoso.com** 进行授权，而不是 **ankurroy@contoso.com**。
+- Ankur Roy 的用户帐户将使用 <strong>ankur.roy@contoso.com</strong> 和 <strong>ankur.roy@onmicrosoft.contoso.com</strong> 进行授权，而不是 <strong>ankurroy@contoso.com</strong>。
 
 在大多数情况下，UserPrincipalName 的值匹配 ProxyAddresses 字段中的一个值。 这是推荐配置，但如果你无法更改 UPN 以匹配电子邮件地址，则必须执行以下步骤：
 
@@ -165,7 +166,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
     如果 UPN 值中的域名不是租户的已验证域，则不能用于 Azure 信息保护。 但是，当组电子邮件地址使用已验证域名时，用户仍然可以被授权为组成员。
 
-2. 如果 UPN 不可路由（例如，**ankurroy@contoso.local**），请为用户配置备用登录 ID，并指导他们使用此备用登录方式登录 Office。 还必须为 Office 设置注册表项。
+2. 如果 UPN 不可路由（例如，<strong>ankurroy@contoso.local</strong>），请为用户配置备用登录 ID，并指导他们使用此备用登录方式登录 Office。 还必须为 Office 设置注册表项。
 
     有关详细信息，请参阅[配置备用登录 ID](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) 和 [Office 应用程序定期提示输入 SharePoint Online、OneDrive 和 Lync Online 的凭据](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)。
 

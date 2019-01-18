@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6afbf2e95f6e9d21d1bfa9c4c05df288accf716d
-ms.sourcegitcommit: f13c6db055c1fc69cf92e47609465270a42bbdac
+ms.openlocfilehash: 3085799d9cb8da168c68a1a2eea04528daeb7737
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54085069"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394050"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 
 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。 然后将此策略下载到已安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#azure-信息保护客户端) 的计算机。
 
@@ -57,11 +57,11 @@ Azure 信息保护支持不同级别的订阅：
 
 - 使用具有以下[管理员角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一的帐户：
     
-    - **信息保护管理员**
+  - **信息保护管理员**
 
-    - **安全管理员**
+  - **安全管理员**
 
-    - **全局管理员/公司管理员**
+  - **全局管理员/公司管理员**
     
     > [!NOTE] 
     > 如果租户已迁移到统一标记存储，你的帐户还必须有权访问 Office 365 安全与合规中心，才能在 Azure 门户中管理标签。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)

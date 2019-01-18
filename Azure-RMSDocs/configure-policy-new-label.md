@@ -8,16 +8,16 @@ ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 7302e0e0e76f6ca94eba678390e7d938172e40c4
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 3bc01282e579368105687fe53157ce2a05dbe4ff
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53304989"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393520"
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>如何创建 Azure 信息保护的标签
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 
 尽管 Azure 信息保护附带了可以自定义的默认标签，你还可以创建自己的标签。
 
@@ -37,13 +37,13 @@ ms.locfileid: "53304989"
     
     - 创建新子标签：针对要创建子标签的标签，右键单击或选择上下文菜单（“...”），然后单击“添加子标签”。
 
-4. 在“**标签**”或“**子标签**”边栏选项卡上，选择要应用于此新标签的选项，然后单击“**保存**”。
+3. 在“**标签**”或“**子标签**”边栏选项卡上，选择要应用于此新标签的选项，然后单击“**保存**”。
     
     指定显示名称时，禁止指定一些字符（如反斜杠和 & 号），因为并非所有使用 Azure 信息保护的服务和应用程序都支持这些字符。 除了禁止指定的字符外，还请不要指定 # 字符。    
     
-    请注意，新标签将自动分配为黑色。 从颜色列表中选择一种可区分的颜色，或者输入颜色的红色、绿色和蓝色 (RGB) 组成的十六进制三元色代码。 例如，#DAA520。 如果需要有关这些代码的参考，可首先查看 MSDN 文档中实用的[按名称排列颜色](https://msdn.microsoft.com/library/aa358802\(v=vs.85).aspx)。这些代码应用于许多图片编辑程序（例如Microsoft 画图，用户可在此程序中通过调色板选择自定义颜色，它会自动显示 RGB 值）。
+    请注意，新标签将自动分配为黑色。 从颜色列表中选择一种可区分的颜色，或者输入颜色的红色、绿色和蓝色 (RGB) 组成的十六进制三元色代码。 例如，#DAA520。 如果需要有关这些代码的参考，可首先查看 MSDN 文档中实用的[按名称排列颜色](https://msdn.microsoft.com/library/aa358802(v=vs.85).aspx)。可在多种图片编辑程序（例如 Microsoft 画图，用户可在此程序中通过调色板选择自定义颜色，它会自动显示 RGB 值）中找到这些代码。
 
-5. 将新的标签提供给用户：从“分类” > “策略”菜单选项中，选择要包含新标签的策略。 选择“添加或删除标签”。 从“策略:添加或删除标签”边栏选项卡中选择标签，然后依次选择“确定”和“保存”。
+4. 将新的标签提供给用户：从“分类” > “策略”菜单选项中，选择要包含新标签的策略。 选择“添加或删除标签”。 从“策略:添加或删除标签”边栏选项卡中选择标签，然后依次选择“确定”和“保存”。
     
     >[!TIP]
     >对于新标签，请考虑首先将它们添加到用于测试的作用域内策略。 如果对结果满意，则从该测试范围删除标签，然后将标签添加到在生产中使用的策略。     
@@ -52,7 +52,7 @@ ms.locfileid: "53304989"
     
     更改将会自动提供给用户和服务。 不再提供单独发布选项。
 
-6. 如果希望此新标签名称和描述以不同的语言为用户显示：请按照[如何为不同的语言配置标签](configure-policy-languages.md)中的过程进行操作。 
+5. 如果希望此新标签名称和描述以不同的语言为用户显示：请按照[如何为不同的语言配置标签](configure-policy-languages.md)中的过程进行操作。 
 
 ## <a name="next-steps"></a>后续步骤
 

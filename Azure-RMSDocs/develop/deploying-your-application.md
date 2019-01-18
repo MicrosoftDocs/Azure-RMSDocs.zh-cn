@@ -12,12 +12,12 @@ ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: daad2483fb850d06bbd62ff6b9a721160341d8b7
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: bc1e1e3dc66b3dee00dbfac7db11a1aaaeeab4e3
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070309"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394309"
 ---
 # <a name="deploy-into-production"></a>部署到生产
 
@@ -27,7 +27,7 @@ ms.locfileid: "54070309"
 必须先申请并与 Microsoft 签订正式的协议，才能发布使用 AIP/RMS 开发的应用程序。
 
 ### <a name="begin-the-process"></a>开始此过程
-向 **IPIA@microsoft.com** 发送一封包含以下信息的电子邮件以获取 IPIA：
+向 <strong>IPIA@microsoft.com</strong> 发送一封包含以下信息的电子邮件以获取 IPIA：
 
 **主题：** 为公司名称请求 IPIA
 
@@ -38,7 +38,7 @@ ms.locfileid: "54070309"
 
 ### <a name="next-steps"></a>后续步骤
 收到 IPIA 请求后，我们会将一份表格（Word 文档格式）发送给你。
-请查看 IPIA 的条款和条件，然后将包含以下信息的表格通过电子邮件发送到 **IPIA@microsoft.com**：
+请查看 IPIA 的条款和条件，然后将包含以下信息的表格通过电子邮件发送到 <strong>IPIA@microsoft.com</strong>：
 - 公司依法登记的名称
 - 公司注册地的州/省（美国/加拿大）或国家/地区
 - 公司 URL
@@ -54,7 +54,7 @@ ms.locfileid: "54070309"
 收到你的表格后，我们会将用于数字签名的最终 IPIA 链接发送给你。 你在协议上签名后，协议将由相应的 Microsoft 客户代表签名，协议就此完成。
 
 ### <a name="already-have-a-signed-ipia"></a>已有已签名的 IPIA？
-如果已有已签名的 IPIA 并希望为要发布的应用程序添加新的应用程序 ID，请发送电子邮件至 **IPIA@microsoft.com**，向我们提供以下信息：
+如果已有已签名的 IPIA 并希望为要发布的应用程序添加新的应用程序 ID，请发送电子邮件至 <strong>IPIA@microsoft.com</strong>，向我们提供以下信息：
 - 公司应用程序名称
 - 应用程序的简要描述
 - Azure 租户 ID（即使与以前提供的信息相同，也需要再次提供）

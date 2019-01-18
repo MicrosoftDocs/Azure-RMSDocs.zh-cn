@@ -12,12 +12,12 @@ ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 7415e1408c5e3c3c782506a9ce25b4b8d90403f2
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: f1d8030fd4453ff5ec0720f30d22278297e580c8
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071839"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394155"
 ---
 # <a name="how-to-use-document-tracking"></a>如何：使用文档跟踪
 
@@ -31,9 +31,9 @@ ms.locfileid: "54071839"
 
 用于为给定的一段内容设置文档跟踪的步骤序列是：
 
--   创建“许可证元数据”对象，然后设置“内容名称”和“通知类型”。 这些是唯一的必需属性。
-   - Android - [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx)
-   -  iOS - [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx)
+- 创建“许可证元数据”对象，然后设置“内容名称”和“通知类型”。 这些是唯一的必需属性。
+  - Android - [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx)
+  -  iOS - [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx)
 
 选择照策略类型；模板或临时：
 - 对于基于模板的文档跟踪，创建 **用户策略** 对象（将许可证元数据作为参数进行传递）。
@@ -46,8 +46,8 @@ ms.locfileid: "54071839"
 
     请注意  只能在针对给定用户策略设置文档跟踪的过程中直接访问许可证元数据对象。 创建用户策略对象之后，无法访问关联许可证元数据，即更改许可证元数据的值会不起作用。
 
-     
+     
 
--   最后，调用文档跟踪的平台注册方法
+- 最后，调用文档跟踪的平台注册方法
   - Android - [UserPolicy.registerForDocTracking asynchronous](https://msdn.microsoft.com/library/mt573699.aspx) 或 [UserPolicy.registerForDocTracking synchronous](https://msdn.microsoft.com/library/mt631387.aspx)
   - iOS - [MSUserPolicy.registerForDocTracking](https://msdn.microsoft.com/library/mt573694.aspx)

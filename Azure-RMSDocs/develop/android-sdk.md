@@ -12,12 +12,12 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 7e95243793251be2180b129893220c25142bcc98
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: c0edbda67c7c6faadd0c5d6bddb2695d88dc8420
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071211"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393417"
 ---
 # <a name="android-setup"></a>Android 安装程序
 
@@ -39,7 +39,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 -   从 Java 1.6 开始的 Java。
 -   [Android 开发人员工具 (ADT) 插件](https://developer.android.com/studio/install)。 注意 - 可能会请你重新启动 Eclipse 以完成安装。
 
-     
+     
 
 -   适用于 Android 的 MS RMS SDK 4.2 包。 有关详细信息，请参阅[入门](get-started.md)。
 
@@ -51,7 +51,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
     **注意**  如果应用程序未使用 ADAL 库作为 OAuth 2.0 身份验证库，则你应该查看本 Android 指南 - [一些 SecureRandom 想法](https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html)。
 
-     
+     
 
 有关 API 更新、发行说明和常见问题解答 (FAQ) 的信息，请阅读[新增功能](release-notes.md)主题。
 
@@ -63,7 +63,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 **请注意**  MS RMS SDK 4.2 预览版本：在此预览版本中，屏幕截图尚未更新为可显示路径名称从 com/microsoft/protection 到 com/microsoft/rightsmanagment 的更改。 不过文本已进行了更新。
 
- 
+ 
 -   打开 Eclipse 开发环境。
 -   若要创建新 Android 应用程序项目，请在 **“文件”** 菜单上，单击 **“新建”**，单击 **“项目”**，然后选择 **“Android 应用程序项目”**。
 
@@ -94,45 +94,45 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 **引用 SDK**
 
--   导航到在其中提取 *adrms\_android\_sdk.zip* 的文件夹。 在“SDK > com > microsoft > rightsmanagement”文件夹中，确保文件 *.classpath*、*.project* 和 *project.properties* 未标记为只读。
--   若要引用 SDK，必须将它导入工作区中。
+- 导航到在其中提取 *adrms\_android\_sdk.zip* 的文件夹。 在“SDK > com > microsoft > rightsmanagement”文件夹中，确保文件 *.classpath*、*.project* 和 *project.properties* 未标记为只读。
+- 若要引用 SDK，必须将它导入工作区中。
 
-    在 Eclipse 中，单击 **“文件”**。 在 **“文件”** 菜单上，单击 **“导入”**。 在 **“导入”** 对话框中，选择 **“Android/现有 Android 代码到工作区”**。
+  在 Eclipse 中，单击 **“文件”**。 在 **“文件”** 菜单上，单击 **“导入”**。 在 **“导入”** 对话框中，选择 **“Android/现有 Android 代码到工作区”**。
 
-    ![将其导入到工作区](../media/Android-setup-07.png)
+  ![将其导入到工作区](../media/Android-setup-07.png)
 
--   单击“下一步” 。 导航以选择在其中提取 *adrms\_android\_sdk.zip* 的文件夹。 SDK 应作为 **com.microsoft.rightsmanagement** 显示在列表中。
+- 单击“下一步” 。 导航以选择在其中提取 *adrms\_android\_sdk.zip* 的文件夹。 SDK 应作为 **com.microsoft.rightsmanagement** 显示在列表中。
 
-    ![导航到“选择文件夹”](../media/Android-setup-08c.jpg)
+  ![导航到“选择文件夹”](../media/Android-setup-08c.jpg)
 
--   单击 **“完成”** 时，SDK 项目显示为以前创建的应用程序的同级。
+- 单击 **“完成”** 时，SDK 项目显示为以前创建的应用程序的同级。
 
-    ![该 SDK 项目将显示为应用程序的同级](../media/Android-setup-09.jpg)
+  ![该 SDK 项目将显示为应用程序的同级](../media/Android-setup-09.jpg)
 
--   右键单击 **“项目”** 图标并查看项目的属性。
--   导航到 **“Android”** 选项卡。
--   单击 **“添加”**，然后从工作区中选择 *com.microsoft.rightsmanagement* 库。
+- 右键单击 **“项目”** 图标并查看项目的属性。
+- 导航到 **“Android”** 选项卡。
+- 单击 **“添加”**，然后从工作区中选择 *com.microsoft.rightsmanagement* 库。
 
-    ![添加库](../media/Android-setup-10b.jpg)
+  ![添加库](../media/Android-setup-10b.jpg)
 
--   单击" **确定**"。
+- 单击" **确定**"。
 
-    因为 MS RMS SDK 4.2 与 AAD RM 相连接，所以必须向应用程序授予 INTERNET 和 ACCESS\_NETWORK\_STATE 权限。 为此，请在项目的根目录中打开 *AndroidManifest.xml* 文件。
+  因为 MS RMS SDK 4.2 与 AAD RM 相连接，所以必须向应用程序授予 **INTERNET** 和 **ACCESS\_NETWORK\_STATE** 权限。 为此，请在项目的根目录中打开 *AndroidManifest.xml* 文件。
 
-    若要添加权限，请单击 **“添加”**，然后选择 **“使用权限”**。
+  若要添加权限，请单击 **“添加”**，然后选择 **“使用权限”**。
 
-    ![添加权限](../media/Android-setup-11d.jpg)
+  ![添加权限](../media/Android-setup-11d.jpg)
 
--   可以通过在文本编辑器视图中查看清单来验证清单步骤。 确保显示以下行：
+- 可以通过在文本编辑器视图中查看清单来验证清单步骤。 确保显示以下行：
 
-   ```
-    <uses-sdk
-         android:minSdkVersion="15"
-         android:targetSdkVersion="19"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission/>
-   ```
+  ```
+  <uses-sdk
+       android:minSdkVersion="15"
+       android:targetSdkVersion="19"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission/>
+  ```
 
 **注意**  SDK 使用 android.support.v4
 

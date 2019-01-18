@@ -12,12 +12,12 @@ ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 323816b04f59d8a18015157052f097531b34cf03
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: ce8c5866d721c64f5bf36bd0ee905b74deb01474
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071771"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393684"
 ---
 # <a name="testing-your-application"></a>测试应用程序
 
@@ -32,10 +32,10 @@ ms.locfileid: "54071771"
 - 安装开发人员运行时：
 
    必须在要用于测试应用程序的计算机上安装具有 Rights Management Service 客户端 2.1。
-   - 如果要在开发计算机之外的计算机上测试应用程序，则可以通过 [AD RMS 客户端下载页面](https://www.microsoft.com/download/details.aspx?id=38396)在该计算机上安装 RMS 客户端 2.1。
-   - 你的开发计算机应该提前安装了 Rights Management Services SDK 2.1。
+  - 如果要在开发计算机之外的计算机上测试应用程序，则可以通过 [AD RMS 客户端下载页面](https://www.microsoft.com/download/details.aspx?id=38396)在该计算机上安装 RMS 客户端 2.1。
+  - 你的开发计算机应该提前安装了 Rights Management Services SDK 2.1。
 
-   要获取 RMS SDK 2.1 安装帮助，请参阅[安装 SDK](install-the-rms-sdk.md)。
+    要获取 RMS SDK 2.1 安装帮助，请参阅[安装 SDK](install-the-rms-sdk.md)。
 
 ## <a name="remarks"></a>备注
 
