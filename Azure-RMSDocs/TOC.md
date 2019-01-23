@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: f761dc1b000145ccaaf68f8734c1f847e877917d
-ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314775"
----
 # [概述](/azure/information-protection/what-is-information-protection)
 ## [什么是 Azure 信息保护？](what-is-information-protection.md)
 ## [比较 Azure 信息保护与 AD RMS](compare-on-premise.md)
