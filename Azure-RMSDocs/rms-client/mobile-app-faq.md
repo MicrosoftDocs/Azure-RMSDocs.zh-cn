@@ -11,12 +11,12 @@ ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cd07ed5d1c4bf2f4192f400c699e6e6dc3447713
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 29c7d333131c0b85b9cdb83e9a2212420f60077f
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023747"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393648"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 
@@ -26,7 +26,9 @@ ms.locfileid: "53023747"
 
 ## <a name="what-can-i-do-with-the-azure-information-protection-app"></a>可以使用 Azure 信息保护应用做些什么？
 
-如果电子邮件应用本机不支持权限管理数据保护，通过此应用可以查看权限保护的电子邮件消息 (.rpmsg files)。 通过此应用还可以查看权限保护的 PDF 文件、图片和文本文件。 目前，无法使用此应用创建新的受保护电子邮件、对其进行答复、创建或编辑受保护文件。
+如果电子邮件应用本机不支持权限管理数据保护，通过此应用可以查看权限保护的电子邮件消息 (.rpmsg files)。 通过此应用还可以查看权限保护的 PDF 文档、图片和文本文件。 
+
+由于此应用是一个查看器，无法使用它来创建新的受保护电子邮件、对其进行答复、创建或编辑受保护文件。 此外，应用无法打开所查看文件的附件。 例如，受保护的 PDF 文档或受权限保护的电子邮件中的附件。
 
 ## <a name="can-i-open-pdf-files-that-are-in-sharepoint-protected-libraries-and-onedrive-for-business"></a>可以打开位于受保护的 SharePoint 库和 OneDrive for Business 中的 PDF 文件吗？
 
@@ -48,7 +50,7 @@ Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
 
 安装该应用后，你无需在该点再执行任何其他操作。 请等待，直到收到受保护的电子邮件或想要查看的文件，然后选择“AIP 查看器”以将其打开。 然后系统会提示使用工作或学校帐户登录，或提示选择一个证书。 对这些凭据进行身份验证后，便可以读取内容。
 
-但是，如果你不想等待，则可以使用以下说明向自己发送受保护的电子邮件或要查看的文件：[适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门](mobile-app-get-started.md) 
+但是，如果不想等待，可以使用以下说明向自己发送受保护的电子邮件或文件来查看：[适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门](mobile-app-get-started.md) 
 
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>登录此应用应使用什么凭据？
 

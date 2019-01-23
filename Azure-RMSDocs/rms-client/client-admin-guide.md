@@ -4,18 +4,18 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 01/18/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e66ad53b23a76a263d4ec74e184597db12fdaa9d
-ms.sourcegitcommit: 8deca8163a6adea73f28aaf300a958154f842e4a
+ms.openlocfilehash: 1ece9ab39045d1bb6f1388a33784a733618dd0d4
+ms.sourcegitcommit: 24c464bcb80db2d193cfd17ea8c264a327dcf54a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210492"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54366213"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -198,11 +198,69 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>升级 Azure 信息保护扫描程序
 
+如何升级扫描程序取决于是要升级到当前正式发布版本还是升级到当前预览版本。
+
+#### <a name="to-upgrade-the-scanner-to-the-current-ga-version"></a>将扫描程序升级到当前正式发布版本
+
 若要升级 Azure 信息保护扫描程序，请安装最新版 Azure 信息保护客户端。 然后执行以下一次性操作。 执行此操作后，无需重新扫描已扫描的文件。
 
 - 升级 Azure 信息保护客户端后，运行 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)。 扫描程序和存储库的配置设置将会得到保留。 需要运行此 cmdlet 以更新扫描程序的数据库架构，如果需要，还应为扫描程序服务帐户授予针对扫描程序数据库的删除权限。 
     
     在运行此更新 cmdlet 之前，扫描程序不会运行，通常会在 Windows 事件日志中看到事件 ID 1000，并显示以下错误消息：无效的对象名称 "ScannerStatus"。
+
+#### <a name="to-upgrade-the-scanner-to-the-current-preview-version"></a>将扫描程序升级到当前预览版本
+
+> [!IMPORTANT]
+> 为了顺利升级，请勿将在运行扫描程序的计算机上安装 Azure 信息保护客户端预览版本作为升级扫描程序的第一步。 请改用以下升级说明。
+
+对于扫描程序的当前预览版本，其升级过程不同于以前的版本。 升级扫描程序会自动更改扫描程序以从 Azure 门户获取其配置设置。 此外，还会更新扫描程序配置数据库的架构，并且还会从 AzInfoProtection 重命名此数据库：
+
+- 如果未指定自己的配置文件名称，则会将配置数据库重命名为 AIPScanner_\<computer_name>。 
+
+- 如果指定自己的配置文件名称，则会将配置数据库重命名为 AIPScanner_\<profile_name>。
+
+虽然可以按不同的顺序升级扫描程序，但建议执行以下步骤：
+
+1. 使用 Azure 门户创建新的扫描程序配置文件，其中包含扫描程序和数据存储库的设置及其所需的任何设置。 有关此步骤的帮助，请参阅预览扫描程序部署说明中的[在 Azure 门户中配置扫描程序](../deploy-aip-scanner-preview.md#configure-the-scanner-in-the-azure-portal)部分。
+    
+    如果运行扫描程序的计算机断开与 Internet 的连接，则仍需执行此步骤。 然后，在 Azure 门户中，使用“导出”选项将扫描程序配置文件导出到文件中。
+
+2. 在扫描程序计算机上，停止扫描程序服务“Azure 信息保护扫描程序”。
+
+3. 通过从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)安装当前预览版本来升级 Azure 信息保护客户端。
+
+4. 在 PowerShell 会话中，使用你在步骤 1 中指定的相同配置文件名称运行 Update-AIPScanner 命令。 例如：`Update-AIPScanner –Profile USWest`
+
+5. 仅当扫描程序在断开连接的计算机上运行时：现在运行 [Import-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration)，并指定包含导出设置的文件。
+
+6. 重启 Azure 信息保护扫描程序服务“Azure 信息保护扫描程序”。
+
+##### <a name="upgrading-in-a-different-order-to-the-recommended-steps"></a>按照建议步骤的不同顺序进行升级
+
+如果在运行 Update-AIPScanner 命令之前未在 Azure 门户中配置扫描程序，则将没有要指定用于标识升级过程的扫描程序配置设置的配置文件名称。 
+
+在这种情况下，当在 Azure 门户中配置扫描程序时，必须指定与运行 Update-AIPScanner 命令时使用的完全相同的配置文件名称。 如果名称不匹配，则不会为设置配置扫描程序。 
+
+> [!TIP]
+> 若要识别具有此错误配置的扫描程序，请使用 Azure 门户中的“Azure 信息保护 - 节点”边栏选项卡。
+>  
+> 对于具有 Internet 连接的扫描程序，它们显示其带有 Azure 信息保护客户端的预览版本号的计算机名称，但不显示配置文件名称。 只有版本号为 1.41.51.0 的扫描程序才不在此边栏选项卡上显示配置文件名称。 
+
+如果在运行 Update-AIPScanner 命令时未指定配置文件名称，则计算机名称将用于自动为扫描程序创建配置文件名称。
+
+#### <a name="moving-the-scanner-configuration-database-to-a-different-sql-server-instance"></a>将扫描程序配置数据库移动到其他 SQL Server 实例
+
+在当前预览版本中，如果在运行升级命令后尝试将扫描程序配置数据库移动到新的 SQL Server 实例，则会出现一个已知问题。
+
+如果知道要在预览版本上移动扫描程序配置数据库，请执行以下操作：
+
+1. 使用 [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner) 卸载扫描程序。
+
+2. 如果尚未升级到 Azure 信息保护客户端的预览版本，请立即升级客户端。
+
+3. 使用 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) 安装扫描程序，指定新的 SQL Server 实例和配置文件名称。
+
+4. 可选：如果不希望扫描程序重新扫描所有文件，请导出 ScannerFiles 表并将其导入到新数据库中。
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>卸载 Azure 信息保护客户端
 

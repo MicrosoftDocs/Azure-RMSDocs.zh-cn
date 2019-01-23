@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: f995f0236728850884a2e58d727e0f2f12b3717e
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 7b7bf658fe0766091ddd33aab076c9a721fcc236
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070836"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393794"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 
@@ -77,7 +77,7 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 
 - [如何启用文档跟踪和撤销（服务）](tracking-content.md)
 - [如何部署客户端](../rms-client/client-deployment-notes.md)
-- [如何将服务应用程序部署到不同的租户] (how-to-deploy-app.md)
+- [如何将服务应用部署到不同的租户](how-to-deploy-app.md)
 - [如何安装和配置 RMS 服务器（服务）](how-to-install-and-configure-an-rms-server.md)
 - [如何使用文档跟踪（用户）](how-to-use-document-tracking.md)
 - [如何在 Azure 信息保护中续订对称密钥](how-to-renew-symmetric-key.md)

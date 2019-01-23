@@ -4,18 +4,18 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/04/2019
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b16dee0a922ce6f3195d192021edbf4966223e30
-ms.sourcegitcommit: 17d2528e801ebf37f3d6f54db920588ef212d34d
+ms.openlocfilehash: 9386889c41706e0603c5e758be09b0d2baafc7e8
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53996938"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394366"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -175,6 +175,7 @@ ms.locfileid: "53996938"
     
 2. 将已标识的文件重命名为 Policy.msip，再将它复制到已安装 Azure 信息保护客户端的计算机上的 %LocalAppData%\Microsoft\MSIP 文件夹。 
 
+如果断开连接的计算机正在运行 Azure 信息保护扫描程序的预览版本，则必须执行其他配置步骤。 有关详细信息，请参阅扫描程序部署说明中的[限制：扫描程序服务器不能连接到 Internet](../deploy-aip-scanner-preview.md#restriction-the-scanner-server-cannot-have-internet-connectivity)。
 
 ## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>在 Outlook 中隐藏或显示“不转发”按钮
 
@@ -351,11 +352,11 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 2. 从输出中记录以下参数值：
     
-    - SubLabelId 的值（(GUID)，如果有）。 如果此值为空，表明未使用子标签，则改为记录 MainLabelId 的值。
+   - SubLabelId 的值（(GUID)，如果有）。 如果此值为空，表明未使用子标签，则改为记录 MainLabelId 的值。
     
-    注意：如果也不存在 MainLabelId 的值，则未标记此文件。 在此情况下，可以使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) 命令和 [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile) 命令来代替步骤 3 和步骤 4 中的命令。
+     注意：如果也不存在 MainLabelId 的值，则未标记此文件。 在此情况下，可以使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) 命令和 [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile) 命令来代替步骤 3 和步骤 4 中的命令。
     
-    - RMSTemplateId 的值。 如果此值为“受限访问”，则用户已使用自定义权限保护该文件，而非为此标签配置的保护设置。 若继续，该标签的保护设置将覆盖这些自定义权限。 决定是继续，还是要求用户（RMSIssuer 的显示值）删除此标签并将此标签和初始自定义权限一起重新应用。
+   - RMSTemplateId 的值。 如果此值为“受限访问”，则用户已使用自定义权限保护该文件，而非为此标签配置的保护设置。 若继续，该标签的保护设置将覆盖这些自定义权限。 决定是继续，还是要求用户（RMSIssuer 的显示值）删除此标签并将此标签和初始自定义权限一起重新应用。
 
 3. 使用 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 和 *RemoveLabel* 参数删除此标签。 如果使用的是包含“用户必须提供理由以设置较低分类标签、删除标签或删除保护”的[策略设置](../configure-policy-settings.md)，还必须使用原因指定“理由”参数。 例如： 
     

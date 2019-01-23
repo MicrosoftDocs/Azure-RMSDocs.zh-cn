@@ -4,17 +4,17 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/27/2018
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 94120417c5e2e61f1d28fc16d714ec1c91a4ed0f
-ms.sourcegitcommit: 630f03a91f84d79219e04b4085bdfb5bc6478e88
+ms.openlocfilehash: d120c9dea8ac49c48d7b47d4ee0a0b317ab8c5d6
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54011967"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314945"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -41,10 +41,77 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
-## <a name="version-141510"></a>版本 1.41.51.0
+## <a name="versions-later-than-141510"></a>高于 1.41.51.0 的版本
+
+如果客户端之一的版本高于 1.41.51.0，则这是用于测试和评估的预览内部版本。  
 
 > [!TIP]
 > 由于你的标记是从 Office 365 安全与合规中心发布的，因此是否对评估 Azure 信息保护统一标记客户端感兴趣？ 请参阅 [Azure 信息保护统一标签客户端：版本发布信息](unifiedlabelingclient-version-release-history.md)。
+
+**发布日期**：2019 年 1 月 15 日
+
+此版本包括 RMS 客户端的 MSIPC 1.0.3592.627 版本。
+
+**新功能：**
+
+- Azure 信息保护扫描程序现在从 Azure 门户（而不是使用 PowerShell）进行配置：
+    
+    - 如果要从扫描程序的正式发布版本升级，则升级过程与以前的版本不同，因此请务必阅读[升级 Azure 信息保护扫描程序](client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。
+    
+    - 如果是首次安装扫描程序，而不是升级，请参阅[部署 Azure 信息保护扫描程序的预览版本以自动分类和保护文件](../deploy-aip-scanner-preview.md)。
+
+- 如果使用 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 标记和保护文件，则可以使用 *EnableTracking* 参数将文件注册到文档跟踪站点。 [详细信息](client-admin-guide-document-tracking.md#using-powershell-to-register-labeled-documents-with-the-document-tracking-site)
+
+- 指定配置文件名称时，Azure 信息保护扫描程序现在支持同一 SQL Server 实例上的多个配置数据库。
+
+- 支持以下有助于识别文档和电子邮件中的凭据的敏感信息类型：
+    - Azure 服务总线连接字符串
+    - Azure IoT 连接字符串
+    - Azure 存储帐户
+    - Azure IAAS 数据库连接字符串和 Azure SQL 连接字符串
+    - Azure Redis 缓存连接字符串
+    - Azure SAS
+    - SQL Server 连接字符串
+    - Azure DocumentDB 身份验证密钥
+    - Azure 发布设置密码
+    - Azure 存储帐户密钥（通用）
+
+**修补程序**：
+
+- 用户将新部分添加到 Word 文档，然后重新标记文档时，将一致地应用新的视觉标记。
+
+- Azure 信息保护客户端正确地删除对受 Rights Management 共享应用程序保护的 PDF 文档的保护。
+
+- 当发送操作系统区域设置为英语时，路径和文件名不会在 Azure 信息保护分析中显示问号 (**?**) 而不是非 ASCII 字符。
+
+- 为用户定义的权限配置父标签时，PowerShell 和扫描程序会正确应用子标签。
+
+- Azure 信息保护客户端正确显示已由[支持统一标签的客户端](../configure-policy-migrate-labels.md#clients-that-support-unified-labeling)应用的标签。
+
+- 在文件资源管理器删除保护并右键单击 PowerShell 和扫描程序后，文档在 Office 中正确打开，而没有恢复消息。
+
+**其他变化：**
+
+- 为推荐或自动分类配置的标签不再支持以下敏感信息类型：
+    - 欧盟电话号码
+    - 欧盟 GPS 坐标
+
+- 由于 Azure 信息保护扫描程序从 Azure 门户配置，因此以下 cmdlet 现已弃用，且不能用于配置数据存储库或文件类型列表：
+    - Add-AIPScannerRepository
+    - Add-AIPScannerScannedFileTypes
+    - Get-AIPScannerRepository
+    - Remove-AIPScannerRepository
+    - Remove-AIPScannerScannedFileTypes
+    - Set-AIPScannerRepository
+    - Set-AIPScannerScannedFileTypes
+
+- [Import-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration) 是一个新的 PowerShell cmdlet，用于 Azure 信息保护扫描程序无法从 Azure 门户下载其配置的情况。
+
+- 默认情况下，Azure 信息保护扫描程序不再排除 .zip 文件。 若要检查和标记 .zip 文件，请参阅管理员指南的[检查 .zip 文件](client-admin-guide-file-types.md#to-inspect-zip-files)部分。
+
+- [策略设置](../configure-policy-settings.md)“用户必须提供设置较低分类标签、删除标签或删除保护的理由”不再适用于扫描程序。 在扫描程序配置文件中将设置“重新标记文件”配置为“启用”时，扫描程序会执行这些操作。
+
+## <a name="version-141510"></a>版本 1.41.51.0
 
 **发布日期**：2018 年 11 月 27 日
 

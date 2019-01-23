@@ -4,18 +4,18 @@ description: 了解已标记进行分类和保护的 PDF 文档，并了解其�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/16/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
 ms.reviewer: kartikka
 ms.suite: ems
-ms.openlocfilehash: fc1a6c136d0b44671cbae0e6eb15202364e356d4
-ms.sourcegitcommit: b2414cc00d50ccefe10f8c3719eb3f6c1e78fc65
+ms.openlocfilehash: c6d02b5b7f82acc8b540fca57c2a7e8ab56f76fb
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53246116"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314809"
 ---
 # <a name="supported-pdf-readers-for-microsoft-information-protection"></a>适用于 Microsoft 信息保护的受支持的 PDF 阅读器
 
@@ -54,6 +54,6 @@ Microsoft 和 Adobe 之间的协作使得你在处理经过分类和受保护（
 
 |操作系统|受支持的阅读器|
 |----------------|-----------------------------------|
-|Windows 10 及以前版本<br />通过 Windows 7 Service Pack 1|Azure 信息保护查看器<br /><br />Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 共享应用程序|
+|Windows 10 及以前版本<br />通过 Windows 7 Service Pack 1|Azure 信息保护查看器<br /><br />Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br /> Nuance Power PDF<br /><br />RMS 共享应用程序|
 |Android|Azure 信息保护应用<br /><br />具有 RMS 的 Foxit MobilePDF<br /><br />适用于 Android 的 GigaTrust 应用|
 |iOS|Azure 信息保护应用<br /><br />具有 RMS 的 Foxit MobilePDF<br /><br />TITUS 文档|

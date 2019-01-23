@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 606ca10f04ad9fa21d90fdf4bfcbc368db6febb1
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 9feca10b2e3fb259dbee70d9a84dd709f8d8deff
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305618"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393555"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
@@ -155,19 +155,19 @@ ms.locfileid: "53305618"
 
 1. 通过使用 RMS 连接器管理工具和[授权服务器使用 RMS 连接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)部分的信息，确保 Exchange 服务器有权使用 RMS 连接器。 需要此配置，以便 Exchange 可以使用 RMS 连接器。
 
-2.  在与 RMS 连接器通信的 Exchange 服务器角色上执行以下任一操作：
+2. 在与 RMS 连接器通信的 Exchange 服务器角色上执行以下任一操作：
 
-    -   运行适用于 Microsoft RMS 连接器的服务器配置工具。 有关详细信息，请参阅[如何使用适用于 Microsoft RMS 连接器的服务器配置工具](#how-to-use-the-server-configuration-tool-for-microsoft-rms-connector)。
+   -   运行适用于 Microsoft RMS 连接器的服务器配置工具。 有关详细信息，请参阅[如何使用适用于 Microsoft RMS 连接器的服务器配置工具](#how-to-use-the-server-configuration-tool-for-microsoft-rms-connector)。
 
-        例如，若要在本地运行该工具以配置运行 Exchange 2016 或 Exchange 2013 的服务器，请执行以下操作：
+       例如，若要在本地运行该工具以配置运行 Exchange 2016 或 Exchange 2013 的服务器，请执行以下操作：
 
-        ```
-        .\GenConnectorConfig.ps1 -ConnectorUri https://rmsconnector.contoso.com -SetExchange2013
-        ```
+       ```
+       .\GenConnectorConfig.ps1 -ConnectorUri https://rmsconnector.contoso.com -SetExchange2013
+       ```
 
-    -   使用 [RMS 连接器的注册表设置](rms-connector-registry-settings.md)中的信息，在服务器上手动添加注册表设置，进行手动注册表编辑。 
+   -   使用 [RMS 连接器的注册表设置](rms-connector-registry-settings.md)中的信息，在服务器上手动添加注册表设置，进行手动注册表编辑。 
 
-3. 通过 [为内部消息启用 IRM] (https://technet.microsoft.com/library/bb124077(v=exchg.150\).aspx#Anchor_1)) 启用 Exchange 的 IRM 功能。
+3. 通过[为内部消息启用 IRM](https://technet.microsoft.com/library/bb124077(v=exchg.150).aspx#Anchor_1) 来启用 Exchange 的 IRM 功能。
 
     > [!NOTE]
     > 默认情况下，运行 **Set-IRMConfiguration -InternalLicensingEnabled $true** 后，出为邮箱启用 IRM 外，还将为 Outlook Web 应用和移动设备自动启用 IRM。 但管理员可以在不同级别禁用 IRM，例如，针对客户端访问服务器、Outlook Web App 虚拟目录或 Outlook Web App 邮箱策略，以及移动设备邮箱策略禁用。 如果用户在 Outlook Web App 中（等待一天后）或在移动设备上无法看到任何 Azure RMS 模板，而在 Outlook 客户端中能够看到这些模板，请检查相关设置，确保未禁用 IRM。 有关详细信息，请参阅 Exchange 文档中的 [Enable or Disable Information Rights Management on Client Access Servers](https://technet.microsoft.com/library/dd876938(v=exchg.150).aspx)（在客户端访问服务器上启用或禁用信息权限管理）。 

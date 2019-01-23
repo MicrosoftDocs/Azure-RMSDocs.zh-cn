@@ -4,18 +4,18 @@ description: 保护文档后，可跟踪用户如何使用它们。 如果用户
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 251de2d7e959dc46bcf95c003fd8924cc4c34d13
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: ba53a7f4d3aa96e4e813c602d1d79f014550ea17
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305212"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314758"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>用户指南：使用 Azure 信息保护时跟踪和撤销文档
 
@@ -59,6 +59,8 @@ ms.locfileid: "53305212"
 > 如果管理员已为文档跟踪站点配置了隐私控制，你可能无法看到组织中的用户访问你所跟踪的文档的时间。管理员可以豁免所有用户或仅豁免某些用户。 但是，你始终可以撤销对你所跟踪文档的访问权限。
 
 要跟踪已保护的文档，必须使用 Windows 计算机将其注册到文档跟踪站点。 为此，请使用文件资源管理器或 Office 应用程序。
+
+如果使用 Azure 信息保护客户端的当前预览版本，还可以在使用 *EnableTracking* 参数和 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 时向 PowerShell 注册受保护的文档。
 
 ## <a name="using-office-to-track-or-revoke-the-document"></a>使用 Office 跟踪或撤销文档
 

@@ -4,18 +4,18 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/04/2019
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 444181d82c028feb50df12d55d279ecbeda97560
-ms.sourcegitcommit: 630f03a91f84d79219e04b4085bdfb5bc6478e88
+ms.openlocfilehash: cd0279bb45c04bc6f62c9eb20ffc006c7838b286
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54012001"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393855"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -56,9 +56,9 @@ Azure 信息保护客户端还可以使用已知的敏感信息类型或用户�
 - **数码底片**：.dng
 
 - Microsoft Office：下表中的文件类型。
-    
+
     这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
-    
+
     |Office 文件类型|Office 文件类型|
     |----------------------------------|----------------------------------|
     |。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm<br /><br />。pptx<br /><br />.vdw<br /><br />.vsd|.vsdm<br /><br /> .vsdx<br /><br />.vss<br /><br />.vssm<br /><br />.vst<br /><br />.vstm<br /><br />.vssx<br /><br />.vstx<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx|
@@ -88,19 +88,21 @@ Azure 信息保护客户端支持两个不同级别的保护，如下表中所�
 Azure 信息保护客户端支持保护的最大文件大小。
 
 - **Office 文件：**
-    
-    |Office 应用程序|支持的最大文件大小|
-    |--------------------------------|-------------------------------------|
-    |Word 2007（仅受 AD RMS 支持）<br /><br />Word 2010<br /><br />Word 2013<br /><br />Word 2016|32 位：512 MB<br /><br />64 位：512 MB
-    |Excel 2007（仅受 AD RMS 支持）<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016|32 位：2 GB<br /><br />64 位：仅受可用磁盘空间和内存限制|
-    |PowerPoint 2007（仅受 AD RMS 支持）<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016|32 位：仅受可用磁盘空间和内存限制<br /><br />64 位：仅受可用磁盘空间和内存限制
+
+
+  |                                                     Office 应用程序                                                      |                                                支持的最大文件大小                                                 |
+  |-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+  |             Word 2007（仅受 AD RMS 支持）<br /><br />Word 2010<br /><br />Word 2013<br /><br />Word 2016             |                                          32 位：512 MB<br /><br />64 位：512 MB                                          |
+  |           Excel 2007（仅受 AD RMS 支持）<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016           |                      32 位：2 GB<br /><br />64 位：仅受可用磁盘空间和内存限制                       |
+  | PowerPoint 2007（仅受 AD RMS 支持）<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016 | 32 位：仅受可用磁盘空间和内存限制<br /><br />64 位：仅受可用磁盘空间和内存限制 |
+
 
 - **对于其他所有文件**： 
-    
-    - 若要保护其他文件类型，并在 Azure 信息保护查看器中打开这些文件类型：最大文件大小仅受可用磁盘空间和内存限制。
-    
-    - 若要使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 取消文件保护：.pst 文件支持的最大文件大小为 5 GB。 其他文件类型的文件大小上限仅受可用磁盘空间和内存限制
-    
+
+  - 若要保护其他文件类型，并在 Azure 信息保护查看器中打开这些文件类型：最大文件大小仅受可用磁盘空间和内存限制。
+
+  - 若要使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 取消文件保护：.pst 文件支持的最大文件大小为 5 GB。 其他文件类型的文件大小上限仅受可用磁盘空间和内存限制
+
     提示：如果需要在大型 .pst 文件中搜索或恢复受保护的项目，请参阅[使用 Unprotect-RMSFile 进行电子数据展示的指南](../configure-super-users.md#guidance-for-using-unprotect-rmsfile-for-ediscovery)。
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>支持用于分类和保护的文件类型
@@ -131,7 +133,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 ###### <a name="footnote-1"></a>脚注 1
 使用 Azure 信息保护客户端的最新版本时，[在默认情况下](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，受保护 PDF 文档的文件扩展名仍为 .pdf。
 
-下一个表列出了其余的文件类型，这些文件类型通过 Azure 信息保护客户端支持本机保护，并且还可进行分类。 将把这些识别为用于 Microsoft Office 应用的文件类型。 这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
+下一个表列出了其余的文件类型，这些文件类型通过 Azure 信息保护客户端支持本机保护，并且还可进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
 
 对于这些文件，在文件受 Rights Management 服务保护后，文件扩展名仍保持不变。
 
@@ -155,9 +157,9 @@ Azure 信息保护客户端支持保护的最大文件大小。
 若要将 Azure 信息保护客户端配置为将常规保护应用于已默认应用本机保护的所有文件，请对注册表进行以下编辑。 请注意，如果不存在 FileProtection 项，则必须手动创建。
 
 1. 为以下注册表路径创建名为 * 的新项，该项使用文件扩展名表示文件：
-    
+
     - 对于 32 位版本的 Windows：HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
-    
+
     - 对于 64 位版本的 Windows：HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection
 
 2. 在新添加的项（例如 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\\\*）中，创建一个名为“Encryption”、数据值为 Pfile 的新字符串值 (REG_SZ)。
@@ -193,7 +195,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 为了帮助阻止用户更改对计算机操作至关重要的文件，某些文件类型和文件夹会自动从分类和保护中排除。 如果用户尝试使用 Azure 信息保护客户端对这些文件进行分类或保护，则会看到一条消息，显示这些文件被排除。
 
 - 排除的文件类型：.lnk、.exe、.com、.cmd、.bat、.dll、.ini、.pst、.sca、.drm、.sys、.cpl、.inf、.drv、.dat、.tmp、.msg、.msp、.msi、.pdb、.jar
-    
+
 
 - **排除的文件夹**： 
     - Windows
@@ -205,15 +207,27 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 默认情况下，扫描程序还会排除 Azure 信息保护客户端支持的相同文件类型，要排除的例外情况如下：
 
+对于正式发布版本：
+
 - .rtf、.rar 和 .zip 也被排除
 
-使用以下 PowerShell cmdlet 时，可更改扫描程序检查文件时包含或排除的文件类型：
+对于当前预览版本： 
+
+    - .rtf 和 .rar 也会被排除在外
+
+可更改扫描程序检查文件时包含或排除的文件类型：
+
+对于正式发布版本，使用以下 PowerShell cmdlet：
 
 - [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)
 
 - [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)
 
 - [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes)
+
+对于当前预览版本：
+
+- 通过[使用 Azure 门户](../deploy-aip-scanner-preview.md#configure-the-scanner-in-the-azure-portal)，在扫描程序配置文件中配置“要扫描的文件类型”。
 
 > [!NOTE]
 > 如果在扫描时包含 .rtf 文件，请仔细监视扫描程序。 扫描程序无法成功检查某些 .rtf 文件，对于这些文件，未完成检查，必须重启服务。 
@@ -229,16 +243,18 @@ Azure 信息保护客户端支持保护的最大文件大小。
 - 基于窗体的 PDF 文件。
 
 - 文件扩展名为 .pdf 的受保护 PDF 文件。
-    
+
     Azure 信息保护客户端可以保护不受保护的 PDF 文件，并且可取消保护和重新保护扩展名为 .ppdf 的受保护 PDF 文件。
 
 ### <a name="limitations-for-container-files-such-as-zip-files"></a>容器文件（如 .zip 文件）的限制
 
-容器文件是包括其他文件的文件，典型示例是包括压缩文件的 .zip 文件。 其他示例包括 .rar、.7z 和 .msg。
+容器文件是包括其他文件的文件，典型示例是包括压缩文件的 .zip 文件。 其他示例包括 .rar、.7z、.msg 文件和包含附件的 PDF 文档。
 
 可对这些容器文件进行分类和保护，但分类和保护不会应用到容器内每个文件。
 
 如果容器文件包括已分类和受保护的文件，必须先提取这些文件，以更改其分类或保护设置。 但是，使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet，可删除受支持容器文件中所有文件的保护。
+
+Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。
 
 ## <a name="file-types-supported-for-inspection"></a>支持检查的文件类型
 
@@ -264,7 +280,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 1. 对于运行扫描程序或 PowerShell 会话的计算机，请安装 [Office 2010 Filter Pack SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2)。
 
-2. 对于扫描程序：包括要检查的 .zip 文件，如 [Azure 信息保护扫描程序](#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner)一节所述。
+2. 对于扫描程序：除非正在运行扫描程序的当前预览版本，包括要检查的 .zip 文件，如 [Azure 信息保护扫描程序](#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner)部分中所述。
 
 3. 对于扫描程序：找到敏感信息之后，如果 .zip 文件应该用标签进行分类和保护，则为此文件扩展名添加注册表项，以获得常规保护 (pfile)，如扫描程序部署说明中的[为扫描程序编辑注册表](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner)一节所述。
 

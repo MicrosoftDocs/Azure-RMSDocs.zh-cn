@@ -4,18 +4,18 @@ description: 确定使用 RMS API 本机支持 Azure 信息保护中的 Azure Ri
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/15/2018
+ms.date: 01/17/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 51883da128580be5f6bfd4dd725b8dfdf10f844f
-ms.sourcegitcommit: 5b48131ace3bbaf82f22fcb7eedf735c2f73d962
+ms.openlocfilehash: 0f83401b8cac96820f2628a501ca2f731d678126
+ms.sourcegitcommit: 2daa75cda8475028a3dac83d70505fcfccef42a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429876"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54361794"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -122,11 +122,11 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 ### <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>有关适用于 iOS 和 Android 的 Azure 信息保护应用的详细信息
 
-适用于 iOS 和 Android 的 Azure 信息保护查看器应用将替换这些设备的 RMS 共享应用程序。 它提供相同的功能，此外，还支持受权限保护的电子邮件和 SharePoint Online 上受权限保护的 PDF 文件。
+当 iOS 和 Android 移动设备没有能够打开受保护电子邮件的电子邮件应用时，适用于 iOS 和 Android 的 Azure 信息保护应用将为受权限保护的电子邮件（.rpmsg 文件）提供查看器。 通过此应用还可以打开受权限保护的 PDF 文件、图片和文本文件。
 
-如果 iOS 和 Android 设备是通过 Microsoft Intune 注册的，则可以使用策略托管的应用部署和管理此应用。 更多详细信息，请参阅 Intune 文档中的[在 Microsoft Intune 控制台中配置和部署移动应用程序管理策略](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)。 对于此 Intune 文档中的步骤 2，使用说明来发布策略托管的应用。
+如果已通过 Microsoft Intune 注册 iOS 和 Android 设备，用户可以从公司门户安装应用，你可以使用 Intune 的[应用保护策略](/intune/app-protection-policies)来管理应用。
 
-有关详细信息，请参阅[适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题](./rms-client/mobile-app-faq.md)。
+有关如何使用应用的详细信息，请参阅[适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题解答](./rms-client/mobile-app-faq.md)。
 
 
 ### <a name="more-information-about-the-azure-information-protection-client-for-windows"></a>有关适用于 Windows 的 Azure 信息保护客户端的详细信息

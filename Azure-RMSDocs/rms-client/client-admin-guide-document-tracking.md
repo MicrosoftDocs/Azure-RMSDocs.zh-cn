@@ -4,18 +4,18 @@ description: 管理员配置和使用 Azure 信息保护的文档跟踪的说明
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/16/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5add56fb5c033243acccb5308b7b9569b0c72624
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 108a77f6c78b49bfcd852ff94ef529d3a667a193
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305173"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314724"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>管理员指南：配置和使用 Azure 信息保护的文档跟踪
 
@@ -95,6 +95,16 @@ ms.locfileid: "53305173"
 
 有关如何使用文档跟踪站点的说明，请参阅用户指南中的[跟踪和撤销文档](client-track-revoke.md)。
 
+### <a name="using-powershell-to-register-labeled-documents-with-the-document-tracking-site"></a>使用 PowerShell 向文档跟踪站点注册标记的文档
+
+此选项仅适用于 Azure 信息保护客户端的当前预览版本。
+
+若要跟踪和撤销文档，必须首先在文档跟踪站点中进行注册。 当用户在使用 Azure 信息保护客户端时从文件资源管理器或其 Office 应用中选择“跟踪和撤销”选项时，将执行此操作。 对于 Rights management 共享应用程序，此操作会在用户选择“已共享保护”选项时自动执行。
+
+如果使用 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 为用户标记和保护文件，可以使用 EnableTracking 参数将文件注册到文档跟踪站点。 例如：
+
+    Set-AIPFileLabel -Path C:\Projects\ -LabelId ade72bf1-4714-4714-4714-a325f824c55a -EnableTracking
+
 ## <a name="usage-logging-for-the-document-tracking-site"></a>文档跟踪站点的使用情况日志记录
 
 使用情况日志文件中的以下两个字段适用于文档跟踪：AdminAction 和 ActingAsUser。
@@ -105,9 +115,7 @@ ms.locfileid: "53305173"
 
 此外，还有记录用户和管理员如何使用文档跟踪站点的请求类型。 例如，**RevokeAccess** 是用户或代表用户的管理员已撤销文档跟踪站点中的文档时的请求类型。 通过将此请求类型与 AdminAction 字段结合使用，可确定是用户撤销了自己的文档（AdminAction 字段为空），还是管理员代表用户撤销了文档（AdminAction 为 true）。
 
-
 有关使用情况日志记录的详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](../log-analyze-usage.md)
-
 
 
 ## <a name="next-steps"></a>后续步骤

@@ -4,18 +4,18 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/05/2019
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 393cac6703016235359e0eb2812b31c585d4b524
-ms.sourcegitcommit: b2619c522298eaee3bd0067f2827e80fa9d4bfc2
+ms.openlocfilehash: ef9836a6e3b651986642d2c93128ea0f6b1e6112
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060308"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314843"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -154,7 +154,7 @@ Windows Server 文件分类基础结构在过去一直都有一个选项：对�
 
 - 对于 Windows Server FCI：可以将所有文件的 Rights Management 所有者设置为单个帐户，也可以为每个文件动态设置 Rights Management 所有者。 若要动态设置 Rights Management 所有者，请使用 -OwnerMail [源文件所有者电子邮件] 参数和值。 此配置使用文件“所有者”属性中的用户帐户名从 Active Directory 检索用户的电子邮件地址。
 
-- 对于 Azure 信息保护扫描程序：对于新受保护的文件，可以将指定数据存储上所有文件的 Rights Management 所有者设置为单个帐户，但不能为每个文件动态设置 Rights Management 所有者。 对先前受保护的文件，不更改 Rights Management 所有者。 若要设置帐户，请为[数据存储库配置文件](/powershell/module/azureinformationprotection/Set-AIPScannerRepository?view=azureipps#optional-parameters)指定 **-DefaultOwner** 参数。
+- 对于 Azure 信息保护扫描程序：对于新受保护的文件，可以将指定数据存储上所有文件的 Rights Management 所有者设置为单个帐户，但不能为每个文件动态设置 Rights Management 所有者。 对先前受保护的文件，不更改 Rights Management 所有者。 若要为新的受保护的文件设置帐户，请在扫描程序配置文件中指定“-默认所有者”设置。 
 
 扫描程序保护 SharePoint 网站和库上的文件时，通过使用 SharePoint 编辑者值来动态地设置每个文件的 Rights Management 所有者。
 

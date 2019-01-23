@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: c6f220e995aa785c44d4227884da2c7379918a8d
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 39abf4586f00cb40cb096841261993225b8c8387
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305465"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393345"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>配置 Azure 信息保护标签的 Exchange Online 邮件流规则
 
@@ -29,7 +29,7 @@ ms.locfileid: "53305465"
 
 如果电子邮件受保护，将保护配置应用为操作的邮件流规则会遭忽略。 例如，如果电子邮件受“不转发”保护，Exchange 邮件流规则无法将其更改为使用“仅加密”选项。  
 
-可以扩展和修改这些示例。 例如，添加更多条件。 若要详细了解如何配置邮件流规则，请参阅 Exchange Online 文档 [Exchange Online 中的邮件流规则（传输规则）](https://technet.microsoft.com/library/jj919238(v=exchg.150\).aspx)。
+可以扩展和修改这些示例。 例如，添加更多条件。 若要详细了解如何配置邮件流规则，请参阅 Exchange Online 文档 [Exchange Online 中的邮件流规则（传输规则）](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)。
 
 若要详细了解如何将邮件流规则配置为加密电子邮件，请参阅 Office 文档[在 Office 365 中将邮件流规则定义为加密电子邮件](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8)。 
 
@@ -60,7 +60,7 @@ ms.locfileid: "53305465"
 > [!TIP]
 > 如果在配置规则时无法使用用户界面，请尝试使用其他浏览器（如 Internet Explorer）。
 
-当电子邮件在组织外部发送时，下面的示例有一个保护应用条件。 若要详细了解可以选择的其他条件，请参阅 [Exchange Online 中的邮件流规则条件和异常（谓词）](https://technet.microsoft.com/library/jj919235(v=exchg.150\).aspx)。
+当电子邮件在组织外部发送时，下面的示例有一个保护应用条件。 若要详细了解可以选择的其他条件，请参阅 [Exchange Online 中的邮件流规则条件和异常（谓词）](https://technet.microsoft.com/library/jj919235(v=exchg.150).aspx)。
 
 
 ### <a name="example-1-rule-that-applies-the-do-not-forward-option-to-emails-that-are-labeled-general-when-they-are-sent-outside-the-organization"></a>示例 1：向在组织外部发送时包含“常规”标签的电子邮件应用“不转发”选项的规则

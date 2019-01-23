@@ -4,17 +4,17 @@ description: 为支持统一标签的客户端将 Azure 信息保护标签迁移
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 01/17/20198
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 84f3aa3cc5dc7955056c98a957fa5d307340da1d
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 221b503fa3621e51c4822a6ad5a6d08fae4f1bad
+ms.sourcegitcommit: 8dec864bf25c7da62b9e0f628f1bf673c81c15ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53174125"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54356005"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心
 
@@ -93,9 +93,13 @@ Azure 信息保护客户端可以使用这些标签设置，而不会出现任�
 
 你必须是全局管理员才能迁移标记。
 
-1. 通过使用以下链接，打开新的浏览器窗口并登录到 Azure 门户： https://portal.azure.com/?ActivateMigration=true#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/migrationActivationBlade 
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。
+    
+    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
-2. 在“Azure 信息保护 - 统一标签”边栏选项卡上，选择“激活”并按照联机说明进行操作。
+2. 从“管理”菜单选项，选择“统一标记(预览)”。
+
+3. 在“Azure 信息保护 - 统一标签”边栏选项卡上，选择“激活”并按照联机说明进行操作。
 
 成功迁移的标签现在可被[支持统一标签的客户端](#clients-that-support-unified-labeling)使用。 但必须先在安全与合规中心发布这些标签。
 

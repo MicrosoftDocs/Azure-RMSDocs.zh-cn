@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb2e2538246ea5c8ca42f6270e535c73dda71774
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: a5a1c0069a35073d9362e28ef18ad4c09d95df3d
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305499"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393937"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
@@ -50,13 +50,13 @@ ms.locfileid: "53305499"
 
 3. 在“添加权限”边栏选项卡： 
     
-    - 对于内部组：选择“浏览目录”以选择组，而其必须启用电子邮件。
+   - 对于内部组：选择“浏览目录”以选择组，而其必须启用电子邮件。
     
-    - 对于第一个外部组织中的所有用户：选择“输入详细信息”，然后在组织的租户中键入域名。 例如，fabrikam.com。
+   - 对于第一个外部组织中的所有用户：选择“输入详细信息”，然后在组织的租户中键入域名。 例如，fabrikam.com。
     
-    - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如，sales@contoso.com 。
+   - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如，sales@contoso.com 。
     
-    - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，输入用户的电子邮件地址。 例如，bengi.turan@gmail.com 。 
+   - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，输入用户的电子邮件地址。 例如，bengi.turan@gmail.com 。 
 
 4. 向这些用户授予相同的权限：对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。
     

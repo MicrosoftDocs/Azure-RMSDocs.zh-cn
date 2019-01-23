@@ -8,12 +8,12 @@ ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: de278dbb9fd9f051c3a4e47ef719988df4706434
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: d1613d30dbb59395254ca5bd56222c15fcb75058
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305550"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393572"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>用于 Azure 信息保护的保留自己的密钥 (HYOK) 保护
 
@@ -114,35 +114,35 @@ AD RMS 部署必须满足以下要求，才能为 Azure 信息保护标签提供
 
 - AD RMS 配置：
     
-    - Windows Server 2012 R2 的最低版本：生产环境需要此版本，但出于测试或评估目的时，可以使用 Windows Server 2008 R2（含 Service Pack 1）的最低版本。
+  - Windows Server 2012 R2 的最低版本：生产环境需要此版本，但出于测试或评估目的时，可以使用 Windows Server 2008 R2（含 Service Pack 1）的最低版本。
     
-    - 以下拓扑之一：
+  - 以下拓扑之一：
         
-        - 具有单个 AD RMS 根群集的单个林。 
+    - 具有单个 AD RMS 根群集的单个林。 
         
-        - 具有独立 AD RMS 根群集的多个林，用户无法访问由其他林的用户保护的内容。
+    - 具有独立 AD RMS 根群集的多个林，用户无法访问由其他林的用户保护的内容。
         
-        - 多个林，每个林中有 AD RMS 群集。 每个 AD RMS 群集共享指向相同 AD RMS 群集的许可 URL。 在此 AD RMS 群集上，必须从所有其他 AD RMS 群集导入所有受信任用户域 (TUD) 证书。 有关此拓扑的详细信息，请参阅 [受信任的用户域](https://technet.microsoft.com/library/dd983944(v=ws.10\).aspx))。
+    - 多个林，每个林中有 AD RMS 群集。 每个 AD RMS 群集共享指向相同 AD RMS 群集的许可 URL。 在此 AD RMS 群集上，必须从所有其他 AD RMS 群集导入所有受信任用户域 (TUD) 证书。 有关此拓扑的详细信息，请参阅[受信任的用户域](https://technet.microsoft.com/library/dd983944(v=ws.10).aspx)。
         
     如果单独的林中具有多个 AD RMS 群集，删除应用 HYOK (AD RMS) 保护并为每个群集配置[作用域策略](configure-policy-scope.md)的全局策略中的任何标签。 将每个群集的用户分配到其作用域策略，确保不使用会导致用户分配到多个作用域策略的组。 结果应是每个用户仅有一个 AD RMS 群集的标签。 
     
-    - [加密模式 2](https://technet.microsoft.com/library/hh867439.aspx)：可以通过检查 AD RMS 群集属性、“常规”选项卡来确认此模式。
+  - [加密模式 2](https://technet.microsoft.com/library/hh867439.aspx)：可以通过检查 AD RMS 群集属性、“常规”选项卡来确认此模式。
     
-    - 每个 AD RMS 服务器都针对证书 URL 进行了配置。 [说明](#configuring-ad-rms-servers-to-locate-the-certification-url) 
+  - 每个 AD RMS 服务器都针对证书 URL 进行了配置。 [说明](#configuring-ad-rms-servers-to-locate-the-certification-url) 
     
-    - 未在 Active Directory 中注册服务连接点 (SCP)：当通过 Azure 信息保护使用 AD RMS 保护时，不会使用 SCP。 
+  - 未在 Active Directory 中注册服务连接点 (SCP)：当通过 Azure 信息保护使用 AD RMS 保护时，不会使用 SCP。 
     
-        - 如果已就 AD RMS 部署注册了 SCP，必须将其删除，以便 Azure 权限管理保护功能成功[发现服务](./rms-client/client-deployment-notes.md#rms-service-discovery)。 
+      - 如果已就 AD RMS 部署注册了 SCP，必须将其删除，以便 Azure 权限管理保护功能成功[发现服务](./rms-client/client-deployment-notes.md#rms-service-discovery)。 
         
-        - 如果你正在为 HYOK 安装新的 AD RMS 群集，则跳过在配置第一个节点期间注册 SCP 的步骤。 对于每个其他节点，请确保在添加 AD RMS 角色并加入现有群集前，服务器已针对证书 URL 进行了配置。
+      - 如果你正在为 HYOK 安装新的 AD RMS 群集，则跳过在配置第一个节点期间注册 SCP 的步骤。 对于每个其他节点，请确保在添加 AD RMS 角色并加入现有群集前，服务器已针对证书 URL 进行了配置。
     
-    - AD RMS 服务器配置为使用带有受连接客户端信任的有效 x.509 证书的 SSL/TLS：生产环境所需，但出于测试或评估目的则不需要。
+  - AD RMS 服务器配置为使用带有受连接客户端信任的有效 x.509 证书的 SSL/TLS：生产环境所需，但出于测试或评估目的则不需要。
     
-    - 已配置的权限模板。
+  - 已配置的权限模板。
     
-    - 未为 Exchange IRM 配置。
+  - 未为 Exchange IRM 配置。
     
-    - 对于移动设备和 Mac 计算机：已安装并配置了 [Active Directory Rights Management Services 移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)。
+  - 对于移动设备和 Mac 计算机：已安装并配置了 [Active Directory Rights Management Services 移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)。
 
 - 在本地 Active Directory 和 Azure Active Directory 之间配置了目录同步，并且为将使用 HYOK 保护的用户配置了单一登录。
 
