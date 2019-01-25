@@ -8,16 +8,16 @@ ms.date: 10/31/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: ffb919e0d48687a3a1c46a12651734c85c578aa6
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 075441ef848f3ebe5e106f5989a99981037711bd
+ms.sourcegitcommit: 8bda26b8b84cb8b66ae8f927906710d60c4b6a80
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393359"
+ms.locfileid: "54397838"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 
 可通过使用 Rights Management 服务保护最敏感的文档和电子邮件。 此服务使用加密、标识和身份验证策略，有助于防止数据丢失。 保护应用于配置为使用 Rights Management 保护文档和电子邮件的标签，用户还可以在 Outlook 中选择“不可转发”按钮。
 
@@ -44,7 +44,7 @@ ms.locfileid: "54393359"
 
 用户不必事先为 Azure 信息保护配置 Exchange 即可在 Outlook 中应用标签保护其电子邮件。 但是，在为 Azure 信息保护配置 Exchange 之前，你无法获得将 Exchange 与 Azure Rights Management 保护配合使用的完整功能。 例如，用户无法在移动电话上或通过 Outlook 网页版查看受保护的电子邮件，无法将受保护的电子邮件编入索引用于搜索，并且无法为 Rights Management 保护配置 Exchange Online DLP。 若要确保 Exchange 支持这些其他方案，请参阅以下资源：
 
-- 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchange-online-irm-configuration)。
+- 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)。
 
 - 对于 Exchange 内部部署，必须部署 [RMS 连接器并配置 Exchange 服务器](deploy-rms-connector.md)。 
 
