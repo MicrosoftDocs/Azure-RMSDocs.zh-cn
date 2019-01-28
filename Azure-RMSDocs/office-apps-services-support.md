@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e1a44fb7cf6e4ad340a89f236920e5ff6d96b7d0
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: e05ade72a2dcd81eadd21fc4185b0845660a26eb
+ms.sourcegitcommit: 8bda26b8b84cb8b66ae8f927906710d60c4b6a80
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173989"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54397889"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 最终用户 Office 应用程序和 Office 服务可使用 Azure 信息保护中的 Azure 权限管理服务来帮助保护组织的数据。 Office 应用程序包括 Word、Excel、PowerPoint 和 Outlook。 Office 服务包括 Exchange 和 SharePoint。 支持 Azure 权限管理服务的 Office 配置通常使用术语“信息权限管理 (IRM)”。
 
@@ -59,7 +59,7 @@ ms.locfileid: "53173989"
 
 如果已准备好配置 Exchange 以保护电子邮件：
 
-- 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchange-online-irm-configuration)。
+- 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)。
 
 - 对于 Exchange 內部部署，请参阅[部署 Azure 权限管理连接器](deploy-rms-connector.md)。
 
@@ -95,7 +95,7 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 
 如果已准备好为 SharePoint 配置 IRM ：
 
-- 对于 SharePoint Online，请参阅 [SharePoint Online 和 OneDrive for Business：IRM 配置](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)。
+- 对于 SharePoint Online，请参阅 [SharePoint Online 和 OneDrive for Business：IRM 配置](configure-office365.md#sharepointonline-and-onedrive-for-business-irm-configuration)。
 
 - 对于 Sharepoint Server，请参阅[部署 Azure 权限管理连接器](deploy-rms-connector.md)。
 
