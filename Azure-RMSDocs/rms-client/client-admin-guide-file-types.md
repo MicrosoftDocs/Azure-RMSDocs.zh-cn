@@ -4,22 +4,22 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/16/2019
+ms.date: 01/23/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cd0279bb45c04bc6f62c9eb20ffc006c7838b286
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 3d4285b77e0ccbfd21b4ed536f8c002ffa8d2a28
+ms.sourcegitcommit: fb0a9593f1e69306040fabda9bc9ad4977b21be8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393855"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751530"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 Azure 信息保护客户端可以将以下内容应用于文档和电子邮件：
 
@@ -188,7 +188,9 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 - **关闭**：阻止保护
 
-有关详细信息，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 
+进行这些注册表更改后，无需重启计算机。 不过，如果使用 PowerShell 命令来保护文件，必须启动新的 PowerShell 会话，这样更改才能生效。
+
+若要详细了解如何通过编辑注册表来更改文件的默认保护级别，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。
 
 ## <a name="file-types-that-are-excluded-from-classification-and-protection"></a>从分类和保护中排除的文件类型
 
@@ -254,11 +256,11 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 如果容器文件包括已分类和受保护的文件，必须先提取这些文件，以更改其分类或保护设置。 但是，使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet，可删除受支持容器文件中所有文件的保护。
 
-Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。
+Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 在这种情况下，在查看器中打开文档时，附件不可见。
 
 ## <a name="file-types-supported-for-inspection"></a>支持检查的文件类型
 
-无需任何额外配置，Azure 信息保护客户端即可使用 Windows IFilter 来检查文档内容。 Windows Search 使用 Windows IFilter 来编制索引。 因此，使用 [Azure 信息保护扫描程序](../deploy-aip-scanner.md)或[Set-AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令时，可以检查以下文件类型。
+无需任何额外配置，Azure 信息保护客户端即可使用 Windows IFilter 来检查文档内容。 Windows Search 使用 Windows IFilter 来编制索引。 因此，使用 [Azure 信息保护扫描程序](../deploy-aip-scanner.md)或 [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令时，可以检查下列文件类型。
 
 |应用程序类型|文件类型|
 |--------------------------------|-------------------------------------|
@@ -276,7 +278,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。
 
 ### <a name="to-inspect-zip-files"></a>检查 .zip 文件
 
-按照以下说明，可使用 Azure 信息保护扫描程序和 [Set-AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令检查 .zip 文件：
+请按照以下说明操作，使用 Azure 信息保护扫描程序和 [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令检查 .zip 文件：
 
 1. 对于运行扫描程序或 PowerShell 会话的计算机，请安装 [Office 2010 Filter Pack SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2)。
 

@@ -4,18 +4,18 @@ description: 有关 Azure 信息保护所使用的个人数据的信息以及如
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/23/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: 4e44796d3bd2fdf1fd2f0c39cc759f16d87267a1
-ms.sourcegitcommit: db60fe8f74ffaa4f6ffbf5defb22efc476c28312
+ms.openlocfilehash: 08ae5875437a1e443247a5a57b1bb621b6627ce3
+ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53319408"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898777"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
 
@@ -196,6 +196,12 @@ IsHiddenInfo         : False
 此外，Azure 信息保护客户端将此个人数据记录到本地 Windows 事件日志“应用程序和服务日志” > “Azure 信息保护”。
 
 Azure 信息保护客户端运行扫描程序时，会将个人数据保存到运行此扫描程序的 Windows Server 计算机上的 %localappdata%\Microsoft\MSIP\Scanner\Reports。
+
+可使用以下配置，为 Azure 信息保护客户端和扫描程序禁用日志记录信息：
+
+- 对于 Azure 信息保护客户端：创建将“LogLevel”配置为“Off”的[高级客户端设置](./rms-client/client-admin-guide-customizations.md#change-the-local-logging-level)。
+
+- 对于 Azure 信息保护扫描程序：使用 [Set-AIPScannerConfiguration](/azureinformationprotection/set-aipscannerconfiguration) cmdlet 将“ReportLevel”参数设置为“Off”。
 
 [!INCLUDE [GDPR-related guidance](./includes/gdpr-hybrid-note.md)]
 

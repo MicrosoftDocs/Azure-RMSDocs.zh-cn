@@ -4,17 +4,17 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/16/2019
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d120c9dea8ac49c48d7b47d4ee0a0b317ab8c5d6
-ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
+ms.openlocfilehash: 4ef6bd888c46d7882ada03554813a943861fb51d
+ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314945"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898811"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -163,7 +163,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 支持新的敏感信息类型，可帮助对包含个人信息的文档进行分类。 [详细信息](../configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
 
-- 当为用户分配了 Azure Rights Management（也称为 Office 365 Azure 信息保护）许可证时，应用保护的标签现在显示在 Office 2016 应用（最低版本为 1805，生成号 9330.2078）中。
+- 如果已为用户分配 Azure 权限管理（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证，应用保护的标签现在显示在 Office 365 商业版或 Microsoft 365 商业版中的 Office 365 应用内。
 
 - 对 Word、Excel 和 PowerPoint 文件中“Strict Open XML 文档”格式的标签支持。 有关 Open XML 格式的详细信息，请参阅 Office 博客文章[新 Office 中的新文件格式选项](https://www.microsoft.com/en-us/microsoft-365/blog/2012/08/13/new-file-format-options-in-the-new-office/)。 
 

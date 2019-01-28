@@ -4,18 +4,18 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/16/2019
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9386889c41706e0603c5e758be09b0d2baafc7e8
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 71ef2607355cbe84003aaf9fc77dfa5d9a72beff
+ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394366"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898845"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -51,6 +51,7 @@ ms.locfileid: "54394366"
 |EnablePDFv2Protection|[不使用 PDF 加密 ISO 标准来保护 PDF 文件](#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
 |LabelbyCustomProperty|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |LabelToSMIME|[将标签配置为在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook)|
+|日志级别|[更改本地日志记录级别](#change-the-local-logging-level)
 |OutlookDefaultLabel|[为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook)|
 |OutlookRecommendationEnabled|[在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)|
 |PostponeMandatoryBeforeSave|[使用强制标签时，删除文档的“以后再说”](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
@@ -603,7 +604,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 ## <a name="disable-the-low-integrity-level-for-the-scanner"></a>禁用扫描程序的低完整性级别
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
 默认情况下，Azure 信息保护扫描程序在运行时的完整性级别低。 此设置可以提供更强大的安全隔离，但会牺牲性能。 如果你使用具有特权的帐户（例如本地管理员帐户）运行扫描程序，则低完整性级别是适合的，因为此设置有助于保护运行扫描程序的计算机。
 
@@ -617,6 +618,32 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - Value：**False**
 
+
+## <a name="change-the-local-logging-level"></a>更改本地日志记录级别
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+
+默认情况下，Azure 信息保护客户端会将客户端日志文件写入 %localappdata%\Microsoft\MSIP 文件夹。 这些文件供 Microsoft 支持部门用来排除故障。
+ 
+若要更改这些文件的日志记录级别，请配置以下高级客户端设置：
+
+- 注册表项：**LogLevel**
+
+- 值：\<日志记录级别>
+
+将日志记录级别设置为以下值之一：
+
+- **关闭**：没有本地日志记录。
+
+- **错误**：只有错误。
+
+- **Info**：最低级别日志记录，其中不含事件 ID。
+
+- **Debug**：完整信息（默认设置）。
+
+- **Trace**：非常详细的日志记录会对性能产生影响，只有在 Microsoft 支持部门请求时才能启用。 如果系统要求设置此日志记录级别，请务必在已收集相关日志时设置其他值。
+
+此高级客户端设置不会更改发送到 Azure 信息保护用于[集中报告](../reports-aip.md)的信息，也不会更改写入本地[事件日志](client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)的信息。
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>与 Exchange 邮件分类集成以实现移动设备标记解决方案
 

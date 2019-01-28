@@ -4,18 +4,18 @@ description: 此信息可帮助你在部署和配置 Azure 信息保护中的 Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 25471f9e047b4b3c1dac94cdf0856d7413de268a
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 0f62134663cd7c784a694d25369698b4b7c9538c
+ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173887"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898794"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
@@ -79,11 +79,11 @@ ms.locfileid: "53173887"
 > [!TIP]
 > 若要查找应用程序特定帮助，以及有关在这些应用程序中使用信息保护的说明，请搜索 **IRM** 和应用程序名称及版本。
 
-#### <a name="to-protect-a-document-in-word2013"></a>在 Word 2013 中保护文档
+#### <a name="to-protect-a-document-in-wordfrom-office-365-proplus"></a>使用 Office 365 专业增强版保护 Word 文档的具体步骤
 
 1.  在 Microsoft Word 中，创建一个文档。
 
-2.  在“文件”菜单中，依次单击“信息”、“保护文档”和“限制访问”。
+2.  在“文件”菜单中，依次选择：“信息” > “保护文档” >  “限制访问”。
 
 3. 选择用于快速应用相应使用权限的模板，或选择“限制访问”，再自行选择使用权限。
 
@@ -98,11 +98,11 @@ ms.locfileid: "53173887"
 
 这些使用权限以限制横幅方式显示在文档顶部。 该横幅可能显示适用于文档的权限，或者提供显示权限的链接。
 
-#### <a name="to-protect-an-email-message-using-outlook2013-and-exchange-online"></a>使用 Outlook 2013 和 Exchange Online 保护电子邮件
+#### <a name="to-protect-an-email-message-using-outlookfrom-office-365-proplus-connecting-to-exchange-online"></a>若要使用 Office 365 专业增强版中的 Outlook 保护电子邮件，请连接到 Exchange Online
 
 1.  在 Outlook 中，创建一封发送给组织内收件人地址的邮件。
 
-2.  在 **“选项”** 选项卡中，单击 **“权限”**，然后选择某个选项。 例如：“不要转发”、“\<公司名称> - 机密”或“\<公司名称> - 机密，仅供查阅”。
+2.  在“选项”选项卡上：依次选择“权限”和一个选项。 例如：“不要转发”、“\<公司名称> - 机密”或“\<公司名称> - 机密，仅供查阅”。
 
 3.  发送电子邮件。
 
@@ -114,12 +114,10 @@ ms.locfileid: "53173887"
 
 1.  使用 Outlook 网页版创建一封电子邮件，发送给组织内的收件人。
 
-2.  单击 **“...”**，再单击 **“设置权限”**，然后选择某个选项。 例如：“不要转发”或“不要全部答复”。 或者，“\<公司名称> - 机密”或“\<公司名称> - 机密，仅供查阅”。
+2.  选择“保护”。 除非管理员已更改默认设置，否则自动选中“不要转发”选项。 若要更改默认设置，请依次选择“更改权限”和下拉菜单中的选项。 例如：“加密”或“\<公司名称> - 机密”。
 
 3.  发送电子邮件。
 
 与查看受保护文档相似，当收件人打开电子邮件时，首先需要进行身份验证。 如果已获得授权可以查看电子邮件，将通过为相应用户指定的受限[使用权限](configure-usage-rights.md)打开电子邮件。 
 
-例如，如果你选择了 **“不要全部答复”**，则电子邮件窗口中的 **“全部答复”** 选项不可用。
-
-
+例如，选中默认的“不要转发”选项后，便无法选中消息窗口内的“转发”选项。

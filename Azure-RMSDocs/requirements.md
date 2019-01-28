@@ -4,18 +4,18 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/04/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ef35134a8f5d6a3a8a615be6c956ec5e445557d
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 66ebb49b3b161a63c80968104e681fad74bbef42
+ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173734"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898760"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -90,9 +90,9 @@ Azure 信息保护客户端有[其他先决条件](./rms-client/client-admin-gui
 
 Azure 信息保护客户端可使用以下 Office 版本中的 Word、Excel、PowerPoint 和 Outlook 等 Office 应用程序对文档和电子邮件设置标签和进行保护：
 
-- 当为用户分配了 Azure Rights Management（也称为 Office 365 Azure 信息保护）许可证，可以使用含 Office 2016 应用的 Office 365（最低版本为 1805，生成号 9330.2078）
+- Office 365 与 Office 365 商业版或 Microsoft 365 商业版中的 Office 365 应用，前提是已为用户分配 Azure 权限管理（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证
 
-- 含 2016 应用或 2013 应用的 Office 365 ProPlus（即点即用或基于 Windows Installer 的安装）
+- Office 365 ProPlus
 
 - Office Professional Plus 2016
 
