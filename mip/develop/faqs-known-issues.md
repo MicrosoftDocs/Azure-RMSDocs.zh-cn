@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: troubleshooting
 ms.date: 10/19/2018
 ms.author: bryanla
-ms.openlocfilehash: f213b31d9b0e41ea9c1e076055a90e9f62b31b3a
-ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
+ms.openlocfilehash: 9bffda812448bea4ba6a6c1557042e14b78de1b5
+ms.sourcegitcommit: 0fad4196f397fa32c60e6d24791fcad43689c4ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223919"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55088048"
 ---
 # <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Microsoft 信息保护 (MIP) SDK 常见问题解答和问题
 
@@ -23,7 +23,7 @@ ms.locfileid: "51223919"
 
 以下平台支持 MIP SDK：
 
-[!INCLUDE [MIP SDK platform support](../include/mip-sdk-platform-support.md)]
+[!INCLUDE [MIP SDK platform support](../includes/mip-sdk-platform-support.md)]
 
 ### <a name="question-how-does-the-sdk-handle-strings-and-what-string-type-should-i-be-using-in-my-code"></a>问：SDK 如何处理字符串，在我的代码中应使用什么字符串类型？
 
@@ -37,16 +37,16 @@ SDK 旨在跨平台使用，并使用 [UTF-8（Unicode 转换格式 - 8 位）](
 
 ## <a name="issues-and-errors-reference"></a>问题和错误参考
 
-### <a name="error-file-format-not-supported"></a>错误：“不支持的文件格式”  
+### <a name="error-file-format-not-supported"></a>错误："不受支持的文件格式"  
 
 | 错误 | 解决方案 |
 |-|-|
 |不支持的文件格式| 尝试保护或标记已经过数字签名或受密码保护的 PDF 文件时，会导致此异常。 有关保护或标记 PDF 文件的详细信息，请参阅[使用 Microsoft 信息保护进行 PDF 加密的新支持](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)。|
 
-### <a name="error-failed-to-parse-the-acquired-compliance-policy"></a>错误：“无法分析获得的符合性策略”  
+### <a name="error-failed-to-parse-the-acquired-compliance-policy"></a>错误："无法分析获得符合性策略"  
 
 你下载了 MIP SDK 并运行示例应用程序。 你使用文件示例来尝试列出所有标签，但收到以下错误：
 
 | 错误 | 解决方案 |
 |-|-|
-|*发生了意外：无法分析获得的符合性策略。Failed with: [class mip::CompliancePolicyParserException] Tag not found: policy, NodeType: 15, Name: No Name Found, Value: , Ancestors: <SyncFile><Content>, correlationId:[34668a40-blll-4ef8-b2af-00005aa674z9]*| 这表示你尚未将你的标签从 Azure 信息保护迁移到统一标记体验。 请按照[如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](/azure/information-protection/configure-policy-migrate-labels)的步骤操作，以迁移标签，然后在 Office 365 安全与合规中心创建标签策略。 一旦完成该操作，示例将成功运行。|
+|*糟糕的事情：无法分析获得符合性策略。失败： 未找到 [类 mip::CompliancePolicyParserException] 标记： 策略，节点类型：15，名称：没有找到名称，值:，上级： <SyncFile> <Content>，correlationId: [34668a40-blll-4ef8-b2af-00005aa674z9]*| 这表示你尚未将你的标签从 Azure 信息保护迁移到统一标记体验。 请按照[如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](/azure/information-protection/configure-policy-migrate-labels)的步骤操作，以迁移标签，然后在 Office 365 安全与合规中心创建标签策略。 一旦完成该操作，示例将成功运行。|
