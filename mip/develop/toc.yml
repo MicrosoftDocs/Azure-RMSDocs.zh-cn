@@ -17,6 +17,7 @@ items:
       href: quick-file-list-labels-cpp.md
     - name: 设置/获取敏感度标签 (C++)
       href: quick-file-set-get-label-cpp.md
+  expanded: true
 - name: 概念
   items:
   - name: API
@@ -229,9 +230,9 @@ items:
     href: http://aka.ms/mipsdk
   - name: 安全最佳方案
     href: /azure/information-protection/develop/security-guidelines?context=/information-protection/develop/rc/rc
-ms.openlocfilehash: 6659c72b4cfb554c5fa5c30e9d811d71fc09db78
-ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
+ms.openlocfilehash: 79da4509eae872e2f2ce1b799eae1f79b12f5bfb
+ms.sourcegitcommit: a86a8f5d61147d2dde133c1fd3a0900e2fff8ba4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386689"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290390"
