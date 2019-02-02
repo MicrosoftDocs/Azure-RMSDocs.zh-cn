@@ -1,32 +1,32 @@
 ---
-title: 类 mip LoggerDelegate
-description: 类 mip LoggerDelegate 的参考信息
+title: class mip::LoggerDelegate
+description: 记录 mip::loggerdelegate 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: b25cdb177735feccfa5c4d344613e4747d18b77f
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: d93bfb863bf97629a8b2361425a0d78187c88cdc
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445846"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55649994"
 ---
 # <a name="class-miploggerdelegate"></a>class mip::LoggerDelegate 
 定义 MIP SDK 记录器接口的类。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 描述                                
+## <a name="summary"></a>总结
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
- public void Init(const std::string& storagePath, LogLevel logLevel)  |  初始化记录器。
- public LogLevel GetLogLevel() const  |  获取将触发日志记录事件的最低日志级别。
- public void Flush()  |  刷新记录器。
- public void WriteToLog(const LogLevel level, const std::string& message, const std::string& function, const std::string& file, const int32_t line)  |  将日志语句写入日志文件。
+public void Init(const std::string& storagePath, LogLevel logLevel)  |  初始化记录器。
+public LogLevel GetLogLevel() const  |  获取将触发日志记录事件的最低日志级别。
+public void Flush()  |  刷新记录器。
+public void WriteToLog(const LogLevel level, const std::string& message, const std::string& function, const std::string& file, const int32_t line)  |  将日志语句写入日志文件。
   
 ## <a name="members"></a>成員
   
-### <a name="init"></a>初始化
+### <a name="init-function"></a>Init 函数
 初始化记录器。
 
 参数：  
@@ -37,16 +37,16 @@ ms.locfileid: "47445846"
 
 
   
-### <a name="loglevel"></a>日志级别
+### <a name="getloglevel-function"></a>GetLogLevel 函数
 获取将触发日志记录事件的最低日志级别。
 
   
-**返回结果**：将触发日志记录事件的最低日志级别。
+**返回**:最低日志级别触发日志记录事件。
   
-### <a name="flush"></a>刷新
+### <a name="flush-function"></a>Flush 函数
 刷新记录器。
   
-### <a name="writetolog"></a>WriteToLog
+### <a name="writetolog-function"></a>WriteToLog 函数
 将日志语句写入日志文件。
 
 参数：  

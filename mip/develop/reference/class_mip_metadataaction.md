@@ -1,44 +1,44 @@
 ---
-title: 类 mip MetadataAction
-description: 类 mip MetadataAction 的参考信息
+title: class mip::MetadataAction
+description: 记录 mip::metadataaction 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 8f7480775a0226c7161c9ad770184e54427a5084
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 110a2b8fbaa10e87bcdf8617e9f7d22f749139b8
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47444613"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55650878"
 ---
 # <a name="class-mipmetadataaction"></a>class mip::MetadataAction 
 将元数据信息添加到内容的 [Action](class_mip_action.md)。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 描述                                
+## <a name="summary"></a>总结
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std::vector<std::string>& GetMetadataToRemove() const  |  获取应从内容中删除的元数据名称的列表。
-public const std::vector<std::pair<std::string, std::string>>& GetMetadataToAdd() const  |  获取应添加到内容的元数据名称/值对。
- public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
+public const std:: vector\<std:: string\>& GetMetadataToRemove() 常量  |  获取应从内容中删除的元数据名称的列表。
+public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetMetadataToAdd() 常量  |  获取应添加到内容的元数据名称/值对。
+public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
   
 ## <a name="members"></a>成員
   
-### <a name="getmetadatatoremove"></a>GetMetadataToRemove
+### <a name="getmetadatatoremove-function"></a>GetMetadataToRemove 函数
 获取应从内容中删除的元数据名称的列表。
 
   
-**返回结果**：要删除的字符串矢量。 在添加元数据之前应先删除元数据。
+**返回**:要删除的字符串矢量。 在添加元数据之前应先删除元数据。
   
-### <a name="getmetadatatoadd"></a>GetMetadataToAdd
+### <a name="getmetadatatoadd-function"></a>GetMetadataToAdd 函数
 获取应添加到内容的元数据名称/值对。
 
   
-**返回结果**：Const std::vector<std::pair<std::string, std::string>>& 在添加元数据之前应先删除元数据。
+**返回**:Const std:: vector < std:: pair < std:: string、 std:: string >> 和删除元数据应在添加元数据之前完成。
   
-### <a name="actiontype"></a>ActionType
+### <a name="gettype-function"></a>GetType 函数
 获取[操作](class_mip_action.md)类型。
 
   
-**返回结果**：ActionType：此基类可以转换成的派生操作类型。
+**返回**:ActionType：此基类可以转换成的派生操作类型。

@@ -1,102 +1,76 @@
 ---
-title: 类 mip ProtectionEngine Observer
-description: 类 mip ProtectionEngine Observer 的参考信息
+title: 类 mip::ProtectionEngine::Observer
+description: 记录 mip::protectionengine 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 9999b450d614b4465f151f0b2df80892a83bc143
-ms.sourcegitcommit: 4cd90fcf94ac6e2543d8be10e6e29e8218d5fd9d
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 48dc726b8f541d8163cceb16e330f160b6d6bafb
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49651339"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651626"
 ---
 # <a name="class-mipprotectionengineobserver"></a>类 mip::ProtectionEngine::Observer 
 接收 [ProtectionEngine](class_mip_protectionengine.md) 相关通知的接口。
 此接口必须通过应用程序使用保护 SDK 来实现
   
-## <a name="summary"></a>“摘要”
- 成員                        | 描述                                
+## <a name="summary"></a>总结
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public virtual void OnGetTemplatesSuccess(const std::shared_ptr<std::vector<std::string>>& templateIds, const std::shared_ptr<void>& context)  |  在成功检索模板时调用。
-public virtual void OnGetTemplatesFailure(const std::exception_ptr& error, const std::shared_ptr<void>& context)  |  在检索模板出错时调用。
-public virtual void OnGetRightsForLabelIdSuccess(const std::shared_ptr<std::vector<std::string>>& rights, const std::shared_ptr<void>& context)  |  在成功检索到权限时调用。
-public virtual void OnGetRightsForLabelIdFailure(const std::exception_ptr& error, const std::shared_ptr<void>& context)  |  在检索用户的标签 ID 权限时调用。
-public virtual void OnGetGrantingLabelIdsSuccess(const std::shared_ptr<std::vector<std::string>>& labelIds, const std::shared_ptr<void>& context)  |  在成功检索到标签 ID 时调用。
-public virtual void OnGetGrantingLabelIdsFailure(const std::exception_ptr& error, const std::shared_ptr<void>& context)  |  在检索用户的标签 ID 时调用。
+public virtual void OnGetTemplatesSuccess(const std::shared_ptr\<std::vector\<std::string\>\>& templateIds, const std::shared_ptr\<void\>& context)  |  在成功检索模板时调用。
+public virtual void OnGetTemplatesFailure(const std::exception_ptr& error, const std::shared_ptr\<void\>& context)  |  在检索模板出错时调用。
+public virtual void OnGetRightsForLabelIdSuccess(const std::shared_ptr\<std::vector\<std::string\>\>& rights, const std::shared_ptr\<void\>& context)  |  在成功检索到权限时调用。
+公共虚拟 void OnGetRightsForLabelIdFailure (const std::exception_ptr 和错误、 const std::\<void\>& 上下文)  |  在检索用户的标签 ID 权限时调用。
   
 ## <a name="members"></a>成員
   
-### <a name="ongettemplatessuccess"></a>OnGetTemplatesSuccess
+### <a name="ongettemplatessuccess-function"></a>OnGetTemplatesSuccess 函数
 在成功检索模板时调用。
 
 参数：  
-* **templateIds**：对已检索模板的列表的引用 
+* **templateIds**:检索对模板的列表的引用 
 
 
-* **context**：传递到 [ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync) 的相同上下文
+* **上下文**:传递给同一上下文[ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync-function)
 
 
-应用程序可以将任何类型的上下文（例如，std::promise、std::function）传递到 [ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync)，而此相同上下文将按原样转发给 [ProtectionEngine::Observer::OnGetTemplatesSuccess](class_mip_protectionengine_observer.md#ongettemplatessuccess) 或 [ProtectionEngine::Observer::OnGetTemplatesFailure](class_mip_protectionengine_observer.md#ongettemplatesfailure)
+应用程序可以将任何类型的上下文（例如，std::promise、std::function）传递到 [ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync-function)，而此相同上下文将按原样转发给 [ProtectionEngine::Observer::OnGetTemplatesSuccess](class_mip_protectionengine_observer.md#ongettemplatessuccess-function) 或 [ProtectionEngine::Observer::OnGetTemplatesFailure](class_mip_protectionengine_observer.md#ongettemplatesfailure-function)
   
-### <a name="ongettemplatesfailure"></a>OnGetTemplatesFailure
+### <a name="ongettemplatesfailure-function"></a>OnGetTemplatesFailure 函数
 在检索模板出错时调用。
 
 参数：  
-* **error**：检索模板时发生的[错误](class_mip_error.md) 
+* **错误**:[错误](class_mip_error.md)检索模板时出现的 
 
 
-* **context**：传递到 [ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync) 的相同上下文
+* **上下文**:传递给同一上下文[ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync-function)
 
 
-应用程序可以将任何类型的上下文（例如，std::promise、std::function）传递到 [ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync)，而此相同上下文将按原样转发给 [ProtectionEngine::Observer::OnGetTemplatesSuccess](class_mip_protectionengine_observer.md#ongettemplatessuccess) 或 [ProtectionEngine::Observer::OnGetTemplatesFailure](class_mip_protectionengine_observer.md#ongettemplatesfailure)
+应用程序可以将任何类型的上下文（例如，std::promise、std::function）传递到 [ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync-function)，而此相同上下文将按原样转发给 [ProtectionEngine::Observer::OnGetTemplatesSuccess](class_mip_protectionengine_observer.md#ongettemplatessuccess-function) 或 [ProtectionEngine::Observer::OnGetTemplatesFailure](class_mip_protectionengine_observer.md#ongettemplatesfailure-function)
   
-### <a name="ongetrightsforlabelidsuccess"></a>OnGetRightsForLabelIdSuccess
+### <a name="ongetrightsforlabelidsuccess-function"></a>OnGetRightsForLabelIdSuccess 函数
 在成功检索到权限时调用。
 
 参数：  
-* **rights**：对检索到的权限的列表的引用 
+* **权限**:对检索到的权限的列表的引用 
 
 
-* **context**：传递到 [ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync) 的相同上下文
+* **上下文**:传递给同一上下文[ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync-function)
 
 
-应用程序可以将任何类型的上下文（例如，std::promise、std::function）传递到 [ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync)，而此相同上下文将按原样转发给 [ProtectionEngine::Observer::OnGetRightsForLabelIdSuccess](class_mip_protectionengine_observer.md#ongetrightsforlabelidsuccess) 或 [ProtectionEngine::Observer::OnGetRightsForLabelIdFailure](class_mip_protectionengine_observer.md#ongetrightsforlabelidfailure)
+应用程序可以将任何类型的上下文（例如，std::promise、std::function）传递到 [ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync-function)，而此相同上下文将按原样转发给 [ProtectionEngine::Observer::OnGetRightsForLabelIdSuccess](class_mip_protectionengine_observer.md#ongetrightsforlabelidsuccess-function) 或 [ProtectionEngine::Observer::OnGetRightsForLabelIdFailure](class_mip_protectionengine_observer.md#ongetrightsforlabelidfailure-function)
   
-### <a name="ongetrightsforlabelidfailure"></a>OnGetRightsForLabelIdFailure
+### <a name="ongetrightsforlabelidfailure-function"></a>OnGetRightsForLabelIdFailure 函数
 在检索用户的标签 ID 权限时调用。
 
 参数：  
-* **error**：检索权限时发生的[错误](class_mip_error.md) 
+* **错误**:[错误](class_mip_error.md)检索权限时出现的 
 
 
-* **context**：传递到 [ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync) 的相同上下文
+* **上下文**:传递给同一上下文[ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync-function)
 
 
-应用程序可以将任何类型的上下文（例如，std::promise、std::function）传递到 [ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync)，而此相同上下文将按原样转发给 [ProtectionEngine::Observer::OnGetRightsForLabelIdSuccess](class_mip_protectionengine_observer.md#ongetrightsforlabelidsuccess) 或 [ProtectionEngine::Observer::OnGetRightsForLabelIdFailure](class_mip_protectionengine_observer.md#ongetrightsforlabelidfailure)
-  
-### <a name="ongetgrantinglabelidssuccess"></a>OnGetGrantingLabelIdsSuccess
-在成功检索到标签 ID 时调用。
-
-参数：  
-* labelIds：对检索到的标签 ID 的列表的引用 
-
-
-* **context**：传递到 [ProtectionEngine::GetGrantingLabelIdsAsync](class_mip_protectionengine.md#getgrantinglabelidsasync) 的相同上下文
-
-
-应用程序可以将任何类型的上下文（例如，std::promise、std::function 等）传递到 [ProtectionEngine::GetGrantingLabelIdsAsync](class_mip_protectionengine.md#getgrantinglabelidsasync)，而此相同上下文将按原样转发给 [ProtectionEngine::Observer::OnGetGrantingLabelIdsSuccess](class_mip_protectionengine_observer.md#ongetgrantinglabelidssuccess) 或 [ProtectionEngine::Observer::OnGetGrantingLabelIdsFailure](class_mip_protectionengine_observer.md#ongetgrantinglabelidsfailure)
-  
-### <a name="ongetgrantinglabelidsfailure"></a>OnGetGrantingLabelIdsFailure
-在检索用户的标签 ID 时调用。
-
-参数：  
-* **error**：检索标签 ID 时发生的[错误](class_mip_error.md) 
-
-
-* **context**：传递到 [ProtectionEngine::GetGrantingLabelIdsAsync](class_mip_protectionengine.md#getgrantinglabelidsasync) 的相同上下文
-
-
-应用程序可以将任何类型的上下文（例如，std::promise、std::function 等）传递到 [ProtectionEngine::GetGrantingLabelIdsAsync](class_mip_protectionengine.md#getgrantinglabelidsasync)，而此相同上下文将按原样转发给 [ProtectionEngine::Observer::OnGetGrantingLabelIdsSuccess](class_mip_protectionengine_observer.md#ongetgrantinglabelidssuccess) 或 [ProtectionEngine::Observer::OnGetGrantingLabelIdsFailure](class_mip_protectionengine_observer.md#ongetgrantinglabelidsfailure)
+应用程序可以将任何类型的上下文（例如，std::promise、std::function）传递到 [ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync-function)，而此相同上下文将按原样转发给 [ProtectionEngine::Observer::OnGetRightsForLabelIdSuccess](class_mip_protectionengine_observer.md#ongetrightsforlabelidsuccess-function) 或 [ProtectionEngine::Observer::OnGetRightsForLabelIdFailure](class_mip_protectionengine_observer.md#ongetrightsforlabelidfailure-function)

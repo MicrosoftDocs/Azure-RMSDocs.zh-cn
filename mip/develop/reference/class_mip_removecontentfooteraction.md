@@ -1,37 +1,37 @@
 ---
-title: class mip RemoveContentFooterAction
-description: class mip RemoveContentFooterAction 的引用
+title: class mip::RemoveContentFooterAction
+description: 记录 mip::removecontentfooteraction 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: d275e2256c8a65bf63fd16d5761f42563d7a7f07
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 1d8d68ff3fb3e041a271469b9ba4d0a18c158544
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445625"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651303"
 ---
 # <a name="class-mipremovecontentfooteraction"></a>class mip::RemoveContentFooterAction 
 指定从文档中删除内容脚注的操作类。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 描述                                
+## <a name="summary"></a>总结
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std::vector<std::string>& GetUIElementNames()  |  获取应用于查找应删除的 UI 元素的名称列表。
- public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
+public const std:: vector\<std:: string\>& GetUIElementNames()  |  获取应用于查找应删除的 UI 元素的名称列表。
+public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
   
 ## <a name="members"></a>成員
   
-### <a name="getuielementnames"></a>GetUIElementNames
+### <a name="getuielementnames-function"></a>GetUIElementNames 函数
 获取应用于查找应删除的 UI 元素的名称列表。
 
   
-**返回结果**：UI 元素名称列表。
+**返回**:Ui 元素名称的列表。
   
-### <a name="actiontype"></a>ActionType
+### <a name="gettype-function"></a>GetType 函数
 获取[操作](class_mip_action.md)类型。
 
   
-**返回结果**：ActionType：此基类可以转换成的派生操作类型。
+**返回**:ActionType：此基类可以转换成的派生操作类型。

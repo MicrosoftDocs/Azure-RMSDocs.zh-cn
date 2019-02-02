@@ -4,22 +4,18 @@ description: 提供安装和配置先决条件，以便使用 Microsoft 信息�
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
-ms.date: 01/08/2019
+ms.date: 01/30/2019
 ms.author: bryanla
-ms.openlocfilehash: 21fdf98495fbf64cfae413c70205beaeffa7fe3b
-ms.sourcegitcommit: 0fad4196f397fa32c60e6d24791fcad43689c4ba
+ms.openlocfilehash: b8c152db0ae52a20cc5323709c245911564e5f18
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55088116"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651439"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置 
 
 快速入门和教程文章主要介绍使用 MIP SDK 库和 API 构建应用程序。 本文介绍如何安装和配置 Office 365 订阅和客户端工作站，为使用 SDK 做准备。
-
-以下平台支持 MIP SDK：  
-
-[!INCLUDE [MIP SDK platform support](../includes/mip-sdk-platform-support.md)]
 
 ## <a name="prerequisites"></a>必备组件
 
@@ -76,7 +72,7 @@ ms.locfileid: "55088116"
 
      [![Visual Studio 设置](media/setup-mip-client/visual-studio-install.png)](media/setup-mip-client/visual-studio-install.png#lightbox)
 
-3. 安装 [ADAL.PS PowerShell 模块](https://www.powershellgallery.com/packages/ADAL.PS/3.19.4.2)。 
+3. 安装[ADAL.PS PowerShell 模块](https://www.powershellgallery.com/packages/ADAL.PS/3.19.4.2): 
 
    - 由于安装模块需要管理员权限，因此首先需要：
 
@@ -97,25 +93,21 @@ ms.locfileid: "55088116"
      PS C:\WINDOWS\system32>
      ```
 
-4. 从 GitHub 下载 SDK 示例 
+4. 下载 SDK 文件：
 
-   - 如果还没有 GitHub，请先创建一个 [GitHub 配置文件](https://github.com/join)。
-   - 然后安装最新版本的 [Software Freedom Conservancy Git 客户端工具 (Git Bash)](https://git-scm.com/download/)
-   - 使用 Git Bash，下载感兴趣的示例：
-     - 使用以下查询查看存储库： https://github.com/Azure-Samples?utf8=%E2%9C%93&q=MipSdk。 
-     - 使用 Git Bash，使用 `git clone https://github.com/azure-samples/<repo-name>` 下载每个示例存储库。
+   MIP SDK 支持以下平台，使用单独的下载包的每个受支持的平台/语言：  
 
-5. 下载 SDK 二进制文件和标头文件
+   [!INCLUDE [MIP SDK platform support](../includes/mip-sdk-platform-support.md)]
 
-   可以在 https://aka.ms/mipsdkbinaries 找到包含适用于所有平台的 SDK 二进制和标头文件的 .zip 文件。 该 .zip 文件包含许多其他 .zip 文件，每个平台和 API 各一个。 这些文件的命名如下，其中 \<API\> = `file``protection` 或 `upe` 和 \<OS \>= 平台：`mip_sdk_<API>_<OS>_1.0.0.0.zip (or .tar.gz)`。
+   **Tar.gz/。Zip 下载**
 
-   例如，Debian 上用于保护 API 二进制文件和标头文件的 .zip 将是：`mip_sdk_protection_debian9_1.0.0.0.tar.gz`。
-
-   每个 .zip 或 tarball 包含三个目录：
+   Tar.gz 和。Zip 下载包含其他压缩的文件，分别对应于每个 API。 压缩的文件命名，如下所示，其中\<API\> = `file`， `protection`，或`upe`，以及\<OS\> = 平台： `mip_sdk_<API>_<OS>_1.0.0.0.zip (or .tar.gz)`。 例如，将在 Debian 上保护 API 的二进制文件和标头文件： `mip_sdk_protection_debian9_1.0.0.0.tar.gz`。 每个包含的.tar.gz/.zip 拆分为三个目录：
 
    - **箱：** 编译二进制文件的每个平台体系结构中，在适用的情况。
-   - **包括：** Microsoft 信息保护 SDK 头文件
-   - **示例：** 示例应用程序的源代码
+   - **包括：** 标头文件 （c + +）。
+   - **示例：** 示例应用程序的源代码。
+    
+   **NuGet 包**
 
    如果正在进行 Visual Studio 开发，也可以通过 NuGet 包管理器控制台安装 SDK：
 
@@ -124,8 +116,11 @@ ms.locfileid: "55088116"
     Install-Package Microsoft.InformationProtection.Policy
     Install-Package Microsoft.InformationProtection.Protection
     ```  
-    
-6. 将 SDK 二进制文件（动态链接库 (.dll)）的路径添加到 PATH 环境变量中。 PATH 变量允许客户端应用程序在运行时找到依赖 DLL：
+
+5. 如果不使用 NuGet 包，将 SDK 二进制文件的路径添加到 PATH 环境变量。 路径变量允许相关二进制文件 (Dll) 要查找在运行时，客户端应用程序 （可选）：
+
+   如果使用 Windows 10 工作站：
+
    - 单击左下角的 Windows 图标。
    - 看到“编辑系统环境变量”项目时，键入“路径”并按 Enter。
    - 在“系统属性”对话框中，单击“环境变量”。
@@ -133,9 +128,17 @@ ms.locfileid: "55088116"
    - 在“编辑环境变量”对话框中，单击“新建”，创建一个新的可编辑行。 使用 `file\bins\debug\amd64`、`protection\bins\debug\amd64` 和 `upe\bins\debug\amd64` 子目录的完整路径，为每个子目录添加一个新行。 SDK 目录以 `<API>\bins\<target>\<platform>` 格式存储，其中：
      - \<API\> = `file`、`protection`、`upe`
      - \<目标\> = `debug`、`release`
-     - \<平台\> = `amd64` (x64)、`x86` 等。
+     - \<平台\> =  `amd64` (x64)， `x86`，等等。
    
    - 完成更新“路径”变量后，单击“确定”。 然后在返回到“环境变量”对话框时单击“确定”。
+
+6. 从 GitHub （可选） 下载 SDK 示例：
+
+   - 如果还没有 GitHub，请先创建一个 [GitHub 配置文件](https://github.com/join)。
+   - 然后安装最新版本的 [Software Freedom Conservancy Git 客户端工具 (Git Bash)](https://git-scm.com/download/)
+   - 使用 Git Bash，下载感兴趣的示例：
+     - 使用以下查询查看存储库： https://github.com/Azure-Samples?utf8=%E2%9C%93&q=MipSdk。 
+     - 使用 Git Bash，使用 `git clone https://github.com/azure-samples/<repo-name>` 下载每个示例存储库。
 
 ## <a name="register-a-client-application-with-azure-active-directory"></a>向 Azure Active Directory 注册将客户端应用程序
 
@@ -161,7 +164,7 @@ ms.locfileid: "55088116"
    - 在“必需权限”页面上，单击“添加”。 
    - 在“添加 API 访问”页面上，单击“选择 API”。
    - 在“选择 API”页面上，单击“Microsoft Rights Management Services”API，然后单击“选择”。
-   - 在 API 可用权限的“启用访问权限”页面上，单击“为用户创建并授权访问受保护的内容”，单击“选择”，再单击“完成”。
+   - 上**启用访问权限**API 的可用权限页上，单击"**创建和访问受保护的内容的用户**"，然后**选择**，然后**完成**.
 
 5. 重复步骤 #4，但这次当进入“选择 API”页面时，需要搜索 API。
    - 在“选择 API”页面的搜索框中，键入“Microsoft 信息保护同步服务”，然后单击 API 并单击“选择”。
@@ -174,7 +177,7 @@ ms.locfileid: "55088116"
    [![Azure AD 应用注册](media/setup-mip-client/aad-app-registration.png)](media/setup-mip-client/aad-app-registration.png#lightbox)
 
 
-将 Api 和权限添加到注册的详细信息，请参阅[更新应用程序在 Azure AD 中的配置客户端应用程序以访问 web Api](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app#configure-a-client-application-to-access-web-apis)。 此处可以找到有关添加客户端应用程序所需的 API 和权限信息。  
+将 Api 和权限添加到注册的详细信息，请参阅[配置客户端应用程序以访问 web Api](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app#configure-a-client-application-to-access-web-apis)。 此处可以找到有关添加客户端应用程序所需的 API 和权限信息。  
 
 ## <a name="request-an-information-protection-integration-agreement-ipia"></a>请求信息保护集成协议 (IPIA)
 
@@ -210,15 +213,17 @@ ms.locfileid: "55088116"
 
 - 公司应用程序名称
 - 应用程序的简要描述
-- Azure 租户 ID（即使与以前提供的信息相同，也需要再次提供）
+- Azure 租户 ID (即使相同前面所述)
 - 应用程序的应用程序 ID
 - 用于紧急情况通信的公司联系人、电子邮件和电话号码
 
-你发送电子邮件后，我们会在最多 72 小时内向你发送已收到邮件的确认信。
+在发送电子邮件，允许最多 72 个小时的回执确认。
 
 ## <a name="next-steps"></a>后续步骤
 
-- 在学习快速入门部分前，请务必阅读 [MIP SDK 中的观察程序](concept-async-observers.md)，因为 MIP SDK 几乎完全是异步的。
-- 如果您准备好获取 SDK 的某些实践经验，请先使用[快速入门：客户端应用程序初始化 （c + +）](quick-app-initialization-cpp.md)。
+- 如果您是 c + + 开发人员
+  - 请务必阅读[观察者概念](concept-async-observers.md)开始快速入门部分中，若要了解有关 c + + Api 的异步特性之前。
+  - 如果你已准备好获取 SDK 的一些经验，开始[快速入门：客户端应用程序初始化 （c + +）](quick-app-initialization-cpp.md)。
+- 如果你是C#开发人员，如果你已准备好获取一些经验 SDK，请使用启动[快速入门：客户端应用程序初始化 (C#)](quick-app-initialization-csharp.md)。
 
 

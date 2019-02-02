@@ -1,177 +1,177 @@
 ---
-title: 类 mip FileProfile Settings
-description: 类 mip FileProfile Settings 的参考信息
+title: class mip::FileProfile::Settings
+description: 记录 mip::fileprofile 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 4b79d8eb75a54a56f1b3e48645bdd5eec0afaa19
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 1e94e149a99fa48a69a830d5915ce4b33b55b322
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446373"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55650895"
 ---
 # <a name="class-mipfileprofilesettings"></a>class mip::FileProfile::Settings 
 [FileProfile](class_mip_fileprofile.md) 在其创建期间及其整个生存期内使用的 [Settings](class_mip_fileprofile_settings.md)。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 描述                                
+## <a name="summary"></a>总结
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public Settings(const std::string& path, bool useInMemoryStorage, std::shared_ptr<AuthDelegate> authDelegate, std::shared_ptr<ConsentDelegate> consentDelegate, std::shared_ptr<Observer> observer, const ApplicationInfo& applicationInfo)  |  [FileProfile::Settings](class_mip_fileprofile_settings.md) 构造函数。
- public const std::string& GetPath() const  |  获取存储日志记录、遥测和其他永久性状态的路径。
- public bool GetUseInMemoryStorage() const  |  获取是否所有状态都应存储在内存中（而不是存储在磁盘上）的指示
-public std::shared_ptr<AuthDelegate> GetAuthDelegate() const  |  获取用于获取身份验证令牌的身份验证委托。
-public std::shared_ptr<ConsentDelegate> GetConsentDelegate() const  |  获取用于请求用户许可连接到服务的许可委托。
-public std::shared_ptr<Observer> GetObserver() const  |  获取接收 [FileProfile](class_mip_fileprofile.md) 相关事件通知的观察程序。
- public const ApplicationInfo GetApplicationInfo() const  |  获取使用 SDK 的应用程序的相关信息。
- public bool GetSkipTelemetryInit() const  |  获取是否应跳过遥测初始化的指示。
- public void SetSkipTelemetryInit()  |  禁用遥测初始化。
- public void SetNewFeaturesDisabled()  |  禁用新功能。
- public bool AreNewFeaturesDisabled() const  |  获取是否禁用新功能的指示。
-public std::shared_ptr<LoggerDelegate> GetLoggerDelegate() const  |  获取应用程序提供的记录器委托（若有）。
-public void SetLoggerDelegate(const std::shared_ptr<LoggerDelegate>& loggerDelegate)  |  替代默认记录器。
-public std::shared_ptr<HttpDelegate> GetHttpDelegate() const  |  获取应用程序提供的 HTTP 委托（若有）。
-public void SetHttpDelegate(const std::shared_ptr<HttpDelegate>& httpDelegate)  |  使用客户端自己的替代默认 HTTP 堆栈。
- public void OptOutTelemetry()  |  选择退出所有遥测收集。
- public bool IsTelemetryOptedOut() const  |  获取是否应禁用遥测收集的指示。
- public void SetSessionId(const std::string& sessionId)  |  设置会话 ID。
- public const std::string& GetSessionId() const  |  获取会话 ID。
- public void SetMinimumLogLevel(LogLevel logLevel)  |  设置将触发日志记录事件的最低日志级别。
- public LogLevel GetMinimumLogLevel() const  |  获取将触发日志记录事件的最低日志级别。
+公共设置 (const std:: string & 路径，bool useinmemorystorage: std:: shared_ptr\<AuthDelegate\> authDelegate，std:: shared_ptr\<ConsentDelegate\> consentDelegate，std:: shared_ptr\<观察者\>observer，const ApplicationInfo & applicationInfo)  |  [FileProfile::Settings](class_mip_fileprofile_settings.md) 构造函数。
+public const std::string& GetPath() const  |  获取存储日志记录、遥测和其他永久性状态的路径。
+public bool GetUseInMemoryStorage() const  |  获取是否所有状态都应存储在内存中（而不是存储在磁盘上）的指示
+public std::shared_ptr\<AuthDelegate\> GetAuthDelegate() const  |  获取用于获取身份验证令牌的身份验证委托。
+public std::shared_ptr\<ConsentDelegate\> GetConsentDelegate() const  |  获取用于请求用户许可连接到服务的许可委托。
+public std::shared_ptr\<Observer\> GetObserver() const  |  获取接收 [FileProfile](class_mip_fileprofile.md) 相关事件通知的观察程序。
+public const ApplicationInfo GetApplicationInfo() const  |  获取使用 SDK 的应用程序的相关信息。
+public bool GetSkipTelemetryInit() const  |  获取是否应跳过遥测初始化的指示。
+public void SetSkipTelemetryInit()  |  禁用遥测初始化。
+public void SetNewFeaturesDisabled()  |  禁用新功能。
+public bool AreNewFeaturesDisabled() const  |  获取是否禁用新功能的指示。
+public std::shared_ptr\<LoggerDelegate\> GetLoggerDelegate() const  |  获取应用程序提供的记录器委托（若有）。
+public void SetLoggerDelegate(const std::shared_ptr\<LoggerDelegate\>& loggerDelegate)  |  替代默认记录器。
+public std::shared_ptr\<HttpDelegate\> GetHttpDelegate() const  |  获取应用程序提供的 HTTP 委托（若有）。
+public void SetHttpDelegate(const std::shared_ptr\<HttpDelegate\>& httpDelegate)  |  使用客户端自己的替代默认 HTTP 堆栈。
+public void OptOutTelemetry()  |  选择退出所有遥测收集。
+public bool IsTelemetryOptedOut() const  |  获取是否应禁用遥测收集的指示。
+public void SetSessionId(const std::string& sessionId)  |  设置会话 ID。
+public const std::string& GetSessionId() const  |  获取会话 ID。
+public void SetMinimumLogLevel(LogLevel logLevel)  |  设置将触发日志记录事件的最低日志级别。
+public LogLevel GetMinimumLogLevel() const  |  获取将触发日志记录事件的最低日志级别。
   
 ## <a name="members"></a>成員
   
-### <a name="settings"></a>设置
+### <a name="settings-function"></a>设置函数
 [FileProfile::Settings](class_mip_fileprofile_settings.md) 构造函数。
 
 参数：  
-* **路径**：在其下存储日志记录、遥测和其他永久性状态的文件路径 
+* **路径**:文件路径下的日志记录、 遥测和其他持久状态存储 
 
 
 * **useInMemoryStorage**：如果所有状态都应存储在内存中，则为 true；如果状态可以缓存到磁盘，则为 false 
 
 
-* **authDelegate**：用于获取身份验证令牌的身份验证委托 
+* **authDelegate**:用于获取身份验证令牌的身份验证委托 
 
 
-* **observer**：将接收 [FileProfile](class_mip_fileprofile.md) 相关事件通知的[观察程序](class_mip_fileprofile_observer.md)实例
+* **observer**:[观察者](class_mip_fileprofile_observer.md)将要接收的事件通知实例与[FileProfile](class_mip_fileprofile.md)
 
 
-* **applicationInfo**：使用 SDK 的应用程序的相关信息
+* **applicationinfo:**:有关使用 SDK 的应用程序的信息
 
 
   
-### <a name="getpath"></a>GetPath
+### <a name="getpath-function"></a>GetPath 函数
 获取存储日志记录、遥测和其他永久性状态的路径。
 
   
-**返回结果**：在其下存储日志记录、遥测和其他永久性状态的路径
+**返回**:路径下的日志记录、 遥测和其他持久状态存储
   
-### <a name="getuseinmemorystorage"></a>GetUseInMemoryStorage
+### <a name="getuseinmemorystorage-function"></a>GetUseInMemoryStorage 函数
 获取是否所有状态都应存储在内存中（而不是存储在磁盘上）的指示
 
   
-**返回结果**：指示是否所有状态都应存储在内存中（而不是存储在磁盘上）
+**返回**:（与用于在磁盘上），如果应在内存中存储的所有状态
   
-### <a name="getauthdelegate"></a>GetAuthDelegate
+### <a name="getauthdelegate-function"></a>GetAuthDelegate function
 获取用于获取身份验证令牌的身份验证委托。
 
   
-**返回结果**：用于获取身份验证令牌的身份验证委托
+**返回**:用于获取身份验证令牌的身份验证委托
   
-### <a name="consentdelegate"></a>ConsentDelegate
+### <a name="getconsentdelegate-function"></a>GetConsentDelegate 函数
 获取用于请求用户许可连接到服务的许可委托。
 
   
-**返回结果**：用户请求用户同意的同意委托
+**返回**:用于请求用户同意的同意委托
   
-### <a name="observer"></a>观察者
+### <a name="getobserver-function"></a>GetObserver 函数
 获取接收 [FileProfile](class_mip_fileprofile.md) 相关事件通知的观察程序。
 
   
-**返回结果**：接收 [FileProfile](class_mip_fileprofile.md) 相关事件通知的[观察程序](class_mip_fileprofile_observer.md)
+**返回**:[观察者](class_mip_fileprofile_observer.md)，它接收到相关的事件通知[FileProfile](class_mip_fileprofile.md)
   
-### <a name="applicationinfo"></a>ApplicationInfo
+### <a name="getapplicationinfo-function"></a>GetApplicationInfo function
 获取使用 SDK 的应用程序的相关信息。
 
   
-**返回结果**：使用 SDK 的应用程序的相关信息
+**返回**:有关使用 SDK 的应用程序的信息
   
-### <a name="getskiptelemetryinit"></a>GetSkipTelemetryInit
+### <a name="getskiptelemetryinit-function"></a>GetSkipTelemetryInit 函数
 获取是否应跳过遥测初始化的指示。
 
   
-**返回结果**：指示是否应跳过遥测初始化
+**返回**:如果应跳过遥测初始化，或不
   
-### <a name="setskiptelemetryinit"></a>SetSkipTelemetryInit
+### <a name="setskiptelemetryinit-function"></a>SetSkipTelemetryInit 函数
 禁用遥测初始化。
 此方法通常不会被客户端应用程序调用，而是由文件 SDK 用于防止重复初始化
   
-### <a name="setnewfeaturesdisabled"></a>SetNewFeaturesDisabled
+### <a name="setnewfeaturesdisabled-function"></a>SetNewFeaturesDisabled 函数
 禁用新功能。
 适用于不想尝试新功能的应用程序
   
-### <a name="arenewfeaturesdisabled"></a>AreNewFeaturesDisabled
+### <a name="arenewfeaturesdisabled-function"></a>AreNewFeaturesDisabled 函数
 获取是否禁用新功能的指示。
 
   
-**返回结果**：指示是否禁用新功能
+**返回**:如果新功能将被禁用或不
   
-### <a name="loggerdelegate"></a>LoggerDelegate
+### <a name="getloggerdelegate-function"></a>GetLoggerDelegate 函数
 获取应用程序提供的记录器委托（若有）。
 
   
-**返回结果**：记录器
+**返回**:记录器
   
-### <a name="setloggerdelegate"></a>SetLoggerDelegate
+### <a name="setloggerdelegate-function"></a>SetLoggerDelegate 函数
 替代默认记录器。
 
 参数：  
-* loggerDelegate：客户端应用程序实现的日志记录回叫接口
+* **loggerDelegate**:日志记录由客户端应用程序实现的回调接口
 
 
 客户端应用程序应调用此方法以使用自己的记录器实现
   
-### <a name="httpdelegate"></a>HttpDelegate
+### <a name="gethttpdelegate-function"></a>GetHttpDelegate 函数
 获取应用程序提供的 HTTP 委托（若有）。
 
   
-**返回结果**：要用于 HTTP 操作的 HTTP 委托
+**返回**:要用于 HTTP 操作的 HTTP 委托
   
-### <a name="sethttpdelegate"></a>SetHttpDelegate
+### <a name="sethttpdelegate-function"></a>SetHttpDelegate 函数
 使用客户端自己的替代默认 HTTP 堆栈。
 
 参数：  
-* **httpDelegate**：客户端应用程序实现的 HTTP 回叫接口
+* **httpDelegate**:由客户端应用程序实现 HTTP 回调接口
 
 
   
-### <a name="optouttelemetry"></a>OptOutTelemetry
+### <a name="optouttelemetry-function"></a>OptOutTelemetry 函数
 选择退出所有遥测收集。
   
-### <a name="istelemetryoptedout"></a>IsTelemetryOptedOut
+### <a name="istelemetryoptedout-function"></a>IsTelemetryOptedOut 函数
 获取是否应禁用遥测收集的指示。
 
   
-**返回结果**：指示是否应禁用遥测收集
+**返回**:如果应禁用遥测数据收集
   
-### <a name="setsessionid"></a>SetSessionId
+### <a name="setsessionid-function"></a>SetSessionId 函数
 设置会话 ID。
 
 参数：  
-* **sessionId**：将用于关联日志/遥测的会话 ID
+* **sessionId**:将用于关联日志/遥测的会话 ID
 
 
   
-### <a name="getsessionid"></a>GetSessionId
+### <a name="getsessionid-function"></a>GetSessionId 函数
 获取会话 ID。
 
   
-**返回结果**：将用于关联日志/遥测的会话 ID
+**返回**:将用于关联日志/遥测的会话 ID
   
-### <a name="setminimumloglevel"></a>SetMinimumLogLevel
+### <a name="setminimumloglevel-function"></a>SetMinimumLogLevel 函数
 设置将触发日志记录事件的最低日志级别。
 
 参数：  
@@ -180,10 +180,10 @@ public void SetHttpDelegate(const std::shared_ptr<HttpDelegate>& httpDelegate)  
 
 
   
-**返回结果**：True
+**返回**:True
   
-### <a name="loglevel"></a>日志级别
+### <a name="getminimumloglevel-function"></a>GetMinimumLogLevel 函数
 获取将触发日志记录事件的最低日志级别。
 
   
-**返回结果**：将触发日志记录事件的最低日志级别。
+**返回**:将触发日志记录事件的最低日志级别。

@@ -5,37 +5,37 @@ services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
-ms.date: 09/27/2018
+ms.date: 01/18/2019
 ms.author: bryanla
-ms.openlocfilehash: 651fc73c00f18d06ad1a824337a096331bc7e897
-ms.sourcegitcommit: d677088db8588fb2cc4a5d7dd296e76d0d9a2e9c
-ms.translationtype: HT
+ms.openlocfilehash: 4898aefc996c26df5f4831c95be63c9fa1a45dc4
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251737"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651201"
 ---
-# <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C++)
+# <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 （c + +）
 
 本快速入门介绍如何使用更多的 MIP 文件 API。 使用上一个快速入门中列出的敏感度标签之一，可以使用文件处理程序对文件设置/获取标签。 文件处理程序类会公开设置/获取标签的各种操作，或受支持文件类型的保护。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>必备组件
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
-- 首先完成[快速入门：列出敏感度标签 (C++)](quick-file-list-labels-cpp.md)，这可生成初学者 Visual Studio 解决方案，以列出组织的敏感度标签。 此“设置和获取敏感度标签”快速入门基于前一个。
-- （可选）：查看 [MIP SDK 中的文件处理程序](concept-handler-file-cpp.md)概念。
+- 完整[快速入门：列出敏感度标签 （c + +）](quick-file-list-labels-cpp.md)第一种方法生成初学者 Visual Studio 解决方案中，若要列出组织的敏感度标签。 此“设置和获取敏感度标签”快速入门基于前一个。
+- 可选：审阅[MIP SDK 中文件处理程序](concept-handler-file-cpp.md)概念。
 
 ## <a name="implement-an-observer-class-to-monitor-the-file-handler-object"></a>实现观察者类以监视文件处理程序对象
 
 类似于在应用程序初始化快速入门中实现的观察者（对于文件配置文件和引擎），现在你可对文件处理程序对象实现观察者类。
 
-通过扩展 SDK 的 `mip::FileHandler::Observer` 类，创建观察者类的基本实现。 稍后会实例化并使用观察者，以监视文件处理程序操作。
+为文件处理程序的观察器，创建一个基本实现，通过扩展 SDK 的`mip::FileHandler::Observer`类。 稍后会实例化并使用观察者，以监视文件处理程序操作。
 
-1. 打开之前的“快速入门：列出敏感度标签 (C++)”一文中所使用的 Visual Studio 解决方案。
+1. 打开 Visual Studio 解决方案中的上一个工作的"快速入门：列出敏感度标签 （c + +）"一文。
 
 2. 向项目中添加一个新类，这将为你生成标头/.h 和实现/.cpp 文件：
 
-   - 在“解决方案资源管理器”中，再次右键单击项目节点，选择“添加”，然后选择“类”。
+   - 在中**解决方案资源管理器**，再次右键单击项目节点，选择**添加**，然后选择**类**。
    - 在“添加类”对话框上：
      - 在“类名”字段中，输入“filehandler_observer”。 请注意，根据你输入的名称，会自动填充“.h 文件”和“.cpp 文件”字段。
      - 完成后，单击“确定”按钮。
@@ -60,7 +60,7 @@ ms.locfileid: "48251737"
      };
      ```
 
-   - 通过选择/删除生成的 `filehandler_observer` 类实现，更新“filehandler_observer.cpp”。 请勿删除上一步生成的预处理器指令 (#pragma, #include)。 然后将以下源复制/粘贴到文件中，在任何现有的预处理器指令之后：
+   - 通过选择/删除生成的 `filehandler_observer` 类实现，更新“filehandler_observer.cpp”。 请勿删除上一步生成的预处理器指令 (#pragma, #include)。 然后将以下源复制/粘贴到文件中，并放在任何现有的预处理器指令之后：
 
      ```cpp
      void FileHandlerObserver::OnCreateFileHandlerSuccess(const std::shared_ptr<mip::FileHandler>& fileHandler, const std::shared_ptr<void>& context) {
@@ -105,12 +105,19 @@ ms.locfileid: "48251737"
    ```cpp
    // Set up async FileHandler for input file operations
    string filePathIn = "<input-file-path>";
+   string contentIdentifier = "<content-identifier>";
    std::shared_ptr<FileHandler> handler;
    try
    {
         auto handlerPromise = std::make_shared<std::promise<std::shared_ptr<FileHandler>>>();
         auto handlerFuture = handlerPromise->get_future();
-        engine->CreateFileHandlerAsync(filePathIn, mip::ContentState::REST, std::make_shared<FileHandlerObserver>(), handlerPromise);
+        engine->CreateFileHandlerAsync(
+             filePathIn, 
+             contentIdentifier,
+             mip::ContentState::REST, 
+             true, 
+             std::make_shared<FileHandlerObserver>(), 
+             handlerPromise);
         handler = handlerFuture.get();
    }
    catch (const std::exception& e)
@@ -160,11 +167,19 @@ ms.locfileid: "48251737"
    system("pause");
 
    // Set up async FileHandler for output file operations
+   contentIdentifier = "<content-identifier>";
    try
    {
         auto handlerPromise = std::make_shared<std::promise<std::shared_ptr<FileHandler>>>();
         auto handlerFuture = handlerPromise->get_future();
-        engine->CreateFileHandlerAsync(filePathOut, mip::ContentState::REST, std::make_shared<FileHandlerObserver>(), handlerPromise);
+        engine->CreateFileHandlerAsync(
+             filePathOut, 
+             contentIdentifier,
+             mip::ContentState::REST,
+             true,
+             std::make_shared<FileHandlerObserver>(),
+             handlerPromise);
+
         handler = handlerFuture.get();
    }
    catch (const std::exception& e)
@@ -191,13 +206,14 @@ ms.locfileid: "48251737"
    system("pause");
    ```
 
-4. 使用以下值替换刚才粘贴的源代码中的占位符值：
+4. 您只需在中粘贴，如下所示，使用字符串常量的源代码中的占位符值替换：
 
    | 占位符 | 值 |
    |:----------- |:----- |
-   | \<input-file-path\> | 测试输入文件的完整路径，例如：`c:\\Test\\Test.docx`。 |
-   | \<label-id\> | 敏感度标签 ID，从上一快速入门中的控制台输出所复制，例如：`f42a3342-8706-4288-bd31-ebb85995028z`。 |
-   | \<output-file-path\> | 输出文件的完整路径，它将是输入文件的标记副本，例如：`c:\\Test\\Test_labeled.docx`。 |
+   | \<input-file-path\> | 测试输入文件的完整路径，例如：`"c:\\Test\\Test.docx"`。 |
+   | \<content-identifier\> | 内容是人工可读标识符。 例如： <ul><li>对于文件，请考虑路径 \ 文件名： `"c:\Test\Test.docx"`</li><li>一封电子邮件，请考虑使用者： 发件人： `"RE: Audit design:user1@contoso.com"`</li></ul> |
+   | \<label-id\> | 敏感度标签 ID，从上一快速入门中的控制台输出所复制，例如：`"f42a3342-8706-4288-bd31-ebb85995028z"`。 |
+   | \<output-file-path\> | 输出文件的完整路径，它将是输入文件的标记副本，例如：`"c:\\Test\\Test_labeled.docx"`。 |
 
 ## <a name="build-and-test-the-application"></a>生成和测试应用程序
 
@@ -205,7 +221,7 @@ ms.locfileid: "48251737"
 
 1. 使用 F6（生成解决方案）来生成客户端应用程序。 如果没有生成错误，请使用 F5（开始调试）来运行应用程序。
 
-2. 如果你的项目成功生成和运行，则每次 SDK 调用 `AcquireOAuth2Token()` 方法时，应用程序都会提示输入访问令牌。 如先前在“列出敏感度标签”快速入门中所做，每次使用提供的值运行 PowerShell 脚本以获取令牌。 如果请求的颁发机构和资源相同，`AcquireOAuth2Token()` 将尝试使用先前生成的令牌：
+2. 如果你的项目生成并运行成功，应用程序会提示输入访问令牌，每次 SDK 调用你`AcquireOAuth2Token()`方法。 像以前那样"列出敏感度标签"快速入门中，运行 PowerShell 脚本来获取令牌每次使用 $authority 和 $resourceUrl 提供的值。 
 
    ```console
    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:

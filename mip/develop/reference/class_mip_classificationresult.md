@@ -1,41 +1,41 @@
 ---
-title: class mip ClassificationResult
-description: class mip ClassificationResult 的引用
+title: 类 mip::ClassificationResult
+description: 记录 mip::classificationresult 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: ea312330c656b6daefbc1bcba690f53ebfbf419f
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 28b174fe65de5980fb1922cfb4c3e5cee7cab1d8
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446288"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55650742"
 ---
 # <a name="class-mipclassificationresult"></a>类 mip::ClassificationResult 
 包含对执行状态进行分类调用的结果的类。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 描述                                
+## <a name="summary"></a>总结
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
- public std::string GetId() const  |  获取分类策略的 ID。
- public int GetCount() const  |  获取实例计数。
- public int GetConfidenceLevel() const  |  获取结果可信度。
+public std::string GetId() const  |  获取分类策略的 ID。
+public int GetCount() const  |  获取实例计数。
+public int GetConfidenceLevel() const  |  获取结果可信度。
   
 ## <a name="members"></a>成員
   
-### <a name="getid"></a>GetId
+### <a name="getid-function"></a>GetId 函数
 获取分类策略的 ID。
 
   
-返回结果：分类策略的 ID。
+**返回**:分类策略的 ID。
   
-### <a name="getcount"></a>GetCount
+### <a name="getcount-function"></a>GetCount 函数
 获取实例计数。
 
   
-**返回结果**：实例计数。
+**返回**:实例计数。
   
-### <a name="getconfidencelevel"></a>GetConfidenceLevel
+### <a name="getconfidencelevel-function"></a>GetConfidenceLevel 函数
 获取结果可信度。

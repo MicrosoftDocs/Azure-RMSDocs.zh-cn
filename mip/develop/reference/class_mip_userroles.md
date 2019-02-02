@@ -1,49 +1,49 @@
 ---
-title: class mip UserRoles
-description: class mip UserRoles 的引用
+title: class mip::UserRoles
+description: 记录 mip::userroles 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 1cc1da6f443fa22095f216bb2ec2f0e51e75bf78
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 1a060652ea61ed452867bb67d281c9531f4e1b98
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445251"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651507"
 ---
 # <a name="class-mipuserroles"></a>class mip::UserRoles 
 一组用户以及与之关联的角色。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 描述                                
+## <a name="summary"></a>总结
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public UserRoles(const std::vector<std::string>& users, const std::vector<std::string>& roles)  |  [UserRoles](class_mip_userroles.md) 构造函数。
-public const std::vector<std::string>& Users() const  |  获取与一组角色关联的用户。
-public const std::vector<std::string>& Roles() const  |  获取与一组用户关联的角色。
+公共 UserRoles (const std:: vector\<std:: string\>& users，const std:: vector\<std:: string\>（& a) 角色)  |  [UserRoles](class_mip_userroles.md) 构造函数。
+public const std:: vector\<std:: string\>& Users() 常量  |  获取与一组角色关联的用户。
+public const std:: vector\<std:: string\>& Roles() 常量  |  获取与一组用户关联的角色。
   
 ## <a name="members"></a>成員
   
-### <a name="userroles"></a>UserRoles
+### <a name="userroles-function"></a>UserRoles 函数
 [UserRoles](class_mip_userroles.md) 构造函数。
 
 参数：  
-* **users**：共享相同角色的用户组 
+* **用户**:共享相同角色的用户组 
 
 
-* **roles**：用户组共同拥有的角色
+* **角色**:由用户组共享的角色
 
 
   
-### <a name="users"></a>Users
+### <a name="users-function"></a>用户函数
 获取与一组角色关联的用户。
 
   
-**返回结果**：与一组角色关联的用户
+**返回**:与一组角色关联的用户
   
-### <a name="roles"></a>角色
+### <a name="roles-function"></a>角色函数
 获取与一组用户关联的角色。
 
   
-**返回结果**：与一组用户关联的角色
+**返回**:与一组用户关联的角色

@@ -1,82 +1,94 @@
 ---
-title: class mip PolicyEngine
-description: class mip PolicyEngine 的引用
+title: class mip::PolicyEngine
+description: 记录 mip::policyengine 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 57dd325e9c00a3cb2a4056f7ef0b522efef5d0c4
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 298d9789fb46c2725401425af51a9de8b3436f53
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446033"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55650963"
 ---
 # <a name="class-mippolicyengine"></a>class mip::PolicyEngine 
 此类提供适用于所有引擎功能的接口。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 描述                                
+## <a name="summary"></a>总结
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
- public const Settings& GetSettings() const  |  获取策略引擎[设置](class_mip_policyengine_settings.md)。
-public const std::vector<std::shared_ptr<Label>>& ListSensitivityLabels()  |  列出与策略引擎关联的敏感度标签。
- public const std::string& GetMoreInfoUrl() const  |  提供用于查找有关策略/标签详细信息的 URL。
- public bool IsLabelingRequired() const  |  检查策略是否规定必须标记文档。
-public std::shared_ptr<Label> GetDefaultSensitivityLabel()  |  获取默认敏感度标签。
-public std::shared_ptr<PolicyHandler> CreatePolicyHandler(const std::string& contentIdentifier)  |  创建策略处理程序以在文件的执行状态下执行与策略相关的功能。
- public void SendApplicationAuditEvent(const std::string& level, const std::string& eventType, const std::string& eventData)  |  将特定于应用程序的事件记录到审核管道。
+public const Settings& GetSettings() const  |  获取策略引擎[设置](class_mip_policyengine_settings.md)。
+public const std::vector\<std::shared_ptr\<Label\>\>& ListSensitivityLabels()  |  列出与策略引擎关联的敏感度标签。
+public const std:: vector\<std:: shared_ptr\<SensitivityTypesRulePackage\>\>& ListSensitivityTypes() 常量  |  列出与策略引擎关联的敏感度类型。
+public const std::string& GetMoreInfoUrl() const  |  提供用于查找有关策略/标签详细信息的 URL。
+public bool IsLabelingRequired() const  |  检查策略是否规定必须标记文档。
+public std::shared_ptr\<Label\> GetDefaultSensitivityLabel()  |  获取默认敏感度标签。
+public std::\<PolicyHandler\> CreatePolicyHandler (bool isAuditDiscoveryEnabled)  |  创建策略处理程序以在文件的执行状态下执行与策略相关的功能。
+public void SendApplicationAuditEvent(const std::string& level, const std::string& eventType, const std::string& eventData)  |  将特定于应用程序的事件记录到审核管道。
+public const std:: string & GetPolicyDataXml() 常量  |  获取策略数据描述设置、 标签和规则与此策略相关联的 XML。
+public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCustomSettings() 常量  |  获取自定义设置的列表。
   
 ## <a name="members"></a>成員
   
-### <a name="settings"></a>设置
+### <a name="getsettings-function"></a>GetSettings 函数
 获取策略引擎[设置](class_mip_policyengine_settings.md)。
 
   
-**返回结果**：策略引擎设置。 
+**返回**:策略引擎设置。 
   
 另请参阅：[mip::PolicyEngine::Settings](class_mip_policyengine_settings.md)
   
-### <a name="label"></a>Label
+### <a name="listsensitivitylabels-function"></a>ListSensitivityLabels 函数
 列出与策略引擎关联的敏感度标签。
 
   
-**返回结果**：敏感度标签列表。
+**返回**:敏感度标签列表。
   
-### <a name="getmoreinfourl"></a>GetMoreInfoUrl
+### <a name="listsensitivitytypes-function"></a>ListSensitivityTypes 函数
+列出与策略引擎关联的敏感度类型。
+
+  
+**返回**:敏感度标签列表。 false （LoadSensitivityTypesEnabled 是否为空
+  
+**另请参阅**:[PolicyEngine::Settings](class_mip_policyengine_settings.md))。
+  
+### <a name="getmoreinfourl-function"></a>GetMoreInfoUrl 函数
 提供用于查找有关策略/标签详细信息的 URL。
 
   
-**返回结果**：字符串格式的 URL。
+**返回**:字符串格式中的 url。
   
-### <a name="islabelingrequired"></a>IsLabelingRequired
+### <a name="islabelingrequired-function"></a>IsLabelingRequired 函数
 检查策略是否规定必须标记文档。
 
   
-**返回结果**：如果标记是必需的，则返回 True，否则返回 False。
+**返回**:如果标记为必需，否则为 false，则为 true。
   
-### <a name="label"></a>Label
+### <a name="getdefaultsensitivitylabel-function"></a>GetDefaultSensitivityLabel 函数
 获取默认敏感度标签。
 
   
-**返回结果**：如果存在，则返回默认敏感度标签，如果未设置默认标签，则返回 nullptr。
+**返回**:默认敏感度标签，如果存在，nullptr 如果未设置默认标签。
   
-### <a name="policyhandler"></a>PolicyHandler
+### <a name="createpolicyhandler-function"></a>CreatePolicyHandler 函数
 创建策略处理程序以在文件的执行状态下执行与策略相关的功能。
 
 参数：  
-* **contentIdentifier**：内容的可读标识符。 文件示例："C:\mip-sdk-for-cpp\files\audit.docx" [路径] 电子邮件示例："RE: Audit design:user1@contoso.com" [主题：发件人]
+* **一个**: bool，表示是否已启用审核发现
 
 
 
   
-**返回结果**：策略处理程序。
+**返回**:策略处理程序。
+应用程序需要的文档生存期内保留策略处理程序对象
   
-### <a name="sendapplicationauditevent"></a>SendApplicationAuditEvent
+### <a name="sendapplicationauditevent-function"></a>SendApplicationAuditEvent 函数
 将特定于应用程序的事件记录到审核管道。
 
 参数：  
-* **description**：日志级别：信息/错误/警告 
+* **级别**： 的日志级别：信息/错误/警告 
 
 
 * **eventType**：事件类型的说明 
@@ -84,3 +96,16 @@ public std::shared_ptr<PolicyHandler> CreatePolicyHandler(const std::string& con
 
 * **eventData**：与事件关联的数据
 
+
+  
+### <a name="getpolicydataxml-function"></a>GetPolicyDataXml 函数
+获取策略数据描述设置、 标签和规则与此策略相关联的 XML。
+
+  
+**返回**:策略数据的 XML
+  
+### <a name="getcustomsettings-function"></a>GetCustomSettings 函数
+获取自定义设置的列表。
+
+  
+**返回**:向量的自定义设置

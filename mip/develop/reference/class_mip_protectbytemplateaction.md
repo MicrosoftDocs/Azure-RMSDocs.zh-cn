@@ -1,37 +1,37 @@
 ---
-title: class mip ProtectByTemplateAction
-description: class mip ProtectByTemplateAction 的引用
+title: class mip::ProtectByTemplateAction
+description: 记录 mip::protectbytemplateaction 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: cb5f42b25e6f499bc09f3f460ec4a253627b45a5
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 1c05a04df39e6454eb934b5db48e96339afdac0c
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445455"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55650810"
 ---
 # <a name="class-mipprotectbytemplateaction"></a>class mip::ProtectByTemplateAction 
 指定向文档添加模板保护的操作类。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 描述                                
+## <a name="summary"></a>总结
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
- public const std::string& GetTemplateId() const  |  获取与操作关联的保护模板 ID。
- public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
+public const std::string& GetTemplateId() const  |  获取与操作关联的保护模板 ID。
+public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
   
 ## <a name="members"></a>成員
   
-### <a name="gettemplateid"></a>GetTemplateId
+### <a name="gettemplateid-function"></a>GetTemplateId 函数
 获取与操作关联的保护模板 ID。
 
   
-返回结果：保护模板 ID。
+**返回**:保护模板 id。
   
-### <a name="actiontype"></a>ActionType
+### <a name="gettype-function"></a>GetType 函数
 获取[操作](class_mip_action.md)类型。
 
   
-**返回结果**：ActionType：此基类可以转换成的派生操作类型。
+**返回**:ActionType：此基类可以转换成的派生操作类型。

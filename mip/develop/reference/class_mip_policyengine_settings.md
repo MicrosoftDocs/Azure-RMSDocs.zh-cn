@@ -1,75 +1,82 @@
 ---
-title: class mip PolicyEngine Settings
-description: class mip PolicyEngine Settings 的引用
+title: class mip::PolicyEngine::Settings
+description: 记录 mip::policyengine 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 6ac94d1e34615a0248dac85f28c55154b127574f
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 33ae1bd2ceddc66c89d00adb44d6ef39b2ab69a8
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446339"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651252"
 ---
 # <a name="class-mippolicyenginesettings"></a>class mip::PolicyEngine::Settings 
 定义与 [PolicyEngine](class_mip_policyengine.md) 关联的设置。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 描述                                
+## <a name="summary"></a>总结
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
- public Settings(const std::string& engineId, const std::string& clientData, const std::string& locale)  |  用于加载现有引擎的 [PolicyEngine::Settings](class_mip_policyengine_settings.md) 构造函数。
- public Settings(const Identity& identity, const std::string& clientData, const std::string& locale)  |  用于新建引擎的 [PolicyEngine::Settings](class_mip_policyengine_settings.md) 构造函数。
- public const std::string& GetEngineId() const  |  获取引擎 ID。
- public void SetEngineId(const std::string& id)  |  设置引擎 ID。
- public const Identity& GetIdentity() const  |  获取标识对象。
- public void SetIdentity(const Identity& identity)  |  设置标识对象。
- public const std::string& GetClientData() const  |  获取设置中设置的客户端数据。
- public void SetClientData(const std::string& clientData)  |  设置客户端数据字符串。
- public const std::string& GetLocale() const  |  获取设置中设置的区域设置。
-public void SetCustomSettings(const std::vector<std::pair<std::string, std::string>>& customSettings)  |  设置自定义设置，用于功能访问控制和测试。
-public const std::vector<std::pair<std::string, std::string>>& GetCustomSettings() const  |  获取用于功能访问控制和测试的自定义设置。
- public void SetSessionId(const std::string& sessionId)  |  设置用于客户端定义遥测的会话 ID。
- public const std::string& GetSessionId() const  |  获取唯一标识符形式的会话 ID。
+公共设置 （const std:: string & engineId，const std:: string & clientData，const std:: string 和区域设置，bool loadSensitivityTypes）  |  用于加载现有引擎的 [PolicyEngine::Settings](class_mip_policyengine_settings.md) 构造函数。
+公共设置 (const Identity & 标识、 const std:: string & clientData、 const std:: string 和区域设置、 bool loadSensitivityTypes)  |  用于新建引擎的 [PolicyEngine::Settings](class_mip_policyengine_settings.md) 构造函数。
+public const std::string& GetEngineId() const  |  获取引擎 ID。
+public void SetEngineId(const std::string& id)  |  设置引擎 ID。
+public const Identity& GetIdentity() const  |  获取[标识](class_mip_identity.md)对象。
+public void SetIdentity(const Identity& identity)  |  设置[标识](class_mip_identity.md)对象。
+public const std::string& GetClientData() const  |  获取设置中设置的客户端数据。
+public void SetClientData(const std::string& clientData)  |  设置客户端数据字符串。
+public const std::string& GetLocale() const  |  获取设置中设置的区域设置。
+public void SetCustomSettings (const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& customsettings:)  |  设置自定义设置，用于功能访问控制和测试。
+public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCustomSettings() 常量  |  获取用于功能访问控制和测试的自定义设置。
+public void SetSessionId(const std::string& sessionId)  |  设置用于客户端定义遥测的会话 ID。
+public const std::string& GetSessionId() const  |  获取唯一标识符形式的会话 ID。
+公共 bool IsLoadSensitivityTypesEnabled() 常量  |  获取指示是否启用了负载敏感度标签的标志。
   
 ## <a name="members"></a>成員
   
-### <a name="settings"></a>设置
+### <a name="settings-function"></a>设置函数
 用于加载现有引擎的 [PolicyEngine::Settings](class_mip_policyengine_settings.md) 构造函数。
 
 参数：  
-* **engineId**：将它设置为 AddEngineAsync 生成或自生成的唯一引擎 ID。 重新加载现有引擎时，将重用此 ID，否则将创建一个新引擎。 
+* **engineId**:将其设置为 AddEngineAsync 生成或自生成的唯一引擎 ID。 重新加载现有引擎时，将重用此 ID，否则将创建一个新引擎。 
 
 
 * **clientData**：卸载时可存储在引擎中的可自定义的客户端数据，可以从已加载的引擎中检索该数据。 
 
 
-* **locale**：将在此区域设置中提供引擎可本地化输出。
+* **locale**：将在此区域设置中提供引擎可本地化输出。 
+
+
+* **可选**： 标志，指示引擎加载时应加载还自定义敏感类型，当将自定义敏感类型，以及策略更改的更新上调用，则返回 true OnPolicyChange 观察者的配置文件。 如果 false ListSensitivityTypes 调用将始终返回空列表。
 
 
   
-### <a name="settings"></a>设置
+### <a name="settings-function"></a>设置函数
 用于新建引擎的 [PolicyEngine::Settings](class_mip_policyengine_settings.md) 构造函数。
 
 参数：  
-* **identity**：与新引擎关联的用户的标识信息。 
+* **标识**:[标识](class_mip_identity.md)与新的引擎关联的用户的信息。 
 
 
 * **clientData**：卸载时可存储在引擎中的可自定义的客户端数据，可以从已加载的引擎中检索该数据。 
 
 
-* **locale**：将在此区域设置中提供引擎可本地化输出。
+* **locale**：将在此区域设置中提供引擎可本地化输出。 
+
+
+* **可选**： 标志，指示引擎加载时应加载还自定义敏感类型，当将自定义敏感类型，以及策略更改的更新上调用，则返回 true OnPolicyChange 观察者的配置文件。 如果 false ListSensitivityTypes 调用将始终返回空列表。
 
 
   
-### <a name="getengineid"></a>GetEngineId
+### <a name="getengineid-function"></a>GetEngineId 函数
 获取引擎 ID。
 
   
-**返回结果**：标识引擎的唯一字符串。
+**返回**:标识引擎的唯一字符串。
   
-### <a name="setengineid"></a>SetEngineId
+### <a name="setengineid-function"></a>SetEngineId 函数
 设置引擎 ID。
 
 参数：  
@@ -77,31 +84,31 @@ public const std::vector<std::pair<std::string, std::string>>& GetCustomSettings
 
 
   
-### <a name="getidentity"></a>GetIdentity
-获取标识对象。
+### <a name="getidentity-function"></a>GetIdentity 函数
+获取[标识](class_mip_identity.md)对象。
 
   
-**返回结果**：对设置对象中的标识的引用。 
+**返回**:对设置对象中的标识的引用。 
   
-另请参阅：mip::Identity
+**另请参阅**: [mip::Identity](class_mip_identity.md)
   
-### <a name="setidentity"></a>SetIdentity
-设置标识对象。
+### <a name="setidentity-function"></a>SetIdentity 函数
+设置[标识](class_mip_identity.md)对象。
 
 参数：  
 * **identity**：用户的唯一标识。 
 
 
   
-另请参阅：mip::Identity
+**另请参阅**: [mip::Identity](class_mip_identity.md)
   
-### <a name="getclientdata"></a>GetClientData
+### <a name="getclientdata-function"></a>GetClientData 函数
 获取设置中设置的客户端数据。
 
   
-**返回结果**：客户端指定的数据的字符串。
+**返回**:一个指定客户端的数据的字符串。
   
-### <a name="setclientdata"></a>SetClientData
+### <a name="setclientdata-function"></a>SetClientData 函数
 设置客户端数据字符串。
 
 参数：  
@@ -109,27 +116,27 @@ public const std::vector<std::pair<std::string, std::string>>& GetCustomSettings
 
 
   
-### <a name="getlocale"></a>GetLocale
+### <a name="getlocale-function"></a>GetLocale 函数
 获取设置中设置的区域设置。
 
   
-**返回结果**：区域设置。
+**返回**:区域设置。
   
-### <a name="setcustomsettings"></a>SetCustomSettings
+### <a name="setcustomsettings-function"></a>SetCustomSettings 函数
 设置自定义设置，用于功能访问控制和测试。
 
 参数：  
-* **customSettings**：名称/值对列表。
+* **customsettings:**:名称/值对列表。
 
 
   
-### <a name="getcustomsettings"></a>GetCustomSettings
+### <a name="getcustomsettings-function"></a>GetCustomSettings 函数
 获取用于功能访问控制和测试的自定义设置。
 
   
-**返回结果**：名称/值对列表。
+**返回**:名称/值对列表。
   
-### <a name="setsessionid"></a>SetSessionId
+### <a name="setsessionid-function"></a>SetSessionId 函数
 设置用于客户端定义遥测的会话 ID。
 
 参数：  
@@ -137,8 +144,14 @@ public const std::vector<std::pair<std::string, std::string>>& GetCustomSettings
 
 
   
-### <a name="getsessionid"></a>GetSessionId
+### <a name="getsessionid-function"></a>GetSessionId 函数
 获取唯一标识符形式的会话 ID。
 
   
-**返回结果**：会话 ID。
+**返回**:会话 id。
+  
+### <a name="isloadsensitivitytypesenabled-function"></a>IsLoadSensitivityTypesEnabled 函数
+获取指示是否启用了负载敏感度标签的标志。
+
+  
+**返回**:如果启用，否则返回 false，则为 true。

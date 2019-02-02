@@ -4,21 +4,21 @@ description: 快速入门教程，演示如何为 Microsoft 信息保护 (MIP) S
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
-ms.date: 01/08/2019
+ms.date: 01/18/2019
 ms.author: bryanla
-ms.openlocfilehash: 686321c4f376679103b92419b5b86abaa74dc394
-ms.sourcegitcommit: adc4621ec4738c0abb6c1fa81a6598a6dfc5ace6
+ms.openlocfilehash: 2fb19aa5071fa13f9801de9e9ed1106717f5adf9
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54136219"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651422"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 （c + +）
 
-本快速入门教程将演示如何实现 MIP C++ SDK 在运行时使用的客户端初始化模式。 
+本快速入门演示如何实现使用 MIP c + + SDK 在运行时的客户端初始化模式。 
 
 > [!NOTE]
-> 对于使用 MIP 文件、策略或保护 AP 的任何客户端应用程序，都需要执行本快速入门中概述的步骤。 虽然本快速入门演示的是文件 API 的使用，但同样的模式也适用于使用策略和保护 API 的客户端。 之后的快速入门应是按顺序完成的，因为每一个都是在前一个的基础上构建的，本快速入门是第一个。
+> 对于使用 MIP 文件、策略或保护 AP 的任何客户端应用程序，都需要执行本快速入门中概述的步骤。 虽然本快速入门演示的是文件 API 的使用，但同样的模式也适用于使用策略和保护 API 的客户端。 按顺序完成其余的快速入门教程以前一版本，每个，如用这个是第一个。
 
 ## <a name="prerequisites"></a>必备组件
 
@@ -27,12 +27,12 @@ ms.locfileid: "54136219"
 - 完成 [Microsoft 信息保护 (MIP) SDK 安装和配置](setup-configure-mip.md)中的步骤。 此“客户端应用程序初始化”快速入门依赖于正确的 SDK 安装和配置。
 - 可选：
   - 查看[配置文件和引擎对象](concept-profile-engine-cpp.md)。 配置文件和引擎对象是使用 MIP文件/策略/保护 API 的客户端所需的通用概念。 
-  - 查看[身份验证概念](concept-authentication-cpp.md)，了解 SDK 和客户端应用程序如何实现身份验证和同意。
-  - 查看[观察程序概念](concept-async-observers.md)了解有关观察程序的详细信息以及实现方法。 MIP SDK 利用观察程序模式来实现异步事件通知。
+  - 审阅[身份验证概念](concept-authentication-cpp.md)若要了解如何通过 SDK 和客户端应用程序实现身份验证和许可。
+  - 查看[观察程序概念](concept-async-observers.md)了解有关观察程序的详细信息以及实现方法。 MIP SDK 使用观察者模式实现异步事件通知。
 
 ## <a name="create-a-visual-studio-solution-and-project"></a>创建 Visual Studio 解决方案和项目
 
-首先，创建并配置初始 Visual Studio 解决方案和项目，其他快速入门以该解决方案和项目为基础。 
+首先我们创建并配置初始的 Visual Studio 解决方案和项目中的其他快速入门生成。 
 
 1. 打开 Visual Studio 2017，依次选择“文件”菜单、“新建”、“项目”。 在“新建项目”对话框中：
    - 在左窗格中的“已安装”、“其他语言”下，选择“Visual C++”。
@@ -43,7 +43,7 @@ ms.locfileid: "54136219"
      [![创建 Visual Studio 解决方案](media/quick-app-initialization-cpp/create-vs-solution.png)](media/quick-app-initialization-cpp/create-vs-solution.png#lightbox)
 
 2. 将 MIP SDK 文件 API 的 Nuget 包添加到项目中：
-   - 在“解决方案资源管理器”中，右键单击项目节点（位于 top/solution 节点正下方），然后选择“管理 NuGet 包...”：
+   - 在中**解决方案资源管理器**，右键单击项目节点 （正下方的顶部/解决方案节点中），然后选择**管理 NuGet 包...**:
    - 在编辑器组选项卡区域中打开“NuGet 包管理器”选项卡时：
      - 选择“浏览”。
      - 在搜索框中输入“Microsoft.InformationProtection”。
@@ -58,7 +58,7 @@ ms.locfileid: "54136219"
 
 1. 向项目中添加一个新类，这将为你生成标头/.h 和实现/.cpp 文件：
 
-   - 在“解决方案资源管理器”中，再次右键单击项目节点，选择“添加”，然后选择“类”。
+   - 在中**解决方案资源管理器**，再次右键单击项目节点，选择**添加**，然后选择**类**。
    - 在“添加类”对话框上：
      - 在“类名”字段中，输入“profile_observer”。 请注意，根据你输入的名称，会自动填充“.h 文件”和“.cpp 文件”字段。
      - 完成后，单击“确定”按钮。
@@ -235,7 +235,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
 ## <a name="construct-a-file-profile-and-engine"></a>构造文件配置文件和引擎
 
-如前文所述，使用 MIP API 的 SDK 客户端需要配置文件和引擎对象。 通过添加代码来实例化配置文件和引擎对象，完成本快速入门的编码部分： 
+如前文所述，不需要使用 MIP Api 的 SDK 客户端的配置文件和引擎对象。 通过添加代码来实例化配置文件和引擎对象，完成本快速入门的编码部分： 
 
 1. 在“解决方案资源管理器”中，打开项目中包含 `main()` 方法的实现的 .cpp 文件。 它默认与包含它的项目同名，即在项目创建期间指定的名称。
 
@@ -259,8 +259,9 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
    int main()
    {
      // Construct/initialize objects required by the application's profile object
-     ApplicationInfo appInfo{"<application-id>",                    // ApplicationInfo object (App ID, app name)
-                 "<application-name>" };
+     ApplicationInfo appInfo{"<application-id>",                    // ApplicationInfo object (App ID, name, version)
+                 "<application-name>",
+                 "<application-version>"};
      auto profileObserver = make_shared<ProfileObserver>();         // Observer object                  
      auto authDelegateImpl = make_shared<AuthDelegateImpl>(         // Authentication delegate object (App ID)
                  "<application-id>");
@@ -277,8 +278,19 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
      // Set up promise/future connection for async profile operations; load profile asynchronously
      auto profilePromise = make_shared<promise<shared_ptr<FileProfile>>>();
      auto profileFuture = profilePromise->get_future();
-     mip::FileProfile::LoadAsync(profileSettings, profilePromise);
-     auto profile = profileFuture.get();
+    try
+    { 
+        mip::FileProfile::LoadAsync(profileSettings, profilePromise);
+    }
+    catch (const std::exception& e)
+    {
+        cout << "An exception occurred... are the Settings and ApplicationInfo objects populated correctly?\n\n"
+            << e.what() << "'\n";
+        system("pause");
+        return 1;
+
+    }
+    auto profile = profileFuture.get();
 
      // Construct/initialize engine object
      FileEngine::Settings engineSettings(
@@ -303,28 +315,28 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
        return 1;
      }
 
-      return 0;
-     }
-
+   return 0;
+   }
    ``` 
 
-3. 使用以下值替换刚才粘贴的源代码中的占位符值：
+3. 您只需在中粘贴，使用字符串常量的源代码中的所有占位符值替换都为：
 
    | 占位符 | 值 | 示例 |
    |:----------- |:----- |:--------|
-   | \<应用程序 ID\> | Azure AD 应用程序 ID (GUID) 分配给应用程序中注册[步骤 #2 的"MIP SDK 安装和配置"](/information-protection/develop/setup-configure-mip#register-a-client-application-with-azure-active-directory)一文。 将为 2 个实例。  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
-   | \<应用程序名称\> | 用户定义的应用程序友好名称。 必须包含有效的 ASCII 字符 (不包括;)，而且理想情况下在 Azure AD 注册中使用的应用程序名称匹配。 | AppInitialization |
-   | \<引擎帐户\> | 用于引擎标识的帐户。 在令牌获取期间使用用户帐户进行身份验证时，它必须与此值匹配。 | user1@tenant.onmicrosoft.com |
-   | \<引擎状态\> | 用户定义的与引擎关联的状态。 | MyAppState |
+   | \<应用程序 ID\> | Azure AD 应用程序 ID (GUID) 分配给应用程序中注册[步骤 #2 的"MIP SDK 安装和配置"](/information-protection/develop/setup-configure-mip#register-a-client-application-with-azure-active-directory)一文。 将为 2 个实例。 | `"0edbblll-8773-44de-b87c-b8c6276d41eb"` |
+   | \<application-name\> | 用户定义的应用程序友好名称。 必须包含有效的 ASCII 字符 (不包括;)，而且理想情况下在 Azure AD 注册中使用的应用程序名称匹配。 | `"AppInitialization"` |
+   | \<application-version\> | 你的应用程序的用户定义的版本信息。 必须包含有效的 ASCII 字符 (不包括;)。 | `"1.1.0.0"` |
+   | \<引擎帐户\> | 用于引擎标识的帐户。 在令牌获取期间使用用户帐户进行身份验证时，它必须与此值匹配。 | `"user1@tenant.onmicrosoft.com"` |
+   | \<引擎状态\> | 用户定义的与引擎关联的状态。 | `"My App State"` |
 
 
-4. 现在构建应用程序的最终版本并解决任何错误。 代码应已成功构建，但在完成下一个快速入门之前，代码将无法正常运行。 如果运行该应用程序，将看到类似于以下内容的输出。 除非完成下一个快速入门，否则你将没有访问令牌可提供。
+4. 现在构建应用程序的最终版本并解决任何错误。 代码应已成功构建，但在完成下一个快速入门之前，代码将无法正常运行。 如果您运行该应用程序，你会看到类似于以下输出。 除非完成下一个快速入门，否则你将没有访问令牌可提供。
 
    ```console
    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
    Set $authority to: https://login.windows.net/common/oauth2/authorize
    Set $resourceUrl to: https://syncservice.o365syncservice.com/
-   Be sure to sign in with user account:
+   Sign in with user account:
    Enter access token:
    ```
 

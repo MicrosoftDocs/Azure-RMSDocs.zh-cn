@@ -1,38 +1,42 @@
 ---
-title: 类 mip HttpDelegate
-description: 类 mip HttpDelegate 的参考信息
+title: 类 mip::HttpDelegate
+description: 记录 mip::httpdelegate 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 3e55f9aff5a9ebd97731ec21e408a33f22905648
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 68d26b23c1e3ea2e29c22316f80e18937ab78d5c
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445340"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651014"
 ---
 # <a name="class-miphttpdelegate"></a>类 mip::HttpDelegate 
 用于重写 HTTP 处理的接口。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 描述                                
+## <a name="summary"></a>总结
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public std::shared_ptr<HttpResponse> Send(const std::shared_ptr<HttpRequest>& request, const std::shared_ptr<void>& context)  |  发送 HTTP 请求。
+public std::\<HttpResponse\>发送 (const std:: shared_ptr\<HttpRequest\>（& a) 请求，const std:: shared_ptr\<void\>& 上下文)  |  发送 HTTP 请求。
+public void SendAsync(const std::shared_ptr\<HttpRequest\>& request, const std::shared_ptr\<void\>& context, const std::function\<void(std::shared_ptr\<HttpResponse\>)\>& fnCallback)  | _尚无记录。_
   
 ## <a name="members"></a>成員
   
-### <a name="httpresponse"></a>HttpResponse
+### <a name="send-function"></a>Send 函数
 发送 HTTP 请求。
 
 参数：  
-* **request**：HTTP 请求 
+* **请求**:HTTP 请求 
 
 
-* **context**：传递给导致此 HTTP 请求的 API 的相同不透明客户端上下文
+* **上下文**:传递到此 HTTP 请求会导致 API 相同的不透明的客户端上下文
 
 
 
   
-**返回结果**：HTTP 响应
+**返回**:HTTP 响应
+  
+### <a name="sendasync-function"></a>SendAsync 函数
+_尚无记录。_

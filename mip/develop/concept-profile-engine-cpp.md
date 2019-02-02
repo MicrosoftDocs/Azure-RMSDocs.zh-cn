@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 05a66dc7a00b976dfb9883f44b3c93a25b4b6975
-ms.sourcegitcommit: 0d3b43c9cedbaeae65299ac372fbfb9ad66ce27f
+ms.openlocfilehash: e29c128569549bbab2125bcce97d87eb74734750
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54183620"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651388"
 ---
 # <a name="microsoft-information-protection-sdk---profile-and-engine-object-concepts"></a>Microsoft 信息保护 SDK - 配置文件和引擎对象概念
 
@@ -36,12 +36,12 @@ MIP SDK 中有三种类型的配置文件：
 
 ### <a name="profile-settings"></a>配置文件设置
 
-- `Path`设置用户帐户 ：文件路径下的日志记录、 遥测和其他持久状态存储。
-- `useInMemoryStorage`设置用户帐户 ：一个布尔值，用于定义是否应将状态存储在内存中，或在磁盘上。
-- `authDelegate`设置用户帐户 ：类的共享的指针`mip::AuthDelegate`。 
-- `consentDelegate`设置用户帐户 ：类的共享的指针[ `mip::ConsentDelegate` ](reference/class_consentdelegate.md)。 
-- `observer`设置用户帐户 ：向配置文件的共享的指针`Observer`实现 (在[ `PolicyProfile` ](reference/class_mip_policyprofile_observer.md)， [ `ProtectionProfile` ](reference/class_mip_protectionprofile_observer.md)，并且[ `FileProfile` ](reference/class_mip_fileprofile_observer.md))。
-- `applicationInfo`设置用户帐户 ：一个[ `mip::ApplicationInfo` ](reference/mip-enums-and-structs.md#structures)对象。 有关应用程序使用的 SDK 与 Azure Active Directory 应用程序注册 ID 和名称匹配的信息。
+- `Path`：文件路径下的日志记录、 遥测和其他持久状态存储。
+- `useInMemoryStorage`：一个布尔值，用于定义是否应将状态存储在内存中，或在磁盘上。
+- `authDelegate`：类的共享的指针`mip::AuthDelegate`。 
+- `consentDelegate`：类的共享的指针[ `mip::ConsentDelegate` ](reference/class_mip_consentdelegate.md)。 
+- `observer`：向配置文件的共享的指针`Observer`实现 (在[ `PolicyProfile` ](reference/class_mip_policyprofile_observer.md)， [ `ProtectionProfile` ](reference/class_mip_protectionprofile_observer.md)，并且[ `FileProfile` ](reference/class_mip_fileprofile_observer.md))。
+- `applicationInfo`：一个[ `mip::ApplicationInfo` ](reference/mip-enums-and-structs.md#structures)对象。 有关应用程序使用的 SDK 与 Azure Active Directory 应用程序注册 ID 和名称匹配的信息。
 
 ## <a name="engines"></a>引擎
 
@@ -51,19 +51,19 @@ SDK 中有三个引擎类，每个 API 一个。 以下列表显示了引擎类�
 
 - [`mip::ProtectionEngine`](reference/class_mip_protectionengine.md)
 - [`mip::PolicyEngine`](reference/class_mip_policyengine.md)
-  - `ListSensitivityLabels()`设置用户帐户 ：获取加载的引擎的标签列表。
-  - `GetSensitivityLabel()`设置用户帐户 ：从现有内容获取的标签。
-  - `ComputeActions()`设置用户帐户 ：标签 id 和可选元数据，将返回的操作应发生的特定项的列表。
+  - `ListSensitivityLabels()`：获取加载的引擎的标签列表。
+  - `GetSensitivityLabel()`：从现有内容获取的标签。
+  - `ComputeActions()`：标签 id 和可选元数据，将返回的操作应发生的特定项的列表。
 - [`mip::FileEngine`](reference/class_mip_fileengine.md)
-  - `ListSensitivityLabels()`设置用户帐户 ：获取加载的引擎的标签列表。
-  - `CreateFileHandler()`设置用户帐户 ：创建`mip::FileHandler`特定文件或流。
+  - `ListSensitivityLabels()`：获取加载的引擎的标签列表。
+  - `CreateFileHandler()`：创建`mip::FileHandler`特定文件或流。
 
 ### <a name="engine-states"></a>引擎状态
 
 引擎可能具有以下两种状态之一：
 
-- `CREATED`设置用户帐户 ：创建指示 SDK 具有足够的本地状态信息后调用所需的后端服务。
-- `LOADED`设置用户帐户 ：SDK 已建立了引擎可操作的所需的数据结构。
+- `CREATED`：创建指示 SDK 具有足够的本地状态信息后调用所需的后端服务。
+- `LOADED`：SDK 已建立了引擎可操作的所需的数据结构。
 
 必须创建并加载引擎才能执行任意操作。 `Profile` 类公开了一些引擎管理方法：`AddEngineAsync`、`RemoveEngineAsync` 和 `UnloadEngineAsync`。
 

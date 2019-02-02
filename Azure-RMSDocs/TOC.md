@@ -23,7 +23,6 @@
 ### [应用程序如何支持 Azure Rights Management 保护](applications-support.md)
 #### [Office 应用程序和服务](office-apps-services-support.md)
 #### [运行 Windows Server 和使用文件分类基础结构的文件服务器](file-server-support.md)
-#### [适用于 Windows 和移动平台的 RMS 共享应用程序](sharing-app-support.md)
 #### [支持 RMS API 的其他应用程序](api-support.md)
 ## [个人 RMS 和 Azure 信息保护](rms-for-individuals.md)
 ## [也称为...](aka.md)
