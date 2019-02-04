@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ef9836a6e3b651986642d2c93128ea0f6b1e6112
-ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
+ms.openlocfilehash: 18c5028bf69f756b79328a26ce967f5e73492d2e
+ms.sourcegitcommit: b1e08bc29d50187532f00dc215ab331e0a7dbebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314843"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146785"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -44,7 +44,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 用户必须具有有效的用户名和密码才能访问受 Azure 信息保护保护的内容。 要详细了解 Azure 信息保护如何帮助保护数据，请参阅 [Azure 信息保护在保护数据方面的角色](/enterprise-mobility-security/solutions/azure-information-protection-securing-data)。 
 
 ## <a name="what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included"></a>需要为 Azure 信息保护准备哪个订阅，以及它包括哪些功能？
-请参阅 [Azure 信息保护](https://azure.microsoft.com/en-us/pricing/details/information-protection)页面上的订阅信息和功能列表。 
+请参阅 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)页面上的订阅信息和功能列表。 
 
 如果你的 Office 365 订阅包含 Azure Rights Management 数据保护，请下载 [Azure 信息保护许可数据表](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)，其中还包含一些有关许可的常见问题解答。
 
@@ -122,7 +122,7 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 
 此类警报可以帮助你检测环境中与数据相关的高级攻击和内部威胁。 这些警报使用机器学习来分析访问受保护数据的用户的行为。 
 
-可以通过[使用 Microsoft Graph 安全 API](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/security-api-overview) 来访问 Azure信息保护警报，也可以使用 Azure Monitor 将[警报流式传输](https://developer.microsoft.com/en-us/graph/docs/concepts/security_siemintegration)到 SIEM 解决方案，例如 Splunk 和 IBM Qradar。
+可以通过[使用 Microsoft Graph 安全 API](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/security-api-overview) 来访问 Azure信息保护警报，也可以使用 Azure Monitor 将[警报流式传输](https://developer.microsoft.com/graph/docs/concepts/security_siemintegration)到 SIEM 解决方案，例如 Splunk 和 IBM Qradar。
 
 有关 Microsoft Graph 安全 API 的详细信息，请参阅 [Microsoft Graph 安全 API 概述](https://developer.microsoft.com/graph/docs/concepts/security-concept-overview)。
 
@@ -195,7 +195,7 @@ Windows Server 文件分类基础结构在过去一直都有一个选项：对�
 
 - [适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题解答](./rms-client/mobile-app-faq.md)
 
-- [适用于 Mac 计算机和 Windows Phone 的 RMS 共享应用常见问题解答](https://technet.microsoft.com/dn451248)
+- [适用于 Mac 计算机的 RMS 共享应用的常见问题解答](https://technet.microsoft.com/dn451248)
 
 - [FAQ for Rights Management Sharing Application for Windows](https://technet.microsoft.com/dn467883)（适用于 Windows 的 Rights Management 共享应用程序常见问题解答）
 

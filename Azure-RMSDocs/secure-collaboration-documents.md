@@ -4,18 +4,18 @@ description: 用于在受 Azure 信息保护保护的文档上进行协作的端
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a5a1c0069a35073d9362e28ef18ad4c09d95df3d
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: cc62934195916f5db26e7a328957c7fb09f10a57
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393937"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067579"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
@@ -31,7 +31,7 @@ ms.locfileid: "54393937"
 
 - **对于不具有 Azure Active Directory 帐户的用户**：指定将与 Microsoft 帐户一起使用的电子邮件地址。 此帐户可能已经存在，或者用户可以在打开受保护文档时进行创建。 
     
-    若要使用 Microsoft 帐户打开文档，用户必须使用 Office 2016 即点即用。 其他 Office 版本尚不支持使用 Microsoft 帐户打开受 Office 保护的文档。
+    若要使用 Microsoft 帐户打开文档，用户必须使用 Office 365 应用（即点即用）。 其他 Office 版本尚不支持使用 Microsoft 帐户打开受 Office 保护的文档。
 
 - **对于任何身份已验证的用户**：此选项适用于不需要控制谁能访问受保护文档的情况，前提是可以验证用户身份。 如果内容受 Office 365 邮件加密的新功能保护，可以通过 Azure AD（使用 Microsoft 帐户），甚至是联合社交提供程序或一次性密码进行身份验证。 
 
@@ -140,7 +140,7 @@ ms.locfileid: "54393937"
 支持用户帐户、启用电子邮件的组、所有成员。 用户帐户和启用电子邮件的组可以包括来宾帐户。 除来宾帐户外的所有成员。
 
 ###### <a name="footnote-2"></a>脚注 2
-当前仅受 Office 2016 即点即用支持。
+当前仅受 Office 365 应用（即点即用）支持。
 
 
 

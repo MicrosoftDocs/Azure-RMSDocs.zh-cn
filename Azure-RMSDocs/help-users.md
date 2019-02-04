@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0f62134663cd7c784a694d25369698b4b7c9538c
-ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
+ms.openlocfilehash: b023eaa514fc22dcb3d595495c724d7d19e58c08
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54898794"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067663"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
@@ -73,7 +73,7 @@ ms.locfileid: "54898794"
 有关如何将此客户端用于 Windows 计算机的说明，请参阅 [Azure 信息保护客户端用户指南](./rms-client/client-user-guide.md)。
 
 
-## <a name="using-information-protection-with-office365-office-2016-or-office2013"></a>在 Office 365、Office 2016 或 Office 2013 中使用信息保护
+## <a name="using-information-protection-with-office365-office-2019-office-2016-or-office2013"></a>在 Office 365、Office 2019、Office 2016 或 Office 2013 中使用信息保护
 如果使用的是 Azure 权限管理服务，但尚未安装 Azure 信息保护客户端，那么用户就不会在 Office 桌面应用程序中看到 Azure 信息保护栏。 他们也不会在功能区上看到“保护”按钮，或在文件资源管理器中看到“分类和保护”。 这些附加内容有助于用户更轻松地保护文档和电子邮件。 对于这些用户，他们必须遵循类似以下步骤的说明。
 
 > [!TIP]
@@ -112,11 +112,11 @@ ms.locfileid: "54898794"
 
 #### <a name="to-protect-an-email-message-using-outlook-on-the-web"></a>使用 Outlook 网页版保护电子邮件的具体步骤
 
-1.  使用 Outlook 网页版创建一封电子邮件，发送给组织内的收件人。
+1. 使用 Outlook 网页版创建一封电子邮件，发送给组织内的收件人。
 
-2.  选择“保护”。 除非管理员已更改默认设置，否则自动选中“不要转发”选项。 若要更改默认设置，请依次选择“更改权限”和下拉菜单中的选项。 例如：“加密”或“\<公司名称> - 机密”。
+2. 选择“保护”。 除非管理员已更改默认设置，否则自动选中“不要转发”选项。 若要更改默认设置，请依次选择“更改权限”和下拉菜单中的选项。 例如：“加密”或“\<公司名称> - 机密”。
 
-3.  发送电子邮件。
+3. 发送电子邮件。
 
 与查看受保护文档相似，当收件人打开电子邮件时，首先需要进行身份验证。 如果已获得授权可以查看电子邮件，将通过为相应用户指定的受限[使用权限](configure-usage-rights.md)打开电子邮件。 
 

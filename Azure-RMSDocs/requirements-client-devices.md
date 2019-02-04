@@ -4,18 +4,18 @@ description: 确定哪些设备支持 Azure 信息保护中的 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/25/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 673e57a9a63dfb88ab9ef5f92a0f692ed31d7cdb
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 54a93e3a70e6add6ebd69d529074e337ef0a7a35
+ms.sourcegitcommit: b1e08bc29d50187532f00dc215ab331e0a7dbebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53304938"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146666"
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的客户端设备
 
@@ -39,13 +39,11 @@ ms.locfileid: "53304938"
 ## <a name="mobile-devices"></a>移动设备
 以下移动设备操作系统支持 Azure Rights Management 服务：
 
--   **Windows Phone**：Windows Phone 8.1
-
 -   **Android 手机和平板电脑**:最低版本为 Android 4.4
 
 -   **iPhone 和 iPad**:最低版本为 iOS 8.0
 
--   **Windows 平板电脑**:Windows 10 移动版和 Windows Phone 8.1 RT
+-   **Windows Phone 和平板电脑**：Windows 10 移动版
 
 
 ## <a name="next-steps"></a>后续步骤

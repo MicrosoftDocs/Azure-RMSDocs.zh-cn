@@ -4,19 +4,19 @@ description: 本入门教程适用于编辑组织的 Azure 信息保护策略，
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 01/29/2019
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: a619a05607f5061f51bae93d97cfd44086cefd55
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 2e08b21deb8d1b7ef99d77f56e1bf149a82df081
+ms.sourcegitcommit: 9a9c55c96a7e99bcca742e759a3f08507e3b9801
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024172"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231049"
 ---
 # <a name="tutorial-edit-the-azure-information-protection-policy-and-create-a-new-label"></a>教程：编辑 Azure 信息保护策略并创建新标签
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 在本教程中，你将了解如何执行以下操作：
 > [!div class="checklist"]
@@ -39,7 +39,7 @@ ms.locfileid: "53024172"
 
 2. 已将“Azure 信息保护”边栏选项卡添加到 Azure 门户，并确认已激活保护服务。
 
-    如果在执行这些操作时需要帮助，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户并查看策略](quickstart-viewpolicy.md)
+    如果在执行这些操作时需要帮助，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户和查看策略](quickstart-viewpolicy.md)
 
 3. 计算机上已安装 Azure 信息保护客户端。 
     
@@ -47,9 +47,11 @@ ms.locfileid: "53024172"
 
 4. 一台运行 Windows（最低配置为 Windows 7 Service Pack 1）的计算机，并在此计算机上，从以下类别之一登录到 Office 应用程序：
     
-    - 含 Office 2016 应用的 Office 365（最低版本为 1805，生成号 9330.2078）。 若要使用此选项，必须为帐户分配 Azure Rights Management 许可证。 此许可证包含在 Azure 信息保护订阅中。
+    - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
     
-    - 含 2016 应用或 2013 应用的 Office 365 专业增强版（即点即用或基于 Windows Installer 的安装）。
+    - Office 365 专业增强版。
+    
+    - Office 专业增强版 2019。
     
     - Office Professional Plus 2016。
     
@@ -91,17 +93,17 @@ ms.locfileid: "53024172"
 
 6. 另外，请务必将“在 Office 应用程序中显示信息保护栏”这一项设置为“开”。
 
-7. 选择此“策略: 全局”边栏选项卡上的“保存”，如果系统提示确认你的操作，请选择“确定”。 关闭此边栏选项卡。
+7. 选择此“策略: 全局”边栏选项卡上的“保存”，如果系统提示你确认操作，请选择“确定”。 关闭此边栏选项卡。
 
 ### <a name="create-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>创建保护新标签、视觉标记和分类提示条件
 
 现在，将为“机密”创建一个新的子标签。
 
-1. 从“分类” > “标签”菜单选项：右键单击“机密”标签，然后选择“添加子标签”。
+1. 从“分类” > “标签”菜单选项中：右键单击“机密”标签，然后选择“添加子标签”。
     
     如果没有名为“机密”的标签，可以选择另一个标签，也可以创建一个新标签，具体操作步骤仍与本教程相同，只存在细微差异。
 
-2. 在“子标签”边栏选项卡上，指定标签名称“财务”，并添加以下说明：“机密数据，包含仅限于员工的财务信息”。
+2. 在“子标签”边栏选项卡上，指定“财务”的标签名称，并添加以下说明：包含财务信息的机密数据仅限员工使用。
     
     此文本说明应如何使用所选标签，并显示为一个工具提示，帮助用户确定要选择的标签。
 
@@ -143,15 +145,15 @@ ms.locfileid: "53024172"
     
     单击“添加新条件”，然后在“条件”边栏选项卡中选择以下选项：
     
-    a. “选择条件类型”：保留默认设置“信息类型”。
+    a. **选择条件类型**：保留默认值“信息类型”。
     
-    b. 对于“选择一个行业”：保留默认设置“全部”。
+    b. 对于“选择行业”：保留默认值“全部”。
     
-    c. 在“选择信息类型”搜索框中：键入“信用卡号”。 然后，从搜索结果中选择“信用卡号”。
+    c. 在“选择信息类型”搜索框中：键入“信用卡卡号”。 然后，从搜索结果中选择“信用卡号”。
     
-    d. “最小出现次数” ：保留默认值“1”。
+    d. **最少出现次数**：保留默认值“1”。
     
-    e. “仅计算唯一值的发生次数”：保留默认设置“关闭”。
+    e. **仅计算唯一值的发生次数**：保留默认值“关闭”。
     
     ![Azure 信息保护教程 - 配置信用卡条件](./media/step2-configure-condition.png)
     
@@ -161,17 +163,17 @@ ms.locfileid: "53024172"
     
     ![Azure 信息保护教程 - 配置信用卡条件](./media/step2-see-condition.png)
 
-11. 对于“选择应用此标签的方式”：保留默认设置“推荐”，并且不要更改默认策略提示。 
+11. 对于**选择应用此标签的方式**：保留默认设置“推荐”，并且不要更改默认策略提示。 
 
 12. 在“添加备注以供管理员使用”框中，键入“仅用于测试目的”。
 
 13. 在此“子标签”边栏选项卡上单击“保存”。 如果系统提示你确认，请单击“确定”。 将创建和保存新标签，但尚未将其添加到策略。
 
-14. 从“分类” > “策略”菜单选项：再次选择“全局”，然后选择标签后的“添加或删除标签”链接。
+14. 从“分类” > “策略”菜单选项中：再次选择“全局”，然后选择标签后的“添加或删除标签”链接。
 
 15. 从“策略: 添加或删除标签”边栏选项卡中，选择刚刚创建的标签（名为“财务”的子标签），然后单击“确定”。
 
-16. 在“策略: 全局”边栏选项卡上，现在可以在全局策略中看到针对视觉标记和保护配置的新子标签。 例如：
+16. 在“策略:**全局”** 边栏选项卡上，现在可以在全局策略中看到针对视觉标记和保护配置的新子标签。 例如：
 
     ![Azure 信息保护教程 - 新建子标签](./media/info-protect-policy-configuredv2.png)
     
@@ -258,7 +260,7 @@ ms.locfileid: "53024172"
 
 2. 将策略设置恢复为你记下的原始值，然后选择“保存”。 
 
-3. 在“分类” > “标签”菜单选项的“Azure 信息保护 - 标签”边栏选项卡上，选择要创建的“财务”标签的上下文菜单 (...)。
+3. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，选择创建的“财务”标签的上下文菜单 (...)。
 
 4. 选择“删除此标签”，如果系统提示你进行确认，请选择“确定”。
 

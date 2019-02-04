@@ -4,18 +4,18 @@ description: 如果你了解或以前部署过 Active Directory Rights Managemen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/25/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 127b1c00a3b9e76da5b05032ef93287399cf0db7
-ms.sourcegitcommit: bc082cffaa698b89b28aef7034290553c26f667b
+ms.openlocfilehash: ffaa0f341cbe9fd59a63c27b4114923049efcdc6
+ms.sourcegitcommit: b1e08bc29d50187532f00dc215ab331e0a7dbebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53411824"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146683"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>比较 Azure 信息保护与 AD RMS
 
@@ -53,11 +53,11 @@ Azure 信息保护的一些主要差异：
 |与任何也使用 Azure AD 进行身份验证的组织自动实现文档的安全协作。 这意味着组织可以保护其与外部或其他组织共享的文档。|在组织外部实现文档的安全协作要求在两个组织之间以直接点对点的关系显式定义身份验证信任。 必须配置受信任的用户域 (TUD) 或使用 Active Directory 联合身份验证服务 (AD FS) 创建的联合信任。|
 |如果不存在任何身份验证信任关系，则向用户发送受保护的电子邮件（可选择附加自动受到保护的 Office 文档附件）。 使用联合与社交提供程序或一次性密码和 Web 浏览器进行查看时可能需要采取这种操作。|如果不存在任何身份验证信任关系，则不支持发送受保护的电子邮件。|
 |提供默认保护模板，将内容的访问权限仅限于自己的组织范围内；一个模板提供受保护内容的只读查看，另一个模板提供受保护内容的写入或修改权限。<br /><br />还可创建自己的自定义模板，其中包括只对用户的子集可见的部门模板。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。<br /><br />此外，如果模板不能满足需求，用户可以定义自己的一组权限。|没有默认模板；必须创建这些模板，然后分发自己的模板。 有关详细信息，请参阅 [AD RMS 策略模板注意事项](https://go.microsoft.com/fwlink/?LinkId=154765)。<br /><br />此外，如果模板不能满足需求，用户可以定义自己的一组权限。|
-|支持的 Microsoft Office 最低版本为 Office 2010，它需要 [Azure 信息保护客户端](./rms-client/aip-client.md)或 RMS 共享应用程序。<br /><br />Microsoft Office for Mac：<br /><br />- Microsoft Office for Mac 2016：支持|支持的 Microsoft Office 最低版本为 Office 2010。<br /><br />Microsoft Office for Mac：<br /><br />- Microsoft Office for Mac 2016：支持|
-|支持适用于 Windows、iOS 和 Android 的 [Azure 信息保护客户端](./rms-client/aip-client.md)。 RMS 共享应用继续支持 Mac 计算机和 Windows Phone。<br /><br />此外，Azure 信息保护客户端支持以下各项：<br /><br />- 与其他组织的用户共享。<br /><br />- 适用于用户的文档跟踪站点，包括撤消文档的功能。|支持适用于 Windows、iOS 和 Android 的 [Azure 信息保护客户端](./rms-client/aip-client.md)。 RMS 共享应用继续支持 Mac 计算机和 Windows Phone。 但是，共享不支持与其他组织的用户共享或文档跟踪站点以及用户撤销文档的功能。|
+|支持的 Microsoft Office 最低版本为 Office 2010，它需要 [Azure 信息保护客户端](./rms-client/aip-client.md)或 RMS 共享应用程序。|支持的 Microsoft Office 最低版本为 Office 2010。|
+|支持适用于 Windows、iOS 和 Android 的 [Azure 信息保护客户端](./rms-client/aip-client.md)。 RMS 共享应用继续支持 Mac 计算机。<br /><br />此外，Azure 信息保护客户端支持以下各项：<br /><br />- 与其他组织的用户共享。<br /><br />- 适用于用户的文档跟踪站点，包括撤消文档的功能。|支持适用于 Windows、iOS 和 Android 的 [Azure 信息保护客户端](./rms-client/aip-client.md)。 RMS 共享应用继续支持 Mac 计算机。 但是，共享不支持与其他组织的用户共享或文档跟踪站点以及用户撤销文档的功能。|
 |使用 Azure 信息保护客户端时，可以对大多数[文件类型](./rms-client/client-admin-guide-file-types.md)进行分类和保护。<br /><br />对于其他应用程序，检查[支持 Azure Rights Management 数据保护的应用程序](./requirements-applications.md)中的表。|使用 Azure 信息保护客户端时，可以对大多数[文件类型](./rms-client/client-admin-guide-file-types.md)进行保护。<br /><br />对于其他应用程序，检查[支持 Azure Rights Management 数据保护的应用程序](./requirements-applications.md)中的表。|
 |支持的 Windows 客户端最低版本为 Windows 7 SP1。|支持的 Windows 客户端最低版本为 Windows 7 SP1。|
-|移动设备支持包括 Windows Phone、Android、iOS 和 Windows RT。<br /><br />在支持 Exchange ActiveSync IRM 协议的所有移动设备平台上，也支持使用该协议管理电子邮件。|移动设备支持包括 Windows Phone、Android、iOS 和 Windows RT，并需要 [Active Directory Rights Management 服务移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)。<br /><br />在支持 Exchange ActiveSync IRM 协议的所有移动设备平台上，支持使用 Exchange ActiveSync IRM 管理电子邮件。|
+|移动设备支持包括 Windows 10 移动版、Android 版和 iOS 版。<br /><br />在支持 Exchange ActiveSync IRM 协议的所有移动设备平台上，也支持使用该协议管理电子邮件。|移动设备支持包括 Windows 10 移动版、Android 版和 iOS 版，并需要 [Active Directory Rights Management Services 移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)。<br /><br />在支持 Exchange ActiveSync IRM 协议的所有移动设备平台上，支持使用 Exchange ActiveSync IRM 管理电子邮件。|
 |支持适用于计算机和移动设备的多因素身份验证 (MFA)。<br /><br />有关详细信息，请参阅[多重身份验证 (MFA) 和 Azure 信息保护](./requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection)。|如果将 IIS 配置为请求证书，将支持智能卡身份验证。|
 |支持加密模式 2，而无需额外配置，该模式针对各种密钥长度和加密算法提供更强大的安全性。<br /><br />有关详细信息，请参阅本文中的[对签名和加密的加密控制](#cryptographic-controls-for-signing-and-encryption)部分以及 [AD RMS 加密模式](https://go.microsoft.com/fwlink/?LinkId=266659)。|默认情况下支持加密模式 1，需要额外配置才能支持加密算法 2，以提供更强大的安全性。<br /><br />有关详细信息，请参阅本文中的[对签名和加密的加密控制](#cryptographic-controls-for-signing-and-encryption)部分以及 [AD RMS 加密模式](https://go.microsoft.com/fwlink/?LinkId=266659)。|
 |支持从 AD RMS 迁移，如果需要，支持迁移到 AD RMS：<br /><br />- [从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)<br /><br />- [解除 Azure 信息保护授权并停用 Azure 信息保护](decommission-deactivate.md)|支持从 Azure 信息保护迁移以及迁移到 Azure 信息保护：<br /><br />- [解除 Azure 权限管理授权并停用 Azure 权限管理](decommission-deactivate.md)<br /><br />- [从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)|

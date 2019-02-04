@@ -4,36 +4,36 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 3 阶段涉及从 AD 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/11/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5aa86c3806dd23787d2661b4a4ac2e6850d1e907
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 659f42f71ef49cd1e632c0ac46416d51b9c8cfb1
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393892"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067612"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 3。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 7。
 
 ## <a name="step-7-reconfigure-windows-computers-to-use-azure-information-protection"></a>步骤 7. 重新配置 Windows 计算机以使用 Azure 信息保护
 
-对于使用 Office 2016 即点即用桌面应用的 Windows 计算机：
+对于使用 Office 365 应用、Office 2019 或 Office 2016 即点即用桌面应用的 Windows 计算机：
 
 - 可通过 DNS 重定向，将这些客户端重新配置为使用 Azure 信息保护。 这是客户端迁移的首选方法，因为它是最简单的。 但是，此方法限于 Windows 计算机上的 Office 2016（或更高版本）即点即用桌面应用。
     
     此方法要求创建新的 SRV 记录，并在 AD RMS 发布终结点上为用户设置 NTFS 拒绝权限。
 
-- 对于不使用 Office 2016 即点即用版本的 Windows 计算机：
+- 对于不使用 Office 2019 或 Office 2016 即点即用版本的 Windows 计算机：
     
-    不能使用 DNS 重定向，而必须使用注册表编辑。 如果混合使用 Office 2016 和其他版本的 Office，可使用这种方法处理所有 Windows 计算机，或结合使用 DNS 重定向和编辑注册表。 
+    不能使用 DNS 重定向，而必须使用注册表编辑。 如果混合使用能够和不能够使用 DNS 重定向的 Office 版本，可使用这种方法处理所有 Windows 计算机，或结合使用 DNS 重定向和编辑注册表。 
     
     可通过编辑和部署可下载脚本，更轻松实现注册表更改。 
 
@@ -41,7 +41,7 @@ ms.locfileid: "54393892"
 
 ## <a name="client-reconfiguration-by-using-dns-redirection"></a>通过 DNS 重定向重新配置客户端
 
-此方法仅适用于运行 Office 2016（或更高版本）即点即用桌面应用的 Windows 客户端。 
+此方法仅适用于运行 Office 365 应用和 Office 2016（或更高版本）即点即用桌面应用的 Windows 客户端。 
 
 1. 创建使用以下格式的 DNS SRV 记录：
     
@@ -67,7 +67,7 @@ ms.locfileid: "54393892"
     |**端口号**|80|  
     |**提供此服务的主机**|5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com|  
 
-2. 在 AD RMS 发布终结点上为 Office 2016 用户设置拒绝权限：
+2. 在 AD RMS 发布终结点上为运行 Office 365 应用或 Office 2016（或更高版本）的用户设置拒绝权限：
 
     a. 在群集中的某个 AD RMS 服务器上，启动 Internet Information Services (IIS) 管理器控制台。
 
@@ -77,18 +77,18 @@ ms.locfileid: "54393892"
 
     d. 在“licensing.asmx 权限”对话框中，选择“用户”以为所有用户设置重定向，或单击“添加”并指定包含需重定向用户的组。
     
-    即使所有用户都使用 Office 2016，最好还是先指定部分用户来进行分阶段迁移。
+    即使所有用户都使用支持 DNS 重定向的 Office 版本，最好还是先指定部分用户来进行分阶段迁移。
     
     e. 对于所选组，为“**读取和执行**”及“**读取**”权限选择“**拒绝**”，然后两次单击“**确定**”。
 
-    f. 若要确认此配置按预期工作，请尝试从浏览器直接连接到 licensing.asmx 文件。 应看到以下错误消息，它将触发运行 Office 2016 的客户端查找 SRV 记录：
+    f. 若要确认此配置按预期工作，请尝试从浏览器直接连接到 licensing.asmx 文件。 应看到以下错误消息，它将触发运行 Office 365 应用或 Office 2019 或 Office 2016 的客户端查找 SRV 记录：
     
-    错误消息 401.3: 无权使用所提供的凭据查看此目录或页面(由于访问控制列表，访问被拒绝)**
+    错误消息 401.3: 无权使用所提供的凭据查看此目录或页面(由于访问控制列表，访问被拒绝)
 
 
 ## <a name="client-reconfiguration-by-using-registry-edits"></a>使用注册表编辑重新配置客户端
 
-此方法适用于所有 Windows 客户端，应在这些客户端上未运行 Office 2016 而是运行较早版本时使用。 此方法使用两个迁移脚本重新配置 AD RMS 客户端：
+此方法适用于所有 Windows 客户端，应在这些客户端上未运行 Office 365 应用或 Office 2019 或 Office 2016 而是运行较早版本时使用 。 此方法使用两个迁移脚本重新配置 AD RMS 客户端：
 
 - Migrate-Client.cmd
 

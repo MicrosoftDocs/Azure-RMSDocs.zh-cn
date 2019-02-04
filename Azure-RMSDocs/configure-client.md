@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3edcaf6b7751996a6d162eeec7cfc8ba3e352940
-ms.sourcegitcommit: 2daa75cda8475028a3dac83d70505fcfccef42a1
+ms.openlocfilehash: 10fc4c158cd4669b67c28e4968b0a3c4e7b889ad
+ms.sourcegitcommit: b1e08bc29d50187532f00dc215ab331e0a7dbebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54361777"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146836"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：客户端安装和配置
 
@@ -35,7 +35,7 @@ Azure 信息保护客户端通过安装 Office 外接程序与 Office 应用程�
 若要安装适用于这些常用移动平台的 Azure 信息保护客户端，可通过使用 [Microsoft Azure 信息保护页](https://go.microsoft.com/fwlink/?LinkId=303970)上的链接下载相关应用。 不需要配置。
 
 > [!NOTE]
-> 针对 Mac 计算机和 Windows Phone，可通过此页中的链接下载适用于移动设备的 RMS 共享应用。 这些设备当前不支持 Azure 信息保护客户端。
+> 针对 Mac 计算机，可通过此页中的链接下载适用于移动设备的 RMS 共享应用。 这些计算机不支持 Azure 信息保护客户端。
 
 **如果有 Microsoft Intune**：由于 Azure 信息保护应用使用 Microsoft Intune 应用软件开发工具包生成，因此通过 Intune 注册 iOS 和 Android 设备时，可以为这些设备部署并管理 Azure 信息保护应用：
 

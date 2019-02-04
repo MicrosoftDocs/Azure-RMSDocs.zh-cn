@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ba44c23b56c2832268f0ed6df122a347c9a8fdf3
-ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
+ms.openlocfilehash: 0d1cae062602897fce6d36078cfac3b164c7d614
+ms.sourcegitcommit: b1e08bc29d50187532f00dc215ab331e0a7dbebe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53218453"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146717"
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
 
@@ -30,7 +30,7 @@ Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](w
 
 但是非常重要的一点是，经过授权的人员和服务（例如搜索和索引）可以继续读取和检查受保护的数据。 无法通过其他使用对等加密的信息保护解决方案轻松实现此功能。 你可能已了解到这种功能叫做“数据推理”，并且其是保持对组织数据进行控制的关键所在。
 
-下图说明了此服务如何为 Office 365 以及本地服务器和服务提供保护解决方案。 此外，还会发现运行 Windows、Mac OS、iOS、Android 和 Windows Phone 的常见最终用户设备支持该保护。
+下图说明了此服务如何为 Office 365 以及本地服务器和服务提供保护解决方案。 此外，还会发现运行 Windows、Mac OS、iOS 和 Android 的常见最终用户设备支持该保护。
 
 
 ![Azure RMS 工作方式](./media/AzRMS_elements.png)

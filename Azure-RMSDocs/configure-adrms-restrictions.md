@@ -4,16 +4,16 @@ description: 具有 Azure 信息保护的 HYOK (AD RMS) 保护概述、其支持
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: d1613d30dbb59395254ca5bd56222c15fcb75058
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 12f199f6bae08a2b57cbdae14b83175679446c1c
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393572"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067714"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>用于 Azure 信息保护的保留自己的密钥 (HYOK) 保护
 
@@ -65,8 +65,8 @@ ms.locfileid: "54393572"
 
 |平台|应用程序|支持|
 |----------------------|----------|-----------|
-|Windows|带有 Office 2016 和 Office 2013 的 Azure 信息保护客户端 <br /><br />- Word、Excel、PowerPoint|保护:是<br /><br />使用：是|
-|Windows|带有 Office 2016 和 Office 2013 的 Azure 信息保护客户端 <br /><br />- Outlook|保护:是<br /><br />使用：是|
+|Windows|带有 Office 365 应用、Office 2019、Office 2016 和 Office 2013 的 Azure 信息保护客户端 <br /><br />- Word、Excel、PowerPoint|保护:是<br /><br />使用：是|
+|Windows|带有 Office 365 应用、Office 2019、Office 2016 和 Office 2013 的 Azure 信息保护客户端 <br /><br />- Outlook|保护:是<br /><br />使用：是|
 |Windows|具有文件资源管理器的 Azure 信息保护客户端|保护:是 <br /><br />使用：是|
 |Windows|Azure 信息保护查看器|保护:“不适用”<br /><br />使用：是|
 |Windows|带有 PowerShell 标签 cmdlet 的 Azure 信息保护客户端|保护:是<br /><br />使用：是|
@@ -148,7 +148,7 @@ AD RMS 部署必须满足以下要求，才能为 Azure 信息保护标签提供
 
 - 如果与组织外部的人员共享受 HYOK 保护的文档或电子邮件：通过使用受信任的用户域 (TUD) 或使用通过 Active Directory 联合身份验证服务 (AD FS) 创建的联合信任，为在与其他组织的直接点对点关系中显式定义的信任配置 AD RMS。
 
-- 用户拥有的 Office 版本为 Office 2016 Professional Plus 或 Office 2013 Professional Plus Service Pack 1，并且在 Windows 7 Service Pack 1 或更高版本上运行。 请注意，此方案不支持 Office 2010 和 Office 2007。
+- 用户拥有的 Office 版本支持信息权限管理 (IRM) 且至少为 Office 2013 专业增强版 Service Pack 1，并且在 Windows 7 Service Pack 1 或更高版本上运行。 请注意，此方案不支持 Office 2010 和 Office 2007。
     
     - 对于 Office 2016，基于 Microsoft Installer (.msi) 的版本：已安装了 [2018 年 3 月 6 日发布的 Microsoft Office 2016 的更新 4018295](https://support.microsoft.com/en-us/help/4018295/march-6-2018-update-for-office-2016-kb4018295)。
 

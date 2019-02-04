@@ -4,18 +4,18 @@ description: 此信息适用于以仅保护模式运行 Azure 信息保护客户
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2f73f8bf107aaebe0e87588c410e1e7f66093ef7
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: dedacab4509b88f300739bd92012debedfaacf7d
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305091"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067962"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>用户指南：Azure 信息保护客户端的仅保护模式
 
@@ -55,7 +55,7 @@ ms.locfileid: "53305091"
 
 ## <a name="supported-tasks-for-protection-only-mode"></a>仅保护模式支持的任务
 
-- 通过使用 Office 信息权限管理 (IRM) 功能保护（和取消保护）Office 应用中的文档和电子邮件：例如：单击“文件” > “信息” > “保护文档” > “限制访问”。 有关详细信息，请参阅[在 Office 365、Office 2016 或 Office 2013 中使用信息保护](../help-users.md)。
+- 通过使用 Office 信息权限管理 (IRM) 功能保护（和取消保护）Office 应用中的文档和电子邮件：例如：单击“文件” > “信息” > “保护文档” > “限制访问”。 有关详细信息，请参阅[在 Office 365、Office 2019、Office 2016 或 Office 2013 中使用信息保护](../help-users.md#using-information-protection-with-Office-365-Office 2019-Office-2016-or-Office-2013)。
 
 - 使用 Windows 文件资源管理器保护（和取消保护）文件：右键单击文件或文件夹，然后单击“分类和保护”。 若要应用管理员已配置的保护，请在“分类和保护 - Azure 信息保护”对话框中，单击“选择模版”，然后选择任一可用模板。
 

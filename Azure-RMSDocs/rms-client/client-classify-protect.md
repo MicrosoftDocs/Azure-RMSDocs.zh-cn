@@ -4,22 +4,22 @@ description: 说明如何对文档和电子邮件进行分类和保护。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b1d46cb3c98c520ab6900f910f691af920337334
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: e0404f21ae3fbd5a4e9be86c9372645a4a425b38
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393476"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067782"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>用户指南：使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类和保护。 如果只需对文档和电子邮件进行分类（但不保护），请参阅[仅分类说明](client-classify.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
@@ -77,7 +77,7 @@ ms.locfileid: "54393476"
 
 - 如果缺少应用保护的标签，那么可能你使用的 Office 版本不支持应用 Rights Management 保护。 若要验证，单击“保护” > “帮助和反馈”。 在对话框中，检查“客户端状态”部分中是否显示消息“此客户端未获许可使用 Office Professional Plus”。 
     
-    如果你安装了最低版本 1805 生成号为 9330.2078 的 Office 2016 应用，并且你的帐户分配了一个 Azure Rights Management（也称为 Office 365 Azure 信息保护）许可证，则不需要安装 Office Professional Plus。
+    如果你有 Office 365 商业版或 Microsoft 365 商业版中的 Office 应用，则无需使用 Office 专业增强版，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
 
 - 此标签采用的作用域策略可能不包括你的帐户。 请与你的技术支持或管理员一起检查。
 

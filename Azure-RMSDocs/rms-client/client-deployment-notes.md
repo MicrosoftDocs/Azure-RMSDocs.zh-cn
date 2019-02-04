@@ -4,18 +4,18 @@ description: 关于安装、支持的操作系统、注册表设置以及 Rights
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 36f8452525f614b4cca1bed15d4d63b5e4ae33f0
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: ff0b5dd04673b7b8f4e1d458d1f02e66eee908d9
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067765"
 ---
 # <a name="rms-client-deployment-notes"></a>RMS 客户端部署说明
 
@@ -180,7 +180,7 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 >  
 > - 当用户从 Office 应用程序启动登录时，将使用进行身份验证所用的用户名（和域）来标识要使用的 Azure 信息保护租户。 在这种情况下，不需要注册表设置，也不会检查 SCP。
 > 
-> - 为 Office 2016 即点即用桌面应用配置 [DNS 重定向](../migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)后，RMS 客户端可通过拒绝访问以前发现的 AD RMS 群集，查找 Azure Rights Management 服务。 此拒绝操作会触发客户端查找 SRV 记录，将客户端重定向到租户的 Azure Rights Management 服务。 此 SRV 记录还允许 Exchange Online 解密受 AD RMS 群集保护的电子邮件。 
+> - 为 Office 即点即用桌面应用配置 [DNS 重定向](../migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)后，RMS 客户端可通过拒绝访问以前发现的 AD RMS 群集，查找 Azure 权限管理服务。 此拒绝操作会触发客户端查找 SRV 记录，将客户端重定向到租户的 Azure Rights Management 服务。 此 SRV 记录还允许 Exchange Online 解密受 AD RMS 群集保护的电子邮件。 
 
 ### <a name="ad-rms-only-enabling-server-side-service-discovery-by-using-active-directory"></a>仅限 AD RMS：使用 Active Directory 启用服务器端服务发现
 如果你的帐户拥有足够的权限（AD RMS 服务器的企业管理员和本地管理员），则可以在安装 AD RMS 根群集服务器时自动注册服务连接点 (SCP)。 如果 SCP 已存在于林中，则必须先删除现有的 SCP，然后才能注册新的 SCP。

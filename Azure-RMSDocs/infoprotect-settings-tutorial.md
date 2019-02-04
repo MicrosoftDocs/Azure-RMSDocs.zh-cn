@@ -4,19 +4,19 @@ description: 本入门教程介绍如何配置 Azure 信息保护策略设置，
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 01/24/2019
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: 0341ba1b232551f89e1ee43f77a3425b8c6e8ffb
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 324f13a61d287fd883e9336c6e17250e9ab9ff9f
+ms.sourcegitcommit: 9a9c55c96a7e99bcca742e759a3f08507e3b9801
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024359"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231015"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 在本教程中，你将了解如何执行以下操作：
 > [!div class="checklist"]
@@ -41,17 +41,19 @@ ms.locfileid: "53024359"
 
 2. 已将“Azure 信息保护”边栏选项卡添加到 Azure 门户，并确认已激活保护服务。
 
-    如果在执行这些操作时需要帮助，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户并查看策略](quickstart-viewpolicy.md)
+    如果在执行这些操作时需要帮助，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户和查看策略](quickstart-viewpolicy.md)
 
 3. 计算机上已安装 Azure 信息保护客户端。 
     
     可以转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe，安装客户端。
 
-4. 一台运行 Windows（最低配置为 Windows 7 Service Pack 1）的计算机，并在此计算机上，从以下类别之一登录到 Office 应用程序：
+4. 一台运行 Windows（最低配置为 Windows 7 Service Pack 1）的计算机，并在此计算机上，从以下类别之一登录到 Office 应用：
     
-    - 含 Office 2016 应用的 Office 365（最低版本为 1805，生成号 9330.2078）。 若要使用此选项，必须为帐户分配 Azure Rights Management 许可证。 此许可证包含在 Azure 信息保护订阅中。
+    - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
     
-    - 含 2016 应用或 2013 应用的 Office 365 专业增强版（即点即用或基于 Windows Installer 的安装）。
+    - Office 365 专业增强版。
+    
+    - Office 专业增强版 2019。
     
     - Office Professional Plus 2016。
     
@@ -94,7 +96,7 @@ ms.locfileid: "53024359"
     
     ![Azure 信息保护教程 - 更改的默认设置](./media/defaultsettings-aip-changed.png)
 
-5. 选择此“策略: 全局”边栏选项卡上的“保存”，如果系统提示确认你的操作，请选择“确定”。 
+5. 选择此“策略: 全局”边栏选项卡上的“保存”，如果系统提示你确认操作，请选择“确定”。 
 
 ## <a name="see-your-policy-settings-in-action"></a>在实际操作中查看策略设置 
 

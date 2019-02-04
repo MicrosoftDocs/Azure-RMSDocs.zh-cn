@@ -4,18 +4,18 @@ description: 对 Microsoft Azure 信息保护相关的单词、短语或缩略�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 81595e38ed9dbaaf267ac86326ec0e2d8fd3e6b3
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 9d9aad27d0c76552dbf7234bf5849eeb72058cae
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305533"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067945"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 
@@ -58,7 +58,7 @@ Azure 信息保护客户端|Azure 信息保护客户端，便于用户、管理�
 |IRM|请参阅 *信息权限管理*。|
 |Office 消息加密|经常缩写为 OME。<br /><br />新的 Office 365 消息加密功能与 Azure Rights Management 服务本机集成，可为内部和外部用户提供相同的电子邮件保护、自动刷新模板，并支持“创建自己的密钥 (BYOK)”方案。 以前的 OME 实现仅面向外部收件人，需要邮件流规则，并且不支持 BYOK。|
 |MSDRM|有时在 RMS 客户端 1.0（现已被新的客户端 MSIPC 取代）的参考信息中出现。 这个旧版客户端支持使用 RMS SDK 1.0 开发的应用程序，并支持 Office 2010 和 Office 2007、Exchange 2010 和 Exchange 2013 以及 SharePoint 2010 和 SharePoint 2007。|
-|MSIPC|有时在 RMS 客户端 2.0（取代了旧版 RMS 客户端 MSDRM）的参考信息中出现。 这个较新版客户端支持使用 RMS SDK 2.0 开发的应用程序，并支持 Office 2016 和 Office 2013、SharePoint 2013 和 RMS 共享应用程序以及 Azure 信息保护客户端。|
+|MSIPC|有时在 RMS 客户端 2.0（取代了旧版 RMS 客户端 MSDRM）的参考信息中出现。 这个较新版客户端支持使用 RMS SDK 2.0 开发的应用程序，并支持 Office 365 专业增强版、Office 2019、Office 2016、Office 2013、SharePoint 2013 和 RMS 共享应用程序以及 Azure 信息保护客户端。|
 |本机保护|所有启用的应用程序中提供的一种保护级别，可阻止未经授权的人员打开某个文件，并且还可以强制实施更严格的策略，例如只读、不允许打印。 此外，这种保护将一直伴随文件，即使将该文件转发给他人或将其保存在他人可以访问的公共位置。|
 |。pfile|在受 Rights Management 服务的一般性保护的所有文件后面附加的文件扩展名。|
 |权限级别|即对使用权限进行逻辑分组，使得最终用户和管理员更容易选择基于角色的配置选项。 例如，审阅者和合著者。|

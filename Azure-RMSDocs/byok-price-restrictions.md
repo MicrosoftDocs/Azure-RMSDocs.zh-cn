@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 68e479eb7f19f60d6d68b913eae46dd287b5a04f
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: ea82ec3aacb8abbd4b9f15d0150bf7ff535e57db
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305142"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067979"
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 定价和限制
 
@@ -52,7 +52,7 @@ ms.locfileid: "53305142"
 
 ## <a name="restrictions-when-using-byok"></a>使用 BYOK 时的限制
 
-BYOK 和使用情况日志记录可无缝地适用于与 Azure 信息保护使用的 Azure Rights Management 服务集成的每个应用程序。 其中包括 SharePoint Online 等云服务、运行 Exchange 和 SharePoint 的本地服务器（它们通过使用 RMS 连接器来使用 Azure Rights Management 服务）、Office 2016 和 Office 2013 等客户端应用程序。 无论哪个应用程序请求 Azure Rights Management 服务，你都可获得密钥使用情况日志。
+BYOK 和使用情况日志记录可无缝地适用于与 Azure 信息保护使用的 Azure Rights Management 服务集成的每个应用程序。 其中包括 SharePoint Online 等云服务、运行 Exchange 和 SharePoint 的本地服务器（它们通过使用 RMS 连接器来使用 Azure Rights Management 服务）、Office 2019、Office 2016 和 Office 2013 等客户端应用程序。 无论哪个应用程序请求 Azure Rights Management 服务，你都可获得密钥使用情况日志。
 
 如果先前已通过从 Azure RMS 导入受信任的发布域 (TPD) 启用了 Exchange Online IRM，请按照 [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)（设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能）中的说明，在支持将 BYOK 用于 Azure 信息保护的 Exchange Online 中启用这些新功能。
 

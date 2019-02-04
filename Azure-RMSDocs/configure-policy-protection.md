@@ -4,20 +4,20 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 075441ef848f3ebe5e106f5989a99981037711bd
-ms.sourcegitcommit: 8bda26b8b84cb8b66ae8f927906710d60c4b6a80
+ms.openlocfilehash: eafcbf02ea6585b8a1434e210c274648982c0894
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54397838"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067289"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
->适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 可通过使用 Rights Management 服务保护最敏感的文档和电子邮件。 此服务使用加密、标识和身份验证策略，有助于防止数据丢失。 保护应用于配置为使用 Rights Management 保护文档和电子邮件的标签，用户还可以在 Outlook 中选择“不可转发”按钮。
 
@@ -105,7 +105,7 @@ ms.locfileid: "54397838"
        选择所有成员或浏览目录时，用户和组必须有电子邮件地址。 在生产环境中，他们几乎始终都有电子邮件地址，但在简单的测试环境中，可能需要为用户帐户或组添加电子邮件地址。
         
        ###### <a name="more-information-about-add-any-authenticated-users"></a>详细了解如何**添加任何身份已验证的用户** 
-       此设置不限制谁能访问标签保护的内容，同时仍加密内容，并提供限制内容使用方式（权限）和访问方式（到期和脱机访问）的选项。 不过，打开受保护内容的应用程序必须能够支持所使用的身份验证。 鉴于此，Google 等联合社交提供程序以及一次性密码身份验证应仅在你使用 Exchange Online 和 Office 365 邮件加密的新功能时，才只用于电子邮件。 可以将 Microsoft 帐户与 Azure 信息保护查看器和 Office 2016 即点即用结合使用。 
+       此设置不限制谁能访问标签保护的内容，同时仍加密内容，并提供限制内容使用方式（权限）和访问方式（到期和脱机访问）的选项。 不过，打开受保护内容的应用程序必须能够支持所使用的身份验证。 鉴于此，Google 等联合社交提供程序以及一次性密码身份验证应仅在你使用 Exchange Online 和 Office 365 邮件加密的新功能时，才只用于电子邮件。 可以将 Microsoft 帐户与 Azure 信息保护查看器和 Office 365 应用（即点即用）结合使用。 
           
        任何经过身份验证的用户设置的一些典型方案：
        - 不介意谁查看内容，但希望限制内容的使用方式。 例如，不希望对内容执行编辑、复制或打印操作。
@@ -242,7 +242,7 @@ ms.locfileid: "54397838"
 
 - 当 Exchange Online 使用 [Office 365 邮件加密中的新功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)时，此标签适用于电子邮件。 
  
-- 对于自动受保护的 Office 附件，可以在浏览器中查看这些文档。 若要编辑这些文档，请使用 Office 2016 即点即用和使用相同电子邮件地址的 Microsoft 帐户下载和编辑它们。 [详细信息](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- 对于自动受保护的 Office 附件，可以在浏览器中查看这些文档。 若要编辑这些文档，请使用 Office 365 应用（即点即用）和使用相同电子邮件地址的 Microsoft 帐户下载和编辑它们。 [详细信息](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 
 > [!NOTE]

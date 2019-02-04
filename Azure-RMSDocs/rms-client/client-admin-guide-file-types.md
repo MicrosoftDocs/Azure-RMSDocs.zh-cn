@@ -4,22 +4,22 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3d4285b77e0ccbfd21b4ed536f8c002ffa8d2a28
-ms.sourcegitcommit: fb0a9593f1e69306040fabda9bc9ad4977b21be8
+ms.openlocfilehash: 9ba401db68ceb3e37db9fc77d5721b9e9a235d23
+ms.sourcegitcommit: 0fad4196f397fa32c60e6d24791fcad43689c4ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54751530"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55088133"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用对象：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 Azure 信息保护客户端可以将以下内容应用于文档和电子邮件：
 
@@ -160,15 +160,15 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
     - 对于 32 位版本的 Windows：HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
 
-    - 对于 64 位版本的 Windows：HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection
+    - 对于 64 位版本的 Windows：HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection 和 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
 
 2. 在新添加的项（例如 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\\\*）中，创建一个名为“Encryption”、数据值为 Pfile 的新字符串值 (REG_SZ)。
 
     此设置将导致 Azure 信息保护客户端应用常规保护。
 
-这两个设置会导致 Azure 信息保护客户端将常规保护应用于具有某一文件扩展名的所有文件。 如果这是你的目标，则无需进行任何进一步的配置。 但是，你可以为特定文件类型定义例外，以便它们仍受本机保护。 为此，你必须针对每个文件类型对注册表执行三个额外的编辑操作：
+这两个设置会导致 Azure 信息保护客户端将常规保护应用于具有某一文件扩展名的所有文件。 如果这是你的目标，则无需进行任何进一步的配置。 但是，你可以为特定文件类型定义例外，以便它们仍受本机保护。 为此，你必须针对每个文件类型对注册表执行三个（针对 32 位 Windows）或六个（针对 64 位 Windows）额外的编辑操作：
 
-1. 对于 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection（32 位 Windows）或 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection（64 位 Windows）：添加一个具有该文件扩展名的新项（不带前面的句点）。
+1. 对于 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection** 和 **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection**（如果适用）：添加一个具有该文件扩展名的新项（不带前面的句点）。
 
     例如，对于文件扩展名为 .docx 的文件，创建一个名为 **DOCX**的项。
 
