@@ -4,32 +4,33 @@ description: 本文将帮助你了解如何使用 Python 获取 OAuth2 访问令
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 02/04/2019
 ms.author: bryanla
-ms.openlocfilehash: 4d6db3d2bd2e2b980770027e07104f7528264e66
-ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
+ms.openlocfilehash: 423ae80df11dcf8031f845fdabf881606daf89c7
+ms.sourcegitcommit: fa7551060aaecc62d0c1f9179dd07f035d86651f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223870"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742161"
 ---
 # <a name="acquire-an-access-token-python"></a>获取访问令牌 (Python)
 
-此示例演示如何调用外部 Python 脚本来获取 OAuth2 令牌。 这是实现身份验证委托所必需的。
+此示例演示如何调用外部 Python 脚本来获取 OAuth2 令牌。 需要有效的 OAuth2 访问令牌的身份验证委托的实现。
 
-此代码不能用于生产环境，但可用于开发和理解身份验证概念。 此示例跨平台。
+## <a name="prerequisites"></a>必备组件
 
-## <a name="prerequisites"></a>必备条件
-
-若要运行下面的示例，必须完成以下操作：
+若要运行下面的示例：
 
 - 安装 Python 2.7。
 - 在项目中实现 utils.h/cpp。 
-- auth.py 应添加到项目中，并与生成中的二进制文件存在于同一目录中。
+- Auth.py 应添加到你的项目，并在生成的二进制文件所在的目录中存在。
+- 完整[(MIP) SDK 设置和配置](setup-configure-mip.md)。 以及执行其他任务将在 Azure Active Directory (Azure AD) 租户中注册客户端应用程序。 Azure AD 将提供一个应用程序 ID，也称为客户端 ID，在你获取令牌的逻辑中使用。
+
+此代码不被适用于生产环境中使用。 它可能仅用于开发和了解身份验证概念。 此示例跨平台。
 
 ## <a name="sampleauthacquiretoken"></a>sample::auth::AcquireToken()
 
-在简单身份验证示例中，我们演示了一个简单的 `AcquireToken()` 函数，该函数不带任何参数并返回硬编码的令牌值。 在此示例中，我们将重载 AcquireToken() 以接受身份验证参数并调用外部 Python 脚本来返回令牌。
+在简单的身份验证的示例中，我们演示了一个简单`AcquireToken()`不利用任何参数，并返回硬编码的标记值的函数。 在此示例中，我们将重载 AcquireToken() 以接受身份验证参数并调用外部 Python 脚本来返回令牌。
 
 ### <a name="authh"></a>auth.h
 
@@ -46,7 +47,7 @@ namespace sample {
     std::string AcquireToken(
         const std::string& userName, //A string value containing the user's UPN.
         const std::string& password, //The user's password in plaintext
-        const std::string& clientId, //The AAD client ID of your application.
+        const std::string& clientId, //The Azure AD client ID (also known as Application ID) of your application.
         const std::string& resource, //The resource URL for which an OAuth2 token is required. Provided by challenge object.
         const std::string& authority); //The authentication authority endpoint. Provided by challenge object.
     }
@@ -104,7 +105,8 @@ namespace sample {
     cmd += " -r ";
     cmd += resource;
     cmd += " -c ";
-    cmd += (!clientId.empty() ? clientId : "0edbblll-8773-44de-b87c-b8c6276d41eb");
+    // Replace <application-id> with the Application ID provided during your Azure AD application registration.
+    cmd += (!clientId.empty() ? clientId : "<application-id>");
 
     string result = sample::Execute(cmd.c_str());
     if (result.empty())

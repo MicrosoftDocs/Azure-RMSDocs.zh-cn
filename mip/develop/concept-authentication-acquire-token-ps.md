@@ -4,26 +4,30 @@ description: 本文将帮助你了解如何使用 PowerShell 获取 OAuth2 访�
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 02/04/2019
 ms.author: bryanla
-ms.openlocfilehash: a5ce346d044a9a56d37777e569582087026c9ce6
-ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
+ms.openlocfilehash: 4148075c1fc8cf8c9b1393cfd3671a9413e274cf
+ms.sourcegitcommit: fa7551060aaecc62d0c1f9179dd07f035d86651f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223869"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742212"
 ---
 # <a name="acquire-an-access-token-powershell"></a>获取访问令牌 (PowerShell)
 
-此示例演示如何调用外部 PowerShell 脚本来获取 OAuth2 令牌。 这是实现身份验证委托所必需的。
+所示的示例演示如何调用外部的 PowerShell 脚本，以获取 OAuth2 令牌。 需要有效的 OAuth2 访问令牌的身份验证委托的实现。
 
-此代码不能用于生产环境，但可用于开发和理解身份验证概念。 
+## <a name="prerequisites"></a>必备组件
+
+- 完整[(MIP) SDK 设置和配置](setup-configure-mip.md)。 以及执行其他任务将在 Azure Active Directory (Azure AD) 租户中注册客户端应用程序。 Azure AD 将提供一个应用程序 ID，也称为客户端 ID，在你获取令牌的逻辑中使用。
+
+此代码不被适用于生产环境中使用。 它可能仅用于开发和了解身份验证概念。 
 
 ## <a name="sampleauthacquiretoken"></a>sample::auth::AcquireToken()
 
 ### <a name="authh"></a>auth.h
 
-我们创建一个名为 AcquireToken 的函数。 由于本教程将对返回值进行硬编码，因此我们不接受任何参数，只返回一个字符串（令牌）。
+我们创建一个名为 AcquireToken 的函数。 因为本教程将为硬编码的返回值，所以我们不采用任何参数，并返回一个字符串 （令牌）。
 
 ```cpp
 //auth.h
@@ -38,7 +42,7 @@ namespace sample {
 
 ### <a name="authcpp"></a>auth.cpp
 
-我们的源文件返回一个令牌值，该值将在以后的步骤中进行硬编码。
+源文件返回一个令牌值，将在以后的步骤中硬编码。
 
 ```cpp
 //auth.cpp
@@ -57,9 +61,11 @@ namespace sample {
 
 ## <a name="mint-a-token"></a>铸造令牌
 
-最后，铸造一个令牌以放入 mToken 变量中。 以下示例演示了一个可用于在 Windows 上通过 ADAL 和 PowerShell 快速获取 OAuth2 令牌的 PowerShell 脚本。 仅向 Office 365 安全与合规中心终结点授予此令牌。 因此，除非更新资源 URL，否则保护操作将失败。 如果希望此时使用标记和保护进行测试，建议跳到[后续步骤](#next-steps)部分。
+最后，铸造一个令牌以放入 mToken 变量中。 以下示例演示了一个可用于在 Windows 上通过 ADAL 和 PowerShell 快速获取 OAuth2 令牌的 PowerShell 脚本。 仅向 Office 365 安全与合规中心终结点授予此令牌。 因此，除非更新资源 URL，否则保护操作将失败。 
 
 ### <a name="install-adalpshttpswwwpowershellgallerycompackagesadalps31942-from-ps-gallery"></a>从 PS 库安装 [ADAL.PS](https://www.powershellgallery.com/packages/ADAL.PS/3.19.4.2)
+
+如果你在完成它以前在可以跳过此步骤[(MIP) SDK 设置和配置](setup-configure-mip.md)。
 
 ```PowerShell
 Install-Module -Name ADAL.PS
@@ -74,10 +80,9 @@ if(!(Get-Package adal.ps)) { Install-Package -Name adal.ps }
 $authority = "https://login.windows.net/common/oauth2/authorize" 
 #this is the security and compliance center endpoint
 $resourceUrl = "https://dataservice.o365filtering.com"
-#clientId and redirectUri are from the RMS Sharing Application. 
-#Once custom app registration is supported, a custom id and uri will be required. 
-$clientId = "0edbblll-8773-44de-b87c-b8c6276d41eb"
-$redirectUri = "com.microsoft.rms-sharing-for-win://authorize"
+#replace <application-id> and <redirect-uri>, with the Redirect URI and Application ID from your Azure AD application registration.
+$clientId = "<application-id>"
+$redirectUri = "<redirect-uri>"
 
 $response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
 $response.AccessToken | clip
