@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 02/04/2019
 ms.author: bryanla
-ms.openlocfilehash: 4148075c1fc8cf8c9b1393cfd3671a9413e274cf
-ms.sourcegitcommit: fa7551060aaecc62d0c1f9179dd07f035d86651f
+ms.openlocfilehash: 43b8042858bb42523ae90ec0090349db66b78d4f
+ms.sourcegitcommit: e24c934a2fb156ec8349638c4020fd17a58fbb01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742212"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55890035"
 ---
 # <a name="acquire-an-access-token-powershell"></a>获取访问令牌 (PowerShell)
 
@@ -79,7 +79,7 @@ if(!(Get-Package adal.ps)) { Install-Package -Name adal.ps }
 
 $authority = "https://login.windows.net/common/oauth2/authorize" 
 #this is the security and compliance center endpoint
-$resourceUrl = "https://dataservice.o365filtering.com"
+$resourceUrl = "https://syncservice.o365syncservice.com/"
 #replace <application-id> and <redirect-uri>, with the Redirect URI and Application ID from your Azure AD application registration.
 $clientId = "<application-id>"
 $redirectUri = "<redirect-uri>"
