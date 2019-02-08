@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9ba401db68ceb3e37db9fc77d5721b9e9a235d23
-ms.sourcegitcommit: 0fad4196f397fa32c60e6d24791fcad43689c4ba
+ms.openlocfilehash: f886a2bbf555d1ed3db9c18d8c86ad1cfc03e3d9
+ms.sourcegitcommit: ebb3a8b64a8e18dee4436442e37b54b65171d087
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55088133"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55567581"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
->适用对象：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
 
 Azure 信息保护客户端可以将以下内容应用于文档和电子邮件：
 
@@ -215,7 +215,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 对于当前预览版本： 
 
-    - .rtf 和 .rar 也会被排除在外
+- .rtf 和 .rar 也会被排除在外
 
 可更改扫描程序检查文件时包含或排除的文件类型：
 

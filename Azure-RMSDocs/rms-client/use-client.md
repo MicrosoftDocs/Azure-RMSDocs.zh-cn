@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9026560849d04939799a013d28d6d6d4d38ae442
-ms.sourcegitcommit: 8d854ee417d9af1a85e7d4ecb3807a69a43b0313
+ms.openlocfilehash: 59f79f7ac24a575665a2d8350f39b87aaedec7e1
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177188"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559472"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
 
 Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的文档和电子邮件：
 
@@ -38,10 +38,6 @@ Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织�
 - [RMS 客户端部署说明](client-deployment-notes.md)
 
 - [使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护](configure-fci.md)
-
-- [适用于 Windows 的权限管理共享应用程序](sharing-app-windows.md)
-
-请注意，适用于 Windows 的 Rights Management 共享应用程序和 RMS 保护工具现被 Azure 信息保护客户端替代。 
 
 
 ## <a name="see-also"></a>另请参阅

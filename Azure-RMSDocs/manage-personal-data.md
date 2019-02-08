@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: 08ae5875437a1e443247a5a57b1bb621b6627ce3
-ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
+ms.openlocfilehash: f030ebaa372d6fa308a51a3d9b34cefa0bc0535b
+ms.sourcegitcommit: d9c8b560fa3d2797ef634d8919af3ed695b16908
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54898777"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55701943"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
 
@@ -201,7 +201,7 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 - 对于 Azure 信息保护客户端：创建将“LogLevel”配置为“Off”的[高级客户端设置](./rms-client/client-admin-guide-customizations.md#change-the-local-logging-level)。
 
-- 对于 Azure 信息保护扫描程序：使用 [Set-AIPScannerConfiguration](/azureinformationprotection/set-aipscannerconfiguration) cmdlet 将“ReportLevel”参数设置为“Off”。
+- 对于 Azure 信息保护扫描程序：使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet 将“ReportLevel”参数设置为“Off”。
 
 [!INCLUDE [GDPR-related guidance](./includes/gdpr-hybrid-note.md)]
 
