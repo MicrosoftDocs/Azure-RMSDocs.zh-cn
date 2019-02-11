@@ -4,22 +4,22 @@ description: 了解最常使用的最终用户应用程序（例如 Office 应�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/02/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1b14ef6999f0852474f6f9de5eef2902f8863a8c
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: d8e1164d82304bcf28aa91d2e1708b10fd946ba3
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305160"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559795"
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>应用程序如何支持 Azure Rights Management 服务
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 使用以下信息可帮助了解最常使用的最终用户应用程序和服务如何才能使用 Azure 信息保护中的 Azure 权限管理来帮助保护组织的文档和电子邮件。 这些应用程序包括 Word、Excel、PowerPoint 和 Outlook。 服务包括 Exchange 和 SharePoint。
 
@@ -45,8 +45,6 @@ ms.locfileid: "53305160"
 ## <a name="next-steps"></a>后续步骤
 
 深入了解以下各种应用程序和服务如何支持 Azure 权限管理服务：
-
--   [适用于 Windows 和移动平台的 RMS 共享应用程序](sharing-app-support.md)
 
 -   [Office 应用程序和服务](office-apps-services-support.md)
 
