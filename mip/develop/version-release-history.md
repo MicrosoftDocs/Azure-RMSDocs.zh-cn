@@ -6,13 +6,13 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 01/08/2019
 ms.author: bryanla
-manager: mbaldwin
-ms.openlocfilehash: c385c43ac7d7c0a505c05cc24a4beeef34a76af7
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+manager: barbkess
+ms.openlocfilehash: 1d7b30832441180f8673e7430d7d32e8a58a5205
+ms.sourcegitcommit: 8c2de5119105cf5d5bc91fcc2202b64e5a779e7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55652007"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56082779"
 ---
 # <a name="microsoft-information-protection-mip-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护 (MIP) SDK 版本发行历史记录和支持策略
 
