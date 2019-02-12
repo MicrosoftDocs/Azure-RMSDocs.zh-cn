@@ -4,18 +4,18 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/24/2019
+ms.date: 02/02/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 71ef2607355cbe84003aaf9fc77dfa5d9a72beff
-ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
+ms.openlocfilehash: 3612c0848cf77a57636186f5f9683a2ac7f1c5ec
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54898845"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651558"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -207,7 +207,9 @@ ms.locfileid: "54898845"
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 仅当“在 Office 应用中显示信息保护栏”这一项[策略设置](../configure-policy-settings.md)设置为“开”时，才使用此配置。
 
-配置此设置并为用户发布策略后，如果用户选择不在 Office 应用程序中显示 Azure 信息保护栏，此栏保持隐藏。 当用户通过依次单击“主页”选项卡、“保护组”和“保护”按钮取消选中“显示栏”选项时，就会发生这种情况。 如果用户使用“关闭信息保护栏”图标关闭此栏，此设置将不起作用。
+默认情况下，如果用户清除“主页”选项卡、“保护”组、“保护”按钮中的“显示数据条”选项，则信息保护栏将不再显示在该 Office 应用中。 但是，下次打开 Office 应用时，会自动再次显示该栏。
+
+若要防止在用户选择隐藏该栏后再次自动显示该栏，请使用此客户端设置。 如果用户使用“关闭信息保护栏”图标关闭此栏，此设置将不起作用。
 
 即使 Azure 信息保护栏保持隐藏，如果已配置了推荐分类，或者文档或电子邮件必须有标签，用户仍可以从临时显示的栏中选择标签。 
 
@@ -419,19 +421,17 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值将显示在“标签”边栏选项卡上。 若要指定子标签，父标签必须位于同一范围中，或位于全局策略中。
 
-指定所选的迁移规则名称。 请使用描述性名称，这有助于确定应如何将旧标记解决方案中的一个或多个标签映射到 Azure 信息保护标签。 此名称显示在扫描程序报告和事件查看器中。 
-
-请注意，此设置不删除旧标签可能已应用的任何视觉标记。 若要删除页眉和页脚，请参阅下一部分[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)。
+指定所选的迁移规则名称。 请使用描述性名称，这有助于确定应如何将旧标记解决方案中的一个或多个标签映射到 Azure 信息保护标签。 此名称显示在扫描程序报告和事件查看器中。 请注意，此设置不会从文档中删除原始标签，也不会删除可能已应用原始标签的文档中的任何视觉标记。 若要删除页眉和页脚，请参阅下一部分[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)。
 
 ### <a name="example-1-one-to-one-mapping-of-the-same-label-name"></a>示例 1：相同标签名称的一对一映射
 
-对于 Secure Islands 标记为“机密”的文档，应由 Azure 信息保护重新标记为“机密”。
+要求：对于 Secure Islands 标记为“机密”的文档，应由 Azure 信息保护重新标记为“机密”。
 
 在此示例中：
 
-- Azure 信息保护标签“机密”的标签 ID 为 1ace2cc3-14bc-4142-9125-bf946a70542c。 
+- 要使用的 Azure 信息保护标签名为“Confidential”，标签 ID 为“1ace2cc3-14bc-4142-9125-bf946a70542c”。 
 
-- Secure Islands 标签存储在“Classification”自定义属性中。
+- Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中。
 
 高级客户端设置：
 
@@ -442,13 +442,13 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 ### <a name="example-2-one-to-one-mapping-for-a-different-label-name"></a>示例 2：不同标签名称的一对一映射
 
-对于 Secure Islands 标记为“敏感”的文档，应由 Azure 信息保护重新标记为“高度机密”。
+要求：对于 Secure Islands 标记为“敏感”的文档，应由 Azure 信息保护重新标记为“高度机密”。
 
 在此示例中：
 
-- Azure 信息保护标签“高度机密”的标签 ID 为 3e9df74d-3168-48af-8b11-037e3021813f。
+- 要使用的 Azure 信息保护标签名为“Highly Confidential”，标签 ID为“3e9df74d-3168-48af-8b11-037e3021813f”。
 
-- Secure Islands 标签存储在“Classification”自定义属性中。
+- Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中。
 
 高级客户端设置：
 
@@ -460,13 +460,13 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 ### <a name="example-3-many-to-one-mapping-of-label-names"></a>示例 3：标签名称的多对一映射
 
-有两个 Secure Islands 标签均包含“内部”一词，并且希望 Azure 信息保护将标有这两个 Secure Islands 标签之一的文档重新标记为“常规”。
+要求：有两个 Secure Islands 标签均包含“内部”一词，并且希望 Azure 信息保护将标有这两个 Secure Islands 标签之一的文档重新标记为“常规”。
 
 在此示例中：
 
-- Azure 信息保护标签“常规”的标签 ID 为 2beb8fe7-8293-444c-9768-7fdc6f75014d。
+- 要使用的 Azure 信息保护标签名为“General”，标签 ID为“2beb8fe7-8293-444c-9768-7fdc6f75014d”。
 
-- Secure Islands 标签存储在“Classification”自定义属性中。
+- Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中。
 
 高级客户端设置：
 

@@ -4,18 +4,17 @@ description: 确定使用 Azure 信息保护的 Azure AD 要求，以便用户�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 02/05/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
-ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d52b6fe3c290a6a012d66a39f60633cfb3e08504
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: b2ca14d6dcff00009b6e032d5ca17f5e466d69ea
+ms.sourcegitcommit: 1cd3a3bc19cd973f81a62419c946bfaf2796dfb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173343"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55760763"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
 
@@ -33,7 +32,7 @@ ms.locfileid: "53173343"
 
 运行 Office 2010 的计算机： 
 
-- 这些计算机需要 [Azure 信息保护客户端](./rms-client/aip-client.md)（推荐）或[适用用于 Windows 的权限管理共享应用程序](./rms-client/sharing-app-windows.md)，对 Azure 信息保护及其数据保护服务 Azure 权限管理进行身份验证。
+- 这些计算机需要 [Azure 信息保护客户端](./rms-client/aip-client.md)来对 Azure 信息保护及其数据保护服务 Azure Rights Management 进行身份验证。
 
 - 如果你的用户帐户已联合（例如，使用 AD FS），则帐户必须使用 Windows 集成身份验证。 在此方案中，基于表单的身份验证无法对 Azure 信息保护的用户进行身份验证。
 
@@ -60,15 +59,11 @@ ms.locfileid: "53173343"
 
 - Azure 信息保护客户端：
 
-    - 适用于 Windows 以及适用于 iOS 和 Android 的 [Azure 信息保护客户端](./rms-client/aip-client.md)始终支持 MFA，且无最低版本要求。 
+    - 适用于 Windows 的 [Azure 信息保护客户端](./rms-client/aip-client.md)和适用于 iOS 和 Android 的查看器应用始终支持 MFA，且无最低版本要求。 
 
--   适用于 Windows 的权限管理共享应用程序：
+-   适用于 Mac 计算机的 Rights Management 共享应用：
 
-    - 需要安装最低版本的 1.0.1908.0，可以通过使用“控制面板”>“程序和功能”来确认版本。 请注意，Rights Management 共享应用程序现被 Azure 信息保护客户端替代。 有关共享应用程序的详细信息，请参阅[适用于 Windows 的权限管理共享应用程序](./rms-client/sharing-app-windows.md)。
-
--   适用于移动设备和 Mac 计算机的 Rights Management 共享应用：
-
-    -   请确保你安装了最新版本。 MFA 支持已加入到 2015 年 9 月版的 RMS 共享应用。
+    -   MFA 支持已加入到 2015 年 9 月版的 RMS 共享应用。
 
 然后，配置 MFA 解决方案：
 

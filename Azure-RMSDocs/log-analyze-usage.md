@@ -4,18 +4,18 @@ description: 有关如何使用 Azure Rights Management (Azure RMS) 的使用日
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/15/2019
+ms.date: 02/01/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bf42c0309af481847e80b12cb161422b7cd18378
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 234980a639ec4456cf85399dffdabe49963eec31
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394335"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559965"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>记录和分析 Azure Rights Management 服务的使用情况
 
@@ -44,7 +44,7 @@ ms.locfileid: "54394335"
 |日志记录选项|描述|
 |----------------|---------------|
 |管理员日志|Azure Rights Management 服务的日志管理任务。 例如，在停用服务的情况下，启用超级用户功能时，以及向用户委派服务的管理员权限时。 <br /><br />有关详细信息，请参阅 PowerShell cmdlet，[Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog)。|
-|文档跟踪|允许用户跟踪和撤销其使用 Azure 信息保护客户端或 RMS 共享应用跟踪的文档。 全局管理员也可以代表用户跟踪这些文档。 <br /><br />有关详细信息，请参阅[配置和使用 Azure 信息保护的文档跟踪](./rms-client/client-admin-guide-document-tracking.md)。|
+|文档跟踪|允许用户跟踪和撤消其使用 Azure 信息保护客户端跟踪的文档。 全局管理员也可以代表用户跟踪这些文档。 <br /><br />有关详细信息，请参阅[配置和使用 Azure 信息保护的文档跟踪](./rms-client/client-admin-guide-document-tracking.md)。|
 |客户端事件日志|Azure 信息保护客户端的使用活动记录在本地 Windows“应用程序和服务”事件日志和“Azure 信息保护”中。 <br /><br />有关详细信息，请参阅 [Azure 信息保护客户端的使用日志记录](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)。|
 |客户端日志文件|有关 Azure 信息保护客户端的疑难解答日志，位于 %localappdata%\Microsoft\MSIP 中。 <br /><br />这些文件专门设计供 Microsoft 支持部门使用。|
 
@@ -151,7 +151,7 @@ Azure Rights Management 服务将日志作为一系列 blob 写入。
 |  owner-email   |    字符串     |                                                                                                                       文档所有者的电子邮件地址。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                        |                                                          alice@contoso.com                                                          |
 |     issuer     |    字符串     |                                                                                                                          文档发布者的电子邮件地址。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                          |                       alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com’                       |
 |  template-id   |    字符串     |                                                                                                                    用于保护文档的模板的 ID。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                     |                                               {6d9371a6-4e2d-4e97-9a38-202233fed26e}                                                |
-|   file-name    |    字符串     | 受保护文档的文件名通过使用适用于 Windows 的 Azure 信息保护客户端或适用于 Windows 的 Rights Management 共享应用程序进行跟踪。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。 |                                                       TopSecretDocument.docx                                                        |
+|   file-name    |    字符串     | 使用适用于 Windows 的 Azure 信息保护客户端跟踪的受保护文档的文件名。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。 |                                                       TopSecretDocument.docx                                                        |
 | date-published |     日期      |                                                                                                                          保护文档时的日期。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                           |                                                         2015-10-15T21:37:00                                                         |
 |     c-info     |    字符串     |                                                                                   有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。                                                                                   | 'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64' |
 |      c-ip      |    Address    |                                                                                                                                                       发出请求的客户端的 IP 地址。                                                                                                                                                        |                                                            64.51.202.144                                                            |

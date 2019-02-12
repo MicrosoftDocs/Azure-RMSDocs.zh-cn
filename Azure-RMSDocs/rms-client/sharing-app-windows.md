@@ -1,43 +1,23 @@
 ---
 title: 适用于 Windows 的 Rights Management 共享应用程序 - AIP
-description: 适用于 Windows 的 Rights Management 共享应用程序的信息资源。 这是一个可免费下载的应用程序，面向使用 Active Directory Rights Management Services (AD RMS) 或 Azure 信息保护的组织，以及没有自身的信息保护基础结构，但又想要使用其他组织通过 Azure 信息保护保护的内容的组织。
+description: 不再支持适用于 Windows 的 Rights Management 共享应用程序（RMS 共享应用）。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/27/2017
+ms.date: 02/01/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
-ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 60c07cd317fbdcacba7aa22d0ebf089a519ba87c
-ms.sourcegitcommit: b2414cc00d50ccefe10f8c3719eb3f6c1e78fc65
+ms.openlocfilehash: d2e68faf4c733b9e85b9471f5400ddb2c907a55d
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53246150"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559421"
 ---
 # <a name="rights-management-sharing-application-for-windows"></a>适用于 Windows 的 Rights Management 共享应用程序
 
 >适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
-> [!IMPORTANT]
-> **终止支持通知**：[Azure 信息保护客户端](aip-client.md)将替代适用于 Windows 的 Rights Management 共享应用程序。 2019 年 1 月 31 日将停止对此旧应用程序的支持。 
-
-
-对于使用 [Active Directory Rights Management Services](https://technet.microsoft.com/library/cc772403.aspx) (AD RMS) 或 [Azure 信息保护](../what-is-information-protection.md)的组织来说，适用于 Windows 的 Rights Management 共享应用程序（也称为“RMS 共享应用”）是一种免费、可下载的应用程序。 此应用程序还适用于没有自己的信息保护基础结构，但希望使用其他组织通过 Azure 信息保护的 Azure Rights Management 服务保护的内容的组织。
-
--   [Rights Management 共享应用程序：版本发布历史记录](sharing-app-version-release-history.md)
-
--   [权限管理共享应用程序管理员指南](sharing-app-admin-guide.md)
-
--   [权限管理共享应用程序用户指南](sharing-app-user-guide.md)
-
-> [!TIP]
-> 还有适用于 iOS 和 Android 的 Azure 信息保护。 有关详细信息，请参阅[适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题](mobile-app-faq.md )
-> 
-> 对于 Mac 计算机和 Windows Phone：[适用于移动平台和 Mac 平台的 Rights Management 共享应用程序的常见问题解答](https://technet.microsoft.com/dn451248)。
-
-## <a name="see-also"></a>另请参阅
-[FAQ for Rights Management Sharing Application for Windows](https://technet.microsoft.com/dn467883)（适用于 Windows 的 Rights Management 共享应用程序常见问题解答）
-
+**终止支持通知**：适用于 Windows 的 Rights Management 共享应用程序现在替换为 [Azure 信息保护客户端](aip-client.md)。 2019 年 1 月 31 日已结束对此旧应用程序的支持。

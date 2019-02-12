@@ -4,18 +4,18 @@ description: 面向管理员提供的有关配置 Office 365 以使用 Azure 信
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 02/02/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: be8378705611f10064026dd0043e6404ad693092
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 7dd3216492b1fa967c52c3b390077995175f5db1
+ms.sourcegitcommit: d9c8b560fa3d2797ef634d8919af3ed695b16908
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393506"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55701926"
 ---
 # <a name="office365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365：配置客户端和联机服务，以使用 Azure Rights Management 服务
 
@@ -74,16 +74,16 @@ ms.locfileid: "54393506"
 
 ## <a name="sharepointonline-and-onedrive-for-business-irm-configuration"></a>SharePoint Online 和 OneDrive for Business:IRM 配置
 
-若要了解如何将 SharePoint Online IRM 与 Azure 权限管理服务配合使用，请参阅**了解并探索**部分中的 [SharePoint Online 和 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server)。
+若要了解如何将 SharePoint Online IRM 与 Azure 权限管理服务配合使用，请参阅本文档的“Rights Management 保护”部分中的 [SharePoint Online 和 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server)。
 
 若要配置 SharePoint Online 和 OneDrive for Business 以支持 Azure Rights Management 服务，必须先通过使用 SharePoint 管理中心，为 SharePoint Online 启用信息权限管理 (IRM) 服务。 然后，站点所有者可以使用 IRM 保护其 SharePoint 列表和文档库，用户可以使用 IRM 保护其 OneDrive for Business 库，以便在该处保存并与其他人共享的文档自动由 Azure Rights Management 服务保护。
 
 > [!NOTE]
 > SharePoint 和 OneDrive for Business 的受 IRM 保护的库需要最新版的 OneDrive 同步客户端 (OneDrive.exe) 和 [Microsoft 下载中心的 RMS 客户端](https://www.microsoft.com/en-us/download/details.aspx?id=38396)版本。 即使已经安装了 Azure 信息保护客户端，也要安装此版本的 RMS 客户端。 有关此部署方案的详细信息，请参阅[在企业环境中部署新的 OneDrive 同步客户端](https://support.office.com/article/Deploy-the-new-OneDrive-sync-client-in-an-enterprise-environment-3f3a511c-30c6-404a-98bf-76f95c519668)。
 
-若要为 SharePoint Online 启用信息权限管理 (IRM) 服务，请参阅 Office 网站中的以下说明：
+若要为 SharePoint Online 启用信息权限管理 (IRM) 服务，请参阅 Office 文档中的以下说明：
 
-- [在 SharePoint 管理中心设置信息权限管理 (IRM)](https://office.microsoft.com/office365-sharepoint-online-enterprise-help/set-up-information-rights-management-irm-insharepoint-online-HA102895193.aspx)
+- [在 SharePoint 管理中心设置信息权限管理 (IRM)](/office365/securitycompliance/set-up-irm-in-sp-admin-center)
 
 由 Office 365 管理员进行此配置。
 

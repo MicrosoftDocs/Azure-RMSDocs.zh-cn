@@ -4,21 +4,21 @@ description: 有关安装、配置和运行 Azure 信息保护扫描程序的当
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/16/2019
+ms.date: 02/06/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 09cd758d0e35cf3b23291e5995007c3f110480d2
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 72ab18383d55f88bc52872a0dc1f9f6b11eb0e44
+ms.sourcegitcommit: 1cd3a3bc19cd973f81a62419c946bfaf2796dfb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394352"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55760848"
 ---
 # <a name="deploying-the-preview-version-of-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序的预览版本以自动分类和保护文件
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2
+>适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2
 
 > [!NOTE]
 > 本文适用于 Azure 信息保护扫描程序的当前预览版本。 可能会对处于预览状态的版本进行更改。
@@ -64,6 +64,7 @@ ms.locfileid: "54394352"
 |运行扫描程序服务的服务帐户|除了运行扫描程序服务，此帐户还对 Azure AD 进行身份验证，并下载 Azure 信息保护策略。 此帐户必须是同步到 Azure AD 的 Active Directory 帐户。 如果由于组织策略而无法同步此帐户，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />此服务帐户有以下要求：<br /><br />- “本地登录”权限。 此权限是安装和配置扫描程序所必需的，但不可用于操作。 必须将此权限授予服务帐户，但当确认扫描程序可发现、保护文件并对其进行分类后，可删除此权限。 如果由于组织策略的限制而甚至无法在短时间内授予此权限，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />- “作为服务登录”权限。 扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。 <br /><br />- 针对数据存储库的权限：必须授予“读取”和“写入”权限才能扫描文件，然后将分类和保护应用到满足 Azure 信息保护策略中的条件的文件。 若仅在发现模式下运行扫描程序，则只需“读取”权限即可。<br /><br />- 对于重新保护或删除保护的标签：若要确保扫描程序始终有权访问受保护的文件，请将此帐户设置为 Azure Rights Management 服务的[超级用户](configure-super-users.md)，并确保已启用超级用户功能。 要详细了解应用保护的帐户要求，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。 此外，如果对分阶段部署实现了[载入控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，还请确保已配置的载入控件中包含此帐户。|
 |在 Windows Server 计算机上安装 Azure 信息保护客户端的预览版本|必须安装扫描程序的完整客户端。 请勿安装只带有 PowerShell 模块的客户端。<br /><br />有关客户端安装说明，请参阅[管理员指南](./rms-client/client-admin-guide.md)。 如果现在需要将已安装的旧扫描程序升级到更高版本，请参阅[升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。|
 |已配置可应用自动分类和保护（可选）的标签|有关如何为条件配置标签以及如何应用保护的更多信息：<br /> - [如何为自动分类和推荐分类配置条件](configure-policy-classification.md)<br /> - [如何配置标签以进行 Rights Management 保护](configure-policy-protection.md) <br /><br />提示：可以使用[教程](infoprotect-quick-start-tutorial.md)中的说明来测试带有标签的扫描程序，在准备好的 Word 文档中查找信用卡号。 但是，需要更改标签配置，以便将“选择应用此标签的方式”选项设置为“自动”而不是“推荐”。 然后从文档中删除标签（如果已应用），并将文件复制到扫描程序的数据存储库。 为了快速测试，可以使用扫描程序计算机上的本地文件夹。<br /><br /> 尽管即使你尚未配置应用自动分类的标签，仍然可以运行扫描程序，但这些说明中并未涵盖此方案。 [详细信息](#using-the-scanner-with-alternative-configurations)|
+|对于要扫描的 SharePoint 网站和库：<br /><br />- SharePoint 2016<br /><br />- SharePoint 2012<br /><br />- SharePoint 2010|扫描程序不支持其他版本的 SharePoint。<br /><br />对于大型 SharePoint 场，请检查是否需要增加列表视图阈值（默认为 5,000），以便扫描程序访问所有文件。 有关详细信息，请参阅下列 SharePoint 文档：[管理 SharePoint 中的大型列表和库](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server)|
 |对于要扫描的 Office 文档：<br /><br />- Word、Excel 和 PowerPoint 的 97-2003 文件格式和 Office Open XML 格式|若要详细了解扫描程序对这些文件格式支持的文件类型，请参阅 [Azure 信息保护客户端支持的文件类型](./rms-client/client-admin-guide-file-types.md)|
 |对于长路径：<br /><br />- 最多 260 个字符，除非扫描程序安装在 Windows 2016 上，并且该计算机配置为支持长路径|Windows 10 和 Windows Server 2016 使用以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)，支持超过 260 个字符的路径长度：“本地计算机策略” > “计算机配置” > “管理模板” > “所有设置” > “NTFS” > “启用 Win32 长路径”<br /><br /> 有关支持长文件路径的详细信息，请参阅 Windows 10 开发人员文档中的[最大路径长度限制](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation)一节。
 
@@ -214,7 +215,7 @@ ms.locfileid: "54394352"
 3. 运行 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) cmdlet，指定要在其中为 Azure 信息保护扫描程序创建数据库的 SQL Server 实例，以及在上一部分中指定的扫描程序配置文件名称： 
     
     ```
-    Install-AIPScanner -SqlServerInstance <database name> -Profile <profile name>
+    Install-AIPScanner -SqlServerInstance <name> -Profile <profile name>
     ```
     
     例如，使用配置文件名称“欧洲”：
@@ -267,11 +268,11 @@ ms.locfileid: "54394352"
 
 2. 等待扫描程序完成其周期。 当扫描程序浏览完指定数据存储中的所有文件时，扫描程序停止（尽管扫描程序服务仍在运行）：
     
-        - From the **Azure Information Protection - Nodes** blade, the value for the **STATUS** column changes from **Scanning** to **Idle**.
-        
-        - Using PowerShell, you can run `Get-AIPScannerStatus` to monitor the status change.
-        
-        - Check the local Windows **Applications and Services** event log, **Azure Information Protection**. This log also reports when the scanner has finished scanning, with a summary of results. Look for the informational event ID **911**.
+    - 在“Azure 信息保护 - 节点”边栏选项卡中，“STATUS”列的值会从“正在扫描”更改为“空闲”。
+    
+    - 使用 PowerShell，你可以运行 `Get-AIPScannerStatus` 来监视状态更改。
+    
+    - 查看本地 Windows 应用程序和服务事件日志和 Azure 信息保护。 另外，此日志还会报告扫描程序完成扫描的时间，以及结果摘要。 请查看信息事件 ID 911。
 
 3. 查看存储在 %localappdata%\Microsoft\MSIP\Scanner\Reports 中的报表。 .txt 摘要文件包括扫描所用的时间、扫描的文件数以及匹配信息类型的文件数量。 .csv 文件包含每个文件的更多详细信息。 此文件夹为每个扫描周期最多存储 60 个报表，并且压缩除最新报表之外的所有报表，以帮助最大程度地减少所需的磁盘空间。
     
@@ -347,11 +348,15 @@ ms.locfileid: "54394352"
 例如，检查文件扩展名为 .txt 的文件之后，扫描程序无法应用为分类而非保护配置的标签，因为 .txt 文件类型不支持仅分类。 如果为分类和保护配置了标签，并且针对 .txt 文件类型编辑了注册表，则扫描程序可为文件设置标签。 
 
 > [!TIP]
-> 在此过程中，如果扫描程序停止并且未完成扫描存储库的大量文件，则可能需要增加动态端口数，以便操作系统托管文件。 SharePoint 的服务器强化可能是导致扫描程序超出允许的网络连接数并因此停止的一个原因。
+> 在此过程中，如果扫描程序停止并且未完成对存储库中大量文件的扫描：
 > 
-> 要检查这是否是导致扫描程序停止的原因，请在 %localappdata%\Microsoft\MSIP\Logs\MSIPScanner.iplog（如有多个日志，则为压缩文件）中查看是否记录了扫描程序的以下错误消息：无法连接到远程服务器 ---> System.Net.Sockets.SocketException:每个套接字地址（协议/网络地址/端口）的唯一用法通常是 IP:port
->
-> 有关如何查看当前端口范围以及增加该范围的详细信息，请参阅[可通过修改设置来提高网络性能](https://docs.microsoft.com/biztalk/technical-guides/settings-that-can-be-modified-to-improve-network-performance)。
+> - 可能需要增加托管文件的操作系统的动态端口数。 SharePoint 的服务器强化可能是导致扫描程序超出允许的网络连接数并因此停止的一个原因。
+>     
+>     要检查这是否是导致扫描程序停止的原因，请在 %localappdata%\Microsoft\MSIP\Logs\MSIPScanner.iplog（如有多个日志，则为压缩文件）中查看是否记录了扫描程序的以下错误消息：无法连接到远程服务器 ---> System.Net.Sockets.SocketException:每个套接字地址（协议/网络地址/端口）的唯一用法通常是 IP:port
+>    
+>     有关如何查看当前端口范围以及增加该范围的详细信息，请参阅[可通过修改设置来提高网络性能](https://docs.microsoft.com/biztalk/technical-guides/settings-that-can-be-modified-to-improve-network-performance)。
+> 
+> - 对于大型 SharePoint 场，可能需要增加列表视图阈值（默认情况下为 5,000）。 有关详细信息，请参阅下列 SharePoint 文档：[管理 SharePoint 中的大型列表和库](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server)。
 
 ### <a name="3-label-files-that-cant-be-inspected"></a>3.无法检查的标签文件
 对于无法检查的文件类型，扫描程序应用 Azure 信息保护策略中的默认标签或为扫描程序配置的默认标签。

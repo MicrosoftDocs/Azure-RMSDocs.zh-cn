@@ -4,18 +4,18 @@ description: 管理员配置和使用 Azure 信息保护的文档跟踪的说明
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/16/2018
+ms.date: 02/01/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 108a77f6c78b49bfcd852ff94ef529d3a667a193
-ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
+ms.openlocfilehash: 32e61bafe3157c33b3ed9db6d540085df07a9f15
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314724"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559999"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>管理员指南：配置和使用 Azure 信息保护的文档跟踪
 
@@ -74,20 +74,20 @@ ms.locfileid: "54314724"
 
 ## <a name="tracking-and-revoking-documents-for-users"></a>为用户跟踪和撤销文档
 
-用户登录到文档跟踪站点时，他们可以跟踪和撤销通过使用 Azure 信息保护客户端保护或通过使用 Rights Management 共享应用程序共享的文档。 以租户的 Azure AD 全局管理员身份登录时，可以单击“管理员”图标，以切换到管理员模式。 其他管理员角色不支持对文档跟踪网站使用此模式。 
+用户登录到文档跟踪站点时，他们可以通过使用 Azure 信息保护客户端跟踪和撤销保护的文档。 以租户的 Azure AD 全局管理员身份登录时，可以单击“管理员”图标，以切换到管理员模式。 其他管理员角色不支持对文档跟踪网站使用此模式。 
 
 ![文档跟踪站点中的“管理员”图标](../media/tracking-site-admin-icon.png)
 
-通过管理员模式，可以查看组织用户选择通过 Azure 信息保护客户端进行跟踪的文档，或组织用户通过 Rights Management 共享应用程序共享的文档。
+通过管理员模式，可以查看组织用户选择通过 Azure 信息保护客户端进行跟踪的文档。
 
 > [!NOTE] 
 > 如果是全局管理员，但仍看不到此图标，原因是尚未自行分享任何文档。 在这种情况下，请使用以下 URL 访问文档跟踪站点： https://portal.azurerms.com/#/admin
 
 在管理员模式下执行的操作会经过审核并记录在使用情况日志文件中，必须确认后才能继续。 有关此日志记录的详细信息，请参阅下一节。
 
-处于管理员模式时，可以按用户或文档进行搜索。 如果按用户进行搜索，可以查看指定用户通过 Azure 信息保护客户端选择进行跟踪的所有文档，或查看通过 Rights Management 共享应用程序共享的所有文档。 
+处于管理员模式时，可以按用户或文档进行搜索。 如果按用户进行搜索，可以查看指定用户通过 Azure 信息保护客户端选择进行跟踪的所有文档。 
 
-如果按文档进行搜索，可以查看组织中通过 Azure 信息保护客户端跟踪该文档的所有用户，或查看通过 Rights Management 共享应用程序共享的所有用户。 之后，如有必要，你可以钻取到搜索结果，以便跟踪用户保护的文档以及撤销这些文档。 
+如果按文档进行搜索，可以查看组织中通过 Azure 信息保护客户端跟踪该文档的所有用户。 之后，如有必要，你可以钻取到搜索结果，以便跟踪用户保护的文档以及撤销这些文档。 
 
 若要离开管理员模式，请单击“退出管理员模式”旁边的“X”：
 
@@ -99,7 +99,7 @@ ms.locfileid: "54314724"
 
 此选项仅适用于 Azure 信息保护客户端的当前预览版本。
 
-若要跟踪和撤销文档，必须首先在文档跟踪站点中进行注册。 当用户在使用 Azure 信息保护客户端时从文件资源管理器或其 Office 应用中选择“跟踪和撤销”选项时，将执行此操作。 对于 Rights management 共享应用程序，此操作会在用户选择“已共享保护”选项时自动执行。
+若要跟踪和撤销文档，必须首先在文档跟踪站点中进行注册。 当用户在使用 Azure 信息保护客户端时从文件资源管理器或其 Office 应用中选择“跟踪和撤销”选项时，将执行此操作。
 
 如果使用 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 为用户标记和保护文件，可以使用 EnableTracking 参数将文件注册到文档跟踪站点。 例如：
 

@@ -4,18 +4,18 @@ description: 详细解说 Azure RMS 的工作原理、它使用的加密控件�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 02/01/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7c1d488ff738b0eea9042f1580ea74b7099f3ac5
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: d4530e6a09fbf8ab3779d1938c37b6e736976ed7
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53174108"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559659"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
@@ -49,7 +49,7 @@ ms.locfileid: "53174108"
 
 ###### <a name="footnote-1"></a>脚注 1 
 
-当文件具有扩展名 .ppdf 或者是受保护的文本文件或图像文件（例如 .ptxt 或 .pjpg）时，Azure 信息保护客户端和 Rights Management 共享应用程序使用 256 位进行常规保护和本机保护。
+当文件具有扩展名 .ppdf 或者是受保护的文本文件或图像文件（例如 .ptxt 或 .pjpg）时，Azure 信息保护客户端使用 256 位进行常规保护和本机保护。
 
 ###### <a name="footnote-2"></a>脚注 2
 
@@ -153,8 +153,6 @@ ms.locfileid: "53174108"
 - **RMS 连接器**：当 Azure Rights Management 服务与 RMS 连接器结合使用时，处理流程保持不变。 唯一的差别在于，连接器充当本地服务（如 Exchange Server 和 SharePoint Server）与 Azure Rights Management 服务之间的中继。 连接器本身不执行任何操作，例如用户环境初始化，或者加密或解密。 它只会中继通常要定向到 AD RMS 服务器的通信，处理每一端使用的协议之间的转换。 此方案让你可以将 Azure Rights Management 服务与本地服务结合使用。
 
 - **常规保护 (.pfile)**：当 Azure Rights Management 服务对文件提供一般性保护时，流程基本上与内容保护相同，不过，RMS 客户端将创建一个授予所有权限的策略。 使用该文件时，会先将它解密，然后将它传递到目标应用程序。 这种方案允许你保护所有文件，即使它们本机不支持 RMS。
-
-- **受保护的 PDF (.ppdf)**：Azure Rights Management 服务本机保护 Office 文件时，还会创建该文件的副本，并以相同的方法保护该副本。 唯一的差别在于，文件副本采用 PPDF 文件格式，Azure 信息保护客户端查看器和 RMS 共享应用程序只知道如何打开该格式进行查看。 这种方案允许你通过电子邮件发送受保护的附件，知道移动设备上的收件人始终能够读取它们，即使移动设备没有相应的应用可本机支持受保护的 Office 文件。
 
 - **Microsoft 帐户**：使用 Microsoft 帐户对电子邮件地址进行身份验证时，Azure 信息保护可以授权其可供使用。 但是，并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)。
 

@@ -4,18 +4,18 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/16/2019
+ms.date: 02/07/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 18c5028bf69f756b79328a26ce967f5e73492d2e
-ms.sourcegitcommit: b1e08bc29d50187532f00dc215ab331e0a7dbebe
+ms.openlocfilehash: 51ff1b6185661c4ab0c4204e035ffe981a5a9710
+ms.sourcegitcommit: 308e6da8de1a3456a0ba807c5388b8891b861d5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55146785"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854181"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -35,6 +35,44 @@ ms.locfileid: "55146785"
 
 有关详细信息，请参阅[宣布推出信息保护功能以帮助保护你的敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
 
+## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure 信息保护中的标签和 Office 365 中的标签之间有何不同？
+
+最初，Office 365 还只有[保留标签](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，用于在文档和电子邮件处于 Office 365 服务中时，对该内容进行分类以供审核和保留。 相比之下，通过 Azure 信息保护标记，可对文档和电子邮件应用一致分类和保护策略，无论它们在本地还是在云中。
+
+除了 Office 365 安全与合规中心的保留标签外，现在还可以选择创建和配置[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)的选项，该选项是在奥兰多的 Microsoft Ignite 2018 大会上推出的。 当前该选项处于预览状态，你可以将现有的 Azure 信息保护标签迁移到新的统一标签存储，以用作 Office 365 的敏感度标签。 
+
+有关统一标记管理以及如何支持这些标记的详细信息，请阅读博客文章[宣布推出信息保护功能以帮助保护你的敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
+
+有关迁移现有标记的详细信息，请参阅[如何将 Azure 信息保护标记迁移到 Office 365 安全与合规中心](configure-policy-migrate-labels.md)。
+
+## <a name="when-is-the-right-time-to-migrate-my-labels-to-office-365"></a>何时将我的标签迁移到 Office 365？
+
+Office 365 安全与合规中心中的敏感度标签已正式发布，但迁移 Azure 信息保护标签的选项仍处于预览状态。 将标签迁移到统一标签存储后，可以发布这些标签，然后由[支持统一标签的客户端](configure-policy-migrate-labels.md#clients-that-support-unified-labeling)下载。 目前，并非所有客户端都支持统一标签或已公开发布。
+
+我们建议首先使用测试租户测试预览功能，然后迁移生产租户。 此外：
+
+- **如果刚开始接触 Azure 信息保护：** 
+    
+    由于 Azure 信息保护具有加速部署的默认标签，因此我们建议先迁移这些默认标签，然后从 Office 365 安全与合规中心进行管理。
+
+- **如果并非刚开始接触 Azure 信息保护，但是正在定义和配置要使用的标签：**
+    
+    我们建议先在 Azure 门户中完成标签配置，然后迁移这些标签。 此策略可以避免在迁移过程中重复标签，然后需要在安全与合规中心进行编辑。
+
+在迁移标签之前，请确保你了解[安全与合规中心不支持的注意事项和标签设置](configure-policy-migrate-labels.md#considerations-for-unified-labels)。
+
+## <a name="after-ive-migrated-my-labels-which-management-portal-do-i-use"></a>迁移我的标签后，该使用哪个管理门户？
+
+在 Azure 门户中迁移标签后：
+
+- 如果拥有[统一标签客户端](configure-policy-migrate-labels.md#clients-that-support-unified-labeling)，请转至 Office 365 安全与合规中心以发布这些标签，并为统一标签客户端配置策略设置。 对于未来的标签更改，请使用安全与合规中心。 统一标签客户端从安全与合规中心下载标签和策略设置。
+
+- 如果拥有 [Azure 信息保护客户端](./rms-client/aip-client.md)，请继续使用 Azure 门户编辑标签和策略设置。 Azure 信息保护客户端继续从 Azure 下载标签和策略设置。
+
+- 如果同时拥有[统一标签客户端](configure-policy-migrate-labels.md#clients-that-support-unified-labeling)和 [Azure 信息保护客户端](./rms-client/aip-client.md)，则可以使用任一门户进行标签更改。 但是，要使 Azure 信息保护客户端选择你在安全与合规中心中所做的标签更改，则必须返回 Azure 门户：使用 Azure 门户中“Azure 信息保护 - 统一标签”边栏选项卡的“发布”选项。 
+
+继续使用 Azure 门户进行[集中报告](reports-aip.md)和[扫描程序](deploy-aip-scanner-preview.md)。
+
 ## <a name="whats-the-difference-between-azure-information-protection-and-azure-rights-management"></a>Azure 信息保护和 Azure Rights Management 之间有何不同？
 
 Azure 信息保护对组织的文档和电子邮件进行分类、标记和保护。 该保护技术使用 Azure Rights Management 服务；现在该服务是 Azure 信息保护的一个组件。
@@ -44,17 +82,18 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 用户必须具有有效的用户名和密码才能访问受 Azure 信息保护保护的内容。 要详细了解 Azure 信息保护如何帮助保护数据，请参阅 [Azure 信息保护在保护数据方面的角色](/enterprise-mobility-security/solutions/azure-information-protection-securing-data)。 
 
 ## <a name="what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included"></a>需要为 Azure 信息保护准备哪个订阅，以及它包括哪些功能？
-请参阅 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)页面上的订阅信息和功能列表。 
 
-如果你的 Office 365 订阅包含 Azure Rights Management 数据保护，请下载 [Azure 信息保护许可数据表](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)，其中还包含一些有关许可的常见问题解答。
+请参阅 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)页面上的订阅信息和功能列表。
+
+如果你的 Office 365 订阅包含 Azure Rights Management 数据保护，请下载 [Azure 信息保护许可数据表](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
+
+还有关于许可的问题吗？ 查看[许可的常见问答解答](https://azure.microsoft.com/pricing/details/information-protection#faq)部分是否有答案。
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure 信息保护客户端是否只适用于包含分类和标记的订阅？
 
 不能。 尽管你所参阅的关于 Azure 信息保护客户端的大部分演示文稿和演示都指出此类客户端支持分类和标记，但它还可以与只包含 Azure Rights Management Service 的订阅结合使用来共同保护数据。
 
 如果安装了适用于 Windows 的 Azure 信息保护客户端，但没有 Azure 信息保护策略，那么客户端会在[仅保护模式](./rms-client/client-protection-only-mode.md)下自动运行。 在这种模式下，用户可以轻松应用 Rights Management 模板和自定义权限。 如果以后购买确实包含分类和标记的订阅，客户端会在下载 Azure 信息保护策略后自动切换到标准模式。
-
-如果当前使用 Windows 版 Rights Management 共享应用程序，建议使用 Azure 信息保护客户端替换此应用程序。 将于 2019 年 1 月 31 日停止提供对共享应用程序的支持。 若要顺利过渡，请参阅[用于操作 RMS 共享应用程序的任务](./rms-client/upgrade-client-app.md)。
 
 ## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators"></a>是否必须是全局管理员才能配置 Azure 信息保护？我可以委派给其他管理员吗？
 
@@ -126,16 +165,6 @@ Azure 信息保护不能分类和保护结构化数据，如数据库文件、�
 
 有关 Microsoft Graph 安全 API 的详细信息，请参阅 [Microsoft Graph 安全 API 概述](https://developer.microsoft.com/graph/docs/concepts/security-concept-overview)。
 
-## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure 信息保护中的标签和 Office 365 中的标签之间有何不同？
-
-直到最近，Office 365 还只有[保留标签](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，用于在文档和电子邮件处于 Office 365 服务中时，对该内容进行分类以供审核和保留。 相比之下，通过 Azure 信息保护标记，可对文档和电子邮件应用一致分类和保护策略，无论它们在本地还是在云中。
-
-除了 Office 365 安全与合规中心的保留标记外，现在还可以看到创建和配置[敏感度标记](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)的选项，该选项是在 Microsoft Ignite 2018 大会上推出的。 此外，该选项现在处于预览状态，你可以将现有的 Azure 信息保护标记迁移到新的统一标记存储。 
-
-有关统一标记管理以及如何支持这些标记的详细信息，请阅读博客文章[宣布推出信息保护功能以帮助保护你的敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
-
-有关迁移现有标记的详细信息，请参阅[如何将 Azure 信息保护标记迁移到 Office 365 安全与合规中心](configure-policy-migrate-labels.md)。
-
 ## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI 和 Azure 信息保护扫描程序有何区别？
 
 Windows Server 文件分类基础结构在过去一直都有一个选项：对文档进行分类，然后使用 [Rights Management 连接器](deploy-rms-connector.md)（仅 Office 文档）或 [PowerShell 脚本](./rms-client/configure-fci.md)（所有文件类型）保护文档。 
@@ -196,8 +225,4 @@ Windows Server 文件分类基础结构在过去一直都有一个选项：对�
 - [适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题解答](./rms-client/mobile-app-faq.md)
 
 - [适用于 Mac 计算机的 RMS 共享应用的常见问题解答](https://technet.microsoft.com/dn451248)
-
-- [FAQ for Rights Management Sharing Application for Windows](https://technet.microsoft.com/dn467883)（适用于 Windows 的 Rights Management 共享应用程序常见问题解答）
-
-
 

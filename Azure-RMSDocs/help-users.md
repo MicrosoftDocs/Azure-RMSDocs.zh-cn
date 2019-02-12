@@ -4,18 +4,18 @@ description: 此信息可帮助你在部署和配置 Azure 信息保护中的 Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/24/2019
+ms.date: 02/01/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b023eaa514fc22dcb3d595495c724d7d19e58c08
-ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
+ms.openlocfilehash: f71a539185f60695950c4b2989eb68650f58755b
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55067663"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559931"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
@@ -66,7 +66,7 @@ ms.locfileid: "55067663"
 
 ## <a name="using-information-protection-with-the-azure-information-protection-client"></a>在 Azure 信息保护客户端中使用信息保护
 
-如果用户使用 Office 2010，必须使用 Azure 信息保护客户端（或旧版应用程序 RMS 共享应用程序）保护和使用受保护文档和电子邮件。 不过，还建议将 Azure 信息保护客户端用于支持此服务的所有计算机和移动设备。
+如果用户使用 Office 2010，则需要使用 Azure 信息保护客户端来保护和使用受保护文档和电子邮件。 不过，还建议将 Azure 信息保护客户端用于支持此服务的所有计算机和移动设备。
 
 使用 Azure 信息保护客户端，除了可以更轻松地保护文档和电子邮件之外，用户还可以跟踪受保护文档。 如果之前获得授权的用户无法再访问跟踪的文档，还可以撤销这些文档。
 

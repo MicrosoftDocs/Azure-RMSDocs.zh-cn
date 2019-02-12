@@ -4,18 +4,18 @@ description: 了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2019
+ms.date: 02/01/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 195700be6b1a2f7aecbdd4de333570669cf6d329
-ms.sourcegitcommit: 4b1f204fd31bb9de05510b85b91304d9964a14c1
+ms.openlocfilehash: 02bdd294e30f0d773fcc29b4c7a13f9e418af9db
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55420786"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559982"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
@@ -61,10 +61,10 @@ ms.locfileid: "55420786"
 
 |权限级别|应用程序|包含的使用权限|
 |---------------------|----------------|---------------------------------|
-|查看器|Azure 经典门户 <br /><br />Azure 门户<br /><br /> 适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；查看权限；答复 [[1]](#footnote-1)；全部答复 [[1]](#footnote-1)；允许宏 [[2]](#footnote-2)<br /><br />注意：对于电子邮件，请使用“审阅者”级别而不是此权限级别来确保接收到的电子邮件答复为电子邮件而不是附件。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也需要审阅者权限。 或者，对于组织内无需使用 Azure Rights Management 服务的用户来说，也需要此权限，因为你已实施了[载入控件](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)。|
-|审阅者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；查看权限；答复：全部答复 [[3]](#footnote-3)；转发 [[3]](#footnote-3)；允许宏 [[2]](#footnote-2)|
-|合著者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出 [[4]](#footnote-4)；打印；答复 [[3]](#footnote-3)；全部答复 [[3]](#footnote-3)；转发 [[3]](#footnote-3)|
-|共有者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Rights Management 共享应用程序<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；更改权限；允许宏；另存为、导出；打印；答复 [[3]](#footnote-3)；全部答复 [[3]](#footnote-3)；转发 [[3]](#footnote-3)；完全控制|
+|查看器|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；查看权限；答复 [[1]](#footnote-1)；全部答复 [[1]](#footnote-1)；允许宏 [[2]](#footnote-2)<br /><br />注意：对于电子邮件，请使用“审阅者”级别而不是此权限级别来确保接收到的电子邮件答复为电子邮件而不是附件。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也需要审阅者权限。 或者，对于组织内无需使用 Azure Rights Management 服务的用户来说，也需要此权限，因为你已实施了[载入控件](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)。|
+|审阅者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；查看权限；答复：全部答复 [[3]](#footnote-3)；转发 [[3]](#footnote-3)；允许宏 [[2]](#footnote-2)|
+|合著者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出 [[4]](#footnote-4)；打印；答复 [[3]](#footnote-3)；全部答复 [[3]](#footnote-3)；转发 [[3]](#footnote-3)|
+|共有者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；更改权限；允许宏；另存为、导出；打印；答复 [[3]](#footnote-3)；全部答复 [[3]](#footnote-3)；转发 [[3]](#footnote-3)；完全控制|
 
 ----
 
@@ -77,7 +77,7 @@ ms.locfileid: "55420786"
 对于适用于 Windows 的 Azure 信息保护客户端，目前 Office 应用程序中的信息保护栏需要此权限。
 
 ###### <a name="footnote-3"></a>脚注 3
-不适用项：适用于 Windows 的 Azure 信息保护客户端或适用于 Windows 的 Rights Management 共享应用程序。
+对适用于 Windows 的 Azure 信息保护客户端不适用。
 
 ###### <a name="footnote-4"></a>脚注 4
 不包括在 Azure 门户或适用于 Windows 的 Azure 信息保护客户端中。

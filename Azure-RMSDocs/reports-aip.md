@@ -4,19 +4,19 @@ description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/30/2018
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 0c2309fb635a05f6b0c836b7d4caf04d1c17a23a
-ms.sourcegitcommit: 6651546fa69538e2099b5c2b92ab0902d568a96a
+ms.openlocfilehash: eb9ff9dd73422813a80b41ee516876bfc4c50663
+ms.sourcegitcommit: 1cd3a3bc19cd973f81a62419c946bfaf2796dfb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2018
-ms.locfileid: "53815116"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55760780"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -112,8 +112,8 @@ ms.locfileid: "53815116"
 |要求|更多信息|
 |---------------|--------------------|
 |包含 Log Analytics 的 Azure 订阅|请参阅 [Azure Log Analytics 定价](https://azure.microsoft.com/pricing/details/log-analytics)页面。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
-|Azure 信息保护客户端的当前正式版。|如果尚未安装此版本的客户端，可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载和安装它。|
-|对于“发现和风险”报表： <br /><br />- 若要显示本地数据存储中的数据，你至少已部署其中一个 Azure 信息保护扫描程序的实例（当前 GA 版） <br /><br />- 若要显示 Windows 10 计算机中的数据，这些计算机必须为最低版本 1809，你在使用 Windows Defender 高级威胁防护 (Windows Defender ATP)，并且你已从 Windows Defender 安全中心启用 Azure 信息保护集成功能|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 如果从以前版本的扫描程序升级，请参阅[升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。<br /><br />有关从 Windows Defender 安全中心配置和使用 Azure 信息保护集成功能的信息，请参阅 [Windows 中的信息保护概述](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview)。|
+|Azure 信息保护客户端的当前正式发布版和预览版|如果尚未安装此客户端，可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载和安装它。|
+|对于“发现和风险”报表： <br /><br />- 若要显示本地数据存储中的数据，你至少已部署一个 Azure 信息保护扫描程序的实例（当前正式发布版或预览版） <br /><br />- 若要显示 Windows 10 计算机中的数据，这些计算机必须为最低版本 1809，你在使用 Windows Defender 高级威胁防护 (Windows Defender ATP)，并且你已从 Windows Defender 安全中心启用 Azure 信息保护集成功能|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 如果从以前版本的扫描程序升级，请参阅[升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。<br /><br />有关从 Windows Defender 安全中心配置和使用 Azure 信息保护集成功能的信息，请参阅 [Windows 中的信息保护概述](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview)。|
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>配置报表的 Log Analytics 工作区
 

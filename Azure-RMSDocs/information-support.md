@@ -4,18 +4,18 @@ description: 管理员资源，其中包括有关新版本、支持选项以及�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2018
+ms.date: 02/07/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2844271ff0318cc6c9e90615000fce1689e8a939
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 013532db350b41e8cfaeac5559065e46f76379a7
+ms.sourcegitcommit: 308e6da8de1a3456a0ba807c5388b8891b861d5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173751"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854215"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -28,6 +28,7 @@ ms.locfileid: "53173751"
 |了解新版本和即将发布的版本|请参阅本页面上的[了解新版本和更新](#information-about-new-releases-and-updates)部分。|
 |获取产品帮助|请参阅本页面上的[支持选项和社区资源](#support-options-and-community-resources)部分。|
 |检查订阅信息和支持的功能|请利用 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)页面上的订阅信息和功能列表。|
+|请参阅有关许可的常见问题解答|仔细阅读许可的[常见问答解答](https://azure.microsoft.com/pricing/details/information-protection#faq)。|
 |请求新功能或更改功能|请访问适用于 Azure 信息保护的 [UserVoice](https://msip.uservoice.com) 网站，并使用公司电子邮件地址登录。|
 |与产品团队和同行沟通|访问 Azure 信息保护的 [Yammer 网站](https://www.yammer.com/AskIPTeam)。|
 |了解 Azure 信息保护专用术语|请在[术语](terminology.md)页上搜索术语或缩写。|

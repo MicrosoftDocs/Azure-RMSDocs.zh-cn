@@ -4,18 +4,18 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2019
+ms.date: 02/07/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 68b1cb057af1cc5de271c6e896e5cff4bb922cd2
-ms.sourcegitcommit: b1e08bc29d50187532f00dc215ab331e0a7dbebe
+ms.openlocfilehash: b410b85b1fa877aef542d52cc14b44cf65370c3f
+ms.sourcegitcommit: 308e6da8de1a3456a0ba807c5388b8891b861d5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55146700"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854164"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -31,16 +31,18 @@ ms.locfileid: "55146700"
 
 若要确认组织的订阅包括所需的 Azure 信息保护功能，请查看 [Azure 信息保护定价](https://azure.microsoft.com/pricing/details/information-protection)页面中的功能列表。
 
+如果你对许可有疑问，请仔细阅读许可的[常见问答解答](https://azure.microsoft.com/pricing/details/information-protection#faq)。
+
 > [!TIP]
 > 希望查看 Office 365 计划或 Exchange Online 独立计划是否支持 [Office 365 邮件加密的新增功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)，以向个人电子邮件地址发送受保护的电子邮件？ 例如 Gmail、Yahoo 和 Microsoft。 请参阅以下资源：
 >
-> [Exchange Online 服务说明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)
+> - [Exchange Online 服务说明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)
 >
-> [Office 365 教育版](https://technet.microsoft.com/library/mt844095.aspx)
+> - [Office 365 教育版](https://technet.microsoft.com/library/mt844095.aspx)
 >
-> [Office 365 美国政府版](https://technet.microsoft.com/library/mt774581.aspx)
+> - [Office 365 美国政府版](https://technet.microsoft.com/library/mt774581.aspx)
 
-如果对订阅或许可有任何疑问，请勿将问题发布在此页面上，而是联系你的 Microsoft 客户经理或 [Microsoft 支持部门](information-support.md#to-contact-microsoft-support)。
+如果你对订阅或许可有任何疑问，请勿在此页发布它们。 相反，请查看许可的[常见问答解答](https://azure.microsoft.com/pricing/details/information-protection#faq)中是否有答案。 如果问题没有得到解答，请与 Microsoft 客户经理或 [Microsoft 支持部门](information-support.md#to-contact-microsoft-support)联系。
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
