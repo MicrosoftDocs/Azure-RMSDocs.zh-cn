@@ -3,7 +3,7 @@ title: RMS 开发人员指南 | Azure RMS
 description: 现在可使用三代的 Rights Management SDK。
 keywords: ''
 author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.author: bryanla
 ms.date: 12/11/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 0510ead4-2fe7-4269-885b-fe16bcc69888
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: c94965a6007ea93e657e719c6c9cd963cf54e66c
-ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
+ms.openlocfilehash: 805da857b592e670209c6d6ced1499c7424e5897
+ms.sourcegitcommit: 8c2de5119105cf5d5bc91fcc2202b64e5a779e7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266427"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56085700"
 ---
 # <a name="rms-developers-guide"></a>RMS 开发人员指南
 

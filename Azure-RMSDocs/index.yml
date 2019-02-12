@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: fc63a72d5bb275990255ca425cb166478662dedc
-ms.sourcegitcommit: 1cf0e50a6278d697ac93de6b698318b7c3cce903
+ms.openlocfilehash: a5679ecddad0f365d5d93e2c0100fa04b2b1a341
+ms.sourcegitcommit: 8c2de5119105cf5d5bc91fcc2202b64e5a779e7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55479335"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56081688"
 documentType: LandingData
 title: Azure 信息保护文档
 metadata:
@@ -12,7 +12,7 @@ metadata:
   description: 控制并帮助保护你在公司防火墙外共享的电子邮件、文档和敏感数据。
   services: information-protection
   author: msmbaldwin
-  manager: mbaldwin
+  manager: barbkess
   ms.service: information-protection
   ms.tgt_pltfrm: na
   ms.devlang: na
