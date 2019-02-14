@@ -4,14 +4,15 @@ description: MIP SDK 几乎完全是异步的。 本文将帮助你了解如何�
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 50bc3bfd9bcba8e90a386a6e0444f65389bcfa76
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.openlocfilehash: d822a8ea57def13d2f04ac1c18b22ff629e413ad
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445795"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56251170"
 ---
 # <a name="microsoft-information-protection-sdk---policy-api-observers"></a>Microsoft 信息保护 SDK - 策略 API 观察程序
 
@@ -27,7 +28,7 @@ ms.locfileid: "47445795"
 
 在以下示例中，我们创建了一个派生自 `mip::Profile::Observer` 的 `ProfileObserver` 类。 已重写成员函数以使用整个示例中使用的 future/promise 模式。
 
-**注意**：以下示例仅部分实现，不包括 `mip::ProfileEngine` 相关观察程序的替代。
+**请注意**:以下示例仅部分实现，但不包括替代`mip::ProfileEngine`相关观察者。
 
 ### <a name="profileobserverh"></a>profile_observer.h
 

@@ -4,20 +4,21 @@ description: 本文将帮助你了解如何使用 PowerShell 获取 OAuth2 访�
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 02/04/2019
 ms.author: bryanla
-ms.openlocfilehash: 43b8042858bb42523ae90ec0090349db66b78d4f
-ms.sourcegitcommit: e24c934a2fb156ec8349638c4020fd17a58fbb01
+ms.openlocfilehash: 85c06979a5010a17b60751ccd8a09529be2c362d
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55890035"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252888"
 ---
 # <a name="acquire-an-access-token-powershell"></a>获取访问令牌 (PowerShell)
 
 所示的示例演示如何调用外部的 PowerShell 脚本，以获取 OAuth2 令牌。 需要有效的 OAuth2 访问令牌的身份验证委托的实现。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 - 完整[(MIP) SDK 设置和配置](setup-configure-mip.md)。 以及执行其他任务将在 Azure Active Directory (Azure AD) 租户中注册客户端应用程序。 Azure AD 将提供一个应用程序 ID，也称为客户端 ID，在你获取令牌的逻辑中使用。
 

@@ -4,14 +4,15 @@ description: 记录 mip::removecontentfooteraction 类的 Microsoft 信息保护
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 1d8d68ff3fb3e041a271469b9ba4d0a18c158544
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: cff3c01b01f5e02f7df3376fc2cb10fc0a6858fa
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651303"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259506"
 ---
 # <a name="class-mipremovecontentfooteraction"></a>class mip::RemoveContentFooterAction 
 指定从文档中删除内容脚注的操作类。

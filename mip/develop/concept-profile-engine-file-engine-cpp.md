@@ -4,24 +4,25 @@ description: 本文将帮助你了解在应用程序初始化期间创建的文�
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 9ccea755c83b570aa17ff4d30d98783f4bef79e5
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.openlocfilehash: 09b4db10523539f093a54c54d1fc6b7de8f7ddb0
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446594"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259280"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-engine-concepts"></a>Microsoft 信息保护 SDK - 文件 API 引擎概念
 
 MIP SDK 文件 API 中的 `mip::FileEngine` 为代表指定标识执行的所有操作提供一个接口。 将为登录到应用程序的每个用户添加一个引擎，并在该标识的上下文中执行引擎执行的所有操作。
 
-`FileEngine` 有两个主要职责：为经过身份验证的用户列出标签，并创建文件处理程序以代表用户执行文件操作。 
+`FileEngine`具有两个主要职责：列出用于身份验证的用户的标签和创建文件处理程序来执行代表用户的文件操作。 
 
 - [`mip::FileEngine`](reference/class_mip_fileengine.md)
-- `ListSensitivityLabels()`：获取已加载引擎的标签列表。
-- `CreateFileHandler()`：为特定文件或流创建 `mip::FileHandler`。
+- `ListSensitivityLabels()`：获取加载的引擎的标签列表。
+- `CreateFileHandler()`：创建`mip::FileHandler`特定文件或流。
 
 ## <a name="add-a-file-engine"></a>添加文件引擎
 

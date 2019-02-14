@@ -4,14 +4,15 @@ description: 本文将帮助你了解在应用程序初始化期间创建的保�
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: ae6699212d45a6c8a2fa95f648e7f5a2be3de93e
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.openlocfilehash: 3fa8a7b9f787cef980722efa5036de5c3f583b35
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445302"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56251698"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-profile-concepts"></a>Microsoft 信息保护 SDK - 保护 API 配置文件概念
 
@@ -23,10 +24,10 @@ ms.locfileid: "47445302"
 
 ### <a name="protectionprofilesettings-parameters"></a>ProtectionProfile::Settings Parameters
 
-- `std::string path`：在其下存储日志记录、遥测和其他永久性状态的文件路径。
-- `bool useInMemoryStorage`：定义是否所有状态都应存储在内存中（而不是存储在磁盘上）。
-- `std::shared_ptr<mip::AuthDelegate> authDelegate`：类 `mip::AuthDelegate` 的共享指针。
-- `std::shared_ptr<mip::ProtectionProfile::Observer> observer`：指向 `ProtectionProfile::Observer` 实现的共享指针。
+- `std::string path`：文件路径下的日志记录、 遥测和其他持久状态存储。
+- `bool useInMemoryStorage`：定义应在磁盘上而不是内存中存储的所有状态。
+- `std::shared_ptr<mip::AuthDelegate> authDelegate`：类的共享的指针`mip::AuthDelegate`。
+- `std::shared_ptr<mip::ProtectionProfile::Observer> observer`：共享的指向`ProtectionProfile::Observer`实现。
 - `mip::ApplicationInfo applicationInfo`：对象。 用于定义使用 SDK 的应用程序的相关信息。
 
 下面的两个示例展示如何使用本地存储作为状态存储来创建 profileSettings 对象，以及仅在内存中创建该对象。 两者都假设已经创建了 `authDelegateImpl` 对象。

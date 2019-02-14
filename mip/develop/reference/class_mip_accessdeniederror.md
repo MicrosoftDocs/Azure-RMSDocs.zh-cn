@@ -4,14 +4,15 @@ description: 记录 mip::accessdeniederror 类的 Microsoft 信息保护 (MIP) S
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: d05809e93153ec28c1c168815a88276cace08c28
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: e309a923a31faa983eaf3f0b446a480bcc253edb
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55650258"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254622"
 ---
 # <a name="class-mipaccessdeniederror"></a>class mip::AccessDeniedError 
 用户无法访问内容。 例如，无权限、内容已撤销。

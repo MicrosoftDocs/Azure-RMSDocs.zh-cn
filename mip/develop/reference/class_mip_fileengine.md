@@ -4,14 +4,15 @@ description: 记录 mip::fileengine 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 4bcdd08cb7ced9e2eea8fa09d9364064a8d198df
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: e397ad68fa39b318d6e4c08e36c450a474c3e5a9
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651456"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56255166"
 ---
 # <a name="class-mipfileengine"></a>class mip::FileEngine 
 此类提供适用于所有引擎功能的接口。

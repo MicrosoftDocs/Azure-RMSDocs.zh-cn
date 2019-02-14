@@ -4,14 +4,15 @@ description: 记录 mip::httpresponse 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 9cbd899548be15833456a7c1e1fe34c3b5629717
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 00a6d7dd3728edbf6fb1dbb4e59c537d7b6cf911
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55650286"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252990"
 ---
 # <a name="class-miphttpresponse"></a>类 mip::HttpResponse 
 描述单个 HTTP 响应的接口，由客户端应用在重写 [HttpDelegate](class_mip_httpdelegate.md) 时实现。

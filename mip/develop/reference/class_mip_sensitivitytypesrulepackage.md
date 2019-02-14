@@ -4,14 +4,15 @@ description: 记录 mip::sensitivitytypesrulepackage 类的 Microsoft 信息保�
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: d3811d9e8ae80d538a103cb9bd2f06de0abcaefa
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 7195d58d90b1a704eb4fc667fc2fe3b93ef03e57
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651905"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56257785"
 ---
 # <a name="class-mipsensitivitytypesrulepackage"></a>类 mip::SensitivityTypesRulePackage 
   

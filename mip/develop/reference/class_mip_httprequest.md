@@ -4,14 +4,15 @@ description: 记录 mip::httprequest 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 3c23d37836b241a416cbaf5ee5cd22f8c726794d
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 56c736d985e7c8bd258fcb7c1f7e42b5db3801fd
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55650079"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56256934"
 ---
 # <a name="class-miphttprequest"></a>class mip::HttpRequest 
 描述单个 HTTP 请求的接口。

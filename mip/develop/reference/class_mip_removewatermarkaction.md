@@ -4,14 +4,15 @@ description: 记录 mip::removewatermarkaction 类的 Microsoft 信息保护 (MI
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 8bd17001426c826b9ce2f0d627177ef783d09046
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 85b772c3d6de943e87cd87ab7a2124427a43b3bf
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651065"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258634"
 ---
 # <a name="class-mipremovewatermarkaction"></a>class mip::RemoveWatermarkAction 
 指定从文档中删除水印的操作类。

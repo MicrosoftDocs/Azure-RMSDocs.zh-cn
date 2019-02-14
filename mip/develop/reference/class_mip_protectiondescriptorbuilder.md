@@ -4,14 +4,15 @@ description: 记录 mip::protectiondescriptorbuilder 类的 Microsoft 信息保�
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: b6ac49c7cb4d6f7592abac041365191d90951b7a
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: e704dde11ab210638c4e1fd273bc0b1407817813
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651279"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252208"
 ---
 # <a name="class-mipprotectiondescriptorbuilder"></a>类 mip::ProtectionDescriptorBuilder 
 构造 [ProtectionDescriptor](class_mip_protectiondescriptor.md)，用于描述与一段内容相关的保护。

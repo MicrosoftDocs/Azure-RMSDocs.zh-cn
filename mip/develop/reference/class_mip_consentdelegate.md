@@ -4,14 +4,15 @@ description: 记录 mip::consentdelegate 类的 Microsoft 信息保护 (MIP) SDK
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 3eed60a06d2dda22f3ed037b1f30e3c5a0f2c699
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 6b4ec544e0390f9fd17d39dc146cfd538cfb927c
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651854"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254860"
 ---
 # <a name="class-mipconsentdelegate"></a>类 mip::ConsentDelegate 
 执行许可相关操作的委托。

@@ -4,14 +4,15 @@ description: Microsoft 信息保护 (MIP) 将 Microsoft 的分类、标记和保
 author: BryanLa
 ms.service: information-protection
 ms.topic: overview
+ms.collection: M365-security-compliance
 ms.date: 01/18/2019
 ms.author: bryanla
-ms.openlocfilehash: 77d8fb8d32c0f75be49b29e95316f8da873d14c6
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 656f4af77ce3e26515c5e54103e8d3b341439271
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651133"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56250736"
 ---
 # <a name="overview"></a>概述
 

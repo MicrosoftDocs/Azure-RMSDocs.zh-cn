@@ -4,14 +4,15 @@ description: 本文将帮助你了解如何创建策略 API 处理程序并将�
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 11/16/2018
 ms.author: tommos
-ms.openlocfilehash: 02198f7762e2952f946757d14c13a41b22d73c7a
-ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
+ms.openlocfilehash: cc35475086de76b869428c62cfc35e73fc3060db
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303985"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258770"
 ---
 # <a name="microsoft-information-protection-sdk---policy-handler-concepts"></a>Microsoft 信息保护 SDK - 策略处理程序概念
 

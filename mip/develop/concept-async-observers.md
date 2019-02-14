@@ -4,14 +4,15 @@ description: MIP SDK 几乎完全是异步的。 本文将帮助你了解如何�
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 99f68383a4e697f4f8f04c19523ccb0fb50fa3c0
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.openlocfilehash: 9ee7e0bcf7fdd42bb989067adf1037ac8d371cad
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445543"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259654"
 ---
 # <a name="microsoft-information-protection-sdk---observer-concepts"></a>Microsoft 信息保护 SDK - 观察程序概念
 

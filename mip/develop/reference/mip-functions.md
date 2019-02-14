@@ -4,14 +4,15 @@ description: 函数
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.date: 01/28/2019
 ms.author: bryanla
-ms.openlocfilehash: ab176e53547ebb773b7cf8b3933fddfc1566d62b
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 614e4bdd589e8c7ad3efdbf9be2f807e6d4ec43a
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651184"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254180"
 ---
 # <a name="functions"></a>函数
 

@@ -4,14 +4,15 @@ description: 本文将帮助你了解在应用程序初始化期间创建的策�
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 07e0fc59e0ed5ec1fc66fe3179fce07dfcb687d1
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.openlocfilehash: 9aac5fb0e010c8c73776c3e62ba9e98bdeff77d2
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445268"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252769"
 ---
 # <a name="microsoft-information-protection-sdk---policy-api-engine-concepts"></a>Microsoft 信息保护 SDK - 策略 API 引擎概念
 

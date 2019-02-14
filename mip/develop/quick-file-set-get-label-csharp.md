@@ -5,14 +5,15 @@ services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
+ms.collection: M365-security-compliance
 ms.date: 01/09/2019
 ms.author: bryanla
-ms.openlocfilehash: 726f0cf5b3c087d21323b46c9b7748b545932428
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 3af8cd7e21124d6e6ac70407d8e366eb6d88da45
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651956"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56253602"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C#)
 
@@ -69,7 +70,7 @@ ms.locfileid: "55651956"
 
 3. 使用以下值替换刚才粘贴的源代码中的占位符值：
 
-   | 占位符 | 值 |
+   | 占位符 | ReplTest1 |
    |:----------- |:----- |
    | \<input-file-path\> | 测试输入文件的完整路径，例如：`c:\\Test\\Test.docx`。 |
    | \<label-id\> | 敏感度标签 ID，从上一快速入门中的控制台输出所复制，例如：`f42a3342-8706-4288-bd31-ebb85995028z`。 |

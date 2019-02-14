@@ -4,14 +4,15 @@ description: 记录 mip::protectionprofile 类的 Microsoft 信息保护 (MIP) S
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 4b7e5ecc3006ab44b1c5f55cd658a0e0b33748d3
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 14df005d62b753c871c2c03604be6276edc61493
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55650946"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254690"
 ---
 # <a name="class-mipprotectionprofile"></a>class mip::ProtectionProfile 
 [ProtectionProfile](class_mip_protectionprofile.md) 是用于执行保护操作的根类。

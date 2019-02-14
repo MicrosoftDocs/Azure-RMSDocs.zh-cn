@@ -4,14 +4,15 @@ description: 记录 mip::fileioerror 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: df51b848c035a6428a5d7a8572328930e5bd6b6a
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 28e67ec1f267ac134fff2cec18a638c9eb1c1eff
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651575"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252956"
 ---
 # <a name="class-mipfileioerror"></a>class mip::FileIOError 
 文件 IO 错误。

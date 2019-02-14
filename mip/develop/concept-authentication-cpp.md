@@ -4,14 +4,15 @@ description: 本文将帮助你了解 MIP SDK 如何实现身份验证，以及�
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 288342c467574cf84c60e1211238b65a9e716b6c
-ms.sourcegitcommit: 860955fb2c292b3ca5910cd41095363f58caf553
-ms.translationtype: HT
+ms.openlocfilehash: dd2e8c5c3344da351715069910741c5651f4e617
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48230516"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56257955"
 ---
 # <a name="microsoft-information-protection-sdk---authentication-concepts"></a>Microsoft 信息保护 SDK - 身份验证概念
 
@@ -23,13 +24,13 @@ ms.locfileid: "48230516"
 
 `mip::AuthDelegate::AcquireOAuth2Token` 接受以下参数，并返回一个布尔值，指示令牌获取是否成功：
 
-- `mip::Identity`：要验证的用户或服务的标识（如果已知）。
-- `mip::AuthDelegate::OAuth2Challenge`：接受两个参数，即 **authority** 和 **resource**。 **Authority** 是将针对其生成令牌的服务。 **Resource** 是我们正在尝试访问的服务。 如果被调用，SDK 会负责将这些参数传递给委托。
-- `mip::AuthDelegate::OAuth2Token`：令牌结果写入此对象。 加载引擎时，SDK 将使用它。 除了我们的身份验证实现，没必要在任何地方获取或设置此值。
+- `mip::Identity`：若要进行身份验证，如果已知的用户或服务的标识。
+- `mip::AuthDelegate::OAuth2Challenge`：接受两个参数**颁发机构**并**资源**。 **Authority** 是将针对其生成令牌的服务。 **Resource** 是我们正在尝试访问的服务。 如果被调用，SDK 会负责将这些参数传递给委托。
+- `mip::AuthDelegate::OAuth2Token`：令牌的结果将写入此对象。 加载引擎时，SDK 将使用它。 除了我们的身份验证实现，没必要在任何地方获取或设置此值。
 
-**重要说明：** 应用程序不直接调用 `AcquireOAuth2Token`。 SDK 将在需要时调用此函数。
+**重要：** 应用程序不调用`AcquireOAuth2Token`直接。 SDK 将在需要时调用此函数。
 
-## <a name="consent"></a>Consent
+## <a name="consent"></a>同意
 
 在应用程序获权访问帐户标识下的受保护资源/API 之前，Azure AD 要求应用程序先获得同意。 同意被记录为对帐户租户中权限的永久性许可（对特定帐户使用用户同意功能，对所有帐户使用管理员同意功能）。 根据所访问的 API、应用程序所寻求的权限以及用于登录的帐户，同意过程会出现在各种场景中： 
 
@@ -48,9 +49,9 @@ ms.locfileid: "48230516"
 
 ### <a name="consent-options"></a>同意选项
 
-- **AcceptAlways**：同意并记住该决定。
-- **Accept**：同意一次。
-- **Reject**：不同意。
+- **AcceptAlways**:同意并记住所做决定。
+- **接受**:同意使用一次。
+- **拒绝**:不同意。
 
 如果 SDK 通过这种方法请求获取用户许可，客户端应用程序应向用户显示 URL。 客户端应用程序应提供一些用于获取用户许可的方法，并返回与用户决定对应的相应许可枚举。
 

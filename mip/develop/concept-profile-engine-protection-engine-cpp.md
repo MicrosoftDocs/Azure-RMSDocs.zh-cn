@@ -4,14 +4,15 @@ description: 本文将帮助你了解在应用程序初始化期间创建的保�
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: da0c50de6a818fcd8beda0483696ba433ce22149
-ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
-ms.translationtype: HT
+ms.openlocfilehash: 9595d3a3b12af802720363e141e40608c6f5ba93
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453310"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258399"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-engine-concepts"></a>Microsoft 信息保护 SDK - 保护 API 引擎概念
 
@@ -31,7 +32,7 @@ ms.locfileid: "47453310"
 ProtectionEngine::Settings engineSettings("UniqueID", "");
 ```
 
-**注意**：如果使用此方法创建保护设置对象，还必须手动将 CloudEndpointBaseUrl 设置为 https://api.aadrm.com
+**请注意**:如果使用此方法创建的保护设置对象，您必须手动设置 CloudEndpointBaseUrl 为 https://api.aadrm.com
 
 作为最佳做法，第一个参数 **id** 应该允许引擎轻松连接到关联用户**或** `mip::Identity` 对象。 若要使用 `mip::Identity` 初始化设置，请运行以下代码：
 
@@ -68,7 +69,7 @@ ProtectionEngine::Settings engineSettings(mip::Identity("Bob@Contoso.com", "");
 
 上述代码的最终结果是我们成功地将经过身份验证的用户的引擎添加到配置文件中。
 
-## <a name="implementation-list-templates"></a>实现：列出模板
+## <a name="implementation-list-templates"></a>实现：列表模板
 
 现在可以使用添加的引擎通过调用 `engine->GetTemplatesAsync()` 来列出经过身份验证的用户可用的所有敏感度模板。 
 
@@ -83,7 +84,7 @@ mEngine->GetTemplatesAsync(engineObserver, loadPromise);
 auto templates = loadFuture.get();
 ```
 
-### <a name="implementation-print-the-template-ids"></a>实现：打印模板 ID
+### <a name="implementation-print-the-template-ids"></a>实现：打印模板 Id
 
 ```cpp
 //Iterate through all template IDs in the vector

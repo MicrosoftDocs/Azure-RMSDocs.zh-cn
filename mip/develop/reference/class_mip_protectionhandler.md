@@ -4,14 +4,15 @@ description: 记录 mip::protectionhandler 类的 Microsoft 信息保护 (MIP) S
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 37358a2160c190978a21c491249dab42598d49b6
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 017268be0b3ea71b021b6a8d775dcb7bd69e8dc6
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651320"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56253078"
 ---
 # <a name="class-mipprotectionhandler"></a>类 mip::ProtectionHandler 
 管理特定保护配置的保护相关操作。

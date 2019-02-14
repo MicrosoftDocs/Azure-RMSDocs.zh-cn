@@ -4,14 +4,15 @@ description: 本文将帮助你了解 Microsoft 信息保护 SDK 生成的元数
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 11/08/2018
 ms.author: tommos
-ms.openlocfilehash: 9f9e4768a01d3d82f7b9563cb907533e53c7a228
-ms.sourcegitcommit: 03c9d1131177041e320d1bdbbdd92852a0d1d5cd
+ms.openlocfilehash: 990f729edaa0a2e212812f84fc5a4c63f82e37fb
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52156842"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56253963"
 ---
 # <a name="microsoft-information-protection-sdk---metadata"></a>Microsoft 信息保护 SDK 的元数据
 
@@ -33,11 +34,11 @@ GUID 是在组织中的每个标签的唯一标识符。
 
 MIP SDK 适用以下组的元数据。
 
-| 属性 | 类型或值                 | Description                                                                                                                                                                                                                                        | 必需 |
+| 属性 | 类型或值                 | 描述                                                                                                                                                                                                                                        | 必需 |
 |-----------|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| **已启用**   | True 或 False                 | 此属性指示是否为数据项启用此组键 / 值对表示的分类。 DLP 产品通常会验证存在此项以识别分类标签。 | 用户帐户控制       |
-| **站点 Id**    | GUID                          | Azure Active Directory 租户 ID                                                                                                                                                                                                                   | 用户帐户控制       |
-| **操作 Id**  | GUID                          | ActionID 被更改每个时间设置一个标签。 审核日志将包含旧的和新允许的标记数据项目的活动链接的 actionID。                                                                                 | 用户帐户控制       |
+| **已启用**   | True 或 False                 | 此属性指示是否为数据项启用此组键 / 值对表示的分类。 DLP 产品通常会验证存在此项以识别分类标签。 | 是       |
+| **SiteId**    | GUID                          | Azure Active Directory 租户 ID                                                                                                                                                                                                                   | 是       |
+| **ActionId**  | GUID                          | ActionID 被更改每个时间设置一个标签。 审核日志将包含旧的和新允许的标记数据项目的活动链接的 actionID。                                                                                 | 是       |
 | **方法**    | Standard、 特权或自动        | 通过 mip::AssignmentMethod 设置                                                                                                                                                                                                                 | 否        |
 | **SetDate**   | 扩展的 ISO 8601 日期格式 | 设置标签时的时间戳。                                                                                                                                                                                                              | 否        |
 | **名称**      | string                        | 标签在租户中的唯一名称。 它不一定与显示名称。                                                                                                                                                              | 否      |
@@ -46,10 +47,10 @@ MIP SDK 适用以下组的元数据。
 
 应用于一个文件时，结果是类似于下表。
 
-| Key                                                         | ReplTest1                                |
+| 键                                                         | 值                                |
 |-------------------------------------------------------------|--------------------------------------|
 | MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_Enabled     | true                                 |
-| MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_SetDate     | 2018-11-08T21:13:16-0800年             |
+| MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_SetDate     | 2018-11-08T21:13:16-0800             |
 | MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_Method      | 特权                           |
 | MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_Name        | 机密                         |
 | MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_SiteId      | cb46c030-1825-4e81-a295-151c039dbf02 |

@@ -4,14 +4,15 @@ description: 本文将帮助你了解在应用程序初始化期间创建的文�
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 33ec266068d15e827267b7d518344aebd0f8f072
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.openlocfilehash: 74937f5ef157c7807b6519a6490af80d46de6a8f
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445897"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254504"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-profile-concepts"></a>Microsoft 信息保护 SDK - 文件 API 配置文件概念
 
@@ -32,11 +33,11 @@ ms.locfileid: "47445897"
 
 `FileProfile::Settings` 构造函数接受下列五个参数：
 
-- `std::string path`：在其下存储日志记录、遥测和其他永久性状态的文件路径。
-- `bool useInMemoryStorage`：定义是否所有状态都应存储在内存中（而不是存储在磁盘上）。
-- `std::shared_ptr<mip::AuthDelegate> authDelegate`：类 `mip::AuthDelegate` 的共享指针 
+- `std::string path`：文件路径下的日志记录、 遥测和其他持久状态存储。
+- `bool useInMemoryStorage`：定义应在磁盘上而不是内存中存储的所有状态。
+- `std::shared_ptr<mip::AuthDelegate> authDelegate`：类的共享的指针 `mip::AuthDelegate` 
 - `std::shared_ptr<mip::ConsentDelegate>`： 
-- `std::shared_ptr<mip::FileProfile::Observer> observer`：指向 `FileProfile::Observer` 实现的共享指针。
+- `std::shared_ptr<mip::FileProfile::Observer> observer`：共享的指向`FileProfile::Observer`实现。
 - `mip::ApplicationInfo applicationInfo`：对象。 用于定义使用 SDK 的应用程序的相关信息。
 
 以下示例展示如何使用本地存储作为状态存储来创建 `profileSettings` 对象，以及仅在内存中创建该对象。 两者都假设已经创建了 `authDelegateImpl` 对象。

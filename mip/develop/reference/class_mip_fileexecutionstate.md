@@ -4,14 +4,15 @@ description: 记录 mip::fileexecutionstate 类的 Microsoft 信息保护 (MIP) 
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 08a9064645f0ffb3ffbaa72f00db26c5b29d3643
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 380e5f6732a2662d83b9bb37af5763ef30ffa3bf
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55652330"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259212"
 ---
 # <a name="class-mipfileexecutionstate"></a>类 mip::FileExecutionState 
   

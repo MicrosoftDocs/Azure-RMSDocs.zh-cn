@@ -4,14 +4,15 @@ description: 记录 mip::stream 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 4289b39ba454b19c6836a7eaccb6333cbb9000b4
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: cc7d803e572be16a817292c702c5990b7720ddd8
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651694"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252123"
 ---
 # <a name="class-mipstream"></a>class mip::Stream 
 一个类，它定义 MIP SDK 和基于流的内容之间的接口。

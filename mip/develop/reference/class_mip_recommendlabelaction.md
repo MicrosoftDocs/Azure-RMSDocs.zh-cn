@@ -4,14 +4,15 @@ description: 记录 mip::recommendlabelaction 类的 Microsoft 信息保护 (MIP
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: ec1f82ab5951a5b7813fff2ebd5be6650a80203b
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 665a244a858ba9924f27df96ca3b6471cb5fc829
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651337"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56260113"
 ---
 # <a name="class-miprecommendlabelaction"></a>类 mip::RecommendLabelAction 
 建议标签操作是向用户建议标签。 在用户忽略建议标签后，应通过对执行状态采取受支持的操作来取消此调用。

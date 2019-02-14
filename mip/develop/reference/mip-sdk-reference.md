@@ -4,14 +4,15 @@ description: MIP SDK for c + + 参考
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: cae7955684d0fae0f61e2a7319cbb036263e129b
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 7e041062b92bad8b853bf5bcf55a23c6ad88a4b7
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55650575"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56256595"
 ---
 # <a name="mip-sdk-for-c-reference"></a>MIP SDK for c + + 参考
 
