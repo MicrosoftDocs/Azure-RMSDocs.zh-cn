@@ -5,14 +5,15 @@ services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
+ms.collection: M365-security-compliance
 ms.date: 01/18/2019
 ms.author: bryanla
-ms.openlocfilehash: 4898aefc996c26df5f4831c95be63c9fa1a45dc4
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 45263bc2a8f77f73f318b2c8df94f21e785e0f40
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651201"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56256679"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 （c + +）
 
@@ -208,7 +209,7 @@ ms.locfileid: "55651201"
 
 4. 您只需在中粘贴，如下所示，使用字符串常量的源代码中的占位符值替换：
 
-   | 占位符 | 值 |
+   | 占位符 | ReplTest1 |
    |:----------- |:----- |
    | \<input-file-path\> | 测试输入文件的完整路径，例如：`"c:\\Test\\Test.docx"`。 |
    | \<content-identifier\> | 内容是人工可读标识符。 例如： <ul><li>对于文件，请考虑路径 \ 文件名： `"c:\Test\Test.docx"`</li><li>一封电子邮件，请考虑使用者： 发件人： `"RE: Audit design:user1@contoso.com"`</li></ul> |

@@ -4,14 +4,15 @@ description: 记录 mip::fileprofile 类的 Microsoft 信息保护 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 1e94e149a99fa48a69a830d5915ce4b33b55b322
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: fa61567ce2ca239db7cbde9b69837dacb4fc5fe0
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55650895"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56253215"
 ---
 # <a name="class-mipfileprofilesettings"></a>class mip::FileProfile::Settings 
 [FileProfile](class_mip_fileprofile.md) 在其创建期间及其整个生存期内使用的 [Settings](class_mip_fileprofile_settings.md)。

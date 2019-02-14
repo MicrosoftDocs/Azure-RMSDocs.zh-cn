@@ -4,14 +4,15 @@ description: 本文将帮助你了解如何使用 Python 获取 OAuth2 访问令
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 02/04/2019
 ms.author: bryanla
-ms.openlocfilehash: 423ae80df11dcf8031f845fdabf881606daf89c7
-ms.sourcegitcommit: fa7551060aaecc62d0c1f9179dd07f035d86651f
+ms.openlocfilehash: 138f4bea4f5edfaa4e049c5c58c624af1b81cab5
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742161"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259348"
 ---
 # <a name="acquire-an-access-token-python"></a>获取访问令牌 (Python)
 

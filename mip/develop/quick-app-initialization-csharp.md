@@ -4,14 +4,15 @@ description: 向您展示如何编写的 Microsoft 信息保护 (MIP) SDK 的初
 author: tommoser
 ms.service: information-protection
 ms.topic: quickstart
+ms.collection: M365-security-compliance
 ms.date: 01/04/2019
 ms.author: tommos
-ms.openlocfilehash: 7efaaba799afa01b07a5eefc0b6798983cc590d2
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 17c7bb1bd887b4009f450cb5bbf75900587de4f1
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55652364"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252090"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C#)
 
@@ -196,7 +197,7 @@ namespace mip_sdk_dotnet_quickstart
 
 3. 在中，使用以下值粘贴的源代码中的占位符值替换：
 
-   | 占位符 | 值 | 示例 |
+   | 占位符 | ReplTest1 | 示例 |
    |:----------- |:----- |:--------|
    | \<应用程序 ID\> | 分配给在“MIP SDK 安装和配置”中注册的应用程序的 Azure AD 应用程序 ID（2 个实例）。  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
    | \<友好名称\> | 用户定义的应用程序友好名称。 | AppInitialization |

@@ -4,14 +4,15 @@ description: 记录 mip::noauthtokenerror 类的 Microsoft 信息保护 (MIP) SD
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: ef2e6a3c4fd8a7f378ff4fc32501c614eeb40f9a
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 14a15c33650538462561f6fc3f181e79f5aba7e9
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651922"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56256067"
 ---
 # <a name="class-mipnoauthtokenerror"></a>类 mip::NoAuthTokenError 
 用户无法获取由于缺少身份验证令牌内容的访问权限。

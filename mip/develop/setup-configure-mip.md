@@ -4,20 +4,21 @@ description: 提供安装和配置先决条件，以便使用 Microsoft 信息�
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
+ms.collection: M365-security-compliance
 ms.date: 01/30/2019
 ms.author: bryanla
-ms.openlocfilehash: b8c152db0ae52a20cc5323709c245911564e5f18
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 13d9d82a402d283c393c90dc52c265a1bf8502d7
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651439"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254265"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置 
 
 快速入门和教程文章主要介绍使用 MIP SDK 库和 API 构建应用程序。 本文介绍如何安装和配置 Office 365 订阅和客户端工作站，为使用 SDK 做准备。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 在开始之前，请务必查看以下主题：
 

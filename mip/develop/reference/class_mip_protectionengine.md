@@ -4,14 +4,15 @@ description: 记录 mip::protectionengine 类的 Microsoft 信息保护 (MIP) SD
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: d1e93d150090a7d1648e52a676f2d2978060ba6a
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: d12fbe050ba86dbcef58dada971134c96dc637d1
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651354"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252905"
 ---
 # <a name="class-mipprotectionengine"></a>类 mip::ProtectionEngine 
 管理与特定标识有关的保护相关操作。

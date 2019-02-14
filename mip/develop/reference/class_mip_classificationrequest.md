@@ -4,14 +4,15 @@ description: 记录 mip::classificationrequest 类的 Microsoft 信息保护 (MI
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: a7350961af4c2e5d63211840382ee7a0b701f1c4
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 81e9a7276b78817f3d2f409cc403992284d23ceb
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55652024"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259144"
 ---
 # <a name="class-mipclassificationrequest"></a>类 mip::ClassificationRequest 
 包含请求的执行状态的一个分类调用的类。
