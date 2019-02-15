@@ -4,20 +4,21 @@ description: 第一个应用程序的快速入门指南是通过适用于每种�
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: e13c691dbe7b112058e5f7f0963cbf0324ad249c
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 0b849a849e1d217fe53b9bbd55cc9ad5270702fc
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393774"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252973"
 ---
 # <a name="get-started"></a>入门
 

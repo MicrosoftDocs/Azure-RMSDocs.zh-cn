@@ -4,20 +4,21 @@ description: 本主题指导你完成安装开发人员工具的过程。
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1fe23a8f70734a302a1fd7dc5ef5a7aece788189
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: ebcd7d5bf0769446b4f01fbe2eada5d6306b3908
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070649"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56256866"
 ---
 # <a name="install-the-sdk"></a>安装 SDK
 

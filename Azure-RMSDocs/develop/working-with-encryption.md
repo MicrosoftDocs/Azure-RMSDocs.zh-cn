@@ -4,20 +4,21 @@ description: Azure RMS 加密包及其使用的代码片段的方向。
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6c46df1ac7aca8d4668ff71bb91195d059f8a3a6
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 44567c4f083ed482a7fd27963e11b65d9a366c86
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071708"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259892"
 ---
 # <a name="how-to-work-with-encryption-settings"></a>操作说明：使用加密设置
 
