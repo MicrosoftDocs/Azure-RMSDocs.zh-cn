@@ -4,20 +4,21 @@ description: 说明如何设置开发环境以便将 AD RMS SDK API 用于特定
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 296FC4C0-99C6-4997-AD97-5CEE01221B1A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: f05c24d6d9bec5771b94f6cad1b07b4aca019a4e
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 63426f1fb4143fe1ccb3aeaaa53981498ce17cbe
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071669"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254758"
 ---
 # <a name="setup-developer-environment"></a>设置开发人员环境
 

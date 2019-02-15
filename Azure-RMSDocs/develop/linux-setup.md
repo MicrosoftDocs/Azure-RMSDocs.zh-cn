@@ -4,20 +4,21 @@ description: 多种版本的 Linux 操作系统现可使用 Rights Management SD
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 69fdf8e9405415c196cf439e06abe2983afcbf37
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: a6c2fa55268247581e472a92ebb531b039e14d5a
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070360"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56257614"
 ---
 # <a name="linux-setup"></a>Linux 安装程序
 

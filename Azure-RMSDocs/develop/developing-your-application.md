@@ -4,20 +4,21 @@ description: 有关基本控制台应用如何使用 AIP 实现文档保护的�
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 03/13/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 580dc90bae499a5cc64238a6157612bea5eb3282
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 7defe49f02db6a9b63d9cf12bbd9ad1538afcf69
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394178"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259382"
 ---
 # <a name="developing-your-application"></a>开发应用程序
 

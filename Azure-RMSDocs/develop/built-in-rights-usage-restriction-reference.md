@@ -4,20 +4,21 @@ description: 概述了 RMS SDK 4.2 提供的内置权限以及应用为遵守�
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 9142dd29-f1f4-4c2f-82ac-534f14b8bba1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 3fd505e8e692cfacafbfec7b65d6e6ac37d539f5
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: cd9c1ae8873b8f5a8d0440bd017d92d16801219b
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071261"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259603"
 ---
 # <a name="how-to-use-built-in-rights"></a>如何：使用内置权限
 

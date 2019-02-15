@@ -4,20 +4,21 @@ description: 开发 AIP SDK 4.2 的操作指南集合
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 579c307ea8ac0777c9cab03ab55c857011a8ce5c
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 4e4ded66c7372f6bbc4d737a3b0275de8237cbe5
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071209"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56255517"
 ---
 # <a name="developer-guidance"></a>开发人员指南
 Microsoft Rights Management SDK 4.2 的重点是帮助你构建启用 AD RMS 的应用程序，尽可能降低利用 Active Directory Right Management Services (AD RMS) 的复杂性。

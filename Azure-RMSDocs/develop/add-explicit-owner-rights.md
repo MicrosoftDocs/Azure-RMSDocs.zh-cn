@@ -4,20 +4,21 @@ description: 应用程序在从头开始创建许可证时应显式添加“所�
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6e5a62a5fd7eb7f0e6eaa8aa1fb2b015f6331a45
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 2bb0ef4652a58a1658e6d0cd64577a02f3af039c
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393724"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56255761"
 ---
 # <a name="how-to-add-explicit-owner-rights"></a>操作说明：添加显式所有者权限
 

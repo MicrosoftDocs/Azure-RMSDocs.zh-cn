@@ -4,20 +4,21 @@ description: Windows Store 应用程序可以使用 Microsoft Rights Management 
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: b7317dcd85cf8dd1792dee583a96bfa370673b4d
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 18da97a07e7d65c69f88167cf440e864d3b29631
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071788"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56257597"
 ---
 # <a name="windows-store-setup"></a>Windows 应用商店安装程序
 

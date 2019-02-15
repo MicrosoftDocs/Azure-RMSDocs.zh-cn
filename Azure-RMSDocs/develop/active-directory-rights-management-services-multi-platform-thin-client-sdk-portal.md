@@ -4,20 +4,21 @@ description: RMS SDK 4.2 是一种简化的新一代 API，可用于在使用 Ri
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 7780f7d540de4a36a53aa430da6625258234f673
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 70ab7aa0260cef02b453ad72850168dbf4081652
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071244"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258566"
 ---
 # <a name="rights-management-sdk42"></a>Rights Management SDK 4.2
 

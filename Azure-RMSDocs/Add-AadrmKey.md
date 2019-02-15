@@ -3,19 +3,20 @@ title: Add-AadrmKey
 description: 有关 AADRM 模块中 Add-AadrmKey 的帮助。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 11/19/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: A1C99424-D986-4A5A-B2E1-6D18EEF11B21
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: 95a5d6f1f3bed4d007c02861d754ed9ec46cf207
-ms.sourcegitcommit: 03a9fc3f1b96a4edc0e2a9d538ce04a0579023be
+ms.openlocfilehash: e61bf5fab8aeed01e200b5238d3d4756293a0cea
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52268030"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258277"
 ---
 # <a name="add-aadrmkey"></a>Add-AadrmKey
 

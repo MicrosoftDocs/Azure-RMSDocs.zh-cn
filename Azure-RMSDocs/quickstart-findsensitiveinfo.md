@@ -3,18 +3,21 @@ title: 快速入门教程 - 使用 Azure 信息保护扫描程序查找文件中
 description: 使用 Azure 信息保护扫描程序查找在本地存储的文件中的敏感信息。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 01/16/2019
+manager: barbkess
+ms.date: 02/15/2019
 ms.topic: quickstart
+ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 12bde16a9b1659d00137720ad7c804db32cb1556
-ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
+ms.openlocfilehash: 07baee062d994b6efd97084bf0b293adb2d5fb84
+ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314826"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56266006"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
+
+>适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 
 本快速入门教程介绍如何安装和配置 Azure 信息保护扫描程序，以查找存储在本地数据存储中的文件中的敏感信息。 例如，本地文件夹、网络共享或 SharePoint Server。
 

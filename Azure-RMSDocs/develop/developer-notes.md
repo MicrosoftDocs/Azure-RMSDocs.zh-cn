@@ -4,20 +4,21 @@ description: 使用 AIP SDK 2.1 进行开发的操作指南主题的集合
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5A9F04FD-0FCD-482F-8671-36FE93B783B0
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 4e6f4cbf9ec795ca73424bbd2ca35e5f1ae59fa7
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: c6f20fe10580e5dc6dd56912e53b878940598f3a
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070582"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56255880"
 ---
 # <a name="developer-guidance"></a>开发人员指南
 

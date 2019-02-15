@@ -4,20 +4,21 @@ description: 本主题提供部署应用程序的概述和分步指导
 keywords: 部署, RMS, AIP
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 03/13/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: bc1e1e3dc66b3dee00dbfac7db11a1aaaeeab4e3
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: e70d158b5a2881c2d8f893741eee12e815f979c5
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394309"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56255506"
 ---
 # <a name="deploy-into-production"></a>部署到生产
 

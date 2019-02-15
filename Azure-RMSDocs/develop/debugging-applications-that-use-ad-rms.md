@@ -4,20 +4,21 @@ description: 下面的主题演示如何调试应用程序和使用 Windows 事�
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: cb77177ecb0c92f3e991e0f6d06a55fa2c332873
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: df652e5a5573bc00fc488b97d79375c551d389f1
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071537"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258328"
 ---
 # <a name="how-to-debug-a-rights-enabled-application"></a>操作说明：调试启用权限的应用程序
 

@@ -4,20 +4,21 @@ description: 配置 Azure 信息保护应用以使用基于 Azure ADAL 的身份
 keywords: 身份验证, RMS, ADAL, 信息保护,
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 03/13/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: dd988c808de661b025d23e5fe73fb9f453fced10
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: eea4684bad18a3064806be72d7bfc64f239fac8b
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070632"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56257359"
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>配置应用以进行 ADAL 身份验证
 

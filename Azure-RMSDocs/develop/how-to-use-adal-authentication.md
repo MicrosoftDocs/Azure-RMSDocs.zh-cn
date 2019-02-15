@@ -4,20 +4,21 @@ description: 使用 ADAL 进行身份验证的过程概述
 keywords: 身份验证、RMS、ADAL
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: a921d71c7cb54d0db84d30baf5dd723e314405c3
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 82574d20e11b64b54652a6df9da2bd9e043f2b9e
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070343"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56260062"
 ---
 # <a name="how-to-use-adal-authentication"></a>操作说明：使用 ADAL 身份验证
 

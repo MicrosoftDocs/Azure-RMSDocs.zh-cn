@@ -4,20 +4,21 @@ description: 安装并配置 RMS 服务器以便测试启用权限的应用程�
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 515f3b70e83ddff793f79b4becd8084d306a4aa0
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: f53ffd6aa5f69af66adff5a8a434fc78930247ad
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393825"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252327"
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>操作说明：安装和配置 RMS 服务器并用其进行测试
 

@@ -4,20 +4,21 @@ description: 文档跟踪功能需要对管理关联元数据以及向服务注�
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: f1d8030fd4453ff5ec0720f30d22278297e580c8
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 8a5d5c72d91d58ffb42b53768112ce62c4835334
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394155"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56257988"
 ---
 # <a name="how-to-use-document-tracking"></a>如何：使用文档跟踪
 

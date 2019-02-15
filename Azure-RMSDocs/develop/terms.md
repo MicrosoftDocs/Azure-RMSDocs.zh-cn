@@ -4,20 +4,21 @@ description: 特定于 Rights Management Services 的开发人员术语定义的
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1cf0080c899bc3095ff036f651c1f31f63b70ffe
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: b2d0a46853d32de1918e1e8a9248e0948171d880
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071364"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56251851"
 ---
 # <a name="terms"></a>条款
 

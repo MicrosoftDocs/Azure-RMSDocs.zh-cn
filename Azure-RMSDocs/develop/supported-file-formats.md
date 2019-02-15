@@ -4,20 +4,21 @@ description: 当前版本的文件 API 支持对 MS Office 文件的本机保护
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: e42029a2e2f89189e7405cb82204da918fecd080
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 6fa4571bd04211f3e09843ef89f142b4ebbe7af5
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071534"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56255931"
 ---
 # <a name="supported-file-formats"></a>支持的文件格式
 

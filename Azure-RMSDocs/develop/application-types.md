@@ -4,20 +4,21 @@ description: 本主题介绍可以选择创建为启用权限形式的应用程�
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 744a5648bc436bb903cf1b8feb47ca91b19bb7fc
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: d6d99b1fe2517cbef1303562eff1160dab4b16a5
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071652"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56255608"
 ---
 # <a name="application-types"></a>应用程序类型
 

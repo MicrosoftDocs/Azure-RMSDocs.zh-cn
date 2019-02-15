@@ -4,20 +4,21 @@ description: Azure 信息保护 SDK 4.2 支持多种操作系统。 包括 Andr
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5e7592510e526efc663ab3a24448238b4fc19a09
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: f3900e991bc841c834170c5bfa7a7383cb381205
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071601"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56251187"
 ---
 # <a name="api-sdk-42-reference"></a>API SDK 4.2 参考
 

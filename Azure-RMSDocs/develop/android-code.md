@@ -4,20 +4,21 @@ description: 本主题向你介绍 Android 版本的 RMS SDK 的重要代码元�
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5d65ff3a8f6b3356e08ced78100c33c2774568e1
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: e9015fab186df95fa88706674276edb2f8c9ef09
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393596"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56255472"
 ---
 # <a name="android-code-examples"></a>Android 代码示例
 

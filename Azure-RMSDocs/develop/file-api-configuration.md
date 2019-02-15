@@ -4,20 +4,21 @@ description: 可通过注册表中的设置来配置文件 API 的行为。
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 10/11/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 0b05498730d064dfa2b7fb2183b1a8694c1fbf63
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: a46a270780fe6245adf14b950833d6f6277f1b35
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070615"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56253008"
 ---
 # <a name="file-api-configuration"></a>文件 API 配置
 

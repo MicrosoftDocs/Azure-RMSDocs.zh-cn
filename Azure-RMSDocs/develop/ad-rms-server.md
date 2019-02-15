@@ -4,20 +4,21 @@ description: Rights Management Services (RMS) 的服务器组件通过一组在 
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: be071d5f51d4c2122211ca8022c2ae4329517200
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 224139de1e23ace70923aefe508e5d6ccb2969b8
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071465"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56251102"
 ---
 # <a name="server"></a>Server
 

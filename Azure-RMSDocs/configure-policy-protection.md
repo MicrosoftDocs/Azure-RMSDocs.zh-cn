@@ -3,21 +3,22 @@ title: 配置 Azure 信息保护标签以进行保护 - AIP
 description: 通过配置标签来使用 Rights Management 保护，可保护最敏感的文档和电子邮件。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/24/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: eafcbf02ea6585b8a1434e210c274648982c0894
-ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
+ms.openlocfilehash: 74ec040b0999bfc9c2f3693cc8ceb3e0d438d67c
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55067289"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56255200"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
->适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 
 可通过使用 Rights Management 服务保护最敏感的文档和电子邮件。 此服务使用加密、标识和身份验证策略，有助于防止数据丢失。 保护应用于配置为使用 Rights Management 保护文档和电子邮件的标签，用户还可以在 Outlook 中选择“不可转发”按钮。
 

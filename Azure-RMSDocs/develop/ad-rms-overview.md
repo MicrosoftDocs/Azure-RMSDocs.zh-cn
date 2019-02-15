@@ -4,20 +4,21 @@ description: Rights Management Services (RMS) 是一种信息保护技术，可�
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: edd4cb0d28c68491348e61ac5a90d03087059144
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 692884c675115b8200df2ac9c9ca5c6d2abf30af
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070275"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56251137"
 ---
 # <a name="overview"></a>概述
 

@@ -4,20 +4,21 @@ description: 通过 AAD RM，iOS 和 OS X 应用程序可使用 RMS SDK 4.2 在�
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 620412b55ca583d8a84cf8d167ba890cea742b7f
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 6b3fe0994c27e26c505974cd4f5d96df252f2aa0
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070210"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259314"
 ---
 # <a name="ios-and-os-x-setup"></a>iOS 和 OS X 安装程序
 
