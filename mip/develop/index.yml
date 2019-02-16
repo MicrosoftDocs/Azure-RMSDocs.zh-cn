@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: c181a300b6a2699a4cb904356c8c27dc8143e45f
-ms.sourcegitcommit: 8c2de5119105cf5d5bc91fcc2202b64e5a779e7c
+ms.openlocfilehash: 311fd83cc4928f657a58ca17cd2d13b7b9f792bd
+ms.sourcegitcommit: 4ed27f50545aae1a58cc922202959d427bcba7ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56081037"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56323591"
 documentType: LandingData
 title: Microsoft 信息保护 SDK 文档
 metadata:
@@ -40,17 +40,24 @@ sections:
     style: dataMatrix
     columns:
     - image:
-        src: media/index/logo_Cplusplus.svg
+        src: ./media/index/logo_Cplusplus.svg
+      title: C++
+    - image:
+        src: media/index/logo_Csharp.svg
+      title: C#
     rows:
     - title: 应用程序初始化
       values:
-      - href: quick-app-initialization-cpp
+      - href: quick-app-initialization-cpp.md
+      - href: quick-app-initialization-csharp.md
     - title: 使用文件 API 列出敏感度标签
       values:
-      - href: quick-file-list-labels-cpp
+      - href: quick-file-list-labels-cpp.md
+      - href: quick-file-list-labels-csharp.md
     - title: 使用文件 API 在文件上设置/获取标签
       values:
-      - href: quick-file-set-get-label-cpp
+      - href: quick-file-set-get-label-cpp.md
+      - href: quick-file-set-get-label-csharp.md
 - title: 参考
   items:
   - type: list
