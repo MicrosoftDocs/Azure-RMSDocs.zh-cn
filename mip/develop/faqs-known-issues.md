@@ -7,24 +7,18 @@ ms.topic: troubleshooting
 ms.collection: M365-security-compliance
 ms.date: 10/19/2018
 ms.author: bryanla
-ms.openlocfilehash: a4e6f4e06e534fd61078da254185503d041d4767
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: f9aed3cab9ba22ba1ac2b41984ce82957278f1e6
+ms.sourcegitcommit: 4ed27f50545aae1a58cc922202959d427bcba7ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257767"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56323574"
 ---
 # <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Microsoft 信息保护 (MIP) SDK 常见问题解答和问题
 
 本文提供对常见问题 (FAQ) 的解答，以及针对已知问题和常见错误的疑难解答指南。
 
 ## <a name="frequently-asked-questions"></a>常见问题 
-
-### <a name="question-which-platforms-are-supported-by-the-mip-sdk"></a>问：MIP SDK 支持哪些平台？
-
-以下平台支持 MIP SDK：
-
-[!INCLUDE [MIP SDK platform support](../includes/mip-sdk-platform-support.md)]
 
 ### <a name="question-how-does-the-sdk-handle-strings-and-what-string-type-should-i-be-using-in-my-code"></a>问：SDK 如何处理字符串，在我的代码中应使用什么字符串类型？
 

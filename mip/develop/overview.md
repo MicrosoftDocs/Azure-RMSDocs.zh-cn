@@ -7,12 +7,12 @@ ms.topic: overview
 ms.collection: M365-security-compliance
 ms.date: 01/18/2019
 ms.author: bryanla
-ms.openlocfilehash: 656f4af77ce3e26515c5e54103e8d3b341439271
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: b78214fc2260fd984b6b853866f72b92dd5cc11e
+ms.sourcegitcommit: 4ed27f50545aae1a58cc922202959d427bcba7ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56250736"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56323557"
 ---
 # <a name="overview"></a>概述
 
@@ -40,6 +40,10 @@ MIP SDK 公开的标记和保护服务从 Office 365 安全与合规中心，第
 * 云访问安全代理或数据丢失防护解决方案推断使用 Azure 信息保护加密的数据。
 
 有关更详尽的列表，请查看 [API 概念](concept-apis-use-cases.md)。
+
+以下平台支持 MIP SDK：
+
+[!INCLUDE [MIP SDK platform support](../includes/mip-sdk-platform-support.md)]
 
 ## <a name="next-steps"></a>后续步骤
 
