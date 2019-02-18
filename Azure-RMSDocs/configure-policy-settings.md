@@ -3,21 +3,22 @@ title: 配置 Azure 信息保护策略设置 - AIP
 description: 在 Azure 信息保护策略中配置适用于所有用户、所有设备的设置。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 01/16/2018
+manager: barbkess
+ms.date: 02/13/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: c3d95b0dc8328665c921ab4ff6b37e53ec726f03
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 91ab0e30c0fac8f3285983f6c3b06886c0782e7d
+ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393482"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56266057"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 除了信息保护栏标题和工具提示，Azure 信息保护策略中还有一些可以在标签中单独配置的设置：
 
@@ -37,7 +38,9 @@ ms.locfileid: "54393482"
 
 3. 在“策略”边栏选项卡上，配置以下设置：
     
-   - **选择默认标签**：当设置此选项时，选择标签以分配给没有标签的文档和电子邮件。 如果具有子标签，则不能将标签设置为默认标签。 
+   - **选择默认标签**：当设置此选项时，选择标签以分配给没有标签的文档和电子邮件。 如果具有子标签，则不能将标签设置为默认标签。
+        
+        此设置适用于 Office 应用和扫描程序。 不适用于文件资源管理器或 PowerShell。
     
    - **所有文档和电子邮件都必须带有标签**：此选项设置为“启用”时，所有已保存的文档和发送的电子邮件都必须应用标签。 标记可能由用户手动分配，或因[条件](configure-policy-classification.md)自动分配，或（通过设置“**选择默认标签**”选项）默认分配。
         
@@ -51,11 +54,13 @@ ms.locfileid: "54393482"
         
        ![Azure 信息保护提示新分类是否较低](./media/info-protect-lower-justification.png)
         
-       此选项不适用于降低同一父标签下子标签的分类，也不适用于扫描程序的预览版本。
+       此选项不适用于降低同一父标签下子标签的分类。
         
    - **对于带有附件的电子邮件，应用与这些附件的最高分类相匹配的标签**：当将此选项设置为“推荐”时，系统会提示用户将标签应用到其电子邮件。 将基于应用于附件的分类标签动态选择标签，并选择最高等级的标签。 附件必须是物理文件，并且不能是指向文件的链接（例如，指向 SharePoint 或 OneDrive for Business 文件的链接）。 用户可接受或忽略该建议。 将此选项设置为“自动”时，将自动应用该标签，但用户可以在发送电子邮件之前删除该标签或选择另一个标签。
-    
-     当为具有最高等级分类标签的附件配置包含用户定义的权限的预览设置保护时，会使用同一分类标签标记电子邮件，但不会应用保护。
+        
+        要在使用此策略设置时考虑子标签的排序，必须[配置高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments)。
+        
+        当为具有最高等级分类标签的附件配置包含用户定义的权限的预览设置保护时，会使用同一分类标签标记电子邮件，但不会应用保护。
     
    - **在 Office 应用中显示“信息保护”栏**：关闭此设置后，用户无法从 Word、Excel、PowerPoint 和 Outlook 中的“信息保护”栏选择标签。 在此情况下，用户必须通过功能区上的“保护”按钮选择标签。 打开此设置后，用户可以通过信息保护栏或“保护”按钮选择标签。
         

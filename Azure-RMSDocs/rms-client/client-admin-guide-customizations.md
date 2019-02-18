@@ -3,19 +3,20 @@ title: Azure 信息保护客户端的自定义配置
 description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的信息。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 02/02/2019
+manager: barbkess
+ms.date: 02/14/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3612c0848cf77a57636186f5f9683a2ac7f1c5ec
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: f41dde8fda216084ef9399c0a0e4d7b09c1e79fb
+ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651558"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56266125"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -46,6 +47,7 @@ ms.locfileid: "55651558"
 |Setting|应用场景和说明|
 |----------------|---------------|
 |DisableDNF|[在 Outlook 中隐藏或显示“不转发”按钮](#hide-or-show-the-do-not-forward-button-in-outlook)|
+|CompareSubLabelsInAttachmentAction|[启用子标签的排序支持](#enable-order-support-for-sublabels-on-attachments) 
 |EnableBarHiding|[永久隐藏 Azure 信息保护栏](#permanently-hide-the-azure-information-protection-bar)|
 |EnableCustomPermissions|[设置用户是否能够使用自定义权限选项](#make-the-custom-permissions-options-available-or-unavailable-to-users)|
 |EnablePDFv2Protection|[不使用 PDF 加密 ISO 标准来保护 PDF 文件](#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
@@ -219,6 +221,21 @@ ms.locfileid: "55651558"
 
 - Value：**True**
 
+## <a name="enable-order-support-for-sublabels-on-attachments"></a>启用附件子标签的排序支持
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+
+如果具有子标签并已配置以下[策略设置](../configure-policy-settings.md)，请使用此设置：
+
+- **对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签**
+
+配置以下字符串：
+
+- 注册表项：**CompareSubLabelsInAttachmentAction**
+
+- Value：**True**
+
+如果不进行此设置，则从最高父标签找到的第一个子标签将应用于电子邮件。
 
 ## <a name="enable-recommended-classification-in-outlook"></a>在 Outlook 中启用建议的分类
 
@@ -251,7 +268,7 @@ ms.locfileid: "55651558"
 
 ## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>将标签配置为在 Outlook 中应用 S/MIME 保护
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 此设置处于预览状态，并且可能会更改。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
 仅当具有有效的 [S/MIME 部署](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption)，且希望标签自动对电子邮件应用此保护方法（而不是 Azure 信息保护中的权限管理保护）时，才使用此设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
 

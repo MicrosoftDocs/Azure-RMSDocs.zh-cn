@@ -3,23 +3,24 @@ title: 为 Azure 信息保护配置作用域内策略 - AIP
 description: 若要为特定用户配置不同的设置和标签，必须为 Azure 信息保护配置作用域内策略。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 11/05/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8d10ddf21842d944773c7d088c4c452bc618c29c
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 505e02c48a0090551cfb57ffb57605af5b27470c
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024327"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56255134"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>如何使用作用域内策略为特定用户配置 Azure 信息保护策略
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 将 Azure 信息保护策略下载到安装了 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)的计算机时，所有用户都会从默认策略或为全局策略配置的更改中获取设置和标签。 如果要通过使用不同的设置和标签为特定用户补充这些内容，必须创建为这些用户配置的**作用域内策略**。
 
@@ -41,7 +42,7 @@ ms.locfileid: "53024327"
 
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
-2. 从“分类” > “策略”菜单选项：在“Azure 信息保护 - 策略”边栏选项卡上，选择“添加新策略”。 然后看到显示现有全局策略的“策略”边栏选项卡，现在即可在此边栏选项卡中配置新的作用域内策略。
+2. 从“分类” > “策略”菜单选项中：在“Azure 信息保护 -策略”边栏选项卡上，选择“添加新策略”。 然后看到显示现有全局策略的“策略”边栏选项卡，现在即可在此边栏选项卡中配置新的作用域内策略。
 
 3. 在 Azure 门户中指定仅管理员可见的策略名称和说明。 该名称对租户来说必须是唯一的。 然后选择“指定获取此策略的用户/组”，并可在后续边栏选项卡中为此策略搜索和选择用户和组。 在此作用域内策略中配置的标签和设置将仅应用于这些用户。
     

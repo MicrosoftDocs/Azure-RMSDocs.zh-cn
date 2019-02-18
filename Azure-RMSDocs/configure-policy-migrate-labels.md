@@ -3,18 +3,19 @@ title: 将 Azure 信息保护标签迁移到 Office 365 安全与合规中心 - 
 description: 为支持统一标签的客户端将 Azure 信息保护标签迁移到 Office 365 安全与合规中心。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 02/05/2019
+manager: barbkess
+ms.date: 02/12/2019
 ms.topic: article
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 8525d20d452004b6ba46dd438dd042f98f603d6d
-ms.sourcegitcommit: e8b4a09db9aad7f6540b4c2fd92b1e8008c999b1
+ms.openlocfilehash: 27fe7dce81856140caf5e30451caabc3df9a2894
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55737267"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254775"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心
 
@@ -24,8 +25,6 @@ ms.locfileid: "55737267"
 > 此功能处于预览状态，并且将租户迁移到新平台。 迁移不可撤消。 新平台支持统一标签，以便你创建和管理的标签可由多个客户端和服务使用。
 
 如果希望能够在 Office 365 安全与合规中心使用，则迁移标签，可以在其中发布标签，然后由[支持统一标签的客户端](#clients-that-support-unified-labeling)下载。 Azure 信息保护客户端将继续从 Azure 门户下载带有其 Azure 信息保护策略的标签。 
-
-在迁移标签后，然后可以在 Azure 门户或 Office 365 安全与合规中心对其进行更改，相应的客户端将下载同一更改。
 
 在阅读有关如何迁移标签的详细说明之前，你可能会发现以下常见问题非常有用：
 
@@ -61,6 +60,8 @@ ms.locfileid: "55737267"
 - 保护模板：
     
     - 使用基于云的密钥和为标签配置的一部分模板也随标签一同迁移。 不迁移其他保护模板。 
+    
+    - 如果有为预定义模板配置的标签，则在迁移标签之前，[将这些模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)。 此配置不会阻止标签迁移，但安全与合规中心不支持此配置。
     
     - 迁移具有基于云保护设置的标记之后，生成的保护模板范围是在 Azure 门户中定义的范围（或通过使用 AADRM PowerShell 模块），以及在安全与合规中心定义的范围。 
 

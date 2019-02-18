@@ -3,23 +3,24 @@ title: 入门 - 适用于 iOS 和 Android 的 AIP 应用
 description: 使用适用于 iOS 和 Android 的 Azure 信息保护应用查看电子邮件或文件
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 05/01/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: aea2c8734aa36cb5ca735e351abe27e4e6dcc4e2
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 07391252e55f1b75df4d0fb57d167748d6d69853
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023766"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254996"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门
 
-适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+适用于：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 在使用本页上的说明之前，请务必阅读[有关 iOS 版和 Android 版 Azure 信息保护应用的常见问题解答](mobile-app-faq.md)。 此页面说明了应用的作用、支持的设备，以及有关应用使用方法的基本信息。
 
@@ -32,7 +33,7 @@ ms.locfileid: "53023766"
 
 要使用以下说明，需通过移动设备访问该应用支持的其中一个文件。 例如：
 
-- **.rpmsg 文件**：此为权限保护的电子邮件消息，当移动设备上的电子邮件应用本机不支持权限数据保护时，会在电子邮件中以附件形式存在。 
+- **.rpmsg 文件**：这是受权限保护的电子邮件消息，当移动设备上的电子邮件应用本机不支持权限数据保护时，会在电子邮件中以附件形式存在。 
     
     使用另一台设备可向自己发送权限保护的电子邮件消息，用户可从自己的移动设备访问。 例如，在 Windows 计算机使用 Outlook。 有关本机支持权限管理的电子邮件客户端列表，请参阅[支持 Azure Rights Management 数据保护的应用程序](../requirements-applications.md)中的“电子邮件”列。
 

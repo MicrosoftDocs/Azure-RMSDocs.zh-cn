@@ -3,23 +3,24 @@ title: 下载并安装 Azure 信息保护统一标签客户端（预览版）
 description: 有关用户安装适用于 Windows 的 Azure 信息保护统一标签客户端预览版本，以便可以对文档和电子邮件进行分类和保护的说明。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 10/17/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5d2f5c07ebc7f4844b0d35879ae00c7b9066cb6d
-ms.sourcegitcommit: 6a732226a3c97fc06fcf815fbbb24a2e2faae209
+ms.openlocfilehash: 6ee27b9aedd35ae135fc7150a3211be43ca2f092
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358988"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56250885"
 ---
 # <a name="download-and-install-the-azure-information-protection-unified-labeling-client-preview"></a>下载并安装 Azure 信息保护统一标签客户端（预览版）
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7
+>适用于：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）
 
 > [!NOTE]
 > 此客户端处于预览状态，随时可能更改。 客户端使用统一标签存储并从 Office 365 安全与合规中心下载带有敏感度标签的策略。 必须先由安全与合规中心发布标签，才能使用这些标签。 [详细信息](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)
@@ -69,5 +70,5 @@ ms.locfileid: "49358988"
 
 ## <a name="next-steps"></a>后续步骤
 
-有关 Office 365 安全与合规中心现使用的统一标签存储的详细信息，请参阅以下博客文章：[宣布在安全与合规中心中推出统一标签管理](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)。
+若要详细了解 Office 365 安全与合规中心目前使用的统一标签存储，请阅读以下博客文章：[宣布推出安全与合规中心的统一标记管理](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)。
 

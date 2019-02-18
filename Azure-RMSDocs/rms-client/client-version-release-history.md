@@ -3,18 +3,19 @@ title: Azure 信息保护客户端 - 版本发行历史记录和支持策略
 description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的新增功能或改进功能，并了解支持的生命周期策略。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 01/24/2019
+manager: barbkess
+ms.date: 02/13/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ef6bd888c46d7882ada03554813a943861fb51d
-ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
+ms.openlocfilehash: a715dbe743ef9b4018865df22ccdea347f888192
+ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54898811"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56266091"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -127,9 +128,12 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - Excel 现在还支持使用不同颜色的[视觉标记](../configure-policy-markings.md)。
 
-- 对于现有 S/MIME 部署，新增了以下高级客户端设置（预览版）：将标签配置为在 Outlook 中自动应用 S/MIME 保护。 [详细信息](client-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
+- 对于现有 S/MIME 部署，新增了以下高级客户端设置：将标签配置为在 Outlook 中自动应用 S/MIME 保护。 [详细信息](client-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
 
 - 新增了高级客户端设置，作为通过编辑注册表来阻止对[已断开连接计算机](client-admin-guide-customizations.md#support-for-disconnected-computers)显示 Azure 信息保护服务登录提示的替代方法。
+
+- 新增了高级客户端设置，用于在使用以下策略设置时[支持子标签的顺序](client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments)：
+    - **对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签**
 
 **修补程序**：
 

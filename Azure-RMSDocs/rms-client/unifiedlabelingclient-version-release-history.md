@@ -3,22 +3,23 @@ title: Azure 信息保护统一标签客户端 - 版本发布信息
 description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户端的发布信息。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 10/23/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: a1544e0fa3c6d09328d1801a75ffbccd496e3482
-ms.sourcegitcommit: b275c1f82bf9176fe3fb36016c6f8692b8418295
+ms.openlocfilehash: 939ae3e367b14f722c38be023c70d9dcce21004f
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951833"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254826"
 ---
 # <a name="azure-information-protection-unified-labeling-client-version-release-information"></a>Azure 信息保护统一标签客户端：版本发布信息
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 > [!NOTE]
 > 此客户端处于预览状态，随时可能更改。 客户端使用统一标签存储并从 Office 365 安全与合规中心下载带有标签的策略。 [详细信息](/Office365/SecurityCompliance/sensitivity-labels)
@@ -33,7 +34,7 @@ ms.locfileid: "49951833"
 
 ## <a name="current-preview-version"></a>当前的预览版本
 
-**发布日期**：2018/10/16
+**发布日期**：2018 年 10 月 16 日
 
 此预览版的适用于 Windows 的 Azure 信息保护统一标签客户端支持以下功能： 
 
@@ -71,7 +72,7 @@ ms.locfileid: "49951833"
 
 ## <a name="instructions"></a>说明
 
-1. 使用以下说明来安装客户端：[用户指南：下载并安装 Azure 信息保护客户端（预览版）](install-unifiedlabelingclient-app.md) 
+1. 按照以下说明安装客户端：[用户指南：下载并安装 Azure 信息保护客户端（预览版）](install-unifiedlabelingclient-app.md) 
 
 2. 像使用 Azure 信息保护客户端一样使用 Office 应用中的客户端，但 Office 功能区中的按钮名为“敏感度”而非“保护”：
     

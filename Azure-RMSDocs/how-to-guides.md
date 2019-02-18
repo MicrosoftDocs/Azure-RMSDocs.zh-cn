@@ -3,18 +3,19 @@ title: 使用 Azure 信息保护的常见应用场景的操作方法说明。
 description: 通过使用 Azure 信息保护，确定对组织数据进行分类和保护的用例。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 12/08/2018
+manager: barbkess
+ms.date: 02/13/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7986648999a830985c4dbd1f31855bb222a443c2
-ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
+ms.openlocfilehash: 69ae0a504ffcdaa201b1d4ce9762b22470e05eb7
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53218368"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259025"
 ---
 # <a name="how-to-guides-for-common-scenarios-that-use-azure-information-protection"></a>使用 Azure 信息保护的常见应用场景的操作方法指南
 
@@ -39,7 +40,13 @@ ms.locfileid: "53218368"
 
 ## <a name="additional-deployment-instructions"></a>其他部署说明
 
-我们的[Azure 信息保护技术博客](https://aka.ms/AIPblog)有来自客户体验工程团队提供的其他分步说明。 例如：
+我们的 [Azure 信息保护技术博客](https://aka.ms/AIPblog)有来自客户体验工程团队提供的其他指南。
+
+例如，为业务决策者和 IT 实施者提供最佳做法的方法：
+
+- [Azure 信息保护部署加速指南](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Deployment-Acceleration-Guide/ba-p/334423)
+
+分步说明：
 
 - [Using Azure Information Protection to protect PDF’s and Adobe Acrobat Reader to view them](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Using-Azure-Information-Protection-to-protect-PDF-s-and-Adobe/ba-p/282010)（使用 Azure 信息保护来保护 PDF 和 Adobe Acrobat Reader 以查看它们）
 

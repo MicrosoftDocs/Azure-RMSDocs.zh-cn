@@ -3,19 +3,20 @@ title: Azure 信息保护客户端管理员指南
 description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端的企业网络管理员的说明和信息。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/18/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 1ece9ab39045d1bb6f1388a33784a733618dd0d4
-ms.sourcegitcommit: 24c464bcb80db2d193cfd17ea8c264a327dcf54a
+ms.openlocfilehash: a0addbf7d4e613ab49ea29e750fd67a3b8ef1793
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54366213"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254571"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -68,7 +69,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 - 想要通过从 Office 应用程序（Word、Excel、PowerPoint、Outlook）中选择标签对文档和电子邮件进行分类（或保护）。
 
-- 想要通过使用文件资源管理器（支持其他文件类型、多选和文件夹）对文档和电子邮件进行分类（或保护）。
+- 想要通过使用文件资源管理器（支持除 Office、多选和文件夹支持的文件类型以外的其他文件类型）对文件进行分类（或保护）。
 
 - 想要通过使用 PowerShell 命令运行对文档进行分类（或保护）的脚本。
 

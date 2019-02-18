@@ -3,20 +3,21 @@ title: 教程 - 配置 Azure 信息保护策略设置以帮助分类文档和电
 description: 本入门教程介绍如何配置 Azure 信息保护策略设置，从而帮助对组织的文档和电子邮件进行分类。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 01/24/2019
+manager: barbkess
+ms.date: 02/15/2019
 ms.topic: tutorial
+ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 324f13a61d287fd883e9336c6e17250e9ab9ff9f
-ms.sourcegitcommit: 9a9c55c96a7e99bcca742e759a3f08507e3b9801
+ms.openlocfilehash: f906a5b9fc9f678d1f452e347fb3739b4ff96586
+ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231015"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56266074"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
->适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 在本教程中，你将了解如何执行以下操作：
 > [!div class="checklist"]
@@ -157,7 +158,7 @@ ms.locfileid: "55231015"
 
 由于在发送电子邮件之前选择了标签，因此无需实际发送电子邮件以查看此策略设置的工作方式。 可以关闭电子邮件（无需发送或保存）。
 
-不过，如果希望尝试重复此练习，还要附加具有更高分类级别的另一个文档（“高度保密”标签中的子标签）。 然后，可以看到提示如何更改为应用更高分类级别标签。
+不过，如果希望尝试重复此练习，还要附加具有更高分类级别的另一个文档（“高度保密”标签中的子标签）。 然后，可以看到提示如何更改为应用更高分类级别标签。 如果使用具有相同父标签的子标签测试多个附件，必须配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments)以支持其在 Azure 门户中的排序。
 
 ## <a name="clean-up-resources"></a>清理资源
 

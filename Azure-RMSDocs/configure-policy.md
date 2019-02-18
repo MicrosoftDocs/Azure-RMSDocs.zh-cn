@@ -3,23 +3,24 @@ title: 配置 Azure 信息保护策略 - AIP
 description: 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 02/15/2019
+manager: barbkess
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3085799d9cb8da168c68a1a2eea04528daeb7737
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 03b0aa0ef3b5f2a8cb232059fe748b243e067f76
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394050"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258702"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。 然后将此策略下载到已安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#azure-信息保护客户端) 的计算机。
 
@@ -65,6 +66,8 @@ Azure 信息保护支持不同级别的订阅：
     
     > [!NOTE] 
     > 如果租户已迁移到统一标记存储，你的帐户还必须有权访问 Office 365 安全与合规中心，才能在 Azure 门户中管理标签。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
+    
+    - 仅将安全读者用于 [Azure 信息保护分析](reports-aip.md)。
 
 ## <a name="to-access-the-azure-information-protection-blade-for-the-first-time"></a>首次访问“Azure 信息保护”边栏选项卡
 

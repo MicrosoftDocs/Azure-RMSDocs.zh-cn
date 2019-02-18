@@ -3,21 +3,22 @@ title: 什么是 Azure 信息保护？ - AIP
 description: Azure 信息保护服务概述。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 11/05/2018
+manager: barbkess
+ms.date: 02/13/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 9c7fd9070e6cc07a7b16043dd480addd2d0a4313
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 147982a700f2b2033b77d0b02568990a164cf555
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024326"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56257852"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助于组织通过应用标签对其文档和电子邮件进行分类和有选择地保护。 标签可以由定义规则和条件的管理员自动应用、由用户手动应用或是二者组合应用（在这种情况下会向用户提供建议）。 
 
@@ -31,7 +32,7 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 可使用 Azure 信息保护标签对文档和电子邮件应用分类。 执行此操作时，分类是可识别的，无论数据的存储位置在哪里或者与谁共享。 标签可包括视觉标记，如页眉、页脚或水印。 元数据以明文形式添加到文件和电子邮件标头。 明文形式确保其他服务（如数据丢失防护解决方案）可以识别分类并执行相应的操作。 
 
-例如，下面的电子邮件已分类为“常规”。 对电子邮件的标签添加了“敏感度: 常规”的页脚。 此页脚是所有收件人的一个可视指示器，它用于一般业务数据，不应在组织外部发送。 该标签嵌入在电子邮件标头中，以便电子邮件服务可以检查此值，并且可以创建审核项或阻止在组织外部发送它。
+例如，下面的电子邮件已分类为“常规”。 标签已将“敏感度：常规”页脚添加到电子邮件。 此页脚是所有收件人的一个可视指示器，它用于一般业务数据，不应在组织外部发送。 该标签嵌入在电子邮件标头中，以便电子邮件服务可以检查此值，并且可以创建审核项或阻止在组织外部发送它。
 
 ![显示 Azure 信息保护分类的示例电子邮件页脚和标头](./media/example-email-footerv2.png)
 
@@ -80,7 +81,7 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 ### <a name="additional-integration-for-email"></a>其他电子邮件集成
 
-如果将 Azure 信息保护用于 Exchange Online，还可获得其他好处：可将受保护电子邮件发送到任何用户，他们可在任何设备上阅读电子邮件。
+将 Azure 信息保护与 Exchange Online 一起使用时，用户将获得额外的好处：可以将受保护的电子邮件发送给任何用户，并确保他们可以在任意设备上阅读该电子邮件。
 
 例如，用户需要将敏感信息发送到使用 Gmail、Hotmail 或 Microsoft 帐户的个人电子邮件地址。 或者，向在 Office 365 或 Azure AD 中没有帐户的用户发送敏感信息。 这些电子邮件应静态加密并在传输中加密，且只有原始收件人才能阅读。
 
@@ -117,13 +118,15 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 - 下载客户端：[Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
 
-- 下载可自定义用户指南：[Azure Information Protection End User Adoption Guide](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)（Azure 信息保护最终用户采用指南）
+- 下载适用于业务决策者的部署指南：[Azure 信息保护部署加速指南](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Deployment-Acceleration-Guide/ba-p/334423)
 
-- 常见问题：[Azure 信息保护的常见问题](faqs.md)
+- 下载可自定义的用户指南：[Azure 信息保护最终用户采用指南](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
+
+- 常见问题解答：[Azure 信息保护的常见问题](faqs.md)
 
 - Yammer：[Azure 信息保护](https://www.yammer.com/AskIPTeam)
 
-其他资源：[Azure 信息保护的信息和支持](information-support.md)
+更多资源：[Azure 信息保护的信息和支持](information-support.md)
 
 ### <a name="microsoft-ignite"></a>Microsoft Ignite
 

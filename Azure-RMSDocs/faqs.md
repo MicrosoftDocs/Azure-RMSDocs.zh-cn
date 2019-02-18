@@ -3,19 +3,20 @@ title: Azure 信息保护的常见问题解答
 description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Management (Azure RMS) 的一些常见问题。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 02/07/2019
+manager: barbkess
+ms.date: 02/15/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 51ff1b6185661c4ab0c4204e035ffe981a5a9710
-ms.sourcegitcommit: 308e6da8de1a3456a0ba807c5388b8891b861d5b
+ms.openlocfilehash: fb200717efee9c34e8c3d6fc41ccab82478f5755
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854181"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258056"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -102,6 +103,8 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 - **信息保护管理员**：此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护的所有方面，但不能配置其他服务。 具有此角色的管理员可以激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置 Azure 信息保护策略。 此外，具有此角色的管理员可以运行针对 [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)以及来自 [AADRM 模块](administer-powershell.md)的所有 PowerShell cmdlet。 
     
     若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。
+
+- **安全读者**：仅适用于 [Azure 信息保护分析](reports-aip.md)。 此 Azure Active Directory 管理员角色允许管理员查看标签的使用方式，监视用户对标记文档和电子邮件的访问权限以及对其分类所做的任何更改，并且可以识别包含必须受到保护的敏感信息的文档。 由于此功能使用 Azure Log Analytics，因此用户还必须具有支持的 [RBAC 角色](reports-aip.md#permissions-required-for-azure-information-protection-analytics)。
 
 - **安全管理员**：此 Azure Active Directory 管理员角色允许管理员在 Azure 门户中配置 Azure 信息保护的所有方面，同时还可以配置其他 Azure 服务的某些方面。 具有此角色的管理员无法运行任何[来自 AADRM 模块的 PowerShell cmdlet](administer-powershell.md)。
     

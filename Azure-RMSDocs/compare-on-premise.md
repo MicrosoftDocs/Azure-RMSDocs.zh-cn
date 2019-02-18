@@ -3,23 +3,24 @@ title: 比较 Azure 信息保护和 AD RMS - AIP
 description: 如果你了解或以前部署过 Active Directory Rights Management Services (AD RMS)，你可能想知道 Azure 信息保护在功能和要求方面与它相比有何差别。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/01/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cf6f2ed4351f7790b14b0344d5358411e74c2564
-ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
+ms.openlocfilehash: 3e1de24471b89ac0081f5f5e93a25baf1d798e34
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55559846"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56260028"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>比较 Azure 信息保护与 AD RMS
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 如果你了解或以前部署过 Active Directory Rights Management Services (AD RMS)，你可能想知道 Azure 信息保护作为信息保护解决方案在功能和要求方面与它相比有何差别。
 

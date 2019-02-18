@@ -3,21 +3,22 @@ title: 为 Azure 信息保护标签配置可视标记 - AIP
 description: 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 01/24/2019
+manager: barbkess
+ms.date: 02/13/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 549bf29cc6c4c70dd91d6e36ad3fbe26baa69535
-ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
+ms.openlocfilehash: b0ff274917a78fa031dfe3e6f0665cef104111a9
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55067731"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258957"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
->适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。 
 
@@ -35,7 +36,7 @@ ms.locfileid: "55067731"
 
 - 最大字符串长度：
     
-    - 页眉和页脚可以输入的最大字符串长度为 1024 个字符。 但是，Excel 的页眉和页脚的总数限制为 255 个字符。 在 Excel 的页眉和页脚中输入长字符串时，此文本可以截断为 255 个字符或更少字符。
+    - 页眉和页脚可以输入的最大字符串长度为 1024 个字符。 但是，Excel 的页眉和页脚的总数限制为 255 个字符。 此限制包括 Excel 中不可见的字符，例如格式代码。 在 Excel 的页眉和页脚中输入长字符串时，此文本可以截断为 255 个字符或更少字符。
     
     - 可以输入的水印的最大字符串长度为 255 个字符。
 

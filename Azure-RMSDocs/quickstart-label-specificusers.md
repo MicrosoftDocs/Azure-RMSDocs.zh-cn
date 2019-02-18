@@ -3,18 +3,21 @@ title: 快速入门 - 为特定用户创建新的 Azure 信息保护标签 - AIP
 description: 使用范围策略，为特定用户创建和配置可分类文档和电子邮件的新标签。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 11/14/2018
+manager: barbkess
+ms.date: 02/15/2019
 ms.topic: quickstart
+ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 1a8af09681411e49936c067c6161376c9d4f9f16
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: a4057396bbe2d642d5f1d155a9e3975d40f02b1e
+ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023561"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56265972"
 ---
 # <a name="quickstart-create-a-new-azure-information-protection-label-for-specific-users"></a>快速入门：为特定用户创建新的 Azure 信息保护标签
+
+>适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 本教程介绍如何创建这样一个新标签：只有特定用户才能查看该标签并应用它来分类并保护文档和电子邮件。
 
@@ -54,13 +57,13 @@ ms.locfileid: "53023561"
     
     如果你不是全局管理员，请使用以下链接获取替代角色：[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)
 
-2. 在“分类”“标签” > 菜单选项的“Azure 信息保护 - 标签”边栏选项卡上，单击“添加新标签”。
+2. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，单击“添加新标签”。
 
 3. 在“标签”边栏选项卡上，至少指定以下两项：
     
-    - 标签显示名称：用户将看到的新标签名称，用于标识内容的分类。 例如：`Sales - Restricted`。
+    - **标签显示名称**：用户将看到的新标签名称，用于标识内容的分类。 例如：`Sales - Restricted`。
     
-    - 说明：工具提示，用于帮助用户确定何时选择此新标签。 例如：`Business data that is restricted to the Sales Team.`
+    - **说明**：工具提示，用于帮助用户确定何时选择此新标签。 例如：`Business data that is restricted to the Sales Team.`
 
 4. 请确保“已启用”设置为“开”（默认设置），然后选择“保存”。
 
@@ -68,7 +71,7 @@ ms.locfileid: "53023561"
 
 现在，将新创建的标签添加到新范围策略。
 
-1. 从“分类” > “策略”菜单选项：在“Azure 信息保护 - 策略”边栏选项卡上，选择“添加新策略”。 
+1. 从“分类” > “策略”菜单选项中：在“Azure 信息保护 -策略”边栏选项卡上，选择“添加新策略”。 
 
 2. 在“策略”边栏选项卡上，对于“策略名称”框，输入一个名称，用于标识哪组用户能够查看新创建的标签。 例如，`Sales` 。
 
@@ -78,7 +81,7 @@ ms.locfileid: "53023561"
 
 5. 在“策略”边栏选项卡上，选择“添加或删除标签”。
 
-6. 在“策略: 添加或删除标签”边栏选项卡上，选择已创建的标签，例如，“销售 - 受限”，然后选择“确定”。
+6. 在“策略:**在“添加或删除标签”** 边栏选项卡上，选择已创建的标签，例如，“销售 - 受限”，然后选择“确定”。
 
 7. 重新回到“策略”边栏选项卡，选择“保存”。 
 
@@ -96,11 +99,11 @@ ms.locfileid: "53023561"
 
 如果不希望保留此标签和范围策略，请执行以下操作：
 
-1. 在“分类” > “策略”菜单选项的“Azure 信息保护 - 策略”边栏选项卡上，选择刚刚创建的范围策略的上下文菜单（“...”）。 例如，“销售”。
+1. 从“分类” > “策略”菜单选项中：在“Azure 信息保护 - 策略”边栏选项卡上，选择刚刚创建的范围策略的上下文菜单（“...”）。 例如，“销售”。
 
 2. 选择“删除策略”，如果系统提示你进行确认，请选择“确定”。
 
-3. 在“分类” > “标签”菜单选项的“Azure 信息保护 - 标签”边栏选项卡上，选择刚刚创建的标签的上下文菜单（“...”）。  例如，“销售 - 受限”。
+3. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，选择刚刚创建的标签的上下文菜单（“...”）。  例如，“销售 - 受限”。
 
 4.  选择“删除此标签”，如果系统提示你进行确认，请选择“确定”。
 

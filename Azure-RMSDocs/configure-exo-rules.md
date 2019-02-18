@@ -3,19 +3,20 @@ title: 配置 Azure 信息保护标签的 Exchange Online 邮件流规则
 description: 与配置 Azure 信息保护标签的 Exchange Online 邮件流规则相关的说明和示例。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 12/12/2018
+manager: barbkess
+ms.date: 02/15/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: 39abf4586f00cb40cb096841261993225b8c8387
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: f35ab27167514b9b94a4cb4be2e6196dccd5280d
+ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393345"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56265989"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>配置 Azure 信息保护标签的 Exchange Online 邮件流规则
 
@@ -39,7 +40,7 @@ ms.locfileid: "54393345"
 
 - 在电子邮件中，此信息存储在 x 标头：msip_labels:MSIP_Label_\<GUID>_Enabled=True; 
 
-- 对于 Word 文档（.doc 和 .docx）、Excel 电子表格（.xls 和 .xlsx）、PowerPoint 演示文稿（.ppt 和 .pptx）以及 PDF 文档 (.pdf)，此元数据存储在以下自定义属性中：MSIP_Label_\<GUID>_Enabled=True  
+- 对于 Word 文档（.doc 和 .docx）、Excel 电子表格（.xls 和 .xlsx）、PowerPoint 演示文稿（.ppt 和 .pptx），此元数据存储在以下自定义属性中：MSIP_Label_\<GUID>_Enabled=True  
 
 若要确定标签的 GUID，请在 Azure 门户中查看或配置 Azure 信息保护策略时，在“标签”边栏选项卡上找到“标签 ID”值。 对于应用了标记的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 来标识 GUID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 GUID。
 

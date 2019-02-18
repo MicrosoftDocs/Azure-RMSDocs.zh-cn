@@ -3,23 +3,24 @@ title: 为 Azure Rights Management 配置使用权限 - AIP
 description: 了解和确定在使用 Azure 信息保护中的 Azure 权限管理服务保护文件或电子邮件时使用的特定权限。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/01/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 02bdd294e30f0d773fcc29b4c7a13f9e418af9db
-ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
+ms.openlocfilehash: f7eda5df7fad0a4b1a16ba9059c6adf76794372f
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55559982"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56260011"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 在文件或电子邮件上使用 Azure 信息保护中的 Azure 权限管理服务设置保护并且不使用模板时，必须自行配置使用权限。 此外，在为 Azure 权限管理保护配置模板或标签时，可以选择随后在用户、管理员或配置的服务选择模板或标签时会自动应用的使用权限。 例如，在 Azure 门户中，可以选择配置使用权限逻辑分组的角色，或者可以配置单个权限。
 
