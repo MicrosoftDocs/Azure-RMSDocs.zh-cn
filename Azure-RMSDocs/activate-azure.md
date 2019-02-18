@@ -3,24 +3,25 @@ title: 使用 Azure 门户激活 Azure RMS - AIP
 description: Azure 门户提供有关保护激活的说明，以便你的组织可开始保护文件和电子邮件。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/12/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cb90744828595b6cbf68962368fd001f3ca0eebd
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 3f03c055760e6d9e677db40250a6f32d6a112d72
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53304819"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258974"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>如何从 Azure 门户激活 Azure 权限管理
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 
 如果想要从 Azure 门户激活 Azure 权限管理服务 (Azure RMS)，请使用这些说明。
 

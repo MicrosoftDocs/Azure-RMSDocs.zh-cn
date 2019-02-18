@@ -3,21 +3,22 @@ title: 向 Azure 信息保护策略添加标签或从中删除标签 - AIP
 description: 向所有用户的全局策略或子集用户的作用域内策略添加 Azure 信息保护标签，或从中删除标签。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/27/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: 154b8d5b61169208cdc01a2445be918ea6e2f77b
-ms.sourcegitcommit: b10df82d9f00b3f826bce38beb7b666ce3f56e84
+ms.openlocfilehash: 825161b85dd1999374eab61fa640ddb5a2a05953
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/28/2018
-ms.locfileid: "53814197"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259195"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>向 Azure 信息保护策略添加标签或从中删除标签
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 创建 Azure 信息保护标签后，可以将其添加到策略，以便它可供用户使用。 如果标签面向所有用户，则将标签添加到全局策略。 如果标签面向所有子集用户，则将标签添加到作用域内策略。 只能将标签添加到一个策略。 
 

@@ -3,23 +3,24 @@ title: 配置 Office 365 客户端和联机服务，以使用 AIP 中的 Azure R
 description: 面向管理员提供的有关配置 Office 365 以使用 Azure 信息保护中的 Azure Rights Management 服务的信息和说明。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/02/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7dd3216492b1fa967c52c3b390077995175f5db1
-ms.sourcegitcommit: d9c8b560fa3d2797ef634d8919af3ed695b16908
+ms.openlocfilehash: ed441ab24517b5d12a1e38ed61a46d4498237636
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55701926"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259178"
 ---
 # <a name="office365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365：配置客户端和联机服务，以使用 Azure Rights Management 服务
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 由于 Office 365 以本机方式支持 Azure 信息保护中的 Azure Rights Management 服务，因此无需客户端计算机配置即可支持各个应用程序（例如 Word、Excel、PowerPoint、Outlook 和 Outlook 网页版）的信息权限管理 (IRM) 功能。 用户只需使用其 Rights Management 凭据登录 Office 应用程序。 然后，他们可保护文件和电子邮件，并使用受他人保护的文件和电子邮件。
 
@@ -495,7 +496,7 @@ ms.locfileid: "55701926"
 
    1. 搜索 `$sharepointAdminCenterUrl` 并将示例值替换为你自己的 SharePoint 管理中心 URL。
 
-      当你进入 SharePoint 管理中心时，会发现此值用作基 URL，并且具有以下格式： https://<em>&lt;tenant_name&gt;</em>-admin.sharepoint.com
+      当你进入 SharePoint 管理中心时，会发现此值用作基 URL，并且具有以下格式：https://<em>&lt;tenant_name&gt;</em>-admin.sharepoint.com
 
       例如，如果租户名称为“contoso”，则会指定：**https://contoso-admin.sharepoint.com**
 
@@ -509,7 +510,7 @@ ms.locfileid: "55701926"
 
       或者，请参见脚本中有关如何通过导入包含需要配置的所有 URL 的 .CSV 文件来替换此数组的注释。  我们提供了另一个示例脚本，用于自动搜索并提取 URL 以填充此 .CSV 文件。 当你准备好执行此操作时，立即在这些步骤之后使用[将所有 OneDrive for Business URL 输出到一个 .CSV 文件的其他脚本](#additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file)部分。
 
-      用户的 OneDrive for Business 的 Web URL 采用以下格式： https://<em>&lt;tenant name&gt;</em>-my.sharepoint.com/personal/*&lt;user_name&gt;*_*&lt;tenant name&gt;*_com
+      用户的 OneDrive for Business 的 Web URL 采用以下格式：https://<em>&lt;tenant name&gt;</em>-my.sharepoint.com/personal/*&lt;user_name&gt;*_*&lt;tenant name&gt;*_com
 
       例如，如果用户在 contoso 租户中的用户名为“rsimone”，则会指定：**https://contoso-my.sharepoint.com/personal/rsimone_contoso_com**
 
@@ -526,7 +527,7 @@ ms.locfileid: "55701926"
 > [!TIP]
 > 你还可以使用此脚本为 SharePoint Online 库配置 IRM。 对于此配置，你可能希望启用附加选项“不允许用户上传不支持 IRM 的文档”，以确保库只包含受保护的文档。    为此，请将 `-IrmReject` 参数添加到脚本中的 Set-IrmConfiguration 命令。
 >
-> 你还需要修改 `$webUrls` 变量（例如， https://contoso.sharepoint.com）和 `$listTitle` 变量（例如，$Reports）。
+> 你还需要修改 `$webUrls` 变量（例如，https://contoso.sharepoint.com）和 `$listTitle` 变量（例如，$Reports）。
 
 如果需要对用户的 OneDrive for Business 库禁用 IRM，请参阅[对 OneDrive for Business 禁用 IRM 的脚本](#script-to-disable-irm-for-onedrive-for-business)部分。
 

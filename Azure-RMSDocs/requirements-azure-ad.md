@@ -3,22 +3,23 @@ title: Azure 信息保护的 Azure AD 要求 - AIP
 description: 确定使用 Azure 信息保护的 Azure AD 要求，以便用户可以成功进行身份验证。
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/05/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.suite: ems
-ms.openlocfilehash: b2ca14d6dcff00009b6e032d5ca17f5e466d69ea
-ms.sourcegitcommit: 1cd3a3bc19cd973f81a62419c946bfaf2796dfb2
+ms.openlocfilehash: 7be53f80e3de227ee2439121bc6733661274f3e1
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55760763"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258464"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 必须拥有 Azure AD 目录才能使用 Azure 信息保护。 可以使用此目录中的帐户登录 Azure 门户，并且可以在该门户中进行 Azure 信息保护标签和 Azure Rights Management 模板的配置和管理等操作。
 
