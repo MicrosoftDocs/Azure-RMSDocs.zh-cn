@@ -4,14 +4,15 @@ description: 本文将帮助你了解如何创建文件 API 处理程序并将�
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 6b2916a3937892353f4389a59b5e48356deda603
-ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
-ms.translationtype: HT
+ms.openlocfilehash: b021f5a05ad484b32af3a189c10522564da6d86d
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453361"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254843"
 ---
 # <a name="microsoft-information-protection-sdk---file-handler-concepts"></a>Microsoft 信息保护 SDK - 文件处理程序概念
 
@@ -50,7 +51,7 @@ ms.locfileid: "47453361"
 
 创建 `FileHandler` 就像使用 promise/future 模式调用 `FileEngine` 的 `CreateFileHandlerAsync` 函数一样简单。
 
-`CreateFileHandlerAsync` 接受三个参数：应读取或修改的文件的路径、异步事件通知的 `mip::FileHandler::Observer` 以及 `FileHandler` 的 promise。
+`CreateFileHandlerAsync` 接受三个参数：应读取或修改的文件的路径`mip::FileHandler::Observer`异步事件通知和 promise `FileHandler`。
 
 **注意：**`mip::FileHandler::Observer` 类必须在派生类中实现，因为 `CreateFileHandler` 需要 `Observer` 对象。 
 
@@ -132,7 +133,7 @@ handler->SetLabel(label->GetId(), labelingOptions);
 
 若要实现 commitment 函数，我们可返回 promise/future 模式，为 `bool` 创建 promise。 如果操作成功，则 `CommitAsync()` 函数将返回 true；如果因任何原因失败，则返回 false。 
 
-创建 `promise` 和 `future` 后，系统将调用 `CommitAsync()` 并提供两个参数：输出文件路径 (`std::string`) 和 promise。 最后，通过获取 `future` 对象的值来获得结果。
+在创建后`promise`并`future`，`CommitAsync()`称为和提供的两个参数：输出文件路径 (`std::string`)，并承诺。 最后，通过获取 `future` 对象的值来获得结果。
 
 ```cpp
 auto commitPromise = std::make_shared<std::promise<bool>>();
@@ -141,7 +142,7 @@ handler->CommitAsync(outputFile, commitPromise);
 auto wasCommitted = commitFuture.get();
 ```
 
-**重要说明：**`FileHandler` 不会更新或覆盖现有文件。 开发人员负责实现对标记文件的**替换**操作。 
+**重要：**`FileHandler`将不更新或覆盖现有文件。 开发人员负责实现对标记文件的**替换**操作。 
 
 如果将标签写入 **FileA.docx**，则会创建文件的副本 **FileB.docx** 并应用标签。 必须编写代码来删除/重命名 **FileA.docx** 以及重命名 **FileB.docx**。
 
