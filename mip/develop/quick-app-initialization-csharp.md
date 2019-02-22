@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.date: 01/04/2019
 ms.author: tommos
-ms.openlocfilehash: 17c7bb1bd887b4009f450cb5bbf75900587de4f1
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: b7f2b25027502fbdd9dd7bd877b8893c1940628a
+ms.sourcegitcommit: ca2df73f8bba6bf0f58eea5bee15e356705276d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252090"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56589979"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C#)
 
@@ -21,7 +21,7 @@ ms.locfileid: "56252090"
 > [!NOTE]
 > 在本快速入门中所述的步骤所需的任何使用 MIP.NET 包装器的文件或策略 Api 的客户端应用程序。 保护 API 尚不可用。 虽然本快速入门演示的是文件 API 的使用，但同样的模式也适用于使用策略和保护 API 的客户端。 之后的快速入门应是按顺序完成的，因为每一个都是在前一个的基础上构建的，本快速入门是第一个。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 如果尚未准备，请务必：
 
@@ -83,7 +83,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
 `ApplicationInfo`对象包含两个属性。 `_appInfo.ApplicationId`中将使用`AuthDelegateImplementation`类以提供对身份验证库的客户端 ID。
 
-5. 添加`public string AcquireToken()`类。 此类应接受`Microsoft.InformationProtection.Identity`，和两个字符串： 颁发机构和资源。 这些字符串变量会传递给身份验证库 api，不应进行操作。 编辑可能会导致身份验证失败。
+5. 添加`public string AcquireToken()`方法。 此方法应接受`Microsoft.InformationProtection.Identity`和两个字符串： 颁发机构和资源。 这些字符串变量会传递给身份验证库 api，不应进行操作。 编辑可能会导致身份验证失败。
 
      ```csharp
      public string AcquireToken(Identity identity, string authority, string resource)
@@ -197,7 +197,7 @@ namespace mip_sdk_dotnet_quickstart
 
 3. 在中，使用以下值粘贴的源代码中的占位符值替换：
 
-   | 占位符 | ReplTest1 | 示例 |
+   | 占位符 | 值 | 示例 |
    |:----------- |:----- |:--------|
    | \<应用程序 ID\> | 分配给在“MIP SDK 安装和配置”中注册的应用程序的 Azure AD 应用程序 ID（2 个实例）。  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
    | \<友好名称\> | 用户定义的应用程序友好名称。 | AppInitialization |
