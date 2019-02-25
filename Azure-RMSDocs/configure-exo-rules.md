@@ -4,19 +4,19 @@ description: 与配置 Azure 信息保护标签的 Exchange Online 邮件流规�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/15/2019
+ms.date: 02/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: f35ab27167514b9b94a4cb4be2e6196dccd5280d
-ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
+ms.openlocfilehash: f46e919665d110665ed85b5e2e5c6a979a1958e9
+ms.sourcegitcommit: 1fe9720526a2ff814cd5d353249b16497cfcaadc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56265989"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56425957"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>配置 Azure 信息保护标签的 Exchange Online 邮件流规则
 
@@ -34,17 +34,13 @@ ms.locfileid: "56265989"
 
 若要详细了解如何将邮件流规则配置为加密电子邮件，请参阅 Office 文档[在 Office 365 中将邮件流规则定义为加密电子邮件](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8)。 
 
-## <a name="where-labels-are-stored-in-emails-and-documents"></a>电子邮件和文档中的标签存储位置
+## <a name="prerequisite-know-your-label-guid"></a>先决条件：了解标签 GUID
 
-因为 Azure 信息保护标签存储在元数据中，所以 Exchange Online 邮件流规则可以为邮件和文档附件读取此类信息：
+因为 Azure 信息保护标签存储在元数据中，所以 Exchange Online 邮件流规则可以为邮件和 Office 文档附件读取此类信息。 邮件流规则不支持为 PDF 文档检查元数据。
 
-- 在电子邮件中，此信息存储在 x 标头：msip_labels:MSIP_Label_\<GUID>_Enabled=True; 
+将邮件流规则配置为确定已标记的邮件和文档前，请确保自己知道要使用的 Azure 信息保护标签的 GUID。 
 
-- 对于 Word 文档（.doc 和 .docx）、Excel 电子表格（.xls 和 .xlsx）、PowerPoint 演示文稿（.ppt 和 .pptx），此元数据存储在以下自定义属性中：MSIP_Label_\<GUID>_Enabled=True  
-
-若要确定标签的 GUID，请在 Azure 门户中查看或配置 Azure 信息保护策略时，在“标签”边栏选项卡上找到“标签 ID”值。 对于应用了标记的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 来标识 GUID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 GUID。
-
-配置邮件流规则前，请确保自己知道要使用的 Azure 信息保护标签的 GUID。
+若要详细了解标签存储的元数据，以及如何确定标签 GUID，请参阅[电子邮件和文档中存储的标签信息](configure-policy.md#label-information-stored-in-emails-and-documents)。
 
 ## <a name="example-configurations"></a>示例配置
 

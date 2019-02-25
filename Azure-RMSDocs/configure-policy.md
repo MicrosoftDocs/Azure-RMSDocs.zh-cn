@@ -11,16 +11,16 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 03b0aa0ef3b5f2a8cb232059fe748b243e067f76
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: b12c3451517f3e2832ed36b00d60c401973a0ebb
+ms.sourcegitcommit: 1fe9720526a2ff814cd5d353249b16497cfcaadc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258702"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56425940"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
->适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。 然后将此策略下载到已安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#azure-信息保护客户端) 的计算机。
 
@@ -58,16 +58,17 @@ Azure 信息保护支持不同级别的订阅：
 
 - 使用具有以下[管理员角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一的帐户：
     
-  - **信息保护管理员**
-
+    - **信息保护管理员**
+    
+    - **安全读者**（仅限 [Azure 信息保护分析](reports-aip.md)）
+    
   - **安全管理员**
-
+    
   - **全局管理员/公司管理员**
     
     > [!NOTE] 
-    > 如果租户已迁移到统一标记存储，你的帐户还必须有权访问 Office 365 安全与合规中心，才能在 Azure 门户中管理标签。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
-    
-    - 仅将安全读者用于 [Azure 信息保护分析](reports-aip.md)。
+    > 如果租户已迁移到统一标记存储，帐户必须是全局管理员或所列角色之一，并有权访问 Office 365 安全与合规中心，才能在 Azure 门户中管理 Azure 信息保护。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
+
 
 ## <a name="to-access-the-azure-information-protection-blade-for-the-first-time"></a>首次访问“Azure 信息保护”边栏选项卡
 
@@ -146,6 +147,16 @@ Azure 信息保护支持不同级别的订阅：
 - [如何为不同语言配置标签](configure-policy-languages.md)
 
 - [如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](configure-policy-migrate-labels.md)
+
+## <a name="label-information-stored-in-emails-and-documents"></a>电子邮件和文档中存储的标签信息
+
+如果标签应用于文档或电子邮件，标签实际上存储在元数据中，这样应用程序和服务就能读取标签了：
+
+- 在电子邮件中，此信息存储在 x 标头：msip_labels:MSIP_Label_\<GUID>_Enabled=True; 
+
+- 对于 Word 文档（.doc 和 .docx）、Excel 电子表格（.xls 和 .xlsx）、PowerPoint 演示文稿（.ppt 和 .pptx）以及 PDF 文档，此元数据存储在以下自定义属性中：MSIP_Label_\<GUID>_Enabled=True  
+
+若要确定标签 GUID，请在 Azure 门户中查看或配置 Azure 信息保护策略时，在“标签”边栏选项卡上找到“标签 ID”值。 对于应用了标记的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 来标识 GUID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 GUID。
 
 ## <a name="next-steps"></a>后续步骤
 

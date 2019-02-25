@@ -12,12 +12,12 @@ ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 2a6602303e51c4bc1cce803ec43841a52992c8b8
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 54a18f52a3b1cd5656d1d2c3cfbd675062b06c47
+ms.sourcegitcommit: 95b7df32ecccdab4b80bc3a9f6433dc1c33dbbc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254486"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56407719"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -120,19 +120,22 @@ ms.locfileid: "56254486"
 
 针对 Azure 信息保护分析，可以使用安全读者的 Azure AD 管理员角色替代支持管理 Azure 信息保护的其他 Azure AD 角色。
 
-由于此功能使用 Azure Log Analytics，因此 Azure 的基于角色的访问控制 (RBAC) 也控制对工作区的访问。 如果你不熟悉 Azure 角色，阅读 [Azure RBAC 角色与 Azure AD 管理员角色之间的差异](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#differences-between-azure-rbac-roles-and-azure-ad-administrator-roles)会帮助你了解相关信息。
+由于此功能使用 Azure Log Analytics，因此 Azure 的基于角色的访问控制 (RBAC) 也控制对工作区的访问。 如果刚开始接触 Azure 角色，阅读 [Azure RBAC 角色与 Azure AD 管理员角色的区别](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#differences-between-azure-rbac-roles-and-azure-ad-administrator-roles)可能会对你有所帮助。
 
 详细信息:
 
 1. 若要访问 Azure 门户中的 Azure 信息保护分析边栏选项卡，必须具有以下 [Azure AD 管理员角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一：
     
-    - **安全读者**
-    
     - **信息保护管理员**
     
+    - **安全读者**
+  
    - **安全管理员**
     
     - **全局管理员**
+    
+    > [!NOTE] 
+    > 如果租户已迁移到统一标记存储，帐户必须是全局管理员或所列角色之一，并有权访问 Office 365 安全与合规中心。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
 
 2. 若要使用 Azure Log Analytics，必须具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#managing-access-to-log-analytics-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一：
     
@@ -148,7 +151,7 @@ ms.locfileid: "56254486"
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>配置报表的 Log Analytics 工作区
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。 
+1. 如果尚未这样做，请打开新的浏览器窗口，使用拥有[执行 Azure 信息保护分析所需权限](#permissions-required-for-azure-information-protection-analytics)的帐户[登录 Azure 门户](https://portal.azure.com)。 然后导航到“Azure 信息保护”边栏选项卡。 
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
     
@@ -171,8 +174,6 @@ ms.locfileid: "56254486"
 - **使用情况报表(预览版)**：使用此报表查看标签是如何使用的。 
 
 - **活动日志(预览版)**：使用此报表查看用户执行的标记操作，以及设备上和对文件路径执行的标记操作。
-    
-    此报表目前正在向租户推出，因此如果看不到它，请在几天后重试。
     
     此报表有“列”选项，可用于显示默认显示信息之外的更多活动信息。
 

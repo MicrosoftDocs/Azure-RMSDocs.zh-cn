@@ -4,19 +4,19 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f41dde8fda216084ef9399c0a0e4d7b09c1e79fb
-ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
+ms.openlocfilehash: e336a025d680f6c3a016f1b9b2c36976f765824f
+ms.sourcegitcommit: ca2df73f8bba6bf0f58eea5bee15e356705276d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56266125"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56589996"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -413,7 +413,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>从 Secure Islands 和其他标记解决方案迁移标签
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 此设置处于预览状态，并且可能会更改。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
 当前此配置与使用 PDF 加密 ISO 标准来保护 PDF 文件的新默认行为不兼容。 在这种情况下，无法通过文件资源管理器、PowerShell 或扫描程序打开 .ppdf 文件。 若要解决此问题，请使用高级客户端设置而[不使用 PDF 加密的 ISO 标准](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)。
 
@@ -654,11 +654,11 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - **错误**：只有错误。
 
-- **Info**：最低级别日志记录，其中不含事件 ID。
+- **Info**：最少日志记录，其中不包含事件 ID（扫描程序默认设置）。
 
-- **Debug**：完整信息（默认设置）。
+- **Debug**：完整信息。
 
-- **Trace**：非常详细的日志记录会对性能产生影响，只有在 Microsoft 支持部门请求时才能启用。 如果系统要求设置此日志记录级别，请务必在已收集相关日志时设置其他值。
+- **Trace**：详细日志记录（客户端默认设置）。 对于扫描程序，此设置会产生很大性能影响，应仅在 Microsoft 支持部门请求时，才为扫描程序启用此设置。 如果系统要求为扫描程序设置此日志记录级别，请务必在已收集相关日志后设置其他值。
 
 此高级客户端设置不会更改发送到 Azure 信息保护用于[集中报告](../reports-aip.md)的信息，也不会更改写入本地[事件日志](client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)的信息。
 
@@ -682,7 +682,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
     
     注意：如果标签为子标签，还必须以相同的格式在标头值中的子标签之前指定父标签。 例如，如果你的子标签含有全局唯一标识符 27efdf94-80a0-4 d 02 b88c b615c12d69a9，则值可能如下：`MSIP_Label_ab70158b-bdcc-42a3-8493-2a80736e9cbd_Enabled=True;MSIP_Label_27efdf94-80a0-4d02-b88c-b615c12d69a9_Enabled=True;`
 
-测试此配置前，请注意，创建或编辑邮件流规则时通常都会有延迟（例如，等待一小时）。 当规则生效后，如果用户使用 Outlook 网页版或支持 Exchange ActiveSync IRM 的移动设备客户端，则会发生以下事件： 
+测试此配置前，请注意，创建或编辑邮件流规则时通常都会有延迟（例如，等待一小时）。 如果此规则生效，便会在用户使用 Outlook 网页版时发生以下事件： 
 
 - 用户选择 Exchange 邮件分类，并发送电子邮件。
 
@@ -690,7 +690,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 如果内部收件人在 Outlook 中查看电子邮件，且已安装 Azure 信息保护客户端，就会看到已分配的 Azure 信息保护标签。 
 
-如果 Azure 信息保护标签应用了保护，请将此保护添加到规则配置中：选择用以修改消息安全性的选项，应用权限保护，然后选择 RMS 模板或“不要转发”选项。
+如果 Azure 信息保护标签应用了保护，请将此保护添加到规则配置中：选择选项来修改邮件安全性，应用权限保护，再选择保护模板或“不转发”选项。
 
 还可以将邮件流规则配置为执行反向映射。 检测到 Azure 信息保护标签时，请设置相应的 Exchange 邮件分类：
 

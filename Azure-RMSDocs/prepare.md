@@ -4,19 +4,19 @@ description: 查看你是否拥有可以开始对组织的文档和电子邮件�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/06/2018
+ms.date: 02/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: be4deaa13311cb414df48fc7edde50dbe42ed744
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: db258b5b9babaf050399bf07baa37a78b36ae21b
+ms.sourcegitcommit: 95b7df32ecccdab4b80bc3a9f6433dc1c33dbbc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56253279"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56407736"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
@@ -36,7 +36,9 @@ ms.locfileid: "56253279"
 
 - 在其他目录中创建用户和组，并将它们同步到 Azure AD。
 
-当你使用此列表中的前三种方法创建用户和组时，它们将在 Azure AD 中自动创建，Azure 信息保护可以直接使用这些帐户。 然而，许多企业网络使用本地目录来创建和管理用户和组。 Azure 信息保护不能直接使用这些帐户；用户必须将它们同步到 Azure AD。
+当你使用此列表中的前三种方法创建用户和组后，它们便会在 Azure AD 中自动创建，且 Azure 信息保护可以直接使用这些帐户（只有一种例外情况）。 然而，许多企业网络使用本地目录来创建和管理用户和组。 Azure 信息保护不能直接使用这些帐户；用户必须将它们同步到 Azure AD。
+
+上一段落中提到的例外情况是，可以为 Exchange Online 创建的动态通讯组列表。 与静态通讯组列表不同，这些组不会复制到 Azure AD，因此 Azure 信息保护不能使用它们。 
 
 ## <a name="how-users-and-groups-are-used-by-azure-information-protection"></a>Azure 信息保护如何使用用户和组
 
@@ -96,7 +98,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 - 若要配置将其他标签分配给组成员的作用域策略，可以使用 Azure AD 中的任何类型的组，但需要具有包含用户租户的已验证域的电子邮件地址。 具有电子邮件地址的组通常称为启用邮件的组。
 
-    例如，你可以使用启用邮件的安全组、通讯组（可以是静态或动态）和 Office 365 组。 不能使用安全组（动态或静态），因为该组类型没有电子邮件地址。
+    例如，可使用启用邮件的安全组、静态通讯组和 Office 365 组。 不能使用安全组（动态或静态），因为该组类型没有电子邮件地址。 另外，不能从 Exchange Online 使用动态通讯组列表，因为此组不会复制到 Azure AD。
 
 对于分配使用权限和访问控制权限：
 

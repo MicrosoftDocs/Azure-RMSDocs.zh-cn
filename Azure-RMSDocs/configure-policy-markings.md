@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: b0ff274917a78fa031dfe3e6f0665cef104111a9
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: a7894ba71ea136d5b7cf1fbe067ff434d942c1d0
+ms.sourcegitcommit: 176a1b0d5ffa1a44484325d25815b4cfaa371af5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258957"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56654693"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
->适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。 
 
@@ -128,7 +128,7 @@ ms.locfileid: "56258957"
     
     `${If.App.WP}This content is ${If.End}Confidential`
     
-    在 Word 和 PointPoint 中，标签应用水印文本“此内容是机密的”。 在 Excel 中，标签应用水印文本“机密”。 在 Outlook 中，标签不应用任何水印文本，因为 Outlook 不支持将水印作为视觉标记。
+    在 Word 和 PowerPoint 中，标签应用水印文本“此内容保密”。 在 Excel 中，标签应用水印文本“机密”。 在 Outlook 中，标签不应用任何水印文本，因为 Outlook 不支持水印视觉标记。
 
 ### <a name="setting-the-font-name"></a>设置字体名称
 

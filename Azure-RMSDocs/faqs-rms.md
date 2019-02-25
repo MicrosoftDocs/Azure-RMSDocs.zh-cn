@@ -4,7 +4,7 @@ description: 有关 Azure 信息保护中数据保护服务 Azure Rights Managem
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/10/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 769978bb7cfe5e363b0f73f5564865e67b5aad49
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 3782d2cea93b2128530e66d82e366924e92abbbc
+ms.sourcegitcommit: 95b7df32ecccdab4b80bc3a9f6433dc1c33dbbc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259977"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56407753"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -195,7 +195,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 租户使用许可证有效期的默认值为 30 天，此设置可通过标签或模板中限制性更强的设置进行替代。 若要详细了解使用许可证以及如何对其进行配置，请参阅 [ 使用许可证](configure-usage-rights.md#rights-management-use-license)文档。
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>Rights Management 可以防止屏幕截图吗？
-通过不授予复制[使用权限](configure-usage-rights.md)，Rights Management 可以阻止许多常用屏幕捕获工具在 Windows 平台（Windows 7、Windows 8.1、Windows 10、Windows 10 移动版）和 Android 上进行屏幕捕获。 但是，iOS 和 Mac 设备不允许任何应用阻止屏幕捕获，而浏览器（例如，与 Outlook Web App 和 Office Online 一起使用时）也不能阻止屏幕捕获。
+通过不授予复制[使用权限](configure-usage-rights.md)，Rights Management 可以阻止许多常用屏幕捕获工具在 Windows 平台（Windows 7、Windows 8.1、Windows 10、Windows 10 移动版）和 Android 上进行屏幕捕获。 不过，iOS 和 Mac 设备不允许任何应用阻止屏幕截图。 此外，任何设备上的浏览器也都不能阻止屏幕截图。 浏览器使用包括 Outlook 网页版和 Office Online。
 
 阻止屏幕捕获可帮助避免意外或疏忽披露机密或敏感信息。 不过，用户可以通过多种方式来共享显示在屏幕上的数据，进行屏幕截图只是其中一种方法。 例如，如果想要共享所显示的信息，用户可以使用带相机的手机拍照，可以重新键入相关数据，还可以直接通过口头方式将其传达给某人。
 
