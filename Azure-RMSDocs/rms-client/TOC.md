@@ -27,7 +27,7 @@
 ##### [仅保护模式](client-protection-only-mode.md)
 ##### [用于操作 RMS 共享应用程序的任务](upgrade-client-app.md)
 ### [Azure 信息保护统一标签客户端（预览版）](unifiedlabelingclient-version-release-history.md)
-### [下载并安装 Azure 信息保护统一标签客户端（预览版）](install-unifiedlabelingclient-app.md)
+#### [下载并安装 Azure 信息保护统一标签客户端（预览版）](install-unifiedlabelingclient-app.md)
 ### [受保护的 PDF 阅读器](protected-pdf-readers.md)
 ### [RMS 客户端部署说明](client-deployment-notes.md)
 ### [使用 Windows Server FCI 的 RMS 保护](configure-fci.md)
