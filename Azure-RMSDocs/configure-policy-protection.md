@@ -4,21 +4,21 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/24/2019
+ms.date: 02/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 74ec040b0999bfc9c2f3693cc8ceb3e0d438d67c
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 11063a208e21ef121ba0a3a5007c76635f63af17
+ms.sourcegitcommit: d1aac7dc96f5986511f73ec035400954be24e723
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56255200"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57017143"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
->适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 可通过使用 Rights Management 服务保护最敏感的文档和电子邮件。 此服务使用加密、标识和身份验证策略，有助于防止数据丢失。 保护应用于配置为使用 Rights Management 保护文档和电子邮件的标签，用户还可以在 Outlook 中选择“不可转发”按钮。
 
@@ -73,7 +73,7 @@ ms.locfileid: "56255200"
         
         如果用户不具有删除 Rights Management 保护的权限，并选择配置有此“删除保护”选项的标签，他们将会看到以下消息：Azure 信息保护无法应用此标签。 如果此问题仍然存在，请与管理员联系。
 
-4. 如果已选择“保护”，现在请选择“保护”将“保护”边栏选项卡打开：
+4. 如果选中了“保护”，则会在选择其他选项之一时自动打开“保护”边栏选项卡。 如果新的边栏选项卡未自动打开，请选择“保护”：
     
     ![为 Azure 信息保护标签配置保护权限](./media/info-protect-protection-bar-configured.png)
 
@@ -95,11 +95,13 @@ ms.locfileid: "56255200"
     
      若要选择预定义的模板，此模板必须为已发布（未存档），且必须未链接到另一个标签。 选中此选项后，可以使用“编辑模板”按钮[将模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)。
     
-     提示：如果习惯于创建和编辑自定义模板，请参考[曾使用 Azure 经典门户执行的任务](migrate-portal.md)获取帮助。
+     如果习惯于创建和编辑自定义模板，请参考[曾使用 Azure 经典门户执行的任务](migrate-portal.md)获取帮助。
 
-7. 如果为“Azure (云密钥)”选择了“设置权限”，此选项允许配置可在模板中配置的相同设置。 
+7. 如果为“Azure (云密钥)”选择了“设置权限”，可以使用此选项选择用户和使用权限。 
     
-    选择“添加权限”，在“添加权限”边栏选项卡上，选择有权使用所选标签保护的内容的第一组用户和组：
+    如果未选择任何用户，并且在此边栏选项卡上选择“确定”，然后在“标签”边栏选项卡上选择“保存”：标签将配置为应用保护，这样，只有应用标签的人员才可以打开文档或电子邮件，且无任何限制。 有时，此配置称为“只为我执行此操作”，这可能是必需的结果，这样用户便可将文件保存到任何位置，并确保只有他们能够打开它。 如果此结果符合你的要求，并且其他人不需要协作处理受保护内容，请不要选择“添加权限”。 保存标签后，下次打开此“保护”边栏选项卡时，会看到“用户”显示“IPC_USER_ID_OWNER”，“权限”显示“共同所有者”以反映此配置。
+    
+    要指定希望能够打开受保护文档和电子邮件的用户，请选择“添加权限”。 然后，在“添加权限”边栏选项卡上，选择有权使用所选标签保护的内容的第一组用户和组：
     
    - 依次选择“从列表中选择”和“添加\<组织名称> - 所有成员”，添加组织中的所有用户。 此设置不包括来宾帐户。 或者，也可以选择“添加任何身份已验证的用户”或浏览目录。
         
@@ -177,7 +179,9 @@ ms.locfileid: "56255200"
 
 [默认策略](configure-policy-default.md)的“机密”和“高度机密”标签中的“所有员工”和“仅收件人”子标签提供了一些示例，说明可如何配置应用保护的标签。 也可使用以下示例，帮助配置适用于不同情况的保护。 
 
-每个示例均遵循以下步骤：在“\<标签名称>”边栏选项卡，选择“保护”，然后选择“保护”以打开“保护”边栏选项卡。
+对于以下每个示例，在“\<标签名称>”边栏选项卡上，选择“保护”。 如果“保护”边栏选项卡不会自动打开，请选择“保护”打开此边栏选项卡，以便选择保护配置选项：
+
+![配置 Azure 信息保护标签以进行保护](./media/info-protect-protection-bar-configured.png)
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-a-protected-email-to-a-gmail-account"></a>示例 1：对发送到 Gmail 帐户的受保护电子邮件应用“不可转发”的标签
 
