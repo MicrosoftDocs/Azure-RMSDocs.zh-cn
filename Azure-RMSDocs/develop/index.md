@@ -1,10 +1,11 @@
 ---
+# required metadata
 title: RMS 开发人员指南 | Azure RMS
 description: 现在可使用三代的 Rights Management SDK。
-keywords: ''
-author: bryanla
+keywords: null
+author: msmbaldwin
 manager: barbkess
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 12/11/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,13 +14,8 @@ ms.assetid: 0510ead4-2fe7-4269-885b-fe16bcc69888
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5ec363af227ac73fba8cf56b655c6733ba192438
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56251630"
 ---
+
 # <a name="rms-developers-guide"></a>RMS 开发人员指南
 
 ## <a name="overview"></a>概述 ##

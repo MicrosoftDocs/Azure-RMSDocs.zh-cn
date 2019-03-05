@@ -1,22 +1,22 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: d24f5cf1cbe8d296b1a9d608a4253afa5539a233
-ms.sourcegitcommit: 8c2de5119105cf5d5bc91fcc2202b64e5a779e7c
+ms.openlocfilehash: 7643f9eb25665d7a1bc1b2897be521cd30c06757
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56082538"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57332712"
 documentType: LandingData
 title: Microsoft 信息保护
 metadata:
   title: Microsoft 信息保护文档
   description: 控制并帮助保护你在公司防火墙外共享的电子邮件、文档和敏感数据。 从简单的分类到嵌入标签和权限，始终使用 Microsoft 信息保护增强对数据的保护，无论数据存储在何位置以及与谁共享。
-  author: BryanLa
+  author: msmbaldwin
   manager: barbkess
   ms.service: information-protection
   services: information-protection
   ms.topic: landing-page
   ms.date: 09/26/2018
-  ms.author: bryanla
+  ms.author: mbaldwin
   layout: LandingPage
 abstract:
   description: 控制并帮助保护你在公司防火墙外共享的电子邮件、文档和敏感数据。 从简单的分类到嵌入标签和权限，始终使用 Microsoft 信息保护增强对数据的保护，无论数据存储在何位置以及与谁共享。
