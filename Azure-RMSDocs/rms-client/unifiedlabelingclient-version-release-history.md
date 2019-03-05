@@ -4,22 +4,22 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/23/2018
+ms.date: 02/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 939ae3e367b14f722c38be023c70d9dcce21004f
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 699e2807c700b90b98bbc855dd8792aa607696f3
+ms.sourcegitcommit: 8ba63c0f4cd7d2ad7614af4ea9cfe8aec7fac4c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254826"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56956247"
 ---
 # <a name="azure-information-protection-unified-labeling-client-version-release-information"></a>Azure 信息保护统一标签客户端：版本发布信息
 
->适用于：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 > [!NOTE]
 > 此客户端处于预览状态，随时可能更改。 客户端使用统一标签存储并从 Office 365 安全与合规中心下载带有标签的策略。 [详细信息](/Office365/SecurityCompliance/sensitivity-labels)
@@ -28,53 +28,71 @@ ms.locfileid: "56254826"
 
 ### <a name="release-information"></a>发布信息
 
-使用以下信息以查看最新预览版本的 Azure 信息保护统一标签客户端所支持的功能。 
+使用以下信息以查看最新预览版本的 Azure 信息保护统一标签客户端所支持的功能。
 
-此客户端作为 Windows 计算机的 Office 加载项安装，并且具有与从 Azure 下载策略的 Azure 信息保护客户端相同的[先决条件](../requirements.md)。
+此客户端安装 Windows 计算机的 Office 加载项：文件资源管理器的扩展和 PowerShell 模块。 此客户端的[先决条件](../requirements.md)与从 Azure 下载策略的 Azure 信息保护客户端相同。
+
+若要与 Azure 信息保护客户端比较特性和功能，请参阅[客户端功能比较](use-client.md#feature-comparisons-for-the-clients)。
 
 ## <a name="current-preview-version"></a>当前的预览版本
 
-**发布日期**：2018 年 10 月 16 日
+**发布日期**：2019 年 2 月 25 日
 
 此预览版的适用于 Windows 的 Azure 信息保护统一标签客户端支持以下功能： 
 
-- 从 Azure 信息保护客户端升级
+- 从 Azure 信息保护客户端升级。
 
-- 将分类和保护应用于 Word、Excel、PowerPoint 和 Outlook 的手动标签。
+- 手动、自动和建议标记：从 Office 365 安全与合规中心使用“自动标记”配置自动和建议标记。 有关详细信息，请参阅[将敏感度标签自动应用到内容](/Office365/SecurityCompliance/apply_sensitivity_label_automatically)。
 
-- 视觉标记（页眉、页脚、水印）
+- 文件资源管理器、用于分类和保护文件的右键单击操作、删除保护和应用自定义权限。
 
-- 默认标签 
+- 适用于受保护的文本和图像文件、受保护的 PDF 文件以及一般保护的文件的查看器。
 
-- 应用“不可转发”的标签
+- 用于实现以下目的的 PowerShell 命令：
+    - [设置或删除文档上的标签](/powershell/module/azureinformationprotection/set-aipfilelabel)
+    - [在检查文档内容后标记文档](/powershell/module/azureinformationprotection/set-aipfileclassification)
+    - [读取应用于文档的标签信息](/powershell/module/azureinformationprotection/get-aipfilestatus)
+    - [进行身份验证以支持无人参与的 PowerShell 会话](/powershell/module/azureinformationprotection/set-aipauthentication)
 
-- 如果用户降低敏感度级别，系统提示说明理由
+- 使用 [Azure 信息保护分析](../reports-aip.md)支持集中报告。
 
-- “帮助和反馈”对话框，其中包括重置设置和导出日志
+- 以下标签和策略设置：
+    - 视觉标记（页眉、页脚、水印）
+    - 默认标签
+    - 应用“不要转发”且仅在 Outlook 中显示的标签
+    - 用户降低分类级别或删除标签的理由提示
+    - 标签的颜色
 
-- 每个 Office 应用每 4 小时刷新一次安全与合规中心策略。
+- 从安全与合规中心进行策略刷新：
+    - 在 Office 应用程序每次启动时刷新，每 4 小时刷新一次
+    - 在右键单击以分类和保护文件或文件夹时刷新
+    - 在运行 PowerShell cmdlet 以实现标记和保护时刷新
 
-此预览版不提供以下功能：
+- “帮助和反馈”对话框，其中包括重置设置和导出日志。
 
-- 自动分类和建议分类
+### <a name="features-that-do-not-work-in-this-preview-version-or-are-not-available"></a>在此预览版本中不起作用或不提供的功能
 
-- “自定义权限”
+包括：
 
-- 适用于受保护的文本和图像文件、受保护的 PDF 文件以及一般保护的文件的查看器
+- 用于发现、标记和保护本地数据存储文件的扫描程序。
 
-- 文件资源管理器，右键单击操作以对文件进行分类和保护
+- 从 Azure 门户迁移并配置为 HYOK 保护的标签在发布时显示在客户端中，但这些标签不应用保护。
 
-- PowerShell 命令，用于对命令行中的文件进行分类和保护
+- AzureInformationProtection 模块中一组完整的 cmdlet 不可用，其中包括直接连接到保护服务的 cmdlet。 例如，用于批量取消文件保护的 Unprotect-RMSFile。
 
-- 用于发现、标记和保护本地数据存储文件的扫描仪
-
-- 支持除英语以外的语言
+有关完整的详细信息，请参阅[比较表](use-client.md#feature-comparisons-for-the-clients)。
 
 ## <a name="instructions"></a>说明
 
 1. 按照以下说明安装客户端：[用户指南：下载并安装 Azure 信息保护客户端（预览版）](install-unifiedlabelingclient-app.md) 
 
-2. 像使用 Azure 信息保护客户端一样使用 Office 应用中的客户端，但 Office 功能区中的按钮名为“敏感度”而非“保护”：
+2. 像使用 Azure 信息保护客户端一样使用客户端，Office 应用程序的以下内容除外：
+    - Office 功能区上的按钮命名为“敏感度”，而不是“保护”。
+    - 默认情况下，管理员无法显示信息保护栏，但用户可通过从“敏感度”按钮选择“显示栏”来显示它。 
+    - 不提供自定义权限
+    - 不提供跟踪和撤销
+    
+    用户指令：
     
     - [对文件或电子邮件进行分类](client-classify.md) 
     
@@ -83,6 +101,3 @@ ms.locfileid: "56254826"
 3. 与我们分享你的体验： 
     
     - 要提供反馈或提出有关此预览版客户端的问题，请使用 [Azure 信息保护的 Yammer 站点](https://www.yammer.com/AskIPTeam)。
-    
-    - 要报告此预览版客户端的问题，请使用功能区上“敏感度”按钮中的“帮助和反馈”选项。 将日志从对话框中导出，然后将这些日志文件附加到使用“报告问题”选项创建的电子邮件中。 
-

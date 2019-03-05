@@ -4,20 +4,20 @@ description: 通过自动应用“不得转发”保护，为用户配置可保�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/15/2019
+ms.date: 02/29/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 67fe46f94b83b219794251c9d7e1500f756669a3
-ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
+ms.openlocfilehash: c41f190cf2e91378b03922caf3211c19ec01e871
+ms.sourcegitcommit: d1aac7dc96f5986511f73ec035400954be24e723
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56266023"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57017194"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件
 
->适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 本快速入门介绍如何配置现有标签以自动应用“不得转发”保护设置。
 
@@ -77,7 +77,9 @@ ms.locfileid: "56266023"
 
 2. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，选择要配置为应用保护的标签。 
 
-3. 在“**标签**”边栏选项卡上，查找“**为包含此标签的文档和电子邮件设置权限**”。 选择“保护”，然后选择“保护”：
+3. 在“**标签**”边栏选项卡上，查找“**为包含此标签的文档和电子邮件设置权限**”。 如果之前已选择其他选项之一，那么在选中“保护”后，会自动打开“保护”边栏选项卡。 
+    
+    如果“保护”边栏选项卡未自动打开，请选择“保护”：
     
     ![为 Azure 信息保护标签配置保护权限](./media/info-protect-protection-bar-configured.png)。
 

@@ -4,17 +4,17 @@ description: 当文档或电子邮件中分配一个标签时，可以选择几�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/13/2019
+ms.date: 02/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: a7894ba71ea136d5b7cf1fbe067ff434d942c1d0
-ms.sourcegitcommit: 176a1b0d5ffa1a44484325d25815b4cfaa371af5
+ms.openlocfilehash: 2ddefdc557d83ff0eae6bbc2b5d7d0e69dfbbca5
+ms.sourcegitcommit: 55782e58508051f0ecf460e8b126f70ab9b9ceec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56654693"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56756175"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -48,7 +48,7 @@ ms.locfileid: "56654693"
 
 ## <a name="when-visual-markings-are-applied"></a>应用视觉标记的情况
 
-对于电子邮件，从 Outlook 发送电子邮件时会应用可视标记。
+对于电子邮件，从 Outlook 发送电子邮件时会应用视觉标记。 如果通过更改标签来转发或回复该电子邮件，则始终保留原始视觉标记。
 
 对于文档，视觉标记应用如下所示：
 

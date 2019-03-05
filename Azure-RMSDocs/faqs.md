@@ -4,19 +4,19 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/15/2019
+ms.date: 02/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fb200717efee9c34e8c3d6fc41ccab82478f5755
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 4e7ffa1fa4121d7a0aecc4474d50497c7c300b1b
+ms.sourcegitcommit: 55782e58508051f0ecf460e8b126f70ab9b9ceec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258056"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56756141"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -50,7 +50,7 @@ ms.locfileid: "56258056"
 
 Office 365 安全与合规中心中的敏感度标签已正式发布，但迁移 Azure 信息保护标签的选项仍处于预览状态。 将标签迁移到统一标签存储后，可以发布这些标签，然后由[支持统一标签的客户端](configure-policy-migrate-labels.md#clients-that-support-unified-labeling)下载。 目前，并非所有客户端都支持统一标签或已公开发布。
 
-我们建议首先使用测试租户测试预览功能，然后迁移生产租户。 此外：
+我们建议首先使用测试租户测试预览功能，然后再迁移生产租户。 此外：
 
 - **如果刚开始接触 Azure 信息保护：** 
     
@@ -61,6 +61,8 @@ Office 365 安全与合规中心中的敏感度标签已正式发布，但迁移
     我们建议先在 Azure 门户中完成标签配置，然后迁移这些标签。 此策略可以避免在迁移过程中重复标签，然后需要在安全与合规中心进行编辑。
 
 在迁移标签之前，请确保你了解[安全与合规中心不支持的注意事项和标签设置](configure-policy-migrate-labels.md#considerations-for-unified-labels)。
+
+另请参阅[安装哪个预览客户端来测试新功能？](faqs-infoprotect.md#which-preview-client-do-i-install-for-testing-new-functionality)
 
 ## <a name="after-ive-migrated-my-labels-which-management-portal-do-i-use"></a>迁移我的标签后，该使用哪个管理门户？
 

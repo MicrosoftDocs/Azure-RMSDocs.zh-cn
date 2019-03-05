@@ -4,16 +4,16 @@ description: 本入门教程适用于编辑组织的 Azure 信息保护策略，
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/29/2019
+ms.date: 02/29/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: e081da93ecc486de22746e4b19e2bb5334b44c66
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 75ba59498918ecb2d987e2fe794c624f8f340498
+ms.sourcegitcommit: d1aac7dc96f5986511f73ec035400954be24e723
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254350"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57017228"
 ---
 # <a name="tutorial-edit-the-azure-information-protection-policy-and-create-a-new-label"></a>教程：编辑 Azure 信息保护策略并创建新标签
 
@@ -108,7 +108,7 @@ ms.locfileid: "56254350"
     
     此文本说明应如何使用所选标签，并显示为一个工具提示，帮助用户确定要选择的标签。
 
-3. 对于“设置包含此标签的文档和电子邮件的权限”，选择“保护”，然后选择“保护”：
+3. 对于“为包含此标签的文档和电子邮件设置权限”，选择“保护”，这会在为你选择“保护”选项时，自动打开“保护”边栏选项卡：
     
     ![配置 Azure 信息保护标签以进行保护](./media/info-protect-protection-bar-configured.png) 
     

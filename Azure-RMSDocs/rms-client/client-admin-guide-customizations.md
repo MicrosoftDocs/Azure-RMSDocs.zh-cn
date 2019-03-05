@@ -4,19 +4,19 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/22/2019
+ms.date: 02/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e336a025d680f6c3a016f1b9b2c36976f765824f
-ms.sourcegitcommit: ca2df73f8bba6bf0f58eea5bee15e356705276d6
+ms.openlocfilehash: 59395fe48eff2a3b1df0ae25dded1a66af9f453f
+ms.sourcegitcommit: f19ee03fd3f6f39df1a28ab389b43fbd8f9e9072
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56589996"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56891088"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -62,6 +62,7 @@ ms.locfileid: "56589996"
 |RemoveExternalContentMarkingInApp|[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)|
 |ReportAnIssueLink|[为用户添加“报告问题”](#add-report-an-issue-for-users)|
 |RunPolicyInBackground|[开启在后台持续运行的分类](#turn-on-classification-to-run-continuously-in-the-background)|
+|ScannerConcurrencyLevel|[限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner)|
 |SyncPropertyName|[使用现有自定义属性标记 Office 文档](#label-an-office-document-by-using-an-existing-custom-property)|
 |SyncPropertyState|[使用现有自定义属性标记 Office 文档](#label-an-office-document-by-using-an-existing-custom-property)|
 
@@ -618,6 +619,20 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 要标记带有上述某个分类值的 Office 文档，请将“SyncPropertyName”设置为“分类”），将“SyncPropertyState”设置为“单向”。 
 
 现在，当用户打开和保存这些 Office 文档之一时，文档标记为“公开”、“常规”或“高度机密\所有员工”，前提是 Azure 信息保护策略已包含有这些名称的标签。 如果没有带这些名称的标记，则不会标记文档。
+
+## <a name="limit-the-number-of-threads-used-by-the-scanner"></a>限制扫描程序使用的线程数
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+
+默认情况下，扫描程序使用运行扫描程序服务的计算机上的所有可用处理器资源。 如果在扫描此服务时需要限制 CPU 使用率，请创建以下高级设置。 
+
+对于该值，请指定扫描程序可以并行运行的并发线程数。 扫描程序为其扫描的每个文件使用单独的线程，因此此限制配置还定义了可以并行扫描的文件数。 
+
+首次配置测试值时，建议为每个核心指定 2 个，然后监视结果。 例如，如果在具有 4 个核心的计算机上运行扫描程序，请先将值设置为 8。 如有必要，请根据扫描程序计算机所需的最终性能和扫描速率相应增减该数量。 
+
+- 注册表项：**ScannerConcurrencyLevel**
+
+- 值：**\<并发线程数>**
 
 ## <a name="disable-the-low-integrity-level-for-the-scanner"></a>禁用扫描程序的低完整性级别
 

@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a715dbe743ef9b4018865df22ccdea347f888192
-ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
+ms.openlocfilehash: bdc92908e04cd0568a7417a269168b34058790e3
+ms.sourcegitcommit: abb08a85dfd7a0f100b381934a3a211da6727178
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56266091"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56828662"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -83,7 +83,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - Azure 信息保护客户端正确地删除对受 Rights Management 共享应用程序保护的 PDF 文档的保护。
 
-- 当发送操作系统区域设置为英语时，路径和文件名不会在 Azure 信息保护分析中显示问号 (**?**) 而不是非 ASCII 字符。
+- 当发送操作系统区域设置为英语时，路径和文件名不会在 Azure 信息保护分析中显示问号 (?) 来代替非 ASCII 字符。
 
 - 为用户定义的权限配置父标签时，PowerShell 和扫描程序会正确应用子标签。
 

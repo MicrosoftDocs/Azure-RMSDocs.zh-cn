@@ -4,19 +4,19 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/25/2019
+ms.date: 02/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 37aea835e34c0db50d277922edbfd044e43afd71
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 5945b115d4b20f7ef8c42d51e76066cca5c994bd
+ms.sourcegitcommit: 55782e58508051f0ecf460e8b126f70ab9b9ceec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256801"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56756192"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -42,6 +42,18 @@ ms.locfileid: "56256801"
 > - 移动设备（iOS 和 Android）和 Mac 计算机的 Office 应用具有内置标记功能。 有关详细信息，请参阅[将敏感标签应用于 Office 中的文档和电子邮件](https://aka.ms/officemipdocs)。
 
 通过访问 Azure 信息保护的 [UserVoice 站点](https://msip.uservoice.com/)，请求新功能并对请求进行投票。
+
+## <a name="which-preview-client-do-i-install-for-testing-new-functionality"></a>安装哪个预览客户端来测试新功能？
+
+目前有两个 Windows 预览版客户端： 
+
+- 从 Azure 门户下载标签和策略设置的 Azure 信息保护客户端。 此客户端在正式发布版客户端的基础上生成。
+
+- 从 Office 365 安全与合规中心下载标签和策略设置的 Azure 信息保护统一标记客户端。 此客户端现在提供第二个预览版。
+
+如果 Azure 信息保护统一标记客户端目前的功能集和功能可满足你的业务需求，建议使用它进行测试。 如果无法满足你的业务需求，或者如果你已在 Azure 门户中配置了标签，而这些标签尚未[迁移到统一标记存储](configure-policy-migrate-labels.md)，请使用 Azure 信息保护客户端。
+
+有关详细信息，包括特性和功能的比较表，请参阅[选择使用哪个 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use)。
 
 ## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>是否需要是全局管理员才能配置分类和标签？
 
