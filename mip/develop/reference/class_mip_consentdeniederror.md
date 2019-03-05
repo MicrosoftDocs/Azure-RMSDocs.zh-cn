@@ -1,18 +1,18 @@
 ---
 title: 类 mip::ConsentDeniedError
 description: 记录 mip::consentdeniederror 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: ab1d3eab34f8a1df42d39fedac48f5fe9d8a7a40
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 462f124ad4c181880222eecf696617fe8fe53d64
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256900"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333255"
 ---
 # <a name="class-mipconsentdeniederror"></a>类 mip::ConsentDeniedError 
 需要用户同意的操作未获得同意。

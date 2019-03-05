@@ -1,18 +1,18 @@
 ---
 title: class mip::TransientNetworkError
 description: 记录 mip::transientnetworkerror 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 726d9d917f390bf7ed91770661f6fe056deae2ee
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: ff9aa768559b56f897289ec30ade9b7c408c92d4
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258600"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57332287"
 ---
 # <a name="class-miptransientnetworkerror"></a>class mip::TransientNetworkError 
 暂时性网络错误。 对服务终结点执行网络调用时，由于意外行为所致。 此错误是暂时性错误，因此可重试该操作。

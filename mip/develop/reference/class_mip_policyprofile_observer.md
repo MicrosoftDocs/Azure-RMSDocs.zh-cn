@@ -1,18 +1,18 @@
 ---
 title: class mip::PolicyProfile::Observer
 description: 记录 mip::policyprofile 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 1a07f71f54889d203ad47f38ad1b101240938b9b
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 3f98e106bb7fcc30e333b70345687260add6bd22
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254147"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333600"
 ---
 # <a name="class-mippolicyprofileobserver"></a>class mip::PolicyProfile::Observer 
 [Observer](class_mip_policyprofile_observer.md) 接口，供客户端获取配置文件相关事件的通知。

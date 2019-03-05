@@ -1,18 +1,18 @@
 ---
 title: 概念 - 保护 API 引擎对象
 description: 本文将帮助你了解在应用程序初始化期间创建的保护引擎对象的概念。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 09/27/2018
-ms.author: bryanla
-ms.openlocfilehash: 9595d3a3b12af802720363e141e40608c6f5ba93
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: e3338395a193f6c1cc8f60a6beb93a1d0db15511
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258399"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330417"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-engine-concepts"></a>Microsoft 信息保护 SDK - 保护 API 引擎概念
 

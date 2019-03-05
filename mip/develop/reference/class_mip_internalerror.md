@@ -1,18 +1,18 @@
 ---
 title: class mip::InternalError
 description: 记录 mip::internalerror 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 9fffd19cab46053e1038fc2e548ebf0802501453
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 022f6f3904bb788146400f6ef6f9fd3f223638f5
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256458"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330638"
 ---
 # <a name="class-mipinternalerror"></a>class mip::InternalError 
 内部错误。 如果在执行期间出现意外，就会抛出此错误。

@@ -1,18 +1,18 @@
 ---
 title: 概念 - 文件 API 配置文件对象
 description: 本文将帮助你了解在应用程序初始化期间创建的文件配置文件对象的概念。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 09/27/2018
-ms.author: bryanla
-ms.openlocfilehash: 74937f5ef157c7807b6519a6490af80d46de6a8f
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: 19b283017929858299bd1c9af0662b170b4206f0
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254504"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333004"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-profile-concepts"></a>Microsoft 信息保护 SDK - 文件 API 配置文件概念
 

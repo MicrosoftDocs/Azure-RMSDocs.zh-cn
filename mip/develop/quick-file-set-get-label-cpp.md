@@ -2,24 +2,24 @@
 title: 快速入门 - 使用 C++ MIP SDK 对文件设置和获取敏感度标签
 description: 一个演示如何使用 Microsoft 信息保护 C++ SDK 对文件设置和获取敏感度标签的快速入门。
 services: information-protection
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.date: 01/18/2019
-ms.author: bryanla
-ms.openlocfilehash: 45263bc2a8f77f73f318b2c8df94f21e785e0f40
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: 50fe4bce04b28440609c558297d8a3e39087e557
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256679"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57332831"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 （c + +）
 
 本快速入门介绍如何使用更多的 MIP 文件 API。 使用上一个快速入门中列出的敏感度标签之一，可以使用文件处理程序对文件设置/获取标签。 文件处理程序类会公开设置/获取标签的各种操作，或受支持文件类型的保护。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 

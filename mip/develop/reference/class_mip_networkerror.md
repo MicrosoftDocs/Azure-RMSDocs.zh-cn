@@ -1,18 +1,18 @@
 ---
 title: class mip::NetworkError
 description: 记录 mip::networkerror 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: fe2e9410f3589c38a6630ff95fceb1f6b5415165
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 8740244a8dbfcf436a3b6e324f06caf707b0e00d
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259263"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57331068"
 ---
 # <a name="class-mipnetworkerror"></a>class mip::NetworkError 
 网络错误。 对服务终结点执行网络调用时，由于意外行为所致。

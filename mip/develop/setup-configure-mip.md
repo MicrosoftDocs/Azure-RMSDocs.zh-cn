@@ -1,18 +1,18 @@
 ---
 title: Microsoft 信息保护 (MIP) SDK 的安装和配置
 description: 提供安装和配置先决条件，以便使用 Microsoft 信息保护 SDK 构建应用程序。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.date: 01/30/2019
-ms.author: bryanla
-ms.openlocfilehash: 13d9d82a402d283c393c90dc52c265a1bf8502d7
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: c61b2c08cf0cb0fc59942bad3b5bb3fdbc47832c
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254265"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57331964"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置 
 
@@ -35,7 +35,7 @@ ms.locfileid: "56254265"
 
 许多 SDK 示例都需要访问 Office 365 订阅的权限。 如果尚未注册，请务必注册以下订阅类型之一：
 
-| “属性” | 注册 |
+| 名称 | 注册 |
 |------|---------|
 | Office 365 企业版 E3 试用版（30 天免费试用） | https://go.microsoft.com/fwlink/p/?LinkID=403802 |
 | Office 365 企业版 E3 或 E5 | https://products.office.com/business/office-365-enterprise-e3-business-software |

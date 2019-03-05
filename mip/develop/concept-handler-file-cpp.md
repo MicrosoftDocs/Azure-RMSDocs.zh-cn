@@ -1,18 +1,18 @@
 ---
 title: 概念 - MIP SDK 中的文件处理程序。
 description: 本文将帮助你了解如何创建文件 API 处理程序并将其用于调用操作。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 09/27/2018
-ms.author: bryanla
-ms.openlocfilehash: b021f5a05ad484b32af3a189c10522564da6d86d
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: 7e436d27ae48ee6d3589faaf55943b8ffd314450
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254843"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333732"
 ---
 # <a name="microsoft-information-protection-sdk---file-handler-concepts"></a>Microsoft 信息保护 SDK - 文件处理程序概念
 
@@ -53,7 +53,7 @@ ms.locfileid: "56254843"
 
 `CreateFileHandlerAsync` 接受三个参数：应读取或修改的文件的路径`mip::FileHandler::Observer`异步事件通知和 promise `FileHandler`。
 
-**注意：**`mip::FileHandler::Observer` 类必须在派生类中实现，因为 `CreateFileHandler` 需要 `Observer` 对象。 
+**注意:**`mip::FileHandler::Observer` 类必须在派生类中实现，因为 `CreateFileHandler` 需要 `Observer` 对象。 
 
 ```cpp
 auto createFileHandlerPromise = std::make_shared<std::promise<std::shared_ptr<mip::FileHandler>>>();

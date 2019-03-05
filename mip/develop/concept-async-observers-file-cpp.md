@@ -1,18 +1,18 @@
 ---
 title: 概念 - MIP SDK 中的文件 API 观察程序。
 description: MIP SDK 几乎完全是异步的。 本文将帮助你了解如何针对异步操作实现和使用文件 API 观察程序。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 09/27/2018
-ms.author: bryanla
-ms.openlocfilehash: aec8fd7df79fe44503887e22dc7e6a110407f98a
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: baa62e34e10de3fb4cacc3eb7cb21c0b3e2ebf75
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259505"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57329948"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-observers"></a>Microsoft 信息保护 SDK - 文件 API 观察程序
 

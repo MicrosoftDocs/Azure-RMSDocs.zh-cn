@@ -1,18 +1,18 @@
 ---
 title: class mip::PrivilegedRequiredError
 description: 记录 mip::privilegedrequirederror 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 3d4473029011a690ee98dbb77547de77c82b2208
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 778eada67cc244f1f0c81f8246fe33b0aa46140e
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254418"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330707"
 ---
 # <a name="class-mipprivilegedrequirederror"></a>class mip::PrivilegedRequiredError 
 由于当前标签被指定为特权操作（相当于管理员操作），因此无法替代。

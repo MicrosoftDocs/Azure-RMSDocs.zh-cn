@@ -1,18 +1,18 @@
 ---
 title: class mip::CustomAction
 description: 记录 mip::customaction 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: a0e58673b39f8f68ec19ad7a8be407fa93ad8ea9
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 12ecba0f442ee3e51a5cb58e77bee546ac262deb
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254911"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333562"
 ---
 # <a name="class-mipcustomaction"></a>class mip::CustomAction 
 [CustomAction](class_mip_customaction.md) 是一个泛型操作类，它捕获操作的所有子属性作为一个属性包。 调用方负责理解操作的含义。

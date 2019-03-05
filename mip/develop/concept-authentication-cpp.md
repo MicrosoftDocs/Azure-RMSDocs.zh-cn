@@ -1,18 +1,18 @@
 ---
 title: 概念 - MIP SDK 中的身份验证。
 description: 本文将帮助你了解 MIP SDK 如何实现身份验证，以及客户端应用程序提供 OAuth2 访问令牌获取逻辑的要求。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 09/27/2018
-ms.author: bryanla
-ms.openlocfilehash: dd2e8c5c3344da351715069910741c5651f4e617
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: f4d96da36eb41025df5d280c62a3831cd5afa9a1
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257955"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330832"
 ---
 # <a name="microsoft-information-protection-sdk---authentication-concepts"></a>Microsoft 信息保护 SDK - 身份验证概念
 

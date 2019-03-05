@@ -1,16 +1,16 @@
 ---
-author: BryanLa
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 ms.service: information-protection
 ms.topic: include
 ms.collection: M365-security-compliance
 ms.date: 02/01/2019
-ms.openlocfilehash: 6584c4d27fe195ce5e331093cfb63c8a00965856
-ms.sourcegitcommit: 74adccd801aa3835c5fedbac300937a6e5913bd3
+ms.openlocfilehash: ffa393e0c71a09642cca04cfcfc09a6f56fe375e
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56422833"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333783"
 ---
 | 操作系统 | 版本 | 下载 | 说明 |
 |------------------|----------|----------|--------|

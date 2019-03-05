@@ -1,18 +1,18 @@
 ---
 title: 概念 - 使用 Python 获取访问令牌。
 description: 本文将帮助你了解如何使用 Python 获取 OAuth2 访问令牌。 这是实现身份验证委托所必需的。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 02/04/2019
-ms.author: bryanla
-ms.openlocfilehash: 138f4bea4f5edfaa4e049c5c58c624af1b81cab5
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: e325dc6c3b79cdd7e7720f0bca50d8bdda045979
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259348"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57331930"
 ---
 # <a name="acquire-an-access-token-python"></a>获取访问令牌 (Python)
 

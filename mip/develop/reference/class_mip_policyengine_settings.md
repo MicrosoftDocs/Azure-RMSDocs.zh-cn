@@ -1,18 +1,18 @@
 ---
 title: class mip::PolicyEngine::Settings
 description: 记录 mip::policyengine 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 6ad384768ef876109a6a43237765474345a666bc
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: bc130d2c6056d971635bcf204243f29b13789466
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257529"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330825"
 ---
 # <a name="class-mippolicyenginesettings"></a>class mip::PolicyEngine::Settings 
 定义与 [PolicyEngine](class_mip_policyengine.md) 关联的设置。

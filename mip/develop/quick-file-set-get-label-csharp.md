@@ -2,24 +2,24 @@
 title: 快速入门-Set 和 get 文件使用的敏感度标签C#MIP SDK
 description: 快速入门教程演示如何使用 Microsoft 信息保护 SDK.NET 包装器来设置和获取文件的敏感度标签。
 services: information-protection
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.date: 01/09/2019
-ms.author: bryanla
-ms.openlocfilehash: 3af8cd7e21124d6e6ac70407d8e366eb6d88da45
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: 3ee178c493b99cfecd3f6cd04a680f47acf45412
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56253602"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333239"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C#)
 
 本快速入门介绍如何使用更多的 MIP 文件 API。 使用上一个快速入门中列出的敏感度标签之一，可以使用文件处理程序对文件设置/获取标签。 文件处理程序类会公开设置/获取标签的各种操作，或受支持文件类型的保护。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 

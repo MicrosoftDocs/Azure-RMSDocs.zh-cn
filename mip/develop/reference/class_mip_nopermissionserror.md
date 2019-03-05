@@ -1,18 +1,18 @@
 ---
 title: 类 mip::NoPermissionsError
 description: 记录 mip::nopermissionserror 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 4a7b1af035b8a341ef16cabb10c788e5f5bc276c
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: ea7edbc6e30d3ac529d55ddeaeecc63f140c512f
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258855"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57329414"
 ---
 # <a name="class-mipnopermissionserror"></a>类 mip::NoPermissionsError 
 用户无法访问内容。 例如，无权限、内容已撤销。

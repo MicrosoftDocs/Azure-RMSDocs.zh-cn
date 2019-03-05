@@ -1,18 +1,18 @@
 ---
 title: class mip::LoggerDelegate
 description: 记录 mip::loggerdelegate 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 6751335ab3c74b879af57c362f46eefbb89b8c78
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 511c8dabc8ff31c70c8343a80d423b76c43fa946
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256849"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330315"
 ---
 # <a name="class-miploggerdelegate"></a>class mip::LoggerDelegate 
 定义 MIP SDK 记录器接口的类。

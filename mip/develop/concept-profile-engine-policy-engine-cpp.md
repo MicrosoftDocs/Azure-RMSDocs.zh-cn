@@ -1,18 +1,18 @@
 ---
 title: 概念 - 策略 API 引擎对象
 description: 本文将帮助你了解在应用程序初始化期间创建的策略引擎对象的概念。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 09/27/2018
-ms.author: bryanla
-ms.openlocfilehash: 9aac5fb0e010c8c73776c3e62ba9e98bdeff77d2
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: 52d036bd58d4f24710e765ca42493696a3cd5330
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252769"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333375"
 ---
 # <a name="microsoft-information-protection-sdk---policy-api-engine-concepts"></a>Microsoft 信息保护 SDK - 策略 API 引擎概念
 

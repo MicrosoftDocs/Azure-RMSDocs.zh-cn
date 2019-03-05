@@ -1,18 +1,18 @@
 ---
 title: 常见问题解答和已知问题 - Microsoft 信息保护 SDK。
 description: Microsoft 信息保护 (MIP) SDK 常见问题解答以及问题和错误的疑难解答指南。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: troubleshooting
 ms.collection: M365-security-compliance
 ms.date: 10/19/2018
-ms.author: bryanla
-ms.openlocfilehash: f9aed3cab9ba22ba1ac2b41984ce82957278f1e6
-ms.sourcegitcommit: 4ed27f50545aae1a58cc922202959d427bcba7ac
+ms.author: mbaldwin
+ms.openlocfilehash: e548b2b6e9b32899ceff693312cf510b9fff74aa
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56323574"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333536"
 ---
 # <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Microsoft 信息保护 (MIP) SDK 常见问题解答和问题
 

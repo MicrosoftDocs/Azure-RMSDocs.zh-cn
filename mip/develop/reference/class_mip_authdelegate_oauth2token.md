@@ -1,18 +1,18 @@
 ---
 title: 类 mip::AuthDelegate::OAuth2Token
 description: 记录 mip::authdelegate 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: bef28489d16b040ff910103d9e0bf5a4719c66ff
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: a3a634c99f278d1e8eb27d4c37da0cec566c6aa2
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56255965"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57332423"
 ---
 # <a name="class-mipauthdelegateoauth2token"></a>类 mip::AuthDelegate::OAuth2Token 
 定义 MIP SDK 如何要求要传递到 SDK 的 oauth2 令牌的类。

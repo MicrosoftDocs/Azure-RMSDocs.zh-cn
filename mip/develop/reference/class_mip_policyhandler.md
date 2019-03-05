@@ -1,18 +1,18 @@
 ---
 title: 类 mip::PolicyHandler
 description: 记录 mip::policyhandler 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: a03d9b90d1436cf4b53fd9cabf2177b27183679b
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 6c5979706b9868bd7d0b6b1adad5d96bd5d3e0ce
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259231"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57329584"
 ---
 # <a name="class-mippolicyhandler"></a>类 mip::PolicyHandler 
 此类为文件上的所有策略处理程序函数提供一个接口。

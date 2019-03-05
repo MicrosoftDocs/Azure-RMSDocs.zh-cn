@@ -1,24 +1,24 @@
 ---
 title: 快速入门 - 使用 C++ MIP SDK 列出 Microsoft 信息保护 (MIP) 租户中的敏感度标签
 description: 一个演示如何使用 Microsoft 信息保护 C++ SDK 列出租户中的敏感度标签的快速入门。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.date: 01/18/2019
-ms.author: bryanla
-ms.openlocfilehash: 53ff9177bd17a87b64db3ec507e87236c9b12507
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: 27b6c9039277feca033298520cc0fc18d239f037
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257786"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330978"
 ---
 # <a name="quickstart-list-sensitivity-labels-c"></a>快速入门：列出敏感度标签 (C++)
 
 本快速入门演示如何使用 MIP 文件 API 列出为组织配置的敏感度标签。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
@@ -135,7 +135,7 @@ ms.locfileid: "56257786"
 
 | 总结 | 错误消息 | 解决方案 |
 |---------|---------------|----------|
-| 访问令牌不正确 | *...发生了异常是访问令牌不正确/已过期？<br><br>失败的 API 调用： profile_add_engine_async 失败: [类 mip::PolicySyncException] 无法获取策略、 请求失败，http 状态代码：401，x 的 ms-诊断: [2000001; 原因 ="与请求一起提交的 OAuth 令牌无法分析。";error_category ="invalid_token"]，相关 Id: [35bc0023-3727-4eff-8062-000006d5d672]'<br><br>C:\VSProjects\MipDev\Quickstarts\AppInitialization\x64\Debug\AppInitialization.exe （进程 29924） 已退出，代码 0。<br><br>按任意键关闭此窗口...* | 如果项目成功生成，但出现类似于左侧的输出，则表示 `AcquireOAuth2Token()` 方法中可能包含无效或过期的令牌。 返回到[更新令牌获取逻辑](#update-the-token-acquisition-logic-with-a-valid-access-token)并重新生成访问令牌，再次更新 `AcquireOAuth2Token()`，然后重新生成/重新测试。 还可以使用 [jwt.ms](https://jwt.ms/) 单页 Web 应用程序检查并验证令牌及其声明。 |
+| 访问令牌不正确 | *发生了异常...是不正确/已过期的访问令牌？<br><br>失败的 API 调用： profile_add_engine_async 失败: [类 mip::PolicySyncException] 无法获取策略、 请求失败，http 状态代码：401，x 的 ms-诊断: [2000001; 原因 ="与请求一起提交的 OAuth 令牌无法分析。";error_category ="invalid_token"]，相关 Id: [35bc0023-3727-4eff-8062-000006d5d672]'<br><br>C:\VSProjects\MipDev\Quickstarts\AppInitialization\x64\Debug\AppInitialization.exe （进程 29924） 已退出，代码 0。<br><br>按任意键关闭此窗口...* | 如果项目成功生成，但出现类似于左侧的输出，则表示 `AcquireOAuth2Token()` 方法中可能包含无效或过期的令牌。 返回到[更新令牌获取逻辑](#update-the-token-acquisition-logic-with-a-valid-access-token)并重新生成访问令牌，再次更新 `AcquireOAuth2Token()`，然后重新生成/重新测试。 还可以使用 [jwt.ms](https://jwt.ms/) 单页 Web 应用程序检查并验证令牌及其声明。 |
 | 未配置敏感度标签 | n/a | 如果项目成功生成，但在控制台窗口中没有输出，请确保正确配置了组织的敏感度标签。 请参阅 [MIP SDK 安装和配置](setup-configure-mip.md)，在“定义标签分类和保护设置”下获取详细信息。  |
 
 ## <a name="next-steps"></a>后续步骤

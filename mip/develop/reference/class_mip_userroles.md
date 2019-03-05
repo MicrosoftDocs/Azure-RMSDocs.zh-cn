@@ -1,18 +1,18 @@
 ---
 title: class mip::UserRoles
 description: 记录 mip::userroles 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 45b2b5170fac04364af1a0418da5d6e1f5e488a3
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 94e58874e0bec01156d70bc569d1909e53dd1ebb
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56260045"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333392"
 ---
 # <a name="class-mipuserroles"></a>class mip::UserRoles 
 一组用户以及与之关联的角色。

@@ -1,18 +1,18 @@
 ---
 title: class mip::ProtectionProfile::Settings
 description: 记录 mip::protectionprofile 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 1998d693de33d2bc37043f750d85296f7282add4
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 5e609cfbc7cbb705dafbee239726c0cfd15cc38a
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254809"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57331862"
 ---
 # <a name="class-mipprotectionprofilesettings"></a>class mip::ProtectionProfile::Settings 
 由 [ProtectionProfile](class_mip_protectionprofile.md) 在创建期间及其整个生存期内使用的[设置](class_mip_protectionprofile_settings.md)。

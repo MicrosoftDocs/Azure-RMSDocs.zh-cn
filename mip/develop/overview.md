@@ -1,18 +1,18 @@
 ---
 title: 概述 - Microsoft 信息保护 SDK。
 description: Microsoft 信息保护 (MIP) 将 Microsoft 的分类、标记和保护服务统一到一个管理体验和软件开发工具包 (SDK) 中。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.date: 01/18/2019
-ms.author: bryanla
-ms.openlocfilehash: b78214fc2260fd984b6b853866f72b92dd5cc11e
-ms.sourcegitcommit: 4ed27f50545aae1a58cc922202959d427bcba7ac
+ms.author: mbaldwin
+ms.openlocfilehash: d8efb7ceef890d0c2a0ea72f64d3047e0cfb25a5
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56323557"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57329601"
 ---
 # <a name="overview"></a>概述
 

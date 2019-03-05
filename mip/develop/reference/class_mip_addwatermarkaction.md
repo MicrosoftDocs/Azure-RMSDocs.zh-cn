@@ -1,18 +1,18 @@
 ---
 title: class mip::AddWatermarkAction
 description: 记录 mip::addwatermarkaction 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 660d2d81492895a6c18ec0b9a921b694e70fbe65
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 8121763106c9f46022264a7eea3bc16e363e523c
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259994"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330468"
 ---
 # <a name="class-mipaddwatermarkaction"></a>class mip::AddWatermarkAction 
 指定添加水印的操作类。

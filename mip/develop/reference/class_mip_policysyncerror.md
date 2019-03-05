@@ -1,18 +1,18 @@
 ---
 title: class mip::PolicySyncError
 description: 记录 mip::policysyncerror 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: c4bfc589ff7ebdc16482b5a2bc5c9e9de18fbcf8
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 46cf8e147a250b0e79f4def89055d2408055c24b
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257920"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333499"
 ---
 # <a name="class-mippolicysyncerror"></a>class mip::PolicySyncError 
 同步策略数据尝试失败。

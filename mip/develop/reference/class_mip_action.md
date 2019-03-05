@@ -1,18 +1,18 @@
 ---
 title: class mip::Action
 description: 记录 mip::action 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 90a4182c10c55518634f0dd0cd84c7ba1c31640e
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: a8e160f31dbf696944f7c6d40c1826233883f00a
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56255999"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57332229"
 ---
 # <a name="class-mipaction"></a>class mip::Action 
 操作的接口。 每个操作都转换为，出于应用标签目的，应用程序需要执行的步骤（如策略所定义）

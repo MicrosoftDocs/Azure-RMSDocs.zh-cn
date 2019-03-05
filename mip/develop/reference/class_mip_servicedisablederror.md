@@ -1,18 +1,18 @@
 ---
 title: 类 mip::ServiceDisabledError
 description: 记录 mip::servicedisablederror 类的 Microsoft 信息保护 (MIP) SDK。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: adcdb252fc6988f7047c2d940ddaa19fe8381405
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 2d64d576ead748adff7804e9068aab71fd9672c0
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256441"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333001"
 ---
 # <a name="class-mipservicedisablederror"></a>类 mip::ServiceDisabledError 
 用户无法获取访问内容，因为服务被禁用。

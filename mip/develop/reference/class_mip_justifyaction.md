@@ -1,18 +1,18 @@
 ---
 title: class mip::JustifyAction
 description: '记录 mip:: justifyaction 类的 Microsoft 信息保护 (MIP) SDK。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
-ms.author: bryanla
+ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 963509dac9342d3abc33d4e68e257bf7f38981cc
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: cf0500aa9d7c6a0422e5846edda23515319c1efc
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56251919"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333205"
 ---
 # <a name="class-mipjustifyaction"></a>class mip::JustifyAction 
 Justify[Action](class_mip_action.md) 要求必须合理解释标签降级，并设置执行状态下的响应。

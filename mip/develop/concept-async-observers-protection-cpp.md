@@ -1,18 +1,18 @@
 ---
 title: 概念 - MIP SDK 中的保护 API 观察程序。
 description: MIP SDK 几乎完全是异步的。 本文将帮助你了解如何针对异步操作实现和使用保护 API 观察程序。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 09/27/2018
-ms.author: bryanla
-ms.openlocfilehash: 3f3d556d0772733f87445244b82d2b34924669df
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: 2d1cf81e20a317ecb1eb9e71b5b4e0ab32482877
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256169"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330753"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-observers"></a>Microsoft 信息保护 SDK - 保护 API 观察程序
 

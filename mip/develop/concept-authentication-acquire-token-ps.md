@@ -1,18 +1,18 @@
 ---
 title: 概念 - 使用 PowerShell 获取访问令牌。
 description: 本文将帮助你了解如何使用 PowerShell 获取 OAuth2 访问令牌。 这是实现身份验证委托所必需的。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 02/04/2019
-ms.author: bryanla
-ms.openlocfilehash: 85c06979a5010a17b60751ccd8a09529be2c362d
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: 68ae6bc02f671f0a4d18c382ccde4f53873b2fd4
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252888"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57332695"
 ---
 # <a name="acquire-an-access-token-powershell"></a>获取访问令牌 (PowerShell)
 

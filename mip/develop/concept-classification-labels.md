@@ -1,18 +1,18 @@
 ---
 title: 概念 - 分类标签
 description: 本文将帮助你了解如何使用标签进行数据分类。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 09/27/2018
-ms.author: bryanla
-ms.openlocfilehash: c913eab399eebbdc9af82d7365ea68c9a8430de9
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: e1101bd505a35e02fdeeed032d5dec61364bfb8d
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259331"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333664"
 ---
 # <a name="microsoft-information-protection-sdk---classification-label-concepts"></a>Microsoft 信息保护 SDK - 分类标签概念
 

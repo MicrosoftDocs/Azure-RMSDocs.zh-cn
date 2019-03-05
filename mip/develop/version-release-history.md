@@ -1,19 +1,19 @@
 ---
 title: Microsoft 信息保护 (MIP) SDK 版本发行历史记录和支持策略
 description: 快速入门教程，演示如何为 Microsoft 信息保护 (MIP) SDK 客户端应用程序编写初始化逻辑。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 01/08/2019
-ms.author: bryanla
+ms.author: mbaldwin
 manager: barbkess
-ms.openlocfilehash: da4b737082153f47cc0072e8b259da4c0c89c6e4
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 9f02d682164dac8ee28ed023dd7b21b53937f4bb
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252684"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333630"
 ---
 # <a name="microsoft-information-protection-mip-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护 (MIP) SDK 版本发行历史记录和支持策略
 

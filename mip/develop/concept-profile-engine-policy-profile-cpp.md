@@ -1,18 +1,18 @@
 ---
 title: 概念 - 策略 API 配置文件对象
 description: 本文将帮助你了解在应用程序初始化期间创建的策略配置文件对象的概念。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 09/27/2018
-ms.author: bryanla
-ms.openlocfilehash: 0eed59e82d32c3461e21cfcfb20514b4d615ea8c
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.author: mbaldwin
+ms.openlocfilehash: f9bb02dd4508b5e09761b3684a2a4e6d92224b6a
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252259"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333035"
 ---
 # <a name="microsoft-information-protection-sdk---policy-api-profile-concepts"></a>Microsoft 信息保护 SDK - 策略 API 配置文件概念
 
