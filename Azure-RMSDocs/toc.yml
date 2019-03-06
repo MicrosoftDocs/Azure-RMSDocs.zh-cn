@@ -213,7 +213,7 @@ items:
       - name: Azure 信息保护客户端
         href: ./rms-client/aip-client.md
         items:
-        - name: Azure 信息保护客户端：版本发行历史记录
+        - name: Azure 信息保护客户端 - 版本发行历史记录
           href: ./rms-client/client-version-release-history.md
         - name: Azure 信息保护客户端管理员指南
           href: ./rms-client/client-admin-guide.md
@@ -422,9 +422,9 @@ items:
     href: https://docs.microsoft.com/powershell/azure/aip/overview?view=azureipps
   - name: 术语
     href: terminology.md
-ms.openlocfilehash: 37e1f6c9fe9955518e5f26985a0de232f7b4691e
-ms.sourcegitcommit: d1aac7dc96f5986511f73ec035400954be24e723
+ms.openlocfilehash: f10f9116d8017951c704d9f4f173e780cf23516d
+ms.sourcegitcommit: 503b8330efbecfc4dce204ffe036a7911a35691d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57017245"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57379893"
