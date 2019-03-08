@@ -2,8 +2,8 @@
 title: API SDK 4.2 参考 | Microsoft Docs
 description: Azure 信息保护 SDK 4.2 支持多种操作系统。 包括 Android、iOS、OS X、Linux、Windows Phone 和 Windows Store。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: f3900e991bc841c834170c5bfa7a7383cb381205
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 15ecc4c49ca5d6059fb02863b4c80a75b3348af3
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56251187"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57329771"
 ---
 # <a name="api-sdk-42-reference"></a>API SDK 4.2 参考
 

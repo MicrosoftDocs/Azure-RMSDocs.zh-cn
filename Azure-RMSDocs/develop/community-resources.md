@@ -2,8 +2,8 @@
 title: 开发人员社区资源 | Microsoft Docs
 description: 不断壮大的开发人员群体可在多个平台上很好地支持 Azure 信息保护。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6537ff35b80b76f388813814395b2814bffdac36
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 37bdc6e78089ce5e3e4c3072e9804e624bdaaa2b
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257410"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333341"
 ---
 # <a name="community-resources"></a>社区资源
 

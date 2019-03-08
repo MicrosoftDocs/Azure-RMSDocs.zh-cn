@@ -2,8 +2,8 @@
 title: 配置 Visual Studio | Azure RMS
 description: 有关如何配置 Visual Studio 项目以使用 RMS SDK 2.1 的说明。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5c335232c691d8bbfa62d70e0781a908be50434b
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 9874b2d07930b80f8d4ef291f83ae16356a3c191
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259365"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330621"
 ---
 # <a name="configure-visual-studio"></a>配置 Visual Studio
 

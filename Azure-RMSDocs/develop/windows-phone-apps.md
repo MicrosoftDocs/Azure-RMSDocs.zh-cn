@@ -2,8 +2,8 @@
 title: Windows Phone 安装程序 | Azure RMS
 description: Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8591e48a9d90f893c1158e4c8b582ad759356a8f
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 42ef57b73dfbbd49620e406a296df400ea3d99cf
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257750"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57332984"
 ---
 # <a name="windows-phone-setup"></a>Windows Phone 安装程序
 

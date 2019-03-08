@@ -2,8 +2,8 @@
 title: 如何使用 Azure AD 注册应用程序 - AIP
 description: 介绍针对启用 RMS 的应用的用户身份验证基础知识。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 03/13/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 0376665dfe09a6a29d33c414deedf79ed215bb6d
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: c2bd6e638fe3af2680327061ecf85bbffd0e1794
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258515"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57331947"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>如何使用 Azure AD 注册应用并为其启用 RMS
 

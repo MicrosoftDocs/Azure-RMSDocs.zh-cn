@@ -2,8 +2,8 @@
 title: 设置开发人员环境 | Azure RMS
 description: 说明如何设置开发环境以便将 AD RMS SDK API 用于特定操作系统。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: 296FC4C0-99C6-4997-AD97-5CEE01221B1A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 63426f1fb4143fe1ccb3aeaaa53981498ce17cbe
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 8fbdc1e130b891d3ce5370a6aed1c14ca5467203
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254758"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330570"
 ---
 # <a name="setup-developer-environment"></a>设置开发人员环境
 

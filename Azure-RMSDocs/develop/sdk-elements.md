@@ -2,8 +2,8 @@
 title: 开发环境文件 | Azure RMS
 description: 本主题展示开发环境文件和它们在计算机上的相对安装位置。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 413d963bf0d98d77e0d0b72601800cb2b0602188
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: a1ec90089c86bc46e9423b2f1987279736095093
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56251647"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57329533"
 ---
 # <a name="development-environment-files"></a>开发环境文件
 

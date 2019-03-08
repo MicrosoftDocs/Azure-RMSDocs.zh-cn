@@ -2,8 +2,8 @@
 title: 代码示例 | Azure RMS
 description: RMS SDK 4.2 包括适用于一些支持的操作系统的示例代码和工作项目。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: 634df601-79d2-4bc2-b845-4df886d7c589
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 85c9fbc3ed0e006c771e6ec2f2e9926fd77d46e0
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 614adcc35e595b1affe5b6cbfa50274ee5108ede
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257240"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330774"
 ---
 # <a name="code-examples"></a>代码示例
 

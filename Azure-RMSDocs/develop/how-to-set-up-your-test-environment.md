@@ -2,8 +2,8 @@
 title: 测试应用程序 | Azure RMS
 description: 有关如何设置应用程序以进行测试的说明。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 84989e8844787c055c8f5ef73f89b6d99edd7bc6
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 58de314ef4c87518c8aa6c53036c477b541ef5e1
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252718"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57331029"
 ---
 # <a name="testing-your-application"></a>测试应用程序
 

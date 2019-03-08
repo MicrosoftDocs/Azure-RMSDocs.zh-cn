@@ -2,8 +2,8 @@
 title: 启用电子邮件通知 | Azure RMS
 description: 受保护的内容所有者通过电子邮件通知可以在其内容受到访问时收到通知。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: 5FB975EE-E4E5-4089-B8E1-CAFD5B9B34EC
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 097ff6cfd212d542844e288ab5ff5f205cb766fc
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 029aa3075424d2ae91c4521cff7a71bf6e8cc939
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56253296"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57331301"
 ---
 # <a name="how-to-enable-email-notification"></a>操作说明：启用电子邮件通知
 

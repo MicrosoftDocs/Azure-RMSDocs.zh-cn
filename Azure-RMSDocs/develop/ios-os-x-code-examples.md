@@ -2,8 +2,8 @@
 title: iOS/OS X 代码示例 | Azure RMS
 description: 本主题向你介绍 iOS/OS X 版 RMS SDK 的重要代码元素。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: b8a09101f261089aefc01f73da1c9e530d76f7b3
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: c2cae0e07903dd27c8cd4332e255cb33910c9f94
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252871"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330784"
 ---
 # <a name="iosos-x-code-examples"></a>iOS/OS X 代码示例
 

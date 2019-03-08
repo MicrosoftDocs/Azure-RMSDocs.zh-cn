@@ -2,8 +2,8 @@
 title: 应用程序类型 | Azure RMS
 description: 本主题介绍可以选择创建为启用权限形式的应用程序类型。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d6d99b1fe2517cbef1303562eff1160dab4b16a5
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 274430ebde3f1f7bfde36ab65984c9ce4610085e
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56255608"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57330587"
 ---
 # <a name="application-types"></a>应用程序类型
 

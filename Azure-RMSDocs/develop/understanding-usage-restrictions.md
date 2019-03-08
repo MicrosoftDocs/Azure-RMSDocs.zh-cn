@@ -2,8 +2,8 @@
 title: 了解使用限制 | Azure RMS
 description: 所有启用 RMS 的应用程序都必须强制实施使用限制。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: E388B16C-ECDA-4696-A040-D457D3C96766
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5e62518965f2cea04b3b26df6a96646945567b9c
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 2001f779a788e41acbb9319a0c329dfb4705176a
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257886"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57332049"
 ---
 # <a name="understanding-usage-restrictions"></a>了解使用限制
 

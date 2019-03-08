@@ -2,8 +2,8 @@
 title: 适用于启用了 RMS 的应用程序的 ADAL 身份验证 | Azure RMS
 description: 使用 ADAL 进行身份验证的过程概述
 keywords: 身份验证、RMS、ADAL
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 82574d20e11b64b54652a6df9da2bd9e043f2b9e
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 0f143a27942604b6a8cfa664fc53be217118fd51
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56260062"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57331539"
 ---
 # <a name="how-to-use-adal-authentication"></a>操作说明：使用 ADAL 身份验证
 

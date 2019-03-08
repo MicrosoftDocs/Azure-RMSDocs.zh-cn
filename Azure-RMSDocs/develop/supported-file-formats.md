@@ -2,8 +2,8 @@
 title: 支持的文件格式 | Azure RMS
 description: 当前版本的文件 API 支持对 MS Office 文件的本机保护、对所有其他文件格式的 PDF 和 PFile 保护。
 keywords: ''
-author: bryanla
-ms.author: bryanla
+author: msmbaldwin
+ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6fa4571bd04211f3e09843ef89f142b4ebbe7af5
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 9a2e543cc8a598ab371121d75c1191ce8c4c8c77
+ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56255931"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57333477"
 ---
 # <a name="supported-file-formats"></a>支持的文件格式
 

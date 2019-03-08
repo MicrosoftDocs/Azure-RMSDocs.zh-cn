@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 82b76924e74796a06ecc9bf57acb1461cc0e8ce9
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 87cd350077f42718a6bcd86a98e9f8f1f79eb53e
+ms.sourcegitcommit: 78cc0a94b38bf8c03808109b495e0952f2cdfbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256662"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57557640"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
@@ -44,7 +44,7 @@ ms.locfileid: "56256662"
 
 |加密控件|在 Azure RMS 中使用|
 |-|-|
-|算法：AES<br /><br />密钥长度：128 位和 256 位 [[1]](#footnote-1)|文档保护|
+|算法：AES<br /><br />密钥长度：128 位和 256 位 [[1]](#footnote-1)|内容保护|
 |算法：RSA<br /><br />密钥长度：2048 位 [[2]](#footnote-2)|密钥保护|
 |SHA-256|证书签名|
 
