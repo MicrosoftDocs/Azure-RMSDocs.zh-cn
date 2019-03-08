@@ -5,20 +5,20 @@ author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.collection: M365-security-compliance
-ms.date: 01/30/2019
+ms.date: 03/01/2019
 ms.author: mbaldwin
-ms.openlocfilehash: c61b2c08cf0cb0fc59942bad3b5bb3fdbc47832c
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: db815d17303abb0fb98b6e5936fbcd1f975d74f0
+ms.sourcegitcommit: 50e6b94bdb387cfa35d0e565b1e89f9e69563a63
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57331964"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57581736"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置 
 
 快速入门和教程文章主要介绍使用 MIP SDK 库和 API 构建应用程序。 本文介绍如何安装和配置 Office 365 订阅和客户端工作站，为使用 SDK 做准备。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 在开始之前，请务必查看以下主题：
 
@@ -219,6 +219,17 @@ ms.locfileid: "57331964"
 - 用于紧急情况通信的公司联系人、电子邮件和电话号码
 
 在发送电子邮件，允许最多 72 个小时的回执确认。
+
+## <a name="ensure-your-app-has-the-required-runtime"></a>确保你的应用程序所需的运行时
+
+> [!NOTE]
+> 此步骤是必需的仅当部署到计算机而无需 Visual Studio 中，应用程序或 Visual Studio 安装缺少的 Visual c + + 运行时组件。
+
+使用 MIP SDK 构建的应用程序需要 Visual c + + 2015年或 Visual c + + 2017年运行时要安装，如果尚不存在。
+- [Microsoft Visual c + + 2015 Redistributable 更新 3](https://www.microsoft.com/download/details.aspx?id=53587)
+- [Microsoft Visual c + + Redistributable for Visual Studio 2017](https://visualstudio.microsoft.com/downloads/#microsoft-visual-c-redistributable-for-visual-studio-2017)
+
+如果已为发布生成应用程序，这些将仅工作。 如果应用程序生成为调试，然后 Visual c + + 运行时调试 Dll 必须是包含在应用程序或安装在计算机上。 
 
 ## <a name="next-steps"></a>后续步骤
 
