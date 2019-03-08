@@ -4,19 +4,19 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/18/2019
+ms.date: 03/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a0addbf7d4e613ab49ea29e750fd67a3b8ef1793
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: cec2614cacffa41ef3e4a345455c582ad92682f2
+ms.sourcegitcommit: 746963b045072ea74e147895a8acda6a2e5bc9ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254571"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226285"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -170,20 +170,6 @@ Azure 信息保护客户端支持 Office 365 支持的同种语言。 有关这�
 - 联机用户指令：[Azure 信息保护用户指南](client-user-guide.md)
 
 - 下载可自定义的用户指南：[Azure 信息保护最终用户采用指南](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
-
-### <a name="update-macros-in-excel-spreadsheets"></a>更新 Excel 电子表格中的宏
-
-若有包含宏的 Excel 电子表格，请按如下所述编辑宏，以确保这些宏在 Azure 信息保护客户端安装后能够继续如预期一样正常运行：
-
-1. 在宏的开头添加以下代码：
-
-        Application.EnableEvents = False
-
-2. 在宏的末尾添加以下代码：
-
-        Application.EnableEvents = True
-
-有关详细信息，请参阅 [Application.EnableEvents 属性 (Excel)](https://msdn.microsoft.com/vba/excel-vba/articles/application-enableevents-property-excel)。
 
 ## <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>升级和维护 Azure 信息保护客户端
 
