@@ -4,19 +4,19 @@ description: Azure 信息保护的支持信息，包括法律、符合性和 SLA
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/06/2018
+ms.date: 03/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4f611f97309851364324618e436ca13d4bd9fee7
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 525637a52a71e4bdc48e8f0665ef73c70a5a18ff
+ms.sourcegitcommit: 78cc0a94b38bf8c03808109b495e0952f2cdfbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254707"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57557623"
 ---
 # <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Azure 信息保护的符合性和支持信息
 
@@ -30,7 +30,7 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 - Azure 信息保护使用 AES 256 和 AES 128 加密文档。 [详细信息](./how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)
 
-- 使用特定于客户的根密钥（使用 RSA 2048 位）保护所有用于 Azure 信息保护的加密密钥。 但 RSA 1024 也支持向后兼容。 [详细信息](./how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)
+- 使用特定于客户的根密钥（使用 RSA 2048 位）保护所有用于 Azure 信息保护的加密密钥。 RSA 1024 位也支持向后兼容。 [详细信息](./how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)
 
 - 特定于客户的根密钥由 Microsoft 托管，或由 Thales HSM 中的客户通过使用“[自带密钥](plan-implement-tenant-key.md)”(BYOK) 进行预配。 Azure 信息保护还支持本地密钥的有限功能 - 使用“[保留自己的密钥](configure-adrms-restrictions.md)”(HYOK) 用于指示其不能使用基于云的密钥保护的要求影响的内容。
 

@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 147982a700f2b2033b77d0b02568990a164cf555
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 02cd02d76e52ebe461a2193cf2880bd41d6e2a93
+ms.sourcegitcommit: 1dec4a5884ee070cd5351ec229575f04f6eef7b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257852"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57206478"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
->适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助于组织通过应用标签对其文档和电子邮件进行分类和有选择地保护。 标签可以由定义规则和条件的管理员自动应用、由用户手动应用或是二者组合应用（在这种情况下会向用户提供建议）。 
 
@@ -118,7 +118,7 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 - 下载客户端：[Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
 
-- 下载适用于业务决策者的部署指南：[Azure 信息保护部署加速指南](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Deployment-Acceleration-Guide/ba-p/334423)
+- 下载战术性和战略性部署指南：[Azure 信息保护部署加速指南](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Deployment-Acceleration-Guide/ba-p/334423)
 
 - 下载可自定义的用户指南：[Azure 信息保护最终用户采用指南](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
 

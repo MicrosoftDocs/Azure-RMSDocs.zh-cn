@@ -4,21 +4,21 @@ description: 在 Azure 信息保护策略中配置适用于所有用户、所有
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/13/2019
+ms.date: 03/06/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 91ab0e30c0fac8f3285983f6c3b06886c0782e7d
-ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
+ms.openlocfilehash: 5a797fc02894c64d3801492080decf113383cb33
+ms.sourcegitcommit: 503b8330efbecfc4dce204ffe036a7911a35691d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56266057"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57379876"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
->适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 除了信息保护栏标题和工具提示，Azure 信息保护策略中还有一些可以在标签中单独配置的设置：
 
@@ -60,7 +60,8 @@ ms.locfileid: "56266057"
         
         要在使用此策略设置时考虑子标签的排序，必须[配置高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments)。
         
-        当为具有最高等级分类标签的附件配置包含用户定义的权限的预览设置保护时，会使用同一分类标签标记电子邮件，但不会应用保护。
+        当为具有最高等级分类标签的附件配置包含用户定义的权限的预览设置保护时：- 对于客户端的常规可用版本：电子邮件标签使用相同的分类，但不应用保护。
+            - 对于客户端的预览版本：当标签的用户定义权限包括 Outlook（不要转发）时，将应用该标签，并对电子邮件应用“不转发”保护。 当标签的用户定义权限仅适用于 Word、Excel、PowerPoint 和文件资源管理器时，该标签不会应用于电子邮件，也不会受到保护。
     
    - **在 Office 应用中显示“信息保护”栏**：关闭此设置后，用户无法从 Word、Excel、PowerPoint 和 Outlook 中的“信息保护”栏选择标签。 在此情况下，用户必须通过功能区上的“保护”按钮选择标签。 打开此设置后，用户可以通过信息保护栏或“保护”按钮选择标签。
         

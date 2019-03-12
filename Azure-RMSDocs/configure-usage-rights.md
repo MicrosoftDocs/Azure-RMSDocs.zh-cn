@@ -4,23 +4,23 @@ description: 了解和确定在使用 Azure 信息保护中的 Azure 权限管�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/01/2019
+ms.date: 03/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f7eda5df7fad0a4b1a16ba9059c6adf76794372f
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: aedeea5e98a1dbee4e73cdf27573da52b623a6c4
+ms.sourcegitcommit: 21e7b96e1a60ff584149b3ff4325c80cb0a3770c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56260011"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57568087"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 在文件或电子邮件上使用 Azure 信息保护中的 Azure 权限管理服务设置保护并且不使用模板时，必须自行配置使用权限。 此外，在为 Azure 权限管理保护配置模板或标签时，可以选择随后在用户、管理员或配置的服务选择模板或标签时会自动应用的使用权限。 例如，在 Azure 门户中，可以选择配置使用权限逻辑分组的角色，或者可以配置单个权限。
 
@@ -42,7 +42,7 @@ ms.locfileid: "56260011"
 |公用名称：**编辑内容、编辑** <br /><br />策略中的编码：**DOCEDIT**|允许用户对应用程序中的内容进行修改、重新排列、设置格式或排序。 它不会授权保存编辑过的副本。<br /><br />在 Word 中，除非 Office 365 专业增强版的最低版本为 [1807](https://docs.microsoft.com/officeupdates/monthly-channel-2018#version-1807-july-25)，否则此权限不足，无法启用或禁用“跟踪更改”，也无法以审阅者身份使用所有跟踪更改功能。 相反，必须具有以下权限才能使用所有跟踪更改选项：**完全控制**。 |Office 自定义权限：作为“更改”  和“完全控制”  选项的一部分。 <br /><br />Azure 经典门户中的名称：**编辑内容**<br /><br />Azure 门户中的名称：**编辑内容、编辑 (DOCEDIT)**<br /><br />AD RMS 模板中的名称：**编辑** <br /><br />API 常量或值：不适用。|
 |公用名称：**保存** <br /><br />策略中的编码：**EDIT**|允许用户将文档保存到当前位置。<br /><br />在 Office 应用程序中，如果所选文件格式以本机方式支持 Rights Management 保护，则此权限还允许用户修改文档并以新名称将其保存到新位置。 文件格式限制可确保无法从文件中删除原始保护。|Office 自定义权限：作为“更改”  和“完全控制”  选项的一部分。 <br /><br />Azure 经典门户中的名称：**保存文件**<br /><br />Azure 门户中的名称：**保存 (EDIT)**<br /><br />AD RMS 模板中的名称：**保存** <br /><br />API 常量或值：`IPC_GENERIC_WRITE L"EDIT"`|
 |公用名称：**注释** <br /><br />策略中的编码：**COMMENT**|启用向内容添加批注或注释的选项。<br /><br />此权限可用于 SDK、在 AzureInformationProtection 和适用于 Windows PowerShell 的 RMS 保护模块中作为即席策略提供，并且已在一些软件供应商应用程序中实现。 但是，它尚未广泛使用，并且当前也不受 Office 应用程序支持。|Office 自定义权限：未实现。 <br /><br />Azure 经典门户中的名称：未实现。<br /><br />Azure 门户中的名称：未实现。<br /><br />AD RMS 模板中的名称：未实现。 <br /><br />API 常量或值：`IPC_GENERIC_COMMENT L"COMMENT`|
-|公用名称：**另存为、导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 <br /><br />对于 Office 文档和 Azure 信息保护客户端，文件可在不受保护的情况下进行保存，也可使用新设置和权限重新保护。 这些允许的操作意味着，具有此权限的用户可以从受保护的文档或电子邮件对 Azure 信息保护标签进行更改或删除。 <br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote” 。<br /><br /> 注意：如果未授予此权限，并且如果所选的文件格式以本机方式支持 Rights Management 保护，则 Office 应用程序允许用户将文档另存为一个新的名称。|Office 自定义权限：作为“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**导出内容（另存为）** <br /><br />Azure 门户中的名称：**另存为、导出 (EXPORT)**<br /><br />AD RMS 模板中的名称：**导出（另存为）** <br /><br />API 常量或值：`IPC_GENERIC_EXPORT L"EXPORT"`|
+|公用名称：**另存为、导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 <br /><br />对于 Azure 信息保护客户端，文件可在不受保护的情况下进行保存，也可使用新设置和权限重新保护。 这些允许的操作意味着，具有此权限的用户可以从受保护的文档或电子邮件对 Azure 信息保护标签进行更改或删除。 <br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote” 。|Office 自定义权限：作为“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**导出内容（另存为）** <br /><br />Azure 门户中的名称：**另存为、导出 (EXPORT)**<br /><br />AD RMS 模板中的名称：**导出（另存为）** <br /><br />API 常量或值：`IPC_GENERIC_EXPORT L"EXPORT"`|
 |公用名称：**转发** <br /><br />策略中的编码：**FORWARD**|启用此选项以转发电子邮件，并将收件人添加到“收件人”  和“抄送”  行。 此权限不适用于文档；仅适用于电子邮件。<br /><br />不允许转发器授予其他用户权限作为转发操作的一部分。 <br /><br />授予此权限时，同时授予“编辑内容，编辑”权限（通用名称），另外授予“保存”权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者，对于组织内无需使用 Azure Rights Management 服务的用户来说，也需要此权限，因为你已实施了[载入控件](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)。|Office 自定义权限：使用“不得转发”  标准策略时拒绝。<br /><br />Azure 经典门户中的名称：**转发**<br /><br />Azure 门户中的名称：**转发 (FORWARD)**<br /><br />AD RMS 模板中的名称：**转发** <br /><br />API 常量或值：`IPC_EMAIL_FORWARD L"FORWARD"`|
 |公用名称：**完全控制** <br /><br />策略中的编码：**OWNER**|授予对文档的所有权限，并且所有可用操作都可以执行。<br /><br />包括删除保护和重新保护文档的功能。 <br /><br />请注意，此使用权限不等同于[权限管理所有者](#rights-management-issuer-and-rights-management-owner)。|Office 自定义权限：作为“完全控制”  自定义选项。<br /><br />Azure 经典门户中的名称：**完全控制**<br /><br />Azure 门户中的名称：**完全控制 (OWNER)**<br /><br />AD RMS 模板中的名称：**完全控制** <br /><br />API 常量或值：`IPC_GENERIC_ALL L"OWNER"`|
 |公用名称：**打印** <br /><br />策略中的编码：**PRINT**|启用打印内容的选项。|Office 自定义权限：作为自定义权限中的“打印内容”  选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**打印**<br /><br />Azure 门户中的名称：**打印 (PRINT)**<br /><br />AD RMS 模板中的名称：**打印** <br /><br />API 常量或值：`IPC_GENERIC_PRINT L"PRINT"`|

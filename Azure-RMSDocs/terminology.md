@@ -4,19 +4,19 @@ description: 对 Microsoft Azure 信息保护相关的单词、短语或缩略�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/01/2019
+ms.date: 03/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b94a08a1201f3bedfcaa8264a75e30f2bb77232d
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 5fd820cb189d21d6d4b848547ad4eaafd42d5b96
+ms.sourcegitcommit: 1dec4a5884ee070cd5351ec229575f04f6eef7b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56255133"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57206495"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 
@@ -30,20 +30,21 @@ ms.locfileid: "56255133"
 |激活|启用 Azure 权限管理服务，使组织可以保护其文档和电子邮件。 此操作还会在 Exchange Online 和 SharePoint Online 中启用 IRM 功能。|
 |Active Directory 权限管理服务|经常缩写为 AD RMS。<br /><br />一个 Windows Server 角色，它使用加密和策略来提供权限管理保护以帮助保护文档、文件和电子邮件。|
 |AD RMS|请参阅 *Active Directory Rights Management 服务*。|
-AzureInformationProtection|Azure 信息保护客户端的 PowerShell 模块名称。
+AzureInformationProtection|Azure 信息保护客户端和 Azure 信息保护统一标记客户端的 PowerShell 模块的名称。
 |Azure 信息保护|一项基于云的服务，使用标签对文档和电子邮件进行分类和保护。 Azure 权限管理通过使用加密、标识和授权策略提供保护。|
 Azure 信息保护客户端|Azure 信息保护客户端，便于用户、管理员和服务使用 Azure 信息保护策略中的标签和设置。|
-|Azure 信息保护标签|此项将分类值应用于文档和电子邮件，并可以视需要保护这些内容。|
+|Azure 信息保护标签|此项始终将分类值应用于文档和电子邮件，并可以保护这些内容。 应用标签时，标签信息存储在元数据中，供应用程序和服务读取，并可选择对其进行操作。|
 |Azure 信息保护策略|管理员定义的配置，便于客户端和服务使用 Azure 信息保护标签和策略设置。|
 |Azure 信息保护扫描程序|在 Windows Server 上运行的一项服务，便于你发现、分类和保护本地文件夹、网络共享以及 SharePoint Server 网站和库中的文档。|
+|Azure 信息保护统一标识客户端|目前处于预览状态：Windows 计算机的客户端，允许用户、管理员和服务使用 Office 365 安全性和符合性的敏感度标签和策略设置。|
+|Azure RMS|请参阅 *Azure Rights Management*。|
 |Azure 信息保护查看器|在 Windows 计算机和移动设备上运行的应用，用于显示受保护文件。|
 |Azure 权限管理|经常缩写为 Azure RMS。<br /><br />Azure 信息保护使用的一种 Azure 服务，它使用加密和策略来帮助保护文档、文件和电子邮件。  也称为 *Azure Rights Management 服务*。 之前的名称包括：<br /><br />- Windows Azure Active Directory Rights Management：常缩写为 Windows Azure AD Rights Management Service。<br /><br />- RMS Online：原始的建议名称，有时可能在错误消息和日志文件条目中看到。|
-|Azure RMS|请参阅 *Azure Rights Management*。|
 |默认模板|在你获取 Azure 信息保护订阅时自动为你创建的保护模板，便于你立即开始保护包含敏感信息的文档和电子邮件。|
 |BYOK|请参阅 *自带密钥*。|
 |自带密钥|经常缩写为 *BYOK*。<br /><br />想要为 Azure 信息保护生成和管理自己的租户密钥的组织选择的配置和拓扑选项。|
 |内容密钥|启用 RMS 的应用程序为使用 Rights Management 保护的每个文档或电子邮件创建的唯一密钥，有助于遏制信息泄漏的风险。|
-|使用|打开受 Rights Management 保护的文档或电子邮件，以读取或使用其中内容。 对于文档，使用内容包括编辑内容和向受保护文档添加新内容。 对于电子邮件，使用内容包括回复受保护邮件。|
+|使用|仅在保护相关上下文中：打开受 Rights Management 服务保护的文档或电子邮件，以读取或使用其中内容。 对于文档，使用内容包括编辑内容和向受保护文档添加新内容。 对于电子邮件，使用内容包括回复受保护邮件。<br /><br />在标记上下文中（有或没有保护）：读取并可能对存储在文件和电子邮件元数据中的标签信息进行操作。|
 |停用|禁用权限管理服务，使组织不再能够使用 Azure 信息保护。|
 |部门模板|你创建的保护模板，配置为向选定用户（而不是组织中的所有用户）显示。 亦称为“范围内模板”。|
 |启用的应用程序|原本就支持权限管理的应用程序，包括 Word 和 Excel 等 Office 应用程序。 独立软件供应商 (ISV) 和开发商也可以编写本身支持 Rights Management 的应用程序。|

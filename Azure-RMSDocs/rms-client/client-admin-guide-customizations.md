@@ -4,19 +4,19 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/27/2019
+ms.date: 03/06/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 59395fe48eff2a3b1df0ae25dded1a66af9f453f
-ms.sourcegitcommit: f19ee03fd3f6f39df1a28ab389b43fbd8f9e9072
+ms.openlocfilehash: 48280e4654d9ab5ce999dcc934791ff408ca5691
+ms.sourcegitcommit: 503b8330efbecfc4dce204ffe036a7911a35691d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56891088"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57379944"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -50,12 +50,17 @@ ms.locfileid: "56891088"
 |CompareSubLabelsInAttachmentAction|[启用子标签的排序支持](#enable-order-support-for-sublabels-on-attachments) 
 |EnableBarHiding|[永久隐藏 Azure 信息保护栏](#permanently-hide-the-azure-information-protection-bar)|
 |EnableCustomPermissions|[设置用户是否能够使用自定义权限选项](#make-the-custom-permissions-options-available-or-unavailable-to-users)|
+|EnableCustomPermissionsForCustomProtectedFiles|[对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) |
 |EnablePDFv2Protection|[不使用 PDF 加密 ISO 标准来保护 PDF 文件](#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
 |LabelbyCustomProperty|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |LabelToSMIME|[将标签配置为在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook)|
 |日志级别|[更改本地日志记录级别](#change-the-local-logging-level)
+|OutlookBlockUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
+|OutlookCollaborationTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookDefaultLabel|[为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook)|
+|OutlookJustifyUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookRecommendationEnabled|[在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)|
+|OutlookWarnUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |PostponeMandatoryBeforeSave|[使用强制标签时，删除文档的“以后再说”](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
 |ProcessUsingLowIntegrity|[禁用扫描程序的低完整性级别](#disable-the-low-integrity-level-for-the-scanner)|
 |PullPolicy|[对已断开连接计算机的支持](#support-for-disconnected-computers)
@@ -205,6 +210,19 @@ ms.locfileid: "56891088"
 
 - Value：结果为 True 将使自定义权限选项可用，结果为 False 将隐藏此选项
 
+## <a name="for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer"></a>对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 设置处于预览状态并需要预览版本的客户端。
+
+配置[策略设置](../configure-policy-settings.md)时，为用户或上一部分中的同等高级客户端设置提供自定义权限选项，用户无法查看或更改已在受保护文档中设置的自定义权限。 
+
+创建和配置此高级客户端设置时，用户可以在使用文件资源管理器时查看和更改受保护文档的自定义权限，然后右键单击该文件。 Office 功能区上的“保护”按钮中的“自定义权限”选项仍处于隐藏状态。
+
+若要配置此高级设置，请输入以下字符串：
+
+- 注册表项：**EnableCustomPermissionsForCustomProtectedFiles**
+
+- Value：**True**
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>永久隐藏 Azure 信息保护栏
 
@@ -250,6 +268,98 @@ ms.locfileid: "56891088"
 
 - Value：**True**
 
+## <a name="implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent"></a>在 Outlook 中实施弹出消息，警告、证明或阻止发送电子邮件
+
+此配置使用必须在 Azure 门户中配置的多项[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 此配置处于预览状态，并且可能会更改。
+
+当创建并配置以下高级客户端设置时，用户可以在 Outlook 中看到弹出消息，这些消息可以在发送电子邮件之前警告他们，或者要求他们提供发送电子邮件的理由，或者在存在以下任何一种情况时阻止他们发送电子邮件：
+
+- **其电子邮件或电子邮件附件有一个特定的标签**：
+    - 附件可以是任何文件类型
+
+- **电子邮件或电子邮件的附件没有标签**：
+    - 附件可以是 Office 文档或 PDF 文档
+
+如果存在以上情况且收件人的电子邮件地址未包含在指定的允许域名列表中，用户会看到一条弹出消息，其中包含以下操作之一：
+
+- **警告**：用户可以确认、发送或取消。
+
+- **验证**：提示用户说明理由（预定义选项或自由格式）。  然后，用户可以发送或取消电子邮件。 说明理由的文本被写入电子邮件 x - 标头，以便其他系统可以读取。 例如，数据丢失防护 (DLP) 服务。
+
+- **阻止**：如果上述情况持续，将阻止用户发送电子邮件。 该消息包括阻止电子邮件的原因，以便用户可以解决问题。 例如，删除特定收件人或标记电子邮件。 
+
+
+### <a name="to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels"></a>若要针对特定标签实现用于警告、验证或阻止的弹出消息：
+
+若要针对特定标签实现弹出消息，必须知道这些标签的标签 ID。 在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值将显示在“标签”边栏选项卡上。 对于应用了标签的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 标识标签 ID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 ID。
+
+使用以下键创建以下一个或多个高级客户端设置。 对于值，请按 ID 指定一个或多个标签，每个标签用逗号分隔。
+
+多个标签 ID 的示例值，采用以逗号分隔的字符串形式：`dcf781ba-727f-4860-b3c1-73479e31912b,1ace2cc3-14bc-4142-9125-bf946a70542c,3e9df74d-3168-48af-8b11-037e3021813f`
+
+
+- 警告消息：
+    
+    - 注册表项：**OutlookWarnUntrustedCollaborationLabel**
+    
+    - 值：\<标签 ID，以逗号分隔>
+
+- 对齐消息：
+    
+    - 注册表项：**OutlookJustifyUntrustedCollaborationLabel**
+    
+    - 值：\<标签 ID，以逗号分隔>
+
+- 阻止邮件：
+    
+    - 注册表项：**OutlookBlockUntrustedCollaborationLabel**
+    
+    - 值：\<标签 ID，以逗号分隔>
+
+
+### <a name="to-implement-the-warn-justify-or-block-pop-up-messages-for-emails-or-attachments-that-dont-have-a-label"></a>若要针对没有标签的电子邮件或附件实现用于警告、验证或阻止的弹出消息：
+
+使用以下值之一创建高级客户端设置：
+
+- 警告消息：
+    
+    - 注册表项：**OutlookUnlabeledCollaborationAction**
+    
+    - Value：**警告**
+
+- 对齐消息：
+    
+    - 注册表项：**OutlookUnlabeledCollaborationAction**
+    
+    - Value：**两端对齐**
+
+- 阻止邮件：
+    
+    - 注册表项：**OutlookUnlabeledCollaborationAction**
+    
+    - Value：**阻止**
+
+- 关闭这些消息：
+    
+    - 注册表项：**OutlookUnlabeledCollaborationAction**
+    
+    - Value：**关闭**
+
+### <a name="to-specify-the-allowed-domain-names-for-recipients-exempt-from-the-pop-up-messages"></a>为收件人指定允许的域名，免除弹出消息
+
+在高级客户端设置中指定域名时，用户不会看到针对电子邮件地址中包含该域名的收件人的弹出消息。 在这种情况下，发送电子邮件时不会受消息干扰。 若要指定多个域，将其添加为单个字符串，以逗号分隔。
+
+典型配置是仅针对组织外部的收件人或并非组织授权合作伙伴的收件人显示弹出消息。 在这种情况下，可以指定组织和合作伙伴使用的所有电子邮件域。
+
+创建以下高级客户端设置密钥。 对于值，请指定一个或多个域，每个域用逗号分隔。
+
+多个域的示例值，以逗号分隔的字符串表示：`contoso.com,fabrikam.com,litware.com`
+
+- 注册表项：**OutlookCollaborationTrustedDomains**
+
+- 值：\<域名，以逗号分隔>
+
+例如，如果指定 contoso.com 的域名，则用户在向 john@sales.contoso.com 发送电子邮件时不会在 Outlook 中看到弹出消息。
 
 ## <a name="set-a-different-default-label-for-outlook"></a>为 Outlook 设置不同的默认标签
 
@@ -356,6 +466,8 @@ dcf781ba-727f-4860-b3c1-73479e31912b 的标签 ID 示例值：
 要使 Azure 信息保护扫描程序使用新设置，必须重启扫描程序服务。 此外，在默认情况下，扫描程序将不再保护 PDF 文档。 如果想要 PDF 文档在 EnablePDFv2Protection 设置为 False 时受扫描程序保护，则必须[编辑注册表](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner)。
 
 有关新 PDF 加密的详细信息，请参阅博客文章[使用 Microsoft 信息保护进行 PDF 加密的新支持](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)。
+
+有关支持用于 PDF 加密的 ISO 标准的 PDF 阅读器以及支持旧格式的阅读器的列表，请参阅[用于 Microsoft 信息保护的受支持的 PDF 阅读器](protected-pdf-readers.md)。
 
 ### <a name="to-convert-existing-ppdf-files-to-protected-pdf-files"></a>将现有的 .ppdf 文件转换为受保护的 .pdf 文件
 
