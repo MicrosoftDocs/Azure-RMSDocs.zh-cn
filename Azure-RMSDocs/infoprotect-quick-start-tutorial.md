@@ -8,12 +8,12 @@ ms.date: 02/29/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 75ba59498918ecb2d987e2fe794c624f8f340498
-ms.sourcegitcommit: d1aac7dc96f5986511f73ec035400954be24e723
+ms.openlocfilehash: 5a9c1ebae0678125c19fd35ce4c5275aa056ce45
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57017228"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57829019"
 ---
 # <a name="tutorial-edit-the-azure-information-protection-policy-and-create-a-new-label"></a>教程：编辑 Azure 信息保护策略并创建新标签
 
@@ -36,7 +36,7 @@ ms.locfileid: "57017228"
 
 1. 包含 Azure 信息保护计划 2 的订阅。
     
-    如果没有包含 Azure 信息保护计划 2 的订阅，可以为组织创建一个[免费](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
+    如果没有包含 Azure 信息保护计划 2 的订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
 
 2. 已将“Azure 信息保护”边栏选项卡添加到 Azure 门户，并确认已激活保护服务。
 

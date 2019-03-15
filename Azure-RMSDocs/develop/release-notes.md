@@ -12,12 +12,12 @@ ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 22dbe505020d7ed65318fcdc173a7e659791b606
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 2db27a558acd60fc1d3f6a05c1dda90d00baa3bb
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57332066"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57829070"
 ---
 # <a name="whats-new-and-release-notes"></a>新增功能和发行说明
 
@@ -33,7 +33,7 @@ ms.locfileid: "57332066"
 -   [2015 年 5 月更新 - 添加日志记录控制](#may-2015-update---adds-logging-control)
 -   [2015 年 2 月更新 - 添加 Windows 应用商店应用程序支持](#february-2015-update---adds-windows-store-application-support)
 -   [2015 年 1 月更新 - 添加 WinPhone 平台支持](#january-2015-update---adds-winphone-platform-support)
--   [2014 年 10 月更新 - 升级到 Microsoft RMS SDK 4.1](#october-2014-update---upgrade-to-microsoft-rms-sdk-4-1)
+-   [2014 年 10 月更新 - 升级到 Microsoft RMS SDK 4.1](#october-2014-update---upgrade-to-microsoft-rms-sdk-41)
 -   [发行说明](#release-notes)
 -   [常见问题](#frequently-asked-questions)
 
@@ -240,4 +240,3 @@ ms.locfileid: "57332066"
 **问**：示例应用程序框架经过调整以适应 Xcode 5，我能否使用 Xcode 4.6？
 
 **A**：OS X SDK 仅使用 Xcode 4.6 及更高版本以及 OS X 10.8 和更高版本。
-
