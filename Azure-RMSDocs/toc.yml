@@ -104,7 +104,7 @@ items:
     - name: 激活服务
       href: activate-service.md
       items:
-      - name: Office 365 管理中心
+      - name: Microsoft 365 管理中心
         href: activate-office365.md
       - name: Azure 门户
         href: activate-azure.md
@@ -419,9 +419,9 @@ items:
     href: https://docs.microsoft.com/powershell/azure/aip/overview?view=azureipps
   - name: 术语
     href: terminology.md
-ms.openlocfilehash: 7d50cf5d9796499808d14dfb7edcb6072be93d16
-ms.sourcegitcommit: 171a96af12a7e0364052d830dc14714b1bb1c95c
+ms.openlocfilehash: 5fa0ffe3bb86a058bd5d41b54b9cdfc25aa90620
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57734130"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57978230"
