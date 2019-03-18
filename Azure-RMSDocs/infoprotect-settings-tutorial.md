@@ -8,16 +8,16 @@ ms.date: 02/15/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: f906a5b9fc9f678d1f452e347fb3739b4ff96586
-ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
+ms.openlocfilehash: 6119c3baf0f3e6b89246d237c3328988b1e4c654
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56266074"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57828917"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
->适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 在本教程中，你将了解如何执行以下操作：
 > [!div class="checklist"]
@@ -38,7 +38,7 @@ ms.locfileid: "56266074"
 
 1. 包含 Azure 信息保护计划 1 或计划 2 的订阅。
     
-    如果没有包含此计划的订阅，可以为组织创建一个[免费](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
+    如果没有包含此计划的订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
 
 2. 已将“Azure 信息保护”边栏选项卡添加到 Azure 门户，并确认已激活保护服务。
 
