@@ -4,21 +4,21 @@ description: 可以自动将标签分配到文档或电子邮件的条件。 或
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/16/2019
+ms.date: 03/14/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: b7d0bf743d23083e2f9c6ca18044e26cb8c2ae6f
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: f8545491a527b8e502150cd83802b2868dd3a1da
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256560"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57829036"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
->适用于：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。 
 
@@ -32,7 +32,7 @@ ms.locfileid: "56256560"
 
 在此示例中，用户可以单击“立即更改”应用建议的标签，或通过选择“消除”来替代该建议。 如果用户选择消除建议并且在下一次打开文档时该条件仍然适用，会再次显示标签建议。
 
-如果你配置自动分类（而不是建议分类），系统自动应用标签，并且用户仍会在自己的 Office 应用中看到通知。 不过，“立即更改”和“关闭”按钮都替换为“确定”。
+如果配置自动分类（而不是建议分类），系统自动应用标签，并且用户仍会在自己的 Word、Excel 和 PowerPoint 中看到通知。 不过，“立即更改”和“关闭”按钮都替换为“确定”。 在 Outlook 中，自动分类无通知，且发送电子邮件时将应用标签。
 
 > [!IMPORTANT]
 >请勿为自动分类和用户定义的权限配置标签。 “用户定义的权限”选项是一个[保护设置](configure-policy-protection.md)，允许用户指定应向其授予权限的人员。

@@ -4,19 +4,19 @@ description: 管理员资源，其中包括有关新版本、支持选项以及�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/07/2019
+ms.date: 03/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5d73037a8aba25e7c15ca531241b90dcc92f6dcc
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 5ff687b812ac9c7d3253e284baeaca0b1de2e8e3
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258090"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57978213"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -53,7 +53,7 @@ Azure 信息保护产品团队在[企业移动性 + 安全性博客](https://tec
 |订阅|说明|
 |----------------|---------------|
 |Azure 信息保护（独立）|1.在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”。<br /><br />2.出现提示时，在“基础信息”边栏选项卡上，针对“问题类型”选择“技术”，然后针对服务选择“信息保护”。 <br /><br />3.此外，请确保选择了以下任一选项：<br /><br />- 包含技术支持的订阅：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - 技术支持 - 包含：如果没有 Azure 订阅，则会看到此选项。|
-|Azure 信息保护和 Office 365 订阅<br /><br />Office 365 订阅随附的 Azure 权限管理|请参阅[就业务产品联系支持 - 管理员帮助](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)，以了解有关如何使用 Office 365 管理门户与支持部门联系的信息，并获取联系人电话号码。|
+|Azure 信息保护和 Office 365 订阅<br /><br />Office 365 订阅随附的 Azure 权限管理|请参阅[就业务产品联系支持 - 管理员帮助](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)，以了解有关如何使用 Microsoft 365 管理中心与支持部门联系的信息，并获取联系人电话号码。|
 |企业移动性 + 安全性 (EMS) 随附的 Azure 信息保护|1.在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”。<br /><br />2.出现提示时，在“基础信息”边栏选项卡上，针对“问题类型”选择“技术”，然后针对服务选择“信息保护”。 <br /><br />3.此外，请确保选择了以下任一选项：<br /><br />- 包含技术支持的订阅：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - 技术支持 - 包含：如果没有 Azure 订阅，则会看到此选项。|
 |Microsoft 365 企业版随附的 Azure 信息保护|请使用 [Office 365 支持通道](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。|
 
@@ -61,8 +61,6 @@ Azure 信息保护产品团队在[企业移动性 + 安全性博客](https://tec
 
 
 ### <a name="self-help"></a>自助方式
-
-请尝试使用 [Azure 信息保护帮助机器人](help-bot.md)，当前为 beta 版本。
 
 动手实验室：请参阅 [Azure 信息保护动手实验室](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Hands-On-Lab/ba-p/265433)
 

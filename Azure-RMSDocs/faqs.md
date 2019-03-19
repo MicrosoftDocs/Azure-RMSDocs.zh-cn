@@ -4,19 +4,19 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/26/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4e7ffa1fa4121d7a0aecc4474d50497c7c300b1b
-ms.sourcegitcommit: 55782e58508051f0ecf460e8b126f70ab9b9ceec
+ms.openlocfilehash: 6a68d7f550a773016b552b380bb42f596720f250
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56756141"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57828476"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -48,7 +48,7 @@ ms.locfileid: "56756141"
 
 ## <a name="when-is-the-right-time-to-migrate-my-labels-to-office-365"></a>何时将我的标签迁移到 Office 365？
 
-Office 365 安全与合规中心中的敏感度标签已正式发布，但迁移 Azure 信息保护标签的选项仍处于预览状态。 将标签迁移到统一标签存储后，可以发布这些标签，然后由[支持统一标签的客户端](configure-policy-migrate-labels.md#clients-that-support-unified-labeling)下载。 目前，并非所有客户端都支持统一标签或已公开发布。
+Office 365 安全与合规中心中的敏感度标签已正式发布，但迁移 Azure 信息保护标签的选项仍处于预览状态。 将标签迁移到统一标签存储后，可以发布这些标签，然后由[支持统一标签的客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)使用。 目前，并非所有客户端都支持统一标签或已公开发布。
 
 我们建议首先使用测试租户测试预览功能，然后再迁移生产租户。 此外：
 
@@ -68,11 +68,11 @@ Office 365 安全与合规中心中的敏感度标签已正式发布，但迁移
 
 在 Azure 门户中迁移标签后：
 
-- 如果拥有[统一标签客户端](configure-policy-migrate-labels.md#clients-that-support-unified-labeling)，请转至 Office 365 安全与合规中心以发布这些标签，并为统一标签客户端配置策略设置。 对于未来的标签更改，请使用安全与合规中心。 统一标签客户端从安全与合规中心下载标签和策略设置。
+- 如果拥有[统一标签客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)，请转至 Office 365 安全与合规中心以发布这些标签，并为其配置策略设置。 对于未来的标签更改，请使用安全与合规中心。 统一标签客户端从安全与合规中心下载标签和策略设置。
 
 - 如果拥有 [Azure 信息保护客户端](./rms-client/aip-client.md)，请继续使用 Azure 门户编辑标签和策略设置。 Azure 信息保护客户端继续从 Azure 下载标签和策略设置。
 
-- 如果同时拥有[统一标签客户端](configure-policy-migrate-labels.md#clients-that-support-unified-labeling)和 [Azure 信息保护客户端](./rms-client/aip-client.md)，则可以使用任一门户进行标签更改。 但是，要使 Azure 信息保护客户端选择你在安全与合规中心中所做的标签更改，则必须返回 Azure 门户：使用 Azure 门户中“Azure 信息保护 - 统一标签”边栏选项卡的“发布”选项。 
+- 如果同时拥有[统一标签客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)和 [Azure 信息保护客户端](./rms-client/aip-client.md)，则可以使用任一门户进行标签更改。 但是，要使 Azure 信息保护客户端选择你在安全与合规中心中所做的标签更改，则必须返回 Azure 门户：使用 Azure 门户中“Azure 信息保护 - 统一标签”边栏选项卡的“发布”选项。 
 
 继续使用 Azure 门户进行[集中报告](reports-aip.md)和[扫描程序](deploy-aip-scanner-preview.md)。
 
@@ -194,7 +194,9 @@ Windows Server 文件分类基础结构在过去一直都有一个选项：对�
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>听说很快将发布新版 Azure 信息保护 — 何时发布？
 
-本技术文档不包含即将发布的版本的相关信息。 有关此类信息和发布公告，请查看 [Enterprise Mobility and Security Blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity?product=azure-information-protection,azure-rights-management-services)（企业移动性和安全性博客）并在 Twitter 上从 [MicrosoftMobility@MSFTMobility](https://twitter.com/MSFTMobility) 了解最新更新。 如果你对 Office 版本感兴趣，还请务必查看 [Office 365 博客](https://techcommunity.microsoft.com/t5/Office-365-Blog/bg-p/Office365Blog)和 [Office 应用博客](https://techcommunity.microsoft.com/t5/Office-Apps-Blog/bg-p/OfficeAppsBlog)。
+本技术文档不包含即将发布的版本的相关信息。 有关此类信息和发布公告，请查看[企业移动性 + 安全性博客](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity?product=azure-information-protection,azure-rights-management-services)。
+
+如果你对 Office 版本感兴趣，还请务必查看 [Office 365 博客](https://techcommunity.microsoft.com/t5/Office-365-Blog/bg-p/Office365Blog)和 [Office 应用博客](https://techcommunity.microsoft.com/t5/Office-Apps-Blog/bg-p/OfficeAppsBlog)。
 
 ## <a name="is-azure-information-protection-suitable-for-my-country"></a>Azure 信息保护是否适用于我所在的国家/地区？
 
@@ -210,8 +212,6 @@ Windows Server 文件分类基础结构在过去一直都有一个选项：对�
 ## <a name="how-can-i-report-a-problem-or-send-feedback-for-azure-information-protection"></a>如何针对 Azure 信息保护报告问题或发送反馈？
 
 若要获取技术支持，请使用标准支持渠道或[联系 Microsoft 支持](information-support.md#to-contact-microsoft-support)。
-
-有关改进建议或新功能的反馈，请参阅：在 Office 应用程序中，在“主页”选项卡的“保护”组中单击“保护”，然后单击“帮助和反馈”。 在“Microsoft Azure 信息保护”对话框中，单击“发送反馈”。 选择此选项将打开一封要发送到信息保护团队的电子邮件。
 
 我们还邀请你加入我们的工程团队：[Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/)。 
 

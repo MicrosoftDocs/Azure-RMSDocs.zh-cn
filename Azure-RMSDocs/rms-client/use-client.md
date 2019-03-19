@@ -4,22 +4,22 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/26/2019
+ms.date: 03/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
 ms.suite: ems
-ms.openlocfilehash: 5d49a1ad6bed86b6041b66feb3017b716584c5b7
-ms.sourcegitcommit: 55782e58508051f0ecf460e8b126f70ab9b9ceec
+ms.openlocfilehash: 9cb472280160919be93745fe7ff50f05e036f301
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56756209"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57829087"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
->适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的文档和电子邮件：
 
@@ -52,11 +52,11 @@ Azure 信息保护统一标记客户端从 Office 365 安全与合规中心下�
 |功能|Azure 信息保护客户端|Azure Information Protection<br /> 统一标记客户端|
 |-------|-----------------------------------|----------------------------------------------------|
 |标记操作：手动、建议、自动| 是 | 是 |
-|Office 应用程序中的“信息保护”栏<br />（带可自定义的工具提示）：| 是 | 是|
 |中心报告（分析）：| 是 | 是 |
 |重置设置和导出日志：| 是 | 是 |
 |用户定义的权限：| 是 | 仅适用于 Outlook（不要转发） |
 |自定义权限：| 是 | 仅文件资源管理器 <br /><br /> 在 Office 应用程序中，作为替代方法，用户可以选择“文件信息” > “保护文档” > “限制访问” |
+|Office 应用中的“信息保护”栏：| 是 | 是；但具有限制：<br /><br /> - 无标题或可自定义的工具提示<br /><br /> - 应用的标签未显示标签颜色|
 |文件资源管理器，右键单击操作：| 是 | 是；但具有限制：<br /><br /> - 无法保护 .ppdf 格式的 PDF 文档 <br /><br />  - 不支持仅保护模式|
 |受保护文件的查看器：| 是 | 是；但具有限制：<br /><br /> - 对于通用受保护文件 (.pfile)，无法将更改保存到最初打开的文件，这一点与 Azure 信息保护客户端中的查看器不同。|
 |PowerShell 命令：| 是 | 是；但具有限制：<br /><br />- 包含以下 Cmdlet：[Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)、[Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)、[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)、[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) <br /><br />- 不包括直接连接到保护服务的 Cmdlet|
@@ -64,11 +64,12 @@ Azure 信息保护统一标记客户端从 Office 365 安全与合规中心下�
 |HYOK 支持：| 是 | 否<br /><br /> 从 Azure 门户迁移的标签以及为 HYOK 保护配置的标签通过 Azure 信息保护统一标记客户端显示，但不应用保护。 |
 |事件查看器的使用情况日志记录：| 是 | 否|
 |来自电子邮件附件的标签继承：| 是 | 否 |
-|在 Outlook 中显示“不要转发”按钮| 是 | 否 |
+|在 Outlook 中显示“不可转发”按钮| 是 | 否 |
 |包括以下内容的[自定义项](client-admin-guide-customizations.md#available-advanced-client-settings)：<br />- 电子邮件的默认标签<br />- 启用自定义权限 <br />- S/MIME 支持<br />- 报告问题选项| 是 | 否 |
 |本地数据存储的扫描程序：| 是 | 否 |
 |跟踪和撤销：| 是 | 否 |
 |仅保护模式（无标签）：| 是 | 否 |
+|Outlook 中的“不可转发”按钮：| 是 | 否 |
 |多语言支持：| 是 | 否 |
 |对 AD RMS 的支持：| 是 | 仅支持以下操作：<br /><br /> - 查看器可以打开受保护的文档|
 
@@ -81,13 +82,46 @@ Azure 信息保护统一标记客户端从 Office 365 安全与合规中心下�
 |安装：| 安装本地演示策略的选项 | 没有本地演示策略|
 |在 Office 应用程序中应用时的标签选择和显示：|通过功能区上的“保护”按钮 <br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|通过功能区上的“敏感度”按钮<br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|
 |在 Office 应用程序中管理“信息保护”栏：|面向用户： <br /><br />- 从功能区上的“保护”按钮选择显示或隐藏栏<br /><br />- 如果用户选择隐藏栏，默认情况下，该栏在应用程序中隐藏，但会继续自动显示在新打开的应用程序中 <br /><br /> 面向管理员： <br /><br />- 在应用程序首次打开时，通过策略设置自动显示或隐藏栏，并控制在用户选择隐藏栏后，该栏是否对新打开的应用程序自动保持隐藏状态|面向用户： <br /><br />- 从功能区上的“敏感度”按钮选择显示或隐藏栏<br /><br />- 当用户选择隐藏栏时，该栏在该应用程序中以及新打开的应用程序中均处于隐藏状态 <br /><br />面向管理员： <br /><br />- 没有可用于管理栏的策略设置|
-|标签颜色： | 在 Azure 门户中配置 | 在标签迁移到 Office 365 后保留 <br /><br /> 在安全与合规中心中创建的新标签默认为黑色|
+|标签颜色： | 在 Azure 门户中配置 | 在标签迁移到 Office 365 后保留 <br /><br /> 在安全与合规中心中创建的新标签没有颜色|
 |策略更新： | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 24 小时一次 | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 4 小时一次|
 |PDF 支持的格式：| 保护: <br /><br /> - PDF 加密的 ISO 标准（默认） <br /><br /> - .ppdf <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护| 保护: <br /><br /> - PDF 加密的 ISO 标准 <br /><br /> <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护|
 |支持的 cmdlet：| [AzureInformatioProtection](/powershell/module/azureinformationprotection) 记录的所有 cmdlet | Set-AIPFileClassification 和 Set-AIPFileLabel 不支持 Owner 参数或 SharePoint Server 库 <br /><br /> 此外，对于未应用标签的所有场景，都有一条“无适用标签”的注释 <br /><br /> Set-AIPFileLabel 不支持 EnableTracking 参数 <br /><br /> Get-AIPFileStatus 不从其他租户返回标签信息，也不显示 RMSIssuedTime 参数<br /><br />另外，Get-AIPFileStatus 的 LabelingMethod  参数显示“特权”、“标准”或“自动”，而不显示“手动”或“自动”。 有关详细信息，请参阅[联机文档](/powershell/module/azureinformationprotection/get-aipfilestatus)。|
 |Office 中每个操作的对齐方式提示（如果已配置）： | 频率:每个文件 <br /><br /> 降低敏感度级别 <br /><br /> 删除标签<br /><br /> 删除保护 | 频率:每个会话 <br /><br /> 降低敏感度级别<br /><br /> 删除标签|
-|删除标签操作： | 系统提示用户确认 <br /><br />下次 Office 应用程序打开文件时，不会自动应用默认标签或自动标签（如果已配置）  <br /><br />| 不提示用户确认<br /><br /> 下次 Office 应用程序打开文件时，自动应用默认标签或自动标签（如果已配置）|
+|删除已应用的标签操作： | 系统提示用户确认 <br /><br />下次 Office 应用程序打开文件时，不会自动应用默认标签或自动标签（如果已配置）  <br /><br />| 不提示用户确认<br /><br /> 下次 Office 应用程序打开文件时，自动应用默认标签或自动标签（如果已配置）|
 |自动分类和建议分类： | 在 Azure 门户中配置为[标签条件](../configure-policy-classification.md)，其中包含使用短语或正则表达式的内置信息类型和自定义条件 <br /><br />配置选项包括： <br /><br />- 唯一/非唯一计数 <br /><br /> - 最小计数| 在安全与合规中心中配置，包含内置敏感信息类型和[自定义信息类型](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type)<br /><br />配置选项包括：  <br /><br />- 仅唯一计数 <br /><br />- 最小和最大计数 <br /><br />- 信息类型支持 AND 和 OR <br /><br />- 关键字字典<br /><br />- 可自定义的可信度和字符接近度|
+
+#### <a name="features-that-will-not-be-in-the-azure-information-protection-unified-labeling-client"></a>不属于 Azure 信息保护统一标签客户端的功能
+
+尽管 Azure 信息保护统一标签客户端仍处于开发阶段，但以下不同于 Azure 信息保护客户端的功能和行为，将不再于 Azure 信息保护统一标签客户端的未来发布中推出： 
+
+- 在以下 Office 应用中自定义权限：Word、Excel 和 PowerPoint
+
+- 从 Office 应用和文件资源浏览器中跟踪和撤销
+
+- Azure 信息保护栏标题和工具提示
+
+- PowerShell 和文件资源浏览器中的保护操作的脱机支持
+
+- 仅保护模式（无标签）
+
+- 将 PDF 文档作为 .ppdf 格式进行保护
+
+- 在 Outlook 中显示“不可转发”按钮
+
+- 演示策略
+
+- 对删除保护的验证
+
+- 删除应用的标签之前的确认提示
+
+- “帮助和反馈”对话框中的“报告问题”链接
+
+- 使用现有自定义属性（SyncPropertyName 和 SyncPropertyState 高级客户端设置）标记 Office 文档
+
+- 连接到 Rights Management 服务的单独 PowerShell cmdlet
+
+- AD RMS 仅保护模式
+
 
 ##### <a name="parent-labels-and-their-sublabels"></a>父标签及其子标签 
 

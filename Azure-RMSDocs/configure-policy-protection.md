@@ -4,21 +4,21 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/05/2019
+ms.date: 03/14/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 110cf52834ef7c2075539f15238c738aa61a16f7
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 0057677890de2a771e93cc2f843623bbd780c31a
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57332304"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57978145"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 可通过使用 Rights Management 服务保护最敏感的文档和电子邮件。 此服务使用加密、标识和身份验证策略，有助于防止数据丢失。 保护应用于配置为使用 Rights Management 保护文档和电子邮件的标签，用户还可以在 Outlook 中选择“不可转发”按钮。
 
@@ -62,16 +62,24 @@ ms.locfileid: "57332304"
     - **未配置**：如果标签当前配置为应用保护，而你不再需要所选的标签应用保护，请选择此选项。 然后转到步骤 11。
         
         先前配置的保护设置将保留为存档的保护模板，如果将选项更改回“保护”，则会再次显示。 Azure 门户中不会显示此模板，但如有需要，仍可通过 [PowerShell](configure-templates-with-powershell.md) 管理该模板。 这一行为表示，如果内容具有先前应用了保护设置的此标签，则仍可以访问该内容。
+        
+        当标签应用“未配置”保护设置时：
+        
+         - 如果内容之前未使用标签进行保护，则将保留该保护。 
+         
+         - 如果内容之前使用标签进行保护，如果用户应用的标签有权删除权限管理保护，则将删除该保护。 此要求意味着用户必须具有“导出”或“完全控制”[使用权限](configure-usage-rights.md)。 或者，成为权限管理所有者（自动授予完全控制使用权限）或者成为 [Azure 权限管理的超级用户](configure-super-users.md)。
+             
+             如果用户没有删除保护的权限，则无法应用标签且将显示以下消息：Azure 信息保护无法应用此标签。如果此问题仍然存在，请与管理员联系。 
     
     - **保护**：选择此选项应用保护，然后转到步骤 4。
     
     - **删除保护**：如果文档或电子邮件受到保护，选择此选项可删除保护。 然后转到步骤 11。
         
-        先前配置的保护设置将保留为存档的保护模板，如果将选项更改回“保护”，则会再次显示。 Azure 门户中不会显示此模板，但如有需要，仍可通过 [PowerShell](configure-templates-with-powershell.md) 管理该模板。 这一行为表示，如果内容具有先前应用了保护设置的此标签，则仍可以访问该内容。
+        如果使用标签或保护模板应用保护，则保护设置将保留为存档的保护设置，且如果将选项更改回“保护”，则会再次显示。 Azure 门户中不会显示此模板，但如有需要，仍可通过 [PowerShell](configure-templates-with-powershell.md) 管理该模板。 这一行为表示，如果内容具有先前应用了保护设置的此标签，则仍可以访问该内容。
         
-        请注意，用户必须具有删除 Rights Management 保护的权限，才能应用具有此选项的标签。 此要求意味着用户必须具有“导出”或“完全控制”[使用权](configure-usage-rights.md)。 或者，他们必须为 Rights Management 所有者（自动授予完全控制使用权限）或者为 [Azure 权限管理的超级用户](configure-super-users.md)。 默认 Azure 权限管理模板不包括允许用户删除保护的使用权限。 
+        请注意，用户必须具有删除权限管理保护的权限，才能成功应用具有此选项的标签。 此要求意味着用户必须具有“导出”或“完全控制”[使用权限](configure-usage-rights.md)。 或者，成为权限管理所有者（自动授予完全控制使用权限）或者成为 [Azure 权限管理的超级用户](configure-super-users.md)。 
         
-        如果用户不具有删除 Rights Management 保护的权限，并选择配置有此“删除保护”选项的标签，他们将会看到以下消息：Azure 信息保护无法应用此标签。 如果此问题仍然存在，请与管理员联系。
+        如果使用此设置应用标签的用户没有删除权限管理保护的权限，则无法应用标签且将显示以下消息：Azure 信息保护无法应用此标签。**如果此问题仍然存在，请与管理员联系。**
 
 4. 如果提前选中了“保护”，则会在选择其他选项之一时自动打开“保护”边栏选项卡。 如果新的边栏选项卡未自动打开，请选择“保护”：
     

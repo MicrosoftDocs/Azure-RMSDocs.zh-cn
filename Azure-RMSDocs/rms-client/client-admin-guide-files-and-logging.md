@@ -4,23 +4,23 @@ description: 适用于 Windows 的 Azure 信息保护客户端的客户端文件
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/23/2019
+ms.date: 03/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: abf4b87198f2997aa7a452d0c34931c55220ee5f
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 72e29d19ddbfc3189d498724fc8353829820ab4e
+ms.sourcegitcommit: f4fe64474999954e0c013c3901edbb3048670935
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56255064"
+ms.lasthandoff: 03/10/2019
+ms.locfileid: "57725743"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护客户端文件和客户端使用情况日志记录
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
+>适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 安装 Azure 信息保护客户端后，请了解文件所在位置并监控客户端的使用状况。
 
@@ -55,12 +55,18 @@ ms.locfileid: "56255064"
     - 设置标签（较高）：信息 ID 101
     
     - 删除标签：信息 ID 104
-   
-    - 建议提示：信息 105
+    
+    - 推荐的标签工具提示：信息 105
     
     - 应用自定义保护：信息 ID 201
     
     - 删除自定义保护：信息 ID 202
+    
+    - Outlook 警告消息：信息 ID 301
+    
+    - Outlook 验证消息：信息 ID 302
+    
+    - Outlook 阻止消息：信息 ID 303
     
     - 登录（可操作）：信息 ID 902
     
@@ -86,7 +92,9 @@ ms.locfileid: "56255064"
 
 - 自定义包括指定用户、组或组织[按编码名称排列的使用权](../configure-usage-rights.md#usage-rights-and-descriptions)的权限（若适用）
 
-若要了解保护服务的使用情况日志记录，请参阅[记录和分析 Azure 权限管理服务的使用情况](../log-analyze-usage.md)
+Outlook 警告、验证和阻止消息事件需要预览客户端和高级客户端设置。 有关详细信息，请参阅[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)。
+
+若要了解保护服务的使用情况日志记录，请参阅[记录和分析 Azure 权限管理服务的使用情况](../log-analyze-usage.md)。
 
 ## <a name="next-steps"></a>后续步骤
 现在你已识别了与 Azure 信息保护客户端关联的所有日志文件，若要了解支持此客户端所需的其他信息，请参阅以下内容：

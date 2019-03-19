@@ -4,19 +4,19 @@ description: 详细解说 Azure RMS 的工作原理、它使用的加密控件�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/01/2019
+ms.date: 03/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 87cd350077f42718a6bcd86a98e9f8f1f79eb53e
-ms.sourcegitcommit: 78cc0a94b38bf8c03808109b495e0952f2cdfbd4
+ms.openlocfilehash: a60fbf43056673674f07f7dd8517213072f78aec
+ms.sourcegitcommit: 171a96af12a7e0364052d830dc14714b1bb1c95c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57557640"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57734144"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
@@ -50,7 +50,13 @@ ms.locfileid: "57557640"
 
 ###### <a name="footnote-1"></a>脚注 1 
 
-当文件具有扩展名 .ppdf 或者是受保护的文本文件或图像文件（例如 .ptxt 或 .pjpg）时，Azure 信息保护客户端使用 256 位进行常规保护和本机保护。
+Azure 信息保护客户端在以下情况中使用 256 位：
+
+- 常规保护 (.pfile)。
+
+- 当文档受到 PDF 加密的 ISO 标准保护时，PDF 文档将受到本机保护，或者生成的受保护文档具有 .ppdf 文件扩展名。
+
+- 文本或映像文件（例如 .ptxt 或 .pjpg）的本机保护。
 
 ###### <a name="footnote-2"></a>脚注 2
 

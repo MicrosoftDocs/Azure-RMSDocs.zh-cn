@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 02de7c52f2b1bd14c99e94af4f49ce604ad5ee6f
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 09308370778ae066bb2a19d81a111958b5a02f22
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252414"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57828951"
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>使用 Windows PowerShell 管理 Azure Rights Management 服务
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
-是否需要使用 PowerShell 管理适用于 Azure 信息保护的 Azure 权限管理服务？ 如果所有配置都可以在 Azure 门户或 Office 365 门户中完成，则可能不需要。 但是，需要使用 PowerShell 进行某些高级配置，并且可能还需使用 PowerShell 以进行更高效的命令行控制和脚本编写。
+是否需要使用 PowerShell 管理适用于 Azure 信息保护的 Azure 权限管理服务？ 如果所有配置都可在 Azure 门户或 Microsoft 365 管理中心中完成，则可能不需要。 但是，需要使用 PowerShell 进行某些高级配置，并且可能还需使用 PowerShell 以进行更高效的命令行控制和脚本编写。
 
 下一部分中的表格包括一些使用 PowerShell 的高级配置方案。 如果不使用 PowerShell 也可完成配置，则此信息也包括在表中。
 

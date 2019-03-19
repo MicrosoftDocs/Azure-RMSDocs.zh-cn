@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 11ffa730-c5dc-4b6b-9c1e-c58eff8aafc2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ee88799e9dce56f7ea3f4c24c386d57f1478ff36
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: c8219221fe9b932e0d09901dccf496df5f83ef76
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56253126"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57828866"
 ---
 # <a name="preparing-the-environment-for-azure-rights-management-when-you-also-have-active-directory-rights-management-services-ad-rms"></a>在已有 Active Directory Rights Management Services (AD RMS) 的情况下，为 Azure Rights Management 准备环境
 
@@ -60,7 +60,7 @@ ms.locfileid: "56253126"
 > [!TIP]
 > 也可以使用 Windows PowerShell cmdlet [Disable-Aadrm](/powershell/module/aadrm/disable-aadrm) 来停用 Azure Rights Management 服务。
 
-#### <a name="to-deactivate-rights-management-from-the-office-365-admin-center"></a>从 Office 365 管理中心停用权限管理
+#### <a name="to-deactivate-rights-management-from-the-microsoft-365-admin-center"></a>从 Microsoft 365 管理中心停用权限管理
 
 1. 转到 Office 365 管理员的 [Rights Management 页](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx)。
     

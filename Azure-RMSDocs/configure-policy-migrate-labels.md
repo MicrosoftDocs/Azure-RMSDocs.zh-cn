@@ -4,27 +4,27 @@ description: 为支持统一标签的客户端将 Azure 信息保护标签迁移
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/12/2019
+ms.date: 03/14/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 27fe7dce81856140caf5e30451caabc3df9a2894
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: ed3c77df8da01a4b87b30875a315eac5c075b438
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254775"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57829053"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!IMPORTANT]
-> 此功能处于预览状态，并且将租户迁移到新平台。 迁移不可撤消。 新平台支持统一标签，以便你创建和管理的标签可由多个客户端和服务使用。
+> 此功能处于预览状态，并且将租户迁移到新平台。 迁移不可撤消。 新平台支持统一标签，因此你创建和管理的标签可以由支持 [Microsoft 信息保护解决方案](faqs.md#whats-the-difference-between-azure-information-protection-and-microsoft-information-protection)的客户端和服务使用。
 
-如果希望能够在 Office 365 安全与合规中心使用，则迁移标签，可以在其中发布标签，然后由[支持统一标签的客户端](#clients-that-support-unified-labeling)下载。 Azure 信息保护客户端将继续从 Azure 门户下载带有其 Azure 信息保护策略的标签。 
+如果想要将标签作为 Office 365 安全与合规中心中的 Office 365 敏感度标签使用，请迁移标签，并由[支持统一标签的客户端和服务](#clients-and-services-that-support-unified-labeling)使用。 迁移完成后，Azure 信息保护客户端将继续从 Azure 门户下载带有其 Azure 信息保护策略的标签。 
 
 在阅读有关如何迁移标签的详细说明之前，你可能会发现以下常见问题非常有用：
 
@@ -40,14 +40,14 @@ ms.locfileid: "56254775"
 
 如果未使用其中一个配置向这些用户授予对安全与合规中心的访问权限，则在迁移标记后将无法访问 Azure 门户中的标记和策略。
 
-迁移标记后，租户的全局管理员可以继续管理 Azure 门户和安全与合规中心中的标记和策略。
+迁移标签后，租户的全局管理员可以继续管理 Azure 门户和安全与合规中心中的标签和策略。
 
 
 ## <a name="considerations-for-unified-labels"></a>统一标签注意事项
 
 在迁移标签之前，请确保了解以下更改和注意事项：
 
-- 并非所有客户端目前都支持统一标签。 请确保你拥有[支持的客户端](#clients-that-support-unified-labeling)并准备好在 Azure 门户（适用于不支持统一标签的客户端）和安全与合规中心（适用于支持统一标签的客户端）进行管理。
+- 并非所有客户端目前都支持统一标签。 请确保你拥有[支持的客户端](#clients-and-services-that-support-unified-labeling)并准备好在 Azure 门户（适用于不支持统一标签的客户端）和安全与合规中心（适用于支持统一标签的客户端）进行管理。
 
 - 如果你正在定义和配置你想要使用的标签，建议使用 Azure 门户来完成此过程，然后迁移标签。 此策略可以避免在迁移过程中重复标签，然后需要在安全与合规中心进行编辑。
 
@@ -55,7 +55,7 @@ ms.locfileid: "56254775"
     
     为了获得更一致的用户体验，建议在安全与合规中心的相同范围内发布相同标签。
 
-- 安全与合规中心并不支持已迁移标签中的所有设置。 使用[安全与合规中心不支持的标签设置](#label-settings-that-are-not-supported-in-the-security--compliance-center)部分中的表，来帮助识别安全与合规中心不支持的设置。
+- 安全与合规中心并不支持已迁移标签中的所有设置。 使用[安全与合规中心不支持的标签设置](#label-settings-that-are-not-supported-in-the-security--compliance-center)部分中的表，来帮助识别这些设置和建议的操作过程。
 
 - 保护模板：
     
@@ -79,21 +79,22 @@ ms.locfileid: "56254775"
 
 ### <a name="label-settings-that-are-not-supported-in-the-security--compliance-center"></a>安全与合规中心不支持的标签设置
 
-使用下表来识别迁移的标签的哪些配置设置不受统一标记客户端的支持，或受到有限的支持。 为避免混淆，建议不要配置对统一标记客户端无效的设置。
+使用下表识别迁移的标签的哪些配置设置不受安全与合规中心的支持。 如果有使用这些设置的标签，迁移完成时，请在 Office 365 安全与合规中心发布标签前使用最后一列中的管理员指南。
 
-Azure 信息保护客户端可以使用这些标签设置，而不会出现任何问题，因为它们继续从 Azure 门户下载标签。
+Azure 信息保护客户端可以使用列出的所有标签设置，而不会出现任何问题，因为它们继续从 Azure 门户下载标签。
 
-|标签配置|受统一标记客户端的支持|不包括安全与合规中心的编辑|
+|标签配置|受统一标记客户端的支持| 安全与合规中心指南|
 |-------------------|---------------------------------------------|-------------------------|
-|启用或禁用状态<br /><br />注意：不会同步到安全与合规中心 |“不适用”|“不适用”|
-|标签颜色：从列表中选择或使用 RGB 代码指定<br /><br />注意：安全与合规中心不支持标签颜色 |“不适用”|“不适用”|
-|使用预定义模板的基于云的保护或基于 HYOK 的保护 |否|是|
-|使用 Word、Excel 和 PowerPoint 中用户定义的权限的基于云的保护 |否|是|
-|使用 Outlook for Do Not Forward 中用户定义的权限的基于 HYOK 的保护 |否|是|
-|删除保护 |否|是|
-|视觉标记（页眉、页脚、水印）：由 RGB 代码指定的自定义字体和字体颜色|否|如果使用变量则建议<br /><br />- 在客户端，变量显示为文本而不是显示动态值|
-|每个应用的视觉标记|否|如果使用变量则建议<br /><br />- 在客户端，变量显示为文本而不是显示动态值|
-|条件和关联设置 <br /><br />注意：包括自动和建议标签及其工具提示|“不适用”|否|
+|启用或禁用状态<br /><br />注意：不会同步到安全与合规中心 |“不适用”|等效于是否发布标签。 |
+|从列表中选择的标签颜色或使用 RGB 代码指定的标签颜色 |是|标签颜色没有配置选项。 相反，可以在 Azure 门户中配置标签颜色。|
+|使用预定义模板的基于云的保护或基于 HYOK 的保护 |否|预定义模板没有配置选项。 我们不建议使用此配置发布标签。|
+|使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |否|这些 Office 应用的用户定义权限没有配置选项。 我们不建议使用此配置发布标签。|
+|使用 Outlook（不可转发）中用户定义权限的基于 HYOK 的保护 |否|HYOK 没有配置选项。 我们不建议使用此配置发布标签。|
+|删除保护 |否|没有用于删除保护的配置选项。 我们不建议使用此配置发布标签。<br /><br /> 如果确实发布了此标签，如果标签之前应用了保护，则应用该标签时，将删除保护。 如果之前从标签中独立应用了保护，则将保留保护。|
+|为视觉标记（页眉、页脚、水印）使用 RGB 代码自定义字体和字体颜色|是|视觉标记的配置限制为颜色和字体大小列表。 尽管无法看见安全与合规中心中配置的值，你仍可以不做任何更改发布此标签。 <br /><br />若要更改这些选项，可以使用 Azure 门户。 但是，请考虑将颜色更改为安全与合规中心中列出的选项之一，以便于管理。|
+|视觉标记（页眉、页脚）中的变量|否|如果不做更改就发布此标签，则变量将在客户端上显示为文本而不是显示动态值。 发布标签之前，请编辑字符串以删除变量。|
+|每个应用的视觉标记|否|如果不做更改就发布此标签，则在所有应用中应用变量将在客户端上显示为文本，而不是在所选的应用上显示文本字符串。 仅当适用于所有应用时发布此标签，并编辑字符串以删除应用变量。|
+|条件和关联设置 <br /><br />注意：包括自动和建议标签及其工具提示|“不适用”|若要重新配置条件，请将自动标记用作标签设置中的独立配置。|
 
 
 ## <a name="to-migrate-azure-information-protection-labels"></a>若要迁移 Azure 信息保护标签
@@ -110,21 +111,36 @@ Azure 信息保护客户端可以使用这些标签设置，而不会出现任�
 
 3. 在“Azure 信息保护 - 统一标签”边栏选项卡上，选择“激活”并按照联机说明进行操作。
 
-成功迁移的标签现在可被[支持统一标签的客户端](#clients-that-support-unified-labeling)使用。 但必须先在安全与合规中心发布这些标签。
+成功迁移的标签现在可被[支持统一标签的客户端和服务](#clients-and-services-that-support-unified-labeling)使用。 但必须先在安全与合规中心发布这些标签。
 
 > [!IMPORTANT]
 > 在 Azure 信息保护客户端的 Azure 门户外部编辑标签时，请返回该“Azure 信息保护 - 统一标记”边栏选项卡，并选择“发布”。
 
-### <a name="clients-that-support-unified-labeling"></a>支持统一标签的客户端
+### <a name="clients-and-services-that-support-unified-labeling"></a>支持统一标签的客户端和服务
 
-当前支持统一标签的客户端包括：
+若要确认使用的客户端和服务是否支持统一标签，请参阅其文档以查看他们是否可以使用 Office 365 安全与合规中心发布的敏感度标签。 
+
+##### <a name="clients-that-currently-support-unified-labeling-include"></a>当前支持统一标签的客户端包括：
 
 - [适用于 Windows 的 Azure 信息保护统一标记客户端](./rms-client/unifiedlabelingclient-version-release-history.md) - 预览版
 
 - Office 中处于不同可用性阶段的应用。 有关详细信息，请参阅 Office 文档中的[将敏感标签应用于 Office 中的文档和电子邮件](https://support.office.com/en-us/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)中的**现在可从何处获取功能？**。
     
-- 来自软件供应商和使用 [MIP SDK](https://docs.microsoft.com/azure/information-protection/develop/mip/mip-sdk-reference) 的开发人员的客户端。
+- 来自软件供应商和开发人员且使用 [Microsoft 信息保护 SDK](https://docs.microsoft.com/en-us/information-protection/develop/overview) 的应用。
 
+##### <a name="services-that-currently-support-unified-labeling-include"></a>当前支持统一标签的服务包括：
+
+- Windows Defender Azure 高级威胁防护
+
+- Microsoft Cloud App Security
+    
+    此服务使用以下逻辑支持迁移到统一标签存储之前及之后的标签：
+    
+    - 如果 Office 365 安全与合规中心中有和 Azure 门户中一样的标签：从 Office 365 安全与合规中心中检索统一标签。 若要在 Cloud App Security 中选择这些标签，至少一个标签必须发布到至少一个用户。
+    
+    - 如果 Office 365 安全与合规中心中没有和 Azure 门户中一样的标签：Office 365 安全与合规中心不使用统一标签，而是从 Azure 门户检索标签。
+
+- 来自软件供应商和开发人员且使用 [Microsoft 信息保护 SDK](https://docs.microsoft.com/en-us/information-protection/develop/overview) 的服务。
 
 ## <a name="next-steps"></a>后续步骤
 

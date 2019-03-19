@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 9b7cd88df290c3df46f0a336c649e282df10d4df
-ms.sourcegitcommit: bfb8e4fff4b6ebc38337f48f2b31ca43048dcca6
+ms.openlocfilehash: b8cf9cb6bd0fadadc12a6ef9c7b65d708ce51648
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007046"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57828526"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -371,7 +371,7 @@ Azure 信息保护扫描程序支持两种备选方案，在任何一种方案�
 
 ## <a name="optimizing-the-performance-of-the-scanner"></a>优化扫描程序性能
 
-使用以下指南有助于优化扫描程序的性能。 但是，如果你的优先级是扫描程序计算机的响应速度而不是扫描程序性能，则可以使用高级客户端设置来[限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner)。
+使用以下指南有助于优化扫描程序的性能。 但是，如果你的优先级是扫描程序计算机的响应速度而不是扫描程序性能，则可以使用高级客户端设置来限制扫描程序使用的线程数。
 
 若要最大程度实现扫描程序的性能：
 
@@ -490,5 +490,3 @@ Azure 信息保护扫描程序支持两种备选方案，在任何一种方案�
 你可能想知道：[Windows Server FCI 和 Azure 信息保护扫描程序有何区别？](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
 
 还可在台式计算机中，利用 PowerShell 以交互方式对文件进行分类和保护。 要详细了解此方案及使用 PowerShell 的其他方案，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)。
-
-

@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ed441ab24517b5d12a1e38ed61a46d4498237636
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 8a1057aeab9bf86bba8047f3425b11e7eeae1082
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259178"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57828424"
 ---
 # <a name="office365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365：配置客户端和联机服务，以使用 Azure Rights Management 服务
 
@@ -104,7 +104,7 @@ ms.locfileid: "56259178"
 #### <a name="configuration-for-users"></a>用户配置
 为用户提供以下说明，以便他们可以配置其 OneDrive for Business 以保护其业务文件。
 
-1. 使用工作或学校帐户登录到 Office 365 并转到 [OneDrive 网站](https://portal.office.com/onedrive)。
+1. 使用工作或学校帐户登录到 Office 365 并转到 [OneDrive 网站](https://admin.microsoft.com/onedrive)。
 
 2. 在导航窗格的底部，选择“返回到经典 OneDrive”。
 
@@ -496,13 +496,13 @@ ms.locfileid: "56259178"
 
    1. 搜索 `$sharepointAdminCenterUrl` 并将示例值替换为你自己的 SharePoint 管理中心 URL。
 
-      当你进入 SharePoint 管理中心时，会发现此值用作基 URL，并且具有以下格式：https://<em>&lt;tenant_name&gt;</em>-admin.sharepoint.com
+      当你进入 SharePoint 管理中心时，会发现此值用作基 URL，并且具有以下格式： https://<em>&lt;tenant_name&gt;</em>-admin.sharepoint.com
 
       例如，如果租户名称为“contoso”，则会指定：**https://contoso-admin.sharepoint.com**
 
    2. 搜索 `$tenantAdmin` 并将示例值替换为你自己的 Office 365 完全限定全局管理员帐户。
 
-      此值与你用来以全局管理员身份登录到 Office 365 管理门户的帐户相同，并具有以下格式：user_name@*&lt;tenant domain name&gt;*.com
+      此值与你用来以全局管理员身份登录到 Microsoft 365 管理中心的帐户相同，并具有以下格式：user_name@*&lt;tenant domain name&gt;*.com
 
       例如，如果对于“contoso.com”租户域，Office 365 全局管理员用户名是“admin”，则会指定：<strong>admin@contoso.com</strong>
 
@@ -510,7 +510,7 @@ ms.locfileid: "56259178"
 
       或者，请参见脚本中有关如何通过导入包含需要配置的所有 URL 的 .CSV 文件来替换此数组的注释。  我们提供了另一个示例脚本，用于自动搜索并提取 URL 以填充此 .CSV 文件。 当你准备好执行此操作时，立即在这些步骤之后使用[将所有 OneDrive for Business URL 输出到一个 .CSV 文件的其他脚本](#additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file)部分。
 
-      用户的 OneDrive for Business 的 Web URL 采用以下格式：https://<em>&lt;tenant name&gt;</em>-my.sharepoint.com/personal/*&lt;user_name&gt;*_*&lt;tenant name&gt;*_com
+      用户的 OneDrive for Business 的 Web URL 采用以下格式： https://<em>&lt;tenant name&gt;</em>-my.sharepoint.com/personal/*&lt;user_name&gt;*_*&lt;tenant name&gt;*_com
 
       例如，如果用户在 contoso 租户中的用户名为“rsimone”，则会指定：**https://contoso-my.sharepoint.com/personal/rsimone_contoso_com**
 
@@ -527,7 +527,7 @@ ms.locfileid: "56259178"
 > [!TIP]
 > 你还可以使用此脚本为 SharePoint Online 库配置 IRM。 对于此配置，你可能希望启用附加选项“不允许用户上传不支持 IRM 的文档”，以确保库只包含受保护的文档。    为此，请将 `-IrmReject` 参数添加到脚本中的 Set-IrmConfiguration 命令。
 >
-> 你还需要修改 `$webUrls` 变量（例如，https://contoso.sharepoint.com）和 `$listTitle` 变量（例如，$Reports）。
+> 你还需要修改 `$webUrls` 变量（例如， https://contoso.sharepoint.com）和 `$listTitle` 变量（例如，$Reports）。
 
 如果需要对用户的 OneDrive for Business 库禁用 IRM，请参阅[对 OneDrive for Business 禁用 IRM 的脚本](#script-to-disable-irm-for-onedrive-for-business)部分。
 

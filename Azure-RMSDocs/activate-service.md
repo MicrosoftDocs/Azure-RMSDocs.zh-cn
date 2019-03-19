@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2f05b95477405a2262b7dc0e129f17f9f5ff46db
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: ff99a39c138cc3ddc0b49cf7ff65ab95d5e36ece
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256390"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57828900"
 ---
 # <a name="activating-azure-rights-management"></a>激活 Azure Rights Management
 
@@ -59,9 +59,9 @@ ms.locfileid: "56256390"
 
 ## <a name="choosing-your-activation-method"></a>选择激活方法
 
-有关如何从管理门户激活 Rights Management 服务的说明，请选择是使用 Office 365 管理中心还是 Azure 门户：
+有关如何从管理门户激活权限管理服务的说明，请选择是使用 Microsoft 365 管理中心还是 Azure 门户：
 
-- [Office 365 管理中心](activate-office365.md) - 需要全局管理员帐户
+- [Microsoft 365 管理中心](activate-office365.md) - 需要全局管理员帐户
 
 - [Azure 门户](activate-azure.md) - 不需要全局管理员帐户
 

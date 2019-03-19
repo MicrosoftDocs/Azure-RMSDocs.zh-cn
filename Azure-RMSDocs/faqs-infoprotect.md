@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 5945b115d4b20f7ef8c42d51e76066cca5c994bd
-ms.sourcegitcommit: 55782e58508051f0ecf460e8b126f70ab9b9ceec
+ms.openlocfilehash: 3bfa333e88df07702aa6e7990c31609985a2b00f
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56756192"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57828849"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -81,7 +81,9 @@ ms.locfileid: "56756192"
 
 因为 Azure 信息保护将永久性元数据用于分类（包括明文标签），所以此信息可供 DLP 解决方案和其他应用程序读取。 
 
-若要详细了解如何将此元数据与 Exchange Online 邮件流规则配合使用和相关示例，请参阅[配置 Azure 信息保护标签的 Exchange Online 邮件流规则](configure-exo-rules.md)。
+有关此元数据的详细信息，请参阅[电子邮件和文档中存储的标签信息](configure-policy.md#label-information-stored-in-emails-and-documents)。
+
+有关将此元数据与 Exchange Online 邮件流规则配合使用的示例，请参阅[配置 Azure 信息保护标签的 Exchange Online 邮件流规则](configure-exo-rules.md)。
 
 ## <a name="can-i-create-a-document-template-that-automatically-includes-the-classification"></a>我能否创建自动包含分类的文档模板？
 

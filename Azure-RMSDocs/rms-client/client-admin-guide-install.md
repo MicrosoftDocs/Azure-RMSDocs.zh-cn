@@ -4,19 +4,19 @@ description: 面向管理员的说明和信息，介绍如何在企业网络中�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/24/2019
+ms.date: 03/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f1f111b0f5e6c534f005dae5725211f9035377ec
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 36900711d53e7bea33c1f0e8c1b03048694b212d
+ms.sourcegitcommit: e22c369e93f5069f9e197cab42cd751d3d97b136
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257056"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57682342"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -46,10 +46,13 @@ ms.locfileid: "56257056"
     
     当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”对话框。
 
-
 - Microsoft Online Services 登录助手 7.250.4303.0
     
     运行 Office 2010 的计算机需要安装 Microsoft Online Services 登录助手版本 7.250.4303.0。 此版本包含在客户端安装中。 如果已安装登录助手的更高版本，请先将其卸载，然后再安装 Azure 信息保护客户端。 例如，通过使用“控制面板” > “程序和功能” > “卸载或更改程序”来检查版本和卸载登录助手。
+
+- KB 4482887
+    
+    仅适用于 Windows 10 版本 1809，操作系统内部版本早于 17763.348，安装 [2019 年 3 月 1 日—KB4482887 (OS 内部版本 17763.348)](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887) 以确保信息保护栏在 Office 应用程序中正确显示。 如果已有 Office 365 1902 或更高版本，则不需要此更新。
 
 - KB 2533623
     
@@ -190,6 +193,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     
     |Office 版本|操作系统|软件|操作|
     |--------------------|--------------|----------------|---------------------|
+    |Office 365 1902 或更高版本之外的所有版本|仅限于 Windows 10 版本 1809，操作系统内部版本早于 17763.348|[KB 4482887](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887)|安装|
+    |Office 2013|所有支持的版本|64 位：[KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54992)<br /><br /> 32 位：[KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54979) <br /><br />版本：1.0|安装|
+    |Office 2010|所有支持的版本|[Microsoft Online Services 登录助手](https://www.microsoft.com/en-us/download/details.aspx?id=28177)<br /><br /> 版本：2.1|安装|
     |Office 2016|所有支持的版本|64 位：[KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=55007)<br /><br />32 位：[KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=54999)<br /><br /> 版本：1.0|安装|
     |Office 2013|所有支持的版本|64 位：[KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54992)<br /><br /> 32 位：[KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54979) <br /><br />版本：1.0|安装|
     |Office 2010|所有支持的版本|[Microsoft Online Services 登录助手](https://www.microsoft.com/en-us/download/details.aspx?id=28177)<br /><br /> 版本：2.1|安装|

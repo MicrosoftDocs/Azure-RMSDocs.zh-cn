@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: db258b5b9babaf050399bf07baa37a78b36ae21b
-ms.sourcegitcommit: 95b7df32ecccdab4b80bc3a9f6433dc1c33dbbc5
+ms.openlocfilehash: a67f95bb3d7683de901a557c22971eee6d7b0c25
+ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56407736"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57828390"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
@@ -26,7 +26,7 @@ ms.locfileid: "56407736"
 
 创建这些用户和组的帐户有多种方法，其中包括：
 
-- 在 Office 365 管理中心创建用户，在 Exchange Online 管理中心创建组。
+- 在 Microsoft 365 管理中心创建用户，在 Exchange Online 管理中心创建组。
 
 - 在 Azure 门户中创建用户和组。
 
