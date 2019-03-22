@@ -4,22 +4,22 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/07/2019
+ms.date: 03/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9240e0a8fc8f70fb38d9984ae74ee039d0f52e39
-ms.sourcegitcommit: 872fe78c482e8c2c57c3653919edeba745411cba
+ms.openlocfilehash: 91afeedf07e34f08860f1d596052fdc559c53098
+ms.sourcegitcommit: d8cadf325472e7fc8900905305d7f583a97506b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57510048"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57828441"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
 
 Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 
 
@@ -92,7 +92,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 为用户定义的权限配置父标签时，PowerShell 和扫描程序会正确应用子标签。
 
-- Azure 信息保护客户端正确显示已由[支持统一标签的客户端](../configure-policy-migrate-labels.md#clients-that-support-unified-labeling)应用的标签。
+- Azure 信息保护客户端正确显示已由[支持统一标签的客户端](../configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)应用的标签。
 
 - 在文件资源管理器删除保护并右键单击 PowerShell 和扫描程序后，文档在 Office 中正确打开，而没有恢复消息。
 
@@ -236,21 +236,6 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - “帮助和反馈”对话框中的“给我们发送反馈”链接会被删除。 它将被暂时替换为“报告问题”，默认情况下，会向 Microsoft 发送一封电子邮件。 从 2018 年 12 月起，默认不会显示“报告问题”选项，但可以使用在其中为链接指定 HTTP 字符串的[高级客户端设置](client-admin-guide-customizations.md#add-report-an-issue-for-users)进行添加。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 
 
-## <a name="version-12950"></a>版本 1.29.5.0 
-
-**发布日期**：2018 年 06 月 26 日
-
-此版本包括 RMS 客户端的 MSIPC 1.0.3403.1224 版本。
-
-**修补程序**：
-
-- 对于 Outlook 版本 16.0.9324.1000 及更高版本（即点即用），Azure 信息保护栏支持最新监视器显示选项，旧选项可能会导致栏显示在 Outlook 应用程序外面。
-
-- [按 Office 应用程序类型](../configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)配置的视觉标记现在替换 Azure 信息保护标签应用的旧页眉或页脚。
-
-- 如果 Excel 文件已有标签，当标签应用视觉标记时，新工作表现在也应用标签的视觉标记。
-
-- 借助高级客户端设置[使用现有自定义属性来设置 Office 文档的标签](client-admin-guide-customizations.md#label-an-office-document-by-using-an-existing-custom-property)时，自动标签不会替代手动标签。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ae91e36a4b2406d3dcb5a4ea52f4cac48c37287
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 4561c505be994039a6e95779e47ea1c511e0a0c1
+ms.sourcegitcommit: 3a3f1051c5a58c2bd2f230f1c8ece919df3dc23e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257189"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58221059"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -27,7 +27,7 @@ ms.locfileid: "56257189"
 
 对于这些应用程序和解决方案，可以使用支持用法限制的 Rights Management API，从而紧密集成 Rights Management 支持。 这些应用程序和解决方案也称为“启用 RMS 的”应用程序和解决方案。
 
-除非另行说明，否则支持的功能同时适用于 Azure RMS 和 AD RMS。 此外，iOS、Android、macOS 和 Windows Phone 8.1 上的 AD RMS 支持需要 [Active Directory Rights Management Services 移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)。
+除非另行说明，否则支持的功能同时适用于 Azure RMS 和 AD RMS。 此外，iOS、Android、macOS 和 Windows Phone 8.1 上的 AD RMS 支持需要 [Active Directory Rights Management Services 移动设备扩展](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574\(v=ws.11\))。
 
 ## <a name="rms-enlightened-applications"></a>启用 RMS 的应用程序
 
