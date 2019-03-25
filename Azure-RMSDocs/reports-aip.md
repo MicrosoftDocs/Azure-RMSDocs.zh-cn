@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 02/26/2019
+ms.date: 03/22/2019
 manager: barbkess
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 319365dd5dfa7c9c5cb82532faa179334c8f0b0f
-ms.sourcegitcommit: dde803603371dc30d40ca7225f330163bcc7c103
+ms.openlocfilehash: c7f862a7a16579b6d414c79015c42664e4066c29
+ms.sourcegitcommit: cf06c3854e6ee8645c3b71a0257bdb6a1b569843
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56825962"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58343037"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -30,7 +30,7 @@ ms.locfileid: "56825962"
 
 - 下表中的 PDF 阅读器支持具有 .ppdf 文件扩展名的受保护的 PDF 文档和具有 .pdf 文件扩展名的旧格式。 
 
-- 标识包含必须保护的敏感信息的文档。
+- 确定包含敏感信息且若未保护则可能给组织带来风险的文档，并按照以下建议缓解风险。
 
 当前，你看到的数据是从 Azure 信息保护客户端和 Azure 信息保护扫描程序，以及运行 [Windows Defender 高级威胁防护 (Windows Defender ATP)](/windows/security/threat-protection/windows-defender-atp/overview) 的 Windows 计算机聚合的。
 
@@ -67,7 +67,17 @@ ms.locfileid: "56825962"
     - 被标记和被保护的文件，以及按标签分类的文件的位置
     
     - 包含已知类别的敏感信息（例如财务数据和个人信息）的文件，以及按这些类别分类的文件的位置
+
+- 在“建议”报告中：
     
+    - 识别包含已知敏感信息类型但未受保护的文件。 按照建议操作，可立即对其中一个标签配置相应的条件，以应用自动标签或推荐的标签。
+        
+        如果按照建议进行操作：在用户下次打开或 Azure 信息保护扫描程序下次扫描文件时，这些文件可自动分类并自动受到保护。
+    
+    - 其文件具有已标识的敏感信息但其本身当前未被 Azure 信息保护服务扫描的数据存储库。 按照建议操作，可立即向扫描程序的某个配置文件添加已标识的数据存储。
+        
+        如果按照建议进行操作：在下一次扫描周期，文件可自动分类并自动受到保护。
+
 报表使用 [Azure Monitor](/azure/log-analytics/log-analytics-overview) 将数据存储在组织拥有的 Log Analytics 工作区中。 如果你熟悉查询语言，可以修改这些查询，并创建新报表和 Power BI 仪表板。 以下教程可能有助于你了解查询语言：[Azure Monitor 日志查询入门](/azure/azure-monitor/log-query/get-started-queries)。 
 
 有关详细信息，请参阅以下博客文章： 
@@ -100,7 +110,7 @@ ms.locfileid: "56825962"
 
 - 客户端操作系统版本。
 
-此信息存储在组织拥有的 Azure Log Analytics 工作区中，并可供有权访问此工作区的用户从 Azure 信息保护独立查看。 有关详细信息，请参阅 [Azure 信息保护分析的必备权限](#permissions-required-for-azure-information-protection-analytics)部分。 有关管理对你的工作区的访问权限的信息，请参阅 Azure 文档中的[管理帐户和用户](/azure/azure-monitor/platform/manage-access#manage-accounts-and-users)部分。
+此信息存储在组织拥有的 Azure Log Analytics 工作区中，并可供有权访问此工作区的用户从 Azure 信息保护独立查看。 有关详细信息，请参阅 [Azure 信息保护分析的必备权限](#permissions-required-for-azure-information-protection-analytics)部分。 要了解如何管理对工作区的访问，请参阅 Azure 文档中的[使用 Azure 权限管理对 Log Analytics 工作区的访问](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#manage-access-to-log-analytics-workspace-using-azure-permissions)部分。
 
 > [!NOTE]
 > Azure 信息保护的 Azure Log Analytics 工作区包含一个文档内容匹配复选框。 选中此复选框时，还将收集由敏感信息类型或自定义条件标识的实际数据。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 如果不想收集此数据，请不要选中此复选框。
@@ -113,8 +123,9 @@ ms.locfileid: "56825962"
 |要求|更多信息|
 |---------------|--------------------|
 |包含 Log Analytics 的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
-|Azure 信息保护客户端（当前正式发布版本或预览版本）或 Azure 信息保护统一标记客户端的预览版本|如果尚未安装任何版本的客户端，可以从 Microsoft 下载中心下载和安装这些版本：<br /> - [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018) <br /> - [Azure 信息保护统一标记客户端](https://www.microsoft.com/en-us/download/details.aspx?id=57440)|
-|对于“发现和风险”报表： <br /><br />- 若要显示本地数据存储中的数据，你至少已部署一个 Azure 信息保护扫描程序的实例（当前正式发布版或预览版） <br /><br />- 若要显示 Windows 10 计算机中的数据，这些计算机必须为最低版本 1809，你在使用 Windows Defender 高级威胁防护 (Windows Defender ATP)，并且你已从 Windows Defender 安全中心启用 Azure 信息保护集成功能|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 如果从以前版本的扫描程序升级，请参阅[升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。<br /><br />有关从 Windows Defender 安全中心配置和使用 Azure 信息保护集成功能的信息，请参阅 [Windows 中的信息保护概述](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview)。|
+|Azure 信息保护客户端（预览版或当前的正式发布版）或 Azure 信息保护统一标签客户端的预览版|如果尚未安装任何版本的客户端，可以从 Microsoft 下载中心下载和安装这些版本：<br /> - [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018) <br /> - [Azure 信息保护统一标记客户端](https://www.microsoft.com/en-us/download/details.aspx?id=57440)|
+|对于“发现和风险”报表： <br /><br />- 要显示本地数据存储中的数据，必须至少部署 Azure 信息保护扫描程序（预览版或当前的正式发布版）的一个实例 <br /><br />- 若要显示 Windows 10 计算机中的数据，这些计算机必须为最低版本 1809，你在使用 Windows Defender 高级威胁防护 (Windows Defender ATP)，并且你已从 Windows Defender 安全中心启用 Azure 信息保护集成功能|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关从 Windows Defender 安全中心配置和使用 Azure 信息保护集成功能的信息，请参阅 [Windows 中的信息保护概述](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview)。|
+|对于“建议”报告： <br /><br />- 要按照建议的操作通过 Azure 门户添加新的数据存储库，必须使用 Azure 信息保护扫描程序的当前预览版 |要部署扫描程序的预览版，请参阅[部署 Azure 信息保护扫描程序的预览版来自动分类和保护文件](deploy-aip-scanner-preview.md)。|
 
 ### <a name="permissions-required-for-azure-information-protection-analytics"></a>Azure 信息保护分析必备的先决条件
 
@@ -134,7 +145,7 @@ ms.locfileid: "56825962"
     
     - 要在创建 Log Analytics 工作区后查看数据，必须具有以下角色之一：
     
-        - **安全读者**
+        - **安全读取者**
         - **信息保护管理员**
         - **安全管理员**
         - **全局管理员**
@@ -142,7 +153,7 @@ ms.locfileid: "56825962"
     > [!NOTE] 
     > 如果租户已迁移到统一标记存储，帐户必须是全局管理员或所列角色之一，并有权访问 Office 365 安全与合规中心。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
 
-2. 要访问 Azure Log Analytics 工作区，必须具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#managing-access-to-log-analytics-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一：
+2. 要访问 Azure Log Analytics 工作区，必须具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#manage-access-to-log-analytics-workspace-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一：
     
     - 若要创建 Log Analytics 工作区或创建自定义查询，必须具有以下角色之一：
     
@@ -158,7 +169,7 @@ ms.locfileid: "56825962"
 
 为 Azure 信息保护分析配置工作区后，查看报表至少需要具备以下两种角色：
 
-- Azure AD 管理员角色：**安全读者**
+- Azure AD 管理员角色：**安全读取者**
 - Azure 角色：**Log Analytics 读者**
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>配置报表的 Log Analytics 工作区
@@ -190,6 +201,12 @@ ms.locfileid: "56825962"
     此报表有“列”选项，可用于显示默认显示信息之外的更多活动信息。
 
 - **数据发现(预览版)**：使用此报表查看扫描程序或 Windows Defender ATP 找到的文件的相关信息。
+
+- 建议（预览）：使用此报告来确定包含敏感信息的文件，并按照建议缓解风险。
+    
+    此报表目前正在向租户推出，因此如果看不到它，请在几天后重试。
+    
+    选择项目时，“查看数据”选项将显示触发了建议的审核活动。
 
 > [!NOTE]
 > 当“发送操作系统区域设置”为英语时，会出现一个当前已知的问题，即在路径和文件名中显示问号 (?)，而不是非 ASCII 字符。

@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: f46e919665d110665ed85b5e2e5c6a979a1958e9
-ms.sourcegitcommit: 1fe9720526a2ff814cd5d353249b16497cfcaadc
+ms.openlocfilehash: 0a09c4c89ffd461cb0c922cb09ee0acd3ed033be
+ms.sourcegitcommit: d8cadf325472e7fc8900905305d7f583a97506b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56425957"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57828996"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>配置 Azure 信息保护标签的 Exchange Online 邮件流规则
 
@@ -50,7 +50,7 @@ ms.locfileid: "56425957"
 
 2. 选择“管理员”磁贴。
 
-3. 在 Office 365 管理中心内，依次选择“管理中心” > “Exchange”。
+3. 在 Microsoft 365 管理中心，选择“管理中心” > “Exchange”。
 
 4. 在 Exchange 管理中心内：依次选择“邮件流” > “规则” > “+” > “新建规则”。 
 
