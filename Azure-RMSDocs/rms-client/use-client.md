@@ -4,18 +4,18 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/20/2019
+ms.date: 03/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
 ms.suite: ems
-ms.openlocfilehash: f797ffc63e38c15649e5bf590ad11dd5a009e957
-ms.sourcegitcommit: 3a3f1051c5a58c2bd2f230f1c8ece919df3dc23e
+ms.openlocfilehash: b8f19a4953d5cfead99e96386bd65d070ac8ae77
+ms.sourcegitcommit: 0df1cd6000f72ec8cac60a5ace0fa441974464e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58221008"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58524364"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -57,6 +57,7 @@ Azure 信息保护统一标记客户端从 Office 365 安全与合规中心下�
 |用户定义的权限：| 是 | 仅适用于 Outlook（不要转发） |
 |自定义权限：| 是 | 仅文件资源管理器 <br /><br /> 在 Office 应用程序中，作为替代方法，用户可以选择“文件信息” > “保护文档” > “限制访问” |
 |Office 应用中的“信息保护”栏：| 是 | 是；但具有限制：<br /><br /> - 无标题或可自定义的工具提示<br /><br /> - 应用的标签未显示标签颜色|
+|标签可应用视觉标记（页眉、页脚、水印）：| 是 | 是；但具有限制：<br /><br /> - 页眉和页脚不支持变量获取动态值 <br /><br /> - 不支持为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记|
 |文件资源管理器，右键单击操作：| 是 | 是；但具有限制：<br /><br /> - 无法保护 .ppdf 格式的 PDF 文档 <br /><br />  - 不支持仅保护模式|
 |受保护文件的查看器：| 是 | 是；但具有限制：<br /><br /> - 对于通用受保护文件 (.pfile)，无法将更改保存到最初打开的文件，这一点与 Azure 信息保护客户端中的查看器不同。|
 |PowerShell 命令：| 是 | 是；但具有限制：<br /><br />- 包含以下 Cmdlet：[Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)、[Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)、[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)、[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) <br /><br />- 不包括直接连接到保护服务的 Cmdlet|
@@ -125,7 +126,7 @@ Azure 信息保护统一标记客户端从 Office 365 安全与合规中心下�
 - AD RMS 仅保护模式
 
 
-##### <a name="parent-labels-and-their-sublabels"></a>父标签及其子标签 
+#### <a name="parent-labels-and-their-sublabels"></a>父标签及其子标签 
 
 Azure 信息保护客户端不支持指定具有子标签的父标签的配置。 这些配置包括指定默认标签和推荐分类或自动分类的标签。 如果某个标签具有子标签，可以指定其中一个子标签，但不能指定父标签。
 
