@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: bf063cb8b56cfd0c487b62394c9226519e85b1f3
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 922ff8811e5cb71d6d4d5920dfec80eadbcbc744
+ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330740"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58809788"
 ---
 # <a name="class-mipprotectiondescriptor"></a>类 mip::ProtectionDescriptor 
 与某段内容相关的保护说明。
@@ -113,7 +113,7 @@ public std:: map\<std:: string、 std:: string\> GetSignedAppData() 常量  |  �
 获取已加密的应用特定数据。
 
   
-**返回**:应用特定数据： [ProtectionHandler](class_mip_protectionhandler.md)可能持有的加密的保护服务的特定于应用的数据字典。 此加密数据独立于可通过 [ProtectionDescriptor::GetSignedAppData](class_mip_protectiondescriptor.md#getappsigneddata-function) 访问的签名数据
+**返回**:应用特定数据： [ProtectionHandler](class_mip_protectionhandler.md)可能持有的加密的保护服务的特定于应用的数据字典。 此加密数据独立于可通过 [ProtectionDescriptor::GetSignedAppData](class_mip_protectiondescriptor.md#getsignedappdata-function) 访问的签名数据
   
 ### <a name="getsignedappdata-function"></a>GetSignedAppData 函数
 获取已签名的应用特定数据。
