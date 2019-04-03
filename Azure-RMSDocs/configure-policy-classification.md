@@ -4,21 +4,21 @@ description: 可以自动将标签分配到文档或电子邮件的条件。 或
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/14/2019
+ms.date: 04/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: f8545491a527b8e502150cd83802b2868dd3a1da
-ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
+ms.openlocfilehash: 3cf57d5e958ab535a2e2cd21adc305fe09bb8aec
+ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57829036"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58809754"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。 
 
@@ -99,19 +99,6 @@ ms.locfileid: "57829036"
 单击“保存”时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
 
 ### <a name="sensitive-information-types-that-require-a-minimum-version-of-the-client"></a>需要最低版本客户端的敏感信息类型
-
-以下敏感信息类型要求 Azure 信息保护客户端的最低版本为 1.37.19.0：
-
-- **欧盟移动电话号码**
-- **欧盟护照号码**
-- **欧盟驾驶执照号码**
-- **欧盟身份证号码**
-- **欧盟社会安全号码 (SSN) 或等效 ID**
-- **欧盟纳税标识号 (TIN)**
-- **泰国人口标识代码**
-- **土耳其身份证号码**
-- **日本居住证号码**
-
 
 以下敏感信息类型要求 Azure 信息保护客户端的版本为当前预览版：
 

@@ -12,12 +12,12 @@ ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 2db27a558acd60fc1d3f6a05c1dda90d00baa3bb
-ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
+ms.openlocfilehash: d9fda9c7477c408e8003f48c85e6d35fec6a1884
+ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57829070"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58809805"
 ---
 # <a name="whats-new-and-release-notes"></a>新增功能和发行说明
 
@@ -26,7 +26,7 @@ ms.locfileid: "57829070"
 本主题概述了这一新版本的 RMS SDK v4.x 中的重要更改和功能。
 
 -   [2017 年 7 月的新功能](#new-for-july-2017)
--   [2016 年 10 月更新](#October-2016-update)
+-   [2016 年 10 月更新](#october-2016-update)
 -   [2016 年 6 月更新](#june-2016-update)
 -   [2015 年 12 月更新](#december-2015-update)
 -   [2015 年 7 月更新 - 添加针对 Linux / C++ 开发的支持](#july-2015-update---adds-support-for-linux--c-development)
