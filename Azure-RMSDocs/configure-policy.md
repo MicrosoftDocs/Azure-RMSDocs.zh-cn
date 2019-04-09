@@ -3,7 +3,7 @@ title: 配置 Azure 信息保护策略 - AIP
 description: 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。
 author: cabailey
 ms.author: cabailey
-ms.date: 02/15/2019
+ms.date: 04/02/2019
 manager: barbkess
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b12c3451517f3e2832ed36b00d60c401973a0ebb
-ms.sourcegitcommit: 1fe9720526a2ff814cd5d353249b16497cfcaadc
+ms.openlocfilehash: f848aed3bb8bf6d7982a757c182edd19c9fbff73
+ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56425940"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58809771"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -60,14 +60,14 @@ Azure 信息保护支持不同级别的订阅：
     
     - **信息保护管理员**
     
-    - **安全读者**（仅限 [Azure 信息保护分析](reports-aip.md)）
+    - **安全读取者**（仅限 [Azure 信息保护分析](reports-aip.md)）
     
   - **安全管理员**
     
   - **全局管理员/公司管理员**
     
     > [!NOTE] 
-    > 如果租户已迁移到统一标记存储，帐户必须是全局管理员或所列角色之一，并有权访问 Office 365 安全与合规中心，才能在 Azure 门户中管理 Azure 信息保护。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
+    > 如果租户已迁移到统一标签存储，帐户必须是全局管理员或所列角色之一，并有权访问 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心，才能在 Azure 门户中管理 Azure 信息保护。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
 
 
 ## <a name="to-access-the-azure-information-protection-blade-for-the-first-time"></a>首次访问“Azure 信息保护”边栏选项卡
@@ -146,7 +146,7 @@ Azure 信息保护支持不同级别的订阅：
 
 - [如何为不同语言配置标签](configure-policy-languages.md)
 
-- [如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](configure-policy-migrate-labels.md)
+- [如何将 Azure 信息保护标签迁移到 Office 365](configure-policy-migrate-labels.md)
 
 ## <a name="label-information-stored-in-emails-and-documents"></a>电子邮件和文档中存储的标签信息
 

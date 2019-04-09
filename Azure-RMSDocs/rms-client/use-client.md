@@ -4,18 +4,18 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/28/2019
+ms.date: 04/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
 ms.suite: ems
-ms.openlocfilehash: b8f19a4953d5cfead99e96386bd65d070ac8ae77
-ms.sourcegitcommit: 0df1cd6000f72ec8cac60a5ace0fa441974464e0
+ms.openlocfilehash: 876838dbd4e9818ca118f632079c98531ce347a1
+ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58524364"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58809822"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -35,7 +35,7 @@ Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织�
 
 从 Azure 门户下载标签和策略设置的 Azure 信息保护客户端具有普遍适用性，并提供用于测试新功能和修补程序的预览版本。 有关客户端这些版本的详细信息，请参阅 [Azure 信息保护客户端：版本发行历史记录和支持策略](client-version-release-history.md)。 
 
-Azure 信息保护统一标记客户端从 Office 365 安全与合规中心下载标签和策略设置。 此客户端目前处于测试预览状态。 有关客户端此版本的详细信息，请参阅 [Azure 信息保护统一标记客户端：版本发布信息](unifiedlabelingclient-version-release-history.md)。
+Azure 信息保护统一标签客户端从以下管理中心下载标签和策略设置：Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心。 此客户端目前处于测试预览状态。 有关客户端此版本的详细信息，请参阅 [Azure 信息保护统一标记客户端：版本发布信息](unifiedlabelingclient-version-release-history.md)。
 
 应该安装哪个客户端？
 
@@ -83,13 +83,13 @@ Azure 信息保护统一标记客户端从 Office 365 安全与合规中心下�
 |安装：| 安装本地演示策略的选项 | 没有本地演示策略|
 |在 Office 应用程序中应用时的标签选择和显示：|通过功能区上的“保护”按钮 <br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|通过功能区上的“敏感度”按钮<br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|
 |在 Office 应用程序中管理“信息保护”栏：|面向用户： <br /><br />- 从功能区上的“保护”按钮选择显示或隐藏栏<br /><br />- 如果用户选择隐藏栏，默认情况下，该栏在应用程序中隐藏，但会继续自动显示在新打开的应用程序中 <br /><br /> 面向管理员： <br /><br />- 在应用程序首次打开时，通过策略设置自动显示或隐藏栏，并控制在用户选择隐藏栏后，该栏是否对新打开的应用程序自动保持隐藏状态|面向用户： <br /><br />- 从功能区上的“敏感度”按钮选择显示或隐藏栏<br /><br />- 当用户选择隐藏栏时，该栏在该应用程序中以及新打开的应用程序中均处于隐藏状态 <br /><br />面向管理员： <br /><br />- 没有可用于管理栏的策略设置|
-|标签颜色： | 在 Azure 门户中配置 | 在标签迁移到 Office 365 后保留 <br /><br /> 在安全与合规中心中创建的新标签没有颜色|
+|标签颜色： | 在 Azure 门户中配置 | 在标签迁移到 Office 365 后保留 <br /><br /> 管理中心中创建的新标签没有颜色|
 |策略更新： | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 24 小时一次 | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 4 小时一次|
 |PDF 支持的格式：| 保护: <br /><br /> - PDF 加密的 ISO 标准（默认） <br /><br /> - .ppdf <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护| 保护: <br /><br /> - PDF 加密的 ISO 标准 <br /><br /> <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护|
 |支持的 cmdlet：| [AzureInformatioProtection](/powershell/module/azureinformationprotection) 记录的所有 cmdlet | Set-AIPFileClassification 和 Set-AIPFileLabel 不支持 Owner 参数或 SharePoint Server 库 <br /><br /> 此外，对于未应用标签的所有场景，都有一条“无适用标签”的注释 <br /><br /> Set-AIPFileLabel 不支持 EnableTracking 参数 <br /><br /> Get-AIPFileStatus 不从其他租户返回标签信息，也不显示 RMSIssuedTime 参数<br /><br />另外，Get-AIPFileStatus 的 LabelingMethod  参数显示“特权”、“标准”或“自动”，而不显示“手动”或“自动”。 有关详细信息，请参阅[联机文档](/powershell/module/azureinformationprotection/get-aipfilestatus)。|
 |Office 中每个操作的对齐方式提示（如果已配置）： | 频率:每个文件 <br /><br /> 降低敏感度级别 <br /><br /> 删除标签<br /><br /> 删除保护 | 频率:每个会话 <br /><br /> 降低敏感度级别<br /><br /> 删除标签|
 |删除已应用的标签操作： | 系统提示用户确认 <br /><br />下次 Office 应用程序打开文件时，不会自动应用默认标签或自动标签（如果已配置）  <br /><br />| 不提示用户确认<br /><br /> 下次 Office 应用程序打开文件时，自动应用默认标签或自动标签（如果已配置）|
-|自动分类和建议分类： | 在 Azure 门户中配置为[标签条件](../configure-policy-classification.md)，其中包含使用短语或正则表达式的内置信息类型和自定义条件 <br /><br />配置选项包括： <br /><br />- 唯一/非唯一计数 <br /><br /> - 最小计数| 在安全与合规中心中配置，包含内置敏感信息类型和[自定义信息类型](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type)<br /><br />配置选项包括：  <br /><br />- 仅唯一计数 <br /><br />- 最小和最大计数 <br /><br />- 信息类型支持 AND 和 OR <br /><br />- 关键字字典<br /><br />- 可自定义的可信度和字符接近度|
+|自动分类和建议分类： | 在 Azure 门户中配置为[标签条件](../configure-policy-classification.md)，其中包含使用短语或正则表达式的内置信息类型和自定义条件 <br /><br />配置选项包括： <br /><br />- 唯一/非唯一计数 <br /><br /> - 最小计数| 在管理中心中配置，包含内置敏感信息类型和[自定义信息类型](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type)<br /><br />配置选项包括：  <br /><br />- 仅唯一计数 <br /><br />- 最小和最大计数 <br /><br />- 信息类型支持 AND 和 OR <br /><br />- 关键字字典<br /><br />- 可自定义的可信度和字符接近度|
 
 要更详细地比较特定保护设置以了解其行为差异，请参阅[比较标签保护设置的行为](../configure-policy-migrate-labels.md#comparing-the-behavior-of-protection-settings-for-a-label)。
 
@@ -102,6 +102,8 @@ Azure 信息保护统一标记客户端从 Office 365 安全与合规中心下�
 - 从 Office 应用和文件资源浏览器中跟踪和撤销
 
 - Azure 信息保护栏标题和工具提示
+
+- 页眉和页脚中的动态值，对 Word、Excel、PowerPoint 和 Outlook 使用变量以及不同的视觉标记
 
 - PowerShell 和文件资源浏览器中的保护操作的脱机支持
 
@@ -130,7 +132,7 @@ Azure 信息保护统一标记客户端从 Office 365 安全与合规中心下�
 
 Azure 信息保护客户端不支持指定具有子标签的父标签的配置。 这些配置包括指定默认标签和推荐分类或自动分类的标签。 如果某个标签具有子标签，可以指定其中一个子标签，但不能指定父标签。
 
-对于奇偶校验，Azure 信息保护统一标记客户端也不支持应用具有子标签的父标签，即使可以在 Office 365 安全与合规中心中选择这些标签，也无法应用。 在此方案中，Azure 信息保护统一标记客户端将不应用父标签。
+对于奇偶校验，Azure 信息保护统一标签客户端也不支持应用具有子标签的父标签，即使可以在管理中心中选择这些标签，也无法应用。 在此方案中，Azure 信息保护统一标记客户端将不应用父标签。
 
 ## <a name="see-also"></a>另请参阅
 如需详细了解如何部署和使用这些客户端，请参阅以下文档：

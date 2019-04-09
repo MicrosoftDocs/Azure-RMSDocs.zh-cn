@@ -4,21 +4,21 @@ description: 可以为用户在信息保护栏上看到的标签以及用户看�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 04/03/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 279823d8c3512ec8f28a3ecfdf4970cb18bae690
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 82dc592263117d075cb3793b9034a8adc0f1ca15
+ms.sourcegitcommit: 7283b7c7619d65b5e8272d51bbf85a1bc846befd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56253214"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58867511"
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>如何在 Azure 信息保护中配置不同语言的标签和模板
 
->适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 虽然 Azure 信息保护的默认标签支持多种语言，但必须配置对指定标签名称和说明的支持。 此配置要求执行以下操作：
 
@@ -36,7 +36,7 @@ ms.locfileid: "56253214"
 
 - 由于没有支持标签的订阅，因此只能在 Azure 门户中创建和管理模板。
 
-为 Office 和 Windows 选择与用户的语言设置相匹配的语言。 这些标签名称和说明随后会分别显示在 Office 应用中的 Azure 信息保护栏，以及“分类和保护 - Azure 信息保护”对话框中。 有关所选语言的详细信息，请参阅此页上的 [Azure 信息保护客户端如何确定要显示的语言](#how-the-azure-information-protection-client-determines-the-language-to- display)部分。 
+为 Office 和 Windows 选择与用户的语言设置相匹配的语言。 这些标签名称和说明随后会分别显示在 Office 应用中的“Azure 信息保护”栏，以及“分类和保护 - Azure 信息保护”对话框中。 有关所选语言的详细信息，请参阅此页上的 [Azure 信息保护客户端如何确定要显示的语言](#how-the-azure-information-protection-client-determines-the-language-to- display)部分。 
 
 ## <a name="to-configure-labels-and-templates-for-different-languages"></a>配置不同语言的标签和模板
 
@@ -64,10 +64,14 @@ ms.locfileid: "56253214"
 6. 编辑每个 .xml 文件：对于 `<LocalizedText>` 标记中的每个字符串，为每种所选语言提供你想要的翻译。 
 
 7. 编辑每个 .xml 文件后，创建一个新的压缩 (zipped) 文件夹来包含这些文件。 压缩文件夹可以具有任何名称，但必须具有 .zip 扩展名。
+    
+    提示：不必等到编辑完已下载的每个语言文件。 相反，可以通过将已下载的所有文件中的一部分文件包括在 .zip 文件中来分阶段推出不同语言。 完成多种语言的翻译后，重复步骤 7 和 8。
 
 8. 返回到“Azure 信息保护 - 语言”边栏选项卡，然后选择“导入”。 请注意，如果此选项不可用，则首先清除“语言名称”复选框或单独选择的语言对应的复选框。
     
     完成导入后，将为用户下载本地化名称和说明。
+
+如果需要支持一种新语言、创建新标签，或在 Azure 门户中更改标签的名称或说明，则必须重复此过程。
 
 ## <a name="how-the-azure-information-protection-client-determines-the-language-to-display"></a>Azure 信息保护客户端如何确定要显示的语言
 

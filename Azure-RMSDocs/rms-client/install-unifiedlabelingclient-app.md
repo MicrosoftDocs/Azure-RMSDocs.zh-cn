@@ -4,26 +4,26 @@ description: 有关用户安装适用于 Windows 的 Azure 信息保护统一标
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/26/2019
+ms.date: 04/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: cbe97fc619de9b7bda73ebb419bfc254f237f372
-ms.sourcegitcommit: 55782e58508051f0ecf460e8b126f70ab9b9ceec
+ms.openlocfilehash: a48bb16bd2b4a0b15df0086c1eba3c14766ee9a2
+ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56756124"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58809890"
 ---
 # <a name="download-and-install-the-azure-information-protection-unified-labeling-client-preview"></a>下载并安装 Azure 信息保护统一标签客户端（预览版）
 
 >适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）
 
 > [!NOTE]
-> 此客户端处于预览状态，随时可能更改。 客户端使用统一标签存储并从 Office 365 安全与合规中心下载带有敏感度标签的策略。 必须先由安全与合规中心发布标签，才能使用这些标签。 [详细信息](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)
+> 此客户端处于预览状态，随时可能更改。 客户端使用统一标签存储并从管理中心下载带有敏感度标签的策略：Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心。 必须先由以下其中一个管理中心发布标签，才能使用这些标签。 [详细信息](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)
 
 必须是电脑的本地管理员才可安装此预览版客户端，这样可对文档和电子邮件进行标记和保护。
 
@@ -35,9 +35,9 @@ ms.locfileid: "56756124"
 
 ## <a name="to-download-and-install-the-azure-information-protection-unified-labeling-client"></a>下载并安装 Azure 信息保护统一标签客户端
 
-在安装 Azure 信息保护统一标签客户端之前，请确认 Office 365 安全与合规中心中有为用户发布的敏感度标签。 
+在安装 Azure 信息保护统一标签客户端之前，请确认 Office 365 安全与合规中心、或 Microsoft 365 安全中心和 Microsoft 365 合规中心中有已发布的敏感度标签。 
 
-如果你有当前从 Azure 门户发布的用于 Azure 信息保护的标签，可以[将这些标签迁移](../configure-policy-migrate-labels.md)到安全与合规中心。
+如果你有当前从 Azure 门户发布的用于 Azure 信息保护的标签，可以[将这些标签迁移](../configure-policy-migrate-labels.md)到管理中心。
 
 1. 从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=57440)下载预览版客户端。
 
@@ -67,4 +67,4 @@ ms.locfileid: "56756124"
 
 ## <a name="next-steps"></a>后续步骤
 
-若要详细了解 Office 365 安全与合规中心目前使用的统一标签存储，请阅读以下博客文章：[宣布推出安全与合规中心的统一标记管理](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)。
+若要详细了解管理中心使用的统一标签存储，请阅读以下博客文章：[宣布推出安全与合规中心的统一标记管理](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)。

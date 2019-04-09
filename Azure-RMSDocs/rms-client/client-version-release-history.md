@@ -4,22 +4,22 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/19/2019
+ms.date: 04/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 91afeedf07e34f08860f1d596052fdc559c53098
-ms.sourcegitcommit: d8cadf325472e7fc8900905305d7f583a97506b0
+ms.openlocfilehash: d6ffbce2dfba5a2d835808a21857eb396cfc1eb5
+ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57828441"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58809856"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 
 
@@ -47,7 +47,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 如果客户端之一的版本高于 1.41.51.0，则这是用于测试和评估的预览内部版本。  
 
 > [!TIP]
-> 由于你的标记是从 Office 365 安全与合规中心发布的，因此是否对评估 Azure 信息保护统一标记客户端感兴趣？ 请参阅 [Azure 信息保护统一标签客户端：版本发布信息](unifiedlabelingclient-version-release-history.md)。
+> 由于你的标记是从 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心发布的，因此是否对评估 Azure 信息保护统一标签客户端感兴趣？ 请参阅 [Azure 信息保护统一标签客户端：版本发布信息](unifiedlabelingclient-version-release-history.md)。
 
 **发布日期**：2019 年 3 月 5 日
 
@@ -81,6 +81,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 新的高级客户端设置，仅当将策略设置配置为不显示自定义权限时才适用：当有一个文件受自定义权限保护时，请在文件资源管理器中显示自定义权限选项，以便用户可以查看和更改它们（如果他们具有更改保护设置的权限）。 [详细信息](client-admin-guide-customizations.md#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer)
 
+- Azure 信息保护分析的新高级客户端设置，用于当你已在 Azure 门户中选中此复选框以收集内容匹配项时阻止为一部分用户发送信息类型匹配项。 [详细信息](client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)
 
 **修补程序**：
 

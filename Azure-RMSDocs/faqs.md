@@ -4,19 +4,19 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/13/2019
+ms.date: 04/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6a68d7f550a773016b552b380bb42f596720f250
-ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
+ms.openlocfilehash: 503615fa6d2bb492fcbaec3271a23a606ceb4127
+ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57828476"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58809941"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -40,27 +40,27 @@ ms.locfileid: "57828476"
 
 最初，Office 365 还只有[保留标签](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，用于在文档和电子邮件处于 Office 365 服务中时，对该内容进行分类以供审核和保留。 相比之下，通过 Azure 信息保护标记，可对文档和电子邮件应用一致分类和保护策略，无论它们在本地还是在云中。
 
-除了 Office 365 安全与合规中心的保留标签外，现在还可以选择创建和配置[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)的选项，该选项是在奥兰多的 Microsoft Ignite 2018 大会上推出的。 当前该选项处于预览状态，你可以将现有的 Azure 信息保护标签迁移到新的统一标签存储，以用作 Office 365 的敏感度标签。 
+除了以下其中一个管理中心的保留标签外，现在还可以选择创建和配置[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)的选项，该选项是在奥兰多的 Microsoft Ignite 2018 大会上推出的：Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。 当前该选项处于预览状态，你可以将现有的 Azure 信息保护标签迁移到新的统一标签存储，以用作 Office 365 的敏感度标签。 
 
 有关统一标记管理以及如何支持这些标记的详细信息，请阅读博客文章[宣布推出信息保护功能以帮助保护你的敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
 
-有关迁移现有标记的详细信息，请参阅[如何将 Azure 信息保护标记迁移到 Office 365 安全与合规中心](configure-policy-migrate-labels.md)。
+有关迁移现有标签的详细信息，请参阅[如何将 Azure 信息保护标签迁移到 Office 365](configure-policy-migrate-labels.md)。
 
 ## <a name="when-is-the-right-time-to-migrate-my-labels-to-office-365"></a>何时将我的标签迁移到 Office 365？
 
-Office 365 安全与合规中心中的敏感度标签已正式发布，但迁移 Azure 信息保护标签的选项仍处于预览状态。 将标签迁移到统一标签存储后，可以发布这些标签，然后由[支持统一标签的客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)使用。 目前，并非所有客户端都支持统一标签或已公开发布。
+管理中心（Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心）中的敏感度标签已正式发布，但迁移 Azure 信息保护标签的选项仍处于预览状态。 将标签迁移到统一标签存储后，可以发布这些标签，然后由[支持统一标签的客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)使用。 目前，并非所有客户端都支持统一标签或已公开发布。
 
 我们建议首先使用测试租户测试预览功能，然后再迁移生产租户。 此外：
 
 - **如果刚开始接触 Azure 信息保护：** 
     
-    由于 Azure 信息保护具有加速部署的默认标签，因此我们建议先迁移这些默认标签，然后从 Office 365 安全与合规中心进行管理。
+    由于 Azure 信息保护具有加速部署的默认标签，因此我们建议先迁移这些默认标签，然后从其中一个管理中心进行管理。
 
 - **如果并非刚开始接触 Azure 信息保护，但是正在定义和配置要使用的标签：**
     
-    我们建议先在 Azure 门户中完成标签配置，然后迁移这些标签。 此策略可以避免在迁移过程中重复标签，然后需要在安全与合规中心进行编辑。
+    我们建议先在 Azure 门户中完成标签配置，然后迁移这些标签。 此策略可以避免在迁移过程中重复使用标签，然后需要在其中一个管理中心进行编辑。
 
-在迁移标签之前，请确保你了解[安全与合规中心不支持的注意事项和标签设置](configure-policy-migrate-labels.md#considerations-for-unified-labels)。
+在迁移标签之前，请确保你了解[相关注意事项以及管理中心不支持的标签设置](configure-policy-migrate-labels.md#considerations-for-unified-labels)。
 
 另请参阅[安装哪个预览客户端来测试新功能？](faqs-infoprotect.md#which-preview-client-do-i-install-for-testing-new-functionality)
 
@@ -68,11 +68,11 @@ Office 365 安全与合规中心中的敏感度标签已正式发布，但迁移
 
 在 Azure 门户中迁移标签后：
 
-- 如果拥有[统一标签客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)，请转至 Office 365 安全与合规中心以发布这些标签，并为其配置策略设置。 对于未来的标签更改，请使用安全与合规中心。 统一标签客户端从安全与合规中心下载标签和策略设置。
+- 如果拥有[统一标签客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)，请转至其中一个管理中心（Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心）来发布这些标签，并为其配置策略设置。 为了进行标签更改，请使用以下其中一个管理中心。 统一标签客户端从这些管理中心下载标签和策略设置。
 
 - 如果拥有 [Azure 信息保护客户端](./rms-client/aip-client.md)，请继续使用 Azure 门户编辑标签和策略设置。 Azure 信息保护客户端继续从 Azure 下载标签和策略设置。
 
-- 如果同时拥有[统一标签客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)和 [Azure 信息保护客户端](./rms-client/aip-client.md)，则可以使用任一门户进行标签更改。 但是，要使 Azure 信息保护客户端选择你在安全与合规中心中所做的标签更改，则必须返回 Azure 门户：使用 Azure 门户中“Azure 信息保护 - 统一标签”边栏选项卡的“发布”选项。 
+- 如果同时拥有[统一标签客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)和 [Azure 信息保护客户端](./rms-client/aip-client.md)，则可以使用管理中心或 Azure 门户进行标签更改。 但是，要使 Azure 信息保护客户端获得你在管理中心中所做的标签更改，则必须返回 Azure 门户：使用 Azure 门户中“Azure 信息保护 - 统一标签”边栏选项卡的“发布”选项。 
 
 继续使用 Azure 门户进行[集中报告](reports-aip.md)和[扫描程序](deploy-aip-scanner-preview.md)。
 
@@ -106,7 +106,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
     
     若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。
 
-- **安全读者**：仅适用于 [Azure 信息保护分析](reports-aip.md)。 此 Azure Active Directory 管理员角色允许管理员查看标签的使用方式，监视用户对标记文档和电子邮件的访问权限以及对其分类所做的任何更改，并且可以识别包含必须受到保护的敏感信息的文档。 由于此功能使用 Azure Log Analytics，因此用户还必须具有支持的 [RBAC 角色](reports-aip.md#permissions-required-for-azure-information-protection-analytics)。
+- **安全读取者**：仅适用于 [Azure 信息保护分析](reports-aip.md)。 此 Azure Active Directory 管理员角色允许管理员查看标签的使用方式，监视用户对标记文档和电子邮件的访问权限以及对其分类所做的任何更改，并且可以识别包含必须受到保护的敏感信息的文档。 由于此功能使用 Azure Log Analytics，因此用户还必须具有支持的 [RBAC 角色](reports-aip.md#permissions-required-for-azure-information-protection-analytics)。
 
 - **安全管理员**：此 Azure Active Directory 管理员角色允许管理员在 Azure 门户中配置 Azure 信息保护的所有方面，同时还可以配置其他 Azure 服务的某些方面。 具有此角色的管理员无法运行任何[来自 AADRM 模块的 PowerShell cmdlet](administer-powershell.md)。
     

@@ -4,19 +4,19 @@ description: 对 Microsoft Azure 信息保护相关的单词、短语或缩略�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/02/2019
+ms.date: 04/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5fd820cb189d21d6d4b848547ad4eaafd42d5b96
-ms.sourcegitcommit: 1dec4a5884ee070cd5351ec229575f04f6eef7b8
+ms.openlocfilehash: bd136d42420f42521e9fe058e73b4d643715d254
+ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57206495"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58809924"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 
@@ -36,7 +36,7 @@ Azure 信息保护客户端|Azure 信息保护客户端，便于用户、管理�
 |Azure 信息保护标签|此项始终将分类值应用于文档和电子邮件，并可以保护这些内容。 应用标签时，标签信息存储在元数据中，供应用程序和服务读取，并可选择对其进行操作。|
 |Azure 信息保护策略|管理员定义的配置，便于客户端和服务使用 Azure 信息保护标签和策略设置。|
 |Azure 信息保护扫描程序|在 Windows Server 上运行的一项服务，便于你发现、分类和保护本地文件夹、网络共享以及 SharePoint Server 网站和库中的文档。|
-|Azure 信息保护统一标识客户端|目前处于预览状态：Windows 计算机的客户端，允许用户、管理员和服务使用 Office 365 安全性和符合性的敏感度标签和策略设置。|
+|Azure 信息保护统一标识客户端|目前处于预览状态：Windows 计算机的客户端，允许用户、管理员和服务使用 Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心中的敏感度标签和策略设置。|
 |Azure RMS|请参阅 *Azure Rights Management*。|
 |Azure 信息保护查看器|在 Windows 计算机和移动设备上运行的应用，用于显示受保护文件。|
 |Azure 权限管理|经常缩写为 Azure RMS。<br /><br />Azure 信息保护使用的一种 Azure 服务，它使用加密和策略来帮助保护文档、文件和电子邮件。  也称为 *Azure Rights Management 服务*。 之前的名称包括：<br /><br />- Windows Azure Active Directory Rights Management：常缩写为 Windows Azure AD Rights Management Service。<br /><br />- RMS Online：原始的建议名称，有时可能在错误消息和日志文件条目中看到。|

@@ -4,19 +4,19 @@ description: 了解并实施 Azure 信息保护中的 Azure Rights Management �
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/12/2018
+ms.date: 04/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1590fded6abab3ca2848d9eb216e9f49f35f0cfb
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 4a0583b4cc288385520d2990d6f297a58a81d1cc
+ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56255319"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58809721"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>为 Azure Rights Management 和发现服务或数据恢复配置超级用户
 
@@ -85,7 +85,7 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 虽然可以使用 Unprotect-RMSFile cmdlet 解密 PST 文件中的受保护内容，但请策略性地将此 cmdlet 用作电子数据展示过程的一部分。 在计算机上的大型文件上运行 Unprotect-RMSFile 是资源密集型的（内存和磁盘空间），而此 cmdlet 支持的最大文件大小为 5 GB。
 
-理想情况下，使用 [Office 365 电子数据展示](/office365/securitycompliance/ediscovery)在电子邮件中搜索和提取受保护的电子邮件和受保护的附件。 超级用户功能自动与 Exchange Online 集成，以便 Office 365 安全与合规中心中的电子数据展示可以在导出之前搜索加密项目，或在导出时解密加密电子邮件。
+理想情况下，使用 [Office 365 电子数据展示](/office365/securitycompliance/ediscovery)在电子邮件中搜索和提取受保护的电子邮件和受保护的附件。 超级用户功能自动与 Exchange Online 集成，以便 Office 365 安全与合规中心或 Microsoft 365 合规中心中的电子数据展示可以在导出之前搜索加密项目，或在导出时解密加密电子邮件。
 
 如果无法使用 Office 365 电子数据展示，则可能有另一个与 Azure Rights Management 服务集成的电子数据展示解决方案，对数据进行类似推理。 或者，如果你的电子数据展示解决方案无法自动读取和解密受保护的内容，则仍然可以在多步骤过程中使用此解决方案，以便更有效地运行 Unprotect-RMSFile：
 

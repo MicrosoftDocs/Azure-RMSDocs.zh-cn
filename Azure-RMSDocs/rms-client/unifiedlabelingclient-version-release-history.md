@@ -4,25 +4,25 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/28/2019
+ms.date: 04/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 699e2807c700b90b98bbc855dd8792aa607696f3
-ms.sourcegitcommit: 8ba63c0f4cd7d2ad7614af4ea9cfe8aec7fac4c0
+ms.openlocfilehash: 7eb7ffd98651ed35be7ecd8043e49c1d15a65e8e
+ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56956247"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58809703"
 ---
 # <a name="azure-information-protection-unified-labeling-client-version-release-information"></a>Azure 信息保护统一标签客户端：版本发布信息
 
 >适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 > [!NOTE]
-> 此客户端处于预览状态，随时可能更改。 客户端使用统一标签存储并从 Office 365 安全与合规中心下载带有标签的策略。 [详细信息](/Office365/SecurityCompliance/sensitivity-labels)
+> 此客户端处于预览状态，随时可能更改。 客户端使用统一标签存储并从以下管理中心下载带有标签的策略：Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心。 [详细信息](/Office365/SecurityCompliance/sensitivity-labels)
 
 可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=57440)下载最新预览版本的 Azure 信息保护统一标签客户端。
 
@@ -42,7 +42,7 @@ ms.locfileid: "56956247"
 
 - 从 Azure 信息保护客户端升级。
 
-- 手动、自动和建议标记：从 Office 365 安全与合规中心使用“自动标记”配置自动和建议标记。 有关详细信息，请参阅[将敏感度标签自动应用到内容](/Office365/SecurityCompliance/apply_sensitivity_label_automatically)。
+- 手动、自动和建议标记：有关为此客户端配置自动和建议标签的详细信息，请参阅[将敏感度标签自动应用于内容](/Office365/SecurityCompliance/apply_sensitivity_label_automatically)。
 
 - 文件资源管理器、用于分类和保护文件的右键单击操作、删除保护和应用自定义权限。
 
@@ -63,7 +63,7 @@ ms.locfileid: "56956247"
     - 用户降低分类级别或删除标签的理由提示
     - 标签的颜色
 
-- 从安全与合规中心进行策略刷新：
+- 管理中心中的策略刷新：
     - 在 Office 应用程序每次启动时刷新，每 4 小时刷新一次
     - 在右键单击以分类和保护文件或文件夹时刷新
     - 在运行 PowerShell cmdlet 以实现标记和保护时刷新
