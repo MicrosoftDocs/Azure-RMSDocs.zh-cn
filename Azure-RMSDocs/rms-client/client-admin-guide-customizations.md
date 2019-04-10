@@ -4,19 +4,19 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/20/2019
+ms.date: 03/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: de1febc25d5fa5518f7ffca5d51895bebd2cd56b
-ms.sourcegitcommit: 3a3f1051c5a58c2bd2f230f1c8ece919df3dc23e
+ms.openlocfilehash: 6f41e49b2a5183c7c264c5be60fc496f78a6e1dd
+ms.sourcegitcommit: b201730193b4e4e3a3254e7a0f673ddd7d6e3c84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58221076"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640356"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -55,6 +55,7 @@ ms.locfileid: "58221076"
 |LabelbyCustomProperty|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |LabelToSMIME|[将标签配置为在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook)|
 |日志级别|[更改本地日志记录级别](#change-the-local-logging-level)
+|LogMatchedContent|[禁止为一部分用户发送信息类型匹配项](#disable-sending-information-type-matches-for-a-subset-of-users)|
 |OutlookBlockUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookCollaborationTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookDefaultLabel|[为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook)|
@@ -755,6 +756,17 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 要标记带有上述某个分类值的 Office 文档，请将“SyncPropertyName”设置为“分类”），将“SyncPropertyState”设置为“单向”。 
 
 现在，当用户打开和保存这些 Office 文档之一时，文档标记为“公开”、“常规”或“高度机密\所有员工”，前提是 Azure 信息保护策略已包含有这些名称的标签。 如果没有带这些名称的标记，则不会标记文档。
+
+## <a name="disable-sending-information-type-matches-for-a-subset-of-users"></a>禁止为一部分用户发送信息类型匹配项
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)，并且需要 Azure 信息保护客户端的当前预览版本。
+
+当你选中用于收集敏感信息类型或自定义条件的内容匹配项的[Azure 信息保护分析](../reports-aip.md)对应的复选框时，默认由所有用户发送此信息。 如果你有一些不应发送此数据的用户，请在这些用户的[作用域内策略](../configure-policy-scope.md)中创建以下高级客户端设置： 
+
+- 注册表项：**LogMatchedContent**
+
+- Value：**禁用**
+
 
 ## <a name="limit-the-number-of-threads-used-by-the-scanner"></a>限制扫描程序使用的线程数
 

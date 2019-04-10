@@ -4,19 +4,19 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/02/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 34f64cc28762f8eb08089b188fbb40c7358e4807
-ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
+ms.openlocfilehash: 681d40f86598aaa328c41df9ec76b27c1c24d0c1
+ms.sourcegitcommit: 465709879998fcb78cd2a4efda559c43ed661dda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58809975"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233779"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -54,12 +54,6 @@ ms.locfileid: "58809975"
 如果 Azure 信息保护统一标记客户端目前的功能集和功能可满足你的业务需求，建议使用它进行测试。 如果无法满足你的业务需求，或者如果你已在 Azure 门户中配置了标签，而这些标签尚未[迁移到统一标记存储](configure-policy-migrate-labels.md)，请使用 Azure 信息保护客户端。
 
 有关详细信息，包括特性和功能的比较表，请参阅[选择使用哪个 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use)。
-
-## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>是否需要是全局管理员才能配置分类和标签？
-
-通过新引入的信息保护管理员角色，现在可以在主要的常见问题解答页面上回答这个问题：[是否必须是全局管理员才能配置 Azure 信息保护？我可以委派给其他管理员吗？](faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators)
-
-如果在安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)时选择安装演示策略，则无需登录门户即可查看和试用标签功能。 演示策略在本地安装 Azure 信息保护的默认策略，因此可以尝试为文档和电子邮件设置标签，但是，在未登录 Azure 门户的情况下将无法更改或添加新标签。 
 
 ## <a name="can-a-file-have-more-than-one-classification"></a>文件是否可以有多个分类？
 

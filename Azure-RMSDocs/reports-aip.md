@@ -3,21 +3,20 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 03/22/2019
+ms.date: 04/02/2019
 manager: barbkess
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: c7f862a7a16579b6d414c79015c42664e4066c29
-ms.sourcegitcommit: cf06c3854e6ee8645c3b71a0257bdb6a1b569843
+ms.openlocfilehash: e24b143c64957fb4336effc4cac6666b374f3a15
+ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58343037"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58809958"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -112,10 +111,19 @@ ms.locfileid: "58343037"
 
 此信息存储在组织拥有的 Azure Log Analytics 工作区中，并可供有权访问此工作区的用户从 Azure 信息保护独立查看。 有关详细信息，请参阅 [Azure 信息保护分析的必备权限](#permissions-required-for-azure-information-protection-analytics)部分。 要了解如何管理对工作区的访问，请参阅 Azure 文档中的[使用 Azure 权限管理对 Log Analytics 工作区的访问](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#manage-access-to-log-analytics-workspace-using-azure-permissions)部分。
 
-> [!NOTE]
-> Azure 信息保护的 Azure Log Analytics 工作区包含一个文档内容匹配复选框。 选中此复选框时，还将收集由敏感信息类型或自定义条件标识的实际数据。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 如果不想收集此数据，请不要选中此复选框。
->
-> 目前，此类信息未在报告中显示，但可以通过查询进行查看和检索。
+若要阻止 Azure 信息保护客户端发送此数据，请将“将审核数据发送到 Azure 信息保护日志分析”的[策略设置](configure-policy-settings.md)设置为“关闭”：
+
+- 若要使大多数用户发送此数据，而使一部分用户无法发送审核数据，请执行以下操作： 
+    - 在部分用户的作用域内策略中将“将审核数据发送到 Azure 信息保护日志分析”设置为“关闭”。 此配置专用于生产方案。
+    
+- 若要仅使一部分用户发送审核数据，请执行以下操作： 
+    - 在全局策略中将“将审核数据发送到 Azure 信息保护日志分析”设置为“关闭”，在部分用户的作用域内策略中设置为“打开”。 此配置专用于测试方案。
+
+#### <a name="content-matches-for-deeper-analysis"></a>更深入分析的内容匹配项 
+
+Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储由敏感信息类型或自定义条件标识的数据的复选框。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 如果不想发送此额外数据，请不要选中此复选框。 如果你希望大多数用户发送此额外数据，而一部分用户无法发送该数据，请选中此复选框并在该部分用户的作用域内策略中配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
+
+收集内容匹配项后，当你向下钻取到活动日志中的文件以显示活动详细信息时，这些匹配项项将显示在报表中。 也可以使用查询来查看和检索此信息。
 
 ## <a name="prerequisites-for-azure-information-protection-analytics"></a>Azure 信息保护分析的先决条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
@@ -135,42 +143,42 @@ ms.locfileid: "58343037"
 
 详细信息:
 
-1. 若要访问 Azure 门户中的 Azure 信息保护分析边栏选项卡，必须具有以下 [Azure AD 管理员角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一：
+1. 以下 [Azure AD 管理员角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一用于访问 Azure 信息保护分析边栏选项卡：
     
-    - 要创建 Log Analytics 工作区或创建自定义查询，必须具有以下角色之一：
+    - 若要创建 Log Analytics 工作区或创建自定义查询，必须具有以下角色之一：
     
         - **信息保护管理员**
         - **安全管理员**
         - **全局管理员**
     
-    - 要在创建 Log Analytics 工作区后查看数据，必须具有以下角色之一：
+    - 创建该工作区后，可以使用具有较少权限的以下角色来查看收集的数据：
     
         - **安全读取者**
-        - **信息保护管理员**
-        - **安全管理员**
-        - **全局管理员**
     
     > [!NOTE] 
     > 如果租户已迁移到统一标记存储，帐户必须是全局管理员或所列角色之一，并有权访问 Office 365 安全与合规中心。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
 
-2. 要访问 Azure Log Analytics 工作区，必须具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#manage-access-to-log-analytics-workspace-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一：
+2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#managing-access-to-log-analytics-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一才能访问 Azure Log Analytics 工作区：
     
-    - 若要创建 Log Analytics 工作区或创建自定义查询，必须具有以下角色之一：
+    - 若要创建该工作区或创建自定义查询，必须具有以下角色之一：
     
         - **Log Analytics 参与者**
-        - Azure 角色：所有者或参与者
+        - **参与者**
+        - **所有者**
     
-    - 要在创建 Log Analytics 工作区后查看工作区中的数据，必须具有以下角色之一：
+    - 创建该工作区后，可以使用具有较少权限的以下角色之一来查看收集的数据：
     
         - **Log Analytics 读者**
-        - Azure 角色：**读者**
+        - **读者**
 
 #### <a name="minimum-roles-to-view-the-reports"></a>查看报表至少需要的角色
 
-为 Azure 信息保护分析配置工作区后，查看报表至少需要具备以下两种角色：
+为 Azure 信息保护分析配置工作区后，查看 Azure 信息保护分析报表至少需要具备以下两种角色：
 
 - Azure AD 管理员角色：**安全读取者**
 - Azure 角色：**Log Analytics 读者**
+
+但是，许多组织的典型角色分配是安全读取者的 Azure AD 角色以及读者的 Azure 角色。
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>配置报表的 Log Analytics 工作区
 
@@ -189,6 +197,9 @@ ms.locfileid: "58343037"
 如果需要关于创建 Log Analytics 工作区的帮助，请参阅[在 Azure 门户中创建 Log Analytics 工作区](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace)。
 
 配置工作区后，即可开始查看报表。
+
+> [!NOTE]
+> 首次在报表中显示数据当前存在已知问题。 如果你遇到这种情况，请在全局策略中将“将审核数据发送到 Azure 信息保护日志分析”的[策略设置](configure-policy-settings.md)设置为“关闭”并保存策略。 然后，将相同设置更改为“打开”并保存策略。 客户端[下载更改](configure-policy.md#making-changes-to-the-policy)后，审核事件可能需要最多 30 分钟才能在 Log Analytics 工作区中显示。
 
 ## <a name="how-to-view-the-reports"></a>如何查看报告
 
@@ -222,3 +233,5 @@ Azure 信息保护的记录数据存储在下表中：**InformationProtectionLog
 
 ## <a name="next-steps"></a>后续步骤
 查看报表中的信息后，你可能会决定对你的 Azure 信息保护策略进行更改。 有关说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
+
+如果你有 Microsoft 365 订阅，则还可以在 Microsoft 365 合规中心和 Microsoft 365 安全中心中查看标签使用情况。 有关详细信息，请参阅[使用标签分析查看标签使用情况](/Office365/SecurityCompliance/label-analytics)。
