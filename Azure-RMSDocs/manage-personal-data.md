@@ -4,19 +4,19 @@ description: 有关 Azure 信息保护所使用的个人数据的信息以及如
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/23/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: aa8b1da968a0821fd889bbed54e6b7698857bcf2
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 33455ec0d6433c52164f27127838917c2850d2f3
+ms.sourcegitcommit: 465709879998fcb78cd2a4efda559c43ed661dda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259392"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233728"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
 
@@ -211,11 +211,13 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
     
 - **信息保护管理员**
 
+- **合规性管理员**
+
 - **安全管理员**
 
-- **全局管理员/公司管理员**
+- **全局管理员**
 
-只有通过 Azure Active Directory 分配有信息保护管理员角色或全局管理员/公司管理员角色的用户，或分配有 Azure Rights Management 服务的全局管理员角色的用户才能访问使用 AADRM 模块查看和指定的个人数据。  
+只有通过 Azure Active Directory 分配有信息保护管理员、合规性管理员或全局管理员角色的用户，或分配有 Azure 权限管理服务的全局管理员角色的用户才能访问你使用 AADRM 模块查看和指定的个人数据。  
 
 ## <a name="updating-personal-data"></a>更新个人数据
 

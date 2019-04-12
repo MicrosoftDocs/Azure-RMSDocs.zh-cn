@@ -3,20 +3,20 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 04/02/2019
 manager: barbkess
+ms.date: 04/08/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: e24b143c64957fb4336effc4cac6666b374f3a15
-ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
+ms.openlocfilehash: 735e7253701c3cbed8af7974d27cf241fb515c90
+ms.sourcegitcommit: ce2078712d111f102a72b3a8697121f1390bdf07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58809958"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59289411"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -25,13 +25,17 @@ ms.locfileid: "58809958"
 > [!NOTE]
 > 此功能目前处于预览状态，随时可能更改。
 
-下表中的 PDF 阅读器支持具有 .ppdf 文件扩展名的受保护的 PDF 文档和具有 .pdf 文件扩展名的旧格式。 此外：
+使用 Azure 信息保护分析的中心报告，帮助跟踪 Azure 信息保护标签的采用情况。 此外：
 
-- 下表中的 PDF 阅读器支持具有 .ppdf 文件扩展名的受保护的 PDF 文档和具有 .pdf 文件扩展名的旧格式。 
+- 监控组织中带标签和受保护的文档以及电子邮件
+
+- 标识包含组织中的敏感信息的文档
+
+- 监控用户对带标签文档和电子邮件的访问，并跟踪文档分类更改。
 
 - 确定包含敏感信息且若未保护则可能给组织带来风险的文档，并按照以下建议缓解风险。
 
-当前，你看到的数据是从 Azure 信息保护客户端和 Azure 信息保护扫描程序，以及运行 [Windows Defender 高级威胁防护 (Windows Defender ATP)](/windows/security/threat-protection/windows-defender-atp/overview) 的 Windows 计算机聚合的。
+你看到的数据是从 Azure 信息保护客户端和 Azure 信息保护扫描程序、运行 [Windows Defender 高级威胁防护 (Windows Defender ATP)](/windows/security/threat-protection/windows-defender-atp/overview) 的 Windows 计算机以及[支持统一标记的客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)汇总的。
 
 例如，你将能够看到以下数据：
 
@@ -58,10 +62,12 @@ ms.locfileid: "58809958"
     - 已对特定文件路径执行的标记操作
     
     - 特定应用程序已执行的标记操作，如文件资源管理器（右键单击）或 AzureInformationProtection PowerShell 模块
+    
+    - 有关更多信息，请进一步查看报告的文件以查看“活动详细信息”
 
 - 在“数据发现”报表中：
 
-    - 扫描的数据存储库或 Windows 10 计算机上的文件
+    - 哪些文件位于扫描的数据存储库、Windows 10 计算机或运行 Azure 信息保护预览版客户端或[支持统一标记的客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)的计算机上
     
     - 被标记和被保护的文件，以及按标签分类的文件的位置
     
@@ -77,10 +83,9 @@ ms.locfileid: "58809958"
         
         如果按照建议进行操作：在下一次扫描周期，文件可自动分类并自动受到保护。
 
-报表使用 [Azure Monitor](/azure/log-analytics/log-analytics-overview) 将数据存储在组织拥有的 Log Analytics 工作区中。 如果你熟悉查询语言，可以修改这些查询，并创建新报表和 Power BI 仪表板。 以下教程可能有助于你了解查询语言：[Azure Monitor 日志查询入门](/azure/azure-monitor/log-query/get-started-queries)。 
+报表使用 [Azure Monitor](/azure/log-analytics/log-analytics-overview) 将数据存储在组织拥有的 Log Analytics 工作区中。 如果你熟悉查询语言，可以修改这些查询，并创建新报表和 Power BI 仪表板。 以下教程可能有助于你了解查询语言：[Azure Monitor 日志查询入门](/azure/azure-monitor/log-query/get-started-queries)。
 
 有关详细信息，请参阅以下博客文章： 
-
 - [Microsoft 信息保护中有关所有数据的数据发现、报告和分析](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)
 
 - [通过 Azure 信息保护和 Windows Defender ATP 发现和保护敏感数据](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Discover-and-protect-sensitive-data-through-Azure-Information/ba-p/297292)
@@ -101,7 +106,7 @@ ms.locfileid: "58809958"
 
 - 对于文档：被标记的文档的文件路径和文件名。
 
-- 对于电子邮件：被标记的电子邮件的电子邮件主题、电子邮件发件人和电子邮件收件人。 
+- 对于电子邮件：带标签的电子邮件的电子邮件主题和电子邮件发件人。 
 
 - 在内容中已检测到的敏感信息类型（[预定义](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)和自定义）。
 
@@ -115,7 +120,7 @@ ms.locfileid: "58809958"
 
 - 若要使大多数用户发送此数据，而使一部分用户无法发送审核数据，请执行以下操作： 
     - 在部分用户的作用域内策略中将“将审核数据发送到 Azure 信息保护日志分析”设置为“关闭”。 此配置专用于生产方案。
-    
+
 - 若要仅使一部分用户发送审核数据，请执行以下操作： 
     - 在全局策略中将“将审核数据发送到 Azure 信息保护日志分析”设置为“关闭”，在部分用户的作用域内策略中设置为“打开”。 此配置专用于测试方案。
 
@@ -125,15 +130,16 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 收集内容匹配项后，当你向下钻取到活动日志中的文件以显示活动详细信息时，这些匹配项项将显示在报表中。 也可以使用查询来查看和检索此信息。
 
-## <a name="prerequisites-for-azure-information-protection-analytics"></a>Azure 信息保护分析的先决条件
+## <a name="prerequisites"></a>必备条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
 
 |要求|更多信息|
 |---------------|--------------------|
-|包含 Log Analytics 的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
+|包含 Log Analytics 且用于与 Azure 信息保护相同的租户的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有用于相同租户的 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
 |Azure 信息保护客户端（预览版或当前的正式发布版）或 Azure 信息保护统一标签客户端的预览版|如果尚未安装任何版本的客户端，可以从 Microsoft 下载中心下载和安装这些版本：<br /> - [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018) <br /> - [Azure 信息保护统一标记客户端](https://www.microsoft.com/en-us/download/details.aspx?id=57440)|
 |对于“发现和风险”报表： <br /><br />- 要显示本地数据存储中的数据，必须至少部署 Azure 信息保护扫描程序（预览版或当前的正式发布版）的一个实例 <br /><br />- 若要显示 Windows 10 计算机中的数据，这些计算机必须为最低版本 1809，你在使用 Windows Defender 高级威胁防护 (Windows Defender ATP)，并且你已从 Windows Defender 安全中心启用 Azure 信息保护集成功能|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关从 Windows Defender 安全中心配置和使用 Azure 信息保护集成功能的信息，请参阅 [Windows 中的信息保护概述](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview)。|
 |对于“建议”报告： <br /><br />- 要按照建议的操作通过 Azure 门户添加新的数据存储库，必须使用 Azure 信息保护扫描程序的当前预览版 |要部署扫描程序的预览版，请参阅[部署 Azure 信息保护扫描程序的预览版来自动分类和保护文件](deploy-aip-scanner-preview.md)。|
+
 
 ### <a name="permissions-required-for-azure-information-protection-analytics"></a>Azure 信息保护分析必备的先决条件
 
@@ -149,6 +155,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
     
         - **信息保护管理员**
         - **安全管理员**
+        - **合规性管理员**
         - **全局管理员**
     
     - 创建该工作区后，可以使用具有较少权限的以下角色来查看收集的数据：
@@ -156,7 +163,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
         - **安全读取者**
     
     > [!NOTE] 
-    > 如果租户已迁移到统一标记存储，帐户必须是全局管理员或所列角色之一，并有权访问 Office 365 安全与合规中心。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
+    > 如果你的租户已迁移到统一标记存储，则无法使用信息保护管理员角色。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
 
 2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#managing-access-to-log-analytics-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一才能访问 Azure Log Analytics 工作区：
     
@@ -178,7 +185,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 - Azure AD 管理员角色：**安全读取者**
 - Azure 角色：**Log Analytics 读者**
 
-但是，许多组织的典型角色分配是安全读取者的 Azure AD 角色以及读者的 Azure 角色。
+但是，许多组织的典型角色分配是 Azure AD 角色“安全读取者”以及 Azure 角色“读取者”。
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>配置报表的 Log Analytics 工作区
 
@@ -198,31 +205,35 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 配置工作区后，即可开始查看报表。
 
-> [!NOTE]
-> 首次在报表中显示数据当前存在已知问题。 如果你遇到这种情况，请在全局策略中将“将审核数据发送到 Azure 信息保护日志分析”的[策略设置](configure-policy-settings.md)设置为“关闭”并保存策略。 然后，将相同设置更改为“打开”并保存策略。 客户端[下载更改](configure-policy.md#making-changes-to-the-policy)后，审核事件可能需要最多 30 分钟才能在 Log Analytics 工作区中显示。
-
 ## <a name="how-to-view-the-reports"></a>如何查看报告
 
 在“Azure 信息保护”边栏选项卡中，找到“仪表板”菜单选项，然后选择以下选项之一：
 
-- **使用情况报表(预览版)**：使用此报表查看标签是如何使用的。 
+- **使用情况报表(预览版)**：使用此报表查看标签是如何使用的。
 
 - **活动日志(预览版)**：使用此报表查看用户执行的标记操作，以及设备上和对文件路径执行的标记操作。
     
-    此报表有“列”选项，可用于显示默认显示信息之外的更多活动信息。
+    此报表有“列”选项，可用于显示比默认显示更多的活动信息。 还可以选择它来显示“活动详细信息”，方便查看文件相关的更多详细信息。
 
-- **数据发现(预览版)**：使用此报表查看扫描程序或 Windows Defender ATP 找到的文件的相关信息。
-
-- 建议（预览）：使用此报告来确定包含敏感信息的文件，并按照建议缓解风险。
+- **数据发现(预览版)**：使用此报表查看扫描程序发现的带标签文件和受支持的终结点的相关信息。
     
-    此报表目前正在向租户推出，因此如果看不到它，请在几天后重试。
+    注意：发现终结点的功能正逐步面向租户推出。 当此功能面向租户推出后，你就能开始在此报表中看到受支持的终结点的数据。
+    
+    可以为 Azure 信息保护预览版客户端配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents)以报告包含敏感信息的文件。
+    
+    提示：在收集的信息中，你可能会发现用户从你不知道或当前未扫描的位置访问包含敏感信息的文件：
+    
+    - 如果这些位置在本地环境中，请考虑添加这些位置作为 Azure 信息保护扫描程序的附加数据存储库。
+    - 如果这些位置在云中，请考虑使用 Microsoft Cloud App Security 对其进行管理。 
+    
+- 建议（预览）：使用此报告来确定包含敏感信息的文件，并按照建议缓解风险。
     
     选择项目时，“查看数据”选项将显示触发了建议的审核活动。
 
 > [!NOTE]
 > 当“发送操作系统区域设置”为英语时，会出现一个当前已知的问题，即在路径和文件名中显示问号 (?)，而不是非 ASCII 字符。
 
-## <a name="how-to-modify-the-reports"></a>如何修改报表
+## <a name="how-to-modify-the-reports-and-create-custom-queries"></a>如何修改报表并创建自定义查询
 
 选择仪表板中的查询图标以打开“日志搜索”边栏选项卡： 
 
@@ -230,6 +241,54 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 
 Azure 信息保护的记录数据存储在下表中：**InformationProtectionLogs_CL**
+
+创建你自己的查询时，请使用已作为 InformationProtectionEvents 函数实现的友好架构名称。 这些函数派生自自定义查询支持的属性（某些属性仅供内部使用），它们的名称不会随时间的推移而发生更改，即使在更改基础属性以实现改进功能和新功能时也不例外。
+
+### <a name="friendly-schema-reference-for-event-functions"></a>事件函数的友好架构参考
+
+使用下表来标识可用于通过 Azure 信息保护分析进行自定义查询的事件函数的友好名称。
+
+|列名称|说明| |-----_-----|-----------| |Time|事件时间：采用格式 YYYY-MM-DDTHH:MM:SS 的 UTC| |User|用户：格式 UPN 或 DOMAIN\USER| |ItemPath|完整项目路径或电子邮件主题| |ItemName|文件名或电子邮件主题| |Method|标签分配的方法：手动、自动、建议、默认或强制| |Activity|审核活动：DowngradeLabel、UpgradeLabel、RemoveLabel、NewLabel、Discover、Access、RemoveCustomProtection、ChangeCustomProtection 或 NewCustomProtection | |LabelName|标签名称（未本地化）| |LabelNameBefore |更改前的标签名称（未本地化）| |ProtectionType|保护类型 [JSON] <br />{ <br />"Type": ["Template", "Custom", "DoNotForward"], <br />  "TemplateID":"GUID" <br /> } <br />| |ProtectionBefore|更改之前的保护类型 [JSON] | |InformationTypesMatches|在数据中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组，其中，空数组表示未找到任何信息类型，NULL 表示无可用信息| |MachineName |FQDN（如果可用）或主机名| |DeviceRisk|WDATP 设备风险评分（如果可用）| |Platform|设备平台（Win、OSX、Android、iOS） | |ApplicationName|应用程序友好名称| |AIPVersion|执行了审核操作的 Azure 信息保护客户端的版本| |TenantId|Azure AD 租户 ID | |AzureApplicationId|Azure AD 已注册应用程序 ID (GUID)| |ProcessName|托管 MIP SDK 的进程| |LabelId|标签 GUID 或 NULL| |IsProtected|是否受保护：是/否 | |ProtectionOwner |采用 UPN 格式的权限管理所有者| |LabelIdBefore|更改前的标签 GUID 或 NULL| |InformationTypesAbove55|在可信度为 55 或更高的数据中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组| |InformationTypesAbove65|在可信度为 65 或更高的数据中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组| |InformationTypesAbove75|在可信度为 75 或更高的数据中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组| |InformationTypesAbove85|在可信度为 85 或更高的数据中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组| |InformationTypesAbove95|在可信度为 95 或更高的数据中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组| |DiscoveredInformationTypes |在数据及其匹配内容（如果已启用）中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组，其中空数组表示未找到任何信息类型，NULL 表示无可用信息 | |ProtectedBefore|在更改前内容是否受保护：是/否| |ProtectionOwnerBefore|更改前的权限管理所有者| |UserJustification|将标签降级或删除时的理由| |LastModifiedBy|最后修改文件的用户，采用 UPN 格式。 仅可用于 Office 和 SharePoint Online| |LastModifiedDate|采用格式 YYYY-MM-DDTHH:MM:SS: 的 UTC仅可用于 Office & SharePoint Online|
+
+
+#### <a name="examples-using-informationprotectionevents"></a>使用 InformationProtectionEvents 的示例
+
+使用以下示例了解如何使用友好的架构来创建自定义查询。
+
+##### <a name="example-1-return-all-users-who-sent-audit-data-in-the-last-31-days"></a>示例 1：返回在过去 31 天内发送审核数据的所有用户 
+
+```
+InformationProtectionEvents 
+| where Time > ago(31d) 
+| distinct User 
+```
+
+ 
+##### <a name="example-2-return-the-number-of-labels-that-were-downgraded-per-day-in-the-last-31-days"></a>示例 2：返回在过去 31 天内按天降级的标签数 
+
+
+```
+InformationProtectionEvents 
+| where Time > ago(31d) 
+| where Activity == "DowngradeLabel"  
+| summarize Label_Downgrades_per_Day = count(Activity) by bin(Time, 1d) 
+ 
+```
+ 
+##### <a name="example-3-return-the-number-of-labels-that-were-downgraded-from-confidential-by-user-in-the-last-31-days"></a>示例 3：返回在过去 31 天内用户从“机密”降级的标签数 
+
+```
+
+InformationProtectionEvents 
+| where Time > ago(31d) 
+| where Activity == "DowngradeLabel"  
+| where LabelNameBefore contains "Confidential" and LabelName !contains "Confidential"  
+| summarize Label_Downgrades_by_User = count(Activity) by User | sort by Label_Downgrades_by_User desc 
+
+```
+
+在此示例中，仅当操作前的标签名包含名称“机密”且操作后的标签名不包含名称“机密”时，才会对降级的标签计数。 
+
 
 ## <a name="next-steps"></a>后续步骤
 查看报表中的信息后，你可能会决定对你的 Azure 信息保护策略进行更改。 有关说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。

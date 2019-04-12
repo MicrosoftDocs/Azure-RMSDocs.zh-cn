@@ -4,19 +4,19 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/29/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6f41e49b2a5183c7c264c5be60fc496f78a6e1dd
-ms.sourcegitcommit: b201730193b4e4e3a3254e7a0f673ddd7d6e3c84
+ms.openlocfilehash: 3cd27fc4a060b6c7328495ad46d53768c28ff223
+ms.sourcegitcommit: ce2078712d111f102a72b3a8697121f1390bdf07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640356"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59289462"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -54,7 +54,7 @@ ms.locfileid: "58640356"
 |EnablePDFv2Protection|[不使用 PDF 加密 ISO 标准来保护 PDF 文件](#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
 |LabelbyCustomProperty|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |LabelToSMIME|[将标签配置为在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook)|
-|日志级别|[更改本地日志记录级别](#change-the-local-logging-level)
+|LogLevel|[更改本地日志记录级别](#change-the-local-logging-level)
 |LogMatchedContent|[禁止为一部分用户发送信息类型匹配项](#disable-sending-information-type-matches-for-a-subset-of-users)|
 |OutlookBlockUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookCollaborationTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
@@ -67,6 +67,7 @@ ms.locfileid: "58640356"
 |PullPolicy|[对已断开连接计算机的支持](#support-for-disconnected-computers)
 |RemoveExternalContentMarkingInApp|[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)|
 |ReportAnIssueLink|[为用户添加“报告问题”](#add-report-an-issue-for-users)|
+|RunAuditInformationTypeDiscovery|[启用 Azure 信息保护分析以发现文档中的敏感信息](#enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents)|
 |RunPolicyInBackground|[开启在后台持续运行的分类](#turn-on-classification-to-run-continuously-in-the-background)|
 |ScannerConcurrencyLevel|[限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner)|
 |SyncPropertyName|[使用现有自定义属性标记 Office 文档](#label-an-office-document-by-using-an-existing-custom-property)|
@@ -255,7 +256,9 @@ ms.locfileid: "58640356"
 
 - Value：**True**
 
-如果不进行此设置，则从最高父标签找到的第一个子标签将应用于电子邮件。
+如果不进行此设置，则从具有最高分类的父标签找到的第一个标签将应用于电子邮件。 
+
+如果进行此设置，则具有最高分类的父标签中排在最后的子标签将应用于电子邮件。 如果需要对标签重新排序，以便为此方案应用所需的标签，请参阅[如何删除或重排 Azure 信息保护的标签](../configure-policy-delete-reorder.md)。
 
 ## <a name="enable-recommended-classification-in-outlook"></a>在 Outlook 中启用建议的分类
 
@@ -756,6 +759,28 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 要标记带有上述某个分类值的 Office 文档，请将“SyncPropertyName”设置为“分类”），将“SyncPropertyState”设置为“单向”。 
 
 现在，当用户打开和保存这些 Office 文档之一时，文档标记为“公开”、“常规”或“高度机密\所有员工”，前提是 Azure 信息保护策略已包含有这些名称的标签。 如果没有带这些名称的标记，则不会标记文档。
+
+## <a name="enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents"></a>启用 Azure 信息保护分析以发现文档中的敏感信息
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)，并且需要 Azure 信息保护客户端的当前预览版本。
+
+如果Azure 信息保护客户端保存的文档包含敏感信息，[Azure 信息保护分析](../reports-aip.md)可以发现并报告该内容。 默认情况下，此信息不会发送到 Azure 信息保护分析。
+
+若要更改此行为，以便发送此信息，请输入以下字符串：
+
+- 注册表项：RunAuditInformationTypeDiscovery
+
+- Value：**True**
+
+如果不设置此高级客户端设置，当用户访问了带标签的内容后，系统仍会从 Azure 信息保护客户端发送审核结果，但信息仅限于报告。
+
+例如：
+
+- 如果不进行此设置，可以看到用户访问的 Financial.docx 已被设置 Confidential \ Sales 标签。
+
+- 如果进行此设置，可以看到该 Financial.docx 包含 6 位数信用卡卡号。
+    
+    - 如果同时还启用[用于更深入分析的内容匹配](../reports-aip.md#content-matches-for-deeper-analysis)，那么，还能够查看具体的信用卡卡号。
 
 ## <a name="disable-sending-information-type-matches-for-a-subset-of-users"></a>禁止为一部分用户发送信息类型匹配项
 

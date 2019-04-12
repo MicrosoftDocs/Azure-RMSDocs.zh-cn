@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/02/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d6ffbce2dfba5a2d835808a21857eb396cfc1eb5
-ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
+ms.openlocfilehash: 52b72d7d05b405e0d4972dd4c4c1edfee3d9fe3b
+ms.sourcegitcommit: ce2078712d111f102a72b3a8697121f1390bdf07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58809856"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59289496"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -81,7 +81,10 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 新的高级客户端设置，仅当将策略设置配置为不显示自定义权限时才适用：当有一个文件受自定义权限保护时，请在文件资源管理器中显示自定义权限选项，以便用户可以查看和更改它们（如果他们具有更改保护设置的权限）。 [详细信息](client-admin-guide-customizations.md#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer)
 
-- Azure 信息保护分析的新高级客户端设置，用于当你已在 Azure 门户中选中此复选框以收集内容匹配项时阻止为一部分用户发送信息类型匹配项。 [详细信息](client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)
+- 两个新的高级客户端设置，适用于以下方案的 Azure 信息保护分析：
+    
+    - 当已在 Azure 门户中选中复选框以收集内容匹配项时，阻止为一部分用户发送信息类型匹配项。 [详细信息](client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)
+    - 对于发现报告，显示文件是否包含敏感信息。 [详细信息](client-admin-guide-customizations.md#enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents)
 
 **修补程序**：
 

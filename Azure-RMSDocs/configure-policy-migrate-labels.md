@@ -4,18 +4,18 @@ description: 为支持统一标签的客户端和服务将 Azure 信息保护标
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/03/2019
+ms.date: 04/09/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 46ba6b5e1cb9246074b2e5a241f06eef3b0d2501
-ms.sourcegitcommit: cf85764510e9980dfacaaa01bc4da37c4dbf5281
+ms.openlocfilehash: 0cc09e58d49fe9515de0109c726af08e12937dd1
+ms.sourcegitcommit: 729b12e1219c6dbf1bb2a6cfa7239f24d1d13cc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58887550"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59364566"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-office-365-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签
 
@@ -36,9 +36,11 @@ ms.locfileid: "58887550"
 
 ### <a name="important-information-about-administrative-roles"></a>有关管理角色的重要信息
 
-统一标记平台不支持安全管理员和信息保护管理员的 [Azure AD 角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)。 如果在组织中使用了这些管理角色，则在迁移这些标签之前，请将具有这些角色的用户添加到 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心的合规性管理员角色组或组织管理角色组。 或者，可以为这些用户创建新角色组并将保留管理或组织配置角色添加到此组。 有关说明，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center)。
+统一标记平台不支持 [Azure AD 角色“](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)信息保护管理员”。 如果在迁移标签之前在组织中使用此管理角色，请将具有此角色的用户添加到 Azure AD 角色“安全管理员”或“合规性管理员”。 如果需要有关此步骤的帮助，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center)。 另外，还可以在 Azure AD 门户、Microsoft 365 安全中心和 Microsoft 365 合规中心分配这些角色。
 
-如果未使用其中一个配置向这些用户授予对管理中心的访问权限，则在迁移标签后将无法访问 Azure 门户中的标签和策略。
+或者，若要使用角色，可以在管理中心为这些用户创建新角色组，然后向该组中添加“敏感度标签管理员”或“组织配置”角色。
+
+如果未使用其中一个配置向这些用户授予对管理中心的访问权限，则在迁移标签后将无法在 Azure 门户中配置 Azure 信息保护。
 
 迁移标签后，租户的全局管理员可以继续管理 Azure 门户和管理中心中的标签和策略。
 
@@ -83,6 +85,8 @@ ms.locfileid: "58887550"
 
 使用下表来确定已迁移的标签的哪些配置设置不受 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 合规中心的支持。 如果有使用这些设置的标签，迁移完成时，请在其中一个管理中心发布标签前使用最后一列中的管理员指南。
 
+如果不确定如何配置标签，请在 Azure 门户中查看其设置。 如果需要有关此步骤的帮助，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
+
 Azure 信息保护客户端可以使用列出的所有标签设置，而不会出现任何问题，因为它们继续从 Azure 门户下载标签。
 
 |标签配置|受统一标记客户端的支持| 管理中心指南|
@@ -100,7 +104,9 @@ Azure 信息保护客户端可以使用列出的所有标签设置，而不会�
 
 ### <a name="comparing-the-behavior-of-protection-settings-for-a-label"></a>比较标签保护设置的行为
 
-使用下表来确定标签的同一保护设置如何表现出不同的行为，这些行为具体取决于使用标签的是 Azure 信息保护客户端（正式发布版或当前预览版）、Azure 信息保护统一标签客户端的当前预览版，还是内置有标签（也称为“本机 Office 标签”）的 Office 应用。 
+使用下表来确定标签的同一保护设置如何表现出不同的行为，这些行为具体取决于使用标签的是 Azure 信息保护客户端（正式发布版或当前预览版）、Azure 信息保护统一标签客户端的当前预览版，还是内置有标签（也称为“本机 Office 标签”）的 Office 应用。
+
+如果不确定如何配置保护设置，请在 Azure 门户中的“保护”边栏选项卡上查看其设置。 如果需要有关此步骤的帮助，请参阅[配置保护设置标签](configure-policy-protection.md#to-configure-a-label-for-protection-settings)。
 
 下表未列出具有相同行为的保护设置，以下情形例外：
 - 使用具有内置标签的 Office 应用时，除非还安装了 Azure 信息保护统一标签客户端，否则标签在文件资源管理器中不可见。
@@ -140,6 +146,8 @@ Azure 信息保护客户端可以使用列出的所有标签设置，而不会�
 2. 从“管理”菜单选项，选择“统一标记(预览)”。
 
 3. 在“Azure 信息保护 - 统一标签”边栏选项卡上，选择“激活”并按照联机说明进行操作。
+    
+    如果用于激活的选项不可用，请检查“统一标记状态”：如果看到“已激活”，表明租户已在使用统一标记存储，且无需迁移标签。
 
 成功迁移的标签现在可被[支持统一标签的客户端和服务](#clients-and-services-that-support-unified-labeling)使用。 但必须先在以下其中一个管理中心发布这些标签：Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。
 

@@ -4,17 +4,17 @@ description: 在 Azure 信息保护策略中配置适用于所有用户、所有
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/29/2019
+ms.date: 04/09/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: b85cf3fc1a1f78732c928b40cb09b4781dc42168
-ms.sourcegitcommit: 8fa7d2e6b3e900fec128af57105995d5fb0cc761
+ms.openlocfilehash: c0a3acebb9f95d0044e1ad4b5cbea637e7742201
+ms.sourcegitcommit: 729b12e1219c6dbf1bb2a6cfa7239f24d1d13cc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58617816"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59364532"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
@@ -83,7 +83,7 @@ ms.locfileid: "58617816"
         
        - 在 Office 应用程序中：从功能区选择“开始”选项卡 >“保护”组 >“保护” > “自定义权限”
         
-       - 从文件资源管理器：右键单击 >“分类并保护” > “自定义权限”
+       - 从文件资源管理器中：右键单击 >“分类并保护” > “自定义权限”
     
    - **提供 Azure 信息保护客户端“告知详情”网页的自定义 URL**：当用户在其 Office 应用程序中从“开始”选项卡选择“保护” > “帮助和反馈”时，将在“帮助和反馈”部分的“Microsoft Azure 信息保护”对话框中看到此链接。 默认情况下，此链接将转到 [Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)网站。 如果希望此链接转到备选网页，可输入 HTTP 或 HTTPS（推荐）URL。 不进行检查来验证输入的自定义 URL 是否可供访问或是否可在所有设备上正确显示。
         

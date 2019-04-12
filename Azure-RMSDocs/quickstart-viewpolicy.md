@@ -1,27 +1,27 @@
 ---
 title: 快速入门 - 在 Azure 门户中开始使用 Azure 信息保护 - AIP
-description: 如果你的组织刚刚开始使用 Azure 信息保护，请从此处开始将服务添加到 Azure 门户，确认已激活保护服务并查看策略。
+description: 如果你的组织刚刚开始使用 Azure 信息保护，请从此处开始将服务添加到 Azure 门户，确认已激活保护服务并查看标签和策略设置。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/29/2019
+ms.date: 04/09/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 5981fe8d0cd7e7cd1739036ff78739bd64514322
-ms.sourcegitcommit: 8fa7d2e6b3e900fec128af57105995d5fb0cc761
+ms.openlocfilehash: 1d857fc3282b0851e80765fe3f53a2315ed59b5f
+ms.sourcegitcommit: 729b12e1219c6dbf1bb2a6cfa7239f24d1d13cc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58617783"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59364634"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
-本快速入门介绍如何将 Azure 信息保护添加到 Azure 门户，确认已激活保护服务，并查看组织的默认策略。 
+本快速入门包含以下内容：将 Azure 信息保护添加到 Azure 门户、确认保护服务已激活、创建默认标签（如果没有标签），并查看 Azure 信息保护的策略设置。
 
-在 5 分钟内即可完成此快速入门。
+在 10 分钟内即可完成本快速入门。
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -52,7 +52,7 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
 
 ## <a name="confirm-the-protection-service-is-activated"></a>确认保护服务已激活
 
-现在已为新租户自动激活保护服务，但最好确认它不需要手动激活。 
+现在已为新客户自动激活保护服务，但最好确认它不需要手动激活。 
 
 1. 在“Azure 信息保护”边栏选项卡上，选择“管理” > “保护激活”。
 
@@ -70,28 +70,70 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
 
     激活完成后，信息栏将显示“激活已成功完成”。
 
-## <a name="view-your-organizations-default-policy---labels-and-policy-settings"></a>查看组织的默认策略 - 标签和策略设置
+## <a name="create-labels---if-necessary"></a>创建标签（如有必要）
 
-使用 Azure 门户初次连接到 Azure 信息保护服务时，将创建该租户的默认策略。 默认策略包含可以按原样使用或自定义的标签和设置。
+你的组织可能已有标签，因为已为租户自动创建标签，或者因为 Office 365 安全与合规中心、Microsoft 安全中心或 Microsoft 合规中心具有敏感度标签。 我们一起来看一下：
 
-1. 选择“分类” > “策略” > “全局”，显示为租户创建的默认 Azure 信息保护策略。
+1. 选择“分类” > “标签”：
     
-2. 花几分钟时间了解显示的标签：
+    如果你看到选项“生成默认标签”，表明你还没有任何标签：
     
-   - 用于分类的标签：“个人”、“公共”、“常规”、“机密”和“高度机密”。 最后两个标签展开可显示子标签，这提供了有关如何使分类具有子类别的示例：
+     ![Azure 信息保护无默认标签](./media/info-protect-nodefaultlabels.png)
     
-   - 在默认配置中，某些标签未配置视觉标记。 视觉标记即页脚、页眉和水印。 某些标签可能设置了保护，具体取决于默认策略。 例如： 
+    如果看不到用于生成默认标签的此选项，表明你已有标签，它们可能类似于下图中 Azure 信息保护的默认标签：
     
-     ![Azure 信息保护快速入门教程步骤 3 - 默认策略](./media/info-protect-policy-default-labelsv2.png)
-    
-3. “配置要对信息保护最终用户显示和应用的设置”部分中的标签后面还显示一些策略设置。 例如，未设置默认标签，文档和电子邮件无需具备标签，且用户在更改标签时无需提供理由：
-    
-    ![Azure 信息保护快速入门教程步骤 3 - 默认策略](./media/info-protect-policy-default-settings-quickstart.png) 
+    ![Azure 信息保护默认标签](./media/info-protect-defaultlabels.png)
 
-4. 由于只查看标签和设置，可以关闭已打开的任何边栏选项卡。
+2. 如果你已有标签，请转到下一节以查看标签。 如果还没有标签，请选择“生成默认标签”选项。
+
+4. 然后，若要为所有用户发布标签，请从“分类” > “策略” > “全局”中：
+    
+    a. 选择“添加或删除标签”。
+    
+    b. 从“策略: 添加或删除标签”边栏选项卡中，选择所有标签，然后选择“确定”。
+    
+    c. 再从“策略:全局”边栏选项卡上，选择“保存”。
+
+## <a name="view-your-labels"></a>查看标签
+
+选择“分类” > “标签”，并花一些时间熟悉“Azure 信息保护 - 标签”边栏选项卡上显示的标签。
+
+如果它们不与上一节图中的标签类似，说明你使用的不是 Azure 信息保护中的默认标签，而是从 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心创建的标签。
+
+> [!TIP]
+> 如果不需要使用自定义标签，但要使用 Azure 信息保护中的默认标签，请执行以下操作： 
+> - 删除自定义标签，然后会将在“标签”边栏选项卡中看到用于生成默认标签的选项，如[上一节](#create-labels---if-necessary)中所述。 
+
+从“Azure 信息保护 - 标签”边栏选项卡上：
+
+- 用于分类的默认标签包括：“个人”、“公共”、“常规”、“机密”和“高度机密”。 最后两个标签展开可显示子标签，这提供了有关如何使分类具有子类别的示例。
+
+- 从“MARKING”和“PROTECTION”列中，可以看到某些标签已配置视觉标记。 视觉标记即页脚、页眉和水印。 某些标签可能还设置了保护。 
+
+例如： 
+
+![默认标签的 Azure 信息保护快速入门概述](./media/info-protect-policy-default-labelsv2.png)
+
+如果选择一个标签，将在新的边栏选项卡上看到该标签配置的详细信息。
+
+## <a name="view-your-policy-settings"></a>查看策略设置
+
+首次使用 Azure 门户连接到 Azure 信息保护服务时，将始终为你创建可供 Azure 信息保护客户端使用的默认策略设置。 对于此客户端，我们查看的策略设置和标签会下载到 Azure 信息保护策略中的客户端。
+
+如果使用 Azure 信息保护统一标记客户端，那么此客户端不会使用这些策略设置。 相反，此客户端从 Office 365 合规和安全中心、Microsoft 365 合规中心或 Microsoft 365 安全中心下载标签和策略设置。
+
+若要查看默认的 Azure 信息保护策略设置，请执行以下操作：
+
+1. 选择“分类” > “策略” > “全局”，以显示为租户创建的默认 Azure 信息保护策略设置。
+    
+2. 在“配置要对信息保护最终用户显示和应用的设置”部分中的标签后面，你将看到策略设置。 例如，未设置默认标签，文档和电子邮件无需具备标签，且用户在更改标签时无需提供理由：
+    
+    ![Azure 信息保护策略全局设置](./media/info-protect-policy-default-settingsv3.png)
+
+3. 由于只查看设置，因此可以在门户中关闭已打开的任何边栏选项卡。
 
 ## <a name="next-steps"></a>后续步骤
 
-现在可以在 Azure 门户中看到标签和策略设置，在下一步执行以下教程可能很有帮助：[编辑策略并为 Azure 信息保护创建新标签](infoprotect-quick-start-tutorial.md)。
+现在可以在 Azure 门户中看到默认标签和策略设置，在下一步中，以下教程可能很有帮助：[编辑策略并为 Azure 信息保护创建新标签](infoprotect-quick-start-tutorial.md)。
 
 或者，有关配置 Azure 信息保护策略的所有方面的详细说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
