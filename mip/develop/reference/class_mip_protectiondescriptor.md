@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 922ff8811e5cb71d6d4d5920dfec80eadbcbc744
-ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
+ms.openlocfilehash: 6f4bb83950a4745739a1663950a52d05c51f7f4d
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58809788"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573286"
 ---
 # <a name="class-mipprotectiondescriptor"></a>类 mip::ProtectionDescriptor 
 与某段内容相关的保护说明。
@@ -26,6 +26,7 @@ public std::string GetName() const  |  获取保护名称。
 public std::string GetDescription() const  |  获取保护说明。
 public std::string GetTemplateId() const  |  获取保护模板 ID（若有）。
 public std::string GetLabelId() const  |  获取标签 ID（若有）。
+public std::string GetContentId() const  |  如果有，请获取的内容 ID。
 public std:: vector\<UserRights\> GetUserRights() 常量  |  获取用户到权限映射的集合。
 public std:: vector\<UserRoles\> GetUserRoles() 常量  |  获取用户到角色映射的集合。
 public bool DoesContentExpire() const  |  检查内容或不具有过期时间。
@@ -73,6 +74,12 @@ public std:: map\<std:: string、 std:: string\> GetSignedAppData() 常量  |  �
   
 **返回**:[标签](class_mip_label.md)ID 仅 ProtectionDescriptors 将此属性填充为预先存在的受保护的内容。 它是在使用受保护内容时由服务器填充的字段。
   
+### <a name="getcontentid-function"></a>GetContentId 函数
+如果有，请获取的内容 ID。
+
+  
+**返回**:内容 ID
+  
 ### <a name="getuserrights-function"></a>GetUserRights 函数
 获取用户到权限映射的集合。
 
@@ -113,7 +120,7 @@ public std:: map\<std:: string、 std:: string\> GetSignedAppData() 常量  |  �
 获取已加密的应用特定数据。
 
   
-**返回**:应用特定数据： [ProtectionHandler](class_mip_protectionhandler.md)可能持有的加密的保护服务的特定于应用的数据字典。 此加密数据独立于可通过 [ProtectionDescriptor::GetSignedAppData](class_mip_protectiondescriptor.md#getsignedappdata-function) 访问的签名数据
+**返回**:应用特定数据： [ProtectionHandler](class_mip_protectionhandler.md)可能持有的加密的保护服务的特定于应用的数据字典。 此加密的数据的已签名的数据可通过 ProtectionDescriptor::GetSignedAppData 访问无关。
   
 ### <a name="getsignedappdata-function"></a>GetSignedAppData 函数
 获取已签名的应用特定数据。

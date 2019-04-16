@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 3f98e106bb7fcc30e333b70345687260add6bd22
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: f9ff2448b3ae09e094189e85b15b2fabad12321e
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57333600"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573252"
 ---
 # <a name="class-mippolicyprofileobserver"></a>class mip::PolicyProfile::Observer 
 [Observer](class_mip_policyprofile_observer.md) 接口，供客户端获取配置文件相关事件的通知。

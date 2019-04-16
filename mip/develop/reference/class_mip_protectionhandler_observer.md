@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 00d74069374850a562547cd161ad4c5f15927b0a
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: f6d71bc4f4c04ba305b59b4dcb3b5850f858716b
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57333715"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573184"
 ---
 # <a name="class-mipprotectionhandlerobserver"></a>类 mip::ProtectionHandler::Observer 
 接收 [ProtectionHandler](class_mip_protectionhandler.md) 相关通知的接口。

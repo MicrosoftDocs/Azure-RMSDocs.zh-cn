@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: d4e06495df39565971b29427d05a56ebe852c3df
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 318b87405ad9e6d6291f82a0bec3da6031e04ccd
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57332814"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59574336"
 ---
 # <a name="class-mipexecutionstate"></a>class mip::ExecutionState 
 执行引擎所需的所有状态的接口。
@@ -23,16 +23,16 @@ ms.locfileid: "57332814"
 --------------------------------|---------------------------------------------
 public std::string GetNewLabelId() const  |  获取应在文档上应用的敏感度标签 ID。
 public ActionSource GetNewLabelActionSource() const  |  获取新标签操作的源。
-public std::string GetContentIdentifier() const  |  获取描述文档的内容标识符。 文件的示例: [路径 \ 文件名] 的电子邮件的示例: [发送方使用者:]。
-public ContentState GetContentState() const  |  获取应用程序与之交互时内容的状态。
+public std::string GetContentIdentifier() const  |  获取描述文档的内容说明。 文件的示例: [路径 \ 文件名] 的电子邮件的示例: [发送方使用者:]。
+公共虚拟 DataState GetDataState() 常量  |  获取应用程序与之交互时内容的状态。
 public std::pair\<bool, std::string\> IsDowngradeJustified() const  |  实现应传递是否提供了降级现有标签的合理理由。
 public AssignmentMethod GetNewLabelAssignmentMethod() const  |  获取新标签的分配方法。
-public std:: vector\<std:: pair\<std:: string、 std:: string\> \> GetNewLabelExtendedProperties() 常量  |  返回新标签的扩展属性。
+公共虚拟 std:: vector\<std:: pair\<std:: string、 std:: string\> \> GetNewLabelExtendedProperties() 常量  |  返回新标签的扩展属性。
 public std:: vector\<std:: pair\<std:: string、 std:: string\> \> GetContentMetadata (const std:: vector\<std:: string\>& 名称、 const std:: vector\<std:: string\>& namePrefixes) 常量  |  从内容中获取元数据项。
 public std::shared_ptr\<ProtectionDescriptor\> GetProtectionDescriptor() const  |  获取保护描述符。
 public ContentFormat GetContentFormat() const  |  获取内容格式。
 public ActionType GetSupportedActions() const  |  获取描述所有受支持操作类型的掩码枚举。
-public virtual std::map\<std::string, std::shared_ptr\<ClassificationResult\>\> GetClassificationResults(const std::vector\<std::shared_ptr\<ClassificationRequest\>\> &) const  |  返回分类结果的映射。
+public virtual std::shared_ptr\<ClassificationResults\> GetClassificationResults(const std::vector\<std::shared_ptr\<ClassificationRequest\>\> &) const  |  返回分类结果的映射。
 公共虚拟 std:: map\<std:: string、 std:: string\> GetAuditMetadata() 常量  |  返回应用程序特定审核键-值对的映射。
   
 ## <a name="members"></a>成員
@@ -50,13 +50,13 @@ public virtual std::map\<std::string, std::shared_ptr\<ClassificationResult\>\> 
 **返回**:操作源。
   
 ### <a name="getcontentidentifier-function"></a>GetContentIdentifier 函数
-获取描述文档的内容标识符。 文件的示例: [路径 \ 文件名] 的电子邮件的示例: [发送方使用者:]。
+获取描述文档的内容说明。 文件的示例: [路径 \ 文件名] 的电子邮件的示例: [发送方使用者:]。
 
   
-**返回**:要应用于内容的内容标识符。
+**返回**:要应用于内容的内容说明。
 审核功能将此值用作内容的用户可读说明
   
-### <a name="getcontentstate-function"></a>GetContentState 函数
+### <a name="getdatastate-function"></a>GetDataState 函数
 获取应用程序与之交互时内容的状态。
 
   
@@ -76,7 +76,7 @@ public virtual std::map\<std::string, std::shared_ptr\<ClassificationResult\>\> 
   
 **返回**:分配方法 STANDARD、 PRIVILEGED、 AUTO。 
   
-**另请参阅**: [mip::AssignmentMethod](mip-enums-and-structs.md#assignmentmethod-enum)
+**另请参阅**: [mip::AssignmentMethod](mip-enums-and-structs.md#assignmentmethod)
   
 ### <a name="getnewlabelextendedproperties-function"></a>GetNewLabelExtendedProperties 函数
 返回新标签的扩展属性。
@@ -102,7 +102,7 @@ public virtual std::map\<std::string, std::shared_ptr\<ClassificationResult\>\> 
   
 **返回**:默认情况下，电子邮件 
   
-**另请参阅**: [mip::ContentFormat](mip-enums-and-structs.md#contentformat-enum)
+**另请参阅**: [mip::ContentFormat](mip-enums-and-structs.md#contentformat)
   
 ### <a name="getsupportedactions-function"></a>GetSupportedActions 函数
 获取描述所有受支持操作类型的掩码枚举。
@@ -115,12 +115,12 @@ public virtual std::map\<std::string, std::shared_ptr\<ClassificationResult\>\> 
 返回分类结果的映射。
 
 参数：  
-* **classificationId**：分类 ID 的列表。 
+* **classificationIds**： 分类 Id 的列表。 
 
 
 
   
-**返回**:分类结果的列表。
+**返回**:分类结果的列表。 如果在执行任何分类周期，则返回 nullptr。
   
 ### <a name="getauditmetadata-function"></a>GetAuditMetadata 函数
 返回应用程序特定审核键-值对的映射。

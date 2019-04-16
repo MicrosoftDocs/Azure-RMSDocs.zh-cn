@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: ffc2adc3e48de3f7efc7426c1276ccba8f0a70f3
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: ce8ef7df12cdc9823a62234b5dadaaacdb7fed37
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57332797"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573779"
 ---
 # <a name="class-mippolicyengine"></a>class mip::PolicyEngine 
 此类提供适用于所有引擎功能的接口。
@@ -30,6 +30,9 @@ public std::\<PolicyHandler\> CreatePolicyHandler (bool isAuditDiscoveryEnabled)
 public void SendApplicationAuditEvent(const std::string& level, const std::string& eventType, const std::string& eventData)  |  将特定于应用程序的事件记录到审核管道。
 public const std:: string & GetPolicyDataXml() 常量  |  获取策略数据描述设置、 标签和规则与此策略相关联的 XML。
 public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCustomSettings() 常量  |  获取自定义设置的列表。
+public const std:: string & GetPolicyId() 常量  |  获取策略 id。
+公共 bool HasClassificationRules() 常量  |  获取策略是否自动或建议的规则。
+公共 std::chrono::time_point\<std::chrono::system_clock\> GetLastPolicyFetchTime() 常量  |  获取上次提取策略的时间。
   
 ## <a name="members"></a>成員
   
@@ -77,25 +80,25 @@ public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCust
 创建策略处理程序以在文件的执行状态下执行与策略相关的功能。
 
 参数：  
-* **一个**: bool，表示是否已启用审核发现
+* **一个**: bool，表示是否已启用审核发现。
 
 
 
   
 **返回**:策略处理程序。
-应用程序需要的文档生存期内保留策略处理程序对象
+应用程序必须文档的生存期内保留策略处理程序对象。
   
 ### <a name="sendapplicationauditevent-function"></a>SendApplicationAuditEvent 函数
 将特定于应用程序的事件记录到审核管道。
 
 参数：  
-* **级别**： 的日志级别：信息/错误/警告 
+* **级别**： 的日志级别：信息/错误/警告。 
 
 
-* **eventType**：事件类型的说明 
+* **eventType**： 事件的类型的说明。 
 
 
-* **eventData**：与事件关联的数据
+* **eventData**： 与事件相关联的数据。
 
 
   
@@ -103,10 +106,28 @@ public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCust
 获取策略数据描述设置、 标签和规则与此策略相关联的 XML。
 
   
-**返回**:策略数据的 XML
+**返回**:策略数据的 XML。
   
 ### <a name="getcustomsettings-function"></a>GetCustomSettings 函数
 获取自定义设置的列表。
 
   
-**返回**:向量的自定义设置
+**返回**:自定义设置的向量。
+  
+### <a name="getpolicyid-function"></a>GetPolicyId 函数
+获取策略 id。
+
+  
+**返回**:一个字符串，表示策略 ID
+  
+### <a name="hasclassificationrules-function"></a>HasClassificationRules 函数
+获取策略是否自动或建议的规则。
+
+  
+**返回**:一个布尔值指示，如果那里任何自动或 recommandation 规则在策略中
+  
+### <a name="getlastpolicyfetchtime-function"></a>GetLastPolicyFetchTime 函数
+获取上次提取策略的时间。
+
+  
+**返回**:上次提取策略的时间

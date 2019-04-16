@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: c180072eec94b2f71471c10b4344d65321ef49c6
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 677de5965c0fe506af3731c2b54b4faaab225471
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57332406"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573371"
 ---
 # <a name="class-mipmetadataaction"></a>class mip::MetadataAction 
 将元数据信息添加到内容的 [Action](class_mip_action.md)。
@@ -23,7 +23,7 @@ ms.locfileid: "57332406"
 public const std:: vector\<std:: string\>& GetMetadataToRemove() 常量  |  获取应从内容中删除的元数据名称的列表。
 public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetMetadataToAdd() 常量  |  获取应添加到内容的元数据名称/值对。
 public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
-  
+
 ## <a name="members"></a>成員
   
 ### <a name="getmetadatatoremove-function"></a>GetMetadataToRemove 函数
@@ -37,7 +37,8 @@ public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型�
 
   
 **返回**:Const std:: vector < std:: pair < std:: string、 std:: string >> 和删除元数据应在添加元数据之前完成。
-  
+
+
 ### <a name="gettype-function"></a>GetType 函数
 获取[操作](class_mip_action.md)类型。
 

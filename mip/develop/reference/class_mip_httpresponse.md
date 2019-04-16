@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: f7b16658135e802776cde37fdef19c82f7c198e6
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 06bc3f52bdecd85412dc0c35df46c7847167aa1b
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57329805"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573738"
 ---
 # <a name="class-miphttpresponse"></a>类 mip::HttpResponse 
 描述单个 HTTP 响应的接口，由客户端应用在重写 [HttpDelegate](class_mip_httpdelegate.md) 时实现。
@@ -20,11 +20,18 @@ ms.locfileid: "57329805"
 ## <a name="summary"></a>总结
  成員                        | 说明                                
 --------------------------------|---------------------------------------------
+public const std::string& GetId() const  |  获取响应 id。
 public int32_t GetStatusCode() const  |  获取响应状态代码。
-public const std::string& GetBody() const  |  获取请求正文。
+public const std:: vector\<uint8_t\>& GetBody() 常量  |  获取请求正文。
 public const std:: map\<std:: string、 std:: string，CaseInsensitiveComparator\>& GetHeaders() 常量  |  获取请求标头。
   
 ## <a name="members"></a>成員
+  
+### <a name="getid-function"></a>GetId 函数
+获取响应 id。
+
+  
+**返回**:响应 ID 对应[HttpRequest](class_mip_httprequest.md)将有相同的 ID
   
 ### <a name="getstatuscode-function"></a>GetStatusCode 函数
 获取响应状态代码。

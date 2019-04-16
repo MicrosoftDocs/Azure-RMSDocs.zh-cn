@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 9e3080e4fcfd8553d04acc1533fc16d8bb1640f3
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 367626955ba1652b20b372efd309d15304e5336f
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330672"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573439"
 ---
 # <a name="class-mipaddcontentheaderaction"></a>class mip::AddContentHeaderAction 
 指定添加内容头的操作类。
@@ -28,7 +28,7 @@ public const std::string& GetFontColor() const  |  获取用于显示内容页�
 public ContentMarkAlignment GetAlignment() const  |  获取内容页眉的对齐方式。
 public int GetMargin() const  |  从底部获取标头的边距。
 public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
-  
+
 ## <a name="members"></a>成員
   
 ### <a name="getuielementname-function"></a>GetUIElementName 函数
@@ -67,14 +67,14 @@ public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型�
   
 **返回**:ContentMarkAlignment 枚举器：左侧 |右 |中心。 
   
-**另请参阅**:[ContentMarkAlignment](mip-enums-and-structs.md#contentmarkalignment-enum)
+**另请参阅**:[ContentMarkAlignment](mip-enums-and-structs.md#contentmarkalignment)
   
 ### <a name="getmargin-function"></a>GetMargin 函数
 从底部获取标头的边距。
 
   
 **返回**:从文档 （例如，10 毫米） 的下边距。
-  
+
 ### <a name="gettype-function"></a>GetType 函数
 获取[操作](class_mip_action.md)类型。
 

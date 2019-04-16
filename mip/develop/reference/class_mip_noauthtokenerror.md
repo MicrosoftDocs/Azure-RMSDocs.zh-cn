@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: bd53a752861cd43b783c8d028d5ae05edaf82f60
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 8dca2231931ab33f243b71850757b2c009c492c9
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57332763"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59574280"
 ---
 # <a name="class-mipnoauthtokenerror"></a>类 mip::NoAuthTokenError 
 用户无法获取由于缺少身份验证令牌内容的访问权限。
@@ -64,4 +64,3 @@ public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
 
 参数：  
 * **msg**：错误消息。
-

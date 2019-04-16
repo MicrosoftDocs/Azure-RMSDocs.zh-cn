@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 997b3fbfb7dc302f7a47b5cfb281bdaf37c11295
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: ee0545346eef2c143946496f56af77b7081b1e06
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57332667"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59574347"
 ---
 # <a name="class-mipfilehandler"></a>class mip::FileHandler 
 适用于所有文件处理函数的接口。
@@ -28,10 +28,10 @@ public void DeleteLabel(const LabelingOptions& labelingOptions)  |  从文件删
 public void SetProtection (const std::\<ProtectionDescriptor\>& protectionDescriptor)  |  （根据 protectionDescriptor->GetProtectionType）设置对文件的自定义权限或基于模板的权限。
 public void SetProtection (const std:: vector\<uint8_t\>& serializedPublishingLicense，const std:: vector\<uint8_t\>& serializedProtectionInfo)  |  设置文件 （根据 serializedPublishingLicense 和 serializedProtectionInfo） 可以自定义的或基于模板的权限。
 public void RemoveProtection()  |  删除文件保护。 如果文件已添加标签，标签将丢失。
-public void CommitAsync(const std::string& outputFilePath, const std::shared_ptr\<void\>& context) | 将所做的更改写入到 \|outputFilePath\ 参数指定的文件 |  参数。
-public void CommitAsync (const std::\<Stream\>& outputStream，const std:: shared_ptr\<void\>& 上下文) | 将所做的更改写入到 \|outputStream\ 参数指定的流。 |  参数。
+public void CommitAsync(const std::string& outputFilePath, const std::shared_ptr\<void\>& context) | 将所做的更改写入到 \|outputFilePath\ 参数指定的文件 |  参数指定的网络接口启用 iSCSI 访问。
+public void CommitAsync (const std::\<Stream\>& outputStream，const std:: shared_ptr\<void\>& 上下文) | 将所做的更改写入到 \|outputStream\ 参数指定的流。 |  参数指定的网络接口启用 iSCSI 访问。
 public void GetDecryptedTemporaryFileAsync(const std::shared_ptr\<void\>& context)  |  返回的临时文件 （将在可能的情况删除）-表示已解密的内容的路径。
-public void NotifyCommitSuccessful(const std::string& contentIdentifier)  |  在将更改提交到磁盘后调用。
+public void NotifyCommitSuccessful(const std::string& actualFilePath)  |  在将更改提交到磁盘后调用。
 public std::string GetOutputFileName()  |  基于原始文件名和累积的更改，计算输出文件名称和扩展名。
   
 ## <a name="members"></a>成員
@@ -84,7 +84,7 @@ public std::string GetOutputFileName()  |  基于原始文件名和累积的更�
 在将更改提交到磁盘后调用。
 
 参数：  
-* **contentIdentifier**: 文件的示例："C:\mip-sdk-for-cpp\files\audit.docx" [path\filename] example for an email:"RE:Audit design:user1@contoso.com" [Subject:Sender] 
+* **actualFilePath**:输出文件的实际文件路径 
 
 
 触发审核事件

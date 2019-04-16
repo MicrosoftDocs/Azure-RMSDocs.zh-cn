@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 8121763106c9f46022264a7eea3bc16e363e523c
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: f3a8d50d55dc615a7aa81e8686b356bfc2d41654
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330468"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573932"
 ---
 # <a name="class-mipaddwatermarkaction"></a>class mip::AddWatermarkAction 
 指定添加水印的操作类。
@@ -27,7 +27,7 @@ public const std::string& GetFontName() const  |  获取用于显示水印的字
 public int GetFontSize() const  |  获取用于显示水印的字号。
 public const std::string& GetFontColor() const  |  获取用于显示水印的字体颜色。
 public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
-  
+
 ## <a name="members"></a>成員
   
 ### <a name="getuielementname-function"></a>GetUIElementName 函数
@@ -65,7 +65,7 @@ public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型�
 
   
 **返回**:字符串 (例如，"#000000") 形式的字体颜色。
-  
+
 ### <a name="gettype-function"></a>GetType 函数
 获取[操作](class_mip_action.md)类型。
 

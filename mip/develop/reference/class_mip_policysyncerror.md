@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 46cf8e147a250b0e79f4def89055d2408055c24b
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: f1a437ad7c94d515c369cd63d17874b3c53400ba
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57333499"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573669"
 ---
 # <a name="class-mippolicysyncerror"></a>class mip::PolicySyncError 
 同步策略数据尝试失败。
@@ -64,4 +64,3 @@ public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
 
 参数：  
 * **msg**：错误消息。
-

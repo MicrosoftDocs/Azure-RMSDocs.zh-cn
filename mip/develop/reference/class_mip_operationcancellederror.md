@@ -1,21 +1,21 @@
 ---
-title: class mip::InternalError
-description: 记录 mip::internalerror 类的 Microsoft 信息保护 (MIP) SDK。
+title: 类 mip::OperationCancelledError
+description: 记录 mip::operationcancellederror 类的 Microsoft 信息保护 (MIP) SDK。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 94f82e84b2907f4aa91100964cfb4d1b287b116e
+ms.openlocfilehash: 69dc2c0242f446450e7933ebfdf80bc52035b358
 ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/15/2019
-ms.locfileid: "59573966"
+ms.locfileid: "59574459"
 ---
-# <a name="class-mipinternalerror"></a>class mip::InternalError 
-内部错误。 如果在执行期间出现意外，就会抛出此错误。
+# <a name="class-mipoperationcancellederror"></a>类 mip::OperationCancelledError 
+已取消操作。
   
 ## <a name="summary"></a>总结
  成員                        | 说明                                

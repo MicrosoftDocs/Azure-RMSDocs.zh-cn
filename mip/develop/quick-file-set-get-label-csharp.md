@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.date: 01/09/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 3ee178c493b99cfecd3f6cd04a680f47acf45412
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 395c46ce1979b2ef670aa27e9329c5219ca63e13
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57333239"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573740"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C#)
 
@@ -37,12 +37,14 @@ ms.locfileid: "57333239"
    ```csharp
      //Set paths and label ID
      string inputFilePath = "<input-file-path>";
+     string actualFilePath = inputFilePath;
      string labelId = "<label-id>";
      string outputFilePath = "<output-file-path>";
+     string actualOutputFilePath = outputFilePath;
 
      //Create a file handler for that file
      //Note: the 2nd inputFilePath is used to provide a human-readable content identifier for admin auditing. 
-     var handler = Task.Run(async () => await fileEngine.CreateFileHandlerAsync(inputFilePath, inputFilePath, ContentState.Rest, true)).Result;
+     var handler = Task.Run(async () => await fileEngine.CreateFileHandlerAsync(inputFilePath, actualFilePath, true)).Result;
 
      //Set Labeling Options
      LabelingOptions labelingOptions = new LabelingOptions()
@@ -58,7 +60,7 @@ ms.locfileid: "57333239"
      var result = Task.Run(async () => await handler.CommitAsync(outputFilePath)).Result;
 
      // Create a new handler to read the labeled file metadata
-     var handlerModified = Task.Run(async () => await fileEngine.CreateFileHandlerAsync(outputFilePath, outputFilePath, ContentState.Rest, true)).Result;
+     var handlerModified = Task.Run(async () => await fileEngine.CreateFileHandlerAsync(outputFilePath, actualOutputFilePath, true)).Result;
 
      // Get the label from output file
      var contentLabel = handlerModified.Label;

@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 778eada67cc244f1f0c81f8246fe33b0aa46140e
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 5f91cc121212bb15691477e05322b124025234d6
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330707"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573388"
 ---
 # <a name="class-mipprivilegedrequirederror"></a>class mip::PrivilegedRequiredError 
 由于当前标签被指定为特权操作（相当于管理员操作），因此无法替代。
@@ -64,4 +64,3 @@ public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
 
 参数：  
 * **msg**：错误消息。
-

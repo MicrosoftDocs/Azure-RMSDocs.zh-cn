@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 11/01/2018
 ms.author: tommos
-ms.openlocfilehash: 54e5249f7624cbc020451752d39ccb9f0b507f3a
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: dbe6db5fe54f9d26d072d3f6fcad1f2595d61040
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257682"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59574137"
 ---
 # <a name="implement-executionstate"></a>实现 ExecutionState
 
@@ -32,7 +32,7 @@ ms.locfileid: "56257682"
 | 成员                                                                           | 返回                                                                                                              |
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | `std::string GetNewLabelId()`                                                      | 返回要应用于对象的标签 ID。                                                                    |
-| `mip::ContentState GetContentState()`                                              | 返回对象的 mip::ContentState。                                                                         |
+| `mip::DataState GetDataState()`                                              | 返回对象的 mip::DataState。                                                                         |
 | `std::pair<bool, std::string> IsDowngradeJustified()`                              | 返回一个用于表示降级是否合理以及依据的 std::pair。                                 |
 | `std::string GetContentIdentifier()`                                               | 返回内容标识符。 应当是人工可读的标识符，指示对象的位置。   |
 | `mip::ActionSource GetNewLabelActionSource()`                                      | 返回标签的 mip::ActionSource。                                                                          |
@@ -53,7 +53,7 @@ struct ExecutionStateOptions {
     std::string newLabelId;
     std::string contentIdentifier;
     mip::ActionSource actionSource = mip::ActionSource::MANUAL;
-    mip::ContentState contentState = mip::ContentState::REST;
+    mip::DataState dataState = mip::DataState::USE;
     mip::AssignmentMethod assignmentMethod = mip::AssignmentMethod::STANDARD;
     bool isDowngradeJustified = false;
     std::string downgradeJustification;

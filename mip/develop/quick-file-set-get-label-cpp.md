@@ -8,22 +8,22 @@ ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.date: 01/18/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 50fe4bce04b28440609c558297d8a3e39087e557
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 2ac8c6bbfba6f460ac016a103f32f20856bff2aa
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57332831"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573830"
 ---
-# <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 （c + +）
+# <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C++)
 
 本快速入门介绍如何使用更多的 MIP 文件 API。 使用上一个快速入门中列出的敏感度标签之一，可以使用文件处理程序对文件设置/获取标签。 文件处理程序类会公开设置/获取标签的各种操作，或受支持文件类型的保护。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
-- 完整[快速入门：列出敏感度标签 （c + +）](quick-file-list-labels-cpp.md)第一种方法生成初学者 Visual Studio 解决方案中，若要列出组织的敏感度标签。 此“设置和获取敏感度标签”快速入门基于前一个。
+- 完整[快速入门：列出敏感度标签 (C++)](quick-file-list-labels-cpp.md)第一种方法生成初学者 Visual Studio 解决方案中，若要列出组织的敏感度标签。 此“设置和获取敏感度标签”快速入门基于前一个。
 - 可选：审阅[MIP SDK 中文件处理程序](concept-handler-file-cpp.md)概念。
 
 ## <a name="implement-an-observer-class-to-monitor-the-file-handler-object"></a>实现观察者类以监视文件处理程序对象
@@ -32,7 +32,7 @@ ms.locfileid: "57332831"
 
 为文件处理程序的观察器，创建一个基本实现，通过扩展 SDK 的`mip::FileHandler::Observer`类。 稍后会实例化并使用观察者，以监视文件处理程序操作。
 
-1. 打开 Visual Studio 解决方案中的上一个工作的"快速入门：列出敏感度标签 （c + +）"一文。
+1. 打开 Visual Studio 解决方案中的上一个工作的"快速入门：列出敏感度标签 (C++)"一文。
 
 2. 向项目中添加一个新类，这将为你生成标头/.h 和实现/.cpp 文件：
 
@@ -105,17 +105,16 @@ ms.locfileid: "57332831"
 
    ```cpp
    // Set up async FileHandler for input file operations
-   string filePathIn = "<input-file-path>";
-   string contentIdentifier = "<content-identifier>";
+   string inputFilePath = "<input-file-path>";
+   string actualFilePath = "<content-identifier>";
    std::shared_ptr<FileHandler> handler;
    try
    {
         auto handlerPromise = std::make_shared<std::promise<std::shared_ptr<FileHandler>>>();
         auto handlerFuture = handlerPromise->get_future();
         engine->CreateFileHandlerAsync(
-             filePathIn, 
-             contentIdentifier,
-             mip::ContentState::REST, 
+             inputFilePath,
+             actualFilePath,                       
              true, 
              std::make_shared<FileHandlerObserver>(), 
              handlerPromise);
@@ -168,15 +167,14 @@ ms.locfileid: "57332831"
    system("pause");
 
    // Set up async FileHandler for output file operations
-   contentIdentifier = "<content-identifier>";
+   actualFilePath = "<content-identifier>";
    try
    {
         auto handlerPromise = std::make_shared<std::promise<std::shared_ptr<FileHandler>>>();
         auto handlerFuture = handlerPromise->get_future();
         engine->CreateFileHandlerAsync(
-             filePathOut, 
-             contentIdentifier,
-             mip::ContentState::REST,
+             filePathOut,
+             actualFilePath,
              true,
              std::make_shared<FileHandlerObserver>(),
              handlerPromise);
@@ -209,7 +207,7 @@ ms.locfileid: "57332831"
 
 4. 您只需在中粘贴，如下所示，使用字符串常量的源代码中的占位符值替换：
 
-   | 占位符 | ReplTest1 |
+   | 占位符 | 值 |
    |:----------- |:----- |
    | \<input-file-path\> | 测试输入文件的完整路径，例如：`"c:\\Test\\Test.docx"`。 |
    | \<content-identifier\> | 内容是人工可读标识符。 例如： <ul><li>对于文件，请考虑路径 \ 文件名： `"c:\Test\Test.docx"`</li><li>一封电子邮件，请考虑使用者： 发件人： `"RE: Audit design:user1@contoso.com"`</li></ul> |

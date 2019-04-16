@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 11/01/2018
 ms.author: tommos
-ms.openlocfilehash: f091cfd220ac8886a6bf26903deb7b97062cffd7
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: df0d51d976f7f900011688d2f328f3a2ddb1e378
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258583"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573137"
 ---
 # <a name="auditing-in-the-mip-sdk-file-api"></a>MIP SDK 文件 API 中的审核
 
@@ -49,7 +49,7 @@ Azure 信息保护管理门户提供对管理员报表的访问。 这些报表�
 // Create FileHandler with discovery enabled
 auto handlerPromise = std::make_shared<std::promise<std::shared_ptr<FileHandler>>>();
 auto handlerFuture = handlerPromise->get_future();
-fileEngine->CreateFileHandlerAsync(filePath, contentId, mip::ContentState::REST, true /*AuditDiscoveryEnabled*/, make_shared<FileHandlerObserver>(), createFileHandlerPromise);
+fileEngine->CreateFileHandlerAsync(inputFilePath, actualFilePath, true /*AuditDiscoveryEnabled*/, make_shared<FileHandlerObserver>(), createFileHandlerPromise);
 auto handler = handlerFuture.get();
 
 // Read label. This generates the discovery audit.

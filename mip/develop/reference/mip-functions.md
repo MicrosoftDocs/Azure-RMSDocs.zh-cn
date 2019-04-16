@@ -7,41 +7,49 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.date: 01/28/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 5827c1f2779ec22dd798ec26c12a9977e10065c1
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: ced8339fa93ec349644a1f9e386489bb02c8eff0
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57332729"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59574017"
 ---
 # <a name="functions"></a>函数
 
-## <a name="summary"></a>总结
+## <a name="summary"></a>总结 
 
+### <a name="namespace-mip"></a>Namespace mip
 | 按命名空间范围函数   | 说明                                |
 |--------------------------------|---------------------------------------------|
-**Namespace `mip` :** |
 public std:: string GetAssignmentMethodString （AssignmentMethod 方法）       |  将 AssignmentMethod 枚举转换为字符串说明。
 public static std::string GetActionSourceString(ActionSource actionSource)       |  获取操作的源名称。
-public static std::string GetContentStateString(mip::ContentState state)       |  获取内容的状态名称。
+公共静态 std:: string GetDataStateString （mip::DataState 状态）       |  获取内容的状态名称。
 public const std::string& GetCustomSettingPolicyDataName()       |  用于明确指定策略数据的设置的名称。
 public const std::string& GetCustomSettingExportPolicyFileName()       |  用于明确指定将 SCC 策略数据导出到的文件路径的设置的名称。
 public const std:: string & GetCustomSettingSensitivityTypesDataName()       |  若要显式指定敏感度数据的设置的名称。
 public const std::string& GetCustomSettingPolicyDataFile()       |  用于明确指定策略数据文件路径的设置的名称。
 public const std::string& GetCustomSettingSensitivityTypesDataFile()       |  若要显式指定敏感度类型数据的文件路径的设置的名称。
-公共 MIP_API void __CDECL ReleaseAllResources()       |  在关闭之前释放所有资源（线程等）。
+public const std:: string & GetCustomSettingExternalLabelsEnabled()       |  允许启用"外部标签"功能设置的名称。
+公共 MIP_API void __CDECL ReleaseAllResources()       |  释放之前关闭所有资源 （线程等）。
 公共 MIP_API std:: shared_ptr\<mip::Stream\> CreateStreamFromStdStream (const std:: shared_ptr\<std::istream\>& stdIStream)       |  通过 std::istream 创建 [Stream](class_mip_stream.md)。
 公共 MIP_API std:: shared_ptr\<mip::Stream\> CreateStreamFromStdStream (const std:: shared_ptr\<std::ostream\>& stdOStream)       |  通过 std::ostream 创建 [Stream](class_mip_stream.md)。
 公共 MIP_API std:: shared_ptr\<mip::Stream\> CreateStreamFromStdStream (const std:: shared_ptr\<std::iostream\>& stdIOStream)       |  通过 std::iostream 创建 [Stream](class_mip_stream.md)。
 public MIP_API std::shared_ptr\<mip::Stream\> CreateStreamFromBuffer(uint8_t* buffer, const int64_t size)       |  通过缓冲区创建 [Stream](class_mip_stream.md)。
- | 
-**Namespace `mip::auditmetadatakeys` :** |
+
+
+### <a name="namespace-mipauditmetadatakeys"></a>Namespace mip::auditmetadatakeys
+ 成員                        | 说明                                
+--------------------------------|---------------------------------------------
 public std:: string Sender()       |  审核字符串表示形式中的元数据密钥。
 public std:: string Recipients()       | _尚无记录。_
 public std:: string LastModifiedBy()       | _尚无记录。_
 public std::string LastModifiedDate()       | _尚无记录。_
- | 
-**Namespace `mip::rights` :** |
+
+
+### <a name="namespace-miprights"></a>Namespace mip::rights
+
+ 成員                        | 说明                                
+--------------------------------|---------------------------------------------
 public std::string Owner()       |  获取“所有者”权限的字符串标识符。
 public std::string View()       |  获取“查看”权限的字符串标识符。
 public std::string AuditedExtract()       |  获取“已审核的提取”权限的字符串标识符。
@@ -56,16 +64,17 @@ public std::string Forward()       |  获取“转发”权限的字符串标识
 public std:: vector\<std:: string\> EmailRights()       |  获取适用于电子邮件的权限列表。
 public std::vector\<std::string\> EditableDocumentRights()       |  获取适用于文档的权限列表。
 public std:: vector\<std:: string\> CommonRights()       |  获取适用于所有方案的权限列表。
- | 
-**Namespace `mip::roles` :** |
+
+### <a name="namespace-miproles"></a>Namespace mip::roles
+
+ 成員                        | 说明                                
+--------------------------------|---------------------------------------------
 public std::string Viewer()       |  获取“查看者”角色的字符串标识符。
 public std::string Reviewer()       |  获取“审阅者”角色的字符串标识符。
 public std::string Author()       |  获取“作者”角色的字符串标识符。
 public std::string CoOwner()       |  获取“共有者”角色的字符串标识符。
 
-
-
-## <a name="namespace-mip"></a>Namespace `mip`
+## <a name="namespace-mip"></a>Namespace mip
 
 ### <a name="getassignmentmethodstring-function"></a>GetAssignmentMethodString 函数
 将 AssignmentMethod 枚举转换为字符串说明。
@@ -89,7 +98,7 @@ public std::string CoOwner()       |  获取“共有者”角色的字符串标
   
 **返回**:操作源的字符串表示形式。
   
-### <a name="getcontentstatestring-function"></a>GetContentStateString 函数
+### <a name="getdatastatestring-function"></a>GetDataStateString 函数
 获取内容的状态名称。
 
 参数：  
@@ -130,23 +139,16 @@ public std::string CoOwner()       |  获取“共有者”角色的字符串标
   
 **返回**:自定义设置键。
   
+### <a name="getcustomsettingexternallabelsenabled-function"></a>GetCustomSettingExternalLabelsEnabled 函数
+允许启用"外部标签"功能设置的名称。
+
+  
+**返回**:自定义设置键。
+  
 ### <a name="releaseallresources-function"></a>ReleaseAllResources 函数
-在关闭之前释放所有资源（线程等）。
-如果应用程序延迟加载 MIP 动态库，则必须在应用程序显式卸载这些 MIP 库之前调用此函数，以避免死锁。 例如，在 win32 中，调用此函数必须之前显式调用卸载通过 FreeLibrary 或 __FUnloadDelayLoadedDLL2 MIP Dll。 在调用此函数之前，应用程序必须释放对所有 MIP 对象（例如，配置文件、引擎、处理程序）的引用。
-  
-### <a name="operator-function"></a>运算符 |函数
-ProtectionHandlerCreationOptions 位 OR 运算符。
-
-参数：  
-* :左的值 
-
-
-* **b**:正确的值
-
-
-
-  
-**返回**:按位 OR ProtectionHandlerCreationOptions
+释放之前关闭所有资源 （线程等）。
+在进程终止之前，必须一次调用此函数。 它提供 MIP 取消本身初始化稍后其中仍然保证其依赖的库加载和线程联接是仍有可能的机会。 在调用此函数之前，应用程序必须释放对所有 MIP 对象（例如，配置文件、引擎、处理程序）的引用。
+如果未调用此函数，MIP 将自然地卸载一部分的标准过程拆解。 在某些平台上这可能会导致死锁 （例如，线程不能加入上响应处理拆卸 win32） 或出现故障 （例如，在 win32 上延迟加载库的 DLL 卸载顺序不受 MIP，因此其依赖的库可能已卸载 MIP 关闭代码执行，导致无效的读取失败时）。
   
 ### <a name="createstreamfromstdstream-function"></a>CreateStreamFromStdStream 函数
 通过 std::istream 创建 [Stream](class_mip_stream.md)。
@@ -195,7 +197,7 @@ ProtectionHandlerCreationOptions 位 OR 运算符。
 
 
 
-## <a name="namespace-mipauditmetadatakeys"></a>Namespace `mip::auditmetadatakeys`
+## <a name="namespace-mipauditmetadatakeys"></a>Namespace mip::auditmetadatakeys
 
 ### <a name="sender-function"></a>发件人函数
 审核字符串表示形式中的元数据密钥。
@@ -206,6 +208,7 @@ _尚无记录。_
   
 ### <a name="lastmodifiedby-function"></a>LastModifiedBy 函数
 _尚无记录。_
+
   
 ### <a name="lastmodifieddate-function"></a>LastModifiedDate 函数
 _尚无记录。_
@@ -214,7 +217,8 @@ _尚无记录。_
 
 
 
-## <a name="namespace-miprights"></a>Namespace `mip::rights`
+
+## <a name="namespace-miprights"></a>Namespace mip::rights
 
 ### <a name="owner-function"></a>所有者函数
 获取“所有者”权限的字符串标识符。
@@ -301,9 +305,7 @@ _尚无记录。_
 **返回**:在所有方案中应用的权限的列表
 
 
-
-
-## <a name="namespace-miproles"></a>Namespace `mip::roles`
+## <a name="namespace-miproles"></a>Namespace mip::roles
 
 ### <a name="viewer-function"></a>查看器函数
 获取“查看者”角色的字符串标识符。

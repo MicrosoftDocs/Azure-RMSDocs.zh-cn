@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 2621d4ec6f8aa8bf20c6fa3bb2bc0350d88333f4
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 2481ee7d42f00ce5b33529b15e17b22ba6556b0e
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57332593"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59574034"
 ---
 # <a name="class-mipfileenginesettings"></a>class mip::FileEngine::Settings 
   
@@ -32,7 +32,9 @@ public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCust
 public void SetSessionId(const std::string& sessionId)  |  设置引擎会话 ID。
 public const std::string& GetSessionId() const  |  返回引擎会话 ID。
 public void SetProtectionCloudEndpointBaseUrl(const std::string& protectionCloudEndpointBaseUrl)  |  设置用于指定云边界的保护云终结点基 URL。
-public const std::string& GetProtectionCloudEndpointBaseUrl() const  |  获取 cloudEndpointBaseUrl。
+public const std::string& GetProtectionCloudEndpointBaseUrl() const  |  获取保护云终结点基 url。
+public void SetPolicyCloudEndpointBaseUrl(const std::string& policyCloudEndpointBaseUrl)  |  设置的策略云终结点基 url，用于指定云边界。
+public const std:: string & GetPolicyCloudEndpointBaseUrl() 常量  |  获取策略的云终结点基 url。
 public void SetProtectionOnlyEngine(const bool protectionOnly)  |  设置仅保护引擎指示器 - 无策略/标签。
 public const bool IsProtectionOnlyEngine() const  |  返回仅保护引擎指示器 - 无策略/标签。
 公共 bool IsLoadSensitivityTypesEnabled() 常量  |  获取指示是否启用了负载敏感度标签的标志。
@@ -117,10 +119,24 @@ public const bool IsProtectionOnlyEngine() const  |  返回仅保护引擎指示
 
   
 ### <a name="getprotectioncloudendpointbaseurl-function"></a>GetProtectionCloudEndpointBaseUrl function
-获取 cloudEndpointBaseUrl。
+获取保护云终结点基 url。
 
   
 **返回**:与保护终结点相关联的基 url
+  
+### <a name="setpolicycloudendpointbaseurl-function"></a>SetPolicyCloudEndpointBaseUrl 函数
+设置的策略云终结点基 url，用于指定云边界。
+
+参数：  
+* **policyCloudEndpointBaseUrl**:与策略终结点相关联的基 url
+
+
+  
+### <a name="getpolicycloudendpointbaseurl-function"></a>GetPolicyCloudEndpointBaseUrl 函数
+获取策略的云终结点基 url。
+
+  
+**返回**:与策略终结点相关联的基 url
   
 ### <a name="setprotectiononlyengine-function"></a>SetProtectionOnlyEngine 函数
 设置仅保护引擎指示器 - 无策略/标签。

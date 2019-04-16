@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.collection: M365-security-compliance
 ms.date: 03/05/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 97b9fdb53c103eac94e62ddb6438c57e4c9f45cc
-ms.sourcegitcommit: 50e6b94bdb387cfa35d0e565b1e89f9e69563a63
+ms.openlocfilehash: 78dc655d8244378fcc37b22030d3060fd291ef16
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57581719"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59574207"
 ---
 # <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Microsoft 信息保护 (MIP) SDK 常见问题解答和问题
 
@@ -57,3 +57,11 @@ SDK 旨在跨平台使用，并使用 [UTF-8（Unicode 转换格式 - 8 位）](
 > System.ComponentModel.Win32Exception:LoadLibrary 失败: [sdk_wrapper_dotnet.dll] 时调用 MIP。Initialize （)。
 
 你的应用程序不具有所需的运行时，或不生成的版本。 请参阅[确保你的应用程序所需的运行时](setup-configure-mip.md#ensure-your-app-has-the-required-runtime)有关详细信息。 
+
+### <a name="error-proxyautherror-exception"></a>错误："ProxyAuthError 异常"
+
+**问题**:使用 MIP SDK 时，为什么收到以下错误？
+
+> "ProxyAuthenticatonError:不支持代理身份验证"
+
+MIP SDK 不支持经过身份验证代理的使用。 若要修复此消息，代理服务器管理员应设置为绕过代理的 Microsoft 信息保护服务终结点。 这些终结点的列表目前[Office 365 Url 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)页。 MIP SDK 需要`*.protection.outlook.com`（行 9） 和 Azure 信息保护服务终结点 （行 73） 绕过代理身份验证。

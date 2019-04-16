@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: ea7edbc6e30d3ac529d55ddeaeecc63f140c512f
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: ac10820e1fa167888b857043219711a485632c00
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57329414"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573694"
 ---
 # <a name="class-mipnopermissionserror"></a>类 mip::NoPermissionsError 
 用户无法访问内容。 例如，无权限、内容已撤销。
@@ -30,7 +30,7 @@ public virtual const std::string& GetMessage() const  |  获取错误消息。
 public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
   
 ## <a name="members"></a>成員
-  
+
 ### <a name="getreferrer-function"></a>GetReferrer 函数
 获取联系人时对文档缺少权限。
 
@@ -40,7 +40,6 @@ public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
 ### <a name="getowner-function"></a>GetOwner 函数
 _尚无记录。_
 
-  
 ### <a name="what-function"></a>哪项功能
 获取错误消息。
 
@@ -76,4 +75,3 @@ _尚无记录。_
 
 参数：  
 * **msg**：错误消息。
-

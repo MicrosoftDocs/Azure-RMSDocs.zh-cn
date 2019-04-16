@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: c25b30282a17703ea6c0aed7f51731d5aa5a8f53
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 4162f720ad103406c8947ce57b330d483b215db8
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57329924"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573473"
 ---
 # <a name="class-mipbadinputerror"></a>class mip::BadInputError 
 输入不正确的错误，在 SDK API 输入无效时引发。
@@ -64,4 +64,3 @@ public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
 
 参数：  
 * **msg**：错误消息。
-

@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: bc130d2c6056d971635bcf204243f29b13789466
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 3ffd4b3e86192786309739add907a724acdaffa5
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330825"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59574204"
 ---
 # <a name="class-mippolicyenginesettings"></a>class mip::PolicyEngine::Settings 
 定义与 [PolicyEngine](class_mip_policyengine.md) 关联的设置。
@@ -34,6 +34,8 @@ public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCust
 public void SetSessionId(const std::string& sessionId)  |  设置用于客户端定义遥测的会话 ID。
 public const std::string& GetSessionId() const  |  获取唯一标识符形式的会话 ID。
 公共 bool IsLoadSensitivityTypesEnabled() 常量  |  获取指示是否启用了负载敏感度标签的标志。
+public void SetCloudEndpointBaseUrl(const std::string& cloudEndpointBaseUrl)  |  （可选）设置云终结点基 URL。
+public const std::string& GetCloudEndpointBaseUrl() const  |  获取所有服务请求使用的云基 URL（如果已指定）。
   
 ## <a name="members"></a>成員
   
@@ -156,3 +158,17 @@ public const std::string& GetSessionId() const  |  获取唯一标识符形式�
 
   
 **返回**:如果启用，否则返回 false，则为 true。
+  
+### <a name="setcloudendpointbaseurl-function"></a>SetCloudEndpointBaseUrl function
+（可选）设置云终结点基 URL。
+
+参数：  
+* **cloudEndpointBaseUrl**：所有服务请求使用的基 URL（例如，“https://dataservice.protection.outlook.com”）
+
+
+  
+### <a name="getcloudendpointbaseurl-function"></a>GetCloudEndpointBaseUrl function
+获取所有服务请求使用的云基 URL（如果已指定）。
+
+  
+**返回**:基 URL

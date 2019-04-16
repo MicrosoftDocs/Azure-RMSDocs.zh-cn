@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: a7f08c24f2e0c4838d538d34268ed9f9704d85bf
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: d85fe9f4b3de485ab966a38b2c41358a6ba091e0
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57333579"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59574272"
 ---
 # <a name="class-mipfileprofilesettings"></a>class mip::FileProfile::Settings 
 [FileProfile](class_mip_fileprofile.md) 在其创建期间及其整个生存期内使用的 [Settings](class_mip_fileprofile_settings.md)。
@@ -27,14 +27,14 @@ public std::shared_ptr\<AuthDelegate\> GetAuthDelegate() const  |  获取用于�
 public std::shared_ptr\<ConsentDelegate\> GetConsentDelegate() const  |  获取用于请求用户许可连接到服务的许可委托。
 public std::shared_ptr\<Observer\> GetObserver() const  |  获取接收 [FileProfile](class_mip_fileprofile.md) 相关事件通知的观察程序。
 public const ApplicationInfo GetApplicationInfo() const  |  获取使用 SDK 的应用程序的相关信息。
-public bool GetSkipTelemetryInit() const  |  获取是否应跳过遥测初始化的指示。
-public void SetSkipTelemetryInit()  |  禁用遥测初始化。
 public void SetNewFeaturesDisabled()  |  禁用新功能。
 public bool AreNewFeaturesDisabled() const  |  获取是否禁用新功能的指示。
 public std::shared_ptr\<LoggerDelegate\> GetLoggerDelegate() const  |  获取应用程序提供的记录器委托（若有）。
 public void SetLoggerDelegate(const std::shared_ptr\<LoggerDelegate\>& loggerDelegate)  |  替代默认记录器。
 public std::shared_ptr\<HttpDelegate\> GetHttpDelegate() const  |  获取应用程序提供的 HTTP 委托（若有）。
 public void SetHttpDelegate(const std::shared_ptr\<HttpDelegate\>& httpDelegate)  |  使用客户端自己的替代默认 HTTP 堆栈。
+public std::shared_ptr\<TaskDispatcherDelegate\> GetTaskDispatcherDelegate() const  |  获取应用程序提供的 TaskDispatcher 委托 （如果有）。
+public void SetTaskDispatcherDelegate (const std::\<TaskDispatcherDelegate\>& taskDispatcherDelegate)  |  重写默认调度处理客户端自己的异步任务。
 public void OptOutTelemetry()  |  选择退出所有遥测收集。
 public bool IsTelemetryOptedOut() const  |  获取是否应禁用遥测收集的指示。
 public void SetSessionId(const std::string& sessionId)  |  设置会话 ID。
@@ -100,16 +100,6 @@ public LogLevel GetMinimumLogLevel() const  |  获取将触发日志记录事件
   
 **返回**:有关使用 SDK 的应用程序的信息
   
-### <a name="getskiptelemetryinit-function"></a>GetSkipTelemetryInit 函数
-获取是否应跳过遥测初始化的指示。
-
-  
-**返回**:如果应跳过遥测初始化，或不
-  
-### <a name="setskiptelemetryinit-function"></a>SetSkipTelemetryInit 函数
-禁用遥测初始化。
-此方法通常不会被客户端应用程序调用，而是由文件 SDK 用于防止重复初始化
-  
 ### <a name="setnewfeaturesdisabled-function"></a>SetNewFeaturesDisabled 函数
 禁用新功能。
 适用于不想尝试新功能的应用程序
@@ -146,6 +136,20 @@ public LogLevel GetMinimumLogLevel() const  |  获取将触发日志记录事件
 
 参数：  
 * **httpDelegate**:由客户端应用程序实现 HTTP 回调接口
+
+
+  
+### <a name="gettaskdispatcherdelegate-function"></a>GetTaskDispatcherDelegate 函数
+获取应用程序提供的 TaskDispatcher 委托 （如果有）。
+
+  
+**返回**:要用于执行异步任务的 TaskDispatcher 委托
+  
+### <a name="settaskdispatcherdelegate-function"></a>SetTaskDispatcherDelegate 函数
+重写默认调度处理客户端自己的异步任务。
+
+参数：  
+* **taskDispatcherDelegate**:任务调度回调由客户端应用程序实现的接口
 
 
   

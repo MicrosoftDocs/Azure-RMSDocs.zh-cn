@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: c3bd5c0c5f45e8532e01bc6e096f60a43e5ef128
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: a84bba6ff1494fb60de2c927eb3c0b4a2eb4aa37
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57329703"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573847"
 ---
 # <a name="class-mipfileioerror"></a>class mip::FileIOError 
 文件 IO 错误。
@@ -64,4 +64,3 @@ public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
 
 参数：  
 * **msg**：错误消息。
-
