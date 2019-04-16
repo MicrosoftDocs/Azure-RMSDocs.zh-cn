@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: dd18c9086c231b6f578df4b38553112c6b25b2cf
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: d2e5f3e572fcac1d96c4ea4512ec5dc6292444f6
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330808"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59572998"
 ---
 # <a name="class-mipproxyauthenticationerror"></a>类 mip::ProxyAuthenticationError 
 代理身份验证失败。
@@ -64,4 +64,3 @@ public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
 
 参数：  
 * **msg**：错误消息。
-

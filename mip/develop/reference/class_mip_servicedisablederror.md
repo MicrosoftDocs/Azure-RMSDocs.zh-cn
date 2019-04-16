@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 2d64d576ead748adff7804e9068aab71fd9672c0
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: 1373d9ecc03f69267af631216a04d358e8be7af3
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57333001"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59574325"
 ---
 # <a name="class-mipservicedisablederror"></a>类 mip::ServiceDisabledError 
 用户无法获取访问内容，因为服务被禁用。
@@ -21,13 +21,13 @@ ms.locfileid: "57333001"
  成員                        | 说明                                
 --------------------------------|---------------------------------------------
 公共扩展盘区 GetExtent() 常量  |  获取为其禁用该服务的范围。
+枚举范围  |  介绍了为其禁用该服务的范围。
 public char const* what() const  |  获取错误消息。
 public std::\<错误\>const clone （)  |  克隆错误。
 public virtual ErrorType GetErrorType() const  |  获取错误类型。
 public virtual const std::string& GetErrorName() const  |  获取错误名称。
 public virtual const std::string& GetMessage() const  |  获取错误消息。
 public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
-枚举范围  |  介绍了为其禁用该服务的范围。
   
 ## <a name="members"></a>成員
   
@@ -37,6 +37,19 @@ public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
   
 **返回**:为其禁用该服务的范围
   
+### <a name="extent-enum"></a>程度枚举
+
+介绍了为其禁用该服务的范围。
+
+ 值                         | 说明                                
+--------------------------------|---------------------------------------------
+“用户”            | 服务已禁用的用户。
+设备            | 服务已禁用的设备。
+平台            | 服务已禁用的平台。
+租户            | 服务已禁用的租户。
+
+
+
 ### <a name="what-function"></a>哪项功能
 获取错误消息。
 
@@ -72,14 +85,3 @@ public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
 
 参数：  
 * **msg**：错误消息。
-
-
-  
-### <a name="extent-enum"></a>程度枚举
- 值                         | 说明                                
---------------------------------|---------------------------------------------
-“用户”            | 服务已禁用的用户。
-设备            | 服务已禁用的设备。
-平台            | 服务已禁用的平台。
-租户            | 服务已禁用的租户。
-介绍了为其禁用该服务的范围。

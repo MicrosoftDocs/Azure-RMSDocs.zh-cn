@@ -7,12 +7,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: a48f22af3f699412a2976683695467ee7ed71cdb
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.openlocfilehash: d3105bd9c13e91108c44e847c3eae74f166c5e04
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57331182"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59573643"
 ---
 # <a name="class-mippolicyprofilesettings"></a>class mip::PolicyProfile::Settings 
 [PolicyProfile](class_mip_policyprofile.md) 在其创建期间及其整个生存期内使用的 [Settings](class_mip_policyprofile_settings.md)。
@@ -30,6 +30,8 @@ public std::shared_ptr\<LoggerDelegate\> GetLoggerDelegate() const  |  获取应
 public void SetLoggerDelegate(const std::shared_ptr\<LoggerDelegate\>& loggerDelegate)  |  替代默认记录器。
 public std::shared_ptr\<HttpDelegate\> GetHttpDelegate() const  |  获取应用程序提供的 HTTP 委托（若有）。
 public void SetHttpDelegate(const std::shared_ptr\<HttpDelegate\>& httpDelegate)  |  使用客户端自己的替代默认 HTTP 堆栈。
+public std::shared_ptr\<TaskDispatcherDelegate\> GetTaskDispatcherDelegate() const  |  获取应用程序提供的 TaskDispatcher 委托 （如果有）。
+public void SetTaskDispatcherDelegate (const std::\<TaskDispatcherDelegate\>& taskDispatcherDelegate)  |  重写默认调度处理客户端自己的异步任务。
 public void OptOutTelemetry()  |  选择退出所有遥测收集。
 public bool IsTelemetryOptedOut() const  |  获取是否应禁用遥测收集的指示。
 public void SetMinimumLogLevel(LogLevel logLevel)  |  设置将触发日志记录事件的最小日志级别。
@@ -113,6 +115,20 @@ public LogLevel GetMinimumLogLevel() const  |  获取最小日志级别对象。
 
 参数：  
 * **httpDelegate**:由客户端应用程序实现 http 回调接口
+
+
+  
+### <a name="gettaskdispatcherdelegate-function"></a>GetTaskDispatcherDelegate 函数
+获取应用程序提供的 TaskDispatcher 委托 （如果有）。
+
+  
+**返回**:要用于执行异步任务的 TaskDispatcher 委托
+  
+### <a name="settaskdispatcherdelegate-function"></a>SetTaskDispatcherDelegate 函数
+重写默认调度处理客户端自己的异步任务。
+
+参数：  
+* **taskDispatcherDelegate**:任务调度回调由客户端应用程序实现的接口
 
 
   
