@@ -35,8 +35,9 @@ items:
   - name: API
     href: concept-apis-use-cases.md
   - name: 配置文件和引擎 (C++)
-    href: concept-profile-engine-cpp.md
     items:
+    - name: 配置文件和引擎对象概念
+      href: concept-profile-engine-cpp.md
     - name: 文件 API 配置文件 (C++)
       href: concept-profile-engine-file-profile-cpp.md
     - name: 文件 API 引擎 (C++)
@@ -50,8 +51,9 @@ items:
     - name: 保护 API 引擎 (C++)
       href: concept-profile-engine-protection-engine-cpp.md
   - name: 身份验证 (C++)
-    href: concept-authentication-cpp.md
     items:
+    - name: 身份验证概念
+      href: concept-authentication-cpp.md
     - name: 实现身份验证委托 (C++)
       href: concept-authentication-delegate-cpp.md
     - name: 获取访问令牌 (PowerShell)
@@ -61,13 +63,15 @@ items:
   - name: 处理程序
     items:
     - name: 文件 API 处理程序 (C++)
-      href: concept-handler-file-cpp.md
       items:
+      - name: 文件处理程序概念
+        href: concept-handler-file-cpp.md
       - name: 审核
         href: concept-auditing-file-cpp.md
     - name: 策略 API 处理程序 (C++)
-      href: concept-handler-policy-cpp.md
       items:
+      - name: 策略处理程序概念
+        href: concept-handler-policy-cpp.md
       - name: 执行状态
         href: concept-handler-policy-executionstate-cpp.md
       - name: 计算操作
@@ -81,8 +85,9 @@ items:
   - name: 元数据
     href: concept-mip-metadata.md
   - name: 异步观察程序 (C++)
-    href: concept-async-observers.md
     items:
+    - name: 观察程序概念
+      href: concept-async-observers.md
     - name: 文件 API 观察程序 (C++)
       href: concept-async-observers-file-cpp.md
     - name: 策略 API 观察程序 (C++)
@@ -92,8 +97,9 @@ items:
 - name: 参考
   items:
   - name: C++ 库
-    href: reference/mip-sdk-reference.md
     items:
+    - name: C++ 库概述
+      href: reference/mip-sdk-reference.md
     - name: 枚举和结构
       href: reference/mip-enums-and-structs.md
     - name: 函数
@@ -110,6 +116,8 @@ items:
         href: reference/class_mip_addcontentheaderaction.md
       - name: AddWatermarkAction
         href: reference/class_mip_addwatermarkaction.md
+      - name: AdhocProtectionRequiredError
+        href: reference/class_mip_adhocprotectionrequirederror.md
       - name: ApplyLabelAction
         href: reference/class_mip_applylabelaction.md
       - name: AuthDelegate
@@ -156,6 +164,8 @@ items:
         href: reference/class_mip_fileprofile_settings.md
       - name: HttpDelegate
         href: reference/class_mip_httpdelegate.md
+      - name: HttpOperation
+        href: reference/class_mip_httpoperation.md
       - name: HttpRequest
         href: reference/class_mip_httprequest.md
       - name: HttpResponse
@@ -186,6 +196,8 @@ items:
         href: reference/class_mip_nopolicyerror.md
       - name: NotSupportedError
         href: reference/class_mip_notsupportederror.md
+      - name: OperationCancelledError
+        href: reference/class_mip_operationcancellederror.md
       - name: PolicyEngine
         href: reference/class_mip_policyengine.md
       - name: PolicyEngine::Settings
@@ -246,6 +258,8 @@ items:
         href: reference/class_mip_servicedisablederror.md
       - name: 流
         href: reference/class_mip_stream.md
+      - name: TaskDispatcherDelegate
+        href: reference/class_mip_taskdispatcherdelegate.md
       - name: TransientNetworkError
         href: reference/class_mip_transientnetworkerror.md
       - name: UserRights
@@ -268,9 +282,9 @@ items:
     href: /azure/information-protection/develop/security-guidelines?context=/information-protection/develop/rc/rc
   - name: 1.1 版中的新增功能
     href: https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/MIP-SDK-1-1-Now-GA/ba-p/328325
-ms.openlocfilehash: 68fae7819664fadd7fa470cd8db9f45eb430dc5b
-ms.sourcegitcommit: dde803603371dc30d40ca7225f330163bcc7c103
+ms.openlocfilehash: f71e85308a3bf03dddfaed5c1f1fc8df7aeae3b7
+ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56825979"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59574408"
