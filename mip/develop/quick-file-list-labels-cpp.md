@@ -8,28 +8,28 @@ ms.collection: M365-security-compliance
 ms.date: 01/18/2019
 ms.author: mbaldwin
 ms.openlocfilehash: e20b66062788632f3fc519e498761500ee78d68c
-ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
+ms.sourcegitcommit: 1d444b17e3d096f3e867e0240182ae3143fc1b71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58809907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59892521"
 ---
 # <a name="quickstart-list-sensitivity-labels-c"></a>快速入门：列出敏感度标签 (C++)
 
 本快速入门演示如何使用 MIP 文件 API 列出为组织配置的敏感度标签。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
-- 完整[快速入门：客户端应用程序初始化 （c + +）](quick-app-initialization-cpp.md)第一种方法生成初学者的 Visual Studio 解决方案。 此“列出敏感度标签”快速入门需依赖前者来正确创建初学者解决方案。
+- 完整[快速入门：客户端应用程序初始化 (C++)](quick-app-initialization-cpp.md)第一种方法生成初学者的 Visual Studio 解决方案。 此“列出敏感度标签”快速入门需依赖前者来正确创建初学者解决方案。
 - 可选：审阅[分类标签](concept-classification-labels.md)概念。
 
 ## <a name="add-logic-to-list-the-sensitivity-labels"></a>添加用于列出敏感度标签的逻辑
 
 使用文件引擎对象添加用于列出组织敏感度标签的逻辑。 
 
-1. 打开在以前创建的 Visual Studio 解决方案"快速入门：客户端应用程序初始化 （c + +）"一文。
+1. 打开在以前创建的 Visual Studio 解决方案"快速入门：客户端应用程序初始化 (C++)"一文。
 
 2. 使用“解决方案资源管理器”，打开项目中包含 `main()` 方法的实现的 .cpp 文件。 它默认与包含它的项目同名，即在项目创建期间指定的名称。 
 
