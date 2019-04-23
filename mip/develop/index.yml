@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: fbd7b6a9d15013be6533f971988192d53a19480a
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330264"
 documentType: LandingData
 title: Microsoft 信息保护 SDK 文档
 metadata:
@@ -14,7 +8,7 @@ metadata:
   author: msmbaldwin
   manager: barbkess
   layout: LandingPage
-  ms.assetid: 
+  ms.assetid: null
   ms.service: information-protection
   ms.tgt_pltfrm: na
   ms.devlang: na
@@ -30,39 +24,39 @@ abstract:
       src: media/index/kartik-tom-mip-sdk.png
       width: 250
     title: MIP SDK @ Ignite 2018
-    href: https://www.youtube.com/embed/V02HTllv54s
+    href: 'https://www.youtube.com/embed/V02HTllv54s'
     width: 250
 sections:
-- title: 5 分钟快速入门
-  description: 完成<a href="setup-configure-mip">安装和配置</a>后，请查看 MIP SDK 快速入门。
-  items:
-  - type: table
-    style: dataMatrix
-    columns:
-    - image:
-        src: ./media/index/logo_Cplusplus.svg
-      title: C++
-    - image:
-        src: media/index/logo_Csharp.svg
-      title: C#
-    rows:
-    - title: 应用程序初始化
-      values:
-      - href: quick-app-initialization-cpp.md
-      - href: quick-app-initialization-csharp.md
-    - title: 使用文件 API 列出敏感度标签
-      values:
-      - href: quick-file-list-labels-cpp.md
-      - href: quick-file-list-labels-csharp.md
-    - title: 使用文件 API 在文件上设置/获取标签
-      values:
-      - href: quick-file-set-get-label-cpp.md
-      - href: quick-file-set-get-label-csharp.md
-- title: 参考
-  items:
-  - type: list
-    style: cards
-    className: cardsD
+  - title: 5 分钟快速入门
+    description: 完成<a href="setup-configure-mip">安装和配置</a>后，请查看 MIP SDK 快速入门。
     items:
-    - title: 语言
-      html: <p><a href="reference/mip-sdk-reference">C++</a></p>
+      - type: table
+        style: dataMatrix
+        columns:
+          - image:
+              src: ./media/index/logo_Cplusplus.svg
+            title: C++
+          - image:
+              src: media/index/logo_Csharp.svg
+            title: 'C#'
+        rows:
+          - title: 应用程序初始化
+            values:
+              - href: quick-app-initialization-cpp.md
+              - href: quick-app-initialization-csharp.md
+          - title: 使用文件 API 列出敏感度标签
+            values:
+              - href: quick-file-list-labels-cpp.md
+              - href: quick-file-list-labels-csharp.md
+          - title: 使用文件 API 在文件上设置/获取标签
+            values:
+              - href: quick-file-set-get-label-cpp.md
+              - href: quick-file-set-get-label-csharp.md
+  - title: 参考
+    items:
+      - type: list
+        style: cards
+        className: cardsD
+        items:
+          - title: 语言
+            html: <p><a href="reference/mip-sdk-reference">C++</a></p>

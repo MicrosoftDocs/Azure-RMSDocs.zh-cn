@@ -59,7 +59,7 @@
                         - name: 函数
                           tocHref: /azure/information-protection/sdk/2.1/api/win/functions/
                           topicHref: /azure/information-protection/sdk/2.1/api/win/functions
-                        - name: 结构
+                        - name: 結構
                           tocHref: /azure/information-protection/sdk/2.1/api/win/structures/
                           topicHref: /azure/information-protection/sdk/2.1/api/win/structures
     - name: Microsoft 信息保护 SDK
