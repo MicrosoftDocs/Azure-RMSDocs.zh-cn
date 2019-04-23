@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: 7cc1eeeafa4a086631f5d3c376643b5758002679
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59572828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60184563"
 ---
 # <a name="class-mippolicyhandler"></a>类 mip::PolicyHandler 
 此类为文件上的所有策略处理程序函数提供一个接口。

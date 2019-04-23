@@ -8,17 +8,17 @@ ms.collection: M365-security-compliance
 ms.date: 01/18/2019
 ms.author: mbaldwin
 ms.openlocfilehash: e20b66062788632f3fc519e498761500ee78d68c
-ms.sourcegitcommit: 1d444b17e3d096f3e867e0240182ae3143fc1b71
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59892521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60184988"
 ---
 # <a name="quickstart-list-sensitivity-labels-c"></a>快速入门：列出敏感度标签 (C++)
 
 本快速入门演示如何使用 MIP 文件 API 列出为组织配置的敏感度标签。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 

@@ -9,11 +9,11 @@ ms.collection: M365-security-compliance
 ms.date: 01/09/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 395c46ce1979b2ef670aa27e9329c5219ca63e13
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59573740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60173217"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C#)
 

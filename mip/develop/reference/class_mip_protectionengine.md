@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: 60a61f5e06b5e76cbf0c557e7d489a8d618a8261
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59574138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60173149"
 ---
 # <a name="class-mipprotectionengine"></a>类 mip::ProtectionEngine 
 管理与特定标识有关的保护相关操作。

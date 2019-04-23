@@ -9,11 +9,11 @@ ms.collection: M365-security-compliance
 ms.date: 11/01/2018
 ms.author: tommos
 ms.openlocfilehash: dbe6db5fe54f9d26d072d3f6fcad1f2595d61040
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59574137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60175269"
 ---
 # <a name="implement-executionstate"></a>实现 ExecutionState
 

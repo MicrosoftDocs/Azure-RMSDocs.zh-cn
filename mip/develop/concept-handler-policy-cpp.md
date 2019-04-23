@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 11/16/2018
 ms.author: tommos
 ms.openlocfilehash: cc35475086de76b869428c62cfc35e73fc3060db
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60184920"
 ---
 # <a name="microsoft-information-protection-sdk---policy-handler-concepts"></a>Microsoft 信息保护 SDK - 策略处理程序概念
 

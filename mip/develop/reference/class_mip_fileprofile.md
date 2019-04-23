@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: b9f5fba87246d0ce89c3e34733bf311b23478334
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59572946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60185124"
 ---
 # <a name="class-mipfileprofile"></a>class mip::FileProfile 
 [FileProfile](class_mip_fileprofile.md) 类是用于使用 Microsoft 信息保护操作的根类。

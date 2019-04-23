@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 10/16/2018
 ms.author: mbaldwin
 ms.openlocfilehash: d4bef66f8e3d808b195ac49f7bb42ab0eb62b7d5
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60180830"
 ---
 # <a name="microsoft-information-protection-sdk---api-concepts"></a>Microsoft 信息保护 SDK - API 概念
 

@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: 6f4bb83950a4745739a1663950a52d05c51f7f4d
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59573286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60173282"
 ---
 # <a name="class-mipprotectiondescriptor"></a>类 mip::ProtectionDescriptor 
 与某段内容相关的保护说明。

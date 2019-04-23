@@ -9,11 +9,11 @@ ms.collection: M365-security-compliance
 ms.date: 11/01/2018
 ms.author: tommos
 ms.openlocfilehash: df0d51d976f7f900011688d2f328f3a2ddb1e378
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59573137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60176918"
 ---
 # <a name="auditing-in-the-mip-sdk-file-api"></a>MIP SDK 文件 API 中的审核
 

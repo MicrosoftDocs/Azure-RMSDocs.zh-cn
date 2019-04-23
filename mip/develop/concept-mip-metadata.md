@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 11/08/2018
 ms.author: tommos
 ms.openlocfilehash: 990f729edaa0a2e212812f84fc5a4c63f82e37fb
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56253963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60175332"
 ---
 # <a name="microsoft-information-protection-sdk---metadata"></a>Microsoft 信息保护 SDK 的元数据
 
@@ -34,7 +34,7 @@ GUID 是在组织中的每个标签的唯一标识符。
 
 MIP SDK 适用以下组的元数据。
 
-| 属性 | 类型或值                 | 描述                                                                                                                                                                                                                                        | 必需 |
+| 特性 | 类型或值                 | 描述                                                                                                                                                                                                                                        | 强制 |
 |-----------|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | **已启用**   | True 或 False                 | 此属性指示是否为数据项启用此组键 / 值对表示的分类。 DLP 产品通常会验证存在此项以识别分类标签。 | 是       |
 | **SiteId**    | GUID                          | Azure Active Directory 租户 ID                                                                                                                                                                                                                   | 是       |
@@ -47,7 +47,7 @@ MIP SDK 适用以下组的元数据。
 
 应用于一个文件时，结果是类似于下表。
 
-| 键                                                         | 值                                |
+| 键                                                         | ReplTest1                                |
 |-------------------------------------------------------------|--------------------------------------|
 | MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_Enabled     | true                                 |
 | MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_SetDate     | 2018-11-08T21:13:16-0800             |

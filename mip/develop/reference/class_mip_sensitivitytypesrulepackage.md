@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: 46d59f7ee3cd099c5526fdc565ff5e84a81f6f4e
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59573796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60185022"
 ---
 # <a name="class-mipsensitivitytypesrulepackage"></a>类 mip::SensitivityTypesRulePackage 
   

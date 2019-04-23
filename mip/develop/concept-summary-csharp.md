@@ -1,6 +1,6 @@
 ---
 title: Microsoft 信息保护 SDKC#包装器概述
-description: 简要介绍如何开始使用 MIP SDK.NET 包装和.NET 包装器和 c + + SDK 之间的差异。
+description: 有关如何开始使用 MIP SDK.NET 包装器，以及.NET 包装器之间的差异的快速概述和C++SDK。
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 01/04/2019
 ms.author: tommos
 ms.openlocfilehash: 6b2f26a61cd491574fd9f4a1e74fbfab4752257a
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60175175"
 ---
 # <a name="getting-started-with-the-microsoft-information-protection-net-wrapper"></a>开始使用 Microsoft 信息保护.NET 包装
 
@@ -37,14 +37,14 @@ Microsoft 信息保护 SDK.NET 包装器使开发人员能够将集成到其自�
 
 ## <a name="wrapper-details"></a>包装器的详细信息
 
-.NET 包装是否[SWIG](https://swig.org/)生成的托管的包装。 包装将使用从 Microsoft 信息保护 SDK 的已编译 c + + 库。 这些 Dll 是 c + + 版本的 SDK 附带的同一个 Dll。
+.NET 包装是否[SWIG](https://swig.org/)生成的托管的包装。 编译该包装器使用C++通过 Microsoft 信息保护 SDK 库。 这些 Dll 均附带的相同 DllC++版本的 SDK。
 
 ## <a name="concept-overlap"></a>概念重叠
 
-有几个区别基本 c + + 版本的 SDK 和托管包装器。
+有几个基本区别C++版本的 SDK 和托管的包装。
 
 * .NET 包装器不需要使用观察者来异步操作。 通过实现任何异步操作[基于任务的异步模式](https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)。
-* .NET 包装需要是 c + + SDK 的一部分的委托：AuthDelegate 和 ConsentDelegate。 这些委托通过接口实现`IAuthDelegate`和 `IConsentDelegate`
+* .NET 包装需要属于委托C++SDK:AuthDelegate 和 ConsentDelegate。 这些委托通过接口实现`IAuthDelegate`和 `IConsentDelegate`
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 01/04/2019
 ms.author: tommos
 ms.openlocfilehash: b7f2b25027502fbdd9dd7bd877b8893c1940628a
-ms.sourcegitcommit: ca2df73f8bba6bf0f58eea5bee15e356705276d6
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56589979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60184956"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C#)
 
@@ -21,7 +21,7 @@ ms.locfileid: "56589979"
 > [!NOTE]
 > 在本快速入门中所述的步骤所需的任何使用 MIP.NET 包装器的文件或策略 Api 的客户端应用程序。 保护 API 尚不可用。 虽然本快速入门演示的是文件 API 的使用，但同样的模式也适用于使用策略和保护 API 的客户端。 之后的快速入门应是按顺序完成的，因为每一个都是在前一个的基础上构建的，本快速入门是第一个。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 如果尚未准备，请务必：
 
@@ -197,7 +197,7 @@ namespace mip_sdk_dotnet_quickstart
 
 3. 在中，使用以下值粘贴的源代码中的占位符值替换：
 
-   | 占位符 | 值 | 示例 |
+   | 占位符 | ReplTest1 | 示例 |
    |:----------- |:----- |:--------|
    | \<应用程序 ID\> | 分配给在“MIP SDK 安装和配置”中注册的应用程序的 Azure AD 应用程序 ID（2 个实例）。  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
    | \<友好名称\> | 用户定义的应用程序友好名称。 | AppInitialization |

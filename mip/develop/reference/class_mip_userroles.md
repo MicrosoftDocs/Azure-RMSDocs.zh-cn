@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: 7e9e750f5b327dbad5e9b46fa1eca2a3291abdd3
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59573099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60173215"
 ---
 # <a name="class-mipuserroles"></a>class mip::UserRoles 
 一组用户以及与之关联的角色。

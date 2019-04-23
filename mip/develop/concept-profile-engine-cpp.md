@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: mbaldwin
 ms.openlocfilehash: e815820fa9f3a6de95d5e37e350ed18df8513b21
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57333516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60175099"
 ---
 # <a name="microsoft-information-protection-sdk---profile-and-engine-object-concepts"></a>Microsoft 信息保护 SDK - 配置文件和引擎对象概念
 
@@ -70,10 +70,10 @@ SDK 中有三个引擎类，每个 API 一个。 以下列表显示了引擎类�
 
 下表描述了可能的引擎状态，以及哪些方法来更改该状态：
 
-|         | 无              | 创建           | LOADED         |
+|         | NONE              | CREATED           | LOADED         |
 |---------|-------------------|-------------------|----------------|
-| 无    |                   |                   | AddEngineAsync |
-| 创建 | DeleteEngineAsync |                   | AddEngineAsync |
+| NONE    |                   |                   | AddEngineAsync |
+| CREATED | DeleteEngineAsync |                   | AddEngineAsync |
 | LOADED  | DeleteEngineAsync | UnloadEngineAsync |                |
 
 ### <a name="engine-id"></a>引擎 ID

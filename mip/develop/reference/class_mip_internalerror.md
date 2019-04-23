@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: 94f82e84b2907f4aa91100964cfb4d1b287b116e
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59573966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60174079"
 ---
 # <a name="class-mipinternalerror"></a>class mip::InternalError 
 内部错误。 如果在执行期间出现意外，就会抛出此错误。

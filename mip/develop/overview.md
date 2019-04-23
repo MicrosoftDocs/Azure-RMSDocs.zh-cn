@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 01/18/2019
 ms.author: mbaldwin
 ms.openlocfilehash: d8efb7ceef890d0c2a0ea72f64d3047e0cfb25a5
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57329601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60184937"
 ---
 # <a name="overview"></a>概述
 

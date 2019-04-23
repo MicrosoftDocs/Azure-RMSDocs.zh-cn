@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 02/04/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 68ae6bc02f671f0a4d18c382ccde4f53873b2fd4
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57332695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60175303"
 ---
 # <a name="acquire-an-access-token-powershell"></a>获取访问令牌 (PowerShell)
 

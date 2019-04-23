@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: mbaldwin
 ms.openlocfilehash: e1101bd505a35e02fdeeed032d5dec61364bfb8d
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57333664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60175235"
 ---
 # <a name="microsoft-information-protection-sdk---classification-label-concepts"></a>Microsoft 信息保护 SDK - 分类标签概念
 

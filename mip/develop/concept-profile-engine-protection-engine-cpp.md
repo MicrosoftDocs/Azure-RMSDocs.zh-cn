@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: mbaldwin
 ms.openlocfilehash: e3338395a193f6c1cc8f60a6beb93a1d0db15511
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60175462"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-engine-concepts"></a>Microsoft 信息保护 SDK - 保护 API 引擎概念
 
@@ -32,7 +32,7 @@ ms.locfileid: "57330417"
 ProtectionEngine::Settings engineSettings("UniqueID", "");
 ```
 
-**请注意**:如果使用此方法创建的保护设置对象，您必须手动设置 CloudEndpointBaseUrl 为 https://api.aadrm.com
+**注意**：如果使用此方法创建的保护设置对象，您必须手动设置 CloudEndpointBaseUrl 为 https://api.aadrm.com
 
 作为最佳做法，第一个参数 **id** 应该允许引擎轻松连接到关联用户**或** `mip::Identity` 对象。 若要使用 `mip::Identity` 初始化设置，请运行以下代码：
 

@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: 1373d9ecc03f69267af631216a04d358e8be7af3
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59574325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60173354"
 ---
 # <a name="class-mipservicedisablederror"></a>类 mip::ServiceDisabledError 
 用户无法获取访问内容，因为服务被禁用。

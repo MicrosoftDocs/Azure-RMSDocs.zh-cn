@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 01/28/2019
 ms.author: mbaldwin
 ms.openlocfilehash: ced8339fa93ec349644a1f9e386489bb02c8eff0
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59574017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60173400"
 ---
 # <a name="functions"></a>函数
 

@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: d2e5f3e572fcac1d96c4ea4512ec5dc6292444f6
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59572998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60184325"
 ---
 # <a name="class-mipproxyauthenticationerror"></a>类 mip::ProxyAuthenticationError 
 代理身份验证失败。

@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: mbaldwin
 ms.openlocfilehash: 7e436d27ae48ee6d3589faaf55943b8ffd314450
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57333732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60175967"
 ---
 # <a name="microsoft-information-protection-sdk---file-handler-concepts"></a>Microsoft 信息保护 SDK - 文件处理程序概念
 
@@ -53,7 +53,7 @@ ms.locfileid: "57333732"
 
 `CreateFileHandlerAsync` 接受三个参数：应读取或修改的文件的路径`mip::FileHandler::Observer`异步事件通知和 promise `FileHandler`。
 
-**注意:**`mip::FileHandler::Observer` 类必须在派生类中实现，因为 `CreateFileHandler` 需要 `Observer` 对象。 
+**注意：** `mip::FileHandler::Observer` 类必须在派生类中实现，因为 `CreateFileHandler` 需要 `Observer` 对象。 
 
 ```cpp
 auto createFileHandlerPromise = std::make_shared<std::promise<std::shared_ptr<mip::FileHandler>>>();

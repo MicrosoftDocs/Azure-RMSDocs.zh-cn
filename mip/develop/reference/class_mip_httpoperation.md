@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: e3eaedbf508f116b19521286b686bc955d108efe
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59574476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60173552"
 ---
 # <a name="class-miphttpoperation"></a>类 mip::HttpOperation 
 描述单个 HTTP 操作，重写时，由客户端应用程序实现的接口[HttpDelegate](class_mip_httpdelegate.md)。

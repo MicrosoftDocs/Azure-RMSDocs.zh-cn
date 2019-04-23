@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: 8dca2231931ab33f243b71850757b2c009c492c9
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59574280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60173166"
 ---
 # <a name="class-mipnoauthtokenerror"></a>类 mip::NoAuthTokenError 
 用户无法获取由于缺少身份验证令牌内容的访问权限。

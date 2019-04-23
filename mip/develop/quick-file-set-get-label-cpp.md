@@ -9,17 +9,17 @@ ms.collection: M365-security-compliance
 ms.date: 01/18/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 2ac8c6bbfba6f460ac016a103f32f20856bff2aa
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59573830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60184886"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C++)
 
 本快速入门介绍如何使用更多的 MIP 文件 API。 使用上一个快速入门中列出的敏感度标签之一，可以使用文件处理程序对文件设置/获取标签。 文件处理程序类会公开设置/获取标签的各种操作，或受支持文件类型的保护。
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>先决条件
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
@@ -207,7 +207,7 @@ ms.locfileid: "59573830"
 
 4. 您只需在中粘贴，如下所示，使用字符串常量的源代码中的占位符值替换：
 
-   | 占位符 | 值 |
+   | 占位符 | ReplTest1 |
    |:----------- |:----- |
    | \<input-file-path\> | 测试输入文件的完整路径，例如：`"c:\\Test\\Test.docx"`。 |
    | \<content-identifier\> | 内容是人工可读标识符。 例如： <ul><li>对于文件，请考虑路径 \ 文件名： `"c:\Test\Test.docx"`</li><li>一封电子邮件，请考虑使用者： 发件人： `"RE: Audit design:user1@contoso.com"`</li></ul> |

@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: 6dedd5e52b0599a58acabd85f7bd076169b3758e
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59574187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60174045"
 ---
 # <a name="class-miphttpdelegate"></a>类 mip::HttpDelegate 
 用于重写 HTTP 处理的接口。

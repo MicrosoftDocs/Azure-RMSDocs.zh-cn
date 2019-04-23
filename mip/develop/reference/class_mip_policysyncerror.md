@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: f1a437ad7c94d515c369cd63d17874b3c53400ba
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59573669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60184512"
 ---
 # <a name="class-mippolicysyncerror"></a>class mip::PolicySyncError 
 同步策略数据尝试失败。

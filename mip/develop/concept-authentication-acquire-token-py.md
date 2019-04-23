@@ -8,17 +8,17 @@ ms.collection: M365-security-compliance
 ms.date: 02/04/2019
 ms.author: mbaldwin
 ms.openlocfilehash: e325dc6c3b79cdd7e7720f0bca50d8bdda045979
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57331930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60175384"
 ---
 # <a name="acquire-an-access-token-python"></a>获取访问令牌 (Python)
 
 此示例演示如何调用外部 Python 脚本来获取 OAuth2 令牌。 需要有效的 OAuth2 访问令牌的身份验证委托的实现。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 若要运行下面的示例：
 

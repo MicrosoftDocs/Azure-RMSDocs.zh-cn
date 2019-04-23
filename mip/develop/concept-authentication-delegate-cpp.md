@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: mbaldwin
 ms.openlocfilehash: 20e82e52a293b7723513fbd0990a3d5e66ea568a
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57333409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60175524"
 ---
 # <a name="microsoft-information-protection-sdk---implementing-an-authentication-delegate-c"></a>Microsoft 信息保护 SDK - 实现身份验证委托 (C++)
 

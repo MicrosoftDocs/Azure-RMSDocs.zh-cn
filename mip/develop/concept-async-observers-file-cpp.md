@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: mbaldwin
 ms.openlocfilehash: baa62e34e10de3fb4cacc3eb7cb21c0b3e2ebf75
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57329948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60175434"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-observers"></a>Microsoft 信息保护 SDK - 文件 API 观察程序
 
@@ -29,7 +29,7 @@ ms.locfileid: "57329948"
 
 在以下示例中，我们创建了一个派生自 `mip::FileProfile::Observer` 的 `ProfileObserver` 类。 已重写成员函数以使用整个示例中使用的 future/promise 模式。
 
-**请注意**:以下示例仅部分实现，但不包括替代`mip::FileEngine`相关观察者。
+**注意**：以下示例仅部分实现，但不包括替代`mip::FileEngine`相关观察者。
 
 ### <a name="profileobserverh"></a>profile_observer.h
 

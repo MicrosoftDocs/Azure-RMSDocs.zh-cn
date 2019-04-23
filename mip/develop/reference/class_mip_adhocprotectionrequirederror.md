@@ -8,11 +8,11 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: a109c9f235e950e428aa000d34af95a337c6eb4d
-ms.sourcegitcommit: ea76aade54134afaf5023145fcb755e40c7b84b7
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59574442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60184818"
 ---
 # <a name="class-mipadhocprotectionrequirederror"></a>类 mip::AdhocProtectionRequiredError 
 临时保护应设置为完成文件上的操作。

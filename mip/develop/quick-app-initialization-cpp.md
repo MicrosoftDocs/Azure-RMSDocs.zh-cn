@@ -8,20 +8,20 @@ ms.collection: M365-security-compliance
 ms.date: 01/18/2019
 ms.author: mbaldwin
 ms.openlocfilehash: d30111953bdc55b66b712f30de0c50d28ac07303
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
+ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57331913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60185053"
 ---
-# <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 （c + +）
+# <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C++)
 
-本快速入门演示如何实现使用 MIP c + + SDK 在运行时的客户端初始化模式。 
+本快速入门演示如何实现使用 MIP 的客户端初始化模式C++在运行时 SDK。 
 
 > [!NOTE]
 > 对于使用 MIP 文件、策略或保护 AP 的任何客户端应用程序，都需要执行本快速入门中概述的步骤。 虽然本快速入门演示的是文件 API 的使用，但同样的模式也适用于使用策略和保护 API 的客户端。 按顺序完成其余的快速入门教程以前一版本，每个，如用这个是第一个。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 如果尚未准备，请务必：
 
@@ -322,7 +322,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
 3. 您只需在中粘贴，使用字符串常量的源代码中的所有占位符值替换都为：
 
-   | 占位符 | 值 | 示例 |
+   | 占位符 | ReplTest1 | 示例 |
    |:----------- |:----- |:--------|
    | \<应用程序 ID\> | Azure AD 应用程序 ID (GUID) 分配给应用程序中注册[步骤 #2 的"MIP SDK 安装和配置"](/information-protection/develop/setup-configure-mip#register-a-client-application-with-azure-active-directory)一文。 将为 2 个实例。 | `"0edbblll-8773-44de-b87c-b8c6276d41eb"` |
    | \<application-name\> | 用户定义的应用程序友好名称。 必须包含有效的 ASCII 字符 (不包括;)，而且理想情况下在 Azure AD 注册中使用的应用程序名称匹配。 | `"AppInitialization"` |
