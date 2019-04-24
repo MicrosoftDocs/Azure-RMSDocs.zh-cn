@@ -1,427 +1,446 @@
-items:
 - name: Azure 信息保护文档
   href: index.yml
 - name: 概述
   href: /azure/information-protection/what-is-information-protection
   items:
-  - name: 什么是 Azure 信息保护？
-    href: what-is-information-protection.md
-  - name: 比较 Azure 信息保护与 AD RMS
-    href: compare-on-premise.md
-  - name: 要求
-    href: requirements.md
-    items:
-    - name: Azure Active Directory 要求
-      href: requirements-azure-ad.md
-    - name: 对数据保护的客户端设备支持
-      href: requirements-client-devices.md
-    - name: 对数据保护的应用程序支持
-      href: requirements-applications.md
-    - name: 对数据保护的本地服务器支持
-      href: requirements-servers.md
+    - name: 什么是 Azure 信息保护？
+      href: what-is-information-protection.md
+    - name: 比较 Azure 信息保护与 AD RMS
+      href: compare-on-premise.md
+    - name: 要求
+      href: requirements.md
+      items:
+        - name: Azure Active Directory 要求
+          href: requirements-azure-ad.md
+        - name: 对数据保护的客户端设备支持
+          href: requirements-client-devices.md
+        - name: 对数据保护的应用程序支持
+          href: requirements-applications.md
+        - name: 对数据保护的本地服务器支持
+          href: requirements-servers.md
 - name: 快速入门
+  expanded: true
   href: /azure/information-protection/quickstart-viewpolicy
   items:
-  - name: Azure 门户入门
-    href: quickstart-viewpolicy.md
-  - name: 查找具有的敏感信息
-    href: quickstart-findsensitiveinfo.md
-  - name: 配置标签以保护电子邮件
-    href: quickstart-label-dnf-protectedemail.md
-  - name: 为特定用户创建新标签
-    href: quickstart-label-specificusers.md
-  expanded: true
+    - name: Azure 门户入门
+      href: quickstart-viewpolicy.md
+    - name: 查找具有的敏感信息
+      href: quickstart-findsensitiveinfo.md
+    - name: 配置标签以保护电子邮件
+      href: quickstart-label-dnf-protectedemail.md
+    - name: 为特定用户创建新标签
+      href: quickstart-label-specificusers.md
 - name: 教程
   href: infoprotect-quick-start-tutorial.md
   items:
-  - name: 编辑策略并创建新标签
-    href: infoprotect-quick-start-tutorial.md
-  - name: 配置协同工作的策略设置
-    href: infoprotect-settings-tutorial.md
+    - name: 编辑策略并创建新标签
+      href: infoprotect-quick-start-tutorial.md
+    - name: 配置协同工作的策略设置
+      href: infoprotect-settings-tutorial.md
+    - name: 配置客户端设置以控制过度共享的情况
+      href: infoprotect-oversharing-tutorial.md
 - name: 概念
   href: overview-policy.md
   items:
-  - name: Azure 信息保护策略概述
-    href: overview-policy.md
-  - name: Rights Management 保护
-    href: what-is-azure-rms.md
-    items:
-    - name: BitLocker 是如何工作的？
-      href: how-does-it-work.md
-    - name: 应用程序如何支持 Azure Rights Management 保护
-      href: applications-support.md
+    - name: Azure 信息保护策略概述
+      href: overview-policy.md
+    - name: Rights Management 保护
+      href: what-is-azure-rms.md
       items:
-      - name: Office 应用程序和服务
-        href: office-apps-services-support.md
-      - name: 运行 Windows Server 和使用文件分类基础结构的文件服务器
-        href: file-server-support.md
-      - name: 支持 RMS API 的其他应用程序
-        href: api-support.md
-  - name: 个人 RMS 和 Azure 信息保护
-    href: rms-for-individuals.md
-  - name: 也称为...
-    href: aka.md
+        - name: BitLocker 是如何工作的？
+          href: how-does-it-work.md
+        - name: 应用程序如何支持 Azure Rights Management 保护
+          href: applications-support.md
+          items:
+            - name: Office 应用程序和服务
+              href: office-apps-services-support.md
+            - name: 运行 Windows Server 和使用文件分类基础结构的文件服务器
+              href: file-server-support.md
+            - name: 支持 RMS API 的其他应用程序
+              href: api-support.md
+    - name: 个人 RMS 和 Azure 信息保护
+      href: rms-for-individuals.md
+    - name: 也称为...
+      href: aka.md
 - name: 操作方式指南
   href: how-to-guides.md
   items:
-  - name: 常见方案操作说明
-    href: how-to-guides.md
-  - name: 规划和设计
-    href: deployment-roadmap.md
-    items:
-    - name: 部署路线图
+    - name: 常见方案操作说明
+      href: how-to-guides.md
+    - name: 规划和设计
       href: deployment-roadmap.md
-    - name: 从 AD RMS 迁移
-      href: migrate-from-ad-rms-to-azure-rms.md
       items:
-      - name: 准备
-        href: migrate-from-ad-rms-phase1.md
-      - name: 服务器端配置
-        href: migrate-from-ad-rms-phase2.md
-        items:
-        - name: 软件密钥到软件密钥
-          href: migrate-softwarekey-to-softwarekey.md
-        - name: HSM 密钥到 HSM 密钥
-          href: migrate-hsmkey-to-hsmkey.md
-        - name: 软件密钥到 HSM 密钥
-          href: migrate-softwarekey-to-hsmkey.md
-      - name: 客户端配置
-        href: migrate-from-ad-rms-phase3.md
-      - name: Reporting Services 配置
-        href: migrate-from-ad-rms-phase4.md
-      - name: 迁移后任务
-        href: migrate-from-ad-rms-phase5.md
-    - name: 计划和实现你的租户密钥
-      href: plan-implement-tenant-key.md
-      items:
-      - name: BYOK 定价和限制
-        href: byok-price-restrictions.md
-    - name: 准备用户和组
-      href: prepare.md
-  - name: 部署和使用该服务
-    href: activate-service.md
-    items:
-    - name: 激活服务
+        - name: 部署路线图
+          href: deployment-roadmap.md
+        - name: 从 AD RMS 迁移
+          href: migrate-from-ad-rms-to-azure-rms.md
+          items:
+            - name: 准备
+              href: migrate-from-ad-rms-phase1.md
+            - name: 服务器端配置
+              href: migrate-from-ad-rms-phase2.md
+              items:
+                - name: 软件密钥到软件密钥
+                  href: migrate-softwarekey-to-softwarekey.md
+                - name: HSM 密钥到 HSM 密钥
+                  href: migrate-hsmkey-to-hsmkey.md
+                - name: 软件密钥到 HSM 密钥
+                  href: migrate-softwarekey-to-hsmkey.md
+            - name: 客户端配置
+              href: migrate-from-ad-rms-phase3.md
+            - name: Reporting Services 配置
+              href: migrate-from-ad-rms-phase4.md
+            - name: 迁移后任务
+              href: migrate-from-ad-rms-phase5.md
+        - name: 计划和实现你的租户密钥
+          href: plan-implement-tenant-key.md
+          items:
+            - name: BYOK 定价和限制
+              href: byok-price-restrictions.md
+        - name: 准备用户和组
+          href: prepare.md
+    - name: 部署和使用该服务
       href: activate-service.md
       items:
-      - name: Microsoft 365 管理中心
-        href: activate-office365.md
-      - name: Azure 门户
-        href: activate-azure.md
-    - name: 配置应用程序
-      href: configure-applications.md
-      items:
-      - name: Office 365
-        href: configure-office365.md
-      - name: Office 应用
-        href: configure-office-apps.md
-      - name: Azure 信息保护客户端
-        href: configure-client.md
-    - name: 配置使用情况权限
-      href: configure-usage-rights.md
-    - name: 为发现服务或数据恢复配置超级用户
-      href: configure-super-users.md
-    - name: 配置 Azure 信息保护策略
-      href: configure-policy.md
-      items:
-      - name: 默认策略
-        href: configure-policy-default.md
-      - name: 配置策略设置
-        href: configure-policy-settings.md
-      - name: 创建新标签
-        href: configure-policy-new-label.md
-      - name: 添加或删除标签
-        href: configure-policy-add-remove-label.md
-      - name: 删除或重排标签
-        href: configure-policy-delete-reorder.md
-      - name: 更改标签
-        href: configure-policy-change-label.md
-      - name: 配置保护
-        href: configure-policy-protection.md
-        items:
-        - name: HYOK
-          href: configure-adrms-restrictions.md
-      - name: 配置可视标记
-        href: configure-policy-markings.md
-      - name: 配置条件
-        href: configure-policy-classification.md
-      - name: 配置作用域内策略
-        href: configure-policy-scope.md
-      - name: 配置和管理模板
-        href: configure-policy-templates.md
-        items:
-        - name: 为用户刷新模板
-          href: refresh-templates.md
-        - name: PowerShell 参考
-          href: configure-templates-with-powershell.md
-        - name: 从 Azure 经典门户迁移
-          href: migrate-portal.md
-      - name: 配置语言
-        href: configure-policy-languages.md
-      - name: 将标签迁移到 Office 365
-        href: configure-policy-migrate-labels.md
-    - name: 配置安全文档协作
-      href: secure-collaboration-documents.md
-    - name: 配置 Azure 信息保护标签的邮件流规则
-      href: configure-exo-rules.md
-    - name: 部署 Azure 信息保护扫描程序
-      href: deploy-aip-scanner.md
-    - name: 部署 Azure 信息保护扫描程序（预览版）
-      href: deploy-aip-scanner-preview.md
-    - name: Azure 信息保护报表
-      href: reports-aip.md
-    - name: 部署 RMS 连接器
-      href: deploy-rms-connector.md
-      items:
-      - name: 安装并配置连接器
-        href: install-configure-rms-connector.md
-      - name: 配置服务器
-        href: configure-servers-rms-connector.md
-        items:
-        - name: 注册表设置
-          href: rms-connector-registry-settings.md
-      - name: 监视连接器
-        href: monitor-rms-connector.md
-    - name: 验证 Azure Rights Management 服务
-      href: verify.md
-    - name: 帮助用户保护文件
-      href: help-users.md
-    - name: 日志记录和分析使用情况
-      href: log-analyze-usage.md
-    - name: 租户密钥的操作
-      href: operations-tenant-key.md
-      items:
-      - name: 由 Microsoft 管理
-        href: operations-microsoft-managed-tenant-key.md
-      - name: 由客户管理
-        href: operations-customer-managed-tenant-key.md
-    - name: 管理用于 Azure 信息保护的个人数据
-      href: manage-personal-data.md
-    - name: 解除授权并停用
-      href: decommission-deactivate.md
-    - name: 使用 PowerShell 进行管理
-      href: administer-powershell.md
-      items:
-      - name: 安装 AADRM PowerShell 模块
-        href: install-powershell.md
-  - name: 部署和使用该客户端
-    href: ./rms-client/use-client.md
-    items:
-    - name: 客户端部署解决方案
+        - name: 激活服务
+          href: activate-service.md
+          items:
+            - name: Microsoft 365 管理中心
+              href: activate-office365.md
+            - name: Azure 门户
+              href: activate-azure.md
+        - name: 配置应用程序
+          href: configure-applications.md
+          items:
+            - name: Office 365
+              href: configure-office365.md
+            - name: Office 应用
+              href: configure-office-apps.md
+            - name: Azure 信息保护客户端
+              href: configure-client.md
+        - name: 配置使用情况权限
+          href: configure-usage-rights.md
+        - name: 为发现服务或数据恢复配置超级用户
+          href: configure-super-users.md
+        - name: 配置 Azure 信息保护策略
+          href: configure-policy.md
+          items:
+            - name: 默认策略
+              href: configure-policy-default.md
+            - name: 配置策略设置
+              href: configure-policy-settings.md
+            - name: 创建新标签
+              href: configure-policy-new-label.md
+            - name: 添加或删除标签
+              href: configure-policy-add-remove-label.md
+            - name: 删除或重排标签
+              href: configure-policy-delete-reorder.md
+            - name: 更改标签
+              href: configure-policy-change-label.md
+            - name: 配置保护
+              href: configure-policy-protection.md
+              items:
+                - name: HYOK
+                  href: configure-adrms-restrictions.md
+            - name: 配置可视标记
+              href: configure-policy-markings.md
+            - name: 配置条件
+              href: configure-policy-classification.md
+            - name: 配置作用域内策略
+              href: configure-policy-scope.md
+            - name: 配置和管理模板
+              href: configure-policy-templates.md
+              items:
+                - name: 为用户刷新模板
+                  href: refresh-templates.md
+                - name: PowerShell 参考
+                  href: configure-templates-with-powershell.md
+                - name: 从 Azure 经典门户迁移
+                  href: migrate-portal.md
+            - name: 配置语言
+              href: configure-policy-languages.md
+            - name: 将标签迁移到 Office 365
+              href: configure-policy-migrate-labels.md
+        - name: 配置安全文档协作
+          href: secure-collaboration-documents.md
+        - name: 配置 Azure 信息保护标签的邮件流规则
+          href: configure-exo-rules.md
+        - name: 部署 Azure 信息保护扫描程序
+          href: deploy-aip-scanner.md
+        - name: Azure 信息保护报表
+          href: reports-aip.md
+        - name: 部署 RMS 连接器
+          href: deploy-rms-connector.md
+          items:
+            - name: 安装并配置连接器
+              href: install-configure-rms-connector.md
+            - name: 配置服务器
+              href: configure-servers-rms-connector.md
+              items:
+                - name: 注册表设置
+                  href: rms-connector-registry-settings.md
+            - name: 监视连接器
+              href: monitor-rms-connector.md
+        - name: 验证 Azure Rights Management 服务
+          href: verify.md
+        - name: 帮助用户保护文件
+          href: help-users.md
+        - name: 日志记录和分析使用情况
+          href: log-analyze-usage.md
+        - name: 租户密钥的操作
+          href: operations-tenant-key.md
+          items:
+            - name: 由 Microsoft 管理
+              href: operations-microsoft-managed-tenant-key.md
+            - name: 由客户管理
+              href: operations-customer-managed-tenant-key.md
+        - name: 管理用于 Azure 信息保护的个人数据
+          href: manage-personal-data.md
+        - name: 解除授权并停用
+          href: decommission-deactivate.md
+        - name: 使用 PowerShell 进行管理
+          href: administer-powershell.md
+          items:
+            - name: 安装 AADRM PowerShell 模块
+              href: install-powershell.md
+    - name: 部署和使用该客户端
       href: ./rms-client/use-client.md
       items:
-      - name: Azure 信息保护客户端
-        href: ./rms-client/aip-client.md
-        items:
-        - name: Azure 信息保护客户端 - 版本发行历史记录
-          href: ./rms-client/client-version-release-history.md
-        - name: Azure 信息保护客户端管理员指南
-          href: ./rms-client/client-admin-guide.md
+        - name: 客户端部署解决方案
+          href: ./rms-client/use-client.md
           items:
-          - name: 为用户安装客户端
-            href: ./rms-client/client-admin-guide-install.md
-          - name: 自定义
-            href: ./rms-client/client-admin-guide-customizations.md
-          - name: 客户端文件和使用情况日志记录
-            href: ./rms-client/client-admin-guide-files-and-logging.md
-          - name: 文档跟踪
-            href: ./rms-client/client-admin-guide-document-tracking.md
-          - name: 支持的文件类型
-            href: ./rms-client/client-admin-guide-file-types.md
-          - name: PowerShell 命令
-            href: ./rms-client/client-admin-guide-powershell.md
-        - name: Azure 信息保护用户指南
-          href: ./rms-client/client-user-guide.md
-          items:
-          - name: 下载并安装客户端
-            href: ./rms-client/install-client-app.md
-          - name: 对文件或电子邮件进行分类
-            href: ./rms-client/client-classify.md
-          - name: 对文件或电子邮件进行分类和保护
-            href: ./rms-client/client-classify-protect.md
-          - name: 跟踪和撤消文档
-            href: ./rms-client/client-track-revoke.md
-          - name: 打开受保护的文件
-            href: ./rms-client/client-view-use-files.md
-          - name: 删除标签和保护
-            href: ./rms-client/client-remove-label-protection.md
-          - name: 仅保护模式
-            href: ./rms-client/client-protection-only-mode.md
-        - name: 用于操作 RMS 共享应用程序的任务
-          href: ./rms-client/upgrade-client-app.md
-      - name: Azure 信息保护统一标签客户端（预览版）
-        href: ./rms-client/unifiedlabelingclient-version-release-history.md
-        items:
-        - name: 下载并安装 Azure 信息保护统一标签客户端（预览版）
-          href: ./rms-client/install-unifiedlabelingclient-app.md
-      - name: 受保护的 PDF 阅读器
-        href: ./rms-client/protected-pdf-readers.md
-      - name: RMS 客户端部署说明
-        href: ./rms-client/client-deployment-notes.md
-      - name: 使用 Windows Server FCI 的 RMS 保护
-        href: ./rms-client/configure-fci.md
-        items:
-        - name: PowerShell 脚本
-          href: ./rms-client/fci-script.md
-  - name: 开发和自定义应用
-    href: ./develop/developers-guide.md
-    items:
-    - name: 管理员指南
+            - name: Azure 信息保护统一标识客户端
+              href: ./rms-client/aip-clientv2.md
+              items:
+                - name: 版本历史记录 - Azure 信息保护统一标签客户端
+                  href: ./rms-client/unifiedlabelingclient-version-release-history.md
+                - name: 管理员指南 - Azure 信息保护统一标签客户端
+                  href: ./rms-client/clientv2-admin-guide.md
+                  items:
+                    - name: 为用户安装客户端
+                      href: ./rms-client/clientv2-admin-guide-install.md
+                    - name: 自定义
+                      href: ./rms-client/clientv2-admin-guide-customizations.md
+                    - name: 客户端文件和使用情况日志记录
+                      href: ./rms-client/clientv2-admin-guide-files-and-logging.md
+                    - name: 支持的文件类型
+                      href: ./rms-client/clientv2-admin-guide-file-types.md
+                    - name: PowerShell 命令
+                      href: ./rms-client/clientv2-admin-guide-powershell.md
+                - name: 用户指南 - Azure 信息保护统一标签客户端
+                  href: ./rms-client/clientv2-user-guide.md
+                  items:
+                    - name: 下载并安装客户端
+                      href: ./rms-client/install-unifiedlabelingclient-app.md
+                    - name: 对文件或电子邮件进行分类
+                      href: ./rms-client/clientv2-classify.md
+                    - name: 对文件或电子邮件进行分类和保护
+                      href: ./rms-client/clientv2-classify-protect.md
+                    - name: 打开受保护的文件
+                      href: ./rms-client/clientv2-view-use-files.md
+                    - name: 删除标签和保护
+                      href: ./rms-client/clientv2-remove-label-protection.md
+            - name: Azure 信息保护客户端
+              href: ./rms-client/aip-client.md
+              items:
+                - name: 版本历史记录 - Azure 信息保护客户端
+                  href: ./rms-client/client-version-release-history.md
+                - name: 管理员指南 - Azure 信息保护客户端
+                  href: ./rms-client/client-admin-guide.md
+                  items:
+                    - name: 为用户安装客户端
+                      href: ./rms-client/client-admin-guide-install.md
+                    - name: 自定义
+                      href: ./rms-client/client-admin-guide-customizations.md
+                    - name: 客户端文件和使用情况日志记录
+                      href: ./rms-client/client-admin-guide-files-and-logging.md
+                    - name: 文档跟踪
+                      href: ./rms-client/client-admin-guide-document-tracking.md
+                    - name: 支持的文件类型
+                      href: ./rms-client/client-admin-guide-file-types.md
+                    - name: PowerShell 命令
+                      href: ./rms-client/client-admin-guide-powershell.md
+                - name: 用户指南 - Azure 信息保护客户端
+                  href: ./rms-client/client-user-guide.md
+                  items:
+                    - name: 下载并安装客户端
+                      href: ./rms-client/install-client-app.md
+                    - name: 对文件或电子邮件进行分类
+                      href: ./rms-client/client-classify.md
+                    - name: 对文件或电子邮件进行分类和保护
+                      href: ./rms-client/client-classify-protect.md
+                    - name: 跟踪和撤消文档
+                      href: ./rms-client/client-track-revoke.md
+                    - name: 打开受保护的文件
+                      href: ./rms-client/client-view-use-files.md
+                    - name: 删除标签和保护
+                      href: ./rms-client/client-remove-label-protection.md
+                    - name: 仅保护模式
+                      href: ./rms-client/client-protection-only-mode.md
+                - name: 用于操作 RMS 共享应用程序的任务
+                  href: ./rms-client/upgrade-client-app.md
+            - name: 受保护的 PDF 阅读器
+              href: ./rms-client/protected-pdf-readers.md
+            - name: RMS 客户端部署说明
+              href: ./rms-client/client-deployment-notes.md
+            - name: 使用 Windows Server FCI 的 RMS 保护
+              href: ./rms-client/configure-fci.md
+              items:
+                - name: PowerShell 脚本
+                  href: ./rms-client/fci-script.md
+    - name: 开发和自定义应用
       href: ./develop/developers-guide.md
-    - name: Microsoft 信息保护
-      href: https://aka.ms/mipsdkdocs
-    - name: Rights Management SDK 4.2
-      href: ./develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md
       items:
-      - name: 概述
-        href: ./develop/overview.md
-      - name: 入门
-        href: ./develop/get-started.md
-        items:
-        - name: 新增功能
-          href: ./develop/release-notes.md
-        - name: 设置开发人员环境
-          href: ./develop/setup-Developer-environment.md
-        - name: Android 安装程序
-          href: ./develop/android-sdk.md
-        - name: Linux 安装程序
-          href: ./develop/linux-setup.md
-        - name: iOS 和 OS X 安装程序
-          href: ./develop/ios-sdk.md
-        - name: Windows Phone 安装程序
-          href: ./develop/windows-phone-apps.md
-        - name: Windows 应用商店安装程序
-          href: ./develop/winrt-sdk.md
-        - name: 代码示例
-          href: ./develop/code-examples.md
-        - name: Android 代码示例
-          href: ./develop/android-code.md
-        - name: Linux 代码示例
-          href: ./develop/linux-c-code-examples.md
-        - name: iOS/OS X 代码示例
-          href: ./develop/ios-os-x-code-examples.md
-        - name: 社区资源
-          href: ./develop/community-resources.md
-      - name: 开发人员指南
-        href: ./develop/core-concepts.md
-        items:
-        - name: 如何使用 Azure AD 注册应用并为其启用 RMS
-          href: ./develop/authentication-integration.md
-        - name: 如何启用错误和性能日志记录
-          href: ./develop/enabling-logging.md
-        - name: 如何使用内置权限
-          href: ./develop/built-in-rights-usage-restriction-reference.md
-        - name: 如何使用文档跟踪
-          href: ./develop/how-to-use-document-tracking.md
-      - name: API 参考
-        href: ./develop/api-reference-4-2.md
-        items:
-        - name: Android API 参考
-          href: https://msdn.microsoft.com/library/dn758245.aspx
-        - name: Linux API 参考
-          href: ./develop/linux-c-api-reference.md
-        - name: iOS / OS X API 参考
-          href: https://msdn.microsoft.com/library/dn758306.aspx
-        - name: Windows API 参考
-          href: https://msdn.microsoft.com/library/dn891914.aspx
-    - name: Rights Management SDK 2.1
-      href: ./develop/microsoft-information-protection-and-control-client-portal.md
-      items:
-      - name: 概述
-        href: ./develop/ad-rms-overview.md
-        items:
-        - name: 客户端
-          href: ./develop/ad-rms-client.md
-        - name: Server
-          href: ./develop/ad-rms-server.md
-      - name: 入门
-        href: ./develop/getting-started-with-ad-rms-2-0.md
-        items:
-        - name: 发行说明
-          href: ./develop/release-notes-rtm.md
-        - name: 安装 SDK
-          href: ./develop/install-the-rms-sdk.md
-        - name: 配置 Visual Studio
-          href: ./develop/how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md
-        - name: 开发应用程序
-          href: ./develop/developing-your-application.md
-        - name: 测试应用程序
-          href: ./develop/how-to-set-up-your-test-environment.md
-        - name: 部署到生产
-          href: ./develop/deploying-your-application.md
-      - name: 开发人员指南
-        href: ./develop/Developer-notes.md
-        items:
-        - name: 操作说明：使用 ADAL 身份验证
-          href: ./develop/how-to-use-adal-authentication.md
+        - name: 管理员指南
+          href: ./develop/developers-guide.md
+        - name: Microsoft 信息保护
+          href: 'https://aka.ms/mipsdkdocs'
+        - name: Rights Management SDK 4.2
+          href: ./develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md
           items:
-          - name: 为 ADAL 身份验证配置 Azure RMS
-            href: ./develop/adal-auth.md
-        - name: 操作说明：添加显式所有者权限
-          href: ./develop/add-explicit-owner-rights.md
-        - name: 操作说明：调试启用权限的应用程序
-          href: ./develop/debugging-applications-that-use-ad-rms.md
-        - name: 操作说明：部署应用
-          href: ./develop/how-to-deploy-app.md
-        - name: 操作说明：启用文档跟踪和撤销
-          href: ./develop/tracking-content.md
-        - name: 操作说明：启用电子邮件通知
-          href: ./develop/how-to-enable-email-notification.md
-        - name: 操作说明：使服务应用程序可以使用基于云的 RMS
-          href: ./develop/how-to-use-file-api-with-aadrm-cloud.md
-        - name: 操作说明：安装和配置 RMS 服务器
-          href: ./develop/how-to-install-and-configure-an-rms-server.md
-        - name: 操作说明：设置 API 安全模式
-          href: ./develop/setting-the-api-security-mode-api-mode.md
-        - name: 操作说明：使用加密设置
-          href: ./develop/working-with-encryption.md
-        - name: 应用程序类型
-          href: ./develop/application-types.md
-        - name: 文件 API 配置
-          href: ./develop/file-api-configuration.md
-        - name: 安全指南
-          href: ./develop/security-guidelines.md
-        - name: 支持的文件格式
-          href: ./develop/supported-file-formats.md
-        - name: 受支持的平台
-          href: ./develop/supported-platforms.md
-        - name: 了解使用限制
-          href: ./develop/understanding-usage-restrictions.md
-      - name: API 参考
-        href: ./develop/api-reference-2-1.md
-        items:
-        - name: 常量
-          href: https://msdn.microsoft.com/library/hh535291.aspx
-        - name: 数据类型
-          href: https://msdn.microsoft.com/library/hh535288.aspx
-        - name: 函数
-          href: https://msdn.microsoft.com/library/hh535289.aspx
-        - name: 结构
-          href: https://msdn.microsoft.com/library/hh535294.aspx
-        - name: 错误代码
-          href: https://msdn.microsoft.com/library/hh535248.aspx
-    - name: 条款
+            - name: 概述
+              href: ./develop/overview.md
+            - name: 入门
+              href: ./develop/get-started.md
+              items:
+                - name: 新增功能
+                  href: ./develop/release-notes.md
+                - name: 设置开发人员环境
+                  href: ./develop/setup-Developer-environment.md
+                - name: Android 安装程序
+                  href: ./develop/android-sdk.md
+                - name: Linux 安装程序
+                  href: ./develop/linux-setup.md
+                - name: iOS 和 OS X 安装程序
+                  href: ./develop/ios-sdk.md
+                - name: Windows Phone 安装程序
+                  href: ./develop/windows-phone-apps.md
+                - name: Windows 应用商店安装程序
+                  href: ./develop/winrt-sdk.md
+                - name: 代码示例
+                  href: ./develop/code-examples.md
+                - name: Android 代码示例
+                  href: ./develop/android-code.md
+                - name: Linux 代码示例
+                  href: ./develop/linux-c-code-examples.md
+                - name: iOS/OS X 代码示例
+                  href: ./develop/ios-os-x-code-examples.md
+                - name: 社区资源
+                  href: ./develop/community-resources.md
+            - name: 开发人员指南
+              href: ./develop/core-concepts.md
+              items:
+                - name: 如何使用 Azure AD 注册应用并为其启用 RMS
+                  href: ./develop/authentication-integration.md
+                - name: 如何启用错误和性能日志记录
+                  href: ./develop/enabling-logging.md
+                - name: 如何使用内置权限
+                  href: ./develop/built-in-rights-usage-restriction-reference.md
+                - name: 如何使用文档跟踪
+                  href: ./develop/how-to-use-document-tracking.md
+            - name: API 参考
+              href: ./develop/api-reference-4-2.md
+              items:
+                - name: Android API 参考
+                  href: 'https://msdn.microsoft.com/library/dn758245.aspx'
+                - name: Linux API 参考
+                  href: ./develop/linux-c-api-reference.md
+                - name: iOS / OS X API 参考
+                  href: 'https://msdn.microsoft.com/library/dn758306.aspx'
+                - name: Windows API 参考
+                  href: 'https://msdn.microsoft.com/library/dn891914.aspx'
+        - name: Rights Management SDK 2.1
+          href: ./develop/microsoft-information-protection-and-control-client-portal.md
+          items:
+            - name: 概述
+              href: ./develop/ad-rms-overview.md
+              items:
+                - name: 客户端
+                  href: ./develop/ad-rms-client.md
+                - name: Server
+                  href: ./develop/ad-rms-server.md
+            - name: 入门
+              href: ./develop/getting-started-with-ad-rms-2-0.md
+              items:
+                - name: 发行说明
+                  href: ./develop/release-notes-rtm.md
+                - name: 安装 SDK
+                  href: ./develop/install-the-rms-sdk.md
+                - name: 配置 Visual Studio
+                  href: ./develop/how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md
+                - name: 开发应用程序
+                  href: ./develop/developing-your-application.md
+                - name: 测试应用程序
+                  href: ./develop/how-to-set-up-your-test-environment.md
+                - name: 部署到生产
+                  href: ./develop/deploying-your-application.md
+            - name: 开发人员指南
+              href: ./develop/Developer-notes.md
+              items:
+                - name: 操作说明：使用 ADAL 身份验证
+                  href: ./develop/how-to-use-adal-authentication.md
+                  items:
+                    - name: 为 ADAL 身份验证配置 Azure RMS
+                      href: ./develop/adal-auth.md
+                - name: 操作说明：添加显式所有者权限
+                  href: ./develop/add-explicit-owner-rights.md
+                - name: 操作说明：调试启用权限的应用程序
+                  href: ./develop/debugging-applications-that-use-ad-rms.md
+                - name: 操作说明：部署应用
+                  href: ./develop/how-to-deploy-app.md
+                - name: 操作说明：启用文档跟踪和撤销
+                  href: ./develop/tracking-content.md
+                - name: 操作说明：启用电子邮件通知
+                  href: ./develop/how-to-enable-email-notification.md
+                - name: 操作说明：使服务应用程序可以使用基于云的 RMS
+                  href: ./develop/how-to-use-file-api-with-aadrm-cloud.md
+                - name: 操作说明：安装和配置 RMS 服务器
+                  href: ./develop/how-to-install-and-configure-an-rms-server.md
+                - name: 操作说明：设置 API 安全模式
+                  href: ./develop/setting-the-api-security-mode-api-mode.md
+                - name: 操作说明：使用加密设置
+                  href: ./develop/working-with-encryption.md
+                - name: 应用程序类型
+                  href: ./develop/application-types.md
+                - name: 文件 API 配置
+                  href: ./develop/file-api-configuration.md
+                - name: 安全指南
+                  href: ./develop/security-guidelines.md
+                - name: 支持的文件格式
+                  href: ./develop/supported-file-formats.md
+                - name: 受支持的平台
+                  href: ./develop/supported-platforms.md
+                - name: 了解使用限制
+                  href: ./develop/understanding-usage-restrictions.md
+            - name: API 参考
+              href: ./develop/api-reference-2-1.md
+              items:
+                - name: 常量
+                  href: 'https://msdn.microsoft.com/library/hh535291.aspx'
+                - name: 数据类型
+                  href: 'https://msdn.microsoft.com/library/hh535288.aspx'
+                - name: 函数
+                  href: 'https://msdn.microsoft.com/library/hh535289.aspx'
+                - name: 結構
+                  href: 'https://msdn.microsoft.com/library/hh535294.aspx'
+                - name: 错误代码
+                  href: 'https://msdn.microsoft.com/library/hh535248.aspx'
+        - name: 条款
 - name: 资源
   href: faqs.md
   items:
-  - name: 常见问题
-    href: faqs.md
-    items:
-    - name: 分类和标签的常见问题
-      href: faqs-infoprotect.md
-    - name: 数据保护的常见问题
-      href: faqs-rms.md
-  - name: 信息和支持
-    href: information-support.md
-  - name: 合规性和支持信息
-    href: compliance.md
-  - name: PowerShell 参考
-    href: https://docs.microsoft.com/powershell/azure/aip/overview?view=azureipps
-  - name: 术语
-    href: terminology.md
-ms.openlocfilehash: 5fa0ffe3bb86a058bd5d41b54b9cdfc25aa90620
-ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57978230"
+    - name: 常见问题
+      href: faqs.md
+      items:
+        - name: 分类和标签的常见问题
+          href: faqs-infoprotect.md
+        - name: 数据保护的常见问题
+          href: faqs-rms.md
+    - name: 信息和支持
+      href: information-support.md
+    - name: 合规性和支持信息
+      href: compliance.md
+    - name: PowerShell 参考
+      href: 'https://docs.microsoft.com/powershell/azure/aip/overview?view=azureipps'
+    - name: 术语
+      href: terminology.md
