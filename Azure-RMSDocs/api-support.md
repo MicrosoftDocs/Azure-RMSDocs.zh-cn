@@ -12,11 +12,11 @@ ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: f1869a4de4c6c8a7328708f2dc3cc1f4f7982902
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258889"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60175150"
 ---
 # <a name="other-applications-that-support-the-rights-management-apis"></a>支持 Rights Management API 的其他应用程序
 

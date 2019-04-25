@@ -13,15 +13,15 @@ ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: fdf5abd317164736cc66b1cbca8cfb9c2c5863d0
-ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57828968"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60175167"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-microsoft-365-admin-center"></a>如何从 Microsoft 365 管理中心激活 Azure 权限管理
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 如果你有权可以在 Microsoft 365 管理中心内访问 Azure 权限管理服务，并且是全局管理员，请按照下列说明操作。 
 
@@ -38,7 +38,7 @@ ms.locfileid: "57828968"
     
     如果偏好通过管理中心导航到“权限管理”页：请选择“设置” > “服务和外接程序” > “Microsoft Azure 信息保护” > “管理 Microsoft Azure 信息保护设置”
 
-2. 在“Rights Management”页上，单击“激活”。
+2. 在**Rights Management**页上，单击**激活**。
 
 3. 看到“是否要激活权限管理?”消息时，单击“激活”。
 

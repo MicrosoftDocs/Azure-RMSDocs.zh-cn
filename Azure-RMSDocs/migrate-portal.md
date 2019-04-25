@@ -12,11 +12,11 @@ ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
 ms.openlocfilehash: 818d1f16d28a2d2b1b485aab9ddfdff5b9d814a9
-ms.sourcegitcommit: 465709879998fcb78cd2a4efda559c43ed661dda
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233745"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60184172"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>曾使用 Azure 经典门户执行的任务
 
@@ -60,6 +60,6 @@ Azure 门户中的新功能：
 
 用于创建和管理模板的 PowerShell cmdlet 以及用于激活或停用该服务的 PowerShell cmdlet 将继续受支持，不会更改。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 有关详细信息，请参阅[使用 Azure 信息保护策略配置和管理模板](configure-policy-templates.md)。
 

@@ -12,11 +12,11 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 4561c505be994039a6e95779e47ea1c511e0a0c1
-ms.sourcegitcommit: 3a3f1051c5a58c2bd2f230f1c8ece919df3dc23e
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58221059"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60181525"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -46,9 +46,9 @@ ms.locfileid: "58221059"
 
 |**设备操作系统**|Word、Excel、PowerPoint|Email|其他文件类型|
 |---------------------------|-----------------------|-----------------|---------|
-|**Windows**|Office 365 应用 [[1]](#footnote-1)<br /><br />Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office 2019 <br /><br />Office Online（查看受保护的文档）[[2]](#footnote-2)<br /><br />Web 浏览器 [[3]](#footnote-3)|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Office 2019 <br /><br />Office 365 ProPlus<br /><br />Web 浏览器 [[4]](#footnote-4)<br /><br />Windows 邮件 [[5]](#footnote-5) |适用于 Windows 的 Azure 信息保护客户端：文本、图像、pfile<br /><br />适用于 AutoCAD 的 SealPath RMS 插件：.dwg|
+|**Windows**|Office 365 应用 [[1]](#footnote-1)<br /><br />Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office 2019 <br /><br />Office Online（查看受保护的文档）[[2]](#footnote-2)<br /><br />Web 浏览器 [[3]](#footnote-3)|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Office 2019 <br /><br />Office 365 ProPlus<br /><br />Web 浏览器 [[4]](#footnote-4)<br /><br />Windows 邮件 [[5]](#footnote-5) |适用于 Windows 的 Azure 信息保护客户端：文本、 图像、 pfile<br /><br />适用于 AutoCAD 的 SealPath RMS 插件：.dwg|
 |**iOS**|GigaTrust<br /><br /> Office Mobile（查看和编辑受保护的文档）<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS 文档<br /><br />Web 浏览器 [[3]](#footnote-3)|Azure 信息保护应用（查看受保护的电子邮件）<br /><br />BlackBerry Work<br /><br />Citrix WorxMail <br /><br />NitroDesk [[5]](#footnote-5)<br /><br />iPad 和 iPhone 版 Outlook [[5]](#footnote-5)<br /><br />TITUS Mail <br /><br />Web 浏览器 [[4]](#footnote-4)|Azure 信息保护应用（查看正在保护的文本和图像）<br /><br />TITUS 文档：Pfile|
-|**Outlook Web Access (OWA)**|适用于 Android 的 GigaTrust 应用程序<br /><br />Office Online [[2]](#footnote-2)<br /><br />Office Mobile <br /><br />Web 浏览器 [[3]](#footnote-3)|9Folders [[5]](#footnote-5)<br /><br />Azure 信息保护应用（查看受保护的电子邮件）<br /><br />BlackBerry Work <br /><br />适用于 Android 的 GigaTrust 应用 [[5]](#footnote-5)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[5]](#footnote-5)<br /><br />Outlook for Android [[5]](#footnote-5)<br /><br />Samsung Email（S3 及更高版本）[[5]](#footnote-5)<br /><br />TITUS Classification for Mobile <br /><br />Web 浏览器 [[4]](#footnote-4)|Azure 信息保护应用（查看受保护的文本和图像）|
+|**Android**|适用于 Android 的 GigaTrust 应用程序<br /><br />Office Online [[2]](#footnote-2)<br /><br />Office Mobile <br /><br />Web 浏览器 [[3]](#footnote-3)|9Folders [[5]](#footnote-5)<br /><br />Azure 信息保护应用（查看受保护的电子邮件）<br /><br />BlackBerry Work <br /><br />适用于 Android 的 GigaTrust 应用 [[5]](#footnote-5)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[5]](#footnote-5)<br /><br />Outlook for Android [[5]](#footnote-5)<br /><br />Samsung Email（S3 及更高版本）[[5]](#footnote-5)<br /><br />TITUS Classification for Mobile <br /><br />Web 浏览器 [[4]](#footnote-4)|Azure 信息保护应用（查看受保护的文本和图像）|
 |**macOS**|Office 365 应用<br /><br />Office 2019 for Mac<br /><br />Office 2016 for Mac<br /><br />Office Online [[2]](#footnote-2)<br /><br />Web 浏览器 [[3]](#footnote-3)|Outlook 2019 for Mac<br /><br /> Outlook 2016 for Mac<br /><br />Web 浏览器 [[4]](#footnote-4)|RMS 共享应用（查看受保护的文本、图像、常规受保护的文件）|
 |**Windows 10 移动版**|Office Mobile 应用（查看使用 Azure RMS 的受保护文档） <br /><br />Web 浏览器 [[3]](#footnote-3)|Citrix WorxMail <br /><br />Outlook 邮件（查看受保护的电子邮件） <br /><br />Web 浏览器 [[4]](#footnote-4)|不支持|
 |**Blackberry 10**|Web 浏览器 [[3]](#footnote-3)|Blackberry 电子邮件 [[5]](#footnote-5) <br /><br />Web 浏览器 [[4]](#footnote-4)|不支持|
@@ -176,7 +176,7 @@ Azure RMS 当前不支持以下应用程序：
 
 此外，Azure 信息保护客户端具有以下限制：
 
-- 对于 Windows 计算机：要求最低版本为 Windows 7 Service Pack 1
+- 对于 Windows 计算机：要求最低版本的 Windows 7 Service Pack 1
 
 ## <a name="rms-enlightened-solutions"></a>启用 RMS 的解决方案
 

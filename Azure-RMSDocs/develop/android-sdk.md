@@ -14,11 +14,11 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.openlocfilehash: e3bce5ec86f8c655ca6f37a108f007d50387c2d2
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57333597"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60179422"
 ---
 # <a name="android-setup"></a>Android 安装程序
 
@@ -31,7 +31,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 我们建议在开发系统上安装以下软件：
 
@@ -116,7 +116,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
   ![添加库](../media/Android-setup-10b.jpg)
 
-- 单击" **确定**"。
+- 单击 **“确定”**。
 
   因为 MS RMS SDK 4.2 与 AAD RM 相连接，所以必须向应用程序授予 **INTERNET** 和 **ACCESS\_NETWORK\_STATE** 权限。 为此，请在项目的根目录中打开 *AndroidManifest.xml* 文件。
 
@@ -139,7 +139,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 -   你现在已准备就绪，可创建新 Android 应用。
 
-### <a name="see-also"></a>另请参阅
+### <a name="see-also"></a>请参阅
 
 [入门](get-started.md)
 

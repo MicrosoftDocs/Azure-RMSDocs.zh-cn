@@ -12,11 +12,11 @@ ms.assetid: A1C99424-D986-4A5A-B2E1-6D18EEF11B21
 ms.reviewer: aashishr
 ms.suite: ems
 ms.openlocfilehash: e61bf5fab8aeed01e200b5238d3d4756293a0cea
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258277"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60175826"
 ---
 # <a name="add-aadrmkey"></a>Add-AadrmKey
 

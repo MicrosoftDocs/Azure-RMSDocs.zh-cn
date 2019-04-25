@@ -12,13 +12,13 @@ ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: ff99a39c138cc3ddc0b49cf7ff65ab95d5e36ece
-ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57828900"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60175808"
 ---
-# <a name="activating-azure-rights-management"></a>激活 Azure Rights Management
+# <a name="activating-azure-rights-management"></a>激活 Azure 权限管理
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
@@ -81,7 +81,7 @@ ms.locfileid: "57828900"
 > [!IMPORTANT]
 > 若要使用此命令，必须安装至少 **2.1.0.0** 版的 [Azure Rights Management PowerShell 模块](https://www.powershellgallery.com/packages/AADRM)。
 >
-> 若要查看已安装的版本，请运行：**(Get-Module aadrm –ListAvailable).Version**
+> 若要检查已安装的版本，请运行：**(Get-Module aadrm –ListAvailable).Version**
 
 例如，如果出于测试目的，你最初只想让“IT 部门”组（具有对象 ID fbb99ded-32a0-45f1-b038-38b519009503）中的管理员能够保护内容，请使用以下命令：
 

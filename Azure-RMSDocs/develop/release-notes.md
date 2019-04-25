@@ -13,11 +13,11 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.openlocfilehash: d9fda9c7477c408e8003f48c85e6d35fec6a1884
-ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58809805"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60176006"
 ---
 # <a name="whats-new-and-release-notes"></a>新增功能和发行说明
 
@@ -151,7 +151,7 @@ ms.locfileid: "58809805"
 
 -   RMS SDK 4.x API 并非*线程安全*。
 
-**Outlook Web Access (OWA)**
+**Android**
 
 -   当你在 Amazon® Kindle 设备上使用示例应用程序以查看 .ptxt 附件时，必须首先下载文件，然后才能查看。
 
@@ -216,7 +216,7 @@ ms.locfileid: "58809805"
 
 **答**：不是，从 3.0 版本开始的 Rights Management SDK 中不再需要清单。
 
-**Outlook Web Access (OWA)**
+**Android**
 
 **问**：已使用哪些开发环境对 SDK 进行了测试？
 

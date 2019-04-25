@@ -4,23 +4,25 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/02/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: cec2614cacffa41ef3e4a345455c582ad92682f2
-ms.sourcegitcommit: 746963b045072ea74e147895a8acda6a2e5bc9ce
-ms.translationtype: HT
+ms.openlocfilehash: 530b7e112f4ee66f9117bf3816ff19ab179b3811
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226285"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "62773638"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
 >适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 如果你负责企业网络上的 Azure 信息保护客户端，或如果你想要获取除了 [Azure 信息保护客户端用户指南](client-user-guide.md)以外的更多技术信息，请使用本指南中的信息。 
 
@@ -65,7 +67,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 ## <a name="should-you-deploy-the-azure-information-protection-client"></a>你是否应该部署 Azure 信息保护客户端？
 
-如果以下任一项适用，请部署 Azure 信息保护客户端：
+如果不使用部署 Azure 信息保护客户端[Office 365 安全与合规中心的敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)但相反，使用从 Azure 中，而任何下载的 Azure 信息保护标签以下内容适用：
 
 - 想要通过从 Office 应用程序（Word、Excel、PowerPoint、Outlook）中选择标签对文档和电子邮件进行分类（或保护）。
 
@@ -101,7 +103,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 - 从 Office 应用程序：在“开始”选项卡上的“保护”组中，依次选择“保护”和“帮助和反馈”。
 
-- 从文件资源管理器：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”。 
+- 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”。 
 
 #### <a name="help-and-feedback-section"></a>“**帮助和反馈**”部分
 
@@ -185,22 +187,14 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>升级 Azure 信息保护扫描程序
 
-如何升级扫描程序取决于是要升级到当前正式发布版本还是升级到当前预览版本。
+使用以下说明将扫描程序从早于 1.48.204.0 的正式发布版本升级到当前版本的扫描程序。
 
-#### <a name="to-upgrade-the-scanner-to-the-current-ga-version"></a>将扫描程序升级到当前正式发布版本
-
-若要升级 Azure 信息保护扫描程序，请安装最新版 Azure 信息保护客户端。 然后执行以下一次性操作。 执行此操作后，无需重新扫描已扫描的文件。
-
-- 升级 Azure 信息保护客户端后，运行 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)。 扫描程序和存储库的配置设置将会得到保留。 需要运行此 cmdlet 以更新扫描程序的数据库架构，如果需要，还应为扫描程序服务帐户授予针对扫描程序数据库的删除权限。 
-    
-    在运行此更新 cmdlet 之前，扫描程序不会运行，通常会在 Windows 事件日志中看到事件 ID 1000，并显示以下错误消息：无效的对象名称 "ScannerStatus"。
-
-#### <a name="to-upgrade-the-scanner-to-the-current-preview-version"></a>将扫描程序升级到当前预览版本
+#### <a name="to-upgrade-the-scanner-to-the-current-version"></a>若要升级到最新版本的扫描程序
 
 > [!IMPORTANT]
-> 为了顺利升级，请勿将在运行扫描程序的计算机上安装 Azure 信息保护客户端预览版本作为升级扫描程序的第一步。 请改用以下升级说明。
+> 平滑的升级路径，请不要安装 Azure 信息保护客户端作为第一个步骤运行扫描程序的计算机上，若要升级，扫描程序。 请改用以下升级说明。
 
-对于扫描程序的当前预览版本，其升级过程不同于以前的版本。 升级扫描程序会自动更改扫描程序以从 Azure 门户获取其配置设置。 此外，还会更新扫描程序配置数据库的架构，并且还会从 AzInfoProtection 重命名此数据库：
+从版本 1.48.204.0，从以前版本的升级过程会自动更改到扫描程序从 Azure 门户获取其配置设置。 此外，还会更新扫描程序配置数据库的架构，并且还会从 AzInfoProtection 重命名此数据库：
 
 - 如果未指定自己的配置文件名称，则会将配置数据库重命名为 AIPScanner_\<computer_name>。 
 
@@ -208,19 +202,21 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 虽然可以按不同的顺序升级扫描程序，但建议执行以下步骤：
 
-1. 使用 Azure 门户创建新的扫描程序配置文件，其中包含扫描程序和数据存储库的设置及其所需的任何设置。 有关此步骤的帮助，请参阅预览扫描程序部署说明中的[在 Azure 门户中配置扫描程序](../deploy-aip-scanner-preview.md#configure-the-scanner-in-the-azure-portal)部分。
+1. 使用 Azure 门户创建新的扫描程序配置文件，其中包含扫描程序和数据存储库的设置及其所需的任何设置。 此步骤的帮助，请参阅[在 Azure 门户中配置扫描程序](../deploy-aip-scanner.md#configure-the-scanner-in-the-azure-portal)扫描程序的部署说明中的部分。
     
     如果运行扫描程序的计算机断开与 Internet 的连接，则仍需执行此步骤。 然后，在 Azure 门户中，使用“导出”选项将扫描程序配置文件导出到文件中。
 
 2. 在扫描程序计算机上，停止扫描程序服务“Azure 信息保护扫描程序”。
 
-3. 通过从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)安装当前预览版本来升级 Azure 信息保护客户端。
+3. 通过安装中的当前正式发布 (GA) 版本升级的 Azure 信息保护客户端[Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)。
 
-4. 在 PowerShell 会话中，使用你在步骤 1 中指定的相同配置文件名称运行 Update-AIPScanner 命令。 例如：`Update-AIPScanner –Profile USWest`
+4. 在 PowerShell 会话中，使用你在步骤 1 中指定的相同配置文件名称运行 Update-AIPScanner 命令。 例如：`Update-AIPScanner –Profile Europe`
 
 5. 仅当扫描程序在断开连接的计算机上运行时：现在运行 [Import-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration)，并指定包含导出设置的文件。
 
 6. 重启 Azure 信息保护扫描程序服务“Azure 信息保护扫描程序”。
+
+现在，您可以使用中的说明的其余部分[部署 Azure 信息保护扫描程序以自动分类和保护文件](../deploy-aip-scanner.md)，省略要安装扫描程序的步骤。 由于已安装扫描程序，没有无需重新安装它。
 
 ##### <a name="upgrading-in-a-different-order-to-the-recommended-steps"></a>按照建议步骤的不同顺序进行升级
 
@@ -231,19 +227,19 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 > [!TIP]
 > 若要识别具有此错误配置的扫描程序，请使用 Azure 门户中的“Azure 信息保护 - 节点”边栏选项卡。
 >  
-> 对于具有 Internet 连接的扫描程序，它们显示其带有 Azure 信息保护客户端的预览版本号的计算机名称，但不显示配置文件名称。 只有版本号为 1.41.51.0 的扫描程序才不在此边栏选项卡上显示配置文件名称。 
+> 对于具有 Internet 连接的扫描仪，它们显示其计算机的名称及 GA 版本数 Azure 信息保护客户端，但没有配置文件名称。 只有版本号为 1.41.51.0 的扫描程序才不在此边栏选项卡上显示配置文件名称。 
 
 如果在运行 Update-AIPScanner 命令时未指定配置文件名称，则计算机名称将用于自动为扫描程序创建配置文件名称。
 
 #### <a name="moving-the-scanner-configuration-database-to-a-different-sql-server-instance"></a>将扫描程序配置数据库移动到其他 SQL Server 实例
 
-在当前预览版本中，如果在运行升级命令后尝试将扫描程序配置数据库移动到新的 SQL Server 实例，则会出现一个已知问题。
+在当前的 GA 版本中，是一个已知的问题过程，如果你尝试将扫描程序配置数据库移动到新的 SQL Server 实例，当您运行升级命令。
 
-如果知道要在预览版本上移动扫描程序配置数据库，请执行以下操作：
+如果你知道你希望移动的 GA 版本的扫描程序配置数据库，请执行以下操作：
 
 1. 使用 [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner) 卸载扫描程序。
 
-2. 如果尚未升级到 Azure 信息保护客户端的预览版本，请立即升级客户端。
+2. 如果你尚未尚未升级到 Azure 信息保护客户端的当前 GA 版本，请立即升级客户端。
 
 3. 使用 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) 安装扫描程序，指定新的 SQL Server 实例和配置文件名称。
 
@@ -273,5 +269,3 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 - [支持的文件类型](client-admin-guide-file-types.md)
 
 - [PowerShell 命令](client-admin-guide-powershell.md)
-
-

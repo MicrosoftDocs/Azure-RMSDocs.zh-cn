@@ -12,11 +12,11 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 4a0583b4cc288385520d2990d6f297a58a81d1cc
-ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58809721"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60179655"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>为 Azure Rights Management 和发现服务或数据恢复配置超级用户
 
@@ -34,7 +34,7 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 - 数据丢失防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品的现有 IT 服务需要检查已受保护的文件。
 
-- 出于审核、法律或其他合规性原因，你需要批量解密文件。
+- 出于审核、法律或其他法规遵从原因，你需要批量解密文件。
 
 ## <a name="configuration-for-the-super-user-feature"></a>超级用户功能的配置
 

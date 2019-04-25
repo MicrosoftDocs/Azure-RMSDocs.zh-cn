@@ -4,18 +4,18 @@ description: 确定使用 Azure 信息保护的 Azure AD 要求，以便用户�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/05/2019
+ms.date: 04/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.suite: ems
-ms.openlocfilehash: 7be53f80e3de227ee2439121bc6733661274f3e1
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: 171f7c3a410578421d7dffdf4ba12808940abf58
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258464"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60181503"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
 
@@ -33,7 +33,7 @@ ms.locfileid: "56258464"
 
 运行 Office 2010 的计算机： 
 
-- 这些计算机需要 [Azure 信息保护客户端](./rms-client/aip-client.md)来对 Azure 信息保护及其数据保护服务 Azure Rights Management 进行身份验证。
+- 这些计算机需要[Azure 信息保护统一标记的客户端](./rms-client/aip-clientv2.md)或[Azure 信息保护客户端](./rms-client/aip-client.md)对 Azure 信息保护其数据保护进行身份验证服务，Azure Rights Management。
 
 - 如果你的用户帐户已联合（例如，使用 AD FS），则帐户必须使用 Windows 集成身份验证。 在此方案中，基于表单的身份验证无法对 Azure 信息保护的用户进行身份验证。
 
@@ -60,7 +60,7 @@ ms.locfileid: "56258464"
 
 - Azure 信息保护客户端：
 
-    - 适用于 Windows 的 [Azure 信息保护客户端](./rms-client/aip-client.md)和适用于 iOS 和 Android 的查看器应用始终支持 MFA，且无最低版本要求。 
+    - Windows 的 Azure 信息保护客户端和适用于 iOS 和 Android 的查看器应用始终支持 MFA;最低版本是必需的。 
 
 -   适用于 Mac 计算机的 Rights Management 共享应用：
 
@@ -76,7 +76,7 @@ ms.locfileid: "56258464"
 
 - 对于联合租户（你在本地操作联合身份验证服务器）：
 
-    - 为 Azure Active Directory 或 Office 365 配置联合身份验证服务器。 例如，如果你使用 AD FS，请参阅 TechNet 上的[为 AD FS 配置其他身份验证方法](https://technet.microsoft.com/library/dn758113.aspx)。
+    - 为 Azure Active Directory 或 Office 365 配置联合身份验证服务器。 例如，如果你使用 AD FS，请参阅[适用于 AD FS 配置其他身份验证方法](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs)。
 
         有关此方案的详细信息，请参阅 Office 博客上的[使用 Office 365 – 标识程序现在已简化](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)。
 

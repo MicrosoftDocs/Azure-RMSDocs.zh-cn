@@ -1,44 +1,53 @@
 ---
-title: Azure 信息保护统一标签客户端 - 版本发布信息
+title: Azure 信息保护统一标记客户端-版本发行历史记录和支持策略
 description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户端的发布信息。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/02/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 7eb7ffd98651ed35be7ecd8043e49c1d15a65e8e
-ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
-ms.translationtype: HT
+ms.openlocfilehash: 1262a2f1a70002686aed0bad47354cdc5ac23bac
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58809703"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60180879"
 ---
-# <a name="azure-information-protection-unified-labeling-client-version-release-information"></a>Azure 信息保护统一标签客户端：版本发布信息
+# <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标记客户端-版本发行历史记录和支持策略
 
 >适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>
+> *说明：[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+
+
+您可以下载 Azure 信息保护统一标记的客户端从[Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)。
+
+### <a name="servicing-information-and-timelines"></a>维护信息和日程表
+
+每个公开发行 (GA) 版本的 Azure 信息保护统一标记客户端支持最多六个月发布后的后续 GA 版本。 文档不包括关于不支持的客户端版本的信息。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
+
+不应在生产网络上为最终用户部署预览版本。 而是使用最新预览版来查看和试用即将在下一 GA 版本中推出的新功能或修补程序。 仅支持当前预览版。
 
 > [!NOTE]
-> 此客户端处于预览状态，随时可能更改。 客户端使用统一标签存储并从以下管理中心下载带有标签的策略：Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心。 [详细信息](/Office365/SecurityCompliance/sensitivity-labels)
-
-可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=57440)下载最新预览版本的 Azure 信息保护统一标签客户端。
+> 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
 ### <a name="release-information"></a>发布信息
 
-使用以下信息以查看最新预览版本的 Azure 信息保护统一标签客户端所支持的功能。
+使用以下信息查看正式发布版本的 Azure 信息保护统一标记客户端支持的功能。
 
 此客户端安装 Windows 计算机的 Office 加载项：文件资源管理器的扩展和 PowerShell 模块。 此客户端的[先决条件](../requirements.md)与从 Azure 下载策略的 Azure 信息保护客户端相同。
 
-若要与 Azure 信息保护客户端比较特性和功能，请参阅[客户端功能比较](use-client.md#feature-comparisons-for-the-clients)。
+若要与 Azure 信息保护客户端比较特性和功能，请参阅[客户端功能比较](use-client.md#compare-the-clients)。
 
-## <a name="current-preview-version"></a>当前的预览版本
+## <a name="version-20778"></a>版本 2.0.778
 
-**发布日期**：2019 年 2 月 25 日
+**发布日期**：04/16/2019
 
-此预览版的适用于 Windows 的 Azure 信息保护统一标签客户端支持以下功能： 
+第一个公开上市版本的 Windows 的 Azure 信息保护统一标记客户支持以下功能： 
 
 - 从 Azure 信息保护客户端升级。
 
@@ -54,7 +63,7 @@ ms.locfileid: "58809703"
     - [读取应用于文档的标签信息](/powershell/module/azureinformationprotection/get-aipfilestatus)
     - [进行身份验证以支持无人参与的 PowerShell 会话](/powershell/module/azureinformationprotection/set-aipauthentication)
 
-- 使用 [Azure 信息保护分析](../reports-aip.md)支持集中报告。
+- 审核对中心报表使用的数据和终结点发现支持[Azure 信息保护分析](../reports-aip.md)。
 
 - 以下标签和策略设置：
     - 视觉标记（页眉、页脚、水印）
@@ -70,34 +79,14 @@ ms.locfileid: "58809703"
 
 - “帮助和反馈”对话框，其中包括重置设置和导出日志。
 
-### <a name="features-that-do-not-work-in-this-preview-version-or-are-not-available"></a>在此预览版本中不起作用或不提供的功能
 
-包括：
+## <a name="next-steps"></a>后续步骤
 
-- 用于发现、标记和保护本地数据存储文件的扫描程序。
+有关完整的详细信息，请参阅[比较表](use-client.md#compare-the-clients)。
 
-- 从 Azure 门户迁移并配置为 HYOK 保护的标签在发布时显示在客户端中，但这些标签不应用保护。
+有关如何安装和使用此客户端的详细信息： 
 
-- AzureInformationProtection 模块中一组完整的 cmdlet 不可用，其中包括直接连接到保护服务的 cmdlet。 例如，用于批量取消文件保护的 Unprotect-RMSFile。
+- 面向用户：[下载并安装客户端](install-unifiedlabelingclient-app.md)
 
-有关完整的详细信息，请参阅[比较表](use-client.md#feature-comparisons-for-the-clients)。
+- 面向管理员：[Azure 信息保护统一标记的客户端管理员指南](clientv2-admin-guide.md)
 
-## <a name="instructions"></a>说明
-
-1. 按照以下说明安装客户端：[用户指南：下载并安装 Azure 信息保护客户端（预览版）](install-unifiedlabelingclient-app.md) 
-
-2. 像使用 Azure 信息保护客户端一样使用客户端，Office 应用程序的以下内容除外：
-    - Office 功能区上的按钮命名为“敏感度”，而不是“保护”。
-    - 默认情况下，管理员无法显示信息保护栏，但用户可通过从“敏感度”按钮选择“显示栏”来显示它。 
-    - 不提供自定义权限
-    - 不提供跟踪和撤销
-    
-    用户指令：
-    
-    - [对文件或电子邮件进行分类](client-classify.md) 
-    
-    - [对文件或电子邮件进行分类和保护](client-classify-protect.md)
-
-3. 与我们分享你的体验： 
-    
-    - 要提供反馈或提出有关此预览版客户端的问题，请使用 [Azure 信息保护的 Yammer 站点](https://www.yammer.com/AskIPTeam)。

@@ -4,21 +4,23 @@ description: 可以更改或优化用户可以在信息保护栏看到的标签�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: 1f40efbe102eb15cd62c616455414a26b1cd6c9f
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: 6e940e72e932d19dfceabcef059d4623041e9634
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259076"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60180692"
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>如何更改或自定义 Azure 信息保护的现有标签
 
->适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 通过在 Azure 门户中配置标签，可以更改或优化用户在“信息保护”栏或从 Office 功能区的“保护”按钮看到的任何标签。
 

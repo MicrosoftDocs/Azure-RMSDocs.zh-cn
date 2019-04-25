@@ -4,19 +4,19 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/04/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 681d40f86598aaa328c41df9ec76b27c1c24d0c1
-ms.sourcegitcommit: 465709879998fcb78cd2a4efda559c43ed661dda
-ms.translationtype: HT
+ms.openlocfilehash: d39b73a93f6abd434034acc9dca1858c7f57dde4
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233779"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60182647"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -43,13 +43,13 @@ ms.locfileid: "59233779"
 
 通过访问 Azure 信息保护的 [UserVoice 站点](https://msip.uservoice.com/)，请求新功能并对请求进行投票。
 
-## <a name="which-preview-client-do-i-install-for-testing-new-functionality"></a>安装哪个预览客户端来测试新功能？
+## <a name="which-client-do-i-install-for-testing-new-functionality"></a>测试新功能安装使用哪种客户端？
 
-目前有两个 Windows 预览版客户端： 
+目前，有两个 Windows 的客户端： 
 
-- 从 Azure 门户下载标签和策略设置的 Azure 信息保护客户端。 此客户端在正式发布版客户端的基础上生成。
+- 从 Office 365 安全与合规中心下载标签和策略设置的 Azure 信息保护统一标记客户端。 此客户端现在为公开发行。
 
-- 从以下其中一个管理中心下载标签和策略设置的 Azure 信息保护统一标签客户端：Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。 此客户端现在提供第二个预览版。
+- 从 Azure 门户下载标签和策略设置的 Azure 信息保护客户端。 以前的正式发布版本的客户端上生成此客户端。
 
 如果 Azure 信息保护统一标记客户端目前的功能集和功能可满足你的业务需求，建议使用它进行测试。 如果无法满足你的业务需求，或者如果你已在 Azure 门户中配置了标签，而这些标签尚未[迁移到统一标记存储](configure-policy-migrate-labels.md)，请使用 Azure 信息保护客户端。
 
@@ -69,7 +69,7 @@ ms.locfileid: "59233779"
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>标记一封电子邮件时，是否有任何附件会自动获得相同的标记？
 
-不能。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 不过，如果电子邮件的标签应用了保护配置，此保护配置也会应用于 Office 附件。
+否。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 不过，如果电子邮件的标签应用了保护配置，此保护配置也会应用于 Office 附件。
 
 ## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
 
@@ -105,7 +105,4 @@ Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分�
 
 可以使用同一技术将标签用于 Outlook 网页版和这些移动邮件应用程序。
 
-有关配置步骤，请参阅[将 Exchange 邮件分类与 Azure 信息保护集成，实现移动设备标记解决方案](./rms-client/client-admin-guide-customizations.md#integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution)。 
-
-
-
+有关配置步骤，请参阅[将 Exchange 邮件分类与 Azure 信息保护集成，实现移动设备标记解决方案](./rms-client/client-admin-guide-customizations.md#integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution)。

@@ -14,11 +14,11 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.openlocfilehash: d1181dfe1c495a334aaebd567df5db7e14649e25
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330995"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60178227"
 ---
 # <a name="file-api-configuration"></a>文件 API 配置
 
@@ -38,13 +38,13 @@ ms.locfileid: "57330995"
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection`
 
-**类型**：Key
+**类型**：键
 
 **说明**：包含文件 API 的常规配置。
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>`
 
-**类型**：Key
+**类型**：键
 
 **说明**：指定特定文件扩展名的配置信息，例如 TXT 和 JPG 等。
 
@@ -146,7 +146,7 @@ HKEY_LOCAL_MACHINE
                   Encryption = Off
 ```
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-articles"></a>相关的文章
 
 - [开发人员说明](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)

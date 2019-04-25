@@ -4,19 +4,19 @@ description: 有关 Azure 信息保护所使用的个人数据的信息以及如
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/04/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: 33455ec0d6433c52164f27127838917c2850d2f3
-ms.sourcegitcommit: 465709879998fcb78cd2a4efda559c43ed661dda
-ms.translationtype: HT
+ms.openlocfilehash: f2ae2ba9ab7a50bc7e5f87fed7f457132e4b82f7
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233728"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60181869"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
 
@@ -186,11 +186,11 @@ IsHiddenInfo         : False
 
 没有按 ObjectID 进行任何搜索。 但是，你不受 `-UserEmail` 参数限制，并且你提供的电子邮件地址不需要成为你租户的一部分。 如果提供的电子邮件地址存储在文档跟踪日志中的任意位置，则在 cmdlet 输出中返回文档跟踪条目。
 
-### <a name="usage-logs-for-the-azure-information-protection-client-and-rms-client"></a>Azure 信息保护客户端和 RMS 客户端的使用情况日志
+### <a name="usage-logs-for-the-azure-information-protection-clients-and-rms-client"></a>Azure 信息保护客户端和 RMS 客户端的使用情况日志
 
 将标签和保护应用于文档和电子邮件时，电子邮件地址和 IP 地址可以存储在用户计算机以下位置的日志文件中：
 
-- 对于 Azure 信息保护客户端：%localappdata%\Microsoft\MSIP\Logs
+- Azure 信息保护统一标记客户端和 Azure 信息保护客户端： %localappdata%\Microsoft\MSIP\Logs
 
 - 对于 RMS 客户端：%localappdata%\Microsoft\MSIPC\msip\Logs
 

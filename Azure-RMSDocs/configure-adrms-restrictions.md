@@ -4,21 +4,23 @@ description: 具有 Azure 信息保护的 HYOK (AD RMS) 保护概述、其支持
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/24/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: fc99910dbc2f6b8666b50c46b64cc1c9c59958a7
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: 6ba22afad4ef9e1e8fc5da98efdff965dd6b3dfa
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259042"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60182137"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>用于 Azure 信息保护的保留自己的密钥 (HYOK) 保护
 
->适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 使用以下信息了解什么是用于 Azure 信息保护的保留自己的密钥 (HYOK)，以及它与默认的基于云的保护有何不同。 使用 HYOK 保护前，请确保了解适用情况、支持的方案、限制和需求。 
 

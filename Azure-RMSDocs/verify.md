@@ -12,11 +12,11 @@ ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 3fd211e3a40826e9803210c0005ab8acdd1d03ea
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258719"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60180794"
 ---
 # <a name="verifying-the-azure-rights-management-service"></a>验证 Azure Rights Management 服务
 

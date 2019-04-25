@@ -1,26 +1,28 @@
 ---
-title: Azure 信息保护支持的文件类型
+title: Azure 信息保护客户端支持的文件类型
 description: 有关支持的文件类型、文件扩展名以及负责适用于 Windows 的 Azure 信息保护客户端的管理员的保护级别的技术详细信息。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/29/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: efa968ab048d0c648d1b0351fa847d2a80a3d11a
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: 21a795a6386b5d030718bc39a094d9251db570e5
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259511"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60183412"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
->适用于：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
+>适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 Azure 信息保护客户端可以将以下内容应用于文档和电子邮件：
 
@@ -169,7 +171,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 这两个设置会导致 Azure 信息保护客户端将常规保护应用于具有某一文件扩展名的所有文件。 如果这是你的目标，则无需进行任何进一步的配置。 但是，你可以为特定文件类型定义例外，以便它们仍受本机保护。 为此，你必须针对每个文件类型对注册表执行三个（针对 32 位 Windows）或六个（针对 64 位 Windows）额外的编辑操作：
 
-1. 对于 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection** 和 **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection**（如果适用）：添加一个具有该文件扩展名的新项（不带前面的句点）。
+1. 对于 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection** 和 **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection**（如果适用）：添加新的密钥名称的文件扩展名 （不带前面的句点）。
 
     例如，对于文件扩展名为 .docx 的文件，创建一个名为 **DOCX**的项。
 
@@ -183,7 +185,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 通过更改支持以下值的 **Encryption** 字符串的值，你可以在其他情况下进行类似的注册表编辑：
 
-- **Pfile**：常规保护
+- **Pfile**：一般性保护
 
 - **本机**：本机保护
 
@@ -210,27 +212,11 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 默认情况下，扫描程序还会排除 Azure 信息保护客户端支持的相同文件类型，要排除的例外情况如下：
 
-对于正式发布版本：
-
-- .rtf、.rar 和 .zip 也被排除
-
-对于当前预览版本： 
-
 - .rtf 和 .rar 也会被排除在外
 
 可更改扫描程序检查文件时包含或排除的文件类型：
 
-对于正式发布版本，使用以下 PowerShell cmdlet：
-
-- [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)
-
-- [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)
-
-- [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes)
-
-对于当前预览版本：
-
-- 通过[使用 Azure 门户](../deploy-aip-scanner-preview.md#configure-the-scanner-in-the-azure-portal)，在扫描程序配置文件中配置“要扫描的文件类型”。
+- 通过[使用 Azure 门户](../deploy-aip-scanner.md#configure-the-scanner-in-the-azure-portal)，在扫描程序配置文件中配置“要扫描的文件类型”。
 
 > [!NOTE]
 > 如果在扫描时包含 .rtf 文件，请仔细监视扫描程序。 扫描程序无法成功检查某些 .rtf 文件，对于这些文件，未完成检查，必须重启服务。 
@@ -283,9 +269,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 1. 对于运行扫描程序或 PowerShell 会话的计算机，请安装 [Office 2010 Filter Pack SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2)。
 
-2. 对于扫描程序：除非正在运行扫描程序的当前预览版本，包括要检查的 .zip 文件，如 [Azure 信息保护扫描程序](#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner)部分中所述。
-
-3. 对于扫描程序：找到敏感信息之后，如果 .zip 文件应该用标签进行分类和保护，则为此文件扩展名添加注册表项，以获得常规保护 (pfile)，如扫描程序部署说明中的[为扫描程序编辑注册表](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner)一节所述。
+2. 对于扫描程序：找到敏感信息之后，如果 .zip 文件应该用标签进行分类和保护，则为此文件扩展名添加注册表项，以获得常规保护 (pfile)，如扫描程序部署说明中的[为扫描程序编辑注册表](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner)一节所述。
 
 执行这些步骤后的示例方案： 
 

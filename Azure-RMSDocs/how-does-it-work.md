@@ -12,11 +12,11 @@ ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: a60fbf43056673674f07f7dd8517213072f78aec
-ms.sourcegitcommit: 171a96af12a7e0364052d830dc14714b1bb1c95c
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57734144"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60183025"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
@@ -81,7 +81,7 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 发送到 Windows 设备的许可证和证书使用客户端设备私钥（用户在设备上第一次使用 Azure RMS 时创建）进行保护。 而该私钥则使用客户端上的 DPAPI 进行保护，DPAPI 使用从用户的密码派生的密钥来保护这些机密。 在移动设备上，只使用这些密钥一次，因此由于这些密钥不存储在客户端上，而无需在设备上保护这些密钥。 
 
 
-## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 工作原理演练：首次使用、内容保护、内容使用
+## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 的工作原理演练：首次使用、 内容保护、 内容使用
 为了更详细地了解 Azure RMS 的工作原理，让我们通过在[激活 Azure Rights Management 服务](activate-service.md)之后，当用户首次在其 Windows 计算机上使用权限管理服务（有时称为**初始化用户环境**或引导的过程）时，**保护内容**（文档或电子邮件），然后**使用**（打开并使用）被其他某人保护的内容，来演练一个典型的工作流。
 
 初始化用户环境后，该用户可以保护文档，或使用该计算机上的受保护文档。

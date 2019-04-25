@@ -12,11 +12,11 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 297608ce7fd64170e9aaa31ab39f0b0e151d7538
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256832"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60184257"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -157,7 +157,7 @@ ms.locfileid: "56256832"
 #### <a name="sample-windows-powershell-script-to-identify-ad-rms-templates-that-include-the-anyone-group"></a>示例 Windows PowerShell 脚本，用于识别包括 ANYONE 组的 AD RMS 模板
 本节包含示例脚本，可帮助你确定任何定义了 ANYONE 组的 AD RMS 模板，如前一节所述。
 
-**免责声明：** 此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
+**免责声明：** 此示例脚本不受任何 Microsoft 标准支持计划或服务。 此示例脚本按原样提供，不提供任何形式的保证。
 
 ```
 import-module adrmsadmin 

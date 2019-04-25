@@ -4,23 +4,25 @@ description: 适用于 Windows 的 Azure 信息保护客户端的客户端文件
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/11/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 72e29d19ddbfc3189d498724fc8353829820ab4e
-ms.sourcegitcommit: f4fe64474999954e0c013c3901edbb3048670935
-ms.translationtype: HT
+ms.openlocfilehash: 2265dba770f4b67bbcc84368a007b7c921f37b3f
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2019
-ms.locfileid: "57725743"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60183395"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护客户端文件和客户端使用情况日志记录
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 安装 Azure 信息保护客户端后，请了解文件所在位置并监控客户端的使用状况。
 
@@ -92,7 +94,7 @@ ms.locfileid: "57725743"
 
 - 自定义包括指定用户、组或组织[按编码名称排列的使用权](../configure-usage-rights.md#usage-rights-and-descriptions)的权限（若适用）
 
-Outlook 警告、验证和阻止消息事件需要预览客户端和高级客户端设置。 有关详细信息，请参阅[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)。
+Outlook 的事件，则发出警告，证明，以及阻止消息需要当前正式发布客户端和高级客户端设置。 有关详细信息，请参阅[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)。
 
 若要了解保护服务的使用情况日志记录，请参阅[记录和分析 Azure 权限管理服务的使用情况](../log-analyze-usage.md)。
 

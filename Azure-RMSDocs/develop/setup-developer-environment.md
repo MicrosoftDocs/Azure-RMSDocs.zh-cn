@@ -14,11 +14,11 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.openlocfilehash: 8fbdc1e130b891d3ce5370a6aed1c14ca5467203
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330570"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60176884"
 ---
 # <a name="setup-developer-environment"></a>设置开发人员环境
 
@@ -26,7 +26,7 @@ ms.locfileid: "57330570"
 
 |平台 | 描述|
 |------|------------|
-|[Outlook Web Access (OWA)](android-sdk.md)| Android 应用程序可以通过使用 Azure Active Directory Rights Management (AAD RM)，利用 Microsoft Rights Management SDK 4.2 在其应用中启用集成信息保护。|
+|[Android](android-sdk.md)| Android 应用程序可以通过使用 Azure Active Directory Rights Management (AAD RM)，利用 Microsoft Rights Management SDK 4.2 在其应用中启用集成信息保护。|
 |[Linux](linux-setup.md)|Linux 操作系统的几种版本现在可以通过使用 Azure Active Directory Rights Management (AAD RM)，利用 MS RMS SDK 4.2 在其应用中启用集成信息保护。|
 |[iOS 和 OSX](ios-sdk.md)|iOS 和 OS X 应用程序可以通过使用 Azure Active Directory Rights Management (AAD RM)，利用 MS RMS SDK 4.2 在其应用中启用集成信息保护。|
 |[Windows Phone](windows-phone-apps.md)|Windows Phone 应用程序可以通过使用 Azure Active Directory Rights Management (AAD RM)，利用 MS RMS SDK 4.2 在其应用中启用集成信息保护。|

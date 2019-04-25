@@ -4,23 +4,25 @@ description: 面向管理员的说明和信息，介绍如何在企业网络中�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/08/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 36900711d53e7bea33c1f0e8c1b03048694b212d
-ms.sourcegitcommit: e22c369e93f5069f9e197cab42cd751d3d97b136
-ms.translationtype: HT
+ms.openlocfilehash: 042fb8ea9eb7c129373fa9822d95b3774635c48d
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57682342"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60183800"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
 >适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 在企业网络中安装 Azure 信息保护客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序：[Azure 信息保护的要求](../requirements.md)。 
 
@@ -70,7 +72,7 @@ ms.locfileid: "57682342"
     
     对于 Office 2013 及更高版本，配置组策略以确保始终为 Office 应用程序启用 Microsoft Azure 信息保护加载项。 如果没有此配置，则可能禁用 Microsoft Azure 信息保护加载项，并且用户无法在其 Office 应用程序中标记其文档和电子邮件。
     
-    - 对于 Outlook：使用记录在 Office 文档中的[系统管理员对加载项的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中的组策略设置。
+    - 对于 Outlook:使用记录在 Office 文档中的[系统管理员对加载项的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中的组策略设置。
     
     - 对于 Word、Excel 和 PowerPoint：使用[由于 Office 2013 和 Office 2016 程序的组策略设置没有加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中记录的组策略设置“托管加载项列表”。 
         
@@ -212,7 +214,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 Azure 信息保护客户端包括的 PowerShell 模块具有用于安装和配置扫描程序的 cmdlet。 但是，要使用扫描程序，必须安装完整版本的客户端，而不能仅安装 PowerShell 模块。
 
-要安装客户端以获取扫描程序，请按照前面部分中的相同说明进行操作。 然后，即可安装扫描程序。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-aip-scanner.md)。
+要安装客户端以获取扫描程序，请按照前面部分中的相同说明进行操作。 然后您准备好配置，然后安装扫描程序。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-aip-scanner.md)。
 
 ## <a name="next-steps"></a>后续步骤
 现在你已安装 Azure 信息保护客户端，若要了解支持此客户端所需的其他信息，请参阅以下内容：

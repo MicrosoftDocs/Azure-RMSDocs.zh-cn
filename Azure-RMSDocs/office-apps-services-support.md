@@ -12,11 +12,11 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 71f5afc3f65713f62607717d5459080aa11bedf2
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256747"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60184155"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
@@ -24,7 +24,7 @@ ms.locfileid: "56256747"
 
 最终用户 Office 应用程序和 Office 服务可使用 Azure 信息保护中的 Azure 权限管理服务来帮助保护组织的数据。 Office 应用程序包括 Word、Excel、PowerPoint 和 Outlook。 Office 服务包括 Exchange 和 SharePoint。 支持 Azure 权限管理服务的 Office 配置通常使用术语“信息权限管理 (IRM)”。
 
-## <a name="office-applications-word-excel-powerpoint-outlook"></a>Office 应用程序：Word、Excel、PowerPoint、Outlook
+## <a name="office-applications-word-excel-powerpoint-outlook"></a>Office 应用程序：Word、 Excel、 PowerPoint、 Outlook
 这些应用程序可以本机方式支持 Azure 权限管理，让用户能够将保护应用于已保存文档，或者应用于要发送的电子邮件。 用户可以应用[模板](configure-policy-templates.md)以应用保护。 或者，在 Word、Excel 和 PowerPoint 中，用户还可以针对访问、权限和使用限制选择自定义设置。
 
 例如，用户可以配置 Word 文档，使仅组织中的人员可以访问该文档。 或者，控制 Excel 电子表格是否可以编辑，或限制为只读，或者禁止打印。 对于时间敏感型文件，可以配置一个过期时间，在过期之后无法再访问该文件。 此配置可由用户或通过应用保护模板直接执行。 对于 Outlook，用户还可以选择“不要转发”选项来帮助防止数据泄漏  。

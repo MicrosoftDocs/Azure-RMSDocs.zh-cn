@@ -4,19 +4,19 @@ description: 用于将 Active Directory Rights Management Services (AD RMS) 部�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/11/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 85bbf60e2d17c623572671b745c22d1ffdcfe871
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: 94d5e3ea586b67c18f9583d0743d4341a3f787bf
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258039"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60181695"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -74,7 +74,7 @@ ms.locfileid: "56258039"
 
     请参阅 [Azure 信息保护的要求](./requirements.md)。
 
-    请注意，如果拥有运行 Office 2010 的计算机，必须安装 Azure 信息保护客户端，因为此客户端可提供对云服务用户进行身份验证的功能。 对于更高版本的 Office，Azure 信息保护客户端是分类和标记所必需的，但如果只想保护数据，该客户端是可选的，但建议你使用它。 有关详细信息，请参阅 [Azure 信息保护客户端管理员指南](./rms-client/client-admin-guide.md)。
+    请注意，是否你拥有运行 Office 2010 的计算机，则必须安装[Azure 信息保护客户端或用户的 Azure 信息保护统一标记客户](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)，因为这些客户端提供的功能为云服务的用户进行身份验证。 对于更高版本的 Office，这些客户端所需的分类和标签，以及 Azure 信息保护客户端是可选的但建议执行，如果你想要仅保护数据。 有关详细信息，请参阅管理员指南[Azure 信息保护客户端](./rms-client/client-admin-guide.md)并[Azure 信息保护统一标记的客户端](./rms-client/clientv2-admin-guide.md)。
 
     尽管要求必须拥有 Azure 信息保护订阅才能迁移 AD RMS，但我们建议在开始迁移之前不要激活 Rights Management 服务。 迁移过程包括此激活步骤，在从 AD RMS 导出密钥和模板并将其导入到 Azure 信息保护租户之后执行此操作。 但是，如果 Rights Management 服务已激活，你仍可以凭借额外的步骤从 AD RMS 迁移。
 

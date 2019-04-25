@@ -12,13 +12,13 @@ ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 79d4dbb1d6339f0261d57b32cf77addee9ca9744
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258908"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60180335"
 ---
-# <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：客户端安装和配置
+# <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：安装和配置客户端
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
@@ -54,9 +54,9 @@ Azure 信息保护客户端通过安装 Office 外接程序与 Office 应用程�
 
 将 Azure 信息保护应用添加到 Intune 时的其他信息：
 
-- 对于 iOS：从 Intune 搜索并添加应用。
+- 对于 iOS:从 Intune 搜索并添加应用。
 
-- 对于 Android：添加应用时，请使用以下“应用商店 URL”：
+- 对于 Android:添加应用时，请使用以下“应用商店 URL”：
         
         https://play.google.com/store/apps/details?id=com.microsoft.ipviewer
 

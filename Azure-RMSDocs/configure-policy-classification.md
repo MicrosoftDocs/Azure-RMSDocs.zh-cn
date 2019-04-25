@@ -4,21 +4,23 @@ description: 可以自动将标签分配到文档或电子邮件的条件。 或
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/02/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 3cf57d5e958ab535a2e2cd21adc305fe09bb8aec
-ms.sourcegitcommit: 8da0aa8f9bb9f91375580a703682d23a81a441bf
-ms.translationtype: HT
+ms.openlocfilehash: fe80fdc803d15ba450cb333da15e82b19a76441e
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58809754"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60179929"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。 
 
@@ -100,7 +102,7 @@ ms.locfileid: "58809754"
 
 ### <a name="sensitive-information-types-that-require-a-minimum-version-of-the-client"></a>需要最低版本客户端的敏感信息类型
 
-以下敏感信息类型要求 Azure 信息保护客户端的版本为当前预览版：
+以下的敏感信息类型需要[当前通用版本](./rms-client/client-version-release-history.md#version-1482040)Azure 信息保护客户端：
 
 - **Azure 服务总线连接字符串**
 - **Azure IoT 连接字符串**
@@ -113,7 +115,9 @@ ms.locfileid: "58809754"
 - **Azure 发布设置密码**
 - **Azure 存储帐户密钥（通用）**
 
-此外，Azure 信息保护客户端的当前预览版本不支持以下敏感信息类型，并且不再在 Azure 门户中显示：
+有关这些敏感信息类型的详细信息，请参阅以下博客文章：[Azure 信息保护可帮助你可以通过自动发现凭据更安全](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-helps-you-to-be-more-secure-by/ba-p/360181)
+
+此外，有关 Azure 信息保护客户端和不再在 Azure 门户中的显示的最新正式发布版本不支持以下的敏感信息类型：
 
 - **欧盟电话号码**
 - **欧盟 GPS 坐标**
@@ -123,5 +127,3 @@ ms.locfileid: "58809754"
 请考虑部署 [Azure 信息保护扫描程序](deploy-aip-scanner.md)，它可使用自动分类规则发现和保护网络共享和本地文件存储中的文件并对其进行分类。  
 
 有关配置 Azure 信息保护策略的详细信息，请使用 [配置组织的策略](configure-policy.md#configuring-your-organizations-policy)(#配置组织的策略) 部分中的链接。
-
-

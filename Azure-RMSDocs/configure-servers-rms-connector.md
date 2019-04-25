@@ -12,11 +12,11 @@ ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 023d35152f1afbd8bba60366bfb2beec37905b91
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254197"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60179993"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
@@ -91,11 +91,11 @@ ms.locfileid: "56254197"
 
 3.  确定如何运行工具：
 
-    -   **本地**：可以从要将配置为与 RMS 连接器通信的服务器以交互方式运行该工具。 这对于一次性配置（例如测试环境）非常有用。
+    -   **本地**：以交互方式，您可以从要将配置为与 RMS 连接器通信的服务器来运行该工具。 这对于一次性配置（例如测试环境）非常有用。
 
     -   **软件部署**：你可以运行工具以生成注册表文件，然后使用支持软件部署的系统管理应用程序（例如 System Center Configuration Manager），将这些注册表文件部署到一个或多个相关服务器。
 
-    -   **组策略**：你可以运行工具以生成脚本，然后将脚本提供给管理员，管理员可为要配置的服务器创建组策略对象。 此脚本为要配置的每个服务器类型创建一个组策略对象，然后管理员能够将此对象分配给相关服务器。
+    -   **组策略**：可以运行工具以生成提供给管理员，管理员可以创建要配置服务器的组策略对象的脚本。 此脚本为要配置的每个服务器类型创建一个组策略对象，然后管理员能够将此对象分配给相关服务器。
 
     > [!NOTE]
     > 此工具可以配置将与 RMS 连接器通信并已在本部分开头列出的服务器。 不要在运行 RMS 连接器的服务器上运行此工具。
@@ -106,7 +106,7 @@ ms.locfileid: "56254197"
     Get-help .\GenConnectorConfig.ps1 -detailed
     ```
 
-若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如， https://connector.contoso.com 。 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
+若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如， https://connector.contoso.com。 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
 
 > [!IMPORTANT]
 > 当你运行此工具时，请确保指定组织的负载平衡 RMS 连接器的名称，而不要指定运行 RMS 连接器服务的单个服务器的名称。
@@ -131,7 +131,7 @@ ms.locfileid: "56254197"
 
 -   对于 Exchange 2016 和 Exchange 2013：客户端访问服务器和邮箱服务器
 
--   对于 Exchange 2010：客户端访问服务器和中心传输服务器
+-   对于 Exchange 2010：客户端访问服务器和集线器传输服务器
 
 若要使用 RMS 连接器，这些运行 Exchange 的服务器必须运行以下软件版本之一：
 

@@ -4,19 +4,19 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/07/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5bf20171ec434d0fde5953f23c11d555f7d80139
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: b1370046de0b2b455128af44078476e0b15f9995
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252403"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60183887"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -63,7 +63,7 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 用户必须拥有运行支持 Azure 信息保护的操作系统的客户端设备（计算机或移动设备）。
 
-以下设备支持 Azure 信息保护客户端，它可使用户分类并标记其文档和电子邮件：
+以下设备支持 Azure 信息保护统一标记客户端与 Azure 信息保护客户端。 [两个客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)让用户分类并标记其文档和电子邮件：
 
 - Windows 10（x86、x64）
     
@@ -81,17 +81,22 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 - Windows Server 2008 R2 
 
-除了在物理计算机上安装 Azure 信息保护客户端，还可以在虚拟机上安装它。 检查虚拟桌面解决方案的软件供应商是否具有可能需要运行 Azure 信息保护客户端的其他配置。 例如，对于 Citrix 解决方案，你可能需要对 Office（winword.exe、excel.exe、outlook.exe、powerpoint.exe）和 Azure 信息保护客户端（msip.app.exe、msip.viewer.exe）[禁用 Citrix 应用程序编程接口 (API) 挂钩](https://support.citrix.com/article/CTX107825)。
+除了在物理计算机上安装客户端，您还可以安装它的虚拟机上。 检查虚拟桌面解决方案的软件供应商是否有可能需要运行的其他配置 Azure 信息保护统一标记客户端或 Azure 信息保护客户端。 例如，对于 Citrix 解决方案，您可能需要[禁用 Citrix 应用程序编程接口 (API) 挂钩](https://support.citrix.com/article/CTX107825)Office （winword.exe、 excel.exe、 outlook.exe、 powerpoint.exe） 和可执行文件的 Azure信息保护统一标记客户端或 Azure 信息保护客户端 （msip.app.exe，msip.viewer.exe）。
 
-对于列出的服务器版本，远程桌面服务支持用于 Azure 信息保护客户端。 将 Azure 信息保护客户端与远程桌面服务结合使用时，如果删除用户配置文件，请勿删除“%Appdata%\Microsoft\Protect”文件夹。
+对于列出的服务器版本中，远程桌面服务支持 Azure 信息保护客户端。 如果远程桌面服务中使用 Azure 信息保护客户端时，您可以删除用户配置文件，则不要删除 **%Appdata%\Microsoft\Protect**文件夹。
 
-当 Azure 信息保护客户端通过使用 Azure 权限管理服务保护数据时，支持 Azure 权限管理服务的[同一设备](requirements-client-devices.md)可以使用此数据。
+当 Azure 信息保护客户端通过使用 Azure Rights Management 服务保护的数据时，数据可供[相同的设备](requirements-client-devices.md)支持 Azure Rights Management 服务。
 
-Azure 信息保护客户端有[其他先决条件](./rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client)，管理员指南中列出了这些条件。
+Azure 信息保护客户端具有其各自的管理员指南中列出的其他先决条件：
+
+- Azure 信息保护统一标签客户端：[必备条件](./rms-client/clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)
+
+- Azure 信息保护客户端：[必备条件](./rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client)
+
 
 ## <a name="applications"></a>应用程序
 
-Azure 信息保护客户端可使用以下 Office 版本中的 Word、Excel、PowerPoint 和 Outlook 等 Office 应用程序对文档和电子邮件设置标签和进行保护：
+Azure 信息保护客户端可以标记和使用 Office 应用程序保护文档和电子邮件**Word**， **Excel**， **PowerPoint**，以及**Outlook**以下 Office 版本中：
 
 - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证
 
@@ -107,7 +112,7 @@ Azure 信息保护客户端可使用以下 Office 版本中的 Word、Excel、Po
 
 Office 的其他版本无法通过使用 Rights Management 服务保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护分类。 因此，Azure 信息保护栏或 Office 功能区的“保护”按钮中不会向用户显示应用保护的标签。 
 
-Azure 信息保护客户端不支持同一台计算机上的多个 Office 版本。 此客户端也不支持在 Office 中的不同用户帐户之间切换。
+Azure 信息保护客户端在同一台计算机上不支持多个 Office 版本。 这些客户端也不支持用户帐户之间切换在 Office 中。
 
 有关支持保护服务的 Office 版本的信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。
 
@@ -146,7 +151,3 @@ Azure 信息保护客户端不支持同一台计算机上的多个 Office 版本
 - 在同一个组织中并行运行 AD RMS 和 Azure RMS（在迁移过程中的情形除外），如[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)所述。
 
 支持[从 AD RMS 到 Azure 信息保护](https://technet.microsoft.com/library/Dn858447.aspx)和[从 Azure 信息保护到 AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl) 的迁移路径。 如果你部署 Azure 信息保护，然后决定不再想要使用此云服务，请参阅[解除 Azure 信息保护授权和停用 Azure 信息保护](decommission-deactivate.md)。
-
-
-
-

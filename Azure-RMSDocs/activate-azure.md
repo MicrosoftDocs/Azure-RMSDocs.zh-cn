@@ -13,11 +13,11 @@ ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 3f03c055760e6d9e677db40250a6f32d6a112d72
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56258974"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60175169"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>如何从 Azure 门户激活 Azure 权限管理
 

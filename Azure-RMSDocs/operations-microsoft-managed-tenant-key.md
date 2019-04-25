@@ -12,13 +12,13 @@ ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: d9fc409faedf8083dae6730f866c12bdd84255ce
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252565"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60184036"
 ---
-# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>由 Microsoft 管理：租户密钥生命周期操作
+# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
@@ -80,7 +80,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
     ```
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml
     ```
-    此命令的输出应该是两个文件：一个文件包含受密码保护的 TPD 的纯文本密码，另一个文件则是受密码保护的 TPD 本身。 这些文件具有新的 GUID，例如：
+    此命令的输出应为两个文件：一个文件包含受密码保护的 TPD 的纯文本密码，另一个文件则是受密码保护的 TPD 本身。 这些文件具有新的 GUID，例如：
      
   - Password-5E4C2018-8C8C-4548-8705-E3218AA1544E.txt
 
@@ -88,7 +88,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
     备份这些文件并将其安全存储，以确保用户能够继续解密使用此租户密钥保护的内容。 此外，如果你要迁移到 AD RMS，则可将此 TPD 文件（以 **ExportedTDP** 开头的文件）导入到 AD RMS 服务器。
 
-### <a name="step-4-ongoing-protect-your-tenant-key"></a>步骤 4：日常：保护你的租户密钥。
+### <a name="step-4-ongoing-protect-your-tenant-key"></a>步骤 4:正在进行：保护你的租户密钥
 
 在收到你的租户密钥后，对其进行良好的保护，因为如果有人得到了它，他们将可以解密由该密钥保护的所有文档。
 

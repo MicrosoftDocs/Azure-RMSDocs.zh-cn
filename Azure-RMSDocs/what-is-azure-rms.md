@@ -12,13 +12,13 @@ ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: ff30f006ece558efe42a38c1ec3596cfbbce3fab
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257546"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60182513"
 ---
-# <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
+# <a name="what-is-azure-rights-management"></a>什么是 Azure 权限管理？
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 

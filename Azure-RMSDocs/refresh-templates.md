@@ -4,19 +4,19 @@ description: 使用 Azure Rights Management 服务时，模板会自动下载到
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/01/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ea9709d93d149cd8322392cbd62d4af74915b1c5
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: 44925ad0a2c384978d3f91c1d40a5b6b11d5a2a6
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60181491"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
@@ -28,8 +28,8 @@ ms.locfileid: "56254554"
 |--------------------------|---------------------------------------------|
 |Exchange Online<br /><br />适用于传输规则和 Outlook Web App |1 小时内自动刷新 – 无需额外的步骤。<br /><br />如果使用[具有新功能的 Office 365 邮件加密](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)，则会出现这种情况。 如果之前已通过导入受信任的发布域 (TPD) 将 Exchange Online 配置为使用 Azure Rights Management 服务，请使用同一系列的说明在 Exchange Online 中启用这些新功能。|
 |Azure 信息保护客户端|每当在客户端上的 Azure 信息保护策略刷新时，都会自动刷新：<br /><br /> - 打开支持 Azure 信息保护栏的 Office 应用程序时。 <br /><br /> - 右键单击以分类和保护文件或文件夹时。 <br /><br /> - 运行 PowerShell cmdlet 以实现标记和保护（Get-AIPFileStatus 和 Set-AIPFileLabel）。<br /><br /> - 启动 Azure 信息保护扫描程序服务时，以及本地策略已执行超过一小时时。 此外，扫描程序服务每小时检查一次更改，并将在下一个扫描周期中使用这些更改。<br /><br /> - 每 24 小时一次。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此任何适用于 Office 365 应用、Office 2019、Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护客户端进行刷新。|
-|Azure 信息保护统一标签客户端（预览版）|每个 Office 应用每 4 小时自动刷新。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此任何适用于 Office 365 应用、Office 2019、Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护统一标记客户端进行刷新。|
-|Office 365 应用、Office 2019、Office 2016 和 Office 2013|自动刷新 – 按计划刷新：<br /><br />- 对于这些更高版本的 Office：默认刷新间隔是 7 天。<br /><br />若要早于计划强制执行刷新，请参阅以下部分，[Office 365 应用、Office 2019、Office 2016 和 Office 2013：如何强制刷新更改的自定义模板](#office-365-apps-office-2019-office-2016-and-office-2013-how-to-force-a-refresh-for-a-changed-custom-template)。|
+|Azure 信息保护统一标识客户端|每个 Office 应用每 4 小时自动刷新。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此任何适用于 Office 365 应用、Office 2019、Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护统一标记客户端进行刷新。|
+|Office 365 应用、Office 2019、Office 2016 和 Office 2013|自动刷新 – 按计划刷新：<br /><br />- 对于这些更高版本的 Office：默认刷新间隔是每 7 天。<br /><br />若要早于计划强制执行刷新，请参阅以下部分，[Office 365 应用、Office 2019、Office 2016 和 Office 2013：如何强制刷新更改的自定义模板](#office-365-apps-office-2019-office-2016-and-office-2013-how-to-force-a-refresh-for-a-changed-custom-template)。|
 |Office 2010|当用户注销 Windows 后重新登录并等待长达 1 小时时自动刷新。|
 |Exchange 內部部署与权限管理连接器<br /><br />适用于传输规则和 Outlook Web App|自动刷新 – 无需额外的步骤。 但是，Outlook Web App 可将该 UI 缓存一天。|
 |Office 2019 for Mac 和 Office 2016 for Mac|自动刷新 – 无需额外的步骤。|
@@ -38,7 +38,7 @@ ms.locfileid: "56254554"
 
 当客户端应用程序需要下载模板（初始下载或刷新用于更改）时，请准备在下载完成并且新的或更新的模板完全可操作之前等待 15 分钟。 实际时间会因多种因素而异，例如模板配置的大小和复杂性以及网络连接。 
 
-## <a name="office-365-apps-office-2019-office-2016-and-office-2013-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 365 应用、Office 2019、Office 2016 和 Office 2013：如何强制执行针对已更改自定义模板的刷新
+## <a name="office-365-apps-office-2019-office-2016-and-office-2013-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 365 应用、Office 2019、Office 2016 和 Office 2013：如何强制进行更改的自定义模板的刷新
 通过编辑运行 Office 365 应用、Office 2019、Office 2016 或 Office 2013 的计算机上的注册表，你可以更改自动计划，以便更改的模板在计算机上的刷新频率比其默认值更频繁。 你还可以通过删除注册表值中的现有数据，强制执行即时刷新。
 
 > [!WARNING]
@@ -48,7 +48,7 @@ ms.locfileid: "56254554"
 
 1.  使用注册表编辑器，创建并设置以下注册表值中的某一个：
 
-    - 设置以天为单位的更新频率（最少为 1 天）：创建名为“TemplateUpdateFrequency”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以天为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
+    - 若要将设置天数 （最小为 1 天） 的更新频率：创建名为“TemplateUpdateFrequency”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以天为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
 
         **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -56,7 +56,7 @@ ms.locfileid: "56254554"
 
         **值：** TemplateUpdateFrequency
 
-    - 设置以秒为单位的更新频率（最少为 1 秒）：创建名为“TemplateUpdateFrequencyInSeconds”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以秒为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
+    - 若要设置的更新频率，以秒为单位 （最少为 1 秒）：创建名为“TemplateUpdateFrequencyInSeconds”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以秒为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
 
         **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -96,6 +96,6 @@ ms.locfileid: "56254554"
 3. 请重启 Office 应用程序和文件资源管理器实例。
 
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [在 Azure 信息保护策略中配置和管理模板](configure-policy-templates.md)
 

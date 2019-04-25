@@ -1,22 +1,22 @@
 ---
-title: Azure 信息保护的信息和支持
+title: 信息和支持 Azure 信息保护-AIP
 description: 管理员资源，其中包括有关新版本、支持选项以及如何与 Microsoft 联系以报告问题的信息。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/08/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5ff687b812ac9c7d3253e284baeaca0b1de2e8e3
-ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
-ms.translationtype: HT
+ms.openlocfilehash: 385b44e6f3753e7d066f63fee812c4f12b67171d
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57978213"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60181729"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -65,6 +65,8 @@ Azure 信息保护产品团队在[企业移动性 + 安全性博客](https://tec
 动手实验室：请参阅 [Azure 信息保护动手实验室](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Hands-On-Lab/ba-p/265433)
 
 点播视频：
+
+- 技术社区记录网络研讨会，了解[Azure 信息保护](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/AIP-Webinar-Recordings/m-p/364014)。
 
 - Microsoft Ignite 2018 的 [Azure 信息保护](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Information%2520Protection)研讨会：
     

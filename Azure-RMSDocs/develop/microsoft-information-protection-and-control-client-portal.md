@@ -14,15 +14,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.openlocfilehash: d61b9cb7262e83270395768a03581b8a97ba365f
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330351"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60176068"
 ---
 # <a name="rights-management-services-sdk-21"></a>Rights Management Services SDK 2.1
 
-## <a name="purpose"></a>目的
+## <a name="purpose"></a>用途
 
 借助 Rights Management Services SDK 2.1 平台，开发人员可构建利用 Rights Management Services (RMS) 或 Azure Rights Management 提供信息保护的应用程序。 RMS SDK 2.1 可处理复杂的安装操作（如密钥管理、加密和解密处理），并提供简化的 API 以便轻松开发应用程序。
 

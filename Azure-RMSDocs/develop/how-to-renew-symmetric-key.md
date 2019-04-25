@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: a0b8c8f0-6ed5-48bb-8155-ac4f319ec178
 ms.openlocfilehash: 353365a1619ae9f87b0d92ab4b956c8cf7b1d6cc
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57331471"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60178431"
 ---
 # <a name="how-to-renew-the-symmetric-key-in-azure-information-protection"></a>如何：在 Azure 信息保护中续订对称密钥
 
@@ -25,7 +25,7 @@ ms.locfileid: "57331471"
 
 下面逐步介绍了如何续订对称密钥。 
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 * 必须按照 [Azure AD Powershell 参考](https://docs.microsoft.com/powershell/msonline/)中的指示安装 Azure Active Directory (Azure AD) PowerShell 模块。
 

@@ -4,23 +4,25 @@ description: 适用于从 RMS 共享应用程序升级到 Azure 信息保护客�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/01/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: d7bc2478-c22f-4e19-9992-012658362b25
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5d7ea7b1997615e3737bba7e906d7efad8bd3e06
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: 640d1b1d99a36a9d81fc9f077bebfec1a6a076cc
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257869"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60182562"
 ---
 # <a name="user-guide-tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>用户指南：用于操作 RMS 共享应用程序的任务
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
+>适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 最近从 Rights Management 共享应用程序（也称为“RMS 共享应用”）升级到 Azure 信息保护客户端？ 
 
@@ -31,7 +33,7 @@ ms.locfileid: "56257869"
 |保护设备上的文件 <br /><br />也称为“就地保护”|对于 Office 应用：选择应用所需保护的标签，或设置自定义权限。<br /><br />对于其他文件：使用文件资源管理器菜单选项“分类并保护”打开“分类和保护 - Azure 信息保护”对话框。 然后选择应用所需保护的标签，或指定你自己的自定义权限。 <br /><br />有关详细信息，请参阅[对文件或电子邮件进行分类和保护](client-classify-protect.md)。
 |保护通过电子邮件共享的文件 <br /><br />也称为“共享保护项”|通过使用 Outlook，对电子邮件应用具有所需保护的标签，或选择 Outlook 中的“不要转发”选项。 具有[受支持文件类型](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)的未受保护附件会自动受到保护。<br /><br />注意：若要跟踪通过电子邮件发送的受保护文档，请首先保护此文档，然后再将它附加到电子邮件中。<br /><br />有关详细信息，请参阅[对文件或电子邮件进行分类和保护](client-classify-protect.md)。
 |更改受保护的文件的权限 <br /><br />也称为“重新保护”|对于显示 Azure 信息保护栏的 Office 应用：选择应用所需保护的标签。<br /><br />对于其他文件，并且如果 Azure 信息保护客户端处于[仅保护模式](client-protection-only-mode.md)：使用文件资源管理器菜单选项“分类并保护”打开“分类和保护 - Azure 信息保护”对话框。 然后选择应用所需保护的标签，或指定你自己的自定义权限。<br /><br />有关详细信息，请参阅[对文件或电子邮件进行分类和保护](client-classify-protect.md)。
-|跟踪和撤销文档|从 Word、Excel 和 PowerPoint 中：打开文档，然后选择“开始”选项卡>“保护”组>“保护” > “跟踪和撤销”<br /><br />从文件资源管理器：右键单击文件或文件夹，然后单击“分类和保护”。 然后在“分类和保护 - Azure 信息保护”对话框中，单击“跟踪和撤销”。 <br /><br />从 Azure 信息保护客户端的当前预览版本使用 PowerShell 时：将 EnableTracking 参数与 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 配合使用以注册用于跟踪的标记文档。<br /><br />有关详细信息，请参阅[跟踪和撤销文档](client-track-revoke.md)。
+|跟踪和撤销文档|从 Word、Excel 和 PowerPoint 中：打开文档，然后选择“开始”选项卡>“保护”组>“保护” > “跟踪和撤销”<br /><br />从文件资源管理器中：右键单击文件或文件夹，然后单击“分类和保护”。 然后在“分类和保护 - Azure 信息保护”对话框中，单击“跟踪和撤销”。 <br /><br />如果为 Azure 信息保护客户端使用 PowerShell:将 EnableTracking 参数与 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 配合使用以注册用于跟踪的标记文档。<br /><br />有关详细信息，请参阅[跟踪和撤销文档](client-track-revoke.md)。
 |保护你通过电子邮件共享的文件|对于受保护的 Office 文档，必须安装 Office。 Azure 信息保护查看器可以打开许多其他受保护的文件，使你可以阅读它们，而且在你有相关权限的情况下还可以打印和保存这些文件。 此查看器随客户端自动安装，也可以单独安装。<br /><br />有关详细信息，请参阅[打开受保护的文件](client-view-use-files.md)。
 |删除对文件的保护|使用文件资源管理器菜单选项“分类并保护”打开“分类和保护 - Azure 信息保护”对话框。 <br /><br />然后对于单个文件，清除“使用自定义权限保护”选项。 对于多个文件或文件夹，单击“删除自定义权限”。<br /><br />有关详细信息，请参阅[删除文件和电子邮件中的标签和保护](client-remove-label-protection.md)。|
 

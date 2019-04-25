@@ -14,11 +14,11 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.openlocfilehash: 11ebf15c82d8e27399a9df004f98f00b274802f2
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57330350"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60182426"
 ---
 # <a name="how-to-work-with-encryption-settings"></a>操作说明：使用加密设置
 

@@ -14,11 +14,11 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.openlocfilehash: ec7e59cec6afe2eb4012c17bb520daa03feebd81
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57331073"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60180392"
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>配置应用以进行 ADAL 身份验证
 

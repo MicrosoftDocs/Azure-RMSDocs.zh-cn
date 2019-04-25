@@ -1,26 +1,28 @@
 ---
-title: 使用 Azure 信息保护对文件和电子邮件进行分类和保护
+title: 分类和保护通过使用 Azure 信息保护-AIP
 description: 说明如何对文档和电子邮件进行分类和保护。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/24/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f8ad7f4e9243e7f6b2be306681ba11d18cc9394b
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: e7d4083bbd2f11e4abcd934c8bb17cc49d4e2b83
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56253946"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60185145"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>用户指南：使用 Azure 信息保护对文件或电子邮件进行分类和保护
 
 >适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类和保护。 如果只需对文档和电子邮件进行分类（但不保护），请参阅[仅分类说明](client-classify.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
@@ -37,7 +39,7 @@ ms.locfileid: "56253946"
 
 在与组织外部人员共享文件之前，请咨询你的支持人员或管理员如何为外部用户保护文件。
 
-例如，如果你的组织定期与另一组织中的人员进行通信，则管理员可能已经配置了设置保护以便这些人员可以阅读和使用受保护文档的标签。 然后，选择这些标签对要共享的文档进行分类和保护。
+例如，如果你的组织定期与另一个组织中的人员，您的管理员可能已配置标签以便这些用户可以读取和使用受保护的文档。 如果是这种情况，请选择这些标签进行分类和保护要共享的文档。
 
 或者，如果外部用户具有为其创建的 [企业到企业 (B2B) 帐户](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)，你可以在共享文档之前，使用 [Office 应用设置自定义权限](#set-custom-permissions-for-a-document)或使用[文件资源管理器设置自定义权限](#using-file-explorer-to-classify-and-protect-files) 如果设置你自己的自定义权限，并且文档已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。
 
@@ -88,7 +90,7 @@ ms.locfileid: "56253946"
 
 1. 在“**开始**”选项卡上的“**保护**”组中，依次单击“**保护**” > “**自定义权限**”：
 
-    ![“自定义权限”选项](../media/custom-permissions-callout.png)
+    ![自定义权限选项](../media/custom-permissions-callout.png)
     
     如果看不到“自定义权限”，则表示管理员禁止你使用此选项。
     
@@ -104,7 +106,7 @@ ms.locfileid: "56253946"
         
         此外，还可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
     
-    - **过期访问**：仅对具有时效性的文件选择此选项，使指定的人员无法在你设置的日期后打开所选的一个文件或多个文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
+    - **过期访问**：选择此选项只对时间敏感文件，以便指定的人员无法设置日期后打开选定的文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
 
 5. 单击“**应用**”，然后等待“**已应用自定义权限**”消息。 然后单击 **“关闭”**。
 

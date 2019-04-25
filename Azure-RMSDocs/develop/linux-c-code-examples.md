@@ -14,11 +14,11 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.openlocfilehash: 6a4aa43e54510df5775b4c5d73500d60e2a68d56
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57331766"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60176901"
 ---
 # <a name="linux-code-examples"></a>Linux 代码示例
 
@@ -540,7 +540,7 @@ ms.locfileid: "57331766"
                 std::string(“john.smith@msopentechtest01.onmicrosoft.com”));
 
 
-**步骤 4**：从结果说明中获取访问令牌：调用 result-> accessToken 方法
+**步骤 4**:从结果说明中获取访问令牌：调用 result-> accessToken 方法
 
 **注意** 任何身份验证库方法都可能引发 **rmsauth::Exception**
 
@@ -573,7 +573,7 @@ ms.locfileid: "57331766"
                         FileCachePtr);
 
 
-**步骤 4**：调用 authContext 的 aquireToken 方法，并指定下述参数：
+**步骤 4**:调用 authContext 的 aquireToken 方法，并指定下述参数：
 -   *请求资源* - 想要访问的受保护资源
 -   *客户端唯一 ID* - 通常为 GUID
 -   *用户凭据* - 传递所创建的对象
@@ -586,6 +586,6 @@ ms.locfileid: "57331766"
                 userCred);
 
 
-**步骤 5**：从结果说明中获取访问令牌：调用 result-> accessToken 方法
+**步骤 5**:从结果说明中获取访问令牌：调用 result-> accessToken 方法
 
 **注意** 任何身份验证库方法都可能引发 **rmsauth::Exception**

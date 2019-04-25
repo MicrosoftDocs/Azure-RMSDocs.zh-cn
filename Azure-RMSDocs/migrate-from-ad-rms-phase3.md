@@ -12,11 +12,11 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: bdd5d17bc947b25f312baa498da057b409dcd07e
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256968"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60184121"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
@@ -58,11 +58,11 @@ ms.locfileid: "56256968"
     
     如果在 Windows Server 上使用 DNS 服务器角色，可使用下表作为示例，在 DNS 管理器控制台中指定 SRV 记录属性。
     
-    |字段|值|  
+    |字段|ReplTest1|  
     |-----------|-----------|  
     |**域**|_tcp.rmscluster.contoso.com|  
     |**服务**|_rmsredir|  
-    |**协议**|_http|  
+    |**Protocol**|_http|  
     |**优先级**|0|  
     |**权重**|0|  
     |**端口号**|80|  

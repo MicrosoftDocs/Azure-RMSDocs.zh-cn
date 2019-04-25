@@ -4,27 +4,29 @@ description: 为支持统一标签的客户端和服务将 Azure 信息保护标
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/09/2019
+ms.date: 04/18/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 0cc09e58d49fe9515de0109c726af08e12937dd1
-ms.sourcegitcommit: 729b12e1219c6dbf1bb2a6cfa7239f24d1d13cc5
-ms.translationtype: HT
+ms.openlocfilehash: 260e6cd429e428fd59782ef33bd557750e3c8eb5
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59364566"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60179610"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-office-365-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 > [!IMPORTANT]
 > 此功能处于预览状态，并且将租户迁移到新平台。 迁移不可撤消。 新平台支持统一标签，因此你创建和管理的标签可以由支持 [Microsoft 信息保护解决方案](faqs.md#whats-the-difference-between-azure-information-protection-and-microsoft-information-protection)的客户端和服务使用。
 
-如果想要将标签作为 Office 365 敏感度标签使用，请迁移标签，并由[支持统一标签的客户端和服务](#clients-and-services-that-support-unified-labeling)使用。 管理和发布 Office 365 安全与合规中心或 Microsoft 365 安全中心以及 Microsoft 365 合规中心中的这些标签。 迁移完成后，Azure 信息保护客户端将继续从 Azure 门户下载带有其 Azure 信息保护策略的标签。 
+如果想要将标签作为 Office 365 敏感度标签使用，请迁移标签，并由[支持统一标签的客户端和服务](#clients-and-services-that-support-unified-labeling)使用。 管理和发布 Office 365 安全与合规中心或 Microsoft 365 安全中心以及 Microsoft 365 合规中心中的这些标签。 迁移完成后，Azure 信息保护客户端将继续从 Azure 门户下载带有其 Azure 信息保护策略的标签。
 
 在阅读有关如何迁移标签的详细说明之前，你可能会发现以下常见问题非常有用：
 
@@ -96,7 +98,7 @@ Azure 信息保护客户端可以使用列出的所有标签设置，而不会�
 |使用预定义模板的基于云的保护或基于 HYOK 的保护 |否|预定义模板没有配置选项。 我们不建议使用此配置发布标签。|
 |使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |否|这些 Office 应用的用户定义权限没有配置选项。 我们不建议使用此配置发布标签。 否则，请在[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中查看应用此标签所带来的后果。|
 |使用 Outlook（不可转发）中用户定义权限的基于 HYOK 的保护 |否|HYOK 没有配置选项。 我们不建议使用此配置发布标签。 否则，请在[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中查看应用此标签所带来的后果。|
-|删除保护 |否|没有用于删除保护的配置选项。 我们不建议使用此配置发布标签。<br /><br /> 如果确实发布了此标签，如果标签之前应用了保护，则应用该标签时，将删除保护。 如果之前从标签中独立应用了保护，则将保留保护。|
+|删除保护 |否|没有用于删除保护的配置选项。 我们不建议使用此配置发布标签。<br /><br /> 如果发布此标签应用时，如果以前应用的标签，将删除保护。 如果之前从标签中独立应用了保护，则将保留保护。|
 |为视觉标记（页眉、页脚、水印）使用 RGB 代码自定义字体和字体颜色|是|视觉标记的配置限制为颜色和字体大小列表。 尽管无法看见管理中心中配置的值，仍可以不做任何更改发布此标签。 <br /><br />若要更改这些选项，可以使用 Azure 门户。 但是，请考虑将颜色更改为管理中心中列出的选项之一，以便于管理。|
 |视觉标记（页眉、页脚）中的变量|否|如果不做更改就发布此标签，则变量将在客户端上显示为文本而不是显示动态值。 发布标签之前，请编辑字符串以删除变量。|
 |每个应用的视觉标记|否|如果不做更改就发布此标签，则在所有应用中应用变量将在客户端上显示为文本，而不是在所选的应用上显示文本字符串。 仅当适用于所有应用时发布此标签，并编辑字符串以删除应用变量。|
@@ -104,7 +106,7 @@ Azure 信息保护客户端可以使用列出的所有标签设置，而不会�
 
 ### <a name="comparing-the-behavior-of-protection-settings-for-a-label"></a>比较标签保护设置的行为
 
-使用下表来确定标签的同一保护设置如何表现出不同的行为，这些行为具体取决于使用标签的是 Azure 信息保护客户端（正式发布版或当前预览版）、Azure 信息保护统一标签客户端的当前预览版，还是内置有标签（也称为“本机 Office 标签”）的 Office 应用。
+使用下表来确定标签的相同保护设置的行为方式不同，具体取决于是否使用由 Azure 信息保护客户端，Azure 信息保护统一标记客户端，或具有 Office 应用标记中 (也称为"本机 Office 生成 
 
 如果不确定如何配置保护设置，请在 Azure 门户中的“保护”边栏选项卡上查看其设置。 如果需要有关此步骤的帮助，请参阅[配置保护设置标签](configure-policy-protection.md#to-configure-a-label-for-protection-settings)。
 
@@ -137,7 +139,7 @@ Azure 信息保护客户端可以使用列出的所有标签设置，而不会�
 
 请使用以下说明迁移租户和 Azure 信息保护标签，来使用新的统一标记存储。
 
-你必须是全局管理员才能迁移标记。
+必须是合规性管理员、 安全管理员或全局管理员将你的标签。
 
 1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。
     
@@ -160,7 +162,7 @@ Azure 信息保护客户端可以使用列出的所有标签设置，而不会�
 
 ##### <a name="clients-that-currently-support-unified-labeling-include"></a>当前支持统一标签的客户端包括：
 
-- [适用于 Windows 的 Azure 信息保护统一标记客户端](./rms-client/unifiedlabelingclient-version-release-history.md) - 预览版
+- [Azure 信息保护统一标记适用于 Windows 的客户端](./rms-client/unifiedlabelingclient-version-release-history.md)
 
 - Office 中处于不同可用性阶段的应用。 有关详细信息，请参阅 Office 文档中的[将敏感标签应用于 Office 中的文档和电子邮件](https://support.office.com/en-us/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)中的**现在可从何处获取功能？**。
     

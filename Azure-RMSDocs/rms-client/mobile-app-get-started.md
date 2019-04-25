@@ -12,15 +12,15 @@ ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 07391252e55f1b75df4d0fb57d167748d6d69853
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254996"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60180930"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门
 
-适用于：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 
 在使用本页上的说明之前，请务必阅读[有关 iOS 版和 Android 版 Azure 信息保护应用的常见问题解答](mobile-app-faq.md)。 此页面说明了应用的作用、支持的设备，以及有关应用使用方法的基本信息。
 

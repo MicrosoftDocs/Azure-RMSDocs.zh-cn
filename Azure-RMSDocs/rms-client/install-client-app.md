@@ -4,23 +4,26 @@ description: 说明用户如何安装适用于 Windows 的 Azure 信息保护客
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f97914525e8ff6f48e4566b3108c2ba65fb91deb
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: 4f2a9f0ba376d445d75eda731157ed1af5f8fee6
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56253738"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60182494"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>用户指南：下载并安装 Azure 信息保护客户端
 
 >适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+
 
 如果管理员没有为你安装 Azure 信息保护客户端，你可自行安装。 必须是电脑的本地管理员才可安装此客户端，这样可对文档和电子邮件进行标记和保护。
 
@@ -32,13 +35,13 @@ ms.locfileid: "56253738"
 
 ## <a name="to-download-and-install-the-azure-information-protection-client"></a>下载并安装 Azure 信息保护客户端    
 
-1.  请转到 Microsoft 网站上的 [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970)页。
+1. 请转到 Microsoft 网站上的 [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970)页。
 
     此页面包含指向所有可能使用的常用设备的链接，以便在需要打开受保护的文件时可轻松下载查看其应用。 如果不是电脑的本地管理员，仍可安装适用于 Windows 的查看器应用。 但这些说明用于安装完整的客户端，实现对文件的标记和保护。 
 
 2. 找到 **Azure 信息保护客户端**部分，然后单击 Windows 图标。 单击“下载”并保存 **AzInfoProtection.exe** 文件。     
 
-3. 运行已下载的可执行文件。 如果系统提示你继续，请单击 **“是”**。    
+3. 运行已下载的可执行文件。 如果系统提示你继续，请单击**是**。    
 
 4. 在“安装 Azure 信息保护客户端”页面上：     
     - 如果无法连接到云，但出于演示目的，想要通过使用本地策略查看和体验 Azure 信息保护的客户端，则选择此选项以安装演示策略。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。    

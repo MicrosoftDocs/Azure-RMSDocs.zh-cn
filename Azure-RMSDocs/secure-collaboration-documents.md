@@ -12,11 +12,11 @@ ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 0c9e426fe6025b31f03ed84e65741c4a461e3938
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257308"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60181762"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
@@ -55,9 +55,9 @@ ms.locfileid: "56257308"
     
    - 对于第一个外部组织中的所有用户：选择“输入详细信息”，然后在组织的租户中键入域名。 例如，fabrikam.com。
     
-   - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如，sales@contoso.com 。
+   - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如，sales@contoso.com。
     
-   - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，输入用户的电子邮件地址。 例如，bengi.turan@gmail.com 。 
+   - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，输入用户的电子邮件地址。 例如，bengi.turan@gmail.com。 
 
 4. 向这些用户授予相同的权限：对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。
     

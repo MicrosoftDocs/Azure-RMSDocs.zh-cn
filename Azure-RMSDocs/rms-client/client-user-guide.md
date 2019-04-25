@@ -4,27 +4,29 @@ description: 适用于 Windows 的 Azure 信息保护客户端可帮助用户保
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/31/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 2cf46bf9-7d23-4f49-b5c1-7ed7b71c858f
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b531103a03991c87bb3f0cb99b4288ca607142ec
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: 031e80046fbc02d3f425adbc52202806559eeed0
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56256339"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60182936"
 ---
 # <a name="azure-information-protection-user-guide"></a>Azure 信息保护用户指南
 
->适用于：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 适用于 Windows 的 Azure 信息保护客户端可帮助用户保护重要文档和电子邮件，使其不对特定人员可见（即使电子邮件被转发或将文档保存到另一个位置也是如此）。 还可通过此客户端打开他人已通过使用 Azure 信息保护中的 Rights Management 保护技术保护的文件。
 
-你只需一台至少运行 Windows 7 with Service Pack 1 的计算机即可。 然后从 Microsoft 下载并安装此免费客户端。
+你所需的只是至少运行 Windows 7 Service Pack 1 的计算机。 然后从 Microsoft 下载并安装此免费客户端。
 
 
 ## <a name="what-do-you-want-to-do"></a>要执行什么操作？

@@ -1,22 +1,22 @@
 ---
 title: 将 HSM 保护密钥迁移到 HSM 保护密钥 - AIP
-description: 此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的一部分，仅当你的 AD RMS 密钥是 HSM 保护密钥，且希望使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure 信息保护时才适用。
+description: 要使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure 信息保护是从 AD RMS 到 Azure 信息保护，并仅适用于你的 AD RMS 密钥是 HSM 保护密钥和您的迁移路径的一部分的说明。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 04/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1beba22d230bff1997ea4e2437a09ce43cb01193
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: d4292d3f3df4f1cfadd72e23ebf9a175051bc027
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252803"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60184087"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 
@@ -51,11 +51,11 @@ ms.locfileid: "56252803"
 
      将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 输出结果将会类似于 https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure Rights Management 服务将此密钥用作其租户密钥。
 
-2. 在连接 Internet 的工作站上的 PowerShell 会话中，使用 [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) cmdlet 来授权 Azure Rights Management 服务主体访问将存储 Azure 信息保护租户密钥的密钥保管库。 所需的权限有解密、加密、unwrapkey、wrapkey、验证和签名。
+2. 在连接 Internet 的工作站上，在 PowerShell 会话中，使用[集 AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) cmdlet 来授权 Azure Rights Management 服务主体访问将存储 Azure 信息的密钥保管库保护租户密钥。 所需的权限有解密、加密、unwrapkey、wrapkey、验证和签名。
     
     例如，如果已为 Azure 信息保护创建的密钥保管库名为 contoso-byok-ky，并且你的资源组名为 contoso-byok-rg，请运行以下命令：
     
-        Set-AzureRmKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
+        Set-AzKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
 
 
 现在，你已经在 Azure 密钥保管库中为 Azure 信息保护中的 Azure Rights Management 服务准备好了 HSM 密钥，接下来可以导入 AD RMS 配置数据。

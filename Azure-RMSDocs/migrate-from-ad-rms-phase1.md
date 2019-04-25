@@ -12,11 +12,11 @@ ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: b5a27e874af808136274a50d25310d722f399032
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56252735"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60181627"
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
 

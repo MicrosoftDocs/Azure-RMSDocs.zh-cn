@@ -14,11 +14,11 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.openlocfilehash: 392bfa5e76bd0e07212fd47042b514a243a652dd
-ms.sourcegitcommit: 471b3683367d93f0673c1cf276a15f83572aa80e
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57333443"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60178650"
 ---
 # <a name="ios-and-os-x-setup"></a>iOS 和 OS X 安装程序
 
@@ -34,7 +34,7 @@ ms.locfileid: "57333443"
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>系统必备
 
 我们建议在开发系统上安装以下软件：
 
@@ -100,7 +100,7 @@ ms.locfileid: "57333443"
 
 -   你现已准备就绪，可自行创建新的 iOS/OS X 应用。
 
-### <a name="see-also"></a>另请参阅
+### <a name="see-also"></a>请参阅
 
 * [入门](get-started.md)
 
