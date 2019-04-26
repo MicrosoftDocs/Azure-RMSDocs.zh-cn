@@ -12,15 +12,15 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 3e1de24471b89ac0081f5f5e93a25baf1d798e34
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56260028"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60181916"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>比较 Azure 信息保护与 AD RMS
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用对象：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 如果你了解或以前部署过 Active Directory Rights Management Services (AD RMS)，你可能想知道 Azure 信息保护作为信息保护解决方案在功能和要求方面与它相比有何差别。
 
@@ -58,7 +58,7 @@ Azure 信息保护的一些主要差异：
 |支持适用于 Windows、iOS 和 Android 的 [Azure 信息保护客户端](./rms-client/aip-client.md)。 RMS 共享应用继续支持 Mac 计算机。<br /><br />此外，Azure 信息保护客户端支持以下各项：<br /><br />- 与其他组织的用户共享。<br /><br />- 适用于用户的文档跟踪站点，包括撤消文档的功能。|支持适用于 Windows、iOS 和 Android 的 [Azure 信息保护客户端](./rms-client/aip-client.md)。 RMS 共享应用继续支持 Mac 计算机。 但是，共享不支持与其他组织的用户共享或文档跟踪站点以及用户撤销文档的功能。|
 |使用 Azure 信息保护客户端时，可以对大多数[文件类型](./rms-client/client-admin-guide-file-types.md)进行分类和保护。<br /><br />对于其他应用程序，检查[支持 Azure Rights Management 数据保护的应用程序](./requirements-applications.md)中的表。|使用 Azure 信息保护客户端时，可以对大多数[文件类型](./rms-client/client-admin-guide-file-types.md)进行保护。<br /><br />对于其他应用程序，检查[支持 Azure Rights Management 数据保护的应用程序](./requirements-applications.md)中的表。|
 |支持的 Windows 客户端最低版本为 Windows 7 SP1。|支持的 Windows 客户端最低版本为 Windows 7 SP1。|
-|移动设备支持包括 Windows 10 移动版、Android 版和 iOS 版。<br /><br />在支持 Exchange ActiveSync IRM 协议的所有移动设备平台上，也支持使用该协议管理电子邮件。|移动设备支持包括 Windows 10 移动版、Android 版和 iOS 版，并需要 [Active Directory Rights Management Services 移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)。<br /><br />在支持 Exchange ActiveSync IRM 协议的所有移动设备平台上，支持使用 Exchange ActiveSync IRM 管理电子邮件。|
+|移动设备支持包括 Windows 10 移动版、Android 版和 iOS 版。<br /><br />在支持 Exchange ActiveSync IRM 协议的所有移动设备平台上，也支持使用该协议管理电子邮件。|移动设备支持包括 Windows 10 移动版、Android 版和 iOS 版，并需要 [Active Directory Rights Management Services 移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)。<br /><br />在支持 Exchange ActiveSync IRM 协议的所有移动设备平台上，支持使用 Exchange ActiveSync IRM 管理电子邮件。|
 |支持适用于计算机和移动设备的多因素身份验证 (MFA)。<br /><br />有关详细信息，请参阅[多重身份验证 (MFA) 和 Azure 信息保护](./requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection)。|如果将 IIS 配置为请求证书，将支持智能卡身份验证。|
 |支持加密模式 2，而无需额外配置，该模式针对各种密钥长度和加密算法提供更强大的安全性。<br /><br />有关详细信息，请参阅本文中的[对签名和加密的加密控制](#cryptographic-controls-for-signing-and-encryption)部分以及 [AD RMS 加密模式](https://go.microsoft.com/fwlink/?LinkId=266659)。|默认情况下支持加密模式 1，需要额外配置才能支持加密算法 2，以提供更强大的安全性。<br /><br />有关详细信息，请参阅本文中的[对签名和加密的加密控制](#cryptographic-controls-for-signing-and-encryption)部分以及 [AD RMS 加密模式](https://go.microsoft.com/fwlink/?LinkId=266659)。|
 |支持从 AD RMS 迁移，如果需要，支持迁移到 AD RMS：<br /><br />- [从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)<br /><br />- [解除 Azure 信息保护授权并停用 Azure 信息保护](decommission-deactivate.md)|支持从 Azure 信息保护迁移以及迁移到 Azure 信息保护：<br /><br />- [解除 Azure 权限管理授权并停用 Azure 权限管理](decommission-deactivate.md)<br /><br />- [从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)|

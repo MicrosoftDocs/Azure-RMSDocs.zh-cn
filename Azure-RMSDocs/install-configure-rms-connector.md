@@ -12,15 +12,15 @@ ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: b89bab8cd4ae7aecb8484f729001038b922360c8
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259425"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60182035"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 使用以下信息可帮助你安装并配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 1-4。
 
@@ -58,7 +58,7 @@ ms.locfileid: "56259425"
 
 此帐户不得要求进行多重身份验证 (MFA)，因为 Microsoft Rights Management 管理工具不支持对此帐户进行 MFA。 
 
-连接器对于此密码还有一些字符限制。 你不能使用包含以下任一字符的密码：与号 ( & )；左尖括号 ( [ )；右尖括号 ( ] )；直引号 ( " ) 和撇号 ( ' )。 如果你的密码包含上述任一字符，尽管在其他方案中可以使用此帐户和密码成功登录，但针对 RMS 连接器的身份验证也会失败，并且你会看到“该用户名和密码组合不正确”的错误消息。 如果此方案适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设密码使其不包含上述任一特殊字符。
+连接器对于此密码还有一些字符限制。 不能使用具有任一下列字符的密码：与号 ( & )；左尖括号 ( [ )；右尖括号 ( ] )；直引号 ( " ) 和撇号 ( ' )。 如果你的密码包含上述任一字符，尽管在其他方案中可以使用此帐户和密码成功登录，但针对 RMS 连接器的身份验证也会失败，并且你会看到“该用户名和密码组合不正确”的错误消息。 如果此方案适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设密码使其不包含上述任一特殊字符。
 
 此外，如果你实现了[内置控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保你指定的帐户能够保护内容。 例如，如果限制为只有“IT 部门”组可以保护内容，那么在此处指定的帐户必须是该组成员。 如果不是，将看到以下错误消息：**“发现管理服务和组织位置的尝试失败。“请确保为你的组织启用了 Microsoft Rights Management 服务。”**
 
@@ -68,7 +68,7 @@ ms.locfileid: "56259425"
 
 - **Azure Rights Management 全局管理员**：Azure Active Directory 中已分配为 Azure RMS 全局管理员角色的帐户。
 
-- **Azure Rights Management 连接器管理员**：Azure Active Directory 中的一个帐户，已被授予为你的组织安装和管理 RMS 连接器的权限。
+- **Azure Rights Management 连接器管理员**：已被授予权限以安装和管理你的组织 RMS 连接器的 Azure Active Directory 中的帐户。
 
   > [!NOTE]
   > 通过使用 Azure RMS [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) cmdlet，向帐户分配 Azure Rights Management 全局管理员角色和 Azure Rights Management 连接器管理员角色。
@@ -179,11 +179,11 @@ ms.locfileid: "56259425"
 
 使用以下设置来配置 NLB 群集：
 
--   端口：80（对于 HTTP）或 443（对于 HTTPS）
+-   端口：80 （对于 HTTP) 或 443 （对于 HTTPS)
 
     有关如何使用 HTTP 或 HTTPS 的详细信息，请参阅下一部分。
 
--   地缘组：无
+-   关联：无
 
 -   分发方法：等于
 

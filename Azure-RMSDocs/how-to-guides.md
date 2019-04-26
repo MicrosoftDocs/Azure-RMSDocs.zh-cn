@@ -1,25 +1,27 @@
 ---
-title: 使用 Azure 信息保护的常见应用场景的操作方法说明。
-description: 通过使用 Azure 信息保护，确定对组织数据进行分类和保护的用例。
+title: Azure 信息保护的常见方案的操作方法说明
+description: 确定用例的分类和保护你组织的数据通过使用 Azure 信息保护。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/13/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 69ae0a504ffcdaa201b1d4ce9762b22470e05eb7
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.openlocfilehash: 002dcd33e7219d8c25a4d1b24ab559b4f0922799
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259025"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60182120"
 ---
 # <a name="how-to-guides-for-common-scenarios-that-use-azure-information-protection"></a>使用 Azure 信息保护的常见应用场景的操作方法指南
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>
+> *说明：[适用于 Windows 的 azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 可以通过多种方式使用 Azure 信息保护对组织的文档和电子邮件进行分类和选择性保护。 
 
@@ -40,13 +42,21 @@ ms.locfileid: "56259025"
 
 ## <a name="additional-deployment-instructions"></a>其他部署说明
 
-我们的 [Azure 信息保护技术博客](https://aka.ms/AIPblog)有来自客户体验工程团队提供的其他指南。
+我们[Azure 信息保护技术博客](https://aka.ms/AIPblog)包括来自 trenches 的更多指导。
 
 例如，为业务决策者和 IT 实施者提供最佳做法的方法：
 
 - [Azure 信息保护部署加速指南](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Deployment-Acceleration-Guide/ba-p/334423)
 
 分步说明：
+
+- [使用 Microsoft 信息保护和 Azure AD 登录数据创建更丰富的报告](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Create-richer-reports-with-Microsoft-Information-Protection-and/ba-p/392713)
+
+- [利用 Microsoft Cloud App Security 应用在云中的 Azure 信息保护标签](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Leverage-Microsoft-Cloud-App-Security-to-apply-Azure-Information/ba-p/388638)
+
+- [若要准备 Azure 信息保护"云退出"计划的方式](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/How-to-prepare-an-Azure-Information-Protection-Cloud-Exit-plan/ba-p/382631)
+
+- [跨租户标签可视化效果](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Cross-Tenant-Label-Visualization/ba-p/356588)
 
 - [Using Azure Information Protection to protect PDF’s and Adobe Acrobat Reader to view them](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Using-Azure-Information-Protection-to-protect-PDF-s-and-Adobe/ba-p/282010)（使用 Azure 信息保护来保护 PDF 和 Adobe Acrobat Reader 以查看它们）
 

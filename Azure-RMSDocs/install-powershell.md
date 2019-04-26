@@ -12,27 +12,27 @@ ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 789c3178827e52c27759268b1340b53c3add1c39
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259705"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60181712"
 ---
 # <a name="installing-the-aadrm-powershell-module"></a>安装 AADRM PowerShell 模块
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用以下信息帮助安装适用于 Azure 信息保护中的 Azure Rights Management 服务的 Windows PowerShell 模块。 此模块的名称是 AADRM。
 
 在任何具有 Internet 连接且满足下一节列出的先决条件的计算机上，可以使用此 PowerShell 模块从命令行管理 Azure Rights Management 服务。 适用于 Azure Rights Management 的 Windows PowerShell 支持脚本的自动化，或者可能是高级配置方案所必需的。 若要深入了解此模块支持的管理任务和配置，请参阅[使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 此表列出了安装和使用适用于 Azure 信息保护中的 Azure Rights Management 服务的 AADRM PowerShell 模块的先决条件。
 
 |要求|更多信息|
 |---------------|--------------------|
-|Windows PowerShell 的最低版本：3.0|你可在 PowerShell 会话中键入 `$PSVersionTable`，以确认正在运行的 Windows PowerShell 的版本。 <br /><br /> 如果需要安装更高版本的 Windows PowerShell，请参阅[升级现有的 Windows PowerShell](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell)。|
-|最低版本的 Microsoft .NET Framework：4.5<br /><br />注意：较高版本的操作系统都附带此版本的 Microsoft .NET Framework，因此，只有在你的客户端操作系统低于 Windows 8.0 或服务器操作系统低于 Windows Server 2012 的情况下，才需要手动安装它。|如果尚未安装 Microsoft .NET Framework 的最低版本，则可下载 [Microsoft .NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)。<br /><br />此最低版本的 Microsoft .NET Framework 是 AADRM 模块使用的某些类所必需的。|
+|Windows PowerShell 的最低版本：3.0|你可在 PowerShell 会话中键入 `$PSVersionTable`，以确认正在运行的 Windows PowerShell 的版本。 <br /><br /> 如果需要安装更高版本的 Windows PowerShell，请参阅[升级现有的 Windows PowerShell](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell)。|
+|Microsoft.NET framework 的最低版本：4.5<br /><br />注意：此版本的 Microsoft.NET Framework 是附带更高版本的操作系统，因此应需要手动安装它，仅当将客户端操作系统低于 Windows 8.0 或服务器操作系统低于 Windows Server 2012。|如果尚未安装 Microsoft .NET Framework 的最低版本，则可下载 [Microsoft .NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)。<br /><br />此最低版本的 Microsoft .NET Framework 是 AADRM 模块使用的某些类所必需的。|
 
 从 AADRM 模块的 2.5.0.0 版本开始，不再需要 Microsoft Online Services 登录助手了。
 
@@ -85,7 +85,7 @@ Get-Help Connect-AadrmService -online
 
 参考信息：
 
--   可用 cmdlet 的完整列表：[AADRM 模块](/powershell/aadrm/vlatest/rightsmanagement)
+-   可用的 cmdlet 的完整列表：[AADRM 模块](/powershell/aadrm/vlatest/rightsmanagement)
 
 -   支持 PowerShell 的主要配置方案的列表：[使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md)
 

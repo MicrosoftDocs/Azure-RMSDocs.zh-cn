@@ -12,15 +12,15 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: aedeea5e98a1dbee4e73cdf27573da52b623a6c4
-ms.sourcegitcommit: 21e7b96e1a60ff584149b3ff4325c80cb0a3770c
-ms.translationtype: HT
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57568087"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60179604"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>为 Azure Rights Management 配置使用权限
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 在文件或电子邮件上使用 Azure 信息保护中的 Azure 权限管理服务设置保护并且不使用模板时，必须自行配置使用权限。 此外，在为 Azure 权限管理保护配置模板或标签时，可以选择随后在用户、管理员或配置的服务选择模板或标签时会自动应用的使用权限。 例如，在 Azure 门户中，可以选择配置使用权限逻辑分组的角色，或者可以配置单个权限。
 
@@ -49,7 +49,7 @@ ms.locfileid: "57568087"
 |公用名称：**答复** <br /><br />策略中的编码：**REPLY**|启用邮件客户端中的“答复”选项，但不允许更改“收件人”或“抄送”行。<br /><br />授予此权限时，同时授予“编辑内容，编辑”权限（通用名称），另外授予“保存”权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者，对于组织内无需使用 Azure Rights Management 服务的用户来说，也需要此权限，因为你已实施了[载入控件](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**答复**<br /><br />Azure 经典门户中的名称：**答复 (REPLY)**<br /><br />AD RMS 模板中的名称：**答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLY`|
 |公用名称：**全部答复** <br /><br />策略中的编码：**REPLYALL**|启用邮件客户端中的“全部答复”  选项，但不允许用户将收件人添加到“收件人”  或“抄送”  行。<br /><br />授予此权限时，同时授予“编辑内容，编辑”权限（通用名称），另外授予“保存”权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者，对于组织内无需使用 Azure Rights Management 服务的用户来说，也需要此权限，因为你已实施了[载入控件](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**全部答复**<br /><br />Azure 门户中的名称：**全部答复 (REPLY ALL)**<br /><br />AD RMS 模板中的名称：**全部答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLYALL L"REPLYALL"`|
 |公用名称：**查看、打开、读取** <br /><br />策略中的编码：**VIEW**|允许用户打开文档，并查看内容。<br /><br /> 在 Excel 中，此权限不足，无法对数据进行排序，必须拥有以下权限：“编辑内容、编辑”。 若要在 Excel 中筛选数据，需要拥有以下两项权限：“编辑内容、编辑”和“复制”。|Office 自定义权限：作为“读取”  自定义策略，“查看”  选项。<br /><br />Azure 经典门户中的名称：**查看**<br /><br />Azure 门户中的名称：**查看、打开、读取 (VIEW)**<br /><br />AD RMS 模板中的名称：**读取** <br /><br />API 常量或值：`IPC_GENERIC_READ L"VIEW"`|
-|公用名称：**复制** <br /><br />策略中的编码：**EXTRACT**|启用将数据（包括屏幕捕获）从文档复制到同一文档或其他文档的选项。<br /><br />在某些应用程序中，它还允许以不受保护的形式保存整个文档。<br /><br />在 Skype for Business 和类似屏幕共享应用程序中，演示者必须拥有此权限，才能成功展示受保护文档。 如果演示者没有此权限，与会者便无法查看文档，且文档显示为对与会者禁用。|Office 自定义权限：作为“允许具有读取权限的用户复制内容”  自定义策略选项。<br /><br />Azure 经典门户中的名称：**复制和提取内容**<br /><br />Azure 门户中的名称：**复制 (EXTRACT)**<br /><br />AD RMS 模板中的名称：**提取** <br /><br />API 常量或值：`IPC_GENERIC_EXTRACT L"EXTRACT"`|
+|公用名称：**Copy** <br /><br />策略中的编码：**EXTRACT**|启用将数据（包括屏幕捕获）从文档复制到同一文档或其他文档的选项。<br /><br />在某些应用程序中，它还允许以不受保护的形式保存整个文档。<br /><br />在 Skype for Business 和类似屏幕共享应用程序中，演示者必须拥有此权限，才能成功展示受保护文档。 如果演示者没有此权限，与会者便无法查看文档，且文档显示为对与会者禁用。|Office 自定义权限：作为“允许具有读取权限的用户复制内容”  自定义策略选项。<br /><br />Azure 经典门户中的名称：**复制和提取内容**<br /><br />Azure 门户中的名称：**复制 (EXTRACT)**<br /><br />AD RMS 模板中的名称：**提取** <br /><br />API 常量或值：`IPC_GENERIC_EXTRACT L"EXTRACT"`|
 |公用名称：**查看权限** <br /><br />策略中的编码：**VIEWRIGHTSDATA**|允许用户查看应用于文档的策略。|Office 自定义权限：未实现。<br /><br />Azure 经典门户中的名称：**查看已分配的权限**<br /><br />Azure 门户中的名称：**查看权限 (VIEWRIGHTSDATA)**。<br /><br />AD RMS 模板中的名称：**查看权限** <br /><br />API 常量或值：`IPC_READ_RIGHTS L"VIEWRIGHTSDATA"`|
 |公用名称：**更改权限** <br /><br />策略中的编码：**EDITRIGHTSDATA**|允许用户更改应用于文档的策略。 包括删除的保护。|Office 自定义权限：未实现。<br /><br />Azure 经典门户中的名称：**更改权限**<br /><br />Azure 门户中的名称：**编辑权限 (EDITRIGHTSDATA)**。<br /><br />AD RMS 模板中的名称：**编辑权限** <br /><br />API 常量或值：`PC_WRITE_RIGHTS L"EDITRIGHTSDATA"`|
 |公用名称：**允许宏** <br /><br />策略中的编码：**OBJMODEL**|启用运行宏或执行其他编程或远程访问文档内容的选项。|Office 自定义权限：作为“允许编程访问”  自定义策略选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**允许宏**<br /><br />Azure 门户中的名称：**允许宏 (OBJMODEL)**<br /><br />AD RMS 模板中的名称：**允许宏** <br /><br />API 常量或值：未实现。|
@@ -180,7 +180,7 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
     
     有关使用 PowerShell 配置此设置的详细信息和指南，请参阅每个 cmdlet 的帮助。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [配置和管理 Azure 信息保护的模板](configure-policy-templates.md)
 
 [为 Azure 权限管理和发现服务或数据恢复配置超级用户](configure-super-users.md)

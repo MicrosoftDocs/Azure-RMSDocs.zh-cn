@@ -3,24 +3,24 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
+ms.date: 04/23/2019
 manager: barbkess
-ms.date: 04/08/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 735e7253701c3cbed8af7974d27cf241fb515c90
-ms.sourcegitcommit: ce2078712d111f102a72b3a8697121f1390bdf07
-ms.translationtype: HT
+ms.openlocfilehash: e85537f705fa388aa7c2c3a838ca658213899edb
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59289411"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60181646"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 
 > [!NOTE]
 > 此功能目前处于预览状态，随时可能更改。
@@ -67,7 +67,7 @@ ms.locfileid: "59289411"
 
 - 在“数据发现”报表中：
 
-    - 哪些文件位于扫描的数据存储库、Windows 10 计算机或运行 Azure 信息保护预览版客户端或[支持统一标记的客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)的计算机上
+    - 哪些文件位于您的扫描的数据存储库，Windows 10 计算机或运行 Azure 信息保护客户端计算机或[支持统一进行标记的客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)
     
     - 被标记和被保护的文件，以及按标签分类的文件的位置
     
@@ -130,16 +130,15 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 收集内容匹配项后，当你向下钻取到活动日志中的文件以显示活动详细信息时，这些匹配项项将显示在报表中。 也可以使用查询来查看和检索此信息。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
 
 |要求|更多信息|
 |---------------|--------------------|
-|包含 Log Analytics 且用于与 Azure 信息保护相同的租户的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有用于相同租户的 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
-|Azure 信息保护客户端（预览版或当前的正式发布版）或 Azure 信息保护统一标签客户端的预览版|如果尚未安装任何版本的客户端，可以从 Microsoft 下载中心下载和安装这些版本：<br /> - [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018) <br /> - [Azure 信息保护统一标记客户端](https://www.microsoft.com/en-us/download/details.aspx?id=57440)|
-|对于“发现和风险”报表： <br /><br />- 要显示本地数据存储中的数据，必须至少部署 Azure 信息保护扫描程序（预览版或当前的正式发布版）的一个实例 <br /><br />- 若要显示 Windows 10 计算机中的数据，这些计算机必须为最低版本 1809，你在使用 Windows Defender 高级威胁防护 (Windows Defender ATP)，并且你已从 Windows Defender 安全中心启用 Azure 信息保护集成功能|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关从 Windows Defender 安全中心配置和使用 Azure 信息保护集成功能的信息，请参阅 [Windows 中的信息保护概述](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview)。|
-|对于“建议”报告： <br /><br />- 要按照建议的操作通过 Azure 门户添加新的数据存储库，必须使用 Azure 信息保护扫描程序的当前预览版 |要部署扫描程序的预览版，请参阅[部署 Azure 信息保护扫描程序的预览版来自动分类和保护文件](deploy-aip-scanner-preview.md)。|
-
+|包含 Log Analytics 且用于与 Azure 信息保护相同的租户的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
+|Azure 信息保护客户端或 Azure 信息保护统一标记客户端|如果没有这些客户端，您可以下载并安装它们从[Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)。 <br /><br /> 请确保你具有要支持的最新版本[所有功能](#features-that-require-a-minimum-version-of-the-client)用于 Azure 信息保护分析。|
+|对于“发现和风险”报表： <br /><br />-若要显示在本地数据存储中的数据，你已部署 Azure 信息保护扫描程序至少一个的实例 <br /><br />- 若要显示 Windows 10 计算机中的数据，这些计算机必须为最低版本 1809，你在使用 Windows Defender 高级威胁防护 (Windows Defender ATP)，并且你已从 Windows Defender 安全中心启用 Azure 信息保护集成功能|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关从 Windows Defender 安全中心配置和使用 Azure 信息保护集成功能的信息，请参阅 [Windows 中的信息保护概述](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview)。|
+|对于“建议”报告： <br /><br />-若要从 Azure 门户中，如下的建议的操作添加新的数据存储库，你必须使用 Azure 信息保护扫描程序的最新正式发布版本 |若要部署扫描程序，请参阅[部署 Azure 信息保护扫描程序以自动分类和保护文件](deploy-aip-scanner.md)。|
 
 ### <a name="permissions-required-for-azure-information-protection-analytics"></a>Azure 信息保护分析必备的先决条件
 
@@ -165,7 +164,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
     > [!NOTE] 
     > 如果你的租户已迁移到统一标记存储，则无法使用信息保护管理员角色。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
 
-2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#managing-access-to-log-analytics-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一才能访问 Azure Log Analytics 工作区：
+2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-access#manage-access-to-log-analytics-workspace-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一才能访问 Azure Log Analytics 工作区：
     
     - 若要创建该工作区或创建自定义查询，必须具有以下角色之一：
     
@@ -187,6 +186,19 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 但是，许多组织的典型角色分配是 Azure AD 角色“安全读取者”以及 Azure 角色“读取者”。
 
+### <a name="features-that-require-a-minimum-version-of-the-client"></a>需要最小版本的客户端的功能。
+
+可以使用的版本历史记录信息[Azure 信息保护统一标记的客户端](./rms-client/unifiedlabelingclient-version-release-history.md)并[Azure 信息保护客户端](./rms-client/client-version-release-history.md)以确认是否您的客户端版本支持所有主要的报告功能。 客户端最低版本：
+
+Azure 信息保护统一标记客户端：
+
+- 对审核和终结点发现的支持：版本 2.0.778
+
+对于 Azure 信息保护客户端：
+
+- 对审核的支持：1.41.51.0
+- 对终结点发现的支持：版本 1.48.204.0
+
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>配置报表的 Log Analytics 工作区
 
 1. 如果尚未这样做，请打开新的浏览器窗口，使用拥有[执行 Azure 信息保护分析所需权限](#permissions-required-for-azure-information-protection-analytics)的帐户[登录 Azure 门户](https://portal.azure.com)。 然后导航到“Azure 信息保护”边栏选项卡。 
@@ -205,6 +217,9 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 配置工作区后，即可开始查看报表。
 
+> [!NOTE] 
+> 首次在报表中显示数据当前存在已知问题。 如果你遇到这种情况，请在全局策略中将“将审核数据发送到 Azure 信息保护日志分析”的[策略设置](configure-policy-settings.md)设置为“关闭”并保存策略。 然后，将相同设置更改为“打开”并保存策略。 客户端[下载更改](configure-policy.md#making-changes-to-the-policy)后，审核事件可能需要最多 30 分钟才能在 Log Analytics 工作区中显示。
+
 ## <a name="how-to-view-the-reports"></a>如何查看报告
 
 在“Azure 信息保护”边栏选项卡中，找到“仪表板”菜单选项，然后选择以下选项之一：
@@ -219,7 +234,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
     
     注意：发现终结点的功能正逐步面向租户推出。 当此功能面向租户推出后，你就能开始在此报表中看到受支持的终结点的数据。
     
-    可以为 Azure 信息保护预览版客户端配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents)以报告包含敏感信息的文件。
+    你可以配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents)包含敏感信息的报表文件的 Azure 信息保护客户端。
     
     提示：在收集的信息中，你可能会发现用户从你不知道或当前未扫描的位置访问包含敏感信息的文件：
     
@@ -230,8 +245,6 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
     
     选择项目时，“查看数据”选项将显示触发了建议的审核活动。
 
-> [!NOTE]
-> 当“发送操作系统区域设置”为英语时，会出现一个当前已知的问题，即在路径和文件名中显示问号 (?)，而不是非 ASCII 字符。
 
 ## <a name="how-to-modify-the-reports-and-create-custom-queries"></a>如何修改报表并创建自定义查询
 
@@ -255,7 +268,7 @@ Azure 信息保护的记录数据存储在下表中：**InformationProtectionLog
 
 使用以下示例了解如何使用友好的架构来创建自定义查询。
 
-##### <a name="example-1-return-all-users-who-sent-audit-data-in-the-last-31-days"></a>示例 1：返回在过去 31 天内发送审核数据的所有用户 
+##### <a name="example-1-return-all-users-who-sent-audit-data-in-the-last-31-days"></a>示例 1:返回在过去 31 天内发送审核数据的所有用户 
 
 ```
 InformationProtectionEvents 
@@ -264,7 +277,7 @@ InformationProtectionEvents
 ```
 
  
-##### <a name="example-2-return-the-number-of-labels-that-were-downgraded-per-day-in-the-last-31-days"></a>示例 2：返回在过去 31 天内按天降级的标签数 
+##### <a name="example-2-return-the-number-of-labels-that-were-downgraded-per-day-in-the-last-31-days"></a>示例 2:返回在过去 31 天内按天降级的标签数 
 
 
 ```
@@ -291,6 +304,6 @@ InformationProtectionEvents
 
 
 ## <a name="next-steps"></a>后续步骤
-查看报表中的信息后，你可能会决定对你的 Azure 信息保护策略进行更改。 有关说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
+查看在报表中的信息后，如果使用 Azure 信息保护客户端，您可能会决定对你的 Azure 信息保护策略进行更改。 有关说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
 
 如果你有 Microsoft 365 订阅，则还可以在 Microsoft 365 合规中心和 Microsoft 365 安全中心中查看标签使用情况。 有关详细信息，请参阅[使用标签分析查看标签使用情况](/Office365/SecurityCompliance/label-analytics)。

@@ -4,21 +4,21 @@ description: Azure 信息保护服务概述。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/13/2019
-ms.topic: conceptual
+ms.date: 04/17/2019
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 3082d43d44d961303c61796c949ba66adfb7f08b
-ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
+Customer intent: As an administrator, I want to label documents and emails to classify and protect my organization's data, wherever it resides.
+ms.openlocfilehash: 64733ce1007a97f32a12b50d37aa886b774f896e
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57828458"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "60181167"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助于组织通过应用标签对其文档和电子邮件进行分类和有选择地保护。 标签可以由定义规则和条件的管理员自动应用、由用户手动应用或是二者组合应用（在这种情况下会向用户提供建议）。 
 
@@ -109,6 +109,11 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 对于你的云数据存储，请使用 Microsoft Cloud App Security，将你的标签应用于 Box、SharePoint Online 和 OneDrive for Business 中的文档。 有关详细信息，请参阅[自动应用 Azure 信息保护分类标签](/cloud-app-security/use-case-information-protection)和 [Azure 信息保护集成](/cloud-app-security/azip-integration)。
 
+## <a name="latest-labeling-updates-for-microsoft-365"></a>Microsoft 365 的最新标签更新
+
+请参阅有关 Azure 信息保护如何帮助你发现、分类、保护和监视敏感信息的最新信息，无论该敏感信息位于何处：
+
+> [!VIDEO https://www.youtube.com/embed/UI0p9xqMNfI]
 
 ## <a name="resources-for-azure-information-protection"></a>Azure 信息保护的资源
 
@@ -126,7 +131,7 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 - Yammer：[Azure 信息保护](https://www.yammer.com/AskIPTeam)
 
-更多资源：[Azure 信息保护的信息和支持](information-support.md)
+其他资源：[Azure 信息保护的信息和支持](information-support.md)
 
 ### <a name="microsoft-ignite"></a>Microsoft Ignite
 
@@ -147,4 +152,4 @@ Microsoft Ignite 2018 大会在美国奥兰多开幕，期间举办了多场以 
 
 ## <a name="next-steps"></a>后续步骤
 
-可通过观看我们的[快速入门教程](quickstart-viewpolicy.md)和[教程](infoprotect-quick-start-tutorial.md)，自行配置和使用 Azure 信息保护。 或者，如果已准备好部署组织的此项服务，请转到[针对常见应用场景的操作方法指南](how-to-guides.md)。
+可通过观看我们的[快速入门教程](quickstart-viewpolicy.md)和[教程](infoprotect-quick-start-tutorial.md)，自行配置和使用 Azure 信息保护。 或者，如果已准备好部署组织的此项服务，请转到[操作方法指南](how-to-guides.md)。
