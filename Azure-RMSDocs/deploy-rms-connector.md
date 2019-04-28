@@ -20,7 +20,7 @@ ms.locfileid: "60179963"
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>部署 Azure Rights Management 连接器
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 利用此信息了解 Azure Rights Management 连接器，并了解如何为组织成功部署该连接器。 该连接器提供数据保护，包括保护使用 Microsoft **Exchange Server**、**SharePoint Server** 或运行 Windows Server 和**文件分类基础结构** (FCI) 的文件服务器的现有本地部署。
 

@@ -13,7 +13,7 @@ ms.reviewer: eymanor
 ms.suite: ems
 ms.openlocfilehash: dae3461c4e5ec8ea4cc61fe26c20f774c97d76c5
 ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/24/2019
 ms.locfileid: "60182054"
@@ -22,7 +22,7 @@ ms.locfileid: "60182054"
 
 >适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
-> *说明：[适用于 Windows 的 azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 请参阅以下高级配置相关信息，在管理 Azure 信息保护客户端时，可能需要用于特定方案或一部分用户。
 
@@ -374,7 +374,7 @@ User Response: Confirmed
     
     - 密钥：**OutlookUnlabeledCollaborationAction**
     
-    - Value：**关闭**
+    - Value：**Off**
 
 #### <a name="to-define-specific-file-name-extensions-for-the-warn-justify-or-block-pop-up-messages-for-email-attachments-that-dont-have-a-label"></a>若要定义特定文件扩展名为，则发出警告，对齐，或阻止不具有标签的电子邮件附件的弹出消息
 

@@ -31,7 +31,7 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>先决条件
 
 
 开发系统上必须安装以下软件：

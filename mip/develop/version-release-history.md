@@ -9,10 +9,10 @@ ms.date: 01/08/2019
 ms.author: mbaldwin
 manager: barbkess
 ms.openlocfilehash: 9f02d682164dac8ee28ed023dd7b21b53937f4bb
-ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 04/24/2019
 ms.locfileid: "60184212"
 ---
 # <a name="microsoft-information-protection-mip-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护 (MIP) SDK 版本发行历史记录和支持策略

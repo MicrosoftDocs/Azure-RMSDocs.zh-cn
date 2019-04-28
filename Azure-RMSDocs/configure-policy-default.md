@@ -17,9 +17,9 @@ ms.locfileid: "60179801"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *说明：[适用于 Windows 的 azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 使用以下信息来了解如何配置 Azure 信息保护的默认策略。
 
@@ -105,7 +105,7 @@ ms.locfileid: "60179801"
 
 2017 年 7 月 31 日后添加了一些设置。
 
-|设置|值|
+|设置|ReplTest1|
 |-------------------------------|---------------------------|
 |选择默认标签|无|
 |将审核数据发送到 Azure 信息保护分析|关|

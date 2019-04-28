@@ -19,9 +19,9 @@ ms.locfileid: "60180146"
 ---
 # <a name="deploying-previous-versions-of-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署早期版本的 Azure 信息保护扫描程序以自动分类和保护文件
 
->适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2*
+>适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2*
 >
-> *说明：[适用于 Windows 的 azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 > [!NOTE]
 > 本文是 Azure 信息保护扫描程序的版本早于版本的**1.48.204.0**但仍在支持。 若要升级到最新版本的早期版本，请参阅[升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。
