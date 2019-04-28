@@ -20,7 +20,7 @@ ms.locfileid: "60182137"
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *说明：[适用于 Windows 的 azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 使用以下信息了解什么是用于 Azure 信息保护的保留自己的密钥 (HYOK)，以及它与默认的基于云的保护有何不同。 使用 HYOK 保护前，请确保了解适用情况、支持的方案、限制和需求。 
 

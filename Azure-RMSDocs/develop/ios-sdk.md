@@ -34,7 +34,7 @@ ms.locfileid: "60178650"
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>先决条件
 
 我们建议在开发系统上安装以下软件：
 

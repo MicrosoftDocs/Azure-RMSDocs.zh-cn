@@ -13,7 +13,7 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 0af65b69d28c97e547c0d0bce9e3024402b28dee
 ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/24/2019
 ms.locfileid: "60183191"
