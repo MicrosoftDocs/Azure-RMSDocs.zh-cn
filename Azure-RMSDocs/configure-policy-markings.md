@@ -20,7 +20,7 @@ ms.locfileid: "60179859"
 
 >适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *说明：[适用于 Windows 的 azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。 
@@ -98,7 +98,7 @@ ms.locfileid: "60179859"
 
 - `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016 年 8 月 16 日下午 1:30
 
-例如：如果为“常规”标签页脚指定字符串 `Document: ${item.name}  Classification: ${item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 Document: project.docx  Classification: General。
+例如：如果为“常规”标签页脚指定字符串 `Document: ${item.name}  Classification: ${item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 Document: project.docx  Classification: General **。
 
 >[!TIP]
 > 还使用[域代码将标签名称插入](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification)文档或模板中。

@@ -173,7 +173,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 ## <a name="how-do-i-configure-one-drive-for-business-in-sharepoint-online-so-that-users-can-safely-share-their-files-with-people-inside-and-outside-the-company"></a>如何在 SharePoint Online 中配置 OneDrive for Business，以便用户可以安全地与公司内外的人员共享他们的文件？
 默认情况下，作为 Office 365 管理员，你不用执行此配置，用户会进行配置。
 
-正如 SharePoint 站点管理员为其拥有的 SharePoint 库启用并配置 IRM 一样，根据 OneDrive for Business 的设计，用户也需要为自己的 OneDrive for Business 库启用并配置 IRM。 不过，你可以使用 PowerShell 为他们执行此类操作。 有关说明，请参阅 [Office 365：客户端和联机服务的配置一文中的](configure-office365.md)SharePoint Online 和 OneDrive for Business：IRM 配置](configure-office365.md#sharepointonline-and-onedrive-for-business-irm-configuration)部分。
+正如 SharePoint 站点管理员为其拥有的 SharePoint 库启用并配置 IRM 一样，根据 OneDrive for Business 的设计，用户也需要为自己的 OneDrive for Business 库启用并配置 IRM。 不过，你可以使用 PowerShell 为他们执行此类操作。 有关说明，请参阅 Office 365：客户端和联机服务的配置一文中的SharePoint Online 和 OneDrive for Business：IRM 配置](configure-office365.md#sharepointonline-and-onedrive-for-business-irm-configuration)部分。
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>对于成功部署，是否有任何提示或窍门？
 

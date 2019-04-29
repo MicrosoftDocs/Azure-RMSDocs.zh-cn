@@ -21,7 +21,7 @@ ms.locfileid: "60185430"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 
-适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+适用对象：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 
 此页提供有关适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题的解答。
 
