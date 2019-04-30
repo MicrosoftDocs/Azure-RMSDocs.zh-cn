@@ -4,21 +4,23 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/14/2019
+ms.date: 04/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 0057677890de2a771e93cc2f843623bbd780c31a
-ms.sourcegitcommit: d716d3345a6a5adc63814dee28f7c01b55b96770
+ms.openlocfilehash: 1e37b45cb6894ddee9630f53c52018f8a0956357
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57978145"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "62772573"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 可通过使用 Rights Management 服务保护最敏感的文档和电子邮件。 此服务使用加密、标识和身份验证策略，有助于防止数据丢失。 保护应用于配置为使用 Rights Management 保护文档和电子邮件的标签，用户还可以在 Outlook 中选择“不可转发”按钮。
 
@@ -143,7 +145,7 @@ ms.locfileid: "57978145"
     
      |Setting|更多信息|推荐设置
      |-----------|--------------------|--------------------|
-     |**内容过期时间**|定义一个日期或天数，在此期间不应为选定的用户打开受模板保护的文档。 对于电子邮件，由于某些电子邮件客户端使用的缓存机制，并不总是强制执行过期。<br /><br />你可以指定一个日期，也可以指定对内容应用保护后所经历的天数。<br /><br />如果你指定一个日期，它将在你当前时区的午夜生效。|除非内容具有特定的时间限制要求，否则**内容永不过期**。|
+     |**文件内容有效期限**|定义一个日期或天数，在此期间不应为选定的用户打开受模板保护的文档。 对于电子邮件，由于某些电子邮件客户端使用的缓存机制，并不总是强制执行过期。<br /><br />你可以指定一个日期，也可以指定对内容应用保护后所经历的天数。<br /><br />如果你指定一个日期，它将在你当前时区的午夜生效。|除非内容具有特定的时间限制要求，否则**内容永不过期**。|
      |**允许脱机访问**|使用此设置在你的任何安全需求（包括吊销后的访问权限）与所选用户在没有 Internet 连接的情况下是否能够打开受保护的内容之间实现平衡。<br /><br />如果你指定内容在没有 Internet 连接的情况下不可用，或者指定内容仅在指定天数内可用，则在到达该阈值时，这些用户必须重新进行身份验证，他们的访问也将被记录。 发生这种情况时，如果用户的凭据不缓存，他们会收到提示，指示登录后才能打开文档或电子邮件。<br /><br />除了重新进行身份验证之外，还会重新评估策略和用户组成员身份。 这意味着，如果策略或组成员身份相比用户上一次访问文档或电子邮件时发生变化，则他们可能获得与上一次访问相同内容时不同的访问结果。 如果文档已被[撤销](./rms-client/client-track-revoke.md)，则可能不包含访问权限。|取决于内容的敏感程度：<br /><br />- **在没有 Internet 连接的情况下内容的可用天数** = **7**用于如果与未经授权的人员共享可能导致业务损失的敏感业务数据。 此建议提供灵活性和安全性之间的平衡折中。 例如合同、安全报告、预测摘要和销售客户数据。<br /><br />- **禁止访问**对于高度敏感的业务数据，如果与未经授权的人员共享将会导致业务损失。 此建议优先考虑安全性而不是灵活性，并确保一旦文档被撤销，那么所有授权用户都无法打开文档。 例如员工和客户信息、密码、源代码和预先公布的财务报表。|
     
      完成权限和设置配置后，单击“确定”。 
@@ -296,7 +298,7 @@ ms.locfileid: "57978145"
 
 4. 选择相应权限，再单击“确定”。
 
-5. 如有需要，返回到“保护”边栏选项卡，配置“内容有效期限”和“允许脱机访问”设置，再单击“确定”。
+5. 如有需要，返回到“保护”边栏选项卡，配置“文件内容有效期限”和“允许脱机访问”设置，再单击“确定”。
 
 6. 在“标签”边栏选项卡上，选择“保存”。
 
@@ -311,7 +313,7 @@ ms.locfileid: "57978145"
     
 2. 选择“确定”，而不选择任何用户，或在此边栏选项卡上配置任何设置。
     
-    虽然可以配置“内容过期”和“允许脱机访问”的设置，但如果未指定用户及其权限，则这些访问设置不适用。 这是因为应用保护的人是内容的 [Rights Management 颁发方](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)，这个角色没有这些访问限制。
+    虽然可以配置“文件内容过期”和“允许脱机访问”的设置，但如果未指定用户及其权限，则这些访问设置不适用。 这是因为应用保护的人是内容的 [Rights Management 颁发方](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)，这个角色没有这些访问限制。
 
 3. 在“标签”边栏选项卡上，选择“保存”。
 

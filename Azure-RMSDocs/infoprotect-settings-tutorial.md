@@ -4,20 +4,22 @@ description: 本入门教程介绍如何配置 Azure 信息保护策略设置，
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/29/2019
+ms.date: 04/23/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: d627bd71ec3a669f59161c8c3c7137f8a635ceb6
-ms.sourcegitcommit: 8fa7d2e6b3e900fec128af57105995d5fb0cc761
+ms.openlocfilehash: d5d6988c5180a58ed9de5c8111036ee380044584
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58617784"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "62773598"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 在本教程中，你将了解如何执行以下操作：
 > [!div class="checklist"]
@@ -113,7 +115,7 @@ ms.locfileid: "58617784"
 
 如果未显示该栏，无需更改标签，关闭“信息保护”栏即可比较体验：
 
-![Azure 信息保护教程 - 使用默认标签的新文档](./media/infoprotect-bar-close.png)
+![Azure 信息保护教程 - 关闭栏](./media/infoprotect-bar-close.png)
 
 “常规”标签仍处于选中状态，但不太明显。 选择不同标签的选项也不太明显。 为此，用户必须选择“保护”按钮：
 
@@ -132,7 +134,7 @@ ms.locfileid: "58617784"
 
 如果我们没有更改该设置，“信息保护”栏会显示以下图标：
 
-![Azure 信息保护教程 - 已选择“保护”按钮](./media/infoprotect-deletelabel-icon.png)
+![Azure 信息保护教程 - 关闭栏](./media/infoprotect-deletelabel-icon.png)
 
 连同默认标签一起，强制标记可确保新文档和已编辑的文档（和电子邮件）具有所选的基本分类。 
 
@@ -150,9 +152,9 @@ ms.locfileid: "58617784"
 
 如果单击“忽略”，则不会应用新标签，但会看到电子邮件仍然使用已配置的默认标签“常规”进行标记。 仍然显示可用标签以供选择。
 
-如果选择“立即更改”，则电子邮件重新标记为“保密”子标签。 但是，用户仍然可以在发送电子邮件之前更改标签，方法是选择“编辑”标签：
+如果选择“立即更改”，则电子邮件重新标记为“保密”子标签。 但是，用户仍然可以在发送电子邮件之前更改标签，方法是选择“编辑”标签图标：
 
-![Azure 信息保护教程 - 提示重新标记电子邮件以匹配已标记附件](./media/infoprotect-editlabel-icon.png)
+![Azure 信息保护教程 -“编辑标签”图标](./media/infoprotect-editlabel-icon.png)
 
 “信息保护”栏会再次显示，供用户选择替代标签。
 

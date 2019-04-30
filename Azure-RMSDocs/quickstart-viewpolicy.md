@@ -4,20 +4,22 @@ description: 如果你的组织刚刚开始使用 Azure 信息保护，请从此
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/09/2019
+ms.date: 04/17/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 1d857fc3282b0851e80765fe3f53a2315ed59b5f
-ms.sourcegitcommit: 729b12e1219c6dbf1bb2a6cfa7239f24d1d13cc5
+ms.openlocfilehash: e41af7f6bcf8734377404b0dabcdb059d2d91bc1
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59364634"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "62773572"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 本快速入门包含以下内容：将 Azure 信息保护添加到 Azure 门户、确认保护服务已激活、创建默认标签（如果没有标签），并查看 Azure 信息保护的策略设置。
 
@@ -60,11 +62,11 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
     
     - 如果保护已激活，会看到以下确认信息：
         
-        ![Azure RMS 的 Azure 信息保护状态](./media/info-protect-azurerms-activated.png)
+        ![Azure RMS 的 Azure 信息保护状态 - 已激活](./media/info-protect-azurerms-activated.png)
         
     - 如果保护未激活，会在状态信息中看到此反馈和激活选项：
         
-        ![Azure RMS 的 Azure 信息保护状态](./media/info-protect-azurerms-deactivated.png)
+        ![Azure RMS 的 Azure 信息保护状态 - 未激活](./media/info-protect-azurerms-deactivated.png)
 
 3. 如果保护未激活，请选择“激活”。 
 

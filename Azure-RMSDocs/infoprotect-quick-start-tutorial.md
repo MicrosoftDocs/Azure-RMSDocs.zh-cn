@@ -1,23 +1,25 @@
 ---
-title: 教程 - 编辑 Azure 信息保护策略并创建新标签 - AIP
+title: 教程 - 编辑 Azure 信息保护策略 - AIP
 description: 本入门教程适用于编辑组织的 Azure 信息保护策略，所需时间大概 15 分钟。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/29/2019
+ms.date: 04/23/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 7d9792ef45a75bdf3f234eea1ab92eaa475a8ce1
-ms.sourcegitcommit: 8fa7d2e6b3e900fec128af57105995d5fb0cc761
+ms.openlocfilehash: 0c7baa65c7f0400d94f1aa800e26a41290bb7b36
+ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58617850"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "62773562"
 ---
-# <a name="tutorial-edit-the-azure-information-protection-policy-and-create-a-new-label"></a>教程：编辑 Azure 信息保护策略并创建新标签
+# <a name="tutorial-configure-azure-information-protection-policy-settings-and-create-a-new-label"></a>教程：配置 Azure 信息保护策略设置并创建新标签
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 在本教程中，你将了解如何执行以下操作：
 > [!div class="checklist"]
@@ -162,7 +164,7 @@ ms.locfileid: "58617850"
 
 10. 在“子标签”边栏选项卡中，会看到“信用卡号”显示为“条件名称”，“出现次数”为“1”：
     
-    ![Azure 信息保护教程 - 配置信用卡条件](./media/step2-see-condition.png)
+    ![Azure 信息保护教程 - 信用卡条件摘要](./media/step2-see-condition.png)
 
 11. 对于**选择应用此标签的方式**：保留默认设置“推荐”，并且不要更改默认策略提示。 
 
