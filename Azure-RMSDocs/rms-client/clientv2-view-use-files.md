@@ -1,6 +1,6 @@
 ---
-title: 通过用于 Windows 的 Azure 信息保护统一标记客户端查看受保护的文件
-description: 若要查看需要具有 Azure 信息保护统一标记安装了客户端的受保护的文件的说明。
+title: 使用 Azure 信息保护统一标记客户端查看受保护的文件
+description: 若要查看受保护的文件，需要具有 Azure 信息保护统一标记安装查看器的说明。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
@@ -9,20 +9,20 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: 6c6e5ddd7ddc39810e05cdc8b2bf0f5b24bf8176
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 2df0bd25bf30eb94aab17a8dae89332b4e96389b
+ms.sourcegitcommit: 2fe9333c3e6c98e7dd9003c5f4cd7c1e7a48b297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60180981"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64880202"
 ---
-# <a name="user-guide-view-files-that-have-been-protected-by-rights-management"></a>用户指南：视图文件的受保护的 Rights Management
+# <a name="user-guide-view-protected-files-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：使用 Azure 信息保护统一标记客户端查看受保护的文件
 
->适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
 >
-> *说明：[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：*[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
-通常，你可以直接打开受保护文档进行查看。 例如，可双击电子邮件中的附件、双击文件资源管理器中的文件或单击文件的链接。
+通常，你可以直接打开受保护文件进行查看。 例如，可双击电子邮件中的附件、双击文件资源管理器中的文件或单击文件的链接。
 
 如果没有立即打开文件，Azure 信息保护查看器可能会将其打开。 此查看器可以打开受保护的文本文件、受保护的图像文件、受保护的 PDF 文件，以及具有 .pfile 文件扩展名的所有文件。
 

@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 04/23/2019
+ms.date: 05/07/2019
 manager: barbkess
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: e85537f705fa388aa7c2c3a838ca658213899edb
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: d7cc81a41b7515edd0df0e38d5813e0e90b2aa73
+ms.sourcegitcommit: 7f769dfa8d4758f13b2c7f83d89fabbb84716290
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181646"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65191942"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -130,7 +130,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 收集内容匹配项后，当你向下钻取到活动日志中的文件以显示活动详细信息时，这些匹配项项将显示在报表中。 也可以使用查询来查看和检索此信息。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
 
 |要求|更多信息|
@@ -192,11 +192,11 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 Azure 信息保护统一标记客户端：
 
-- 对审核和终结点发现的支持：版本 2.0.778
+- 对审核和终结点发现的支持：版本 2.0.778.0
 
 对于 Azure 信息保护客户端：
 
-- 对审核的支持：1.41.51.0
+- 对审核的支持：版本 1.41.51.0
 - 对终结点发现的支持：版本 1.48.204.0
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>配置报表的 Log Analytics 工作区
@@ -232,7 +232,7 @@ Azure 信息保护统一标记客户端：
 
 - **数据发现(预览版)**：使用此报表查看扫描程序发现的带标签文件和受支持的终结点的相关信息。
     
-    注意：发现终结点的功能正逐步面向租户推出。 当此功能面向租户推出后，你就能开始在此报表中看到受支持的终结点的数据。
+    注意：为终结点发现逐步推出到租户。 当此功能面向租户推出后，你就能开始在此报表中看到受支持的终结点的数据。
     
     你可以配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents)包含敏感信息的报表文件的 Azure 信息保护客户端。
     
@@ -268,7 +268,7 @@ Azure 信息保护的记录数据存储在下表中：**InformationProtectionLog
 
 使用以下示例了解如何使用友好的架构来创建自定义查询。
 
-##### <a name="example-1-return-all-users-who-sent-audit-data-in-the-last-31-days"></a>示例 1:返回在过去 31 天内发送审核数据的所有用户 
+##### <a name="example-1-return-all-users-who-sent-audit-data-in-the-last-31-days"></a>示例 1：返回在过去 31 天内发送审核数据的所有用户 
 
 ```
 InformationProtectionEvents 
@@ -277,7 +277,7 @@ InformationProtectionEvents
 ```
 
  
-##### <a name="example-2-return-the-number-of-labels-that-were-downgraded-per-day-in-the-last-31-days"></a>示例 2:返回在过去 31 天内按天降级的标签数 
+##### <a name="example-2-return-the-number-of-labels-that-were-downgraded-per-day-in-the-last-31-days"></a>示例 2：返回在过去 31 天内按天降级的标签数 
 
 
 ```

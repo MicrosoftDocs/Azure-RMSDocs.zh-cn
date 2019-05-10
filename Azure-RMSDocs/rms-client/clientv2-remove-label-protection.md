@@ -1,27 +1,27 @@
 ---
-title: 通过用于 Windows 的 Azure 信息保护统一标记客户端删除敏感度标签
-description: 若要从具有已标记为 Azure 信息保护的文件删除敏感度标签和保护的说明。
+title: 删除标签使用 Azure 信息保护统一标记客户端
+description: 如何使用 Azure 信息保护文件和电子邮件中删除敏感度标签和保护统一标记的客户端。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 04/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 187c36acddb8a6b2e5b1451500640dfd832a8f3f
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: a2443a632fadf51aab5bb59b9e96b7b16547807d
+ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181104"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64767727"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection"></a>用户指南：从文件和具有已标记为 Azure 信息保护的电子邮件删除标签和保护
 
->适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
 >
-> *说明：[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：*[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 Azure 信息保护统一客户端何时[在计算机上安装](install-client-app.md)，可以从文件和电子邮件中删除敏感度标签和保护。
 

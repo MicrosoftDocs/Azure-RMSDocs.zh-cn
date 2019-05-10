@@ -4,19 +4,19 @@ description: 管理员资源，其中包括有关新版本、支持选项以及�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 05/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 385b44e6f3753e7d066f63fee812c4f12b67171d
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: a80ec942197cb9502fcddbe38190d4e874575825
+ms.sourcegitcommit: 8e207e8e1459625c77e712f45798a88abe079571
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181729"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64982121"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -35,9 +35,18 @@ ms.locfileid: "60181729"
 |了解 Azure 信息保护专用术语|请在[术语](terminology.md)页上搜索术语或缩写。|
 
 ## <a name="information-about-new-releases-and-updates"></a>有关新版本和更新的信息
+
+正式的路线图，Azure 信息保护目前所在[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?&filters=Azure%20Information%20Protection%2CO365%20Information%20Protection#owRoadmapMainContent)。
+
 Azure 信息保护产品团队在[企业移动性 + 安全性博客](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Azure%20Information%20Protection)上发布主要新版本的公告。 次要版本的公告发布在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上。还可以查看 [UserVoice 网站](https://msip.uservoice.com)，了解请求获取的功能的状态。
 
-可以在 [Azure 信息保护技术博客](https://aka.ms/AIPblog)上找到其他更详细的信息。 例如，每月发布一个文档更改摘要，以告知有关任何新版本、支持声明更新以及现有版本更正和说明的信息。 这些文档更新文章的标题为：“\<月份/年份> 的 Azure 信息保护文档更新”。
+可以在 [Azure 信息保护技术博客](https://aka.ms/AIPblog)上找到其他更详细的信息。 
+
+## <a name="whats-new-in-the-documentation"></a>什么是文档中的新增功能
+
+Azure 信息保护技术博客还具有的摘要[文档更改每个月](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/bg-p/AzureInformationProtectionBlog/label-name/Docs)。 这些更改可以包括新版本，支持语句，以及更正的变化的新的和更新文档和现有版本的说明。
+
+这些文档更新文章的标题为：“\<月份/年份> 的 Azure 信息保护文档更新”。
 
 ## <a name="support-options-and-community-resources"></a>支持选项和社区资源
 以下部分提供有关支持选项和故障排除选项的信息及社区资源。

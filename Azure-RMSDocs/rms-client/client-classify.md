@@ -1,6 +1,6 @@
 ---
-title: 使用 Azure 信息保护-AIP
-description: 说明如何对文档和电子邮件进行分类。
+title: 分类-Azure 信息保护客户端
+description: 说明如何使用 Windows 的 Azure 信息保护客户端时分类文档和电子邮件。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.assetid: d65c7690-fab7-4823-845c-8c73903e9c79
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2b11a60d9bcc12cb3ad28c3c6f583f99d4664751
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: ecc7a1e0655c322151ba0c44c51592656303d857
+ms.sourcegitcommit: 79218b6b064d757459d0ffb51002959ba6d6bcb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60183815"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "64914726"
 ---
-# <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>用户指南：使用 Azure 信息保护对文件或电子邮件进行分类
+# <a name="user-guide-classify-a-file-or-email-with-the-azure-information-protection-client"></a>用户指南：对文件或电子邮件中的 Azure 信息保护客户端进行分类
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用对象：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
 >
-> *说明：[适用于 Windows 的 azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类（但不保护）。 如果还需对文档和电子邮件进行保护，请参阅[分类和保护说明](client-classify-protect.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。

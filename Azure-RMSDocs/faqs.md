@@ -4,17 +4,17 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 05/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: 75ad66eba42869e1eeebed6d3ec29253158eeb8d
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: f3d8610ff5d1bb1138d69825e37d8c6eb46f1a0a
+ms.sourcegitcommit: 7f769dfa8d4758f13b2c7f83d89fabbb84716290
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60182341"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65191919"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -64,23 +64,13 @@ ms.locfileid: "60182341"
 
 - 版本**1**，例如**1.48.204.0**，标识 Azure 信息保护客户端。
 
-- 版本**2**，例如**2.0 684.0**，标识 Azure 信息保护统一标记客户端。
+- 版本**2**，例如**2.0.778.0**，标识 Azure 信息保护统一标记客户端。
 
 ## <a name="when-is-the-right-time-to-migrate-my-labels-to-office-365"></a>何时将我的标签迁移到 Office 365？
 
-管理中心（Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心）中的敏感度标签已正式发布，但迁移 Azure 信息保护标签的选项仍处于预览状态。 标签是迁移到统一的标记存储，它们可以单独发布和随后由[客户端和服务支持统一标记](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)...
+现在，用于迁移在 Azure 门户中的标签的选项为公开发行版本，我们建议，以便您可以将标签用作敏感度标签激活迁移[客户端和服务支持统一标记](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling).
 
-- **如果刚开始接触 Azure 信息保护：**
-    
-    Azure 信息保护中的默认标签可以加快你的部署，因此，我们建议你迁移这些默认标签，并管理从一个管理中心 （Office 365 安全与合规中心，Microsoft 365 安全中心或 Microsoft 365 合规中心）。
-
-- **如果并非刚开始接触 Azure 信息保护，但是正在定义和配置要使用的标签：**
-    
-    我们建议先在 Azure 门户中完成标签配置，然后迁移这些标签。 此策略可以避免在迁移过程中重复使用标签，然后需要在其中一个管理中心进行编辑。
-
-在迁移标签之前，请确保你了解[相关注意事项以及管理中心不支持的标签设置](configure-policy-migrate-labels.md#considerations-for-unified-labels)。
-
-另请参阅[哪种客户端安装的测试的新功能？](faqs-infoprotect.md#which-client-do-i-install-for-testing-new-functionality)
+有关详细信息和说明，请参阅[如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签](configure-policy-migrate-labels.md)。
 
 ## <a name="after-ive-migrated-my-labels-which-management-portal-do-i-use"></a>迁移我的标签后，该使用哪个管理门户？
 

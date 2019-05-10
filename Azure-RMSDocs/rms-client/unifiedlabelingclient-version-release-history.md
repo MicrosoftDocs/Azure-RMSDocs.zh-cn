@@ -1,27 +1,27 @@
 ---
-title: Azure 信息保护统一标记客户端-版本发行历史记录和支持策略
+title: Azure 信息保护统一标记客户端的版本历史记录和支持策略
 description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户端的发布信息。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 05/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 1262a2f1a70002686aed0bad47354cdc5ac23bac
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 91d16668c82a542984b177f539b276d6e752194f
+ms.sourcegitcommit: 8e207e8e1459625c77e712f45798a88abe079571
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60180879"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64982157"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标记客户端-版本发行历史记录和支持策略
 
->适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
-> *说明：[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：*[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 
 您可以下载 Azure 信息保护统一标记的客户端从[Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)。
@@ -41,9 +41,15 @@ ms.locfileid: "60180879"
 
 此客户端安装 Windows 计算机的 Office 加载项：文件资源管理器的扩展和 PowerShell 模块。 此客户端的[先决条件](../requirements.md)与从 Azure 下载策略的 Azure 信息保护客户端相同。
 
-若要与 Azure 信息保护客户端比较特性和功能，请参阅[客户端功能比较](use-client.md#compare-the-clients)。
+若要比较的特性和功能使用 Azure 信息保护客户端，请参阅[比较客户端](use-client.md#compare-the-clients)。
 
-## <a name="version-20778"></a>版本 2.0.778
+## <a name="version-207790"></a>版本 2.0.779.0
+
+**发布日期**：05/01/2019
+
+此版本包含一次修复，若要解决争用条件问题，有时，任何标签显示在 Office 应用程序或文件资源管理器中。
+
+## <a name="version-207780"></a>版本 2.0.778.0
 
 **发布日期**：04/16/2019
 

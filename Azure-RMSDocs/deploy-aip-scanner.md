@@ -1,27 +1,27 @@
 ---
 title: 部署 Azure 信息保护扫描程序-AIP
-description: 如何安装、 配置和运行当前的 GA 版本的 Azure 信息保护扫描程序来发现、 分类和保护数据存储上的文件。
+description: 如何安装、 配置和运行当前版本的 Azure 信息保护扫描程序来发现、 分类和保护数据存储上的文件。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/24/2019
+ms.date: 05/06/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 75ea97484b226617c33f985a40035e3b641434c5
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 17a5406e4e7fff0d7acfa431b7a9731db19b2078
+ms.sourcegitcommit: 7f769dfa8d4758f13b2c7f83d89fabbb84716290
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "62773695"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65191904"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
 >适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2*
 >
-> *说明：[适用于 Windows 的 azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 > [!NOTE]
 > 本文适用于 Azure 信息保护扫描程序的当前正式发布版本。
@@ -142,9 +142,9 @@ ms.locfileid: "62773695"
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
     
-2. 找到**扫描仪**菜单选项，然后选择**配置文件**。
+2. 找到“扫描程序”菜单选项，然后选择“配置文件”。
 
-3. 上**Azure 信息保护-配置文件**边栏选项卡，选择**添加**:
+3. 在“Azure 信息保护 - 配置文件”边栏选项卡上，选择“添加”：
     
     ![添加 Azure 信息保护扫描程序的配置文件](./media/scanner-add-profile.png)
 
@@ -204,7 +204,7 @@ ms.locfileid: "62773695"
 
 9. 如果要添加其他数据存储库，请重复步骤 7 和 8。
 
-10. 现在，你可以关闭**添加新的配置文件**边栏选项卡中，会看到显示在个人资料名称**Azure 信息保护-配置文件**边栏选项卡，一起**计划**列显示**手动**并**强制实施**列为空。
+10. 现在可以关闭“添加新配置文件”边栏选项卡，并会看到在“Azure 信息保护 - 配置文件”边栏选项卡中显示的配置文件名称，同时“计划”列显示“手动”且“强制执行”列为空。
 
 现在可随时使用刚刚创建的扫描程序配置文件安装扫描程序。
 
@@ -380,7 +380,7 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
 - 扫描程序具有自己的默认行为：默认情况下，只有 Office 文件格式和 PDF 文档受到保护。 如果未修改注册表，则扫描程序不会保护任何其他文件类型或为其设置标签。
 
-- 如果要使用 Azure 信息保护客户端的同一默认保护行为（其中所有文件都自动以本机或常规保护的方式受到保护）：指定 `*` 通配符作为注册表项，并指定 `Default` 作为值数据。
+- 如果您希望 Azure 信息保护客户端，其中所有文件均自动都保护与本机或常规保护的默认保护行为相同：指定`*`注册表项，作为通配符`Encryption`作为值 (REG_SZ) 和`Default`作为值数据。
 
 编辑注册表时，如果 MSIPC 密钥和 FileProtection 密钥不存在，则手动创建这些密钥，并创建每个文件扩展名的密钥。
 

@@ -4,17 +4,17 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 05/09/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: ed762332e023843326fc4ec4d89e8fc44ede39be
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
-ms.translationtype: HT
+ms.openlocfilehash: f93432e245e1eafc74857a7571a4e0a4fe5d9318
+ms.sourcegitcommit: 1c2d588beccfcb13824f3d518683304018bce452
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60180802"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65493289"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -48,7 +48,7 @@ Azure 信息保护统一标签客户端从以下管理中心下载标签和策�
 
 ##### <a name="example-deployment-strategy"></a>示例部署策略：
 
-- 对于大多数用户，可以部署 Azure 信息保护统一标记客户端，因为大多数用户不需要的特性或功能仅适用于 Azure 信息保护统一标记客户端。 
+- 对于大多数用户，可以部署 Azure 信息保护统一标记客户端，因为大多数用户不需要的特性或功能仅适用于 Azure 信息保护客户端。 
     
     对于这些用户，其标记体验是 office 的非常相似，如果它们还具有运行 MacOS、 iOS 和 Android 的设备，并且这些设备具有支持敏感度标签版本。
 
@@ -102,7 +102,8 @@ Azure 信息保护统一标签客户端从以下管理中心下载标签和策�
 |支持的 cmdlet：| [AzureInformatioProtection](/powershell/module/azureinformationprotection) 记录的所有 cmdlet | Set-aipauthentication 不支持的非交互式会话 <br /><br /> Set-AIPFileClassification 和 Set-AIPFileLabel 不支持 Owner 参数或 SharePoint Server 库 <br /><br /> 此外，对于未应用标签的所有场景，都有一条“无适用标签”的注释 <br /><br /> Set-AIPFileLabel 不支持 EnableTracking 参数 <br /><br /> Get-AIPFileStatus 不从其他租户返回标签信息，也不显示 RMSIssuedTime 参数<br /><br />另外，Get-AIPFileStatus 的 LabelingMethod  参数显示“特权”、“标准”或“自动”，而不显示“手动”或“自动”。 有关详细信息，请参阅[联机文档](/powershell/module/azureinformationprotection/get-aipfilestatus)。|
 |Office 中每个操作的对齐方式提示（如果已配置）： | 频率：每个文件 <br /><br /> 降低敏感度级别 <br /><br /> 删除标签<br /><br /> 删除保护 | 频率：每个会话 <br /><br /> 降低敏感度级别<br /><br /> 删除标签|
 |删除已应用的标签操作： | 系统提示用户确认 <br /><br />下次 Office 应用程序打开文件时，不会自动应用默认标签或自动标签（如果已配置）  <br /><br />| 不提示用户确认<br /><br /> 下次 Office 应用程序打开文件时，自动应用默认标签或自动标签（如果已配置）|
-|自动分类和建议分类： | 在 Azure 门户中配置为[标签条件](../configure-policy-classification.md)，其中包含使用短语或正则表达式的内置信息类型和自定义条件 <br /><br />配置选项包括： <br /><br />- 唯一/非唯一计数 <br /><br /> - 最小计数| 在管理中心中配置，包含内置敏感信息类型和[自定义信息类型](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type)<br /><br />配置选项包括：  <br /><br />- 仅唯一计数 <br /><br />- 最小和最大计数 <br /><br />- 信息类型支持 AND 和 OR <br /><br />- 关键字字典<br /><br />- 可自定义的可信度和字符接近度|
+|自动和建议标签： | 在 Azure 门户中配置为[标签条件](../configure-policy-classification.md)，其中包含使用短语或正则表达式的内置信息类型和自定义条件 <br /><br />配置选项包括： <br /><br />- 唯一/非唯一计数 <br /><br /> - 最小计数| 在管理中心中配置，包含内置敏感信息类型和[自定义信息类型](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type)<br /><br />配置选项包括：  <br /><br />- 仅唯一计数 <br /><br />- 最小和最大计数 <br /><br />- 信息类型支持 AND 和 OR <br /><br />- 关键字字典<br /><br />- 可自定义的可信度和字符接近度|
+|自动和建议标签的可自定义策略提示： | 是 <br /><br />使用 Azure 门户将向用户的默认消息 | 否 <br /><br /> 不当前支持此选项虽然管理员中心有一个选项以提供自定义的策略提示，由统一标记客户端|
 
 有关特定的保护设置的行为差异的详细比较，请参阅[比较的保护设置的标签行为](../configure-policy-migrate-labels.md#comparing-the-behavior-of-protection-settings-for-a-label)。
 
@@ -126,9 +127,7 @@ Azure 信息保护统一标签客户端从以下管理中心下载标签和策�
 
 - 对删除保护的验证
 
-- 删除应用的标签之前的确认提示
-
-- “帮助和反馈”对话框中的“报告问题”链接
+- 出现确认提示**要删除此标签？** 为用户提供理由不使用策略设置时
 
 - 使用现有自定义属性（SyncPropertyName 和 SyncPropertyState 高级客户端设置）标记 Office 文档
 
