@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2d703eff5d31563c1c34b9937f9a1d2f45e93064
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 9d681f986028f83eb3fe59d9e295db6873828052
+ms.sourcegitcommit: 96a05d1abe20b7c588dccaecea18a73b648179b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60183768"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65535331"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
 >适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 安装 Azure 信息保护客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
@@ -486,7 +486,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 1. 在新的浏览器窗口中，登录 [Azure 门户](https://portal.azure.com/)。
 
-2. 对于与 Azure 信息保护结合使用的 Azure AD 租户，依次转到“Azure Active Directory” > “应用程序注册”。 
+2. 用于 Azure 信息保护的 Azure AD 租户，导航到**Azure Active Directory** > **应用注册 （旧版）**。 
 
 3. 选择“新应用程序注册”，以创建 Web/API 应用程序。 在“创建”标签上，指定以下值，再单击“创建”：
 
