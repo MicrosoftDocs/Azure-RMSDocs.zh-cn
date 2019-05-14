@@ -1,24 +1,24 @@
 ---
-title: 教程 - 配置 Azure 信息保护以控制信息的过度共享 - AIP
-description: 配置和查看 Azure 信息保护客户端的高级客户端设置（警告、提示提供理由或阻止邮件从 Outlook 发送）的入门教程。
+title: 教程 - 使用 Azure 信息保护控制过度共享 - AIP
+description: 入门教程，可便于配置和了解 Azure 信息保护客户端的高级客户端的实际效果，这些设置可发出警告、提示提供理由或阻止邮件从 Outlook 发送。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 04/24/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 977c26e24ebb9538216704898493f218f86a7556
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 38def86f9bbc32edc083f856cf43101890b5a22e
+ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "62773621"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64562798"
 ---
 # <a name="tutorial-configure-azure-information-protection-to-control-oversharing-of-information-using-outlook"></a>教程：配置 Azure 信息保护以使用 Outlook 控制信息的过度共享
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
-
+>
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 在本教程中，你将了解如何执行以下操作：

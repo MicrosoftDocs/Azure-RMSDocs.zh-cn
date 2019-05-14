@@ -1,25 +1,25 @@
 ---
-title: 快速入门 - 为用户配置标签，以便轻松保护包含敏感信息的电子邮件 - AIP
+title: 快速入门 - 为用户配置可便于轻松保护电子邮件的标签 - AIP
 description: 通过自动应用“不得转发”保护，为用户配置可保护电子邮件的标签。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 04/25/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 052dc5d4bbbd0a74bb92f87351ece62eb37e565b
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 629f3558d3e8b605136ea6857826763287755a79
+ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181678"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64767906"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：*[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 本快速入门介绍如何配置现有标签以自动应用“不得转发”保护设置。
 

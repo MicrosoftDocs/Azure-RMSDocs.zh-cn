@@ -1,5 +1,5 @@
 ---
-title: 快速入门 - 使用 Azure 信息保护扫描程序查找敏感信息 - AIP
+title: 快速入门 - 使用 Azure 信息保护扫描程序查找敏感信息
 description: 使用 Azure 信息保护扫描程序查找在本地存储的文件中的敏感信息。
 author: cabailey
 ms.author: cabailey
@@ -8,18 +8,18 @@ ms.date: 04/17/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 6d7de0658aa2b14180ef61caddae0aa40e4c7bd0
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 657d85e90ffe4192514101595815f5110564d761
+ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60184053"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64767784"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：*[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 本快速入门教程介绍如何安装和配置 Azure 信息保护扫描程序，以查找存储在本地数据存储中的文件中的敏感信息。 例如，本地文件夹、网络共享或 SharePoint Server。
 

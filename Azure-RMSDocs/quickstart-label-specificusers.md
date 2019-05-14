@@ -1,6 +1,6 @@
 ---
 title: 快速入门 - 为特定用户新建 Azure 信息保护标签 - AIP
-description: 使用范围策略，为特定用户创建和配置可分类文档和电子邮件的新标签。
+description: 使用范围策略，创建和配置为一部分用户分类文档和电子邮件的新标签。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
@@ -8,18 +8,18 @@ ms.date: 04/17/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 623f57ac5aae6980f8c7e0a9deee4aeca0a268a2
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 15359fac56b4bef68ae9668a31c82a8b742b208f
+ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60183841"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64767847"
 ---
 # <a name="quickstart-create-a-new-azure-information-protection-label-for-specific-users"></a>快速入门：为特定用户创建新的 Azure 信息保护标签
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：*[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 本教程介绍如何创建这样一个新标签：只有特定用户才能查看该标签并应用它来分类并保护文档和电子邮件。
 

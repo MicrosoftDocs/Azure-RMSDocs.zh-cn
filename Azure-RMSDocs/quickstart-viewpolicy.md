@@ -1,19 +1,19 @@
 ---
-title: 快速入门 - 在 Azure 门户中开始使用 Azure 信息保护 - AIP
+title: 快速入门 - 在 Azure 门户中查看 Azure 信息保护 - AIP
 description: 如果你的组织刚刚开始使用 Azure 信息保护，请从此处开始将服务添加到 Azure 门户，确认已激活保护服务并查看标签和策略设置。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 04/25/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: e41af7f6bcf8734377404b0dabcdb059d2d91bc1
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 099d35d7d4862aff3006b1d6cc57423b898234c4
+ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "62773572"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64767891"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
