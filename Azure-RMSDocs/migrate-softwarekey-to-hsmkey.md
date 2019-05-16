@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a9651e1c44f9f6fb59fb8a48fb4435212c827968
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 87edfae6959f5ce6c037379e7564449d53405aae
+ms.sourcegitcommit: 383b1fa5e65255420d7ec6fbe2f9b17f4439e33e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60184070"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708937"
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>步骤 2：软件保护密钥到 HSM 保护密钥的迁移
 
@@ -29,7 +29,7 @@ ms.locfileid: "60184070"
 
 此过程分为四部分，可将 AD RMS 配置导入到 Azure 信息保护，以在 Azure 密钥保管库中生成由你管理的 Azure 信息保护租户密钥 (BYOK)。
 
-必须首先从 AD RMS 配置数据中提取服务器许可方证书 (SLC) 密钥并将该密钥传送到本地 Thales HSM，然后打包 HSM 密钥并将其传送到 Azure 密钥保管库，之后授权 Azure 信息保护中的 Azure Rights Management 服务可以访问密钥保管库，最后导入配置数据。
+必须首先从 AD RMS 配置数据中提取服务器许可方证书 (SLC) 密钥并将密钥传送到本地 nCipher HSM，然后打包和将 HSM 密钥传送到 Azure 密钥保管库，然后授权 Azure Rights Management 服务Azure 信息保护来访问密钥保管库，然后导入配置数据。
 
 因为你的 Azure 信息保护租户密钥将由 Azure 密钥保管库存储并进行管理，所以除 Azure 信息保护以外，此部分的迁移还需要 Azure 密钥保管库中的管理。 如果 Azure Key Vault 由你以外的其他管理员为贵组织进行管理，则你必须与该管理员协作完成这些过程。
 
@@ -74,7 +74,7 @@ ms.locfileid: "60184070"
 
     - 如果运行此命令（通过使用 TpdPassword 参数全称或 pwd 参数简称）时未指定密码，那么系统将提示你指定它。
 
-3. 在同一个未连接工作站上，按照 Thales 文档附加并配置 Thales HSM。 通过使用以下命令现可以将密钥导入到附加的 Thales HSM 中，需要将命令中的 ContosoTPD.pem 替换为自己的文件名称：
+3. 在同一个断开连接的工作站上附加并配置你 nCipher HSM 中，根据 nCipher 文档。 你可以现在将密钥导入到你附加 nCipher HSM 通过使用以下命令需要替换为自己的文件名称中的 ContosoTPD.pem:
 
         generatekey --import simple pemreadfile=e:\ContosoTPD.pem plainname=ContosoBYOK protect=module ident=contosobyok type=RSA
 
@@ -103,7 +103,7 @@ ms.locfileid: "60184070"
 
     **密钥路径：C:\ProgramData\nCipher\Key Management Data\local\key_simple_contosobyo**
 
-此输出确认现已将私钥迁移到本地 Thales HSM 设备，附有保存到一个密钥的加密副本（在本例中为“key_simple_contosobyok”）。 
+此输出确认私钥现在迁移到将在本地 nCipher HSM 设备与保存到 （在本例中为"key_simple_contosobyok"） 的密钥的加密副本。 
 
 现已提取 SLC 密钥，并将其导入到本地 HSM，可以打包 HSM 保护的密钥并将其传送到 Azure 密钥保管库。
 

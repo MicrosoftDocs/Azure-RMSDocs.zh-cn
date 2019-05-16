@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5fd82546ccf0334ea244226c143426ab3e0da93b
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: c1ae08971442fcc943f8473bbcbf74681c027702
+ms.sourcegitcommit: 383b1fa5e65255420d7ec6fbe2f9b17f4439e33e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181542"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708860"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
 
@@ -61,7 +61,7 @@ ms.locfileid: "60181542"
 ## <a name="backup-and-recover-your-tenant-key"></a>备份和恢复你的租户密钥
 由于是你本人管理自己的租户密钥，因此你需负责备份 Azure 信息保护使用的密钥。 
 
-如果在 Thales HSM 中本地生成了租户密钥：若要备份此密钥，需备份已标记化密钥文件、体系文件和管理员卡。 将密钥传送到 Azure Key Vault 时，该服务将保存已标记化的密钥文件，以防出现任何服务节点故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将此标记化密钥文件作为完全备份。 例如，如果需要密钥的明文副本以在 Thales HSM 外部使用，则 Azure Key Vault 无法为你检索该副本，因为它仅有不可恢复的副本。
+如果在 nCipher HSM 中生成在本地，你的租户密钥：若要备份此密钥，需备份已标记化密钥文件、体系文件和管理员卡。 将密钥传送到 Azure Key Vault 时，该服务将保存已标记化的密钥文件，以防出现任何服务节点故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将此标记化密钥文件作为完全备份。 例如，如果您曾需要你的密钥以在 nCipher HSM 外部使用的纯文本副本，Azure 密钥保管库不能为你检索该，因为它有只不可恢复的副本。
 
 Azure Key Vault 具有一个[备份 cmdlet](/powershell/module/az.keyvault/backup-azkeyvaultkey)，可通过将其下载并存储到一个文件中来备份密钥。 由于下载的内容已加密，因此它不能在 Azure Key Vault 外使用。 
 

@@ -4,28 +4,24 @@ description: 为支持统一标签的客户端和服务将 Azure 信息保护标
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/08/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 89a8c1045fcf203ec95c5e79ed80588dfe167459
-ms.sourcegitcommit: 9c6f36a291dd50c0f3806a4c9660895613c6ad72
+ms.openlocfilehash: 237efa8cfb6b8a4ce8c33b7e332b0e164211942a
+ms.sourcegitcommit: 383b1fa5e65255420d7ec6fbe2f9b17f4439e33e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65213072"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708946"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-office-365-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签
 
 >适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
-
-> [!IMPORTANT]
->
-> 此功能现已在一般情况下为所有租户的可用性尽管仍可能会看到单词**预览版**几周内的 Azure 门户中。
 
 迁移在 Azure 信息保护标签，以便可以将它们用作由的敏感度标签[客户端和服务支持统一标记](#clients-and-services-that-support-unified-labeling)。
 

@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 525637a52a71e4bdc48e8f0665ef73c70a5a18ff
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 92f282a2cf785c82c87d3ffbe8b47317a1ca1956
+ms.sourcegitcommit: 383b1fa5e65255420d7ec6fbe2f9b17f4439e33e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181066"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708844"
 ---
 # <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Azure 信息保护的符合性和支持信息
 
@@ -32,7 +32,7 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 - 使用特定于客户的根密钥（使用 RSA 2048 位）保护所有用于 Azure 信息保护的加密密钥。 RSA 1024 位也支持向后兼容。 [详细信息](./how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)
 
-- 特定于客户的根密钥由 Microsoft 托管，或由 Thales HSM 中的客户通过使用“[自带密钥](plan-implement-tenant-key.md)”(BYOK) 进行预配。 Azure 信息保护还支持本地密钥的有限功能 - 使用“[保留自己的密钥](configure-adrms-restrictions.md)”(HYOK) 用于指示其不能使用基于云的密钥保护的要求影响的内容。
+- 特定于客户的根项已由 Microsoft 管理或由 nCipher HSM 中的客户通过使用预配"[自带密钥](plan-implement-tenant-key.md)"(BYOK)。 Azure 信息保护还支持本地密钥的有限功能 - 使用“[保留自己的密钥](configure-adrms-restrictions.md)”(HYOK) 用于指示其不能使用基于云的密钥保护的要求影响的内容。
 
 - Azure 信息保护服务托管在全球各地的区域数据中心内。 Azure 信息保护密钥和策略始终保留在最初的部署区域中。
  

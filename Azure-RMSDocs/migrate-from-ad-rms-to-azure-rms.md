@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 264de1992659b2bd8c7464248704b514ae764274
-ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
+ms.openlocfilehash: c1fb307d06c277dd6f515adbff35a844f65f77cc
+ms.sourcegitcommit: 383b1fa5e65255420d7ec6fbe2f9b17f4439e33e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64768204"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708913"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -164,11 +164,11 @@ ms.locfileid: "64768204"
 
     - **HSM 保护密钥到 HSM 保护密钥的迁移**：
 
-        将 HSM 存储的 AD RMS 密钥迁移到客户管理的 Azure 信息保护租户密钥（“自带密钥”方案，简称 BYOK）。 这需要执行附加步骤，以将密钥从本地 Thales HSM 传送到 Azure 密钥保管库并授权 Azure Rights Management 服务使用此密钥。 现有的 HSM 保护密钥必须受模块保护；Rights Management Services 不支持 OCS 保护密钥。
+        将 HSM 存储的 AD RMS 密钥迁移到客户管理的 Azure 信息保护租户密钥（“自带密钥”方案，简称 BYOK）。 这需要附加步骤以将密钥从你的本地 nCipher HSM 传输到 Azure 密钥保管库并授权 Azure Rights Management 服务使用此密钥。 现有的 HSM 保护密钥必须受模块保护；Rights Management Services 不支持 OCS 保护密钥。
 
     - **软件保护密钥到 HSM 保护密钥的迁移**：
 
-        AD RMS 中集中管理的基于密码的密钥迁移到由客户管理的 Azure 信息保护租户密钥（“携带你自己的密钥”或 BYOK 方案）。 这需要的配置最多，因为必须先提取软件密钥并将其导入到本地 HSM 中，然后再执行附加步骤以将该密钥从本地 Thales HSM 传送到 Azure 密钥保管库 HSM，并授权 Azure Rights Management 服务使用存储该密钥的密钥保管库。
+        AD RMS 中集中管理的基于密码的密钥迁移到由客户管理的 Azure 信息保护租户密钥（“携带你自己的密钥”或 BYOK 方案）。 这需要配置最多，因为必须先提取软件密钥和其导入到本地 HSM，然后再执行其他步骤以将密钥从你的本地 nCipher HSM 传输到 Azure 密钥保管库 HSM，并授权 Azure Rights若要使用存储密钥的密钥保管库的管理服务。
 
 - **步骤 5.激活 Azure Rights Management 服务**
 
