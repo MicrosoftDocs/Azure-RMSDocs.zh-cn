@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 297608ce7fd64170e9aaa31ab39f0b0e151d7538
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 4f1177df3165a811668ae03e45da02879ff7c872
+ms.sourcegitcommit: 383b1fa5e65255420d7ec6fbe2f9b17f4439e33e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60184257"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708893"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -66,9 +66,9 @@ ms.locfileid: "60184257"
 
 - AD RMS 数据库中的密码保护。 这是默认设置。
 
-- 通过使用 Thales 硬件安全模块 (HSM) 进行 HSM 保护。
+- 通过使用 nCipher 硬件安全模块 (HSM) 进行 HSM 保护。
 
-- 通过使用 Thales 以外的供应商提供的硬件安全模块 (HSM) 进行 HSM 保护。
+- 通过使用来自 nCipher 以外的供应商的硬件安全模块 (HSM) 进行 HSM 保护。
 
 - 通过使用外部加密提供程序进行密码保护。
 
@@ -82,10 +82,10 @@ ms.locfileid: "60184257"
 |当前的 AD RMS 部署|选择的 Azure 信息保护租户密钥拓扑|迁移说明|
 |-----------------------------|----------------------------------------|--------------------------|
 |AD RMS 数据库中的密码保护|由 Microsoft 管理|请参阅此表后面的 **软件保护密钥到软件保护密钥**的迁移过程。<br /><br />这是最简单的迁移路径，只需要将配置数据传送到 Azure 信息保护。|
-|通过使用 Thales nShield 硬件安全模块 (HSM) 进行 HSM 保护 |由客户管理 (BYOK)|请参阅此表后面的**HSM 保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 Azure Key Vault BYOK 工具集和以下三组步骤：首先将密钥从本地 HSM 传输到 Azure Key Vault HSM，然后授权 Azure 信息保护中的 Azure Rights Management 服务使用租户密钥，最后将配置数据传输到 Azure 信息保护。|
+|通过使用 nCipher nShield 硬件安全模块 (HSM) 进行 HSM 保护 |由客户管理 (BYOK)|请参阅此表后面的**HSM 保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 Azure Key Vault BYOK 工具集和以下三组步骤：首先将密钥从本地 HSM 传输到 Azure Key Vault HSM，然后授权 Azure 信息保护中的 Azure Rights Management 服务使用租户密钥，最后将配置数据传输到 Azure 信息保护。|
 |AD RMS 数据库中的密码保护|由客户管理 (BYOK)|请参阅此表后面的**软件保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 Azure 密钥保管库 BYOK 工具集和以下四组步骤：首先提取软件密钥并将其导入到本地 HSM，然后将密钥从本地 HSM 传送到 Azure 信息保护 HSM，之后将密钥保管库数据传送到 Azure 信息保护，最后将配置数据传送到 Azure 信息保护。|
-|通过使用 Thales 以外的供应商提供的硬件安全模块 (HSM) 进行 HSM 保护 |由客户管理 (BYOK)|与 HSM 供应商联系，获取有关如何将密钥从此 HSM 传输到 Thales nShield 硬件安全模块 (HSM) 的说明。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
-|通过使用外部加密提供程序进行密码保护|由客户管理 (BYOK)|与加密提供程序的供应商联系以获取有关如何将密钥传输到 Thales nShield 硬件安全模块 (HSM) 的说明。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
+|通过使用来自 nCipher 以外的供应商的硬件安全模块 (HSM) 进行 HSM 保护 |由客户管理 (BYOK)|联系你的 HSM 的说明如何将密钥从此 HSM 传输到 nCipher nShield 硬件安全模块 (HSM) 供应商。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
+|通过使用外部加密提供程序进行密码保护|由客户管理 (BYOK)|与加密提供程序说明如何将密钥传送到 nCipher nShield 硬件安全模块 (HSM) 供应商联系。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
 
 如果拥有无法导出的 HSM 保护密钥，仍可通过将 AD RMS 群集配置为只读模式来迁移到 Azure 信息保护。 在只读模式下，仍可打开之前受保护的内容，但新的受保护内容使用由你 (BYOK) 或 Microsoft 管理的新租户密钥。 有关详细信息，请参阅[可更新 Office 以支持从 AD RMS 到 Azure RMS 的迁移](https://support.microsoft.com/help/4023955/an-update-is-available-for-office-to-support-migrations-from-ad-rms-to)。
 
