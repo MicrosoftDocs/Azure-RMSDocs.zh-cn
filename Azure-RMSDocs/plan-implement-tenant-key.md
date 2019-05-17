@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 26999c8fdd079c7a34d39415d8beba6763a06f68
-ms.sourcegitcommit: e0ce23467744ec6a4da49081461a459bc37c7d78
+ms.openlocfilehash: 865334193d39a048ac48b6233005673f2be43f03
+ms.sourcegitcommit: 3e948723644f19c935bc7111dec1cc54a1ff0231
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65443273"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65780905"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
@@ -35,7 +35,7 @@ ms.locfileid: "65443273"
 |业务要求|建议的租户密钥拓扑|
 |------------------------|-----------------------------------|
 |无需特殊的硬件、额外的软件或 Azure 订阅即可快速部署 Azure 信息保护。<br /><br />例如：测试环境以及当组织没有针对密钥管理的法规要求时。|由 Microsoft 管理|
-|合规性规定、额外的安全性以及对所有生命周期操作的控制。 <br /><br />例如：密钥必须由硬件安全模块 (HSM) 保护。|BYOK|
+|符合性规定和对所有生命周期操作的控制。 <br /><br />例如：密钥必须由硬件安全模块 (HSM) 保护。|BYOK|
 
 
 如有需要，可以在部署后通过使用 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) cmdlet 来更改租户密钥拓扑。

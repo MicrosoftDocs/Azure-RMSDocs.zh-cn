@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 11/08/2018
 ms.author: tommos
-ms.openlocfilehash: 990f729edaa0a2e212812f84fc5a4c63f82e37fb
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 21148e9293c3be1162028a6cf7e26c30fb52a15f
+ms.sourcegitcommit: 2d08bee51c26af3159bd52456e12e0166c8369c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60175332"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65822180"
 ---
 # <a name="microsoft-information-protection-sdk---metadata"></a>Microsoft 信息保护 SDK 的元数据
 
@@ -39,10 +39,10 @@ MIP SDK 适用以下组的元数据。
 | **已启用**   | True 或 False                 | 此属性指示是否为数据项启用此组键 / 值对表示的分类。 DLP 产品通常会验证存在此项以识别分类标签。 | 是       |
 | **SiteId**    | GUID                          | Azure Active Directory 租户 ID                                                                                                                                                                                                                   | 是       |
 | **ActionId**  | GUID                          | ActionID 被更改每个时间设置一个标签。 审核日志将包含旧的和新允许的标记数据项目的活动链接的 actionID。                                                                                 | 是       |
-| **方法**    | Standard、 特权或自动        | 通过 mip::AssignmentMethod 设置                                                                                                                                                                                                                 | 否        |
+| **方法**    | 标准或特权        | 通过设置[mip::AssignmentMethod](reference/mip-enums-and-structs.md#assignmentmethod)。 标准意味着默认情况下或自动应用标签。 特权意味着手动选择标签。                                                                                                                                                                                                                 | 否        |
 | **SetDate**   | 扩展的 ISO 8601 日期格式 | 设置标签时的时间戳。                                                                                                                                                                                                              | 否        |
 | **名称**      | string                        | 标签在租户中的唯一名称。 它不一定与显示名称。                                                                                                                                                              | 否      |
-| **ContentBits** | integer | 位掩码，用于描述标记的内容的类型应应用于文件。 CONTENT_HEADER = 0X1、 CONTENT_FOOTER = 0X2、 水印 = 0X4
+| **ContentBits** | integer | 位掩码，用于描述标记的内容的类型应应用于文件。 CONTENT_HEADER = 0X1、 CONTENT_FOOTER = 0X2、 水印 = 0X4、 加密 = 0X8
  | 否 |
 
 应用于一个文件时，结果是类似于下表。

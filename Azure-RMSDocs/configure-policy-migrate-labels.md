@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 237efa8cfb6b8a4ce8c33b7e332b0e164211942a
-ms.sourcegitcommit: 383b1fa5e65255420d7ec6fbe2f9b17f4439e33e
+ms.openlocfilehash: b4c702ba84567ba51a29a2bf98c1650dd8f835b6
+ms.sourcegitcommit: 3e948723644f19c935bc7111dec1cc54a1ff0231
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708946"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65780835"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-office-365-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签
 
@@ -172,7 +172,7 @@ Azure 信息保护客户端可以使用列出的所有标签设置，而不会�
 
 ##### <a name="services-that-currently-support-unified-labeling-include"></a>当前支持统一标签的服务包括：
 
-- Windows Defender Azure 高级威胁防护
+- Microsoft Defender 高级威胁防护
 
 - Microsoft Cloud App Security
     

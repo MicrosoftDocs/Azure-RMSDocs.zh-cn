@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 05/07/2019
+ms.date: 05/17/2019
 manager: barbkess
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: d7cc81a41b7515edd0df0e38d5813e0e90b2aa73
-ms.sourcegitcommit: 7f769dfa8d4758f13b2c7f83d89fabbb84716290
+ms.openlocfilehash: 625fcf1474ebd1de1c087fe62a213590014dce13
+ms.sourcegitcommit: 3e948723644f19c935bc7111dec1cc54a1ff0231
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65191942"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65780882"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -35,7 +35,7 @@ ms.locfileid: "65191942"
 
 - 确定包含敏感信息且若未保护则可能给组织带来风险的文档，并按照以下建议缓解风险。
 
-你看到的数据是从 Azure 信息保护客户端和 Azure 信息保护扫描程序、运行 [Windows Defender 高级威胁防护 (Windows Defender ATP)](/windows/security/threat-protection/windows-defender-atp/overview) 的 Windows 计算机以及[支持统一标记的客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)汇总的。
+您看到的数据聚合从你的 Azure 信息保护客户端和 Azure 信息保护扫描程序，从运行的 Windows 计算机[Microsoft Defender 高级威胁防护 (Microsoft Defender ATP)](/windows/security/threat-protection/microsoft-defender-atp/overview)，并从[支持统一进行标记的客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)。
 
 例如，你将能够看到以下数据：
 
@@ -88,7 +88,7 @@ ms.locfileid: "65191942"
 有关详细信息，请参阅以下博客文章： 
 - [Microsoft 信息保护中有关所有数据的数据发现、报告和分析](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)
 
-- [通过 Azure 信息保护和 Windows Defender ATP 发现和保护敏感数据](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Discover-and-protect-sensitive-data-through-Azure-Information/ba-p/297292)
+- [发现和保护敏感数据通过 Azure 信息保护和 Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Discover-and-protect-sensitive-data-through-Azure-Information/ba-p/297292)
 
 ### <a name="information-collected-and-sent-to-microsoft"></a>收集和发送到 Microsoft 的信息
 
@@ -130,14 +130,14 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 收集内容匹配项后，当你向下钻取到活动日志中的文件以显示活动详细信息时，这些匹配项项将显示在报表中。 也可以使用查询来查看和检索此信息。
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>先决条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
 
 |要求|更多信息|
 |---------------|--------------------|
 |包含 Log Analytics 且用于与 Azure 信息保护相同的租户的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
 |Azure 信息保护客户端或 Azure 信息保护统一标记客户端|如果没有这些客户端，您可以下载并安装它们从[Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)。 <br /><br /> 请确保你具有要支持的最新版本[所有功能](#features-that-require-a-minimum-version-of-the-client)用于 Azure 信息保护分析。|
-|对于“发现和风险”报表： <br /><br />-若要显示在本地数据存储中的数据，你已部署 Azure 信息保护扫描程序至少一个的实例 <br /><br />- 若要显示 Windows 10 计算机中的数据，这些计算机必须为最低版本 1809，你在使用 Windows Defender 高级威胁防护 (Windows Defender ATP)，并且你已从 Windows Defender 安全中心启用 Azure 信息保护集成功能|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关从 Windows Defender 安全中心配置和使用 Azure 信息保护集成功能的信息，请参阅 [Windows 中的信息保护概述](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview)。|
+|对于“发现和风险”报表： <br /><br />-若要显示在本地数据存储中的数据，你已部署 Azure 信息保护扫描程序至少一个的实例 <br /><br />-若要显示 Windows 10 计算机中的数据必须是最小的 1809年生成、 使用 Microsoft Defender 高级威胁防护 (Microsoft Defender ATP) 和已启用 microsoft Azure 信息保护集成功能Defender 安全中心|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关配置和使用来自 Microsoft Defender 安全中心的 Azure 信息保护集成功能的信息，请参阅[Windows 概述中的信息保护](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。|
 |对于“建议”报告： <br /><br />-若要从 Azure 门户中，如下的建议的操作添加新的数据存储库，你必须使用 Azure 信息保护扫描程序的最新正式发布版本 |若要部署扫描程序，请参阅[部署 Azure 信息保护扫描程序以自动分类和保护文件](deploy-aip-scanner.md)。|
 
 ### <a name="permissions-required-for-azure-information-protection-analytics"></a>Azure 信息保护分析必备的先决条件
@@ -231,8 +231,6 @@ Azure 信息保护统一标记客户端：
     此报表有“列”选项，可用于显示比默认显示更多的活动信息。 还可以选择它来显示“活动详细信息”，方便查看文件相关的更多详细信息。
 
 - **数据发现(预览版)**：使用此报表查看扫描程序发现的带标签文件和受支持的终结点的相关信息。
-    
-    注意：为终结点发现逐步推出到租户。 当此功能面向租户推出后，你就能开始在此报表中看到受支持的终结点的数据。
     
     你可以配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents)包含敏感信息的报表文件的 Azure 信息保护客户端。
     

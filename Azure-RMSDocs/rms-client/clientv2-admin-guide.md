@@ -4,23 +4,23 @@ description: 说明和管理员的企业网络上的信息面向负责部署 Azu
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: 7caa35896e0dcfd3cd6dc1cf407da87e41e71ef5
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 6564980da8ad4067d83c408c2baf0afd8ab5c181
+ms.sourcegitcommit: 2d08bee51c26af3159bd52456e12e0166c8369c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60183159"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65822223"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标记的客户端管理员指南
 
 >适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
-> *说明：[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：*[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 在本指南中使用的信息，如果你负责 Azure 信息保护统一标记客户端上的企业网络，或如果您希望更多技术信息不是处于[Azure 信息保护统一标记客户端用户指南](clientv2-user-guide.md)。 
 
@@ -156,9 +156,11 @@ Azure 信息保护统一标记客户端支持 Office 365 支持的相同语言�
 
 Azure 信息保护团队会定期更新 Azure 信息保护统一标记的客户端的新功能和修补程序。 公告会发布到团队的 [Yammer 网站](https://www.yammer.com/AskIPTeam)。
 
-如果使用 Windows 更新，Azure 信息保护 Azure 信息保护统一标记客户端自动升级此客户端，而不考虑如何安装客户端的正式发布版本。 新客户端版本会在发布后的几周内发布到目录中。
+如果使用 Windows 更新，Azure 信息保护统一标记客户端自动升级此客户端，而不考虑如何安装客户端的正式发布版本。 新客户端版本会在发布后的几周内发布到目录中。
 
 也可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载新版本，手动升级客户端。 然后，安装新版本来升级客户端。 您必须使用此方法升级预览版本，如果要从 Azure 信息保护客户端升级。
+
+如果要从 Windows 7 上的 Azure 信息保护客户端升级，任何 Office 应用程序将自动重新启动客户端升级过程中。 此自动重启不适用于更高版本的操作系统，或如果从统一标记客户端的较旧版本进行升级。
 
 手动升级时，只有当要更改安装方法时，才需要先卸载旧版本。 例如，从客户端的可执行文件 (.exe) 版本更改为客户端的 Windows 安装程序 (.msi) 版本。 或当需要安装旧版客户端时。 例如，出于测试目的已安装当前预览版，现在需要还原到当前正式版本。
 

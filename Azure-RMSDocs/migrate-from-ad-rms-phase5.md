@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b5b7e9c79ec533ef72da1b094347556770c50e71
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 15b8f2df4fe79b62073955b7c9626fe21e8ec201
+ms.sourcegitcommit: 3e948723644f19c935bc7111dec1cc54a1ff0231
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60184104"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65780875"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
@@ -47,6 +47,20 @@ ms.locfileid: "60184104"
 
 >[!IMPORTANT]
 > 此迁移结束时，AD RMS 群集不能与 Azure 信息保护和自控密钥 (HYOK) 选项结合使用。 如果决定要对 Azure 信息保护标签使用 HYOK，由于重定向现均已到位，因此所用 AD RMS 群集中的授权 URL 必须与已迁移群集中的授权 URL 不同。
+
+### <a name="addition-configuration-for-computers-that-run-office-2010"></a>运行 Office 2010 的计算机的其他配置
+
+如果迁移运行 Office 2010 的客户端，用户可能会遇到延迟在我们的 AD RMS 服务器取消预配后打开受保护的内容。 或者，用户可能会看到，没有凭据才能打开受保护的内容的消息。 若要解决这些问题，创建的网络重定向为这些计算机，将 AD RMS URL FQDN 重定向到的本地 IP 地址 (127.0.0.1) 的计算机。 通过配置每台计算机上的本地 hosts 文件或通过使用 DNS，你可以执行此操作。
+
+通过本地主机文件的重定向：
+
+- 在本地主机文件中，添加以下行替换为`<AD RMS URL FQDN>`与你的 AD RMS 群集，而无需前缀或网页的值：
+    
+        127.0.0.1 <AD RMS URL FQDN>
+
+通过 DNS 重定向：
+    
+- 为 AD RMS URL FQDN，它具有 IP 地址 127.0.0.1 创建新的主机 (A) 记录。
 
 ## <a name="step-11-complete-client-migration-tasks"></a>步骤 11： 完成客户端迁移任务
 
