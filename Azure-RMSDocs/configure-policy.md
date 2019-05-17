@@ -3,7 +3,7 @@ title: 配置 Azure 信息保护策略 - AIP
 description: 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。
 author: cabailey
 ms.author: cabailey
-ms.date: 04/17/2019
+ms.date: 05/17/2019
 manager: barbkess
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3849a676473d05d5440a77288b8e9478270828ef
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: ce3464a1035c79655709d47ea8f64a885602d994
+ms.sourcegitcommit: 2d08bee51c26af3159bd52456e12e0166c8369c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60180216"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65822190"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
 >适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。 然后将此策略下载到已安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#azure-信息保护客户端) 的计算机。
 
@@ -156,9 +156,11 @@ Azure 信息保护支持不同级别的订阅：
 
 如果标签应用于文档或电子邮件，标签实际上存储在元数据中，这样应用程序和服务就能读取标签了：
 
-- 在电子邮件中，此信息存储在 x 标头：msip_labels:MSIP_Label_\<GUID>_Enabled=True;** 
+- 在电子邮件中，此信息存储在 x 标头：**msip_labels:MSIP_Label_\<GUID>_Enabled=True;** 
 
 - 对于 Word 文档（.doc 和 .docx）、Excel 电子表格（.xls 和 .xlsx）、PowerPoint 演示文稿（.ppt 和 .pptx）以及 PDF 文档，此元数据存储在以下自定义属性中：MSIP_Label_\<GUID>_Enabled=True  
+
+对于电子邮件，发送电子邮件时存储的标签信息。 对于文档，保存文件时存储的标签信息。 
 
 若要确定标签 GUID，请在 Azure 门户中查看或配置 Azure 信息保护策略时，在“标签”边栏选项卡上找到“标签 ID”值。 对于应用了标记的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 来标识 GUID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 GUID。
 
