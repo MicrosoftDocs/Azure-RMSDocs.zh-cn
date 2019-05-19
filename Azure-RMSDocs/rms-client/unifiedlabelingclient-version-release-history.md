@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/02/2019
+ms.date: 05/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 91d16668c82a542984b177f539b276d6e752194f
-ms.sourcegitcommit: 8e207e8e1459625c77e712f45798a88abe079571
+ms.openlocfilehash: 37ecdd3862ee6ae83526979f132ff213b66dcece
+ms.sourcegitcommit: c0d8b7239fc16e66b51f736636da7f7212f72dd6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64982157"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837777"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标记客户端-版本发行历史记录和支持策略
 
@@ -25,6 +25,10 @@ ms.locfileid: "64982157"
 
 
 您可以下载 Azure 信息保护统一标记的客户端从[Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)。
+
+通常几周的一小段延迟后, 的最新正式发布版本还包括在产品名称为 Microsoft 更新目录**Microsoft Azure 信息保护** >  **Microsoft Azure 信息保护统一标记客户端**，和的分类**更新**。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
+
+有关详细信息，请参阅[升级和维护 Azure 信息保护统一标记的客户端](clientv2-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-unified-labeling-client)。
 
 ### <a name="servicing-information-and-timelines"></a>维护信息和日程表
 
@@ -73,7 +77,7 @@ ms.locfileid: "64982157"
 
 - 以下标签和策略设置：
     - 视觉标记（页眉、页脚、水印）
-    - 默认标签
+    - 默认标签的当前限制为没有子标签的标签
     - 应用“不要转发”且仅在 Outlook 中显示的标签
     - 用户降低分类级别或删除标签的理由提示
     - 标签的颜色
