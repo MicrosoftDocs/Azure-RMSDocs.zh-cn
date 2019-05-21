@@ -4,17 +4,17 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/24/2019
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 1e37b45cb6894ddee9630f53c52018f8a0956357
-ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
+ms.openlocfilehash: fb689468efe091caecd3bfac076bdf85ca6aef58
+ms.sourcegitcommit: 8532536b778a26b971dba89436772158869ab84d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64766951"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934716"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
