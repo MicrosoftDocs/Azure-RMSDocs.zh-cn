@@ -4,16 +4,16 @@ description: 通过自动应用“不得转发”保护，为用户配置可保�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/25/2019
+ms.date: 05/20/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 629f3558d3e8b605136ea6857826763287755a79
-ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
+ms.openlocfilehash: 1485020b6edd47aae75486bf3a8215cf5cb14a1b
+ms.sourcegitcommit: 8532536b778a26b971dba89436772158869ab84d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64767906"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934993"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件
 

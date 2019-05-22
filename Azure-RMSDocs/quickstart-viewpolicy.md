@@ -4,16 +4,16 @@ description: 如果你的组织刚刚开始使用 Azure 信息保护，请从此
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/25/2019
+ms.date: 05/20/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 099d35d7d4862aff3006b1d6cc57423b898234c4
-ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
+ms.openlocfilehash: d2d3793cad1e1d53301f50a7966545bf19a6c851
+ms.sourcegitcommit: 8532536b778a26b971dba89436772158869ab84d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64767891"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65935018"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
@@ -130,7 +130,7 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
     
 2. 在“配置要对信息保护最终用户显示和应用的设置”部分中的标签后面，你将看到策略设置。 例如，未设置默认标签，文档和电子邮件无需具备标签，且用户在更改标签时无需提供理由：
     
-    ![Azure 信息保护策略全局设置](./media/info-protect-policy-default-settingsv3.png)
+    ![Azure 信息保护策略全局设置](./media/defaultsettings-aip.png)
 
 3. 由于只查看设置，因此可以在门户中关闭已打开的任何边栏选项卡。
 
