@@ -4,27 +4,27 @@ description: 在 Azure 信息保护策略中配置适用于所有用户、所有
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 0c77eb5df06ca3a7ba78b4671cc9e52cdb89a34d
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 5eac6cd86ea5d413429c02ad37e0a5e186ab6f22
+ms.sourcegitcommit: 8532536b778a26b971dba89436772158869ab84d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60180077"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934661"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
 >适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 除了信息保护栏标题和工具提示，Azure 信息保护策略中还有一些可以在标签中单独配置的设置：
 
-![Azure 信息保护策略全局设置](./media/info-protect-policy-default-settingsv3.png)
+![Azure 信息保护策略全局设置](./media/defaultsettings-aip.png)
 
 请注意，策略设置的默认值可能不同，具体取决于购买 Azure 信息保护订阅的时间。 还可以使用[自定义客户端设置](./rms-client/client-admin-guide-customizations.md)进行某些设置。
 

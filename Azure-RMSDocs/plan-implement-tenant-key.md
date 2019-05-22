@@ -4,19 +4,19 @@ description: 不是由 Microsoft 管理 Azure 信息保护的根密钥，你可�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/08/2019
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 865334193d39a048ac48b6233005673f2be43f03
-ms.sourcegitcommit: 3e948723644f19c935bc7111dec1cc54a1ff0231
+ms.openlocfilehash: 9e43e534b95ecef5fa412ffb75fd3659ad9f8bb3
+ms.sourcegitcommit: 8532536b778a26b971dba89436772158869ab84d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65780905"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934976"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
@@ -107,12 +107,12 @@ ms.locfileid: "65780905"
 
 |要求|更多信息|
 |---------------|--------------------|
-|你的 Azure 信息保护租户必须具有 Azure 订阅。 如果没有订阅，可以注册[免费帐户](https://azure.microsoft.com/pricing/free-trial/)。 <br /><br /> 若要使用受 HSM 保护的密钥，必须拥有 Azure Key Vault 高级服务层。|免费的 Azure 订阅提供相应的访问权限，可配置 Azure Active Directory 以及 Azure 权限管理自定义模板（**可访问 Azure Active Directory**），但不足以使用 Azure 密钥保管库。 若要确认你拥有可用于 BYOK 的 Azure 订阅，请使用[Azure PowerShell](/powershell/azure/overview) cmdlet: <br /><br /> 1.开始使用 Azure PowerShell 会话**以管理员身份运行**选项，并以使用 Azure 信息保护租户的全局管理员身份登录`Connect-AzAccount`复制，并将生成的令牌字符串粘贴到`https://microsoft.com/devicelogin`使用浏览器。 <br /><br /> 有关详细信息，请参阅[使用 Azure PowerShell 登录](/powershell/azure/authenticate-azureps)。 <br /><br />2.键入以下命令，并确认可以看到显示了订阅名称和 ID 以及 Azure 信息保护租户 ID 的值，并且状态为“已启用”：`Get-AzSubscription`<br /><br />如果没有显示任何值，并且返回到提示，则表示没有可用于 BYOK 的 Azure 订阅。 <br /><br />**注意**：若要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，除了满足 BYOK 先决条件以外，还必须拥有最低版本为 11.62 的 Thales 固件。|
-|若要使用本地创建的受 HSM 保护密钥，请执行以下操作： <br /><br />- 针对 Key Vault BYOK 列出的所有先决条件。 |请参阅 Azure 密钥保管库文档中的 [Prerequisites for BYOK](/azure/key-vault/key-vault-hsm-protected-keys#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br /> **注意**：若要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，除了满足 BYOK 先决条件以外，还必须拥有最低版本为 11.62 的 Thales 固件。|
+|你的 Azure 信息保护租户必须具有 Azure 订阅。 如果没有订阅，可以注册[免费帐户](https://azure.microsoft.com/pricing/free-trial/)。 <br /><br /> 若要使用受 HSM 保护的密钥，必须拥有 Azure Key Vault 高级服务层。|免费的 Azure 订阅提供相应的访问权限，可配置 Azure Active Directory 以及 Azure 权限管理自定义模板（**可访问 Azure Active Directory**），但不足以使用 Azure 密钥保管库。 若要确认你拥有可用于 BYOK 的 Azure 订阅，请使用[Azure PowerShell](/powershell/azure/overview) cmdlet: <br /><br /> 1.开始使用 Azure PowerShell 会话**以管理员身份运行**选项，并以使用 Azure 信息保护租户的全局管理员身份登录`Connect-AzAccount`复制，并将生成的令牌字符串粘贴到`https://microsoft.com/devicelogin`使用浏览器。 <br /><br /> 有关详细信息，请参阅[使用 Azure PowerShell 登录](/powershell/azure/authenticate-azureps)。 <br /><br />2.键入以下命令，并确认可以看到显示了订阅名称和 ID 以及 Azure 信息保护租户 ID 的值，并且状态为“已启用”：`Get-AzSubscription`<br /><br />如果没有显示任何值，并且返回到提示，则表示没有可用于 BYOK 的 Azure 订阅。 <br /><br />**注意**：除了 BYOK 的先决条件，如果您从 AD RMS 迁移到 Azure 信息保护使用软件密钥到硬件密钥，你必须具有最低版本 11.62 如果您使用 hsm 的 Thales 固件。|
+|若要使用本地创建的受 HSM 保护密钥，请执行以下操作： <br /><br />- 针对 Key Vault BYOK 列出的所有先决条件。 |请参阅 Azure 密钥保管库文档中的 [Prerequisites for BYOK](/azure/key-vault/key-vault-hsm-protected-keys#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br /> **注意**：除了 BYOK 的先决条件，如果您从 AD RMS 迁移到 Azure 信息保护使用软件密钥到硬件密钥，你必须具有最低版本 11.62 如果您使用 hsm 的 Thales 固件。|
 |如果包含租户密钥的密钥保管库使用 Azure Key Vault 虚拟网络服务终结点： <br /><br />- 允许受信任 Microsoft 服务绕过此防火墙。|有关详细信息，请参阅 [Azure Key Vault 虚拟网络服务终结点](/azure/key-vault/key-vault-overview-vnet-service-endpoints)。|
 |适用于 Windows PowerShell 的 Azure Rights Management 管理模块。|有关安装说明，请参阅[安装 AADRM PowerShell 模块](./install-powershell.md)。 <br /><br />如果之前已安装了此 Windows PowerShell 模块，请运行以下命令检查版本号是否高于或等于 **2.9.0.0**：`(Get-Module aadrm -ListAvailable).Version`|
 
-有关 Thales HSM 及其如何与 Azure 密钥保管库一起使用的详细信息，请参阅 [Thales website](https://www.thales-esecurity.com/msrms/cloud)（Thales 网站）。
+有关 nCipher nShield 硬件安全模块 (HSM) 和如何与 Azure Key Vault 使用的详细信息，请参阅[nCipher 网站](https://www.ncipher.com/products/key-management/cloud-microsoft-azure/how-to-buy)。
 
 ### <a name="choosing-your-key-vault-location"></a>选择密钥保管库位置
 
