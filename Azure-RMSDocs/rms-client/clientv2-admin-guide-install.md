@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: c54754c5ec016aaaa54874b2be5bd0ac2d112e90
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 46102a1b2b60b58d47d0e436f25b2480f2737a51
+ms.sourcegitcommit: 5ecf68d050152e0b425fa8cf6f3890951185b14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60183666"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050720"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：安装 Azure 信息保护统一标记用户的客户端
 
 >适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
-> *说明：[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：*[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 在企业网络上安装 Azure 信息保护统一标记客户端之前，请检查计算机具有所需的操作系统版本和 Azure 信息保护的应用程序：[Azure 信息保护的要求](../requirements.md)。 
 
@@ -186,7 +186,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 1. 从下载的 Azure 信息保护统一标记客户 (AzInfoProtection_UL).msi 版本[Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)。 
     
-    如果存在可用的预览版本，则保留此版本仅供测试使用。 它不用于生产环境中的最终用户。 
+    如果存在可用的预览版本，则保留此版本仅供测试使用。 它不用于生产环境中的最终用户。
 
 2. 对于运行 .msi 文件的每台计算机，必须确保以下软件依赖项已经就绪。 例如，将这些依赖项与客户端 .msi 版本一起打包，或只部署到满足这些依赖关系的计算机上：
     

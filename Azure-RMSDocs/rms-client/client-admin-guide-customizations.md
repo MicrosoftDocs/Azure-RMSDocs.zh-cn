@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5f9ac2414e83ab84690c0fdaea187dad8d7f3b36
-ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
+ms.openlocfilehash: bd17dbf51042818250cbea95ee2738d516c76077
+ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64768367"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66186680"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -380,7 +380,7 @@ User Response: Confirmed
 
 默认情况下，则发出警告，两端对齐，或阻止弹出消息适用于所有 Office 文档和 PDF 文档。 文件扩展名应显示，则发出警告，对齐，或阻止使用其他高级客户端属性和一列以逗号分隔的文件扩展名的消息，您可以通过指定优化此列表。
 
-多个文件扩展名将定义为一个以逗号分隔字符串的示例值： `.XLSX,.XLSM,.XLS,.XLTX,.XLTM, .DOCX,.DOCM,.DOC,.DOCX,.DOCM,.PPTX,.PPTM,.PPT,.PPTX,.PPTM`
+多个文件扩展名将定义为一个以逗号分隔字符串的示例值： `.XLSX,.XLSM,.XLS,.XLTX,.XLTM,.DOCX,.DOCM,.DOC,.DOCX,.DOCM,.PPTX,.PPTM,.PPT,.PPTX,.PPTM`
 
 在此示例中，不会导致未标记的 PDF 文档中，则发出警告，对齐，或阻止弹出消息。
 

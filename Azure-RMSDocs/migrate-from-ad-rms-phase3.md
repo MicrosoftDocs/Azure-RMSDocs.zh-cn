@@ -48,13 +48,13 @@ ms.locfileid: "65781781"
     
     `_rmsredir._http._tcp.<AD RMS cluster>. <TTL> IN SRV <priority> <weight> <port> <your tenant URL>.`
     
-    对于 *\<AD RMS 群集>*，请指定你的 AD RMS 群集的 FQDN。 例如 **rmscluster.contoso.com**。
+    对于 *\<AD RMS 群集>* ，请指定你的 AD RMS 群集的 FQDN。 例如 **rmscluster.contoso.com**。
     
     或者，如果你在该域中只有一个 AD RMS 群集，可以指定该 AD RMS 群集的域名。 在本示例中，即 **contoso.com**。 在此记录中指定域名时，重定向将应用到该域中的所有 AD RMS 群集。
     
     *\<端口>* 号将被忽略。
     
-    对于*\<租户 URL\>*，指定[你租户的 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
+    对于 *\<租户 URL\>* ，指定[你租户的 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
     
     如果在 Windows Server 上使用 DNS 服务器角色，可使用下表作为示例，在 DNS 管理器控制台中指定 SRV 记录属性。
     

@@ -150,7 +150,7 @@ ms.locfileid: "60183378"
 
         -   **说明**：键入“为 Rights Management 的 &lt;文件夹名称&gt; 文件夹中的所有文件分类”。
 
-            将*&lt;文件夹名称&gt;* 替换为所选的文件夹名称。 例如，“为 Rights Management 的 C:\FileShare 文件夹中的所有文件分类”
+            将 *&lt;文件夹名称&gt;* 替换为所选的文件夹名称。 例如，“为 Rights Management 的 C:\FileShare 文件夹中的所有文件分类”
 
         -   **范围**：添加所选的文件夹。 例如，**C:\FileShare**。
 
@@ -192,7 +192,7 @@ ms.locfileid: "60183378"
 
         -   **说明**：键入“使用 Windows PowerShell 脚本通过 Rights Management 和模板保护 &lt;文件夹名称&gt; 中的文件。”
 
-            将*&lt;文件夹名称&gt;* 替换为所选的文件夹名称。 例如，“使用 Windows PowerShell 脚本通过 Rights Management 和模板保护 C:\FileShare 中的文件”
+            将 *&lt;文件夹名称&gt;* 替换为所选的文件夹名称。 例如，“使用 Windows PowerShell 脚本通过 Rights Management 和模板保护 C:\FileShare 中的文件”
 
         -   **范围**：选择所选的文件夹。 例如，**C:\FileShare**。
 
@@ -278,7 +278,7 @@ ms.locfileid: "60183378"
     >     ```
     >     powershell.exe -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '<full path and name of a file>' -TemplateID <template GUID>"
     >     ```
-    >     -   如果该脚本在此 Windows PowerShell 会话中成功运行，请在文件管理任务操作中检查 **Executive** 和 **Argument** 的条目。  如果已指定 **-OwnerEmail [Source File Owner Email]**，请尝试删除此参数。
+    >     -   如果该脚本在此 Windows PowerShell 会话中成功运行，请在文件管理任务操作中检查 **Executive** 和 **Argument** 的条目。  如果已指定 **-OwnerEmail [Source File Owner Email]** ，请尝试删除此参数。
     > 
     >         如果文件管理任务在没有 **-OwnerEmail [Source File Owner Email]** 的情况下成功运行，请检查未受保护的文件是否有域用户（而不是 **SYSTEM**）列出为文件所有者。  若要执行此检查，请使用文件的属性的“安全”选项卡，然后单击“高级”。 **所有者** 值将紧接着显示在文件**名称**之后。 另外，请验证文件服务器是否位于同一域或受信任的域中，以便从 Active Directory 域服务中查找该用户的电子邮件地址。
     > -   如果你在报告中看到正确的文件数，但文件未受保护，请尝试使用 [Protect-RMSFile](/powershell/azureinformationprotection/vlatest/protect-rmsfile) cmdlet 手动保护文件以查看是否显示任何错误。

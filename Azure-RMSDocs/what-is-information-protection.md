@@ -4,17 +4,17 @@ description: Azure 信息保护服务的技术概述，此服务有助于组织�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/02/2019
+ms.date: 05/20/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: information-protection
 Customer intent: As an administrator, I want to label documents and emails to classify and protect my organization's data, wherever it resides.
-ms.openlocfilehash: 768cac711deff33bf796973ede2541250df5f357
-ms.sourcegitcommit: 8e207e8e1459625c77e712f45798a88abe079571
+ms.openlocfilehash: 0bb1096a903be953eb9702bc89b6a8c98d340946
+ms.sourcegitcommit: 8532536b778a26b971dba89436772158869ab84d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64982180"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65935067"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -26,6 +26,8 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 ![用于 Azure 信息保护的建议分类示例](./media/info-protect-recommend-calloutsv2.png)
 
+###### <a name="screenshot-from-the-azure-information-protection-clientfaqsmdwhats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>来自 [Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图
+
 内容进行分类（以及保护（可选））之后，随后可以跟踪并控制其使用方式。 可以分析数据流以深入了解业务、检测危险行为和采取修正措施、跟踪对文档的访问、防止数据泄露或误用，等等。
 
 ## <a name="how-labels-apply-classification"></a>标签如何应用分类
@@ -36,6 +38,7 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 ![显示 Azure 信息保护分类的示例电子邮件页脚和标头](./media/example-email-footerv2.png)
 
+###### <a name="screenshot-from-the-azure-information-protection-clientfaqsmdwhats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>来自 [Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图
 
 ## <a name="how-data-is-protected"></a>如何保护数据
 
@@ -63,7 +66,9 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 安装 Azure 信息保护客户端时，Azure 信息保护会与最终用户的现有工作流集成。 此客户端会将信息保护栏安装到 Office 应用程序（如在 Word 中显示此栏的第一张图片所示）。 相同的信息保护栏会添加到 Excel、PowerPoint 和 Outlook。 例如：
 
-![Excel 中的 Azure 信息保护栏的示例](./media/excel2016-infoprotect-barv2.png)
+![Excel 中的 Azure 信息保护栏的示例](./media/excelproplus-infoprotect-bar.png)
+
+###### <a name="screenshot-from-the-azure-information-protection-unified-labeling-clientfaqsmdwhats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>来自 [Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图 
 
 此信息保护栏使最终用户能够轻松选择用于正确分类的标签。 如有需要，还可以自动应用标签以避免用户猜测，或者用于遵循组织策略。
 
@@ -91,9 +96,11 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 ![OME 和 AIP 的 Gmail 收件人体验](./media/ome-message.png)
 
-对于发送电子邮件的用户，他们的工作流与将受保护电子邮件发送到其组织内的用户相同。 例如，他们可以选择“不要转发”按钮，Azure 信息保护客户端可以将该按钮添加到 Outlook 功能区。 或者，此“不要转发”功能可以集成到用户选择的标签，使电子邮件分类并受到保护：
+对于发送电子邮件的用户，他们的工作流与将受保护电子邮件发送到其组织内的用户相同。 例如，他们可以选择“不要转发”按钮，Azure 信息保护客户端可以将该按钮添加到 Outlook 功能区。 或者，此“不要转发”功能可以集成到用户选择的标签，使电子邮件分类并受到保护。 例如：
 
-![选择配置为“不转发”的标签](./media/recipients-only-label.png)
+![选择配置为“不转发”的标签](./media/recipients-only-label2.png)
+
+###### <a name="screenshot-from-the-azure-information-protection-unified-labeling-clientfaqsmdwhats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>来自 [Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图
 
 或者，可以通过使用应用权限保护的邮件流规则，为用户自动提供保护。 
 

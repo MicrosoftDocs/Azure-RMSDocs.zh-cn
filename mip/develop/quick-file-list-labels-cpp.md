@@ -9,7 +9,7 @@ ms.date: 01/18/2019
 ms.author: mbaldwin
 ms.openlocfilehash: e20b66062788632f3fc519e498761500ee78d68c
 ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "60184988"
@@ -128,7 +128,7 @@ ms.locfileid: "60184988"
 | 总结 | 错误消息 | 解决方案 |
 |---------|---------------|----------|
 | 应用程序注册或 PowerShell 脚本中的重定向 URI 不正确 (AADSTS50011) |*AADSTS50011:答复请求中指定的 url 与应用程序配置的答复 url 不匹配:"ac6348d6-0d2f-4786-af33-07ad46e69bfc"。* | 通过完成以下步骤之一，验证正在使用的重定向 URI：<br><br><li>更新 Azure AD 应用程序配置中的重定向 URI，以匹配 PowerShell 脚本。 请参阅 [MIP SDK 安装和配置](setup-configure-mip.md#register-a-client-application-with-azure-active-directory)，验证是否已正确配置重定向 URI 属性。<br><li>更新 PowerShell 脚本中的 `redirectUri` 变量，以匹配应用程序注册。 |
-| 登录帐户不正确 (AADSTS50020) | *AADSTS50020:用户帐户user@domain.com从标识提供者 https://sts.windows.net/72f988bl-86f1-41af-91ab-2d7cd011db47/租户组织名称中不存在且无法访问应用程序 0edbblll-8773-44de-b87c-b8c6276d41eb 该租户中。* | 完成以下步骤之一：<br><br><li>重新运行 PowerShell 脚本，但务必使用 Azure AD 应用程序注册所在的同一租户中的帐户。<br><li>如果登录帐户是正确的，则 PowerShell 主机会话可能已在其他帐户下进行身份验证。 在这种情况下，请在退出脚本主机后重新打开，然后再次尝试运行它。<br><li>如果将此快速入门用于 Web 应用（而非本机应用），并且需要使用其他租户中的帐户登录，请确保为 Azure AD 应用程序注册启用多租户使用。 可以使用应用程序注册中的“编辑清单”功能进行验证，并确保它指定 `"availableToOtherTenants": true,`。 |
+| 登录帐户不正确 (AADSTS50020) | *AADSTS50020:用户帐户 'user@domain.com' 从标识提供者 'https://sts.windows.net/72f988bl-86f1-41af-91ab-2d7cd011db47/' 租户组织名称中不存在且无法访问应用程序 0edbblll-8773-44de-b87c-b8c6276d41eb 该租户中。* | 完成以下步骤之一：<br><br><li>重新运行 PowerShell 脚本，但务必使用 Azure AD 应用程序注册所在的同一租户中的帐户。<br><li>如果登录帐户是正确的，则 PowerShell 主机会话可能已在其他帐户下进行身份验证。 在这种情况下，请在退出脚本主机后重新打开，然后再次尝试运行它。<br><li>如果将此快速入门用于 Web 应用（而非本机应用），并且需要使用其他租户中的帐户登录，请确保为 Azure AD 应用程序注册启用多租户使用。 可以使用应用程序注册中的“编辑清单”功能进行验证，并确保它指定 `"availableToOtherTenants": true,`。 |
 | 应用程序注册中的权限不正确 (AADSTS65005) | *AADSTS65005:无效的资源。客户端已请求访问某个资源，但该资源未在客户端应用程序注册中的所需权限中列出。客户端应用程序 ID:0edbblll-8773-44de-b87c-b8c6276d41eb.来自请求的资源值: https://syncservice.o365syncservice.com/。资源应用程序 ID:870c4f2e-85b6-4 d 43-bdda-6ed9a579b725。应用注册中的有效资源的列表：00000002-0000-0000-c000-000000000000.* | 更新 Azure AD 应用程序配置中的权限请求。 请参阅 [MIP SDK 安装和配置](setup-configure-mip.md#register-a-client-application-with-azure-active-directory)，验证是否在应用程序注册中正确配置了权限请求。 |
 
 ### <a name="problems-during-execution-of-c-application"></a>执行 C++ 应用程序时出现的问题

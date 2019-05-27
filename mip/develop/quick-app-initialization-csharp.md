@@ -9,7 +9,7 @@ ms.date: 01/04/2019
 ms.author: tommos
 ms.openlocfilehash: b7f2b25027502fbdd9dd7bd877b8893c1940628a
 ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "60184956"
@@ -59,7 +59,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 现在通过扩展 SDK 的一个身份验证的委托，为创建一个实现`Microsoft.InformationProtection.IAuthDelegate`接口，并且重写/实现`IAuthDelegate.AcquireToken()`虚函数。 实例化和更高版本使用的身份验证委托`FileProfile`和`FileEngine`对象。
 
 1. 右键单击项目名称，在 Visual Studio 中，选择**外**然后**类**。
-2. 输入"AuthDelegateImplementation"中**名称**字段。 单击 **“添加”**。
+2. 输入"AuthDelegateImplementation"中**名称**字段。 单击 **“添加”** 。
 3. 添加 Active Directory 身份验证库 (ADAL) 和 MIP 库 using 语句：
 
      ```csharp
@@ -122,7 +122,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
 3. 托管包装器包括一个静态类`Microsoft.InformationProtection.MIP`用于初始化、 加载配置文件，并释放资源。 若要初始化文件 API 操作的包装器，请调用 MIP。初始化，并传入`MipComponent.File`加载文件操作所需的库。 
 
-4. 在中`Main()`中*Program.cs*添加以下、 替换**\<应用程序 id\>** 以前创建的 Azure AD 应用程序注册 id。
+4. 在中`Main()`中*Program.cs*添加以下、 替换 **\<应用程序 id\>** 以前创建的 Azure AD 应用程序注册 id。
 
 ```csharp
 using System;
