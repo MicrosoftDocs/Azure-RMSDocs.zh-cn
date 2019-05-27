@@ -9,25 +9,25 @@ ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.openlocfilehash: 1485020b6edd47aae75486bf3a8215cf5cb14a1b
-ms.sourcegitcommit: 8532536b778a26b971dba89436772158869ab84d
+ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
+ms.lasthandoff: 05/27/2019
 ms.locfileid: "65934993"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：*[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明： *[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 本快速入门介绍如何配置现有标签以自动应用“不得转发”保护设置。
 
 当前的 Azure 信息保护策略已包含两个具有此配置的标签：
 
-- 机密\仅收件人
+- 机密\仅收件人 
 
-- 高度机密\仅收件人
+- 高度机密\仅收件人 
 
 但是，如果你的策略较旧，或者在创建组织策略时未激活保护，将不会包含这些标签。 
 
@@ -51,7 +51,7 @@ ms.locfileid: "65934993"
 
 4. 测试新的标签：必须为用户在计算机上安装 Azure 信息保护客户端。 
     
-    若要自行试用标签，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe，安装客户端。
+    若要自行试用标签，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  ，安装客户端。
 
 5. 测试新的标签：一台运行 Windows（最低配置为 Windows 7 Service Pack 1）的计算机，并在此计算机上，从以下类别之一登录到 Office 应用程序：
     
@@ -71,29 +71,29 @@ ms.locfileid: "65934993"
 
 ## <a name="configure-an-existing-label-to-apply-the-do-not-forward-protection"></a>配置现有标签以应用“不得转发”保护
 
-1. 打开新的浏览器窗口，以全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”。 
+1. 打开新的浏览器窗口，以全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”  。 
     
-    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”   。 选择“Azure 信息保护”。 
     
     如果你不是全局管理员，请使用以下链接获取替代角色：[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)
 
-2. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，选择要配置为应用保护的标签。 
+2. 从“分类” > “标签”菜单选项中   ：在“Azure 信息保护 - 标签”  边栏选项卡上，选择要配置为应用保护的标签。 
 
-3. 在“**标签**”边栏选项卡上，查找“**为包含此标签的文档和电子邮件设置权限**”。 如果之前已选择其他选项之一，那么在选中“保护”后，会自动打开“保护”边栏选项卡。 
+3. 在“**标签**”边栏选项卡上，查找“**为包含此标签的文档和电子邮件设置权限**”。 如果之前已选择其他选项之一，那么在选中“保护”  后，会自动打开“保护”  边栏选项卡。 
     
-    如果“保护”边栏选项卡未自动打开，请选择“保护”：
+    如果“保护”边栏选项卡未自动打开，请选择“保护”   ：
     
     ![为 Azure 信息保护标签配置保护权限](./media/info-protect-protection-bar-configured.png)。
 
-4. 在“保护”边栏选项卡中，确保选中“Azure (云密钥)”。
+4. 在“保护”边栏选项卡中，确保选中“Azure (云密钥)”   。
     
-5. 选择“设置用户定义的权限(预览)”。
+5. 选择“设置用户定义的权限(预览)”  。
 
-6. 请确保选中以下选项：“在 Outlook 中应用‘不可转发’”。
+6. 请确保选中以下选项：“在 Outlook 中应用‘不可转发’”  。
 
-7. 如已选中，请清除以下选项：“在 Word、Excel、PowerPoint 和文件资源管理器中提示用户获取自定义权限”。
+7. 如已选中，请清除以下选项：“在 Word、Excel、PowerPoint 和文件资源管理器中提示用户获取自定义权限”  。
 
-8. 单击“保护”边栏选项卡上的“确定”，再单击“标签”边栏选项卡上的“保存”。
+8. 单击“保护”  边栏选项卡上的“确定”  ，再单击“标签”  边栏选项卡上的“保存”  。
 
 标签现已配置为仅在 Outlook 中显示，并将“不得转发”保护应用于电子邮件。
 
@@ -115,9 +115,9 @@ ms.locfileid: "65934993"
 
 如果不想保留此配置并返回标签以使其不应用保护，请执行以下操作：
 
-1. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，选择配置的标签。 
+1. 从“分类” > “标签”菜单选项中   ：在“Azure 信息保护 - 标签”  边栏选项卡上，选择配置的标签。 
 
-3. 在“标签”边栏选项卡上，找到“为包含此标签的文档和电子邮件设置权限”，选择“未配置”，然后选择“保存”。
+3. 在“标签”  边栏选项卡上，找到“为包含此标签的文档和电子邮件设置权限”  ，选择“未配置”  ，然后选择“保存”  。
 
 ## <a name="next-steps"></a>后续步骤
 
