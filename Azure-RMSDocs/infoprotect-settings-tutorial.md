@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.openlocfilehash: 2341bfbdc443a15096d178b143e6bd1464b1a53e
-ms.sourcegitcommit: 8532536b778a26b971dba89436772158869ab84d
+ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
+ms.lasthandoff: 05/27/2019
 ms.locfileid: "65935082"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 在本教程中，你将了解如何执行以下操作：
 > [!div class="checklist"]
@@ -48,7 +48,7 @@ ms.locfileid: "65935082"
 
 3. 计算机上已安装 Azure 信息保护客户端。 
     
-    可以转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe，安装客户端。
+    可以转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  ，安装客户端。
 
 4. 一台运行 Windows（最低配置为 Windows 7 Service Pack 1）的计算机，并在此计算机上，从以下类别之一登录到 Office 应用：
     
@@ -74,15 +74,15 @@ ms.locfileid: "65935082"
 
 我们将使用 Azure 门户编辑全局策略以更改所有用户的策略设置。
 
-1. 打开新的浏览器窗口，以全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”。 
+1. 打开新的浏览器窗口，以全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”  。 
     
-    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”   。 选择“Azure 信息保护”。 
     
     如果你不是全局管理员，请使用以下链接获取替代角色：[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)
 
-2. 选择“分类” > “策略” > “全局”，打开“策略: 全局”边栏选项卡。 
+2. 选择“分类”   > “策略”   > “全局”  ，打开“策略: 全局”边栏选项卡  。 
 
-3. 在“配置要对信息保护最终用户显示和应用的设置”部分中，找到位于标签后面的策略设置。 你的设置中的值可能与显示的值不同：
+3. 在“配置要对信息保护最终用户显示和应用的设置”  部分中，找到位于标签后面的策略设置。 你的设置中的值可能与显示的值不同：
     
     ![Azure 信息保护教程 - 默认设置](./media/defaultsettings-aip.png)
 
@@ -90,16 +90,16 @@ ms.locfileid: "65935082"
 
     |Setting|值|信息|
     |-------|-----|-----|
-    |**选择默认标签**|**常规**|如果没有名为“常规”的标签，可以从下拉列表中选择另一个标签。 未标记的文档和电子邮件将自动应用此标签作为基本分类。 不过，用户可以将所选标签更改为其他标签。|
+    |**选择默认标签**|**常规**|如果没有名为“常规”  的标签，可以从下拉列表中选择另一个标签。 未标记的文档和电子邮件将自动应用此标签作为基本分类。 不过，用户可以将所选标签更改为其他标签。|
     |**强制所有文档和电子邮件都具有标签**|**开**|此设置通常称为强制标记，因为它可以防止用户保存文档或发送未标记的电子邮件。 连同默认标签，文档和电子邮件将具有你设置的默认标签或它们选择的标签。
-    |**对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签**|推荐|如果用户附加的文档的分类级别高于所选默认标签，此设置会提示用户为其电子邮件选择更高级别的分类标签。
+    |**对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签**|推荐 |如果用户附加的文档的分类级别高于所选默认标签，此设置会提示用户为其电子邮件选择更高级别的分类标签。
     |**在 Office 应用程序中显示“信息保护”栏**|**开**|显示“信息保护”栏后，用户可以更轻松地查看和更改默认标签。
     
     设置现在应如下所示：
     
     ![Azure 信息保护教程 - 更改的默认设置](./media/defaultsettings-aip-changed.png)
 
-5. 选择此“策略: 全局”边栏选项卡上的“保存”，如果系统提示你确认操作，请选择“确定”。 
+5. 选择此“策略: 全局”  边栏选项卡上的“保存”  ，如果系统提示你确认操作，请选择“确定”  。 
 
 ## <a name="see-your-policy-settings-in-action"></a>在实际操作中查看策略设置 
 
@@ -107,7 +107,7 @@ ms.locfileid: "65935082"
 
 ### <a name="default-label-and-the-information-protection-bar"></a>默认标签和“信息保护”栏
 
-在 Word 中打开一个新文档。 你会看到文档自动标记为“常规”，而不是依赖用户选择标签。 
+在 Word 中打开一个新文档。 你会看到文档自动标记为“常规”  ，而不是依赖用户选择标签。 
 
 显示“信息保护”栏并显示可用标签后，用户可以轻松地查看当前选定的标签，如果默认标签不合适，还可以更改标签：
 
@@ -117,20 +117,20 @@ ms.locfileid: "65935082"
 
 ![Azure 信息保护教程 - 关闭栏](./media/infoprotect-bar-close.png)
 
-“常规”标签仍处于选中状态，但不太明显。 选择不同标签的选项也不太明显。 为此，用户必须选择“保护”按钮：
+“常规”  标签仍处于选中状态，但不太明显。 选择不同标签的选项也不太明显。 为此，用户必须选择“保护”  按钮：
 
 ![Azure 信息保护教程 - 已选择“保护”按钮](./media/infoprotect-protectbutton-pulldown.png)
 
-现在，在下拉菜单中可以看到已选中“常规”标签，因为它旁边有一个复选标记。 要更改当前选定的标签，用户可以从列表中选择其他标签。 如果用户不熟悉标记操作，他们可能不记得每次都要选择“保护”按钮。 他们也可能没有意识到可以选择另一个标签。
+现在，在下拉菜单中可以看到已选中“常规”  标签，因为它旁边有一个复选标记。 要更改当前选定的标签，用户可以从列表中选择其他标签。 如果用户不熟悉标记操作，他们可能不记得每次都要选择“保护”  按钮。 他们也可能没有意识到可以选择另一个标签。
 
-若要再次显示“信息保护”栏，请从下拉菜单选择“显示栏”。
+若要再次显示“信息保护”栏，请从下拉菜单选择“显示栏”  。
 
 > [!TIP]
 > 可以配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#set-a-different-default-label-for-outlook)，为 Outlook 选择其他默认标签。
 
 ### <a name="mandatory-labeling"></a>强制标记
 
-可以将当前选定的“常规”标签更改为其他标签，但不能将其删除。 由于我们已将“强制所有文档和电子邮件都具有标签”设置为“开”，因此，“信息保护”栏上的“删除标签”图标不可用。 
+可以将当前选定的“常规”  标签更改为其他标签，但不能将其删除。 由于我们已将“强制所有文档和电子邮件都具有标签”  设置为“开”  ，因此，“信息保护”栏上的“删除标签”  图标不可用。 
 
 如果我们没有更改该设置，“信息保护”栏会显示以下图标：
 
@@ -142,17 +142,17 @@ ms.locfileid: "65935082"
 
 ### <a name="recommendations-for-emails-with-attachments"></a>带附件的电子邮件的建议
 
-对于打开的 Word 文档，请选择一个分类级别高于“常规”的标签。 例如，“保密”下的任一子标签，如“保密 - 所有人(未保护)”。 在本地保存文档并为其提供任何名称。 
+对于打开的 Word 文档，请选择一个分类级别高于“常规”  的标签。 例如，“保密”  下的任一子标签，如“保密 - 所有人(未保护)”  。 在本地保存文档并为其提供任何名称。 
 
-启动 Outlook 并创建新的电子邮件。 正如我们在 Word 中看到的那样，新电子邮件会自动标记为“常规”，并显示“信息保护”栏。
+启动 Outlook 并创建新的电子邮件。 正如我们在 Word 中看到的那样，新电子邮件会自动标记为“常规”  ，并显示“信息保护”栏。
 
-将刚刚标记为附件的 Word 文档添加到电子邮件。 你会看到提示将电子邮件标签更改为与 Word 附件匹配的“保密”标签。 可接受或忽略该建议：
+将刚刚标记为附件的 Word 文档添加到电子邮件。 你会看到提示将电子邮件标签更改为与 Word 附件匹配的“保密”  标签。 可接受或忽略该建议：
 
 ![Azure 信息保护教程 - 提示重新标记电子邮件以匹配已标记附件](./media/infoprotect-matchemail-label.png)
 
-如果单击“忽略”，则不会应用新标签，但会看到电子邮件仍然使用已配置的默认标签“常规”进行标记。 仍然显示可用标签以供选择。
+如果单击“忽略”  ，则不会应用新标签，但会看到电子邮件仍然使用已配置的默认标签“常规”  进行标记。 仍然显示可用标签以供选择。
 
-如果选择“立即更改”，则电子邮件重新标记为“保密”子标签。 但是，用户仍然可以在发送电子邮件之前更改标签，方法是选择“编辑”标签图标：
+如果选择“立即更改”  ，则电子邮件重新标记为“保密”  子标签。 但是，用户仍然可以在发送电子邮件之前更改标签，方法是选择“编辑”标签图标：
 
 ![Azure 信息保护教程 -“编辑标签”图标](./media/infoprotect-editlabel-icon.png)
 
@@ -160,15 +160,15 @@ ms.locfileid: "65935082"
 
 由于在发送电子邮件之前选择了标签，因此无需实际发送电子邮件以查看此策略设置的工作方式。 可以关闭电子邮件（无需发送或保存）。
 
-不过，如果希望尝试重复此练习，还要附加具有更高分类级别的另一个文档（“高度保密”标签中的子标签）。 然后，可以看到提示如何更改为应用更高分类级别标签。 如果使用具有相同父标签的子标签测试多个附件，必须配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments)以支持其在 Azure 门户中的排序。
+不过，如果希望尝试重复此练习，还要附加具有更高分类级别的另一个文档（“高度保密”  标签中的子标签）。 然后，可以看到提示如何更改为应用更高分类级别标签。 如果使用具有相同父标签的子标签测试多个附件，必须配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments)以支持其在 Azure 门户中的排序。
 
 ## <a name="clean-up-resources"></a>清理资源
 
 如果你不想保留在本教程中所做的更改，请执行以下操作：
 
-1. 选择“分类” > “策略” > “全局”，打开“策略: 全局”边栏选项卡。
+1. 选择“分类”   > “策略”   > “全局”  ，打开“策略: 全局”边栏选项卡  。
 
-2. 将策略设置恢复为你记下的原始值，然后选择“保存”。
+2. 将策略设置恢复为你记下的原始值，然后选择“保存”  。
 
 重新启动 Word 和 Outlook 应用以下载这些更改。
 
