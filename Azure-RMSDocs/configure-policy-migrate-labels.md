@@ -4,18 +4,18 @@ description: 为支持统一标签的客户端和服务将 Azure 信息保护标
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/16/2019
+ms.date: 05/29/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: b4c702ba84567ba51a29a2bf98c1650dd8f835b6
-ms.sourcegitcommit: 3e948723644f19c935bc7111dec1cc54a1ff0231
+ms.openlocfilehash: a9cc458bb22c4b2c76b7aa80b58434a213ec5af1
+ms.sourcegitcommit: e366a19300be4165da05ec7ee592f883c467bb51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65780835"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66269752"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-office-365-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签
 
@@ -37,7 +37,7 @@ ms.locfileid: "65780835"
 
 ### <a name="important-information-about-administrative-roles"></a>有关管理角色的重要信息
 
-统一标记平台不支持 [Azure AD 角色“](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)信息保护管理员”。 如果在迁移标签之前在组织中使用此管理角色，请将具有此角色的用户添加到 Azure AD 角色“安全管理员”或“合规性管理员”。 如果需要有关此步骤的帮助，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center)。 另外，还可以在 Azure AD 门户、Microsoft 365 安全中心和 Microsoft 365 合规中心分配这些角色。
+[Azure AD 角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)的**Azure 信息保护管理员**(以前称为**信息保护管理员**) 不支持通过统一标记平台。 如果在迁移标签之前在组织中使用此管理角色，请将具有此角色的用户添加到 Azure AD 角色“安全管理员”或“合规性管理员”。 如果需要有关此步骤的帮助，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center)。 另外，还可以在 Azure AD 门户、Microsoft 365 安全中心和 Microsoft 365 合规中心分配这些角色。
 
 或者，若要使用角色，可以在管理中心为这些用户创建新角色组，然后向该组中添加“敏感度标签管理员”或“组织配置”角色。
 

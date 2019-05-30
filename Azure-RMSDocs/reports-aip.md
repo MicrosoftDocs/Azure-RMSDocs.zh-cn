@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 05/21/2019
+ms.date: 05/29/2019
 manager: barbkess
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: afded60f7a9b1a67725fe08887895673c2b2ccab
-ms.sourcegitcommit: 8532536b778a26b971dba89436772158869ab84d
+ms.openlocfilehash: f35847247db96fdb9396f7bfd1e8ad860e94a88e
+ms.sourcegitcommit: e366a19300be4165da05ec7ee592f883c467bb51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934964"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66269843"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -152,7 +152,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
     
     - 若要创建 Log Analytics 工作区或创建自定义查询，必须具有以下角色之一：
     
-        - **信息保护管理员**
+        - **Azure 信息保护管理员**
         - **安全管理员**
         - **合规性管理员**
         - **全局管理员**
@@ -162,7 +162,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
         - **安全读取者**
     
     > [!NOTE] 
-    > 如果你的租户已迁移到统一标记存储，则无法使用信息保护管理员角色。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
+    > 如果你的租户已迁移到统一的标记存储，则无法使用 Azure 信息保护管理员角色。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
 
 2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-access#manage-access-to-log-analytics-workspace-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一才能访问 Azure Log Analytics 工作区：
     
@@ -271,7 +271,42 @@ Azure 信息保护的记录数据存储在下表中：**InformationProtectionLog
 
 使用下表来标识可用于通过 Azure 信息保护分析进行自定义查询的事件函数的友好名称。
 
-|列名称|说明| |-----_-----|-----------| |Time|事件时间：采用格式 YYYY-MM-DDTHH:MM:SS 的 UTC| |User|用户：格式 UPN 或 DOMAIN\USER| |ItemPath|完整项目路径或电子邮件主题| |ItemName|文件名或电子邮件主题| |Method|标签分配的方法：手动、自动、建议、默认或强制| |Activity|审核活动：DowngradeLabel、UpgradeLabel、RemoveLabel、NewLabel、Discover、Access、RemoveCustomProtection、ChangeCustomProtection 或 NewCustomProtection | |LabelName|标签名称（未本地化）| |LabelNameBefore |更改前的标签名称（未本地化）| |ProtectionType|保护类型 [JSON] <br />{ <br />"Type": ["Template", "Custom", "DoNotForward"], <br />  "TemplateID":"GUID" <br /> } <br />| |ProtectionBefore|更改之前的保护类型 [JSON] | |InformationTypesMatches|在数据中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组，其中，空数组表示未找到任何信息类型，NULL 表示无可用信息| |MachineName |FQDN（如果可用）或主机名| |DeviceRisk|WDATP 设备风险评分（如果可用）| |Platform|设备平台（Win、OSX、Android、iOS） | |ApplicationName|应用程序友好名称| |AIPVersion|执行了审核操作的 Azure 信息保护客户端的版本| |TenantId|Azure AD 租户 ID | |AzureApplicationId|Azure AD 已注册应用程序 ID (GUID)| |ProcessName|托管 MIP SDK 的进程| |LabelId|标签 GUID 或 NULL| |IsProtected|是否受保护：是/否 | |ProtectionOwner |采用 UPN 格式的权限管理所有者| |LabelIdBefore|更改前的标签 GUID 或 NULL| |InformationTypesAbove55|在可信度为 55 或更高的数据中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组| |InformationTypesAbove65|在可信度为 65 或更高的数据中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组| |InformationTypesAbove75|在可信度为 75 或更高的数据中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组| |InformationTypesAbove85|在可信度为 85 或更高的数据中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组| |InformationTypesAbove95|在可信度为 95 或更高的数据中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组| |DiscoveredInformationTypes |在数据及其匹配内容（如果已启用）中找到的 [SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 的 JSON 数组，其中空数组表示未找到任何信息类型，NULL 表示无可用信息 | |ProtectedBefore|在更改前内容是否受保护：是/否| |ProtectionOwnerBefore|更改前的权限管理所有者| |UserJustification|将标签降级或删除时的理由| |LastModifiedBy|最后修改文件的用户，采用 UPN 格式。 仅可用于 Office 和 SharePoint Online| |LastModifiedDate|采用格式 YYYY-MM-DDTHH:MM:SS: 的 UTC仅可用于 Office & SharePoint Online|
+|列名|描述|
+|-----------|-----------|
+|Time|事件时间：以 YYYY 格式的 UTC-MM-DDTHH:MM:SS|
+|“用户”|用户：UPN 或域 \ 用户格式|
+|ItemPath|项目的完整路径或电子邮件主题|
+|ItemName|文件名称或电子邮件主题 |
+|方法|分配方法的标签：手动、 自动、 建议、 默认情况下或强制性|
+|activities|审核活动：DowngradeLabel、 UpgradeLabel、 RemoveLabel、 NewLabel，发现、 访问、 RemoveCustomProtection、 ChangeCustomProtection 或 NewCustomProtection |
+|LabelName|标签名称 （未本地化）|
+|LabelNameBefore |更改 （未本地化） 之前的标签名称 |
+|ProtectionType|保护类型 [JSON] <br />{ <br />"Type": ["Template", "Custom", "DoNotForward"], <br />  "TemplateID":"GUID" <br /> } <br />|
+|ProtectionBefore|保护类型更改 [JSON] 之前 |
+|InformationTypesMatches|JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)数据中发现其中一个空数组表示没有信息类型找到，和 null 表示没有可用的信息|
+|MachineName |如果可用; 的 FQDN否则为主机名|
+|DeviceRisk|从 WDATP 时可用的设备风险评分|
+|平台|设备平台 (Win，OSX、 Android、 iOS) |
+|ApplicationName|应用程序的友好名称|
+|AIPVersion|执行审核操作的 Azure 信息保护客户端版本 |
+|TenantId|Azure AD 租户 ID |
+|AzureApplicationId|Azure AD 注册应用程序 ID (GUID)|
+|ProcessName|承载 MIP SDK 进程|
+|LabelId|标签 GUID 或 null|
+|IsProtected|是否受保护的：是/否 |
+|ProtectionOwner |以 UPN 格式的 rights Management 所有者|
+|LabelIdBefore|标签 GUID 或更改之前，则为 null|
+|InformationTypesAbove55|JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)置信度 55 或更高版本的数据中找到 |
+|InformationTypesAbove65|JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)置信度级别为 65 或更高版本的数据中找到 |
+|InformationTypesAbove75|JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)置信度 75 或更高版本的数据中找到 |
+|InformationTypesAbove85|JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)置信度 85 或更高版本的数据中找到 |
+|InformationTypesAbove95|JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)置信度 95 或更高版本的数据中找到|
+|DiscoveredInformationTypes |JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) （如果启用） 中数据和其匹配的内容找到其中一个空数组表示没有信息类型找到，和 null 意味着没有可用的信息 |
+|ProtectedBefore|是否更改之前保护内容：是/否 |
+|ProtectionOwnerBefore|在更改之前的 rights Management 所有者 |
+|UserJustification|降级或删除标签时的理由|
+|LastModifiedBy|以 UPN 格式上次修改该文件的用户。 适用于 Office 和 SharePoint Online 仅|
+|LastModifiedDate|以 YYYY 格式的 UTC-MM-DDTHH:MM:SS:适用于 Office 和 SharePoint Online 仅 |
 
 
 #### <a name="examples-using-informationprotectionevents"></a>使用 InformationProtectionEvents 的示例

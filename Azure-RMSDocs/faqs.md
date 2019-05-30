@@ -4,17 +4,17 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/07/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: f3d8610ff5d1bb1138d69825e37d8c6eb46f1a0a
-ms.sourcegitcommit: 7f769dfa8d4758f13b2c7f83d89fabbb84716290
+ms.openlocfilehash: d23df32bf3af4625cbb98579fa93a4bef8443be3
+ms.sourcegitcommit: e366a19300be4165da05ec7ee592f883c467bb51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65191919"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66269820"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -110,7 +110,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 很显然，Office 365 租户或 Azure AD 租户的全局管理员可以运行 Azure 信息保护的所有管理任务。 但是，如果想要将管理权限分配给其他用户，可以使用以下选项：
 
-- **信息保护管理员**：此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护，但不是其他服务。 具有此角色的管理员可以激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置 Azure 信息保护策略。 此外，具有此角色的管理员可以运行针对 [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)以及来自 [AADRM 模块](administer-powershell.md)的所有 PowerShell cmdlet。 但是，此角色不支持跟踪和撤销文档的用户。
+- **Azure 信息保护管理员**:此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护，但不是其他服务。 具有此角色的管理员可以激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置 Azure 信息保护策略。 此外，具有此角色的管理员可以运行针对 [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)以及来自 [AADRM 模块](administer-powershell.md)的所有 PowerShell cmdlet。 但是，此角色不支持跟踪和撤销文档的用户。
     
     > [!NOTE]
     > [将租户迁移到统一标记存储](configure-policy-migrate-labels.md)后，Azure 门户将不再支持此角色。
@@ -151,7 +151,7 @@ Azure Rights Management 服务根据需要自动生成并管理 XrML 证书，�
 
 Azure 信息保护可以分类和保护电子邮件和文档，无论它们是位于本地还是云中。 这些文档包括 Word 文档、Excel 电子表格，PowerPoint 演示文稿、PDF 文档、基于文本的文件和图像文件。 有关支持的文档类型的列表，请参阅管理员指南中的[支持文件类型](./rms-client/client-admin-guide-file-types.md)列表。
 
-Azure 信息保护不能分类和保护结构化数据，如数据库文件、日历项、PowerBI 报表、Yammer 帖子、Sway 内容和 OneNote 笔记本。
+Azure 信息保护不能进行分类和保护结构化的数据，例如数据库文件、 日历项、 Power BI 报表、 Yammer 帖子、 Sway 内容和 OneNote 笔记本。
 
 ## <a name="i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work"></a>我看到 Azure 信息保护被列为可用于条件访问的云应用 - 工作原理是什么？
 

@@ -1,6 +1,6 @@
 ---
-title: 快速入门-Set 和 get 文件使用的敏感度标签C#MIP SDK
-description: 快速入门教程演示如何使用 Microsoft 信息保护 SDK.NET 包装器来设置和获取文件的敏感度标签。
+title: 快速入门 - 使用 C# MIP SDK 对文件设置和获取敏感度标签
+description: 一个演示如何使用 Microsoft 信息保护 SDK .NET 包装器对文件设置和获取敏感度标签的快速入门。
 services: information-protection
 author: msmbaldwin
 ms.service: information-protection
@@ -9,10 +9,10 @@ ms.collection: M365-security-compliance
 ms.date: 01/09/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 395c46ce1979b2ef670aa27e9329c5219ca63e13
-ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
-ms.translationtype: MT
+ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 05/27/2019
 ms.locfileid: "60173217"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C#)
@@ -23,14 +23,14 @@ ms.locfileid: "60173217"
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
-- 完整[快速入门：列出敏感度标签 (C#)](quick-file-list-labels-csharp.md)第一种方法生成初学者 Visual Studio 解决方案中，若要列出组织的敏感度标签。 此“设置和获取敏感度标签”快速入门基于前一个。
-- 可选：审阅[MIP SDK 中文件处理程序](concept-handler-file-cpp.md)概念。
+- 首先完成[快速入门：列出敏感度标签 (C#)](quick-file-list-labels-csharp.md)，这可生成 Visual Studio 初学者解决方案，以列出组织的敏感度标签。 此“设置和获取敏感度标签”快速入门基于前一个。
+- 可选：查看 [MIP SDK 中的文件句柄](concept-handler-file-cpp.md)概念。
 
 ## <a name="add-logic-to-set-and-get-a-sensitivity-label"></a>添加逻辑以设置和获取敏感度标签
 
 使用文件引擎对象，添加逻辑以对文件设置和获取敏感度标签。 
 
-1. 使用**解决方案资源管理器**，包含 main （） 的实现在项目中打开.cs 文件中方法。 它默认与包含它的项目同名，即在项目创建期间指定的名称。 
+1. 使用“解决方案资源管理器”，打开项目中包含 Main()` 方法的实现的 .cs 文件  。 它默认与包含它的项目同名，即在项目创建期间指定的名称。 
 
 2. 在 `Main()` 正文的末尾，在 `Console.ReadKey()` 下面并在 `}` 上面（在上一快速入门中离开的位置），插入以下代码：
 
@@ -72,7 +72,7 @@ ms.locfileid: "60173217"
 
 3. 使用以下值替换刚才粘贴的源代码中的占位符值：
 
-   | 占位符 | ReplTest1 |
+   | 占位符 | 值 |
    |:----------- |:----- |
    | \<input-file-path\> | 测试输入文件的完整路径，例如：`c:\\Test\\Test.docx`。 |
    | \<label-id\> | 敏感度标签 ID，从上一快速入门中的控制台输出所复制，例如：`f42a3342-8706-4288-bd31-ebb85995028z`。 |
@@ -82,9 +82,9 @@ ms.locfileid: "60173217"
 
 生成和测试客户端应用程序。 
 
-1. 使用 CTRL-SHIFT-B (**生成解决方案**) 来生成客户端应用程序。 如果没有生成错误，请使用 F5（开始调试）来运行应用程序。
+1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序  。 如果没有生成错误，请使用 F5（开始调试  ）来运行应用程序。
 
-2. 如果你的项目成功生成和运行，应用程序*可能*提示进行身份验证通过 ADAL 每个时间的 SDK 调用你`AcquireToken()`方法。 如果存在缓存的凭据，不会提示您登录，并查看标签的列表后, 跟在应用的标签上的信息和修改文件。
+2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已存在缓存凭据，则不会提示登录和查看标签列表（后跟已应用的标签和已修改的文件的相关信息）。
 
   ```console   
   Personal : 73c47c6a-eb00-4a6a-8e19-efaada66dee6

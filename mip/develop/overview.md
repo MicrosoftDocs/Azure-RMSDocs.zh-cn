@@ -8,20 +8,20 @@ ms.collection: M365-security-compliance
 ms.date: 01/18/2019
 ms.author: mbaldwin
 ms.openlocfilehash: d8efb7ceef890d0c2a0ea72f64d3047e0cfb25a5
-ms.sourcegitcommit: 682dc48cbbcbee93b26ab3872231b3fa54d3f6eb
-ms.translationtype: MT
+ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 05/27/2019
 ms.locfileid: "60184937"
 ---
 # <a name="overview"></a>概述
 
 ## <a name="microsoft-information-protection"></a>Microsoft 信息保护
 
-Microsoft 信息保护 (MIP) 是 Microsoft 的分类、 标记和保护服务的统一：
+Microsoft 信息保护 (MIP) 统一了 Microsoft 的分类、标记与保护服务：
 
 - 它跨 Office 365、Azure 信息保护、Windows 信息保护和其他 Microsoft 服务提供统一管理。 
-- 第三方可以使用 MIP SDK 集成的应用程序，使用标记架构和保护服务的标准、 一致的数据。
+- 第三方可以通过 MIP SDK 使用标准一致的数据标记架构和保护服务与应用程序集成。
 
 * [什么是 Office 365 安全与合规中心？](https://docs.microsoft.com/office365/securitycompliance/)
 * [什么是 Azure 信息保护？](/azure/information-protection/understand-explore/what-is-information-protection)
@@ -29,7 +29,7 @@ Microsoft 信息保护 (MIP) 是 Microsoft 的分类、 标记和保护服务的
 
 ## <a name="microsoft-information-protection-sdk"></a>Microsoft 信息保护 SDK
 
-MIP SDK 公开的标记和保护服务从 Office 365 安全与合规中心，第三方应用程序和服务。 开发人员可以使用 SDK 生成本机支持，以便为文件应用标签和保护。 开发人员可以推断在检测到特定标签时应执行哪些操作，并推断 MIP 加密信息。 
+MIP SDK 将 Office 365 安全与合规中心的标记和保护服务公开给第三方应用程序和服务。 开发人员可以使用 SDK 生成本机支持，以便为文件应用标签和保护。 开发人员可以推断在检测到特定标签时应执行哪些操作，并推断 MIP 加密信息。 
 
 应用于 Microsoft 服务套件中的信息的标签和保护是**一致**的。 一致性允许支持 MIP 的应用程序和服务以可预测的通用方式读取和写入标签。
 
@@ -47,5 +47,5 @@ MIP SDK 公开的标记和保护服务从 Office 365 安全与合规中心，第
 
 ## <a name="next-steps"></a>后续步骤
 
-现在你已准备好开始使用该 SDK。 将需要执行的第一件事是[完成 MIP SDK 安装和配置步骤](setup-configure-mip.md)。 这些步骤将确保你的 Office 365 订阅和客户端计算机已正确设置。
+现在你已准备好开始使用该 SDK。 首先需要[完成 MIP SDK 安装和配置步骤](setup-configure-mip.md)。 这些步骤可确保正确设置 Office 365 订阅和客户端计算机。
 

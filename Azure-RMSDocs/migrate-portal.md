@@ -4,19 +4,19 @@ description: 概览 Azure 门户中的管理任务，这些任务过去在 Azure
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/04/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 818d1f16d28a2d2b1b485aab9ddfdff5b9d814a9
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 11dd9622e273874c83592ad5077bfac637ae64cc
+ms.sourcegitcommit: e366a19300be4165da05ec7ee592f883c467bb51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60184172"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66269840"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>曾使用 Azure 经典门户执行的任务
 
@@ -56,7 +56,7 @@ Azure 门户中的新功能：
 
 - 可以将模板转换为标签，以便管理单个对象，而不是独立管理模板和标签。 有关说明，请参阅[将模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)。
 
-- 对其他管理员角色的支持：尽管必须以全局管理员身份登录 Azure 经典门户才能配置 Azure 权限管理，但也可通过使用具有以下任一管理角色的帐户登录 Azure 门户来配置 Azure 信息保护：全局管理员、安全管理员、合规性管理员或信息保护管理员。 有关其中每个角色的详细信息，请参阅 Azure Active Directory 文档的[可用角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)部分。
+- 对其他管理员角色的支持：尽管必须以全局管理员身份登录 Azure 经典门户才能配置 Azure 权限管理，但也可通过使用具有以下任一管理角色的帐户登录 Azure 门户来配置 Azure 信息保护：**全局管理员**，**安全管理员**，**合规性管理员**，或**Azure 信息保护管理员**。 有关其中每个角色的详细信息，请参阅 Azure Active Directory 文档的[可用角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)部分。
 
 用于创建和管理模板的 PowerShell cmdlet 以及用于激活或停用该服务的 PowerShell cmdlet 将继续受支持，不会更改。
 
