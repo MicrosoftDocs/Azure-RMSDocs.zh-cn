@@ -4,23 +4,23 @@ description: 查看你是否拥有可以开始对组织的文档和电子邮件�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/15/2019
+ms.date: 06/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a67f95bb3d7683de901a557c22971eee6d7b0c25
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 75aea1cf43c6e6ca66dbca611946c4366fe8280d
+ms.sourcegitcommit: 1b8e87bda58bb40f3e32b2edf264385e7235b7c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181593"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462220"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 在为组织部署 Azure 信息保护之前，请确保你的组织租户在 Azure AD 中具有用户和组帐户。
 
@@ -78,7 +78,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
     - 对于 Azure AD：[将自定义域名添加到 Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 
-    - 对于 Office 365：[将域添加到 Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
+    - 适用于 Office 365:[将域添加到 Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
 
 - 仅当租户中的帐户在 Azure AD proxyAddresses 属性中没有值时，才会使用 **Azure AD userPrincipalName** 属性。 例如，你可以在 Azure 门户中创建用户，或者创建没有邮箱的 Office 365 用户。
 
@@ -120,7 +120,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 同步帐户时，无需同步所有属性。 有关必须同步的属性列表，请参阅 Azure Active Directory 文档中的 [Azure RMS 部分](/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#azure-rms)。
 
-从 Azure 权限管理的属性列表中可以看到，对于用户而言，需要本地 AD属性 mail、proxyAddresses 和 userPrincipalName 进行同步。 **mail** 和 **proxyAddresses** 的值同步到 Azure AD proxyAddresses 属性。 有关详细信息，请参阅[如何在 Azure AD 中填充 proxyAddresses 属性](https://support.microsoft.com/help/3190357/how-the-proxyaddresses-attribute-is-populated-in-azure-ad)
+从 Azure 权限管理的属性列表中可以看到，对于用户而言，需要本地 AD属性 mail  、proxyAddresses  和 userPrincipalName  进行同步。 **mail** 和 **proxyAddresses** 的值同步到 Azure AD proxyAddresses 属性。 有关详细信息，请参阅[如何在 Azure AD 中填充 proxyAddresses 属性](https://support.microsoft.com/help/3190357/how-the-proxyaddresses-attribute-is-populated-in-azure-ad)
 
 ## <a name="confirming-your-users-and-groups-are-prepared-for-azure-information-protection"></a>确认已准备好用户和组以使用 Azure 信息保护
 
@@ -147,7 +147,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 然后查看是否填充了 **ProxyAddresses** 列。 如果是，可使用此列中的电子邮件值授权用户以使用 Azure 信息保护。
 
-如果“ProxyAddresses”列未填充，则使用“UserPrincipalName”中的值授权用户以用于 Azure 权限管理服务。
+如果“ProxyAddresses”  列未填充，则使用“UserPrincipalName”  中的值授权用户以用于 Azure 权限管理服务。
 
 例如：
 
