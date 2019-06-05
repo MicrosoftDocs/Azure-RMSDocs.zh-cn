@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/31/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4d1da800b43ecfc3fcb91881dc5462e4758ffbb7
-ms.sourcegitcommit: aa13e56ae0ff0dea79e83335a6ecaf45e34e9d8c
+ms.openlocfilehash: 42b2bfefae33c4f1e725a24420dff4a553f5153f
+ms.sourcegitcommit: 746bb029d185ac13f36482bb9a39200ab5445dbe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2019
-ms.locfileid: "66458221"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66507106"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -36,9 +36,28 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 ### <a name="servicing-information-and-timelines"></a>维护信息和日程表
 
-在发布新的通用版本 (GA) 前，原有的 Azure 信息保护客户端的支持期限最多为六个月。 文档不包括关于不支持的客户端版本的信息。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
+在发布新的通用版本 (GA) 前，原有的 Azure 信息保护客户端的支持期限最多为六个月。 除了本部分中，文档不包括不受支持版本的客户端有关的信息。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
 
 不应在生产网络上为最终用户部署预览版本。 而是使用最新预览版来查看和试用即将在下一 GA 版本中推出的新功能或修补程序。 仅支持当前预览版。
+
+##### <a name="general-availability-versions-that-are-no-longer-supported"></a>不再受支持的正式发布版本：
+
+|客户端版本|发布日期|
+|--------------|--------------------------|
+|1.37.19.0|2018 年 09 月 17 日|
+|1.29.5.0|2018 年 06 月 26 日|
+|1.27.48.0|2018 年 05 月 30 日|
+|1.26.6.0|04/17/2018|
+|1.10.56.0|09/18/2017|
+|1.7.210.0|06/06/2017|
+|1.4.21.0|03/15/2017|
+|1.3.155.2|02/08/2017|
+|1.2.4.0|10/27/2016|
+|1.1.23.0|10/01/2016|
+
+开始 6/2/2019，Azure 信息保护标记服务需要使用 TLS 1.2 的连接。
+
+所有客户端版本从 1.4.21.0 发布 03/15/2017年支持 TLS 1.2。 客户端版本**1.3.155.2**， **1.2.4.0**，并**1.1.23.0**不使用 TLS 1.2，因此不能再下载 Azure 信息保护策略。
 
 ### <a name="release-history"></a>版本历史
 
@@ -134,6 +153,8 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 ## <a name="version-141510"></a>版本 1.41.51.0
 
 **发布日期**：2018 年 11 月 27 日
+
+通过 10/16/2019年支持
 
 此版本包括 RMS 客户端的 MSIPC 1.0.3592.627 版本。
 
