@@ -4,23 +4,23 @@ description: 此信息可帮助你配置将使用 Azure Rights Management (RMS) 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 06/06/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 023d35152f1afbd8bba60366bfb2beec37905b91
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: e35aad25d0e065cda255d880b3605056d83c30f7
+ms.sourcegitcommit: d4540d8c535cd858550d6f62149fb8096b0ccd40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60179993"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66719820"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
->适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
 
 
 使用以下信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 5。
@@ -100,7 +100,7 @@ ms.locfileid: "60179993"
     > [!NOTE]
     > 此工具可以配置将与 RMS 连接器通信并已在本部分开头列出的服务器。 不要在运行 RMS 连接器的服务器上运行此工具。
 
-4.  使用“以管理员身份运行”选项启动 Windows PowerShell，然后使用 Get-help 命令阅读有关如何将工具用于你选择的配置方法的说明：
+4.  使用“以管理员身份运行”  选项启动 Windows PowerShell，然后使用 Get-help 命令阅读有关如何将工具用于你选择的配置方法的说明：
 
     ```
     Get-help .\GenConnectorConfig.ps1 -detailed
@@ -168,10 +168,7 @@ ms.locfileid: "60179993"
 
    -   使用 [RMS 连接器的注册表设置](rms-connector-registry-settings.md)中的信息，在服务器上手动添加注册表设置，进行手动注册表编辑。 
 
-3. 通过[为内部消息启用 IRM](https://technet.microsoft.com/library/bb124077(v=exchg.150).aspx#Anchor_1) 来启用 Exchange 的 IRM 功能。
-
-    > [!NOTE]
-    > 默认情况下，运行 **Set-IRMConfiguration -InternalLicensingEnabled $true** 后，出为邮箱启用 IRM 外，还将为 Outlook Web 应用和移动设备自动启用 IRM。 但管理员可以在不同级别禁用 IRM，例如，针对客户端访问服务器、Outlook Web App 虚拟目录或 Outlook Web App 邮箱策略，以及移动设备邮箱策略禁用。 如果用户在 Outlook Web App 中（等待一天后）或在移动设备上无法看到任何 Azure RMS 模板，而在 Outlook 客户端中能够看到这些模板，请检查相关设置，确保未禁用 IRM。 有关详细信息，请参阅 Exchange 文档中的 [Enable or Disable Information Rights Management on Client Access Servers](https://technet.microsoft.com/library/dd876938(v=exchg.150).aspx)（在客户端访问服务器上启用或禁用信息权限管理）。 
+3. 为 Exchange 启用 IRM 功能，通过使用 Exchange PowerShell cmdlet [Set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps)并设置`InternalLicensingEnabled $true`和`ClientAccessServerEnabled $true`。
 
 
 ## <a name="configuring-a-sharepoint-server-to-use-the-connector"></a>将 SharePoint 服务器配置为使用连接器
@@ -251,7 +248,7 @@ ms.locfileid: "60179993"
 ## <a name="next-steps"></a>后续步骤
 由于已安装并配置 RMS 连接器，并且服务器已配置为使用该连接器，IT 管理员和用户可以使用 Azure Rights Management Services 保护和使用电子邮件与文档。 若要让用户轻松使用此功能，请部署 Azure 信息保护客户端，它会安装 Office 的外接程序并在文件资源管理器中添加新的右键单击选项。 有关详细信息，请参阅 [Azure 信息保护客户端管理员指南](./rms-client/client-admin-guide.md)。
 
-请注意，若要配置用于 Exchange 传输规则或 Windows Server FCI 的部门模板，范围配置必须包含应用程序兼容性选项，以选中“如果应用程序不支持用户标识，则向所有用户显示此模板”复选框。
+请注意，若要配置用于 Exchange 传输规则或 Windows Server FCI 的部门模板，范围配置必须包含应用程序兼容性选项，以选中“如果应用程序不支持用户标识，则向所有用户显示此模板”  复选框。
 
 可以使用 [Azure 信息保护部署路线图](deployment-roadmap.md)，检查向用户和管理员推出 Azure Rights Management 之前是否还需要执行其他配置步骤。
 

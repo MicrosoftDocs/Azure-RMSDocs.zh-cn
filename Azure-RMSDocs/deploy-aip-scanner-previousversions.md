@@ -4,18 +4,18 @@ description: 版本早于当前通用版本的 Azure 信息保护扫描程序的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/28/2019
+ms.date: 06/06/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: fab3faaa4d2fd46215021f2c3bfda9e020b06434
-ms.sourcegitcommit: 6d928a7154c445ed9a82a07b350c6437d2949117
+ms.openlocfilehash: a894513d26a78daefc7d8032f1afa754ece74028
+ms.sourcegitcommit: d4540d8c535cd858550d6f62149fb8096b0ccd40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66411765"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66719840"
 ---
 # <a name="deploying-previous-versions-of-the-azure-information-protection-scanner"></a>部署 Azure 信息保护扫描程序的早期版本
 
@@ -416,7 +416,7 @@ Azure 信息保护扫描程序支持两种备选方案，在任何一种方案�
 
 - 文件自身：
     
-    - 扫描 Office 文件比扫描 PDF 文件耗时更短。
+    - Excel 文件，除了 Office 文件是更快地扫描比 PDF 文件。
     
     - 扫描未受保护的文件比扫描受保护的文件耗时更短。
     
