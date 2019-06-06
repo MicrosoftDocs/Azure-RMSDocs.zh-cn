@@ -47,7 +47,7 @@ ms.locfileid: "65780860"
 
 1. 对于想存储在 Azure Key Vault 中的每个导出的 SLC 密钥，请按照 Azure Key Vault 文档中的说明，使用[为 Azure Key Vault 实现自带密钥 (BYOK)](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)，但以下情况例外：
 
-   - 不要执行**生成你的租户密钥**中的步骤，因为你已从 AD RMS 部署获得等效物。 相反，标识从 nCipher 安装 AD RMS 服务器使用的密钥，并在迁移期间使用此密钥。 nCipher 加密密钥文件通常名为**密钥 <*keyAppName*><*keyIdentifier* >** 本地服务器上。
+   - 不要执行**生成你的租户密钥**中的步骤，因为你已从 AD RMS 部署获得等效物。 相反，标识从 nCipher 安装 AD RMS 服务器使用的密钥，并在迁移期间使用此密钥。 nCipher 加密密钥文件通常名为 **密钥<*keyAppName*><*keyIdentifier*>** 本地服务器上。
 
      将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 输出结果将会类似于 https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure Rights Management 服务将此密钥用作其租户密钥。
 
