@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: 0c757c8b599215e78bc30f50a05fbedf83d67481
-ms.sourcegitcommit: 746bb029d185ac13f36482bb9a39200ab5445dbe
+ms.openlocfilehash: 47a92d57b9408a1ba0a5b2d82240e24783718e60
+ms.sourcegitcommit: 1ec4b926885331cb4bb31bbd5074c874205f49d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66507147"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749986"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -65,7 +65,7 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 |功能|Azure 信息保护客户端|Azure Information Protection<br /> 统一标记客户端|
 |-------|-----------------------------------|----------------------------------------------------|
 |标记操作：手动、建议、自动| 是 | 是 |
-|中心报告（分析）：| 是 | 是 |
+|中心报告（分析）：| 是 | 是；但具有限制：<br /><br /> -不支持[内容匹配](../reports-aip.md#content-matches-for-deeper-analysis) |
 |重置设置和导出日志：| 是 | 是 |
 |用户定义的权限：| 是 | 仅适用于 Outlook（不要转发） |
 |自定义权限：| 是 | 仅文件资源管理器 <br /><br /> 在 Office 应用程序中，作为替代方法，用户可以选择“文件信息” > “保护文档”    > “限制访问”  |

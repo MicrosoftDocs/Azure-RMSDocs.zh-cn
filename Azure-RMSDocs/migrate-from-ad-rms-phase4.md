@@ -4,19 +4,19 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 4 阶段包括从 AD 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/06/2019
+ms.date: 06/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c1f05e8e08ea8e2fb6d94cbe6d4a89cf55ddeed2
-ms.sourcegitcommit: d4540d8c535cd858550d6f62149fb8096b0ccd40
+ms.openlocfilehash: 064cf6db8551caa12bb06540fd598f70f02e6c0d
+ms.sourcegitcommit: bdaf9809fcf78602ec7675c04f97ad5d3cc47b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66719791"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66748347"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
@@ -62,7 +62,7 @@ ms.locfileid: "66719791"
 > [!IMPORTANT]
 > 如果你尚未在任何 Exchange 服务器上配置 IRM，不要只是步骤 2 和 6。
 > 
-> 如果所有 AD RMS 群集的所有 Url 不会都显示在执行所有这些步骤*LicensingLocation*参数运行时[Get-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)。
+> 如果所有 AD RMS 群集的所有授权 Url 不会显示在执行所有这些步骤*LicensingLocation*参数运行时[Get-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)。
 
 1. 在每个 Exchange Server 上，找到以下文件夹，并删除该文件夹中的所有条目： **\ProgramData\Microsoft\DRM\Server\S-1-5-18**
 
@@ -75,7 +75,7 @@ ms.locfileid: "66719791"
         $list += "<Your Tenant URL>/_wmcs/licensing"
         Set-IRMConfiguration -LicensingLocation $list
     
-    现在，当你运行[Get-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)，您应看到所有 AD RMS 群集 Url 并且为显示你的 Azure Rights Management 服务 URL *LicensingLocation*参数。
+    现在，当你运行[Get-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)，你应看到许可 Url 和 Azure Rights Management 服务 URL 为显示所有 AD RMS 群集*LicensingLocation*参数。
 
 3.  现在对向外部收件人发送的消息禁用 IRM 功能：
 
