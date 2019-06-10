@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 06/05/2019
+ms.date: 06/08/2019
 manager: barbkess
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 500786b518f5d95c464d4538a3d8bdefd030a3eb
-ms.sourcegitcommit: 746bb029d185ac13f36482bb9a39200ab5445dbe
+ms.openlocfilehash: 84e3e4231c07f2234baa717d1be2c29386ed44ca
+ms.sourcegitcommit: 886aebde3b2df0f54b7bd41105823db44aea72d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66507175"
+ms.lasthandoff: 06/08/2019
+ms.locfileid: "66815606"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -130,7 +130,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 收集内容匹配项后，当你向下钻取到活动日志中的文件以显示活动详细信息  时，这些匹配项项将显示在报表中。 也可以使用查询来查看和检索此信息。
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>先决条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
 
 |要求|更多信息|
@@ -155,6 +155,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
         - **Azure 信息保护管理员**
         - **安全管理员**
         - **合规性管理员**
+        - **符合性数据管理器**
         - **全局管理员**
     
     - 创建该工作区后，可以使用具有较少权限的以下角色来查看收集的数据：

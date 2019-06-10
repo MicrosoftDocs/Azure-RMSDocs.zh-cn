@@ -4,21 +4,21 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/29/2019
+ms.date: 06/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: d23df32bf3af4625cbb98579fa93a4bef8443be3
-ms.sourcegitcommit: e366a19300be4165da05ec7ee592f883c467bb51
+ms.openlocfilehash: fc85cfcdcef82c4b30df7bc88ac054ee0bc172c5
+ms.sourcegitcommit: 886aebde3b2df0f54b7bd41105823db44aea72d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66269820"
+ms.lasthandoff: 06/08/2019
+ms.locfileid: "66815617"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
->适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用对象： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 是否有关于 Azure 信息保护或 Azure Rights Management 服务 (Azure RMS) 的问题？ 请查看此处是否有答案。
 
@@ -56,7 +56,7 @@ ms.locfileid: "66269820"
 
 这两个客户端时安装它们，显示**Azure 信息保护**。 若要帮助您识别已安装的客户端，请使用**帮助和反馈**选项来打开**Microsoft Azure 信息保护**对话框：
 
-- 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”。
+- 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”   。
 
 - 从 Office 应用程序：从**保护**按钮 （Azure 信息保护客户端） 或**敏感度**按钮 （Azure 信息保护统一标记的客户端），选择**帮助和反馈**.
 
@@ -80,7 +80,7 @@ ms.locfileid: "66269820"
 
 - 如果拥有 [Azure 信息保护客户端](./rms-client/aip-client.md)，请继续使用 Azure 门户编辑标签和策略设置。 Azure 信息保护客户端继续从 Azure 下载标签和策略设置。
 
-- 如果同时拥有[统一标签客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)和 [Azure 信息保护客户端](./rms-client/aip-client.md)，则可以使用管理中心或 Azure 门户进行标签更改。 但是，要使 Azure 信息保护客户端获得你在管理中心中所做的标签更改，则必须返回 Azure 门户：使用 Azure 门户中“Azure 信息保护 - 统一标签”边栏选项卡的“发布”选项。 
+- 如果同时拥有[统一标签客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)和 [Azure 信息保护客户端](./rms-client/aip-client.md)，则可以使用管理中心或 Azure 门户进行标签更改。 但是，要使 Azure 信息保护客户端获得你在管理中心中所做的标签更改，则必须返回 Azure 门户：使用 Azure 门户中“Azure 信息保护 - 统一标签”边栏选项卡的“发布”选项   。 
 
 继续使用 Azure 门户进行[集中报告](reports-aip.md)和[扫描程序](deploy-aip-scanner.md)。
 
@@ -117,9 +117,9 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
     
     若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。
 
-- **合规性管理员**：管理员角色允许管理员配置 Azure 信息保护，其中包括此 Azure Active Directory 激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置Azure 信息保护策略。 此外，具有此角色的管理员可以运行针对 [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)以及来自 [AADRM 模块](administer-powershell.md)的所有 PowerShell cmdlet。 但是，此角色不支持跟踪和撤销文档的用户。
+- **合规性管理员**或**符合性数据管理器**:管理员角色允许管理员配置 Azure 信息保护，包括这些 Azure Active Directory 激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置Azure 信息保护策略。 此外，具有其中一种角色的管理员可以运行的所有 PowerShell cmdlet [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)来回[AADRM 模块](administer-powershell.md)。 但是，这些角色不支持跟踪和撤销文档的用户。
     
-    若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。 若要查看具有此角色的用户还拥有哪些其他权限，请参阅 Azure Active Directory 文档的[可用角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)部分。
+    若要将用户分配到其中一种管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。 若要查看拥有的与这些角色的用户的其他权限，请参阅[可用的角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)Azure Active Directory 文档中的部分。
 
 - **安全读取者**：仅适用于 [Azure 信息保护分析](reports-aip.md)。 此 Azure Active Directory 管理员角色允许管理员查看标签的使用方式，监视用户对标记文档和电子邮件的访问权限以及对其分类所做的任何更改，并且可以识别包含必须受到保护的敏感信息的文档。 由于此功能使用 Azure Log Analytics，因此用户还必须具有支持的 [RBAC 角色](reports-aip.md#permissions-required-for-azure-information-protection-analytics)。
 
@@ -127,7 +127,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
     
     若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。 若要查看具有此角色的用户还拥有哪些其他权限，请参阅 Azure Active Directory 文档的[可用角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)部分。
 
-- Azure Rights Management 全局管理员和连接器管理员：对于这些 Azure Rights Management 管理员角色，第一个可授予用户权限以运行所有[来自 AADRM 模块的 PowerShell cmdlet](administer-powershell.md) 而不使其成为其他云服务的全局管理员，第二个角色授予权限来仅运行 Rights Management (RMS) 连接器。 既不管理角色授予对管理控制台的权限或支持跟踪和撤销文档的用户。
+- Azure Rights Management 全局管理员和连接器管理员   ：对于这些 Azure Rights Management 管理员角色，第一个可授予用户权限以运行所有[来自 AADRM 模块的 PowerShell cmdlet](administer-powershell.md) 而不使其成为其他云服务的全局管理员，第二个角色授予权限来仅运行 Rights Management (RMS) 连接器。 既不管理角色授予对管理控制台的权限或支持跟踪和撤销文档的用户。
 
     若要分配其中任一管理角色，请使用 AADRM PowerShell cmdlet [Add-aadrmrolebasedadministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator)。
 
@@ -173,7 +173,7 @@ Azure 信息保护不能进行分类和保护结构化的数据，例如数据�
 
 - 由于 Azure AD 2018 年 12 月预览版的发布，现在可以在用户第一次打开受保护文档之前提示他们接受使用条款。 有关详细信息，请参阅以下博客文章声明：[条件访问范围内对 Azure AD 使用条款功能的更新](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Updates-to-Azure-AD-Terms-of-Use-functionality-within/ba-p/294822)
 
-- 如果针对条件访问使用许多云应用，则列表中可能不会显示“Microsoft Azure 信息保护”选项，因此无法进行选择。 在这种情况下，可使用列表顶部的搜索框。 开始键入“Microsoft Azure 信息保护”，筛选可用应用。 如果已有受支持的订阅，则可以看到“Microsoft Azure 信息保护”选项，可进行选择。 
+- 如果针对条件访问使用许多云应用，则列表中可能不会显示“Microsoft Azure 信息保护”选项，因此无法进行选择  。 在这种情况下，可使用列表顶部的搜索框。 开始键入“Microsoft Azure 信息保护”，筛选可用应用。 如果已有受支持的订阅，则可以看到“Microsoft Azure 信息保护”选项，可进行选择  。 
 
 ## <a name="i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive"></a>我看到 Azure 信息保护被列为 Microsoft Graph 安全提供商，它是如何工作的？我将收到哪些警报？
 
@@ -201,9 +201,9 @@ Windows Server 文件分类基础结构在过去一直都有一个选项：对�
 
 目前，在本地文件夹或网络共享上受到保护的文件设置 [Rights Management 所有者](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)方面存在差异。 默认情况下，这两个解决方案的 Rights Management 所有者均设置为保护文件的帐户，但可以替代此设置：
 
-- 对于 Windows Server FCI：可以将所有文件的 Rights Management 所有者设置为单个帐户，也可以为每个文件动态设置 Rights Management 所有者。 若要动态设置 Rights Management 所有者，请使用 -OwnerMail [源文件所有者电子邮件] 参数和值。 此配置使用文件“所有者”属性中的用户帐户名从 Active Directory 检索用户的电子邮件地址。
+- 对于 Windows Server FCI：可以将所有文件的 Rights Management 所有者设置为单个帐户，也可以为每个文件动态设置 Rights Management 所有者。 若要动态设置 Rights Management 所有者，请使用 -OwnerMail [源文件所有者电子邮件] 参数和值  。 此配置使用文件“所有者”属性中的用户帐户名从 Active Directory 检索用户的电子邮件地址。
 
-- 对于 Azure 信息保护扫描程序：对于新受保护的文件，可以将指定数据存储上所有文件的 Rights Management 所有者设置为单个帐户，但不能为每个文件动态设置 Rights Management 所有者。 对先前受保护的文件，不更改 Rights Management 所有者。 若要为新的受保护的文件设置帐户，请在扫描程序配置文件中指定“-默认所有者”设置。 
+- 对于 Azure 信息保护扫描程序：对于新受保护的文件，可以将指定数据存储上所有文件的 Rights Management 所有者设置为单个帐户，但不能为每个文件动态设置 Rights Management 所有者。 对先前受保护的文件，不更改 Rights Management 所有者。 若要为新的受保护的文件设置帐户，请在扫描程序配置文件中指定“-默认所有者”  设置。 
 
 扫描程序保护 SharePoint 网站和库上的文件时，通过使用 SharePoint 编辑者值来动态地设置每个文件的 Rights Management 所有者。
 

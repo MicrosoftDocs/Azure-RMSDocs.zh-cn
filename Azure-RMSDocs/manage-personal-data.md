@@ -4,19 +4,19 @@ description: 有关 Azure 信息保护所使用的个人数据的信息以及如
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/29/2019
+ms.date: 06/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: e6563b3ac385ff19999d458a461fd2a4c8fa7061
-ms.sourcegitcommit: e366a19300be4165da05ec7ee592f883c467bb51
+ms.openlocfilehash: 91ce158ded8b9e7812f15737b8d07e5efdf5e3c0
+ms.sourcegitcommit: 886aebde3b2df0f54b7bd41105823db44aea72d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66269783"
+ms.lasthandoff: 06/08/2019
+ms.locfileid: "66815585"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
 
@@ -194,15 +194,15 @@ IsHiddenInfo         : False
 
 - 对于 RMS 客户端：%localappdata%\Microsoft\MSIPC\msip\Logs
 
-此外，Azure 信息保护客户端将此个人数据记录到本地 Windows 事件日志“应用程序和服务日志” > “Azure 信息保护”。
+此外，Azure 信息保护客户端将此个人数据记录到本地 Windows 事件日志“应用程序和服务日志”   > “Azure 信息保护”  。
 
 Azure 信息保护客户端运行扫描程序时，会将个人数据保存到运行此扫描程序的 Windows Server 计算机上的 %localappdata%\Microsoft\MSIP\Scanner\Reports。
 
 可使用以下配置，为 Azure 信息保护客户端和扫描程序禁用日志记录信息：
 
-- 对于 Azure 信息保护客户端：创建将“LogLevel”配置为“Off”的[高级客户端设置](./rms-client/client-admin-guide-customizations.md#change-the-local-logging-level)。
+- 对于 Azure 信息保护客户端：创建将“LogLevel”  配置为“Off”  的[高级客户端设置](./rms-client/client-admin-guide-customizations.md#change-the-local-logging-level)。
 
-- 对于 Azure 信息保护扫描程序：使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet 将“ReportLevel”参数设置为“Off”。
+- 对于 Azure 信息保护扫描程序：使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet 将“ReportLevel”  参数设置为“Off”  。
 
 [!INCLUDE [GDPR-related guidance](./includes/gdpr-hybrid-note.md)]
 
@@ -213,11 +213,13 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 - **合规性管理员**
 
+- **符合性数据管理器**
+
 - **安全管理员**
 
 - **全局管理员**
 
-查看和使用 AADRM 模块指定的个人数据是可访问仅向用户已获**Azure 信息保护管理员**，**合规性管理员**，或**全局管理员**角色从 Azure Active Directory 或 Azure Rights Management 服务的全局管理员角色。  
+查看和使用 AADRM 模块指定的个人数据是可访问仅向用户已获**Azure 信息保护管理员**，**合规性管理员**， **符合性数据管理器**，或**全局管理员**角色从 Azure Active Directory 或 Azure Rights Management 服务的全局管理员角色。  
 
 ## <a name="updating-personal-data"></a>更新个人数据
 
@@ -263,9 +265,9 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 **步骤 1：启动删除请求**
 [与 Microsoft 支持部门联系](information-support.md#to-contact-microsoft-support)，以打开带有删除租户数据请求的 Azure 信息保护支持案例。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 提交请求时，你将需要提供其他信息，具体取决于需要被删除的数据。
 
-- 若要删除管理日志，请提供结束日期。 将删除直到该结束日期的所有管理日志。
-- 若要删除使用情况日志，请提供结束日期。 将删除直到该结束日期的所有使用情况日志。
-- 若要删除文档跟踪日志，请提供 UserEmail。 将删除所有与 UserEmail 相关的文档跟踪信息。
+- 若要删除管理日志，请提供结束日期  。 将删除直到该结束日期的所有管理日志。
+- 若要删除使用情况日志，请提供结束日期  。 将删除直到该结束日期的所有使用情况日志。
+- 若要删除文档跟踪日志，请提供 UserEmail  。 将删除所有与 UserEmail 相关的文档跟踪信息。
 
 删除此数据是一种永久性操作。 处理完删除请求后，就无法恢复数据。 建议管理员在提交删除请求之前导出所需数据。
 
