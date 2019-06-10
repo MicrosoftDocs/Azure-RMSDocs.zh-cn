@@ -20,7 +20,7 @@ ms.locfileid: "65934976"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用此文章中的信息可帮助你规划和管理 Azure 信息保护租户密钥。 例如，为了遵守组织的具体规定，你不能让 Microsoft 管理你的租户密钥（默认设置），而想要自行管理租户密钥。 自行管理租户密钥也称为自带密钥 (BYOK)。
 
@@ -49,7 +49,7 @@ ms.locfileid: "65934976"
     
     这是最简单的选项，管理开销最低。 大多数情况下，你甚至不需要知道自己有租户密钥。 你只需注册 Azure 信息保护，密钥管理过程的剩余部分将由 Microsoft 处理。
 
-- **自行管理 (BYOK)**：如果要完全控制租户密钥，请结合使用 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) 和 Azure 信息保护。 对于此租户密钥拓扑，可以直接在 Key Vault 中创建密钥或本地创建密钥。 如果本地创建密钥，接着需要将此密钥传输或导入到 Key Vault 中。 然后将 Azure 信息保护配置为使用此密钥，并在 Azure Key Vault 中管理它。
+- **自行管理 (BYOK)** ：如果要完全控制租户密钥，请结合使用 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) 和 Azure 信息保护。 对于此租户密钥拓扑，可以直接在 Key Vault 中创建密钥或本地创建密钥。 如果本地创建密钥，接着需要将此密钥传输或导入到 Key Vault 中。 然后将 Azure 信息保护配置为使用此密钥，并在 Azure Key Vault 中管理它。
     
 
 ### <a name="more-information-about-byok"></a>有关 BYOK 的详细信息
@@ -128,17 +128,17 @@ ms.locfileid: "65934976"
 
     LicensingIntranetDistributionPointUrl : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing
 
-可以从 rms.na.aadrm.com 中标识区域，在此示例中，它位于北美。
+可以从 rms.na.aadrm.com 中标识区域，在此示例中，它位于北美  。
 
 通过下表确定推荐用于在最大程度上降低网络延迟的 Azure 区域或实例。
 
 |Azure 区域或实例|建议的密钥保管库位置|
 |---------------|--------------------|
-|rms.**na**.aadrm.com|美国中北部或美国东部|
-|rms.**eu**.aadrm.com|北欧或西欧|
-|rms.**ap**.aadrm.com|东亚或东南亚|
-|rms.**sa**.aadrm.com|美国西部或美国东部|
-|rms.**govus**.aadrm.com|美国中部或美国东部 2|
+|rms.**na**.aadrm.com|美国中北部或美国东部  |
+|rms.**eu**.aadrm.com|北欧或西欧  |
+|rms.**ap**.aadrm.com|东亚或东南亚  |
+|rms.**sa**.aadrm.com|美国西部或美国东部  |
+|rms.**govus**.aadrm.com|美国中部或美国东部 2  |
 
 
 ### <a name="instructions-for-byok"></a>BYOK 的说明
@@ -151,20 +151,20 @@ ms.locfileid: "65934976"
 
 为使 Azure 信息保护使用密钥，所有密钥保管库操作必须允许使用密钥。 这是默认配置和操作，包括加密、 解密、 wrapKey、 unwrapKey、 登录，并验证。 可以使用以下 PowerShell 命令来检查密钥的允许的操作： `(Get-AzKeyVaultKey -VaultName <key vault name> -Name <key name>).Attributes.KeyOps`。 如有必要，通过使用添加允许的操作[更新 AzKeyVaultKey](/powershell/module/az.keyvault/update-azkeyvaultkey)并*KeyOps*参数。
 
-Key Vault 中存储的密钥具有密钥 ID。 此密钥 ID 是包含密钥保管库名称、密钥容器、密钥名称和密钥版本的一个 URL。 例如：**https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**。 若要使用此密钥，必须通过指定其 Key Vault URL 来配置 Azure 信息保护。
+Key Vault 中存储的密钥具有密钥 ID。 此密钥 ID 是包含密钥保管库名称、密钥容器、密钥名称和密钥版本的一个 URL。 例如： **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333** 。 若要使用此密钥，必须通过指定其 Key Vault URL 来配置 Azure 信息保护。
 
 在 Azure 信息保护可以使用此密钥之前，必须授权 Azure Rights Management 服务在你组织的密钥保管库中使用该密钥。 要执行此操作，Azure Key Vault 管理员可以使用 Azure 门户或 Azure PowerShell：
 
 使用 Azure 门户进行配置：
 
-1. 依次导航至“密钥保管库” > \< 你的密钥保管库名称 > > “访问政策” > “添加新项”。
+1. 依次导航至“密钥保管库” > \< 你的密钥保管库名称 > > “访问政策” > “添加新项”      。
 
-2. 在“添加访问策略”边栏选项卡中，在“根据模板配置(可选)”列表框中选择“Azure 信息保护 BYOK”，然后单击“OK”。
+2. 在“添加访问策略”边栏选项卡中，在“根据模板配置(可选)”列表框中选择“Azure 信息保护 BYOK”，然后单击“OK”     。
     
     所选模板具有以下配置：
     
-    - 自动为“选择主体”分配“Microsoft Rights Management Services”。
-    - 自动选择“获取”、“解密”和“签名”作为关键权限。 
+    - 自动为“选择主体”分配“Microsoft Rights Management Services”   。
+    - 自动选择“获取”、“解密”和“签名”    作为关键权限。 
 
 使用 PowerShell 进行配置：
 
