@@ -4,19 +4,19 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
-ms.reviewer: eymanor
+ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: bd17dbf51042818250cbea95ee2738d516c76077
-ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
+ms.openlocfilehash: 4ef4a0d07154da9cb4b4b34d3b55264fa44f5fdf
+ms.sourcegitcommit: 95cbd8245b049a28556df79cc058668a1668599c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66186680"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67028711"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -49,11 +49,13 @@ ms.locfileid: "66186680"
 |Setting|应用场景和说明|
 |----------------|---------------|
 |DisableDNF|[在 Outlook 中隐藏或显示“不转发”按钮](#hide-or-show-the-do-not-forward-button-in-outlook)|
-|CompareSubLabelsInAttachmentAction|[启用子标签的排序支持](#enable-order-support-for-sublabels-on-attachments) 
+|CompareSubLabelsInAttachmentAction|[启用子标签的排序支持](#enable-order-support-for-sublabels-on-attachments)
+|ContentExtractionTimeout|[更改扫描程序的超时设置](#change-the-timeout-settings-for-the-scanner)
 |EnableBarHiding|[永久隐藏 Azure 信息保护栏](#permanently-hide-the-azure-information-protection-bar)|
 |EnableCustomPermissions|[设置用户是否能够使用自定义权限选项](#make-the-custom-permissions-options-available-or-unavailable-to-users)|
 |EnableCustomPermissionsForCustomProtectedFiles|[对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) |
 |EnablePDFv2Protection|[不使用 PDF 加密 ISO 标准来保护 PDF 文件](#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
+|FileProcessingTimeout|[更改扫描程序的超时设置](#change-the-timeout-settings-for-the-scanner)
 |LabelbyCustomProperty|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |LabelToSMIME|[将标签配置为在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook)|
 |日志级别|[更改本地日志记录级别](#change-the-local-logging-level)
@@ -856,6 +858,41 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - Value：**False**
 
+## <a name="change-the-timeout-settings-for-the-scanner"></a>更改扫描程序的超时设置
+
+此配置使用[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)必须在 Azure 门户中配置。
+
+默认情况下，Azure 信息保护扫描程序有 00:15:00 （15 分钟） 来检查各个文件的敏感信息类型或已配置为用于自定义条件的正则表达式表达式的超时期限。 超时时间已达到此内容提取过程，在超时之前的任何结果时，返回和进一步检查的文件会停止。 在此方案中，以下错误消息记录在 %*localappdata*%\Microsoft\MSIP\Logs\MSIPScanner.iplog （如果有多个日志 zip 格式）：**失败的 GetContentParts**与**该操作已取消**详细信息中。
+
+如果由于大型文件而遇到此超时问题，则可以增加完整内容提取此超时期限：
+
+- 密钥：**ContentExtractionTimeout**
+
+- 值：  **\<hh:min:sec >**
+
+文件类型可能会影响扫描文件所需的时间长度。 示例扫描次数：
+
+- 典型的 100MB Word 文件：0.5 5 分钟
+
+- 一个典型 100 MB 的 PDF 文件：5 到 20 分钟
+
+- 一个典型 100 MB 的 Excel 文件：12-30 分钟
+
+对于非常大，如视频文件的某些文件类型，请考虑中排除这些扫描通过添加到的文件扩展名**文件类型来扫描**扫描程序配置文件中的选项。
+
+此外，Azure 信息保护扫描程序具有 00:30:00 （30 分钟） 的每个文件，它可以处理超时时间。 此值会考虑可能需要从存储库中检索并暂时将其本地保存的措施，可以包括解密，以进行检查、 设置标签和加密的内容提取的时间。
+
+尽管 Azure 信息保护扫描程序可以扫描数十到数百个文件每分钟，如果您有大量的非常大的文件的数据存储库，扫描程序可以超过此默认超时期限，并且在 Azure 门户中，似乎停止后 30分钟数。 在此方案中，以下错误消息记录在 %*localappdata*%\Microsoft\MSIP\Logs\MSIPScanner.iplog （如果有多个日志 zip 格式） 和扫描程序.csv 日志文件：**该操作已取消**。
+
+4 核处理器，默认情况下使用扫描仪具有 16 个线程进行扫描，并在 30 分钟时间段内遇到 16 的大型文件的概率取决于大型文件的比。 例如，如果扫描速率是每分钟，200 个文件和文件的 1%超过 30 分钟超时，则扫描程序，仍会遇到 30 分钟超时情况超过 85%的概率。 这些超时可能会导致再扫描时间和更高内存消耗。
+
+在此情况下，如果您不能向扫描程序计算机添加更多核处理器，请考虑减小超时时间对于更好地扫描速率和较低的内存消耗，但将排除某些文件确认。 或者，考虑增加超时时间对于更准确的扫描结果，但此配置则可能会导致较低扫描费率的确认和更高内存消耗。
+
+若要更改文件处理的超时期限，请配置下列高级客户端设置：
+
+- 密钥：**FileProcessingTimeout**
+
+- 值：  **\<hh:min:sec >**
 
 ## <a name="change-the-local-logging-level"></a>更改本地日志记录级别
 

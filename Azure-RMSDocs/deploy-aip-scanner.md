@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: f86c1622e19b0ab5dc7bf274bd020203043bea0f
-ms.sourcegitcommit: d4540d8c535cd858550d6f62149fb8096b0ccd40
+ms.openlocfilehash: 7b3dad06485e3fe50b643cc9559b599cf780811f
+ms.sourcegitcommit: 95cbd8245b049a28556df79cc058668a1668599c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66719845"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67028699"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -497,12 +497,13 @@ Azure 信息保护扫描程序支持两种备选方案，在任何一种方案�
 
 - 此外：
     
-    - 确认运行扫描程序的服务帐户仅具有[扫描程序先决条件](#prerequisites-for-the-azure-information-protection-scanner)部分中记录的权限，然后再将[高级客户端属性](./rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner)配置为禁用扫描程序的低完整性级别。
+    - 确认运行扫描程序的服务帐户具有仅中所述的权限[扫描程序的先决条件](#prerequisites-for-the-azure-information-protection-scanner)部分，然后再配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner)禁用低完整性扫描程序的级别。
     
     - 在使用[备选配置](#using-the-scanner-with-alternative-configurations)将默认标签应用于所有文件时，扫描程序可以更快地运行，因为扫描程序不检查文件内容。
     
     - 如果你使用[替换配置](#using-the-scanner-with-alternative-configurations)标识所有自定义条件和已知敏感信息类型，扫描程序的运行速度会更慢。
     
+    - 您可以减少使用的扫描程序超时[高级客户端设置](./rms-client/client-admin-guide-customizations.md#change-the-timeout-settings-for-the-scanner)更好地扫描率和较低的内存消耗，但某些文件可能会跳过确认。
 
 ## <a name="list-of-cmdlets-for-the-scanner"></a>适用于扫描程序的 cmdlet 列表
 
