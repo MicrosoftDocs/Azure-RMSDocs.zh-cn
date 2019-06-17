@@ -4,23 +4,23 @@ description: 详细解说 Azure RMS 的工作原理、它使用的加密控件�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/08/2019
+ms.date: 06/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a60fbf43056673674f07f7dd8517213072f78aec
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 30c97d8e97bec8669fa4c8b6d2b4a2b5d31cca0a
+ms.sourcegitcommit: b24de99cf8006a70a14e7a21d103644c1e20502d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60183025"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "67149290"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 了解 Azure RMS 工作原理时的一个要点是，Azure 信息保护的这种数据保护服务不会在保护过程中查看或存储你的数据。 要保护的信息永远不会发送或存储到 Azure 中，除非你将其显式存储在 Azure 中，或者使用其他可在 Azure 中存储数据的云服务。 Azure RMS 只会在文档中保存数据，除已获授权的用户和服务以外，其他任何人都无法读取该文档：
 
@@ -64,11 +64,7 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 
 - 在从本地进行迁移的过程中 - 如果 AD RMS 群集在加密模式 1 中运行。
 
-- 在从本地进行迁移后 - 如果 AD RMS 群集使用 Exchange Online。
-
 - 用于迁移前在本地创建的存档密钥，以便迁移后可以继续通过 Azure Rights Management 服务打开先前由 AD RMS 保护的内容。
-
-- 如果客户选择使用 Azure Key Vault 来创建其自己的密钥 (BYOK)。 Azure 信息保护支持的密钥长度是 1024 位和 2048 位。 为了提高安全性，建议使用长度为 2048 位的密钥。
 
 ### <a name="how-the-azure-rms-cryptographic-keys-are-stored-and-secured"></a>如何存储和保护 Azure RMS 加密密钥
 
@@ -159,13 +155,13 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 
 - **RMS 连接器**：当 Azure Rights Management 服务与 RMS 连接器结合使用时，处理流程保持不变。 唯一的差别在于，连接器充当本地服务（如 Exchange Server 和 SharePoint Server）与 Azure Rights Management 服务之间的中继。 连接器本身不执行任何操作，例如用户环境初始化，或者加密或解密。 它只会中继通常要定向到 AD RMS 服务器的通信，处理每一端使用的协议之间的转换。 此方案让你可以将 Azure Rights Management 服务与本地服务结合使用。
 
-- **常规保护 (.pfile)**：当 Azure Rights Management 服务对文件提供一般性保护时，流程基本上与内容保护相同，不过，RMS 客户端将创建一个授予所有权限的策略。 使用该文件时，会先将它解密，然后将它传递到目标应用程序。 这种方案允许你保护所有文件，即使它们本机不支持 RMS。
+- **常规保护 (.pfile)** ：当 Azure Rights Management 服务对文件提供一般性保护时，流程基本上与内容保护相同，不过，RMS 客户端将创建一个授予所有权限的策略。 使用该文件时，会先将它解密，然后将它传递到目标应用程序。 这种方案允许你保护所有文件，即使它们本机不支持 RMS。
 
 - **Microsoft 帐户**：使用 Microsoft 帐户对电子邮件地址进行身份验证时，Azure 信息保护可以授权其可供使用。 但是，并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)。
 
 ## <a name="next-steps"></a>后续步骤
 
-若要了解 Azure Rights Management 服务的详细信息，请参阅“了解和探索”部分中的其他文章（如[应用程序如何支持 Azure Rights Management 服务](applications-support.md)），了解你的现有应用程序如何通过与 Azure Rights Management 集成来提供信息保护解决方案。 
+若要了解 Azure Rights Management 服务的详细信息，请参阅“了解和探索”  部分中的其他文章（如[应用程序如何支持 Azure Rights Management 服务](applications-support.md)），了解你的现有应用程序如何通过与 Azure Rights Management 集成来提供信息保护解决方案。 
 
 请查看 [Azure 信息保护术语](./terminology.md)，以便熟悉在配置和使用 Azure Rights Management 服务时可能遇到的术语。此外，还要确保在开始部署前查看 [Azure 信息保护的要求](requirements.md)。 如果要进一步研究并亲自尝试一下，请使用[编辑策略并创建新标签](infoprotect-quick-start-tutorial.md)教程。
 

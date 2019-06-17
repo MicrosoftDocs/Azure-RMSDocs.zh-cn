@@ -4,19 +4,19 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 5 阶段包括从 AD 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 06/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 15b8f2df4fe79b62073955b7c9626fe21e8ec201
-ms.sourcegitcommit: 3e948723644f19c935bc7111dec1cc54a1ff0231
+ms.openlocfilehash: fd0edb3f9ce5b820a7e19c84e8d04b433c007569
+ms.sourcegitcommit: b24de99cf8006a70a14e7a21d103644c1e20502d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65780875"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "67149273"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
@@ -31,13 +31,13 @@ ms.locfileid: "65780875"
 
 若要删除 SCP，请确保你已经以域企业管理员身份登录，然后使用以下过程：
 
-1. 在 Active Directory Rights Management Services 控制台中，右键单击 AD RMS 群集，然后单击“属性”。
+1. 在 Active Directory Rights Management Services 控制台中，右键单击 AD RMS 群集，然后单击“属性”  。
 
 2. 单击“SCP”选项卡  。
 
 3. 选中“更改 SCP”复选框  。
 
-4. 选择“删除当前 SCP”，然后单击“确定”。
+4. 选择“删除当前 SCP”  ，然后单击“确定”  。
 
 现在监视 AD RMS 服务器的活动。 例如，检查[系统运行状况报告中的请求](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx)、[ServiceRequest 表](https://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx)，或者[审核用户对受保护内容的访问权限](https://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx)。 
 
@@ -88,9 +88,9 @@ killall cfprefsd
 
 ````
 
-所有现有 Windows 计算机均已迁移到 Azure 信息保护后，便没有理由继续使用载入控件并保留针对迁移过程创建的 AIPMigrated 组了。 
+所有现有 Windows 计算机均已迁移到 Azure 信息保护后，便没有理由继续使用载入控件并保留针对迁移过程创建的 AIPMigrated  组了。 
 
-首先删除载入控件，然后才能删除 AIPMigrated 组和为了部署迁移脚本而创建的任何软件部署方法。
+首先删除载入控件，然后才能删除 AIPMigrated  组和为了部署迁移脚本而创建的任何软件部署方法。
 
 删除载入控件：
 
@@ -110,11 +110,13 @@ killall cfprefsd
 
     在输出中，**授权**应显示 **False**，并且对于 **SecurityGroupOjbectId** 未显示任何 GUID
 
-最后，如果使用的是 Office 2010 且已在 Windows 任务计划程序库中启用了“AD RMS 权限策略模板管理（自动）”任务，请禁用此任务，因为它不用于 Azure 信息保护客户端。 此任务通常是使用组策略启用的，它支持 AD RMS 部署。 可以在以下位置找到此任务：“Microsoft” > “Windows” > “Active Directory Rights Management Services 客户端”
+最后，如果使用的是 Office 2010 且已在 Windows 任务计划程序库中启用了“AD RMS 权限策略模板管理（自动）”任务，请禁用此任务，因为它不用于 Azure 信息保护客户端  。 此任务通常是使用组策略启用的，它支持 AD RMS 部署。 可以在以下位置找到此任务：“Microsoft” > “Windows” > “Active Directory Rights Management Services 客户端”   
 
 ## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>步骤 12： 重新生成 Azure 信息保护租户密钥
 
-如果 AD RMS 部署使用 RMS 加密模式 1，则迁移完成后建议执行此步骤。 重新生成密钥将生成保护，该保护使用 RMS 加密模式 2。 
+如果你的 AD RMS 部署正在使用 RMS 加密模式 1，因为此模式下使用 1024年位的密钥和 sha-1 完成迁移后时，此步骤是必需的。 此配置被视为提供了不充分的保护级别。 Microsoft 不赞同将较低的密钥长度，例如 1024年位 RSA 密钥的使用和关联的产品/服务的保护措施，如 sha-1 不足级别的协议。
+
+重新生成密钥保护使用 RMS 加密模式 2 中的结果，这会产生 2048年位密钥和 SHA-256。 
 
 虽然 AD RMS 部署使用加密模式 2，但仍建议执行此步骤，因为新密钥有助于保护租户避免 AD RMS 密钥的潜在安全漏洞。
 
@@ -128,7 +130,7 @@ killall cfprefsd
     
         (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-- **如果租户密钥由你管理 (BYOK)**：在 Azure Key Vault 中，为 Azure 信息保护租户重复密钥创建流程，然后再次运行 [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) cmdlet 以指定新密钥的 URI。 
+- **如果租户密钥由你管理 (BYOK)** ：在 Azure Key Vault 中，为 Azure 信息保护租户重复密钥创建流程，然后再次运行 [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) cmdlet 以指定新密钥的 URI。 
 
 若要详细了解如何管理 Azure 信息保护租户密钥，请参阅 [Azure 信息保护租户密钥操作](./operations-tenant-key.md)。
 
