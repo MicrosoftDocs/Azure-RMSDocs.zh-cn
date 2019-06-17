@@ -4,19 +4,19 @@ description: 不是由 Microsoft 管理 Azure 信息保护的根密钥，你可�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/16/2019
+ms.date: 06/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9e43e534b95ecef5fa412ffb75fd3659ad9f8bb3
-ms.sourcegitcommit: 8532536b778a26b971dba89436772158869ab84d
+ms.openlocfilehash: d23884de43f63798a86b4ade47cd8683d7444980
+ms.sourcegitcommit: b24de99cf8006a70a14e7a21d103644c1e20502d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934976"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "67149253"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
@@ -145,7 +145,9 @@ ms.locfileid: "65934976"
 
 使用 Azure Key Vault 文档创建密钥保管库以及要用于 Azure 信息保护的密钥。 请参阅[Azure Key Vault 入门](/azure/key-vault/key-vault-get-started)查看相关示例。
 
-确保密钥长度为 2048 位（推荐）或 1024 位。 Azure 信息保护不支持其他的密钥长度。
+确保密钥长度为 2048 位（推荐）或 1024 位。 Azure 信息保护不支持其他的密钥长度。 
+
+不要使用 1024年位密钥作为你的活动租户密钥，因为它被认为是提供了不充分的保护级别。 Microsoft 不赞同将较低的密钥长度，例如 1024年位 RSA 密钥的使用和关联的产品/服务的保护措施，如 sha-1 不足级别的协议。 我们建议移到更高版本的密钥长度。
 
 若要本地创建受 HSM 保护的密钥并将它传输到密钥保管库作为受 HSM 保护的密钥，请按照[如何为 Azure 密钥保管库生成和传输受 HSM 保护的密钥](/azure/key-vault/key-vault-hsm-protected-keys)中的过程进行操作。
 
