@@ -4,25 +4,25 @@ description: 确定对 Azure 信息保护租户密钥具有的不同级别控制
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9957e144a97006660f05484db7df7ff86622e0e7
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 571e16ace6c661da6db766d3338312fe45e8f886
+ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181559"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67156750"
 ---
 # <a name="operations-for-your-azure-information-protection-tenant-key"></a>Azure 信息保护租户密钥的操作
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
-根据你的租户密钥拓扑，可以对 Azure 信息保护租户密钥进行不同级别的控制并承担相应责任。 两种密钥拓扑分别由 Microsoft 托管和客户托管。
+根据你的租户密钥拓扑，可以对 Azure 信息保护租户密钥进行不同级别的控制并承担相应责任。 两种密钥拓扑分别由 Microsoft 托管和客户托管。  
 
 这种在 Azure 密钥保管库中自行管理租户密钥的方式通常称为“自带密钥”(BYOK)。 有关此方案以及如何在这两种租户密钥拓扑之间进行选择的详细信息，请参阅[计划和实现你的 Azure 信息保护租户密钥](plan-implement-tenant-key.md)。
 

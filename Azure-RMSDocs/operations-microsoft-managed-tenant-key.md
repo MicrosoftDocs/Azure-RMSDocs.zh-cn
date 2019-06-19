@@ -4,23 +4,23 @@ description: 当 Microsoft 管理 Azure 信息保护租户密钥（默认）时�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d9fc409faedf8083dae6730f866c12bdd84255ce
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 91672443e149a54dea4805bae10d8656129d04f9
+ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60184036"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67156776"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 如果由 Microsoft 管理 Azure 信息保护的租户密钥（默认），请阅读以下部分，获取与此拓扑相关的生命周期操作的详细信息。
 
@@ -68,12 +68,12 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 ### <a name="step-3-receive-key-instructions-from-css"></a>步骤 3：接收来自 CSS 的密钥说明
 
-- Microsoft 客户支持服务 (CSS) 将 Azure 信息保护配置和在一个受密码保护的文件中加密的租户密钥发送给用户。 此文件的文件扩展名为 .tpd。 执行此操作时，CSS 首先通过电子邮件向你（即启动导出的人员）发送一个工具。 你必须从命令提示符处运行该工具，如下所示：
+- Microsoft 客户支持服务 (CSS) 将 Azure 信息保护配置和在一个受密码保护的文件中加密的租户密钥发送给用户。 此文件的文件扩展名为 .tpd  。 执行此操作时，CSS 首先通过电子邮件向你（即启动导出的人员）发送一个工具。 你必须从命令提示符处运行该工具，如下所示：
 
     ```
     AadrmTpd.exe -createkey
     ```
-    这样可以生成 RSA 密钥对，并将公有部分和私有部分保存为当前文件夹中的文件。 例如：PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt 和 PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt。
+    这样可以生成 RSA 密钥对，并将公有部分和私有部分保存为当前文件夹中的文件。 例如：PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt 和 PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt   。
 
     回复来自 CSS 的电子邮件，附加名称以 **PublicKey** 开头的文件。 CSS 随后向你发送一个作为 .xml 文件的 TPD 文件，该文件使用你的 RSA 密钥进行加密。 将此文件复制到与你最初运行 AadrmTpd 工具时的相同文件夹，并使用以 **PrivateKey** 开头的文件和来自 CSS 的文件再次运行该工具。 例如：
 

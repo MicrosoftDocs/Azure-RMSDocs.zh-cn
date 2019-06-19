@@ -4,23 +4,23 @@ description: 通过使用 Rights Management 连接器识别可使用 Azure 信�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e298fc08c610e5587aa6b8e4007f64aae2b0da42
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 8e160908ac568b0657cc92b838959eb95da624b3
+ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181474"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67156655"
 ---
 # <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用 Azure Rights Management 连接器时 Azure 信息保护支持以下本地服务器产品。 该连接器充当本地服务器和 Azure Rights Management 服务（Azure 信息保护使用该服务保护 Office 文档和电子邮件）之间的通信接口（中继）。 
 

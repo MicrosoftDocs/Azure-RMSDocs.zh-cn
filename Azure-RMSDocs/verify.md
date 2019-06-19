@@ -4,23 +4,23 @@ description: 有关使用一个用户帐户来保护文件或电子邮件，然�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3fd211e3a40826e9803210c0005ab8acdd1d03ea
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: fbc2cff29997ea3b824d900e2d96b27c65a575f2
+ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60180794"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67156605"
 ---
 # <a name="verifying-the-azure-rights-management-service"></a>验证 Azure Rights Management 服务
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 在激活 Azure 信息保护的 Azure Rights Management 服务，并执行组织需要的其他所有配置步骤后，就可以验证此保护服务是否正常运行。 
 

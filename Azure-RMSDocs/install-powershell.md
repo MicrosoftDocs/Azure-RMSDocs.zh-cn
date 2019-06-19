@@ -4,29 +4,29 @@ description: 安装适用于 Azure 信息保护中的 Azure Rights Management �
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 789c3178827e52c27759268b1340b53c3add1c39
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 0069503146d5847935fa1b86769a9968c2a5e2b1
+ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181712"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67156814"
 ---
 # <a name="installing-the-aadrm-powershell-module"></a>安装 AADRM PowerShell 模块
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用对象：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用以下信息帮助安装适用于 Azure 信息保护中的 Azure Rights Management 服务的 Windows PowerShell 模块。 此模块的名称是 AADRM。
 
 在任何具有 Internet 连接且满足下一节列出的先决条件的计算机上，可以使用此 PowerShell 模块从命令行管理 Azure Rights Management 服务。 适用于 Azure Rights Management 的 Windows PowerShell 支持脚本的自动化，或者可能是高级配置方案所必需的。 若要深入了解此模块支持的管理任务和配置，请参阅[使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 此表列出了安装和使用适用于 Azure 信息保护中的 Azure Rights Management 服务的 AADRM PowerShell 模块的先决条件。
 
 |要求|更多信息|
@@ -38,7 +38,7 @@ ms.locfileid: "60181712"
 
 > [!NOTE]
 > 
-> 如果你安装有带 Azure Rights Management 管理工具的 AADRM 模块版本，请在从 PowerShell 库中安装最新版本的 AADRM 模块之前使用“程序和功能”卸载“Windows Azure AD Rights Management 管理”。
+> 如果你安装有带 Azure Rights Management 管理工具的 AADRM 模块版本，请在从 PowerShell 库中安装最新版本的 AADRM 模块之前使用“程序和功能”  卸载“Windows Azure AD Rights Management 管理”  。
 
 
 ## <a name="how-to-install-the-aadrm-module"></a>如何安装 AADRM 模块
@@ -51,7 +51,7 @@ AADRM 模块已移至 [PowerShell 库](/powershell/gallery/readme)，且不能�
 
 若要在 PowerShell 库上查看有关 AADRM 模块的详细信息，请访问 [AADRM 页面](https://www.powershellgallery.com/packages/AADRM)。
 
-要安装 AADRM 模块，请使用“以管理员身份运行”选项启动 Windows PowerShell 会话，然后键入：
+要安装 AADRM 模块，请使用“以管理员身份运行”  选项启动 Windows PowerShell 会话，然后键入：
 
     Install-Module -Name AADRM
 
@@ -69,7 +69,7 @@ AADRM 模块已移至 [PowerShell 库](/powershell/gallery/readme)，且不能�
 (Get-Module AADRM –ListAvailable).Version
 ```
 
-注意：如果此命令失败，则首先运行 Import-Module AADRM。
+注意：如果此命令失败，则首先运行 Import-Module AADRM  。
 
 若要查看可用的 cmdlet，请键入以下命令：
 

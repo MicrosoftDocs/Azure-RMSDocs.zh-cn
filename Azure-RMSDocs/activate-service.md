@@ -4,23 +4,23 @@ description: 必须先激活 Azure Rights Management 服务，然后组织才可
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ff99a39c138cc3ddc0b49cf7ff65ab95d5e36ece
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: d30ecdecddc3691d54259987b248672f2fb99849
+ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60175808"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67156417"
 ---
 # <a name="activating-azure-rights-management"></a>激活 Azure 权限管理
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!NOTE]
 > 此配置信息适用于负责应用于组织中所有用户的服务的管理员。 如果你要寻找针对特定应用程序使用 Rights Management 功能，或者如何打开受权限保护的文件或电子邮件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
@@ -38,7 +38,7 @@ ms.locfileid: "60175808"
 
 - **如果你包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月底或之后获取的：** 此服务会自动为你激活。 除非你或你组织的其他全局管理员停用了 Azure Rights Management，否则你无需激活此服务。
 
-- **如果你包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月期间或之前获取的：** 如果租户使用的是 Exchange Online，Microsoft 将开始为这些订阅激活 Azure Rights Management 服务。 对于这些订阅，自动激活将于 2018 年 8 月 1 日开始推出，届时将为你激活此服务，除非在运行 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps) 时看到 AutomaticServiceUpdateEnabled 设置为 false。 
+- **如果你包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月期间或之前获取的：** 如果租户使用的是 Exchange Online，Microsoft 将开始为这些订阅激活 Azure Rights Management 服务。 对于这些订阅，自动激活将于 2018 年 8 月 1 日开始推出，届时将为你激活此服务，除非在运行 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps) 时看到 AutomaticServiceUpdateEnabled  设置为 false  。 
 
 如果两种后续方案都不适用，必须手动激活保护服务。 
 
@@ -71,7 +71,7 @@ ms.locfileid: "60175808"
 
 2. 在 PowerShell 会话中，运行 [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice)，并在出现提示时提供 Azure 信息保护租户的全局管理员帐户详细信息。
 
-3. 运行 [Get-Aadrm](/powershell/aadrm/vlatest/get-aadrm) 以确认 Azure Rights Management 服务是否已激活。 状态为“Enabled”则确认已激活；状态为“Disabled”则指示此服务已停用。
+3. 运行 [Get-Aadrm](/powershell/aadrm/vlatest/get-aadrm) 以确认 Azure Rights Management 服务是否已激活。 状态为“Enabled”则确认已激活；状态为“Disabled”则指示此服务已停用   。
 
 4. 若要激活此服务，请运行 [Enable-Aadrm](/powershell/aadrm/vlatest/enable-aadrm)。
 
@@ -81,7 +81,7 @@ ms.locfileid: "60175808"
 > [!IMPORTANT]
 > 若要使用此命令，必须安装至少 **2.1.0.0** 版的 [Azure Rights Management PowerShell 模块](https://www.powershellgallery.com/packages/AADRM)。
 >
-> 若要检查已安装的版本，请运行：**(Get-Module aadrm –ListAvailable).Version**
+> 若要检查已安装的版本，请运行： **(Get-Module aadrm –ListAvailable).Version**
 
 例如，如果出于测试目的，你最初只想让“IT 部门”组（具有对象 ID fbb99ded-32a0-45f1-b038-38b519009503）中的管理员能够保护内容，请使用以下命令：
 
@@ -105,7 +105,7 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
 
 有关此 cmdlet 的详细信息和其他示例，请参阅 [Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy) 帮助。
 
-使用这些加入控制时，组织中的所有用户始终可以使用由用户的子集保护的受保护内容，但他们自身将不能从客户端应用程序应用信息保护。 例如，他们在其 Office 应用中看不到激活 Azure Rights Management 时自动发布的默认模板，也看不到你可能会配置的自定义模板。 服务器端应用程序（如 Exchange）可以为 Rights Management 集成实现自己的每用户控制，以获得相同的结果。 例如，若要阻止用户保护网页版 Outlook 中的电子邮件，请使用 [Set-OwaMailboxPolicy](/powershell/module/exchange/client-access/set-owamailboxpolicy?view=exchange-ps)，以将 IRMEnabled 参数设置为 $false。
+使用这些加入控制时，组织中的所有用户始终可以使用由用户的子集保护的受保护内容，但他们自身将不能从客户端应用程序应用信息保护。 例如，他们在其 Office 应用中看不到激活 Azure Rights Management 时自动发布的默认模板，也看不到你可能会配置的自定义模板。 服务器端应用程序（如 Exchange）可以为 Rights Management 集成实现自己的每用户控制，以获得相同的结果。 例如，若要阻止用户保护网页版 Outlook 中的电子邮件，请使用 [Set-OwaMailboxPolicy](/powershell/module/exchange/client-access/set-owamailboxpolicy?view=exchange-ps)，以将 IRMEnabled  参数设置为 $false  。
 
 
 ## <a name="next-steps"></a>后续步骤

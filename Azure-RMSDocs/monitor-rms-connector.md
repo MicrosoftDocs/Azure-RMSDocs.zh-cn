@@ -4,29 +4,29 @@ description: 帮助监视连接器和组织使用 Azure 信息保护中 Azure Ri
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/12/2018
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2d4c03a168f3add9778372a890ea9dd2c7be68bf
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 507f8ea8a613715b14fbedd820000765afa48e15
+ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181565"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67156803"
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>监视 Azure Rights Management 连接器
 
->适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
 
 安装并配置 RMS 连接器后，可以使用以下方法和信息，从而监视连接器和组织使用 Azure 信息保护中 Azure Rights Management 服务的情况。
 
 ## <a name="application-event-log-entries"></a>应用程序事件日志条目
 
-RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器”的条目。 
+RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器”  的条目。 
 
 例如，信息事件如下所示：
 
@@ -145,7 +145,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 每次 RMS 连接器遇到意外错误时都将记录此事件，且错误详细信息包含在事件消息中。
 
-事件消息中的文本“请求失败，出现了空响应”可识别一个可能的原因。 如果你看到此文本，则可能是因为你有一个网络设备在对本地服务器与 RMS 连接器服务器之间的数据包进行 SSL 检查。 Azure Rights Management 服务不支持此配置，导致通信失败，并生成此事件日志消息。
+事件消息中的文本“请求失败，出现了空响应”  可识别一个可能的原因。 如果你看到此文本，则可能是因为你有一个网络设备在对本地服务器与 RMS 连接器服务器之间的数据包进行 SSL 检查。 Azure Rights Management 服务不支持此配置，导致通信失败，并生成此事件日志消息。
 
 ----
 
@@ -161,23 +161,23 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 ## <a name="performance-counters"></a>性能计数器
 
-安装 RMS 连接器后，它将自动创建 Microsoft Rights Management 连接器性能计数器，有助于监视并改进使用 Azure Rights Management 服务的性能。 
+安装 RMS 连接器后，它将自动创建 Microsoft Rights Management 连接器  性能计数器，有助于监视并改进使用 Azure Rights Management 服务的性能。 
 
 例如，当文档或电子邮件受到保护时，经常会经历延迟。 或者，当打开受保护文档或电子邮件时，也会经历延迟。 对于这些情况，性能计数器有助于确定延迟是由于连接器处理时间、Azure Rights Management 服务处理时间还是网络延迟所致。 
 
-若要帮助你识别出现延迟的位置，请查找包含“连接器处理时间”、“服务响应时间”和“连接器响应时间”的平均计数的计数器。 例如：“授权成功批处理请求平均连接器响应时间”。
+若要帮助你识别出现延迟的位置，请查找包含“连接器处理时间”  、“服务响应时间”  和“连接器响应时间”  的平均计数的计数器。 例如：“授权成功批处理请求平均连接器响应时间”  。
 
-如果你最近添加了新的服务器帐户以使用连接器，你可以检查计数器“上次授权策略更新后的时间”来确认在你对其更新后，连接器已经下载了列表，或者你是否需要等待稍长的时间（最多 15 分钟）。
+如果你最近添加了新的服务器帐户以使用连接器，你可以检查计数器“上次授权策略更新后的时间”  来确认在你对其更新后，连接器已经下载了列表，或者你是否需要等待稍长的时间（最多 15 分钟）。
 
 ## <a name="logging"></a>日志记录
 
-使用情况日志记录可帮助你识别电子邮件和文档何时受到保护以及何时使用。 当 RMS 连接器用于保护和使用内容时，日志中的用户 ID 字段包含 Aadrm_S-1-7-0 的服务主体名称。 此名称是自动为 RMS 连接器创建。
+使用情况日志记录可帮助你识别电子邮件和文档何时受到保护以及何时使用。 当 RMS 连接器用于保护和使用内容时，日志中的用户 ID 字段包含 Aadrm_S-1-7-0  的服务主体名称。 此名称是自动为 RMS 连接器创建。
 
 有关使用情况日志记录的详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](log-analyze-usage.md)。
 
 如果需要更详细的日志记录以供诊断使用，可以使用 Windows Sysinternals 中的 [Debugview](https://go.microsoft.com/fwlink/?LinkID=309277)。 在 IIS 中修改默认网站的 web.config 文件，启用对 RMS 连接器的跟踪：
 
-1. 在“%programfiles%\Microsoft Rights Management connector\Web Service”中找到 web.config 文件。
+1. 在“%programfiles%\Microsoft Rights Management connector\Web Service”  中找到 web.config 文件。
 
 2. 找到以下行：
 

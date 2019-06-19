@@ -4,24 +4,24 @@ description: 确定用例的分类和保护你组织的数据通过使用 Azure 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 002dcd33e7219d8c25a4d1b24ab559b4f0922799
-ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
+ms.openlocfilehash: d69462640857e4e19583a9583fae65adc7df7281
+ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64767920"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67156434"
 ---
 # <a name="how-to-guides-for-common-scenarios-that-use-azure-information-protection"></a>使用 Azure 信息保护的常见应用场景的操作方法指南
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用对象：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 可以通过多种方式使用 Azure 信息保护对组织的文档和电子邮件进行分类和选择性保护。 
 

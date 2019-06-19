@@ -4,23 +4,23 @@ description: 有关部署 RMS 连接器的说明。该连接器提供数据保�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 11/19/2018
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d412e8c53a7cea0da6a84636653ffc203860891e
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 6f1d489efb5b6e8b64f83dcf6a9a8645e352e9bf
+ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60179963"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67156541"
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>部署 Azure Rights Management 连接器
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用对象：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 
 利用此信息了解 Azure Rights Management 连接器，并了解如何为组织成功部署该连接器。 该连接器提供数据保护，包括保护使用 Microsoft **Exchange Server**、**SharePoint Server** 或运行 Windows Server 和**文件分类基础结构** (FCI) 的文件服务器的现有本地部署。
 
@@ -67,13 +67,13 @@ RMS 连接器支持以下本地服务器：Exchange Server、SharePoint Server �
 
 连接器不会自动检查成功部署所需的所有[必备组件](deploy-rms-connector.md#prerequisites-for-the-rms-connector)，因此请务必准备好这些必备组件再开始。 部署要求安装连接器、配置连接器，然后配置要使用此连接器的服务器。 
 
--   **步骤 1：**[安装 RMS 连接器](install-configure-rms-connector.md#installing-the-rms-connector)
+-   **步骤 1：** [安装 RMS 连接器](install-configure-rms-connector.md#installing-the-rms-connector)
 
--   **步骤 2：**[输入凭据](install-configure-rms-connector.md#entering-credentials)
+-   **步骤 2：** [输入凭据](install-configure-rms-connector.md#entering-credentials)
 
--   **步骤 3：**[授权服务器使用 RMS 连接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)
+-   **步骤 3：** [授权服务器使用 RMS 连接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)
 
--   **步骤 4：**[配置负载均衡和高可用性](install-configure-rms-connector.md#configuring-load-balancing-and-high-availability)
+-   **步骤 4：** [配置负载均衡和高可用性](install-configure-rms-connector.md#configuring-load-balancing-and-high-availability)
 
 -   可选：[将 RMS 连接器配置为使用 HTTPS](install-configure-rms-connector.md#configuring-the-rms-connector-to-use-https)
 
@@ -81,7 +81,7 @@ RMS 连接器支持以下本地服务器：Exchange Server、SharePoint Server �
 
 -   可选：[在管理计算机上安装 RMS 连接器管理工具](install-configure-rms-connector.md#installing-the-rms-connector-administration-tool-on-administrative-computers)
 
--   **步骤 5:**[将服务器配置为使用 RMS 连接器](configure-servers-rms-connector.md)
+-   **步骤 5:** [将服务器配置为使用 RMS 连接器](configure-servers-rms-connector.md)
 
     -   [将 Exchange 服务器配置为使用连接器](configure-servers-rms-connector.md#configuring-an-exchange-server-to-use-the-connector)
 

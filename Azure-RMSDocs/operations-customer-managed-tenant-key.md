@@ -4,23 +4,23 @@ description: 当你自己管理 Azure 信息保护租户密钥（自带密钥方
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/18/2019
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c1ae08971442fcc943f8473bbcbf74681c027702
-ms.sourcegitcommit: 383b1fa5e65255420d7ec6fbe2f9b17f4439e33e
+ms.openlocfilehash: 82061c4a146a049d7cecf6da6ab16a2e85c0ddd3
+ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708860"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67156766"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 如果你自己管理 Azure 信息保护租户密钥（自带密钥方案，简称 BYOK），请阅读以下部分，详细了解此拓扑相关的生命周期操作。
 
