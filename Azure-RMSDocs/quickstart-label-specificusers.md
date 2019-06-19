@@ -4,16 +4,16 @@ description: 使用范围策略，创建和配置为一部分用户分类文档�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 06/18/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 15359fac56b4bef68ae9668a31c82a8b742b208f
-ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
+ms.openlocfilehash: 3a3c1e2ed27bfa8923301c3d0afbe04f864df315
+ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "64767847"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67156694"
 ---
 # <a name="quickstart-create-a-new-azure-information-protection-label-for-specific-users"></a>快速入门：为特定用户创建新的 Azure 信息保护标签
 
@@ -63,9 +63,9 @@ ms.locfileid: "64767847"
 
 3. 在“标签”  边栏选项卡上，至少指定以下两项：
     
-    - **标签显示名称**：用户将看到的新标签名称，用于标识内容的分类。 例如： `Sales - Restricted`。
+    - **标签显示名称**：用户将看到的新标签名称，用于标识内容的分类。 例如：`Sales - Restricted`。
     
-    - **描述**：工具提示，用于帮助用户确定何时选择此新标签。 例如：`Business data that is restricted to the Sales Team.`
+    - **说明**：工具提示，用于帮助用户确定何时选择此新标签。 例如：`Business data that is restricted to the Sales Team.`
 
 4. 请确保“已启用”  设置为“开”  （默认设置），然后选择“保存”  。
 
