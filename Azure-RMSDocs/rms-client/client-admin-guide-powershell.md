@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.suite: ems
-ms.openlocfilehash: 7cffbff5a5d6942c7ed722e64ead4a68e5ae959f
-ms.sourcegitcommit: 9b7b2e3a0f7b5717b349af2c883ebdeebfbd53e2
+ms.openlocfilehash: 1280a909ec74bf831af5e856274bc6f53a03a5e9
+ms.sourcegitcommit: a26e4e50165107efd51280b5c621dfe74be51a7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161261"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67236962"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -524,7 +524,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 12. 重新**AIPOnBehalfOf-公开一个 API**边栏选项卡，选择 **+ 添加作用域**。
 
-13. 上**添加一个作用域**边栏选项卡中，指定以下内容，并选择**添加作用域**:
+13. 上**添加一个作用域**边栏选项卡中，指定下列各项，例如，使用建议的字符串，然后选择**添加作用域**:
     - **作用域名称**: `user-impersonation`
     - **谁可以许可？** :**管理员和用户**
     - **管理员许可显示名称**: `Access Azure Information Protection scanner`
@@ -560,7 +560,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 23. 在中**选择 API**部分中，选择**APIOnBehalfOf**，然后选中的复选框**用户模拟**，与权限。 选择**添加权限**。 
 
-24. 重新**API 的权限**边栏选项卡，在**授予许可**部分中，选择**授予管理员的同意\<你的租户名称 >** ，然后选择**是**的确认提示。
+24. 重新**API 的权限**边栏选项卡，在**授予许可**部分中，选择**授予管理员的同意\<*你的租户名称*>** ，然后选择**是**的确认提示。
 
 至此，你已配置完两个应用，并获得了使用参数 *WebAppId*、*WebAppKey* 和 *NativeAppId* 运行 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 所需的值。 从我们的示例：
 

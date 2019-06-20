@@ -4,23 +4,23 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: d39b73a93f6abd434034acc9dca1858c7f57dde4
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: c06417aa89bdc81c34232c24921d1c64d1be8904
+ms.sourcegitcommit: a26e4e50165107efd51280b5c621dfe74be51a7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60182647"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67236827"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 遇到有关 Azure 信息保护的专门与分类和标签有关的问题？  请查看此处是否有答案。 
 
@@ -35,7 +35,7 @@ ms.locfileid: "60182647"
 - 没有分类或标签与 Exchange Online 或 SharePoint Online 集成。
 
 > [!NOTE]
-> 现提供预览：
+> 现提供预览  ：
 > - 分类和标签的集中式报告。 有关详细信息，请参阅 [Azure 信息保护的中心报告](reports-aip.md)。
 >
 >**最近发布了**：
@@ -47,9 +47,9 @@ ms.locfileid: "60182647"
 
 目前，有两个 Windows 的客户端： 
 
-- 从 Office 365 安全与合规中心下载标签和策略设置的 Azure 信息保护统一标记客户端。 此客户端现在为公开发行。
+- **Azure 信息保护统一标记的客户端**，从以下管理员中心之一下载标签和策略设置：Office 365 安全与合规中心，Microsoft 365 安全中心，Microsoft 365 符合性中心。 此客户端现一般情况下可用性，并具有可用于测试的未来版本的附加功能的预览版本。
 
-- 从 Azure 门户下载标签和策略设置的 Azure 信息保护客户端。 以前的正式发布版本的客户端上生成此客户端。
+- 从 Azure 门户下载标签和策略设置的 Azure 信息保护客户端  。 以前的正式发布版本的客户端上生成此客户端。
 
 如果 Azure 信息保护统一标记客户端目前的功能集和功能可满足你的业务需求，建议使用它进行测试。 如果无法满足你的业务需求，或者如果你已在 Azure 门户中配置了标签，而这些标签尚未[迁移到统一标记存储](configure-policy-migrate-labels.md)，请使用 Azure 信息保护客户端。
 
@@ -59,7 +59,7 @@ ms.locfileid: "60182647"
 
 用户一次仅可为每个文档或电子邮件选择一个标签，这通常只会产生一个分类。 但如果用户选择子标签，这实际上会同时应用两个标签；主标签和次要标签。 通过使用子标签，文件可以有两个分类，表示附加控制级别的父\子关系。
 
-例如，标签“机密”可能包含子标签，如“法律”和“财务”。 可对这些子标签应用不同的分类视觉标记和不同的权限管理模板。 用户不能自行选择“机密”标签；只能选择其中一个子标签，如“法律”。 因此，会看到设置的标签是“机密\法律”。 该文件的元数据包括“Confidential”的一个自定义文本属性和“Legal”的一个自定义文本属性，以及另一个同时包含这两个值（“Confidential Legal”）的自定义文本属性。 
+例如，标签“机密”  可能包含子标签，如“法律”  和“财务”  。 可对这些子标签应用不同的分类视觉标记和不同的权限管理模板。 用户不能自行选择“机密”  标签；只能选择其中一个子标签，如“法律”  。 因此，会看到设置的标签是“机密\法律”  。 该文件的元数据包括“Confidential”  的一个自定义文本属性和“Legal”  的一个自定义文本属性，以及另一个同时包含这两个值（“Confidential Legal”  ）的自定义文本属性。 
 
 使用子标签时，请不要在主标签处配置视觉标记、保护和条件。 使用子级别时，请仅在子标签上配置这些设置。 如果在主标签及其子标签上配置这些设置，那么子标签上的设置具有更高优先级。
 
@@ -89,11 +89,11 @@ ms.locfileid: "60182647"
 
 1. 标记并保存文档。 此操作新建可立即用于域代码的元数据字段。
 
-2. 在文档中，将光标置于要添加标签分类的位置，再在“插入”选项卡中依次选择“文本” > “文档部件” > “字段”。
+2. 在文档中，将光标置于要添加标签分类的位置，再在“插入”  选项卡中依次选择“文本”   > “文档部件”   > “字段”  。
 
-3. 在“字段”对话框中，选择“类别”下拉列表中的“文档信息”。 然后，选择“字段名称”下拉列表中的“DocProperty”。
+3. 在“字段”  对话框中，选择“类别”  下拉列表中的“文档信息”  。 然后，选择“字段名称”  下拉列表中的“DocProperty”  。
 
-4. 在“属性”下拉列表中，依次选择“敏感度”和“确定”。
+4. 在“属性”  下拉列表中，依次选择“敏感度”  和“确定”  。
 
 此时，当前标签的分类显示在文档中，并且这个值会在你每次打开文档或使用模板时自动刷新。 因此，如果标签发生更改，那么对此域代码显示的分类也会在文档中自动更新。
 

@@ -4,18 +4,18 @@ description: 为支持统一标签的客户端和服务将 Azure 信息保护标
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/08/2019
+ms.date: 06/20/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 56d23160e685325cc18a2c14b52cf23f950df7a0
-ms.sourcegitcommit: 886aebde3b2df0f54b7bd41105823db44aea72d8
+ms.openlocfilehash: 01ae91cb5700b35faecd1dc64d8ea83229574fac
+ms.sourcegitcommit: a26e4e50165107efd51280b5c621dfe74be51a7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2019
-ms.locfileid: "66815543"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67236936"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-office-365-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签
 
@@ -91,9 +91,9 @@ Azure 信息保护客户端可以使用列出的所有标签设置，而不会�
 |标签配置|受统一标记客户端的支持| 管理中心指南|
 |-------------------|---------------------------------------------|-------------------------|
 |启用或禁用状态<br /><br />注意：不会同步到管理中心 |“不适用”|等效于是否发布标签。 |
-|从列表中选择的标签颜色或使用 RGB 代码指定的标签颜色 |是|标签颜色没有配置选项。 相反，可以在 Azure 门户中配置标签颜色。|
+|从列表中选择的标签颜色或使用 RGB 代码指定的标签颜色 |是|标签颜色没有配置选项。 相反，您可以在 Azure 门户中配置标签的颜色或使用[PowerShell](./rms-client/clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)。|
 |使用预定义模板的基于云的保护或基于 HYOK 的保护 |否|预定义模板没有配置选项。 我们不建议使用此配置发布标签。|
-|使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |否|这些 Office 应用的用户定义权限没有配置选项。 我们不建议使用此配置发布标签。 否则，请在[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中查看应用此标签所带来的后果。|
+|使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |否|管理员中心没有用户定义的权限，对于这些 Office 应用程序的配置选项。 除非使用统一标记客户端的预览版本，我们不建议发布具有此配置的标签。 否则，请在[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中查看应用此标签所带来的后果。|
 |使用 Outlook（不可转发）中用户定义权限的基于 HYOK 的保护 |否|HYOK 没有配置选项。 我们不建议使用此配置发布标签。 否则，请在[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中查看应用此标签所带来的后果。|
 |删除保护 |否|没有用于删除保护的配置选项。 我们不建议使用此配置发布标签。<br /><br /> 如果发布此标签应用时，如果以前应用的标签，将删除保护。 如果之前从标签中独立应用了保护，则将保留保护。|
 |为视觉标记（页眉、页脚、水印）使用 RGB 代码自定义字体和字体颜色|是|视觉标记的配置限制为颜色和字体大小列表。 尽管无法看见管理中心中配置的值，仍可以不做任何更改发布此标签。 <br /><br />若要更改这些选项，可以使用 Azure 门户。 但是，请考虑将颜色更改为管理中心中列出的选项之一，以便于管理。|
@@ -113,7 +113,7 @@ Azure 信息保护客户端可以使用列出的所有标签设置，而不会�
 
 |标签的保护设置 |Azure 信息保护客户端|Azure 信息保护统一标识客户端| 具有内置标签的 Office 应用
 |-------------------|-----------------------------------|-----------------------------------------------------------|---------------
-|Azure（云密钥），其中用户定义的权限适用于 Word、Excel、PowerPoint 和文件资源管理器：| 可在 Word、Excel、PowerPoint 和文件资源管理器中查看 <br /><br /> 当应用标签时：<br /><br /> - 提示用户获取自定义权限，这些权限之后通过云端密钥作为保护措施加以应用| 不可见 |可在 Word、Excel、PowerPoint 和 Outlook 中查看： <br /><br /> 当应用标签时：<br /><br /> - 不提示用户获取自定义权限且不应用保护 <br /><br /> - 如果之前在未使用标签的情况下实施了保护，则保留保护 [[1]](#footnote-1)|
+|Azure（云密钥），其中用户定义的权限适用于 Word、Excel、PowerPoint 和文件资源管理器：| 可在 Word、Excel、PowerPoint 和文件资源管理器中查看 <br /><br /> 当应用标签时：<br /><br /> - 提示用户获取自定义权限，这些权限之后通过云端密钥作为保护措施加以应用| 正式发布版中：不可见 <br /><br />  对于预览版本：可在 Word、Excel、PowerPoint 和文件资源管理器中查看 <br /><br /> 当应用标签时：<br /><br /> - 提示用户获取自定义权限，这些权限之后通过云端密钥作为保护措施加以应用|可在 Word、Excel、PowerPoint 和 Outlook 中查看： <br /><br /> 当应用标签时：<br /><br /> - 不提示用户获取自定义权限且不应用保护 <br /><br /> - 如果之前在未使用标签的情况下实施了保护，则保留保护 [[1]](#footnote-1)|
 |带有模板的 HYOK (AD RMS)：| 可在 Word、Excel、PowerPoint、Outlook 和文件资源管理器中查看<br /><br /> 当应用此标签时： <br /><br />- 对文档和电子邮件应用 HYOK 保护 | 可在 Word、Excel、PowerPoint、Outlook 和文件资源管理器中查看  <br /><br /> 当应用此标签时： <br /><br />- 不应用保护；如果之前通过标签应用了保护，则去除保护 [[2]](#footnote-2) <br /><br />- 如果之前在未使用标签的情况下实施了保护，则保留保护 |可在 Word、Excel、PowerPoint 和 Outlook 中查看 <br /><br /> 当应用此标签时： <br /><br />- 不应用保护；如果之前通过标签应用了保护，则去除保护 [[2]](#footnote-2) <br /><br />- 如果之前在未使用标签的情况下实施了保护，则保留保护 [[1]](#footnote-1) |
 |HYOK (AD RMS)，其中用户定义的权限适用于 Word、Excel、PowerPoint 和文件资源管理器：| 可在 Word、Excel、PowerPoint 和文件资源管理器中查看<br /><br /> 当应用此标签时：<br /><br /> - 对文档和电子邮件应用 HYOK 保护| 可在 Word、Excel 和 PowerPoint 中查看 <br /><br /> 当应用此标签时： <br /><br />- 不应用保护；如果之前已通过标签应用保护，则删除该保护 [[2]](#footnote-2) <br /><br />- 如果之前在未使用标签的情况下实施了保护，则保留保护|可在 Word、Excel 和 PowerPoint 中查看 <br /><br /> 当应用此标签时： <br /><br />- 不应用保护；如果之前已通过标签应用保护，则删除该保护 [[2]](#footnote-2) <br /><br />- 如果之前在未使用标签的情况下实施了保护，则保留保护 |
 |HYOK (AD RMS)，其中用户定义的权限适用于 Outlook：|可在 Outlook 中查看<br /><br />当应用此标签时：<br /><br />- 通过 HYOK 保护向电子邮件应用“请勿转发”规则|可在 Outlook 中查看<br /><br />当应用此标签时：<br /><br /> - 不应用保护；如果之前已通过标签应用保护，则删除该保护 [[2]](#footnote-2) <br /><br />- 如果之前在未使用标签的情况下实施了保护，则保留保护|可在 Outlook 中查看<br /><br />当应用此标签时：<br /><br />- 不应用保护；如果之前已通过标签应用保护，则删除该保护 [[2]](#footnote-2) <br /><br />- 如果之前在未使用标签的情况下实施了保护，则保留保护 [[1]](#footnote-1)|
@@ -157,6 +157,28 @@ Azure 信息保护客户端可以使用列出的所有标签设置，而不会�
 
 > [!IMPORTANT]
 > 在 Azure 信息保护客户端的 Azure 门户外部编辑标签时，请返回该“Azure 信息保护 - 统一标记”  边栏选项卡，并选择“发布”。 
+
+
+#### <a name="copy-your-policies-and-policy-settings"></a>复制策略和策略设置
+
+> [!NOTE]
+> 此选项逐步推出预览版中的租户，可能会发生更改。 如果没有看到**复制策略 （预览）** 选项，请在几周之后重试。
+
+迁移你的标签后，你可以选择一个选项复制策略。 如果你选择此选项，你使用的策略的一次性副本及其[策略设置](configure-policy-settings.md)和任何[高级客户端设置](./rms-client/client-admin-guide-customizations.md#available-advanced-client-settings)发送到您在其中管理你的标签在管理中心内：Office 365 安全与合规中心，Microsoft 365 安全中心，Microsoft 365 符合性中心。
+
+在选择之前**复制策略 （预览）** 选项，请注意以下事项：
+
+- 不能有选择地选择策略和设置复制。 所有策略 ( **Global**策略和任何作用域内策略) 将会复制，并复制标签策略设置时支持的所有设置。 如果已具有相同名称的标签策略，它将覆盖在 Azure 门户中的策略设置。
+
+- 不复制某些高级客户端设置，因为 Azure 信息保护的统一标记的客户端，这些支持作为*高级设置的标签*而不是策略设置。 可以配置与这些标签高级设置[Office 365 安全与合规性中心 PowerShell](./rms-client/clientv2-admin-guide-customizations.md#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。 不会复制的高级客户端设置包括：
+    - [LabelbyCustomProperty](./rms-client/client-admin-guide-customizations.md#migrate-labels-from-secure-islands-and-other-labeling-solutions)
+    - [LabelToSMIME](./rms-client/client-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
+
+- 若要支持将复制的高级客户端属性，必须使用 Azure 信息保护客户端的预览版本。
+
+- 与不同的标签会同步到标签的后续更改迁移，复制策略操作不会同步到你的策略或策略设置的任何后续更改。 可以重复的复制策略操作在 Azure 门户中进行更改之后，将再次覆盖任何现有的策略和它们的设置。 或者，使用与集 LabelPolicy 或设置标签 cmdlet *AdvancedSettings*从 Office 365 安全与合规性中心 PowerShell 参数。
+
+有关配置高级客户端设置和 Azure 信息保护统一标记客户端，标签设置的策略设置的详细信息请参阅[统一的 Azure 信息保护的自定义配置标记的客户端](./rms-client/clientv2-admin-guide-customizations.md)管理员指南中。
 
 ### <a name="clients-and-services-that-support-unified-labeling"></a>支持统一标签的客户端和服务
 
