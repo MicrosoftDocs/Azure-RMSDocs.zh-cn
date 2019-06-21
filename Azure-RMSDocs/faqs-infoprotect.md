@@ -4,19 +4,19 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/20/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: c06417aa89bdc81c34232c24921d1c64d1be8904
-ms.sourcegitcommit: a26e4e50165107efd51280b5c621dfe74be51a7a
+ms.openlocfilehash: db5b1b06f198db0795876e71749b1d220c7c2694
+ms.sourcegitcommit: 599306e271392afa4bc05c87982549785ce1860e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67236827"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67305713"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -49,9 +49,9 @@ ms.locfileid: "67236827"
 
 - **Azure 信息保护统一标记的客户端**，从以下管理员中心之一下载标签和策略设置：Office 365 安全与合规中心，Microsoft 365 安全中心，Microsoft 365 符合性中心。 此客户端现一般情况下可用性，并具有可用于测试的未来版本的附加功能的预览版本。
 
-- 从 Azure 门户下载标签和策略设置的 Azure 信息保护客户端  。 以前的正式发布版本的客户端上生成此客户端。
+- **Azure 信息保护客户端 （经典）** ，从 Azure 门户下载标签和策略设置。 以前的正式发布版本的客户端上生成此客户端。
 
-如果 Azure 信息保护统一标记客户端目前的功能集和功能可满足你的业务需求，建议使用它进行测试。 如果无法满足你的业务需求，或者如果你已在 Azure 门户中配置了标签，而这些标签尚未[迁移到统一标记存储](configure-policy-migrate-labels.md)，请使用 Azure 信息保护客户端。
+我们建议如果其当前功能集和功能满足你的业务要求与统一标记客户端测试。 如果没有，或者如果你尚未在 Azure 门户中配置标签[迁移到统一的标记存储](configure-policy-migrate-labels.md)，使用经典的客户端。
 
 有关详细信息，包括特性和功能的比较表，请参阅[选择使用哪个 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use)。
 

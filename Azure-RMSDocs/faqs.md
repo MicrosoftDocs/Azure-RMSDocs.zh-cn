@@ -4,17 +4,17 @@ description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/08/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: fc85cfcdcef82c4b30df7bc88ac054ee0bc172c5
-ms.sourcegitcommit: 886aebde3b2df0f54b7bd41105823db44aea72d8
+ms.openlocfilehash: 1e0933a88afc355dbcbab0dc667e28f49f10c0b9
+ms.sourcegitcommit: 599306e271392afa4bc05c87982549785ce1860e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2019
-ms.locfileid: "66815617"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67305774"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -46,7 +46,7 @@ ms.locfileid: "66815617"
 
 ## <a name="whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护客户端和 Azure 信息保护之间的区别是什么的统一标记的客户端？
 
-**Azure 信息保护客户端**以来已经过了可用于进行分类和保护文件和电子邮件的新服务作为首次发布 Azure 信息保护。 此客户端从 Azure 中，下载标签和策略设置，并配置从 Azure 门户的 Azure 信息保护策略。 有关详细信息，请参阅[Azure 信息保护策略的概述](overview-policy.md)。 
+**Azure 信息保护客户端 （经典）** 以来已经过了可用于进行分类和保护文件和电子邮件的新服务作为首次发布 Azure 信息保护。 此客户端从 Azure 中，下载标签和策略设置，并配置从 Azure 门户的 Azure 信息保护策略。 有关详细信息，请参阅[Azure 信息保护策略的概述](overview-policy.md)。 
 
 **Azure 信息保护统一标记的客户端**是较新的添加，以支持统一标记存储多个应用程序和服务支持。 此客户端将从以下管理员中心下载敏感度标签和策略设置：Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心。 有关详细信息，请参阅[概述的敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)。
 
@@ -58,11 +58,11 @@ ms.locfileid: "66815617"
 
 - 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”   。
 
-- 从 Office 应用程序：从**保护**按钮 （Azure 信息保护客户端） 或**敏感度**按钮 （Azure 信息保护统一标记的客户端），选择**帮助和反馈**.
+- 从 Office 应用程序：从**保护**按钮 （经典的客户端） 或**敏感度**按钮 （统一标记的客户端），选择**帮助和反馈**。
 
 使用**版本**显示标识客户端编号：
 
-- 版本**1**，例如**1.48.204.0**，标识 Azure 信息保护客户端。
+- 版本**1**，例如**1.48.204.0**，标识 Azure 信息保护客户端 （经典）。
 
 - 版本**2**，例如**2.0.778.0**，标识 Azure 信息保护统一标记客户端。
 

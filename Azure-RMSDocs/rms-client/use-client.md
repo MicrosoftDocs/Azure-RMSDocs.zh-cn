@@ -4,17 +4,17 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/20/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: 5bb792bcc396d1aac4fcb7cb0e6558a65988477a
-ms.sourcegitcommit: a26e4e50165107efd51280b5c621dfe74be51a7a
+ms.openlocfilehash: c6898480d18ef5dd915faa1b1c6c369e9de877fb
+ms.sourcegitcommit: 599306e271392afa4bc05c87982549785ce1860e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67236863"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67305752"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -22,17 +22,16 @@ ms.locfileid: "67236863"
 
 Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的文档和电子邮件：
 
-- 客户端可以是 Azure 信息保护客户端、 Azure 信息保护统一标记客户端或 Rights Management 客户端。 它取这些客户端使用，与计算机和移动设备运行的应用程序集成。 
-
+- 客户端可以是 Azure 信息保护客户端 （经典）、 Azure 信息保护统一标记客户端或 Rights Management 客户端。 它取这些客户端使用，与计算机和移动设备运行的应用程序集成。 
 - 服务驻留在云中（Azure 信息保护，它使用 Azure Rights Management 服务进行数据保护）或本地（Active Directory Rights Management Services，通常称为“AD RMS”）。 
 
-Azure 信息保护客户端和 Azure 信息保护统一标记客户端支持分类和保护的标签。 Azure 信息保护客户端还支持保护，而无需标记。 两个客户端与 Office 应用程序集成，并必须单独安装。
+Azure 信息保护客户端 （经典） 和 Azure 信息保护统一标记客户端支持分类和保护的标签。 经典的客户端还支持保护，而无需标记。 两个客户端与 Office 应用程序集成，并必须单独安装。
 
-某些应用程序，例如 Office 应用程序、 Azure 信息保护客户端和 Azure 信息保护统一标记客户端，以及启用 RMS 的应用程序将自动安装 Rights Management (RMS) 客户端软件供应商。 但是，它也可以[单独安装](https://www.microsoft.com/en-us/download/details.aspx?id=38396)，以支持[从受 IRM 保护的库和 OneDrive for Business 同步文件](https://support.office.com/article/Deploy-the-new-OneDrive-sync-client-in-an-enterprise-environment-3f3a511c-30c6-404a-98bf-76f95c519668)，并供希望将权限管理保护集成到业务线应用程序中的开发人员使用。
+某些应用程序，例如 Office 应用程序、 Azure 信息保护客户端 （经典） 和 Azure 信息保护统一标记客户端，以及启用 RMS 的应用程序将自动安装 Rights Management (RMS) 客户端来自软件供应商。 但是，它也可以[单独安装](https://www.microsoft.com/en-us/download/details.aspx?id=38396)，以支持[从受 IRM 保护的库和 OneDrive for Business 同步文件](https://support.office.com/article/Deploy-the-new-OneDrive-sync-client-in-an-enterprise-environment-3f3a511c-30c6-404a-98bf-76f95c519668)，并供希望将权限管理保护集成到业务线应用程序中的开发人员使用。
 
 ## <a name="choose-which-azure-information-protection-client-to-use"></a>选择要使用的 Azure 信息保护客户端
 
-**Azure 信息保护客户端**从 Azure 门户下载标签和策略设置。 有关此客户端的详细信息，请参阅[Azure 信息保护客户端：版本发行历史记录和支持策略](client-version-release-history.md)。
+**Azure 信息保护客户端 （经典）** 从 Azure 门户下载标签和策略设置。 有关此客户端的详细信息，请参阅[Azure 信息保护客户端：版本发行历史记录和支持策略](client-version-release-history.md)。
 
 Azure 信息保护统一标签客户端  从以下管理中心下载标签和策略设置：Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心。 有关此客户端的详细信息，请参阅[Azure 信息保护统一标记的客户端：版本发布信息](unifiedlabelingclient-version-release-history.md)。
 
@@ -42,31 +41,31 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
     
     Azure 信息保护统一标记客户端的预览版本支持高级客户端设置和用户定义的权限，但不是在本地密钥 (HYOK) 或扫描程序的本地数据存储。
 
-- 如果您需要具有尚不可用在当前的公开上市统一标记客户端中的高级功能已正式发布的客户端的版本，请安装 Azure 信息保护客户端。 你的影响是不能在其他客户端平台上使用标签。
+- 使用尚不可用在当前的公开上市统一标记客户端中的高级功能安装 Azure 信息保护客户端 （经典） 如果您需要的客户端的正式发布版本。 你的影响是不能在其他客户端平台上使用标签。
 
-目前，Azure 信息保护客户端和 Azure 信息保护统一标记客户端不具有其功能的奇偶校验。 但是，与当前预览版中，关闭这一差距，可以获得新功能，可只被添加到 Azure 信息保护统一标记客户端。 出于此原因，我们建议你部署 Azure 信息保护统一标记客户端如果其当前功能集和功能满足业务需求。 如果无法满足你的业务需求，或者如果你已在 Azure 门户中配置了标签，而这些标签尚未[迁移到统一标记存储](../configure-policy-migrate-labels.md)，请使用 Azure 信息保护客户端。
+目前，经典的客户端和统一标记客户端不具有其功能的奇偶校验。 但是，与当前预览版中，关闭这一差距，可以获得新功能，可只被添加到统一标记客户端。 出于此原因，我们建议你部署统一标记客户端，如果其当前功能集和功能满足业务需求。 如果没有，或者如果你尚未在 Azure 门户中配置标签[迁移到统一的标记存储](../configure-policy-migrate-labels.md)，使用经典的客户端。
 
 此外可以安装两个客户端在同一环境中以支持不同的业务要求，如以下示例所示。 对于此方案中，我们建议你迁移在 Azure 门户中的标签，以便在客户端这两组共享一组相同的标签为便于管理。
 
 ##### <a name="example-deployment-strategy"></a>示例部署策略：
 
-- 对于大多数用户，可以部署 Azure 信息保护统一标记客户端，因为大多数用户不需要的特性或功能仅适用于 Azure 信息保护客户端。 
+- 对于大多数用户，可以部署 Azure 信息保护统一标记客户端，因为大多数用户不需要的特性或功能仅适用于 Azure 信息保护客户端 （经典）。 
     
     对于这些用户，其标记体验是 office 的非常相似，如果它们还具有运行 MacOS、 iOS 和 Android 的设备，并且这些设备具有支持敏感度标签版本。
 
-- 仅供自己使用，安装 Azure 信息保护统一标记的客户端来测试新功能，包括用户定义的权限和高级客户端设置的预览版本。
+- 仅供自己使用，安装统一的标记客户端，若要测试的新功能，包括用户定义的权限和高级客户端设置的预览版本。
 
-- 对用户的子集，你部署 Azure 信息保护客户端，因为这些用户需要应用的标签保留自己的密钥 (HYOK) 保护或针对用户定义的权限提示。
+- 对用户的子集，你将部署经典的客户端，因为这些用户需要应用的标签保留自己的密钥 (HYOK) 保护或针对用户定义的权限提示。
     
     对于这些用户，它们具有其他特性和功能，但稍有不同的体验，如果他们还拥有运行 MacOS、 iOS 和 Android 的设备和这些设备具有支持敏感度标签的 Office 版本。 例如，他们将看到**保护**按钮而非**敏感度**Office 功能区和信息保护栏上的按钮可以显示默认情况下。
 
-- 必须在本地数据存储的需要进行扫描的敏感信息或分类和保护的文档。 部署 Azure 信息保护客户端在服务器上的，若要运行 Azure 信息保护扫描程序。
+- 必须在本地数据存储的需要进行扫描的敏感信息或分类和保护的文档。 部署经典客户端在服务器上的运行 Azure 信息保护扫描程序。
 
 ### <a name="compare-the-clients"></a>比较客户端
 
 使用下表来比较两个 Azure 信息保护客户端支持的功能。
 
-|功能|Azure 信息保护客户端|Azure Information Protection<br /> 统一标记客户端|
+|功能|经典的客户端|统一标记的客户端|
 |-------|-----------------------------------|----------------------------------------------------|
 |标记操作：手动、建议、自动| 是 | 是 |
 |中心报告（分析）：| 是 | 是；但具有限制：<br /><br /> - [内容匹配](../reports-aip.md#content-matches-for-deeper-analysis)需要预览版的客户端 |
@@ -76,8 +75,8 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 |Office 应用中的“信息保护”栏：| 是 | 是；但具有限制：<br /><br /> - 无标题或可自定义的工具提示<br /><br /> - 应用的标签未显示标签颜色|
 |标签可应用视觉标记（页眉、页脚、水印）：| 是 | 是；但具有限制：<br /><br /> - 页眉和页脚不支持变量获取动态值 <br /><br /> - 不支持为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记|
 |文件资源管理器，右键单击操作：| 是 | 是；但具有限制：<br /><br /> - 无法保护 .ppdf 格式的 PDF 文档 <br /><br />  - 不支持仅保护模式|
-|受保护文件的查看器：| 是 | 是；但具有限制：<br /><br /> - 对于通用受保护文件 (.pfile)，无法将更改保存到最初打开的文件，这一点与 Azure 信息保护客户端中的查看器不同。|
-|PowerShell 命令：| 是 | 是；但具有限制：<br /><br />- 包含以下 Cmdlet：[Get-aipfilestatus](/powershell/module/azureinformationprotection/get-aipfilestatus)，[新建 AIPCustomPermissions](/powershell/module/azureinformationprotection/New-AIPCustomPermissions)（预览版客户端）， [Set-aipfileclassification](/powershell/module/azureinformationprotection/set-aipfileclassification)， [Set-aipfilelabel](/powershell/module/azureinformationprotection/set-aipfilelabel)， [Set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) <br /><br />-目前，无法在删除保护容器文件 （zip、.rar、.7z、.msg 和.pst）|
+|受保护文件的查看器：| 是 | 是；但具有限制：<br /><br /> -对于一般方式保护文件 (.pfile)，与从经典的客户端查看器不同，不是能将更改保存到最初打开的文件。|
+|PowerShell 命令：| 是 | 是；但具有限制：<br /><br />- 包含以下 Cmdlet：[Get-aipfilestatus](/powershell/module/azureinformationprotection/get-aipfilestatus)，[新建 AIPCustomPermissions](/powershell/module/azureinformationprotection/New-AIPCustomPermissions) （预览版客户端）， [Set-aipfileclassification](/powershell/module/azureinformationprotection/set-aipfileclassification)， [Set-aipfilelabel](/powershell/module/azureinformationprotection/set-aipfilelabel)， [Set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) <br /><br />-目前，无法在删除保护容器文件 （zip、.rar、.7z、.msg 和.pst）|
 |离线支持保护操作：| 是 | 是；但具有限制： <br /><br />- 对于文件资源管理器和 PowerShell 命令，用户必须连接到 Internet 才能保护文件。 |
 |支持使用手动策略文件管理的已断开连接的计算机：| 是 |否 |
 |HYOK 支持：| 是 | 否<br /><br /> 从 Azure 门户迁移的标签以及为 HYOK 保护配置的标签通过 Azure 信息保护统一标记客户端显示，但不应用保护。 |
@@ -95,7 +94,7 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 
 如果两个客户端支持的相同功能，使用下表有助于确定两个客户端之间的一些功能差异。
 
-|功能 |Azure 信息保护客户端|Azure Information Protection<br /> 统一标记客户端|
+|功能 |经典的客户端|统一标记的客户端|
 |--------------|-----------------------------------|-----------------------------------------------------------|
 |安装：| 安装本地演示策略的选项 | 没有本地演示策略|
 |在 Office 应用程序中应用时的标签选择和显示：|通过功能区上的“保护”按钮  <br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|通过功能区上的“敏感度”  按钮<br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|
@@ -114,7 +113,7 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 
 #### <a name="features-not-planned-to-be-in-the-azure-information-protection-unified-labeling-client"></a>未计划要在 Azure 信息保护统一标记客户端的功能
 
-尽管 Azure 信息保护统一标记客户端仍处于开发阶段，以下功能和从 Azure 信息保护客户端的行为差异是，目前未计划要在适用于 Azure 的未来版本中可用信息保护统一标记的客户端： 
+尽管 Azure 信息保护统一标记客户端仍处于开发阶段，以下功能和从经典的客户端的行为差异是，目前未计划在统一标记客户端的未来版本中不可用： 
 
 - 在以下 Office 应用中自定义权限：Word、Excel 和 PowerPoint
 
@@ -141,7 +140,7 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 
 #### <a name="parent-labels-and-their-sublabels"></a>父标签及其子标签 
 
-Azure 信息保护客户端不支持指定具有子标签的父标签的配置。 这些配置包括指定默认标签和推荐分类或自动分类的标签。 如果某个标签具有子标签，可以指定其中一个子标签，但不能指定父标签。
+Azure 信息保护客户端 （经典） 不支持指定的父标签包含子标签时的配置。 这些配置包括指定默认标签和推荐分类或自动分类的标签。 如果某个标签具有子标签，可以指定其中一个子标签，但不能指定父标签。
 
 对于奇偶校验，Azure 信息保护统一标签客户端也不支持应用具有子标签的父标签，即使可以在管理中心中选择这些标签，也无法应用。 在此方案中，Azure 信息保护统一标记客户端将不应用父标签。
 
@@ -154,4 +153,4 @@ Azure 信息保护客户端不支持指定具有子标签的父标签的配置�
 
 - [RMS 客户端部署说明](client-deployment-notes.md)
 
-虽然 Azure 信息保护客户端可以与 AD RMS 一起使用，但 Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护及其数据保护服务（Azure 权限管理）。 有关 Azure 信息保护服务端的比较，请参阅[比较 Azure 信息保护与 AD RMS](../compare-on-premise.md)。
+尽管可以与 AD RMS 配合使用 Azure 信息保护客户端 （经典），此客户端时，最适合，以便使用其 Azure 服务;Azure 信息保护和及其数据保护服务，Azure Rights Management。 有关 Azure 信息保护服务端的比较，请参阅[比较 Azure 信息保护与 AD RMS](../compare-on-premise.md)。
