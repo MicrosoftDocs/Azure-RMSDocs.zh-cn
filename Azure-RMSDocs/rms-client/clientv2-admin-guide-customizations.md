@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 1dbd1589a9e3aaec39b13f553f6ce3af6107ce02
-ms.sourcegitcommit: a26e4e50165107efd51280b5c621dfe74be51a7a
+ms.openlocfilehash: 41b4d44babb9941820c95a7f842f119c444a4b06
+ms.sourcegitcommit: 478081129d9ea8382ce08fae0bae1a08cab23893
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67236905"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298280"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -142,7 +142,7 @@ ms.locfileid: "67236905"
 
 |设置|应用场景和说明|
 |----------------|---------------|
-|颜色|[指定标签的颜色](##specify-a-color-for-the-label)|
+|颜色|[指定标签的颜色](#specify-a-color-for-the-label)|
 |customPropertyByLabel|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |DefaultSubLabelId|[指定父标签的默认子标签](#specify-a-default-sublabel-for-a-parent-label) 
 |labelByCustomProperties|[应用标签时应用的自定义属性](#apply-a-custom-property-when-a-label-is-applied)|

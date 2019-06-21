@@ -4,25 +4,25 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 530b7e112f4ee66f9117bf3816ff19ab179b3811
-ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
+ms.openlocfilehash: d353eac9dd13b90f02a296a40f8aa1b6e3269d52
+ms.sourcegitcommit: 478081129d9ea8382ce08fae0bae1a08cab23893
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64768241"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298299"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用于：  Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 如果你负责企业网络上的 Azure 信息保护客户端，或如果你想要获取除了 [Azure 信息保护客户端用户指南](client-user-guide.md)以外的更多技术信息，请使用本指南中的信息。 
 
@@ -48,7 +48,7 @@ ms.locfileid: "64768241"
 
 Azure 信息保护客户端包括以下内容：
 
-- 一个 Office 加载项，可安装 Azure 信息保护栏以便用户选择分类标签；一个功能区上的“保护”按钮，可获取其他选项。 对于 Outlook，在功能区上还可以使用“不转发”按钮。
+- 一个 Office 加载项，可安装 Azure 信息保护栏以便用户选择分类标签；一个功能区上的“保护”按钮，可获取其他选项  。 对于 Outlook，在功能区上还可以使用“不转发”按钮  。
 
 - Windows 文件资源管理器，便于用户将分类标签和保护应用到文件的右键单击选项。
 
@@ -87,7 +87,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 - 运行 Office 2010 并且想要通过使用 Azure 权限管理服务保护文档和电子邮件。
 
-示例显示了 Office 应用程序中的 Azure 信息保护客户端加载项、组织的分类标签，以及功能区上新的“保护”按钮：
+示例显示了 Office 应用程序中的 Azure 信息保护客户端加载项、组织的分类标签，以及功能区上新的“保护”按钮  ：
 
 ![具有默认策略的 Azure 信息保护栏](../media/word2016-calloutsv2.png)
 
@@ -99,21 +99,21 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 ### <a name="installation-checks-and-troubleshooting"></a>安装检查和疑难解答
 
-安装客户端后，请使用“帮助和反馈”选项打开“Microsoft Azure 信息保护”对话框：
+安装客户端后，请使用“帮助和反馈”选项打开“Microsoft Azure 信息保护”对话框   ：
 
-- 从 Office 应用程序：在“开始”选项卡上的“保护”组中，依次选择“保护”和“帮助和反馈”。
+- 从 Office 应用程序：在“开始”选项卡上的“保护”组中，依次选择“保护”和“帮助和反馈”     。
 
-- 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”。 
+- 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”   。 
 
 #### <a name="help-and-feedback-section"></a>“**帮助和反馈**”部分
 
-默认情况下，“提供详细信息”链接转到 [Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)网站，但也可以根据 Azure 信息保护策略中的一项[策略设置](../configure-policy-settings.md)，将其配置为转到自定义 URL。
+默认情况下，“提供详细信息”  链接转到 [Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)网站，但也可以根据 Azure 信息保护策略中的一项[策略设置](../configure-policy-settings.md)，将其配置为转到自定义 URL。
 
-仅当指定[高级客户端设置](client-admin-guide-customizations.md#add-report-an-issue-for-users)时，才会显示“报告问题”链接。 配置此设置时，指定 HTTP 链接，例如支持人员的电子邮件地址。
+仅当指定[高级客户端设置](client-admin-guide-customizations.md#add-report-an-issue-for-users)时，才会显示“报告问题”链接  。 配置此设置时，指定 HTTP 链接，例如支持人员的电子邮件地址。
 
-“导出日志”自动收集并附加 Azure 信息保护客户端的日志文件，如果必须将日志文件发送给 Microsoft 支持人员的话。 最终用户也可以使用此选项，将这些日志文件发送给你的支持人员。
+“导出日志”  自动收集并附加 Azure 信息保护客户端的日志文件，如果必须将日志文件发送给 Microsoft 支持人员的话。 最终用户也可以使用此选项，将这些日志文件发送给你的支持人员。
 
-“重置设置”会注销用户、删除当前下载的 Azure 信息保护策略，并重置 Azure Rights Management 服务的用户设置。
+“重置设置”会注销用户、删除当前下载的 Azure 信息保护策略，并重置 Azure Rights Management 服务的用户设置  。
 
 ##### <a name="more-information-about-the-reset-settings-option"></a>有关“重置设置”选项的详细信息
 
@@ -133,15 +133,15 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
     
     对于企业网络，通常使用组策略配置这些设置，在这种情况下，在计算机上刷新组策略时，将自动重新应用这些设置。 但是，某些设置可能通过脚本一次性配置，或手动配置。 在这些情况下，必须执行其他步骤来重新配置这些设置。 例如，由于要从 AD RMS 迁移并且网络上仍有服务连接点，因此计算机要运行一次脚本才能配置用于重定向到 Azure 信息保护的设置。 重置客户端后，计算机必须再次运行此脚本。
     
-    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity
+    - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity
     
-    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\14.0\Common\DRM
+    - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\14.0\Common\DRM
     
-    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\DRM
+    - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\DRM
     
-    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\16.0\Common\DRM
+    - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\Common\DRM
     
-    - HKEY_CURRENT-USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\MSIPC    
+    - HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\MSIPC    
 
 - 当前登录的用户已注销。
 
@@ -151,7 +151,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 如果需要以与显示用户名不同的用户身份登录，请参阅[以其他用户身份登录](client-admin-guide-customizations.md#sign-in-as-a-different-user)自定义项。
 
-“最后连接”显示客户端最后一次连接到组织的 Azure 信息保护服务的时间。 可以将此信息与信息保护策略安装日期和时间结合，以确认 Azure 信息保护策略上次安装或更新的时间。 当客户端连接服务时，如果它发现与其当前策略有差异，则会自动下载最新策略，频率同样也是每 24 小时。 如果在显示时间后完成策略更改，关闭并重新打开 Office 应用程序。
+“最后连接”  显示客户端最后一次连接到组织的 Azure 信息保护服务的时间。 可以将此信息与信息保护策略安装  日期和时间结合，以确认 Azure 信息保护策略上次安装或更新的时间。 当客户端连接服务时，如果它发现与其当前策略有差异，则会自动下载最新策略，频率同样也是每 24 小时。 如果在显示时间后完成策略更改，关闭并重新打开 Office 应用程序。
 
 如果看到**此客户端未获许可使用 Office Professional Plus**：Azure 信息保护客户端检测到安装的 Office 版本不支持应用 Rights Management 保护。 执行此检测时，便会发现应用保护的标签未显示在 Azure 信息保护栏上。
 
@@ -159,7 +159,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 ## <a name="support-for-multiple-languages"></a>支持多种语言
 
-Azure 信息保护客户端支持 Office 365 支持的同种语言。 有关这些语言的列表，请参阅 Office [国际可用性](https://products.office.com/business/international-availability)页面的 Office 365、Exchange Online Protection 和 Power BI 部分。
+Azure 信息保护客户端支持 Office 365 支持的同种语言。 有关这些语言的列表，请参阅 Office [国际可用性](https://products.office.com/business/international-availability)页面的 Office 365、Exchange Online Protection 和 Power BI  部分。
 
 对于这些语言，Azure 信息保护客户端中的菜单选项、对话框和消息将以用户的语言显示。 由于有一个安装程序可检测语言，因此不需要进行额外配置即可安装不同语言的 Azure 信息保护客户端。 
 
@@ -196,17 +196,17 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 从版本 1.48.204.0，从以前版本的升级过程会自动更改到扫描程序从 Azure 门户获取其配置设置。 此外，还会更新扫描程序配置数据库的架构，并且还会从 AzInfoProtection 重命名此数据库：
 
-- 如果未指定自己的配置文件名称，则会将配置数据库重命名为 AIPScanner_\<computer_name>。 
+- 如果未指定自己的配置文件名称，则会将配置数据库重命名为  AIPScanner_\<computer_name>。 
 
-- 如果指定自己的配置文件名称，则会将配置数据库重命名为 AIPScanner_\<profile_name>。
+- 如果指定自己的配置文件名称，则会将配置数据库重命名为  AIPScanner_\<profile_name>。
 
 虽然可以按不同的顺序升级扫描程序，但建议执行以下步骤：
 
 1. 使用 Azure 门户创建新的扫描程序配置文件，其中包含扫描程序和数据存储库的设置及其所需的任何设置。 此步骤的帮助，请参阅[在 Azure 门户中配置扫描程序](../deploy-aip-scanner.md#configure-the-scanner-in-the-azure-portal)扫描程序的部署说明中的部分。
     
-    如果运行扫描程序的计算机断开与 Internet 的连接，则仍需执行此步骤。 然后，在 Azure 门户中，使用“导出”选项将扫描程序配置文件导出到文件中。
+    如果运行扫描程序的计算机断开与 Internet 的连接，则仍需执行此步骤。 然后，在 Azure 门户中，使用“导出”  选项将扫描程序配置文件导出到文件中。
 
-2. 在扫描程序计算机上，停止扫描程序服务“Azure 信息保护扫描程序”。
+2. 在扫描程序计算机上，停止扫描程序服务“Azure 信息保护扫描程序”  。
 
 3. 通过安装中的当前正式发布 (GA) 版本升级的 Azure 信息保护客户端[Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)。
 
@@ -214,7 +214,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 5. 仅当扫描程序在断开连接的计算机上运行时：现在运行 [Import-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration)，并指定包含导出设置的文件。
 
-6. 重启 Azure 信息保护扫描程序服务“Azure 信息保护扫描程序”。
+6. 重启 Azure 信息保护扫描程序服务“Azure 信息保护扫描程序”  。
 
 现在，您可以使用中的说明的其余部分[部署 Azure 信息保护扫描程序以自动分类和保护文件](../deploy-aip-scanner.md)，省略要安装扫描程序的步骤。 由于已安装扫描程序，没有无需重新安装它。
 
@@ -225,7 +225,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 在这种情况下，当在 Azure 门户中配置扫描程序时，必须指定与运行 Update-AIPScanner 命令时使用的完全相同的配置文件名称。 如果名称不匹配，则不会为设置配置扫描程序。 
 
 > [!TIP]
-> 若要识别具有此错误配置的扫描程序，请使用 Azure 门户中的“Azure 信息保护 - 节点”边栏选项卡。
+> 若要识别具有此错误配置的扫描程序，请使用 Azure 门户中的“Azure 信息保护 - 节点”  边栏选项卡。
 >  
 > 对于具有 Internet 连接的扫描仪，它们显示其计算机的名称及 GA 版本数 Azure 信息保护客户端，但没有配置文件名称。 只有版本号为 1.41.51.0 的扫描程序才不在此边栏选项卡上显示配置文件名称。 
 
@@ -249,9 +249,9 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 可使用以下任一选项卸载客户端：
 
-- 使用控制面板卸载程序：单击“Microsoft Azure 信息保护” > “卸载”
+- 使用控制面板卸载程序：单击“Microsoft Azure 信息保护” > “卸载”  
 
-- 重新运行可执行文件（如 **AzInfoProtection.exe**），并从“修改安装程序”页上，单击“卸载”。 
+- 重新运行可执行文件（如 **AzInfoProtection.exe**），并从“修改安装程序”  页上，单击“卸载”  。 
 
 - 使用 **/uninstall** 运行可执行文件。 例如：`AzInfoProtection.exe /uninstall`
 
