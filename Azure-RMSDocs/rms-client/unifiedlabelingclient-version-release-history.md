@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/20/2019
+ms.date: 06/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: ea360e880e4b6bf0dc4c2f362a82ffa6d21a6c3b
-ms.sourcegitcommit: a26e4e50165107efd51280b5c621dfe74be51a7a
+ms.openlocfilehash: d0122c41123bb47f0facf2bdf96e73ad10f8fe3d
+ms.sourcegitcommit: b92f60a87f824fc2da1e599f526898e3a0c919c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67236822"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67343662"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标记客户端-版本发行历史记录和支持策略
 
@@ -69,7 +69,7 @@ ms.locfileid: "67236822"
     - [对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](clientv2-admin-guide-customizations.md#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
     - [为用户添加“报告问题”](clientv2-admin-guide-customizations.md#add-report-an-issue-for-users)
     - [在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](clientv2-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
-    - [启用 Azure 信息保护分析以发现文档中的敏感信息](clientv2-admin-guide-customizations.md#enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents)
+    - [禁用将在文档中发现的敏感信息发送到 Azure 信息保护 analytics](clientv2-admin-guide-customizations.md#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)
     - [禁止为一部分用户发送信息类型匹配项](clientv2-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)
     - [从 Secure Islands 和其他标记解决方案迁移标签](clientv2-admin-guide-customizations.md#migrate-labels-from-secure-islands-and-other-labeling-solutions)
     - [应用标签时应用的自定义属性](clientv2-admin-guide-customizations.md#apply-a-custom-property-when-a-label-is-applied)
@@ -93,6 +93,8 @@ ms.locfileid: "67236822"
 **修补程序：**
 
 - 当配置自动标签时，标签将应用第一次保存文档。
+
+- 默认标签支持子标签。
 
 ## <a name="version-207790"></a>版本 2.0.779.0
 

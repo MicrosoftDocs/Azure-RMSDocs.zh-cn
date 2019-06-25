@@ -4,19 +4,19 @@ description: 有关自定义 Windows 的 Azure 信息保护统一标记客户的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/20/2019
+ms.date: 06/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 41b4d44babb9941820c95a7f842f119c444a4b06
-ms.sourcegitcommit: 478081129d9ea8382ce08fae0bae1a08cab23893
+ms.openlocfilehash: b269b4b16507a79c0f08d6c9cc290c22dd69f769
+ms.sourcegitcommit: b92f60a87f824fc2da1e599f526898e3a0c919c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298280"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67343748"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -132,7 +132,7 @@ ms.locfileid: "67298280"
 |PostponeMandatoryBeforeSave|[使用强制标签时，删除文档的“以后再说”](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
 |RemoveExternalContentMarkingInApp|[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)|
 |ReportAnIssueLink|[为用户添加“报告问题”](#add-report-an-issue-for-users)|
-|RunAuditInformationTypeDiscovery|[启用 Azure 信息保护分析以发现文档中的敏感信息](#enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents)|
+|RunAuditInformationTypeDiscovery|[禁用将在文档中发现的敏感信息发送到 Azure 信息保护 analytics](#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)|
 
 示例 PowerShell 命令来检查有效的标签策略在标签策略设置名为"Global":
 
@@ -212,13 +212,13 @@ ms.locfileid: "67298280"
 
 对于所选的标签策略中，指定以下字符串：
 
-- 密钥：**PostponeMandatoryBeforeSaveProperty**
+- 密钥：**PostponeMandatoryBeforeSave**
 
 - Value：**False**
 
 示例 PowerShell 命令，其中标签策略名为"Global":
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{PostponeMandatoryBeforeSaveProperty="False"}
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{PostponeMandatoryBeforeSave="False"}
 
 ## <a name="remove-headers-and-footers-from-other-labeling-solutions"></a>删除其他标记解决方案中的页眉和页脚
 
@@ -444,28 +444,6 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - **阻止**：如果上述情况持续，将阻止用户发送电子邮件。 该消息包括阻止电子邮件的原因，以便用户可以解决问题。 例如，删除特定收件人或标记电子邮件。 
 
-将生成的操作记录到本地 Windows 事件日志“应用程序和服务日志” > “Azure 信息保护”中   ：
-
-- 警告消息：信息 ID 301
-
-- 验证消息：信息 ID 302
-
-- 阻止邮件：信息 ID 303
-
-来自验证消息的事件条目示例：
-
-```
-Client Version: 2.0.779.0
-Client Policy ID: e5287fe6-f82c-447e-bf44-6fa8ff146ef4
-Item Full Path: Price list.msg
-Item Name: Price list
-Process Name: OUTLOOK
-Action: Justify
-User Justification: My manager approved sharing of this content
-Action Source: 
-User Response: Confirmed
-```
-以下部分包含每个高级客户端设置配置的说明。
 
 > [!TIP]
 > 虽然本教程适用于 Azure 信息保护客户端而不是统一标记客户端，您可以看到这些高级设置中为自己使用的操作[教程：配置 Azure 信息保护来控制的信息使用 Outlook oversharing](../infoprotect-oversharing-tutorial.md)。
@@ -595,19 +573,19 @@ User Response: Confirmed
 
     Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookJustifyTrustedDomains="contoso.com,fabrikam.com,litware.com"}
 
-## <a name="enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents"></a>启用 Azure 信息保护分析以发现文档中的敏感信息
+## <a name="disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics"></a>禁用将在文档中发现的敏感信息发送到 Azure 信息保护 analytics
 
 此配置使用的策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)必须通过使用 Office 365 安全与合规性中心 PowerShell 配置。 它被受统一标记仅限客户端的预览版本。
 
-[Azure 信息保护分析](../reports-aip.md)可以发现和报告保存 Azure 信息保护的文档统一标记的客户端，如果该内容中包含敏感信息。 默认情况下，此信息不会发送到 Azure 信息保护分析。
+[Azure 信息保护分析](../reports-aip.md)可以发现并报告该内容包含敏感信息时保存 Azure 信息保护客户端的文档。 默认情况下，此信息发送由 Azure 信息保护统一到 Azure 信息保护 analytics 标记。
 
-若要更改此行为，以便由统一标记客户端发送此信息，请为所选的标签策略输入以下字符串：
+若要更改此行为，以便统一标记客户端不发送此信息，请为所选的标签策略输入以下字符串：
 
 - 密钥：RunAuditInformationTypeDiscovery 
 
-- Value：**True**
+- Value：**False**
 
-如果未设置此高级客户端设置，审核结果仍将从统一标记客户端发送，但信息仅限于 reporting 时用户已访问带标签的内容。
+如果设置此高级客户端设置、 审核结果仍将从统一标记客户端发送，但信息仅限于 reporting 时用户已访问标记为内容。
 
 例如：
 
@@ -619,7 +597,7 @@ User Response: Confirmed
 
 示例 PowerShell 命令，其中标签策略名为"Global":
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{RunAuditInformationTypeDiscovery="True"}
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{RunAuditInformationTypeDiscovery="False"}
 
 ## <a name="disable-sending-information-type-matches-for-a-subset-of-users"></a>禁止为一部分用户发送信息类型匹配项
 
@@ -629,7 +607,7 @@ User Response: Confirmed
 
 - 密钥：**LogMatchedContent**
 
-- Value：**禁用**
+- Value：**False**
 
 示例 PowerShell 命令，其中标签策略名为"Global":
 
@@ -647,7 +625,7 @@ User Response: Confirmed
 
 - 对于 Office 文档：当在桌面应用中打开文档时，新的敏感度标签显示为已设置并保存文档时应用。
 
-- 对于 PowerShell：[Set-aipfilelabel](/powershell/module/azureinformationprotection/set-aipfilelabel)并[集 AIPFileClassificiation](/powershell/module/azureinformationprotection/set-aipfileclassification)可以将应用新的敏感度标签。 [Get-aipfilestatus](/powershell/module/azureinformationprotection/get-aipfilestatus)设置由另一种方法之前不会显示新的敏感度标签。
+- 对于 PowerShell：[Set-aipfilelabel](/powershell/module/azureinformationprotection/set-aipfilelabel)并[集 AIPFileClassificiation](/powershell/module/azureinformationprotection/set-aipfileclassification)可以将应用新的敏感度标签。
 
 - 对于文件资源管理器：在 Azure 信息保护对话框中，新的敏感度标签显示，但未设置。
 

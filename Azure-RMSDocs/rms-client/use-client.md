@@ -4,17 +4,17 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/21/2019
+ms.date: 06/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: c6898480d18ef5dd915faa1b1c6c369e9de877fb
-ms.sourcegitcommit: 599306e271392afa4bc05c87982549785ce1860e
+ms.openlocfilehash: b51ebdb55212e2a29b6a8ce950bd69d578e98ed9
+ms.sourcegitcommit: b92f60a87f824fc2da1e599f526898e3a0c919c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67305752"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67343677"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -68,7 +68,7 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 |功能|经典的客户端|统一标记的客户端|
 |-------|-----------------------------------|----------------------------------------------------|
 |标记操作：手动、建议、自动| 是 | 是 |
-|中心报告（分析）：| 是 | 是；但具有限制：<br /><br /> - [内容匹配](../reports-aip.md#content-matches-for-deeper-analysis)需要预览版的客户端 |
+|中心报告（分析）：| 是 | 是；但具有限制：<br /><br /> -不支持[内容匹配](../reports-aip.md#content-matches-for-deeper-analysis) |
 |重置设置和导出日志：| 是 | 是 |
 |用户定义的权限：| 是 | 是；但具有限制： <br /><br />-对于 Outlook 唯一 （不要转发）：支持<br /><br />-对于 Word、 Excel、 PowerPoint 和文件资源管理器：在 Azure 门户中配置标签时，使用预览版客户端支持 |
 |自定义权限：| 是 | 文件资源管理器和 PowerShell （预览版） <br /><br /> 在 Office 应用程序中，作为替代方法，用户可以选择“文件信息” > “保护文档”    > “限制访问”  |

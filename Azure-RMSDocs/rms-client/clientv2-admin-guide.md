@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: 6564980da8ad4067d83c408c2baf0afd8ab5c181
-ms.sourcegitcommit: 2d08bee51c26af3159bd52456e12e0166c8369c1
+ms.openlocfilehash: 9f50eef590b684be95d410ed470bd0d0ee62a76a
+ms.sourcegitcommit: b92f60a87f824fc2da1e599f526898e3a0c919c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65822223"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67343713"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标记的客户端管理员指南
 
->适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用对象：  Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
-> 说明：*[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明： *[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 在本指南中使用的信息，如果你负责 Azure 信息保护统一标记客户端上的企业网络，或如果您希望更多技术信息不是处于[Azure 信息保护统一标记客户端用户指南](clientv2-user-guide.md)。 
 
@@ -81,11 +81,11 @@ Azure 信息保护统一标记客户端包括：
 
 ### <a name="installation-checks-and-troubleshooting"></a>安装检查和疑难解答
 
-安装客户端后，请使用“帮助和反馈”选项打开“Microsoft Azure 信息保护”对话框：
+安装客户端后，请使用“帮助和反馈”选项打开“Microsoft Azure 信息保护”对话框   ：
 
 - 从 Office 应用程序：上**主页**选项卡上，在**敏感度**组中，选择**敏感度**，然后选择**帮助和反馈**。
 
-- 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”。 
+- 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”   。 
 
 #### <a name="help-and-feedback-section"></a>“**帮助和反馈**”部分
 
@@ -113,15 +113,15 @@ Azure 信息保护统一标记客户端包括：
     
     对于企业网络，通常使用组策略配置这些设置，在这种情况下，在计算机上刷新组策略时，将自动重新应用这些设置。 但是，某些设置可能通过脚本一次性配置，或手动配置。 在这些情况下，必须执行其他步骤来重新配置这些设置。 例如，由于要从 AD RMS 迁移并且网络上仍有服务连接点，因此计算机要运行一次脚本才能配置用于重定向到 Azure 信息保护的设置。 重置客户端后，计算机必须再次运行此脚本。
     
-    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity
+    - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity
     
-    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\14.0\Common\DRM
+    - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\14.0\Common\DRM
     
-    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\DRM
+    - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\DRM
     
-    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\16.0\Common\DRM
+    - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\Common\DRM
     
-    - HKEY_CURRENT-USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\MSIPC    
+    - HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\MSIPC
 
 - 当前登录的用户已注销。
 
@@ -135,7 +135,7 @@ Azure 信息保护统一标记客户端包括：
 
 ## <a name="support-for-multiple-languages"></a>支持多种语言
 
-Azure 信息保护统一标记客户端支持 Office 365 支持的相同语言。 有关这些语言的列表，请参阅 Office [国际可用性](https://products.office.com/business/international-availability)页面的 Office 365、Exchange Online Protection 和 Power BI 部分。
+Azure 信息保护统一标记客户端支持 Office 365 支持的相同语言。 有关这些语言的列表，请参阅 Office [国际可用性](https://products.office.com/business/international-availability)页面的 Office 365、Exchange Online Protection 和 Power BI  部分。
 
 为这些语言、 菜单选项、 对话框和消息从 Azure 信息保护统一标记的客户端显示在用户的语言。 没有的单个安装程序检测语言，因此安装不同语言的 Azure 信息保护统一标记客户所不需的任何其他配置。 
 
@@ -145,7 +145,7 @@ Azure 信息保护统一标记客户端支持 Office 365 支持的相同语言�
 
 安装 Azure 信息保护统一标记客户端后，请确保你提供有关如何标记其文档和电子邮件，用户说明和指南来为特定方案选择的标签。 例如：
 
-- 联机用户指令：[Azure 信息保护用户指南](client-user-guide.md)
+- 联机用户指令：[Azure 信息保护统一标记的用户指南](clientv2-user-guide.md)
 
 - 下载可自定义的用户指南：[Azure 信息保护最终用户采用指南](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
 
@@ -170,7 +170,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标记的客户�
 
 可使用以下任一选项卸载客户端：
 
-- 使用控制面板卸载程序：单击“Microsoft Azure 信息保护” > “卸载”
+- 使用控制面板卸载程序：单击“Microsoft Azure 信息保护” > “卸载”  
 
 - 重新运行该可执行文件 (例如， **AzInfoProtection_UL.exe**)，以及从**修改安装程序**页上，单击**卸载**。 
 

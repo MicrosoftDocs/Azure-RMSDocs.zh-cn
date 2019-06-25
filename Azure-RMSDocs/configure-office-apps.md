@@ -4,34 +4,31 @@ description: 面向管理员提供的有关配置 Office 应用以使用 Azure �
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/01/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
-ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 87baf8f7bccd4f99b1beefc8a7ede9c7b38c77cd
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: e70e10847d3c46d7a4bbf9a5822d9f3aaee2ed94
+ms.sourcegitcommit: b92f60a87f824fc2da1e599f526898e3a0c919c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60180726"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67343627"
 ---
 # <a name="office-apps-configuration-for-clients-to-use-the-azure-rights-management-service"></a>Office 应用：配置客户端，以使用 Azure 权限管理服务
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 
 使用此信息确定需要执行的操作，使 Office 应用可与 Azure 信息保护中的 Azure 权限保护服务配合使用。
 
-## <a name="office2016-and-office-2013"></a>Office 2016 和 Office 2013
+## <a name="office2019-office-2016-and-office-2013"></a>Office 2019、 Office 2016 和 Office 2013
 由于 Office 的这些更高版本以本机方式支持 Azure 权限管理服务，因此无需客户端计算机配置即可支持各个应用程序（例如 Word、Excel、PowerPoint、Outlook 和 Outlook 网页版）的信息权限管理 (IRM) 功能。 所有用户都必须使用其 Office 365 凭据登录其 Office 应用程序。 然后，他们才能保护文件和电子邮件，以及使用受其他人保护的文件和电子邮件。
 
-但是，我们建议你使用 Azure 信息保护客户端，为这些应用程序提供补充，使得用户能够发挥 Office 外接程序的优势。 有关详细信息，请参阅 [Azure 信息保护客户端：客户端安装和配置](configure-client.md)。
-
 ## <a name="office2010"></a>Office 2010
-对于要将 Azure Rights Management 服务与 Office 2010 结合使用的客户端计算机，它们必须具有 Azure 信息保护客户端。 用户必须使用其 Office 365 凭据登录，然后才能保护文件并使用受其他用户保护的文件，此外不再需要更多配置。
+对于要将 Azure Rights Management 服务用于 Office 2010 的客户端计算机，它们必须具有 Azure 信息保护客户端 （经典）。 用户必须使用其 Office 365 凭据登录，然后才能保护文件并使用受其他用户保护的文件，此外不再需要更多配置。
 
-有关 Azure 信息保护客户端的详细信息，请参阅 [Azure 信息保护客户端：客户端安装和配置](configure-client.md)。
+有关 Azure 信息保护客户端 （经典） 的详细信息，请参阅[Azure 信息保护客户端：客户端安装和配置](configure-client.md)。
 

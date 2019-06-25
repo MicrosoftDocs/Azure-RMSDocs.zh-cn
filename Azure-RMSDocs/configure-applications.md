@@ -4,30 +4,30 @@ description: 有关管理员配置应用程序和服务以支持 Azure 信息保
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/01/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 445f68f102764444551b13b49ea327a0b58046e4
-ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
+ms.openlocfilehash: 8827350cc630f6e2af77878c726c023c5ba6674e
+ms.sourcegitcommit: b92f60a87f824fc2da1e599f526898e3a0c919c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64767778"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67343688"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>为 Azure Rights Management 配置应用程序
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!NOTE]
 > 此信息适用于已部署了 Azure 信息保护的 IT 管理员和顾问。 如果你要寻找有关如何针对特定应用程序使用 Rights Management 功能，或者如何打开权限保护文件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
 >
 > 例如，对于 Office 应用程序，请单击帮助图标并输入搜索词，例如 **Rights Management** 或 **IRM**。 有关适用于 Windows 的 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端用户指南](./rms-client/client-user-guide.md)。
 
-为组织部署 Azure 信息保护之后，请使用以下信息配置应用程序、Azure 信息保护客户端和服务。 例如，Word 2016、Word 2013 和 Word 2010 等 Office 应用程序。 以及 Exchange Online（传输规则、数据丢失防护、请勿转发和邮件加密）与 SharePoint Online（受保护库）等服务。 若要了解这些应用程序和服务如何支持 Azure 信息保护中的数据保护服务，请参阅[应用程序如何支持 Azure 权限管理服务](applications-support.md)。
+为组织部署 Azure 信息保护之后，请使用以下信息配置应用程序、Azure 信息保护客户端和服务。 例如，Office 应用程序如 Word 2019、 Word 2016 和 Word 2013。 以及 Exchange Online（传输规则、数据丢失防护、请勿转发和邮件加密）与 SharePoint Online（受保护库）等服务。 若要了解这些应用程序和服务如何支持 Azure 信息保护中的数据保护服务，请参阅[应用程序如何支持 Azure 权限管理服务](applications-support.md)。
 
 > [!IMPORTANT]
 > 有关受支持的版本和其他要求的信息，请参阅 [Azure Rights Management 的要求](requirements.md)。
@@ -40,7 +40,7 @@ ms.locfileid: "64767778"
 
 - [Office 应用程序：客户端配置](configure-office-apps.md)
 
-    -   [Office 2016 和 Office 2013](configure-office-apps.md#office2016-and-office-2013)
+    -   [Office 2019、 Office 2016 和 Office 2013](configure-office-apps.md#office2019-office-2016-and-office-2013)
 
     -   [Office 2010](configure-office-apps.md#office2010)
 
