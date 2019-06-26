@@ -4,19 +4,19 @@ description: 有关自定义 Windows 的 Azure 信息保护统一标记客户的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/23/2019
+ms.date: 06/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: b269b4b16507a79c0f08d6c9cc290c22dd69f769
-ms.sourcegitcommit: b92f60a87f824fc2da1e599f526898e3a0c919c3
+ms.openlocfilehash: 15dc66f33918e52645e81964eca260f167986f3e
+ms.sourcegitcommit: 027c550fc7634ca28935ed3521e8eae186b03483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67343748"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389015"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -26,16 +26,16 @@ ms.locfileid: "67343748"
 
 管理 Azure 信息保护统一标记客户端时，可能需要用于特定方案或一部分用户的高级配置中使用以下信息。
 
-这些设置需要编辑注册表，或指定通过使用 Office 365 安全与合规性中心 PowerShell 高级设置。
+这些设置需要编辑注册表，或指定高级设置。 高级的设置使用[Office 365 安全与合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps)。
 
 ### <a name="how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell"></a>如何使用 Office 365 安全与合规性中心 PowerShell 配置客户端的高级的设置
 
-当你使用[Office 365 安全与合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps)，可以配置高级的设置，支持自定义项的标签策略和标签。 例如：
+当你使用 Office 365 安全与合规性中心 PowerShell 时，可以配置高级的设置，支持自定义项的标签策略和标签。 例如：
 
 - 若要在 Office 应用中显示信息保护栏的设置是***标记策略高级设置***。
 - 若要指定标签颜色的设置是***高级设置的标签***。
 
-在这两种情况下，您指定*AdvancedSettings*参数标识 （名称或 GUID） 的策略或标签，并指定中的键/值对[哈希表](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_hash_tables)，使用以下语法：
+在这两种情况下，检查完[连接到 Office 365 安全与合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)，指定*AdvancedSettings*参数标识 （名称或 GUID） 的策略或标签，并指定键/值对中的[哈希表](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_hash_tables)。 使用以下语法：
 
 标签策略设置的单个字符串值：
 
@@ -139,6 +139,9 @@ ms.locfileid: "67343748"
     (Get-LabelPolicy -Identity Global).settings
 
 #### <a name="available-advanced-settings-for-labels"></a>可用的高级的设置的标签
+
+> [!NOTE]
+> 设置标签 cmdlet 来配置标签的高级的设置逐步推出到租户。 如果你没有此 cmdlet 连接到 Office 365 安全与合规性中心 PowerShell 时，在几周之后重试。
 
 |设置|应用场景和说明|
 |----------------|---------------|
