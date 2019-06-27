@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/23/2019
+ms.date: 06/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: d0122c41123bb47f0facf2bdf96e73ad10f8fe3d
-ms.sourcegitcommit: b92f60a87f824fc2da1e599f526898e3a0c919c3
+ms.openlocfilehash: 6f359c304080918713cee52667a1bedeb7b4ae07
+ms.sourcegitcommit: 9628dcd88abde32f612896195f8d3d9a2c1d87bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67343662"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67398734"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标记客户端-版本发行历史记录和支持策略
 
@@ -63,7 +63,6 @@ ms.locfileid: "67343662"
     - [为 Outlook 设置不同的默认标签](clientv2-admin-guide-customizations.md#set-a-different-default-label-for-outlook)
     - [使用强制标签时，删除文档的“以后再说”](clientv2-admin-guide-customizations.md#remove-not-now-for-documents-when-you-use-mandatory-labeling)
     - [删除其他标记解决方案中的页眉和页脚](clientv2-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)
-    - [为 Outlook 设置不同的默认标签](clientv2-admin-guide-customizations.md#set-a-different-default-label-for-outlook)
     - [禁用在文件资源管理器中的自定义权限](clientv2-admin-guide-customizations.md#disable-custom-permissions-in-file-explorer)
     - [对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](clientv2-admin-guide-customizations.md#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer)
     - [对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](clientv2-admin-guide-customizations.md#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)

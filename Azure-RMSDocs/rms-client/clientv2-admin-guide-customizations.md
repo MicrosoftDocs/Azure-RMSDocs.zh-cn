@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 15dc66f33918e52645e81964eca260f167986f3e
-ms.sourcegitcommit: 027c550fc7634ca28935ed3521e8eae186b03483
+ms.openlocfilehash: 451a7df93629be3bdfb46004dfa3b4dfd94cced7
+ms.sourcegitcommit: 9628dcd88abde32f612896195f8d3d9a2c1d87bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389015"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67398757"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -141,7 +141,7 @@ ms.locfileid: "67389015"
 #### <a name="available-advanced-settings-for-labels"></a>可用的高级的设置的标签
 
 > [!NOTE]
-> 设置标签 cmdlet 来配置标签的高级的设置逐步推出到租户。 如果你没有此 cmdlet 连接到 Office 365 安全与合规性中心 PowerShell 时，在几周之后重试。
+> 设置标签 cmdlet 来配置标签的高级的设置仍向租户推出和尚不可用在所有区域中。 如果你没有此 cmdlet 连接到 Office 365 安全与合规性中心 PowerShell 时，在几周之后重试。
 
 |设置|应用场景和说明|
 |----------------|---------------|
