@@ -4,19 +4,19 @@ description: 不是由 Microsoft 管理 Azure 信息保护的根密钥，你可�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/15/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d23884de43f63798a86b4ade47cd8683d7444980
-ms.sourcegitcommit: b24de99cf8006a70a14e7a21d103644c1e20502d
+ms.openlocfilehash: 099d82892cefd36ef1cd8b6e0f2c224b5d0c1c49
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "67149253"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67521956"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
@@ -38,7 +38,7 @@ ms.locfileid: "67149253"
 |符合性规定和对所有生命周期操作的控制。 <br /><br />例如：密钥必须由硬件安全模块 (HSM) 保护。|BYOK|
 
 
-如有需要，可以在部署后通过使用 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) cmdlet 来更改租户密钥拓扑。
+如果需要，您可以通过使用，在部署后，更改你的租户密钥拓扑[集 AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) cmdlet。
 
 
 ## <a name="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok"></a>选择你的租户密钥拓扑：由 Microsoft 管理 （默认） 或由你管理 (BYOK)
@@ -110,7 +110,7 @@ ms.locfileid: "67149253"
 |你的 Azure 信息保护租户必须具有 Azure 订阅。 如果没有订阅，可以注册[免费帐户](https://azure.microsoft.com/pricing/free-trial/)。 <br /><br /> 若要使用受 HSM 保护的密钥，必须拥有 Azure Key Vault 高级服务层。|免费的 Azure 订阅提供相应的访问权限，可配置 Azure Active Directory 以及 Azure 权限管理自定义模板（**可访问 Azure Active Directory**），但不足以使用 Azure 密钥保管库。 若要确认你拥有可用于 BYOK 的 Azure 订阅，请使用[Azure PowerShell](/powershell/azure/overview) cmdlet: <br /><br /> 1.开始使用 Azure PowerShell 会话**以管理员身份运行**选项，并以使用 Azure 信息保护租户的全局管理员身份登录`Connect-AzAccount`复制，并将生成的令牌字符串粘贴到`https://microsoft.com/devicelogin`使用浏览器。 <br /><br /> 有关详细信息，请参阅[使用 Azure PowerShell 登录](/powershell/azure/authenticate-azureps)。 <br /><br />2.键入以下命令，并确认可以看到显示了订阅名称和 ID 以及 Azure 信息保护租户 ID 的值，并且状态为“已启用”：`Get-AzSubscription`<br /><br />如果没有显示任何值，并且返回到提示，则表示没有可用于 BYOK 的 Azure 订阅。 <br /><br />**注意**：除了 BYOK 的先决条件，如果您从 AD RMS 迁移到 Azure 信息保护使用软件密钥到硬件密钥，你必须具有最低版本 11.62 如果您使用 hsm 的 Thales 固件。|
 |若要使用本地创建的受 HSM 保护密钥，请执行以下操作： <br /><br />- 针对 Key Vault BYOK 列出的所有先决条件。 |请参阅 Azure 密钥保管库文档中的 [Prerequisites for BYOK](/azure/key-vault/key-vault-hsm-protected-keys#prerequisites-for-byok)（BYOK 的先决条件）。 <br /><br /> **注意**：除了 BYOK 的先决条件，如果您从 AD RMS 迁移到 Azure 信息保护使用软件密钥到硬件密钥，你必须具有最低版本 11.62 如果您使用 hsm 的 Thales 固件。|
 |如果包含租户密钥的密钥保管库使用 Azure Key Vault 虚拟网络服务终结点： <br /><br />- 允许受信任 Microsoft 服务绕过此防火墙。|有关详细信息，请参阅 [Azure Key Vault 虚拟网络服务终结点](/azure/key-vault/key-vault-overview-vnet-service-endpoints)。|
-|适用于 Windows PowerShell 的 Azure Rights Management 管理模块。|有关安装说明，请参阅[安装 AADRM PowerShell 模块](./install-powershell.md)。 <br /><br />如果之前已安装了此 Windows PowerShell 模块，请运行以下命令检查版本号是否高于或等于 **2.9.0.0**：`(Get-Module aadrm -ListAvailable).Version`|
+|用于 Azure 信息保护的 AIPService PowerShell 模块。|有关安装说明，请参阅[安装 AIPService PowerShell 模块](./install-powershell.md)。|
 
 有关 nCipher nShield 硬件安全模块 (HSM) 和如何与 Azure Key Vault 使用的详细信息，请参阅[nCipher 网站](https://www.ncipher.com/products/key-management/cloud-microsoft-azure/how-to-buy)。
 
@@ -124,7 +124,7 @@ ms.locfileid: "67149253"
 
 - 由于针对保护的所有加密调用都链接到 Azure 信息保护租户密钥，因此你可能希望这些调用发生时在最大程度上降低网络延迟。 若要实现这一点，请在与 Azure 信息保护租户相同的 Azure 区域或实例中创建密钥保管库。
 
-若要标识 Azure 信息保护租户的位置，请使用 [Get-AadrmConfiguration](/powershell/module/aadrm/get-aadrmconfiguration) PowerShell cmdlet 并从 URL 中标识区域。 例如：
+若要标识 Azure 信息保护租户的位置，请使用[Get AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) PowerShell cmdlet 和标识来自 Url 的区域。 例如：
 
     LicensingIntranetDistributionPointUrl : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing
 
@@ -176,20 +176,20 @@ Key Vault 中存储的密钥具有密钥 ID。 此密钥 ID 是包含密钥保�
 
 现在可开始配置 Azure 信息保护以将此密钥用作你的组织的 Azure 信息保护租户密钥。 使用 Azure RMS cmdlet，首先连接到 Azure Rights Management 服务，并登录：
 
-    Connect-AadrmService
+    Connect-AipService
 
-然后运行 [Use-AadrmKeyVaultKey cmdlet](/powershell/module/aadrm/use-aadrmkeyvaultkey)，指定密钥 URL。 例如：
+然后运行[使用 AipServiceKeyVaultKey cmdlet](/powershell/module/aipservice/use-aipservicekeyvaultkey)，指定的密钥 URL。 例如：
 
-    Use-AadrmKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333"
+    Use-AipServiceKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333"
 
 > [!IMPORTANT]
-> 在此示例中，“aaaabbbbcccc111122223333”是要使用的密钥版本。 如果不指定版本，则将使用当前版本的密钥而不发出警告，并且显示命令以进行工作。 但是，如果后来对密钥保管库中的密钥进行了更新（已续订），则即使你再次运行 Use-AadrmKeyVaultKey 命令，Azure Rights Management 服务也将停止为你的租户工作。
+> 在此示例中，“aaaabbbbcccc111122223333”是要使用的密钥版本。 如果不指定版本，则将使用当前版本的密钥而不发出警告，并且显示命令以进行工作。 但是，如果你的密钥在密钥保管库中进行了更高版本更新 （续订），Azure Rights Management 服务将停止工作为你的租户，即使你再次运行使用 AipServiceKeyVaultKey 命令。
 > 
 > 在运行此命令时，除了密钥名称外，请确保还指定了密钥版本。 可以使用 Azure 密钥保管库 cmd [Get AzKeyVaultKey](/powershell/module/az.keyvault/get-azkeyvaultkey)，以获取当前密钥的版本号。 例如：`Get-AzKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
 
 如果需要确认已为 Azure 信息保护正确设置了密钥 URL：在 Azure 密钥保管库，运行[Get AzKeyVaultKey](/powershell/module/az.keyvault/get-azkeyvaultkey)查看密钥 URL。
 
-最后，如果 Azure Rights Management 服务已激活，请运行 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) 以告诉 Azure 信息保护将此密钥用作 Azure Rights Management 服务的活动租户密钥。 如果不执行此步骤，Azure 信息保护将继续使用为租户自动创建的默认 Microsoft 托管密钥。
+最后，如果已激活 Azure Rights Management 服务，运行[集 AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties)告诉 Azure 信息保护，以将此密钥用作 Azure Rights Management 服务的活动租户密钥。 如果不执行此步骤，Azure 信息保护将继续使用为租户自动创建的默认 Microsoft 托管密钥。
 
 
 ## <a name="next-steps"></a>后续步骤
@@ -200,7 +200,7 @@ Key Vault 中存储的密钥具有密钥 ID。 此密钥 ID 是包含密钥保�
     
     - 如果尚未激活保护服务，则必须立即激活 Rights Management 服务，以便组织能够开始使用 Azure 信息保护。 用户立即开始使用你的租户密钥（在 Azure Key Vault 中由 Microsoft 管理或由你管理）。
     
-        有关激活的详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
+        有关激活的详细信息，请参阅[激活 Azure 信息保护中的保护服务](./activate-service.md)。
         
     - 如果已经激活了 Rights Management 服务，然后决定管理自己的租户密钥，用户将逐渐从旧租户密钥迁移到新租户密钥。 这种交错式转换可能需要花费几周才能完成。 受旧租户密钥保护的文档和文件仍然可供授权用户访问。
         
@@ -210,7 +210,7 @@ Key Vault 中存储的密钥具有密钥 ID。 此密钥 ID 是包含密钥保�
     
     ![正在使用租户密钥的 Excel 格式日志文件](./media/RMS_Logging.png)
     
-    有关使用情况日志记录的详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](./log-analyze-usage.md)。
+    有关使用日志记录的详细信息，请参阅[日志记录和分析 Azure 信息保护中的保护使用情况](./log-analyze-usage.md)。
     
 3.  管理你的租户密钥。
     
