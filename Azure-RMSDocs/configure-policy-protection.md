@@ -4,17 +4,17 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/22/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: e7fcdacf0e3b75ee3f7626248652a124faf60bbf
-ms.sourcegitcommit: 599306e271392afa4bc05c87982549785ce1860e
+ms.openlocfilehash: 116ab2106be79119f538b3a2e559bc2faaeb2f2b
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67305585"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67520426"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -41,7 +41,7 @@ ms.locfileid: "67305585"
 若要深入了解 Azure Rights Management 保护及其工作原理，请参阅[什么是 Azure Rights Management？](what-is-azure-rms.md)
 
 > [!IMPORTANT]
-> 要配置标签来应用此保护，必须为组织激活 Azure Rights Management 服务。 有关详细信息，请参阅[激活 Azure Rights Management](activate-service.md)。
+> 要配置标签来应用此保护，必须为组织激活 Azure Rights Management 服务。 有关详细信息，请参阅[激活 Azure 信息保护的保护服务](activate-service.md)。
 
 标签应用保护时，受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 这些位置不支持受保护文件的以下功能：共同创作、Office Online、搜索、文档预览、缩略图、电子数据展示和数据丢失防护 (DLP)。 
 
@@ -132,7 +132,7 @@ ms.locfileid: "67305585"
     
      最佳做法是使用组，而不是使用用户。 此策略可简化配置，且可降低以后更新标签配置并重新保护内容的可能性。 但是，如果对组进行更改则请注意，出于性能原因，Azure 权限管理[将缓存组成员身份](prepare.md#group-membership-caching-by-azure-information-protection)。 
     
-     指定第一组用户和组后，选择要授予这些用户和组的权限。 若要深入了解可选择的权限，请参阅 [为 Azure 权限管理配置使用权限](configure-usage-rights.md)。 但是，支持此保护的应用程序可能在实现这些权限的方式方面有所不同。 请查阅其文档，并在为用户部署模板之前，对用户使用的应用程序执行自己的测试以检查其行为。
+    指定第一组用户和组后，选择要授予这些用户和组的权限。 若要深入了解可选择的权限，请参阅[为 Azure 信息保护配置使用权限](configure-usage-rights.md)。 但是，支持此保护的应用程序可能在实现这些权限的方式方面有所不同。 请查阅其文档，并在为用户部署模板之前，对用户使用的应用程序执行自己的测试以检查其行为。
     
      如有必要，现在可以添加另一组具有使用权限的用户和组。 重复此操作，直到指定所有用户和组及其各自的权限。
 
