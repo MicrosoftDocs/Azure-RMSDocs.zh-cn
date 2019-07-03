@@ -1,6 +1,6 @@
 {
   "build": {
-	  "markdownEngineName": "markdig",
+    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
@@ -37,7 +37,8 @@
       "feedback_product_url": "https://msip.uservoice.com/", 
       "layout": "Conceptual",
       "breadcrumb_path": "/azure/information-protection/bread/toc.json",
-      "searchScope": ["Information Protection"]
+      "searchScope": ["Information Protection"],
+      "disable_contribution_on_translation_quality": ["MT"]
     }
   }
 }
