@@ -4,19 +4,19 @@ description: 此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/16/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f58430e4208c1a2962e7f475418a88b0676de237
-ms.sourcegitcommit: 3e948723644f19c935bc7111dec1cc54a1ff0231
+ms.openlocfilehash: f8aef51156bb92d7d37da300ae2fccd51d739de1
+ms.sourcegitcommit: a2542aec8cd2bf96e94923740bf396badff36b6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65781893"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67535103"
 ---
 # <a name="step-2-software-protected-key-to-software-protected-key-migration"></a>步骤 2：软件保护密钥到软件保护密钥的迁移
 
@@ -31,14 +31,14 @@ ms.locfileid: "65781893"
 
 ## <a name="to-import-the-configuration-data-to-azure-information-protection"></a>将配置数据导入 Azure 信息保护
 
-1. 在连接 Internet 的工作站上，使用 [Connect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice) cmdlet 连接到 Azure Rights Management 服务：
+1. 连接到 Internet 的工作站上使用[Connect AipService](/powershell/module/aipservice/connect-aipservice) cmdlet 连接到 Azure Rights Management 服务：
 
     ```
-    Connect-AadrmService
+    Connect-AipService
     ```
     出现提示时，输入 Azure Rights Management 租户管理员凭据（通常，你将使用作为 Azure Active Directory 或 Office 365 全局管理员的帐户）。
 
-2. 使用 [Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd) cmdlet 上传每个导出的受信任的发布域 (.xml) 文件。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。 
+2. 使用[导入 AipServiceTpd](/powershell/module/aipservice/import-aipservicetpd) cmdlet 上传每个导出的受信任发布域 (.xml) 文件。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。 
     
     若要运行此 cmdlet，需要先前为每个配置数据文件指定的密码。 
     
@@ -48,15 +48,15 @@ ms.locfileid: "65781893"
     
     输入指定的密码以导出第一个配置数据文件。 然后，使用 E:\contosokey1.xml 作为示例配置文件，运行以下命令并确认希望执行此操作：
     ```
-    Import-AadrmTpd -TpdFile E:\contosokey1.xml -ProtectionPassword $TPD_Password -Verbose
+    Import-AipServiceTpd -TpdFile E:\contosokey1.xml -ProtectionPassword $TPD_Password -Verbose
     ```
     
-3. 在上传完每个文件后，请运行 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) 以标识与 AD RMS 中当前活动的 SLC 密钥相匹配的导入的密钥。 该密钥将成为 Azure 权限管理服务的活动租户密钥。
+3. 上传每个文件后，运行[集 AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties)来标识与 AD RMS 中当前活动的 SLC 密钥相匹配的导入的密钥。 该密钥将成为 Azure 权限管理服务的活动租户密钥。
 
-4.  使用 [Disconnect-AadrmService](/powershell/aadrm/vlatest/disconnect-aadrmservice) cmdlet 断开与 Azure Rights Management 服务的连接：
+4.  使用[断开连接 AipServiceService](/powershell/module/aipservice/disconnect-aipservice) cmdlet 断开与 Azure Rights Management 服务的连接：
 
     ```
-    Disconnect-AadrmService
+    Disconnect-AipServiceService
     ```
 
 现在可以转到[步骤 5：激活 Azure 权限管理服务](migrate-from-ad-rms-phase2.md#step-5-activate-the-azure-rights-management-service)。

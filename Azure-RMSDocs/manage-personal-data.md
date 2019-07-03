@@ -4,19 +4,19 @@ description: 有关 Azure 信息保护所使用的个人数据的信息以及如
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/08/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: 91ce158ded8b9e7812f15737b8d07e5efdf5e3c0
-ms.sourcegitcommit: 886aebde3b2df0f54b7bd41105823db44aea72d8
+ms.openlocfilehash: 900b447f67bab09e0cfcb2ed243f2c6a3de71135
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2019
-ms.locfileid: "66815585"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67521183"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
 
@@ -24,13 +24,13 @@ ms.locfileid: "66815585"
 
 - Azure 信息保护策略
 
-- Azure Rights Management 服务的保护模板
+- 保护服务的模板
 
-- Azure 权限管理服务的超级用户和委派管理员 
+- 超级用户和保护服务的委派的管理员 
 
-- Azure Rights Management 服务的管理日志
+- 保护服务的管理日志
 
-- Azure Rights Management 服务的使用情况日志
+- 保护服务的使用情况日志
 
 - 文档跟踪日志
 
@@ -44,18 +44,18 @@ ms.locfileid: "66815585"
 
 使用 Azure 门户，管理员可为作用域内策略和标签配置中的保护设置指定电子邮件地址。 有关详细信息，请参阅[如何使用作用域内策略为特定用户配置 Azure 信息保护策略](configure-policy-scope.md)以及[如何为 Rights Management 保护配置标签](configure-policy-protection.md)。 
 
-对于配置为从 Azure Rights Management 服务应用保护的标签，还可以在保护模板中找到电子邮件地址，方法是从 [AADRM 模块](/powershell/module/aadrm)使用 PowerShell cmdlet。 此 PowerShell 模块还允许管理员按照电子邮件地址将用户指定为[超级用户](configure-super-users.md)，或 Azure Rights Management 服务的管理员。 
+对于配置为应用从 Azure Rights Management 服务保护的标签，电子邮件地址还可在保护模板，通过使用中的 PowerShell cmdlet [AIPService 模块](/powershell/module/aipservice)。 此 PowerShell 模块还允许管理员按照电子邮件地址将用户指定为[超级用户](configure-super-users.md)，或 Azure Rights Management 服务的管理员。 
 
 将 Azure 信息保护用于分类和保护文档和电子邮件时，可能会将电子邮件地址和用户的 IP 地址保存在日志文件中。
 
 
 ### <a name="protection-templates"></a>保护模板
 
-运行 [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) cmdlet 可获取保护模板的列表。 可以使用模板 ID 获取特定模板的详细信息。 `RightsDefinitions` 对象显示个人数据，如果有的话。 
+运行[Get AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate) cmdlet 来获取保护模板的列表。 可以使用模板 ID 获取特定模板的详细信息。 `RightsDefinitions` 对象显示个人数据，如果有的话。 
 
 例如：
 ```
-PS C:\Users> Get-AadrmTemplate -TemplateId fcdbbc36-1f48-48ca-887f-265ee1268f51 | select *
+PS C:\Users> Get-AipServiceTemplate -TemplateId fcdbbc36-1f48-48ca-887f-265ee1268f51 | select *
 
 
 TemplateId              : fcdbbc36-1f48-48ca-887f-265ee1268f51
@@ -81,27 +81,27 @@ EnableInLegacyApps      : False
 LabelId                 :
 ```
 
-### <a name="super-users-and-delegated-administrators-for-the-azure-rights-management-service"></a>Azure 权限管理服务的超级用户和委派管理员
+### <a name="super-users-and-delegated-administrators-for-the-protection-service"></a>超级用户和保护服务的委派的管理员
 
-运行 [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperuser) cmdlet 和 [Get-AadrmRoleBasedAdministrator](/powershell/module/aadrm/get-aadrmrolebasedadministrator) cmdlet 可查看已向哪些用户分配了 Azure Rights Management 服务的超级用户角色或全局管理员角色。 对于已分配了这些角色之一的用户，会显示其电子邮件地址。
+运行[Get AipServiceSuperUser](/powershell/module/aipservice/get-aipservicesuperuser) cmdlet 和[get aipservicerolebasedadministrator](/powershell/module/aipservice/get-aipservicerolebasedadministrator) cmdlet 来查看哪些用户已分配的超级用户角色或全局管理员角色的保护Azure 信息保护中的服务 (Azure Rights Management)。 对于已分配了这些角色之一的用户，会显示其电子邮件地址。
 
 
-### <a name="administration-logs-for-the-azure-rights-management-service"></a>Azure Rights Management 服务的管理日志
+### <a name="administration-logs-for-the-protection-service"></a>保护服务的管理日志
 
-运行 [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) cmdlet 可获取 Azure Rights Management 服务的管理员操作日志，该日志保护用于 Azure 信息保护的数据。 此日志包含电子邮件地址和 IP 地址形式的个人数据。 日志采用纯文本形式，下载它后，可以脱机搜索特定管理员的详细信息。
+运行[Get AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog) cmdlet 来获取 Azure 信息保护中的保护服务 (Azure Rights Management) 的管理员操作的日志。 此日志包含电子邮件地址和 IP 地址形式的个人数据。 日志采用纯文本形式，下载它后，可以脱机搜索特定管理员的详细信息。
 
 例如：
 ```
-PS C:\Users> Get-AadrmAdminLog -Path '.\Desktop\admin.log' -FromTime 4/1/2018 -ToTime 4/30/2018 -Verbose
+PS C:\Users> Get-AipServiceAdminLog -Path '.\Desktop\admin.log' -FromTime 4/1/2018 -ToTime 4/30/2018 -Verbose
 The Rights Management administration log was successfully generated and can be found at .\Desktop\admin.log.
 ```
 
-### <a name="usage-logs-for-the-azure-rights-management-service"></a>Azure Rights Management 服务的使用情况日志
-运行 [Get-AadrmUserLog](/powershell/module/aadrm/get-aadrmuserlog) cmdlet 可检索使用 Azure Rights Management 服务的最终用户操作的日志。 此服务保护用于 Azure 信息保护的数据。 此日志可包含电子邮件地址和 IP 地址形式的个人数据。 日志采用纯文本形式，下载它后，可以脱机搜索特定管理员的详细信息。
+### <a name="usage-logs-for-the-protection-service"></a>保护服务的使用情况日志
+运行[Get AipServiceUserLog](/powershell/module/aipservice/get-aipserviceuserlog) cmdlet 来检索的使用 Azure 信息保护中的保护服务的最终用户操作的日志。 此日志可包含电子邮件地址和 IP 地址形式的个人数据。 日志采用纯文本形式，下载它后，可以脱机搜索特定管理员的详细信息。
 
 例如：
 ```
-PS C:\Users> Get-AadrmUserLog -Path '.\Desktop\' -FromDate 4/1/2018 -ToDate 4/30/2018 -NumberOfThreads 10
+PS C:\Users> Get-AipServiceUserLog -Path '.\Desktop\' -FromDate 4/1/2018 -ToDate 4/30/2018 -NumberOfThreads 10
 Acquiring access to your user log…
 Downloading the log for 2018-04-01.
 Downloading the log for 2018-04-03.
@@ -129,11 +129,11 @@ Downloaded the log for 2018-04-24. The log is available at .\Desktop\rmslog-2018
 
 ### <a name="document-tracking-logs"></a>文档跟踪日志
 
-运行 [Get-AadrmDocumentLog](/powershell/module/aadrm/get-aadrmdocumentlog) cmdlet 可从文档跟踪站点检索特定用户的信息。 若要获取与文档日志相关的跟踪信息，请使用 [Get-AadrmTrackingLog](/powershell/module/aadrm/get-aadrmtrackinglog?view=azureipps) cmdlet。
+运行[Get AipServiceDocumentLog](/powershell/module/aipservice/get-aipservicedocumentlog) cmdlet 来检索从文档跟踪站点特定的用户的相关信息。 若要获取跟踪与文档日志关联的信息，请使用[Get AipServiceTrackingLog](/powershell/module/aipservice/get-aipservicetrackinglog?view=azureipps) cmdlet。
 
 例如：
 ```
-PS C:\Users> Get-AadrmDocumentLog -UserEmail "admin@aip500.onmicrosoft.com"
+PS C:\Users> Get-AipServiceDocumentLog -UserEmail "admin@aip500.onmicrosoft.com"
 
 
 ContentId             : 6326fcb2-c465-4c24-a7f6-1cace7a9cb6f
@@ -166,7 +166,7 @@ RevocationInfo        : Revoked: False
                         RevokedBy:
 
 
-PS C:\Users> Get-AadrmTrackingLog -UserEmail "admin@aip500.onmicrosoft.com"
+PS C:\Users> Get-AipServiceTrackingLog -UserEmail "admin@aip500.onmicrosoft.com"
 
 ContentId            : 6326fcb2-c465-4c24-a7f6-1cace7a9cb6f
 Issuer               : admin@aip500.onmicrosoft.com
@@ -219,48 +219,48 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 - **全局管理员**
 
-查看和使用 AADRM 模块指定的个人数据是可访问仅向用户已获**Azure 信息保护管理员**，**合规性管理员**， **符合性数据管理器**，或**全局管理员**角色从 Azure Active Directory 或 Azure Rights Management 服务的全局管理员角色。  
+查看和使用 AIPService 模块 （或较旧的模块，AADRM） 指定的个人数据是仅供已分配的用户访问**Azure 信息保护管理员**，**法规遵从性管理员**，**符合性数据管理器**，或**全局管理员**角色从 Azure Active Directory 或保护服务的全局管理员角色。
 
 ## <a name="updating-personal-data"></a>更新个人数据
 
 可以为 Azure 信息保护策略中的作用域内策略和保护设置更新电子邮件地址。 有关详细信息，请参阅[如何使用作用域内策略为特定用户配置 Azure 信息保护策略](configure-policy-scope.md)以及[如何为 Rights Management 保护配置标签](configure-policy-protection.md)。 
 
-对于保护设置，可以通过从 [AADRM 模块](/powershell/module/aadrm)使用 PowerShell cmdlet 来更新相同的信息。
+保护设置，可以通过使用中的 PowerShell cmdlet 更新相同的信息[AIPService 模块](/powershell/module/aipservice)。
 
 无法更新超级用户和委派管理员的电子邮件地址。 请删除指定的用户帐户，添加包含更新电子邮件地址的用户帐户。 
 
 ### <a name="protection-templates"></a>保护模板
 
-运行 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 可更新保护模板。 由于个人数据位于 `RightsDefinitions` 属性中，因此，还需要使用 [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet 创建包含更新信息的 RightsDefinitions 对象，并将 RightsDefinitions 对象与 `Set-AadrmTemplateProperty` cmdlet 结合使用。
+运行[集 AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet 可更新保护模板。 因为个人数据位于`RightsDefinitions`属性，您还需要使用[新建 AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet 以使用更新的信息，创建一个权限定义对象和使用权限定义对象`Set-AipServiceTemplateProperty`cmdlet。
 
-### <a name="super-users-and-delegated-administrators-for-the-azure-rights-management-service"></a>Azure 权限管理服务的超级用户和委派管理员
+### <a name="super-users-and-delegated-administrators-for-the-protection-service"></a>超级用户和保护服务的委派的管理员
 
 需要更新超级用户的电子邮件地址时：
 
-1. 使用 [Remove-AadrmSuperUser](/powershell/module/aadrm/Remove-AadrmSuperUser) 可删除此用户和旧的电子邮件地址。
+1. 使用[删除 AipServiceSuperUser](/powershell/module/aipservice/Remove-AipServiceSuperUser)若要删除的用户和旧电子邮件地址。
 
-2. 使用 [Remove-AadrmSuperUser](/powershell/module/aadrm/Add-AadrmSuperUser) 可删除此用户和旧的电子邮件地址。
+2. 使用[添加 AipServiceSuperUser](/powershell/module/aipservice/Add-AipServiceSuperUser)若要添加的用户和新的电子邮件地址。
 
 需要更新委派管理员的电子邮件地址时：
 
-1. 使用 [Remove-AadrmRoleBasedAdministrator](/powershell/module/aadrm/Remove-AadrmRoleBasedAdministrator) 可删除此用户和旧的电子邮件地址。
+1. 使用[删除 AipServiceRoleBasedAdministrator](/powershell/module/aipservice/Remove-AipServiceRoleBasedAdministrator)若要删除的用户和旧电子邮件地址。
 
-2. 使用 [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/Add-AadrmRoleBasedAdministrator) 可添加此用户和新的电子邮件地址。
+2. 使用[添加 AipServiceRoleBasedAdministrator](/powershell/module/aipservice/Add-AipServiceRoleBasedAdministrator)若要添加的用户和新的电子邮件地址。
 
 ## <a name="deleting-personal-data"></a>删除个人数据
 可以删除 Azure 信息保护策略中作用域内策略和保护设置的电子邮件地址。 有关详细信息，请参阅[如何使用作用域内策略为特定用户配置 Azure 信息保护策略](configure-policy-scope.md)以及[如何为 Rights Management 保护配置标签](configure-policy-protection.md)。 
 
-对于保护设置，可以通过从 [AADRM 模块](/powershell/module/aadrm)使用 PowerShell cmdlet 来删除相同的信息。
+保护设置，可以通过使用中的 PowerShell cmdlet 删除相同的信息[AIPService 模块](/powershell/module/aipservice)。
 
-若要删除超级用户和委派管理员的电子邮件地址，请使用 [Remove-AadrmSuperUser](/powershell/module/aadrm/Remove-AadrmSuperUser) cmdlet 和 [Remove-AadrmRoleBasedAdministrator](/powershell/module/aadrm/Remove-AadrmRoleBasedAdministrator) 删除这些用户。 
+若要删除超级用户和委派的管理员的电子邮件地址，请删除这些用户通过使用[删除 AipServiceSuperUser](/powershell/module/aipservice/Remove-AipServiceSuperUser) cmdlet 和[删除 AipServiceRoleBasedAdministrator](/powershell/module/aipservice/Remove-AipServiceRoleBasedAdministrator)。 
 
-若要删除 Azure Rights Management 服务的文档跟踪日志、管理日志或使用情况日志中的个人数据，请使用以下部分向 Microsoft 支持部门提出请求。
+若要删除跟踪日志、 管理日志或使用日志的保护服务的文档中的个人数据，请使用下列部分来与 Microsoft 支持部门的请求。
 
 若要删除客户端日志文件中的个人数据和存储在计算机上的扫描程序日志，请使用任何标准的 Windows 工具来删除这些文件或文件中的个人数据。 
 
 ### <a name="to-delete-personal-data-with-microsoft-support"></a>通过 Microsoft 支持部门删除个人数据
 
-使用下面的三个步骤请求 Microsoft 删除 Azure Rights Management 服务的文档跟踪日志、管理日志或使用情况日志中的个人数据。 
+使用以下三个步骤请求，Microsoft 将删除跟踪日志、 管理日志或使用日志的保护服务的文档中的个人数据。 
 
 **步骤 1：启动删除请求**
 [与 Microsoft 支持部门联系](information-support.md#to-contact-microsoft-support)，以打开带有删除租户数据请求的 Azure 信息保护支持案例。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 提交请求时，你将需要提供其他信息，具体取决于需要被删除的数据。
@@ -276,13 +276,12 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 **步骤 3：获得删除确认** Microsoft 客户支持服务 (CSS) 将向你发送数据已删除的确认电子邮件。 
 
 ## <a name="exporting-personal-data"></a>导出个人数据
-在使用 AADRM PowerShell cmdlet 时，可搜索个人数据并将其导出为 PowerShell 对象。 PowerShell 对象可转换为 JSON，并使用 `ConvertTo-Json` cmdlet 进行保存。
+当使用 AIPService 或 AADRM PowerShell cmdlet 时，个人数据由可用于搜索和导出为 PowerShell 对象。 PowerShell 对象可转换为 JSON，并使用 `ConvertTo-Json` cmdlet 进行保存。
 
 ## <a name="restricting-the-use-of-personal-data-for-profiling-or-marketing-without-consent"></a>在未征得同意的情况下，限制将个人数据用于分析或市场营销
 对于基于个人数据的分析或市场营销，Azure 信息保护遵循 Microsoft 的[隐私条款](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="auditing-and-reporting"></a>审核和报告
-只有已分配有[管理员权限](#securing-and-controlling-access-to-personal-information)的用户才能使用 AADRM 模块搜索和导出个人数据。 这些操作记录于可下载的管理日志中。
+只有已分配的用户[管理员权限](#securing-and-controlling-access-to-personal-information)可 AIPService 或 ADDRM 模块用于搜索和导出个人数据。 这些操作记录于可下载的管理日志中。
 
-对于删除操作，支持请求充当 Microsoft 执行的操作的审核和报告跟踪。 删除后，将不可搜索和导出已删除的数据，管理员可从 AADRM 模块使用 Get cmdlet 来对此进行验证。
-
+对于删除操作，支持请求充当 Microsoft 执行的操作的审核和报告跟踪。 删除后，已删除的数据将不可可用于搜索和导出，并且管理员可以验证这使用 AIPService 模块中的 Get cmdlet。

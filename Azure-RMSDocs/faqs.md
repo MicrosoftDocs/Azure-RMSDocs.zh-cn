@@ -1,20 +1,20 @@
 ---
 title: Azure 信息保护的常见问题解答
-description: 有关 Azure 信息保护及其数据保护服务 Azure Rights Management (Azure RMS) 的一些常见问题。
+description: 一些常见问题有关 Azure 信息保护和它保护的服务，Azure Rights Management (Azure RMS)。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/21/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: 1e0933a88afc355dbcbab0dc667e28f49f10c0b9
-ms.sourcegitcommit: 599306e271392afa4bc05c87982549785ce1860e
+ms.openlocfilehash: abc19ff1ebc21c143f773d09c0585aa9058e4f09
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67305774"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67520584"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -110,32 +110,32 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 很显然，Office 365 租户或 Azure AD 租户的全局管理员可以运行 Azure 信息保护的所有管理任务。 但是，如果想要将管理权限分配给其他用户，可以使用以下选项：
 
-- **Azure 信息保护管理员**:此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护，但不是其他服务。 具有此角色的管理员可以激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置 Azure 信息保护策略。 此外，具有此角色的管理员可以运行针对 [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)以及来自 [AADRM 模块](administer-powershell.md)的所有 PowerShell cmdlet。 但是，此角色不支持跟踪和撤销文档的用户。
+- **Azure 信息保护管理员**:此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护，但不是其他服务。 具有此角色的管理员可以激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置 Azure 信息保护策略。 此外，具有此角色的管理员可以运行的所有 PowerShell cmdlet [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)来回[AIPService 模块](administer-powershell.md)。 但是，此角色不支持跟踪和撤销文档的用户。
     
     > [!NOTE]
     > [将租户迁移到统一标记存储](configure-policy-migrate-labels.md)后，Azure 门户将不再支持此角色。
     
     若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。
 
-- **合规性管理员**或**符合性数据管理器**:管理员角色允许管理员配置 Azure 信息保护，包括这些 Azure Active Directory 激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置Azure 信息保护策略。 此外，具有其中一种角色的管理员可以运行的所有 PowerShell cmdlet [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)来回[AADRM 模块](administer-powershell.md)。 但是，这些角色不支持跟踪和撤销文档的用户。
+- **合规性管理员**或**符合性数据管理器**:管理员角色允许管理员配置 Azure 信息保护，包括这些 Azure Active Directory 激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置Azure 信息保护策略。 此外，具有其中一种角色的管理员可以运行的所有 PowerShell cmdlet [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)来回[AIPService 模块](administer-powershell.md)。 但是，这些角色不支持跟踪和撤销文档的用户。
     
     若要将用户分配到其中一种管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。 若要查看拥有的与这些角色的用户的其他权限，请参阅[可用的角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)Azure Active Directory 文档中的部分。
 
 - **安全读取者**：仅适用于 [Azure 信息保护分析](reports-aip.md)。 此 Azure Active Directory 管理员角色允许管理员查看标签的使用方式，监视用户对标记文档和电子邮件的访问权限以及对其分类所做的任何更改，并且可以识别包含必须受到保护的敏感信息的文档。 由于此功能使用 Azure Log Analytics，因此用户还必须具有支持的 [RBAC 角色](reports-aip.md#permissions-required-for-azure-information-protection-analytics)。
 
-- **安全管理员**：此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护在 Azure 门户中，除了配置其他 Azure 服务的某些方面。 具有此角色的管理员不能运行的任何[来自 AADRM 模块的 PowerShell cmdlet](administer-powershell.md)，或跟踪和撤销文档的用户。
+- **安全管理员**：此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护在 Azure 门户中，除了配置其他 Azure 服务的某些方面。 具有此角色的管理员不能运行的任何[AIPService 模块中的 PowerShell cmdlet](administer-powershell.md)，或跟踪和撤销文档的用户。
     
     若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。 若要查看具有此角色的用户还拥有哪些其他权限，请参阅 Azure Active Directory 文档的[可用角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)部分。
 
-- Azure Rights Management 全局管理员和连接器管理员   ：对于这些 Azure Rights Management 管理员角色，第一个可授予用户权限以运行所有[来自 AADRM 模块的 PowerShell cmdlet](administer-powershell.md) 而不使其成为其他云服务的全局管理员，第二个角色授予权限来仅运行 Rights Management (RMS) 连接器。 既不管理角色授予对管理控制台的权限或支持跟踪和撤销文档的用户。
-
-    若要分配其中任一管理角色，请使用 AADRM PowerShell cmdlet [Add-aadrmrolebasedadministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator)。
+- Azure Rights Management 全局管理员和连接器管理员   ：对于这些 Azure Rights Management 管理员角色，第一个可授予用户权限来运行所有[AIPService 模块中的 PowerShell cmdlet](administer-powershell.md)而无需使其成为其他云服务和第二个的全局管理员角色授予权限以仅运行 Rights Management (RMS) 连接器。 这种管理角色授予对管理控制台或跟踪和撤消文档的用户的权限。
+    
+    若要将其中一种管理角色分配，请使用 AIPService PowerShell cmdlet[添加 AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator)。
 
 需要注意的事项：
 
 - 如果配置了[加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，此配置不会影响管理 Azure 信息保护的能力（RMS 连接器除外）。 例如，如果配置了加入控制，以致仅允许“IT 部门”组保护内容，那么，用于安装和配置 RMS 连接器的帐户必须是该组的成员。 
 
-- 分配了管理角色的用户无法从受 Azure 信息保护保护的文档或电子邮件中自动删除保护。 只有在启用了超级用户功能的情况下，分配为超级用户的用户才能执行此操作。 但是，你将管理权限分配给 Azure 信息保护的任何用户可以将用户分配为超级用户，包括其自己的帐户。 他们还可以启用超级用户功能。 这些操作记录在管理员日志中。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](configure-super-users.md)中的“最佳安全做法”部分。 
+- 分配了管理角色的用户无法从受 Azure 信息保护保护的文档或电子邮件中自动删除保护。 只有在启用了超级用户功能的情况下，分配为超级用户的用户才能执行此操作。 但是，你将管理权限分配给 Azure 信息保护的任何用户可以将用户分配为超级用户，包括其自己的帐户。 他们还可以启用超级用户功能。 这些操作记录在管理员日志中。 有关详细信息，请参阅最佳实践部分中的安全性[为 Azure 信息保护和发现服务或数据恢复配置超级用户](configure-super-users.md)。 
 
 - 如果你要迁移到统一的标记存储 Azure 信息保护标签，请务必从标签迁移文档阅读以下部分：[有关管理角色的重要信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)。
 

@@ -4,19 +4,19 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 5 阶段包括从 AD 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/15/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fd0edb3f9ce5b820a7e19c84e8d04b433c007569
-ms.sourcegitcommit: b24de99cf8006a70a14e7a21d103644c1e20502d
+ms.openlocfilehash: bf2675aa43e2c15761fdd46b94e3bb19253cadc3
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "67149273"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67522068"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
@@ -96,17 +96,17 @@ killall cfprefsd
 
 1. 在 PowerShell 会话中，请连接到 Azure Rights Management 服务，并在出现提示时，指定全局管理员凭据：
 
-        Connect-Aadrmservice
+        Connect-AipService
 
 2. 运行以下命令，并输入 **Y** 进行确认：
 
-        Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
+        Set-AipServiceOnboardingControlPolicy -UseRmsUserLicense $False
     
     请注意，此命令会删除所有针对 Azure Rights Management 保护服务的许可证强制执行，使所有计算机都可保护文档和电子邮件。
 
 3. 确认不再设置载入控件：
 
-        Get-AadrmOnboardingControlPolicy
+        Get-AipServiceOnboardingControlPolicy
 
     在输出中，**授权**应显示 **False**，并且对于 **SecurityGroupOjbectId** 未显示任何 GUID
 
@@ -126,11 +126,11 @@ killall cfprefsd
 
 重新生成 Azure 信息保护租户密钥：
 
-- **如果租户密钥由 Microsoft 托管**：请运行 PowerShell cmdlet [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties)，然后为针对租户自动创建的密钥指定密钥标识符。 通过运行 [Get-AadrmKeys](/powershell/module/aadrm/get-aadrmkeys) cmdlet 可标识要指定的值。 为租户自动创建的密钥包含最早创建日期，因此可以使用以下命令对其进行标识：
+- **如果租户密钥由 Microsoft 托管**：运行 PowerShell cmdlet[集 AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties)并指定为你的租户自动创建的密钥的密钥标识符。 可以标识要通过运行指定的值[Get AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet。 为租户自动创建的密钥包含最早创建日期，因此可以使用以下命令对其进行标识：
     
-        (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
+        (Get-AipServiceKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-- **如果租户密钥由你管理 (BYOK)** ：在 Azure Key Vault 中，为 Azure 信息保护租户重复密钥创建流程，然后再次运行 [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) cmdlet 以指定新密钥的 URI。 
+- **如果租户密钥由你管理 (BYOK)** ：在 Azure 密钥保管库，为 Azure 信息保护租户重复密钥创建流程，然后再运行[使用 AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet 再次来指定此新密钥的 URI。 
 
 若要详细了解如何管理 Azure 信息保护租户密钥，请参阅 [Azure 信息保护租户密钥操作](./operations-tenant-key.md)。
 

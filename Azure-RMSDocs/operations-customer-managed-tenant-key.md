@@ -4,19 +4,19 @@ description: 当你自己管理 Azure 信息保护租户密钥（自带密钥方
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/18/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 82061c4a146a049d7cecf6da6ab16a2e85c0ddd3
-ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
+ms.openlocfilehash: c1b163a1e149b77e8974635dff39d9a754a962f2
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67156766"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67521939"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
 
@@ -46,9 +46,9 @@ ms.locfileid: "67156766"
 
 1. 仅当新密钥与已用于 Azure 信息保护的密钥位于不同的密钥保管库中时：授权 Azure 信息保护，通过使用密钥保管库[集 AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) cmdlet。
 
-2. 如果 Azure 信息保护还不知道你要使用的密钥，请运行 [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey) cmdlet。
+2. 如果 Azure 信息保护不知道该密钥，你想要使用，请运行[使用 AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet。
 
-3. 配置租户密钥对象，方法是运行 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) cmdlet。
+3. 通过使用运行配置租户密钥对象，[集 AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) cmdlet。
 
 关于每个步骤的详细信息：
 

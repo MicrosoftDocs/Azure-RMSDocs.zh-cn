@@ -4,25 +4,25 @@ description: 适用于 Windows 的 Azure 信息保护客户端的客户端文件
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2265dba770f4b67bbcc84368a007b7c921f37b3f
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: b6391df8ae2e31303f5b369963389abe3005a1bd
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60183395"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67521651"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护客户端文件和客户端使用情况日志记录
 
->适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用范围：  Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 安装 Azure 信息保护客户端后，请了解文件所在位置并监控客户端的使用状况。
 
@@ -30,17 +30,17 @@ ms.locfileid: "60183395"
 
 客户端文件：   
 
-- 对于 64 位操作系统：**\ProgramFiles (x86)\Microsoft Azure Information Protection**
+- 对于 64 位操作系统： **\ProgramFiles (x86)\Microsoft Azure Information Protection**
 
-- 对于 32 位操作系统：**\Program Files\Microsoft Azure Information Protection**
+- 对于 32 位操作系统： **\Program Files\Microsoft Azure Information Protection**
 
 客户端日志文件和当前安装的策略文件：
 
-- 对于 64 位和 32 位操作系统：**%localappdata%\Microsoft\MSIP**
+- 对于 64 位和 32 位操作系统： **%localappdata%\Microsoft\MSIP**
 
 ## <a name="usage-logging-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的使用情况日志记录
 
-客户端将用户活动记录到本地 Windows 事件日志“应用程序和服务日志” > “Azure 信息保护”中。 这些事件包括以下信息：
+客户端将用户活动记录到本地 Windows 事件日志“应用程序和服务日志” > “Azure 信息保护”中   。 这些事件包括以下信息：
 
 - 客户端版本、策略 ID
 
@@ -96,7 +96,7 @@ ms.locfileid: "60183395"
 
 Outlook 的事件，则发出警告，证明，以及阻止消息需要当前正式发布客户端和高级客户端设置。 有关详细信息，请参阅[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)。
 
-若要了解保护服务的使用情况日志记录，请参阅[记录和分析 Azure 权限管理服务的使用情况](../log-analyze-usage.md)。
+有关保护服务的使用情况日志记录的信息，请参阅[日志记录和分析 Azure 信息保护中的保护使用情况](../log-analyze-usage.md)
 
 ## <a name="next-steps"></a>后续步骤
 现在你已识别了与 Azure 信息保护客户端关联的所有日志文件，若要了解支持此客户端所需的其他信息，请参阅以下内容：

@@ -4,19 +4,19 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 2 阶段涉及从 AD 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/16/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dbbea622800561cb0a466f6dda90e9910f1c7db4
-ms.sourcegitcommit: 3e948723644f19c935bc7111dec1cc54a1ff0231
+ms.openlocfilehash: 5d822b36fd7dd38713b8bd3d42aee72838b24195
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65781870"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67522113"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -40,9 +40,9 @@ ms.locfileid: "65781870"
 
 1. 以具有 AD RMS 管理权限的用户身份登录到 AD RMS 群集。
 
-2. 从 AD RMS 管理控制台 (**Active Directory Rights Management Services**)，展开 AD RMS 群集名称，再展开“信任策略”，然后单击“受信任的发布域”。
+2. 从 AD RMS 管理控制台 (**Active Directory Rights Management Services**)，展开 AD RMS 群集名称，再展开“信任策略”  ，然后单击“受信任的发布域”  。
 
-3. 在结果窗格中，选择受信任的发布域，然后在操作窗格中单击“导出受信任的发布域” 。
+3. 在结果窗格中，选择受信任的发布域，然后在操作窗格中单击“导出受信任的发布域”  。
 
 4. 在“导出受信任的发布域”对话框中  ：
 
@@ -75,7 +75,7 @@ ms.locfileid: "65781870"
 > [!NOTE]
 > 有关将硬件安全模块与 AD RMS 配合使用的详细信息，请参阅 [将 AD RMS 与硬件安全模块配合使用](https://technet.microsoft.com/library/jj651024.aspx)。
 
-两个 Azure 信息保护租户密钥拓扑选项包括：Microsoft 管理你的租户密钥（由 Microsoft 管理），或者你在 Azure Key Vault 中自行管理租户密钥（由客户管理）。 如果你自行管理 Azure 信息保护租户密钥，这有时也称为“创建自己的密钥”(BYOK)。 有关详细信息，请参阅[计划和实施你的 Azure 信息保护租户密钥](plan-implement-tenant-key.md)文章。
+两个 Azure 信息保护租户密钥拓扑选项包括：Microsoft 管理你的租户密钥（由 Microsoft 管理），或者你在 Azure Key Vault 中自行管理租户密钥（由客户管理）   。 如果你自行管理 Azure 信息保护租户密钥，这有时也称为“创建自己的密钥”(BYOK)。 有关详细信息，请参阅[计划和实施你的 Azure 信息保护租户密钥](plan-implement-tenant-key.md)文章。
 
 使用下表来确定要使用哪个过程进行迁移。 
 
@@ -106,17 +106,17 @@ ms.locfileid: "65781870"
 
 1. 连接到 Azure Rights Management 服务，并在出现提示时，指定全局管理员凭据：
     
-        Connect-Aadrmservice
+        Connect-AipService
 
 2. 激活 Azure Rights Management 服务：
     
-        Enable-Aadrm
+        Enable-AipService
 
 **如果 Azure 信息保护租户已激活，会怎么样？** 如果已为组织激活 Azure Rights Management 服务，并且已创建想要在迁移后使用的自定义模板，则必须导出和导入这些模板。 下一步中介绍了此过程。 
 
 ## <a name="step-6-configure-imported-templates"></a>步骤 6. 配置导入的模板
 
-由于所导入的模板具有“已存档”的默认状态，如果你希望用户能够将这些模板用于 Azure Rights Management 服务，必须将此状态更改为“已发布”。
+由于所导入的模板具有“已存档”  的默认状态，如果你希望用户能够将这些模板用于 Azure Rights Management 服务，必须将此状态更改为“已发布”  。
 
 从 AD RMS 导入的模板的外观和行为就像可以在 Azure 门户中创建的自定义模板一样。 若要将导入的模板更改为“已发布”，以便用户可以查看它们以及从应用程序中选择它们，请参阅[配置和管理 Azure 信息保护的模板](./configure-policy-templates.md)。
 
@@ -126,31 +126,31 @@ ms.locfileid: "65781870"
 
 - 如果在迁移前创建了 Azure 信息保护自定义模板，则必须手动导出并导入它们。
 
-- 如果 AD RMS 中的模板使用 ANYONE 组，可能需要手动添加用户或组。 
+- 如果 AD RMS 中的模板使用 ANYONE  组，可能需要手动添加用户或组。 
     
     在 AD RMS 中，ANYONE 组将权限授予由本地 Active Directory 进行身份验证的所有用户，而 Azure 信息保护不支持此组。 与之最相似的是为 Azure AD 租户中的所有用户自动创建的组。 如果你当时对 AD RMS 模板使用 ANYONE 组，可能需要添加用户和要授予给他们的权限。
 
 ### <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>在迁移前创建了自定义模板时需执行的过程
 
-如果在迁移前创建了自定义模板（无论是在激活 Azure Rights Management 服务之前或之后），那么在迁移后，用户将无法使用这些模板，即使模板设置为“已发布”也是如此。 若要使其可供用户使用，必须先执行以下操作： 
+如果在迁移前创建了自定义模板（无论是在激活 Azure Rights Management 服务之前或之后），那么在迁移后，用户将无法使用这些模板，即使模板设置为“已发布”  也是如此。 若要使其可供用户使用，必须先执行以下操作： 
 
-1. 通过运行 [Get-AadrmTemplate](/powershell/aadrm/vlatest/get-aadrmtemplate) 标识这些模板并记下其模板 ID。 
+1. 标识这些模板，请记下的其模板 ID，通过运行[Get AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate)。 
 
-2. 通过使用 Azure RMS PowerShell cmdlet [Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate) 导出模板。
+2. 使用 Azure RMS PowerShell cmdlet 导出模板[导出 AipServiceTemplate](/powershell/module/aipservice/export-aipservicetemplate)。
 
-3. 通过使用 Azure RMS PowerShell cmdlet [Import-AadrmTemplate](/powershell/module/aadrm/import-aadrmtemplate) 导入模板。
+3. 使用 Azure RMS PowerShell cmdlet 导入模板[导入 AipServiceTemplate](/powershell/module/aipservice/import-aipservicetpd)。
 
 然后可以发布或存档这些模板，就像迁移后创建的任何其他模板一样。
 
 ### <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>AD RMS 中的模板使用 **ANYONE** 组时需执行的过程
 
-如果 AD RMS 中的模板使用 ANYONE 组，Azure 信息保护中最接近的等效组将命名为 AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com。 例如，如果公司为 Contoso，则该组可能会如下所示：<strong>AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com</strong>。 此组包含 Azure AD 租户中的所有用户。
+如果 AD RMS 中的模板使用 ANYONE  组，Azure 信息保护中最接近的等效组将命名为 AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com  。 例如，如果公司为 Contoso，则该组可能会如下所示：<strong>AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com</strong>。 此组包含 Azure AD 租户中的所有用户。
 
-如果在 Azure 门户中管理模板和标签，此组将显示为 Azure AD 中的租户域名。 例如，如果公司为 Contoso，此组可能类似于：contoso.onmicrosoft.com。 要添加此组，选项将显示“添加 \<组织名称> - 所有成员”。
+如果在 Azure 门户中管理模板和标签，此组将显示为 Azure AD 中的租户域名。 例如，如果公司为 Contoso，此组可能类似于：contoso.onmicrosoft.com  。 要添加此组，选项将显示“添加 \<组织名称> - 所有成员”  。
 
 如果不确定 AD RMS 模板是否包括 ANYONE 组，可使用以下 Windows PowerShell 示例脚本来标识这些模板。 有关将 Windows PowerShell 用于 AD RMS 的详细信息，请参阅[使用 Windows PowerShell 管理 AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)。
 
-如果在 Azure 门户中将模板转换为标签，可以轻松将外部用户添加到这些模板。 然后，在“添加权限”边栏选项卡上，选择“输入详细信息”，手动为这些用户指定电子邮件地址。 
+如果在 Azure 门户中将模板转换为标签，可以轻松将外部用户添加到这些模板。 然后，在“添加权限”  边栏选项卡上，选择“输入详细信息”  ，手动为这些用户指定电子邮件地址。 
 
 有关此配置的详细信息，请参阅[如何配置标签以进行 Rights Management 保护](./configure-policy-protection.md)。
 

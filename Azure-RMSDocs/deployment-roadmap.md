@@ -4,19 +4,19 @@ description: 使用这些步骤，为组织准备、实施和管理 Azure 信息
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/18/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 311e8991d4527c48f2d76deba8a93264f4a08dad
-ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
+ms.openlocfilehash: 6b0918c4f5bd77bec2b0e155eae55882a55d1b54
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67156559"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67520567"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
@@ -93,15 +93,15 @@ ms.locfileid: "67156559"
 
 1. 决定你是希望 Microsoft 管理你的租户密钥（默认设置），还是自行生成和管理你的租户密钥（也称为“自带密钥”，简称 BYOK）。 有关详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](plan-implement-tenant-key.md)。
 
-2. 至少在一台可以访问 Internet 的计算机上安装适用于 AADRM 的 PowerShell 模块。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[安装 AADRM PowerShell 模块](./install-powershell.md)。
+2. 安装用于 AIPService 具有 Internet 访问权限的至少一台计算机上的 PowerShell 模块。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[安装 AIPService PowerShell 模块](./install-powershell.md)。
 
 3. 如果当前正在使用 AD RMS：执行迁移，以将密钥、 模板和 Url 移动到云。 有关详细信息，请参阅[从 AD RMS 迁移到信息保护](migrate-from-ad-rms-to-azure-rms.md)。
 
-4. 确保保护服务已激活，以便开始保护文档和电子邮件。 如果需要分阶段部署，请配置用户载入控制以限制用户应用保护的能力。 有关详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
+4. 确保保护服务已激活，以便开始保护文档和电子邮件。 如果需要分阶段部署，请配置用户载入控制以限制用户应用保护的能力。 有关详细信息，请参阅[激活 Azure 信息保护中的保护服务](./activate-service.md)。
 
 （可选）考虑进行以下配置：
 
-- 使用日志记录，以便你能够监视组织如何使用保护服务。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](./log-analyze-usage.md)。
+- 使用日志记录，以便你能够监视组织如何使用保护服务。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[日志记录和分析 Azure 信息保护中的保护使用情况](./log-analyze-usage.md)。
 
 ### <a name="step-5-configure-your-azure-information-protection-policy-applications-and-services-for-data-protection"></a>步骤 5：配置 Azure 信息保护策略、应用程序和服务，以进行数据保护
 
@@ -119,7 +119,7 @@ ms.locfileid: "67156559"
 
 3. 为数据恢复配置超级用户功能
     
-    如果现有 IT 服务（例如数据泄露防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure 信息保护将保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](./configure-super-users.md)。
+    如果现有 IT 服务（例如数据泄露防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure 信息保护将保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](./configure-super-users.md)。
 
 4. 批量分类和保护现有文件
     
@@ -138,13 +138,13 @@ ms.locfileid: "67156559"
 
 - 客户端文件和使用情况日志记录[Azure 信息保护客户端](./rms-client/client-admin-guide-files-and-logging.md)
 
-- [记录和分析 Azure 权限管理服务的使用情况](./log-analyze-usage.md)
+- [日志记录和分析 Azure 信息保护中的保护使用情况](./log-analyze-usage.md)
 
 ### <a name="step-7-administer-the-protection-service-for-your-tenant-account-as-needed"></a>步骤 7：根据需要管理租户帐户的保护服务
 
 开始使用保护服务时，可以利用 PowerShell 帮助编写脚本或自动执行管理更改。 某些高级配置可能还需要使用 PowerShell。 
 
-有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](./administer-powershell.md)。
+有关详细信息，请参阅[使用 PowerShell 管理 Azure 信息保护中的保护](./administer-powershell.md)。
 
 
 ## <a name="deployment-roadmap-for-data-protection-only"></a>仅用于数据保护的部署路线图
@@ -164,17 +164,17 @@ ms.locfileid: "67156559"
 
 2. 决定你是希望 Microsoft 管理你的租户密钥（默认设置），还是自行生成和管理你的租户密钥（也称为“自带密钥”，简称 BYOK）。 有关详细信息，请参阅[计划和实施 Azure 信息保护租户密钥](plan-implement-tenant-key.md)。
 
-3. 至少在一台可以访问 Internet 的计算机上安装适用于 AADRM 的 PowerShell 模块。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[安装 AADRM PowerShell 模块](./install-powershell.md)。
+3. 安装用于 AIPService 具有 Internet 访问权限的至少一台计算机上的 PowerShell 模块。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[安装 AIPService PowerShell 模块](./install-powershell.md)。
 
 4. 如果当前正在使用 AD RMS：执行迁移，以将密钥、 模板和 Url 移动到云。 有关详细信息，请参阅[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)。
 
-5. 确保保护服务已激活，以便开始保护文档和电子邮件。 如果需要分阶段部署，请配置用户载入控制以限制用户应用保护的能力。 有关详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
+5. 确保保护服务已激活，以便开始保护文档和电子邮件。 如果需要分阶段部署，请配置用户载入控制以限制用户应用保护的能力。 有关详细信息，请参阅[激活 Azure 信息保护中的保护服务](./activate-service.md)。
 
 （可选）考虑进行以下配置：
 
 - 如果默认模板不足以满足你组织的要求，可自定义保护设置模板。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](./configure-policy-templates.md)。
 
-- 使用日志记录，以便你能够监视组织如何使用保护服务。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[记录和分析 Azure 权限管理服务的使用情况](./log-analyze-usage.md)。
+- 使用日志记录，以便你能够监视组织如何使用保护服务。 你可以立即执行此步骤，也可以稍后执行。 有关详细信息，请参阅[日志记录和分析 Azure 信息保护中的保护使用情况](./log-analyze-usage.md)。
 
 ### <a name="step-3-install-the-azure-information-protection-client-and-configure-applications-and-services-for-rights-management"></a>步骤 3：安装 Azure 信息保护客户端并为 Rights Management 配置应用程序和服务
 
@@ -188,7 +188,7 @@ ms.locfileid: "67156559"
 
 3. 为数据恢复配置超级用户功能
     
-    如果现有 IT 服务（例如数据泄露防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure 信息保护将保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure Rights Management 和发现服务或数据恢复配置超级用户](./configure-super-users.md)。
+    如果现有 IT 服务（例如数据泄露防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure 信息保护将保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](./configure-super-users.md)。
 
 4. 批量保护现有文件 
     
@@ -202,10 +202,10 @@ ms.locfileid: "67156559"
 
 ### <a name="step-4-use-and-monitor-your-data-protection-solutions"></a>步骤 4:使用和监视数据保护解决方案
 
-现在，你可以保护数据，并记录公司如何使用保护服务。 有关支持此部署阶段的其他信息，请参阅[通过使用 Azure 权限管理服务帮助用户保护文件](./help-users.md)和[记录和分析 Azure 权限管理服务的使用情况](./log-analyze-usage.md)。
+现在，你可以保护数据，并记录公司如何使用保护服务。 若要支持此部署阶段的其他信息，请参阅[帮助用户使用 Azure Rights Management 服务保护文件](./help-users.md)和[日志记录和分析从 Azure 信息保护使用情况保护](./log-analyze-usage.md)。
 
 ### <a name="step-5-administer-the-protection-service-for-your-tenant-account-as-needed"></a>步骤 5：根据需要管理租户帐户的保护服务
 
 开始使用保护服务时，可以利用 PowerShell 帮助编写脚本或自动执行管理更改。 某些高级配置可能还需要使用 PowerShell。 
 
-有关详细信息，请参阅[使用 Windows PowerShell 管理 Azure Rights Management 服务](./administer-powershell.md)。
+有关详细信息，请参阅[使用 PowerShell 管理 Azure 信息保护中的保护](./administer-powershell.md)。

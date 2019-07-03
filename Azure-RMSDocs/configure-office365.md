@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0c86bf4100f3c2c49cc5261215a0edcd59f24408
-ms.sourcegitcommit: 2af2297319265c1f91aa76eb227c6f4d316df42a
+ms.openlocfilehash: 1dcf34bf2990426a9ff22660d871b4f60e72bc3f
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67348821"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67520618"
 ---
 # <a name="office365-configuration-for-online-services-to-use-the-azure-rights-management-service"></a>Office 365：Online services 才能使用 Azure Rights Management 服务的配置
 
@@ -525,7 +525,7 @@ ms.locfileid: "67348821"
 > [!TIP]
 > 你还可以使用此脚本为 SharePoint Online 库配置 IRM。 对于此配置，你可能希望启用附加选项“不允许用户上传不支持 IRM 的文档”，以确保库只包含受保护的文档  。    为此，请将 `-IrmReject` 参数添加到脚本中的 Set-IrmConfiguration 命令。
 >
-> 你还需要修改 `$webUrls` 变量（例如， https://contoso.sharepoint.com ）和 `$listTitle` 变量（例如，$Reports）   。
+> 您还需要修改`$webUrls`变量 (例如， **https:\//contoso.sharepoint.com**) 和`$listTitle`变量 (例如， **$Reports**)。
 
 如果需要对用户的 OneDrive for Business 库禁用 IRM，请参阅[对 OneDrive for Business 禁用 IRM 的脚本](#script-to-disable-irm-for-onedrive-for-business)部分。
 

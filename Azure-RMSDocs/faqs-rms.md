@@ -4,7 +4,7 @@ description: 有关 Azure 信息保护中数据保护服务 Azure Rights Managem
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/19/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c9ed9992f96a923a97f2ec04d8598867321d4505
-ms.sourcegitcommit: e366a19300be4165da05ec7ee592f883c467bb51
+ms.openlocfilehash: 6507d040fec9bf7f93037ae07fa8ecce6d627e0e
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66269803"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67521133"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -89,7 +89,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 不会，你可以始终控制并继续访问数据，即使你决定不再使用 Azure Rights Management 服务也是如此。 有关详细信息，请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](decommission-deactivate.md)。
 
 ## <a name="can-i-control-which-of-my-users-can-use-azure-rms-to-protect-content"></a>是否可以控制哪些用户能够使用 Azure RMS 来保护内容？
-是的，Azure Rights Management 服务具有针对这一应用场景的用户载入控制。 有关详细信息，请参阅[激活 Azure Rights Management](activate-service.md) 一文中的[为分阶段部署配置加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)部分。
+是的，Azure Rights Management 服务具有针对这一应用场景的用户载入控制。 有关详细信息，请参阅[为分阶段部署配置加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)主题中[激活 Azure 信息保护中的保护服务](activate-service.md)一文。
 
 ## <a name="can-i-prevent-users-from-sharing-protected-documents-with-specific-organizations"></a>是否可以防止用户与特定的组织共享受保护文档？
 在数据保护中使用 Azure Rights Management 服务的最大优势之一在于，它支持企业与企业的协作，同时，无需为每个合作伙伴组织配置显式信任关系，因为 Azure AD 会代你处理好身份验证。
@@ -116,11 +116,11 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 此外，也可使用 PowerShell 将外部用户添加到自定义模板和标签。 此配置要求使用权限定义对象（用于更新模板）：
 
-1. 在权限定义对象中指定外部电子邮件地址及其权限，方法是使用 [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet 创建变量。
+1. 指定外部电子邮件地址及其权限和权限定义对象，在通过使用[新建 AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet 来创建一个变量。
 
-2. 使用 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 将此变量提供给 RightsDefinition 参数。
+2. 该变量提供给 RightsDefinition 参数以及[集 AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet。
 
-    如果将用户添加到现有模板，除新用户以外，还须在模板中为现有用户定义权限定义对象。 对于这种情况，您可能会发现有用**示例3：从cmdlet的[示例](/powershell/module/aadrm/set-aadrmtemplateproperty#examples)部分向自定义模板**添加新用户和权限。
+    如果将用户添加到现有模板，除新用户以外，还须在模板中为现有用户定义权限定义对象。 对于这种情况，您可能会发现有用**示例3：从cmdlet的[示例](/powershell/module/aipservice/set-aipservicetemplateproperty#examples)部分向自定义模板**添加新用户和权限。
 
 ## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>我可以对 Azure RMS 使用什么类型的组？
 大多数情况下，可以使用具有电子邮件地址的 Azure AD 中的任何组类型。 尽管分配使用权限时此经验法则始终适用，但在管理 Azure Rights Management 服务时存在一些例外。 有关详细信息，请参阅[组帐户 Azure 信息保护要求](prepare.md#azure-information-protection-requirements-for-group-accounts)。
@@ -199,5 +199,5 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 ## <a name="whats-the-difference-between-a-user-protecting-an-email-with-do-not-forward-and-a-template-that-doesnt-include-the-forward-right"></a>用户通过“不得转发”和不包括“转发”权限的模板来保护电子邮件有什么区别？
 
-除名称和外观外，“不转发”  既不是“转发”权限的相反权限，也不是模板。 它实际上是一组权限，包括限制复制、打印和保存附件以及限制转发电子邮件。 这些权限通过所选收件人动态应用于用户，而不由管理员静态分配。 有关详细信息，请参阅[为 Azure Rights Management 配置使用权限](configure-usage-rights.md)中的[电子邮件的“不得转发”选项](configure-usage-rights.md#do-not-forward-option-for-emails)部分。
+除名称和外观外，“不转发”  既不是“转发”权限的相反权限，也不是模板。 它实际上是一组权限，包括限制复制、打印和保存附件以及限制转发电子邮件。 这些权限通过所选收件人动态应用于用户，而不由管理员静态分配。 有关详细信息，请参阅[不要转发的电子邮件的选项](configure-usage-rights.md#do-not-forward-option-for-emails)主题中[为 Azure 信息保护配置使用权限](configure-usage-rights.md)。
 

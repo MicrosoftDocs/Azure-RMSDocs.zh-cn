@@ -4,19 +4,19 @@ description: 当 Microsoft 管理 Azure 信息保护租户密钥（默认）时�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/18/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 91672443e149a54dea4805bae10d8656129d04f9
-ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
+ms.openlocfilehash: bd7701e9b90f2ebd681dad4516c17d74c000f611
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67156776"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67521920"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
@@ -46,9 +46,9 @@ ms.locfileid: "67156776"
 
 如果从 Active Directory Rights Management Services (AD RMS) 进行迁移，并且为 Azure 信息保护选择 Microsoft 托管密钥拓扑，那么将具有多个 Microsoft 托管密钥。 在此方案中，租户具有至少 2 个 Microsoft 托管密钥。 这一个密钥或多个密钥是从 AD RMS 导出的密钥。 还将拥有为 Azure 信息保护租户自动创建的默认密钥。
 
-要选择其他密钥作为 Azure 信息保护的活动租户密钥，请使用 AADRM 模块中的 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) cmdlet。 要帮助确定将使用哪个密钥，请使用 [Get-AadrmKeys](/powershell/module/aadrm/get-aadrmkeys) cmdlet。 通过运行以下命令，可以确定为 Azure 信息保护租户自动创建的默认密钥：
+若要选择不同的密钥为 Azure 信息保护的活动租户密钥，请使用[集 AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) AIPService 模块中的 cmdlet。 若要帮助你确定要使用哪个密钥，请使用[Get AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet。 通过运行以下命令，可以确定为 Azure 信息保护租户自动创建的默认密钥：
 
-    (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
+    (Get-AipServiceKeys) | Sort-Object CreationTime | Select-Object -First 1
 
 要将密钥拓扑更改为客户托管 (BYOK)，请参阅[为 Azure 信息保护租户密钥实现 BYOK](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)。
 

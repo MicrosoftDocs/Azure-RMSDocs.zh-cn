@@ -4,19 +4,19 @@ description: 对 Microsoft Azure 信息保护相关的单词、短语或缩略�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/21/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ccc320d04d0aee9baac2bfcf337d11b63b7df9e
-ms.sourcegitcommit: 599306e271392afa4bc05c87982549785ce1860e
+ms.openlocfilehash: f23b64f7d8d0eddcdf853238400653a32d5f145b
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67305731"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67521505"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 
@@ -26,10 +26,11 @@ ms.locfileid: "67305731"
 
 |术语|定义|
 |--------|--------------|
-|AADRM|Azure Rights Management 服务的 PowerShell 模块名称，派生自 Azure Rights Management 之前名为 (Windows) Azure Active Directory Rights Management 时的非正式缩写。|
-|激活|启用 Azure 权限管理服务，使组织可以保护其文档和电子邮件。 此操作还会在 Exchange Online 和 SharePoint Online 中启用 IRM 功能。|
+|AADRM|保护服务 (Azure Rights Management) 派生自的非正式缩写为 Azure Rights Management 时它以前名为 (Windows) Azure Active Directory Rights Management 的第一个 PowerShell 模块的名称。 此 PowerShell 模块现在替换 AIPService 模块。|
+|激活|若要启用保护服务 (Azure Rights Management)，以便组织可以保护其文档和电子邮件。 此操作还会在 Exchange Online 和 SharePoint Online 中启用 IRM 功能。|
 |Active Directory 权限管理服务|经常缩写为 AD RMS  。<br /><br />一个 Windows Server 角色，它使用加密和策略来提供权限管理保护以帮助保护文档、文件和电子邮件。|
 |AD RMS|请参阅 *Active Directory Rights Management 服务*。|
+|AIPService|PowerShell 模块的保护服务，它替换为较旧，AADRM 模块的当前名称。|
 AzureInformationProtection|Azure 信息保护客户端 （经典） 和 Azure 信息保护 PowerShell 模块名称的统一标记的客户端。
 |Azure 信息保护|一项基于云的服务，使用标签对文档和电子邮件进行分类和保护。 Azure 权限管理通过使用加密、标识和授权策略提供保护。|
 Azure 信息保护客户端 （经典）|有时缩写为*经典的客户端*。<br /><br />允许用户、 管理员和服务的 Azure 信息保护的原始客户端使用的标签和从你的 Azure 信息保护策略设置。 现在正在替换为 Azure 信息保护统一标记的客户端。|

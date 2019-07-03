@@ -5,7 +5,7 @@ keywords: ''
 author: msmbaldwin
 ms.author: mbaldwin
 manager: barbkess
-ms.date: 03/13/2017
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,21 +13,21 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 62d217f7f48d0120ed630b184131b726c21d8363
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: feb0636c025d13dd3a290eb34ecb49eec4ebe284
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60179218"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67520759"
 ---
 # <a name="developing-your-application"></a>开发应用程序
 
 本示例中将构建与 Azure信息保护服务 (AIP) 交互的简单控制台应用程序。  它将要保护的文件的路径作为输入，然后使用临时策略或 Azure 模板对其进行保护。 应用程序将根据输入应用正确的策略，创建信息受保护的文档。 你将使用的示例代码是 [Azure IP 测试应用程序](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test)，位于 Github 上。
 
 ## <a name="sample-app-prerequisites"></a>示例应用程序必备组件
-- 操作系统：Windows 10、Windows 8、Windows 7、Windows Server 2008、Windows Server 2008 R2 或 Windows Server 2012
-- 编程语言：C#（.NET Framework 3.0 及更高版本）
-- 开发环境：Visual Studio 2015（及更高版本）
+- 操作系统：  Windows 10、Windows 8、Windows 7、Windows Server 2008、Windows Server 2008 R2 或 Windows Server 2012
+- 编程语言：  C#（.NET Framework 3.0 及更高版本）
+- 开发环境：  Visual Studio 2015（及更高版本）
 
 ## <a name="setting-up-your-azure-configuration"></a>设置 Azure 配置
 
@@ -35,24 +35,24 @@ ms.locfileid: "60179218"
 
 ### <a name="azure-ad-tenant-configuration"></a>Azure AD 租户配置
 
-若要为 Azure 信息保护配置 Azure AD 环境，请按照[激活 Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service)中的指导进行操作。
+若要配置 Azure 信息保护的 Azure AD 环境，请按照中的指导[激活 Azure 信息保护中的保护服务](https://docs.microsoft.com/information-protection/deploy-use/activate-service)。
 
-激活服务后，你需要 PowerShell 组件来执行后续步骤。 请按照[使用 Windows PowerShell 管理 Azure Rights Management 服务](https://docs.microsoft.com/information-protection/deploy-use/administer-powershell)中的说明完成此操作。
+激活服务后，你需要 PowerShell 组件来执行后续步骤。 请按照[使用 PowerShell 管理 Azure 信息保护中的保护](https://docs.microsoft.com/information-protection/deploy-use/administer-powershell)来实现此目的。
 
 ### <a name="getting-your-tenant-id"></a>获取租户 ID
 
 - 以管理员身份运行 PowerShell。
-- 导入 RMS 模块：`Import-Module AADRM`
-- 使用分配的用户凭据连接到服务：`Connect-AadrmService –Verbose`
-- 确保已启用 RMS：`Enable-AADRM`
-- 通过运行 `Get-AadrmConfiguration` 获取租户 ID
+- 导入 RMS 模块：`Import-Module AIPService`
+- 使用分配的用户凭据连接到服务：`Connect-AipService –Verbose`
+- 确保已启用 RMS：`enable-aipservice`
+- 通过运行 `Get-AipServiceConfiguration` 获取租户 ID
 
 >记录 BPOSId（租户 ID）值。 后续步骤中需要此值。
 
 *示例输出*
 ![cmdlet 输出](../media/develop/output-of-Get-AadrmConfiguration.png)
 
-- 从服务断开连接：`Disconnect-AadrmService`
+- 从服务断开连接：`Disconnect-AipServiceService`
 
 ### <a name="create-a-service-principal"></a>创建服务主体
 按照下列步骤来创建服务主体：

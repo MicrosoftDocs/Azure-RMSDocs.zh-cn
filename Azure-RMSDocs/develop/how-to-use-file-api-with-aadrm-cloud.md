@@ -5,7 +5,7 @@ keywords: ''
 author: msmbaldwin
 ms.author: mbaldwin
 manager: barbkess
-ms.date: 02/23/2017
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: dbd7969d5e6d87ec2d8e935f44867d58dfee9751
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: b2e625ad8c238d592656129cbc1542e4f6f24f97
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60178380"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67521208"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>操作说明：使服务应用程序可以使用基于云的 RMS
 
@@ -83,11 +83,11 @@ ms.locfileid: "60178380"
 -   安装 [Azure RMS powershell 模块](https://technet.microsoft.com/library/jj585012.aspx)。
 -   启动 Powershell 并运行以下命令以获取租户的 RMS 配置。
 
-    `Import-Module aadrm`
+    `Import-Module AIPService`
 
-    `Connect-AadrmService`（输入管理员凭据）
+    `Connect-AipService`（输入管理员凭据）
 
-    `Get-AadrmConfiguration`
+    `Get-AipServiceConfiguration`
 
 
 - 创建 [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 的实例并设置几个成员。
@@ -105,7 +105,7 @@ ms.locfileid: "60178380"
 
 -   创建 [IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx) 结构的实例（包含 [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 实例）。
 
-**注意** - *connectionInfo* 成员使用来自前面的 `Get-AadrmConfiguration` 调用的 URL 进行设置，在此处使用这些字段名称进行注明。
+**注意** - connectionInfo  成员使用来自前面的 `Get-AipServiceConfiguration` 调用的 URL 进行设置，在此处使用这些字段名称进行注明。
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};

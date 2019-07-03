@@ -4,23 +4,23 @@ description: 使用 Azure Rights Management 服务时，模板会自动下载到
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 44925ad0a2c384978d3f91c1d40a5b6b11d5a2a6
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 5939869dd421899a4b929b262e8a18790debaf5c
+ms.sourcegitcommit: a2542aec8cd2bf96e94923740bf396badff36b6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181491"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67535069"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用 Azure 信息保护的 Azure Rights Management 服务时，模板会自动下载到客户端计算机，因而用户能够从他们的应用程序选择这些模板。 但是，如果你对模板进行了更改，可能还需要执行附加步骤：
 
@@ -47,8 +47,8 @@ ms.locfileid: "60181491"
 ### <a name="to-change-the-automatic-schedule"></a>更改自动计划
 
 1.  使用注册表编辑器，创建并设置以下注册表值中的某一个：
-
-    - 若要将设置天数 （最小为 1 天） 的更新频率：创建名为“TemplateUpdateFrequency”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以天为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
+    
+    - 若要将设置天数 （最小为 1 天） 的更新频率：创建名为“TemplateUpdateFrequency”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以天为单位）  。 使用以下信息查找创建此新注册表值的注册表路径。
 
         **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -56,7 +56,7 @@ ms.locfileid: "60181491"
 
         **值：** TemplateUpdateFrequency
 
-    - 若要设置的更新频率，以秒为单位 （最少为 1 秒）：创建名为“TemplateUpdateFrequencyInSeconds”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以秒为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
+    - 若要设置的更新频率，以秒为单位 （最少为 1 秒）：创建名为“TemplateUpdateFrequencyInSeconds”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以秒为单位）  。 使用以下信息查找创建此新注册表值的注册表路径。
 
         **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -72,7 +72,7 @@ ms.locfileid: "60181491"
 
 1. 使用注册表编辑器，删除“LastUpdatedTime”  值的数据。 例如，数据可能显示 **2015-04-20T15:52**；删除 2015-04-20T15:52 后，不会显示任何数据。 使用以下信息查找删除此注册表值数据的注册表路径。
 
-   **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<MicrosoftRMS_FQDN>\Template\\<user_alias>
+   **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<MicrosoftRMS_FQDN>\Template\\<user_alias>  
 
    **类型：** REG_SZ
 
@@ -81,7 +81,7 @@ ms.locfileid: "60181491"
    > [!TIP]
    > 在注册表路径中，<*MicrosoftRMS_FQDN*> 是指你的 Microsoft RMS 服务 FQDN。 如果你想要验证此值：
    > 
-   > 对 Azure RMS 运行 [Get-AadrmConfiguration](/powershell/module/aadrm/get-aadrmconfiguration) cmdlet。 如果尚未安装适用于 Azure RMS 的 Windows PowerShell 模块，请参阅[安装 AADRM PowerShell 模块](install-powershell.md)。
+   > 运行[Get AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) cmdlet 为 Azure 信息保护。 如果你尚未安装 AIPService PowerShell 模块，请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
    > 
    > 在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
    > 
@@ -91,10 +91,9 @@ ms.locfileid: "60181491"
    > 
    > **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
-2. 删除以下文件夹及其包含的所有文件：**%localappdata%\Microsoft\MSIPC\Templates**
+2. 删除以下文件夹及其包含的所有文件： **%localappdata%\Microsoft\MSIPC\Templates**
 
 3. 请重启 Office 应用程序和文件资源管理器实例。
-
 
 ## <a name="see-also"></a>请参阅
 [在 Azure 信息保护策略中配置和管理模板](configure-policy-templates.md)

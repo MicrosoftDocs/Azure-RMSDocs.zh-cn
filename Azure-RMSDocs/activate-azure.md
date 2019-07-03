@@ -4,26 +4,25 @@ description: Azure 门户提供有关保护激活的说明，以便你的组织�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/18/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ce90491200e51be7d270f5f0ef1d81b33dae63e7
-ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
+ms.openlocfilehash: 2c2b0ca3ded29fd408d6597327f2bb15844bdd10
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67156374"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67520256"
 ---
-# <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>如何从 Azure 门户激活 Azure 权限管理
+# <a name="how-to-activate-the-rights-management-protection-service-from-the-azure-portal"></a>如何激活 Rights Management 保护服务从 Azure 门户
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用对象：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
-如果想要从 Azure 门户激活 Azure 权限管理服务 (Azure RMS)，请使用这些说明。
+如果你想要使用 Azure 门户激活 Azure 信息保护中的 Rights Management 保护服务 (Azure RMS)，请使用这些说明。
 
 1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”  边栏选项卡。
     
@@ -41,5 +40,5 @@ ms.locfileid: "67156374"
 
 
 ## <a name="next-steps"></a>后续步骤
-继续阅读[激活 Azure 权限管理](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)。
+继续阅读[激活 Azure 信息保护中的保护服务](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)。
 

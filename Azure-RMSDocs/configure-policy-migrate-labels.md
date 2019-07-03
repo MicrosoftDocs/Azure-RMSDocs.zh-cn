@@ -4,18 +4,18 @@ description: 为支持统一标签的客户端和服务将 Azure 信息保护标
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/21/2019
+ms.date: 07/03/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: b0beddbd21d17cfe35d8efb2b1280f5fd7c17912
-ms.sourcegitcommit: 599306e271392afa4bc05c87982549785ce1860e
+ms.openlocfilehash: a1fbc9dcb517eb272d1c32c0e81cc06039612c2b
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67305734"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67520882"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-office-365-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签
 
@@ -66,7 +66,7 @@ ms.locfileid: "67305734"
         
         提示：在重新配置这些标签的过程中，你可能发现用两个浏览器窗口很有用：在一个窗口中为标签选择“编辑模板”按钮，查看保护设置；在另一个窗口中配置在选择“设置权限”时使用的相同设置   。
     
-    - 迁移具有基于云保护设置的标签之后，生成的保护模板范围是在 Azure 门户中定义的范围（或通过使用 AADRM PowerShell 模块），以及在管理中心定义的范围。 
+    - 迁移使用基于云的保护设置标签后，保护模板的生成范围是指定了作用域在 Azure 门户中 （或通过使用 AIPService PowerShell 模块） 定义并在管理中心中定义的作用域。 
 
 - 迁移标签时，将看到迁移结果显示标签是否创建  、更新  ，或因重复而重命名  ：
 

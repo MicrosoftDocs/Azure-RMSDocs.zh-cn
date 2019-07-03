@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 6f359c304080918713cee52667a1bedeb7b4ae07
-ms.sourcegitcommit: 9628dcd88abde32f612896195f8d3d9a2c1d87bf
+ms.openlocfilehash: 1e59e864c86ded6433e5edd89748cd794a3d6410
+ms.sourcegitcommit: a2542aec8cd2bf96e94923740bf396badff36b6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67398734"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67535172"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标记客户端-版本发行历史记录和支持策略
 
@@ -111,7 +111,7 @@ ms.locfileid: "67398734"
 
 - 从 Azure 信息保护客户端升级。
 
-- 手动、自动和建议标记：有关为此客户端配置自动和建议标签的详细信息，请参阅[将敏感度标签自动应用于内容](/Office365/SecurityCompliance/apply_sensitivity_label_automatically)。
+- 手动、自动和建议标记：有关为此客户端配置自动和建议标签的详细信息，请参阅[将敏感度标签自动应用于内容](/Office365/SecurityCompliance/apply-sensitivity-label-automatically)。
 
 - 文件资源管理器、用于分类和保护文件的右键单击操作、删除保护和应用自定义权限。
 

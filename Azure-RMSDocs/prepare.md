@@ -4,19 +4,19 @@ description: 查看你是否拥有可以开始对组织的文档和电子邮件�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/03/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 75aea1cf43c6e6ca66dbca611946c4366fe8280d
-ms.sourcegitcommit: 1b8e87bda58bb40f3e32b2edf264385e7235b7c5
+ms.openlocfilehash: 2ffe76069e4f36fb4c21fdd8edaeb611635b0abf
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66462220"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67521899"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
@@ -215,5 +215,5 @@ Azure 信息保护使用用户和组的方式有三种：
 
 - 如果订阅是在 2018 年 2 月之前获取的：则必须自己激活此服务。 
 
-有关检查激活状态等详细信息，请参阅[激活 Azure Rights Management](./activate-service.md)。
+有关详细信息，其中包括正在检查激活状态，请参阅[激活 Azure 信息保护中的保护服务](./activate-service.md)。
 

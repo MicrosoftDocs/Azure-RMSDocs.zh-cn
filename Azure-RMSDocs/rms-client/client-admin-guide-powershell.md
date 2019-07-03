@@ -4,18 +4,18 @@ description: 管理员通过使用 PowerShell 管理 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/18/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.suite: ems
-ms.openlocfilehash: 1280a909ec74bf831af5e856274bc6f53a03a5e9
-ms.sourcegitcommit: a26e4e50165107efd51280b5c621dfe74be51a7a
+ms.openlocfilehash: 6afeef61671eaaf6fffdb7a0a5bb6ef93b1cf8ce
+ms.sourcegitcommit: a2542aec8cd2bf96e94923740bf396badff36b6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67236962"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67535149"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -72,7 +72,7 @@ AzureInformationProtection 模块的当前版本具有以下限制：
 如果组织使用 Azure 信息保护进行分类和保护，或仅使用 Azure 权限管理服务进行数据保护，请先阅读本部分，再开始使用 PowerShell 命令。
 
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>系统必备
 
 除了安装 AzureInformationProtection 模块这一先决条件之外，Azure 信息保护标签和 Azure 权限管理数据保护服务还有其他先决条件：
 
@@ -94,7 +94,7 @@ AzureInformationProtection 模块的当前版本具有以下限制：
 
 无论是通过使用标签还是直接连接到 Azure 权限管理服务来应用数据保护，此先决条件都适用。
 
-如果未激活 Azure 信息保护租户，请参阅[激活 Azure 权限管理](../activate-service.md)的说明。
+如果未激活你的 Azure 信息保护租户，请参阅的说明[激活 Azure 信息保护中的保护服务](../activate-service.md)。
 
 #### <a name="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account"></a>先决条件 2：使用自己的帐户从他人的文件中删除保护
 
@@ -119,12 +119,12 @@ AzureInformationProtection 模块的当前版本具有以下限制：
 若要自动获取值并运行 Set-RMSServerAuthentication：
 
 ````
-# Make sure that you have the AADRM and MSOnline modules installed
+# Make sure that you have the AIPService and MSOnline modules installed
 
 $ServicePrincipalName="<new service principal name>"
-Connect-AadrmService
-$bposTenantID=(Get-AadrmConfiguration).BPOSId
-Disconnect-AadrmService
+Connect-AipService
+$bposTenantID=(Get-AipServiceConfiguration).BPOSId
+Disconnect-AipServiceService
 Connect-MsolService
 New-MsolServicePrincipal -DisplayName $ServicePrincipalName
 
@@ -139,37 +139,37 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 ##### <a name="to-get-the-bpostenantid"></a>获取 BposTenantId
 
-从 Azure RMS Windows PowerShell 模块运行 Get-AadrmConfiguration cmdlet：
+从 Azure RMS Windows PowerShell 模块运行 Get AipServiceConfiguration cmdlet:
 
-1. 如果计算机上尚未安装此模块，请参阅[安装 AADRM PowerShell 模块](../install-powershell.md)。
+1. 如果您的计算机上尚未安装此模块，请参阅[安装 AIPService PowerShell 模块](../install-powershell.md)。
 
 2. 使用“以管理员身份运行”  选项启动 Windows PowerShell。
 
-3. 使用 `Connect-AadrmService` cmdlet 连接到 Azure 权限管理服务：
-
-        Connect-AadrmService
-
+3. 使用 `Connect-AipService` cmdlet 连接到 Azure 权限管理服务：
+    
+        Connect-AipService
+    
     系统提示时，输入你的 Azure 信息保护租户管理员凭据。 通常使用作为 Azure Active Directory 或 Office 365 的全局管理员的帐户。
-
-4. 运行 `Get-AadrmConfiguration` 并创建 BPOSId 值的副本。
-
-    Get-AadrmConfiguration 的输出示例：
-
+    
+4. 运行 `Get-AipServiceConfiguration` 并创建 BPOSId 值的副本。
+    
+    从 Get AipServiceConfiguration 输出的示例：
+    
             BPOSId                                   : 23976bc6-dcd4-4173-9d96-dad1f48efd42
-
+        
             RightsManagement ServiceId               : 1a302373-f233-440600909-4cdf305e2e76
-
+        
             LicensingIntranetDistributionPointUrl    : https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/licensing
-
+        
             LicensingExtranetDistributionPointUrl    : https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/licensing
-
+        
             CertificationIntranetDistributionPointUrl: https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/certification
-
+        
             CertificationExtranetDistributionPointUrl: https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/certification
 
 5. 从服务断开连接：
-
-        Disconnect-AadrmService
+    
+        Disconnect-AipServiceService
 
 ##### <a name="to-get-the-appprincipalid-and-symmetric-key"></a>获取 AppPrincipalId 和对称密钥
 
@@ -233,9 +233,9 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 如上一命令所示，可以使用单个命令提供多个值，将在以非交互方式运行的脚本中执行此操作。 但是出于测试目的，可以仅键入 Set-RMSServerAuthentication，并根据提示逐个提供值。 命令完成后，客户端现以“服务器模式”运行，这适用于脚本和 Windows Server 文件分类基础结构等非交互式使用。
 
-请考虑将此服务主体帐户设为超级用户：若要确保此服务主体帐户始终可以取消保护他人的文件，可以将其配置为超级用户。 通过与将标准用户帐户配置为超级用户相同的方式，使用相同的 Azure RMS cmdlet ([Add-AadrmSuperUser](/powershell/module/aadrm/add-aadrmsuperuser))，但使用 AppPrincipalId 值指定“ServicePrincipalId”  参数。
+请考虑将此服务主体帐户设为超级用户：若要确保此服务主体帐户始终可以取消保护他人的文件，可以将其配置为超级用户。 在相同的方式配置为超级用户的标准用户帐户使用相同的 Azure RMS cmdlet，[添加 AipServiceSuperUser](/powershell/module/aipservice/add-aipservicesuperuser)，但指定**ServicePrincipalId**参数与你AppPrincipalId 值。
 
-有关超级用户的详细信息，请参阅[为 Azure 权限管理和发现服务或数据恢复配置超级用户](../configure-super-users.md)。
+有关超级用户的详细信息，请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](../configure-super-users.md)。
 
 > [!NOTE]
 > 若要使用自己的帐户对 Azure 权限管理服务进行身份验证，则无需在保护或取消保护文件或获取模板之前运行 Set-RMSServerAuthentication。
@@ -244,7 +244,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 如果在北美以外的区域使用服务主体帐户来保护文件和下载模板，必须编辑注册表： 
 
-1. 再次运行 Get-AadrmConfiguration cmdlet，并记下 **CertificationExtranetDistributionPointUrl** 和 **LicensingExtranetDistributionPointUrl** 的值。
+1. 再次运行 Get AipServiceConfiguration cmdlet，并记下的值**CertificationExtranetDistributionPointUrl**并**LicensingExtranetDistributionPointUrl**。
 
 2. 在运行 AzureInformationProtection cmdlet 的每台计算机上，打开注册表编辑器。
 
@@ -351,7 +351,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 当你的组织仅使用 Active Directory Rights Management Services 时，请阅读本节，然后才开始使用 PowerShell 命令来保护或取消保护文件。
 
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>系统必备
 
 除了安装 AzureInformationProtection 模块的先决条件之外，用于保护或取消保护文件的帐户必须具有读取和执行权限才能访问 ServerCertification.asmx：
 

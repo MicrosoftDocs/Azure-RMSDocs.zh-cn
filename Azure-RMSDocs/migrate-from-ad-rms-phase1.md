@@ -4,19 +4,19 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 1 阶段涉及从 AD 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/16/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 95eed1f01140c133cd6e5d3301e5eef2ef12f359
-ms.sourcegitcommit: 3e948723644f19c935bc7111dec1cc54a1ff0231
+ms.openlocfilehash: bd2ad07e428dabe694701ffbd807fa12ee8e01cb
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65782055"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67520925"
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
 
@@ -25,16 +25,13 @@ ms.locfileid: "65782055"
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 1。 这些过程涉及[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)的步骤 1 至 3，以及准备好迁移环境但确保对用户无任何影响。
 
 
-## <a name="step-1-install-the-aadrm-powershell-module-and-identify-your-tenant-url"></a>步骤 1：安装 AADRM PowerShell 模块，并标识你的租户 URL
+## <a name="step-1-install-the-aipservice-powershell-module-and-identify-your-tenant-url"></a>步骤 1：安装 AIPService PowerShell 模块，并识别你的租户 URL
 
-安装 AADRM 模块，这样使你可以配置和管理针对 Azure 信息保护提供数据保护的服务。
+安装 AIPService 模块，以便可以配置和管理提供的 Azure 信息保护的数据保护的服务。
 
-有关说明，请参阅[安装 AADRM PowerShell 模块](./install-powershell.md)。
+有关说明，请参阅[安装 AIPService PowerShell 模块](./install-powershell.md)。
 
-> [!NOTE]
-> 如果之前已下载了此 Windows PowerShell 模块，请运行以下命令来检查版本号是否高于或等于 **2.9.0.0**：`(Get-Module aadrm -ListAvailable).Version`
-
-若要完成某些迁移说明，需要了解租户的 Azure Rights Management 服务 URL，以便看到对\<租户 URL\> 的引用时将其替换。 Azure Rights Management 服务 URL 采用以下格式：**{GUID}.rms.[Region].aadrm.com**。
+若要完成某些迁移说明，需要了解租户的 Azure Rights Management 服务 URL，以便看到对\<租户 URL\>  的引用时将其替换。 Azure Rights Management 服务 URL 采用以下格式： **{GUID}.rms.[Region].aadrm.com**。
 
 例如：**5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
@@ -42,19 +39,19 @@ ms.locfileid: "65782055"
 
 1. 连接到 Azure Rights Management 服务，并在出现提示时输入租户全局管理员的凭据：
     
-        Connect-AadrmService
+        Connect-AipService
     
 2. 获取租户的配置：
     
-        Get-AadrmConfiguration
+        Get-AipServiceConfiguration
     
 3. 复制针对 **LicensingIntranetDistributionPointUrl** 显示的值，并从此字符串删除 `/_wmcs\licensing`。 
     
-    剩余的是 Azure 信息保护租户的 Azure 权限管理服务 URL。 此值在以下迁移说明中通常缩写为你的租户 URL。
+    剩余的是 Azure 信息保护租户的 Azure 权限管理服务 URL。 此值在以下迁移说明中通常缩写为你的租户 URL  。
     
     可以通过运行以下 PowerShell 命令验证是否具有正确的值：
     
-            (Get-AadrmConfiguration).LicensingIntranetDistributionPointUrl -match "https:\/\/[0-9A-Za-z\.-]*" | Out-Null; $matches[0]
+            (Get-AipServiceConfiguration).LicensingIntranetDistributionPointUrl -match "https:\/\/[0-9A-Za-z\.-]*" | Out-Null; $matches[0]
 
 ## <a name="step-2-prepare-for-client-migration"></a>步骤 2。 客户端迁移准备
 
@@ -66,17 +63,17 @@ ms.locfileid: "65782055"
 
 2. 为载入控件配置此组，以仅允许此组中的人员使用 Azure Rights Management 保护内容。 为此，在 PowerShell 会话中，请连接到 Azure Rights Management 服务，并在出现提示时，指定全局管理员凭据：
 
-        Connect-Aadrmservice
+        Connect-AipService
 
     然后为载入控件配置此组，将组对象 ID 替换为本例中的对象 ID，并在出现以下提示时输入 **Y** 进行确认：
 
-        Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False -SecurityGroupObjectId "fba99fed-32a0-44e0-b032-37b419009501" -Scope WindowsApp
+        Set-AipServiceOnboardingControlPolicy -UseRmsUserLicense $False -SecurityGroupObjectId "fba99fed-32a0-44e0-b032-37b419009501" -Scope WindowsApp
 
 3. [下载下列文件](https://go.microsoft.com/fwlink/?LinkId=524619)，其中包含客户端迁移脚本：
     
-    Migration-Scripts.zip
+    Migration-Scripts.zip 
     
-4. 提取文件，然后按照 PrepareClient.cmd 中的说明操作，使其包含 AD RMS 群集 Extranet 授权 URL 的服务器名称。 
+4. 提取文件，然后按照 PrepareClient.cmd  中的说明操作，使其包含 AD RMS 群集 Extranet 授权 URL 的服务器名称。 
     
     查找此名称：在 Active Directory Rights Management Services 控制台中，单击群集名称。 在**群集详情**信息中，复制 Extranet 群集 URL 部分**授权**值的服务器名称。 例如：**rmscluster.contoso.com**.
 
@@ -92,7 +89,7 @@ ms.locfileid: "65782055"
 
 如果使用的是 Exchange 内部部署或 Exchange Online，可能之前已将 Exchange 与 AD RMS 部署集成过。 此步骤将对它们进行配置，以使用现有的 AD RMS 配置支持 Azure RMS 保护的内容。 
 
-请确保你具有[租户的 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)，以便在下列命令中将该值替换为 &lt;YourTenantURL&gt; 
+请确保你具有[租户的 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)，以便在下列命令中将该值替换为 &lt;YourTenantURL&gt;  
 
 **如果已将 Exchange Online 与 AD RMS 集成**：打开一个 Exchange Online PowerShell 会话，然后逐一或在脚本中运行以下 PowerShell 命令：
 

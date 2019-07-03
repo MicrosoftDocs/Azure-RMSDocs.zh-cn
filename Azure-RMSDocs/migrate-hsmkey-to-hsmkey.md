@@ -4,19 +4,19 @@ description: 要使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/16/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 11391088aa0e2a084198cdb0aa73eeb6be0795d0
-ms.sourcegitcommit: 3e948723644f19c935bc7111dec1cc54a1ff0231
+ms.openlocfilehash: b4861b7955237df9b9d282330a8bd3752b00d6e6
+ms.sourcegitcommit: a2542aec8cd2bf96e94923740bf396badff36b6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65780860"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67535208"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 
@@ -64,9 +64,9 @@ ms.locfileid: "65780860"
 
 由 Azure 信息保护的管理员完成这些过程。
 
-1. 在连接 Internet 的工作站和 PowerShell 会话中，通过使用 [Connnect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice) cmdlet 连接到 Azure Rights Management。
+1. 在连接 Internet 的工作站和 PowerShell 会话中，通过使用 [Connnect-AadrmService](/powershell/module/aipservice/connect-aipservice) cmdlet 连接到 Azure Rights Management。
     
-    然后通过使用 [Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd) cmdlet 上传每个受信任的发布域 (.xml) 文件。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。
+    然后将每个受信任的发布域 (.xml) 文件，通过使用上传[导入 AipServiceTpd](/powershell/module/aipservice/import-aipservicetpd) cmdlet。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。
     
     若要运行此 cmdlet，需要先前为每个配置数据文件指定的密码以及在上一步中标识的密钥的 URL。
     
@@ -79,20 +79,20 @@ ms.locfileid: "65780860"
     输入指定的密码以导出配置数据文件。 然后，运行以下命令并确认希望执行此操作：
     
     ```
-    Import-AadrmTpd -TpdFile "C:\contoso-tpd1.xml" -ProtectionPassword $TPD_Password –KeyVaultKeyUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Verbose
+    Import-AipServiceTpd -TpdFile "C:\contoso-tpd1.xml" -ProtectionPassword $TPD_Password –KeyVaultKeyUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Verbose
     ```
     
     作为此导入的一部分，将导入 SLC 密钥并且密钥将被自动设置为已存档。
 
-2.  在上传完每个文件后，请运行 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) 以指定哪个导入的密钥与 AD RMS 群集中当前活动的 SLC 密钥相匹配。 该密钥将成为 Azure Rights Management 服务的活动租户密钥。
+2.  上传每个文件后，运行[集 AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties)以指定哪个导入的密钥与你的 AD RMS 群集中当前活动的 SLC 密钥相匹配。 该密钥将成为 Azure Rights Management 服务的活动租户密钥。
 
-3.  使用 [Disconnect-AadrmService](/powershell/aadrm/vlatest/disconnect-aadrmservice) cmdlet 断开与 Azure Rights Management 服务的连接：
+3.  使用[断开连接 AipServiceService](/powershell/module/aipservice/disconnect-aipservice) cmdlet 断开与 Azure Rights Management 服务的连接：
 
     ```
-    Disconnect-AadrmService
+    Disconnect-AipServiceService
     ```
 
-如果之后需要确认正在 Azure 密钥保管库中使用的 Azure 信息保护租户密钥，请使用 [Get-AadrmKeys](/powershell/aadrm/vlatest/get-aadrmkeys) Azure RMS cmdlet。
+如果稍后需要确认正在 Azure 信息保护租户密钥使用 Azure 密钥保管库中，使用[Get AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) Azure RMS cmdlet。
 
 现在可以转到[步骤 5：激活 Azure 权限管理服务](migrate-from-ad-rms-phase2.md#step-5-activate-the-azure-rights-management-service)。
 

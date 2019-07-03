@@ -4,23 +4,23 @@ description: 说明和管理员可以部署 Azure 信息保护统一标记上的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: 46102a1b2b60b58d47d0e436f25b2480f2737a51
-ms.sourcegitcommit: 5ecf68d050152e0b425fa8cf6f3890951185b14a
+ms.openlocfilehash: 27399c5955ed66d7c9e5e9d8870b01d52dba6e1d
+ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050720"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67521035"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：安装 Azure 信息保护统一标记用户的客户端
 
->适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用对象：  Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
-> 说明：*[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明： *[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 在企业网络上安装 Azure 信息保护统一标记客户端之前，请检查计算机具有所需的操作系统版本和 Azure 信息保护的应用程序：[Azure 信息保护的要求](../requirements.md)。 
 
@@ -44,12 +44,12 @@ ms.locfileid: "66050720"
 
 - 屏幕分辨率大于 800 x 600
     
-    当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”对话框。
+    当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”  对话框。
 
 
 - Microsoft Online Services 登录助手 7.250.4303.0
     
-    运行 Office 2010 的计算机需要安装 Microsoft Online Services 登录助手版本 7.250.4303.0。 此版本包含在客户端安装中。 如果登录助手的更高版本，将在安装 Azure 信息保护统一标记客户端之前将其卸载。 例如，通过使用“控制面板” > “程序和功能” > “卸载或更改程序”来检查版本和卸载登录助手。
+    运行 Office 2010 的计算机需要安装 Microsoft Online Services 登录助手版本 7.250.4303.0。 此版本包含在客户端安装中。 如果登录助手的更高版本，将在安装 Azure 信息保护统一标记客户端之前将其卸载。 例如，通过使用“控制面板”   > “程序和功能”   > “卸载或更改程序”  来检查版本和卸载登录助手。
 
 - KB 4482887
     
@@ -63,19 +63,19 @@ ms.locfileid: "66050720"
 
 - Visual C++ Redistributable for Visual Studio 2015（32 位版）
     
-    对于运行 Windows 7（含 Service Pack 1）的计算机，请从以下下载页面安装 vc_redist.x86.exe：[Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+    对于运行 Windows 7（含 Service Pack 1）的计算机，请从以下下载页面安装 vc_redist.x86.exe  ：[Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
     
     客户端安装不会检查此必备项，但它所需的 Azure 信息保护统一标记的客户端进行分类和保护的 PDF 文件。
 
 - 配置组策略，以免 Azure 信息保护加载项被禁用
     
-    对于 Office 2013 及更高版本，配置组策略以确保始终为 Office 应用程序启用 Microsoft Azure 信息保护加载项。 如果没有此配置，则可能禁用 Microsoft Azure 信息保护加载项，并且用户无法在其 Office 应用程序中标记其文档和电子邮件。
+    对于 Office 2013 及更高版本，配置组策略以确保始终为 Office 应用程序启用 Microsoft Azure 信息保护  加载项。 如果没有此配置，则可能禁用 Microsoft Azure 信息保护加载项，并且用户无法在其 Office 应用程序中标记其文档和电子邮件。
     
     - 对于 Outlook:使用记录在 Office 文档中的[系统管理员对加载项的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中的组策略设置。
     
-    - 对于 Word、Excel 和 PowerPoint：使用[由于 Office 2013 和 Office 2016 程序的组策略设置没有加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中记录的组策略设置“托管加载项列表”。 
+    - 对于 Word、Excel 和 PowerPoint：使用[由于 Office 2013 和 Office 2016 程序的组策略设置没有加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中记录的组策略设置“托管加载项列表”  。 
         
-        为 Azure 信息保护指定以下编程标识符 (ProgID)，并将此选项设置为“1: 始终启用加载项”。
+        为 Azure 信息保护指定以下编程标识符 (ProgID)，并将此选项设置为“1:  始终启用加载项”。
         
         对于 Word：`MSIP.WordAddin`
         
@@ -117,7 +117,7 @@ ms.locfileid: "66050720"
     
     - **DowngradeDotNetRequirement**：使用此参数以绕过 Microsoft Framework .NET 版本 4.6.2 的要求。 [详细信息](#more-information-about-the-downgradedotnetrequirement-installation-parameter)
     
-    - **AllowTelemetry = 0**：使用此参数来禁用安装选项“通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护”。 
+    - **AllowTelemetry = 0**：使用此参数来禁用安装选项“通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护”  。 
 
 3. 若要完成安装： 
 
@@ -151,15 +151,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 ##### <a name="to-identify-the-value-to-specify-for-the-servicelocation-parameter"></a>若要标识要为 ServiceLocation 参数指定的值
 
-1. 对于 PowerShell 会话，请先运行 [Connect-AadrmService](https://docs.microsoft.com/powershell/aadrm/vlatest/connect-aadrmservice)，并指定要连接到 Azure 权限管理服务的管理员凭据。 然后运行 [Get-AadrmConfiguration](https://docs.microsoft.com/powershell/aadrm/vlatest/get-aadrmconfiguration)。 
+1. 在 PowerShell 会话中，首次运行[Connect AipService](https://docs.microsoft.com/powershell/module/aipservice/connect-aipservice)并指定你的管理员凭据以连接到 Azure Rights Management 服务。 然后运行[Get AipServiceConfiguration](https://docs.microsoft.com/powershell/module/aipservice/get-aipserviceconfiguration)。 
  
-    如果尚未安装适用于 Azure Rights Management 服务的 PowerShell 模块，请参阅[安装 AADRM PowerShell 模块](../install-powershell.md)。
+    如果你尚未安装 Azure Rights Management 服务的 PowerShell 模块，请参阅[安装 AIPService PowerShell 模块](../install-powershell.md)。
 
 2. 在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
 
-    例如：LicensingIntranetDistributionPointUrl： https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing
+    例如：LicensingIntranetDistributionPointUrl： https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing 
 
-3. 在该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+3. 在该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如： **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
     剩余字符串就是要为 ServiceLocation 参数指定的值。
 
@@ -202,7 +202,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     |“不适用”|Windows 7|[vc_redist.x86.exe](https://www.microsoft.com/en-us/download/details.aspx?id=48145)|安装|
     |“不适用”|Windows 7|KB2627273 <br /><br /> 文件名中包含的版本号：v4|“卸载”|
 
-3. 对于默认安装，将 .msi 与 /quiet/ 一起运行，例如，`AzInfoProtection_UL.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)中记录的其他安装参数。  
+3. 对于默认安装，将 .msi 与 /quiet/  一起运行，例如，`AzInfoProtection_UL.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)中记录的其他安装参数。  
 
 
 ## <a name="next-steps"></a>后续步骤
