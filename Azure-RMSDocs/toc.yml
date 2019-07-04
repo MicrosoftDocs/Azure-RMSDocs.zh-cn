@@ -12,11 +12,11 @@
           href: requirements.md
         - name: Azure Active Directory 要求
           href: requirements-azure-ad.md
-        - name: 对数据保护的客户端设备支持
+        - name: 针对保护措施的客户端设备支持
           href: requirements-client-devices.md
-        - name: 对数据保护的应用程序支持
+        - name: 针对保护措施的应用程序支持
           href: requirements-applications.md
-        - name: 对数据保护的本地服务器支持
+        - name: 针对保护措施的本地设备支持
           href: requirements-servers.md
 - name: 快速入门
   expanded: true
@@ -101,7 +101,7 @@
           href: prepare.md
     - name: 部署和使用该服务
       items:
-        - name: 激活服务
+        - name: 激活保护
           items:
             - name: 概述
               href: activate-service.md
@@ -209,7 +209,7 @@
           items:
             - name: 概述
               href: administer-powershell.md
-            - name: 安装 AADRM PowerShell 模块
+            - name: 安装 AIPService PowerShell 模块
               href: install-powershell.md
     - name: 部署和使用该客户端
       items:
