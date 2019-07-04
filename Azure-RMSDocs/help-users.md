@@ -11,16 +11,16 @@ ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9ac96fe93c3bb903b25b5f9695f3e38451862f11
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 8ab1872aaf42aa2e62d46873f892e93c2bc90927
+ms.sourcegitcommit: 6c6fda77e131e071c94c2a2fd7b27e4031266fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60182324"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545038"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 为组织部署和配置 Azure 信息保护之后，请为用户、管理员和技术支持提供以下帮助和指导：
 
@@ -33,29 +33,29 @@ ms.locfileid: "60182324"
     > -   [Microsoft Azure 信息保护](https://youtu.be/ToShAUdlrPo?list=PL8nfc9haGeb6qSm1kLU8n3Zqg398764h5)
     > -   [Azure RMS Document Tracking and Revocation](https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)（Azure RMS 文档跟踪和撤消）
 
--   管理员信息
+-   管理员信息 
     
     有些应用程序使用管理员配置的策略和设置来自动应用信息保护。 你可能需要为管理这些应用程序和服务的其他管理员提供这些应用程序的说明。 
     
     有关详细信息，请参阅[应用程序如何支持 Azure Rights Management 服务](applications-support.md)和[为 Azure Rights Management 服务配置应用程序](configure-applications.md)。
     
--   技术支持信息
+-   技术支持信息 
     
-    如果用户拥有 Azure 信息保护客户端，支持人员可要求他们使用“帮助和反馈”选项，获取例如 Office 版本是否无法支持保护，以及当前登录的用户帐户等信息。 还可使用此选项收集日志文件并重置客户端。 有关详细信息，请参阅管理员指南：[安装检查和故障排除](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)。
+    如果用户拥有 Azure 信息保护客户端，支持人员可要求他们使用“帮助和反馈”选项，获取例如 Office 版本是否无法支持保护，以及当前登录的用户帐户等信息  。 还可使用此选项收集日志文件并重置客户端。 有关详细信息，请参阅管理员指南：[安装检查和故障排除](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)。
     
     如果有人合法请求获取对受保护文档的完全访问权限，请确保支持人员可以按流程操作，使用 Azure Rights Management [超级用户功能](configure-super-users.md)请求获取此访问权限。 例如，法律部门或经理可能会在某员工离职后发出此类请求。
     
     此外，用户可能会报告的一些典型问题分为以下几类：
     
-    - 登录帮助
+    - 登录帮助 
         
         当 Azure Rights Management 服务需要对用户进行身份验证且无法使用缓存的凭据时，可能提示用户提供凭据。 所需的凭据通常是用户的工作或学校帐户和密码，与 Office 365 租户或 Azure Active Directory 租户相关联。 尽管 Azure Rights Management 服务可以对 Azure AD 帐户进行身份验证，但某些应用程序也可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
         
         为用户和你的技术支持提供说明，阐明在具有使用 Azure 权限管理服务的应用程序时，如果提示用户提供凭据，应该使用何种帐户。
         
-    - 与保护或使用内容相关的问题
+    - 与保护或使用内容相关的问题 
         
-        确保用户获得了有关他们所用应用程序的相应说明，并使用 Azure 权限管理服务支持的应用程序和设备。 有关支持的应用程序和设备的详细信息，请参阅 [Azure Rights Management 的要求](requirements.md)。
+        确保用户获得了有关他们所用应用程序的相应说明，并使用 Azure 权限管理服务支持的应用程序和设备。 有关支持的应用程序和设备的详细信息，请参阅[Azure 信息保护要求](requirements.md)。
         
         若要确认 Azure Active Directory 能否授权特定用户或组保护或使用受保护内容，请使用[准备用户和组以便使用 Azure 信息保护](prepare.md)中的验证检查。
         
@@ -75,7 +75,7 @@ ms.locfileid: "60182324"
 
 
 ## <a name="using-information-protection-with-office365-office-2019-office-2016-or-office2013"></a>在 Office 365、Office 2019、Office 2016 或 Office 2013 中使用信息保护
-如果使用的是 Azure 权限管理服务，但尚未安装 Azure 信息保护客户端，那么用户就不会在 Office 桌面应用程序中看到 Azure 信息保护栏。 他们也不会在功能区上看到“保护”按钮，或在文件资源管理器中看到“分类和保护”。 这些附加内容有助于用户更轻松地保护文档和电子邮件。 对于这些用户，他们必须遵循类似以下步骤的说明。
+如果使用的是 Azure 权限管理服务，但尚未安装 Azure 信息保护客户端，那么用户就不会在 Office 桌面应用程序中看到 Azure 信息保护栏。 他们也不会在功能区上看到“保护”  按钮，或在文件资源管理器中看到“分类和保护”  。 这些附加内容有助于用户更轻松地保护文档和电子邮件。 对于这些用户，他们必须遵循类似以下步骤的说明。
 
 > [!TIP]
 > 若要查找应用程序特定帮助，以及有关在这些应用程序中使用信息保护的说明，请搜索 **IRM** 和应用程序名称及版本。
@@ -84,12 +84,12 @@ ms.locfileid: "60182324"
 
 1.  在 Microsoft Word 中，创建一个文档。
 
-2.  在“文件”菜单中，依次选择：“信息” > “保护文档” >  “限制访问”。
+2.  在“文件”  菜单中，依次选择：“信息”   > “保护文档”   >  “限制访问”  。
 
-3. 选择用于快速应用相应使用权限的模板，或选择“限制访问”，再自行选择使用权限。
+3. 选择用于快速应用相应使用权限的模板，或选择“限制访问”  ，再自行选择使用权限。
 
     > [!NOTE]
-    > 如果之前没有在计算机上使用过 Rights Management，那么“限制访问”选项会连接到 Azure Rights Management 服务，并提示输入凭据，以便配置 Office IRM 客户端。 然后，可以选择模板或使用权限。
+    > 如果之前没有在计算机上使用过 Rights Management，那么“限制访问”选项会连接到 Azure Rights Management 服务，并提示输入凭据，以便配置 Office IRM 客户端  。 然后，可以选择模板或使用权限。
 
 3.  保存文档。
 
@@ -103,22 +103,22 @@ ms.locfileid: "60182324"
 
 1.  在 Outlook 中，创建一封发送给组织内收件人地址的邮件。
 
-2.  在“选项”选项卡上：依次选择“权限”和一个选项。 例如：“不要转发”、“\<公司名称> - 机密”或“\<公司名称> - 机密，仅供查阅”。
+2.  在“选项”  选项卡上：依次选择“权限”  和一个选项。 例如：“不要转发”、“\<公司名称> - 机密”或“\<公司名称> - 机密，仅供查阅”    。
 
 3.  发送电子邮件。
 
 与查看受保护文档相似，当收件人打开受保护电子邮件时，首先需要进行身份验证。 如果已获得授权可以查看电子邮件，将通过为相应用户指定的受限[使用权限](configure-usage-rights.md)打开电子邮件。 
 
-例如，如果电子邮件受“不转发”选项保护，便无法使用功能区上的“转发”按钮。
+例如，如果电子邮件受“不转发”  选项保护，便无法使用功能区上的“转发”按钮。
 
 #### <a name="to-protect-an-email-message-using-outlook-on-the-web"></a>使用 Outlook 网页版保护电子邮件的具体步骤
 
 1. 使用 Outlook 网页版创建一封电子邮件，发送给组织内的收件人。
 
-2. 选择“保护”。 除非管理员已更改默认设置，否则自动选中“不要转发”选项。 若要更改默认设置，请依次选择“更改权限”和下拉菜单中的选项。 例如：“加密”或“\<公司名称> - 机密”。
+2. 选择“保护”  。 除非管理员已更改默认设置，否则自动选中“不要转发”  选项。 若要更改默认设置，请依次选择“更改权限”  和下拉菜单中的选项。 例如：“加密”  或“\<公司名称> - 机密”  。
 
 3. 发送电子邮件。
 
 与查看受保护文档相似，当收件人打开电子邮件时，首先需要进行身份验证。 如果已获得授权可以查看电子邮件，将通过为相应用户指定的受限[使用权限](configure-usage-rights.md)打开电子邮件。 
 
-例如，选中默认的“不要转发”选项后，便无法选中消息窗口内的“转发”选项。
+例如，选中默认的“不要转发”  选项后，便无法选中消息窗口内的“转发”  选项。

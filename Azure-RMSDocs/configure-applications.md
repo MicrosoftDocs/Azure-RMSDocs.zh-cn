@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 753ef710b4a4058e9792203e549b27cae83f8a12
-ms.sourcegitcommit: 2af2297319265c1f91aa76eb227c6f4d316df42a
+ms.openlocfilehash: 9a0625f842d7fef7e72020021164b5eb62029031
+ms.sourcegitcommit: 6c6fda77e131e071c94c2a2fd7b27e4031266fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67348803"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67544996"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>为 Azure Rights Management 配置应用程序
 
@@ -30,7 +30,7 @@ ms.locfileid: "67348803"
 为组织部署 Azure 信息保护之后，请使用以下信息配置应用程序、Azure 信息保护客户端和服务。 例如，Office 应用程序如 Word 2019、 Word 2016 和 Word 2013。 以及 Exchange Online（传输规则、数据丢失防护、请勿转发和邮件加密）与 SharePoint Online（受保护库）等服务。 若要了解这些应用程序和服务如何支持 Azure 信息保护中的数据保护服务，请参阅[应用程序如何支持 Azure 权限管理服务](applications-support.md)。
 
 > [!IMPORTANT]
-> 有关受支持的版本和其他要求的信息，请参阅 [Azure Rights Management 的要求](requirements.md)。
+> 有关支持的版本和其他要求的信息，请参阅[Azure 信息保护要求](requirements.md)。
 
 -   [Office 365：Online services 的配置](configure-office365.md)
 

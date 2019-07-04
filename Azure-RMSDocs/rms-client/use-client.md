@@ -4,17 +4,17 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/23/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: b51ebdb55212e2a29b6a8ce950bd69d578e98ed9
-ms.sourcegitcommit: b92f60a87f824fc2da1e599f526898e3a0c919c3
+ms.openlocfilehash: fd66c67d4368e393f5c5b7a59cafbf882548ddce
+ms.sourcegitcommit: 6c6fda77e131e071c94c2a2fd7b27e4031266fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67343677"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545046"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -102,7 +102,7 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 |标签颜色： | 在 Azure 门户中配置 | 标签迁移到 Office 365 后保留，并可使用 PowerShell 配置 <br /><br /> 在管理中心中创建的新标签不具有一种颜色，但可以使用配置颜色[PowerShell](clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)|
 |策略更新： | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 24 小时一次 | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 4 小时一次|
 |PDF 支持的格式：| 保护: <br /><br /> - PDF 加密的 ISO 标准（默认） <br /><br /> - .ppdf <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护| 保护: <br /><br /> - PDF 加密的 ISO 标准 <br /><br /> <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护|
-|支持的 cmdlet：| [AzureInformatioProtection](/powershell/module/azureinformationprotection) 记录的所有 cmdlet | Set-aipauthentication 使用预览版客户端仅支持非交互式会话 <br /><br /> Set-AIPFileClassification 和 Set-AIPFileLabel 不支持 Owner  参数或 SharePoint Server 库 <br /><br /> 此外，对于未应用标签的所有场景，都有一条“无适用标签”的注释 <br /><br /> Set-aipfileclassification 预览版客户端中支持*WhatIf*参数，以便它可以在发现模式下运行 <br /><br /> Set-AIPFileLabel 不支持 EnableTracking  参数 <br /><br /> Get-AIPFileStatus 不从其他租户返回标签信息，也不显示 RMSIssuedTime  参数<br /><br />此外， *LabelingMethod* Get-aipfilestatus 的参数将显示**特权**或**标准**而不是**手动**或**自动**。 有关详细信息，请参阅[联机文档](/powershell/module/azureinformationprotection/get-aipfilestatus)。|
+|支持的 cmdlet：| [AzureInformatioProtection](/powershell/module/azureinformationprotection) 记录的所有 cmdlet | Set-aipauthentication 使用预览版客户端仅支持非交互式会话 <br /><br /> Set-aipfileclassification 和 Set-aipfilelabel，Get-aipfilestatus 不支持 SharePoint 的路径 <br /><br /> 不支持 Set-aipfileclassification 和 Set-aipfilelabel*所有者*参数 <br /><br /> 此外，对于未应用标签的所有场景，都有一条“无适用标签”的注释 <br /><br /> Set-aipfileclassification 预览版客户端中支持*WhatIf*参数，以便它可以在发现模式下运行 <br /><br /> Set-AIPFileLabel 不支持 EnableTracking  参数 <br /><br /> Get-AIPFileStatus 不从其他租户返回标签信息，也不显示 RMSIssuedTime  参数<br /><br />此外， *LabelingMethod* Get-aipfilestatus 的参数将显示**特权**或**标准**而不是**手动**或**自动**。 有关详细信息，请参阅[联机文档](/powershell/module/azureinformationprotection/get-aipfilestatus)。|
 |Office 中每个操作的对齐方式提示（如果已配置）： | 频率：每个文件 <br /><br /> 降低敏感度级别 <br /><br /> 删除标签<br /><br /> 删除保护 | 频率：每个会话 <br /><br /> 降低敏感度级别<br /><br /> 删除标签|
 |删除已应用的标签操作： | 系统提示用户确认 <br /><br />下次 Office 应用程序打开文件时，不会自动应用默认标签或自动标签（如果已配置）  <br /><br />| 不提示用户确认<br /><br /> 下次 Office 应用程序打开文件时，自动应用默认标签或自动标签（如果已配置）|
 |自动和建议标签： | 在 Azure 门户中配置为[标签条件](../configure-policy-classification.md)，其中包含使用短语或正则表达式的内置信息类型和自定义条件 <br /><br />配置选项包括： <br /><br />- 唯一/非唯一计数 <br /><br /> - 最小计数| 在管理中心中配置，包含内置敏感信息类型和[自定义信息类型](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type)<br /><br />配置选项包括：  <br /><br />- 仅唯一计数 <br /><br />- 最小和最大计数 <br /><br />- 信息类型支持 AND 和 OR <br /><br />- 关键字字典<br /><br />- 可自定义的可信度和字符接近度|
@@ -114,6 +114,8 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 #### <a name="features-not-planned-to-be-in-the-azure-information-protection-unified-labeling-client"></a>未计划要在 Azure 信息保护统一标记客户端的功能
 
 尽管 Azure 信息保护统一标记客户端仍处于开发阶段，以下功能和从经典的客户端的行为差异是，目前未计划在统一标记客户端的未来版本中不可用： 
+
+- 支持适用于使用手动策略文件管理断开连接的计算机的 Office 应用
 
 - 在以下 Office 应用中自定义权限：Word、Excel 和 PowerPoint
 

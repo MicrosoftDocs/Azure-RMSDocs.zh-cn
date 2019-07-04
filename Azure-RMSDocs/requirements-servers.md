@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8e160908ac568b0657cc92b838959eb95da624b3
-ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
+ms.openlocfilehash: e94d624c1fa59d44399b9c83959534d75c912d6b
+ms.sourcegitcommit: 6c6fda77e131e071c94c2a2fd7b27e4031266fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67156655"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67544976"
 ---
 # <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
 
@@ -60,4 +60,4 @@ Windows Server 2016、Windows Server 2012 R2、Windows Server 2012 和 Windows S
 有关如何为这些本地服务器配置 Rights Management 连接器的详细信息，请参阅[部署 Azure Rights Management 连接器](deploy-rms-connector.md)。
 
 ## <a name="next-steps"></a>后续步骤
-若要查看其他要求，请参阅 [Azure Rights Management 的要求](requirements.md)。
+若要查看其他要求，请参阅 [Azure 信息保护的要求](requirements.md)。
