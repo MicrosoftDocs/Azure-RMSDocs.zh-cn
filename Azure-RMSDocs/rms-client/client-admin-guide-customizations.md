@@ -4,19 +4,19 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/12/2019
+ms.date: 07/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 4ef4a0d07154da9cb4b4b34d3b55264fa44f5fdf
-ms.sourcegitcommit: 95cbd8245b049a28556df79cc058668a1668599c
+ms.openlocfilehash: 13bc0ab4df8c07905149cfa6ef8417543415f4d2
+ms.sourcegitcommit: 849c493cef6b2578945c528f4e17373a2ef26287
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67028711"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67563436"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -74,7 +74,7 @@ ms.locfileid: "67028711"
 |PullPolicy|[对已断开连接计算机的支持](#support-for-disconnected-computers)
 |RemoveExternalContentMarkingInApp|[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)|
 |ReportAnIssueLink|[为用户添加“报告问题”](#add-report-an-issue-for-users)|
-|RunAuditInformationTypeDiscovery|[启用 Azure 信息保护分析以发现文档中的敏感信息](#enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents)|
+|RunAuditInformationTypeDiscovery|[禁用将在文档中发现的敏感信息发送到 Azure 信息保护 analytics](#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)|
 |RunPolicyInBackground|[开启在后台持续运行的分类](#turn-on-classification-to-run-continuously-in-the-background)|
 |ScannerConcurrencyLevel|[限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner)|
 |SyncPropertyName|[使用现有自定义属性标记 Office 文档](#label-an-office-document-by-using-an-existing-custom-property)|
@@ -795,25 +795,25 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 现在，当用户打开和保存这些 Office 文档之一时，文档标记为“公开”  、“常规”  或“高度机密\所有员工”  ，前提是 Azure 信息保护策略已包含有这些名称的标签。 如果没有带这些名称的标记，则不会标记文档。
 
-## <a name="enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents"></a>启用 Azure 信息保护分析以发现文档中的敏感信息
+## <a name="disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics"></a>禁用将在文档中发现的敏感信息发送到 Azure 信息保护 analytics
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
-如果Azure 信息保护客户端保存的文档包含敏感信息，[Azure 信息保护分析](../reports-aip.md)可以发现并报告该内容。 默认情况下，此信息不会发送到 Azure 信息保护分析。
+[Azure 信息保护分析](../reports-aip.md)可以发现并报告该内容包含敏感信息时保存 Azure 信息保护客户端的文档。 默认情况下，此信息是 Azure 信息保护客户端发送 （经典） 到 Azure 信息保护 analytics。
 
-若要更改此行为，以便发送此信息，请输入以下字符串：
+若要更改此行为以便经典的客户端不发送此信息，请输入以下字符串：
 
 - 密钥：RunAuditInformationTypeDiscovery 
 
-- Value：**True**
+- Value：**False**
 
-如果不设置此高级客户端设置，当用户访问了带标签的内容后，系统仍会从 Azure 信息保护客户端发送审核结果，但信息仅限于报告。
+如果设置此高级客户端设置、 审核结果仍将从经典的客户端发送，但信息仅限于 reporting 时用户已访问标记为内容。
 
 例如：
 
-- 如果不进行此设置，可以看到用户访问的 Financial.docx 已被设置 Confidential \ Sales 标签  。
+- 使用此设置，可以看到用户访问标记为 Financial.docx**机密 \ 销售**。
 
-- 如果进行此设置，可以看到该 Financial.docx 包含 6 位数信用卡卡号。
+- 如果没有此设置，可以看到 Financial.docx 包含 6 信用卡卡号。
     
     - 如果同时还启用[用于更深入分析的内容匹配](../reports-aip.md#content-matches-for-deeper-analysis)，那么，还能够查看具体的信用卡卡号。
 

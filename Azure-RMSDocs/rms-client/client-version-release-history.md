@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/05/2019
+ms.date: 07/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5c3be398ea132d21b32e6337f44638d424ff71d
-ms.sourcegitcommit: 12848714f3c8d7a4761c28668e5809bf324c267a
+ms.openlocfilehash: 569b53a958ae90153133406141be15703ef92901
+ms.sourcegitcommit: 849c493cef6b2578945c528f4e17373a2ef26287
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66692221"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67563375"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -107,7 +107,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 - 两个新高级客户端设置以进行分析，针对以下方案：
     
     - 当已在 Azure 门户中选中复选框以收集内容匹配项时，阻止为一部分用户发送信息类型匹配项。 [详细信息](client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)
-    - 有关**数据发现**报告，显示是否文件包含敏感信息。 [详细信息](client-admin-guide-customizations.md#enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents)
+    - 有关**数据发现**报告，显示是否文件包含敏感信息。 [详细信息](client-admin-guide-customizations.md#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)
 
 **修补程序**：
 

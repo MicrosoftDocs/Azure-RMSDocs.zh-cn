@@ -4,19 +4,19 @@ description: 若要安装 Azure 信息保护中保护服务的 PowerShell 的说
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 07/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c986b34f3138a3410cb0d675c016206a752ad0c8
-ms.sourcegitcommit: a2542aec8cd2bf96e94923740bf396badff36b6a
+ms.openlocfilehash: d6f5ccc34669781f4ec9723014d5254444255649
+ms.sourcegitcommit: 849c493cef6b2578945c528f4e17373a2ef26287
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67535018"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67563389"
 ---
 # <a name="installing-the-aipservice-powershell-module"></a>安装 AIPService PowerShell 模块
 
@@ -40,8 +40,11 @@ AIPService 模块将替换较旧的模块，AADRM。 如果你已安装较旧的
 
 较新模块了到较旧的模块中的 cmdlet 名称的别名，因此，任何现有的脚本将继续工作。 但是，计划先旧模块超出支持更新这些引用。 有关 AADRM 模块支持将结束于 2020 年 7 月 15 日。
 
-如果使用 Azure Rights Management 管理工具安装 AADRM 模块，使用**程序和功能**卸载**Windows Azure AD Rights Management 管理**。
+如果从 PowerShell 库安装 AADRM 模块，若要卸载它，启动一个 PowerShell 会话**以管理员身份运行**选项，然后键入：
 
+    Uninstall-Module -Name AADRM
+
+如果使用 Azure Rights Management 管理工具安装 AADRM 模块，使用**程序和功能**卸载**Windows Azure AD Rights Management 管理**。
 
 ## <a name="how-to-install-the-aipservice-module"></a>如何安装 AIPService 模块
 

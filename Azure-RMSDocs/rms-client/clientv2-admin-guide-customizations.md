@@ -4,19 +4,19 @@ description: 有关自定义 Windows 的 Azure 信息保护统一标记客户的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/29/2019
+ms.date: 07/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 1f338f29216224d5984921f7882d45e4c0c4947c
-ms.sourcegitcommit: a884d627c520721b93d0bb81a2a781399879da0e
+ms.openlocfilehash: aac8b94bbe1eaa46111dee15ac5f69d05ac730ab
+ms.sourcegitcommit: 849c493cef6b2578945c528f4e17373a2ef26287
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67464883"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67563445"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -577,7 +577,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 此配置使用的策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)必须通过使用 Office 365 安全与合规性中心 PowerShell 配置。 它被受统一标记仅限客户端的预览版本。
 
-[Azure 信息保护分析](../reports-aip.md)可以发现并报告该内容包含敏感信息时保存 Azure 信息保护客户端的文档。 默认情况下，此信息发送由 Azure 信息保护统一到 Azure 信息保护 analytics 标记。
+[Azure 信息保护分析](../reports-aip.md)可以发现并报告该内容包含敏感信息时保存 Azure 信息保护客户端的文档。 默认情况下，此信息由 Azure 信息保护统一标记客户端发送到 Azure 信息保护 analytics。
 
 若要更改此行为，以便统一标记客户端不发送此信息，请为所选的标签策略输入以下字符串：
 
@@ -589,9 +589,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 例如：
 
-- 如果不进行此设置，可以看到用户访问的 Financial.docx 已被设置 Confidential \ Sales 标签  。
+- 使用此设置，可以看到用户访问标记为 Financial.docx**机密 \ 销售**。
 
-- 如果进行此设置，可以看到该 Financial.docx 包含 6 位数信用卡卡号。
+- 如果没有此设置，可以看到 Financial.docx 包含 6 信用卡卡号。
     
     - 如果同时还启用[用于更深入分析的内容匹配](../reports-aip.md#content-matches-for-deeper-analysis)，那么，还能够查看具体的信用卡卡号。
 

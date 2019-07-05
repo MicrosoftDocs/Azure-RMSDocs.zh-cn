@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 06/08/2019
+ms.date: 07/04/2019
 manager: barbkess
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 84e3e4231c07f2234baa717d1be2c29386ed44ca
-ms.sourcegitcommit: 886aebde3b2df0f54b7bd41105823db44aea72d8
+ms.openlocfilehash: c39e2be3fef7568179f3859f834f92cc761b6259
+ms.sourcegitcommit: 849c493cef6b2578945c528f4e17373a2ef26287
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2019
-ms.locfileid: "66815606"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67563417"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -246,8 +246,6 @@ Azure Monitor 日志已**使用情况和预估的成本**功能来帮助你估�
     此报表有“列”  选项，可用于显示比默认显示更多的活动信息。 还可以选择它来显示“活动详细信息”，方便查看文件相关的更多详细信息  。
 
 - **数据发现(预览版)** ：使用此报表查看扫描程序发现的带标签文件和受支持的终结点的相关信息。
-    
-    你可以配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-azure-information-protection-analytics-to-discover-sensitive-information-in-documents)包含敏感信息的报表文件的 Azure 信息保护客户端。
     
     提示：在收集的信息中，你可能会发现用户从你不知道或当前未扫描的位置访问包含敏感信息的文件：
     
