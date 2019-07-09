@@ -4,17 +4,17 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: fd66c67d4368e393f5c5b7a59cafbf882548ddce
-ms.sourcegitcommit: 6c6fda77e131e071c94c2a2fd7b27e4031266fa5
+ms.openlocfilehash: a32ff0979cfedb250ee44153829013c2595dedb6
+ms.sourcegitcommit: d2a2748e9286d15d0cb53d2d8bb2eb7db0ee5a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545046"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648169"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -71,7 +71,7 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 |中心报告（分析）：| 是 | 是；但具有限制：<br /><br /> -不支持[内容匹配](../reports-aip.md#content-matches-for-deeper-analysis) |
 |重置设置和导出日志：| 是 | 是 |
 |用户定义的权限：| 是 | 是；但具有限制： <br /><br />-对于 Outlook 唯一 （不要转发）：支持<br /><br />-对于 Word、 Excel、 PowerPoint 和文件资源管理器：在 Azure 门户中配置标签时，使用预览版客户端支持 |
-|自定义权限：| 是 | 文件资源管理器和 PowerShell （预览版） <br /><br /> 在 Office 应用程序中，作为替代方法，用户可以选择“文件信息” > “保护文档”    > “限制访问”  |
+|自定义权限：| 是 | 文件资源管理器和 PowerShell （预览版） <br /><br /> 在 Office 应用中，作为替代方法，用户可以选择**文件信息** > **保护文档** > **限制访问**或管理员可以配置用户定义的权限的标签|
 |Office 应用中的“信息保护”栏：| 是 | 是；但具有限制：<br /><br /> - 无标题或可自定义的工具提示<br /><br /> - 应用的标签未显示标签颜色|
 |标签可应用视觉标记（页眉、页脚、水印）：| 是 | 是；但具有限制：<br /><br /> - 页眉和页脚不支持变量获取动态值 <br /><br /> - 不支持为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记|
 |文件资源管理器，右键单击操作：| 是 | 是；但具有限制：<br /><br /> - 无法保护 .ppdf 格式的 PDF 文档 <br /><br />  - 不支持仅保护模式|
@@ -117,7 +117,7 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 
 - 支持适用于使用手动策略文件管理断开连接的计算机的 Office 应用
 
-- 在以下 Office 应用中自定义权限：Word、Excel 和 PowerPoint
+- 为用户可以在 Office 应用程序中选择一个选项的自定义权限：Word、Excel 和 PowerPoint
 
 - 从 Office 应用和文件资源浏览器中跟踪和撤销
 
