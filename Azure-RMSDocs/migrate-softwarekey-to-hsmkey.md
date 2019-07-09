@@ -120,7 +120,7 @@ Azure Key Vault 管理员：对于想存储在 Azure Key Vault 中的每个导�
 
 请勿按照这些步骤来生成你的密钥对，因为你已经具有该密钥。 而是运行命令从本地 HSM 传送此密钥（本例中，KeyIdentifier 参数使用“contosobyok”）。
 
-将密钥传送到 Azure Key Vault 之前，请确保当使用降级的权限创建密钥副本（步骤 4.1）及加密密钥时（步骤 4.3）时，KeyTransferRemote.exe 实用工具返回 结果: 成功**。
+将密钥传送到 Azure Key Vault 之前，请确保当使用降级的权限创建密钥副本（步骤 4.1）及加密密钥时（步骤 4.3） **时，KeyTransferRemote.exe 实用工具返回 结果: 成功**。
 
 将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 输出结果将会类似于 **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333** 。 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure 信息保护中的 Azure Rights Management 服务将此密钥用作租户密钥。
 
