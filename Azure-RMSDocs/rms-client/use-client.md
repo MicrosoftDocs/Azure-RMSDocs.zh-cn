@@ -4,17 +4,17 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/08/2019
+ms.date: 07/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: a32ff0979cfedb250ee44153829013c2595dedb6
-ms.sourcegitcommit: d2a2748e9286d15d0cb53d2d8bb2eb7db0ee5a6d
+ms.openlocfilehash: 38ba4c2f028fcf38fd48be093ee73f2d770bac41
+ms.sourcegitcommit: 7442118f77a175e85444831eb88540034bceeab3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648169"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67715227"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -68,6 +68,7 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 |功能|经典的客户端|统一标记的客户端|
 |-------|-----------------------------------|----------------------------------------------------|
 |标记操作：手动、建议、自动| 是 | 是 |
+|标签的多语言支持：| 是 | 是 |
 |中心报告（分析）：| 是 | 是；但具有限制：<br /><br /> -不支持[内容匹配](../reports-aip.md#content-matches-for-deeper-analysis) |
 |重置设置和导出日志：| 是 | 是 |
 |用户定义的权限：| 是 | 是；但具有限制： <br /><br />-对于 Outlook 唯一 （不要转发）：支持<br /><br />-对于 Word、 Excel、 PowerPoint 和文件资源管理器：在 Azure 门户中配置标签时，使用预览版客户端支持 |
@@ -87,7 +88,6 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 |本地数据存储的扫描程序：| 是 | 否 |
 |跟踪和撤销：| 是 | 否 |
 |使用模板的仅保护模式 （没有标签）：| 是 | 否 |
-|多语言支持：| 是 | 否 |
 |对 AD RMS 的支持：| 是 | 仅支持以下操作：<br /><br /> - 在你部署 [Active Directory Rights Management Services 移动设备扩展](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574\(v=ws.11\))时，查看器可打开受保护的文档|
 
 #### <a name="detailed-comparisons-for-the-clients"></a>客户端的详细的比较
@@ -100,6 +100,7 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 |在 Office 应用程序中应用时的标签选择和显示：|通过功能区上的“保护”按钮  <br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|通过功能区上的“敏感度”  按钮<br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|
 |在 Office 应用程序中管理“信息保护”栏：|面向用户： <br /><br />- 从功能区上的“保护”按钮选择显示或隐藏栏 <br /><br />- 如果用户选择隐藏栏，默认情况下，该栏在应用程序中隐藏，但会继续自动显示在新打开的应用程序中 <br /><br /> 面向管理员： <br /><br />- 在应用程序首次打开时，通过策略设置自动显示或隐藏栏，并控制在用户选择隐藏栏后，该栏是否对新打开的应用程序自动保持隐藏状态|面向用户： <br /><br />- 从功能区上的“敏感度”按钮选择显示或隐藏栏 <br /><br />- 当用户选择隐藏栏时，该栏在该应用程序中以及新打开的应用程序中均处于隐藏状态 <br /><br />面向管理员： <br /><br />-PowerShell 设置以管理在栏 （仅限预览版客户端）|
 |标签颜色： | 在 Azure 门户中配置 | 标签迁移到 Office 365 后保留，并可使用 PowerShell 配置 <br /><br /> 在管理中心中创建的新标签不具有一种颜色，但可以使用配置颜色[PowerShell](clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)|
+|标签支持不同的语言：| 在 Azure 门户中配置 | 使用 Office 365 安全与合规性 PowerShell 配置并*LocaleSettings*参数[新建标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-label?view=exchange-ps)和[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)|
 |策略更新： | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 24 小时一次 | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 4 小时一次|
 |PDF 支持的格式：| 保护: <br /><br /> - PDF 加密的 ISO 标准（默认） <br /><br /> - .ppdf <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护| 保护: <br /><br /> - PDF 加密的 ISO 标准 <br /><br /> <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护|
 |支持的 cmdlet：| [AzureInformatioProtection](/powershell/module/azureinformationprotection) 记录的所有 cmdlet | Set-aipauthentication 使用预览版客户端仅支持非交互式会话 <br /><br /> Set-aipfileclassification 和 Set-aipfilelabel，Get-aipfilestatus 不支持 SharePoint 的路径 <br /><br /> 不支持 Set-aipfileclassification 和 Set-aipfilelabel*所有者*参数 <br /><br /> 此外，对于未应用标签的所有场景，都有一条“无适用标签”的注释 <br /><br /> Set-aipfileclassification 预览版客户端中支持*WhatIf*参数，以便它可以在发现模式下运行 <br /><br /> Set-AIPFileLabel 不支持 EnableTracking  参数 <br /><br /> Get-AIPFileStatus 不从其他租户返回标签信息，也不显示 RMSIssuedTime  参数<br /><br />此外， *LabelingMethod* Get-aipfilestatus 的参数将显示**特权**或**标准**而不是**手动**或**自动**。 有关详细信息，请参阅[联机文档](/powershell/module/azureinformationprotection/get-aipfilestatus)。|

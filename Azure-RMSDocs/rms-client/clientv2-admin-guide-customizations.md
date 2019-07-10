@@ -4,19 +4,19 @@ description: 有关自定义 Windows 的 Azure 信息保护统一标记客户的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/05/2019
+ms.date: 07/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 560d954119c40ad3fd9dd99b4d9f1ef18fb88515
-ms.sourcegitcommit: 9c9ee62632bbb5d7151131da8b720b7c9bf2a8f1
+ms.openlocfilehash: 5ec1a6ab89fc1d4730254d9d22ee77f9c72ad60e
+ms.sourcegitcommit: 531feafbabd8874fbeac4bd460e9bef60afabcdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67571860"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691090"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -111,6 +111,8 @@ ms.locfileid: "67571860"
 
 #### <a name="available-advanced-settings-for-label-policies"></a>可用的标签策略高级设置
 
+使用*AdvancedSettings*参数与[新建 LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-labelpolicy?view=exchange-ps)并[集 LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-labelpolicy?view=exchange-ps)。
+
 |设置|应用场景和说明|
 |----------------|---------------|
 |AttachmentAction|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
@@ -140,6 +142,8 @@ ms.locfileid: "67571860"
     (Get-LabelPolicy -Identity Global).settings
 
 #### <a name="available-advanced-settings-for-labels"></a>可用的高级的设置的标签
+
+使用*AdvancedSettings*参数与[新建标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-label?view=exchange-ps)并[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)。
 
 |设置|应用场景和说明|
 |----------------|---------------|

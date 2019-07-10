@@ -4,18 +4,18 @@ description: 为支持统一标签的客户端和服务将 Azure 信息保护标
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 07/10/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: a1fbc9dcb517eb272d1c32c0e81cc06039612c2b
-ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
+ms.openlocfilehash: 87d66363531aa29705dedc12ffdace9725fae580
+ms.sourcegitcommit: 531feafbabd8874fbeac4bd460e9bef60afabcdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67520882"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691042"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-office-365-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签
 
@@ -25,7 +25,7 @@ ms.locfileid: "67520882"
 
 迁移在 Azure 信息保护标签，以便可以将它们用作由的敏感度标签[客户端和服务支持统一标记](#clients-and-services-that-support-unified-labeling)。
 
-迁移之后，管理和发布这些标签从 Office 365 安全与合规中心或 Microsoft 365 安全中心和 Microsoft 365 合规中心。 可以通过 Azure 信息保护统一标记客户端使用这些标签。 如果你继续使用 Azure 信息保护客户端 （经典），此客户端将继续从 Azure 门户下载 Azure 信息保护策略的标签。
+迁移之后，管理和发布这些标签从以下管理员中心之一：Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。 可以通过 Azure 信息保护统一标记客户端使用这些标签。 如果你继续使用 Azure 信息保护客户端 （经典），此客户端将继续从 Azure 门户下载 Azure 信息保护策略的标签。
 
 在阅读有关如何迁移标签的详细说明之前，你可能会发现以下常见问题非常有用：
 
@@ -45,14 +45,16 @@ ms.locfileid: "67520882"
 
 迁移标签后，租户的全局管理员可以继续管理 Azure 门户和管理中心中的标签和策略。
 
-
 ## <a name="considerations-for-unified-labels"></a>统一标签注意事项
 
 在迁移标签之前，请确保了解以下更改和注意事项：
 
-- 并非所有客户端目前都支持统一标签。 请确保你拥有[支持的客户端](#clients-and-services-that-support-unified-labeling)并准备好在 Azure 门户（适用于不支持统一标签的客户端）和管理中心（适用于支持统一标签的客户端）进行管理。
+- 请确保你拥有[支持统一的标签的客户端](#clients-and-services-that-support-unified-labeling)而且，如有必要，会准备用于 Azure 门户 （适用于不支持统一的标签的客户端） 和 （适用于支持的客户端在管理员中心中管理统一的标签）。
 
-- 不会迁移策略，包括策略设置和谁有权访问策略（作用域内策略）以及所有高级客户端设置。 对于这些不会迁移的更改，需要在迁移标签后在管理中心配置相关选项。
+- 不会迁移策略，包括策略设置和谁有权访问策略（作用域内策略）以及所有高级客户端设置。 标签迁移后配置这些设置的选项包括：
+    - [复制策略](#copy-your-policies-and-policy-settings)选项。
+    - 敏感度标签你管理中心。
+    - [Office 365 安全与合规性 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps)，它必须使用以配置[高级客户端设置](./rms-client/clientv2-admin-guide-customizations.md#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。
     
     为了获得更一致的用户体验，建议在管理中心的相同范围内发布相同标签。
 
@@ -76,13 +78,13 @@ ms.locfileid: "67520882"
 
 - 对于每个标签，Azure 门户仅显示可编辑的标签显示名称。 管理中心显示标签的显示名称和标签名称。 标签名称是在首次创建标签时指定的初始名称，此属性由后端服务用于标识目的。
 
-- 不迁移标签的任何本地化字符串。 必须在管理中心为已迁移的标签定义新的本地化字符串。
+- 不迁移标签的任何本地化字符串。 通过使用 Office 365 安全与合规性 PowerShell 来定义新的已迁移的标签的本地化的字符串和*LocaleSettings*参数[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)。
 
 - 迁移之后，当你在 Azure 门户中编辑已迁移的标签时，相同的更改将会自动反映在管理中心。 但是，当在其中一个管理中心编辑已迁移的标签时，必须返回到 Azure 门户的“Azure 信息保护 - 统一标签”  边栏选项卡，并选择“发布”。  此额外操作需要 Azure 信息保护客户端 （经典） 以拾取标签更改。
 
 ### <a name="label-settings-that-are-not-supported-in-the-admin-centers"></a>管理中心不支持的标签设置
 
-使用下表来确定已迁移的标签的哪些配置设置不受 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 合规中心的支持。 如果有使用这些设置的标签，迁移完成时，请在其中一个管理中心发布标签前使用最后一列中的管理员指南。
+使用下表来确定已迁移的标签的哪些配置设置不受 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 合规中心的支持。 如果必须标签使用这些设置，在迁移完成后，使用管理指南在最后一列中之前在其中一个引用的管理员中心中发布你的标签。
 
 如果不确定如何配置标签，请在 Azure 门户中查看其设置。 如果需要有关此步骤的帮助，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
 
@@ -90,16 +92,16 @@ Azure 信息保护客户端 （经典） 可以使用所有列出没有任何问
 
 |标签配置|受统一标记客户端的支持| 管理中心指南|
 |-------------------|---------------------------------------------|-------------------------|
-|启用或禁用状态<br /><br />注意：不会同步到管理中心 |“不适用”|等效于是否发布标签。 |
+|启用或禁用状态<br /><br />此状态不会同步到管理中心 |“不适用”|等效于是否发布标签。 |
 |从列表中选择的标签颜色或使用 RGB 代码指定的标签颜色 |是|标签颜色没有配置选项。 相反，您可以在 Azure 门户中配置标签的颜色或使用[PowerShell](./rms-client/clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)。|
 |使用预定义模板的基于云的保护或基于 HYOK 的保护 |否|预定义模板没有配置选项。 我们不建议使用此配置发布标签。|
-|使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |否|管理员中心没有用户定义的权限，对于这些 Office 应用程序的配置选项。 除非使用统一标记客户端的预览版本，我们不建议发布具有此配置的标签。 否则，请在[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中查看应用此标签所带来的后果。|
+|使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |否|管理员中心没有用户定义的权限，对于这些 Office 应用程序的配置选项。 除非使用统一标记客户端的预览版本，我们不建议发布具有此配置的标签。 如果发布具有此配置的标签，检查应用来自标签的结果[下表](#comparing-the-behavior-of-protection-settings-for-a-label)。|
 |使用 Outlook（不可转发）中用户定义权限的基于 HYOK 的保护 |否|HYOK 没有配置选项。 我们不建议使用此配置发布标签。 否则，请在[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中查看应用此标签所带来的后果。|
-|删除保护 |否|没有用于删除保护的配置选项。 我们不建议使用此配置发布标签。<br /><br /> 如果发布此标签应用时，如果以前应用的标签，将删除保护。 如果之前从标签中独立应用了保护，则将保留保护。|
+|删除保护 |否|没有用于删除保护的配置选项。 我们不建议使用此配置发布标签。<br /><br /> 如果发布具有此配置中，标签应用时，如果以前应用的标签，将删除保护。 如果之前从标签中独立应用了保护，则将保留保护。|
 |为视觉标记（页眉、页脚、水印）使用 RGB 代码自定义字体和字体颜色|是|视觉标记的配置限制为颜色和字体大小列表。 尽管无法看见管理中心中配置的值，仍可以不做任何更改发布此标签。 <br /><br />若要更改这些选项，可以使用 Azure 门户。 但是，请考虑将颜色更改为管理中心中列出的选项之一，以便于管理。|
 |视觉标记（页眉、页脚）中的变量|否|如果不做更改就发布此标签，则变量将在客户端上显示为文本而不是显示动态值。 发布标签之前，请编辑字符串以删除变量。|
 |每个应用的视觉标记|否|如果不做更改就发布此标签，则在所有应用中应用变量将在客户端上显示为文本，而不是在所选的应用上显示文本字符串。 仅当适用于所有应用时发布此标签，并编辑字符串以删除应用变量。|
-|条件和关联设置 <br /><br />注意：包括自动和建议标签及其工具提示|“不适用”|若要重新配置条件，请将自动标记用作标签设置中的独立配置。|
+|条件和关联设置 <br /><br /> 包括自动和建议标签及其工具提示|“不适用”|若要重新配置条件，请将自动标记用作标签设置中的独立配置。|
 
 ### <a name="comparing-the-behavior-of-protection-settings-for-a-label"></a>比较标签保护设置的行为
 
@@ -164,7 +166,7 @@ Azure 信息保护客户端 （经典） 可以使用所有列出没有任何问
 > [!NOTE]
 > 此选项逐步推出预览版中的租户，可能会发生更改。 如果没有看到**复制策略 （预览）** 选项，请在几周之后重试。
 
-迁移你的标签后，你可以选择一个选项复制策略。 如果你选择此选项，你使用的策略的一次性副本及其[策略设置](configure-policy-settings.md)和任何[高级客户端设置](./rms-client/client-admin-guide-customizations.md#available-advanced-client-settings)发送到您在其中管理你的标签在管理中心内：Office 365 安全与合规中心，Microsoft 365 安全中心，Microsoft 365 符合性中心。
+迁移你的标签后，你可以选择一个选项复制策略。 如果你选择此选项，你使用的策略的一次性副本及其[策略设置](configure-policy-settings.md)和任何[高级客户端设置](./rms-client/client-admin-guide-customizations.md#available-advanced-client-settings)发送到您在其中管理你的标签在管理中心内：Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。
 
 在选择之前**复制策略 （预览）** 选项，请注意以下事项：
 
@@ -176,7 +178,7 @@ Azure 信息保护客户端 （经典） 可以使用所有列出没有任何问
 
 - 若要支持将复制的高级客户端属性，必须使用 Azure 信息保护统一标记客户端的预览版本。
 
-- 与不同的标签会同步到标签的后续更改迁移，复制策略操作不会同步到你的策略或策略设置的任何后续更改。 可以重复的复制策略操作在 Azure 门户中进行更改之后，将再次覆盖任何现有的策略和它们的设置。 或者，使用与集 LabelPolicy 或设置标签 cmdlet *AdvancedSettings*从 Office 365 安全与合规性中心 PowerShell 参数。
+- 与不同的标签会同步到标签的后续更改迁移，复制策略操作不会同步到你的策略或策略设置的任何后续更改。 可以重复的复制策略操作在 Azure 门户中进行更改之后，将再次覆盖任何现有的策略和它们的设置。 或者，使用[集 LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-labelpolicy?view=exchange-ps)或[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)cmdlet 以及*AdvancedSettings*从 Office 365 安全与合规性中心 PowerShell 参数。
 
 有关配置高级客户端设置和 Azure 信息保护统一标记客户端，标签设置的策略设置的详细信息请参阅[统一的 Azure 信息保护的自定义配置标记的客户端](./rms-client/clientv2-admin-guide-customizations.md)管理员指南中。
 
