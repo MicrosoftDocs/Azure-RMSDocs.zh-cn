@@ -1,21 +1,21 @@
 ---
-title: Azure 信息保护客户端的版本历史记录和支持策略
+title: Azure 信息保护客户端-版本历史记录 & 支持策略
 description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的新增功能或改进功能，并了解支持的生命周期策略。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/04/2019
+ms.date: 07/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 569b53a958ae90153133406141be15703ef92901
-ms.sourcegitcommit: 849c493cef6b2578945c528f4e17373a2ef26287
+ms.openlocfilehash: fd0e18fe93045dec211f2bb400e32fc067ea9ac7
+ms.sourcegitcommit: 01209692397e73aec5c8f04f0ea8b54292b397d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67563375"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67816332"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -27,20 +27,20 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式版本和当前预览版（若有）。 
 
-通常几周的一小段延迟后, 的最新正式发布版本还包括在产品名称为 Microsoft 更新目录**Microsoft Azure 信息保护** >  **Microsoft Azure 信息保护客户端**，和的分类**更新**。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
+在通常几周的短暂延迟后, 最新的正式发行版也包含在 Microsoft 更新目录中, 产品名称为**Microsoft Azure 信息保护** > **Microsoft Azure 信息保护客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
 
 有关详细信息，请参阅[升级和维护 Azure 信息保护客户端](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)。
 
 > [!TIP]
-> 希望使用 Azure 信息保护统一标记的客户端，因为从 Office 365 安全与合规中心、 Microsoft 365 安全中心或 Microsoft 365 合规性中心发布你的标签？ 当您下载，然后从 Microsoft 下载中心安装统一标记客户端时，可以将 Azure 信息保护客户端升级到此[统一标记的客户端](unifiedlabelingclient-version-release-history.md)。
+> 对使用 Azure 信息保护统一标签客户端感兴趣, 因为标签是从 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心发布的？ 从 Microsoft 下载中心下载并安装统一标签客户端时, 可以将 Azure 信息保护客户端升级到此[统一的标签客户端](unifiedlabelingclient-version-release-history.md)。
 
 ### <a name="servicing-information-and-timelines"></a>维护信息和日程表
 
-在发布新的通用版本 (GA) 前，原有的 Azure 信息保护客户端的支持期限最多为六个月。 除了本部分中，文档不包括不受支持版本的客户端有关的信息。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
+在发布新的通用版本 (GA) 前，原有的 Azure 信息保护客户端的支持期限最多为六个月。 除了此部分, 文档不包含有关不支持的客户端版本的信息。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
 
 不应在生产网络上为最终用户部署预览版本。 而是使用最新预览版来查看和试用即将在下一 GA 版本中推出的新功能或修补程序。 仅支持当前预览版。
 
-##### <a name="general-availability-versions-that-are-no-longer-supported"></a>不再受支持的正式发布版本：
+##### <a name="general-availability-versions-that-are-no-longer-supported"></a>不再支持的常规可用性版本:
 
 |客户端版本|发布日期|
 |--------------|--------------------------|
@@ -55,20 +55,20 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 |1.2.4.0.0|10/27/2016|
 |1.1.23.0|10/01/2016|
 
-开始 6/2/2019，Azure 信息保护标记服务需要使用 TLS 1.2 的连接。
+从6/2/2019 开始, Azure 信息保护的标记服务需要使用 TLS 1.2 的连接。
 
-所有客户端版本从 1.4.21.0 发布 03/15/2017年支持 TLS 1.2。 客户端版本**1.3.155.2**， **1.2.4.0**，并**1.1.23.0**不使用 TLS 1.2，因此不能再下载 Azure 信息保护策略。
+1\.4.21.0 发行的所有客户端版本03/15/2017 支持 TLS 1.2。 客户端版本**1.3.155.2**、 **1.2.4.0**和**1.1.23.0**不使用 TLS 1.2, 因此无法再下载 Azure 信息保护策略。
 
 ### <a name="release-history"></a>版本历史
 
 请查看以下信息，了解适用于 Windows 的 Azure 信息保护客户端受支持版本的新增功能或更改之处。 最新版本会最先列出。 
 
 > [!NOTE]
-> 小的修补程序不予列出，因此如果遇到 Azure 信息保护客户端相关问题，建议检查它是否已在最新 GA 版本中得到修复。 如果问题仍然存在，检查当前预览版本 （如果可用）。
+> 小的修补程序不予列出，因此如果遇到 Azure 信息保护客户端相关问题，建议检查它是否已在最新 GA 版本中得到修复。 如果问题仍然存在, 请检查当前预览版本 (如果有)。
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
-## <a name="version-1482040"></a>版本 1.48.204.0
+## <a name="version-1482040"></a>版本1.48.204。0
 
 **发布日期**：04/16/2019
 
@@ -76,11 +76,11 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **新功能：**
 
-- 从 Azure 门户中，而不是使用 PowerShell，现在已配置 Azure 信息保护扫描程序。
+- Azure 信息保护扫描程序现在是从 Azure 门户配置的, 而不是使用 PowerShell 进行配置。
     
     如果要从扫描程序的正式发布版本升级，则升级过程与以前的版本不同，因此请务必阅读[升级 Azure 信息保护扫描程序](client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。
 
-- 扫描程序现在支持多个配置数据库在同一 SQL server 实例时指定的配置文件名称。
+- 在指定配置文件名称时, 扫描器现在支持同一 SQL server 实例上的多个配置数据库。
 
 - 支持以下有助于识别文档和电子邮件中的凭据的敏感信息类型：
     - Azure 服务总线连接字符串
@@ -96,18 +96,18 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 新的高级客户端设置，在 Outlook 中实现弹出消息，可以针对正在发送的电子邮件发出警告、进行验证或阻止。 [详细信息](client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
     
-    请注意，是否配置的预览版本 OutlookCollaborationTrustedDomains 的高级客户端属性，此设置现在替换由三个新设置，以便域可以免除每个操作：OutlookWarnTrustedDomains、 OutlookJustifyTrustedDomains 和 OutlookBlockTrustedDomains。
+    请注意, 如果为预览版本配置了 OutlookCollaborationTrustedDomains 的高级客户端属性, 则此设置现在将替换为三个新设置, 因此, 每个操作都可以免除域:OutlookWarnTrustedDomains、OutlookJustifyTrustedDomains 和 OutlookBlockTrustedDomains。
 
 - 如果使用 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 标记和保护文件，则可以使用 *EnableTracking* 参数将文件注册到文档跟踪站点。 [详细信息](client-admin-guide-document-tracking.md#using-powershell-to-register-labeled-documents-with-the-document-tracking-site)
 
 - 新的高级客户端设置，仅当将策略设置配置为不显示自定义权限时才适用：当有一个文件受自定义权限保护时，请在文件资源管理器中显示自定义权限选项，以便用户可以查看和更改它们（如果他们具有更改保护设置的权限）。 [详细信息](client-admin-guide-customizations.md#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer)
 
-- 为终结点发现[Azure 信息保护分析](../reports-aip.md)。
+- [Azure 信息保护分析](../reports-aip.md)的终结点发现。
     
-- 两个新高级客户端设置以进行分析，针对以下方案：
+- 用于分析的两个新的高级客户端设置, 适用于以下情况:
     
     - 当已在 Azure 门户中选中复选框以收集内容匹配项时，阻止为一部分用户发送信息类型匹配项。 [详细信息](client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)
-    - 有关**数据发现**报告，显示是否文件包含敏感信息。 [详细信息](client-admin-guide-customizations.md#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)
+    - 对于 "**数据发现**" 报告, 显示文件是否包含敏感信息。 [详细信息](client-admin-guide-customizations.md#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)
 
 **修补程序**：
 
@@ -131,7 +131,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **其他变化：**
 
-- 以下的敏感信息类型包括[不再支持](../configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client)为建议的配置的标签或自动分类：
+- 为建议或自动分类配置的标签[不再支持](../configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client)以下敏感信息类型:
     - 欧盟电话号码
     - 欧盟 GPS 坐标
 
@@ -148,13 +148,13 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 默认情况下，Azure 信息保护扫描程序不再排除 .zip 文件。 若要检查和标记 .zip 文件，请参阅管理员指南的[检查 .zip 文件](client-admin-guide-file-types.md#to-inspect-zip-files)部分。
 
-- [策略设置](../configure-policy-settings.md)  “用户必须提供设置较低分类标签、删除标签或删除保护的理由”不再适用于扫描程序。 在扫描程序配置文件中将设置“重新标记文件”  配置为“启用”  时，扫描程序会执行这些操作。
+- [策略设置](../configure-policy-settings.md)  “用户必须提供设置较低分类标签、删除标签或删除保护的理由”不再适用于扫描程序。 当你在 scanner 配置文件中配置设置 "重新**标记文件**", 然后选中 "**允许标签降级**" 复选框时, 扫描程序会执行这些操作。 
 
 ## <a name="version-141510"></a>版本 1.41.51.0
 
 **发布日期**：2018 年 11 月 27 日
 
-通过 10/16/2019年支持
+支持, 10/16/2019
 
 此版本包括 RMS 客户端的 MSIPC 1.0.3592.627 版本。
 
@@ -164,7 +164,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     
     若想要将客户端还原为使用 .ppdf 文件扩展名保护 PDF 文件，请使用相同的[高级客户端设置](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，但指定“False”。 
 
-- 审核的数据支持[中央报告](../reports-aip.md)使用 Azure 信息保护分析，Microsoft ignite 大会 2018 宣布。
+- 使用 Azure 信息保护分析来审核对[中央报表](../reports-aip.md)的数据支持, 请参阅 Microsoft Ignite 2018。
 
 - Excel 现在还支持使用不同颜色的[视觉标记](../configure-policy-markings.md)。
 
