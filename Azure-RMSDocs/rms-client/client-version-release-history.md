@@ -4,18 +4,18 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/10/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fd0e18fe93045dec211f2bb400e32fc067ea9ac7
-ms.sourcegitcommit: 01209692397e73aec5c8f04f0ea8b54292b397d7
+ms.openlocfilehash: d07b862fc95815cad2b100b80c6f024c582263dc
+ms.sourcegitcommit: fdc1f3d76b48f4e865a538087d66ee69f0f9888d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67816332"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68141648"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -68,9 +68,33 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
+## <a name="version-153100"></a>版本1.53.10。0
+
+**发布日期**：07/15/2019
+
+此版本包括 RMS 客户端的 MSIPC 版本1.0.3889.0419。
+
+**新功能：**
+
+- 新的高级客户端设置若要从策略设置 "**所有文档和电子邮件**" 中免除 Outlook 邮件, 必须具有标签。 [详细信息](client-admin-guide-customizations.md#exempt-outlook-messages-from-mandatory-labeling)
+
+- 新的高级客户端设置, 用于进一步自定义在 Outlook 中实现弹出消息的设置, 警告、调整或阻止发送电子邮件。 使用这一新的高级设置, 你可以为不带附件的电子邮件设置不同的操作。 [详细信息](client-admin-guide-customizations.md#to-specify-a-different-action-for-email-messages-without-attachments)
+
+**修补程序**：
+
+- 使用文件资源管理器时, 右键单击以标记单独应用了保护的文件, 将保留该保护。 例如, 用户对文件应用了自定义权限。
+
+- 如果将具有为用户定义的权限配置的标签的电子邮件线程上的 "不转发" 选项替换为 "不转发", 则原始收件人仍可打开电子邮件。
+
+- 在下面的方案中, 用户将不再在标签工具提示中看到标签自动设置的标签:用户接收到一个受保护的电子邮件, 其中附加了未标记但自动保护的文档。 当发件人来自同一组织的用户打开文档时, 保护设置的相应标签将应用到该文档。
+
+- 运行[protect-rmsfile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 的最小[使用权限](../configure-usage-rights.md#usage-rights-and-descriptions)现在为**另存为、导出**(导出), 而不是**复制**(提取)。
+
 ## <a name="version-1482040"></a>版本1.48.204。0
 
 **发布日期**：04/16/2019
+
+支持, 02/15/2020
 
 此版本包括 RMS 客户端的 MSIPC 1.0.3592.627 版本。
 

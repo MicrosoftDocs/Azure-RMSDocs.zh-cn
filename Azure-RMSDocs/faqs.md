@@ -1,6 +1,6 @@
 ---
 title: Azure 信息保护的常见问题解答
-description: 一些常见问题有关 Azure 信息保护和它保护的服务，Azure Rights Management (Azure RMS)。
+description: 一些有关 Azure 信息保护及其保护服务的常见问题, Azure Rights Management (Azure RMS)。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
@@ -9,12 +9,14 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: abc19ff1ebc21c143f773d09c0585aa9058e4f09
-ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
+search.appverid:
+- MET150
+ms.openlocfilehash: 2390dd77917c779501b847b9ac6c534c468b82e4
+ms.sourcegitcommit: e730f897452fcb0ca1003c6b86f6e65678d0ec57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67520584"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885530"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -38,45 +40,45 @@ ms.locfileid: "67520584"
 
 最初，Office 365 还只有[保留标签](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，用于在文档和电子邮件处于 Office 365 服务中时，对该内容进行分类以供审核和保留。 相比之下，通过 Azure 信息保护标记，可对文档和电子邮件应用一致分类和保护策略，无论它们在本地还是在云中。
 
-除了以下其中一个管理中心的保留标签外，现在还可以选择创建和配置[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)的选项，该选项是在奥兰多的 Microsoft Ignite 2018 大会上推出的：Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。 你可以迁移现有 Azure 信息保护标签到新的统一标记存储，要用作与 Office 365 的敏感度标签。 
+除了以下其中一个管理中心的保留标签外，现在还可以选择创建和配置[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)的选项，该选项是在奥兰多的 Microsoft Ignite 2018 大会上推出的：Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。 可以将现有的 Azure 信息保护标签迁移到新的统一标签存储, 以用作 Office 365 的敏感度标签。 
 
 有关统一标记管理以及如何支持这些标记的详细信息，请阅读博客文章[宣布推出信息保护功能以帮助保护你的敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
 
 有关迁移现有标签的详细信息，请参阅[如何将 Azure 信息保护标签迁移到 Office 365](configure-policy-migrate-labels.md)。
 
-## <a name="whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护客户端和 Azure 信息保护之间的区别是什么的统一标记的客户端？
+## <a name="whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护客户端与 Azure 信息保护统一标签客户端之间有何区别？
 
-**Azure 信息保护客户端 （经典）** 以来已经过了可用于进行分类和保护文件和电子邮件的新服务作为首次发布 Azure 信息保护。 此客户端从 Azure 中，下载标签和策略设置，并配置从 Azure 门户的 Azure 信息保护策略。 有关详细信息，请参阅[Azure 信息保护策略的概述](overview-policy.md)。 
+**Azure 信息保护客户端 (经典)** 现已发布, 因为 Azure 信息保护最初宣布成为一种新服务, 用于分类和保护文件和电子邮件。 此客户端从 Azure 下载标签和策略设置, 并从 Azure 门户配置 Azure 信息保护策略。 有关详细信息, 请参阅[Azure 信息保护策略概述](overview-policy.md)。 
 
-**Azure 信息保护统一标记的客户端**是较新的添加，以支持统一标记存储多个应用程序和服务支持。 此客户端将从以下管理员中心下载敏感度标签和策略设置：Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心。 有关详细信息，请参阅[概述的敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)。
+**Azure 信息保护统一标签客户端**是一项最新补充, 支持多个应用程序和服务支持的统一标签存储。 此客户端从以下管理中心下载敏感性标签和策略设置:Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心。 有关详细信息, 请参阅[敏感度标签概述](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)。
 
-如果不确定使用哪种客户端，请参阅[选择使用哪个 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use)。
+如果你不确定要使用的客户端, 请参阅[选择要使用的 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use)。
 
-### <a name="identify-which-client-you-have-installed"></a>确定已安装的客户端
+### <a name="identify-which-client-you-have-installed"></a>识别已安装的客户端
 
-这两个客户端时安装它们，显示**Azure 信息保护**。 若要帮助您识别已安装的客户端，请使用**帮助和反馈**选项来打开**Microsoft Azure 信息保护**对话框：
+安装两个客户端时, 将显示**Azure 信息保护**。 若要帮助你确定已安装的客户端, 请使用 "**帮助和反馈**" 选项打开 " **Microsoft Azure 信息保护**" 对话框:
 
 - 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”   。
 
-- 从 Office 应用程序：从**保护**按钮 （经典的客户端） 或**敏感度**按钮 （统一标记的客户端），选择**帮助和反馈**。
+- 从 Office 应用程序:从 "**保护**" 按钮 (经典客户端) 或 "**敏感度**" 按钮 (统一标签客户端) 中, 选择 "**帮助和反馈**"。
 
-使用**版本**显示标识客户端编号：
+使用显示的**版本号**来识别客户端:
 
-- 版本**1**，例如**1.48.204.0**，标识 Azure 信息保护客户端 （经典）。
+- 版本**1**(例如, **1.48.204.0**) 标识 Azure 信息保护客户端 (经典)。
 
-- 版本**2**，例如**2.0.778.0**，标识 Azure 信息保护统一标记客户端。
+- 版本**2**(例如, **2.0.778.0**) 标识 Azure 信息保护统一标签客户端。
 
 ## <a name="when-is-the-right-time-to-migrate-my-labels-to-office-365"></a>何时将我的标签迁移到 Office 365？
 
-现在，用于迁移在 Azure 门户中的标签的选项为公开发行版本，我们建议，以便您可以将标签用作敏感度标签激活迁移[客户端和服务支持统一标记](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling).
+现在, 在 Azure 门户中迁移标签的选项现已正式发布, 因此建议激活迁移, 以便可以将标签用作[支持统一标签的客户端和服务的](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)敏感度标签。
 
-有关详细信息和说明，请参阅[如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签](configure-policy-migrate-labels.md)。
+有关详细信息和说明, 请参阅[如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签](configure-policy-migrate-labels.md)。
 
 ## <a name="after-ive-migrated-my-labels-which-management-portal-do-i-use"></a>迁移我的标签后，该使用哪个管理门户？
 
 在 Azure 门户中迁移标签后：
 
-- 如果有[统一客户端和服务设置标签](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)，请转到的管理中心 （Office 365 安全和符合性中心、 Microsoft 365 安全中心或 Microsoft 365 合规性中心） 发布这些标签，并为配置策略设置。 为了进行标签更改，请使用以下其中一个管理中心。 统一标签客户端从这些管理中心下载标签和策略设置。
+- 如果你具有[统一的客户端和服务标签](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling), 请前往某个管理中心 (Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心) 来发布这些标签, 并配置其策略设置。 为了进行标签更改，请使用以下其中一个管理中心。 统一标签客户端从这些管理中心下载标签和策略设置。
 
 - 如果拥有 [Azure 信息保护客户端](./rms-client/aip-client.md)，请继续使用 Azure 门户编辑标签和策略设置。 Azure 信息保护客户端继续从 Azure 下载标签和策略设置。
 
@@ -88,7 +90,7 @@ ms.locfileid: "67520584"
 
 Azure 信息保护对组织的文档和电子邮件进行分类、标记和保护。 该保护技术使用 Azure Rights Management 服务；现在该服务是 Azure 信息保护的一个组件。
 
-## <a name="whats-the-role-of-identity-management-for-azure-information-protection"></a>Azure 信息保护的身份管理的角色是什么？
+## <a name="whats-the-role-of-identity-management-for-azure-information-protection"></a>Azure 信息保护的身份管理的作用是什么？
 
 用户必须具有有效的用户名和密码才能访问受 Azure 信息保护保护的内容。 要详细了解 Azure 信息保护如何帮助保护数据，请参阅 [Azure 信息保护在保护数据方面的角色](/enterprise-mobility-security/solutions/azure-information-protection-securing-data)。 
 
@@ -110,34 +112,34 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 很显然，Office 365 租户或 Azure AD 租户的全局管理员可以运行 Azure 信息保护的所有管理任务。 但是，如果想要将管理权限分配给其他用户，可以使用以下选项：
 
-- **Azure 信息保护管理员**:此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护，但不是其他服务。 具有此角色的管理员可以激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置 Azure 信息保护策略。 此外，具有此角色的管理员可以运行的所有 PowerShell cmdlet [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)来回[AIPService 模块](administer-powershell.md)。 但是，此角色不支持跟踪和撤销文档的用户。
+- **Azure 信息保护管理员**:此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护, 但不能配置其他服务。 具有此角色的管理员可以激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置 Azure 信息保护策略。 此外, 具有此角色的管理员可以运行[Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)和[AIPService 模块](administer-powershell.md)的所有 PowerShell cmdlet。 但是, 此角色不支持跟踪和撤消用户的文档。
     
     > [!NOTE]
     > [将租户迁移到统一标记存储](configure-policy-migrate-labels.md)后，Azure 门户将不再支持此角色。
     
     若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。
 
-- **合规性管理员**或**符合性数据管理器**:管理员角色允许管理员配置 Azure 信息保护，包括这些 Azure Active Directory 激活和停用 Azure Rights Management 保护服务，配置保护设置和标签，并配置Azure 信息保护策略。 此外，具有其中一种角色的管理员可以运行的所有 PowerShell cmdlet [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)来回[AIPService 模块](administer-powershell.md)。 但是，这些角色不支持跟踪和撤销文档的用户。
+- **合规性管理员**或**符合性数据管理员**:这些 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护, 其中包括激活和停用 Azure Rights Management 保护服务、配置保护设置和标签, 以及配置Azure 信息保护策略。 此外, 具有上述任一角色的管理员可以运行[Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)和[AIPService 模块](administer-powershell.md)的所有 PowerShell cmdlet。 但是, 这些角色不支持跟踪和撤消用户的文档。
     
-    若要将用户分配到其中一种管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。 若要查看拥有的与这些角色的用户的其他权限，请参阅[可用的角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)Azure Active Directory 文档中的部分。
+    若要将用户分配到其中一个管理角色, 请参阅[在 Azure Active Directory 中将用户分配到管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。 若要查看具有这些角色的用户具有哪些其他权限, 请参阅 Azure Active Directory 文档中的 "[可用角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)" 部分。
 
 - **安全读取者**：仅适用于 [Azure 信息保护分析](reports-aip.md)。 此 Azure Active Directory 管理员角色允许管理员查看标签的使用方式，监视用户对标记文档和电子邮件的访问权限以及对其分类所做的任何更改，并且可以识别包含必须受到保护的敏感信息的文档。 由于此功能使用 Azure Log Analytics，因此用户还必须具有支持的 [RBAC 角色](reports-aip.md#permissions-required-for-azure-information-protection-analytics)。
 
-- **安全管理员**：此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护在 Azure 门户中，除了配置其他 Azure 服务的某些方面。 具有此角色的管理员不能运行的任何[AIPService 模块中的 PowerShell cmdlet](administer-powershell.md)，或跟踪和撤销文档的用户。
+- **安全管理员**：此 Azure Active Directory 管理员角色允许管理员配置 Azure 门户中的 Azure 信息保护, 以及配置其他 Azure 服务的某些方面。 具有此角色的管理员不能[从 AIPService 模块运行任何 PowerShell cmdlet](administer-powershell.md), 也不能为用户跟踪和撤销文档。
     
     若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。 若要查看具有此角色的用户还拥有哪些其他权限，请参阅 Azure Active Directory 文档的[可用角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)部分。
 
-- Azure Rights Management 全局管理员和连接器管理员   ：对于这些 Azure Rights Management 管理员角色，第一个可授予用户权限来运行所有[AIPService 模块中的 PowerShell cmdlet](administer-powershell.md)而无需使其成为其他云服务和第二个的全局管理员角色授予权限以仅运行 Rights Management (RMS) 连接器。 这种管理角色授予对管理控制台或跟踪和撤消文档的用户的权限。
+- Azure Rights Management 全局管理员和连接器管理员   ：对于这些 Azure Rights Management 管理员角色, 第一种方法是授予用户[从 AIPService 模块运行所有 PowerShell cmdlet](administer-powershell.md)的权限, 而无需使其成为其他云服务的全局管理员, 并且第二个角色授予仅运行 Rights Management (RMS) 连接器的权限。 这两个管理角色都不会向管理控制台授予权限, 也不会为用户跟踪和撤消文档。
     
-    若要将其中一种管理角色分配，请使用 AIPService PowerShell cmdlet[添加 AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator)。
+    若要分配其中任一管理角色, 请使用 AIPService PowerShell cmdlet [AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator)。
 
 需要注意的事项：
 
 - 如果配置了[加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，此配置不会影响管理 Azure 信息保护的能力（RMS 连接器除外）。 例如，如果配置了加入控制，以致仅允许“IT 部门”组保护内容，那么，用于安装和配置 RMS 连接器的帐户必须是该组的成员。 
 
-- 分配了管理角色的用户无法从受 Azure 信息保护保护的文档或电子邮件中自动删除保护。 只有在启用了超级用户功能的情况下，分配为超级用户的用户才能执行此操作。 但是，你将管理权限分配给 Azure 信息保护的任何用户可以将用户分配为超级用户，包括其自己的帐户。 他们还可以启用超级用户功能。 这些操作记录在管理员日志中。 有关详细信息，请参阅最佳实践部分中的安全性[为 Azure 信息保护和发现服务或数据恢复配置超级用户](configure-super-users.md)。 
+- 分配了管理角色的用户无法从受 Azure 信息保护保护的文档或电子邮件中自动删除保护。 只有在启用了超级用户功能的情况下，分配为超级用户的用户才能执行此操作。 但是，你将管理权限分配给 Azure 信息保护的任何用户可以将用户分配为超级用户，包括其自己的帐户。 他们还可以启用超级用户功能。 这些操作记录在管理员日志中。 有关详细信息, 请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](configure-super-users.md)中的 "最佳安全做法" 部分。 
 
-- 如果你要迁移到统一的标记存储 Azure 信息保护标签，请务必从标签迁移文档阅读以下部分：[有关管理角色的重要信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)。
+- 如果要将 Azure 信息保护标签迁移到统一的标签存储, 请务必参阅标签迁移文档中的以下部分:[有关管理角色的重要信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)。
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 
@@ -151,7 +153,7 @@ Azure Rights Management 服务根据需要自动生成并管理 XrML 证书，�
 
 Azure 信息保护可以分类和保护电子邮件和文档，无论它们是位于本地还是云中。 这些文档包括 Word 文档、Excel 电子表格，PowerPoint 演示文稿、PDF 文档、基于文本的文件和图像文件。 有关支持的文档类型的列表，请参阅管理员指南中的[支持文件类型](./rms-client/client-admin-guide-file-types.md)列表。
 
-Azure 信息保护不能进行分类和保护结构化的数据，例如数据库文件、 日历项、 Power BI 报表、 Yammer 帖子、 Sway 内容和 OneNote 笔记本。
+Azure 信息保护无法对结构化数据 (例如数据库文件、日历项、Power BI 报表、Yammer 帖子、Sway 内容和 OneNote 笔记本) 进行分类和保护。
 
 ## <a name="i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work"></a>我看到 Azure 信息保护被列为可用于条件访问的云应用 - 工作原理是什么？
 
@@ -163,7 +165,7 @@ Azure 信息保护不能进行分类和保护结构化的数据，例如数据�
 
 其他信息:
 
-- 对于 Windows 计算机：对于当前预览版本，[初始化用户环境](./how-does-it-work.md#initializing-the-user-environment)时会对 Azure 信息保护的条件访问策略进行评估（此过程也称为引导），之后每 30 天评估一次。
+- 对于 Windows 计算机:对于当前预览版本，[初始化用户环境](./how-does-it-work.md#initializing-the-user-environment)时会对 Azure 信息保护的条件访问策略进行评估（此过程也称为引导），之后每 30 天评估一次。
 
 - 建议对条件访问策略的评估频率进行微调。 可通过配置令牌生存期来执行此操作。 有关详细信息，请参阅 [Azure Active Directory 中的可配置令牌生存期](/azure/active-directory/active-directory-configurable-token-lifetimes)。
 

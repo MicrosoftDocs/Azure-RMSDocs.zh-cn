@@ -1,5 +1,5 @@
 ---
-title: Azure Rights Management 保护-AIP 概述
+title: Azure Rights Management 保护概述-AIP
 description: 介绍 Azure Rights Management (Azure RMS)，它是由 Azure 信息保护使用的保护技术。
 author: cabailey
 ms.author: cabailey
@@ -11,16 +11,18 @@ ms.service: information-protection
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 42e4f575b310b8cb802d982e25ad021cf2445e13
-ms.sourcegitcommit: 8532536b778a26b971dba89436772158869ab84d
+search.appverid:
+- MET150
+ms.openlocfilehash: 3e5f8b2cadc615e9c2e601ee083f0e9b99566631
+ms.sourcegitcommit: e730f897452fcb0ca1003c6b86f6e65678d0ec57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934930"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885610"
 ---
 # <a name="what-is-azure-rights-management"></a>什么是 Azure 权限管理？
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 
 Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](what-is-information-protection.md)使用的保护技术。
@@ -65,7 +67,7 @@ Azure Rights Management 支持以下安全性、符合性和法规要求：
 
 √ 使用符合业界标准的加密功能，支持 FIPS 140-2。 有关详细信息，请参阅 [Azure RMS 使用的加密控制：算法和密钥长度](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)信息。
 
-√ 支持 nCipher nShield 硬件安全模块 (HSM)，以将你的租户密钥存储在 Microsoft Azure 数据中心内。 Azure Rights Management 对北美、EMEA（欧洲、中东和非洲）和亚洲的数据中心使用单独的安全体系，因此，你的密钥只能在你所在的地区使用。
+√支持 nCipher nShield 硬件安全模块 (HSM), 以将你的租户密钥存储在 Microsoft Azure 数据中心。 Azure Rights Management 对北美、EMEA（欧洲、中东和非洲）和亚洲的数据中心使用单独的安全体系，因此，你的密钥只能在你所在的地区使用。
 
 √ 已针对以下项进行认证：
 
