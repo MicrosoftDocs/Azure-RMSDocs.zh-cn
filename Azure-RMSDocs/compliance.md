@@ -4,19 +4,19 @@ description: Azure 信息保护的支持信息，包括法律、符合性和 SLA
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 03/07/2019
+ms.date: 07/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 92f282a2cf785c82c87d3ffbe8b47317a1ca1956
-ms.sourcegitcommit: 383b1fa5e65255420d7ec6fbe2f9b17f4439e33e
+ms.openlocfilehash: 05c2c97bf5a46cb29c64bcd432de2043a5d33ad3
+ms.sourcegitcommit: 9d99385bab62478de6c00faae15d8b27f80239e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708844"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68229913"
 ---
 # <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Azure 信息保护的符合性和支持信息
 
@@ -32,7 +32,7 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 - 使用特定于客户的根密钥（使用 RSA 2048 位）保护所有用于 Azure 信息保护的加密密钥。 RSA 1024 位也支持向后兼容。 [详细信息](./how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)
 
-- 特定于客户的根项已由 Microsoft 管理或由 nCipher HSM 中的客户通过使用预配"[自带密钥](plan-implement-tenant-key.md)"(BYOK)。 Azure 信息保护还支持本地密钥的有限功能 - 使用“[保留自己的密钥](configure-adrms-restrictions.md)”(HYOK) 用于指示其不能使用基于云的密钥保护的要求影响的内容。
+- 特定于客户的根密钥由 Microsoft 管理或由 nCipher HSM 中的客户通过使用 "[自带密钥](plan-implement-tenant-key.md)" (BYOK) 进行设置。 Azure 信息保护还支持本地密钥的有限功能 - 使用“[保留自己的密钥](configure-adrms-restrictions.md)”(HYOK) 用于指示其不能使用基于云的密钥保护的要求影响的内容。
 
 - Azure 信息保护服务托管在全球各地的区域数据中心内。 Azure 信息保护密钥和策略始终保留在最初的部署区域中。
  
@@ -40,9 +40,9 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 ## <a name="legal-and-privacy"></a>法律和隐私
 
-- 对于 Microsoft Azure 协议信息：[Microsoft Azure 协议](https://azure.microsoft.com/support/legal/subscription-agreement/)
+- Microsoft Azure 协议信息:[Microsoft Azure 协议](https://azure.microsoft.com/support/legal/subscription-agreement/)
 
-- 有关 Microsoft Azure 隐私信息：[Microsoft Azure 隐私声明](https://azure.microsoft.com/support/legal/privacy-statement/)
+- 有关 Microsoft Azure 隐私信息:[Microsoft Azure 隐私声明](https://azure.microsoft.com/support/legal/privacy-statement/)
 
 ## <a name="security-compliance-and-auditing"></a>安全、合规性和审核
 
@@ -50,7 +50,7 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 - 对于 Azure 信息保护的外部认证：[Microsoft Azure 信任中心](https://azure.microsoft.com/support/trust-center/)
 
-- 对于 FIPS 140 信息：[FIPS 140 验证](https://technet.microsoft.com/library/security/cc750357.aspx)
+- 对于 FIPS 140 信息:[FIPS 140 验证](https://technet.microsoft.com/library/security/cc750357.aspx)
 
 若要详细了解保护技术如何工作的技术信息，请参阅 [Azure RMS 的工作原理](./how-does-it-work.md) 
 

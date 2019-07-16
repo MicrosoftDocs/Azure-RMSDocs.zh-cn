@@ -4,19 +4,19 @@ description: 此信息可帮助你在部署和配置 Azure 信息保护中的 Az
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/01/2019
+ms.date: 05/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8ab1872aaf42aa2e62d46873f892e93c2bc90927
-ms.sourcegitcommit: 6c6fda77e131e071c94c2a2fd7b27e4031266fa5
+ms.openlocfilehash: 9d579d6ad639445dbf6f52b8cd3245b01973adef
+ms.sourcegitcommit: 9d99385bab62478de6c00faae15d8b27f80239e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545038"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68229850"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
@@ -43,7 +43,7 @@ ms.locfileid: "67545038"
     
     如果用户拥有 Azure 信息保护客户端，支持人员可要求他们使用“帮助和反馈”选项，获取例如 Office 版本是否无法支持保护，以及当前登录的用户帐户等信息  。 还可使用此选项收集日志文件并重置客户端。 有关详细信息，请参阅管理员指南：[安装检查和故障排除](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)。
     
-    如果有人合法请求获取对受保护文档的完全访问权限，请确保支持人员可以按流程操作，使用 Azure Rights Management [超级用户功能](configure-super-users.md)请求获取此访问权限。 例如，法律部门或经理可能会在某员工离职后发出此类请求。
+    如果有合法请求对受保护文档拥有完全访问权限, 请确保技术支持使用 Azure 信息保护[超级用户功能](configure-super-users.md)来请求此访问权限。 例如，法律部门或经理可能会在某员工离职后发出此类请求。
     
     此外，用户可能会报告的一些典型问题分为以下几类：
     
@@ -55,7 +55,7 @@ ms.locfileid: "67545038"
         
     - 与保护或使用内容相关的问题 
         
-        确保用户获得了有关他们所用应用程序的相应说明，并使用 Azure 权限管理服务支持的应用程序和设备。 有关支持的应用程序和设备的详细信息，请参阅[Azure 信息保护要求](requirements.md)。
+        确保用户获得了有关他们所用应用程序的相应说明，并使用 Azure 权限管理服务支持的应用程序和设备。 有关支持的应用程序和设备的详细信息, 请参阅[Azure 信息保护的要求](requirements.md)。
         
         若要确认 Azure Active Directory 能否授权特定用户或组保护或使用受保护内容，请使用[准备用户和组以便使用 Azure 信息保护](prepare.md)中的验证检查。
         

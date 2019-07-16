@@ -4,7 +4,7 @@ description: 一些常见问题，帮助你使用适用于 iOS 和 Android 的 A
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/18/2019
+ms.date: 07/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7694cf898651eee45e64d2319e1527f07e5fa5de
-ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
+ms.openlocfilehash: 5419488303aa3f1c031c09660dd346cc4dc28b65
+ms.sourcegitcommit: 9d99385bab62478de6c00faae15d8b27f80239e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67156632"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68229828"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 
@@ -55,7 +55,7 @@ Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
 
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>登录此应用应使用什么凭据？
 
-如果你的组织已经具有本地 AD RMS（带有移动设备扩展名），或使用 Azure Rights Management 服务，则使用你的工作凭据进行登录。 
+如果你的组织已 AD RMS 本地 (使用移动设备扩展) 或使用 Azure 信息保护, 请使用工作凭据登录。 
 
 如果你的个人电子邮件地址用于保护该文件，则使用免费 [Microsoft 帐户](https://signup.live.com)的凭据进行登录。
 
@@ -69,7 +69,7 @@ Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
 
 可以打开 .rpmsg、.pdf、.ppdf、.pjpg、.pjpeg、.ptiff、.ppng、.ptxt、.pxml 以及几个其他的文本和图像文件格式。
 
-有关文本和图像文件扩展名的完整列表，请参阅管理员指南中[分类和保护的支持文件类型](client-admin-guide-file-types.md#supported-file-types-for-classification-and-protection)部分中的第一个表格。
+有关文本和图像文件扩展名的完整列表，请参阅管理员指南中[分类和保护的支持文件类型](clientv2-admin-guide-file-types.md#supported-file-types-for-classification-and-protection)部分中的第一个表格。
 
 ##  <a name="how-do-i-provide-feedback-about-this-app"></a>如何提供有关此应用的反馈？
 

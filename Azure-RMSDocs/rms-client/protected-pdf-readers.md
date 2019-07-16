@@ -11,12 +11,14 @@ ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
 ms.reviewer: kartikka
 ms.suite: ems
-ms.openlocfilehash: f971c261156c12dfec34fac7cd3ab1e7f7acded7
-ms.sourcegitcommit: 5ecf68d050152e0b425fa8cf6f3890951185b14a
+search.appverid:
+- MET150
+ms.openlocfilehash: fe186d53b4e4b95b8cb6dcf7b5751532e0021d2a
+ms.sourcegitcommit: e730f897452fcb0ca1003c6b86f6e65678d0ec57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050717"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885567"
 ---
 # <a name="supported-pdf-readers-for-microsoft-information-protection"></a>适用于 Microsoft 信息保护的受支持的 PDF 阅读器
 
@@ -42,8 +44,8 @@ Microsoft 和 Adobe 之间的协作使得你在处理经过分类和受保护（
 
 |操作系统|受支持的阅读器和下载链接|
 |----------------|-----------------------------------|
-|Windows 10 及以前版本<br />通过 Windows 7 Service Pack 1|Adobe Acrobat Reader（首选）：<br />- 1. 阅读 [Adobe 一般使用条款](https://www.adobe.com/legal/terms.html) <br />- 2. 安装 Adobe 读取器的 Windows 从[Adobe 站点](https://www.adobe.com/)<br />- 3. 安装[Adobe 插件](https://go.microsoft.com/fwlink/?linkid=2050049)的 Windows <br />- 4. 如果系统提示，请让管理员[对插件进行授权](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-integration-with/ba-p/298396) <br /><br /> Azure 信息保护查看器：[下载](https://go.microsoft.com/fwlink/?linkid=838993)<br /><br />Foxit Reader：[下载](https://www.foxitsoftware.com/pdf-reader/)|
-|macOS 版本 10.12 10.14 |Adobe Acrobat Reader:<br />- 1. 阅读 [Adobe 一般使用条款](https://www.adobe.com/legal/terms.html) <br />- 2. 用于从 Mac 安装 Adobe Reader [Adobe 站点](https://www.adobe.com/)<br />- 3. 安装[Adobe 插件](https://go.microsoft.com/fwlink/?linkid=2050049)for Mac <br />- 4. 如果系统提示，请让管理员[对插件进行授权](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-integration-with/ba-p/298396)|
+|Windows 10 及以前版本<br />通过 Windows 7 Service Pack 1|Adobe Acrobat Reader（首选）：<br />- 1. 阅读 [Adobe 一般使用条款](https://www.adobe.com/legal/terms.html) <br />- 2. 从[adobe 网站](https://www.adobe.com/)安装适用于 Windows 的 Adobe Reader<br />- 3. 安装适用于 Windows 的[Adobe 插件](https://go.microsoft.com/fwlink/?linkid=2050049) <br />- 4. 如果系统提示，请让管理员[对插件进行授权](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-integration-with/ba-p/298396) <br /><br /> Azure 信息保护查看器：[下载](https://go.microsoft.com/fwlink/?linkid=838993)<br /><br />Foxit Reader：[下载](https://www.foxitsoftware.com/pdf-reader/)|
+|macOS 版本 10.12-10.14 |Adobe Acrobat 读者:<br />- 1. 阅读 [Adobe 一般使用条款](https://www.adobe.com/legal/terms.html) <br />- 2. 从[adobe 网站](https://www.adobe.com/)安装适用于 Mac 的 adobe Reader<br />- 3. 安装适用于 Mac 的[Adobe 插件](https://go.microsoft.com/fwlink/?linkid=2050049) <br />- 4. 如果系统提示，请让管理员[对插件进行授权](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-integration-with/ba-p/298396)|
 |Android|Azure 信息保护应用：[下载](https://go.microsoft.com/fwlink/?LinkId=325340)|
 |iOS|Azure 信息保护应用：[下载](https://go.microsoft.com/fwlink/?LinkId=325338)|
 

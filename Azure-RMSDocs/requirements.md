@@ -4,19 +4,19 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 17b41c32b760e0bff2dcb430689fb8bbebacc22d
-ms.sourcegitcommit: a2542aec8cd2bf96e94923740bf396badff36b6a
+ms.openlocfilehash: e93b16976bfc6f6be88c015b582dbdb26531549c
+ms.sourcegitcommit: fdc1f3d76b48f4e865a538087d66ee69f0f9888d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67535167"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68141697"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -63,7 +63,7 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 用户必须拥有运行支持 Azure 信息保护的操作系统的客户端设备（计算机或移动设备）。
 
-以下设备支持 Azure 信息保护统一标记客户端与 Azure 信息保护客户端。 [两个客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)让用户分类并标记其文档和电子邮件：
+以下设备支持 Azure 信息保护统一标签客户端和 Azure 信息保护客户端。 [这两个客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)允许用户对其文档和电子邮件进行分类和标记:
 
 - Windows 10（x86、x64）
     
@@ -81,13 +81,13 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 - Windows Server 2008 R2 
 
-除了在物理计算机上安装客户端，您还可以安装它的虚拟机上。 检查虚拟桌面解决方案的软件供应商是否有可能需要运行的其他配置 Azure 信息保护统一标记客户端或 Azure 信息保护客户端。 例如，对于 Citrix 解决方案，您可能需要[禁用 Citrix 应用程序编程接口 (API) 挂钩](https://support.citrix.com/article/CTX107825)Office （winword.exe、 excel.exe、 outlook.exe、 powerpoint.exe） 和可执行文件的 Azure信息保护统一标记客户端或 Azure 信息保护客户端 （msip.app.exe，msip.viewer.exe）。
+除了在物理计算机上安装客户端, 你还可以将其安装在虚拟机上。 检查虚拟桌面解决方案的软件供应商是否具有运行 Azure 信息保护统一标签客户端或 Azure 信息保护客户端可能需要的其他配置。 例如, 对于 Citrix 解决方案, 你可能需要禁用适用于 Office 的[Citrix 应用程序编程接口 (API) 挂钩](https://support.citrix.com/article/CTX107825)(winword、excel.exe、xsd.exe、powerpoint) 以及 Azure 信息保护统一的可执行文件标识客户端或 Azure 信息保护客户端 (policy.msip, policy.msip)。
 
-对于列出的服务器版本中，远程桌面服务支持 Azure 信息保护客户端。 如果远程桌面服务中使用 Azure 信息保护客户端时，您可以删除用户配置文件，则不要删除 **%Appdata%\Microsoft\Protect**文件夹。
+对于列出的服务器版本, 远程桌面服务支持 Azure 信息保护客户端。 如果在远程桌面服务使用 Azure 信息保护客户端时删除用户配置文件, 请勿删除 **%Appdata%\Microsoft\Protect**文件夹。
 
-当 Azure 信息保护客户端通过使用 Azure Rights Management 服务保护的数据时，数据可供[相同的设备](requirements-client-devices.md)支持 Azure Rights Management 服务。
+当 Azure 信息保护客户端使用 Azure Rights Management 服务保护数据时, 数据可以由支持 Azure Rights Management 服务的[同一设备](requirements-client-devices.md)使用。
 
-Azure 信息保护客户端具有其各自的管理员指南中列出的其他先决条件：
+Azure 信息保护客户端具有各自的管理指南中列出的其他先决条件:
 
 - Azure 信息保护统一标签客户端：[必备条件](./rms-client/clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)
 
@@ -96,7 +96,7 @@ Azure 信息保护客户端具有其各自的管理员指南中列出的其他�
 
 ## <a name="applications"></a>应用程序
 
-Azure 信息保护客户端可以标记和使用 Office 应用程序保护文档和电子邮件**Word**， **Excel**， **PowerPoint**，以及**Outlook**以下 Office 版本中：
+Azure 信息保护客户端可以使用 Office 应用程序的**Word**、 **Excel**、 **PowerPoint**和**Outlook**来标记并保护文档和电子邮件, 方法如下:
 
 - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证
 
@@ -112,7 +112,7 @@ Azure 信息保护客户端可以标记和使用 Office 应用程序保护文档
 
 Office 的其他版本无法通过使用 Rights Management 服务保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护分类。 因此，Azure 信息保护栏或 Office 功能区的“保护”按钮中不会向用户显示应用保护的标签  。 
 
-Azure 信息保护客户端在同一台计算机上不支持多个 Office 版本。 这些客户端也不支持用户帐户之间切换在 Office 中。
+Azure 信息保护客户端不支持在同一台计算机上有多个版本的 Office。 这些客户端也不支持在 Office 中切换用户帐户。
 
 有关支持保护服务的 Office 版本的信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。
 
@@ -121,6 +121,8 @@ Azure 信息保护客户端在同一台计算机上不支持多个 Office 版本
 如果你有防火墙或配置为允许特定连接的类似中间网络设备，网络连接要求包含在 Office 文章 [Office 365 URL 和 IP 地址范围](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)中。 请参阅“Microsoft 365 Common 和 Office Online”  部分。
 
 除了 Office 文章中特定于 Azure 信息保护的信息外：
+
+- 对于用于下载标签和标签策略的统一标签客户端:允许通过 HTTPS 的 URL * **. protection.outlook.com** 。
 
 - 如果使用要求进行身份验证的 Web 代理，必须将其配置为将集成 Windows 身份验证与用户的 Active Directory 登录凭据配合使用。
 

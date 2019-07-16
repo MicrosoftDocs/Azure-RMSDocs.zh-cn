@@ -4,19 +4,19 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/04/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 13bc0ab4df8c07905149cfa6ef8417543415f4d2
-ms.sourcegitcommit: 849c493cef6b2578945c528f4e17373a2ef26287
+ms.openlocfilehash: 3dfc29a45425bbe811093874f22972a6a53b6283
+ms.sourcegitcommit: fdc1f3d76b48f4e865a538087d66ee69f0f9888d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67563436"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68141711"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -49,7 +49,8 @@ ms.locfileid: "67563436"
 |Setting|应用场景和说明|
 |----------------|---------------|
 |DisableDNF|[在 Outlook 中隐藏或显示“不转发”按钮](#hide-or-show-the-do-not-forward-button-in-outlook)|
-|CompareSubLabelsInAttachmentAction|[启用子标签的排序支持](#enable-order-support-for-sublabels-on-attachments)
+|DisableMandatoryInOutlook|[使 Outlook 邮件免于强制标记](#exempt-outlook-messages-from-mandatory-labeling)|
+|CompareSubLabelsInAttachmentAction|[启用子标签的排序支持](#enable-order-support-for-sublabels-on-attachments) 
 |ContentExtractionTimeout|[更改扫描程序的超时设置](#change-the-timeout-settings-for-the-scanner)
 |EnableBarHiding|[永久隐藏 Azure 信息保护栏](#permanently-hide-the-azure-information-protection-bar)|
 |EnableCustomPermissions|[设置用户是否能够使用自定义权限选项](#make-the-custom-permissions-options-available-or-unavailable-to-users)|
@@ -67,6 +68,7 @@ ms.locfileid: "67563436"
 |OutlookJustifyUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookRecommendationEnabled|[在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)|
 |OutlookOverrideUnlabeledCollaborationExtensions|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
+|OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookWarnTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookWarnUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |PostponeMandatoryBeforeSave|[使用强制标签时，删除文档的“以后再说”](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
@@ -74,7 +76,7 @@ ms.locfileid: "67563436"
 |PullPolicy|[对已断开连接计算机的支持](#support-for-disconnected-computers)
 |RemoveExternalContentMarkingInApp|[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)|
 |ReportAnIssueLink|[为用户添加“报告问题”](#add-report-an-issue-for-users)|
-|RunAuditInformationTypeDiscovery|[禁用将在文档中发现的敏感信息发送到 Azure 信息保护 analytics](#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)|
+|RunAuditInformationTypeDiscovery|[禁止将文档中发现的敏感信息发送到 Azure 信息保护分析](#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)|
 |RunPolicyInBackground|[开启在后台持续运行的分类](#turn-on-classification-to-run-continuously-in-the-background)|
 |ScannerConcurrencyLevel|[限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner)|
 |SyncPropertyName|[使用现有自定义属性标记 Office 文档](#label-an-office-document-by-using-an-existing-custom-property)|
@@ -137,9 +139,9 @@ ms.locfileid: "67563436"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 密钥：**ReportAnIssueLink**
+- 键:**ReportAnIssueLink**
 
-- Value： **\<HTTP string>**
+- 值： **\<HTTP string>**
 
 网站示例值：`https://support.contoso.com`
 
@@ -163,9 +165,9 @@ ms.locfileid: "67563436"
     
     1. 输入以下字符串：
     
-        - 密钥：**PullPolicy**
+        - 键:**PullPolicy**
         
-        - Value：**False**
+        - 值：**False**
     
     2. 下载包含此设置的策略，并按照随附的说明操作，将它安装在计算机上。
 
@@ -193,7 +195,7 @@ ms.locfileid: "67563436"
     
 2. 将已标识的文件重命名为 Policy.msip  ，再将它复制到已安装 Azure 信息保护客户端的计算机上的 %LocalAppData%\Microsoft\MSIP  文件夹。 
 
-如果您已断开连接的计算机正在运行的 Azure 信息保护扫描程序的当前 GA 版本，有必须执行其他配置步骤。 有关详细信息，请参阅扫描程序部署说明中的[限制：扫描程序服务器不能连接到 Internet](../deploy-aip-scanner.md#restriction-the-scanner-server-cannot-have-internet-connectivity)。
+如果断开连接的计算机运行的是当前的 Azure 信息保护扫描程序 GA 版本, 则需要执行其他配置步骤。 有关详细信息，请参阅扫描程序部署说明中的[限制：扫描程序服务器不能连接到 Internet](../deploy-aip-scanner.md#restriction-the-scanner-server-cannot-have-internet-connectivity)。
 
 ## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>在 Outlook 中隐藏或显示“不转发”按钮
 
@@ -203,9 +205,9 @@ ms.locfileid: "67563436"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 密钥：**DisableDNF**
+- 键:**DisableDNF**
 
-- Value：如果为 True 将隐藏按钮，如果为 False 将显示按钮  
+- 值：如果为 True 将隐藏按钮，如果为 False 将显示按钮  
 
 ## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>设置用户是否能够使用自定义权限选项
 
@@ -215,9 +217,9 @@ ms.locfileid: "67563436"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 密钥：**EnableCustomPermissions**
+- 键:**EnableCustomPermissions**
 
-- Value：结果为 True 将使自定义权限选项可用，结果为 False 将隐藏此选项  
+- 值：结果为 True 将使自定义权限选项可用，结果为 False 将隐藏此选项  
 
 ## <a name="for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer"></a>对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限
 
@@ -229,9 +231,9 @@ ms.locfileid: "67563436"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 密钥：**EnableCustomPermissionsForCustomProtectedFiles**
+- 键:**EnableCustomPermissionsForCustomProtectedFiles**
 
-- Value：**True**
+- 值：**True**
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>永久隐藏 Azure 信息保护栏
 
@@ -245,9 +247,9 @@ ms.locfileid: "67563436"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 密钥：**EnableBarHiding**
+- 键:**EnableBarHiding**
 
-- Value：**True**
+- 值：**True**
 
 ## <a name="enable-order-support-for-sublabels-on-attachments"></a>启用附件子标签的排序支持
 
@@ -259,13 +261,25 @@ ms.locfileid: "67563436"
 
 配置以下字符串：
 
-- 密钥：**CompareSubLabelsInAttachmentAction**
+- 键:**CompareSubLabelsInAttachmentAction**
 
-- Value：**True**
+- 值：**True**
 
 如果不进行此设置，则从具有最高分类的父标签找到的第一个标签将应用于电子邮件。 
 
 如果进行此设置，则具有最高分类的父标签中排在最后的子标签将应用于电子邮件。 如果需要对标签重新排序，以便为此方案应用所需的标签，请参阅[如何删除或重排 Azure 信息保护的标签](../configure-policy-delete-reorder.md)。
+
+## <a name="exempt-outlook-messages-from-mandatory-labeling"></a>使 Outlook 邮件免于强制标记
+
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+
+默认情况下, 当你启用 "**所有文档和电子邮件都必须具有标签**" 的[策略设置](../configure-policy-settings.md)时, 所有已保存的文档和已发送的电子邮件都必须应用标签。 配置以下高级设置时, 策略设置仅适用于 Office 文档, 而不适用于 Outlook 邮件。
+
+若要配置此高级设置，请输入以下字符串：
+
+- 键:**DisableMandatoryInOutlook**
+
+- 值：**True**
 
 ## <a name="enable-recommended-classification-in-outlook"></a>在 Outlook 中启用建议的分类
 
@@ -275,9 +289,10 @@ ms.locfileid: "67563436"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 密钥：**OutlookRecommendationEnabled**
+- 键:**OutlookRecommendationEnabled**
 
-- Value：**True**
+- 值：**True**
+
 
 ## <a name="implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent"></a>在 Outlook 中实施弹出消息，警告、证明或阻止发送电子邮件
 
@@ -320,7 +335,7 @@ User Justification: My manager approved sharing of this content
 Action Source: 
 User Response: Confirmed
 ```
-以下各节包含的每个高级客户端设置和配置说明和可以为自己使用的操作中看到它们[教程：配置 Azure 信息保护来控制的信息使用 Outlook oversharing](../infoprotect-oversharing-tutorial.md)。
+以下各节包含每个高级客户端设置的配置说明, 你可以通过[教程查看这些配置说明:使用 Outlook](../infoprotect-oversharing-tutorial.md)配置 Azure 信息保护以控制 oversharing 的信息。
 
 ### <a name="to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels"></a>若要针对特定标签实现用于警告、验证或阻止的弹出消息：
 
@@ -333,19 +348,19 @@ User Response: Confirmed
 
 - 警告消息：
     
-    - 密钥：**OutlookWarnUntrustedCollaborationLabel**
+    - 键:**OutlookWarnUntrustedCollaborationLabel**
     
     - 值：\<标签 ID，以逗号分隔> 
 
 - 对齐消息：
     
-    - 密钥：**OutlookJustifyUntrustedCollaborationLabel**
+    - 键:**OutlookJustifyUntrustedCollaborationLabel**
     
     - 值：\<标签 ID，以逗号分隔> 
 
 - 阻止邮件：
     
-    - 密钥：**OutlookBlockUntrustedCollaborationLabel**
+    - 键:**OutlookBlockUntrustedCollaborationLabel**
     
     - 值：\<标签 ID，以逗号分隔> 
 
@@ -356,71 +371,104 @@ User Response: Confirmed
 
 - 警告消息：
     
-    - 密钥：**OutlookUnlabeledCollaborationAction**
+    - 键:**OutlookUnlabeledCollaborationAction**
     
-    - Value：**警告**
+    - 值：**警告**
 
 - 对齐消息：
     
-    - 密钥：**OutlookUnlabeledCollaborationAction**
+    - 键:**OutlookUnlabeledCollaborationAction**
     
-    - Value：**两端对齐**
+    - 值：**两端对齐**
 
 - 阻止邮件：
     
-    - 密钥：**OutlookUnlabeledCollaborationAction**
+    - 键:**OutlookUnlabeledCollaborationAction**
     
-    - Value：**阻止**
+    - 值：**阻止**
 
 - 关闭这些消息：
     
-    - 密钥：**OutlookUnlabeledCollaborationAction**
+    - 键:**OutlookUnlabeledCollaborationAction**
     
-    - Value：**Off**
+    - 值：**Off**
 
-#### <a name="to-define-specific-file-name-extensions-for-the-warn-justify-or-block-pop-up-messages-for-email-attachments-that-dont-have-a-label"></a>若要定义特定文件扩展名为，则发出警告，对齐，或阻止不具有标签的电子邮件附件的弹出消息
+#### <a name="to-define-specific-file-name-extensions-for-the-warn-justify-or-block-pop-up-messages-for-email-attachments-that-dont-have-a-label"></a>为不带标签的电子邮件附件定义 "警告"、"对齐" 或 "阻止" 弹出消息的特定文件扩展名
 
-默认情况下，则发出警告，两端对齐，或阻止弹出消息适用于所有 Office 文档和 PDF 文档。 文件扩展名应显示，则发出警告，对齐，或阻止使用其他高级客户端属性和一列以逗号分隔的文件扩展名的消息，您可以通过指定优化此列表。
+默认情况下, "警告"、"对齐" 或 "阻止" 弹出消息适用于所有 Office 文档和 PDF 文档。 您可以通过指定哪些文件扩展名应显示警告、调整或阻止具有其他高级客户端属性的消息和以逗号分隔的文件扩展名列表, 来优化此列表。
 
-多个文件扩展名将定义为一个以逗号分隔字符串的示例值： `.XLSX,.XLSM,.XLS,.XLTX,.XLTM,.DOCX,.DOCM,.DOC,.DOCX,.DOCM,.PPTX,.PPTM,.PPT,.PPTX,.PPTM`
+要定义为逗号分隔字符串的多个文件扩展名的示例值:`.XLSX,.XLSM,.XLS,.XLTX,.XLTM,.DOCX,.DOCM,.DOC,.DOCX,.DOCM,.PPTX,.PPTM,.PPT,.PPTX,.PPTM`
 
-在此示例中，不会导致未标记的 PDF 文档中，则发出警告，对齐，或阻止弹出消息。
+在此示例中, 未标记的 PDF 文档不会导致警告、对齐或阻止弹出消息。
 
 
-- 密钥：**OutlookOverrideUnlabeledCollaborationExtensions**
+- 键:**OutlookOverrideUnlabeledCollaborationExtensions**
 
 - 值： **\<** 文件扩展名以显示消息，以逗号分隔 **>**
 
+#### <a name="to-specify-a-different-action-for-email-messages-without-attachments"></a>为不带附件的电子邮件指定其他操作
+
+默认情况下, 你为 OutlookUnlabeledCollaborationAction 指定的值将应用于不带标签的电子邮件或附件。 可以通过为不带附件的电子邮件指定另一高级客户端设置来优化此配置。
+
+使用以下值之一创建高级客户端设置：
+
+- 警告消息：
+    
+    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    
+    - 值：**警告**
+
+- 对齐消息：
+    
+    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    
+    - 值：**两端对齐**
+
+- 阻止邮件：
+    
+    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    
+    - 值：**阻止**
+
+- 关闭这些消息：
+    
+    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    
+    - 值：**Off**
+
+如果未指定此客户端设置, 则为 OutlookUnlabeledCollaborationAction 指定的值将用于没有附件的未标记电子邮件以及带有附件的未标记电子邮件。
 
 ### <a name="to-specify-the-allowed-domain-names-for-recipients-exempt-from-the-pop-up-messages"></a>为收件人指定允许的域名，免除弹出消息
 
-当其他高级客户端设置中指定的域名时，用户看不弹出消息用于设置其电子邮件地址中包含该域名的收件人。 在这种情况下，发送电子邮件时不会受消息干扰。 若要指定多个域，将其添加为单个字符串，以逗号分隔。
+当你在其他高级客户端设置中指定域名时, 用户不会看到其电子邮件地址中包含该域名的收件人的弹出消息。 在这种情况下，发送电子邮件时不会受消息干扰。 若要指定多个域，将其添加为单个字符串，以逗号分隔。
 
 典型配置是仅针对组织外部的收件人或并非组织授权合作伙伴的收件人显示弹出消息。 在这种情况下，可以指定组织和合作伙伴使用的所有电子邮件域。
 
-创建以下高级客户端设置和值，指定一个或多个域，每个由逗号分隔。
+创建以下高级客户端设置, 为该值指定一个或多个域, 每个域都由逗号分隔。
 
 多个域的示例值，以逗号分隔的字符串表示：`contoso.com,fabrikam.com,litware.com`
 
 - 警告消息：
     
-    - 密钥：**OutlookWarnTrustedDomains**
+    - 键:**OutlookWarnTrustedDomains**
     
     - 值：\<域名，以逗号分隔>  
 
 - 对齐消息：
     
-    - 密钥：**OutlookJustifyTrustedDomains**
+    - 键:**OutlookJustifyTrustedDomains**
     
     - 值：\<域名，以逗号分隔>  
 
 - 阻止邮件：
     
-    - 密钥：**OutlookBlockTrustedDomains**
+    - 键:**OutlookBlockTrustedDomains**
     
     - 值：\<域名，以逗号分隔>  
 
-例如，永远不会阻止发送到具有 contoso.com 电子邮件地址的用户的电子邮件，可以指定高级客户端设置**OutlookBlockTrustedDomains**并**contoso.com**。 因此，用户看不在 Outlook 中的警告弹出消息在发送电子邮件至john@sales.contoso.com。
+例如, 若要从不阻止发送给具有 contoso.com 电子邮件地址的用户的电子邮件, 请指定**OutlookBlockTrustedDomains**和**contoso.com**的高级客户端设置。 因此, 当用户向发送电子邮件john@sales.contoso.com时, 用户看不到 Outlook 中的警告弹出消息。
+
+
 
 ## <a name="set-a-different-default-label-for-outlook"></a>为 Outlook 设置不同的默认标签
 
@@ -434,7 +482,7 @@ User Response: Confirmed
 
 若要配置此高级设置，请输入以下字符串：
 
-- 密钥：**OutlookDefaultLabel**
+- 键:**OutlookDefaultLabel**
 
 - 值：\<label ID> 或 None  
 
@@ -488,9 +536,9 @@ dcf781ba-727f-4860-b3c1-73479e31912b  的标签 ID 示例值：
 
 若要配置此高级设置，请输入以下字符串：
 
-- 密钥：**PostponeMandatoryBeforeSave**
+- 键:**PostponeMandatoryBeforeSave**
 
-- Value：**False**
+- 值：**False**
 
 ## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>开启在后台持续运行的分类
 
@@ -508,9 +556,9 @@ dcf781ba-727f-4860-b3c1-73479e31912b  的标签 ID 示例值：
 
 若要配置此高级设置，请输入以下字符串：
 
-- 密钥：**RunPolicyInBackground**
+- 键:**RunPolicyInBackground**
 
-- Value：**True**
+- 值：**True**
 
 ## <a name="dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>不使用 PDF 加密 ISO 标准来保护 PDF 文件
 
@@ -520,9 +568,9 @@ dcf781ba-727f-4860-b3c1-73479e31912b  的标签 ID 示例值：
 
 如果需要客户端还原为使用 .ppdf 文件扩展名保护 PDF 文件的早期客户端版本行为，请通过输入以下字符串来使用以下高级设置：
 
-- 密钥：**EnablePDFv2Protection**
+- 键:**EnablePDFv2Protection**
 
-- Value：**False**
+- 值：**False**
 
 例如，如果使用不支持 PDF 加密 ISO 标准的 PDF 阅读器，则可能需要为所有用户配置此设置。 或者，在逐步采用支持新格式的 PDF 阅读器中的更改时，可能需要为部分用户配置此设置。 如果需要向已签名的 PDF 文档添加保护，则也可能使用此设置。 已签名的 PDF 文档可能受到 .ppdf 格式的额外保护，因此该保护是作为文件的包装器实现的。 
 
@@ -550,7 +598,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
     
    - SubLabelId 的值（(GUID)，如果有）。  如果此值为空，表明未使用子标签，则改为记录 MainLabelId 的值。 
     
-     注意：如果也不存在 MainLabelId 的值，则未标记此文件。  在此情况下，可以使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) 命令和 [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile) 命令来代替步骤 3 和步骤 4 中的命令。
+     注意:如果也不存在 MainLabelId 的值，则未标记此文件。  在此情况下，可以使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) 命令和 [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile) 命令来代替步骤 3 和步骤 4 中的命令。
     
    - RMSTemplateId 的值。  如果此值为“受限访问”，则用户已使用自定义权限保护该文件，而非为此标签配置的保护设置。  若继续，该标签的保护设置将覆盖这些自定义权限。 决定是继续，还是要求用户（RMSIssuer 的显示值）删除此标签并将此标签和初始自定义权限一起重新应用  。
 
@@ -566,7 +614,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 ## <a name="support-for-files-protected-by-secure-islands"></a>支持受 Secure Islands 保护的文件
 
-此配置选项处于预览状态，可能会更改。
+此配置选项处于预览阶段, 可能会发生更改。
 
 如果使用 Secure Islands 保护文档，可能因这种保护产生受保护的文本和图片文件以及通常受保护的文件。 例如，文件扩展名为 .ptxt、.pjpeg 或 .pfile 的文件。 按如下方式编辑注册表时，Azure 信息保护可以解密这些文件：
 
@@ -681,9 +729,9 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 由于该模式匹配会影响用户的性能，建议你将 Office 应用程序类型（Word、Excel、PowerPoint）限制为仅需要在其中进行搜索的那些类型    ：
 
-- 密钥：**RemoveExternalContentMarkingInApp**
+- 键:**RemoveExternalContentMarkingInApp**
 
-- Value：\<Office 应用程序类型 WXP>  
+- 值：\<Office 应用程序类型 WXP>  
 
 例如：
 
@@ -714,7 +762,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 因为某些文档可能包括不可见字符或者不同类型的空格或制表符，可能检测不到指定的短语或句子的字符串。 只要有可能，指定单个易区分的单词作为值，并确保在生产环境中部署之前测试结果。
 
-- 密钥：**ExternalContentMarkingToRemove**
+- 键:**ExternalContentMarkingToRemove**
 
 - 值：\<要匹配的字符串，定义为正则表达式>  
 
@@ -752,17 +800,17 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 例如：形状名称是 fc  。 若要删除具有此名称的形状，则指定值：`fc`。
 
-- 密钥：**PowerPointShapeNameToRemove**
+- 键:**PowerPointShapeNameToRemove**
 
-- Value：\<PowerPoint 形状名称>  
+- 值：\<PowerPoint 形状名称>  
 
 若要删除多个 PowerPoint 形状，则有多少要删除的形状就创建多少个 PowerPointShapeNameToRemove  键。 对于每个条目，指定要删除的形状的名称。
 
 默认情况下，只检查主幻灯片的页眉和页脚。 若要将检查范围扩展到所有幻灯片，将占用大量资源，则可以使用 RemoveExternalContentMarkingInAllSlides  附加高级客户端设置：
 
-- 密钥：**RemoveExternalContentMarkingInAllSlides**
+- 键:**RemoveExternalContentMarkingInAllSlides**
 
-- Value：**True**
+- 值：**True**
 
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>使用现有自定义属性标记 Office 文档
 
@@ -795,25 +843,25 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 现在，当用户打开和保存这些 Office 文档之一时，文档标记为“公开”  、“常规”  或“高度机密\所有员工”  ，前提是 Azure 信息保护策略已包含有这些名称的标签。 如果没有带这些名称的标记，则不会标记文档。
 
-## <a name="disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics"></a>禁用将在文档中发现的敏感信息发送到 Azure 信息保护 analytics
+## <a name="disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics"></a>禁止将文档中发现的敏感信息发送到 Azure 信息保护分析
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
-[Azure 信息保护分析](../reports-aip.md)可以发现并报告该内容包含敏感信息时保存 Azure 信息保护客户端的文档。 默认情况下，此信息是 Azure 信息保护客户端发送 （经典） 到 Azure 信息保护 analytics。
+[Azure 信息保护分析](../reports-aip.md)可以发现和报告 Azure 信息保护客户端在内容包含敏感信息时保存的文档。 默认情况下, Azure 信息保护客户端 (经典) 将此信息发送到 Azure 信息保护分析。
 
-若要更改此行为以便经典的客户端不发送此信息，请输入以下字符串：
+若要更改此行为, 使经典客户端不发送此信息, 请输入以下字符串:
 
-- 密钥：RunAuditInformationTypeDiscovery 
+- 键:RunAuditInformationTypeDiscovery 
 
-- Value：**False**
+- 值：**False**
 
-如果设置此高级客户端设置、 审核结果仍将从经典的客户端发送，但信息仅限于 reporting 时用户已访问标记为内容。
+如果设置了此 "高级客户端" 设置, 则审核结果仍将从经典客户端发送, 但当用户访问标记内容时, 该信息将被限制为报表。
 
 例如：
 
-- 使用此设置，可以看到用户访问标记为 Financial.docx**机密 \ 销售**。
+- 使用此设置, 可以看到用户访问了名为 "**机密**" 的
 
-- 如果没有此设置，可以看到 Financial.docx 包含 6 信用卡卡号。
+- 如果没有此设置, 您可以看到该财经包含6个信用卡号。
     
     - 如果同时还启用[用于更深入分析的内容匹配](../reports-aip.md#content-matches-for-deeper-analysis)，那么，还能够查看具体的信用卡卡号。
 
@@ -823,9 +871,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 当你选中用于收集敏感信息类型或自定义条件的内容匹配项的[Azure 信息保护分析](../reports-aip.md)对应的复选框时，默认由所有用户发送此信息。 如果你有一些不应发送此数据的用户，请在这些用户的[作用域内策略](../configure-policy-scope.md)中创建以下高级客户端设置： 
 
-- 密钥：**LogMatchedContent**
+- 键:**LogMatchedContent**
 
-- Value：**禁用**
+- 值：**禁用**
 
 
 ## <a name="limit-the-number-of-threads-used-by-the-scanner"></a>限制扫描程序使用的线程数
@@ -838,7 +886,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 首次配置测试值时，建议为每个核心指定 2 个，然后监视结果。 例如，如果在具有 4 个核心的计算机上运行扫描程序，请先将值设置为 8。 如有必要，请根据扫描程序计算机所需的最终性能和扫描速率相应增减该数量。 
 
-- 密钥：**ScannerConcurrencyLevel**
+- 键:**ScannerConcurrencyLevel**
 
 - 值： **\<并发线程数>**
 
@@ -854,45 +902,45 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 若要配置此高级设置，以便扫描程序以 Windows 自动分配的完整性级别运行（标准用户帐户以中等完整性级别运行），请输入以下字符串：
 
-- 密钥：**ProcessUsingLowIntegrity**
+- 键:**ProcessUsingLowIntegrity**
 
-- Value：**False**
+- 值：**False**
 
 ## <a name="change-the-timeout-settings-for-the-scanner"></a>更改扫描程序的超时设置
 
-此配置使用[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)必须在 Azure 门户中配置。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
-默认情况下，Azure 信息保护扫描程序有 00:15:00 （15 分钟） 来检查各个文件的敏感信息类型或已配置为用于自定义条件的正则表达式表达式的超时期限。 超时时间已达到此内容提取过程，在超时之前的任何结果时，返回和进一步检查的文件会停止。 在此方案中，以下错误消息记录在 %*localappdata*%\Microsoft\MSIP\Logs\MSIPScanner.iplog （如果有多个日志 zip 格式）：**失败的 GetContentParts**与**该操作已取消**详细信息中。
+默认情况下, Azure 信息保护扫描程序的超时期限为 00:15:00 (15 分钟), 用于检查每个文件中是否有敏感信息类型或为自定义条件配置的 regex 表达式。 当达到此内容提取过程的超时期限时, 将返回超时前的所有结果, 并对该文件停止进行进一步检查。 在此方案中, 将在%*localappdata*% \ Microsoft\MSIP\Logs\MSIPScanner.iplog (如果有多个日志, 则为 zipped) 中记录以下错误消息:**GetContentParts 失败**, 操作在详细信息中**被取消**。
 
-如果由于大型文件而遇到此超时问题，则可以增加完整内容提取此超时期限：
+如果由于文件较大而遇到此超时问题, 则可以增加此超时期限以进行完整的内容提取:
 
-- 密钥：**ContentExtractionTimeout**
+- 键:**ContentExtractionTimeout**
 
-- 值：  **\<hh:min:sec >**
+- 值:  **\<hh: min: sec >**
 
-文件类型可能会影响扫描文件所需的时间长度。 示例扫描次数：
+文件类型可影响扫描文件所花费的时间。 扫描时间示例:
 
-- 典型的 100MB Word 文件：0.5 5 分钟
+- 典型的 100 MB Word 文件:0.5-5 分钟
 
-- 一个典型 100 MB 的 PDF 文件：5 到 20 分钟
+- 典型的 100 MB PDF 文件:5-20 分钟
 
-- 一个典型 100 MB 的 Excel 文件：12-30 分钟
+- 典型的 100 MB Excel 文件:12-30 分钟
 
-对于非常大，如视频文件的某些文件类型，请考虑中排除这些扫描通过添加到的文件扩展名**文件类型来扫描**扫描程序配置文件中的选项。
+对于某些非常大的文件类型 (如视频文件), 请考虑在扫描程序配置文件中将文件扩展名添加到要**扫描的文件类型**选项, 从扫描中排除它们。
 
-此外，Azure 信息保护扫描程序具有 00:30:00 （30 分钟） 的每个文件，它可以处理超时时间。 此值会考虑可能需要从存储库中检索并暂时将其本地保存的措施，可以包括解密，以进行检查、 设置标签和加密的内容提取的时间。
+此外, Azure 信息保护扫描程序的每个文件处理的超时期限为 00:30:00 (30 分钟)。 此值将考虑从存储库中检索文件所需的时间, 并暂时将其保存在本地, 以执行可包括解密、用于检查、标记和加密的内容提取的操作。
 
-尽管 Azure 信息保护扫描程序可以扫描数十到数百个文件每分钟，如果您有大量的非常大的文件的数据存储库，扫描程序可以超过此默认超时期限，并且在 Azure 门户中，似乎停止后 30分钟数。 在此方案中，以下错误消息记录在 %*localappdata*%\Microsoft\MSIP\Logs\MSIPScanner.iplog （如果有多个日志 zip 格式） 和扫描程序.csv 日志文件：**该操作已取消**。
+尽管 Azure 信息保护扫描程序可以每分钟扫描数十到数百个文件, 但如果你的数据存储库包含大量非常大的文件, 则扫描程序可以超过此默认超时时间, 在 Azure 门户中, 将在30后停止). 在此方案中, 以下错误消息记录在%*localappdata*% \ Microsoft\MSIP\Logs\MSIPScanner.iplog (如果有多个日志, 则为 zipped) 和 scanner .csv 日志文件中:**操作已取消**。
 
-4 核处理器，默认情况下使用扫描仪具有 16 个线程进行扫描，并在 30 分钟时间段内遇到 16 的大型文件的概率取决于大型文件的比。 例如，如果扫描速率是每分钟，200 个文件和文件的 1%超过 30 分钟超时，则扫描程序，仍会遇到 30 分钟超时情况超过 85%的概率。 这些超时可能会导致再扫描时间和更高内存消耗。
+默认情况下, 具有4核处理器的扫描程序有16个线程用于扫描, 在30分钟的时间段内遇到16个大型文件的概率取决于大文件的比率。 例如, 如果扫描速率为每分钟200个文件, 而 1% 的文件超过30分钟超时, 则在超过 85% 的情况下, 扫描程序将遇到30分钟的超时情况。 这些超时可能会导致更长的扫描时间和更高的内存消耗。
 
-在此情况下，如果您不能向扫描程序计算机添加更多核处理器，请考虑减小超时时间对于更好地扫描速率和较低的内存消耗，但将排除某些文件确认。 或者，考虑增加超时时间对于更准确的扫描结果，但此配置则可能会导致较低扫描费率的确认和更高内存消耗。
+在这种情况下, 如果无法将更多的核心处理器添加到扫描仪计算机, 请考虑缩短超时期限以获得更好的扫描速率和更低的内存消耗, 但需确认会排除某些文件。 另外, 请考虑增加超时期限以获得更准确的扫描结果, 但确认此配置可能会导致扫描速率较低且内存消耗更高。
 
-若要更改文件处理的超时期限，请配置下列高级客户端设置：
+若要更改文件处理的超时时间, 请配置以下高级客户端设置:
 
-- 密钥：**FileProcessingTimeout**
+- 键:**FileProcessingTimeout**
 
-- 值：  **\<hh:min:sec >**
+- 值:  **\<hh: min: sec >**
 
 ## <a name="change-the-local-logging-level"></a>更改本地日志记录级别
 
@@ -902,7 +950,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
  
 若要更改这些文件的日志记录级别，请配置以下高级客户端设置：
 
-- 密钥：**LogLevel**
+- 键:**LogLevel**
 
 - 值：\<日志记录级别> 
 
@@ -938,7 +986,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
     
     ![示例 Exchange Online 邮件流规则，用于为特定 Azure 信息保护标签设置邮件头](../media/exchange-rule-for-message-header.png)
     
-    注意：如果标签为子标签，还必须以相同的格式在标头值中的子标签之前指定父标签。 例如，如果你的子标签含有全局唯一标识符 27efdf94-80a0-4 d 02 b88c b615c12d69a9，则值可能如下：`MSIP_Label_ab70158b-bdcc-42a3-8493-2a80736e9cbd_Enabled=True;MSIP_Label_27efdf94-80a0-4d02-b88c-b615c12d69a9_Enabled=True;`
+    注意:如果标签为子标签，还必须以相同的格式在标头值中的子标签之前指定父标签。 例如，如果你的子标签含有全局唯一标识符 27efdf94-80a0-4 d 02 b88c b615c12d69a9，则值可能如下：`MSIP_Label_ab70158b-bdcc-42a3-8493-2a80736e9cbd_Enabled=True;MSIP_Label_27efdf94-80a0-4d02-b88c-b615c12d69a9_Enabled=True;`
 
 测试此配置前，请注意，创建或编辑邮件流规则时通常都会有延迟（例如，等待一小时）。 如果此规则生效，便会在用户使用 Outlook 网页版时发生以下事件： 
 
