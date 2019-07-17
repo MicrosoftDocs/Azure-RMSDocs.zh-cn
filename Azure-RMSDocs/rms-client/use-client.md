@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.suite: ems
 search.appverid:
 - MET150
-ms.openlocfilehash: 75d95df5017c440c06f58c22f59ecad68fc1a4b7
-ms.sourcegitcommit: fdc1f3d76b48f4e865a538087d66ee69f0f9888d
+ms.openlocfilehash: ff8f69469cb7c86868db283aca8586c99b437179
+ms.sourcegitcommit: 433787223074973cae4fcfbe9cd85f46c019cd78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68141558"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246836"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -55,7 +55,7 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 
 - 对于用户的子集, 可以部署经典客户端, 因为这些用户需要应用 "保留自己的密钥" (HYOK) 保护的标签。
     
-    对于这些用户, 如果他们还具有运行 MacOS、iOS 和 Android 的设备, 并且这些设备的 Office 版本支持敏感度标签, 则他们的体验会略有不同。 例如, 他们将在 Office 功能区上看到 "**保护**" 按钮, 而不是 "**敏感度**" 按钮。 有关其他差异, 请参阅下表。
+    对于这些用户, 如果他们还具有运行 MacOS、iOS 和 Android 的设备, 并且这些设备的 Office 版本支持敏感度标签, 则他们的体验会略有不同。 例如, 他们将在 Office 功能区上看到 "**保护**" 按钮, 而不是 "**敏感度**" 按钮。 有关经典客户端和统一标签客户端之间的差异, 请参阅下表。
 
 - 你有本地数据存储, 其中包含需要扫描敏感信息或分类和保护的文档。 在服务器上部署经典客户端以运行 Azure 信息保护扫描程序。
 
