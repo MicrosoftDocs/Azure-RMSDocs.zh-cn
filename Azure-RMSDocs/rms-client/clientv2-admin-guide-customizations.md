@@ -4,19 +4,19 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/16/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 29aca45b9a55d8fdecf3fd30ab4bd20c6f082e3f
-ms.sourcegitcommit: fdc1f3d76b48f4e865a538087d66ee69f0f9888d
+ms.openlocfilehash: bd05adf77fecec7172aa04ae849b6a4e5ce963ef
+ms.sourcegitcommit: 051ef396b1efa9dd6cf77662bbe6aed7154d20a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68141670"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306620"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
@@ -121,7 +121,6 @@ ms.locfileid: "68141670"
 |EnableCustomPermissionsForCustomProtectedFiles|[对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) |
 |EnableLabelByMailHeader|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |HideBarByDefault|[在 Office 应用程序中显示“信息保护”栏](##display-the-information-protection-bar-in-office-apps)|
-|labelByCustomProperties|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |LogMatchedContent|[禁止为一部分用户发送信息类型匹配项](#disable-sending-information-type-matches-for-a-subset-of-users)|
 |OutlookBlockTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookBlockUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
@@ -148,9 +147,9 @@ ms.locfileid: "68141670"
 |设置|应用场景和说明|
 |----------------|---------------|
 |颜色|[指定标签的颜色](#specify-a-color-for-the-label)|
-|customPropertyByLabel|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
+|customPropertiesByLabel|[应用标签时应用自定义属性](#apply-a-custom-property-when-a-label-is-applied)|
 |DefaultSubLabelId|[为父标签指定默认子标签](#specify-a-default-sublabel-for-a-parent-label) 
-|labelByCustomProperties|[应用标签时应用自定义属性](#apply-a-custom-property-when-a-label-is-applied)|
+|labelByCustomProperties|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |SMimeEncrypt|[将标签配置为在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook)|
 |SMimeSign|[将标签配置为在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook)|
 
@@ -744,7 +743,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 对于文件资源管理器：当用户右键单击文件并应用标签时, 将应用自定义属性。
 
-此配置要求你为要应用其他自定义属性的每个敏感度标签指定一个名为**customPropertyByLabel**的高级设置。 然后，使用以下语法设置每个条目的值：
+此配置要求你为要应用其他自定义属性的每个敏感度标签指定一个名为**customPropertiesByLabel**的高级设置。 然后，使用以下语法设置每个条目的值：
 
 `[custom property name],[custom property value]`
 
@@ -758,13 +757,13 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 高级设置:
 
-- 密钥: **customPropertyByLabel**
+- 密钥: **customPropertiesByLabel**
 
 - 值：**分类, 机密**
 
 示例 PowerShell 命令, 其中的标签命名为 "机密":
 
-    Set-Label -Identity Confidential -AdvancedSettings @{customPropertyByLabel="Classification,Secret"}
+    Set-Label -Identity Confidential -AdvancedSettings @{customPropertiesByLabel="Classification,Secret"}
 
 #### <a name="example-2-add-multiple-custom-properties-for-a-label"></a>示例 2：为标签添加多个自定义属性
 
@@ -772,7 +771,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令, 其中标签命名为 "常规", 并且你想要添加一个名为**分类**的自定义属性, 其值为 "**常规**", 另一个名为 "**敏感度**" 的自定义属性的值为 "**内部**":
 
-    Set-Label -Identity General -AdvancedSettings @{customPropertyByLabel=ConvertTo-Json("Classification,General", "Sensitivity,Internal")}
+    Set-Label -Identity General -AdvancedSettings @{customPropertiesByLabel=ConvertTo-Json("Classification,General", "Sensitivity,Internal")}
 
 ## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>将标签配置为在 Outlook 中应用 S/MIME 保护
 
