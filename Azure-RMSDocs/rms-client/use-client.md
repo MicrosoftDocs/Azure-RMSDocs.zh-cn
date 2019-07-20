@@ -4,19 +4,19 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/16/2019
+ms.date: 07/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
 search.appverid:
 - MET150
-ms.openlocfilehash: ff8f69469cb7c86868db283aca8586c99b437179
-ms.sourcegitcommit: 433787223074973cae4fcfbe9cd85f46c019cd78
+ms.openlocfilehash: e4746246c13ece385cd19f9ace8422ae6210132f
+ms.sourcegitcommit: a354b71d82dc5d456bff7e4472181cbdd962948a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246836"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68352855"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -39,9 +39,9 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 
 应该安装哪个客户端？
 
-- 安装适用于 MacOS、iOS 和 Android 的标签的 Azure 信息保护统一标签客户端, 如果你不需要某些尚不支持的功能。 这些功能包括使用本地密钥 (HYOK) 和本地数据存储的扫描仪保护内容。
+- 安装 Azure 信息保护统一的标签客户端, 以提供 MacOS、iOS 和 Android 也可使用的标签和策略设置, 如果不需要经典客户端尚不支持的几个功能。 这些功能包括使用本地密钥 (HYOK) 和本地数据存储的扫描仪保护内容。
 
-- 如果需要的客户端版本的客户端尚不支持统一标签客户端, 请安装 Azure 信息保护客户端 (经典)。 你的折衷在于, 不能在其他客户端平台上使用标签, 也不能使用其他管理门户进行管理。
+- 如果需要的客户端版本的客户端尚不支持统一标签客户端, 请安装 Azure 信息保护客户端 (经典)。 你的折衷在于, 并非所有标签设置都可以在其他客户端平台上使用, 而是使用另一个管理门户进行管理。
 
 目前, 经典客户端和统一标签客户端的功能没有奇偶校验。 但是, 这种缺口正在关闭, 你会希望将新功能仅添加到统一的标签客户端。 出于此原因, 我们建议你在其当前功能集和功能满足你的业务需求的情况下部署统一的标签客户端。 否则, 或者如果已在尚未[迁移到统一标签存储](../configure-policy-migrate-labels.md)的 Azure 门户中配置了标签, 请使用经典客户端。
 
@@ -51,11 +51,11 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 
 - 对于大多数用户, 可以部署 Azure 信息保护统一标签客户端, 因为此客户端满足这些用户的业务需求。 
     
-    对于这些用户, 如果他们的标签体验也是运行 MacOS、iOS 和 Android 的设备, 并且这些设备的 Office 版本支持敏感度标签, 则他们的标签体验非常类似。
+    对于这些用户, 他们在 Windows、Mac、iOS 和 Android 中的标记体验非常相似, 因为它们具有相同的发布到它们的标签和相同的策略设置。 作为管理员, 你可以在同一个管理门户中管理这些标签和策略设置。
 
-- 对于用户的子集, 可以部署经典客户端, 因为这些用户需要应用 "保留自己的密钥" (HYOK) 保护的标签。
+- 对于用户的子集, 你可以部署经典客户端, 因为这些用户需要一个或多个应用 "保留你自己的密钥" (HYOK) 保护的标签。
     
-    对于这些用户, 如果他们还具有运行 MacOS、iOS 和 Android 的设备, 并且这些设备的 Office 版本支持敏感度标签, 则他们的体验会略有不同。 例如, 他们将在 Office 功能区上看到 "**保护**" 按钮, 而不是 "**敏感度**" 按钮。 有关经典客户端和统一标签客户端之间的差异, 请参阅下表。
+    对于这些用户, 他们在使用此客户端时具有略微不同的标签体验。 例如, 他们将在 Office 应用程序中看到 "**保护**" 按钮, 而不是 "**敏感度**" 按钮。 作为管理员, 你需要在不同的管理门户中管理其 HYOK 设置和策略设置的标签, 以用于其他客户端平台的标签和设置。
 
 - 你有本地数据存储, 其中包含需要扫描敏感信息或分类和保护的文档。 在服务器上部署经典客户端以运行 Azure 信息保护扫描程序。
 

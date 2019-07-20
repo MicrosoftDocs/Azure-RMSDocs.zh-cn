@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: c39e2be3fef7568179f3859f834f92cc761b6259
-ms.sourcegitcommit: 849c493cef6b2578945c528f4e17373a2ef26287
+ms.openlocfilehash: 120cc1298d48c3dd9952362b8abacbca22ef6acc
+ms.sourcegitcommit: eff3bfbf95588e8876d9d6cbb95f80d304142668
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67563417"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340739"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -35,7 +35,7 @@ ms.locfileid: "67563417"
 
 - 确定包含敏感信息且若未保护则可能给组织带来风险的文档，并按照以下建议缓解风险。
 
-您看到的数据聚合从你的 Azure 信息保护客户端和 Azure 信息保护扫描程序，从运行的 Windows 计算机[Microsoft Defender 高级威胁防护 (Microsoft Defender ATP)](/windows/security/threat-protection/microsoft-defender-atp/overview)，并从[支持统一进行标记的客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)。
+你看到的数据是从 Azure 信息保护客户端和 Azure 信息保护扫描程序、运行[Microsoft Defender 高级威胁防护 (Microsoft DEFENDER ATP)](/windows/security/threat-protection/microsoft-defender-atp/overview)的 Windows 计算机和从[支持统一标签的客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)。
 
 例如，你将能够看到以下数据：
 
@@ -67,7 +67,7 @@ ms.locfileid: "67563417"
 
 - 在“数据发现”  报表中：
 
-    - 哪些文件位于您的扫描的数据存储库，Windows 10 计算机或运行 Azure 信息保护客户端计算机或[支持统一进行标记的客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)
+    - 扫描的数据存储库、Windows 10 计算机或运行 Azure 信息保护客户端的计算机或[支持统一标签的客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)上的哪些文件
     
     - 被标记和被保护的文件，以及按标签分类的文件的位置
     
@@ -88,7 +88,7 @@ ms.locfileid: "67563417"
 有关详细信息，请参阅以下博客文章： 
 - [Microsoft 信息保护中有关所有数据的数据发现、报告和分析](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)
 
-- [发现和保护敏感数据通过 Azure 信息保护和 Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Discover-and-protect-sensitive-data-through-Azure-Information/ba-p/297292)
+- [通过 Azure 信息保护和 Microsoft Defender ATP 发现和保护敏感数据](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Discover-and-protect-sensitive-data-through-Azure-Information/ba-p/297292)
 
 ### <a name="information-collected-and-sent-to-microsoft"></a>收集和发送到 Microsoft 的信息
 
@@ -136,9 +136,9 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 |要求|更多信息|
 |---------------|--------------------|
 |包含 Log Analytics 且用于与 Azure 信息保护相同的租户的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
-|Azure 信息保护客户端或 Azure 信息保护统一标记客户端|如果没有这些客户端，您可以下载并安装它们从[Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)。 <br /><br /> 请确保你具有要支持的最新版本[所有功能](#features-that-require-a-minimum-version-of-the-client)用于 Azure 信息保护分析。|
-|对于“发现和风险”  报表： <br /><br />-若要显示在本地数据存储中的数据，你已部署 Azure 信息保护扫描程序至少一个的实例 <br /><br />-若要显示 Windows 10 计算机中的数据必须是最小的 1809年生成、 使用 Microsoft Defender 高级威胁防护 (Microsoft Defender ATP) 和已启用 microsoft Azure 信息保护集成功能Defender 安全中心|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关配置和使用来自 Microsoft Defender 安全中心的 Azure 信息保护集成功能的信息，请参阅[Windows 概述中的信息保护](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。|
-|对于“建议”报告  ： <br /><br />-若要从 Azure 门户中，如下的建议的操作添加新的数据存储库，你必须使用 Azure 信息保护扫描程序的最新正式发布版本 |若要部署扫描程序，请参阅[部署 Azure 信息保护扫描程序以自动分类和保护文件](deploy-aip-scanner.md)。|
+|Azure 信息保护客户端或 Azure 信息保护统一标签客户端|如果你还没有其中的一个客户端, 则可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装这些客户端。 <br /><br /> 请确保具有最新版本, 以支持 Azure 信息保护分析[的所有功能](#features-that-require-a-minimum-version-of-the-client)。|
+|对于“发现和风险”  报表： <br /><br />-若要显示本地数据存储中的数据, 你至少部署了一个 Azure 信息保护扫描程序实例 <br /><br />-若要显示 Windows 10 计算机上的数据, 它们必须是1809的最小内部版本, 你使用的是 Microsoft Defender 高级威胁防护 (Microsoft Defender ATP), 并且已启用 Microsoft 的 Azure 信息保护集成功能Defender 安全中心|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关配置和使用 Microsoft Defender 安全中心提供的 Azure 信息保护集成功能的信息, 请参阅[Windows 中的信息保护概述](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。|
+|对于“建议”报告  ： <br /><br />-若要从 Azure 门户添加新的数据存储库作为建议的操作, 则必须使用 Azure 信息保护扫描程序的最新通用版本 |若要部署扫描程序, 请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。|
 
 ### <a name="permissions-required-for-azure-information-protection-analytics"></a>Azure 信息保护分析必备的先决条件
 
@@ -155,7 +155,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
         - **Azure 信息保护管理员**
         - **安全管理员**
         - **合规性管理员**
-        - **符合性数据管理器**
+        - **相容性数据管理员**
         - **全局管理员**
     
     - 创建该工作区后，可以使用具有较少权限的以下角色来查看收集的数据：
@@ -163,7 +163,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
         - **安全读取者**
     
     > [!NOTE] 
-    > 如果你的租户已迁移到统一的标记存储，则无法使用 Azure 信息保护管理员角色。 [详细信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
+    > 如果你的租户已迁移到统一标签存储, 则无法使用 Azure 信息保护管理员角色。 [详细信息](configure-policy-migrate-labels.md#administrative-roles-that-support-the-unified-labeling-platform)
 
 2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-access#manage-access-to-log-analytics-workspace-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一才能访问 Azure Log Analytics 工作区：
     
@@ -187,32 +187,32 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 但是，许多组织的典型角色分配是 Azure AD 角色“安全读取者”  以及 Azure 角色“读取者”  。
 
-### <a name="features-that-require-a-minimum-version-of-the-client"></a>需要最小版本的客户端的功能。
+### <a name="features-that-require-a-minimum-version-of-the-client"></a>需要客户端的最低版本的功能
 
-可以使用的版本历史记录信息[Azure 信息保护统一标记的客户端](./rms-client/unifiedlabelingclient-version-release-history.md)并[Azure 信息保护客户端](./rms-client/client-version-release-history.md)以确认是否您的客户端版本支持所有主要的报告功能。 客户端最低版本：
+你可以使用[Azure 信息保护统一标签客户端](./rms-client/unifiedlabelingclient-version-release-history.md)和[azure 信息保护客户](./rms-client/client-version-release-history.md)端的版本历史记录信息来确认你的客户端版本是否支持所有中央报表功能。 客户端的最低版本:
 
-Azure 信息保护统一标记客户端：
+对于 Azure 信息保护统一标签客户端:
 
-- 对审核和终结点发现的支持：版本 2.0.778.0
+- 支持审核和终结点发现:版本2.0.778。0
 
 对于 Azure 信息保护客户端：
 
-- 对审核的支持：版本 1.41.51.0
-- 对终结点发现的支持：版本 1.48.204.0
+- 支持审核:版本 1.41.51.0
+- 支持终结点发现:版本1.48.204。0
 
-### <a name="storage-requirements-and-data-retention"></a>存储要求和数据保留期
+### <a name="storage-requirements-and-data-retention"></a>存储要求和数据保留
 
-收集和存储在 Azure 信息保护工作区中的数据量将为每个租户显著变化，具体取决于因素，例如如何多个 Azure 信息保护客户端和其他受支持的终结点必须无论你是收集终结点的发现数据，您已经部署了扫描仪，等等。
+在 Azure 信息保护工作区中收集和存储的数据量会因多种因素而异, 具体取决于你的 Azure 信息保护客户端和其他支持的终结点 (无论你是正在收集终结点发现数据, 已部署扫描程序, 等等。
 
-但是，作为起点，您可能会发现以下估计值非常有用：
+然而, 作为起点, 你可能会发现以下估计非常有用:
 
-- 对于 Azure 信息保护客户端生成的审核数据：每个每月 10,000 个活动用户的 2 GB。
+- 仅适用于 Azure 信息保护客户端生成的审核数据:每月每10000活动用户 2 GB。
 
-- 对于 Azure 信息保护客户端、 扫描仪和 Microsoft Defender ATP 生成的审核数据：每个每月 10,000 个活动用户 20 GB。
+- 对于 Azure 信息保护客户端、扫描仪和 Microsoft Defender ATP 生成的审核数据:每月 20 GB/10000 活动用户。
 
-如果使用强制标签或已在全局策略中配置默认标签，你的费率很可能要高得多。
+如果你使用必需的标签, 或在全局策略中配置了默认标签, 则你的费率可能会显著提高。
 
-Azure Monitor 日志已**使用情况和预估的成本**功能来帮助你估计并查看的数据存储量，你还可以控制 Log Analytics 工作区的数据保留期。 有关详细信息，请参阅[管理使用情况和成本与 Azure Monitor 日志](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage)。
+Azure Monitor 日志具有**使用情况和预估成本**功能, 可帮助您估计和查看存储的数据量, 还可以控制 Log Analytics 工作区的数据保留期。 有关详细信息, 请参阅[使用 Azure Monitor 日志管理使用情况和成本](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage)。
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>配置报表的 Log Analytics 工作区
 
@@ -274,40 +274,40 @@ Azure 信息保护的记录数据存储在下表中：**InformationProtectionLog
 
 |列名|描述|
 |-----------|-----------|
-|Time|事件时间：以 YYYY 格式的 UTC-MM-DDTHH:MM:SS|
-|“用户”|用户：UPN 或域 \ 用户格式|
-|ItemPath|项目的完整路径或电子邮件主题|
-|ItemName|文件名称或电子邮件主题 |
-|方法|分配方法的标签：手动、 自动、 建议、 默认情况下或强制性|
-|activities|审核活动：DowngradeLabel、 UpgradeLabel、 RemoveLabel、 NewLabel，发现、 访问、 RemoveCustomProtection、 ChangeCustomProtection 或 NewCustomProtection |
-|LabelName|标签名称 （未本地化）|
-|LabelNameBefore |更改 （未本地化） 之前的标签名称 |
+|Time|事件时间:格式 YYYY-MM-YYYY-MM-DDTHH: MM: SS 中的 UTC|
+|用户|用户：格式 UPN 或 DOMAIN\USER|
+|ItemPath|完整项目路径或电子邮件主题|
+|ItemName|文件名或电子邮件主题 |
+|方法|标签分配方法:手动、自动、建议、默认或强制|
+|activities|审核活动:DowngradeLabel、UpgradeLabel、RemoveLabel、NewLabel、发现、Access、RemoveCustomProtection、ChangeCustomProtection 或 NewCustomProtection |
+|LabelName|标签名称 (未本地化)|
+|LabelNameBefore |更改前的标签名称 (未本地化) |
 |ProtectionType|保护类型 [JSON] <br />{ <br />"Type": ["Template", "Custom", "DoNotForward"], <br />  "TemplateID":"GUID" <br /> } <br />|
-|ProtectionBefore|保护类型更改 [JSON] 之前 |
-|InformationTypesMatches|JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)数据中发现其中一个空数组表示没有信息类型找到，和 null 表示没有可用的信息|
-|MachineName |如果可用; 的 FQDN否则为主机名|
-|DeviceRisk|从 WDATP 时可用的设备风险评分|
-|平台|设备平台 (Win，OSX、 Android、 iOS) |
-|ApplicationName|应用程序的友好名称|
-|AIPVersion|执行审核操作的 Azure 信息保护客户端版本 |
+|ProtectionBefore|更改前的保护类型 [JSON] |
+|InformationTypesMatches|在数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组, 其中空数组表示找不到任何信息类型, null 表示没有可用信息|
+|计算机 |FQDN (如果可用);否则为主机名|
+|DeviceRisk|WDATP 可用时的设备风险评分|
+|平台|设备平台 (Win、OSX、Android、iOS) |
+|ApplicationName|应用程序友好名称|
+|AIPVersion|执行审核操作的 Azure 信息保护客户端的版本 |
 |TenantId|Azure AD 租户 ID |
-|AzureApplicationId|Azure AD 注册应用程序 ID (GUID)|
-|ProcessName|承载 MIP SDK 进程|
+|AzureApplicationId|Azure AD 注册的应用程序 ID (GUID)|
+|ProcessName|承载 MIP SDK 的进程|
 |LabelId|标签 GUID 或 null|
-|IsProtected|是否受保护的：是/否 |
-|ProtectionOwner |以 UPN 格式的 rights Management 所有者|
-|LabelIdBefore|标签 GUID 或更改之前，则为 null|
-|InformationTypesAbove55|JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)置信度 55 或更高版本的数据中找到 |
-|InformationTypesAbove65|JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)置信度级别为 65 或更高版本的数据中找到 |
-|InformationTypesAbove75|JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)置信度 75 或更高版本的数据中找到 |
-|InformationTypesAbove85|JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)置信度 85 或更高版本的数据中找到 |
-|InformationTypesAbove95|JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)置信度 95 或更高版本的数据中找到|
-|DiscoveredInformationTypes |JSON 数组[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) （如果启用） 中数据和其匹配的内容找到其中一个空数组表示没有信息类型找到，和 null 意味着没有可用的信息 |
-|ProtectedBefore|是否更改之前保护内容：是/否 |
-|ProtectionOwnerBefore|在更改之前的 rights Management 所有者 |
+|IsProtected|是否受保护:是/否 |
+|ProtectionOwner |UPN 格式的 Rights Management 所有者|
+|LabelIdBefore|更改前标记 GUID 或 null|
+|InformationTypesAbove55|在置信度为55或更高的数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组 |
+|InformationTypesAbove65|在置信度为65或更高的数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组 |
+|InformationTypesAbove75|在置信度为75或更高的数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组 |
+|InformationTypesAbove85|在置信度为85或更高的数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组 |
+|InformationTypesAbove95|在置信度为95或更高的数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组|
+|DiscoveredInformationTypes |在数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组及其匹配的内容 (如果已启用), 其中空数组表示找不到任何信息类型, 空表示无可用信息 |
+|ProtectedBefore|是否在更改之前保护内容:是/否 |
+|ProtectionOwnerBefore|更改前 Rights Management 所有者 |
 |UserJustification|降级或删除标签时的理由|
-|LastModifiedBy|以 UPN 格式上次修改该文件的用户。 适用于 Office 和 SharePoint Online 仅|
-|LastModifiedDate|以 YYYY 格式的 UTC-MM-DDTHH:MM:SS:适用于 Office 和 SharePoint Online 仅 |
+|LastModifiedBy|上次修改文件的 UPN 格式的用户。 仅适用于 Office 和 SharePoint Online|
+|LastModifiedDate|格式 YYYY-MM-YYYY-MM-DDTHH: MM: SS 中的 UTC:仅适用于 Office & SharePoint Online |
 
 
 #### <a name="examples-using-informationprotectionevents"></a>使用 InformationProtectionEvents 的示例
@@ -350,6 +350,6 @@ InformationProtectionEvents
 
 
 ## <a name="next-steps"></a>后续步骤
-查看在报表中的信息后，如果使用 Azure 信息保护客户端，您可能会决定对你的 Azure 信息保护策略进行更改。 有关说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
+查看报表中的信息后, 如果使用的是 Azure 信息保护客户端, 则可以决定更改 Azure 信息保护策略。 有关说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
 
 如果你有 Microsoft 365 订阅，则还可以在 Microsoft 365 合规中心和 Microsoft 365 安全中心中查看标签使用情况。 有关详细信息，请参阅[使用标签分析查看标签使用情况](/Office365/SecurityCompliance/label-analytics)。

@@ -4,19 +4,19 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/16/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 3dfc29a45425bbe811093874f22972a6a53b6283
-ms.sourcegitcommit: fdc1f3d76b48f4e865a538087d66ee69f0f9888d
+ms.openlocfilehash: 7a20eba01a57a0c09dd24c88834d0d5b6cb53198
+ms.sourcegitcommit: a354b71d82dc5d456bff7e4472181cbdd962948a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68141711"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68352880"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -306,7 +306,7 @@ ms.locfileid: "68141711"
 - **其电子邮件或电子邮件的附件没有标签**：
     - 附件可以是 Office 文档或 PDF 文档
 
-如果存在以上情况且收件人的电子邮件地址未包含在指定的允许域名列表中，用户会看到一条弹出消息，其中包含以下操作之一：
+满足这些条件时, 用户将看到一个弹出消息, 其中包含以下操作之一:
 
 - **警告**：用户可以确认、发送或取消。
 
@@ -314,7 +314,9 @@ ms.locfileid: "68141711"
 
 - **阻止**：如果上述情况持续，将阻止用户发送电子邮件。 该消息包括阻止电子邮件的原因，以便用户可以解决问题。 例如，删除特定收件人或标记电子邮件。 
 
-将生成的操作记录到本地 Windows 事件日志“应用程序和服务日志” > “Azure 信息保护”中   ：
+当弹出消息用于特定标签时, 可以按域名为收件人配置例外。
+
+弹出消息中生成的操作将记录到本地 Windows 事件日志**应用程序和服务日志** > **中。**
 
 - 警告消息：信息 ID 301
 
@@ -325,7 +327,7 @@ ms.locfileid: "68141711"
 来自验证消息的事件条目示例：
 
 ```
-Client Version: 1.48.204.0
+Client Version: 1.53.10.0
 Client Policy ID: e5287fe6-f82c-447e-bf44-6fa8ff146ef4
 Item Full Path: Price list.msg
 Item Name: Price list
@@ -364,6 +366,35 @@ User Response: Confirmed
     
     - 值：\<标签 ID，以逗号分隔> 
 
+#### <a name="to-exempt-domain-names-for-pop-up-messages-configured-for-specific-labels"></a>为特定标签配置的弹出消息免除域名
+
+对于在这些弹出消息中指定的标签, 可以免除特定域名, 使用户不会看到其电子邮件地址中包含该域名的收件人的邮件。 在这种情况下，发送电子邮件时不会受消息干扰。 若要指定多个域，将其添加为单个字符串，以逗号分隔。
+
+典型配置是仅针对组织外部的收件人或并非组织授权合作伙伴的收件人显示弹出消息。 在这种情况下，可以指定组织和合作伙伴使用的所有电子邮件域。
+
+创建以下高级客户端设置, 为该值指定一个或多个域, 每个域都由逗号分隔。
+
+多个域的示例值，以逗号分隔的字符串表示：`contoso.com,fabrikam.com,litware.com`
+
+- 警告消息：
+    
+    - 键:**OutlookWarnTrustedDomains**
+    
+    - 值：\<域名，以逗号分隔>  
+
+- 对齐消息：
+    
+    - 键:**OutlookJustifyTrustedDomains**
+    
+    - 值：\<域名，以逗号分隔>  
+
+- 阻止邮件：
+    
+    - 键:**OutlookBlockTrustedDomains**
+    
+    - 值：\<域名，以逗号分隔>  
+
+例如, 你为 "**机密 \ 所有员工**" 标签指定了**OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定**OutlookBlockTrustedDomains**和**contoso.com**的其他高级客户端设置。 因此, 用户可以john@sales.contoso.com在将其标记为 "**机密 \ 所有员工**" 时向其发送电子邮件, 但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
 
 ### <a name="to-implement-the-warn-justify-or-block-pop-up-messages-for-emails-or-attachments-that-dont-have-a-label"></a>若要针对没有标签的电子邮件或附件实现用于警告、验证或阻止的弹出消息：
 
@@ -437,37 +468,6 @@ User Response: Confirmed
     - 值：**Off**
 
 如果未指定此客户端设置, 则为 OutlookUnlabeledCollaborationAction 指定的值将用于没有附件的未标记电子邮件以及带有附件的未标记电子邮件。
-
-### <a name="to-specify-the-allowed-domain-names-for-recipients-exempt-from-the-pop-up-messages"></a>为收件人指定允许的域名，免除弹出消息
-
-当你在其他高级客户端设置中指定域名时, 用户不会看到其电子邮件地址中包含该域名的收件人的弹出消息。 在这种情况下，发送电子邮件时不会受消息干扰。 若要指定多个域，将其添加为单个字符串，以逗号分隔。
-
-典型配置是仅针对组织外部的收件人或并非组织授权合作伙伴的收件人显示弹出消息。 在这种情况下，可以指定组织和合作伙伴使用的所有电子邮件域。
-
-创建以下高级客户端设置, 为该值指定一个或多个域, 每个域都由逗号分隔。
-
-多个域的示例值，以逗号分隔的字符串表示：`contoso.com,fabrikam.com,litware.com`
-
-- 警告消息：
-    
-    - 键:**OutlookWarnTrustedDomains**
-    
-    - 值：\<域名，以逗号分隔>  
-
-- 对齐消息：
-    
-    - 键:**OutlookJustifyTrustedDomains**
-    
-    - 值：\<域名，以逗号分隔>  
-
-- 阻止邮件：
-    
-    - 键:**OutlookBlockTrustedDomains**
-    
-    - 值：\<域名，以逗号分隔>  
-
-例如, 若要从不阻止发送给具有 contoso.com 电子邮件地址的用户的电子邮件, 请指定**OutlookBlockTrustedDomains**和**contoso.com**的高级客户端设置。 因此, 当用户向发送电子邮件john@sales.contoso.com时, 用户看不到 Outlook 中的警告弹出消息。
-
 
 
 ## <a name="set-a-different-default-label-for-outlook"></a>为 Outlook 设置不同的默认标签

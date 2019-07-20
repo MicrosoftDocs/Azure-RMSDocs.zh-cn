@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: c7e5ea29378b051d2b2c0b04366c433dd1675304
-ms.sourcegitcommit: fdc1f3d76b48f4e865a538087d66ee69f0f9888d
+ms.openlocfilehash: db7dc34da3f8cd2ee92fa0c3a500880ed561dc40
+ms.sourcegitcommit: eff3bfbf95588e8876d9d6cbb95f80d304142668
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68141537"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340684"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -87,7 +87,7 @@ Azure 信息保护统一标签客户端的每个正式发行版 (GA) 在发布�
         -  *CustomPermissions*和*RemoveProtection* -添加到[set-aipfilelabel](/powershell/module/azureinformationprotection/Set-AIPFileLabel)
         -  *OnBeHalfOf* -已添加到[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication), 用于代替非交互式会话的*令牌*参数
         -  *WhatIf*和*DiscoveryInfoTypes*已添加到[set-aipfileclassification](/powershell/module/azureinformationprotection/set-aipfileclassification), 因此此 cmdlet 可以在发现模式下运行, 而无需应用标签
-    - 弃用的 cmdlet:清除-RMSAuthentication、Get-rmsfilestatus、RMSServer、Set-rmsserverauthentication、Get-rmstemplate、protect-rmsfile、set-rmsserverauthentication、protect-rmsfile、取消保护-
+    - 直接连接到保护服务的不推荐使用的 cmdlet:清除-RMSAuthentication、Get-rmsfilestatus、RMSServer、Set-rmsserverauthentication、Get-rmstemplate、protect-rmsfile、set-rmsserverauthentication、protect-rmsfile、取消保护-
 
 
 **纠正**

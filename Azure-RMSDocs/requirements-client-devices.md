@@ -4,23 +4,23 @@ description: 确定哪些设备支持 Azure 信息保护中的 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/25/2019
+ms.date: 07/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e0672d3aecbe82d43cf2fd65de061c9ce09c660b
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: ffab556f4179728d29c14d86c1114188c983ee9b
+ms.sourcegitcommit: eff3bfbf95588e8876d9d6cbb95f80d304142668
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60183418"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340704"
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的客户端设备
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 若要确定哪些设备支持 Azure Rights Management 服务，请参阅以下部分。 此服务为 Azure 信息保护提供数据保护。
 

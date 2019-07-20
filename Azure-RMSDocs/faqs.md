@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.suite: ems
 search.appverid:
 - MET150
-ms.openlocfilehash: 2390dd77917c779501b847b9ac6c534c468b82e4
-ms.sourcegitcommit: e730f897452fcb0ca1003c6b86f6e65678d0ec57
+ms.openlocfilehash: 4dcf7fd16ec6d360c69b6fb6b83e4f885732f020
+ms.sourcegitcommit: eff3bfbf95588e8876d9d6cbb95f80d304142668
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885530"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340576"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -139,7 +139,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 - 分配了管理角色的用户无法从受 Azure 信息保护保护的文档或电子邮件中自动删除保护。 只有在启用了超级用户功能的情况下，分配为超级用户的用户才能执行此操作。 但是，你将管理权限分配给 Azure 信息保护的任何用户可以将用户分配为超级用户，包括其自己的帐户。 他们还可以启用超级用户功能。 这些操作记录在管理员日志中。 有关详细信息, 请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](configure-super-users.md)中的 "最佳安全做法" 部分。 
 
-- 如果要将 Azure 信息保护标签迁移到统一的标签存储, 请务必参阅标签迁移文档中的以下部分:[有关管理角色的重要信息](configure-policy-migrate-labels.md#important-information-about-administrative-roles)。
+- 如果要将 Azure 信息保护标签迁移到统一的标签存储, 请务必参阅标签迁移文档中的以下部分:[支持统一标签平台的管理角色](configure-policy-migrate-labels.md#administrative-roles-that-support-the-unified-labeling-platform)。
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 
