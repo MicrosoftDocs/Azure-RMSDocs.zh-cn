@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c9ff328584f76d89e1bbbc350a1ce0161633907b
-ms.sourcegitcommit: 9d99385bab62478de6c00faae15d8b27f80239e5
+ms.openlocfilehash: 8625dfa874e05bb69ba5e0458a7283bd8e8651ba
+ms.sourcegitcommit: ae48f7cea01b4d615052659072305abb8698a7f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68229869"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375460"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>比较 Azure 信息保护与 AD RMS
 
@@ -65,6 +65,9 @@ Azure 信息保护和 AD RMS 都将 AES 128 用于对称加密。
 ## <a name="next-steps"></a>后续步骤
 若要详细了解如何使用 Azure 信息保护, 例如设备支持和最低版本, 请参阅[Azure 信息保护的要求](requirements.md)。
 
-如果希望从 AD RMS 迁移到 Azure 信息保护，请参阅[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)
+如果希望从 AD RMS 迁移到 Azure 信息保护, 请参阅[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)。
 
+你可能对以下 Faq 感兴趣:
+- [Azure 信息保护和 Microsoft 信息保护之间的区别是什么？](faqs.md#whats-the-difference-between-azure-information-protection-and-microsoft-information-protection)
+- [Azure 信息保护与 Azure Rights Management 之间有何区别？](faqs.md#whats-the-difference-between-azure-information-protection-and-azure-rights-management)
 

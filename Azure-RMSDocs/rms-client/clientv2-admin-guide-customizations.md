@@ -4,19 +4,19 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/19/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: b40c62853aa35053c98eaee4561af79fd4d56e03
-ms.sourcegitcommit: a354b71d82dc5d456bff7e4472181cbdd962948a
+ms.openlocfilehash: 662898959c48cb5cb1a7455bdd377c8ac9e966ec
+ms.sourcegitcommit: ce47b16c16d93e710c0ff95588e1631ccc0e2829
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352849"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387420"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
@@ -390,7 +390,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 注意:如果将具有最高分类标签的附件配置为通过用户定义权限的设置进行保护:
 
-- 如果标签的用户定义权限包括 Outlook (不要转发), 则选择该标签, 并且不会向电子邮件应用 "转发保护"。 
+- 如果标签的用户定义权限包括 Outlook (不要转发), 则选择该标签, 并且不会向电子邮件应用 "转发保护"。
 - 如果标签的用户定义权限仅用于 Word、Excel、PowerPoint 和文件资源管理器, 则该标签不会应用于电子邮件, 也不会受到保护。
 
 若要配置此高级设置, 请为所选标签策略输入以下字符串:
@@ -403,6 +403,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 键值 2: "\<自定义工具提示 >"
 
+自定义工具提示仅支持一种语言。
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -492,10 +493,6 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 对于在这些弹出消息中指定的标签, 可以免除特定域名, 使用户不会看到其电子邮件地址中包含该域名的收件人的邮件。 在这种情况下，发送电子邮件时不会受消息干扰。 若要指定多个域，将其添加为单个字符串，以逗号分隔。
 
 典型配置是仅针对组织外部的收件人或并非组织授权合作伙伴的收件人显示弹出消息。 在这种情况下，可以指定组织和合作伙伴使用的所有电子邮件域。
-
-对于相同的标签策略, 创建以下高级客户端设置, 为该值指定一个或多个域, 每个域都由逗号分隔。
-
-多个域的示例值，以逗号分隔的字符串表示：`contoso.com,fabrikam.com,litware.com`
 
 对于相同的标签策略, 创建以下高级客户端设置, 为该值指定一个或多个域, 每个域都由逗号分隔。
 
@@ -718,7 +715,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 键:**EnableLabelByMailHeader**
 
-- 值：**Tue**
+- 值：**True**
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 

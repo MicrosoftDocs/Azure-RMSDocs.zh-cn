@@ -1,26 +1,26 @@
 ---
-title: 分类和保护-Azure 信息保护统一标记的客户端
-description: 有关如何进行分类和保护文档和电子邮件时使用 Azure 信息保护统一标记适用于 Windows 的客户端的说明。
+title: '& 保护分类-Azure 信息保护统一标签客户端'
+description: 使用 Azure 信息保护适用于 Windows 的统一标签客户端时, 如何对文档和电子邮件进行分类和保护的说明。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: 0ea7ce8fc589b6546210e3cc6ee31b12c83d56de
-ms.sourcegitcommit: a26e4e50165107efd51280b5c621dfe74be51a7a
+ms.openlocfilehash: 5202d56476faeb820fab0c6adef31e6cc161a099
+ms.sourcegitcommit: ae48f7cea01b4d615052659072305abb8698a7f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67236948"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375481"
 ---
-# <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：分类和保护 Azure 信息保护统一标记客户端
+# <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：利用 Azure 信息保护统一标签客户端进行分类和保护
 
 >适用对象： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
 >
-> 说明： *[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类和保护。 如果只需对文档和电子邮件进行分类（但不保护），请参阅[仅分类说明](clientv2-classify.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
@@ -39,38 +39,38 @@ ms.locfileid: "67236948"
 
 例如，如果你的组织定期与另一组织中的人员进行通信，则管理员可能已经配置了设置保护以便这些人员可以阅读和使用受保护文档的标签。 然后，选择这些标签对要共享的文档进行分类和保护。
 
-或者，如果有外部用户[企业到企业 (B2B) 帐户](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)为其创建，你可以使用[文件资源管理器来设置自定义权限](#using-file-explorer-to-classify-and-protect-files)文档在共享前。 如果设置你自己的自定义权限，并且文档已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。
+或者, 如果外部用户为其创建了[企业对企业 (B2B) 帐户](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), 则可以使用[文件资源管理器设置文档的自定义权限](#using-file-explorer-to-classify-and-protect-files), 然后再对其进行共享。 如果设置你自己的自定义权限，并且文档已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。
 
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>使用 Office 应用对文档和电子邮件进行分类和保护
 
-从**主页**选项卡上，选择**敏感度**功能区中，按钮，然后选择一个已为你配置的标签。 例如：
+从 "**主页**" 选项卡上, 选择功能区中的 "**敏感度**" 按钮, 然后选择一个已为你配置的标签。 例如：
 
 ![敏感度按钮示例](../media/sensitivity-not-set-callout.png)
 
-或者，如果所选**显示数据条**从**敏感度**按钮，您可以从 Azure 信息保护栏选择标签。 例如：
+或者, 如果选择了 "**敏感度**" 按钮中的 "**显示栏**", 则可以从 Azure 信息保护栏中选择一个标签。 例如：
 
 ![Azure 信息保护栏示例](../media/info-protect-barv2-not-set-callout.png)
 
-若要设置一个标签，如"**Confidential** \ **所有员工**"，选择**机密**，然后**所有员工**。 如果你不确定要将哪种标签应用于当前文档或电子邮件，请使用标签工具提示详细了解每种标签及其应用情况。
+若要设置标签, 例如 "**机密** \ **全部雇员**", 请选择 "**机密**", 然后选择 "**所有员工**"。 如果你不确定要将哪种标签应用于当前文档或电子邮件，请使用标签工具提示详细了解每种标签及其应用情况。
 
-如果已将某种标签应用于文档，并且想要进行更改，可以选择其他标签。 如果已经显示了 Azure 信息保护栏中，并且不为您进行选择，首先单击栏上显示标签，则**编辑标签**图标，当前标签值旁边。
+如果已将某种标签应用于文档，并且想要进行更改，可以选择其他标签。 如果已显示 Azure 信息保护栏, 并且标签未显示在要选择的栏上, 请首先单击当前标签值旁边的 "**编辑标签**" 图标。
 
 除了手动选择标签，还可通过以下方式应用标签：
 
 - 管理员配置了默认标签，你可保留或更改该标签。
 
-- 您的管理员配置标签以检测到敏感信息时自动设置。
+- 在检测到敏感信息时, 管理员配置的标签将自动设置。
 
-- 管理员配置时，建议使用标签检测到敏感信息时，系统会提示你接受此建议 （和应用标签），或拒绝它 （不应用建议的标签）。
+- 在检测到敏感信息时, 管理员配置了建议的标签, 并且系统会提示你接受建议 (并应用标签) 或拒绝此建议 (不应用建议的标签)。
 
-### <a name="exceptions-for-the-sensitivity-button"></a>敏感度按钮的异常
+### <a name="exceptions-for-the-sensitivity-button"></a>"敏感度" 按钮的异常
 
-##### <a name="dont-see-the-sensitivity-button-in-your-office-apps"></a>看不到 Office 应用程序中的敏感度按钮？
+##### <a name="dont-see-the-sensitivity-button-in-your-office-apps"></a>在 Office 应用程序中看不到 "敏感度" 按钮？
 
-- 您可能不具有 Azure 信息保护统一标记客户端[安装](install-unifiedlabelingclient-app.md)。
+- 你可能没有[安装](install-unifiedlabelingclient-app.md)Azure 信息保护统一标签客户端。
 
-- 如果没有看到**敏感度**按钮在功能区上，但看**保护**按钮与标签，则必须安装了 Azure 信息保护客户端并不在 Azure 信息保护统一标记的客户端。 [详细信息](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+- 如果未在功能区上看到 "**敏感度**" 按钮, 而是看到带标签的 "**保护**" 按钮, 则已安装 azure 信息保护客户端, 而不是 azure 信息保护统一标签客户端。 [详细信息](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
  
 ##### <a name="is-the-label-that-you-expect-to-see-not-displayed"></a>没有显示希望看到的标签？ 
 
@@ -89,7 +89,7 @@ ms.locfileid: "67236948"
 
 通过电子邮件共享 Office 文档时，可将文档附加到所保护的电子邮件中，应用到此电子邮件的相同限制会自动保护此文档。 
 
-但是，你可能想要首先，保护文档，然后将其附加到电子邮件。 如果电子邮件中包含敏感信息，也需要保护电子邮件。 保护文档，然后将其附加到电子邮件的好处：
+但是, 你可能需要先保护文档, 然后将其附加到电子邮件。 如果电子邮件中包含敏感信息，也需要保护电子邮件。 在将文档附加到电子邮件之前保护文档的好处:
 
 - 可以对文档应用不同于电子邮件的权限。
 
@@ -103,7 +103,7 @@ ms.locfileid: "67236948"
 
 分类和保护会自动排除一些文件，因为更改这些文件可能会导致电脑停止运行。 尽管你可以选择这些文件，但系统会将其作为排除的文件夹或文件跳过。 示例包括可执行文件和你的 Windows 文件夹。
 
-管理员指南包含受支持文件类型的完整列表以及自动排除的文件和文件夹的完整列表：[支持 Azure 信息保护统一标记客户端的文件类型](clientv2-admin-guide-file-types.md)。
+管理员指南包含受支持文件类型的完整列表以及自动排除的文件和文件夹的完整列表：[Azure 信息保护统一标签客户端支持的文件类型](clientv2-admin-guide-file-types.md)。
 
 
 ### <a name="to-classify-and-protect-a-file-by-using-file-explorer"></a>使用文件资源管理器对文件进行分类和保护
@@ -118,7 +118,7 @@ ms.locfileid: "67236948"
 
      ![“分类和保护 - Azure 信息保护”对话框中无可用标签](../media/v2info-protect-dialog-labels-dimmed.png)
 
-3. 可以指定您自己的保护设置，而不是在所选标签使用管理员可能已包含的保护设置。 若要执行此操作，请选择“使用自定义权限进行保护”  。
+3. 你可以指定自己的保护设置, 而不是使用管理员可能已包含在所选标签中的保护设置。 若要执行此操作，请选择“使用自定义权限进行保护”  。
     
     指定的任何自定义权限将替换而不是补充管理员可能已为所选标签定义的保护设置。  
 
@@ -130,7 +130,7 @@ ms.locfileid: "67236948"
     
      或者，可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
         
-    - **过期访问**：选择此选项只对时间敏感文件，以便指定的人员无法设置日期后打开选定的文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
+    - **过期访问**：仅为时间敏感的文件选择此选项, 以使指定的人员无法在设置日期后打开选定的一个或哪些文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
     
      请注意，如果此设置此前通过 Office 2010 应用的自定义权限配置，则指定到期日期不会显示在此对话框中，但仍然会设置到期日期。 此显示问题仅适用于在 Office 2010 中配置了到期日期的情况。
 
@@ -145,10 +145,10 @@ ms.locfileid: "67236948"
 指定的分类和保护会保留在文件中，即使你通过电子邮件发送文件或将其保存到其他位置也是如此。 
 
 ## <a name="other-instructions"></a>其他说明
-为 Azure 信息保护统一标记客户端将指导用户从多个操作说明：
+有关 Azure 信息保护统一标签客户端的用户指南中的详细操作说明:
 
 -   [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 
-请参阅[概述的敏感度标签](/Office365/SecurityCompliance/sensitivity-labels)。
+请参阅[敏感度标签概述](/Office365/SecurityCompliance/sensitivity-labels)。

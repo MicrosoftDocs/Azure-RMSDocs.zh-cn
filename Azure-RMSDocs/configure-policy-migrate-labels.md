@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 4608bf407a88a306c1abfdd62fc122b80b6a5419
-ms.sourcegitcommit: eff3bfbf95588e8876d9d6cbb95f80d304142668
+ms.openlocfilehash: f1340d42c0f09733bf4517b4d573e75e5d88b68e
+ms.sourcegitcommit: ae48f7cea01b4d615052659072305abb8698a7f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68340724"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375423"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-office-365-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签
 
@@ -164,8 +164,7 @@ Azure 信息保护客户端 (经典) 可以使用列出的所有标签设置而�
 
 #### <a name="copy-your-policies-and-policy-settings"></a>复制策略和策略设置
 
-> [!NOTE]
-> 此选项将在预览版中逐步推出, 并可能会发生更改。 如果看不到 "**复制策略 (预览版)** " 选项, 请在几周后重试。
+此选项将在预览版中逐步推出, 并可能会发生更改。 如果看不到 "**复制策略 (预览版)** " 选项, 请在几周后重试。
 
 迁移标签后, 可以选择用于复制策略的选项。 如果选择此选项, 策略的一次性副本及其[策略设置](configure-policy-settings.md)和任何[高级客户端设置](./rms-client/client-admin-guide-customizations.md#available-advanced-client-settings)将发送到管理标签的管理中心:Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。
 

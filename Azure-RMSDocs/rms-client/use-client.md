@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.suite: ems
 search.appverid:
 - MET150
-ms.openlocfilehash: e4746246c13ece385cd19f9ace8422ae6210132f
-ms.sourcegitcommit: a354b71d82dc5d456bff7e4472181cbdd962948a
+ms.openlocfilehash: 531cd6fed4974435edcf5fd9d7afb12b09e0a61b
+ms.sourcegitcommit: ae48f7cea01b4d615052659072305abb8698a7f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352855"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375465"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -68,21 +68,20 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 |标记操作：手动、建议、自动| 是 | 是 |
 |中心报告（分析）：| 是 | 是 |
 |标签的多语言支持:| 是 | 是 |
-|重置设置和导出日志：| 是 | 是 |
-|用户定义的权限：| 是 | 是；但具有限制： <br /><br />-仅适用于 Outlook (请勿转发):支持<br /><br />-适用于 Word、Excel、PowerPoint 和文件资源管理器:在 Azure 门户中配置标签时受支持 |
+|来自电子邮件附件的标签继承：| 是 | 是  |
+|自定义项包括:<br />- 电子邮件的默认标签<br />-Outlook 中的弹出消息 <br />- S/MIME 支持<br />- 报告问题选项| 是 <br /><br /> 支持为[你在 Azure 门户中配置的高级客户端设置](client-admin-guide-customizations.md#how-to-configure-advanced-client-configuration-settings-in-the-portal)| 是 <br /><br /> 支持为[通过 PowerShell 配置的高级设置](clientv2-admin-guide-customizations.md#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) |
+|用户定义的权限：| 是 | 是；但具有限制： <br /><br />-适用于 Word、Excel、PowerPoint 和文件资源管理器:在 Azure 门户中配置标签时受支持 |
 |自定义权限：| 是 | 文件资源管理器和 PowerShell <br /><br /> 在 Office 应用程序中, 用户可以选择 "**文件信息** > **保护文档** > **限制访问**" 或 "管理员可为用户定义的权限配置标签"。|
 |Office 应用中的“信息保护”栏：| 是 | 是；但具有限制：<br /><br /> - 无标题或可自定义的工具提示<br /><br /> - 应用的标签未显示标签颜色|
 |标签可应用视觉标记（页眉、页脚、水印）：| 是 | 是；但具有限制：<br /><br /> - 页眉和页脚不支持变量获取动态值 <br /><br /> - 不支持为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记|
 |文件资源管理器，右键单击操作：| 是 | 是；但具有限制：<br /><br /> - 无法保护 .ppdf 格式的 PDF 文档 <br /><br />  - 不支持仅保护模式|
 |受保护文件的查看器：| 是 | 是；但具有限制：<br /><br /> -对于一般受保护的文件 (.pfile), 与经典客户端的查看器不同, 不能将更改保存到最初打开的文件。|
-|PowerShell 命令：| 是 | 是；但具有限制：<br /><br />- 包含以下 Cmdlet：[Get-aipfilestatus](/powershell/module/azureinformationprotection/get-aipfilestatus), [AIPCustomPermissions](/powershell/module/azureinformationprotection/New-AIPCustomPermissions), [set-aipfileclassification](/powershell/module/azureinformationprotection/set-aipfileclassification), [set-aipfilelabel](/powershell/module/azureinformationprotection/set-aipfilelabel), [set-set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) <br /><br />-当前无法从容器文件 (zip、rar、7z、.msg 和 .pst) 中删除保护|
+|PowerShell 命令：| 是 | 是；但具有限制：<br /><br />-无法删除容器文件 (zip、rar、7z、.msg 和 .pst) 的保护|
 |离线支持保护操作：| 是 | 是；但具有限制： <br /><br />- 对于文件资源管理器和 PowerShell 命令，用户必须连接到 Internet 才能保护文件。 |
 |支持使用手动策略文件管理的已断开连接的计算机：| 是 |否 |
-|HYOK 支持：| 是 | 否<br /><br /> 从 Azure 门户迁移的标签以及为 HYOK 保护配置的标签通过 Azure 信息保护统一标记客户端显示，但不应用保护。 |
+|HYOK 支持：| 是 | 否 <br /><br /> 从 Azure 门户迁移的标签以及为 HYOK 保护配置的标签通过 Azure 信息保护统一标记客户端显示，但不应用保护。 |
 |事件查看器的使用情况日志记录：| 是 | 否|
-|来自电子邮件附件的标签继承：| 是 | 是  |
 |在 Outlook 中显示“不可转发”按钮| 是 | 否 |
-|包括以下内容的[自定义项](client-admin-guide-customizations.md#available-advanced-client-settings)：<br />- 电子邮件的默认标签<br />- 启用自定义权限 <br />- S/MIME 支持<br />- 报告问题选项| 是 | 是, 使用[PowerShell](clientv2-admin-guide-customizations.md#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) |
 |本地数据存储的扫描程序：| 是 | 否 |
 |跟踪和撤销：| 是 | 否 |
 |使用模板的仅保护模式 (无标签):| 是 | 否 |
@@ -116,7 +115,7 @@ Azure 信息保护统一标签客户端  从以下管理中心下载标签和策
 
 - 通过手动策略文件管理为断开连接的计算机支持 Office 应用
 
-- 作为用户可在 Office 应用中选择的选项的自定义权限:Word、Excel 和 PowerPoint
+- 自定义权限是用户可在 Office 应用中选择的单独选项:Word、Excel 和 PowerPoint
 
 - 从 Office 应用和文件资源浏览器中跟踪和撤销
 

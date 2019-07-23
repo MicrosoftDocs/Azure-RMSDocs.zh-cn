@@ -4,22 +4,22 @@ description: 了解如何配置 Azure 信息保护的默认策略。 如果修�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 9b3130b9eb2c6f75d06b0d419a4d74d3399562a4
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: d5cdc73e79891cc1756808d67e16f45796550de5
+ms.sourcegitcommit: ae48f7cea01b4d615052659072305abb8698a7f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60179801"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375401"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用对象：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 使用以下信息来了解如何配置 Azure 信息保护的默认策略。
 
@@ -30,7 +30,7 @@ ms.locfileid: "60179801"
 > [!IMPORTANT]
 > 从 2019 年 4 月开始，面向新客户逐步推出一项更改：不自动创建默认标签。 将面向统一标记平台自动预配这些租户，因此在 Azure 门户中进行配置后，无需迁移标签。
 > 
-> 对于这些租户，如果尚未在 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心创建任何敏感度标签，可以从 Azure 信息保护的当前默认策略创建默认标签。 为此，请从“标签”边栏选项卡中选择“生成默认标签”，然后将该标签添加到全局策略。 有关详细说明，请参阅[在 Azure 门户中开始使用 Azure 信息保护](quickstart-viewpolicy.md)快速入门。
+> 对于这些租户，如果尚未在 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心创建任何敏感度标签，可以从 Azure 信息保护的当前默认策略创建默认标签。 为此，请从“标签”边栏选项卡中选择“生成默认标签”   ，然后将该标签添加到全局策略。 有关详细说明，请参阅[在 Azure 门户中开始使用 Azure 信息保护](quickstart-viewpolicy.md)快速入门。
 
 
 ## <a name="current-default-policy"></a>当前默认策略
@@ -45,15 +45,15 @@ ms.locfileid: "60179801"
 
 - **机密\所有员工**
 
-- 机密\仅收件人
+- 机密\仅收件人 
 
 - **高度机密\所有员工** 
 
-- 高度机密\仅收件人 
+- 高度机密\仅收件人  
 
 如果没有为这些子标签自动配置保护，Azure 信息保护默认策略会与[旧版默认策略](#default-policy-before-july-31-2017)保持一致。
 
-将保护应用于“所有员工”子标签时，将通过使用在 Azure 门户中自动转换为标签的默认模板来配置此保护。 有关这些模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
+将保护应用于“所有员工”子标签时，将通过使用在 Azure 门户中自动转换为标签的默认模板来配置此保护  。 有关这些模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
 自 2017 年 8 月 30 日起，此版 Azure 信息保护默认策略包括多语言版本的标签名称和说明。 
 
@@ -87,10 +87,10 @@ ms.locfileid: "60179801"
 |高度机密\仅收件人|需要保护且仅收件人可以查看的高度机密数据。|**启用**：开 <br /><br />**可视标记**：页脚（电子邮件）<br /><br />归类为高度机密 <br /><br />**条件**：无<br /><br />**保护**：设置用户定义的权限（预览），在 Outlook 中应用“不转发”|
 
 ###### <a name="footnote-1"></a>脚注 1
-保护权限与[默认模板](configure-policy-templates.md#default-templates)“机密\所有员工”中的保护权限相匹配。
+保护权限与[默认模板](configure-policy-templates.md#default-templates)“机密\所有员工”中的保护权限相匹配  。
 
 ###### <a name="footnote-2"></a>脚注 2 
-保护权限与[默认模板](configure-policy-templates.md#default-templates)“高度机密\所有员工”中的保护权限相匹配。
+保护权限与[默认模板](configure-policy-templates.md#default-templates)“高度机密\所有员工”中的保护权限相匹配  。
 
 
 ### <a name="information-protection-bar"></a>信息保护栏
@@ -170,7 +170,7 @@ ms.locfileid: "60179801"
 |公用|此信息是内部的，企业内部或外部的所有人均可使用。|**启用**：开 <br /><br />**颜色**：绿色<br /><br />**可视标记**：关<br /><br />**条件**：无<br /><br />**保护**：无|
 |Internal|此信息包括各种可由所有员工使用并可与授权客户和业务合作伙伴共享的内部业务数据。 有关内部信息的示例包括公司策略和大多数内部通信。|**启用**：开 <br /><br />**颜色**：蓝色 <br /><br />**可视标记**：页脚（文档和电子邮件）： <br /><br />敏感度：Internal<br /><br />**条件**：无<br /><br />**保护**：无|
 |机密|此数据包括敏感业务信息。 向未经授权的用户公开此数据可能会对组织造成损坏。 有关机密信息的示例包括员工信息、各个客户项目或合同和销售帐户数据。|**启用**：开 <br /><br />**颜色**：橙色<br /><br />**可视标记**：页脚（文档和电子邮件）：<br /><br /> 敏感度：机密<br /><br />**条件**：无<br /><br />**保护**：无|
-|秘密|此数据包括必须予以保护的高度敏感业务信息。 向未经授权的用户公开秘密数据可能会对组织造成严重损坏。 有关秘密信息的示例包括个人身份信息、客户记录、源代码和预先公布的财务报告。|**启用**：开 <br /><br />**颜色**：红色<br /><br />**可视标记**：页脚（文档和电子邮件）：<br /><br /> 敏感度：秘密<br /><br />**条件**：无<br /><br />**保护**：无|
+|Secret|此数据包括必须予以保护的高度敏感业务信息。 向未经授权的用户公开秘密数据可能会对组织造成严重损坏。 有关秘密信息的示例包括个人身份信息、客户记录、源代码和预先公布的财务报告。|**启用**：开 <br /><br />**颜色**：红色<br /><br />**可视标记**：页脚（文档和电子邮件）：<br /><br /> 敏感度：Secret<br /><br />**条件**：无<br /><br />**保护**：无|
 
 
 ### <a name="sublabels"></a>子标签

@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fc76b7da1f687ab9876a6831539bf515df59aea1
-ms.sourcegitcommit: 9221a0a9f3862739446b9027931a05023e0d5fc3
+ms.openlocfilehash: 4b70be66db156dc92f57aaf0cc9ba3ce2413dd65
+ms.sourcegitcommit: ce47b16c16d93e710c0ff95588e1631ccc0e2829
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68287004"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387405"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -81,7 +81,7 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 - Windows Server 2008 R2 
 
-除了在物理计算机上安装客户端, 你还可以将其安装在虚拟机上。 检查虚拟桌面解决方案的软件供应商是否具有运行 Azure 信息保护统一标签客户端或 Azure 信息保护客户端可能需要的其他配置。 例如, 对于 Citrix 解决方案, 你可能需要禁用适用于 Office 的[Citrix 应用程序编程接口 (API) 挂钩](https://support.citrix.com/article/CTX107825)(winword、excel.exe、xsd.exe、powerpoint) 以及 Azure 信息保护的可执行文件标识客户端或 Azure 信息保护客户端 (policy.msip, policy.msip)。
+除了在物理计算机上安装客户端, 你还可以将其安装在虚拟机上。 检查虚拟桌面解决方案的软件供应商是否具有运行 Azure 信息保护统一标签客户端或 Azure 信息保护客户端可能需要的其他配置。 例如, 对于 Citrix 解决方案, 你可能需要禁用适用于 Office 的[Citrix 应用程序编程接口 (API) 挂钩](https://support.citrix.com/article/CTX107825)(winword、excel.exe、powerpnt) 以及 Azure 信息保护的可执行文件标识客户端或 Azure 信息保护客户端 (policy.msip, policy.msip)。
 
 对于列出的服务器版本, 远程桌面服务支持 Azure 信息保护客户端。 如果在远程桌面服务使用 Azure 信息保护客户端时删除用户配置文件, 请勿删除 **%Appdata%\Microsoft\Protect**文件夹。
 
