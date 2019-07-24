@@ -4,16 +4,16 @@ description: 入门教程，可便于配置和了解 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/20/2019
+ms.date: 07/19/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 889e10192cc36f7fba913683f21c18ee5e577280
-ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
+ms.openlocfilehash: 565a46f599922aeef3636756c47c561264bf010f
+ms.sourcegitcommit: a354b71d82dc5d456bff7e4472181cbdd962948a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "65934698"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68352823"
 ---
 # <a name="tutorial-configure-azure-information-protection-to-control-oversharing-of-information-using-outlook"></a>教程：配置 Azure 信息保护以使用 Outlook 控制信息的过度共享
 
@@ -75,7 +75,7 @@ ms.locfileid: "65934698"
 
 4. 复制标签 ID 值并将其粘贴到临时文件中，以便在以后的步骤中可轻松复制该值。 在本示例中，此标签 ID 值是“0e421e6d-ea17-4fdb-8f01-93a3e71333b8”  。
 
-5. 关闭“标签: 常规”边栏选项卡，但不要关闭 Azure 门户**。
+5. 关闭“标签: 常规”边栏选项卡，但不要关闭 Azure 门户  。
 
 ## <a name="create-a-scoped-policy-to-test-the-new-advanced-client-settings"></a>创建作用域内策略以测试新的高级客户端设置
 
@@ -89,7 +89,7 @@ ms.locfileid: "65934698"
 
 4. 帐户名显示在“策略”边栏选项卡上后，请选择“保存”且不对此边栏选项卡上的标签或设置进行其他更改   。 系统可能会提示你确认你的选择。 
 
-此作用域内策略现已准备就绪，可添加高级客户端设置。 关闭“策略: 过度共享教程”边栏选项卡，但不要关闭 Azure 门户**
+此作用域内策略现已准备就绪，可添加高级客户端设置。 关闭“策略: 过度共享教程”边栏选项卡，但不要关闭 Azure 门户 
 
 ## <a name="configure-and-test-advanced-client-settings-to-warn-prompt-for-justification-or-block-emails-that-have-the-general-label"></a>配置并测试以下高级客户端设置：警告、提示提供理由或阻止具有“常规”标签的电子邮件。
 
@@ -211,7 +211,7 @@ ms.locfileid: "65934698"
 例如，第一个测试是警告用户，你选择了“取消”，因此第一个事件 301 中的“用户响应”显示为“已取消”    。 例如：
 
 ```
-Client Version: 1.48.204.0
+Client Version: 1.53.10.0
 Client Policy ID: e5287fe6-f82c-447e-bf44-6fa8ff146ef4
 Item Full Path: Testing the General label for the Warn message.msg
 Item Name: Testing the General label for the Warn message
@@ -226,7 +226,7 @@ User Response: Dismissed
 但随后你选择了“确认并发送”，这反映在下一个事件 301 中，其中“用户响应”显示为“已确认”    ：
 
 ```
-Client Version: 1.48.204.0
+Client Version: 1.53.10.0
 Client Policy ID: e5287fe6-f82c-447e-bf44-6fa8ff146ef4
 Item Full Path: Testing the General label for the Warn message.msg
 Item Name: Testing the General label for the Warn message
@@ -241,7 +241,7 @@ User Response: Confirmed
 对于证明消息重复相同的模式，其具有事件 302。 第一个事件的“用户响应”为“已取消”，第二个事件显示所选的理由   。 例如：
 
 ```
-Client Version: 1.48.204.0
+Client Version: 1.53.10.0
 Client Policy ID: e5287fe6-f82c-447e-bf44-6fa8ff146ef4
 Item Full Path: Testing the General label for the Justify message.msg
 Item Name: Testing the General label for the Justify message
@@ -258,7 +258,7 @@ User Response: Confirmed
 在事件日志的顶部，可以看到已记录的阻止邮件，其中有一个事件 303。 例如：
 
 ```
-Client Version: 1.48.204.0
+Client Version: 1.53.10.0
 Client Policy ID: e5287fe6-f82c-447e-bf44-6fa8ff146ef4
 Item Full Path: Testing the General label for the Block message.msg
 Item Name: Testing the General label for the Block message
@@ -268,6 +268,24 @@ Label After Action: General
 Label ID After Action: 0e421e6d-ea17-4fdb-8f01-93a3e71333b8
 Action Source: 
 ```
+
+### <a name="optional-create-an-additional-advanced-client-setting-to-exempt-these-messages-for-internal-recipients"></a>可选：创建附加高级客户端设置，以便为内部收件人免除这些邮件
+
+使用自己的电子邮件地址作为收件人测试了警告、证明邮件的合理性并阻止邮件。 在生产环境中，只有当收件人位于组织外部时，才可以选择仅为指定的标签显示这些邮件。 可以将该免除扩展到组织经常与之合作的合作伙伴。
+
+为了说明这个过程，我们将创建一个名为“OutlookBlockTrustedDomains”的附加高级客户端设置，并从电子邮件地址指定你自己的域名  。 这样可以防止你之前看到的阻止邮件向在其电子邮件地址中共享你的域名的收件人显示，但仍会向其他收件人显示。 同样，可以为“OutlookWarnTrustedDomains”和“OutlookJustifyTrustedDomains”创建附加高级客户端设置   。
+
+1. Azure 门户中，在“Azure信息保护 - 策略”边栏选项卡上，选择“过度共享教程”旁边的上下文菜单 (...)    。 再选择“高级设置”  。
+
+2. 在“高级设置”边栏选项卡上，键入高级设置名称“OutlookBlockTrustedDomains”，然后从电子邮件地址中粘贴域名以获取该值   。 例如：
+    
+    ![Azure 信息保护教程 - 创建 OutlookBlockTrustedDomains 高级客户端设置](./media/configure-exemptblockdomain.png)
+
+4. 选择“保存和关闭”  。 不要关闭“策略”边栏选项卡或 Azure 门户  。
+
+5. 现在重复[上一个测试以阻止用户发送包含“常规”标签的电子邮件](#test-the-advanced-client-setting-to-block-users-from-sending-an-email-that-has-the-general-label)，当你使用自己的电子邮件地址时，不再看到阻止邮件。 电子邮件不间断地发送。
+    
+    要确认仍然显示外部收件人的阻止邮件，请再次重复测试，但这次指定一个组织外部的收件人。 此时，你再次看到阻止邮件，同时将新收件人地址列为不可信。
 
 ## <a name="configure-and-test-an-advanced-client-setting-to-warn-prompt-for-justification-or-block-emails-that-dont-have-a-label"></a>配置和测试以下高级客户端设置：警告、提示提供理由或阻止没有标签的电子邮件
 
@@ -380,7 +398,7 @@ Action Source:
 例如，电子邮件没有标签时，理由提示会显示以下结果：
 
 ```
-Client Version: 1.48.204.0
+Client Version: 1.53.10.0
 Client Policy ID: e5287fe6-f82c-447e-bf44-6fa8ff146ef4
 Item Full Path: Testing send an email without a label for the Justify message.msg
 Item Name: Testing send an email without a label for the Justify message
@@ -390,22 +408,6 @@ User Justification: My manager approved sharing of this content
 Action Source: 
 User Response: Confirmed
 ```
-
-## <a name="create-an-advanced-client-setting-to-exempt-these-messages-for-internal-recipients"></a>创建高级客户端设置，以便为内部收件人免除这些邮件
-
-我们一直在测试这些邮件使用自己的电子邮件地址作为收件人。 但是，在生产环境中，只有当收件人位于组织外部时，才可以选择显示这些邮件。 可以将该免除扩展到组织经常与之合作的合作伙伴。
-
-为了说明这个过程，我们将创建一个名为“OutlookBlockTrustedDomains”的新高级客户端设置，并从电子邮件地址指定你自己的域名  。 这将为在其电子邮件地址中共享域名的收件人阻止显示阻止邮件。 你可以同样地为“OutlookWarnTrustedDomains”和“OutlookJustifyTrustedDomains”创建高级客户端设置   。
-
-1. Azure 门户中，在“Azure信息保护 - 策略”边栏选项卡上，选择“过度共享教程”旁边的上下文菜单 (...)    。 再选择“高级设置”  。
-
-2. 在“高级设置”边栏选项卡上，键入高级设置名称“OutlookBlockTrustedDomains”，然后从电子邮件地址中粘贴域名以获取该值   。 例如：
-    
-    ![Azure 信息保护教程 - 创建 OutlookBlockTrustedDomains 高级客户端设置](./media/configure-exemptblockdomain.png)
-
-4. 选择“保存和关闭”  。 不要关闭“策略”边栏选项卡或 Azure 门户  。
-
-5. 现在重复[上一个测试，将未标记的电子邮件发送到自己的地址](#test-the-advanced-client-setting-to-block-users-from-sending-an-email-that-isnt-labeled)，且不会再看到阻止邮件。 但是，如果从组织外部添加新收件人，则会再次看到阻止邮件。
 
 ## <a name="clean-up-resources"></a>清理资源
 
@@ -419,6 +421,6 @@ User Response: Confirmed
 
 ## <a name="next-steps"></a>后续步骤
 
-为了更快地进行测试，本教程使用电子邮件发送给单个收件人，并且没有附件。 但是，你可以对多个收件人、多个标签应用相同的方法，并将相同的逻辑应用于电子邮件附件，其标签状态通常对用户不太明显。 例如，电子邮件本身标记为“公共”，但附加的 PowerPoint 演示文稿标记为“常规”。 有关详细信息，请参阅管理指南中的以下部分：[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](./rms-client/client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
+为了更快地进行测试，本教程使用电子邮件发送给单个收件人，并且没有附件。 但是，你可以对多个收件人、多个标签应用相同的方法，并将相同的逻辑应用于电子邮件附件，其标签状态通常对用户不太明显。 例如，电子邮件本身标记为“公共”，但附加的 PowerPoint 演示文稿标记为“常规”。 有关配置选项的详细信息，请参阅管理指南中的以下部分：[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](./rms-client/client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
 
 管理指南还包含有关可用于自定义客户端行为的其他高级客户端设置的信息。 有关完整列表，请参阅[可用的高级客户端设置](./rms-client/client-admin-guide-customizations.md#available-advanced-client-settings)。
