@@ -1,24 +1,24 @@
 ---
 title: 分类-Azure 信息保护客户端
-description: 说明如何使用 Windows 的 Azure 信息保护客户端时分类文档和电子邮件。
+description: 说明如何在使用适用于 Windows 的 Azure 信息保护客户端时对文档和电子邮件进行分类。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: d65c7690-fab7-4823-845c-8c73903e9c79
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ecc7a1e0655c322151ba0c44c51592656303d857
-ms.sourcegitcommit: 79218b6b064d757459d0ffb51002959ba6d6bcb9
+ms.openlocfilehash: e810245f94b688c1fc6018905f7a0265ebb0ec98
+ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64914726"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68428240"
 ---
-# <a name="user-guide-classify-a-file-or-email-with-the-azure-information-protection-client"></a>用户指南：对文件或电子邮件中的 Azure 信息保护客户端进行分类
+# <a name="user-guide-classify-a-file-or-email-with-the-azure-information-protection-client"></a>用户指南：使用 Azure 信息保护客户端对文件或电子邮件进行分类
 
 >适用对象：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
 >
@@ -89,7 +89,7 @@ ms.locfileid: "64914726"
 
 3. 如果所选文件不支持分类，请单击“关闭”。 无法对此文件进行分类，也无法对其提供保护。
     
-    如果选择标签，请单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”**。
+    如果选择标签，请单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”** 。
 
 若要更改所选标签，只需重复此过程，然后选择其他标签即可。
 

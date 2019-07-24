@@ -1,26 +1,26 @@
 ---
-title: 使用 Azure 信息保护统一标记客户端进行分类
-description: 有关如何进行分类的文档和电子邮件时使用 Azure 信息保护统一标记适用于 Windows 的客户端的说明。
+title: 使用 Azure 信息保护统一标签客户端进行分类
+description: 使用 Azure 信息保护 Windows 统一标签客户端时如何对文档和电子邮件进行分类的说明。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: c7ec1c5f6a929d9b6b810b647e6cb6dbe3c42316
-ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
+ms.openlocfilehash: 5faf6151a74eec0f213cf425d45f51cbd9e677d5
+ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64767959"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68428092"
 ---
-# <a name="user-guide-classify-a-file-or-email-by-using-the-azure-information-protection-unified-labeling-client-for-windows"></a>用户指南：通过使用 Windows Azure 信息保护统一标记客户端中对文件或电子邮件进行分类
+# <a name="user-guide-classify-a-file-or-email-by-using-the-azure-information-protection-unified-labeling-client-for-windows"></a>用户指南：使用适用于 Windows 的 Azure 信息保护统一标签客户端对文件或电子邮件进行分类
 
->适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用对象： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
 >
-> 说明：*[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类（但不保护）。 如果还需对文档和电子邮件进行保护，请参阅[分类和保护说明](clientv2-classify-protect.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
@@ -31,33 +31,33 @@ ms.locfileid: "64767959"
 
 ## <a name="using-office-apps-to-classify-your-documents-and-emails"></a>使用 Office 应用对文档和电子邮件进行分类
 
-从**主页**选项卡上，选择**敏感度**功能区中，按钮，然后选择一个已为你配置的标签。 例如：
+从 "**主页**" 选项卡上, 选择功能区中的 "**敏感度**" 按钮, 然后选择一个已为你配置的标签。 例如：
 
 ![敏感度按钮示例](../media/sensitivity-not-set-callout.png)
 
-或者，如果所选**显示数据条**从**敏感度**按钮，您可以从 Azure 信息保护栏选择标签。 例如：
+或者, 如果选择了 "**敏感度**" 按钮中的 "**显示栏**", 则可以从 Azure 信息保护栏中选择一个标签。 例如：
 
 ![Azure 信息保护栏示例](../media/info-protect-barv2-not-set-callout.png)
 
-若要设置标签，例如"常规"，选择**常规**。 如果你不确定要将哪种标签应用于当前文档或电子邮件，请使用标签工具提示详细了解每种标签及其应用情况。 
+若要设置标签, 例如 "常规", 请选择 "**常规**"。 如果你不确定要将哪种标签应用于当前文档或电子邮件，请使用标签工具提示详细了解每种标签及其应用情况。 
 
-如果已将某种标签应用于文档，并且想要进行更改，可以选择其他标签。 如果已经显示了 Azure 信息保护栏中，并且不为您进行选择，首先单击栏上显示标签，则**编辑标签**图标，当前标签值旁边。
+如果已将某种标签应用于文档，并且想要进行更改，可以选择其他标签。 如果已显示 Azure 信息保护栏, 并且标签未显示在要选择的栏上, 请首先单击当前标签值旁边的 "**编辑标签**" 图标。
 
 除了手动选择标签，还可通过以下方式应用标签：
 
 - 管理员配置了默认标签，你可保留或更改该标签。
 
-- 您的管理员配置标签以检测到敏感信息时自动设置。
+- 在检测到敏感信息时, 管理员配置的标签将自动设置。
 
-- 管理员配置时，建议使用标签检测到敏感信息时，系统会提示你接受此建议 （和应用标签），或拒绝它 （不应用建议的标签）。
+- 在检测到敏感信息时, 管理员配置了建议的标签, 并且系统会提示你接受建议 (并应用标签) 或拒绝此建议 (不应用建议的标签)。
 
-### <a name="exceptions-for-the-sensitivity-button"></a>敏感度按钮的异常
+### <a name="exceptions-for-the-sensitivity-button"></a>"敏感度" 按钮的异常
 
-##### <a name="dont-see-the-sensitivity-button-in-your-office-apps"></a>看不到 Office 应用程序中的敏感度按钮？
+##### <a name="dont-see-the-sensitivity-button-in-your-office-apps"></a>在 Office 应用程序中看不到 "敏感度" 按钮？
 
-- 您可能不具有 Azure 信息保护统一标记客户端[安装](install-unifiedlabelingclient-app.md)。
+- 你可能没有[安装](install-unifiedlabelingclient-app.md)Azure 信息保护统一标签客户端。
 
-- 如果没有看到**敏感度**按钮在功能区上，但看**保护**按钮与标签，则必须安装了 Azure 信息保护客户端并不在 Azure 信息保护统一标记的客户端。 [详细信息](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+- 如果未在功能区上看到 "**敏感度**" 按钮, 而是看到带标签的 "**保护**" 按钮, 则已安装 azure 信息保护客户端, 而不是 azure 信息保护统一标签客户端。 [详细信息](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 ##### <a name="is-the-label-that-you-expect-to-see-not-displayed"></a>没有显示希望看到的标签？ 
 
@@ -90,7 +90,7 @@ ms.locfileid: "64767959"
 
 3. 如果所选文件不支持分类，请单击“关闭”。 无法对此文件进行分类，也无法对其提供保护。
     
-    如果选择标签，请单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”**。
+    如果选择标签，请单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”** 。
 
 若要更改所选标签，只需重复此过程，然后选择其他标签即可。
 
@@ -98,11 +98,11 @@ ms.locfileid: "64767959"
 
 ## <a name="other-instructions"></a>其他说明
 
-有关 Windows 的 Azure 信息保护统一标记客户的用户从多个操作说明指南：
+有关适用于 Windows 的 Azure 信息保护统一标签客户端的用户指南中的详细操作说明:
 
 - [要执行什么操作？](clientv2-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息
 
-请参阅[概述的敏感度标签](/Office365/SecurityCompliance/sensitivity-labels)。
+请参阅[敏感度标签概述](/Office365/SecurityCompliance/sensitivity-labels)。
 

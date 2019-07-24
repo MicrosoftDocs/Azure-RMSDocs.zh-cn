@@ -4,22 +4,22 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/16/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: db7dc34da3f8cd2ee92fa0c3a500880ed561dc40
-ms.sourcegitcommit: eff3bfbf95588e8876d9d6cbb95f80d304142668
+ms.openlocfilehash: f60d75655e24e7888ae45111d2b3538a8a12c288
+ms.sourcegitcommit: 6c3681cec0f807c6af031db67242ff01a99cd57b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68340684"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68411696"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
->适用对象：  Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
 > 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -60,6 +60,7 @@ Azure 信息保护统一标签客户端的每个正式发行版 (GA) 在发布�
     
     这些高级设置支持以下自定义:
      - [在 Office 应用程序中显示“信息保护”栏](clientv2-admin-guide-customizations.md#display-the-information-protection-bar-in-office-apps)
+    - [使 Outlook 邮件免于强制标记](clientv2-admin-guide-customizations.md#exempt-outlook-messages-from-mandatory-labeling)
     - [在 Outlook 中启用建议的分类](clientv2-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
     - [为 Outlook 设置不同的默认标签](clientv2-admin-guide-customizations.md#set-a-different-default-label-for-outlook)
     - [使用强制标签时，删除文档的“以后再说”](clientv2-admin-guide-customizations.md#remove-not-now-for-documents-when-you-use-mandatory-labeling)

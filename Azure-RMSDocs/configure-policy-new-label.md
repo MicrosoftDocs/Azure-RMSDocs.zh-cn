@@ -4,23 +4,23 @@ description: 尽管 Azure 信息保护附带了可以自定义的默认标签，
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 5651ae986dde5fe94578373643468f76f1b5f371
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: d0b0fff9b8e3cf7a27fd838dd8d84a6c35c97dd3
+ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60179757"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68428428"
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>如何创建 Azure 信息保护的标签
 
 >适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 尽管 Azure 信息保护附带了可以自定义的默认标签，你还可以创建自己的标签。
 
@@ -44,7 +44,7 @@ ms.locfileid: "60179757"
     
     指定显示名称时，禁止指定一些字符（如反斜杠和 & 号），因为并非所有使用 Azure 信息保护的服务和应用程序都支持这些字符。 除了禁止指定的字符外，还请不要指定 # 字符。    
     
-    请注意，新标签将自动分配为黑色。 从颜色列表中选择一种可区分的颜色，或者输入颜色的红色、绿色和蓝色 (RGB) 组成的十六进制三元色代码。 例如，#DAA520。 如果需要有关这些代码的参考，可首先查看 MSDN 文档中实用的[按名称排列颜色](https://msdn.microsoft.com/library/aa358802(v=vs.85).aspx)。可在多种图片编辑程序（例如 Microsoft 画图，用户可在此程序中通过调色板选择自定义颜色，它会自动显示 RGB 值）中找到这些代码。
+    请注意，新标签将自动分配为黑色。 从颜色列表中选择一种可区分的颜色，或者输入颜色的红色、绿色和蓝色 (RGB) 组成的十六进制三元色代码。 例如，#DAA520。 如果需要对这些代码进行引用, 可从 MSDN web 文档的 " [ \<> 颜色](https://developer.mozilla.org/docs/Web/CSS/color_value)" 页中找到一个有用的表格。也可在许多可编辑图片的应用程序中找到这些代码。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 
 4. 将新的标签提供给用户：从“分类” > “策略”菜单选项中，选择要包含新标签的策略。 选择“添加或删除标签”。 从“策略:添加或删除标签”边栏选项卡中选择标签，然后依次选择“确定”和“保存”。
     

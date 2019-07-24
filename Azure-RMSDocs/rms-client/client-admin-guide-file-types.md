@@ -1,22 +1,22 @@
 ---
-title: 文件类型支持的 Azure 信息保护客户端
+title: 支持的文件类型-Azure 信息保护客户端
 description: 有关支持的文件类型、文件扩展名以及负责适用于 Windows 的 Azure 信息保护客户端的管理员的保护级别的技术详细信息。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 158a5703fa776aed01151fdf09474e54cc3baaa1
-ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
+ms.openlocfilehash: 8ef451597e32915cdc14e859f275e0d8d20326f4
+ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64768321"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68428299"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -95,9 +95,9 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
   |                                                     Office 应用程序                                                      |                                                支持的最大文件大小                                                 |
   |-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-  |             Word 2007（仅受 AD RMS 支持）<br /><br />Word 2010<br /><br />Word 2013<br /><br />Word 2016             |                                          32 位：512 MB<br /><br />64 位：512 MB                                          |
-  |           Excel 2007（仅受 AD RMS 支持）<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016           |                      32 位：2 GB<br /><br />64 位：仅受可用磁盘空间和内存限制                       |
-  | PowerPoint 2007（仅受 AD RMS 支持）<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016 | 32 位：仅受可用磁盘空间和内存限制<br /><br />64 位：仅受可用磁盘空间和内存限制 |
+  |             Word 2007（仅受 AD RMS 支持）<br /><br />Word 2010<br /><br />Word 2013<br /><br />Word 2016             |                                          32位:512 MB<br /><br />64位:512 MB                                          |
+  |           Excel 2007（仅受 AD RMS 支持）<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016           |                      32位:2 GB<br /><br />64位:仅受可用磁盘空间和内存限制                       |
+  | PowerPoint 2007（仅受 AD RMS 支持）<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016 | 32位:仅受可用磁盘空间和内存限制<br /><br />64位:仅受可用磁盘空间和内存限制 |
 
 
 - **对于其他所有文件**： 
@@ -171,7 +171,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 这两个设置会导致 Azure 信息保护客户端将常规保护应用于具有某一文件扩展名的所有文件。 如果这是你的目标，则无需进行任何进一步的配置。 但是，你可以为特定文件类型定义例外，以便它们仍受本机保护。 为此，你必须针对每个文件类型对注册表执行三个（针对 32 位 Windows）或六个（针对 64 位 Windows）额外的编辑操作：
 
-1. 对于 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection** 和 **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection**（如果适用）：添加新的密钥名称的文件扩展名 （不带前面的句点）。
+1. 对于 **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection** 和 **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection**（如果适用）：添加名称为 "文件扩展名" 的新密钥 (不带前面的句点)。
 
     例如，对于文件扩展名为 .docx 的文件，创建一个名为 **DOCX**的项。
 
@@ -185,7 +185,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 通过更改支持以下值的 **Encryption** 字符串的值，你可以在其他情况下进行类似的注册表编辑：
 
-- **Pfile**：一般性保护
+- **Pfile**：一般保护
 
 - **本机**：本机保护
 

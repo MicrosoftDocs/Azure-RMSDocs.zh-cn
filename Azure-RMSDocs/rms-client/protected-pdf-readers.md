@@ -5,7 +5,7 @@ author: cabailey
 ms.author: cabailey
 manager: barbkess
 ms.date: 05/23/2019
-ms.topic: article
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
@@ -13,12 +13,12 @@ ms.reviewer: kartikka
 ms.suite: ems
 search.appverid:
 - MET150
-ms.openlocfilehash: fe186d53b4e4b95b8cb6dcf7b5751532e0021d2a
-ms.sourcegitcommit: e730f897452fcb0ca1003c6b86f6e65678d0ec57
+ms.openlocfilehash: 7254e43e40ba393c1c4280847a0a9d6e4219c2a3
+ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885567"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427787"
 ---
 # <a name="supported-pdf-readers-for-microsoft-information-protection"></a>适用于 Microsoft 信息保护的受支持的 PDF 阅读器
 

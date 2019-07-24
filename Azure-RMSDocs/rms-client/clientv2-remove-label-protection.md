@@ -1,36 +1,36 @@
 ---
-title: 删除标签使用 Azure 信息保护统一标记客户端
-description: 如何使用 Azure 信息保护文件和电子邮件中删除敏感度标签和保护统一标记的客户端。
+title: 使用 Azure 信息保护统一标签客户端删除标签
+description: 使用 Azure 信息保护统一标签客户端从文件和电子邮件中删除敏感度标签和保护的说明。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/24/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: a2443a632fadf51aab5bb59b9e96b7b16547807d
-ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
+ms.openlocfilehash: 1d7d712c43c3fcc13d3dfaebf0b0bcb110f40354
+ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64767727"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68428040"
 ---
-# <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection"></a>用户指南：从文件和具有已标记为 Azure 信息保护的电子邮件删除标签和保护
+# <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection"></a>用户指南：从已由 Azure 信息保护标记的文件和电子邮件中删除标签和保护
 
->适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用对象： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
 >
-> 说明：*[Azure 信息保护统一标记适用于 Windows 的客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
-Azure 信息保护统一客户端何时[在计算机上安装](install-client-app.md)，可以从文件和电子邮件中删除敏感度标签和保护。
+当[你的计算机上安装](install-client-app.md)了 Azure 信息保护统一客户端时, 你可以从文件和电子邮件中删除敏感度标签和保护。
 
-当您删除的敏感度标签配置为应用保护时，此操作还会从文件中移除保护。 系统可能会提示你记录删除该标签的原因。
+如果你删除的敏感度标签已配置为应用保护, 则此操作还会删除该文件的保护。 系统可能会提示你记录删除该标签的原因。
 
 > [!IMPORTANT]
 > 必须是文件所有者才能删除保护，或者已被授予删除保护的权限（导出或完全控制 Rights Management 权限）。
 
-如果想要选择其他标签或一组其他的保护设置，则无需删除标签或保护。 相反，选择一个新标签，如有必要，您可以通过使用文件资源管理器中定义自定义权限。 
+如果想要选择其他标签或一组其他的保护设置，则无需删除标签或保护。 您可以选择新标签, 如有必要, 您可以使用文件资源管理器定义自定义权限。 
 
 在以下 Office 桌面应用程序中创建或编辑 Office 文档和电子邮件时，你可以删除其中的标签和保护：Word、Excel、PowerPoint、Outlook。 
 
@@ -38,17 +38,17 @@ Azure 信息保护统一客户端何时[在计算机上安装](install-client-ap
 
 ## <a name="using-office-apps-to-remove-labels-and-protection-from-documents-and-emails"></a>使用 Office 应用程序从文档和电子邮件删除标签和保护
 
-从**主页**选项卡上，选择**敏感度**按钮在功能区上，清除当前所选的标签。
+从 "**开始**" 选项卡中, 选择功能区上的 "**敏感度**" 按钮, 然后清除当前选择的标签。
 
-或者，如果所选**显示数据条**从**敏感度**按钮，可以选择**删除标签**图标从 Azure 信息保护栏：
+或者, 如果选择了 "**敏感度**" 按钮中的 "**显示栏**", 则可以从 Azure 信息保护栏中选择 "**删除标签**" 图标:
 
 ![Azure 信息保护栏 - 删除标签](../media/v2delete-label.png)
 
-如果**删除标签**图标不立即可用，请先选择**编辑标签**图标：
+如果 "**删除标签**" 图标无法立即使用, 请先选择 "**编辑标签**" 图标:
 
 ![Azure 信息保护栏 - 编辑标签](../media/v2edit-label.png)
 
-如果仍未看到**删除标签**图标，你的管理员不允许你使用此选项，因为所有文档和电子邮件都必须都有标签。
+如果仍未看到 "**删除标签**" 图标, 则管理员不允许你使用此选项, 因为所有文档和电子邮件都必须有标签。
 
 ## <a name="using-file-explorer-to-remove-labels-and-protection-from-files"></a>使用文件资源管理器从文件中删除标签和保护
 
@@ -62,7 +62,7 @@ Azure 信息保护统一客户端何时[在计算机上安装](install-client-ap
 
 4. 从多个文件中删除自定义保护：在“分类和保护 - Azure 信息保护”对话框中，单击“删除自定义权限”。
 
-5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”**。
+5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”** 。
 
 
 ## <a name="other-instructions"></a>其他说明
@@ -72,5 +72,5 @@ Azure 信息保护统一客户端何时[在计算机上安装](install-client-ap
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 
-请参阅[概述的敏感度标签](/Office365/SecurityCompliance/sensitivity-labels)。
+请参阅[敏感度标签概述](/Office365/SecurityCompliance/sensitivity-labels)。
 

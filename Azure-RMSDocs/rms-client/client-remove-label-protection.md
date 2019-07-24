@@ -4,25 +4,25 @@ description: 说明了如何从由 Azure 信息保护标记的文件中，或从
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 031bfb196e7f896b49e96d4b94574b43e11a8fe8
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: a22e174366204fbf067e9e1c10286ef248b71a67
+ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60183212"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68428191"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>用户指南：从由 Azure 信息保护标记的文件和电子邮件中，或从受 Rights Management 保护的文件和电子邮件中，删除标签和保护
 
 >适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 如果[计算机上安装了 Azure 信息保护客户端](install-client-app.md)，你可以从文件和电子邮件中删除分类标签和保护。
 
@@ -47,7 +47,7 @@ ms.locfileid: "60183212"
 
 ![Azure 信息保护栏 - 编辑标签](../media/edit-label.png)
 
-如果仍未看到**删除标签**图标，你的管理员不允许你使用此选项，因为所有文档和电子邮件都必须都有标签。
+如果仍未看到 "**删除标签**" 图标, 则管理员不允许你使用此选项, 因为所有文档和电子邮件都必须有标签。
 
 > [!NOTE]
 > 如果没有在 Office 应用程序中看到此信息保护栏：
@@ -72,7 +72,7 @@ ms.locfileid: "60183212"
     
     如果未看到“删除自定义权限”选项，则表示管理员禁止你使用此选项。
 
-5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”**。
+5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”** 。
 
 
 ## <a name="other-instructions"></a>其他说明

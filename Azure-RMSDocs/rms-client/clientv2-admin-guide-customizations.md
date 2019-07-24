@@ -1,6 +1,5 @@
 ---
 title: 自定义配置-Azure 信息保护统一标签客户端
-description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签客户端的信息。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
@@ -11,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 662898959c48cb5cb1a7455bdd377c8ac9e966ec
-ms.sourcegitcommit: ce47b16c16d93e710c0ff95588e1631ccc0e2829
+ms.openlocfilehash: c583dfd8fe17a926bc2014a626d289a3d29d627c
+ms.sourcegitcommit: 6c3681cec0f807c6af031db67242ff01a99cd57b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387420"
+ms.locfileid: "68411729"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
->适用对象：  Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
 > 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -80,7 +79,7 @@ ms.locfileid: "68387420"
 
 - **Name**是标签的原始名称, 在所有标签中都是唯一的。 如果在创建标签之后更改其名称, 此值保持不变。
 
-- **显示名称**是用户看到的标签名称, 并且在所有标签中不必唯一。 例如, 用户会看到一个**员工**子标签了 "**机密**" 标签, 而另  一个员工子标签 "**高度机密**" 标签。 这些子标签都显示相同的名称, 但不是相同的标签, 并且具有不同的设置。
+- **显示名称**是用户看到的标签名称, 并且在所有标签中不必唯一。 例如, 用户会看到一个**员工**子标签了 "**机密**" 标签, 而另一个员工子标签 "**高度机密**" 标签。 这些子标签都显示相同的名称, 但不是相同的标签, 并且具有不同的设置。
 
 若要配置标签高级设置, 请使用 "**名称**" 值。 例如, 若要标识下图中的标签, 请指定`-Identity "All Company"`:
 
@@ -117,6 +116,7 @@ ms.locfileid: "68387420"
 |----------------|---------------|
 |AttachmentAction|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 |AttachmentActionTip|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments) 
+|DisableMandatoryInOutlook|[使 Outlook 邮件免于强制标记](#exempt-outlook-messages-from-mandatory-labeling)
 |EnableCustomPermissions|[在文件资源管理器中禁用自定义权限](#disable-custom-permissions-in-file-explorer)|
 |EnableCustomPermissionsForCustomProtectedFiles|[对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) |
 |EnableLabelByMailHeader|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
@@ -129,6 +129,7 @@ ms.locfileid: "68387420"
 |OutlookJustifyUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookRecommendationEnabled|[在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)|
 |OutlookOverrideUnlabeledCollaborationExtensions|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
+|OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookWarnTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookWarnUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |PostponeMandatoryBeforeSave|[使用强制标签时，删除文档的“以后再说”](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
@@ -173,6 +174,22 @@ ms.locfileid: "68387420"
 
     Set-LabelPolicy -Identity Global -AdvancedSettings @{HideBarByDefault="False"}
 
+## <a name="exempt-outlook-messages-from-mandatory-labeling"></a>使 Outlook 邮件免于强制标记
+
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+
+默认情况下, 当你启用 "**所有文档和电子邮件**的标签策略" 设置时, 必须具有标签, 所有已保存的文档和已发送的电子邮件都必须应用标签。 配置以下高级设置时, 策略设置仅适用于 Office 文档, 而不适用于 Outlook 邮件。
+
+对于所选的标签策略, 请指定以下字符串:
+
+- 键:**DisableMandatoryInOutlook**
+
+- 值：**True**
+
+示例 PowerShell 命令, 其中标签策略命名为 "Global":
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
+
 ## <a name="enable-recommended-classification-in-outlook"></a>在 Outlook 中启用建议的分类
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
@@ -210,9 +227,9 @@ ms.locfileid: "68387420"
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-使用 "**所有文档和电子邮件**的标签策略" 设置必须具有标签时, 用户首次保存 Office 文档和发送电子邮件时, 系统将提示用户选择标签。 对于文档，用户可以选择“以后再说”  暂时关闭提示以选择标签，并返回到文档。 但是不能在未选择标签的情况下关闭已保存的文档。 
+使用 "**所有文档和电子邮件**的标签策略" 设置必须具有标签时, 用户首次保存 Office 文档和发送电子邮件时, 系统将提示用户选择标签。 对于文档，用户可以选择“以后再说”暂时关闭提示以选择标签，并返回到文档。 但是不能在未选择标签的情况下关闭已保存的文档。 
 
-在配置此设置时，将删除“以后再说”  选项，以便首次保存文档时用户必须选择一个标签。
+在配置此设置时，将删除“以后再说”选项，以便首次保存文档时用户必须选择一个标签。
 
 对于所选的标签策略, 请指定以下字符串:
 
@@ -240,35 +257,35 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 键:**RemoveExternalContentMarkingInApp**
 
-- 值：\<Office 应用程序类型 WXP>  
+- 值：\<Office 应用程序类型 WXP> 
 
 例如：
 
-- 若要仅搜索 Word 文档，请指定 W  。
+- 若要仅搜索 Word 文档，请指定 W。
 
-- 若要搜索 Word 文档和 PowerPoint 演示文稿，请指定 WP  。
+- 若要搜索 Word 文档和 PowerPoint 演示文稿，请指定 WP。
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
     Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInApp="WX"}
 
-然后需要至少一个高级客户端设置 ExternalContentMarkingToRemove，  指定页眉或页脚的内容以及如何删除或替换它们。
+然后需要至少一个高级客户端设置 ExternalContentMarkingToRemove，指定页眉或页脚的内容以及如何删除或替换它们。
 
 ### <a name="how-to-configure-externalcontentmarkingtoremove"></a>如何配置 ExternalContentMarkingToRemove
 
-指定 ExternalContentMarkingToRemove 键的字符串值时，拥有三个使用正则表达式的选项  ：
+指定 ExternalContentMarkingToRemove 键的字符串值时，拥有三个使用正则表达式的选项：
 
 - 用以删除页眉或页脚中所有内容的部分匹配。
     
-    例如：页眉或页脚包含字符串 TEXT TO REMOVE  。 想要完全删除这些页面或页脚。 可指定值：`*TEXT*`。
+    例如：页眉或页脚包含字符串 TEXT TO REMOVE。 想要完全删除这些页面或页脚。 可指定值：`*TEXT*`。
 
 - 用以删除页眉或页脚中特定字词的完全匹配。
     
-    例如：页眉或页脚包含字符串 TEXT TO REMOVE  。 只想删除单词 TEXT，结果使页眉或页脚字符串变为 TO REMOVE   。 可指定值：`TEXT `。
+    例如：页眉或页脚包含字符串 TEXT TO REMOVE。 只想删除单词 TEXT，结果使页眉或页脚字符串变为 TO REMOVE。 可指定值：`TEXT `。
 
 - 用以删除页眉或页脚中所有内容的完全匹配。
     
-    例如：页眉或页脚具有字符串 TEXT TO REMOVE  。 想要删除其字符串为 TEXT TO REMOVE 的页眉或页脚。 可指定值：`^TEXT TO REMOVE$`。
+    例如：页眉或页脚具有字符串 TEXT TO REMOVE。 想要删除其字符串为 TEXT TO REMOVE 的页眉或页脚。 可指定值：`^TEXT TO REMOVE$`。
     
 
 指定的字符串的匹配模式不区分大小写。 最大字符串长度为 255 个字符。
@@ -279,7 +296,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 键:**ExternalContentMarkingToRemove**
 
-- 值：\<要匹配的字符串，定义为正则表达式>  
+- 值：\<要匹配的字符串，定义为正则表达式> 
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -289,9 +306,9 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 如果页眉或页脚文本不只一行，则为每行创建一个键和值。 例如，下面是具有两行文本的页脚：
 
-The file is classified as Confidential 
+The file is classified as Confidential
 
-Label applied manually 
+Label applied manually
 
 若要删除此多行页脚, 请为同一标签策略创建以下两个条目:
 
@@ -308,23 +325,23 @@ Label applied manually
 
 #### <a name="optimization-for-powerpoint"></a>针对 PowerPoint 的优化
 
-PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你指定的但不属于页面或页脚的形状，可使用以下附加高级客户端设置：PowerPointShapeNameToRemove  。 我们还建议使用此设置来避免检查所有形状中的文本，因为这将占用大量资源。
+PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你指定的但不属于页面或页脚的形状，可使用以下附加高级客户端设置：PowerPointShapeNameToRemove。 我们还建议使用此设置来避免检查所有形状中的文本，因为这将占用大量资源。
 
-如果未指定这项附加的高级客户端设置，并且 PowerPoint 包括在 RemoveExternalContentMarkingInApp  键值中，将对所有形状检查你在 ExternalContentMarkingToRemove 值中指定的文本  。 
+如果未指定这项附加的高级客户端设置，并且 PowerPoint 包括在 RemoveExternalContentMarkingInApp 键值中，将对所有形状检查你在 ExternalContentMarkingToRemove 值中指定的文本。 
 
 查找用作页眉或页脚的形状的名称：
 
-1. 在 PowerPoint 中，显示“选择”窗格  ：“格式”选项卡 >“排列”组 >“选择”窗格    。
+1. 在 PowerPoint 中，显示“选择”窗格：“格式”选项卡 >“排列”组 >“选择”窗格。
 
-2. 选择幻灯片上包含页眉或页脚的形状。 所选形状的名称现在突出显示在“选择”  窗格中。
+2. 选择幻灯片上包含页眉或页脚的形状。 所选形状的名称现在突出显示在“选择”窗格中。
 
-使用形状的名称为 PowerPointShapeNameToRemove  键指定一个字符串字。 
+使用形状的名称为 PowerPointShapeNameToRemove 键指定一个字符串字。 
 
-例如：形状名称是 fc  。 若要删除具有此名称的形状，则指定值：`fc`。
+例如：形状名称是 fc。 若要删除具有此名称的形状，则指定值：`fc`。
 
 - 键:**PowerPointShapeNameToRemove**
 
-- 值：\<PowerPoint 形状名称>  
+- 值：\<PowerPoint 形状名称> 
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -332,7 +349,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 如果要删除多个 PowerPoint 形状, 请指定任意数量的值, 以便删除形状。
 
-默认情况下，只检查主幻灯片的页眉和页脚。 若要将检查范围扩展到所有幻灯片，将占用大量资源，则可以使用 RemoveExternalContentMarkingInAllSlides  附加高级客户端设置：
+默认情况下，只检查主幻灯片的页眉和页脚。 若要将检查范围扩展到所有幻灯片，将占用大量资源，则可以使用 RemoveExternalContentMarkingInAllSlides 附加高级客户端设置：
 
 - 键:**RemoveExternalContentMarkingInAllSlides**
 
@@ -413,7 +430,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-当指定以下高级客户端设置时，用户将看到一个“报告问题”选项，他们可以从“帮助和反馈”客户端对话框中选择该选项   。 为链接指定 HTTP 字符串。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 
+当指定以下高级客户端设置时，用户将看到一个“报告问题”选项，他们可以从“帮助和反馈”客户端对话框中选择该选项。 为链接指定 HTTP 字符串。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 
 
 若要配置此高级设置, 请为所选标签策略输入以下字符串:
 
@@ -502,19 +519,19 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
     
     - 键:**OutlookWarnTrustedDomains**
     
-    - 值：\<域名，以逗号分隔>  
+    - 值：\<域名，以逗号分隔>
 
 - 对齐消息：
     
     - 键:**OutlookJustifyTrustedDomains**
     
-    - 值：\<域名，以逗号分隔>  
+    - 值：\<域名，以逗号分隔>
 
 - 阻止邮件：
     
     - 键:**OutlookBlockTrustedDomains**
     
-    - 值：\<域名，以逗号分隔>  
+    - 值：\<域名，以逗号分隔>
 
 例如, 你为 "**机密 \ 所有员工**" 标签指定了**OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定**OutlookJustifyTrustedDomains**和**contoso.com**的其他高级客户端设置。 因此, 用户可以john@sales.contoso.com在将其标记为 "**机密 \ 所有员工**" 时向其发送电子邮件, 但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
 
@@ -578,6 +595,42 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
     Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookOverrideUnlabeledCollaborationExtensions=".PPTX,.PPTM,.PPT,.PPTX,.PPTM"}
 
+#### <a name="to-specify-a-different-action-for-email-messages-without-attachments"></a>为不带附件的电子邮件指定其他操作
+
+默认情况下, 你为 OutlookUnlabeledCollaborationAction 指定的值将应用于不带标签的电子邮件或附件。 可以通过为不带附件的电子邮件指定另一高级设置来优化此配置。
+
+使用以下值之一创建高级客户端设置：
+
+- 警告消息：
+    
+    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    
+    - 值：**警告**
+
+- 对齐消息：
+    
+    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    
+    - 值：**两端对齐**
+
+- 阻止邮件：
+    
+    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    
+    - 值：**阻止**
+
+- 关闭这些消息：
+    
+    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    
+    - 值：**Off**
+
+如果未指定此客户端设置, 则为 OutlookUnlabeledCollaborationAction 指定的值将用于没有附件的未标记电子邮件以及带有附件的未标记电子邮件。
+
+示例 PowerShell 命令, 其中标签策略命名为 "Global":
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior="Warn"}
+
 
 ## <a name="disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics"></a>禁止将文档中发现的敏感信息发送到 Azure 信息保护分析
 
@@ -587,7 +640,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 若要更改此行为, 以便统一标签客户端不发送此信息, 请为所选标签策略输入以下字符串:
 
-- 键:RunAuditInformationTypeDiscovery 
+- 键:RunAuditInformationTypeDiscovery
 
 - 值：**False**
 
@@ -649,7 +702,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 在此示例中：
 
-- Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中   。
+- Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中。
 
 高级设置:
 
@@ -667,7 +720,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 在此示例中：
 
-- Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中   。
+- Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中。
 
 高级设置:
 
@@ -685,7 +738,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 在此示例中：
 
-- Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中   。
+- Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中。
 
 高级客户端设置：
 
@@ -755,7 +808,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 在此示例中：
 
-- 敏感度标签命名为 "**机密**", 并创建名为  "Secret" 的自定义属性, 其值为 "**机密**"。
+- 敏感度标签命名为 "**机密**", 并创建名为 "Secret" 的自定义属性, 其值为 "**机密**"。
 
 高级设置:
 
@@ -839,13 +892,13 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 在生产环境中, 当用户使用 Azure 信息保护统一标签客户端时, 通常不需要以其他用户身份登录。 不过，作为管理员，你在测试阶段可能需要以其他用户身份登录。 
 
-可以使用“MicrosoftAzure 信息保护”对话框验证当前登录的帐户  ：打开 Office 应用程序, 在 "**主页**" 选项卡上, 选择 "**敏感度**" 按钮, 然后选择 "**帮助和反馈**"。 帐户名称会显示在“客户端状态”  部分中。
+可以使用“MicrosoftAzure 信息保护”对话框验证当前登录的帐户：打开 Office 应用程序, 在 "**主页**" 选项卡上, 选择 "**敏感度**" 按钮, 然后选择 "**帮助和反馈**"。 帐户名称会显示在“客户端状态”部分中。
 
 请确保还要检查所显示的登录帐户的域名。 很容易忽视的一点是，使用正确的帐户名登录，但域不正确。 使用错误帐户的症状包括未能下载标签, 或者看不到所需的标签或行为。
 
 以其他用户身份登录：
 
-1. 导航到 %localappdata%\Microsoft\MSIP 并删除 TokenCache 文件   。
+1. 导航到 %localappdata%\Microsoft\MSIP 并删除 TokenCache 文件。
 
 2. 重新启动任何打开的 Office 应用程序，并使用其他用户帐户登录。 如果在 Office 应用程序中看不到用于登录到 Azure 信息保护服务的提示, 请返回**Microsoft Azure 信息保护**对话框, 并从 "更新的**客户端状态**" 部分中选择 "**登录**"。
 

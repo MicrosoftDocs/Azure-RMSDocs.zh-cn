@@ -4,23 +4,23 @@ description: 可以删除或重排用户可见的 Azure 信息保护标签。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 504121e8411132d47ea48635ca9c462ecbccf28c
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: cde7e01f70936904f7d3d905c040d806c9f00d45
+ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60179981"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68428502"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>如何删除或重排 Azure 信息保护的标签
 
 >适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 可以删除或重排用户在 Office 应用程序中看到的 Azure 信息保护标签，方法是为标签选择这些操作。
 

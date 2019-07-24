@@ -4,23 +4,23 @@ description: 保护文档后，可跟踪用户如何使用它们。 如果用户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 95a70375f65e461cff2f69d28598d2a72aeaec10
-ms.sourcegitcommit: f9077101a974459a4252e763b5fafe51ff15a16f
+ms.openlocfilehash: b0fb6c14e246a027e01913ef213898bc397717d3
+ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64768073"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68428308"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>用户指南：使用 Azure 信息保护时跟踪和撤销文档
 
->适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
@@ -63,7 +63,7 @@ ms.locfileid: "64768073"
 
 要跟踪已保护的文档，必须使用 Windows 计算机将其注册到文档跟踪站点。 为此，请使用文件资源管理器或 Office 应用程序。
 
-如果你有 Azure 信息保护客户端的当前正式发布版本，您还可以注册受保护的文档与 PowerShell 配合使用时*EnableTracking*参数与[Set-aipfilelabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet。
+如果具有 Azure 信息保护客户端的当前通用版本, 则在将*bre-walkthrough-enabletracking*参数与[set-aipfilelabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 结合使用时, 还可以使用 PowerShell 注册受保护的文档。
 
 ## <a name="using-office-to-track-or-revoke-the-document"></a>使用 Office 跟踪或撤销文档
 
@@ -100,17 +100,17 @@ ms.locfileid: "64768073"
 
 - 使用 Windows 电脑、Mac 计算机或移动设备，访问[文档跟踪站点](https://go.microsoft.com/fwlink/?LinkId=529562)。
 
-    **支持的浏览器**：我们建议使用至少是 Internet Explorer 版本 10，但你可以使用以下任一浏览器使用文档跟踪站点：
+    **支持的浏览器**：建议使用最低版本为10的 Internet Explorer, 但你可以使用以下任一浏览器来使用文档跟踪站点:
 
-    - Internet Explorer:最低版本 10
+    - Internet Explorer:至少版本10
 
-    - 使用 Internet Explorer 9 至少 MS12 037:Internet Explorer 的累积性安全更新：2012 年 6 月 12日日
+    - 包含至少 MS12 的 Internet Explorer 9-037:Internet Explorer 的累积安全更新:2012年6月12日
 
-    - Mozilla Firefox:最低版本 12
+    - Mozilla Firefox:最低版本12
 
-    - Apple Safari 5:最低版本 5
+    - Apple Safari 5:最低版本5
 
-    - Google Chrome:最低版本 18
+    - Google Chrome:最低版本18
 
 
 ## <a name="other-instructions"></a>其他说明

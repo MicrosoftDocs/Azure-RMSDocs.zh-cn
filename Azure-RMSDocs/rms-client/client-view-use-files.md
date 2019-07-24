@@ -1,24 +1,24 @@
 ---
-title: 查看使用 Azure 信息保护查看器的受保护的文件
-description: 若要查看和使用要求您具有安装 Azure 信息保护查看器的受保护的文件的说明。
+title: 通过 Azure 信息保护查看器查看受保护的文件
+description: 说明如何查看和使用要求安装 Azure 信息保护查看器的受保护文件。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8dea94af41cb445f895ee4cbc2c424fc169ae117
-ms.sourcegitcommit: 2fe9333c3e6c98e7dd9003c5f4cd7c1e7a48b297
+ms.openlocfilehash: a7e333557d0a3ba6aa130cb24d54acf1717fe278
+ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64880222"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427894"
 ---
-# <a name="user-guide-view-protected-files-with-the-azure-information-protection-viewer"></a>用户指南：查看使用 Azure 信息保护查看器的受保护的文件
+# <a name="user-guide-view-protected-files-with-the-azure-information-protection-viewer"></a>用户指南：通过 Azure 信息保护查看器查看受保护的文件
 
 >适用对象：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
 >

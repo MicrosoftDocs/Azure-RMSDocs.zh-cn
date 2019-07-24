@@ -4,31 +4,31 @@ description: 要复制和编辑的示例脚本，如“使用 Windows Server 文
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 52a27004d303ff2912da9ad2cd243312bc4c411f
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 0e0cf93d4805132f0de68a2d027d3d1715f02519
+ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60180964"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427950"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）
 
->适用对象：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2*
+>适用对象： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2*
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 此页包含要复制和编辑的示例脚本，如[使用 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md)中所述。
 
 对于 AzureInformationProtection 模块，此脚本使用的最低版本为 **1.3.155.2**。 运行以下命令以检查版本：`(Get-Module AzureInformationProtection -ListAvailable).Version` 
 
-*&#42;&#42;免责声明&#42;&#42;:此示例脚本不受任何 Microsoft 标准支持计划或服务。此示例脚本按原样提供，不提供任何形式的保证。*
+*&#42;&#42;免责声明&#42;&#42;:此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。此示例脚本按原样提供，不提供任何形式的保证。*
 
 ```
 <#

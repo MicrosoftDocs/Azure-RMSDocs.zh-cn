@@ -1,24 +1,24 @@
 ---
-title: 分类和保护-Azure 信息保护客户端
-description: 说明如何进行分类和保护文档和电子邮件时使用 Windows 的 Azure 信息保护客户端。
+title: '& 保护分类-Azure 信息保护客户端'
+description: 有关使用适用于 Windows 的 Azure 信息保护客户端时如何对文档和电子邮件进行分类和保护的说明。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bdb714a02ca775f5d8409be64499227f1bf15ef1
-ms.sourcegitcommit: 79218b6b064d757459d0ffb51002959ba6d6bcb9
+ms.openlocfilehash: c42ef652f2fe2ccd8c668c84ee134aae47b1056f
+ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64914731"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68428363"
 ---
-# <a name="user-guide-classify-and-protect-with-the-azure-information-protection-client"></a>用户指南：分类和保护 Azure 信息保护客户端
+# <a name="user-guide-classify-and-protect-with-the-azure-information-protection-client"></a>用户指南：Azure 信息保护客户端的分类和保护
 
 >适用对象：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
 >
@@ -39,7 +39,7 @@ ms.locfileid: "64914731"
 
 在与组织外部人员共享文件之前，请咨询你的支持人员或管理员如何为外部用户保护文件。
 
-例如，如果你的组织定期与另一个组织中的人员，您的管理员可能已配置标签以便这些用户可以读取和使用受保护的文档。 如果是这种情况，请选择这些标签进行分类和保护要共享的文档。
+例如, 如果你的组织定期与另一组织中的用户通信, 则你的管理员可能已配置了标签, 以便这些用户可以读取和使用受保护的文档。 如果是这种情况, 请选择这些标签来分类和保护要共享的文档。
 
 或者，如果外部用户具有为其创建的 [企业到企业 (B2B) 帐户](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)，你可以在共享文档之前，使用 [Office 应用设置自定义权限](#set-custom-permissions-for-a-document)或使用[文件资源管理器设置自定义权限](#using-file-explorer-to-classify-and-protect-files) 如果设置你自己的自定义权限，并且文档已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。
 
@@ -106,9 +106,9 @@ ms.locfileid: "64914731"
         
         此外，还可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
     
-    - **过期访问**：选择此选项只对时间敏感文件，以便指定的人员无法设置日期后打开选定的文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
+    - **过期访问**：仅为时间敏感的文件选择此选项, 以使指定的人员无法在设置日期后打开选定的一个或哪些文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
 
-5. 单击“**应用**”，然后等待“**已应用自定义权限**”消息。 然后单击 **“关闭”**。
+5. 单击“**应用**”，然后等待“**已应用自定义权限**”消息。 然后单击 **“关闭”** 。
 
 ### <a name="safely-sharing-by-email"></a>通过电子邮件实现安全共享
 
@@ -167,7 +167,7 @@ ms.locfileid: "64914731"
     
      请注意，如果此设置此前通过 Office 2010 应用的自定义权限配置，则指定到期日期不会显示在此对话框中，但仍然会设置到期日期。 此显示问题仅适用于在 Office 2010 中配置了到期日期的情况。
 
-5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”**。
+5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”** 。
 
 根据你的选择，现已对所选择的一个或多个文件进行分类和保护。 在某些情况下（添加的保护更改了文件扩展名时），文件资源管理器中的原始文件将替换为具有 Azure 信息保护锁状图标的新文件。 例如：
 
