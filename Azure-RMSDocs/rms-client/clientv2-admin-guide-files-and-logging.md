@@ -4,21 +4,21 @@ description: 有关适用于 Windows 的 Azure 信息保护统一标签客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
-ms.openlocfilehash: e90672438efff30d378699f36b3037f04d420b22
-ms.sourcegitcommit: ae48f7cea01b4d615052659072305abb8698a7f7
+ms.openlocfilehash: 6904f77a621b2dc362a82f9b20099d71aaf4f605
+ms.sourcegitcommit: 29dc76ef3215a68a4a7a0c0eeae83d22caadec4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375432"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501651"
 ---
 # <a name="admin-guide-azure-information-protection-unified-labeling-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护统一标签客户端文件和客户端使用情况日志记录
 
->适用对象：  Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
 > 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -34,7 +34,7 @@ ms.locfileid: "68375432"
 
 客户端日志文件:
 
-- 对于 64 位和 32 位操作系统： **%localappdata%\Microsoft\MSIP**
+- 对于64位和32位操作系统: **%localappdata%\Microsoft\MSIP\Logs**
 
 
 ## <a name="next-steps"></a>后续步骤

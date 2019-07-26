@@ -4,17 +4,17 @@ description: 当文档或电子邮件中分配一个标签时，可以选择几�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/24/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: c365b71c2047a3556c3ba4da091945454096e048
-ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
+ms.openlocfilehash: 6aea5948c9ad6358425f057a7459c3f851a74f49
+ms.sourcegitcommit: 47182b6a65bfae3561cb34be3d6a6852a1edccb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66186667"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68446695"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -98,7 +98,7 @@ ms.locfileid: "66186667"
 
 - `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016 年 8 月 16 日下午 1:30
 
-例如：如果为“常规”标签页脚指定字符串 `Document: ${item.name}  Classification: ${item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 Document: project.docx  Classification: General。
+例如：如果为“常规”标签页脚指定字符串 `Document: ${item.name}  Classification: ${item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 Document: project.docx  Classification: General **。
 
 >[!TIP]
 > 还使用[域代码将标签名称插入](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification)文档或模板中。
@@ -141,9 +141,9 @@ Calibri 是页眉、页脚和水印文字的默认字体。 如果指定替代�
 
 ### <a name="setting-the-font-color"></a>设置字体颜色
 
-可从可用颜色列表中进行选择，或输入颜色的红绿蓝 (RGB) 组成的十六进制三元色代码来指定自定义颜色。 例如， **#40e0d0**是青绿色的 RGB 十六进制值。 
+可从可用颜色列表中进行选择，或输入颜色的红绿蓝 (RGB) 组成的十六进制三元色代码来指定自定义颜色。 例如, **#40e0d0**为青绿色的 RGB 十六进制值。 
 
-如果您需要引用这些代码，您会发现从一个帮助表[\<颜色 >](https://developer.mozilla.org/docs/Web/CSS/color_value)从 MSDN web 文档的页。也可在许多可编辑图片的应用程序中找到这些代码。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
+如果需要对这些代码进行引用, 可从 MSDN web 文档的 " [ \<> 颜色](https://developer.mozilla.org/docs/Web/CSS/color_value)" 页中找到一个有用的表格。也可在许多可编辑图片的应用程序中找到这些代码。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 
 ## <a name="next-steps"></a>后续步骤
 

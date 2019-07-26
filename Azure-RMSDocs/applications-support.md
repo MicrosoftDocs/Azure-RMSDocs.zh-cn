@@ -1,22 +1,22 @@
 ---
 title: 应用如何支持 AIP 中的 Azure 权限管理
-description: 了解如何最常使用的应用程序 （例如 Office 应用） 和服务 （例如 Exchange 和 SharePoint） 才能使用 Azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的文档和电子邮件。
+description: 了解最常使用的应用程序 (如 Office 应用) 和服务 (例如 Exchange 和 SharePoint) 如何使用 azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的文档和电子邮件。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/02/2019
+ms.date: 07/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: deb9cb2bf0751c78d419db579b5df050e4862245
-ms.sourcegitcommit: 4721f96650fde6e0e8e704cc6a3458ddeff635a6
+ms.openlocfilehash: 4513667ad3a09d4f986282780f4858b0bce670f7
+ms.sourcegitcommit: 47182b6a65bfae3561cb34be3d6a6852a1edccb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65087884"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68446750"
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>应用程序如何支持 Azure Rights Management 服务
 

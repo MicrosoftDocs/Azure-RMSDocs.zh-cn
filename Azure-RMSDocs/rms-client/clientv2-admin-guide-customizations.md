@@ -3,19 +3,19 @@ title: 自定义配置-Azure 信息保护统一标签客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/22/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: c583dfd8fe17a926bc2014a626d289a3d29d627c
-ms.sourcegitcommit: 6c3681cec0f807c6af031db67242ff01a99cd57b
+ms.openlocfilehash: 77fac8df4194e70e05ec202359a18dcfd5b959b7
+ms.sourcegitcommit: 2ad5cda4816c76c5fd3655ee45b64475e42cab32
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68411729"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483104"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
@@ -79,7 +79,7 @@ ms.locfileid: "68411729"
 
 - **Name**是标签的原始名称, 在所有标签中都是唯一的。 如果在创建标签之后更改其名称, 此值保持不变。
 
-- **显示名称**是用户看到的标签名称, 并且在所有标签中不必唯一。 例如, 用户会看到一个**员工**子标签了 "**机密**" 标签, 而另一个员工子标签 "**高度机密**" 标签。 这些子标签都显示相同的名称, 但不是相同的标签, 并且具有不同的设置。
+- **显示名称**是用户看到的标签名称, 并且在所有标签中不必唯一。 例如, 用户会看到一个**员工**子标签了 "**机密**" 标签, 而另一个**员工子标签 "** **高度机密**" 标签。 这些子标签都显示相同的名称, 但不是相同的标签, 并且具有不同的设置。
 
 若要配置标签高级设置, 请使用 "**名称**" 值。 例如, 若要标识下图中的标签, 请指定`-Identity "All Company"`:
 
@@ -135,7 +135,7 @@ ms.locfileid: "68411729"
 |PostponeMandatoryBeforeSave|[使用强制标签时，删除文档的“以后再说”](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
 |RemoveExternalContentMarkingInApp|[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)|
 |ReportAnIssueLink|[为用户添加“报告问题”](#add-report-an-issue-for-users)|
-|RunAuditInformationTypeDiscovery|[禁止将文档中发现的敏感信息发送到 Azure 信息保护分析](#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)|
+|RunAuditInformationTypesDiscovery|[禁止将文档中发现的敏感信息发送到 Azure 信息保护分析](#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)|
 
 用于检查标签策略设置对名为 "Global" 的标签策略有效的示例 PowerShell 命令:
 
@@ -640,7 +640,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 若要更改此行为, 以便统一标签客户端不发送此信息, 请为所选标签策略输入以下字符串:
 
-- 键:RunAuditInformationTypeDiscovery
+- 键:**RunAuditInformationTypesDiscovery**
 
 - 值：**False**
 
@@ -656,7 +656,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{RunAuditInformationTypeDiscovery="False"}
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{RunAuditInformationTypesDiscovery="False"}
 
 ## <a name="disable-sending-information-type-matches-for-a-subset-of-users"></a>禁止为一部分用户发送信息类型匹配项
 
@@ -808,7 +808,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 在此示例中：
 
-- 敏感度标签命名为 "**机密**", 并创建名为 "Secret" 的自定义属性, 其值为 "**机密**"。
+- 敏感度标签命名为 "**机密**", 并**创建名为**"Secret" 的自定义属性, 其值为 "**机密**"。
 
 高级设置:
 

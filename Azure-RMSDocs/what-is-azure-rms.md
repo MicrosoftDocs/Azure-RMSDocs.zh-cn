@@ -4,7 +4,7 @@ description: 介绍 Azure Rights Management (Azure RMS)，它是由 Azure 信息
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/16/2019
+ms.date: 07/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.reviewer: esaggese
 ms.suite: ems
 search.appverid:
 - MET150
-ms.openlocfilehash: 3e5f8b2cadc615e9c2e601ee083f0e9b99566631
-ms.sourcegitcommit: e730f897452fcb0ca1003c6b86f6e65678d0ec57
+ms.openlocfilehash: 467f7d9c9ddcf250f27b8980bd989e638959be66
+ms.sourcegitcommit: 47182b6a65bfae3561cb34be3d6a6852a1edccb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885610"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68446841"
 ---
 # <a name="what-is-azure-rights-management"></a>什么是 Azure 权限管理？
 
->适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 
 Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](what-is-information-protection.md)使用的保护技术。
@@ -31,7 +31,7 @@ Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](w
 
 例如，员工可能会将文档发送给合作伙伴公司，或者将文档保存到云驱动器。 Azure RMS 提供的持续保护不仅有助于保护公司数据，而且从法律上讲还可能是遵循合规性或法律发现要求或单纯遵循良好信息管理实践所必需的。
 
-但是非常重要的一点是，经过授权的人员和服务（例如搜索和索引）可以继续读取和检查受保护的数据。 无法通过其他使用对等加密的信息保护解决方案轻松实现此功能。 你可能已了解到这种功能叫做“数据推理”，并且其是保持对组织数据进行控制的关键所在。
+但重要的是, 授权人员和服务 (如搜索和索引) 可以继续读取和检查受保护的数据。 无法通过其他使用对等加密的信息保护解决方案轻松实现此功能。 你可能已了解到这种功能叫做“数据推理”，并且其是保持对组织数据进行控制的关键所在。
 
 下图说明了此服务如何为 Office 365 以及本地服务器和服务提供保护解决方案。 此外，还会发现运行 Windows、Mac OS、iOS 和 Android 的常见最终用户设备支持该保护。
 
@@ -63,7 +63,7 @@ Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](w
 > 如果你熟悉本地版的权限管理和 Active Directory Rights Management 服务 (AD RMS)，则可能会对 [比较 Azure Rights Management 和 AD RMS](compare-on-premise.md) 中的比较表感兴趣。
 
 ## <a name="security-compliance-and-regulatory-requirements"></a>安全、合规性和法规要求
-Azure Rights Management 支持以下安全性、符合性和法规要求：
+Azure Rights Management 支持以下安全、合规性和法规要求:
 
 √ 使用符合业界标准的加密功能，支持 FIPS 140-2。 有关详细信息，请参阅 [Azure RMS 使用的加密控制：算法和密钥长度](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)信息。
 

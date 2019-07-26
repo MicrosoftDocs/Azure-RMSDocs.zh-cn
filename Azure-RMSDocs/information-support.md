@@ -1,10 +1,10 @@
 ---
 title: '& Azure 信息保护的支持信息-AIP'
-description: 管理员资源，其中包括有关新版本、支持选项以及如何与 Microsoft 联系以报告问题的信息。
+description: 管理员资源, 其中包括有关新版本、支持选项以及如何与 Microsoft 联系以报告问题的信息。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/02/2019
+ms.date: 07/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.reviewer: esaggese
 ms.suite: ems
 search.appverid:
 - MET150
-ms.openlocfilehash: 28057fb2697855afc7028292f19b2a344635a52c
-ms.sourcegitcommit: e730f897452fcb0ca1003c6b86f6e65678d0ec57
+ms.openlocfilehash: c5ce1d092297e713d46dc3df507bcc048fd173e3
+ms.sourcegitcommit: 47182b6a65bfae3561cb34be3d6a6852a1edccb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885511"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68446776"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
->适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用以下资源可帮助你了解、部署和支持组织的 Azure 信息保护。
 
@@ -48,7 +48,7 @@ Azure 信息保护产品团队在[企业移动性 + 安全性博客](https://tec
 
 Azure 信息保护技术博客还汇总了[每个月的文档更改](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/bg-p/AzureInformationProtectionBlog/label-name/Docs)。 这些更改可能包括新版本的新文档和更新文档、对支持声明的更改, 以及对现有版本的更正和说明。
 
-这些文档更新文章的标题为：“\<月份/年份> 的 Azure 信息保护文档更新”  。
+这些文档更新文章的标题为：“\<月份/年份> 的 Azure 信息保护文档更新”。
 
 ## <a name="support-options-and-community-resources"></a>支持选项和社区资源
 以下部分提供有关支持选项和故障排除选项的信息及社区资源。
@@ -57,15 +57,15 @@ Azure 信息保护技术博客还汇总了[每个月的文档更改](https://tec
 
 如果你有顶级支持，请访问[针对顶级支持客户的门户](https://premier.microsoft.com/)来提交事件、浏览解决方案，并获得帮助。
 
-你可能符合 FastTrack 的条件  ：如果在符合条件的计划中为 Azure 信息保护计划购买了至少 150 个许可证，则可以使用 FastTrack 中心权益。 FastTrack 中心权益使你可以与 Microsoft 专家共同进行评估、修正并启用符合条件的服务。 有关详细信息，请参阅 [FastTrack 企业移动性 + 安全性 (EMS) 中心权益](/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-enterprise-mobility-suite-ems)。
+你可能符合 FastTrack 的条件：如果在符合条件的计划中为 Azure 信息保护计划购买了至少 150 个许可证，则可以使用 FastTrack 中心权益。 FastTrack 中心权益使你可以与 Microsoft 专家共同进行评估、修正并启用符合条件的服务。 有关详细信息，请参阅 [FastTrack 企业移动性 + 安全性 (EMS) 中心权益](/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-enterprise-mobility-suite-ems)。
 
 对于其他客户，请根据 Azure 信息保护的订阅，使用下表中的支持渠道。
 
 |订阅|说明|
 |----------------|---------------|
-|Azure 信息保护（独立）|1.在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”  。<br /><br />2.出现提示时，在“基础信息”  边栏选项卡上，针对“问题类型”  选择“技术”  ，然后针对服务选择“信息保护”  。 <br /><br />3.此外，请确保选择了以下任一选项：<br /><br />- 包含技术支持的订阅  ：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - 技术支持 - 包含  ：如果没有 Azure 订阅，则会看到此选项。|
+|Azure 信息保护（独立）|1.在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”。<br /><br />2.出现提示时，在“基础信息”边栏选项卡上，针对“问题类型”选择“技术”，然后针对服务选择“信息保护”。 <br /><br />3.此外, 请确保已选择下列选项之一:<br /><br />- 包含技术支持的订阅：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - 技术支持 - 包含：如果没有 Azure 订阅，则会看到此选项。|
 |Azure 信息保护和 Office 365 订阅<br /><br />Office 365 订阅随附的 Azure 权限管理|请参阅[就业务产品联系支持 - 管理员帮助](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)，以了解有关如何使用 Microsoft 365 管理中心与支持部门联系的信息，并获取联系人电话号码。|
-|企业移动性 + 安全性 (EMS) 随附的 Azure 信息保护|1.在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”  。<br /><br />2.出现提示时，在“基础信息”  边栏选项卡上，针对“问题类型”  选择“技术”  ，然后针对服务选择“信息保护”  。 <br /><br />3.此外，请确保选择了以下任一选项：<br /><br />- 包含技术支持的订阅  ：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - 技术支持 - 包含  ：如果没有 Azure 订阅，则会看到此选项。|
+|企业移动性 + 安全性 (EMS) 随附的 Azure 信息保护|1.在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”。<br /><br />2.出现提示时，在“基础信息”边栏选项卡上，针对“问题类型”选择“技术”，然后针对服务选择“信息保护”。 <br /><br />3.此外, 请确保已选择下列选项之一:<br /><br />- 包含技术支持的订阅：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - 技术支持 - 包含：如果没有 Azure 订阅，则会看到此选项。|
 |Microsoft 365 企业版随附的 Azure 信息保护|请使用 [Office 365 支持通道](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。|
 
 有关其他支持选项，请询问你的 Microsoft 联系人。 

@@ -4,17 +4,17 @@ description: 在 Azure 信息保护策略中配置适用于所有用户、所有
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/20/2019
+ms.date: 07/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 5eac6cd86ea5d413429c02ad37e0a5e186ab6f22
-ms.sourcegitcommit: 8532536b778a26b971dba89436772158869ab84d
+ms.openlocfilehash: 5b26c3e963fccede6b4a66814c0ab089abfdfd45
+ms.sourcegitcommit: 47182b6a65bfae3561cb34be3d6a6852a1edccb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934661"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68446830"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
@@ -66,13 +66,13 @@ ms.locfileid: "65934661"
         
         要在使用此策略设置时考虑子标签的排序，必须[配置高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments)。
         
-        如果最高的分类标签的附件配置为使用预览版设置保护的用户定义的权限:-时标签的用户定义的权限包括 Outlook （不要转发），应用该标签和不要转发保护应用于电子邮件。 当标签的用户定义权限仅适用于 Word、Excel、PowerPoint 和文件资源管理器时，该标签不会应用于电子邮件，也不会受到保护。
+        如果将具有最高分类标签的附件配置为通过用户定义的权限的预览设置进行保护, 则为; 如果标签的用户定义权限包括 Outlook (不要转发), 则应用该标签且不转发保护应用于电子邮件。 当标签的用户定义权限仅适用于 Word、Excel、PowerPoint 和文件资源管理器时，该标签不会应用于电子邮件，也不会受到保护。
     
    - **在 Office 应用中显示“信息保护”栏**：关闭此设置后，用户无法从 Word、Excel、PowerPoint 和 Outlook 中的“信息保护”栏选择标签。 在此情况下，用户必须通过功能区上的“保护”按钮选择标签。 打开此设置后，用户可以通过信息保护栏或“保护”按钮选择标签。
         
        打开此设置后，可以将其与高级客户端设置配合使用，因此如果用户选择不显示该栏，可以[永久隐藏 Azure 信息保护栏](./rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)。 从“保护”按钮清除“显示信息保护栏”选项，即可实现此操作。
     
-   - **向 Outlook 功能区添加“不可转发”按钮**：启用此设置后，除了从 Outlook 菜单中选择“不可转发”选项之外，用户还可以从 Outlook 功能区上的“保护”组中选择此按钮。 若要帮助确保用户对其电子邮件进行分类和保护，可以首选不添加此标签，并改为[配置用于保护的标签](configure-policy-protection.md)和 Outlook 的用户定义权限。 此保护设置的功能与选择“不转发”按钮相同，但当此功能附带标签时，意味着对电子邮件进行了分类和保护。
+   - **向 Outlook 功能区添加“不可转发”按钮**：启用此设置后，除了从 Outlook 菜单中选择“不可转发”选项之外，用户还可以从 Outlook 功能区上的“保护”组中选择此按钮。 为了帮助确保用户对电子邮件进行分类并对其进行保护, 你可能更倾向于不添加此按钮, 而是[配置一个用于保护的标签](configure-policy-protection.md)和一个适用于 Outlook 的用户定义权限。 此保护设置的功能与选择“不转发”按钮相同，但当此功能附带标签时，意味着对电子邮件进行了分类和保护。
     
        也可以使用高级客户端设置将此策略设置配置为[客户端自定义](./rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)。
     
@@ -88,7 +88,7 @@ ms.locfileid: "65934661"
     
    - **提供 Azure 信息保护客户端“告知详情”网页的自定义 URL**：当用户在其 Office 应用程序中从“开始”选项卡选择“保护” > “帮助和反馈”时，将在“帮助和反馈”部分的“Microsoft Azure 信息保护”对话框中看到此链接。 默认情况下，此链接将转到 [Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)网站。 如果希望此链接转到备选网页，可输入 HTTP 或 HTTPS（推荐）URL。 不进行检查来验证输入的自定义 URL 是否可供访问或是否可在所有设备上正确显示。
         
-       例如，对于支持人员，你可能输入包含客户端安装和使用信息 (**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) 或发行版信息 (**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**) 的 Microsoft 文档页。 另外，可以发布自己的网页，提供供用户联系支持人员的信息，或提供指导用户如何使用已配置标签的视频。
+       例如，对于支持人员，你可能输入包含客户端安装和使用信息 ( **https://docs.microsoft.com/information-protection/rms-client/info-protect-client** ) 或发行版信息 ( **https://docs.microsoft.com/information-protection/rms-client/client-version-release-history** ) 的 Microsoft 文档页。 另外，可以发布自己的网页，提供供用户联系支持人员的信息，或提供指导用户如何使用已配置标签的视频。
 
 4. 若要保存所做的更改并将它们提供给用户，请单击“保存”。
 

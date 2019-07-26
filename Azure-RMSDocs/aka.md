@@ -4,19 +4,19 @@ description: Azure 信息保护经过多次名称更改，你可能知道的是�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/21/2019
+ms.date: 07/21/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8653b286d712b9e6bde4d9c9ae36caafd845fdd1
-ms.sourcegitcommit: 5ecf68d050152e0b425fa8cf6f3890951185b14a
+ms.openlocfilehash: 624d89e6d1b6c78ee87491c86484657bb62a90f6
+ms.sourcegitcommit: 47182b6a65bfae3561cb34be3d6a6852a1edccb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050692"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68446543"
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure 信息保护 - 也称为...
 

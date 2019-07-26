@@ -4,27 +4,27 @@ description: 可以自动将标签分配到文档或电子邮件的条件。 或
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 05/31/2019
+ms.date: 07/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 7557757584ce5d255ac8081039d1b0b7ace39594
-ms.sourcegitcommit: 9c0bc68fa036749e20aa67660d96278efbeb6a49
+ms.openlocfilehash: 9719bb83da8456637f0c15c24e44d5cf57f035a6
+ms.sourcegitcommit: 47182b6a65bfae3561cb34be3d6a6852a1edccb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448026"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68446783"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
->适用对象：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。 
 
-配置这些条件时，可使用预定义的模式，如“信用卡号”或“美国社会安全号码 (SSN)”   。 或者，你可以定义自定义字符串或模式作为自动分类的条件。 这些条件适用于文档和电子邮件中的正文文本和页眉及页脚。 有关这些条件的详细信息，请参阅[以下过程](#to-configure-recommended-or-automatic-classification-for-a-label)中的步骤 5。
+配置这些条件时，可使用预定义的模式，如“信用卡号”或“美国社会安全号码 (SSN)”。 或者，你可以定义自定义字符串或模式作为自动分类的条件。 这些条件适用于文档和电子邮件中的正文文本和页眉及页脚。 有关这些条件的详细信息，请参阅[以下过程](#to-configure-recommended-or-automatic-classification-for-a-label)中的步骤 5。
 
 若要获取最佳用户体验并确保业务连续性，我们建议你从用户建议分类开始，而不是自动操作。 此配置使你的用户能够接受分类和任何关联保护，或覆盖这些建议（如果它们不适用于其文档或电子邮件）。
 
@@ -32,9 +32,9 @@ ms.locfileid: "66448026"
 
 ![Azure 信息保护检测和建议](./media/info-protect-recommend-calloutsv2.png)
 
-在此示例中，用户可以单击“立即更改”  应用建议的标签，或通过选择“消除”  来替代该建议。 如果用户选择消除建议并且在下一次打开文档时该条件仍然适用，会再次显示标签建议。
+在此示例中，用户可以单击“立即更改”应用建议的标签，或通过选择“消除”来替代该建议。 如果用户选择消除建议并且在下一次打开文档时该条件仍然适用，会再次显示标签建议。
 
-如果配置自动分类（而不是建议分类），系统自动应用标签，并且用户仍会在自己的 Word、Excel 和 PowerPoint 中看到通知。 但是，**立即更改**并**解除**替换为按钮**确定**。 在 Outlook 中，自动分类无通知，且发送电子邮件时将应用标签。
+如果配置自动分类（而不是建议分类），系统自动应用标签，并且用户仍会在自己的 Word、Excel 和 PowerPoint 中看到通知。 但是, "**立即更改**" 和 "**取消**" 按钮将替换为 **"确定"** 。 在 Outlook 中，自动分类无通知，且发送电子邮件时将应用标签。
 
 > [!IMPORTANT]
 >请勿为自动分类和用户定义的权限配置标签。 “用户定义的权限”选项是一个[保护设置](configure-policy-protection.md)，允许用户指定应向其授予权限的人员。
@@ -64,16 +64,16 @@ ms.locfileid: "66448026"
 
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>配置标签的建议或自动分类
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”  边栏选项卡。 
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。 
     
-    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”   。 选择“Azure 信息保护”。 
+    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
-2. 从“分类” > “标签”菜单选项中   ：在“Azure 信息保护 - 标签”  边栏选项卡上，选择要配置的标签。
+2. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，选择要配置的标签。
 
 3. 在“**标签**”边栏选项卡上的“**配置条件以自动应用该标签**”部分中，单击“**添加新的条件**”。
 
-4. 在“条件”边栏选项卡上，选择“信息类型”（如果要使用预定义的条件）或“自定义”（如果要指定自己的条件）    ：
-    - 对于“信息类型”  ：从可用条件列表中选择，然后选择最小出现次数以及出现计数中是否应具有唯一的值。
+4. 在“条件”边栏选项卡上，选择“信息类型”（如果要使用预定义的条件）或“自定义”（如果要指定自己的条件）：
+    - 对于“信息类型”：从可用条件列表中选择，然后选择最小出现次数以及出现计数中是否应具有唯一的值。
         
         信息类型使用 Office 365 数据丢失防护 (DLP) 敏感信息类型和模式检测。 可以从多种常见敏感信息类型中进行选择，其中某些类型特定于不同的区域。 有关详细信息，请参阅 Office 365 文档中的[敏感信息类型查找的内容](/office365/securitycompliance/what-the-sensitive-information-types-look-for)。
         
@@ -84,25 +84,25 @@ ms.locfileid: "66448026"
         
         Azure 信息保护评估你选择的信息类型时，不使用 Office DLP 置信度设置，而是根据最低置信度进行匹配。
     
-    - 对于“自定义”  ：指定要匹配的名称和短语，其必须排除引号和特殊字符。 然后指定是否匹配正则表达式，区分大小写，发生的最小数目以及发生计数中是否应具有唯一的值。
+    - 对于“自定义”：指定要匹配的名称和短语，其必须排除引号和特殊字符。 然后指定是否匹配正则表达式，区分大小写，发生的最小数目以及发生计数中是否应具有唯一的值。
         
         正则表达式使用 Office 365 正则表达式模式。 为帮助你指定自定义条件的正则表达式，请参阅 Boost 的以下特定版本的 [Perl 正则表达式语法](https://www.boost.org/doc/libs/1_37_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)。
         
-5. 确定是否需要更改“最小出现次数”和“仅计算唯一值的出现次数”，然后选择“保存”    。 
+5. 确定是否需要更改“最小出现次数”和“仅计算唯一值的出现次数”，然后选择“保存”。 
     
-    出现次数选项示例：选择社会安全号码的信息类型，将最小出现次数设置为 2，文档中两次列出相同的社会安全号码：如果将“仅用唯一值计算出现次数”  设置为“开”  ，则不满足此条件。 如果将此选项设置为“关闭”，则满足条件  。
+    出现次数选项示例：选择社会安全号码的信息类型，将最小出现次数设置为 2，文档中两次列出相同的社会安全号码：如果将“仅用唯一值计算出现次数”设置为“开”，则不满足此条件。 如果将此选项设置为“关闭”，则满足条件。
 
-6. 返回到“标签”边栏选项卡上，配置以下内容，然后单击“保存”   ：
+6. 返回到“标签”边栏选项卡上，配置以下内容，然后单击“保存”：
     
-    - 选择自动分类或建议分类：对于“选择如何应用该标签：自动或向用户建议”  ，选择“自动”  或“建议”  。
+    - 选择自动分类或建议分类：对于“选择如何应用该标签：自动或向用户建议”，选择“自动”或“建议”。
     
     - 指定用于用户提示或策略提示的文本：保留默认文本或指定你自己的字符串。
 
-单击“保存”  时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
+单击“保存”时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
 
 ### <a name="sensitive-information-types-that-require-a-minimum-version-of-the-client"></a>需要最低版本客户端的敏感信息类型
 
-以下的敏感信息类型需要的最低版本为[1.48.204.0](./rms-client/client-version-release-history.md#version-1482040) Azure 信息保护客户端：
+以下敏感信息类型需要 Azure 信息保护客户端的[1.48.204.0](./rms-client/client-version-release-history.md#version-1482040)的最低版本:
 
 - **Azure 服务总线连接字符串**
 - **Azure IoT 连接字符串**
@@ -115,9 +115,9 @@ ms.locfileid: "66448026"
 - **Azure 发布设置密码**
 - **Azure 存储帐户密钥（通用）**
 
-有关这些敏感信息类型的详细信息，请参阅以下博客文章：[Azure 信息保护可帮助你可以通过自动发现凭据更安全](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-helps-you-to-be-more-secure-by/ba-p/360181)
+有关这些敏感信息类型的详细信息, 请参阅以下博客文章:[Azure 信息保护通过自动发现凭据帮助提高安全性](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-helps-you-to-be-more-secure-by/ba-p/360181)
 
-此外，从 1.48.204.0 的 Azure 信息保护客户端、 不支持类型的以下敏感信息和不再在 Azure 门户中的显示。 如果必须使用这些敏感信息类型的标签，我们建议你其删除，因为我们不能确保它们正确检测，应忽略对其在扫描程序报告的任何引用：
+此外, 从 Azure 信息保护客户端的1.48.204.0 开始, 以下敏感信息类型不受支持, 并且不再显示在 Azure 门户中。 如果你有使用这些敏感信息类型的标签, 则建议你删除它们, 因为我们无法确保对它们进行正确的检测, 并且应忽略对扫描程序报告中的任何引用:
 
 - **欧盟电话号码**
 - **欧盟 GPS 坐标**
