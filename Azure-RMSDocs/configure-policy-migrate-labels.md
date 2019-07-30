@@ -4,18 +4,18 @@ description: 为支持统一标签的客户端和服务将 Azure 信息保护标
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/19/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 14d9aa830fba9eced4fb03fbc1e0c9274e9b4106
-ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
+ms.openlocfilehash: 0119dedbd569732abd6e9749eb0796879823c153
+ms.sourcegitcommit: ba28a9dff6a4c75046185749c2ef9e3c08b9e77e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68428443"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68602730"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-office-365-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签
 
@@ -54,7 +54,6 @@ ms.locfileid: "68428443"
 - 请确保你的[客户端支持统一标签](#clients-and-services-that-support-unified-labeling), 并且如有必要, 在 Azure 门户 (适用于不支持统一标签的客户端) 和管理中心 (对于支持统一标签的客户端) 进行管理。
 
 - 不会迁移策略，包括策略设置和谁有权访问策略（作用域内策略）以及所有高级客户端设置。 在标签迁移后配置这些设置的选项包括:
-    - "[复制策略](#copy-your-policies-and-policy-settings)" 选项。
     - 用于敏感度标签的管理中心。
     - [Office 365 安全性和符合性 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps), 你必须使用它来配置[高级客户端设置](./rms-client/clientv2-admin-guide-customizations.md#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。
     
@@ -160,25 +159,6 @@ Azure 信息保护客户端 (经典) 可以使用列出的所有标签设置而�
 
 > [!IMPORTANT]
 > 如果在 Azure 门户之外编辑标签, 则对于 Azure 信息保护客户端 (经典), 返回到 " **Azure 信息保护-统一标签**" 边栏选项卡, 然后选择 "**发布**"。
-
-
-#### <a name="copy-your-policies-and-policy-settings"></a>复制策略和策略设置
-
-此选项将在预览版中逐步推出, 并可能会发生更改。 如果看不到 "**复制策略 (预览版)** " 选项, 请在几周后重试。
-
-迁移标签后, 可以选择用于复制策略的选项。 如果选择此选项, 策略的一次性副本及其[策略设置](configure-policy-settings.md)和任何[高级客户端设置](./rms-client/client-admin-guide-customizations.md#available-advanced-client-settings)将发送到管理标签的管理中心:Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。
-
-在选择 "**复制策略 (预览)** " 选项之前, 请注意以下事项:
-
-- 你无法有选择地选择要复制的策略和设置。 复制所有策略 (**全局**策略和所有作用域内策略), 并复制支持的所有设置作为标签策略设置。 如果已具有同名的标签策略, 则会使用 Azure 门户中的策略设置来覆盖它。
-
-- 不会复制某些高级客户端设置, 因为对于 Azure 信息保护统一标签客户端, 这些设置支持作为*标签高级设置*, 而不是策略设置。 可以通过[Office 365 安全与合规中心 PowerShell](./rms-client/clientv2-admin-guide-customizations.md#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)配置这些标签高级设置。 未复制的高级客户端设置包括:
-    - [LabelbyCustomProperty](./rms-client/client-admin-guide-customizations.md#migrate-labels-from-secure-islands-and-other-labeling-solutions)
-    - [LabelToSMIME](./rms-client/client-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
-
-- 不同于标签迁移 (对标签的后续更改进行同步), "复制策略" 操作不会同步任何对策略或策略设置的后续更改。 在 Azure 门户中进行更改后, 你可以重复 "复制策略" 操作, 并且将再次覆盖任何现有策略及其设置。 或者, 将[LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-labelpolicy?view=exchange-ps)或[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)cmdlet 与 Office 365 安全与合规中心 PowerShell 中的*AdvancedSettings*参数一起使用。
-
-有关为 Azure 信息保护统一标签客户端配置策略设置、高级客户端设置和标签设置的详细信息, 请参阅[Azure 信息保护统一标签客户端的自定义配置](./rms-client/clientv2-admin-guide-customizations.md)《管理员指南》。
 
 ### <a name="clients-and-services-that-support-unified-labeling"></a>支持统一标签的客户端和服务
 

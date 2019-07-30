@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 07/04/2019
+ms.date: 07/28/2019
 manager: barbkess
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 3d3dec9c5f2da8089b277cf9c372800c971af9ea
-ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
+ms.openlocfilehash: 94f7eb89f05ddce29d42689f8af05b0a99e0eedf
+ms.sourcegitcommit: ba28a9dff6a4c75046185749c2ef9e3c08b9e77e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68428353"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68602761"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -130,7 +130,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 收集内容匹配项后，当你向下钻取到活动日志中的文件以显示活动详细信息时，这些匹配项项将显示在报表中。 也可以使用查询来查看和检索此信息。
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>必备条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
 
 |要求|更多信息|
@@ -232,9 +232,6 @@ Azure Monitor 日志具有**使用情况和预估成本**功能, 可帮助您估
 
 配置工作区后，即可开始查看报表。
 
-> [!NOTE] 
-> 首次在报表中显示数据当前存在已知问题。 如果你遇到这种情况，请在全局策略中将“将审核数据发送到 Azure 信息保护日志分析”的[策略设置](configure-policy-settings.md)设置为“关闭”并保存策略。 然后，将相同设置更改为“打开”并保存策略。 客户端[下载更改](configure-policy.md#making-changes-to-the-policy)后，审核事件可能需要最多 30 分钟才能在 Log Analytics 工作区中显示。
-
 ## <a name="how-to-view-the-reports"></a>如何查看报告
 
 在“Azure 信息保护”边栏选项卡中，找到“仪表板”菜单选项，然后选择以下选项之一：
@@ -274,12 +271,12 @@ Azure 信息保护的记录数据存储在下表中：**InformationProtectionLog
 
 |列名|描述|
 |-----------|-----------|
-|Time|事件时间:格式 YYYY-MM-YYYY-MM-DDTHH: MM: SS 中的 UTC|
+|时间|事件时间:格式 YYYY-MM-YYYY-MM-DDTHH: MM: SS 中的 UTC|
 |用户|用户：格式 UPN 或 DOMAIN\USER|
 |ItemPath|完整项目路径或电子邮件主题|
 |ItemName|文件名或电子邮件主题 |
 |方法|标签分配方法:手动、自动、建议、默认或强制|
-|activities|审核活动:DowngradeLabel、UpgradeLabel、RemoveLabel、NewLabel、发现、Access、RemoveCustomProtection、ChangeCustomProtection 或 NewCustomProtection |
+|活动|审核活动:DowngradeLabel、UpgradeLabel、RemoveLabel、NewLabel、发现、Access、RemoveCustomProtection、ChangeCustomProtection 或 NewCustomProtection |
 |LabelName|标签名称 (未本地化)|
 |LabelNameBefore |更改前的标签名称 (未本地化) |
 |ProtectionType|保护类型 [JSON] <br />{ <br />"Type": ["Template", "Custom", "DoNotForward"], <br />  "TemplateID":"GUID" <br /> } <br />|
