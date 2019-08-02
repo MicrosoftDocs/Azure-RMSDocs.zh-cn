@@ -4,19 +4,19 @@ description: 一些有关 Azure 信息保护及其保护服务的常见问题, A
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/25/2019
+ms.date: 08/01/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.suite: ems
 search.appverid:
 - MET150
-ms.openlocfilehash: 16f459d789715c44f724eacb4c8fc01397d90b3f
-ms.sourcegitcommit: 29dc76ef3215a68a4a7a0c0eeae83d22caadec4c
+ms.openlocfilehash: d283821fc61747c2debab1e8e449c7083d7fa439
+ms.sourcegitcommit: 66e0193e053f19edaf80b212aa2308993b3bb9e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68501672"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730379"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -134,6 +134,8 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
     若要分配其中任一管理角色, 请使用 AIPService PowerShell cmdlet [AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator)。
 
 需要注意的事项：
+
+- Microsoft 帐户不支持 Azure 信息保护的委派管理, 即使这些帐户分配给列出的某个管理角色。 
 
 - 如果配置了[加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，此配置不会影响管理 Azure 信息保护的能力（RMS 连接器除外）。 例如，如果配置了加入控制，以致仅允许“IT 部门”组保护内容，那么，用于安装和配置 RMS 连接器的帐户必须是该组的成员。 
 
