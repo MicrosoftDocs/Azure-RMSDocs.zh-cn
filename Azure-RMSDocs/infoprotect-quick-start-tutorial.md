@@ -8,12 +8,14 @@ ms.date: 06/18/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 01c8dceff54738c8734fb1d2e09c403784341664
-ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
+ms.subservice: aiplabels
+ms.custom: admin
+ms.openlocfilehash: 44504efc4640bf3d07398b14da7539cbda20e45d
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67156526"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68788592"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-and-create-a-new-label"></a>教程：配置 Azure 信息保护策略设置并创建新标签
 

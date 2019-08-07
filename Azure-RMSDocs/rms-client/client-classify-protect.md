@@ -4,19 +4,21 @@ description: 有关使用适用于 Windows 的 Azure 信息保护客户端时如
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/17/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
+ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c42ef652f2fe2ccd8c668c84ee134aae47b1056f
-ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
+ms.custom: user
+ms.openlocfilehash: 780e89703c9af6607cf6639c162b552535797cc9
+ms.sourcegitcommit: 332801617ce83ebb3f01edf34cbb69b810662be7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68428363"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808160"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-client"></a>用户指南：Azure 信息保护客户端的分类和保护
 
@@ -31,7 +33,7 @@ ms.locfileid: "68428363"
 
 但是，还可以使用文件资源管理器对文件进行分类和保护。 此方法支持其他文件类型，此方法是一种一次性对多个文件进行分类和保护的便捷方法。 此方法支持保护 Office 文档、PDF 文件、文本和图像文件，以及各种其他文件。 
 
-如果标签将保护应用于文档，则受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 这些位置不支持受保护文件的以下内容：共同创作、Office Online、搜索、文档预览、缩略图和电子数据展示。 
+如果标签将保护应用于文档，则受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 这些位置不支持受保护文件的以下内容：共同创作、Office 网站、搜索、文档预览、缩略图和电子数据展示。 
 
 ### <a name="safely-share-a-file-with-people-outside-your-organization"></a>与组织外部人员安全共享文件
 

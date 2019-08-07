@@ -13,12 +13,13 @@ ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 58de314ef4c87518c8aa6c53036c477b541ef5e1
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 8744ea8dfd7213030c741e6e760c506e0d795db4
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60178278"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792261"
 ---
 # <a name="testing-your-application"></a>测试应用程序
 

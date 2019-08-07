@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
+ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 929032aeb98981e71ff6822ebc8fdccfb68b1ec6
-ms.sourcegitcommit: 47182b6a65bfae3561cb34be3d6a6852a1edccb9
+ms.custom: admin
+ms.openlocfilehash: da2d2aeb6fb21cf4e8080aa2b18fe64cfaf155e2
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68446726"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68788889"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>如何使用作用域内策略为特定用户配置 Azure 信息保护策略
 

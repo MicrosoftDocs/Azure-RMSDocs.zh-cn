@@ -9,30 +9,32 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
+ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9a0625f842d7fef7e72020021164b5eb62029031
-ms.sourcegitcommit: 6c6fda77e131e071c94c2a2fd7b27e4031266fa5
+ms.custom: admin
+ms.openlocfilehash: 48c31144fad67eb436eec13e999fc3c4333d684b
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67544996"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68789671"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>为 Azure Rights Management 配置应用程序
 
->适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!NOTE]
 > 此信息适用于已部署了 Azure 信息保护的 IT 管理员和顾问。 如果你要寻找有关如何针对特定应用程序使用 Rights Management 功能，或者如何打开权限保护文件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
 >
 > 例如，对于 Office 应用程序，请单击帮助图标并输入搜索词，例如 **Rights Management** 或 **IRM**。 有关适用于 Windows 的 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端用户指南](./rms-client/client-user-guide.md)。
 
-为组织部署 Azure 信息保护之后，请使用以下信息配置应用程序、Azure 信息保护客户端和服务。 例如，Office 应用程序如 Word 2019、 Word 2016 和 Word 2013。 以及 Exchange Online（传输规则、数据丢失防护、请勿转发和邮件加密）与 SharePoint Online（受保护库）等服务。 若要了解这些应用程序和服务如何支持 Azure 信息保护中的数据保护服务，请参阅[应用程序如何支持 Azure 权限管理服务](applications-support.md)。
+为组织部署 Azure 信息保护之后，请使用以下信息配置应用程序、Azure 信息保护客户端和服务。 例如, Word 2019、Word 2016 和 Word 2013 等 Office 应用程序。 以及 Exchange Online（传输规则、数据丢失防护、请勿转发和邮件加密）与 SharePoint Online（受保护库）等服务。 若要了解这些应用程序和服务如何支持 Azure 信息保护中的数据保护服务，请参阅[应用程序如何支持 Azure 权限管理服务](applications-support.md)。
 
 > [!IMPORTANT]
-> 有关支持的版本和其他要求的信息，请参阅[Azure 信息保护要求](requirements.md)。
+> 有关支持的版本和其他要求的信息, 请参阅[Azure 信息保护的要求](requirements.md)。
 
--   [Office 365：Online services 的配置](configure-office365.md)
+-   [Office 365：联机服务的配置](configure-office365.md)
 
     -   [Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)
 
@@ -40,7 +42,7 @@ ms.locfileid: "67544996"
 
 - [Office 应用程序：客户端配置](configure-office-apps.md)
 
-    -   [Office 365 应用、 Office 2019、 Office 2016 和 Office 2013](configure-office-apps.md#office365-apps-office-2019-office-2016-and-office-2013)
+    -   [Office 365 应用、Office 2019、Office 2016 和 Office 2013](configure-office-apps.md#office365-apps-office-2019-office-2016-and-office-2013)
 
     -   [Office 2010](configure-office-apps.md#office2010)
 

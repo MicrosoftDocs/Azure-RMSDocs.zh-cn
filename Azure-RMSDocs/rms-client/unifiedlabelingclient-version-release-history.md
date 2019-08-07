@@ -4,18 +4,20 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/22/2019
+ms.date: 08/06/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
+ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: f60d75655e24e7888ae45111d2b3538a8a12c288
-ms.sourcegitcommit: 6c3681cec0f807c6af031db67242ff01a99cd57b
+ms.custom: admin
+ms.openlocfilehash: 565b9d061bf148d0b1e6e2ef2ea45eb93c6cb6ec
+ms.sourcegitcommit: 96082d61b77f44943509311e2ac0943f970ae4e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68411696"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68820703"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -50,9 +52,21 @@ Azure 信息保护统一标签客户端的每个正式发行版 (GA) 在发布�
 
 此客户端正在替换 Azure 信息保护客户端 (经典)。 若要将特性和功能与经典客户端进行比较, 请参阅[比较客户端](use-client.md#compare-the-clients)。
 
+## <a name="version-22190"></a>版本2.2.19。0
+
+**发布日期**：08/06/2019
+
+**纠正**
+
+- 客户端可以成功地下载其策略并显示当前的敏感度标签。 从以前的版本升级后, 如果未在标签中心配置任何自定义信息类型, 则需要此修补程序。
+
+- 一般的性能和稳定性方面的改进。
+
 ## <a name="version-22140"></a>版本2.2.14。0
 
 **发布日期**：07/15/2019
+
+支持, 04/06/2020
 
 **新功能：**
 

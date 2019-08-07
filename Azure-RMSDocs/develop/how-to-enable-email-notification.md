@@ -13,12 +13,13 @@ ms.assetid: 5FB975EE-E4E5-4089-B8E1-CAFD5B9B34EC
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 029aa3075424d2ae91c4521cff7a71bf6e8cc939
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 4427eefb4dec3c2d5d4f8f07b3ef2c68ed1fd9d7
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60178398"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68788493"
 ---
 # <a name="how-to-enable-email-notification"></a>操作说明：启用电子邮件通知
 
@@ -46,7 +47,7 @@ ms.locfileid: "60178398"
 下表包含用于 RMS 电子邮件通知的应用程序数据字段、属性名称和值对。
 
 
-|属性名 | 数据类型 | 示例值 | 注意 |
+|属性名称 | 数据类型 | 示例值 | 注意 |
 |--------------|-----------|---------------|-------|
 |MS.Content.Name|string|“FinancialReport.docx”|这是与受保护的内容关联的标识符。<br><br> 对于受保护的文件，此值应是文件的名称（不包含任何路径信息）。<br><br> 对于其他类型的内容（如电子邮件），这可能是电子邮件的主题，也可能为空。|
 |MS.Notify.Enabled|string|“true”&#124;“false”|如果此值设置为“true”，则当有人尝试使用发布许可证来获取最终用户许可证时，会向发布许可证所有者发送通知电子邮件。|

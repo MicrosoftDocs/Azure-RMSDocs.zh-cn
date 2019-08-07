@@ -1,6 +1,6 @@
 ---
-title: 使用 PowerShell 管理 Azure 信息保护中的保护
-description: 了解如何为 Azure 信息保护中保护服务中使用的 PowerShell 模块来管理此服务为你的租户。
+title: 使用 PowerShell 管理 Azure 信息保护的保护
+description: 了解如何使用 Azure 信息保护中的保护服务的 PowerShell 模块为租户管理此服务。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
@@ -11,25 +11,26 @@ ms.service: information-protection
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a6aa0b8ecd01df9d012588f8e2b02d13f03cfff6
-ms.sourcegitcommit: 6c6fda77e131e071c94c2a2fd7b27e4031266fa5
+ms.custom: admin
+ms.openlocfilehash: 1cfd0f1337556ae682022ea951194017f94d9bb4
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67544968"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68788193"
 ---
-# <a name="administering-protection-from-azure-information-protection-by-using-powershell"></a>使用 PowerShell 管理 Azure 信息保护中的保护
+# <a name="administering-protection-from-azure-information-protection-by-using-powershell"></a>使用 PowerShell 管理 Azure 信息保护的保护
 
->适用对象：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
-若要使用 PowerShell 管理 Azure 信息保护中保护服务需要吗？ 如果所有配置都可在 Azure 门户或 Microsoft 365 管理中心中完成，则可能不需要。 但是，需要使用 PowerShell 进行某些高级配置，并且可能还需使用 PowerShell 以进行更高效的命令行控制和脚本编写。
+是否需要使用 PowerShell 来管理 Azure 信息保护中的保护服务？ 如果所有配置都可在 Azure 门户或 Microsoft 365 管理中心中完成，则可能不需要。 但是，需要使用 PowerShell 进行某些高级配置，并且可能还需使用 PowerShell 以进行更高效的命令行控制和脚本编写。
 
 下一部分中的表格包括一些使用 PowerShell 的高级配置方案。 如果不使用 PowerShell 也可完成配置，则此信息也包括在表中。
 
-此模块，详细了解每个可用的 cmdlet 的完整列表请参阅[AIPService](/powershell/module/aipservice/?view=azureipps#aipservice)。
+有关此模块的可用 cmdlet 的完整列表, 以及每个 cmdlet 的详细信息, 请参阅[AIPService](/powershell/module/aipservice/?view=azureipps#aipservice)。
 
 > [!NOTE]
-> 若要安装此 PowerShell 模块，请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
+> 若要安装此 PowerShell 模块, 请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
 
 除了此服务端 PowerShell 模块，Azure 信息保护客户端还将安装一个补充 PowerShell 模块 **AzureInformationProtection**。 此客户端模块支持对多个文件进行分类和保护，这样可以方便某些操作，例如批量保护文件夹中的所有文件。 有关详细信息，请参阅管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)。
 

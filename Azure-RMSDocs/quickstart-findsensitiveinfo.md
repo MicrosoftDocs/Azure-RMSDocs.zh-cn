@@ -8,12 +8,14 @@ ms.date: 06/18/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 9678aeed589c1b4d9beee5f304ac9d8fdbd5cbf1
-ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
+ms.custom: admin
+ms.subservice: aiplabels
+ms.openlocfilehash: 888ddafcea6dd855d970fc959e1bb7447c3d2573
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67156720"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68790421"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 

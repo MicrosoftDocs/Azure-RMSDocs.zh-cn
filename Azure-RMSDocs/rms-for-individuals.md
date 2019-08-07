@@ -11,12 +11,13 @@ ms.service: information-protection
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5f95406f7f6851b6a0082c19c186fda5bc4532fd
-ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
+ms.custom: admin
+ms.openlocfilehash: a6fb98b54c5305206123076b8c9c3b2fad0f9876
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67156676"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792868"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>个人 RMS 和 Azure 信息保护
 
@@ -42,15 +43,15 @@ RMS 个人版采用 Azure Active Directory 自助式注册。 如果用户已使
 
 2. 键入用于保护需要打开的文档的电子邮件地址。
 
-3. 单击“注册”  。
+3. 单击“注册”。
 
     Microsoft 使用电子邮件地址检查组织是否已拥有 [Azure 信息保护高级版订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)或 [Office 365 订阅](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)（后者使用 Azure 信息保护添加数据保护）。 如果找到任一订阅，则无需使用个人 RMS。 可以立即登录且个人 RMS 的自助注册将取消。 如未找到任一订阅，则继续下一步。
 
 4. 等待确认电子邮件发送至你提供的地址。 Office 365 团队 (support@email.microsoftonline.com) 将发送主题为**完成注册 Microsoft Azure 信息保护**的电子邮件。
 
-5. 收到该电子邮件后，请单击“是本人”  来验证电子邮件地址并完成注册过程。
+5. 收到该电子邮件后，请单击“是本人”来验证电子邮件地址并完成注册过程。
 
-6. 然后将出现“最后一项操作...”页  ，用于完善你的帐户信息。 键入你的名字和姓氏，输入并确认你选择的密码，然后单击“开始”  。
+6. 然后将出现“最后一项操作...”页，用于完善你的帐户信息。 键入你的名字和姓氏，输入并确认你选择的密码，然后单击“开始”。
 
 7. 创建帐户后，将看到新的 Microsoft Azure 信息保护页面，可以在其中下载和安装 Azure 信息保护客户端，或单击[用户指南](./rms-client/client-user-guide.md)链接获取 Windows 计算机的操作说明。
 
@@ -61,5 +62,5 @@ RMS 个人版采用 Azure Active Directory 自助式注册。 如果用户已使
 
 
 ## <a name="next-steps"></a>后续步骤
-个人 RMS 是使用受 Azure Active Directory 的自助注册功能的示例。 有关此功能的工作原理的详细信息，请参阅[什么是 Azure Active Directory 的自助服务注册？](/azure/active-directory/users-groups-roles/directory-self-service-signup) Azure Active Directory 文档中。
+个人 RMS 是使用 Azure Active Directory 支持的自助服务注册功能的一个示例。 有关此功能的工作原理的详细信息, 请参阅 Azure Active Directory 文档中的[什么是 Azure Active Directory 的自助服务注册？](/azure/active-directory/users-groups-roles/directory-self-service-signup) 。
 

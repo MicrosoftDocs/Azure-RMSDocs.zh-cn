@@ -8,18 +8,20 @@ ms.date: 07/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: d5cdc73e79891cc1756808d67e16f45796550de5
-ms.sourcegitcommit: ae48f7cea01b4d615052659072305abb8698a7f7
+ms.subservice: aiplabels
+ms.custom: admin
+ms.openlocfilehash: 00d9ad80ec87f62743eab116edac64f55ebaf4e9
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375401"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68789136"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
->适用对象：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 使用以下信息来了解如何配置 Azure 信息保护的默认策略。
 
@@ -30,7 +32,7 @@ ms.locfileid: "68375401"
 > [!IMPORTANT]
 > 从 2019 年 4 月开始，面向新客户逐步推出一项更改：不自动创建默认标签。 将面向统一标记平台自动预配这些租户，因此在 Azure 门户中进行配置后，无需迁移标签。
 > 
-> 对于这些租户，如果尚未在 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心创建任何敏感度标签，可以从 Azure 信息保护的当前默认策略创建默认标签。 为此，请从“标签”边栏选项卡中选择“生成默认标签”   ，然后将该标签添加到全局策略。 有关详细说明，请参阅[在 Azure 门户中开始使用 Azure 信息保护](quickstart-viewpolicy.md)快速入门。
+> 对于这些租户，如果尚未在 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心创建任何敏感度标签，可以从 Azure 信息保护的当前默认策略创建默认标签。 为此，请从“标签”边栏选项卡中选择“生成默认标签”，然后将该标签添加到全局策略。 有关详细说明，请参阅[在 Azure 门户中开始使用 Azure 信息保护](quickstart-viewpolicy.md)快速入门。
 
 
 ## <a name="current-default-policy"></a>当前默认策略
@@ -45,15 +47,15 @@ ms.locfileid: "68375401"
 
 - **机密\所有员工**
 
-- 机密\仅收件人 
+- 机密\仅收件人
 
 - **高度机密\所有员工** 
 
-- 高度机密\仅收件人  
+- 高度机密\仅收件人 
 
 如果没有为这些子标签自动配置保护，Azure 信息保护默认策略会与[旧版默认策略](#default-policy-before-july-31-2017)保持一致。
 
-将保护应用于“所有员工”子标签时，将通过使用在 Azure 门户中自动转换为标签的默认模板来配置此保护  。 有关这些模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
+将保护应用于“所有员工”子标签时，将通过使用在 Azure 门户中自动转换为标签的默认模板来配置此保护。 有关这些模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
 自 2017 年 8 月 30 日起，此版 Azure 信息保护默认策略包括多语言版本的标签名称和说明。 
 
@@ -87,10 +89,10 @@ ms.locfileid: "68375401"
 |高度机密\仅收件人|需要保护且仅收件人可以查看的高度机密数据。|**启用**：开 <br /><br />**可视标记**：页脚（电子邮件）<br /><br />归类为高度机密 <br /><br />**条件**：无<br /><br />**保护**：设置用户定义的权限（预览），在 Outlook 中应用“不转发”|
 
 ###### <a name="footnote-1"></a>脚注 1
-保护权限与[默认模板](configure-policy-templates.md#default-templates)“机密\所有员工”中的保护权限相匹配  。
+保护权限与[默认模板](configure-policy-templates.md#default-templates)“机密\所有员工”中的保护权限相匹配。
 
 ###### <a name="footnote-2"></a>脚注 2 
-保护权限与[默认模板](configure-policy-templates.md#default-templates)“高度机密\所有员工”中的保护权限相匹配  。
+保护权限与[默认模板](configure-policy-templates.md#default-templates)“高度机密\所有员工”中的保护权限相匹配。
 
 
 ### <a name="information-protection-bar"></a>信息保护栏

@@ -4,24 +4,24 @@ description: 有关 Azure 信息保护中数据保护服务 Azure Rights Managem
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.custom: askipteam
+ms.custom: admin
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6507d040fec9bf7f93037ae07fa8ecce6d627e0e
-ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
+ms.openlocfilehash: c141b70bf775787620761dd93c78a6c4dded7faf
+ms.sourcegitcommit: 332801617ce83ebb3f01edf34cbb69b810662be7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67521133"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808077"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
->适用对象：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 是否有关于 Azure 信息保护中数据保护服务 Azure Rights Management 的问题？ 请查看此处是否有答案。
 
@@ -80,7 +80,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 如果文档通过自定义权限保护，则无法更改现有文档的权限。 必须再次保护文档，并指定这一新的文档版本所需的所有用户和所有使用权限。 若要重新保护受保护的文档，必须具有“完全控制”使用权限。
 
-提示：要检查文档是受模板保护还是使用自定义权限进行保护，请使用 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet。 如果是自定义权限，则始终能看到访问受限的模板描述，以及运行 [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate) 时不会显示的唯一模板 ID  。
+提示：要检查文档是受模板保护还是使用自定义权限进行保护，请使用 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet。 如果是自定义权限，则始终能看到访问受限的模板描述，以及运行 [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate) 时不会显示的唯一模板 ID。
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>我对 Exchange 采用混合部署：Exchange Online 上存在一些用户，而其他用户则在 Exchange Server 上。Azure RMS 支持这种部署吗？
 绝对支持，而且很棒的是，用户能够在两种 Exchange 部署上无缝保护并使用受保护的电子邮件和附件。 对于此配置，[激活 Azure RMS](activate-service.md) 并[启用适用于 Exchange Online 的 IRM](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)，然后[部署并配置适用于 Exchange Server 的 RMS 连接器](deploy-rms-connector.md)。
@@ -89,7 +89,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 不会，你可以始终控制并继续访问数据，即使你决定不再使用 Azure Rights Management 服务也是如此。 有关详细信息，请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](decommission-deactivate.md)。
 
 ## <a name="can-i-control-which-of-my-users-can-use-azure-rms-to-protect-content"></a>是否可以控制哪些用户能够使用 Azure RMS 来保护内容？
-是的，Azure Rights Management 服务具有针对这一应用场景的用户载入控制。 有关详细信息，请参阅[为分阶段部署配置加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)主题中[激活 Azure 信息保护中的保护服务](activate-service.md)一文。
+是的，Azure Rights Management 服务具有针对这一应用场景的用户载入控制。 有关详细信息, 请参阅[从 Azure 信息保护中激活保护服务](activate-service.md)一文中的为[分阶段部署配置加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)部分。
 
 ## <a name="can-i-prevent-users-from-sharing-protected-documents-with-specific-organizations"></a>是否可以防止用户与特定的组织共享受保护文档？
 在数据保护中使用 Azure Rights Management 服务的最大优势之一在于，它支持企业与企业的协作，同时，无需为每个合作伙伴组织配置显式信任关系，因为 Azure AD 会代你处理好身份验证。
@@ -116,9 +116,9 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 此外，也可使用 PowerShell 将外部用户添加到自定义模板和标签。 此配置要求使用权限定义对象（用于更新模板）：
 
-1. 指定外部电子邮件地址及其权限和权限定义对象，在通过使用[新建 AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet 来创建一个变量。
+1. 通过使用[AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet 创建变量, 在权限定义对象中指定外部电子邮件地址及其权限。
 
-2. 该变量提供给 RightsDefinition 参数以及[集 AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet。
+2. 将此变量提供给[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) Cmdlet 的 RightsDefinition 参数。
 
     如果将用户添加到现有模板，除新用户以外，还须在模板中为现有用户定义权限定义对象。 对于这种情况，您可能会发现有用**示例3：从cmdlet的[示例](/powershell/module/aipservice/set-aipservicetemplateproperty#examples)部分向自定义模板**添加新用户和权限。
 
@@ -127,7 +127,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>如何向 Gmail 或 Hotmail 帐户发送受保护的电子邮件？
 
-使用 Exchange Online 和 Azure Rights Management 服务时，必须将电子邮件作为受保护的邮件发送给用户。 例如，可在 Outlook 网页版的命令栏中选择新的“保护”按钮，使用 Outlook“不要转发”按钮或菜单选项   。 或者，可选择 Azure 信息保护标签，自动应用“不要转发”功能，并对电子邮件进行分类。
+使用 Exchange Online 和 Azure Rights Management 服务时，必须将电子邮件作为受保护的邮件发送给用户。 例如，可在 Outlook 网页版的命令栏中选择新的“保护”按钮，使用 Outlook“不要转发”按钮或菜单选项。 或者，可选择 Azure 信息保护标签，自动应用“不要转发”功能，并对电子邮件进行分类。
 
 收件人会看见一个登录到他们的 Gmail、Yahoo 或 Microsoft 帐户的选项，然后可以阅读受保护的邮件。 或者，他们可选择一次性密码选项在浏览器中阅读此电子邮件。
 
@@ -148,13 +148,13 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 打开 Outlook 并使用 Office 365 工作或学校帐户创建配置文件。 然后，创建新邮件，并执行以下操作来配置 Office，使其可以使用 Azure 权限管理服务来保护文档和电子邮件：
 
-1. 在新邮件的“选项”  选项卡上，单击“权限”  ，然后单击“验证凭据”  。
+1. 在新邮件的“选项”选项卡上，单击“权限”，然后单击“验证凭据”。
 
-2. 出现提示时，再次指定你的 Office 365 工作或学校帐户详细信息，然后选择“登录”  。
+2. 出现提示时，再次指定你的 Office 365 工作或学校帐户详细信息，然后选择“登录”。
 
-    这将下载 Azure 权限管理模板，“验证凭据”  选项将替换为包括“无限制”  、“不要转发”  以及为租户发布任何 Azure 权限管理模板的选项。 现在可以取消此新邮件。
+    这将下载 Azure 权限管理模板，“验证凭据”选项将替换为包括“无限制”、“不要转发”以及为租户发布任何 Azure 权限管理模板的选项。 现在可以取消此新邮件。
 
-保护电子邮件或文档：在“选项”选项卡上，单击“权限”，然后选择用于保护电子邮件或文档的选项或模板   。
+保护电子邮件或文档：在“选项”选项卡上，单击“权限”，然后选择用于保护电子邮件或文档的选项或模板。
 
 在保护文档之后跟踪文档：在安装了 Azure 信息保护客户端的 Windows 计算机上，使用 Office 应用程序或文件资源管理器将文档注册到文档跟踪站点。 有关说明，请参阅[跟踪和撤销文档](./rms-client/client-track-revoke.md)。 现在可以从 Mac 计算机使用 Web 浏览器访问文档跟踪站点 (https://track.azurerms.com) 来跟踪和撤销此文档。
 
@@ -173,7 +173,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>对于成功部署，是否有任何提示或窍门？
 
-考察大量的部署并聆听客户、 合作伙伴后，顾问和支持工程师的诀窍我们很乐意与体验：**设计并部署简单的策略**。
+在监督许多部署并倾听我们的客户、合作伙伴、顾问和支持工程师后, 我们可以从经验中获得最大的技巧之一:**设计并部署简单的策略**。
 
 由于 Azure 信息保护支持与任何人安全共享，因此，你完全有理由相信自己的数据保护措施的覆盖面。 但是在配置权限使用限制时请保守一点。 对许多组织而言，最大的业务影响来自于通过将访问权限限制为组织内部人员的方式来防止数据泄露。 当然，你可以根据需要采取粒度级比这高得多的措施 - 例如，防止人员打印、编辑，等等。但是，对于确实需要高级安全性的文档，请将更高粒度级的限制保留为例外措施，并且不要一开始就实施这些限制性更强的使用权限，而是计划采取分阶段的实施方案。
 
@@ -191,13 +191,13 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 租户使用许可证有效期的默认值为 30 天，此设置可通过标签或模板中限制性更强的设置进行替代。 若要详细了解使用许可证以及如何对其进行配置，请参阅 [ 使用许可证](configure-usage-rights.md#rights-management-use-license)文档。
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>Rights Management 可以防止屏幕截图吗？
-通过不授予复制  [使用权限](configure-usage-rights.md)，Rights Management 可以阻止许多常用屏幕捕获工具在 Windows 平台（Windows 7、Windows 8.1、Windows 10、Windows 10 移动版）和 Android 上进行屏幕捕获。 不过，iOS 和 Mac 设备不允许任何应用阻止屏幕截图。 此外，任何设备上的浏览器也都不能阻止屏幕截图。 浏览器使用包括 Outlook 网页版和 Office Online。
+通过不授予复制[使用权限](configure-usage-rights.md)，Rights Management 可以阻止许多常用屏幕捕获工具在 Windows 平台（Windows 7、Windows 8.1、Windows 10、Windows 10 移动版）和 Android 上进行屏幕捕获。 不过，iOS 和 Mac 设备不允许任何应用阻止屏幕截图。 此外，任何设备上的浏览器也都不能阻止屏幕截图。 浏览器使用包括 web 上的 Outlook 和 web 上的 Office。
 
-阻止屏幕捕获可帮助避免意外或疏忽披露机密或敏感信息。 但有很多种用户可以共享屏幕显示的数据和屏幕截图是只有一个方法。 例如，如果想要共享所显示的信息，用户可以使用带相机的手机拍照，可以重新键入相关数据，还可以直接通过口头方式将其传达给某人。
+阻止屏幕捕获可帮助避免意外或疏忽披露机密或敏感信息。 但是, 用户可以通过多种方式来共享显示在屏幕上的数据, 拍摄屏幕截图只是一种方法。 例如，如果想要共享所显示的信息，用户可以使用带相机的手机拍照，可以重新键入相关数据，还可以直接通过口头方式将其传达给某人。
 
 如这些例子所示，即使支持 Rights Management API 的所有平台和所有软件都阻止屏幕捕获，仅靠技术并非始终能够阻止用户共享他们不应该共享的数据。 Rights Management 可以通过授权和使用策略来确保重要数据的安全性，但在使用此企业权限管理解决方案时还应加入其他控制手段。 例如，可以实施物理安全措施，可以仔细盘查和监视有权访问组织数据的人员，还可以进行用户教育，让用户了解哪些数据是不应共享的。
 
 ## <a name="whats-the-difference-between-a-user-protecting-an-email-with-do-not-forward-and-a-template-that-doesnt-include-the-forward-right"></a>用户通过“不得转发”和不包括“转发”权限的模板来保护电子邮件有什么区别？
 
-除名称和外观外，“不转发”  既不是“转发”权限的相反权限，也不是模板。 它实际上是一组权限，包括限制复制、打印和保存附件以及限制转发电子邮件。 这些权限通过所选收件人动态应用于用户，而不由管理员静态分配。 有关详细信息，请参阅[不要转发的电子邮件的选项](configure-usage-rights.md#do-not-forward-option-for-emails)主题中[为 Azure 信息保护配置使用权限](configure-usage-rights.md)。
+除名称和外观外，“不转发”既不是“转发”权限的相反权限，也不是模板。 它实际上是一组权限，包括限制复制、打印和保存附件以及限制转发电子邮件。 这些权限通过所选收件人动态应用于用户，而不由管理员静态分配。 有关详细信息, 请参阅为[Azure 信息保护配置使用权限](configure-usage-rights.md)中的[电子邮件](configure-usage-rights.md#do-not-forward-option-for-emails)的 "不转发" 选项部分。
 

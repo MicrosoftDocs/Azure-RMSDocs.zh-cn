@@ -11,12 +11,13 @@ ms.service: information-protection
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 624d89e6d1b6c78ee87491c86484657bb62a90f6
-ms.sourcegitcommit: 47182b6a65bfae3561cb34be3d6a6852a1edccb9
+ms.custom: admin
+ms.openlocfilehash: 2ae2bd1fd5d93d2710db3d8c44db5be96bc6138f
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68446543"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68788248"
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure 信息保护 - 也称为...
 

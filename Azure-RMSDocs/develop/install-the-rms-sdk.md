@@ -13,12 +13,13 @@ ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 2bae0a9cbfa7070771c13186554bcef328df12ca
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 1ce52c18e1fb7569ea1b02f56f0564aab0f09129
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60178295"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68791031"
 ---
 # <a name="install-the-sdk"></a>安装 SDK
 

@@ -13,12 +13,13 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: e3bce5ec86f8c655ca6f37a108f007d50387c2d2
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 8a576565472327f0c090c3168662f16299d4b61f
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60179422"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792666"
 ---
 # <a name="android-setup"></a>Android 安装程序
 
@@ -31,7 +32,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 我们建议在开发系统上安装以下软件：
 
@@ -66,20 +67,20 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
  
 -   打开 Eclipse 开发环境。
--   若要创建新 Android 应用程序项目，请在 **“文件”** 菜单上，单击 **“新建”**，单击 **“项目”**，然后选择 **“Android 应用程序项目”**。
+-   若要创建新 Android 应用程序项目，请在 **“文件”** 菜单上，单击 **“新建”** ，单击 **“项目”** ，然后选择 **“Android 应用程序项目”** 。
 
     ![创建新的 Android 应用程序](../media/Android-setup-01c.png)
 
 -   输入应用程序名称。 项目名称和包名称根据应用程序名称进行填充。
--   单击 **“下一步”**，然后选择要用于创建工作区的位置。
+-   单击 **“下一步”** ，然后选择要用于创建工作区的位置。
 
     ![输入应用程序名称](../media/Android-setup-02a.jpg)
 
--   单击 **“下一步”**，然后为应用选择图标。
+-   单击 **“下一步”** ，然后为应用选择图标。
 
     ![为应用选择图标](../media/Android-setup-03.png)
 
--   单击 **“下一步”**，然后选择 **“空白活动”** 以创建活动。
+-   单击 **“下一步”** ，然后选择 **“空白活动”** 以创建活动。
 
     ![创建活动](../media/Android-setup-04.png)
 
@@ -87,7 +88,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
     ![提供活动的名称](../media/Android-setup-05a.jpg)
 
--   单击 **“完成”**。
+-   单击 **“完成”** 。
 
     ![完成创建](../media/Android-setup-06.jpg)
 
@@ -95,14 +96,14 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 **引用 SDK**
 
-- 导航到在其中提取 *adrms\_android\_sdk.zip* 的文件夹。 在“SDK > com > microsoft > rightsmanagement”文件夹中，确保文件 *.classpath*、*.project* 和 *project.properties* 未标记为只读。
+- 导航到在其中提取 *adrms\_android\_sdk.zip* 的文件夹。 在“SDK > com > microsoft > rightsmanagement”文件夹中，确保文件 *.classpath*、 *.project* 和 *project.properties* 未标记为只读。
 - 若要引用 SDK，必须将它导入工作区中。
 
-  在 Eclipse 中，单击 **“文件”**。 在 **“文件”** 菜单上，单击 **“导入”**。 在 **“导入”** 对话框中，选择 **“Android/现有 Android 代码到工作区”**。
+  在 Eclipse 中，单击 **“文件”** 。 在 **“文件”** 菜单上，单击 **“导入”** 。 在 **“导入”** 对话框中，选择 **“Android/现有 Android 代码到工作区”** 。
 
   ![将其导入到工作区](../media/Android-setup-07.png)
 
-- 单击“下一步” 。 导航以选择在其中提取 *adrms\_android\_sdk.zip* 的文件夹。 SDK 应作为 **com.microsoft.rightsmanagement** 显示在列表中。
+- 单击“下一步”。 导航以选择在其中提取 *adrms\_android\_sdk.zip* 的文件夹。 SDK 应作为 **com.microsoft.rightsmanagement** 显示在列表中。
 
   ![导航到“选择文件夹”](../media/Android-setup-08c.jpg)
 
@@ -112,15 +113,15 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 - 右键单击 **“项目”** 图标并查看项目的属性。
 - 导航到 **“Android”** 选项卡。
-- 单击 **“添加”**，然后从工作区中选择 *com.microsoft.rightsmanagement* 库。
+- 单击 **“添加”** ，然后从工作区中选择 *com.microsoft.rightsmanagement* 库。
 
   ![添加库](../media/Android-setup-10b.jpg)
 
-- 单击 **“确定”**。
+- 单击 **“确定”** 。
 
   因为 MS RMS SDK 4.2 与 AAD RM 相连接，所以必须向应用程序授予 **INTERNET** 和 **ACCESS\_NETWORK\_STATE** 权限。 为此，请在项目的根目录中打开 *AndroidManifest.xml* 文件。
 
-  若要添加权限，请单击 **“添加”**，然后选择 **“使用权限”**。
+  若要添加权限，请单击 **“添加”** ，然后选择 **“使用权限”** 。
 
   ![添加权限](../media/Android-setup-11d.jpg)
 

@@ -8,12 +8,14 @@ ms.date: 07/23/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: a4521aa502fd178843502a5341a2ee27b07438d3
-ms.sourcegitcommit: 47182b6a65bfae3561cb34be3d6a6852a1edccb9
+ms.subservice: aiplabels
+ms.custom: admin
+ms.openlocfilehash: ffc5aa43b44eedad30dbfdb501152e55f87fb510
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68446890"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68793843"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件
 

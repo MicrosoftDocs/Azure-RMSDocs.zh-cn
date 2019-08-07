@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
+ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 521a14606a72bba4871f18a2191f246af1de14f7
-ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
+ms.custom: admin
+ms.openlocfilehash: eb9cfbe808e20f3b65a2d964e4f776f02b4b5ce8
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67522095"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68793958"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
@@ -62,7 +64,7 @@ ms.locfileid: "67522095"
     |-----------|-----------|  
     |**域**|_tcp.rmscluster.contoso.com|  
     |**服务**|_rmsredir|  
-    |**Protocol**|_http|  
+    |**协议**|_http|  
     |**优先级**|0|  
     |**权重**|0|  
     |**端口号**|80|  
@@ -72,11 +74,11 @@ ms.locfileid: "67522095"
 
     a. 在群集中的某个 AD RMS 服务器上，启动 Internet Information Services (IIS) 管理器控制台。
 
-    b. 导航到“默认网站”   > “_wmcs”   > “许可”   > “licensing.asmx” 
+    b. 导航到“默认网站” > “_wmcs” > “许可” > “licensing.asmx”
 
-    c. 右键单击“licensing.asmx”   > “属性”   > “编辑” 
+    c. 右键单击“licensing.asmx” > “属性” > “编辑”
 
-    d. 在“licensing.asmx 权限”  对话框中，选择“用户”  以为所有用户设置重定向，或单击“添加”  并指定包含需重定向用户的组。
+    d. 在“licensing.asmx 权限”对话框中，选择“用户”以为所有用户设置重定向，或单击“添加”并指定包含需重定向用户的组。
     
     即使所有用户都使用支持 DNS 重定向的 Office 版本，最好还是先指定部分用户来进行分阶段迁移。
     
@@ -84,7 +86,7 @@ ms.locfileid: "67522095"
 
     f. 若要确认此配置按预期工作，请尝试从浏览器直接连接到 licensing.asmx 文件。 应看到以下错误消息，它将触发运行 Office 365 应用或 Office 2019 或 Office 2016 的客户端查找 SRV 记录：
     
-    错误消息 401.3:  无权使用所提供的凭据查看此目录或页面(由于访问控制列表，访问被拒绝)
+    错误消息 401.3:无权使用所提供的凭据查看此目录或页面(由于访问控制列表，访问被拒绝)
 
 
 ## <a name="client-reconfiguration-by-using-registry-edits"></a>使用注册表编辑重新配置客户端
@@ -101,7 +103,7 @@ ms.locfileid: "67522095"
 
 - 使用组策略软件安装，将脚本分配给计算机。
 
-- 使用软件部署解决方案，将脚本部署给计算机。 例如，使用 System Center Configuration Manager [包和程序](/sccm/apps/deploy-use/packages-and-programs)。 在包和程序的属性中，在“运行模式”下  ，指定在设备上使用管理权限运行该脚本。 
+- 使用软件部署解决方案，将脚本部署给计算机。 例如，使用 System Center Configuration Manager [包和程序](/sccm/apps/deploy-use/packages-and-programs)。 在包和程序的属性中，在“运行模式”下，指定在设备上使用管理权限运行该脚本。 
 
 - 如果用户具有本地管理员特权，请使用登录脚本。
 
@@ -111,7 +113,7 @@ ms.locfileid: "67522095"
 
 - 使用组策略软件安装来发布脚本供用户运行。
 
-- 使用软件部署解决方案，将脚本部署给用户。 例如，使用 System Center Configuration Manager [包和程序](/sccm/apps/deploy-use/packages-and-programs)。 在包和程序的属性中，在“运行模式”下  ，指定使用该用户的权限运行该脚本。 
+- 使用软件部署解决方案，将脚本部署给用户。 例如，使用 System Center Configuration Manager [包和程序](/sccm/apps/deploy-use/packages-and-programs)。 在包和程序的属性中，在“运行模式”下，指定使用该用户的权限运行该脚本。 
 
 - 用户登录到他们的计算机时要求其运行该脚本。
 
@@ -125,18 +127,18 @@ ms.locfileid: "67522095"
 
 ### <a name="modifying-the-scripts-for-registry-edits"></a>修改脚本以实现注册表编辑
 
-1. 返回到迁移脚本 Migrate-Client.cmd  和 Migrate-User.cmd  中，这是之前在[准备阶段](migrate-from-ad-rms-phase1.md#step-2-prepare-for-client-migration)下载这些脚本时提取的。
+1. 返回到迁移脚本 Migrate-Client.cmd 和 Migrate-User.cmd 中，这是之前在[准备阶段](migrate-from-ad-rms-phase1.md#step-2-prepare-for-client-migration)下载这些脚本时提取的。
 
-2. 按照 MigrateClient.cmd  中的说明修改脚本，以便它包含租户的 Azure Rights Management 服务 URL，以及 AD RMS 群集 Extranet 授权 URL 和 Intranet 授权 URL 的服务器名称。 然后，使上述脚本版本递增。 若要跟踪脚本版本，最好采用以下格式使用今天的日期：YYYYMMDD
+2. 按照 MigrateClient.cmd 中的说明修改脚本，以便它包含租户的 Azure Rights Management 服务 URL，以及 AD RMS 群集 Extranet 授权 URL 和 Intranet 授权 URL 的服务器名称。 然后，使上述脚本版本递增。 若要跟踪脚本版本，最好采用以下格式使用今天的日期：YYYYMMDD
     
    > [!IMPORTANT]
    > 仍然注意，不要在地址前后引入多余空格。
    > 
    > 此外，如果 AD RMS 服务器使用 SSL/TLS 服务器证书，请检查字符串中许可 URL 值是否包括端口号 **443**。 例如： https://rms.treyresearch.net:443/_wmcs/licensing 。 单击群集名称并查看“**群集详细信息**”时，Active Directory Rights Management Services 中会显示此信息。 如果端口号 443 包含在此 URL 中，修改脚本时请将该值包括在内。 例如 https://rms.treyresearch.net:<strong>443</strong>。 
     
-   如果需要针对 &lt;YourTenantURL&gt;  检索 Azure Rights Management 服务 URL ，请重新参考[确定 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
+   如果需要针对 &lt;YourTenantURL&gt; 检索 Azure Rights Management 服务 URL ，请重新参考[确定 Azure Rights Management 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
 
-3. 使用此步骤开始处的说明，配置脚本部署方法，在由 AIPMigrated 组成员使用的 Windows 客户端计算机上运行 Migrate-Client.cmd  和 Migrate-User.cmd  。 
+3. 使用此步骤开始处的说明，配置脚本部署方法，在由 AIPMigrated 组成员使用的 Windows 客户端计算机上运行 Migrate-Client.cmd 和 Migrate-User.cmd。 
 
 ## <a name="next-steps"></a>后续步骤
 若要继续迁移，请转到[第 4 阶段 - 支持服务配置](migrate-from-ad-rms-phase4.md)。

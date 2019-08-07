@@ -8,17 +8,19 @@ ms.date: 07/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
+ms.subservice: v2client
 ms.suite: ems
-ms.openlocfilehash: 6e51dda2317022544b25fca26625839772fdef5e
-ms.sourcegitcommit: fdc1f3d76b48f4e865a538087d66ee69f0f9888d
+ms.custom: admin
+ms.openlocfilehash: 95c855701b1fc8de2e3f9f458b2cd760a3abdd4b
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68141676"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68793230"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标签客户端管理员指南
 
->适用对象：  Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
 > 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -83,11 +85,11 @@ Azure 信息保护统一标签客户端包括以下各项:
 
 ### <a name="installation-checks-and-troubleshooting"></a>安装检查和疑难解答
 
-安装客户端后，请使用“帮助和反馈”选项打开“Microsoft Azure 信息保护”对话框   ：
+安装客户端后，请使用“帮助和反馈”选项打开“Microsoft Azure 信息保护”对话框：
 
 - 从 Office 应用程序:在 "**主页**" 选项卡上的 "**敏感度**" 组中, 选择 "**敏感度**", 然后选择 "**帮助和反馈**"。
 
-- 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”   。 
+- 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”。 
 
 #### <a name="help-and-feedback-section"></a>“**帮助和反馈**”部分
 
@@ -137,7 +139,7 @@ Azure 信息保护统一标签客户端包括以下各项:
 
 ## <a name="support-for-multiple-languages"></a>支持多种语言
 
-Azure 信息保护统一标签客户端支持 Office 365 支持的相同语言。 有关这些语言的列表，请参阅 Office [国际可用性](https://products.office.com/business/international-availability)页面的 Office 365、Exchange Online Protection 和 Power BI  部分。
+Azure 信息保护统一标签客户端支持 Office 365 支持的相同语言。 有关这些语言的列表，请参阅 Office [国际可用性](https://products.office.com/business/international-availability)页面的 Office 365、Exchange Online Protection 和 Power BI 部分。
 
 对于这些语言, 菜单选项、对话框和来自 Azure 信息保护的消息, 统一标签客户端以用户的语言显示。 只有单个安装程序可检测语言, 因此, 无需额外配置即可安装不同语言的 Azure 信息保护统一标签客户端。 
 
@@ -172,7 +174,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标签客户端,
 
 可使用以下任一选项卸载客户端：
 
-- 使用控制面板卸载程序：单击“Microsoft Azure 信息保护” > “卸载”  
+- 使用控制面板卸载程序：单击“Microsoft Azure 信息保护” > “卸载”
 
 - 重新运行该可执行文件 (例如, **AzInfoProtection_UL**), 然后在 "**修改安装程序**" 页上单击 "**卸载**"。 
 

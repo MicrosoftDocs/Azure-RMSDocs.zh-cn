@@ -13,21 +13,22 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: feb0636c025d13dd3a290eb34ecb49eec4ebe284
-ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
+ms.custom: dev
+ms.openlocfilehash: c508365855d8d2e914fca2c4853dc315d84331e2
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67520759"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68791305"
 ---
 # <a name="developing-your-application"></a>开发应用程序
 
 本示例中将构建与 Azure信息保护服务 (AIP) 交互的简单控制台应用程序。  它将要保护的文件的路径作为输入，然后使用临时策略或 Azure 模板对其进行保护。 应用程序将根据输入应用正确的策略，创建信息受保护的文档。 你将使用的示例代码是 [Azure IP 测试应用程序](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test)，位于 Github 上。
 
 ## <a name="sample-app-prerequisites"></a>示例应用程序必备组件
-- 操作系统：  Windows 10、Windows 8、Windows 7、Windows Server 2008、Windows Server 2008 R2 或 Windows Server 2012
-- 编程语言：  C#（.NET Framework 3.0 及更高版本）
-- 开发环境：  Visual Studio 2015（及更高版本）
+- 操作系统：Windows 10、Windows 8、Windows 7、Windows Server 2008、Windows Server 2008 R2 或 Windows Server 2012
+- 编程语言：C#（.NET Framework 3.0 及更高版本）
+- 开发环境：Visual Studio 2015（及更高版本）
 
 ## <a name="setting-up-your-azure-configuration"></a>设置 Azure 配置
 
@@ -35,9 +36,9 @@ ms.locfileid: "67520759"
 
 ### <a name="azure-ad-tenant-configuration"></a>Azure AD 租户配置
 
-若要配置 Azure 信息保护的 Azure AD 环境，请按照中的指导[激活 Azure 信息保护中的保护服务](https://docs.microsoft.com/information-protection/deploy-use/activate-service)。
+若要为 Azure 信息保护配置 Azure AD 环境, 请按照[从 Azure 信息保护中激活保护服务](https://docs.microsoft.com/information-protection/deploy-use/activate-service)中的指南进行操作。
 
-激活服务后，你需要 PowerShell 组件来执行后续步骤。 请按照[使用 PowerShell 管理 Azure 信息保护中的保护](https://docs.microsoft.com/information-protection/deploy-use/administer-powershell)来实现此目的。
+激活服务后，你需要 PowerShell 组件来执行后续步骤。 遵循[使用 PowerShell 管理 Azure 信息保护中的保护](https://docs.microsoft.com/information-protection/deploy-use/administer-powershell)来完成此操作。
 
 ### <a name="getting-your-tenant-id"></a>获取租户 ID
 

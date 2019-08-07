@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 2cf46bf9-7d23-4f49-b5c1-7ed7b71c858f
+ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bc5e3b04e4cafc15cb63e13893edf4b6f0114dfc
-ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
+ms.custom: user
+ms.openlocfilehash: a1bdcb6ee72b2566f4eb075d1912a35b2fee5a78
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427903"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68793437"
 ---
 # <a name="azure-information-protection-user-guide"></a>Azure 信息保护用户指南
 

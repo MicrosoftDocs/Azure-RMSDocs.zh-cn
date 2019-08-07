@@ -8,14 +8,16 @@ ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
+ms.subservice: v2client
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: eef4c6190a9d42530ca626c40da6a08b8c3130e0
-ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
+ms.custom: user
+ms.openlocfilehash: 2d00b66963e4d882af9dfdbb916c788986fa991a
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427976"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68793142"
 ---
 # <a name="azure-information-protection-unified-labeling-user-guide"></a>Azure 信息保护统一标签用户指南 
 

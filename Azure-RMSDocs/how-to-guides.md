@@ -1,6 +1,6 @@
 ---
-title: Azure 信息保护的常见方案的操作方法说明
-description: 确定用例的分类和保护你组织的数据通过使用 Azure 信息保护。
+title: Azure 信息保护的操作说明常见方案
+description: 确定使用 Azure 信息保护来分类和保护组织数据的用例。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
@@ -10,18 +10,19 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d69462640857e4e19583a9583fae65adc7df7281
-ms.sourcegitcommit: a26d033ccd557839b61736284456370393f3b52a
+ms.custom: admin
+ms.openlocfilehash: 1a7662b0262e2c46e3b88861a967287070a5a1ed
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67156434"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68794068"
 ---
 # <a name="how-to-guides-for-common-scenarios-that-use-azure-information-protection"></a>使用 Azure 信息保护的常见应用场景的操作方法指南
 
->适用对象：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 可以通过多种方式使用 Azure 信息保护对组织的文档和电子邮件进行分类和选择性保护。 
 
@@ -29,7 +30,7 @@ ms.locfileid: "67156434"
 
 ## <a name="common-scenarios"></a>常见方案
 
-|方案：我希望…|说明|
+|应用我希望…|说明|
 |----------------|---------------|
 |查找我的组织在本地存储的敏感信息|[快速入门：查找在本地存储的文件中的敏感信息](quickstart-findsensitiveinfo.md)|
 |让用户可以轻松保护包含敏感信息的电子邮件|[快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件](quickstart-label-dnf-protectedemail.md)|
@@ -42,7 +43,7 @@ ms.locfileid: "67156434"
 
 ## <a name="additional-deployment-instructions"></a>其他部署说明
 
-我们[Azure 信息保护技术博客](https://aka.ms/AIPblog)包括来自 trenches 的更多指导。
+我们的[Azure 信息保护技术博客](https://aka.ms/AIPblog)包含来自实践经验教训的其他指导。
 
 例如，为业务决策者和 IT 实施者提供最佳做法的方法：
 
@@ -50,13 +51,13 @@ ms.locfileid: "67156434"
 
 分步说明：
 
-- [使用 Microsoft 信息保护和 Azure AD 登录数据创建更丰富的报告](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Create-richer-reports-with-Microsoft-Information-Protection-and/ba-p/392713)
+- [利用 Microsoft 信息保护创建更丰富的报表, 并 Azure AD 登录数据](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Create-richer-reports-with-Microsoft-Information-Protection-and/ba-p/392713)
 
-- [利用 Microsoft Cloud App Security 应用在云中的 Azure 信息保护标签](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Leverage-Microsoft-Cloud-App-Security-to-apply-Azure-Information/ba-p/388638)
+- [利用 Microsoft Cloud App Security 在云中应用 Azure 信息保护标签](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Leverage-Microsoft-Cloud-App-Security-to-apply-Azure-Information/ba-p/388638)
 
-- [若要准备 Azure 信息保护"云退出"计划的方式](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/How-to-prepare-an-Azure-Information-Protection-Cloud-Exit-plan/ba-p/382631)
+- [如何准备 Azure 信息保护 "云退出" 计划](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/How-to-prepare-an-Azure-Information-Protection-Cloud-Exit-plan/ba-p/382631)
 
-- [跨租户标签可视化效果](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Cross-Tenant-Label-Visualization/ba-p/356588)
+- [跨租户标签可视化](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Cross-Tenant-Label-Visualization/ba-p/356588)
 
 - [Using Azure Information Protection to protect PDF’s and Adobe Acrobat Reader to view them](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Using-Azure-Information-Protection-to-protect-PDF-s-and-Adobe/ba-p/282010)（使用 Azure 信息保护来保护 PDF 和 Adobe Acrobat Reader 以查看它们）
 

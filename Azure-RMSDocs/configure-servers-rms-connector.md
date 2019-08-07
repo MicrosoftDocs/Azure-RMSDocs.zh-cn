@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
+ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 00d794b0ce354ecb9d350a93ef7778d5a5f44663
-ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
+ms.custom: admin
+ms.openlocfilehash: 05522bbb7f6357baac060062e6715fdf4807fa09
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67521153"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68788905"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
@@ -33,11 +35,11 @@ ms.locfileid: "67521153"
 
 -   **对于 Exchange 2016 和 Exchange 2013**：客户端访问服务器和邮箱服务器
 
--   **对于 Exchange 2010**：客户端访问服务器和中心传输服务器
+-   **对于 Exchange 2010**：客户端访问服务器和集线器传输服务器
 
 -   **对于 SharePoint**：前端 SharePoint Web 服务器，包括托管中心管理服务器的 Web 服务器
 
--   **对于文件分类基础结构**：装有文件资源管理器的 Windows Server 计算机
+-   **对于文件分类基础结构**：已安装文件资源管理器的 Windows Server 计算机
 
 这种配置需要注册表设置。 执行此操作时，你有两个选项：使用适用于 Microsoft RMS 连接器的服务器配置工具自动配置，或通过编辑注册表手动配置。
 
@@ -91,22 +93,22 @@ ms.locfileid: "67521153"
 
 3.  确定如何运行工具：
 
-    -   **本地**：以交互方式，您可以从要将配置为与 RMS 连接器通信的服务器来运行该工具。 这对于一次性配置（例如测试环境）非常有用。
+    -   **本地**：你可以从要配置为与 RMS 连接器通信的服务器以交互方式运行该工具。 这对于一次性配置（例如测试环境）非常有用。
 
     -   **软件部署**：你可以运行工具以生成注册表文件，然后使用支持软件部署的系统管理应用程序（例如 System Center Configuration Manager），将这些注册表文件部署到一个或多个相关服务器。
 
-    -   **组策略**：可以运行工具以生成提供给管理员，管理员可以创建要配置服务器的组策略对象的脚本。 此脚本为要配置的每个服务器类型创建一个组策略对象，然后管理员能够将此对象分配给相关服务器。
+    -   **组策略**：您可以运行该工具以生成一个脚本, 该脚本可为要配置的服务器创建组策略对象的管理员。 此脚本为要配置的每个服务器类型创建一个组策略对象，然后管理员能够将此对象分配给相关服务器。
 
     > [!NOTE]
     > 此工具可以配置将与 RMS 连接器通信并已在本部分开头列出的服务器。 不要在运行 RMS 连接器的服务器上运行此工具。
 
-4.  使用“以管理员身份运行”  选项启动 Windows PowerShell，然后使用 Get-help 命令阅读有关如何将工具用于你选择的配置方法的说明：
+4.  使用“以管理员身份运行”选项启动 Windows PowerShell，然后使用 Get-help 命令阅读有关如何将工具用于你选择的配置方法的说明：
 
     ```
     Get-help .\GenConnectorConfig.ps1 -detailed
     ```
 
-若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，https:\//connector.contoso.com。 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
+若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如, https:\//connector.contoso.com。 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
 
 > [!IMPORTANT]
 > 当你运行此工具时，请确保指定组织的负载平衡 RMS 连接器的名称，而不要指定运行 RMS 连接器服务的单个服务器的名称。
@@ -168,7 +170,7 @@ ms.locfileid: "67521153"
 
    -   使用 [RMS 连接器的注册表设置](rms-connector-registry-settings.md)中的信息，在服务器上手动添加注册表设置，进行手动注册表编辑。 
 
-3. 为 Exchange 启用 IRM 功能，通过使用 Exchange PowerShell cmdlet [Set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps)并设置`InternalLicensingEnabled $true`和`ClientAccessServerEnabled $true`。
+3. 使用 exchange PowerShell cmdlet [set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps)启用适用于 exchange 的 IRM 功能并设置`InternalLicensingEnabled $true`和。 `ClientAccessServerEnabled $true`
 
 
 ## <a name="configuring-a-sharepoint-server-to-use-the-connector"></a>将 SharePoint 服务器配置为使用连接器
@@ -211,7 +213,7 @@ ms.locfileid: "67521153"
 
 3.  在 SharePoint 中启用 IRM。 有关详细信息，请参阅 SharePoint 库中的[配置信息权限管理 (SharePoint Server 2010)](https://technet.microsoft.com/library/hh545607%28v=office.14%29.aspx)。
 
-    当你按照这些说明操作时，必须通过指定**使用此 RMS 服务器**，将 SharePoint 配置为使用连接器，然后输入你配置的负载平衡连接器 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，如果你的连接器名称为 https: \/ /connector.contoso.com，你的配置看起来类似于下图：
+    当你按照这些说明操作时，必须通过指定**使用此 RMS 服务器**，将 SharePoint 配置为使用连接器，然后输入你配置的负载平衡连接器 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如, 如果你的连接器名称为 https:\//connector.contoso.com, 则你的配置将如下图所示:
 
     ![为 RMS 连接器配置 SharePoint Server](./media/AzRMS_SharePointConnector.png)
 
@@ -248,7 +250,7 @@ ms.locfileid: "67521153"
 ## <a name="next-steps"></a>后续步骤
 由于已安装并配置 RMS 连接器，并且服务器已配置为使用该连接器，IT 管理员和用户可以使用 Azure Rights Management Services 保护和使用电子邮件与文档。 若要让用户轻松使用此功能，请部署 Azure 信息保护客户端，它会安装 Office 的外接程序并在文件资源管理器中添加新的右键单击选项。 有关详细信息，请参阅 [Azure 信息保护客户端管理员指南](./rms-client/client-admin-guide.md)。
 
-请注意，若要配置用于 Exchange 传输规则或 Windows Server FCI 的部门模板，范围配置必须包含应用程序兼容性选项，以选中“如果应用程序不支持用户标识，则向所有用户显示此模板”  复选框。
+请注意，若要配置用于 Exchange 传输规则或 Windows Server FCI 的部门模板，范围配置必须包含应用程序兼容性选项，以选中“如果应用程序不支持用户标识，则向所有用户显示此模板”复选框。
 
 可以使用 [Azure 信息保护部署路线图](deployment-roadmap.md)，检查向用户和管理员推出 Azure Rights Management 之前是否还需要执行其他配置步骤。
 

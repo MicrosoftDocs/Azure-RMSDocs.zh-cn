@@ -1,6 +1,6 @@
 ---
 title: 为 Azure RMS 和 AD RMS 准备环境
-description: 如果必须使用 AD RMS 部署 Azure Rights Management 管理员指南。
+description: 如果 Azure Rights Management 部署了 AD RMS, 则为管理员提供指导。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 11ffa730-c5dc-4b6b-9c1e-c58eff8aafc2
+ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 98b8dc8e09ba7ec3bddb83817663819e0af89697
-ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
+ms.custom: admin
+ms.openlocfilehash: 3b5ee3f68f0f1fb6d82e0e3abaf2d2c0d5585bf8
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67520904"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68790374"
 ---
-# <a name="prepare-the-environment-for-azure-rights-management-when-you-have-ad-rms"></a>当安装了 AD RMS 适用于 Azure Rights Management 准备环境
+# <a name="prepare-the-environment-for-azure-rights-management-when-you-have-ad-rms"></a>在 AD RMS 时为 Azure Rights Management 准备环境
 
->适用对象：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!IMPORTANT]
 > 使用 Active Directory Rights Management Services (AD RMS) 时的指南
@@ -58,7 +60,7 @@ ms.locfileid: "67520904"
 使用以下某个过程来停用 Azure Rights Management。
 
 > [!TIP]
-> 此外可以使用 Windows PowerShell cmdlet[禁用 AipService](/powershell/module/aipservice/disable-aipservice)来停用 Azure Rights Management 服务。
+> 你还可以使用 Windows PowerShell cmdlet [AipService](/powershell/module/aipservice/disable-aipservice)来停用 Azure Rights Management 服务。
 
 #### <a name="to-deactivate-rights-management-from-the-microsoft-365-admin-center"></a>从 Microsoft 365 管理中心停用权限管理
 
@@ -66,25 +68,25 @@ ms.locfileid: "67520904"
     
     如果系统提示登录，请使用 Office 365 的全局管理员帐户。
 
-2. 在“Rights Management”  页面中，单击“停用”  。
+2. 在“Rights Management” 页面中，单击“停用”。
 
-3.  当看到“是否要停用 Rights Management?”的提示时，请单击“停用”   。
+3.  当看到“是否要停用 Rights Management?”的提示时，请单击“停用”。
 
-现在，你应该会看到“Rights Management 未激活”  和用于激活的选项。
+现在，你应该会看到“Rights Management 未激活” 和用于激活的选项。
 
 #### <a name="to-deactivate-rights-management-from-the-azure-portal"></a>从 Azure 门户停用 Rights Management
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”  边栏选项卡。
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。
     
-    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”   。 选择“Azure 信息保护”。 
+    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
     
     如果之前尚未访问过 Azure 信息保护边栏选项卡，请参阅一次性执行的[其他步骤](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time)来向门户添加此边栏选项卡。
 
-2. 选择菜单选项中的“保护激活”  。 
+2. 选择菜单选项中的“保护激活”。 
 
-3.  在“Azure 信息保护” -“保护激活”边栏选项卡上，选择“停用”   。 选择“是”  以确认你的选择。
+3.  在“Azure 信息保护” -“保护激活”边栏选项卡上，选择“停用”。 选择“是”以确认你的选择。
 
-信息栏会显示“停用已成功完成”  且“停用”  现在已替换为“激活”  。 
+信息栏会显示“停用已成功完成”且“停用”现在已替换为“激活”。 
 
 ### <a name="step-2-start-planning-for-migration"></a>步骤 2：开始规划迁移
 
@@ -110,13 +112,13 @@ Microsoft 即将开始为包含 Azure Rights Management 或 Azure 信息保护�
 
 ## <a name="you-see-an-option-to-activate-protection-when-you-configure-azure-information-protection"></a>配置 Azure 信息保护时，会看到一个激活保护的选项
 
-“Azure 信息保护 - 保护激活”  边栏选项卡上有一个选项，可用于激活 Azure Rights Management 服务。  
+“Azure 信息保护 - 保护激活”边栏选项卡上有一个选项，可用于激活 Azure Rights Management 服务。  
 
-如果还要使用 AD RMS，请勿选择“激活”  选项。 未激活 Azure Rights Management 服务时，仍可仅对应用分类的标签使用 Azure 信息保护。 将自动创建特殊的默认策略，该策略不包括数据保护，且相关配置选项在激活 Azure Rights Management 服务后才能使用。
+如果还要使用 AD RMS，请勿选择“激活”选项。 未激活 Azure Rights Management 服务时，仍可仅对应用分类的标签使用 Azure 信息保护。 将自动创建特殊的默认策略，该策略不包括数据保护，且相关配置选项在激活 Azure Rights Management 服务后才能使用。
 
 ### <a name="step-1-configure-your-azure-information-protection-policy-for-classification-and-labeling---without-protection"></a>步骤 1：配置 Azure 信息保护策略，以便在无保护的情况下进行分类和标记
 
-在“Azure 信息保护 - 标签”  边栏选项卡中，查看和配置不包括数据保护选项的标签。 若要详细了解如何配置标签和策略设置，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
+在“Azure 信息保护 - 标签”边栏选项卡中，查看和配置不包括数据保护选项的标签。 若要详细了解如何配置标签和策略设置，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
 
 ### <a name="step-2-start-planning-for-migration"></a>步骤 2：开始规划迁移
 

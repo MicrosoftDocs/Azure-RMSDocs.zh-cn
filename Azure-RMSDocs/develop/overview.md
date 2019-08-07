@@ -13,12 +13,13 @@ ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1e7e2badcd57ce6896c9850729ba546efe22b778
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: b61fba6a678ec625ac2dc7d78c2550cfba87bb60
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60176012"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792117"
 ---
 # <a name="overview"></a>概述
 

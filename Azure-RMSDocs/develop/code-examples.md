@@ -13,12 +13,13 @@ ms.assetid: 634df601-79d2-4bc2-b845-4df886d7c589
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 614adcc35e595b1affe5b6cbfa50274ee5108ede
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 40fcde97afba3278b57834b9c4740de9a5f3703d
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60179044"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792578"
 ---
 # <a name="code-examples"></a>代码示例
 

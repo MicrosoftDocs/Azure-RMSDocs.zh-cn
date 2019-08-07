@@ -13,12 +13,13 @@ ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6a4aa43e54510df5775b4c5d73500d60e2a68d56
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 0b65fad4922790eb7a269edb46b48e4502e28d44
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60176901"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68790966"
 ---
 # <a name="linux-code-examples"></a>Linux 代码示例
 
@@ -26,14 +27,14 @@ ms.locfileid: "60176901"
 
 以下代码片段取自示例应用程序 *rms\_sample* 和 *rmsauth\_sample*。 相关详细信息，请参阅 GitHub 存储库中的[示例](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples)。
 
-## <a name="scenario-access-protection-policy-information-from-a-protected-file"></a>方案：通过受保护的文件访问保护策略信息
+## <a name="scenario-access-protection-policy-information-from-a-protected-file"></a>应用通过受保护的文件访问保护策略信息
 
 **打开并读取 RMS 保护的文件**
 **源**：[rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **说明**：在从用户处获取文件名后，读取证书（请参阅 MainWindow::addCertificates），使用客户端 ID 和重定向 URL 设置身份验证回调，调用 ConvertFromPFile（请参阅以下代码示例），然后读取保护策略名称、说明和内容有效性日期。
 
-**C++**：
+**C++** ：
 
     void MainWindow::ConvertFromPFILE(const string& fileIn,
         const string& clientId,
@@ -101,7 +102,7 @@ ms.locfileid: "60176901"
 
 **说明**：此方法通过 SDK 方法 ProtectedFileStream::Aquire 从传入的回溯流中创建受保护的文件流，该流随后返回到调用方。
 
-**C++**：
+**C++** ：
 
     shared_ptr<GetProtectedFileStreamResult>PFileConverter::ConvertFromPFile(
     const string           & userId,
@@ -146,14 +147,14 @@ ms.locfileid: "60176901"
       return fsResult;
     }
 
-## <a name="scenario-create-a-new-protected-file-using-a-template"></a>方案：使用模板创建新的受保护文件
+## <a name="scenario-create-a-new-protected-file-using-a-template"></a>应用使用模板创建新的受保护文件
 
 **使用用户所选模板来保护文件**
 **源**：[rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **说明**：在从用户处获取文件名，读取证书（请参阅 MainWindow::addCertificates）并使用客户端 ID 和重定向 URL 设置身份验证回调之后，所选文件将通过调用 ConvertToPFileTemplates 进行保护（请参阅下方代码示例）。
 
-**C++**：
+**C++** ：
 
     void MainWindow::ConvertToPFILEUsingTemplates(const string& fileIn,
                                               const string& clientId,
@@ -216,7 +217,7 @@ ms.locfileid: "60176901"
 
 **说明**：提取与用户关联的模板列表，随后使用所选模板创建转而用于保护文件的策略。
 
-**C++**：
+**C++** ：
 
     void PFileConverter::ConvertToPFileTemplates(const string           & userId,
                                              shared_ptr<istream>      inStream,
@@ -249,7 +250,7 @@ ms.locfileid: "60176901"
 
 **说明**：使用给定策略创建受保护的文件流，然后保护此文件。
 
-**C++**：
+**C++** ：
 
     void PFileConverter::ConvertToPFileUsingPolicy(shared_ptr<UserPolicy>   policy,
                                                shared_ptr<istream>      inStream,
@@ -286,14 +287,14 @@ ms.locfileid: "60176901"
     
 
 
-## <a name="scenario-protect-a-file-using-custom-protection"></a>方案：使用自定义保护来保护文件
+## <a name="scenario-protect-a-file-using-custom-protection"></a>应用使用自定义保护来保护文件
 
 **使用自定义保护来保护文件**
 **源**：[rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **说明**：在从用户处获取文件名，读取证书（请参阅 MainWindow::addCertificates），从用户处收集权限信息，并使用客户端 ID 和重定向 URL 设置身份验证回调之后，所选文件将通过调用 ConvertToPFilePredefinedRights 进行保护（请参阅下方代码示例）。
 
-**C++**：
+**C++** ：
 
     void MainWindow::ConvertToPFILEUsingRights(const string            & fileIn,
                                            const vector<UserRights>& userRights,
@@ -376,7 +377,7 @@ ms.locfileid: "60176901"
 
 **说明**：创建策略描述符并填充用户的权限信息，然后使用策略描述符来创建用户策略。 此策略可通过调用 *ConvertToPFileUsingPolicy* 来保护所选文件（参见本主题上一部分中的所述内容）。
 
-**C++**：
+**C++** ：
 
     void PFileConverter::ConvertToPFilePredefinedRights(
     const string            & userId,
@@ -408,7 +409,7 @@ ms.locfileid: "60176901"
 
 *WorkerThread()* 方法由先前的两个示例方案（“创建受保护的文件流”和“在给定策略的情况下保护文件”）按以下方式进行调用：
 
-**C++**：
+**C++** ：
 
     threadPool.push_back(thread(WorkerThread,
                                   static_pointer_cast<iostream>(outStream), pfs,
@@ -417,7 +418,7 @@ ms.locfileid: "60176901"
 
 **支持方法 WorkerThread()**
 
-**C++**：
+**C++** ：
 
     static mutex   threadLocker;
     static int64_t totalSize     = 0;
@@ -498,7 +499,7 @@ ms.locfileid: "60176901"
     }
 
 
-## <a name="scenario-rms-authentication"></a>方案：RMS 身份验证
+## <a name="scenario-rms-authentication"></a>应用RMS 身份验证
 
 以下示例展示了两种不同的身份验证方法，即在使用 UI 和不使用 UI 的情况下获取 Azure 身份验证 oAuth2 令牌。
 **通过 UI 获取 oAuth2 身份验证令牌**
@@ -507,14 +508,14 @@ ms.locfileid: "60176901"
 **步骤 1**：创建 rmsauth::FileCache 对象的共享点。
 描述:可设置缓存路径或使用默认路径。
 
-**C++**：
+**C++** ：
 
     auto FileCachePtr = std::make_shared< rmsauth::FileCache>();
 
 
 **步骤 2**：创建 rmsauth::AuthenticationContext 对象说明：指定 Azure 颁发机构 URI 和 FileCache 对象。
 
-**C++**：
+**C++** ：
 
     AuthenticationContext authContext(
                               std::string(“https://sts.aadrm.com/_sts/oauth/authorize”),
@@ -530,7 +531,7 @@ ms.locfileid: "60176901"
 -   *身份验证提示行为* - 若设置 **PromptBehavior::Auto**，则库将尝试使用缓存并在必要时刷新令牌
 -   *用户 ID*：提示窗口中显示的用户名
 
-**C++**：
+**C++** ：
 
     auto result = authContext.acquireToken(
                 std::string(“api.aadrm.com”),
@@ -550,14 +551,14 @@ ms.locfileid: "60176901"
 
 **步骤 1**：创建 rmsauth::FileCache 对象说明的共享点：可设置缓存路径或使用默认路径
 
-**C++**：
+**C++** ：
 
     auto FileCachePtr = std::make_shared< rmsauth::FileCache>();
 
 
 步骤 2：创建 UserCredential 对象说明：指定“用户登录名”和“密码”
 
-**C++**：
+**C++** ：
 
     auto userCred = std::make_shared<UserCredential>("john.smith@msopentechtest01.onmicrosoft.com",
                                                  "SomePass");
@@ -565,7 +566,7 @@ ms.locfileid: "60176901"
 
 步骤 3：创建 rmsauth::AuthenticationContext 对象说明：指定 Azure 颁发机构 URI 和 FileCache 对象
 
-**C++**：
+**C++** ：
 
     AuthenticationContext authContext(
                         std::string(“https://sts.aadrm.com/_sts/oauth/authorize”),
@@ -578,7 +579,7 @@ ms.locfileid: "60176901"
 -   *客户端唯一 ID* - 通常为 GUID
 -   *用户凭据* - 传递所创建的对象
 
-**C++**：
+**C++** ：
 
     auto result = authContext.acquireToken(
                 std::string(“api.aadrm.com”),

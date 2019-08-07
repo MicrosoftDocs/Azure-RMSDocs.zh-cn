@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
+ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f8aef51156bb92d7d37da300ae2fccd51d739de1
-ms.sourcegitcommit: a2542aec8cd2bf96e94923740bf396badff36b6a
+ms.custom: admin
+ms.openlocfilehash: 5bbf064cb019b663b62a779bf58322e0b23302e8
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67535103"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68790537"
 ---
 # <a name="step-2-software-protected-key-to-software-protected-key-migration"></a>步骤 2：软件保护密钥到软件保护密钥的迁移
 
@@ -31,14 +33,14 @@ ms.locfileid: "67535103"
 
 ## <a name="to-import-the-configuration-data-to-azure-information-protection"></a>将配置数据导入 Azure 信息保护
 
-1. 连接到 Internet 的工作站上使用[Connect AipService](/powershell/module/aipservice/connect-aipservice) cmdlet 连接到 Azure Rights Management 服务：
+1. 在连接 Internet 的工作站上, 使用[AipService](/powershell/module/aipservice/connect-aipservice) cmdlet 连接到 Azure Rights Management 服务:
 
     ```
     Connect-AipService
     ```
     出现提示时，输入 Azure Rights Management 租户管理员凭据（通常，你将使用作为 Azure Active Directory 或 Office 365 全局管理员的帐户）。
 
-2. 使用[导入 AipServiceTpd](/powershell/module/aipservice/import-aipservicetpd) cmdlet 上传每个导出的受信任发布域 (.xml) 文件。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。 
+2. 使用 AipServiceTpd cmdlet 上传每个导出[的](/powershell/module/aipservice/import-aipservicetpd)受信任发布域 (.xml) 文件。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。 
     
     若要运行此 cmdlet，需要先前为每个配置数据文件指定的密码。 
     
@@ -51,9 +53,9 @@ ms.locfileid: "67535103"
     Import-AipServiceTpd -TpdFile E:\contosokey1.xml -ProtectionPassword $TPD_Password -Verbose
     ```
     
-3. 上传每个文件后，运行[集 AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties)来标识与 AD RMS 中当前活动的 SLC 密钥相匹配的导入的密钥。 该密钥将成为 Azure 权限管理服务的活动租户密钥。
+3. 上传每个文件后, 请运行[AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties)以标识与 AD RMS 中当前活动的 SLC 密钥相匹配的已导入的密钥。 该密钥将成为 Azure 权限管理服务的活动租户密钥。
 
-4.  使用[断开连接 AipServiceService](/powershell/module/aipservice/disconnect-aipservice) cmdlet 断开与 Azure Rights Management 服务的连接：
+4.  使用[AipServiceService](/powershell/module/aipservice/disconnect-aipservice) cmdlet 断开与 Azure Rights Management 服务的连接:
 
     ```
     Disconnect-AipServiceService

@@ -4,23 +4,25 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/16/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
+ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4b70be66db156dc92f57aaf0cc9ba3ce2413dd65
-ms.sourcegitcommit: ce47b16c16d93e710c0ff95588e1631ccc0e2829
+ms.custom: admin
+ms.openlocfilehash: 9ac767525efeaf97d1d3b39f3b25191e7926412b
+ms.sourcegitcommit: 332801617ce83ebb3f01edf34cbb69b810662be7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387405"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808112"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
->适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 为组织部署 Azure 信息保护之前，请确保具备以下必备条件。 
 
@@ -110,7 +112,7 @@ Azure 信息保护客户端可以使用 Office 应用程序的**Word**、 **Exce
 
 - Office Professional Plus 2010 Service Pack 2
 
-Office 的其他版本无法通过使用 Rights Management 服务保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护分类。 因此，Azure 信息保护栏或 Office 功能区的“保护”按钮中不会向用户显示应用保护的标签  。 
+Office 的其他版本无法通过使用 Rights Management 服务保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护分类。 因此，Azure 信息保护栏或 Office 功能区的“保护”按钮中不会向用户显示应用保护的标签。 
 
 Azure 信息保护客户端不支持在同一台计算机上有多个版本的 Office。 这些客户端也不支持在 Office 中切换用户帐户。
 
@@ -118,7 +120,7 @@ Azure 信息保护客户端不支持在同一台计算机上有多个版本的 O
 
 ## <a name="firewalls-and-network-infrastructure"></a>防火墙和网络基础结构
 
-如果你有防火墙或配置为允许特定连接的类似中间网络设备，网络连接要求包含在 Office 文章 [Office 365 URL 和 IP 地址范围](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)中。 请参阅“Microsoft 365 Common 和 Office Online”  部分。
+如果你有防火墙或配置为允许特定连接的类似中间网络设备，网络连接要求包含在 Office 文章 [Office 365 URL 和 IP 地址范围](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)中。 请参阅“Microsoft 365 Common 和 Office Online”部分。
 
 除了 Office 文章中特定于 Azure 信息保护的信息外：
 
@@ -126,7 +128,7 @@ Azure 信息保护客户端不支持在同一台计算机上有多个版本的 O
 
 - 如果使用要求进行身份验证的 Web 代理，必须将其配置为将集成 Windows 身份验证与用户的 Active Directory 登录凭据配合使用。
 
-- 不要终止与 aadrm.com  URL 的 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 这样做会中断 RMS 客户端用于 Microsoft 托管 CA 的证书固定，之所以使用固定是为了帮助保护它们与 Azure Rights Management 服务的通信安全。
+- 不要终止与 aadrm.com URL 的 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 这样做会中断 RMS 客户端用于 Microsoft 托管 CA 的证书固定，之所以使用固定是为了帮助保护它们与 Azure Rights Management 服务的通信安全。
     
     - 提示：鉴于 Chrome 在地址栏中显示安全连接的方式，可以使用此浏览器在访问 Azure Rights Management 服务前快速检查客户端连接是否已终止。 请在此浏览器地址栏中输入以下 URL：`https://admin.na.aadrm.com/admin/admin.svc` 
     

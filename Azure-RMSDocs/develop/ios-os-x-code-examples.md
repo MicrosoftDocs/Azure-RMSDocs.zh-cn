@@ -13,12 +13,13 @@ ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: c2cae0e07903dd27c8cd4332e255cb33910c9f94
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: eada5335d234b080dcb7be882eddfc4437a59370
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60178312"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792215"
 ---
 # <a name="iosos-x-code-examples"></a>iOS/OS X 代码示例
 
@@ -33,7 +34,7 @@ ms.locfileid: "60178312"
 
 以下是摘取自一个较大示例应用程序的 **Objective C** 代码示例，表示对你学习此 SDK 十分重要的开发方案。 这些示例演示 Microsoft 受保护的文件格式（称为受保护的文件）的使用、自定义受保护的文件格式的使用以及自定义 UI 控件的使用。
 
-### <a name="scenario-consume-an-rms-protected-file"></a>方案：使用受 RMS 保护的文件
+### <a name="scenario-consume-an-rms-protected-file"></a>应用使用受 RMS 保护的文件
 
 
 - **步骤 1**：创建 [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) 对象
@@ -109,7 +110,7 @@ ms.locfileid: "60178312"
           }
       }
 
-### <a name="scenario-create-a-new-protected-file-using-a-template"></a>方案：使用模板创建新的受保护文件
+### <a name="scenario-create-a-new-protected-file-using-a-template"></a>应用使用模板创建新的受保护文件
 
 此方案首先获取模板列表 [MSTemplateDescriptor](https://msdn.microsoft.com/library/dn790785.aspx)，再选择第一个模板以创建策略，然后创建和写入新的受保护文件。
 
@@ -154,7 +155,7 @@ ms.locfileid: "60178312"
             }];
         }
 
-### <a name="scenario-open-a-custom-protected-file"></a>方案：打开自定义受保护的文件
+### <a name="scenario-open-a-custom-protected-file"></a>应用打开自定义受保护的文件
 
 
 -   **步骤 1**：通过 *serializedContentPolicy* 创建 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx)。
@@ -212,7 +213,7 @@ ms.locfileid: "60178312"
             }];
          }
 
-### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>方案：使用自定义（临时）策略创建自定义受保护文件
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>应用使用自定义（临时）策略创建自定义受保护文件
 
 
 -   **步骤 1**：在用户提供了电子邮件地址的情况下，创建策略描述符。

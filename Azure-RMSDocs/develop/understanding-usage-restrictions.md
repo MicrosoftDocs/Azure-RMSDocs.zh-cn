@@ -13,12 +13,13 @@ ms.assetid: E388B16C-ECDA-4696-A040-D457D3C96766
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 2001f779a788e41acbb9319a0c329dfb4705176a
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 0f94ac02b0e9d5faa42c403274d44819dad46fbd
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60176867"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68790745"
 ---
 # <a name="understanding-usage-restrictions"></a>了解使用限制
 

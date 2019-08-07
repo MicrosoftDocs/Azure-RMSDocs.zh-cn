@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
+ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 30c97d8e97bec8669fa4c8b6d2b4a2b5d31cca0a
-ms.sourcegitcommit: b24de99cf8006a70a14e7a21d103644c1e20502d
+ms.custom: admin
+ms.openlocfilehash: 0f23bfeca00b8eeb7da3643c192b37641c0ea234
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "67149290"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68794180"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
->适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 了解 Azure RMS 工作原理时的一个要点是，Azure 信息保护的这种数据保护服务不会在保护过程中查看或存储你的数据。 要保护的信息永远不会发送或存储到 Azure 中，除非你将其显式存储在 Azure 中，或者使用其他可在 Azure 中存储数据的云服务。 Azure RMS 只会在文档中保存数据，除已获授权的用户和服务以外，其他任何人都无法读取该文档：
 
@@ -38,14 +40,14 @@ ms.locfileid: "67149290"
 
 有关 Azure RMS 使用的算法和密钥长度的技术详细信息，请参阅下一部分。
 
-## <a name="cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths"></a>Azure RMS 使用的加密控制：算法和密钥长度
+## <a name="cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths"></a>Azure RMS 使用的加密控件:算法和密钥长度
 即使你不太了解此技术的工作原理，也可能会被问到它使用的加密控件。 例如，确认安全保护是否符合行业标准时。
 
 
 |加密控件|在 Azure RMS 中使用|
 |-|-|
-|算法：AES<br /><br />密钥长度：128 位和 256 位 [[1]](#footnote-1)|内容保护|
-|算法：RSA<br /><br />密钥长度：2048 位 [[2]](#footnote-2)|密钥保护|
+|算法AES<br /><br />密钥长度:128 位和 256 位 [[1]](#footnote-1)|内容保护|
+|算法RSA<br /><br />密钥长度:2048 位 [[2]](#footnote-2)|密钥保护|
 |SHA-256|证书签名|
 
 ###### <a name="footnote-1"></a>脚注 1 
@@ -77,7 +79,7 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 发送到 Windows 设备的许可证和证书使用客户端设备私钥（用户在设备上第一次使用 Azure RMS 时创建）进行保护。 而该私钥则使用客户端上的 DPAPI 进行保护，DPAPI 使用从用户的密码派生的密钥来保护这些机密。 在移动设备上，只使用这些密钥一次，因此由于这些密钥不存储在客户端上，而无需在设备上保护这些密钥。 
 
 
-## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 的工作原理演练：首次使用、 内容保护、 内容使用
+## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 工作原理的演练:首次使用、内容保护、内容使用
 为了更详细地了解 Azure RMS 的工作原理，让我们通过在[激活 Azure Rights Management 服务](activate-service.md)之后，当用户首次在其 Windows 计算机上使用权限管理服务（有时称为**初始化用户环境**或引导的过程）时，**保护内容**（文档或电子邮件），然后**使用**（打开并使用）被其他某人保护的内容，来演练一个典型的工作流。
 
 初始化用户环境后，该用户可以保护文档，或使用该计算机上的受保护文档。
@@ -161,7 +163,7 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 
 ## <a name="next-steps"></a>后续步骤
 
-若要了解 Azure Rights Management 服务的详细信息，请参阅“了解和探索”  部分中的其他文章（如[应用程序如何支持 Azure Rights Management 服务](applications-support.md)），了解你的现有应用程序如何通过与 Azure Rights Management 集成来提供信息保护解决方案。 
+若要了解 Azure Rights Management 服务的详细信息，请参阅“了解和探索”部分中的其他文章（如[应用程序如何支持 Azure Rights Management 服务](applications-support.md)），了解你的现有应用程序如何通过与 Azure Rights Management 集成来提供信息保护解决方案。 
 
 请查看 [Azure 信息保护术语](./terminology.md)，以便熟悉在配置和使用 Azure Rights Management 服务时可能遇到的术语。此外，还要确保在开始部署前查看 [Azure 信息保护的要求](requirements.md)。 如果要进一步研究并亲自尝试一下，请使用[编辑策略并创建新标签](infoprotect-quick-start-tutorial.md)教程。
 

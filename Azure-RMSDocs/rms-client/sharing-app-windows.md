@@ -10,12 +10,13 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.suite: ems
-ms.openlocfilehash: a18934ea936ebefcbb0a4465fe53f82fa5cfa7c7
-ms.sourcegitcommit: eff3bfbf95588e8876d9d6cbb95f80d304142668
+ms.custom: admin
+ms.openlocfilehash: ee3a6790a431ef4b75f7333885139ec4f0b463f3
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68340666"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792849"
 ---
 # <a name="rights-management-sharing-application-for-windows"></a>适用于 Windows 的 Rights Management 共享应用程序
 

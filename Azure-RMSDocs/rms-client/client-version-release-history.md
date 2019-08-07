@@ -8,20 +8,22 @@ ms.date: 07/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
+ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d07b862fc95815cad2b100b80c6f024c582263dc
-ms.sourcegitcommit: fdc1f3d76b48f4e865a538087d66ee69f0f9888d
+ms.custom: admin
+ms.openlocfilehash: ca547ec6ba957eba15df4f5835cb5d668053d11e
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68141648"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68793530"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
->适用对象：  Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 
 
@@ -135,7 +137,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **修补程序**：
 
-- 当发送操作系统区域设置为英语时，路径和文件名不会在 Azure 信息保护分析中显示问号 (?  ) 来代替非 ASCII 字符。
+- 当发送操作系统区域设置为英语时，路径和文件名不会在 Azure 信息保护分析中显示问号 (?) 来代替非 ASCII 字符。
 
 - 用户将新部分添加到 Word 文档，然后重新标记文档时，将一致地应用新的视觉标记。
 
@@ -149,7 +151,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 当使用高级客户端设置设置一个 [Outlook 默认标签](client-admin-guide-customizations.md#set-a-different-default-label-for-outlook)时，可以应用一个具有子标签的父标签，当为用户禁用所有这些子标签时，可使用父标签。
 
-- 如果使用[策略设置](../configure-policy-settings.md) 对于带有附件的电子邮件消息，会应用与这些附件的最高级别分类匹配的标签，并且将具有最高级别分类的标签配置为用户定义的权限，之前的结果是将标签应用于电子邮件，但没有应用保护  。 现在：
+- 如果使用[策略设置](../configure-policy-settings.md) 对于带有附件的电子邮件消息，会应用与这些附件的最高级别分类匹配的标签，并且将具有最高级别分类的标签配置为用户定义的权限，之前的结果是将标签应用于电子邮件，但没有应用保护。 现在：
     - 当标签的用户定义权限包括 Outlook 时（不要转发）：将该标签及其“不要转发”保护应用于电子邮件。
     - 标签的用户定义权限仅适用于 Word、Excel、PowerPoint 和文件资源管理器：请勿应用标签，也不对电子邮件应用任何保护。
 
@@ -172,7 +174,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 默认情况下，Azure 信息保护扫描程序不再排除 .zip 文件。 若要检查和标记 .zip 文件，请参阅管理员指南的[检查 .zip 文件](client-admin-guide-file-types.md#to-inspect-zip-files)部分。
 
-- [策略设置](../configure-policy-settings.md)  “用户必须提供设置较低分类标签、删除标签或删除保护的理由”不再适用于扫描程序。 当你在 scanner 配置文件中配置设置 "重新**标记文件**", 然后选中 "**允许标签降级**" 复选框时, 扫描程序会执行这些操作。 
+- [策略设置](../configure-policy-settings.md)“用户必须提供设置较低分类标签、删除标签或删除保护的理由”不再适用于扫描程序。 当你在 scanner 配置文件中配置设置 "重新**标记文件**", 然后选中 "**允许标签降级**" 复选框时, 扫描程序会执行这些操作。
 
 ## <a name="version-141510"></a>版本 1.41.51.0
 
@@ -186,7 +188,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 现在 Azure 信息保护客户端默认为使用 PDF 加密 ISO 标准保护 PDF 文件。 之前需要使用高级客户端设置启用此支持。
     
-    若想要将客户端还原为使用 .ppdf 文件扩展名保护 PDF 文件，请使用相同的[高级客户端设置](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，但指定“False”。 
+    若想要将客户端还原为使用 .ppdf 文件扩展名保护 PDF 文件，请使用相同的[高级客户端设置](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，但指定“False”。
 
 - 使用 Azure 信息保护分析来审核对[中央报表](../reports-aip.md)的数据支持, 请参阅 Microsoft Ignite 2018。
 
@@ -209,13 +211,13 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     
     - 如果你在编辑单元格时保存电子表格，系统现在会应用视觉标记。
     
-    - Excel 2010：如果是使用共同创作[权限级别](../configure-usage-rights.md#rights-included-in-permissions-levels)来保护电子表格的，现在可以在右键单击文件并选择“分类和保护”时使用“删除标签”按钮   。
+    - Excel 2010：如果是使用共同创作[权限级别](../configure-usage-rights.md#rights-included-in-permissions-levels)来保护电子表格的，现在可以在右键单击文件并选择“分类和保护”时使用“删除标签”按钮。
 
 - 可以[从其他标记解决方案中删除页眉和页脚](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)的高级客户端设置现在支持自定义布局。
 
 **其他变化：**
 
-- 如果扫描程序的日程安排设置为“始终”  ，两次扫描之间现在有 30 秒延迟。
+- 如果扫描程序的日程安排设置为“始终”，两次扫描之间现在有 30 秒延迟。
 
 - 当扫描程序标记的文件已受到保护时，它不再更改该文件的 Rights Management 所有者。
 

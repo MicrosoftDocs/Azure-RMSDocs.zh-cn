@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
+ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a7e333557d0a3ba6aa130cb24d54acf1717fe278
-ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
+ms.custom: user
+ms.openlocfilehash: 8cf51210ad584dca72be4e356c5b554688de24ad
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427894"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68790052"
 ---
 # <a name="user-guide-view-protected-files-with-the-azure-information-protection-viewer"></a>用户指南：通过 Azure 信息保护查看器查看受保护的文件
 

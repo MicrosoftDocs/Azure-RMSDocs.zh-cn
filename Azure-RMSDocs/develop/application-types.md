@@ -13,12 +13,13 @@ ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 274430ebde3f1f7bfde36ab65984c9ce4610085e
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 06a92e4b2da227ede08249479554d12526fe2432
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60178856"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68791288"
 ---
 # <a name="application-types"></a>应用程序类型
 

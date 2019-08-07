@@ -13,12 +13,13 @@ ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 9e09a3f0ccf69360c590f0827d785df12291b963
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: dd357e74e71b9e5b296825b395ecd54b14c332d5
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60179780"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68788683"
 ---
 # <a name="rights-management-sdk42"></a>Rights Management SDK 4.2
 

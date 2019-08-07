@@ -11,12 +11,13 @@ ms.service: information-protection
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8625dfa874e05bb69ba5e0458a7283bd8e8651ba
-ms.sourcegitcommit: ae48f7cea01b4d615052659072305abb8698a7f7
+ms.custom: admin
+ms.openlocfilehash: cbeaa6b8cd46d7e53efd076de16b0f4b2b36dcee
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375460"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68789608"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>比较 Azure 信息保护与 AD RMS
 

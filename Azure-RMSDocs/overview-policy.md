@@ -8,14 +8,16 @@ ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
+ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: db608aaa558fa3e7a67cb215ac0a46cf2f1eaf55
-ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
+ms.custom: admin
+ms.openlocfilehash: f2826d5b99de6dc0c368e0947f557ccf3c4d748c
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68428332"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68790503"
 ---
 # <a name="overview-of-the-azure-information-protection-policy"></a>Azure 信息保护策略概述
 

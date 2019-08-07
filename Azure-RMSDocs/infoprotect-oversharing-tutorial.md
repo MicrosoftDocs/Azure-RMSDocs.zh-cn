@@ -8,12 +8,14 @@ ms.date: 07/19/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 565a46f599922aeef3636756c47c561264bf010f
-ms.sourcegitcommit: a354b71d82dc5d456bff7e4472181cbdd962948a
+ms.subservice: aiplabels
+ms.custom: admin
+ms.openlocfilehash: 2fdb9e719ffcafb6923528fef6c63bb8eefb3cdc
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352823"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68794131"
 ---
 # <a name="tutorial-configure-azure-information-protection-to-control-oversharing-of-information-using-outlook"></a>教程：配置 Azure 信息保护以使用 Outlook 控制信息的过度共享
 
@@ -75,7 +77,7 @@ ms.locfileid: "68352823"
 
 4. 复制标签 ID 值并将其粘贴到临时文件中，以便在以后的步骤中可轻松复制该值。 在本示例中，此标签 ID 值是“0e421e6d-ea17-4fdb-8f01-93a3e71333b8”  。
 
-5. 关闭“标签: 常规”边栏选项卡，但不要关闭 Azure 门户  。
+5. 关闭“标签: 常规”边栏选项卡，但不要关闭 Azure 门户**。
 
 ## <a name="create-a-scoped-policy-to-test-the-new-advanced-client-settings"></a>创建作用域内策略以测试新的高级客户端设置
 
@@ -89,7 +91,7 @@ ms.locfileid: "68352823"
 
 4. 帐户名显示在“策略”边栏选项卡上后，请选择“保存”且不对此边栏选项卡上的标签或设置进行其他更改   。 系统可能会提示你确认你的选择。 
 
-此作用域内策略现已准备就绪，可添加高级客户端设置。 关闭“策略: 过度共享教程”边栏选项卡，但不要关闭 Azure 门户 
+此作用域内策略现已准备就绪，可添加高级客户端设置。 关闭“策略: 过度共享教程”边栏选项卡，但不要关闭 Azure 门户**
 
 ## <a name="configure-and-test-advanced-client-settings-to-warn-prompt-for-justification-or-block-emails-that-have-the-general-label"></a>配置并测试以下高级客户端设置：警告、提示提供理由或阻止具有“常规”标签的电子邮件。
 

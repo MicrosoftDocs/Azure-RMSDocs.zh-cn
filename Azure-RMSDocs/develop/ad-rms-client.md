@@ -13,12 +13,13 @@ ms.assetid: F7145090-C2EB-405A-A4CF-0240D57A36DA
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8f812e07328b656cf2d600629129287e0858b7d5
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 63876f55d38b3f97f41ad3a0b350ede8234202d3
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60179814"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68788652"
 ---
 # <a name="client"></a>客户端
 

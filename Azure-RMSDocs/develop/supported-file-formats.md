@@ -13,12 +13,13 @@ ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 9a2e543cc8a598ab371121d75c1191ce8c4c8c77
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: c1373faaeeb8143636807b7985558a1733a3024a
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60175876"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68790776"
 ---
 # <a name="supported-file-formats"></a>支持的文件格式
 

@@ -11,16 +11,17 @@ ms.service: information-protection
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4daf9bfa058aa179e9297e439518202cf965f4ac
-ms.sourcegitcommit: 9d99385bab62478de6c00faae15d8b27f80239e5
+ms.custom: admin
+ms.openlocfilehash: 08fc646d7f216db4db914c3287f8609a916aaf41
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68229858"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68789262"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：客户端的安装和配置
 
->适用于：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 运行 Office 2010 的计算机需要 Azure 信息保护客户端 (经典) 或 Azure 信息保护统一标签客户端, 以便向 Azure 信息保护服务进行身份验证。
 
@@ -67,7 +68,7 @@ ms.locfileid: "68229858"
 
 - 对于 iOS:从 Intune 搜索并添加应用。
 
-- 对于 Android:添加应用时，请使用以下“应用商店 URL”  ：
+- 对于 Android:添加应用时，请使用以下“应用商店 URL”：
         
         https://play.google.com/store/apps/details?id=com.microsoft.ipviewer
 

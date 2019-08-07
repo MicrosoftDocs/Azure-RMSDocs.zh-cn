@@ -13,12 +13,13 @@ ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: a636b58b1ac60beed54492ac74240080ed4ce95e
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 87aa190a87426e61d919b8781444239c4ce5d3c7
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60175910"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68790764"
 ---
 # <a name="terms"></a>条款
 

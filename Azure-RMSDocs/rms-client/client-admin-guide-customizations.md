@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
+ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: f5a47cf86dfc5f8140cf21a0808eef84919b495d
-ms.sourcegitcommit: 2ad5cda4816c76c5fd3655ee45b64475e42cab32
+ms.custom: admin
+ms.openlocfilehash: 7dbd7a6091f0df3f4124b2ddb06178630c440f67
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483140"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68793736"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -316,7 +318,7 @@ ms.locfileid: "68483140"
 
 当弹出消息用于特定标签时, 可以按域名为收件人配置例外。
 
-弹出消息中生成的操作将记录到本地 Windows 事件日志**应用程序和服务日志** > **中。**
+弹出消息中生成的操作将记录到本地 Windows 事件日志**应用程序和服务日志** > 中。
 
 - 警告消息：信息 ID 301
 
@@ -788,7 +790,7 @@ Label applied manually
 
 PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你指定的但不属于页面或页脚的形状，可使用以下附加高级客户端设置：PowerPointShapeNameToRemove。 我们还建议使用此设置来避免检查所有形状中的文本，因为这将占用大量资源。
 
-如果未指定这项附加的高级客户端设置，并且 PowerPoint 包括在 RemoveExternalContentMarkingInApp 键值中，将对所有形状检查你在 ExternalContentMarkingToRemove 值中指定的文本。 
+如果未指定这项附加的高级客户端设置，并且 PowerPoint 包括在 RemoveExternalContentMarkingInApp键值中，将对所有形状检查你在 ExternalContentMarkingToRemove 值中指定的文本。 
 
 查找用作页眉或页脚的形状的名称：
 

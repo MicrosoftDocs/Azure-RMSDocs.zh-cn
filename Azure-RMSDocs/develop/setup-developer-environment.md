@@ -13,12 +13,13 @@ ms.assetid: 296FC4C0-99C6-4997-AD97-5CEE01221B1A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8fbdc1e130b891d3ce5370a6aed1c14ca5467203
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 2b8adc9775bc4711d9aabe70a912e79b37d48eef
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60176884"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792137"
 ---
 # <a name="setup-developer-environment"></a>设置开发人员环境
 

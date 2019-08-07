@@ -4,17 +4,19 @@ description: 通过配置标签来使用 Rights Management 保护，可保护最
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 116ab2106be79119f538b3a2e559bc2faaeb2f2b
-ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
+ms.subservice: aiplabels
+ms.custom: admin
+ms.openlocfilehash: b29b56664bad205a6c23d092aca7b233ebe9d3d0
+ms.sourcegitcommit: 332801617ce83ebb3f01edf34cbb69b810662be7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67520426"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68807909"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -43,7 +45,7 @@ ms.locfileid: "67520426"
 > [!IMPORTANT]
 > 要配置标签来应用此保护，必须为组织激活 Azure Rights Management 服务。 有关详细信息，请参阅[激活 Azure 信息保护的保护服务](activate-service.md)。
 
-标签应用保护时，受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 这些位置不支持受保护文件的以下功能：共同创作、Office Online、搜索、文档预览、缩略图、电子数据展示和数据丢失防护 (DLP)。 
+标签应用保护时，受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 这些位置不支持受保护文件的以下功能：共同创作、Office 网页版、搜索、文档预览、缩略图、电子数据展示和数据丢失防护 (DLP)。 
 
 用户不必事先为 Azure 信息保护配置 Exchange 即可在 Outlook 中应用标签保护其电子邮件。 但是，在为 Azure 信息保护配置 Exchange 之前，你无法获得将 Exchange 与 Azure Rights Management 保护配合使用的完整功能。 例如，用户无法在移动电话上或通过 Outlook 网页版查看受保护的电子邮件，无法将受保护的电子邮件编入索引用于搜索，并且无法为 Rights Management 保护配置 Exchange Online DLP。 若要确保 Exchange 支持这些其他方案，请参阅以下资源：
 

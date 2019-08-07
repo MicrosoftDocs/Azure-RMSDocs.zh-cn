@@ -13,12 +13,13 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 6e962a2e9727048a60e74e811e964e6a0a9bc82d
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 6fdef7a9d92880fa6754ffc7b2f889acdecd0bfc
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60176040"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68791188"
 ---
 # <a name="release-notes"></a>发行说明
 

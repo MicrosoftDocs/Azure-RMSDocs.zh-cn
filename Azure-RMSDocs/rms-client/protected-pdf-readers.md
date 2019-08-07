@@ -11,14 +11,15 @@ ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
 ms.reviewer: kartikka
 ms.suite: ems
+ms.custom: user
 search.appverid:
 - MET150
-ms.openlocfilehash: fae4a3f0e95e0ee3cf548c59aee55fc6e1a39831
-ms.sourcegitcommit: 0ff7941832bd8476d53810d2c849c56efa0303fa
+ms.openlocfilehash: 04325119b44c5bfaad025e96251bc6b032285cb6
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701613"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792838"
 ---
 # <a name="install-a-pdf-reader-that-supports-microsoft-information-protection"></a>安装支持 Microsoft 信息保护的 PDF 读取器
 

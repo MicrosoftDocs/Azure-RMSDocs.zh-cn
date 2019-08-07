@@ -4,17 +4,19 @@ description: 使用 Azure 信息保护适用于 Windows 的统一标签客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/19/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
+ms.subservice: v2client
 ms.suite: ems
-ms.openlocfilehash: 5202d56476faeb820fab0c6adef31e6cc161a099
-ms.sourcegitcommit: ae48f7cea01b4d615052659072305abb8698a7f7
+ms.custom: user
+ms.openlocfilehash: 78907b2819636a5f2c8e66feae2e44a0bd6c5c90
+ms.sourcegitcommit: 332801617ce83ebb3f01edf34cbb69b810662be7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375481"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808129"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：利用 Azure 信息保护统一标签客户端进行分类和保护
 
@@ -25,11 +27,11 @@ ms.locfileid: "68375481"
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类和保护。 如果只需对文档和电子邮件进行分类（但不保护），请参阅[仅分类说明](clientv2-classify.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
 
-在 Office 桌面应用中创建和编辑文档和电子邮件时对其进行分类和保护最为简单：Word、Excel、PowerPoint、Outlook     。 
+在 Office 桌面应用中创建和编辑文档和电子邮件时对其进行分类和保护最为简单：Word、Excel、PowerPoint、Outlook。 
 
-但是，还可以使用文件资源管理器  对文件进行分类和保护。 此方法支持其他文件类型，此方法是一种一次性对多个文件进行分类和保护的便捷方法。 此方法支持保护 Office 文档、PDF 文件、文本和图像文件，以及各种其他文件。 
+但是，还可以使用文件资源管理器对文件进行分类和保护。 此方法支持其他文件类型，此方法是一种一次性对多个文件进行分类和保护的便捷方法。 此方法支持保护 Office 文档、PDF 文件、文本和图像文件，以及各种其他文件。 
 
-如果标签将保护应用于文档，则受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 这些位置不支持受保护文件的以下内容：共同创作、Office Online、搜索、文档预览、缩略图和电子数据展示。
+如果标签将保护应用于文档，则受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 这些位置不支持受保护文件的以下内容：共同创作、Office 网站、搜索、文档预览、缩略图和电子数据展示。
 
 ### <a name="safely-share-a-file-with-people-outside-your-organization"></a>与组织外部人员安全共享文件
 
@@ -78,7 +80,7 @@ ms.locfileid: "68375481"
 
 - 如果管理员最近为你配置了新标签，请尝试关闭 Office 应用程序的所有实例，然后重新打开。 此操作将检查对你的标签所做的更改。
 
-- 如果缺少应用保护的标签，那么可能你使用的 Office 版本不支持应用 Rights Management 保护。 若要验证，单击“保护”   > “帮助和反馈”  。 在对话框中，检查“客户端状态”  部分中是否显示消息“此客户端未获许可使用 Office Professional Plus”  。 
+- 如果缺少应用保护的标签，那么可能你使用的 Office 版本不支持应用 Rights Management 保护。 若要验证，单击“保护” > “帮助和反馈”。 在对话框中，检查“客户端状态”部分中是否显示消息“此客户端未获许可使用 Office Professional Plus”。 
     
     如果你有 Office 365 商业版或 Microsoft 365 商业版中的 Office 应用，则无需使用 Office 专业增强版，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
 
@@ -108,17 +110,17 @@ ms.locfileid: "68375481"
 
 ### <a name="to-classify-and-protect-a-file-by-using-file-explorer"></a>使用文件资源管理器对文件进行分类和保护
 
-1. 在文件资源管理器中，选择你的文件、多个文件或文件夹。 右键单击，然后选择“分类和保护”  。 例如：
+1. 在文件资源管理器中，选择你的文件、多个文件或文件夹。 右键单击，然后选择“分类和保护”。 例如：
     
     ![在文件资源管理器中，右键单击“使用 Azure 信息保护进行分类和保护”](../media/right-click-classify-protect-folder.png)
 
-2. 在“分类和保护 - Azure信息保护”  对话框中，请像在 Office 应用程序中那样使用标签，这样可以按管理员定义的方式设置分类和保护。 
+2. 在“分类和保护 - Azure信息保护”对话框中，请像在 Office 应用程序中那样使用标签，这样可以按管理员定义的方式设置分类和保护。 
 
    - 如果没有标签可以选择（它们呈灰显状态）：所选文件不支持分类，但可以通过自定义权限保护它（步骤 3）。 例如：
 
      ![“分类和保护 - Azure 信息保护”对话框中无可用标签](../media/v2info-protect-dialog-labels-dimmed.png)
 
-3. 你可以指定自己的保护设置, 而不是使用管理员可能已包含在所选标签中的保护设置。 若要执行此操作，请选择“使用自定义权限进行保护”  。
+3. 你可以指定自己的保护设置, 而不是使用管理员可能已包含在所选标签中的保护设置。 若要执行此操作，请选择“使用自定义权限进行保护”。
     
     指定的任何自定义权限将替换而不是补充管理员可能已为所选标签定义的保护设置。  
 
@@ -134,7 +136,7 @@ ms.locfileid: "68375481"
     
      请注意，如果此设置此前通过 Office 2010 应用的自定义权限配置，则指定到期日期不会显示在此对话框中，但仍然会设置到期日期。 此显示问题仅适用于在 Office 2010 中配置了到期日期的情况。
 
-5. 单击“应用”  ，然后等到“工作完成”  消息出现即可查看结果。 然后单击 **“关闭”** 。
+5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”** 。
 
 根据你的选择，现已对所选择的一个或多个文件进行分类和保护。 在某些情况下（添加的保护更改了文件扩展名时），文件资源管理器中的原始文件将替换为具有 Azure 信息保护锁状图标的新文件。 例如：
 

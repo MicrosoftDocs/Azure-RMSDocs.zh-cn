@@ -8,13 +8,15 @@ ms.date: 07/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
+ms.subservice: v2client
 ms.suite: ems
-ms.openlocfilehash: 495a88ee3296fc8d3e075abbd992298b7bae55ea
-ms.sourcegitcommit: fdc1f3d76b48f4e865a538087d66ee69f0f9888d
+ms.custom: admin
+ms.openlocfilehash: ee514720cf13e819f3d64e77635ae96a26e4d0ed
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68141616"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68793216"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-unified-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护统一客户端配合使用
 
@@ -67,7 +69,7 @@ Cmdlet 随 PowerShell 模块**AzureInformationProtection**一起安装, 其中�
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>如何以非交互方式为 Azure 信息保护标记文件
 
-可以使用 Set-AIPAuthentication cmdlet，以非交互方式运行标记 cmdlet  。
+可以使用 Set-AIPAuthentication cmdlet，以非交互方式运行标记 cmdlet。
 
 默认情况下，运行 cmdlet 进行标记时，命令会在交互式 PowerShell 会话中你自己的用户上下文运行。 若要在无人参与的情况下运行这些命令，请为此新建一个 Azure AD 用户帐户。 然后，在相应用户的上下文中，运行 Set-AIPAuthentication cmdlet，以使用 Azure AD 中的访问令牌设置并存储凭据。 然后, 将对此用户帐户进行身份验证, 并引导 Azure 信息保护中的保护服务。 帐户下载 Azure 信息保护策略和标签使用的任何保护模板。
 
@@ -82,7 +84,7 @@ Azure AD 中的令牌过期时, 请再次运行 cmdlet 以获取新令牌。
 
 如果在运行此 cmdlet 时没有使用参数，用户帐户将获取有效期为 90 天或与密码有效期一样的访问令牌。  
 
-若要控制访问令牌的过期时间，请在运行此 cmdlet 时使用参数。 此配置允许你将 Azure AD 的访问令牌配置为一年、两年或永不过期。 需要在 Azure Active Directory 中注册两个应用程序:一个 Web 应用/API 应用程序和一个本机应用程序   。 Set-aipauthentication 的参数使用这些应用程序中的值。
+若要控制访问令牌的过期时间，请在运行此 cmdlet 时使用参数。 此配置允许你将 Azure AD 的访问令牌配置为一年、两年或永不过期。 需要在 Azure Active Directory 中注册两个应用程序:一个 Web 应用/API 应用程序和一个本机应用程序。 Set-aipauthentication 的参数使用这些应用程序中的值。
 
 运行此 cmdlet 后, 可以在创建的服务帐户的上下文中运行标记 cmdlet。
 

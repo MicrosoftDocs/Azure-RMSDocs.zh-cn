@@ -13,12 +13,13 @@ ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 3170b34bdd850cb7353e74fdf7c5623a4308e63c
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 6eea940fa139e869708950efe0019fa342987458
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60178907"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68791140"
 ---
 # <a name="developer-guidance"></a>开发人员指南
 Microsoft Rights Management SDK 4.2 的重点是帮助你构建启用 AD RMS 的应用程序，尽可能降低利用 Active Directory Right Management Services (AD RMS) 的复杂性。

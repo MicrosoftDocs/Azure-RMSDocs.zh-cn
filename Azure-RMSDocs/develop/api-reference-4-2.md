@@ -13,12 +13,13 @@ ms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 15ecc4c49ca5d6059fb02863b4c80a75b3348af3
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 883dc9375e3e862726dd4f0ccf55985b3c8ddd61
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60179015"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792797"
 ---
 # <a name="api-sdk-42-reference"></a>API SDK 4.2 参考
 

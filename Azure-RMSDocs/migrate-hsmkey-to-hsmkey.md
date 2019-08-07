@@ -1,6 +1,6 @@
 ---
 title: 将 HSM 保护密钥迁移到 HSM 保护密钥 - AIP
-description: 要使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure 信息保护是从 AD RMS 到 Azure 信息保护，并仅适用于你的 AD RMS 密钥是 HSM 保护密钥和您的迁移路径的一部分的说明。
+description: 作为 AD RMS 到 Azure 信息保护的迁移路径中的一部分的说明, 仅当你的 AD RMS 密钥是 HSM 保护的, 并且你想要在 Azure Key Vault 中使用 HSM 保护的租户密钥迁移到 Azure 信息保护时才适用。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
+ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b4861b7955237df9b9d282330a8bd3752b00d6e6
-ms.sourcegitcommit: a2542aec8cd2bf96e94923740bf396badff36b6a
+ms.custom: admin
+ms.openlocfilehash: 445dcb34b2d3de3ed81761537332ad0be20b000d
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67535208"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68794013"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 
@@ -41,17 +43,17 @@ ms.locfileid: "67535208"
 > 如果即将对 Azure Key Vault 执行配置步骤，而尚不熟悉此 Azure 服务，则可能会发现先阅读 [Azure Key Vault 入门](/azure/key-vault/key-vault-get-started)可能会有所帮助。 
 
 
-## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>第 1 部分：将 HSM 密钥传送到 Azure Key Vault
+## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>第1部分:将 HSM 密钥传送到 Azure Key Vault
 
 由 Azure 密钥保管库的管理员完成这些过程。
 
 1. 对于想存储在 Azure Key Vault 中的每个导出的 SLC 密钥，请按照 Azure Key Vault 文档中的说明，使用[为 Azure Key Vault 实现自带密钥 (BYOK)](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)，但以下情况例外：
 
-   - 不要执行**生成你的租户密钥**中的步骤，因为你已从 AD RMS 部署获得等效物。 相反，标识从 nCipher 安装 AD RMS 服务器使用的密钥，并在迁移期间使用此密钥。 nCipher 加密密钥文件通常名为 **密钥<*keyAppName*><*keyIdentifier*>** 本地服务器上。
+   - 不要执行**生成你的租户密钥**中的步骤，因为你已从 AD RMS 部署获得等效物。 相反, 请从 nCipher 安装中确定 AD RMS 服务器使用的密钥, 并在迁移期间使用此密钥。 nCipher 加密密钥文件通常名为 **密钥<*keyAppName*><*keyIdentifier*>** 本地服务器上。
 
      将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 输出结果将会类似于 https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure Rights Management 服务将此密钥用作其租户密钥。
 
-2. 在连接 Internet 的工作站上，在 PowerShell 会话中，使用[集 AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) cmdlet 来授权 Azure Rights Management 服务主体访问将存储 Azure 信息的密钥保管库保护租户密钥。 所需的权限有解密、加密、unwrapkey、wrapkey、验证和签名。
+2. 在连接 Internet 的工作站上的 PowerShell 会话中, 使用[AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) cmdlet 来授权 Azure Rights Management 服务主体访问将存储 Azure 信息保护租户密钥的密钥保管库。 所需的权限有解密、加密、unwrapkey、wrapkey、验证和签名。
     
     例如，如果已为 Azure 信息保护创建的密钥保管库名为 contoso-byok-ky，并且你的资源组名为 contoso-byok-rg，请运行以下命令：
     
@@ -60,13 +62,13 @@ ms.locfileid: "67535208"
 
 现在，你已经在 Azure 密钥保管库中为 Azure 信息保护中的 Azure Rights Management 服务准备好了 HSM 密钥，接下来可以导入 AD RMS 配置数据。
 
-## <a name="part-2-import-the-configuration-data-to-azure-information-protection"></a>第 2 部分：将配置数据导入到 Azure 信息保护
+## <a name="part-2-import-the-configuration-data-to-azure-information-protection"></a>第2部分:将配置数据导入到 Azure 信息保护
 
 由 Azure 信息保护的管理员完成这些过程。
 
 1. 在连接 Internet 的工作站和 PowerShell 会话中，通过使用 [Connnect-AadrmService](/powershell/module/aipservice/connect-aipservice) cmdlet 连接到 Azure Rights Management。
     
-    然后将每个受信任的发布域 (.xml) 文件，通过使用上传[导入 AipServiceTpd](/powershell/module/aipservice/import-aipservicetpd) cmdlet。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。
+    然后, 使用[AipServiceTpd](/powershell/module/aipservice/import-aipservicetpd) cmdlet 上传每个受信任的发布域 (.xml) 文件。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。
     
     若要运行此 cmdlet，需要先前为每个配置数据文件指定的密码以及在上一步中标识的密钥的 URL。
     
@@ -84,15 +86,15 @@ ms.locfileid: "67535208"
     
     作为此导入的一部分，将导入 SLC 密钥并且密钥将被自动设置为已存档。
 
-2.  上传每个文件后，运行[集 AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties)以指定哪个导入的密钥与你的 AD RMS 群集中当前活动的 SLC 密钥相匹配。 该密钥将成为 Azure Rights Management 服务的活动租户密钥。
+2.  上传每个文件后, 请运行[AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties)以指定与 AD RMS 群集中当前活动的 SLC 密钥相匹配的导入密钥。 该密钥将成为 Azure Rights Management 服务的活动租户密钥。
 
-3.  使用[断开连接 AipServiceService](/powershell/module/aipservice/disconnect-aipservice) cmdlet 断开与 Azure Rights Management 服务的连接：
+3.  使用[AipServiceService](/powershell/module/aipservice/disconnect-aipservice) cmdlet 断开与 Azure Rights Management 服务的连接:
 
     ```
     Disconnect-AipServiceService
     ```
 
-如果稍后需要确认正在 Azure 信息保护租户密钥使用 Azure 密钥保管库中，使用[Get AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) Azure RMS cmdlet。
+如果以后需要确认 Azure 信息保护租户密钥在 Azure Key Vault 中使用的密钥, 请使用[AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) Azure RMS cmdlet。
 
 现在可以转到[步骤 5：激活 Azure 权限管理服务](migrate-from-ad-rms-phase2.md#step-5-activate-the-azure-rights-management-service)。
 

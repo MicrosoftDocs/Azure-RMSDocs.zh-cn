@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
+ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bd7701e9b90f2ebd681dad4516c17d74c000f611
-ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
+ms.custom: admin
+ms.openlocfilehash: 5d35fc59ebfa051f3f7644c05527ed75bfe54be7
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67521920"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68790488"
 ---
-# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
+# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管:租户密钥生命周期操作
 
->适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 如果由 Microsoft 管理 Azure 信息保护的租户密钥（默认），请阅读以下部分，获取与此拓扑相关的生命周期操作的详细信息。
 
@@ -46,7 +48,7 @@ ms.locfileid: "67521920"
 
 如果从 Active Directory Rights Management Services (AD RMS) 进行迁移，并且为 Azure 信息保护选择 Microsoft 托管密钥拓扑，那么将具有多个 Microsoft 托管密钥。 在此方案中，租户具有至少 2 个 Microsoft 托管密钥。 这一个密钥或多个密钥是从 AD RMS 导出的密钥。 还将拥有为 Azure 信息保护租户自动创建的默认密钥。
 
-若要选择不同的密钥为 Azure 信息保护的活动租户密钥，请使用[集 AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) AIPService 模块中的 cmdlet。 若要帮助你确定要使用哪个密钥，请使用[Get AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet。 通过运行以下命令，可以确定为 Azure 信息保护租户自动创建的默认密钥：
+若要将其他密钥选为 Azure 信息保护的活动租户密钥, 请使用 AIPService 模块中的[AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) cmdlet。 若要帮助你确定要使用的密钥, 请使用[AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet。 通过运行以下命令，可以确定为 Azure 信息保护租户自动创建的默认密钥：
 
     (Get-AipServiceKeys) | Sort-Object CreationTime | Select-Object -First 1
 
@@ -66,21 +68,21 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 - Microsoft 将验证发放 Azure 信息保护租户密钥的请求是否合法。 此过程最多可能需要三周时间。
 
-### <a name="step-3-receive-key-instructions-from-css"></a>步骤 3：接收来自 CSS 的密钥说明
+### <a name="step-3-receive-key-instructions-from-css"></a>步骤 3：从 CSS 接收关键说明
 
-- Microsoft 客户支持服务 (CSS) 将 Azure 信息保护配置和在一个受密码保护的文件中加密的租户密钥发送给用户。 此文件的文件扩展名为 .tpd  。 执行此操作时，CSS 首先通过电子邮件向你（即启动导出的人员）发送一个工具。 你必须从命令提示符处运行该工具，如下所示：
+- Microsoft 客户支持服务 (CSS) 将 Azure 信息保护配置和在一个受密码保护的文件中加密的租户密钥发送给用户。 此文件的文件扩展名为 .tpd。 执行此操作时，CSS 首先通过电子邮件向你（即启动导出的人员）发送一个工具。 你必须从命令提示符处运行该工具，如下所示：
 
     ```
     AadrmTpd.exe -createkey
     ```
-    这样可以生成 RSA 密钥对，并将公有部分和私有部分保存为当前文件夹中的文件。 例如：PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt 和 PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt   。
+    这样可以生成 RSA 密钥对，并将公有部分和私有部分保存为当前文件夹中的文件。 例如：PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt 和 PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt。
 
     回复来自 CSS 的电子邮件，附加名称以 **PublicKey** 开头的文件。 CSS 随后向你发送一个作为 .xml 文件的 TPD 文件，该文件使用你的 RSA 密钥进行加密。 将此文件复制到与你最初运行 AadrmTpd 工具时的相同文件夹，并使用以 **PrivateKey** 开头的文件和来自 CSS 的文件再次运行该工具。 例如：
 
     ```
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml
     ```
-    此命令的输出应为两个文件：一个文件包含受密码保护的 TPD 的纯文本密码，另一个文件则是受密码保护的 TPD 本身。 这些文件具有新的 GUID，例如：
+    此命令的输出应为以下两个文件:一个文件包含受密码保护的 TPD 的纯文本密码，另一个文件则是受密码保护的 TPD 本身。 这些文件具有新的 GUID，例如：
      
   - Password-5E4C2018-8C8C-4548-8705-E3218AA1544E.txt
 
@@ -88,7 +90,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
     备份这些文件并将其安全存储，以确保用户能够继续解密使用此租户密钥保护的内容。 此外，如果你要迁移到 AD RMS，则可将此 TPD 文件（以 **ExportedTDP** 开头的文件）导入到 AD RMS 服务器。
 
-### <a name="step-4-ongoing-protect-your-tenant-key"></a>步骤 4:正在进行：保护你的租户密钥
+### <a name="step-4-ongoing-protect-your-tenant-key"></a>步骤 4：持续保护你的租户密钥
 
 在收到你的租户密钥后，对其进行良好的保护，因为如果有人得到了它，他们将可以解密由该密钥保护的所有文档。
 

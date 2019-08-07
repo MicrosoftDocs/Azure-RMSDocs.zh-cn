@@ -13,12 +13,13 @@ ms.assetid: 5A9F04FD-0FCD-482F-8671-36FE93B783B0
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: c362c866233024897329cfa72930c8529924480f
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 60cf2741ddec361e5913fe043ce6dec7ecf848c9
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60178973"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792479"
 ---
 # <a name="developer-guidance"></a>开发人员指南
 

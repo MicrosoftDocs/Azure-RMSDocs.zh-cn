@@ -13,12 +13,13 @@ ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6843d2298adcc6edee6cf0ddf35a8d8b32101083
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: b396d65b821f258d08e867bad8331b8603d8ccb9
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60179706"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68788638"
 ---
 # <a name="server"></a>Server
 

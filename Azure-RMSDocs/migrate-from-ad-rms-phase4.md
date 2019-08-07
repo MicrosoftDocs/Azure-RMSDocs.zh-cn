@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
+ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 064cf6db8551caa12bb06540fd598f70f02e6c0d
-ms.sourcegitcommit: bdaf9809fcf78602ec7675c04f97ad5d3cc47b44
+ms.custom: admin
+ms.openlocfilehash: ced4865d5a0549e5ae9883f239966bd30fef8ffe
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66748347"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68793974"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
@@ -38,11 +40,11 @@ ms.locfileid: "66748347"
 
 2. 运行 Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160).aspx) 命令。 如需运行此命令的帮助，请参阅以下文章中的分步说明：[Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)。
     
-    在输出中，检查“AzureRMSLicensingEnabled”是否设置为“True”：  
+    在输出中，检查“AzureRMSLicensingEnabled”是否设置为“True”：
     
-    - 如果 AzureRMSLicensingEnabled 设置为“True”，则此步骤中无需进一步配置  。 
+    - 如果 AzureRMSLicensingEnabled 设置为“True”，则此步骤中无需进一步配置。 
     
-    - 如果 AzureRMSLicensingEnabled 设置为“False”，请运行 `Set-IRMConfiguration -AzureRMSLicensingEnabled $true`，然后使用[设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)中的验证步骤来确认 Exchange Online 现在是否可以使用 Azure Rights Management 服务  。 
+    - 如果 AzureRMSLicensingEnabled 设置为“False”，请运行 `Set-IRMConfiguration -AzureRMSLicensingEnabled $true`，然后使用[设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)中的验证步骤来确认 Exchange Online 现在是否可以使用 Azure Rights Management 服务。 
 
 ## <a name="step-9-configure-irm-integration-for-exchange-server-and-sharepoint-server"></a>步骤 9. 为 Exchange Server 和 SharePoint Server 配置 IRM 集成
 
@@ -60,22 +62,22 @@ ms.locfileid: "66748347"
 ### <a name="disable-irm-on-exchange-servers-and-remove-ad-rms-configuration"></a>在 Exchange 服务器上禁用 IRM 并删除 AD RMS 配置
 
 > [!IMPORTANT]
-> 如果你尚未在任何 Exchange 服务器上配置 IRM，不要只是步骤 2 和 6。
+> 如果你尚未在任何 Exchange 服务器上配置 IRM, 只需执行步骤2和6。
 > 
-> 如果所有 AD RMS 群集的所有授权 Url 不会显示在执行所有这些步骤*LicensingLocation*参数运行时[Get-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)。
+> 当你运行[set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)时, 如果*LicensingLocation*参数中没有显示所有 AD RMS 群集的所有授权 url, 请执行所有这些步骤。
 
 1. 在每个 Exchange Server 上，找到以下文件夹，并删除该文件夹中的所有条目： **\ProgramData\Microsoft\DRM\Server\S-1-5-18**
 
 2. 在其中一台 Exchange Server 中，运行以下 PowerShell 命令，以确保用户能够读取使用 Azure Rights Management 保护的电子邮件。
 
-    运行这些命令之前，请将 \<租户 URL>  替换为你自己的 Azure Rights Management 服务 URL。
+    运行这些命令之前，请将 \<租户 URL>替换为你自己的 Azure Rights Management 服务 URL。
 
         $irmConfig = Get-IRMConfiguration
         $list = $irmConfig.LicensingLocation 
         $list += "<Your Tenant URL>/_wmcs/licensing"
         Set-IRMConfiguration -LicensingLocation $list
     
-    现在，当你运行[Get-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)，你应看到许可 Url 和 Azure Rights Management 服务 URL 为显示所有 AD RMS 群集*LicensingLocation*参数。
+    现在, 当你运行[set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)时, 你应该会看到所有 AD RMS 群集授权 url 和为*LicensingLocation*参数显示的 Azure Rights Management 服务 URL。
 
 3.  现在对向外部收件人发送的消息禁用 IRM 功能：
 
@@ -101,13 +103,13 @@ ms.locfileid: "66748347"
 
 1.  请确保没有文档从 RMS 保护的库中签出。 如果有，这些文档将在此过程结束时变为不可访问。
 
-2.  在 SharePoint 管理中心网站的“快速启动”  部分中，单击“安全性”  。
+2.  在 SharePoint 管理中心网站的“快速启动”部分中，单击“安全性”。
 
-3.  在“安全性”  页的“信息策略”  部分中，单击“配置信息权限管理”  。
+3.  在“安全性”页的“信息策略”部分中，单击“配置信息权限管理”。
 
-4.  在“信息权限管理”  页的“信息权限管理”  部分中，选择“不在此服务器上使用 IRM”  ，然后单击“确定”  。
+4.  在“信息权限管理”页的“信息权限管理”部分中，选择“不在此服务器上使用 IRM”，然后单击“确定”。
 
-5.  在每台 SharePoint Server 计算机上，删除文件夹 \ProgramData\Microsoft\MSIPC\Server\\<运行 SharePoint Server 的帐户 SID>  的内容。
+5.  在每台 SharePoint Server 计算机上，删除文件夹 \ProgramData\Microsoft\MSIPC\Server\\<运行 SharePoint Server 的帐户 SID> 的内容。
 
 ### <a name="configure-exchange-and-sharepoint-to-use-the-connector"></a>配置 Exchange 和 SharePoint 以使用连接器
 

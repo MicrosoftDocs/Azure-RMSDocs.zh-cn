@@ -9,13 +9,15 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
+ms.subservice: prereqs
 ms.suite: ems
-ms.openlocfilehash: 7ae6b5396bd3c2bcd0c92d7f2a21de6681c80546
-ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
+ms.custom: admin
+ms.openlocfilehash: f8e5ceec7fe868e16f79bfdd058611f7da96c52f
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68428298"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68793747"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
 

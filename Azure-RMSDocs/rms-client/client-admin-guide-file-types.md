@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ''
+ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8ef451597e32915cdc14e859f275e0d8d20326f4
-ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
+ms.custom: admin
+ms.openlocfilehash: 03b589bf0f16ed8a70f15dea1130fbd8baf85036
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68428299"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68793669"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -165,7 +167,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
     - 对于 64 位版本的 Windows：HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection 和 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
 
-2. 在新添加的项（例如 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\\\*）中，创建一个名为“Encryption”、数据值为 Pfile 的新字符串值 (REG_SZ)。
+2. 在新添加的项（例如 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\\\*）中，创建一个名为“Encryption”、数据值为 Pfile的新字符串值 (REG_SZ)。
 
     此设置将导致 Azure 信息保护客户端应用常规保护。
 

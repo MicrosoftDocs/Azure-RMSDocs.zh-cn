@@ -1,6 +1,6 @@
 ---
 title: 为 Azure Rights Management 配置超级用户 - AIP
-description: 了解和实现 Azure 信息保护中的 Azure Rights Management 服务的超级用户功能，以便经授权的人员和服务可以始终读取和检查 （"推断"） 组织的受保护的数据。
+description: 了解并实现 Azure 信息保护中 Azure Rights Management 服务的超级用户功能, 以便已获授权的人员和服务始终可以阅读和检查 ("原因") 组织的受保护数据。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
+ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f65e3cbda824dcd2ddcfad0c239cb7831da2fac5
-ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
+ms.custom: admin
+ms.openlocfilehash: 23cb44d9b4101c4e73aeed27142be50c79a70cfb
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67520639"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68789048"
 ---
 # <a name="configuring-super-users-for-azure-information-protection-and-discovery-services-or-data-recovery"></a>为 Azure 信息保护和发现服务或数据恢复配置超级用户
 
->适用对象：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确保已获授权的用户与服务始终可以阅读和检查 Azure Rights Management 为你的组织保护的数据。 如有必要，可以删除或更改保护。
 
@@ -40,26 +42,26 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 默认情况下，超级用户功能未启用，并且没有向任何用户分配此角色。 如果你为 Exchange 配置了 Rights Management 连接器，则会自动启用超级用户功能，对于运行 Exchange Online、SharePoint Online 或 SharePoint Server 的标准服务，不需要该功能。
 
-如果需要手动启用超级用户功能，使用 PowerShell cmdlet[启用 AipServiceSuperUserFeature](/powershell/module/aipservice/enable-aipservicesuperuserfeature)，然后分配用户 （或服务帐户），根据需要使用[添加 AipServiceSuperUser](/powershell/module/aipservice/add-aipservicesuperuser) cmdlet 或[集 AipServiceSuperUserGroup](/powershell/module/aipservice/set-aipservicesuperusergroup) cmdlet，并根据需要向此组添加用户 （或其他组）。 
+如果需要手动启用超级用户功能, 请使用 PowerShell cmdlet [AipServiceSuperUserFeature](/powershell/module/aipservice/enable-aipservicesuperuserfeature), 然后根据需要使用[AipServiceSuperUser](/powershell/module/aipservice/add-aipservicesuperuser) cmdlet[分配用户 (或服务帐户)。AipServiceSuperUserGroup](/powershell/module/aipservice/set-aipservicesuperusergroup) cmdlet, 并根据需要向此组添加用户 (或其他组)。 
 
-尽管为超级用户使用组更易管理，但请注意，出于性能原因，Azure 权限管理[缓存组成员身份](prepare.md#group-membership-caching-by-azure-information-protection)。 因此如果需要分配新用户立即解密内容的超级用户，通过使用添加 AipServiceSuperUser，而不是将用户添加到使用集 AipServiceSuperUserGroup 配置的现有组添加该用户。
+尽管为超级用户使用组更易管理，但请注意，出于性能原因，Azure 权限管理[缓存组成员身份](prepare.md#group-membership-caching-by-azure-information-protection)。 因此, 如果需要将新用户分配为超级用户来立即解密内容, 请使用 AipServiceSuperUser 添加该用户, 而不是将该用户添加到使用 AipServiceSuperUserGroup 配置的现有组。
 
 > [!NOTE]
-> 如果你尚未安装 Windows PowerShell 模块适用于 Azure Rights Management，请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
+> 如果尚未安装适用于 Azure Rights Management 的 Windows PowerShell 模块, 请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
 
 启用超级用户功能或将用户添加为超级用户的时间并不重要。 例如，如果在星期四启用该功能，然后在星期五添加了一名用户，则这位用户在这周一开始即可立即打开受保护的内容。
 
 ## <a name="security-best-practices-for-the-super-user-feature"></a>超级用户功能的最佳安全做法
 
-- 限制和监视的管理员分配了 Office 365 或 Azure 信息保护租户的全局管理员或获得了 GlobalAdministrator 角色使用[添加 AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator) cmdlet。 这些用户可以启用超级用户功能并将用户（包括其自己）分配为超级用户，并且可能解密组织保护的所有文件。
+- 限制和监视为 Office 365 或 Azure 信息保护租户分配了全局管理员的管理员, 或使用[AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator) cmdlet 分配了 GlobalAdministrator 角色的管理员。 这些用户可以启用超级用户功能并将用户（包括其自己）分配为超级用户，并且可能解密组织保护的所有文件。
 
-- 若要查看哪些用户和服务帐户单独分配为超级用户，请使用[Get AipServiceSuperUser](/powershell/module/aipservice/get-aipservicesuperuser) cmdlet。 若要查看是否配置了超级用户组，请使用[Get AipServiceSuperUserGroup](/powershell/module/aipservice/get-aipservicesuperusergroup) cmdlet 和标准用户管理工具来查看哪些用户是此组的成员。 类似于所有管理操作，启用或禁用超级功能，并添加或删除超级用户记录和可通过使用审核[Get AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog)命令。 有关示例，请参阅下一部分。 超级用户解密文件时，会记录此操作，并且可使用[使用情况日志记录](log-analyze-usage.md)进行审核。
+- 若要查看已将哪些用户和服务帐户单独分配为超级用户, 请使用[AipServiceSuperUser](/powershell/module/aipservice/get-aipservicesuperuser) cmdlet。 若要查看超级用户组是否已配置, 请使用[AipServiceSuperUserGroup](/powershell/module/aipservice/get-aipservicesuperusergroup) cmdlet 和标准用户管理工具检查哪些用户是该组的成员。 与所有管理操作一样, 启用或禁用超级功能, 以及添加或删除超级用户, 并可通过使用[AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog)命令进行审核。 有关示例，请参阅下一部分。 超级用户解密文件时，会记录此操作，并且可使用[使用情况日志记录](log-analyze-usage.md)进行审核。
 
-- 如果您不需要日常服务的超级用户功能，启用功能，仅当需要它，以及通过使用再次禁用它时，才[禁用 AipServiceSuperUserFeature](/powershell/module/aipservice/disable-aipservicesuperuserfeature) cmdlet。
+- 如果你不需要针对日常服务的超级用户功能, 请仅在需要时启用该功能, 并使用[AipServiceSuperUserFeature](/powershell/module/aipservice/disable-aipservicesuperuserfeature) cmdlet 再次禁用它。
 
 ### <a name="example-auditing-for-the-super-user-feature"></a>超级用户功能的审核示例
 
-下面的日志提取显示了使用一些示例条目[Get AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog) cmdlet。 
+下面的日志提取显示了使用[AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog) cmdlet 的一些示例条目。 
 
 在此示例中，Contoso Ltd 的管理员确认已禁用超级用户功能、将 Richard Simone 添加为超级用户、检查是否将 Richard 配置为 Azure Rights Management 服务唯一的超级用户，然后启用超级用户功能，以便 Richard 可以解密已离开公司的员工保护的某些文件。
 
@@ -79,7 +81,7 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 有关这些 cmdlet 的详细信息，请参阅 Azure 信息保护客户端管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)。
 
 > [!NOTE]
-> AzureInformationProtection 模块不同于和补充[AIPService PowerShell 模块](administer-powershell.md)管理 Azure 信息保护的 Azure Rights Management 服务。
+> AzureInformationProtection 模块不同于并补充了用于管理 azure 信息保护的 Azure Rights Management 服务的[AIPService PowerShell 模块](administer-powershell.md)。
 
 ### <a name="guidance-for-using-unprotect-rmsfile-for-ediscovery"></a>使用 Unprotect-RMSFile 进行电子数据展示的指南
 

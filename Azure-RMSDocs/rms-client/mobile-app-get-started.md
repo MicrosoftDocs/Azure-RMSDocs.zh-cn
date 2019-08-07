@@ -11,12 +11,13 @@ ms.service: information-protection
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1d9e071f931a09d4342759916e3596548014debf
-ms.sourcegitcommit: 9d99385bab62478de6c00faae15d8b27f80239e5
+ms.custom: user
+ms.openlocfilehash: 9c51fadc644288e86413d94d5d88f3484eb023f6
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68229787"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792899"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门
 
@@ -41,7 +42,7 @@ ms.locfileid: "68229787"
 
 - **.ptxt、.pjpg 或 .ppng**：在 Windows 计算机中, 使用 Azure 信息保护客户端保护某个文本或图像文件, 然后将此受保护的文件作为电子邮件附件发送。 有关可用于测试的文件类型的完整列表，请参阅 Azure 信息保护客户端管理指南中的[支持分类和保护的文件类型](client-admin-guide-file-types.md#supported-file-types-for-classification-and-protection)部分的第一个表格。 
 
-若要在 Azure 信息保护查看器应用中查看这些文件，请点击此电子邮件附件或链接。 系统提示选择一个应用来打开文件时，请选择“AIP 查看器”  应用。 然后系统会提示使用工作或学校帐户登录，或提示选择一个证书。 对这些凭据进行身份验证后，Azure 信息保护应用会显示电子邮件或文件以供阅读。
+若要在 Azure 信息保护查看器应用中查看这些文件，请点击此电子邮件附件或链接。 系统提示选择一个应用来打开文件时，请选择“AIP 查看器”应用。 然后系统会提示使用工作或学校帐户登录，或提示选择一个证书。 对这些凭据进行身份验证后，Azure 信息保护应用会显示电子邮件或文件以供阅读。
 
 ## <a name="next-steps"></a>后续步骤
 

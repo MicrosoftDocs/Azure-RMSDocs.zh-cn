@@ -13,12 +13,13 @@ ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 42ef57b73dfbbd49620e406a296df400ea3d99cf
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 08981ab13862eed815609eaad4c6733ec205e0a1
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60181012"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792092"
 ---
 # <a name="windows-phone-setup"></a>Windows Phone 安装程序
 
@@ -31,7 +32,7 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 
 开发系统上必须安装以下软件：

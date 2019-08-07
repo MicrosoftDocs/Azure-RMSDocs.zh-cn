@@ -13,12 +13,13 @@ ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: de05a0331e347dbfa4c10237433fcf370f088388
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 2a71fcddecbe688f38360c42cf83946f82269013
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60175931"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68790801"
 ---
 # <a name="how-to-set-the-api-security-mode"></a>操作说明：设置 API 安全模式
 

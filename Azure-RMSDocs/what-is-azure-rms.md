@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
+ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
+ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 467f7d9c9ddcf250f27b8980bd989e638959be66
-ms.sourcegitcommit: 47182b6a65bfae3561cb34be3d6a6852a1edccb9
+ms.openlocfilehash: 70ee7b3733d73ca4603bd1031931381b19d3aa08
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68446841"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68789757"
 ---
 # <a name="what-is-azure-rights-management"></a>什么是 Azure 权限管理？
 

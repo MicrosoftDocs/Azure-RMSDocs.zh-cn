@@ -13,12 +13,13 @@ ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: b2e625ad8c238d592656129cbc1542e4f6f24f97
-ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
+ms.custom: dev
+ms.openlocfilehash: 00f056e5e8dae9721933e041a766f72da99bb380
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67521208"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792247"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>操作说明：使服务应用程序可以使用基于云的 RMS
 
@@ -27,7 +28,7 @@ ms.locfileid: "67521208"
 **重要说明**  
 为了通过 Azure RMS 使用 Rights Management Services SDK 2.1 服务应用程序，你需要创建自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](../requirements.md)
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 -   必须安装并配置 RMS SDK 2.1。 有关详细信息，请参阅 [RMS SDK 2.1 入门](getting-started-with-ad-rms-2-0.md)。
 -   必须使用对称密钥选项或通过其他方式来 [通过 ACS 创建服务标识](https://msdn.microsoft.com/library/gg185924.aspx)，并记录来自该过程的密钥信息。
@@ -105,7 +106,7 @@ ms.locfileid: "67521208"
 
 -   创建 [IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx) 结构的实例（包含 [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 实例）。
 
-**注意** - connectionInfo  成员使用来自前面的 `Get-AipServiceConfiguration` 调用的 URL 进行设置，在此处使用这些字段名称进行注明。
+**注意** - connectionInfo 成员使用来自前面的 `Get-AipServiceConfiguration` 调用的 URL 进行设置，在此处使用这些字段名称进行注明。
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};

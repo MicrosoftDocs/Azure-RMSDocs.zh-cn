@@ -13,12 +13,13 @@ ms.assetid: 4E46521F-8C2F-401A-A481-113CE130ACF0
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: eb7d73c1ebca49f4d49f8b57de94319cabc1300d
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.custom: dev
+ms.openlocfilehash: 8b8572d73216eb0366a8ba0c23ebbb07cdf319a9
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60176850"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68792064"
 ---
 # <a name="supported-platforms"></a>受支持的平台
 

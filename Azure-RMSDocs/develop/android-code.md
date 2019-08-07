@@ -13,12 +13,13 @@ ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 745a340586157b6bb429345c96ee9556f60a93da
-ms.sourcegitcommit: 1218fad71850f3ea81cd12062544cfbc5a094764
+ms.custom: dev
+ms.openlocfilehash: b86572fe0f981b4c5a93c67553ccd42358f47c16
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263894"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68791340"
 ---
 # <a name="android-code-examples"></a>Android 代码示例
 
@@ -37,7 +38,7 @@ ms.locfileid: "66263894"
 
 MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合使用。 若要了解详细信息，请参阅 [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android)。
 
-### <a name="scenario-consume-an-rms-protected-file"></a>方案：使用受 RMS 保护的文件
+### <a name="scenario-consume-an-rms-protected-file"></a>应用使用受 RMS 保护的文件
 
 - **步骤 1**：创建 [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx)。
 
@@ -202,7 +203,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
     ```
 
 
-### <a name="scenario-create-a-new-protected-file-using-a-template"></a>方案：使用模板创建新的受保护文件
+### <a name="scenario-create-a-new-protected-file-using-a-template"></a>应用使用模板创建新的受保护文件
 
 此方案首先获取模板列表，选择第一个模板以创建策略，然后创建并写入新的受保护的文件。
 
@@ -358,7 +359,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
     ```
 
 
-### <a name="scenario-open-a-custom-protected-file"></a>方案：打开自定义受保护的文件
+### <a name="scenario-open-a-custom-protected-file"></a>应用打开自定义受保护的文件
 
 - **步骤 1**：从 serializedContentPolicy 创建 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
 
@@ -526,7 +527,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
     ```
     
 
-### <a name="scenario-create-a-custom-protected-file-using-a-custom-policy"></a>方案：使用自定义策略创建自定义受保护的文件
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-policy"></a>应用使用自定义策略创建自定义受保护的文件
 
 - **步骤 1**：在用户提供了电子邮件地址的情况下，创建策略描述符。
 

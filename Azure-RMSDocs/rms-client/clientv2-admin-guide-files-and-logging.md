@@ -8,13 +8,15 @@ ms.date: 07/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
+ms.subservice: v2client
 ms.suite: ems
-ms.openlocfilehash: 6904f77a621b2dc362a82f9b20099d71aaf4f605
-ms.sourcegitcommit: 29dc76ef3215a68a4a7a0c0eeae83d22caadec4c
+ms.custom: admin
+ms.openlocfilehash: 0658eda00dbbb2fa90038dcfefba00684a2919d2
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68501651"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68789964"
 ---
 # <a name="admin-guide-azure-information-protection-unified-labeling-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护统一标签客户端文件和客户端使用情况日志记录
 

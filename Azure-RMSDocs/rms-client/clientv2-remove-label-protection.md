@@ -9,13 +9,15 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ''
+ms.subservice: v2client
 ms.suite: ems
-ms.openlocfilehash: 1d7d712c43c3fcc13d3dfaebf0b0bcb110f40354
-ms.sourcegitcommit: 7992e1dc791d6d919036f7aa98bcdd21a6c32ad0
+ms.custom: user
+ms.openlocfilehash: 9ca9c53a71e0ef1881b16a1a653bbddf24b042be
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68428040"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68793186"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection"></a>用户指南：从已由 Azure 信息保护标记的文件和电子邮件中删除标签和保护
 

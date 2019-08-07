@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 6ba22afad4ef9e1e8fc5da98efdff965dd6b3dfa
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.subservice: hyok
+ms.custom: admin
+ms.openlocfilehash: 01bd7936f0269d46b6eb782bdd132e0f80bb3d98
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60182137"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68789569"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>用于 Azure 信息保护的保留自己的密钥 (HYOK) 保护
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 使用以下信息了解什么是用于 Azure 信息保护的保留自己的密钥 (HYOK)，以及它与默认的基于云的保护有何不同。 使用 HYOK 保护前，请确保了解适用情况、支持的方案、限制和需求。 
 
@@ -84,8 +86,8 @@ ms.locfileid: "60182137"
 |Android|Office Mobile <br /><br />- Word、Excel、PowerPoint|保护:否<br /><br />使用：是|
 |Android|Office Mobile <br /><br />- Outlook|保护:否<br /><br />使用：否|
 |Android|Azure 信息保护查看器|保护:“不适用”<br /><br />使用：是|
-|Web|Web 上的 Outlook|保护:否<br /><br />使用：否|
-|Web|Office Online <br /><br />- Word、Excel、PowerPoint|保护:否<br /><br />使用：否|
+|站点|Web 上的 Outlook|保护:否<br /><br />使用：否|
+|站点|Office Online<br /><br />- Word、Excel、PowerPoint|保护:否<br /><br />使用：否|
 |通用|Office 通用应用<br /><br />- Word、Excel、PowerPoint|保护:否<br /><br />使用：否|
 
 
