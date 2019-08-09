@@ -4,19 +4,19 @@ description: 具有 Azure 信息保护的 HYOK (AD RMS) 保护概述、其支持
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 04/17/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 ms.subservice: hyok
 ms.custom: admin
-ms.openlocfilehash: 01bd7936f0269d46b6eb782bdd132e0f80bb3d98
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 14864dd4840fe967b37ab4bd6fbde1de9e2f580d
+ms.sourcegitcommit: afeef6f58cb0d05d130b551d5910d81bab28e41d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68789569"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862700"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>用于 Azure 信息保护的保留自己的密钥 (HYOK) 保护
 
@@ -87,7 +87,7 @@ ms.locfileid: "68789569"
 |Android|Office Mobile <br /><br />- Outlook|保护:否<br /><br />使用：否|
 |Android|Azure 信息保护查看器|保护:“不适用”<br /><br />使用：是|
 |站点|Web 上的 Outlook|保护:否<br /><br />使用：否|
-|站点|Office Online<br /><br />- Word、Excel、PowerPoint|保护:否<br /><br />使用：否|
+|站点|适用于 web 的 Office<br /><br />- Word、Excel、PowerPoint|保护:否<br /><br />使用：否|
 |通用|Office 通用应用<br /><br />- Word、Excel、PowerPoint|保护:否<br /><br />使用：否|
 
 

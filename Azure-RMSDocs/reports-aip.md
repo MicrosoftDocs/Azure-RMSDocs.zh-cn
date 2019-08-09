@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 07/30/2019
+ms.date: 08/08/2019
 manager: barbkess
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8f783daea65e29ba33d2395208994e9f6b92d7b2
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 62572897d1333eb62509509ce4938099a53dabe2
+ms.sourcegitcommit: afeef6f58cb0d05d130b551d5910d81bab28e41d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793788"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862741"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -118,7 +118,7 @@ ms.locfileid: "68793788"
 
 此信息存储在组织拥有的 Azure Log Analytics 工作区中，并可供有权访问此工作区的用户从 Azure 信息保护独立查看。 有关详细信息，请参阅 [Azure 信息保护分析的必备权限](#permissions-required-for-azure-information-protection-analytics)部分。 要了解如何管理对工作区的访问，请参阅 Azure 文档中的[使用 Azure 权限管理对 Log Analytics 工作区的访问](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#manage-access-to-log-analytics-workspace-using-azure-permissions)部分。
 
-若要阻止 Azure 信息保护客户端发送此数据，请将“将审核数据发送到 Azure 信息保护日志分析”的[策略设置](configure-policy-settings.md)设置为“关闭”：
+若要防止 Azure 信息保护客户端 (经典) 发送此数据, 请将 "**将审核数据发送到 Azure 信息保护 log analytics** "[策略设置](configure-policy-settings.md)设置为 "**关闭**":
 
 - 若要使大多数用户发送此数据，而使一部分用户无法发送审核数据，请执行以下操作： 
     - 在部分用户的作用域内策略中将“将审核数据发送到 Azure 信息保护日志分析”设置为“关闭”。 此配置专用于生产方案。
@@ -128,11 +128,15 @@ ms.locfileid: "68793788"
 
 #### <a name="content-matches-for-deeper-analysis"></a>更深入分析的内容匹配项 
 
-Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储由敏感信息类型或自定义条件标识的数据的复选框。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 如果不想发送此额外数据，请不要选中此复选框。 如果你希望大多数用户发送此额外数据，而一部分用户无法发送该数据，请选中此复选框并在该部分用户的作用域内策略中配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
+Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储由敏感信息类型或自定义条件标识的数据的复选框。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 如果你不想发送此额外数据, 请不要选中此复选框,**以便对你的敏感数据进行更深入的分析**。 如果希望大多数用户发送此额外数据, 并且用户的一个子集无法发送它, 请选中该复选框, 然后执行以下操作:
+
+- 对于经典客户端:为用户子集配置作用域内策略中的 "[高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
+
+- 对于统一标签客户端:为用户子集配置标签策略中的[高级设置](./rms-client/clientv2-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
 
 收集内容匹配项后，当你向下钻取到活动日志中的文件以显示活动详细信息时，这些匹配项项将显示在报表中。 也可以使用查询来查看和检索此信息。
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>先决条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
 
 |要求|更多信息|
@@ -192,16 +196,16 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 ### <a name="features-that-require-a-minimum-version-of-the-client"></a>需要客户端的最低版本的功能
 
-你可以使用[Azure 信息保护统一标签客户端](./rms-client/unifiedlabelingclient-version-release-history.md)和[azure 信息保护客户端 (经典)](./rms-client/client-version-release-history.md)的版本历史记录信息来确认你的客户端版本是否支持所有中央报告功能. 客户端的最低版本:
+Azure 信息保护客户端支持基本审核 (标签使用情况) 和终结点发现 (标识敏感信息类型)。
 
-对于 Azure 信息保护统一标签客户端:
+Azure 信息保护统一标签客户端：
 
-- 支持审核和终结点发现:版本2.0.778。0
+- 支持基本审核和终结点发现:2.0.778.0 的最低版本
 
-对于 Azure 信息保护客户端 (经典):
+Azure 信息保护客户端 (经典):
 
-- 支持审核:版本 1.41.51.0
-- 支持终结点发现:版本1.48.204。0
+- 基本审核支持:1.41.51.0 的最低版本
+- 支持终结点发现:1.48.204.0 的最低版本
 
 ### <a name="storage-requirements-and-data-retention"></a>存储要求和数据保留
 

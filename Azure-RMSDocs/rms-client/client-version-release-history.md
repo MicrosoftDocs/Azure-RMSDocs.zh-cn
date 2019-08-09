@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/16/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ca547ec6ba957eba15df4f5835cb5d668053d11e
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: bb9dbea01c501ef7fa8e0639ae9416c4f0f4045e
+ms.sourcegitcommit: afeef6f58cb0d05d130b551d5910d81bab28e41d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793530"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862718"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -96,7 +96,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **发布日期**：04/16/2019
 
-支持, 02/15/2020
+支持, 01/15/2020
 
 此版本包括 RMS 客户端的 MSIPC 1.0.3592.627 版本。
 
