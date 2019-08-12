@@ -4,19 +4,19 @@ description: 在 Azure 信息保护策略中配置适用于所有用户、所有
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/23/2019
+ms.date: 08/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 24eb4e6fcea22bc4b367e8bb37ce2e99080dc528
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: e119c13a37732aad5aab04a0975e4a437aa78a0b
+ms.sourcegitcommit: 13515eaaf776b9e3fa58185992dd355404d2a3a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68792517"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68948623"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
@@ -48,7 +48,7 @@ ms.locfileid: "68792517"
     
     - **将审核数据发送到 Azure 信息保护分析**：在为 [Azure 信息分析](reports-aip.md)创建 Azure Log Analytics 工作区之前，此设置的值将显示“关闭”和“未配置”。 创建工作区时，值将更改为“关闭”和“打开”。
         
-        设置为“打开”时，支持集中报告的终结点会将其审核数据发送到 Azure 信息保护服务。 有关发送和存储的信息的详细资料，请参阅[收集和发送到 Microsoft 的信息](reports-aip.md#information-collected-and-sent-to-microsoft)部分。 将此选项设置为“关闭”可阻止发送此数据。
+        当设置为**On**时, 支持集中报表的客户端将数据发送到 Azure 信息保护服务。 此信息包括应用的标签、用户选择具有较低分类的标签或删除标签。 有关发送和存储的信息的详细信息, 请参阅中央报表文档中的[收集和发送到 Microsoft](reports-aip.md#information-collected-and-sent-to-microsoft)部分。 将此策略设置设置为 "**关闭**" 可阻止发送此数据。
     
     - **所有文档和电子邮件都必须带有标签**：此选项设置为“启用”时，所有已保存的文档和发送的电子邮件都必须应用标签。 标记可能由用户手动分配，或因[条件](configure-policy-classification.md)自动分配，或（通过设置“**选择默认标签**”选项）默认分配。
         

@@ -3,7 +3,7 @@ title: 自定义配置-Azure 信息保护统一标签客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/30/2019
+ms.date: 08/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3607fc65a1c1c2dc80768b777d98473fd1c6c88c
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 8957bd019beb3af99ca1794118f42aaa2994d9f6
+ms.sourcegitcommit: 13515eaaf776b9e3fa58185992dd355404d2a3a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68790180"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68948652"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
@@ -119,6 +119,7 @@ ms.locfileid: "68790180"
 |AttachmentAction|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 |AttachmentActionTip|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments) 
 |DisableMandatoryInOutlook|[使 Outlook 邮件免于强制标记](#exempt-outlook-messages-from-mandatory-labeling)
+|EnableAudit|[禁止向 Azure 信息保护分析发送审核数据](#disable-sending-audit-data-to-azure-information-protection-analytics)|
 |EnableCustomPermissions|[在文件资源管理器中禁用自定义权限](#disable-custom-permissions-in-file-explorer)|
 |EnableCustomPermissionsForCustomProtectedFiles|[对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) |
 |EnableLabelByMailHeader|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
@@ -633,12 +634,28 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
     Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior="Warn"}
 
+## <a name="disable-sending-audit-data-to-azure-information-protection-analytics"></a>禁止向 Azure 信息保护分析发送审核数据
+
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+
+Azure 信息保护统一标签客户端支持中心报表, 并在默认情况下将其审核数据发送到[Azure 信息保护分析](../reports-aip.md)。 有关所发送和存储的信息的详细信息, 请参阅中央报表文档中的[收集和发送到 Microsoft](../reports-aip.md#information-collected-and-sent-to-microsoft)部分的信息。
+
+若要更改此行为, 以便统一标签客户端不发送此信息, 请为所选标签策略输入以下字符串:
+
+- 键:**EnableAudit**
+
+- 值：**False**
+
+示例 PowerShell 命令, 其中标签策略命名为 "Global":
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableAudit="False"}
+
 
 ## <a name="disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics"></a>禁止将文档中发现的敏感信息发送到 Azure 信息保护分析
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-[Azure 信息保护分析](../reports-aip.md)可以发现和报告 Azure 信息保护客户端在内容包含敏感信息时保存的文档。 默认情况下, 此信息由 Azure 信息保护统一标签客户端发送到 Azure 信息保护分析。
+[Azure 信息保护分析](../reports-aip.md)可以报告 Azure 信息保护客户端在内容包含敏感信息时保存的文档。 提供[EnableAudit](#disable-sending-audit-data-to-azure-information-protection-analytics) advanced 设置未设置为**False**, 默认情况下, 此信息由 azure 信息保护统一标签客户端发送到 azure 信息保护分析。
 
 若要更改此行为, 以便统一标签客户端不发送此信息, 请为所选标签策略输入以下字符串:
 

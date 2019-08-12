@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 08/08/2019
+ms.date: 08/11/2019
 manager: barbkess
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 62572897d1333eb62509509ce4938099a53dabe2
-ms.sourcegitcommit: afeef6f58cb0d05d130b551d5910d81bab28e41d
+ms.openlocfilehash: aa9742e4306002592c18b39fde028da7f965fab0
+ms.sourcegitcommit: 13515eaaf776b9e3fa58185992dd355404d2a3a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862741"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68948649"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -126,11 +126,13 @@ ms.locfileid: "68862741"
 - 若要仅使一部分用户发送审核数据，请执行以下操作： 
     - 在全局策略中将“将审核数据发送到 Azure 信息保护日志分析”设置为“关闭”，在部分用户的作用域内策略中设置为“打开”。 此配置专用于测试方案。
 
+若要防止 Azure 信息保护统一客户端发送此数据, 请配置 "标签策略"[高级设置](./rms-client/clientv2-admin-guide-customizations.md#disable-sending-audit-data-to-azure-information-protection-analytics)。
+
 #### <a name="content-matches-for-deeper-analysis"></a>更深入分析的内容匹配项 
 
 Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储由敏感信息类型或自定义条件标识的数据的复选框。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 如果你不想发送此额外数据, 请不要选中此复选框,**以便对你的敏感数据进行更深入的分析**。 如果希望大多数用户发送此额外数据, 并且用户的一个子集无法发送它, 请选中该复选框, 然后执行以下操作:
 
-- 对于经典客户端:为用户子集配置作用域内策略中的 "[高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
+- 对于经典客户端和扫描器:为用户子集配置作用域内策略中的 "[高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
 
 - 对于统一标签客户端:为用户子集配置标签策略中的[高级设置](./rms-client/clientv2-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
 
