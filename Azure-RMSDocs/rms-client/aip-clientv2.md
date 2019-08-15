@@ -4,7 +4,7 @@ description: 适用于 Windows 的 Azure 信息保护统一标签客户端的信
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/21/2019
+ms.date: 08/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 67713198da1269a776aeeb75606d101178bbeabf
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 195714bb44ea16686005c7f079c6d871c86c8528
+ms.sourcegitcommit: b02dc1b575213ea85ca984a0da457dd99f27b762
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68790194"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68994422"
 ---
 # <a name="azure-information-protection-unified-labeling-client-for-windows"></a>适用于 Windows 的 Azure 信息保护统一标签客户端
 
@@ -26,7 +26,7 @@ ms.locfileid: "68790194"
 >
 > 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
-适用于 Windows 的 Azure 信息保护统一标签客户端是一种可下载的客户端, 适用于使用[Office 365 灵敏度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)对文档和电子邮件进行分类和保护的组织。 此客户端还有一个查看器，可用于没有自己的信息保护基础结构，但希望使用其他组织通过 Microsoft 的 Rights Management 服务保护的内容的组织。
+适用于 Windows 的 Azure 信息保护统一标签客户端是一种可下载的客户端, 适用于使用[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)对文档和电子邮件进行分类和保护的组织。 此客户端还有一个查看器，可用于没有自己的信息保护基础结构，但希望使用其他组织通过 Microsoft 的 Rights Management 服务保护的内容的组织。
 
 > [!NOTE]
 > 此客户端 (也称为统一标签客户端) 正在替换 Azure 信息保护客户端 (经典)。 如果你不确定要使用的客户端, 请参阅[选择要使用的 Azure 信息保护客户端](use-client.md#choose-which-azure-information-protection-client-to-use)。

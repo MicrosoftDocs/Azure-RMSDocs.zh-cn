@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/24/2019
+ms.date: 08/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7dbd7a6091f0df3f4124b2ddb06178630c440f67
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: a43bdbf2e4ec14b60ac37164273529c764cffa98
+ms.sourcegitcommit: bef2862237ede61c497a54e6fe0179ae4fe5a63e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793736"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978801"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -849,15 +849,15 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
-[Azure 信息保护分析](../reports-aip.md)可以发现和报告 Azure 信息保护客户端在内容包含敏感信息时保存的文档。 默认情况下, Azure 信息保护客户端 (经典) 将此信息发送到 Azure 信息保护分析。
+在 Office 应用中使用 Azure 信息保护客户端时, 它会在首次保存文档时查找文档中的敏感信息。 提供的客户端未配置为不发送审核信息, 找到的任何敏感信息类型 (预定义或自定义) 都将发送到[Azure 信息保护分析](../reports-aip.md)。
 
-若要更改此行为, 使经典客户端不发送此信息, 请输入以下字符串:
+若要更改此行为, 以便经典客户端查找的敏感信息类型不会发送到 Azure 信息保护分析, 请输入以下字符串:
 
 - 键:**RunAuditInformationTypesDiscovery**
 
 - 值：**False**
 
-如果设置了此 "高级客户端" 设置, 则审核结果仍将从经典客户端发送, 但当用户访问标记内容时, 该信息将被限制为报表。
+如果设置了此 "高级客户端" 设置, 则仍然可以从客户端发送审核结果, 但当用户访问标记内容时, 这些信息将限制为报表。
 
 例如：
 
@@ -865,13 +865,13 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 如果没有此设置, 您可以看到该财经包含6个信用卡号。
     
-    - 如果同时还启用[用于更深入分析的内容匹配](../reports-aip.md#content-matches-for-deeper-analysis)，那么，还能够查看具体的信用卡卡号。
+    - 如果还启用[了对敏感数据的更深入分析](../reports-aip.md#content-matches-for-deeper-analysis), 还可以查看这些信用卡号。
 
 ## <a name="disable-sending-information-type-matches-for-a-subset-of-users"></a>禁止为一部分用户发送信息类型匹配项
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
-当你选中用于收集敏感信息类型或自定义条件的内容匹配项的[Azure 信息保护分析](../reports-aip.md)对应的复选框时，默认由所有用户发送此信息。 如果你有一些不应发送此数据的用户，请在这些用户的[作用域内策略](../configure-policy-scope.md)中创建以下高级客户端设置： 
+当你为[Azure 信息保护分析](../reports-aip.md)选中此复选框后, 可以更深入地分析你的敏感数据将收集你的敏感信息类型或你的自定义条件的内容匹配项。默认情况下, 此信息由所有用户发送, 其中包括运行 Azure 信息保护扫描程序的服务帐户。 如果你有一些不应发送此数据的用户，请在这些用户的[作用域内策略](../configure-policy-scope.md)中创建以下高级客户端设置： 
 
 - 键:**LogMatchedContent**
 

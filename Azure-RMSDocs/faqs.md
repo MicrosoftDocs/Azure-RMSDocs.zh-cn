@@ -4,7 +4,7 @@ description: 一些有关 Azure 信息保护及其保护服务的常见问题, A
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/01/2019
+ms.date: 08/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: f93b8e8deeb6a1329262cd08f0bb905d53507812
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 67e9e53ddcd8e5604493955a0b3a9c2fe289cb3c
+ms.sourcegitcommit: b02dc1b575213ea85ca984a0da457dd99f27b762
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68794165"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68994473"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -41,11 +41,11 @@ ms.locfileid: "68794165"
 
 最初，Office 365 还只有[保留标签](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，用于在文档和电子邮件处于 Office 365 服务中时，对该内容进行分类以供审核和保留。 相比之下，通过 Azure 信息保护标记，可对文档和电子邮件应用一致分类和保护策略，无论它们在本地还是在云中。
 
-除了以下其中一个管理中心的保留标签外，现在还可以选择创建和配置[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)的选项，该选项是在奥兰多的 Microsoft Ignite 2018 大会上推出的：Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。 可以将现有的 Azure 信息保护标签迁移到新的统一标签存储, 以用作 Office 365 的敏感度标签。 
+除了以下其中一个管理中心的保留标签外，现在还可以选择创建和配置[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)的选项，该选项是在奥兰多的 Microsoft Ignite 2018 大会上推出的：Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。 你可以将现有的 Azure 信息保护标签迁移到新的统一标签存储, 以用作包含 Office 应用的敏感度标签。 
 
 有关统一标记管理以及如何支持这些标记的详细信息，请阅读博客文章[宣布推出信息保护功能以帮助保护你的敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
 
-有关迁移现有标签的详细信息，请参阅[如何将 Azure 信息保护标签迁移到 Office 365](configure-policy-migrate-labels.md)。
+有关迁移现有标签的详细信息, 请参阅[如何将 Azure 信息保护标签迁移到统一的敏感度标签](configure-policy-migrate-labels.md)。
 
 ## <a name="whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护客户端与 Azure 信息保护统一标签客户端之间有何区别？
 
@@ -69,11 +69,11 @@ ms.locfileid: "68794165"
 
 - 版本**2**(例如, **2.2.14.0**) 标识 Azure 信息保护统一标签客户端。
 
-## <a name="when-is-the-right-time-to-migrate-my-labels-to-office-365"></a>何时将我的标签迁移到 Office 365？
+## <a name="when-is-the-right-time-to-migrate-my-labels"></a>何时将标签迁移到正确的时间？
 
 现在, 在 Azure 门户中迁移标签的选项现已正式发布, 因此建议激活迁移, 以便可以将标签用作[支持统一标签的客户端和服务的](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)敏感度标签。
 
-有关详细信息和说明, 请参阅[如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签](configure-policy-migrate-labels.md)。
+有关详细信息和说明, 请参阅[如何将 Azure 信息保护标签迁移到统一的敏感度标签](configure-policy-migrate-labels.md)。
 
 ## <a name="after-ive-migrated-my-labels-which-management-portal-do-i-use"></a>迁移我的标签后，该使用哪个管理门户？
 

@@ -4,19 +4,19 @@ description: 用户安装 Azure 信息保护统一标签客户端的说明, 以�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/17/2019
+ms.date: 08/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 548080426cadfb14bd8d03f0550aa06258f80e81
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 3c92a57864d81a20577ced49ad6346b03617d6a6
+ms.sourcegitcommit: b02dc1b575213ea85ca984a0da457dd99f27b762
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68789888"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68994411"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-unified-labeling-client"></a>用户指南：下载并安装 Azure 信息保护统一标签客户端
 
@@ -34,7 +34,7 @@ ms.locfileid: "68789888"
 
 ## <a name="to-download-and-install-the-azure-information-protection-unified-labeling-client"></a>下载并安装 Azure 信息保护统一标签客户端
 
-在安装 Azure 信息保护统一标签客户端之前, 请与你的管理员或技术支持人员确认你使用的是 Office 365 灵敏度标签。
+在安装 Azure 信息保护统一标签客户端之前, 请与管理员或技术支持人员确认你使用的是[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)来分类和保护文档和电子邮件。
 
 1. 从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载**AzInfoProtection_UL** 。
 

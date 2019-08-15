@@ -3,7 +3,7 @@ title: 自定义配置-Azure 信息保护统一标签客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/11/2019
+ms.date: 08/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8957bd019beb3af99ca1794118f42aaa2994d9f6
-ms.sourcegitcommit: 13515eaaf776b9e3fa58185992dd355404d2a3a0
+ms.openlocfilehash: ab409f5f293708db121df0c600cb9e7b5b970a18
+ms.sourcegitcommit: bef2862237ede61c497a54e6fe0179ae4fe5a63e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68948652"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978744"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
@@ -655,15 +655,15 @@ Azure 信息保护统一标签客户端支持中心报表, 并在默认情况下
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-[Azure 信息保护分析](../reports-aip.md)可以报告 Azure 信息保护客户端在内容包含敏感信息时保存的文档。 提供[EnableAudit](#disable-sending-audit-data-to-azure-information-protection-analytics) advanced 设置未设置为**False**, 默认情况下, 此信息由 azure 信息保护统一标签客户端发送到 azure 信息保护分析。
+在 Office 应用中使用 Azure 信息保护统一标签客户端时, 它会在首次保存文档时查找文档中的敏感信息。 **如果**提供[EnableAudit](#disable-sending-audit-data-to-azure-information-protection-analytics) advanced 设置, 则不会将任何敏感信息类型 (预定义或自定义) 都发送到 Azure 信息保护分析。
 
-若要更改此行为, 以便统一标签客户端不发送此信息, 请为所选标签策略输入以下字符串:
+若要更改此行为, 以便不将统一标签客户端找到的敏感信息类型发送到 Azure 信息保护分析, 请为所选标签策略输入以下字符串:
 
 - 键:**RunAuditInformationTypesDiscovery**
 
 - 值：**False**
 
-如果设置了此 "高级客户端" 设置, 则审核结果仍将从统一的标签客户端发送, 但当用户访问标记内容时, 该信息将被限制为报表。
+如果设置了此 "高级客户端" 设置, 则仍然可以从客户端发送审核信息, 但当用户访问标记内容时, 该信息将被限制为报表。
 
 例如：
 
@@ -681,7 +681,7 @@ Azure 信息保护统一标签客户端支持中心报表, 并在默认情况下
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-当你选中用于收集敏感信息类型或自定义条件的内容匹配项的[Azure 信息保护分析](../reports-aip.md)对应的复选框时，默认由所有用户发送此信息。 如果有不应发送此数据的用户, 请在 "标签" 策略中为这些用户创建以下高级客户端设置: 
+当你为[Azure 信息保护分析](../reports-aip.md)选中此复选框后, 可以更深入地分析你的敏感数据将收集你的敏感信息类型或你的自定义条件的内容匹配项。默认情况下, 此信息由所有用户发送, 其中包括运行 Azure 信息保护扫描程序的服务帐户。 如果有不应发送此数据的用户, 请在 "标签" 策略中为这些用户创建以下高级客户端设置: 
 
 - 键:**LogMatchedContent**
 

@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 08/11/2019
+ms.date: 08/13/2019
 manager: barbkess
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: aa9742e4306002592c18b39fde028da7f965fab0
-ms.sourcegitcommit: 13515eaaf776b9e3fa58185992dd355404d2a3a0
+ms.openlocfilehash: ede0c4b11a2a8bf4f9e059828dda1b58ba4d5f9c
+ms.sourcegitcommit: bef2862237ede61c497a54e6fe0179ae4fe5a63e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68948649"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978663"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -130,7 +130,7 @@ ms.locfileid: "68948649"
 
 #### <a name="content-matches-for-deeper-analysis"></a>更深入分析的内容匹配项 
 
-Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储由敏感信息类型或自定义条件标识的数据的复选框。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 如果你不想发送此额外数据, 请不要选中此复选框,**以便对你的敏感数据进行更深入的分析**。 如果希望大多数用户发送此额外数据, 并且用户的一个子集无法发送它, 请选中该复选框, 然后执行以下操作:
+Azure 信息保护的 Azure Log Analytics 工作区包含一个复选框, 用于收集和存储标识为敏感信息类型 (预定义或自定义条件) 的数据。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 如果你不想发送此额外数据, 请不要选中此复选框,**以便对你的敏感数据进行更深入的分析**。 如果希望大多数用户发送此额外数据, 并且用户的一个子集无法发送它, 请选中该复选框, 然后执行以下操作:
 
 - 对于经典客户端和扫描器:为用户子集配置作用域内策略中的 "[高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
 
@@ -144,7 +144,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 |要求|更多信息|
 |---------------|--------------------|
 |包含 Log Analytics 且用于与 Azure 信息保护相同的租户的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
-|Azure 信息保护客户端|支持统一标签客户端和经典客户端。 <br /><br />如果你还没有其中的一个客户端, 则可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装这些客户端。 <br /><br /> 请确保具有最新版本, 以支持 Azure 信息保护分析[的所有功能](#features-that-require-a-minimum-version-of-the-client)。|
+|Azure 信息保护客户端|支持统一标签客户端和经典客户端。 <br /><br />如果你还没有其中的一个客户端, 则可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装这些客户端。|
 |Microsoft Cloud App Security |若要显示 Microsoft Cloud App Security 的信息, 请配置[Azure 信息保护集成](https://docs.microsoft.com/cloud-app-security/azip-integration)。|
 |对于“发现和风险”报表： <br /><br />-若要显示本地数据存储中的数据, 你至少部署了一个 Azure 信息保护扫描程序实例 <br /><br />-若要显示 Windows 10 计算机上的数据, 它们必须是1809的最小内部版本, 你使用的是 Microsoft Defender 高级威胁防护 (Microsoft Defender ATP), 并且已启用 Microsoft 的 Azure 信息保护集成功能Defender 安全中心|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关配置和使用 Microsoft Defender 安全中心提供的 Azure 信息保护集成功能的信息, 请参阅[Windows 中的信息保护概述](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。|
 |对于“建议”报告： <br /><br />-若要从 Azure 门户添加新的数据存储库作为建议操作, 你必须使用在 Azure 门户中配置的 Azure 信息保护扫描程序的版本 |若要部署扫描程序, 请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。|
@@ -196,19 +196,6 @@ Azure 信息保护的 Azure Log Analytics 工作区包括用于收集和存储�
 
 但是，许多组织的典型角色分配是 Azure AD 角色“安全读取者”以及 Azure 角色“读取者”。
 
-### <a name="features-that-require-a-minimum-version-of-the-client"></a>需要客户端的最低版本的功能
-
-Azure 信息保护客户端支持基本审核 (标签使用情况) 和终结点发现 (标识敏感信息类型)。
-
-Azure 信息保护统一标签客户端：
-
-- 支持基本审核和终结点发现:2.0.778.0 的最低版本
-
-Azure 信息保护客户端 (经典):
-
-- 基本审核支持:1.41.51.0 的最低版本
-- 支持终结点发现:1.48.204.0 的最低版本
-
 ### <a name="storage-requirements-and-data-retention"></a>存储要求和数据保留
 
 在 Azure 信息保护工作区中收集和存储的数据量会因多种因素而异, 具体取决于你的 Azure 信息保护客户端和其他支持的终结点 (无论你是正在收集终结点发现数据, 已部署扫描程序, 等等。
@@ -219,7 +206,7 @@ Azure 信息保护客户端 (经典):
 
 - 对于 Azure 信息保护客户端、扫描仪和 Microsoft Defender ATP 生成的审核数据:每月 20 GB/10000 活动用户。
 
-如果你使用必需的标签, 或在全局策略中配置了默认标签, 则你的费率可能会显著提高。
+如果你使用必需的标签, 或者你为大多数用户配置了默认标签, 则你的费率可能会显著提高。
 
 Azure Monitor 日志具有**使用情况和预估成本**功能, 可帮助您估计和查看存储的数据量, 还可以控制 Log Analytics 工作区的数据保留期。 有关详细信息, 请参阅[使用 Azure Monitor 日志管理使用情况和成本](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage)。
 

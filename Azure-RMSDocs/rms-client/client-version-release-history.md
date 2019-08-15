@@ -12,12 +12,12 @@ ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: bb9dbea01c501ef7fa8e0639ae9416c4f0f4045e
-ms.sourcegitcommit: afeef6f58cb0d05d130b551d5910d81bab28e41d
+ms.openlocfilehash: 1bf26b600c5ea1ad4d1065b503ea25685fad0a0e
+ms.sourcegitcommit: bef2862237ede61c497a54e6fe0179ae4fe5a63e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862718"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978728"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -120,20 +120,21 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     - Azure 发布设置密码
     - Azure 存储帐户密钥（通用）
 
+- 终结点发现支持[Azure 信息保护分析](../reports-aip.md), 用于报告用户首次保存 Office 文档时找到的敏感信息 (使用适用于 Word、Excel 和 PowerPoint 的桌面应用程序):
+    - 若要发现此信息, 无需标记文档。
+    - 敏感信息由预定义的和自定义的信息类型标识。
+    - 如果你不希望将敏感信息类型发送到 Azure 信息保护分析, 你可以使用[高级客户端设置](client-admin-guide-customizations.md#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)禁用终结点发现。
+
 - 新的高级客户端设置，在 Outlook 中实现弹出消息，可以针对正在发送的电子邮件发出警告、进行验证或阻止。 [详细信息](client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
     
     请注意, 如果为预览版本配置了 OutlookCollaborationTrustedDomains 的高级客户端属性, 则此设置现在将替换为三个新设置, 因此, 每个操作都可以免除域:OutlookWarnTrustedDomains、OutlookJustifyTrustedDomains 和 OutlookBlockTrustedDomains。
 
 - 如果使用 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 标记和保护文件，则可以使用 *EnableTracking* 参数将文件注册到文档跟踪站点。 [详细信息](client-admin-guide-document-tracking.md#using-powershell-to-register-labeled-documents-with-the-document-tracking-site)
 
+- 用于[Azure 信息保护分析](../reports-aip.md)的新高级客户端设置, 用于在 Azure 门户中选中此复选框, 以使用户能够更深入地分析敏感数据, 从而防止为一部分用户发送信息类型匹配项。 此设置适用于客户端和扫描仪。 [详细信息](client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)
+
 - 新的高级客户端设置，仅当将策略设置配置为不显示自定义权限时才适用：当有一个文件受自定义权限保护时，请在文件资源管理器中显示自定义权限选项，以便用户可以查看和更改它们（如果他们具有更改保护设置的权限）。 [详细信息](client-admin-guide-customizations.md#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer)
 
-- [Azure 信息保护分析](../reports-aip.md)的终结点发现。
-    
-- 用于分析的两个新的高级客户端设置, 适用于以下情况:
-    
-    - 当已在 Azure 门户中选中复选框以收集内容匹配项时，阻止为一部分用户发送信息类型匹配项。 [详细信息](client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)
-    - 对于 "**数据发现**" 报告, 显示文件是否包含敏感信息。 [详细信息](client-admin-guide-customizations.md#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)
 
 **修补程序**：
 
@@ -190,7 +191,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
     
     若想要将客户端还原为使用 .ppdf 文件扩展名保护 PDF 文件，请使用相同的[高级客户端设置](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，但指定“False”。
 
-- 使用 Azure 信息保护分析来审核对[中央报表](../reports-aip.md)的数据支持, 请参阅 Microsoft Ignite 2018。
+- 使用 Azure 信息保护分析来审核对[中央报表](../reports-aip.md)的数据支持。 此信息包括标签用法, 可帮助你监视标签的使用方式以及用户对标记文档和电子邮件的访问权限。
 
 - Excel 现在还支持使用不同颜色的[视觉标记](../configure-policy-markings.md)。
 

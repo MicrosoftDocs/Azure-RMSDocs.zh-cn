@@ -1,10 +1,10 @@
 ---
-title: 将 Azure 信息保护标签迁移到 Office 365 - AIP
-description: 为支持统一标签的客户端和服务将 Azure 信息保护标签迁移到 Office 365 敏感度标签。
+title: 将 Azure 信息保护标签迁移到统一敏感度标签-AIP
+description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护框架的客户端和服务的统一敏感度标签。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/05/2019
+ms.date: 08/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,14 +12,14 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4a00d85ea5669a5a81a7380796888edff939e310
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 6661dbd4e19599f12ff585a427e09c1f2ac5352c
+ms.sourcegitcommit: b02dc1b575213ea85ca984a0da457dd99f27b762
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68791751"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68994436"
 ---
-# <a name="how-to-migrate-azure-information-protection-labels-to-office-365-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到 Office 365 敏感度标签
+# <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
 >适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
@@ -33,7 +33,7 @@ ms.locfileid: "68791751"
 
 - [Azure 信息保护中的标签与 Office 365 中的标签之间有何区别？](faqs.md#whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365)
 
-- [何时将我的标签迁移到 Office 365？](faqs.md#when-is-the-right-time-to-migrate-my-labels-to-office-365)
+- [何时将标签迁移到正确的时间？](faqs.md#when-is-the-right-time-to-migrate-my-labels)
 
 - [迁移我的标签后，该使用哪个管理门户？](faqs.md?#after-ive-migrated-my-labels-which-management-portal-do-i-use )
 

@@ -4,7 +4,7 @@ description: 对 Microsoft Azure 信息保护相关的单词、短语或缩略�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 08/14/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: c851b2132810f4c15f4a67c4bf70b509b5d44cea
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: f05c5cae2b0bc38929fb2bba3e060f4e521aa053
+ms.sourcegitcommit: fc467e30b67ac218491fccea2d501350d3a656fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68792769"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023988"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 
@@ -40,7 +40,7 @@ Azure 信息保护客户端 (经典)|有时缩写为*经典客户端*。<br /><b
 |Azure 信息保护标签|此项始终将分类值应用于文档和电子邮件，并可以保护这些内容。 应用标签时，标签信息存储在元数据中，供应用程序和服务读取，并可选择对其进行操作。|
 |Azure 信息保护策略|管理员定义的配置，便于客户端和服务使用 Azure 信息保护标签和策略设置。|
 |Azure 信息保护扫描程序|在 Windows Server 上运行的一项服务，便于你发现、分类和保护本地文件夹、网络共享以及 SharePoint Server 网站和库中的文档。|
-|Azure 信息保护统一标识客户端|有时缩写为*统一的标签客户端*。<br /><br />Windows 计算机的客户端，允许用户、管理员和服务使用 Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心中的敏感度标签和策略设置。 替换 Azure 信息保护客户端 (经典)。|
+|Azure 信息保护统一标识客户端|有时缩写为*统一的标签客户端*。<br /><br />用于 Windows 计算机的客户端, 该客户端允许用户、管理员和服务使用 Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 符合性中心的敏感度标签和标签策略设置。 替换 Azure 信息保护客户端 (经典)。|
 |Azure RMS|请参阅 *Azure Rights Management*。|
 |Azure 信息保护查看器|在 Windows 计算机和移动设备上运行的应用，用于显示受保护文件。|
 |Azure 权限管理|经常缩写为 Azure RMS。<br /><br />Azure 信息保护使用的一种 Azure 服务，它使用加密和策略来帮助保护文档、文件和电子邮件。  也称为 *Azure Rights Management 服务*。 之前的名称包括：<br /><br />- Windows Azure Active Directory Rights Management：经常缩写为 Windows Azure AD Rights Management 服务。<br /><br />- RMS Online：原始的建议名称, 有时可能会在错误消息和日志文件条目中看到。|
@@ -63,6 +63,8 @@ Azure 信息保护客户端 (经典)|有时缩写为*经典客户端*。<br /><b
 |信息权限管理|经常缩写为 *IRM*。<br /><br />一个用于 Exchange Server、Word 和 SharePoint Online 等 Office 服务的术语，说明是否支持 Microsoft Rights Management 服务。|
 |IRM|请参阅 *信息权限管理*。|
 |Office 消息加密|经常缩写为 OME。<br /><br />新的 Office 365 消息加密功能与 Azure Rights Management 服务本机集成，可为内部和外部用户提供相同的电子邮件保护、自动刷新模板，并支持“创建自己的密钥 (BYOK)”方案。 以前的 OME 实现仅面向外部收件人，需要邮件流规则，并且不支持 BYOK。|
+|Microsoft 信息保护| 有时缩写为*MIP*。<br /><br /> 一个框架, 适用于产品和集成功能, 使用相同的标记存储 ("统一标签"), 有助于保护组织的敏感信息。|
+|MIP| 请参阅*Microsoft 信息保护*|
 |MSDRM|有时在 RMS 客户端 1.0（现已被新的客户端 MSIPC 取代）的参考信息中出现。 这个旧版客户端支持使用 RMS SDK 1.0 开发的应用程序，并支持 Office 2010 和 Office 2007、Exchange 2010 和 Exchange 2013 以及 SharePoint 2010 和 SharePoint 2007。|
 |MSIPC|有时在 RMS 客户端 2.0（取代了旧版 RMS 客户端 MSDRM）的参考信息中出现。 这个较新版客户端支持使用 RMS SDK 2.0 开发的应用程序，并支持 Office 365 专业增强版、Office 2019、Office 2016、Office 2013、SharePoint 2013 和 Azure 信息保护客户端。|
 |本机保护|所有启用的应用程序中提供的一种保护级别，可阻止未经授权的人员打开某个文件，并且还可以强制实施更严格的策略，例如只读、不允许打印。 此外，这种保护将一直伴随文件，即使将该文件转发给他人或将其保存在他人可以访问的公共位置。|
@@ -84,7 +86,8 @@ Azure 信息保护客户端 (经典)|有时缩写为*经典客户端*。<br /><b
 |仅保护模式|不存在要应用标签的 Azure 信息保护策略时，Azure 信息保护客户端的一种操作模式。 在此模式下，不显示分类标签，但用户仍可以应用 Rights Management 保护。|
 |扫描程序|请参阅“Azure 信息保护扫描程序”。|
 |超级用户|高度受信任的管理员组，可以解密及访问组织使用 Rights Management 服务保护的文件。 通常，进行合法电子发现时需要此访问级别，并且审核团队也需要此访问级别。|
-|租户密钥|也称为服务器许可方证书 (SLC) 密钥。<br /><br />组织独有的密钥，可为链接到此租户密钥的所有 Rights Management 加密功能提供终极保护。|
+|租户密钥|也称为*服务器许可方证书 (SLC) 密钥*。<br /><br />组织独有的密钥，可为链接到此租户密钥的所有 Rights Management 加密功能提供终极保护。|
+|统一标签| 也称为*统一敏感度标签*。<br /><br /> 应用、客户端和服务可以应用的一个标签, 它可以应用分类, 还可以选择保护。 在 Office 应用和服务中, 统一标签作为敏感度标签实现。|
 |取消保护|从文件或电子邮件中删除保护控件，这些控件使用加密、标识、使用权限和访问控制策略帮助保护数据。|
 |使用许可证|向打开受 Rights Management 服务保护的文件或电子邮件的用户授予的每文档证书。 该证书包含此用户对文件或电子邮件消息所具有的权限、用于加密内容的加密密钥，以及文档策略中定义的其他访问限制。|
 

@@ -4,7 +4,7 @@ description: 管理员资源, 其中包括有关新版本、支持选项以及�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/23/2019
+ms.date: 08/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -15,12 +15,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 9364856f9c84545d8094a4cb6057cd3422f2f1d7
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: d29a8918244f1e3dcdf615d3959df2b3969ffb5f
+ms.sourcegitcommit: b02dc1b575213ea85ca984a0da457dd99f27b762
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68788392"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68994455"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -57,7 +57,7 @@ Azure 信息保护技术博客还汇总了[每个月的文档更改](https://tec
 
 ### <a name="to-contact-microsoft-support"></a>与 Microsoft 支持部门联系
 
-如果你有顶级支持，请访问[针对顶级支持客户的门户](https://premier.microsoft.com/)来提交事件、浏览解决方案，并获得帮助。
+如果有顶级支持, 请访问[Microsoft 服务中心](https://serviceshub.microsoft.com/support/contactsupport)来提交事件、浏览解决方案并获得帮助。
 
 你可能符合 FastTrack 的条件：如果在符合条件的计划中为 Azure 信息保护计划购买了至少 150 个许可证，则可以使用 FastTrack 中心权益。 FastTrack 中心权益使你可以与 Microsoft 专家共同进行评估、修正并启用符合条件的服务。 有关详细信息，请参阅 [FastTrack 企业移动性 + 安全性 (EMS) 中心权益](/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-enterprise-mobility-suite-ems)。
 
