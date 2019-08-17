@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/12/2019
+ms.date: 08/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a43bdbf2e4ec14b60ac37164273529c764cffa98
-ms.sourcegitcommit: bef2862237ede61c497a54e6fe0179ae4fe5a63e
+ms.openlocfilehash: e2cce9e76ae1b583aacc30df7d2abe5940106455
+ms.sourcegitcommit: bdfade60c1939f5c540bbf82859af060eb629f68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978801"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546069"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -61,7 +61,7 @@ ms.locfileid: "68978801"
 |FileProcessingTimeout|[更改扫描程序的超时设置](#change-the-timeout-settings-for-the-scanner)
 |LabelbyCustomProperty|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |LabelToSMIME|[将标签配置为在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook)|
-|日志级别|[更改本地日志记录级别](#change-the-local-logging-level)
+|LogLevel|[更改本地日志记录级别](#change-the-local-logging-level)
 |LogMatchedContent|[禁止为一部分用户发送信息类型匹配项](#disable-sending-information-type-matches-for-a-subset-of-users)|
 |OutlookBlockTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookBlockUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
@@ -849,15 +849,15 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
-在 Office 应用中使用 Azure 信息保护客户端时, 它会在首次保存文档时查找文档中的敏感信息。 提供的客户端未配置为不发送审核信息, 找到的任何敏感信息类型 (预定义或自定义) 都将发送到[Azure 信息保护分析](../reports-aip.md)。
+在 Office 应用中使用 Azure 信息保护客户端时, 它会在首次保存文档时查找文档中的敏感信息。 提供的客户端未配置为不发送审核信息, 找到的任何敏感信息类型 (预定义或自定义) 都将发送到[Azure 信息保护分析](../reports-aip.md)。 
 
-若要更改此行为, 以便经典客户端查找的敏感信息类型不会发送到 Azure 信息保护分析, 请输入以下字符串:
+用于控制客户端是否发送审核信息的配置是将**审核数据发送到 Azure 信息保护日志分析**的[策略设置](../configure-policy-settings.md)。 当此策略设置为 **"打开"** 时, 如果你想要发送包括标记操作的审核信息, 但不希望发送客户端找到的敏感信息类型, 请输入以下字符串:
 
 - 键:**RunAuditInformationTypesDiscovery**
 
 - 值：**False**
 
-如果设置了此 "高级客户端" 设置, 则仍然可以从客户端发送审核结果, 但当用户访问标记内容时, 这些信息将限制为报表。
+如果你设置此高级客户端设置, 则仍可以从客户端发送审核信息, 但该信息仅限于标记活动。
 
 例如：
 
