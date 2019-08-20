@@ -3,7 +3,7 @@ title: 自定义配置-Azure 信息保护统一标签客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/12/2019
+ms.date: 08/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ab409f5f293708db121df0c600cb9e7b5b970a18
-ms.sourcegitcommit: bef2862237ede61c497a54e6fe0179ae4fe5a63e
+ms.openlocfilehash: fbe7ddfd8160856a7a8491d0faa672a16b340455
+ms.sourcegitcommit: 2a12c62501e775f73c0e3176744ba966a6edffeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978744"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69584607"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
->适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
 > 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -887,7 +887,7 @@ Azure 信息保护统一标签客户端支持中心报表, 并在默认情况下
 
 示例 PowerShell 命令, 其中的父标签命名为 "机密", 而 "所有 Employees" 子标签具有8faca7b8-8d20-48a3-8ea2-0f96310a848e 的 GUID:
 
-    Set-Label -Identity "Confidential" -AdvancedSettings @{defaultsublabels="8faca7b8-8d20-48a3-8ea2-0f96310a848e"}
+    Set-Label -Identity "Confidential" -AdvancedSettings @{DefaultSubLabelId="8faca7b8-8d20-48a3-8ea2-0f96310a848e"}
 
 ## <a name="specify-a-color-for-the-label"></a>指定标签的颜色
 

@@ -8,13 +8,15 @@ ms.date: 06/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
+ms.subservice: v2client
 ms.suite: ems
-ms.openlocfilehash: a0da6a6390089c7d399ec4c2140feead3c015aa5
-ms.sourcegitcommit: fdc1f3d76b48f4e865a538087d66ee69f0f9888d
+ms.custom: admin
+ms.openlocfilehash: ef2b68b531b39a83f88ee9f8f37a64955950f00d
+ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68141632"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68789929"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端支持的文件类型
 
@@ -48,7 +50,7 @@ Azure 信息保护统一标签客户端还可以使用已知的敏感信息类�
 
 - **Microsoft XPS**：.xps .oxps
 
-- 图像  ：.jpg、.jpe、.jpeg、.jif、.jfif、.jfi、 .png、.tif、.tiff
+- 图像：.jpg、.jpe、.jpeg、.jif、.jfif、.jfi、 .png、.tif、.tiff
 
 - **Autodesk Design Review 2013**：.dwfx
 
@@ -56,7 +58,7 @@ Azure 信息保护统一标签客户端还可以使用已知的敏感信息类�
 
 - **数码底片**：.dng
 
-- Microsoft Office：  下表中的文件类型。
+- Microsoft Office：下表中的文件类型。
 
     这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
 
@@ -68,7 +70,7 @@ Azure 信息保护统一标签客户端还可以使用已知的敏感信息类�
 
 例如：
 
-- 如果 "**常规**敏感度" 标签应用分类且不应用保护:可以将“常规”  标签应用到名为 sales.pdf 的文件，但不可将该标签应用到名为 sales.txt 的文件。 
+- 如果 "**常规**敏感度" 标签应用分类且不应用保护:可以将“常规”标签应用到名为 sales.pdf 的文件，但不可将该标签应用到名为 sales.txt 的文件。 
 
 - 如果 "**机密 \ 所有员工**" 敏感度标签应用分类和保护:此标签可应用到名为 sales.pdf 和名为 sales.txt 的文件。 还可以只对这些文件应用保护，而不应用分类。
 
@@ -145,7 +147,7 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
 为了帮助阻止用户更改对计算机操作至关重要的文件，某些文件类型和文件夹会自动从分类和保护中排除。 如果用户尝试使用 Azure 信息保护统一标签客户端来分类或保护这些文件, 则会看到一条排除的消息。
 
-- 排除的文件类型  ：.lnk、.exe、.com、.cmd、.bat、.dll、.ini、.pst、.sca、.drm、.sys、.cpl、.inf、.drv、.dat、.tmp、.msg、.msp、.msi、.pdb、.jar
+- 排除的文件类型：.lnk、.exe、.com、.cmd、.bat、.dll、.ini、.pst、.sca、.drm、.sys、.cpl、.inf、.drv、.dat、.tmp、.msg、.msp、.msi、.pdb、.jar
 
 
 - **排除的文件夹**： 
@@ -192,13 +194,13 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 执行这些步骤后的示例方案： 
 
-名为“accounts.zip”的文件包含带有信用卡号的 Excel 电子表格  。 你有一个名为 "**机密 \ 财务**" 的敏感度标签, 该标签配置为发现信用卡号, 并自动应用带有限制访问财务组的保护的标签。 
+名为“accounts.zip”的文件包含带有信用卡号的 Excel 电子表格。 你有一个名为 "**机密 \ 财务**" 的敏感度标签, 该标签配置为发现信用卡号, 并自动应用带有限制访问财务组的保护的标签。 
 
 检查该文件后, 来自 PowerShell 会话的统一标签客户端会将此文件归类为**机密 \ 财务**, 并对该文件应用一般保护, 以便只有财务组的成员可以将其解压缩, 并将文件**重命名.pfile**。
 
 ### <a name="to-inspect-tiff-files-by-using-ocr"></a>使用 OCR 检查 .tiff 文件
 
-当[](/powershell/module/azureinformationprotection/set-aipfileclassification)你安装 Windows tiff ifilter 功能, 然后配置[windows tiff Ifilter 时, AIPFileClassiciation PowerShell 命令可以使用光学字符识别 (OCR) 检查 tiff 图像, 文件扩展名为 tiff](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)运行 PowerShell 会话的计算机上的设置。
+如果运行 PowerShell 会话的计算机上安装 Windows TIFF IFilter 功能并配置 [Windows TIFF IFilter 设置](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)，[Set-AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令可以使用光学字符识别 (OCR) 来检查文件扩展名为 .tiff 的 TIFF 图像。
 
 ## <a name="next-steps"></a>后续步骤
 现在, 已确定 Azure 信息保护统一标签客户端支持的文件类型, 请参阅以下资源, 了解支持此客户端所需的其他信息:
