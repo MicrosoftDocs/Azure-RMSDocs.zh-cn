@@ -4,7 +4,7 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/05/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9ac767525efeaf97d1d3b39f3b25191e7926412b
-ms.sourcegitcommit: 332801617ce83ebb3f01edf34cbb69b810662be7
+ms.openlocfilehash: 1b5c3344acfa279bd9f778f60957f41e03d56793
+ms.sourcegitcommit: dd89001afcaf1ed4b7ab72a7066b07c0d984249d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808112"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69650883"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -130,11 +130,13 @@ Azure 信息保护客户端不支持在同一台计算机上有多个版本的 O
 
 - 不要终止与 aadrm.com URL 的 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 这样做会中断 RMS 客户端用于 Microsoft 托管 CA 的证书固定，之所以使用固定是为了帮助保护它们与 Azure Rights Management 服务的通信安全。
     
-    - 提示：鉴于 Chrome 在地址栏中显示安全连接的方式，可以使用此浏览器在访问 Azure Rights Management 服务前快速检查客户端连接是否已终止。 请在此浏览器地址栏中输入以下 URL：`https://admin.na.aadrm.com/admin/admin.svc` 
+    您可以使用以下 PowerShell 命令来帮助您确定客户端连接在到达 Azure Rights Management 服务之前是否终止:
+   
+        $request = [System.Net.HttpWebRequest]::Create("https://admin.na.aadrm.com/admin/admin.svc")
+        $request.GetResponse()
+        $request.ServicePoint.Certificate.Issuer
     
-        不必担心浏览器窗口显示什么内容。 相反，单击地址栏中的挂锁，即可查看网站信息。 在网站信息中，可以查看证书发证机构 (CA)。 如果证书不是由 Microsoft CA 颁发，表明客户端与服务的安全连接很可能即将终止，并需要重新配置防火墙。 下图中的示例展示了 Microsoft 证书发证机构 (CA)。 如果看到的是内部 CA 颁发的证书，表明此配置与 Azure 信息保护不兼容。
-        
-        ![检查为 Azure 信息保护连接颁发的证书](./media/certificate-checking.png)
+    结果应显示发证 CA 来自 Microsoft CA, 例如: `CN=Microsoft Secure Server CA 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`。 如果你看到的颁发 CA 名称不是 Microsoft, 则很可能是安全的客户端到服务连接被终止, 需要在防火墙上重新配置。
 
 ### <a name="on-premises-servers"></a>本地服务器
 

@@ -4,7 +4,7 @@ description: 一些有关 Azure 信息保护及其保护服务的常见问题, A
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/13/2019
+ms.date: 08/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 67e9e53ddcd8e5604493955a0b3a9c2fe289cb3c
-ms.sourcegitcommit: b02dc1b575213ea85ca984a0da457dd99f27b762
+ms.openlocfilehash: ff746d3636df73568db009a4e026e37cab962963
+ms.sourcegitcommit: 30fc0e855b4fbcb61bcffa3e8c97a4beb777a787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994473"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630050"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -46,6 +46,16 @@ ms.locfileid: "68994473"
 有关统一标记管理以及如何支持这些标记的详细信息，请阅读博客文章[宣布推出信息保护功能以帮助保护你的敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
 
 有关迁移现有标签的详细信息, 请参阅[如何将 Azure 信息保护标签迁移到统一的敏感度标签](configure-policy-migrate-labels.md)。
+
+## <a name="how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform"></a>如何确定我的租户是否在统一的标签平台上？
+
+如果你的租户位于统一的标签平台上, 则支持统一标签的[客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)可以使用敏感性标签。 如果在2019年6月版或更高版本中获取了 Azure 信息保护订阅, 则租户会自动在统一的标签平台上, 无需执行其他操作。 你的租户还可能在此平台上, 因为有人[迁移了你的 Azure 信息保护标签](configure-policy-migrate-labels.md)。
+
+若要检查状态, 请在 "Azure 门户中, 参阅**Azure 信息保护** > **管理** > **统一标签**, 并查看**统一标签**的状态:
+
+- 如果你看到 "已**激活**", 则你的租户在统一的标签平台上。
+
+- 如果你看到 "**未激活**", 则你的租户不在统一的标签平台上。 有关迁移说明, 请参阅[如何将 Azure 信息保护标签迁移到统一的敏感度标签](configure-policy-migrate-labels.md)。
 
 ## <a name="whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护客户端与 Azure 信息保护统一标签客户端之间有何区别？
 

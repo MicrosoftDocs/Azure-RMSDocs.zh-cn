@@ -3,8 +3,8 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 08/13/2019
-manager: barbkess
+ms.date: 08/19/2019
+manager: rkarlin
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ede0c4b11a2a8bf4f9e059828dda1b58ba4d5f9c
-ms.sourcegitcommit: bef2862237ede61c497a54e6fe0179ae4fe5a63e
+ms.openlocfilehash: d3135126a837db9405a006bfd571a05a98ded7b7
+ms.sourcegitcommit: 30fc0e855b4fbcb61bcffa3e8c97a4beb777a787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978663"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630057"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -37,7 +37,9 @@ ms.locfileid: "68978663"
 
 - 确定包含敏感信息且若未保护则可能给组织带来风险的文档，并按照以下建议缓解风险。
 
-你看到的数据是从你的 Azure 信息保护客户端和扫描程序以及[支持统一标签的客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)聚合而来的。
+- 确定内部或外部用户何时访问受保护的文档, 以及是否授予或拒绝访问权限。
+
+你看到的数据是从 Azure 信息保护客户端和扫描程序、[支持统一标签的客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)以及[保护使用日志](log-analyze-usage.md)聚合而来的。
 
 例如，你将能够看到以下数据：
 
@@ -65,6 +67,8 @@ ms.locfileid: "68978663"
     
     - 特定应用程序执行了哪些标记操作, 如文件资源管理器和右键单击、PowerShell、扫描仪或 Microsoft Cloud App Security
     
+    - 用户或拒绝用户访问哪些受保护的文档, 即使这些用户未安装 Azure 信息保护客户端或组织外
+
     - 有关更多信息，请进一步查看报告的文件以查看“活动详细信息”
 
 - 在“数据发现”报表中：
@@ -141,7 +145,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包含一个复选框, 用于
 ## <a name="prerequisites"></a>先决条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
 
-|要求|更多信息|
+|要求|详细信息|
 |---------------|--------------------|
 |包含 Log Analytics 且用于与 Azure 信息保护相同的租户的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
 |Azure 信息保护客户端|支持统一标签客户端和经典客户端。 <br /><br />如果你还没有其中的一个客户端, 则可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装这些客户端。|
@@ -174,7 +178,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包含一个复选框, 用于
     > [!NOTE] 
     > 如果你的租户已迁移到统一标签存储, 则无法使用 Azure 信息保护管理员角色。 [详细信息](configure-policy-migrate-labels.md#administrative-roles-that-support-the-unified-labeling-platform)
 
-2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-access#manage-access-to-log-analytics-workspace-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一才能访问 Azure Log Analytics 工作区：
+2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-access#manage-accounts-and-users)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一才能访问 Azure Log Analytics 工作区：
     
     - 若要创建该工作区或创建自定义查询，必须具有以下角色之一：
     
@@ -198,7 +202,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包含一个复选框, 用于
 
 ### <a name="storage-requirements-and-data-retention"></a>存储要求和数据保留
 
-在 Azure 信息保护工作区中收集和存储的数据量会因多种因素而异, 具体取决于你的 Azure 信息保护客户端和其他支持的终结点 (无论你是正在收集终结点发现数据, 已部署扫描程序, 等等。
+在 Azure 信息保护工作区中收集和存储的数据量会因多种因素而异, 具体取决于你的 Azure 信息保护客户端和其他支持的终结点 (无论你是正在收集终结点发现数据, 你已部署了扫描仪, 已访问的受保护文档的数量, 等等。
 
 然而, 作为起点, 你可能会发现以下估计非常有用:
 
@@ -234,7 +238,7 @@ Azure Monitor 日志具有**使用情况和预估成本**功能, 可帮助您估
 
 - **使用情况报表(预览版)** ：使用此报表查看标签是如何使用的。
 
-- **活动日志(预览版)** ：使用此报表查看用户执行的标记操作，以及设备上和对文件路径执行的标记操作。
+- **活动日志(预览版)** ：使用此报表查看用户执行的标记操作，以及设备上和对文件路径执行的标记操作。 此外, 对于受保护的文档, 你可以查看组织内部和外部用户的访问尝试 (成功或拒绝), 即使他们没有安装 Azure 信息保护客户端
     
     此报表有“列”选项，可用于显示比默认显示更多的活动信息。 还可以选择它来显示“活动详细信息”，方便查看文件相关的更多详细信息。
 
@@ -267,6 +271,8 @@ Azure 信息保护的记录数据存储在下表中：**InformationProtectionLog
 
 |列名|描述|
 |-----------|-----------|
+|访问|已成功打开受保护的文档, 如果被跟踪, 则由文件名标识; 如果未跟踪, 则由其标识。|
+|AccessDenied|受保护的文档被拒绝访问, 如果被跟踪, 则由文件名标识; 如果未跟踪, 则由其标识。|
 |Time|事件时间:格式 YYYY-MM-YYYY-MM-DDTHH: MM: SS 中的 UTC|
 |用户|用户：格式 UPN 或 DOMAIN\USER|
 |ItemPath|完整项目路径或电子邮件主题|
