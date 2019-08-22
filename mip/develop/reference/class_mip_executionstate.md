@@ -1,56 +1,48 @@
 ---
 title: class mip::ExecutionState
-description: 记录 mip::executionstate 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: executionstate& 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 318b87405ad9e6d6291f82a0bec3da6031e04ccd
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: 02e72dc55c12b3800ff76356da1fb7c3adf08fdd
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60174113"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69884346"
 ---
 # <a name="class-mipexecutionstate"></a>class mip::ExecutionState 
 执行引擎所需的所有状态的接口。
 客户端应只调用方法来获取所需的状态。 因此，为了提高效率，客户端可能想要实现该接口，以此动态计算相应的状态而不是提前计算。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public std::string GetNewLabelId() const  |  获取应在文档上应用的敏感度标签 ID。
-public ActionSource GetNewLabelActionSource() const  |  获取新标签操作的源。
-public std::string GetContentIdentifier() const  |  获取描述文档的内容说明。 文件的示例: [路径 \ 文件名] 的电子邮件的示例: [发送方使用者:]。
-公共虚拟 DataState GetDataState() 常量  |  获取应用程序与之交互时内容的状态。
-public std::pair\<bool, std::string\> IsDowngradeJustified() const  |  实现应传递是否提供了降级现有标签的合理理由。
+public std:: shared_ptr\<Label\> GetNewLabel () const  |  获取应在文档上应用的敏感度标签 ID。
+public std::string GetContentIdentifier() const  |  获取描述文档的内容说明。 文件示例: [path\filename] 电子邮件示例: [Subject: Sender]。
+public virtual DataState GetDataState () const  |  获取应用程序与之交互时内容的状态。
+公共 std::p air\<bool, std:: string\> IsDowngradeJustified () const  |  实现应传递是否提供了降级现有标签的合理理由。
 public AssignmentMethod GetNewLabelAssignmentMethod() const  |  获取新标签的分配方法。
-公共虚拟 std:: vector\<std:: pair\<std:: string、 std:: string\> \> GetNewLabelExtendedProperties() 常量  |  返回新标签的扩展属性。
-public std:: vector\<std:: pair\<std:: string、 std:: string\> \> GetContentMetadata (const std:: vector\<std:: string\>& 名称、 const std:: vector\<std:: string\>& namePrefixes) 常量  |  从内容中获取元数据项。
-public std::shared_ptr\<ProtectionDescriptor\> GetProtectionDescriptor() const  |  获取保护描述符。
+public virtual std:: vector\<std::p 风\<std:: string、std:: string\> \> GetNewLabelExtendedProperties () const  |  返回新标签的扩展属性。
+public std:: vector\<std::p 风\<std:: string、std:: string\> \> GetContentMetadata (const std:: vector\<std:: string\>& 名称、const std:: vector\<std:: string\>& namePrefixes) const  |  从内容中获取元数据项。
+public std:: shared_ptr\<ProtectionDescriptor\> GetProtectionDescriptor () const  |  获取保护描述符。
 public ContentFormat GetContentFormat() const  |  获取内容格式。
 public ActionType GetSupportedActions() const  |  获取描述所有受支持操作类型的掩码枚举。
-public virtual std::shared_ptr\<ClassificationResults\> GetClassificationResults(const std::vector\<std::shared_ptr\<ClassificationRequest\>\> &) const  |  返回分类结果的映射。
-公共虚拟 std:: map\<std:: string、 std:: string\> GetAuditMetadata() 常量  |  返回应用程序特定审核键-值对的映射。
+public virtual std:: shared_ptr\<ClassificationResults\> GetClassificationResults (const std:: vector\<std:: shared_ptr\<ClassificationRequest\> \> &) const  |  返回分类结果的映射。
+public virtual std:: map\<std:: string, std:: string\> GetAuditMetadata () const  |  返回应用程序特定的审核键值对的映射。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
-### <a name="getnewlabelid-function"></a>GetNewLabelId 函数
+### <a name="getnewlabel-function"></a>GetNewLabel 函数
 获取应在文档上应用的敏感度标签 ID。
 
   
-**返回**:如果要应用于内容的敏感度标签 ID 存在，否则为空以删除标签。
-  
-### <a name="getnewlabelactionsource-function"></a>GetNewLabelActionSource function
-获取新标签操作的源。
-
-  
-**返回**:操作源。
+**返回**:如果存在, 则为要应用于内容的敏感度标签 ID, 否则为空以删除标签。
   
 ### <a name="getcontentidentifier-function"></a>GetContentIdentifier 函数
-获取描述文档的内容说明。 文件的示例: [路径 \ 文件名] 的电子邮件的示例: [发送方使用者:]。
+获取描述文档的内容说明。 文件示例: [path\filename] 电子邮件示例: [Subject: Sender]。
 
   
 **返回**:要应用于内容的内容说明。
@@ -66,7 +58,7 @@ public virtual std::shared_ptr\<ClassificationResults\> GetClassificationResults
 实现应传递是否提供了降级现有标签的合理理由。
 
   
-**返回**:如果降级 justifiedalong 理由 messageelse 为 false，则为 true 
+**返回**:如果降级为 justifiedalong, 则为 True; 否则为 messageelse false 
   
 另请参阅：[mip::JustifyAction](class_mip_justifyaction.md)
   
@@ -74,17 +66,17 @@ public virtual std::shared_ptr\<ClassificationResults\> GetClassificationResults
 获取新标签的分配方法。
 
   
-**返回**:分配方法 STANDARD、 PRIVILEGED、 AUTO。 
+**返回**:分配方法标准、特权、自动。 
   
-**另请参阅**: [mip::AssignmentMethod](mip-enums-and-structs.md#assignmentmethod)
+**另请参阅**: [Mip:: AssignmentMethod](mip-enums-and-structs.md#assignmentmethod-enum)
   
 ### <a name="getnewlabelextendedproperties-function"></a>GetNewLabelExtendedProperties 函数
 返回新标签的扩展属性。
 
   
-**返回**:扩展的属性应用于内容。
+**返回**:应用于内容的扩展属性。
   
-### <a name="getcontentmetadata-function"></a>GetContentMetadata function
+### <a name="getcontentmetadata-function"></a>GetContentMetadata 函数
 从内容中获取元数据项。
 
   
@@ -100,30 +92,30 @@ public virtual std::shared_ptr\<ClassificationResults\> GetClassificationResults
 获取内容格式。
 
   
-**返回**:默认情况下，电子邮件 
+**返回**:默认、电子邮件 
   
-**另请参阅**: [mip::ContentFormat](mip-enums-and-structs.md#contentformat)
+**另请参阅**: [Mip:: ContentFormat](mip-enums-and-structs.md#contentformat-enum)
   
 ### <a name="getsupportedactions-function"></a>GetSupportedActions 函数
 获取描述所有受支持操作类型的掩码枚举。
 
   
-**返回**:描述所有支持的操作类型是掩码的枚举。
+**返回**:描述所有支持的操作类型的屏蔽枚举。
 必须支持 ActionType::Justify。 当策略和标签更改需要合理理由时，将始终返回合理理由操作。
   
 ### <a name="getclassificationresults-function"></a>GetClassificationResults 函数
 返回分类结果的映射。
 
 参数：  
-* **classificationIds**： 分类 Id 的列表。 
+* **classificationIds**: 分类 id 列表。 
 
 
 
   
-**返回**:分类结果的列表。 如果在执行任何分类周期，则返回 nullptr。
+**返回**:分类结果的列表。 如果未执行分类循环, 则返回 nullptr。
   
 ### <a name="getauditmetadata-function"></a>GetAuditMetadata 函数
-返回应用程序特定审核键-值对的映射。
+返回应用程序特定的审核键值对的映射。
 
   
-**返回**:应用程序特定的审核元数据注册 Key: Value 对发件人的列表：发件人的收件人的电子邮件 Id:表示 LastModifiedBy 一封电子邮件的收件人的 JSON 数组：上次修改内容 LastModifiedDate 的用户的电子邮件 Id:内容的上次修改日期
+**返回**:特定于应用程序的审核元数据注册密钥: 值对发送程序的列表:发件人收件人的电子邮件 Id:表示电子邮件 LastModifiedBy 的收件人的 JSON 数组:上次修改内容 LastModifiedDate 的用户的电子邮件 Id:上次修改内容的日期

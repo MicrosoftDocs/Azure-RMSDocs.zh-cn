@@ -5,14 +5,14 @@ author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.date: 09/27/2018
+ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 20e82e52a293b7723513fbd0990a3d5e66ea568a
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: e3436acdd6a2900f4a21bb50b283d12065cd659b
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60175524"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69886250"
 ---
 # <a name="microsoft-information-protection-sdk---implementing-an-authentication-delegate-c"></a>Microsoft 信息保护 SDK - 实现身份验证委托 (C++)
 
@@ -22,7 +22,7 @@ MIP SDK 实现了一个身份验证委托，用于处理身份验证质询以及
 
 为了扩展基类 `mip::AuthDelegate`，我们创建一个名为 `sample::auth::AuthDelegateImpl` 的新类。 此类实现 `AcquireOAuth2Token` 功能，并设置构造函数来接收我们的身份验证参数。
 
-### <a name="authdelegateimplh"></a>auth_delegate_impl.h
+### <a name="auth_delegate_implh"></a>auth_delegate_impl.h
 
 在此示例中，默认构造函数仅接受用户名、密码和应用程​​序的[应用程序 ID](/azure/active-directory/develop/developer-glossary#application-id-client-id)。 这些信息将存储在私有变量 `mUserName`、`mPassword` 和 `mClientId` 中。
 
@@ -39,26 +39,29 @@ class AuthDelegateImpl final : public mip::AuthDelegate { //extend mip::AuthDele
 public:
   AuthDelegateImpl() = delete;
 
-  //constructor accepts username, password, and clientId, all plain strings.
-  AuthDelegateImpl(
-    const std::string& userName,
-    const std::string& password,
-    const std::string& clientId
-  );
+//constructor accepts username, password, and mip::ApplicationInfo.
+  AuthDelegateImpl::AuthDelegateImpl(
+    const mip::ApplicationInfo& applicationInfo,
+    std::string& username,
+    const std::string& password)
+    : mApplicationInfo(applicationInfo),
+      mUserName(username),
+      mPassword(password) {
+  }
 
   bool AcquireOAuth2Token(const mip::Identity& identity, const OAuth2Challenge& challenge, OAuth2Token& token) override;
 
-private:
-  std::string mUserName;
-  std::string mPassword;
-  std::string mClientId;
+  private:
+    std::string mUserName;
+    std::string mPassword;
+    std::string mClientId;
+    mip::ApplicationInfo mApplicationInfo;
 };
-
 }
 }
 ```
 
-### <a name="authdelegateimplcpp"></a>auth_delegate_impl.cpp
+### <a name="auth_delegate_implcpp"></a>auth_delegate_impl.cpp
 
 `AcquireOAuth2Token` 是对 OAuth2 提供程序进行调用的地方。 以下示例对 `AcquireToken()` 进行了两次调用。 实际上只会进行一次调用。 [后续步骤](#next-steps)下提供的章节将介绍这些实现
 
@@ -78,9 +81,9 @@ AuthDelegateImpl::AuthDelegateImpl(
     const string& userName,
     const string& password,
     const string& clientId)
-    : mUserName(userName),
-    mPassword(password),
-    mClientId(clientId) {
+    : mApplicationInfo(applicationInfo),
+    mUserName(userName),
+    mPassword(password) {
 }
 
 //Here we could simply add our token acquisition code to AcquireOAuth2Token
@@ -97,7 +100,7 @@ bool AuthDelegateImpl::AcquireOAuth2Token(
       string accessToken = sample::auth::AcquireToken();
 
       //Practical example for calling external OAuth2 library with provided authentication details.
-      string accessToken = sample::auth::AcquireToken(mUserName, mPassword, mClientId, challenge.GetAuthority(), challenge.GetResource());  
+      string accessToken = sample::auth::AcquireToken(mUserName, mPassword, mApplicationInfo.applicationId, challenge.GetAuthority(), challenge.GetResource());
 
       //set the passed in OAuth2Token value to the access token acquired by our provider
       token.SetAccessToken(accessToken);

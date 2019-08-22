@@ -1,39 +1,38 @@
 ---
-title: 类 mip::HttpOperation
-description: 记录 mip::httpoperation 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+title: '类 mip:: HttpOperation'
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: httpoperation 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: e3eaedbf508f116b19521286b686bc955d108efe
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: 8503a5466fe180fc6831e85e1b53954ba99f55c7
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60173552"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69884112"
 ---
-# <a name="class-miphttpoperation"></a>类 mip::HttpOperation 
-描述单个 HTTP 操作，重写时，由客户端应用程序实现的接口[HttpDelegate](class_mip_httpdelegate.md)。
+# <a name="class-miphttpoperation"></a>类 mip:: HttpOperation 
+一个接口, 该接口描述在重写[HttpDelegate](class_mip_httpdelegate.md)时由客户端应用程序实现的单个 HTTP 操作。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std::string& GetId() const  |  获取操作 id。
-public std::shared_ptr\<HttpResponse\> GetResponse()  |  获取响应，如果有。
-public bool IsCancelled()  |  获取操作的取消状态。
+public const std::string& GetId() const  |  获取操作 ID。
+public std:: shared_ptr\<httpresponse.cache\> GetResponse ()  |  获取响应 (如果有)。
+public bool IsCancelled ()  |  获取操作的取消状态。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
 ### <a name="getid-function"></a>GetId 函数
-获取操作 id。
+获取操作 ID。
 
   
-**返回**:操作 ID 的相应[HttpRequest](class_mip_httprequest.md)并[HttpResponse](class_mip_httpresponse.md)将具有相同的 ID
+**返回**:操作 ID 相应的 HttpRequest 和 Httpresponse.cache 将具有相同的 ID
   
 ### <a name="getresponse-function"></a>GetResponse 函数
-获取响应，如果有。
+获取响应 (如果有)。
 
   
 **返回**:响应

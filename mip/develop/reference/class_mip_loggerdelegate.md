@@ -1,31 +1,30 @@
 ---
 title: class mip::LoggerDelegate
-description: 记录 mip::loggerdelegate 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: loggerdelegate 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 511c8dabc8ff31c70c8343a80d423b76c43fa946
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: effba9bc41907c477cea7e3cf6a8688187538068
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60184614"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69883912"
 ---
 # <a name="class-miploggerdelegate"></a>class mip::LoggerDelegate 
 定义 MIP SDK 记录器接口的类。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public void Init(const std::string& storagePath, LogLevel logLevel)  |  初始化记录器。
 public LogLevel GetLogLevel() const  |  获取将触发日志记录事件的最低日志级别。
 public void Flush()  |  刷新记录器。
 public void WriteToLog(const LogLevel level, const std::string& message, const std::string& function, const std::string& file, const int32_t line)  |  将日志语句写入日志文件。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
 ### <a name="init-function"></a>Init 函数
 初始化记录器。
@@ -42,7 +41,7 @@ public void WriteToLog(const LogLevel level, const std::string& message, const s
 获取将触发日志记录事件的最低日志级别。
 
   
-**返回**:最低日志级别触发日志记录事件。
+**返回**:触发日志记录事件的最低日志级别。
   
 ### <a name="flush-function"></a>Flush 函数
 刷新记录器。

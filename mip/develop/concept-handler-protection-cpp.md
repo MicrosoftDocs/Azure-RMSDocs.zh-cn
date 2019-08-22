@@ -5,26 +5,27 @@ author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.date: 09/27/2018
+ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: dd38b8e6c9deb45b4ce7df9ec3363ac8036a7ef4
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: b00078ba82d22ce37263162b3d7bb3d1f7d3a903
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60175323"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69886150"
 ---
 # <a name="microsoft-information-protection-sdk---protection-handler-concepts"></a>Microsoft 信息保护 SDK - 保护处理程序概念
 
-在 MIP SDK 保护 API 中，`mip::ProtectionHandler` 公开了用于加密和解密受保护的流和缓冲区、执行访问检查、获取发布许可证以及从受保护信息中获取属性的功能。 
+在 MIP SDK 保护 API 中，`mip::ProtectionHandler` 公开了用于加密和解密受保护的流和缓冲区、执行访问检查、获取发布许可证以及从受保护信息中获取属性的功能。
 
 ## <a name="requirements"></a>要求
 
 创建 `ProtectionHandler` 用于处理特定文件需要使用以下对象：
 
-- `ProtectionProfile`
-- `ProtectionEngine` 已添加到 `ProtectionProfile`
-- 继承 `mip::ProtectionHandler::Observer` 的类，类似于[此处]()所述的模式。
+- `mip::MipContext`
+- `mip::ProtectionProfile`
+- 已添加到 `ProtectionProfile` 的 `mip::ProtectionEngine`
+- 继承`mip::ProtectionHandler::Observer`的类。
 - `mip::ProtectionDescriptor` 或发布许可证
 
 ## <a name="create-a-protection-handler"></a>创建保护处理程序

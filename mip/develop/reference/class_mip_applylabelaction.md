@@ -1,45 +1,37 @@
 ---
 title: class mip::ApplyLabelAction
-description: 记录 mip::applylabelaction 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: applylabelaction 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 70f226cc112062582b5441f6c3ae7fc3dc7de118
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: 7d2067ad030e909d53602fcdb3eefa9b88af56bf
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60173314"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69884512"
 ---
 # <a name="class-mipapplylabelaction"></a>class mip::ApplyLabelAction 
 应用标签操作要求，必须调用应用程序，才能应用特定标签。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std::string& GetLabelId() const  |  获取所需的标签 ID。
-public const std:: vector\<std:: string\>& GetClassificationIds() 常量  |  获取的分类 Id 的匹配并导致出现该标签。
-public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
-
-## <a name="members"></a>成員
+public const std:: shared_ptr\<Label\>& GetLabel () const  |  获取所需的标签。
+public const std:: vector\<std:: string\>& GetClassificationIds () const  |  获取匹配的分类 Id 并导致显示此标签。
   
-### <a name="getlabelid-function"></a>GetLabelId 函数
-获取所需的标签 ID。
+## <a name="members"></a>成员
+  
+### <a name="getlabel-function"></a>GetLabel 函数
+获取所需的标签。
 
   
-**返回**:标签 id。
+**返回**:标签。
   
 ### <a name="getclassificationids-function"></a>GetClassificationIds 函数
-获取的分类 Id 的匹配并导致出现该标签。
+获取匹配的分类 Id 并导致显示此标签。
 
   
-**返回**:Const std:: vector std:: < string > 和分类导致出现该标签的 Id 的列表。
-
-### <a name="gettype-function"></a>GetType 函数
-获取[操作](class_mip_action.md)类型。
-
-  
-**返回**:ActionType：此基类可以转换成的派生操作类型。
+**返回**:Const std:: vector < std:: string > & 导致此标签出现的分类 Id 的列表。

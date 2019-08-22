@@ -1,24 +1,23 @@
 ---
 title: class mip::Stream
-description: 记录 mip::stream 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: stream 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 1987aea2e90a3ded3a55f509e3d49a689d361c62
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: a5473adfa45a4784eaf20553acfc517dcf39f7e1
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60185107"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69883014"
 ---
 # <a name="class-mipstream"></a>class mip::Stream 
 一个类，它定义 MIP SDK 和基于流的内容之间的接口。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public int64_t Read(uint8_t* buffer, int64_t bufferLength)  |  从流读取到缓冲区。
 public int64_t Write(const uint8_t* buffer, int64_t bufferLength)  |  从缓冲区写入到流。
@@ -30,7 +29,7 @@ public int64_t Position()  |  获取流中的当前位置。
 public int64_t Size()  |  获取流中的内容的大小。
 public void Size(int64_t value)  |  设置流大小。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
 ### <a name="read-function"></a>Read 函数
 从流读取到缓冲区。
@@ -46,7 +45,7 @@ public void Size(int64_t value)  |  设置流大小。
   
 **返回**:读取的字节数。
   
-### <a name="write-function"></a>编写函数
+### <a name="write-function"></a>写入函数
 从缓冲区写入到流。
 
 参数：  
@@ -64,7 +63,7 @@ public void Size(int64_t value)  |  设置流大小。
 刷新流。
 
   
-**返回**:如果成功则为 true，否则返回 false。
+**返回**:如果成功, 则为 True; 否则为 false。
   
 ### <a name="seek-function"></a>Seek 函数
 查找流中的特定位置。
@@ -78,13 +77,13 @@ public void Size(int64_t value)  |  设置流大小。
 检查是否可读取流。
 
   
-**返回**:如果可读，则返回 true，否则返回 false。
+**返回**:如果可读, 则为 True; 否则为 false。
   
 ### <a name="canwrite-function"></a>CanWrite 函数
 检查是否可写入流。
 
   
-**返回**:如果可写则为 true，否则返回 false。
+**返回**:如果可写, 则为 True; 否则为 false。
   
 ### <a name="position-function"></a>Position 函数
 获取流中的当前位置。
@@ -92,13 +91,13 @@ public void Size(int64_t value)  |  设置流大小。
   
 **返回**:流中的位置。
   
-### <a name="size-function"></a>大小函数
+### <a name="size-function"></a>Size 函数
 获取流中的内容的大小。
 
   
 **返回**:流大小。
   
-### <a name="size-function"></a>大小函数
+### <a name="size-function"></a>Size 函数
 设置流大小。
 
 参数：  

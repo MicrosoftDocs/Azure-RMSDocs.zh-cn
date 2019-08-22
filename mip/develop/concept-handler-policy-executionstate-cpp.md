@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.date: 11/01/2018
 ms.author: tommos
-ms.openlocfilehash: dbe6db5fe54f9d26d072d3f6fcad1f2595d61040
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 34576337726e8974e65076bc1358d316ad32d9d2
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60175269"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69886169"
 ---
 # <a name="implement-executionstate"></a>实现 ExecutionState
 
@@ -28,20 +28,20 @@ ms.locfileid: "60175269"
 
 `ExecutionState` 公开以下虚拟成员。 每一个都为策略引擎提供一些上下文，以返回关于应用程序应执行哪些操作的信息。 此外，此信息可用于向 Azure 信息保护报告功能提供审核信息。
 
-
-| 成员                                                                           | 返回                                                                                                              |
-|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| `std::string GetNewLabelId()`                                                      | 返回要应用于对象的标签 ID。                                                                    |
-| `mip::DataState GetDataState()`                                              | 返回对象的 mip::DataState。                                                                         |
+| 成员                                                                             | 返回                                                                                                              |
+| ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `std::shared_ptr<mip::Label> GetNewLabel()`                                        | 返回应用于对象的标签。                                                                       |
+| `mip::DataState GetDataState()`                                                    | 返回对象的 mip::D ataState。                                                                            |
 | `std::pair<bool, std::string> IsDowngradeJustified()`                              | 返回一个用于表示降级是否合理以及依据的 std::pair。                                 |
-| `std::string GetContentIdentifier()`                                               | 返回内容标识符。 应当是人工可读的标识符，指示对象的位置。   |
+| `std::string GetContentIdentifier()`                                               | 返回内容标识符。 应当是人工可读的标识符，指示对象的位置。        |
 | `mip::ActionSource GetNewLabelActionSource()`                                      | 返回标签的 mip::ActionSource。                                                                          |
-| `mip::AssignmentMethod GetNewLabelAssignmentMethod()`                              | 返回标签的 mip::AssignmentMethod                                                                        |
+| `mip::AssignmentMethod GetNewLabelAssignmentMethod()`                              | 返回标签的 mip::AssignmentMethod                                                                       |
 | `std::vector<std::pair<std::string, std::string>> GetNewLabelExtendedProperties()` | 返回字符串的 std::pairs 的 std :: vector，其中包含将要用于文档的自定义元数据。 |
 | `std::vector<std::pair<std::string, std::string>> GetContentMetadata()`            | 返回字符串的 std::pairs 的 std :: vector，其中包含当前的内容元数据。                               |
-| `std::shared_ptr<mip::ProtectionDescriptor> GetProtectionDescriptor()`           | 返回指向 mip::ProtectionDescriptor 的指针                                                                     |
+| `std::shared_ptr<mip::ProtectionDescriptor> GetProtectionDescriptor()`             | 返回指向 mip::ProtectionDescriptor 的指针                                                                     |
 | `mip::ContentFormat GetContentFormat()`                                            | 返回 mip::ContentFormat                                                                                           |
-| `mip::ActionType GetSupportedActions()`                                           | 返回标签的 mip::ActionTypes。                                                                              |
+| `mip::ActionType GetSupportedActions()`                                            | 返回标签的 mip::ActionTypes。                                                                              |
+| `std::shared_ptr<mip::ClassificationResults>`                                      | 如果实现, 则返回分类结果的列表。                                                            |
 
 每一个都必须在派生自 `mip::ExecutionState` 的类的实现中进行重写。 在上面链接的示例应用中，此过程是通过实现名为 `ExecutionStateOptions` 的结构并将其传递给派生类的构造函数来完成的。
 
@@ -59,6 +59,8 @@ struct ExecutionStateOptions {
     std::string downgradeJustification;
     std::string templateId;
     mip::ContentFormat contentFormat = mip::ContentFormat::DEFAULT;
+    mip::ActionType supportedActions;
+    bool generateAuditEvent;
 };
 ```
 
@@ -66,5 +68,5 @@ struct ExecutionStateOptions {
 
 ### <a name="next-steps"></a>后续步骤
 
-- 了解如何确定[计算新的或现有标签的操作](concept-handler-policy-computeactions-cpp.md)基于当前和所需状态。
-- 下载[从 GitHub 和重试策略相关 api 的策略 API 示例](https://azure.microsoft.com/resources/samples/?sort=0&term=mipsdk+policyapi)
+- 了解如何根据当前状态和所需状态,[为新的或现有的标签确定计算操作](concept-handler-policy-computeactions-cpp.md)。
+- [从 GitHub 下载策略 Api 示例, 并试用策略 api](https://azure.microsoft.com/resources/samples/?sort=0&term=mipsdk+policyapi)

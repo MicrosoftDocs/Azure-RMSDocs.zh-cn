@@ -1,40 +1,40 @@
 ---
 title: class mip::FileEngine
-description: 记录 mip::fileengine 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: fileengine 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 15ce90a80430f50854580f6c7a2993d92db0a744
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: 86437533b2451b613231d668857b1402fc9f4272
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60184784"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69885809"
 ---
 # <a name="class-mipfileengine"></a>class mip::FileEngine 
 此类提供适用于所有引擎功能的接口。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const Settings& GetSettings() const  |  返回引擎设置。
-public const std:: vector\<std:: shared_ptr\<SensitivityTypesRulePackage\>\>& ListSensitivityTypes() 常量  |  列出与策略引擎关联的敏感度类型。
-public const std::shared_ptr\<Label\> GetDefaultSensitivityLabel() const  |  获取默认敏感度标签。
-public const std::vector\<std::shared_ptr\<Label\>\>& ListSensitivityLabels()  |  返回敏感度标签列表。
+public const std:: vector\<std:: shared_ptr\<SensitivityTypesRulePackage\>\>& ListSensitivityTypes () const  |  列出与策略引擎关联的敏感度类型。
+public const std:: shared_ptr\<Label\> GetDefaultSensitivityLabel () const  |  获取默认敏感度标签。
+public std:: shared_ptr\<标签\> GetLabelById (const std:: string & id) const  |  根据提供的 id 获取标签。
+public const std:: vector\<std:: shared_ptr\<Label\>\>& ListSensitivityLabels ()  |  返回敏感度标签列表。
 public const std::string& GetMoreInfoUrl() const  |  提供用于查找有关策略/标签详细信息的 URL。
-public const std:: string & GetPolicyId() 常量  |  获取策略 id。
+public const std:: string & GetPolicyFileId () const  |  获取策略文件 ID。
 public bool IsLabelingRequired() const  |  检查策略是否规定必须标记文档。
-公共 std::chrono::time_point\<std::chrono::system_clock\> GetLastPolicyFetchTime() 常量  |  获取上次提取策略的时间。
-public void CreateFileHandlerAsync (const std:: string & inputFilePath，const std:: string & actualFilePath，bool isAuditDiscoveryEnabled const std::\<filehandler:: Observer\>& fileHandlerObserverconst std:: shared_ptr\<void\>& 上下文、 const std:: shared_ptr\<FileExecutionState\>& fileExecutionState)  |  开始创建给定文件路径的文件处理程序。
-public void CreateFileHandlerAsync (const std::\<Stream\>& inputStream，const std:: string & actualFilePath，bool isAuditDiscoveryEnabled const std:: shared_ptr\<filehandler:: Observer\>& fileHandlerObserver，const std:: shared_ptr\<void\>& 上下文、 const std:: shared_ptr\<FileExecutionState\>& fileExecutionState)  |  开始创建给定文件流的文件处理程序。
+public std:: chrono:: time_point\<std:: chrono:: system_clock\> GetLastPolicyFetchTime () const  |  获取上次提取策略的时间。
+public void CreateFileHandlerAsync (const std:: string & inputFilePath, const std:: string & actualFilePath, bool isAuditDiscoveryEnabled, const std:: shared_ptr\<FileHandler:: Observer\>& fileHandlerObserver, const std:: shared_ptr\<void\>& context, const std:: shared_ptr\<FileExecutionState\>& FileExecutionState)  |  开始创建给定文件路径的文件处理程序。
+public void CreateFileHandlerAsync (const std:: shared_ptr\<Stream\>& inputStream, const std:: string & actualFilePath, bool isAuditDiscoveryEnabled, const std:: shared_ptr\<FileHandler:: 观察程序\>\<\>\<& fileHandlerObserver, const std:: shared_ptr void & context, const std:: shared_ptr FileExecutionState & FileExecutionState) \>  |  开始创建给定文件流的文件处理程序。
 public void SendApplicationAuditEvent(const std::string& level, const std::string& eventType, const std::string& eventData)  |  将特定于应用程序的事件记录到审核管道。
-public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCustomSettings() 常量  |  获取自定义设置的列表。
-公共 bool HasClassificationRules() 常量  |  获取策略是否自动或建议的规则。
+public const std:: vector\<std::p air\<std:: string, std:: string\>\>& GetCustomSettings () const  |  获取自定义设置的列表。
+public bool HasClassificationRules () const  |  获取策略是否具有自动或建议规则。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
 ### <a name="getsettings-function"></a>GetSettings 函数
 返回引擎设置。
@@ -43,15 +43,18 @@ public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCust
 列出与策略引擎关联的敏感度类型。
 
   
-**返回**:敏感度标签列表。 false （LoadSensitivityTypesEnabled 是否为空
+**返回**:敏感度标签的列表。 如果 LoadSensitivityTypesEnabled 为 false, 则为空 (
   
-**另请参阅**:[FileEngine::Settings](class_mip_fileengine_settings.md))。
+**另请参阅**:[FileEngine:: Settings](class_mip_fileengine_settings.md))。
   
 ### <a name="getdefaultsensitivitylabel-function"></a>GetDefaultSensitivityLabel 函数
 获取默认敏感度标签。
 
   
-**返回**:默认敏感度标签，如果存在，nullptr 如果未设置默认标签。
+**返回**:如果存在默认的敏感度标签, 则为, 如果没有设置默认标签, 则为 nullptr。
+  
+### <a name="getlabelbyid-function"></a>GetLabelById 函数
+根据提供的 id 获取标签。
   
 ### <a name="listsensitivitylabels-function"></a>ListSensitivityLabels 函数
 返回敏感度标签列表。
@@ -60,19 +63,19 @@ public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCust
 提供用于查找有关策略/标签详细信息的 URL。
 
   
-**返回**:字符串格式中的 url。
+**返回**:字符串格式的 url。
   
-### <a name="getpolicyid-function"></a>GetPolicyId 函数
-获取策略 id。
+### <a name="getpolicyfileid-function"></a>GetPolicyFileId 函数
+获取策略文件 ID。
 
   
-**返回**:一个字符串，表示策略 ID
+**返回**:表示策略文件 ID 的字符串
   
 ### <a name="islabelingrequired-function"></a>IsLabelingRequired 函数
 检查策略是否规定必须标记文档。
 
   
-**返回**:如果标记为必需，否则为 false，则为 true。
+**返回**:如果标签是必需的, 则为 True; 否则为 false。
   
 ### <a name="getlastpolicyfetchtime-function"></a>GetLastPolicyFetchTime 函数
 获取上次提取策略的时间。
@@ -87,10 +90,10 @@ public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCust
 * **inputFilePath**:要打开的文件。 路径必须包含文件名称，如果已存在，则包含文件扩展名。 
 
 
-* **actualFilePath**:实际的 （不是临时的） 文件路径，将用于审核。 
+* **actualFilePath**:实际 (而非临时) 文件路径将用于审核。 
 
 
-* **isAuditDiscoveryEnabled**： 表示是否已启用审核发现。 
+* **isAuditDiscoveryEnabled**: 表示是否启用了审核发现。 
 
 
 * **fileHandlerObserver**:实现 [FileHandler::Observer](class_mip_filehandler_observer.md) 接口的类。 
@@ -107,10 +110,10 @@ public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCust
 * **inputStream**:包含文件数据的流。 
 
 
-* **actualFilePath**:文件路径。 路径必须包含文件名称，如果已存在，则包含文件扩展名。 此外将使用以标识审核中的文件。 
+* **actualFilePath**:文件路径。 路径必须包含文件名称，如果已存在，则包含文件扩展名。 还将使用来标识审核中的文件。 
 
 
-* **isAuditDiscoveryEnabled**： 表示是否已启用审核发现。 
+* **isAuditDiscoveryEnabled**: 表示是否启用了审核发现。 
 
 
 * **fileHandlerObserver**:实现 [FileHandler::Observer](class_mip_filehandler_observer.md) 接口的类。 
@@ -124,7 +127,7 @@ public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCust
 将特定于应用程序的事件记录到审核管道。
 
 参数：  
-* **级别**： 日志级别的说明：信息/错误/警告 
+* **level**: 日志级别的说明:信息/错误/警告 
 
 
 * **eventType**：事件类型的说明 
@@ -138,10 +141,10 @@ public const std:: vector\<std:: pair\<std:: string、 std:: string\>\>& GetCust
 获取自定义设置的列表。
 
   
-**返回**:向量的自定义设置
+**返回**:自定义设置的向量
   
 ### <a name="hasclassificationrules-function"></a>HasClassificationRules 函数
-获取策略是否自动或建议的规则。
+获取策略是否具有自动或建议规则。
 
   
-**返回**:一个布尔值指示，如果那里任何自动或 recommandation 规则在策略中
+**返回**:一个布尔值, 将指示策略中是否存在任何自动或建议规则

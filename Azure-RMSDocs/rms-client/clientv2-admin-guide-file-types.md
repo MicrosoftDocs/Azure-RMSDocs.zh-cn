@@ -4,19 +4,19 @@ description: 有关受支持的文件类型、文件扩展名以及负责 Window
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/16/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ef2b68b531b39a83f88ee9f8f37a64955950f00d
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: f99432b428e952791e4a5797d246c53e7dba5aef
+ms.sourcegitcommit: f0dee92d6668001681b507e82f8aea61f3bfa96e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68789929"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69894432"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端支持的文件类型
 
@@ -176,7 +176,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 |应用程序类型|文件类型|
 |--------------------------------|-------------------------------------|
-|Word|.docx; .docm; .dotm; .dotx|
+|Word|文档.docx; docm; .dot; normal.dotm;. dotx|
 |Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
 |PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
 |PDF |。pdf|

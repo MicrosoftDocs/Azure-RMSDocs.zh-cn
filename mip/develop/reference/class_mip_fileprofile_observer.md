@@ -1,44 +1,43 @@
 ---
 title: class mip::FileProfile::Observer
-description: 记录 mip::fileprofile 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: fileprofile 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 7b9c3440d577e9ba2e08bdba6ed890d3a480c783
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: fd7c1d1fba060c8b3ff0ea5dbf605568a68ad1e0
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60174086"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69885623"
 ---
 # <a name="class-mipfileprofileobserver"></a>class mip::FileProfile::Observer 
 [Observer](class_mip_fileprofile_observer.md) 接口，供客户端获取配置文件相关事件的通知。
 所有错误都继承自 [mip::Error](class_mip_error.md)。 客户端不应在调用观察程序的线程上调用回引擎。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public virtual ~Observer()  | _尚无记录。_
-公共虚拟 void OnLoadSuccess (const std::\<mip::FileProfile\>（& a) 配置文件，const std:: shared_ptr\<void\>& 上下文)  |  在成功加载配置文件时调用。
-公共虚拟 void OnLoadFailure (const std::exception_ptr 和错误、 const std::\<void\>& 上下文)  |  在加载配置文件引发错误时调用。
-public virtual void OnListEnginesSuccess(const std::vector\<std::string\>& engineIds, const std::shared_ptr\<void\>& context)  |  在成功生成引擎列表时调用。
-公共虚拟 void OnListEnginesFailure (const std::exception_ptr 和错误、 const std::\<void\>& 上下文)  |  在列出引擎引发错误时调用。
-public virtual void OnUnloadEngineSuccess(const std::shared_ptr\<void\>& context)  |  在成功卸载引擎时调用。
-公共虚拟 void OnUnloadEngineFailure (const std::exception_ptr 和错误、 const std::\<void\>& 上下文)  |  在卸载引擎引发错误时调用。
-public virtual void OnAddEngineSuccess(const std::shared_ptr\<mip::FileEngine\>& engine, const std::shared_ptr\<void\>& context)  |  在成功添加新引擎时调用。
-公共虚拟 void OnAddEngineFailure (const std::exception_ptr 和错误、 const std::\<void\>& 上下文)  |  在添加新引擎引发错误时调用。
-public virtual void OnDeleteEngineSuccess(const std::shared_ptr\<void\>& context)  |  在成功删除引擎时调用。
-公共虚拟 void OnDeleteEngineFailure (const std::exception_ptr 和错误、 const std::\<void\>& 上下文)  |  在删除引擎引发错误时调用。
+public virtual void OnLoadSuccess (const std:: shared_ptr\<mip:: FileProfile\>& profile, const std:: shared_ptr\<void\>& context)  |  在成功加载配置文件时调用。
+public virtual void OnLoadFailure (const std:: exception_ptr & 错误, const std:: shared_ptr\<void\>& context)  |  在加载配置文件引发错误时调用。
+public virtual void OnListEnginesSuccess (const std:: vector\<std:: string\>& engineIds, const std:: shared_ptr\<void\>& context)  |  在成功生成引擎列表时调用。
+public virtual void OnListEnginesFailure (const std:: exception_ptr & 错误, const std:: shared_ptr\<void\>& context)  |  在列出引擎引发错误时调用。
+public virtual void OnUnloadEngineSuccess (const std:: shared_ptr\<void\>& 上下文)  |  在成功卸载引擎时调用。
+public virtual void OnUnloadEngineFailure (const std:: exception_ptr & 错误, const std:: shared_ptr\<void\>& context)  |  在卸载引擎引发错误时调用。
+public virtual void OnAddEngineSuccess (const std:: shared_ptr\<mip:: FileEngine\>& 引擎, const std:: shared_ptr\<void\>& context)  |  在成功添加新引擎时调用。
+public virtual void OnAddEngineFailure (const std:: exception_ptr & 错误, const std:: shared_ptr\<void\>& context)  |  在添加新引擎引发错误时调用。
+public virtual void OnDeleteEngineSuccess (const std:: shared_ptr\<void\>& 上下文)  |  在成功删除引擎时调用。
+public virtual void OnDeleteEngineFailure (const std:: exception_ptr & 错误, const std:: shared_ptr\<void\>& context)  |  在删除引擎引发错误时调用。
 public virtual void OnPolicyChanged(const std::string& engineId)  |  在针对具有给定 ID 的引擎的策略发生更改时调用。
-公共虚拟 void OnAddPolicyEngineStarting (bool requiresPolicyFetch)  |  在引擎创建，用于描述必须从服务器获取策略引擎的策略数据或者它是否可以创建从本地缓存的数据之前调用。
+public virtual void OnAddPolicyEngineStarting (bool requiresPolicyFetch)  |  在创建引擎之前调用, 用于描述是否必须从服务器获取策略引擎的策略数据, 或者是否可从本地缓存的数据创建策略引擎。
 受保护的 Observer()  | _尚无记录。_
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
-### <a name="observer-function"></a>~ 观察者函数
+### <a name="observer-function"></a>~ 观察程序函数
 _尚无记录。_
 
   
@@ -76,13 +75,13 @@ _尚无记录。_
 在针对具有给定 ID 的引擎的策略发生更改时调用。
   
 ### <a name="onaddpolicyenginestarting-function"></a>OnAddPolicyEngineStarting 函数
-在引擎创建，用于描述必须从服务器获取策略引擎的策略数据或者它是否可以创建从本地缓存的数据之前调用。
+在创建引擎之前调用, 用于描述是否必须从服务器获取策略引擎的策略数据, 或者是否可从本地缓存的数据创建策略引擎。
 
 参数：  
-* **requiresPolicyFetch**:描述是否必须通过 HTTP 提取引擎数据，或如果它将从加载缓存
+* **requiresPolicyFetch**:描述引擎数据是否必须通过 HTTP 获取, 或者是否要从缓存中加载。
 
 
-此可选的回调可能会由应用程序，用于会收到通知 AddEngineAsync 操作将需要有一个 HTTP 操作 （使用其相关联的延迟） 才能完成。
+此可选回调可由应用程序使用, 通知 AddEngineAsync 操作是否需要执行 HTTP 操作 (及其关联的延迟) 才能完成。
   
-### <a name="observer-function"></a>观察者函数
+### <a name="observer-function"></a>观察程序函数
 _尚无记录。_

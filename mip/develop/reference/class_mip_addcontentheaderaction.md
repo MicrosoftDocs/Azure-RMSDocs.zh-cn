@@ -1,24 +1,23 @@
 ---
 title: class mip::AddContentHeaderAction
-description: 记录 mip::addcontentheaderaction 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: addcontentheaderaction 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 367626955ba1652b20b372efd309d15304e5336f
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: e9de81595ead9a629c3266962a08f1b13fdb9675
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60184852"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69885937"
 ---
 # <a name="class-mipaddcontentheaderaction"></a>class mip::AddContentHeaderAction 
 指定添加内容头的操作类。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetUIElementName()  |  用来标记内容头元素的 API。
 public const std::string& GetText() const  |  获取应添加到内容页眉的文本。
@@ -27,15 +26,14 @@ public int GetFontSize() const  |  获取用于显示内容页眉的字号。
 public const std::string& GetFontColor() const  |  获取用于显示内容页眉的字体颜色。
 public ContentMarkAlignment GetAlignment() const  |  获取内容页眉的对齐方式。
 public int GetMargin() const  |  从底部获取标头的边距。
-public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
-
-## <a name="members"></a>成員
+  
+## <a name="members"></a>成员
   
 ### <a name="getuielementname-function"></a>GetUIElementName 函数
 用来标记内容头元素的 API。
 
   
-**返回**:保存内容标头应使用的用户界面元素的名称。 如果需要删除内容头，将在 [RemoveContentHeaderAction](class_mip_removecontentheaderaction.md) 中返回相同名称。
+**返回**:应该用于保存内容标头的 UI 元素的名称。 如果需要删除内容头，将在 [RemoveContentHeaderAction](class_mip_removecontentheaderaction.md) 中返回相同名称。
   
 ### <a name="gettext-function"></a>GetText 函数
 获取应添加到内容页眉的文本。
@@ -53,30 +51,24 @@ public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型�
 获取用于显示内容页眉的字号。
 
   
-**返回**:一个整数形式的字体大小。
+**返回**:整数形式的字体大小。
   
 ### <a name="getfontcolor-function"></a>GetFontColor 函数
 获取用于显示内容页眉的字体颜色。
 
   
-**返回**:以字符串形式的字体颜色 (例如，#000000")。
+**返回**:字符串形式的字体颜色 (例如 #000000 ")。
   
 ### <a name="getalignment-function"></a>GetAlignment 函数
 获取内容页眉的对齐方式。
 
   
-**返回**:ContentMarkAlignment 枚举器：左侧 |右 |中心。 
+**返回**:ContentMarkAlignment 枚举器:LEFT |RIGHT |CENTER. 
   
-**另请参阅**:[ContentMarkAlignment](mip-enums-and-structs.md#contentmarkalignment)
+**另请参阅**:[ContentMarkAlignment](mip-enums-and-structs.md#contentmarkalignment-enum)
   
 ### <a name="getmargin-function"></a>GetMargin 函数
 从底部获取标头的边距。
 
   
-**返回**:从文档 （例如，10 毫米） 的下边距。
-
-### <a name="gettype-function"></a>GetType 函数
-获取[操作](class_mip_action.md)类型。
-
-  
-**返回**:ActionType：此基类可以转换成的派生操作类型。
+**返回**:文档底部的边距 (例如, 10 mm)。

@@ -1,38 +1,37 @@
 ---
 title: class mip::PolicyProfile
-description: 记录 mip::policyprofile 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+description: 记录 Microsoft 信息保护 (MIP) SDK 的 mip::p olicyprofile 类。
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 45af1f4d072a1d8a690aa8f459950ae500df3db8
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: 13d24afe87bc04f7a92dde8daf88c1ada38cedc2
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60173331"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69883752"
 ---
 # <a name="class-mippolicyprofile"></a>class mip::PolicyProfile 
 [PolicyProfile](class_mip_policyprofile.md) 类是用于使用 Microsoft 信息保护操作的根类。 一个典型的应用程序只需要一个 [PolicyProfile](class_mip_policyprofile.md)，但它可以按需创建多个配置文件。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const Settings& GetSettings() const  |  获取配置文件上设置的设置。
-public void ListEnginesAsync(const std::shared_ptr\<void\>& context)  |  启动列出引擎操作。
-public void UnloadEngineAsync (const std:: string & id，const std::\<void\>& 上下文)  |  开始卸载具有给定 ID 的策略引擎。
-public void AddEngineAsync(const PolicyEngine::Settings& settings, const std::shared_ptr\<void\>& context)  |  开始向配置文件添加新策略引擎。
-public void DeleteEngineAsync (const std:: string & id，const std::\<void\>& 上下文)  |  开始删除具有给定 ID 的策略引擎。 给定配置文件的所有数据都将删除。
+public void ListEnginesAsync (const std:: shared_ptr\<void\>& 上下文)  |  启动列出引擎操作。
+public void UnloadEngineAsync (const std:: string & id, const std:: shared_ptr\<void\>& 上下文)  |  开始卸载具有给定 ID 的策略引擎。
+public void AddEngineAsync (const PolicyEngine:: settings & settings, const std:: shared_ptr\<void\>& context)  |  开始向配置文件添加新策略引擎。
+public void DeleteEngineAsync (const std:: string & id, const std:: shared_ptr\<void\>& 上下文)  |  开始删除具有给定 ID 的策略引擎。 给定配置文件的所有数据都将删除。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
 ### <a name="getsettings-function"></a>GetSettings 函数
 获取配置文件上设置的设置。
 
   
-**返回**:设置的配置文件的设置。
+**返回**:配置文件上设置的设置。
   
 ### <a name="listenginesasync-function"></a>ListEnginesAsync 函数
 启动列出引擎操作。

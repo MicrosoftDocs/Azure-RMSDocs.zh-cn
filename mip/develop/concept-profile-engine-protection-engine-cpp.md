@@ -5,24 +5,24 @@ author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.date: 09/27/2018
+ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: e3338395a193f6c1cc8f60a6beb93a1d0db15511
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 1ccfc81e4b45c6ec4e4316b748d9ccc0f73561a4
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60175462"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69886030"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-engine-concepts"></a>Microsoft 信息保护 SDK - 保护 API 引擎概念
 
-## <a name="implementation-add-a-protection-engine"></a>实现：添加保护引擎
+## <a name="implementation-add-a-protection-engine"></a>部署添加保护引擎
 
 在文件 API 中，`mip::ProtectionProfile` 类是所有 SDK 操作的根类。 在创建了配置文件后，我们现在可以向配置文件添加引擎。
 
 以下示例演示如何为经过身份验证的单个用户使用单个引擎。
 
-### <a name="implementation-create-protection-engine-settings"></a>实现：创建保护引擎设置
+### <a name="implementation-create-protection-engine-settings"></a>部署创建保护引擎设置
 
 与配置文件类似，引擎也需要设置对象 `mip::ProtectionEngine::Settings`。 此对象存储唯一引擎标识符、可用于调试或遥测的可自定义客户端数据以及（可选）区域设置。
 
@@ -32,7 +32,8 @@ ms.locfileid: "60175462"
 ProtectionEngine::Settings engineSettings("UniqueID", "");
 ```
 
-**注意**：如果使用此方法创建的保护设置对象，您必须手动设置 CloudEndpointBaseUrl 为 https://api.aadrm.com
+> [!NOTE]
+> 如果使用此方法创建保护设置对象, 则还必须手动将 CloudEndpointBaseUrl 设置为 https://api.aadrm.com 或 tp Active Directory Rights Management Service 群集 URL。
 
 作为最佳做法，第一个参数 **id** 应该允许引擎轻松连接到关联用户**或** `mip::Identity` 对象。 若要使用 `mip::Identity` 初始化设置，请运行以下代码：
 
@@ -40,9 +41,7 @@ ProtectionEngine::Settings engineSettings("UniqueID", "");
 ProtectionEngine::Settings engineSettings(mip::Identity("Bob@Contoso.com", "");
 ```
 
-虽然通常会将变量传入标识而不是硬编码。
-
-### <a name="implementation-add-the-protection-engine"></a>实现：添加保护引擎
+### <a name="implementation-add-the-protection-engine"></a>部署添加保护引擎
 
 为了添加引擎，我们将返回用于加载配置文件的 future/promise 模式。 我们将使用 `mip::ProtectionEngine`，而不是为 `mip::ProtectionProfile` 创建 promise。
 
@@ -69,13 +68,13 @@ ProtectionEngine::Settings engineSettings(mip::Identity("Bob@Contoso.com", "");
 
 上述代码的最终结果是我们成功地将经过身份验证的用户的引擎添加到配置文件中。
 
-## <a name="implementation-list-templates"></a>实现：列表模板
+## <a name="implementation-list-templates"></a>部署列出模板
 
 现在可以使用添加的引擎通过调用 `engine->GetTemplatesAsync()` 来列出经过身份验证的用户可用的所有敏感度模板。 
 
 `GetTemplatesAsync()` 将提取模板标识符列表。 结果存储在 `std::shared_ptr<std::string>` 的向量中。
 
-### <a name="implementation-listsensitivitytemplates"></a>实现：ListSensitivityTemplates()
+### <a name="implementation-listsensitivitytemplates"></a>部署ListSensitivityTemplates()
 
 ```cpp
 auto loadPromise = std::make_shared<std::promise<shared_ptr<vector<string>>>>();
@@ -84,7 +83,7 @@ mEngine->GetTemplatesAsync(engineObserver, loadPromise);
 auto templates = loadFuture.get();
 ```
 
-### <a name="implementation-print-the-template-ids"></a>实现：打印模板 Id
+### <a name="implementation-print-the-template-ids"></a>部署打印模板 Id
 
 ```cpp
 //Iterate through all template IDs in the vector

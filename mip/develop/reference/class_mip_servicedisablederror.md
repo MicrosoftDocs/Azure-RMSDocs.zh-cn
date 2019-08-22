@@ -1,87 +1,40 @@
 ---
-title: 类 mip::ServiceDisabledError
-description: 记录 mip::servicedisablederror 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+title: '类 mip:: ServiceDisabledError'
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: servicedisablederror 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 1373d9ecc03f69267af631216a04d358e8be7af3
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: 6496b2b8967571454c205b84b01a6e4b74456c17
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60173354"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69882914"
 ---
-# <a name="class-mipservicedisablederror"></a>类 mip::ServiceDisabledError 
-用户无法获取访问内容，因为服务被禁用。
+# <a name="class-mipservicedisablederror"></a>类 mip:: ServiceDisabledError 
+由于服务被禁用, 用户无法访问内容。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-公共扩展盘区 GetExtent() 常量  |  获取为其禁用该服务的范围。
-枚举范围  |  介绍了为其禁用该服务的范围。
-public char const* what() const  |  获取错误消息。
-public std::\<错误\>const clone （)  |  克隆错误。
-public virtual ErrorType GetErrorType() const  |  获取错误类型。
-public virtual const std::string& GetErrorName() const  |  获取错误名称。
-public virtual const std::string& GetMessage() const  |  获取错误消息。
-public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
+公共区 GetExtent () const  |  获取服务的禁用范围。
+枚举范围  |  描述服务的禁用范围。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
 ### <a name="getextent-function"></a>GetExtent 函数
-获取为其禁用该服务的范围。
+获取服务的禁用范围。
 
   
-**返回**:为其禁用该服务的范围
+**返回**:禁用服务的范围
   
-### <a name="extent-enum"></a>程度枚举
-
-介绍了为其禁用该服务的范围。
-
+### <a name="extent-enum"></a>区枚举
  值                         | 说明                                
 --------------------------------|---------------------------------------------
-“用户”            | 服务已禁用的用户。
-设备            | 服务已禁用的设备。
-平台            | 服务已禁用的平台。
-租户            | 服务已禁用的租户。
-
-
-
-### <a name="what-function"></a>哪项功能
-获取错误消息。
-
-  
-**返回**:错误消息
-  
-### <a name="clone-function"></a>Clone 函数
-克隆错误。
-
-  
-**返回**:错误的副本。
-  
-### <a name="geterrortype-function"></a>GetErrorType 函数
-获取错误类型。
-
-  
-**返回**:错误类型。
-  
-### <a name="geterrorname-function"></a>GetErrorName 函数
-获取错误名称。
-
-  
-**返回**:错误名称。
-  
-### <a name="getmessage-function"></a>GetMessage 函数
-获取错误消息。
-
-  
-**返回**:错误消息中。
-  
-### <a name="setmessage-function"></a>SetMessage 函数
-设置错误消息。
-
-参数：  
-* **msg**：错误消息。
+用户            | 已为用户禁用服务。
+设备            | 设备的服务已禁用。
+平台            | 平台已禁用服务。
+租户            | 租户的服务已禁用。
+描述服务的禁用范围。

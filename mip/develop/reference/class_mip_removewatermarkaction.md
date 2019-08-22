@@ -1,29 +1,28 @@
 ---
 title: class mip::RemoveWatermarkAction
-description: 记录 mip::removewatermarkaction 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: removewatermarkaction 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 7b6ef32e69fefad0371f75ea22b99f4181732e90
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: 9d67dc7839183e148cb2792482e1fc186858ce7e
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60174164"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69883137"
 ---
 # <a name="class-mipremovewatermarkaction"></a>class mip::RemoveWatermarkAction 
 指定从文档中删除水印的操作类。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std:: vector\<std:: string\>& GetUIElementNames()  |  获取应用于查找应删除的 UI 元素的名称列表。
+public const std:: vector\<std:: string\>& GetUIElementNames ()  |  获取应用于查找应删除的 UI 元素的名称列表。
 public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
 ### <a name="getuielementnames-function"></a>GetUIElementNames 函数
 获取应用于查找应删除的 UI 元素的名称列表。
@@ -34,4 +33,5 @@ public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型�
 ### <a name="gettype-function"></a>GetType 函数
 获取[操作](class_mip_action.md)类型。
 
+  
 **返回**:ActionType：此基类可以转换成的派生操作类型。

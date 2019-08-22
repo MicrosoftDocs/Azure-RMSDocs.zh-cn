@@ -5,18 +5,18 @@ author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.date: 11/16/2018
+ms.date: 07/30/2019
 ms.author: tommos
-ms.openlocfilehash: cc35475086de76b869428c62cfc35e73fc3060db
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 37ab92e336d88d37d9e4e7631e108bbaaebdb977
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60184920"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69886190"
 ---
 # <a name="microsoft-information-protection-sdk---policy-handler-concepts"></a>Microsoft 信息保护 SDK - 策略处理程序概念
 
-在策略 API 中，`mip::PolicyHandler`公开用于计算策略操作和提交审核事件的操作。
+在策略 API 中, `mip::PolicyHandler`公开用于计算策略操作和提交审核事件的操作。
 
 ## <a name="policy-handler-functions"></a>策略处理程序函数
 
@@ -31,17 +31,18 @@ ms.locfileid: "60184920"
 
 创建 `PolicyHandler` 需要：
 
-- `PolicyProfile`
-- 已添加到 `PolicyProfile` 的 `PolicyEngine`
-- 继承 `mip::PolicyHandler::Observer` 的类
+- `mip::MipContext`
+- `mip::PolicyProfile`
+- 已添加到 `mip::PolicyProfile` 的 `mip::PolicyEngine`
+- 实现的类`mip::PolicyHandler::Observer`
 
 ## <a name="create-a-policy-handler"></a>创建策略处理程序
 
-获取策略操作所需的第一步是创建 `PolicyHandler` 对象。 此类实现的特定标签必须采取的操作的列表所需的功能。 它还实现要触发一个审核事件的函数。
+获取策略操作所需的第一步是创建 `PolicyHandler` 对象。 此类实现了获取特定标签必须采用的操作列表所需的功能。 它还实现了用于触发审核事件的函数。
 
 创建 `PolicyHandler` 就像使用 promise/future 模式调用 `PolicyEngine` 的 `CreatePolicyHandlerAsync` 函数一样简单。
 
-`CreatePolicyHandlerAsync` 接受单个参数：isAuditDiscoveryEnabled。 如果应用程序应在审核日志中显示检测信号事件，则将此值设置为 true。
+`CreatePolicyHandlerAsync` 接受单个参数：isAuditDiscoveryEnabled。 如果应用程序应在审核日志中显示检测信号和发现事件, 请将此值设置为**true** 。
 
 > [!NOTE]
 > `mip::PolicyHandler::Observer` 类必须在派生类中实现，因为 `CreatePolicyHandler` 需要 `Observer` 对象。 
@@ -57,7 +58,7 @@ auto handler = createPolicyHandlerFuture.get();
 
 ## <a name="next-steps"></a>后续步骤
 
-现在，你已了解有关创建策略处理程序：
+现在, 你已了解如何创建策略处理程序:
 
-- 了解如何[创建执行状态类](concept-handler-policy-executionstate-cpp.md)，用于确定计算操作。
-- 下载[从 GitHub 和重试策略相关 api 的策略 API 示例](https://azure.microsoft.com/resources/samples/?sort=0&term=mipsdk+policyapi)
+- 了解如何[创建执行状态类, 该类](concept-handler-policy-executionstate-cpp.md)用于确定计算操作。
+- [从 GitHub 下载策略 Api 示例, 并试用策略 api](https://azure.microsoft.com/resources/samples/?sort=0&term=mipsdk+policyapi)

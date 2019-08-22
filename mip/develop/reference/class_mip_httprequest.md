@@ -1,38 +1,37 @@
 ---
 title: class mip::HttpRequest
-description: 记录 mip::httprequest 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: httprequest 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 8b0349db2e985d6fb015e1a2698187089483fbe3
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: 28584ffa19c2ceb00f4ab3839f945adf737bdb3b
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60173486"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69885580"
 ---
 # <a name="class-miphttprequest"></a>class mip::HttpRequest 
 描述单个 HTTP 请求的接口。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std::string& GetId() const  |  获取请求 id。
+public const std::string& GetId() const  |  获取请求 ID。
 public HttpRequestType GetRequestType() const  |  获取请求类型。
 public const std::string& GetUrl() const  |  获取请求 URL。
-public const std:: vector\<uint8_t\>& GetBody() 常量  |  获取请求正文。
-public const std:: map\<std:: string、 std:: string，CaseInsensitiveComparator\>& GetHeaders() 常量  |  获取请求标头。
+public const std:: vector\<uint8_t\>& GetBody () const  |  获取请求正文。
+public const std:: map\<std:: string, std:: string, CaseInsensitiveComparator\>& GetHeaders () const  |  获取请求标头。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
 ### <a name="getid-function"></a>GetId 函数
-获取请求 id。
+获取请求 ID。
 
   
-**返回**:请求 ID 的相应[HttpResponse](class_mip_httpresponse.md)将具有相同的 ID
+**返回**:请求 ID 相应的 Httpresponse.cache 将具有相同的 ID
   
 ### <a name="getrequesttype-function"></a>GetRequestType 函数
 获取请求类型。

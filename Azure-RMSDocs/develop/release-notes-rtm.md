@@ -14,16 +14,23 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 6fdef7a9d92880fa6754ffc7b2f889acdecd0bfc
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: cb969e8add0c79495cc2cc90e7e92368e42577dc
+ms.sourcegitcommit: f0dee92d6668001681b507e82f8aea61f3bfa96e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68791188"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69894463"
 ---
 # <a name="release-notes"></a>发行说明
 
 本文包含有关此版本和早前版本 RMS SDK 2.1 的重要信息。
+
+## <a name="april-2019---update"></a>2019年4月-更新
+- 文件 API 中的 Bug 修复。
+- 文件 API 经过更新, 可在解密内容时检查导出权限, 而不是提取向右提取内容。
+- 安装程序修复, 以确保在升级后安装新的 PDF v2 保护程序。
+- 遥测数据发生更改。 此更改需要更新安装 C 运行时库的安装包。
+- 服务后端身份验证更改, 请更新到此 SDK 版本以 minmize 中断
 
 ## <a name="october-2017---update"></a>2017 年 10 月更新
 
@@ -144,15 +151,15 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
 -   **问题**：从头开始创建许可证时，必须显式授予所有权。
 
-    **解决方案**:使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 从头开始创建许可证时，应用程序必须向许可证所有者显式添加“所有者”权限。 有关详细信息，请参阅[添加显式所有者权限](add-explicit-owner-rights.md)。
+    **解决方案**：使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 从头开始创建许可证时，应用程序必须向许可证所有者显式添加“所有者”权限。 有关详细信息，请参阅[添加显式所有者权限](add-explicit-owner-rights.md)。
 
 -   **问题**：如果应用程序使用手柄为同一窗口两次调用 [IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx) 或 [IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx)，则 RMS SDK 2.1 将在 HRESULT 中返回一个故障。
 
-    **解决方案**:有关此问题的具体指导，请参阅 [IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx) 和 [IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx) 中的“备注”部分。
+    **解决方案**：有关此问题的具体指导，请参阅 [IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx) 和 [IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx) 中的“备注”部分。
 
 -   **问题**：为多个体系结构进行构建时，必须使用此指导。
 
-    **解决方案**:如果要对不同的体系结构使用 Ipcsecproc\*isv.dll（例如，你已经在 64 位计算机上安装了 64 位 SDK，但现在想要在需要 Ipcsecproc\*isv.dll 的 32 位计算机上部署），则必须在其他计算机上安装 32 位 SDK，然后将 Ipcsecproc\*isv.dll 文件从“%PROGRAMFILES%\\Microsoft Information Protection And Control”文件夹（默认位置，或者你选择安装 SDK 的任何位置）复制到该计算机。
+    **解决方案**：如果要对不同的体系结构使用 Ipcsecproc\*isv.dll（例如，你已经在 64 位计算机上安装了 64 位 SDK，但现在想要在需要 Ipcsecproc\*isv.dll 的 32 位计算机上部署），则必须在其他计算机上安装 32 位 SDK，然后将 Ipcsecproc\*isv.dll 文件从“%PROGRAMFILES%\\Microsoft Information Protection And Control”文件夹（默认位置，或者你选择安装 SDK 的任何位置）复制到该计算机。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 

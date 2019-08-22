@@ -1,43 +1,44 @@
 ---
 title: 概念 - 使用 Microsoft 信息保护 SDK 生成审核事件
-description: 本文将帮助你了解如何使用 Microsoft 信息保护 SDK 来计算。
+description: 本文将帮助你了解如何使用 Microsoft 信息保护 SDK 进行计算。
 services: information-protection
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.date: 11/16/2018
+ms.date: 07/30/2019
 ms.author: tommos
-ms.openlocfilehash: 944e86c3d950912ce48013e502c1864fda3498b1
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: 8ade287531ee9f1c18678d42ef5e51a4c70ee13f
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60175372"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69886205"
 ---
 # <a name="compute-an-action"></a>计算操作
 
 如先前所述，策略 API 的主要功能是：
+
 - 列出可用标签
-- 返回一组应采取的操作根据当前和期望状态
+- 根据当前状态和所需状态返回应执行的一组操作
 
 该过程的最后一步是向 `ComputeActions()` 函数提供标签标识符和（可选）现有标签的元数据。
 
 可以在 GitHub 上找到本文的示例代码。
 
-* [mipsdk-policyapi-cpp-sample-basic](https://github.com/Azure-Samples/mipsdk-policyapi-cpp-sample-basic)
+- [mipsdk-policyapi-cpp-sample-basic](https://github.com/Azure-Samples/mipsdk-policyapi-cpp-sample-basic)
 
 ## <a name="compute-an-action-for-a-new-label"></a>计算新标签的操作
 
-计算`mip::Actions`的新标签，可以通过使用`ExecutionStateImpl`中定义[ExecutionState](concept-handler-policy-executionstate-cpp.md)。
+为新标签计算, 可以通过使用[executionstate&](concept-handler-policy-executionstate-cpp.md)中定义的`ExecutionStateImpl`来实现。 `mip::Actions`
 
 ```cpp
 // Replace with valid label ID.
 string newLabelId = "d7b93a40-4df3-47e4-b2fd-7862fc6b095c"; 
 sample::policy::ExecutionStateOptions options;
 
-// Set desired newLabelId in ExecutionStateOptions.
-options.newLabelId = newLabelId;
+// Resolve desired label id to mip::Label and set in ExecutionStateOptions.
+options.newLabel = mEngine->GetLabelById(newLabelId);
 
 // Initialize ExecutionStateImpl with options, create handler, call ComputeActions.
 std::unique_ptr<ExecutionStateImpl> state(new ExecutionStateImpl(options));
@@ -64,7 +65,7 @@ Add: MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_ContentBits : 3
 
 ## <a name="compute-actions-with-an-existing-label"></a>使用现有标签计算操作
 
-使用策略 API 时，它由应用程序内容从读取元数据。 此元数据作为 `mip::ExecutionState` 的一部分提供给 API。 `ComputeActions()` 可以处理比将新标签应用于未标记的文档更为复杂的操作。 下面的示例演示降级从更敏感的标签，为敏感程度较低的标签的标签。 此过程通过读取逗号分隔的字符串的元数据，并提供给 API 通过模拟`mip::ExecutionState`。
+使用策略 API 时, 应用程序由应用程序从内容中读取元数据。 此元数据作为 `mip::ExecutionState` 的一部分提供给 API。 `ComputeActions()` 可以处理比将新标签应用于未标记的文档更为复杂的操作。 下面的示例演示如何将标签从更敏感的标签降级为不太敏感的标签。 此过程的模拟方法为: 读取逗号分隔的元数据字符串, 并通过`mip::ExecutionState`向 API 提供。
 
 > [!NOTE]
 > 该示例使用名为 `SplitString()` 的实用程序函数。 可在[此处](https://github.com/Azure-Samples/mipsdk-policyapi-cpp-sample-basic/blob/master/mipsdk-policyapi-cpp-sample-basic/utils.cpp)找到示例
@@ -76,9 +77,9 @@ string newLabelId = "d7b93a40-4df3-47e4-b2fd-7862fc6b095c";
 // Comma and Pipe Delimited Metadata.
 string metadata = "MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_Enabled|true,MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_SetDate|2018-10-23T21:53:31-0800,MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_Method|Standard,MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_Name|Contoso FTEs (C),MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_SiteId|94f6984e-8d31-4794-bdeb-3ac89ad2b660,MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_ActionId|b56491d9-155f-40ff-866f-0000acd85c31,MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_ContentBits|7";
 
-// Create ExecutionStateOptions and set newLabelId.
+// Create ExecutionStateOptions and resolve newLabelId to mip::Label
 sample::policy::ExecutionStateOptions options;
-options.newLabelId = newLabelId;
+options.newLabel = mEngine->GetLabelById(newLabelId);
 
 // Split metadata string by commas, store in vector.
 vector<string> metadataPairs = sample::utils::SplitString(metadata, ','); 
@@ -117,5 +118,5 @@ Remove: MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_ActionId
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解如何[将审核事件传递到 Azure 信息保护分析](concept-handler-policy-auditing-cpp.md)
-- 下载[从 GitHub 和重试策略相关 api 的策略 API 示例](https://azure.microsoft.com/resources/samples/?sort=0&term=mipsdk+policyapi)
+- 了解如何将[审核事件传递到 Azure 信息保护分析](concept-handler-policy-auditing-cpp.md)
+- [从 GitHub 下载策略 Api 示例, 并试用策略 api](https://azure.microsoft.com/resources/samples/?sort=0&term=mipsdk+policyapi)

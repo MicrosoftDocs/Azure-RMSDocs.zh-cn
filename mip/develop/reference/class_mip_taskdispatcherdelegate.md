@@ -1,38 +1,37 @@
 ---
-title: 类 mip::TaskDispatcherDelegate
-description: 记录 mip::taskdispatcherdelegate 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+title: '类 mip:: TaskDispatcherDelegate'
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: taskdispatcherdelegate 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 568a6df614370769556cd3634070e199beb4da5b
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: 0455f446cddd7db1c05f0f7e7b76b33496810cf1
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60184274"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69883007"
 ---
-# <a name="class-miptaskdispatcherdelegate"></a>类 mip::TaskDispatcherDelegate 
-定义 MIP SDK 任务调度程序的接口的类。
+# <a name="class-miptaskdispatcherdelegate"></a>类 mip:: TaskDispatcherDelegate 
+定义 MIP SDK 任务调度程序接口的类。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public void DispatchTask (const std:: string & taskId，std:: function\<void()\>任务)  |  在后台线程上执行的任务。
-public void DispatchTask (const std:: string & taskId，std:: function\<void()\>任务，int64_t 延迟)  |  使用给定的延迟在后台线程上执行的任务。
-public void ExecuteTaskOnIndependentThread (const std:: string & taskId，std:: function\<void()\>任务)  |  立即在独立线程上执行的任务。
-公共 bool CancelTask (const std:: string & taskId)  |  取消后台任务。
-public void CancelAllTasks()  |  取消所有后台任务。
+public void DispatchTask (const std:: string & taskId, std:: function\<void ()\>任务)  |  在后台线程上执行任务。
+public void DispatchTask (const std:: string & taskId, std:: function\<void ()\>任务, int64_t 延迟)  |  在具有给定延迟的后台线程上执行任务。
+public void ExecuteTaskOnIndependentThread (const std:: string & taskId, std:: function\<void ()\>任务)  |  立即在独立线程上执行任务。
+public bool CancelTask (const std:: string & taskId)  |  取消后台任务。
+public void CancelAllTasks ()  |  取消所有后台任务。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
 ### <a name="dispatchtask-function"></a>DispatchTask 函数
-在后台线程上执行的任务。
+在后台线程上执行任务。
 
 参数：  
-* **taskId**:ID 来唯一地标识一个任务 
+* **taskId**:用于唯一标识任务的 ID 
 
 
 * **任务**:要执行的函数
@@ -40,24 +39,24 @@ public void CancelAllTasks()  |  取消所有后台任务。
 
   
 ### <a name="dispatchtask-function"></a>DispatchTask 函数
-使用给定的延迟在后台线程上执行的任务。
+在具有给定延迟的后台线程上执行任务。
 
 参数：  
-* **taskId**:ID 来唯一地标识一个任务 
+* **taskId**:用于唯一标识任务的 ID 
 
 
 * **任务**:要执行的函数 
 
 
-* **延迟**:执行任务前延迟 （以秒为单位）
+* **延迟**:执行任务之前的延迟 (以秒为单位)
 
 
   
 ### <a name="executetaskonindependentthread-function"></a>ExecuteTaskOnIndependentThread 函数
-立即在独立线程上执行的任务。
+立即在独立线程上执行任务。
 
 参数：  
-* **taskId**:ID 来唯一地标识一个任务 
+* **taskId**:用于唯一标识任务的 ID 
 
 
 * **任务**:要执行的函数
@@ -68,12 +67,12 @@ public void CancelAllTasks()  |  取消所有后台任务。
 取消后台任务。
 
 参数：  
-* **taskId**:要取消的任务 ID
+* **taskId**:要取消的任务的 ID
 
 
 
   
-**返回**:如果任务是已成功取消，否则为 false，则返回 true
+**返回**:如果任务已成功取消, 则为 True; 否则为 false
   
 ### <a name="cancelalltasks-function"></a>CancelAllTasks 函数
 取消所有后台任务。

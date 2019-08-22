@@ -1,29 +1,28 @@
 ---
-title: 类 mip::ClassificationRequest
-description: 记录 mip::classificationrequest 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+title: '类 mip:: ClassificationRequest'
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: classificationrequest 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: 3fddd870b6aebb9f5209fc43160c32d87b1d7129
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: 1966123c8a0975ea42aa119883cabd47db594bc4
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60184750"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69884493"
 ---
-# <a name="class-mipclassificationrequest"></a>类 mip::ClassificationRequest 
-包含请求的执行状态的一个分类调用的类。
+# <a name="class-mipclassificationrequest"></a>类 mip:: ClassificationRequest 
+包含执行状态的分类调用请求的类。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public std:: string GetClassificationId() 常量  |  获取分类策略的 ID。
-public std::string GetRulePackageId() const  |  获取规则包的 ID。
+public std:: string GetClassificationId () const  |  获取分类策略的 ID。
+public std:: string GetRulePackageId () const  |  获取规则包的 ID。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
 ### <a name="getclassificationid-function"></a>GetClassificationId 函数
 获取分类策略的 ID。

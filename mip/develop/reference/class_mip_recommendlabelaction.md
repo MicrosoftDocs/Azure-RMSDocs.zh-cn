@@ -1,44 +1,37 @@
 ---
 title: 类 mip::RecommendLabelAction
-description: 记录 mip::recommendlabelaction 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: recommendlabelaction 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: eeab9022b257ff327e2c83b1d8860662355180e5
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: dd3d2d0ecf7b549105e1a6373a998e77d4e77de8
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60173216"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69883214"
 ---
 # <a name="class-miprecommendlabelaction"></a>类 mip::RecommendLabelAction 
 建议标签操作是向用户建议标签。 在用户忽略建议标签后，应通过对执行状态采取受支持的操作来取消此调用。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std::string& GetLabelId() const  |  获取建议的标签 ID。
-public const std:: vector\<std:: string\>& GetClassificationIds() 常量  |  获取的分类 Id 的匹配并导致出现该标签。
-public ActionType GetType() const  |  获取[操作](class_mip_action.md)类型。
-
-## <a name="members"></a>成員
+public const std:: shared_ptr\<Label\>& GetLabel () const  |  获取建议的标签。
+public const std:: vector\<std:: string\>& GetClassificationIds () const  |  获取匹配的分类 Id 并导致显示此标签。
   
-### <a name="getlabelid-function"></a>GetLabelId 函数
-获取建议的标签 ID。
+## <a name="members"></a>成员
+  
+### <a name="getlabel-function"></a>GetLabel 函数
+获取建议的标签。
 
   
-**返回**:标签 id。
+**返回**:标签。
   
 ### <a name="getclassificationids-function"></a>GetClassificationIds 函数
-获取的分类 Id 的匹配并导致出现该标签。
+获取匹配的分类 Id 并导致显示此标签。
 
   
-**返回**:Const std:: vector std:: < string > 和分类导致出现该标签的 Id 的列表。
-
-### <a name="gettype-function"></a>GetType 函数    
-获取[操作](class_mip_action.md)类型。  
-
-**返回**:ActionType：此基类可以转换成的派生操作类型。
+**返回**:Const std:: vector < std:: string > & 导致此标签出现的分类 Id 的列表。

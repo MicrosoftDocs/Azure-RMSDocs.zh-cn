@@ -6,18 +6,18 @@ author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.date: 11/01/2018
+ms.date: 07/30/2019
 ms.author: tommos
-ms.openlocfilehash: df0d51d976f7f900011688d2f328f3a2ddb1e378
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.openlocfilehash: df67886f53d697e47f6e812cdcbbac394acaa98d
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60176918"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69884752"
 ---
 # <a name="auditing-in-the-mip-sdk-file-api"></a>MIP SDK 文件 API 中的审核
 
-Azure 信息保护管理门户提供对管理员报表的访问。 这些报表可显示在任何集成了 MIP SDK 的应用和服务中用户手动或自动应用的标签。 利用 SDK 的开发合作伙伴可轻松启用此功能，从而让应用中的信息显示在客户报表中。
+Azure 信息保护管理门户提供对管理员报表的访问。 通过这些报告, 可以查看用户在已集成了 MIP SDK 的任何应用程序或服务上手动或自动应用的标签。 使用 SDK 的开发合作伙伴可以启用此功能, 以便在客户报表中显示其应用程序的信息。
 
 ## <a name="event-types"></a>事件类型
 
@@ -63,8 +63,8 @@ auto label = handler->GetLabel();
 ```cpp
 // Create labeling options, set label
 string contentId = "C:\users\myuser\Documents\MyPlan.docx";
-mip::LabelingOptions labelingOptions(mip::AssignmentMethod::PRIVILEGED, mip::ActionSource::MANUAL);
-handler->SetLabel(labelId, labelingOptions);
+mip::LabelingOptions labelingOptions(mip::AssignmentMethod::PRIVILEGED);
+handler->SetLabel(labelId, labelingOptions, mip::ProtectionSettings());
 auto commitPromise = std::make_shared<std::promise<bool>>();
 auto commitFuture = commitPromise->get_future();
 
@@ -79,8 +79,8 @@ if(commitFuture.get()) {
 
 ## <a name="audit-dashboard"></a>审核仪表板
 
-提交到 Azure 信息保护审核管道的事件将显示在 https://portal.azure.com 的报表中。 Azure 信息保护分析处于公开预览状态，功能可能会有所变化。
+提交到 Azure 信息保护审核管道的事件将显示在 https://portal.azure.com 的报表中。 
 
 ## <a name="next-steps"></a>后续步骤
 
-有关 Azure 信息保护审核体验的详细信息，请参阅[技术社区上的预览公告博客](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)。
+有关 Azure 信息保护中的审核体验的详细信息, 请查看[技术社区中的预览版公告博客](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)。

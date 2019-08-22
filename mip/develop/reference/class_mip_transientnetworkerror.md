@@ -1,35 +1,34 @@
 ---
 title: class mip::TransientNetworkError
-description: 记录 mip::transientnetworkerror 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: transientnetworkerror 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: ff9aa768559b56f897289ec30ade9b7c408c92d4
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: 5787c5742edc2daefee00a3c5a9b2bf826b81529
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60185005"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69882906"
 ---
 # <a name="class-miptransientnetworkerror"></a>class mip::TransientNetworkError 
 暂时性网络错误。 对服务终结点执行网络调用时，由于意外行为所致。 此错误是暂时性错误，因此可重试该操作。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public char const* what() const  |  获取错误消息。
-public std::\<错误\>const clone （)  |  克隆错误。
+public std:: shared_ptr\<错误\> Clone () const  |  克隆错误。
 public virtual ErrorType GetErrorType() const  |  获取错误类型。
 public virtual const std::string& GetErrorName() const  |  获取错误名称。
 public virtual const std::string& GetMessage() const  |  获取错误消息。
 public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
-### <a name="what-function"></a>哪项功能
+### <a name="what-function"></a>什么函数
 获取错误消息。
 
   
@@ -39,7 +38,7 @@ public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
 克隆错误。
 
   
-**返回**:错误的副本。
+**返回**:错误的克隆。
   
 ### <a name="geterrortype-function"></a>GetErrorType 函数
 获取错误类型。
@@ -57,7 +56,7 @@ public virtual void SetMessage(const std::string& msg)  |  设置错误消息。
 获取错误消息。
 
   
-**返回**:错误消息中。
+**返回**:错误消息。
   
 ### <a name="setmessage-function"></a>SetMessage 函数
 设置错误消息。

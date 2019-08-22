@@ -1,60 +1,66 @@
 ---
-title: 类 mip::AuthDelegate::OAuth2Challenge
-description: 记录 mip::authdelegate 类的 Microsoft 信息保护 (MIP) SDK。
-author: msmbaldwin
+title: '类 mip:: AuthDelegate:: OAuth2Challenge'
+description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: authdelegate 类。'
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.author: mbaldwin
-ms.date: 01/28/2019
-ms.openlocfilehash: d404d6f60e7b2472bc97181b45fae3b4dabc387b
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.author: bryanla
+ms.date: 07/16/2019
+ms.openlocfilehash: 836704d51d1afa55bc296681c863ee10a072ea79
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "60173467"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69885919"
 ---
-# <a name="class-mipauthdelegateoauth2challenge"></a>类 mip::AuthDelegate::OAuth2Challenge 
-包含从调用应用程序，以便生成 oauth2 令牌所需的所有信息的类。
+# <a name="class-mipauthdelegateoauth2challenge"></a>类 mip:: AuthDelegate:: OAuth2Challenge 
+一个类, 其中包含调用应用程序所需的所有信息, 以便生成 oauth2 标记。
   
 ## <a name="summary"></a>总结
- 成員                        | 说明                                
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-公共 OAuth2Challenge （const std:: string & 颁发机构，const std:: string 和资源、 const std:: string 和作用域）  |  构造一个新[OAuth2Challenge](class_mip_authdelegate_oauth2challenge.md)对象。
-public const std:: string & GetAuthority() 常量  |  获取颁发机构字符串。
-public const std:: string & GetResource() 常量  |  获取资源字符串。
-public const std:: string & GetScope() 常量  |  获取范围字符串。
+public OAuth2Challenge (const std:: string & 机关, const std:: string & 资源, const std:: string & 范围, const std:: string & 声明)  |  构造一个新的[OAuth2Challenge](class_mip_authdelegate_oauth2challenge.md)对象。
+public const std:: string & GetAuthority () const  |  获取授权字符串。
+public const std:: string & GetResource () const  |  获取资源字符串。
+public const std:: string & GetScope () const  |  获取范围字符串。
+public const std:: string & GetClaims () const  |  获取声明字符串。
   
-## <a name="members"></a>成員
+## <a name="members"></a>成员
   
 ### <a name="oauth2challenge-function"></a>OAuth2Challenge 函数
-构造一个新[OAuth2Challenge](class_mip_authdelegate_oauth2challenge.md)对象。
+构造一个新的[OAuth2Challenge](class_mip_authdelegate_oauth2challenge.md)对象。
 
 参数：  
-* **颁发机构**： 需要对生成令牌的颁发机构。 
+* **颁发机构**: 需要为其生成令牌的授权机构。 
 
 
-* **资源**: 令牌设置为该资源。 
+* **资源**: 标记设置为的资源。 
 
 
-* **作用域**: 令牌设置为的作用域。
+* **作用域**: 标记设置为的范围。
 
 
   
 ### <a name="getauthority-function"></a>GetAuthority 函数
-获取颁发机构字符串。
+获取授权字符串。
 
   
-**返回**:颁发机构的字符串。
+**返回**:授权字符串。
   
 ### <a name="getresource-function"></a>GetResource 函数
 获取资源字符串。
 
   
-**返回**:资源字符串中。
+**返回**:资源字符串。
   
 ### <a name="getscope-function"></a>GetScope 函数
 获取范围字符串。
 
   
-**返回**:作用域字符串中。
+**返回**:范围字符串。
+  
+### <a name="getclaims-function"></a>GetClaims 函数
+获取声明字符串。
+
+  
+**返回**:声明字符串。
