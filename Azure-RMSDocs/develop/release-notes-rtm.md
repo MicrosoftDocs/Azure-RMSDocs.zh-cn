@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: cb969e8add0c79495cc2cc90e7e92368e42577dc
-ms.sourcegitcommit: f0dee92d6668001681b507e82f8aea61f3bfa96e
+ms.openlocfilehash: c68970dffb263f30eb47ded0a29c2c5700b46bbe
+ms.sourcegitcommit: ad15beac7d95fe3904f3d4671c1e18e2136f74b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894463"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69999220"
 ---
 # <a name="release-notes"></a>发行说明
 
@@ -30,7 +30,9 @@ ms.locfileid: "69894463"
 - 文件 API 经过更新, 可在解密内容时检查导出权限, 而不是提取向右提取内容。
 - 安装程序修复, 以确保在升级后安装新的 PDF v2 保护程序。
 - 遥测数据发生更改。 此更改需要更新安装 C 运行时库的安装包。
-- 服务后端身份验证更改, 请更新到此 SDK 版本以 minmize 中断
+- 服务后端身份验证更改, # # # # # #please 更新到此 SDK 版本, 如果对应用程序使用对称密钥身份验证, 则 minmize 中断
+- 支持 VC 15。9
+
 
 ## <a name="october-2017---update"></a>2017 年 10 月更新
 

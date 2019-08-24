@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行当前版本的 Azure 信息保
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/14/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 798784eb744416edf977f58ae95d5203bc9ead6b
-ms.sourcegitcommit: fc467e30b67ac218491fccea2d501350d3a656fb
+ms.openlocfilehash: 4c69838cbde0fa7408780d0a07c0a2990f26da6c
+ms.sourcegitcommit: ad15beac7d95fe3904f3d4671c1e18e2136f74b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69024012"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69999234"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
->适用对象： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection), windows server 2019, windows server 2016, windows Server 2012 R2*
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection), windows server 2019, windows server 2016, windows Server 2012 R2*
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
@@ -99,7 +99,7 @@ ms.locfileid: "69024012"
 
 1. 通过创建扫描程序配置文件在 Azure 门户中配置扫描程序。 如果需要此步骤的帮助，请参阅[在 Azure 门户中配置扫描程序](#configure-the-scanner-in-the-azure-portal)。
 
-2. 使用“导出”选项从“Azure 信息保护 - 配置文件(预览)”边栏选项卡导出扫描程序配置文件。
+2. 使用 "**导出**" 选项从**Azure 信息保护-配置文件**边栏选项卡导出扫描仪配置文件。
 
 3. 最后，在 PowerShell 会话中运行 [Import-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration)，并指定包含导出设置的文件。
 
@@ -196,9 +196,9 @@ ms.locfileid: "69024012"
     > [!TIP]
     > 如果为“共享文档”添加 SharePoint 路径：
     >
-     >- 如果要从“共享文档”扫描所有文档和所有文件夹，请在路径中指定“共享文档”。 例如：`http://sp2013/Shared Documents`
+     >- 如果要从“共享文档”扫描所有文档和所有文件夹，请在路径中指定“共享文档”。 例如： `http://sp2013/Shared Documents`
      >
-     >- 如果要从“共享文档”下的子文件夹扫描所有文档和所有文件夹，请在路径中指定“文档”。 例如：`http://sp2013/Documents/Sales Reports`
+     >- 如果要从“共享文档”下的子文件夹扫描所有文档和所有文件夹，请在路径中指定“文档”。 例如： `http://sp2013/Documents/Sales Reports`
     
     对于此边栏选项卡上的其余设置，请不要为此初始配置更改它们，而是将其保留为“配置文件默认值”。 这意味着数据存储库从扫描程序配置文件继承设置。 
     
