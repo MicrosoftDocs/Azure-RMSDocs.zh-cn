@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: fbe7ddfd8160856a7a8491d0faa672a16b340455
-ms.sourcegitcommit: 2a12c62501e775f73c0e3176744ba966a6edffeb
+ms.openlocfilehash: f60c1bdc8dabd586e96c758afe1f93f46d6afb16
+ms.sourcegitcommit: 0d336e4b5386f4861db9492c7dce2ef0e8cf0d6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69584607"
+ms.lasthandoff: 08/25/2019
+ms.locfileid: "70017647"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
@@ -773,9 +773,7 @@ Azure 信息保护统一标签客户端支持中心报表, 并在默认情况下
 
 如果需要相同标签的多个规则, 则为同一键定义多个字符串值。 
 
-在此示例中：
-
-- 名为 "机密" 和 "机密" 的安全群岛标签存储在名为 * * 分类的自定义属性中, 你希望 Azure 信息保护统一标签客户端应用名为 "机密" 的敏感度标签:
+在此示例中, 名为 "机密" 和 "机密" 的 Secure Islands 标签存储在名为**分类**的自定义属性中, 你希望 Azure 信息保护统一标签客户端应用名为 "机密 ":
 
     Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties=ConvertTo-Json("Migrate Confidential label,Classification,Confidential", "Migrate Secret label,Classification,Secret")}
 
