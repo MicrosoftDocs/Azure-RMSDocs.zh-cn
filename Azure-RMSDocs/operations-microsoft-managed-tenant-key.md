@@ -4,7 +4,7 @@ description: 当 Microsoft 管理 Azure 信息保护租户密钥（默认）时�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5d35fc59ebfa051f3f7644c05527ed75bfe54be7
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 00e99f55130f25fa9368a7fdcd1f8c2795250c89
+ms.sourcegitcommit: dc655736e531260c7718a8808f4f1016391d2d7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68790488"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70020484"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管:租户密钥生命周期操作
 
@@ -62,7 +62,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 ### <a name="step-1-initiate-export"></a>步骤 1：启动导出
 
-- 请[与 Microsoft 支持部门联系](information-support.md#to-contact-microsoft-support)，以打开**带有 Azure 信息保护密钥导出请求的 Azure 信息保护支持案例**。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 收取标准支持费用；导出租户密钥并不是免费支持服务。
+- 请[与 Microsoft 支持部门联系](information-support.md#to-contact-microsoft-support)，以打开**带有 Azure 信息保护密钥导出请求的 Azure 信息保护支持案例**。 你必须证明你是租户的全局管理员, 并了解此过程需要几天的时间来确认。 收取标准支持费用；导出租户密钥并不是免费支持服务。
 
 ### <a name="step-2-wait-for-verification"></a>步骤 2：等待验证
 
@@ -99,7 +99,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 ## <a name="respond-to-a-breach"></a>对违规行为做出响应
 如果没有违规响应流程，无论如何强大的安全系统都是不完整的。 你的租户密钥可能泄漏或失窃。 即便它得到了很好的保护，在当前这代密钥技术或当前的密钥长度和算法方面也可以找到一些漏洞。
 
-Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全事件。 当收到某个事件的可信报告时，该团队将参与调查事件的范围、根本原因和缓解办法。 如果该事件影响到资产，Microsoft 则将使用在订阅时提供的电子邮件地址，通过电子邮件通知 Azure 信息保护租户管理员。
+Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全事件。 当收到某个事件的可信报告时，该团队将参与调查事件的范围、根本原因和缓解办法。 如果此事件影响到资产, Microsoft 将通过电子邮件通知你的租户的全局管理员。
 
 如果你发现了安全违规行为，则你或 Microsoft 能够采取的最佳行动取决于安全违规的范围；Microsoft 将与你共同完成这个过程。 下表显示了一些典型情况以及可能的响应，但具体的响应要取决于在调查过程中揭示的所有信息。
 

@@ -4,7 +4,7 @@ description: 此信息可帮助安装并配置 Azure Rights Management (RMS) 连
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 83193a4f84df3d56129030676d79c20ea3dfe666
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: fef260a3cadfc2ffdc7748e7be058c250db22a3a
+ms.sourcegitcommit: 923227861c00beabb7ed997ef7cba47f06facc94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68794047"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70027432"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
@@ -57,7 +57,7 @@ ms.locfileid: "68794047"
 ## <a name="entering-credentials"></a>输入凭据
 在能够配置 RMS 连接器之前，你必须输入具有足够 RMS 连接器配置权限的帐户的凭据。 例如，你可以键入 <strong>admin@contoso.com</strong>，然后指定此帐户的密码。
 
-此帐户不得要求进行多重身份验证 (MFA)，因为 Microsoft Rights Management 管理工具不支持对此帐户进行 MFA。 
+此帐户不得要求进行多重身份验证 (MFA)，因为 Microsoft Rights Management 管理工具不支持对此帐户进行 MFA。 此外, 如果使用 Azure AD 条件性访问, 则不要阻止对此帐户的[旧身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)。
 
 连接器对于此密码还有一些字符限制。 不能使用包含以下任何字符的密码:与号 ( & )；左尖括号 ( [ )；右尖括号 ( ] )；直引号 ( " ) 和撇号 ( ' )。 如果你的密码包含上述任一字符，尽管在其他方案中可以使用此帐户和密码成功登录，但针对 RMS 连接器的身份验证也会失败，并且你会看到“该用户名和密码组合不正确”的错误消息。 如果此方案适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设密码使其不包含上述任一特殊字符。
 
