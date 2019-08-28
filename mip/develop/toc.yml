@@ -33,6 +33,10 @@
   items:
     - name: API
       href: concept-apis-use-cases.md
+    - name: MipContext 对象概念
+      href: concept-mipcontext.md
+    - name: 缓存存储
+      href: concept-cache-storage.md
     - name: 配置文件和引擎 (C++)
       items:
         - name: 配置文件和引擎对象概念
