@@ -1,17 +1,17 @@
 ---
 title: '类 mip:: AuthDelegate:: OAuth2Token'
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: authdelegate 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: b7b9b73d9f1f3952af1d6a9bdea94c75a8032fb7
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 93c73f632410bf6b1c6898746d1fcbd2c4f67e72
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69885889"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70056264"
 ---
 # <a name="class-mipauthdelegateoauth2token"></a>类 mip:: AuthDelegate:: OAuth2Token 
 定义 MIP SDK 期望将 oauth2 标记传回 SDK 的方式的类。

@@ -1,17 +1,17 @@
 ---
 title: class mip::ProtectByTemplateAction
 description: 记录 Microsoft 信息保护 (MIP) SDK 的 mip::p rotectbytemplateaction 类。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: dffd1698e61f55d5c4d65fee9f0d9489939356d6
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: d7fd12bbec2d9604bab9a1ee204e704bebe32c20
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69885130"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70057755"
 ---
 # <a name="class-mipprotectbytemplateaction"></a>class mip::ProtectByTemplateAction 
 指定向文档添加模板保护的操作类。

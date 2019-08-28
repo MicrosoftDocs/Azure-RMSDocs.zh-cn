@@ -1,17 +1,17 @@
 ---
 title: class mip::FileHandler
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: filehandler 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: a75187820cea8b806a65eebea937ed091f0c62e0
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 93e4ed2210632a051bc9e1aaa06069d246860041
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69884324"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70055015"
 ---
 # <a name="class-mipfilehandler"></a>class mip::FileHandler 
 适用于所有文件处理函数的接口。
@@ -25,6 +25,7 @@ public void ClassifyAsync (const std:: shared_ptr\<void\>& 上下文)  |  在处
 public void InspectAsync (const std:: shared_ptr\<void\>& 上下文)  |  创建文件检查器对象, 该对象用于检索兼容文件格式的文件内容。
 public void SetLabel (const std:: shared_ptr\<label\>& label, const LabelingOptions & LabelingOptions, const ProtectionSettings & ProtectionSettings)  |  设置文件的敏感度标签。
 public void DeleteLabel(const LabelingOptions& labelingOptions)  |  从文件删除敏感度标签。
+static bool IsProtected (const std:: string & filePath, const std:: shared_ptr<MipContext>& mipContext) | 检查文件是否受保护。
 public void SetProtection (const std:: shared_ptr\<ProtectionDescriptor\>& ProtectionDescriptor, const ProtectionSettings & ProtectionSettings)  |  （根据 protectionDescriptor->GetProtectionType）设置对文件的自定义权限或基于模板的权限。
 public void RemoveProtection()  |  删除文件保护。 如果文件已添加标签，标签将丢失。
 public void CommitAsync (const std:: string & outputFilePath, const std:: shared_ptr\<void\>& context) | 将所做的更改写入到 \|outputFilePath\ 参数指定的文件 |  参数指定的网络接口启用 iSCSI 访问。
@@ -62,6 +63,10 @@ public std::string GetOutputFileName()  |  基于原始文件名和累积的更�
 从文件删除敏感度标签。
 在调用 CommitAsync 之前，不会将更改写入文件。 Privilegd 和 Auto 方法使得此 API 可以重写任何现有标签。如果在设置标签时需要提供合理理由（通过 labelingOptions 参数），则引发 [JustificationRequiredError](class_mip_justificationrequirederror.md)。
   
+
+### <a name="isprotected-function"></a>IsProtected 函数
+检查文件是否受保护。
+
 ### <a name="setprotection-function"></a>SetProtection 函数
 （根据 protectionDescriptor->GetProtectionType）设置对文件的自定义权限或基于模板的权限。
 在调用 CommitAsync 之前，不会将更改写入文件。

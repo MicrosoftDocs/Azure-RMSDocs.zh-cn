@@ -1,17 +1,17 @@
 ---
 title: '类 mip:: AuthDelegate:: OAuth2Challenge'
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: authdelegate 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 836704d51d1afa55bc296681c863ee10a072ea79
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 2e96fb769a1b917715daa872736c6d2b81e2626e
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69885919"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70055431"
 ---
 # <a name="class-mipauthdelegateoauth2challenge"></a>类 mip:: AuthDelegate:: OAuth2Challenge 
 一个类, 其中包含调用应用程序所需的所有信息, 以便生成 oauth2 标记。

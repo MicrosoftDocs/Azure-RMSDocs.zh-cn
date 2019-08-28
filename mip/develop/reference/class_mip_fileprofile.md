@@ -1,17 +1,17 @@
 ---
 title: class mip::FileProfile
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: fileprofile 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 00b56c5b45c8c05bf50229c3b462611ce48945c4
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 1e7ca538a0add485fe285240fdcbde0d9ac5ce54
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69884277"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70056084"
 ---
 # <a name="class-mipfileprofile"></a>class mip::FileProfile 
 [FileProfile](class_mip_fileprofile.md) 类是用于使用 Microsoft 信息保护操作的根类。

@@ -1,17 +1,17 @@
 ---
 title: '类 mip:: SyncFilePolicyData'
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: syncfilepolicydata 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 620bb7725e314fbdc44dfa03ce3fe37efe4c1057
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 96b494fb84fc7c71eda5ea09ba7c96388452f786
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69893015"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70056780"
 ---
 # <a name="class-mipsyncfilepolicydata"></a>类 mip:: SyncFilePolicyData 
   

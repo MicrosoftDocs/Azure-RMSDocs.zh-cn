@@ -1,17 +1,17 @@
 ---
 title: class mip::ProtectAdhocAction
 description: 记录 Microsoft 信息保护 (MIP) SDK 的 mip::p rotectadhocaction 类。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: f3a21f4101afbf5455806a2c82dfed60afcd1d1b
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 5d2aa04fa85ab1df992bd496f88d610917f0eb79
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69883619"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70057731"
 ---
 # <a name="class-mipprotectadhocaction"></a>class mip::ProtectAdhocAction 
 指定向文档添加临时保护的操作类。

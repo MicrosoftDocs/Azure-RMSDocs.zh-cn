@@ -1,17 +1,17 @@
 ---
 title: '类 mip:: TemplateNotFoundError'
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: templatenotfounderror 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 06c7046fee60245570677b45d3b667935bee4e0b
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 0d0233f636a7603e2d4da03402fa020e82d7e18f
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69892573"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70056955"
 ---
 # <a name="class-miptemplatenotfounderror"></a>类 mip:: TemplateNotFoundError 
 RMS 服务无法识别模板 ID。

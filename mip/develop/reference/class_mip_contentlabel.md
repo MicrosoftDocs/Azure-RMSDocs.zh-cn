@@ -1,17 +1,17 @@
 ---
 title: class mip::ContentLabel
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: contentlabel 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 27f8adba3e65647a3804256e0b429e1457003085
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 8c3849f2614e8209c355dac3a49d44d64a622b15
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69884395"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70055182"
 ---
 # <a name="class-mipcontentlabel"></a>class mip::ContentLabel 
 Microsoft 信息保护标签的抽象，应用于一段内容，通常是一个文档。

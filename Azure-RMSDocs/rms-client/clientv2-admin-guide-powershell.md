@@ -4,23 +4,23 @@ description: 管理员使用 PowerShell 管理 Azure 信息保护统一标签客
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/16/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ee514720cf13e819f3d64e77635ae96a26e4d0ed
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: a3cca2ac2e3df8f773d6a818eb664bf5c72263aa
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793216"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70056448"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-unified-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护统一客户端配合使用
 
->适用对象： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
 >
 > 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -74,7 +74,7 @@ Cmdlet 随 PowerShell 模块**AzureInformationProtection**一起安装, 其中�
 默认情况下，运行 cmdlet 进行标记时，命令会在交互式 PowerShell 会话中你自己的用户上下文运行。 若要在无人参与的情况下运行这些命令，请为此新建一个 Azure AD 用户帐户。 然后，在相应用户的上下文中，运行 Set-AIPAuthentication cmdlet，以使用 Azure AD 中的访问令牌设置并存储凭据。 然后, 将对此用户帐户进行身份验证, 并引导 Azure 信息保护中的保护服务。 帐户下载 Azure 信息保护策略和标签使用的任何保护模板。
 
 > [!NOTE]
-> 如果使用[作用域内策略](../configure-policy-scope.md)，请记住，你可能需要将此帐户添加到作用域内策略中。
+> 如果对不同用户使用标签策略, 请记住, 你可能需要将此帐户添加到特定的标签策略中。
 
 首次运行此 cmdlet 时，会看到登录提示，以便使用 Azure 信息保护。 指定为无人参与帐户创建的用户帐户名和密码。 之后, 此帐户可在 Azure AD 中的身份验证令牌过期之前, 以非交互方式运行标记 cmdlet。 
 

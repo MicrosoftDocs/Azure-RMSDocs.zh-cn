@@ -1,17 +1,17 @@
 ---
 title: '类 mip:: SensitivityConditionData'
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: sensitivityconditiondata 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: c9b37f7708b41b582de743c36607a2920586af4a
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 4c8491247ae4a05c2d97b007a9a494a1b946104c
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69893032"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70057081"
 ---
 # <a name="class-mipsensitivityconditiondata"></a>类 mip:: SensitivityConditionData 
   

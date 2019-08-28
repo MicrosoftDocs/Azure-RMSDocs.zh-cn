@@ -1,17 +1,17 @@
 ---
 title: class mip::AccessDeniedError
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: accessdeniederror 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 3d364fb031f3e4e56dee2e6aae41a682849e1fad
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 46b103e269d5611f010bb6ba563963ad44d4907b
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69885969"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70056422"
 ---
 # <a name="class-mipaccessdeniederror"></a>class mip::AccessDeniedError 
 用户无法访问内容。 例如，无权限、内容已撤销。

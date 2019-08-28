@@ -1,17 +1,17 @@
 ---
 title: '类 mip:: ComputeEngine:: Settings'
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: computeengine 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: bd804706d8a9d85d7448f6ddca4e482be7007557
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 78917c686c1c7da42af13d3f6e6a5349bc509a0d
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69893457"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70056236"
 ---
 # <a name="class-mipcomputeenginesettings"></a>类 mip:: ComputeEngine:: Settings 
   

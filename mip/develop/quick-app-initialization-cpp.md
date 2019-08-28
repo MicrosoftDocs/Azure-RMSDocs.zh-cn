@@ -5,14 +5,14 @@ author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.collection: M365-security-compliance
-ms.date: 01/18/2019
+ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: d30111953bdc55b66b712f30de0c50d28ac07303
-ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
+ms.openlocfilehash: 30066f1bbb8b5a4cdd556b7aa34a40d696371a91
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "60185053"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69884811"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C++)
 
@@ -21,7 +21,7 @@ ms.locfileid: "60185053"
 > [!NOTE]
 > 对于使用 MIP 文件、策略或保护 AP 的任何客户端应用程序，都需要执行本快速入门中概述的步骤。 虽然本快速入门演示的是文件 API 的使用，但同样的模式也适用于使用策略和保护 API 的客户端。 按顺序完成其余的快速入门，因为每一个都是在前一个的基础上构建的，本快速入门是第一个。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 如果尚未准备，请务必：
 
@@ -137,7 +137,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
      class AuthDelegateImpl final : public mip::AuthDelegate {
      public:
           AuthDelegateImpl() = delete;        // Prevents default constructor
-          
+
           AuthDelegateImpl(
             const std::string& appId)         // AppID for registered AAD app
             : mAppId(appId) {};
@@ -146,6 +146,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
             const mip::Identity& identity,    // Identity of the account to be authenticated, if known
             const OAuth2Challenge& challenge, // Authority (AAD tenant issuing token), and resource (API being accessed; "aud" claim).
             OAuth2Token& token) override;     // Token handed back to MIP SDK
+
      private:
           std::string mAppId;
           std::string mToken;
@@ -194,7 +195,8 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
           // True = successful token acquisition; False = failure
           return true;
      }
-     ``` 
+     ```
+
 3. （可选）使用 F6（生成解决方案）运行解决方案的某个测试编译/链接，确保它成功生成后再继续  。
 
 ## <a name="implement-a-consent-delegate"></a>实现同意委托
@@ -232,6 +234,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
           return Consent::AcceptAlways;
      }
      ``` 
+     
 3. （可选）使用 F6（生成解决方案）运行解决方案的某个测试编译/链接，确保它成功生成后再继续  。
 
 ## <a name="construct-a-file-profile-and-engine"></a>构造文件配置文件和引擎
@@ -243,6 +246,8 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 2. 删除生成的 `main()` 实现。 请勿删除在项目创建期间 (#pragma, #include) 由 Visual Studio 生成的预处理程序指令  。 在任何预处理程序指令之后追加以下代码：
 
    ```cpp
+   #include "mip/mip_init.h"
+   #include "mip/mip_context.h"  
    #include "auth_delegate.h"
    #include "consent_delegate.h"
    #include "profile_observer.h"
@@ -253,7 +258,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
    using std::shared_ptr;
    using std::string;
    using std::cout;
-   using mip::ApplicationInfo; 
+   using mip::ApplicationInfo;
    using mip::FileProfile;
    using mip::FileEngine;
 
@@ -263,18 +268,25 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
      ApplicationInfo appInfo{"<application-id>",                    // ApplicationInfo object (App ID, name, version)
                  "<application-name>",
                  "<application-version>"};
-     auto profileObserver = make_shared<ProfileObserver>();         // Observer object                  
+
+     auto mipContext = mip::MipContext::Create(appInfo,
+                         "file_sample",
+                         mip::LogLevel::Trace,
+                         nullptr /*loggerDelegateOverride*/,
+                         nullptr /*telemetryOverride*/);
+
+     auto profileObserver = make_shared<ProfileObserver>();         // Observer object
      auto authDelegateImpl = make_shared<AuthDelegateImpl>(         // Authentication delegate object (App ID)
                  "<application-id>");
      auto consentDelegateImpl = make_shared<ConsentDelegateImpl>(); // Consent delegate object
  
      // Construct/initialize profile object
-     FileProfile::Settings profileSettings("",    // Path for logging/telemetry/state
-       true,                                      // true = use in-memory state storage (vs disk)
-       authDelegateImpl,                            
-       consentDelegateImpl,                     
-       profileObserver,                         
-       appInfo);                                    
+     FileProfile::Settings profileSettings(
+       mipContext,
+       mip::CacheStorageType::OnDisk,
+       authDelegateImpl,
+       consentDelegateImpl,
+       profileObserver);
 
      // Set up promise/future connection for async profile operations; load profile asynchronously
      auto profilePromise = make_shared<promise<shared_ptr<FileProfile>>>();
@@ -296,7 +308,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
      // Construct/initialize engine object
      FileEngine::Settings engineSettings(
        mip::Identity("<engine-account>"),         // Engine identity (account used for authentication)
-       "<engine-state>",                          // User-defined engine state      
+       "<engine-state>",                          // User-defined engine state
        "en-US");                                  // Locale (default = en-US)
 
      // Set up promise/future connection for async engine operations; add engine to profile asynchronously
@@ -306,7 +318,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
      std::shared_ptr<FileEngine> engine; 
      try
      {
-       engine = engineFuture.get();             
+       engine = engineFuture.get();
      }
      catch (const std::exception& e)
      {
@@ -315,6 +327,13 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
        system("pause");
        return 1;
      }
+
+   // Application shutdown. Null out profile and engine, call ReleaseAllResources();
+   // Application may crash at shutdown if resources aren't properly released.
+   // handler = nullptr; // This will be used in later quick starts.
+   engine = nullptr;
+   profile = nullptr;   
+   mipContext = nullptr;
 
    return 0;
    }

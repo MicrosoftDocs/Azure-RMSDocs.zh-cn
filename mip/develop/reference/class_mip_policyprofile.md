@@ -1,17 +1,17 @@
 ---
 title: class mip::PolicyProfile
 description: 记录 Microsoft 信息保护 (MIP) SDK 的 mip::p olicyprofile 类。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 13d24afe87bc04f7a92dde8daf88c1ada38cedc2
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 37862d247af83c0bb444d42ec4aa8ad25073e9d8
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69883752"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70055629"
 ---
 # <a name="class-mippolicyprofile"></a>class mip::PolicyProfile 
 [PolicyProfile](class_mip_policyprofile.md) 类是用于使用 Microsoft 信息保护操作的根类。 一个典型的应用程序只需要一个 [PolicyProfile](class_mip_policyprofile.md)，但它可以按需创建多个配置文件。

@@ -1,17 +1,17 @@
 ---
 title: 类 mip::P rotectionSettings
 description: 记录 Microsoft 信息保护 (MIP) SDK 的 mip::p rotectionsettings 类。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 6cb5ce2dbe5ce4e08f703a525e6dbcd386dda1d4
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 0a27f5e854a78aa4886abdd2145fd40b399f99fd
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69893100"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70057450"
 ---
 # <a name="class-mipprotectionsettings"></a>类 mip::P rotectionSettings 
 用于为 SetLabel 方法配置保护选项的接口。

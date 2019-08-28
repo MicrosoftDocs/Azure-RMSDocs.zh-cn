@@ -4,7 +4,7 @@ description: 说明如何从 Azure 信息保护中为保护服务安装 PowerShe
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/05/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,25 +12,25 @@ ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5b97a4b474647a52948e9c41535e0fabb871c3c3
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 89820a815e664589051a91f273cb63280e70713a
+ms.sourcegitcommit: 72ae1f635e51ef6c6deb1833a30ff11e5918a3e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68788450"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063741"
 ---
 # <a name="installing-the-aipservice-powershell-module"></a>安装 AIPService PowerShell 模块
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用以下信息来帮助你为 Azure 信息保护中的保护服务安装 Windows PowerShell 模块。 此模块的名称为 AIPService, 它将替换名为 AADRM 的以前的版本。
 
-通过使用任何具有 Internet 连接且满足下一节列出的先决条件的计算机, 你可以使用此 PowerShell 模块从命令行管理保护服务 (Azure Rights Management)。 适用于 Azure 信息保护的 Windows PowerShell 支持自动化脚本, 或者可能是高级配置方案所必需的。 有关模块支持的管理任务和配置的详细信息, 请参阅[使用 PowerShell 管理 Azure 信息保护中的保护](administer-powershell.md)。
+通过使用具有 Internet 连接且满足下一节列出的先决条件的任何 Windows 计算机, 你可以使用此 PowerShell 模块从命令行管理保护服务 (Azure Rights Management)。 适用于 Azure 信息保护的 Windows PowerShell 支持自动化脚本, 或者可能是高级配置方案所必需的。 有关模块支持的管理任务和配置的详细信息, 请参阅[使用 PowerShell 管理 Azure 信息保护中的保护](administer-powershell.md)。
 
 ## <a name="prerequisites"></a>先决条件
 此表列出了安装和使用适用于 Azure 信息保护中的保护服务的 AIPService PowerShell 模块的先决条件。
 
-|要求|更多信息|
+|要求|详细信息|
 |---------------|--------------------|
 |Windows PowerShell 的最低版本:3.0|你可在 PowerShell 会话中键入 `$PSVersionTable`，以确认正在运行的 Windows PowerShell 的版本。 <br /><br /> 如果需要安装更高版本的 Windows PowerShell，请参阅[升级现有的 Windows PowerShell](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell)。|
 |Microsoft .NET Framework 的最低版本:4.5<br /><br />注意:此版本的 Microsoft .NET 框架包含在更高版本的操作系统中, 因此只有在客户端操作系统低于 Windows 8.0 或服务器操作系统低于 Windows Server 2012 的情况下, 才需要手动安装它。|如果尚未安装 Microsoft .NET Framework 的最低版本，则可下载 [Microsoft .NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)。<br /><br />AIPService 模块使用的某些类需要此最低版本的 Microsoft .NET 框架。|

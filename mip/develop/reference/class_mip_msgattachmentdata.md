@@ -1,17 +1,17 @@
 ---
 title: '类 mip:: MsgAttachmentData'
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: msgattachmentdata 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 963968008e1098209270d990e9c6b1ab273b0971
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 88ac473dd20db6499ab818adf47ddc5cb788e960
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69893304"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70055860"
 ---
 # <a name="class-mipmsgattachmentdata"></a>类 mip:: MsgAttachmentData 
   

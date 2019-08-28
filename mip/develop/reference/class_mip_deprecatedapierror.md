@@ -1,17 +1,17 @@
 ---
 title: 类 mip::D eprecatedApiError
 description: 记录 Microsoft 信息保护 (MIP) SDK 的 mip::d eprecatedapierror 类。
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 20ee17faf92f0a81b5af972d655102570c500960
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: f8586aca0f24b3ec7fec853691cfdfa732506ca7
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69893423"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70056179"
 ---
 # <a name="class-mipdeprecatedapierror"></a>类 mip::D eprecatedApiError 
 调用方调用了已弃用的 API。

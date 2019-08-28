@@ -1,17 +1,17 @@
 ---
 title: class mip::ExecutionState
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: executionstate& 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 02e72dc55c12b3800ff76356da1fb7c3adf08fdd
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: d73a9e814401dc634f95e14ff4447edd071e63ba
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69884346"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70055133"
 ---
 # <a name="class-mipexecutionstate"></a>class mip::ExecutionState 
 执行引擎所需的所有状态的接口。

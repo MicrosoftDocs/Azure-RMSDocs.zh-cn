@@ -1,17 +1,17 @@
 ---
 title: class mip::Error
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: error 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 8ba59d6a0b844164edf50797b376bfd171d002f2
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 176fe86739b1c0c85b29dcf1da591f99b48e4fdd
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69885825"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70056136"
 ---
 # <a name="class-miperror"></a>class mip::Error 
 将从 MIP SDK 报告（引发或返回）的所有错误的基类。

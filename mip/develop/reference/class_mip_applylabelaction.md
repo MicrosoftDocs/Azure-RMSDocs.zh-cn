@@ -1,17 +1,17 @@
 ---
 title: class mip::ApplyLabelAction
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: applylabelaction 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: 7d2067ad030e909d53602fcdb3eefa9b88af56bf
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: 3e5ba734400000b1b1a324520e9595828c2f6ff9
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69884512"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70056306"
 ---
 # <a name="class-mipapplylabelaction"></a>class mip::ApplyLabelAction 
 应用标签操作要求，必须调用应用程序，才能应用特定标签。

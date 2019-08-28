@@ -1,17 +1,17 @@
 ---
 title: class mip::LabelingOptions
 description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: labelingoptions 类。'
-author: BryanLa
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 07/16/2019
-ms.openlocfilehash: f70c2b004f9649f17bccab92a65ea73ab31a3390
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.author: mbaldwin
+ms.date: 08/27/2019
+ms.openlocfilehash: febebe2f8d578fb53120fac4ddb18acacd70a053
+ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69883977"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70054600"
 ---
 # <a name="class-miplabelingoptions"></a>class mip::LabelingOptions 
 用于为 SetLabel/DeleteLabel 方法配置标记选项的接口。
