@@ -5,20 +5,20 @@ author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.collection: M365-security-compliance
-ms.date: 01/04/2019
+ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 0b1b110fe3b2e96c258c7b94a3d356b9404d6e7e
-ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
+ms.openlocfilehash: 3a26352f7b8e23e2de55eb21846e20feca7096ff
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "60175579"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69885978"
 ---
 # <a name="quickstart-list-sensitivity-labels-c"></a>快速入门：列出敏感度标签 (C#)
 
 本快速入门演示如何使用 MIP SDK 文件 API 列出为组织配置的敏感度标签。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
@@ -33,7 +33,7 @@ ms.locfileid: "60175579"
 
 2. 使用“解决方案资源管理器”，打开项目中包含 `Main()` 方法的实现的 .cs 文件  。 它默认与包含它的项目同名，即在项目创建期间指定的名称。 
 
-3. 在 `Main()` 正文的末尾，在 `Main()` 函数的右大括号 `}` 下面（在上一快速入门中离开的位置）插入以下代码：
+3. 在靠近 `Main()` 主体的末尾处，在 `Main()` 函数的应用程序关闭部分上方（即在上一快速入门中离开的位置）插入以下代码：
 
   ```csharp
   // List sensitivity labels from fileEngine and display name and id  
@@ -49,15 +49,15 @@ ms.locfileid: "60175579"
           }
       }
   }
-  ``` 
+  ```
 
 ## <a name="build-and-test-the-application"></a>生成和测试应用程序
 
-最后，生成和测试客户端应用程序。 
+最后，生成和测试客户端应用程序。
 
 1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序  。 如果没有生成错误，请使用 F5（开始调试  ）来运行应用程序。
 
-2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已存在缓存凭据，则不会提示登录和查看标签列表。 
+2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示。 
 
      [![Visual Studio 获取令牌登录](media/quick-file-list-labels-cpp/acquire-token-sign-in.png)](media/quick-file-list-labels-cpp/acquire-token-sign-in.png#lightbox)
 
@@ -85,11 +85,11 @@ ms.locfileid: "60175579"
    > [!NOTE]
    > 复制并保存一个或多个敏感度标签的 ID（例如，`f42a3342-8706-4288-bd31-ebb85995028z`），因为你将在下一个快速入门中使用它。
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="problems-during-execution-of-c-application"></a>执行 C# 应用程序时出现的问题
 
-| 摘要 | 错误消息 | 解决方案 |
+| “摘要” | 错误消息 | 解决方案 |
 |---------|---------------|----------|
 | 访问令牌不正确 | 发生异常...访问令牌是否不正确/过期?<br><br>API 调用失败: profile_add_engine_asyn 失败原因: [class mip::PolicySyncException] 策略获取失败，请求失败并显示 http 状态代码:  401，x-ms-diagnostics: [2000001;reason=“无法解析随请求提交的 OAuth 令牌。”;error_category="invalid_token"]，correlationId:[35bc0023-3727-4eff-8062-000006d5d672]'<br><br>C:\VSProjects\MipDev\Quickstarts\AppInitialization\x64\Debug\AppInitialization.exe (process 29924) 已退出，代码为 0。<br><br>按任意键关闭此窗口... | 如果项目成功生成，但出现类似于左侧的输出，则表示 `AcquireOAuth2Token()` 方法中可能包含无效或过期的令牌。 返回到[生成并测试应用程序](#build-and-test-the-application)并重写访问令牌，再次更新 `AcquireOAuth2Token()`，然后重新生成/重新测试。 还可以使用 [jwt.ms](https://jwt.ms/) 单页 Web 应用程序检查并验证令牌及其声明。 |
 | 未配置敏感度标签 | n/a | 如果项目成功生成，但在控制台窗口中没有输出，请确保正确配置了组织的敏感度标签。 请参阅 [MIP SDK 安装和配置](setup-configure-mip.md)，在“定义标签分类和保护设置”下获取详细信息。  |

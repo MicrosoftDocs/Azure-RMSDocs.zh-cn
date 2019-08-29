@@ -6,20 +6,20 @@ author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.collection: M365-security-compliance
-ms.date: 01/09/2019
+ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 395c46ce1979b2ef670aa27e9329c5219ca63e13
-ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
+ms.openlocfilehash: fc2b07e2ffb8dfe9dec0e3766ac0da39719f7503
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "60173217"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69885944"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C#)
 
 本快速入门介绍如何使用更多的 MIP 文件 API。 使用上一个快速入门中列出的敏感度标签之一，可以使用文件处理程序对文件设置/获取标签。 文件处理程序类会公开设置/获取标签的各种操作，或受支持文件类型的保护。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
@@ -49,12 +49,11 @@ ms.locfileid: "60173217"
      //Set Labeling Options
      LabelingOptions labelingOptions = new LabelingOptions()
      {
-          ActionSource = ActionSource.Manual,
           AssignmentMethod = AssignmentMethod.Standard
      };
 
      // Set a label on input file
-     handler.SetLabel(labelId, labelingOptions);
+     handler.SetLabel(engine.GetLabelById(labelId), labelingOptions, new ProtectionSettings());
 
      // Commit changes, save as outputFilePath
      var result = Task.Run(async () => await handler.CommitAsync(outputFilePath)).Result;
@@ -65,12 +64,22 @@ ms.locfileid: "60173217"
      // Get the label from output file
      var contentLabel = handlerModified.Label;
      Console.WriteLine(string.Format("Getting the label committed to file: {0}", outputFilePath));
-     Console.WriteLine(string.Format("File Label: {0} \r\nIsProtected: {1}", contentLabel.Label, contentLabel.IsProtectionAppliedFromLabel.ToString()));
+     Console.WriteLine(string.Format("File Label: {0} \r\nIsProtected: {1}", contentLabel.Label.Name, contentLabel.IsProtectionAppliedFromLabel.ToString()));
      Console.WriteLine("Press a key to continue.");
      Console.ReadKey();
    ```
 
-3. 使用以下值替换刚才粘贴的源代码中的占位符值：
+3. 在靠近 `Main()` 的末尾处，查找在第一个快速入门中创建的应用程序关闭块，并取消注释处理程序行：
+
+   ```csharp
+   // Application Shutdown
+   handler = null;
+   fileEngine = null;
+   fileProfile = null;
+   mipContext = null;
+   ```
+
+4. 使用以下值替换源代码中的占位符值：
 
    | 占位符 | 值 |
    |:----------- |:----- |
@@ -84,7 +93,7 @@ ms.locfileid: "60173217"
 
 1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序  。 如果没有生成错误，请使用 F5（开始调试  ）来运行应用程序。
 
-2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已存在缓存凭据，则不会提示登录和查看标签列表（后跟已应用的标签和已修改的文件的相关信息）。
+2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示（后跟已应用标签和已修改文件的相关信息）。
 
   ```console   
   Personal : 73c47c6a-eb00-4a6a-8e19-efaada66dee6

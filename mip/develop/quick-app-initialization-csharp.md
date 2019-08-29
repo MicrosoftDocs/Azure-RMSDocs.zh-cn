@@ -5,14 +5,14 @@ author: tommoser
 ms.service: information-protection
 ms.topic: quickstart
 ms.collection: M365-security-compliance
-ms.date: 01/04/2019
+ms.date: 07/30/2019
 ms.author: tommos
-ms.openlocfilehash: b7f2b25027502fbdd9dd7bd877b8893c1940628a
-ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
+ms.openlocfilehash: 156d7bb4c41a6ce593e66add3aea0a290a9b73ac
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "60184956"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69886017"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C#)
 
@@ -21,7 +21,7 @@ ms.locfileid: "60184956"
 > [!NOTE]
 > 对于使用 MIP .NET 包装器的文件或策略 API 的任何客户端应用程序，都需要执行本快速入门中概述的步骤。 保护 API 还不可用。 虽然本快速入门演示的是文件 API 的使用，但同样的模式也适用于使用策略和保护 API 的客户端。 之后的快速入门应是按顺序完成的，因为每一个都是在前一个的基础上构建的，本快速入门是第一个。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 如果尚未准备，请务必：
 
@@ -81,15 +81,15 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
      }
      ```
 
-`ApplicationInfo` 对象包含两个属性。 `AuthDelegateImplementation` 类中将使用 `_appInfo.ApplicationId`，以便向身份验证库提供客户端 ID。
+`ApplicationInfo` 对象包含三个属性。 `AuthDelegateImplementation` 类中将使用 `_appInfo.ApplicationId`，以便向身份验证库提供客户端 ID。 `ApplicationName` 和 `ApplicationVersion` 将出现在 Azure 信息保护分析报告中。
 
-5. 添加 `public string AcquireToken()` 方法。 此方法应接受 `Microsoft.InformationProtection.Identity` 以及“颁发机构”和“资源”这两个字符串。 这些字符串变量将被 API 传递到身份验证库，不应对其进行操作。 编辑操作可能会导致身份验证失败。
+5. 添加 `public string AcquireToken()` 方法。 此方法应接受 `Microsoft.InformationProtection.Identity` 和三个字符串：颁发机构 URL、资源 URI 和声明（如果需要）。 这些字符串变量将被 API 传递到身份验证库，不应对其进行操作。 编辑操作可能会导致身份验证失败。
 
      ```csharp
-     public string AcquireToken(Identity identity, string authority, string resource)
+     public string AcquireToken(Identity identity, string authority, string resource, string claims)
      {
           AuthenticationContext authContext = new AuthenticationContext(authority);
-          var result = authContext.AcquireTokenAsync(resource, _appInfo.ApplicationId, new Uri(redirectUri), new PlatformParameters(PromptBehavior.Auto, null), UserIdentifier.AnyUser).Result;
+          var result = Task.Run(async() => await authContext.AcquireTokenAsync(resource, AppInfo.ApplicationId, new Uri(redirectUri), new PlatformParameters(PromptBehavior.Always))).Result;
           return result.AccessToken;
      }
      ```
@@ -120,7 +120,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
 2. 删除生成的 `main()` 实现。 
 
-3. 托管包装器包含一个静态类 `Microsoft.InformationProtection.MIP`，用于初始化、加载配置文件和发布资源。 要初始化文件 API 操作的包装器，请调用 MIP.Initialize，传入 `MipComponent.File` 以加载文件操作所需的库。 
+3. 托管包装器包含静态类 `Microsoft.InformationProtection.MIP`，用于初始化、创建 `MipContext`、加载配置文件和发布资源。 若要为文件 API 操作初始化包装器，请调用 `MIP.Initialize()`，同时传入 `MipComponent.File`，以加载文件操作所需的库。 
 
 4. 在 Program.cs 的 `Main()` 中添加以下内容，将 \<application-id\> 替换为之前创建的、Azure AD 应用程序注册的 ID   。
 
@@ -128,7 +128,9 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 using System;
 using System.Threading.Tasks;
 using Microsoft.InformationProtection;
+using Microsoft.InformationProtection.Exceptions;
 using Microsoft.InformationProtection.File;
+using Microsoft.InformationProtection.Protection;
 
 namespace mip_sdk_dotnet_quickstart
 {
@@ -150,6 +152,8 @@ namespace mip_sdk_dotnet_quickstart
 
 如前文所述，使用 MIP API 的 SDK 客户端需要配置文件和引擎对象。 通过添加代码来加载本机 DLL，然后实例化配置文件和引擎对象，以完成本快速入门的编码部分。
 
+
+
    ```csharp
 using System;
 using System.Threading.Tasks;
@@ -165,10 +169,10 @@ namespace mip_sdk_dotnet_quickstart
 
           static void Main(string[] args)
           {
-               //Initialize Wrapper for File API operations
+               // Initialize Wrapper for File API operations.
                MIP.Initialize(MipComponent.File);
 
-               //Create ApplicationInfo, setting the clientID from Azure AD App Registration as the ApplicationId
+               // Create ApplicationInfo, setting the clientID from Azure AD App Registration as the ApplicationId.
                ApplicationInfo appInfo = new ApplicationInfo()
                {
                     ApplicationId = clientId,
@@ -176,24 +180,40 @@ namespace mip_sdk_dotnet_quickstart
                     ApplicationVersion = "1.0.0"
                };
 
-               //Instatiate the AuthDelegateImpl object, passing in AppInfo. 
+               // Instantiate the AuthDelegateImpl object, passing in AppInfo.
                AuthDelegateImplementation authDelegate = new AuthDelegateImplementation(appInfo);
 
-               //Initialize and instantiate the File Profile
-               //Create the FileProfileSettings object
-               var profileSettings = new FileProfileSettings("mip_data", false, authDelegate, new ConsentDelegateImplementation(), appInfo, LogLevel.Trace);
+               MipContext mipContext = MIP.CreateMipContext(appInfo,
+                                        "mip_data",
+                                        LogLevel.Trace,
+                                        null,
+                                        null);
 
-               //Load the Profile async and wait for the result
+               // Initialize and instantiate the File Profile.
+               // Create the FileProfileSettings object.
+               // Initialize file profile settings to create/use local state.
+               var profileSettings = new FileProfileSettings(mipContext,
+                                        CacheStorageType.OnDiskEncrypted,
+                                        authDelegate,
+                                        new ConsentDelegateImplementation());
+
+               // Load the Profile async and wait for the result.
                var fileProfile = Task.Run(async () => await MIP.LoadFileProfileAsync(profileSettings)).Result;
 
-               //Create a FileEngineSettings object, then use that to add an engine to the profile
+               // Create a FileEngineSettings object, then use that to add an engine to the profile.
                var engineSettings = new FileEngineSettings("user1@tenant.com", "", "en-US");
                engineSettings.Identity = new Identity("user1@tenant.com");
                var fileEngine = Task.Run(async () => await fileProfile.AddEngineAsync(engineSettings)).Result;
+
+               // Application Shutdown
+               // handler = null; // This will be used in later quick starts.
+               fileEngine = null;
+               fileProfile = null;
+               mipContext = null;
           }
      }
 }
-``` 
+```
 
 3. 使用以下值替换刚才粘贴的源代码中的占位符值：
 

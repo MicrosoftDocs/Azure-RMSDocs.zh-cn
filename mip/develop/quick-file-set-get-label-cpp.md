@@ -6,20 +6,20 @@ author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.collection: M365-security-compliance
-ms.date: 01/18/2019
+ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 2ac8c6bbfba6f460ac016a103f32f20856bff2aa
-ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
+ms.openlocfilehash: d671aeed3e05882ba8d41c6d7069cd4e548ecec2
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "60184886"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69884728"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C++)
 
 本快速入门介绍如何使用更多的 MIP 文件 API。 使用上一个快速入门中列出的敏感度标签之一，可以使用文件处理程序对文件设置/获取标签。 文件处理程序类会公开设置/获取标签的各种操作，或受支持文件类型的保护。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
@@ -132,8 +132,8 @@ ms.locfileid: "60184886"
    {
         string labelId = "<label-id>";
         cout << "\nApplying Label ID " << labelId << " to " << filePathIn << endl;
-        mip::LabelingOptions labelingOptions(mip::AssignmentMethod::PRIVILEGED, mip::ActionSource::MANUAL);
-        handler->SetLabel(labelId, labelingOptions);
+        mip::LabelingOptions labelingOptions(mip::AssignmentMethod::PRIVILEGED);
+        handler->SetLabel(engine->GetLabelById(labelId), labelingOptions, new ProtectionSettings());
    }
    catch (const std::exception& e)
    {
@@ -205,7 +205,18 @@ ms.locfileid: "60184886"
    system("pause");
    ```
 
-4. 使用字符串常量替换刚才粘贴的源代码中的占位符值，如下所示：
+4. 在靠近 `main()` 的末尾处，查找在第一个快速入门中创建的应用程序关闭块，并取消注释处理程序行：
+
+   ```cpp
+   // Application shutdown. Null out profile and engine, call ReleaseAllResources();
+   // Application may crash at shutdown if resources aren't properly released.
+   profile = nullptr;
+   engine = nullptr;
+   handler = nullptr;
+   mipContext = nullptr;
+   ```
+
+5. 使用字符串常量替换源代码中的占位符值，如下所示：
 
    | 占位符 | 值 |
    |:----------- |:----- |
@@ -267,7 +278,7 @@ ms.locfileid: "60184886"
 可以通过打开输出文件，并直观地检查文档的信息保护设置来验证标签的应用。
 
 > [!NOTE]
-> 如果要标记 Office 文档，但未使用获取访问令牌的 Azure Active Directory (AD) 租户中的帐户登录（并且配置了敏感度标签），则可能会提示先登录，然后才能打开标记的文档。 
+> 若要标记 Office 文档，但未使用来自从中获取访问令牌的 Azure Active Directory (AD) 租户的帐户登录（并且配置了敏感度标签），系统可能会提示你先登录，然后才能打开标记的文档。 
 
 
 

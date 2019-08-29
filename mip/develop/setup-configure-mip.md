@@ -5,20 +5,20 @@ author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.collection: M365-security-compliance
-ms.date: 03/01/2019
+ms.date: 06/13/2019
 ms.author: mbaldwin
-ms.openlocfilehash: db815d17303abb0fb98b6e5936fbcd1f975d74f0
-ms.sourcegitcommit: fe23bc3e24eb09b7450548dc32b4ef09c8970615
+ms.openlocfilehash: 906d8cb104c5c8639c4ffe52ecd1f4ff1ff0a8d0
+ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "60184390"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69882941"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置 
 
 快速入门和教程文章主要介绍使用 MIP SDK 库和 API 构建应用程序。 本文介绍如何安装和配置 Office 365 订阅和客户端工作站，为使用 SDK 做准备。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 在开始之前，请务必查看以下主题：
 
@@ -35,13 +35,13 @@ ms.locfileid: "60184390"
 
 许多 SDK 示例都需要访问 Office 365 订阅的权限。 如果尚未注册，请务必注册以下订阅类型之一：
 
-| 名称 | 注册 |
-|------|---------|
-| Office 365 企业版 E3 试用版（30 天免费试用） | https://go.microsoft.com/fwlink/p/?LinkID=403802 |
-| Office 365 企业版 E3 或 E5 | https://products.office.com/business/office-365-enterprise-e3-business-software |
-| 企业移动性 + 安全性 E3 或 E5 | https://www.microsoft.com/cloud-platform/enterprise-mobility-security |
-| Azure 信息保护高级版 P1 或 P2 | https://azure.microsoft.com/pricing/details/information-protection/ |
-| Microsoft 365 E3、E5、或 F1 | https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans | 
+| 名称                                               | 注册                                                                         |
+| -------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Office 365 企业版 E3 试用版（30 天免费试用） | https://go.microsoft.com/fwlink/p/?LinkID=403802                                |
+| Office 365 企业版 E3 或 E5                     | https://products.office.com/business/office-365-enterprise-e3-business-software |
+| 企业移动性 + 安全性 E3 或 E5          | https://www.microsoft.com/cloud-platform/enterprise-mobility-security           |
+| Azure 信息保护高级版 P1 或 P2      | https://azure.microsoft.com/pricing/details/information-protection/             |
+| Microsoft 365 E3、E5、或 F1                        | https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans         |
 
 ## <a name="configure-sensitivity-labels"></a>配置敏感度标签
 
@@ -138,7 +138,7 @@ ms.locfileid: "60184390"
    - 如果还没有 GitHub，请先创建一个 [GitHub 配置文件](https://github.com/join)。
    - 然后安装最新版本的 [Software Freedom Conservancy Git 客户端工具 (Git Bash)](https://git-scm.com/download/)
    - 使用 Git Bash，下载感兴趣的示例：
-     - 使用以下查询查看存储库： https://github.com/Azure-Samples?utf8=%E2%9C%93&q=MipSdk。 
+     - 使用以下查询查看存储库： https://github.com/Azure-Samples?utf8=%E2%9C%93&q=MipSdk 。 
      - 使用 Git Bash，使用 `git clone https://github.com/azure-samples/<repo-name>` 下载每个示例存储库。
 
 ## <a name="register-a-client-application-with-azure-active-directory"></a>向 Azure Active Directory 注册将客户端应用程序
@@ -154,29 +154,30 @@ ms.locfileid: "60184390"
   > 建议使用受限帐户进行测试。 请确保该帐户仅具有访问必要 SCC 终结点的权限。 日志记录系统可收集通过命令行传递的明文密码。
 
 1. 按照[向 Azure AD 注册应用，注册新应用程序](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#register-a-new-application-using-the-azure-portal)一节中的步骤进行操作。 出于测试目的，在完成指导步骤时，请对给定属性使用以下值： 
-    - **应用程序类型** - 选择“本机”，因为 SDK 演示的应用程序是本机安装的控制台应用程序。 OAuth2 将本机应用程序视为“公共”客户端，因为它们无法以安全的方式存储/使用应用程序凭据。 与基于服务器的“机密”应用程序（如 Web 应用程序）不同，后者使用自己的凭据进行注册。 
-    - **重定向 URI** - 由于 SDK 使用简单的控制台客户端应用程序，因此请使用格式为 `<app-name>://authorize` 的 URI。
+    - **支持的帐户类型** - 选择“仅此组织目录中的帐户”。
+    - **重定向 URI** - 将重定向 URI 类型设置为“公共客户端(移动和桌面)”。 由于 SDK 使用简单的控制台客户端应用程序，因此请使用格式为 `<app-name>://authorize` 的 URI。
 
-2. 完成后，将返回“已注册的应用”页面查看新的应用程序注册  。 请将 GUID 复制并保存在“应用程序 ID”字段中  ，以便在快速入门中使用。 
+2. 完成后，将返回“已注册的应用”页面查看新的应用程序注册  。 复制并保存“应用程序(客户端) ID”  字段中的 GUID，因为稍后需要在快速入门中用到它。 
 
-3. 然后单击“设置”，添加客户端需要访问的 API 和权限  。 在“设置”页面上，单击“必需权限”   。
+3. 然后，单击“API 权限”  ，以添加客户端需要访问的 API 和权限。 单击“添加权限”  ，以打开“请求获取 API 权限”边栏选项卡。
 
 4. 现在，将添加应用程序在运行时需要的 MIP API 和权限：
-   - 在“必需权限”页面上，单击“添加”   。 
-   - 在“添加 API 访问”页面上，单击“选择 API”   。
-   - 在“选择 API”页面上，单击“Microsoft Rights Management Services”API，然后单击“选择”    。
-   - 在 API 可用权限的“启用访问权限”页面上，单击“为用户创建并授权访问受保护的内容”，然后依次单击“选择”、“完成”     。
+   - 在“选择 API”  页上，单击“Azure Rights Management Services”  。
+   - 在“Azure Rights Management Services”  API 页上，单击“委托的权限”  。   
+   - 在“选择权限”  部分中，选中“user_impersonation”  权限。 这样一来，应用程序可以代表用户创建和访问受保护的内容。
+   - 单击“添加权限”  以保存。
 
 5. 重复步骤 #4，但这次当进入“选择 API”页面时，需要搜索 API  。
-   - 在“选择 API”页面的搜索框中，键入“Microsoft 信息保护同步服务”，然后单击 API 并单击“选择”    。
-   - 在 API 可用权限的“启用访问权限”页面上，单击“为用户创建并授权访问受保护的内容”，单击“选择”，再单击“完成”    
+   - 在“选择 API”  页上，单击“我的组织使用的 API”  ，然后在搜索框中键入“Microsoft 信息保护同步服务”  并选择它。
+   - 在“Microsoft 信息保护同步服务”  API 页上，单击“委托的权限”  。
+   - 展开“UnifiedPolicy”  节点，并选中“UnifiedPolicy.User.Read”  
+   - 单击“添加权限”  以保存。
 
-6. 当返回“必需权限”页面时，请单击“授予权限”，然后单击“是”    。 此步骤预先同意应用程序使用该注册，在指定权限下访问 API。 如果以全局管理员身份登录，则会为运行该应用程序的租户中的所有用户记录同意；反之，它仅适用于你的个人用户帐户。 
+6. 返回到“API 权限”  页后，依次单击“为(租户名称)授予管理员同意”  和“是”  。 此步骤预先同意应用程序使用该注册，在指定权限下访问 API。 如果以全局管理员身份登录，则会为运行该应用程序的租户中的所有用户记录同意；反之，它仅适用于你的个人用户帐户。 
 
-完成后，应用程序注册和 API 权限应类似于以下示例：
+完成后，应用程序注册和 API 权限应如下面的示例所示：
 
-   [![Azure AD 应用注册](media/setup-mip-client/aad-app-registration.png)](media/setup-mip-client/aad-app-registration.png#lightbox)
-
+   [![Azure AD 应用程序注册](media/setup-mip-client/aad-app-registration-overview.png)](media/setup-mip-client/aad-app-registration-overview.png#lightbox) [![Azure AD 应用程序注册](media/setup-mip-client/aad-app-api-permissions.png)](media/setup-mip-client/aad-app-api-permissions.png#lightbox)
 
 要详细了解如何向注册添加 API 和权限，请参阅[配置客户端应用程序以访问 Web API](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app#configure-a-client-application-to-access-web-apis)。 此处可以找到有关添加客户端应用程序所需的 API 和权限信息。  
 
