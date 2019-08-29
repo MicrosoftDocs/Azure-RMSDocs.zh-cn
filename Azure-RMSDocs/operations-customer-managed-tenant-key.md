@@ -4,7 +4,7 @@ description: 当你自己管理 Azure 信息保护租户密钥（自带密钥方
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 08/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b1b3dc6b5a557339a33abfb5cf8b54d995b1da21
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: f8eb311e42f17398a0564d6caf4b02618609d9d5
+ms.sourcegitcommit: dc7603461ce9300635bcb389c18e2e708a8229df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793874"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70121787"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管:租户密钥生命周期操作
 
@@ -73,7 +73,7 @@ Azure Key Vault 具有一个[备份 cmdlet](/powershell/module/az.keyvault/backu
 ## <a name="respond-to-a-breach"></a>对违规行为做出响应
 如果没有违规响应流程，无论如何强大的安全系统都是不完整的。 你的租户密钥可能泄漏或失窃。 即便它得到了很好的保护，在当前这代密钥技术或当前的密钥长度和算法方面也可以找到一些漏洞。
 
-Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全事件。 当收到某个事件的可信报告时，该团队将参与调查事件的范围、根本原因和缓解办法。 如果该事件影响到资产，Microsoft 将使用在订阅时提供的地址，通过电子邮件通知 Azure 信息保护租户管理员。
+Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全事件。 当收到某个事件的可信报告时，该团队将参与调查事件的范围、根本原因和缓解办法。 如果此事件影响到资产, Microsoft 将通过电子邮件通知你的租户全局管理员。
 
 如果你发现了安全违规行为，则你或 Microsoft 能够采取的最佳行动取决于安全违规的范围；Microsoft 将与你共同完成这个过程。 下表显示了一些典型情况以及可能的响应，但具体的响应要取决于在调查过程中揭示的所有信息。
 
