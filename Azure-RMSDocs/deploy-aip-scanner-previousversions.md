@@ -4,7 +4,7 @@ description: 早于当前正式发行版的 Azure 信息保护扫描程序版本
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/27/2019
+ms.date: 08/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 128fa8111271d55f3386246687b53132fa37c659
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.openlocfilehash: 47e345a82427ccdf3d8cf727dd205e9a00965323
+ms.sourcegitcommit: 16b1ae6d29c4bea3fc032c21e522b5dd14b59df5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70054303"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70150222"
 ---
 # <a name="deploying-previous-versions-of-the-azure-information-protection-scanner"></a>部署 Azure 信息保护扫描程序的以前版本
 
@@ -109,6 +109,21 @@ ms.locfileid: "70054303"
 |用于配置扫描程序的用户帐户 |db_owner|
 
 用于安装和配置扫描程序的用户帐户通常是相同的。 不过，如果使用不同的帐户，它们都需要拥有 AzInfoProtectionScanner 数据库的 db_owner 角色。
+
+若要创建用户并授予对此数据库的 db_owner 权限, 请要求 Sysadmin 运行以下 SQL 脚本两次。 第一次, 对于运行扫描程序的服务帐户, 以及第二次用于安装和管理扫描仪。 运行该脚本之前, 请将*domain\user*替换为服务帐户或用户帐户的域名和用户帐户名:
+
+    if not exists(select * from master.sys.server_principals where sid = SUSER_SID('domain\user')) BEGIN declare @T nvarchar(500) Set @T = 'CREATE LOGIN ' + quotename('domain\user') + ' FROM WINDOWS ' exec(@T) END
+    USE AzInfoProtectionScanner IF NOT EXISTS (select * from sys.database_principals where sid = SUSER_SID('domain\user')) BEGIN declare @X nvarchar(500) Set @X = 'CREATE USER ' + quotename('domain\user') + ' FROM LOGIN ' + quotename('domain\user'); exec sp_addrolemember 'db_owner', 'domain\user' exec(@X) END
+
+此外：
+
+- 您必须是将运行扫描程序的服务器上的本地管理员
+- 必须为将运行扫描程序的服务帐户授予对以下注册表项的 "完全控制" 权限:
+    
+    - HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\Server
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server
+
+如果在配置这些权限后出现错误, 则在安装扫描程序时, 可以忽略该错误, 并且可以手动启动 scanner 服务。
 
 #### <a name="restriction-the-service-account-for-the-scanner-cannot-be-granted-the-log-on-locally-right"></a>限制：无法向扫描程序的服务帐户授予“本地登录”权限
 

@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行当前版本的 Azure 信息保
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/27/2019
+ms.date: 08/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 15beb2bb7b9e041fea8b9a7a3d56837e03b72182
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.openlocfilehash: 9def81c3f0914ecf1f96e86e68a0b20b3bcbcf13
+ms.sourcegitcommit: 16b1ae6d29c4bea3fc032c21e522b5dd14b59df5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70054399"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70150247"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -122,6 +122,26 @@ ms.locfileid: "70054399"
 - 如果没有为扫描程序指定自己的配置文件名称，则会将配置数据库命名为AIPScanner_\<computer_name>。 
 
 - 如果指定自己的配置文件名称，则会将配置数据库命名为AIPScanner_\<profile_name>。
+
+若要创建用户并授予对此数据库的 db_owner 权限, 请要求 Sysadmin 运行以下 SQL 脚本两次。 第一次, 对于运行扫描程序的服务帐户, 以及第二次用于安装和管理扫描仪。 运行脚本之前:
+1. 将*domain\user*替换为服务帐户或用户帐户的域名和用户帐户名。
+2. 将*DBName*替换为扫描程序配置数据库的名称。
+
+SQL 脚本:
+
+    if not exists(select * from master.sys.server_principals where sid = SUSER_SID('domain\user')) BEGIN declare @T nvarchar(500) Set @T = 'CREATE LOGIN ' + quotename('domain\user') + ' FROM WINDOWS ' exec(@T) END
+    USE DBName IF NOT EXISTS (select * from sys.database_principals where sid = SUSER_SID('domain\user')) BEGIN declare @X nvarchar(500) Set @X = 'CREATE USER ' + quotename('domain\user') + ' FROM LOGIN ' + quotename('domain\user'); exec sp_addrolemember 'db_owner', 'domain\user' exec(@X) END
+
+此外：
+
+- 您必须是将运行扫描程序的服务器上的本地管理员
+- 必须为将运行扫描程序的服务帐户授予对以下注册表项的 "完全控制" 权限:
+    
+    - HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\Server
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server
+
+如果在配置这些权限后出现错误, 则在安装扫描程序时, 可以忽略该错误, 并且可以手动启动 scanner 服务。
+
 
 #### <a name="restriction-the-service-account-for-the-scanner-cannot-be-granted-the-log-on-locally-right"></a>限制：无法向扫描程序的服务帐户授予“本地登录”权限
 

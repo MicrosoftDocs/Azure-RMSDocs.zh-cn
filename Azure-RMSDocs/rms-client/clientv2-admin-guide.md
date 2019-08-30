@@ -4,23 +4,23 @@ description: 适用于企业网络 (负责部署适用于 Windows 的 Azure 信�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/16/2019
+ms.date: 08/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 95c855701b1fc8de2e3f9f458b2cd760a3abdd4b
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: cb9f7319227ea95afce1251c2ccae979dd5c8468
+ms.sourcegitcommit: bde9c43f2c9809fc5b8d5b43dccb3f89103c3ac6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793230"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159206"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标签客户端管理员指南
 
->适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
 >
 > 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -93,11 +93,16 @@ Azure 信息保护统一标签客户端包括以下各项:
 
 #### <a name="help-and-feedback-section"></a>“**帮助和反馈**”部分
 
-默认情况下, "**告诉我详细**信息" 链接转到[Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)网站。 你可以配置自己的 URL 链接, 该链接将作为标签管理门户中的策略设置之一转到自定义帮助页:Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。
+默认情况下, "**告诉我详细**信息" 链接转到[Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)网站。 你可以配置自己的 URL 链接, 该链接将作为标签管理中心中的策略设置之一转到自定义帮助页:Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。
+
+仅当指定[高级设置](clientv2-admin-guide-customizations.md#add-report-an-issue-for-users)时, 才会显示 "**报告问题**" 链接。 配置此设置时，指定 HTTP 链接，例如支持人员的电子邮件地址。 
 
 如果要求将这些日志文件发送到 Microsoft 支持部门, 则**导出日志**会自动收集并附加 Azure 信息保护统一标签客户端的日志文件。 最终用户也可以使用此选项，将这些日志文件发送给你的支持人员。
 
 **重置设置**将注销用户, 删除当前下载的敏感度标签和标签策略, 并重置 Azure Rights Management 服务的用户设置。
+
+> [!NOTE]
+> 如果客户端出现技术问题, 请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)。
 
 ##### <a name="more-information-about-the-reset-settings-option"></a>有关“重置设置”选项的详细信息
 

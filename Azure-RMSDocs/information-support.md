@@ -4,7 +4,7 @@ description: 管理员资源, 其中包括有关新版本、支持选项以及�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/13/2019
+ms.date: 08/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -15,12 +15,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: d29a8918244f1e3dcdf615d3959df2b3969ffb5f
-ms.sourcegitcommit: b02dc1b575213ea85ca984a0da457dd99f27b762
+ms.openlocfilehash: 3e07a6b23e9b500953024cb953612d1a44cc3a0d
+ms.sourcegitcommit: bde9c43f2c9809fc5b8d5b43dccb3f89103c3ac6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994455"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159157"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -89,7 +89,7 @@ Azure 信息保护技术博客还汇总了[每个月的文档更改](https://tec
 
 故障排除：
 
-- 如果对某些工作原理有疑问：请检查你的问题在[常见问题](faqs.md)页面上是否已有解答。
+- 如果对某些工作原理有疑问：检查您的问题是否已作为[常见问题](faqs.md)进行解答。
 
 - 如果对 Azure 信息保护的支持声明有疑问：请参阅定期更新的[要求](requirements.md)信息。
 
@@ -97,7 +97,11 @@ Azure 信息保护技术博客还汇总了[每个月的文档更改](https://tec
 
 - 如果已为本地服务器部署了 Rights Management 连接器：请参阅[监视](monitor-rms-connector.md)信息，其中包括有关事件日志条目、性能计数器和日志记录的详细信息。
 
-- 有关适用于 Windows 的 Azure 信息保护客户端：请参阅管理员指南中的[安装检查和疑难解答](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)部分，并检查当前使用的版本是否是[受支持的版本](./rms-client/client-version-release-history.md#servicing-information-and-timelines)。
+- 对于 Azure 信息保护客户端：
+    
+    - 统一标签客户端:请参阅此客户端管理员指南中的[安装检查和故障排除](./rms-client/clientv2-admin-guide.md#installation-checks-and-troubleshooting)部分, 并确认你使用的是[受支持的版本](./rms-client/unifiedlabelingclient-version-release-history.md#servicing-information-and-timelines)。 如果有可用的预览版本, 请尝试查看是否解决了问题, 而不是所有修补程序都在版本历史记录中列出。
+    
+    - 经典客户端:请参阅此客户端管理员指南中的[安装检查和故障排除](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)部分, 并确认你使用的是[受支持的版本](./rms-client/client-version-release-history.md#servicing-information-and-timelines)。 如果有可用的预览版本, 请尝试查看是否解决了问题, 而不是所有修补程序都在版本历史记录中列出。
 
 ### <a name="community-resources"></a>社区资源
 

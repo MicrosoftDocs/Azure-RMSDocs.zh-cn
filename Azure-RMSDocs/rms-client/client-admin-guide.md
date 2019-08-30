@@ -4,7 +4,7 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/20/2019
+ms.date: 08/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4162e3df46377a4de859d1bb2dce1363d7146d08
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 0ec64a51d26543d0777bdab8180579793251b8fd
+ms.sourcegitcommit: bde9c43f2c9809fc5b8d5b43dccb3f89103c3ac6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793600"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159219"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -117,6 +117,9 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 “重置设置”会注销用户、删除当前下载的 Azure 信息保护策略，并重置 Azure Rights Management 服务的用户设置。
 
+> [!NOTE]
+> 如果客户端出现技术问题, 请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)。
+
 ##### <a name="more-information-about-the-reset-settings-option"></a>有关“重置设置”选项的详细信息
 
 - 不是本地管理员也能使用此选项，并且不会在事件查看器中记录此操作。 
@@ -212,7 +215,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 3. 通过安装[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)提供的当前正式发布 (GA) 版本升级 Azure 信息保护客户端。
 
-4. 在 PowerShell 会话中，使用你在步骤 1 中指定的相同配置文件名称运行 Update-AIPScanner 命令。 例如：`Update-AIPScanner –Profile Europe`
+4. 在 PowerShell 会话中，使用你在步骤 1 中指定的相同配置文件名称运行 Update-AIPScanner 命令。 例如： `Update-AIPScanner –Profile Europe`
 
 5. 仅当扫描程序在断开连接的计算机上运行时：现在运行 [Import-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration)，并指定包含导出设置的文件。
 
