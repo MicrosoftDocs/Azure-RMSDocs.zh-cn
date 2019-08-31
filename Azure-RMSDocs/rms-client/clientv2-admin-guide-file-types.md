@@ -11,16 +11,16 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f99432b428e952791e4a5797d246c53e7dba5aef
-ms.sourcegitcommit: f0dee92d6668001681b507e82f8aea61f3bfa96e
+ms.openlocfilehash: 626f4f5c6e8f2e59c67b92dc324c0800869a375e
+ms.sourcegitcommit: d3ac12c51b41bd1ec4ce4009303d124efc95353b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894432"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180678"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端支持的文件类型
 
->适用对象：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*>
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection), windows 10, Windows 8.1, windows 8, 带 SP1 的 windows 7, windows server 2016, windows Server 2012 R2, windows server 2012, windows Server 2008 R2*>
 >
 > 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 

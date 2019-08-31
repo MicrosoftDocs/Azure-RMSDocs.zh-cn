@@ -11,16 +11,16 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ce175ae67c443cf14f6b265c314c490b7661f638
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 29d08fc8b4b2c2eb73840d8d6dc1f443cd904fcf
+ms.sourcegitcommit: d3ac12c51b41bd1ec4ce4009303d124efc95353b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793277"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180652"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
->适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
 >
 > 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -174,7 +174,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果安装这一 Microsoft .NET Framework 更高版本不可行，可以在安装客户端时使用 **DowngradeDotNetRequirement=True** 参数和值，这样就可以在已安装 Microsoft .NET Framework 版本 4.5.1 的情况下忽略这项要求。
 
-例如：`AzInfoProtection_UL.exe DowngradeDotNetRequirement=True`
+例如： `AzInfoProtection_UL.exe DowngradeDotNetRequirement=True`
 
 建议你谨慎使用此参数, 并了解当 Azure 信息保护统一标签客户端与此旧 Microsoft .NET 版本一起使用时, Office 应用程序的报告问题挂起Framework. 如果确实遇到了尚未解决的问题，请先升级到建议的版本，然后再尝试其他故障排除解决方案。 
 
@@ -192,7 +192,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 2. 对于运行 .msi 文件的每台计算机，必须确保以下软件依赖项已经就绪。 例如，将这些依赖项与客户端 .msi 版本一起打包，或只部署到满足这些依赖关系的计算机上：
     
-    |Office 版本|操作系统|软件|Action|
+    |Office 版本|操作系统|软件|操作|
     |--------------------|--------------|----------------|---------------------|
     |Office 365 1902 或更高版本之外的所有版本|仅限于 Windows 10 版本 1809，操作系统内部版本早于 17763.348|[KB 4482887](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887)|安装|
     |Office 2016|所有支持的版本|64位:[KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=55007)<br /><br />32位:[KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=54999)<br /><br /> 版本：1.0|安装|
