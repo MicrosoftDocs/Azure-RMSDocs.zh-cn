@@ -12,18 +12,18 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f60c1bdc8dabd586e96c758afe1f93f46d6afb16
-ms.sourcegitcommit: 0d336e4b5386f4861db9492c7dce2ef0e8cf0d6d
+ms.openlocfilehash: 6ce27b6750aad0e7477e3cf20559e3133fe25f78
+ms.sourcegitcommit: d3ac12c51b41bd1ec4ce4009303d124efc95353b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2019
-ms.locfileid: "70017647"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180711"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
->适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：*[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 在管理 Azure 信息保护统一标签客户端时, 请使用以下信息来了解特定方案或用户子集可能需要的高级配置。
 
@@ -317,9 +317,9 @@ Label applied manually
 
 - 键:**ExternalContentMarkingToRemove**
 
-- 键值 1： **\*Confidential***
+- 键值 1：**\*Confidential***
 
-- 键值 2： **\*Label applied*** 
+- 键值 2：**\*Label applied*** 
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -439,7 +439,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 键:**ReportAnIssueLink**
 
-- 值： **\<HTTP string>**
+- 值：**\<HTTP string>**
 
 网站示例值：`https://support.contoso.com`
 
@@ -591,7 +591,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 键:**OutlookOverrideUnlabeledCollaborationExtensions**
 
-- 值： **\<** 文件扩展名以显示消息，以逗号分隔 **>**
+- 值： **\<** 文件扩展名以显示消息，以逗号分隔**>**
 
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
