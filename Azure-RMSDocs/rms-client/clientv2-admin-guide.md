@@ -4,19 +4,19 @@ description: 适用于企业网络 (负责部署适用于 Windows 的 Azure 信�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/29/2019
+ms.date: 09/01/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e8f2029122ba489aff6a0cf50e2d961ea28ed50e
-ms.sourcegitcommit: d3ac12c51b41bd1ec4ce4009303d124efc95353b
+ms.openlocfilehash: 142b3b527b0936baf0bbd8de0664c601151766d0
+ms.sourcegitcommit: 4c4bf02880c26f5c163e75499348dc10a84357c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180655"
+ms.lasthandoff: 09/01/2019
+ms.locfileid: "70209278"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标签客户端管理员指南
 
@@ -148,7 +148,7 @@ Azure 信息保护统一标签客户端支持 Office 365 支持的相同语言�
 
 对于这些语言, 菜单选项、对话框和来自 Azure 信息保护的消息, 统一标签客户端以用户的语言显示。 只有单个安装程序可检测语言, 因此, 无需额外配置即可安装不同语言的 Azure 信息保护统一标签客户端。 
 
-但是, Azure 信息保护统一标签客户端当前不支持标签的不同语言。 此外, 不会转换视觉标记, 也不支持多种语言。
+但是, 在标签中心配置标签时, 不会自动翻译指定的标签名称和说明。 要使用户查看其首选语言的标签, 请提供自己的翻译, 并通过使用 Office 365 安全性和符合性 PowerShell 并使用[集标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)的*LocaleSettings*参数为标签配置它们。 视觉标记未翻译，且不支持多种语言。
 
 ## <a name="post-installation-tasks"></a>安装后的任务
 
