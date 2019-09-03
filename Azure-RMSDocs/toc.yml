@@ -163,7 +163,7 @@
                   href: migrate-portal.md
             - name: 配置语言
               href: configure-policy-languages.md
-            - name: 将标签迁移到 Office 365
+            - name: 激活统一标记
               href: configure-policy-migrate-labels.md
         - name: 配置安全文档协作
           href: secure-collaboration-documents.md
