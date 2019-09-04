@@ -4,7 +4,7 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/05/2019
+ms.date: 09/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4a8df46df14a4c06196d204865f7a99ce5fa5821
-ms.sourcegitcommit: 332801617ce83ebb3f01edf34cbb69b810662be7
+ms.openlocfilehash: 0d17189d2c5cd896727de1de05233fbfcd9b9868
+ms.sourcegitcommit: dd60bdae3ed608306cd8f9dbe92aac6650d8fbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808056"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70215683"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -29,9 +29,9 @@ ms.locfileid: "68808056"
 
 请尝试学习我们的[编辑策略并创建新标签](infoprotect-quick-start-tutorial.md)教程，在短短几分钟内即可正常使用。
 
-有关其他分类特性和功能何时可用的信息，请留意[企业移动性 + 安全性博客](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Azure%20Information%20Protection)和 [Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)上的公告。 当前版本具有一些限制，包括以下内容：
+有关其他分类特性和功能何时可用的信息，请留意[企业移动性 + 安全性博客](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Azure%20Information%20Protection)和 [Yammer 站点](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)上的公告。 当前版本有一些限制，其中包括：
 
-- Office web apps (适用于 web 的 Office) 中没有标签功能。
+- Office web apps （适用于 web 的 Office）中没有标签功能。
 
 - 没有分类或标签与 Exchange Online 或 SharePoint Online 集成。
 
@@ -39,20 +39,20 @@ ms.locfileid: "68808056"
 > 现提供预览：
 > - 分类和标签的集中式报告。 有关详细信息，请参阅 [Azure 信息保护的中心报告](reports-aip.md)。
 >
->**最近发布了**：
-> - 移动设备（iOS 和 Android）和 Mac 计算机的 Office 应用具有内置标记功能。 有关详细信息，请参阅[将敏感标签应用于 Office 中的文档和电子邮件](https://aka.ms/officemipdocs)。
+>**Office 的敏感度标签**：
+> - 有关哪些 Office 应用支持敏感度标签的最新信息，请参阅 "目前该功能在何处可用？"。 部分介绍[如何在 Office 中将敏感标签应用于文档和电子邮件](https://aka.ms/officemipdocs)。
 
 通过访问 Azure 信息保护的 [UserVoice 站点](https://msip.uservoice.com/)，请求新功能并对请求进行投票。
 
 ## <a name="which-client-do-i-install-for-testing-new-functionality"></a>我应该安装哪个客户端来测试新功能？
 
-目前有两个 Windows 客户端: 
+目前有两个 Windows 客户端： 
 
-- **Azure 信息保护统一标签客户端**, 它从以下管理中心之一下载标签和策略设置:Office 365 安全与合规中心, Microsoft 365 安全中心, Microsoft 365 合规中心。 此客户端现已正式发布, 并且有一个预览版本, 你可以在将来的版本中测试其他功能。
+- **Azure 信息保护统一标签客户端**，它从以下管理中心之一下载标签和策略设置：Office 365 安全与合规中心，Microsoft 365 安全中心，Microsoft 365 合规中心。 此客户端现已正式发布，并且可能有一个预览版本，你可以在将来的版本中测试其他功能。
 
-- 用于从 Azure 门户下载标签和策略设置的**Azure 信息保护客户端 (经典)** 。 此客户端建立在以前的客户端通用版本上。
+- 用于从 Azure 门户下载标签和策略设置的**Azure 信息保护客户端（经典）** 。 此客户端建立在以前的客户端通用版本上。
 
-如果客户的当前功能集和功能满足你的业务要求, 我们建议你与统一的标签客户端进行测试。 否则, 或者如果已在尚未[迁移到统一标签存储](configure-policy-migrate-labels.md)的 Azure 门户中配置了标签, 请使用经典客户端。
+如果客户的当前功能集和功能满足你的业务要求，我们建议你与统一的标签客户端进行测试。 否则，或者如果已在尚未[迁移到统一标签存储](configure-policy-migrate-labels.md)的 Azure 门户中配置了标签，请使用经典客户端。
 
 有关详细信息，包括特性和功能的比较表，请参阅[选择使用哪个 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use)。
 
@@ -82,7 +82,7 @@ ms.locfileid: "68808056"
 
 ## <a name="can-i-create-a-document-template-that-automatically-includes-the-classification"></a>我能否创建自动包含分类的文档模板？
 
-是。 可以将标签配置为，[应用包含标签名称的页眉或页脚](configure-policy-markings.md)。 不过，如果这无法满足你的要求，可以创建包含所需格式设置的文档模板，并将分类添加为域代码。 
+是。 可以将标签配置为，[应用包含标签名称的页眉或页脚](configure-policy-markings.md)。 但如果不满足你的要求，只针对 Azure 信息保护客户端（经典），可以创建一个具有所需格式的文档模板，然后将分类添加为字段代码。 
 
 例如，文档的页眉中可能有一个显示分类的表。 或者，对引用文档分类的简介使用具体的字词。
 
