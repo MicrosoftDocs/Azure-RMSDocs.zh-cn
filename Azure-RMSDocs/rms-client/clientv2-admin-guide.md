@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5c24dbaee6be5ab6e016531caa94da74e6e4487c
-ms.sourcegitcommit: 6ae7844205506786e09937f663457572bc8f71c4
+ms.openlocfilehash: 29a034c436ca8157cb7d64707e5fda69f3422472
+ms.sourcegitcommit: 47826c7149985cd22bce243183748ab59c3dcb51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70800802"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808685"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标签客户端管理员指南
 
@@ -106,13 +106,15 @@ Azure 信息保护统一标签客户端包括以下各项：
 
 - 不是本地管理员也能使用此选项，并且不会在事件查看器中记录此操作。 
 
-- 除非文件被锁定，否则此操作将删除以下位置中的所有文件。 这些文件包括客户端证书、保护模板、标签管理门户的敏感度标签和策略，以及缓存的用户凭据。 不会删除客户端日志文件。
+- 除非文件被锁定，否则此操作将删除以下位置中的所有文件。 这些文件包括客户端证书、保护模板、标签管理中心的敏感标签和策略，以及缓存的用户凭据。 不会删除客户端日志文件。
     
     - %LocalAppData%\Microsoft\DRM
     
     - %LocalAppData%\Microsoft\MSIPC
     
-    - \\ *%LocalAppData%\Microsoft\MSIP\mip应用\<\mip\>*
+    - \\ *%LocalAppData%\Microsoft\MSIP\mipprocessname\<\mip\>*
+    
+    - %LocalAppData%\Microsoft\MSIP\AppDetails
     
     - %LocalAppData%\Microsoft\MSIP\TokenCache
 
