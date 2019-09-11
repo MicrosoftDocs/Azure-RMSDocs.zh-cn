@@ -14,23 +14,32 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: c68970dffb263f30eb47ded0a29c2c5700b46bbe
-ms.sourcegitcommit: ad15beac7d95fe3904f3d4671c1e18e2136f74b4
+ms.openlocfilehash: 8782889ab2acd630831b3b8ed472f5740b904cb7
+ms.sourcegitcommit: 9ed9013fb79f34d49173acb1b200fbe05ce6b316
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69999220"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892568"
 ---
 # <a name="release-notes"></a>发行说明
 
 本文包含有关此版本和早前版本 RMS SDK 2.1 的重要信息。
 
+## <a name="september-2019---update"></a>2019年9月-更新 
+
+- 修复了尝试同时调用初始化方法作为某些其他 RMS 客户端方法时可能发生的死锁。
+- 解决了确定受密码保护的 Office 文件是否受 RMS 保护的问题。
+-   更新针对特殊用途许可证的授权验证。
+- PDF 保护程序的更新。
+- 其他 bug 修复。
+- 对 C 运行时库以静态方式进行的更新链接。
+
 ## <a name="april-2019---update"></a>2019年4月-更新
 - 文件 API 中的 Bug 修复。
-- 文件 API 经过更新, 可在解密内容时检查导出权限, 而不是提取向右提取内容。
-- 安装程序修复, 以确保在升级后安装新的 PDF v2 保护程序。
+- 文件 API 经过更新，可在解密内容时检查导出权限，而不是提取向右提取内容。
+- 安装程序修复，以确保在升级后安装新的 PDF v2 保护程序。
 - 遥测数据发生更改。 此更改需要更新安装 C 运行时库的安装包。
-- 服务后端身份验证更改, # # # # # #please 更新到此 SDK 版本, 如果对应用程序使用对称密钥身份验证, 则 minmize 中断
+- 服务后端身份验证更改，**如果对应用程序使用对称密钥身份验证，请更新到此 SDK 版本以 minmize 中断。**
 - 支持 VC 15。9
 
 
