@@ -4,7 +4,7 @@ description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/13/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6661dbd4e19599f12ff585a427e09c1f2ac5352c
-ms.sourcegitcommit: b02dc1b575213ea85ca984a0da457dd99f27b762
+ms.openlocfilehash: 1cdeb5fec9ea57decf319b9d65104a5a334a0585
+ms.sourcegitcommit: 32ec752f3bda160011c48c82e24f31ffffe5d6ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994436"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888069"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
@@ -51,7 +51,7 @@ ms.locfileid: "68994436"
 
 ## <a name="before-you-begin"></a>在开始之前
 
-标签迁移具有很多优点, 但不可逆, 因此请确保你已了解以下更改和注意事项:
+标签迁移具有很多优点，但不可逆，因此请确保你已了解以下更改和注意事项：
 
 - 请确保你的[客户端支持统一标签](#clients-and-services-that-support-unified-labeling), 并且如有必要, 在 Azure 门户 (适用于不支持统一标签的客户端) 和管理中心 (对于支持统一标签的客户端) 进行管理。
 
@@ -72,7 +72,7 @@ ms.locfileid: "68994436"
     
     - 迁移了包含基于云的保护设置的标签后, 保护模板的结果范围是在 Azure 门户 (或通过使用 AIPService PowerShell 模块) 和管理中心定义的作用域中定义的作用域。 
 
-- 对于每个标签，Azure 门户仅显示可编辑的标签显示名称。 用户将在其应用中看到此标签名称。 管理中心显示标签的显示名称和标签名称。 标签名称是首次创建标签时指定的初始名称, 后端服务使用此属性进行标识。 迁移标签时, 显示名称将保持不变, 并且标签名称将重命名为 Azure 门户中的标签 ID。
+- 对于每个标签，Azure 门户仅显示可编辑的标签显示名称。 用户将在其应用中看到此标签名称。 管理中心显示标签的显示名称和标签名称。 标签名称是首次创建标签时指定的初始名称，后端服务使用此属性进行标识。 迁移标签时，显示名称将保持不变，并且标签名称将重命名为 Azure 门户中的标签 ID。
 
 - 不迁移标签的任何本地化字符串。 使用 Office 365 安全性和符合性 PowerShell 为已迁移标签定义新的本地化字符串, 并为[集标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)定义*LocaleSettings*参数。
 
@@ -91,7 +91,7 @@ Azure 信息保护客户端 (经典) 可以使用列出的所有标签设置而�
 |启用或禁用状态<br /><br />此状态不同步到管理中心 |“不适用”|等效于是否发布标签。 |
 |从列表中选择的标签颜色或使用 RGB 代码指定的标签颜色 |是|标签颜色没有配置选项。 相反, 你可以在 Azure 门户中配置标签颜色, 也可以使用[PowerShell](./rms-client/clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)。|
 |使用预定义模板的基于云的保护或基于 HYOK 的保护 |否|预定义模板没有配置选项。 我们不建议使用此配置发布标签。|
-|使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |是|对于这些 Office 应用, 管理中心没有用户定义的权限的配置选项。 但是, 如果您使用此配置迁移标签, 或者使用 Azure 门户在迁移之后配置标签, 则支持此设置。 <br /><br /> 如果使用此配置发布标签, 请查看[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中应用标签的结果。|
+|使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |是|管理中心现在具有用户定义的权限的配置选项。 <br /><br /> 如果使用此配置发布标签, 请查看[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中应用标签的结果。|
 |使用 Outlook（不可转发）中用户定义权限的基于 HYOK 的保护 |否|HYOK 没有配置选项。 我们不建议使用此配置发布标签。 否则，请在[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中查看应用此标签所带来的后果。|
 |删除保护 |否|没有用于删除保护的配置选项。 我们不建议使用此配置发布标签。<br /><br /> 如果使用此配置发布标签, 则在应用该标签时, 如果该标签之前已由标签应用, 则会将其删除。 如果之前从标签中独立应用了保护，则将保留保护。|
 |为视觉标记（页眉、页脚、水印）使用 RGB 代码自定义字体和字体颜色|是|视觉标记的配置限制为颜色和字体大小列表。 尽管无法看见管理中心中配置的值，仍可以不做任何更改发布此标签。 <br /><br />若要更改这些选项，可以使用 Azure 门户。 但是，请考虑将颜色更改为管理中心中列出的选项之一，以便于管理。|
@@ -179,7 +179,7 @@ Azure 信息保护客户端 (经典) 可以使用列出的所有标签设置而�
 
 ## <a name="next-steps"></a>后续步骤
 
-有关我们的客户体验团队的其他指导和技巧, 请参阅以下博客文章:[了解统一标签迁移](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Understanding-Unified-Labeling-migration/ba-p/783185)。
+有关我们的客户体验团队的其他指导和技巧，请参阅以下博客文章：[了解统一标签迁移](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Understanding-Unified-Labeling-migration/ba-p/783185)。
 
 有关现在可以配置并在其中一个管理中心发布的已迁移标签的详细信息，请参阅[敏感度标签的概述](/Office365/SecurityCompliance/sensitivity-labels)。
 

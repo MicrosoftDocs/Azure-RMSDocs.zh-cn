@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 08/19/2019
+ms.date: 09/05/2019
 manager: rkarlin
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d3135126a837db9405a006bfd571a05a98ded7b7
-ms.sourcegitcommit: 30fc0e855b4fbcb61bcffa3e8c97a4beb777a787
+ms.openlocfilehash: 9108dbe9712b57dd5bef59c5258dccccaf137d86
+ms.sourcegitcommit: 91982b08ba8ce734b6d82382db227fcaa2b15e56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630057"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70872352"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -27,7 +27,7 @@ ms.locfileid: "69630057"
 > [!NOTE]
 > 此功能目前处于预览状态，随时可能更改。
 
-使用 Azure 信息保护分析进行集中报告, 以帮助跟踪对组织数据进行分类和保护的标签。 此外：
+使用 Azure 信息保护分析进行集中报告，以帮助跟踪对组织数据进行分类和保护的标签。 此外：
 
 - 监控组织中带标签和受保护的文档以及电子邮件
 
@@ -37,9 +37,12 @@ ms.locfileid: "69630057"
 
 - 确定包含敏感信息且若未保护则可能给组织带来风险的文档，并按照以下建议缓解风险。
 
-- 确定内部或外部用户何时访问受保护的文档, 以及是否授予或拒绝访问权限。
+- 确定内部或外部用户何时访问受保护的文档，以及是否授予或拒绝访问权限。
 
 你看到的数据是从 Azure 信息保护客户端和扫描程序、[支持统一标签的客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)以及[保护使用日志](log-analyze-usage.md)聚合而来的。
+
+> [!NOTE]
+> 目前，Azure 信息保护分析不包括支持统一标签的客户端和服务的自定义信息类型。
 
 例如，你将能够看到以下数据：
 
@@ -65,9 +68,9 @@ ms.locfileid: "69630057"
     
     - 已对特定文件路径执行的标记操作
     
-    - 特定应用程序执行了哪些标记操作, 如文件资源管理器和右键单击、PowerShell、扫描仪或 Microsoft Cloud App Security
+    - 特定应用程序执行了哪些标记操作，如文件资源管理器和右键单击、PowerShell、扫描仪或 Microsoft Cloud App Security
     
-    - 用户或拒绝用户访问哪些受保护的文档, 即使这些用户未安装 Azure 信息保护客户端或组织外
+    - 用户或拒绝用户访问哪些受保护的文档，即使这些用户未安装 Azure 信息保护客户端或组织外
 
     - 有关更多信息，请进一步查看报告的文件以查看“活动详细信息”
 
@@ -114,7 +117,9 @@ ms.locfileid: "69630057"
 
 - 对于电子邮件：带标签的电子邮件的电子邮件主题和电子邮件发件人。 
 
-- 在内容中已检测到的敏感信息类型（[预定义](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)和自定义）。
+- 在内容中检测到的[预定义敏感信息类型](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)。
+    
+    如果将 Azure 信息保护标签与自定义条件一起使用，则还会发送自定义信息类型的名称。 不会发送在 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心创建的自定义敏感信息类型。
 
 - Azure 信息保护客户端版本。
 
@@ -122,23 +127,23 @@ ms.locfileid: "69630057"
 
 此信息存储在组织拥有的 Azure Log Analytics 工作区中，并可供有权访问此工作区的用户从 Azure 信息保护独立查看。 有关详细信息，请参阅 [Azure 信息保护分析的必备权限](#permissions-required-for-azure-information-protection-analytics)部分。 要了解如何管理对工作区的访问，请参阅 Azure 文档中的[使用 Azure 权限管理对 Log Analytics 工作区的访问](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#manage-access-to-log-analytics-workspace-using-azure-permissions)部分。
 
-若要防止 Azure 信息保护客户端 (经典) 发送此数据, 请将 "**将审核数据发送到 Azure 信息保护 log analytics** "[策略设置](configure-policy-settings.md)设置为 "**关闭**":
+若要防止 Azure 信息保护客户端（经典）发送此数据，请将 "**将审核数据发送到 Azure 信息保护分析**" 的[策略设置](configure-policy-settings.md)设置为 "**关闭**"：
 
 - 若要使大多数用户发送此数据，而使一部分用户无法发送审核数据，请执行以下操作： 
-    - 在部分用户的作用域内策略中将“将审核数据发送到 Azure 信息保护日志分析”设置为“关闭”。 此配置专用于生产方案。
+    - 在用户子集的作用域内策略中，将 "向**Azure 信息保护分析发送审核数据**" 设置为 "**关闭**"。 此配置专用于生产方案。
 
 - 若要仅使一部分用户发送审核数据，请执行以下操作： 
-    - 在全局策略中将“将审核数据发送到 Azure 信息保护日志分析”设置为“关闭”，在部分用户的作用域内策略中设置为“打开”。 此配置专用于测试方案。
+    - 在全局策略中将 "向**Azure 信息保护分析发送审核数据**" 设置为 "**关闭**"，并在 "用户" 子集的作用域内策略中设置 **"打开**"。 此配置专用于测试方案。
 
-若要防止 Azure 信息保护统一客户端发送此数据, 请配置 "标签策略"[高级设置](./rms-client/clientv2-admin-guide-customizations.md#disable-sending-audit-data-to-azure-information-protection-analytics)。
+若要防止 Azure 信息保护统一客户端发送此数据，请配置 "标签策略"[高级设置](./rms-client/clientv2-admin-guide-customizations.md#disable-sending-audit-data-to-azure-information-protection-analytics)。
 
 #### <a name="content-matches-for-deeper-analysis"></a>更深入分析的内容匹配项 
 
-Azure 信息保护的 Azure Log Analytics 工作区包含一个复选框, 用于收集和存储标识为敏感信息类型 (预定义或自定义条件) 的数据。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 如果你不想发送此额外数据, 请不要选中此复选框,**以便对你的敏感数据进行更深入的分析**。 如果希望大多数用户发送此额外数据, 并且用户的一个子集无法发送它, 请选中该复选框, 然后执行以下操作:
+Azure 信息保护的 Azure Log Analytics 工作区包含一个复选框，用于收集和存储标识为敏感信息类型（预定义或自定义条件）的数据。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 如果你不想发送此额外数据，请不要选中此复选框，**以便对你的敏感数据进行更深入的分析**。 如果希望大多数用户发送此额外数据，并且用户的一个子集无法发送它，请选中该复选框，然后执行以下操作：
 
-- 对于经典客户端和扫描器:为用户子集配置作用域内策略中的 "[高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
+- 对于经典客户端和扫描器：为用户子集配置作用域内策略中的 "[高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
 
-- 对于统一标签客户端:为用户子集配置标签策略中的[高级设置](./rms-client/clientv2-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
+- 对于统一标签客户端：为用户子集配置标签策略中的[高级设置](./rms-client/clientv2-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
 
 收集内容匹配项后，当你向下钻取到活动日志中的文件以显示活动详细信息时，这些匹配项项将显示在报表中。 也可以使用查询来查看和检索此信息。
 
@@ -149,9 +154,9 @@ Azure 信息保护的 Azure Log Analytics 工作区包含一个复选框, 用于
 |---------------|--------------------|
 |包含 Log Analytics 且用于与 Azure 信息保护相同的租户的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
 |Azure 信息保护客户端|支持统一标签客户端和经典客户端。 <br /><br />如果你还没有其中的一个客户端, 则可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装这些客户端。|
-|Microsoft Cloud App Security |若要显示 Microsoft Cloud App Security 的信息, 请配置[Azure 信息保护集成](https://docs.microsoft.com/cloud-app-security/azip-integration)。|
+|Microsoft Cloud App Security |若要显示 Microsoft Cloud App Security 的信息，请配置[Azure 信息保护集成](https://docs.microsoft.com/cloud-app-security/azip-integration)。|
 |对于“发现和风险”报表： <br /><br />-若要显示本地数据存储中的数据, 你至少部署了一个 Azure 信息保护扫描程序实例 <br /><br />-若要显示 Windows 10 计算机上的数据, 它们必须是1809的最小内部版本, 你使用的是 Microsoft Defender 高级威胁防护 (Microsoft Defender ATP), 并且已启用 Microsoft 的 Azure 信息保护集成功能Defender 安全中心|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关配置和使用 Microsoft Defender 安全中心提供的 Azure 信息保护集成功能的信息, 请参阅[Windows 中的信息保护概述](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。|
-|对于“建议”报告： <br /><br />-若要从 Azure 门户添加新的数据存储库作为建议操作, 你必须使用在 Azure 门户中配置的 Azure 信息保护扫描程序的版本 |若要部署扫描程序, 请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。|
+|对于“建议”报告： <br /><br />-若要从 Azure 门户添加新的数据存储库作为建议操作，你必须使用在 Azure 门户中配置的 Azure 信息保护扫描程序的版本 |若要部署扫描程序, 请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。|
 
 ### <a name="permissions-required-for-azure-information-protection-analytics"></a>Azure 信息保护分析必备的先决条件
 
@@ -202,7 +207,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包含一个复选框, 用于
 
 ### <a name="storage-requirements-and-data-retention"></a>存储要求和数据保留
 
-在 Azure 信息保护工作区中收集和存储的数据量会因多种因素而异, 具体取决于你的 Azure 信息保护客户端和其他支持的终结点 (无论你是正在收集终结点发现数据, 你已部署了扫描仪, 已访问的受保护文档的数量, 等等。
+在 Azure 信息保护工作区中收集和存储的数据量会因多种因素而异，具体取决于你的 Azure 信息保护客户端和其他支持的终结点（无论你是正在收集终结点发现数据，你已部署了扫描仪，已访问的受保护文档的数量，等等。
 
 然而, 作为起点, 你可能会发现以下估计非常有用:
 
@@ -210,7 +215,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包含一个复选框, 用于
 
 - 对于 Azure 信息保护客户端、扫描仪和 Microsoft Defender ATP 生成的审核数据:每月 20 GB/10000 活动用户。
 
-如果你使用必需的标签, 或者你为大多数用户配置了默认标签, 则你的费率可能会显著提高。
+如果你使用必需的标签，或者你为大多数用户配置了默认标签，则你的费率可能会显著提高。
 
 Azure Monitor 日志具有**使用情况和预估成本**功能, 可帮助您估计和查看存储的数据量, 还可以控制 Log Analytics 工作区的数据保留期。 有关详细信息, 请参阅[使用 Azure Monitor 日志管理使用情况和成本](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage)。
 
@@ -230,7 +235,13 @@ Azure Monitor 日志具有**使用情况和预估成本**功能, 可帮助您估
 
 如果需要关于创建 Log Analytics 工作区的帮助，请参阅[在 Azure 门户中创建 Log Analytics 工作区](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace)。
 
-配置工作区后，即可开始查看报表。
+配置工作区时，如果在以下管理中心之一发布敏感度标签，请执行以下操作：Office 365 安全与合规中心，Microsoft 365 安全中心，Microsoft 365 符合性中心：
+
+- 在 Azure 门户中转到**Azure 信息保护** > **管理** > **统一标签**，然后选择 "**发布**"。
+    
+    每次在标签中心中进行标签更改（创建、修改、删除）时，请选择此**发布**选项。 
+
+你现在可以查看报表。
 
 ## <a name="how-to-view-the-reports"></a>如何查看报告
 
@@ -238,7 +249,7 @@ Azure Monitor 日志具有**使用情况和预估成本**功能, 可帮助您估
 
 - **使用情况报表(预览版)** ：使用此报表查看标签是如何使用的。
 
-- **活动日志(预览版)** ：使用此报表查看用户执行的标记操作，以及设备上和对文件路径执行的标记操作。 此外, 对于受保护的文档, 你可以查看组织内部和外部用户的访问尝试 (成功或拒绝), 即使他们没有安装 Azure 信息保护客户端
+- **活动日志(预览版)** ：使用此报表查看用户执行的标记操作，以及设备上和对文件路径执行的标记操作。 此外，对于受保护的文档，你可以查看组织内部和外部用户的访问尝试（成功或拒绝），即使他们没有安装 Azure 信息保护客户端
     
     此报表有“列”选项，可用于显示比默认显示更多的活动信息。 还可以选择它来显示“活动详细信息”，方便查看文件相关的更多详细信息。
 
@@ -271,8 +282,8 @@ Azure 信息保护的记录数据存储在下表中：**InformationProtectionLog
 
 |列名|描述|
 |-----------|-----------|
-|访问|已成功打开受保护的文档, 如果被跟踪, 则由文件名标识; 如果未跟踪, 则由其标识。|
-|AccessDenied|受保护的文档被拒绝访问, 如果被跟踪, 则由文件名标识; 如果未跟踪, 则由其标识。|
+|访问|已成功打开受保护的文档，如果被跟踪，则由文件名标识; 如果未跟踪，则由其标识。|
+|AccessDenied|受保护的文档被拒绝访问，如果被跟踪，则由文件名标识; 如果未跟踪，则由其标识。|
 |Time|事件时间:格式 YYYY-MM-YYYY-MM-DDTHH: MM: SS 中的 UTC|
 |用户|用户：格式 UPN 或 DOMAIN\USER|
 |ItemPath|完整项目路径或电子邮件主题|

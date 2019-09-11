@@ -3,7 +3,7 @@ title: 自定义配置-Azure 信息保护统一标签客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/19/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6ce27b6750aad0e7477e3cf20559e3133fe25f78
-ms.sourcegitcommit: d3ac12c51b41bd1ec4ce4009303d124efc95353b
+ms.openlocfilehash: 13401d61990298a039bc1d74284d45177564efd8
+ms.sourcegitcommit: 91982b08ba8ce734b6d82382db227fcaa2b15e56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180711"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70872377"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
->适用范围：*[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
 >
-> 说明：*[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 在管理 Azure 信息保护统一标签客户端时, 请使用以下信息来了解特定方案或用户子集可能需要的高级配置。
 
@@ -79,9 +79,9 @@ ms.locfileid: "70180711"
 
 指定 PowerShell*标识*参数的标签策略名称很简单, 因为在管理标签策略的管理中心, 你只会看到一个策略名称。 但对于标签, 你会在 "管理中心" 中看到 "**名称**" 和 "**显示名称**"。 在某些情况下, 两者的值都是相同的, 但它们可能不同:
 
-- **Name**是标签的原始名称, 在所有标签中都是唯一的。 如果在创建标签之后更改其名称, 此值保持不变。 对于从 Azure 信息保护迁移的标签, 你可能会看到 "Azure 门户中的标签的标签 ID。
+- **Name**是标签的原始名称, 在所有标签中都是唯一的。 如果在创建标签之后更改其名称, 此值保持不变。 对于从 Azure 信息保护迁移的标签，你可能会看到 "Azure 门户中的标签的标签 ID。
 
-- **显示名称**是用户看到的标签名称, 并且在所有标签中不必唯一。 例如, 用户会看到一个**员工**子标签了 "**机密**" 标签, 而另一个员工子标签 "**高度机密**" 标签。 这些子标签都显示相同的名称, 但不是相同的标签, 并且具有不同的设置。
+- **显示名称**是用户看到的标签名称, 并且在所有标签中不必唯一。 例如, 用户会看到一个**员工**子标签了 "**机密**" 标签, 而另一个员工子标签 "**高度机密**" 标签。 这些子标签都显示相同的名称，但不是相同的标签，并且具有不同的设置。
 
 若要配置标签高级设置, 请使用 "**名称**" 值。 例如, 若要标识下图中的标签, 请指定`-Identity "All Company"`:
 
@@ -317,9 +317,9 @@ Label applied manually
 
 - 键:**ExternalContentMarkingToRemove**
 
-- 键值 1：**\*Confidential***
+- 键值 1： **\*Confidential***
 
-- 键值 2：**\*Label applied*** 
+- 键值 2： **\*Label applied*** 
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -439,7 +439,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 键:**ReportAnIssueLink**
 
-- 值：**\<HTTP string>**
+- 值： **\<HTTP string>**
 
 网站示例值：`https://support.contoso.com`
 
@@ -591,7 +591,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 键:**OutlookOverrideUnlabeledCollaborationExtensions**
 
-- 值： **\<** 文件扩展名以显示消息，以逗号分隔**>**
+- 值： **\<** 文件扩展名以显示消息，以逗号分隔 **>**
 
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
@@ -638,7 +638,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-Azure 信息保护统一标签客户端支持中心报表, 并在默认情况下将其审核数据发送到[Azure 信息保护分析](../reports-aip.md)。 有关所发送和存储的信息的详细信息, 请参阅中央报表文档中的[收集和发送到 Microsoft](../reports-aip.md#information-collected-and-sent-to-microsoft)部分的信息。
+Azure 信息保护统一标签客户端支持中心报表，并在默认情况下将其审核数据发送到[Azure 信息保护分析](../reports-aip.md)。 有关所发送和存储的信息的详细信息，请参阅中央报表文档中的[收集和发送到 Microsoft](../reports-aip.md#information-collected-and-sent-to-microsoft)部分的信息。
 
 若要更改此行为, 以便统一标签客户端不发送此信息, 请为所选标签策略输入以下字符串:
 
@@ -655,15 +655,15 @@ Azure 信息保护统一标签客户端支持中心报表, 并在默认情况下
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-在 Office 应用中使用 Azure 信息保护统一标签客户端时, 它会在首次保存文档时查找文档中的敏感信息。 **如果**提供[EnableAudit](#disable-sending-audit-data-to-azure-information-protection-analytics) advanced 设置, 则不会将任何敏感信息类型 (预定义或自定义) 都发送到 Azure 信息保护分析。
+在 Office 应用中使用 Azure 信息保护统一标签客户端时，它会在首次保存文档时查找文档中的敏感信息。 **如果**提供[EnableAudit](#disable-sending-audit-data-to-azure-information-protection-analytics) advanced 设置，则不会将任何预定义的敏感信息类型都发送到 Azure 信息保护分析。
 
-若要更改此行为, 以便不将统一标签客户端找到的敏感信息类型发送到 Azure 信息保护分析, 请为所选标签策略输入以下字符串:
+若要更改此行为，以便不将统一标签客户端找到的敏感信息类型发送到 Azure 信息保护分析，请为所选标签策略输入以下字符串：
 
 - 键:**RunAuditInformationTypesDiscovery**
 
 - 值：**False**
 
-如果设置了此 "高级客户端" 设置, 则仍然可以从客户端发送审核信息, 但当用户访问标记内容时, 该信息将被限制为报表。
+如果设置了此 "高级客户端" 设置，则仍然可以从客户端发送审核信息，但当用户访问标记内容时，该信息将被限制为报表。
 
 例如：
 
@@ -681,7 +681,7 @@ Azure 信息保护统一标签客户端支持中心报表, 并在默认情况下
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-当你为[Azure 信息保护分析](../reports-aip.md)选中此复选框后, 可以更深入地分析你的敏感数据将收集你的敏感信息类型或你的自定义条件的内容匹配项。默认情况下, 此信息由所有用户发送, 其中包括运行 Azure 信息保护扫描程序的服务帐户。 如果有不应发送此数据的用户, 请在 "标签" 策略中为这些用户创建以下高级客户端设置: 
+当你为[Azure 信息保护分析](../reports-aip.md)选中此复选框后，可以更深入地分析你的敏感数据将收集你的敏感信息类型或你的自定义条件的内容匹配项。默认情况下，此信息由所有用户发送，其中包括运行 Azure 信息保护扫描程序的服务帐户。 如果有不应发送此数据的用户, 请在 "标签" 策略中为这些用户创建以下高级客户端设置: 
 
 - 键:**LogMatchedContent**
 
@@ -773,7 +773,7 @@ Azure 信息保护统一标签客户端支持中心报表, 并在默认情况下
 
 如果需要相同标签的多个规则, 则为同一键定义多个字符串值。 
 
-在此示例中, 名为 "机密" 和 "机密" 的 Secure Islands 标签存储在名为**分类**的自定义属性中, 你希望 Azure 信息保护统一标签客户端应用名为 "机密 ":
+在此示例中，名为 "机密" 和 "机密" 的 Secure Islands 标签存储在名为**分类**的自定义属性中，你希望 Azure 信息保护统一标签客户端应用名为 "机密 "：
 
     Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties=ConvertTo-Json("Migrate Confidential label,Classification,Confidential", "Migrate Secret label,Classification,Secret")}
 
@@ -932,7 +932,7 @@ Azure 信息保护统一标签客户端支持中心报表, 并在默认情况下
 
 ## <a name="change-the-local-logging-level"></a>更改本地日志记录级别
 
-默认情况下, Azure 信息保护统一标签客户端会将客户端日志文件写入到 **%localappdata%\Microsoft\MSIP**文件夹。 这些文件供 Microsoft 支持部门用来排除故障。
+默认情况下，Azure 信息保护统一标签客户端会将客户端日志文件写入到 **%localappdata%\Microsoft\MSIP**文件夹。 这些文件供 Microsoft 支持部门用来排除故障。
  
 若要更改这些文件的日志记录级别, 请在注册表中找到以下值名称并将值数据设置为所需的日志记录级别:
 
