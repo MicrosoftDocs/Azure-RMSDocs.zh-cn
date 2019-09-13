@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 94679d642ec2b83d0b7bb979f1ba6e2b0f2fbfe4
-ms.sourcegitcommit: 32ec752f3bda160011c48c82e24f31ffffe5d6ac
+ms.openlocfilehash: a2093d33f53eb9991c0ef3f8c9d1ea798b3dd8ef
+ms.sourcegitcommit: dc8a55e7a5500ede22cef2fabdaddc4bcee9fa24
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70888129"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936940"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -104,8 +104,7 @@ Azure 信息保护统一标签客户端的每个正式发行版 (GA) 在发布�
     - [为父标签指定默认子标签](clientv2-admin-guide-customizations.md#specify-a-default-sublabel-for-a-parent-label)
     - [指定标签的颜色](clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)
 
-- 支持为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置的标签:
-    - 当用户选择具有此配置的标签时, 系统将提示他们选择文档的用户和保护设置。
+- 支持为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置的标签。 有关详细信息，请参阅 Office 文档中的[允许用户分配权限](/Office365/SecurityCompliance/encryption-sensitivity-labels#let-users-assign-permissions)部分。
 
 - AzureInformationProtection 模块中的 PowerShell 更改:
     - 新 cmdlet:[AIPCustomPermissions](/powershell/module/azureinformationprotection/New-AIPCustomPermissions) -替换 RMSProtectionLicense, 为自定义权限创建即席策略

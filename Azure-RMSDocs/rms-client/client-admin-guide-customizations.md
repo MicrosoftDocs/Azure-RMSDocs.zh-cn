@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/16/2019
+ms.date: 09/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e2cce9e76ae1b583aacc30df7d2abe5940106455
-ms.sourcegitcommit: bdfade60c1939f5c540bbf82859af060eb629f68
+ms.openlocfilehash: 784b51f91a19069c33f5a6dd5a6a655c95e59c0c
+ms.sourcegitcommit: af478aae5b093aa604e69b210de4094aa664f658
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546069"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70923322"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -318,7 +318,7 @@ ms.locfileid: "69546069"
 
 当弹出消息用于特定标签时, 可以按域名为收件人配置例外。
 
-弹出消息中生成的操作将记录到本地 Windows 事件日志**应用程序和服务日志** > 中。
+弹出消息中生成的操作将记录到本地 Windows 事件日志**应用程序和服务日志** > **中。**
 
 - 警告消息：信息 ID 301
 
@@ -729,7 +729,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint 中使用它时，会对这些应用的性能产生负面影响。 该配置允许你根据应用程序来定义设置，例如，搜索 Word 文档页眉和页脚中的文本，而不是 Excel 电子表格或 PowerPoint 演示文稿中的。
 
-由于该模式匹配会影响用户的性能，建议你将 Office 应用程序类型（Word、Excel、PowerPoint）限制为仅需要在其中进行搜索的那些类型：
+因为模式匹配会影响用户的性能，所以建议将 Office 应用程序类型（**W**Ord、E**X**项、 **P**owerPoint）限制为只需搜索的内容：
 
 - 键:**RemoveExternalContentMarkingInApp**
 
@@ -849,15 +849,15 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
-在 Office 应用中使用 Azure 信息保护客户端时, 它会在首次保存文档时查找文档中的敏感信息。 提供的客户端未配置为不发送审核信息, 找到的任何敏感信息类型 (预定义或自定义) 都将发送到[Azure 信息保护分析](../reports-aip.md)。 
+在 Office 应用中使用 Azure 信息保护客户端时，它会在首次保存文档时查找文档中的敏感信息。 提供的客户端未配置为不发送审核信息，找到的任何敏感信息类型（预定义或自定义）都将发送到[Azure 信息保护分析](../reports-aip.md)。 
 
-用于控制客户端是否发送审核信息的配置是将**审核数据发送到 Azure 信息保护日志分析**的[策略设置](../configure-policy-settings.md)。 当此策略设置为 **"打开"** 时, 如果你想要发送包括标记操作的审核信息, 但不希望发送客户端找到的敏感信息类型, 请输入以下字符串:
+用于控制客户端是否发送审核信息的配置是将**审核数据发送到 Azure 信息保护日志分析**的[策略设置](../configure-policy-settings.md)。 当此策略设置为 **"打开"** 时，如果你想要发送包括标记操作的审核信息，但不希望发送客户端找到的敏感信息类型，请输入以下字符串：
 
 - 键:**RunAuditInformationTypesDiscovery**
 
 - 值：**False**
 
-如果你设置此高级客户端设置, 则仍可以从客户端发送审核信息, 但该信息仅限于标记活动。
+如果你设置此高级客户端设置，则仍可以从客户端发送审核信息，但该信息仅限于标记活动。
 
 例如：
 
@@ -865,13 +865,13 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 如果没有此设置, 您可以看到该财经包含6个信用卡号。
     
-    - 如果还启用[了对敏感数据的更深入分析](../reports-aip.md#content-matches-for-deeper-analysis), 还可以查看这些信用卡号。
+    - 如果还启用[了对敏感数据的更深入分析](../reports-aip.md#content-matches-for-deeper-analysis)，还可以查看这些信用卡号。
 
 ## <a name="disable-sending-information-type-matches-for-a-subset-of-users"></a>禁止为一部分用户发送信息类型匹配项
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
-当你为[Azure 信息保护分析](../reports-aip.md)选中此复选框后, 可以更深入地分析你的敏感数据将收集你的敏感信息类型或你的自定义条件的内容匹配项。默认情况下, 此信息由所有用户发送, 其中包括运行 Azure 信息保护扫描程序的服务帐户。 如果你有一些不应发送此数据的用户，请在这些用户的[作用域内策略](../configure-policy-scope.md)中创建以下高级客户端设置： 
+当你为[Azure 信息保护分析](../reports-aip.md)选中此复选框后，可以更深入地分析你的敏感数据将收集你的敏感信息类型或你的自定义条件的内容匹配项。默认情况下，此信息由所有用户发送，其中包括运行 Azure 信息保护扫描程序的服务帐户。 如果你有一些不应发送此数据的用户，请在这些用户的[作用域内策略](../configure-policy-scope.md)中创建以下高级客户端设置： 
 
 - 键:**LogMatchedContent**
 
@@ -912,7 +912,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
-默认情况下, Azure 信息保护扫描程序的超时期限为 00:15:00 (15 分钟), 用于检查每个文件中是否有敏感信息类型或为自定义条件配置的 regex 表达式。 当达到此内容提取过程的超时期限时, 将返回超时前的所有结果, 并对该文件停止进行进一步检查。 在此方案中, 将在%*localappdata*% \ Microsoft\MSIP\Logs\MSIPScanner.iplog (如果有多个日志, 则为 zipped) 中记录以下错误消息:**GetContentParts 失败**, 操作在详细信息中**被取消**。
+默认情况下, Azure 信息保护扫描程序的超时期限为 00:15:00 (15 分钟), 用于检查每个文件中是否有敏感信息类型或为自定义条件配置的 regex 表达式。 当达到此内容提取过程的超时期限时, 将返回超时前的所有结果, 并对该文件停止进行进一步检查。 在此方案中，将在%*localappdata*% \ Microsoft\MSIP\Logs\MSIPScanner.iplog （如果有多个日志，则为 zipped）中记录以下错误消息：**GetContentParts 失败**, 操作在详细信息中**被取消**。
 
 如果由于文件较大而遇到此超时问题, 则可以增加此超时期限以进行完整的内容提取:
 
@@ -932,9 +932,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 此外, Azure 信息保护扫描程序的每个文件处理的超时期限为 00:30:00 (30 分钟)。 此值将考虑从存储库中检索文件所需的时间, 并暂时将其保存在本地, 以执行可包括解密、用于检查、标记和加密的内容提取的操作。
 
-尽管 Azure 信息保护扫描程序可以每分钟扫描数十到数百个文件, 但如果你的数据存储库包含大量非常大的文件, 则扫描程序可以超过此默认超时时间, 在 Azure 门户中, 将在30后停止). 在此方案中, 以下错误消息记录在%*localappdata*% \ Microsoft\MSIP\Logs\MSIPScanner.iplog (如果有多个日志, 则为 zipped) 和 scanner .csv 日志文件中:**操作已取消**。
+尽管 Azure 信息保护扫描程序可以每分钟扫描数十到数百个文件, 但如果你的数据存储库包含大量非常大的文件, 则扫描程序可以超过此默认超时时间, 在 Azure 门户中, 将在30后停止). 在此方案中，以下错误消息记录在%*localappdata*% \ Microsoft\MSIP\Logs\MSIPScanner.iplog （如果有多个日志，则为 zipped）和 scanner .csv 日志文件中：**操作已取消**。
 
-默认情况下, 具有4核处理器的扫描程序有16个线程用于扫描, 在30分钟的时间段内遇到16个大型文件的概率取决于大文件的比率。 例如, 如果扫描速率为每分钟200个文件, 而 1% 的文件超过30分钟超时, 则在超过 85% 的情况下, 扫描程序将遇到30分钟的超时情况。 这些超时可能会导致更长的扫描时间和更高的内存消耗。
+默认情况下, 具有4核处理器的扫描程序有16个线程用于扫描, 在30分钟的时间段内遇到16个大型文件的概率取决于大文件的比率。 例如，如果扫描速率为每分钟200个文件，而 1% 的文件超过30分钟超时，则在超过 85% 的情况下，扫描程序将遇到30分钟的超时情况。 这些超时可能会导致更长的扫描时间和更高的内存消耗。
 
 在这种情况下, 如果无法将更多的核心处理器添加到扫描仪计算机, 请考虑缩短超时期限以获得更好的扫描速率和更低的内存消耗, 但需确认会排除某些文件。 另外, 请考虑增加超时期限以获得更准确的扫描结果, 但确认此配置可能会导致扫描速率较低且内存消耗更高。
 
