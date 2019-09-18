@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 09/05/2019
+ms.date: 09/17/2019
 manager: rkarlin
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9108dbe9712b57dd5bef59c5258dccccaf137d86
-ms.sourcegitcommit: 91982b08ba8ce734b6d82382db227fcaa2b15e56
+ms.openlocfilehash: e644dfbe89df354b1366164b6b23902ac48bb8f8
+ms.sourcegitcommit: 908ca5782fe86e88502dccbd0e82fa18db9b96ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70872352"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71060186"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -42,7 +42,7 @@ ms.locfileid: "70872352"
 你看到的数据是从 Azure 信息保护客户端和扫描程序、[支持统一标签的客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)以及[保护使用日志](log-analyze-usage.md)聚合而来的。
 
 > [!NOTE]
-> 目前，Azure 信息保护分析不包括支持统一标签的客户端和服务的自定义信息类型。
+> 目前，除了预览版本的统一标签客户端之外，Azure 信息保护分析不包括支持统一标签的客户端和服务的自定义信息类型。
 
 例如，你将能够看到以下数据：
 
@@ -119,7 +119,7 @@ ms.locfileid: "70872352"
 
 - 在内容中检测到的[预定义敏感信息类型](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)。
     
-    如果将 Azure 信息保护标签与自定义条件一起使用，则还会发送自定义信息类型的名称。 不会发送在 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心创建的自定义敏感信息类型。
+    如果将 Azure 信息保护标签与自定义条件一起使用，则还会发送自定义信息类型的名称。 除了预览版本的统一标签客户端之外，不会发送在标签中心创建的自定义敏感信息类型。
 
 - Azure 信息保护客户端版本。
 
@@ -183,7 +183,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包含一个复选框，用�
     > [!NOTE] 
     > 如果你的租户已迁移到统一标签存储, 则无法使用 Azure 信息保护管理员角色。 [详细信息](configure-policy-migrate-labels.md#administrative-roles-that-support-the-unified-labeling-platform)
 
-2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-access#manage-accounts-and-users)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments)之一才能访问 Azure Log Analytics 工作区：
+2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#manage-access-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-rbac-roles)之一才能访问 Azure Log Analytics 工作区：
     
     - 若要创建该工作区或创建自定义查询，必须具有以下角色之一：
     
@@ -295,7 +295,7 @@ Azure 信息保护的记录数据存储在下表中：**InformationProtectionLog
 |ProtectionType|保护类型 [JSON] <br />{ <br />"Type": ["Template", "Custom", "DoNotForward"], <br />  "TemplateID":"GUID" <br /> } <br />|
 |ProtectionBefore|更改前的保护类型 [JSON] |
 |InformationTypesMatches|在数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组, 其中空数组表示找不到任何信息类型, null 表示没有可用信息|
-|计算机 |FQDN (如果可用);否则为主机名|
+|MachineName |FQDN (如果可用);否则为主机名|
 |DeviceRisk|WDATP 可用时的设备风险评分|
 |平台|设备平台 (Win、OSX、Android、iOS) |
 |ApplicationName|应用程序友好名称|

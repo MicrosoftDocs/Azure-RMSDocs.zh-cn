@@ -4,7 +4,7 @@ description: 面向管理员的说明和信息，介绍如何在企业网络中�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 32805aca55871b502671dec0eec47970d1148a8a
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 001e2a75ab8cb756846c934d00078f303a95922d
+ms.sourcegitcommit: 908ca5782fe86e88502dccbd0e82fa18db9b96ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793646"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71060150"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -42,9 +42,9 @@ ms.locfileid: "68793646"
     
     如果单独安装 Azure 信息保护查看器，则要求的最低版本为 Microsoft .NET Framework 4.5.2，如果缺少此版本，可执行安装程序不会下载并安装它。
 
-- Windows PowerShell 版本 4.0
+- Windows PowerShell 最低版本4。0
     
-    客户端的 PowerShell 模块需要 Windows PowerShell 4.0 版本，此版本可能需要在旧版操作系统上安装。 有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 安装程序不会为你检查或安装此必备项。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 `$PSVersionTable`。
+    客户端的 PowerShell 模块需要 Windows PowerShell 的最低版本4.0，可能需要将其安装在较早的操作系统上。 有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 安装程序不会为你检查或安装此必备项。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 `$PSVersionTable`。
 
 - 屏幕分辨率大于 800 x 600
     
@@ -74,7 +74,7 @@ ms.locfileid: "68793646"
     
     对于 Office 2013 及更高版本，配置组策略以确保始终为 Office 应用程序启用 Microsoft Azure 信息保护加载项。 如果没有此配置，则可能禁用 Microsoft Azure 信息保护加载项，并且用户无法在其 Office 应用程序中标记其文档和电子邮件。
     
-    - 对于 Outlook:使用记录在 Office 文档中的[系统管理员对加载项的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中的组策略设置。
+    - 对于 Outlook：使用记录在 Office 文档中的[系统管理员对加载项的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中的组策略设置。
     
     - 对于 Word、Excel 和 PowerPoint：使用[由于 Office 2013 和 Office 2016 程序的组策略设置没有加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中记录的组策略设置“托管加载项列表”。 
         
@@ -156,9 +156,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 ##### <a name="to-identify-the-value-to-specify-for-the-servicelocation-parameter"></a>若要标识要为 ServiceLocation 参数指定的值
 
-1. 在 PowerShell 会话中, 首先运行[AipService](https://docs.microsoft.com/powershell/module/aipservice/connect-aipservice)并指定管理员凭据以连接到 Azure Rights Management 服务。 然后运行[AipServiceConfiguration](https://docs.microsoft.com/powershell/module/aipservice/get-aipserviceconfiguration)。 
+1. 在 PowerShell 会话中，首先运行[AipService](https://docs.microsoft.com/powershell/module/aipservice/connect-aipservice)并指定管理员凭据以连接到 Azure Rights Management 服务。 然后运行[AipServiceConfiguration](https://docs.microsoft.com/powershell/module/aipservice/get-aipserviceconfiguration)。 
  
-    如果尚未安装 Azure Rights Management 服务的 PowerShell 模块, 请参阅[安装 AIPService PowerShell 模块](../install-powershell.md)。
+    如果尚未安装 Azure Rights Management 服务的 PowerShell 模块，请参阅[安装 AIPService PowerShell 模块](../install-powershell.md)。
 
 2. 在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
 
@@ -177,7 +177,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果安装这一 Microsoft .NET Framework 更高版本不可行，可以在安装客户端时使用 **DowngradeDotNetRequirement=True** 参数和值，这样就可以在已安装 Microsoft .NET Framework 版本 4.5.1 的情况下忽略这项要求。
 
-例如：`AzInfoProtection.exe DowngradeDotNetRequirement=True`
+例如： `AzInfoProtection.exe DowngradeDotNetRequirement=True`
 
 建议谨慎使用此参数。还请注意，将 Azure 信息保护客户端与旧版 Microsoft .NET Framework 结合使用时，Office 应用程序存在报告的尚未解决的问题。 如果确实遇到了尚未解决的问题，请先升级到建议的版本，然后再尝试其他故障排除解决方案。 
 
@@ -195,7 +195,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 2. 对于运行 .msi 文件的每台计算机，必须确保以下软件依赖项已经就绪。 例如，将这些依赖项与客户端 .msi 版本一起打包，或只部署到满足这些依赖关系的计算机上：
     
-    |Office 版本|操作系统|软件|Action|
+    |Office 版本|操作系统|软件|操作|
     |--------------------|--------------|----------------|---------------------|
     |Office 365 1902 或更高版本之外的所有版本|仅限于 Windows 10 版本 1809，操作系统内部版本早于 17763.348|[KB 4482887](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887)|安装|
     |Office 2013|所有支持的版本|64位:[KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54992)<br /><br /> 32位:[KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54979) <br /><br />版本：1.0|安装|
@@ -215,7 +215,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 Azure 信息保护客户端包括的 PowerShell 模块具有用于安装和配置扫描程序的 cmdlet。 但是，要使用扫描程序，必须安装完整版本的客户端，而不能仅安装 PowerShell 模块。
 
-要安装客户端以获取扫描程序，请按照前面部分中的相同说明进行操作。 然后, 你就可以配置并安装扫描程序了。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-aip-scanner.md)。
+要安装客户端以获取扫描程序，请按照前面部分中的相同说明进行操作。 然后，你就可以配置并安装扫描程序了。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-aip-scanner.md)。
 
 ## <a name="next-steps"></a>后续步骤
 现在你已安装 Azure 信息保护客户端，若要了解支持此客户端所需的其他信息，请参阅以下内容：

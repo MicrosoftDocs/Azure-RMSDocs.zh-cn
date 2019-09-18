@@ -3,7 +3,7 @@ title: 自定义配置-Azure 信息保护统一标签客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/12/2019
+ms.date: 09/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1c8391bd4c7ab4cf57e4f0ddeeb6310259e7cceb
-ms.sourcegitcommit: af478aae5b093aa604e69b210de4094aa664f658
+ms.openlocfilehash: 004f37973d045bcf1a2809a226c150f5bc749681
+ms.sourcegitcommit: 908ca5782fe86e88502dccbd0e82fa18db9b96ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70923308"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71060084"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
@@ -655,7 +655,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-在 Office 应用中使用 Azure 信息保护统一标签客户端时，它会在首次保存文档时查找文档中的敏感信息。 **如果**提供[EnableAudit](#disable-sending-audit-data-to-azure-information-protection-analytics) advanced 设置，则不会将任何预定义的敏感信息类型都发送到 Azure 信息保护分析。
+在 Office 应用中使用 Azure 信息保护统一标签客户端时，它会在首次保存文档时查找文档中的敏感信息。 **如果**提供[EnableAudit](#disable-sending-audit-data-to-azure-information-protection-analytics) advanced 设置，则不会将任何预定义的和自定义的（仅预览客户端）敏感信息类型发送到 Azure 信息保护分析。
 
 若要更改此行为，以便不将统一标签客户端找到的敏感信息类型发送到 Azure 信息保护分析，请为所选标签策略输入以下字符串：
 
@@ -944,14 +944,15 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - **错误**：只有错误。
 
-- **Info**：最低级别日志记录，其中不含事件 ID。
+- **警告**：错误和警告。
+
+- **Info**：最少日志记录，其中不包含事件 ID（扫描程序默认设置）。
 
 - **Debug**：完整信息。
 
 - **Trace**：详细日志记录（客户端默认设置）。
 
 此注册表设置不会更改为[集中报告](../reports-aip.md)发送到 Azure 信息保护的信息。
-
 
 ## <a name="next-steps"></a>后续步骤
 自定义 Azure 信息保护统一标签客户端后, 请参阅以下资源, 了解支持此客户端所需的其他信息:
