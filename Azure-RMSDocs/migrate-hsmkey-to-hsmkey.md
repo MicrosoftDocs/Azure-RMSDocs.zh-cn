@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8c1649fe32c88d0a97b002a5e6ca73047412737f
-ms.sourcegitcommit: 190574b5c445aa429867dc324148e52ffd073a67
+ms.openlocfilehash: aea5eab301555b928427cd51d553302ff4468bcd
+ms.sourcegitcommit: 853a7ccd7e3f4ac65b6bf9732e336f375932e897
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907266"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71094503"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 
@@ -51,7 +51,7 @@ ms.locfileid: "70907266"
 
    - 不要执行**生成你的租户密钥**中的步骤，因为你已从 AD RMS 部署获得等效物。 相反，请从 nCipher 安装中标识 AD RMS 服务器使用的密钥，并准备这些密钥以进行传输，然后将它们传输到 Azure Key Vault。 
         
-        NCipher 的加密密钥文件在服务器上以本地方式命名为**key_ <*keyAppName*> _ <*keyIdentifier* >**  。 例如， `C:\Users\All Users\nCipher\Key Management Data\local\key_mscapi_f829e3d888f6908521fe3d91de51c25d27116a54` 。 当你运行 Keytransferremote.exe 命令来创建具有降低的权限的密钥副本时，你将需要**mscapi**值作为 keyAppName，并为密钥标识符提供自己的值。
+        NCipher 的加密密钥文件在服务器上以本地方式命名为**key_ <<em>keyAppName</em>> _ <<em>keyIdentifier</em> >**  。 例如， `C:\Users\All Users\nCipher\Key Management Data\local\key_mscapi_f829e3d888f6908521fe3d91de51c25d27116a54` 。 当你运行 Keytransferremote.exe 命令来创建具有降低的权限的密钥副本时，你将需要**mscapi**值作为 keyAppName，并为密钥标识符提供自己的值。
         
         将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 输出结果将会类似于 https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure Rights Management 服务将此密钥用作其租户密钥。
 

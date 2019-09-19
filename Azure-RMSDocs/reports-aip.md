@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 09/17/2019
+ms.date: 09/18/2019
 manager: rkarlin
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e644dfbe89df354b1366164b6b23902ac48bb8f8
-ms.sourcegitcommit: 908ca5782fe86e88502dccbd0e82fa18db9b96ad
+ms.openlocfilehash: 3257b194c539e59cc396e43c82499f94addfe625
+ms.sourcegitcommit: 326db0b8f1b46de502bcaaabbeda6efcd5a44441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71060186"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71101328"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -37,7 +37,7 @@ ms.locfileid: "71060186"
 
 - 确定包含敏感信息且若未保护则可能给组织带来风险的文档，并按照以下建议缓解风险。
 
-- 确定内部或外部用户何时访问受保护的文档，以及是否授予或拒绝访问权限。
+- 确定由内部或外部用户从 Windows 计算机访问受保护的文档的时间，以及是否授予或拒绝访问权限。
 
 你看到的数据是从 Azure 信息保护客户端和扫描程序、[支持统一标签的客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)以及[保护使用日志](log-analyze-usage.md)聚合而来的。
 
@@ -181,7 +181,7 @@ Azure 信息保护的 Azure Log Analytics 工作区包含一个复选框，用�
         - **安全读取者**
     
     > [!NOTE] 
-    > 如果你的租户已迁移到统一标签存储, 则无法使用 Azure 信息保护管理员角色。 [详细信息](configure-policy-migrate-labels.md#administrative-roles-that-support-the-unified-labeling-platform)
+    > 如果你的租户位于[统一的标签平台](faqs.md#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)上，则不能使用 Azure 信息保护管理员角色。
 
 2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#manage-access-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-rbac-roles)之一才能访问 Azure Log Analytics 工作区：
     
