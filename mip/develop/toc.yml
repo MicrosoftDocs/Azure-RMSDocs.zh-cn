@@ -9,6 +9,8 @@
   items:
     - name: 安装和配置 MIP SDK
       href: setup-configure-mip.md
+    - name: 通过 MIP SDK 实现 AD RMS 支持
+      href: quick-app-adrms.md
     - name: C++
       items:
         - name: 应用程序初始化 (C++)
