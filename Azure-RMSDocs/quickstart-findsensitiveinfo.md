@@ -4,18 +4,18 @@ description: 使用 Azure 信息保护扫描程序查找在本地存储的文件
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/18/2019
+ms.date: 09/17/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: 888ddafcea6dd855d970fc959e1bb7447c3d2573
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 5b8ca224dff45fcb589a888ef1fa0728ccebe368
+ms.sourcegitcommit: 908ca5782fe86e88502dccbd0e82fa18db9b96ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68790421"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71060203"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 
@@ -37,7 +37,7 @@ ms.locfileid: "68790421"
     
     如果没有上述任一订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
 
-2. 计算机上已安装 Azure 信息保护客户端。 
+2. 计算机上已安装 Azure 信息保护客户端（经典）。 
     
     可以转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  ，安装客户端。
     
@@ -75,9 +75,9 @@ ms.locfileid: "68790421"
     
     （可选）指定用于管理的说明，以帮助识别扫描程序的配置文件名称。
 
-5. 对于本快速入门，只需选择一个设置：对于“策略实施”  ，选择“关闭”  。 然后，选择“保存”  ，但不要关闭边栏选项卡。
+5. 找到“策略实施”  部分，在此快速入门中，只选择一个设置：对于“实施”  ，选择“关闭”  。 然后，选择“保存”  ，但不要关闭边栏选项卡。
     
-    这些设置将扫描程序配置为对指定数据存储库中的所有文件进行一次性发现。 此扫描操作会查找所有已知的敏感信息类型，不必首先配置 Azure 信息保护标签或策略设置
+    这些设置将扫描程序配置为对指定数据存储库中的所有文件进行一次性发现。 此扫描操作会查找所有已知的敏感信息类型，不必首先配置 Azure 信息保护标签或策略设置。
 
 6. 现在已创建并保存配置文件，即可返回到“配置存储库”  选项以将本地文件夹指定为要扫描的数据存储。
     
@@ -95,7 +95,9 @@ ms.locfileid: "68790421"
     
     选择“保存”  。
 
-9. 现在可以关闭“添加新配置文件”  边栏选项卡，并会看到在“Azure 信息保护 - 配置文件”  边栏选项卡中显示的配置文件名称，同时“计划”  列显示“手动”  且“强制执行”  列为空。
+9. 返回到“Azure 信息保护 - 配置文件”  边栏选项卡，现在将看到列出的配置文件，同时“计划”  列显示“手动”  且“实施”  列为空。 
+    
+    “节点”  列显示“0”  ，因为尚未为此配置文件安装扫描程序。
 
 现在可随时使用刚刚创建的扫描程序配置文件安装扫描程序。
 
@@ -111,13 +113,17 @@ ms.locfileid: "68790421"
 
 ## <a name="start-the-scan-and-confirm-it-finished"></a>开始扫描并确认扫描完成
 
-1. 回到 Azure 门户，返回到 Azure 信息保护以启动扫描程序。 在“扫描程序”  菜单选项中，选择“节点”  。 选择计算机名称，然后选择“立即扫描”  选项：
+1. 返回 Azure 门户，刷新“Azure 信息保护 - 配置文件”  边栏选项卡，此时应看到“节点”  列现在显示“1”  。
+
+2. 选择配置文件名称，然后选择“立即扫描”  选项：
     
     ![启动 Azure 信息保护扫描程序扫描](./media/scanner-scan-now.png)
-
-2. 只有一个小文件需要检查，因此初始测试扫描速度非常快：
     
-    - 在“Azure 信息保护 - 节点”边栏选项卡中，“STATUS”列的值会从“正在扫描”更改为“空闲”     。
+    如果在选择配置文件后，此选项不可用，则扫描程序不会连接到 Azure 信息保护。 查看配置和 Internet 连接。
+
+3. 只有一个小文件需要检查，因此初始测试扫描速度非常快：
+    
+    请稍候，直到看到“上次扫描结果”  和“上次扫描（结束时间）”  列显示的值。
     
     - 或者，查看本地 Windows 应用程序和服务  事件日志和 Azure 信息保护  。 确认 MSIP.Scanner  进程的信息事件 ID 911  。 事件日志条目还包含扫描结果的摘要。
 
@@ -145,7 +151,7 @@ ms.locfileid: "68790421"
         
             http://sp2016/Shared Documents
 
-2. 再次重启扫描程序：从“扫描程序”  菜单选项中，依次选择“节点”  、计算机名称和“立即扫描”  选项：
+2. 再次重启扫描程序：在“Azure 信息保护 - 配置文件”  边栏选项卡上，确保选中配置文件，然后选择“立即扫描”  选项：
     
     ![启动 Azure 信息保护扫描程序扫描](./media/scanner-scan-now.png)
 
@@ -174,7 +180,7 @@ ms.locfileid: "68790421"
 
 ## <a name="next-steps"></a>后续步骤
 
-本快速入门教程包括最低配置，使用户可以快速查看扫描程序如何在网络共享中查找敏感信息。 如果你已准备好在生产环境中安装扫描程序，请参阅[部署 Azure 信息保护扫描程序以自动分类和保护文件](deploy-aip-scanner.md)。
+本快速入门教程包括最低配置，使用户可以快速查看扫描程序如何在本地数据存储中查找敏感信息。 如果你已准备好在生产环境中安装扫描程序，请参阅[部署 Azure 信息保护扫描程序以自动分类和保护文件](deploy-aip-scanner.md)。
 
 如果要对包含敏感信息的文件进行分类和保护，必须配置 Azure 信息保护标签以实现自动分类和保护：
 
