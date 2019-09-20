@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/17/2019
+ms.date: 09/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a71ed78a2fb528823adc4abaa5f2007256aca65c
-ms.sourcegitcommit: 9cedac6569f3a33a22a721da27074a438b1a7882
+ms.openlocfilehash: 8934e23594ba51248e691ce2e52d69308cb320e5
+ms.sourcegitcommit: d5f046e34de0ad79b64d3f412999145b7d097e75
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71070652"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71127541"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -75,7 +75,13 @@ Azure 信息保护统一标签客户端的每个正式发行版 (GA) 在发布�
     
     - 与经典客户端的扫描程序一样，扫描程序可保护 Office 文件和 PDF 文件。 目前，你无法将其他文件类型配置为受此版本的扫描程序保护。
     
+    - 已知问题:"新建" 和 "重命名" 标签不可用于选择作为扫描仪配置文件或存储库设置的默认标签。 之一
+        - 对于新标签：在 Azure 门户中，将要使用的[标签添加](../configure-policy-add-remove-label.md)到全局策略或作用域内策略。
+        - 对于重命名标签：在 Azure 门户中，请参阅**Azure 信息保护** > "**管理** > **统一标签**"，然后选择 "**发布**"。
+    
     你可以从 Azure 信息保护客户端（经典）升级扫描仪。 在升级后，这会创建一个新的数据库，扫描程序在第一次运行时重新扫描所有文件。 有关说明，请参阅管理员指南中[的升级 Azure 信息保护扫描程序](clientv2-admin-guide.md#upgrading-the-azure-information-protection-scanner)。
+    
+    有关其他信息，请参阅博客文章公告：[统一标签 AIP 扫描程序预览版增加了扩展功能！](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Unified-labeling-AIP-scanner-preview-brings-scaling-out-and-more/ba-p/862552)
 
 - 如果要以[非交互方式对文件进行标记](clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)，并在[Azure AD 中注册应用程序](clientv2-admin-guide-powershell.md#to-create-and-configure-the-azure-ad-applications-for-set-aipauthentication---preview-client)，则 PowerShell cmdlet [set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication)具有新参数。 示例方案包括用于标记文档的扫描程序和自动 PowerShell 脚本。
 
