@@ -50,7 +50,7 @@ ms.locfileid: "68788592"
     
     可以转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  ，安装客户端。
 
-4. 一台运行 Windows（最低配置为 Windows 7 Service Pack 1）的计算机，并在此计算机上，从以下类别之一登录到 Office 应用程序：
+4. 一台运行 Windows（最低配置为 Windows 7 Service Pack 1）的计算机，并且在此计算机上，你已登录以下类别的 Office 应用之一：
     
     - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
     
@@ -88,7 +88,7 @@ ms.locfileid: "68788592"
     
     ![Azure 信息保护教程 - 要更改的策略设置](./media/info-protect-policy-default-settings.png)
     
-    我们会在本教程后面使用这些策略设置，你将在实际操作看到相应设置。
+    我们会在本教程后面使用这些策略设置，你将在实际操作中看到相应设置。
 
 4. 对于“选择默认标签”，请选择“常规”   。 
 
@@ -106,7 +106,7 @@ ms.locfileid: "68788592"
 
 1. 从“分类” > “标签”菜单选项中   ：右键单击“机密”标签，然后选择“添加子标签”   。
     
-    如果没有名为“机密”  的标签，可以选择另一个标签，也可以创建一个新标签，具体操作步骤仍与本教程相同，只存在细微差异。
+    如果没有名为 **“机密”** 的标签，可以选择另一个标签，也可以创建一个新标签，具体操作步骤仍与本教程相同，只存在细微差异。
 
 2. 在“子标签”  边栏选项卡上，指定“财务”  的标签名称，并添加以下说明：包含财务信息的机密数据仅限员工使用  。
     
