@@ -95,7 +95,7 @@
           items:
             - name: 概述
               href: plan-implement-tenant-key.md
-            - name: BYOK 定价和限制
+            - name: BYOK 详细信息
               href: byok-price-restrictions.md
         - name: 准备用户和组
           href: prepare.md
