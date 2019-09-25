@@ -4,19 +4,19 @@ description: 管理员使用 PowerShell 管理 Azure 信息保护统一标签客
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/17/2019
+ms.date: 09/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d14ab94a045a31ccf22b862d91c224246866d48d
-ms.sourcegitcommit: 908ca5782fe86e88502dccbd0e82fa18db9b96ad
+ms.openlocfilehash: b1db49d2a6033301b5922e66bc76be190b6162af
+ms.sourcegitcommit: 437143e1f7f33aba46ffcc3900c31a763a2105c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71060038"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71227778"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-unified-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护统一客户端配合使用
 
@@ -109,11 +109,11 @@ Azure AD 中的令牌过期时, 请再次运行 cmdlet 以获取新令牌。
 
 4. 在 " **AIPOnBehalfOf** " 边栏选项卡上, 复制 "**应用程序 (客户端) ID**" 的值。 值类似于下面的示例: `57c3c1c3-abf9-404e-8b2b-4652836c8c66`。 在运行 Set-aipauthentication cmdlet 时, 此值用于*WebAppId*参数。 粘贴并保存该值供以后参考。
 
-5. 仍在 " **AIPOnBehalfOf** " 边栏选项卡上的 "**管理**" 菜单中, 选择 "**身份验证**"。
+5. 仍在 " **AIPOnBehalfOf** " 边栏选项卡上的 "**管理**边栏" 中，选择 "**身份验证**"。
 
 6. 在 " **AIPOnBehalfOf-身份验证**" 边栏选项卡上的 "**高级设置**" 部分中, 选择 " **ID 令牌**" 复选框, 然后选择 "**保存**"。
 
-7. 仍在 " **AIPOnBehalfOf-身份验证**" 边栏选项卡上的 "**管理**" 菜单中, 选择 "**证书" & 机密**"。
+7. 仍在 " **AIPOnBehalfOf-身份验证**" 边栏选项卡上的 "**管理**" 侧栏中，选择 "**证书" & 机密**。
 
 8. 在 " **AIPOnBehalfOf & 机密**" 边栏选项卡上的 "**客户端密码**" 部分中, 选择 " **+ 新建客户端密钥**"。 
 
@@ -126,11 +126,11 @@ Azure AD 中的令牌过期时, 请再次运行 cmdlet 以获取新令牌。
     
     请务必保存此字符串，因为它不会再次显示，并且无法检索。 对于所使用的任何敏感信息, 请安全地存储保存的值并限制对它的访问。
 
-10. 仍在 " **AIPOnBehalfOf-证书 & 机密**" 边栏选项卡上的 "**管理**" 菜单中, 选择 "**公开 API**"。
+10. 仍在 " **AIPOnBehalfOf-证书 & 机密**" 边栏选项卡上的 "**管理**" 侧栏中，选择 "**公开 API**"。
 
 11. 在 " **AIPOnBehalfOf-公开 API** " 边栏选项卡上, 选择 "**设置** **应用程序 id uri** " 选项, 然后在 "**应用程序 id uri** " 值中, 将**API**更改为**http**。 此字符串类似于以下示例: `http://d244e75e-870b-4491-b70d-65534953099e`。 
     
-    选择**保存**。
+    选择“保存”。
 
 12. 返回 " **AIPOnBehalfOf-公开 API** " 边栏选项卡, 选择 " **+ 添加作用域**"。
 
@@ -156,13 +156,13 @@ Azure AD 中的令牌过期时, 请再次运行 cmdlet 以获取新令牌。
     
     在运行 Set-aipauthentication cmdlet 时, 此值用于 NativeAppId 参数。 粘贴并保存该值供以后参考。
 
-18. 仍在 " **AIPClient** " 边栏选项卡上的 "**管理**" 菜单中, 选择 "**身份验证**"。
+18. 仍在 " **AIPClient** " 边栏选项卡上的 "**管理**边栏" 中，选择 "**身份验证**"。
 
 19. 在 " **AIPClient-身份验证**" 边栏选项卡上, 指定以下内容, 然后选择 "**保存**":
     - 在 "**高级设置**" 部分中, 选择 " **ID 令牌**"。
     - 在 "**默认客户端类型**" 部分中, 选择 **"是"** 。
 
-20. 仍在 " **AIPClient-身份验证**" 边栏选项卡上的 "**管理**" 菜单中, 选择 " **API 权限**"。
+20. 仍在 " **AIPClient-身份验证**" 边栏选项卡上的 "**管理**" 边栏中，选择 " **API 权限**"。
 
 21. 在 " **AIPClient** " 边栏选项卡上, 选择 " **+ 添加权限**"。
 
@@ -211,7 +211,7 @@ Azure AD 中的令牌过期时, 请再次运行 cmdlet 以获取新令牌。
 
 4. 在 " **AIPv2OnBehalfOf** " 边栏选项卡上，复制 "**应用程序（客户端） ID**" 的值。 值类似于下面的示例: `77c3c1c3-abf9-404e-8b2b-4652836c8c66`。 运行 Set-aipauthentication cmdlet 时，此值用于*AppId*参数。 粘贴并保存该值供以后参考。
 
-5. 仍在 " **AIPv2OnBehalfOf** " 边栏选项卡上的 "**管理**" 菜单中，选择 "**证书" & 密码**。
+5. 仍在 " **AIPv2OnBehalfOf** " 边栏选项卡上的 "**管理**" 边栏选项卡中，选择 "**证书" & 密码**。
 
 6. 在 " **AIPv2OnBehalfOf & 机密**" 边栏选项卡上的 "**客户端密码**" 部分中，选择 " **+ 新建客户端密钥**"。
 
@@ -224,23 +224,35 @@ Azure AD 中的令牌过期时, 请再次运行 cmdlet 以获取新令牌。
     
     请务必保存此字符串，因为它不会再次显示，并且无法检索。 对于所使用的任何敏感信息, 请安全地存储保存的值并限制对它的访问。
 
-9. 从 "**管理**" 菜单中，选择 " **API 权限**"。
+9. 在边栏上的 "**管理**" 中，选择 " **API 权限**"。
 
 10. 在 " **AIPv2OnBehalfOf-API 权限**" 边栏选项卡中，选择 " **+ 添加权限**"。
 
-11. 在 "**请求 API 权限**" 边栏选项卡上，选择 " **Azure Rights Management 服务**"，当系统提示输入应用程序所需的权限类型时，请选择 "**应用程序权限**"。
+11. 在 "**请求 API 权限**" 边栏选项卡上，确保在 " **Microsoft api** " 选项卡上，并选择 " **Azure Rights Management 服务**"。 当系统提示你提供应用程序所需的权限类型时，请选择 "**应用程序权限**"。
 
 12. 对于 "**选择权限**"，展开 "**内容**" 并选择以下各项：
     
     -  **DelegatedWriter** （始终是必需的）
+    -  **Content。超级**用户（需要[超级用户功能](../configure-super-users.md)时需要）
     -  **内容。编写器**（始终需要）
-    -  **Content。超级**用户（需要[超级用户功能](../configure-super-users.md)时需要） 
     
     超级用户功能允许帐户始终解密内容。 例如，重新保护文件并检查其他人保护的文件。
 
 13. 选择 "**添加权限**"。
 
-14. 返回 " **AIPv2OnBehalfOf-API 权限**" 边栏选项卡，选择 "**向\<*租户名称*>授予管理员许可**"，并在确认提示时选择 **"是"** 。
+14. 返回 " **AIPv2OnBehalfOf-API 权限**" 边栏选项卡，选择 " **+ 再次添加权限**"。
+
+15. 在 "**请求 AIP 权限**" 边栏选项卡上，选择 **"我的组织使用的 api**"，并搜索 " **Microsoft 信息保护同步服务**"。
+
+16. 在 "**请求 API 权限**" 边栏选项卡中，选择 "**应用程序权限**"。
+
+17. 对于 "**选择权限**"，展开 " **UnifiedPolicy** "，然后选择以下内容：
+    
+    -  **UnifiedPolicy。读取**
+
+18. 选择 "**添加权限**"。
+
+19. 返回到 "API 权限" 边栏选项卡，选择 "**向\<*租户名称*>授予管理员许可**"，并在确认提示时选择 **"是"** 。
 
 现在，已使用机密完成了此应用的注册，接下来可以使用参数*AppId*和*AppSecret*运行[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 。 此外，还需要租户 ID。 
 
