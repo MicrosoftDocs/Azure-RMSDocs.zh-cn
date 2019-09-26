@@ -4,7 +4,7 @@ description: 一些常见问题，帮助你使用适用于 iOS 和 Android 的 A
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/15/2019
+ms.date: 09/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.custom: user
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b4eb23ccc53beda8161cac2a0c0566d06e647b67
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: fcd764187379fdfcb8dd1cc13c60ae9dad2069dd
+ms.sourcegitcommit: bd986d69729deb657bb3449461f5aacfa0851a56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68792974"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301155"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 
-适用对象：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 
 此页提供有关适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题的解答。
 
@@ -39,7 +39,7 @@ ms.locfileid: "68792974"
 
 ## <a name="can-my-mobile-device-run-the-azure-information-protection-app"></a>我的移动设备是否可运行 Azure 信息保护应用？
 
-Azure 信息保护应用要求最低版本为 **iOS 8** 或 **Android 4.4**。
+Azure 信息保护应用需要最低版本的**iOS 11**或**Android 4.4**。
 
 如果具有这些版本或更高版本，可安装要在移动设备上运行的应用：
 
