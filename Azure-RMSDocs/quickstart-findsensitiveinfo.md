@@ -4,28 +4,29 @@ description: 使用 Azure 信息保护扫描程序查找在本地存储的文件
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/17/2019
+ms.date: 09/24/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: 5b8ca224dff45fcb589a888ef1fa0728ccebe368
-ms.sourcegitcommit: 908ca5782fe86e88502dccbd0e82fa18db9b96ad
+ms.openlocfilehash: 4c8a22670a7e76a8e949b8cbdc0fcfb947282a7d
+ms.sourcegitcommit: 437143e1f7f33aba46ffcc3900c31a763a2105c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71060203"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71227800"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 
 >适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
->
-> 说明： *[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 本快速入门教程介绍如何安装和配置 Azure 信息保护扫描程序，以查找存储在本地数据存储中的文件中的敏感信息。 例如，本地文件夹、网络共享或 SharePoint Server。
 
-注意：本快速入门使用扫描程序的当前通用版本（使用 Azure 门户进行配置），而不是早期版本使用的 PowerShell cmdlet。
+> [!NOTE]
+> 你可以将此快速入门与 Azure 信息保护客户端的当前正式发布版本（经典）或 Azure 信息保护统一标签客户端的当前预览版本一起使用。
+>  
+> 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
 
 在 10 分钟内即可完成此配置。
 
@@ -37,9 +38,11 @@ ms.locfileid: "71060203"
     
     如果没有上述任一订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
 
-2. 计算机上已安装 Azure 信息保护客户端（经典）。 
+2. 计算机上已安装以下任一 Azure 信息保护客户端：
     
-    可以转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  ，安装客户端。
+    - 经典客户端：要安装此客户端，请转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。
+    
+    - 统一标签客户端：要安装此客户端，请转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection_UL_Preview.exe  。
     
 3. 计算机上同时安装了 SQL Server Express。
     
@@ -55,7 +58,7 @@ ms.locfileid: "71060203"
 
 1. 在计算机上创建一个本地文件夹。 例如，在本地 C 驱动器上创建 TestScanner  。
 
-2. 在该文件夹中创建一个 Word 文档并保存它，该文件夹包含文本“4242-4242-4242-4242”  （用于测试的已知信用卡号）。
+2. 在该文件夹中创建一个 Word 文档并保存它，该文件夹包含文本“信用卡：  4242-4242-4242-4242”。
 
 ## <a name="configure-a-profile-for-the-scanner"></a>配置扫描程序的配置文件
 
@@ -65,7 +68,7 @@ ms.locfileid: "71060203"
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”   。 选择“Azure 信息保护”。 
     
-2. 找到“扫描程序”  菜单选项，然后选择“配置文件”  。
+2. 在左侧边栏选项卡中找到“扫描程序”选项，然后选择“配置文件”   。
 
 3. 在“Azure 信息保护 - 配置文件”  边栏选项卡上，选择“添加”  ：
     
@@ -97,7 +100,7 @@ ms.locfileid: "71060203"
 
 9. 返回到“Azure 信息保护 - 配置文件”  边栏选项卡，现在将看到列出的配置文件，同时“计划”  列显示“手动”  且“实施”  列为空。 
     
-    “节点”  列显示“0”  ，因为尚未为此配置文件安装扫描程序。
+    “节点”列显示“0”，因为尚未为此配置文件安装扫描程序   。
 
 现在可随时使用刚刚创建的扫描程序配置文件安装扫描程序。
 
@@ -125,7 +128,7 @@ ms.locfileid: "71060203"
     
     请稍候，直到看到“上次扫描结果”  和“上次扫描（结束时间）”  列显示的值。
     
-    - 或者，查看本地 Windows 应用程序和服务  事件日志和 Azure 信息保护  。 确认 MSIP.Scanner  进程的信息事件 ID 911  。 事件日志条目还包含扫描结果的摘要。
+    或者，查看本地 Windows 应用程序和服务  事件日志和 Azure 信息保护  。 确认 MSIP.Scanner  进程的信息事件 ID 911  。 事件日志条目还包含扫描结果的摘要。
 
 ## <a name="see-detailed-results"></a>查看详细结果
 
@@ -135,8 +138,7 @@ ms.locfileid: "71060203"
 
 ## <a name="scan-your-own-data"></a>扫描自己的数据
 
-1. 编辑扫描程序配置文件并添加新的数据存储库，这次指定要扫描敏感信息的本地数据存储。 
-    
+1. 编辑扫描程序配置文件并添加新的数据存储库，这次指定要扫描敏感信息的本地数据存储。     
     可以为 SharePoint 站点或库指定本地文件夹，网络共享（UNC 路径）或 SharePoint Server URL。 
     
     - 本地文件夹的示例：
@@ -171,7 +173,9 @@ ms.locfileid: "71060203"
 
 此命令不会删除以下项目，如果你在学习本快速入门教程后不需要使用这些项目，必须手动删除它们：
 
-- 安装 Azure 信息保护扫描程序时通过运行 Install-AIPScanner cmdlet 创建的名为“AIPScanner_\<profile>”  的 SQL Server 数据库。 
+- 安装 Azure 信息保护扫描程序时通过运行 Install-AIPScanner cmdlet 创建的 SQL Server 数据库：
+    - 对于经典客户端：AIPScanner_\<profile> 
+    - 对于统一标签客户端：AIPScannerUL_\<profile_name> 
 
 - 位于 %localappdata  %\Microsoft\MSIP\Scanner\Reports 中的扫描程序报告。
 
@@ -182,8 +186,12 @@ ms.locfileid: "71060203"
 
 本快速入门教程包括最低配置，使用户可以快速查看扫描程序如何在本地数据存储中查找敏感信息。 如果你已准备好在生产环境中安装扫描程序，请参阅[部署 Azure 信息保护扫描程序以自动分类和保护文件](deploy-aip-scanner.md)。
 
-如果要对包含敏感信息的文件进行分类和保护，必须配置 Azure 信息保护标签以实现自动分类和保护：
+如果要对包含敏感信息的文件进行分类和保护，必须配置标签以实现自动分类和保护：
 
-- [如何配置 Azure 信息保护的自动和建议分类的条件](configure-policy-classification.md)
+- 对于经典客户端：
+    - [如何配置 Azure 信息保护的自动和建议分类的条件](configure-policy-classification.md)
+    - [如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)
 
-- [如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)
+- 对于统一标签客户端：
+    - [将敏感度标签自动应用到内容](https://docs.microsoft.com/Office365/SecurityCompliance/apply_sensitivity_label_automatically)
+    - [通过在敏感度标签中使用加密来限制对内容的访问](https://docs.microsoft.com/Office365/SecurityCompliance/encryption-sensitivity-labels)

@@ -4,7 +4,7 @@ description: Azure 信息保护服务的技术概述，此服务有助于组织�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/21/2019
+ms.date: 09/24/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ Customer intent: As an administrator, I want to label documents and emails to cl
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: e89fcb967ea72bd61bf7c8ca73d72ccb08fdef47
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 0588efa277c75199afc2d357a8152257c120376c
+ms.sourcegitcommit: 437143e1f7f33aba46ffcc3900c31a763a2105c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68792925"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71227828"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -147,15 +147,15 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 Microsoft Ignite 2018 大会在美国奥兰多开幕，期间举办了多场以 [Azure 信息保护](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Information%2520Protection)为题的会议。 所有会议都进行了录制，因此，即便未参加此次大会，还是可以在之后观看这些会议。 我们最推荐观看的五场会议：
 
-- [BRK2006 - Use Microsoft Information Protection (MIP) to help protect your sensitive data everywhere, throughout its lifecycle](https://myignite.techcommunity.microsoft.com/sessions/64297)（BRK2006 - 使用 Microsoft 信息保护 (MIP) 在敏感数据的生命周期内为其提供无处不在的保护）- 观看 [YouTube 视频](https://youtu.be/gmHVF-1cLXA)
+- [BRK2006 - Use Microsoft Information Protection (MIP) to help protect your sensitive data everywhere, throughout its lifecycle](https://myignite.techcommunity.microsoft.com/sessions/64297)（BRK2006 - 使用 Microsoft 信息保护 (MIP) 在敏感数据的生命周期内为其提供无处不在的保护）
  
-- [BRK3002 - Understanding how Microsoft Information Protection capabilities work together to protect sensitive information across devices, apps, and services](https://myignite.techcommunity.microsoft.com/sessions/64299)（BRK3002 - 了解 Microsoft 信息保护功能如何协力保护设备、应用和服务中的敏感信息）- 观看 [YouTube 视频](https://youtu.be/kL9Y7NGTyQQ)
+- [BRK3002 - Understanding how Microsoft Information Protection capabilities work together to protect sensitive information across devices, apps, and services](https://myignite.techcommunity.microsoft.com/sessions/64299)（BRK3002 - 了解 Microsoft 信息保护功能如何协力保护设备、应用和服务中的敏感信息）
 
-- [BRK3009 - Accelerate deployment and adoption of Microsoft Information Protection solutions](https://myignite.techcommunity.microsoft.com/sessions/64283)（BRK3009 - 加速部署和推广 Microsoft 信息保护解决方案）- 观看 [YouTube 视频](https://www.youtube.com/watch?v=JsCyIVyQJmE)
+- [BRK3009 - Accelerate deployment and adoption of Microsoft Information Protection solutions](https://myignite.techcommunity.microsoft.com/sessions/64283)（BRK3009 - 加速部署和推广 Microsoft 信息保护解决方案）
 
-- [BRK3397 - Protect and control your sensitive emails with Office 365 Message Encryption](https://myignite.techcommunity.microsoft.com/sessions/64327)（BRK3397 - 使用 Office 365 邮件加密保护和控制敏感的电子邮件）- 观看 [YouTube 视频](https://www.youtube.com/watch?v=Ld4b4pFua0g)
+- [BRK3397 - Protect and control your sensitive emails with Office 365 Message Encryption](https://myignite.techcommunity.microsoft.com/sessions/64327)（BRK3397 - 使用 Office 365 邮件加密保护和控制敏感的电子邮件）
 
-- [THR2003 - Data discovery, Usage reporting and analytics for all your data with Microsoft Information Protection](https://myignite.techcommunity.microsoft.com/sessions/64301)（THR2003 - 使用 Microsoft 信息保护为所有数据提供数据发现、使用情况报告和分析）- 观看 [YouTube 视频](https://www.youtube.com/watch?v=nzDIXd0XaeA)
+- [THR2003 - Data discovery, Usage reporting and analytics for all your data with Microsoft Information Protection](https://myignite.techcommunity.microsoft.com/sessions/64301)（THR2003 - 使用 Microsoft 信息保护为所有数据提供数据发现、使用情况报告和分析）
 
 有关此次 Ignite 大会上的公告汇总，请参阅博客文章 [Announcing availability of information protection capabilities to help protect your sensitive data](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)（宣布推出信息保护功能来帮助保护你的敏感数据）。
 
