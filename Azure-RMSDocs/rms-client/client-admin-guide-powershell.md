@@ -4,7 +4,7 @@ description: 管理员通过使用 PowerShell 管理 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/16/2019
+ms.date: 09/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.subservice: v1client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ce8e2b9969ba6cbc3b5a58eac6d66fdd5db4f5b7
-ms.sourcegitcommit: bdfade60c1939f5c540bbf82859af060eb629f68
+ms.openlocfilehash: 4759e78c40f2ea66db81a7069d333be309144753
+ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546057"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71314115"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
->适用范围：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用范围：*Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
@@ -96,7 +96,7 @@ AzureInformationProtection 模块的当前版本具有以下限制：
 
 无论是通过使用标签还是直接连接到 Azure 权限管理服务来应用数据保护，此先决条件都适用。
 
-如果未激活 Azure 信息保护租户, 请参阅[从 Azure 信息保护中激活保护服务](../activate-service.md)的说明。
+如果未激活 Azure 信息保护租户，请参阅[从 Azure 信息保护中激活保护服务](../activate-service.md)的说明。
 
 #### <a name="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account"></a>先决条件 2：使用自己的帐户从他人的文件中删除保护
 
@@ -141,9 +141,9 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 ##### <a name="to-get-the-bpostenantid"></a>获取 BposTenantId
 
-从 Azure RMS 的 Windows PowerShell 模块运行 AipServiceConfiguration cmdlet:
+从 Azure RMS 的 Windows PowerShell 模块运行 AipServiceConfiguration cmdlet：
 
-1. 如果计算机上尚未安装此模块, 请参阅[安装 AIPService PowerShell 模块](../install-powershell.md)。
+1. 如果计算机上尚未安装此模块，请参阅[安装 AIPService PowerShell 模块](../install-powershell.md)。
 
 2. 使用“以管理员身份运行”选项启动 Windows PowerShell。
 
@@ -155,7 +155,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
     
 4. 运行 `Get-AipServiceConfiguration` 并创建 BPOSId 值的副本。
     
-    AipServiceConfiguration 的输出示例:
+    AipServiceConfiguration 的输出示例：
     
             BPOSId                                   : 23976bc6-dcd4-4173-9d96-dad1f48efd42
         
@@ -235,9 +235,9 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 如上一命令所示，可以使用单个命令提供多个值，将在以非交互方式运行的脚本中执行此操作。 但是出于测试目的，可以仅键入 Set-RMSServerAuthentication，并根据提示逐个提供值。 命令完成后，客户端现以“服务器模式”运行，这适用于脚本和 Windows Server 文件分类基础结构等非交互式使用。
 
-请考虑将此服务主体帐户设为超级用户：若要确保此服务主体帐户始终可以取消保护他人的文件，可以将其配置为超级用户。 采用与将标准用户帐户配置为超级用户相同的方式, 使用相同的 Azure RMS cmdlet [AipServiceSuperUser](/powershell/module/aipservice/add-aipservicesuperuser), 但使用 AppPrincipalId 值指定**ServicePrincipalId**参数。
+请考虑将此服务主体帐户设为超级用户：若要确保此服务主体帐户始终可以取消保护他人的文件，可以将其配置为超级用户。 采用与将标准用户帐户配置为超级用户相同的方式，使用相同的 Azure RMS cmdlet [AipServiceSuperUser](/powershell/module/aipservice/add-aipservicesuperuser)，但使用 AppPrincipalId 值指定**ServicePrincipalId**参数。
 
-有关超级用户的详细信息, 请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](../configure-super-users.md)。
+有关超级用户的详细信息，请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](../configure-super-users.md)。
 
 > [!NOTE]
 > 若要使用自己的帐户对 Azure 权限管理服务进行身份验证，则无需在保护或取消保护文件或获取模板之前运行 Set-RMSServerAuthentication。
@@ -246,7 +246,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 如果在北美以外的区域使用服务主体帐户来保护文件和下载模板，必须编辑注册表： 
 
-1. 再次运行 AipServiceConfiguration cmdlet, 记下 " **CertificationExtranetDistributionPointUrl** " 和 " **LicensingExtranetDistributionPointUrl**" 的值。
+1. 再次运行 AipServiceConfiguration cmdlet，记下 " **CertificationExtranetDistributionPointUrl** " 和 " **LicensingExtranetDistributionPointUrl**" 的值。
 
 2. 在运行 AzureInformationProtection cmdlet 的每台计算机上，打开注册表编辑器。
 
@@ -522,7 +522,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 11. 在 " **AIPOnBehalfOf-公开 API** " 边栏选项卡上, 选择 "**设置** **应用程序 id uri** " 选项, 然后在 "**应用程序 id uri** " 值中, 将**API**更改为**http**。 此字符串类似于以下示例: `http://d244e75e-870b-4491-b70d-65534953099e`。 
     
-    选择**保存**。
+    选择“保存”。
 
 12. 返回 " **AIPOnBehalfOf-公开 API** " 边栏选项卡, 选择 " **+ 添加作用域**"。
 

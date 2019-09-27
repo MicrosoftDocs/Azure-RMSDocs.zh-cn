@@ -4,7 +4,7 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 4 阶段包括从 AD 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/07/2019
+ms.date: 06/09/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ced4865d5a0549e5ae9883f239966bd30fef8ffe
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 1ef0421c63489e8cd0706a77001ba611a929d1b1
+ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793974"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71314372"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
@@ -62,9 +62,9 @@ ms.locfileid: "68793974"
 ### <a name="disable-irm-on-exchange-servers-and-remove-ad-rms-configuration"></a>在 Exchange 服务器上禁用 IRM 并删除 AD RMS 配置
 
 > [!IMPORTANT]
-> 如果你尚未在任何 Exchange 服务器上配置 IRM, 只需执行步骤2和6。
+> 如果你尚未在任何 Exchange 服务器上配置 IRM，只需执行步骤2和6。
 > 
-> 当你运行[set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)时, 如果*LicensingLocation*参数中没有显示所有 AD RMS 群集的所有授权 url, 请执行所有这些步骤。
+> 当你运行[set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)时，如果*LicensingLocation*参数中没有显示所有 AD RMS 群集的所有授权 url，请执行所有这些步骤。
 
 1. 在每个 Exchange Server 上，找到以下文件夹，并删除该文件夹中的所有条目： **\ProgramData\Microsoft\DRM\Server\S-1-5-18**
 
@@ -77,7 +77,7 @@ ms.locfileid: "68793974"
         $list += "<Your Tenant URL>/_wmcs/licensing"
         Set-IRMConfiguration -LicensingLocation $list
     
-    现在, 当你运行[set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)时, 你应该会看到所有 AD RMS 群集授权 url 和为*LicensingLocation*参数显示的 Azure Rights Management 服务 URL。
+    现在，当你运行[set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)时，你应该会看到所有 AD RMS 群集授权 url 和为*LicensingLocation*参数显示的 Azure Rights Management 服务 URL。
 
 3.  现在对向外部收件人发送的消息禁用 IRM 功能：
 

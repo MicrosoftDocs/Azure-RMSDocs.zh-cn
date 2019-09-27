@@ -3,7 +3,7 @@ title: 自定义配置-Azure 信息保护统一标签客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/17/2019
+ms.date: 09/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 004f37973d045bcf1a2809a226c150f5bc749681
-ms.sourcegitcommit: 908ca5782fe86e88502dccbd0e82fa18db9b96ad
+ms.openlocfilehash: c3abc12674e0a59f78d473d709a4708affff5dcf
+ms.sourcegitcommit: e53d52bd44271d27aa06c63bd4cc32884d3f2a4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71060084"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322403"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，带 SP1 的 windows 7，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012，windows Server 2008 r2*
 >
 > 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -124,7 +124,7 @@ ms.locfileid: "71060084"
 |EnableCustomPermissionsForCustomProtectedFiles|[对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) |
 |EnableLabelByMailHeader|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |HideBarByDefault|[在 Office 应用程序中显示“信息保护”栏](##display-the-information-protection-bar-in-office-apps)|
-|LogMatchedContent|[禁止为一部分用户发送信息类型匹配项](#disable-sending-information-type-matches-for-a-subset-of-users)|
+|LogMatchedContent|[发送信息类型匹配](#send-information-type-matches)|
 |OutlookBlockTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookBlockUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookDefaultLabel|[为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook)|
@@ -169,9 +169,9 @@ ms.locfileid: "71060084"
 
 对于所选的标签策略, 请指定以下字符串:
 
-- 键:**HideBarByDefault**
+- 按键**HideBarByDefault**
 
-- 值：**False**
+- Value：**False**
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -185,9 +185,9 @@ ms.locfileid: "71060084"
 
 对于所选的标签策略, 请指定以下字符串:
 
-- 键:**DisableMandatoryInOutlook**
+- 按键**DisableMandatoryInOutlook**
 
-- 值：**True**
+- Value：**True**
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -201,9 +201,9 @@ ms.locfileid: "71060084"
 
 对于所选的标签策略, 请指定以下字符串:
 
-- 键:**OutlookRecommendationEnabled**
+- 按键**OutlookRecommendationEnabled**
 
-- 值：**True**
+- Value：**True**
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -217,7 +217,7 @@ ms.locfileid: "71060084"
 
 对于所选的标签策略, 请指定以下字符串:
 
-- 键:**OutlookDefaultLabel**
+- 按键**OutlookDefaultLabel**
 
 - 值: \< **label GUID**> 或**None**
 
@@ -236,9 +236,9 @@ ms.locfileid: "71060084"
 
 对于所选的标签策略, 请指定以下字符串:
 
-- 键:**PostponeMandatoryBeforeSave**
+- 按键**PostponeMandatoryBeforeSave**
 
-- 值：**False**
+- Value：**False**
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -258,9 +258,9 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 对于所选的标签策略, 请指定以下字符串:
 
-- 键:**RemoveExternalContentMarkingInApp**
+- 按键**RemoveExternalContentMarkingInApp**
 
-- 值：\<Office 应用程序类型 WXP> 
+- Value：\<Office 应用程序类型 WXP> 
 
 例如：
 
@@ -297,7 +297,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 对于同一标签策略, 请指定以下字符串:
 
-- 键:**ExternalContentMarkingToRemove**
+- 按键**ExternalContentMarkingToRemove**
 
 - 值：\<要匹配的字符串，定义为正则表达式> 
 
@@ -315,7 +315,7 @@ Label applied manually
 
 若要删除此多行页脚, 请为同一标签策略创建以下两个条目:
 
-- 键:**ExternalContentMarkingToRemove**
+- 按键**ExternalContentMarkingToRemove**
 
 - 键值 1： **\*Confidential***
 
@@ -342,9 +342,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 例如：形状名称是 fc。 若要删除具有此名称的形状，则指定值：`fc`。
 
-- 键:**PowerPointShapeNameToRemove**
+- 按键**PowerPointShapeNameToRemove**
 
-- 值：\<PowerPoint 形状名称> 
+- Value：\<PowerPoint 形状名称> 
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -354,9 +354,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 默认情况下，只检查主幻灯片的页眉和页脚。 若要将检查范围扩展到所有幻灯片，将占用大量资源，则可以使用 RemoveExternalContentMarkingInAllSlides 附加高级客户端设置：
 
-- 键:**RemoveExternalContentMarkingInAllSlides**
+- 按键**RemoveExternalContentMarkingInAllSlides**
 
-- 值：**True**
+- Value：**True**
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -371,9 +371,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 若要配置此高级设置, 请为所选标签策略输入以下字符串:
 
-- 键:**EnableCustomPermissions**
+- 按键**EnableCustomPermissions**
 
-- 值：**False**
+- Value：**False**
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -389,9 +389,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 若要配置此高级设置, 请为所选标签策略输入以下字符串:
 
-- 键:**EnableCustomPermissionsForCustomProtectedFiles**
+- 按键**EnableCustomPermissionsForCustomProtectedFiles**
 
-- 值：**True**
+- Value：**True**
 
 示例 PowerShell 命令:
 
@@ -437,9 +437,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 若要配置此高级设置, 请为所选标签策略输入以下字符串:
 
-- 键:**ReportAnIssueLink**
+- 按键**ReportAnIssueLink**
 
-- 值： **\<HTTP string>**
+- Value： **\<HTTP string>**
 
 网站示例值：`https://support.contoso.com`
 
@@ -483,19 +483,19 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 警告消息：
     
-    - 键:**OutlookWarnUntrustedCollaborationLabel**
+    - 按键**OutlookWarnUntrustedCollaborationLabel**
     
     - 值: \<**标记 guid, 用逗号分隔**>
 
 - 对齐消息：
     
-    - 键:**OutlookJustifyUntrustedCollaborationLabel**
+    - 按键**OutlookJustifyUntrustedCollaborationLabel**
     
     - 值: \<**标记 guid, 用逗号分隔**>
 
 - 阻止邮件：
     
-    - 键:**OutlookBlockUntrustedCollaborationLabel**
+    - 按键**OutlookBlockUntrustedCollaborationLabel**
     
     - 值: \<**标记 guid, 用逗号分隔**>
 
@@ -520,19 +520,19 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 警告消息：
     
-    - 键:**OutlookWarnTrustedDomains**
+    - 按键**OutlookWarnTrustedDomains**
     
     - 值：\<域名，以逗号分隔>
 
 - 对齐消息：
     
-    - 键:**OutlookJustifyTrustedDomains**
+    - 按键**OutlookJustifyTrustedDomains**
     
     - 值：\<域名，以逗号分隔>
 
 - 阻止邮件：
     
-    - 键:**OutlookBlockTrustedDomains**
+    - 按键**OutlookBlockTrustedDomains**
     
     - 值：\<域名，以逗号分隔>
 
@@ -550,27 +550,27 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 警告消息：
     
-    - 键:**OutlookUnlabeledCollaborationAction**
+    - 按键**OutlookUnlabeledCollaborationAction**
     
-    - 值：**警告**
+    - Value：**警告**
 
 - 对齐消息：
     
-    - 键:**OutlookUnlabeledCollaborationAction**
+    - 按键**OutlookUnlabeledCollaborationAction**
     
-    - 值：**两端对齐**
+    - Value：**两端对齐**
 
 - 阻止邮件：
     
-    - 键:**OutlookUnlabeledCollaborationAction**
+    - 按键**OutlookUnlabeledCollaborationAction**
     
-    - 值：**阻止**
+    - Value：**阻止**
 
 - 关闭这些消息：
     
-    - 键:**OutlookUnlabeledCollaborationAction**
+    - 按键**OutlookUnlabeledCollaborationAction**
     
-    - 值：**Off**
+    - Value：**Off**
 
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
@@ -589,7 +589,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 对于同一标签策略, 请输入以下字符串: 
 
 
-- 键:**OutlookOverrideUnlabeledCollaborationExtensions**
+- 按键**OutlookOverrideUnlabeledCollaborationExtensions**
 
 - 值： **\<** 文件扩展名以显示消息，以逗号分隔 **>**
 
@@ -606,27 +606,27 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 警告消息：
     
-    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    - 按键**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
     
-    - 值：**警告**
+    - Value：**警告**
 
 - 对齐消息：
     
-    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    - 按键**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
     
-    - 值：**两端对齐**
+    - Value：**两端对齐**
 
 - 阻止邮件：
     
-    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    - 按键**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
     
-    - 值：**阻止**
+    - Value：**阻止**
 
 - 关闭这些消息：
     
-    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    - 按键**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
     
-    - 值：**Off**
+    - Value：**Off**
 
 如果未指定此客户端设置, 则为 OutlookUnlabeledCollaborationAction 指定的值将用于没有附件的未标记电子邮件以及带有附件的未标记电子邮件。
 
@@ -642,9 +642,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 若要更改此行为, 以便统一标签客户端不发送此信息, 请为所选标签策略输入以下字符串:
 
-- 键:**EnableAudit**
+- 按键**EnableAudit**
 
-- 值：**False**
+- Value：**False**
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -659,9 +659,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 若要更改此行为，以便不将统一标签客户端找到的敏感信息类型发送到 Azure 信息保护分析，请为所选标签策略输入以下字符串：
 
-- 键:**RunAuditInformationTypesDiscovery**
+- 按键**RunAuditInformationTypesDiscovery**
 
-- 值：**False**
+- Value：**False**
 
 如果设置了此 "高级客户端" 设置，则仍然可以从客户端发送审核信息，但当用户访问标记内容时，该信息将被限制为报表。
 
@@ -677,19 +677,19 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
     Set-LabelPolicy -Identity Global -AdvancedSettings @{RunAuditInformationTypesDiscovery="False"}
 
-## <a name="disable-sending-information-type-matches-for-a-subset-of-users"></a>禁止为一部分用户发送信息类型匹配项
+## <a name="send-information-type-matches"></a>发送信息类型匹配
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-当你为[Azure 信息保护分析](../reports-aip.md)选中此复选框后，可以更深入地分析你的敏感数据将收集你的敏感信息类型或你的自定义条件的内容匹配项。默认情况下，此信息由所有用户发送，其中包括运行 Azure 信息保护扫描程序的服务帐户。 如果有不应发送此数据的用户, 请在 "标签" 策略中为这些用户创建以下高级客户端设置: 
+默认情况下，统一标签客户端不会将敏感信息类型的内容匹配发送到[Azure 信息保护分析](../reports-aip.md)。 若要在发送敏感信息类型时发送此附加信息，请在标签策略中创建以下高级客户端设置： 
 
-- 键:**LogMatchedContent**
+- 按键**LogMatchedContent**
 
-- 值：**False**
+- Value：**True**
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{LogMatchedContent="Disable"}
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{LogMatchedContent="True"}
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>从 Secure Islands 和其他标记解决方案迁移标签
 
@@ -727,7 +727,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥: **labelByCustomProperties**
 
-- 值：**安全孤岛标签为机密、分类、机密**
+- Value：**安全孤岛标签为机密、分类、机密**
 
 示例 PowerShell 命令, 其中的标签命名为 "机密":
 
@@ -745,7 +745,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥: **labelByCustomProperties**
 
-- 值：**安全孤岛标签区分, 分类, 敏感**
+- Value：**安全孤岛标签区分, 分类, 敏感**
 
 示例 PowerShell 命令, 其中标签命名为 "高度机密":
 
@@ -763,7 +763,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥: **labelByCustomProperties**
 
-- 值：**安全孤岛标签包含内部、分类、。\*内部。\***
+- Value：**安全孤岛标签包含内部、分类、。\*内部。\***
 
 示例 PowerShell 命令, 其中标签命名为 "General":
 
@@ -783,9 +783,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 若要配置此高级设置, 请为所选标签策略输入以下字符串:
 
-- 键:**EnableLabelByMailHeader**
+- 按键**EnableLabelByMailHeader**
 
-- 值：**True**
+- Value：**True**
 
 示例 PowerShell 命令, 其中标签策略命名为 "Global":
 
@@ -831,7 +831,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥: **customPropertiesByLabel**
 
-- 值：**分类, 机密**
+- Value：**分类, 机密**
 
 示例 PowerShell 命令, 其中的标签命名为 "机密":
 
@@ -853,15 +853,15 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 若要为 S/MIME 数字签名配置高级设置, 请为所选标签输入以下字符串:
 
-- 键:**SMimeSign**
+- 按键**SMimeSign**
 
-- 值：**True**
+- Value：**True**
 
 若要配置 S/MIME 加密的高级设置, 请为所选标签输入以下字符串:
 
-- 键:**SMimeEncrypt**
+- 按键**SMimeEncrypt**
 
-- 值：**True**
+- Value：**True**
 
 如果你指定的标签配置为加密, 则对于 Azure 信息保护统一标签客户端, S/MIME 保护仅替换 Outlook 中的 Rights Management 保护。 统一标签客户端的正式发行版将继续使用为管理中心的标签指定的加密设置。 对于带有内置标签的 Office 应用, 这些功能不应用 S/MIME 保护, 而是应用 "不转发" 保护。
 
@@ -879,7 +879,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 将子标签添加到标签时, 用户将无法再对文档或电子邮件应用父标签。 默认情况下, 用户选择父标签以查看他们可以应用的子标签, 然后选择其中一个子标签。 如果配置此高级设置, 当用户选择父标签时, 系统会自动为其选择和应用子标签: 
 
-- 键:**DefaultSubLabelId**
+- 按键**DefaultSubLabelId**
 
 - 值: \<子标签 GUID >
 
@@ -899,7 +899,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 键:**颜色**
 
-- 值：\<RGB 十六进制值 >
+- Value：\<RGB 十六进制值 >
 
 示例 PowerShell 命令, 其中标签命名为 "Public":
 

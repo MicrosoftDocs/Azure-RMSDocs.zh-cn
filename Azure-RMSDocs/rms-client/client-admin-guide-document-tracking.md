@@ -4,7 +4,7 @@ description: 管理员配置和使用 Azure 信息保护的文档跟踪的说明
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: doctrack
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6ba83809a8f077ed23afaa337c62d63c78c0cfbc
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: b014fd328782c4cf09ae204ba7b7d4229d2d49a4
+ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68790110"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71314243"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>管理员指南：配置和使用 Azure 信息保护的文档跟踪
 
->*适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，带 SP1 的 windows 7，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012，windows Server 2008 r2*
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
@@ -30,30 +30,30 @@ ms.locfileid: "68790110"
 
 ## <a name="using-powershell-to-manage-the-document-tracking-site"></a>使用 PowerShell 管理文档跟踪站点
 
-以下各节包含有关如何使用 PowerShell 管理文档跟踪站点的信息。 有关 PowerShell 模块的安装说明, 请参阅[安装 AIPService PowerShell 模块](../install-powershell.md)。
+以下各节包含有关如何使用 PowerShell 管理文档跟踪站点的信息。 有关 PowerShell 模块的安装说明，请参阅[安装 AIPService PowerShell 模块](../install-powershell.md)。
 
 有关每个 cmdlet 的详细信息，请使用提供的链接。
 
 ### <a name="privacy-controls-for-your-document-tracking-site"></a>文档跟踪站点的隐私控制
 
-如果在你的组织中由于隐私要求而禁止显示所有文档跟踪信息, 你可以使用[AipServiceDocumentTrackingFeature](/powershell/module/aipservice/disable-aipservicedocumenttrackingfeature) cmdlet 禁用文档跟踪。 
+如果在你的组织中由于隐私要求而禁止显示所有文档跟踪信息，你可以使用[AipServiceDocumentTrackingFeature](/powershell/module/aipservice/disable-aipservicedocumenttrackingfeature) cmdlet 禁用文档跟踪。 
 
 此 cmdlet 禁用对文档跟踪站点的访问，以使组织中的所有用户无法跟踪或撤销对已保护文档的访问权限。 你随时可以使用 [Enable-AipServiceDocumentTrackingFeature](/powershell/module/aipservice/enable-aipservicedocumenttrackingfeature) 来重新启用文档跟踪，并可以使用 [Get-AipServiceDocumentTrackingFeature](/powershell/module/aipservice/get-aipservicedocumenttrackingfeature) 来查看当前是已启用还是已禁用文档跟踪。 
 
 启用文档跟踪站点后，它会默认显示尝试访问受保护文档的人员的电子邮件地址、这些人员尝试访问这些文档的时间以及他们所在的位置等信息。 这个级别的信息有助于确定使用共享文档的方式，以及在发现可疑活动时，是否应撤销这些文档。 但是，出于隐私原因，你可能需要为部分或所有用户禁用此用户信息。 
 
-如果你有不应由其他用户跟踪此活动的用户, 请将其添加到存储在 Azure AD 中的组, 并使用[AipServiceDoNotTrackUserGroup](/powershell/module/aipservice/Set-AipServiceDoNotTrackUserGroup) cmdlet 指定此组。 运行此 cmdlet 时，必须指定单个组。 不过，该组可以包含嵌套组。 
+如果你有不应由其他用户跟踪此活动的用户，请将其添加到存储在 Azure AD 中的组，并使用[AipServiceDoNotTrackUserGroup](/powershell/module/aipservice/Set-AipServiceDoNotTrackUserGroup) cmdlet 指定此组。 运行此 cmdlet 时，必须指定单个组。 不过，该组可以包含嵌套组。 
 
 对于这些组成员，当相应活动与这些组成员与用户共享的文档相关时，用户在文档跟踪站点上看不到任何活动。 另外，不会向共享文档的用户发送电子邮件通知。
 
-使用此配置时，所有用户仍可以使用文档跟踪站点，以及撤销对已保护文档的访问权限。 但是, 他们看不到使用 AipServiceDoNotTrackUserGroup cmdlet 指定的用户的活动。
+使用此配置时，所有用户仍可以使用文档跟踪站点，以及撤销对已保护文档的访问权限。 但是，他们看不到使用 AipServiceDoNotTrackUserGroup cmdlet 指定的用户的活动。
 
-此设置仅会影响最终用户。 Azure 信息保护的管理员可以始终跟踪所有用户的活动, 即使这些用户是使用 AipServiceDoNotTrackUserGroup 指定的。 有关管理员如何跟踪用户文档的详细信息，请参阅[跟踪和撤销用户文档](#tracking-and-revoking-documents-for-users)部分。
+此设置仅会影响最终用户。 Azure 信息保护的管理员可以始终跟踪所有用户的活动，即使这些用户是使用 AipServiceDoNotTrackUserGroup 指定的。 有关管理员如何跟踪用户文档的详细信息，请参阅[跟踪和撤销用户文档](#tracking-and-revoking-documents-for-users)部分。
 
 
 ### <a name="logging-information-from-the-document-tracking-site"></a>文档跟踪站点中的日志记录信息
 
-你可以使用以下 cmdlet 从文档跟踪站点下载日志记录信息:
+你可以使用以下 cmdlet 从文档跟踪站点下载日志记录信息：
 
 - [Get-AipServiceTrackingLog](/powershell/module/aipservice/Get-AipServiceTrackingLog)
     
@@ -118,7 +118,7 @@ ms.locfileid: "68790110"
 
 此外，还有记录用户和管理员如何使用文档跟踪站点的请求类型。 例如，**RevokeAccess** 是用户或代表用户的管理员已撤销文档跟踪站点中的文档时的请求类型。 通过将此请求类型与 AdminAction 字段结合使用，可确定是用户撤销了自己的文档（AdminAction 字段为空），还是管理员代表用户撤销了文档（AdminAction 为 true）。
 
-有关使用日志记录的详细信息, 请参阅[记录和分析 Azure 信息保护中的保护使用情况](../log-analyze-usage.md)
+有关使用日志记录的详细信息，请参阅[记录和分析 Azure 信息保护中的保护使用情况](../log-analyze-usage.md)
 
 ## <a name="next-steps"></a>后续步骤
 现在你配置了 Azure 信息保护客户端的文档跟踪站点，若要了解支持此客户端所需的其他信息，请参阅以下内容：

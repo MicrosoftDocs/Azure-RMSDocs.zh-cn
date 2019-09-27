@@ -4,23 +4,23 @@ description: 管理员用于在企业网络上部署 Azure 信息保护统一标
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e76f2a358042b09aee47088e43d898cf1e11784c
-ms.sourcegitcommit: 908ca5782fe86e88502dccbd0e82fa18db9b96ad
+ms.openlocfilehash: 014145899b42b37d7fc757e9b3be1b33469e556b
+ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71060140"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71314100"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2*
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，带 SP1 的 windows 7，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012，windows Server 2008 r2*
 >
 > 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -202,10 +202,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     |Office 2010|Windows 8 和 Windows Server 2012|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
     |Office 2010|Windows 7 和 Windows Server 2008 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB3125574，则进行安装|
     |“不适用”|Windows 7|[vc_redist.x86.exe](https://www.microsoft.com/en-us/download/details.aspx?id=48145)|安装|
-    |“不适用”|Windows 7|KB2627273 <br /><br /> 文件名中包含的版本号：v4|卸载|
+    |“不适用”|Windows 7|KB2627273 <br /><br /> 文件名中包含的版本号：v4|“卸载”|
 
-3. 对于默认安装，将 .msi 与 /quiet/ 一起运行，例如，`AzInfoProtection_UL.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)中记录的其他安装参数。  
-
+3. 对于默认安装，将 .msi 与 /quiet/ 一起运行，例如，`AzInfoProtection_UL.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)中记录的其他安装参数，但有一个例外：
+    
+    - **通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护**，而不是使用**AllowTelemetry = 0**来帮助改进 Azure 信息保护。 
 
 ## <a name="next-steps"></a>后续步骤
 现在，已安装 Azure 信息保护统一标签客户端，请参阅以下内容，了解支持此客户端所需的其他信息：

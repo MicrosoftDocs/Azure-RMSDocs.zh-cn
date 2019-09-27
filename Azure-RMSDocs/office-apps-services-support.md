@@ -4,7 +4,7 @@ description: 最终用户 Office 应用程序（例如 Word 和 Outlook）和 Of
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/05/2019
+ms.date: 08/09/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 09a9272233a744027810ef65c12e8a3df5cac24b
-ms.sourcegitcommit: 332801617ce83ebb3f01edf34cbb69b810662be7
+ms.openlocfilehash: 51b39652a5f3ec8cd81f28c1a5ee485992a10375
+ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808083"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71314331"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
@@ -25,12 +25,12 @@ ms.locfileid: "68808083"
 
 最终用户 Office 应用程序和 Office 服务可使用 Azure 信息保护中的 Azure 权限管理服务来帮助保护组织的数据。 Office 应用程序包括 Word、Excel、PowerPoint 和 Outlook。 Office 服务包括 Exchange 和 SharePoint。 支持 Azure 权限管理服务的 Office 配置通常使用术语“信息权限管理 (IRM)”。
 
-## <a name="office-applications-word-excel-powerpoint-outlook"></a>Office 应用程序:Word、Excel、PowerPoint、Outlook
+## <a name="office-applications-word-excel-powerpoint-outlook"></a>Office 应用程序：Word、Excel、PowerPoint、Outlook
 这些应用程序可以本机方式支持 Azure 权限管理，让用户能够将保护应用于已保存文档，或者应用于要发送的电子邮件。 用户可以应用[模板](configure-policy-templates.md)以应用保护。 或者，在 Word、Excel 和 PowerPoint 中，用户还可以针对访问、权限和使用限制选择自定义设置。
 
 例如，用户可以配置 Word 文档，使仅组织中的人员可以访问该文档。 或者，控制 Excel 电子表格是否可以编辑，或限制为只读，或者禁止打印。 对于时间敏感型文件，可以配置一个过期时间，在过期之后无法再访问该文件。 此配置可由用户或通过应用保护模板直接执行。 对于 Outlook，用户还可以选择“不要转发”选项来帮助防止数据泄漏 。
 
-如果已准备好配置 office 应用, 请[参阅 office 应用:客户端配置](configure-office-apps.md)。
+如果已准备好配置 office 应用，请[参阅 office 应用：客户端配置](configure-office-apps.md)。
 
 ## <a name="exchange-online-and-exchange-server"></a>Exchange Online 和 Exchange Server
 使用 Exchange Online 或 Exchange 服务器 时，可以配置 Azure 信息保护的选项。 此配置允许 Exchange 提供以下保护解决方案：
@@ -81,13 +81,13 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 > 
 > - 不支持共同创作（多人同时对文档进行编辑）。 若要在受 IRM 保护的库中编辑文档，必须首先签出和下载文档，然后在 Office 应用程序中编辑该文档。 因此，一次只能有一人编辑文档。
 
-对于未受 IRM 保护的库，如果保护随后上传到 SharePoint 或 OneDrive 的文件，则以下内容不适用于此文件：共同创作、用于 web 的 Office、搜索、文档预览、缩略图、电子数据展示和数据丢失防护 (DLP)。
+对于未受 IRM 保护的库，如果保护随后上传到 SharePoint 或 OneDrive 的文件，则以下内容不适用于此文件：共同创作、Office 网页版、搜索、文档预览、缩略图、电子数据展示和数据丢失防护 (DLP)。
 
 使用 SharePoint IRM 保护时，Azure Rights Management 服务会在从 SharePoint 下载文档时为文档应用使用限制和数据加密，而不是在 SharePoint 中首次创建文档或将其上传到库时进行此操作。 有关如何在下载文档前对其进行保护的信息，请参阅 SharePoint 文档中的 [OneDrive for Business 和 SharePoint Online 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx) 。
 
 虽然不再是新的，但 Office 365 博客中的以下文章提供了一些你可能会觉得有用的其他信息：[SharePoint 和 SharePoint 中的信息权限管理的新增功能](https://www.microsoft.com/en-us/microsoft-365/blog/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)
 
-对于即将发生的更改, 请参阅[SharePoint 安全性、管理和迁移更新](https://techcommunity.microsoft.com/t5/Microsoft-SharePoint-Blog/Updates-to-SharePoint-security-administration-and-migration/ba-p/549585)。
+对于即将发生的更改，请参阅[SharePoint 安全性、管理和迁移更新](https://techcommunity.microsoft.com/t5/Microsoft-SharePoint-Blog/Updates-to-SharePoint-security-administration-and-migration/ba-p/549585)。
 
 如果已准备好为 SharePoint 配置 IRM ：
 

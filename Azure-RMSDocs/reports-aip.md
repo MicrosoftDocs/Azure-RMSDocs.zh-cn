@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 09/18/2019
+ms.date: 09/27/2019
 manager: rkarlin
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3257b194c539e59cc396e43c82499f94addfe625
-ms.sourcegitcommit: 326db0b8f1b46de502bcaaabbeda6efcd5a44441
+ms.openlocfilehash: c168cbfe672caecb0ebfbeea0e0c0e234599c223
+ms.sourcegitcommit: e53d52bd44271d27aa06c63bd4cc32884d3f2a4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71101328"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322377"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -137,15 +137,17 @@ ms.locfileid: "71101328"
 
 若要防止 Azure 信息保护统一客户端发送此数据，请配置 "标签策略"[高级设置](./rms-client/clientv2-admin-guide-customizations.md#disable-sending-audit-data-to-azure-information-protection-analytics)。
 
-#### <a name="content-matches-for-deeper-analysis"></a>更深入分析的内容匹配项 
+#### <a name="content-matches-for-deeper-analysis"></a>更深入分析的内容匹配项
 
-Azure 信息保护的 Azure Log Analytics 工作区包含一个复选框，用于收集和存储标识为敏感信息类型（预定义或自定义条件）的数据。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 如果你不想发送此额外数据，请不要选中此复选框，**以便对你的敏感数据进行更深入的分析**。 如果希望大多数用户发送此额外数据，并且用户的一个子集无法发送它，请选中该复选框，然后执行以下操作：
+Azure 信息保护允许收集和存储标识为敏感信息类型（预定义或自定义）的实际数据。 例如，这可以包括查找到的信用卡号码，以及社会安全号码、护照号码和银行帐户号码。 当你从**活动日志**中选择条目并查看**活动详细信息**时，将显示内容匹配。 
 
-- 对于经典客户端和扫描器：为用户子集配置作用域内策略中的 "[高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
+默认情况下，Azure 信息保护客户端不发送内容匹配项。 若要更改此行为以便发送内容匹配，请执行以下操作：
 
-- 对于统一标签客户端：为用户子集配置标签策略中的[高级设置](./rms-client/clientv2-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
+- 对于经典客户端，请选择一个复选框作为 Azure 信息保护分析[配置](#configure-a-log-analytics-workspace-for-the-reports)的一部分。 该复选框名为 "**启用对敏感数据的深度分析**"。
+    
+    如果希望使用此客户端的大多数用户发送内容匹配项，但部分用户无法发送内容匹配项，请选中该复选框，然后在作用域内策略中为用户子集配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
 
-收集内容匹配项后，当你向下钻取到活动日志中的文件以显示活动详细信息时，这些匹配项项将显示在报表中。 也可以使用查询来查看和检索此信息。
+- 对于统一标签客户端，请在标签策略中配置[高级设置](./rms-client/clientv2-admin-guide-customizations.md#send-information-type-matches)。
 
 ## <a name="prerequisites"></a>先决条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
@@ -232,10 +234,14 @@ Azure Monitor 日志具有**使用情况和预估成本**功能, 可帮助您估
     - 创建新的 Log Analytics 工作区：请选择“创建新工作区”，并在“Log Analytics 工作区”边栏选项卡上提供所需信息。
     
     - 使用现有的 Log Analytics 工作区：从列表中选择工作区。
+    
+    如果需要关于创建 Log Analytics 工作区的帮助，请参阅[在 Azure 门户中创建 Log Analytics 工作区](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace)。
 
-如果需要关于创建 Log Analytics 工作区的帮助，请参阅[在 Azure 门户中创建 Log Analytics 工作区](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace)。
+4. 如果你有 Azure 信息保护客户端（经典），请选中此复选框，以在你想要存储标识为敏感信息类型的实际数据时，**启用对敏感数据的更深入分析**。 有关此设置的详细信息，请参阅此页上的 "[内容匹配" 以获取深入分析](#content-matches-for-deeper-analysis)部分。
 
-配置工作区时，如果在以下管理中心之一发布敏感度标签，请执行以下操作：Office 365 安全与合规中心，Microsoft 365 安全中心，Microsoft 365 符合性中心：
+5. 选择“确定”。
+
+配置工作区后，如果在以下管理中心之一发布敏感度标签，请执行以下操作：Office 365 安全与合规中心，Microsoft 365 安全中心，Microsoft 365 符合性中心：
 
 - 在 Azure 门户中转到**Azure 信息保护** > **管理** > **统一标签**，然后选择 "**发布**"。
     
@@ -285,7 +291,7 @@ Azure 信息保护的记录数据存储在下表中：**InformationProtectionLog
 |访问|已成功打开受保护的文档，如果被跟踪，则由文件名标识; 如果未跟踪，则由其标识。|
 |AccessDenied|受保护的文档被拒绝访问，如果被跟踪，则由文件名标识; 如果未跟踪，则由其标识。|
 |Time|事件时间:格式 YYYY-MM-YYYY-MM-DDTHH: MM: SS 中的 UTC|
-|用户|用户：格式 UPN 或 DOMAIN\USER|
+|“用户”|用户：格式 UPN 或 DOMAIN\USER|
 |ItemPath|完整项目路径或电子邮件主题|
 |ItemName|文件名或电子邮件主题 |
 |方法|标签分配方法:手动、自动、建议、默认或强制|

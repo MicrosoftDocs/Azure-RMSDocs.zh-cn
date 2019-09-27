@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/12/2019
+ms.date: 09/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 784b51f91a19069c33f5a6dd5a6a655c95e59c0c
-ms.sourcegitcommit: af478aae5b093aa604e69b210de4094aa664f658
+ms.openlocfilehash: df20bd6b72c6cba0e1410f35ebc397c8c6d2fad3
+ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70923322"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71314354"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
->适用对象：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用范围：*Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
@@ -141,9 +141,9 @@ ms.locfileid: "70923322"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 键:**ReportAnIssueLink**
+- 按键**ReportAnIssueLink**
 
-- 值： **\<HTTP string>**
+- Value： **\<HTTP string>**
 
 网站示例值：`https://support.contoso.com`
 
@@ -167,9 +167,9 @@ ms.locfileid: "70923322"
     
     1. 输入以下字符串：
     
-        - 键:**PullPolicy**
+        - 按键**PullPolicy**
         
-        - 值：**False**
+        - Value：**False**
     
     2. 下载包含此设置的策略，并按照随附的说明操作，将它安装在计算机上。
 
@@ -207,9 +207,9 @@ ms.locfileid: "70923322"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 键:**DisableDNF**
+- 按键**DisableDNF**
 
-- 值：如果为 True 将隐藏按钮，如果为 False 将显示按钮
+- Value：如果为 True 将隐藏按钮，如果为 False 将显示按钮
 
 ## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>设置用户是否能够使用自定义权限选项
 
@@ -219,9 +219,9 @@ ms.locfileid: "70923322"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 键:**EnableCustomPermissions**
+- 按键**EnableCustomPermissions**
 
-- 值：结果为 True 将使自定义权限选项可用，结果为 False 将隐藏此选项
+- Value：结果为 True 将使自定义权限选项可用，结果为 False 将隐藏此选项
 
 ## <a name="for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer"></a>对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限
 
@@ -233,9 +233,9 @@ ms.locfileid: "70923322"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 键:**EnableCustomPermissionsForCustomProtectedFiles**
+- 按键**EnableCustomPermissionsForCustomProtectedFiles**
 
-- 值：**True**
+- Value：**True**
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>永久隐藏 Azure 信息保护栏
 
@@ -249,9 +249,9 @@ ms.locfileid: "70923322"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 键:**EnableBarHiding**
+- 按键**EnableBarHiding**
 
-- 值：**True**
+- Value：**True**
 
 ## <a name="enable-order-support-for-sublabels-on-attachments"></a>启用附件子标签的排序支持
 
@@ -263,9 +263,9 @@ ms.locfileid: "70923322"
 
 配置以下字符串：
 
-- 键:**CompareSubLabelsInAttachmentAction**
+- 按键**CompareSubLabelsInAttachmentAction**
 
-- 值：**True**
+- Value：**True**
 
 如果不进行此设置，则从具有最高分类的父标签找到的第一个标签将应用于电子邮件。 
 
@@ -279,9 +279,9 @@ ms.locfileid: "70923322"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 键:**DisableMandatoryInOutlook**
+- 按键**DisableMandatoryInOutlook**
 
-- 值：**True**
+- Value：**True**
 
 ## <a name="enable-recommended-classification-in-outlook"></a>在 Outlook 中启用建议的分类
 
@@ -291,9 +291,9 @@ ms.locfileid: "70923322"
 
 若要配置此高级设置，请输入以下字符串：
 
-- 键:**OutlookRecommendationEnabled**
+- 按键**OutlookRecommendationEnabled**
 
-- 值：**True**
+- Value：**True**
 
 
 ## <a name="implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent"></a>在 Outlook 中实施弹出消息，警告、证明或阻止发送电子邮件
@@ -352,19 +352,19 @@ User Response: Confirmed
 
 - 警告消息：
     
-    - 键:**OutlookWarnUntrustedCollaborationLabel**
+    - 按键**OutlookWarnUntrustedCollaborationLabel**
     
     - 值：\<标签 ID，以逗号分隔>
 
 - 对齐消息：
     
-    - 键:**OutlookJustifyUntrustedCollaborationLabel**
+    - 按键**OutlookJustifyUntrustedCollaborationLabel**
     
     - 值：\<标签 ID，以逗号分隔>
 
 - 阻止邮件：
     
-    - 键:**OutlookBlockUntrustedCollaborationLabel**
+    - 按键**OutlookBlockUntrustedCollaborationLabel**
     
     - 值：\<标签 ID，以逗号分隔>
 
@@ -380,19 +380,19 @@ User Response: Confirmed
 
 - 警告消息：
     
-    - 键:**OutlookWarnTrustedDomains**
+    - 按键**OutlookWarnTrustedDomains**
     
     - 值：\<域名，以逗号分隔>
 
 - 对齐消息：
     
-    - 键:**OutlookJustifyTrustedDomains**
+    - 按键**OutlookJustifyTrustedDomains**
     
     - 值：\<域名，以逗号分隔>
 
 - 阻止邮件：
     
-    - 键:**OutlookBlockTrustedDomains**
+    - 按键**OutlookBlockTrustedDomains**
     
     - 值：\<域名，以逗号分隔>
 
@@ -404,27 +404,27 @@ User Response: Confirmed
 
 - 警告消息：
     
-    - 键:**OutlookUnlabeledCollaborationAction**
+    - 按键**OutlookUnlabeledCollaborationAction**
     
-    - 值：**警告**
+    - Value：**警告**
 
 - 对齐消息：
     
-    - 键:**OutlookUnlabeledCollaborationAction**
+    - 按键**OutlookUnlabeledCollaborationAction**
     
-    - 值：**两端对齐**
+    - Value：**两端对齐**
 
 - 阻止邮件：
     
-    - 键:**OutlookUnlabeledCollaborationAction**
+    - 按键**OutlookUnlabeledCollaborationAction**
     
-    - 值：**阻止**
+    - Value：**阻止**
 
 - 关闭这些消息：
     
-    - 键:**OutlookUnlabeledCollaborationAction**
+    - 按键**OutlookUnlabeledCollaborationAction**
     
-    - 值：**Off**
+    - Value：**Off**
 
 #### <a name="to-define-specific-file-name-extensions-for-the-warn-justify-or-block-pop-up-messages-for-email-attachments-that-dont-have-a-label"></a>为不带标签的电子邮件附件定义 "警告"、"对齐" 或 "阻止" 弹出消息的特定文件扩展名
 
@@ -435,7 +435,7 @@ User Response: Confirmed
 在此示例中, 未标记的 PDF 文档不会导致警告、对齐或阻止弹出消息。
 
 
-- 键:**OutlookOverrideUnlabeledCollaborationExtensions**
+- 按键**OutlookOverrideUnlabeledCollaborationExtensions**
 
 - 值： **\<** 文件扩展名以显示消息，以逗号分隔 **>**
 
@@ -447,27 +447,27 @@ User Response: Confirmed
 
 - 警告消息：
     
-    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    - 按键**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
     
-    - 值：**警告**
+    - Value：**警告**
 
 - 对齐消息：
     
-    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    - 按键**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
     
-    - 值：**两端对齐**
+    - Value：**两端对齐**
 
 - 阻止邮件：
     
-    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    - 按键**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
     
-    - 值：**阻止**
+    - Value：**阻止**
 
 - 关闭这些消息：
     
-    - 键:**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
+    - 按键**OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior**
     
-    - 值：**Off**
+    - Value：**Off**
 
 如果未指定此客户端设置, 则为 OutlookUnlabeledCollaborationAction 指定的值将用于没有附件的未标记电子邮件以及带有附件的未标记电子邮件。
 
@@ -484,7 +484,7 @@ User Response: Confirmed
 
 若要配置此高级设置，请输入以下字符串：
 
-- 键:**OutlookDefaultLabel**
+- 按键**OutlookDefaultLabel**
 
 - 值：\<label ID> 或 None
 
@@ -538,9 +538,9 @@ dcf781ba-727f-4860-b3c1-73479e31912b 的标签 ID 示例值：
 
 若要配置此高级设置，请输入以下字符串：
 
-- 键:**PostponeMandatoryBeforeSave**
+- 按键**PostponeMandatoryBeforeSave**
 
-- 值：**False**
+- Value：**False**
 
 ## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>开启在后台持续运行的分类
 
@@ -558,9 +558,9 @@ dcf781ba-727f-4860-b3c1-73479e31912b 的标签 ID 示例值：
 
 若要配置此高级设置，请输入以下字符串：
 
-- 键:**RunPolicyInBackground**
+- 按键**RunPolicyInBackground**
 
-- 值：**True**
+- Value：**True**
 
 ## <a name="dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>不使用 PDF 加密 ISO 标准来保护 PDF 文件
 
@@ -570,9 +570,9 @@ dcf781ba-727f-4860-b3c1-73479e31912b 的标签 ID 示例值：
 
 如果需要客户端还原为使用 .ppdf 文件扩展名保护 PDF 文件的早期客户端版本行为，请通过输入以下字符串来使用以下高级设置：
 
-- 键:**EnablePDFv2Protection**
+- 按键**EnablePDFv2Protection**
 
-- 值：**False**
+- Value：**False**
 
 例如，如果使用不支持 PDF 加密 ISO 标准的 PDF 阅读器，则可能需要为所有用户配置此设置。 或者，在逐步采用支持新格式的 PDF 阅读器中的更改时，可能需要为部分用户配置此设置。 如果需要向已签名的 PDF 文档添加保护，则也可能使用此设置。 已签名的 PDF 文档可能受到 .ppdf 格式的额外保护，因此该保护是作为文件的包装器实现的。 
 
@@ -731,9 +731,9 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 因为模式匹配会影响用户的性能，所以建议将 Office 应用程序类型（**W**Ord、E**X**项、 **P**owerPoint）限制为只需搜索的内容：
 
-- 键:**RemoveExternalContentMarkingInApp**
+- 按键**RemoveExternalContentMarkingInApp**
 
-- 值：\<Office 应用程序类型 WXP> 
+- Value：\<Office 应用程序类型 WXP> 
 
 例如：
 
@@ -764,7 +764,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 因为某些文档可能包括不可见字符或者不同类型的空格或制表符，可能检测不到指定的短语或句子的字符串。 只要有可能，指定单个易区分的单词作为值，并确保在生产环境中部署之前测试结果。
 
-- 键:**ExternalContentMarkingToRemove**
+- 按键**ExternalContentMarkingToRemove**
 
 - 值：\<要匹配的字符串，定义为正则表达式> 
 
@@ -802,17 +802,17 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 例如：形状名称是 fc。 若要删除具有此名称的形状，则指定值：`fc`。
 
-- 键:**PowerPointShapeNameToRemove**
+- 按键**PowerPointShapeNameToRemove**
 
-- 值：\<PowerPoint 形状名称> 
+- Value：\<PowerPoint 形状名称> 
 
 若要删除多个 PowerPoint 形状，则有多少要删除的形状就创建多少个 PowerPointShapeNameToRemove 键。 对于每个条目，指定要删除的形状的名称。
 
 默认情况下，只检查主幻灯片的页眉和页脚。 若要将检查范围扩展到所有幻灯片，将占用大量资源，则可以使用 RemoveExternalContentMarkingInAllSlides 附加高级客户端设置：
 
-- 键:**RemoveExternalContentMarkingInAllSlides**
+- 按键**RemoveExternalContentMarkingInAllSlides**
 
-- 值：**True**
+- Value：**True**
 
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>使用现有自定义属性标记 Office 文档
 
@@ -853,9 +853,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 用于控制客户端是否发送审核信息的配置是将**审核数据发送到 Azure 信息保护日志分析**的[策略设置](../configure-policy-settings.md)。 当此策略设置为 **"打开"** 时，如果你想要发送包括标记操作的审核信息，但不希望发送客户端找到的敏感信息类型，请输入以下字符串：
 
-- 键:**RunAuditInformationTypesDiscovery**
+- 按键**RunAuditInformationTypesDiscovery**
 
-- 值：**False**
+- Value：**False**
 
 如果你设置此高级客户端设置，则仍可以从客户端发送审核信息，但该信息仅限于标记活动。
 
@@ -873,9 +873,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 当你为[Azure 信息保护分析](../reports-aip.md)选中此复选框后，可以更深入地分析你的敏感数据将收集你的敏感信息类型或你的自定义条件的内容匹配项。默认情况下，此信息由所有用户发送，其中包括运行 Azure 信息保护扫描程序的服务帐户。 如果你有一些不应发送此数据的用户，请在这些用户的[作用域内策略](../configure-policy-scope.md)中创建以下高级客户端设置： 
 
-- 键:**LogMatchedContent**
+- 按键**LogMatchedContent**
 
-- 值：**禁用**
+- Value：**禁用**
 
 
 ## <a name="limit-the-number-of-threads-used-by-the-scanner"></a>限制扫描程序使用的线程数
@@ -888,7 +888,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 首次配置测试值时，建议为每个核心指定 2 个，然后监视结果。 例如，如果在具有 4 个核心的计算机上运行扫描程序，请先将值设置为 8。 如有必要，请根据扫描程序计算机所需的最终性能和扫描速率相应增减该数量。 
 
-- 键:**ScannerConcurrencyLevel**
+- 按键**ScannerConcurrencyLevel**
 
 - 值： **\<并发线程数>**
 
@@ -904,9 +904,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 若要配置此高级设置，以便扫描程序以 Windows 自动分配的完整性级别运行（标准用户帐户以中等完整性级别运行），请输入以下字符串：
 
-- 键:**ProcessUsingLowIntegrity**
+- 按键**ProcessUsingLowIntegrity**
 
-- 值：**False**
+- Value：**False**
 
 ## <a name="change-the-timeout-settings-for-the-scanner"></a>更改扫描程序的超时设置
 
@@ -916,7 +916,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 如果由于文件较大而遇到此超时问题, 则可以增加此超时期限以进行完整的内容提取:
 
-- 键:**ContentExtractionTimeout**
+- 按键**ContentExtractionTimeout**
 
 - 值:  **\<hh: min: sec >**
 
@@ -940,7 +940,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 若要更改文件处理的超时时间, 请配置以下高级客户端设置:
 
-- 键:**FileProcessingTimeout**
+- 按键**FileProcessingTimeout**
 
 - 值:  **\<hh: min: sec >**
 
@@ -952,7 +952,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
  
 若要更改这些文件的日志记录级别，请配置以下高级客户端设置：
 
-- 键:**LogLevel**
+- 按键**LogLevel**
 
 - 值：\<日志记录级别>
 
