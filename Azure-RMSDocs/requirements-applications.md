@@ -4,7 +4,7 @@ description: 确定使用 RMS API 本机支持 Azure 信息保护中的 Azure Ri
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/05/2019
+ms.date: 08/09/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: dfc933dfa753ecee2bf23861d8151df02fe172b5
-ms.sourcegitcommit: 332801617ce83ebb3f01edf34cbb69b810662be7
+ms.openlocfilehash: 0a953021a425574d59d602ce3f95bd30c07a9cb3
+ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808099"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71314307"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -48,7 +48,7 @@ ms.locfileid: "68808099"
 
 |**设备操作系统**|Word、Excel、PowerPoint|Email|其他文件类型|
 |---------------------------|-----------------------|-----------------|---------|
-|**Windows**|Office 365 应用 [[1]](#footnote-1)<br /><br />Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office 2019 <br /><br />Office for web (查看受保护的文档) [[2]](#footnote-2)<br /><br />Web 浏览器 [[3]](#footnote-3)|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Office 2019 <br /><br />Office 365 ProPlus<br /><br />Web 浏览器 [[4]](#footnote-4)<br /><br />Windows 邮件 [[5]](#footnote-5) |适用于 Windows 的 Azure 信息保护客户端：文本、图像、.pfile<br /><br />适用于 AutoCAD 的 SealPath RMS 插件：.dwg|
+|**Windows**|Office 365 应用 [[1]](#footnote-1)<br /><br />Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office 2019 <br /><br />Office for web （查看受保护的文档） [[2]](#footnote-2)<br /><br />Web 浏览器 [[3]](#footnote-3)|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Office 2019 <br /><br />Office 365 ProPlus<br /><br />Web 浏览器 [[4]](#footnote-4)<br /><br />Windows 邮件 [[5]](#footnote-5) |适用于 Windows 的 Azure 信息保护客户端：文本、图像、.pfile<br /><br />适用于 AutoCAD 的 SealPath RMS 插件：.dwg|
 |**iOS**|GigaTrust<br /><br /> Office Mobile <br /><br />用于 web 的 Office [[2]](#footnote-2)<br /><br />TITUS 文档<br /><br />Web 浏览器 [[3]](#footnote-3)|Azure 信息保护应用（查看受保护的电子邮件）<br /><br />BlackBerry Work<br /><br />Citrix WorxMail <br /><br />NitroDesk [[5]](#footnote-5)<br /><br />iPad 和 iPhone 版 Outlook [[5]](#footnote-5)<br /><br />TITUS Mail <br /><br />Web 浏览器 [[4]](#footnote-4)|Azure 信息保护应用（查看正在保护的文本和图像）<br /><br />TITUS 文档:Pfile|
 |**Android**|适用于 Android 的 GigaTrust 应用程序<br /><br />用于 web 的 Office [[2]](#footnote-2)<br /><br />Office Mobile (除非使用敏感度标签, 仅限于查看和编辑受保护的文档) <br /><br />Web 浏览器 [[3]](#footnote-3)|9Folders [[5]](#footnote-5)<br /><br />Azure 信息保护应用（查看受保护的电子邮件）<br /><br />BlackBerry Work <br /><br />适用于 Android 的 GigaTrust 应用 [[5]](#footnote-5)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[5]](#footnote-5)<br /><br />Outlook for Android [[5]](#footnote-5)<br /><br />Samsung Email（S3 及更高版本）[[5]](#footnote-5)<br /><br />TITUS Classification for Mobile <br /><br />Web 浏览器 [[4]](#footnote-4)|Azure 信息保护应用（查看受保护的文本和图像）|
 |**macOS**|Office 365 应用<br /><br />Office 2019 for Mac<br /><br />Office 2016 for Mac<br /><br />用于 web 的 Office [[2]](#footnote-2)<br /><br />Web 浏览器 [[3]](#footnote-3)|Outlook 2019 for Mac<br /><br /> Outlook 2016 for Mac<br /><br />Web 浏览器 [[4]](#footnote-4)|RMS 共享应用（查看受保护的文本、图像、常规受保护的文件）|
@@ -137,7 +137,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 ### <a name="more-information-about-the-azure-information-protection-client-for-windows"></a>有关适用于 Windows 的 Azure 信息保护客户端的详细信息
 
-有关详细信息，请参阅下列资源：
+有关详细信息，请参阅以下资源：
 
 - [Azure 信息保护客户端管理员指南](./rms-client/client-admin-guide.md)
 
@@ -151,7 +151,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 对于 Mac 计算机，Rights Management 共享应用提供了一个查看器，可查看受保护的 PDF 文件 (.ppdf)、受保护的文本图像和受常规保护的文件。 它也可保护图像文件，但不能保护其他文件。 若要保护这些计算机上的 Office 文件，请使用 Office for Mac 或 Office 365 专业增强版。 
 
-有关详细信息，请参阅下列资源：
+有关详细信息，请参阅以下资源：
 
 -   [适用于移动平台的 Microsoft Rights Management 共享应用程序的常见问题解答](https://technet.microsoft.com/dn451248)
 

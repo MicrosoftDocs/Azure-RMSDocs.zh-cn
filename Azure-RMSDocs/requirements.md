@@ -4,7 +4,7 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/02/2019
+ms.date: 09/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 75c9eb425c0955b569b7e1578e3921dee4c81500
-ms.sourcegitcommit: 8cd708f3f45d3f49d0c84fc56fec9c7bdcd08ba7
+ms.openlocfilehash: dc0208e8053e09b2225b8e3bd9698ad1af7e9c43
+ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214100"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71314321"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -65,7 +65,7 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 用户必须拥有运行支持 Azure 信息保护的操作系统的客户端设备（计算机或移动设备）。
 
-以下设备支持 Azure 信息保护统一标签客户端和 Azure 信息保护客户端。 [这两个客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)允许用户对其文档和电子邮件进行分类和标记：
+以下设备支持 Azure 信息保护统一标签客户端和 Azure 信息保护客户端。 [这两个客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)允许用户对其文档和电子邮件进行分类和标记:
 
 - Windows 10（x86、x64）
     
@@ -77,28 +77,33 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 - Windows 7 Service Pack 1（x86、x64）
 
-- Windows Server 2016 
+- Windows Server 2019
+
+- Windows Server 2016
 
 - Windows Server 2012 R2 和 Windows Server 2012
 
 - Windows Server 2008 R2 
 
-除了在物理计算机上安装客户端，你还可以将其安装在虚拟机上。 检查虚拟桌面解决方案的软件供应商是否具有运行 Azure 信息保护统一标签客户端或 Azure 信息保护客户端可能需要的其他配置。 例如，对于 Citrix 解决方案，你可能需要禁用适用于 Office 的[Citrix 应用程序编程接口（API）挂钩](https://support.citrix.com/article/CTX107825)（winword、excel.exe、powerpnt）以及 Azure 信息保护的可执行文件标识客户端或 Azure 信息保护客户端（policy.msip，policy.msip）。
+除了在物理计算机上安装客户端, 你还可以将其安装在虚拟机上。 检查虚拟桌面解决方案的软件供应商是否具有运行 Azure 信息保护统一标签客户端或 Azure 信息保护客户端可能需要的其他配置。 例如, 对于 Citrix 解决方案, 你可能需要禁用适用于 Office 的[Citrix 应用程序编程接口 (API) 挂钩](https://support.citrix.com/article/CTX107825)(winword、excel.exe、powerpnt) 以及 Azure 信息保护的可执行文件标识客户端或 Azure 信息保护客户端 (policy.msip, policy.msip)。
 
-对于列出的服务器版本，远程桌面服务支持 Azure 信息保护客户端。 如果在远程桌面服务使用 Azure 信息保护客户端时删除用户配置文件，请勿删除 **%Appdata%\Microsoft\Protect**文件夹。
+对于列出的服务器版本：
 
-当 Azure 信息保护客户端使用 Azure Rights Management 服务保护数据时，数据可以由支持 Azure Rights Management 服务的[同一设备](requirements-client-devices.md)使用。
+- 远程桌面服务支持 Azure 信息保护客户端。 如果在远程桌面服务使用 Azure 信息保护客户端时删除用户配置文件，请勿删除 **%Appdata%\Microsoft\Protect**文件夹。
 
-Azure 信息保护客户端具有各自的管理指南中列出的其他先决条件：
+- 不支持服务器核心和 Nano Server。
+
+当 Azure 信息保护客户端使用 Azure Rights Management 服务保护数据时, 数据可以由支持 Azure Rights Management 服务的[同一设备](requirements-client-devices.md)使用。
+
+Azure 信息保护客户端具有各自的管理指南中列出的其他先决条件:
 
 - Azure 信息保护统一标签客户端：[必备条件](./rms-client/clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)
 
 - Azure 信息保护客户端：[必备条件](./rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client)
 
-
 ## <a name="applications"></a>应用程序
 
-Azure 信息保护客户端可以使用 Office 应用程序的**Word**、 **Excel**、 **PowerPoint**和**Outlook**来标记并保护文档和电子邮件，方法如下：
+Azure 信息保护客户端可以使用 Office 应用程序的**Word**、 **Excel**、 **PowerPoint**和**Outlook**来标记并保护文档和电子邮件, 方法如下:
 
 - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证
 
@@ -124,7 +129,7 @@ Azure 信息保护客户端不支持在同一台计算机上有多个版本的 O
 
 除了 Office 文章中特定于 Azure 信息保护的信息外：
 
-- 对于用于下载标签和标签策略的统一标签客户端：允许通过 HTTPS 的 URL * **. protection.outlook.com** 。
+- 对于用于下载标签和标签策略的统一标签客户端:允许通过 HTTPS 的 URL * **. protection.outlook.com** 。
 
 - 如果使用要求进行身份验证的 Web 代理，必须将其配置为将集成 Windows 身份验证与用户的 Active Directory 登录凭据配合使用。
 

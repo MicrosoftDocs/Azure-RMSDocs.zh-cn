@@ -4,7 +4,7 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/29/2019
+ms.date: 09/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0ec64a51d26543d0777bdab8180579793251b8fd
-ms.sourcegitcommit: bde9c43f2c9809fc5b8d5b43dccb3f89103c3ac6
+ms.openlocfilehash: cac8377f4eb4a3d4b5678c9d0a976866aadeead8
+ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159219"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71314128"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>适用范围：*Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
@@ -69,7 +69,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 ## <a name="should-you-deploy-the-azure-information-protection-client"></a>你是否应该部署 Azure 信息保护客户端？
 
-部署 Azure 信息保护客户端 (如果你未[在 Office 365 安全与合规中心中使用敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels), 而是使用从 azure 下载的 Azure 信息保护标签以及以下任何一项应用
+部署 Azure 信息保护客户端（如果你未[在 Office 365 安全与合规中心中使用敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)，而是使用从 azure 下载的 Azure 信息保护标签以及以下任何一项应用
 
 - 想要通过从 Office 应用程序（Word、Excel、PowerPoint、Outlook）中选择标签对文档和电子邮件进行分类（或保护）。
 
@@ -118,7 +118,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 “重置设置”会注销用户、删除当前下载的 Azure 信息保护策略，并重置 Azure Rights Management 服务的用户设置。
 
 > [!NOTE]
-> 如果客户端出现技术问题, 请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)。
+> 如果客户端出现技术问题，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)。
 
 ##### <a name="more-information-about-the-reset-settings-option"></a>有关“重置设置”选项的详细信息
 
@@ -197,9 +197,9 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 #### <a name="to-upgrade-the-scanner-to-the-current-version"></a>将扫描仪升级到当前版本
 
 > [!IMPORTANT]
-> 对于平滑升级路径, 请不要在运行扫描程序的计算机上安装 Azure 信息保护客户端, 作为升级扫描仪的第一步。 请改用以下升级说明。
+> 对于平滑升级路径，请不要在运行扫描程序的计算机上安装 Azure 信息保护客户端，作为升级扫描仪的第一步。 请改用以下升级说明。
 
-从版本1.48.204.0 开始, 先前版本中的升级过程会自动更改扫描程序, 以从 Azure 门户获取其配置设置。 此外，还会更新扫描程序配置数据库的架构，并且还会从 AzInfoProtection 重命名此数据库：
+从版本1.48.204.0 开始，先前版本中的升级过程会自动更改扫描程序，以从 Azure 门户获取其配置设置。 此外，还会更新扫描程序配置数据库的架构，并且还会从 AzInfoProtection 重命名此数据库：
 
 - 如果未指定自己的配置文件名称，则会将配置数据库重命名为AIPScanner_\<computer_name>。 
 
@@ -207,13 +207,13 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 虽然可以按不同的顺序升级扫描程序，但建议执行以下步骤：
 
-1. 使用 Azure 门户创建新的扫描程序配置文件，其中包含扫描程序和数据存储库的设置及其所需的任何设置。 有关此步骤的帮助, 请参阅扫描程序部署说明中的 "在[Azure 门户中配置扫描器](../deploy-aip-scanner.md#configure-the-scanner-in-the-azure-portal)" 部分。
+1. 使用 Azure 门户创建新的扫描程序配置文件，其中包含扫描程序和数据存储库的设置及其所需的任何设置。 有关此步骤的帮助，请参阅扫描程序部署说明中的 "在[Azure 门户中配置扫描器](../deploy-aip-scanner.md#configure-the-scanner-in-the-azure-portal)" 部分。
     
     如果运行扫描程序的计算机断开与 Internet 的连接，则仍需执行此步骤。 然后，在 Azure 门户中，使用“导出”选项将扫描程序配置文件导出到文件中。
 
 2. 在扫描程序计算机上，停止扫描程序服务“Azure 信息保护扫描程序”。
 
-3. 通过安装[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)提供的当前正式发布 (GA) 版本升级 Azure 信息保护客户端。
+3. 通过安装[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)提供的当前正式发布（GA）版本升级 Azure 信息保护客户端。
 
 4. 在 PowerShell 会话中，使用你在步骤 1 中指定的相同配置文件名称运行 Update-AIPScanner 命令。 例如： `Update-AIPScanner –Profile Europe`
 
@@ -221,7 +221,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 6. 重启 Azure 信息保护扫描程序服务“Azure 信息保护扫描程序”。
 
-你现在可以使用[部署 Azure 信息保护扫描程序中的其余说明自动分类和保护文件, 并](../deploy-aip-scanner.md)忽略安装扫描程序的步骤。 由于已经安装了扫描仪, 因此没有理由再次安装。
+你现在可以使用[部署 Azure 信息保护扫描程序中的其余说明自动分类和保护文件，并](../deploy-aip-scanner.md)忽略安装扫描程序的步骤。 由于已经安装了扫描仪，因此没有理由再次安装。
 
 ##### <a name="upgrading-in-a-different-order-to-the-recommended-steps"></a>按照建议步骤的不同顺序进行升级
 
@@ -232,19 +232,19 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 > [!TIP]
 > 若要识别具有此错误配置的扫描程序，请使用 Azure 门户中的“Azure 信息保护 - 节点”边栏选项卡。
 >  
-> 对于具有 Internet 连接的扫描仪, 它们使用 Azure 信息保护客户端的正式版本号显示其计算机名称, 但没有配置文件名称。 只有版本号为 1.41.51.0 的扫描程序才不在此边栏选项卡上显示配置文件名称。 
+> 对于具有 Internet 连接的扫描仪，它们使用 Azure 信息保护客户端的正式版本号显示其计算机名称，但没有配置文件名称。 只有版本号为 1.41.51.0 的扫描程序才不在此边栏选项卡上显示配置文件名称。 
 
 如果在运行 Update-AIPScanner 命令时未指定配置文件名称，则计算机名称将用于自动为扫描程序创建配置文件名称。
 
 #### <a name="moving-the-scanner-configuration-database-to-a-different-sql-server-instance"></a>将扫描程序配置数据库移动到其他 SQL Server 实例
 
-在当前 GA 版中, 如果在运行升级命令后尝试将扫描程序配置数据库移到新的 SQL Server 实例, 则会出现一个已知问题。
+在当前 GA 版中，如果在运行升级命令后尝试将扫描程序配置数据库移到新的 SQL Server 实例，则会出现一个已知问题。
 
-如果你知道要移动 GA 版本的扫描程序配置数据库, 请执行以下操作:
+如果你知道要移动 GA 版本的扫描程序配置数据库，请执行以下操作：
 
 1. 使用 [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner) 卸载扫描程序。
 
-2. 如果尚未升级到 Azure 信息保护客户端的当前 GA 版本, 请立即升级客户端。
+2. 如果尚未升级到 Azure 信息保护客户端的当前 GA 版本，请立即升级客户端。
 
 3. 使用 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) 安装扫描程序，指定新的 SQL Server 实例和配置文件名称。
 
