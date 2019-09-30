@@ -1,72 +1,79 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+### YamlMime:Landing
 title: Azure 信息保护文档
+summary: 控制并帮助保护在公司防火墙内外的电子邮件、文档和敏感数据。 从轻松分类到嵌入标签和权限，无论数据存储在何处或与谁共享，都能通过 Azure 信息保护服务随时增强保护。
 metadata:
   title: Azure 信息保护文档
   description: 控制并帮助保护你在公司防火墙外共享的电子邮件、文档和敏感数据。
   services: information-protection
-  author: msmbaldwin
-  manager: barbkess
   ms.service: information-protection
-  ms.tgt_pltfrm: na
-  ms.devlang: na
   ms.topic: landing-page
-  ms.date: 01/30/2019
-  ms.author: mbaldwin
-  layout: LandingPage
-abstract:
-  description: 控制并帮助保护你在公司防火墙外共享的电子邮件、文档和敏感数据。 从轻松分类到嵌入标签和权限，无论数据存储在何处或与谁共享，都能通过 Azure 信息保护服务随时增强保护。
-sections:
-  - title: null
-    items:
-      - type: list
-        style: cards
-        className: cardsFTitle
-        items:
-          - title: 深入了解 Azure 信息保护
-            href: what-is-information-protection.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-              href: what-is-information-protection.md
-          - title: Azure 信息保护入门
-            href: quickstart-viewpolicy.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_quick-start.svg'
-              href: quickstart-viewpolicy.md
-          - title: 探索 Microsoft 365 - 包含 Azure 信息保护的完整解决方案
-            href: 'https://docs.microsoft.com/microsoft-365/'
-            image:
-              src: /office/media/icons/caret-right-blue.svg
-              href: 'https://docs.microsoft.com/microsoft-365/'
-  - title: 5 分钟快速入门
-    items:
-      - type: paragraph
-        text: 通过下述快速入门了解如何保护数据。
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_portal.svg'
-            text: Azure 门户
-            href: quickstart-viewpolicy.md
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_search.svg'
-            text: 查找敏感信息
-            href: quickstart-findsensitiveinfo.md
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
-            text: 配置标签
-            href: quickstart-label-dnf-protectedemail.md
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_categorize.svg'
-            text: 创建新标签
-            href: quickstart-label-specificusers.md
-  - title: 分步教程
-    items:
-      - type: paragraph
-        text: 了解如何编辑策略、创建新标签和配置设置。
-      - type: list
-        style: unordered
-        items:
-          - html: <a href="/azure/information-protection/infoprotect-quick-start-tutorial">编辑 Azure 信息保护策略并创建新标签</a>
-          - html: <a href="/azure/information-protection/infoprotect-settings-tutorial">配置协同工作的 Azure 信息保护策略设置</a>
+  ms.collection: M365-security-compliance
+  author: cabailey
+  ms.author: cabailey
+  manager: rkarlin
+  ms.date: 09/17/2019
+  ms.openlocfilehash: 326f521f2f160b6425db15e22084e02fbecd4f55
+  ms.sourcegitcommit: 569446a78a217288198bd499c03bd634f3a92f7e
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/27/2019
+  ms.locfileid: "71342551"
+landingContent:
+- title: 关于 Azure 信息保护
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什么是 Azure 信息保护？
+      url: what-is-information-protection.md
+    - text: 敏感度标签概述
+      url: https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels
+- title: 入门
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 要求
+      url: requirements.md
+    - text: 自动应用敏感度标签
+      url: https://docs.microsoft.com/Office365/SecurityCompliance/apply-sensitivity-label-automatically
+    - text: 限制对内容的访问
+      url: https://docs.microsoft.com/Office365/SecurityCompliance/encryption-sensitivity-labels
+    - text: 安装并配置统一标签客户端
+      url: ./rms-client/clientv2-admin-guide.md
+- title: 自带密钥 (BYOK)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 计划并实现租户密钥
+      url: plan-implement-tenant-key.md
+- title: 对本地数据存储中的数据进行分类和保护
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: 查找敏感信息（预览）
+      url: quickstart-findsensitiveinfo.md
+  - linkListType: how-to-guide
+    links:
+    - text: 部署扫描程序（预览）
+      url: deploy-aip-scanner.md
+- title: 监视标签使用情况和发现敏感信息
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 中心报告（预览）
+      url: reports-aip.md
+- title: Microsoft 信息保护 SDK
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 关于 MIP SDK
+      url: /information-protection/develop/overview
+  - linkListType: quickstart
+    links:
+    - text: 设置和配置
+      url: /information-protection/develop/setup-configure-mip
+    - text: AD RMS 保护
+      url: /information-protection/develop/quick-app-adrms
+  - linkListType: reference
+    links:
+    - text: C++ API 参考
+      url: /information-protection/develop/mip-sdk-reference
