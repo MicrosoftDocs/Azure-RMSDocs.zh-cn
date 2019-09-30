@@ -4,24 +4,29 @@ description: 了解如何配置 Azure 信息保护的默认策略。 如果修�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/19/2019
+ms.date: 09/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 00d9ad80ec87f62743eab116edac64f55ebaf4e9
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: b2c1564394d0ebd9a40434c642c0195d4ef073a9
+ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68789136"
+ms.lasthandoff: 09/29/2019
+ms.locfileid: "71673883"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+
+> [!NOTE]
+> Azure 信息保护策略适用于 Azure 信息保护客户端（经典），而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
+> 
+> 如果你正在寻找信息来为统一标签客户端配置敏感度标签和策略设置，请参阅 Office 文档中的[敏感度标签概述](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)。
 
 使用以下信息来了解如何配置 Azure 信息保护的默认策略。
 
@@ -30,7 +35,7 @@ ms.locfileid: "68789136"
 引用以下值可以将 Azure 信息保护策略返回到默认策略，或将 Azure 信息保护策略更新为最新值。
 
 > [!IMPORTANT]
-> 从 2019 年 4 月开始，面向新客户逐步推出一项更改：不自动创建默认标签。 将面向统一标记平台自动预配这些租户，因此在 Azure 门户中进行配置后，无需迁移标签。
+> 从2019年4月开始，不会自动为新客户创建默认标签。 将面向统一标记平台自动预配这些租户，因此在 Azure 门户中进行配置后，无需迁移标签。
 > 
 > 对于这些租户，如果尚未在 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心创建任何敏感度标签，可以从 Azure 信息保护的当前默认策略创建默认标签。 为此，请从“标签”边栏选项卡中选择“生成默认标签”，然后将该标签添加到全局策略。 有关详细说明，请参阅[在 Azure 门户中开始使用 Azure 信息保护](quickstart-viewpolicy.md)快速入门。
 
@@ -170,7 +175,7 @@ ms.locfileid: "68789136"
 |-------------------------------|---------------------------|-----------------|
 |个人|仅供个人使用。 此数据将不会受组织监视。 个人信息不能包含任何与企业相关的数据。|**启用**：开 <br /><br />**颜色**：浅绿<br /><br />**可视标记**：关 <br /><br />**条件**：无<br /><br />**保护**：无|
 |公用|此信息是内部的，企业内部或外部的所有人均可使用。|**启用**：开 <br /><br />**颜色**：绿色<br /><br />**可视标记**：关<br /><br />**条件**：无<br /><br />**保护**：无|
-|Internal|此信息包括各种可由所有员工使用并可与授权客户和业务合作伙伴共享的内部业务数据。 有关内部信息的示例包括公司策略和大多数内部通信。|**启用**：开 <br /><br />**颜色**：蓝色 <br /><br />**可视标记**：页脚（文档和电子邮件）： <br /><br />敏感度：Internal<br /><br />**条件**：无<br /><br />**保护**：无|
+|内部|此信息包括各种可由所有员工使用并可与授权客户和业务合作伙伴共享的内部业务数据。 有关内部信息的示例包括公司策略和大多数内部通信。|**启用**：开 <br /><br />**颜色**：蓝色 <br /><br />**可视标记**：页脚（文档和电子邮件）： <br /><br />敏感度：内部<br /><br />**条件**：无<br /><br />**保护**：无|
 |机密|此数据包括敏感业务信息。 向未经授权的用户公开此数据可能会对组织造成损坏。 有关机密信息的示例包括员工信息、各个客户项目或合同和销售帐户数据。|**启用**：开 <br /><br />**颜色**：橙色<br /><br />**可视标记**：页脚（文档和电子邮件）：<br /><br /> 敏感度：机密<br /><br />**条件**：无<br /><br />**保护**：无|
 |Secret|此数据包括必须予以保护的高度敏感业务信息。 向未经授权的用户公开秘密数据可能会对组织造成严重损坏。 有关秘密信息的示例包括个人身份信息、客户记录、源代码和预先公布的财务报告。|**启用**：开 <br /><br />**颜色**：红色<br /><br />**可视标记**：页脚（文档和电子邮件）：<br /><br /> 敏感度：Secret<br /><br />**条件**：无<br /><br />**保护**：无|
 

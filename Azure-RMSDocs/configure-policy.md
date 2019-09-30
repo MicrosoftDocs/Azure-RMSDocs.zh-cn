@@ -1,9 +1,9 @@
 ---
 title: 配置 Azure 信息保护策略 - AIP
-description: 若要配置分类、标记和保护，必须配置 Azure 信息保护策略。
+description: 若要为 Azure 信息保护客户端（经典）配置分类、设置标签和保护，必须配置 Azure 信息保护策略。
 author: cabailey
 ms.author: cabailey
-ms.date: 08/01/2019
+ms.date: 09/28/2019
 manager: barbkess
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e52c57efdf8ff0754e24b18c8318a58fed561b60
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 2a23660b43f0186c78953695eccbc4b531dbca9a
+ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68788874"
+ms.lasthandoff: 09/29/2019
+ms.locfileid: "71673813"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -26,7 +26,12 @@ ms.locfileid: "68788874"
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
-若要配置分类、标记和保护，必须配置 Azure 信息保护策略。 然后将此策略下载到已安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#azure-信息保护客户端) 的计算机。
+> [!NOTE]
+> Azure 信息保护策略适用于 Azure 信息保护客户端（经典），而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
+> 
+> 如果你正在寻找信息来为统一标签客户端配置敏感度标签和策略设置，请参阅 Office 文档中的[敏感度标签概述](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)。
+
+若要为经典客户端配置分类、设置标签和保护，必须配置 Azure 信息保护策略。 然后将此策略下载到已安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#azure-信息保护客户端) 的计算机。
 
 该策略包含标签和设置：
 
@@ -60,7 +65,7 @@ Azure 信息保护支持不同级别的订阅：
 
 - 使用以下链接： https://portal.azure.com
 
-- 使用具有以下[管理员角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一的 Azure AD 帐户:
+- 使用具有以下[管理员角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一的 Azure AD 帐户：
     
     - **Azure 信息保护管理员**
     

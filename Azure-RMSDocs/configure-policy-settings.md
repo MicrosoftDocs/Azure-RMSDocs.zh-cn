@@ -4,25 +4,30 @@ description: 在 Azure 信息保护策略中配置适用于所有用户、所有
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/11/2019
+ms.date: 09/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: e119c13a37732aad5aab04a0975e4a437aa78a0b
-ms.sourcegitcommit: 13515eaaf776b9e3fa58185992dd355404d2a3a0
+ms.openlocfilehash: 1cafa9e38fa910be7b83d484c210c2523ce2f150
+ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68948623"
+ms.lasthandoff: 09/29/2019
+ms.locfileid: "71673871"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+
+> [!NOTE]
+> 这些说明适用于 Azure 信息保护客户端（经典），而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
+> 
+> 如果你正在寻找信息来为统一标签客户端配置策略设置，请参阅 Office 文档。 例如，[敏感度标签的概述](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)。
 
 除了信息保护栏标题和工具提示，Azure 信息保护策略中还有一些可以在标签中单独配置的设置：
 
@@ -48,7 +53,7 @@ ms.locfileid: "68948623"
     
     - **将审核数据发送到 Azure 信息保护分析**：在为 [Azure 信息分析](reports-aip.md)创建 Azure Log Analytics 工作区之前，此设置的值将显示“关闭”和“未配置”。 创建工作区时，值将更改为“关闭”和“打开”。
         
-        当设置为**On**时, 支持集中报表的客户端将数据发送到 Azure 信息保护服务。 此信息包括应用的标签、用户选择具有较低分类的标签或删除标签。 有关发送和存储的信息的详细信息, 请参阅中央报表文档中的[收集和发送到 Microsoft](reports-aip.md#information-collected-and-sent-to-microsoft)部分。 将此策略设置设置为 "**关闭**" 可阻止发送此数据。
+        当设置为**On**时，支持集中报表的客户端将数据发送到 Azure 信息保护服务。 此信息包括应用的标签、用户选择具有较低分类的标签或删除标签。 有关发送和存储的信息的详细信息，请参阅中央报表文档中的[收集和发送到 Microsoft](reports-aip.md#information-collected-and-sent-to-microsoft)部分。 将此策略设置设置为 "**关闭**" 可阻止发送此数据。
     
     - **所有文档和电子邮件都必须带有标签**：此选项设置为“启用”时，所有已保存的文档和发送的电子邮件都必须应用标签。 标记可能由用户手动分配，或因[条件](configure-policy-classification.md)自动分配，或（通过设置“**选择默认标签**”选项）默认分配。
         
@@ -68,13 +73,13 @@ ms.locfileid: "68948623"
         
         要在使用此策略设置时考虑子标签的排序，必须[配置高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments)。
         
-        如果将具有最高分类标签的附件配置为通过用户定义的权限的预览设置进行保护, 则为; 如果标签的用户定义权限包括 Outlook (不要转发), 则应用该标签且不转发保护应用于电子邮件。 当标签的用户定义权限仅适用于 Word、Excel、PowerPoint 和文件资源管理器时，该标签不会应用于电子邮件，也不会受到保护。
+        如果将具有最高分类标签的附件配置为通过用户定义的权限的预览设置进行保护，则为; 如果标签的用户定义权限包括 Outlook （不要转发），则应用该标签且不转发保护应用于电子邮件。 当标签的用户定义权限仅适用于 Word、Excel、PowerPoint 和文件资源管理器时，该标签不会应用于电子邮件，也不会受到保护。
     
    - **在 Office 应用中显示“信息保护”栏**：关闭此设置后，用户无法从 Word、Excel、PowerPoint 和 Outlook 中的“信息保护”栏选择标签。 在此情况下，用户必须通过功能区上的“保护”按钮选择标签。 打开此设置后，用户可以通过信息保护栏或“保护”按钮选择标签。
         
        打开此设置后，可以将其与高级客户端设置配合使用，因此如果用户选择不显示该栏，可以[永久隐藏 Azure 信息保护栏](./rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)。 从“保护”按钮清除“显示信息保护栏”选项，即可实现此操作。
     
-   - **向 Outlook 功能区添加“不可转发”按钮**：启用此设置后，除了从 Outlook 菜单中选择“不可转发”选项之外，用户还可以从 Outlook 功能区上的“保护”组中选择此按钮。 为了帮助确保用户对电子邮件进行分类并对其进行保护, 你可能更倾向于不添加此按钮, 而是[配置一个用于保护的标签](configure-policy-protection.md)和一个适用于 Outlook 的用户定义权限。 此保护设置的功能与选择“不转发”按钮相同，但当此功能附带标签时，意味着对电子邮件进行了分类和保护。
+   - **向 Outlook 功能区添加“不可转发”按钮**：启用此设置后，除了从 Outlook 菜单中选择“不可转发”选项之外，用户还可以从 Outlook 功能区上的“保护”组中选择此按钮。 为了帮助确保用户对电子邮件进行分类并对其进行保护，你可能更倾向于不添加此按钮，而是[配置一个用于保护的标签](configure-policy-protection.md)和一个适用于 Outlook 的用户定义权限。 此保护设置的功能与选择“不转发”按钮相同，但当此功能附带标签时，意味着对电子邮件进行了分类和保护。
     
        也可以使用高级客户端设置将此策略设置配置为[客户端自定义](./rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)。
     

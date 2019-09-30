@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6fa8adbc3e9c5cc31c7b752ec0e94eb1346bb7d0
-ms.sourcegitcommit: bd986d69729deb657bb3449461f5aacfa0851a56
+ms.openlocfilehash: 3c75773948fd86ca6b39651c5a9d5d904c68a3cf
+ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71301116"
+ms.lasthandoff: 09/29/2019
+ms.locfileid: "71673917"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -25,9 +25,12 @@ ms.locfileid: "71301116"
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
-在 Azure 信息保护中迁移标签, 以便可以将它们用作支持统一标签的[客户端和服务](#clients-and-services-that-support-unified-labeling)的敏感度标签。
+将 Azure 信息保护标签迁移到统一的标签平台，以便可以将它们用作[支持统一标签的客户端和服务](#clients-and-services-that-support-unified-labeling)的敏感度标签。
 
-然后, Azure 信息保护统一标签客户端可以使用这些标签。 如果继续使用 Azure 信息保护客户端 (经典), 此客户端将继续使用 Azure 门户中的 Azure 信息保护策略下载标签。
+> [!NOTE]
+> 如果你的 Azure 信息保护订阅非常新，则可能无需迁移标签，因为你的租户已在统一标签平台上。 有关详细信息，请参阅[如何确定我的租户是否在统一标签平台上？](faqs.md#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
+
+迁移标签后，你将看不到 Azure 信息保护客户端（经典）的任何差异，因为此客户端将继续从 Azure 门户中的 Azure 信息保护策略下载标签。 但是，你现在可以将标签用于 Azure 信息保护的统一标签客户端和其他使用敏感度标签的客户端和服务
 
 在阅读迁移标签说明之前, 你可能会发现以下常见问题很有用:
 
@@ -132,7 +135,7 @@ Azure 信息保护客户端 (经典) 可以使用列出的所有标签设置而�
 
 ## <a name="to-migrate-azure-information-protection-labels"></a>若要迁移 Azure 信息保护标签
 
-请使用以下说明迁移租户和 Azure 信息保护标签，来使用新的统一标记存储。
+使用以下说明将租户和 Azure 信息保护标签迁移到使用统一标签存储。
 
 必须是符合性管理员、合规性数据管理员、安全管理员或全局管理员才能迁移标签。
 

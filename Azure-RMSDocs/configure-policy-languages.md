@@ -4,25 +4,30 @@ description: 可以为用户在信息保护栏上看到的标签以及用户看�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/17/2019
+ms.date: 09/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 89d5d94807de29ebe03fd3d205ed4804b25588eb
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: e1f5b3c05ae7e8c0717ef4d0227eacda8eeade3e
+ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68789108"
+ms.lasthandoff: 09/29/2019
+ms.locfileid: "71673899"
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>如何在 Azure 信息保护中配置不同语言的标签和模板
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+
+> [!NOTE]
+> 这些说明适用于 Azure 信息保护客户端（经典），而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
+> 
+> 如果要查找有关为敏感度标签配置不同语言的信息，请使用 Office 365 安全性和符合性 PowerShell，并使用*LocaleSettings*参数[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)。
 
 虽然 Azure 信息保护的默认标签支持多种语言，但必须配置对指定标签名称和说明的支持。 此配置要求执行以下操作：
 

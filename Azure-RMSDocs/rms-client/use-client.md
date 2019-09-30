@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 63220621a6c3bbf7ad84ba4c76c38353b56c256d
-ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
+ms.openlocfilehash: 15050d18e1aab19ec80b2be47fdefd16e8f60ba6
+ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71313999"
+ms.lasthandoff: 09/29/2019
+ms.locfileid: "71674157"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -36,7 +36,7 @@ Rights Management (RMS) 客户端随某些应用程序自动安装, 如 Office �
 
 **Azure 信息保护客户端 (经典)** 从 Azure 门户下载标签和策略设置。 有关此客户端的详细信息, 请[参阅 Azure 信息保护客户端:版本发行历史记录和支持策略](client-version-release-history.md)。
 
-Azure 信息保护统一标签客户端从以下管理中心下载标签和策略设置：Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心。 有关此客户端的详细信息, 请[参阅 Azure 信息保护统一标签客户端:版本发布信息](unifiedlabelingclient-version-release-history.md)。
+Azure 信息保护统一标签客户端从以下管理中心下载标签和策略设置：Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 合规中心。 有关此客户端的详细信息, 请[参阅 Azure 信息保护统一标签客户端:版本发布信息](unifiedlabelingclient-version-release-history.md)。 
 
 应该安装哪个客户端？
 
@@ -148,8 +148,9 @@ Azure 信息保护客户端 (经典) 不支持指定具有子标签的父标签�
 
 对于奇偶校验，Azure 信息保护统一标签客户端也不支持应用具有子标签的父标签，即使可以在管理中心中选择这些标签，也无法应用。 在此方案中，Azure 信息保护统一标记客户端将不应用父标签。
 
-## <a name="see-also"></a>请参阅
-如需详细了解如何部署和使用这些客户端，请参阅以下文档：
+## <a name="next-steps"></a>后续步骤
+
+若要安装和配置客户端，请使用以下文档：
 
 - [Azure 信息保护客户端](AIP-client.md)
 

@@ -4,25 +4,30 @@ description: 可以自动将标签分配到文档或电子邮件的条件。 或
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/31/2019
+ms.date: 09/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 9e9e6fc0ca652dee464c45f17d2e7d5e109f4947
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: ce645af880b90c12bed284c0b57d597cfd540fd7
+ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68791769"
+ms.lasthandoff: 09/29/2019
+ms.locfileid: "71673938"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+
+> [!NOTE]
+> 这些说明适用于 Azure 信息保护客户端（经典），而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
+> 
+> 如果你正在寻找有关为统一标签客户端配置自动和建议分类的信息，请参阅 Office 文档。 例如，[自动对内容应用敏感标签](/microsoft-365/compliance/apply-sensitivity-label-automatically)。
 
 在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。 
 
@@ -36,7 +41,7 @@ ms.locfileid: "68791769"
 
 在此示例中，用户可以单击“立即更改”应用建议的标签，或通过选择“消除”来替代该建议。 如果用户选择消除建议并且在下一次打开文档时该条件仍然适用，会再次显示标签建议。
 
-如果配置自动分类（而不是建议分类），系统自动应用标签，并且用户仍会在自己的 Word、Excel 和 PowerPoint 中看到通知。 但是, "**立即更改**" 和 "**取消**" 按钮将替换为 **"确定"** 。 在 Outlook 中，自动分类无通知，且发送电子邮件时将应用标签。
+如果配置自动分类（而不是建议分类），系统自动应用标签，并且用户仍会在自己的 Word、Excel 和 PowerPoint 中看到通知。 但是，"**立即更改**" 和 "**取消**" 按钮将替换为 **"确定"** 。 在 Outlook 中，自动分类无通知，且发送电子邮件时将应用标签。
 
 > [!IMPORTANT]
 >请勿为自动分类和用户定义的权限配置标签。 “用户定义的权限”选项是一个[保护设置](configure-policy-protection.md)，允许用户指定应向其授予权限的人员。
@@ -104,7 +109,7 @@ ms.locfileid: "68791769"
 
 ### <a name="sensitive-information-types-that-require-a-minimum-version-of-the-client"></a>需要最低版本客户端的敏感信息类型
 
-以下敏感信息类型需要 Azure 信息保护客户端的[1.48.204.0](./rms-client/client-version-release-history.md#version-1482040)的最低版本:
+以下敏感信息类型需要 Azure 信息保护客户端的[1.48.204.0](./rms-client/client-version-release-history.md#version-1482040)的最低版本：
 
 - **Azure 服务总线连接字符串**
 - **Azure IoT 连接字符串**
@@ -117,9 +122,9 @@ ms.locfileid: "68791769"
 - **Azure 发布设置密码**
 - **Azure 存储帐户密钥（通用）**
 
-有关这些敏感信息类型的详细信息, 请参阅以下博客文章:[Azure 信息保护通过自动发现凭据帮助提高安全性](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-helps-you-to-be-more-secure-by/ba-p/360181)
+有关这些敏感信息类型的详细信息，请参阅以下博客文章：[Azure 信息保护通过自动发现凭据帮助提高安全性](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-helps-you-to-be-more-secure-by/ba-p/360181)
 
-此外, 从 Azure 信息保护客户端的1.48.204.0 开始, 以下敏感信息类型不受支持, 并且不再显示在 Azure 门户中。 如果你有使用这些敏感信息类型的标签, 则建议你删除它们, 因为我们无法确保对它们进行正确的检测, 并且应忽略对扫描程序报告中的任何引用:
+此外，从 Azure 信息保护客户端的1.48.204.0 开始，以下敏感信息类型不受支持，并且不再显示在 Azure 门户中。 如果你有使用这些敏感信息类型的标签，则建议你删除它们，因为我们无法确保对它们进行正确的检测，并且应忽略对扫描程序报告中的任何引用：
 
 - **欧盟电话号码**
 - **欧盟 GPS 坐标**
