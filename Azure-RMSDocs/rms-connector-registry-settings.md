@@ -4,7 +4,7 @@ description: 有关使用 RMS 连接器在服务器上进行注册表设置的�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f24931cbc3a3f91928a6d7190b5e028e6b474202
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 3b23908748ea9b0dba587530f249c6cdb7629b50
+ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68789593"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71689424"
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 连接器的注册表设置
 
@@ -31,7 +31,7 @@ ms.locfileid: "68789593"
 
 -   \<YourTenantURL> 是 Azure 信息保护租户的 Azure 权限管理服务 URL。 查找此值：
 
-    1.  针对 Azure Rights Management 服务运行[AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) cmdlet。 如果尚未安装 AIPService 模块, 请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
+    1.  针对 Azure Rights Management 服务运行[AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) cmdlet。 如果尚未安装 AIPService 模块，请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
 
     2.  在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
 
@@ -68,7 +68,7 @@ ms.locfileid: "68789593"
 
 **值：** 默认
 
-数据：https://\<YourTenantURL>/_wmcs/Licensing
+数据： https://\<YourTenantURL>/_wmcs/Licensing
 
 ---
 
@@ -76,7 +76,7 @@ ms.locfileid: "68789593"
 
 **类型：** Reg_SZ
 
-值：https://\<YourTenantURL>
+值： https://\<YourTenantURL>
 
 
 **数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
