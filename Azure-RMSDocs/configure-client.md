@@ -4,7 +4,7 @@ description: 有关在 Windows 计算机和移动设备上部署 Azure 信息保
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/15/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 08fc646d7f216db4db914c3287f8609a916aaf41
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 17b15050ce012b5c81cece5537a34fb3a7402213
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68789262"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71684187"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：客户端的安装和配置
 

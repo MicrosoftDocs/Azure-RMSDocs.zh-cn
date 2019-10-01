@@ -4,19 +4,19 @@ description: 当文档或电子邮件中分配一个标签时，可以选择几�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/24/2019
+ms.date: 09/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: f600ec661f82b8738653cc340d8d803f21e80c8a
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 044eafa1893c34745d49cc05b0ec029d88ecc318
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68794138"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71684104"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -143,7 +143,7 @@ Calibri 是页眉、页脚和水印文字的默认字体。 如果指定替代�
 
 ### <a name="setting-the-font-color"></a>设置字体颜色
 
-可从可用颜色列表中进行选择，或输入颜色的红绿蓝 (RGB) 组成的十六进制三元色代码来指定自定义颜色。 例如, **#40e0d0**为青绿色的 RGB 十六进制值。 
+可从可用颜色列表中进行选择，或输入颜色的红绿蓝 (RGB) 组成的十六进制三元色代码来指定自定义颜色。 例如， **#40e0d0**为青绿色的 RGB 十六进制值。 
 
 如果需要对这些代码进行引用, 可从 MSDN web 文档的 " [ \<> 颜色](https://developer.mozilla.org/docs/Web/CSS/color_value)" 页中找到一个有用的表格。也可在许多可编辑图片的应用程序中找到这些代码。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 

@@ -4,7 +4,7 @@ description: 介绍 Azure Rights Management (Azure RMS)，它是由 Azure 信息
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/23/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -15,12 +15,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 70ee7b3733d73ca4603bd1031931381b19d3aa08
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 0cc51afb848dc754d33e5f0d425741ef84eff453
+ms.sourcegitcommit: 28c1de5f9d1426f160f0e0bafcf9f76769e662b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68789757"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71679175"
 ---
 # <a name="what-is-azure-rights-management"></a>什么是 Azure 权限管理？
 
@@ -33,7 +33,7 @@ Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](w
 
 例如，员工可能会将文档发送给合作伙伴公司，或者将文档保存到云驱动器。 Azure RMS 提供的持续保护不仅有助于保护公司数据，而且从法律上讲还可能是遵循合规性或法律发现要求或单纯遵循良好信息管理实践所必需的。
 
-但重要的是, 授权人员和服务 (如搜索和索引) 可以继续读取和检查受保护的数据。 无法通过其他使用对等加密的信息保护解决方案轻松实现此功能。 你可能已了解到这种功能叫做“数据推理”，并且其是保持对组织数据进行控制的关键所在。
+但重要的是，授权人员和服务（如搜索和索引）可以继续读取和检查受保护的数据。 无法通过其他使用对等加密的信息保护解决方案轻松实现此功能。 你可能已了解到这种功能叫做“数据推理”，并且其是保持对组织数据进行控制的关键所在。
 
 下图说明了此服务如何为 Office 365 以及本地服务器和服务提供保护解决方案。 此外，还会发现运行 Windows、Mac OS、iOS 和 Android 的常见最终用户设备支持该保护。
 
@@ -65,7 +65,7 @@ Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](w
 > 如果你熟悉本地版的权限管理和 Active Directory Rights Management 服务 (AD RMS)，则可能会对 [比较 Azure Rights Management 和 AD RMS](compare-on-premise.md) 中的比较表感兴趣。
 
 ## <a name="security-compliance-and-regulatory-requirements"></a>安全、合规性和法规要求
-Azure Rights Management 支持以下安全、合规性和法规要求:
+Azure Rights Management 支持以下安全、合规性和法规要求：
 
 √ 使用符合业界标准的加密功能，支持 FIPS 140-2。 有关详细信息，请参阅 [Azure RMS 使用的加密控制：算法和密钥长度](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)信息。
 

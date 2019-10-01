@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c3abc12674e0a59f78d473d709a4708affff5dcf
-ms.sourcegitcommit: e53d52bd44271d27aa06c63bd4cc32884d3f2a4b
+ms.openlocfilehash: 86e914bf96e596a01243d2c4a74236f28c6ac9b5
+ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322403"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71690146"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
@@ -472,7 +472,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 当弹出消息用于特定标签时, 可以按域名为收件人配置例外。
 
 > [!TIP]
-> 尽管本教程适用于 Azure 信息保护客户端, 而不是统一的标签客户端, 但你可以在[教程中看到这些高级设置的操作:使用 Outlook](../infoprotect-oversharing-tutorial.md)配置 Azure 信息保护以控制 oversharing 的信息。
+> 有关如何配置这些设置的演练示例，请参阅视频[Azure 信息保护 Outlook 弹出窗口配置](https://azure.microsoft.com/en-us/resources/videos/how-to-configure-azure-information-protection-popup-for-outlook/)。
 
 ### <a name="to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels"></a>若要针对特定标签实现用于警告、验证或阻止的弹出消息：
 

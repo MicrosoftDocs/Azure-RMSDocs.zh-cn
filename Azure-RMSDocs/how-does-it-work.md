@@ -4,7 +4,7 @@ description: 详细解说 Azure RMS 的工作原理、它使用的加密控件�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/15/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0f23bfeca00b8eeb7da3643c192b37641c0ea234
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 29bbb0b080e39cad118b49f695d8ec1d1d5b5493
+ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68794180"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71689596"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
@@ -40,14 +40,14 @@ ms.locfileid: "68794180"
 
 有关 Azure RMS 使用的算法和密钥长度的技术详细信息，请参阅下一部分。
 
-## <a name="cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths"></a>Azure RMS 使用的加密控件:算法和密钥长度
+## <a name="cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths"></a>Azure RMS 使用的加密控件：算法和密钥长度
 即使你不太了解此技术的工作原理，也可能会被问到它使用的加密控件。 例如，确认安全保护是否符合行业标准时。
 
 
 |加密控件|在 Azure RMS 中使用|
 |-|-|
-|算法AES<br /><br />密钥长度:128 位和 256 位 [[1]](#footnote-1)|内容保护|
-|算法RSA<br /><br />密钥长度:2048 位 [[2]](#footnote-2)|密钥保护|
+|算法AES<br /><br />密钥长度：128 位和 256 位 [[1]](#footnote-1)|内容保护|
+|算法RSA<br /><br />密钥长度：2048 位 [[2]](#footnote-2)|密钥保护|
 |SHA-256|证书签名|
 
 ###### <a name="footnote-1"></a>脚注 1 
@@ -79,7 +79,7 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 发送到 Windows 设备的许可证和证书使用客户端设备私钥（用户在设备上第一次使用 Azure RMS 时创建）进行保护。 而该私钥则使用客户端上的 DPAPI 进行保护，DPAPI 使用从用户的密码派生的密钥来保护这些机密。 在移动设备上，只使用这些密钥一次，因此由于这些密钥不存储在客户端上，而无需在设备上保护这些密钥。 
 
 
-## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 工作原理的演练:首次使用、内容保护、内容使用
+## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 工作原理的演练：首次使用、内容保护、内容使用
 为了更详细地了解 Azure RMS 的工作原理，让我们通过在[激活 Azure Rights Management 服务](activate-service.md)之后，当用户首次在其 Windows 计算机上使用权限管理服务（有时称为**初始化用户环境**或引导的过程）时，**保护内容**（文档或电子邮件），然后**使用**（打开并使用）被其他某人保护的内容，来演练一个典型的工作流。
 
 初始化用户环境后，该用户可以保护文档，或使用该计算机上的受保护文档。
@@ -100,7 +100,7 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 
 **步骤 2 中发生的情况**：对用户进行身份验证后，连接将自动重定向到组织的 Azure 信息保护租户，该租户将颁发证书，让用户在 Azure Rights Management 服务上进行身份验证，以便使用受保护内容并脱机保护内容。
 
-其中一个证书是通常缩写为 RAC 的权限帐户证书。 此证书对 Azure Active Directory 用户进行身份验证，有效期为 31 天。 如果用户帐户仍然在 Azure Active Directory 中并且启用了该帐户，RMS 客户端将自动续订证书。 该证书不可由管理员进行配置。 
+其中一个证书是通常缩写为 RAC 的权限帐户证书。 此证书对用户进行身份验证，以便在31天内 Azure Active Directory 和有效。 如果用户帐户仍然在 Azure Active Directory 中并且启用了该帐户，RMS 客户端将自动续订证书。 该证书不可由管理员进行配置。 
 
 证书副本存储在 Azure 中，因此，如果用户转移到另一台设备，将使用相同的密钥创建证书。
 
@@ -121,7 +121,7 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 
 ![RMS 文档保护 - 步骤 3，策略已嵌入到文档中](./media/AzRMS_documentprotection3.png)
 
-**步骤 3 中发生的情况**：最后，RMS 客户端将该策略嵌入到一个文件中，该文件包含以前已加密的文档的正文，并与该文档共同构成了受保护文档。
+**步骤 3 中发生的情况**：最后，RMS 客户端将该策略嵌入到一个文件中，该文件的正文是以前加密的文档的正文，它们共同构成了一个受保护的文档。
 
 可将此文档存储在任意位置，或者使用任何方法将其共享，加密的文档始终附带该策略。
 

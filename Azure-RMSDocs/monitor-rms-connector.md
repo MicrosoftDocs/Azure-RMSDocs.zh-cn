@@ -4,7 +4,7 @@ description: 帮助监视连接器和组织使用 Azure 信息保护中 Azure Ri
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 54e0a7470681608bcd38b3a0211718de6059d6e4
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 52690476d54eb2c23aee4c77f66ca55d320831cb
+ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793904"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71689501"
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>监视 Azure Rights Management 连接器
 
@@ -175,7 +175,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 使用情况日志记录可帮助你识别电子邮件和文档何时受到保护以及何时使用。 当 RMS 连接器用于保护和使用内容时，日志中的用户 ID 字段包含 Aadrm_S-1-7-0 的服务主体名称。 此名称是自动为 RMS 连接器创建。
 
-有关使用日志记录的详细信息, 请参阅[记录和分析 Azure 信息保护中的保护使用情况](log-analyze-usage.md)。
+有关使用日志记录的详细信息，请参阅[记录和分析 Azure 信息保护中的保护使用情况](log-analyze-usage.md)。
 
 如果需要更详细的日志记录以供诊断使用，可以使用 Windows Sysinternals 中的 [Debugview](https://go.microsoft.com/fwlink/?LinkID=309277)。 在 IIS 中修改默认网站的 web.config 文件，启用对 RMS 连接器的跟踪：
 

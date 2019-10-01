@@ -4,7 +4,7 @@ description: 介绍了 RMS 个人版，这是免费的自助式订阅，适用�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/18/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a6fb98b54c5305206123076b8c9c3b2fad0f9876
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 3ae8fd5d09425cc48407d778062828c0d1b66032
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68792868"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71684320"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>个人 RMS 和 Azure 信息保护
 
@@ -62,5 +62,5 @@ RMS 个人版采用 Azure Active Directory 自助式注册。 如果用户已使
 
 
 ## <a name="next-steps"></a>后续步骤
-个人 RMS 是使用 Azure Active Directory 支持的自助服务注册功能的一个示例。 有关此功能的工作原理的详细信息, 请参阅 Azure Active Directory 文档中的[什么是 Azure Active Directory 的自助服务注册？](/azure/active-directory/users-groups-roles/directory-self-service-signup) 。
+个人 RMS 是使用 Azure Active Directory 支持的自助服务注册功能的一个示例。 有关此功能的工作原理的详细信息，请参阅 Azure Active Directory 文档中的[什么是 Azure Active Directory 的自助服务注册？](/azure/active-directory/users-groups-roles/directory-self-service-signup) 。
 

@@ -1,10 +1,10 @@
 ---
 title: 为 Azure RMS 和 AD RMS 准备环境
-description: 如果 Azure Rights Management 部署了 AD RMS, 则为管理员提供指导。
+description: 如果 Azure Rights Management 部署了 AD RMS，则为管理员提供指导。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3b5ee3f68f0f1fb6d82e0e3abaf2d2c0d5585bf8
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 82322cf62aee2d87c4d9938304c605a486bf61b7
+ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68790374"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71689537"
 ---
 # <a name="prepare-the-environment-for-azure-rights-management-when-you-have-ad-rms"></a>在 AD RMS 时为 Azure Rights Management 准备环境
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!IMPORTANT]
 > 使用 Active Directory Rights Management Services (AD RMS) 时的指南

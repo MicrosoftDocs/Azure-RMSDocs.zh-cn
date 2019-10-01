@@ -4,7 +4,7 @@ description: 此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/18/2019
+ms.date: 09/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f6db67520c2bef7ff5f497bf45ae8a4e2f082c11
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: b7190ef37fc41cafb4b4c2dffc2204c98d7a00f5
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793932"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71684511"
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>步骤 2：软件保护密钥到 HSM 保护密钥的迁移
 
@@ -105,7 +105,7 @@ ms.locfileid: "68793932"
 
     **密钥路径：C:\ProgramData\nCipher\Key Management Data\local\key_simple_contosobyo**
 
-此输出确认已使用保存到密钥的加密副本 (在我们的示例中为 "key_simple_contosobyok") 将私钥迁移到你的本地 nCipher HSM 设备。 
+此输出确认已使用保存到密钥的加密副本（在我们的示例中为 "key_simple_contosobyok"）将私钥迁移到你的本地 nCipher HSM 设备。 
 
 现已提取 SLC 密钥，并将其导入到本地 HSM，可以打包 HSM 保护的密钥并将其传送到 Azure 密钥保管库。
 

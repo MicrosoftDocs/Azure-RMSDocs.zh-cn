@@ -4,7 +4,7 @@ description: 此信息可帮助你在部署和配置 Azure 信息保护中的 Az
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/23/2019
+ms.date: 09/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 484f311927033d5279404fb706ac380fe9202b09
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 669764881af477e19ffcf9d63266fe19e1f26f92
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68788387"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71683579"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
@@ -117,7 +117,7 @@ ms.locfileid: "68788387"
 
 1. 使用 Outlook 网页版创建一封电子邮件，发送给组织内的收件人。
 
-2. 选择“保护”。 除非管理员已更改默认设置，否则自动选中“不要转发”选项。 如果要更改默认设置, 请选择 "**更改权限**", 然后从下拉选项中选择一个选项。 例如：“加密”或“\<公司名称> - 机密”。
+2. 选择“保护”。 除非管理员已更改默认设置，否则自动选中“不要转发”选项。 如果要更改默认设置，请选择 "**更改权限**"，然后从下拉选项中选择一个选项。 例如：“加密”或“\<公司名称> - 机密”。
 
 3. 发送电子邮件。
 

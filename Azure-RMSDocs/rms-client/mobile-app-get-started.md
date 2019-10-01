@@ -4,7 +4,7 @@ description: 使用适用于 iOS 和 Android 的 Azure 信息保护应用查看�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/15/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 9c51fadc644288e86413d94d5d88f3484eb023f6
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: deca101aacd4d3026b0783581ccfe57be5a5dc7a
+ms.sourcegitcommit: 28c1de5f9d1426f160f0e0bafcf9f76769e662b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68792899"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71679041"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门
 
-适用对象：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 
 在使用本页上的说明之前，请务必阅读[有关 iOS 版和 Android 版 Azure 信息保护应用的常见问题解答](mobile-app-faq.md)。 此页面说明了应用的作用、支持的设备，以及有关应用使用方法的基本信息。
 

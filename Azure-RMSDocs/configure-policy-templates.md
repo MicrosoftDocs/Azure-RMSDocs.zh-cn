@@ -1,10 +1,10 @@
 ---
 title: 配置和管理 Azure 信息保护的模板 - AIP
-description: 在 Azure 门户中配置和管理保护模板, 也称为 rights management 模板。
+description: 在 Azure 门户中配置和管理保护模板，也称为 rights management 模板。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a6e4c8be3ee6ab061fea56825ea538b2404c7554
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: b92df89ca1c0bacc7ad47f4b03c97d868b8fa396
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68788954"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71683878"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
@@ -41,7 +41,7 @@ ms.locfileid: "68788954"
 
 ## <a name="default-templates"></a>默认模板
 
-当你获得 Azure 信息保护订阅或获得包含 Azure Rights Management 服务的 Office 365 订阅时，会为你的租户自动创建两个默认模板。 这些模板限制对你组织中授权用户的访问。 创建这些模板时, 它们拥有为[Azure 信息保护配置使用权限](configure-usage-rights.md#rights-included-in-the-default-templates)文档中列出的权限。
+当你获得 Azure 信息保护订阅或获得包含 Azure Rights Management 服务的 Office 365 订阅时，会为你的租户自动创建两个默认模板。 这些模板限制对你组织中授权用户的访问。 创建这些模板时，它们拥有为[Azure 信息保护配置使用权限](configure-usage-rights.md#rights-included-in-the-default-templates)文档中列出的权限。
 
 此外，模板配置为允许为期七天的脱机访问，没有到期日期。
 
@@ -61,16 +61,16 @@ ms.locfileid: "68788954"
 
 - **高度机密\所有员工**
 
-如果在一段时间后获取了订阅, 则可以创建具有以下名称的默认模板:
+如果在一段时间后获取了订阅，则可以创建具有以下名称的默认模板：
 
-- **\<组织名称 >-机密**
+- **\<organization name >-机密**
 
 - **组织名称> - 机密，仅供查阅\<** 
 
 可以在使用 Azure 门户时重命名（和重新配置）这些默认模板。
 
 >[!NOTE]
->如果没有在“Azure 信息保护 - 标签”边栏选项卡中看到默认模板，则这些模板已转换为标签或链接到标签。 它们仍作为模板存在，但在 Azure 门户中，你会看到它们属于包含云密钥保护设置的标签配置。 你始终可以通过运行[AIPService PowerShell 模块](administer-powershell.md)中的[AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate) , 来确认你的租户的模板。
+>如果没有在“Azure 信息保护 - 标签”边栏选项卡中看到默认模板，则这些模板已转换为标签或链接到标签。 它们仍作为模板存在，但在 Azure 门户中，你会看到它们属于包含云密钥保护设置的标签配置。 你始终可以通过运行[AIPService PowerShell 模块](administer-powershell.md)中的[AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate) ，来确认你的租户的模板。
 >
 >可以手动转换模板（如后面部分[将模板转换为标签](#to-convert-templates-to-labels)中所述），然后对其重命名（如果需要）。 或者，如果最近创建了默认 Azure 信息保护策略，并且同时激活了租户的 Azure Rights Management 服务，则将自动转换这些模板。
 
@@ -80,7 +80,7 @@ ms.locfileid: "68788954"
 
 在编辑这些模板或将其转换为标签之前，请确保了解以下更改和注意事项。 由于实现更改，因此如果你之前在 Azure 经典门户中管理模板，则以下列表尤其重要。
 
-- 编辑或转换模板并保存 Azure 信息保护策略后，将对初始[使用权限](configure-usage-rights.md)进行以下更改。 如果需要，可以通过使用 Azure 门户来添加或删除各使用权限。 或者, 将 PowerShell 与[AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition)和[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet 配合使用。
+- 编辑或转换模板并保存 Azure 信息保护策略后，将对初始[使用权限](configure-usage-rights.md)进行以下更改。 如果需要，可以通过使用 Azure 门户来添加或删除各使用权限。 或者，将 PowerShell 与[AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition)和[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet 配合使用。
     
     - 自动添加了“允许宏”（公用名）。 Office 应用中的 Azure 信息保护栏要求此使用权限。
 
@@ -88,11 +88,11 @@ ms.locfileid: "68788954"
 
 - 无法在 Azure 门户中复制或删除模板。 将模板转换为标签时，可以通过选择“为包含此标签的文档和电子邮件设置权限”选项的“未配置”配置该标签以停止使用该模板。 或者，可以删除标签。 但是，在这两种方案中，模板均不会被删除且模板仍保持已存档状态。
     
-    你现在可以使用 PowerShell [AipServiceTemplate](/powershell/module/aipservice/remove-aipservicetemplate) cmdlet 删除模板。 还可以为未转换为标签的模板使用此 PowerShell cmdlet。 但是，为了确保能够按预期打开和使用以前受到保护的内容，通常建议不要删除模板。 最佳做法是仅当确定模板未用于保护生产中的文档或电子邮件时，才可删除模板。 作为预防措施, 你可能需要考虑首先使用[AipServiceTemplate](/powershell/module/aipservice/export-aipservicetemplate) cmdlet 将模板作为备份导出。 
+    你现在可以使用 PowerShell [AipServiceTemplate](/powershell/module/aipservice/remove-aipservicetemplate) cmdlet 删除模板。 还可以为未转换为标签的模板使用此 PowerShell cmdlet。 但是，为了确保能够按预期打开和使用以前受到保护的内容，通常建议不要删除模板。 最佳做法是仅当确定模板未用于保护生产中的文档或电子邮件时，才可删除模板。 作为预防措施，你可能需要考虑首先使用[AipServiceTemplate](/powershell/module/aipservice/export-aipservicetemplate) cmdlet 将模板作为备份导出。 
 
 - 目前，如果编辑并保存部门模板，则会删除作用域配置。 Azure 信息保护策略中的作用域内模板相当于[作用域内策略](configure-policy-scope.md)。 如果将模板转换为标签，则可以选择现有作用域。
     
-    此外，无法通过 Azure 门户为部门模板设置应用程序兼容性设置。 如有必要, 可以使用[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) Cmdlet 和*EnableInLegacyApps*参数来设置此应用程序兼容性设置。
+    此外，无法通过 Azure 门户为部门模板设置应用程序兼容性设置。 如有必要，可以使用[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) Cmdlet 和*EnableInLegacyApps*参数来设置此应用程序兼容性设置。
 
 - 将模板转换为标签或将模板链接到标签后，其他标签不能再使用该模板。 此外，此模板不再显示在“保护模板”部分中。 
 
@@ -143,7 +143,7 @@ ms.locfileid: "68788954"
 
 1. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，选择“添加新标签”。
 
-2. 在“标签”边栏选项卡，保留默认设置“启用  : 开”，然后输入标签名称和说明用作模板名称和说明。
+2. 在“标签”边栏选项卡，保留默认设置“启用: 开”，然后输入标签名称和说明用作模板名称和说明。
 
 3. 对于“设置包含此标签的文档和电子邮件的权限”，选择“保护”，然后选择“保护”：
     

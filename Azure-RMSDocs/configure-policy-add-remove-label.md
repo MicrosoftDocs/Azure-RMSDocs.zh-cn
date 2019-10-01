@@ -4,19 +4,19 @@ description: 向所有用户的全局策略或子集用户的作用域内策略�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/17/2019
+ms.date: 09/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: d413d58543b7b0ecb18f759d14bbebb3f560c593
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: de6d00cbd624ff21175b5020cd3b872269f9c926
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68791735"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71684117"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>向 Azure 信息保护策略添加标签或从中删除标签
 

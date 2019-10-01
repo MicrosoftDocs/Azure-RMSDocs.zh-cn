@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5353fa25af08c8ef9c979d232945c7f203a0de07
-ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
+ms.openlocfilehash: 4468ce10a79c31c4f3c3be625f84b5cbd69c74da
+ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71313963"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71690087"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标签客户端管理员指南
 
@@ -116,7 +116,7 @@ Azure 信息保护统一标签客户端包括以下各项:
     
     - %LocalAppData%\Microsoft\MSIPC
     
-    - \\ *%LocalAppData%\Microsoft\MSIP\mipprocessname\<\mip\>*
+    - %LocalAppData%\Microsoft\MSIP\mip @ no__t-0 *\<processname @ no__t-3*\mip
     
     - %LocalAppData%\Microsoft\MSIP\AppDetails
     
@@ -201,17 +201,17 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标签客户端,
 
 请注意，与 Azure 信息保护客户端（经典）中的扫描程序不同的是，统一客户端的该预览版本不支持在断开连接的计算机上运行。
 
-升级会创建名为 **\<AIPScannerUL_ profile_name >** 的新数据库，并保留以前版本的扫描数据库。 如果确信不需要以前的扫描程序数据库，则可以将其删除。 由于升级会创建一个新数据库，因此在首次运行时，扫描程序会重新扫描所有文件。
+升级会创建一个名为**AIPScannerUL_ @ no__t-1profile_name >** 的新数据库，并保留以前的扫描数据库，以备以前版本使用。 如果确信不需要以前的扫描程序数据库，则可以将其删除。 由于升级会创建一个新数据库，因此在首次运行时，扫描程序会重新扫描所有文件。
 
 ##### <a name="upgrade-from-the-azure-information-protection-client-classic-version-1482040-and-later-versions-of-this-client"></a>从此客户端的 Azure 信息保护客户端（经典）版本1.48.204.0 和更高版本升级
 
 1. 在扫描程序计算机上，停止扫描程序服务“Azure 信息保护扫描程序”。
 
-2. 通过从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装 unifield 标签客户端的预览版本，升级到 Azure 信息保护的统一标签客户端。
+2. 通过从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载和安装统一标签客户端的预览版本，升级到 Azure 信息保护统一标签客户端。
 
 3. 在 PowerShell 会话中，使用扫描仪的配置文件运行 Install-aipscanner 命令。 例如：`Update-AIPScanner –Profile Europe`。
     
-    此步骤创建名为**AIPScannerUL_\<profile_name**的新数据库 >
+    此步骤创建名为**AIPScannerUL_ @ no__t-1profile_name**的新数据库 >
 
 4. 重启 Azure 信息保护扫描程序服务“Azure 信息保护扫描程序”。
 

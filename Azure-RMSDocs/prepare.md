@@ -4,7 +4,7 @@ description: 查看你是否拥有可以开始对组织的文档和电子邮件�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9c57385119f8bad8ce6c98c0d3c9bb6cee4c3118
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 4b4affd55c743e2dda7dc3077ae527b002b5b442
+ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793825"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71689401"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
@@ -79,7 +79,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
     - 对于 Azure AD：[将自定义域名添加到 Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 
-    - 对于 Office 365:[将域添加到 Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
+    - 对于 Office 365：[将域添加到 Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
 
 - 仅当租户中的帐户在 Azure AD proxyAddresses 属性中没有值时，才会使用 **Azure AD userPrincipalName** 属性。 例如，你可以在 Azure 门户中创建用户，或者创建没有邮箱的 Office 365 用户。
 
@@ -216,5 +216,5 @@ Azure 信息保护使用用户和组的方式有三种：
 
 - 如果订阅是在 2018 年 2 月之前获取的：则必须自己激活此服务。 
 
-有关详细信息, 包括检查激活状态, 请参阅[从 Azure 信息保护中激活保护服务](./activate-service.md)。
+有关详细信息，包括检查激活状态，请参阅[从 Azure 信息保护中激活保护服务](./activate-service.md)。
 

@@ -4,7 +4,7 @@ description: 有关管理员配置应用程序和服务以支持 Azure 信息保
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/24/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 48c31144fad67eb436eec13e999fc3c4333d684b
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: d4fd33ee379660628a4a870e81d738e068f50482
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68789671"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71684246"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>为 Azure Rights Management 配置应用程序
 
@@ -29,12 +29,12 @@ ms.locfileid: "68789671"
 >
 > 例如，对于 Office 应用程序，请单击帮助图标并输入搜索词，例如 **Rights Management** 或 **IRM**。 有关适用于 Windows 的 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端用户指南](./rms-client/client-user-guide.md)。
 
-为组织部署 Azure 信息保护之后，请使用以下信息配置应用程序、Azure 信息保护客户端和服务。 例如, Word 2019、Word 2016 和 Word 2013 等 Office 应用程序。 以及 Exchange Online（传输规则、数据丢失防护、请勿转发和邮件加密）与 SharePoint Online（受保护库）等服务。 若要了解这些应用程序和服务如何支持 Azure 信息保护中的数据保护服务，请参阅[应用程序如何支持 Azure 权限管理服务](applications-support.md)。
+为组织部署 Azure 信息保护之后，请使用以下信息配置应用程序、Azure 信息保护客户端和服务。 例如，Word 2019、Word 2016 和 Word 2013 等 Office 应用程序。 以及 Exchange Online（传输规则、数据丢失防护、请勿转发和邮件加密）与 SharePoint Online（受保护库）等服务。 若要了解这些应用程序和服务如何支持 Azure 信息保护中的数据保护服务，请参阅[应用程序如何支持 Azure 权限管理服务](applications-support.md)。
 
 > [!IMPORTANT]
-> 有关支持的版本和其他要求的信息, 请参阅[Azure 信息保护的要求](requirements.md)。
+> 有关支持的版本和其他要求的信息，请参阅[Azure 信息保护的要求](requirements.md)。
 
--   [Office 365：联机服务的配置](configure-office365.md)
+-   [Office 365：联机服务 @ no__t 的配置-0
 
     -   [Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)
 

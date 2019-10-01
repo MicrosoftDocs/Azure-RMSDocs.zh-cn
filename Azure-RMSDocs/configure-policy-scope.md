@@ -4,7 +4,7 @@ description: 若要为特定用户配置不同的设置和标签，必须为 Azu
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/23/2019
+ms.date: 09/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,20 +13,20 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: da2d2aeb6fb21cf4e8080aa2b18fe64cfaf155e2
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 5d278248e1c6c5349fea1950c834a857963f8b2d
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68788889"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71683858"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>如何使用作用域内策略为特定用户配置 Azure 信息保护策略
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
-将 Azure 信息保护策略下载到安装了 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)的计算机时，所有用户都会从默认策略或为全局策略配置的更改中获取设置和标签。 如果要使用不同的设置和标签为特定用户补充此配置, 则必须创建为这些用户配置的**作用域内策略**。
+将 Azure 信息保护策略下载到安装了 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)的计算机时，所有用户都会从默认策略或为全局策略配置的更改中获取设置和标签。 如果要使用不同的设置和标签为特定用户补充此配置，则必须创建为这些用户配置的**作用域内策略**。
 
 ## <a name="how-scoped-policies-work"></a>作用域内策略的工作方式
 
@@ -34,7 +34,7 @@ ms.locfileid: "68788889"
 
 请注意，除支持 Azure 信息保护客户端的 Office 桌面应用程序外，PowerShell 和 Azure 信息保护扫描程序也支持标签。 也就是说，可以为运行 Powershell 命令或扫描程序的帐户创建和配置范围内策略。 
 
-作用域内策略与标签相似，都会在 Azure 门户中排序。 如果为用户配置了多个作用域，则会在下载之前为用户计算有效策略。 根据策略的顺序, 将应用最后一个策略设置。 用户看到的标签来自全局策略，而其他标签来自用户所属的作用域内策略。
+作用域内策略与标签相似，都会在 Azure 门户中排序。 如果为用户配置了多个作用域，则会在下载之前为用户计算有效策略。 根据策略的顺序，将应用最后一个策略设置。 用户看到的标签来自全局策略，而其他标签来自用户所属的作用域内策略。
 
 当你的租户中的用户打开标记的文档或电子邮件且此用户不在标签的作用域内时例外。 在此情况下，用户会看到标签集的名称，但标签不会显示为可供选择。  
 
@@ -56,7 +56,7 @@ ms.locfileid: "68788889"
 
 4. 现添加新标签或配置作用域内策略设置。 始终优先应用全局策略，以便使用新标签补充全局策略，并可以覆盖全局设置。 例如，全局策略可能没有指定的默认标签，并且你为特定部门在不同作用域内策略中配置不同的默认标签。
 
-    如果在配置标签或设置时需要帮助, 请使用[配置组织的策略](configure-policy.md#configuring-your-organizations-policy)部分中的链接。
+    如果在配置标签或设置时需要帮助，请使用[配置组织的策略](configure-policy.md#configuring-your-organizations-policy)部分中的链接。
 
 6. 与编辑全局策略相同，在“Azure 信息保护”边栏选项卡上进行任何更改时，请单击“保存”以保存更改，或者单击“放弃”以返回到上一个保存的设置。 
 

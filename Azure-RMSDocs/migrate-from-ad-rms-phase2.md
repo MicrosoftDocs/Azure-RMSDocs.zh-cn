@@ -4,7 +4,7 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 2 阶段涉及从 AD 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ff2f088358d6f15b4e5b67c3cc6929b1f29f19f4
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: acc19d8865c189e2852a2b870ea2028aab731f04
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793989"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71684436"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -68,9 +68,9 @@ ms.locfileid: "68793989"
 
 - AD RMS 数据库中的密码保护。 这是默认设置。
 
-- 使用 nCipher 硬件安全模块 (HSM) 进行 HSM 保护。
+- 使用 nCipher 硬件安全模块（HSM）进行 HSM 保护。
 
-- 通过使用 nCipher 以外的供应商提供的硬件安全模块 (HSM) 进行 HSM 保护。
+- 通过使用 nCipher 以外的供应商提供的硬件安全模块（HSM）进行 HSM 保护。
 
 - 通过使用外部加密提供程序进行密码保护。
 
@@ -84,10 +84,10 @@ ms.locfileid: "68793989"
 |当前的 AD RMS 部署|选择的 Azure 信息保护租户密钥拓扑|迁移说明|
 |-----------------------------|----------------------------------------|--------------------------|
 |AD RMS 数据库中的密码保护|由 Microsoft 管理|请参阅此表后面的 **软件保护密钥到软件保护密钥**的迁移过程。<br /><br />这是最简单的迁移路径，只需要将配置数据传送到 Azure 信息保护。|
-|通过使用 nCipher nShield 硬件安全模块 (HSM) 进行 HSM 保护 |由客户管理 (BYOK)|请参阅此表后面的**HSM 保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 Azure Key Vault BYOK 工具集和以下三组步骤：首先将密钥从本地 HSM 传输到 Azure Key Vault HSM，然后授权 Azure 信息保护中的 Azure Rights Management 服务使用租户密钥，最后将配置数据传输到 Azure 信息保护。|
+|通过使用 nCipher nShield 硬件安全模块（HSM）进行 HSM 保护 |由客户管理 (BYOK)|请参阅此表后面的**HSM 保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 Azure Key Vault BYOK 工具集和以下三组步骤：首先将密钥从本地 HSM 传输到 Azure Key Vault HSM，然后授权 Azure 信息保护中的 Azure Rights Management 服务使用租户密钥，最后将配置数据传输到 Azure 信息保护。|
 |AD RMS 数据库中的密码保护|由客户管理 (BYOK)|请参阅此表后面的**软件保护密钥到 HSM 保护密钥**的迁移过程。<br /><br />这需要 Azure 密钥保管库 BYOK 工具集和以下四组步骤：首先提取软件密钥并将其导入到本地 HSM，然后将密钥从本地 HSM 传送到 Azure 信息保护 HSM，之后将密钥保管库数据传送到 Azure 信息保护，最后将配置数据传送到 Azure 信息保护。|
-|使用来自 nCipher 以外的供应商的硬件安全模块 (HSM) 进行 HSM 保护 |由客户管理 (BYOK)|与 HSM 的供应商联系, 以获取有关如何将密钥从此 HSM 传输到 nCipher nShield 硬件安全模块 (HSM) 的说明。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
-|通过使用外部加密提供程序进行密码保护|由客户管理 (BYOK)|请与加密提供程序的供应商联系, 以获取有关如何将密钥传输到 nCipher nShield 硬件安全模块 (HSM) 的说明。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
+|使用来自 nCipher 以外的供应商的硬件安全模块（HSM）进行 HSM 保护 |由客户管理 (BYOK)|与 HSM 的供应商联系，以获取有关如何将密钥从此 HSM 传输到 nCipher nShield 硬件安全模块（HSM）的说明。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
+|通过使用外部加密提供程序进行密码保护|由客户管理 (BYOK)|请与加密提供程序的供应商联系，以获取有关如何将密钥传输到 nCipher nShield 硬件安全模块（HSM）的说明。 然后遵照此表后面的 **HSM 保护密钥到 HSM 保护密钥**的迁移过程中的说明。|
 
 如果拥有无法导出的 HSM 保护密钥，仍可通过将 AD RMS 群集配置为只读模式来迁移到 Azure 信息保护。 在只读模式下，仍可打开之前受保护的内容，但新的受保护内容使用由你 (BYOK) 或 Microsoft 管理的新租户密钥。 有关详细信息，请参阅[可更新 Office 以支持从 AD RMS 到 Azure RMS 的迁移](https://support.microsoft.com/help/4023955/an-update-is-available-for-office-to-support-migrations-from-ad-rms-to)。
 
@@ -136,7 +136,7 @@ ms.locfileid: "68793989"
 
 如果在迁移前创建了自定义模板（无论是在激活 Azure Rights Management 服务之前或之后），那么在迁移后，用户将无法使用这些模板，即使模板设置为“已发布”也是如此。 若要使其可供用户使用，必须先执行以下操作： 
 
-1. 通过运行[AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate), 识别这些模板并记下其模板 ID。 
+1. 通过运行[AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate)，识别这些模板并记下其模板 ID。 
 
 2. 使用 Azure RMS PowerShell cmdlet [AipServiceTemplate](/powershell/module/aipservice/export-aipservicetemplate)导出模板。
 

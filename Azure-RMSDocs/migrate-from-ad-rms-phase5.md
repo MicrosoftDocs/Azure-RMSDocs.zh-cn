@@ -4,7 +4,7 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 5 阶段包括从 AD 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: da6ee07bf47e4b392346e719a2c62f00133f498c
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 6be761f99415f3f8e2bfa9de6f27a924316de448
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793915"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71684497"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
@@ -52,17 +52,17 @@ ms.locfileid: "68793915"
 
 ### <a name="addition-configuration-for-computers-that-run-office-2010"></a>运行 Office 2010 的计算机的添加配置
 
-如果迁移的客户端运行的是 Office 2010, 则在 AD RMS 服务器取消预配后, 用户在打开受保护内容时可能会遇到延迟。 或者, 用户可能会看到他们没有打开受保护内容的凭据的消息。 若要解决这些问题, 请为这些计算机创建网络重定向, 这会将 AD RMS URL FQDN 重定向到计算机的本地 IP 地址 (127.0.0.1)。 可以通过在每台计算机上配置本地 hosts 文件或使用 DNS 来实现此目的。
+如果迁移的客户端运行的是 Office 2010，则在 AD RMS 服务器取消预配后，用户在打开受保护内容时可能会遇到延迟。 或者，用户可能会看到他们没有打开受保护内容的凭据的消息。 若要解决这些问题，请为这些计算机创建网络重定向，这会将 AD RMS URL FQDN 重定向到计算机的本地 IP 地址（127.0.0.1）。 可以通过在每台计算机上配置本地 hosts 文件或使用 DNS 来实现此目的。
 
-通过本地主机文件重定向:
+通过本地主机文件重定向：
 
-- 在本地 hosts 文件中添加以下行, 将替换`<AD RMS URL FQDN>`为 AD RMS 群集的值, 不含前缀或网页:
+- 在本地 hosts 文件中添加以下行，将 `<AD RMS URL FQDN>` 替换为 AD RMS 群集的值，不含前缀或网页：
     
         127.0.0.1 <AD RMS URL FQDN>
 
-通过 DNS 重定向:
+通过 DNS 重定向：
     
-- 为 AD RMS URL FQDN 创建新的主机 (A) 记录, 其 IP 地址为127.0.0.1。
+- 为 AD RMS URL FQDN 创建新的主机（A）记录，其 IP 地址为127.0.0.1。
 
 ## <a name="step-11-complete-client-migration-tasks"></a>步骤 11： 完成客户端迁移任务
 
@@ -116,9 +116,9 @@ killall cfprefsd
 
 ## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>步骤 12： 重新生成 Azure 信息保护租户密钥
 
-如果 AD RMS 部署使用的是 RMS 加密模式 1, 则迁移完成时需要执行此步骤, 因为此模式使用1024位密钥和 SHA-1。 此配置被视为提供不充分的保护级别。 Microsoft 不允许使用较小的密钥长度, 例如1024位的 RSA 密钥, 以及提供不充分保护级别的协议的关联用途, 如 SHA-1。
+如果 AD RMS 部署使用的是 RMS 加密模式1，则迁移完成时需要执行此步骤，因为此模式使用1024位密钥和 SHA-1。 此配置被视为提供不充分的保护级别。 Microsoft 不允许使用较小的密钥长度，例如1024位的 RSA 密钥，以及提供不充分保护级别的协议的关联用途，如 SHA-1。
 
-重新生成密钥会导致使用 RMS 加密模式2的保护, 这将导致2048位密钥和 SHA-256。 
+重新生成密钥会导致使用 RMS 加密模式2的保护，这将导致2048位密钥和 SHA-256。 
 
 虽然 AD RMS 部署使用加密模式 2，但仍建议执行此步骤，因为新密钥有助于保护租户避免 AD RMS 密钥的潜在安全漏洞。
 
@@ -128,11 +128,11 @@ killall cfprefsd
 
 重新生成 Azure 信息保护租户密钥：
 
-- **如果租户密钥由 Microsoft 托管**：运行 PowerShell cmdlet [AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) , 并指定为你的租户自动创建的密钥的密钥标识符。 可以通过运行[AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet 来确定要指定的值。 为租户自动创建的密钥包含最早创建日期，因此可以使用以下命令对其进行标识：
+- **如果租户密钥由 Microsoft 托管**：运行 PowerShell cmdlet [AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) ，并指定为你的租户自动创建的密钥的密钥标识符。 可以通过运行[AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet 来确定要指定的值。 为租户自动创建的密钥包含最早创建日期，因此可以使用以下命令对其进行标识：
     
         (Get-AipServiceKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-- **如果租户密钥由你管理 (BYOK)** ：在 Azure Key Vault 中, 为 Azure 信息保护租户重复密钥创建过程, 然后再次运行[AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet 以指定此新密钥的 URI。 
+- **如果租户密钥由你管理 (BYOK)** ：在 Azure Key Vault 中，为 Azure 信息保护租户重复密钥创建过程，然后再次运行[AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet 以指定此新密钥的 URI。 
 
 若要详细了解如何管理 Azure 信息保护租户密钥，请参阅 [Azure 信息保护租户密钥操作](./operations-tenant-key.md)。
 

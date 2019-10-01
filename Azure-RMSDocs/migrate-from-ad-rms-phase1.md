@@ -4,7 +4,7 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 1 阶段涉及从 AD 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 608419325f3a38f607577ee0fd1cdcdeee40d212
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: c7c0de6f88262cf46398807541a929d734bd4d36
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68790612"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71684548"
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
 
@@ -29,9 +29,9 @@ ms.locfileid: "68790612"
 
 ## <a name="step-1-install-the-aipservice-powershell-module-and-identify-your-tenant-url"></a>步骤 1：安装 AIPService PowerShell 模块并识别你的租户 URL
 
-安装 AIPService 模块, 以便你可以配置和管理为 Azure 信息保护提供数据保护的服务。
+安装 AIPService 模块，以便你可以配置和管理为 Azure 信息保护提供数据保护的服务。
 
-有关说明, 请参阅[安装 AIPService PowerShell 模块](./install-powershell.md)。
+有关说明，请参阅[安装 AIPService PowerShell 模块](./install-powershell.md)。
 
 若要完成某些迁移说明，需要了解租户的 Azure Rights Management 服务 URL，以便看到对\<租户 URL\> 的引用时将其替换。 Azure Rights Management 服务 URL 采用以下格式： **{GUID}.rms.[Region].aadrm.com**。
 

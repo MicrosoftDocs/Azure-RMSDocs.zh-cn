@@ -1,10 +1,10 @@
 ---
 title: 使用 Microsoft 365 管理中心激活 Azure RMS - AIP
-description: 使用 Microsoft 365 管理中心时, Azure Rights Management 服务的激活说明。
+description: 使用 Microsoft 365 管理中心时，Azure Rights Management 服务的激活说明。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8f2a685894f7745951d8944e096895061493ed4f
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 9b0497efef3cd4f58aad92b5d33830a32b850b92
+ms.sourcegitcommit: 28c1de5f9d1426f160f0e0bafcf9f76769e662b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68788171"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71679114"
 ---
 # <a name="how-to-activate-rights-management-protection-from-the-microsoft-365-admin-center"></a>如何从 Microsoft 365 管理中心激活 Rights Management 保护
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 如果你有权可以在 Microsoft 365 管理中心内访问 Azure 权限管理服务，并且是全局管理员，请按照下列说明操作。 
 

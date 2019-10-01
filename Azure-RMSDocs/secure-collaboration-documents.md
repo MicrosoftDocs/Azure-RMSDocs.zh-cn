@@ -4,7 +4,7 @@ description: 用于在受 Azure 信息保护保护的文档上进行协作的端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 743b9dc75a5cd39832ef02e0dc0730fc23fd14b9
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: ae95c9d4ffc7bae7004ad6e79a958c0c8836a22f
+ms.sourcegitcommit: 28c1de5f9d1426f160f0e0bafcf9f76769e662b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68789694"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71679025"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
@@ -26,7 +26,7 @@ ms.locfileid: "68789694"
 
 当你使用 Azure 信息保护时，你可以保护你的文档，而无需牺牲授权用户的协作。 一个用户创建并与他人共享以进行查看和编辑的大多数文档将是 Word、Excel 和 PowerPoint 等 Office 文档。 这些文档支持本地保护，这意味着除了授权和加密的保护功能外，它们还支持受限权限以实现更细化的控制。 
 
-这些权限被称为使用权限，并包含查看、编辑、打印等权限。 你可以在文档受到保护时定义个人使用权限，也可以定义一组使用权限，这被称为权限级别。 通过权限级别，你可以更轻松地选择通常一起使用的使用权限，例如审阅者和合著者。 有关使用权限和权限级别的详细信息, 请参阅[配置 Azure 信息保护的使用权限](configure-usage-rights.md)。
+这些权限被称为使用权限，并包含查看、编辑、打印等权限。 你可以在文档受到保护时定义个人使用权限，也可以定义一组使用权限，这被称为权限级别。 通过权限级别，你可以更轻松地选择通常一起使用的使用权限，例如审阅者和合著者。 有关使用权限和权限级别的详细信息，请参阅[配置 Azure 信息保护的使用权限](configure-usage-rights.md)。
 
 配置这些权限时，可以指定向哪些用户授予它们：
 
@@ -77,7 +77,7 @@ ms.locfileid: "68789694"
 
 现在此标签已配置好，它可以通过好多种方式（包括以下几种）应用于文档：
 
-|应用标签的不同方式|更多信息|
+|应用标签的不同方式|详细信息|
 |---------------|----------|
 |用户在 Office 应用程序中创建文档时，手动选择标签。|用户从 Office 功能区上的“保护”按钮或从 Azure 信息保护栏选择标签。|
 |系统提示用户在保存新文档时选择一个标签。|你已配置名为“所有文档和电子邮件必须具有标签”的 Azure 信息保护[策略设置](configure-policy-settings.md)。|

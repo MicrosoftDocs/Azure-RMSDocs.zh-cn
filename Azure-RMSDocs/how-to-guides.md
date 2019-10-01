@@ -4,19 +4,19 @@ description: 确定使用 Azure 信息保护来分类和保护组织数据的用
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/18/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1a7662b0262e2c46e3b88861a967287070a5a1ed
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 4f42951ff93e5de259ce9b952f340c5e597e3418
+ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68794068"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71689362"
 ---
 # <a name="how-to-guides-for-common-scenarios-that-use-azure-information-protection"></a>使用 Azure 信息保护的常见应用场景的操作方法指南
 
@@ -30,7 +30,7 @@ ms.locfileid: "68794068"
 
 ## <a name="common-scenarios"></a>常见方案
 
-|应用我希望…|说明|
+|场景：我希望…|说明|
 |----------------|---------------|
 |查找我的组织在本地存储的敏感信息|[快速入门：查找在本地存储的文件中的敏感信息](quickstart-findsensitiveinfo.md)|
 |让用户可以轻松保护包含敏感信息的电子邮件|[快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件](quickstart-label-dnf-protectedemail.md)|
@@ -51,7 +51,9 @@ ms.locfileid: "68794068"
 
 分步说明：
 
-- [利用 Microsoft 信息保护创建更丰富的报表, 并 Azure AD 登录数据](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Create-richer-reports-with-Microsoft-Information-Protection-and/ba-p/392713)
+- [如何生成自定义 AIP 跟踪门户](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/How-to-Build-a-Custom-AIP-Tracking-Portal/ba-p/875849)
+
+- [利用 Microsoft 信息保护创建更丰富的报表，并 Azure AD 登录数据](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Create-richer-reports-with-Microsoft-Information-Protection-and/ba-p/392713)
 
 - [利用 Microsoft Cloud App Security 在云中应用 Azure 信息保护标签](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Leverage-Microsoft-Cloud-App-Security-to-apply-Azure-Information/ba-p/388638)
 

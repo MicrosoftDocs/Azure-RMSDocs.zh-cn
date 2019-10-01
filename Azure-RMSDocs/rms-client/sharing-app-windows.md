@@ -4,19 +4,19 @@ description: 不再支持适用于 Windows 的 Rights Management 共享应用程
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/15/2019
+ms.date: 09/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ee3a6790a431ef4b75f7333885139ec4f0b463f3
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: c42f11102d9c20f5dc3f4ca35b78762ab8506b64
+ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68792849"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71689750"
 ---
 # <a name="rights-management-sharing-application-for-windows"></a>适用于 Windows 的 Rights Management 共享应用程序
 

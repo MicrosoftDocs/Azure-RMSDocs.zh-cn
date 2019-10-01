@@ -4,7 +4,7 @@ description: 使用 Azure Rights Management 服务时，模板会自动下载到
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: fde0bd0b2a51a8cdef1848d2ffb6b69ff412fa78
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 8f4589bae2a16ef50760af95bb06448a7d7a18c4
+ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68790254"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71690236"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
@@ -50,7 +50,7 @@ ms.locfileid: "68790254"
 
 1.  使用注册表编辑器，创建并设置以下注册表值中的某一个：
     
-    - 设置以天为单位的更新频率 (最小为1天):创建名为“TemplateUpdateFrequency”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以天为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
+    - 设置以天为单位的更新频率（最小为1天）：创建名为“TemplateUpdateFrequency”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以天为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
 
         **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -58,7 +58,7 @@ ms.locfileid: "68790254"
 
         **值：** TemplateUpdateFrequency
 
-    - 设置以秒为单位的更新频率 (最小值为1秒):创建名为“TemplateUpdateFrequencyInSeconds”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以秒为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
+    - 设置以秒为单位的更新频率（最小值为1秒）：创建名为“TemplateUpdateFrequencyInSeconds”的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以秒为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
 
         **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -83,7 +83,7 @@ ms.locfileid: "68790254"
    > [!TIP]
    > 在注册表路径中，<*MicrosoftRMS_FQDN*> 是指你的 Microsoft RMS 服务 FQDN。 如果你想要验证此值：
    > 
-   > 运行 Azure 信息保护的[AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) cmdlet。 如果尚未安装 AIPService PowerShell 模块, 请参阅[安装 AIPService powershell 模块](install-powershell.md)。
+   > 运行 Azure 信息保护的[AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) cmdlet。 如果尚未安装 AIPService PowerShell 模块，请参阅[安装 AIPService powershell 模块](install-powershell.md)。
    > 
    > 在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
    > 

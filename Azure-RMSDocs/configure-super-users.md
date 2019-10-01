@@ -1,10 +1,10 @@
 ---
 title: 为 Azure Rights Management 配置超级用户 - AIP
-description: 了解并实现 Azure 信息保护中 Azure Rights Management 服务的超级用户功能, 以便已获授权的人员和服务始终可以阅读和检查 ("原因") 组织的受保护数据。
+description: 了解并实现 Azure 信息保护中 Azure Rights Management 服务的超级用户功能，以便已获授权的人员和服务始终可以阅读和检查（"原因"）组织的受保护数据。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 23cb44d9b4101c4e73aeed27142be50c79a70cfb
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 6eb9c8755e1b5fb1007c4be23932ea1da1c51fbb
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68789048"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71683752"
 ---
 # <a name="configuring-super-users-for-azure-information-protection-and-discovery-services-or-data-recovery"></a>为 Azure 信息保护和发现服务或数据恢复配置超级用户
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确保已获授权的用户与服务始终可以阅读和检查 Azure Rights Management 为你的组织保护的数据。 如有必要，可以删除或更改保护。
 
@@ -42,22 +42,22 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 默认情况下，超级用户功能未启用，并且没有向任何用户分配此角色。 如果你为 Exchange 配置了 Rights Management 连接器，则会自动启用超级用户功能，对于运行 Exchange Online、SharePoint Online 或 SharePoint Server 的标准服务，不需要该功能。
 
-如果需要手动启用超级用户功能, 请使用 PowerShell cmdlet [AipServiceSuperUserFeature](/powershell/module/aipservice/enable-aipservicesuperuserfeature), 然后根据需要使用[AipServiceSuperUser](/powershell/module/aipservice/add-aipservicesuperuser) cmdlet[分配用户 (或服务帐户)。AipServiceSuperUserGroup](/powershell/module/aipservice/set-aipservicesuperusergroup) cmdlet, 并根据需要向此组添加用户 (或其他组)。 
+如果需要手动启用超级用户功能，请使用 PowerShell cmdlet [AipServiceSuperUserFeature](/powershell/module/aipservice/enable-aipservicesuperuserfeature)，然后根据需要使用[AipServiceSuperUser](/powershell/module/aipservice/add-aipservicesuperuser) cmdlet[分配用户（或服务帐户）。AipServiceSuperUserGroup](/powershell/module/aipservice/set-aipservicesuperusergroup) cmdlet，并根据需要向此组添加用户（或其他组）。 
 
-尽管为超级用户使用组更易管理，但请注意，出于性能原因，Azure 权限管理[缓存组成员身份](prepare.md#group-membership-caching-by-azure-information-protection)。 因此, 如果需要将新用户分配为超级用户来立即解密内容, 请使用 AipServiceSuperUser 添加该用户, 而不是将该用户添加到使用 AipServiceSuperUserGroup 配置的现有组。
+尽管为超级用户使用组更易管理，但请注意，出于性能原因，Azure 权限管理[缓存组成员身份](prepare.md#group-membership-caching-by-azure-information-protection)。 因此，如果需要将新用户分配为超级用户来立即解密内容，请使用 AipServiceSuperUser 添加该用户，而不是将该用户添加到使用 AipServiceSuperUserGroup 配置的现有组。
 
 > [!NOTE]
-> 如果尚未安装适用于 Azure Rights Management 的 Windows PowerShell 模块, 请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
+> 如果尚未安装适用于 Azure Rights Management 的 Windows PowerShell 模块，请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
 
 启用超级用户功能或将用户添加为超级用户的时间并不重要。 例如，如果在星期四启用该功能，然后在星期五添加了一名用户，则这位用户在这周一开始即可立即打开受保护的内容。
 
 ## <a name="security-best-practices-for-the-super-user-feature"></a>超级用户功能的最佳安全做法
 
-- 限制和监视为 Office 365 或 Azure 信息保护租户分配了全局管理员的管理员, 或使用[AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator) cmdlet 分配了 GlobalAdministrator 角色的管理员。 这些用户可以启用超级用户功能并将用户（包括其自己）分配为超级用户，并且可能解密组织保护的所有文件。
+- 限制和监视为 Office 365 或 Azure 信息保护租户分配了全局管理员的管理员，或使用[AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator) cmdlet 分配了 GlobalAdministrator 角色的管理员。 这些用户可以启用超级用户功能并将用户（包括其自己）分配为超级用户，并且可能解密组织保护的所有文件。
 
-- 若要查看已将哪些用户和服务帐户单独分配为超级用户, 请使用[AipServiceSuperUser](/powershell/module/aipservice/get-aipservicesuperuser) cmdlet。 若要查看超级用户组是否已配置, 请使用[AipServiceSuperUserGroup](/powershell/module/aipservice/get-aipservicesuperusergroup) cmdlet 和标准用户管理工具检查哪些用户是该组的成员。 与所有管理操作一样, 启用或禁用超级功能, 以及添加或删除超级用户, 并可通过使用[AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog)命令进行审核。 有关示例，请参阅下一部分。 超级用户解密文件时，会记录此操作，并且可使用[使用情况日志记录](log-analyze-usage.md)进行审核。
+- 若要查看已将哪些用户和服务帐户单独分配为超级用户，请使用[AipServiceSuperUser](/powershell/module/aipservice/get-aipservicesuperuser) cmdlet。 若要查看超级用户组是否已配置，请使用[AipServiceSuperUserGroup](/powershell/module/aipservice/get-aipservicesuperusergroup) cmdlet 和标准用户管理工具检查哪些用户是该组的成员。 与所有管理操作一样，启用或禁用超级功能，以及添加或删除超级用户，并可通过使用[AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog)命令进行审核。 有关示例，请参阅下一部分。 超级用户解密文件时，会记录此操作，并且可使用[使用情况日志记录](log-analyze-usage.md)进行审核。
 
-- 如果你不需要针对日常服务的超级用户功能, 请仅在需要时启用该功能, 并使用[AipServiceSuperUserFeature](/powershell/module/aipservice/disable-aipservicesuperuserfeature) cmdlet 再次禁用它。
+- 如果你不需要针对日常服务的超级用户功能，请仅在需要时启用该功能，并使用[AipServiceSuperUserFeature](/powershell/module/aipservice/disable-aipservicesuperuserfeature) cmdlet 再次禁用它。
 
 ### <a name="example-auditing-for-the-super-user-feature"></a>超级用户功能的审核示例
 

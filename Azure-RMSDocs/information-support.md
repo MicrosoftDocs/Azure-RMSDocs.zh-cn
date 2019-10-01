@@ -1,10 +1,10 @@
 ---
 title: '& Azure 信息保护的支持信息-AIP'
-description: 管理员资源, 其中包括有关新版本、支持选项以及如何与 Microsoft 联系以报告问题的信息。
+description: 管理员资源，其中包括有关新版本、支持选项以及如何与 Microsoft 联系以报告问题的信息。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/29/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -15,12 +15,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 3e07a6b23e9b500953024cb953612d1a44cc3a0d
-ms.sourcegitcommit: bde9c43f2c9809fc5b8d5b43dccb3f89103c3ac6
+ms.openlocfilehash: d15e7d022e0a872cb59fbca9344e4cdcdf0552c8
+ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159157"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71689162"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -57,7 +57,7 @@ Azure 信息保护技术博客还汇总了[每个月的文档更改](https://tec
 
 ### <a name="to-contact-microsoft-support"></a>与 Microsoft 支持部门联系
 
-如果有顶级支持, 请访问[Microsoft 服务中心](https://serviceshub.microsoft.com/support/contactsupport)来提交事件、浏览解决方案并获得帮助。
+如果有顶级支持，请访问[Microsoft 服务中心](https://serviceshub.microsoft.com/support/contactsupport)来提交事件、浏览解决方案并获得帮助。
 
 你可能符合 FastTrack 的条件：如果在符合条件的计划中为 Azure 信息保护计划购买了至少 150 个许可证，则可以使用 FastTrack 中心权益。 FastTrack 中心权益使你可以与 Microsoft 专家共同进行评估、修正并启用符合条件的服务。 有关详细信息，请参阅 [FastTrack 企业移动性 + 安全性 (EMS) 中心权益](/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-enterprise-mobility-suite-ems)。
 
@@ -65,9 +65,9 @@ Azure 信息保护技术博客还汇总了[每个月的文档更改](https://tec
 
 |订阅|说明|
 |----------------|---------------|
-|Azure 信息保护（独立）|1.在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”。<br /><br />2.出现提示时，在“基础信息”边栏选项卡上，针对“问题类型”选择“技术”，然后针对服务选择“信息保护”。 <br /><br />3.此外, 请确保已选择下列选项之一:<br /><br />- 包含技术支持的订阅：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - 技术支持 - 包含：如果没有 Azure 订阅，则会看到此选项。|
+|Azure 信息保护（独立）|1.在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”。<br /><br />2.出现提示时，在“基础信息”边栏选项卡上，针对“问题类型”选择“技术”，然后针对服务选择“信息保护”。 <br /><br />3.此外，请确保已选择下列选项之一：<br /><br />- 包含技术支持的订阅：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - 技术支持 - 包含：如果没有 Azure 订阅，则会看到此选项。|
 |Azure 信息保护和 Office 365 订阅<br /><br />Office 365 订阅随附的 Azure 权限管理|请参阅[就业务产品联系支持 - 管理员帮助](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)，以了解有关如何使用 Microsoft 365 管理中心与支持部门联系的信息，并获取联系人电话号码。|
-|企业移动性 + 安全性 (EMS) 随附的 Azure 信息保护|1.在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”。<br /><br />2.出现提示时，在“基础信息”边栏选项卡上，针对“问题类型”选择“技术”，然后针对服务选择“信息保护”。 <br /><br />3.此外, 请确保已选择下列选项之一:<br /><br />- 包含技术支持的订阅：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - 技术支持 - 包含：如果没有 Azure 订阅，则会看到此选项。|
+|企业移动性 + 安全性 (EMS) 随附的 Azure 信息保护|1.在 Azure 门户中，从[帮助和支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)中选择“新建支持请求”。<br /><br />2.出现提示时，在“基础信息”边栏选项卡上，针对“问题类型”选择“技术”，然后针对服务选择“信息保护”。 <br /><br />3.此外，请确保已选择下列选项之一：<br /><br />- 包含技术支持的订阅：如果具有付费或试用的 Azure 订阅，则会看到此选项。<br /><br /> - 技术支持 - 包含：如果没有 Azure 订阅，则会看到此选项。|
 |Microsoft 365 企业版随附的 Azure 信息保护|请使用 [Office 365 支持通道](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。|
 
 有关其他支持选项，请询问你的 Microsoft 联系人。 
@@ -80,10 +80,6 @@ Azure 信息保护技术博客还汇总了[每个月的文档更改](https://tec
 点播视频：
 
 - 用于[Azure 信息保护](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/AIP-Webinar-Recordings/m-p/364014)的技术社区记录网络研讨会。
-
-- Microsoft Ignite 2018 的 [Azure 信息保护](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Information%2520Protection)研讨会：
-    
-    - 请参阅我们推荐的[前五个](what-is-information-protection.md#microsoft-ignite)会话。
 
 - 包含 [Azure 信息保护](https://mva.microsoft.com/search/SearchResults.aspx#!q=Azure%20Information%20protection)的 Microsoft Virtual Academy 研讨会。
 
@@ -99,9 +95,9 @@ Azure 信息保护技术博客还汇总了[每个月的文档更改](https://tec
 
 - 对于 Azure 信息保护客户端：
     
-    - 统一标签客户端:请参阅此客户端管理员指南中的[安装检查和故障排除](./rms-client/clientv2-admin-guide.md#installation-checks-and-troubleshooting)部分, 并确认你使用的是[受支持的版本](./rms-client/unifiedlabelingclient-version-release-history.md#servicing-information-and-timelines)。 如果有可用的预览版本, 请尝试查看是否解决了问题, 而不是所有修补程序都在版本历史记录中列出。
+    - 统一标签客户端:请参阅此客户端管理员指南中的[安装检查和故障排除](./rms-client/clientv2-admin-guide.md#installation-checks-and-troubleshooting)部分，并确认你使用的是[受支持的版本](./rms-client/unifiedlabelingclient-version-release-history.md#servicing-information-and-timelines)。 如果有可用的预览版本，请尝试查看是否解决了问题，而不是所有修补程序都在版本历史记录中列出。
     
-    - 经典客户端:请参阅此客户端管理员指南中的[安装检查和故障排除](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)部分, 并确认你使用的是[受支持的版本](./rms-client/client-version-release-history.md#servicing-information-and-timelines)。 如果有可用的预览版本, 请尝试查看是否解决了问题, 而不是所有修补程序都在版本历史记录中列出。
+    - 经典客户端:请参阅此客户端管理员指南中的[安装检查和故障排除](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)部分，并确认你使用的是[受支持的版本](./rms-client/client-version-release-history.md#servicing-information-and-timelines)。 如果有可用的预览版本，请尝试查看是否解决了问题，而不是所有修补程序都在版本历史记录中列出。
 
 ### <a name="community-resources"></a>社区资源
 

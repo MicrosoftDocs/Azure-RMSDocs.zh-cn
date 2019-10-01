@@ -4,7 +4,7 @@ description: 了解和确定在使用 Azure 信息保护中的 Rights Management
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,18 +13,18 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1fefc83907b3aea4bd69989bbd8e2dd01129980a
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: a5123b029dce7e771122e8b176a262c7ce03c7aa
+ms.sourcegitcommit: 28c1de5f9d1426f160f0e0bafcf9f76769e662b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68788925"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71679130"
 ---
 # <a name="configuring-usage-rights-for-azure-information-protection"></a>配置 Azure 信息保护的使用权限
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
-使用 Azure 信息保护对文件或电子邮件设置 Rights Management 保护并且不使用模板时, 必须自行配置使用权限。 此外, 当你配置模板或标签以进行保护时, 你可以选择在用户、管理员或配置的服务选择模板或标签时将自动应用的使用权限。 例如，在 Azure 门户中，可以选择配置使用权限逻辑分组的角色，或者可以配置单个权限。
+使用 Azure 信息保护对文件或电子邮件设置 Rights Management 保护并且不使用模板时，必须自行配置使用权限。 此外，当你配置模板或标签以进行保护时，你可以选择在用户、管理员或配置的服务选择模板或标签时将自动应用的使用权限。 例如，在 Azure 门户中，可以选择配置使用权限逻辑分组的角色，或者可以配置单个权限。
 
 使用本文章可帮助为当前使用的应用程序配置所需的使用权限，并了解应用程序如何解释这些权限。
 
@@ -45,11 +45,11 @@ ms.locfileid: "68788925"
 |公用名称：**保存** <br /><br />策略中的编码：**EDIT**|允许用户将文档保存到当前位置。<br /><br />在 Office 应用程序中，如果所选文件格式以本机方式支持 Rights Management 保护，则此权限还允许用户修改文档并以新名称将其保存到新位置。 文件格式限制可确保无法从文件中删除原始保护。|Office 自定义权限：作为“更改” 和“完全控制” 选项的一部分。 <br /><br />Azure 经典门户中的名称：**保存文件**<br /><br />Azure 门户中的名称：**保存 (EDIT)**<br /><br />AD RMS 模板中的名称：**保存** <br /><br />API 常量或值：`IPC_GENERIC_WRITE L"EDIT"`|
 |公用名称：**条** <br /><br />策略中的编码：**COMMENT**|启用向内容添加批注或注释的选项。<br /><br />此权限可用于 SDK、在 AzureInformationProtection 和适用于 Windows PowerShell 的 RMS 保护模块中作为即席策略提供，并且已在一些软件供应商应用程序中实现。 但是，它尚未广泛使用，并且当前也不受 Office 应用程序支持。|Office 自定义权限：未实现。 <br /><br />Azure 经典门户中的名称：未实现。<br /><br />Azure 门户中的名称：未实现。<br /><br />AD RMS 模板中的名称：未实现。 <br /><br />API 常量或值：`IPC_GENERIC_COMMENT L"COMMENT`|
 |公用名称：**另存为、导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 <br /><br />对于 Azure 信息保护客户端，文件可在不受保护的情况下进行保存，也可使用新设置和权限重新保护。 这些允许的操作意味着，具有此权限的用户可以从受保护的文档或电子邮件对 Azure 信息保护标签进行更改或删除。 <br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote”。|Office 自定义权限：作为“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**导出内容（另存为）** <br /><br />Azure 门户中的名称：**另存为、导出 (EXPORT)**<br /><br />AD RMS 模板中的名称：**导出（另存为）** <br /><br />API 常量或值：`IPC_GENERIC_EXPORT L"EXPORT"`|
-|公用名称：**转发** <br /><br />策略中的编码：**FORWARD**|启用此选项以转发电子邮件，并将收件人添加到“收件人” 和“抄送” 行。 此权限不适用于文档；仅适用于电子邮件。<br /><br />不允许转发器授予其他用户权限作为转发操作的一部分。 <br /><br />授予此权限时，同时授予“编辑内容，编辑”权限（通用名称），另外授予“保存”权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者, 对于组织中免于使用 Rights Management 保护的用户, 因为你已实现了[载入控件](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|Office 自定义权限：使用“不得转发” 标准策略时拒绝。<br /><br />Azure 经典门户中的名称：**转发**<br /><br />Azure 门户中的名称：**转发 (FORWARD)**<br /><br />AD RMS 模板中的名称：**转发** <br /><br />API 常量或值：`IPC_EMAIL_FORWARD L"FORWARD"`|
+|公用名称：**转发** <br /><br />策略中的编码：**FORWARD**|启用此选项以转发电子邮件，并将收件人添加到“收件人” 和“抄送” 行。 此权限不适用于文档；仅适用于电子邮件。<br /><br />不允许转发器授予其他用户权限作为转发操作的一部分。 <br /><br />授予此权限时，同时授予“编辑内容，编辑”权限（通用名称），另外授予“保存”权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者，对于组织中免于使用 Rights Management 保护的用户，因为你已实现了[载入控件](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|Office 自定义权限：使用“不得转发” 标准策略时拒绝。<br /><br />Azure 经典门户中的名称：**转发**<br /><br />Azure 门户中的名称：**转发 (FORWARD)**<br /><br />AD RMS 模板中的名称：**转发** <br /><br />API 常量或值：`IPC_EMAIL_FORWARD L"FORWARD"`|
 |公用名称：**完全控制** <br /><br />策略中的编码：**OWNER**|授予对文档的所有权限，并且所有可用操作都可以执行。<br /><br />包括删除保护和重新保护文档的功能。 <br /><br />请注意，此使用权限不等同于[权限管理所有者](#rights-management-issuer-and-rights-management-owner)。|Office 自定义权限：作为“完全控制” 自定义选项。<br /><br />Azure 经典门户中的名称：**完全控制**<br /><br />Azure 门户中的名称：**完全控制 (OWNER)**<br /><br />AD RMS 模板中的名称：**完全控制** <br /><br />API 常量或值：`IPC_GENERIC_ALL L"OWNER"`|
 |公用名称：**打印** <br /><br />策略中的编码：**PRINT**|启用打印内容的选项。|Office 自定义权限：作为自定义权限中的“打印内容” 选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**打印**<br /><br />Azure 门户中的名称：**打印 (PRINT)**<br /><br />AD RMS 模板中的名称：**打印** <br /><br />API 常量或值：`IPC_GENERIC_PRINT L"PRINT"`|
-|公用名称：**答复** <br /><br />策略中的编码：**REPLY**|启用邮件客户端中的“答复”选项，但不允许更改“收件人”或“抄送”行。<br /><br />授予此权限时，同时授予“编辑内容，编辑”权限（通用名称），另外授予“保存”权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者, 对于组织中免于使用 Rights Management 保护的用户, 因为你已实现了[载入控件](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**答复**<br /><br />Azure 经典门户中的名称：**答复 (REPLY)**<br /><br />AD RMS 模板中的名称：**答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLY`|
-|公用名称：**全部答复** <br /><br />策略中的编码：**REPLYALL**|启用邮件客户端中的“全部答复” 选项，但不允许用户将收件人添加到“收件人” 或“抄送” 行。<br /><br />授予此权限时，同时授予“编辑内容，编辑”权限（通用名称），另外授予“保存”权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者, 对于组织中免于使用 Rights Management 保护的用户, 因为你已实现了[载入控件](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**全部答复**<br /><br />Azure 门户中的名称：**全部答复 (REPLY ALL)**<br /><br />AD RMS 模板中的名称：**全部答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLYALL L"REPLYALL"`|
+|公用名称：**答复** <br /><br />策略中的编码：**REPLY**|启用邮件客户端中的“答复”选项，但不允许更改“收件人”或“抄送”行。<br /><br />授予此权限时，同时授予“编辑内容，编辑”权限（通用名称），另外授予“保存”权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者，对于组织中免于使用 Rights Management 保护的用户，因为你已实现了[载入控件](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**答复**<br /><br />Azure 经典门户中的名称：**答复 (REPLY)**<br /><br />AD RMS 模板中的名称：**答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLY`|
+|公用名称：**全部答复** <br /><br />策略中的编码：**REPLYALL**|启用邮件客户端中的“全部答复” 选项，但不允许用户将收件人添加到“收件人” 或“抄送” 行。<br /><br />授予此权限时，同时授予“编辑内容，编辑”权限（通用名称），另外授予“保存”权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者，对于组织中免于使用 Rights Management 保护的用户，因为你已实现了[载入控件](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**全部答复**<br /><br />Azure 门户中的名称：**全部答复 (REPLY ALL)**<br /><br />AD RMS 模板中的名称：**全部答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLYALL L"REPLYALL"`|
 |公用名称：**查看、打开、读取** <br /><br />策略中的编码：**VIEW**|允许用户打开文档，并查看内容。<br /><br /> 在 Excel 中，此权限不足，无法对数据进行排序，必须拥有以下权限：“编辑内容、编辑”。 若要在 Excel 中筛选数据，需要拥有以下两项权限：“编辑内容、编辑”和“复制”。|Office 自定义权限：作为“读取” 自定义策略，“查看” 选项。<br /><br />Azure 经典门户中的名称：**查看**<br /><br />Azure 门户中的名称：**查看、打开、读取 (VIEW)**<br /><br />AD RMS 模板中的名称：**读取** <br /><br />API 常量或值：`IPC_GENERIC_READ L"VIEW"`|
 |公用名称：**复本** <br /><br />策略中的编码：**EXTRACT**|启用将数据（包括屏幕捕获）从文档复制到同一文档或其他文档的选项。<br /><br />在某些应用程序中，它还允许以不受保护的形式保存整个文档。<br /><br />在 Skype for Business 和类似屏幕共享应用程序中，演示者必须拥有此权限，才能成功展示受保护文档。 如果演示者没有此权限，与会者便无法查看文档，且文档显示为对与会者禁用。|Office 自定义权限：作为“允许具有读取权限的用户复制内容” 自定义策略选项。<br /><br />Azure 经典门户中的名称：**复制和提取内容**<br /><br />Azure 门户中的名称：**复制 (EXTRACT)**<br /><br />AD RMS 模板中的名称：**提取** <br /><br />API 常量或值：`IPC_GENERIC_EXTRACT L"EXTRACT"`|
 |公用名称：**查看权限** <br /><br />策略中的编码：**VIEWRIGHTSDATA**|允许用户查看应用于文档的策略。|Office 自定义权限：未实现。<br /><br />Azure 经典门户中的名称：**查看已分配的权限**<br /><br />Azure 门户中的名称：**查看权限 (VIEWRIGHTSDATA)** 。<br /><br />AD RMS 模板中的名称：**查看权限** <br /><br />API 常量或值：`IPC_READ_RIGHTS L"VIEWRIGHTSDATA"`|
@@ -172,13 +172,13 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 如果文档和电子邮件是通过标签或定义保护设置的模板进行保护，可更改标签或模板中的这些设置，而无需重新保护内容。 如果用户已访问过内容，则所做的更改将在他们的使用许可证过期后生效。 但如果用户应用了自定义权限（也称为临时权限策略），且这些权限需要在保护文档或电子邮件后更改，则必须使用新权限再次保护该内容。 通过“不转发”选项实现电子邮件的自定义权限。
 
-租户的默认使用许可证有效期为30天, 你可以使用 PowerShell cmdlet [AipServiceMaxUseLicenseValidityTime](/powershell/module/aipservice/set-aipservicemaxuselicensevaliditytime)来配置此值。 可使用标签或模板，为何时应用保护配置限制性更强的设置：
+租户的默认使用许可证有效期为30天，你可以使用 PowerShell cmdlet [AipServiceMaxUseLicenseValidityTime](/powershell/module/aipservice/set-aipservicemaxuselicensevaliditytime)来配置此值。 可使用标签或模板，为何时应用保护配置限制性更强的设置：
 
 - 在 Azure 门户中配置标签或模板时，使用许可证有效期从“允许脱机访问设置”取得其值。 
     
     有关在 Azure 门户中配置此设置的详细信息和指导，请参阅如何为 Rights Management 保护配置标签的说明中的[保护设置相关信息](configure-policy-protection.md#information-about-the-protection-settings)表。
 
-- 使用 PowerShell 配置模板时, 使用许可证有效期从[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty)和[AipServiceTemplate](/powershell/module/aipservice/add-aipservicetemplate) cmdlet 中的*LicenseValidityDuration*参数获取其值。
+- 使用 PowerShell 配置模板时，使用许可证有效期从[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty)和[AipServiceTemplate](/powershell/module/aipservice/add-aipservicetemplate) cmdlet 中的*LicenseValidityDuration*参数获取其值。
     
     有关使用 PowerShell 配置此设置的详细信息和指南，请参阅每个 cmdlet 的帮助。
 

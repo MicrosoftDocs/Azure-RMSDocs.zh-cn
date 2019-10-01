@@ -1,10 +1,10 @@
 ---
 title: 迁移 AD RMS-Azure 信息保护
-description: 用于将 Active Directory Rights Management Services (AD RMS) 部署迁移到 Azure 信息保护的说明。 迁移后, 用户仍然可以访问你的组织使用 AD RMS 保护的文档和电子邮件。
+description: 用于将 Active Directory Rights Management Services (AD RMS) 部署迁移到 Azure 信息保护的说明。 迁移后，用户仍然可以访问你的组织使用 AD RMS 保护的文档和电子邮件。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 88a6409afae1be74a9f43dc18eaa2a48863b0c1c
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: bb514d89a438059b626f74edcb51a40b19415126
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68790705"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71684386"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -76,7 +76,7 @@ ms.locfileid: "68790705"
 
     请参阅 [Azure 信息保护的要求](./requirements.md)。
 
-    请注意, 如果你的计算机运行的是 Office 2010, 则必须[为用户安装 Azure 信息保护客户端或 Azure 信息保护统一标签客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client), 因为这些客户端提供向云验证用户身份的能力服务器. 对于更高版本的 Office, 需要对这些客户端进行分类和标记, 但 Azure 信息保护客户端是可选的, 但是如果你只想要保护数据, 则建议使用此选项。 有关详细信息, 请参阅[Azure 信息保护客户端](./rms-client/client-admin-guide.md)管理指南和[azure 信息保护统一标签客户端](./rms-client/clientv2-admin-guide.md)。
+    请注意，如果你的计算机运行的是 Office 2010，则必须[为用户安装 Azure 信息保护客户端或 Azure 信息保护统一标签客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)，因为这些客户端提供向云验证用户身份的能力服务器. 对于更高版本的 Office，需要对这些客户端进行分类和标记，但 Azure 信息保护客户端是可选的，但是如果你只想要保护数据，则建议使用此选项。 有关详细信息，请参阅[Azure 信息保护客户端](./rms-client/client-admin-guide.md)管理指南和[azure 信息保护统一标签客户端](./rms-client/clientv2-admin-guide.md)。
 
     尽管要求必须拥有 Azure 信息保护订阅才能迁移 AD RMS，但我们建议在开始迁移之前不要激活 Rights Management 服务。 迁移过程包括此激活步骤，在从 AD RMS 导出密钥和模板并将其导入到 Azure 信息保护租户之后执行此操作。 但是，如果 Rights Management 服务已激活，你仍可以凭借额外的步骤从 AD RMS 迁移。
 
@@ -130,7 +130,7 @@ ms.locfileid: "68790705"
 
 - 他们的 Azure Rights Management 服务尚未激活，但他们知道其 Azure Rights Management 服务 URL。
 
-    他们可以通过以下方式获取此信息: 安装 Azure Rights Management 工具, 连接到服务 ([AipService](/powershell/module/aipservice/connect-aipservice)), 然后查看其 Azure Rights Management 服务的租户信息 ([AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration)).
+    他们可以通过以下方式获取此信息：安装 Azure Rights Management 工具，连接到服务（[AipService](/powershell/module/aipservice/connect-aipservice)），然后查看其 Azure Rights Management 服务的租户信息（[AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration)).
 
 - 他们向你提供其 AD RMS 群集的 URL 及其 Azure Rights Management 服务 URL，以便你可以配置已迁移客户端，将其受 AD RMS 保护的内容的请求重定向到其租户的 Azure Rights Management 服务中。 步骤 7 说明了如何配置客户端重定向。
 
@@ -142,7 +142,7 @@ ms.locfileid: "68790705"
 
 [**第 1 阶段：迁移准备**](migrate-from-ad-rms-phase1.md)
 
-- **步骤 1：安装 AIPService PowerShell 模块并识别你的租户 URL**
+- **步骤 1：安装 AIPService PowerShell 模块并识别你的租户 URL @ no__t-0
 
     迁移过程要求你从 AIPService 模块运行一个或多个 PowerShell cmdlet。 你还需要知道你的租户的 Azure Rights Management 服务 URL 才能完成多个迁移步骤，并且可使用 PowerShell 来确定此值。
 
@@ -158,7 +158,7 @@ ms.locfileid: "68790705"
 
 - **步骤 4：从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护**
 
-    从 AD RMS 将配置数据 (密钥、模板、Url) 导出到 XML 文件, 然后使用 AipServiceTpd PowerShell cmdlet 将该文件上传到 azure 信息保护中的 Azure Rights Management 服务。 然后，确定要使用哪个导入的服务器许可方证书 (SLC) 密钥作为 Azure 权限管理服务的租户密钥。 可能需要其他步骤，具体取决于你的 AD RMS 密钥配置：
+    从 AD RMS 将配置数据（密钥、模板、Url）导出到 XML 文件，然后使用 AipServiceTpd PowerShell cmdlet 将该文件上传到 azure 信息保护中的 Azure Rights Management 服务。 然后，确定要使用哪个导入的服务器许可方证书 (SLC) 密钥作为 Azure 权限管理服务的租户密钥。 可能需要其他步骤，具体取决于你的 AD RMS 密钥配置：
 
     - **软件保护密钥到软件保护密钥的迁移**：
 
@@ -166,11 +166,11 @@ ms.locfileid: "68790705"
 
     - **HSM 保护密钥到 HSM 保护密钥的迁移**：
 
-        将 HSM 存储的 AD RMS 密钥迁移到客户管理的 Azure 信息保护租户密钥（“自带密钥”方案，简称 BYOK）。 这需要额外的步骤将密钥从本地 nCipher HSM 传输到 Azure Key Vault, 并授权 Azure Rights Management 服务使用此密钥。 现有的 HSM 保护密钥必须受模块保护；Rights Management Services 不支持 OCS 保护密钥。
+        将 HSM 存储的 AD RMS 密钥迁移到客户管理的 Azure 信息保护租户密钥（“自带密钥”方案，简称 BYOK）。 这需要额外的步骤将密钥从本地 nCipher HSM 传输到 Azure Key Vault，并授权 Azure Rights Management 服务使用此密钥。 现有的 HSM 保护密钥必须受模块保护；Rights Management Services 不支持 OCS 保护密钥。
 
     - **软件保护密钥到 HSM 保护密钥的迁移**：
 
-        AD RMS 中集中管理的基于密码的密钥迁移到由客户管理的 Azure 信息保护租户密钥（“携带你自己的密钥”或 BYOK 方案）。 这需要的配置最多, 因为你必须先提取软件密钥并将其导入到本地 HSM, 然后再执行附加步骤以将密钥从本地 nCipher HSM 传输到 Azure Key Vault HSM, 并授权 Azure 权限管理服务使用存储密钥的密钥保管库。
+        AD RMS 中集中管理的基于密码的密钥迁移到由客户管理的 Azure 信息保护租户密钥（“携带你自己的密钥”或 BYOK 方案）。 这需要的配置最多，因为你必须先提取软件密钥并将其导入到本地 HSM，然后再执行附加步骤以将密钥从本地 nCipher HSM 传输到 Azure Key Vault HSM，并授权 Azure 权限管理服务使用存储密钥的密钥保管库。
 
 - **步骤 5.激活 Azure Rights Management 服务**
 

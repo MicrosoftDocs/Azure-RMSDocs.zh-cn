@@ -4,7 +4,7 @@ description: 有关将 Rights Management (RMS) 客户端与 Azure 信息保护�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/03/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: fci
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e922ba01dfb358868a85be5631a962d3d7fd1ad1
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: b3781b2de94a8b619f2dadce977f1284c9b26e31
+ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793299"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71689972"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
@@ -54,11 +54,11 @@ ms.locfileid: "68793299"
     
   - 如果要更改特定文件扩展名保护（本机或常规）的默认级别，需已编辑注册表，如管理员指南中的[更改文件的默认保护级别](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)部分所述。
     
-  - 具有 Internet 连接，并且已配置计算机设置（如果代理服务器要求）。 例如：`netsh winhttp import proxy source=ie`
+  - 具有 Internet 连接，并且已配置计算机设置（如果代理服务器要求）。 例如： `netsh winhttp import proxy source=ie`
     
 - 你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 服务保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此要求的详细信息，请参阅 [准备用户和组以便使用 Azure 信息保护](../prepare.md)。
     
-- 此方案不支持部门模板, 因此你必须使用未配置为作用域的模板, 或者使用[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) Cmdlet 和*EnableInLegacyApps*参数。
+- 此方案不支持部门模板，因此你必须使用未配置为作用域的模板，或者使用[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) Cmdlet 和*EnableInLegacyApps*参数。
 
 ## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>为 Azure 权限管理保护配置文件服务器资源管理器 FCI 的说明
 按照这些说明通过使用 PowerShell 脚本作为自定义任务自动保护一个文件夹中的所有文件。 按此顺序执行这些过程：
@@ -148,7 +148,7 @@ ms.locfileid: "68793299"
 
         -   **名称**：键入“对 RMS 进行分类”
 
-        -   **启用**：保留默认值, 即选中此复选框。
+        -   **启用**：保留默认值，即选中此复选框。
 
         -   **说明**：键入“为 Rights Management 的 &lt;文件夹名称&gt; 文件夹中的所有文件分类”。
 
@@ -178,7 +178,7 @@ ms.locfileid: "68793299"
 
     -   **允许对新文件进行连续分类**：选中此复选框以便为新文件分类。
 
-    -   可选：进行所需的任何其他更改, 如为报表和通知配置选项。
+    -   可选：进行所需的任何其他更改，如为报表和通知配置选项。
 
 现在你已完成分类配置，已可以配置管理任务，以将 RMS 保护应用于这些文件。
 

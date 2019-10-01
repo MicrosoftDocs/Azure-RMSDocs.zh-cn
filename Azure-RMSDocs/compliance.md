@@ -4,7 +4,7 @@ description: Azure 信息保护的支持信息，包括法律、符合性和 SLA
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/15/2019
+ms.date: 09/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 45a440155ade441b958d5ca0653183d9d822bafc
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 3d311a1055dc0973dee4b4e0f6b10c4ffcd0e537
+ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68789717"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71684259"
 ---
 # <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Azure 信息保护的符合性和支持信息
 
