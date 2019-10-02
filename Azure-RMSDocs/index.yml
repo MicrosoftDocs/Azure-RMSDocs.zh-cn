@@ -12,12 +12,12 @@ metadata:
   ms.author: cabailey
   manager: rkarlin
   ms.date: 09/17/2019
-  ms.openlocfilehash: 326f521f2f160b6425db15e22084e02fbecd4f55
-  ms.sourcegitcommit: 569446a78a217288198bd499c03bd634f3a92f7e
+  ms.openlocfilehash: 15c2a7d7fdc458ab522554dd3420ada811791723
+  ms.sourcegitcommit: 28c1de5f9d1426f160f0e0bafcf9f76769e662b6
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/27/2019
-  ms.locfileid: "71342551"
+  ms.lasthandoff: 09/30/2019
+  ms.locfileid: "71679168"
 landingContent:
 - title: 关于 Azure 信息保护
   linkLists:
@@ -25,35 +25,47 @@ landingContent:
     links:
     - text: 什么是 Azure 信息保护？
       url: what-is-information-protection.md
-    - text: 敏感度标签概述
-      url: https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels
+    - text: 常见问题
+      url: faqs.md
 - title: 入门
   linkLists:
-  - linkListType: deploy
+  - linkListType: overview
     links:
     - text: 要求
       url: requirements.md
-    - text: 自动应用敏感度标签
-      url: https://docs.microsoft.com/Office365/SecurityCompliance/apply-sensitivity-label-automatically
-    - text: 限制对内容的访问
-      url: https://docs.microsoft.com/Office365/SecurityCompliance/encryption-sensitivity-labels
-    - text: 安装并配置统一标签客户端
-      url: ./rms-client/clientv2-admin-guide.md
-- title: 自带密钥 (BYOK)
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 计划并实现租户密钥
-      url: plan-implement-tenant-key.md
-- title: 对本地数据存储中的数据进行分类和保护
-  linkLists:
   - linkListType: quickstart
     links:
-    - text: 查找敏感信息（预览）
+    - text: Azure 门户入门
+      url: quickstart-viewpolicy.md
+    - text: 查找敏感信息
       url: quickstart-findsensitiveinfo.md
+  - linkListType: deploy
+    links:
+    - text: 部署路线图
+      url: deployment-roadmap.md
+- title: 自定义客户端
+  linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 部署扫描程序（预览）
+    - text: 经典客户端：高级设置
+      url: ./rms-client/client-admin-guide-customizations.md
+    - text: 统一标记客户端：高级设置
+      url: ./rms-client/clientv2-admin-guide-customizations.md
+- title: 激活统一标记
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 比较客户端
+      url: ./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use
+  - linkListType: how-to-guide
+    links:
+    - text: 迁移 Azure 信息保护标签
+      url: configure-policy-migrate-labels.md
+- title: 对本地数据存储中的数据进行分类和保护
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 部署扫描程序
       url: deploy-aip-scanner.md
 - title: 监视标签使用情况和发现敏感信息
   linkLists:
