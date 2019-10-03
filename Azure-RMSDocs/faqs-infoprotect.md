@@ -4,7 +4,7 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/03/2019
+ms.date: 10/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0d17189d2c5cd896727de1de05233fbfcd9b9868
-ms.sourcegitcommit: dd60bdae3ed608306cd8f9dbe92aac6650d8fbb3
+ms.openlocfilehash: 8266e7b6a7883be96571dfd2d493b3eac83bdb7c
+ms.sourcegitcommit: b6c1d2cb23c9d883901791bfadc9c39028ddd8aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70215683"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71835399"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -40,7 +40,7 @@ ms.locfileid: "70215683"
 > - 分类和标签的集中式报告。 有关详细信息，请参阅 [Azure 信息保护的中心报告](reports-aip.md)。
 >
 >**Office 的敏感度标签**：
-> - 有关哪些 Office 应用支持敏感度标签的最新信息，请参阅 "目前该功能在何处可用？"。 部分介绍[如何在 Office 中将敏感标签应用于文档和电子邮件](https://aka.ms/officemipdocs)。
+> - 有关哪些 Office 应用支持敏感度标签的最新信息，请参阅 Office 文档中的[office 今日支持哪些敏感度标签功能？](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#what-sensitivity-label-capabilities-are-supported-in-office-today) 。
 
 通过访问 Azure 信息保护的 [UserVoice 站点](https://msip.uservoice.com/)，请求新功能并对请求进行投票。
 
@@ -52,7 +52,7 @@ ms.locfileid: "70215683"
 
 - 用于从 Azure 门户下载标签和策略设置的**Azure 信息保护客户端（经典）** 。 此客户端建立在以前的客户端通用版本上。
 
-如果客户的当前功能集和功能满足你的业务要求，我们建议你与统一的标签客户端进行测试。 否则，或者如果已在尚未[迁移到统一标签存储](configure-policy-migrate-labels.md)的 Azure 门户中配置了标签，请使用经典客户端。
+如果客户的当前功能集和功能满足你的业务要求，我们建议你与统一的标签客户端进行测试。 否则, 或者如果已在尚未[迁移到统一标签存储](configure-policy-migrate-labels.md)的 Azure 门户中配置了标签, 请使用经典客户端。
 
 有关详细信息，包括特性和功能的比较表，请参阅[选择使用哪个 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use)。
 
