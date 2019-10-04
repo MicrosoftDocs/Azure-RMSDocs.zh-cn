@@ -4,26 +4,26 @@ description: 使用范围策略，创建和配置为一部分用户分类文档�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/18/2019
+ms.date: 09/28/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: cce7edf1428c9090f0b51b13170de9afbb89ce6f
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: e3960a2e4e0204fb879e55704f68ed8071d31e3b
+ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68790299"
+ms.lasthandoff: 09/29/2019
+ms.locfileid: "71674130"
 ---
 # <a name="quickstart-create-a-new-azure-information-protection-label-for-specific-users"></a>快速入门：为特定用户创建新的 Azure 信息保护标签
 
 >适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
-本教程介绍如何创建这样一个新标签：只有特定用户才能查看该标签并应用它来分类并保护文档和电子邮件。
+本快速入门介绍如何创建新的 Azure 信息保护标签：只有特定用户才能查看该标签并应用它来分类并保护文档和电子邮件。
 
 此配置使用范围策略。
 
@@ -45,9 +45,11 @@ ms.locfileid: "68790299"
     
     如果你没有适当的组，请创建一个名为“销售团队”  的组并至少添加一个用户。
 
-4. 测试新的标签：必须为用户在计算机上安装 Azure 信息保护客户端。 
+4. 测试新的标签：Azure 信息保护客户端（经典）必须安装在 Windows 计算机上。 
     
-    若要自行试用标签，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  ，安装客户端。
+    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。
+     
+    如果对经典客户端使用了不同的标签客户端，请参阅 Office 文档，以了解有关本教程的等效说明。 例如，[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)。
 
 有关使用 Azure 信息保护的先决条件的完整列表，请参阅 [Azure 信息保护的要求](requirements.md)。
     

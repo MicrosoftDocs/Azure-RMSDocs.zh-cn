@@ -4,18 +4,18 @@ description: 本入门教程介绍如何配置 Azure 信息保护策略设置，
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/20/2019
+ms.date: 10/01/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: f2aa0d6b7068488212697f6f2f2e9b1d19c9d131
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 73f242b50e53eb7f5408bf99902daf0214d37268
+ms.sourcegitcommit: d939dd4191965f68a5e59e13ed612e40bfa28556
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68794062"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71712583"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
@@ -28,7 +28,7 @@ ms.locfileid: "68794062"
 > * 配置协同工作的策略设置
 > * 在实际操作中查看设置
 
-与其依赖用户手动标记其文档和电子邮件，不如使用策略设置来实现以下目的：
+与其依赖用户手动标记其文档和电子邮件，不如使用 Azure 信息保护策略设置来实现以下目的：
 
 - 确保新内容和已编辑内容具有基本级别的分类
 
@@ -44,15 +44,17 @@ ms.locfileid: "68794062"
     
     如果没有包含此计划的订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
 
-2. 已将“Azure 信息保护”边栏选项卡添加到 Azure 门户，并确认已激活保护服务。
-
-    如果在执行这些操作时需要帮助，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户和查看策略](quickstart-viewpolicy.md)
-
-3. 计算机上已安装 Azure 信息保护客户端。 
+2. “Azure 信息保护”边栏选项卡已添加到 Azure 门户，并在 Azure 信息保护全局策略中发布了一个或多个标签。
     
-    可以转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  ，安装客户端。
+    有关这些步骤，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户和查看策略](quickstart-viewpolicy.md)。
 
-4. 一台运行 Windows（最低配置为 Windows 7 Service Pack 1）的计算机，并在此计算机上，从以下类别之一登录到 Office 应用：
+3. Azure 信息保护客户端（经典）安装在 Windows 计算机上（最低版本为 Windows 7 Service Pack 1）。 
+    
+    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。 
+    
+    如果对经典客户端使用了不同的标签客户端，请参阅 Office 文档，以了解有关敏感度标签的策略设置信息。 例如，[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)。
+
+4. 你已从下列类别之一登录到 Office 应用：
     
     - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
     
@@ -92,7 +94,7 @@ ms.locfileid: "68794062"
 
     |Setting|值|信息|
     |-------|-----|-----|
-    |**选择默认标签**|**常规**|如果没有名为“常规”  的标签，可以从下拉列表中选择另一个标签。 未标记的文档和电子邮件将自动应用此标签作为基本分类。 不过，用户可以将所选标签更改为其他标签。|
+    |**选择默认标签**|**常规**|“常规”  标签是 Azure 信息保护可为你创建的默认标签之一。 [创建和发布标签](quickstart-viewpolicy.md#create-and-publish-labels)快速入门中介绍了此步骤。 如果没有名为“常规”  的标签，可以从下拉列表中选择另一个标签。 未标记的文档和电子邮件将自动应用此标签作为基本分类。 不过，用户可以将所选标签更改为其他标签。|
     |**强制所有文档和电子邮件都具有标签**|**开**|此设置通常称为强制标记，因为它可以防止用户保存文档或发送未标记的电子邮件。 连同默认标签，文档和电子邮件将具有你设置的默认标签或它们选择的标签。
     |**对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签**|推荐 |如果用户附加的文档的分类级别高于所选默认标签，此设置会提示用户为其电子邮件选择更高级别的分类标签。
     |**在 Office 应用程序中显示“信息保护”栏**|**开**|显示“信息保护”栏后，用户可以更轻松地查看和更改默认标签。

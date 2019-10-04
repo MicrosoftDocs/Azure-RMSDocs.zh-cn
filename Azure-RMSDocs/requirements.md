@@ -4,7 +4,7 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/26/2019
+ms.date: 10/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: dc0208e8053e09b2225b8e3bd9698ad1af7e9c43
-ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
+ms.openlocfilehash: 3ad40af5706e588f71342716c34315818ea07ed0
+ms.sourcegitcommit: 17e562b102c077d2af0fa63ce1db77bf5c41c5b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71314321"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71923654"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -119,9 +119,13 @@ Azure 信息保护客户端可以使用 Office 应用程序的**Word**、 **Exce
 
 Office 的其他版本无法通过使用 Rights Management 服务保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护分类。 因此，应用保护的标签不会显示给 Azure 信息保护栏上的用户，也不会显示在 Office 功能区上的 "**保护**" 按钮（经典客户端）或 "**敏感度**" 按钮（统一标签客户端）中。 
 
-Azure 信息保护客户端不支持在同一台计算机上有多个版本的 Office。 这些客户端也不支持在 Office 中切换用户帐户。
-
 有关支持保护服务的 Office 版本的信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。
+
+### <a name="office-features-and-capabilities-not-supported"></a>不支持的 Office 功能
+
+- Azure 信息保护客户端（经典客户端和统一标签客户端）不支持同一计算机上的多个 Office 版本，也不支持在 Office 中切换用户帐户。
+
+- Azure 信息保护功能不支持 Office[邮件合并](https://support.office.com/article/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705)功能。
 
 ## <a name="firewalls-and-network-infrastructure"></a>防火墙和网络基础结构
 

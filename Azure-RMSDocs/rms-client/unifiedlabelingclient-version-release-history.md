@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/26/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 57cf55e3a08a5ff6ddf983f930a7004b30af55be
-ms.sourcegitcommit: e53d52bd44271d27aa06c63bd4cc32884d3f2a4b
+ms.openlocfilehash: b3da9f1b675a92566a3df7d067116d869133645a
+ms.sourcegitcommit: 7f0ca724b746cc0ed9db88dfe1afb50ebbcdbd08
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322349"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71939082"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -37,9 +37,6 @@ ms.locfileid: "71322349"
 Azure 信息保护统一标签客户端的每个正式发行版 (GA) 在发布后续版本后, 最多可支持六个月。 文档不包括关于不支持的客户端版本的信息。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
 
 不应在生产网络上为最终用户部署预览版本。 而是使用最新预览版来查看和试用即将在下一 GA 版本中推出的新功能或修补程序。 仅支持当前预览版。
-
-> [!NOTE]
-> 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
 ### <a name="release-information"></a>发布信息
 
@@ -64,7 +61,7 @@ Azure 信息保护统一标签客户端的每个正式发行版 (GA) 在发布�
     
     - 将扫描仪配置为使用同一扫描程序配置文件时，多个扫描程序可以共享相同的 SQL Server 数据库。 此配置可以更轻松地管理多个扫描仪，并缩短扫描时间。 当你使用此配置时，请始终等待扫描仪完成安装，然后再使用同一配置文件安装另一个扫描程序。
     
-    - 安装扫描程序时，必须指定配置文件，并将扫描程序数据库命名**为\<AIPScannerUL_ profile_name >** 。 *配置文件*参数对于 install-aipscanner 是必需的。
+    - 安装扫描程序时必须指定配置文件，并将扫描程序数据库命名为**AIPScannerUL_ @ no__t-1profile_name >** 。 *配置文件*参数对于 install-aipscanner 是必需的。
     
     - 即使已标记文档，也可以在所有文档上设置一个默认标签。 在 "扫描程序配置文件" 或 "存储库设置" 中，将 "重新**标记文件**" 选项设置为 "**打开**"，并选择 "新建**强制默认标签**
     
@@ -143,7 +140,7 @@ Azure 信息保护统一标签客户端的每个正式发行版 (GA) 在发布�
     - [为用户添加“报告问题”](clientv2-admin-guide-customizations.md#add-report-an-issue-for-users)
     - [在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](clientv2-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
     - [禁止将文档中发现的敏感信息发送到 Azure 信息保护分析](clientv2-admin-guide-customizations.md#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)
-    - [发送信息类型匹配](clientv2-admin-guide-customizations.md#send-information-type-matches)
+    - [向 Azure 信息保护分析发送信息类型匹配项](clientv2-admin-guide-customizations.md#send-information-type-matches-to-azure-information-protection-analytics)
     - [从 Secure Islands 和其他标记解决方案迁移标签](clientv2-admin-guide-customizations.md#migrate-labels-from-secure-islands-and-other-labeling-solutions)
     - [应用标签时应用自定义属性](clientv2-admin-guide-customizations.md#apply-a-custom-property-when-a-label-is-applied)
     - [将标签配置为在 Outlook 中应用 S/MIME 保护](clientv2-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)

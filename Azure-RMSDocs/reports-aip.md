@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 09/27/2019
+ms.date: 10/03/2019
 manager: rkarlin
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c168cbfe672caecb0ebfbeea0e0c0e234599c223
-ms.sourcegitcommit: e53d52bd44271d27aa06c63bd4cc32884d3f2a4b
+ms.openlocfilehash: edc87fe3422bbfe6805a4c3f0d012d0a76e7c5ce
+ms.sourcegitcommit: 17e562b102c077d2af0fa63ce1db77bf5c41c5b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322377"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71923695"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -147,7 +147,7 @@ Azure 信息保护允许收集和存储标识为敏感信息类型（预定义�
     
     如果希望使用此客户端的大多数用户发送内容匹配项，但部分用户无法发送内容匹配项，请选中该复选框，然后在作用域内策略中为用户子集配置[高级客户端设置](./rms-client/client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)。
 
-- 对于统一标签客户端，请在标签策略中配置[高级设置](./rms-client/clientv2-admin-guide-customizations.md#send-information-type-matches)。
+- 对于统一标签客户端，请在标签策略中配置[高级设置](./rms-client/clientv2-admin-guide-customizations.md#send-information-type-matches-to-azure-information-protection-analytics)。
 
 ## <a name="prerequisites"></a>先决条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。

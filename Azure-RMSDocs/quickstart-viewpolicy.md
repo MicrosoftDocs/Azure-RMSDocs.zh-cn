@@ -1,29 +1,27 @@
 ---
 title: 快速入门 - 在 Azure 门户中查看 Azure 信息保护 - AIP
-description: 如果你的组织刚刚开始使用 Azure 信息保护，请从此处开始将服务添加到 Azure 门户，确认已激活保护服务并查看标签和策略设置。
+description: 如果你的组织刚刚开始使用 Azure 信息保护，请从此处开始将服务添加到 Azure 门户，确认已激活保护服务并发布标签和策略设置。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/20/2019
+ms.date: 10/01/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 096fdbb61be5d0223e94921cb02cb5d7550eafd0
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: d48061cda0d13ad04dc05dbd5d260a56dec60166
+ms.sourcegitcommit: d939dd4191965f68a5e59e13ed612e40bfa28556
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793802"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71712560"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
 >适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
->
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
-本快速入门包含以下内容：将 Azure 信息保护添加到 Azure 门户、确认保护服务已激活、创建默认标签（如果没有标签），并查看 Azure 信息保护的策略设置。
+本快速入门包含以下内容：将 Azure 信息保护添加到 Azure 门户、确认保护服务已激活、创建默认标签（如果没有标签），并查看 Azure 信息保护客户端（经典）的策略设置。
 
 在 10 分钟内即可完成本快速入门。
 
@@ -74,7 +72,7 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
 
     激活完成后，信息栏将显示“激活已成功完成”  。
 
-## <a name="create-labels---if-necessary"></a>创建标签（如有必要）
+## <a name="create-and-publish-labels"></a>创建和发布标签
 
 你的组织可能已有标签，因为已为租户自动创建标签，或者因为 Office 365 安全与合规中心、Microsoft 安全中心或 Microsoft 合规中心具有敏感度标签。 我们一起来看一下：
 
@@ -88,9 +86,9 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
     
     ![Azure 信息保护默认标签](./media/info-protect-defaultlabels.png)
 
-2. 如果你已有标签，请转到下一节以查看标签。 如果还没有标签，请选择“生成默认标签”  选项。
+2. 如果还没有标签，请选择“生成默认标签”  选项。
 
-4. 然后，若要为所有用户发布标签，请从“分类”   > “策略”   > “全局”  中：
+4. 若要为所有用户发布标签，请从“分类”   > “策略”   > “全局”  中：
     
     a. 选择  “添加或删除标签”。
     
@@ -98,15 +96,17 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
     
     c. 再从“策略:  全局”边栏选项卡上，选择“保存”  。
 
+在 Azure 门户中发布标签，使其可用于 Azure 信息保护客户端（经典）。
+
 ## <a name="view-your-labels"></a>查看标签
 
 选择“分类”   > “标签”  ，并花一些时间熟悉“Azure 信息保护 - 标签  ”边栏选项卡上显示的标签。
 
-如果它们不与上一节图中的标签类似，说明你使用的不是 Azure 信息保护中的默认标签，而是从 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心创建的标签。
+如果它们不与上一节图中的标签类似，说明你使用的不是 Azure 信息保护中的默认标签，而可能是从 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心创建的标签。
 
 > [!TIP]
 > 如果不需要使用自定义标签，但要使用 Azure 信息保护中的默认标签，请执行以下操作： 
-> - 删除自定义标签，然后将会在“标签”  边栏选项卡中看到生成默认标签的选项，如[上一节](#create-labels---if-necessary)中所述。 
+> - 删除自定义标签，然后会将在“标签”  边栏选项卡中看到用于生成默认标签的选项，如[上一节](#create-and-publish-labels)中所述。 
 
 从“Azure 信息保护 - 标签”  边栏选项卡上：
 
@@ -122,11 +122,11 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
 
 ## <a name="view-your-policy-settings"></a>查看策略设置
 
-首次使用 Azure 门户连接到 Azure 信息保护服务时，将始终为你创建可供 Azure 信息保护客户端使用的默认策略设置。 对于此客户端，我们查看的策略设置和标签会下载到 Azure 信息保护策略中的客户端。
+首次使用 Azure 门户连接到 Azure 信息保护服务时，将始终为你创建可供 Azure 信息保护客户端（经典）使用的默认策略设置。 对于经典客户端，我们查看的策略设置和标签会下载到 Azure 信息保护策略中的客户端。
 
-如果使用 Azure 信息保护统一标记客户端，那么此客户端不会使用这些策略设置。 相反，此客户端从 Office 365 合规和安全中心、Microsoft 365 合规中心或 Microsoft 365 安全中心下载标签和策略设置。
+如果使用 Azure 信息保护统一标记客户端，那么此客户端不会使用这些策略设置。 相反，此客户端从 Office 365 合规和安全中心、Microsoft 365 合规中心或 Microsoft 365 安全中心下载相同的标签和不同的策略设置。 使用这些管理中心可以编辑标签和标签策略，而不是 Azure 门户。
 
-若要查看默认的 Azure 信息保护策略设置，请执行以下操作：
+若要查看经典客户端的默认 Azure 信息保护策略设置，请执行以下操作：
 
 1. 选择“分类”   > “策略”   > “全局”  ，以显示为租户创建的默认 Azure 信息保护策略设置。
     
@@ -134,10 +134,17 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
     
     ![Azure 信息保护策略全局设置](./media/defaultsettings-aip.png)
 
-3. 由于只查看设置，因此可以在门户中关闭已打开的任何边栏选项卡。
+3. 你现在可以在门户中关闭任何已打开的边栏选项卡。
 
 ## <a name="next-steps"></a>后续步骤
 
-现在可以在 Azure 门户中看到默认标签和策略设置，在下一步中，以下教程可能很有帮助：[编辑策略并为 Azure 信息保护创建新标签](infoprotect-quick-start-tutorial.md)。
+如果使用的是经典客户端：
 
-或者，有关配置 Azure 信息保护策略的所有方面的详细说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
+- 在下一步中，你可能会发现以下教程有帮助：[编辑策略并为 Azure 信息保护创建新标签](infoprotect-quick-start-tutorial.md)。
+- 或者，有关配置 Azure 信息保护策略的所有方面的详细说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
+
+如果使用的是统一标签客户端：
+
+- 请参阅 Office 文档中的[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)。
+
+不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。

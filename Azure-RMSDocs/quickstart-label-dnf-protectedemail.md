@@ -4,26 +4,26 @@ description: 通过自动应用“不得转发”保护，为用户配置可保�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/23/2019
+ms.date: 09/28/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: ffc5aa43b44eedad30dbfdb501152e55f87fb510
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 44e363456d8d4aeaf2a57c8c5b10213d256cb8aa
+ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68793843"
+ms.lasthandoff: 09/29/2019
+ms.locfileid: "71674168"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件
 
 >适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
-本快速入门介绍如何配置现有标签以自动应用“不得转发”保护设置。
+本快速入门介绍如何配置现有 Azure 信息保护标签以自动应用“不得转发”保护设置。
 
 当前的 Azure 信息保护策略已包含两个具有此配置的标签：
 
@@ -51,9 +51,11 @@ ms.locfileid: "68793843"
     
     可以使用其中一个默认标签，也可以使用已创建的标签。 如果需要有关创建新标签的帮助，请参阅[快速入门：为特定用户创建新的 Azure 信息保护标签](quickstart-label-specificusers.md)。
 
-4. 测试新的标签：必须为用户在计算机上安装 Azure 信息保护客户端。 
+4. 测试新的标签：Azure 信息保护客户端（经典）必须安装在 Windows 计算机上。 
     
-    若要自行试用标签，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  ，安装客户端。
+    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。
+    
+    如果对经典客户端使用了不同的标签客户端，请参阅 Office 文档，以了解本教程的等效说明。 例如，[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)。
 
 5. 测试新的标签：一台运行 Windows（最低配置为 Windows 7 Service Pack 1）的计算机，并在此计算机上，从以下类别之一登录到 Office 应用程序：
     

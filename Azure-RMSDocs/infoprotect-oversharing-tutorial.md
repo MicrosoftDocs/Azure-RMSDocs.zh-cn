@@ -4,18 +4,18 @@ description: 入门教程，可便于配置和了解 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 07/19/2019
+ms.date: 10/01/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 2fdb9e719ffcafb6923528fef6c63bb8eefb3cdc
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: ffbc65add0d5daceddbf02f454efac4a2a288243
+ms.sourcegitcommit: d939dd4191965f68a5e59e13ed612e40bfa28556
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68794131"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71712596"
 ---
 # <a name="tutorial-configure-azure-information-protection-to-control-oversharing-of-information-using-outlook"></a>教程：配置 Azure 信息保护以使用 Outlook 控制信息的过度共享
 
@@ -43,15 +43,20 @@ ms.locfileid: "68794131"
     
     如果没有包含此计划的订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
 
-2. 已将“Azure 信息保护”边栏选项卡添加到 Azure 门户，并至少有一个标签。
+2. “Azure 信息保护”边栏选项卡已添加到 Azure 门户，并在 Azure 信息保护全局策略中发布了至少一个标签。
     
-    虽然本教程使用默认标签“常规”，但如果你愿意，可以将此标签替换为另一个标签  。 如果在添加 Azure 信息保护边栏选项卡时需要帮助，或者还没有任何标签，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户和查看策略](quickstart-viewpolicy.md)。
+    虽然本教程使用默认标签“常规”，但如果你愿意，可以将此标签替换为另一个标签  。 如果在添加“Azure 信息保护”边栏选项卡时需要帮助，或者还没有向全局策略发布任何标签，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户和查看策略](quickstart-viewpolicy.md)。
 
 3. 一台运行 Windows（最低配置为 Windows 7 Service Pack 1）的计算机，并在此计算机上，你可以登录 Outlook。 做好在本教程中多次重启 Outlook 的准备。
 
-4. 计算机上已安装 Azure 信息保护客户端。
+4. Windows 计算机上已安装 Azure 信息保护客户端（经典）。
     
-    可以转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  ，安装客户端。
+    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。 
+    
+    如果使用的是统一标签客户端而不是经典客户端，请参阅以下说明，其中讲解了如何对本教程中的等效配置使用 PowerShell 高级设置：
+    
+    - 管理员指南说明：[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](./rms-client/clientv2-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
+    - 视频：[Azure 信息保护 Outlook 弹出配置](https://azure.microsoft.com/en-us/resources/videos/how-to-configure-azure-information-protection-popup-for-outlook/)
 
 有关使用 Azure 信息保护的先决条件的完整列表，请参阅 [Azure 信息保护的要求](requirements.md)。
 
@@ -77,7 +82,7 @@ ms.locfileid: "68794131"
 
 4. 复制标签 ID 值并将其粘贴到临时文件中，以便在以后的步骤中可轻松复制该值。 在本示例中，此标签 ID 值是“0e421e6d-ea17-4fdb-8f01-93a3e71333b8”  。
 
-5. 关闭“标签: 常规”边栏选项卡，但不要关闭 Azure 门户**。
+5. 关闭“标签: 常规”边栏选项卡，但不要关闭 Azure 门户  。
 
 ## <a name="create-a-scoped-policy-to-test-the-new-advanced-client-settings"></a>创建作用域内策略以测试新的高级客户端设置
 
@@ -91,7 +96,7 @@ ms.locfileid: "68794131"
 
 4. 帐户名显示在“策略”边栏选项卡上后，请选择“保存”且不对此边栏选项卡上的标签或设置进行其他更改   。 系统可能会提示你确认你的选择。 
 
-此作用域内策略现已准备就绪，可添加高级客户端设置。 关闭“策略: 过度共享教程”边栏选项卡，但不要关闭 Azure 门户**
+此作用域内策略现已准备就绪，可添加高级客户端设置。 关闭“策略: 过度共享教程”边栏选项卡，但不要关闭 Azure 门户 
 
 ## <a name="configure-and-test-advanced-client-settings-to-warn-prompt-for-justification-or-block-emails-that-have-the-general-label"></a>配置并测试以下高级客户端设置：警告、提示提供理由或阻止具有“常规”标签的电子邮件。
 

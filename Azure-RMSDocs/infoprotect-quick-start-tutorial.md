@@ -4,18 +4,18 @@ description: 介绍如何为组织编辑 Azure 信息保护策略的入门教程
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 06/18/2019
+ms.date: 10/01/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 44504efc4640bf3d07398b14da7539cbda20e45d
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.openlocfilehash: 0923ef10427533cae46b5de30f4c30371b9fe6d7
+ms.sourcegitcommit: d939dd4191965f68a5e59e13ed612e40bfa28556
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68788592"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71712614"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-and-create-a-new-label"></a>教程：配置 Azure 信息保护策略设置并创建新标签
 
@@ -42,15 +42,15 @@ ms.locfileid: "68788592"
     
     如果没有包含 Azure 信息保护计划 2 的订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
 
-2. 已将“Azure 信息保护”边栏选项卡添加到 Azure 门户，并确认已激活保护服务。
-
-    如果在执行这些操作时需要帮助，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户和查看策略](quickstart-viewpolicy.md)
-
-3. 计算机上已安装 Azure 信息保护客户端。 
+2. “Azure 信息保护”边栏选项卡已添加到 Azure 门户，保护服务已激活，并在 Azure 信息保护全局策略中发布了一个或多个标签。
     
-    可以转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  ，安装客户端。
+    有关这些步骤，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户和查看策略](quickstart-viewpolicy.md)。
 
-4. 一台运行 Windows（最低配置为 Windows 7 Service Pack 1）的计算机，并且在此计算机上，你已登录以下类别的 Office 应用之一：
+3. Azure 信息保护客户端（经典）安装在 Windows 计算机上（最低版本为 Windows 7 Service Pack 1）。 
+    
+    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。 如果对经典客户端使用了不同的标签客户端，请参阅 [Office 文档](/microsoft-365/compliance/sensitivity-labels)，以了解本教程的等效说明。
+
+4. 你已从下列类别之一登录到 Office 应用：
     
     - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
     
@@ -78,7 +78,7 @@ ms.locfileid: "68788592"
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”   。 选择“Azure 信息保护”。 
     
-    如果你不是全局管理员，请使用以下针对替代角色的链接：[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)
+    如果你不是全局管理员，请使用以下链接获取替代角色：[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)
 
 2. 选择“分类”   > “策略”   > “全局”  ，打开“策略: 全局”边栏选项卡  。 
 
@@ -88,11 +88,11 @@ ms.locfileid: "68788592"
     
     ![Azure 信息保护教程 - 要更改的策略设置](./media/info-protect-policy-default-settings.png)
     
-    我们会在本教程后面使用这些策略设置，你将在实际操作中看到相应设置。
+    我们会在本教程后面使用这些策略设置，你将在实际操作看到相应设置。
 
-4. 对于“选择默认标签”，请选择“常规”   。 
-
-    如果因使用旧版本的策略而不具有此标签，请选择“内部”  作为等效标签。
+4. 对于“选择默认标签”  ，请选择其中一个标签，例如“常规”  .。 
+    
+    “常规”  标签是 Azure 信息保护可为你创建的默认标签之一。 快速入门中的[创建和发布标签](quickstart-viewpolicy.md#create-and-publish-labels)部分中介绍了此步骤，即将 Azure 信息保护添加到 Azure 门户。
 
 5. 对于“用户必须提供设置较低分类标签、删除标签或删除保护的理由”  ，请将此选项设置为“开”  （如果还不是此设置）。
 
@@ -106,13 +106,13 @@ ms.locfileid: "68788592"
 
 1. 从“分类” > “标签”菜单选项中   ：右键单击“机密”标签，然后选择“添加子标签”   。
     
-    如果没有名为 **“机密”** 的标签，可以选择另一个标签，也可以创建一个新标签，具体操作步骤仍与本教程相同，只存在细微差异。
+    如果没有名为“机密”  的标签，可以选择另一个标签，也可以创建一个新标签，具体操作步骤仍与本教程相同，只存在细微差异。
 
 2. 在“子标签”  边栏选项卡上，指定“财务”  的标签名称，并添加以下说明：包含财务信息的机密数据仅限员工使用  。
     
     此文本说明应如何使用所选标签，并显示为一个工具提示，帮助用户确定要选择的标签。
 
-3. 对于“为包含此标签的文档和电子邮件设置权限”  ，选择“保护”  ，这会为你选择“保护”  选项，自动打开“保护”  边栏选项卡 ：
+3. 对于“为包含此标签的文档和电子邮件设置权限”  ，选择“保护”  ，这会在为你选择“保护”选项时，自动打开“保护”  边栏选项卡  ：
     
     ![配置 Azure 信息保护标签以进行保护](./media/info-protect-protection-bar-configured.png) 
     
@@ -142,7 +142,7 @@ ms.locfileid: "68788592"
     
     对于“包含此标签的文档具有页脚”设置，请单击“开”，然后在“文本”框中键入“分类为机密”     。 
     
-    对于“包含此标签的文档具有水印”  设置，单击“开”  ，然后在“文本”  框中键入你的组织名称。 例如，VanArsdel, Ltd  
+    对于“使用该标签的文档具有一个水印”  设置：单击“开”  ，然后在“文本”  框中键入你的组织名称。 例如，VanArsdel, Ltd  
     
     尽管可以更改视觉标记的外观，但是我们将暂时使用这些设置的默认值。
     
@@ -213,7 +213,7 @@ ms.locfileid: "68788592"
     
     ![Azure 信息保护教程 - 查看子标签](./media/info-protect-sub-labelsv2.png)
 
-2. 选择其中任一子标签，将看到其他标签如何不再显示在栏上，因为已为本文档选择标签。 “敏感度”  值将更改，以显示标签和子标签名称，标签颜色也会相应更改。 例如：
+2. 选择其中任一子标签，将看到其他标签如何不再显示在栏上，因为已为本文档选择标签。 “敏感级别”  值将更改，以显示标签和子标签名称，标签颜色也会相应更改。 例如：
     
     ![Azure 信息保护教程 - 已选择子标签](./media/info-protect-sub-label-selectedv2.png)
 

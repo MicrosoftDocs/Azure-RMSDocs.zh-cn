@@ -3,7 +3,7 @@ title: 自定义配置-Azure 信息保护统一标签客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/26/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 86e914bf96e596a01243d2c4a74236f28c6ac9b5
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: 97e679fd6b234884f3b96fef5abef98f6c68e16a
+ms.sourcegitcommit: 17e562b102c077d2af0fa63ce1db77bf5c41c5b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71690146"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71923667"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端的自定义配置
 
@@ -124,7 +124,7 @@ ms.locfileid: "71690146"
 |EnableCustomPermissionsForCustomProtectedFiles|[对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) |
 |EnableLabelByMailHeader|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |HideBarByDefault|[在 Office 应用程序中显示“信息保护”栏](##display-the-information-protection-bar-in-office-apps)|
-|LogMatchedContent|[发送信息类型匹配](#send-information-type-matches)|
+|LogMatchedContent|[向 Azure 信息保护分析发送信息类型匹配项](#send-information-type-matches-to-azure-information-protection-analytics)|
 |OutlookBlockTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookBlockUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookDefaultLabel|[为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook)|
@@ -284,7 +284,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 用以删除页眉或页脚中特定字词的完全匹配。
     
-    例如：页眉或页脚包含字符串 TEXT TO REMOVE。 只想删除单词 TEXT，结果使页眉或页脚字符串变为 TO REMOVE。 可指定值：`TEXT `。
+    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 只想删除单词 TEXT，结果使页眉或页脚字符串变为 TO REMOVE。 可指定值：`TEXT `。
 
 - 用以删除页眉或页脚中所有内容的完全匹配。
     
@@ -655,9 +655,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-在 Office 应用中使用 Azure 信息保护统一标签客户端时，它会在首次保存文档时查找文档中的敏感信息。 **如果**提供[EnableAudit](#disable-sending-audit-data-to-azure-information-protection-analytics) advanced 设置，则不会将任何预定义的和自定义的（仅预览客户端）敏感信息类型发送到 Azure 信息保护分析。
+在 Office 应用中使用 Azure 信息保护统一标签客户端时，它会在首次保存文档时查找文档中的敏感信息。 **如果**提供[EnableAudit](#disable-sending-audit-data-to-azure-information-protection-analytics) advanced 设置，则不会将任何预定义的和自定义的（仅预览客户端）敏感信息类型发送到[Azure 信息保护分析](../reports-aip.md)。
 
-若要更改此行为，以便不将统一标签客户端找到的敏感信息类型发送到 Azure 信息保护分析，请为所选标签策略输入以下字符串：
+若要更改此行为，以便不发送统一标签客户端找到的敏感信息类型，请为所选标签策略输入以下字符串：
 
 - 按键**RunAuditInformationTypesDiscovery**
 
@@ -677,11 +677,13 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
     Set-LabelPolicy -Identity Global -AdvancedSettings @{RunAuditInformationTypesDiscovery="False"}
 
-## <a name="send-information-type-matches"></a>发送信息类型匹配
-
+## <a name="send-information-type-matches-to-azure-information-protection-analytics"></a>向 Azure 信息保护分析发送信息类型匹配项
+ 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell), 你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-默认情况下，统一标签客户端不会将敏感信息类型的内容匹配发送到[Azure 信息保护分析](../reports-aip.md)。 若要在发送敏感信息类型时发送此附加信息，请在标签策略中创建以下高级客户端设置： 
+默认情况下，统一标签客户端不会将敏感信息类型的内容匹配发送到[Azure 信息保护分析](../reports-aip.md)。 有关可以发送的其他信息的详细信息，请参阅中央报表文档中的 "[深入分析的内容匹配](../reports-aip.md#content-matches-for-deeper-analysis)" 部分。
+
+若要在发送敏感信息类型时发送内容匹配项，请在标签策略中创建以下高级客户端设置： 
 
 - 按键**LogMatchedContent**
 
