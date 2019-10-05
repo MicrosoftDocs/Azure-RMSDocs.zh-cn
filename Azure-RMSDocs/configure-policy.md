@@ -3,7 +3,7 @@ title: 配置 Azure 信息保护策略 - AIP
 description: 若要为 Azure 信息保护客户端（经典）配置分类、设置标签和保护，必须配置 Azure 信息保护策略。
 author: cabailey
 ms.author: cabailey
-ms.date: 09/28/2019
+ms.date: 10/04/2019
 manager: barbkess
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 2a23660b43f0186c78953695eccbc4b531dbca9a
-ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
+ms.openlocfilehash: 858b745987edd73f12bfda903050e84ca97eaacb
+ms.sourcegitcommit: a972099c8a374fbb029a66907bf0f85325359d88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2019
-ms.locfileid: "71673813"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71966786"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -69,18 +69,20 @@ Azure 信息保护支持不同级别的订阅：
     
     - **Azure 信息保护管理员**
     
-    - **安全读取者**（仅用于 [Azure 信息保护分析](reports-aip.md)）
-    
   - **合规性管理员**
     
   - **相容性数据管理员**
     
   - **安全管理员**
     
+    **安全读取器** -  仅限[Azure 信息保护分析](reports-aip.md)
+    
+    **全局读取器**@no__t 仅限[Azure 信息保护分析](reports-aip.md)
+    
   - **全局管理员**
     
     > [!NOTE] 
-    > 如果你的租户已迁移到统一标签存储, 将不再支持 Azure 信息保护管理员 (以前称为 "信息保护管理员")。 [详细信息](configure-policy-migrate-labels.md#administrative-roles-that-support-the-unified-labeling-platform)
+    > 如果你的租户在统一的标签平台上，则 Azure 门户不支持 Azure 信息保护管理员角色（以前称为 "信息保护管理员"）和全局读者角色。 [详细信息](configure-policy-migrate-labels.md#administrative-roles-that-support-the-unified-labeling-platform)
     
     Microsoft 帐户无法管理 Azure 信息保护。
 
@@ -116,7 +118,7 @@ Azure 信息保护支持不同级别的订阅：
 
 可以创建任意数量的标签。 但是，如果因标签数量过多而导致用户难以看见并选择正确的标签，可以创建作用域内策略，使用户仅看见相关的标签。 应用保护的标签具有数量上限（500 个）。
 
-当在“Azure 信息保护”边栏选项卡上进行任何更改时，请单击“**保存**”以保存更改，或者单击“**放弃**”以返回到上一个保存的设置。 保存策略中的更改或对添加到策略中的标签进行更改时, 这些更改会自动发布。 不提供单独发布选项。
+当在“Azure 信息保护”边栏选项卡上进行任何更改时，请单击“**保存**”以保存更改，或者单击“**放弃**”以返回到上一个保存的设置。 保存策略中的更改或对添加到策略中的标签进行更改时，这些更改会自动发布。 不提供单独发布选项。
 
 每当受支持的 Office 应用程序启动时，Azure 信息保护客户端都会检查是否有任何变化，并根据最新的 Azure 信息保护策略下载这些更改。 在客户端上刷新策略的其他触发器：
 
@@ -170,7 +172,7 @@ Azure 信息保护支持不同级别的订阅：
 
 - 对于 Word 文档（.doc 和 .docx）、Excel 电子表格（.xls 和 .xlsx）、PowerPoint 演示文稿（.ppt 和 .pptx）以及 PDF 文档，此元数据存储在以下自定义属性中：MSIP_Label_\<GUID>_Enabled=True  
 
-对于电子邮件, 在发送电子邮件时, 将存储标签信息。 对于文档, 保存文件时将存储标签信息。 
+对于电子邮件，在发送电子邮件时，将存储标签信息。 对于文档，保存文件时将存储标签信息。 
 
 若要确定标签 GUID，请在 Azure 门户中查看或配置 Azure 信息保护策略时，在“标签”边栏选项卡上找到“标签 ID”值。 对于应用了标记的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 来标识 GUID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 GUID。
 

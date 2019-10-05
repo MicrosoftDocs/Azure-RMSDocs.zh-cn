@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 10/03/2019
+ms.date: 10/04/2019
 manager: rkarlin
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: edc87fe3422bbfe6805a4c3f0d012d0a76e7c5ce
-ms.sourcegitcommit: 17e562b102c077d2af0fa63ce1db77bf5c41c5b4
+ms.openlocfilehash: d33650b879939ce4a23efd77b1ac3de6c9f2ad06
+ms.sourcegitcommit: a972099c8a374fbb029a66907bf0f85325359d88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71923695"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71966859"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -155,10 +155,10 @@ Azure 信息保护允许收集和存储标识为敏感信息类型（预定义�
 |要求|详细信息|
 |---------------|--------------------|
 |包含 Log Analytics 且用于与 Azure 信息保护相同的租户的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
-|Azure 信息保护客户端|支持统一标签客户端和经典客户端。 <br /><br />如果你还没有其中的一个客户端, 则可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装这些客户端。|
+|Azure 信息保护客户端|支持统一标签客户端和经典客户端。 <br /><br />如果你还没有其中的一个客户端，则可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装这些客户端。|
 |Microsoft Cloud App Security |若要显示 Microsoft Cloud App Security 的信息，请配置[Azure 信息保护集成](https://docs.microsoft.com/cloud-app-security/azip-integration)。|
-|对于“发现和风险”报表： <br /><br />-若要显示本地数据存储中的数据, 你至少部署了一个 Azure 信息保护扫描程序实例 <br /><br />-若要显示 Windows 10 计算机上的数据, 它们必须是1809的最小内部版本, 你使用的是 Microsoft Defender 高级威胁防护 (Microsoft Defender ATP), 并且已启用 Microsoft 的 Azure 信息保护集成功能Defender 安全中心|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关配置和使用 Microsoft Defender 安全中心提供的 Azure 信息保护集成功能的信息, 请参阅[Windows 中的信息保护概述](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。|
-|对于“建议”报告： <br /><br />-若要从 Azure 门户添加新的数据存储库作为建议操作，你必须使用在 Azure 门户中配置的 Azure 信息保护扫描程序的版本 |若要部署扫描程序, 请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。|
+|对于“发现和风险”报表： <br /><br />-若要显示本地数据存储中的数据，你至少部署了一个 Azure 信息保护扫描程序实例 <br /><br />-若要显示 Windows 10 计算机上的数据，它们必须是1809的最小内部版本，你使用的是 Microsoft Defender 高级威胁防护（Microsoft Defender ATP），并且已启用 Microsoft 的 Azure 信息保护集成功能Defender 安全中心|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关配置和使用 Microsoft Defender 安全中心提供的 Azure 信息保护集成功能的信息，请参阅[Windows 中的信息保护概述](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。|
+|对于“建议”报告： <br /><br />-若要从 Azure 门户添加新的数据存储库作为建议操作，你必须使用在 Azure 门户中配置的 Azure 信息保护扫描程序的版本 |若要部署扫描程序，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。|
 
 ### <a name="permissions-required-for-azure-information-protection-analytics"></a>Azure 信息保护分析必备的先决条件
 
@@ -178,12 +178,13 @@ Azure 信息保护允许收集和存储标识为敏感信息类型（预定义�
         - **相容性数据管理员**
         - **全局管理员**
     
-    - 创建该工作区后，可以使用具有较少权限的以下角色来查看收集的数据：
+    - 创建工作区后，可以使用具有较少权限的下列角色来查看所收集的数据：
     
         - **安全读取者**
+        - **全局读取器**
     
     > [!NOTE] 
-    > 如果你的租户位于[统一的标签平台](faqs.md#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)上，则不能使用 Azure 信息保护管理员角色。
+    > 如果你的租户在[统一的标签平台](faqs.md#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)上，则不能使用 Azure 信息保护管理员角色或全局读者角色。
 
 2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#manage-access-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-rbac-roles)之一才能访问 Azure Log Analytics 工作区：
     
@@ -211,15 +212,15 @@ Azure 信息保护允许收集和存储标识为敏感信息类型（预定义�
 
 在 Azure 信息保护工作区中收集和存储的数据量会因多种因素而异，具体取决于你的 Azure 信息保护客户端和其他支持的终结点（无论你是正在收集终结点发现数据，你已部署了扫描仪，已访问的受保护文档的数量，等等。
 
-然而, 作为起点, 你可能会发现以下估计非常有用:
+然而，作为起点，你可能会发现以下估计非常有用：
 
-- 仅适用于 Azure 信息保护客户端生成的审核数据:每月每10000活动用户 2 GB。
+- 仅适用于 Azure 信息保护客户端生成的审核数据：每月每10000活动用户 2 GB。
 
-- 对于 Azure 信息保护客户端、扫描仪和 Microsoft Defender ATP 生成的审核数据:每月 20 GB/10000 活动用户。
+- 对于 Azure 信息保护客户端、扫描仪和 Microsoft Defender ATP 生成的审核数据：每月 20 GB/10000 活动用户。
 
 如果你使用必需的标签，或者你为大多数用户配置了默认标签，则你的费率可能会显著提高。
 
-Azure Monitor 日志具有**使用情况和预估成本**功能, 可帮助您估计和查看存储的数据量, 还可以控制 Log Analytics 工作区的数据保留期。 有关详细信息, 请参阅[使用 Azure Monitor 日志管理使用情况和成本](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage)。
+Azure Monitor 日志具有**使用情况和预估成本**功能，可帮助您估计和查看存储的数据量，还可以控制 Log Analytics 工作区的数据保留期。 有关详细信息，请参阅[使用 Azure Monitor 日志管理使用情况和成本](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage)。
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>配置报表的 Log Analytics 工作区
 
@@ -243,7 +244,7 @@ Azure Monitor 日志具有**使用情况和预估成本**功能, 可帮助您估
 
 配置工作区后，如果在以下管理中心之一发布敏感度标签，请执行以下操作：Office 365 安全与合规中心，Microsoft 365 安全中心，Microsoft 365 符合性中心：
 
-- 在 Azure 门户中转到**Azure 信息保护** > **管理** > **统一标签**，然后选择 "**发布**"。
+- 在 Azure 门户中转到**Azure 信息保护** > **管理**@no__t 的**统一标签**，然后选择 "**发布**"。
     
     每次在标签中心中进行标签更改（创建、修改、删除）时，请选择此**发布**选项。 
 
@@ -290,27 +291,27 @@ Azure 信息保护的记录数据存储在下表中：**InformationProtectionLog
 |-----------|-----------|
 |访问|已成功打开受保护的文档，如果被跟踪，则由文件名标识; 如果未跟踪，则由其标识。|
 |AccessDenied|受保护的文档被拒绝访问，如果被跟踪，则由文件名标识; 如果未跟踪，则由其标识。|
-|Time|事件时间:格式 YYYY-MM-YYYY-MM-DDTHH: MM: SS 中的 UTC|
+|Time|事件时间：格式 YYYY-MM-YYYY-MM-DDTHH： MM： SS 中的 UTC|
 |“用户”|用户：格式 UPN 或 DOMAIN\USER|
 |ItemPath|完整项目路径或电子邮件主题|
 |ItemName|文件名或电子邮件主题 |
-|方法|标签分配方法:手动、自动、建议、默认或强制|
-|activities|审核活动:DowngradeLabel、UpgradeLabel、RemoveLabel、NewLabel、发现、Access、RemoveCustomProtection、ChangeCustomProtection 或 NewCustomProtection |
-|LabelName|标签名称 (未本地化)|
-|LabelNameBefore |更改前的标签名称 (未本地化) |
-|ProtectionType|保护类型 [JSON] <br />{ <br />"Type": ["Template", "Custom", "DoNotForward"], <br />  "TemplateID":"GUID" <br /> } <br />|
+|方法|标签分配方法：手动、自动、建议、默认或强制|
+|activities|审核活动：DowngradeLabel、UpgradeLabel、RemoveLabel、NewLabel、发现、Access、RemoveCustomProtection、ChangeCustomProtection 或 NewCustomProtection |
+|LabelName|标签名称（未本地化）|
+|LabelNameBefore |更改前的标签名称（未本地化） |
+|ProtectionType|保护类型 [JSON] <br />{ <br />"Type": ["Template", "Custom", "DoNotForward"], <br />  "TemplateID"："GUID" <br /> } <br />|
 |ProtectionBefore|更改前的保护类型 [JSON] |
-|InformationTypesMatches|在数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组, 其中空数组表示找不到任何信息类型, null 表示没有可用信息|
-|MachineName |FQDN (如果可用);否则为主机名|
+|InformationTypesMatches|在数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组，其中空数组表示找不到任何信息类型，null 表示没有可用信息|
+|MachineName |FQDN （如果可用）;否则为主机名|
 |DeviceRisk|WDATP 可用时的设备风险评分|
-|平台|设备平台 (Win、OSX、Android、iOS) |
+|平台|设备平台（Win、OSX、Android、iOS） |
 |ApplicationName|应用程序友好名称|
 |AIPVersion|执行审核操作的 Azure 信息保护客户端的版本 |
 |TenantId|Azure AD 租户 ID |
-|AzureApplicationId|Azure AD 注册的应用程序 ID (GUID)|
+|AzureApplicationId|Azure AD 注册的应用程序 ID （GUID）|
 |ProcessName|承载 MIP SDK 的进程|
 |LabelId|标签 GUID 或 null|
-|IsProtected|是否受保护:是/否 |
+|IsProtected|是否受保护：是/否 |
 |ProtectionOwner |UPN 格式的 Rights Management 所有者|
 |LabelIdBefore|更改前标记 GUID 或 null|
 |InformationTypesAbove55|在置信度为55或更高的数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组 |
@@ -318,12 +319,12 @@ Azure 信息保护的记录数据存储在下表中：**InformationProtectionLog
 |InformationTypesAbove75|在置信度为75或更高的数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组 |
 |InformationTypesAbove85|在置信度为85或更高的数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组 |
 |InformationTypesAbove95|在置信度为95或更高的数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组|
-|DiscoveredInformationTypes |在数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组及其匹配的内容 (如果已启用), 其中空数组表示找不到任何信息类型, 空表示无可用信息 |
-|ProtectedBefore|是否在更改之前保护内容:是/否 |
+|DiscoveredInformationTypes |在数据中找到的[SensitiveInformation](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)的 JSON 数组及其匹配的内容（如果已启用），其中空数组表示找不到任何信息类型，空表示无可用信息 |
+|ProtectedBefore|是否在更改之前保护内容：是/否 |
 |ProtectionOwnerBefore|更改前 Rights Management 所有者 |
 |UserJustification|降级或删除标签时的理由|
 |LastModifiedBy|上次修改文件的 UPN 格式的用户。 仅适用于 Office 和 SharePoint Online|
-|LastModifiedDate|格式 YYYY-MM-YYYY-MM-DDTHH: MM: SS 中的 UTC:仅适用于 Office & SharePoint Online |
+|LastModifiedDate|格式 YYYY-MM-YYYY-MM-DDTHH： MM： SS 中的 UTC：仅适用于 Office & SharePoint Online |
 
 
 #### <a name="examples-using-informationprotectionevents"></a>使用 InformationProtectionEvents 的示例
@@ -366,6 +367,6 @@ InformationProtectionEvents
 
 
 ## <a name="next-steps"></a>后续步骤
-查看报表中的信息后, 如果使用的是 Azure 信息保护客户端, 则可以决定更改 Azure 信息保护策略。 有关说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
+查看报表中的信息后，如果使用的是 Azure 信息保护客户端，则可以决定更改 Azure 信息保护策略。 有关说明，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
 
 如果你有 Microsoft 365 订阅，则还可以在 Microsoft 365 合规中心和 Microsoft 365 安全中心中查看标签使用情况。 有关详细信息，请参阅[使用标签分析查看标签使用情况](/Office365/SecurityCompliance/label-analytics)。

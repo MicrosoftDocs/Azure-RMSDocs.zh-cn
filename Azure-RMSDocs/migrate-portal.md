@@ -12,12 +12,12 @@ ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6b3d5355904494a8d9f64783b490ba6f7deb3bc1
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.openlocfilehash: 6340a78d430c387f7a7cf76b9a6474d399b7e98f
+ms.sourcegitcommit: a972099c8a374fbb029a66907bf0f85325359d88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71684404"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71966852"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>曾使用 Azure 经典门户执行的任务
 
@@ -57,7 +57,7 @@ Azure 门户中的新功能：
 
 - 可以将模板转换为标签，以便管理单个对象，而不是独立管理模板和标签。 有关说明，请参阅[将模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)。
 
-- 对其他管理员角色的支持：尽管必须以全局管理员身份登录 Azure 经典门户才能配置 Azure 权限管理，但也可通过使用具有以下任一管理角色的帐户登录 Azure 门户来配置 Azure 信息保护：**全局管理员**、**安全管理员**、**合规性管理员**、**合规性数据管理员**或**Azure 信息保护管理员**。 有关其中每个角色的详细信息，请参阅 Azure Active Directory 文档的[可用角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)部分。
+- 对其他管理员角色的支持：你必须以全局管理员身份登录到 Azure 经典门户才能配置 Azure Rights Management，但你可以登录到 Azure 门户以使用包含符合性的许多其他管理角色管理 Azure 信息保护**管理员**和**符合性数据管理员**。 "[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)" 部分包含支持的角色的完整列表。
 
 用于创建和管理模板的 PowerShell cmdlet 以及用于激活或停用该服务的 PowerShell cmdlet 将继续受支持，不会更改。
 

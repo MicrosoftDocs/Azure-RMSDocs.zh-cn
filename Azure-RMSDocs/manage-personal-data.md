@@ -4,7 +4,7 @@ description: 有关 Azure 信息保护所使用的个人数据的信息以及如
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3e83f11013f60d418f28c58cee10a84915f39ebc
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: d16e6e7f0667f9ac57bf772de272d23838b793e1
+ms.sourcegitcommit: a972099c8a374fbb029a66907bf0f85325359d88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71689224"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71966878"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
 
@@ -218,7 +218,11 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 - **安全管理员**
 
+- **安全读取者**
+
 - **全局管理员**
+
+- **全局读取器**
 
 使用 AIPService 模块（或旧模块，AADRM）查看和指定的个人数据仅可供已分配**Azure 信息保护管理员**、**合规性管理员**、**合规性的用户访问Azure Active Directory 的数据管理员**或**全局管理员**角色，或者保护服务的全局管理员角色。
 

@@ -12,12 +12,12 @@ metadata:
   ms.author: cabailey
   manager: rkarlin
   ms.date: 09/17/2019
-  ms.openlocfilehash: 15c2a7d7fdc458ab522554dd3420ada811791723
-  ms.sourcegitcommit: 28c1de5f9d1426f160f0e0bafcf9f76769e662b6
+  ms.openlocfilehash: 21ec2eb330114c271854c7af29991ca8fc6e4bcb
+  ms.sourcegitcommit: a972099c8a374fbb029a66907bf0f85325359d88
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/30/2019
-  ms.locfileid: "71679168"
+  ms.lasthandoff: 10/04/2019
+  ms.locfileid: "71966800"
 landingContent:
 - title: 关于 Azure 信息保护
   linkLists:
@@ -43,6 +43,8 @@ landingContent:
     links:
     - text: 部署路线图
       url: deployment-roadmap.md
+    - text: 常见方案
+      url: how-to-guides.md
 - title: 自定义客户端
   linkLists:
   - linkListType: how-to-guide

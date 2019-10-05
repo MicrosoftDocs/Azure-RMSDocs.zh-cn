@@ -4,7 +4,7 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/02/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8266e7b6a7883be96571dfd2d493b3eac83bdb7c
-ms.sourcegitcommit: b6c1d2cb23c9d883901791bfadc9c39028ddd8aa
+ms.openlocfilehash: 4222e46b606c9c8de7ee05e5510aa60e5791a9dc
+ms.sourcegitcommit: 7cba3b612b9417ab92d9f002956c78fb97f2a787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71835399"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71959190"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -36,7 +36,7 @@ ms.locfileid: "71835399"
 - 没有分类或标签与 Exchange Online 或 SharePoint Online 集成。
 
 > [!NOTE]
-> 现提供预览：
+> **预览**：
 > - 分类和标签的集中式报告。 有关详细信息，请参阅 [Azure 信息保护的中心报告](reports-aip.md)。
 >
 >**Office 的敏感度标签**：
@@ -46,15 +46,24 @@ ms.locfileid: "71835399"
 
 ## <a name="which-client-do-i-install-for-testing-new-functionality"></a>我应该安装哪个客户端来测试新功能？
 
-目前有两个 Windows 客户端： 
+目前有两个适用于 Windows 的 Azure 信息保护客户端： 
 
 - **Azure 信息保护统一标签客户端**，它从以下管理中心之一下载标签和策略设置：Office 365 安全与合规中心，Microsoft 365 安全中心，Microsoft 365 合规中心。 此客户端现已正式发布，并且可能有一个预览版本，你可以在将来的版本中测试其他功能。
 
 - 用于从 Azure 门户下载标签和策略设置的**Azure 信息保护客户端（经典）** 。 此客户端建立在以前的客户端通用版本上。
 
-如果客户的当前功能集和功能满足你的业务要求，我们建议你与统一的标签客户端进行测试。 否则, 或者如果已在尚未[迁移到统一标签存储](configure-policy-migrate-labels.md)的 Azure 门户中配置了标签, 请使用经典客户端。
+如果客户的当前功能集和功能满足你的业务要求，我们建议你与统一的标签客户端进行测试。 否则，或者如果已在尚未[迁移到统一标签存储](configure-policy-migrate-labels.md)的 Azure 门户中配置了标签，请使用经典客户端。
 
 有关详细信息，包括特性和功能的比较表，请参阅[选择使用哪个 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use)。
+
+## <a name="where-can-i-find-information-about-using-sensitivity-labels-in-office"></a>在哪里可以找到有关在 Office 中使用敏感度标签的信息？
+
+请参阅 Office 文档中的以下资源：
+
+- [如何在 Office 应用中使用敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps)
+
+- [向 Office 中的文档和电子邮件应用敏感度标签](https://support.office.com/article/Apply-sensitivity-labels-to-your-documents-and-email-within-Office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9#ID0EBFAAA=Office_365)
+
 
 ## <a name="can-a-file-have-more-than-one-classification"></a>文件是否可以有多个分类？
 
