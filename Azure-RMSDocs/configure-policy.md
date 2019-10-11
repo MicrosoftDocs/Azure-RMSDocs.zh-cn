@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 858b745987edd73f12bfda903050e84ca97eaacb
-ms.sourcegitcommit: a972099c8a374fbb029a66907bf0f85325359d88
+ms.openlocfilehash: 18e3062de5c4fcdf39b24847b6a23dfe073fe9ec
+ms.sourcegitcommit: be8ccf7248e0e504d73b3cd2f58fb2d0c4455ad3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71966786"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72236824"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
