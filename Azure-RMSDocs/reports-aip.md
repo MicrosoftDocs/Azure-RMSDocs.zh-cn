@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 10/04/2019
+ms.date: 10/14/2019
 manager: rkarlin
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d33650b879939ce4a23efd77b1ac3de6c9f2ad06
-ms.sourcegitcommit: a972099c8a374fbb029a66907bf0f85325359d88
+ms.openlocfilehash: 22ec828b0ee0c6c4719e938383c1952dbf42e33e
+ms.sourcegitcommit: 44f43c8c1d9cb9ff71a6be15e8a799ae4f2b3544
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71966859"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314305"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -155,10 +155,10 @@ Azure 信息保护允许收集和存储标识为敏感信息类型（预定义�
 |要求|详细信息|
 |---------------|--------------------|
 |包含 Log Analytics 且用于与 Azure 信息保护相同的租户的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
-|Azure 信息保护客户端|支持统一标签客户端和经典客户端。 <br /><br />如果你还没有其中的一个客户端，则可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装这些客户端。|
-|Microsoft Cloud App Security |若要显示 Microsoft Cloud App Security 的信息，请配置[Azure 信息保护集成](https://docs.microsoft.com/cloud-app-security/azip-integration)。|
-|对于“发现和风险”报表： <br /><br />-若要显示本地数据存储中的数据，你至少部署了一个 Azure 信息保护扫描程序实例 <br /><br />-若要显示 Windows 10 计算机上的数据，它们必须是1809的最小内部版本，你使用的是 Microsoft Defender 高级威胁防护（Microsoft Defender ATP），并且已启用 Microsoft 的 Azure 信息保护集成功能Defender 安全中心|有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 <br /><br />有关配置和使用 Microsoft Defender 安全中心提供的 Azure 信息保护集成功能的信息，请参阅[Windows 中的信息保护概述](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。|
-|对于“建议”报告： <br /><br />-若要从 Azure 门户添加新的数据存储库作为建议操作，你必须使用在 Azure 门户中配置的 Azure 信息保护扫描程序的版本 |若要部署扫描程序，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。|
+|对于来自标记客户端的报表信息： <br /><br />-Azure 信息保护客户端|支持统一标签客户端和经典客户端。 <br /><br />如果尚未安装，可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装这些客户端。|
+|对于基于云的数据存储中的报表信息： <br /><br />-Microsoft Cloud App Security |若要显示 Microsoft Cloud App Security 的信息，请配置[Azure 信息保护集成](https://docs.microsoft.com/cloud-app-security/azip-integration)。|
+|对于来自本地数据存储区的报表信息： <br /><br />-Azure 信息保护扫描程序 |有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 |
+|对于来自 Windows 10 计算机的报表信息：  <br /><br />-最小内部版本1809与 Microsoft Defender 高级威胁防护（Microsoft Defender ATP）|你必须从 Microsoft Defender 安全中心启用 Azure 信息保护集成功能。 有关详细信息，请参阅[Windows 中的信息保护概述](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。|
 
 ### <a name="permissions-required-for-azure-information-protection-analytics"></a>Azure 信息保护分析必备的先决条件
 

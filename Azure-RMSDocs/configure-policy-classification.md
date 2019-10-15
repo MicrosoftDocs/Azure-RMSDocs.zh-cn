@@ -4,19 +4,19 @@ description: 可以自动将标签分配到文档或电子邮件的条件。 或
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/28/2019
+ms.date: 10/14/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: ce645af880b90c12bed284c0b57d597cfd540fd7
-ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
+ms.openlocfilehash: e8379d001fdfeccbdeace6572d32b9dc88ef088c
+ms.sourcegitcommit: 44f43c8c1d9cb9ff71a6be15e8a799ae4f2b3544
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2019
-ms.locfileid: "71673938"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314286"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
@@ -25,7 +25,7 @@ ms.locfileid: "71673938"
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 > [!NOTE]
-> 这些说明适用于 Azure 信息保护客户端（经典），而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
+> 这些说明适用于 Azure 信息保护客户端（经典版），而不是 Azure 信息保护统一标记客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
 > 
 > 如果你正在寻找有关为统一标签客户端配置自动和建议分类的信息，请参阅 Office 文档。 例如，[自动对内容应用敏感标签](/microsoft-365/compliance/apply-sensitivity-label-automatically)。
 
@@ -50,15 +50,15 @@ ms.locfileid: "71673938"
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>如何应用自动标签或建议的标签
 
-- 自动分类会在保存文档时应用到 Word、Excel 和 PowerPoint，并在发送电子邮件时应用到 Outlook。 
+- 自动分类在保存文档时应用到 Word、Excel 和 PowerPoint，并在发送电子邮件时应用到 Outlook。 
     
     如果文档和电子邮件之前已手动添加标签（或之前已使用更高级别的分类添加标签），则不能使用自动分类。 
 
-- 建议的分类会在保存文档时应用到 Word、Excel 和 PowerPoint。 除非配置当前处于预览阶段的[高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)，否则无法使用建议的 Outlook 分类。
+- 保存文档时，建议的分类适用于 Word、Excel 和 PowerPoint。 除非配置当前处于预览阶段的[高级客户端设置](./rms-client/client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)，否则无法使用建议的 Outlook 分类。
     
     对于之前已设置标签（更高级别的分类标签）的文档，无法使用建议的分类。 
 
-可以更改此行为，以便 Azure 信息保护客户端定期检查文档是否符合指定的条件规则。 此配置需要当前为预览效果的[高级客户端设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)。
+可以更改此行为，以便 Azure 信息保护客户端定期检查文档是否符合指定的条件规则。 例如，如果你对自动保存在 SharePoint Online、OneDrive 或 OneDrive for Business 中的 Office 应用[程序使用自动保存，](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)则这种做法非常合适。 若要支持此方案，可以配置当前处于预览阶段的[高级客户端设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)。 此设置会启用分类，使其在后台连续运行。
 
 ### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>多条件应用到多个标签时的评估方式
 
