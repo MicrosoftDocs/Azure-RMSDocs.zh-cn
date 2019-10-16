@@ -34,7 +34,7 @@ ms.locfileid: "71684246"
 > [!IMPORTANT]
 > 有关支持的版本和其他要求的信息，请参阅[Azure 信息保护的要求](requirements.md)。
 
--   [Office 365：联机服务 @ no__t 的配置-0
+-   [Office 365：联机服务 的配置-0](configure-office365.md)
 
     -   [Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)
 
