@@ -11,23 +11,23 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 67c65fa592bd08fbcdc195793cd8576ef5ed5a25
-ms.sourcegitcommit: 8cd708f3f45d3f49d0c84fc56fec9c7bdcd08ba7
+ms.openlocfilehash: c7ae1a038ab3b499767cc892bd1b99ae27c8dbdc
+ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214125"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72447335"
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-the-azure-information-protection-unified-labeling-client-for-windows"></a>用户指南：使用适用于 Windows 的 Azure 信息保护统一标签客户端对文件或电子邮件进行分类
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8，带 SP1 的 Windows 7
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类（但不保护）。 如果还需对文档和电子邮件进行保护，请参阅[分类和保护说明](clientv2-classify-protect.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
 
-对文档和电子邮件进行分类的最简单方式是在如下 Office 桌面应用中创建和编辑它们：Word、Excel、PowerPoint、Outlook。 
+在 Office 桌面应用（Word、Excel、PowerPoint、Outlook）中创建和编辑文档和电子邮件时对其进行分类最为简单。 
 
 但是，也可使用文件资源管理器对文件进行分类。 此方法支持其他文件类型，它是一次性对多个文件进行分类的便捷方法。 
 
@@ -86,7 +86,7 @@ ms.locfileid: "70214125"
 
 2. 在“分类和保护 - Azure信息保护”对话框中，请像在 Office 应用程序中那样使用标签，这样可以按管理员定义的方式设置分类。 
     
-    如果没有标签可以选择（它们呈灰显状态）：所选的文件不支持分类。 例如：
+    如果无法选择标签（它们显示为灰色），则所选文件不支持分类。 例如：
     
     ![“分类和保护 - Azure 信息保护”对话框中无可用标签](../media/v2info-protect-dialog-labels-dimmed.png)
 
@@ -106,5 +106,5 @@ ms.locfileid: "70214125"
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息
 
-请参阅[敏感度标签概述](/Office365/SecurityCompliance/sensitivity-labels)。
+请参阅[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)。
 

@@ -13,16 +13,16 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6eb9c8755e1b5fb1007c4be23932ea1da1c51fbb
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.openlocfilehash: b7e8d2b2f510a97c01ecf02040a404b11ffdc9be
+ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71683752"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72447000"
 ---
 # <a name="configuring-super-users-for-azure-information-protection-and-discovery-services-or-data-recovery"></a>为 Azure 信息保护和发现服务或数据恢复配置超级用户
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确保已获授权的用户与服务始终可以阅读和检查 Azure Rights Management 为你的组织保护的数据。 如有必要，可以删除或更改保护。
 
@@ -87,7 +87,7 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 虽然可以使用 Unprotect-RMSFile cmdlet 解密 PST 文件中的受保护内容，但请策略性地将此 cmdlet 用作电子数据展示过程的一部分。 在计算机上的大型文件上运行 Unprotect-RMSFile 是资源密集型的（内存和磁盘空间），而此 cmdlet 支持的最大文件大小为 5 GB。
 
-理想情况下，使用 [Office 365 电子数据展示](/office365/securitycompliance/ediscovery)在电子邮件中搜索和提取受保护的电子邮件和受保护的附件。 超级用户功能自动与 Exchange Online 集成，以便 Office 365 安全与合规中心或 Microsoft 365 合规中心中的电子数据展示可以在导出之前搜索加密项目，或在导出时解密加密电子邮件。
+理想情况下，使用 [Office 365 电子数据展示](https://docs.microsoft.com/microsoft-365/compliance/ediscovery)在电子邮件中搜索和提取受保护的电子邮件和受保护的附件。 超级用户功能自动与 Exchange Online 集成，以便 Office 365 安全与合规中心或 Microsoft 365 合规中心中的电子数据展示可以在导出之前搜索加密项目，或在导出时解密加密电子邮件。
 
 如果无法使用 Office 365 电子数据展示，则可能有另一个与 Azure Rights Management 服务集成的电子数据展示解决方案，对数据进行类似推理。 或者，如果你的电子数据展示解决方案无法自动读取和解密受保护的内容，则仍然可以在多步骤过程中使用此解决方案，以便更有效地运行 Unprotect-RMSFile：
 

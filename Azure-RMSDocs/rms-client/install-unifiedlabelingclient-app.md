@@ -1,6 +1,6 @@
 ---
 title: 下载 & 安装 Azure 信息保护统一标签客户端
-description: 用户安装 Azure 信息保护统一标签客户端的说明, 以便你可以对文档和电子邮件进行分类和保护。
+description: 用户安装 Azure 信息保护统一标签客户端的说明，以便你可以对文档和电子邮件进行分类和保护。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
@@ -11,20 +11,20 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 3c92a57864d81a20577ced49ad6346b03617d6a6
-ms.sourcegitcommit: b02dc1b575213ea85ca984a0da457dd99f27b762
+ms.openlocfilehash: 35821798cb77caeabda80d9ca9eb2c23c78704f8
+ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994411"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72447740"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-unified-labeling-client"></a>用户指南：下载并安装 Azure 信息保护统一标签客户端
 
->适用对象： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8，带 SP1 的 Windows 7
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
-如果管理员没有为你安装 Azure 信息保护统一标签客户端, 你可以自行完成此操作。 必须是电脑的本地管理员才可安装此客户端，这样可对文档和电子邮件进行标记和保护。
+如果管理员没有为你安装 Azure 信息保护统一标签客户端，你可以自行完成此操作。 必须是电脑的本地管理员才可安装此客户端，这样可对文档和电子邮件进行标记和保护。
 
 此外：
 
@@ -34,17 +34,17 @@ ms.locfileid: "68994411"
 
 ## <a name="to-download-and-install-the-azure-information-protection-unified-labeling-client"></a>下载并安装 Azure 信息保护统一标签客户端
 
-在安装 Azure 信息保护统一标签客户端之前, 请与管理员或技术支持人员确认你使用的是[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)来分类和保护文档和电子邮件。
+在安装 Azure 信息保护统一标签客户端之前，请与管理员或技术支持人员确认你使用的是[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)来分类和保护文档和电子邮件。
 
 1. 从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载**AzInfoProtection_UL** 。
 
-2. 运行已下载的可执行文件, 如果系统提示你继续, 请单击 **"是"** 。
+2. 运行已下载的可执行文件，如果系统提示你继续，请单击 **"是"** 。
 
 3. 在“安装 Azure 信息保护客户端”页上，阅读完许可条款和条件后，单击“我同意”。
 
 4. 如果系统提示继续操作，请单击“是”，然后等待安装完成。
 
-6. 单击“关闭”。 开始使用 Azure 信息保护统一标签客户端之前：
+6. 单击 **“关闭”** 。 开始使用 Azure 信息保护统一标签客户端之前：
 
     - 如果你的计算机运行 Office 2010，请重启计算机，然后转到下一节完成最后步骤。    
         
@@ -63,7 +63,7 @@ ms.locfileid: "68994411"
 安装已完成，现可使用 Azure 信息保护统一标签客户端来对文档及电子邮件进行标签和保护。
 
 ## <a name="other-instructions"></a>其他说明    
-有关 Azure 信息保护统一标签客户端用户指南的详细操作方法说明:
+有关 Azure 信息保护统一标签客户端用户指南的详细操作方法说明：
 
 - [要执行什么操作？](clientv2-user-guide.md#what-do-you-want-to-do)
 

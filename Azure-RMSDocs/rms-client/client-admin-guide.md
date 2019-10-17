@@ -13,18 +13,18 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cac8377f4eb4a3d4b5678c9d0a976866aadeead8
-ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
+ms.openlocfilehash: c5fec770f3841408ea2eb10f5836329a6b003312
+ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71314128"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72447663"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
->适用范围：*Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
+>*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 如果你负责企业网络上的 Azure 信息保护客户端，或如果你想要获取除了 [Azure 信息保护客户端用户指南](client-user-guide.md)以外的更多技术信息，请使用本指南中的信息。 
 
@@ -69,7 +69,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 ## <a name="should-you-deploy-the-azure-information-protection-client"></a>你是否应该部署 Azure 信息保护客户端？
 
-部署 Azure 信息保护客户端（如果你未[在 Office 365 安全与合规中心中使用敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)，而是使用从 azure 下载的 Azure 信息保护标签以及以下任何一项应用
+部署 Azure 信息保护客户端（如果你未[在 Office 365 安全与合规中心中使用敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)，而是使用从 azure 下载的 Azure 信息保护标签以及以下任何一项应用
 
 - 想要通过从 Office 应用程序（Word、Excel、PowerPoint、Outlook）中选择标签对文档和电子邮件进行分类（或保护）。
 
@@ -103,9 +103,9 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 安装客户端后，请使用“帮助和反馈”选项打开“Microsoft Azure 信息保护”对话框：
 
-- 从 Office 应用程序:在“开始”选项卡上的“保护”组中，依次选择“保护”和“帮助和反馈”。
+- 在 Office 应用程序中：在“**开始**”选项卡上的“**保护**”组中，依次选择“**保护**”和“**帮助和反馈**”。
 
-- 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”。 
+- 在文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“**分类和保护**”和“**帮助和反馈**”。 
 
 #### <a name="help-and-feedback-section"></a>“**帮助和反馈**”部分
 
@@ -174,9 +174,9 @@ Azure 信息保护客户端支持 Office 365 支持的同种语言。 有关这�
 
 安装 Azure 信息保护客户端后，请务必告知用户如何标记文档和电子邮件，并指导用户如何选择适合特定方案的标签。 例如：
 
-- 联机用户指令：[Azure 信息保护用户指南](client-user-guide.md)
+- 联机用户说明：[Azure 信息保护用户指南](client-user-guide.md)
 
-- 下载可自定义的用户指南：[Azure 信息保护最终用户采用指南](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
+- 下载可自定义用户指南：[Azure Information Protection End User Adoption Guide](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)（Azure 信息保护最终用户采用指南）
 
 ## <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>升级和维护 Azure 信息保护客户端
 
@@ -215,9 +215,9 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 3. 通过安装[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)提供的当前正式发布（GA）版本升级 Azure 信息保护客户端。
 
-4. 在 PowerShell 会话中，使用你在步骤 1 中指定的相同配置文件名称运行 Update-AIPScanner 命令。 例如： `Update-AIPScanner –Profile Europe`
+4. 在 PowerShell 会话中，使用你在步骤 1 中指定的相同配置文件名称运行 Update-AIPScanner 命令。 例如：`Update-AIPScanner –Profile Europe`
 
-5. 仅当扫描程序在断开连接的计算机上运行时：现在运行 [Import-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration)，并指定包含导出设置的文件。
+5. 仅当扫描程序在断开连接的计算机上运行时：立即运行[set-aipscannerconfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration)并指定包含导出的设置的文件。
 
 6. 重启 Azure 信息保护扫描程序服务“Azure 信息保护扫描程序”。
 
@@ -248,13 +248,13 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 3. 使用 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) 安装扫描程序，指定新的 SQL Server 实例和配置文件名称。
 
-4. 可选：如果不希望扫描程序重新扫描所有文件，请导出 ScannerFiles 表并将其导入到新数据库中。
+4. 可选：如果不希望扫描程序重新扫描所有文件，请导出 ScannerFiles 表，然后将其导入新数据库。
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>卸载 Azure 信息保护客户端
 
 可使用以下任一选项卸载客户端：
 
-- 使用控制面板卸载程序：单击“Microsoft Azure 信息保护” > “卸载”
+- 使用控制面板卸载程序：单击“**Microsoft Azure 信息保护** > **卸载**”
 
 - 重新运行可执行文件（如 **AzInfoProtection.exe**），并从“修改安装程序”页上，单击“卸载”。 
 

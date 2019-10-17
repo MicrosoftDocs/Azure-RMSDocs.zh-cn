@@ -1,6 +1,6 @@
 ---
 title: Azure 信息保护策略概述
-description: 了解 Azure 信息保护策略中的标签和设置, 并将其下载到 Azure 信息保护客户端。
+description: 了解 Azure 信息保护策略中的标签和设置，并将其下载到 Azure 信息保护客户端。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
@@ -12,23 +12,23 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 77e58423230ea0d5613db7979c81dca97b4ff61a
-ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
+ms.openlocfilehash: 8f7d05ec4696a8b3aa2e1daadc839187eabd9d1e
+ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2019
-ms.locfileid: "71674109"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72447702"
 ---
 # <a name="overview-of-the-azure-information-protection-policy"></a>Azure 信息保护策略概述
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 > [!NOTE]
 > Azure 信息保护策略适用于 Azure 信息保护客户端（经典），而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
 > 
-> 如果正在查找有关敏感度标签的信息，请参阅 Office 文档。 例如，[敏感度标签的概述](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)。
+> 如果正在查找有关敏感度标签的信息，请参阅 Office 文档。 例如，[敏感度标签概述](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。
 
 Azure 信息保护策略包含以下可配置的元素：
     

@@ -13,25 +13,25 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4ffaaf7ed4b7463ba3b24d13434771156e4fbfce
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.openlocfilehash: 625a838039edb3d1bdcc8a7f4c68b5ce9f5ba9dd
+ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71684163"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446981"
 ---
-# <a name="office365-configuration-for-online-services-to-use-the-azure-rights-management-service"></a>Office 365：联机服务使用 Azure Rights Management 服务的配置
+# <a name="office365-configuration-for-online-services-to-use-the-azure-rights-management-service"></a>Office 365：用于联机服务的配置以使用 Azure Rights Management 服务
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
-使用下列部分来帮助你配置 Exchange Online、SharePoint Online 和 OneDrive for business, 以便使用 Azure 信息保护中的 Azure Rights Management 服务。
+使用下列部分来帮助你配置 Exchange Online、SharePoint Online 和 OneDrive for business，以便使用 Azure 信息保护中的 Azure Rights Management 服务。
 
-## <a name="exchangeonline-irm-configuration"></a>Exchange Online:IRM 配置
-有关 Exchange Online 如何与 Azure Rights Management 服务协同工作的信息, 请参阅[Office 应用程序和服务如何支持 azure Rights Management](office-apps-services-support.md)中的 " [Exchange Online 和 exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) " 部分。
+## <a name="exchangeonline-irm-configuration"></a>Exchange Online：IRM 配置
+有关 Exchange Online 如何与 Azure Rights Management 服务协同工作的信息，请参阅[Office 应用程序和服务如何支持 azure Rights Management](office-apps-services-support.md)中的 " [Exchange Online 和 exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) " 部分。
 
 为了使用 Azure 权限管理服务，可能已启用 Exchange Online。 要进行检查，请运行以下命令：
 
-1. 如果这是你第一次在计算机上使用 Windows PowerShell for Exchange Online，必须配置 Windows PowerShell 以运行签名的脚本。 使用“以管理员身份运行”选项启动 Windows PowerShell 会话，然后键入 ：
+1. 如果这是你第一次将 Windows PowerShell 用于你计算机上的 Exchange Online，则必须配置 Windows PowerShell 以运行签名脚本。 使用“以管理员身份运行”选项启动 Windows PowerShell 会话，然后键入 ：
     
         Set-ExecutionPolicy RemoteSigned
     
@@ -69,11 +69,11 @@ ms.locfileid: "71684163"
     ```
     例如：<strong>Test-IRMConfiguration -Sender  adams@contoso.com</strong>
     
-    此命令将运行一系列检查，包括验证与服务的连接，检索配置，检索 URI、许可证和任何模板。 在 Windows PowerShell 会话中, 如果所有内容都通过了这些检查, 你将看到每个和结束的结果:**总体结果: 通过**
+    此命令将运行一系列检查，包括验证与服务的连接，检索配置，检索 URI、许可证和任何模板。 在 Windows PowerShell 会话中，你将看到每一项的结果并在结束时看到是否所有内容均已通过这些检查： **总体结果：通过**
 
 在启用 Exchange Online 以使用 Azure Rights Management 服务后，可以配置自动应用信息保护的功能，如[电子邮件流规则](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8)、[数据丢失防护 (DLP) 策略](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx)和[受保护的语音邮件](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx)（统一消息）。
 
-## <a name="sharepointonline-and-onedrive-for-business-irm-configuration"></a>SharePoint Online 和 OneDrive for business:IRM 配置
+## <a name="sharepointonline-and-onedrive-for-business-irm-configuration"></a>SharePoint Online 和 OneDrive for Business：IRM 配置
 
 若要了解如何将 SharePoint Online IRM 与 Azure 权限管理服务配合使用，请参阅本文档的“Rights Management 保护”部分中的 [SharePoint Online 和 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server)。
 
@@ -84,7 +84,7 @@ ms.locfileid: "71684163"
 
 若要为 SharePoint Online 启用信息权限管理 (IRM) 服务，请参阅 Office 文档中的以下说明：
 
-- [在 SharePoint 管理中心设置信息权限管理 (IRM)](/office365/securitycompliance/set-up-irm-in-sp-admin-center)
+- [在 SharePoint 管理中心设置信息权限管理 (IRM)](https://docs.microsoft.com/microsoft-365/compliance/set-up-irm-in-sp-admin-center)
 
 由 Office 365 管理员进行此配置。
 
@@ -129,7 +129,7 @@ ms.locfileid: "71684163"
 
 3. 在计算机上复制以下脚本的内容，并将文件命名为 Set-IRMOnOneDriveForBusiness.ps1。
 
-   &#42;&#42;免责声明&#42;&#42;：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
+   *&#42;&#42;免责声明&#42;&#42;* ：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
 
    ```
    # Requires Windows PowerShell version 3
@@ -518,7 +518,7 @@ ms.locfileid: "71684163"
 
    5. 搜索 `ADMIN INSTRUCTIONS`。 如果你没有更改此节，则将为 IRM 配置用户的 OneDrive for Business，其中策略标题为“受保护的文件”，说明为“此策略限制授权用户的访问权限”。  将不会设置任何其他 IRM 选项，这可能适用于大多数环境。 然而，你可以更改建议的策略标题和说明，也可以添加适合你的环境的任何其他 IRM 选项。 参见脚本中注释的示例可帮助你构造你自己的一组 Set-IrmConfiguration 命令参数。
 
-5. 保存该脚本并为其签名。 如果你未为脚本签名（更安全），则必须在计算机上配置 Windows PowerShell 才能运行未签名的脚本。 为此，请使用“以管理员身份运行”选项运行 Windows PowerShell 会话，然后键入：Set-ExecutionPolicy Unrestricted 但是，此配置将允许所有未签名的脚本运行（较不安全）。
+5. 保存该脚本并为其签名。 如果你未为脚本签名（更安全），则必须在计算机上配置 Windows PowerShell 才能运行未签名的脚本。 为此，使用“以管理员身份运行”选项运行 Windows PowerShell 会话，然后键入 **Set-ExecutionPolicy Unrestricted**。 但是，此配置将允许所有未签名的脚本运行（较不安全）。
 
    有关为 Windows PowerShell 脚本签名的详细信息，请参阅 PowerShell 文档库中的 [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) 。
 
@@ -527,7 +527,7 @@ ms.locfileid: "71684163"
 > [!TIP]
 > 你还可以使用此脚本为 SharePoint Online 库配置 IRM。 对于此配置，你可能希望启用附加选项“不允许用户上传不支持 IRM 的文档”，以确保库只包含受保护的文档。    为此，请将 `-IrmReject` 参数添加到脚本中的 Set-IrmConfiguration 命令。
 >
-> 你还需要`$webUrls`修改变量 (例如, **https:\//contoso.sharepoint.com**) 和`$listTitle`变量 (例如 **$Reports**)。
+> 还需要修改 @no__t 变量（例如， **https： \//contoso.** ）和 `$listTitle` 变量（例如， **$Reports**）。
 
 如果需要对用户的 OneDrive for Business 库禁用 IRM，请参阅[对 OneDrive for Business 禁用 IRM 的脚本](#script-to-disable-irm-for-onedrive-for-business)部分。
 
@@ -536,7 +536,7 @@ ms.locfileid: "71684163"
 
 此脚本还需要 [SharePoint Online 客户端组件 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=42038) 和 [SharePoint Online 命令行管理程序](https://www.microsoft.com/en-us/download/details.aspx?id=35588)。 按照相同的说明复制并粘贴它，在本地保存文件（例如，“Report-OneDriveForBusinessSiteInfo.ps1”），和前面一样修改 `$sharepointAdminCenterUrl` 和 `$tenantAdmin` 值，然后运行该脚本。
 
-&#42;&#42;免责声明&#42;&#42;：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
+*&#42;&#42;免责声明&#42;&#42;* ：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
 
 ```
 # Requires Windows PowerShell version 3
@@ -761,7 +761,7 @@ $oneDriveForBusinessSiteUrls | Out-File -FilePath $reportName
 
 此脚本还需要 [SharePoint Online 客户端组件 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=42038) 和 [SharePoint Online 命令行管理程序](https://www.microsoft.com/en-us/download/details.aspx?id=35588)。 复制并粘贴内容，本地保存文件（例如，“Disable-IRMOnOneDriveForBusiness.ps1”），并修改 `$sharepointAdminCenterUrl` 和 `$tenantAdmin` 值。 手动指定 OneDrive for Business URL，或者使用上一节中的脚本以便可以导入这些 URL，然后运行该脚本。
 
-&#42;&#42;免责声明&#42;&#42;：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
+*&#42;&#42;免责声明&#42;&#42;* ：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
 
 ```
 # Requires Windows PowerShell version 3

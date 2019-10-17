@@ -11,27 +11,27 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 99c4e92d61e2a0b652432de85b806568710f56fa
-ms.sourcegitcommit: 8cd708f3f45d3f49d0c84fc56fec9c7bdcd08ba7
+ms.openlocfilehash: 716431c3f36876b1a3b1bcf19c93da9c606a7e83
+ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214049"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448044"
 ---
-# <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：利用 Azure 信息保护统一标签客户端进行分类和保护
+# <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端进行分类和保护
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8，带 SP1 的 Windows 7
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类和保护。 如果只需对文档和电子邮件进行分类（但不保护），请参阅[仅分类说明](clientv2-classify.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
 
-在 Office 桌面应用中创建和编辑文档和电子邮件时对其进行分类和保护最为简单：Word、Excel、PowerPoint、Outlook。 
+在 Office 桌面应用中（**Word**、**Excel**、**PowerPoint**、**Outlook**）创建和编辑文档和电子邮件时对其进行分类和保护最为简单。 
 
 但是，还可以使用文件资源管理器对文件进行分类和保护。 此方法支持其他文件类型，此方法是一种一次性对多个文件进行分类和保护的便捷方法。 此方法支持保护 Office 文档、PDF 文件、文本和图像文件，以及各种其他文件。 
 
-如果标签将保护应用于文档，则受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 这些位置不支持受保护文件的以下内容：共同创作、Office 网站、搜索、文档预览、缩略图和电子数据展示。
+如果标签将保护应用于文档，则受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 对于受保护的文件，这些位置不支持以下内容：共同创作、Office for web、搜索、文档预览、缩略图和电子数据展示。
 
 ### <a name="safely-share-a-file-with-people-outside-your-organization"></a>与组织外部人员安全共享文件
 
@@ -54,7 +54,7 @@ ms.locfileid: "70214049"
 
 ![Azure 信息保护栏示例](../media/info-protect-barv2-not-set-callout.png)
 
-若要设置标签，例如 "**机密** \ **全部雇员**"，请选择 "**机密**"，然后选择 "**所有员工**"。 如果你不确定要将哪种标签应用于当前文档或电子邮件，请使用标签工具提示详细了解每种标签及其应用情况。
+若要设置标签，例如 "**机密** \ **所有雇员**"，请选择 "**机密**" 和 "**所有雇员**"。 如果你不确定要将哪种标签应用于当前文档或电子邮件，请使用标签工具提示详细了解每种标签及其应用情况。
 
 如果已将某种标签应用于文档，并且想要进行更改，可以选择其他标签。 如果已显示 Azure 信息保护栏，并且标签未显示在要选择的栏上，请首先单击当前标签值旁边的 "**编辑标签**" 图标。
 
@@ -105,7 +105,7 @@ ms.locfileid: "70214049"
 
 分类和保护会自动排除一些文件，因为更改这些文件可能会导致电脑停止运行。 尽管你可以选择这些文件，但系统会将其作为排除的文件夹或文件跳过。 示例包括可执行文件和你的 Windows 文件夹。
 
-管理员指南包含受支持文件类型的完整列表以及自动排除的文件和文件夹的完整列表：[Azure 信息保护统一标签客户端支持的文件类型](clientv2-admin-guide-file-types.md)。
+管理员指南包含受支持的文件类型的完整列表以及自动排除的文件和文件夹： [Azure 信息保护统一标签客户端支持的文件类型](clientv2-admin-guide-file-types.md)。
 
 
 ### <a name="to-classify-and-protect-a-file-by-using-file-explorer"></a>使用文件资源管理器对文件进行分类和保护
@@ -116,7 +116,7 @@ ms.locfileid: "70214049"
 
 2. 在“分类和保护 - Azure信息保护”对话框中，请像在 Office 应用程序中那样使用标签，这样可以按管理员定义的方式设置分类和保护。 
 
-   - 如果没有标签可以选择（它们呈灰显状态）：所选文件不支持分类，但可以通过自定义权限保护它（步骤 3）。 例如：
+   - 如果无法选择标签（它们显示为灰色）：则所选文件不支持分类，但你可以通过自定义权限保护它（步骤 3）。 例如：
 
      ![“分类和保护 - Azure 信息保护”对话框中无可用标签](../media/v2info-protect-dialog-labels-dimmed.png)
 
@@ -126,13 +126,13 @@ ms.locfileid: "70214049"
 
 4. 如果已选择自定义权限选项，此时指定以下项：
 
-   - **选择权限**：在保护所选文件时选择希望用户具有的访问级别。
+   - **选择权限**：选择你希望用户在保护所选文件时具有的访问级别。
     
-   - **选择用户、组或组织**：指定应对文件具有选定权限的人员。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 
+   - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 
     
      或者，可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
         
-    - **过期访问**：仅为时间敏感的文件选择此选项，以使指定的人员无法在设置日期后打开选定的一个或哪些文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
+    - **过期访问**：仅为时间敏感的文件选择此选项，以使指定的人员无法在设置日期后打开选定的文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
     
      请注意，如果此设置此前通过 Office 2010 应用的自定义权限配置，则指定到期日期不会显示在此对话框中，但仍然会设置到期日期。 此显示问题仅适用于在 Office 2010 中配置了到期日期的情况。
 
@@ -153,4 +153,4 @@ ms.locfileid: "70214049"
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 
-请参阅[敏感度标签概述](/Office365/SecurityCompliance/sensitivity-labels)。
+请参阅[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)。
