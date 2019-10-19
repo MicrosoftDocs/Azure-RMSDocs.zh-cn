@@ -3,8 +3,8 @@ title: Azure 信息保护客户端-版本历史记录 & 支持策略
 description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的新增功能或改进功能，并了解支持的生命周期策略。
 author: cabailey
 ms.author: cabailey
-manager: barbkess
-ms.date: 09/26/2019
+manager: rkarlin
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,40 +12,41 @@ ms.subservice: v1client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b64e10f93abd89299405e8b4df8e20ca2393616d
-ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
+ms.openlocfilehash: 98861fcabfb6e00edbc0206f3c80a45d6287f70f
+ms.sourcegitcommit: e007bffd33c959124baa5719236981c93947a3e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71314080"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535338"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
->适用范围：*Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
+>*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 
 
 可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式版本和当前预览版（若有）。 
 
-在通常几周的短暂延迟后, 最新的正式发行版也包含在 Microsoft 更新目录中, 产品名称为**Microsoft Azure 信息保护** > **Microsoft Azure 信息保护客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
+在通常几周的短暂延迟后，最新的正式发行版也包含在 Microsoft 更新目录中，产品名称为**Microsoft Azure 信息保护** > **Microsoft Azure 信息保护客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
 
 有关详细信息，请参阅[升级和维护 Azure 信息保护客户端](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)。
 
 > [!TIP]
-> 对使用 Azure 信息保护统一标签客户端感兴趣, 因为标签是从 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心发布的？ 从 Microsoft 下载中心下载并安装统一标签客户端时, 可以将 Azure 信息保护客户端升级到此[统一的标签客户端](unifiedlabelingclient-version-release-history.md)。
+> 对使用 Azure 信息保护统一标签客户端感兴趣，因为标签是从 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心发布的？ 从 Microsoft 下载中心下载并安装统一标签客户端时，可以将 Azure 信息保护客户端升级到此[统一的标签客户端](unifiedlabelingclient-version-release-history.md)。
 
 ### <a name="servicing-information-and-timelines"></a>维护信息和日程表
 
-在发布新的通用版本 (GA) 前，原有的 Azure 信息保护客户端的支持期限最多为六个月。 除了此部分, 文档不包含有关不支持的客户端版本的信息。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
+在发布新的通用版本 (GA) 前，原有的 Azure 信息保护客户端的支持期限最多为六个月。 除了此部分，文档不包含有关不支持的客户端版本的信息。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
 
 不应在生产网络上为最终用户部署预览版本。 而是使用最新预览版来查看和试用即将在下一 GA 版本中推出的新功能或修补程序。 仅支持当前预览版。
 
-##### <a name="general-availability-versions-that-are-no-longer-supported"></a>不再支持的常规可用性版本:
+##### <a name="general-availability-versions-that-are-no-longer-supported"></a>不再支持的常规可用性版本：
 
 |客户端版本|发布日期|
 |--------------|-------------|
+|1.41.51.0|2018 年 11 月 27 日|
 |1.37.19.0|2018 年 09 月 17 日|
 |1.29.5.0|2018 年 06 月 26 日|
 |1.27.48.0|2018 年 05 月 30 日|
@@ -59,44 +60,44 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 此页上使用的日期格式为*月/日/年*。
 
-从6/2/2019 开始, Azure 信息保护的标记服务需要使用 TLS 1.2 的连接。
+从6/2/2019 开始，Azure 信息保护的标记服务需要使用 TLS 1.2 的连接。
 
-1\.4.21.0 发行的所有客户端版本03/15/2017 支持 TLS 1.2。 客户端版本**1.3.155.2**、 **1.2.4.0**和**1.1.23.0**不使用 TLS 1.2, 因此无法再下载 Azure 信息保护策略。
+1\.4.21.0 发行的所有客户端版本03/15/2017 支持 TLS 1.2。 客户端版本**1.3.155.2**、 **1.2.4.0**和**1.1.23.0**不使用 TLS 1.2，因此无法再下载 Azure 信息保护策略。
 
 ### <a name="release-history"></a>版本历史
 
 请查看以下信息，了解适用于 Windows 的 Azure 信息保护客户端受支持版本的新增功能或更改之处。 最新版本会最先列出。
 
 > [!NOTE]
-> 小的修补程序不予列出，因此如果遇到 Azure 信息保护客户端相关问题，建议检查它是否已在最新 GA 版本中得到修复。 如果问题仍然存在, 请检查当前预览版本 (如果有)。
+> 小的修补程序不予列出，因此如果遇到 Azure 信息保护客户端相关问题，建议检查它是否已在最新 GA 版本中得到修复。 如果问题仍然存在，请检查当前预览版本（如果有）。
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
 ## <a name="version-153100"></a>版本1.53.10。0
 
-**发布日期**：07/15/2019
+**发布**日期：07/15/2019
 
 此版本包括 RMS 客户端的 MSIPC 版本1.0.3889.0419。
 
 **新功能：**
 
-- 新的高级客户端设置若要从策略设置 "**所有文档和电子邮件**" 中免除 Outlook 邮件, 必须具有标签。 [详细信息](client-admin-guide-customizations.md#exempt-outlook-messages-from-mandatory-labeling)
+- 新的高级客户端设置若要从策略设置 "**所有文档和电子邮件**" 中免除 Outlook 邮件，必须具有标签。 [详细信息](client-admin-guide-customizations.md#exempt-outlook-messages-from-mandatory-labeling)
 
-- 新的高级客户端设置, 用于进一步自定义在 Outlook 中实现弹出消息的设置, 警告、调整或阻止发送电子邮件。 使用这一新的高级设置, 你可以为不带附件的电子邮件设置不同的操作。 [详细信息](client-admin-guide-customizations.md#to-specify-a-different-action-for-email-messages-without-attachments)
+- 新的高级客户端设置，用于进一步自定义在 Outlook 中实现弹出消息的设置，警告、调整或阻止发送电子邮件。 使用这一新的高级设置，你可以为不带附件的电子邮件设置不同的操作。 [详细信息](client-admin-guide-customizations.md#to-specify-a-different-action-for-email-messages-without-attachments)
 
 **修补程序**：
 
-- 使用文件资源管理器时, 右键单击以标记单独应用了保护的文件, 将保留该保护。 例如, 用户对文件应用了自定义权限。
+- 使用文件资源管理器时，右键单击以标记单独应用了保护的文件，将保留该保护。 例如，用户对文件应用了自定义权限。
 
-- 如果将具有为用户定义的权限配置的标签的电子邮件线程上的 "不转发" 选项替换为 "不转发", 则原始收件人仍可打开电子邮件。
+- 如果将具有为用户定义的权限配置的标签的电子邮件线程上的 "不转发" 选项替换为 "不转发"，则原始收件人仍可打开电子邮件。
 
-- 在下面的方案中, 用户将不再在标签工具提示中看到标签自动设置的标签:用户接收到一个受保护的电子邮件, 其中附加了未标记但自动保护的文档。 当发件人来自同一组织的用户打开文档时, 保护设置的相应标签将应用到该文档。
+- 在下面的方案中，用户将不再在标签工具提示中看到标签自动设置的内容：用户接收附加了未标记但自动保护的文档的受保护电子邮件。 当发件人来自同一组织的用户打开文档时，保护设置的相应标签将应用到该文档。
 
-- 运行[protect-rmsfile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 的最小[使用权限](../configure-usage-rights.md#usage-rights-and-descriptions)现在为**另存为、导出**(导出), 而不是**复制**(提取)。
+- 运行[protect-rmsfile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 的最小[使用权限](../configure-usage-rights.md#usage-rights-and-descriptions)现在为**另存为、导出**（导出），而不是**复制**（提取）。
 
 ## <a name="version-1482040"></a>版本1.48.204。0
 
-**发布日期**：04/16/2019
+**发布**日期：04/16/2019
 
 支持，01/15/2020
 
@@ -104,11 +105,11 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 **新功能：**
 
-- Azure 信息保护扫描程序现在是从 Azure 门户配置的, 而不是使用 PowerShell 进行配置。
+- Azure 信息保护扫描程序现在是从 Azure 门户配置的，而不是使用 PowerShell 进行配置。
     
     如果要从扫描程序的正式发布版本升级，则升级过程与以前的版本不同，因此请务必阅读[升级 Azure 信息保护扫描程序](client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。
 
-- 在指定配置文件名称时, 扫描器现在支持同一 SQL server 实例上的多个配置数据库。
+- 在指定配置文件名称时，扫描器现在支持同一 SQL server 实例上的多个配置数据库。
 
 - 支持以下有助于识别文档和电子邮件中的凭据的敏感信息类型：
     - Azure 服务总线连接字符串
@@ -129,13 +130,13 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 新的高级客户端设置，在 Outlook 中实现弹出消息，可以针对正在发送的电子邮件发出警告、进行验证或阻止。 [详细信息](client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
     
-    请注意, 如果为预览版本配置了 OutlookCollaborationTrustedDomains 的高级客户端属性, 则此设置现在将替换为三个新设置, 因此, 每个操作都可以免除域:OutlookWarnTrustedDomains、OutlookJustifyTrustedDomains 和 OutlookBlockTrustedDomains。
+    请注意，如果为预览版本配置了 OutlookCollaborationTrustedDomains 的 "高级客户端" 属性，则此设置现在将被三个新设置替换，因此，每个操作都可以免除域： OutlookWarnTrustedDomains、OutlookJustifyTrustedDomains 和 OutlookBlockTrustedDomains。
 
 - 如果使用 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 标记和保护文件，则可以使用 *EnableTracking* 参数将文件注册到文档跟踪站点。 [详细信息](client-admin-guide-document-tracking.md#using-powershell-to-register-labeled-documents-with-the-document-tracking-site)
 
 - 用于[Azure 信息保护分析](../reports-aip.md)的新高级客户端设置，用于在 Azure 门户中选中此复选框，以使用户能够更深入地分析敏感数据，从而防止为一部分用户发送信息类型匹配项。 此设置适用于客户端和扫描仪。 [详细信息](client-admin-guide-customizations.md#disable-sending-information-type-matches-for-a-subset-of-users)
 
-- 新的高级客户端设置，仅当将策略设置配置为不显示自定义权限时才适用：当有一个文件受自定义权限保护时，请在文件资源管理器中显示自定义权限选项，以便用户可以查看和更改它们（如果他们具有更改保护设置的权限）。 [详细信息](client-admin-guide-customizations.md#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer)
+- 仅在将策略设置配置为不显示自定义权限时适用的新高级客户端设置：当存在使用自定义权限保护的文件时，在文件资源管理器中显示 "自定义权限" 选项，以便用户可以查看并更改它们（如果他们有权更改保护设置）。 [详细信息](client-admin-guide-customizations.md#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer)
 
 
 **修补程序**：
@@ -155,12 +156,12 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 - 当使用高级客户端设置设置一个 [Outlook 默认标签](client-admin-guide-customizations.md#set-a-different-default-label-for-outlook)时，可以应用一个具有子标签的父标签，当为用户禁用所有这些子标签时，可使用父标签。
 
 - 如果使用[策略设置](../configure-policy-settings.md) 对于带有附件的电子邮件消息，会应用与这些附件的最高级别分类匹配的标签，并且将具有最高级别分类的标签配置为用户定义的权限，之前的结果是将标签应用于电子邮件，但没有应用保护。 现在：
-    - 当标签的用户定义权限包括 Outlook 时（不要转发）：将该标签及其“不要转发”保护应用于电子邮件。
-    - 标签的用户定义权限仅适用于 Word、Excel、PowerPoint 和文件资源管理器：请勿应用标签，也不对电子邮件应用任何保护。
+    - 如果标签的用户定义权限包括 Outlook （不要转发）：应用该标签，并且它不会将保护转发到电子邮件。
+    - 如果标签的用户定义权限仅适用于 Word、Excel、PowerPoint 和文件资源管理器：请不要应用标签，也不要将任何保护应用于电子邮件。
 
 **其他变化：**
 
-- 为建议或自动分类配置的标签[不再支持](../configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client)以下敏感信息类型:
+- 为建议或自动分类配置的标签[不再支持](../configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client)以下敏感信息类型：
     - 欧盟电话号码
     - 欧盟 GPS 坐标
 
@@ -177,57 +178,12 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 默认情况下，Azure 信息保护扫描程序不再排除 .zip 文件。 若要检查和标记 .zip 文件，请参阅管理员指南的[检查 .zip 文件](client-admin-guide-file-types.md#to-inspect-zip-files)部分。
 
-- [策略设置](../configure-policy-settings.md)“用户必须提供设置较低分类标签、删除标签或删除保护的理由”不再适用于扫描程序。 当你在 scanner 配置文件中配置设置 "重新**标记文件**", 然后选中 "**允许标签降级**" 复选框时, 扫描程序会执行这些操作。
-
-## <a name="version-141510"></a>版本 1.41.51.0
-
-**发布日期**：2018 年 11 月 27 日
-
-支持, 10/16/2019
-
-此版本包括 RMS 客户端的 MSIPC 1.0.3592.627 版本。
-
-**新功能：**
-
-- 现在 Azure 信息保护客户端默认为使用 PDF 加密 ISO 标准保护 PDF 文件。 之前需要使用高级客户端设置启用此支持。
-    
-    若想要将客户端还原为使用 .ppdf 文件扩展名保护 PDF 文件，请使用相同的[高级客户端设置](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)，但指定“False”。
-
-- 使用 Azure 信息保护分析来审核对[中央报表](../reports-aip.md)的数据支持。 此信息包括标签用法，可帮助你监视标签的使用方式以及用户对标记文档和电子邮件的访问权限。
-
-- Excel 现在还支持使用不同颜色的[视觉标记](../configure-policy-markings.md)。
-
-- 对于现有 S/MIME 部署，新增了以下高级客户端设置：将标签配置为在 Outlook 中自动应用 S/MIME 保护。 [详细信息](client-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
-
-- 新增了高级客户端设置，作为通过编辑注册表来阻止对[已断开连接计算机](client-admin-guide-customizations.md#support-for-disconnected-computers)显示 Azure 信息保护服务登录提示的替代方法。
-
-- 新增了高级客户端设置，用于在使用以下策略设置时[支持子标签的顺序](client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments)：
-    - **对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签**
-
-**修补程序**：
-
-- Azure 信息保护客户端不再对文件资源管理器（右键单击）和 PowerShell 命令排除 .msg、.rar 和 .zip 文件扩展名。 不过，扫描程序仍默认排除这些文件扩展名。 
-
-- 当你使用文件资源管理器（右键单击）时，Azure 信息保护客户端可以取消保护多个文件（选择多个文件或一个包含受保护文件的文件夹）。
-
-- 对于 Excel：
-    
-    - 如果你在编辑单元格时保存电子表格，系统现在会应用视觉标记。
-    
-    - Excel 2010：如果是使用共同创作[权限级别](../configure-usage-rights.md#rights-included-in-permissions-levels)来保护电子表格的，现在可以在右键单击文件并选择“分类和保护”时使用“删除标签”按钮。
-
-- 可以[从其他标记解决方案中删除页眉和页脚](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)的高级客户端设置现在支持自定义布局。
-
-**其他变化：**
-
-- 如果扫描程序的日程安排设置为“始终”，两次扫描之间现在有 30 秒延迟。
-
-- 当扫描程序标记的文件已受到保护时，它不再更改该文件的 Rights Management 所有者。
+- [策略设置](../configure-policy-settings.md)“用户必须提供设置较低分类标签、删除标签或删除保护的理由”不再适用于扫描程序。 当**你在 scanner 配置文件中配置**设置 "重新**标记文件**"，然后选中 "**允许标签降级**" 复选框时，扫描程序会执行这些操作。
 
 ## <a name="next-steps"></a>后续步骤
 
 有关安装和使用客户端的详细信息： 
 
-- 面向用户：[下载并安装客户端](install-client-app.md)
+- 用户请参阅：[下载并安装客户端](install-client-app.md)
 
-- 面向管理员：[Azure 信息保护客户端管理员指南](client-admin-guide.md)
+- 管理员请参阅：[Azure 信息保护客户端管理员指南](client-admin-guide.md)
