@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: 4c8a22670a7e76a8e949b8cbdc0fcfb947282a7d
-ms.sourcegitcommit: 437143e1f7f33aba46ffcc3900c31a763a2105c8
+ms.openlocfilehash: 9e4899d918701d59f5fc14db9264d1f983c9df60
+ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71227800"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72447684"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 
@@ -193,5 +193,5 @@ ms.locfileid: "71227800"
     - [如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)
 
 - 对于统一标签客户端：
-    - [将敏感度标签自动应用到内容](https://docs.microsoft.com/Office365/SecurityCompliance/apply_sensitivity_label_automatically)
-    - [通过在敏感度标签中使用加密来限制对内容的访问](https://docs.microsoft.com/Office365/SecurityCompliance/encryption-sensitivity-labels)
+    - [将敏感度标签自动应用到内容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+    - [通过在敏感度标签中使用加密来限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
