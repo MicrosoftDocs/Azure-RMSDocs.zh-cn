@@ -12,12 +12,12 @@ metadata:
   ms.author: cabailey
   manager: rkarlin
   ms.date: 09/17/2019
-  ms.openlocfilehash: 21ec2eb330114c271854c7af29991ca8fc6e4bcb
-  ms.sourcegitcommit: a972099c8a374fbb029a66907bf0f85325359d88
+  ms.openlocfilehash: d742e972ab50a297641de26723f05b4129806ca0
+  ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/04/2019
-  ms.locfileid: "71966800"
+  ms.lasthandoff: 10/23/2019
+  ms.locfileid: "72805486"
 landingContent:
 - title: 关于 Azure 信息保护
   linkLists:
@@ -58,7 +58,7 @@ landingContent:
   - linkListType: overview
     links:
     - text: 比较客户端
-      url: ./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use
+      url: ./rms-client/use-client.md#choose-which-labeling-client-to-use-for-windows-computers
   - linkListType: how-to-guide
     links:
     - text: 迁移 Azure 信息保护标签
