@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1f568c3bf2a2e6cd9b94b0a7a8bd9a49b35c4958
-ms.sourcegitcommit: ef57eb7896cf0aeb592f5e8ab37452f1e95aa20d
+ms.openlocfilehash: 8e2b6d0b3e0436800cd73959107bd544dae348b0
+ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72542357"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805608"
 ---
 # <a name="admin-guide-azure-information-protection-unified-labeling-client-files-and-client-usage-logging"></a>管理员指南： Azure 信息保护统一标签客户端文件和客户端使用情况日志记录
 
@@ -34,9 +34,14 @@ ms.locfileid: "72542357"
 
 - 对于 32 位操作系统： **\Program Files\Microsoft Azure Information Protection**
 
-客户端日志文件：
+客户端日志文件和当前安装的策略文件：
 
-- 对于64位和32位操作系统： **%localappdata%\Microsoft\MSIP\Logs**
+- 对于 64 位和 32 位操作系统： **%localappdata%\Microsoft\MSIP**
+
+
+## <a name="usage-logging-for-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护统一标签客户端的使用情况日志记录
+
+统一标签客户端不会将用户活动记录到本地 Windows 事件日志中。 相反，请使用 Azure 信息保护的[中心报表](../reports-aip.md)功能。 
 
 
 ## <a name="next-steps"></a>后续步骤

@@ -12,16 +12,16 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4222e46b606c9c8de7ee05e5510aa60e5791a9dc
-ms.sourcegitcommit: 7cba3b612b9417ab92d9f002956c78fb97f2a787
+ms.openlocfilehash: 7de86d9f6f21ac9dd7839793d02b97b394930f1a
+ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71959190"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805510"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 遇到有关 Azure 信息保护的专门与分类和标签有关的问题？  请查看此处是否有答案。 
 
@@ -48,13 +48,13 @@ ms.locfileid: "71959190"
 
 目前有两个适用于 Windows 的 Azure 信息保护客户端： 
 
-- **Azure 信息保护统一标签客户端**，它从以下管理中心之一下载标签和策略设置：Office 365 安全与合规中心，Microsoft 365 安全中心，Microsoft 365 合规中心。 此客户端现已正式发布，并且可能有一个预览版本，你可以在将来的版本中测试其他功能。
+- **Azure 信息保护统一标签客户端**，它从以下管理中心之一下载标签和策略设置： Office 365 安全与合规中心、Microsoft 365 安全中心、Microsoft 365 符合性中心。 此客户端现已正式发布，并且可能有一个预览版本，你可以在将来的版本中测试其他功能。
 
 - 用于从 Azure 门户下载标签和策略设置的**Azure 信息保护客户端（经典）** 。 此客户端建立在以前的客户端通用版本上。
 
 如果客户的当前功能集和功能满足你的业务要求，我们建议你与统一的标签客户端进行测试。 否则，或者如果已在尚未[迁移到统一标签存储](configure-policy-migrate-labels.md)的 Azure 门户中配置了标签，请使用经典客户端。
 
-有关详细信息，包括特性和功能的比较表，请参阅[选择使用哪个 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use)。
+有关详细信息，包括特性和功能的比较表，请参阅[选择使用哪个 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。
 
 ## <a name="where-can-i-find-information-about-using-sensitivity-labels-in-office"></a>在哪里可以找到有关在 Office 中使用敏感度标签的信息？
 
@@ -91,7 +91,7 @@ ms.locfileid: "71959190"
 
 ## <a name="can-i-create-a-document-template-that-automatically-includes-the-classification"></a>我能否创建自动包含分类的文档模板？
 
-是。 可以将标签配置为，[应用包含标签名称的页眉或页脚](configure-policy-markings.md)。 但如果不满足你的要求，只针对 Azure 信息保护客户端（经典），可以创建一个具有所需格式的文档模板，然后将分类添加为字段代码。 
+适用。 可以将标签配置为，[应用包含标签名称的页眉或页脚](configure-policy-markings.md)。 但如果不满足你的要求，只针对 Azure 信息保护客户端（经典），可以创建一个具有所需格式的文档模板，然后将分类添加为字段代码。 
 
 例如，文档的页眉中可能有一个显示分类的表。 或者，对引用文档分类的简介使用具体的字词。
 

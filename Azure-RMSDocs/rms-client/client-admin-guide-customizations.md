@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 03793c18accb1d3728a25f95012255431b8b83c6
-ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
+ms.openlocfilehash: a4a507423ed0a06627fcf5e28bb053d622ca252f
+ms.sourcegitcommit: b1ca785ae8ea5a91393a1602aded899be1951b2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72447681"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72811185"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -492,7 +492,7 @@ User Response: Confirmed
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
 
-仅当具有有效的 [S/MIME 部署](https://docs.microsoft.com/microsoft-365/compliance/s-mime-for-message-signing-and-encryption)，且希望标签自动对电子邮件应用此保护方法（而不是 Azure 信息保护中的权限管理保护）时，才使用此设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
+仅当具有有效的 [S/MIME 部署](https://docs.microsoft.com/exchange/s-mime-for-message-signing-and-encryption)，且希望标签自动对电子邮件应用此保护方法（而不是 Azure 信息保护中的权限管理保护）时，才使用此设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
 
 若要使用此配置，必须为要应用 S/MIME 保护的所有 Azure 信息保护标签都指定“LabelToSMIME”高级客户端设置。 然后，使用以下语法设置每个条目的值：
 

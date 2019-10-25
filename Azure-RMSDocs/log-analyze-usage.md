@@ -14,15 +14,15 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 0052d3474c728518d3acdd9af3ef2d9aae1a2d0a
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71684350"
 ---
 # <a name="logging-and-analyzing-the-protection-usage-from-azure-information-protection"></a>记录和分析 Azure 信息保护中的保护使用情况
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用此信息来帮助你了解如何使用 Azure 信息保护中的保护服务（Azure Rights Management）的使用日志记录。 此保护服务为组织的文档和电子邮件提供数据保护，并可以记录每个请求。 这些请求包括在用户保护文档和电子邮件以及使用此内容时，管理员为该服务执行的操作，以及 Microsoft 操作员为了支持 Azure 信息保护部署而执行的操作。 
 
@@ -110,9 +110,9 @@ Azure 信息保护将日志作为一系列 blob 写入。
 ### <a name="the-blob-format"></a>Blob 格式
 所有 Blob 都采用 W3C 扩展日志格式。 开头是以下两行：
 
-**#Software:RMS**
+**#软件：RMS**
 
-**# 版本：1.1**
+**#版本：1.1**
 
 第一行标识这些是 Azure 信息保护中的保护日志。 第二行标识 Blob 的剩余部分遵循版本 1.1 规范。 我们建议，用于解析这些日志的任何应用程序都应先验证这两行，然后再继续解析 Blob 的剩余部分。
 
@@ -137,7 +137,7 @@ Azure 信息保护将日志作为一系列 blob 写入。
 |     issuer     |    字符串     |                                                                                                                          文档发布者的电子邮件地址。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                          |                       alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com’                       |
 |  template-id   |    字符串     |                                                                                                                    用于保护文档的模板的 ID。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                     |                                               {6d9371a6-4e2d-4e97-9a38-202233fed26e}                                                |
 |   file-name    |    字符串     | 使用适用于 Windows 的 Azure 信息保护客户端跟踪的受保护文档的文件名。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。 |                                                       TopSecretDocument.docx                                                        |
-| date-published |     Date      |                                                                                                                          保护文档时的日期。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                           |                                                         2015-10-15T21:37:00                                                         |
+| date-published |     日期      |                                                                                                                          保护文档时的日期。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                           |                                                         2015-10-15T21:37:00                                                         |
 |     c-info     |    字符串     |                                                                                   有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。                                                                                   | 'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64' |
 |      c-ip      |    Address    |                                                                                                                                                       发出请求的客户端的 IP 地址。                                                                                                                                                        |                                                            64.51.202.144                                                            |
 |  admin-action  |     Bool      |                                                                                                                                    管理员是否已在管理员模式下访问文档跟踪站点。                                                                                                                                    |                                                                True                                                                 |

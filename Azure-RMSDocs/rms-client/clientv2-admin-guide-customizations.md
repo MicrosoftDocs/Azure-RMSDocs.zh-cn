@@ -3,7 +3,7 @@ title: 自定义配置-Azure 信息保护统一标签客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/03/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 95c873af126c9882bcb74790e8e68834149738e8
-ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
+ms.openlocfilehash: e396296e896dad79deaf8caf3474e7297ccd2080
+ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72447823"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805691"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -123,6 +123,7 @@ ms.locfileid: "72447823"
 |EnableCustomPermissions|[在文件资源管理器中禁用自定义权限](#disable-custom-permissions-in-file-explorer)|
 |EnableCustomPermissionsForCustomProtectedFiles|[对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) |
 |EnableLabelByMailHeader|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
+|EnableLabelBySharePointProperties|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)
 |HideBarByDefault|[在 Office 应用程序中显示“信息保护”栏](##display-the-information-protection-bar-in-office-apps)|
 |LogMatchedContent|[向 Azure 信息保护分析发送信息类型匹配项](#send-information-type-matches-to-azure-information-protection-analytics)|
 |OutlookBlockTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
@@ -472,7 +473,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 当弹出消息用于特定标签时，可以按域名为收件人配置例外。
 
 > [!TIP]
-> 有关如何配置这些设置的演练示例，请参阅视频[Azure 信息保护 Outlook 弹出窗口配置](https://azure.microsoft.com/en-us/resources/videos/how-to-configure-azure-information-protection-popup-for-outlook/)。
+> 有关如何配置这些设置的演练示例，请参阅视频[Azure 信息保护 Outlook 弹出窗口配置](https://azure.microsoft.com/resources/videos/how-to-configure-azure-information-protection-popup-for-outlook/)。
 
 ### <a name="to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels"></a>若要针对特定标签实现用于警告、验证或阻止的弹出消息：
 
@@ -655,7 +656,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-在 Office 应用中使用 Azure 信息保护统一标签客户端时，它会在首次保存文档时查找文档中的敏感信息。 **如果**提供[EnableAudit](#disable-sending-audit-data-to-azure-information-protection-analytics) advanced 设置，则不会将任何预定义的和自定义的（仅预览客户端）敏感信息类型发送到[Azure 信息保护分析](../reports-aip.md)。
+在 Office 应用中使用 Azure 信息保护统一标签客户端时，它会在首次保存文档时查找文档中的敏感信息。 **如果**提供[EnableAudit](#disable-sending-audit-data-to-azure-information-protection-analytics) advanced 设置，则不会将任何预定义和自定义的敏感信息类型都发送到[Azure 信息保护分析](../reports-aip.md)。
 
 若要更改此行为，以便不发送统一标签客户端找到的敏感信息类型，请为所选标签策略输入以下字符串：
 
@@ -793,6 +794,22 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
     Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableLabelByMailHeader="True"}
 
+### <a name="extend-your-label-migration-rules-to-sharepoint-properties"></a>将标签迁移规则扩展到 SharePoint 属性
+
+可以将 labelByCustomProperties 高级设置用于 SharePoint 属性，这些属性可能会作为列公开给用户。
+
+使用 Word、Excel 和 PowerPoint 时，支持此设置。
+
+若要配置此高级设置，请为所选标签策略输入以下字符串：
+
+- 密钥： **EnableLabelBySharePointProperties**
+
+- 值：True
+
+示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableLabelBySharePointProperties="True"}
+
 ## <a name="apply-a-custom-property-when-a-label-is-applied"></a>应用标签时应用自定义属性
 
 此配置使用 "标签[高级" 设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
@@ -889,6 +906,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
     Set-Label -Identity "Confidential" -AdvancedSettings @{DefaultSubLabelId="8faca7b8-8d20-48a3-8ea2-0f96310a848e"}
 
+
 ## <a name="specify-a-color-for-the-label"></a>指定标签的颜色
 
 此配置使用必须使用 Office 365 安全与合规中心 PowerShell 配置的标签[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。
@@ -931,6 +949,43 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 你可以使用 "**帮助和反馈**" 中的 "**重置设置**" 选项注销并删除 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 中当前下载的标签和策略设置合规中心。
 
+
+## <a name="support-for-disconnected-computers"></a>对断开连接的计算机的支持
+
+> [!IMPORTANT]
+> 只有以下标签方案支持断开连接的计算机：文件资源管理器、PowerShell 和扫描程序。 若要在 Office 应用中标记文档，你必须连接到 Internet。
+
+默认情况下，Azure 信息保护的统一标签客户端会自动尝试连接到 Internet，以从标记管理中心下载标签和标签策略设置： Office 365 安全与合规中心，Microsoft 365 安全中心或 Microsoft 365 相容性中心。 如果计算机在一段时间内无法连接到 Internet，则可以导出和复制为统一标签客户端手动管理策略的文件。
+
+说明
+
+1. 在 Azure AD 中选择或创建一个用户帐户，你将使用该帐户下载要在断开连接的计算机上使用的标签和策略设置。
+
+2. 作为此帐户的附加标签策略设置，禁用使用**EnableAudit**高级设置将[审核数据发送到 Azure 信息保护分析](#disable-sending-audit-data-to-azure-information-protection-analytics)。
+    
+    建议执行此步骤，因为如果断开连接的计算机进行了定期 Internet 连接，则会将日志记录信息发送到包含步骤1中的用户名的 Azure 信息保护分析。 该用户帐户可能不同于在断开连接的计算机上使用的本地帐户。
+
+3. 在具有 Internet 连接的计算机上安装了具有统一标签的客户端并使用步骤1中的用户帐户登录后，下载标签和策略设置。
+
+4. 在此计算机上，导出日志文件。
+    
+    例如，运行[AIPLogs](https://docs.microsoft.com/powershell/module/azureinformationprotection/export-aiplogs) cmdlet，或使用客户端的 "[帮助和反馈](clientv2-admin-guide.md#installing-and-supporting-the-azure-information-protection-unified-labeling-client)" 对话框中的 "**导出日志**" 选项。 
+    
+    日志文件将作为单个压缩文件导出。
+
+5.  打开压缩文件，然后从 POLICY.MSIP 文件夹中复制任何具有 .xml 文件扩展名的文件。
+
+6. 将这些文件粘贴到断开连接的计算机上的 **%localappdata%\Microsoft\MSIP**文件夹中。
+
+7. 如果你选择的用户帐户通常连接到 Internet，请通过将**EnableAudit**值设置为**True**，再次启用发送审核数据。
+
+8. 对于断开连接的计算机，保护文件、重新保护文件、删除文件保护或检查受保护的文件：在断开连接的计算机上，运行[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) Cmdlet 和*DelegatedUser*参数，并指定步骤1中用于设置用户上下文的用户帐户。 例如：
+    
+        Set-AIPAuthentication -TenantId "9c11c87a-ac8b-46a3-8d5c-f4d0b72ee29a" -DelegatedUser offlineuser@contoso.com
+
+请注意，如果此计算机上的用户从 "[帮助和反馈](clientv2-admin-guide.md#help-and-feedback-section)" 中选择 "**重置设置**" 选项，则此操作将删除策略文件并使客户端无法运行，直到你手动替换文件或客户端连接到 Internet 并下载文件。
+
+如果断开连接的计算机正在运行 Azure 信息保护扫描程序，则必须执行其他配置步骤。 有关详细信息，请参阅[限制：扫描仪服务器无法](../deploy-aip-scanner.md#restriction-the-scanner-server-cannot-have-internet-connectivity)从扫描程序部署说明获得 Internet 连接。
 
 ## <a name="change-the-local-logging-level"></a>更改本地日志记录级别
 

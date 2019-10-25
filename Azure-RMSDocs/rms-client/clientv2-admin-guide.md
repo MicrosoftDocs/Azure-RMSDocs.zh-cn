@@ -4,19 +4,19 @@ description: 适用于企业网络（负责部署适用于 Windows 的 Azure 信
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/26/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4fb1c9ca3800e46ffcf3b8946823e4c43ca9d284
-ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
+ms.openlocfilehash: 1c7458e1e936b464e8f4666911c3f23fb96dd3fe
+ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72447605"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805290"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标签客户端管理员指南
 
@@ -52,7 +52,7 @@ Azure 信息保护统一标签客户端包括以下各项：
 
 - 一个 PowerShell 模块，用于发现文件中的敏感信息，应用或删除分类标签和保护文件。 
     
-    客户端的预览版本包含用于安装和配置在 Windows Server 上作为服务运行的[Azure 信息保护扫描程序](../deploy-aip-scanner.md)的 cmdlet。 此服务允许你发现、分类和保护数据存储中的文件，例如网络共享和 SharePoint 服务器库
+    客户端包括用于安装和配置在 Windows Server 上作为服务运行的[Azure 信息保护扫描程序](../deploy-aip-scanner.md)预览版本的 cmdlet。 此服务允许你发现、分类和保护数据存储中的文件，例如网络共享和 SharePoint 服务器库
 
 - 与保护服务（Azure Rights Management）通信以加密和保护文件的 Rights Management 客户端。
 
@@ -99,7 +99,7 @@ Azure 信息保护统一标签客户端包括以下各项：
 
 仅当指定[高级设置](clientv2-admin-guide-customizations.md#add-report-an-issue-for-users)时，才会显示 "**报告问题**" 链接。 配置此设置时，指定 HTTP 链接，例如支持人员的电子邮件地址。 
 
-如果要求将这些日志文件发送到 Microsoft 支持部门，则**导出日志**会自动收集并附加 Azure 信息保护统一标签客户端的日志文件。 最终用户也可以使用此选项，将这些日志文件发送给你的支持人员。 或者，可以使用[AIPLogs](/powershell/module/azureinformationprotection/export-aiplogs) PowerShell cmdlet （需要预览客户端）。
+如果要求将这些日志文件发送到 Microsoft 支持部门，则**导出日志**会自动收集并附加 Azure 信息保护统一标签客户端的日志文件。 最终用户也可以使用此选项，将这些日志文件发送给你的支持人员。 或者，可以使用[AIPLogs](/powershell/module/azureinformationprotection/export-aiplogs) PowerShell cmdlet。
 
 **重置设置**将注销用户，删除当前下载的敏感度标签和标签策略，并重置 Azure Rights Management 服务的用户设置。
 
@@ -116,7 +116,7 @@ Azure 信息保护统一标签客户端包括以下各项：
     
     - %LocalAppData%\Microsoft\MSIPC
     
-    - %LocalAppData%\Microsoft\MSIP\mip @ no__t-0 *\<processname @ no__t-3*\mip
+    - %LocalAppData%\Microsoft\MSIP\mip\\ *\<ProcessName\>*
     
     - %LocalAppData%\Microsoft\MSIP\AppDetails
     
@@ -164,11 +164,11 @@ Azure 信息保护统一标签客户端支持 Office 365 支持的相同语言�
 
 ## <a name="installing-the-azure-information-protection-scanner"></a>安装 Azure 信息保护扫描程序
 
-统一标签客户端的当前版本的扫描程序处于预览阶段，用于测试。 在此预览版中，请从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)安装统一标签客户端的当前预览版本。
+用于测试的统一标签客户端的扫描程序处于预览阶段。 在此预览版中，请从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)安装统一标签客户端的当前正式发行版。
 
 如果是首次在计算机上安装扫描程序，请下载并安装此客户端，然后按照[部署 Azure 信息保护扫描程序中的说明自动对文件进行分类和保护](../deploy-aip-scanner.md)。
 
-如果要从 Azure 信息保护客户端（经典）升级扫描程序，请参阅[升级 Azure 信息保护扫描程序](#upgrading-the-azure-information-protection-scanner)部分了解相关说明。
+如果要从 Azure 信息保护客户端（经典）或旧版本的统一标签客户端升级扫描程序，请参阅[升级 Azure 信息保护扫描程序](#upgrading-the-azure-information-protection-scanner)部分了解相关说明。
 
 ## <a name="upgrading-and-maintaining-the-azure-information-protection-unified-labeling-client"></a>升级和维护 Azure 信息保护统一标签客户端
 
@@ -179,7 +179,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标签客户端�
 
 如果使用 Windows 更新，则 Azure 信息保护的统一标签客户端将自动升级此客户端的常规可用性版本，而不考虑客户端的安装方式。 新客户端版本会在发布后的几周内发布到目录中。
 
-也可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载新版本，手动升级客户端。 然后，安装新版本来升级客户端。 如果要从 Azure 信息保护客户端进行升级，则必须使用此方法来升级预览版。
+也可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载新版本，手动升级客户端。 然后，安装新版本来升级客户端。 如果要从 Azure 信息保护客户端（经典）升级，则必须使用此方法来升级预览版。
 
 如果要从 Windows 7 上的 Azure 信息保护客户端（经典）进行升级，则在客户端升级过程中，任何 Office 应用程序都将自动重启。 此自动重启不适用于更高版本的操作系统，或者，如果要从统一标签客户端的较旧版本升级。
 
@@ -189,29 +189,43 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标签客户端�
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>升级 Azure 信息保护扫描程序
 
+用于升级扫描程序的说明取决于你是从 Azure 信息保护统一标签客户端还是 Azure 信息保护客户端（经典）中从较早版本的扫描程序进行升级。
+
+#### <a name="to-upgrade-the-scanner-from-an-earlier-version-of-the-unified-labeling-client"></a>从统一标签客户端的早期版本升级扫描程序
+
+1. 在扫描程序计算机上，停止扫描程序服务“Azure 信息保护扫描程序”。
+
+2.  从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装最新版本的统一标签客户端，以便升级 Azure 信息保护统一标签客户端。
+
+3. 在 PowerShell 会话中，使用扫描仪的配置文件运行 Install-aipscanner 命令。 例如：`Update-AIPScanner –Profile Europe`
+
+4. 重启 Azure 信息保护扫描程序服务“Azure 信息保护扫描程序”。
+
+你现在可以使用[部署 Azure 信息保护扫描程序中的其余说明自动分类和保护文件，并](../deploy-aip-scanner.md)忽略安装扫描程序的步骤。 由于已经安装了扫描仪，因此没有理由再次安装。
+
+#### <a name="to-upgrade-the-scanner-from-the-classic-client"></a>从经典客户端升级扫描程序
+
 如果当前正在使用 Azure 信息保护客户端（经典）中的 Azure 信息保护扫描程序，则可以将其升级为使用从 Office 365 安全 & 发布的敏感信息类型和敏感度标签。相容性中心（或 Microsoft 365 安全中心或 Microsoft 365 相容性中心）。
 
-#### <a name="to-upgrade-the-scanner-to-the-preview-version"></a>将扫描仪升级到预览版本
-
-如何升级扫描程序取决于当前正在运行的 Azure 信息保护客户端（经典）版本：
+如何升级扫描程序取决于当前正在运行的经典客户端版本：
 
 - [从版本1.48.204.0 和更高版本升级](#upgrade-from-the-azure-information-protection-client-classic-version-1482040-and-later-versions-of-this-client)
 
 - [从早于1.48.204.0 的版本升级](#upgrade-from-the-azure-information-protection-client-classic-versions-earlier-than-1482040)
 
-请注意，与 Azure 信息保护客户端（经典）中的扫描程序不同的是，统一客户端的该预览版本不支持在断开连接的计算机上运行。
-
-升级会创建一个名为**AIPScannerUL_ @ no__t-1profile_name >** 的新数据库，并保留以前的扫描数据库，以备以前版本使用。 如果确信不需要以前的扫描程序数据库，则可以将其删除。 由于升级会创建一个新数据库，因此在首次运行时，扫描程序会重新扫描所有文件。
+升级会创建一个名为**AIPScannerUL_\<profile_name >** 的新数据库，并保留以前的扫描程序数据库，以备以前的版本需要。 如果确信不需要以前的扫描程序数据库，则可以将其删除。 由于升级会创建一个新数据库，因此在首次运行时，扫描程序会重新扫描所有文件。
 
 ##### <a name="upgrade-from-the-azure-information-protection-client-classic-version-1482040-and-later-versions-of-this-client"></a>从此客户端的 Azure 信息保护客户端（经典）版本1.48.204.0 和更高版本升级
 
+如果使用统一标签客户端的预览版本升级扫描仪，则不需要再次运行这些说明。
+
 1. 在扫描程序计算机上，停止扫描程序服务“Azure 信息保护扫描程序”。
 
-2. 通过从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载和安装统一标签客户端的预览版本，升级到 Azure 信息保护统一标签客户端。
+2. 通过从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载和安装统一的标签客户端，升级到 Azure 信息保护统一的标签客户端。
 
 3. 在 PowerShell 会话中，使用扫描仪的配置文件运行 Install-aipscanner 命令。 例如：`Update-AIPScanner –Profile Europe`。
     
-    此步骤创建名为**AIPScannerUL_ @ no__t-1profile_name**的新数据库 >
+    此步骤创建名为**AIPScannerUL_\<profile_name**的新数据库 >
 
 4. 重启 Azure 信息保护扫描程序服务“Azure 信息保护扫描程序”。
 
@@ -228,7 +242,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标签客户端�
 
 2. 在扫描程序计算机上，停止扫描程序服务“Azure 信息保护扫描程序”。
 
-3. 通过从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载和安装统一标签客户端的预览版本，升级到 Azure 信息保护统一标签客户端。
+3. 通过从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载和安装统一的标签客户端，升级到 Azure 信息保护统一的标签客户端。
 
 4. 在 PowerShell 会话中，使用你在步骤 1 中指定的相同配置文件名称运行 Update-AIPScanner 命令。 例如：`Update-AIPScanner –Profile Europe`
 

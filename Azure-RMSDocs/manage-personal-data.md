@@ -13,10 +13,10 @@ ms.reviewer: aashishr
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: d16e6e7f0667f9ac57bf772de272d23838b793e1
-ms.sourcegitcommit: a972099c8a374fbb029a66907bf0f85325359d88
+ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71966878"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
@@ -54,7 +54,7 @@ ms.locfileid: "71966878"
 
 运行[AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate) cmdlet 以获取保护模板列表。 可以使用模板 ID 获取特定模板的详细信息。 `RightsDefinitions` 对象显示个人数据，如果有的话。 
 
-例如：
+示例
 ```
 PS C:\Users> Get-AipServiceTemplate -TemplateId fcdbbc36-1f48-48ca-887f-265ee1268f51 | select *
 
@@ -201,9 +201,9 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 可使用以下配置，为 Azure 信息保护客户端和扫描程序禁用日志记录信息：
 
-- 对于 Azure 信息保护客户端：创建将“LogLevel”配置为“Off”的[高级客户端设置](./rms-client/client-admin-guide-customizations.md#change-the-local-logging-level)。
+- 对于 Azure 信息保护客户端：创建将**LogLevel**配置为**Off**的[高级客户端设置](./rms-client/client-admin-guide-customizations.md#change-the-local-logging-level)。
 
-- 对于 Azure 信息保护扫描程序：使用 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet 将“ReportLevel”参数设置为“Off”。
+- 对于 Azure 信息保护扫描程序：使用[set-aipscannerconfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) Cmdlet 将*eportlevel*参数设置为**Off**。
 
 [!INCLUDE [GDPR-related guidance](./includes/gdpr-hybrid-note.md)]
 
@@ -236,7 +236,7 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 ### <a name="protection-templates"></a>保护模板
 
-运行[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet 以更新保护模板。 由于个人数据在 `RightsDefinitions` 属性内，因此还需要使用[AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet 创建具有更新信息的权限定义对象，并将权限定义对象与 @no__tcmdlet.
+运行[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet 以更新保护模板。 由于个人数据位于 `RightsDefinitions` 属性内，因此还需要使用[AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet 创建具有更新信息的权限定义对象，并将权限定义对象与 `Set-AipServiceTemplateProperty`cmdlet.
 
 ### <a name="super-users-and-delegated-administrators-for-the-protection-service"></a>保护服务的超级用户和委派的管理员
 
@@ -267,7 +267,7 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 使用以下三个步骤来请求 Microsoft 删除文档跟踪日志、管理日志或保护服务的使用日志中的个人数据。 
 
-**步骤 1：启动删除请求**
+步骤 1：启动删除请求
 [与 Microsoft 支持部门联系](information-support.md#to-contact-microsoft-support)，以打开带有删除租户数据请求的 Azure 信息保护支持案例。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 提交请求时，你将需要提供其他信息，具体取决于需要被删除的数据。
 
 - 若要删除管理日志，请提供结束日期。 将删除直到该结束日期的所有管理日志。
@@ -276,11 +276,11 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 删除此数据是一种永久性操作。 处理完删除请求后，就无法恢复数据。 建议管理员在提交删除请求之前导出所需数据。
 
-**步骤 2：等待验证** Microsoft 将验证删除一个或多个日志的请求是否合法。 此过程最多可能需要五个工作日。
+步骤 2：等待验证 Microsoft 将验证删除一个或多个日志的请求是否合法。 此过程最多可能需要五个工作日。
 
-**步骤 3：获得删除确认** Microsoft 客户支持服务 (CSS) 将向你发送数据已删除的确认电子邮件。 
+步骤 3：获得删除确认 Microsoft 客户支持服务部门 (CSS) 将向你发送数据已删除的确认电子邮件。 
 
-## <a name="exporting-personal-data"></a>导出个人数据
+## <a name="exporting-personal-data"></a>导入个人数据
 当你使用 AIPService 或 AADRM PowerShell cmdlet 时，可以将个人数据作为 PowerShell 对象提供给搜索和导出。 PowerShell 对象可转换为 JSON，并使用 `ConvertTo-Json` cmdlet 进行保存。
 
 ## <a name="restricting-the-use-of-personal-data-for-profiling-or-marketing-without-consent"></a>在未征得同意的情况下，限制将个人数据用于分析或市场营销

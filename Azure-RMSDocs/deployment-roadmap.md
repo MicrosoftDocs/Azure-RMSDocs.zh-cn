@@ -12,12 +12,12 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f7af3b59138eecbcac40ac09003ab365454e5630
-ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
+ms.openlocfilehash: d304664bb3573bc1a90989f11927264450d01c0d
+ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72447212"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805562"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
@@ -65,7 +65,7 @@ ms.locfileid: "72447212"
 
 ### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>步骤 3：配置、部署分类和标记
 
-在配置标签和策略设置之前，确定要使用的 Azure 信息保护客户端：经典客户端或统一标签客户端。 或者，可能需要这两个客户端。 现在需要此客户端决策，因此你知道使用哪个管理门户来配置标签和策略设置。 若要详细了解此决定，请参阅[选择要使用的 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use)。
+在配置标签和策略设置之前，确定要使用的 Azure 信息保护客户端：经典客户端或统一标签客户端。 或者，可能需要这两个客户端。 现在需要此客户端决策，因此你知道使用哪个管理门户来配置标签和策略设置。 若要详细了解此决定，请参阅[选择要使用的 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。
 
 > [!TIP]
 > **可选，但建议**使用：请考虑使用[扫描器快速入门](quickstart-findsensitiveinfo.md)来发现本地数据存储区中的敏感信息。 扫描程序找到的信息有助于进行类别分类，提供有关所需的标签类型以及需要保护的文件的重要信息。
@@ -78,7 +78,7 @@ ms.locfileid: "72447212"
 
 - 经典客户端的 azure 信息保护标签：[配置 Azure 信息保护策略](./configure-policy.md)
 
-- 统一标签客户端的敏感度标签：[敏感度标签概述](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels)
+- 统一标签客户端的敏感度标签：[敏感度标签概述](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
 
 然后，为用户部署 Azure 信息保护客户端（经典）或 Azure 信息保护统一标签客户端。 提供用户培训和特定说明，以便选择标签。 有关安装和支持客户端的详细信息，请参阅管理员指南：
 

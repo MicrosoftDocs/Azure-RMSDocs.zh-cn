@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 00ce2f31b5215a954c64135e9d41d39b1eeb1d72
-ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
+ms.openlocfilehash: 4a94787ad611ca52206629362a7ac1bf9df9f174
+ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72447753"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805540"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -51,7 +51,7 @@ ms.locfileid: "72447753"
 
 如果你的租户位于统一的标签平台上，则支持统一标签的[客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)可以使用敏感性标签。 如果在2019年6月版或更高版本中获取了 Azure 信息保护订阅，则租户会自动在统一的标签平台上，无需执行其他操作。 你的租户还可能在此平台上，因为有人迁移了你的 Azure 信息保护标签。
 
-若要检查状态，请在 Azure 门户中，请参阅**Azure 信息保护** > **管理**@no__t 的**统一标签**，并查看**统一标签**的状态：
+若要检查状态，请在 Azure 门户中，请参阅**Azure 信息保护** > **管理** > **统一标签**，并查看**统一标签**状态：
 
 - 如果你看到 "已**激活**"，则你的租户在统一的标签平台上。
 
@@ -63,7 +63,7 @@ ms.locfileid: "72447753"
 
 **Azure 信息保护统一标签客户端**是一项最新补充，支持多个应用程序和服务支持的统一标签存储。 此客户端从以下管理中心下载敏感性标签和策略设置： Office 365 安全与合规中心、Microsoft 365 安全中心和 Microsoft 365 符合性中心。 有关详细信息，请参阅[敏感度标签概述](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。
 
-如果你不确定要使用的客户端，请参阅[选择要使用的 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-azure-information-protection-client-to-use)。
+如果你不确定要使用的客户端，请参阅[选择要使用的 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。
 
 ### <a name="identify-which-client-you-have-installed"></a>识别已安装的客户端
 

@@ -14,10 +14,10 @@ ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 0de43192b44fb4e6d931d1e09ef8f01514c0a4ff
-ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
+ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "72447021"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
@@ -77,7 +77,7 @@ Azure 信息保护支持不同级别的订阅：
     
     **安全读取器** -  仅限[Azure 信息保护分析](reports-aip.md)
     
-    **全局读取器**@no__t 仅限[Azure 信息保护分析](reports-aip.md)
+    仅限[Azure 信息保护分析](reports-aip.md) - **全局读取器**
     
   - **全局管理员**
     
@@ -170,7 +170,7 @@ Azure 信息保护支持不同级别的订阅：
 
 - 在电子邮件中，此应用存储在 x 标头中：msip_labels: MSIP_Label_\<GUID>_Enabled=True; 
 
-- 对于 Word 文档（.doc 和 .docx）、Excel 电子表格（.xls 和 .xlsx）、PowerPoint 演示文稿（.ppt 和 .pptx）和 PDF 文档，此元数据存储在下面的自定义属性中： **MSIP_Label_ @ no__t-1GUID > _Enabled = True**  
+- 对于 Word 文档（.doc 和 .docx）、Excel 电子表格（.xls 和 .xlsx）、PowerPoint 演示文稿（.ppt 和 .pptx）和 PDF 文档，此元数据存储在下面的自定义属性中： **MSIP_Label_\<GUID > _Enabled = True**  
 
 对于电子邮件，在发送电子邮件时，将存储标签信息。 对于文档，保存文件时将存储标签信息。 
 

@@ -12,17 +12,17 @@ ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ms.subservice: aiplabels
 ms.custom: admin
 ms.openlocfilehash: 044eafa1893c34745d49cc05b0ec029d88ecc318
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71684104"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。 
@@ -59,9 +59,9 @@ ms.locfileid: "71684104"
 
 - 在 Office 应用中，会在应用标签时应用来自标签的视觉标记。 打开标记的文档以及首次保存该文档时，也会应用视觉标记。  
 
-- 使用文件资源管理器、PowerShell 或 Azure 信息保护扫描程序标记文档时：视觉标记不会立即应用，而是在 Office 应用中打开文档并首次保存该文档时由 Azure 信息保护客户端应用。
+- 当使用文件资源管理器、PowerShell 或 Azure 信息保护扫描程序标记文档时，不会立即应用视觉标记，但在 Office 应用中打开文档以及首次保存文档时会通过 Azure 信息保护客户端应用视觉标记。
     
-    例外情况是当你在 Office 应用中对在 SharePoint Online、OneDrive 或 OneDrive for Business 中保存的文件使用[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)时：当启用自动保存时，除非将[高级客户端设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)配置为启用分类以在后台持续运行，否则将不会应用视觉标记。 
+    当你对保存在 SharePoint Online、OneDrive 或 OneDrive for Business 中的文件使用 "[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)" 时，不会应用视觉对象标记，除非你将[高级客户端设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)配置为启用分类，使其在后台连续运行。 
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>配置标签的视觉标记
 
@@ -71,15 +71,15 @@ ms.locfileid: "71684104"
     
     例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
 
-2. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，选择包含要添加或更改的视觉标记的标签。
+2. 从“分类” > “标签”菜单选项：在“Azure 信息保护 - 标签”边栏选项卡上，选择包含要添加或更改的视觉标记的标签。
 
 3. 在“标签”边栏选项卡的“设置视觉标记（如页眉或页脚）”部分中，配置所需视觉标记的设置，然后单击设置“保存”：
     
-    - 配置一个页眉：针对“带有此标签的文档具有页眉”，选择“打开”（如果希望具有页眉），或“关闭”（如果不希望具有页眉）。 如果选择“打开”，则指定页眉的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
+    - 配置一个页眉：针对“**文档的此标签具有页眉**”，选择“**打开**”（如果希望具有页眉），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定页眉的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
     
-    - 配置一个页脚：针对“带有此标签的文档具有页脚”，选择“打开”（如果希望具有页脚），或“关闭”（如果不希望具有页脚）。 如果选择“打开”，则指定页脚的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
+    - 配置一个页脚：针对**文档的此标签具有页脚**，选择“**打开**”（如果希望具有页脚），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定页脚的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
     
-    - 配置一个水印：针对“带有此标签的文档具有水印”，选择“打开”（如果希望具有水印），或“关闭”（如果不希望具有水印）。 如果选择“打开”，则指定水印的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
+    - 配置一个水印：针对**文档的此标签具有水印**，选择“**打开**”（如果希望具有水印），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定水印的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
     
 单击“保存”时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
 
@@ -88,7 +88,7 @@ ms.locfileid: "71684104"
 
 你可以在文本字符串中为页眉、页脚或水印使用以下变量：
 
-- `${Item.Label}`，针对所选标签。 例如：常规
+- `${Item.Label}`，针对所选标签。 例如：“常规”
 
 - `${Item.Name}`，针对文件名或电子邮件主题。 例如：JulySales.docx
 
@@ -98,9 +98,9 @@ ms.locfileid: "71684104"
 
 - `${User.PrincipalName}`，针对文档或电子邮件的所有者（按 Azure 信息保护客户端登录电子邮件地址 (UPN)）。 例如：rsimone@vanarsdelltd.com
 
-- `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016 年 8 月 16 日下午 1:30
+- `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016/8/16 下午 1:30
 
-例如：如果为“常规”标签页脚指定字符串 `Document: ${item.name}  Classification: ${item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 Document: project.docx  Classification: General。
+示例：如果为“常规”标签页脚指定字符串 `Document: ${item.name}  Classification: ${item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 **Document: project.docx  Classification: General**。
 
 >[!TIP]
 > 还使用[域代码将标签名称插入](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification)文档或模板中。
@@ -145,7 +145,7 @@ Calibri 是页眉、页脚和水印文字的默认字体。 如果指定替代�
 
 可从可用颜色列表中进行选择，或输入颜色的红绿蓝 (RGB) 组成的十六进制三元色代码来指定自定义颜色。 例如， **#40e0d0**为青绿色的 RGB 十六进制值。 
 
-如果需要对这些代码进行引用, 可从 MSDN web 文档的 " [ \<> 颜色](https://developer.mozilla.org/docs/Web/CSS/color_value)" 页中找到一个有用的表格。也可在许多可编辑图片的应用程序中找到这些代码。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
+如果需要这些代码的参考，可从 MSDN web 文档的 " [\<color >](https://developer.mozilla.org/docs/Web/CSS/color_value) " 页中找到一个有用的表格。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 
 ## <a name="next-steps"></a>后续步骤
 

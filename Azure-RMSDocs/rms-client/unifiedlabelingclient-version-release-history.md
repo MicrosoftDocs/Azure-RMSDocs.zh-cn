@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/03/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a9413cce67eda1cfb36e46ca199205faceafef73
-ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
+ms.openlocfilehash: 7a41debe26783b530ec92dd38aa308b5e9da7546
+ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72447928"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805270"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -47,21 +47,19 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
-此客户端正在替换 Azure 信息保护客户端（经典）。 若要将特性和功能与经典客户端进行比较，请参阅[比较客户端](use-client.md#compare-the-clients)。
+此客户端正在替换 Azure 信息保护客户端（经典）。 若要将特性和功能与经典客户端进行比较，请参阅[比较适用于 Windows 计算机的标记客户端](use-client.md##compare-the-labeling-clients-for-windows-computers)。
 
-## <a name="versions-later-than-22210"></a>版本晚于2.2.21。0
+## <a name="version-25330"></a>版本2.5.33。0
 
-如果你的客户端版本2高于2.2.21.0，则它是一个用于测试和评估的预览版本。
-
-**发布**日期：09/17/2019
+**发布**日期：10/23/2019
 
 **新功能：**
 
-- 支持[扫描仪](../deploy-aip-scanner.md)，用于检查和标记文档本地数据存储。 对于此版本的扫描仪：
+- 预览版本的[扫描仪](../deploy-aip-scanner.md)，用于检查和标记文档本地数据存储。 对于此版本的扫描仪：
     
     - 将扫描仪配置为使用同一扫描程序配置文件时，多个扫描程序可以共享相同的 SQL Server 数据库。 此配置可以更轻松地管理多个扫描仪，并缩短扫描时间。 当你使用此配置时，请始终等待扫描仪完成安装，然后再使用同一配置文件安装另一个扫描程序。
     
-    - 安装扫描程序时必须指定配置文件，并将扫描程序数据库命名为**AIPScannerUL_ @ no__t-1profile_name >** 。 *配置文件*参数对于 install-aipscanner 是必需的。
+    - 安装扫描程序时必须指定配置文件，并将扫描程序数据库命名为**AIPScannerUL_\<profile_name >** 。 *配置文件*参数对于 install-aipscanner 是必需的。
     
     - 即使已标记文档，也可以在所有文档上设置一个默认标签。 在 "扫描程序配置文件" 或 "存储库设置" 中，将 "重新**标记文件**" 选项设置为 "**打开**"，并选择 "新建**强制默认标签**
     
@@ -74,13 +72,17 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
     
     - 已知问题：不能将新的和重命名的标签选作扫描仪配置文件或存储库设置的默认标签。 之一
         - 对于新标签：在 Azure 门户中，将要使用的[标签添加](../configure-policy-add-remove-label.md)到全局策略或作用域内策略。
-        - 对于重命名标签：在 Azure 门户中，请参阅**Azure 信息保护** > **管理**@no__t**统一标签**，然后选择 "**发布**"。
+        - 对于重命名的标签：在 Azure 门户中，请参阅**Azure 信息保护** > **管理** > **统一标签**，然后选择 "**发布**"。
     
     你可以从 Azure 信息保护客户端（经典）升级扫描仪。 在升级后，这会创建一个新的数据库，扫描程序在第一次运行时重新扫描所有文件。 有关说明，请参阅管理员指南中[的升级 Azure 信息保护扫描程序](clientv2-admin-guide.md#upgrading-the-azure-information-protection-scanner)。
     
     有关其他信息，请参阅博客文章公告：[统一标签 AIP 扫描程序预览版增加了扩展功能！](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Unified-labeling-AIP-scanner-preview-brings-scaling-out-and-more/ba-p/862552)
 
-- 如果要以[非交互方式对文件进行标记](clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)，并在[Azure AD 中注册应用程序](clientv2-admin-guide-powershell.md#to-create-and-configure-the-azure-ad-applications-for-set-aipauthentication---preview-client)，则 PowerShell cmdlet [set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication)具有新参数。 示例方案包括用于标记文档的扫描程序和自动 PowerShell 脚本。
+- 如果你希望以非交互方式标记文件，还可以使用 PowerShell cmdlet [set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication)的新参数（*AppId*、 *AppSecret*、 *TenantId*、 *DelegatedUser*和*OnBehalfOf*）以及新的在 Azure AD 中注册应用程序的过程。 示例方案包括用于标记文档的扫描程序和自动 PowerShell 脚本。 有关说明，请参阅如何从管理员指南以[非交互方式标记文件](clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
+    
+    请注意， *DelegatedUser*是自上次预览版本的统一标签客户端以来的新参数，并且已注册应用的 API 权限已更改。
+
+- 新 PowerShell 标签策略高级设置，用于将[标签迁移规则扩展到 SharePoint 属性](clientv2-admin-guide-customizations.md#extend-your-label-migration-rules-to-sharepoint-properties)。
 
 - 将匹配的自定义敏感信息类型发送到[Azure 信息保护分析](../reports-aip.md)。
 
@@ -88,16 +90,29 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 - 向标签中添加或更改保护设置时，客户端会在下一次保存文档时使用这些最新的保护设置重新应用标签。 同样，当下一次在 "强制" 模式下扫描文档时，扫描程序会将标签重新应用为这些最新的保护设置。
 
+- 通过从一个客户端导出文件并手动将它们复制到断开连接的计算机上，[对断开连接的计算机的支持](clientv2-admin-guide-customizations.md#support-for-disconnected-computers)。 请注意，此配置支持通过文件资源管理器、PowerShell 和扫描器进行标记。 对于 Office 应用程序，不支持此配置。
+
 - 新 cmdlet [AIPLogs](https://docs.microsoft.com/powershell/module/azureinformationprotection/export-aiplogs)，用于从%localappdata%\Microsoft\MSIP\Logs 收集所有日志文件并将其保存到具有 .zip 格式的单个压缩文件中。 如果请求发送日志文件来帮助调查报告的问题，则可以将此文件发送到 Microsoft 支持部门。
 
 **纠正**
 
 - 您可以使用文件资源管理器成功地更改受保护的文件，并在删除该文件的密码之后右键单击。
 
+- 您可以在查看器中成功打开本机保护的文件，而无需使用 "另存为"、"导出（导出）"[权限](../configure-usage-rights.md#usage-rights-and-descriptions)。
+
+- 标签和策略设置按预期刷新，而不必运行[set-aipauthentication](/powershell/module/azureinformationprotection/clear-aipauthentication?)，或手动删除%LocalAppData%\Microsoft\MSIP\mip 文件夹。
+
+**其他更改**
+
+- [重置设置](clientv2-admin-guide.md#more-information-about-the-reset-settings-option)现在会删除%LocalAppData%\Microsoft\MSIP\mip\\ *\<ProcessName\>* 文件夹，而不是%LocalAppData%\Microsoft\MSIP\mip\\ *\<ProcessName\>* \mipfolder.
+
+- [Get-aipfilestatus](/powershell/module/azureinformationprotection/get-aipfilestatus)现在包含受保护文档的内容 ID。
 
 ## <a name="version-22210"></a>版本2.2.21。0
 
-**发布**日期：09/03/2019
+**发布**日期：09/03/2020
+
+支持，04/23/2020
 
 **纠正**
 
@@ -219,7 +234,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 ## <a name="next-steps"></a>后续步骤
 
-有关完整的详细信息，请参阅[比较表](use-client.md#compare-the-clients)。
+有关完整的详细信息，请参阅[比较表](use-client.md#compare-the-labeling-clients-for-windows-computers)。
 
 有关安装和使用该客户端的详细信息： 
 

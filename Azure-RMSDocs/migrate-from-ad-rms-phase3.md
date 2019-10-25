@@ -14,19 +14,19 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: e723940e418b127a46405166368a96867784799c
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71684565"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 3。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 7。
 
-## <a name="step-7-reconfigure-windows-computers-to-use-azure-information-protection"></a>步骤 7. 重新配置 Windows 计算机以使用 Azure 信息保护
+## <a name="step-7-reconfigure-windows-computers-to-use-azure-information-protection"></a>步骤 7： 重新配置 Windows 计算机以使用 Azure 信息保护
 
 对于使用 Office 365 应用、Office 2019 或 Office 2016 即点即用桌面应用的 Windows 计算机：
 
@@ -60,7 +60,7 @@ ms.locfileid: "71684565"
     
     如果在 Windows Server 上使用 DNS 服务器角色，可使用下表作为示例，在 DNS 管理器控制台中指定 SRV 记录属性。
     
-    |字段|ReplTest1|  
+    |字段|值|  
     |-----------|-----------|  
     |**域**|_tcp.rmscluster.contoso.com|  
     |**服务**|_rmsredir|  
@@ -74,7 +74,7 @@ ms.locfileid: "71684565"
 
     a. 在群集中的某个 AD RMS 服务器上，启动 Internet Information Services (IIS) 管理器控制台。
 
-    b. 导航到“默认网站” > “_wmcs” > “许可” > “licensing.asmx”
+    b。 导航到“默认网站” > “_wmcs” > “许可” > “licensing.asmx”
 
     c. 右键单击“licensing.asmx” > “属性” > “编辑”
 
@@ -86,7 +86,7 @@ ms.locfileid: "71684565"
 
     f. 若要确认此配置按预期工作，请尝试从浏览器直接连接到 licensing.asmx 文件。 应看到以下错误消息，它将触发运行 Office 365 应用或 Office 2019 或 Office 2016 的客户端查找 SRV 记录：
     
-    错误消息 401.3:无权使用所提供的凭据查看此目录或页面(由于访问控制列表，访问被拒绝)
+    **错误消息 401.3: 无权使用所提供的凭据查看此目录或页面（由于访问控制列表，访问被拒绝）。**
 
 
 ## <a name="client-reconfiguration-by-using-registry-edits"></a>使用注册表编辑重新配置客户端
