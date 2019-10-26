@@ -4,7 +4,7 @@ description: 确定使用 Azure 信息保护的 Azure AD 要求，以便用户�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/23/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.subservice: prereqs
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8370b98ce8bc2d4c31d8659fd030e815defdaf10
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: 6a3ed3272eecd25bd403d6a45a82f937fe26a03a
+ms.sourcegitcommit: 801f9d138e491788a618a5b918305dc3666648b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71689434"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72890286"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 必须拥有 Azure AD 目录才能使用 Azure 信息保护。 可以使用此目录中的帐户登录 Azure 门户，并且可以在该门户中进行 Azure 信息保护标签和 Azure Rights Management 模板的配置和管理等操作。
 
@@ -45,7 +45,7 @@ ms.locfileid: "71689434"
 
 用户的 UPN 值与其电子邮件地址不匹配：
 
-- 这不是推荐的配置。 如果无法更改 UPN 值，请为用户配置备用登录 ID，并指导他们使用此备用登录方式登录 Office。 有关详细信息，请参阅[配置备用登录 ID](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) 和 [Office 应用程序定期提示输入 SharePoint Online、OneDrive 和 Lync Online 的凭据](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)。
+- 这不是推荐的配置，不支持 Azure 信息保护的单一登录。 如果无法更改 UPN 值，请为用户配置备用登录 ID，并指导他们使用此备用登录方式登录 Office。 有关详细信息，请参阅[配置备用登录 ID](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) 和 [Office 应用程序定期提示输入 SharePoint Online、OneDrive 和 Lync Online 的凭据](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)。
     
     如果 UPN 值中的域名已针对你的租户进行验证，请将用户的 UPN 值作为另一个电子邮件地址添加到 Azure AD proxyAddresses 属性。 如果在授予使用权限时指定了用户的 UPN 值，则可以对用户进行 Azure 权限管理授权。 有关这一点及如何对用户帐户授权的详细信息，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
 
@@ -72,13 +72,13 @@ ms.locfileid: "71689434"
 
 -   对于 Microsoft 托管的租户（你拥有 Azure Active Directory 或 Office 365）：
 
-    - 配置 Azure MFA 来为用户强制实施 MFA。 有关说明，请参阅多因素身份验证文档中的[在云中的 Azure 多因素身份验证入门](/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
+    - 配置 Azure MFA 来为用户强制实施 MFA。 有关说明，请参阅多重身份验证文档中的[在云中的 Azure 多重身份验证入门](/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
 
-        有关 Azure MFA 的详细信息，请参阅[什么是 Azure 多因素身份验证？](/multi-factor-authentication/multi-factor-authentication)
+        有关 Azure MFA 的详细信息，请参阅[什么是 Azure 多重身份验证？](/multi-factor-authentication/multi-factor-authentication)
 
 - 对于联合租户（你在本地操作联合身份验证服务器）：
 
-    - 为 Azure Active Directory 或 Office 365 配置联合身份验证服务器。 例如, 如果使用 AD FS, 请参阅[为 AD FS 配置其他身份验证方法](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs)。
+    - 为 Azure Active Directory 或 Office 365 配置联合身份验证服务器。 例如，如果使用 AD FS，请参阅[为 AD FS 配置其他身份验证方法](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs)。
 
         有关此方案的详细信息，请参阅 Office 博客上的[使用 Office 365 – 标识程序现在已简化](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)。
 
