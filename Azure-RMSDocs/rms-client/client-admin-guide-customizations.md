@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/26/2019
+ms.date: 10/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a4a507423ed0a06627fcf5e28bb053d622ca252f
-ms.sourcegitcommit: b1ca785ae8ea5a91393a1602aded899be1951b2d
+ms.openlocfilehash: db282701b5374652d8469e5eadf42cd0a3472c3b
+ms.sourcegitcommit: 7089f06723f609ce40558ae1346db68b9a47667f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72811185"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72916298"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -972,7 +972,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>与 Exchange 邮件分类集成以实现移动设备标记解决方案
 
-虽然 Outlook 网页版尚不支持本机 Azure 信息保护分类和保护，但在移动用户使用 Outlook 网页版时，可以使用 Exchange 邮件分类，将 Azure 信息保护标签扩展到这些用户。 Outlook Mobile 不支持 Exchange 邮件分类。
+Web 上的 Outlook 现在支持 Exchange Online 的内置标签，这是在 web 上的 Outlook 中标记电子邮件的建议方法。 但是，如果尚未使用从 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 相容性中心发布的敏感度标签，则可以使用 Exchange 邮件分类来扩展 Azure 信息当移动用户在 web 上使用 Outlook 时，对其进行保护。 你还可以将此方法用于 Exchange Server。 
+
+Outlook Mobile 不支持 Exchange 邮件分类。
 
 要实现此解决方案： 
 

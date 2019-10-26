@@ -4,7 +4,7 @@ description: 使用 Azure 信息保护进行分类和设置标签时遇到问题
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/04/2019
+ms.date: 10/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7de86d9f6f21ac9dd7839793d02b97b394930f1a
-ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
+ms.openlocfilehash: 649aca255019ea5992e7901c2275ca0fe3c61cba
+ms.sourcegitcommit: 7089f06723f609ce40558ae1346db68b9a47667f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72805510"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72916274"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -107,12 +107,14 @@ ms.locfileid: "72805510"
 
 此时，当前标签的分类显示在文档中，并且这个值会在你每次打开文档或使用模板时自动刷新。 因此，如果标签发生更改，那么对此域代码显示的分类也会在文档中自动更新。
 
-## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>对于电子邮件来说，Azure 信息保护分类与 Exchange 邮件分类有什么不同？
+## <a name="how-is-classification-for-emails-using-azure-information-protection-different-from-exchange-message-classification"></a>使用 Azure 信息保护的电子邮件分类与 Exchange 邮件分类有何不同？
 
-Exchange 邮件分类是一种较旧的功能，其可对电子邮件进行分类，且独立于 Azure 信息保护分类执行。 
+交换消息分类是一项较旧的功能，可对电子邮件进行分类，并且独立于 Azure 信息保护标签或应用分类的敏感度标签。
 
-但是，可以将这两个解决方案进行集成，以便当用户使用 Outlook 网页版和某些移动邮件应用程序中对电子邮件进行分类时，可自动添加 Azure 信息保护分类和相应的标签标记。 
+但是，你可以将此较旧的功能与标签集成，以便当用户使用 Outlook web 上的 Outlook 以及使用某些移动邮件应用程序对电子邮件进行分类时，会自动添加标签分类和相应的标签标记。
 
 可以使用同一技术将标签用于 Outlook 网页版和这些移动邮件应用程序。
 
-有关配置步骤，请参阅[将 Exchange 邮件分类与 Azure 信息保护集成，实现移动设备标记解决方案](./rms-client/client-admin-guide-customizations.md#integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution)。
+请注意，如果在使用 Exchange Online 的 web 上使用 Outlook，则无需执行此操作，因为这种组合在从 Office 365 安全与合规中心 Microsoft 365 安全中心发布敏感度标签时支持内置标签或 Microsoft 合规中心。
+
+如果无法在 web 上使用 Outlook 内置标签，请参阅此解决方法的配置步骤：[将 Exchange 消息分类与 Azure 信息保护集成，以实现移动设备标记解决方案](./rms-client/client-admin-guide-customizations.md#integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution)。
