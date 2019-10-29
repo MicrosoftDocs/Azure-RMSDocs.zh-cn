@@ -4,7 +4,7 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/23/2019
+ms.date: 10/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 7076f761a08db66b6f9caeb08bac3b6b66169a54
-ms.sourcegitcommit: 4c72e9549fda4e4324e9b07480d3c200aa867770
+ms.openlocfilehash: 551aaa12a4a567b955b7d5e005e205c4029aa382
+ms.sourcegitcommit: 3464f9224b34dc54ad6fc1b7bc4dc11ad1ab8d59
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72814649"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984896"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -157,7 +157,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |删除已应用的标签操作： | 系统提示用户确认 <br /><br />下次 Office 应用程序打开文件时，不会自动应用默认标签或自动标签（如果已配置）  <br /><br />| 不提示用户确认<br /><br /> 下次 Office 应用程序打开文件时，自动应用默认标签或自动标签（如果已配置）|
 |自动和推荐的标签： | 在 Azure 门户中配置为[标签条件](../configure-policy-classification.md)，其中包含使用短语或正则表达式的内置信息类型和自定义条件 <br /><br />配置选项包括： <br /><br />- 唯一/非唯一计数 <br /><br /> - 最小计数| 在管理中心中配置，包含内置敏感信息类型和[自定义信息类型](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type)<br /><br />配置选项包括：  <br /><br />- 仅唯一计数 <br /><br />- 最小和最大计数 <br /><br />- 信息类型支持 AND 和 OR <br /><br />- 关键字字典<br /><br />- 可自定义的可信度和字符接近度|
 |自动和建议标签的可自定义策略提示： | “是” <br /><br />使用 Azure 门户将默认消息替换为用户 | 否 <br /><br /> 尽管管理中心提供了提供自定义策略提示的选项，但统一标签客户端当前不支持此选项|
-|更改文件的默认保护级别： | “是” <br /><br />你可以使用[注册表编辑](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)来替代本机保护和常规保护的默认值 | 否 |
+|更改文件类型的默认保护行为： | 你可以使用[注册表编辑](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)来替代本机保护和常规保护的默认值 | 你可以使用[PowerShell](clientv2-admin-guide-customizations.md#change-which-file-types-to-protect)来更改受保护的文件类型|
 
 有关特定保护设置的行为差异的详细比较，请参阅[比较标签的保护设置的行为](../configure-policy-migrate-labels.md#comparing-the-behavior-of-protection-settings-for-a-label)。
 

@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/25/2019
+ms.date: 10/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: db282701b5374652d8469e5eadf42cd0a3472c3b
-ms.sourcegitcommit: 7089f06723f609ce40558ae1346db68b9a47667f
+ms.openlocfilehash: a9226d20962d1d51608ef0d5d487e785006fd8dc
+ms.sourcegitcommit: 3464f9224b34dc54ad6fc1b7bc4dc11ad1ab8d59
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72916298"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984931"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -576,7 +576,7 @@ dcf781ba-727f-4860-b3c1-73479e31912b 的标签 ID 示例值：
 
 例如，如果使用不支持 PDF 加密 ISO 标准的 PDF 阅读器，则可能需要为所有用户配置此设置。 或者，在逐步采用支持新格式的 PDF 阅读器中的更改时，可能需要为部分用户配置此设置。 如果需要向已签名的 PDF 文档添加保护，则也可能使用此设置。 已签名的 PDF 文档可能受到 .ppdf 格式的额外保护，因此该保护是作为文件的包装器实现的。 
 
-要使 Azure 信息保护扫描程序使用新设置，必须重启扫描程序服务。 此外，在默认情况下，扫描程序将不再保护 PDF 文档。 如果想要 PDF 文档在 EnablePDFv2Protection 设置为 False 时受扫描程序保护，则必须[编辑注册表](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner)。
+要使 Azure 信息保护扫描程序使用新设置，必须重启扫描程序服务。 此外，在默认情况下，扫描程序将不再保护 PDF 文档。 如果想要 PDF 文档在 EnablePDFv2Protection 设置为 False 时受扫描程序保护，则必须[编辑注册表](../deploy-aip-scanner.md#scanner-from-the-classic-client-use-the-registry-to-change-which-file-types-are-protected)。
 
 有关新 PDF 加密的详细信息，请参阅博客文章[使用 Microsoft 信息保护进行 PDF 加密的新支持](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)。
 

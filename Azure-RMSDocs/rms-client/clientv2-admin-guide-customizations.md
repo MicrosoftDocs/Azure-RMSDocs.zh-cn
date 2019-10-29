@@ -3,7 +3,7 @@ title: 自定义配置-Azure 信息保护统一标签客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/23/2019
+ms.date: 10/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e396296e896dad79deaf8caf3474e7297ccd2080
-ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
+ms.openlocfilehash: 6db8efdd32d945ad5e604041b87e7da2a2ee1b8b
+ms.sourcegitcommit: 3464f9224b34dc54ad6fc1b7bc4dc11ad1ab8d59
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72805691"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984915"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -136,6 +136,7 @@ ms.locfileid: "72805691"
 |OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookWarnTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookWarnUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
+|PFileSupportedExtensions|[更改要保护的文件类型](#change-which-file-types-to-protect)|
 |PostponeMandatoryBeforeSave|[使用强制标签时，删除文档的“以后再说”](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
 |RemoveExternalContentMarkingInApp|[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)|
 |ReportAnIssueLink|[为用户添加“报告问题”](#add-report-an-issue-for-users)|
@@ -226,6 +227,39 @@ ms.locfileid: "72805691"
 
     Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
 
+## <a name="change-which-file-types-to-protect"></a>更改要保护的文件类型
+
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+
+默认情况下，Azure 信息保护的统一标签客户端将保护所有文件类型，并且来自客户端的扫描程序仅保护 Office 文件类型和 PDF 文件。
+
+可以通过指定以下内容来更改所选标签策略的此默认行为：
+
+- 密钥： **PFileSupportedExtensions**
+
+- 值： **<string value>** 
+
+使用下表来确定要指定的字符串值：
+
+| “字符串值”| 客户端| 扫描仪|
+|-------------|-------|--------|
+|\*|默认值：将保护应用于所有文件类型|将保护应用于所有文件类型|
+|\<null 值 >| 将保护应用于 Office 文件类型和 PDF 文件| 默认值：将保护应用于 Office 文件类型和 PDF 文件|
+|Convertto-html-Json （".jpg"，".png"）|除了 Office 文件类型和 PDF 文件，还会将保护应用到指定的文件扩展名 | 除了 Office 文件类型和 PDF 文件，还会将保护应用到指定的文件扩展名
+
+示例1：用于统一客户端的 PowerShell 命令仅保护 Office 文件类型和 PDF 文件，其中标签策略命名为 "客户端"：
+
+    Set-LabelPolicy -Identity Client -AdvancedSettings @{PFileSupportedExtensions=""}
+
+示例2：用于扫描程序的 PowerShell 命令，用于保护所有文件类型，其中标签策略命名为 "Scanner"：
+
+    Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions="*"}
+
+示例3：用于扫描程序的 PowerShell 命令，用于保护 .txt 文件和 .csv 文件以及 Office 文件和 PDF 文件，其中标签策略命名为 "Scanner"：
+
+    Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions=ConvertTo-Json(".txt", ".csv")}
+
+利用此设置，你可以更改受保护的文件类型，但不能将默认保护级别从本机更改为通用。 例如，对于运行统一标签客户端的用户，你可以更改默认设置，以便仅保护 Office 文件和 PDF 文件而不是所有文件类型。 但不能将这些文件类型更改为使用 .pfile 文件扩展名进行常规保护。
 
 ## <a name="remove-not-now-for-documents-when-you-use-mandatory-labeling"></a>使用强制标签时，删除文档的“以后再说”
 

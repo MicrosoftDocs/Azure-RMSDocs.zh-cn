@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行当前版本的 Azure 信息保
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/23/2019
+ms.date: 10/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4b83fcc4a7f5d8a586e6e2f8c4b51ef93d0cb257
-ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
+ms.openlocfilehash: 05ccffd1370a73bf5f5286f40be0510316e3f883
+ms.sourcegitcommit: 3464f9224b34dc54ad6fc1b7bc4dc11ad1ab8d59
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72805744"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984962"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -411,9 +411,9 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
 - 如果标签应用分类和保护，但扫描程序不保护该文件类型。
     
-    默认情况下，扫描程序仅保护 Office 文件类型，以及 PDF 文件（使用 ISO PDF 加密标准进行保护时）。 对于经典客户端的扫描程序，可以在[编辑注册表](#editing-the-registry-for-the-scanner)时对其他文件类型进行保护，如下一节中所述。
+    默认情况下，扫描程序仅保护 Office 文件类型，以及 PDF 文件（使用 ISO PDF 加密标准进行保护时）。 [更改受保护的文件类型](#change-which-file-types-to-protect)时，其他文件类型可受到保护，如下一节中所述。
 
-例如，检查文件扩展名为 .txt 的文件之后，扫描程序无法应用为分类而非保护配置的标签，因为 .txt 文件类型不支持仅分类。 如果为分类和保护配置了标签，并且针对 .txt 文件类型编辑了注册表，则扫描程序可为文件设置标签。 
+例如，检查文件扩展名为 .txt 的文件之后，扫描程序无法应用为分类而非保护配置的标签，因为 .txt 文件类型不支持仅分类。 如果为分类和保护配置了标签，并且包含了 .txt 文件扩展名，则扫描程序可以对文件进行标记。 
 
 > [!TIP]
 > 在此过程中，如果扫描程序停止并且未完成对存储库中大量文件的扫描：
@@ -435,13 +435,19 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
 - 如果标签应用分类和保护，但扫描程序不保护该文件类型。
     
-    默认情况下，扫描程序仅保护 Office 文件类型，以及 PDF 文件（使用 ISO PDF 加密标准进行保护时）。 对于经典客户端的扫描程序，如下面所述[编辑注册表](#editing-the-registry-for-the-scanner)，则可以对其他文件类型进行保护。
+    默认情况下，扫描程序仅保护 Office 文件类型，以及 PDF 文件（使用 ISO PDF 加密标准进行保护时）。 更改要保护的文件类型时，可对其他文件类型进行保护，如下所述。
 
-### <a name="editing-the-registry-for-the-scanner"></a>编辑扫描程序的注册表
+## <a name="change-which-file-types-to-protect"></a>更改要保护的文件类型
+
+默认情况下，扫描程序仅保护 Office 文件类型和 PDF 文件。 您可以更改此行为，以便例如，扫描程序可保护所有文件类型，这与客户端的保护行为相同。 或者，除了 Office 文件类型和 PDF 文件，扫描程序还保护指定的其他文件类型。 
+
+有关配置说明，请参阅以下各节。
+
+### <a name="scanner-from-the-classic-client-use-the-registry-to-change-which-file-types-are-protected"></a>经典客户端的扫描程序：使用注册表更改受保护的文件类型
 
 本部分仅适用于经典客户端的扫描程序。
 
-若要更改默认扫描程序行为以保护 Office 文件和 PDF 以外的文件类型，必须手动编辑注册表并指定想要保护的其他文件类型以及保护类型（本机或泛型）。 有关说明，请参阅开发人员指南中的[文件 API 配置](develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 此外，特定于扫描程序：
+若要更改用于保护 Office 文件和 Pdf 以外的文件类型的默认扫描程序行为，必须编辑注册表并指定要保护的其他文件类型和保护类型（本机或通用）。 有关说明，请参阅开发人员指南中的[文件 API 配置](develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 此外，特定于扫描程序：
 
 - 扫描仪具有其自己的默认行为：默认情况下仅保护 Office 文件格式和 PDF 文档。 如果未修改注册表，则扫描程序不会保护任何其他文件类型或为其设置标签。
 
@@ -456,6 +462,25 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 有关类似于支持本机保护，但必须在注册表中指定的文本和图像文件类型的列表，请参阅[支持分类和保护的文件类型](./rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection)。
 
 对于不支持本机保护的文件，请将文件扩展名指定为新密钥，并为 PFile 获取常规保护。 对于受保护的文件，生成的文件扩展名为 .pfile。
+
+### <a name="scanner-from-the-unified-labeling-client-use-powershell-to-change-which-file-types-are-protected"></a>来自统一标签客户端的扫描程序：使用 PowerShell 更改受保护的文件类型
+
+本部分仅适用于统一标签客户端中的扫描程序。
+
+对于适用于为扫描程序下载标签的用户帐户的标签策略，请指定名为**PFileSupportedExtensions**的 PowerShell 高级设置。 
+
+> [!NOTE]
+> 对于有权访问 Internet 的扫描仪，此用户帐户是你为*DelegatedUser*参数指定的、带有 set-aipauthentication 命令的帐户。
+
+示例1：用于扫描程序的 PowerShell 命令，用于保护所有文件类型，其中标签策略命名为 "Scanner"：
+
+    Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions="*"}
+
+示例2：用于扫描程序的 PowerShell 命令，用于保护 .xml 文件和 tiff 文件以及 Office 文件和 PDF 文件，其中的标签策略命名为 "Scanner"：
+
+    Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions=ConvertTo-Json(".xml", ".tiff")}
+
+有关详细说明，请参阅管理员指南中的[更改要保护的文件类型](./rms-client/clientv2-admin-guide-customizations.md#change-which-file-types-to-protect)。
 
 
 ## <a name="when-files-are-rescanned"></a>重新扫描文件时的情况
