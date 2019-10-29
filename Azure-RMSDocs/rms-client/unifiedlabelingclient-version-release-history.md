@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/23/2019
+ms.date: 10/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,23 +12,23 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7a41debe26783b530ec92dd38aa308b5e9da7546
-ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
+ms.openlocfilehash: 1f0ed559646acb36931a55ed2cd321bae91395fc
+ms.sourcegitcommit: 3464f9224b34dc54ad6fc1b7bc4dc11ad1ab8d59
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72805270"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984846"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，带 SP1 的 windows 7，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012，windows Server 2008 r2*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 
 你可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端。
 
-在通常几周的短暂延迟后，最新的正式发行版还会包含在 Microsoft 更新目录中，产品名称**Microsoft Azure 信息保护** > **Microsoft Azure 信息保护统一标签客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
+在通常几周的短暂延迟后，最新的正式发行版也包含在 Microsoft 更新目录中，产品名称为**Microsoft Azure 信息保护** > **Microsoft Azure 信息保护统一标签客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
 
 有关详细信息，请参阅[升级和维护 Azure 信息保护统一标签客户端](clientv2-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-unified-labeling-client)。
 
@@ -51,7 +51,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 ## <a name="version-25330"></a>版本2.5.33。0
 
-**发布**日期：10/23/2019
+**发布日期**：10/23/2019
 
 **新功能：**
 
@@ -64,15 +64,15 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
     - 即使已标记文档，也可以在所有文档上设置一个默认标签。 在 "扫描程序配置文件" 或 "存储库设置" 中，将 "重新**标记文件**" 选项设置为 "**打开**"，并选择 "新建**强制默认标签**
     
     - 您可以删除所有文档中的现有标签，此操作包括删除保护（如果以前已被标签应用）。 将保留独立于标签的保护。 此扫描程序配置是在扫描程序配置文件或存储库设置中通过以下设置实现的：
-        - **基于内容标记文件**：**关**
+        - **基于内容标记文件**：**关闭**
         - **默认标签**：**无**
-        - 重新**标记文件**：**打开**并选中 "**强制默认标签**" 复选框
+        - **重新标记文件**：**在**选中 "**强制默认标签**" 复选框
     
-    - 与经典客户端的扫描程序一样，扫描程序可保护 Office 文件和 PDF 文件。 目前，你无法将其他文件类型配置为受此版本的扫描程序保护。
+    - 与经典客户端的扫描程序一样，默认情况下，扫描程序可保护 Office 文件和 PDF 文件。 使用[PowerShell 高级设置](clientv2-admin-guide-customizations.md#change-which-file-types-to-protect)时，可保护其他文件类型。
     
-    - 已知问题：不能将新的和重命名的标签选作扫描仪配置文件或存储库设置的默认标签。 之一
+    - 已知问题："新建" 和 "重命名" 标签不可用于选择作为扫描仪配置文件或存储库设置的默认标签。 之一
         - 对于新标签：在 Azure 门户中，将要使用的[标签添加](../configure-policy-add-remove-label.md)到全局策略或作用域内策略。
-        - 对于重命名的标签：在 Azure 门户中，请参阅**Azure 信息保护** > **管理** > **统一标签**，然后选择 "**发布**"。
+        - 对于重命名标签：关闭并重新打开 Azure 门户。
     
     你可以从 Azure 信息保护客户端（经典）升级扫描仪。 在升级后，这会创建一个新的数据库，扫描程序在第一次运行时重新扫描所有文件。 有关说明，请参阅管理员指南中[的升级 Azure 信息保护扫描程序](clientv2-admin-guide.md#upgrading-the-azure-information-protection-scanner)。
     
@@ -81,6 +81,8 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 - 如果你希望以非交互方式标记文件，还可以使用 PowerShell cmdlet [set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication)的新参数（*AppId*、 *AppSecret*、 *TenantId*、 *DelegatedUser*和*OnBehalfOf*）以及新的在 Azure AD 中注册应用程序的过程。 示例方案包括用于标记文档的扫描程序和自动 PowerShell 脚本。 有关说明，请参阅如何从管理员指南以[非交互方式标记文件](clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
     
     请注意， *DelegatedUser*是自上次预览版本的统一标签客户端以来的新参数，并且已注册应用的 API 权限已更改。
+
+- 新 PowerShell 标签策略高级设置，用于[更改要保护的文件类型](clientv2-admin-guide-customizations.md#change-which-file-types-to-protect)。
 
 - 新 PowerShell 标签策略高级设置，用于将[标签迁移规则扩展到 SharePoint 属性](clientv2-admin-guide-customizations.md#extend-your-label-migration-rules-to-sharepoint-properties)。
 
@@ -110,7 +112,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 ## <a name="version-22210"></a>版本2.2.21。0
 
-**发布**日期：09/03/2020
+**发布日期**：09/03/2020
 
 支持，04/23/2020
 
@@ -122,7 +124,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 ## <a name="version-22190"></a>版本2.2.19。0
 
-**发布**日期：08/06/2019
+**发布日期**：08/06/2019
 
 支持，03/03/2020
 
@@ -134,7 +136,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 ## <a name="version-22140"></a>版本2.2.14。0
 
-**发布**日期：07/15/2019
+**发布日期**：07/15/2019
 
 支持，02/06/2020
 
@@ -165,12 +167,12 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 - 支持为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置的标签。 有关详细信息，请参阅 Office 文档中的[允许用户分配权限](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions)部分。
 
 - AzureInformationProtection 模块中的 PowerShell 更改：
-    - 新 cmdlet： [AIPCustomPermissions](/powershell/module/azureinformationprotection/New-AIPCustomPermissions) -替换 RMSProtectionLicense，为自定义权限创建即席策略
+    - 新 cmdlet：[AIPCustomPermissions](/powershell/module/azureinformationprotection/New-AIPCustomPermissions) -替换 RMSProtectionLicense，为自定义权限创建即席策略
     - 新参数：
         -  *CustomPermissions*和*RemoveProtection* -添加到[set-aipfilelabel](/powershell/module/azureinformationprotection/Set-AIPFileLabel)
         -  *OnBeHalfOf* -已添加到[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication)，用于代替非交互式会话的*令牌*参数
         -  *WhatIf*和*DiscoveryInfoTypes*已添加到[set-aipfileclassification](/powershell/module/azureinformationprotection/set-aipfileclassification)，因此此 cmdlet 可以在发现模式下运行，而无需应用标签
-    - 直接连接到保护服务的不推荐使用的 cmdlet： RMSAuthentication、Get-rmsfilestatus、RMSServer、Set-rmsserverauthentication、Get-rmstemplate、Protect-rmsfile、set-rmsserverauthentication、protect-rmsfile、
+    - 直接连接到保护服务的不推荐使用的 cmdlet：清除-RMSAuthentication、Get-rmsfilestatus、RMSServer、Set-rmsserverauthentication、Get-rmstemplate、protect-rmsfile、set-rmsserverauthentication、protect-rmsfile、取消保护-
 
 
 **纠正**
@@ -187,7 +189,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 ## <a name="version-207790"></a>版本2.0.779。0
 
-**发布**日期：05/01/2019
+**发布日期**：05/01/2019
 
 支持，02/15/2020
 
@@ -195,7 +197,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 ## <a name="version-207780"></a>版本2.0.778。0
 
-**发布**日期：04/16/2019
+**发布日期**：04/16/2019
 
 支持，11/01/2019
 
@@ -203,7 +205,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 - 从 Azure 信息保护客户端升级。
 
-- 手动、自动和建议的标签：有关为此客户端配置自动和建议标记的详细信息，请参阅对[内容自动应用敏感标签](/microsoft-365/compliance/apply-sensitivity-label-automatically)。
+- 手动、自动和建议标记：有关为此客户端配置自动和建议标签的详细信息，请参阅[将敏感度标签自动应用于内容](/microsoft-365/compliance/apply-sensitivity-label-automatically)。
 
 - 文件资源管理器、用于分类和保护文件的右键单击操作、删除保护和应用自定义权限。
 
@@ -226,8 +228,8 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 - 管理中心中的策略刷新：
     - 在 Office 应用程序每次启动时刷新，每 4 小时刷新一次
-    - 在右键单击以分类和保护文件或文件夹时
-    - 在运行 PowerShell cmdlet 以实现标记和保护时
+    - 在右键单击以分类和保护文件或文件夹时刷新
+    - 在运行 PowerShell cmdlet 以实现标记和保护时刷新
 
 - “帮助和反馈”对话框，其中包括重置设置和导出日志。
 
@@ -238,7 +240,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 有关安装和使用该客户端的详细信息： 
 
-- 用户请参阅：[下载并安装客户端](install-unifiedlabelingclient-app.md)
+- 面向用户：[下载并安装客户端](install-unifiedlabelingclient-app.md)
 
-- 对于管理员： [Azure 信息保护统一标签客户端管理员指南](clientv2-admin-guide.md)
+- 面向管理员：[Azure 信息保护统一标签客户端管理员指南](clientv2-admin-guide.md)
 
