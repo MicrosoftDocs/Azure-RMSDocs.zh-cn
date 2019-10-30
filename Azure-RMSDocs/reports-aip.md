@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: cabailey
 ms.author: cabailey
-ms.date: 10/24/2019
+ms.date: 10/29/2019
 manager: rkarlin
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8b9245eea83c3ff3fa58312c866310876d8e2814
-ms.sourcegitcommit: 801f9d138e491788a618a5b918305dc3666648b4
+ms.openlocfilehash: 8f8022ba40b04c7a579cdf4caf7f9a8d60c19014
+ms.sourcegitcommit: e90658d1a43e883f8abef9a8c242a920cd484cbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72890299"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057687"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -294,7 +294,6 @@ Azure 信息保护的记录数据存储在下表中：InformationProtectionLogs_
 |LabelNameBefore |更改前的标签名称（未本地化） |
 |ProtectionType|保护类型 [JSON] <br />{ <br />"Type": ["Template", "Custom", "DoNotForward"], <br />  "TemplateID"： "GUID" <br /> } <br />|
 |ProtectionBefore|更改前的保护类型 [JSON] |
-|InformationTypesMatches|在数据中找到的[SensitiveInformation](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for)的 JSON 数组，其中空数组表示找不到任何信息类型，null 表示没有可用信息|
 |MachineName |FQDN （如果可用）;否则为主机名|
 |DeviceRisk|WDATP 可用时的设备风险评分|
 |平台|设备平台（Win、OSX、Android、iOS） |
