@@ -4,7 +4,7 @@ description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/24/2019
+ms.date: 10/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 75c0d64f298b98408a8e1fb55c78c1bded1ecc1a
-ms.sourcegitcommit: 801f9d138e491788a618a5b918305dc3666648b4
+ms.openlocfilehash: 0ca0c5ef490ffabf50d8d6f7e5c0845f614dcff3
+ms.sourcegitcommit: fddfc96390fa40a0365e3be1293618a2c3d8a6fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72890316"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73142820"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -97,6 +97,7 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 |使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |“是”|管理中心现在具有用户定义的权限的配置选项。 <br /><br /> 如果使用此配置发布标签，请查看[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中应用标签的结果。|
 |使用 Outlook（不可转发）中用户定义权限的基于 HYOK 的保护 |否|HYOK 没有配置选项。 我们不建议使用此配置发布标签。 否则，请在[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中查看应用此标签所带来的后果。|
 |删除保护 |否|没有用于删除保护的配置选项。 我们不建议使用此配置发布标签。<br /><br /> 如果使用此配置发布标签，则在应用该标签时，始终会删除保护，无论是通过标签还是独立于标签对保护进行保护。|
+|任何经过身份验证的用户保护设置 |“是”|没有用于选择此保护设置的配置选项。 如果此设置已迁移或在 Azure 门户中进行配置，请使用此配置发布标签。|
 |为视觉标记（页眉、页脚、水印）使用 RGB 代码自定义字体和字体颜色|“是”|视觉标记的配置限制为颜色和字体大小列表。 尽管无法看见管理中心中配置的值，仍可以不做任何更改发布此标签。 <br /><br />若要更改这些选项，可以使用 Azure 门户。 但是，请考虑将颜色更改为管理中心中列出的选项之一，以便于管理。|
 |视觉标记（页眉、页脚）中的变量|否|如果不做更改就发布此标签，则变量将在客户端上显示为文本而不是显示动态值。 发布标签之前，请编辑字符串以删除变量。|
 |每个应用的视觉标记|否|如果不做更改就发布此标签，则在所有应用中应用变量将在客户端上显示为文本，而不是在所选的应用上显示文本字符串。 仅当适用于所有应用时发布此标签，并编辑字符串以删除应用变量。|
