@@ -1,9 +1,10 @@
 ---
 title: 自定义配置-Azure 信息保护统一标签客户端
+description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签客户端的信息。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/27/2019
+ms.date: 11/01/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6db8efdd32d945ad5e604041b87e7da2a2ee1b8b
-ms.sourcegitcommit: 3464f9224b34dc54ad6fc1b7bc4dc11ad1ab8d59
+ms.openlocfilehash: 9c0ccde192774f90c95afd70ce1acb766d6a66f1
+ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984915"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445178"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -902,7 +903,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 此配置使用必须使用 Office 365 安全与合规中心 PowerShell 配置的标签[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。
 
-仅当使用的是[S/MIME 部署](https://docs.microsoft.com/microsoft-365/compliance/s-mime-for-message-signing-and-encryption)并且需要标签以自动将此保护方法应用于电子邮件，而不是从 Azure 信息保护 Rights Management 保护时，才使用这些设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
+仅当使用的是[S/MIME 部署](https://docs.microsoft.com/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption)并且需要标签以自动将此保护方法应用于电子邮件，而不是从 Azure 信息保护 Rights Management 保护时，才使用这些设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
 
 若要为 S/MIME 数字签名配置高级设置，请为所选标签输入以下字符串：
 

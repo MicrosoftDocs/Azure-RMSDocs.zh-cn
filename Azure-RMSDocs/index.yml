@@ -11,13 +11,13 @@ metadata:
   author: cabailey
   ms.author: cabailey
   manager: rkarlin
-  ms.date: 09/17/2019
-  ms.openlocfilehash: d742e972ab50a297641de26723f05b4129806ca0
-  ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
+  ms.date: 11/01/2019
+  ms.openlocfilehash: 433565965e0f3cdf8dfd94ed11769b547c75a01c
+  ms.sourcegitcommit: 260bf72bbc04e825c825805824546d203821f6c6
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/23/2019
-  ms.locfileid: "72805486"
+  ms.lasthandoff: 11/01/2019
+  ms.locfileid: "73428728"
 landingContent:
 - title: 关于 Azure 信息保护
   linkLists:
@@ -45,6 +45,22 @@ landingContent:
       url: deployment-roadmap.md
     - text: 常见方案
       url: how-to-guides.md
+- title: 保持最新
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: 10 月的 Doc 更新
+      url: https://techcommunity.microsoft.com/t5/Azure-Information-Protection/bg-p/AzureInformationProtectionBlog
+    - text: 版本 2.5.33.0 详细信息 - 统一标记客户端
+      url: ./rms-client/unifiedlabelingclient-version-release-history.md#version-25330
+    - text: 前 5 个建议的 Ignite 会话
+      url: what-is-information-protection.md#microsoft-ignite
+- title: 对本地数据存储中的数据进行分类和保护
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 部署扫描程序
+      url: deploy-aip-scanner.md
 - title: 自定义客户端
   linkLists:
   - linkListType: how-to-guide
@@ -53,28 +69,6 @@ landingContent:
       url: ./rms-client/client-admin-guide-customizations.md
     - text: 统一标记客户端：高级设置
       url: ./rms-client/clientv2-admin-guide-customizations.md
-- title: 激活统一标记
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: 比较客户端
-      url: ./rms-client/use-client.md#choose-which-labeling-client-to-use-for-windows-computers
-  - linkListType: how-to-guide
-    links:
-    - text: 迁移 Azure 信息保护标签
-      url: configure-policy-migrate-labels.md
-- title: 对本地数据存储中的数据进行分类和保护
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 部署扫描程序
-      url: deploy-aip-scanner.md
-- title: 监视标签使用情况和发现敏感信息
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 中心报告（预览）
-      url: reports-aip.md
 - title: Microsoft 信息保护 SDK
   linkLists:
   - linkListType: overview
@@ -91,3 +85,19 @@ landingContent:
     links:
     - text: C++ API 参考
       url: /information-protection/develop/mip-sdk-reference
+- title: 激活统一标记
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 选择标记客户端
+      url: ./rms-client/use-client.md#choose-which-labeling-client-to-use-for-windows-computers
+  - linkListType: how-to-guide
+    links:
+    - text: 迁移 Azure 信息保护标签
+      url: configure-policy-migrate-labels.md
+- title: 监视标签使用情况和发现敏感信息
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 中心报告（预览）
+      url: reports-aip.md

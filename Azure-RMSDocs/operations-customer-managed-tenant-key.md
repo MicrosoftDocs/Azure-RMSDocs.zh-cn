@@ -4,7 +4,7 @@ description: 当你自己管理 Azure 信息保护租户密钥（自带密钥方
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/28/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f8eb311e42f17398a0564d6caf4b02618609d9d5
-ms.sourcegitcommit: dc7603461ce9300635bcb389c18e2e708a8229df
+ms.openlocfilehash: 682ed03cfafa9dad1d9696d51e0b64c71dea6fa3
+ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70121787"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445049"
 ---
-# <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管:租户密钥生命周期操作
+# <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 如果你自己管理 Azure 信息保护租户密钥（自带密钥方案，简称 BYOK），请阅读以下部分，详细了解此拓扑相关的生命周期操作。
 
@@ -46,9 +46,9 @@ ms.locfileid: "70121787"
 
 若要将密钥重新生成为所管理的其他密钥，可在 Azure Key Vault 中创建新的密钥，或使用 Azure Key Vault 中已有的其他密钥。 然后按照为 Azure 信息保护实现 BYOK 的相同过程进行操作。 
 
-1. 仅当新密钥与已用于 Azure 信息保护的密钥位于不同的密钥保管库中时：授权 Azure 信息保护使用密钥保管库, 方法是使用[AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) cmdlet。
+1. 仅当新密钥与你已用于 Azure 信息保护的密钥保管库位于不同的密钥保管库中时：通过使用[AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) Cmdlet 将 Azure 信息保护授权为使用密钥保管库。
 
-2. 如果 Azure 信息保护尚未知道要使用的密钥, 请运行[AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet。
+2. 如果 Azure 信息保护尚未知道要使用的密钥，请运行[AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet。
 
 3. 使用运行[AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) cmdlet 配置租户密钥对象。
 
@@ -63,7 +63,7 @@ ms.locfileid: "70121787"
 ## <a name="backup-and-recover-your-tenant-key"></a>备份和恢复你的租户密钥
 由于是你本人管理自己的租户密钥，因此你需负责备份 Azure 信息保护使用的密钥。 
 
-如果在本地生成租户密钥, 请在 nCipher HSM 中执行以下操作:若要备份此密钥，需备份已标记化密钥文件、体系文件和管理员卡。 将密钥传送到 Azure Key Vault 时，该服务将保存已标记化的密钥文件，以防出现任何服务节点故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将此标记化密钥文件作为完全备份。 例如, 如果你需要密钥的明文副本在 nCipher HSM 外部使用, Azure Key Vault 无法为你检索该副本, 因为它仅有不可恢复的副本。
+如果在本地生成租户密钥，请在 nCipher HSM：若要备份密钥，请备份标记化密钥文件、世界文件和管理员卡。 将密钥传送到 Azure Key Vault 时，该服务将保存已标记化的密钥文件，以防出现任何服务节点故障。 将此文件绑定到特定 Azure 区域或实例的安全体系。 但是，不要将此标记化密钥文件作为完全备份。 例如，如果你需要密钥的明文副本在 nCipher HSM 外部使用，Azure Key Vault 无法为你检索该副本，因为它仅有不可恢复的副本。
 
 Azure Key Vault 具有一个[备份 cmdlet](/powershell/module/az.keyvault/backup-azkeyvaultkey)，可通过将其下载并存储到一个文件中来备份密钥。 由于下载的内容已加密，因此它不能在 Azure Key Vault 外使用。 
 
@@ -73,7 +73,7 @@ Azure Key Vault 具有一个[备份 cmdlet](/powershell/module/az.keyvault/backu
 ## <a name="respond-to-a-breach"></a>对违规行为做出响应
 如果没有违规响应流程，无论如何强大的安全系统都是不完整的。 你的租户密钥可能泄漏或失窃。 即便它得到了很好的保护，在当前这代密钥技术或当前的密钥长度和算法方面也可以找到一些漏洞。
 
-Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全事件。 当收到某个事件的可信报告时，该团队将参与调查事件的范围、根本原因和缓解办法。 如果此事件影响到资产, Microsoft 将通过电子邮件通知你的租户全局管理员。
+Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全事件。 当收到某个事件的可信报告时，该团队将参与调查事件的范围、根本原因和缓解办法。 如果此事件影响到资产，Microsoft 将通过电子邮件通知你的租户全局管理员。
 
 如果你发现了安全违规行为，则你或 Microsoft 能够采取的最佳行动取决于安全违规的范围；Microsoft 将与你共同完成这个过程。 下表显示了一些典型情况以及可能的响应，但具体的响应要取决于在调查过程中揭示的所有信息。
 

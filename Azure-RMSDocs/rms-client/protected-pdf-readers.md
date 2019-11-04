@@ -4,7 +4,7 @@ description: 为标记为分类和保护的 PDF 文档安装读取器
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/22/2019
+ms.date: 10/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: user
 search.appverid:
 - MET150
-ms.openlocfilehash: 390eb0bd48b4b9ca6f36957a2ac63ed6903a83fc
-ms.sourcegitcommit: 84190253d8682032912b36e291f17105d7f9d7f8
+ms.openlocfilehash: 23d9f5cf45b579542ecb9c297270bc426c2a914b
+ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69974786"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73444841"
 ---
 # <a name="pdf-readers-that-support-microsoft-information-protection"></a>支持 Microsoft 信息保护的 PDF 读者
 
@@ -29,9 +29,9 @@ ms.locfileid: "69974786"
 
 选择用来安装 PDF 读取器的设备，该设备可以打开受保护的 PDF 文档。 所有这些读者都可以打开受保护的文档，这些文档符合 PDF 加密的 ISO 标准：
 
-- **计算机**：[Windows](protected-pdf-readers-windows.md) | [MacOS](protected-pdf-readers-mac.md)
+- **计算机**： [Windows](protected-pdf-readers-windows.md) | [MacOS](protected-pdf-readers-mac.md)
 
-- **移动设备**：[Android](protected-pdf-readers-android.md) | [iOS](protected-pdf-readers-ios.md)
+- **移动设备**： [Android](protected-pdf-readers-android.md) | [iOS](protected-pdf-readers-ios.md)
 
 ### <a name="support-for-previous-formats"></a>支持以前的格式
 

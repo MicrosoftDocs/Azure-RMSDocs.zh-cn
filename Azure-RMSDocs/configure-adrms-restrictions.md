@@ -4,29 +4,29 @@ description: 具有 Azure 信息保护的 HYOK (AD RMS) 保护概述、其支持
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/09/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 ms.subservice: hyok
 ms.custom: admin
-ms.openlocfilehash: 149bf28e72f333eafa090e75e8703b6fe3a61165
-ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
+ms.openlocfilehash: 6157f321b04a4c0b755b1d8e17a663f8f58d281f
+ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71313935"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73444817"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>用于 Azure 信息保护的保留自己的密钥 (HYOK) 保护
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 使用以下信息了解什么是用于 Azure 信息保护的保留自己的密钥 (HYOK)，以及它与默认的基于云的保护有何不同。 使用 HYOK 保护前，请确保了解适用情况、支持的方案、限制和需求。 
 
-## <a name="cloud-based-protection-vs-hyok"></a>基于云的保护与HYOK
+## <a name="cloud-based-protection-vs-hyok"></a>基于云的保护与 HYOK
 
 使用 Azure 信息保护来保护最敏感的文档和电子邮件时，通常会应用使用 Azure 权限管理 (Azure RMS) 保护的基于云的密钥，以便从以下优势中受益：
 
@@ -70,25 +70,25 @@ ms.locfileid: "71313935"
 
 |平台|应用程序|支持|
 |----------------------|----------|-----------|
-|Windows|带有 Office 365 应用、Office 2019、Office 2016 和 Office 2013 的 Azure 信息保护客户端 <br /><br />- Word、Excel、PowerPoint|保护:是<br /><br />使用：是|
-|Windows|带有 Office 365 应用、Office 2019、Office 2016 和 Office 2013 的 Azure 信息保护客户端 <br /><br />- Outlook|保护:是<br /><br />使用：是|
-|Windows|具有文件资源管理器的 Azure 信息保护客户端|保护:是 <br /><br />使用：是|
-|Windows|Azure 信息保护查看器|保护:“不适用”<br /><br />使用：是|
-|Windows|带有 PowerShell 标签 cmdlet 的 Azure 信息保护客户端|保护:是<br /><br />使用：是|
-|Windows|Azure 信息保护扫描程序|保护:是<br /><br />使用：是|
-|Windows|权限管理共享应用|保护:否<br /><br />使用：是|
-|MacOS|Office for Mac <br /><br /> - Word、Excel、PowerPoint|保护:否<br /><br />使用：是|
-|MacOS|Office for Mac<br /><br />- Outlook|保护:否<br /><br />使用：是|
-|MacOS|权限管理共享应用|保护:否<br /><br />使用：是|
-|iOS|Office Mobile <br /><br />- Word、Excel、PowerPoint|保护:否<br /><br />使用：是|
-|iOS|Office Mobile <br /><br />-Outlook|保护:否<br /><br />使用：否|
-|iOS|Azure 信息保护查看器|保护:“不适用”<br /><br />使用：是|
-|Android|Office Mobile <br /><br />- Word、Excel、PowerPoint|保护:否<br /><br />使用：是|
-|Android|Office Mobile <br /><br />- Outlook|保护:否<br /><br />使用：否|
-|Android|Azure 信息保护查看器|保护:“不适用”<br /><br />使用：是|
-|站点|Web 上的 Outlook|保护:否<br /><br />使用：否|
-|站点|适用于 web 的 Office<br /><br />- Word、Excel、PowerPoint|保护:否<br /><br />使用：否|
-|通用|Office 通用应用<br /><br />- Word、Excel、PowerPoint|保护:否<br /><br />使用：否|
+|Windows|带有 Office 365 应用、Office 2019、Office 2016 和 Office 2013 的 Azure 信息保护客户端 <br /><br />- Word、Excel、PowerPoint|保护：是<br /><br />使用：是|
+|Windows|带有 Office 365 应用、Office 2019、Office 2016 和 Office 2013 的 Azure 信息保护客户端 <br /><br />- Outlook|保护：是<br /><br />使用：是|
+|Windows|具有文件资源管理器的 Azure 信息保护客户端|保护：是 <br /><br />使用：是|
+|Windows|Azure 信息保护查看器|保护：不适用<br /><br />使用：是|
+|Windows|带有 PowerShell 标签 cmdlet 的 Azure 信息保护客户端|保护：是<br /><br />使用：是|
+|Windows|Azure 信息保护扫描程序|保护：是<br /><br />使用：是|
+|Windows|权限管理共享应用|保护：否<br /><br />使用：是|
+|MacOS|Office for Mac <br /><br /> - Word、Excel、PowerPoint|保护：否<br /><br />使用：是|
+|MacOS|Office for Mac<br /><br />- Outlook|保护：否<br /><br />使用：是|
+|MacOS|权限管理共享应用|保护：否<br /><br />使用：是|
+|iOS|Office Mobile <br /><br />- Word、Excel、PowerPoint|保护：否<br /><br />使用：是|
+|iOS|Office Mobile <br /><br />-Outlook|保护：否<br /><br />使用：否|
+|iOS|Azure 信息保护查看器|保护：不适用<br /><br />使用：是|
+|Android|Office Mobile <br /><br />- Word、Excel、PowerPoint|保护：否<br /><br />使用：是|
+|Android|Office Mobile <br /><br />- Outlook|保护：否<br /><br />使用：否|
+|Android|Azure 信息保护查看器|保护：不适用<br /><br />使用：是|
+|站点|Web 上的 Outlook|保护：否<br /><br />使用：否|
+|站点|适用于 web 的 Office<br /><br />- Word、Excel、PowerPoint|保护：否<br /><br />使用：否|
+|通用|Office 通用应用<br /><br />- Word、Excel、PowerPoint|保护：否<br /><br />使用：否|
 
 
 ## <a name="additional-limitations-when-using-hyok"></a>使用 HYOK 时的其他限制
@@ -119,7 +119,7 @@ AD RMS 部署必须满足以下要求，才能为 Azure 信息保护标签提供
 
 - AD RMS 配置：
     
-  - Windows Server 2012 R2 的最低版本：生产环境需要此版本，但出于测试或评估目的时，可以使用 Windows Server 2008 R2（含 Service Pack 1）的最低版本。
+  - 最小版本的 Windows Server 2012 R2：生产环境需要此版本，但用于测试或评估时，可以使用带 Service Pack 1 的 Windows Server 2008 R2 的最小版本。
     
   - 以下拓扑之一：
         
@@ -131,31 +131,31 @@ AD RMS 部署必须满足以下要求，才能为 Azure 信息保护标签提供
         
     如果单独的林中具有多个 AD RMS 群集，删除应用 HYOK (AD RMS) 保护并为每个群集配置[作用域策略](configure-policy-scope.md)的全局策略中的任何标签。 将每个群集的用户分配到其作用域策略，确保不使用会导致用户分配到多个作用域策略的组。 结果应是每个用户仅有一个 AD RMS 群集的标签。 
     
-  - [加密模式 2](https://technet.microsoft.com/library/hh867439.aspx)：可以通过检查 AD RMS 群集属性、“常规”选项卡来确认此模式。
+  - [加密模式 2](https://technet.microsoft.com/library/hh867439.aspx)：可以通过检查 AD RMS 群集属性、“常规”选项卡来确认该模式。
     
   - 每个 AD RMS 服务器都针对证书 URL 进行了配置。 [说明](#configuring-ad-rms-servers-to-locate-the-certification-url) 
     
-  - 未在 Active Directory 中注册服务连接点 (SCP)：当通过 Azure 信息保护使用 AD RMS 保护时，不会使用 SCP。 
+  - Active Directory 中未注册服务连接点 (SCP)：结合使用 AD RMS 保护和 Azure 信息保护时未使用 SCP。 
     
       - 如果已就 AD RMS 部署注册了 SCP，必须将其删除，以便 Azure 权限管理保护功能成功[发现服务](./rms-client/client-deployment-notes.md#rms-service-discovery)。 
         
       - 如果你正在为 HYOK 安装新的 AD RMS 群集，则跳过在配置第一个节点期间注册 SCP 的步骤。 对于每个其他节点，请确保在添加 AD RMS 角色并加入现有群集前，服务器已针对证书 URL 进行了配置。
     
-  - AD RMS 服务器配置为使用带有受连接客户端信任的有效 x.509 证书的 SSL/TLS：生产环境所需，但出于测试或评估目的则不需要。
+  - 配置 AD RMS 服务器，以搭配使用 SSL/TLS 和受连接的客户端信任的有效 x.509 证书：生产环境需要，但用于测试或评估时不需要。
     
   - 已配置的权限模板。
     
   - 未为 Exchange IRM 配置。
     
-  - 对于移动设备和 Mac 计算机：已安装并配置了 [Active Directory Rights Management Services 移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)。
+  - 对于移动设备和 Mac 计算机：已安装并配置 [Active Directory Rights Management 服务移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)。
 
 - 在本地 Active Directory 和 Azure Active Directory 之间配置了目录同步，并且为将使用 HYOK 保护的用户配置了单一登录。
 
-- 如果与组织外部的人员共享受 HYOK 保护的文档或电子邮件：通过使用受信任的用户域 (TUD) 或使用通过 Active Directory 联合身份验证服务 (AD FS) 创建的联合信任，为在与其他组织的直接点对点关系中显式定义的信任配置 AD RMS。
+- 如果与组织外的其他人共享由 HYOK 保护的文档或电子邮件：请通过受信任用户域 (TUD) 或使用 Active Directory 联合身份验证服务 (AD FS) 创建的联合信任，在与其他组织的直接点对点关系中为 AD RMS 配置显式定义的信任。
 
 - 用户拥有的 Office 版本支持信息权限管理 (IRM) 且至少为 Office 2013 专业增强版 Service Pack 1，并且在 Windows 7 Service Pack 1 或更高版本上运行。 请注意，此方案不支持 Office 2010 和 Office 2007。
     
-    - 对于 Office 2016，基于 Microsoft Installer (.msi) 的版本：已安装了 [2018 年 3 月 6 日发布的 Microsoft Office 2016 的更新 4018295](https://support.microsoft.com/en-us/help/4018295/march-6-2018-update-for-office-2016-kb4018295)。
+    - 对于 Office 2016，基于 Microsoft Installer （.msi）的版本：你已为[年3月 6 2018 日发布的 Microsoft Office 2016 安装更新 4018295](https://support.microsoft.com/en-us/help/4018295/march-6-2018-update-for-office-2016-kb4018295)。
 
 > [!IMPORTANT]
 > 为了实现 HYOK 保护提供的高确定性，建议不要将 AD RMS 服务器放在外围网络中，并且只能由受管理设备使用这些服务器。 
@@ -189,11 +189,11 @@ AD RMS 部署必须满足以下要求，才能为 Azure 信息保护标签提供
 
 可以从 Active Directory Rights Management Services 控制台中找到模板 GUID 和授权 URL 的值：
 
-- 查找模板 GUID：展开群集，并单击“权限策略模板”。 随后，从“分布式权限策略模板”信息中，可以复制要使用的模板中的 GUID。 例如：82bf3474-6efe-4fa1-8827-d1bd93339119
+- 要找到模板 GUID：请展开该群集，并单击“权限策略模板”。 随后，从“分布式权限策略模板”信息中，可以复制要使用的模板中的 GUID。 例如：82bf3474-6efe-4fa1-8827-d1bd93339119
 
-- 查找授权 URL：单击群集名称。 从“群集详细信息”信息中，复制除 **/_wmcs/licensing** 字符串以外的“授权”值。 例如： https://rmscluster.contoso.com 
+- 若要查找授权 URL：请单击群集名称。 从“群集详细信息”信息中，复制除 **/_wmcs/licensing** 字符串以外的“授权”值。 例如： https://rmscluster.contoso.com 
     
-    如果你有一个 extranet 授权值以及一个 Intranet 授权值，并且它们是不同的：仅当你将与通过显式的点对点信任定义的合作伙伴共享受保护的文档或电子邮件时才指定 extranet 值。 否则使用 Intranet 值，并确保针对 Azure 信息保护使用 AD RMS 保护的所有客户端计算机均通过 Intranet 连接进行连接（例如，远程计算机使用 VPN 连接）。
+    如果你有一个 Extranet 授权值和一个 Intranet 授权值，并且两个值不同：仅当与定义为具有显式点对点信任关系的合作伙伴共享受保护的文档或电子邮件时，才指定 Extranet 值。 否则使用 Intranet 值，并确保针对 Azure 信息保护使用 AD RMS 保护的所有客户端计算机均通过 Intranet 连接进行连接（例如，远程计算机使用 VPN 连接）。
 
 
 ## <a name="next-steps"></a>后续步骤
