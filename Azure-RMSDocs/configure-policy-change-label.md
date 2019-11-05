@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: cc54db36ac6e3a4962f6eb8a522293c009a6cd22
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.openlocfilehash: 8cf449b26ced29b57a51dc6657105805bafbd9fe
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71684137"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559254"
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>如何更改或自定义 Azure 信息保护的现有标签
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 通过在 Azure 门户中配置标签，可以更改或优化用户在“信息保护”栏或从 Office 功能区的“保护”按钮看到的任何标签。
 
@@ -30,19 +30,19 @@ ms.locfileid: "71684137"
 
 若要更改标签，请按照以下说明操作：
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。 
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护**" 窗格。 
     
-    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+    例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
 
-2. 从“分类” > “标签”菜单选项中：在“Azure 信息保护 - 标签”边栏选项卡上，选择要更改的标签。
+2. 从 "**分类** > **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格中，选择要更改的标签。
 
-    例外情况是如果你想要重排标签：右键单击标签或选择标签的上下文菜单（而不是选择标签）。 然后，选择“上移”或“下移”选项。
+    除非你想要对标签进行重新排序：右键单击标签或选择标签的上下文菜单（而不是选择标签）。 然后，选择“上移”或“下移”选项。
 
-3. 无论何时在新边栏选项卡上进行更改，如果想要保留所做的更改，请在该边栏选项卡上单击“保存”。
+3. 无论何时在新窗格中进行更改，如果想要保留所做的更改，请单击该窗格上的 "**保存**"。
     
     单击“保存”时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
 
-4. 如果更改了标签显示名称或说明，并且配置了其他语言的名称或说明：再次导出 Azure 信息保护策略，提供新的翻译并导入更改。 有关详细信息，请参阅[如何为不同的语言配置标签](configure-policy-languages.md)。
+4. 如果更改了标签显示名称或说明，并针对其他语言进行了配置：再次导出 Azure信息保护策略，提供新的翻译并导入更改。 有关详细信息，请参阅[如何为不同的语言配置标签](configure-policy-languages.md)。
 
 > [!TIP]
 >如果你想要将其中一个默认标签返回到默认值，请使用 [默认信息保护策略](configure-policy-default.md)(#默认信息保护策略) 中的信息。

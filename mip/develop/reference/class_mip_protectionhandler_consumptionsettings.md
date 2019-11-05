@@ -5,25 +5,25 @@ author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: d99b7c3468cc98ad655e41bdd2aaa771a287aca2
-ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
+ms.date: 10/29/2019
+ms.openlocfilehash: 63a7f3c377a40a5faf82afe332a12efed0d646c4
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "70057561"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73560727"
 ---
 # <a name="class-mipprotectionhandlerconsumptionsettings"></a>类 mip：:P rotectionHandler：： ConsumptionSettings 
-用于创建[ProtectionHandler](class_mip_protectionhandler.md)以使用现有内容的设置。
+用于创建 ProtectionHandler 以使用现有内容的设置。
   
 ## <a name="summary"></a>“摘要”
  成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public ConsumptionSettings （const std：： vector\<uint8_t\>& serializedPublishingLicense）  | 用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
+public ConsumptionSettings （const std：： vector\<uint8_t\>& serializedPublishingLicense）  |  用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
 public ConsumptionSettings （const std：： shared_ptr\<PublishingLicenseInfo\>& licenseInfo）  |  用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
 public std：： shared_ptr\<PublishingLicenseInfo\> GetPublishingLicenseInfo （） const  |  获取与受保护内容相关联的发布许可证。
-public bool GetIsOfflineOnly （） const  |  获取[ProtectionHandler](class_mip_protectionhandler.md)创建是否允许联机 HTTP 操作。
-public void SetIsOfflineOnly （bool isOfflineOnly）  |  设置[ProtectionHandler](class_mip_protectionhandler.md)创建是否允许联机 HTTP 操作。
+public bool GetIsOfflineOnly （） const  |  获取 ProtectionHandler 创建是否允许联机 HTTP 操作。
+public void SetIsOfflineOnly （bool isOfflineOnly）  |  设置 ProtectionHandler 创建是否允许联机 HTTP 操作。
 public void SetDelegatedUserEmail （const std：： string & delegatedUserEmail）  |  设置委派的用户。
 public const std：： string & GetDelegatedUserEmail （） const  |  获取委托的用户。
   
@@ -53,19 +53,19 @@ public const std：： string & GetDelegatedUserEmail （） const  |  获取委
 **返回**：发布许可证信息
   
 ### <a name="getisofflineonly-function"></a>GetIsOfflineOnly 函数
-获取[ProtectionHandler](class_mip_protectionhandler.md)创建是否允许联机 HTTP 操作。
+获取 ProtectionHandler 创建是否允许联机 HTTP 操作。
 
   
-**返回**：如果不允许 HTTP 操作，则为 true; 否则，如果此设置为 true，则仅当已对内容进行了解密并缓存了未过期的许可证时， [ProtectionHandler](class_mip_protectionhandler.md)创建才会成功。 如果找不到缓存的内容，将引发 mip：： NetworkError =。
+**返回**：如果不允许 HTTP 操作，则为 true; 否则，如果此设置为 true，则仅当已对内容进行了解密并缓存了未过期的许可证时，ProtectionHandler 创建才会成功。 如果找不到缓存的内容，将引发 mip：： NetworkError。
   
 ### <a name="setisofflineonly-function"></a>SetIsOfflineOnly 函数
-设置[ProtectionHandler](class_mip_protectionhandler.md)创建是否允许联机 HTTP 操作。
+设置 ProtectionHandler 创建是否允许联机 HTTP 操作。
 
 参数：  
 * **isOfflineOnly**：如果不允许 HTTP 操作，则为 True，否则为 false
 
 
-如果此值设置为 true，则仅当以前已解密内容并缓存其未过期许可证时， [ProtectionHandler](class_mip_protectionhandler.md)创建才会成功。 如果找不到缓存的内容，将引发 mip：： NetworkError。
+如果此值设置为 true，则仅当以前已解密内容并缓存其未过期许可证时，ProtectionHandler 创建才会成功。 如果找不到缓存的内容，将引发 mip：： NetworkError。
   
 ### <a name="setdelegateduseremail-function"></a>SetDelegatedUserEmail 函数
 设置委派的用户。

@@ -1,32 +1,32 @@
 ---
-title: '类 mip:: ClassificationData'
-description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: classificationdata 类。'
+title: 类 mip：： ClassificationData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： classificationdata 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: 8ad0f1a2623adc36fa2ffdcf531d0e9e810d954e
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: 273b095ca0d6dc97ce440c4645bc2d07e6e760d4
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70056282"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559420"
 ---
-# <a name="class-mipclassificationdata"></a>类 mip:: ClassificationData 
+# <a name="class-mipclassificationdata"></a>类 mip：： ClassificationData 
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std:: string & GetClassificationId () const  | _尚无记录。_
-public const std:: string & GetRulePackageId () const  | _尚无记录。_
-public int GetMaxCount () const  | _尚无记录。_
-public int GetMinCount () const  | _尚无记录。_
-public int GetMinConfidence () const  | _尚无记录。_
-public int GetMaxConfidence () const  | _尚无记录。_
-public virtual ~ ClassificationData ()  | _尚无记录。_
+public const std：： string & GetClassificationId （） const  | 尚未记录。
+public const std：： string & GetRulePackageId （） const  | 尚未记录。
+public int GetMaxCount （） const  | 尚未记录。
+public int GetMinCount （） const  | 尚未记录。
+public int GetMinConfidence （） const  | 尚未记录。
+public int GetMaxConfidence （） const  | 尚未记录。
+public virtual ~ ClassificationData （）  | 尚未记录。
   
-## <a name="members"></a>成员
+## <a name="members"></a>成員
   
 ### <a name="getclassificationid-function"></a>GetClassificationId 函数
 _尚无记录。_

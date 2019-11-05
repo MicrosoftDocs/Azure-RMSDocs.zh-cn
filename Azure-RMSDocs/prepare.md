@@ -12,16 +12,16 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4b4affd55c743e2dda7dc3077ae527b002b5b442
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: 01e000bfa52a92f0e9d7b58327d84d24bd17410d
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71689401"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559906"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 在为组织部署 Azure 信息保护之前，请确保你的组织租户在 Azure AD 中具有用户和组帐户。
 
@@ -53,7 +53,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 - 使用权限可决定用户是否能够打开文档或电子邮件以及如何使用它们。 例如，用户是只能阅读，可以阅读并打印，还是可以阅读并编辑。 
 
-- 访问控制权限包括到期日期以及是否需要连接到 Internet 进行访问。 
+- 访问控制包括到期日期以及是否需要连接到 internet 才能访问。 
 
 **用于配置 Azure 权限管理服务**以支持特定方案，因此只有管理员可以选择这些组。 示例包括配置下列各项：
 
@@ -79,7 +79,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
     - 对于 Azure AD：[将自定义域名添加到 Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 
-    - 对于 Office 365：[将域添加到 Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
+    - 对于 Office 365：[向 office 365 添加域](/office365/admin/setup/add-domain?view=o365-worldwide)
 
 - 仅当租户中的帐户在 Azure AD proxyAddresses 属性中没有值时，才会使用 **Azure AD userPrincipalName** 属性。 例如，你可以在 Azure 门户中创建用户，或者创建没有邮箱的 Office 365 用户。
 
@@ -132,7 +132,7 @@ Azure 信息保护使用用户和组的方式有三种：
     Connect-MsolService
 
 
-注意:如果此命令不起作用，可以运行 `Install-Module MSOnline` 安装 MSOnline 模块。
+注意：如果此命令不起作用，可以运行 `Install-Module MSOnline` 安装 MSOnline 模块。
 
 接下来，配置 PowerShell 会话，以便它不会截断该值：
 
@@ -214,7 +214,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 - 从 2018 年 2 月开始：如果包含 Azure Rights Management 或 Azure 信息保护的订阅是在当月或之后获取的，将自动为你激活此服务。 
 
-- 如果订阅是在 2018 年 2 月之前获取的：则必须自己激活此服务。 
+- 如果你的订阅是在 2018 年 2 月之前获取的：必须自己激活此服务。 
 
 有关详细信息，包括检查激活状态，请参阅[从 Azure 信息保护中激活保护服务](./activate-service.md)。
 

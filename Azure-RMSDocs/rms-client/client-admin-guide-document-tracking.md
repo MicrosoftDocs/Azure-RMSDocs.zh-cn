@@ -13,18 +13,18 @@ ms.subservice: doctrack
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b014fd328782c4cf09ae204ba7b7d4229d2d49a4
-ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
+ms.openlocfilehash: 58d3db71f1fcc580cb58531eb58d61dd458f37dd
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71314243"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561313"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>管理员指南：配置和使用 Azure 信息保护的文档跟踪
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，带 SP1 的 windows 7，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012，windows Server 2008 r2*
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 如果你有[支持文档跟踪的订阅](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。 文档跟踪为用户和管理员提供有关受保护文档访问时间的信息，如有必要，可以撤销已跟踪的文档。
 
@@ -38,7 +38,7 @@ ms.locfileid: "71314243"
 
 如果在你的组织中由于隐私要求而禁止显示所有文档跟踪信息，你可以使用[AipServiceDocumentTrackingFeature](/powershell/module/aipservice/disable-aipservicedocumenttrackingfeature) cmdlet 禁用文档跟踪。 
 
-此 cmdlet 禁用对文档跟踪站点的访问，以使组织中的所有用户无法跟踪或撤销对已保护文档的访问权限。 你随时可以使用 [Enable-AipServiceDocumentTrackingFeature](/powershell/module/aipservice/enable-aipservicedocumenttrackingfeature) 来重新启用文档跟踪，并可以使用 [Get-AipServiceDocumentTrackingFeature](/powershell/module/aipservice/get-aipservicedocumenttrackingfeature) 来查看当前是已启用还是已禁用文档跟踪。 
+此 cmdlet 禁用对文档跟踪站点的访问，以使组织中的所有用户无法跟踪或撤销对已保护文档的访问权限。 你可以随时使用[AipServiceDocumentTrackingFeature](/powershell/module/aipservice/enable-aipservicedocumenttrackingfeature)重新启用文档跟踪，还可以使用 AipServiceDocumentTrackingFeature 检查当前是否启用或禁用了文档[跟踪。](/powershell/module/aipservice/get-aipservicedocumenttrackingfeature) 
 
 启用文档跟踪站点后，它会默认显示尝试访问受保护文档的人员的电子邮件地址、这些人员尝试访问这些文档的时间以及他们所在的位置等信息。 这个级别的信息有助于确定使用共享文档的方式，以及在发现可疑活动时，是否应撤销这些文档。 但是，出于隐私原因，你可能需要为部分或所有用户禁用此用户信息。 
 
@@ -55,17 +55,17 @@ ms.locfileid: "71314243"
 
 你可以使用以下 cmdlet 从文档跟踪站点下载日志记录信息：
 
-- [Get-AipServiceTrackingLog](/powershell/module/aipservice/Get-AipServiceTrackingLog)
+- [AipServiceTrackingLog](/powershell/module/aipservice/Get-AipServiceTrackingLog)
     
     此 cmdlet 向指定用户返回有关受保护文档的跟踪信息，该用户为文档提供保护（Rights Management 颁发者）或已访问受保护的文档。 使用此 cmdlet 来帮助回答问题“指定用户跟踪或访问了哪些受保护的文档？”
 
-- [Get-AipServiceDocumentLog](/powershell/module/aipservice/Get-AipServiceDocumentLog)
+- [AipServiceDocumentLog](/powershell/module/aipservice/Get-AipServiceDocumentLog)
     
     如果用户为文档提供保护（Rights Management 颁发者）或者是文档的 Rights Management 所有者，或者受保护的文档被配置为直接授予该用户访问权限，那么此 cmdlet 会对该指定用户返回有关跟踪文档的保护信息。 使用此 cmdlet 来帮助回答问题“如何保护指定用户的文档？”
 
 ## <a name="destination-urls-used-by-the-document-tracking-site"></a>文档跟踪站点使用的目标 URL
 
-以下 URL 用于文档跟踪，必须在运行 Azure 信息保护客户端和 Internet 的客户端之间的所有设备和服务上允许它们。 例如，如果你使用的是具有增强安全性的 Internet Explorer，请将这些 URL 添加到防火墙，或添加到受信任的站点。
+以下 Url 用于文档跟踪，必须在运行 Azure 信息保护客户端和 internet 的客户端之间的所有设备和服务上允许。 例如，如果你使用的是具有增强安全性的 Internet Explorer，请将这些 URL 添加到防火墙，或添加到受信任的站点。
 
 -  `https://*.azurerms.com`
 
@@ -110,7 +110,7 @@ ms.locfileid: "71314243"
 
 ## <a name="usage-logging-for-the-document-tracking-site"></a>文档跟踪站点的使用情况日志记录
 
-使用情况日志文件中的以下两个字段适用于文档跟踪：AdminAction 和 ActingAsUser。
+使用情况日志文件中的以下两个字段适用于文档跟踪：**AdminAction** 和 **ActingAsUser**。
 
 **AdminAction** — 当管理员在管理员模式下使用文档跟踪站点时，例如，代表用户撤销文档或查看其共享时间，此字段的值为 true。 当用户登录到文档跟踪站点时，此字段为空。
 

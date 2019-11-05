@@ -1,56 +1,56 @@
 ---
-title: '类 mip:: AuthDelegate'
-description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: authdelegate 类。'
+title: 类 mip：： AuthDelegate
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： authdelegate 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: f1f2a9f1f1f61d381cbf0da58cfdef9cad6044e2
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: 3dc5679893c0de02eb9b9cb4f197c5ea39bf356f
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70056286"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73560334"
 ---
-# <a name="class-mipauthdelegate"></a>类 mip:: AuthDelegate 
+# <a name="class-mipauthdelegate"></a>类 mip：： AuthDelegate 
 用于身份验证相关操作的委托。
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public virtual bool AcquireOAuth2Token (const mip:: Identity & identity, const OAuth2Challenge & 质询, OAuth2Token & 标记)  |  当策略引擎需要具有给定标识和给定质询的身份验证令牌时, 将调用此方法。 客户端应返回获取令牌是否成功。 如果成功, 则它应初始化给定的标记对象。
-public virtual bool AcquireOAuth2Token (const mip:: identity & identity, const OAuth2Challenge & 质询, const std:: shared_ptr\<void\>& context, OAuth2Token & 标记)  |  当策略引擎需要具有给定标识和给定质询的身份验证令牌时, 将调用此方法。 客户端应返回获取令牌是否成功。 如果成功, 则它应初始化给定的标记对象。
+public virtual bool AcquireOAuth2Token （const mip：： Identity & identity，const OAuth2Challenge & 质询，OAuth2Token & 标记）  |  当策略引擎需要具有给定标识和给定质询的身份验证令牌时，将调用此方法。 客户端应返回获取令牌是否成功。 如果成功，则它应初始化给定的标记对象。
+公共虚拟 bool AcquireOAuth2Token （const mip：： Identity & identity，const OAuth2Challenge & 质询，const std：： shared_ptr\<void\>& context，OAuth2Token & 标记）  |  当策略引擎需要具有给定标识和给定质询的身份验证令牌时，将调用此方法。 客户端应返回获取令牌是否成功。 如果成功，则它应初始化给定的标记对象。
   
-## <a name="members"></a>成员
-  
-### <a name="acquireoauth2token-function"></a>AcquireOAuth2Token 函数
-当策略引擎需要具有给定标识和给定质询的身份验证令牌时, 将调用此方法。 客户端应返回获取令牌是否成功。 如果成功, 则它应初始化给定的标记对象。
-
-参数：  
-* **标识**: 
-
-
-* **挑战**: 
-
-
-* **令牌**: 
-
-
-> 弃用此方法将很快弃用, 以接受接受上下文参数的一个。 如果已实现新版本, 则无需实现此版本。
+## <a name="members"></a>成員
   
 ### <a name="acquireoauth2token-function"></a>AcquireOAuth2Token 函数
-当策略引擎需要具有给定标识和给定质询的身份验证令牌时, 将调用此方法。 客户端应返回获取令牌是否成功。 如果成功, 则它应初始化给定的标记对象。
+当策略引擎需要具有给定标识和给定质询的身份验证令牌时，将调用此方法。 客户端应返回获取令牌是否成功。 如果成功，则它应初始化给定的标记对象。
 
 参数：  
-* **标识**:为其请求令牌的用户 
+* **标识**： 
 
 
-* **挑战**:OAuth2 质询 
+* **挑战**： 
 
 
-* **上下文**:主机应用程序传递到 MIP API 的不透明上下文 
+* **令牌**： 
 
 
-* **令牌**: [Output] Base64 编码的 OAuth2 令牌
+> 弃用：此方法将很快弃用，以接受接受上下文参数的一个。 如果已实现新版本，则无需实现此版本。
+  
+### <a name="acquireoauth2token-function"></a>AcquireOAuth2Token 函数
+当策略引擎需要具有给定标识和给定质询的身份验证令牌时，将调用此方法。 客户端应返回获取令牌是否成功。 如果成功，则它应初始化给定的标记对象。
+
+参数：  
+* **标识**：请求令牌的用户 
+
+
+* **挑战**： OAuth2 挑战 
+
+
+* **上下文**：主机应用程序传递到 MIP API 的不透明上下文 
+
+
+* **令牌**： [Output] Base64 编码的 OAuth2 令牌
 

@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1c7458e1e936b464e8f4666911c3f23fb96dd3fe
-ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
+ms.openlocfilehash: 2d26e7d80a37fd5ae8b52539a09fcbb9c924a13d
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72805290"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561194"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标签客户端管理员指南
 
@@ -257,9 +257,9 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标签客户端�
 在这种情况下，当在 Azure 门户中配置扫描程序时，必须指定与运行 Update-AIPScanner 命令时使用的完全相同的配置文件名称。 如果名称不匹配，则不会为设置配置扫描程序。 
 
 > [!TIP]
-> 若要识别具有此错误配置的扫描程序，请使用 Azure 门户中的“Azure 信息保护 - 节点”边栏选项卡。
+> 若要识别具有此错误配置的扫描仪，请使用 Azure 门户中的 " **Azure 信息保护-节点**" 窗格。
 >  
-> 对于具有 Internet 连接的扫描仪，它们使用 Azure 信息保护客户端的正式版本号显示其计算机名称，但没有配置文件名称。 只有版本号为 1.41.51.0 的扫描程序才不在此边栏选项卡上显示配置文件名称。 
+> 对于具有 internet 连接的扫描仪，它们使用 Azure 信息保护客户端的正式版本号显示其计算机名称，但没有配置文件名称。 只有版本号为1.41.51.0 的扫描仪才能在此窗格中显示 "配置文件名称"。 
 
 ## <a name="uninstalling-the-azure-information-protection-unified-labeling-client"></a>卸载 Azure 信息保护统一标签客户端
 

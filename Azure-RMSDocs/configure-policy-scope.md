@@ -13,18 +13,18 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5d278248e1c6c5349fea1950c834a857963f8b2d
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.openlocfilehash: 4082ffeb2a2410f132c0542d0fb770163c5b5f4c
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71683858"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559525"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>如何使用作用域内策略为特定用户配置 Azure 信息保护策略
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 将 Azure 信息保护策略下载到安装了 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)的计算机时，所有用户都会从默认策略或为全局策略配置的更改中获取设置和标签。 如果要使用不同的设置和标签为特定用户补充此配置，则必须创建为这些用户配置的**作用域内策略**。
 
@@ -44,13 +44,13 @@ ms.locfileid: "71683858"
 
 ## <a name="configure-a-scoped-policy"></a>配置作用域内策略
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护**" 窗格。
 
-    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+    例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
 
-2. 从“分类” > “策略”菜单选项中：在“Azure 信息保护 -策略”边栏选项卡上，选择“添加新策略”。 然后看到显示现有全局策略的“策略”边栏选项卡，现在即可在此边栏选项卡中配置新的作用域内策略。
+2. 从 "**分类**" > **策略**"菜单选项：在" **Azure 信息保护-策略**"窗格中，选择"**添加新策略**"。 然后，你会看到 "**策略**" 窗格，其中显示了你的现有全局策略，你现在可以在其中配置新的作用域内策略。
 
-3. 在 Azure 门户中指定仅管理员可见的策略名称和说明。 该名称对租户来说必须是唯一的。 然后选择“指定获取此策略的用户/组”，并可在后续边栏选项卡中为此策略搜索和选择用户和组。 在此作用域内策略中配置的标签和设置将仅应用于这些用户。
+3. 在 Azure 门户中指定仅管理员可见的策略名称和说明。 该名称对租户来说必须是唯一的。 然后选择 "**指定获取此策略的用户/组**"，然后在后续窗格中，可以搜索和选择此策略的用户和组。 在此作用域内策略中配置的标签和设置将仅应用于这些用户。
     
     出于性能原因，作用域策略的组成员身份会进行[缓存](prepare.md#group-membership-caching-by-azure-information-protection)。
 
@@ -58,9 +58,9 @@ ms.locfileid: "71683858"
 
     如果在配置标签或设置时需要帮助，请使用[配置组织的策略](configure-policy.md#configuring-your-organizations-policy)部分中的链接。
 
-6. 与编辑全局策略相同，在“Azure 信息保护”边栏选项卡上进行任何更改时，请单击“保存”以保存更改，或者单击“放弃”以返回到上一个保存的设置。 
+6. 就像编辑全局策略时一样，当你在 "Azure 信息保护" 窗格中进行任何更改时，请单击 "**保存**" 以保存更改，或者单击 "**放弃**" 以还原到上次保存的设置。 
 
-7. 对此作用域内策略完成所需更改后，在初始“Azure 信息保护 - 策略”边栏选项卡上，确保此作用域内策略已按期望的顺序应用。 为多个作用域内策略选择了相同用户时，这一点很重要。 要更改顺序，请选择上下文菜单（“...”），然后选择“上移”或“下移”。 
+7. 对此作用域内策略完成所需更改后，在初始 " **Azure 信息保护-策略**" 窗格上，确保此作用域内策略按您希望的顺序应用。 为多个作用域内策略选择了相同用户时，这一点很重要。 要更改顺序，请选择上下文菜单（“...”），然后选择“上移”或“下移”。 
 
 启动受支持的 Office 应用程序或打开文件资源管理器时，Azure 信息保护客户端会检查任何更改。 客户端会将所有更改都下载到适用于该用户的全局策略或作用域内策略中。
 

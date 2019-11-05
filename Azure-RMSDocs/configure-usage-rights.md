@@ -13,12 +13,12 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8df8af6462a1e574186f096c919b070d4c7b6812
-ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
+ms.openlocfilehash: dcab49ef780916ac5ddbcb0acba2a555da92ebbe
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73444934"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559740"
 ---
 # <a name="configuring-usage-rights-for-azure-information-protection"></a>配置 Azure 信息保护的使用权限
 
@@ -132,7 +132,13 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 如果确实需要附加的文档以保留原始保护，请参阅[使用 Azure 信息保护来保护文档协作](secure-collaboration-documents.md)。
 
-注意：如果看到对**DecryptAttachmentFromPortal**的引用，则此参数现已不推荐用于[set-irmconfiguration](/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps)。 除非之前设置了此参数，否则它不可用。 
+注意：如果看到对**DecryptAttachmentFromPortal**的引用，则此参数现已不推荐用于[set-irmconfiguration](/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps)。 除非之前设置了此参数，否则它不可用。
+
+## <a name="automatically-encrypt-pdf-documents-with-exchange-online"></a>通过 Exchange Online 自动加密 PDF 文档
+
+当 Exchange Online 使用 Office 365 邮件加密的新功能时，如果将未受保护的 PDF 文档附加到加密电子邮件，则可以自动对其进行加密。 该文档继承了电子邮件的相同权限。 若要启用此配置，请使用[set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps)设置**EnablePdfEncryption $True** 。
+
+如果收件人没有安装支持 PDF 加密 ISO 标准的读取器，则可以安装 Pdf 读取器中列出的一个[支持 Microsoft 信息保护](./rms-client/protected-pdf-readers.md)的读取器。 或者，收件人可以阅读 OME 门户中受保护的 PDF 文档。
 
 ## <a name="rights-management-issuer-and-rights-management-owner"></a>权限管理颁发者和权限管理所有者
 
@@ -168,7 +174,7 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 除了权限帐户证书 (RAC)，用户还必须具有一个有效的使用许可证才能打开内容，这是在[初始化用户环境](how-does-it-work.md#initializing-the-user-environment)时授予的证书，然后每隔 31 天续订一次。
 
-使用许可证有效期内，无需对用户重新进行身份验证或重新授权即可获取内容。 这样即使没有 Internet 连接，用户也能够打开受保护的文档或电子邮件。 使用许可证有效期到期后，用户下次访问受保护的文档或电子邮件时就必须重新进行身份验证并重新进行授权。 
+使用许可证有效期内，无需对用户重新进行身份验证或重新授权即可获取内容。 这样，用户就可以在没有 internet 连接的情况下继续打开受保护的文档或电子邮件。 使用许可证有效期到期后，用户下次访问受保护的文档或电子邮件时就必须重新进行身份验证并重新进行授权。 
 
 如果文档和电子邮件是通过标签或定义保护设置的模板进行保护，可更改标签或模板中的这些设置，而无需重新保护内容。 如果用户已访问过内容，则所做的更改将在他们的使用许可证过期后生效。 但如果用户应用了自定义权限（也称为临时权限策略），且这些权限需要在保护文档或电子邮件后更改，则必须使用新权限再次保护该内容。 通过“不转发”选项实现电子邮件的自定义权限。
 

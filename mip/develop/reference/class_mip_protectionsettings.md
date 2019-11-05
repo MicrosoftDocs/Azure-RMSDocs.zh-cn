@@ -1,29 +1,36 @@
 ---
-title: 类 mip::P rotectionSettings
-description: 记录 Microsoft 信息保护 (MIP) SDK 的 mip::p rotectionsettings 类。
+title: 类 mip：:P rotectionSettings
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionsettings 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: 0a27f5e854a78aa4886abdd2145fd40b399f99fd
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: 5c0354b69912e437f87dc9b9b614338091a5b163
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70057450"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73560670"
 ---
-# <a name="class-mipprotectionsettings"></a>类 mip::P rotectionSettings 
+# <a name="class-mipprotectionsettings"></a>类 mip：:P rotectionSettings 
 用于为 SetLabel 方法配置保护选项的接口。
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public ProtectionSettings ()  | _尚无记录。_
-public void SetDelegatedUserEmail (const std:: string delegatedUserEmail)  | _尚无记录。_
-public std:: string GetDelegatedUserEmail () const  | _尚无记录。_
+public ProtectionSettings （） = 默认值  | 尚未记录。
+public ProtectionSettings （const std：： string & delegatedUserEmail，PFileExtensionBehavior pfileExtensionBehavior）  | 尚未记录。
+public void SetDelegatedUserEmail （const std：： string delegatedUserEmail）  | 尚未记录。
+public std：： string GetDelegatedUserEmail （） const  | 尚未记录。
+public void SetPFileExtensionBehavior （PFileExtensionBehavior pfileExtensionBehavior）  | 尚未记录。
+public PFileExtensionBehavior GetPFileExtensionBehavior （） const  | 尚未记录。
   
-## <a name="members"></a>成员
+## <a name="members"></a>成員
+  
+### <a name="protectionsettings-function"></a>ProtectionSettings 函数
+_尚无记录。_
+
   
 ### <a name="protectionsettings-function"></a>ProtectionSettings 函数
 _尚无记录。_
@@ -34,4 +41,12 @@ _尚无记录。_
 
   
 ### <a name="getdelegateduseremail-function"></a>GetDelegatedUserEmail 函数
+_尚无记录。_
+
+  
+### <a name="setpfileextensionbehavior-function"></a>SetPFileExtensionBehavior 函数
+_尚无记录。_
+
+  
+### <a name="getpfileextensionbehavior-function"></a>GetPFileExtensionBehavior 函数
 _尚无记录。_

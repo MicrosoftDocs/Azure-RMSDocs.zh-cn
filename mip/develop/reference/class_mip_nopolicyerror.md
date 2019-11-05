@@ -1,24 +1,24 @@
 ---
-title: '类 mip:: NoPolicyError'
-description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: nopolicyerror 类。'
+title: 类 mip：： NoPolicyError
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： nopolicyerror 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: 44c70000bff3d59c6b1215708b4315da97f3866e
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: ccc97d9a8c7fcd9dd9e3ec0eea35f2bb4af8a6b0
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70054186"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559237"
 ---
-# <a name="class-mipnopolicyerror"></a>类 mip:: NoPolicyError 
+# <a name="class-mipnopolicyerror"></a>类 mip：： NoPolicyError 
 租户策略未配置为分类/标签。
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
   
-## <a name="members"></a>成员
+## <a name="members"></a>成員
 _尚无记录。_

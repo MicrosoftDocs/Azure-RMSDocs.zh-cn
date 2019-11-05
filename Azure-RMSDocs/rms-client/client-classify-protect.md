@@ -4,7 +4,7 @@ description: 有关使用适用于 Windows 的 Azure 信息保护客户端时如
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/09/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,27 +13,30 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 2dadb22a5746073269faffe2b91978e7393cc253
-ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
+ms.openlocfilehash: 9299ea40f42db36e37bed0bc5734e92d11e10433
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71314183"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561273"
 ---
-# <a name="user-guide-classify-and-protect-with-the-azure-information-protection-client"></a>用户指南：Azure 信息保护客户端的分类和保护
+# <a name="user-guide-classify-and-protect-with-the-azure-information-protection-client"></a>用户指南：通过 Azure 信息保护客户端进行分类和保护
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类和保护。 如果只需对文档和电子邮件进行分类（但不保护），请参阅[仅分类说明](client-classify.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
 
-在 Office 桌面应用中创建和编辑文档和电子邮件时对其进行分类和保护最为简单：Word、Excel、PowerPoint、Outlook。 
+在 Office 桌面应用中（**Word**、**Excel**、**PowerPoint**、**Outlook**）创建和编辑文档和电子邮件时对其进行分类和保护最为简单。 
 
 但是，还可以使用文件资源管理器对文件进行分类和保护。 此方法支持其他文件类型，此方法是一种一次性对多个文件进行分类和保护的便捷方法。 此方法支持保护 Office 文档、PDF 文件、文本和图像文件，以及各种其他文件。 
 
-如果标签将保护应用于文档，则受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 这些位置不支持受保护文件的以下内容：共同创作、Office 网站、搜索、文档预览、缩略图和电子数据展示。 
+如果标签将保护应用于文档，则受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 对于受保护的文件，这些位置不支持以下内容：共同创作、Office for web、搜索、文档预览、缩略图和电子数据展示。
+
+> [!TIP]
+> 如果为[敏感标签启用了 SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)，请询问管理员是否将标签迁移到这些位置支持的统一敏感度标签。
 
 ### <a name="safely-share-a-file-with-people-outside-your-organization"></a>与组织外部人员安全共享文件
 
@@ -41,7 +44,7 @@ ms.locfileid: "71314183"
 
 在与组织外部人员共享文件之前，请咨询你的支持人员或管理员如何为外部用户保护文件。
 
-例如, 如果你的组织定期与另一组织中的用户通信, 则你的管理员可能已配置了标签, 以便这些用户可以读取和使用受保护的文档。 如果是这种情况, 请选择这些标签来分类和保护要共享的文档。
+例如，如果你的组织定期与另一组织中的用户通信，则你的管理员可能已配置了标签，以便这些用户可以读取和使用受保护的文档。 如果是这种情况，请选择这些标签来分类和保护要共享的文档。
 
 或者，如果外部用户具有为其创建的 [企业到企业 (B2B) 帐户](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)，你可以在共享文档之前，使用 [Office 应用设置自定义权限](#set-custom-permissions-for-a-document)或使用[文件资源管理器设置自定义权限](#using-file-explorer-to-classify-and-protect-files) 如果设置你自己的自定义权限，并且文档已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。
 
@@ -102,13 +105,13 @@ ms.locfileid: "71314183"
 
     - **使用自定义权限进行保护**：请务必选中此选项，这样才能指定并应用自定义权限。 取消选中此选项即撤销任何自定义权限。
     
-    - **选择权限**：如果要保护文件，以便只有你可以访问，请选中“仅限自己访问”。 否则，请选中“希望对象拥有的访问级别”。
+    - **选择权限**：如果要保护文件，以便只有你可以访问，请选中“**仅限自己访问**”。 否则，请选中“希望对象拥有的访问级别”。
     
-    - **选择用户、组或组织**：指定应对文件具有选定权限的人员。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 
+    - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 
         
         此外，还可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
     
-    - **过期访问**：仅为时间敏感的文件选择此选项, 以使指定的人员无法在设置日期后打开选定的一个或哪些文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
+    - **过期访问**：仅为时间敏感的文件选择此选项，以使指定的人员无法在设置日期后打开选定的文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
 
 5. 单击“**应用**”，然后等待“**已应用自定义权限**”消息。 然后单击 **“关闭”** 。
 
@@ -143,11 +146,11 @@ ms.locfileid: "71314183"
 
 2. 在“分类和保护 - Azure信息保护”对话框中，请像在 Office 应用程序中那样使用标签，这样可以按管理员定义的方式设置分类和保护。 
 
-   - 如果没有标签可以选择（它们呈灰显状态）：所选文件不支持分类，但可以通过自定义权限保护它（步骤 3）。 例如：
+   - 如果无法选择标签（它们显示为灰色）：则所选文件不支持分类，但你可以通过自定义权限保护它（步骤 3）。 例如：
 
      ![“分类和保护 - Azure 信息保护”对话框中无可用标签](../media/info-protect-dialog-labels-dimmed.png)
     
-   - 如果看不到标签，但是“公司预定义的保护”选项出现在此对话框中，表明：客户端正以[仅保护模式](client-protection-only-mode.md)运行。 选择模板以应用管理员为你配置的保护，或者选择“自定义权限”指定自己的保护设置，然后转到步骤 4.
+   - 如果你看不到标签，但是“公司预定义的保护”选项出现在此对话框中，表明：客户端正以[仅保护模式](client-protection-only-mode.md)运行。 选择模板以应用管理员为你配置的保护，或者选择“自定义权限”指定自己的保护设置，然后转到步骤 4.
     
      ![“分类和保护 - Azure 信息保护”对话框中无任何标签](../media/info-protect-dialog-labels-protection-only.png)
     
@@ -159,13 +162,13 @@ ms.locfileid: "71314183"
 
 4. 如果已选择自定义权限选项，此时指定以下项：
 
-   - **选择权限**：在保护所选文件时选择希望用户具有的访问级别。
+   - **选择权限**：选择你希望用户在保护所选文件时具有的访问级别。
     
-   - **选择用户、组或组织**：指定应对文件具有选定权限的人员。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 
+   - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 
     
      或者，可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
         
-   - **过期访问**：仅对具有时效性的文件选择此选项，使指定的人员无法在你设置的日期后打开所选的一个文件或多个文件。你仍然可以打开原始文件，但是在所设定日期的午夜后（当前时区），你指定的人员将无法打开文件。
+   - 过期访问：仅为时间敏感文件选择此选项，以便你指定的人员在你设定的日期后无法打开所选文件。你仍然可以打开原始文件，但是在所设定日期的午夜后（当前时区），你指定的用户将无法打开文件。
     
      请注意，如果此设置此前通过 Office 2010 应用的自定义权限配置，则指定到期日期不会显示在此对话框中，但仍然会设置到期日期。 此显示问题仅适用于在 Office 2010 中配置了到期日期的情况。
 

@@ -1,45 +1,46 @@
 ---
-title: '类 mip:: LabelGroupData'
-description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: labelgroupdata 类。'
+title: 类 mip：： LabelGroupData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： labelgroupdata 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: f5d54ef2a274b0167d407c19cd5fbb0ca97349fb
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: e67c2122314d33a6b49f6696f1f13d6f0bbde920
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70055941"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73558696"
 ---
-# <a name="class-miplabelgroupdata"></a>类 mip:: LabelGroupData 
+# <a name="class-miplabelgroupdata"></a>类 mip：： LabelGroupData 
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std::string& GetLabelId() const  | _尚无记录。_
-public const std:: vector\<std:: unique_ptr\<LabelGroupData\>\>& GetLabelGroupData () const  | _尚无记录。_
-public int GetOrder () const  | _尚无记录。_
-public const std::p 风\<std:: string、std:: string\>& GetColor () const  | _尚无记录。_
-public const std::p 风\<std:: string、std:: string\>& GetName () const  | _尚无记录。_
-public const std::p 风\<std:: string、std:: string\>& GetDescription () const  | _尚无记录。_
-public const std::string& GetTemplateId() const  | _尚无记录。_
-public const std:: string & GetInvariantName () const  | _尚无记录。_
-public const std::p 风\<std:: string、std:: string\>& GetTooltip () const  | _尚无记录。_
-public bool IsEnabled () const  | _尚无记录。_
-public bool IsDowngradeJustificationRequired () const  | _尚无记录。_
-public const std:: string & GetDefaultLabelId () const  | _尚无记录。_
-public const std::p 风\<std:: string、std:: string\>& GetMoreInfoUrl () const  | _尚无记录。_
-public bool IsMandatory () const  | _尚无记录。_
-public bool HasDoNotForwardAction () const  | _尚无记录。_
-public bool IsAuditEnabled () const  | _尚无记录。_
-public const std:: vector\<std::p air\<std:: string, std:: string\>\>& GetCustomSettings () const  | _尚无记录。_
-public const std:: vector\<std:: string\>& GetLabelByCustomProperties () const  | _尚无记录。_
-public const std:: vector\<std:: string\>& GetCustomPropertiesByLabel () const  | _尚无记录。_
-public virtual ~ LabelGroupData ()  | _尚无记录。_
+public const std::string& GetLabelId() const  | 尚未记录。
+public const std：： vector\<std：： unique_ptr\<LabelGroupData\>\>& GetLabelGroupData （） const  | 尚未记录。
+public int GetOrder （） const  | 尚未记录。
+public const std：:p 空中\<std：： string，std：： string\>& GetColor （） const  | 尚未记录。
+public const std：:p 空中\<std：： string，std：： string\>& GetName （） const  | 尚未记录。
+public const std：:p 空中\<std：： string，std：： string\>& GetDescription （） const  | 尚未记录。
+public const std::string& GetTemplateId() const  | 尚未记录。
+public const std：： string & GetInvariantName （） const  | 尚未记录。
+public const std：:p 空中\<std：： string，std：： string\>& GetTooltip （） const  | 尚未记录。
+public const std：:p 空中\<std：： string，std：： string\>& GetAutoTooltip （） const  | 尚未记录。
+public bool IsEnabled （） const  | 尚未记录。
+public bool IsDowngradeJustificationRequired （） const  | 尚未记录。
+public const std：： string & GetDefaultLabelId （） const  | 尚未记录。
+public const std：:p 空中\<std：： string，std：： string\>& GetMoreInfoUrl （） const  | 尚未记录。
+public bool IsMandatory （） const  | 尚未记录。
+public const std：： vector\<ProtectionActionType\>& GetProtectionActionTypes （） const  | 尚未记录。
+public bool IsAuditEnabled （） const  | 尚未记录。
+public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetCustomSettings （） const  | 尚未记录。
+public const std：： vector\<std：： string\>& GetLabelByCustomProperties （） const  | 尚未记录。
+public const std：： vector\<std：： string\>& GetCustomPropertiesByLabel （） const  | 尚未记录。
+public virtual ~ LabelGroupData （）  | 尚未记录。
   
-## <a name="members"></a>成员
+## <a name="members"></a>成員
   
 ### <a name="getlabelid-function"></a>GetLabelId 函数
 _尚无记录。_
@@ -77,6 +78,10 @@ _尚无记录。_
 _尚无记录。_
 
   
+### <a name="getautotooltip-function"></a>GetAutoTooltip 函数
+_尚无记录。_
+
+  
 ### <a name="isenabled-function"></a>IsEnabled 函数
 _尚无记录。_
 
@@ -97,7 +102,7 @@ _尚无记录。_
 _尚无记录。_
 
   
-### <a name="hasdonotforwardaction-function"></a>HasDoNotForwardAction 函数
+### <a name="getprotectionactiontypes-function"></a>GetProtectionActionTypes 函数
 _尚无记录。_
 
   

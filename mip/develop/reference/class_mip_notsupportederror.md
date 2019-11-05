@@ -1,24 +1,24 @@
 ---
 title: class mip::NotSupportedError
-description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: notsupportederror 类。'
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： notsupportederror 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: fa05198749f8b4c5cf7448bc2de62fda6170aa17
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: 71c2734141908ad1c2a69cfc99b1ae39ff26cc2f
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70055777"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73560966"
 ---
 # <a name="class-mipnotsupportederror"></a>class mip::NotSupportedError 
 SDK 不支持应用程序请求执行的操作。
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
   
-## <a name="members"></a>成员
+## <a name="members"></a>成員
 _尚无记录。_

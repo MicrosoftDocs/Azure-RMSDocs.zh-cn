@@ -1,33 +1,35 @@
 ---
-title: '类 mip:: ComputeEngine:: Settings'
-description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: computeengine 类。'
+title: 类 mip：： ComputeEngine：： Settings
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： computeengine 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: 78917c686c1c7da42af13d3f6e6a5349bc509a0d
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: bc27cae6020034029712e96fa5ae500d7afebf9b
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70056236"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559372"
 ---
-# <a name="class-mipcomputeenginesettings"></a>类 mip:: ComputeEngine:: Settings 
+# <a name="class-mipcomputeenginesettings"></a>类 mip：： ComputeEngine：： Settings 
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-公共设置 (const ApplicationInfo & ApplicationInfo, const std:: shared_ptr\<TelemetryDelegate\>& TelemetryDelegate, const std:: shared_ptr\<LoggerDelegate\>& LoggerDelegate, const std:: vector\<std::p 风\<std:: string, std:: string\>\>& customProperties)  | _尚无记录。_
-public const ApplicationInfo& GetApplicationInfo() const  | _尚无记录。_
-public std:: shared_ptr\<TelemetryDelegate\> GetTelemetryDelegate () const  | _尚无记录。_
-public std:: shared_ptr\<LoggerDelegate\> GetLoggerDelegate () const  | _尚无记录。_
-public const std:: vector\<std::p air\<std:: string, std:: string\>\>& GetCustomProperties () const  | _尚无记录。_
-public void SetParentCorrelationId (const std:: string correlationId, const std:: string description)  | _尚无记录。_
-public const std:: string & GetParentCorrelationId () const  | _尚无记录。_
-public const std:: string & GetParentCorrelationIdDescription () const  | _尚无记录。_
+公共设置（const ApplicationInfo & applicationInfo，const std：： shared_ptr\<TelemetryDelegate\>& telemetryDelegate，const std：： shared_ptr\<LoggerDelegate\>& loggerDelegate，const std：： string& hostName，const std：： vector\<std：:p air\<std：： string，std：： string\>\>& customProperties，const std：： vector\<LabelFilterType\>& labelFilter）  | 尚未记录。
+public const ApplicationInfo& GetApplicationInfo() const  | 尚未记录。
+public std：： shared_ptr\<TelemetryDelegate\> GetTelemetryDelegate （） const  | 尚未记录。
+public std：： shared_ptr\<LoggerDelegate\> GetLoggerDelegate （） const  | 尚未记录。
+public const std：： string & GetHostName （） const  | 尚未记录。
+public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetCustomProperties （） const  | 尚未记录。
+public void SetParentCorrelationId （const std：： string correlationId，const std：： string description）  | 尚未记录。
+public const std：： string & GetParentCorrelationId （） const  | 尚未记录。
+public const std：： string & GetParentCorrelationIdDescription （） const  | 尚未记录。
+public const std：： vector\<LabelFilterType\>& GetLabelFilter （） const  | 尚未记录。
   
-## <a name="members"></a>成员
+## <a name="members"></a>成員
   
 ### <a name="settings-function"></a>Settings 函数
 _尚无记录。_
@@ -45,6 +47,10 @@ _尚无记录。_
 _尚无记录。_
 
   
+### <a name="gethostname-function"></a>GetHostName 函数
+_尚无记录。_
+
+  
 ### <a name="getcustomproperties-function"></a>GetCustomProperties 函数
 _尚无记录。_
 
@@ -58,4 +64,8 @@ _尚无记录。_
 
   
 ### <a name="getparentcorrelationiddescription-function"></a>GetParentCorrelationIdDescription 函数
+_尚无记录。_
+
+  
+### <a name="getlabelfilter-function"></a>GetLabelFilter 函数
 _尚无记录。_

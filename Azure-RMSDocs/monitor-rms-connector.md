@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 52690476d54eb2c23aee4c77f66ca55d320831cb
-ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
+ms.openlocfilehash: 0ec70d2cc26e3314378742a9875b14f5420fbb4e
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71689501"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559186"
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>监视 Azure Rights Management 连接器
 
@@ -40,14 +40,14 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 如果你还未将连接器配置为使用 HTTP，你应该会看到一个警告 ID 2002：客户正在使用不安全的 (HTTP) 连接。
 
-如果连接器无法连接到 Azure Rights Management 服务，最有可能看到错误 3001。 例如，导致此连接故障发生的原因可能是 DNS 问题，或一个或多个运行 RMS 连接器的服务器无法连接 Internet。 
+如果连接器无法连接到 Azure Rights Management 服务，最有可能看到错误 3001。 例如，这种连接失败的原因可能是 DNS 出现问题，或缺少一个或多个运行 RMS 连接器的服务器的 internet 访问。 
 
 > [!TIP]
 > RMS 连接器服务器无法连接到 Azure Rights Management 服务，通常是由 Web 代理配置引起的。
 
 与所有事件日志条目一样，进一步查看消息，了解更多详细信息。
 
-除了在首次部署连接器时检查事件日志以外，还应持续检查警告和错误。 连接器最初可能正常运行，但其他管理员可能会更改从属配置。 例如，另一个管理员更改了 Web 代理服务器配置以使 RMS 连接器服务器不能再访问 Internet（错误 3001）或从你指定为已授权使用连接器的组中删除计算机帐户（错误 2001）。
+除了在首次部署连接器时检查事件日志以外，还应持续检查警告和错误。 连接器最初可能正常运行，但其他管理员可能会更改从属配置。 例如，其他管理员更改了 web 代理服务器配置，因此 RMS 连接器服务器无法再访问 internet （错误3001）或从指定为已授权使用连接器的组中删除计算机帐户（警告2001）.
 
 ### <a name="event-log-ids-and-descriptions"></a>事件日志 ID 和说明
 

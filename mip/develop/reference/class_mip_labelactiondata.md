@@ -1,28 +1,28 @@
 ---
-title: '类 mip:: LabelActionData'
-description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: labelactiondata 类。'
+title: 类 mip：： LabelActionData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： labelactiondata 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: f7e6aa7e6fcb6602606440370f2455c0ee5d3cc2
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: cb3eec6db234604161bd6c2d6218b5d76e61072e
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70055966"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73558734"
 ---
-# <a name="class-miplabelactiondata"></a>类 mip:: LabelActionData 
+# <a name="class-miplabelactiondata"></a>类 mip：： LabelActionData 
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std::string& GetLabelId() const  | _尚无记录。_
-public LabelActionDataType GetLabelActionDataType () const  | _尚无记录。_
-public virtual ~ LabelActionData ()  | _尚无记录。_
+public const std::string& GetLabelId() const  | 尚未记录。
+public LabelActionDataType GetLabelActionDataType （） const  | 尚未记录。
+public virtual ~ LabelActionData （）  | 尚未记录。
   
-## <a name="members"></a>成员
+## <a name="members"></a>成員
   
 ### <a name="getlabelid-function"></a>GetLabelId 函数
 _尚无记录。_

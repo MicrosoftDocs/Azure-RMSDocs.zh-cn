@@ -4,7 +4,7 @@ description: 一些有关 Azure 信息保护及其保护服务的常见问题，
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 4a94787ad611ca52206629362a7ac1bf9df9f174
-ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
+ms.openlocfilehash: 0ba1046b18c8500130572e054e2bdd6e3a90fc5c
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72805540"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561407"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -93,7 +93,7 @@ ms.locfileid: "72805540"
 
 - 如果具有[Azure 信息保护客户端（经典）](./rms-client/aip-client.md)，请继续使用 Azure 门户编辑标签和策略设置。 经典客户端继续从 Azure 下载标签和策略设置。
 
-- 如果有统一的[标签客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)和[经典客户端](./rms-client/aip-client.md)，则可以使用管理中心或 Azure 门户来更改标签。 但是，若要使经典客户端选取在管理中心进行的标签更改，必须返回到 Azure 门户：使用 Azure 门户中的 " **Azure 信息保护-统一标签**" 边栏选项卡中的 "**发布**" 选项。 
+- 如果有统一的[标签客户端](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)和[经典客户端](./rms-client/aip-client.md)，则可以使用管理中心或 Azure 门户来更改标签。 但是，若要使经典客户端选取在管理中心进行的标签更改，必须返回到 Azure 门户：使用 Azure 门户中的 " **Azure 信息保护-统一标签**" 窗格中的 "**发布**" 选项。 
 
 继续使用 Azure 门户进行[集中报告](reports-aip.md)和[扫描程序](deploy-aip-scanner.md)。
 
@@ -167,9 +167,11 @@ Azure Rights Management 服务根据需要自动生成并管理 XrML 证书，�
 
 ## <a name="what-types-of-data-can-azure-information-protection-classify-and-protect"></a>Azure 信息保护可以分类和保护哪些类型的数据？
 
-Azure 信息保护可以分类和保护电子邮件和文档，无论它们是位于本地还是云中。 这些文档包括 Word 文档、Excel 电子表格，PowerPoint 演示文稿、PDF 文档、基于文本的文件和图像文件。 有关支持的文档类型的列表，请参阅管理员指南中的[支持文件类型](./rms-client/client-admin-guide-file-types.md)列表。
+Azure 信息保护可以分类和保护电子邮件和文档，无论它们是位于本地还是云中。 这些文档包括 Word 文档、Excel 电子表格，PowerPoint 演示文稿、PDF 文档、基于文本的文件和图像文件。 有关支持的文档类型的列表，请参阅管理员指南中的[支持文件类型](./rms-client/clientv2-admin-guide-file-types.md)列表。
 
-Azure 信息保护无法对结构化数据（例如数据库文件、日历项、Power BI 报表、Yammer 帖子、Sway 内容和 OneNote 笔记本）进行分类和保护。
+Azure 信息保护无法对结构化数据（例如数据库文件、日历项、Yammer 帖子、Sway 内容和 OneNote 笔记本）进行分类和保护。
+
+**在预览版中新发布的**内容：现在，Power BI 现在支持使用敏感度标签进行分类，并且可以将这些标签中的保护应用于导出为以下文件格式的数据： .pdf、.xls 和 .ppt。 有关详细信息，请参阅[Power BI （预览版）中的数据保护](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)。
 
 ## <a name="i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work"></a>我看到 Azure 信息保护被列为可用于条件访问的云应用 - 工作原理是什么？
 
@@ -185,7 +187,7 @@ Azure 信息保护无法对结构化数据（例如数据库文件、日历项�
 
 - 建议对条件访问策略的评估频率进行微调。 可通过配置令牌生存期来执行此操作。 有关详细信息，请参阅 [Azure Active Directory 中的可配置令牌生存期](/azure/active-directory/active-directory-configurable-token-lifetimes)。
 
-- 建议不要将管理员帐户添加到条件访问策略，因为这些帐户无法访问 Azure 门户中的“Azure 信息保护”边栏选项卡。
+- 建议你不要将管理员帐户添加到条件访问策略，因为这些帐户将无法访问 Azure 门户中的 "Azure 信息保护" 窗格。
 
 - 如果在条件访问策略中使用 MFA 与其他组织展开协作 (B2B)，则必须使用 [Azure AD B2B 协作](/azure/active-directory/b2b/what-is-b2b)，并为要在其他组织中共享的用户创建来宾帐户。
 

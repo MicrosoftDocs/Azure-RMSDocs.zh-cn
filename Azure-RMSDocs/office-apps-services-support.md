@@ -3,8 +3,8 @@ title: Office 应用和服务如何支持 AIP 中的 Azure RMS
 description: 最终用户 Office 应用程序（例如 Word 和 Outlook）和 Office 服务（例如 Exchange 和 SharePoint）如何使用 AIP 中的 Azure 权限管理服务来帮助保护组织的数据。
 author: cabailey
 ms.author: cabailey
-manager: barbkess
-ms.date: 08/09/2019
+manager: rkarlin
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1250960a27deed4121bf0fd090250de30e56632b
-ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
+ms.openlocfilehash: 279fc1cd21486115fc270456d28d0d2598d8d271
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72447730"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559840"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
@@ -73,7 +73,7 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 如果使用 SharePoint Server，可通过部署 Azure 权限管理连接器，使用此 IRM 保护。 此连接器充当本地服务器和权限管理云服务之间的中继。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](deploy-rms-connector.md)。
 
 > [!NOTE]
-> 目前，使用 SharePoint IRM 时存在一些限制：
+> 使用 SharePoint IRM 时有一些限制：
 > 
 > - 不能使用在 Azure 门户中管理的默认模板或自定义保护模板。 
 > 
@@ -82,6 +82,9 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 > - 不支持共同创作（多人同时对文档进行编辑）。 若要在受 IRM 保护的库中编辑文档，必须首先签出和下载文档，然后在 Office 应用程序中编辑该文档。 因此，一次只能有一人编辑文档。
 
 对于不受 IRM 保护的库，如果你保护随后上传到 SharePoint 或 OneDrive 的文件，则以下操作不会使用此文件：共同创作、Office for web、搜索、文档预览、缩略图、电子数据展示和数据丢失防护（DLP）).
+
+> [!TIP]
+> 不要使用 SharePoint IRM，而应考虑使用应用加密的灵敏度标签，然后[在 SharePoint 和 OneDrive 中启用 Office 文件的敏感性标签（公共预览版）](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
 
 使用 SharePoint IRM 保护时，Azure Rights Management 服务会在从 SharePoint 下载文档时为文档应用使用限制和数据加密，而不是在 SharePoint 中首次创建文档或将其上传到库时进行此操作。 有关如何在下载文档前对其进行保护的信息，请参阅 SharePoint 文档中的 [OneDrive for Business 和 SharePoint Online 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx) 。
 

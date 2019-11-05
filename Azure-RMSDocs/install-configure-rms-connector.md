@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d8d60a170e587b7aa6b9e21f4368b26cb33d84bb
-ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
+ms.openlocfilehash: 8fc9425608f0ff2556ad83292607bb84912a427b
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73444943"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559677"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
@@ -171,7 +171,7 @@ ms.locfileid: "73444943"
 ## <a name="configuring-load-balancing-and-high-availability"></a>配置负载平衡和高可用性
 安装 RMS 连接器的第二个或最后一个实例之后，请定义连接器 URL 服务器名称并配置负载平衡系统。
 
-连接器 URL 服务器名称可以是你控制的命名空间中的任何名称。 例如，你可以在 DNS 系统中为**rmsconnector.contoso.com**创建一个条目，并将此条目配置为使用负载平衡系统中的 IP 地址。 此名称没有任何特殊要求，也无需在连接器服务器本身上进行配置。 除非你的 Exchange 和 SharePoint 服务器要通过 Internet 与连接器通信，否则此名称无需在 Internet 上解析。
+连接器 URL 服务器名称可以是你控制的命名空间中的任何名称。 例如，你可以在 DNS 系统中为**rmsconnector.contoso.com**创建一个条目，并将此条目配置为使用负载平衡系统中的 IP 地址。 此名称没有任何特殊要求，也无需在连接器服务器本身上进行配置。 除非你的 Exchange 和 SharePoint 服务器要通过 internet 与连接器通信，否则此名称无需在 internet 上解析。
 
 > [!IMPORTANT]
 > 在将 Exchange 或 SharePoint 服务器配置为使用连接器之后，我们建议你不要更改该名称，因为你随后必须清除这些服务器的所有 IRM 配置，然后重新进行配置。
@@ -208,7 +208,7 @@ ms.locfileid: "73444943"
 > - 若要将 IIS 配置为使用证书，请参阅 TechNet 上 [Web 服务器 (IIS)](https://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 文档库中的[添加网站绑定 (IIS 7)](https://technet.microsoft.com/library/cc731692.aspx)。
 
 ## <a name="configuring-the-rms-connector-for-a-web-proxy-server"></a>为 Web 代理服务器配置 RMS 连接器
-如果你的连接器服务器安装在没有直接 Internet 连接的网络中，需要手动配置出站 Internet 访问的 Web 代理服务器，则必须在 RMS 连接器的这些服务器上配置注册表。
+如果你的连接器服务器安装在没有直接 internet 连接的网络中，并且需要手动配置用于出站 internet 访问的 web 代理服务器，则必须在 RMS 连接器的这些服务器上配置注册表。
 
 #### <a name="to-configure-the-rms-connector-to-use-a-web-proxy-server"></a>将 RMS 连接器配置为使用 Web 代理服务器
 
@@ -233,7 +233,7 @@ ms.locfileid: "73444943"
 
 -   至少一个网络接口。
 
--   通过防火墙（或 Web 代理）访问 Internet。
+-   通过防火墙（或 web 代理）访问 internet。
 
 若要安装 RMS 连接器管理工具，请运行以下文件：
 

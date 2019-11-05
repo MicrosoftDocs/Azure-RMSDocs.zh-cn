@@ -12,12 +12,12 @@ ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6340a78d430c387f7a7cf76b9a6474d399b7e98f
-ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
+ms.openlocfilehash: 5018e69cf1798592d07b053eaeaccef234f71561
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71966852"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559865"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>曾使用 Azure 经典门户执行的任务
 
@@ -35,7 +35,7 @@ Azure 经典门户已于 2018 年 1 月 8 日停用。 此日期之后，用户�
 
 |Azure 经典门户|如何在 Azure 门户中执行此任务
 |-----------|--------------------|
-|首次访问配置设置|1.[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。<br /><br />2. 按照的说明，[首次访问 "Azure 信息保护" 边栏选项卡](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time)。
+|首次访问配置设置|1.[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。<br /><br />2. 按照中的说明进行操作，[以首次访问 "Azure 信息保护" 窗格](configure-policy.md#to-access-the-azure-information-protection-pane-for-the-first-time)。
 |创建新模板|创建应用保护的标签，并使用“设置权限”来定义权限、有效期限和脱机访问。 <br /><br />此配置会在后台创建一个新的自定义模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。<br /><br />有关详细信息，请参阅[创建新模板](configure-policy-templates.md#to-create-a-new-template)。
 |编辑模板属性： <br /><br />- 模板名称和描述<br /><br />- 使用权限、内容有效期限和脱机访问设置|如果尚未这样做，请[将模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)，然后执行以下操作<br /><br />1. 更改标签名称和说明<br /><br />2. 更改标签上的保护设置，以更新权限、过期时间和脱机访问设置。<br /><br />有关详细信息，请参阅[配置标签以保护设置](configure-policy-protection.md#to-configure-a-label-for-protection-settings)。
 |存档模板|将标签状态设置为“禁用”。

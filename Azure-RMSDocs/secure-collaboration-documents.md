@@ -13,16 +13,16 @@ ms.subservice: aiplabels
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ae95c9d4ffc7bae7004ad6e79a958c0c8836a22f
-ms.sourcegitcommit: 28c1de5f9d1426f160f0e0bafcf9f76769e662b6
+ms.openlocfilehash: c988dd65f677d69d362fe59f6a5eb0d631b23faa
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71679025"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561118"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 当你使用 Azure 信息保护时，你可以保护你的文档，而无需牺牲授权用户的协作。 一个用户创建并与他人共享以进行查看和编辑的大多数文档将是 Word、Excel 和 PowerPoint 等 Office 文档。 这些文档支持本地保护，这意味着除了授权和加密的保护功能外，它们还支持受限权限以实现更细化的控制。 
 
@@ -30,9 +30,9 @@ ms.locfileid: "71679025"
 
 配置这些权限时，可以指定向哪些用户授予它们：
 
-- **对于自己组织中或其他组织中使用 Azure Active Directory 的用户**：可以指定 Azure AD 用户帐户、Azure AD 组或该组织中的所有用户。 
+- **对于你自己的组织或使用 Azure Active Directory 的另一组织中的用户**：可以指定 Azure AD 用户帐户、Azure AD 组或该组织中的所有用户。 
 
-- **对于不具有 Azure Active Directory 帐户的用户**：指定将与 Microsoft 帐户一起使用的电子邮件地址。 此帐户可能已经存在，或者用户可以在打开受保护文档时进行创建。 
+- **对于没有 Azure Active Directory 帐户的用户**：指定将与 Microsoft 帐户一起使用的电子邮件地址。 此帐户可能已经存在，或者用户可以在打开受保护文档时进行创建。 
     
     若要使用 Microsoft 帐户打开文档，用户必须使用 Office 365 应用（即点即用）。 其他 Office 版本尚不支持使用 Microsoft 帐户打开受 Office 保护的文档。
 
@@ -47,37 +47,37 @@ ms.locfileid: "71679025"
 
 由于方案限制为只有特定人员拥有访问权限，因此不包括任何身份已验证的用户的设置。 有关如何使用此设置配置标签的示例，请参阅[示例 5：加密内容但不限制谁能访问内容的标签](configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it)。  
 
-1. 选择已在全局策略中或指定了作用域的策略中的标签。 在“保护”边栏选项卡，确保选中“Azure (云密钥)”。
+1. 选择已在全局策略中或指定了作用域的策略中的标签。 在 "**保护**" 窗格上，确保选中 " **Azure （云密钥）** "。
     
 2. 务必选中“设置权限”，然后选择“添加权限”。
 
-3. 在“添加权限”边栏选项卡： 
+3. 在 "**添加权限**" 窗格中： 
     
    - 对于内部组：选择“浏览目录”以选择组，而其必须启用电子邮件。
     
    - 对于第一个外部组织中的所有用户：选择“输入详细信息”，然后在组织的租户中键入域名。 例如，fabrikam.com。
     
-   - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如， sales@contoso.com 。
+   - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如，sales@contoso.com 。
     
-   - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，输入用户的电子邮件地址。 例如， bengi.turan@gmail.com 。 
+   - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，键入用户的电子邮件地址。 例如，bengi.turan@gmail.com 。 
 
-4. 向这些用户授予相同的权限：对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。
+4. 若要向所有这些用户授予相同的权限：对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。
     
     例如，你配置的权限可能与以下内容相似：
         
     ![为安全协作配置权限](./media/collaboration-permissions.png)
 
-5. 在“添加权限”边栏选项卡上单击“确定”。
+5. 在 "**添加权限**" 窗格上单击 **"确定"** 。
 
-6. 在”保护”边栏选项卡上，单击“确定”。
+6. 在 "**保护**" 窗格上，单击 **"确定"** 。
 
-7. 在“标签”边栏选项卡上，选择“保存”。 
+7. 在 "**标签**" 窗格中，选择 "**保存**"。 
 
 ## <a name="applying-the-label-that-supports-secure-collaboration"></a>应用支持安全协作的标签
 
 现在此标签已配置好，它可以通过好多种方式（包括以下几种）应用于文档：
 
-|应用标签的不同方式|详细信息|
+|应用标签的不同方式|更多信息|
 |---------------|----------|
 |用户在 Office 应用程序中创建文档时，手动选择标签。|用户从 Office 功能区上的“保护”按钮或从 Azure 信息保护栏选择标签。|
 |系统提示用户在保存新文档时选择一个标签。|你已配置名为“所有文档和电子邮件必须具有标签”的 Azure 信息保护[策略设置](configure-policy-settings.md)。|
@@ -103,7 +103,7 @@ ms.locfileid: "71679025"
 
 ![Azure 信息保护权限对话框示例](./media/example-permisisons-popup.png)
 
-注意:如果文档由同时使用 Azure 信息保护的外部用户打开，Office 应用程序不会显示文档的分类标签，尽管仍保留标签中的任何视觉标记。 相反，外部用户可以根据组织的分类来应用自己的标签。 如果这些外部用户随后将编辑过的文档发回给你，Office 会在文档重新打开时显示原始分类标签。
+注意：如果文档由同时使用 Azure 信息保护的外部用户打开，Office 应用程序不会显示文档的分类标签，尽管仍保留标签中的任何视觉标记。 相反，外部用户可以根据组织的分类来应用自己的标签。 如果这些外部用户随后将编辑过的文档发回给你，Office 会在文档重新打开时显示原始分类标签。
 
 在受保护文档打开前，将会发生以下身份验证流之一：
 

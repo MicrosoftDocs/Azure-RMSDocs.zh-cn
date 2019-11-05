@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 616e273f3d3a9a615e752e4fb9587165aac15a23
-ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
+ms.openlocfilehash: de74d15b2db84cc13cbc54943675232e8d659df4
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445063"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561368"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -163,7 +163,7 @@ Azure 信息保护允许收集和存储标识为敏感信息类型（预定义�
 
 详细信息:
 
-1. 以下 [Azure AD 管理员角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一用于访问 Azure 信息保护分析边栏选项卡：
+1. 访问 Azure 信息保护分析窗格的以下[Azure AD 管理员角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一：
     
     - 若要创建 Log Analytics 工作区或创建自定义查询，必须具有以下角色之一：
     
@@ -219,15 +219,15 @@ Azure Monitor 日志具有**使用情况和预估成本**功能，可帮助您�
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>配置报表的 Log Analytics 工作区
 
-1. 如果尚未这样做，请打开新的浏览器窗口，使用拥有[执行 Azure 信息保护分析所需权限](#permissions-required-for-azure-information-protection-analytics)的帐户[登录 Azure 门户](https://portal.azure.com)。 然后导航到“Azure 信息保护”边栏选项卡。 
+1. 如果尚未这样做，请打开新的浏览器窗口，使用拥有[执行 Azure 信息保护分析所需权限](#permissions-required-for-azure-information-protection-analytics)的帐户[登录 Azure 门户](https://portal.azure.com)。 然后导航到 " **Azure 信息保护**" 窗格。 
     
-    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+    例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
     
 2. 找到“管理”菜单选项，然后选择“配置分析（预览版）”。
 
-3. 在“Azure 信息保护日志分析”边栏选项卡上，可以看到由你的租户拥有的任何 Log Analytics 工作区的列表。 执行以下操作之一：
+3. 在 " **Azure 信息保护日志分析**" 窗格中，可以看到租户拥有的任何 Log Analytics 工作区的列表。 执行以下操作之一：
     
-    - 若要新建 Log Analytics 工作区，请选择“创建新工作区”，并在“Log Analytics 工作区”边栏选项卡上提供所需信息。
+    - 若要创建新的 Log Analytics 工作区：选择 "**创建新工作区**"，然后在 " **Log Analytics 工作区**" 窗格上提供所需的信息。
     
     - 若要使用现有 Log Analytics 工作区：从列表中选择工作区。
     
@@ -247,7 +247,7 @@ Azure Monitor 日志具有**使用情况和预估成本**功能，可帮助您�
 
 ## <a name="how-to-view-the-reports"></a>如何查看报告
 
-在“Azure 信息保护”边栏选项卡中，找到“仪表板”菜单选项，然后选择以下选项之一：
+在 "Azure 信息保护" 窗格中，找到 "**仪表板**" 菜单选项，然后选择下列选项之一：
 
 - 使用情况报表（预览版）：使用此报表查看标签是如何使用的。
 
@@ -269,7 +269,7 @@ Azure Monitor 日志具有**使用情况和预估成本**功能，可帮助您�
 
 ## <a name="how-to-modify-the-reports-and-create-custom-queries"></a>如何修改报表并创建自定义查询
 
-选择仪表板中的查询图标以打开“日志搜索”边栏选项卡： 
+选择仪表板中的 "查询" 图标，打开 "**日志搜索**" 窗格： 
 
 ![自定义 Azure 信息保护报表的 Log Analytics 图标](./media/log-analytics-icon.png)
 

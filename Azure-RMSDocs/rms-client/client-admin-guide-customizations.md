@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a9226d20962d1d51608ef0d5d487e785006fd8dc
-ms.sourcegitcommit: 3464f9224b34dc54ad6fc1b7bc4dc11ad1ab8d59
+ms.openlocfilehash: 9314cee4b09db6098612ce0e9cd5c6bac51a8e66
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984931"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561342"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -32,19 +32,19 @@ ms.locfileid: "72984931"
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>在门户中配置高级客户端配置设置的具体步骤
 
-1. 如果尚未这样做，请在新的浏览器窗口中[登录到 Azure 门户](../configure-policy.md#signing-in-to-the-azure-portal)，然后导航到“Azure 信息保护”边栏选项卡。
+1. 如果尚未这样做，请在新的浏览器窗口中[登录到 Azure 门户](../configure-policy.md#signing-in-to-the-azure-portal)，然后导航到 " **Azure 信息保护**" 窗格。
 
 2. 从“分类” > “标签”菜单选项：选择“策略”。
 
-3. 在“Azure 信息保护 - 策略”边栏选项卡中，选择此策略旁边的上下文菜单 (...)，以添加高级设置。 再选择“高级设置”。
+3. 在 " **Azure 信息保护-策略**" 窗格中，选择策略旁边的上下文菜单（ **...** ），以包含高级设置。 再选择“高级设置”。
     
     可以为全局策略和作用域内策略配置高级设置。
 
-4. 在“高级设置”边栏选项卡中，键入高级设置名称和值，再选择“保存并关闭”。
+4. 在 "**高级设置**" 窗格中，键入高级设置名称和值，然后选择 "**保存并关闭**"。
 
 5. 确保此策略的用户重启打开过的任何 Office 应用程序。
 
-6. 如果不再需要此设置，并希望还原为默认行为：在“高级设置”边栏选项卡中，选择不再需要的设置旁边的上下文菜单 (...)，再选择“删除”。 然后单击“保存并关闭”。
+6. 如果不再需要该设置并且要恢复为默认行为：在 "**高级设置**" 窗格上，选择不再需要的设置旁边的上下文菜单（ **...** ），然后选择 "**删除**"。 然后单击“保存并关闭”。
 
 #### <a name="available-advanced-client-settings"></a>可用高级客户端设置
 
@@ -157,9 +157,9 @@ ms.locfileid: "72984931"
 
 ## <a name="support-for-disconnected-computers"></a>对断开连接的计算机的支持
 
-默认情况下，Azure 信息保护客户端会自动尝试连接到 Azure 信息保护服务，以下载最新的 Azure 信息保护策略。 如果知道有计算机在一段时间内无法连接到 Internet，可以编辑注册表，以阻止客户端尝试连接到服务。 
+默认情况下，Azure 信息保护客户端会自动尝试连接到 Azure 信息保护服务，以下载最新的 Azure 信息保护策略。 如果您的计算机在一段时间内无法连接到 internet，则可以通过编辑注册表来阻止客户端尝试连接到该服务。 
 
-请注意，在没有 Internet 连接的情况下，客户端无法使用组织的基于云的密钥来应用保护（或删除保护）。 相反，客户端只能使用应用分类或 [HYOK](../configure-adrms-restrictions.md) 保护的标签。
+请注意，如果没有 internet 连接，客户端将无法使用组织的基于云的密钥来应用保护（或删除保护）。 相反，客户端只能使用应用分类或 [HYOK](../configure-adrms-restrictions.md) 保护的标签。
 
 若要阻止 Azure 信息保护服务登录提示，可使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)，然后为计算机下载策略。 或者，也可以通过编辑注册表来阻止此登录提示。
 
@@ -197,7 +197,7 @@ ms.locfileid: "72984931"
     
 2. 将已标识的文件重命名为 Policy.msip，再将它复制到已安装 Azure 信息保护客户端的计算机上的 %LocalAppData%\Microsoft\MSIP 文件夹。 
 
-如果断开连接的计算机运行的是当前的 Azure 信息保护扫描程序 GA 版本，则需要执行其他配置步骤。 有关详细信息，请参阅[限制：扫描仪服务器无法](../deploy-aip-scanner.md#restriction-the-scanner-server-cannot-have-internet-connectivity)从扫描程序部署说明获得 Internet 连接。
+如果断开连接的计算机运行的是当前的 Azure 信息保护扫描程序 GA 版本，则需要执行其他配置步骤。 有关详细信息，请参阅[限制：扫描仪服务器无法](../deploy-aip-scanner.md#restriction-the-scanner-server-cannot-have-internet-connectivity)从扫描程序部署说明获得 internet 连接。
 
 ## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>在 Outlook 中隐藏或显示“不转发”按钮
 
@@ -343,7 +343,7 @@ User Response: Confirmed
 
 ### <a name="to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels"></a>若要针对特定标签实现用于警告、验证或阻止的弹出消息：
 
-若要针对特定标签实现弹出消息，必须知道这些标签的标签 ID。 在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值将显示在“标签”边栏选项卡上。 对于应用了标签的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 标识标签 ID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 ID。
+若要针对特定标签实现弹出消息，必须知道这些标签的标签 ID。 在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值会显示在 "**标签**" 窗格中。 对于应用了标签的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 标识标签 ID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 ID。
 
 使用以下键创建以下一个或多个高级客户端设置。 对于值，请按 ID 指定一个或多个标签，每个标签用逗号分隔。
 
@@ -478,7 +478,7 @@ User Response: Confirmed
 
 配置此设置时，Outlook 不会应用 Azure 信息保护策略中为“选择默认标签”设置配置的默认标签。 相反，Outlook 可应用不同的默认标签，也可不应用标签。
 
-要应用不同的标签，必须指定标签 ID。 在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值将显示在“标签”边栏选项卡上。 对于应用了标签的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 标识标签 ID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 ID。
+要应用不同的标签，必须指定标签 ID。 在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值会显示在 "**标签**" 窗格中。 对于应用了标签的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 标识标签 ID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 ID。
 
 因此 Outlook 不会应用默认标签，请指定“无”。
 
@@ -498,7 +498,7 @@ User Response: Confirmed
 
 `[Azure Information Protection label ID];[S/MIME action]`
 
-在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值将显示在“标签”边栏选项卡上。 若要使用包含子标签的 S/MIME，请始终仅指定子标签（而非父标签）的 ID。 指定子标签时，父标签必须位于同一范围内，或位于全局策略中。
+在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值会显示在 "**标签**" 窗格中。 若要使用包含子标签的 S/MIME，请始终仅指定子标签（而非父标签）的 ID。 指定子标签时，父标签必须位于同一范围内，或位于全局策略中。
 
 S/MIME 操作可以是：
 
@@ -662,7 +662,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 `[Azure Information Protection label ID],[migration rule name],[Secure Islands custom property name],[Secure Islands metadata Regex value]`
 
-在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值将显示在“标签”边栏选项卡上。 若要指定子标签，父标签必须位于同一范围中，或位于全局策略中。
+在 Azure 门户中查看或配置 Azure 信息保护策略时，标签 ID 值会显示在 "**标签**" 窗格中。 若要指定子标签，父标签必须位于同一范围中，或位于全局策略中。
 
 指定所选的迁移规则名称。 请使用描述性名称，这有助于确定应如何将旧标记解决方案中的一个或多个标签映射到 Azure 信息保护标签。 此名称显示在扫描程序报告和事件查看器中。 请注意，此设置不会从文档中删除原始标签，也不会删除可能已应用原始标签的文档中的任何视觉标记。 若要删除页眉和页脚，请参阅下一部分[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)。
 
@@ -982,7 +982,7 @@ Outlook Mobile 不支持 Exchange 邮件分类。
 
 2. 为每个标签创建 Exchange 邮件流规则：在邮件属性包括配置的分类时应用规则，并将邮件属性修改为设置邮件头。 
 
-     对于邮件头，可检查已发送且使用 Azure 信息保护标签进行分类的电子邮件的 Internet 邮件头，查找要指定的信息。 查找邮件头 **msip_labels**，以及紧随其后的字符串，直至分号（包括分号）。 例如：
+     对于邮件头，可通过检查通过使用 Azure 信息保护标签发送和分类的电子邮件的 internet 标头来确定要指定的信息。 查找邮件头 **msip_labels**，以及紧随其后的字符串，直至分号（包括分号）。 例如：
     
     **msip_labels: MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled=True;**
     

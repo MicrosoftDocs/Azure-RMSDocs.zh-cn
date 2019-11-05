@@ -11,21 +11,21 @@ ms.service: information-protection
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: e1f5b3c05ae7e8c0717ef4d0227eacda8eeade3e
-ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
+ms.openlocfilehash: 8968dd5f8aa113ff87870b48e15892ec5b367f76
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2019
-ms.locfileid: "71673899"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559580"
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>如何在 Azure 信息保护中配置不同语言的标签和模板
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 > [!NOTE]
-> 这些说明适用于 Azure 信息保护客户端（经典），而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
+> 这些说明适用于 Azure 信息保护客户端（经典版），而不是 Azure 信息保护统一标记客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
 > 
 > 如果要查找有关为敏感度标签配置不同语言的信息，请使用 Office 365 安全性和符合性 PowerShell，并使用*LocaleSettings*参数[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)。
 
@@ -49,13 +49,13 @@ ms.locfileid: "71673899"
 
 ## <a name="to-configure-labels-and-templates-for-different-languages"></a>配置不同语言的标签和模板
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护**" 窗格。
     
-    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+    例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
 
-2. 从“管理” > “语言”菜单选项中：在“Azure 信息保护 - 语言”边栏选项卡中，选择“添加新语言以进行翻译”。 选择要添加的语言，然后选择“确定”。 可以在搜索框中键入语言名称，也可以滚动浏览可用语言列表进行选择
+2. 从 "**管理** > **语言**" 菜单选项：在 " **Azure 信息保护-语言**" 窗格上，选择 "**添加新语言以进行翻译**"。 选择要添加的语言，然后选择“确定”。 可以在搜索框中键入语言名称，也可以滚动浏览可用语言列表进行选择
 
-3. 现在，所选语言显示在“Azure 信息保护 - 语言”边栏选项卡上：
+3. 你所选的语言现在显示在 " **Azure 信息保护-语言**" 窗格中：
     
     - 要添加其他语言，请选择“添加新语言以进行翻译”并重复执行上一步骤。 
         
@@ -70,13 +70,13 @@ ms.locfileid: "71673899"
 
 5. 从“exported localization.zip”中提取文件，这样，你所选的每种语言都有可供下载的 .xml 文件。 
 
-6. 编辑每个 .xml 文件：对于 `<LocalizedText>` 标记中的每个字符串，为每种所选语言提供你想要的翻译。 
+6. 编辑每个 .xml 文件：对于 `<LocalizedText>` 标签中的每个字符串，为每种所选语言提供你想要的翻译。 
 
 7. 编辑每个 .xml 文件后，创建一个新的压缩 (zipped) 文件夹来包含这些文件。 压缩文件夹可以具有任何名称，但必须具有 .zip 扩展名。
     
-    提示：不必等到编辑完已下载的每个语言文件。 相反，可以通过将已下载的所有文件中的一部分文件包括在 .zip 文件中来分阶段推出不同语言。 完成多种语言的翻译后，重复步骤 7 和 8。
+    提示：您无需等待，直到您编辑完每个已下载的语言文件。 相反，可以通过将已下载的所有文件中的一部分文件包括在 .zip 文件中来分阶段推出不同语言。 完成多种语言的翻译后，重复步骤 7 和 8。
 
-8. 返回到“Azure 信息保护 - 语言”边栏选项卡，然后选择“导入”。 请注意，如果此选项不可用，则首先清除“语言名称”复选框或单独选择的语言对应的复选框。
+8. 返回到 " **Azure 信息保护-语言**" 窗格，然后选择 "**导入**"。 请注意，如果此选项不可用，则首先清除“语言名称”复选框或单独选择的语言对应的复选框。
     
     完成导入后，将为用户下载本地化名称和说明。
 

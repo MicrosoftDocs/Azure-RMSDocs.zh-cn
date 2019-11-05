@@ -12,12 +12,12 @@ ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.subservice: v1client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5efccfe851446a754cd5f823b8f71d504824a778
-ms.sourcegitcommit: 801f9d138e491788a618a5b918305dc3666648b4
+ms.openlocfilehash: 7898fd3ff15423c6a92eb2eabe6f5cb01007b076
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72890331"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561302"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -489,7 +489,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 2. 对于与 Azure 信息保护配合使用的 Azure AD 租户，请导航到**Azure Active Directory** > **管理** > **应用注册**"。 
 
-3. 选择 " **+ 新建注册**"，创建 Web 应用/API 应用程序。 在 "**注册应用程序**" 边栏选项卡上，指定以下值，然后单击 "**注册**"：
+3. 选择 " **+ 新建注册**"，创建 Web 应用/API 应用程序。 在 "**注册应用程序**" 窗格上，指定以下值，然后单击 "**注册**"：
 
    - **名称**： `AIPOnBehalfOf`
         
@@ -499,34 +499,34 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
     
     - **重定向 URI （可选）** ： **Web**和 `http://localhost`
 
-4. 在 " **AIPOnBehalfOf** " 边栏选项卡上，复制 "**应用程序（客户端） ID**" 的值。 值类似于以下示例： `57c3c1c3-abf9-404e-8b2b-4652836c8c66`。 在运行 Set-aipauthentication cmdlet 时，此值用于*WebAppId*参数。 粘贴并保存该值供以后参考。
+4. 在 " **AIPOnBehalfOf** " 窗格中，复制 "**应用程序（客户端） ID**" 的值。 值类似于以下示例： `57c3c1c3-abf9-404e-8b2b-4652836c8c66`。 在运行 Set-aipauthentication cmdlet 时，此值用于*WebAppId*参数。 粘贴并保存该值供以后参考。
 
-5. 仍在 " **AIPOnBehalfOf** " 边栏选项卡上的 "**管理**" 菜单中，选择 "**身份验证**"。
+5. 仍在 " **AIPOnBehalfOf** " 窗格的 "**管理**" 菜单中，选择 "**身份验证**"。
 
-6. 在 " **AIPOnBehalfOf-身份验证**" 边栏选项卡上的 "**高级设置**" 部分中，选择 " **ID 令牌**" 复选框，然后选择 "**保存**"。
+6. 在 " **AIPOnBehalfOf-身份验证**" 窗格的 "**高级设置**" 部分中，选择 " **ID 令牌**" 复选框，然后选择 "**保存**"。
 
-7. 仍在 " **AIPOnBehalfOf-身份验证**" 边栏选项卡上的 "**管理**" 菜单中，选择 "**证书" & 机密**"。
+7. 仍在 " **AIPOnBehalfOf-身份验证**" 窗格中，从 "**管理**" 菜单中选择 "**证书" & "机密**"。
 
-8. 在 " **AIPOnBehalfOf & 机密**" 边栏选项卡上的 "**客户端密码**" 部分中，选择 " **+ 新建客户端密钥**"。 
+8. 在 " **AIPOnBehalfOf & 机密**" 窗格的 "**客户端密码**" 部分中，选择 " **+ 新建客户端密钥**"。 
 
 9. 对于 "**添加客户端密钥**"，请指定以下各项，然后选择 "**添加**"：
     
     - **说明**： `Azure Information Protection client`
     - **过期**：指定所选的持续时间（1年、2年或永不过期）
 
-9. 返回到 " **AIPOnBehalfOf-证书 & 机密**" 边栏选项卡上的 "**客户端密码**" 部分中，复制**值**的字符串。 此字符串类似于以下示例： `+LBkMvddz?WrlNCK5v0e6_=meM59sSAn`。 若要确保复制所有字符，请选择要**复制到剪贴板**的图标。 
+9. 返回到 " **AIPOnBehalfOf-证书 & 机密**" 窗格的 "**客户端密码**" 部分中，复制**值**的字符串。 此字符串类似于以下示例： `+LBkMvddz?WrlNCK5v0e6_=meM59sSAn`。 若要确保复制所有字符，请选择要**复制到剪贴板**的图标。 
     
     请务必保存此字符串，因为它不会再次显示，并且无法检索。 对于所使用的任何敏感信息，请安全地存储保存的值并限制对它的访问。
 
-10. 仍在 " **AIPOnBehalfOf-证书 & 机密**" 边栏选项卡上的 "**管理**" 菜单中，选择 "**公开 API**"。
+10. 仍在 " **AIPOnBehalfOf-证书 & 机密**" 窗格的 "**管理**" 菜单中，选择 "**公开 API**"。
 
-11. 在 " **AIPOnBehalfOf-公开 API** " 边栏选项卡上，选择 "**设置** **应用程序 id uri** " 选项，然后在 "**应用程序 id uri** " 值中，将**API**更改为**http**。 此字符串类似于以下示例： `http://d244e75e-870b-4491-b70d-65534953099e`。 
+11. 在 " **AIPOnBehalfOf-公开 API** " 窗格上，选择 "设置**应用程序 id uri** " 选项，然后在 "**应用程序 id uri** " 值中，将**API**更改为**http**。 此字符串类似于以下示例： `http://d244e75e-870b-4491-b70d-65534953099e`。 
     
     选择“保存”。
 
-12. 返回 " **AIPOnBehalfOf-公开 API** " 边栏选项卡，选择 " **+ 添加作用域**"。
+12. 返回 " **AIPOnBehalfOf-公开 API** " 窗格，选择 " **+ 添加作用域**"。
 
-13. 在 "**添加作用域**" 边栏选项卡上，指定以下内容，并使用建议的字符串作为示例，然后选择 "**添加作用域**"：
+13. 在 "**添加作用域**" 窗格中，指定以下内容，并使用建议的字符串作为示例，然后选择 "**添加作用域**"：
     - **作用域名称**： `user-impersonation`
     - **谁可以获得许可？** ：**管理员和用户**
     - **管理员许可显示名称**： `Access Azure Information Protection scanner`
@@ -535,34 +535,34 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
     - **用户同意说明**： `Allow the application to access the scanner for the signed-in user`
     - **状态**：**已启用**（默认值）
 
-14. 返回 " **AIPOnBehalfOf-公开 API** " 边栏选项卡。
+14. 返回到**AIPOnBehalfOf-公开 API**窗格，关闭此窗格。
 
-15. 在 "**应用注册**" 边栏选项卡上，选择 " **+ 新建应用程序注册**"，立即创建本机应用程序。
+15. 在 "**应用注册**" 窗格上，选择 " **+ 新建应用程序注册**"，立即创建本机应用程序。
 
-16. 在 "**注册应用程序**" 边栏选项卡上，指定以下设置，然后选择 "**注册**"：
+16. 在 "**注册应用程序**" 窗格上，指定以下设置，然后选择 "**注册**"：
     - **名称**： `AIPClient`
     - **受支持的帐户类型**：**仅限此组织目录中的帐户**
     - **重定向 URI （可选）** ：**公用客户端（移动 & 桌面）** 和 `http://localhost`
 
-17. 在 " **AIPClient** " 边栏选项卡上，复制 "**应用程序（客户端） ID**" 的值。 值类似于以下示例： `8ef1c873-9869-4bb1-9c11-8313f9d7f76f`。 
+17. 在 " **AIPClient** " 窗格中，复制 "**应用程序（客户端） ID**" 的值。 值类似于以下示例： `8ef1c873-9869-4bb1-9c11-8313f9d7f76f`。 
     
     在运行 Set-aipauthentication cmdlet 时，此值用于 NativeAppId 参数。 粘贴并保存该值供以后参考。
 
-18. 仍在 " **AIPClient** " 边栏选项卡上的 "**管理**" 菜单中，选择 "**身份验证**"。
+18. 仍在 " **AIPClient** " 窗格的 "**管理**" 菜单中，选择 "**身份验证**"。
 
-19. 在 " **AIPClient-身份验证**" 边栏选项卡上，指定以下内容，然后选择 "**保存**"：
+19. 在 " **AIPClient-身份验证**" 窗格中，指定以下内容，然后选择 "**保存**"：
     - 在 "**高级设置**" 部分中，选择 " **ID 令牌**"。
     - 在 "**默认客户端类型**" 部分中，选择 **"是"** 。
 
-20. 仍在 " **AIPClient-身份验证**" 边栏选项卡上的 "**管理**" 菜单中，选择 " **API 权限**"。
+20. 仍在 " **AIPClient-身份验证**" 窗格中，从 "**管理**" 菜单中选择 " **API 权限**"。
 
-21. 在 " **AIPClient** " 边栏选项卡上，选择 " **+ 添加权限**"。
+21. 在 " **AIPClient-权限**" 窗格上，选择 " **+ 添加权限**"。
 
-22. 在 "**请求 api 权限**" 边栏选项卡上，选择 **"我的 api**"。
+22. 在 "**请求 api 权限**" 窗格上，选择 "**我的 api**"。
 
 23. 在 "**选择 API** " 部分中，选择 " **APIOnBehalfOf**"，然后选中 "**用户模拟**" 复选框作为权限。 选择 "**添加权限**"。 
 
-24. 返回 " **API 权限**" 边栏选项卡，在 "**授予许可**" 部分中，选择 "**授予管理员同意 \<*租户名称*">** 并在确认提示中选择 **"是"** 。
+24. 返回到 " **API 权限**" 窗格，在 "**授予许可**" 部分中，选择 "**授予管理员同意 \<*租户名称*">** 并在确认提示中选择 **"是"** 。
 
 至此，你已配置完两个应用，并获得了使用参数 *WebAppId*、*WebAppKey* 和 *NativeAppId* 运行 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 所需的值。 在我们的示例中：
 

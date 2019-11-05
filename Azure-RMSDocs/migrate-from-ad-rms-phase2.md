@@ -13,21 +13,21 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: acc19d8865c189e2852a2b870ea2028aab731f04
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.openlocfilehash: 381439513d86102bb0c08fde63015b417f192be3
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71684436"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559928"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 2。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 4-6。
 
 
-## <a name="step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection"></a>步骤 4. 从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护中
+## <a name="step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection"></a>步骤 4： 从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护中
 此步骤是一个分为两部分的过程：
 
 1. 通过将受信任的发布域 (TPD) 导出到 .xml 文件，从 AD RMS 导出配置数据。 此过程对于所有迁移是相同的。
@@ -77,7 +77,7 @@ ms.locfileid: "71684436"
 > [!NOTE]
 > 有关将硬件安全模块与 AD RMS 配合使用的详细信息，请参阅 [将 AD RMS 与硬件安全模块配合使用](https://technet.microsoft.com/library/jj651024.aspx)。
 
-两个 Azure 信息保护租户密钥拓扑选项包括：Microsoft 管理你的租户密钥（由 Microsoft 管理），或者你在 Azure Key Vault 中自行管理租户密钥（由客户管理）。 如果你自行管理 Azure 信息保护租户密钥，这有时也称为“创建自己的密钥”(BYOK)。 有关详细信息，请参阅[计划和实施你的 Azure 信息保护租户密钥](plan-implement-tenant-key.md)文章。
+两个 Azure 信息保护租户密钥拓扑选项包括：Microsoft 管理你的租户密钥（**由 Microsoft 管理**），或者你在 Azure 密钥保管库中自行管理租户密钥（**由客户管理**）。 如果你自行管理 Azure 信息保护租户密钥，这有时也称为“创建自己的密钥”(BYOK)。 有关详细信息，请参阅[计划和实施你的 Azure 信息保护租户密钥](plan-implement-tenant-key.md)文章。
 
 使用下表来确定要使用哪个过程进行迁移。 
 
@@ -91,7 +91,7 @@ ms.locfileid: "71684436"
 
 如果拥有无法导出的 HSM 保护密钥，仍可通过将 AD RMS 群集配置为只读模式来迁移到 Azure 信息保护。 在只读模式下，仍可打开之前受保护的内容，但新的受保护内容使用由你 (BYOK) 或 Microsoft 管理的新租户密钥。 有关详细信息，请参阅[可更新 Office 以支持从 AD RMS 到 Azure RMS 的迁移](https://support.microsoft.com/help/4023955/an-update-is-available-for-office-to-support-migrations-from-ad-rms-to)。
 
-在开始这些密钥迁移过程之前，请确保可以访问先前在导出受信任的发布域时创建的 .xml 文件。 例如，可以将这些文件保存到从 AD RMS 服务器移到接入 Internet 的工作站的 U 盘。
+在开始这些密钥迁移过程之前，请确保可以访问先前在导出受信任的发布域时创建的 .xml 文件。 例如，这些可能会保存到 u 盘，从 AD RMS 服务器移动到连接到 internet 的工作站。
 
 > [!NOTE]
 > 但是，你将存储这些文件，请使用安全最佳做法来保护它们，因为此数据包含你的私钥。
@@ -102,7 +102,7 @@ ms.locfileid: "71684436"
 - [HSM 保护密钥到 HSM 保护密钥](migrate-hsmkey-to-hsmkey.md)
 - [软件保护密钥到 HSM 保护密钥](migrate-softwarekey-to-hsmkey.md)
 
-## <a name="step-5-activate-the-azure-rights-management-service"></a>步骤 5. 激活 Azure Rights Management 服务
+## <a name="step-5-activate-the-azure-rights-management-service"></a>步骤 5： 激活 Azure Rights Management 服务
 
 打开 PowerShell 会话并运行下列命令：
 
@@ -116,7 +116,7 @@ ms.locfileid: "71684436"
 
 **如果 Azure 信息保护租户已激活，会怎么样？** 如果已为组织激活 Azure Rights Management 服务，并且已创建想要在迁移后使用的自定义模板，则必须导出和导入这些模板。 下一步中介绍了此过程。 
 
-## <a name="step-6-configure-imported-templates"></a>步骤 6. 配置导入的模板
+## <a name="step-6-configure-imported-templates"></a>步骤 6： 配置导入的模板
 
 由于所导入的模板具有“已存档”的默认状态，如果你希望用户能够将这些模板用于 Azure Rights Management 服务，必须将此状态更改为“已发布”。
 
@@ -152,7 +152,7 @@ ms.locfileid: "71684436"
 
 如果不确定 AD RMS 模板是否包括 ANYONE 组，可使用以下 Windows PowerShell 示例脚本来标识这些模板。 有关将 Windows PowerShell 用于 AD RMS 的详细信息，请参阅[使用 Windows PowerShell 管理 AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)。
 
-如果在 Azure 门户中将模板转换为标签，可以轻松将外部用户添加到这些模板。 然后，在“添加权限”边栏选项卡上，选择“输入详细信息”，手动为这些用户指定电子邮件地址。 
+如果在 Azure 门户中将模板转换为标签，可以轻松将外部用户添加到这些模板。 然后，在 "**添加权限**" 窗格上，选择 "**输入详细信息**" 以手动指定这些用户的电子邮件地址。 
 
 有关此配置的详细信息，请参阅[如何配置标签以进行 Rights Management 保护](./configure-policy-protection.md)。
 

@@ -12,12 +12,12 @@ ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1061b548e0996f27fdf3bcdea8bfc523e3a19af5
-ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
+ms.openlocfilehash: 44e4adaacfd23ae4bc2feb78405b69ca89a10bbf
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73444964"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559646"
 ---
 # <a name="installing-the-aipservice-powershell-module"></a>安装 AIPService PowerShell 模块
 
@@ -25,7 +25,7 @@ ms.locfileid: "73444964"
 
 使用以下信息来帮助你为 Azure 信息保护中的保护服务安装 Windows PowerShell 模块。 此模块的名称为 AIPService，它将替换名为 AADRM 的以前的版本。
 
-通过使用具有 Internet 连接且满足下一节列出的先决条件的任何 Windows 计算机，你可以使用此 PowerShell 模块从命令行管理保护服务（Azure Rights Management）。 适用于 Azure 信息保护的 Windows PowerShell 支持自动化脚本，或者可能是高级配置方案所必需的。 有关模块支持的管理任务和配置的详细信息，请参阅[使用 PowerShell 管理 Azure 信息保护中的保护](administer-powershell.md)。
+通过使用具有 internet 连接且满足下一节列出的先决条件的任何 Windows 计算机，你可以使用此 PowerShell 模块从命令行管理保护服务（Azure Rights Management）。 适用于 Azure 信息保护的 Windows PowerShell 支持自动化脚本，或者可能是高级配置方案所必需的。 有关模块支持的管理任务和配置的详细信息，请参阅[使用 PowerShell 管理 Azure 信息保护中的保护](administer-powershell.md)。
 
 ## <a name="prerequisites"></a>必备条件
 此表列出了安装和使用适用于 Azure 信息保护中的保护服务的 AIPService PowerShell 模块的先决条件。

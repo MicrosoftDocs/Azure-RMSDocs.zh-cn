@@ -4,7 +4,7 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/27/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 551aaa12a4a567b955b7d5e005e205c4029aa382
-ms.sourcegitcommit: 3464f9224b34dc54ad6fc1b7bc4dc11ad1ab8d59
+ms.openlocfilehash: abe085b36bd940dd69c2cc5f0f7a564fd6707548
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984896"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561131"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -52,7 +52,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 应使用哪种客户端？
 
-- 如果你的 Office 365 应用程序的最低版本为1910，则使用适用于 Windows 计算机的 "**在 office 中内置的标签客户端**"，你需要使用 MacOS、IOS 和 Android 也可以使用的相同标签和策略设置，并且不需要 需要统一标签客户端或经典客户端的 Office 应用。 这些功能当前包括自动和推荐的标签，以及功能区下的信息保护栏，便于选择和查看标签。 此客户端支持切换帐户，因为它不使用 Office 加载项，所以它比使用任何一个 Azure 信息保护客户端在 Office 应用中提供的性能更好。
+- 如果你的 Office 365 应用程序的最低版本为1910，则使用适用于 Windows 计算机的 "**在 office 中内置的标签客户端**"，你需要使用 MacOS、IOS 和 Android 也可以使用的相同标签和策略设置，并且不需要 需要统一标签客户端或经典客户端的 Office 应用。 这些功能包括功能区下的信息保护栏，便于选择和查看标签。 此客户端支持切换帐户，因为它不使用 Office 加载项，所以它比使用任何一个 Azure 信息保护客户端在 Office 应用中提供的性能更好。
 
 - 使用 Windows 计算机上的**Azure 信息保护统一的标签客户端**，可以使用 MacOS、IOS 和 Android 等标签和策略设置，而无需单独标记 Office 365 应用中的文件，并且无需具备仅受经典客户端支持。 这些功能目前包括使用本地密钥（HYOK）保护内容和本地数据存储的扫描程序的通用版本。
 
@@ -77,9 +77,6 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
     对于这些用户，他们在使用此客户端时具有略微不同的标签体验。 例如，他们将在 Office 应用程序中看到 "**保护**" 按钮，而不是 "**敏感度**" 按钮。 作为管理员，你需要将不同管理中心的 HYOK 设置和策略设置的标签管理到其他客户端平台的标签和设置。
 
 - 你有本地数据存储，其中包含需要扫描敏感信息或分类和保护的文档。 对于生产用途，请在服务器上部署经典客户端，以运行 Azure 信息保护扫描程序。
-
-
-
 
 ## <a name="compare-the-labeling-clients-for-windows-computers"></a>比较 Windows 计算机的标记客户端
 
@@ -129,7 +126,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 <sup>4</sup>不支持删除容器文件（zip、rar、7z、.msg 和 .pst）的保护。
 
-<sup>5</sup>对于文件资源管理器和 PowerShell 命令，用户必须连接到 Internet 才能保护文件。
+<sup>5</sup>对于文件资源管理器和 PowerShell 命令，用户必须连接到 internet 才能保护文件。
 
 <sup>6</sup>支持在文件资源管理器、PowerShell 和扫描程序中进行标记。 Office 应用程序中不支持标记。
 

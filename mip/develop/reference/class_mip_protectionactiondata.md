@@ -1,33 +1,28 @@
 ---
-title: 类 mip::P rotectionActionData
-description: 记录 Microsoft 信息保护 (MIP) SDK 的 mip::p rotectionactiondata 类。
+title: 类 mip：:P rotectionActionData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionactiondata 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: 9706844d0558c6c4f31ac5b9490ac77cb1a57824
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: 45a3c37acf9137f7e8f3567ce8b1d44c637d2402
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70057723"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73560792"
 ---
-# <a name="class-mipprotectionactiondata"></a>类 mip::P rotectionActionData 
+# <a name="class-mipprotectionactiondata"></a>类 mip：:P rotectionActionData 
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public ProtectionActionType GetProtectionType () const  | _尚无记录。_
-public const std::string& GetTemplateId() const  | _尚无记录。_
-public virtual ~ ProtectionActionData ()  | _尚无记录。_
-public ActionDataType GetType () const  | _尚无记录。_
-public const std:: map\<std:: string, std:: string\>& GetProperties () const  | _尚无记录。_
-public std:: string GetArgumentValue (const std:: string & key) const  | _尚无记录。_
-public const std::string& GetName() const  | _尚无记录。_
-public std:: vector\<std::p 风\<std:: string、std:: string\> \> GetArguments () const  | _尚无记录。_
+public ProtectionActionType GetProtectionType （） const  | 尚未记录。
+public const std::string& GetTemplateId() const  | 尚未记录。
+public virtual ~ ProtectionActionData （）  | 尚未记录。
   
-## <a name="members"></a>成员
+## <a name="members"></a>成員
   
 ### <a name="getprotectiontype-function"></a>GetProtectionType 函数
 _尚无记录。_
@@ -38,24 +33,4 @@ _尚无记录。_
 
   
 ### <a name="protectionactiondata-function"></a>~ ProtectionActionData 函数
-_尚无记录。_
-
-  
-### <a name="gettype-function"></a>GetType 函数
-_尚无记录。_
-
-  
-### <a name="getproperties-function"></a>GetProperties 函数
-_尚无记录。_
-
-  
-### <a name="getargumentvalue-function"></a>GetArgumentValue 函数
-_尚无记录。_
-
-  
-### <a name="getname-function"></a>GetName 函数
-_尚无记录。_
-
-  
-### <a name="getarguments-function"></a>GetArguments 函数
 _尚无记录。_

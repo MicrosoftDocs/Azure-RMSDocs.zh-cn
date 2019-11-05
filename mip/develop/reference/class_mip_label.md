@@ -1,23 +1,23 @@
 ---
 title: class mip::Label
-description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: label 类。'
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： label 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: 364f28ee45b20208be4ac31b30a11bef389fc7b4
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: 5bdc88746a8921f306d9d52dbe75f3c2b826a5b6
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70054701"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73560140"
 ---
 # <a name="class-miplabel"></a>class mip::Label 
 单个 Microsoft 信息保护标签的抽象。
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetId() const  |  获取标签 ID。
 public const std::string& GetName() const  |  获取标签名称。
@@ -25,77 +25,84 @@ public const std::string& GetDescription() const  |  获取标签说明。
 public const std::string& GetColor() const  |  获取应显示的标签颜色。
 public int GetSensitivity() const  |  获取标签的敏感度。
 public const std::string& GetTooltip() const  |  获取标签的工具提示说明。
+public const std：： string & GetAutoTooltip （） const  |  获取导致应用此标签的分类的工具提示说明。
 public bool IsActive() const  |  获取一个布尔值，指示标签是否处于活动状态。
-public std:: weak_ptr\<Label\> GetParent () const  |  获取父标签。
-public const std:: vector\<std:: shared_ptr\<Label\>\>& GetChildren () const  |  获取当前标签的子标签。
-public const std:: vector\<std::p air\<std:: string, std:: string\>\>& GetCustomSettings () const  |  获取标签的自定义设置。
+public std：： weak_ptr\<标签\> GetParent （） const  |  获取父标签。
+public const std：： vector\<std：： shared_ptr\<Label\>\>& GetChildren （） const  |  获取当前标签的子标签。
+public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetCustomSettings （） const  |  获取标签的自定义设置。
 public ActionSource GetActionSource() const  |  获取标签的操作源。
   
-## <a name="members"></a>成员
+## <a name="members"></a>成員
   
 ### <a name="getid-function"></a>GetId 函数
 获取标签 ID。
 
   
-**返回**:标签 ID。
+返回结果：标签 ID。
   
 ### <a name="getname-function"></a>GetName 函数
 获取标签名称。
 
   
-**返回**:标签名称。
+**返回结果**：标签名称。
   
 ### <a name="getdescription-function"></a>GetDescription 函数
 获取标签说明。
 
   
-**返回**:标签说明。
+**返回结果**：标签说明。
   
 ### <a name="getcolor-function"></a>GetColor 函数
 获取应显示的标签颜色。
 
   
-**返回**:字符串格式的颜色值。 “#RRGGBB”，其中每个 RR、GG、BB 都是十六进制 0-f。
+**返回结果**：字符串格式的颜色值。 “#RRGGBB”，其中每个 RR、GG、BB 都是十六进制 0-f。
   
 ### <a name="getsensitivity-function"></a>GetSensitivity 函数
 获取标签的敏感度。
 
   
-**返回**:一个数值。 值越大表示敏感度越高。
+**返回结果**：数字值。 值越大表示敏感度越高。
   
 ### <a name="gettooltip-function"></a>GetTooltip 函数
 获取标签的工具提示说明。
 
   
-**返回**:工具提示字符串。
+**返回结果**：一个工具提示字符串。
+  
+### <a name="getautotooltip-function"></a>GetAutoTooltip 函数
+获取导致应用此标签的分类的工具提示说明。
+
+  
+**返回结果**：一个工具提示字符串。
   
 ### <a name="isactive-function"></a>IsActive 函数
 获取一个布尔值，指示标签是否处于活动状态。
 仅活动标签才能应用。 不能应用处于非活动状态的标签，并且仅用于显示目的。 
 
   
-**返回**:如果标签处于活动状态, 则为 True; 否则为 false。
+**返回结果**：如果标签处于活动状态，则为 true，否则为 false。
   
 ### <a name="getparent-function"></a>GetParent 函数
 获取父标签。
 
   
-**返回**:指向父标签的弱指针 (如果存在), 否则为空指针。
+**返回结果**：如果存在，则返回指向父标签的弱指针，否则返回空指针。
   
 ### <a name="getchildren-function"></a>GetChildren 函数
 获取当前标签的子标签。
 
   
-**返回**:指向标签的共享指针的矢量。
+**返回结果**：一个指向标签的共享指针的矢量。
   
 ### <a name="getcustomsettings-function"></a>GetCustomSettings 函数
 获取标签的自定义设置。
 
   
-**返回**:表示自定义设置的键值对的向量。
+**返回**：表示自定义设置的键值对的向量。
   
 ### <a name="getactionsource-function"></a>GetActionSource 函数
 获取标签的操作源。
 
   
-**返回**:[操作](class_mip_action.md)源
+**返回**：操作源

@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0de43192b44fb4e6d931d1e09ef8f01514c0a4ff
-ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
+ms.openlocfilehash: e5d81b5437fef69438fac5d8729b4beb8c9641a9
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72447021"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559460"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
@@ -86,13 +86,13 @@ Azure 信息保护支持不同级别的订阅：
     
     Microsoft 帐户无法管理 Azure 信息保护。
 
-## <a name="to-access-the-azure-information-protection-blade-for-the-first-time"></a>首次访问“Azure 信息保护”边栏选项卡
+## <a name="to-access-the-azure-information-protection-pane-for-the-first-time"></a>首次访问 "Azure 信息保护" 窗格
 
 1. 登录到 Azure 门户。
 
-2. 在中心菜单上，选择“创建资源”，然后在市场的搜索框中键入“Azure 信息保护”。 
+2. 选择 " **+ 创建资源**"，然后从 Marketplace 的搜索框中键入 " **Azure 信息保护**"。 
     
-3. 在结果列表中选择“Azure 信息保护”。 在“Azure 信息保护”边栏选项卡中，单击“创建”。
+3. 在结果列表中选择“Azure 信息保护”。 在 " **Azure 信息保护**" 窗格上，单击 "**创建**"。
     
     > [!TIP] 
     > （可选）选择“固定到仪表板”以便在仪表板上创建“Azure 信息保护”磁贴，这样，下次登录到门户时，就可以跳过浏览到该服务。
@@ -101,15 +101,15 @@ Azure 信息保护支持不同级别的订阅：
 
 4. 首次连接到该服务时，“快速入门”页会自动打开。 浏览建议的资源，或使用其他菜单选项。 要配置用户可选择的标签，请使用以下过程。
 
-下次访问“Azure 信息保护”边栏选项卡时，将自动选择“标签”选项，以便可以查看并为所有用户配置标签。 从“常规”菜单进行选择即可返回“快速入门”页。
+下次访问 " **Azure 信息保护**" 窗格时，它会自动选择 "**标签**" 选项，以便你可以查看和配置所有用户的标签。 从“常规”菜单进行选择即可返回“快速入门”页。
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>如何配置 Azure 信息保护策略
 
 1. 请确保使用以下管理角色之一登录到 Azure 门户： Azure 信息保护管理员、安全管理员或全局管理。 请参阅[前述部分](#signing-in-to-the-azure-portal)了解有关这些管理角色的详细信息。
 
-2. 如有必要，可导航到“Azure 信息保护”边栏选项卡：例如，在中心菜单上，单击“所有服务”并开始在“筛选”框中键入“信息保护”。 在结果中选择“Azure 信息保护”。 
+2. 如有必要，请导航到 " **Azure 信息保护**" 窗格：例如，在 "中心" 菜单上，单击 "**所有服务**"，然后在 "筛选器" 框中开始键入**信息保护**。 在结果中选择“Azure 信息保护”。 
     
-    “Azure 信息保护 - 标签”边栏选项卡会自动打开，你可以查看和编辑可用标签。 可通过从策略中添加或删除标签，使标签可供所有用户和选定用户使用，或不供用户使用。
+    此时会自动打开 " **Azure 信息保护-标签**" 窗格，以便查看和编辑可用标签。 可通过从策略中添加或删除标签，使标签可供所有用户和选定用户使用，或不供用户使用。
 
 3. 若要查看和编辑策略，从菜单选项选择“策略”。 若要查看和编辑所有用户都可以获得的策略，请选择“全局”策略。 若要创建所选用户的自定义策略，请选择“添加新策略”。
     
@@ -118,7 +118,7 @@ Azure 信息保护支持不同级别的订阅：
 
 可以创建任意数量的标签。 但是，如果因标签数量过多而导致用户难以看见并选择正确的标签，可以创建作用域内策略，使用户仅看见相关的标签。 应用保护的标签具有数量上限（500 个）。
 
-当在“Azure 信息保护”边栏选项卡上进行任何更改时，请单击“**保存**”以保存更改，或者单击“**放弃**”以返回到上一个保存的设置。 保存策略中的更改或对添加到策略中的标签进行更改时，这些更改会自动发布。 不提供单独发布选项。
+当你在 "Azure 信息保护" 窗格中进行任何更改时，请单击 "**保存**" 以保存更改，或者单击 "**放弃**" 以还原到上次保存的设置。 保存策略中的更改或对添加到策略中的标签进行更改时，这些更改会自动发布。 不提供单独发布选项。
 
 每当受支持的 Office 应用程序启动时，Azure 信息保护客户端都会检查是否有任何变化，并根据最新的 Azure 信息保护策略下载这些更改。 在客户端上刷新策略的其他触发器：
 
@@ -174,7 +174,7 @@ Azure 信息保护支持不同级别的订阅：
 
 对于电子邮件，在发送电子邮件时，将存储标签信息。 对于文档，保存文件时将存储标签信息。 
 
-若要确定标签 GUID，请在 Azure 门户中查看或配置 Azure 信息保护策略时，在“标签”边栏选项卡上找到“标签 ID”值。 对于应用了标记的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 来标识 GUID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 GUID。
+若要标识标签的 GUID，请在查看或配置 Azure 信息保护策略时，在 "Azure 门户的"**标签**"窗格中找到" 标签 ID "值。 对于应用了标记的文件，还可运行 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet 来标识 GUID（MainLabelId 或 SubLabelId）。 当标签包含子标签时，请始终指定子标签（而非父标签）的 GUID。
 
 ## <a name="next-steps"></a>后续步骤
 

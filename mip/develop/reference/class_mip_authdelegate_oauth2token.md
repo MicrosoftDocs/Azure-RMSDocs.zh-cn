@@ -1,39 +1,39 @@
 ---
-title: '类 mip:: AuthDelegate:: OAuth2Token'
-description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: authdelegate 类。'
+title: 类 mip：： AuthDelegate：： OAuth2Token
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： authdelegate 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: 93c73f632410bf6b1c6898746d1fcbd2c4f67e72
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: d8bce56e02778d48e6e3c0cfdb02f1c3f1f4054a
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70056264"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73560352"
 ---
-# <a name="class-mipauthdelegateoauth2token"></a>类 mip:: AuthDelegate:: OAuth2Token 
+# <a name="class-mipauthdelegateoauth2token"></a>类 mip：： AuthDelegate：： OAuth2Token 
 定义 MIP SDK 期望将 oauth2 标记传回 SDK 的方式的类。
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public OAuth2Token ()  |  构造一个新的[OAuth2Token](class_mip_authdelegate_oauth2token.md)对象。
-public OAuth2Token (const std:: string & accessToken)  |  从 accessToken 构造新的[OAuth2Token](class_mip_authdelegate_oauth2token.md)对象。
-public const std:: string & GetAccessToken () const  |  获取访问令牌字符串。
-public void SetAccessToken (const std:: string & accessToken)  |  设置访问令牌字符串。
+public OAuth2Token （）  |  构造一个新的 OAuth2Token 对象。
+public OAuth2Token （const std：： string & accessToken）  |  从 accessToken 构造新的 OAuth2Token 对象。
+public const std：： string & GetAccessToken （） const  |  获取访问令牌字符串。
+public void SetAccessToken （const std：： string & accessToken）  |  设置访问令牌字符串。
   
-## <a name="members"></a>成员
-  
-### <a name="oauth2token-function"></a>OAuth2Token 函数
-构造一个新的[OAuth2Token](class_mip_authdelegate_oauth2token.md)对象。
+## <a name="members"></a>成員
   
 ### <a name="oauth2token-function"></a>OAuth2Token 函数
-从 accessToken 构造新的[OAuth2Token](class_mip_authdelegate_oauth2token.md)对象。
+构造一个新的 OAuth2Token 对象。
+  
+### <a name="oauth2token-function"></a>OAuth2Token 函数
+从 accessToken 构造新的 OAuth2Token 对象。
 
 参数：  
-* **accessToken**:传入 SDK 的实际访问令牌。
+* **accessToken**：传入 SDK 的实际访问令牌。
 
 
   
@@ -41,11 +41,11 @@ public void SetAccessToken (const std:: string & accessToken)  |  设置访问�
 获取访问令牌字符串。
 
   
-**返回**:访问令牌字符串。
+**返回**：访问令牌字符串。
   
 ### <a name="setaccesstoken-function"></a>SetAccessToken 函数
 设置访问令牌字符串。
 
 参数：  
-* **accessToken**: 访问令牌字符串。
+* **accessToken**：访问令牌字符串。
 

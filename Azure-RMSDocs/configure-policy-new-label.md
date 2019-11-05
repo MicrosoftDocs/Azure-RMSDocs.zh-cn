@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 6ffbe770864c2776abba2f2a726e07953baf5be4
-ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
+ms.openlocfilehash: 8037740899161a7bb77934c4a05a54cd9627a913
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445079"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559553"
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>如何创建 Azure 信息保护的标签
 
@@ -34,23 +34,23 @@ ms.locfileid: "73445079"
 
 ## <a name="to-create-a-new-label"></a>创建新标签
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护**" 窗格。
     
-    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+    例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
 
-2. 从“分类” > “标签”菜单选项：在“Azure 信息保护 - 标签”边栏选项卡上，执行以下操作之一：
+2. 从 "**分类** > **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格中，执行以下操作之一：
     
     - 创建新的标签：单击“**添加新的标签**”。
     
     - 创建新的子标签：对于要创建子标签的标签，右键单击或选择上下文菜单 ( **...** )，然后单击“添加子标签”。
 
-3. 在“**标签**”或“**子标签**”边栏选项卡上，选择要应用于此新标签的选项，然后单击“**保存**”。
+3. 在 "**标签**" 或 "**子标签**" 窗格中，选择此新标签所需的选项，然后单击 "**保存**"。
     
     指定显示名称时，禁止指定一些字符（如反斜杠和 & 号），因为并非所有使用 Azure 信息保护的服务和应用程序都支持这些字符。 除了禁止指定的字符外，还请不要指定 # 字符。    
     
     请注意，新标签将自动分配为黑色。 从颜色列表中选择一种可区分的颜色，或者输入颜色的红色、绿色和蓝色 (RGB) 组成的十六进制三元色代码。 例如，#DAA520。 如果需要这些代码的参考，可从 MSDN web 文档的 " [\<color >](https://developer.mozilla.org/docs/Web/CSS/color_value) " 页中找到一个有用的表格。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 
-4. 要向用户提供新标签，请执行以下操作：从“分类” > “策略”菜单选项中，选择要包含新标签的策略。 选择“添加或删除标签”。 从“策略: 添加或删除标签”边栏选项卡中选择标签，然后依次选择“确定”和“保存”。
+4. 要向用户提供新标签，请执行以下操作：从“分类” > “策略”菜单选项中，选择要包含新标签的策略。 选择“添加或删除标签”。 从 "**策略：添加或删除标签**" 窗格中选择标签，选择 **"确定"** ，然后选择 "**保存**"。
     
     >[!TIP]
     >对于新标签，请考虑首先将它们添加到用于测试的作用域内策略。 如果对结果满意，则从该测试范围删除标签，然后将标签添加到在生产中使用的策略。     

@@ -13,18 +13,18 @@ ms.subservice: fci
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b3781b2de94a8b619f2dadce977f1284c9b26e31
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: 18b8e1525fa396c6b3e6e0e040e0f0d8b21144ae
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71689972"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561168"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 通过本文获取相关说明和脚本以使用 Azure 信息保护客户端和 PowerShell 配置文件服务器资源管理器和文件分类基础结构 (FCI)。
 
@@ -54,7 +54,7 @@ ms.locfileid: "71689972"
     
   - 如果要更改特定文件扩展名保护（本机或常规）的默认级别，需已编辑注册表，如管理员指南中的[更改文件的默认保护级别](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)部分所述。
     
-  - 具有 Internet 连接，并且已配置计算机设置（如果代理服务器要求）。 例如： `netsh winhttp import proxy source=ie`
+  - 你具有 internet 连接，并且已配置了计算机设置（如果代理服务器需要这些设置）。 例如：`netsh winhttp import proxy source=ie`
     
 - 你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 服务保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此要求的详细信息，请参阅 [准备用户和组以便使用 Azure 信息保护](../prepare.md)。
     
@@ -118,7 +118,7 @@ ms.locfileid: "71689972"
 
         `[string]$BposTenantId = "23976bc6-dcd4-4173-9d96-dad1f48efd42",`
 
-3.  为脚本签名。 如果未为脚本签名（更安全），则必须在运行该脚本的服务器上配置 Windows PowerShell。 例如，使用“以管理员身份运行”选项运行 Windows PowerShell 会话，然后键入：Set-ExecutionPolicy RemoteSigned。 但是，当未签名的脚本被存储在此服务器上时，此配置将允许所有未签名的脚本运行（不太安全）。
+3.  为脚本签名。 如果未为脚本签名（更安全），则必须在运行该脚本的服务器上配置 Windows PowerShell。 例如，使用“以管理员身份运行”选项运行 Windows PowerShell 会话，然后键入：“Set-ExecutionPolicy RemoteSigned”。 但是，当未签名的脚本被存储在此服务器上时，此配置将允许所有未签名的脚本运行（不太安全）。
 
     有关为 Windows PowerShell 脚本签名的详细信息，请参阅 PowerShell 文档库中的 [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) 。
 
@@ -130,7 +130,7 @@ ms.locfileid: "71689972"
 
 -   在文件服务器资源管理器中，为“分类管理”创建新的本地属性：
 
-    -   **名称**：键入“RMS”
+    -   **名称**：键入 **RMS**
 
     -   **说明**： 键入“Rights Management 保护”
 
@@ -146,15 +146,15 @@ ms.locfileid: "71689972"
 
     -   在“常规”选项卡上 ：
 
-        -   **名称**：键入“对 RMS 进行分类”
+        -   **名称**：键入 **Classify for RMS**
 
-        -   **启用**：保留默认值，即选中此复选框。
+        -   **已启用**：保留默认设置，即选中此复选框。
 
-        -   **说明**：键入“为 Rights Management 的 &lt;文件夹名称&gt; 文件夹中的所有文件分类”。
+        -   **说明**：键入“对&lt;文件夹名称&gt;中的所有文件进行分类以便使用 Rights Management”。
 
             将 *&lt;文件夹名称&gt;* 替换为所选的文件夹名称。 例如，“为 Rights Management 的 C:\FileShare 文件夹中的所有文件分类”
 
-        -   **范围**：添加所选文件夹。 例如，**C:\FileShare**。
+        -   **范围**：添加所选的文件夹。 例如，**C:\FileShare**。
 
             请勿选择复选框。
 
@@ -162,9 +162,9 @@ ms.locfileid: "71689972"
 
     -   **分类方法**：选择“文件夹分类器”
 
-    -   属性名称：选择“RMS”
+    -   **属性** 名称：选择 **RMS**
 
-    -   属性值：选择“是”
+    -   属性 **值**：选择“是”
 
 虽然可以手动运行分类规则，但是对于正在进行的操作，需要按计划运行此规则，使新文件使用 RMS 属性进行分类。
 
@@ -176,9 +176,9 @@ ms.locfileid: "71689972"
 
     -   配置所有要运行的分类规则的日程安排，其中包括要使用 RMS 属性为文件分类的新规则。
 
-    -   **允许对新文件进行连续分类**：选中此复选框以便为新文件分类。
+    -   允许对新文件进行连续分类：选中此复选框以便将新文件进行分类。
 
-    -   可选：进行所需的任何其他更改，如为报表和通知配置选项。
+    -   可选：进行任何其他所需的更改，例如，为报告和通知配置选项。
 
 现在你已完成分类配置，已可以配置管理任务，以将 RMS 保护应用于这些文件。
 
@@ -188,11 +188,11 @@ ms.locfileid: "71689972"
 
     -   在“常规”选项卡上 ：
 
-        -   **任务名称**：键入“使用 RMS 保护文件”
+        -   **任务名称**：键入 **Protect files with RMS**
 
         -   保留选中“启用” 复选框。
 
-        -   **说明**：键入“使用 Windows PowerShell 脚本通过 Rights Management 和模板保护 &lt;文件夹名称&gt; 中的文件。”
+        -   **说明**：键入**使用 Windows PowerShell 脚本通过 Rights Management 和模板保护&lt;文件夹名称&gt;中的文件。**
 
             将 *&lt;文件夹名称&gt;* 替换为所选的文件夹名称。 例如，“使用 Windows PowerShell 脚本通过 Rights Management 和模板保护 C:\FileShare 中的文件”
 
@@ -204,14 +204,14 @@ ms.locfileid: "71689972"
 
         -   **类型**：选择“自定义”
 
-        -   **可执行文件**：指定下列信息：
+        -   **可执行文件**：指定以下项：
 
             ```
             C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
             ```
             如果 Windows 不在 C: 驱动器上，请修改此路径或浏览到此文件。
 
-        -   **参数**：指定以下项，并为 &lt;路径&gt; 和 &lt;模板 ID&gt; 提供你自己的值：
+        -   **参数**：指定下列各项，为&lt;路径&gt;和&lt;模板 ID&gt;提供自己的值：
 
             ```
             -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID <template GUID> -OwnerMail '[Source File Owner Email]'"
@@ -233,9 +233,9 @@ ms.locfileid: "71689972"
 
     -   在“条件”选项卡上 ：
 
-        -   **属性**：选择“RMS”
+        -   **属性**：选择“是/否” **RMS**
 
-        -   **运算符**：选择“等于”
+        -   **运营商**：选择“等于”
 
         -   **值**：选择“是”
 
@@ -273,7 +273,7 @@ ms.locfileid: "71689972"
     > 
     > -   如果你在报告中看到“0”（而不是你的文件夹中的文件数），则此输出指示脚本未运行。 首先，通过在 Windows PowerShell ISE 中加载脚本以验证脚本内容来检查脚本本身，然后尝试在相同的 PowerShell 会话中运行脚本一次，查看是否显示任何错误。 如果未指定任何参数，该脚本会尝试连接到 Azure 权限管理服务并向其进行身份验证。
     > 
-    >     -   如果该脚本报告无法连接到 Azure 权限管理服务 (Azure RMS)，请检查它为服务主体帐户显示的值，该帐户在脚本中指定。 有关如何创建此服务主体帐户的详细信息，请参阅 Azure 信息保护客户端管理指南中的[先决条件 3：保护或取消保护文件而不进行交互](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction)。
+    >     -   如果该脚本报告无法连接到 Azure 权限管理服务 (Azure RMS)，请检查它为服务主体帐户显示的值，该帐户在脚本中指定。 有关如何创建此服务主体帐户的详细信息，请参阅 Azure 信息保护客户端管理员指南中的[先决条件 3：在不交互的情况下保护或取消保护文件](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction)。
     >     -   如果该脚本报告可连接到 Azure RMS，接下来通过直接运行服务器上 Windows PowerShell 的 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) 检查是否可找到指定的模板。 你应该会看到你所指定的模板返回到结果中。
     > -   如果该脚本单独在 Windows PowerShell ISE 中运行时未出现错误，请尝试从 PowerShell 会话中按以下方式运行它：指定要保护的文件名，并且不带 -OwnerEmail 参数：
     > 

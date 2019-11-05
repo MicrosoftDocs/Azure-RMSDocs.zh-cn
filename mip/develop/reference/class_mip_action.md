@@ -1,24 +1,30 @@
 ---
 title: class mip::Action
-description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: action 类。'
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： action 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: dd67cb1be823e6e0cf6bb367250924f6d3b5d8b0
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: d3cc1aecfb5ca8bf2d78dd9d6c8c280b5541389d
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70056366"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73560415"
 ---
 # <a name="class-mipaction"></a>class mip::Action 
 操作的接口。 每个操作都转换为，出于应用标签目的，应用程序需要执行的步骤（如策略所定义）
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
+public ActionType GetType() const  |  获取操作的类型。
   
-## <a name="members"></a>成员
-_尚无记录。_
+## <a name="members"></a>成員
+  
+### <a name="gettype-function"></a>GetType 函数
+获取操作的类型。
+
+  
+**返回结果**：ActionType：此基类可以转换成的派生操作类型。

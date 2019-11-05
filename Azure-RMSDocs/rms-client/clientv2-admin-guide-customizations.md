@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9c0ccde192774f90c95afd70ce1acb766d6a66f1
-ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
+ms.openlocfilehash: cf22d75de5371daf02948fb1d42352d06249fb29
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445178"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561237"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -988,9 +988,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 ## <a name="support-for-disconnected-computers"></a>对断开连接的计算机的支持
 
 > [!IMPORTANT]
-> 只有以下标签方案支持断开连接的计算机：文件资源管理器、PowerShell 和扫描程序。 若要在 Office 应用中标记文档，你必须连接到 Internet。
+> 只有以下标签方案支持断开连接的计算机：文件资源管理器、PowerShell 和扫描程序。 若要在 Office 应用中标记文档，你必须连接到 internet。
 
-默认情况下，Azure 信息保护的统一标签客户端会自动尝试连接到 Internet，以从标记管理中心下载标签和标签策略设置： Office 365 安全与合规中心，Microsoft 365 安全中心或 Microsoft 365 相容性中心。 如果计算机在一段时间内无法连接到 Internet，则可以导出和复制为统一标签客户端手动管理策略的文件。
+默认情况下，Azure 信息保护的统一标签客户端会自动尝试连接到 internet，以从标记管理中心下载标签和标签策略设置： Office 365 安全与合规中心，Microsoft 365 安全中心或 Microsoft 365 相容性中心。 如果计算机在一段时间内无法连接到 internet，则可以导出和复制为统一标签客户端手动管理策略的文件。
 
 说明
 
@@ -998,9 +998,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 2. 作为此帐户的附加标签策略设置，禁用使用**EnableAudit**高级设置将[审核数据发送到 Azure 信息保护分析](#disable-sending-audit-data-to-azure-information-protection-analytics)。
     
-    建议执行此步骤，因为如果断开连接的计算机进行了定期 Internet 连接，则会将日志记录信息发送到包含步骤1中的用户名的 Azure 信息保护分析。 该用户帐户可能不同于在断开连接的计算机上使用的本地帐户。
+    建议执行此步骤，因为如果断开连接的计算机进行了定期 internet 连接，则会将日志记录信息发送到包含步骤1中的用户名的 Azure 信息保护分析。 该用户帐户可能不同于在断开连接的计算机上使用的本地帐户。
 
-3. 在具有 Internet 连接的计算机上安装了具有统一标签的客户端并使用步骤1中的用户帐户登录后，下载标签和策略设置。
+3. 在具有 internet 连接的计算机上安装了具有统一标签的客户端并使用步骤1中的用户帐户登录后，下载标签和策略设置。
 
 4. 在此计算机上，导出日志文件。
     
@@ -1012,15 +1012,15 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 6. 将这些文件粘贴到断开连接的计算机上的 **%localappdata%\Microsoft\MSIP**文件夹中。
 
-7. 如果你选择的用户帐户通常连接到 Internet，请通过将**EnableAudit**值设置为**True**，再次启用发送审核数据。
+7. 如果你选择的用户帐户通常连接到 internet，请通过将**EnableAudit**值设置为**True**，再次启用发送审核数据。
 
 8. 对于断开连接的计算机，保护文件、重新保护文件、删除文件保护或检查受保护的文件：在断开连接的计算机上，运行[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) Cmdlet 和*DelegatedUser*参数，并指定步骤1中用于设置用户上下文的用户帐户。 例如：
     
         Set-AIPAuthentication -TenantId "9c11c87a-ac8b-46a3-8d5c-f4d0b72ee29a" -DelegatedUser offlineuser@contoso.com
 
-请注意，如果此计算机上的用户从 "[帮助和反馈](clientv2-admin-guide.md#help-and-feedback-section)" 中选择 "**重置设置**" 选项，则此操作将删除策略文件并使客户端无法运行，直到你手动替换文件或客户端连接到 Internet 并下载文件。
+请注意，如果此计算机上的用户从 "[帮助和反馈](clientv2-admin-guide.md#help-and-feedback-section)" 中选择 "**重置设置**" 选项，则此操作将删除策略文件并使客户端无法运行，直到你手动替换文件或客户端连接到 internet 并下载文件。
 
-如果断开连接的计算机正在运行 Azure 信息保护扫描程序，则必须执行其他配置步骤。 有关详细信息，请参阅[限制：扫描仪服务器无法](../deploy-aip-scanner.md#restriction-the-scanner-server-cannot-have-internet-connectivity)从扫描程序部署说明获得 Internet 连接。
+如果断开连接的计算机正在运行 Azure 信息保护扫描程序，则必须执行其他配置步骤。 有关详细信息，请参阅[限制：扫描仪服务器无法](../deploy-aip-scanner.md#restriction-the-scanner-server-cannot-have-internet-connectivity)从扫描程序部署说明获得 internet 连接。
 
 ## <a name="change-the-local-logging-level"></a>更改本地日志记录级别
 

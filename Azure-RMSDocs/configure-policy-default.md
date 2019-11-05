@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: ea2c89c2ddbebc7a3efe6248a6073ceb82a8f21f
-ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
+ms.openlocfilehash: 892d19f9318a01f527b4dc5df686300321497f29
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72447081"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559617"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
@@ -37,7 +37,7 @@ ms.locfileid: "72447081"
 > [!IMPORTANT]
 > 从2019年4月开始，不会自动为新客户创建默认标签。 将面向统一标记平台自动预配这些租户，因此在 Azure 门户中进行配置后，无需迁移标签。
 > 
-> 对于这些租户，如果尚未在 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心创建任何敏感度标签，可以从 Azure 信息保护的当前默认策略创建默认标签。 为此，请从“标签”边栏选项卡中选择“生成默认标签”，然后将该标签添加到全局策略。 有关详细说明，请参阅[在 Azure 门户中开始使用 Azure 信息保护](quickstart-viewpolicy.md)快速入门。
+> 对于这些租户，如果尚未在 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心创建任何敏感度标签，可以从 Azure 信息保护的当前默认策略创建默认标签。 为此，请从 "**标签**" 窗格中选择 "**生成默认标签**"，并将标签添加到全局策略。 有关详细说明，请参阅[在 Azure 门户中开始使用 Azure 信息保护](quickstart-viewpolicy.md)快速入门。
 
 
 ## <a name="current-default-policy"></a>当前默认策略

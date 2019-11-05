@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 28c63107581e6560686845b7f9a77293f505da41
-ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
+ms.openlocfilehash: c4a889c021d6a66a5cde7e071137d9f13dcc0ab1
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445014"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559510"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 
@@ -37,15 +37,15 @@ ms.locfileid: "73445014"
 
 ## <a name="to-configure-the-policy-settings"></a>配置策略设置
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”边栏选项卡。
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护**" 窗格。
     
-    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”。 选择“Azure 信息保护”。
+    例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
 
-2. 从“分类” > “策略”菜单选项：在“Azure 信息保护 - 策略”边栏选项卡上，如果要配置的设置将应用于所有用户，请选择“全局”。
+2. 从 "**分类**" > **策略**"菜单选项：在" **Azure 信息保护-策略**"窗格中，如果要配置的设置将应用于所有用户，请选择"**全局**"。
     
     如果要配置的设置位于[作用域内策略](configure-policy-scope.md)中，为了使其仅应用于所选用户，请改为选择你的作用域内策略。
 
-3. 在“策略”边栏选项卡上，配置以下设置：
+3. 在 "**策略**" 窗格中，配置以下设置：
     
    - **选择默认标签**：当设置此选项时，选择标签以分配给没有标签的文档和电子邮件。 如果具有子标签，则不能将标签设置为默认标签。
         

@@ -1,54 +1,50 @@
 ---
 title: 类 mip::ProtectionEngine
-description: 记录 Microsoft 信息保护 (MIP) SDK 的 mip::p rotectionengine 类。
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionengine 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: 0bf87713b209e17d2728232f97f68946ca5d847f
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: 9eb44a39f32c2997729e6d77ddace96c580328cd
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70057653"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73557746"
 ---
 # <a name="class-mipprotectionengine"></a>类 mip::ProtectionEngine 
 管理与特定标识有关的保护相关操作。
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
 public const Settings& GetSettings() const  |  获取引擎设置。
-public void GetTemplatesAsync (const std:: shared_ptr\<ProtectionEngine:: observer\>& 观察程序, const std::\<shared_ptr\>void & context)  |  获取用户可用模板的集合。
-public std:: vector\<std:: string\> templatedescriptor.gettemplates (const std:: shared_ptr\<void\>& 上下文)  |  获取用户可用模板的集合。
-public void GetRightsForLabelIdAsync (const std:: string & documentId, const std:: string & 面部, const std:: string & ownerEmail, const std:: string & delegatedUserEmail, const std:: shared_ptr\<ProtectionEngine:: Observer\>& 观察程序, const std::\<shared_ptr\>void & context)  |  获取用户可用于标签 ID 的权限集合。
-public std:: vector\<std:: string\> GetRightsForLabelId (const std:: string & documentId, const std:: string & 面部, const std:: string & ownerEmail, const std:: string & delegatedUserEmail, const std:: shared_ptr\<void\>& 上下文)  |  获取用户可用于 labelId 的权限集合。
-public void CreateProtectionHandlerFromDescriptorAsync (const std:: shared_ptr\<ProtectionDescriptor\>& 说明符, const ProtectionHandlerCreationOptions & options, const std:: shared_ptr\<ProtectionHandler:: observer\>& 观察程序, const std::\<shared_ptr\>void & 上下文)  |  创建将权限/角色分配给特定用户的保护处理程序。
-public std:: shared_ptr\<ProtectionHandler\> CreateProtectionHandlerFromDescriptor (const std:: shared_ptr\<ProtectionDescriptor\>& 说明符, const ProtectionHandlerCreationOptions& 选项, const std:: shared_ptr\<void\>& context)  |  创建将权限/角色分配给特定用户的保护处理程序。
-public void CreateProtectionHandlerFromPublishingLicenseAsync (const std:: vector\<uint8_t\>& serializedPublishingLicense, const ProtectionHandlerCreationOptions & options, const std:: shared_ptr\<ProtectionHandler:: observer\>& 观察程序, const std::\<shared_ptr\>void & 上下文)  |  根据序列化发布许可证创建保护处理程序。
-public std:: shared_ptr\<ProtectionHandler\> CreateProtectionHandlerFromPublishingLicense (const std:: vector\<uint8_t\>& serializedPublishingLicense, constProtectionHandlerCreationOptions & 选项, const std:: shared_ptr\<void\>& 上下文)  |  根据序列化发布许可证创建保护处理程序。
-public void CreateProtectionHandlerForPublishingAsync (const ProtectionHandler::P ublishingsettings & settings, const std:: shared_ptr\<ProtectionHandler:: observer\>& 观察程序, const std:: shared_ptr\<void\>& 上下文)  |  创建将权限/角色分配给特定用户的保护处理程序。
-public std:: shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForPublishing (const ProtectionHandler::P ublishingsettings & settings, const std:: shared_ptr\<void\>& 上下文)  |  创建将权限/角色分配给特定用户的保护处理程序。
-public void CreateProtectionHandlerForConsumptionAsync (const ProtectionHandler:: ConsumptionSettings & settings, const std:: shared_ptr\<ProtectionHandler:: observer\>& 观察程序, const std:: shared_ptr\<void\>& 上下文)  |  创建将权限/角色分配给特定用户的保护处理程序。
-public std:: shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForConsumption (const ProtectionHandler:: ConsumptionSettings & settings, const std:: shared_ptr\<void\>& context)  |  创建将权限/角色分配给特定用户的保护处理程序。
+public void GetTemplatesAsync （const std：： shared_ptr\<ProtectionEngine：： Observer\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用模板的集合。
+public std：： vector\<std：： string\> Templatedescriptor.gettemplates （const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用模板的集合。
+public void GetRightsForLabelIdAsync （const std：： string & documentId，const std：： string & 面部，const std：： string & ownerEmail，const std：： string & delegatedUserEmail，const std：： shared_ptr\<ProtectionEngine：： Observer\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用于标签 ID 的权限集合。
+public std：： vector\<std：： string\> GetRightsForLabelId （const std：： string & documentId，const std：： string & 面部，const std：： string & ownerEmail，const std：： string & delegatedUserEmail，const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用于 labelId 的权限集合。
+public void CreateProtectionHandlerForPublishingAsync （const ProtectionHandler：:P ublishingSettings & settings，const std：： shared_ptr\<ProtectionHandler：： Observer\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
+public std：： shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForPublishing （const ProtectionHandler：:P ublishingSettings & settings，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
+public void CreateProtectionHandlerForConsumptionAsync （const ProtectionHandler：： ConsumptionSettings & settings，const std：： shared_ptr\<ProtectionHandler：： Observer\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
+public std：： shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForConsumption （const ProtectionHandler：： ConsumptionSettings & settings，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
   
-## <a name="members"></a>成员
+## <a name="members"></a>成員
   
 ### <a name="getsettings-function"></a>GetSettings 函数
 获取引擎设置。
 
   
-**返回**:引擎设置
+**返回结果**：引擎设置
   
 ### <a name="gettemplatesasync-function"></a>GetTemplatesAsync 函数
 获取用户可用模板的集合。
 
 参数：  
-* **观察**程序:实现[ProtectionEngine:: Observer](class_mip_protectionengine_observer.md)接口的类 
+* **观察**程序：一个实现 ProtectionEngine：： observer 接口的类 
 
 
-* **上下文**:将以不透明的形式传递回观察者和可选[HttpDelegate](class_mip_httpdelegate.md)的客户端上下文
+* **上下文**：将以不透明的形式传递回观察者和可选 HttpDelegate 的客户端上下文
 
 
   
@@ -56,33 +52,33 @@ public std:: shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForConsumpti
 获取用户可用模板的集合。
 
 参数：  
-* **上下文**:将以不透明形式传递到可选[HttpDelegate](class_mip_httpdelegate.md)的客户端上下文
+* **上下文**：将以不透明的形式传递到可选 HttpDelegate 的客户端上下文
 
 
 
   
-**返回**:模板 Id 列表
+**返回结果**：模板 ID 列表
   
 ### <a name="getrightsforlabelidasync-function"></a>GetRightsForLabelIdAsync 函数
 获取用户可用于标签 ID 的权限集合。
 
 参数：  
-* **documentId**:与文档元数据关联的文档 ID 
+* **documentId**：与文档元数据关联的文档 ID 
 
 
-* **面部**:[标签](class_mip_label.md)与文档所创建的文档元数据关联的 ID 
+* **面部**：与文档所创建的文档元数据关联的标签 ID 
 
 
 * **ownerEmail**：文档的所有者 
 
 
-* **答**: 当身份验证用户/应用程序代表另一个用户时指定了委派的用户, 如果没有, 则为空 
+* **答**：当身份验证用户/应用程序代表另一个用户时指定了委派的用户，如果没有，则为空 
 
 
-* **观察**程序:实现[ProtectionEngine:: Observer](class_mip_protectionengine_observer.md)接口的类 
+* **观察**程序：一个实现 ProtectionEngine：： observer 接口的类 
 
 
-* **上下文**:此相同的上下文将转发到[ProtectionEngine:: observer:: OnGetRightsForLabelIdSuccess](class_mip_protectionengine_observer.md#ongetrightsforlabelidsuccess-function)或[ProtectionEngine:: Observer:: OnGetRightsForLabelIdFailure](class_mip_protectionengine_observer.md#ongetrightsforlabelidfailure-function)
+* **上下文**：此相同的上下文将转发到 ProtectionEngine：： observer：： OnGetRightsForLabelIdSuccess 或 ProtectionEngine：： observer：： OnGetRightsForLabelIdFailure
 
 
   
@@ -90,111 +86,36 @@ public std:: shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForConsumpti
 获取用户可用于 labelId 的权限集合。
 
 参数：  
-* **documentId**:与文档元数据关联的文档 ID 
+* **documentId**：与文档元数据关联的文档 ID 
 
 
-* **面部**:[标签](class_mip_label.md)与文档所创建的文档元数据关联的 ID 
+* **面部**：与文档所创建的文档元数据关联的标签 ID 
 
 
-* **ownerEmail**:文档的所有者 
+* **ownerEmail**：文档的所有者 
 
 
-* **答**: 当身份验证用户/应用程序代表另一个用户时指定了委派的用户, 如果没有, 则为空 
+* **答**：当身份验证用户/应用程序代表另一个用户时指定了委派的用户，如果没有，则为空 
 
 
-* **上下文**:此相同的上下文将转发到可选[HttpDelegate](class_mip_httpdelegate.md)
-
-
-
-  
-**返回**:权限列表
-  
-### <a name="createprotectionhandlerfromdescriptorasync-function"></a>CreateProtectionHandlerFromDescriptorAsync 函数
-创建将权限/角色分配给特定用户的保护处理程序。
-
-参数：  
-* **描述符**:描述保护配置的[ProtectionDescriptor](class_mip_protectiondescriptor.md) 
-
-
-* **选项**:创建选项 
-
-
-* **观察**程序:实现[ProtectionHandler:: Observer](class_mip_protectionhandler_observer.md)接口的类 
-
-
-* **上下文**:将以不透明的形式传递回观察者和可选[HttpDelegate](class_mip_httpdelegate.md)的客户端上下文
-
-
-> 弃用此方法将很快弃用, 以支持 CreateProtectionHandlerForPublishingAsync
-  
-### <a name="createprotectionhandlerfromdescriptor-function"></a>CreateProtectionHandlerFromDescriptor 函数
-创建将权限/角色分配给特定用户的保护处理程序。
-
-参数：  
-* **描述符**:描述保护配置的[ProtectionDescriptor](class_mip_protectiondescriptor.md) 
-
-
-* **选项**:创建选项 
-
-
-* **上下文**:将以不透明形式传递回可选[HttpDelegate](class_mip_httpdelegate.md)的客户端上下文
+* **上下文**：此相同的上下文将转发到可选 HttpDelegate
 
 
 
   
-**返回**:[ProtectionHandler](class_mip_protectionhandler.md)
-> 弃用此方法将很快弃用, 以支持 CreateProtectionHandlerForPublishingAsync
-  
-### <a name="createprotectionhandlerfrompublishinglicenseasync-function"></a>CreateProtectionHandlerFromPublishingLicenseAsync 函数
-根据序列化发布许可证创建保护处理程序。
-
-参数：  
-* **serializedPublishingLicense**:序列化发布许可证 
-
-
-* **选项**:创建选项 
-
-
-* **观察**程序:实现[ProtectionHandler:: Observer](class_mip_protectionhandler_observer.md)接口的类 
-
-
-* **上下文**:将以不透明的形式传递回观察者和可选[HttpDelegate](class_mip_httpdelegate.md)的客户端上下文
-
-
-> 弃用此方法将很快弃用, 以支持 CreateProtectionHandlerForConsumptionAsync
-  
-### <a name="createprotectionhandlerfrompublishinglicense-function"></a>CreateProtectionHandlerFromPublishingLicense 函数
-根据序列化发布许可证创建保护处理程序。
-
-参数：  
-* **serializedPublishingLicense**:序列化发布许可证 
-
-
-* **选项**:创建选项 
-
-
-* **观察**程序:实现[ProtectionHandler:: Observer](class_mip_protectionhandler_observer.md)接口的类 
-
-
-* **上下文**:将以不透明形式传递回可选[HttpDelegate](class_mip_httpdelegate.md)的客户端上下文
-
-
-
-  
-**返回**:[ProtectionHandler](class_mip_protectionhandler.md)
-> 弃用此方法将很快弃用, 以支持 CreateProtectionHandlerForConsumption
+**返回结果**：权限列表
   
 ### <a name="createprotectionhandlerforpublishingasync-function"></a>CreateProtectionHandlerForPublishingAsync 函数
 创建将权限/角色分配给特定用户的保护处理程序。
 
 参数：  
-* **设置**:保护设置 
+* **设置**：保护设置 
 
 
-* **观察**程序:实现[ProtectionHandler:: Observer](class_mip_protectionhandler_observer.md)接口的类 
+* **观察**程序：一个实现 ProtectionHandler：： observer 接口的类 
 
 
-* **上下文**:将以不透明转发到观察者和可选[HttpDelegate](class_mip_httpdelegate.md)的客户端上下文
+* **上下文**：将以不透明转发到观察者和可选 HttpDelegate 的客户端上下文
 
 
   
@@ -202,27 +123,27 @@ public std:: shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForConsumpti
 创建将权限/角色分配给特定用户的保护处理程序。
 
 参数：  
-* **设置**:保护设置 
+* **设置**：保护设置 
 
 
-* **上下文**:将以不透明转发到可选[HttpDelegate](class_mip_httpdelegate.md)的客户端上下文
+* **上下文**：将以不透明转发到可选 HttpDelegate 的客户端上下文
 
 
 
   
-**返回**:[ProtectionHandler](class_mip_protectionhandler.md)
+**返回**： ProtectionHandler
   
 ### <a name="createprotectionhandlerforconsumptionasync-function"></a>CreateProtectionHandlerForConsumptionAsync 函数
 创建将权限/角色分配给特定用户的保护处理程序。
 
 参数：  
-* **设置**:保护设置 
+* **设置**：保护设置 
 
 
-* **观察**程序:实现[ProtectionHandler:: Observer](class_mip_protectionhandler_observer.md)接口的类 
+* **观察**程序：一个实现 ProtectionHandler：： observer 接口的类 
 
 
-* **上下文**:将以不透明转发到观察者和可选[HttpDelegate](class_mip_httpdelegate.md)的客户端上下文
+* **上下文**：将以不透明转发到观察者和可选 HttpDelegate 的客户端上下文
 
 
   
@@ -230,12 +151,12 @@ public std:: shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForConsumpti
 创建将权限/角色分配给特定用户的保护处理程序。
 
 参数：  
-* **设置**:保护设置 
+* **设置**：保护设置 
 
 
-* **上下文**:将以不透明转发到可选[HttpDelegate](class_mip_httpdelegate.md)的客户端上下文
+* **上下文**：将以不透明转发到可选 HttpDelegate 的客户端上下文
 
 
 
   
-**返回**:[ProtectionHandler](class_mip_protectionhandler.md)
+**返回**： ProtectionHandler

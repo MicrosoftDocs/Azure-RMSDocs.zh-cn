@@ -1,37 +1,37 @@
 ---
 title: class mip::MetadataAction
-description: '记录 Microsoft 信息保护 (MIP) SDK 的 mip:: metadataaction 类。'
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： metadataaction 类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 08/27/2019
-ms.openlocfilehash: 9175fc9278f012b3f3247cab6a09650c55713ac3
-ms.sourcegitcommit: 1499790746145d40d667d138baa6e18598421f0e
+ms.date: 10/29/2019
+ms.openlocfilehash: 405bb153527cb3fde346203d3b11c09c97110f12
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70055912"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73558679"
 ---
 # <a name="class-mipmetadataaction"></a>class mip::MetadataAction 
-将元数据信息添加到内容的 [Action](class_mip_action.md)。
+向内容添加元数据信息的操作。
   
-## <a name="summary"></a>总结
- 成员                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std:: vector\<std:: string\>& GetMetadataToRemove () const  |  获取应从内容中删除的元数据名称的列表。
-public const std:: vector\<std::p air\<std:: string, std:: string\>\>& GetMetadataToAdd () const  |  获取应添加到内容的元数据名称/值对。
+public const std：： vector\<std：： string\>& GetMetadataToRemove （） const  |  获取应从内容中删除的元数据名称的列表。
+public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetMetadataToAdd （） const  |  获取应添加到内容的元数据名称/值对。
   
-## <a name="members"></a>成员
+## <a name="members"></a>成員
   
 ### <a name="getmetadatatoremove-function"></a>GetMetadataToRemove 函数
 获取应从内容中删除的元数据名称的列表。
 
   
-**返回**:要移除的字符串的向量。 在添加元数据之前应先删除元数据。
+**返回结果**：要删除的字符串矢量。 在添加元数据之前应先删除元数据。
   
 ### <a name="getmetadatatoadd-function"></a>GetMetadataToAdd 函数
 获取应添加到内容的元数据名称/值对。
 
   
-**返回**:Const std:: vector < std::p air < std:: string, std:: string > > & 删除元数据应在添加元数据之前完成。
+**返回结果**：Const std::vector<std::pair<std::string, std::string>>& 在添加元数据之前应先删除元数据。

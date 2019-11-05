@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7bb76420eeca9afb8cc8897ffb73c42864283b5e
-ms.sourcegitcommit: 0412b9ff13cf17478d157c13a5d95b3c0caa84cb
+ms.openlocfilehash: d7594886d6dc3715d29e15a1a1133142f244ad1d
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72382083"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559894"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 
@@ -51,11 +51,11 @@ ms.locfileid: "72382083"
 
    - 不要执行**生成你的租户密钥**中的步骤，因为你已从 AD RMS 部署获得等效物。 相反，请从 nCipher 安装中标识 AD RMS 服务器使用的密钥，并准备这些密钥以进行传输，然后将它们传输到 Azure Key Vault。 
         
-        NCipher 的加密密钥文件被命名为**key_ <<em>keyAppName</em>> _ < @no__t<em>keyIdentifier</em>** 在服务器上本地。 例如，`C:\Users\All Users\nCipher\Key Management Data\local\key_mscapi_f829e3d888f6908521fe3d91de51c25d27116a54` 。 当你运行 Keytransferremote.exe 命令来创建具有降低的权限的密钥副本时，你将需要**mscapi**值作为 keyAppName，并为密钥标识符提供自己的值。
+        NCipher 的加密密钥文件在服务器上以本地方式命名为**key_ <<em>keyAppName</em>> _ <<em>keyIdentifier</em>>** 。 例如，`C:\Users\All Users\nCipher\Key Management Data\local\key_mscapi_f829e3d888f6908521fe3d91de51c25d27116a54` 。 当你运行 Keytransferremote.exe 命令来创建具有降低的权限的密钥副本时，你将需要**mscapi**值作为 keyAppName，并为密钥标识符提供自己的值。
         
         将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 输出结果将会类似于 https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure Rights Management 服务将此密钥用作其租户密钥。
 
-2. 在连接 Internet 的工作站上的 PowerShell 会话中，使用[AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) cmdlet 来授权 Azure Rights Management 服务主体访问将存储 Azure 信息保护租户密钥的密钥保管库。 所需的权限有解密、加密、unwrapkey、wrapkey、验证和签名。
+2. 在连接 internet 的工作站上的 PowerShell 会话中，使用[AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) cmdlet 来授权 Azure Rights Management 服务主体访问将存储 Azure 信息保护租户密钥的密钥保管库。 所需的权限有解密、加密、unwrapkey、wrapkey、验证和签名。
     
     例如，如果已为 Azure 信息保护创建的密钥保管库名为 contoso-byok-ky，并且你的资源组名为 contoso-byok-rg，请运行以下命令：
     
@@ -68,7 +68,7 @@ ms.locfileid: "72382083"
 
 由 Azure 信息保护的管理员完成这些过程。
 
-1. 在 Internet 连接工作站和 PowerShell 会话中，使用[AipService](/powershell/module/aipservice/connect-aipservice) cmdlet 连接到 Azure Rights Management 服务。
+1. 在 internet 连接工作站和 PowerShell 会话中，使用[AipService](/powershell/module/aipservice/connect-aipservice) cmdlet 连接到 Azure Rights Management 服务。
     
     然后，使用[AipServiceTpd](/powershell/module/aipservice/import-aipservicetpd) cmdlet 上传每个受信任的发布域（.xml）文件。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。
     
