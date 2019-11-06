@@ -339,6 +339,16 @@
               href: reference/class_mip_userrights.md
             - name: UserRoles
               href: reference/class_mip_userroles.md
+    - name: C 库
+      items:
+        - name: 概述
+          href: reference/c/overview.md
+        - name: 枚举
+          href: reference/c/enumerations.md
+        - name: 結構
+          href: reference/c/structures.md
+        - name: 函数
+          href: reference/c/functions.md
     - name: .NET API 浏览器
       href: /dotnet/api/?term=microsoft.informationprotection
 - name: 资源
