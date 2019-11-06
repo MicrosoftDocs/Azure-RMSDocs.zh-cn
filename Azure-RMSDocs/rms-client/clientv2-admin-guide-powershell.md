@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1388445ad9a5e7facded18dcd3f19be265bc4035
-ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
+ms.openlocfilehash: da0d578d06081667e4d8a25be841c2feb2c1fbd5
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72805646"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561253"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-unified-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护统一客户端配合使用
 
@@ -101,7 +101,7 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
 
 2. 对于与 Azure 信息保护配合使用的 Azure AD 租户，请导航到**Azure Active Directory** > **管理** > **应用注册**"。 
 
-3. 选择 " **+ 新注册**"。 在 "**注册应用程序**" 边栏选项卡上，指定以下值，然后单击 "**注册**"：
+3. 选择 " **+ 新注册**"。 在 "**注册应用程序**" 窗格上，指定以下值，然后单击 "**注册**"：
 
    - **名称**： `AIP-DelegatedUser`
         
@@ -111,26 +111,26 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
     
     - **重定向 URI （可选）** ：**Web**和 `https://localhost`
 
-4. 在 " **AIP-DelegatedUser** " 边栏选项卡上，复制 "**应用程序（客户端） ID**" 的值。 值类似于以下示例： `77c3c1c3-abf9-404e-8b2b-4652836c8c66`。 运行 Set-aipauthentication cmdlet 时，此值用于*AppId*参数。 粘贴并保存该值供以后参考。
+4. 在 " **AIP-DelegatedUser** " 窗格上，复制 "**应用程序（客户端） ID**" 的值。 值类似于以下示例： `77c3c1c3-abf9-404e-8b2b-4652836c8c66`。 运行 Set-aipauthentication cmdlet 时，此值用于*AppId*参数。 粘贴并保存该值供以后参考。
 
 5. 从侧栏中，选择 "**管理** **& 机密 > 证书**"。
 
-6. 在 " **AIP-证书 & 机密**" 边栏选项卡上的 "**客户端密码**" 部分中，选择 " **+ 新建客户端密钥**"。
+6. 在 " **AIP-DelegatedUser-证书 & 密码**" 窗格的 "**客户端密码**" 部分中，选择 " **+ 新建客户端密钥**"。
 
 7. 对于 "**添加客户端密钥**"，请指定以下各项，然后选择 "**添加**"：
     
     - **说明**： `Azure Information Protection unified labeling client`
     - **过期**时间：指定选择的持续时间（1年、2年或永不过期）
 
-8. 返回 " **AIP-DelegatedUser-证书 & 机密**" 边栏选项卡上的 "**客户端密码**" 部分中，复制**值**的字符串。 此字符串类似于以下示例： `OAkk+rnuYc/u+]ah2kNxVbtrDGbS47L4`。 若要确保复制所有字符，请选择要**复制到剪贴板**的图标。 
+8. 返回到 " **AIP-DelegatedUser-证书 & 机密**" 窗格的 "**客户端密码**" 部分中，复制**值**的字符串。 此字符串类似于以下示例： `OAkk+rnuYc/u+]ah2kNxVbtrDGbS47L4`。 若要确保复制所有字符，请选择要**复制到剪贴板**的图标。 
     
     请务必保存此字符串，因为它不会再次显示，并且无法检索。 对于所使用的任何敏感信息，请安全地存储保存的值并限制对它的访问。
 
 9. 从侧栏中，选择 "**管理** > **API 权限**"。
 
-10. 在 " **AIP-DelegatedUser-API 权限**" 边栏选项卡中，选择 " **+ 添加权限**"。
+10. 在 " **AIP-DelegatedUser-API 权限**" 窗格上，选择 " **+ 添加权限**"。
 
-11. 在 "**请求 API 权限**" 边栏选项卡上，确保在 " **Microsoft api** " 选项卡上，并选择 " **Azure Rights Management 服务**"。 当系统提示你提供应用程序所需的权限类型时，请选择 "**应用程序权限**"。
+11. 在 "**请求 API 权限**" 窗格上，确保位于 " **Microsoft api** " 选项卡上，然后选择 " **Azure Rights Management 服务**"。 当系统提示你提供应用程序所需的权限类型时，请选择 "**应用程序权限**"。
 
 12. 对于 "**选择权限**"，展开 "**内容**" 并选择以下各项：
     
@@ -139,11 +139,11 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
 
 13. 选择 "**添加权限**"。
 
-14. 返回 " **AIP-DelegatedUser-API 权限**" 边栏选项卡，选择 " **+ 再次添加权限**"。
+14. 返回到**AIP-DelegatedUser-API 权限**窗格，选择 " **+ 再次添加权限**"。
 
-15. 在 "**请求 AIP 权限**" 边栏选项卡上，选择 **"我的组织使用的 api**"，并搜索 " **Microsoft 信息保护同步服务**"。
+15. 在 "**请求 AIP 权限**" 窗格上，选择 **"我的组织使用的 api**"，并搜索 " **Microsoft 信息保护同步服务**"。
 
-16. 在 "**请求 API 权限**" 边栏选项卡中，选择 "**应用程序权限**"。
+16. 在 "**请求 API 权限**" 窗格上，选择 "**应用程序权限**"。
 
 17. 对于 "**选择权限**"，展开 " **UnifiedPolicy** "，然后选择以下内容：
     
@@ -151,7 +151,7 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
 
 18. 选择 "**添加权限**"。
 
-19. 返回到 " **AIP-DelegatedUser-API 权限**" 边栏选项卡，选择 "**向管理员同意 \<*你的租户名称*">** 并在确认提示中选择 **"是"** 。
+19. 返回到**AIP-DelegatedUser-API 权限**窗格，选择 "**向管理员授予 \<*你的租户名称*>** 并在确认提示中选择 **" 是 "** 。
     
     你的 API 权限应该如下所示：
     
@@ -175,7 +175,7 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
         Set-AIPAuthentication -AppId "77c3c1c3-abf9-404e-8b2b-4652836c8c66" -AppSecret "OAkk+rnuYc/u+]ah2kNxVbtrDGbS47L4" -TenantId "9c11c87a-ac8b-46a3-8d5c-f4d0b72ee29a" -DelegatedUser scanner@contoso.com -OnBehalfOf $pscreds
 
 > [!NOTE]
-> 如果计算机无法访问 Internet，则无需在 Azure AD 中创建应用程序并运行 Set-aipauthentication。 相反，请按照[断开连接的计算机](clientv2-admin-guide-customizations.md#support-for-disconnected-computers)的说明进行操作。  
+> 如果计算机无法访问 internet，则无需在 Azure AD 中创建应用程序并运行 Set-aipauthentication。 相反，请按照[断开连接的计算机](clientv2-admin-guide-customizations.md#support-for-disconnected-computers)的说明进行操作。  
 
 ## <a name="next-steps"></a>后续步骤
 对于 PowerShell 会话中的 cmdlet 帮助，请键入 `Get-Help <cmdlet name> -online`。 例如： 
