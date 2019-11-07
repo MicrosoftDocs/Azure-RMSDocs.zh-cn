@@ -4,7 +4,7 @@ description: 确定使用 RMS API 本机支持 Azure 信息保护中的 Azure Ri
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 11/01/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,21 +13,21 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 60d3f5d011f44f44ef77923615ab637b9b2e4311
-ms.sourcegitcommit: 260bf72bbc04e825c825805824546d203821f6c6
+ms.openlocfilehash: 81c95640f22e6234a3cc6d3487db6c12345a57b8
+ms.sourcegitcommit: 6da7d4fcad330ce1eff4eb3f8694a05566ee8450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73428700"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73710235"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 
-使用下表确定提供 Azure Rights Management Service（简称 Azure RMS，为 Azure 信息保护提供数据保护）本机支持的应用程序和解决方案。
+使用以下信息来确定以本机方式支持 Azure Rights Management 服务（Azure RMS）的应用程序和解决方案，该服务提供 Azure 信息保护的数据保护。
 
-对于这些应用程序和解决方案，可以使用支持用法限制的 Rights Management API，从而紧密集成 Rights Management 支持。 这些应用程序和解决方案也称为“启用 RMS 的”应用程序和解决方案。
+对于这些应用程序和解决方案，Rights Management 支持通过使用 Rights Management Api 紧密集成，以支持[使用限制](configure-usage-rights.md)。 这些应用程序和解决方案也称为“启用 RMS 的”应用程序和解决方案。
 
 除非另行说明，否则支持的功能同时适用于 Azure RMS 和 AD RMS。 此外，iOS、Android、macOS 和 Windows Phone 8.1 上的 AD RMS 支持需要 [Active Directory Rights Management Services 移动设备扩展](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574\(v=ws.11\))。
 
@@ -139,9 +139,13 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 有关详情，请参阅以下资源：
 
-- [Azure 信息保护客户端管理员指南](./rms-client/client-admin-guide.md)
+- Azure 信息保护客户端管理员指南：
+    - [统一标签客户端](./rms-client/clientv2-admin-guide.md)
+    - [经典客户端](./rms-client/client-admin-guide.md)
 
-- [Azure 信息保护客户端用户指南](./rms-client/client-user-guide.md)
+- Azure 信息保护客户端用户指南：
+    - [统一标签客户端](./rms-client/clientv2-user-guide.md)
+    - [经典客户端](./rms-client/client-user-guide.md)
 
 - [适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题解答](./rms-client/mobile-app-faq.md)
 
@@ -182,30 +186,12 @@ Azure RMS 当前不支持以下应用程序：
 
 ## <a name="rms-enlightened-solutions"></a>启用 RMS 的解决方案
 
-下表列出了软件供应商提供的启用 RMS 的解决方案。
-
-如果你是软件供应商，且提供的解决方案此表未列出，请使用 Azure AD 注册你的应用程序。 有关详细信息，请参阅[如何使用 Azure AD 注册应用并为其启用 RMS](./develop/authentication-integration.md)。
-
-
-|产品|供应商|描述|
-|-------------------------------|---------------------------|-----------------|
-|绝对数|绝对数|用于保护内容的数据丢失防护 (DLP)。|
-|Content Locker|VMware|存储、使用并创建受保护的内容。|
-|Controle|TakeControle|使用标记和保护功能进行电子数据展示。|
-|Forcepoint|Forcepoint DLP|旨在强制实施组织数据安全策略的终结点数据丢失防护 (DLP) 解决方案。|
-|Halocore|Secude|保护从 SAP 环境导出的文件。|
-|MaaS 360|IBM|旨在使用和保护文档的集成。|
-|Mobiliya|Mobiliya|保护 EMC Documentum 存储库中的文档。
-|Ramessys|Ramessys|面向 Chemcart 和 Documentum 的集成。
-|Sealpath|Sealpath Technologies|与 CAD 设计工具（如 AutoCAD 和 Siemens Jt2GO）集成。
-|SecRMM|Sqaudra Technologies |为可移动媒体提供文档保护。
-|Security Sheriff|CryptZone |SharePoint 上的访问管理，根据文档分类和访问权限来保护文档。
-|Symantec DLP|Symantec |检测和监视受保护的文件。
+有关支持 Azure Rights Management 服务和 Azure 信息保护的解决方案的最新信息，请参阅博客文章[Microsoft Ignite 2019 – Microsoft Information Protection 解决方案合作伙伴生态系统展示](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Ignite-2019-Microsoft-Information-Protection-solutions/ba-p/967024)。
 
 ## <a name="next-steps"></a>后续步骤
 若要查看其他要求，请参阅 [Azure 信息保护的要求](requirements.md)。
 
-有关最常用的应用程序如何支持 Azure RMS 的详细信息，请参阅[应用程序如何支持 Azure Rights Management 服务](./applications-support.md)。
+有关最常用的应用程序如何支持 Azure Rights Management 服务的详细信息，请参阅[应用程序如何支持 azure Rights Management 服务](./applications-support.md)。
 
-有关如何为 Azure RMS 配置最常用的应用程序的信息，请参阅[为 Azure Rights Management 配置应用程序](configure-applications.md)。
+有关如何为 Azure Rights Management 服务配置最常使用的应用程序的信息，请参阅为[azure Rights Management 配置应用程序](configure-applications.md)。
 
