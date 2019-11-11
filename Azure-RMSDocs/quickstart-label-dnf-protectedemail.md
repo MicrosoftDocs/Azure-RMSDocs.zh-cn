@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 44e363456d8d4aeaf2a57c8c5b10213d256cb8aa
-ms.sourcegitcommit: f14ec329cef1967d2d66b0d550501449ee55abf9
+ms.openlocfilehash: 02a036a3ab72cc0dcd16d2d3d7e9edaa4c0338ad
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2019
-ms.locfileid: "71674168"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559136"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件
 
@@ -43,7 +43,7 @@ ms.locfileid: "71674168"
     
     如果没有上述任一订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
 
-2. 已将“Azure 信息保护”边栏选项卡添加到 Azure 门户，并确认已激活保护服务。
+2. 已将“Azure 信息保护”窗格添加到 Azure 门户，并确认已激活保护服务。
 
     如果在执行这些操作时需要帮助，请参阅[快速入门：在 Azure 门户中开始](quickstart-viewpolicy.md)。
 
@@ -77,19 +77,19 @@ ms.locfileid: "71674168"
 
 1. 打开新的浏览器窗口，以全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”  。 
     
-    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”   。 选择“Azure 信息保护”。 
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”  并选择“Azure 信息保护”  。
     
     如果你不是全局管理员，请使用以下链接获取替代角色：[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)
 
-2. 从“分类” > “标签”菜单选项中   ：在“Azure 信息保护 - 标签”  边栏选项卡上，选择要配置为应用保护的标签。 
+2. 从“分类” > “标签”菜单选项中   ：在“Azure 信息保护 - 标签”  窗格上，选择要配置为应用保护的标签。 
 
-3. 在“**标签**”边栏选项卡上，查找“**为包含此标签的文档和电子邮件设置权限**”。 如果之前已选择“未配置”或“删除保护”，那么在选中“保护”后，会自动打开“保护”边栏选项卡     。
+3. 在“标签”  窗格上，查找“为包含此标签的文档和电子邮件设置权限”  。 如果之前已选择“未配置”或“删除保护”，那么在选中“保护”后，会自动打开“保护”窗格     。
     
-    如果“保护”边栏选项卡未自动打开，请选择“保护”   ：
+    如果“保护”窗格未自动打开，请选择“保护”   ：
     
     ![为 Azure 信息保护标签配置保护权限](./media/info-protect-protection-bar-configured.png)。
 
-4. 在“保护”边栏选项卡中，确保选中“Azure (云密钥)”   。
+4. 在“保护”窗格上，确保选中“Azure (云密钥)”   。
     
 5. 选择“设置用户定义的权限(预览)”  。
 
@@ -97,7 +97,7 @@ ms.locfileid: "71674168"
 
 7. 如已选中，请清除以下选项：“在 Word、Excel、PowerPoint 和文件资源管理器中提示用户获取自定义权限”  。
 
-8. 单击“保护”  边栏选项卡上的“确定”  ，再单击“标签”  边栏选项卡上的“保存”  。
+8. 单击“保护”  窗格上的“确定”  ，再单击“标签”  窗格上的“保存”  。
 
 标签现已配置为仅在 Outlook 中显示，并将“不得转发”保护应用于电子邮件。
 
@@ -119,9 +119,9 @@ ms.locfileid: "71674168"
 
 如果不想保留此配置并返回标签以使其不应用保护，请执行以下操作：
 
-1. 从“分类” > “标签”菜单选项中   ：在“Azure 信息保护 - 标签”  边栏选项卡上，选择配置的标签。 
+1. 从“分类” > “标签”菜单选项中   ：在“Azure 信息保护 - 标签”  窗格上，选择配置的标签。 
 
-3. 在“标签”  边栏选项卡上，找到“为包含此标签的文档和电子邮件设置权限”  ，选择“未配置”  ，然后选择“保存”  。
+3. 在“标签”  窗格上，找到“为包含此标签的文档和电子邮件设置权限”  ，选择“未配置”  ，然后选择“保存”  。
 
 ## <a name="next-steps"></a>后续步骤
 

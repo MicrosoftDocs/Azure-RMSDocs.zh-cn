@@ -4,18 +4,18 @@ description: 使用 Azure 信息保护扫描程序查找在本地存储的文件
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/24/2019
+ms.date: 11/01/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: 9e4899d918701d59f5fc14db9264d1f983c9df60
-ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
+ms.openlocfilehash: c00aebd2af57dfbb7d9897d200ef3601ebf26ed3
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72447684"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73559933"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 
@@ -24,7 +24,7 @@ ms.locfileid: "72447684"
 本快速入门教程介绍如何安装和配置 Azure 信息保护扫描程序，以查找存储在本地数据存储中的文件中的敏感信息。 例如，本地文件夹、网络共享或 SharePoint Server。
 
 > [!NOTE]
-> 你可以将此快速入门与 Azure 信息保护客户端的当前正式发布版本（经典）或 Azure 信息保护统一标签客户端的当前预览版本一起使用。
+> 你可以将此快速入门与 Azure 信息保护客户端的当前正式发布版本（经典）或 Azure 信息保护统一标签客户端（其中包括扫描程序的预览版本）的当前正式发布版本一起使用。
 >  
 > 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
 
@@ -64,41 +64,41 @@ ms.locfileid: "72447684"
 
 在安装扫描程序之前，在 Azure 门户中为其创建一个配置文件。 此配置文件包含扫描程序设置以及要扫描的数据存储库的位置。
 
-1. 打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”  边栏选项卡。 
+1. 打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”  窗格。 
     
-    例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息”   。 选择“Azure 信息保护”。 
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”  并选择“Azure 信息保护”  。
     
-2. 在左侧边栏选项卡中找到“扫描程序”选项，然后选择“配置文件”   。
+2. 在左侧窗格中找到“扫描程序”选项，然后选择“配置文件”   。
 
-3. 在“Azure 信息保护 - 配置文件”  边栏选项卡上，选择“添加”  ：
+3. 在“Azure 信息保护 - 配置文件”  窗格上，选择“添加”  ：
     
     ![添加 Azure 信息保护扫描程序的配置文件](./media/scanner-add-profile.png)
 
-4. 在“添加新配置文件”  边栏选项卡上，指定扫描程序的名称，该名称用于标识扫描程序的配置设置和要扫描的数据存储库。 例如，对于本快速入门，可以指定“快速入门”  。 以后安装扫描程序时，将需要指定相同的配置文件名称。
+4. 在“添加新配置文件”  窗格上，指定扫描程序的名称，该名称用于标识扫描程序的配置设置和要扫描的数据存储库。 例如，对于本快速入门，可以指定“快速入门”  。 以后安装扫描程序时，将需要指定相同的配置文件名称。
     
     （可选）指定用于管理的说明，以帮助识别扫描程序的配置文件名称。
 
-5. 找到“策略实施”  部分，在此快速入门中，只选择一个设置：对于“实施”  ，选择“关闭”  。 然后，选择“保存”  ，但不要关闭边栏选项卡。
+5. 找到“策略实施”  部分，在此快速入门中，只选择一个设置：对于“实施”  ，选择“关闭”  。 然后，选择“保存”  ，但不要关闭窗格。
     
     这些设置将扫描程序配置为对指定数据存储库中的所有文件进行一次性发现。 此扫描操作会查找所有已知的敏感信息类型，不必首先配置 Azure 信息保护标签或策略设置。
 
 6. 现在已创建并保存配置文件，即可返回到“配置存储库”  选项以将本地文件夹指定为要扫描的数据存储。
     
-    仍在“添加新配置文件”  边栏选项卡上，选择“配置存储库”  以打开“存储库”  边栏选项卡：
+    仍在“添加新配置文件”  窗格上，选择“配置存储库”  以打开“存储库”  窗格：
     
     ![为 Azure 信息保护扫描程序配置数据存储库](./media/scanner-repositories-bar.png)
 
-7. 在“存储库”  边栏选项卡上，选择“添加”  ：
+7. 在“存储库”  窗格上，选择“添加”  ：
     
     ![为 Azure 信息保护扫描程序添加数据存储库](./media/scanner-repository-add.png)
 
-8. 在“存储库”  边栏选项卡上，指定第一步中创建的本地文件夹。 例如：`C:\TestScanner`
+8. 在“存储库”  窗格上，指定第一步中创建的本地文件夹。 例如：`C:\TestScanner`
     
-    对于此边栏选项卡上的其余设置，请不要更改它们，而是将其保留为“配置文件默认值”  。 这意味着数据存储库从扫描程序配置文件继承设置。 
+    对于此窗格上的其余设置，请不要更改它们，而是将其保留为“配置文件默认值”  。 这意味着数据存储库从扫描程序配置文件继承设置。 
     
     选择“保存”  。
 
-9. 返回到“Azure 信息保护 - 配置文件”  边栏选项卡，现在将看到列出的配置文件，同时“计划”  列显示“手动”  且“实施”  列为空。 
+9. 返回到“Azure 信息保护 - 配置文件”  窗格，现在将看到列出的配置文件，同时“计划”  列显示“手动”  且“实施”  列为空。 
     
     “节点”列显示“0”，因为尚未为此配置文件安装扫描程序   。
 
@@ -116,7 +116,7 @@ ms.locfileid: "72447684"
 
 ## <a name="start-the-scan-and-confirm-it-finished"></a>开始扫描并确认扫描完成
 
-1. 返回 Azure 门户，刷新“Azure 信息保护 - 配置文件”  边栏选项卡，此时应看到“节点”  列现在显示“1”  。
+1. 返回 Azure 门户，刷新“Azure 信息保护 - 配置文件”  窗格，此时应看到“节点”  列现在显示“1”  。
 
 2. 选择配置文件名称，然后选择“立即扫描”  选项：
     
@@ -128,7 +128,7 @@ ms.locfileid: "72447684"
     
     请稍候，直到看到“上次扫描结果”  和“上次扫描（结束时间）”  列显示的值。
     
-    或者，查看本地 Windows 应用程序和服务  事件日志和 Azure 信息保护  。 确认 MSIP.Scanner  进程的信息事件 ID 911  。 事件日志条目还包含扫描结果的摘要。
+    或者，仅对于经典客户端中的扫描程序：查看本地 Windows 应用程序和服务  事件日志和 Azure 信息保护  。 确认 MSIP.Scanner  进程的信息事件 ID 911  。 事件日志条目还包含扫描结果的摘要。
 
 ## <a name="see-detailed-results"></a>查看详细结果
 
@@ -153,7 +153,7 @@ ms.locfileid: "72447684"
         
             http://sp2016/Shared Documents
 
-2. 再次重启扫描程序：在“Azure 信息保护 - 配置文件”  边栏选项卡上，确保选中配置文件，然后选择“立即扫描”  选项：
+2. 再次重启扫描程序：在“Azure 信息保护 - 配置文件”  窗格上，确保选中配置文件，然后选择“立即扫描”  选项：
     
     ![启动 Azure 信息保护扫描程序扫描](./media/scanner-scan-now.png)
 

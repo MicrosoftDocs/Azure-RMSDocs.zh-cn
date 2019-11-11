@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: d48061cda0d13ad04dc05dbd5d260a56dec60166
-ms.sourcegitcommit: d939dd4191965f68a5e59e13ed612e40bfa28556
+ms.openlocfilehash: 92bc55f99636d7a54cafc7c45c1588d2828974c7
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71712560"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561392"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
@@ -43,9 +43,9 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
     
     如果你不是全局管理员，请使用以下链接获取替代角色：[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)
 
-2. 在中心菜单上，选择“创建资源”  ，然后在市场的搜索框中键入“Azure 信息保护”  。 
+2. 选择“+ 创建资源”  ，然后在市场的搜索框中键入“Azure 信息保护”  。 
     
-3. 在结果列表中选择“Azure 信息保护”  。 然后在“Azure 信息保护”  边栏选项卡中，单击“创建”  。
+3. 在结果列表中选择“Azure 信息保护”  。 然后在“Azure 信息保护”  窗格中，单击“创建”  。
     
     > [!TIP] 
     > （可选）选择“固定到仪表板”  以便在仪表板上创建“Azure 信息保护”  磁贴，这样，下次登录到门户时，就可以跳过浏览到该服务。
@@ -56,7 +56,7 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
 
 现在已为新客户自动激活保护服务，但最好确认它不需要手动激活。 
 
-1. 在“Azure 信息保护”  边栏选项卡上，选择“管理”   > “保护激活”  。
+1. 在“Azure 信息保护”  窗格上，选择“管理”   > “保护激活”  。
 
 2. 确认是否已为租户激活保护： 
     
@@ -92,23 +92,23 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
     
     a. 选择  “添加或删除标签”。
     
-    b. 从“策略:  添加或删除标签”边栏选项卡中，选择所有标签，然后选择“确定”  。
+    b. 从“策略:  添加或删除标签”窗格中，选择所有标签，然后选择“确定”  。
     
-    c. 再从“策略:  全局”边栏选项卡上，选择“保存”  。
+    c. 再从“策略:  全局”窗格上，选择“保存”  。
 
 在 Azure 门户中发布标签，使其可用于 Azure 信息保护客户端（经典）。
 
 ## <a name="view-your-labels"></a>查看标签
 
-选择“分类”   > “标签”  ，并花一些时间熟悉“Azure 信息保护 - 标签  ”边栏选项卡上显示的标签。
+选择“分类”   > “标签”  ，并花一些时间熟悉“Azure 信息保护 - 标签  ”窗格上显示的标签。
 
 如果它们不与上一节图中的标签类似，说明你使用的不是 Azure 信息保护中的默认标签，而可能是从 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 合规中心创建的标签。
 
 > [!TIP]
 > 如果不需要使用自定义标签，但要使用 Azure 信息保护中的默认标签，请执行以下操作： 
-> - 删除自定义标签，然后会将在“标签”  边栏选项卡中看到用于生成默认标签的选项，如[上一节](#create-and-publish-labels)中所述。 
+> - 删除自定义标签，然后会将在“标签”  窗格中看到用于生成默认标签的选项，如[上一节](#create-and-publish-labels)中所述。 
 
-从“Azure 信息保护 - 标签”  边栏选项卡上：
+从“Azure 信息保护 - 标签”  窗格上：
 
 - 用于分类的默认标签包括：“个人”  、“公共”  、“常规”  、“机密”  和“高度机密”  。 最后两个标签展开可显示子标签，这提供了有关如何使分类具有子类别的示例。
 
@@ -118,7 +118,7 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
 
 ![默认标签的 Azure 信息保护快速入门概述](./media/info-protect-policy-default-labelsv2.png)
 
-如果选择一个标签，将在新的边栏选项卡上看到该标签配置的详细信息。
+如果选择一个标签，将在新的窗格上看到该标签配置的详细信息。
 
 ## <a name="view-your-policy-settings"></a>查看策略设置
 
@@ -134,7 +134,7 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
     
     ![Azure 信息保护策略全局设置](./media/defaultsettings-aip.png)
 
-3. 你现在可以在门户中关闭任何已打开的边栏选项卡。
+3. 你现在可以在门户中关闭任何已打开的窗格。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -4,7 +4,7 @@ description: Azure 信息保护服务的技术概述，此服务有助于组织�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/18/2019
+ms.date: 11/04/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ Customer intent: As an administrator, I want to label documents and emails to cl
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 0659abcb6211bc05a6db435db759eed8f6c44cea
-ms.sourcegitcommit: 2f092b395e31ce64df8b9148433032be5702217e
+ms.openlocfilehash: 08360f357acd10d8f832f7aa5efcfb271539c8fe
+ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589609"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561153"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -158,6 +158,9 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 - BRK2120 - 已拥有 Azure 信息保护？ 导航统一的标签、策略配置、客户端和分析
 
 - BRK2121 - 借助 Microsoft 信息保护 SDK 将敏感度标签和保护功能扩展到自己的应用和 ISV 解决方案
+
+最新博客文章：[了解敏感数据所在的位置，并通过 Microsoft 365 智能地对其进行保护](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Understand-where-your-sensitive-data-is-located-and/ba-p/960465)
+
 
 ## <a name="next-steps"></a>后续步骤
 
