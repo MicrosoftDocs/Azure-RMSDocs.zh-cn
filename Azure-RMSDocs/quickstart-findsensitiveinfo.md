@@ -4,18 +4,18 @@ description: 使用 Azure 信息保护扫描程序查找在本地存储的文件
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 11/01/2019
+ms.date: 11/12/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: c00aebd2af57dfbb7d9897d200ef3601ebf26ed3
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 22bd446f940e176c3cae82f7e629cb93f2456bc1
+ms.sourcegitcommit: 6393b971f56a1c666f82777d38ea3ca853c60342
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559933"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73979978"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 
@@ -42,7 +42,7 @@ ms.locfileid: "73559933"
     
     - 经典客户端：要安装此客户端，请转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。
     
-    - 统一标签客户端：要安装此客户端，请转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection_UL_Preview.exe  。
+    - 统一标签客户端：若要安装此客户端，请转到 [Microsoft下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection_UL.exe  。
     
 3. 计算机上同时安装了 SQL Server Express。
     
