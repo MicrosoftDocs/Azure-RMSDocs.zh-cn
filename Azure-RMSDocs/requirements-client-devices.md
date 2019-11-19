@@ -4,7 +4,7 @@ description: 确定哪些设备支持 Azure 信息保护中的 Azure Rights Mana
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/25/2019
+ms.date: 11/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 872a398df33491b815947ad86db70cdbdf922596
-ms.sourcegitcommit: bd986d69729deb657bb3449461f5aacfa0851a56
+ms.openlocfilehash: bd88649f5e66358a97bb446e4e3d7c9f43c78500
+ms.sourcegitcommit: 9484744702a82b8adc45f78e0b127a3857794d29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71301143"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160843"
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的客户端设备
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 若要确定哪些设备支持 Azure Rights Management 服务，请参阅以下部分。 此服务为 Azure 信息保护提供数据保护。
 
@@ -37,16 +37,16 @@ ms.locfileid: "71301143"
 
 -   **Windows 10** (x86, x64)
 
--   **macOS**：最低版本为 macOS 10.8 (Mountain Lion)
+-   **macOS**： macOS 10.8 的最低版本（山地 Lion）
 
 ## <a name="mobile-devices"></a>移动设备
 以下移动设备操作系统支持 Azure Rights Management 服务：
 
--   **Android 手机和平板电脑**:最低版本为 Android 4.4
+-   **Android 手机和平板电脑**：最低版本的 android 6。0
 
--   **iPhone 和 iPad**:最小版本的 iOS 11。0
+-   **iPhone 和 iPad**：最低版本的 iOS 11。0
 
--   **Windows Phone 和平板电脑**：Windows 10 移动版
+-   **Windows 手机和平板电脑**： Windows 10 移动版
 
 
 ## <a name="next-steps"></a>后续步骤

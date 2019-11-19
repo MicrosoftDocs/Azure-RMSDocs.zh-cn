@@ -4,7 +4,7 @@ description: 一些常见问题，帮助你使用适用于 iOS 和 Android 的 A
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/25/2019
+ms.date: 11/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.custom: user
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fcd764187379fdfcb8dd1cc13c60ae9dad2069dd
-ms.sourcegitcommit: bd986d69729deb657bb3449461f5aacfa0851a56
+ms.openlocfilehash: a8f6871f322765abf07087ce3c7bd629bfc9748f
+ms.sourcegitcommit: 9484744702a82b8adc45f78e0b127a3857794d29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71301155"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160834"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 
-适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 此页提供有关适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题的解答。
 
@@ -39,7 +39,7 @@ ms.locfileid: "71301155"
 
 ## <a name="can-my-mobile-device-run-the-azure-information-protection-app"></a>我的移动设备是否可运行 Azure 信息保护应用？
 
-Azure 信息保护应用需要最低版本的**iOS 11**或**Android 4.4**。
+Azure 信息保护应用需要最低版本的**iOS 11**或**Android 6.0**。
 
 如果具有这些版本或更高版本，可安装要在移动设备上运行的应用：
 
@@ -51,11 +51,11 @@ Azure 信息保护应用需要最低版本的**iOS 11**或**Android 4.4**。
 
 安装该应用后，你无需在该点再执行任何其他操作。 请等待，直到收到受保护的电子邮件或想要查看的文件，然后选择“AIP 查看器”以将其打开。 然后系统会提示使用工作或学校帐户登录，或提示选择一个证书。 对这些凭据进行身份验证后，便可以读取内容。
 
-但是，如果不想等待，可以使用以下说明向自己发送受保护的电子邮件或文件来查看：[适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门](mobile-app-get-started.md) 
+但是，如果你不想等待，则可以使用以下说明向自己发送受保护的电子邮件或要查看的文件：[适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门](mobile-app-get-started.md) 
 
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>登录此应用应使用什么凭据？
 
-如果你的组织已 AD RMS 本地 (使用移动设备扩展) 或使用 Azure 信息保护, 请使用工作凭据登录。 
+如果你的组织已 AD RMS 本地（使用移动设备扩展）或使用 Azure 信息保护，请使用工作凭据登录。 
 
 如果你的个人电子邮件地址用于保护该文件，则使用免费 [Microsoft 帐户](https://signup.live.com)的凭据进行登录。
 

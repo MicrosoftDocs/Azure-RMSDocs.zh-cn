@@ -4,7 +4,7 @@ description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护�
 author: cabailey
 ms.author: cabailey
 manager: rkarlin
-ms.date: 11/04/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b07c2e6ffe7e9eae6b1a9130890c33d033264474
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 08c5571399e9a77e2d28cc2c6b3f25e9ffc0235a
+ms.sourcegitcommit: 9484744702a82b8adc45f78e0b127a3857794d29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559560"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160864"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -44,7 +44,7 @@ ms.locfileid: "73559560"
 
 如果你在组织中使用管理员角色来委派管理，则可能需要对统一标签平台进行一些更改：
 
-统一标签平台不支持**Azure 信息保护管理员**（以前称为**信息保护管理员**）和**全局读取器**的[Azure AD 角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)。 如果你的组织中使用了其中任一管理角色来管理 Azure 信息保护，请将具有此角色的用户添加到**符合性管理员**、**符合性数据管理员**或安全的 Azure AD 角色中。 **管理员**。 如果需要有关此步骤的帮助，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。 另外，还可以在 Azure AD 门户、Microsoft 365 安全中心和 Microsoft 365 合规中心分配这些角色。
+统一标签平台不支持**Azure 信息保护管理员**（以前称为**信息保护管理员**）和**全局读取器**的[Azure AD 角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)。 如果你的组织中使用了其中任一管理角色来管理 Azure 信息保护，请将具有此角色的用户添加到**符合性管理员**、**符合性数据管理员**或**安全管理员**的 Azure AD 角色。 如果需要有关此步骤的帮助，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。 另外，还可以在 Azure AD 门户、Microsoft 365 安全中心和 Microsoft 365 合规中心分配这些角色。
 
 或者，若要使用角色，可以在管理中心为这些用户创建新角色组，然后向该组中添加“敏感度标签管理员”或“组织配置”角色。
 
@@ -71,7 +71,7 @@ ms.locfileid: "73559560"
     
     - 如果你的标签已针对预定义的模板进行了配置，请编辑这些标签，并选择“设置权限”选项，配置模板中具有的相同保护设置。 具有预定义模板的标签不会阻止标签迁移，但管理中心不支持此标签配置。
         
-        提示：为了帮助您重新配置这些标签，您可能会发现有两个浏览器窗口是非常有用的：一个窗口，您可以在其中选择标签的 "**编辑模板**" 按钮以查看保护设置，在选择 "**设置权限**"。
+        提示：为了帮助您重新配置这些标签，您可能会发现有两个浏览器窗口很有用：一个窗口，您可以在其中选择标签的 "**编辑模板**" 按钮以查看保护设置，另一个窗口用于在选择 "**设置权限**" 时配置相同的设置。
     
     - 迁移了包含基于云的保护设置的标签后，保护模板的结果范围是在 Azure 门户（或通过使用 AIPService PowerShell 模块）和管理中心定义的作用域中定义的作用域。 
 
@@ -140,7 +140,7 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 
 必须是符合性管理员、合规性数据管理员、安全管理员或全局管理员才能迁移标签。
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护**" 窗格。
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”窗格。
     
     例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
 
@@ -158,7 +158,7 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 ### <a name="copy-policies"></a>复制策略
 
 > [!NOTE]
-> 此选项将逐步推出到租户。 它也处于预览阶段，可能会发生更改。
+> 此选项处于预览阶段，可能会发生更改。
 
 迁移标签后，可以选择用于复制策略的选项。 如果选择此选项，策略的一次性副本及其[策略设置](configure-policy-settings.md)和任何[高级客户端设置](./rms-client/client-admin-guide-customizations.md#available-advanced-client-settings)将发送到管理标签的管理中心： Office 365 安全与合规中心，Microsoft 365 安全性中心 Microsoft 365 符合性中心。
 
