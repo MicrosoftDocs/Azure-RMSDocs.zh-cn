@@ -54,7 +54,7 @@ ms.locfileid: "71966878"
 
 运行[AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate) cmdlet 以获取保护模板列表。 可以使用模板 ID 获取特定模板的详细信息。 `RightsDefinitions` 对象显示个人数据，如果有的话。 
 
-示例
+示例：
 ```
 PS C:\Users> Get-AipServiceTemplate -TemplateId fcdbbc36-1f48-48ca-887f-265ee1268f51 | select *
 
@@ -84,7 +84,7 @@ LabelId                 :
 
 ### <a name="super-users-and-delegated-administrators-for-the-protection-service"></a>保护服务的超级用户和委派的管理员
 
-运行[AipServiceSuperUser](/powershell/module/aipservice/get-aipservicesuperuser) cmdlet 和[aipservicerolebasedadministrator](/powershell/module/aipservice/get-aipservicerolebasedadministrator) cmdlet，以查看已为哪些用户分配了 azure 的保护服务（Azure Rights Management）的超级用户角色或全局管理员角色信息保护。 对于已分配了这些角色之一的用户，会显示其电子邮件地址。
+运行[AipServiceSuperUser](/powershell/module/aipservice/get-aipservicesuperuser) cmdlet 和[aipservicerolebasedadministrator](/powershell/module/aipservice/get-aipservicerolebasedadministrator) cmdlet，以查看为哪些用户分配了 Azure 信息保护中的保护服务（azure Rights Management）的超级用户角色或全局管理员角色。 对于已分配了这些角色之一的用户，会显示其电子邮件地址。
 
 
 ### <a name="administration-logs-for-the-protection-service"></a>保护服务的管理日志
@@ -224,7 +224,7 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 - **全局读取器**
 
-使用 AIPService 模块（或旧模块，AADRM）查看和指定的个人数据仅可供已分配**Azure 信息保护管理员**、**合规性管理员**、**合规性的用户访问Azure Active Directory 的数据管理员**或**全局管理员**角色，或者保护服务的全局管理员角色。
+使用 AIPService 模块（或旧模块，AADRM）查看和指定的个人数据仅可供已向其分配了**Azure 信息保护管理员**、**合规性管理员**、**符合性数据管理员**或 Azure Active Directory 的**全局管理员**角色，或者保护服务的全局管理员角色。
 
 ## <a name="updating-personal-data"></a>更新个人数据
 
@@ -236,7 +236,7 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 ### <a name="protection-templates"></a>保护模板
 
-运行[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet 以更新保护模板。 由于个人数据位于 `RightsDefinitions` 属性内，因此还需要使用[AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet 创建具有更新信息的权限定义对象，并将权限定义对象与 `Set-AipServiceTemplateProperty`cmdlet.
+运行[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet 以更新保护模板。 由于个人数据位于 `RightsDefinitions` 属性内，因此还需要使用[AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet 创建具有更新信息的权限定义对象，并将权限定义对象与 `Set-AipServiceTemplateProperty` cmdlet 结合使用。
 
 ### <a name="super-users-and-delegated-administrators-for-the-protection-service"></a>保护服务的超级用户和委派的管理员
 
