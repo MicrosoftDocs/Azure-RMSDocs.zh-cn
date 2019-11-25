@@ -166,23 +166,23 @@ SDK 的文件 API 组件已扩展并提供以下功能：
 
     文件 API 要求客户端计算机上安装 Rights Management Service 客户端 2.1 ，并要求该计算机连接到 RMS 服务器。 有关 RMS 服务器、RMS 客户端及其功能的详细信息，请参阅 TechNet 内容以获取[针对 RMS 的 IT 专业人员文档](https://technet.microsoft.com/library/cc771234(v=ws.10).aspx)。
 
--   **问题**：从头开始创建许可证时，必须明确授予所有权。
+-   **问题**：从头开始创建许可证时，必须显式授予所有权。
 
     **解决方案**：使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 从头开始创建许可证时，应用程序必须向许可证所有者显式添加“所有者”权限。 有关详细信息，请参阅[添加显式所有者权限](add-explicit-owner-rights.md)。
 
--   **问题**：如果应用程序通过使用[IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx)或[IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx)的句柄为同一窗口调用了两次，则在**HRESULT**中 RMS SDK 2.1 将返回错误。
+-   **问题**：如果应用程序使用手柄为同一窗口两次调用 [IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx) 或 [IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx)，则 RMS SDK 2.1 将在 HRESULT 中返回一个故障。
 
     **解决方案**：有关此问题的具体指导，请参阅 [IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx) 和 [IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx) 中的“备注”部分。
 
 -   **问题**：为多个体系结构进行构建时，必须使用此指导。
 
-    **解决方案**：如果要对不同的体系结构使用 Ipcsecproc\*isv.dll（例如，你已经在 64 位计算机上安装了 64 位 SDK，但现在想要在需要 Ipcsecproc\*isv.dll 的 32 位计算机上部署），则你必须安装在其他计算机上安装 32 位 SDK，然后将 Ipcsecproc\*isv.dll 文件从“%PROGRAMFILES%\\Microsoft Information Protection And Control”文件夹（默认位置，或者你选择安装 SDK 的任何位置）复制到该计算机上。
+    **解决方案**：如果要对不同的体系结构使用 Ipcsecproc\*isv.dll（例如，你已经在 64 位计算机上安装了 64 位 SDK，但现在想要在需要 Ipcsecproc\*isv.dll 的 32 位计算机上部署），则必须在其他计算机上安装 32 位 SDK，然后将 Ipcsecproc\*isv.dll 文件从“%PROGRAMFILES%\\Microsoft Information Protection And Control”文件夹（默认位置，或者你选择安装 SDK 的任何位置）复制到该计算机。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
-**Q**：默认语言行为如何使用包含 LCID 参数的功能？
+**问**：默认语言行为如何使用包含 LCID 参数的功能？
 
-**A**：使用 0 作为默认区域设置。 在这种情况下，AD RMS Client 2.1 会按以下顺序查找名称和描述，并检索第一个可用名称：
+**答**：使用 0 作为默认区域设置。 在这种情况下，AD RMS Client 2.1 会按以下顺序查找名称和描述，并检索第一个可用名称：
 
     1 - User preferred LCID.
     2 - System locale LCID.
