@@ -99,6 +99,8 @@
           href: concept-async-observers-policy-cpp.md
         - name: 保护 API 观察程序 (C++)
           href: concept-async-observers-protection-cpp.md
+    - name: SDK 遥测
+      href: concept-mip-telemetry.md
 - name: 参考
   items:
     - name: C++ 库
