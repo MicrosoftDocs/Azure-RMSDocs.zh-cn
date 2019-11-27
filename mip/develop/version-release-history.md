@@ -1,6 +1,6 @@
 ---
-title: Microsoft Information Protection (MIP) SDK version release history and support policy
-description: Verison release history and change notes for the MIP SDK.
+title: Microsoft 信息保护（MIP） SDK 版本发行历史记录和支持策略
+description: MIP SDK 的版本发行历史记录和更改注释。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
@@ -15,240 +15,240 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/25/2019
 ms.locfileid: "74479116"
 ---
-# <a name="microsoft-information-protection-mip-sdk-version-release-history-and-support-policy"></a>Microsoft Information Protection (MIP) SDK version release history and support policy
+# <a name="microsoft-information-protection-mip-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护（MIP） SDK 版本发行历史记录和支持策略
 
-## <a name="servicing"></a>Servicing 
+## <a name="servicing"></a>服务 
 
-Each general availability (GA) version is supported for six months once the next GA version is release. The documentation may not include information about unsupported versions. Fixes and new functionality are only applied to the latest GA version.
+每个正式发布（GA）版本在下一正式发行版发布后的六个月内受支持。 文档可能不包含有关不支持的版本的信息。 修补程序和新功能仅适用于最新的 GA 版本。
 
-Preview versions shouldn't be deployed in production. Instead, use the latest preview version to test new functionality or fixes that are coming in the next GA version. Only the most current preview version is supported.
+不应在生产中部署预览版本。 请改用最新的预览版本来测试新功能或即将推出的新功能或修补程序。 仅支持最新的预览版本。
 
 ## <a name="release-history"></a>版本历史
 
-Use the following information to see what’s new or changed for a supported release. 最新版本会最先列出。 
+使用以下信息可查看受支持版本的新增功能或更改内容。 最新版本会最先列出。 
 
 > [!NOTE]
-> Minor fixes are not listed so if you experience a problem with the SDK, we recommend that you check whether it is fixed with the latest GA release. 如果问题仍然存在，请检查当前预览版。
+> 不会列出小修补程序，因此，如果您在使用 SDK 时遇到问题，我们建议您检查是否已通过最新的 GA 版本修复了此问题。 如果问题仍然存在，请检查当前预览版。
 >  
-> For technical support, please visit the [Stack Overflow Microsoft Information Protection forum](https://stackoverflow.com/questions/tagged/microsoft-information-protection). 
+> 若要获得技术支持，请访问[Microsoft 信息保护论坛 Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-information-protection)。 
 
-## <a name="version-140"></a>Version 1.4.0 
+## <a name="version-140"></a>版本1.4。0 
 
-**Release date**: November 6, 2019
+**发布日期**：2019年11月6日
 
-This version introduces support for the protection API in the .NET package (Microsoft.InformationProtection.File).
+此版本引入了对 .NET 包（InformationProtection）中的保护 API 的支持。
 
-### <a name="sdk-changes"></a>SDK changes
-- Performance improvements and bug fixes
-- Renamed StorageType enum to CacheStorageType
-- Android links to libc++ instead of gnustl
-- Removed previously-deprecated APIs
-  - File/Policy/Profile::Settings must be initialized with a MipContext
-  - File/Policy/Profile::Settings path, application info, logger delegate, telemetry, and log level getters/setters have been removed. These properties are managed by MipContext
-- Better static library support on Apple platforms
-  - Monolithic static libraries
-    - libmip_file_sdk_static.a
-    - libmip_upe_sdk_static.a
-    - libmip_protection_sdk_static.a
-    - libmip_upe_and_protection_sdk_static.a
-  - 3rd-party dependencies extracted into separate libraries
-    - libsqlite3.a
-    - libssl.a
-- Removed mip_telemetry.dll (merged into mip_core.dll)
+### <a name="sdk-changes"></a>SDK 更改
+- 性能改进和 bug 修复
+- 将 StorageType 枚举重命名为 CacheStorageType
+- Android 链接到 libc + + 而不是 gnustl
+- 删除以前不推荐使用的 Api
+  - 文件/策略/配置文件：：设置必须使用 MipContext 进行初始化
+  - 已删除 "文件/策略/配置文件：：设置路径"、"应用程序信息"、"记录器委托"、"遥测" 和 "日志级别 getter/setter"。 这些属性由 MipContext 管理
+- Apple 平台上更好的静态库支持
+  - 单一静态库
+    - libmip_file_sdk_static。
+    - libmip_upe_sdk_static。
+    - libmip_protection_sdk_static。
+    - libmip_upe_and_protection_sdk_static。
+  - 提取到不同库中的第三方依赖项
+    - libsqlite3
+    - libssl1.0。0
+- 删除 mip_telemetry .dll （合并到 mip_core .dll）
 
 ### <a name="file-api"></a>文件 API
 
-- RPMSG
+- .RPMSG
   - 加密
-  - Added support for string8 decryption
-- Configurable PFILE extension behavior (default, <EXT>.PFILE, or P<EXT>)
+  - 添加了对 string8 解密的支持
+- 可配置的 .PFILE 扩展行为（默认 <EXT>.PFILE 或 P<EXT>）
   - ProtectionSettings::SetPFileExtensionBehavior
 
 ### <a name="policy-api"></a>策略 API
 
-- Complete C API
-- Configure filtering of labels associated with protection
-  - PolicyEngine::Settigns::SetLabelFilter()
+- 完成 C API
+- 配置与保护关联的标签的筛选
+  - PolicyEngine：：设置也：： SetLabelFilter （）
 
 ### <a name="protection-api"></a>保护 API
 
-- Removed previously-deprecated APIs
-  - Removed ProtectionEngine::CreateProtectionHandlerFromDescriptor[Async] (use ProtectionEngine::CreateProtectionHandlerForPublishing[Async])
-  - Removed ProtectionEngine::CreateProtectionHandlerFromPublishingLicense[Async] (use ProtectionEngine::CreateProtectionHandlerForConsumption[Async])
-- Complete C# API
-- Complete C API
-  - C API normalization changes from v1.3 C API preview:
-    - Renamed mip_cc_storage_type to mip_cc_cache_storage_type
-    - Renamed MIP_CC_AddProtectionProfileEngine to MIP_CC_ProtectionProfile_AddEngine
-    - Renamed MIP_CC_CreateProtectionEngineSettingsForExistingEngine to MIP_CC_CreateProtectionEngineSettingsWithEng
-    - Renamed MIP_CC_CreateProtectionEngineSettingsForNewEngine to MIP_CC_CreateProtectionEngineSettingsWithIdentity
-    - Renamed MIP_CC_SetProtectionProfileSettingsHttpDelegate to MIP_CC_ProtectionProfileSettings_SetHttpDelegate
-    - Renamed MIP_CC_CreateProtectionHandlerForConsumption to MIP_CC_ProtectionEngine_CreateProtectionHandlerForConsumption
-    - Renamed MIP_CC_CreateProtectionHandlerForPublishing to MIP_CC_ProtectionEngine_CreateProtectionHandlerForPublishing
-    - Renamed MIP_CC_GetProtectionEngineId to MIP_CC_ProtectionEngine_GetEngineId
-    - Renamed MIP_CC_GetProtectionEngineTemplates to MIP_CC_ProtectionEngine_GetTemplates
-    - Renamed MIP_CC_GetProtectionEngineTemplatesSize to MIP_CC_ProtectionEngine_GetTemplatesSize
-    - Renamed MIP_CC_SetTelemetryConfigurationHttpDelegate to MIP_CC_TelemetryConfiguration_SetHttpDelegate
-    - Renamed MIP_CC_SetTelemetryConfigurationHostName to MIP_CC_TelemetryConfiguration_SetHostName
-    - Renamed MIP_CC_SetTelemetryConfigurationIsLocalCachingEnabled to MIP_CC_TelemetryConfiguration_SetIsLocalCachingEnabled
-    - Renamed MIP_CC_SetTelemetryConfigurationIsNetworkDetectionEnabled to MIP_CC_TelemetryConfiguration_SetIsNetworkDetectionEnabled
-    - Renamed MIP_CC_SetTelemetryConfigurationIsTelemetryOptedOut to MIP_CC_TelemetryConfiguration_SetIsTelemetryOptedOut
-    - Renamed MIP_CC_SetTelemetryConfigurationLibraryName to MIP_CC_TelemetryConfiguration_SetLibraryName
-    - Removed MIP_CC_ProtectionEngine_GetRightsForLabelIdSize and updated MIP_CC_ProtectionEngine_GetRightsForLabelId to populate a mip_cc_string_list instead of a comma-separated string buffer
-    - Removed MIP_CC_ProtectionHandler_GetRightsSize and updated MIP_CC_ProtectionHandler_GetRights to populate a mip_cc_string_list instead of a comma-separated string buffer
-    - Added MIP_CC_ProtectionEngine_GetEngineIdSize and updated MIP_CC_ProtectionEngine_GetEngineId to populate a string buffer instead of a mip_cc_guid
-    - MIP_CC_CreateProtectionDescriptorFromUserRights now takes 'mip_cc_dictionary-' param instead of 'mip_cc_dictionary'
-    - MIP_CC_ProtectionEngineSettings_SetCustomSettings now takes 'mip_cc_dictionary-' param instead of 'mip_cc_dictionary'
-    - MIP_CC_ProtectionProfileSettings_SetCustomSettings now takes 'mip_cc_dictionary-' param instead of 'mip_cc_dictionary'
-    - MIP_CC_TelemetryConfiguration_SetCustomSettings now takes 'mip_cc_dictionary-' param instead of 'mip_cc_dictionary'
-    - MIP_CC_CreateMipContext takes 'isOfflineOnly' and 'loggerDelegateOverride' params
+- 删除以前不推荐使用的 Api
+  - 已删除 ProtectionEngine：： CreateProtectionHandlerFromDescriptor [Async] （使用 ProtectionEngine：： CreateProtectionHandlerForPublishing [Async]）
+  - 已删除 ProtectionEngine：： CreateProtectionHandlerFromPublishingLicense [Async] （使用 ProtectionEngine：： CreateProtectionHandlerForConsumption [Async]）
+- 完整C# API
+- 完成 C API
+  - C 版本 C api 预览版中的 C API 规范化更改：
+    - 将 mip_cc_storage_type 重命名为 mip_cc_cache_storage_type
+    - 将 MIP_CC_AddProtectionProfileEngine 重命名为 MIP_CC_ProtectionProfile_AddEngine
+    - 将 MIP_CC_CreateProtectionEngineSettingsForExistingEngine 重命名为 MIP_CC_CreateProtectionEngineSettingsWithEng
+    - 将 MIP_CC_CreateProtectionEngineSettingsForNewEngine 重命名为 MIP_CC_CreateProtectionEngineSettingsWithIdentity
+    - 将 MIP_CC_SetProtectionProfileSettingsHttpDelegate 重命名为 MIP_CC_ProtectionProfileSettings_SetHttpDelegate
+    - 将 MIP_CC_CreateProtectionHandlerForConsumption 重命名为 MIP_CC_ProtectionEngine_CreateProtectionHandlerForConsumption
+    - 将 MIP_CC_CreateProtectionHandlerForPublishing 重命名为 MIP_CC_ProtectionEngine_CreateProtectionHandlerForPublishing
+    - 将 MIP_CC_GetProtectionEngineId 重命名为 MIP_CC_ProtectionEngine_GetEngineId
+    - 将 MIP_CC_GetProtectionEngineTemplates 重命名为 MIP_CC_ProtectionEngine_GetTemplates
+    - 将 MIP_CC_GetProtectionEngineTemplatesSize 重命名为 MIP_CC_ProtectionEngine_GetTemplatesSize
+    - 将 MIP_CC_SetTelemetryConfigurationHttpDelegate 重命名为 MIP_CC_TelemetryConfiguration_SetHttpDelegate
+    - 将 MIP_CC_SetTelemetryConfigurationHostName 重命名为 MIP_CC_TelemetryConfiguration_SetHostName
+    - 将 MIP_CC_SetTelemetryConfigurationIsLocalCachingEnabled 重命名为 MIP_CC_TelemetryConfiguration_SetIsLocalCachingEnabled
+    - 将 MIP_CC_SetTelemetryConfigurationIsNetworkDetectionEnabled 重命名为 MIP_CC_TelemetryConfiguration_SetIsNetworkDetectionEnabled
+    - 将 MIP_CC_SetTelemetryConfigurationIsTelemetryOptedOut 重命名为 MIP_CC_TelemetryConfiguration_SetIsTelemetryOptedOut
+    - 将 MIP_CC_SetTelemetryConfigurationLibraryName 重命名为 MIP_CC_TelemetryConfiguration_SetLibraryName
+    - 删除 MIP_CC_ProtectionEngine_GetRightsForLabelIdSize 并更新 MIP_CC_ProtectionEngine_GetRightsForLabelId 以填充 mip_cc_string_list，而不是以逗号分隔的字符串缓冲区
+    - 删除 MIP_CC_ProtectionHandler_GetRightsSize 并更新 MIP_CC_ProtectionHandler_GetRights 以填充 mip_cc_string_list，而不是以逗号分隔的字符串缓冲区
+    - 添加了 MIP_CC_ProtectionEngine_GetEngineIdSize 并更新了 MIP_CC_ProtectionEngine_GetEngineId 来填充字符串缓冲区而不是 mip_cc_guid
+    - MIP_CC_CreateProtectionDescriptorFromUserRights 现在使用 "mip_cc_dictionary" 参数，而不是 "mip_cc_dictionary"
+    - MIP_CC_ProtectionEngineSettings_SetCustomSettings 现在使用 "mip_cc_dictionary" 参数，而不是 "mip_cc_dictionary"
+    - MIP_CC_ProtectionProfileSettings_SetCustomSettings 现在使用 "mip_cc_dictionary" 参数，而不是 "mip_cc_dictionary"
+    - MIP_CC_TelemetryConfiguration_SetCustomSettings 现在使用 "mip_cc_dictionary" 参数，而不是 "mip_cc_dictionary"
+    - MIP_CC_CreateMipContext 采用 "isOfflineOnly" 和 "loggerDelegateOverride" 参数
 
 
-## <a name="version-130"></a>Version 1.3.0
+## <a name="version-130"></a>版本1.3。0
 
-**Release date**: August 22, 2019
+**发布日期**：2019年8月22日
 
 ### <a name="new-features"></a>新功能
 
-- `mip::MipContext` is the new highest-level object.
-- Decryption of protected MSG files is now supported.
-- Inspection of message.rpmsg files is supported via `mip::FileInspector` and `mip::FileHandler::InspectAsync()`.
-- On-disk cache may now be optionally encrypted.
-- Protection API now supports China sovereign cloud.
-- Arm64 support on Android.
-- Arm64e support on iOS.
-- End user license (EUL) cache can now be disabled.
-- .pfile encryption may be disabled via `mip::FileEngine::EnablePFile`
-- Improved performance for protection operations by reducing number of HTTP calls
-- Removed the delegated identity details from `mip::Identity` and instead added `DelegatedUserEmail` to `mip::FileEngine::Settings`, `mip::ProtectionSettings`, `mip::PolicyEngine::Settings`, and `mip::ProtectionHandler`'s `PublishingSettings` and `ConsumptionSettings`.
-- Functions that previously returned LabelId now return a `mip::Label` object.
+- `mip::MipContext` 是新的最高级别的对象。
+- 现在支持解密受保护的消息文件。
+- 通过 `mip::FileInspector` 和 `mip::FileHandler::InspectAsync()`来支持检查 .rpmsg 文件。
+- 磁盘上的缓存现在可以有选择性地加密。
+- 保护 API 现在支持中国主权 cloud。
+- Android 上的 Arm64 支持。
+- IOS 上的 Arm64e 支持。
+- 最终用户许可证（EUL）缓存现在可以禁用。
+- 。可以通过 `mip::FileEngine::EnablePFile` 禁用 .pfile 加密
+- 通过减少 HTTP 调用数提高了保护操作的性能
+- 已从 `mip::Identity` 中删除委托的标识详细信息，并将 `DelegatedUserEmail` 添加到 `mip::FileEngine::Settings`、`mip::ProtectionSettings`、`mip::PolicyEngine::Settings`和 `mip::ProtectionHandler``PublishingSettings` 和 `ConsumptionSettings`。
+- 先前返回面部的函数现在返回 `mip::Label` 对象。
 
 ### <a name="changes"></a>更改
 
-* In previous versions, we required that you called `mip::ReleaseAllResources`. Version 1.3 replaces this with `mip::MipContext::~MipContext` or `mip::MipContext::Shutdown`.
-* Removed `ActionSource` from `mip::LabelingOptions` and `mip::ExecutionState::GetNewLabelActionSource`
-* Replaced `mip::ProtectionEngine::CreateProtectionHandlerFromDescriptor` with `mip::ProtectionEngine::CreateProtectionHandlerForPublishing`.
-* Replaced `mip::ProtectionEngine::CreateProtectionHandlerFromPublishingLicense` with `mip::ProtectionEngine::CreateProtectionHandlerForConsumption`.
-* Renamed `mip::PublishingLicenseContext` to `mip::PublishingLicenseInfo` and updated to contain rich fields instead of raw serialized bytes.
-* `mip::PublishingLicenseInfo` contains the data relevant to MIP after parsing a publishing license (PL).
-* `mip::TemplateNotFoundError` and `mip::LabelNotFoundError` thrown when application passes MIP a template ID or label ID that is not recognized.
-* Added support for label-based conditional access via the claims parameter of `AcquireToken()` and `mip::AuthDelegate::OAuth2Challenge()`. This functionality hasn't yet been exposed via the Security and Compliance Center portal.
+* 在以前的版本中，我们要求你调用 `mip::ReleaseAllResources`。 版本1.3 将此替换为 `mip::MipContext::~MipContext` 或 `mip::MipContext::Shutdown`。
+* 从 `mip::LabelingOptions` 和 `mip::ExecutionState::GetNewLabelActionSource` 中删除了 `ActionSource`
+* 已将 `mip::ProtectionEngine::CreateProtectionHandlerFromDescriptor` 替换为 `mip::ProtectionEngine::CreateProtectionHandlerForPublishing`。
+* 已将 `mip::ProtectionEngine::CreateProtectionHandlerFromPublishingLicense` 替换为 `mip::ProtectionEngine::CreateProtectionHandlerForConsumption`。
+* 将 `mip::PublishingLicenseContext` 重命名为 `mip::PublishingLicenseInfo` 并更新为包含丰富的字段，而不是原始序列化的字节。
+* `mip::PublishingLicenseInfo` 包含在分析发布许可证（PL）之后与 MIP 相关的数据。
+* 当应用程序通过 MIP 时，将引发 `mip::TemplateNotFoundError` 和 `mip::LabelNotFoundError` 无法识别的模板 ID 或标签 ID。
+* 通过 `AcquireToken()` 和 `mip::AuthDelegate::OAuth2Challenge()`的声明参数添加了对基于标签的条件性访问的支持。 尚未通过安全和合规中心门户公开此功能。
 
 
-## <a name="version-120"></a>Version 1.2.0
+## <a name="version-120"></a>版本1.2。0
 
-**Release date**: April 15, 2019
+**发布日期**：2019年4月15日
 
 ### <a name="new-features"></a>新功能
 
- - Telemetry component now uses same HTTP stack as the rest of MIP, even if client application has overridden it with HttpDelegate.
- - Client applications can control the threading behavior of async tasks by overriding TaskDispatcherDelegate in Profiles.
- - RPMSG encryption now in preview.
- - Align File/Policy SDK exception handling behavior with Protection SDK:
-    - ProxyAuthError thrown by all SDKs if a proxy is configured to require authentication.
-    - NoAuthTokenError thrown by all SDKs if empty auth token is provided by application's implementation of mip::AuthDelegate::AcquireOAuth2Token.
- - Improved HTTP caching for Policy SDK reduces # of required HTTP calls by half..
- - Richer logs/audit/telemetry for improved failure detection and debugging.
- - Support for external/foreign labels to facilitate migration to AIP labels.
- - Enabled support for 3rd-party applications to download sensitivity types from SCC.
- - More telemetry settings are exposed and configurable (caching/threading behavior, etc.).
+ - 遥测组件现在使用与 MIP 的其余部分相同的 HTTP stack，即使客户端应用程序已使用 HttpDelegate 重写它也是如此。
+ - 客户端应用程序可以通过重写配置文件中的 TaskDispatcherDelegate 来控制异步任务的线程行为。
+ - .RPMSG 加密现为预览版。
+ - 与保护 SDK 协调文件/策略 SDK 异常处理行为：
+    - 如果代理配置为要求身份验证，则所有 Sdk 引发的 ProxyAuthError。
+    - 当应用程序的 mip：： AuthDelegate：： AcquireOAuth2Token 的实现提供空的身份验证令牌时，所有 Sdk 引发的 NoAuthTokenError。
+ - 改进了策略 SDK 的 HTTP 缓存，减少了一半的所需 HTTP 调用数。
+ - 更丰富的日志/审核/遥测，用于改进的故障检测和调试。
+ - 支持外部/外部标签，以便迁移到 AIP 标签。
+ - 支持第三方应用程序从 SCC 下载敏感类型。
+ - 公开更多遥测设置，并可配置（缓存/线程行为等）。
  
-### <a name="sdk-changes"></a>SDK Changes
+### <a name="sdk-changes"></a>SDK 更改
 
- - mip_common.dll split into mip_core.dll and mip_telemetry.dll.
- - Renamed mip::ContentState to mip::DataState to describe how an application interacts with data at a high level.
- - mip::AdhocProtectionRequiredError exception is thrown by FileHandler::SetLabel to notify an application that it must first apply ad-hoc protection before applying a label.
- - mip::OperationCancelledError exception is thrown when an operation has been cancelled (e.g. due to shutdown or HTTP cancellation).
- - New APIs:
-    - mip::ClassificationResult::GetSensitiveInformationDetections
-    - mip::FileEngine::GetLastPolicyFetchTime
-    - mip::FileEngine::GetDefaultSensitivityLabel
-    - mip::FileEngine::GetPolicyId
-    - mip::FileEngine::HasClassificationRules
-    - mip::FileEngine::Settings::SetPolicyCloudEndpointBaseUrl
-    - mip::FileHandler::GetDecryptedTemporaryFileAsync
-    - mip::FileHandler::Observer::OnGetDecryptedTemporaryFileFailure
-    - mip::FileHandler::Observer::OnGetDecryptedTemporaryFileSuccess
-    - mip::File/Policy/ProtectionProfile::SetTaskDispatcherDelegate
-    - mip::File/Policy/ProtectionProfile::SetTelemetryConfiguration
-    - mip::HttpRequest::GetBody returns std::vector<uint8_t> instead of std::string
-    - mip::HttpRequest::GetId
-    - mip::PolicyEngine::GetLastPolicyFetchTime
-    - mip::PolicyEngine::GetPolicyId
-    - mip::PolicyEngine::HasClassificationRules
-    - mip::PolicyEngine::Settings::SetCloudEndpointBaseUrl
-    - mip::ProtectionDescriptor::GetContentId
-    - (interface) mip::TaskDispatcherDelegate
+ - mip_common 拆分为 mip_core .dll 和 mip_telemetry。
+ - 将 mip：： ContentState 重命名为 mip：:D ataState 以说明应用程序如何与高级别的数据交互。
+ - mip：： AdhocProtectionRequiredError 异常由 FileHandler：： SetLabel 引发，用于通知应用程序它必须先应用即席保护，然后才能应用标签。
+ - 当取消了某个操作（例如由于关闭或 HTTP 取消操作）时，将引发 mip：： OperationCancelledError 异常。
+ - 新 Api：
+    - mip：： ClassificationResult：： GetSensitiveInformationDetections
+    - mip：： FileEngine：： GetLastPolicyFetchTime
+    - mip：： FileEngine：： GetDefaultSensitivityLabel
+    - mip：： FileEngine：： GetPolicyId
+    - mip：： FileEngine：： HasClassificationRules
+    - mip：： FileEngine：： Settings：： SetPolicyCloudEndpointBaseUrl
+    - mip：： FileHandler：： GetDecryptedTemporaryFileAsync
+    - mip：： FileHandler：： Observer：： OnGetDecryptedTemporaryFileFailure
+    - mip：： FileHandler：： Observer：： OnGetDecryptedTemporaryFileSuccess
+    - mip：： File/Policy/ProtectionProfile：： SetTaskDispatcherDelegate
+    - mip：： File/Policy/ProtectionProfile：： SetTelemetryConfiguration
+    - mip：： HttpRequest：： GetBody 返回 std：： vector < uint8_t > 而不是 std：： string
+    - mip：： HttpRequest：： GetId
+    - mip：:P olicyEngine：： GetLastPolicyFetchTime
+    - mip：:P olicyEngine：： GetPolicyId
+    - mip：:P olicyEngine：： HasClassificationRules
+    - mip：:P olicyEngine：： Settings：： SetCloudEndpointBaseUrl
+    - mip：:P rotectionDescriptor：： GetContentId
+    - （接口） mip：： TaskDispatcherDelegate
  
-### <a name="new-requirements"></a>New Requirements
- - mip::ReleaseAllResources must be called prior to process termination (after clearing references to all Profiles, Engines, and Handlers)
- - (interface) mip::ExecutionState::GetClassificationResults return type and "classificationIds" parameter has changed
- - (interface) mip::FileExecutionState::GetAuditMetadata can be implemented by applications to specify detailed information to surface to a tenant admin's audit dashboard (e.g. sender, recipients, last modified, etc.)
- - (interface) mip::FileExecutionState::GetClassificationResults return type has changed, and it now requires a FileHandler parameter
- - (interface) mip::FileExecutionState::GetDataState should be implemented by applications to specify how an application is interacting with contentIdentifier
- - (interface) mip::HttpDelegate interface requires 'CancelOperation' and 'CancelAllOperations' methods
- - (interface) mip::HttpDelegate interface 'Send' and 'SendAsync' return mip::HttpOperation instead of mip::HttpResponse
- - (interface) mip::HttpResponse::GetBody returns std::vector<uint8_t> instead of std::string
- - (interface) mip::HttpResponse interface requires 'GetId' method implementation
- - mip::ContentLabel::GetCreationTime return std::chrono::time_point instead of std::string
- - mip::FileEngine::CreateFileHandlerAsync no longer accepts 'contentIdentifier' parameter
- - mip::PolicyHandler::NotifyCommitedActions renamed to mip::PolicyHandler::NotifyCommittedActions
+### <a name="new-requirements"></a>新要求
+ - 必须在处理终止之前调用 mip：： ReleaseAllResources （清除对所有配置文件、引擎和处理程序的引用后）
+ - （interface） mip：： Executionstate&：： GetClassificationResults 返回类型，而 "classificationIds" 参数已更改
+ - （接口） mip：： FileExecutionState：： GetAuditMetadata 可以由应用程序实现，以指定详细信息以与租户管理员的审核仪表板（例如发件人、收件人、上次修改时间等）进行呈现。
+ - （接口） mip：： FileExecutionState：： GetClassificationResults 返回类型已更改，它现在需要 FileHandler 参数
+ - （接口） mip：： FileExecutionState：： GetDataState 应由应用程序实现，以指定应用程序如何与 contentIdentifier 交互
+ - （接口） mip：： HttpDelegate 接口需要 "CancelOperation" 和 "CancelAllOperations" 方法
+ - （接口） mip：： HttpDelegate 接口 "Send" 和 "SendAsync" 返回 mip：： HttpOperation，而不是 mip：： Httpresponse.cache
+ - （接口） mip：： Httpresponse.cache：： GetBody 返回 std：： vector < uint8_t > 而不是 std：： string
+ - （接口） mip：： Httpresponse.cache 接口需要 "GetId" 方法实现
+ - mip：： ContentLabel：： GetCreationTime 返回 std：： chrono：： time_point 而不是 std：： string
+ - mip：： FileEngine：： CreateFileHandlerAsync 不再接受 "contentIdentifier" 参数
+ - mip：:P olicyHandler：： NotifyCommitedActions 重命名为 mip：:P olicyHandler：： NotifyCommittedActions
 
 
-## <a name="version-110"></a>Version 1.1.0
+## <a name="version-110"></a>版本1.1。0
 
-**Release date**: January 15, 2019
+**发布日期**：2019年1月15日
 
-This version introduces support for the following platforms:
+此版本引入了对以下平台的支持：
 
   - .NET
-  - iOS SDK (Policy API)
-  - Android SDK (Policy API and Protection API)
+  - iOS SDK （策略 API）
+  - Android SDK （策略 API 和保护 API）
 
 ### <a name="new-features"></a>新功能
 
-- ADRMS support
-- Protection API operations are truly asynchronous (on Win32), allowing for simultaneous non-blocking encrypt/decrypt operations
-  - Application callbacks (AuthDelegate, HTTPDelegate, etc.) may now be invoked on -any- background thread
-- Custom label properties set by IT administrators can now be read via mip::Label::GetCustomSettings
-- Serialized publishing license can now be retrieved directly from a file without any HTTP operations via mip::FileHandler::GetSerializedPublishingLicense
-- Applications are notified whether an HTTP operation is required to complete the creation of a mip::FileEngine/mip::PolicyEngine via mip::FileProfile::Observer::OnAddPolicyEngineStarting/mip::PolicyProfile::Observer::OnAddEngineStarting
-- Detection of whether protected content has an expiration date or not has been simplified with convenience method mip::ProtectionDescriptor::DoesContentExpire
-- Classification:
-  - Sensitivity types (regex expressions for CC#'s, passport #'s, etc.) can be acquired from SCC service
-    - Enable feature by setting mip::FileEngine::Settings/mip::PolicyEngine::Settings flag
-    - Read types via mip::FileEngine::ListSensitivityTypes/mip::PolicyEngine::ListSensitivityTypes
-  - Classification results from external document scanner utilities can be fed to MIP to drive recommended/required labels based on document content
-    - Pass results to MIP via mip::FileExecutionState::GetClassificationResults/mip::ExecutionState::GetClassificationResults
-    - mip::ApplyLabelAction and mip::RecommendLabelAction can be returned by mip::PolicyEngine::ComputeActions when classification results match a policy rule indicating required/recommended labels
+- ADRMS 支持
+- 保护 API 操作真正是异步的（在 Win32 上），允许同时进行非阻塞加密/解密操作
+  - 现在可以在任何后台线程上调用应用程序回调（AuthDelegate、HTTPDelegate 等）
+- IT 管理员设置的自定义标签属性现在可以通过 mip：： Label：： GetCustomSettings 进行读取
+- 现在可以直接从文件中检索序列化发布许可证，无需通过 mip：： FileHandler：： GetSerializedPublishingLicense 进行任何 HTTP 操作
+- 当完成通过 mip：： FileProfile：：:P FileEngine olicyEngine via mip：：：： Observer：： OnAddPolicyEngineStarting/mip：:P olicyProfile：： Observer：： OnAddEngineStarting 创建 mip：：：：时，将通知应用程序是否需要 HTTP 操作
+- 检测到受保护的内容是否有过期日期，或未使用便利方法 mip 进行简化：:P rotectionDescriptor：:D oesContentExpire
+- 分类
+  - 可从 SCC 服务获取敏感度类型（用于 CC #、passport # 等的正则表达式）
+    - 通过设置 mip：： FileEngine：： Settings/mip：:P olicyEngine：： Settings 标志来启用功能
+    - 通过 mip：： FileEngine：： ListSensitivityTypes/mip：:P olicyEngine：： ListSensitivityTypes 读取类型
+  - 可以将外部文档扫描程序实用工具的分类结果送入到 MIP，以根据文档内容来驱动推荐/必需的标签
+    - 通过 mip：： FileExecutionState：： GetClassificationResults/MIP：： Executionstate&：： GetClassificationResults 将结果传递给 MIP
+    - 当分类结果与指示必需/推荐标签的策略规则匹配时，mip：： ApplyLabelAction 和 mip：： RecommendLabelAction 可以由 mip：:P olicyEngine：： ComputeActions 返回
 
-### <a name="new-requirements"></a>New Requirements 
+### <a name="new-requirements"></a>新要求 
 
-  - Enforced population of ID/name/version fields mip::ApplicationInfo when creating mip::FileProfile, mip::PolicyProfile, and mip::ProtectionProfile
-  - Applications must implement new mip::FileExecutionState interface when creating mip::FileHandlers
+  - 已强制填充 ID/名称/版本字段 mip：： ApplicationInfo 创建 mip：： FileProfile、mip：:P olicyProfile 和 mip：:P rotectionProfile
+  - 创建 mip：： FileHandlers 时，应用程序必须实现新的 mip：： FileExecutionState 接口
   
-### <a name="new-exceptions"></a>New Exceptions 
+### <a name="new-exceptions"></a>新异常 
 
-  - mip::NoAuthTokenError thrown if application's AuthDelegate returns an empty token (due to cancellation)
-    - Applies to creation of:
+  - mip：： NoAuthTokenError 在应用程序的 AuthDelegate 返回空标记时引发（因为取消）
+    - 适用于创建：
       - mip::FileEngine
       - mip::FileHandler
       - mip::PolicyEngine
       - mip::ProtectionHandler
-  - mip::NoPolicyError thrown if tenant isn't configured for labels
-    - Applies to creation of:
+  - 如果未为标签配置租户，则引发 mip：： NoPolicyError
+    - 适用于创建：
       - mip::FileEngine
       - mip::PolicyEngine
-  - mip::ServiceDisabledError thrown if RMS service is disabled for a specific user/device/platform/tenant
-    - Applies to creation of:
+  - 如果为特定用户/设备/平台/租户禁用了 RMS 服务，则引发 mip：： ServiceDisabledError
+    - 适用于创建：
       - mip::FileHandler
       - mip::ProtectionHandler
-  - mip::NoPermissionsError thrown if a user doesn't have rights to decrypt a document or the content is expired
-    - Applies to creation of:
+  - 如果用户无权解密文档或内容已过期，则引发 mip：： NoPermissionsError
+    - 适用于创建：
       - mip::FileHandler
       - mip::ProtectionHandler
 
 ## <a name="next-steps"></a>后续步骤
 
-- See [MIP SDK FAQs and issues](faqs-known-issues.md) for information on supported platforms and more.
-- See [MIP SDK setup and configuration](setup-configure-mip.md) for information on how to get started with the MIP SDK.
+- 有关支持的平台等的信息，请参阅[MIP SDK faq 和问题](faqs-known-issues.md)。
+- 有关如何开始利用 MIP SDK 的信息，请参阅[MIP sdk 设置和配置](setup-configure-mip.md)。
