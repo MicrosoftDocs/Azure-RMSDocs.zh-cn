@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 00ad46e033116b1a39421cbfbc04a316ee2d7da7
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 7eb4b4223f9fb8c53aec3ebe341384001175feda
+ms.sourcegitcommit: bc45a127fc4d5871f6e7b3bba8774bcfb194397a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561179"
+ms.lasthandoff: 11/29/2019
+ms.locfileid: "74661832"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端进行分类和保护
 
@@ -91,9 +91,7 @@ ms.locfileid: "73561179"
 
 通过电子邮件共享 Office 文档时，可将文档附加到所保护的电子邮件中，应用到此电子邮件的相同限制会自动保护此文档。 
 
-但是，你可能需要先保护文档，然后将其附加到电子邮件。 如果电子邮件中包含敏感信息，也需要保护电子邮件。 在将文档附加到电子邮件之前保护文档的好处：
-
-- 可以对文档应用不同于电子邮件的权限。
+但是，你可能需要先保护文档，然后将其附加到电子邮件。 如果电子邮件中包含敏感信息，也需要保护电子邮件。 在将文档附加到电子邮件之前保护文档的好处是，您可以对文档应用不同于电子邮件的权限。
 
 ## <a name="using-file-explorer-to-classify-and-protect-files"></a>使用文件资源管理器对文件进行分类和保护
 
