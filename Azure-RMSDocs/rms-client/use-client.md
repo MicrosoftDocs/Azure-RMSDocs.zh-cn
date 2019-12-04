@@ -4,7 +4,7 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/01/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: fdc74c7c1366afe17c6c7b6ac02ec63c973b0bce
-ms.sourcegitcommit: 488a941642f82e49503b4c2c4216a003be4db054
+ms.openlocfilehash: a7273f3ebb8a467d08e5897e0684b2ec2a3ffee2
+ms.sourcegitcommit: 1d89fb1c773c198c28b08230855d01d72f140dc0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2019
-ms.locfileid: "74666831"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780909"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -162,8 +162,6 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 ### <a name="features-not-planned-to-be-in-the-azure-information-protection-unified-labeling-client"></a>未计划在 Azure 信息保护统一标签客户端中的功能
 
 尽管 Azure 信息保护的统一标签客户端仍处于开发阶段，但当前未计划在未来版本中为统一标签客户端提供以下功能和行为差异： 
-
-- 通过手动策略文件管理为断开连接的计算机支持 Office 应用
 
 - 自定义权限是用户可在 Office 应用程序中选择的单独选项： Word、Excel 和 PowerPoint
 
