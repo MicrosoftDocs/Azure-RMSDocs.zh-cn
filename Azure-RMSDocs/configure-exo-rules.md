@@ -13,10 +13,10 @@ ms.reviewer: shakella
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 0e07754dd7b8197883ab7a71fbe48e4cb142534c
-ms.sourcegitcommit: 8eb7f9766d37cfdb4ccec642142200c41bb0b9d6
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73750486"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>配置 Azure 信息保护标签的 Exchange Online 邮件流规则

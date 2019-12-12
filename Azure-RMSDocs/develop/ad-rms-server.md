@@ -15,13 +15,13 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: b396d65b821f258d08e867bad8331b8603d8ccb9
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68788638"
 ---
-# <a name="server"></a>Server
+# <a name="server"></a>Server (服务器)
 
 本主题介绍适用于 Azure 和 Windows Server 的 RMS 服务器的用途和功能。
 
@@ -38,7 +38,7 @@ ms.locfileid: "68788638"
 |---------|-------------|
 | Administration | 承载使你可以管理 RMS 的管理网站。 该服务在根认证服务器和授权服务器上运行。 可以使用 Active Directory Rights Management Services 脚本 API 来编写管理脚本。|
 | 帐户认证 |创建在 RMS 证书层次结构中标识计算机的计算机证书以及将用户与特定计算机关联的权限帐户证书。 有关详细信息，请参“阅激活计算机”和“激活用户”。<p><p>此服务在根认证服务器上运行。 |
-|许可 | 发布*最终用户许可*。 该服务在根认证服务器和授权服务器上运行。|
+|授权 | 发布*最终用户许可*。 该服务在根认证服务器和授权服务器上运行。|
 |发布 | 创建*颁发许可证*，用于定义可在最终用户许可中枚举的策略。 有关详细信息，请参阅[创建颁发许可证](https://msdn.microsoft.com/library/Aa362355)。<p><p>该服务在根认证服务器和授权服务器上运行。|
 |预认证 | 使服务器可以代表用户请求*权限帐户证书*。 该服务在根认证服务器和授权服务器上运行。|
 |服务定位器 | 向 Active Directory 提供帐户认证、授权和发布服务的 URL，以便它们能被 RMS 客户端发现。 该服务在根认证服务器和授权服务器上运行。|

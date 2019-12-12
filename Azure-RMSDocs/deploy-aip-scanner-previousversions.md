@@ -4,7 +4,7 @@ description: 早于当前正式发行版的 Azure 信息保护扫描程序版本
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 08/28/2019
+ms.date: 11/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e5f0efad328a4c3cd479895e2324538e45a9b922
-ms.sourcegitcommit: d9442efe61b55bb158bd50ee69873c028234842d
+ms.openlocfilehash: f05d2ab1050f1a14a60debe083bec1e670e3cb7a
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297599"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74934936"
 ---
 # <a name="deploying-previous-versions-of-the-azure-information-protection-scanner"></a>部署 Azure 信息保护扫描程序的以前版本
 
@@ -60,7 +60,7 @@ ms.locfileid: "74297599"
 ## <a name="prerequisites-for-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序的先决条件
 安装 Azure 信息保护扫描程序之前，请确保已满足以下要求。
 
-|要求|详细信息|
+|要求|更多信息|
 |---------------|--------------------|
 |运行扫描程序服务的 Windows Server 计算机：<br /><br />- 4 核处理器<br /><br />- 8 GB RAM<br /><br />- 临时文件 10GB 可用空间（平均）|Windows Server 2019、Windows Server 2016 或 Windows Server 2012 R2。 <br /><br />**注意**：对于非生产环境中的测试或评估目的，可以使用[Azure 信息保护客户端支持](requirements.md#client-devices)的 Windows 客户端操作系统。<br /><br />此计算机可以是物理或虚拟计算机，需拥有快速可靠的网络，可连接到要进行扫描的数据存储。<br /><br /> 扫描程序需要足够的磁盘空间，才能为其扫描的每个文件（每个核心四个文件）创建临时文件。 借助建议的 10GB 磁盘空间，4 核处理器可以扫描 16 个文件，每个文件的大小为 625MB。 <br /><br />如果由于组织策略而无法建立 internet 连接，请参阅[部署带有备用配置的扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。 否则，请确保此计算机具有 internet 连接，允许通过 HTTPS （端口443）上的以下 Url：<br /> \*.aadrm.com <br /> \*.azurerms.com<br /> \*.informationprotection.azure.com <br /> informationprotection.hosting.portal.azure.net <br /> \*.aria.microsoft.com|
 |运行扫描程序服务的服务帐户 |除了在 Windows Server 计算机上运行扫描程序服务外，此 Windows 帐户还对 Azure AD 进行身份验证，并下载 Azure 信息保护策略。 此帐户必须是同步到 Azure AD 的 Active Directory 帐户。 如果由于组织策略而无法同步此帐户，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />此服务帐户有以下要求：<br /><br />- 在本地登录的用户权限分配。 此权限是安装和配置扫描程序所必需的，但不可用于操作。 必须将此权限授予服务帐户，但当确认扫描程序可发现、保护文件并对其进行分类后，可删除此权限。 如果由于组织策略的限制而甚至无法在短时间内授予此权限，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />- 作为服务登录的用户权限分配。 扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。 <br /><br />-对数据存储库的权限：对于本地 SharePoint 上的数据存储库，如果为站点选择了 "**添加" 和 "自定义" 页**，则始终授予**编辑**权限，或授予**设计**权限。 对于其他数据存储库，请授予 "**读取**" 和 "**写入**" 权限以扫描文件，然后将分类和保护应用到满足 Azure 信息保护策略中的条件的文件。 若要仅在发现模式下运行扫描程序的其他数据存储库，请**阅读**权限。<br /><br />- 对于可重新保护或移除保护的标签：要确保扫描程序始终能够访问受保护的文件，请将此帐户设置为 Azure Rights Management 服务的[超级用户](configure-super-users.md)，并确保已启用超级用户功能。 要详细了解应用保护的帐户要求，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。 此外，如果对分阶段部署实现了[载入控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，还请确保已配置的载入控件中包含此帐户。|
@@ -160,7 +160,7 @@ ms.locfileid: "74297599"
     
     系统提示时，请提供扫描程序服务帐户的凭据 (\<域\用户名>) 和密码。
 
-4. 使用“管理工具” **“服务”验证服务现在是否已安装** > 。 
+4. 使用“管理工具” > “服务”验证服务现在是否已安装。 
     
     已安装的服务被命名为 Azure信息保护扫描程序，并被配置为使用你创建的扫描程序服务帐户运行。
 

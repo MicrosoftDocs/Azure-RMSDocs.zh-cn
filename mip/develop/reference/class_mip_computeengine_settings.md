@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: bc27cae6020034029712e96fa5ae500d7afebf9b
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73559372"
 ---
 # <a name="class-mipcomputeenginesettings"></a>类 mip：： ComputeEngine：： Settings 
@@ -18,7 +18,7 @@ ms.locfileid: "73559372"
 ## <a name="summary"></a>“摘要”
  成員                        | 说明                                
 --------------------------------|---------------------------------------------
-公共设置（const ApplicationInfo & applicationInfo，const std：： shared_ptr\<TelemetryDelegate\>& telemetryDelegate，const std：： shared_ptr\<LoggerDelegate\>& loggerDelegate，const std：： string& hostName，const std：： vector\<std：:p air\<std：： string，std：： string\>\>& customProperties，const std：： vector\<LabelFilterType\>& labelFilter）  | 尚未记录。
+公共设置（const ApplicationInfo & applicationInfo，const std：： shared_ptr\<TelemetryDelegate\>& telemetryDelegate，const std：： shared_ptr\<LoggerDelegate\>& loggerDelegate，const std：： string & hostName，const std：： vector\<std：:p air\<std：： string，std：： string\>\>& customProperties，const std：： vector\<LabelFilterType\>& labelFilter）  | 尚未记录。
 public const ApplicationInfo& GetApplicationInfo() const  | 尚未记录。
 public std：： shared_ptr\<TelemetryDelegate\> GetTelemetryDelegate （） const  | 尚未记录。
 public std：： shared_ptr\<LoggerDelegate\> GetLoggerDelegate （） const  | 尚未记录。

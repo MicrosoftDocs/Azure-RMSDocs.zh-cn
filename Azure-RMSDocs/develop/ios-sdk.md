@@ -15,10 +15,10 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: c69e34cce0241a289d75593e4a8a9500f88be433
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68791437"
 ---
 # <a name="ios-and-os-x-setup"></a>iOS 和 OS X 安装程序
@@ -35,7 +35,7 @@ ms.locfileid: "68791437"
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>必备条件
 
 我们建议在开发系统上安装以下软件：
 
@@ -85,7 +85,7 @@ ms.locfileid: "68791437"
     ![添加资源包](../media/iOS-add-resource-bundle-02a.png)
 
 -   按复制框架时的方式一样，选择“为添加的所有文件夹创建组”选项按钮，然后清除“将项目复制到目标组的文件夹(若必需)”复选框。
--   SDK 依赖于其他框架，包括：CoreData、MessageUI、SystemConfiguration、Libresolv 和 Security。 若要添加这些框架，请导航至目标的“摘要”面板的“已链接框架和库”部分，然后展开此部分以添加框架。
+-   SDK 依赖于其他框架，包括：**CoreData** **MessageUI** **SystemConfiguration** **Libresolv** 和 **Security**。 若要添加这些框架，请导航至目标的“摘要”面板的“已链接框架和库”部分，然后展开此部分以添加框架。
 
     **UIKit** 和 **Foundation** 框架是必需的，且通常默认存在。
 
@@ -101,7 +101,7 @@ ms.locfileid: "68791437"
 
 -   你现已准备就绪，可自行创建新的 iOS/OS X 应用。
 
-### <a name="see-also"></a>请参阅
+### <a name="see-also"></a>另請參閱
 
 * [入门](get-started.md)
 

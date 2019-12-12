@@ -8,10 +8,10 @@ ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: mbaldwin
 ms.openlocfilehash: fc25c35c1aea9690c0ec696a41c2f7346b4d6b8a
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69886002"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-profile-concepts"></a>Microsoft 信息保护 SDK - 保护 API 配置文件概念
@@ -24,11 +24,11 @@ ms.locfileid: "69886002"
 
 ### <a name="protectionprofilesettings-parameters"></a>ProtectionProfile::Settings Parameters
 
-- `std::shared_ptr<MipContext>`：已初始化为存储应用程序信息、状态路径等的对象。`mip::MipContext`
-- `mip::CacheStorageType`：定义如何存储状态:在内存、磁盘上, 或磁盘上的和已加密。
-- `std::shared_ptr<mip::AuthDelegate>`：类`mip::AuthDelegate`的共享指针。
+- `std::shared_ptr<MipContext>`：已初始化为存储应用程序信息、状态路径等的 `mip::MipContext` 对象。
+- `mip::CacheStorageType`：定义如何存储状态：在内存、磁盘上，或磁盘上的和已加密。
+- `std::shared_ptr<mip::AuthDelegate>`：类 `mip::AuthDelegate` 的共享指针。
 - `std::shared_ptr<mip::ConsentDelegate>`：类[`mip::ConsentDelegate`](reference/class_mip_consentdelegate.md)的共享指针。
-- `std::shared_ptr<mip::ProtectionProfile::Observer> observer`：`Observer`指向配置文件实现的共享指针 (在[`PolicyProfile`](reference/class_mip_policyprofile_observer.md)、 [`ProtectionProfile`](reference/class_mip_protectionprofile_observer.md)和[`FileProfile`](reference/class_mip_fileprofile_observer.md)中)。
+- `std::shared_ptr<mip::ProtectionProfile::Observer> observer`：指向配置文件 `Observer` 实现（在[`PolicyProfile`](reference/class_mip_policyprofile_observer.md)、 [`ProtectionProfile`](reference/class_mip_protectionprofile_observer.md)和[`FileProfile`](reference/class_mip_fileprofile_observer.md)中）的共享指针。
 
 下面的两个示例展示如何使用本地存储作为状态存储来创建 profileSettings 对象，以及仅在内存中创建该对象。 两者都假设已经创建了 `authDelegateImpl` 对象。
 

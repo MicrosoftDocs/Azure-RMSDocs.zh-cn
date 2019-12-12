@@ -4,19 +4,19 @@ description: 当文档或电子邮件中分配一个标签时，可以选择几�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/24/2019
+ms.date: 11/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 982bc822b43d98f1019dd9f6bae53ace74068a4c
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 472bf634c1eb43e000b26fa1bb11387442ff91c1
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559721"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935038"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -61,13 +61,13 @@ ms.locfileid: "73559721"
 
 - 当使用文件资源管理器、PowerShell 或 Azure 信息保护扫描程序标记文档时，不会立即应用视觉标记，但在 Office 应用中打开文档以及首次保存文档时会通过 Azure 信息保护客户端应用视觉标记。
     
-    当你对保存在 SharePoint Online、OneDrive 或 OneDrive for Business 中的文件使用 "[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)" 时，不会应用视觉对象标记，除非你将[高级客户端设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)配置为启用分类，使其在后台连续运行。 
+    当你对保存在 SharePoint Online、OneDrive 或 OneDrive for Business 中的文件使用 "[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)" 时，不会应用可视标记，除非你将 "[高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)配置为启用分类以在后台连续运行。 
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>配置标签的视觉标记
 
 请按照以下说明来配置标签的可视标记。
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护**" 窗格。 
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”窗格。 
     
     例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
 
@@ -145,7 +145,7 @@ Calibri 是页眉、页脚和水印文字的默认字体。 如果指定替代�
 
 可从可用颜色列表中进行选择，或输入颜色的红绿蓝 (RGB) 组成的十六进制三元色代码来指定自定义颜色。 例如， **#40e0d0**为青绿色的 RGB 十六进制值。 
 
-如果需要这些代码的参考，可从 MSDN web 文档的 " [\<color >](https://developer.mozilla.org/docs/Web/CSS/color_value) " 页中找到一个有用的表格。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
+如果需要对这些代码进行引用，可从 MSDN web 文档的 " [\<颜色" >](https://developer.mozilla.org/docs/Web/CSS/color_value)页中找到一个有用的表格。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 
 ## <a name="next-steps"></a>后续步骤
 

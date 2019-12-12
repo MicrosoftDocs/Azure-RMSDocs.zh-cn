@@ -4,7 +4,7 @@ description: 有关决定不再使用 Azure 信息保护中基于云的保护服
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/03/2019
+ms.date: 11/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4af20afcbf89ce25bc758299e42e794b3ee6b908
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 9086c5d59f815e4bcc4e29cc4b90747e17b5cb65
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559701"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74934902"
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>解除 Azure 信息保护授权并停用对 Azure 信息保护的保护
 
@@ -74,7 +74,7 @@ ms.locfileid: "73559701"
 
 #### <a name="to-deactivate-rights-management-from-the-azure-portal"></a>从 Azure 门户停用 Rights Management
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护**" 窗格。
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”窗格。
 
     例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
 

@@ -15,10 +15,10 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: cab28423de31e9d8fe3351f9c20d1c06275fa4c3
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68790731"
 ---
 # <a name="windows-store-setup"></a>Windows 应用商店安装程序
@@ -32,7 +32,7 @@ Windows Store 应用程序可以使用 Microsoft Rights Management SDK 4.2 通�
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>必备条件
 
 
 开发系统上必须安装以下软件：
@@ -52,8 +52,8 @@ Windows Store 应用程序可以使用 Microsoft Rights Management SDK 4.2 通�
 ## <a name="configuring-your-development-environment"></a>配置开发环境
 
 
--   打开 Visual Studio。
--   依次单击“文件”、“新建”和“项目”。
+-   打开 Visual Studio
+-   依次单击 **“文件”** 、 **“新建”** 和 **“项目”** 。
 -   在“新建项目”对话框中，单击“Visual C”\#，选择“空白应用(Windows)”，然后单击“确定”。
 
     ![新建项目](../media/winrtsetup-newproj.png)
@@ -71,7 +71,7 @@ Windows Store 应用程序可以使用 Microsoft Rights Management SDK 4.2 通�
 
 你现在已准备就绪，可创建新 Windows 应用商店应用。
 
-### <a name="see-also"></a>请参阅
+### <a name="see-also"></a>另請參閱
 
 [入门](get-started.md)
 

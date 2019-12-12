@@ -15,10 +15,10 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: b0a888a87da2dcfdd24703c821abe36c0135ca7f
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68791050"
 ---
 # <a name="how-to-use-document-tracking"></a>如何：使用文档跟踪

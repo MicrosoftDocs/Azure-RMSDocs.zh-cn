@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: fbe8b2edd8e9ee8d013134e66c39db8fbbee4dd4
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560206"
 ---
 # <a name="class-mipfileprofileobserver"></a>class mip::FileProfile::Observer 
@@ -21,7 +21,7 @@ ms.locfileid: "73560206"
  成員                        | 说明                                
 --------------------------------|---------------------------------------------
 public virtual ~Observer()  | 尚未记录。
-public virtual void OnLoadSuccess （const std：： shared_ptr\<mip：： FileProfile\>& profile，const std：： shared_ptr\<void\>& 上下文）  |  在成功加载配置文件时调用。
+公共虚拟 void OnLoadSuccess （const std：： shared_ptr\<mip：： FileProfile\>& profile，const std：： shared_ptr\<void\>& 上下文）  |  在成功加载配置文件时调用。
 public virtual void OnLoadFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  在加载配置文件引发错误时调用。
 public virtual void OnListEnginesSuccess （const std：： vector\<std：： string\>& engineIds，const std：： shared_ptr\<void\>& 上下文）  |  在成功生成引擎列表时调用。
 public virtual void OnListEnginesFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  在列出引擎引发错误时调用。

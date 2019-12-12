@@ -15,16 +15,16 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: 93524278a914ce38add95eed18f2f192f4dd684b
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68792425"
 ---
 # <a name="how-to-enable-error-and-performance-logging"></a>如何：启用错误和性能日志记录
 Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性能日志上传。
 
-## <a name="overview"></a>概述 ##
+## <a name="overview"></a>“概述” ##
 通过启用将自动诊断、性能和遥测日志记录数据上传到 Microsoft 的功能，可以改进用户的体验并进行故障排除。 
 
 > [!IMPORTANT] 
@@ -33,7 +33,7 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
 > [!NOTE]
 > 例如，下面是 Microsoft 用于日志记录通知的标准消息： 
 >
-> *启用错误和性能日志记录即表示同意向 Microsoft 发送错误和性能数据。Microsoft 会通过 Internet 收集错误和性能数据（统称“数据”）。Microsoft 利用此数据来保证并改进 Microsoft 产品和服务的质量、安全性和完整性。例如，会分析性能和可靠性（如使用哪些功能、功能的响应速度、设备性能、用户界面交互和遇到的任何产品问题）。数据还包括当前运行的软件以及 IP 地址的配置信息。*  
+> *通过启用错误和性能日志记录，你同意将错误和性能数据发送给 Microsoft。 Microsoft 将通过 internet 收集错误和性能数据（"数据"）。 Microsoft 使用此数据提供并改进 Microsoft 产品和服务的质量、安全性和完整性。 例如，我们会分析性能和可靠性，如您使用哪些功能、功能响应的速度、设备性能、用户界面交互以及您对产品所遇到的任何问题。 数据还将包含有关软件配置的信息（如当前正在运行的软件）以及 IP 地址。*  
 
 你将通过两个属性管理日志记录控件。
 

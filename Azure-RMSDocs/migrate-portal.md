@@ -4,7 +4,7 @@ description: 概览 Azure 门户中的管理任务，这些任务过去在 Azure
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/03/2019
+ms.date: 11/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5018e69cf1798592d07b053eaeaccef234f71561
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: b4e4e093eacd7903a382ba779d0a4b5b7a2aa7ec
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559865"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935446"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>曾使用 Azure 经典门户执行的任务
 
@@ -57,7 +57,7 @@ Azure 门户中的新功能：
 
 - 可以将模板转换为标签，以便管理单个对象，而不是独立管理模板和标签。 有关说明，请参阅[将模板转换为标签](configure-policy-templates.md#to-convert-templates-to-labels)。
 
-- 对其他管理员角色的支持：尽管必须以全局管理员身份登录 Azure 经典门户才能配置 Azure Rights Management，但你可以使用其他许多管理角色登录到 Azure 门户来管理 Azure 信息保护这包括**符合性管理员**和**符合性数据管理员**。 "[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)" 部分包含支持的角色的完整列表。
+- 对其他管理员角色的支持：尽管必须以全局管理员身份登录到 Azure 经典门户才能配置 Azure Rights Management，但你可以登录到 Azure 门户，通过使用包含**符合性管理员**和**符合性数据管理员**的许多其他管理角色来管理 Azure 信息保护。 "[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)" 部分包含支持的角色的完整列表。
 
 用于创建和管理模板的 PowerShell cmdlet 以及用于激活或停用该服务的 PowerShell cmdlet 将继续受支持，不会更改。
 

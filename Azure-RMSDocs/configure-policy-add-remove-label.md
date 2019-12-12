@@ -4,19 +4,19 @@ description: 向所有用户的全局策略或子集用户的作用域内策略�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/17/2019
+ms.date: 11/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 7d6d35d5a1c560468845d0b04ae27e32dc40b671
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 2100304e6277e1cb3aefd46257df4aaca64156dc
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559283"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935089"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>向 Azure 信息保护策略添加标签或从中删除标签
 
@@ -36,7 +36,7 @@ ms.locfileid: "73559283"
 
 ## <a name="to-add-or-remove-a-label-to-or-from-a-policy"></a>若要向策略添加标签或从中删除标签
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护**" 窗格。
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”窗格。
     
     例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
 

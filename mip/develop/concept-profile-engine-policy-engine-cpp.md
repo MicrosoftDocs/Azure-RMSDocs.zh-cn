@@ -8,23 +8,23 @@ ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 5fac6b39cb3770748336fac7264134acf2627a02
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69886066"
 ---
 # <a name="microsoft-information-protection-sdk---policy-api-engine-concepts"></a>Microsoft 信息保护 SDK - 策略 API 引擎概念
 
 `mip::PolicyEngine` 实现了策略 API 可以执行的所有操作，但加载配置文件除外。
 
-## <a name="implementation-add-a-policy-engine"></a>部署添加策略引擎
+## <a name="implementation-add-a-policy-engine"></a>实现：添加策略引擎
 
-### <a name="implementation-create-policy-engine-settings"></a>部署创建策略引擎设置
+### <a name="implementation-create-policy-engine-settings"></a>实现：创建策略引擎设置
 
 与配置文件类似，引擎也需要设置对象 `mip::PolicyEngine::Settings`。 此对象存储唯一引擎标识符、可用于调试或遥测的可自定义客户端数据以及（可选）区域设置。
 
-在这里, 我们`FileEngine::Settings`将使用应用程序用户的标识创建一个名为*engineSettings*的对象:
+在这里，我们将使用应用程序用户的身份创建一个名为*engineSettings*的 `FileEngine::Settings` 对象：
 
 ```cpp
 PolicyEngine::Settings engineSettings(
@@ -34,7 +34,7 @@ PolicyEngine::Settings engineSettings(
   false);                   // Load sensitive information types for driving classification.
 ```
 
-也有效地提供自定义引擎 ID:
+也有效地提供自定义引擎 ID：
 
 ```cpp
 PolicyEngine::Settings engineSettings(
@@ -46,7 +46,7 @@ PolicyEngine::Settings engineSettings(
 
 作为最佳做法，第一个参数 **id** 应该允许引擎轻松连接到关联用户，最好是用户主体名称。
 
-### <a name="implementation-add-the-policy-engine"></a>部署添加策略引擎
+### <a name="implementation-add-the-policy-engine"></a>实现：添加策略引擎
 
 为了添加引擎，我们将返回用于加载配置文件的 future/promise 模式。 我们将使用 `mip::PolicyEngine`，而不是为 `mip::Profile` 创建 promise。
 
@@ -73,19 +73,19 @@ PolicyEngine::Settings engineSettings(
 
 上述代码的最终结果是我们成功地将经过身份验证的用户的引擎添加到配置文件中。
 
-## <a name="implementation-list-sensitivity-labels"></a>部署列出敏感度标签
+## <a name="implementation-list-sensitivity-labels"></a>实现：列出敏感度标签
 
 现在可以使用添加的引擎通过调用 `engine->ListSensitivityLabels()` 来列出经过身份验证的用户可用的所有敏感度标签。
 
 `ListSensitivityLabels()` 将从服务中提取特定用户的标签和标签属性列表。 结果存储在 `std::shared_ptr<mip::Label>` 的向量中。
 
-### <a name="implementation-listsensitivitylabels"></a>部署ListSensitivityLabels()
+### <a name="implementation-listsensitivitylabels"></a>实现：ListSensitivityLabels()
 
 ```cpp
 std::vector<shared_ptr<mip::Label>> labels = engine->ListSensitivityLabels();
 ```
 
-### <a name="implementation-print-the-labels"></a>部署打印标签
+### <a name="implementation-print-the-labels"></a>实现：打印标签
 
 ```cpp
 //Iterate through all labels in the vector

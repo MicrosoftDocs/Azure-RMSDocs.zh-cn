@@ -15,10 +15,10 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: 59aa02318a0c6d7ee5e9857bead4c79248546320
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68794115"
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>操作说明：安装和配置 RMS 服务器并用其进行测试
@@ -79,7 +79,7 @@ ms.locfileid: "68794115"
                 ServiceLocation
                   EnterpriseCertification
 
-   **值**：（默认）：[http|https]://RMSClusterName/_wmcs/Certification
+   **Value**: (Default): [**http|https**]://RMSClusterName/ **_wmcs/Certification**
 
 5. **EnterprisePublishing**
 
@@ -90,7 +90,7 @@ ms.locfileid: "68794115"
                 ServiceLocation
                   EnterprisePublishing
                   
-   **值**：（默认）：[http|https]://RMSClusterName/_wmcs/Licensing
+   **值**：（默认）：[**http|https**]://RMSClusterName/ **_wmcs/Licensing**
 
 > [!NOTE]
 > 默认情况下，这些项在注册表中不存在，必须创建。

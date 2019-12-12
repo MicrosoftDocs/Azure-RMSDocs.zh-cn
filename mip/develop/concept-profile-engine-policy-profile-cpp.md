@@ -8,10 +8,10 @@ ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 9b3b32464cae35560c74a05b28506ca60dc963d2
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69886056"
 ---
 # <a name="microsoft-information-protection-sdk---policy-api-profile-concepts"></a>Microsoft 信息保护 SDK - 策略 API 配置文件概念
@@ -22,16 +22,16 @@ ms.locfileid: "69886056"
 
 ## <a name="load-a-profile"></a>加载配置文件
 
-现在, 已定义`ProfileObserver`、和`AuthDelegateImpl` , 我们将使用它们来实例化`mip::PolicyProfile`。 `MipContext` 创建对象需要[`mip::PolicyProfile::Settings`](reference/class_mip_PolicyProfile_settings.md)和。`mip::MipContext` `mip::PolicyProfile`
+现在已定义 `MipContext`、`ProfileObserver`和 `AuthDelegateImpl`，我们将使用它们来实例化 `mip::PolicyProfile`。 创建 `mip::PolicyProfile` 对象需要[`mip::PolicyProfile::Settings`](reference/class_mip_PolicyProfile_settings.md)和 `mip::MipContext`。
 
 ### <a name="profilesettings-parameters"></a>Profile::Settings 参数
 
-`PolicyProfile::Settings`构造函数接受下面列出的四个参数:
+`PolicyProfile::Settings` 构造函数接受下面列出的四个参数：
 
-- `const std::shared_ptr<MipContext>`：已初始化为存储应用程序信息、状态路径等的对象。`mip::MipContext`
-- `mip::CacheStorageType`：定义如何存储状态:在内存、磁盘上, 或磁盘上的和已加密。 有关更多详细信息, 请参阅[缓存存储概念](concept-cache-storage.md)。
-- `std::shared_ptr<mip::AuthDelegate>`：类`mip::AuthDelegate`的共享指针。
-- `std::shared_ptr<mip::PolicyProfile::Observer> observer`：`Observer`指向配置文件实现的共享指针 (在[`PolicyProfile`](reference/class_mip_policyprofile_observer.md)、 [`ProtectionProfile`](reference/class_mip_protectionprofile_observer.md)和[`FileProfile`](reference/class_mip_fileprofile_observer.md)中)。
+- `const std::shared_ptr<MipContext>`：已初始化为存储应用程序信息、状态路径等的 `mip::MipContext` 对象。
+- `mip::CacheStorageType`：定义如何存储状态：在内存、磁盘上，或磁盘上的和已加密。 有关更多详细信息，请参阅[缓存存储概念](concept-cache-storage.md)。
+- `std::shared_ptr<mip::AuthDelegate>`：类 `mip::AuthDelegate` 的共享指针。
+- `std::shared_ptr<mip::PolicyProfile::Observer> observer`：指向配置文件 `Observer` 实现（在[`PolicyProfile`](reference/class_mip_policyprofile_observer.md)、 [`ProtectionProfile`](reference/class_mip_protectionprofile_observer.md)和[`FileProfile`](reference/class_mip_fileprofile_observer.md)中）的共享指针。
 
 下面的两个示例展示如何使用本地存储作为状态存储来创建 profileSettings 对象，以及仅在内存中创建该对象。 两者都假设已经创建了 `authDelegateImpl` 对象。
 

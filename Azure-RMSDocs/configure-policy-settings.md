@@ -12,10 +12,10 @@ ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 ms.subservice: aiplabels
 ms.custom: admin
 ms.openlocfilehash: c4a889c021d6a66a5cde7e071137d9f13dcc0ab1
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73559510"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
@@ -37,7 +37,7 @@ ms.locfileid: "73559510"
 
 ## <a name="to-configure-the-policy-settings"></a>配置策略设置
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护**" 窗格。
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”窗格。
     
     例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
 

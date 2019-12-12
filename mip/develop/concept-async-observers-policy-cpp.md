@@ -8,10 +8,10 @@ ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: mbaldwin
 ms.openlocfilehash: e8f2e2c775270f81489778ced852a7bb26b5ad1c
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "60175490"
 ---
 # <a name="microsoft-information-protection-sdk---policy-api-observers"></a>Microsoft 信息保护 SDK - 策略 API 观察程序
@@ -28,9 +28,9 @@ ms.locfileid: "60175490"
 
 在以下示例中，我们创建了一个派生自 `mip::Profile::Observer` 的 `ProfileObserver` 类。 已重写成员函数以使用整个示例中使用的 future/promise 模式。
 
-**注意**：以下示例仅部分实现，但不包括替代`mip::ProfileEngine`相关观察者。
+**注意**：以下示例仅部分实现，不包括 `mip::ProfileEngine` 相关观察程序的替代。
 
-### <a name="profileobserverh"></a>profile_observer.h
+### <a name="profile_observerh"></a>profile_observer.h
 
 在标头中，定义派生自 `mip::Profile::Observer` 的 `ProfileObserver`，然后替代每个成员函数。
 
@@ -44,7 +44,7 @@ ProfileObserver() { }
 };
 ```
 
-### <a name="profileobservercpp"></a>profile_observer.cpp
+### <a name="profile_observercpp"></a>profile_observer.cpp
 
 在实现中，我们定义了要为每个观察程序成员函数采取的操作。
 

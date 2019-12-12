@@ -15,13 +15,13 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: 6f36ef984a6d6d10ce06ae690c98153524a7d301
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68791471"
 ---
-# <a name="overview"></a>概述
+# <a name="overview"></a>“概述”
 
 Rights Management Services SDK 2.1 是一种信息保护技术，可帮助保护数字信息免遭未经授权的使用。 通过启用权限的应用程序，内容所有者将能够定义可以对内容进行打开、修改、打印、转发或执行其他操作的人员。
 
@@ -43,7 +43,7 @@ AD RMS 由 [服务器](ad-rms-server.md) 和 [客户端](ad-rms-client.md) 组�
 
 本部分中的其余主题将介绍 RMS 体系结构及其实现。
 
-## <a name="in-this-section"></a>本节内容
+## <a name="in-this-section"></a>本部分内容
 
 | 主题 | 描述 |
 |-------|-------------|

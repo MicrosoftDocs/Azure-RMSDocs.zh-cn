@@ -4,7 +4,7 @@ description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护�
 author: cabailey
 ms.author: cabailey
 manager: rkarlin
-ms.date: 11/25/2019
+ms.date: 12/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 24cf337ac84155485d11c3822f6207b11f5b04e5
-ms.sourcegitcommit: da251904c2506a07ea28a820b0f49e7ba7007a04
+ms.openlocfilehash: 31140c7591f2846090a73627fe1f146bc5609cef
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564492"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935021"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -44,7 +44,7 @@ ms.locfileid: "74564492"
 
 如果你在组织中使用管理员角色来委派管理，则可能需要对统一标签平台进行一些更改：
 
-统一标签平台不支持**Azure 信息保护管理员**（以前称为**信息保护管理员**）和**全局读取器**的[Azure AD 角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)。 如果你的组织中使用了其中任一管理角色来管理 Azure 信息保护，请将具有此角色的用户添加到**符合性管理员**、**符合性数据管理员**或**安全管理员**的 Azure AD 角色。 如果需要有关此步骤的帮助，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。 另外，还可以在 Azure AD 门户、Microsoft 365 安全中心和 Microsoft 365 合规中心分配这些角色。
+统一标签平台不支持**Azure 信息保护管理员**（以前称为**信息保护管理员**）的[Azure AD 角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)。 如果在组织中使用此管理角色来管理 Azure 信息保护，请将具有此角色的用户添加到**符合性管理员**、**符合性数据管理员**或**安全管理员**的 Azure AD 角色。 如果需要有关此步骤的帮助，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。 另外，还可以在 Azure AD 门户、Microsoft 365 安全中心和 Microsoft 365 合规中心分配这些角色。
 
 或者，若要使用角色，可以在管理中心为这些用户创建新角色组，然后向该组中添加“敏感度标签管理员”或“组织配置”角色。
 
@@ -160,19 +160,29 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 > [!NOTE]
 > 此选项处于预览阶段，可能会发生更改。
 
-迁移标签后，可以选择用于复制策略的选项。 如果选择此选项，策略的一次性副本及其[策略设置](configure-policy-settings.md)和任何[高级客户端设置](./rms-client/client-admin-guide-customizations.md#available-advanced-client-settings)将发送到管理标签的管理中心： Office 365 安全与合规中心、Microsoft 365 安全中心、Microsoft 365 符合性中心。
+迁移标签后，可以选择用于复制策略的选项。 如果选择此选项，策略的一次性副本及其[策略设置](configure-policy-settings.md)和任何[高级客户端设置](./rms-client/client-admin-guide-customizations.md#available-advanced-client-settings)将发送到管理标签的管理中心： Office 365 安全与合规中心、Microsoft 365 安全中心、Microsoft 365 符合性中心。 
+
+已成功复制策略及其设置和标签之后，会自动将其发布到分配到 Azure 门户中的策略的用户和组。 请注意，对于全局策略，这意味着所有用户。 如果尚未准备好在要发布的复制策略中迁移的标签，则在复制策略后，你可以从管理员标签中心中的标签策略删除标签。
 
 在 " **Azure 信息保护-统一标签**" 窗格中选择 "**复制策略（预览）** " 选项之前，请注意以下事项：
 
-- 你无法有选择地选择要复制的策略和设置。 复制所有策略（**全局**策略和所有作用域内策略），并复制支持的所有设置作为标签策略设置。 如果已具有同名的标签策略，则会使用 Azure 门户中的策略设置来覆盖它。
+- 在为租户激活统一标签之前，"**复制策略（预览版）** " 选项不可用。
+
+- 你无法有选择地选择要复制的策略和设置。 所有策略（**全局**策略和所有作用域内策略）会自动选择进行复制，并且会复制所有受支持的作为标签策略设置的设置。 如果已具有同名的标签策略，则会使用 Azure 门户中的策略设置来覆盖它。
 
 - 不会复制某些高级客户端设置，因为对于 Azure 信息保护统一标签客户端，这些设置支持作为*标签高级设置*，而不是策略设置。 可以通过[Office 365 安全与合规中心 PowerShell](./rms-client/clientv2-admin-guide-customizations.md#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)配置这些标签高级设置。 未复制的高级客户端设置：
     - [LabelbyCustomProperty](./rms-client/client-admin-guide-customizations.md#migrate-labels-from-secure-islands-and-other-labeling-solutions)
     - [LabelToSMIME](./rms-client/client-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
 
-- 不同于标签迁移（对标签的后续更改进行同步），"复制策略" 操作不会同步任何对策略或策略设置的后续更改。 在 Azure 门户中进行更改后，你可以重复 "复制策略" 操作，并且将再次覆盖任何现有策略及其设置。 或者，将 LabelPolicy 或设置标签 cmdlet 与 Office 365 安全与合规中心 PowerShell 中的*AdvancedSettings*参数一起使用。
+- 不同于标签迁移（对标签的后续更改进行同步），"**复制策略**" 操作不会同步任何对策略或策略设置的后续更改。 在 Azure 门户中进行更改后，你可以重复 "复制策略" 操作，并且将再次覆盖任何现有策略及其设置。 或者，将 LabelPolicy 或设置标签 cmdlet 与 Office 365 安全与合规中心 PowerShell 中的*AdvancedSettings*参数一起使用。
 
-- 在为租户激活统一标签之前，"**复制策略（预览版）** " 选项不可用。
+- 复制**策略**操作在复制每个策略之前验证以下各项：
+    
+    - 分配给策略的用户和组目前处于 Azure AD。 如果缺少一个或多个帐户，则不会复制此策略。 不检查组成员身份。
+    
+    - 全局策略包含至少一个标签。 由于管理员标签中心不支持不带标签的标签策略，因此不会复制不带标签的全局策略。
+
+- 如果复制策略，然后将其从管理标签中心删除，请在使用 "**复制策略**" 操作之前至少等待两个小时，以确保有足够的时间来复制删除。
 
 有关为 Azure 信息保护统一标签客户端配置策略设置、高级客户端设置和标签设置的详细信息，请参阅管理员指南中[的 Azure 信息保护统一标签客户端的自定义配置](./rms-client/clientv2-admin-guide-customizations.md)。
 

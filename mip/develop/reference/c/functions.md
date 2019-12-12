@@ -1,16 +1,16 @@
 ---
 title: 功能
-description: 函数.
+description: 函数。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
 ms.date: 11/4/2019
 ms.openlocfilehash: cfc80ab9e4704c9efa5d3105f36c668bce26a6b9
-ms.sourcegitcommit: 7a8eef5eb9d6440c6e2300cb3f264da31061b00d
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73591643"
 ---
 # <a name="functions"></a>功能
@@ -25,7 +25,7 @@ ms.locfileid: "73591643"
 |---|---|
 | 标识 | 要获取其令牌的电子邮件地址 |
 | challenge | OAuth2 质询 |
-| 快捷 | 传递给导致此身份验证回调的 MIP API 的不透明应用程序上下文 |
+| context | 传递给导致此身份验证回调的 MIP API 的不透明应用程序上下文 |
 | tokenBuffer | 输出要将令牌复制到其中的缓冲区。 如果为 null，则将填充 "actualTokenSize"，但 |
 | tokenBufferSize | 输出缓冲区的大小（以字节为单位） |
 | actualTokenSize | 输出标记的实际大小（以字节为单位） |
@@ -51,7 +51,7 @@ MIP_CC_CALLBACK(mip_cc_auth_callback,
 
 参数 | 描述
 |---|---|
-| 链接 | SDK 要求用户同意的 URL |
+| url | SDK 要求用户同意的 URL |
 
 **返回**：用户同意响应
 
@@ -69,7 +69,7 @@ MIP_CC_CALLBACK(mip_cc_consent_callback,
 
 参数 | 描述
 |---|---|
-| 日志 | 键/值对的数组 |
+| entries | 键/值对的数组 |
 | 计数 | 键/值对的数目 |
 | 字典 | 输出新创建的字典 |
 
@@ -93,7 +93,7 @@ mip_cc_result MIP_CC_CreateDictionary(
 参数 | 描述
 |---|---|
 | 字典 | 源字典 |
-| 日志 | 输出键/值对的数组，由 mip_cc_dictionary 对象拥有的内存 |
+| entries | 输出键/值对的数组、mip_cc_dictionary 对象拥有的内存 |
 | 计数 | 输出键/值对的数目 |
 
 **Return**：指示成功或失败的结果代码
@@ -130,7 +130,7 @@ void MIP_CC_ReleaseDictionary(mip_cc_dictionary dictionary);
 参数 | 描述
 |---|---|
 | 请求 | 要由应用程序执行的 HTTP 请求 |
-| 快捷 | 传递给由此 HTTP 请求导致的 MIP API 调用的不透明上下文 |
+| context | 传递给由此 HTTP 请求导致的 MIP API 调用的不透明上下文 |
 
 ```c
 MIP_CC_CALLBACK(mip_cc_http_send_callback_fn,
@@ -237,11 +237,11 @@ MIP_CC_CALLBACK(mip_cc_logger_init_callback_fn,
 
 参数 | 描述
 |---|---|
-| 调配 | log 语句的日志级别。 |
+| level | log 语句的日志级别。 |
 | 消息 | log 语句的消息。 |
-| 才能 | log 语句的函数名称。 |
+| function | log 语句的函数名称。 |
 | 文件 | 生成日志语句的文件名。 |
-| 内嵌 | 生成日志语句的行号。 |
+| line | 生成日志语句的行号。 |
 
 ```c
 MIP_CC_CALLBACK(mip_cc_logger_write_callback_fn,
@@ -299,7 +299,7 @@ void MIP_CC_ReleaseLoggerDelegate(mip_cc_logger_delegate loggerDelegate);
 参数 | 描述
 |---|---|
 | applicationInfo | 有关使用保护 SDK 的应用程序的信息 |
-| 通道 | 用于存储日志记录、遥测和其他保护宣传品的文件路径 |
+| path | 用于存储日志记录、遥测和其他保护宣传品的文件路径 |
 | logLevel | Miplog 的最小日志级别 |
 | isOfflineOnly | 启用/禁用网络操作（并非脱机时支持的所有操作） |
 | loggerDelegateOverride | 可有可无记录器替代实现 |
@@ -328,7 +328,7 @@ mip_cc_result MIP_CC_CreateMipContext(
 参数 | 描述
 |---|---|
 | applicationInfo | 有关使用保护 SDK 的应用程序的信息 |
-| 通道 | 用于存储日志记录、遥测和其他保护宣传品的文件路径 |
+| path | 用于存储日志记录、遥测和其他保护宣传品的文件路径 |
 | logLevel | Miplog 的最小日志级别 |
 | isOfflineOnly | 启用/禁用网络操作（并非脱机时支持的所有操作） |
 | loggerDelegateOverride | 可有可无记录器替代实现 |
@@ -419,7 +419,7 @@ mip_cc_result MIP_CC_ProtectionDescriptor_GetOwnerSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 ownerBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualOwnerSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 ownerBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualOwnerSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_ProtectionDescriptor_GetOwner(
@@ -463,7 +463,7 @@ mip_cc_result MIP_CC_ProtectionDescriptor_GetNameSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 nameBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 nameBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_ProtectionDescriptor_GetName(
@@ -507,7 +507,7 @@ mip_cc_result MIP_CC_ProtectionDescriptor_GetDescriptionSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 descriptionBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualDescriptionSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 descriptionBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualDescriptionSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_ProtectionDescriptor_GetDescription(
@@ -564,7 +564,7 @@ mip_cc_result MIP_CC_ProtectionDescriptor_GetLabelId(
 参数 | 描述
 |---|---|
 | protectionDescriptor | 与受保护的内容关联的描述符 |
-| Id 为 | 输出与保护关联的内容 ID |
+| contentId | 输出与保护关联的内容 ID |
 
 **Return**：指示成功或失败的结果代码
 
@@ -665,7 +665,7 @@ mip_cc_result MIP_CC_ProtectionDescriptor_GetReferrerSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 referrerBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualReferrerSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 referrerBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualReferrerSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_ProtectionDescriptor_GetReferrer(
@@ -697,7 +697,7 @@ void MIP_CC_ReleaseProtectionDescriptor(mip_cc_protection_descriptor protectionD
 
 参数 | 描述
 |---|---|
-| Strings | 字符串数组 |
+| 字符串 | 字符串数组 |
 | 计数 | 字符串数 |
 | stringList | 输出新创建的字符串列表 |
 
@@ -721,7 +721,7 @@ mip_cc_result MIP_CC_CreateStringList(
 参数 | 描述
 |---|---|
 | stringList | 源字符串列表 |
-| Strings | 输出字符串数组、mip_cc_string_list 对象拥有的内存 |
+| 字符串 | 输出字符串数组、mip_cc_string_list 对象拥有的内存 |
 | 计数 | 输出字符串数 |
 
 **Return**：指示成功或失败的结果代码
@@ -757,7 +757,7 @@ void MIP_CC_ReleaseStringList(mip_cc_string_list stringList);
 
 参数 | 描述
 |---|---|
-| TaskId | 唯一任务标识符 |
+| taskId | 唯一任务标识符 |
 
 ```c
 MIP_CC_CALLBACK(mip_cc_dispatch_task_callback_fn,
@@ -773,7 +773,7 @@ MIP_CC_CALLBACK(mip_cc_dispatch_task_callback_fn,
 
 参数 | 描述
 |---|---|
-| TaskId | 唯一任务标识符 |
+| taskId | 唯一任务标识符 |
 
 **返回**：如果已成功取消任务，则返回 True; 否则返回 false
 
@@ -815,7 +815,7 @@ mip_cc_result MIP_CC_CreateTaskDispatcherDelegate(
 参数 | 描述
 |---|---|
 | taskDispatcher | 任务调度程序委托对象的句柄 |
-| TaskId | 与此操作关联的异步任务的 ID |
+| taskId | 与此操作关联的异步任务的 ID |
 
 **注意**：当任务计划为执行时，应用程序必须调用此函数。 它将导致立即在当前线程上执行任务。 ID 应与以前调度的、未取消的任务的 ID 匹配。 
 
@@ -846,7 +846,7 @@ void MIP_CC_ReleaseTaskDispatcherDelegate(mip_cc_task_dispatcher_delegate taskDi
 参数 | 描述
 |---|---|
 | telemetryConfig | 遥测配置 |
-| 段 | 主机名 |
+| hostName | 主机名 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -871,7 +871,7 @@ mip_cc_result MIP_CC_TelemetryConfiguration_SetHostName(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：当客户端具有一个现有遥测 DLL，该 DLL 实现了应使用而不是 MIP_CLIENTTELEMETRY 的 1DS SDK 时，将设置此属性 
+**注意**：当客户端具有一个现有遥测 DLL，该 DLL 实现了应使用而不是 mip_ClientTelemetry .dll 的程序时，将设置此属性。 
 
 ```c
 mip_cc_result MIP_CC_TelemetryConfiguration_SetLibraryName(
@@ -1025,7 +1025,7 @@ void MIP_CC_ReleaseTelemetryConfiguration(mip_cc_telemetry_configuration telemet
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 要发布的保护引擎 |
+| 引擎 | 要发布的保护引擎 |
 
 ```c
 void MIP_CC_ReleaseProtectionEngine(mip_cc_protection_engine engine);
@@ -1039,10 +1039,10 @@ void MIP_CC_ReleaseProtectionEngine(mip_cc_protection_engine engine);
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 将在其下创建处理程序的引擎 |
+| 引擎 | 将在其下创建处理程序的引擎 |
 | 设置 | 保护处理程序设置 |
-| 快捷 | 将以不透明的形式传递给 HttpDelegate 和 AuthDelegate 的客户端上下文 |
-| 函数 | 输出新创建的保护处理程序实例 |
+| context | 将以不透明的形式传递给 HttpDelegate 和 AuthDelegate 的客户端上下文 |
+| 处理程序 (handler) | 输出新创建的保护处理程序实例 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -1062,10 +1062,10 @@ mip_cc_result MIP_CC_ProtectionEngine_CreateProtectionHandlerForPublishing(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 将在其下创建处理程序的引擎 |
+| 引擎 | 将在其下创建处理程序的引擎 |
 | 设置 | 保护处理程序设置 |
-| 快捷 | 将以不透明的形式传递给 HttpDelegate 和 AuthDelegate 的客户端上下文 |
-| 函数 | 输出新创建的保护处理程序实例 |
+| context | 将以不透明的形式传递给 HttpDelegate 和 AuthDelegate 的客户端上下文 |
+| 处理程序 (handler) | 输出新创建的保护处理程序实例 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -1085,7 +1085,7 @@ mip_cc_result MIP_CC_ProtectionEngine_CreateProtectionHandlerForConsumption(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 保护引擎 |
+| 引擎 | 保护引擎 |
 | idSize | 输出保留引擎 ID 的缓冲区大小（字符数） |
 
 **Return**：指示成功或失败的结果代码
@@ -1104,14 +1104,14 @@ mip_cc_result MIP_CC_ProtectionEngine_GetEngineIdSize(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 保护引擎 |
+| 引擎 | 保护引擎 |
 | idBuffer | 输出该 id 将被复制到中。 |
 | idBufferSize | IdBuffer 的大小（字符数）。 |
 | actualIdSize | 输出写入缓冲区的字符数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 idBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualIdSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 idBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualIdSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_ProtectionEngine_GetEngineId(
@@ -1129,13 +1129,13 @@ mip_cc_result MIP_CC_ProtectionEngine_GetEngineId(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 保护引擎 |
-| 快捷 | 将以不透明的形式传递给 HttpDelegate 和 AuthDelegate 的客户端上下文 |
+| 引擎 | 保护引擎 |
+| context | 将以不透明的形式传递给 HttpDelegate 和 AuthDelegate 的客户端上下文 |
 | templatesSize | 输出模板数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：此 API 可能导致独立的 HTTP 操作。 请考虑将 "MIP_CC_ProtectionEngine_GetTemplates" 与预定义缓冲区直接一起使用，以避免不必要的额外 HTTP 操作。 
+**注意**：此 API 可能导致独立的 HTTP 操作。 请考虑直接将 "MIP_CC_ProtectionEngine_GetTemplates" 与预定义的缓冲区一起使用，以避免不必要的额外 HTTP 操作。 
 
 ```c
 mip_cc_result MIP_CC_ProtectionEngine_GetTemplatesSize(
@@ -1152,15 +1152,15 @@ mip_cc_result MIP_CC_ProtectionEngine_GetTemplatesSize(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 保护引擎 |
-| 快捷 | 将以不透明的形式传递给 HttpDelegate 和 AuthDelegate 的客户端上下文 |
+| 引擎 | 保护引擎 |
+| context | 将以不透明的形式传递给 HttpDelegate 和 AuthDelegate 的客户端上下文 |
 | templateBuffer | 输出缓冲区，模板将被复制到中。 |
 | templateBufferSize | TemplateBuffer 的大小（按项数）。 |
 | actualTemplatesSize | 输出写入缓冲区的模板 Id 的数目 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 templateBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualTemplateSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 templateBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualTemplateSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_ProtectionEngine_GetTemplates(
@@ -1179,17 +1179,17 @@ mip_cc_result MIP_CC_ProtectionEngine_GetTemplates(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 保护引擎 |
-| 快捷 | 将以不透明的形式传递给 HttpDelegate 和 AuthDelegate 的客户端上下文 |
+| 引擎 | 保护引擎 |
+| context | 将以不透明的形式传递给 HttpDelegate 和 AuthDelegate 的客户端上下文 |
 | documentId | 分配给文档的文档 ID |
 | 面部 | 应用于文档的标签 ID |
 | ownerEmail | 文档的所有者 |
 | delagedUserEmail | 用户的电子邮件（如果身份验证用户/应用程序代表另一个用户操作），如果没有，则为空 |
-| 使用权 | 输出向用户授予的权限列表，由调用方拥有的内存 |
+| 权限 | 输出向用户授予的权限列表，由调用方拥有的内存 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：必须通过调用 MIP_CC_ReleaseStringList 来释放 "rights" 变量 
+**注意**：调用方必须由调用方释放 "rights" 变量 MIP_CC_ReleaseStringList 
 
 ```c
 mip_cc_result MIP_CC_ProtectionEngine_GetRightsForLabelId(
@@ -1210,7 +1210,7 @@ mip_cc_result MIP_CC_ProtectionEngine_GetRightsForLabelId(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 保护引擎 |
+| 引擎 | 保护引擎 |
 | clientDataSize | 输出客户端数据的大小（字符数） |
 
 **Return**：指示成功或失败的结果代码
@@ -1229,14 +1229,14 @@ mip_cc_result MIP_CC_ProtectionEngine_GetClientDataSize(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 保护引擎 |
+| 引擎 | 保护引擎 |
 | clientDataBuffer | 输出将客户端数据复制到其中的缓冲区 |
 | clientDataBufferSize | ClientDataBuffer 的大小（字符数）。 |
 | actualClientDataSize | 输出写入缓冲区的字符数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 clientDataBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualClientDataSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 clientDataBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualClientDataSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_ProtectionEngine_GetClientData(
@@ -1256,7 +1256,7 @@ mip_cc_result MIP_CC_ProtectionEngine_GetClientData(
 |---|---|
 | 标识 | 将与 ProtectionEngine 关联的标识 |
 | clientData | 与引擎一起存储的可自定义客户端数据 |
-| 本地 | 文本结果将输出到的区域设置 |
+| locale | 文本结果将输出到的区域设置 |
 | engineSettings | 输出新创建的设置实例 |
 
 **Return**：指示成功或失败的结果代码
@@ -1316,7 +1316,7 @@ mip_cc_result MIP_CC_ProtectionEngineSettings_SetCustomSettings(
 参数 | 描述
 |---|---|
 | 设置 | 引擎设置 |
-| sessionId | 表示保护引擎生存期的会话 ID |
+| sessionID | 表示保护引擎生存期的会话 ID |
 
 **Return**：指示成功或失败的结果代码
 
@@ -1529,7 +1529,7 @@ mip_cc_result MIP_CC_ProtectionHandlerConsumptionSettings_SetDelegatedUserEmail(
 
 参数 | 描述
 |---|---|
-| 函数 | 表示受保护内容的处理程序 |
+| 处理程序 (handler) | 表示受保护内容的处理程序 |
 | publishingLicenseBufferSize | 输出发布许可证的大小（以字节为单位） |
 
 **Return**：指示成功或失败的结果代码
@@ -1548,14 +1548,14 @@ mip_cc_result MIP_CC_ProtectionHandler_GetSerializedPublishingLicenseSize(
 
 参数 | 描述
 |---|---|
-| 函数 | 表示受保护内容的处理程序 |
+| 处理程序 (handler) | 表示受保护内容的处理程序 |
 | publishingLicenseBuffer | 输出发布许可证将写入的缓冲区 |
 | publishingLicenseBufferSize | 发布许可证缓冲区的大小 |
 | actualPublishingLicenseSize | 输出发布许可证的实际大小（以字节为单位） |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 publishingLicenseBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualPublishingLicenseSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 publishingLicenseBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualPublishingLicenseSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_ProtectionHandler_GetSerializedPublishingLicense(
@@ -1573,7 +1573,7 @@ mip_cc_result MIP_CC_ProtectionHandler_GetSerializedPublishingLicense(
 
 参数 | 描述
 |---|---|
-| 函数 | 表示受保护内容的处理程序 |
+| 处理程序 (handler) | 表示受保护内容的处理程序 |
 | 描述符 | 输出保护描述符 |
 
 **Return**：指示成功或失败的结果代码
@@ -1592,12 +1592,12 @@ mip_cc_result MIP_CC_ProtectionHandler_GetProtectionDescriptor(
 
 参数 | 描述
 |---|---|
-| 函数 | 表示受保护内容的处理程序 |
-| 使用权 | 输出向用户授予的权限列表，由调用方拥有的内存 |
+| 处理程序 (handler) | 表示受保护内容的处理程序 |
+| 权限 | 输出向用户授予的权限列表，由调用方拥有的内存 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：必须通过调用 MIP_CC_ReleaseStringList 来释放 "rights" 变量 
+**注意**：调用方必须由调用方释放 "rights" 变量 MIP_CC_ReleaseStringList 
 
 ```c
 mip_cc_result MIP_CC_ProtectionHandler_GetRights(
@@ -1613,7 +1613,7 @@ mip_cc_result MIP_CC_ProtectionHandler_GetRights(
 
 参数 | 描述
 |---|---|
-| 函数 | 表示受保护内容的处理程序 |
+| 处理程序 (handler) | 表示受保护内容的处理程序 |
 | unprotectedSize | 未保护/明文内容的大小（以字节为单位） |
 | includesFinalBlock | 介绍相关的未受保护内容是否包括最终块。 |
 | protectedSize | 输出受保护内容的大小 |
@@ -1636,7 +1636,7 @@ mip_cc_result MIP_CC_ProtectionHandler_GetProtectedContentSize(
 
 参数 | 描述
 |---|---|
-| 函数 | 表示受保护内容的处理程序 |
+| 处理程序 (handler) | 表示受保护内容的处理程序 |
 | 大小 | 输出块大小（以字节为单位） |
 
 **Return**：指示成功或失败的结果代码
@@ -1655,7 +1655,7 @@ mip_cc_result MIP_CC_ProtectionHandler_GetBlockSize(
 
 参数 | 描述
 |---|---|
-| 函数 | 表示受保护内容的处理程序 |
+| 处理程序 (handler) | 表示受保护内容的处理程序 |
 | issuedUserSize | 输出用于保存已颁发用户的缓冲区大小（以字符数为限） |
 
 **Return**：指示成功或失败的结果代码
@@ -1674,14 +1674,14 @@ mip_cc_result MIP_CC_ProtectionHandler_GetIssuedUserSize(
 
 参数 | 描述
 |---|---|
-| 函数 | 表示受保护内容的处理程序 |
+| 处理程序 (handler) | 表示受保护内容的处理程序 |
 | issuedUserBuffer | 输出发出的用户将被复制到的缓冲区。 |
 | issuedUserBufferSize | IssuedUserBuffer 的大小（字符数）。 |
 | actualIssuedUserSize | 输出写入缓冲区的字符数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 issuedUserBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualIssuedUserSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 issuedUserBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualIssuedUserSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_ProtectionHandler_GetIssuedUser(
@@ -1699,7 +1699,7 @@ mip_cc_result MIP_CC_ProtectionHandler_GetIssuedUser(
 
 参数 | 描述
 |---|---|
-| 函数 | 表示受保护内容的处理程序 |
+| 处理程序 (handler) | 表示受保护内容的处理程序 |
 | ownerSize | 输出用于保存已颁发用户的缓冲区大小（以字符数为限） |
 
 **Return**：指示成功或失败的结果代码
@@ -1718,14 +1718,14 @@ mip_cc_result MIP_CC_ProtectionHandler_GetOwnerSize(
 
 参数 | 描述
 |---|---|
-| 函数 | 表示受保护内容的处理程序 |
+| 处理程序 (handler) | 表示受保护内容的处理程序 |
 | ownerBuffer | 输出发出的用户将被复制到的缓冲区。 |
 | ownerBufferSize | OwnerBuffer 的大小（字符数）。 |
 | actualOwnerSize | 输出写入缓冲区的字符数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 ownerBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualOwnerSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 ownerBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualOwnerSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_ProtectionHandler_GetOwner(
@@ -1743,8 +1743,8 @@ mip_cc_result MIP_CC_ProtectionHandler_GetOwner(
 
 参数 | 描述
 |---|---|
-| 函数 | 表示受保护内容的处理程序 |
-| Id 为 | 输出内容 ID |
+| 处理程序 (handler) | 表示受保护内容的处理程序 |
+| contentId | 输出内容 ID |
 
 **Return**：指示成功或失败的结果代码
 
@@ -1762,7 +1762,7 @@ mip_cc_result MIP_CC_ProtectionHandler_GetContentId(
 
 参数 | 描述
 |---|---|
-| 函数 | 表示受保护内容的处理程序 |
+| 处理程序 (handler) | 表示受保护内容的处理程序 |
 | doesUseDeprecatedAlgorithm | 输出保护处理程序是否使用不推荐使用的加密算法 |
 
 **Return**：指示成功或失败的结果代码
@@ -1839,7 +1839,7 @@ void MIP_CC_ReleaseProtectionHandlerConsumptionSettings(mip_cc_protection_handle
 
 参数 | 描述
 |---|---|
-| 函数 | 要发布的保护处理程序 |
+| 处理程序 (handler) | 要发布的保护处理程序 |
 
 ```c
 void MIP_CC_ReleaseProtectionHandler(mip_cc_protection_handler handler);
@@ -1854,7 +1854,7 @@ void MIP_CC_ReleaseProtectionHandler(mip_cc_protection_handler handler);
 参数 | 描述
 |---|---|
 | 设置 | 配置文件设置 |
-| 简介 | 输出新创建的保护配置文件实例 |
+| profile | 输出新创建的保护配置文件实例 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -1872,7 +1872,7 @@ mip_cc_result MIP_CC_LoadProtectionProfile(
 
 参数 | 描述
 |---|---|
-| 简介 | 要发布的保护配置文件 |
+| profile | 要发布的保护配置文件 |
 
 ```c
 void MIP_CC_ReleaseProtectionProfile(mip_cc_protection_profile profile);
@@ -1887,7 +1887,7 @@ void MIP_CC_ReleaseProtectionProfile(mip_cc_protection_profile profile);
 参数 | 描述
 |---|---|
 | 设置 | 配置文件设置 |
-| sessionId | 表示保护配置文件生存期的会话 ID |
+| sessionID | 表示保护配置文件生存期的会话 ID |
 
 **Return**：指示成功或失败的结果代码
 
@@ -2034,12 +2034,12 @@ mip_cc_result MIP_CC_Action_GetId(
 参数 | 描述
 |---|---|
 | actionResult | 源操作结果 |
-| 执行 | 输出操作数组，由 mip_cc_action_result 对象拥有的内存 |
+| 操作 | 输出操作数组、由 mip_cc_action_result 对象拥有的内存 |
 | 计数 | 输出键/值对的数目 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**： "actions" 的内存由 mip_cc_action_result 对象拥有，因此不应独立释放 
+**注意**： "操作" 的内存由 mip_cc_action_result 对象拥有，因此不应独立释放 
 
 ```c
 mip_cc_result MIP_CC_ActionResult_GetActions(
@@ -2096,7 +2096,7 @@ mip_cc_result MIP_CC_AddContentFooterAction_GetUIElementNameSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 nameBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 nameBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_AddContentFooterAction_GetUIElementName(
@@ -2184,7 +2184,7 @@ mip_cc_result MIP_CC_AddContentFooterAction_GetFontNameSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 nameBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 nameBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_AddContentFooterAction_GetFontName(
@@ -2203,7 +2203,7 @@ mip_cc_result MIP_CC_AddContentFooterAction_GetFontName(
 参数 | 描述
 |---|---|
 | action | "添加内容页脚" 操作 |
-| FontSize | 输出字号 |
+| fontSize | 输出字号 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -2247,7 +2247,7 @@ mip_cc_result MIP_CC_AddContentFooterAction_GetFontColorSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 colorBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualColorSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 colorBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualColorSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_AddContentFooterAction_GetFontColor(
@@ -2266,7 +2266,7 @@ mip_cc_result MIP_CC_AddContentFooterAction_GetFontColor(
 参数 | 描述
 |---|---|
 | action | "添加内容页脚" 操作 |
-| 关联 | 输出关联 |
+| 对齐 (alignment) | 输出关联 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -2329,7 +2329,7 @@ mip_cc_result MIP_CC_AddContentHeaderAction_GetUIElementNameSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 nameBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 nameBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_AddContentHeaderAction_GetUIElementName(
@@ -2417,7 +2417,7 @@ mip_cc_result MIP_CC_AddContentHeaderAction_GetFontNameSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 nameBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 nameBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_AddContentHeaderAction_GetFontName(
@@ -2436,7 +2436,7 @@ mip_cc_result MIP_CC_AddContentHeaderAction_GetFontName(
 参数 | 描述
 |---|---|
 | action | "添加内容标头" 操作 |
-| FontSize | 输出字号 |
+| fontSize | 输出字号 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -2480,7 +2480,7 @@ mip_cc_result MIP_CC_AddContentHeaderAction_GetFontColorSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 colorBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualColorSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 colorBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualColorSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_AddContentHeaderAction_GetFontColor(
@@ -2499,7 +2499,7 @@ mip_cc_result MIP_CC_AddContentHeaderAction_GetFontColor(
 参数 | 描述
 |---|---|
 | action | "添加内容标头" 操作 |
-| 关联 | 输出关联 |
+| 对齐 (alignment) | 输出关联 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -2562,7 +2562,7 @@ mip_cc_result MIP_CC_AddWatermarkAction_GetUIElementNameSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 nameBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 nameBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_AddWatermarkAction_GetUIElementName(
@@ -2581,7 +2581,7 @@ mip_cc_result MIP_CC_AddWatermarkAction_GetUIElementName(
 参数 | 描述
 |---|---|
 | action | "添加水印" 操作 |
-| 页面 | 输出水印布局 |
+| 布局 | 输出水印布局 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -2669,7 +2669,7 @@ mip_cc_result MIP_CC_AddWatermarkAction_GetFontNameSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 nameBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 nameBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_AddWatermarkAction_GetFontName(
@@ -2688,7 +2688,7 @@ mip_cc_result MIP_CC_AddWatermarkAction_GetFontName(
 参数 | 描述
 |---|---|
 | action | "添加水印" 操作 |
-| FontSize | 输出字号 |
+| fontSize | 输出字号 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -2732,7 +2732,7 @@ mip_cc_result MIP_CC_AddWatermarkAction_GetFontColorSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 colorBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualColorSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 colorBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualColorSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_AddWatermarkAction_GetFontColor(
@@ -2807,7 +2807,7 @@ mip_cc_result MIP_CC_ContentLabel_GetAssignmentMethod(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：调用 MIP_CC_ReleaseDictionary 时，调用方必须释放 "properties" 变量 
+**注意**：调用方必须由调用方释放 "properties" 变量 MIP_CC_ReleaseDictionary 
 
 ```c
 mip_cc_result MIP_CC_ContentLabel_GetExtendedProperties(
@@ -2847,7 +2847,7 @@ mip_cc_result MIP_CC_ContentLabel_IsProtectionAppliedFromLabel(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：调用 MIP_CC_ReleaseLabel 时，调用方必须释放 "label" 变量 
+**注意**：调用方必须由调用方释放 "label" 变量 MIP_CC_ReleaseLabel 
 
 ```c
 mip_cc_result MIP_CC_ContentLabel_GetLabel(
@@ -2889,7 +2889,7 @@ mip_cc_result MIP_CC_CustomAction_GetNameSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 nameBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 nameBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_CustomAction_GetName(
@@ -2912,7 +2912,7 @@ mip_cc_result MIP_CC_CustomAction_GetName(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：调用 MIP_CC_ReleaseDictionary 时，调用方必须释放 "properties" 变量 
+**注意**：调用方必须由调用方释放 "properties" 变量 MIP_CC_ReleaseDictionary 
 
 ```c
 mip_cc_result MIP_CC_CustomAction_GetProperties(
@@ -2928,12 +2928,12 @@ mip_cc_result MIP_CC_CustomAction_GetProperties(
 
 参数 | 描述
 |---|---|
-| 人名 | 要包含在结果中的元数据密钥名称数组 |
+| 名称 | 要包含在结果中的元数据密钥名称数组 |
 | namesSize | "名称" 数组中的值的数目 |
 | namePrefixes | 要包含在结果中的元数据密钥名称前缀数组 |
 | namePrefixesSize | "NamesPrefixes" 数组中的值的数目 |
-| 快捷 | 从 API 调用以不透明形式传递到回调的应用程序上下文 |
-| 新元 | 输出由客户端应用程序创建的元数据键/值的字典。 此字典将由 MIP 发布。 |
+| context | 从 API 调用以不透明形式传递到回调的应用程序上下文 |
+| 元数据 | 输出由客户端应用程序创建的元数据键/值的字典。 此字典将由 MIP 发布。 |
 
 ```c
 MIP_CC_CALLBACK(mip_cc_metadata_callback,
@@ -3013,7 +3013,7 @@ mip_cc_result MIP_CC_Label_GetNameSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 nameBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 nameBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualNameSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_Label_GetName(
@@ -3057,7 +3057,7 @@ mip_cc_result MIP_CC_Label_GetDescriptionSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 descriptionBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualDescriptionSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 descriptionBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualDescriptionSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_Label_GetDescription(
@@ -3101,7 +3101,7 @@ mip_cc_result MIP_CC_Label_GetColorSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 colorBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualColorSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 colorBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualColorSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_Label_GetColor(
@@ -3120,7 +3120,7 @@ mip_cc_result MIP_CC_Label_GetColor(
 参数 | 描述
 |---|---|
 | label | Label |
-| 程度 | 输出敏感度级别 |
+| sensitivity | 输出敏感度级别 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -3164,7 +3164,7 @@ mip_cc_result MIP_CC_Label_GetTooltipSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 tooltipBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualTooltipSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 tooltipBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualTooltipSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_Label_GetTooltip(
@@ -3208,7 +3208,7 @@ mip_cc_result MIP_CC_Label_GetAutoTooltipSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 tooltipBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualTooltipSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 tooltipBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualTooltipSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_Label_GetAutoTooltip(
@@ -3248,7 +3248,7 @@ mip_cc_result MIP_CC_Label_IsActive(
 参数 | 描述
 |---|---|
 | label | Label |
-| 上层 | 输出父标签（如果有）; 否则为 null |
+| 父级 (parent) | 输出父标签（如果有）; 否则为 null |
 
 **Return**：指示成功或失败的结果代码
 
@@ -3292,7 +3292,7 @@ mip_cc_result MIP_CC_Label_GetChildrenSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 childrenBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualChildrenSize 设置为所需的最小缓冲区大小 
+**注意**：如果 childrenBuffer 为 null 或为空，则将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualChildrenSize 设置为所需的最小缓冲区大小 
 
 ```c
 mip_cc_result MIP_CC_Label_GetChildren(
@@ -3315,7 +3315,7 @@ mip_cc_result MIP_CC_Label_GetChildren(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：调用 MIP_CC_ReleaseDictionary 时，调用方必须释放 "settings" 变量 
+**注意**：调用方必须由调用方释放 "settings" 变量 MIP_CC_ReleaseDictionary 
 
 ```c
 mip_cc_result MIP_CC_Label_GetCustomSettings(
@@ -3336,7 +3336,7 @@ mip_cc_result MIP_CC_Label_GetCustomSettings(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**： "metadataNames" 变量必须由调用方释放，方法是调用 MIP_CC_ReleaseStringList @note 在添加元数据之前应完成删除元数据 
+**注意**：必须通过调用 MIP_CC_ReleaseStringList @note 应在添加元数据之前删除元数据，调用方释放 "metadataNames" 变量 
 
 ```c
 mip_cc_result MIP_CC_MetadataAction_GetMetadataToRemove(
@@ -3353,11 +3353,11 @@ mip_cc_result MIP_CC_MetadataAction_GetMetadataToRemove(
 参数 | 描述
 |---|---|
 | action | "metadata" 操作 |
-| 新元 | 输出要添加的元数据的键/值对，由调用方拥有的内存 |
+| 元数据 | 输出要添加的元数据的键/值对，由调用方拥有的内存 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：必须通过调用 MIP_CC_ReleaseDictionary，调用方释放 "metadata" 变量，@note 在添加元数据之前应完成删除元数据 
+**注意**： "metadata" 变量必须由调用方释放，方法是调用 MIP_CC_ReleaseDictionary @note 在添加元数据之前应完成删除元数据 
 
 ```c
 mip_cc_result MIP_CC_MetadataAction_GetMetadataToAdd(
@@ -3373,7 +3373,7 @@ mip_cc_result MIP_CC_MetadataAction_GetMetadataToAdd(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 要释放的策略引擎 |
+| 引擎 | 要释放的策略引擎 |
 
 ```c
 void MIP_CC_ReleasePolicyEngine(mip_cc_policy_engine engine);
@@ -3387,7 +3387,7 @@ void MIP_CC_ReleasePolicyEngine(mip_cc_policy_engine engine);
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | idSize | 输出保留引擎 ID 的缓冲区大小（字符数） |
 
 **Return**：指示成功或失败的结果代码
@@ -3406,14 +3406,14 @@ mip_cc_result MIP_CC_PolicyEngine_GetEngineIdSize(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | idBuffer | 输出该 id 将被复制到中。 |
 | idBufferSize | IdBuffer 的大小（字符数）。 |
 | actualIdSize | 输出写入缓冲区的字符数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 idBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualIdSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 idBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualIdSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_PolicyEngine_GetEngineId(
@@ -3431,7 +3431,7 @@ mip_cc_result MIP_CC_PolicyEngine_GetEngineId(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | moreInfoUrlSize | 输出客户端数据的大小（字符数） |
 
 **Return**：指示成功或失败的结果代码
@@ -3450,14 +3450,14 @@ mip_cc_result MIP_CC_PolicyEngine_GetMoreInfoUrlSize(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | moreInfoUrlBuffer | 输出将客户端数据复制到其中的缓冲区 |
 | moreInfoUrlBufferSize | MoreInfoUrlBuffer 的大小（字符数）。 |
 | actualMoreInfoUrlSize | 输出写入缓冲区的字符数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 moreInfoUrlBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualMoreInfoUrlSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 moreInfoUrlBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualMoreInfoUrlSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_PolicyEngine_GetMoreInfoUrl(
@@ -3475,7 +3475,7 @@ mip_cc_result MIP_CC_PolicyEngine_GetMoreInfoUrl(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | isLabelingRequired | 输出策略是否规定必须标记文档 |
 
 **Return**：指示成功或失败的结果代码
@@ -3494,7 +3494,7 @@ mip_cc_result MIP_CC_PolicyEngine_IsLabelingRequired(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | policyFileIdSize | 输出客户端数据的大小（字符数） |
 
 **Return**：指示成功或失败的结果代码
@@ -3513,14 +3513,14 @@ mip_cc_result MIP_CC_PolicyEngine_GetPolicyFileIdSize(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | policyFileIdBuffer | 输出将客户端数据复制到其中的缓冲区 |
 | policyFileIdBufferSize | PolicyFileIdBuffer 的大小（字符数）。 |
 | actualPolicyFileIdSize | 输出写入缓冲区的字符数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 policyFileIdBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualPolicyFileIdSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 policyFileIdBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualPolicyFileIdSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_PolicyEngine_GetPolicyFileId(
@@ -3538,7 +3538,7 @@ mip_cc_result MIP_CC_PolicyEngine_GetPolicyFileId(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | sensitivityFileIdSize | 输出客户端数据的大小（字符数） |
 
 **Return**：指示成功或失败的结果代码
@@ -3557,14 +3557,14 @@ mip_cc_result MIP_CC_PolicyEngine_GetSensitivityFileIdSize(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | sensitivityFileIdBuffer | 输出将客户端数据复制到其中的缓冲区 |
 | sensitivityFileIdBufferSize | SensitivityFileIdBuffer 的大小（字符数）。 |
 | actualSensitivityFileIdSize | 输出写入缓冲区的字符数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 sensitivityFileIdBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualSensitivityFileIdSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 sensitivityFileIdBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualSensitivityFileIdSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_PolicyEngine_GetSensitivityFileId(
@@ -3582,7 +3582,7 @@ mip_cc_result MIP_CC_PolicyEngine_GetSensitivityFileId(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | hasClassificationRules | 输出策略是否具有自动规则或建议规则 |
 
 **Return**：指示成功或失败的结果代码
@@ -3601,7 +3601,7 @@ mip_cc_result MIP_CC_PolicyEngine_HasClassificationRules(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | lastPolicyFetchTime | 输出上次提取策略的时间（从 epoch 起的秒数） |
 
 **Return**：指示成功或失败的结果代码
@@ -3620,7 +3620,7 @@ mip_cc_result MIP_CC_PolicyEngine_GetLastPolicyFetchTime(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | labelsSize | 输出标签数 |
 
 **Return**：指示成功或失败的结果代码
@@ -3639,14 +3639,14 @@ mip_cc_result MIP_CC_PolicyEngine_GetSensitivityLabelsSize(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | labelBuffer | 输出缓冲标签将被复制到中。 标签由客户端拥有 |
 | labelBufferSize | LabelBuffer 的大小（以标签数为限）。 |
 | actualLabelsSize | 输出写入缓冲区的标签数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 labelBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualLabelsSize 设置为所需的最小缓冲区大小 
+**注意**：如果 labelBuffer 为 null 或为空，则将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualLabelsSize 设置为所需的最小缓冲区大小 
 
 ```c
 mip_cc_result MIP_CC_PolicyEngine_GetSensitivityLabels(
@@ -3664,9 +3664,9 @@ mip_cc_result MIP_CC_PolicyEngine_GetSensitivityLabels(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | 面部 | 标签 ID |
-| label | 输出敏感度标签。 此值由调用方拥有，必须使用 MIP_CC_ReleaseLabel 发布。 |
+| label | 输出敏感度标签。 此值由调用方拥有，必须随 MIP_CC_ReleaseLabel 一起发布。 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -3685,7 +3685,7 @@ mip_cc_result MIP_CC_PolicyEngine_GetLabelById(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | sensitivityTypesSize | 输出敏感度类型的数目 |
 
 **Return**：指示成功或失败的结果代码
@@ -3704,14 +3704,14 @@ mip_cc_result MIP_CC_PolicyEngine_GetSensitivityTypesSize(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | sensitivityTypeBuffer | 输出缓冲区，敏感度类型将被复制到中。 敏感度 |
 | sensitivityTypeBufferSize | SensitivityTypeBuffer 的大小（以敏感度类型的数量为位数）。 |
 | actualSensitivityTypesSize | 输出写入缓冲区的敏感度类型的数目 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 sensitivityTypeBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualSensitivityTypesSize 设置为所需的最小缓冲区大小 
+**注意**：如果 sensitivityTypeBuffer 为 null 或为空，则将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualSensitivityTypesSize 设置为所需的最小缓冲区大小 
 
 ```c
 mip_cc_result MIP_CC_PolicyEngine_GetSensitivityTypes(
@@ -3729,9 +3729,9 @@ mip_cc_result MIP_CC_PolicyEngine_GetSensitivityTypes(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | isAuditDiscoveryEnabled | 是否启用审核发现 |
-| 函数 | 输出新创建的策略处理程序实例 |
+| 处理程序 (handler) | 输出新创建的策略处理程序实例 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -3750,7 +3750,7 @@ mip_cc_result MIP_CC_PolicyEngine_CreatePolicyHandler(
 
 参数 | 描述
 |---|---|
-| 调配 | 事件级别：信息/错误/警告 |
+| level | 事件级别：信息/错误/警告 |
 | eventType | 事件类型的说明 |
 | eventData | 与事件关联的数据 |
 
@@ -3772,7 +3772,7 @@ mip_cc_result MIP_CC_PolicyEngine_SendApplicationAuditEvent(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | xmlSize | 输出策略数据 xml 的大小（字符数） |
 
 **Return**：指示成功或失败的结果代码
@@ -3791,14 +3791,14 @@ mip_cc_result MIP_CC_PolicyEngine_GetPolicyDataXmlSize(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | xmlBuffer | 输出将 xml 复制到的缓冲区。 |
 | xmlBufferSize | XmlBuffer 的大小（字符数）。 |
 | actualXmlSize | 输出写入缓冲区的字符数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 xmlBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualXmlSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 xmlBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualXmlSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_PolicyEngine_GetPolicyDataXml(
@@ -3816,7 +3816,7 @@ mip_cc_result MIP_CC_PolicyEngine_GetPolicyDataXml(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | xmlSize | 输出策略数据 xml 的大小（字符数） |
 
 **Return**：指示成功或失败的结果代码
@@ -3835,14 +3835,14 @@ mip_cc_result MIP_CC_PolicyEngine_GetSensitivityTypesDataXmlSize(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | xmlBuffer | 输出将 xml 复制到的缓冲区。 |
 | xmlBufferSize | XmlBuffer 的大小（字符数）。 |
 | actualXmlSize | 输出写入缓冲区的字符数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 xmlBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualXmlSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 xmlBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualXmlSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_PolicyEngine_GetSensitivityTypesDataXml(
@@ -3860,7 +3860,7 @@ mip_cc_result MIP_CC_PolicyEngine_GetSensitivityTypesDataXml(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | clientDataSize | 输出客户端数据的大小（字符数） |
 
 **Return**：指示成功或失败的结果代码
@@ -3879,14 +3879,14 @@ mip_cc_result MIP_CC_PolicyEngine_GetClientDataSize(
 
 参数 | 描述
 |---|---|
-| 搜索引擎优化 | 策略引擎 |
+| 引擎 | 策略引擎 |
 | clientDataBuffer | 输出将客户端数据复制到其中的缓冲区 |
 | clientDataBufferSize | ClientDataBuffer 的大小（字符数）。 |
 | actualClientDataSize | 输出写入缓冲区的字符数 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 clientDataBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualClientDataSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 clientDataBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualClientDataSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_PolicyEngine_GetClientData(
@@ -3906,7 +3906,7 @@ mip_cc_result MIP_CC_PolicyEngine_GetClientData(
 |---|---|
 | 标识 | 将与 PolicyEngine 关联的标识 |
 | clientData | 与引擎一起存储的可自定义客户端数据 |
-| 本地 | 文本结果将输出到的区域设置 |
+| locale | 文本结果将输出到的区域设置 |
 | loadSensitivityTypes | 是否还应加载敏感度类型数据（用于分类） |
 | 设置 | 输出新创建的设置实例 |
 
@@ -3970,7 +3970,7 @@ mip_cc_result MIP_CC_PolicyEngineSettings_SetCustomSettings(
 参数 | 描述
 |---|---|
 | 设置 | 引擎设置 |
-| sessionId | 表示策略引擎生存期的会话 ID |
+| sessionID | 表示策略引擎生存期的会话 ID |
 
 **Return**：指示成功或失败的结果代码
 
@@ -4042,7 +4042,7 @@ void MIP_CC_ReleasePolicyEngineSettings(mip_cc_policy_engine_settings settings);
 
 参数 | 描述
 |---|---|
-| 函数 | 要发布的策略处理程序 |
+| 处理程序 (handler) | 要发布的策略处理程序 |
 
 ```c
 void MIP_CC_ReleasePolicyHandler(mip_cc_policy_handler handler);
@@ -4056,9 +4056,9 @@ void MIP_CC_ReleasePolicyHandler(mip_cc_policy_handler handler);
 
 参数 | 描述
 |---|---|
-| 函数 | 策略处理程序 |
+| 处理程序 (handler) | 策略处理程序 |
 | documentState | 文档状态 |
-| 快捷 | 应用程序上下文不透明地转发到任何回调 |
+| context | 应用程序上下文不透明地转发到任何回调 |
 | contentLabel | 当前应用于文档的标签 |
 
 **Return**：指示成功或失败的结果代码
@@ -4079,15 +4079,15 @@ mip_cc_result MIP_CC_PolicyHandler_GetSensitivityLabel(
 
 参数 | 描述
 |---|---|
-| 函数 | 策略处理程序 |
+| 处理程序 (handler) | 策略处理程序 |
 | documentState | 文档状态 |
 | applicationState | 应用程序操作状态 |
-| 快捷 | 应用程序上下文不透明地转发到任何回调 |
+| context | 应用程序上下文不透明地转发到任何回调 |
 | actionResult | 输出应用程序应执行的操作，由调用方拥有的内存 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：调用 MIP_CC_ReleaseActionResult 时，调用方必须释放 "actionResult" 变量 
+**注意**：调用方必须由调用方释放 "actionResult" 变量 MIP_CC_ReleaseActionResult 
 
 ```c
 mip_cc_result MIP_CC_PolicyHandler_ComputeActions(
@@ -4106,10 +4106,10 @@ mip_cc_result MIP_CC_PolicyHandler_ComputeActions(
 
 参数 | 描述
 |---|---|
-| 函数 | 策略处理程序 |
+| 处理程序 (handler) | 策略处理程序 |
 | documentState | 文档状态 |
 | applicationState | 应用程序操作状态 |
-| 快捷 | 应用程序上下文不透明地转发到任何回调 |
+| context | 应用程序上下文不透明地转发到任何回调 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -4132,7 +4132,7 @@ mip_cc_result MIP_CC_PolicyHandler_NotifyCommittedActions(
 参数 | 描述
 |---|---|
 | 设置 | 配置文件设置 |
-| 简介 | 输出新创建的策略配置文件实例 |
+| profile | 输出新创建的策略配置文件实例 |
 
 **Return**：指示成功或失败的结果代码
 
@@ -4150,7 +4150,7 @@ mip_cc_result MIP_CC_LoadPolicyProfile(
 
 参数 | 描述
 |---|---|
-| 简介 | 要释放的策略配置文件 |
+| profile | 要释放的策略配置文件 |
 
 ```c
 void MIP_CC_ReleasePolicyProfile(mip_cc_policy_profile profile);
@@ -4165,7 +4165,7 @@ void MIP_CC_ReleasePolicyProfile(mip_cc_policy_profile profile);
 参数 | 描述
 |---|---|
 | 设置 | 配置文件设置 |
-| sessionId | 表示策略配置文件生存期的会话 ID |
+| sessionID | 表示策略配置文件生存期的会话 ID |
 
 **Return**：指示成功或失败的结果代码
 
@@ -4274,11 +4274,11 @@ mip_cc_result MIP_CC_ProtectByTemplateAction_GetTemplateId(
 参数 | 描述
 |---|---|
 | action | "删除内容脚注" 操作 |
-| 人名 | 输出要移除的 UI 元素的名称，由调用方拥有的内存 |
+| 名称 | 输出要移除的 UI 元素的名称，由调用方拥有的内存 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：调用 MIP_CC_ReleaseStringList 时，调用方必须释放 "names" 变量 
+**注意**：名称变量必须由调用方释放，方法是调用 MIP_CC_ReleaseStringList 
 
 ```c
 mip_cc_result MIP_CC_RemoveContentFooterAction_GetUIElementNames(
@@ -4295,11 +4295,11 @@ mip_cc_result MIP_CC_RemoveContentFooterAction_GetUIElementNames(
 参数 | 描述
 |---|---|
 | action | "删除内容标头" 操作 |
-| 人名 | 输出要移除的 UI 元素的名称，由调用方拥有的内存 |
+| 名称 | 输出要移除的 UI 元素的名称，由调用方拥有的内存 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：调用 MIP_CC_ReleaseStringList 时，调用方必须释放 "names" 变量 
+**注意**：名称变量必须由调用方释放，方法是调用 MIP_CC_ReleaseStringList 
 
 ```c
 mip_cc_result MIP_CC_RemoveContentHeaderAction_GetUIElementNames(
@@ -4316,11 +4316,11 @@ mip_cc_result MIP_CC_RemoveContentHeaderAction_GetUIElementNames(
 参数 | 描述
 |---|---|
 | action | "删除水印页脚" 操作 |
-| 人名 | 输出要移除的 UI 元素的名称，由调用方拥有的内存 |
+| 名称 | 输出要移除的 UI 元素的名称，由调用方拥有的内存 |
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：调用 MIP_CC_ReleaseStringList 时，调用方必须释放 "names" 变量 
+**注意**：名称变量必须由调用方释放，方法是调用 MIP_CC_ReleaseStringList 
 
 ```c
 mip_cc_result MIP_CC_RemoveWatermarkAction_GetUIElementNames(
@@ -4376,7 +4376,7 @@ mip_cc_result MIP_CC_SensitivityType_GetRulePackageIdSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 idBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualIdSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 idBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualIdSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_SensitivityType_GetRulePackageId(
@@ -4420,7 +4420,7 @@ mip_cc_result MIP_CC_SensitivityType_GetRulePackageSize(
 
 **Return**：指示成功或失败的结果代码
 
-**注意**：如果 rulePackageBuffer 为 null 或不充分，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualRulePackageSize 设置为所需的最小缓冲区大小。 
+**注意**：如果 rulePackageBuffer 为 null 或为空，将返回 MIP_RESULT_ERROR_INSUFFICIENT_BUFFER，并将 actualRulePackageSize 设置为所需的最小缓冲区大小。 
 
 ```c
 mip_cc_result MIP_CC_SensitivityType_GetRulePackage(

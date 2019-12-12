@@ -4,19 +4,19 @@ description: 可以更改或优化用户可以在信息保护栏看到的标签�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/17/2019
+ms.date: 11/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 8cf449b26ced29b57a51dc6657105805bafbd9fe
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 67b5d3548e8adc2e80f80350e4e594071258add2
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559254"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935072"
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>如何更改或自定义 Azure 信息保护的现有标签
 
@@ -30,7 +30,7 @@ ms.locfileid: "73559254"
 
 若要更改标签，请按照以下说明操作：
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护**" 窗格。 
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”窗格。 
     
     例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
 

@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: e39260036f1e4f4413b008e75cbbd761aea7d751
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560082"
 ---
 # <a name="class-mipprotectionprofilesettings"></a>class mip::ProtectionProfile::Settings 
@@ -19,7 +19,7 @@ ProtectionProfile 在其创建期间及其整个生存期内使用的设置。
 ## <a name="summary"></a>“摘要”
  成員                        | 说明                                
 --------------------------------|---------------------------------------------
-公共设置（const std：： shared_ptr\<MipContext\>& mipContext，CacheStorageType cacheStorageType，const std：： shared_ptr\<AuthDelegate\>& authDelegate，const std：： shared_ptr\<ConsentDelegate\>& consentDelegate，const std：： shared_ptr\<ProtectionProfile：：观察器\>& 观察程序）  |  ProtectionProfile：： Settings 构造函数，它指定要用于异步操作的观察程序。
+公共设置（const std：： shared_ptr\<MipContext\>& mipContext，CacheStorageType cacheStorageType，const std：： shared_ptr\<AuthDelegate\>& authDelegate，const std：： shared_ptr\<ConsentDelegate\>& consentDelegate，const std：： shared_ptr\<ProtectionProfile：： Observer\>& 观察程序）  |  ProtectionProfile：： Settings 构造函数，它指定要用于异步操作的观察程序。
 公共设置（const std：： shared_ptr\<MipContext\>& mipContext，CacheStorageType cacheStorageType，const std：： shared_ptr\<AuthDelegate\>& authDelegate，const std：： shared_ptr\<ConsentDelegate\>& consentDelegate）  |  ProtectionProfile：： Settings 构造函数，用于同步操作。
 public CacheStorageType GetCacheStorageType （） const  |  获取缓存是存储在内存中还是存储在磁盘上。
 public std：： shared_ptr\<AuthDelegate\> GetAuthDelegate （） const  |  获取用于获取身份验证令牌的身份验证委托。

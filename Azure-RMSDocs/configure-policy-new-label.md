@@ -12,10 +12,10 @@ ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 ms.subservice: aiplabels
 ms.custom: admin
 ms.openlocfilehash: 8037740899161a7bb77934c4a05a54cd9627a913
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73559553"
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>如何创建 Azure 信息保护的标签
@@ -34,7 +34,7 @@ ms.locfileid: "73559553"
 
 ## <a name="to-create-a-new-label"></a>创建新标签
 
-1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护**" 窗格。
+1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”窗格。
     
     例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
 
@@ -48,7 +48,7 @@ ms.locfileid: "73559553"
     
     指定显示名称时，禁止指定一些字符（如反斜杠和 & 号），因为并非所有使用 Azure 信息保护的服务和应用程序都支持这些字符。 除了禁止指定的字符外，还请不要指定 # 字符。    
     
-    请注意，新标签将自动分配为黑色。 从颜色列表中选择一种可区分的颜色，或者输入颜色的红色、绿色和蓝色 (RGB) 组成的十六进制三元色代码。 例如，#DAA520。 如果需要这些代码的参考，可从 MSDN web 文档的 " [\<color >](https://developer.mozilla.org/docs/Web/CSS/color_value) " 页中找到一个有用的表格。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
+    请注意，新标签将自动分配为黑色。 从颜色列表中选择一种可区分的颜色，或者输入颜色的红色、绿色和蓝色 (RGB) 组成的十六进制三元色代码。 例如，#DAA520。 如果需要对这些代码进行引用，可从 MSDN web 文档的 " [\<颜色" >](https://developer.mozilla.org/docs/Web/CSS/color_value)页中找到一个有用的表格。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 
 4. 要向用户提供新标签，请执行以下操作：从“分类” > “策略”菜单选项中，选择要包含新标签的策略。 选择“添加或删除标签”。 从 "**策略：添加或删除标签**" 窗格中选择标签，选择 **"确定"** ，然后选择 "**保存**"。
     

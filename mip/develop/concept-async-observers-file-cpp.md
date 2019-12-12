@@ -8,10 +8,10 @@ ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: mbaldwin
 ms.openlocfilehash: baa62e34e10de3fb4cacc3eb7cb21c0b3e2ebf75
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "60175434"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-observers"></a>Microsoft 信息保护 SDK - 文件 API 观察程序
@@ -29,9 +29,9 @@ ms.locfileid: "60175434"
 
 在以下示例中，我们创建了一个派生自 `mip::FileProfile::Observer` 的 `ProfileObserver` 类。 已重写成员函数以使用整个示例中使用的 future/promise 模式。
 
-**注意**：以下示例仅部分实现，但不包括替代`mip::FileEngine`相关观察者。
+**注意**：以下示例仅部分实现，不包括 `mip::FileEngine` 相关观察程序的替代。
 
-### <a name="profileobserverh"></a>profile_observer.h
+### <a name="profile_observerh"></a>profile_observer.h
 
 在标头中，定义派生自 `mip::FileProfile::Observer` 的 `ProfileObserver`，然后替代每个成员函数。
 
@@ -45,13 +45,13 @@ ProfileObserver() { }
 };
 ```
 
-### <a name="profileobservercpp"></a>profile_observer.cpp
+### <a name="profile_observercpp"></a>profile_observer.cpp
 
 在实现中，我们定义了要为每个观察程序成员函数采取的操作。
 
 每个成员都接受两个参数。 第一个是指向我们在函数中处理的类的共享指针。 `ProfileObserver::OnLoadSuccess` 预计会收到 `mip::FileProfile`。 `ProfileObserver::OnAddEngineSuccess` 预计会收到 `mip::FileEngine`。
 
-第二个是指向*上下文*的共享指针。 在实现中，上下文是对 `std::promise` 的引用，通过引用作为 `std::shared_ptr<void>` 传递。 函数的第一行将其强制转换为 `std::promise`，然后存储在名为 `promise` 的对象中。
+第二个是指向上下文的共享指针。 在实现中，上下文是对 `std::promise` 的引用，通过引用作为 `std::shared_ptr<void>` 传递。 函数的第一行将其强制转换为 `std::promise`，然后存储在名为 `promise` 的对象中。
 
 最后，通过设置 `promise->set_value()` 并传入 `mip::FileProfile` 对象，future 模式即准备就绪。
 
@@ -83,7 +83,7 @@ void ProfileObserver::OnLoadFailure(const std::exception_ptr& error, const std::
 
 与配置文件观察程序类似，`mip::FileHandler` 实现 `mip::FileHandler::Observers` 类，用于在文件操作期间处理异步事件通知。 该实现类似于上面详述的实现。 `FileHandlerObserver` 的部分定义如下。 
 
-### <a name="filehandlerobserverh"></a>file_handler_observer.h
+### <a name="file_handler_observerh"></a>file_handler_observer.h
 
 ```cpp
 #include "mip/file/file_handler.h"
@@ -102,7 +102,7 @@ public:
 };
 ```
 
-### <a name="filehandlerobservercpp"></a>file_handler_observer.cpp
+### <a name="file_handler_observercpp"></a>file_handler_observer.cpp
 
 此示例只是前两个函数，但其​​余函数使用与这些函数以及 `ProfileObserver` 类似的模式。
 

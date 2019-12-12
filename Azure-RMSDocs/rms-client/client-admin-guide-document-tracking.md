@@ -4,7 +4,7 @@ description: 管理员配置和使用 Azure 信息保护的文档跟踪的说明
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/26/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: doctrack
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 58d3db71f1fcc580cb58531eb58d61dd458f37dd
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: af0fae810574603dfc947656de8cee3bb0e8b149
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561313"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935327"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>管理员指南：配置和使用 Azure 信息保护的文档跟踪
 
@@ -38,7 +38,7 @@ ms.locfileid: "73561313"
 
 如果在你的组织中由于隐私要求而禁止显示所有文档跟踪信息，你可以使用[AipServiceDocumentTrackingFeature](/powershell/module/aipservice/disable-aipservicedocumenttrackingfeature) cmdlet 禁用文档跟踪。 
 
-此 cmdlet 禁用对文档跟踪站点的访问，以使组织中的所有用户无法跟踪或撤销对已保护文档的访问权限。 你可以随时使用[AipServiceDocumentTrackingFeature](/powershell/module/aipservice/enable-aipservicedocumenttrackingfeature)重新启用文档跟踪，还可以使用 AipServiceDocumentTrackingFeature 检查当前是否启用或禁用了文档[跟踪。](/powershell/module/aipservice/get-aipservicedocumenttrackingfeature) 
+此 cmdlet 禁用对文档跟踪站点的访问，以使组织中的所有用户无法跟踪或撤销对已保护文档的访问权限。 你随时可以使用 [Enable-AipServiceDocumentTrackingFeature](/powershell/module/aipservice/enable-aipservicedocumenttrackingfeature) 来重新启用文档跟踪，并可以使用 [Get-AipServiceDocumentTrackingFeature](/powershell/module/aipservice/get-aipservicedocumenttrackingfeature) 来查看当前是已启用还是已禁用文档跟踪。 
 
 启用文档跟踪站点后，它会默认显示尝试访问受保护文档的人员的电子邮件地址、这些人员尝试访问这些文档的时间以及他们所在的位置等信息。 这个级别的信息有助于确定使用共享文档的方式，以及在发现可疑活动时，是否应撤销这些文档。 但是，出于隐私原因，你可能需要为部分或所有用户禁用此用户信息。 
 
@@ -55,11 +55,11 @@ ms.locfileid: "73561313"
 
 你可以使用以下 cmdlet 从文档跟踪站点下载日志记录信息：
 
-- [AipServiceTrackingLog](/powershell/module/aipservice/Get-AipServiceTrackingLog)
+- [Get-AipServiceTrackingLog](/powershell/module/aipservice/Get-AipServiceTrackingLog)
     
     此 cmdlet 向指定用户返回有关受保护文档的跟踪信息，该用户为文档提供保护（Rights Management 颁发者）或已访问受保护的文档。 使用此 cmdlet 来帮助回答问题“指定用户跟踪或访问了哪些受保护的文档？”
 
-- [AipServiceDocumentLog](/powershell/module/aipservice/Get-AipServiceDocumentLog)
+- [Get-AipServiceDocumentLog](/powershell/module/aipservice/Get-AipServiceDocumentLog)
     
     如果用户为文档提供保护（Rights Management 颁发者）或者是文档的 Rights Management 所有者，或者受保护的文档被配置为直接授予该用户访问权限，那么此 cmdlet 会对该指定用户返回有关跟踪文档的保护信息。 使用此 cmdlet 来帮助回答问题“如何保护指定用户的文档？”
 

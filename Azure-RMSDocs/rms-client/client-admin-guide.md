@@ -4,7 +4,7 @@ description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/26/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6a3792d8b69ebe7bf1f924fe618725a7cf286353
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 9169da03c020f07f2ad031efff80364658aa6b24
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561284"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935259"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
@@ -69,7 +69,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 ## <a name="should-you-deploy-the-azure-information-protection-client"></a>你是否应该部署 Azure 信息保护客户端？
 
-部署 Azure 信息保护客户端（如果你未[在 Office 365 安全与合规中心中使用敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)，而是使用从 azure 下载的 Azure 信息保护标签以及以下任何一项应用
+部署 Azure 信息保护客户端如果你不[在 Office 365 安全与合规中心中使用敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)，而是使用从 azure 下载的 Azure 信息保护标签，并使用以下任何一项：
 
 - 想要通过从 Office 应用程序（Word、Excel、PowerPoint、Outlook）中选择标签对文档和电子邮件进行分类（或保护）。
 
@@ -146,7 +146,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
     
     - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\Common\DRM
     
-    - HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\MSIPC    
+    - HKEY_CURRENT_USER \SOFTWARE\Classes\Local Settings\Software\Microsoft\MSIPC    
 
 - 当前登录的用户已注销。
 

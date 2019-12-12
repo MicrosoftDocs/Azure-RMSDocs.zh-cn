@@ -15,13 +15,13 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: b61fba6a678ec625ac2dc7d78c2550cfba87bb60
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68792117"
 ---
-# <a name="overview"></a>概述
+# <a name="overview"></a>“概述”
 
 Microsoft Rights Management SDK 4.2 是一种信息保护技术，可用于多个平台。  它提供软件开发工具包 (SDK) 或框架，专为客户端计算机和设备设计，以帮助保护对流经“启用权限”的应用程序的信息的访问和使用。 这些平台的 SDK 提供了简单 API，便于应用程序开发人员保护或使用数字内容、检索模板、从服务器获取策略以及执行其他相关的权限管理任务。
 

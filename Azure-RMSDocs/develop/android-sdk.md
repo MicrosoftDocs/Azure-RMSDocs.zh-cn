@@ -15,10 +15,10 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: 8a576565472327f0c090c3168662f16299d4b61f
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68792666"
 ---
 # <a name="android-setup"></a>Android 安装程序
@@ -32,7 +32,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>必备条件
 
 我们建议在开发系统上安装以下软件：
 
@@ -63,7 +63,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 ## <a name="configuring-your-development-environment"></a>配置开发环境
 
-**请注意**  MS RMS SDK 4.2 预览版本：在此预览版本中，屏幕截图尚未更新为可显示路径名称从 com/microsoft/protection 到 com/microsoft/rightsmanagment 的更改。 不过文本已进行了更新。
+**请注意**  MS RMS SDK 4.2 预览版：在此预览版本中，屏幕截图尚未更新，以显示 pathes 从 com/microsoft/protection 到 com/microsoft/rightsmanagment 的更改。 不过文本已进行了更新。
 
  
 -   打开 Eclipse 开发环境。
@@ -103,7 +103,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
   ![将其导入到工作区](../media/Android-setup-07.png)
 
-- 单击“下一步”。 导航以选择在其中提取 *adrms\_android\_sdk.zip* 的文件夹。 SDK 应作为 **com.microsoft.rightsmanagement** 显示在列表中。
+- 单击?下一步?。 导航以选择在其中提取 *adrms\_android\_sdk.zip* 的文件夹。 SDK 应作为 **com.microsoft.rightsmanagement** 显示在列表中。
 
   ![导航到“选择文件夹”](../media/Android-setup-08c.jpg)
 
@@ -117,7 +117,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
   ![添加库](../media/Android-setup-10b.jpg)
 
-- 单击 **“确定”** 。
+- 单击“确定”。
 
   因为 MS RMS SDK 4.2 与 AAD RM 相连接，所以必须向应用程序授予 **INTERNET** 和 **ACCESS\_NETWORK\_STATE** 权限。 为此，请在项目的根目录中打开 *AndroidManifest.xml* 文件。
 
@@ -140,7 +140,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 -   你现在已准备就绪，可创建新 Android 应用。
 
-### <a name="see-also"></a>请参阅
+### <a name="see-also"></a>另請參閱
 
 [入门](get-started.md)
 

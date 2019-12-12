@@ -8,10 +8,10 @@ ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 414ad04c062a81d374a9e46d170feabb15e0e6cc
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69886215"
 ---
 # <a name="microsoft-information-protection-sdk---file-handler-concepts"></a>Microsoft 信息保护 SDK - 文件处理程序概念
@@ -37,12 +37,12 @@ ms.locfileid: "69886215"
 - `DeleteLabel()`
 - `CommitAsync()`
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>惠?
 
-创建 `FileHandler` 用于处理特定文件需要使用以下对象：
+创建 `FileHandler` 来处理特定文件要求：
 
 - `FileProfile`
-- 已添加到 `FileProfile` 的 `FileEngine`
+- `FileEngine` 已添加到 `FileProfile`
 - 继承 `mip::FileHandler::Observer` 的类
 
 ## <a name="create-a-file-handler"></a>创建文件处理程序
@@ -51,7 +51,7 @@ ms.locfileid: "69886215"
 
 创建 `FileHandler` 就像使用 promise/future 模式调用 `FileEngine` 的 `CreateFileHandlerAsync` 函数一样简单。
 
-`CreateFileHandlerAsync`接受三个参数:应读取或修改的文件的路径、用于异步事件通知`mip::FileHandler::Observer`的路径, 以及的承诺。 `FileHandler`
+`CreateFileHandlerAsync` 接受三个参数：应读取或修改的文件的路径、异步事件通知的 `mip::FileHandler::Observer` 以及 `FileHandler` 的 promise。
 
 **注意：** `mip::FileHandler::Observer` 类必须在派生类中实现，因为 `CreateFileHandler` 需要 `Observer` 对象。 
 
@@ -94,11 +94,11 @@ auto label = loadFuture.get();
 
 ## <a name="set-a-label"></a>设置标签
 
-设置标签分为两步。 首先, 创建一个指向相关文件的处理程序, 可以通过使用一些参数`FileHandler->SetLabel()`调用来设置标签: `mip::Label`、 `mip::LabelingOptions`和`mip::ProtectionOptions`。 首先, 必须将标签 id 解析为标签, 然后定义标签选项。 
+设置标签分为两步。 首先，创建一个指向相关文件的处理程序，可以通过使用一些参数调用 `FileHandler->SetLabel()` 来设置标签： `mip::Label`、`mip::LabelingOptions`和 `mip::ProtectionOptions`。 首先，必须将标签 id 解析为标签，然后定义标签选项。 
 
-### <a name="resolve-label-id-to-miplabel"></a>将标签 id 解析为 mip:: Label
+### <a name="resolve-label-id-to-miplabel"></a>将标签 id 解析为 mip：： Label
 
-**SetLabel**函数的第一个参数是`mip::Label`。 通常, 应用程序使用标签标识符而不是标签。 可以`mip::Label`通过对文件或策略引擎调用**GetLabelById** , 将标签标识符解析为:
+**SetLabel**函数的第一个参数是 `mip::Label`。 通常，应用程序使用标签标识符而不是标签。 可以通过对文件或策略引擎调用**GetLabelById** ，将标签标识符解析为 `mip::Label`：
 
 ```cpp
 mip::Label label = mEngine->GetLabelById(labelId);
@@ -106,14 +106,14 @@ mip::Label label = mEngine->GetLabelById(labelId);
 
 ### <a name="labeling-options"></a>标签选项
 
-设置标签所需的第二个参数`mip::LabelingOptions`是。 
+设置标签所需的第二个参数为 `mip::LabelingOptions`。 
 
 `LabelingOptions` 指定有关标签的其他信息，例如 `AssignmentMethod` 和操作的理由。
 
 - `mip::AssignmentMethod` 只是一个具有三个值的枚举器：`STANDARD`、`PRIVILEGED` 或 `AUTO`。 有关更多详细信息，请查看 `mip::AssignmentMethod` 参考。
 - 只有在服务策略要求提供时*以及*在降低文件的*现有*敏感度时才需要提供理由。
 
-此代码段演示如何`mip::LabelingOptions`创建对象并设置降级理由和消息。
+此代码段演示如何创建 `mip::LabelingOptions` 对象并设置降级理由和消息。
 
 ```cpp
 auto labelingOptions = mip::LabelingOptions(mip::AssignmentMethod::STANDARD);
@@ -122,9 +122,9 @@ labelingOptions.SetDowngradeJustification(true, "Because I made an educated deci
 
 ### <a name="protection-settings"></a>保护设置
 
-某些应用程序可能需要代表委派的用户标识执行操作。 此`mip::ProtectionSettings`类允许应用程序定义*每个处理程序*的委托标识。 以前, 委托由引擎类执行。 这在应用程序开销和服务往返行程上存在明显的缺点。 通过将委派的用户设置移动`mip::ProtectionSettings`到并使其成为处理程序类的一部分, 我们消除了这一开销, 从而提高了对代表不同的用户标识集执行许多操作的应用程序的性能。 
+某些应用程序可能需要代表委派的用户标识执行操作。 通过 `mip::ProtectionSettings` 类，应用程序可以定义*每个处理程序*的委托标识。 以前，委托由引擎类执行。 这在应用程序开销和服务往返行程上存在明显的缺点。 通过将委派的用户设置移动到 `mip::ProtectionSettings` 并使其成为处理程序类的一部分，我们消除了这一开销，从而提高了对代表不同的用户标识集执行许多操作的应用程序的性能。 
 
-如果委托不是必需的, 则`mip::ProtectionSettings()`只需传递到**SetLabel**函数。 如果需要委托, 可以通过创建`mip::ProtectionSettings`对象并设置委托邮件地址来实现:
+如果不需要委托，只需将 `mip::ProtectionSettings()` 传递给**SetLabel**函数。 如果需要委托，可以通过创建 `mip::ProtectionSettings` 对象并设置委托邮件地址来实现：
 
 ```cpp
 mip::ProtectionSettings protectionSettings; 
@@ -133,15 +133,15 @@ protectionSettings.SetDelegatedUserEmail("alice@contoso.com");
 
 ### <a name="set-the-label"></a>设置标签
 
-从 id 获取`mip::Label`了, 设置标签选项, 并且可以选择设置保护设置, 现在可以设置标签。
+从 id 中提取了 `mip::Label`，设置标签选项，并且可以选择设置保护设置，现在可以设置标签。
 
-如果未设置保护设置, 请通过在处理程序上`SetLabel`调用来设置标签:
+如果未设置保护设置，请通过对处理程序调用 `SetLabel` 来设置标签：
 
 ```cpp
 handler->SetLabel(label, labelingOptions, mip::ProtectionSettings());
 ```
 
-如果你确实需要保护设置来执行委派的操作, 请执行以下操作:
+如果你确实需要保护设置来执行委派的操作，请执行以下操作：
 
 ```cpp
 handler->SetLabel(label, labelingOptions, protectionSettings);
@@ -155,7 +155,7 @@ handler->SetLabel(label, labelingOptions, protectionSettings);
 
 若要实现 commitment 函数，我们可返回 promise/future 模式，为 `bool` 创建 promise。 如果操作成功，则 `CommitAsync()` 函数将返回 true；如果因任何原因失败，则返回 false。 
 
-创建`promise`和`future`后,`CommitAsync()`将调用并提供两个参数:输出文件路径 (`std::string`) 和承诺。 最后，通过获取 `future` 对象的值来获得结果。
+创建 `promise` 和 `future` 后，系统将调用 `CommitAsync()` 并提供两个参数：输出文件路径 (`std::string`) 和 promise。 最后，通过获取 `future` 对象的值来获得结果。
 
 ```cpp
 auto commitPromise = std::make_shared<std::promise<bool>>();
@@ -164,7 +164,7 @@ handler->CommitAsync(outputFile, commitPromise);
 auto wasCommitted = commitFuture.get();
 ```
 
-**重要提示：** 不`FileHandler`会更新或覆盖现有文件。 开发人员负责实现对标记文件的**替换**操作。 
+**重要说明：** `FileHandler` 不会更新或覆盖现有文件。 开发人员负责实现对标记文件的**替换**操作。 
 
 如果将标签写入 **FileA.docx**，则会创建文件的副本 **FileB.docx** 并应用标签。 必须编写代码来删除/重命名 **FileA.docx** 以及重命名 **FileB.docx**。
 

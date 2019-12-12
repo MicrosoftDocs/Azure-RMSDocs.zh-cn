@@ -8,10 +8,10 @@ ms.collection: M365-security-compliance
 ms.date: 03/05/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 78dc655d8244378fcc37b22030d3060fd291ef16
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "60175456"
 ---
 # <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Microsoft 信息保护 (MIP) SDK 常见问题解答和问题
@@ -22,7 +22,7 @@ ms.locfileid: "60175456"
 
 ### <a name="sdk-string-handling"></a>SDK 字符串处理
 
-**问题**:SDK 如何处理字符串，以及哪种字符串类型应该我在我的代码中使用？
+**问**： SDK 如何处理字符串，以及我应该在代码中使用哪种字符串类型？
 
 SDK 旨在跨平台使用，并使用 [UTF-8（Unicode 转换格式 - 8 位）](https://wikipedia.org/wiki/UTF-8)来处理字符串。 具体指南取决于你所使用的平台：
 
@@ -34,34 +34,34 @@ SDK 旨在跨平台使用，并使用 [UTF-8（Unicode 转换格式 - 8 位）](
 
 ## <a name="issues-and-errors-reference"></a>问题和错误参考
 
-### <a name="error-file-format-not-supported"></a>错误："不受支持的文件格式"  
+### <a name="error-file-format-not-supported"></a>错误：“不支持的文件格式”  
 
-**问题**:尝试保护或标记的 PDF 文件时，为什么收到以下错误？
+**问**：在尝试保护或标记 PDF 文件时，为什么会收到以下错误？
 
 > 不支持的文件格式
 
-此异常会从正在尝试保护或标记的 PDF 文件，已经过数字签名或受密码保护。 有关保护或标记 PDF 文件的详细信息，请参阅[使用 Microsoft 信息保护进行 PDF 加密的新支持](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)。
+此异常是由于尝试保护或标记已进行数字签名或密码保护的 PDF 文件导致的。 有关保护或标记 PDF 文件的详细信息，请参阅[使用 Microsoft 信息保护进行 PDF 加密的新支持](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)。
 
-### <a name="error-failed-to-parse-the-acquired-compliance-policy"></a>错误："无法分析获得符合性策略"  
+### <a name="error-failed-to-parse-the-acquired-compliance-policy"></a>错误：“无法分析获得的符合性策略”  
 
-**问题**:为什么下载 MIP SDK 并尝试使用文件的示例列出所有标签后收到以下错误？
+**问**：在下载 MIP SDK 并尝试使用该文件示例列出所有标签后，为什么会收到以下错误？
 
-> 糟糕的事情：无法分析获得符合性策略。 失败： 未找到 [类 mip::CompliancePolicyParserException] 标记： 策略，节点类型：15，名称：没有找到名称，值:，上级： <SyncFile> <Content>，correlationId: [34668a40-blll-4ef8-b2af-00005aa674z9]
+> 出现错误：无法分析获取的符合性策略。 失败，出现以下情况： [找不到类 mip：： CompliancePolicyParserException] 标记：策略，NodeType：15，名称：找不到名称，值：，祖先： <SyncFile><Content>，correlationId： [34668a40-blll-4ef8-b2af-00005aa674z9]
 
-这表示，您没有到标记的统一体验，从 Azure 信息保护迁移你的标签。 请按照[如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](/azure/information-protection/configure-policy-migrate-labels)的步骤操作，以迁移标签，然后在 Office 365 安全与合规中心创建标签策略。 
+这表明你尚未将标签从 Azure 信息保护迁移到统一的标签体验。 请按照[如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](/azure/information-protection/configure-policy-migrate-labels)的步骤操作，以迁移标签，然后在 Office 365 安全与合规中心创建标签策略。 
 
-### <a name="error-systemcomponentmodelwin32exception-loadlibrary-failed"></a>错误："System.ComponentModel.Win32Exception:LoadLibrary 失败"
+### <a name="error-systemcomponentmodelwin32exception-loadlibrary-failed"></a>错误： "System.componentmodel. Win32Exception： LoadLibrary failed"
 
-**问题**:使用 MIP SDK.NET 包装器时，为什么收到以下错误？
+**问**：在使用 MIP SDK .net 包装时，为什么会收到以下错误？
 
-> System.ComponentModel.Win32Exception:LoadLibrary 失败: [sdk_wrapper_dotnet.dll] 时调用 MIP。Initialize （)。
+> System.componentmodel：调用 MIP 时： [sdk_wrapper_dotnet] 的 Win32Exception： LoadLibrary 失败。Initialize （）。
 
-你的应用程序不具有所需的运行时，或不生成的版本。 请参阅[确保你的应用程序所需的运行时](setup-configure-mip.md#ensure-your-app-has-the-required-runtime)有关详细信息。 
+你的应用程序没有所需的运行时，或未构建为发布。 有关详细信息，请参阅[确保应用具有所需的运行时](setup-configure-mip.md#ensure-your-app-has-the-required-runtime)。 
 
-### <a name="error-proxyautherror-exception"></a>错误："ProxyAuthError 异常"
+### <a name="error-proxyautherror-exception"></a>错误： "ProxyAuthError exception"
 
-**问题**:使用 MIP SDK 时，为什么收到以下错误？
+**问**：在使用 MIP SDK 时，为什么会收到以下错误？
 
-> "ProxyAuthenticatonError:不支持代理身份验证"
+> "ProxyAuthenticatonError：不支持代理身份验证"
 
-MIP SDK 不支持经过身份验证代理的使用。 若要修复此消息，代理服务器管理员应设置为绕过代理的 Microsoft 信息保护服务终结点。 这些终结点的列表目前[Office 365 Url 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)页。 MIP SDK 需要`*.protection.outlook.com`（行 9） 和 Azure 信息保护服务终结点 （行 73） 绕过代理身份验证。
+MIP SDK 不支持使用经过身份验证的代理。 若要修复此消息，代理管理员应将 Microsoft 信息保护服务终结点设置为绕过代理。 " [Office 365 url 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)" 页上提供了这些终结点的列表。 MIP SDK 要求 `*.protection.outlook.com` （第9行）和 Azure 信息保护服务终结点（行73）绕过代理身份验证。

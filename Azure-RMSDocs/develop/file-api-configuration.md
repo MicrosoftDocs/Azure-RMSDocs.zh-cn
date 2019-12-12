@@ -14,10 +14,10 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.openlocfilehash: d1181dfe1c495a334aaebd567df5db7e14649e25
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "60178227"
 ---
 # <a name="file-api-configuration"></a>文件 API 配置
@@ -38,15 +38,15 @@ ms.locfileid: "60178227"
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection`
 
-**类型**：键
+**类型**：密钥
 
-**说明**：包含文件 API 的常规配置。
+**描述**：包含文件 API 的常规配置。
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>`
 
-**类型**：键
+**类型**：密钥
 
-**说明**：指定特定文件扩展名的配置信息，例如 TXT 和 JPG 等。
+**描述**：指定特定文件扩展名的配置信息，例如 TXT 和 JPG 等。
 
 - 允许使用通配符“*”，但是，特定扩展名的设置优先于通配符设置。 通配符不会影响 Microsoft Office 文件的设置；必须按文件类型显式禁用这些设置。
 - 若要指定没有扩展名的文件，请使用“.”
@@ -59,14 +59,14 @@ ms.locfileid: "60178227"
 
 **类型**：REG_SZ
 
-**说明**：包含以下三个值之一：
+**描述**：包含以下三个值之一：
 
-- **关闭**：禁用加密。
+- **Off**：禁用加密。
 
 > [!Note]
 > 此设置对解密没有任何影响。 只要用户具有 **EXTRACT** 权限，就可解密任何加密文件（无论是使用本机保护还是 Pfile 保护进行加密）。
 
-- **本机**：使用本机加密。 对于 Office 文件，加密文件将具有与原始文件相同的扩展名。 例如，文件扩展名为 .docx 的文件将被加密为扩展名为 .docx 的文件。 对于其他可以应用本机保护的文件，会将文件加密为具有 p*zzz* 扩展名格式的文件，其中 *zzz* 是原始文件扩展名。 例如，.txt 文件会被加密为扩展名为 .ptxt 的文件。 下面是可应用本机保护的文件扩展名列表。
+- **Native**：使用本机加密。 对于 Office 文件，加密文件将具有与原始文件相同的扩展名。 例如，文件扩展名为 .docx 的文件将被加密为扩展名为 .docx 的文件。 对于其他可以应用本机保护的文件，会将文件加密为具有 p*zzz* 扩展名格式的文件，其中 *zzz* 是原始文件扩展名。 例如，.txt 文件会被加密为扩展名为 .ptxt 的文件。 下面是可应用本机保护的文件扩展名列表。
 
 - **Pfile**：使用 PFile 加密。 加密的文件会将 .pfile 追加到原来的扩展名。 例如，加密后，.txt 文件的文件扩展名将为 .txt.pfile。
 
@@ -93,18 +93,18 @@ ms.locfileid: "60178227"
 -   文件扩展名：doc、dot、xla、xls、xlt、pps、ppt、docm、docx、dotm、dotx、xlam、xlsb、xlsm、xlsx、xltm、xltx、xps、potm、potx、ppsx、ppsm、pptm、pptx、thmx、vsdx、vsdm、vssx、vssm、vstx 和 vstm。 
 -   保护类型 = Native（默认）：sample.docx 加密为 sample.docx
 -   保护类型 = Pfile：对于 Office 文件，具有与 Native 相同的效果。
--   关闭：禁用加密。
+-   Off：禁用加密。
 
 **PDF 文件**
 
 -   保护类型 = Native：sample.pdf 被加密，并命名为 sample.ppdf
 -   保护类型 = Pfile：sample.pdf 被加密，并命名为 sample.pdf.pfile。
--   关闭：禁用加密。
+-   Off：禁用加密。
 
 **所有其他文件格式**
 
 -   保护类型 = Pfile：sample.*zzz* 被加密，并命名为 sample.*zzz*.pfile；其中 *zzz* 是原始文件扩展名。
--   关闭：禁用加密。
+-   Off：禁用加密。
 
 ### <a name="examples"></a>示例
 
@@ -146,7 +146,7 @@ HKEY_LOCAL_MACHINE
                   Encryption = Off
 ```
 
-## <a name="related-articles"></a>相关的文章
+## <a name="related-articles"></a>相关文章
 
 - [开发人员说明](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)

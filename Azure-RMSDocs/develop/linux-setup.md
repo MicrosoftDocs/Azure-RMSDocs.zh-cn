@@ -14,10 +14,10 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.openlocfilehash: 7a7019e72e4d8d2b66c81fbc69542e140992467b
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "60176816"
 ---
 # <a name="linux-setup"></a>Linux 安装程序
@@ -41,7 +41,7 @@ Windows 和 OSX 上也已成功编译了库和示例，但此时它们并未完�
 - [如何构建库和示例应用](https://github.com/AzureAD/rms-sdk-for-cpp/wiki/How-to-Build)
 - [如何在用户系统上安装和使用应用](https://github.com/AzureAD/rms-sdk-for-cpp/wiki/How-to-Use)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另請參閱
 
 - [入门](get-started.md)
 - [新增功能](release-notes.md)

@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: 063f1b0227415dc413e0c56d26f60fc39274a817
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560245"
 ---
 # <a name="class-mipfileexecutionstate"></a>类 mip：： FileExecutionState 
@@ -48,4 +48,4 @@ public virtual std：： shared_ptr\<ClassificationResults\> GetClassificationRe
 返回应用程序特定的审核键值对的映射。
 
   
-**返回**：特定于应用程序的审核元数据注册密钥：值对发件人：发件人收件人的电子邮件 id 的列表：表示电子邮件的收件人的 JSON 数组 LastModifiedBy：上次修改内容的用户的电子邮件 idLastModifiedDate：上次修改内容的日期
+**返回**：特定于应用程序的审核元数据注册密钥：值对发送方：发件人接收方的电子邮件 id 的列表：表示电子邮件的 LASTMODIFIEDBY 的 JSON 数组：上次修改内容的用户的电子邮件 id LastModifiedDate：上次修改内容的日期

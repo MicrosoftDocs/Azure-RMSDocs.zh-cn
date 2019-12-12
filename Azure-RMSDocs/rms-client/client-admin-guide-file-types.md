@@ -4,7 +4,7 @@ description: 有关支持的文件类型、文件扩展名以及负责适用于 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/26/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 350f687a61899046346f26b5beb2944b9f3caf13
-ms.sourcegitcommit: 3464f9224b34dc54ad6fc1b7bc4dc11ad1ab8d59
+ms.openlocfilehash: 02f1e21b73f1d800e5e50918e6a5694402840474
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984877"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935310"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -165,7 +165,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
     - 对于 32 位版本 Windows：HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
 
-    - 对于64位版本的 Windows： **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection**和**HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**
+    - 对于64位版本的 Windows： **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\msipc\fileprotection**和**HKEY_LOCAL_MACHINE \software\microsoft\msipc\fileprotection**
 
 2. 在新添加的项（例如 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\\\*）中，创建一个名为“Encryption”、数据值为 Pfile的新字符串值 (REG_SZ)。
 
@@ -173,7 +173,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 这两个设置会导致 Azure 信息保护客户端将常规保护应用于具有某一文件扩展名的所有文件。 如果这是你的目标，则无需进行任何进一步的配置。 但是，你可以为特定文件类型定义例外，以便它们仍受本机保护。 为此，你必须针对每个文件类型对注册表执行三个（针对 32 位 Windows）或六个（针对 64 位 Windows）额外的编辑操作：
 
-1. 对于**HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**和**HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection** （如果适用）：添加一个具有文件扩展名的新项（不包含之前的句点）。
+1. 对于**HKEY_LOCAL_MACHINE \software\microsoft\msipc\fileprotection**和**HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\msipc\fileprotection** （如果适用）：添加一个具有该文件扩展名的新项（不带前面的句点）。
 
     例如，对于文件扩展名为 .docx 的文件，创建一个名为 **DOCX**的项。
 
@@ -271,7 +271,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 1. 对于运行扫描程序或 PowerShell 会话的计算机，请安装 [Office 2010 Filter Pack SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2)。
 
-2. 对于扫描仪：查找敏感信息后，如果应使用标签对 .zip 文件进行分类和保护，请添加此文件扩展名的注册表项以具有通用保护（.pfile），如注册表编辑中所述，[更改哪些文件类型将](../deploy-aip-scanner.md#scanner-from-the-classic-client-use-the-registry-to-change-which-file-types-are-protected)从扫描程序部署说明中保护。
+2. 对于扫描仪：查找敏感信息后，如果要使用标签对 .zip 文件进行分类和保护，请将此文件扩展名的注册表项添加为具有通用保护（.pfile），如注册表编辑中所述，可以更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner.md#scanner-from-the-classic-client-use-the-registry-to-change-which-file-types-are-protected)。
 
 执行这些步骤后的示例方案： 
 
@@ -283,7 +283,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 如果运行扫描程序或 PowerShell 会话的计算机上安装 Windows TIFF IFilter 功能并配置 [Windows TIFF IFilter 设置](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)，Azure 信息保护扫描程序和 [Set-AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令可以使用光学字符识别 (OCR) 来检查文件扩展名为 .tiff 的 TIFF 图像。
 
-对于扫描仪：查找敏感信息后，如果应使用标签对 tiff 文件进行分类和保护，请添加此文件扩展名的注册表项以具有本机保护，如注册表编辑中所述，[更改哪些文件类型](../deploy-aip-scanner.md#scanner-from-the-classic-client-use-the-registry-to-change-which-file-types-are-protected)从扫描程序部署说明中保护。
+对于扫描仪：查找敏感信息后，如果应使用标签对 tiff 文件进行分类和保护，请添加此文件扩展名的注册表项以具有本机保护，如注册表编辑中所述，用于更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner.md#scanner-from-the-classic-client-use-the-registry-to-change-which-file-types-are-protected)。
 
 ## <a name="next-steps"></a>后续步骤
 现在你已识别了 Azure 信息保护客户端支持的文件类型，若要了解支持此客户端所需的其他信息，请参阅以下资源：

@@ -15,23 +15,23 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: d36938daf4dbcbe86331ec6852dfe4ecb04a2959
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68792410"
 ---
 # <a name="configure-visual-studio"></a>配置 Visual Studio
 
 本主题包含有关如何配置 Visual Studio 项目以使用 Rights Management Services SDK 2.1 的说明。
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>必备条件
 
 -   [安装 SDK](install-the-rms-sdk.md)
 
 **说明**
 
-### <a name="step-1-configure-a-visual-studio-project-to-use-rmssdk21"></a>步骤 1：配置 Visual Studio 项目以使用 RMS SDK 2.1
+### <a name="step-1-configure-a-visual-studio-project-to-use-rmssdk21"></a>步骤1：配置 Visual Studio 项目以使用 RMS SDK 2。1
 
 这些说明特定于 Microsoft Visual Studio 2010。 如果使用不同版本的 Microsoft Visual Studio，则设置对话框可能略有不同。
 

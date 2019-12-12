@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 11/4/2019
 ms.openlocfilehash: f1ad15819d10bcded670fe519db07667b7e7331e
-ms.sourcegitcommit: 7a8eef5eb9d6440c6e2300cb3f264da31061b00d
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73591618"
 ---
 # <a name="enumerations"></a>枚举
@@ -140,7 +140,7 @@ typedef enum {
 |  MIP_FLIGHTING_FEATURE_SERVICE_DISCOVERY = 0      | 依靠单独的 HTTP 调用来确定 RMS 服务终结点（默认值为 false） |
 |  MIP_FLIGHTING_FEATURE_AUTH_INFO_CACHE = 1        | 缓存每个域/租户的 OAuth2 难题，减少不必要的401响应。 为管理自己的 HTTP 身份验证的应用/服务禁用（默认值为 true）  |
 |  MIP_FLIGHTING_FEATURE_LINUX_ENCRYPTED_CACHE = 2  | 为 Linux 平台启用加密缓存（默认值为 false）  |
-|  MIP_FLIGHTING_FEATURE_SINGLE_DOMAIN_NAME = 3     | 启用单一公司名称进行 dns 查找。 例如 https://corprights  |
+|  MIP_FLIGHTING_FEATURE_SINGLE_DOMAIN_NAME = 3     | 启用单一公司名称进行 dns 查找。 例如， https://corprights  |
 |  MIP_FLIGHTING_FEATURE_POLICY_AUTH = 4            | 为发送到策略服务的请求启用自动 HTTP 身份验证。 为管理自己的 HTTP 身份验证的应用/服务禁用（默认值为 true）  |
 
 

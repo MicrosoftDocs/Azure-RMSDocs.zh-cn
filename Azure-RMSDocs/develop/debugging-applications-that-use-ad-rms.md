@@ -15,10 +15,10 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: c0b53c0f749427f785bf12afa6b3f8cda461947e
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68792549"
 ---
 # <a name="how-to-debug-a-rights-enabled-application"></a>操作说明：调试启用权限的应用程序
@@ -29,7 +29,7 @@ ms.locfileid: "68792549"
 
 Rights Management Services SDK 2.1 中禁用了运行时的开发人员版本的反调试检查。
 
-你可以使用以下注册表项启用调试跟踪。 （若要禁用调试跟踪，请将值更改为 0。）在此版本中进行调试不需要其他任何内容。
+你可以使用以下注册表项启用调试跟踪。 （若要关闭调试跟踪，请将值更改为0。）在此版本中进行调试时，无需执行任何其他操作。
 
 
 ```

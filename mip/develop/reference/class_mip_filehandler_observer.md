@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: d1c1a66ce3821bf3d552ee0daa0648940b645fcb
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560264"
 ---
 # <a name="class-mipfilehandlerobserver"></a>class mip::FileHandler::Observer 
@@ -22,7 +22,7 @@ ms.locfileid: "73560264"
 --------------------------------|---------------------------------------------
 public virtual void OnCreateFileHandlerSuccess （const std：： shared_ptr\<FileHandler\>& fileHandler，const std：： shared_ptr\<void\>& 上下文）  |  在成功创建处理程序时调用。
 public virtual void OnCreateFileHandlerFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  创建处理程序失败时调用。
-公共虚拟 void OnClassifySuccess （const std：： vector\<std：： shared_ptr\<操作\>\>& 操作，const std：： shared_ptr\<void\>& 上下文）  |  分类成功时调用。
+public virtual void OnClassifySuccess （const std：： vector\<std：： shared_ptr\<操作\>\>& 操作，const std：： shared_ptr\<void\>& 上下文）  |  分类成功时调用。
 public virtual void OnClassifyFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  分类失败时调用。
 public virtual void OnGetDecryptedTemporaryFileSuccess （const std：： string & decryptedFilePath，const std：： shared_ptr\<void\>& 上下文）  |  在成功获取已解密的临时文件时调用。
 public virtual void OnGetDecryptedTemporaryFileFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  在获取解密的临时文件失败时调用。

@@ -4,7 +4,7 @@ description: 了解并实现 Azure 信息保护中 Azure Rights Management 服�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/03/2019
+ms.date: 11/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b7e8d2b2f510a97c01ecf02040a404b11ffdc9be
-ms.sourcegitcommit: 07ae7007c79c998bbf3b8cf37808daf0eec68ad1
+ms.openlocfilehash: 6121403dd5d384be5ec969a417c42dc41e90e69b
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72447000"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74934953"
 ---
 # <a name="configuring-super-users-for-azure-information-protection-and-discovery-services-or-data-recovery"></a>为 Azure 信息保护和发现服务或数据恢复配置超级用户
 
@@ -42,7 +42,7 @@ Azure 信息保护中的 Azure Rights Management 服务超级用户功能可确�
 
 默认情况下，超级用户功能未启用，并且没有向任何用户分配此角色。 如果你为 Exchange 配置了 Rights Management 连接器，则会自动启用超级用户功能，对于运行 Exchange Online、SharePoint Online 或 SharePoint Server 的标准服务，不需要该功能。
 
-如果需要手动启用超级用户功能，请使用 PowerShell cmdlet [AipServiceSuperUserFeature](/powershell/module/aipservice/enable-aipservicesuperuserfeature)，然后根据需要使用[AipServiceSuperUser](/powershell/module/aipservice/add-aipservicesuperuser) cmdlet[分配用户（或服务帐户）。AipServiceSuperUserGroup](/powershell/module/aipservice/set-aipservicesuperusergroup) cmdlet，并根据需要向此组添加用户（或其他组）。 
+如果需要手动启用超级用户功能，请使用 PowerShell cmdlet [AipServiceSuperUserFeature](/powershell/module/aipservice/enable-aipservicesuperuserfeature)，然后根据需要使用[AipServiceSuperUser](/powershell/module/aipservice/add-aipservicesuperuser) cmdlet 或[AipServiceSuperUserGroup](/powershell/module/aipservice/set-aipservicesuperusergroup) cmdlet 分配用户（或服务帐户），并根据需要向此组添加用户（或其他组）。 
 
 尽管为超级用户使用组更易管理，但请注意，出于性能原因，Azure 权限管理[缓存组成员身份](prepare.md#group-membership-caching-by-azure-information-protection)。 因此，如果需要将新用户分配为超级用户来立即解密内容，请使用 AipServiceSuperUser 添加该用户，而不是将该用户添加到使用 AipServiceSuperUserGroup 配置的现有组。
 

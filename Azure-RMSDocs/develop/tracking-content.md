@@ -14,11 +14,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
+experimental: true
+experiment_id: priyamo-test-20160729
 ms.openlocfilehash: cd70cecf84a6f346d3e88e3a7aa9cc28406fd265
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68792023"
 ---
 # <a name="how-to-enable-document-tracking-and-revocation"></a>操作说明：启用文档跟踪和撤销
@@ -35,7 +37,7 @@ ms.locfileid: "68792023"
 
 这些步骤的实现详细信息如下。
 
-## <a name="1-add-document-tracking-metadata"></a>1.添加文档跟踪元数据
+## <a name="1-add-document-tracking-metadata"></a>1. 添加文档跟踪元数据
 
 文档跟踪是 Rights Management 系统的一个功能。 通过在文档保护过程中添加特定的元数据，可以使用提供多个跟踪选项的跟踪服务门户来注册文档。
 
@@ -88,7 +90,7 @@ ms.locfileid: "68792023"
 - [IpcRegisterLicense](https://msdn.microsoft.com/library/dn974057.aspx)
 
 
-## <a name="2-register-the-document-with-the-rms-service"></a>2.向 RMS 服务注册文档
+## <a name="2-register-the-document-with-the-rms-service"></a>2. 向 RMS 服务注册文档
 
 以下是代码段，显示了设置文档跟踪元数据的示例和对跟踪系统中注册的调用。
 

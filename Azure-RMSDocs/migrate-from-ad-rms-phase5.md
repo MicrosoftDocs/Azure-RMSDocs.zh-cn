@@ -4,7 +4,7 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 5 阶段包括从 AD 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/03/2019
+ms.date: 11/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6be761f99415f3f8e2bfa9de6f27a924316de448
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.openlocfilehash: ee5ecddb5ba3c5c1add15b7e75fd2fe6f53a2271
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71684497"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935480"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的第 5 阶段。 这些过程包括[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)的步骤 10-12。
@@ -112,7 +112,7 @@ killall cfprefsd
 
     在输出中，**授权**应显示 **False**，并且对于 **SecurityGroupOjbectId** 未显示任何 GUID
 
-最后，如果使用的是 Office 2010 且已在 Windows 任务计划程序库中启用了“AD RMS 权限策略模板管理（自动）”任务，请禁用此任务，因为它不用于 Azure 信息保护客户端。 此任务通常是使用组策略启用的，它支持 AD RMS 部署。 可以在以下位置找到此任务：“Microsoft” > “Windows” > “Active Directory Rights Management Services 客户端”
+最后，如果使用的是 Office 2010 且已在 Windows 任务计划程序库中启用了“AD RMS 权限策略模板管理（自动）”任务，请禁用此任务，因为它不用于 Azure 信息保护客户端。 此任务通常是使用组策略启用的，它支持 AD RMS 部署。 可在以下位置中找到此任务：“Microsoft” > “Windows” > “Active Directory Rights Management Services 客户端”
 
 ## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>步骤 12： 重新生成 Azure 信息保护租户密钥
 
@@ -128,11 +128,11 @@ killall cfprefsd
 
 重新生成 Azure 信息保护租户密钥：
 
-- **如果租户密钥由 Microsoft 托管**：运行 PowerShell cmdlet [AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) ，并指定为你的租户自动创建的密钥的密钥标识符。 可以通过运行[AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet 来确定要指定的值。 为租户自动创建的密钥包含最早创建日期，因此可以使用以下命令对其进行标识：
+- **如果你的租户密钥由 Microsoft 管理**：请运行 PowerShell cmdlet [AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties)并指定为你的租户自动创建的密钥的密钥标识符。 可以通过运行[AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet 来确定要指定的值。 为租户自动创建的密钥包含最早创建日期，因此可以使用以下命令对其进行标识：
     
         (Get-AipServiceKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-- **如果租户密钥由你管理 (BYOK)** ：在 Azure Key Vault 中，为 Azure 信息保护租户重复密钥创建过程，然后再次运行[AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet 以指定此新密钥的 URI。 
+- **如果你的租户密钥由你管理（BYOK）** ：在 Azure Key Vault 中，为 Azure 信息保护租户重复密钥创建过程，然后再次运行[AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet 以指定此新密钥的 URI。 
 
 若要详细了解如何管理 Azure 信息保护租户密钥，请参阅 [Azure 信息保护租户密钥操作](./operations-tenant-key.md)。
 

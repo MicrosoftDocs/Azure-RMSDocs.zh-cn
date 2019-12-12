@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: 8f1ef9e1ca46037243e170a59717be74954d4cb1
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560277"
 ---
 # <a name="class-mipfileengine"></a>class mip::FileEngine 
@@ -21,16 +21,16 @@ ms.locfileid: "73560277"
 --------------------------------|---------------------------------------------
 public const Settings& GetSettings() const  |  返回引擎设置。
 public const std：： vector\<std：： shared_ptr\<SensitivityTypesRulePackage\>\>& ListSensitivityTypes （） const  |  列出与策略引擎关联的敏感度类型。
-public const std：： shared_ptr\<标签\> GetDefaultSensitivityLabel （） const  |  获取默认敏感度标签。
-public std：： shared_ptr\<标签\> GetLabelById （const std：： string & id） const  |  根据提供的 id 获取标签。
-public const std：： vector\<std：： shared_ptr\<Label\>\>& ListSensitivityLabels （）  |  返回敏感度标签列表。
+public const std：： shared_ptr\<Label\> GetDefaultSensitivityLabel （） const  |  获取默认敏感度标签。
+public std：： shared_ptr\<Label\> GetLabelById （const std：： string & id） const  |  根据提供的 id 获取标签。
+public const std：： vector\<std：： shared_ptr\<标签\>\>& ListSensitivityLabels （）  |  返回敏感度标签列表。
 public const std::string& GetMoreInfoUrl() const  |  提供用于查找有关策略/标签详细信息的 URL。
 public const std：： string & GetPolicyFileId （） const  |  获取策略文件 ID。
 public const std：： string & GetSensitivityFileId （） const  |  获取敏感度文件 ID。
 public bool IsLabelingRequired() const  |  检查策略是否规定必须标记文档。
 public std：： chrono：： time_point\<std：： chrono：： system_clock\> GetLastPolicyFetchTime （） const  |  获取上次提取策略的时间。
-public void CreateFileHandlerAsync （const std：： string & inputFilePath，const std：： string & actualFilePath，bool isAuditDiscoveryEnabled，const std：： shared_ptr\<FileHandler：：观察器\>& fileHandlerObserver，const std：： shared_ptr\<void\>& context，const std：： shared_ptr\<FileExecutionState\>& fileExecutionState）  |  开始创建给定文件路径的文件处理程序。
-public void CreateFileHandlerAsync （const std：： shared_ptr\<Stream\>& inputStream，const std：： string & actualFilePath，bool isAuditDiscoveryEnabled，const std：： shared_ptr\<FileHandler：： Observer\>&fileHandlerObserver，const std：： shared_ptr\<void\>& context，const std：： shared_ptr\<FileExecutionState\>& fileExecutionState）  |  开始创建给定文件流的文件处理程序。
+public void CreateFileHandlerAsync （const std：： string & inputFilePath，const std：： string & actualFilePath，bool isAuditDiscoveryEnabled，const std：： shared_ptr\<FileHandler：：观察程序\>& fileHandlerObserver，const std：： shared_ptr\<void\>& context，const std：： shared_ptr\<FileExecutionState\>& fileExecutionState）  |  开始创建给定文件路径的文件处理程序。
+public void CreateFileHandlerAsync （const std：： shared_ptr\<Stream\>& inputStream，const std：： string & actualFilePath，bool isAuditDiscoveryEnabled，const std：： shared_ptr\<FileHandler：： fileHandlerObserver\>& FileExecutionState，const std：： shared_ptr\<void\>& context，const std：： shared_ptr\<FileExecutionState\>&）  |  开始创建给定文件流的文件处理程序。
 public void SendApplicationAuditEvent(const std::string& level, const std::string& eventType, const std::string& eventData)  |  将特定于应用程序的事件记录到审核管道。
 public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetCustomSettings （） const  |  获取自定义设置的列表。
 public bool HasClassificationRules （） const  |  获取策略是否具有自动或建议规则。

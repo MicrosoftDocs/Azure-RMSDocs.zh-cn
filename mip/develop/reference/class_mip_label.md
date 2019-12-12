@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: 5bdc88746a8921f306d9d52dbe75f3c2b826a5b6
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560140"
 ---
 # <a name="class-miplabel"></a>class mip::Label 
@@ -27,8 +27,8 @@ public int GetSensitivity() const  |  获取标签的敏感度。
 public const std::string& GetTooltip() const  |  获取标签的工具提示说明。
 public const std：： string & GetAutoTooltip （） const  |  获取导致应用此标签的分类的工具提示说明。
 public bool IsActive() const  |  获取一个布尔值，指示标签是否处于活动状态。
-public std：： weak_ptr\<标签\> GetParent （） const  |  获取父标签。
-public const std：： vector\<std：： shared_ptr\<Label\>\>& GetChildren （） const  |  获取当前标签的子标签。
+public std：： weak_ptr\<Label\> GetParent （） const  |  获取父标签。
+public const std：： vector\<std：： shared_ptr\<标签\>\>& GetChildren （） const  |  获取当前标签的子标签。
 public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetCustomSettings （） const  |  获取标签的自定义设置。
 public ActionSource GetActionSource() const  |  获取标签的操作源。
   

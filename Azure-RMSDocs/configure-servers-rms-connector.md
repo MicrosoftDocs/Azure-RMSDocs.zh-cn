@@ -4,7 +4,7 @@ description: 此信息可帮助你配置将使用 Azure Rights Management (RMS) 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a6a3727c559c7b2268e84790a8f9377165a5c00a
-ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
+ms.openlocfilehash: 86c908f2c53ed66853b7f3b16e02a406748055be
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71683846"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74934970"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 

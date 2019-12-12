@@ -12,10 +12,10 @@ ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
 ms.openlocfilehash: d9f1a3578a5da4abec6d61aa849388573dec3fe1
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "60179093"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
@@ -45,7 +45,7 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 ## <a name="user-applications"></a>用户应用程序
 
 可以使用 RMS SDK 2.1 或 RMS SDK 4.2 构建用户应用程序。
-4.2 版本基于 REST 客户端，其 API 特定于几种常见操作系统：iOS/OSX、Android、Linux 以及 Windows。 2.1 版本用于构建基于 Windows 的本机应用程序。
+4\.2 版本基于 REST 客户端，其 API 特定于几种常见操作系统：iOS/OSX、Android、Linux 以及 Windows。 2\.1 版本用于构建基于 Windows 的本机应用程序。
 
 ### <a name="user-application-development-guides"></a>用户应用程序开发指南
 
@@ -139,7 +139,7 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 - [AD RMS SDK](https://msdn.microsoft.com/library/cc530379.aspx) 是 RMS SDK 的第一个版本。
 - [AD RMS 脚本工具](https://msdn.microsoft.com/library/bb968797.aspx) 是 AD RMS 安装的管理工具。
 
-### <a name="see-also"></a>请参阅
+### <a name="see-also"></a>另请参阅
 
 - [开发人员术语](terms.md)
 - [Azure 信息保护的术语 - IT 专业人员](../terminology.md)

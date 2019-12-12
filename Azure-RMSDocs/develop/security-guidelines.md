@@ -12,10 +12,10 @@ ms.service: information-protection
 ms.suite: ems
 ms.reviewer: kartikk
 ms.openlocfilehash: eb550284cd10a3b0946bd188ca2f194edead86f0
-ms.sourcegitcommit: a5f595f8a453f220756fdc11fd5d466c71d51963
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67521202"
 ---
 # <a name="security-best-practices-for-information-protection"></a>信息保护的安全性最佳实践
@@ -68,12 +68,12 @@ Microsoft 已定义了应用程序必须满足的最低要求标准，以保护�
 ### <a name="minimum-standard"></a>最低标准
 
 - 无法在执行期间修改应用程序进程中的导入地址表。 应用程序指定许多在运行时通过使用地址表调用的函数。 无法在运行时期间或之后更改这些表。 除此之外，此限制意味着无法对通过使用生产证书签名的应用程序执行代码分析。
-- 无法从清单中指定的任何 DLL 内调用 DebugBreak 函数  。
-- 无法调用设置有 DONT_RESOLVE_DLL_REFERENCES 标志的 LoadLibrary   。 此标志会指示加载器跳过绑定到导入的模块，因此修改了导入地址表。
+- 无法从清单中指定的任何 DLL 内调用 DebugBreak 函数。
+- 无法调用设置有 DONT_RESOLVE_DLL_REFERENCES 标志的 LoadLibrary。 此标志会指示加载器跳过绑定到导入的模块，因此修改了导入地址表。
 - 无法通过对 /DELAYLOAD 链接器开关执行运行时或后续更改来更改延迟加载。
 - 无法通过提供自己拥有的 Delayimp.lib helper 函数版本来更改延迟加载。
 - 存在信息保护 SDK 环境时，无法卸载由已通过验证的模块延迟加载的模块。
-- 无法使用 `/DELAY:UNLOAD` 链接器开关实现延迟模块卸载  。
+- 无法使用 `/DELAY:UNLOAD` 链接器开关实现延迟模块卸载。
 
 ## <a name="incorrectly-interpreting-license-rights"></a>错误地解释许可证权限
 
@@ -81,14 +81,14 @@ Microsoft 已定义了应用程序必须满足的最低要求标准，以保护�
 
 ### <a name="azure-information-protection-aip"></a>Azure 信息保护 (AIP)
 
-信息保护系统将权限编为几组。 有关详细信息，请参阅[为 Azure 信息保护配置使用权限](../configure-usage-rights.md)。
+信息保护系统将权限组织成几组。 有关详细信息，请参阅[配置 Azure 信息保护的使用权限](../configure-usage-rights.md)。
 
-AIP 使用户能够解密或不能够解密信息。 信息没有任何固有保护。 如果用户有权解密，API 则允许此操作。 应用程序负责在信息明确后管理或保护信息。 应用程序是负责管理其环境和接口，防止信息遭到未经授权地使用。 例如，如果许可证仅授予“查看”权限，则禁用“打印”和“复制”按钮   。 测试套件应验证应用程序是否根据其所识别的所有许可证权限进行正确地操作。
+AIP 使用户能够解密或不能够解密信息。 信息没有任何固有保护。 如果用户有权解密，API 则允许此操作。 应用程序负责在信息明确后管理或保护信息。 应用程序是负责管理其环境和接口，防止信息遭到未经授权地使用。 例如，如果许可证仅授予“查看”权限，则禁用“打印”和“复制”按钮。 测试套件应验证应用程序是否根据其所识别的所有许可证权限进行正确地操作。
 
 ### <a name="minimum-standard"></a>最低标准
 
 - 如 XrML 规范中所述，XrML v.1.2 权限的客户实现应与这些权限的定义相一致，可在 XrML 网站 (http://www.xrml.org) ) 上查看这些规范。 必须为所有对应用程序感兴趣的实体定义特定于应用程序的权限。
-- 测试套件和测试过程应验证应用程序是否根据应用程序所支持的权限进行正确地操作。 它还应验证此应用程序不会根据不受支持的权限采取行动  。
+- 测试套件和测试过程应验证应用程序是否根据应用程序所支持的权限进行正确地操作。 它还应验证此应用程序不会根据不受支持的权限采取行动。
 - 如果你正在构建发布应用程序，必须提供可解释所使用的内在权限的信息。 这包括此发布应用程序支持和不支持的权限，以及应如何解释这些权限。 此外，用户界面应向最终用户说明每个权限授予或拒绝个别信息的含义。
 - 必须将由应用程序实现的新权限中包含的内容所抽象化的任何权限映射到新的术语。 例如，名为 MANAGER 的新权限可能将 PRINT、COPY 和 EDIT 权限包括为抽象权限。
 

@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 11/4/2019
 ms.openlocfilehash: 0187739b1f37a23051dbf6c3ddde8e992757f088
-ms.sourcegitcommit: 7a8eef5eb9d6440c6e2300cb3f264da31061b00d
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73592115"
 ---
 # <a name="mip-sdk-for-c-reference"></a>MIP SDK for C 参考
@@ -19,11 +19,11 @@ ms.locfileid: "73592115"
 
 适用于 C 的 MIP SDK 包括
 
-- [计数](enumerations.md)
+- [枚举](enumerations.md)
 - [结构](structures.md)
 - 以下功能：
 
-功能 | 简要说明 |
+功能 | 简要描述 |
 |---|---|
 | [mip_cc_auth_callback](functions.md#mip_cc_auth_callback) | 用于获取 OAuth2 标记的回调函数定义 |
 | [mip_cc_consent_callback](functions.md#mip_cc_consent_callback) | 允许用户访问外部服务终结点的回调函数定义 |

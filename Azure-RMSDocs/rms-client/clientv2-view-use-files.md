@@ -1,37 +1,37 @@
 ---
 title: 通过 Azure 信息保护统一标签客户端查看受保护的文件
-description: 说明如何查看受保护的文件, 该文件要求安装 Azure 信息保护统一标签查看器。
+description: 说明如何查看受保护的文件，该文件要求安装 Azure 信息保护统一标签查看器。
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/17/2019
+ms.date: 11/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 6186c4ec5cfa52b1022a8dab416a24efd822aae2
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: d4c7ba70ab09c1fa4033babdf3dd5f5664e284ce
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71690064"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935531"
 ---
 # <a name="user-guide-view-protected-files-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端查看受保护的文件
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8，带 SP1 的 Windows 7
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 通常，你可以直接打开受保护文件进行查看。 例如，可双击电子邮件中的附件、双击文件资源管理器中的文件或单击文件的链接。
 
 如果没有立即打开文件，Azure 信息保护查看器可能会将其打开。 此查看器可以打开受保护的文本文件、受保护的图像文件、受保护的 PDF 文件，以及具有 .pfile 文件扩展名的所有文件。
 
-查看器自动安装为 Azure 信息保护统一标签客户端的一部分, 也可单独安装。 你可以从 Microsoft 网站上的 " [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970)" 页中安装此客户端和查看器。 有关安装该客户端的详细信息, 请参阅[下载并安装 Azure 信息保护统一标签客户端](install-unifiedlabelingclient-app.md)。
+查看器自动安装为 Azure 信息保护统一标签客户端的一部分，也可单独安装。 你可以从 Microsoft 网站上的 " [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970)" 页中安装此客户端和查看器。 有关安装该客户端的详细信息，请参阅[下载并安装 Azure 信息保护统一标签客户端](install-unifiedlabelingclient-app.md)。
 
 > [!NOTE]
-> 虽然安装客户端可提供更多功能，但它需要本地管理员权限，并且完整功能需要组织的相应服务。 例如, Azure 信息保护。
+> 虽然安装客户端可提供更多功能，但它需要本地管理员权限，并且完整功能需要组织的相应服务。 例如，Azure 信息保护。
 > 
 > 如果另一组织中的某人向你发送了受保护文档，或者你没有访问你的电脑的本地管理员权限，请安装查看器。
 
@@ -57,7 +57,7 @@ ms.locfileid: "71690064"
 
 1. 打开受保护的文件（例如，双击文件或附件，或单击文件的链接）。 如果系统提示你选择应用，请选择“Azure 信息保护查看器”。 
 
-2. 如果你看到“登录”或“注册”页面：单击“登录”，然后输入凭据。 如果受保护的文件是以附件形式发送给你的，请务必指定用于向你发送该文件的同一电子邮件地址。
+2. 如果看到“登录”或“注册”页面：请点击“登录”并输入凭据。 如果受保护的文件是以附件形式发送给你的，请务必指定用于向你发送该文件的同一电子邮件地址。
     
     如果没有被接受的帐户，请参阅本页中的[身份验证提示](#prompts-for-authentication)部分。
 
@@ -66,7 +66,7 @@ ms.locfileid: "71690064"
 4. 如果要打开其他受保护的文件，可以使用“打开”选项从查看器中直接浏览它们。 所选文件将替换查看器中的原始文件。 
 
 > [!TIP]
-> 如果受保护的文件未打开，并且已安装完整的 Azure 信息保护客户端，请尝试“重置设置”选项。 若要访问此选项, 请在 Office 应用中选择 "**敏感度**" 按钮 >**帮助和反馈** > **重置设置**。 
+> 如果受保护的文件未打开，并且已安装完整的 Azure 信息保护客户端，请尝试“重置设置”选项。 若要访问此选项，请在 Office 应用中，选择 "**敏感度**" 按钮 > "**帮助和反馈**" > **重置设置**。 
 > 
 > [有关“重置设置”选项的详细信息](clientv2-admin-guide.md#more-information-about-the-reset-settings-option)
 

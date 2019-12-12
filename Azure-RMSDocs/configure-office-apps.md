@@ -4,7 +4,7 @@ description: 面向管理员提供的有关配置 Office 应用以使用 Azure �
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6bde980df23bdfa11bd137966ab48221bdbe6512
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.openlocfilehash: fc190e6a7433457e0126976a66dbf5b04a47d140
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71684201"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935140"
 ---
 # <a name="office-apps-configuration-for-clients-to-use-the-azure-rights-management-service"></a>Office 应用：配置客户端，以使用 Azure 权限管理服务
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 
 使用此信息确定需要执行的操作，使 Office 应用可与 Azure 信息保护中的 Azure 权限保护服务配合使用。
@@ -37,7 +37,7 @@ ms.locfileid: "71684201"
 
 2. 创建新消息，在 "**选项**" 选项卡上选择 "**权限**"，然后选择 "**验证凭据**"。 出现提示时，再次指定你的 Office 365 工作或学校帐户详细信息，然后选择“登录”。
     
-    此操作将下载 Azure Rights Management 模板，并**验证凭据**现在已替换为不包含**任何限制**、不**转发**的选项，以及为你的发布的所有 Azure Rights Management 模板组织. 
+    此操作将下载 Azure Rights Management 模板，并**验证凭据**现在已替换为不包含**任何限制**、不**转发**以及为租户发布的任何 Azure Rights Management 模板的选项。 
 
 3. 现在可以取消此新邮件。
 
@@ -46,5 +46,5 @@ ms.locfileid: "71684201"
 ## <a name="office2010"></a>Office 2010
 为了使客户端计算机能够将 Azure Rights Management 服务用于 Office 2010，它们必须具有 Azure 信息保护客户端（经典）。 用户必须使用其 Office 365 凭据登录，然后才能保护文件并使用受其他用户保护的文件，此外不再需要更多配置。
 
-有关 Azure 信息保护客户端（经典）的详细信息，请参阅 [Azure Information Protection client：客户端安装和配置](configure-client.md)。
+有关 Azure 信息保护客户端（经典）的详细信息，请参阅[Azure 信息保护客户端：安装和配置客户端](configure-client.md)。
 

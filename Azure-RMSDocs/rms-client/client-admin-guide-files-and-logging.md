@@ -4,7 +4,7 @@ description: 适用于 Windows 的 Azure 信息保护客户端的客户端文件
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/26/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,18 +13,18 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9edd0e3bcfda2d50da70e29bc807745d263f30bb
-ms.sourcegitcommit: a091cabd5ad24b4534b5f69f029843037c7872d3
+ms.openlocfilehash: 9011a6b7fc282c1e170959c31ce1e01bc22aa9c5
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71314230"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935293"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护客户端文件和客户端使用情况日志记录
 
->适用范围：*Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
+>*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 安装 Azure 信息保护客户端后，请了解文件所在位置并监控客户端的使用状况。
 
@@ -60,7 +60,7 @@ ms.locfileid: "71314230"
     
     - 删除标签：信息 ID 104
     
-    - 推荐的标签工具提示：信息 105
+    - 建议的标签工具提示：信息105
     
     - 应用自定义保护：信息 ID 201
     
@@ -68,17 +68,17 @@ ms.locfileid: "71314230"
     
     - Outlook 警告消息：信息 ID 301
     
-    - Outlook 验证消息：信息 ID 302
+    - Outlook 调整消息：信息 ID 302
     
     - Outlook 阻止消息：信息 ID 303
     
-    - 登录（可操作）：信息 ID 902
+    - 登录（操作）：信息 ID 902
     
-    - 下载策略（可操作）：信息 ID 901
+    - 下载策略（操作）：信息 ID 901
     
 - 操作源：
     
-    - 手动 
+    - Manual 
     
     - 建议
     
@@ -86,7 +86,7 @@ ms.locfileid: "71314230"
     
     - 系统（用于登录和下载策略）
     
-    - 默认
+    - 默认值
     
 - 操作前后的标签 
     

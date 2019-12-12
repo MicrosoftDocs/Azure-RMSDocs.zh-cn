@@ -8,27 +8,27 @@ ms.collection: M365-security-compliance
 ms.date: 02/04/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 68ae6bc02f671f0a4d18c382ccde4f53873b2fd4
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "60175303"
 ---
 # <a name="acquire-an-access-token-powershell"></a>获取访问令牌 (PowerShell)
 
-所示的示例演示如何调用外部的 PowerShell 脚本，以获取 OAuth2 令牌。 需要有效的 OAuth2 访问令牌的身份验证委托的实现。
+显示的示例演示如何调用外部 PowerShell 脚本以获取 OAuth2 标记。 身份验证委托的实现要求使用有效的 OAuth2 访问令牌。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
-- 完整[(MIP) SDK 设置和配置](setup-configure-mip.md)。 以及执行其他任务将在 Azure Active Directory (Azure AD) 租户中注册客户端应用程序。 Azure AD 将提供一个应用程序 ID，也称为客户端 ID，在你获取令牌的逻辑中使用。
+- 完成[（MIP） SDK 设置和配置](setup-configure-mip.md)。 在其他任务中，您将在 Azure Active Directory （Azure AD）租户中注册客户端应用程序。 Azure AD 将提供一个应用程序 ID （也称为客户端 ID），用于令牌获取逻辑。
 
-此代码不被适用于生产环境中使用。 它可能仅用于开发和了解身份验证概念。 
+此代码不用于生产。 它只能用于开发和理解身份验证概念。 
 
 ## <a name="sampleauthacquiretoken"></a>sample::auth::AcquireToken()
 
 ### <a name="authh"></a>auth.h
 
-我们创建一个名为 AcquireToken 的函数。 因为本教程将为硬编码的返回值，所以我们不采用任何参数，并返回一个字符串 （令牌）。
+我们创建一个名为 AcquireToken 的函数。 由于本教程中的返回值将是硬编码的，因此我们不接受任何参数并返回字符串（标记）。
 
 ```cpp
 //auth.h
@@ -43,7 +43,7 @@ namespace sample {
 
 ### <a name="authcpp"></a>auth.cpp
 
-源文件返回一个令牌值，将在以后的步骤中硬编码。
+源文件返回一个令牌值，此值将在以后的步骤中进行硬编码。
 
 ```cpp
 //auth.cpp
@@ -66,7 +66,7 @@ namespace sample {
 
 ### <a name="install-adalpshttpswwwpowershellgallerycompackagesadalps31942-from-ps-gallery"></a>从 PS 库安装 [ADAL.PS](https://www.powershellgallery.com/packages/ADAL.PS/3.19.4.2)
 
-如果你在完成它以前在可以跳过此步骤[(MIP) SDK 设置和配置](setup-configure-mip.md)。
+如果之前已在[（MIP） SDK 设置和配置](setup-configure-mip.md)中完成此步骤，可以跳过此步骤。
 
 ```PowerShell
 Install-Module -Name ADAL.PS

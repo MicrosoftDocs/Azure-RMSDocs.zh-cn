@@ -15,10 +15,10 @@ ms.reviewer: kartikka
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: 5150c9f3339f442f7898f273d2275cd267e8d6b8
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68791158"
 ---
 # <a name="deploying-a-service-application-into-a-different-tenant"></a>将服务应用程序部署到不同租户
@@ -28,7 +28,7 @@ ms.locfileid: "68791158"
 > [!Note]
 > 仅在服务应用程序使用对称密钥身份验证时才涉及此情形。
 
-## <a name="scenario"></a>应用场景
+## <a name="scenario"></a>方案
 公司 CoolApp 使用 Azure 信息保护 (AIP) 开发了一个服务应用程序，该应用程序会在用户从业务应用程序（如 Dynamics、SAP 或 Salesforce）导出文档时，对文档进行加密、标记和保护。 在此方案中，大型企业 ABC 购买 CoolApp 的新应用程序，因此 CoolApp 团队需将他们的解决方案部署到 ABC 的环境中。 
 
 ![在不同的租户中创建对称密钥的示例流程](../media/develop/service-app-provision.jpg)

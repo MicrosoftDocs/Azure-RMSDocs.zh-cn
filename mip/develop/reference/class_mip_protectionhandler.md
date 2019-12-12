@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: 6b5468986d62c01d2d3f0b55a57946d5fa06bab3
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560113"
 ---
 # <a name="class-mipprotectionhandler"></a>类 mip::ProtectionHandler 
@@ -19,7 +19,7 @@ ms.locfileid: "73560113"
 ## <a name="summary"></a>“摘要”
  成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public std：： shared_ptr\<Stream\> CreateProtectedStream （const std：： shared_ptr\<Stream\>& backingStream，int64_t contentStartPosition，int64_t contentSize）  |  创建允许加密/解密内容的受保护流。
+public std：： shared_ptr\<Stream\> CreateProtectedStream （const std：： shared_ptr\<流\>& backingStream，int64_t contentStartPosition，int64_t contentSize）  |  创建允许加密/解密内容的受保护流。
 public int64_t EncryptBuffer(int64_t offsetFromStart, const uint8_t* inputBuffer, int64_t inputBufferSize, uint8_t* outputBuffer, int64_t outputBufferSize, bool isFinal)  |  加密缓冲区。
 public int64_t DecryptBuffer(int64_t offsetFromStart, const uint8_t* inputBuffer, int64_t inputBufferSize, uint8_t* outputBuffer, int64_t outputBufferSize, bool isFinal)  |  解密缓冲区。
 public int64_t GetProtectedContentLength(int64_t unprotectedLength, bool includesFinalBlock)  |  如果要用此 ProtectionHandler 加密内容，则计算内容的大小（以字节为单位）。

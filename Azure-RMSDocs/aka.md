@@ -4,7 +4,7 @@ description: Azure 信息保护经过多次名称更改，你可能知道的是�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/21/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cf594e3c1c39ceae2c7f218ca2f3be4b69acafb7
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.openlocfilehash: 257fe9160a4a893d02247805d162bdb01aca5d79
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71684290"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74934817"
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure 信息保护 - 也称为...
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 Azure 信息保护（有时缩写为 AIP）由著名 Microsoft 技术长期发展而形成，实现权限管理保护。 这是个长时演变过程，你可能通过其先前名称了解到此解决方案。 或者，可能在文档、UI 和日志文件中看到对这些名称的引用。 
 

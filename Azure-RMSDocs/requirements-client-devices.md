@@ -14,10 +14,10 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: bd88649f5e66358a97bb446e4e3d7c9f43c78500
-ms.sourcegitcommit: 9484744702a82b8adc45f78e0b127a3857794d29
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74160843"
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的客户端设备

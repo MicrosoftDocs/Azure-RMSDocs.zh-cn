@@ -4,7 +4,7 @@ description: 使用客户托管的密钥（称为 "自带密钥" 或 BYOK）与 
 author: cabailey
 ms.author: cabailey
 manager: rkarlin
-ms.date: 09/22/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cc78119434cc969a97d27e5aa964be7445963638
-ms.sourcegitcommit: 6641b39a788a5c1c62fb7d9286acc83b35c76f32
+ms.openlocfilehash: 4a82afdeee9459b460b98a385102147c6c78ff28
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71198657"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935174"
 ---
 # <a name="bring-your-own-key-byok-details-for-azure-information-protection"></a>Azure 信息保护的自带密钥（BYOK）详细信息
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 
 具有包含 Azure 信息保护的订阅的组织可以将其 Azure 信息保护租户配置为使用客户托管的密钥并[记录其使用情况](log-analyze-usage.md)。 客户托管的密钥配置通常称为 "携带你自己的密钥" 或 BYOK。

@@ -15,10 +15,10 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: 00f056e5e8dae9721933e041a766f72da99bb380
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68792247"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>操作说明：使服务应用程序可以使用基于云的 RMS
@@ -28,7 +28,7 @@ ms.locfileid: "68792247"
 **重要说明**  
 为了通过 Azure RMS 使用 Rights Management Services SDK 2.1 服务应用程序，你需要创建自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](../requirements.md)
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>必备条件
 
 -   必须安装并配置 RMS SDK 2.1。 有关详细信息，请参阅 [RMS SDK 2.1 入门](getting-started-with-ad-rms-2-0.md)。
 -   必须使用对称密钥选项或通过其他方式来 [通过 ACS 创建服务标识](https://msdn.microsoft.com/library/gg185924.aspx)，并记录来自该过程的密钥信息。

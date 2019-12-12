@@ -4,7 +4,7 @@ description: 此说明是从 AD RMS 到 Azure 信息保护的迁移路径中的�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/18/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: bb23ceb2721e18f8028ec5b0bb19a2c7230d9c1f
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: fd3962a5b1020b4bf5e2db12125e4df29dc80db6
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559175"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935429"
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>步骤 2：软件保护密钥到 HSM 保护密钥的迁移
 

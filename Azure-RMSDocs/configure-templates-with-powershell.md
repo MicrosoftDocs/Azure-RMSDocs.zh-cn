@@ -4,7 +4,7 @@ description: 使用 PowerShell 创建和管理 Azure 信息保护的保护模板
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/03/2019
+ms.date: 11/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b75242487f3a32d0e6ea0f912d9bc75f8109e0fe
-ms.sourcegitcommit: 9484744702a82b8adc45f78e0b127a3857794d29
+ms.openlocfilehash: 12456200687cd907bb82a8b489414d3c9fa91bbe
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160882"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74934919"
 ---
 # <a name="powershell-reference-for-protection-templates"></a>保护模板的 PowerShell 参考
 
@@ -34,21 +34,21 @@ Azure 信息保护的保护设置保存在保护模板中。 在 Azure 门户中
 
 支持创建和管理保护模板的 cmdlet：
 
-- [AipServiceTemplate](/powershell/module/aipservice/add-aipservicetemplate)
+- [Add-AipServiceTemplate](/powershell/module/aipservice/add-aipservicetemplate)
 
-- [导出-AipServiceTemplate](/powershell/module/aipservice/export-aipservicetemplate)
+- [Export-AipServiceTemplate](/powershell/module/aipservice/export-aipservicetemplate)
 
-- [AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate)
+- [Get-AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate)
 
-- [AipServiceTemplateProperty](/powershell/module/aipservice/get-aipservicetemplateproperty)
+- [Get-AipServiceTemplateProperty](/powershell/module/aipservice/get-aipservicetemplateproperty)
 
-- [导入-AipServiceTemplate](/powershell/module/aipservice/import-aipservicetpd)
+- [Import-AipServiceTemplate](/powershell/module/aipservice/import-aipservicetpd)
 
-- [新-AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition)
+- [New-AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition)
 
-- [AipServiceTemplate](/powershell/module/aipservice/remove-aipservicetemplate)
+- [Remove-AipServiceTemplate](/powershell/module/aipservice/remove-aipservicetemplate)
 
-- [AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty)
+- [Set-AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty)
 
 
 

@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: 629e6410657fcb799e3f71c0ccb3752b82437428
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560028"
 ---
 # <a name="class-miprecommendlabelaction"></a>类 mip::RecommendLabelAction 
@@ -19,7 +19,7 @@ ms.locfileid: "73560028"
 ## <a name="summary"></a>“摘要”
  成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std：： shared_ptr\<标签\>& GetLabel （） const  |  获取建议的标签。
+public const std：： shared_ptr\<Label\>& GetLabel （） const  |  获取建议的标签。
 public const std：： vector\<std：： string\>& GetClassificationIds （） const  |  获取匹配的分类 Id 并导致显示此标签。
   
 ## <a name="members"></a>成員

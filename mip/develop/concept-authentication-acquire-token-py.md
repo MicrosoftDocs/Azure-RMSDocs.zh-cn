@@ -8,30 +8,30 @@ ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: mbaldwin
 ms.openlocfilehash: b46f478dc38e9010cc2eb221f587f3d3ca3f60a2
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69884749"
 ---
 # <a name="acquire-an-access-token-python"></a>获取访问令牌 (Python)
 
 此示例演示如何调用外部 Python 脚本来获取 OAuth2 令牌。 身份验证委托的实现要求使用有效的 OAuth2 访问令牌。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
-若要运行以下示例:
+若要运行以下示例：
 
 - 安装 Python 2.7 或更高版本。
 - 在项目中实现 utils.h/cpp。 
-- 应将 Auth.py 添加到你的项目, 并将其与生成中的二进制文件位于同一目录中。
-- 完成[(MIP) SDK 设置和配置](setup-configure-mip.md)。 在其他任务中, 您将在 Azure Active Directory (Azure AD) 租户中注册客户端应用程序。 Azure AD 将提供一个应用程序 ID (也称为客户端 ID), 用于令牌获取逻辑。
+- 应将 Auth.py 添加到你的项目，并将其与生成中的二进制文件位于同一目录中。
+- 完成[（MIP） SDK 设置和配置](setup-configure-mip.md)。 在其他任务中，您将在 Azure Active Directory （Azure AD）租户中注册客户端应用程序。 Azure AD 将提供一个应用程序 ID （也称为客户端 ID），用于令牌获取逻辑。
 
 此代码不用于生产。 它只能用于开发和理解身份验证概念。 此示例跨平台。
 
 ## <a name="sampleauthacquiretoken"></a>sample::auth::AcquireToken()
 
-在简单身份验证示例中, 我们演示了`AcquireToken()`一个简单的函数, 该函数不使用任何参数, 并返回硬编码标记值。 在此示例中，我们将重载 AcquireToken() 以接受身份验证参数并调用外部 Python 脚本来返回令牌。
+在简单身份验证示例中，我们演示了一个简单的 `AcquireToken()` 函数，该函数不使用任何参数并返回硬编码标记值。 在此示例中，我们将重载 AcquireToken() 以接受身份验证参数并调用外部 Python 脚本来返回令牌。
 
 ### <a name="authh"></a>auth.h
 
@@ -117,10 +117,10 @@ namespace sample {
 
 ## <a name="python-script"></a>Python 脚本
 
-此脚本直接通过[ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python)获取身份验证令牌。 此代码仅作为获取用于示例应用的身份验证令牌的一种方法, 不应在生产中使用。 该脚本仅适用于支持普通旧用户名/密码 http 身份验证的租户。 MFA 或基于证书的身份验证将失败。
+此脚本直接通过[ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python)获取身份验证令牌。 此代码仅作为获取用于示例应用的身份验证令牌的一种方法，不应在生产中使用。 该脚本仅适用于支持普通旧用户名/密码 http 身份验证的租户。 MFA 或基于证书的身份验证将失败。
 
 > [!NOTE] 
-> 在运行此示例之前, 必须通过运行以下命令之一来安装适用于 Python 的 ADAL:
+> 在运行此示例之前，必须通过运行以下命令之一来安装适用于 Python 的 ADAL：
 
 ```shell
 pip install adal
