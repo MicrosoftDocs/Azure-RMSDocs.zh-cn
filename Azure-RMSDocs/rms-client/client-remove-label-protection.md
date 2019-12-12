@@ -4,7 +4,7 @@ description: 说明了如何从由 Azure 信息保护标记的文件中，或从
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,18 +13,18 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 2d0053bbe6b3db3c29032d905dd34ce50ad66d55
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: 06b5e447b776f046fba4a6a563213783b3931db4
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71690166"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74933474"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>用户指南：从由 Azure 信息保护标记的文件和电子邮件中，或从受 Rights Management 保护的文件和电子邮件中，删除标签和保护
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 如果[计算机上安装了 Azure 信息保护客户端](install-client-app.md)，你可以从文件和电子邮件中删除分类标签和保护。
 
@@ -35,7 +35,7 @@ ms.locfileid: "71690166"
 
 如果想要选择其他标签或一组其他的保护设置，则无需删除标签或保护。 转而选择新的标签，必要时可定义自定义权限（若管理员允许此配置）。 
 
-在以下 Office 桌面应用程序中创建或编辑 Office 文档和电子邮件时，你可以删除其中的标签和保护：Word、Excel、PowerPoint、Outlook。 
+在 Office 桌面应用程序（**Word**、**Excel**、**PowerPoint**、**Outlook**）中创建或编辑 Office 文档和电子邮件时，你可以从中删除标签和保护。 
 
 你也可以使用**文件资源管理器**删除标签和保护，此方法支持其他文件类型，并且可以很方便地一次性从多个文件删除标签和保护。
 
@@ -49,7 +49,7 @@ ms.locfileid: "71690166"
 
 ![Azure 信息保护栏 - 编辑标签](../media/edit-label.png)
 
-如果仍未看到 "**删除标签**" 图标, 则管理员不允许你使用此选项, 因为所有文档和电子邮件都必须有标签。
+如果仍未看到 "**删除标签**" 图标，则管理员不允许你使用此选项，因为所有文档和电子邮件都必须有标签。
 
 > [!NOTE]
 > 如果没有在 Office 应用程序中看到此信息保护栏：
@@ -66,11 +66,11 @@ ms.locfileid: "71690166"
 
 2. 删除标签：在“分类和保护 - Azure 信息保护”对话框中，单击“删除标签”。 如果标签已配置为应用保护，将自动删除该保护。
 
-3. 从单个文件中删除自定义保护：在“分类和保护 - Azure 信息保护”对话框中，清除“使用自定义权限进行保护”选项。 
+3. 从单个文件删除自定义保护：在“分类和保护 - Azure 信息保护”对话框中，清除“使用自定义权限保护”选项。 
     
     如果未看到“使用自定义权限进行保护”选项，则表示管理员禁止你使用此选项。
     
-4. 从多个文件中删除自定义保护：在“分类和保护 - Azure 信息保护”对话框中，单击“删除自定义权限”。
+4. 从多个文件删除自定义保护：在“分类和保护 - Azure 信息保护”对话框中，单击“删除自定义权限”。
     
     如果未看到“删除自定义权限”选项，则表示管理员禁止你使用此选项。
 

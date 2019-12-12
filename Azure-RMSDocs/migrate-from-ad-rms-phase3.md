@@ -3,8 +3,8 @@ title: 从 AD RMS 迁移到 Azure 信息保护 - 第 3 阶段
 description: 从 AD RMS 迁移到 Azure 信息保护的第 3 阶段涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 7。
 author: cabailey
 ms.author: cabailey
-manager: barbkess
-ms.date: 09/03/2019
+manager: rkarlin
+ms.date: 12/06/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e723940e418b127a46405166368a96867784799c
-ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
+ms.openlocfilehash: 613dcf3e6b35ed801fafc7718dbb0db8b664483c
+ms.sourcegitcommit: 07b518c780f5e63eb5a72d7499ec7cfa40a95628
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71684565"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74898919"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
@@ -64,7 +64,7 @@ ms.locfileid: "71684565"
     |-----------|-----------|  
     |**域**|_tcp.rmscluster.contoso.com|  
     |**服务**|_rmsredir|  
-    |**协议**|_http|  
+    |**Protocol**|_http|  
     |**优先级**|0|  
     |**权重**|0|  
     |**端口号**|80|  
@@ -74,17 +74,19 @@ ms.locfileid: "71684565"
 
     a. 在群集中的某个 AD RMS 服务器上，启动 Internet Information Services (IIS) 管理器控制台。
 
-    b。 导航到“默认网站” > “_wmcs” > “许可” > “licensing.asmx”
+    b。 导航到 "**默认**网站"，然后展开 **_wmcs**。
 
-    c. 右键单击“licensing.asmx” > “属性” > “编辑”
+    c. 右键单击 "**授权**"，然后选择 "**切换到内容视图**"。
 
-    d. 在“licensing.asmx 权限”对话框中，选择“用户”以为所有用户设置重定向，或单击“添加”并指定包含需重定向用户的组。
+    d. 在详细信息窗格中，右键单击 " **license** > **属性**" > "**编辑**"
+
+    e. 在 " **license 的权限**" 对话框中，选择 "**用户**" （如果要为所有用户设置重定向），或单击 "**添加**"，然后指定包含要重定向的用户的组。
     
     即使所有用户都使用支持 DNS 重定向的 Office 版本，最好还是先指定部分用户来进行分阶段迁移。
     
-    e. 对于所选组，为“**读取和执行**”及“**读取**”权限选择“**拒绝**”，然后两次单击“**确定**”。
+    f. 对于所选组，为“**读取和执行**”及“**读取**”权限选择“**拒绝**”，然后两次单击“**确定**”。
 
-    f. 若要确认此配置按预期工作，请尝试从浏览器直接连接到 licensing.asmx 文件。 应看到以下错误消息，它将触发运行 Office 365 应用或 Office 2019 或 Office 2016 的客户端查找 SRV 记录：
+    g. 若要确认此配置按预期工作，请尝试从浏览器直接连接到 licensing.asmx 文件。 应看到以下错误消息，它将触发运行 Office 365 应用或 Office 2019 或 Office 2016 的客户端查找 SRV 记录：
     
     **错误消息 401.3: 无权使用所提供的凭据查看此目录或页面（由于访问控制列表，访问被拒绝）。**
 

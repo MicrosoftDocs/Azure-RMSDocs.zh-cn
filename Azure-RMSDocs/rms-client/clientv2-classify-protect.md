@@ -12,10 +12,10 @@ ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
 ms.openlocfilehash: 7eb4b4223f9fb8c53aec3ebe341384001175feda
-ms.sourcegitcommit: bc45a127fc4d5871f6e7b3bba8774bcfb194397a
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74661832"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端进行分类和保护

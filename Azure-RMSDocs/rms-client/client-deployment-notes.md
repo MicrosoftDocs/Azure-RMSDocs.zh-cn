@@ -4,7 +4,7 @@ description: 关于安装、支持的操作系统、注册表设置以及 Rights
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: fab25bc33a6db5f8590f9baecf63efef5aa18864
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: f1c4afabe2746e9283eb4e341edc4bee16844558
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561216"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935701"
 ---
 # <a name="rights-management-service-client-deployment-notes"></a>Rights Management Service 客户端部署说明
 

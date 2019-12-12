@@ -4,19 +4,19 @@ description: 在 Windows 上安装用于标记为分类和保护的 PDF 文档�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/22/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: kartikka
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 4f51ccb9bf11f6d692978cb24cf5b9bad186c690
-ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
+ms.openlocfilehash: 3fbf6b04f6c9b67e8b0b3a9f679428c4af0a6505
+ms.sourcegitcommit: 6f3379705e781fbba1755e34637c7f941da4559e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445127"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907451"
 ---
 # <a name="install-a-pdf-reader-for-windows"></a>安装适用于 Windows 的 PDF 读取器
 
@@ -26,7 +26,7 @@ ms.locfileid: "73445127"
 
 **支持的版本**： windows 10 和以前版本通过 Windows 7 Service Pack 1
 
-说明 
+说明： 
 
 1. 阅读[Adobe 一般使用条款](https://www.adobe.com/legal/terms.html)。
 
@@ -34,7 +34,9 @@ ms.locfileid: "73445127"
 
 3. 安装适用于 Windows 的[Adobe 插件](https://go.microsoft.com/fwlink/?linkid=2050049)。
 
-4. 如果系统提示，请要求管理员[授权该插件](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-integration-with/ba-p/298396)。
+4. 如果系统提示进行管理员批准，请要求管理员授权该插件。
+    
+    本步骤的管理员说明包括在发布公告： [Adobe Acrobat Reader 与 Microsoft 信息保护的集成的公开上市](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-integration-with/ba-p/298396)。
 
 打开受保护的 PDF 文档的替代读者，这些文档符合 PDF 加密的 ISO 标准：
 

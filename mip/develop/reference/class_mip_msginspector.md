@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: d1234168e4ce3996077b705e904f5765b761ec4c
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73558614"
 ---
 # <a name="class-mipmsginspector"></a>类 mip：： MsgInspector 
@@ -40,4 +40,4 @@ public const std：： vector\<std：： unique_ptr\<MsgAttachmentData\>\>& GetA
 获取附件列表作为消息附件数据对象。
 
   
-**返回**： std：： unique_ptr 的向量<MsgAttachmentData>
+**返回**： std：： unique_ptr 的矢量<MsgAttachmentData>

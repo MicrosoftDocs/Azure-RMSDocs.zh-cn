@@ -4,7 +4,7 @@ description: 你可能想要创建和管理租户的密钥（称为 "自带密�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/11/2019
+ms.date: 11/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 585b99fa7d6960c0a340b0f63f4d696d2bd4d9ce
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: b71300cd48df45d68b785e758e066de96ac4dca7
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559154"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74934647"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 

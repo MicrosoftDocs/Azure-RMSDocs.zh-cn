@@ -13,10 +13,10 @@ ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 0ee20b6063dffd18b5067663de05c2d7a25cabd4
-ms.sourcegitcommit: ee897f9dc3580269395b63fb9aeccbd8a547fff1
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73446035"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
@@ -28,7 +28,7 @@ ms.locfileid: "73446035"
 
 你可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端。
 
-在通常几周的短暂延迟后，最新的正式发行版还会包含在 Microsoft 更新目录中，产品名称**Microsoft Azure 信息保护** > **Microsoft Azure 信息保护统一标签客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
+在通常几周的短暂延迟后，最新的正式发行版还会包含在 Microsoft 更新目录中，该目录中的产品名称为**Microsoft Azure 信息保护** > **Microsoft Azure 信息保护统一标签客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
 
 有关详细信息，请参阅[升级和维护 Azure 信息保护统一标签客户端](clientv2-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-unified-labeling-client)。
 
@@ -68,7 +68,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
     
     - 将扫描仪配置为使用同一扫描程序配置文件时，多个扫描程序可以共享相同的 SQL Server 数据库。 此配置可以更轻松地管理多个扫描仪，并缩短扫描时间。 当你使用此配置时，请始终等待扫描仪完成安装，然后再使用同一配置文件安装另一个扫描程序。
     
-    - 安装扫描程序时必须指定配置文件，并将扫描程序数据库命名为**AIPScannerUL_\<profile_name >** 。 *配置文件*参数对于 install-aipscanner 是必需的。
+    - 安装扫描程序时，必须指定配置文件，并将扫描程序数据库命名**AIPScannerUL_\<profile_name >** 。 *配置文件*参数对于 install-aipscanner 是必需的。
     
     - 即使已标记文档，也可以在所有文档上设置一个默认标签。 在 "扫描程序配置文件" 或 "存储库设置" 中，将 "重新**标记文件**" 选项设置为 "**打开**"，并选择 "新建**强制默认标签**
     
@@ -81,7 +81,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
     
     - 扫描程序周期的开始和完成时间的事件 Id 不写入 Windows 事件日志。 请改用 Azure 门户获取此信息。
     
-    - 已知问题：不能将新的和重命名的标签选作扫描仪配置文件或存储库设置的默认标签。 之一
+    - 已知问题：不能将新的和重命名的标签选作扫描仪配置文件或存储库设置的默认标签。 工作区:
         - 对于新标签：在 Azure 门户中，将要使用的[标签添加](../configure-policy-add-remove-label.md)到全局策略或作用域内策略。
         - 对于重命名标签：关闭再重新打开 Azure 门户。
     
@@ -89,7 +89,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
     
     有关其他信息，请参阅博客文章公告：[统一标签 AIP 扫描程序预览版增加了扩展功能！](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Unified-labeling-AIP-scanner-preview-brings-scaling-out-and-more/ba-p/862552)
 
-- 如果你希望以非交互方式标记文件，还可以使用 PowerShell cmdlet [set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication)的新参数（*AppId*、 *AppSecret*、 *TenantId*、 *DelegatedUser*和*OnBehalfOf*）以及新的在 Azure AD 中注册应用程序的过程。 示例方案包括用于标记文档的扫描程序和自动 PowerShell 脚本。 有关说明，请参阅如何从管理员指南以[非交互方式标记文件](clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
+- 如果要以非交互方式对文件进行标记，以及在 Azure AD 中注册应用的新过程，则 PowerShell cmdlet [set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication)具有新参数（*AppId*、 *AppSecret*、 *TenantId*、 *DelegatedUser*和*OnBehalfOf*）。 示例方案包括用于标记文档的扫描程序和自动 PowerShell 脚本。 有关说明，请参阅如何从管理员指南以[非交互方式标记文件](clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
     
     请注意， *DelegatedUser*是自上次预览版本的统一标签客户端以来的新参数，并且已注册应用的 API 权限已更改。
 
@@ -117,7 +117,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 **其他更改**
 
-- [重置设置](clientv2-admin-guide.md#more-information-about-the-reset-settings-option)现在会删除%LocalAppData%\Microsoft\MSIP\mip\\ *\<ProcessName\>* 文件夹，而不是%LocalAppData%\Microsoft\MSIP\mip\\ *\<ProcessName\>* \mipfolder.
+- [重置设置](clientv2-admin-guide.md#more-information-about-the-reset-settings-option)现在会删除%LocalAppData%\Microsoft\MSIP\mip\\ *\<ProcessName\>* 文件夹，而不是%LocalAppData%\Microsoft\MSIP\mip\\ *\<ProcessName\>* \mip 文件夹。
 
 - [Get-aipfilestatus](/powershell/module/azureinformationprotection/get-aipfilestatus)现在包含受保护文档的内容 ID。
 

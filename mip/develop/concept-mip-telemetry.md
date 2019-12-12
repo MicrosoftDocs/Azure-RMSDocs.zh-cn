@@ -8,15 +8,15 @@ ms.collection: M365-security-compliance
 ms.date: 10/01/2019
 ms.author: tommos
 ms.openlocfilehash: 3d97bdbf5307d7f0faefe6b6434b1df1ebc67798
-ms.sourcegitcommit: 487e681c9683b8adb7ae6fcfb374830bf0e5ad72
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74484847"
 ---
 # <a name="microsoft-information-protection-sdk---telemetry-configuration"></a>Microsoft 信息保护 SDK-遥测配置
 
-## <a name="telemetry"></a>遥测
+## <a name="telemetry"></a>遥测技术
 
 默认情况下，Microsoft 信息保护 SDK 会将遥测数据发送给 Microsoft。 此遥测数据可用于排查 SDK 安装基础上的 bug、质量和性能问题，我们可能不会在内部测试中捕获这些数据。 在用 SDK 实现应用程序时，如果需要，请务必让用户和管理员选择禁用遥测。
 
@@ -32,7 +32,7 @@ ms.locfileid: "74484847"
 
 #### <a name="event-heartbeat"></a>事件：检测信号
 
-| “属性”                                 | 说明                                                                            | 清理 |
+| 名称                                 | 描述                                                                            | 清理 |
 | ------------------------------------ | -------------------------------------------------------------------------------------- | -------- |
 | 应用. ApplicationId                    | 通过 mip：： ApplicationInfo 提供的应用程序标识符。                          | 否       |
 | ApplicationName                  | 通过 mip：： ApplicationInfo 提供的应用程序名称。                                | 否       |
@@ -58,11 +58,11 @@ ms.locfileid: "74484847"
 | SDKVersion                           | 与 MIP 相同。版本。                                                                   | 否       |
 | UserId                               | 用户的电子邮件地址。                                                             | **是**  |
 | UserObjectId                         | 用户 Azure AD 对象 ID。                                                        | 否       |
-| Version                              | 审核版本架构（"1.1"）。                                                          | 否       |
+| 版本                              | 审核版本架构（"1.1"）。                                                          | 否       |
 
 #### <a name="event-discovery"></a>事件：发现
 
-| “属性”                                 | 说明                                                                            | 清理 |
+| 名称                                 | 描述                                                                            | 清理 |
 | ------------------------------------ | -------------------------------------------------------------------------------------- | -------- |
 | ActionId                             | 用于事件关联的此事件的唯一操作 ID。                           | 否       |
 | 应用. ApplicationId                    | 通过 mip：： ApplicationInfo 提供的应用程序标识符。                          | 否       |
@@ -89,16 +89,16 @@ ms.locfileid: "74484847"
 | 平台                             | 操作系统版本。                                                              | 否       |
 | ProcessName                          | 使用 SDK 的进程的名称。                                                     | 否       |
 | 保护                            | 布尔值，指示文件是否受保护。                                       | 否       |
-| 保护                           | 保护模板标识符。                                                    | **是**  |
+| Protection                           | 保护模板标识符。                                                    | **是**  |
 | ProtectionOwner                      | 保护所有者的电子邮件地址。                                                 | **是**  |
 | SDKVersion                           | 与 MIP 相同。版本。                                                                   | 否       |
 | UserId                               | 用户的电子邮件地址。                                                             | **是**  |
 | UserObjectId                         | 用户 Azure AD 对象 ID。                                                        | 否       |
-| Version                              | 审核版本架构（"1.1"）。                                                          | 否       |
+| 版本                              | 审核版本架构（"1.1"）。                                                          | 否       |
 
 #### <a name="event-label-change"></a>事件：标签更改
 
-| “属性”                                 | 说明                                                                            | 清理 |
+| 名称                                 | 描述                                                                            | 清理 |
 | ------------------------------------ | -------------------------------------------------------------------------------------- | -------- |
 | ActionId                             | 用于事件关联的此事件的唯一操作 ID。                           | 否       |
 | ActionIdBefore                       | 上一个操作 ID。 用于链接到新操作 ID。                                    | 否       |
@@ -132,7 +132,7 @@ ms.locfileid: "74484847"
 | 产品版本                      |                                                                                        | 否       |
 | 保护                            | 布尔值，指示文件是否受保护。                                       | 否       |
 | 之前的保护                     | 布尔值，指示文件以前是否受保护。                           | 否       |
-| 保护                           | 保护模板标识符。                                                    | 否       |
+| Protection                           | 保护模板标识符。                                                    | 否       |
 | 之前的保护                    | 之前的保护模板标识符。                                           | 否       |
 | ProtectionContentId                  | 新内容标识符（GUID）。                                                     | 否       |
 | ProtectionContentIdBefore            | 上一个内容标识符（GUID）。                                                | 否       |
@@ -141,7 +141,7 @@ ms.locfileid: "74484847"
 | SDKVersion                           | 与 MIP 相同。版本。                                                                   | 否       |
 | UserId                               | 用户的电子邮件地址。                                                             | **是**  |
 | UserObjectId                         | 用户 Azure AD 对象 ID。                                                        | 否       |
-| Version                              | 审核版本架构（"1.1"）。                                                          | 否       |
+| 版本                              | 审核版本架构（"1.1"）。                                                          | 否       |
 
 
 ### <a name="opting-out-in-c"></a>选择退出C++

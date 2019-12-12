@@ -4,7 +4,7 @@ description: 当你自己管理 Azure 信息保护租户密钥（自带密钥方
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/28/2019
+ms.date: 12/06/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 682ed03cfafa9dad1d9696d51e0b64c71dea6fa3
-ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
+ms.openlocfilehash: 0381e5d6368587a6e743caefd519fc4669c6183b
+ms.sourcegitcommit: 07b518c780f5e63eb5a72d7499ec7cfa40a95628
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445049"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74898894"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
 
@@ -27,7 +27,10 @@ ms.locfileid: "73445049"
 如果你自己管理 Azure 信息保护租户密钥（自带密钥方案，简称 BYOK），请阅读以下部分，详细了解此拓扑相关的生命周期操作。
 
 ## <a name="revoke-your-tenant-key"></a>撤消你的租户密钥
-在 Azure 密钥保管库中，可以更改密钥保管库的权限，包括 Azure 信息保护租户密钥，使 Azure Rights Management 服务不再能够访问该密钥。 但是，执行此操作时，任何人都将无法打开之前使用 Azure Rights Management 服务保护的文档和电子邮件。
+
+在极少数情况下，可能需要吊销密钥，而不是重新生成密钥。 撤消密钥时，除非你有可以还原的密钥的备份，否则使用该密钥的租户所保护的所有内容将无法访问（包括 Microsoft、全局管理员和超级用户）。 撤消密钥后，你将无法保护新内容，直到你为 Azure 信息保护创建和配置新的租户密钥。 
+
+若要吊销客户托管的租户密钥，请在 Azure Key Vault 中更改包含 Azure 信息保护租户密钥的密钥保管库的权限，使 Azure Rights Management 服务无法再访问该密钥。 此操作可以有效地吊销 Azure 信息保护的租户密钥。
 
 取消 Azure 信息保护订阅时，Azure 信息保护会停止使用租户密钥，用户无需执行任何操作。
 

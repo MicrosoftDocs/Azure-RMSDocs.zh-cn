@@ -4,7 +4,7 @@ description: 为标记为分类和保护的 PDF 文档安装读取器
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/22/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -14,16 +14,18 @@ ms.suite: ems
 ms.custom: user
 search.appverid:
 - MET150
-ms.openlocfilehash: 23d9f5cf45b579542ecb9c297270bc426c2a914b
-ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
+ms.openlocfilehash: 1ab7dbd201d18289eb7823172f104d8693a3c3e3
+ms.sourcegitcommit: 6f3379705e781fbba1755e34637c7f941da4559e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73444841"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907383"
 ---
 # <a name="pdf-readers-that-support-microsoft-information-protection"></a>支持 Microsoft 信息保护的 PDF 读者
 
 如果需要打开受 Microsoft 信息保护保护的 PDF 文档，请使用以下链接和信息。
+
+受保护的 PDF 文档可能包含敏感信息。 为了增加安全性，会对文档进行加密，使未经授权的用户无法阅读该文档。 若要打开此文档，你需要一个读取器（有时称为查看器），该读者验证你是否已被授权打开文档，然后对其进行解密。
 
 ## <a name="install-pdf-readers-for-your-device"></a>为设备安装 PDF 读取器
 
@@ -42,7 +44,7 @@ ms.locfileid: "73444841"
 
 |操作系统|受支持的阅读器|
 |----------------|-----------------------------------|
-|Windows 10 及以前版本<br />通过 Windows 7 Service Pack 1|Azure 信息保护查看器<br /><br />Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br /> Nuance Power PDF<br /><br />RMS 共享应用程序|
+|Windows 10 及以前版本<br />通过 Windows 7 Service Pack 1|Azure 信息保护查看器<br /><br />Gaaiho 文档<br /><br />适用于 Adobe 的 GigaTrust 桌面 PDF 客户端<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br /> Nuance Power PDF|
 |Android|Azure 信息保护应用<br /><br />具有 RMS 的 Foxit MobilePDF<br /><br />适用于 Android 的 GigaTrust 应用|
 |iOS|Azure 信息保护应用<br /><br />具有 RMS 的 Foxit MobilePDF<br /><br />TITUS 文档|
 
@@ -67,3 +69,9 @@ Microsoft 与 Adobe 之间的协作为你提供了更简单、更一致的 PDF �
 - [Adobe Acrobat Reader 与 Microsoft 信息保护集成的公开上市](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-Integration-with/ba-p/298396)
 
 - [Adobe reader 和 Microsoft 信息保护集成常见问题解答](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Adobe-reader-and-Microsoft-Information-Protection-integration/ba-p/482219)
+
+## <a name="next-steps"></a>后续步骤
+
+使用此页中的链接安装 PDF 读取器，以便您可以打开受保护的 PDF 文档。
+
+如果在安装读者之后需要帮助，请使用该读者随附的说明和文档。 例如，对于适用于 Windows 的 Azure 信息保护查看器，请参阅[用户指南：通过 Azure 信息保护统一标签客户端查看受保护的文件](clientv2-view-use-files.md)。

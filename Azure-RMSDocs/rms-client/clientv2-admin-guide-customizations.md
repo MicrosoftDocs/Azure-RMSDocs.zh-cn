@@ -14,10 +14,10 @@ ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 1fcab238281326ff8e885f655a936392e1519eb1
-ms.sourcegitcommit: fed1df1858f8316f7dd45e751c6910b444651a87
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74474375"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
@@ -115,7 +115,7 @@ ms.locfileid: "74474375"
 
 将*AdvancedSettings*参数与[LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-labelpolicy?view=exchange-ps)和[LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-labelpolicy?view=exchange-ps)一起使用。
 
-|设置|应用场景和说明|
+|Setting|应用场景和说明|
 |----------------|---------------|
 |AttachmentAction|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 |AttachmentActionTip|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments) 
@@ -152,7 +152,7 @@ ms.locfileid: "74474375"
 
 使用带有[新标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-label?view=exchange-ps)和[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)的*AdvancedSettings*参数。
 
-|设置|应用场景和说明|
+|Setting|应用场景和说明|
 |----------------|---------------|
 |颜色|[指定标签的颜色](#specify-a-color-for-the-label)|
 |customPropertiesByLabel|[应用标签时应用自定义属性](#apply-a-custom-property-when-a-label-is-applied)|
@@ -354,7 +354,7 @@ Label applied manually
 
 - 键：ExternalContentMarkingToRemove
 
-- 键值 1：**Confidential\*** *
+- 键值 1：\*Confidential*
 
 - 键值 2： **\*Label applied*** 
 
@@ -476,7 +476,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 密钥：ReportAnIssueLink
 
-- 值：**HTTP string>\<**
+- 值：\<HTTP string>
 
 网站示例值：`https://support.contoso.com`
 
@@ -559,19 +559,19 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
     
     - 密钥： **OutlookWarnTrustedDomains**
     
-    - 值：**域名，以逗号分隔\<** **>**
+    - 值：\<域名，以逗号分隔>
 
 - 对齐消息：
     
     - 密钥： **OutlookJustifyTrustedDomains**
     
-    - 值：**域名，以逗号分隔\<** **>**
+    - 值：\<域名，以逗号分隔>
 
 - 阻止邮件：
     
     - 密钥： **OutlookBlockTrustedDomains**
     
-    - 值：**域名，以逗号分隔\<** **>**
+    - 值：\<域名，以逗号分隔>
 
 例如，你为 "**机密 \ 所有员工**" 标签指定了**OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定**OutlookJustifyTrustedDomains**和**contoso.com**的其他高级客户端设置。 因此，当用户标记为 "**机密 \ 所有员工**" 时，用户可以将电子邮件发送到 john@sales.contoso.com，但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
 
@@ -628,7 +628,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 密钥： **OutlookOverrideUnlabeledCollaborationExtensions**
 
-- 值：显示消息 **\<** 文件扩展名，以逗号分隔 **>**
+- 值： **\<** 文件扩展名以显示消息，以逗号分隔 **>**
 
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
@@ -777,7 +777,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求：安全孤岛标签为 "机密" 的文档应由 Azure 信息保护重新标记为 "机密"。
 
-在本示例中：
+在此示例中：
 
 - Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中。
 
@@ -795,7 +795,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求：通过安全孤岛标记为 "敏感" 的文档应由 Azure 信息保护重新标记为 "高度机密"。
 
-在本示例中：
+在此示例中：
 
 - Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中。
 
@@ -813,7 +813,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求：你有两个安全孤岛标签，其中包含 "内部" 一词，并且你希望 Azure 信息保护统一标签客户端将具有这些安全孤岛标签的文档重新标记为 "常规"。
 
-在本示例中：
+在此示例中：
 
 - Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中。
 
@@ -897,7 +897,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求： Azure 信息保护统一标签客户端标记为 "机密" 的文档应具有名为 "分类" 的附加自定义属性，其值为 "Secret"。
 
-在本示例中：
+在此示例中：
 
 - 敏感度标签命名为 "**机密**"，并创建名为 "Secret" 的自定义**属性，其**值为 "**机密**"。
 
@@ -1012,7 +1012,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 默认情况下，Azure 信息保护的统一标签客户端会自动尝试连接到 internet，以从标记管理中心下载标签和标签策略设置： Office 365 安全与合规中心，Microsoft 365 安全中心或 Microsoft 365 相容性中心。 如果计算机在一段时间内无法连接到 internet，则可以导出和复制为统一标签客户端手动管理策略的文件。
 
-说明
+说明：
 
 1. 在 Azure AD 中选择或创建一个用户帐户，你将使用该帐户下载要在断开连接的计算机上使用的标签和策略设置。
 
@@ -1048,7 +1048,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
  
 若要更改这些文件的日志记录级别，请在注册表中找到以下值名称并将值数据设置为所需的日志记录级别：
 
-**HKEY_CURRENT_USER \SOFTWARE\Microsoft\MSIP\LogLevel**
+**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\LogLevel**
 
 将日志记录级别设置为以下值之一：
 

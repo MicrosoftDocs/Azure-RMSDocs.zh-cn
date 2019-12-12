@@ -4,7 +4,7 @@ description: 查看你是否拥有可以开始对组织的文档和电子邮件�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 01e000bfa52a92f0e9d7b58327d84d24bd17410d
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 56a61e558f72812517d21201aa6e4215624d903d
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559906"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74934579"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 

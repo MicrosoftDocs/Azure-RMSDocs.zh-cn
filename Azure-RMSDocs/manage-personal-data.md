@@ -13,10 +13,10 @@ ms.reviewer: aashishr
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: d16e6e7f0667f9ac57bf772de272d23838b793e1
-ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71966878"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
@@ -54,7 +54,7 @@ ms.locfileid: "71966878"
 
 运行[AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate) cmdlet 以获取保护模板列表。 可以使用模板 ID 获取特定模板的详细信息。 `RightsDefinitions` 对象显示个人数据，如果有的话。 
 
-示例：
+示例
 ```
 PS C:\Users> Get-AipServiceTemplate -TemplateId fcdbbc36-1f48-48ca-887f-265ee1268f51 | select *
 

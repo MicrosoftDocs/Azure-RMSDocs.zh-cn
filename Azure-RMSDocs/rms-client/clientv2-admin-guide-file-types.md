@@ -12,10 +12,10 @@ ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 9574d9e2089169878c44cb4827ac58e94f177f88
-ms.sourcegitcommit: 488a941642f82e49503b4c2c4216a003be4db054
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74666848"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端支持的文件类型
@@ -224,7 +224,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 ### <a name="to-inspect-tiff-files-by-using-ocr"></a>使用 OCR 检查 .tiff 文件
 
-当你安装 Windows TIFF IFilter 功能，然后在运行 PowerShell 会话的计算机上配置[WINDOWS Tiff Ifilter 设置](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)时， [AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令可以使用光学字符识别（OCR）检查 tiff 图像，文件扩展名为 tiff。
+如果运行 PowerShell 会话的计算机上安装 Windows TIFF IFilter 功能并配置 [Windows TIFF IFilter 设置](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)，[Set-AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令可以使用光学字符识别 (OCR) 来检查文件扩展名为 .tiff 的 TIFF 图像。
 
 对于扫描仪：查找敏感信息后，如果应使用标签对 tiff 文件进行分类和保护，请使用 PowerShell 高级设置**PFileSupportedExtensions**指定此文件扩展名，如 powershell 配置中所述，用于更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner.md#scanner-from-the-unified-labeling-client-use-powershell-to-change-which-file-types-are-protected)。
 

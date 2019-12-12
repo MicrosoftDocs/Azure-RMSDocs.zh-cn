@@ -4,7 +4,7 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 12/03/2019
+ms.date: 12/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: a7273f3ebb8a467d08e5897e0684b2ec2a3ffee2
-ms.sourcegitcommit: 1d89fb1c773c198c28b08230855d01d72f140dc0
+ms.openlocfilehash: 024e785faf06abde45177fe8049ae8c7c24294fd
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74780909"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74933287"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -52,7 +52,9 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 应使用哪种客户端？
 
-- 如果你的 Office 365 应用程序的最低版本为1910，并且你想要使用 MacOS、iOS 和 Android 也可以使用的相同标签和策略设置，则在 Windows 计算机上使用**为 office 内置的标签客户端**，你将需要使用可由、IOS 和 Android 使用的相同标签和策略设置。 这些功能包括功能区下的信息保护栏，便于选择和查看标签。 此客户端支持切换帐户，因为它不使用 Office 加载项，所以它比使用任何一个 Azure 信息保护客户端在 Office 应用中提供的性能更好。
+- 如果你的 Office 365 应用程序的最低版本为1910，并且你想要使用 MacOS、iOS 和 Android 也可以使用的相同标签和策略设置，则在 Windows 计算机上使用**为 office 内置的标签客户端**，你将需要使用可由、IOS 和 Android 使用的相同标签和策略设置。 这些功能包括功能区下的信息保护栏，便于选择和查看标签。 
+    
+    此客户端支持切换帐户，因为它不使用 Office 加载项，所以它比使用任何一个 Azure 信息保护客户端在 Office 应用中提供的性能更好。 由于在 Office 中内置了标记，因此此标签客户端无单独安装和维护。 此外，与 Office 外接程序不同的是，不能禁用。
 
 - 使用 Windows 计算机上的**Azure 信息保护统一的标签客户端**，可以使用 MacOS、IOS 和 Android 等标签和策略设置，而无需将文件独立于 Office 365 应用，也不需要经典客户端支持的功能。 这些功能目前包括使用本地密钥（HYOK）保护内容和本地数据存储的扫描程序的通用版本。
 

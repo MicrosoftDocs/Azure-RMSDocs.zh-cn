@@ -9,10 +9,10 @@ ms.date: 11/25/2019
 ms.author: mbaldwin
 manager: barbkess
 ms.openlocfilehash: a678765835785dcb40aaf65e7f92e78fba67c73a
-ms.sourcegitcommit: 487e681c9683b8adb7ae6fcfb374830bf0e5ad72
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74479116"
 ---
 # <a name="microsoft-information-protection-mip-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护（MIP） SDK 版本发行历史记录和支持策略
@@ -104,7 +104,7 @@ ms.locfileid: "74479116"
     - MIP_CC_CreateMipContext 采用 "isOfflineOnly" 和 "loggerDelegateOverride" 参数
 
 
-## <a name="version-130"></a>版本1.3。0
+## <a name="version-130"></a>版本 1.3.0
 
 **发布日期**：2019年8月22日
 
@@ -135,7 +135,7 @@ ms.locfileid: "74479116"
 * 通过 `AcquireToken()` 和 `mip::AuthDelegate::OAuth2Challenge()`的声明参数添加了对基于标签的条件性访问的支持。 尚未通过安全和合规中心门户公开此功能。
 
 
-## <a name="version-120"></a>版本1.2。0
+## <a name="version-120"></a>版本 1.2.0
 
 **发布日期**：2019年4月15日
 
@@ -159,7 +159,7 @@ ms.locfileid: "74479116"
  - 将 mip：： ContentState 重命名为 mip：:D ataState 以说明应用程序如何与高级别的数据交互。
  - mip：： AdhocProtectionRequiredError 异常由 FileHandler：： SetLabel 引发，用于通知应用程序它必须先应用即席保护，然后才能应用标签。
  - 当取消了某个操作（例如由于关闭或 HTTP 取消操作）时，将引发 mip：： OperationCancelledError 异常。
- - 新 Api：
+ - 新 API：
     - mip：： ClassificationResult：： GetSensitiveInformationDetections
     - mip：： FileEngine：： GetLastPolicyFetchTime
     - mip：： FileEngine：： GetDefaultSensitivityLabel
@@ -195,7 +195,7 @@ ms.locfileid: "74479116"
  - mip：:P olicyHandler：： NotifyCommitedActions 重命名为 mip：:P olicyHandler：： NotifyCommittedActions
 
 
-## <a name="version-110"></a>版本1.1。0
+## <a name="version-110"></a>版本 1.1.0
 
 **发布日期**：2019年1月15日
 

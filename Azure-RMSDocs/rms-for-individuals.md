@@ -4,7 +4,7 @@ description: 介绍了 RMS 个人版，这是免费的自助式订阅，适用�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3ae8fd5d09425cc48407d778062828c0d1b66032
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.openlocfilehash: 39452080b5c3696241f4257f87eb99a53e2e821c
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71684320"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74933100"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>个人 RMS 和 Azure 信息保护
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 RMS 个人版是免费的自助式订阅，适用于需要打开受 Azure 信息保护保护的文件的用户。 如果 Azure Active Directory 无法对这些用户进行身份验证，此免费登录服务会在 Azure Active Directory 中为用户创建一个帐户。 因此，这些用户现在可以使用其公司电子邮件地址进行身份验证，然后在计算机或移动设备上阅读受保护的文件。
 

@@ -4,7 +4,7 @@ description: 说明如何在使用适用于 Windows 的 Azure 信息保护客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,23 +13,23 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 9aa4c1a1a9d5c909d77f229ba1817e8de2c14cd1
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: 37857281f618957ebd9ef4d71e777adc8019b5f3
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71690286"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935718"
 ---
 # <a name="user-guide-classify-a-file-or-email-with-the-azure-information-protection-client"></a>用户指南：使用 Azure 信息保护客户端对文件或电子邮件进行分类
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类（但不保护）。 如果还需对文档和电子邮件进行保护，请参阅[分类和保护说明](client-classify-protect.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
 
-对文档和电子邮件进行分类的最简单方式是在如下 Office 桌面应用中创建和编辑它们：Word、Excel、PowerPoint、Outlook。 
+在 Office 桌面应用（Word、Excel、PowerPoint、Outlook）中创建和编辑文档和电子邮件时对其进行分类最为简单。 
 
 但是，也可使用文件资源管理器对文件进行分类。 此方法支持其他文件类型，它是一次性对多个文件进行分类的便捷方法。 
 
@@ -85,7 +85,7 @@ ms.locfileid: "71690286"
 
 2. 在“分类和保护 - Azure信息保护”对话框中，请像在 Office 应用程序中那样使用标签，这样可以按管理员定义的方式设置分类。 
     
-    如果没有标签可以选择（它们呈灰显状态）：所选的文件不支持分类。 例如：
+    如果无法选择标签（它们显示为灰色），则所选文件不支持分类。 例如：
     
     ![“分类和保护 - Azure 信息保护”对话框中无可用标签](../media/info-protect-dialog-labels-dimmed.png)
 

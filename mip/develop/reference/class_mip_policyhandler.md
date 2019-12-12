@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: 71b1a9dff879cde728e7fa1aa9e1f871d292ec4c
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560924"
 ---
 # <a name="class-mippolicyhandler"></a>类 mip::PolicyHandler 
@@ -19,8 +19,8 @@ ms.locfileid: "73560924"
 ## <a name="summary"></a>“摘要”
  成員                        | 说明                                
 --------------------------------|---------------------------------------------
-public std：： shared_ptr\<ContentLabel\> GetSensitivityLabel （const Executionstate& & state）  |  从现有内容获取敏感度标签。
-公共 std：： vector\<std：： shared_ptr\<操作\>\> ComputeActions （const Executionstate& & 状态）  |  根据所提供的状态执行处理程序中的规则，并返回要执行的操作列表。
+public std：： shared_ptr\<ContentLabel\> GetSensitivityLabel （const Executionstate& & 状态）  |  从现有内容获取敏感度标签。
+public std：： vector\<std：： shared_ptr\<操作\>\> ComputeActions （const Executionstate& & 状态）  |  根据所提供的状态执行处理程序中的规则，并返回要执行的操作列表。
 public void NotifyCommittedActions(const ExecutionState& state)  |  在应用计算操作并将数据提交到磁盘后调用。
   
 ## <a name="members"></a>成員

@@ -14,10 +14,10 @@ ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: fb4167ecc6f4dca175fe478d085a228a044416a9
-ms.sourcegitcommit: da251904c2506a07ea28a820b0f49e7ba7007a04
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74564545"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
@@ -293,7 +293,7 @@ Azure 信息保护的记录数据存储在下表中：InformationProtectionLogs_
 |TenantId|Azure AD 租户 ID |
 |AzureApplicationId|Azure AD 注册的应用程序 ID （GUID）|
 |ProcessName|承载 MIP SDK 的进程|
-|面部|标签 GUID 或 null|
+|LabelId|标签 GUID 或 null|
 |IsProtected|是否受保护：是/否 |
 |ProtectionOwner |UPN 格式的 Rights Management 所有者|
 |LabelIdBefore|更改前标记 GUID 或 null|
@@ -307,7 +307,7 @@ Azure 信息保护的记录数据存储在下表中：InformationProtectionLogs_
 |ProtectionOwnerBefore|更改前 Rights Management 所有者 |
 |UserJustification|降级或删除标签时的理由|
 |LastModifiedBy|上次修改文件的 UPN 格式的用户。 仅适用于 Office 和 SharePoint Online|
-|lastModifiedDate|格式为 YYYY-MM-DD 的 UTC-YYYY-MM-DDTHH： MM： SS：仅适用于 Office & SharePoint Online |
+|LastModifiedDate|格式为 YYYY-MM-DD 的 UTC-YYYY-MM-DDTHH： MM： SS：仅适用于 Office & SharePoint Online |
 
 
 #### <a name="examples-using-informationprotectionevents"></a>使用 InformationProtectionEvents 的示例

@@ -13,10 +13,10 @@ ms.subservice: prereqs
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 6a3ed3272eecd25bd403d6a45a82f937fe26a03a
-ms.sourcegitcommit: 801f9d138e491788a618a5b918305dc3666648b4
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72890286"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求

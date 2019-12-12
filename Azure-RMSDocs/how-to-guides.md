@@ -4,25 +4,25 @@ description: 确定使用 Azure 信息保护来分类和保护组织数据的用
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4f42951ff93e5de259ce9b952f340c5e597e3418
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: f3bc3064aa4a3a723197dcb171eaba018bca6b3e
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71689362"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74933321"
 ---
 # <a name="how-to-guides-for-common-scenarios-that-use-azure-information-protection"></a>使用 Azure 信息保护的常见应用场景的操作方法指南
 
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 可以通过多种方式使用 Azure 信息保护对组织的文档和电子邮件进行分类和选择性保护。 
 
@@ -30,10 +30,10 @@ ms.locfileid: "71689362"
 
 ## <a name="common-scenarios"></a>常见方案
 
-|场景：我希望…|说明|
+|应用场景：我想要实现以下目标……|说明|
 |----------------|---------------|
 |查找我的组织在本地存储的敏感信息|[快速入门：查找在本地存储的文件中的敏感信息](quickstart-findsensitiveinfo.md)|
-|让用户可以轻松保护包含敏感信息的电子邮件|[快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件](quickstart-label-dnf-protectedemail.md)|
+|让用户可以轻松保护包含敏感信息的电子邮件|[快速入门：为用户配置标签，以便轻松保护包含敏感信息的电子邮件](quickstart-label-dnf-protectedemail.md)|
 |让用户可以轻松地在创建或编辑数据时对数据进行分类，并在数据包含敏感信息时对其进行保护| [教程：编辑策略并创建新标签](infoprotect-quick-start-tutorial.md)|
 |让用户易于针对受保护的文档进行协作|[使用 Azure 信息保护配置可靠的文档协作](secure-collaboration-documents.md)|
 |自动保护在组织外部发送的用户电子邮件| [配置 Azure 信息保护标签的邮件流规则](configure-exo-rules.md)

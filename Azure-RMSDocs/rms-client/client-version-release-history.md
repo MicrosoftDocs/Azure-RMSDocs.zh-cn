@@ -13,10 +13,10 @@ ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 4a31e28e560325d3165f5b5e53906fa879664c7b
-ms.sourcegitcommit: ee897f9dc3580269395b63fb9aeccbd8a547fff1
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73446013"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
@@ -29,7 +29,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式版本和当前预览版（若有）。 
 
-在通常几周的短暂延迟后，最新的正式发行版也包含在 Microsoft 更新目录中，产品名称为**Microsoft Azure 信息保护** > **Microsoft Azure 信息保护客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
+在通常几周的短暂延迟后，最新的正式发行版还会包含在 Microsoft 更新目录中，其中产品名称为**Microsoft Azure 信息保护** > **Microsoft Azure 信息保护客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
 
 有关详细信息，请参阅[升级和维护 Azure 信息保护客户端](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)。
 
@@ -53,9 +53,9 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 |1.26.6.0|04/17/2018|
 |1.10.56.0|09/18/2017|
 |1.7.210.0|06/06/2017|
-|1.4.21.0|03/15/2017|
+|1.4.21.0|2017/03/15|
 |1.3.155.2|02/08/2017|
-|1.2.4.0.0|10/27/2016|
+|1.2.4.0.0|2016/10/27|
 |1.1.23.0|10/01/2016|
 
 此页上使用的日期格式为*月/日/年*。

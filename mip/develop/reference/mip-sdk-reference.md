@@ -8,10 +8,10 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: f1e5e06332cac6c0f8beba089d92654781ff6f71
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560438"
 ---
 # <a name="mip-sdk-for-c-reference"></a>MIP SDK for C++ Reference
@@ -91,7 +91,7 @@ MIP SDK for C++ 包括：
 [类 mip：： NoPermissionsError](class_mip_nopermissionserror.md)  |  用户无法访问内容。 例如，无权限、内容已撤销。
 [类 mip：： NoPolicyError](class_mip_nopolicyerror.md)  |  租户策略未配置为分类/标签。
 [类 mip：： NotSupportedError](class_mip_notsupportederror.md)  |  SDK 不支持应用程序请求执行的操作。
-[类 mip：： OperationCancelledError](class_mip_operationcancellederror.md)  |  操作已取消。
+[类 mip：： OperationCancelledError](class_mip_operationcancellederror.md)  |  已取消操作。
 [类 mip：:P olicyEngine](class_mip_policyengine.md)  |  此类提供适用于所有引擎功能的接口。
 [类 mip：:P olicyEngine：： Settings](class_mip_policyengine_settings.md)  |  定义与 PolicyEngine 关联的设置。
 [类 mip：:P olicyHandler](class_mip_policyhandler.md)  |  此类为文件上的所有策略处理程序函数提供一个接口。

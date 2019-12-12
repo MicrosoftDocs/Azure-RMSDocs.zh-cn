@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: 9eb44a39f32c2997729e6d77ddace96c580328cd
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73557746"
 ---
 # <a name="class-mipprotectionengine"></a>类 mip::ProtectionEngine 
@@ -23,10 +23,10 @@ public const Settings& GetSettings() const  |  获取引擎设置。
 public void GetTemplatesAsync （const std：： shared_ptr\<ProtectionEngine：： Observer\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用模板的集合。
 public std：： vector\<std：： string\> Templatedescriptor.gettemplates （const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用模板的集合。
 public void GetRightsForLabelIdAsync （const std：： string & documentId，const std：： string & 面部，const std：： string & ownerEmail，const std：： string & delegatedUserEmail，const std：： shared_ptr\<ProtectionEngine：： Observer\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用于标签 ID 的权限集合。
-public std：： vector\<std：： string\> GetRightsForLabelId （const std：： string & documentId，const std：： string & 面部，const std：： string & ownerEmail，const std：： string & delegatedUserEmail，const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用于 labelId 的权限集合。
+public std：： vector\<std：： string\> GetRightsForLabelId （const std：： string & documentId，const std：： string & 面部，const std：： string & delegatedUserEmail，const std：： & shared_ptr void\<\>上下文）  |  获取用户可用于 labelId 的权限集合。
 public void CreateProtectionHandlerForPublishingAsync （const ProtectionHandler：:P ublishingSettings & settings，const std：： shared_ptr\<ProtectionHandler：： Observer\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
 public std：： shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForPublishing （const ProtectionHandler：:P ublishingSettings & settings，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
-public void CreateProtectionHandlerForConsumptionAsync （const ProtectionHandler：： ConsumptionSettings & settings，const std：： shared_ptr\<ProtectionHandler：： Observer\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
+public void CreateProtectionHandlerForConsumptionAsync （const ProtectionHandler：： ConsumptionSettings & settings，const std：： shared_ptr\<ProtectionHandler：：观察器\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
 public std：： shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForConsumption （const ProtectionHandler：： ConsumptionSettings & settings，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
   
 ## <a name="members"></a>成員

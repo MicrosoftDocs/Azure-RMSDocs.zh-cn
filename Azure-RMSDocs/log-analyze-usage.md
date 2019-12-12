@@ -4,7 +4,7 @@ description: 有关如何使用 Azure 信息保护中的保护服务的使用日
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/03/2019
+ms.date: 11/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0052d3474c728518d3acdd9af3ef2d9aae1a2d0a
-ms.sourcegitcommit: afc3b5a5823c79873c822ef9274db0d29ccd5c13
+ms.openlocfilehash: 63fbe078b6f1a5cbae120e869cc139dda9c8850e
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71684350"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74934715"
 ---
 # <a name="logging-and-analyzing-the-protection-usage-from-azure-information-protection"></a>记录和分析 Azure 信息保护中的保护使用情况
 

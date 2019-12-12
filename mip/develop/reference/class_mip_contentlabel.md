@@ -7,11 +7,11 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: a29ea5be05d928f25b9a4255416d93acedcb1c0b
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73558913"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74840269"
 ---
 # <a name="class-mipcontentlabel"></a>class mip::ContentLabel 
 Microsoft 信息保护标签的抽象，应用于一段内容，通常是一个文档。
@@ -24,7 +24,7 @@ public std：： chrono：： time_point\<std：： chrono：： system_clock\> 
 public AssignmentMethod GetAssignmentMethod() const  |  获取标签的分配方法。
 public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetExtendedProperties （） const  |  获取扩展属性。
 public bool IsProtectionAppliedFromLabel() const  |  获取标签是否应用了保护的指示。
-public std：： shared_ptr\<标签\> GetLabel （） const  |  获取应用于内容的实际标签对象。
+public std：： shared_ptr\<Label\> GetLabel （） const  |  获取应用于内容的实际标签对象。
   
 ## <a name="members"></a>成員
   

@@ -4,7 +4,7 @@ description: 说明用户如何安装适用于 Windows 的 Azure 信息保护客
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,18 +13,18 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 8cd249d34574d3b0a14554a4e66e28a917fcbaf7
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: a7f9b75cfcc139ac14241ba562d89caa60bc1f5f
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71689839"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74933382"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>用户指南：下载并安装 Azure 信息保护客户端
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 
 如果管理员没有为你安装 Azure 信息保护客户端，你可自行安装。 必须是电脑的本地管理员才可安装此客户端，这样可对文档和电子邮件进行标记和保护。
@@ -52,7 +52,7 @@ ms.locfileid: "71689839"
 
 5. 如果系统提示继续操作，请单击“是”，然后等待安装完成。    
 
-6. 单击“关闭”。 开始使用 Azure 信息保护客户端之前：    
+6. 单击 **“关闭”** 。 开始使用 Azure 信息保护客户端之前：    
 
     - 如果你的计算机运行 Office 2010，请重启计算机，然后转到下一节完成最后步骤。    
         

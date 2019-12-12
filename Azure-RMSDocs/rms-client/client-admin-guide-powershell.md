@@ -13,10 +13,10 @@ ms.subservice: v1client
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 7898fd3ff15423c6a92eb2eabe6f5cb01007b076
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73561302"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
@@ -491,7 +491,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 3. 选择 " **+ 新建注册**"，创建 Web 应用/API 应用程序。 在 "**注册应用程序**" 窗格上，指定以下值，然后单击 "**注册**"：
 
-   - **名称**： `AIPOnBehalfOf`
+   - **名称**：`AIPOnBehalfOf`
         
         如果愿意的话，请指定其他名称。 该名称对于每个租户必须是唯一的。
     
@@ -527,10 +527,10 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 12. 返回 " **AIPOnBehalfOf-公开 API** " 窗格，选择 " **+ 添加作用域**"。
 
 13. 在 "**添加作用域**" 窗格中，指定以下内容，并使用建议的字符串作为示例，然后选择 "**添加作用域**"：
-    - **作用域名称**： `user-impersonation`
+    - **范围名称**：`user-impersonation`
     - **谁可以获得许可？** ：**管理员和用户**
-    - **管理员许可显示名称**： `Access Azure Information Protection scanner`
-    - **管理员同意说明**： `Allow the application to access the scanner for the signed-in user`
+    - **管理员许可显示名称**：`Access Azure Information Protection scanner`
+    - **管理员许可说明**：`Allow the application to access the scanner for the signed-in user`
     - **用户同意显示名称**： `Access Azure Information Protection scanner`
     - **用户同意说明**： `Allow the application to access the scanner for the signed-in user`
     - **状态**：**已启用**（默认值）
@@ -540,7 +540,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 15. 在 "**应用注册**" 窗格上，选择 " **+ 新建应用程序注册**"，立即创建本机应用程序。
 
 16. 在 "**注册应用程序**" 窗格上，指定以下设置，然后选择 "**注册**"：
-    - **名称**： `AIPClient`
+    - **名称**：`AIPClient`
     - **受支持的帐户类型**：**仅限此组织目录中的帐户**
     - **重定向 URI （可选）** ：**公用客户端（移动 & 桌面）** 和 `http://localhost`
 
@@ -560,7 +560,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 22. 在 "**请求 api 权限**" 窗格上，选择 "**我的 api**"。
 
-23. 在 "**选择 API** " 部分中，选择 " **APIOnBehalfOf**"，然后选中 "**用户模拟**" 复选框作为权限。 选择 "**添加权限**"。 
+23. 在 "**选择 API** " 部分中，选择 " **APIOnBehalfOf**"，然后选中 "**用户模拟**" 复选框作为权限。 选择“添加权限”。 
 
 24. 返回到 " **API 权限**" 窗格，在 "**授予许可**" 部分中，选择 "**授予管理员同意 \<*租户名称*">** 并在确认提示中选择 **"是"** 。
 

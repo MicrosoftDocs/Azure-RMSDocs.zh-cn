@@ -4,7 +4,7 @@ description: 此信息可帮助你在部署和配置 Azure 信息保护中的 Az
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/23/2019
+ms.date: 11/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 669764881af477e19ffcf9d63266fe19e1f26f92
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.openlocfilehash: b24319f4759c36190cd880335c19899401495608
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71683579"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74933355"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 为组织部署和配置 Azure 信息保护之后，请为用户、管理员和技术支持提供以下帮助和指导：
 
@@ -43,9 +43,9 @@ ms.locfileid: "71683579"
     
 -   技术支持信息
     
-    如果用户拥有 Azure 信息保护客户端，支持人员可要求他们使用“帮助和反馈”选项，获取例如 Office 版本是否无法支持保护，以及当前登录的用户帐户等信息。 还可使用此选项收集日志文件并重置客户端。 有关详细信息，请参阅管理员指南：[安装检查和故障排除](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)。
+    如果用户拥有 Azure 信息保护客户端，支持人员可要求他们使用“帮助和反馈”选项，获取例如 Office 版本是否无法支持保护，以及当前登录的用户帐户等信息。 还可使用此选项收集日志文件并重置客户端。 有关详细信息，请参阅管理员指南：[安装检查和疑难解答](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)。
     
-    如果有合法请求对受保护文档拥有完全访问权限, 请确保技术支持使用 Azure 信息保护[超级用户功能](configure-super-users.md)来请求此访问权限。 例如，法律部门或经理可能会在某员工离职后发出此类请求。
+    如果有合法请求对受保护文档拥有完全访问权限，请确保技术支持使用 Azure 信息保护[超级用户功能](configure-super-users.md)来请求此访问权限。 例如，法律部门或经理可能会在某员工离职后发出此类请求。
     
     此外，用户可能会报告的一些典型问题分为以下几类：
     
@@ -57,7 +57,7 @@ ms.locfileid: "71683579"
         
     - 与保护或使用内容相关的问题
         
-        确保用户获得了有关他们所用应用程序的相应说明，并使用 Azure 权限管理服务支持的应用程序和设备。 有关支持的应用程序和设备的详细信息, 请参阅[Azure 信息保护的要求](requirements.md)。
+        确保用户获得了有关他们所用应用程序的相应说明，并使用 Azure 权限管理服务支持的应用程序和设备。 有关支持的应用程序和设备的详细信息，请参阅[Azure 信息保护的要求](requirements.md)。
         
         若要确认 Azure Active Directory 能否授权特定用户或组保护或使用受保护内容，请使用[准备用户和组以便使用 Azure 信息保护](prepare.md)中的验证检查。
         
@@ -86,7 +86,7 @@ ms.locfileid: "71683579"
 
 1.  在 Microsoft Word 中，创建一个文档。
 
-2.  在“文件”菜单中，依次选择：“信息” > “保护文档” >  “限制访问”。
+2.  从 "**文件**" 菜单： **Info** > **保护文档** >  **限制访问**。
 
 3. 选择用于快速应用相应使用权限的模板，或选择“限制访问”，再自行选择使用权限。
 
@@ -105,7 +105,7 @@ ms.locfileid: "71683579"
 
 1.  在 Outlook 中，创建一封发送给组织内收件人地址的邮件。
 
-2.  在“选项”选项卡上：依次选择“权限”和一个选项。 例如：“不要转发”、“\<公司名称> - 机密”或“\<公司名称> - 机密，仅供查阅”。
+2.  从 "**选项**" 选项卡：**权限**> 选择一个选项。 例如：“不要转发”、“\<公司名称> - 机密”或“\<公司名称> - 机密，仅供查阅”。
 
 3.  发送电子邮件。
 
@@ -117,7 +117,7 @@ ms.locfileid: "71683579"
 
 1. 使用 Outlook 网页版创建一封电子邮件，发送给组织内的收件人。
 
-2. 选择“保护”。 除非管理员已更改默认设置，否则自动选中“不要转发”选项。 如果要更改默认设置，请选择 "**更改权限**"，然后从下拉选项中选择一个选项。 例如：“加密”或“\<公司名称> - 机密”。
+2. 选择“保护”。 除非管理员已更改默认设置，否则自动选中“不要转发”选项。 如果要更改默认设置，请选择 "**更改权限**"，然后从下拉选项中选择一个选项。 例如：**加密**或 **\<公司名称 > 机密**。
 
 3. 发送电子邮件。
 

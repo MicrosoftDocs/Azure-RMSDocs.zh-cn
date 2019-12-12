@@ -4,7 +4,7 @@ description: 有关使用 RMS 连接器在服务器上进行注册表设置的�
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3b23908748ea9b0dba587530f249c6cdb7629b50
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: 8424062fc95eebc6ea23ec9d0040a958eeaa0e1e
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71689424"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74933270"
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 连接器的注册表设置
 

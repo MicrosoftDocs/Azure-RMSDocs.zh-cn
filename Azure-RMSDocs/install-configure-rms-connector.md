@@ -4,7 +4,7 @@ description: 此信息可帮助安装并配置 Azure Rights Management (RMS) 连
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/26/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8fc9425608f0ff2556ad83292607bb84912a427b
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 1b1f98a5d01d90cc25d6ffc378201ae90711eead
+ms.sourcegitcommit: d062ddf89fcb46e489f32f0d9f7aff73c3357a9b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559677"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882043"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
@@ -46,9 +46,9 @@ ms.locfileid: "73559677"
 
     -   如果要使用 RMS 连接器的服务器配置工具，自动执行本地服务器上的注册表设置的配置，也请下载 GenConnectorConfig.ps1。
 
-3.  在你要安装 RMS 连接器的计算机上，以管理员权限运行 **RMSConnectorSetup.exe** 。
+3.  在要安装 RMS 连接器的计算机上，以管理员权限运行**rmsconnectorsetup.exe。**
 
-4.  在“Microsoft Rights Management 连接器设置”的欢迎页上，选择“在计算机上安装 Microsoft Rights Management 连接器”，然后单击“下一步”。
+4.  在 Microsoft Rights Management 连接器设置的 "欢迎" 页上，选择 **"在计算机上安装 Microsoft Rights Management 连接器**"，然后单击 "**下一步**"。
 
 5.  阅读并同意 RMS 连接器许可条款，然后单击“下一步”。
 
@@ -57,9 +57,9 @@ ms.locfileid: "73559677"
 ## <a name="entering-credentials"></a>输入凭据
 在能够配置 RMS 连接器之前，你必须输入具有足够 RMS 连接器配置权限的帐户的凭据。 例如，你可以键入 <strong>admin@contoso.com</strong>，然后指定此帐户的密码。
 
-此帐户不得要求进行多重身份验证 (MFA)，因为 Microsoft Rights Management 管理工具不支持对此帐户进行 MFA。 此外，如果使用 Azure AD 条件性访问，则不要阻止对此帐户的[旧身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)。
+此帐户不得要求进行多重身份验证（MFA），因为 Microsoft Rights Management 连接器安装程序不支持 MFA。 此外，如果使用 Azure AD 条件性访问，则不要阻止对此帐户的[旧身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)。
 
-连接器对于此密码还有一些字符限制。 不可使用具有下列任一字符的密码：& 号 ( **&** )、左括号 ( **[** )、右括号 ( **]** )、直引号 ( **"** ) 和撇号 ( **'** )。 如果你的密码包含上述任一字符，尽管在其他方案中可以使用此帐户和密码成功登录，但针对 RMS 连接器的身份验证也会失败，并且你会看到“该用户名和密码组合不正确”的错误消息。 如果此方案适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设密码使其不包含上述任一特殊字符。
+连接器设置对于此密码还有一些字符限制。 不可使用具有下列任一字符的密码：& 号 ( **&** )、左括号 ( **[** )、右括号 ( **]** )、直引号 ( **"** ) 和撇号 ( **'** )。 如果你的密码包含上述任一字符，则 RMS 连接器设置的身份验证将失败，并且你会看到错误消息 "**用户名" 和 "密码" 组合不正确**，即使你可以使用此帐户和密码在其他情况下成功登录也是如此。 如果此方案适用于你的密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重设密码使其不包含上述任一特殊字符。
 
 此外，如果你实现了[内置控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保你指定的帐户能够保护内容。 例如，如果限制为只有“IT 部门”组可以保护内容，那么在此处指定的帐户必须是该组成员。 如果不是，则会看到错误消息：**尝试发现管理服务和组织的位置失败。请确保为你的组织启用 Microsoft Rights Management 服务。**
 
@@ -76,7 +76,7 @@ ms.locfileid: "73559677"
     > 
     > 若要使用最小特权运行 RMS 连接器，请为此创建一个专用帐户，然后通过执行以下操作为帐户分配 Azure RMS 连接器管理员角色：
     >
-    > 1.  下载并安装 AIPService PowerShell 模块（如果尚未这样做）。 有关详细信息，请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
+    > 1. 下载并安装 AIPService PowerShell 模块（如果尚未这样做）。 有关详细信息，请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
     >
     >     使用 "以**管理员身份运行**" 命令启动 Windows PowerShell，并使用[AipService](/powershell/module/aipservice/connect-aipservice)命令连接到保护服务：
     >
@@ -229,7 +229,7 @@ ms.locfileid: "73559677"
 
 -   至少 1 GB 的 RAM。
 
--   至少 64 GB 的磁盘空间。
+-   至少 64 GB 的磁盘空间。
 
 -   至少一个网络接口。
 

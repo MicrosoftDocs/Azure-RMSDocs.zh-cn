@@ -4,7 +4,7 @@ description: 用于在受 Azure 信息保护保护的文档上进行协作的端
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c988dd65f677d69d362fe59f6a5eb0d631b23faa
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: b3be1b1577277b31dd515f8343870de73e258770
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561118"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74934460"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
@@ -47,11 +47,11 @@ ms.locfileid: "73561118"
 
 由于方案限制为只有特定人员拥有访问权限，因此不包括任何身份已验证的用户的设置。 有关如何使用此设置配置标签的示例，请参阅[示例 5：加密内容但不限制谁能访问内容的标签](configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it)。  
 
-1. 选择已在全局策略中或指定了作用域的策略中的标签。 在 "**保护**" 窗格上，确保选中 " **Azure （云密钥）** "。
+1. 选择已在全局策略中或指定了作用域的策略中的标签。 在“保护”窗格，确保选中“Azure (云密钥)”。
     
 2. 务必选中“设置权限”，然后选择“添加权限”。
 
-3. 在 "**添加权限**" 窗格中： 
+3. 在“添加权限”窗格： 
     
    - 对于内部组：选择“浏览目录”以选择组，而其必须启用电子邮件。
     
@@ -67,11 +67,11 @@ ms.locfileid: "73561118"
         
     ![为安全协作配置权限](./media/collaboration-permissions.png)
 
-5. 在 "**添加权限**" 窗格上单击 **"确定"** 。
+5. 在“添加权限”窗格上单击“确定”。
 
 6. 在 "**保护**" 窗格上，单击 **"确定"** 。
 
-7. 在 "**标签**" 窗格中，选择 "**保存**"。 
+7. 在“标签”窗格上，选择“保存”。 
 
 ## <a name="applying-the-label-that-supports-secure-collaboration"></a>应用支持安全协作的标签
 

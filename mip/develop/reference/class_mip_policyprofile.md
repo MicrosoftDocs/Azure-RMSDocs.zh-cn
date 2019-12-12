@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: 8feb0b93982a00c4843ea914f969ef27cf8e5ca2
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560914"
 ---
 # <a name="class-mippolicyprofile"></a>class mip::PolicyProfile 
@@ -25,7 +25,7 @@ public std：： vector\<std：： string\> ListEngines （）  |  引擎列表�
 public void UnloadEngineAsync （const std：： string & id，const std：： shared_ptr\<void\>& 上下文）  |  开始卸载具有给定 ID 的策略引擎。
 public void UnloadEngine （const std：： string & id）  |  开始卸载具有给定 ID 的策略引擎。
 public void AddEngineAsync （const PolicyEngine：： Settings & settings，const std：： shared_ptr\<void\>& 上下文）  |  开始向配置文件添加新策略引擎。
-public std：： shared_ptr\<PolicyEngine\> AddEngine （const PolicyEngine：： Settings & Settings，const std：： shared_ptr\<void\>& 上下文）  |  向配置文件添加新的策略引擎。
+public std：： shared_ptr\<PolicyEngine\> AddEngine （const PolicyEngine：： Settings & settings，const std：： shared_ptr\<void\>& 上下文）  |  向配置文件添加新的策略引擎。
 public void DeleteEngineAsync （const std：： string & id，const std：： shared_ptr\<void\>& 上下文）  |  开始删除具有给定 ID 的策略引擎。 给定配置文件的所有数据都将删除。
 public void DeleteEngine(const std::string& engineId)  |  删除具有给定 ID 的策略引擎。 给定引擎的所有数据都将被删除。
 public static MIP_API void __CDECL MIP：:P olicyProfile：： LoadAsync | 基于提供的设置开始加载配置文件。

@@ -4,7 +4,7 @@ description: 保护文档后，可跟踪用户如何使用它们。 如果用户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,18 +13,18 @@ ms.subservice: doctrack
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 39fa96ed1c355e0cef12dfd87950b9ab0c495c29
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: 537318bd21ec27d91fc1868d4c9e4ef4b6a8fa35
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71690267"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935667"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>用户指南：使用 Azure 信息保护时跟踪和撤销文档
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8，带 SP1 的 Windows 7
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 使用 Azure 信息保护来保护你的文档后，可跟踪用户如何使用这些文档。 如果用户不应再阅读这些文档，还可撤销其对这些文档的访问权限（如有必要）。 若要执行此操作，请使用“文档跟踪站点”。 可以通过 Windows 计算机、Mac 计算机甚至平板电脑和手机访问此站点。
 
@@ -61,11 +61,11 @@ ms.locfileid: "71690267"
 除非你是管理员，否则只能跟踪和撤销你所保护的文档。 你无法通过使用文档跟踪站点来跟踪受保护的电子邮件。
 
 > [!NOTE] 
-> 如果管理员已为文档跟踪站点配置了隐私控制，你可能无法看到组织中的用户访问你所跟踪的文档的时间。管理员可以豁免所有用户或仅豁免某些用户。 但是，你始终可以撤销对你所跟踪文档的访问权限。
+> 如果你的管理员已为文档跟踪站点配置了隐私控制，你可能看不到你的组织中的用户访问你跟踪的文档的时间。管理员可以免除所有用户或仅为某些用户。 但是，你始终可以撤销对你所跟踪文档的访问权限。
 
 要跟踪已保护的文档，必须使用 Windows 计算机将其注册到文档跟踪站点。 为此，请使用文件资源管理器或 Office 应用程序。
 
-如果具有 Azure 信息保护客户端的当前通用版本, 则在将*bre-walkthrough-enabletracking*参数与[set-aipfilelabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 结合使用时, 还可以使用 PowerShell 注册受保护的文档。
+如果具有 Azure 信息保护客户端的当前通用版本，则在将*bre-walkthrough-enabletracking*参数与[set-aipfilelabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 结合使用时，还可以使用 PowerShell 注册受保护的文档。
 
 ## <a name="using-office-to-track-or-revoke-the-document"></a>使用 Office 跟踪或撤销文档
 
@@ -102,17 +102,17 @@ ms.locfileid: "71690267"
 
 - 使用 Windows 电脑、Mac 计算机或移动设备，访问[文档跟踪站点](https://go.microsoft.com/fwlink/?LinkId=529562)。
 
-    **支持的浏览器**：建议使用最低版本为10的 Internet Explorer, 但你可以使用以下任一浏览器来使用文档跟踪站点:
+    **支持的浏览器**：建议使用最低版本为10的 Internet Explorer，但你可以使用以下任一浏览器来使用文档跟踪站点：
 
-    - Internet Explorer:至少版本10
+    - Internet Explorer：最低版本 10
 
-    - 包含至少 MS12 的 Internet Explorer 9-037:Internet Explorer 的累积安全更新:2012年6月12日
+    - 至少具有 2012 年 6 月 12 日发布的 Internet Explorer 累积安全更新 MS12-037 的 Internet Explorer 9
 
-    - Mozilla Firefox:最低版本12
+    - Mozilla Firefox：最低版本 12
 
-    - Apple Safari 5:最低版本5
+    - Apple Safari 5：最低版本 5
 
-    - Google Chrome:最低版本18
+    - Google Chrome：最低版本 18
 
 
 ## <a name="other-instructions"></a>其他说明

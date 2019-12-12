@@ -4,7 +4,7 @@ description: 此信息适用于以仅保护模式运行 Azure 信息保护客户
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/30/2019
+ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,18 +13,18 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 2b604593dfaf72b20e68d09fbd1928849b83ae9d
-ms.sourcegitcommit: 1e25e7a32cc0b2a3a6c9b80575927009d8a96838
+ms.openlocfilehash: f7a2a84e6a6b180685594deb6b7ea455454dd161
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71690210"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935684"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>用户指南：Azure 信息保护客户端的仅保护模式
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、Windows 7（含 SP1）*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 当 Azure 信息保护客户端没有用于对文档和电子邮件进行分类的标签，它将在仅保护模式下运行。 例如，在此模式中，当使用 Windows 文件资源管理器，右键单击“分类和保护”，可能会看到以下项：
 
@@ -59,9 +59,9 @@ ms.locfileid: "71690210"
 
 ## <a name="supported-tasks-for-protection-only-mode"></a>仅保护模式支持的任务
 
-- 通过使用 Office 信息权限管理 (IRM) 功能保护（和取消保护）Office 应用中的文档和电子邮件：例如：单击“文件” > “信息” > “保护文档” > “限制访问”。 有关详细信息，请参阅[在 Office 365、Office 2019、Office 2016 或 Office 2013 中使用信息保护](../help-users.md#using-information-protection-with-Office-365-Office 2019-Office-2016-or-Office-2013)。
+- 通过使用 Office 信息权限管理 (IRM) 功能，保护（和取消保护）Office 应用程序中的文档和电子邮件：例如，单击“文件” > “信息” > “保护文档” > “限制访问”。 有关详细信息，请参阅[在 Office 365、Office 2019、Office 2016 或 Office 2013 中使用信息保护](../help-users.md#using-information-protection-with-Office-365-Office 2019-Office-2016-or-Office-2013)。
 
-- 使用 Windows 文件资源管理器保护（和取消保护）文件：右键单击文件或文件夹，然后单击“分类和保护”。 若要应用管理员已配置的保护，请在“分类和保护 - Azure 信息保护”对话框中，单击“选择模版”，然后选择任一可用模板。
+- 通过使用 Windows 文件资源管理器保护（和取消保护）文件：右键单击单个文件、多个文件或文件夹 >“分类和保护”。 若要应用管理员已配置的保护，请在“分类和保护 - Azure 信息保护”对话框中，单击“选择模版”，然后选择任一可用模板。
 
 - 通过使用 Azure 信息保护查看器查看受保护的文件。
 

@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: a1938601e036f7fb4d84a9a5815016dbda4509b7
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73558508"
 ---
 # <a name="class-mippolicyengine"></a>class mip::PolicyEngine 
@@ -20,12 +20,12 @@ ms.locfileid: "73558508"
  成員                        | 说明                                
 --------------------------------|---------------------------------------------
 public const Settings& GetSettings() const  |  获取策略引擎设置。
-public const std：： vector\<std：： shared_ptr\<Label\>\>& ListSensitivityLabels （）  |  列出与策略引擎关联的敏感度标签。
+public const std：： vector\<std：： shared_ptr\<标签\>\>& ListSensitivityLabels （）  |  列出与策略引擎关联的敏感度标签。
 public const std：： vector\<std：： shared_ptr\<SensitivityTypesRulePackage\>\>& ListSensitivityTypes （） const  |  列出与策略引擎关联的敏感度类型。
 public const std::string& GetMoreInfoUrl() const  |  提供用于查找有关策略/标签详细信息的 URL。
 public bool IsLabelingRequired() const  |  检查策略是否规定必须标记文档。
-public std：： shared_ptr\<标签\> GetDefaultSensitivityLabel （）  |  获取默认敏感度标签。
-public std：： shared_ptr\<标签\> GetLabelById （const std：： string & id） const  |  根据提供的 id 获取标签。
+公共 std：： shared_ptr\<Label\> GetDefaultSensitivityLabel （）  |  获取默认敏感度标签。
+public std：： shared_ptr\<Label\> GetLabelById （const std：： string & id） const  |  根据提供的 id 获取标签。
 public std：： shared_ptr\<PolicyHandler\> CreatePolicyHandler （bool isAuditDiscoveryEnabled）  |  创建策略处理程序以在文件的执行状态下执行与策略相关的功能。
 public void SendApplicationAuditEvent(const std::string& level, const std::string& eventType, const std::string& eventData)  |  将特定于应用程序的事件记录到审核管道。
 public const std：： string & GetPolicyDataXml （） const  |  获取策略数据 XML，该 XML 描述与此策略关联的设置、标签和规则。

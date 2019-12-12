@@ -8,10 +8,10 @@ ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: a6e5fae2296fb6f966f5f7fb6b73facb867398a2
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560445"
 ---
 # <a name="enumerations-and-structures"></a>枚举和结构
@@ -69,15 +69,15 @@ RIGHT            | 内容标记与右侧对齐
 --------------------------------|---------------------------------------------
 标准            | 标签分配方法为标准方法
 特权            | 标签分配方法具有特权
-自动            | 标签分配方法为自动
+AUTO            | 标签分配方法为自动
 文档上标签的分配方法。 标签分配是自动完成、标准还是特权操作（相当于管理员操作）。
   
 #### <a name="actionsource-enum"></a>ActionSource 枚举
  值                         | 说明                                
 --------------------------------|---------------------------------------------
-手动            | 用户手动选择
-自动            | 按策略条件设置
-您            | 策略条件建议后按用户设置标签
+MANUAL            | 用户手动选择
+AUTOMATIC            | 按策略条件设置
+RECOMMENDED            | 策略条件建议后按用户设置标签
 DEFAULT 的信任组中的所有虚拟机的复制设置            | 默认情况下在策略中设置
 定义触发 SetLabel 事件的内容
   
@@ -86,7 +86,7 @@ DEFAULT 的信任组中的所有虚拟机的复制设置            | 默认情�
 --------------------------------|---------------------------------------------
 REST            | 以物理方式存储在数据库/文件/仓库中的非活动数据
 动作            | 遍历网络或临时驻留在计算机内存中以供读取或更新的数据
-用法            | 在物理上存储在数据库/文件/仓库等中的恒定变化的活动数据
+USE            | 在物理上存储在数据库/文件/仓库等中的恒定变化的活动数据
 定义应用程序所针对的数据的状态。
   
 #### <a name="contentformat-enum"></a>ContentFormat 枚举
@@ -162,7 +162,7 @@ LABEL_DISABLED            | 标签已禁用或处于非活动状态
  值                         | 说明                                
 --------------------------------|---------------------------------------------
 Unknown            | 未知文件检查器。
-缺少            | 消息样式文件检查器，基于 .rpmsg/消息。
+Msg            | 消息样式文件检查器，基于 .rpmsg/消息。
 与支持的文件类型关联的检查器类型。
   
 #### <a name="bodytype-enum"></a>BodyType 枚举
@@ -215,7 +215,7 @@ ADD_CONTENT_HEADER            | 向文档操作类型添加内容页眉。
 ADD_WATERMARK            | 向整个文档操作类型添加水印。
 自定义            | 自定义的操作类型。
 JUSTIFY            | 两端对齐操作类型。
-新元            | 元数据更改操作类型。
+METADATA            | 元数据更改操作类型。
 PROTECT_ADHOC            | 临时策略保护操作类型。
 PROTECT_BY_TEMPLATE            | 模板保护操作类型。
 PROTECT_DO_NOT_FORWARD            | “不转发”保护操作类型。
@@ -254,7 +254,7 @@ Label            |
  值                         | 说明                                
 --------------------------------|---------------------------------------------
 Header            | 
-尾行            | 
+页脚            | 
   
 #### <a name="labelactiondatatype-enum"></a>LabelActionDataType 枚举
  值                         | 说明                                
@@ -420,7 +420,7 @@ public std：： vector\<std：： string\> CommonRights （）       |  获取�
   
 **返回结果**：“导出”权限的字符串标识符
   
-#### <a name="extract-function"></a>提取函数
+#### <a name="extract-function"></a>Extract 函数
 获取“提取”权限的字符串标识符。
 
   

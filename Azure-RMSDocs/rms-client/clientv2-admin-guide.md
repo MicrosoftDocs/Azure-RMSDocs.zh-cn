@@ -12,10 +12,10 @@ ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 2d26e7d80a37fd5ae8b52539a09fcbb9c924a13d
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73561194"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标签客户端管理员指南
@@ -24,7 +24,7 @@ ms.locfileid: "73561194"
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
-如果你负责企业网络上的 Azure 信息保护统一标签客户端，或者如果你希望获得比[Azure 信息保护统一标签客户端用户提供的更多技术信息，请使用本指南中的信息指南](clientv2-user-guide.md)。 
+如果你负责企业网络上的 Azure 信息保护统一标签客户端，或者如果你想要获得比[Azure 信息保护统一标签客户端用户指南](clientv2-user-guide.md)中的更多技术信息，请使用本指南中的信息。 
 
 例如：
 
@@ -134,7 +134,7 @@ Azure 信息保护统一标签客户端包括以下各项：
     
     - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\Common\DRM
     
-    - HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\MSIPC
+    - HKEY_CURRENT_USER \SOFTWARE\Classes\Local Settings\Software\Microsoft\MSIPC
 
 - 当前登录的用户已注销。
 
@@ -213,7 +213,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标签客户端�
 
 - [从早于1.48.204.0 的版本升级](#upgrade-from-the-azure-information-protection-client-classic-versions-earlier-than-1482040)
 
-升级会创建一个名为**AIPScannerUL_\<profile_name >** 的新数据库，并保留以前的扫描程序数据库，以备以前的版本需要。 如果确信不需要以前的扫描程序数据库，则可以将其删除。 由于升级会创建一个新数据库，因此在首次运行时，扫描程序会重新扫描所有文件。
+升级会创建一个名为**AIPScannerUL_\<profile_name >** 的新数据库，并保留以前的扫描数据库，以备以前的版本使用。 如果确信不需要以前的扫描程序数据库，则可以将其删除。 由于升级会创建一个新数据库，因此在首次运行时，扫描程序会重新扫描所有文件。
 
 ##### <a name="upgrade-from-the-azure-information-protection-client-classic-version-1482040-and-later-versions-of-this-client"></a>从此客户端的 Azure 信息保护客户端（经典）版本1.48.204.0 和更高版本升级
 
@@ -225,7 +225,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标签客户端�
 
 3. 在 PowerShell 会话中，使用扫描仪的配置文件运行 Install-aipscanner 命令。 例如：`Update-AIPScanner –Profile Europe`。
     
-    此步骤创建名为**AIPScannerUL_\<profile_name**的新数据库 >
+    此步骤将创建名称**AIPScannerUL_\<profile_name**的新数据库 >
 
 4. 重启 Azure 信息保护扫描程序服务“Azure 信息保护扫描程序”。
 
@@ -267,7 +267,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标签客户端�
 
 - 使用控制面板卸载程序：单击“**Microsoft Azure 信息保护** > **卸载**”
 
-- 重新运行该可执行文件（例如， **AzInfoProtection_UL**），然后在 "**修改安装程序**" 页上单击 "**卸载**"。 
+- 重新运行该可执行文件（例如**AzInfoProtection_UL**），并从 "**修改安装程序**" 页上单击 "**卸载**"。 
 
 - 使用 **/uninstall** 运行可执行文件。 例如：`AzInfoProtection.exe /uninstall`
 

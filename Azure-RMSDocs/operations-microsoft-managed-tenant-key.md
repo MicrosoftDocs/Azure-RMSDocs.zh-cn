@@ -14,10 +14,10 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: ee94f0a4966ce16ae8b87f23bf4a9a734cc015a0
-ms.sourcegitcommit: fbd1834eaacb17857e59421d7be0942a9a0eefb2
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73444981"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管：租户密钥生命周期操作

@@ -13,15 +13,15 @@ ms.subservice: v1client
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: dd143b60039053d1a7b7206ab42896a702e01328
-ms.sourcegitcommit: 47d5765e1b76309a81aaf5e660256f2fb30eb2b2
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72805712"
 ---
 # <a name="azure-information-protection-client-for-windows"></a>适用于 Windows 的 Azure 信息保护客户端
 
->*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 Windows 7、windows Server 2019、windows Server 2016、Windows server 2012 R2、windows Server 2012、windows server2008 R2**
+>*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 Windows 7、windows Server 2019、windows Server 2016、Windows server 2012 R2、windows Server 2012、Windows server 2008 r2**
 >
 > *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
