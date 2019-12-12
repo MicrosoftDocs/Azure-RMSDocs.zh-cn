@@ -8,21 +8,21 @@ ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 5cd54fb4d7b153ccdec3fdd6d7919b7595cfed96
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69886105"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-engine-concepts"></a>Microsoft 信息保护 SDK - 文件 API 引擎概念
 
 MIP SDK 文件 API 中的 `mip::FileEngine` 为代表指定标识执行的所有操作提供一个接口。 将为登录到应用程序的每个用户添加一个引擎，并在该标识的上下文中执行引擎执行的所有操作。
 
-`FileEngine`具有两个主要职责:为经过身份验证的用户列出标签, 并创建文件处理程序以代表用户执行文件操作。 
+`FileEngine` 有两个主要职责：为经过身份验证的用户列出标签，并创建文件处理程序以代表用户执行文件操作。 
 
 - [`mip::FileEngine`](reference/class_mip_fileengine.md)
 - `ListSensitivityLabels()`：获取已加载引擎的标签列表。
-- `CreateFileHandler()`：`mip::FileHandler`为特定文件或流创建。
+- `CreateFileHandler()`：为特定文件或流创建 `mip::FileHandler`。
 
 ## <a name="add-a-file-engine"></a>添加文件引擎
 
@@ -32,7 +32,7 @@ MIP SDK 文件 API 中的 `mip::FileEngine` 为代表指定标识执行的所有
 
 与配置文件类似，引擎也需要设置对象 `mip::FileEngine::Settings`。 此对象存储唯一引擎标识符、可用于调试或遥测的可自定义客户端数据以及（可选）区域设置。
 
-在这里, 我们`FileEngine::Settings`将使用应用程序用户的标识创建一个名为*engineSettings*的对象。
+在这里，我们将使用应用程序用户的身份创建一个名为*engineSettings*的 `FileEngine::Settings` 对象。
 
 ```cpp
 FileEngine::Settings engineSettings(
@@ -42,7 +42,7 @@ FileEngine::Settings engineSettings(
   false);                   // Load sensitive information types for driving classification.
 ```
 
-也有效地提供自定义引擎 ID:
+也有效地提供自定义引擎 ID：
 
 ```cpp
 FileEngine::Settings engineSettings(

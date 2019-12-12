@@ -9,15 +9,15 @@ ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: tommos
 ms.openlocfilehash: df67886f53d697e47f6e812cdcbbac394acaa98d
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69884752"
 ---
 # <a name="auditing-in-the-mip-sdk-file-api"></a>MIP SDK 文件 API 中的审核
 
-Azure 信息保护管理门户提供对管理员报表的访问。 通过这些报告, 可以查看用户在已集成了 MIP SDK 的任何应用程序或服务上手动或自动应用的标签。 使用 SDK 的开发合作伙伴可以启用此功能, 以便在客户报表中显示其应用程序的信息。
+Azure 信息保护管理门户提供对管理员报表的访问。 通过这些报告，可以查看用户在已集成了 MIP SDK 的任何应用程序或服务上手动或自动应用的标签。 使用 SDK 的开发合作伙伴可以启用此功能，以便在客户报表中显示其应用程序的信息。
 
 ## <a name="event-types"></a>事件类型
 
@@ -83,4 +83,4 @@ if(commitFuture.get()) {
 
 ## <a name="next-steps"></a>后续步骤
 
-有关 Azure 信息保护中的审核体验的详细信息, 请查看[技术社区中的预览版公告博客](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)。
+有关 Azure 信息保护中的审核体验的详细信息，请查看[技术社区中的预览版公告博客](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)。

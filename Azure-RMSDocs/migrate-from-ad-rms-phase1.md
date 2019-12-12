@@ -4,7 +4,7 @@ description: 从 AD RMS 迁移到 Azure 信息保护的第 1 阶段涉及从 AD 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/03/2019
+ms.date: 11/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,21 +13,21 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c7c0de6f88262cf46398807541a929d734bd4d36
-ms.sourcegitcommit: 319c0691509748e04aecf839adaeb3b5cac2d2cf
+ms.openlocfilehash: 9bd7768d478301e090518f86bd119c99436ca8a3
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71684548"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74935497"
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 1。 这些过程涉及[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)的步骤 1 至 3，以及准备好迁移环境但确保对用户无任何影响。
 
 
-## <a name="step-1-install-the-aipservice-powershell-module-and-identify-your-tenant-url"></a>步骤 1：安装 AIPService PowerShell 模块并识别你的租户 URL
+## <a name="step-1-install-the-aipservice-powershell-module-and-identify-your-tenant-url"></a>步骤1：安装 AIPService PowerShell 模块并识别你的租户 URL
 
 安装 AIPService 模块，以便你可以配置和管理为 Azure 信息保护提供数据保护的服务。
 
@@ -55,7 +55,7 @@ ms.locfileid: "71684548"
     
             (Get-AipServiceConfiguration).LicensingIntranetDistributionPointUrl -match "https:\/\/[0-9A-Za-z\.-]*" | Out-Null; $matches[0]
 
-## <a name="step-2-prepare-for-client-migration"></a>步骤 2。 客户端迁移准备
+## <a name="step-2-prepare-for-client-migration"></a>步骤 2： 客户端迁移准备
 
 对于大多数迁移，一次性迁移所有客户端并不现实，因此很可能分批迁移客户端。 这意味着，一段时间内，一些客户端将使用 Azure 信息保护，而一些客户端仍将使用 AD RMS。 若要同时支持预迁移和已迁移用户，请使用载入控件并部署预迁移脚本。 此步骤在迁移过程期间是必需的，以便尚未迁移的用户可以使用已受已迁移用户（当前使用的是 Azure Rights Management）保护的内容。
 
@@ -77,7 +77,7 @@ ms.locfileid: "71684548"
     
 4. 提取文件，然后按照 PrepareClient.cmd 中的说明操作，使其包含 AD RMS 群集 Extranet 授权 URL 的服务器名称。 
     
-    查找此名称：在 Active Directory Rights Management Services 控制台中，单击群集名称。 在**群集详情**信息中，复制 Extranet 群集 URL 部分**授权**值的服务器名称。 例如：**rmscluster.contoso.com**.
+    若要找到此名称：在 Active Directory Rights Management Services 控制台中，请单击群集名称。 在**群集详情**信息中，复制 Extranet 群集 URL 部分**授权**值的服务器名称。 例如：**rmscluster.contoso.com**.
 
     > [!IMPORTANT]
     > 说明包括将示例地址 **adrms.contoso.com** 替换为你自己的 AD RMS 服务器地址。 执行此操作时，请注意地址前后不要有多余空格，否则将中断迁移脚本，并且很难将其认定为问题的根本原因。 某些编辑工具会在粘贴文本后自动添加一个空格。
@@ -87,7 +87,7 @@ ms.locfileid: "71684548"
 
     可以使用组策略或其他软件部署机制来部署此脚本。
 
-## <a name="step-3-prepare-your-exchange-deployment-for-migration"></a>步骤 3. 准备迁移 Exchange 部署
+## <a name="step-3-prepare-your-exchange-deployment-for-migration"></a>步骤 3： 准备迁移 Exchange 部署
 
 如果使用的是 Exchange 内部部署或 Exchange Online，可能之前已将 Exchange 与 AD RMS 部署集成过。 此步骤将对它们进行配置，以使用现有的 AD RMS 配置支持 Azure RMS 保护的内容。 
 
@@ -102,7 +102,7 @@ ms.locfileid: "71684548"
     Set-IRMConfiguration -internallicensingenabled $false
     Set-IRMConfiguration -internallicensingenabled $true 
 
-**如果已将本地 Exchange 与 AD RMS 集成**：对于每个 Exchange 组织，首先在每个 Exchange 服务器上添加注册表值，然后运行 PowerShell 命令： 
+**如果你已将 Exchange 本地环境与 AD RMS 集成**：对于每个 Exchange 组织，首先在每个 Exchange 服务器上添加注册表值，然后运行 PowerShell 命令： 
 
 Exchange 2013 和 Exchange 2016 的注册表值：
 

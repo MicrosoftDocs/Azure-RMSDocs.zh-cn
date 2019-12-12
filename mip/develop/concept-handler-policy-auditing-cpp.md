@@ -9,10 +9,10 @@ ms.collection: M365-security-compliance
 ms.date: 11/07/2018
 ms.author: tommos
 ms.openlocfilehash: 729570c902ad3175b65ddd8167005c0cb4e4078c
-ms.sourcegitcommit: fff4c155c52c9ff20bc4931d5ac20c3ea6e2ff9e
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "60175207"
 ---
 # <a name="auditing-in-the-mip-sdk"></a>MIP SDK 中的审核
@@ -41,7 +41,7 @@ Azure 信息保护管理门户提供对管理员报表的访问。 这些报表�
 
 发现事件提供关于策略 API 读取或使用的标记信息的信息。 由于这些事件可以显示设备、位置以及组织中访问信息的用户，因此它们十分有用。
 
-在策略 API 中，通过设置一个标志，在创建时生成发现事件`mip::PolicyHandler`对象。 在下面的值的示例**isAuditDiscoveryEnabled**设置为`true`。 当`mip::ExecutionState`传递给`ComputeActions()`或`GetSensitivityLabel()`（与现有元数据信息和内容标识符），发现信息将提交到 Azure 信息保护分析。
+通过在创建 `mip::PolicyHandler` 对象时设置标志，在策略 API 中生成发现事件。 在下面的示例中， **isAuditDiscoveryEnabled**的值设置为 `true`。 将 `mip::ExecutionState` 传递到 `ComputeActions()` 或 `GetSensitivityLabel()` （包含现有的元数据信息和内容标识符）时，会将发现信息提交到 Azure 信息保护分析。
 
 应用调用 `ComputeActions()` 或 `GetSensitivityLabel()` 并提供 `mip::ExecutionState` 后，便会生成发现审核。 每个处理程序仅生成一次此事件。
 
@@ -72,10 +72,10 @@ handler->NotifyCommittedActions(*state);
 
 ## <a name="audit-dashboard"></a>审核仪表板
 
-提交到 Azure 信息保护审核管道的事件将显示在 https://portal.azure.com 的报表中。 Azure 信息保护分析处于公共预览状态，功能可能会更改。
+提交到 Azure 信息保护审核管道的事件将显示在 https://portal.azure.com 的报表中。 Azure 信息保护分析提供公共预览版，并且功能/功能可能会改变。
 
 ## <a name="next-steps"></a>后续步骤
 
-- 有关 Azure 信息保护中的审核体验的详细信息，请参阅[预览公告博客上技术社区](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)。
-- 下载[从 GitHub 和重试策略相关 api 的策略 API 示例](https://azure.microsoft.com/resources/samples/?sort=0&term=mipsdk+policyapi)
+- 有关 Azure 信息保护中的审核体验的详细信息，请参阅[技术社区中的预览版公告博客](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)。
+- [从 GitHub 下载策略 Api 示例，并试用策略 api](https://azure.microsoft.com/resources/samples/?sort=0&term=mipsdk+policyapi)
 

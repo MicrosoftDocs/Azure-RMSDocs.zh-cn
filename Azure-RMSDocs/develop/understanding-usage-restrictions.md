@@ -15,10 +15,10 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
 ms.openlocfilehash: 0f94ac02b0e9d5faa42c403274d44819dad46fbd
-ms.sourcegitcommit: 9968a003865ff2456c570cf552f801a816b1db07
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68790745"
 ---
 # <a name="understanding-usage-restrictions"></a>了解使用限制
@@ -65,7 +65,7 @@ AD RMS 权限列中列出的每个用户权利都附带有一个说明、一个�
 |**IPC_GENERIC_EXPORT** <br><br> 用于从受保护的格式中提取内容并将其放在不同的 AD RMS 保护格式中的权限。 <br><br> **常见强制点**：另存为|在“另存为”对话框中，禁用保存到任何其他文件格式的功能。<br><br>**提示**如果用户尝试将此文件保存到另一种格式且不具有此权限时，最佳做法是将核心**文件** > **另存为**代码更新为失败状态。 如果你缺少可用于触发另存为的任何 UX 机制，它将充当安全网。|
 |**IPC_GENERIC_PRINT** <br><br> 打印文档内容的权限。 <br><br> **常见强制点**：打印|禁用**文件** > **打印**菜单。<br><br>禁用可用于触发打印（例如 Ctrl+P）的任何键盘快捷方式。<br><br>禁用可用来触发打印的快捷菜单项。<br><br>**提示**如果用户不具有此权限，最佳做法是将核心**文件** > **打印**代码更新为失败状态。 如果你缺少可用于触发打印的任何 UX 机制，它将充当安全网。|
 |**IPC_GENERIC_COMMENT** <br><br> 某些应用程序支持在不更新核心文档内容的情况下向文档中添加批注和注释的功能。<br><br>此权限授予用户对此功能的访问权限。 <br><br> **常见强制点**： <br><br> 查看 > 插入批注 <br><br> 查看 > 删除批注 | 禁用可用于修改文档批注或注释的任何菜单项。 示例为**查看** > **插入批注**和**查看** > **删除批注**。 <br><br>禁用可能触发修改文档批注的任何键盘快捷方式。<br><br>**请注意**默认实现需要同时使用 **IPC_GENERIC_COMMENT** 和 **IPC_GENERIC_WRITE** 来将新批注保存到文件中。 应用程序可以选择在授予了 **IPC_GENERIC_COMMENT** 权限而未授予 **IPC_GENERIC_WRITE** 权限的情况下添加支持。 在这种情况下，只要文档修改限制为仅对批注进行修改，便可以允许保存。|
-|**IPC_VIEW_RIGHTS** <br><br> 没有描述 <br><br> **常见强制点**：不可用|由系统强制实施。 除非授予此权限，否则系统将不允许开发人员从许可证查询[**用户权限列表**](https://msdn.microsoft.com/library/hh535286.aspx)。
+|**IPC_VIEW_RIGHTS** <br><br> 没有描述 <br><br> **常见强制点**：N/A|由系统强制实施。 除非授予此权限，否则系统将不允许开发人员从许可证查询[**用户权限列表**](https://msdn.microsoft.com/library/hh535286.aspx)。
 |**IPC_EDIT_RIGHTS** <br><br> 某些应用程序允许用户修改 AD RMS 保护的内容的用户和权限集。<br><br>此权限授予用户对此功能的访问权限。 <br><br> **常见强制点**：编辑 UI 控件的应用程序权限|禁止用户访问可用于编辑文档的 RMS 策略的任何 UI。|
 
 

@@ -9,10 +9,10 @@ ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: tommos
 ms.openlocfilehash: 8ade287531ee9f1c18678d42ef5e51a4c70ee13f
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69886205"
 ---
 # <a name="compute-an-action"></a>计算操作
@@ -30,7 +30,7 @@ ms.locfileid: "69886205"
 
 ## <a name="compute-an-action-for-a-new-label"></a>计算新标签的操作
 
-为新标签计算, 可以通过使用[executionstate&](concept-handler-policy-executionstate-cpp.md)中定义的`ExecutionStateImpl`来实现。 `mip::Actions`
+可以通过使用[executionstate&](concept-handler-policy-executionstate-cpp.md)中定义的 `ExecutionStateImpl`，为新标签计算 `mip::Actions`。
 
 ```cpp
 // Replace with valid label ID.
@@ -65,7 +65,7 @@ Add: MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_ContentBits : 3
 
 ## <a name="compute-actions-with-an-existing-label"></a>使用现有标签计算操作
 
-使用策略 API 时, 应用程序由应用程序从内容中读取元数据。 此元数据作为 `mip::ExecutionState` 的一部分提供给 API。 `ComputeActions()` 可以处理比将新标签应用于未标记的文档更为复杂的操作。 下面的示例演示如何将标签从更敏感的标签降级为不太敏感的标签。 此过程的模拟方法为: 读取逗号分隔的元数据字符串, 并通过`mip::ExecutionState`向 API 提供。
+使用策略 API 时，应用程序由应用程序从内容中读取元数据。 此元数据作为 `mip::ExecutionState` 的一部分提供给 API。 `ComputeActions()` 可以处理比将新标签应用于未标记的文档更为复杂的操作。 下面的示例演示如何将标签从更敏感的标签降级为不太敏感的标签。 此过程通过读取逗号分隔的元数据字符串来模拟，并通过 `mip::ExecutionState`向 API 提供。
 
 > [!NOTE]
 > 该示例使用名为 `SplitString()` 的实用程序函数。 可在[此处](https://github.com/Azure-Samples/mipsdk-policyapi-cpp-sample-basic/blob/master/mipsdk-policyapi-cpp-sample-basic/utils.cpp)找到示例
@@ -119,4 +119,4 @@ Remove: MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_ActionId
 ## <a name="next-steps"></a>后续步骤
 
 - 了解如何将[审核事件传递到 Azure 信息保护分析](concept-handler-policy-auditing-cpp.md)
-- [从 GitHub 下载策略 Api 示例, 并试用策略 api](https://azure.microsoft.com/resources/samples/?sort=0&term=mipsdk+policyapi)
+- [从 GitHub 下载策略 Api 示例，并试用策略 api](https://azure.microsoft.com/resources/samples/?sort=0&term=mipsdk+policyapi)

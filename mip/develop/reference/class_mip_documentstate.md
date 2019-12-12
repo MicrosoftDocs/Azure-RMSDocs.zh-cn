@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: 5cdcf04a68269581dc032f753247ba88e9f118d7
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73558876"
 ---
 # <a name="class-mipdocumentstate"></a>类 mip：:D ocumentState 
@@ -20,7 +20,7 @@ ms.locfileid: "73558876"
 --------------------------------|---------------------------------------------
 public std::string GetContentIdentifier() const  |  获取描述文档的内容说明。 文件示例： [path\filename] 电子邮件示例： [Subject： Sender]。
 public virtual DataState GetDataState （） const  |  获取应用程序与之交互时内容的状态。
-public std：： vector\<std：:p air\<std：： string，std：： string\>\> GetContentMetadata （const std：： vector\<std：： string\>& 名称，const std：： vector\<std：： string\>& namePrefixes）const  |  从内容中获取元数据项。
+public std：： vector\<std：:p air\<std：： string，std：： string\>\> GetContentMetadata （const std：： vector\<std：： string\>& 名称，const std：： vector\<std：： string\>& namePrefixes） const  |  从内容中获取元数据项。
 public std：： shared_ptr\<ProtectionDescriptor\> GetProtectionDescriptor （） const  |  获取保护描述符。
 public ContentFormat GetContentFormat() const  |  获取内容格式。
 public virtual std：： shared_ptr\<ClassificationResults\> GetClassificationResults （const std：： vector\<std：： shared_ptr\<ClassificationRequest\>\> &） const  |  返回分类结果的映射。
@@ -76,4 +76,4 @@ public virtual std：： shared_ptr\<ClassificationResults\> GetClassificationRe
 返回应用程序特定的审核键值对的映射。
 
   
-**返回**：特定于应用程序的审核元数据注册密钥：值对发件人：发件人收件人的电子邮件 id 的列表：表示电子邮件的收件人的 JSON 数组 LastModifiedBy：上次修改内容的用户的电子邮件 idLastModifiedDate：上次修改内容的日期
+**返回**：特定于应用程序的审核元数据注册密钥：值对发送方：发件人接收方的电子邮件 id 的列表：表示电子邮件的 LASTMODIFIEDBY 的 JSON 数组：上次修改内容的用户的电子邮件 id LastModifiedDate：上次修改内容的日期

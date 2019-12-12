@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: a3a5bde734c62859d2f2a03967a61d9ec14a2056
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73559448"
 ---
 # <a name="class-mipapplicationactionstate"></a>类 mip：： ApplicationActionState 
@@ -19,7 +19,7 @@ ms.locfileid: "73559448"
  成員                        | 说明                                
 --------------------------------|---------------------------------------------
 public LabelState GetNewLabelState （） const  |  获取新标签状态。
-public std：： shared_ptr\<标签\> GetNewLabel （） const  |  获取应在文档上应用的敏感度标签 ID。
+public std：： shared_ptr\<Label\> GetNewLabel （） const  |  获取应在文档上应用的敏感度标签 ID。
 公共 std：:p 空中\<bool，std：： string\> IsDowngradeJustified （） const  |  实现应传递是否提供了降级现有标签的合理理由。
 public AssignmentMethod GetNewLabelAssignmentMethod() const  |  获取新标签的分配方法。
 公共虚拟 std：： vector\<std：:p air\<std：： string，std：： string\>\> GetNewLabelExtendedProperties （） const  |  返回新标签的扩展属性。

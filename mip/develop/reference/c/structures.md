@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 11/4/2019
 ms.openlocfilehash: aa544dfbd046ae8c3137cbc115d9af6ea219bc07
-ms.sourcegitcommit: 7a8eef5eb9d6440c6e2300cb3f264da31061b00d
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73591604"
 ---
 # <a name="structures"></a>結構
@@ -41,8 +41,8 @@ typedef struct {
 
 | 字段 | 描述 |
 |---|---|
-| 无权 | OAuth2 机构  |
-| 资源 | OAuth2 资源  |
+| authority | OAuth2 机构  |
+| resource | OAuth2 资源  |
 | scope | OAuth2 范围  |
 
 
@@ -108,13 +108,13 @@ HTTP 请求
 
 | 字段 | 描述 |
 |---|---|
-| ID | 唯一的请求 ID--与 mip_cc_http_response 中的相同属性关联  |
+| ID | 唯一请求 ID--与 mip_cc_http_response 中的同一属性关联  |
 | 类型 | HTTP 请求类型（例如 GET 和 POST）  |
-| 链接 | HTTP 请求 URL  |
+| url | HTTP 请求 URL  |
 | bodySize | HTTP 请求正文的大小（字节）  |
-| 大量 | Buffer 包含 HTTP 请求正文  |
+| 正文 | Buffer 包含 HTTP 请求正文  |
 | headersCount | HTTP 请求标头的数目  |
-| 只要 | 包含 HTTP 请求标头的缓冲区  |
+| 页眉 | 包含 HTTP 请求标头的缓冲区  |
 
 
 ```c
@@ -136,12 +136,12 @@ HTTP 响应
 
 | 字段 | 描述 |
 |---|---|
-| ID | 唯一的请求 ID--与 mip_cc_http_request 中的相同属性关联  |
+| ID | 唯一请求 ID--与 mip_cc_http_request 中的同一属性关联  |
 | statusCode | HTTP 响应状态代码  |
 | bodySize | HTTP 响应正文大小（字节）  |
-| 大量 | Buffer 包含 HTTP 响应正文  |
+| 正文 | Buffer 包含 HTTP 响应正文  |
 | headersCount | HTTP 响应标头数  |
-| 只要 | 包含 HTTP 响应标头的缓冲区  |
+| 页眉 | 包含 HTTP 响应标头的缓冲区  |
 
 
 ```c
@@ -198,7 +198,7 @@ typedef struct {
 |---|---|
 | 用户 | 用户列表  |
 | usersCount | 用户数  |
-| 使用权 | 权限列表  |
+| 权限 | 权限列表  |
 | rightsCount | 权限数量  |
 
 
@@ -220,7 +220,7 @@ typedef struct {
 |---|---|
 | 用户 | 用户列表  |
 | usersCount | 用户数  |
-| 作用 | 角色列表  |
+| roles | 角色列表  |
 | rolesCount | 角色数量  |
 
 
@@ -288,7 +288,7 @@ typedef struct {
 
 | 字段 | 描述 |
 |---|---|
-| Id 为 | 可在租户审核门户中看到的可读文档说明。 文件示例： [path\filename];电子邮件的示例： [Subject： Sender]。 |
+| contentId | 可在租户审核门户中看到的可读文档说明。 文件示例： [path\filename];电子邮件的示例： [Subject： Sender]。 |
 | dataState | 应用程序与之进行交互时的文档数据状态  |
 | contentMetadataCallback | 文档元数据回调  |
 | protectionDescriptor | 如果文档当前受保护，则为保护描述符; 否则为 null  |

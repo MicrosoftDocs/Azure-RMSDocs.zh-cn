@@ -4,7 +4,7 @@ description: 使用这些步骤，为组织准备、实施和管理 Azure 信息
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 09/28/2019
+ms.date: 11/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c3dc822a9653aabc86a8f54ac16890700dca454d
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: bc7370507cce3b8ff783190cc82fcd8230329bf1
+ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559751"
+ms.lasthandoff: 12/08/2019
+ms.locfileid: "74934868"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
@@ -25,7 +25,7 @@ ms.locfileid: "73559751"
 
 建议使用以下步骤，为组织准备、实施和管理 Azure 信息保护。
 
-再者 
+或者： 
 
 - 正在寻找 Azure 信息保护的基于方案的说明？ 请参阅操作[指南，了解使用 Azure 信息保护的常见方案](how-to-guides.md)。
 

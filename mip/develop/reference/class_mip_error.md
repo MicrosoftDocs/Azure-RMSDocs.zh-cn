@@ -7,10 +7,10 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 10/29/2019
 ms.openlocfilehash: f59a2b394cbf0bfa5deb555e2c4cdd8c427ed7ea
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73560297"
 ---
 # <a name="class-miperror"></a>class mip::Error 
@@ -20,7 +20,7 @@ ms.locfileid: "73560297"
  成員                        | 说明                                
 --------------------------------|---------------------------------------------
 public char const* what() const  |  获取错误消息。
-public std：： shared_ptr\<错误\> Clone （） const  |  克隆错误。
+公共 std：： shared_ptr\<错误\> Clone （） const  |  克隆错误。
 public virtual ErrorType GetErrorType() const  |  获取错误类型。
 public virtual const std::string& GetErrorName() const  |  获取错误名称。
 public virtual const std::string& GetMessage() const  |  获取错误消息。

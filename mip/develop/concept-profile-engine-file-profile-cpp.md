@@ -8,10 +8,10 @@ ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 5534cf804422de2d02a53e8c21ceae77af52691d
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69886077"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-profile-concepts"></a>Microsoft 信息保护 SDK - 文件 API 配置文件概念
@@ -20,25 +20,25 @@ ms.locfileid: "69886077"
 
 在尝试实例化配置文件之前，应满足一些代码先决条件：
 
-- `MipContext`已创建并存储在`mip::FileProfile`对象可访问的对象中。
-- `AuthDelegateImpl`实现`mip::AuthDelegate`。
-- `ConsentDelegateImpl`实现`mip::ConsentDelegate`。
+- `MipContext` 已创建并存储在 `mip::FileProfile` 对象可访问的对象中。
+- `AuthDelegateImpl` 可实现 `mip::AuthDelegate`。
+- `ConsentDelegateImpl` 可实现 `mip::ConsentDelegate`。
 - 应用程序已[在 Azure Active Directory 中注册](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad.md)，并且客户端 ID 已硬编码到应用程序或配置文件中。
 - 继承 `mip::FileProfile::Observer` 的类已得到适当实现。
 
 ## <a name="load-a-profile"></a>加载配置文件
 
-定义 `ProfileObserver`、`ConsentDelegateImpl` 和 `AuthDelegateImpl` 后，现在可以实例化 `mip::FileProfile`。 创建对象要求 [`mip::MipContext`] 具有和[`mip::FileProfile::Settings`](reference/class_mip_fileprofile_settings.md) , 以`FileProfile`存储有关的所有设置信息。 `mip::FileProfile`
+定义 `ProfileObserver`、`ConsentDelegateImpl` 和 `AuthDelegateImpl` 后，现在可以实例化 `mip::FileProfile`。 创建 `mip::FileProfile` 对象要求 [`mip::MipContext`] 具有和[`mip::FileProfile::Settings`](reference/class_mip_fileprofile_settings.md) ，以存储有关 `FileProfile`的所有设置信息。
 
 ### <a name="fileprofilesettings-parameters"></a>FileProfile::Settings 参数
 
 `FileProfile::Settings` 构造函数接受下列五个参数：
 
-- `std::shared_ptr<MipContext>`：已初始化为存储应用程序信息、状态路径等的对象。`mip::MipContext`
-- `mip::CacheStorageType`：定义如何存储状态:在内存、磁盘上, 或磁盘上的和已加密。
-- `std::shared_ptr<mip::AuthDelegate>`：类`mip::AuthDelegate`的共享指针。
+- `std::shared_ptr<MipContext>`：已初始化为存储应用程序信息、状态路径等的 `mip::MipContext` 对象。
+- `mip::CacheStorageType`：定义如何存储状态：在内存、磁盘上，或磁盘上的和已加密。
+- `std::shared_ptr<mip::AuthDelegate>`：类 `mip::AuthDelegate` 的共享指针。
 - `std::shared_ptr<mip::ConsentDelegate>`：类[`mip::ConsentDelegate`](reference/class_mip_consentdelegate.md)的共享指针。
-- `std::shared_ptr<mip::FileProfile::Observer> observer`：`Observer`指向配置文件实现的共享指针 (在[`PolicyProfile`](reference/class_mip_policyprofile_observer.md)、 [`ProtectionProfile`](reference/class_mip_protectionprofile_observer.md)和[`FileProfile`](reference/class_mip_fileprofile_observer.md)中)。
+- `std::shared_ptr<mip::FileProfile::Observer> observer`：指向配置文件 `Observer` 实现（在[`PolicyProfile`](reference/class_mip_policyprofile_observer.md)、 [`ProtectionProfile`](reference/class_mip_protectionprofile_observer.md)和[`FileProfile`](reference/class_mip_fileprofile_observer.md)中）的共享指针。
 
 以下示例展示如何使用本地存储作为状态存储来创建 `profileSettings` 对象，以及仅在内存中创建该对象。 两者都假设已经创建了 `authDelegateImpl` 对象。
 
