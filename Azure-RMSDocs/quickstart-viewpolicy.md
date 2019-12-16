@@ -4,18 +4,18 @@ description: 如果你的组织刚刚开始使用 Azure 信息保护，请从此
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 10/01/2019
+ms.date: 12/04/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 92bc55f99636d7a54cafc7c45c1588d2828974c7
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: d1734b5102b1305077ce3b84fb95521daeb69c23
+ms.sourcegitcommit: d062ddf89fcb46e489f32f0d9f7aff73c3357a9b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561392"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882082"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
@@ -82,9 +82,11 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
     
      ![Azure 信息保护无默认标签](./media/info-protect-nodefaultlabels.png)
     
-    如果看不到用于生成默认标签的此选项，表明你已有标签，它们可能类似于下图中 Azure 信息保护的默认标签：
+    如果看不到用于生成默认标签的此选项，表明你可能已有标签，它们可能类似于下图中 Azure 信息保护的默认标签：
     
     ![Azure 信息保护默认标签](./media/info-protect-defaultlabels.png)
+    
+    如果看不到用于生成默认标签的此选项，并且也没有看到任何标签，请转到“管理” > “统一标签”，然后查看“统一标签”的状态    。 如果看到“未激活”，请选择“激活”，然后返回“分类” > “标签”窗格     。
 
 2. 如果还没有标签，请选择“生成默认标签”  选项。
 
