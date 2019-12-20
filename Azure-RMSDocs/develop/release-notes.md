@@ -1,5 +1,5 @@
 ---
-title: 新增功能和发行说明
+title: Rights Management Services SDK v4 的 Rrelease 说明
 description: 概述此版本和早期版本中的重要更改和功能。
 author: msmbaldwin
 ms.author: mbaldwin
@@ -12,18 +12,18 @@ ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: d9fda9c7477c408e8003f48c85e6d35fec6a1884
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: a4cfb05e45f1c3726bd5722c2c084a332eb5ce03
+ms.sourcegitcommit: d3169f307c9d8500dfd97ad65588db9bed111264
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "60176006"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303631"
 ---
 # <a name="whats-new-and-release-notes"></a>新增功能和发行说明
 
 ## <a name="whats-new"></a>新增功能
 
-本主题概述了这一新版本的 RMS SDK v4.x 中的重要更改和功能。
+本主题概述 RMS SDK v4. x 的这一新版本中的重要更改和功能。
 
 -   [2017 年 7 月的新功能](#new-for-july-2017)
 -   [2016 年 10 月更新](#october-2016-update)
@@ -125,7 +125,7 @@ ms.locfileid: "60176006"
 
 ### <a name="october-2014-update---upgrade-to-microsoft-rms-sdk-41"></a>2014 年 10 月更新 - 升级到 Microsoft RMS SDK 4.1
 
-4\.1 版本的 RMS SDK 向 Google Android 和 Apple iOS / OS X 添加了以下新功能。
+4.1 版本的 RMS SDK 向 Google Android 和 Apple iOS / OS X 添加了以下新功能。
 
 -   用于*用户许可*处理的 Android 和 iOS/OS X SDK API 扩展，允许用户确认 SDK 行为。 目前，文档跟踪和访问未知 AD RMS 服务 URL 是受支持的许可类型。
 

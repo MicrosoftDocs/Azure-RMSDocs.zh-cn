@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e83515d0e6764cab5af784b4d695b318daa42d8d
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: a8c52a86e3f19302c86c6022f734f222b0d1ce97
+ms.sourcegitcommit: d3169f307c9d8500dfd97ad65588db9bed111264
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935463"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303587"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 
@@ -51,9 +51,9 @@ ms.locfileid: "74935463"
 
    - 不要执行**生成你的租户密钥**中的步骤，因为你已从 AD RMS 部署获得等效物。 相反，请从 nCipher 安装中标识 AD RMS 服务器使用的密钥，并准备这些密钥以进行传输，然后将它们传输到 Azure Key Vault。 
         
-        NCipher 的加密密钥文件**key_ <<em>keyAppName</em>> _ < keyIdentifier>** 在服务器上本地命名。 例如，`C:\Users\All Users\nCipher\Key Management Data\local\key_mscapi_f829e3d888f6908521fe3d91de51c25d27116a54` 。 当你运行 Keytransferremote.exe 命令来创建具有降低的权限的密钥副本时，你将需要**mscapi**值作为 keyAppName，并为密钥标识符提供自己的值。
+        NCipher 的加密密钥文件**key_ <<em>keyAppName</em>> _ < keyIdentifier> **在服务器上本地命名。 例如，`C:\Users\All Users\nCipher\Key Management Data\local\key_mscapi_f829e3d888f6908521fe3d91de51c25d27116a54` 。 当你运行 Keytransferremote.exe 命令来创建具有降低的权限的密钥副本时，你将需要**mscapi**值作为 keyAppName，并为密钥标识符提供自己的值。
         
-        将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 输出结果将会类似于 https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure Rights Management 服务将此密钥用作其租户密钥。
+        将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 它类似于 https\://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333。 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure Rights Management 服务将此密钥用作其租户密钥。
 
 2. 在连接 internet 的工作站上的 PowerShell 会话中，使用[AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) cmdlet 来授权 Azure Rights Management 服务主体访问将存储 Azure 信息保护租户密钥的密钥保管库。 所需的权限有解密、加密、unwrapkey、wrapkey、验证和签名。
     
