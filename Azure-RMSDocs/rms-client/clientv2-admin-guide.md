@@ -1,9 +1,9 @@
 ---
 title: Azure 信息保护统一标签客户端管理员指南
 description: 适用于企业网络（负责部署适用于 Windows 的 Azure 信息保护统一标签客户端）的管理员的说明和信息。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 10/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 2d26e7d80a37fd5ae8b52539a09fcbb9c924a13d
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 640c2a74e31440506de71be7b2a648bbb48c7e15
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73561194"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326569"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标签客户端管理员指南
 
@@ -223,7 +223,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标签客户端�
 
 2. 通过从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载和安装统一的标签客户端，升级到 Azure 信息保护统一的标签客户端。
 
-3. 在 PowerShell 会话中，使用扫描仪的配置文件运行 Install-aipscanner 命令。 例如：`Update-AIPScanner –Profile Europe`。
+3. 在 PowerShell 会话中，使用扫描仪的配置文件运行 Install-aipscanner 命令。 例如： `Update-AIPScanner –Profile Europe`。
     
     此步骤将创建名称**AIPScannerUL_\<profile_name**的新数据库 >
 

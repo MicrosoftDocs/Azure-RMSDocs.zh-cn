@@ -1,9 +1,9 @@
 ---
 title: 使用 Azure 信息保护统一标签客户端删除标签
-description: 使用 Azure 信息保护统一标签客户端从文件和电子邮件中删除敏感度标签和保护的说明。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+description: 有关如何使用 Azure 信息保护统一标签客户端从文件和电子邮件中删除敏感度标签和保护的说明。
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.assetid: ''
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 4a1b6bb4194b6d66c047a68e822ebd9a7e1b8751
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 83ab06748ade003ea39d2fb15fde6d43acb3c5ad
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935565"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326552"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection"></a>用户指南：从 Azure 信息保护标记的文件和电子邮件中删除标签和保护
 
