@@ -4,15 +4,14 @@ description: MIP SDK for C++ Reference
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: f1e5e06332cac6c0f8beba089d92654781ff6f71
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 69896e60fcf8aa33b2181fd22aeda803ab35b1cf
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560438"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555987"
 ---
 # <a name="mip-sdk-for-c-reference"></a>MIP SDK for C++ Reference
 
@@ -24,7 +23,7 @@ MIP SDK for C++ 包括：
 - [函数](mip-functions.md)
 - 下列类：
 
- 类                         | 描述                                
+ 实例                         | Description                                
 --------------------------------|---------------------------------------------
 [类 mip：： AccessDeniedError](class_mip_accessdeniederror.md)  |  用户无法访问内容。 例如，无权限、内容已撤销。
 [类 mip：： Action](class_mip_action.md)  |  操作的接口。 每个操作都转换为，出于应用标签目的，应用程序需要执行的步骤（如策略所定义）

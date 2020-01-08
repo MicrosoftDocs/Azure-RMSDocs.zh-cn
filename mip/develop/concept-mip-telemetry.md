@@ -4,15 +4,14 @@ description: 本文将帮助你了解如何选择退出遥测数据，以及在�
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 10/01/2019
 ms.author: tommos
-ms.openlocfilehash: 3d97bdbf5307d7f0faefe6b6434b1df1ebc67798
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: e2c8d8726edc483b35c7b9931bc83a3ddb3b5a2c
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74484847"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556140"
 ---
 # <a name="microsoft-information-protection-sdk---telemetry-configuration"></a>Microsoft 信息保护 SDK-遥测配置
 
@@ -32,7 +31,7 @@ ms.locfileid: "74484847"
 
 #### <a name="event-heartbeat"></a>事件：检测信号
 
-| 名称                                 | 描述                                                                            | 清理 |
+| Name                                 | Description                                                                            | 清理 |
 | ------------------------------------ | -------------------------------------------------------------------------------------- | -------- |
 | 应用. ApplicationId                    | 通过 mip：： ApplicationInfo 提供的应用程序标识符。                          | 否       |
 | ApplicationName                  | 通过 mip：： ApplicationInfo 提供的应用程序名称。                                | 否       |
@@ -62,7 +61,7 @@ ms.locfileid: "74484847"
 
 #### <a name="event-discovery"></a>事件：发现
 
-| 名称                                 | 描述                                                                            | 清理 |
+| Name                                 | Description                                                                            | 清理 |
 | ------------------------------------ | -------------------------------------------------------------------------------------- | -------- |
 | ActionId                             | 用于事件关联的此事件的唯一操作 ID。                           | 否       |
 | 应用. ApplicationId                    | 通过 mip：： ApplicationInfo 提供的应用程序标识符。                          | 否       |
@@ -88,7 +87,7 @@ ms.locfileid: "74484847"
 | OrganizationId                       | 经过身份验证的用户的主租户 GUID。                                            | 否       |
 | 平台                             | 操作系统版本。                                                              | 否       |
 | ProcessName                          | 使用 SDK 的进程的名称。                                                     | 否       |
-| 保护                            | 布尔值，指示文件是否受保护。                                       | 否       |
+| 受保护                            | 布尔值，指示文件是否受保护。                                       | 否       |
 | Protection                           | 保护模板标识符。                                                    | **是**  |
 | ProtectionOwner                      | 保护所有者的电子邮件地址。                                                 | **是**  |
 | SDKVersion                           | 与 MIP 相同。版本。                                                                   | 否       |
@@ -98,7 +97,7 @@ ms.locfileid: "74484847"
 
 #### <a name="event-label-change"></a>事件：标签更改
 
-| 名称                                 | 描述                                                                            | 清理 |
+| Name                                 | Description                                                                            | 清理 |
 | ------------------------------------ | -------------------------------------------------------------------------------------- | -------- |
 | ActionId                             | 用于事件关联的此事件的唯一操作 ID。                           | 否       |
 | ActionIdBefore                       | 上一个操作 ID。 用于链接到新操作 ID。                                    | 否       |
@@ -130,7 +129,7 @@ ms.locfileid: "74484847"
 | 平台                             | 操作系统版本。                                                              | 否       |
 | ProcessName                          | 使用 SDK 的进程的名称。                                                     | 否       |
 | 产品版本                      |                                                                                        | 否       |
-| 保护                            | 布尔值，指示文件是否受保护。                                       | 否       |
+| 受保护                            | 布尔值，指示文件是否受保护。                                       | 否       |
 | 之前的保护                     | 布尔值，指示文件以前是否受保护。                           | 否       |
 | Protection                           | 保护模板标识符。                                                    | 否       |
 | 之前的保护                    | 之前的保护模板标识符。                                           | 否       |

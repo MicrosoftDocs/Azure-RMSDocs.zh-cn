@@ -5,15 +5,14 @@ services: information-protection
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: tommos
-ms.openlocfilehash: 8ade287531ee9f1c18678d42ef5e51a4c70ee13f
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 6bf4bc78d6008354275abacddf8f37e42dce1650
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69886205"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555783"
 ---
 # <a name="compute-an-action"></a>计算操作
 

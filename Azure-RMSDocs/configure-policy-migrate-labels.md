@@ -1,10 +1,10 @@
 ---
 title: 将 Azure 信息保护标签迁移到统一敏感度标签-AIP
 description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护框架的客户端和服务的统一敏感度标签。
-author: cabailey
-ms.author: cabailey
+author: mlottner
+ms.author: mlottner
 manager: rkarlin
-ms.date: 12/08/2019
+ms.date: 1/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,18 +12,21 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 31140c7591f2846090a73627fe1f146bc5609cef
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
-ms.translationtype: MT
+ms.openlocfilehash: d094070b3f7c2973b99c9ca212b8b25873026faa
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935021"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75674609"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
 > *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 将 Azure 信息保护标签迁移到统一的标签平台，以便可以将它们用作[支持统一标签的客户端和服务](#clients-and-services-that-support-unified-labeling)的敏感度标签。
 
@@ -91,7 +94,7 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 
 |标签配置|受统一标记客户端的支持| 管理中心指南|
 |-------------------|---------------------------------------------|-------------------------|
-|启用或禁用状态<br /><br />此状态不同步到管理中心 |“不适用”|等效于是否发布标签。 |
+|启用或禁用状态<br /><br />此状态不同步到管理中心 |Not applicable|等效于是否发布标签。 |
 |从列表中选择的标签颜色或使用 RGB 代码指定的标签颜色 |“是”|标签颜色没有配置选项。 相反，你可以在 Azure 门户中配置标签颜色，也可以使用[PowerShell](./rms-client/clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)。|
 |使用预定义模板的基于云的保护或基于 HYOK 的保护 |否|预定义模板没有配置选项。 我们不建议使用此配置发布标签。|
 |使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |“是”|管理中心现在具有用户定义的权限的配置选项。 <br /><br /> 如果使用此配置发布标签，请查看[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中应用标签的结果。|
@@ -101,7 +104,7 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 |为视觉标记（页眉、页脚、水印）使用 RGB 代码自定义字体和字体颜色|“是”|视觉标记的配置限制为颜色和字体大小列表。 尽管无法看见管理中心中配置的值，仍可以不做任何更改发布此标签。 <br /><br />若要更改这些选项，可以使用 Azure 门户。 但是，请考虑将颜色更改为管理中心中列出的选项之一，以便于管理。|
 |视觉标记（页眉、页脚）中的变量|否|如果不做更改就发布此标签，则变量将在客户端上显示为文本而不是显示动态值。 发布标签之前，请编辑字符串以删除变量。|
 |每个应用的视觉标记|否|如果不做更改就发布此标签，则在所有应用中应用变量将在客户端上显示为文本，而不是在所选的应用上显示文本字符串。 仅当适用于所有应用时发布此标签，并编辑字符串以删除应用变量。|
-|条件和关联设置 <br /><br /> 包括自动和建议标签及其工具提示|“不适用”|若要重新配置条件，请将自动标记用作标签设置中的独立配置。|
+|条件和关联设置 <br /><br /> 包括自动和建议标签及其工具提示|Not applicable|若要重新配置条件，请将自动标记用作标签设置中的独立配置。|
 
 ### <a name="comparing-the-behavior-of-protection-settings-for-a-label"></a>比较标签保护设置的行为
 

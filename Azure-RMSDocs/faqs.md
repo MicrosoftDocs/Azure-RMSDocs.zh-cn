@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护的常见问题解答
 description: 一些有关 Azure 信息保护及其保护服务的常见问题，Azure Rights Management （Azure RMS）。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/25/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,19 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: c4abec07a3e091c40990f30e34acdda1a3ede012
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
-ms.translationtype: MT
+ms.openlocfilehash: cacb940520d81087c6dd014a460156a164133fc7
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564526"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675459"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 是否有关于 Azure 信息保护或 Azure Rights Management 服务 (Azure RMS) 的问题？ 请查看此处是否有答案。
 
@@ -115,7 +118,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure 信息保护客户端是否只适用于包含分类和标记的订阅？
 
-否。 Azure 信息保护客户端（经典）还可用于仅包含 Azure Rights Management 服务的订阅来保护数据。
+不能。 Azure 信息保护客户端（经典）还可用于仅包含 Azure Rights Management 服务的订阅来保护数据。
 
 当经典客户端已安装且没有 Azure 信息保护策略时，此客户端将在[仅保护模式下](./rms-client/client-protection-only-mode.md)自动运行。 在这种模式下，用户可以轻松应用 Rights Management 模板和自定义权限。 如果以后购买确实包含分类和标记的订阅，客户端会在下载 Azure 信息保护策略后自动切换到标准模式。
 

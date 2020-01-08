@@ -4,15 +4,14 @@ description: 本文将帮助你了解在应用程序初始化期间创建的文�
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 5534cf804422de2d02a53e8c21ceae77af52691d
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: f174225ee7399480c610b491819c434400548e22
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69886077"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555290"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-profile-concepts"></a>Microsoft 信息保护 SDK - 文件 API 配置文件概念
 

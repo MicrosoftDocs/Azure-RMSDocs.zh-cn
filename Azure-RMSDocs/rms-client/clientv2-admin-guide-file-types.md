@@ -1,9 +1,9 @@
 ---
 title: 支持的文件类型-Azure 信息保护统一标签客户端
 description: 有关受支持的文件类型、文件扩展名以及负责 Windows 的 Azure 信息保护统一标签客户端的管理员的保护级别的技术详细信息。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/21/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9574d9e2089169878c44cb4827ac58e94f177f88
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: e27e89e2a4763eefa16abe3cc107279152528b16
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74666848"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675595"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端支持的文件类型
 
@@ -80,7 +80,7 @@ Azure 信息保护统一标签客户端支持两个不同级别的保护，如�
 
 |保护类型|本机|常规|
 |----------------------|----------|-----------|
-|描述|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他所有应用程序和文件类型，常规保护提供了一种保护级别，该保护级别既包括使用 .pfile 文件类型的文件封装，又包括用于验证用户是否有权打开该文件的身份验证。|
+|Description|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他所有应用程序和文件类型，常规保护提供了一种保护级别，该保护级别既包括使用 .pfile 文件类型的文件封装，又包括用于验证用户是否有权打开该文件的身份验证。|
 |Protection|通过以下方式强制执行文件保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 Azure 信息保护查看器（适用于受保护的文本和图像文件）还是使用关联的应用程序（适用于其他所有受支持的文件类型）呈现内容时，都会强制执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的人员以及被授予访问权限的人员成功通过身份验证之后才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将对已授权的用户打开和访问文件的操作执行审核日志记录。 但不强制执行使用权限。|
 |文件类型默认值|这是以下文件类型的默认保护级别：<br /><br />- 文本和图像文件<br /><br />- Microsoft Office（Word、Excel、PowerPoint）文件<br /><br />- 可移植文档格式 (.pdf)<br /><br />有关详细信息，请参阅以下部分：[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)。|这是针对不受本机保护支持的其他所有文件类型（例如 .vsdx、.rtf 等）的默认保护。|
 
@@ -121,18 +121,18 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
 |原始文件扩展名|受保护的文件扩展名|
 |--------------------------------|-------------------------------------|
-|。txt|.ptxt|
-|。xml|.pxml|
-|。jpg|.pjpg|
-|。jpeg|。pjpeg|
-|。png|。ppng|
+|。txt|。ptxt|
+|。xml|。pxml|
+|。jpg|。pjpg|
+|.jpeg|.pjpeg|
+|。png|.ppng|
 |.tif|.ptif|
-|。tiff|.ptiff|
-|。bmp|.pbmp|
-|。gif|。pgif|
-|.jpe|。pjpe|
-|.jfif|.pjfif|
-|。jt|.pjt|
+|.tiff|。ptiff|
+|.bmp|。pbmp|
+|。gif|.pgif|
+|。jpe|.pjpe|
+|。jfif|.pjfif|
+|.jt|.pjt|
 
 下表列出了支持 Azure 信息保护统一标签客户端的本机保护的其他文件类型，还可以进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
 
@@ -140,7 +140,7 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
 |Office 支持的文件类型|Office 支持的文件类型|
 |----------------------------------|----------------------------------|
-|。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm<br /><br />。pptx<br /><br />.vsdm|.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />。xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx<br /><br />。xps|
+|。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm<br /><br />。pptx<br /><br />.vsdm|.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />.xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx<br /><br />。xps|
 
 
 ## <a name="file-types-that-are-excluded-from-classification-and-protection"></a>从分类和保护中排除的文件类型

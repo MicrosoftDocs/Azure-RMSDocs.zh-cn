@@ -4,15 +4,14 @@ description: 简要概述如何开始使用 MIP SDK .NET 包装，以及 .NET �
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 01/04/2019
 ms.author: tommos
-ms.openlocfilehash: 6b2f26a61cd491574fd9f4a1e74fbfab4752257a
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 21fc590388615b2917ca62fdd848b3a63ce26912
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "60175175"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556106"
 ---
 # <a name="getting-started-with-the-microsoft-information-protection-net-wrapper"></a>Microsoft 信息保护 .NET 包装入门
 
@@ -43,7 +42,7 @@ Microsoft 信息保护 .NET 包装程序在以下 .NET 平台上受支持：
 
 SDK C++版本和托管包装之间存在一些基本差异。
 
-* .NET 包装不需要使用观察程序进行异步操作。 所有异步操作都是通过[基于任务的异步模式](https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)实现的。
+* .NET 包装不需要使用观察程序进行异步操作。 所有异步操作都是通过[基于任务的异步模式](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)实现的。
 * .NET 包装确实需要作为C++ SDK 的一部分的委托： AuthDelegate 和 ConsentDelegate。 这些委托通过 `IAuthDelegate` 和 `IConsentDelegate` 接口实现
 
 ## <a name="next-steps"></a>后续步骤

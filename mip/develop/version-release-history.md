@@ -1,19 +1,18 @@
 ---
 title: Microsoft 信息保护（MIP） SDK 版本发行历史记录和支持策略
-description: MIP SDK 的版本发行历史记录和更改注释。
+description: 适用于 MIP SDK 的版本发行历史记录和更改注释。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 11/25/2019
 ms.author: mbaldwin
 manager: barbkess
-ms.openlocfilehash: a678765835785dcb40aaf65e7f92e78fba67c73a
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: c28ab93feedea4c27ef9fe032f889d17da078d49
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74479116"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555936"
 ---
 # <a name="microsoft-information-protection-mip-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护（MIP） SDK 版本发行历史记录和支持策略
 
@@ -59,7 +58,7 @@ ms.locfileid: "74479116"
 ### <a name="file-api"></a>文件 API
 
 - .RPMSG
-  - 加密
+  - Encryption
   - 添加了对 string8 解密的支持
 - 可配置的 .PFILE 扩展行为（默认 <EXT>.PFILE 或 P<EXT>）
   - ProtectionSettings::SetPFileExtensionBehavior

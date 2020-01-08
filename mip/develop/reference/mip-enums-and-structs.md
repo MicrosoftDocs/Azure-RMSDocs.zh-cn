@@ -4,15 +4,14 @@ description: MIP C++ SDK 结构和枚举的参考文档。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: a6e5fae2296fb6f966f5f7fb6b73facb867398a2
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 2a641ace68d6999e3d452fa7f5c014ec1215556a
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560445"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556004"
 ---
 # <a name="enumerations-and-structures"></a>枚举和结构
 
@@ -232,7 +231,7 @@ CUSTOM 是通用操作类型。 其他各个操作类型是有特定意义的具
  值                         | 说明                                
 --------------------------------|---------------------------------------------
 NoChange            | 
-删除            | 
+移除            | 
 更新            | 
   
 #### <a name="actiondatatype-enum"></a>ActionDataType 枚举
@@ -242,7 +241,7 @@ NoChange            |
 Protection            | 
 ContentMarking            | 
 AddWatermark            | 
-Label            | 
+标签            | 
   
 #### <a name="conditiondatatype-enum"></a>ConditionDataType 枚举
  值                         | 说明                                

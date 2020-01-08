@@ -4,15 +4,14 @@ description: 本文将帮助你了解 MIP SDK 中的三类 API、其关联方式
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 10/16/2018
 ms.author: mbaldwin
-ms.openlocfilehash: d4bef66f8e3d808b195ac49f7bb42ab0eb62b7d5
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 580e2c14d60c60ccb42d5d8553d4f37a705b4c0f
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "60180830"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556276"
 ---
 # <a name="microsoft-information-protection-sdk---api-concepts"></a>Microsoft 信息保护 SDK - API 概念
 

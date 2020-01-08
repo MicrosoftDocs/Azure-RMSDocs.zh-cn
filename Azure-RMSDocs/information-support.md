@@ -1,10 +1,10 @@
 ---
 title: '& Azure 信息保护的支持信息-AIP'
 description: 管理员资源，其中包括有关新版本、支持选项以及如何与 Microsoft 联系以报告问题的信息。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/30/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -15,16 +15,19 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: fac66b2b8719965286bdce6cb10b15a4b8b4f710
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
-ms.translationtype: MT
+ms.openlocfilehash: 4c462d051953d3d80297b09b8228409c9d97f90b
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934732"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675442"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 使用以下资源可帮助你了解、部署和支持组织的 Azure 信息保护。
 
@@ -59,7 +62,7 @@ Azure 信息保护技术博客还汇总了[每个月的文档更改](https://tec
 
 如果有顶级支持，请访问[Microsoft 服务中心](https://serviceshub.microsoft.com/support/contactsupport)来提交事件、浏览解决方案并获得帮助。
 
-你可能符合 FastTrack的条件：如果在符合条件的 Azure 信息保护计划中购买的许可证至少达到 150 个，可以使用 FastTrack 中心权益。 FastTrack 中心权益使你可以与 Microsoft 专家共同进行评估、修正并启用符合条件的服务。 有关详细信息，请参阅 [FastTrack 企业移动性 + 安全性 (EMS) 中心权益](/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-enterprise-mobility-suite-ems)。
+你可能符合 FastTrack的条件：如果在符合条件的 Azure 信息保护计划中购买的许可证至少达到 150 个，可以使用 FastTrack 中心权益。 FastTrack 中心权益使你可以与 Microsoft 专家合作，以评估、修正并启用符合条件的服务。 有关详细信息，请参阅 [FastTrack 企业移动性 + 安全性 (EMS) 中心权益](/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-enterprise-mobility-suite-ems)。
 
 对于其他客户，请根据 Azure 信息保护的订阅，使用下表中的支持渠道。
 

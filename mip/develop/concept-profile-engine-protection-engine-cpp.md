@@ -4,15 +4,14 @@ description: 本文将帮助你了解在应用程序初始化期间创建的保�
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 1ccfc81e4b45c6ec4e4316b748d9ccc0f73561a4
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 116bd67298195e66de26ab278802e93644a095dd
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69886030"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556089"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-engine-concepts"></a>Microsoft 信息保护 SDK - 保护 API 引擎概念
 
@@ -35,7 +34,7 @@ ProtectionEngine::Settings engineSettings("UniqueID", "");
 > [!NOTE]
 > 如果使用此方法创建保护设置对象，则还必须手动将 CloudEndpointBaseUrl 设置为 https://api.aadrm.com 或 tp Active Directory Rights Management 服务群集 URL。
 
-作为最佳做法，第一个参数 **id** 应该允许引擎轻松连接到关联用户**或** `mip::Identity` 对象。 若要使用 `mip::Identity` 初始化设置，请运行以下代码：
+作为最佳做法，第一个参数 **id** 应该允许引擎轻松连接到关联用户**或**`mip::Identity` 对象。 若要使用 `mip::Identity` 初始化设置，请运行以下代码：
 
 ```cpp
 ProtectionEngine::Settings engineSettings(mip::Identity("Bob@Contoso.com", "");

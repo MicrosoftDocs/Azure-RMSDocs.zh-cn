@@ -1,9 +1,9 @@
 ---
 title: 为用户安装 Azure 信息保护统一标签客户端
 description: 管理员用于在企业网络上部署 Azure 信息保护统一标签客户端的说明和信息。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4abe5dd0e3eacc5eeb41f2beafd61a9a4a2a9fa8
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 68a14901b590e834ab678b6640ecdb80e3e87278
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935599"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675544"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -201,8 +201,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     |Office 2010|Windows 8.1 和 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB2843630 或 KB2919355，则进行安装|
     |Office 2010|Windows 8 和 Windows Server 2012|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
     |Office 2010|Windows 7 和 Windows Server 2008 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB3125574，则进行安装|
-    |“不适用”|Silverlight|[vc_redist.x86.exe](https://www.microsoft.com/en-us/download/details.aspx?id=48145)|安装|
-    |“不适用”|Silverlight|KB2627273 <br /><br /> 文件名中包含的版本号：v4|“卸载”|
+    |Not applicable|Silverlight|[vc_redist.x86.exe](https://www.microsoft.com/en-us/download/details.aspx?id=48145)|安装|
+    |Not applicable|Silverlight|KB2627273 <br /><br /> 文件名中包含的版本号：v4|“卸载”|
 
 3. 对于默认安装，将 .msi 与 /quiet/ 一起运行，例如，`AzInfoProtection_UL.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)中记录的其他安装参数，但有一个例外：
     

@@ -4,15 +4,14 @@ description: 本文将帮助你了解有关 MIP SDK 中的缓存存储的概念�
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: tommos
-ms.openlocfilehash: a72ae5169e4a7ee9a201876afbef0f5d33fc9b89
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: ed6407e99677bbed293959e15720c4c7d418aa54
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69893746"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555817"
 ---
 # <a name="microsoft-information-protection-sdk---cache-storage"></a>Microsoft 信息保护 SDK-缓存存储
 
@@ -26,7 +25,7 @@ MIP SDK 实现用于维护 SDK 缓存存储的 SQLite3 数据库。 在 Microsof
 
 从 MIP SDK 版本1.3 开始，以下存储缓存类型可用。
 
-| 类型            | 用途                                                                                                                         |
+| 键入            | 用途                                                                                                                         |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | InMemory        | 在应用程序的内存中维护存储缓存。                                                                       |
 | OnDisk          | 将数据库存储在磁盘上的 "设置" 对象中提供的目录中。 数据库以纯文本形式存储。              |

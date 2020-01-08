@@ -1,9 +1,9 @@
 ---
 title: 使用 Windows Server FCI 的 Azure RMS 保护 - AIP
 description: 有关将 Rights Management (RMS) 客户端与 Azure 信息保护客户端配合使用，以配置文件服务器资源管理器和文件分类基础结构 (FCI) 的说明。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: fci
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 265f6ee9fcf5e3fb3a4e658ab1c114a8e3ce7d4e
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 5d03aa523c22e66c79748cd378b67d7124686972
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935514"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326503"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
@@ -251,7 +251,7 @@ ms.locfileid: "74935514"
 
 1.  运行分类规则：
 
-    1.  单击“分类规则”&gt;>“立即使用所有规则运行分类”
+    1.  单击 "**分类规则**" &gt;**立即运行包含所有规则的分类**
 
     2.  单击“等待分类完成”，然后单击“确定”。
 
@@ -259,7 +259,7 @@ ms.locfileid: "74935514"
 
 3.  运行文件管理任务：
 
-    1.  单击“文件管理任务”&gt;>“使用 RMS 保护文件”&gt;>“立即运行文件管理任务”
+    1.  单击 "**文件管理任务**" &gt; "**通过 RMS 保护文件**" &gt; "**立即运行文件管理任务**"
 
     2.  单击“等待任务完成”，然后单击“确定”。
 

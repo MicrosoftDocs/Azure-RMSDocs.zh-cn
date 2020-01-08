@@ -4,15 +4,14 @@ description: MIP SDK 几乎完全是异步的。 本文将帮助你了解如何�
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: mbaldwin
-ms.openlocfilehash: e42b9996d737ace5b25988eb72fa02aa87230f13
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: bd709b75c5b98c4241bc80f4a8542de30f48ff66
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "60175133"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555868"
 ---
 # <a name="microsoft-information-protection-sdk---observer-concepts"></a>Microsoft 信息保护 SDK - 观察程序概念
 
@@ -31,7 +30,7 @@ MIP SDK 几乎完全是异步的。 例如，导致网络或文件 IO 的任何�
 - 它可以通过 `FileProfile::AddEngineAsync` 向配置文件添加新引擎。 
 - 它可以通过 `FileProfile::UnloadEngineAsync` 从配置文件中卸载引擎。
 
-由于每个异步操作实现两个 `Observer` 函数，因此可以假设有**四个** `Observer` 方法与 `FileProfile` 相关联： 
+由于两个 `Observer` 函数是按异步操作实现的，因此可以假设有**四个**与 `FileProfile`关联的 `Observer` 方法： 
 
 - `FileProfileObserver::OnAddEngineSuccess()`
 - `FileProfileObserver::OnAddEngineError()`

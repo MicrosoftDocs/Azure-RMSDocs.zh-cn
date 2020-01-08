@@ -4,15 +4,14 @@ description: 本文将帮助你了解如何使用标签进行数据分类。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: mbaldwin
-ms.openlocfilehash: e1101bd505a35e02fdeeed032d5dec61364bfb8d
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: b2be24e1703d4831a95feaa51012cf7469a481b7
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "60175235"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556208"
 ---
 # <a name="microsoft-information-protection-sdk---classification-label-concepts"></a>Microsoft 信息保护 SDK - 分类标签概念
 

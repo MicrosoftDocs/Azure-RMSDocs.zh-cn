@@ -4,15 +4,14 @@ description: 本文将帮助你了解如何在 C++ 中实现身份验证委托�
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: e3436acdd6a2900f4a21bb50b283d12065cd659b
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 5f21c837c1bcd48fe23f3df2647d401390ee81f5
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69886250"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556225"
 ---
 # <a name="microsoft-information-protection-sdk---implementing-an-authentication-delegate-c"></a>Microsoft 信息保护 SDK - 实现身份验证委托 (C++)
 

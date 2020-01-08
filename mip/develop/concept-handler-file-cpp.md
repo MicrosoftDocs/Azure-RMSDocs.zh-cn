@@ -4,15 +4,14 @@ description: 本文将帮助你了解如何创建文件 API 处理程序并将�
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 414ad04c062a81d374a9e46d170feabb15e0e6cc
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: f94f885f77d15ec5c38894a4801b08908e65a166
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69886215"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555800"
 ---
 # <a name="microsoft-information-protection-sdk---file-handler-concepts"></a>Microsoft 信息保护 SDK - 文件处理程序概念
 
@@ -39,10 +38,10 @@ ms.locfileid: "69886215"
 
 ## <a name="requirements"></a>惠?
 
-创建 `FileHandler` 来处理特定文件要求：
+创建 `FileHandler` 用于处理特定文件需要使用以下对象：
 
 - `FileProfile`
-- `FileEngine` 已添加到 `FileProfile`
+- 已添加到 `FileProfile` 的 `FileEngine`
 - 继承 `mip::FileHandler::Observer` 的类
 
 ## <a name="create-a-file-handler"></a>创建文件处理程序

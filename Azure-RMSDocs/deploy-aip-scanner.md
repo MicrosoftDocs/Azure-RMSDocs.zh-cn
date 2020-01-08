@@ -1,10 +1,10 @@
 ---
 title: 部署 Azure 信息保护扫描程序-AIP
 description: 说明如何安装、配置和运行当前版本的 Azure 信息保护扫描程序，以便发现、分类和保护数据存储中的文件。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/24/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,17 +12,20 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0b53c721725f83b8e197552d4c1fa502583fc2f9
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
-ms.translationtype: MT
+ms.openlocfilehash: 3bca84f202917082212fec65973dd6666a07e9a9
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74474355"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75674575"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2019、windows server 2016、windows Server 2012 R2*
->
+
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
+
 > [!NOTE]
 > 本文适用于 azure 信息保护客户端的当前通用版本 azure 信息保护扫描程序（经典），以及 Azure 的当前正式发行版的扫描程序预览版本信息保护统一标签客户端。
 > 

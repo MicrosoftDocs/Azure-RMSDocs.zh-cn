@@ -5,15 +5,14 @@ services: information-protection
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: tommos
-ms.openlocfilehash: df67886f53d697e47f6e812cdcbbac394acaa98d
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 0e7fdde8194603917186f5771ca1a782fd209fa7
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69884752"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556259"
 ---
 # <a name="auditing-in-the-mip-sdk-file-api"></a>MIP SDK 文件 API 中的审核
 

@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护客户端 - 安装和配置
 description: 有关在 Windows 计算机和移动设备上部署 Azure 信息保护客户端的管理员信息。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/30/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,19 @@ ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f91052c45a3246d3ed63ab9945e09a3dd7ab3789
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
-ms.translationtype: MT
+ms.openlocfilehash: 61de188f78e0a64ce99100b2e32cbbf4dedcc953
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935157"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675119"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：安装和配置客户端
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 运行 Office 2010 的计算机需要 Azure 信息保护客户端（经典）或 Azure 信息保护统一标签客户端，以便向 Azure 信息保护服务进行身份验证。
 
@@ -47,7 +50,7 @@ ms.locfileid: "74935157"
 
 ## <a name="the-azure-information-protection-app-for-ios-and-android-installation-and-management"></a>适用于 iOS 和 Android 的 Azure 信息保护应用：安装和管理
 
-若要安装适用于 iOS 和 Android 的 Azure 信息保护应用查看器，请使用[Microsoft Azure 信息保护页](https://go.microsoft.com/fwlink/?LinkId=303970)上的链接。 不需要任何配置。
+若要安装适用于 iOS 和 Android 的 Azure 信息保护应用查看器，请使用[Microsoft Azure 信息保护页](https://go.microsoft.com/fwlink/?LinkId=303970)上的链接。 不需要配置。
 
 > [!NOTE]
 > 对于 Mac 计算机，该页的链接将下载 RMS 共享应用。 这些计算机不支持 Azure 信息保护客户端。

@@ -4,15 +4,14 @@ description: MIP SDK 几乎完全是异步的。 本文将帮助你了解如何�
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: mbaldwin
-ms.openlocfilehash: 2d1cf81e20a317ecb1eb9e71b5b4e0ab32482877
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 559e6088edc4bab51867ac379451ae3feef5acd6
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "60175541"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555919"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-observers"></a>Microsoft 信息保护 SDK - 保护 API 观察程序
 
@@ -52,7 +51,7 @@ public:
 
 每个成员都接受两个参数。 第一个是指向我们在函数中处理的类的共享指针。 `ProtectionObserver::OnLoadSuccess` 预计会收到 `mip::ProtectionProtection`，`ProtectionObserver::OnAddEngineSuccess` 预计会收到 `mip::ProtectionEngine`。
 
-第二个是指向上下文的共享指针。 在实现中，上下文是对 `std::promise` 的引用，作为 `shared_ptr<void>` 传入。 函数的第一行将其强制转换为 `std::promise`，然后存储在名为 `promise` 的对象中。
+第二个是指向*上下文*的共享指针。 在实现中，上下文是对 `std::promise` 的引用，作为 `shared_ptr<void>` 传入。 函数的第一行将其强制转换为 `std::promise`，然后存储在名为 `promise` 的对象中。
 
 最后，通过设置 `promise->set_value()` 并传入 `mip::ProtectionProtection` 对象，future 模式即准备就绪。
 

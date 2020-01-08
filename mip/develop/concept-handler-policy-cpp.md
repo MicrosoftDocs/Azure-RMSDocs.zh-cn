@@ -4,15 +4,14 @@ description: 本文将帮助你了解如何创建策略 API 处理程序并将�
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: tommos
-ms.openlocfilehash: 37ab92e336d88d37d9e4e7631e108bbaaebdb977
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 583e59832e40f87665232ebf39e1dddb462ba212
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69886190"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556174"
 ---
 # <a name="microsoft-information-protection-sdk---policy-handler-concepts"></a>Microsoft 信息保护 SDK - 策略处理程序概念
 
@@ -33,7 +32,7 @@ ms.locfileid: "69886190"
 
 - `mip::MipContext`
 - `mip::PolicyProfile`
-- `mip::PolicyEngine` 已添加到 `mip::PolicyProfile`
+- 已添加到 `mip::PolicyProfile` 的 `mip::PolicyEngine`
 - 实现的类 `mip::PolicyHandler::Observer`
 
 ## <a name="create-a-policy-handler"></a>创建策略处理程序

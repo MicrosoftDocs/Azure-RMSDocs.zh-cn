@@ -1,9 +1,9 @@
 ---
 title: Azure 信息保护用户指南
 description: 适用于 Windows 的 Azure 信息保护客户端可帮助用户保护重要文档和电子邮件，使其不对特定人员可见（即使电子邮件被转发或将文档保存到另一个位置也是如此）。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: c374e9b73a9f6c11a512d679c78458ec52f97a31
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 120862bc33d1b7d9cff3e6f5b148f574e4df29ad
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935650"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675391"
 ---
 # <a name="azure-information-protection-user-guide"></a>Azure 信息保护用户指南
 
@@ -31,7 +31,7 @@ ms.locfileid: "74935650"
 你只需一台至少运行 Windows 7 with Service Pack 1 的计算机即可。 然后从 Microsoft 下载并安装此免费客户端。
 
 
-## <a name="what-do-you-want-to-do"></a>你希望做什么？
+## <a name="what-do-you-want-to-do"></a>要执行什么操作？
 
 - [下载并安装 Azure 信息保护客户端](install-client-app.md)
 

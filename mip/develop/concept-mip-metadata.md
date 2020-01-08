@@ -4,15 +4,14 @@ description: 本文将帮助你了解 Microsoft 信息保护 SDK 生成的元数
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 11/08/2018
 ms.author: tommos
-ms.openlocfilehash: 3ae27b1bf0b4f709e9621f00b1b3a16c2ba1882c
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 6713ba0d8b6727f3ed10e4b3846cbe2bb1b43f6e
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69886127"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555681"
 ---
 # <a name="microsoft-information-protection-sdk---metadata"></a>Microsoft 信息保护 SDK-元数据
 
@@ -34,14 +33,14 @@ GUID 是组织中每个标签的唯一标识符。
 
 MIP SDK 应用以下一组元数据。
 
-| 属性 | 类型或值                 | 描述                                                                                                                                                                                                                                        | 强制 |
+| 属性 | 类型或值                 | Description                                                                                                                                                                                                                                        | 强制 |
 |-----------|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | **Enabled**   | True 或 False                 | 此属性指示是否为数据项启用这组键/值对所表示的分类。 DLP 产品通常会验证是否存在此密钥来识别分类标签。 | “是”       |
 | **SiteId**    | GUID                          | Azure Active Directory 租户 ID                                                                                                                                                                                                                   | “是”       |
 | **ActionId**  | GUID                          | 每次设置标签时，均会更改 ActionID。 审核日志将包括新旧的 actionID，以允许将标签活动链接到数据项。                                                                                 | “是”       |
 | **方法**    | 标准或特权        | 通过[mip：： AssignmentMethod](reference/mip-enums-and-structs.md#assignmentmethod-enum)设置。 标准表示标签默认应用或自动应用。 特权意味着手动选择标签。                                                                                                                                                                                                                 | 否        |
 | **SetDate**   | 延长 ISO 8601 日期格式 | 设置标签时的时间戳。                                                                                                                                                                                                              | 否        |
-| **名称**      | 字符串                        | 标记租户内的唯一名称。 它不一定对应于显示名称。                                                                                                                                                              | 否      |
+| **Name**      | 字符串                        | 标记租户内的唯一名称。 它不一定对应于显示名称。                                                                                                                                                              | 否      |
 | **ContentBits** | integer | 用于描述应应用于文件的内容标记类型的位掩码。 CONTENT_HEADER = 0X1，CONTENT_FOOTER = 0X2，水印 = 0X4，加密 = 0x8
  | 否 |
 
@@ -49,7 +48,7 @@ MIP SDK 应用以下一组元数据。
 
 | Key                                                         | 值                                |
 |-------------------------------------------------------------|--------------------------------------|
-| MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_Enabled     | true                                 |
+| MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_Enabled     | 是                                 |
 | MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_SetDate     | 2018-11-08T21：13： 16-0800             |
 | MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_Method      | 特权                           |
 | MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_Name        | 机密                         |

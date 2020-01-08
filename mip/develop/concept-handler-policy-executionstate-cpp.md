@@ -5,15 +5,14 @@ services: information-protection
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 11/01/2018
 ms.author: tommos
-ms.openlocfilehash: 34576337726e8974e65076bc1358d316ad32d9d2
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: c3973488cb8c3ec109a5a11dea1e540f09db92d4
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69886169"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555698"
 ---
 # <a name="implement-executionstate"></a>实现 ExecutionState
 

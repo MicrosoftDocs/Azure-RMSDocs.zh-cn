@@ -1,9 +1,9 @@
 ---
 title: 跟踪和撤销文档 - Azure 信息保护
 description: 保护文档后，可跟踪用户如何使用它们。 如果用户不应再阅读这些文档，还可撤销其对这些文档的访问权限（如有必要）。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: doctrack
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 537318bd21ec27d91fc1868d4c9e4ef4b6a8fa35
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 2fa57c099bcbc6730e649e9aef3adb7fa4176b03
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935667"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675663"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>用户指南：使用 Azure 信息保护时跟踪和撤销文档
 

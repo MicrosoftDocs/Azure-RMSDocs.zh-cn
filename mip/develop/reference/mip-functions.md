@@ -4,15 +4,14 @@ description: 功能
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.collection: M365-security-compliance
 ms.date: 01/28/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 4479cd9419d51e841906e6268427e184d4e1b4d3
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: fb6c857d06da7a68d01d095db556216fee990dc6
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73557998"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555970"
 ---
 # <a name="functions"></a>功能
 

@@ -1,27 +1,30 @@
 ---
 title: Azure 信息保护的默认策略 - AIP
 description: 了解如何配置 Azure 信息保护的默认策略。 如果修改默认策略，则可以引用这些值以返回默认策略。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 12/05/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: cc690668d602105c9c8c48461e6d4014cd2e59ff
-ms.sourcegitcommit: d062ddf89fcb46e489f32f0d9f7aff73c3357a9b
-ms.translationtype: MT
+ms.openlocfilehash: 7f35d22aacfead3756517dc34b51c5395095d25b
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882062"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75674915"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 > *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 > [!NOTE]
 > Azure 信息保护策略适用于 Azure 信息保护客户端（经典），而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
@@ -73,7 +76,7 @@ ms.locfileid: "74882062"
 
 ### <a name="labels"></a>标签
 
-|Label|工具提示|Settings|
+|标签|工具提示|Settings|
 |-------------------------------|---------------------------|-----------------|
 |个人|非业务数据，仅供个人使用。|**已启用**：打开 <br /><br />**颜色**：浅绿色<br /><br />**可视标记**：关闭 <br /><br />**条件**：无<br /><br />**保护**：无|
 |公用|专为公共使用而准备和批准的业务数据。|**已启用**：打开 <br /><br />**颜色**：绿色<br /><br />**可视标记**：关闭<br /><br />**条件**：无<br /><br />**保护**：无|
@@ -84,7 +87,7 @@ ms.locfileid: "74882062"
 
 ### <a name="sublabels"></a>子标签
 
-|Label|工具提示|Settings|
+|标签|工具提示|Settings|
 |-------------------------------|---------------------------|-----------------|
 |机密\所有员工|需保护的机密数据，所有员工具有完全权限。 数据所有者可跟踪和撤消内容。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为机密<br /><br />**条件**：无<br /><br />保护：Azure (云密钥) [[1]](#footnote-1)|
 |机密\任何人（不受保护）|无需保护的数据。 使用此选项时需谨慎，并具有选择此选项的合理业务理由。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为机密 <br /><br />**条件**：无<br /><br />**保护**：无|
@@ -131,7 +134,7 @@ ms.locfileid: "74882062"
 
 ### <a name="labels"></a>标签
 
-|Label|工具提示|Settings|
+|标签|工具提示|Settings|
 |-------------------------------|---------------------------|-----------------|
 |个人|非业务数据，仅供个人使用。|**已启用**：打开 <br /><br />**颜色**：浅绿色<br /><br />**可视标记**：关闭 <br /><br />**条件**：无<br /><br />**保护**：无|
 |公用|专为公共使用而准备和批准的业务数据。|**已启用**：打开 <br /><br />**颜色**：绿色<br /><br />**可视标记**：关闭<br /><br />**条件**：无<br /><br />**保护**：无|
@@ -142,7 +145,7 @@ ms.locfileid: "74882062"
 
 ### <a name="sublabels"></a>子标签
 
-|Label|工具提示|Settings|
+|标签|工具提示|Settings|
 |-------------------------------|---------------------------|-----------------|
 |机密\所有员工|需保护的机密数据，所有员工具有完全权限。 数据所有者可跟踪和撤消内容。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为机密<br /><br />**条件**：无<br /><br />**保护**：无|
 |机密\任何人（不受保护）|无需保护的数据。 使用此选项时需谨慎，并具有选择此选项的合理业务理由。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为机密 <br /><br />**条件**：无<br /><br />**保护**：无|
@@ -171,7 +174,7 @@ ms.locfileid: "74882062"
 
 ### <a name="labels"></a>标签
 
-|Label|工具提示|Settings|
+|标签|工具提示|Settings|
 |-------------------------------|---------------------------|-----------------|
 |个人|仅供个人使用。 此数据将不会受组织监视。 个人信息不能包含任何与企业相关的数据。|**已启用**：打开 <br /><br />**颜色**：浅绿色<br /><br />**可视标记**：关闭 <br /><br />**条件**：无<br /><br />**保护**：无|
 |公用|此信息是内部的，企业内部或外部的所有人均可使用。|**已启用**：打开 <br /><br />**颜色**：绿色<br /><br />**可视标记**：关闭<br /><br />**条件**：无<br /><br />**保护**：无|
@@ -182,7 +185,7 @@ ms.locfileid: "74882062"
 
 ### <a name="sublabels"></a>子标签
 
-|Label|工具提示|Settings|
+|标签|工具提示|Settings|
 |-------------------------------|---------------------------|-----------------|
 |秘密 \ 所有公司|此数据包括敏感业务信息 — 允许所有公司员工使用。|**已启用**：打开 <br /><br />**可视标记**：关闭<br /><br />**条件**：无<br /><br />**保护**：无|
 |秘密 \ 我的组|此数据包括敏感业务信息 — 仅允许员工组使用。|**已启用**：打开 <br /><br />**可视标记**：关闭<br /><br />**条件**：无<br /><br />**保护**：无|

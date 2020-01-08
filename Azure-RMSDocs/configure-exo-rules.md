@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护标签的 Exchange Online 邮件流规则
 description: 与配置 Azure 信息保护标签的 Exchange Online 邮件流规则相关的说明和示例。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/07/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,19 @@ ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0e07754dd7b8197883ab7a71fbe48e4cb142534c
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
-ms.translationtype: MT
+ms.openlocfilehash: fe1d7ee0d1deb14c294014c3542e02808aa5def7
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73750486"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675068"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>配置 Azure 信息保护标签的 Exchange Online 邮件流规则
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[弃用通知](https://aka.ms/aipclassicsunset)中了解详细信息，并按照[Microsoft 365 安全和合规性中心中的说明](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)完成这些步骤。
 
 下面介绍了如何将 Exchange Online 邮件流规则配置为使用 Azure 信息保护标签，并为特定方案应用其他保护。 例如：
 

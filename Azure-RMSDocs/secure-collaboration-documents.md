@@ -1,10 +1,10 @@
 ---
 title: 使用 Azure 信息保护配置可靠的文档协作
 description: 用于在受 Azure 信息保护保护的文档上进行协作的端到端工作流。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/30/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b3be1b1577277b31dd515f8343870de73e258770
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
-ms.translationtype: MT
+ms.openlocfilehash: d62c2946fed73c3f7ac69182b9558ee233935b4a
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934460"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675578"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
@@ -43,6 +43,9 @@ ms.locfileid: "74934460"
 
 ## <a name="example-configuration-for-a-label-to-apply-protection-to-support-internal-and-external-collaboration"></a>让标签应用保护以支持外部协作的配置示例
 
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[弃用通知](https://aka.ms/aipclassicsunset)中了解详细信息，并按照[Microsoft 365 安全和合规性中心中的说明](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)完成这些步骤。 
+
 此示例演示了如何配置现有标签以应用保护，以便组织中的用户可以与另一个拥有 Office 365 或 Azure AD 的组织中的所有用户、其他具有 Office 365 或 Azure AD 的组织中的组以及在 Azure AD 中没有帐户而是使用 Gmail 电子邮件地址的用户就文档进行协作。
 
 由于方案限制为只有特定人员拥有访问权限，因此不包括任何身份已验证的用户的设置。 有关如何使用此设置配置标签的示例，请参阅[示例 5：加密内容但不限制谁能访问内容的标签](configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it)。  
@@ -57,9 +60,9 @@ ms.locfileid: "74934460"
     
    - 对于第一个外部组织中的所有用户：选择“输入详细信息”，然后在组织的租户中键入域名。 例如，fabrikam.com。
     
-   - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如，sales@contoso.com 。
+   - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如， sales@contoso.com。
     
-   - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，键入用户的电子邮件地址。 例如，bengi.turan@gmail.com 。 
+   - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，键入用户的电子邮件地址。 例如， bengi.turan@gmail.com。 
 
 4. 若要向所有这些用户授予相同的权限：对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。
     

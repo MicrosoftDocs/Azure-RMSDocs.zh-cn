@@ -4,15 +4,14 @@ description: 本文将帮助你了解 MIP SDK 如何实现身份验证，以及�
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 55bfba6da57fa07614165f4d5fcc5fba226cfca7
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: e4f734560c4d3942995f7547f41648bd765bb1b1
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69886234"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555834"
 ---
 # <a name="microsoft-information-protection-sdk---authentication-concepts"></a>Microsoft 信息保护 SDK - 身份验证概念
 
