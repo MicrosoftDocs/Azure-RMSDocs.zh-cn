@@ -1,9 +1,9 @@
 ---
 title: 通过 Azure 信息保护统一标签客户端查看受保护的文件
 description: 说明如何查看受保护的文件，该文件要求安装 Azure 信息保护统一标签查看器。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: d4c7ba70ab09c1fa4033babdf3dd5f5664e284ce
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: bbe2a70714d65bff27ce7dc9131ea33fc0774454
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935531"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326535"
 ---
 # <a name="user-guide-view-protected-files-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端查看受保护的文件
 
