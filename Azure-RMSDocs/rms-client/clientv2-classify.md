@@ -1,9 +1,9 @@
 ---
 title: 使用 Azure 信息保护统一标签客户端进行分类
-description: 使用 Azure 信息保护 Windows 统一标签客户端时如何对文档和电子邮件进行分类的说明。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+description: 使用 Azure 信息保护适用于 Windows 的统一标签客户端时，如何对文档和电子邮件进行分类的说明。
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 922d803237edde7950798a9bc9c538f2bcf6b538
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 975332c439530697d6460d2348531488d2b83e15
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935582"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326586"
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-the-azure-information-protection-unified-labeling-client-for-windows"></a>用户指南：使用适用于 Windows 的 Azure 信息保护统一标签客户端对文件或电子邮件进行分类
 
