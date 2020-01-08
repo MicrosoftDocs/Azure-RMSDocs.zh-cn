@@ -4,7 +4,7 @@
     "content": [
       {
         "files": [
-	  "**/**.md", 
+          "**/**.md",
           "**/**.yml"
         ],
         "exclude": [
@@ -14,15 +14,15 @@
       }
     ],
     "resource": [
-        {
-          "files": [
-          "**/images/**", 
+      {
+        "files": [
+          "**/images/**",
           "**/*.png",
           "**/*.jpg",
           "**/*.gif",
           "**/*.bmp",
           "**/*.html"
-          ],
+        ],
         "exclude": [
           "**/obj/**",
           "_themes/**"
@@ -34,11 +34,18 @@
     "globalMetadata": {
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/azure-rmsdocs.zh-cn",
-      "feedback_product_url": "https://msip.uservoice.com/", 
+      "feedback_product_url": "https://msip.uservoice.com/",
       "layout": "Conceptual",
       "breadcrumb_path": "/azure/information-protection/bread/toc.json",
-      "searchScope": ["Information Protection"],
-      "disable_contribution_on_translation_quality": ["MT"]
+      "searchScope": [
+        "Information Protection"
+      ],
+      "disable_contribution_on_translation_quality": [
+        "MT",
+        "MTE75",
+        "MTE95",
+        "Blank"
+      ]
     }
   }
 }
