@@ -1,9 +1,9 @@
 ---
 title: 下载 & 安装 Azure 信息保护统一标签客户端
 description: 用户安装 Azure 信息保护统一标签客户端的说明，以便你可以对文档和电子邮件进行分类和保护。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 10/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 8f9cef00aa9320b88bb756027d646415eb27301c
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 949ba86c0f0327c3a6674c85f680a6a5c48aa970
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73445130"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326420"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-unified-labeling-client"></a>用户指南：下载并安装 Azure 信息保护统一标签客户端
 
@@ -44,7 +44,7 @@ ms.locfileid: "73445130"
 
 4. 如果系统提示继续操作，请单击“是”，然后等待安装完成。
 
-6. 单击 **“关闭”** 。 开始使用 Azure 信息保护统一标签客户端之前：
+6. 单击“关闭”。 开始使用 Azure 信息保护统一标签客户端之前：
 
     - 如果你的计算机运行 Office 2010，请重启计算机，然后转到下一节完成最后步骤。    
         

@@ -1,10 +1,10 @@
 ---
 title: 自定义配置-Azure 信息保护客户端
 description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的信息。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 10/27/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,18 +13,21 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 643715037716dcb30356b08c34e48047dd4f7074
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
-ms.translationtype: MT
+ms.openlocfilehash: 70b9cd8abb01aae2654127a4e9b1c4424cd18e82
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74479175"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675799"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
 >*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
 >
 > *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 请参阅以下高级配置相关信息，在管理 Azure 信息保护客户端时，可能需要用于特定方案或一部分用户。
 
@@ -201,7 +204,7 @@ ms.locfileid: "74479175"
 
 ## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>在 Outlook 中隐藏或显示“不转发”按钮
 
-建议使用“向 Outlook 功能区添加‘不转发’按钮”这一[策略设置](../configure-policy-settings.md)来配置此选项。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。
+建议使用[策略设置](../configure-policy-settings.md)**将 "不转发" 按钮添加到 Outlook 功能区**来配置此选项。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。
 
 配置此设置后，将在 Outlook 功能区中隐藏或显示“不转发”按钮。 此设置对 Office 菜单中的“不转发”选项没有影响。
 
@@ -213,7 +216,7 @@ ms.locfileid: "74479175"
 
 ## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>设置用户是否能够使用自定义权限选项
 
-建议使用“设置用户是否能够使用自定义权限选项”这一[策略设置](../configure-policy-settings.md)来配置此选项。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。 
+配置此选项的建议方法是使用 "**使自定义权限可供用户**使用"[策略设置](../configure-policy-settings.md)。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。 
 
 配置此设置并为用户发布策略后，用户可看到自定义权限选项，它们可用于自行选择保护设置；这些选项也可能隐藏，使得用户无法自行选择保护设置（除非系统出现提示）。
 
@@ -227,7 +230,7 @@ ms.locfileid: "74479175"
 
 此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 此设置处于预览状态，并且可能会更改。
 
-配置[策略设置](../configure-policy-settings.md)时，为用户或上一部分中的同等高级客户端设置提供自定义权限选项，用户无法查看或更改已在受保护文档中设置的自定义权限。 
+当你配置[策略设置](../configure-policy-settings.md)"**使用户可以使用自定义权限" 选项**或在上一节中使用等效的 "高级客户端" 设置时，用户将无法查看或更改已在受保护文档中设置的自定义权限。 
 
 创建和配置此高级客户端设置时，用户可以在使用文件资源管理器时查看和更改受保护文档的自定义权限，然后右键单击该文件。 Office 功能区上的“保护”按钮中的“自定义权限”选项仍处于隐藏状态。
 
@@ -239,7 +242,7 @@ ms.locfileid: "74479175"
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>永久隐藏 Azure 信息保护栏
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 仅当“在 Office 应用中显示信息保护栏”这一项[策略设置](../configure-policy-settings.md)设置为“开”时，才使用此配置。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 仅当[策略设置](../configure-policy-settings.md)"**在 Office 应用中显示信息保护栏**" 设置为 **"开**" 时才使用此选项。
 
 默认情况下，如果用户清除“主页”选项卡、“保护”组、“保护”按钮中的“显示数据条”选项，则信息保护栏将不再显示在该 Office 应用中。 但是，下次打开 Office 应用时，会自动再次显示该栏。
 
@@ -679,7 +682,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 高级客户端设置：
 
     
-|名称|值|
+|Name|值|
 |---------------------|---------|
 |LabelbyCustomProperty|1ace2cc3-14bc-4142-9125-bf946a70542c,"Secure Islands label is Confidential",Classification,Confidential|
 
@@ -696,7 +699,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 高级客户端设置：
 
     
-|名称|值|
+|Name|值|
 |---------------------|---------|
 |LabelbyCustomProperty|3e9df74d-3168-48af-8b11-037e3021813f,"Secure Islands label is Sensitive",Classification,Sensitive|
 
@@ -714,7 +717,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 高级客户端设置：
 
     
-|名称|值|
+|Name|值|
 |---------------------|---------|
 |LabelbyCustomProperty|2beb8fe7-8293-444c-9768-7fdc6f75014d,"Secure Islands label contains Internal",Classification,.\*Internal.\*|
 

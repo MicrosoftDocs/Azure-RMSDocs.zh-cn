@@ -1,9 +1,9 @@
 ---
 title: 用于操作 RMS 共享应用程序的任务 - AIP
 description: 适用于从 RMS 共享应用程序升级到 Azure 信息保护客户端的用户的说明。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 8ed4d110e3b6d0c1ced94d4bf0a08eec666caaea
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 08247cd524f6a8cabbe64cd341bdcd583f9ab8f2
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74933338"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326248"
 ---
 # <a name="user-guide-tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>用户指南：用于操作 RMS 共享应用程序的任务
 
@@ -36,7 +36,7 @@ ms.locfileid: "74933338"
 |保护你通过电子邮件共享的文件 <br /><br />也称为“共享保护项”|通过使用 Outlook，对电子邮件应用具有所需保护的标签，或选择 Outlook 中的“不要转发”选项。 具有[受支持文件类型](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)的未受保护附件会自动受到保护。<br /><br />注意：若要跟踪通过电子邮件发送的受保护文档，请首先保护此文档，然后再将它附加到电子邮件中。<br /><br />有关详细信息，请参阅[对文件或电子邮件进行分类和保护](client-classify-protect.md)。
 |更改受保护的文件的权限 <br /><br />也称为“重新保护”|对于显示 Azure 信息保护栏的 Office 应用程序：选择应用所需保护的标签。<br /><br />对于其他文件，如果 Azure 信息保护客户端处于[仅保护模式](client-protection-only-mode.md)：使用文件资源管理器菜单选项“分类和保护”来打开“分类和保护 - Azure 信息保护”对话框。 然后选择应用所需保护的标签，或指定你自己的自定义权限。<br /><br />有关详细信息，请参阅[对文件或电子邮件进行分类和保护](client-classify-protect.md)。
 |跟踪和撤销文档|在 Word、Excel 和 PowerPoint 中：打开文档，再依次选择“开始”选项卡>“保护”组>“保护” > “跟踪和撤销”<br /><br />从文件资源管理器：右键单击文件或文件夹 > 选择“分类和保护”。 然后在“分类和保护 - Azure 信息保护”对话框中，单击“跟踪和撤销”。 <br /><br />将 PowerShell 用于 Azure 信息保护客户端时：将*bre-walkthrough-enabletracking*参数与[set-aipfilelabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) cmdlet 一起用于注册要跟踪的标记文档。<br /><br />有关详细信息，请参阅[跟踪和撤销文档](client-track-revoke.md)。
-|保护你通过电子邮件共享的文件|对于受保护的 Office 文档，必须安装 Office。 Azure 信息保护查看器可以打开许多其他受保护的文件，使你可以阅读它们，而且在你有相关权限的情况下还可以打印和保存这些文件。 此查看器随客户端自动安装，也可以单独安装。<br /><br />有关详细信息，请参阅[打开受保护的文件](client-view-use-files.md)。
+|查看和使用受保护的文件|对于受保护的 Office 文档，必须安装 Office。 Azure 信息保护查看器可以打开许多其他受保护的文件，使你可以阅读它们，而且在你有相关权限的情况下还可以打印和保存这些文件。 此查看器随客户端自动安装，也可以单独安装。<br /><br />有关详细信息，请参阅[打开受保护的文件](client-view-use-files.md)。
 |删除对文件的保护|使用文件资源管理器菜单选项“分类并保护”打开“分类和保护 - Azure 信息保护”对话框。 <br /><br />然后对于单个文件，清除“使用自定义权限保护”选项。 对于多个文件或文件夹，单击“删除自定义权限”。<br /><br />有关详细信息，请参阅[删除文件和电子邮件中的标签和保护](client-remove-label-protection.md)。|
 
 ## <a name="cant-find-the-option-youre-looking-for"></a>找不到要查找的选项？

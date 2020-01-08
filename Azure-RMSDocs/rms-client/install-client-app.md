@@ -1,9 +1,9 @@
 ---
 title: 下载并安装 Azure 信息保护客户端
 description: 说明用户如何安装适用于 Windows 的 Azure 信息保护客户端，以便分类和保护文档和电子邮件。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: a7f9b75cfcc139ac14241ba562d89caa60bc1f5f
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 2a4242bf87b5cb1ab461fdd7bf4a79231c8cb7f6
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74933382"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326350"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>用户指南：下载并安装 Azure 信息保护客户端
 
@@ -43,7 +43,7 @@ ms.locfileid: "74933382"
 
 2. 找到 **Azure 信息保护客户端**部分，然后单击 Windows 图标。 单击“下载”并保存 **AzInfoProtection.exe** 文件。     
 
-3. 运行已下载的可执行文件。 如果系统提示你继续，请单击**是**。    
+3. 运行已下载的可执行文件。 如果系统提示你继续，请单击 **“是”** 。    
 
 4. 在“安装 Azure 信息保护客户端”页面上：     
     - 如果无法连接到云，但出于演示目的，想要通过使用本地策略查看和体验 Azure 信息保护的客户端，则选择此选项以安装演示策略。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。    
@@ -52,7 +52,7 @@ ms.locfileid: "74933382"
 
 5. 如果系统提示继续操作，请单击“是”，然后等待安装完成。    
 
-6. 单击 **“关闭”** 。 开始使用 Azure 信息保护客户端之前：    
+6. 单击“关闭”。 开始使用 Azure 信息保护客户端之前：    
 
     - 如果你的计算机运行 Office 2010，请重启计算机，然后转到下一节完成最后步骤。    
         

@@ -1,8 +1,8 @@
 ---
 title: Azure 信息保护统一标签客户端版本历史记录 & 支持策略
 description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户端的发布信息。
-author: cabailey
-ms.author: cabailey
+author: mlottner
+ms.author: mlottner
 manager: rkarlin
 ms.date: 11/02/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0ee20b6063dffd18b5067663de05c2d7a25cabd4
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: c7291b63971d34e7dd7e3e369cd13dfca7e44729
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73446035"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326358"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -56,7 +56,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
-此客户端正在替换 Azure 信息保护客户端（经典）。 若要将特性和功能与经典客户端进行比较，请参阅[比较适用于 Windows 计算机的标记客户端](use-client.md##compare-the-labeling-clients-for-windows-computers)。
+此客户端正在替换 Azure 信息保护客户端（经典）。 若要将特性和功能与经典客户端进行比较，请参阅[比较适用于 Windows 计算机的标记客户端](use-client.md#compare-the-labeling-clients-for-windows-computers)。
 
 ## <a name="version-25330"></a>版本2.5.33。0
 
@@ -123,7 +123,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 ## <a name="version-22210"></a>版本2.2.21。0
 
-**发布**日期：09/03/2020
+**发布**日期：09/03/2019
 
 支持，04/23/2020
 

@@ -1,9 +1,9 @@
 ---
 title: 入门 - 适用于 iOS 和 Android 的 AIP 应用
 description: 使用适用于 iOS 和 Android 的 Azure 信息保护应用查看电子邮件或文件
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: rkarlin
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: cc22b2d655444039aee0283b465ee8f5c1a38f7c
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 9da7eaecac3e8eb5bff2e46bf46b3fe77b1f717f
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74933406"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326247"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门
 

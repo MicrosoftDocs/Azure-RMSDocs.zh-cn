@@ -1,9 +1,9 @@
 ---
 title: 适用于 Windows 的 Azure 信息保护统一标签客户端
 description: 适用于 Windows 的 Azure 信息保护统一标签客户端的信息资源。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 10/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: ddfcabc7237c66d95bc9f6dab15dc5326a92d6be
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 020efafdb2a87187a011663773b9ce4f1dce5968
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72805255"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675833"
 ---
 # <a name="azure-information-protection-unified-labeling-client-for-windows"></a>适用于 Windows 的 Azure 信息保护统一标签客户端
 

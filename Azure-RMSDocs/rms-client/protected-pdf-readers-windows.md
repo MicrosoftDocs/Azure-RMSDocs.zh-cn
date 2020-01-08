@@ -1,9 +1,9 @@
 ---
 title: 适用于 Windows 的受保护 PDF 读者
 description: 在 Windows 上安装用于标记为分类和保护的 PDF 文档的读取器
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 12/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.reviewer: kartikka
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 3fbf6b04f6c9b67e8b0b3a9f679428c4af0a6505
-ms.sourcegitcommit: 6f3379705e781fbba1755e34637c7f941da4559e
+ms.openlocfilehash: a2e62bfb199d9531c08db8e956a2a25db4d2b82f
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907451"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326314"
 ---
 # <a name="install-a-pdf-reader-for-windows"></a>安装适用于 Windows 的 PDF 读取器
 
