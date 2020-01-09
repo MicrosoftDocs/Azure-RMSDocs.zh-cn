@@ -1,9 +1,9 @@
 ---
 title: 适用于 Azure RMS 和 FCI 的 PowerShell 脚本 - AIP
 description: 要复制和编辑的示例脚本，如“使用 Windows Server 文件分类基础结构的 RMS 保护”说明中所述。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: fci
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c8f82db12bc4de61b526426e8e05652cfac8db48
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 73ba9a365b38804c8caf0d9e9b06e8b53be8560a
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935242"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326484"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）
 

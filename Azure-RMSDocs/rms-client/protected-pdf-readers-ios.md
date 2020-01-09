@@ -1,9 +1,9 @@
 ---
 title: 适用于 iOS 的受保护 PDF 读取器
 description: 在 iOS 上安装用于标记为分类和保护的 PDF 文档的读取器
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 12/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.reviewer: kartikka
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 8dfbc55af5a7613a3ec8ae2aaebeec0d32ac2a16
-ms.sourcegitcommit: 6f3379705e781fbba1755e34637c7f941da4559e
+ms.openlocfilehash: 0929023905005af31b5dc160506021e0fa906216
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907402"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326467"
 ---
 # <a name="install-a-pdf-reader-for-ios"></a>安装适用于 iOS 的 PDF 读取器
 

@@ -1,10 +1,10 @@
 ---
 title: 使用 Azure 门户激活 Azure RMS - AIP
 description: Azure 门户提供有关保护激活的说明，以便你的组织可开始保护文件和电子邮件。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/30/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,19 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 256cb5dd2251c650a621412b6a13768479597f4e
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
-ms.translationtype: MT
+ms.openlocfilehash: 06c2027468e8e1d321921aca2526edbdc7d4fe31
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934783"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75674405"
 ---
 # <a name="how-to-activate-the-rights-management-protection-service-from-the-azure-portal"></a>如何从 Azure 门户中激活 Rights Management 保护服务
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 如果要使用 Azure 门户从 Azure 信息保护中激活 Rights Management 保护服务（Azure RMS），请使用这些说明。
 

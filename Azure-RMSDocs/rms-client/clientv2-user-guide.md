@@ -1,9 +1,9 @@
 ---
 title: Azure 信息保护用户指南-统一标签
-description: 适用于 Windows 的 Azure 信息保护统一标签客户端可帮助你保护重要文档和电子邮件，使其免受不应看到的用户的保护，即使你的电子邮件已转发或你的文档保存到其他位置也是如此。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+description: Azure 信息保护：适用于 Windows 的统一标签客户端可帮助你保护重要文档和电子邮件，使其免受不能看到它们的用户的安全，即使你的电子邮件已转发或你的文档保存到其他位置。
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 9223087642653b304a719a8f0cbe0125d5b3a741
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 8e4851da21542985c89ef22c50b9d6015e5a6835
+ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935548"
+ms.lasthandoff: 12/22/2019
+ms.locfileid: "75326502"
 ---
 # <a name="azure-information-protection-unified-labeling-user-guide"></a>Azure 信息保护统一标签用户指南 
 
@@ -30,7 +30,7 @@ ms.locfileid: "74935548"
 你只需一台至少运行 Windows 7 with Service Pack 1 的计算机即可。 然后从 Microsoft 下载并安装此免费客户端。
 
 
-## <a name="what-do-you-want-to-do"></a>你希望做什么？
+## <a name="what-do-you-want-to-do"></a>要执行什么操作？
 
 - [下载并安装 Azure 信息保护统一标签客户端](install-unifiedlabelingclient-app.md)
 
