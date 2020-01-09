@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护客户端-版本历史记录 & 支持策略
 description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的新增功能或改进功能，并了解支持的生命周期策略。
-author: cabailey
-ms.author: cabailey
+author: mlottner
+ms.author: mlottner
 manager: rkarlin
-ms.date: 10/23/2019
+ms.date: 1/05/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,20 +12,24 @@ ms.subservice: v1client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4a31e28e560325d3165f5b5e53906fa879664c7b
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
-ms.translationtype: MT
+ms.openlocfilehash: feaffa2397a016d8284075a2ab5bf38f468f5ae7
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73446013"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675408"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
+
+> [!NOTE] 
+>Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**的产品弃用通知。<br>
+>为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 使用 "移动到统一标签"，Azure 信息保护客户可跨所有平台上的 Office 应用程序和非 Microsoft 生产力应用程序无缝制定全面的信息保护策略。 详细了解官方[弃用通知](https://aka.ms/aipclassicsunset)中的所有计划的更改。
 
 >*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
 >
 > *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
-Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供修补程序和新功能。 
+
 
 可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载最新正式版本和当前预览版（若有）。 
 
@@ -34,7 +38,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 有关详细信息，请参阅[升级和维护 Azure 信息保护客户端](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)。
 
 > [!TIP]
-> 对使用 Azure 信息保护统一标签客户端感兴趣，因为标签是从 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心发布的？ 从 Microsoft 下载中心下载并安装统一标签客户端时，可以将 Azure 信息保护客户端升级到此[统一的标签客户端](unifiedlabelingclient-version-release-history.md)。
+> 对使用 Azure 信息保护统一标签客户端感兴趣，因为标签是从 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心发布的？ 从 Microsoft 下载中心下载并安装统一标签客户端时，可以将 Azure 信息保护客户端升级到[统一的标签客户端](unifiedlabelingclient-version-release-history.md)。
 
 ### <a name="servicing-information-and-timelines"></a>维护信息和日程表
 
@@ -72,6 +76,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 > 小的修补程序不予列出，因此如果遇到 Azure 信息保护客户端相关问题，建议检查它是否已在最新 GA 版本中得到修复。 如果问题仍然存在，请检查当前预览版本（如果有）。
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
+
 
 ## <a name="version-154330"></a>版本1.54.33。0
 
@@ -165,7 +170,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 当使用高级客户端设置设置一个 [Outlook 默认标签](client-admin-guide-customizations.md#set-a-different-default-label-for-outlook)时，可以应用一个具有子标签的父标签，当为用户禁用所有这些子标签时，可使用父标签。
 
-- 如果使用[策略设置](../configure-policy-settings.md) 对于带有附件的电子邮件消息，会应用与这些附件的最高级别分类匹配的标签，并且将具有最高级别分类的标签配置为用户定义的权限，之前的结果是将标签应用于电子邮件，但没有应用保护。 现在：
+- 当你为带有附件的电子邮件使用[策略设置](../configure-policy-settings.md)时 **，将应用与这些附件的最高分类匹配的标签**，并使用为用户定义的权限配置最高分类的标签，以前的结果是标签已应用到电子邮件，但保护不是。 现在：
     - 如果标签的用户定义权限包括 Outlook （不要转发）：应用该标签，并且它不会将保护转发到电子邮件。
     - 如果标签的用户定义权限仅适用于 Word、Excel、PowerPoint 和文件资源管理器：请不要应用标签，也不要将任何保护应用于电子邮件。
 
@@ -188,7 +193,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 - 默认情况下，Azure 信息保护扫描程序不再排除 .zip 文件。 若要检查和标记 .zip 文件，请参阅管理员指南的[检查 .zip 文件](client-admin-guide-file-types.md#to-inspect-zip-files)部分。
 
-- [策略设置](../configure-policy-settings.md)“用户必须提供设置较低分类标签、删除标签或删除保护的理由”不再适用于扫描程序。 当**你在 scanner 配置文件中配置**设置 "重新**标记文件**"，然后选中 "**允许标签降级**" 复选框时，扫描程序会执行这些操作。
+- [政策设定](../configure-policy-settings.md) **用户必须提供理由以设置较低的分类标签、删除标签或删除保护**不再适用于扫描仪。 当**你在 scanner 配置文件中配置**设置 "重新**标记文件**"，然后选中 "**允许标签降级**" 复选框时，扫描程序会执行这些操作。
 
 ## <a name="next-steps"></a>后续步骤
 
