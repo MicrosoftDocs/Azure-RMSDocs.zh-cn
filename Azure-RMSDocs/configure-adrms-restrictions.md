@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 ms.subservice: hyok
 ms.custom: admin
-ms.openlocfilehash: 2481911194864eaf4642cf4455d4c1c98b70f957
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
-ms.translationtype: HT
+ms.openlocfilehash: 8ae21a207dd122066fc4dac659bd1e2e9e7c243f
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675223"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75742758"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>用于 Azure 信息保护的保留自己的密钥 (HYOK) 保护
 
@@ -24,8 +24,6 @@ ms.locfileid: "75675223"
 >
 > *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
-> [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 使用以下信息了解什么是用于 Azure 信息保护的保留自己的密钥 (HYOK)，以及它与默认的基于云的保护有何不同。 使用 HYOK 保护前，请确保了解适用情况、支持的方案、限制和需求。 
 

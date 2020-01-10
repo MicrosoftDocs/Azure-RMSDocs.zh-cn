@@ -12,19 +12,17 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 56f8a89753660db66581822b5928f5340328918a
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
-ms.translationtype: HT
+ms.openlocfilehash: ab013cb0e5ed4656eeb0d8c1a50cb13e9c5a2a80
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75674218"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75743574"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
-> [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 是否有关于 Azure 信息保护中数据保护服务 Azure Rights Management 的问题？ 请查看此处是否有答案。
 

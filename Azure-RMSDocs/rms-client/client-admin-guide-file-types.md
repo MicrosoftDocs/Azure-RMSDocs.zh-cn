@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 58a050891e1435288f441dac3ead28f434813f97
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
-ms.translationtype: HT
+ms.openlocfilehash: 1208648b6bc336487462332d354fc4398f7464f5
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675816"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75743720"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "75675816"
 >
 > *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
-> [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 Azure 信息保护客户端可以将以下内容应用于文档和电子邮件：
 

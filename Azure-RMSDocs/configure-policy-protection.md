@@ -1,28 +1,29 @@
 ---
 title: 配置 Azure 信息保护标签以进行保护 - AIP
 description: 通过配置标签来使用 Rights Management 保护，可保护最敏感的文档和电子邮件。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/28/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 7e455e54832113b1a4f67665ddad8455080b4970
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 84d72965d0438b17b23f194d4ec085765853608c
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74933763"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75742719"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
 >适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 > 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+
 
 > [!NOTE]
 > 这些说明适用于 Azure 信息保护客户端（经典版），而不是 Azure 信息保护统一标记客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
@@ -153,7 +154,7 @@ ms.locfileid: "74933763"
     
      ###### <a name="information-about-the-protection-settings"></a>有关保护设置的信息
     
-     |Setting|更多信息|推荐设置
+     |设置|更多信息|推荐设置
      |-----------|--------------------|--------------------|
      |**文件内容有效期限**|定义一个日期或天数，在此期间不应为选定的用户打开受模板保护的文档。 对于电子邮件，由于某些电子邮件客户端使用的缓存机制，并不总是强制执行过期。<br /><br />你可以指定一个日期，也可以指定对内容应用保护后所经历的天数。<br /><br />如果你指定一个日期，它将在你当前时区的午夜生效。|除非内容具有特定的时间限制要求，否则**内容永不过期**。|
      |**允许脱机访问**|使用此设置在你的任何安全需求（包括吊销后的访问权限）与所选用户在没有 Internet 连接的情况下是否能够打开受保护的内容之间实现平衡。<br /><br />如果你指定内容在没有 Internet 连接的情况下不可用，或者指定内容仅在指定天数内可用，则在到达该阈值时，这些用户必须重新进行身份验证，他们的访问也将被记录。 发生这种情况时，如果用户的凭据不缓存，他们会收到提示，指示登录后才能打开文档或电子邮件。<br /><br />除了重新进行身份验证之外，还会重新评估策略和用户组成员身份。 这意味着，如果策略或组成员身份相比用户上一次访问文档或电子邮件时发生变化，则他们可能获得与上一次访问相同内容时不同的访问结果。 如果文档已被[撤销](./rms-client/client-track-revoke.md)，则可能不包含访问权限。|取决于内容的敏感程度：<br /><br />- **在没有 Internet 连接的情况下内容的可用天数** = **7**用于如果与未经授权的人员共享可能导致业务损失的敏感业务数据。 此建议提供灵活性和安全性之间的平衡折中。 例如合同、安全报告、预测摘要和销售客户数据。<br /><br />- **禁止访问**对于高度敏感的业务数据，如果与未经授权的人员共享将会导致业务损失。 此建议优先考虑安全性而不是灵活性，并确保一旦文档被撤销，那么所有授权用户都无法打开文档。 例如员工和客户信息、密码、源代码和预先公布的财务报表。|

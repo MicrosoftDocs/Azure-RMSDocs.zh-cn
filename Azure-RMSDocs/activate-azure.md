@@ -13,19 +13,17 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 06c2027468e8e1d321921aca2526edbdc7d4fe31
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
-ms.translationtype: HT
+ms.openlocfilehash: 6e34c0127645db9d4dee9dc61c5b2a331a27c9f6
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75674405"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75742796"
 ---
 # <a name="how-to-activate-the-rights-management-protection-service-from-the-azure-portal"></a>如何从 Azure 门户中激活 Rights Management 保护服务
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
->[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 如果要使用 Azure 门户从 Azure 信息保护中激活 Rights Management 保护服务（Azure RMS），请使用这些说明。
 

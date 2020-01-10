@@ -12,21 +12,18 @@ ms.assetid: f9b61b6b-05ba-4422-b8b0-cd20af774a2b
 ms.subservice: v1client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5775a62e7f2a84541d153765a554476db534eb32
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
-ms.translationtype: HT
+ms.openlocfilehash: ec40deb985ebc26304dc8d53c8f2685b7a235272
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675850"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75743752"
 ---
 # <a name="azure-information-protection-client-for-windows"></a>适用于 Windows 的 Azure 信息保护客户端
 
 >*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 Windows 7、windows Server 2019、windows Server 2016、Windows server 2012 R2、windows Server 2012、Windows server 2008 r2**
 >
 > *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
-
-> [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 Azure 信息保护客户端（经典）是使用[Azure 信息保护](../what-is-information-protection.md)来分类和保护文档和电子邮件的组织的原始可下载客户端，或者使用 Rights Management 服务来保护其数据。 此客户端还有一个查看器，可用于没有自己的信息保护基础结构，但希望使用其他组织通过 Microsoft 的 Rights Management 服务保护的内容的组织。
 

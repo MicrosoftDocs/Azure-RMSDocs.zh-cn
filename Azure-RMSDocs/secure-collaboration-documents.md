@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d62c2946fed73c3f7ac69182b9558ee233935b4a
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
-ms.translationtype: HT
+ms.openlocfilehash: 57e40899f3c386b076a8642c17f019ea0767ab22
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675578"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75743782"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
@@ -43,8 +43,6 @@ ms.locfileid: "75675578"
 
 ## <a name="example-configuration-for-a-label-to-apply-protection-to-support-internal-and-external-collaboration"></a>让标签应用保护以支持外部协作的配置示例
 
-> [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[弃用通知](https://aka.ms/aipclassicsunset)中了解详细信息，并按照[Microsoft 365 安全和合规性中心中的说明](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)完成这些步骤。 
 
 此示例演示了如何配置现有标签以应用保护，以便组织中的用户可以与另一个拥有 Office 365 或 Azure AD 的组织中的所有用户、其他具有 Office 365 或 Azure AD 的组织中的组以及在 Azure AD 中没有帐户而是使用 Gmail 电子邮件地址的用户就文档进行协作。
 

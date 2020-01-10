@@ -12,19 +12,17 @@ ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 61de188f78e0a64ce99100b2e32cbbf4dedcc953
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
-ms.translationtype: HT
+ms.openlocfilehash: 43850c44b4dbce0e9aeac68939c9d2fe915faa78
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675119"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75742687"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：安装和配置客户端
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
-> [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 运行 Office 2010 的计算机需要 Azure 信息保护客户端（经典）或 Azure 信息保护统一标签客户端，以便向 Azure 信息保护服务进行身份验证。
 

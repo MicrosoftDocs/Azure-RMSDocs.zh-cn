@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 01dfe90eb16efe74833cd3f8843e8cc0068a4686
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
-ms.translationtype: HT
+ms.openlocfilehash: 09e8358493e80099b38294c472f134cb0632943f
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675289"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75743465"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
@@ -26,8 +26,6 @@ ms.locfileid: "75675289"
 >
 > *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
-> [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 保护模板（也称为 Rights Management 模板）是 Azure 信息保护的一组管理员定义的保护设置。 这些设置包括为授权用户选择的[使用权限](configure-usage-rights.md)，以及对到期和离线访问的访问控制。 这些模板已与 Azure 信息保护策略集成： 
 

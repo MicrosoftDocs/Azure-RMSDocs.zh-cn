@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 2d25ddd47d3067fa965faa94aebcb0a933628894
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
-ms.translationtype: HT
+ms.openlocfilehash: 5d15bf43294e634844dee2d856b9fe67cccd78ee
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75674677"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75742985"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>如何删除或重排 Azure 信息保护的标签
 
@@ -24,8 +24,6 @@ ms.locfileid: "75674677"
 >
 > *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
-> [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 可以删除或重排用户在 Office 应用程序中看到的 Azure 信息保护标签，方法是为标签选择这些操作。
 

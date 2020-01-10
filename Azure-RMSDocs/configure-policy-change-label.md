@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 29790b72ac428369b694cd60449f775f60733117
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
-ms.translationtype: HT
+ms.openlocfilehash: 4530f365f63756c61a7ad97936cffb64cc22d1b8
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675026"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75742868"
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>如何更改或自定义 Azure 信息保护的现有标签
 
@@ -24,8 +24,6 @@ ms.locfileid: "75675026"
 >
 > *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
-> [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 通过在 Azure 门户中配置标签，可以更改或优化用户在“信息保护”栏或从 Office 功能区的“保护”按钮看到的任何标签。
 
