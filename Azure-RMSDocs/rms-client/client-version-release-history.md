@@ -12,18 +12,15 @@ ms.subservice: v1client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: feaffa2397a016d8284075a2ab5bf38f468f5ae7
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
-ms.translationtype: HT
+ms.openlocfilehash: e9fc95f47273b6d604ba6a1151106ae64298fce0
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675408"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75743643"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
-> [!NOTE] 
->Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**的产品弃用通知。<br>
->为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 使用 "移动到统一标签"，Azure 信息保护客户可跨所有平台上的 Office 应用程序和非 Microsoft 生产力应用程序无缝制定全面的信息保护策略。 详细了解官方[弃用通知](https://aka.ms/aipclassicsunset)中的所有计划的更改。
 
 >*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
 >
@@ -193,7 +190,7 @@ ms.locfileid: "75675408"
 
 - 默认情况下，Azure 信息保护扫描程序不再排除 .zip 文件。 若要检查和标记 .zip 文件，请参阅管理员指南的[检查 .zip 文件](client-admin-guide-file-types.md#to-inspect-zip-files)部分。
 
-- [政策设定](../configure-policy-settings.md) **用户必须提供理由以设置较低的分类标签、删除标签或删除保护**不再适用于扫描仪。 当**你在 scanner 配置文件中配置**设置 "重新**标记文件**"，然后选中 "**允许标签降级**" 复选框时，扫描程序会执行这些操作。
+- [policy setting](../configure-policy-settings.md) **用户必须提供理由以设置较低的分类标签、删除标签或删除保护**不再适用于扫描仪。 当**你在 scanner 配置文件中配置**设置 "重新**标记文件**"，然后选中 "**允许标签降级**" 复选框时，扫描程序会执行这些操作。
 
 ## <a name="next-steps"></a>后续步骤
 

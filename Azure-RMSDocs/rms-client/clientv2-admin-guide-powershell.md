@@ -1,9 +1,9 @@
 ---
 title: 将 PowerShell 与 Azure 信息保护统一标签客户端配合使用
 description: 管理员使用 PowerShell 管理 Azure 信息保护统一标签客户端的说明和信息。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 10/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: da0d578d06081667e4d8a25be841c2feb2c1fbd5
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 44b30188cdae6e41f830afd283c22ca58e9afea2
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561253"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675561"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-unified-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护统一客户端配合使用
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，带 SP1 的 windows 7，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012，windows Server 2008 r2*
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 当你安装 Azure 信息保护统一标签客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
@@ -57,7 +57,7 @@ Cmdlet 随 PowerShell 模块**AzureInformationProtection**一起安装，其中�
 
     - 必须为你的组织启用超级用户功能，而且必须将你的帐户配置为 Azure 权限管理的超级用户。
 
-#### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>先决条件 1：必须激活 Azure Rights Management 服务
+#### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>先决条件 1：必须激活 Azure 权限管理服务
 
 如果未激活 Azure 信息保护租户，请参阅 [[从 Azure 信息保护中激活保护服务中](../activate-service.md)的说明。
 
@@ -69,7 +69,7 @@ Cmdlet 随 PowerShell 模块**AzureInformationProtection**一起安装，其中�
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>如何以非交互方式为 Azure 信息保护标记文件
 
-可以使用 [Set-AIPAuthentication cmdlet](/powershell/module/azureinformationprotection/set-aipauthentication)，以非交互方式运行标记 cmdlet。
+可以使用 Set-AIPAuthentication cmdlet，以非交互方式运行标记 cmdlet[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)。
 
 默认情况下，运行 cmdlet 进行标记时，命令会在交互式 PowerShell 会话中你自己的用户上下文运行。 若要以无人参与模式运行，请使用可以交互方式登录的 Windows 帐户，并使用将用于委派访问的 Azure AD 中的帐户。 为了便于管理，请使用从 Active Directory 同步到 Azure AD 的单个帐户。
 
@@ -103,13 +103,13 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
 
 3. 选择 " **+ 新注册**"。 在 "**注册应用程序**" 窗格上，指定以下值，然后单击 "**注册**"：
 
-   - **名称**： `AIP-DelegatedUser`
+   - **名称**：`AIP-DelegatedUser`
         
         如果愿意的话，请指定其他名称。 该名称对于每个租户必须是唯一的。
     
-    - **支持的帐户类型**：**仅限此组织目录中的帐户**
+    - **受支持的帐户类型**：**仅限此组织目录中的帐户**
     
-    - **重定向 URI （可选）** ：**Web**和 `https://localhost`
+    - **重定向 URI （可选）** ： **Web**和 `https://localhost`
 
 4. 在 " **AIP-DelegatedUser** " 窗格上，复制 "**应用程序（客户端） ID**" 的值。 值类似于以下示例： `77c3c1c3-abf9-404e-8b2b-4652836c8c66`。 运行 Set-aipauthentication cmdlet 时，此值用于*AppId*参数。 粘贴并保存该值供以后参考。
 
@@ -120,7 +120,7 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
 7. 对于 "**添加客户端密钥**"，请指定以下各项，然后选择 "**添加**"：
     
     - **说明**： `Azure Information Protection unified labeling client`
-    - **过期**时间：指定选择的持续时间（1年、2年或永不过期）
+    - **过期**：指定所选的持续时间（1年、2年或永不过期）
 
 8. 返回到 " **AIP-DelegatedUser-证书 & 机密**" 窗格的 "**客户端密码**" 部分中，复制**值**的字符串。 此字符串类似于以下示例： `OAkk+rnuYc/u+]ah2kNxVbtrDGbS47L4`。 若要确保复制所有字符，请选择要**复制到剪贴板**的图标。 
     
@@ -137,7 +137,7 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
     -  **DelegatedReader** 
     -  **DelegatedWriter**
 
-13. 选择 "**添加权限**"。
+13. 选择“添加权限”。
 
 14. 返回到**AIP-DelegatedUser-API 权限**窗格，选择 " **+ 再次添加权限**"。
 
@@ -149,7 +149,7 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
     
     -  **UnifiedPolicy。读取**
 
-18. 选择 "**添加权限**"。
+18. 选择“添加权限”。
 
 19. 返回到**AIP-DelegatedUser-API 权限**窗格，选择 "**向管理员授予 \<*你的租户名称*>** 并在确认提示中选择 **" 是 "** 。
     
@@ -160,7 +160,7 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
 现在，你已使用机密完成了此应用的注册，接下来可以使用参数*AppId*和*AppSecret*运行[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 。 此外，还需要租户 ID。 
 
 > [!TIP]
->可以通过使用 Azure 门户快速复制租户 ID：**Azure Active Directory** > **管理** > **属性** > **目录 ID**。
+>你可以通过使用 Azure 门户： **Azure Active Directory** > **管理** > **属性** > **Directory id**快速复制租户 id。
 
 1. 通过 "以**管理员身份运行" 选项**打开 Windows PowerShell。 
 

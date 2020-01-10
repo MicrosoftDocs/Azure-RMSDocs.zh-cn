@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护客户端-AIP
 description: Microsoft Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的数据。 客户端（Azure 信息保护客户端或 Rights Management 客户端）与在计算机和移动设备上运行的应用程序集成。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 12/08/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,17 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 024e785faf06abde45177fe8049ae8c7c24294fd
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 24a0ee1b4627002284d5861287ec7a3133813902
+ms.sourcegitcommit: a38af4741017cd745efc011cf29a0fedb62f9be7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74933287"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827547"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
 >*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
+
 
 Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的文档和电子邮件：
 
@@ -84,7 +85,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 使用下表来帮助比较 Windows 计算机的三个标记客户端支持的功能。
 
-若要在不同的操作系统平台（Windows、MacOS、iOS 和 Android）和 web 上比较 Office 内置的灵敏度标签功能，请参阅 Office 文档：[目前在 office 中支持哪些敏感性标签功能？](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#what-sensitivity-label-capabilities-are-supported-in-office-today)
+若要在不同的操作系统平台（Windows、MacOS、iOS 和 Android）和 web 上比较 Office 内置的灵敏度标签功能，请参阅 Office 文档：[应用中对敏感度标签功能的支持](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)。
 
 |功能|经典客户端|统一标签客户端|Office 内置标签客户端|
 |:------|:------------:|:---------------------:|:-----------------------------:|
@@ -116,6 +117,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |吊销受保护的文档：| **是** | 否 | 否 |
 |仅保护模式（无标签）：| **是** | 否 | 否 |
 |支持帐户切换：| 否 | 否 | **是** |
+|支持远程桌面服务：| **是** | **是** | **是** |
 |对 AD RMS 的支持：| **是** | 无<sup>8</sup> | 否 |
 
 脚注：
@@ -148,15 +150,14 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |在 Office 应用程序中管理“信息保护”栏：|面向用户： <br /><br />- 从功能区上的“保护”按钮选择显示或隐藏栏<br /><br />- 如果用户选择隐藏栏，默认情况下，该栏在应用程序中隐藏，但会继续自动显示在新打开的应用程序中 <br /><br /> 面向管理员： <br /><br />- 在应用程序首次打开时，通过策略设置自动显示或隐藏栏，并控制在用户选择隐藏栏后，该栏是否对新打开的应用程序自动保持隐藏状态|面向用户： <br /><br />- 从功能区上的“敏感度”按钮选择显示或隐藏栏<br /><br />- 当用户选择隐藏栏时，该栏在该应用程序中以及新打开的应用程序中均处于隐藏状态 <br /><br />面向管理员： <br /><br />-用于管理栏的 PowerShell 设置 |
 |标签颜色： | 在 Azure 门户中配置 | 在迁移标签之后保留并可通过[PowerShell](clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)进行配置|
 |标签支持不同语言：| 在 Azure 门户中配置 | 使用 Office 365 安全性和符合性 PowerShell 进行配置，为[新标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-label?view=exchange-ps)和[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)使用*LocaleSettings*参数|
-|策略更新： | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 24 小时一次 <br /><br />对于扫描程序：每小时和服务启动时间，策略超过1小时| 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 4 小时一次 <br /><br />对于扫描仪：每隔4小时|
+|策略更新： | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时刷新 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时刷新<br /><br />每 24 小时一次 <br /><br />对于扫描程序：每小时和服务启动时间，策略超过1小时| 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时刷新 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时刷新<br /><br />每 4 小时一次 <br /><br />对于扫描仪：每隔4小时|
 |PDF 支持的格式：| 保护: <br /><br /> - PDF 加密的 ISO 标准（默认） <br /><br /> - .ppdf <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护| 保护: <br /><br /> - PDF 加密的 ISO 标准 <br /><br /> <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护|
 |用查看器打开的通用受保护文件（.pfile）：| 文件将在原始应用中打开，然后可在其中查看、修改和保存该文件而无需保护 | 文件将在原始应用中打开，然后可在其中进行查看和修改，但不能保存|
 |支持的 cmdlet：| 用于标记的 cmdlet 和用于保护的 cmdlet | 用于标记的 cmdlet：<br /><br /> Set-aipfileclassification 和 Set-aipfilelabel 不支持*Owner*参数 <br /><br /> 此外，对于未应用标签的所有场景，都有一条“无适用标签”的注释 <br /><br /> Set-aipfileclassification 支持*WhatIf*参数，因此它可以在发现模式下运行 <br /><br /> Set-AIPFileLabel 不支持 EnableTracking 参数 <br /><br /> Get-AIPFileStatus 不从其他租户返回标签信息，也不显示 RMSIssuedTime 参数<br /><br />此外，Get-aipfilestatus 的*LabelingMethod*参数显示**特权**或**标准**，而不是**手动**或**自动**。 有关详细信息，请参阅[联机文档](/powershell/module/azureinformationprotection/get-aipfilestatus)。|
 |Office 中每个操作的对齐方式提示（如果已配置）： | 频率：每个文件 <br /><br /> 降低敏感度级别 <br /><br /> 删除标签<br /><br /> 删除保护 | 频率：每个会话 <br /><br /> 降低敏感度级别<br /><br /> 删除标签|
 |删除已应用的标签操作： | 系统提示用户确认 <br /><br />下次 Office 应用程序打开文件时，不会自动应用默认标签或自动标签（如果已配置）  <br /><br />| 不提示用户确认<br /><br /> 下次 Office 应用程序打开文件时，自动应用默认标签或自动标签（如果已配置）|
 |自动和推荐的标签： | 在 Azure 门户中配置为[标签条件](../configure-policy-classification.md)，其中包含使用短语或正则表达式的内置信息类型和自定义条件 <br /><br />配置选项包括： <br /><br />- 唯一/非唯一计数 <br /><br /> - 最小计数| 在管理中心中配置，包含内置敏感信息类型和[自定义信息类型](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type)<br /><br />配置选项包括：  <br /><br />- 仅唯一计数 <br /><br />- 最小和最大计数 <br /><br />- 信息类型支持 AND 和 OR <br /><br />- 关键字字典<br /><br />- 可自定义的可信度和字符接近度|
-|自动和建议标签的可自定义策略提示： | “是” <br /><br />使用 Azure 门户将默认消息替换为用户 | 否 <br /><br /> 尽管管理中心提供了提供自定义策略提示的选项，但统一标签客户端当前不支持此选项|
-|对附件的子标签订购支持： | 使用[高级客户端设置](client-admin-guide-customizations.md##enable-order-support-for-sublabels-on-attachments)启用 | 默认情况下启用，无需配置|
+|对附件的子标签订购支持： | 使用[高级客户端设置](client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments)启用 | 默认情况下启用，无需配置|
 |更改文件类型的默认保护行为： | 你可以使用[注册表编辑](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)来替代本机保护和常规保护的默认值 | 你可以使用[PowerShell](clientv2-admin-guide-customizations.md#change-which-file-types-to-protect)来更改受保护的文件类型|
 
 有关特定保护设置的行为差异的详细比较，请参阅[比较标签的保护设置的行为](../configure-policy-migrate-labels.md#comparing-the-behavior-of-protection-settings-for-a-label)。

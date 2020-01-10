@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d094070b3f7c2973b99c9ca212b8b25873026faa
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
-ms.translationtype: HT
+ms.openlocfilehash: 60f1ea855d2ec666f2d22bb53d8856a6461157dc
+ms.sourcegitcommit: a38af4741017cd745efc011cf29a0fedb62f9be7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75674609"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827530"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -25,8 +25,6 @@ ms.locfileid: "75674609"
 >
 > *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
-> [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的**Azure 信息保护客户端（经典）** 和**标签管理**将于**2021 年3月31日**被**弃用**。 此时间范围允许所有当前的 Azure 信息保护客户使用 Microsoft 信息保护统一标签平台过渡到我们的统一标签解决方案。 在官方[否决通知](https://aka.ms/aipclassicsunset)中了解详细信息。
 
 将 Azure 信息保护标签迁移到统一的标签平台，以便可以将它们用作[支持统一标签的客户端和服务](#clients-and-services-that-support-unified-labeling)的敏感度标签。
 
@@ -197,7 +195,7 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 
 - [适用于 Windows 的 Azure 信息保护统一标签客户端](./rms-client/unifiedlabelingclient-version-release-history.md)。 有关此客户端与 Azure 信息保护客户端（经典）的比较，请参阅[比较 Windows 计算机的标记客户端](./rms-client/use-client.md#compare-the-labeling-clients-for-windows-computers)。
 
-- Office 中处于不同可用性阶段的应用。 有关详细信息，请参阅 office 文档中的[office 今日支持哪些敏感性标签功能？](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#what-sensitivity-label-capabilities-are-supported-in-office-today) 。
+- Office 中处于不同可用性阶段的应用。 有关详细信息，请参阅 Office 文档[中的在应用中支持敏感度标签功能](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)。
     
 - 来自软件供应商和开发人员且使用 [Microsoft 信息保护 SDK](https://docs.microsoft.com/information-protection/develop/overview) 的应用。
 
@@ -225,8 +223,12 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 
 ## <a name="next-steps"></a>后续步骤
 
-有关我们的客户体验团队的其他指南和提示，请参阅以下博客文章：[了解统一标签迁移](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Understanding-Unified-Labeling-migration/ba-p/783185)。
+有关我们的客户体验团队的其他指导和技巧，请参阅以下资源：
 
-有关现在可以配置并在其中一个管理中心发布的已迁移标签的详细信息，请参阅[敏感度标签的概述](/microsoft-365/compliance/sensitivity-labels)。
+- 博客文章：[了解统一标签迁移](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Understanding-Unified-Labeling-migration/ba-p/783185)
+
+- 网络研讨会： [AIP 统一标记网络研讨会记录](https://aka.ms/AIP-UL-Webinar-Join1)
+
+有关现在可以在一个标签管理中心内配置和发布的已迁移标签的详细信息，请参阅[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)。
 
 如果尚未这样做，请安装 Azure 信息保护统一标签客户端。 有关发布信息、管理员指南和用户指南，请参阅适用[于 Windows 的 Azure 信息保护统一标签客户端](./rms-client/aip-clientv2.md)。
