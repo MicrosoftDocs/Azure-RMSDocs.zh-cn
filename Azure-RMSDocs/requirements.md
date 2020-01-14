@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护要求 - AIP
 description: 确定为组织部署 Azure 信息保护的必备条件。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 12/04/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/12/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6caa524dd993dcdfd8a3e19ebccaea313006657b
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: ecde2ec34dd27cb3bd2a176e8d205de6ee865421
+ms.sourcegitcommit: 2d75192e7cd2e322ab422fc2115aa063e8dda18b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831708"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75913279"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -75,9 +75,7 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 - Windows 8（x86、x64）
 
-- Windows 7 Service Pack 1（x86、x64）
-
-- Windows Server 2019
+- Windows Server Standard 2012 R2
 
 - Windows Server 2016
 
@@ -85,6 +83,7 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 - Windows Server 2008 R2 
 
+有关早期版本的 Windows 支持选项的信息，请联系 Microsoft 帐户或支持代表。   
 除了在物理计算机上安装客户端，你还可以将其安装在虚拟机上。 检查虚拟桌面解决方案的软件供应商是否具有运行 Azure 信息保护统一标签客户端或 Azure 信息保护客户端可能需要的其他配置。 例如，对于 Citrix 解决方案，你可能需要禁用适用于 Office 的[Citrix 应用程序编程接口（API）挂钩](https://support.citrix.com/article/CTX107825)（winword、excel.exe、powerpnt）以及 Azure 信息保护统一标签客户端或 Azure 信息保护客户端（policy.msip，policy.msip）的可执行文件（）。
 
 对于列出的服务器版本：
@@ -107,7 +106,7 @@ Azure 信息保护客户端可以使用 Office 应用程序的**Word**、 **Exce
 
 - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证
 
-- Office 365 ProPlus
+- Office 365 专业增强版
 
 - Office 专业增强版 2019
 
@@ -166,4 +165,18 @@ Office 的其他版本无法通过使用 Rights Management 服务保护文档和
 - 在同一个组织中并行运行 AD RMS 和 Azure RMS（在迁移过程中的情形除外），如[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)所述。
 
 支持[从 AD RMS 到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)和[从 Azure 信息保护到 AD RMS](/powershell/module/aipservice/Set-AipServiceMigrationUrl) 的迁移路径。 如果你部署 Azure 信息保护，然后决定不再想要使用此云服务，请参阅[解除 Azure 信息保护授权和停用 Azure 信息保护](decommission-deactivate.md)。
+
+### <a name="service-tags"></a>服务标记
+
+请确保允许访问以下服务标记的所有端口：
+
+- **AzureInformationProtection**
+- **AzureActiveDirectory**
+- **AzureFrontDoor**
+
+Azure 信息保护服务还依赖于两个特定的 IP 地址：
+ - **13.107.6.181** 
+ - **13.107.9.181**
+
+请确保创建规则以允许对这些特定 IP 地址进行出站访问。 
 
