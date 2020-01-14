@@ -1,21 +1,21 @@
 ---
 title: 教程 - 使用 Azure 信息保护策略设置进行数据分类
 description: 本入门教程介绍如何配置 Azure 信息保护策略设置，从而帮助对组织的文档和电子邮件进行分类。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 10/01/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 98aeeb0b858690327904e8fcd3932f9b38e7cf30
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: edc6fe02c5b11624e88e393dbaff20bb8ed1a620
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559201"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675493"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
@@ -23,10 +23,13 @@ ms.locfileid: "73559201"
 >
 > 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
-在本教程中，你将了解如何执行以下操作：
+在本教程中，你将了解如何：
 > [!div class="checklist"]
 > * 配置协同工作的策略设置
 > * 在实际操作中查看设置
+
+> [!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 与其依赖用户手动标记其文档和电子邮件，不如使用 Azure 信息保护策略设置来实现以下目的：
 
@@ -92,7 +95,7 @@ ms.locfileid: "73559201"
 
 4. 更改设置以匹配下表中的值。 记下更改的设置，以便在完成本教程后再次将它更改回来。 
 
-    |Setting|值|信息|
+    |设置|值|信息|
     |-------|-----|-----|
     |**选择默认标签**|**常规**|“常规”  标签是 Azure 信息保护可为你创建的默认标签之一。 [创建和发布标签](quickstart-viewpolicy.md#create-and-publish-labels)快速入门中介绍了此步骤。 如果没有名为“常规”  的标签，可以从下拉列表中选择另一个标签。 未标记的文档和电子邮件将自动应用此标签作为基本分类。 不过，用户可以将所选标签更改为其他标签。|
     |**强制所有文档和电子邮件都具有标签**|**开**|此设置通常称为强制标记，因为它可以防止用户保存文档或发送未标记的电子邮件。 连同默认标签，文档和电子邮件将具有你设置的默认标签或它们选择的标签。

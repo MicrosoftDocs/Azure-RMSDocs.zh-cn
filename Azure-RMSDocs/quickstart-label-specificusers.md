@@ -1,27 +1,30 @@
 ---
 title: 快速入门 - 为特定用户新建 Azure 信息保护标签 - AIP
 description: 使用范围策略，创建和配置为一部分用户分类文档和电子邮件的新标签。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/28/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 3e69706b786227cd41e215bc48c6caf9fab250bb
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: a321d0034760e4daf67154f09d843302f1fb9974
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935361"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675884"
 ---
 # <a name="quickstart-create-a-new-azure-information-protection-label-for-specific-users"></a>快速入门：为特定用户创建新的 Azure 信息保护标签
 
 >适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 > 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+
+> [!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 本快速入门介绍如何创建新的 Azure 信息保护标签：只有特定用户才能查看该标签并应用它来分类并保护文档和电子邮件。
 
@@ -67,9 +70,9 @@ ms.locfileid: "74935361"
 
 3. 在“标签”  窗格上，至少指定以下两项：
     
-    - **标签显示名称**：用户将看到的新标签名称，用于标识内容的分类。 例如：`Sales - Restricted`。
+    - **标签显示名称**：用户将看到的新标签名称，用于标识内容的分类。 例如： `Sales - Restricted`。
     
-    - **说明**：工具提示，用于帮助用户确定何时选择此新标签。 例如：`Business data that is restricted to the Sales Team.`
+    - **描述**：工具提示，用于帮助用户确定何时选择此新标签。 例如：`Business data that is restricted to the Sales Team.`
 
 4. 请确保“已启用”  设置为“开”  （默认设置），然后选择“保存”  。
 
@@ -79,7 +82,7 @@ ms.locfileid: "74935361"
 
 1. 从“分类” > “策略”菜单选项中   ：在“Azure 信息保护 - 策略”窗格上，选择“添加新策略”   。 
 
-2. 在“策略”  窗格上，对于“策略名称”  框，输入一个名称，用于标识哪组用户能够查看新创建的标签。 例如，`Sales` 。
+2. 在“策略”  窗格上，对于“策略名称”  框，输入一个名称，用于标识哪组用户能够查看新创建的标签。 例如，`Sales`。
 
 3. 选中“选择哪些用户或组可以获取此策略”  选项。
 

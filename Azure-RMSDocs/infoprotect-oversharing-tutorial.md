@@ -1,21 +1,21 @@
 ---
 title: 教程 - 使用 Azure 信息保护控制过度共享 - AIP
 description: 入门教程，可便于配置和了解 Azure 信息保护客户端的高级客户端的实际效果，这些设置可发出警告、提示提供理由或阻止邮件从 Outlook 发送。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 10/01/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: ef93a0ee7bdcfd2caf2216bed15bd2d1d9e5436e
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 52d47fb119a94054022cc14edc4e2bd07ddef33a
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559355"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675357"
 ---
 # <a name="tutorial-configure-azure-information-protection-to-control-oversharing-of-information-using-outlook"></a>教程：配置 Azure 信息保护以使用 Outlook 控制信息的过度共享
 
@@ -23,11 +23,14 @@ ms.locfileid: "73559355"
 >
 > 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
-在本教程中，你将了解如何执行以下操作：
+在本教程中，你将了解如何：
 > [!div class="checklist"]
 > * 配置在 Outlook 中实现警告、证明或阻止弹出邮件的设置
 > * 在实际操作中查看设置
 > * 查看事件日志中记录的用户消息和操作 
+
+> [!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 用户共享信息最常见的方法之一就是通过电子邮件进行共享，但无论是以电子邮件本身还是以附件形式，这种方法都不太妥当。 可以使用数据丢失防护 (DLP) 解决方案来识别已知的敏感信息，并帮助防止敏感信息流出组织边界。 但还可以将 Azure 信息保护客户端与一些高级客户端设置一起使用，以帮助防止过度共享，并以提供实时反馈的交互式消息引导用户。
 

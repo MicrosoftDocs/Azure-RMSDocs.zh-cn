@@ -1,21 +1,21 @@
 ---
 title: 教程 - 编辑 Azure 信息保护策略 - AIP
 description: 介绍如何为组织编辑 Azure 信息保护策略的入门教程，大概需要 15 分钟完成。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 10/01/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/06/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: c425fcc71f8400b945ec684f45f5c1622fedbbef
-ms.sourcegitcommit: f5d8cf4440a35afaa1ff1a58b2a022740ed85ffd
+ms.openlocfilehash: 358308fe111eb1c3762d3e6a98fbea0d2e065bbc
+ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73559227"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75675510"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-and-create-a-new-label"></a>教程：配置 Azure 信息保护策略设置并创建新标签
 
@@ -23,12 +23,15 @@ ms.locfileid: "73559227"
 >
 > 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
-在本教程中，你将了解如何执行以下操作：
+在本教程中，你将了解如何：
 > [!div class="checklist"]
 > * 配置策略设置
 > * 创建新标签 
 > * 配置视觉标记、建议分类和保护的标签
 > * 在实际操作中查看设置和标签
+
+> [!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 完成此配置后，用户在创建新文档或电子邮件时会看到应用的默认标签。 但是，当检测到信用卡信息时，系统会提示用户应用新标签。 应用新标签时，内容将重新分类并受到保护，还会带有相应的页脚和水印。 
 
@@ -164,7 +167,7 @@ ms.locfileid: "73559227"
     
     单击“保存”返回到“子标签”窗格   。
 
-10. 在“子标签”窗格上，会看到“信用卡号”显示为“条件名称”，“出现次数”为“1”      ：
+10. 在“子标签”  窗格上，会看到“信用卡号”  显示为“条件名称”  ，“出现次数”  为“1”  ：
     
     ![Azure 信息保护教程 - 信用卡条件摘要](./media/step2-see-condition.png)
 

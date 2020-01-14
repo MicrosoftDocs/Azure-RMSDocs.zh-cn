@@ -5,15 +5,14 @@ services: information-protection
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
-ms.collection: M365-security-compliance
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: d671aeed3e05882ba8d41c6d7069cd4e548ecec2
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.openlocfilehash: 6923bdf83f76a3e2a30e49bae27e9f7be963a623
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69884728"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556021"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C++)
 
@@ -43,7 +42,7 @@ ms.locfileid: "69884728"
 
 3. 生成类的 .h 和 .cpp 文件之后，会在“编辑器组”选项卡中打开这两个文件。 现在更新每个文件以实现新的观察者类：
 
-   - 通过选择/删除生成的 `filehandler_observer` 类，更新“filehandler_observer.h”。 请勿  删除上一步生成的预处理器指令 (#pragma, #include)。 然后将以下源复制/粘贴到文件中，在任何现有的预处理器指令之后：
+   - 通过选择/删除生成的 `filehandler_observer` 类，更新“filehandler_observer.h”。 请勿删除上一步生成的预处理器指令 (#pragma, #include)  。 然后将以下源复制/粘贴到文件中，在任何现有的预处理器指令之后：
 
      ```cpp
      #include <memory>

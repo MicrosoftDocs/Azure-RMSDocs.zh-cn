@@ -4,15 +4,14 @@ description: 介绍了如何将 MIP SDK 配置为使用 Active Directory 权限�
 author: tommoser
 ms.service: information-protection
 ms.topic: quickstart
-ms.collection: M365-security-compliance
 ms.date: 04/17/2019
 ms.author: tommos
-ms.openlocfilehash: 49abf94c735b1ba14771adb9c2fe5dc126722b48
-ms.sourcegitcommit: 9cedac6569f3a33a22a721da27074a438b1a7882
+ms.openlocfilehash: 424a260b1646a381dca23de71785dd34f92fc281
+ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71070566"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75555154"
 ---
 # <a name="quickstart-active-directory-rights-management-server-ad-rms-protection"></a>快速入门：Active Directory 权限管理服务器 (AD RMS) 保护
 
