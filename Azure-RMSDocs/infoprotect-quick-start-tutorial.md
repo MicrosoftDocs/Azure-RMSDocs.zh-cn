@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 358308fe111eb1c3762d3e6a98fbea0d2e065bbc
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.openlocfilehash: c684bc08faaab4317df0588ccc9350199c62049d
+ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675510"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75743677"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-and-create-a-new-label"></a>教程：配置 Azure 信息保护策略设置并创建新标签
 
@@ -30,8 +30,6 @@ ms.locfileid: "75675510"
 > * 配置视觉标记、建议分类和保护的标签
 > * 在实际操作中查看设置和标签
 
-> [!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 完成此配置后，用户在创建新文档或电子邮件时会看到应用的默认标签。 但是，当检测到信用卡信息时，系统会提示用户应用新标签。 应用新标签时，内容将重新分类并受到保护，还会带有相应的页脚和水印。 
 

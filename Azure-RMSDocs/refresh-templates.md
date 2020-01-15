@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c260767d29ecf6b56b101f57f40192177cf7242c
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: 6aae4636fe717bdaf81ae3e2461e56e17751c2f9
+ms.sourcegitcommit: 68cf1e0fda06c6f20cbd829dc4fbc8c12686947b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75743858"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75952970"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
@@ -37,7 +37,7 @@ ms.locfileid: "75743858"
 |Exchange 內部部署与权限管理连接器<br /><br />适用于传输规则和 Outlook Web App|自动刷新 – 无需额外的步骤。 但是，Outlook Web App 可将该 UI 缓存一天。|
 |Office 2019 for Mac 和 Office 2016 for Mac|当你打开受保护的内容时自动刷新。 若要强制执行刷新，请参阅以下部分[：适用于 mac 的 office 2019 和适用于 mac 的 office 2016：如何强制刷新模板](#office-2019-for-mac-and-office-2016-for-mac-how-to-force-a-refresh-for-templates)。|
 |适用于 Mac 计算机的 RMS 共享应用|自动刷新 – 无需额外的步骤。|
-|[支持敏感度功能](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)的 Office 应用|这些客户端不下载模板，而是对其联机访问，无需执行其他步骤。|
+|带有[内置标记](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)的 Office 365 ProPlus 应用|此内置标签客户端不会下载模板，而是联机访问模板-无需执行其他步骤。|
 
 当客户端应用程序需要下载模板（最初或刷新了更改）时，请准备好等待30分钟后下载完成，新的或更新的模板完全可操作。 实际时间会因多种因素而异，例如模板配置的大小和复杂性以及网络连接。 
 
