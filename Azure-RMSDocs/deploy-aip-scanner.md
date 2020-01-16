@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b061ac3e067184d1af8b55756a7b3ac3fc0c8a35
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: eb50c150ee908c14c04e0786c57b4ae53e2599a0
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75743550"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75960571"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -156,9 +156,19 @@ ms.locfileid: "75743550"
 
 用于安装和配置扫描程序的用户帐户通常是相同的。 不过，如果使用不同的帐户，它们都需要拥有扫描程序配置数据库的 db_owner 角色：
 
-- 如果没有为扫描仪指定自己的配置文件名称（仅限经典客户端），则配置数据库将命名**AIPScanner_\<computer_name >** 。 
+- 对于经典客户端：
 
-- 如果指定自己的配置文件名称，则配置数据库将命名**AIPScanner_\<profile_name >** （经典客户端）或**AIPScannerUL_** \<profile_name > （统一标签客户端）。
+    如果没有为扫描仪指定您自己的配置文件名称，则配置数据库将命名**AIPScanner_\<computer_name >** （仅限经典客户端）。 继续执行以下步骤以创建用户并授予对数据库的 db_owner 权限。 
+
+- 对于统一标签客户端：
+    
+    如果指定自己的配置文件名称，则配置数据库将命名**AIPScannerUL_ < profile_name >** （统一的标记客户端）。
+    
+    使用以下脚本填充数据库： 
+
+
+
+    如果不存在（select * server_principals from quotename where sid = SUSER_SID （"domain\user"）） BEGIN 声明 @T nvarchar （500） Set @T = "CREATE LOGIN" + （"domain\user"） + "FROM WINDOWS" exec （@T） END 
 
 若要创建用户并授予对此数据库的 db_owner 权限，请要求 Sysadmin 运行以下 SQL 脚本两次。 第一次，对于运行扫描程序的服务帐户，以及第二次用于安装和管理扫描仪。 运行脚本之前：
 1. 将*domain\user*替换为服务帐户或用户帐户的域名和用户帐户名。
@@ -404,6 +414,16 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
     然后查看报告，详细了解标记了哪些文件、向每个文件应用了什么分类，以及是否向它们应用了保护。 或者，使用 Azure 门户，更轻松地了解此信息。
 
 因为我们将计划配置为持续运行，所以当扫描程序扫描完所有文件时，它将自动开始一个新周期，以便发现任何新文件和更改的文件。
+
+## <a name="stop-a-scan"></a>停止扫描 
+
+若要停止以前在完成之前启动的扫描，请使用接口的 "**停止扫描**" 选项，或
+ 
+![停止扫描 Azure 信息保护扫描程序](./media/scanner-stop-scan.png)
+    
+或者，可以在 PowerShell 会话中运行以下命令：
+    
+        Stop-AIPScan 
 
 ## <a name="how-files-are-scanned"></a>如何扫描文件
 
