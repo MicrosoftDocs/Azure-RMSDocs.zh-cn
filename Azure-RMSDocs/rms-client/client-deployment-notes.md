@@ -12,16 +12,16 @@ ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 92579210477a1583a6b27793934f704f5816164b
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.openlocfilehash: 1f75664fda8277622ba209d1d0972c3588de1959
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675748"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75960251"
 ---
 # <a name="rights-management-service-client-deployment-notes"></a>Rights Management Service 客户端部署说明
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、带 SP1 的 Windows 7、Windows 8、Windows 8.1、Windows 10、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016
+>*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 8，Windows 8.1，windows 10，windows Server 2008 R2，windows server 2012，windows Server 2012 R2，windows server 2016*
 
 Rights Management 服务客户端（RMS 客户端）版本 2 也称为 MSIPC 客户端。 它是在 Windows 计算机上安装的软件，可用来与本地或云中的 Microsoft Rights Management 服务通信，以帮助保护对流经应用程序和设备的信息的访问和使用，无论这些信息是在组织边界的内部还是受管边界的外部。 
 

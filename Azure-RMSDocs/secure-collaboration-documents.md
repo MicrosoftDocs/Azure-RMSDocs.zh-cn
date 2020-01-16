@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 57e40899f3c386b076a8642c17f019ea0767ab22
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: 90c49b8222e379094ee5f5d00c5bd37c7dd0377d
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75743782"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75960887"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
@@ -38,7 +38,7 @@ ms.locfileid: "75743782"
 
 - **对于任何身份已验证的用户**：此选项适用于不需要控制谁能访问受保护文档的情况，前提是可以验证用户身份。 如果内容受 Office 365 邮件加密的新功能保护，可以通过 Azure AD（使用 Microsoft 帐户），甚至是联合社交提供程序或一次性密码进行身份验证。 
 
-作为管理员，你可以配置 Azure 信息保护标签以应用权限和授权用户。 此配置使用户和其他管理员应用正确的保护设置变得非常简单，因为他们只需应用标签而无需指定任何详细信息。 以下部分提供了一个演练示例，用于保护支持与内外部用户进行安全协作的文档。
+作为管理员，你可以配置 Azure 信息保护标签以应用权限和授权用户。 此配置使用户和其他管理员应用正确的保护设置变得非常简单，因为他们只需应用标签而无需指定任何详细信息。 以下各节提供了一个示例，演示如何保护支持与内部和外部用户的安全协作的文档。
 
 
 ## <a name="example-configuration-for-a-label-to-apply-protection-to-support-internal-and-external-collaboration"></a>让标签应用保护以支持外部协作的配置示例

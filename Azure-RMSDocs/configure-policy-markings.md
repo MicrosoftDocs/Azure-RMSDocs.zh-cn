@@ -11,19 +11,17 @@ ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 7e16f4034e52345ec473256763b960c49c81418b
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: 0b38d57c17fd9025135cc7edd15fa69973b9cd70
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75743424"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75959940"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
-
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。 
 

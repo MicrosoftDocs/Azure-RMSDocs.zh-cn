@@ -4,23 +4,23 @@ description: 有关受支持的文件类型、文件扩展名以及负责 Window
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 11/21/2019
+ms.date: 1/13/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e27e89e2a4763eefa16abe3cc107279152528b16
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.openlocfilehash: d779be9a4193bd2ae2746d7ad72cc7ea2730ab9d
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675595"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75960032"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端支持的文件类型
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、windows 8、带 SP1 的 Windows 7、windows Server 2019、windows Server 2016、Windows server 2012 R2、windows Server 2012、Windows server 2008 r2*>
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，windows Server 2019，windows Server 2016，Windows server 2012 R2，windows Server 2012，Windows server 2008 r2*>
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 

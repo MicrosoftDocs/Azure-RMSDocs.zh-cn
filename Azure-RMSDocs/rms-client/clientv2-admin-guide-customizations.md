@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 11/24/2019
+ms.date: 1/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9428f682c9046f3b9f0e7b9dd9af498db7fd2d4c
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.openlocfilehash: 74ff92fd76ca12fd77e0eb29d4e22c1dfacde084
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675612"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75960005"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012，windows Server 2008 r2*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -285,7 +285,43 @@ ms.locfileid: "75675612"
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
 
-借助这些设置，可以在其他标记解决方案已应用这些视觉标记的情况下，从文档中删除或替换基于文本的页眉或页脚。 例如，旧的页脚包含已迁移到敏感度标签的旧标签的名称，以使用新标签名称及其自己的页脚。
+可以使用两种方法从其他标记解决方案中删除分类。 第一种方法从 Word 文档中删除任何形状，其中的形状名称与 advanced 属性**WordShapeNameToRemove**中定义的名称相匹配，第二种方法允许您从 Word、Excel 和 PowerPoint 文档中删除或替换**RemoveExternalContentMarkingInApp**高级属性中定义的基于文本的标头或表尾。 
+
+### <a name="use-the-wordshapenametoremove-advanced-property-preview"></a>使用 WordShapeNameToRemove 高级属性（预览）
+
+*版本2.6.101.0 和更高版本支持**WordShapeNameToRemove**高级属性*
+
+此设置使您可以在其他标签解决方案应用这些视觉标记后，删除或替换 Word 文档中基于形状的标签。 例如，该形状包含旧标签的名称，你现在已将该标签迁移到 "敏感度" 标签，以使用新标签名称及其自己的形状。
+
+若要使用此高级属性，需要在 Word 文档中查找该形状的名称，然后在 " **WordShapeNameToRemove** " 属性的 "形状" 高级属性列表中定义这些名称。 服务将删除 Word 中以此高级属性的形状列表中定义的名称开头的任何形状。
+
+通过定义要删除的所有形状的名称并避免在所有形状中检查文本（这是一种消耗大量资源的过程），避免删除包含要忽略的文本的形状。
+
+如果未在此附加高级属性设置中指定 Word 形状，并且 Word 包含在**RemoveExternalContentMarkingInApp**项值中，则将检查在**ExternalContentMarkingToRemove**值中指定的文本的所有形状。 
+
+查找要使用的形状的名称并希望排除：
+
+1. 在 Word 中，显示 "**选择**" 窗格： "**主页**" 选项卡 >**编辑**组 >**选择**"选项" >**选择 "窗格**。
+
+2. 选择要标记为删除的页面上的形状。 标记的形状的名称现在会在**选择**窗格中突出显示。
+
+使用形状的名称为 * * * * * * * * * * * * * * * * * * * * * * * WordShapeNameToRemove。 
+
+示例：形状名称为**dc**。 若要删除具有此名称的形状，则指定值：`dc`。
+
+- 密钥： **WordShapeNameToRemove**
+
+- 值： \<**Word 形状名称**> 
+
+示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{WordShapeNameToRemove="dc"}
+
+如果有多个 Word 形状要删除，请指定任意数量的值，以便删除形状。
+
+
+### <a name="use-the-removeexternalcontentmarkinginapp-advanced-property"></a>使用 RemoveExternalContentMarkingInApp 高级属性
+此设置使你可以从文档中删除或替换由其他标签解决方案应用的基于文本的页眉或页脚。 例如，旧的页脚包含已迁移到敏感度标签的旧标签的名称，以使用新标签名称及其自己的页脚。
 
 当统一标签客户端在其策略中获取此配置时，在 Office 应用中打开文档并将任何敏感度标签应用于该文档时，将删除或替换旧的页眉和页脚。
 
@@ -1008,7 +1044,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 ## <a name="support-for-disconnected-computers"></a>对断开连接的计算机的支持
 
 > [!IMPORTANT]
-> 只有以下标签方案支持断开连接的计算机：文件资源管理器、PowerShell 和扫描程序。 若要在 Office 应用中标记文档，你必须连接到 internet。
+> 以下标签方案支持断开连接的计算机：文件资源管理器、PowerShell、Office 应用和扫描仪。
 
 默认情况下，Azure 信息保护的统一标签客户端会自动尝试连接到 internet，以从标记管理中心下载标签和标签策略设置： Office 365 安全与合规中心，Microsoft 365 安全中心或 Microsoft 365 相容性中心。 如果计算机在一段时间内无法连接到 internet，则可以导出和复制为统一标签客户端手动管理策略的文件。
 

@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 11/02/2019
+ms.date: 1/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c7291b63971d34e7dd7e3e369cd13dfca7e44729
-ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
+ms.openlocfilehash: 9298022feecc4be60b3e528e5195fcec485502b2
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2019
-ms.locfileid: "75326358"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75960827"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012，windows Server 2008 r2*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -42,6 +42,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 |客户端版本|发布日期|
 |--------------|-------------|
+|2.0.779.0|05/01/2019|
 |2.0.778.0|04/16/2019|
 
 此页上使用的日期格式为*月/日/年*。
@@ -57,6 +58,42 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
 此客户端正在替换 Azure 信息保护客户端（经典）。 若要将特性和功能与经典客户端进行比较，请参阅[比较适用于 Windows 计算机的标记客户端](use-client.md#compare-the-labeling-clients-for-windows-computers)。
+
+## <a name="version-261010"></a>版本2.6.101。0
+
+**发布**1/15/2020
+
+**新功能：**
+
+- 修改[PowerShell](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-powershell) cmdlet **set-aipfilelabel**以允许从 PST、RAR、7zip 和 MSG 文件中删除保护。 
+
+- 增加了 Azure 信息保护管理员控制何时使用 .pfile 扩展的能力。 详细了解如何[更改受保护的文件类型](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#change-which-file-types-to-protect)。 
+
+- 为应用程序和变量添加了动态视觉标记支持。 详细了解如何为[视觉标记配置标签](https://docs.microsoft.com/azure/information-protection/configure-policy-markings)。 
+
+- 对[自动和建议标签的可自定义策略提示](use-client.md)进行了改进。   
+
+- 在统一标签客户端中，为 Office 应用添加了对[脱机标签功能](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#support-for-disconnected-computers)的支持。
+
+- New **WordShapeNameToRemove** advanced 属性允许删除第三方应用程序所做的 Word 文档中的内容标记。 详细了解如何[识别现有的形状名称，以及如何使用**WordShapeNameToRemove**将其定义为删除](https://docs.microsoft.com/azure/information-protection/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solutions)。 
+
+- [扫描仪](../deploy-aip-scanner.md)相关功能：
+    - [更轻松地进行本地 SharePoint 和子网站发现](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories)。 不再需要设置每个特定站点。 
+    - 添加了[SQL 块区大小](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#storage-requirements-and-capacity-planning-for-sql-server)的高级属性。
+    - 管理员现在可以[停止现有扫描，并](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#stop-a-scan)在对默认标签进行更改时执行重新扫描。
+    - 默认情况下，现在，扫描器会设置最小遥测数据，以提高扫描速度，缩短日志大小，并且信息类型现在会缓存在数据库中。 了解有关[扫描仪优化](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#optimizing-the-performance-of-the-scanner)的详细信息。 
+
+**纠正**
+
+- 现在，扫描仪支持对数据库和服务进行单独的部署，而只有数据库部署需要**Sysadmin**权限。 
+- 如果用户尝试不成功地打开受保护的 TIFF 文件，并且 tiff 文件是由 RightFax 创建的，则 TIFF 文件现在会打开并保持稳定。  
+- 已解决受保护的 txt 和 PDF 文件的以前损坏。
+- 更正了 Log Analytics 中的**自动**和**手动**标记之间的不一致标签。 
+- 新电子邮件和用户上一次打开的电子邮件之间确定的意外继承问题现已解决。  
+- 将 .msg 文件作为 pfile 的保护现在按预期方式工作。 
+- 现在按预期方式应用从 Office 用户定义的设置中添加的共同所有者权限。 
+- 当输入权限降级理由时，如果已选择其他选项，则无法再输入文本。 
+
 
 ## <a name="version-25330"></a>版本2.5.33。0
 
@@ -197,14 +234,6 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 - 当配置自动标签时，标签会在首次保存文档时应用。
 
 - 默认标记支持子标签。
-
-## <a name="version-207790"></a>版本2.0.779。0
-
-**发布**日期：05/01/2019
-
-支持，02/15/2020
-
-此版本提供单个修补程序来解决争用情况问题，有时，Office 应用程序或文件资源管理器中不显示标签。
 
 ## <a name="next-steps"></a>后续步骤
 

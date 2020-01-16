@@ -4,7 +4,7 @@ description: 使用 Azure Rights Management 服务时，模板会自动下载到
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 1/15/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6aae4636fe717bdaf81ae3e2461e56e17751c2f9
-ms.sourcegitcommit: 68cf1e0fda06c6f20cbd829dc4fbc8c12686947b
+ms.openlocfilehash: 52d00883b19c2c595dd098a9be6d79d3b3183355
+ms.sourcegitcommit: 800339fed1c516d627dbb91ed804a7c7d5b892a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75952970"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76031452"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
@@ -31,7 +31,7 @@ ms.locfileid: "75952970"
 |--------------------------|---------------------------------------------|
 |Exchange Online<br /><br />适用于传输规则和 Outlook Web App |1 小时内自动刷新 – 无需额外的步骤。|
 |Azure 信息保护客户端|每当在客户端上的 Azure 信息保护策略刷新时，都会自动刷新：<br /><br /> - 打开支持 Azure 信息保护栏的 Office 应用程序时。 <br /><br /> - 右键单击以分类和保护文件或文件夹时。 <br /><br /> - 运行 PowerShell cmdlet 以实现标记和保护（Get-AIPFileStatus 和 Set-AIPFileLabel）。<br /><br /> - 启动 Azure 信息保护扫描程序服务时，以及本地策略已执行超过一小时时。 此外，扫描程序服务每小时检查一次更改，并将在下一个扫描周期中使用这些更改。<br /><br /> - 每 24 小时一次。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此任何适用于 Office 365 应用、Office 2019、Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护客户端进行刷新。|
-|Azure 信息保护统一标识客户端|每个 Office 应用每 4 小时自动刷新。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此任何适用于 Office 365 应用、Office 2019、Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护统一标记客户端进行刷新。|
+|Azure 信息保护统一标识客户端|对于 Office 应用程序，每次打开应用程序时，模板都会自动刷新。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此任何适用于 Office 365 应用、Office 2019、Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护统一标记客户端进行刷新。<br /><br /> 对于文件资源管理器、PowerShell 和扫描程序，客户端不会下载模板，只需将其联机访问，无需执行其他步骤。|
 |Office 365 应用、Office 2019、Office 2016 和 Office 2013|自动刷新 – 按计划刷新：<br /><br />- 对于更高版本的 Office：默认刷新时间间隔为 7 天。<br /><br />若要强制执行比计划更快的刷新，请参阅以下部分[： Office 365 应用、office 2019、office 2016 和 office 2013：如何强制刷新模板](#office-365-apps-office-2019-office-2016-and-office-2013-how-to-force-a-refresh-for-templates)。|
 |Office 2010|当用户注销 Windows 后重新登录并等待长达 1 小时时自动刷新。|
 |Exchange 內部部署与权限管理连接器<br /><br />适用于传输规则和 Outlook Web App|自动刷新 – 无需额外的步骤。 但是，Outlook Web App 可将该 UI 缓存一天。|

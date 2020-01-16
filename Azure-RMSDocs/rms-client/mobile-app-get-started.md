@@ -4,7 +4,7 @@ description: 使用适用于 iOS 和 Android 的 Azure 信息保护应用查看�
 author: rkarlin
 ms.author: mlottner
 manager: rkarlin
-ms.date: 11/30/2019
+ms.date: 1/13/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 9da7eaecac3e8eb5bff2e46bf46b3fe77b1f717f
-ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
+ms.openlocfilehash: cfae5de653497a448d10e0ac65c10ea2a6e9e4f3
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2019
-ms.locfileid: "75326247"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75960843"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门
 

@@ -4,23 +4,23 @@ description: 使用 Azure 信息保护适用于 Windows 的统一标签客户端
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 11/04/2019
+ms.date: 1/13/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 3181144a6bf8f36b2be8297d7371db2f079a2c9c
-ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
+ms.openlocfilehash: ae7ef5e27ccdce0835bdc96adad2291f584bb69e
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2019
-ms.locfileid: "75326603"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75959907"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端进行分类和保护
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8，带 SP1 的 Windows 7
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 

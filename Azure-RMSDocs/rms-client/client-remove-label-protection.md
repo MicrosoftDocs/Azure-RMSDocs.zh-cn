@@ -4,7 +4,7 @@ description: 说明了如何从由 Azure 信息保护标记的文件中，或从
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 11/30/2019
+ms.date: 1/13/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: bff6d0afe190353221074297dbd5976edf36b54e
-ms.sourcegitcommit: d0012de76c9156dd9239f7ba09c044a4b42ffc71
+ms.openlocfilehash: 09173541f4d332750457a488d7edb97ec7f4319c
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75675425"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75960280"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>用户指南：从由 Azure 信息保护标记的文件和电子邮件中，或从受 Rights Management 保护的文件和电子邮件中，删除标签和保护
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8、带 SP1 的 Windows 7
+>*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
 >
 > *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 

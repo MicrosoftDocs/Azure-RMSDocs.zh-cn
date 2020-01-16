@@ -12,16 +12,16 @@ ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.subservice: v1client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f89a22a795fe64f49a0e0e44ba6ccf77e5989c06
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: db3d23af4b7126f82ecca2a759cefd0bb61081b3
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75743813"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75960550"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
->*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
+>*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012，windows Server 2008 r2*
 >
 > *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 

@@ -4,7 +4,7 @@ description: 有关如何使用 Azure 信息保护统一标签客户端从文件
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 11/24/2019
+ms.date: 1/13/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.assetid: ''
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 83ab06748ade003ea39d2fb15fde6d43acb3c5ad
-ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
+ms.openlocfilehash: dd65c04165b125df6239792e528f28586a75e78f
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2019
-ms.locfileid: "75326552"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75959874"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection"></a>用户指南：从 Azure 信息保护标记的文件和电子邮件中删除标签和保护
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows 10、Windows 8.1、Windows 8，带 SP1 的 Windows 7
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 

@@ -12,16 +12,16 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 24a0ee1b4627002284d5861287ec7a3133813902
-ms.sourcegitcommit: a38af4741017cd745efc011cf29a0fedb62f9be7
+ms.openlocfilehash: 221623101c75a5834947c7f29a4f4df4f8d68a35
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75827547"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75960753"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
->*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、windows 8、带 SP1 的 windows 7、windows server 2019、windows server 2016、windows Server 2012 R2、windows server 2012、windows Server 2008 r2*
+>*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012，windows Server 2008 r2*
 
 
 Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的文档和电子邮件：
@@ -102,23 +102,23 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |独立于标签的自定义权限集：| **是** | **是** <sup>3</sup>| 否 |
 |Office 应用中的“信息保护”栏：| **是** | **是**| 否 |
 |作为标签操作（页眉、页脚、水印）的可视标记：| **是** | **是** | **是**|
-|每应用视觉标记：| **是** | 否 | 否 |
-|带有变量的动态视觉标记：| **是** | 否 | 否 |
+|每应用视觉标记：| **是** | **是* | 否 |
+|带有变量的动态视觉标记：| **是** | **** | 否 |
 |带有文件资源管理器的标签：| **是** | **是** | 否 |
 |受保护文件的查看器（文本、图像、PDF、.pfile）：| **是** | **是** | 否|
 |应用标签的 PPDF 支持：| **是** | 否 | 否 |
 |PowerShell 标记 cmdlet：| **是** | **是** <sup>4</sup> | 否 |
 |离线支持保护操作：| **是** | **是** <sup>5</sup> | **是** |
-|为断开连接的计算机手动执行策略文件管理：| **是** |**是** <sup>6</sup>| 否 |
+|为断开连接的计算机手动执行策略文件管理：| **是** |**是**| 否 |
 |HYOK 支持：| **是** | 否 | 否 |
 |事件查看器中的使用日志记录：| **是** | 否 |否 |
 |显示 Outlook 中的 "不要转发" 按钮：| **是** | 否 | 否 |
-|跟踪受保护文档：| **是** | **是** <sup>7</sup> | 否 |
+|跟踪受保护文档：| **是** | **是** <sup>6</sup> | 否 |
 |吊销受保护的文档：| **是** | 否 | 否 |
 |仅保护模式（无标签）：| **是** | 否 | 否 |
 |支持帐户切换：| 否 | 否 | **是** |
 |支持远程桌面服务：| **是** | **是** | **是** |
-|对 AD RMS 的支持：| **是** | 无<sup>8</sup> | 否 |
+|对 AD RMS 的支持：| **是** | 无<sup>7</sup> | 否 |
 
 脚注：
 
@@ -128,15 +128,13 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 <sup>3</sup>由文件资源管理器和 PowerShell 支持。 在 Office 应用中，用户可以选择 "**文件信息**" > **保护文档** > "**限制访问**"。
 
-<sup>4</sup>不支持删除容器文件（zip、rar、7z、.msg 和 .pst）的保护。
+<sup>4</sup>不支持删除容器文件（zip）的保护。
 
 <sup>5</sup>对于文件资源管理器和 PowerShell 命令，用户必须连接到 internet 才能保护文件。
 
-<sup>6</sup>支持在文件资源管理器、PowerShell 和扫描程序中进行标记。 Office 应用程序中不支持标记。
+<sup>6</sup>统一标签客户端不支持经典客户端支持的文档跟踪站点。 但是，如果不需要首先注册要跟踪的文档，管理员就可以使用[集中报告](../reports-aip.md)来确定是否从 Windows 计算机访问受保护的文档，以及访问是被授予还是被拒绝。 
 
-<sup>7</sup>统一标签客户端不支持经典客户端支持的文档跟踪站点。 但是，如果不需要首先注册要跟踪的文档，管理员就可以使用[集中报告](../reports-aip.md)来确定是否从 Windows 计算机访问受保护的文档，以及访问是被授予还是被拒绝。 
-
-<sup>8</sup>不支持标记和保护操作。 但是，对于 AD RMS 部署，当你使用[Active Directory Rights Management Services 移动设备扩展](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574\(v=ws.11\))时，查看器可以打开受保护的文档。
+<sup>7</sup>不支持标签和保护操作。 但是，对于 AD RMS 部署，当你使用[Active Directory Rights Management Services 移动设备扩展](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574\(v=ws.11\))时，查看器可以打开受保护的文档。
 
 
 ### <a name="detailed-comparisons-for-the-azure-information-protection-clients"></a>Azure 信息保护客户端的详细比较
