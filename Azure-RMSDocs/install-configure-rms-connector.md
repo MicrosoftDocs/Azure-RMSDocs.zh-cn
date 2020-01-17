@@ -13,16 +13,16 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1b1f98a5d01d90cc25d6ffc378201ae90711eead
-ms.sourcegitcommit: d062ddf89fcb46e489f32f0d9f7aff73c3357a9b
+ms.openlocfilehash: 4d4ba8a3093e1bef32e42b562c93e787e603614b
+ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882043"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76117980"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2016、windows Server 2012 R2、windows server 2012*
 
 使用以下信息可帮助你安装并配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 1-4。
 
@@ -225,11 +225,11 @@ ms.locfileid: "74882043"
 ## <a name="installing-the-rms-connector-administration-tool-on-administrative-computers"></a>在管理计算机上安装 RMS 连接器管理工具
 可以在未安装 RMS 连接器的计算机上运行 RMS 连接器管理工具，前提是该计算机符合以下要求：
 
--   运行 Windows Server 2012 或 Windows Server 2012 R2（所有版本）、Windows Server 2008 R2 或 Windows Server 2008 R2 Service Pack 1（所有版本）、Windows 8.1、Windows 8 或 Windows 7 的物理或虚拟计算机。
+-   运行 Windows Server 2012 或 Windows Server 2012 R2 （所有版本）、Windows 8.1、Windows 8 的物理或虚拟计算机。
 
 -   至少 1 GB 的 RAM。
 
--   至少 64 GB 的磁盘空间。
+-   至少 64 GB 的磁盘空间。
 
 -   至少一个网络接口。
 

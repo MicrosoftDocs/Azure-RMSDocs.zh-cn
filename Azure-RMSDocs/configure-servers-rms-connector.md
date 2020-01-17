@@ -13,16 +13,16 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 86c908f2c53ed66853b7f3b16e02a406748055be
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: bdcc6b77e5f75b67e69f39c4c5c260f44850f62e
+ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934970"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76117614"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2016、windows Server 2012 R2、windows server 2012*
 
 
 使用以下信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 5。
@@ -145,11 +145,6 @@ ms.locfileid: "74934970"
 
 你还需要在服务器上安装能够支持 RMS 加密模式 2 的 RMS 客户端版本 1，也称为 MSDRM。 所有 Windows 操作系统都包括 MSDRM 客户端，但早期版本的客户端不支持加密模式 2。 如果 Exchange 服务器至少运行 Windows Server 2012，则无需进一步的操作，因为使用这些操作系统安装的 RMS 客户端可本机支持加密模式 2。 
 
-如果 Exchange 服务器运行早期版本的操作系统，则验证安装的 RMS 客户端版本是否支持加密模式 2。 若要执行此操作，请根据以下知识库文章中列出的版本号检查安装的 Windows\System32\Msdrm.dll 文件版本。 如果安装的版本号等于或者高于列出的版本号，则无需进一步的操作。 如果安装的版本号较低，请下载并安装文章中的修补程序。
-
-- Windows Server 2008：[https://support.microsoft.com/kb/2627272](https://support.microsoft.com/kb/2627272) 
-
-- Windows Server 2008 R2：[https://support.microsoft.com/kb/2627273](https://support.microsoft.com/kb/2627273)
 
 > [!IMPORTANT]
 > 如果没有安装这些版本或更高版本的 Exchange 和 MSDRM 客户端，就无法将 Exchange 配置为使用连接器。 继续之前，请确认已安装这些版本。
@@ -193,7 +188,7 @@ ms.locfileid: "74934970"
 >
 > 你可以通过检查 MSIPC.dll 的版本号来验证客户端版本，该文件位于 **\Program Files\Active Directory Rights Management Services Client 2.1**。 属性对话框将显示 MSIPC 2.1 客户端的版本号。
 
-运行 SharePoint 2010 的服务器必须安装了能够支持 RMS 加密模式 2 的 MSDRM 客户端版本。 Windows Server 2008 支持的最低版本包括在修补程序中，你可从 [在 Windows Server 2008 R2 和 Windows Server 2008 中，AD RMS 的 RSA 密钥长度增加到 2048 位](https://support.microsoft.com/kb/2627272)下载该修补程序。适用于 Windows Server 2008 R2 的最低版本可从 [在 Windows 7 或 Windows Server 2008 R2 中，AD RMS 的 RSA 密钥长度增加到 2048 位](https://support.microsoft.com/kb/2627273)下载。 Windows Server 2012 和 Windows Server 2012 R2 以本机方式支持加密模式 2。
+运行 SharePoint 2010 的服务器必须安装了能够支持 RMS 加密模式 2 的 MSDRM 客户端版本。 Windows Server 2012 和 Windows Server 2012 R2 以本机方式支持加密模式 2。
 
 ### <a name="to-configure-sharepoint-servers-to-use-the-connector"></a>将 SharePoint 服务器配置为使用连接器
 

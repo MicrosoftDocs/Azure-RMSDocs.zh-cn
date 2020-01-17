@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ecde2ec34dd27cb3bd2a176e8d205de6ee865421
-ms.sourcegitcommit: 2d75192e7cd2e322ab422fc2115aa063e8dda18b
+ms.openlocfilehash: e639a94bde4daf481fc0a715492edeb702ba2ddd
+ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75913279"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76117878"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
@@ -81,7 +81,6 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 - Windows Server 2012 R2 和 Windows Server 2012
 
-- Windows Server 2008 R2 
 
 有关早期版本的 Windows 支持选项的信息，请联系 Microsoft 帐户或支持代表。   
 除了在物理计算机上安装客户端，你还可以将其安装在虚拟机上。 检查虚拟桌面解决方案的软件供应商是否具有运行 Azure 信息保护统一标签客户端或 Azure 信息保护客户端可能需要的其他配置。 例如，对于 Citrix 解决方案，你可能需要禁用适用于 Office 的[Citrix 应用程序编程接口（API）挂钩](https://support.citrix.com/article/CTX107825)（winword、excel.exe、powerpnt）以及 Azure 信息保护统一标签客户端或 Azure 信息保护客户端（policy.msip，policy.msip）的可执行文件（）。

@@ -12,12 +12,12 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ba1aa80dc667e28530ca8f73344f9a6dce35dd26
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: 8278395afacca4d30b67f88d82e98779dcda8871
+ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75743625"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76117563"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -38,14 +38,15 @@ ms.locfileid: "75743625"
 
 有关详细信息，包括特性和功能的比较表，请参阅[选择使用哪个 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。
 
-## <a name="where-can-i-find-information-about-using-sensitivity-labels-in-office"></a>在哪里可以找到有关在 Office 中使用敏感度标签的信息？
+## <a name="where-can-i-find-information-about-using-sensitivity-labels-for-office-apps"></a>在哪里可以找到有关使用 Office 应用的敏感度标签的信息？
 
-请参阅 Office 文档中的以下资源：
+请参阅以下文档资源：
 
-- [如何在 Office 应用中使用敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps)
+- [敏感度标签概述](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) 
+
+- [Office 应用中的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps)
 
 - [向 Office 中的文档和电子邮件应用敏感度标签](https://support.office.com/article/Apply-sensitivity-labels-to-your-documents-and-email-within-Office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9#ID0EBFAAA=Office_365)
-
 
 ## <a name="can-a-file-have-more-than-one-classification"></a>文件是否可以有多个分类？
 
