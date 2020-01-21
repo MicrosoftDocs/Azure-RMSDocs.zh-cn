@@ -4,19 +4,19 @@ description: 可以为用户在信息保护栏上看到的标签以及用户看�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 1/18/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: ceb0a7d86be6816d3120182f42510f94c2d11473
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: 3ffb6b844d73d1b2b7f21651123f10599aeef562
+ms.sourcegitcommit: 10cefe41b0c888ef237511cddeb23f9a54b3c07d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75742946"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281626"
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>如何在 Azure 信息保护中配置不同语言的标签和模板
 
@@ -46,7 +46,7 @@ ms.locfileid: "75742946"
 
 - 由于没有支持标签的订阅，因此只能在 Azure 门户中创建和管理模板。
 
-为 Office 和 Windows 选择与用户的语言设置相匹配的语言。 这些标签名称和说明随后会分别显示在 Office 应用中的“Azure 信息保护”栏，以及“分类和保护 - Azure 信息保护”对话框中。 有关所选语言的详细信息，请参阅此页上的 [Azure 信息保护客户端如何确定要显示的语言](#how-the-azure-information-protection-client-determines-the-language-to- display)部分。 
+为 Office 和 Windows 选择与用户的语言设置相匹配的语言。 这些标签名称和说明随后会分别显示在 Office 应用中的“Azure 信息保护”栏，以及“分类和保护 - Azure 信息保护”对话框中。 有关所选语言的详细信息，请参阅此页上的 [Azure 信息保护客户端如何确定要显示的语言](#how-the-azure-information-protection-client-determines-the-language-to-display)部分。 
 
 ## <a name="to-configure-labels-and-templates-for-different-languages"></a>配置不同语言的标签和模板
 

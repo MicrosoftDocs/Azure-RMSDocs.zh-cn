@@ -12,12 +12,12 @@ ms.subservice: v1client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7325f81ff67cf8fe23548a966c55ef42a1cf00f3
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.openlocfilehash: c3babbe6a0470df498567f6614362e87c14a24cf
+ms.sourcegitcommit: 10cefe41b0c888ef237511cddeb23f9a54b3c07d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117725"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281592"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -75,23 +75,6 @@ ms.locfileid: "76117725"
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
-## <a name="version-154590"></a>版本1.54.59。0
-
-**发布**日期：1/29/2020
-
-**修补程序**：
-
-- 解决了在删除保护后**恢复**和/或**另存为**选项的 IQP 所保护文件的问题。 
-
-- 许多产品功能工具提示文本经过改进，易于理解。 
-
-- 解决使用受保护的 PDF 文件时的客户端稳定性问题。 
-
-- 临时文件夹中的用户无法再访问已解密的临时文件。 
-
-- 如果在电子邮件创建过程中将在电子邮件中删除标签，则现在会按预期删除保护标签。 
-
-此版本还包括用于稳定性和性能的常规修补程序。
 
 ## <a name="version-154330"></a>版本1.54.33。0
 

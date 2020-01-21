@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 2b473c242cdddd09c9902c56bd183e19c0a62267
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: 90fb51a4b17ccf8f6b0689d41b86dbee284da024
+ms.sourcegitcommit: 10cefe41b0c888ef237511cddeb23f9a54b3c07d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75743604"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281643"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -90,7 +90,7 @@ ms.locfileid: "75743604"
 
 在 Azure 门户中迁移标签后：
 
-- 如果你具有[统一的客户端和服务标签](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)，请前往某个管理中心（Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心）来发布这些标签，并配置其策略设置。 为了进行标签更改，请使用以下其中一个管理中心。 统一标签客户端从这些管理中心下载标签和策略设置。
+- 如果你具有[统一的客户端和服务标签](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)，请前往某个管理中心（Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心）来发布这些标签，并配置其策略设置。 为了进行标签更改，请使用以下其中一个管理中心。 统一标签客户端从这些管理中心下载标签和策略设置。 有关说明，请参阅[创建和配置敏感度标签及其策略](/microsoft-365/compliance/create-sensitivity-labels)。
 
 - 如果具有[Azure 信息保护客户端（经典）](./rms-client/aip-client.md)，请继续使用 Azure 门户编辑标签和策略设置。 经典客户端继续从 Azure 下载标签和策略设置。
 

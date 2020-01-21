@@ -4,7 +4,7 @@ description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 1/18/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 60f1ea855d2ec666f2d22bb53d8856a6461157dc
-ms.sourcegitcommit: a38af4741017cd745efc011cf29a0fedb62f9be7
+ms.openlocfilehash: 45802279809a73c7338ff622fcd545e6e9eab7e7
+ms.sourcegitcommit: 10cefe41b0c888ef237511cddeb23f9a54b3c07d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75827530"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281575"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -151,7 +151,7 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
     
     如果激活选项不可用，请检查**统一标签状态**：如果你看到 "已**激活**"，则你的租户已在使用统一标签存储，并且无需迁移标签。
 
-成功迁移的标签现在可被[支持统一标签的客户端和服务](#clients-and-services-that-support-unified-labeling)使用。 但是，必须先将这些标签发布到某个管理中心： Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心。
+成功迁移的标签现在可被[支持统一标签的客户端和服务](#clients-and-services-that-support-unified-labeling)使用。 但是，必须先将[这些标签发布](/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)到某个管理中心： Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心。
 
 > [!IMPORTANT]
 > 如果在 Azure 门户之外编辑标签，请针对 Azure 信息保护客户端（经典），返回到 " **Azure 信息保护-统一标签**" 窗格，然后选择 "**发布**"。
@@ -229,6 +229,6 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 
 - 网络研讨会： [AIP 统一标记网络研讨会记录](https://aka.ms/AIP-UL-Webinar-Join1)
 
-有关现在可以在一个标签管理中心内配置和发布的已迁移标签的详细信息，请参阅[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)。
+若要详细了解现在可以在一个标签管理中心内配置和发布的标签，请参阅[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)和[创建和配置敏感度标签及其策略](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)。
 
 如果尚未这样做，请安装 Azure 信息保护统一标签客户端。 有关发布信息、管理员指南和用户指南，请参阅适用[于 Windows 的 Azure 信息保护统一标签客户端](./rms-client/aip-clientv2.md)。
