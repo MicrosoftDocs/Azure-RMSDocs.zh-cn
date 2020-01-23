@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 32d0ac2669e0cc304d0f06c603f64d623c216c68
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.openlocfilehash: f9e25f0fc43d5aa6f7c94cc0aefea1595ba0eef4
+ms.sourcegitcommit: 9bac5032d7251057f84a0e3ab0aba0e48a77b5f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117589"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517654"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -59,7 +59,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 此客户端正在替换 Azure 信息保护客户端（经典）。 若要将特性和功能与经典客户端进行比较，请参阅[比较适用于 Windows 计算机的标记客户端](use-client.md#compare-the-labeling-clients-for-windows-computers)。
 
-## <a name="version-261010"></a>版本2.6.101。0
+## <a name="version-261010-preview"></a>版本2.6.101.0 （预览版）
 
 **发布**1/15/2020
 

@@ -4,7 +4,7 @@ description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/18/2020
+ms.date: 1/21/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 45802279809a73c7338ff622fcd545e6e9eab7e7
-ms.sourcegitcommit: 10cefe41b0c888ef237511cddeb23f9a54b3c07d
+ms.openlocfilehash: 382688a769513ba8540f844b86906ef078cee754
+ms.sourcegitcommit: 9bac5032d7251057f84a0e3ab0aba0e48a77b5f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2020
-ms.locfileid: "76281575"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517637"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -227,7 +227,7 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 
 - 博客文章：[了解统一标签迁移](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Understanding-Unified-Labeling-migration/ba-p/783185)
 
-- 网络研讨会： [AIP 统一标记网络研讨会记录](https://aka.ms/AIP-UL-Webinar-Join1)
+- 网络研讨会：[记录、卡片组和常见问题解答的统一标签](https://github.com/nihendle/MIP-Comp/tree/master/MIP/Webinars/Unified%20Labeling%20Migration)
 
 若要详细了解现在可以在一个标签管理中心内配置和发布的标签，请参阅[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)和[创建和配置敏感度标签及其策略](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)。
 
