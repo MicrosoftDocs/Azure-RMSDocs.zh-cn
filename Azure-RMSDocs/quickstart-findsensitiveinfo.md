@@ -1,34 +1,34 @@
 ---
 title: 快速入门 - 使用 Azure 信息保护扫描程序查找敏感信息
 description: 使用 Azure 信息保护扫描程序查找在本地存储的文件中的敏感信息。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/12/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 1/13/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: 22bd446f940e176c3cae82f7e629cb93f2456bc1
-ms.sourcegitcommit: 6393b971f56a1c666f82777d38ea3ca853c60342
+ms.openlocfilehash: 6cb4739d0da222f8748c4f4684290b7193093bcc
+ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73979978"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75960462"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 
 >适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
-本快速入门教程介绍如何安装和配置 Azure 信息保护扫描程序，以查找存储在本地数据存储中的文件中的敏感信息。 例如，本地文件夹、网络共享或 SharePoint Server。
+在本快速入门教程中，你将许可 SharePoint 允许扫描，安装和配置 Azure 信息保护扫描程序，以查找存储在本地数据存储中的文件中的敏感信息。 例如，本地文件夹、网络共享或 SharePoint Server。
 
 > [!NOTE]
 > 你可以将此快速入门与 Azure 信息保护客户端的当前正式发布版本（经典）或 Azure 信息保护统一标签客户端（其中包括扫描程序的预览版本）的当前正式发布版本一起使用。
 >  
 > 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
 
-在 10 分钟内即可完成此配置。
+在 15 分钟内即可完成此配置。
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -52,6 +52,8 @@ ms.locfileid: "73979978"
 
 有关使用 Azure 信息保护的先决条件的完整列表，请参阅 [Azure 信息保护的要求](requirements.md)。
 
+5. 如果选择许可 SharePoint 扫描，SharePoint 策略将许可访问。
+
 ## <a name="prepare-a-test-folder-and-file"></a>准备测试文件夹和文件
 
 执行初始测试以确认扫描程序正常工作：
@@ -59,6 +61,29 @@ ms.locfileid: "73979978"
 1. 在计算机上创建一个本地文件夹。 例如，在本地 C 驱动器上创建 TestScanner  。
 
 2. 在该文件夹中创建一个 Word 文档并保存它，该文件夹包含文本“信用卡：  4242-4242-4242-4242”。
+
+## <a name="permission-users-to-scan-sharepoint-repositories"></a>许可用户扫描 SharePoint 存储库
+
+可以通过指定站点 URL 在所有 SharePoint 存储库中使用扫描程序，Azure 信息保护将发现该 URL 下的所有站点并进行扫描。
+
+若要实现跨存储库扫描，请为要用于扫描的用户添加以下 SharePoint 权限：
+
+1. 打开 SharePoint，选择“权限策略”  ，然后选择“添加权限策略级别”  。 
+
+    ![为特定用户创建新的权限策略级别](./media/aip-quick-set-sp-permissions.png)
+
+
+2. 在“网站集权限”  下，选择“网站收集器审核程序”  选项。   
+
+3. 在“权限”  下，为“查看应用程序页面”  选项选择“授权”  ，然后选择“保存”  更改。  
+
+    ![为特定用户选择网站收集器审核程序和权限选项](./media/aip-quick-set-site-permissions.png)
+
+4. 确认更改后，在打开的“Web 应用程序策略”  通知中单击“确定”  。   
+
+5. 在“添加用户”  页面的“选择用户”  字段中，添加要用于扫描的用户。 在“选择权限”  下，选择“网站集”  选项，然后单击“完成”  ，将创建的权限应用于已添加或选择的用户。 
+
+    ![向新权限选项添加用户](./media/aip-quick-set-user-permissions.png)
 
 ## <a name="configure-a-profile-for-the-scanner"></a>配置扫描程序的配置文件
 
