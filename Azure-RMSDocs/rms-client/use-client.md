@@ -4,7 +4,7 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/09/2020
+ms.date: 1/23/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: b452dcd3e212316d73c75e4075b471c5e363a86a
-ms.sourcegitcommit: 10cefe41b0c888ef237511cddeb23f9a54b3c07d
+ms.openlocfilehash: 3e0ed6d49a49604cfc666e1cda5390c480dc192f
+ms.sourcegitcommit: 46dbd8ea769c0c5549a008d7464c17032a1f7130
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2020
-ms.locfileid: "76281609"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755793"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -85,15 +85,17 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 使用下表来帮助比较 Windows 计算机的三个标记客户端支持的功能。
 
-若要在不同的操作系统平台（Windows、MacOS、iOS 和 Android）和 web 上比较 Office 内置的灵敏度标签功能，请参阅 Office 文档：[应用中对敏感度标签功能的支持](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)。
+若要在不同的操作系统平台（Windows、MacOS、iOS 和 Android）和 web 上比较 Office 内置敏感度标签功能，请参阅 Microsoft 365 符合性文档，了解如何[在应用中提供敏感度标签功能](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)。 本文档还包括 Office 生成号或受支持功能的 Office 更新通道信息。
 
 |功能|经典客户端|统一标签客户端|Office 内置标签客户端|
 |:------|:------------:|:---------------------:|:-----------------------------:|
 |手动标记：| **是** | **是** |**是** |
 |默认标签：| **是** | **是** | **是** |
-|建议或自动添加标签：| **是** | **是** | 否 |
+|建议或自动添加标签： <br />-适用于 Word、Excel、PowerPoint| **是** | **是** | **是** |
+|建议或自动添加标签：<br />-适用于 Outlook| **是** | **是** | 否 |
 |必需标签：| **是** | **是** | 否 |
-|用户定义的标签权限：<br />-不转发电子邮件<br />-Word、Excel、PowerPoint、文件资源管理器的自定义权限| **是** | **是** | 否 |
+|用户定义的标签权限： <br />-不转发电子邮件| **是** | **是** | **是** |
+|用户定义的标签权限： <br />-Word、Excel、PowerPoint、文件资源管理器的自定义权限| **是** | **是** | 否 |
 |标签的多语言支持：| **是** | **是** |**是** |
 |来自电子邮件附件的标签继承：| **是** | **是**  |否 |
 |自定义项包括：<br />- 电子邮件的默认标签<br />-Outlook 中的弹出消息 <br />- S/MIME 支持<br />- 报告问题选项| **是** <sup>1</sup> | **是** <sup>2</sup> | 否 |
@@ -148,7 +150,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |在 Office 应用程序中管理“信息保护”栏：|面向用户： <br /><br />- 从功能区上的“保护”按钮选择显示或隐藏栏<br /><br />- 如果用户选择隐藏栏，默认情况下，该栏在应用程序中隐藏，但会继续自动显示在新打开的应用程序中 <br /><br /> 面向管理员： <br /><br />- 在应用程序首次打开时，通过策略设置自动显示或隐藏栏，并控制在用户选择隐藏栏后，该栏是否对新打开的应用程序自动保持隐藏状态|面向用户： <br /><br />- 从功能区上的“敏感度”按钮选择显示或隐藏栏<br /><br />- 当用户选择隐藏栏时，该栏在该应用程序中以及新打开的应用程序中均处于隐藏状态 <br /><br />面向管理员： <br /><br />-用于管理栏的 PowerShell 设置 |
 |标签颜色： | 在 Azure 门户中配置 | 在迁移标签之后保留并可通过[PowerShell](clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)进行配置|
 |标签支持不同语言：| 在 Azure 门户中配置 | 使用[Office 365 安全性和符合性 PowerShell](/microsoft-365/compliance/create-sensitivity-labels#additional-label-settings-with-office-365-security--compliance-center-powershell)进行配置|
-|策略更新： | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时刷新 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时刷新<br /><br />每 24 小时一次 <br /><br />对于扫描程序：每小时和服务启动时间，策略超过1小时| 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时刷新 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时刷新<br /><br />每 4 小时一次 <br /><br />对于扫描仪：每隔4小时|
+|策略更新： | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 24 小时一次 <br /><br />对于扫描程序：每小时和服务启动时间，策略超过1小时| 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 4 小时一次 <br /><br />对于扫描仪：每隔4小时|
 |PDF 支持的格式：| 保护: <br /><br /> - PDF 加密的 ISO 标准（默认） <br /><br /> - .ppdf <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护| 保护: <br /><br /> - PDF 加密的 ISO 标准 <br /><br /> <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护|
 |用查看器打开的通用受保护文件（.pfile）：| 文件将在原始应用中打开，然后可在其中查看、修改和保存该文件而无需保护 | 文件将在原始应用中打开，然后可在其中进行查看和修改，但不能保存|
 |支持的 cmdlet：| 用于标记的 cmdlet 和用于保护的 cmdlet | 用于标记的 cmdlet：<br /><br /> Set-aipfileclassification 和 Set-aipfilelabel 不支持*Owner*参数 <br /><br /> 此外，对于未应用标签的所有场景，都有一条“无适用标签”的注释 <br /><br /> Set-aipfileclassification 支持*WhatIf*参数，因此它可以在发现模式下运行 <br /><br /> Set-AIPFileLabel 不支持 EnableTracking 参数 <br /><br /> Get-AIPFileStatus 不从其他租户返回标签信息，也不显示 RMSIssuedTime 参数<br /><br />此外，Get-aipfilestatus 的*LabelingMethod*参数显示**特权**或**标准**，而不是**手动**或**自动**。 有关详细信息，请参阅[联机文档](/powershell/module/azureinformationprotection/get-aipfilestatus)。|
