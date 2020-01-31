@@ -4,7 +4,7 @@ description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/21/2020
+ms.date: 1/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 382688a769513ba8540f844b86906ef078cee754
-ms.sourcegitcommit: 9bac5032d7251057f84a0e3ab0aba0e48a77b5f8
+ms.openlocfilehash: a62fbe465eda5dec253da938878f343bb00b8173
+ms.sourcegitcommit: 200c710a675180cc0488defff299f2cc3c66922f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517637"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812579"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -215,9 +215,9 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
     
     此服务使用以下逻辑支持迁移到统一标签存储之前及之后的标签：
     
-    - 如果管理中心的标签与 Azure 门户中的相同，则将从管理中心检索统一标签。 若要在 Cloud App Security 中选择这些标签，至少一个标签必须发布到至少一个用户。
+    - 如果管理中心具有敏感度标签，则将从管理中心检索这些标签。 若要在 Cloud App Security 中选择这些标签，至少一个标签必须发布到至少一个用户。
     
-    - 如果管理中心的标签与 Azure 门户中的不同，则不会从管理中心使用统一标签，而是从 Azure 门户检索标签。
+    - 如果管理中心没有敏感度标签，则从 Azure 门户检索 Azure 信息保护标签。
 
 - 来自软件供应商和开发人员且使用 [Microsoft 信息保护 SDK](https://docs.microsoft.com/information-protection/develop/overview) 的服务。
 
