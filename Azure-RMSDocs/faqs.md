@@ -4,7 +4,7 @@ description: 一些有关 Azure 信息保护及其保护服务的常见问题，
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 1/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 90fb51a4b17ccf8f6b0689d41b86dbee284da024
-ms.sourcegitcommit: 10cefe41b0c888ef237511cddeb23f9a54b3c07d
+ms.openlocfilehash: c690329492732cbc446575335f57e9dae83979f5
+ms.sourcegitcommit: 17c327d58aa1695e59fb2cd8aea3b3cfc65f60b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2020
-ms.locfileid: "76281643"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912996"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -50,13 +50,17 @@ ms.locfileid: "76281643"
 
 ## <a name="how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform"></a>如何确定我的租户是否在统一的标签平台上？
 
-如果你的租户位于统一的标签平台上，则支持统一标签的[客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)可以使用敏感性标签。 如果在2019年6月版或更高版本中获取了 Azure 信息保护订阅，则租户会自动在统一的标签平台上，无需执行其他操作。 你的租户还可能在此平台上，因为有人迁移了你的 Azure 信息保护标签。
+如果你的租户位于统一的标签平台上，则它支持可由[支持统一标签的客户端和服务](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)使用的敏感度标签。 如果在2019年6月版或更高版本中获取了 Azure 信息保护订阅，则租户会自动在统一的标签平台上，无需执行其他操作。 你的租户还可能在此平台上，因为有人迁移了你的 Azure 信息保护标签。
 
-若要检查状态，请在 Azure 门户中，请参阅**Azure 信息保护** > **管理** > **统一标签**，并查看**统一标签**状态：
+如果你的租户不在统一的标签平台上，你会在 " **Azure 信息保护**" 窗格上的 "Azure 门户中看到以下信息横幅：
 
-- 如果你看到 "已**激活**"，则你的租户在统一的标签平台上。
+![迁移信息横幅](media/migration-status-banner.png)
 
-- 如果你看到 "**未激活**"，则你的租户不在统一的标签平台上。 有关迁移说明，请参阅[如何将 Azure 信息保护标签迁移到统一的敏感度标签](configure-policy-migrate-labels.md)。
+你还可以通过转到**Azure 信息保护** > **管理** > **统一标签**，并查看**统一标签**状态：
+
+- 如果你看到 "已**激活**"，则你的租户在统一的标签平台上，你可以从 "Microsoft 365 相容性中心"[创建、配置和发布标签](/microsoft-365/compliance/create-sensitivity-labels)。
+
+- 如果你看到 "**未激活**"，则你的租户不在统一的标签平台上。 有关迁移说明和指南，请参阅[如何将 Azure 信息保护标签迁移到统一的敏感度标签](configure-policy-migrate-labels.md)。
 
 ## <a name="whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护客户端与 Azure 信息保护统一标签客户端之间有何区别？
 
