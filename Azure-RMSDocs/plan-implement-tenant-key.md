@@ -83,7 +83,7 @@ ms.locfileid: "74934647"
 
 > [!NOTE]
 > 
-> 作为一种附加保护措施，Azure 密钥保管库对位于北美、EMEA（欧洲、中东和非州）和亚洲等地区的数据中心使用独立安全域。 Azure Key Vault 还使用 Azure 的其他实例，如 Microsoft Azure 德国和 Azure 政府。 
+> 作为一种附加保护措施，Azure Key Vault 对位于北美、EMEA（欧洲、中东和非洲）和亚洲等地区的数据中心使用独立安全域。 Azure Key Vault 还使用 Azure 的其他实例，如 Microsoft Azure 德国和 Azure 政府。 
 
 虽然这是可选的，但你可能希望使用 Azure 信息保护提供的接近实时的使用日志，以便准确了解租户密钥的使用时间和方式。
 
