@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 127d3c2e80f586e69255378eaf7422899c3a325f
-ms.sourcegitcommit: 4b13f8f04e3f2c37cfe512fd9a5ea4019e9c1dec
+ms.openlocfilehash: 01852416ece6046ad5132e8dd36ff2ee931ae393
+ms.sourcegitcommit: eb04292842a97c6813dbd9e5310db2e1652da011
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "77001550"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034291"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -78,7 +78,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 - New **WordShapeNameToRemove** advanced 属性允许删除第三方应用程序所做的 Word 文档中的内容标记。 详细了解如何[识别现有的形状名称，以及如何使用**WordShapeNameToRemove**将其定义为删除](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solutions)。 
 
 - [扫描仪](../deploy-aip-scanner.md)相关功能：
-    - [更轻松地进行本地 SharePoint 和子网站发现](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories)。 不再需要设置每个特定站点。 
+    - [更轻松地进行本地 SharePoint 和子网站发现](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo#permission-users-to-scan-sharepoint-repositories)。 不再需要设置每个特定站点。 
     - 添加了[SQL 块区大小](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#storage-requirements-and-capacity-planning-for-sql-server)的高级属性。
     - 管理员现在可以[停止现有扫描，并](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#stop-a-scan)在对默认标签进行更改时执行重新扫描。
     - 默认情况下，现在，扫描器会设置最小遥测数据，以提高扫描速度，缩短日志大小，并且信息类型现在会缓存在数据库中。 了解有关[扫描仪优化](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#optimizing-the-performance-of-the-scanner)的详细信息。 
@@ -118,7 +118,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
     
     - 扫描程序周期的开始和完成时间的事件 Id 不写入 Windows 事件日志。 请改用 Azure 门户获取此信息。
     
-    - 已知问题：不能将新的和重命名的标签选作扫描仪配置文件或存储库设置的默认标签。 之一
+    - 已知问题：不能将新的和重命名的标签选作扫描仪配置文件或存储库设置的默认标签。 工作区:
         - 对于新标签：在 Azure 门户中，将要使用的[标签添加](../configure-policy-add-remove-label.md)到全局策略或作用域内策略。
         - 对于重命名标签：关闭再重新打开 Azure 门户。
     
