@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 02/04/2020
+ms.date: 02/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 01852416ece6046ad5132e8dd36ff2ee931ae393
-ms.sourcegitcommit: eb04292842a97c6813dbd9e5310db2e1652da011
+ms.openlocfilehash: 3f30cd7aea2498c101937aacc8f3cbf3ffdc6364
+ms.sourcegitcommit: d9465ec12b78c24d4d630295d4e5ffae0ba8d647
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034291"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77044963"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -42,6 +42,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 |客户端版本|发布日期|
 |--------------|-------------|
+|2.2.14.0|07/15/2019|
 |2.0.779.0|05/01/2019|
 |2.0.778.0|04/16/2019|
 
@@ -181,59 +182,6 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 - 客户端可以成功地下载其策略并显示当前的敏感度标签。 从以前的版本升级后，如果未在标签中心配置任何自定义信息类型，则需要此修补程序。
 
 - 一般的性能和稳定性方面的改进。
-
-## <a name="version-22140"></a>版本2.2.14。0
-
-**发布**日期：07/15/2019
-
-支持，02/06/2020
-
-**新功能：**
-
-- 支持在 PowerShell 中为安全与合规中心配置的[高级设置](clientv2-admin-guide-customizations.md#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。
-    
-    这些高级设置支持以下自定义：
-     - [在 Office 应用程序中显示“信息保护”栏](clientv2-admin-guide-customizations.md#display-the-information-protection-bar-in-office-apps)
-    - [使 Outlook 邮件免于强制标记](clientv2-admin-guide-customizations.md#exempt-outlook-messages-from-mandatory-labeling)
-    - [在 Outlook 中启用建议的分类](clientv2-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
-    - [为 Outlook 设置不同的默认标签](clientv2-admin-guide-customizations.md#set-a-different-default-label-for-outlook)
-    - [使用强制标签时，删除文档的“以后再说”](clientv2-admin-guide-customizations.md#remove-not-now-for-documents-when-you-use-mandatory-labeling)
-    - [删除其他标记解决方案中的页眉和页脚](clientv2-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)
-    - [在文件资源管理器中禁用自定义权限](clientv2-admin-guide-customizations.md#disable-custom-permissions-in-file-explorer)
-    - [对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](clientv2-admin-guide-customizations.md#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer)
-    - [对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](clientv2-admin-guide-customizations.md#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
-    - [为用户添加“报告问题”](clientv2-admin-guide-customizations.md#add-report-an-issue-for-users)
-    - [在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](clientv2-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
-    - [禁止将文档中发现的敏感信息发送到 Azure 信息保护分析](clientv2-admin-guide-customizations.md#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)
-    - [向 Azure 信息保护分析发送信息类型匹配项](clientv2-admin-guide-customizations.md#send-information-type-matches-to-azure-information-protection-analytics)
-    - [从 Secure Islands 和其他标记解决方案迁移标签](clientv2-admin-guide-customizations.md#migrate-labels-from-secure-islands-and-other-labeling-solutions)
-    - [应用标签时应用自定义属性](clientv2-admin-guide-customizations.md#apply-a-custom-property-when-a-label-is-applied)
-    - [将标签配置为在 Outlook 中应用 S/MIME 保护](clientv2-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
-    - [为父标签指定默认子标签](clientv2-admin-guide-customizations.md#specify-a-default-sublabel-for-a-parent-label)
-    - [指定标签的颜色](clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)
-
-- 支持为 Word、Excel、PowerPoint 和文件资源管理器的用户定义权限配置的标签。 有关详细信息，请参阅 Office 文档中的[允许用户分配权限](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions)部分。
-
-- AzureInformationProtection 模块中的 PowerShell 更改：
-    - 新 cmdlet： [AIPCustomPermissions](/powershell/module/azureinformationprotection/New-AIPCustomPermissions) -替换 RMSProtectionLicense，为自定义权限创建即席策略
-    - 新参数：
-        -  *CustomPermissions*和*RemoveProtection* -添加到[set-aipfilelabel](/powershell/module/azureinformationprotection/Set-AIPFileLabel)
-        -  *OnBeHalfOf* -已添加到[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication)，用于代替非交互式会话的*令牌*参数
-        -  *WhatIf*和*DiscoveryInfoTypes*已添加到[set-aipfileclassification](/powershell/module/azureinformationprotection/set-aipfileclassification)，因此此 cmdlet 可以在发现模式下运行，而无需应用标签
-    - 直接连接到保护服务的不推荐使用的 cmdlet： RMSAuthentication、Get-rmsfilestatus、RMSServer、Set-rmsserverauthentication、Get-rmstemplate、Protect-rmsfile、set-rmsserverauthentication、protect-rmsfile、
-
-
-**纠正**
-
-- 支持通过*DiscoveryInfoTypes*参数进行分析和[set-aipfileclassification](https://docs.microsoft.com/powershell/module/azureinformationprotection/set-aipfileclassification?view=azureipps)的[内容匹配](../reports-aip.md#content-matches-for-deeper-analysis)。
-
-- 更改为 Windows 中的备用区域设置后，仍然可以将具有保护功能的标签应用于 PDF 文档。
-
-- 从内容中删除标签时，仅当将其作为标签配置的一部分应用时，才会删除保护。 如果与标签分开应用保护，则会保留该保护。 例如，用户对文件应用了自定义权限。
-
-- 当配置自动标签时，标签会在首次保存文档时应用。
-
-- 默认标记支持子标签。
 
 ## <a name="next-steps"></a>后续步骤
 

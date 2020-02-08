@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b18beab3c6a2dd3b01991fdb9755b943ec62fe5a
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.openlocfilehash: 8e91257484ccb148475d16e3fd5de2905b8691c3
+ms.sourcegitcommit: d9465ec12b78c24d4d630295d4e5ffae0ba8d647
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117691"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77045025"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -115,7 +115,7 @@ ms.locfileid: "76117691"
 
 将*AdvancedSettings*参数与[LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-labelpolicy?view=exchange-ps)和[LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-labelpolicy?view=exchange-ps)一起使用。
 
-|Setting|应用场景和说明|
+|设置|应用场景和说明|
 |----------------|---------------|
 |AttachmentAction|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 |AttachmentActionTip|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments) 
@@ -152,7 +152,7 @@ ms.locfileid: "76117691"
 
 使用带有[新标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-label?view=exchange-ps)和[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)的*AdvancedSettings*参数。
 
-|Setting|应用场景和说明|
+|设置|应用场景和说明|
 |----------------|---------------|
 |颜色|[指定标签的颜色](#specify-a-color-for-the-label)|
 |customPropertiesByLabel|[应用标签时应用自定义属性](#apply-a-custom-property-when-a-label-is-applied)|
@@ -243,7 +243,7 @@ ms.locfileid: "76117691"
 
 使用下表来确定要指定的字符串值：
 
-| “字符串值”| 客户端| 扫描仪|
+| 字符串值| 客户端| Scanner|
 |-------------|-------|--------|
 |\*|默认值：将保护应用于所有文件类型|将保护应用于所有文件类型|
 |\<null 值 >| 将保护应用于 Office 文件类型和 PDF 文件| 默认值：将保护应用于 Office 文件类型和 PDF 文件|
@@ -390,7 +390,7 @@ Label applied manually
 
 - 键：ExternalContentMarkingToRemove
 
-- 键值 1：\*Confidential*
+- 键值 1：**Confidential\*** *
 
 - 键值 2： **\*Label applied*** 
 
@@ -512,7 +512,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 密钥：ReportAnIssueLink
 
-- 值：\<HTTP string>
+- 值：**HTTP string>\<**
 
 网站示例值：`https://support.contoso.com`
 
@@ -595,19 +595,19 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
     
     - 密钥： **OutlookWarnTrustedDomains**
     
-    - 值：\<域名，以逗号分隔>
+    - 值：**域名，以逗号分隔\<** **>**
 
 - 对齐消息：
     
     - 密钥： **OutlookJustifyTrustedDomains**
     
-    - 值：\<域名，以逗号分隔>
+    - 值：**域名，以逗号分隔\<** **>**
 
 - 阻止邮件：
     
     - 密钥： **OutlookBlockTrustedDomains**
     
-    - 值：\<域名，以逗号分隔>
+    - 值：**域名，以逗号分隔\<** **>**
 
 例如，你为 "**机密 \ 所有员工**" 标签指定了**OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定**OutlookJustifyTrustedDomains**和**contoso.com**的其他高级客户端设置。 因此，当用户标记为 "**机密 \ 所有员工**" 时，用户可以将电子邮件发送到 john@sales.contoso.com，但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
 
@@ -664,7 +664,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 密钥： **OutlookOverrideUnlabeledCollaborationExtensions**
 
-- 值： **\<** 文件扩展名以显示消息，以逗号分隔 **>**
+- 值：显示消息 **\<** 文件扩展名，以逗号分隔 **>**
 
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
@@ -813,7 +813,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求：安全孤岛标签为 "机密" 的文档应由 Azure 信息保护重新标记为 "机密"。
 
-在此示例中：
+在本示例中：
 
 - Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中。
 
@@ -831,7 +831,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求：通过安全孤岛标记为 "敏感" 的文档应由 Azure 信息保护重新标记为 "高度机密"。
 
-在此示例中：
+在本示例中：
 
 - Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中。
 
@@ -849,7 +849,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求：你有两个安全孤岛标签，其中包含 "内部" 一词，并且你希望 Azure 信息保护统一标签客户端将具有这些安全孤岛标签的文档重新标记为 "常规"。
 
-在此示例中：
+在本示例中：
 
 - Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中。
 
@@ -933,7 +933,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求： Azure 信息保护统一标签客户端标记为 "机密" 的文档应具有名为 "分类" 的附加自定义属性，其值为 "Secret"。
 
-在此示例中：
+在本示例中：
 
 - 敏感度标签命名为 "**机密**"，并创建名为 "Secret" 的自定义**属性，其**值为 "**机密**"。
 
@@ -1030,7 +1030,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 2. 重新启动任何打开的 Office 应用程序，并使用其他用户帐户登录。 如果在 Office 应用程序中看不到用于登录到 Azure 信息保护服务的提示，请返回**Microsoft Azure 信息保护**对话框，并从 "更新的**客户端状态**" 部分中选择 "**登录**"。
 
-另外：
+此外：
 
 - 完成这些步骤后，如果 Azure 信息保护的统一标签客户端仍以旧帐户登录，请从 Internet Explorer 中删除所有 cookie，然后重复步骤1和2。
 
@@ -1048,7 +1048,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 默认情况下，Azure 信息保护的统一标签客户端会自动尝试连接到 internet，以从标记管理中心下载标签和标签策略设置： Office 365 安全与合规中心，Microsoft 365 安全中心或 Microsoft 365 相容性中心。 如果计算机在一段时间内无法连接到 internet，则可以导出和复制为统一标签客户端手动管理策略的文件。
 
-说明：
+说明:
 
 1. 在 Azure AD 中选择或创建一个用户帐户，你将使用该帐户下载要在断开连接的计算机上使用的标签和策略设置。
 
@@ -1070,10 +1070,6 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 7. 如果你选择的用户帐户通常连接到 internet，请通过将**EnableAudit**值设置为**True**，再次启用发送审核数据。
 
-8. 对于断开连接的计算机，保护文件、重新保护文件、删除文件保护或检查受保护的文件：在断开连接的计算机上，运行[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) Cmdlet 和*DelegatedUser*参数，并指定步骤1中的用户帐户以设置用户上下文。 例如：
-    
-        Set-AIPAuthentication -TenantId "9c11c87a-ac8b-46a3-8d5c-f4d0b72ee29a" -DelegatedUser offlineuser@contoso.com
-
 请注意，如果此计算机上的用户从 "[帮助和反馈](clientv2-admin-guide.md#help-and-feedback-section)" 中选择 "**重置设置**" 选项，则此操作将删除策略文件并使客户端无法运行，直到您手动替换文件或客户端连接到 internet 并下载这些文件。
 
 如果断开连接的计算机正在运行 Azure 信息保护扫描程序，则必须执行其他配置步骤。 有关详细信息，请参阅[限制：扫描仪服务器无法](../deploy-aip-scanner.md#restriction-the-scanner-server-cannot-have-internet-connectivity)从扫描程序部署说明获得 internet 连接。
@@ -1084,7 +1080,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
  
 若要更改这些文件的日志记录级别，请在注册表中找到以下值名称并将值数据设置为所需的日志记录级别：
 
-**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\LogLevel**
+**HKEY_CURRENT_USER \SOFTWARE\Microsoft\MSIP\LogLevel**
 
 将日志记录级别设置为以下值之一：
 
