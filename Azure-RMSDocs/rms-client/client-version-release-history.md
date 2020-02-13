@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/08/2020
+ms.date: 02/12/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v1client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c3babbe6a0470df498567f6614362e87c14a24cf
-ms.sourcegitcommit: 10cefe41b0c888ef237511cddeb23f9a54b3c07d
+ms.openlocfilehash: abb96a7d86bddea671230fbd033d9c940cf982a3
+ms.sourcegitcommit: 6db47d691974b5450b80c58a49b2913ec1a99802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2020
-ms.locfileid: "76281592"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155919"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -66,7 +66,7 @@ ms.locfileid: "76281592"
 
 1\.4.21.0 发行的所有客户端版本03/15/2017 支持 TLS 1.2。 客户端版本**1.3.155.2**、 **1.2.4.0**和**1.1.23.0**不使用 TLS 1.2，因此无法再下载 Azure 信息保护策略。
 
-### <a name="release-history"></a>版本历史
+### <a name="release-history"></a>版本历史记录
 
 请查看以下信息，了解适用于 Windows 的 Azure 信息保护客户端受支持版本的新增功能或更改之处。 最新版本会最先列出。
 
@@ -75,10 +75,27 @@ ms.locfileid: "76281592"
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
+## <a name="version-154590"></a>版本1.54.59。0
+
+**发布**日期：12/02/2020
+
+此版本仅包含修补程序。 
+
+**修补程序**：
+
+- 解决了在删除保护后，IQP 显示的、**恢复**和/或**另存为**选项所保护的文件的问题。 
+
+- 许多产品功能工具提示文本经过改进，易于理解。 
+
+- 解决使用受保护的 PDF 文件时的客户端稳定性问题。 
+
+- 如果在电子邮件创建过程中将在电子邮件中删除标签，则现在会按预期删除保护标签。 
 
 ## <a name="version-154330"></a>版本1.54.33。0
 
 **发布**日期：10/23/2019
+
+支持，08/12/2020
 
 此版本包括 RMS 客户端的 MSIPC 版本1.0.4008.0813。
 

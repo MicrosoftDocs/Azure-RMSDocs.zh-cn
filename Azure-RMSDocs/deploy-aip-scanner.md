@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 272e5898859efd29033b8dc3430bb4a2d193fa75
-ms.sourcegitcommit: d9465ec12b78c24d4d630295d4e5ffae0ba8d647
+ms.openlocfilehash: 977dca2ab04071e0f58847d3a1d045e95a6c3a4f
+ms.sourcegitcommit: 6db47d691974b5450b80c58a49b2913ec1a99802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77044993"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155936"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -132,7 +132,7 @@ ms.locfileid: "77044993"
 
 - 对于统一标签客户端：统一标签客户端无法在没有联机连接的情况下应用保护。 
     
-    来自统一标签客户端的扫描程序可以基于使用 Set-aipscannerconfiguration cmdlet 导入[的](https://docs.microsoft.com/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration?view=azureipps)策略策略应用标签。
+    来自统一标签客户端的扫描程序可以基于使用 Set-aipscannerconfiguration cmdlet 导入[的](https://docs.microsoft.com/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration?view=azureipps)策略应用标签。
 
 然后，执行下列操作：
 
