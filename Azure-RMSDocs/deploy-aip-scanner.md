@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行当前版本的 Azure 信息保
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 2/06/2020
+ms.date: 2/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 977dca2ab04071e0f58847d3a1d045e95a6c3a4f
-ms.sourcegitcommit: 6db47d691974b5450b80c58a49b2913ec1a99802
+ms.openlocfilehash: 03ec95f3e53bd522c1d1775e54dfae7305a578e3
+ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77155936"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77423193"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -166,19 +166,27 @@ ms.locfileid: "77155936"
     
     使用以下脚本填充数据库： 
 
-
-
     如果不存在（select * server_principals from quotename where sid = SUSER_SID （"domain\user"）） BEGIN 声明 @T nvarchar （500） Set @T = "CREATE LOGIN" + （"domain\user"） + "FROM WINDOWS" exec （@T） END 
 
-若要创建用户并授予对此数据库的 db_owner 权限，请要求 Sysadmin 运行以下 SQL 脚本两次。 第一次，对于运行扫描程序的服务帐户，以及第二次用于安装和管理扫描仪。 运行脚本之前：
-1. 将*domain\user*替换为服务帐户或用户帐户的域名和用户帐户名。
-2. 将*DBName*替换为扫描程序配置数据库的名称。
+若要创建用户并授予对此数据库的 db_owner 权限，请要求 Sysadmin 执行以下操作：
+
+1. 为扫描程序创建数据库： <br>
+    **CREATE database AIPScannerUL_ [ProfileName]** **ALTER Database AIPScannerUL_ [PROFILENAME] SET 高可信 ON**
+    - 此步骤是可选的，但如果需要，可以更轻松地进行故障排除。
+
+2. 向运行 install 命令并用于运行扫描程序管理命令的用户授予权限：
 
 SQL 脚本：
 
     if not exists(select * from master.sys.server_principals where sid = SUSER_SID('domain\user')) BEGIN declare @T nvarchar(500) Set @T = 'CREATE LOGIN ' + quotename('domain\user') + ' FROM WINDOWS ' exec(@T) END
     USE DBName IF NOT EXISTS (select * from sys.database_principals where sid = SUSER_SID('domain\user')) BEGIN declare @X nvarchar(500) Set @X = 'CREATE USER ' + quotename('domain\user') + ' FROM LOGIN ' + quotename('domain\user'); exec sp_addrolemember 'db_owner', 'domain\user' exec(@X) END
 
+3. 向扫描程序服务帐户授予权限：
+
+SQL 脚本：
+
+    if not exists(select * from master.sys.server_principals where sid = SUSER_SID('domain\user')) BEGIN declare @T nvarchar(500) Set @T = 'CREATE LOGIN ' + quotename('domain\user') + ' FROM WINDOWS ' exec(@T) END
+    
 此外：
 
 - 您必须是将运行扫描程序的服务器上的本地管理员

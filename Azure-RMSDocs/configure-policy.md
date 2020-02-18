@@ -13,24 +13,24 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c665a6e5ba7ebdc6097e20e0de1854065325bc49
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: 363fc709334ac3974ec657d72c44e88a2e9c828a
+ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75743509"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77422821"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>配置 Azure 信息保护策略
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 
 > [!NOTE]
 > Azure 信息保护策略适用于 Azure 信息保护客户端（经典），而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
 > 
-> 如果你正在寻找信息来为统一标签客户端配置敏感度标签和策略设置，请参阅 Office 文档中的[敏感度标签概述](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。
+> 如果你正在寻找信息来为统一标签客户端配置敏感度标签和策略设置，请参阅了解 Microsoft 365 合规性文档中的[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。
 
 若要为经典客户端配置分类、设置标签和保护，必须配置 Azure 信息保护策略。 然后将此策略下载到已安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)(#azure-信息保护客户端) 的计算机。
 
@@ -48,15 +48,15 @@ Azure 信息保护支持不同级别的订阅：
 
 - Azure 信息保护 P1：支持大多数分类、设置标签和保护功能，但不支持自动分类或 HYOK。
 
-- 包括 Azure 权限管理服务的 Office 365：支持保护，但不支持分类和设置标签功能。
+- 包含 Azure Rights Management 服务的 Office 365：支持保护，但不支持分类和设置标签功能。
 
 需要 Azure 信息保护 P2 订阅的选项在门户中进行标识。
 
 如果贵组织拥有组合订阅，则你有责任确保用户不会使用其帐户未授权使用的功能。 Azure 信息保护客户端不会进行许可证检查以及强制执行。 在配置并非所有用户都具有相应许可证的选项时，请使用作用域内策略或注册表设置，以确保组织符合许可证：
 
-- **当组织具备 Azure 信息保护 P1 和 Azure 信息保护 P2 的组合许可证时**：对于具有 P2 许可证的用户，请在配置需要 Azure 信息保护 P2 许可证的选项时创建并使用一个或多个[作用域内策略](configure-policy-scope.md)。 请确保全局策略不包含需要 Azure 信息保护 P2 许可证的选项。
+- 当组织具备 Azure 信息保护 P1 和 Azure 信息保护 P2 的组合许可证时：对于具有 P2 许可证的用户，请在配置需要 Azure 信息保护 P2 许可证的选项时创建并使用一个或多个[作用域内策略](configure-policy-scope.md)。 请确保全局策略不包含需要 Azure 信息保护 P2 许可证的选项。
 
-- **当组织具有 Azure 信息保护订阅，但有些用户只有包含 Azure 权限管理服务的 Office 365 许可证时**：对于没有 Azure 信息保护许可证的用户，可在其计算机上编辑注册表，以防止他们下载 Azure 信息保护策略。 有关说明，请参阅管理员指南了解以下自定义项：[当组织具备组合许可证时，强制执行仅保护模式](./rms-client/client-admin-guide-customizations.md#enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses)。
+- 当组织具有 Azure 信息保护订阅，但有些用户只有包含 Azure 权限管理服务的 Office 365 许可证时：对于没有 Azure 信息保护许可证的用户，可在其计算机上编辑注册表，以防止他们下载 Azure 信息保护策略。 有关说明，请参阅管理员指南了解以下自定义项：[组织具备组合许可证时，强制执行仅保护模式](./rms-client/client-admin-guide-customizations.md#enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses)。
 
 有关订阅的详细信息，请参阅 [需要为 Azure 信息保护准备哪个订阅，它包括哪些功能？](faqs.md#what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included)
 
@@ -106,9 +106,9 @@ Azure 信息保护支持不同级别的订阅：
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>如何配置 Azure 信息保护策略
 
-1. 请确保使用以下管理角色之一登录到 Azure 门户： Azure 信息保护管理员、安全管理员或全局管理。 请参阅[前述部分](#signing-in-to-the-azure-portal)了解有关这些管理角色的详细信息。
+1. 确保使用以下管理角色之一登录到 Azure 门户：Azure 信息保护管理员、安全管理员或全局管理。 请参阅[前述部分](#signing-in-to-the-azure-portal)了解有关这些管理角色的详细信息。
 
-2. 如有必要，请导航到 " **Azure 信息保护**" 窗格：例如，在 "中心" 菜单上，单击 "**所有服务**"，然后在 "筛选器" 框中开始键入**信息保护**。 在结果中选择“Azure 信息保护”。 
+2. 如有必要，请导航到 " **Azure 信息保护**" 窗格：例如，在中心菜单上单击“所有服务”，然后在筛选框中开始键入“信息保护”。 在结果中选择“Azure 信息保护”。 
     
     此时会自动打开 " **Azure 信息保护-标签**" 窗格，以便查看和编辑可用标签。 可通过从策略中添加或删除标签，使标签可供所有用户和选定用户使用，或不供用户使用。
 
@@ -129,7 +129,7 @@ Azure 信息保护支持不同级别的订阅：
 
 - 每 24 小时一次。
 
-- 关于 [Azure 信息保护扫描程序](deploy-aip-scanner.md)：当服务启动时（如果策略超过一小时），以及操作期间每小时。
+- 对于 [Azure 信息保护扫描程序](deploy-aip-scanner.md)：当服务启动时（如果策略超过一小时），以及操作期间每小时。
 
 
 >[!NOTE]
@@ -169,9 +169,9 @@ Azure 信息保护支持不同级别的订阅：
 
 如果标签应用于文档或电子邮件，标签实际上存储在元数据中，这样应用程序和服务就能读取标签了：
 
-- 在电子邮件中，此信息存储在 x 标头中： **msip_labels： MSIP_Label_\<GUID > _Enabled = True** 
+- 在电子邮件中，此信息存储在 x 标头：**msip_labels:MSIP_Label_\<GUID > _Enabled = True** 
 
-- 对于 Word 文档（.doc 和 .docx）、Excel 电子表格（.xls 和 .xlsx）、PowerPoint 演示文稿（.ppt 和 .pptx）和 PDF 文档，此元数据存储在下面的自定义属性中： **MSIP_Label_\<GUID > _Enabled = True**
+- 对于 Word 文档（.doc 和 .docx）、Excel 电子表格（.xls 和 .xlsx）、PowerPoint 演示文稿（.ppt 和 .pptx）以及 PDF 文档，此元数据存储在以下自定义属性中：MSIP_Label_\<GUID>_Enabled=True
 
 对于电子邮件，在发送电子邮件时，将存储标签信息。 对于文档，保存文件时将存储标签信息。 
 

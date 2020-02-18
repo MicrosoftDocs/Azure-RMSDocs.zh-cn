@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 0735bb20a02be6471c519bf17c46cd1354d9380b
-ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
+ms.openlocfilehash: bceeffc8c4c34d913cfd1f76f4f28d9f06d9169a
+ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75959502"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77422872"
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-the-azure-information-protection-unified-labeling-client-for-windows"></a>用户指南：使用适用于 Windows 的 Azure 信息保护统一标签客户端对文件或电子邮件进行分类
 
@@ -106,5 +106,5 @@ ms.locfileid: "75959502"
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息
 
-请参阅[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)。
+请参阅[了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)。
 

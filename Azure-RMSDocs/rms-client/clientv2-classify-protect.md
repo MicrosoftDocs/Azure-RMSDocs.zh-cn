@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: ae7ef5e27ccdce0835bdc96adad2291f584bb69e
-ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
+ms.openlocfilehash: f51d3a901808a4689e651c6736c6ac8294e1e602
+ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75959907"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77423079"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端进行分类和保护
 
@@ -151,4 +151,4 @@ ms.locfileid: "75959907"
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 
-请参阅[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)。
+请参阅[了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)。

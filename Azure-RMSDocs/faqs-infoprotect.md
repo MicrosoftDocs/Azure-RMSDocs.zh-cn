@@ -12,16 +12,16 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8278395afacca4d30b67f88d82e98779dcda8871
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.openlocfilehash: 7ce40d404ce092c7ac6be2598e4a85fe54166654
+ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117563"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77422877"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 
 遇到有关 Azure 信息保护的专门与分类和标签有关的问题？  请查看此处是否有答案。 
@@ -30,7 +30,7 @@ ms.locfileid: "76117563"
 
 目前有两个适用于 Windows 的 Azure 信息保护客户端： 
 
-- **Azure 信息保护统一标签客户端**，它从以下管理中心之一下载标签和策略设置： Office 365 安全与合规中心、Microsoft 365 安全中心、Microsoft 365 符合性中心。 此客户端现已正式发布，并且可能有一个预览版本，你可以在将来的版本中测试其他功能。
+- **Azure 信息保护统一标签客户端**，它从以下管理中心之一下载标签和策略设置：Office 365 安全与合规中心，Microsoft 365 安全中心，Microsoft 365 合规中心。 此客户端现已正式发布，并且可能有一个预览版本，你可以在将来的版本中测试其他功能。
 
 - 用于从 Azure 门户下载标签和策略设置的**Azure 信息保护客户端（经典）** 。 此客户端建立在以前的客户端通用版本上。
 
@@ -42,7 +42,7 @@ ms.locfileid: "76117563"
 
 请参阅以下文档资源：
 
-- [敏感度标签概述](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) 
+- [了解敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) 
 
 - [Office 应用中的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps)
 
@@ -62,7 +62,7 @@ ms.locfileid: "76117563"
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>标记一封电子邮件时，是否有任何附件会自动获得相同的标记？
 
-不能。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 不过，如果电子邮件的标签应用了保护配置，此保护配置也会应用于 Office 附件。
+不。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 不过，如果电子邮件的标签应用了保护配置，此保护配置也会应用于 Office 附件。
 
 ## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
 
@@ -74,7 +74,7 @@ ms.locfileid: "76117563"
 
 ## <a name="can-i-create-a-document-template-that-automatically-includes-the-classification"></a>我能否创建自动包含分类的文档模板？
 
-适用。 可以将标签配置为，[应用包含标签名称的页眉或页脚](configure-policy-markings.md)。 但如果不满足你的要求，只针对 Azure 信息保护客户端（经典），可以创建一个具有所需格式的文档模板，然后将分类添加为字段代码。 
+是。 可以将标签配置为，[应用包含标签名称的页眉或页脚](configure-policy-markings.md)。 但如果不满足你的要求，只针对 Azure 信息保护客户端（经典），可以创建一个具有所需格式的文档模板，然后将分类添加为字段代码。 
 
 例如，文档的页眉中可能有一个显示分类的表。 或者，对引用文档分类的简介使用具体的字词。
 

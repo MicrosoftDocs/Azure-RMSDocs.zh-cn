@@ -11,24 +11,24 @@ ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: cb5bd910d69b85feae4c96b9bc8deb34369ccedb
-ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
+ms.openlocfilehash: 919a31bfbc4d173aa9658eaf8725b1dd3da5f5d1
+ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75959827"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77422772"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 
 > [!NOTE]
 > 这些说明适用于 Azure 信息保护客户端（经典版），而不是 Azure 信息保护统一标记客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
 > 
-> 如果你正在寻找有关为统一标签客户端配置自动和建议分类的信息，请参阅 Office 文档。 例如，[自动对内容应用敏感标签](/microsoft-365/compliance/apply-sensitivity-label-automatically)。
+> 如果你正在寻找有关为统一标签客户端配置自动和建议分类的信息，请参阅 Microsoft 365 符合性文档。 例如，[自动对内容应用敏感标签](/microsoft-365/compliance/apply-sensitivity-label-automatically)。
 
 在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。 
 
@@ -63,7 +63,7 @@ ms.locfileid: "75959827"
 
 ### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>多条件应用到多个标签时的评估方式
 
-1. 根据在策略中指定的位置，将标签排序以供评估：排在第一的标签具有最低的位置（敏感度最低），排在最后的标签具有最高位置（敏感度最高）。
+1. 根据在策略中指定的位置，对标签进行排序以进行评估：首先放置的标签具有最低位置（最不敏感），最后放置的标签具有最高位置（最敏感）。
 
 2. 应用最敏感的标签。
  
@@ -74,9 +74,9 @@ ms.locfileid: "75959827"
 
 1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”窗格。 
     
-    例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”并选择“Azure 信息保护”。
 
-2. 从 "**分类** > **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格中，选择要配置的标签。
+2. 从“分类” > “标签”菜单选项中：在 " **Azure 信息保护-标签**" 窗格中，选择要配置的标签。
 
 3. 在 "**标签**" 窗格的 "**配置自动应用此标签的条件**" 部分中，单击 "**添加新条件**"。
 
@@ -92,19 +92,19 @@ ms.locfileid: "75959827"
         
         Azure 信息保护评估你选择的信息类型时，不使用 Office DLP 置信度设置，而是根据最低置信度进行匹配。
     
-    - 对于“**自定义**”：指定匹配的名称和短语，其必须排除引号和特殊字符。 然后指定是否匹配正则表达式，区分大小写，发生的最小数目以及发生计数中是否应具有唯一的值。
+    - 对于“自定义”：指定要匹配的名称和短语，其必须排除引号和特殊字符。 然后指定是否匹配正则表达式，区分大小写，发生的最小数目以及发生计数中是否应具有唯一的值。
         
         正则表达式使用 Office 365 正则表达式模式。 为帮助你指定自定义条件的正则表达式，请参阅 Boost 的以下特定版本的 [Perl 正则表达式语法](https://www.boost.org/doc/libs/1_37_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)。
         
 5. 确定是否需要更改“最小出现次数”和“仅计算唯一值的出现次数”，然后选择“保存”。 
     
-    出现次数选项示例：选择社会安全号码的信息类型并将最小出现次数设置为 2，并且文档已两次列出同一社会安全号码：如果将“仅计算唯一值的出现次数”设置为“开”，则不符合条件。 如果将此选项设置为“关闭”，则满足条件。
+    出现次数选项示例：选择社会安全号码的信息类型，将最小出现次数设置为 2，文档中两次列出相同的社会安全号码：如果将“仅用唯一值计算出现次数”设置为“开”，则不满足此条件。 如果将此选项设置为“关闭”，则满足条件。
 
 6. 返回到 "**标签**" 窗格，配置以下各项，然后单击 "**保存**"：
     
-    - 选择自动或建议的分类：对于**选择如何应用该标签：自动或向用户建议**，选择“**自动**”或“**建议**”。
+    - 选择自动分类或建议分类：对于“选择如何应用该标签：自动或向用户建议”，选择“自动”或“建议”。
     
-    - 指定用户提示或策略提示文本：保持默认文本或指定你自己的字符串。
+    - 指定用于用户提示或策略提示的文本：保留默认文本或指定你自己的字符串。
 
 单击“保存”时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
 
@@ -123,7 +123,7 @@ ms.locfileid: "75959827"
 - **Azure 发布设置密码**
 - **Azure 存储帐户密钥（通用）**
 
-有关这些敏感信息类型的详细信息，请参阅以下博客文章： [Azure 信息保护通过自动发现凭据帮助提高安全性](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-helps-you-to-be-more-secure-by/ba-p/360181)
+有关这些敏感信息类型的详细信息，请参阅以下博客文章：[Azure 信息保护通过自动发现凭据帮助提高安全性](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-helps-you-to-be-more-secure-by/ba-p/360181)
 
 此外，从 Azure 信息保护客户端的1.48.204.0 开始，以下敏感信息类型不受支持，并且不再显示在 Azure 门户中。 如果你有使用这些敏感信息类型的标签，则建议你删除它们，因为我们无法确保对它们进行正确的检测，并且应忽略对扫描程序报告中的任何引用：
 
