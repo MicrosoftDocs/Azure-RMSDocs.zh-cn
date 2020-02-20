@@ -1,22 +1,22 @@
 ---
 title: 类 mip：:D ocumentState
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:d ocumentstate 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 5cdcf04a68269581dc032f753247ba88e9f118d7
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: a49683730f120b3d43e2c8f9381a86f0df1a400d
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73558876"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77490126"
 ---
 # <a name="class-mipdocumentstate"></a>类 mip：:D ocumentState 
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public std::string GetContentIdentifier() const  |  获取描述文档的内容说明。 文件示例： [path\filename] 电子邮件示例： [Subject： Sender]。
 public virtual DataState GetDataState （） const  |  获取应用程序与之交互时内容的状态。
@@ -25,8 +25,9 @@ public std：： shared_ptr\<ProtectionDescriptor\> GetProtectionDescriptor （�
 public ContentFormat GetContentFormat() const  |  获取内容格式。
 public virtual std：： shared_ptr\<ClassificationResults\> GetClassificationResults （const std：： vector\<std：： shared_ptr\<ClassificationRequest\>\> &） const  |  返回分类结果的映射。
 公共虚拟 std：： map\<std：： string，std：： string\> GetAuditMetadata （） const  |  返回应用程序特定的审核键值对的映射。
+public virtual std：： chrono：： time_point\<std：： chrono：： system_clock\> GetLastModifiedTime （） const  |  返回上次修改文档的时间点。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="getcontentidentifier-function"></a>GetContentIdentifier 函数
 获取描述文档的内容说明。 文件示例： [path\filename] 电子邮件示例： [Subject： Sender]。
@@ -77,3 +78,9 @@ public virtual std：： shared_ptr\<ClassificationResults\> GetClassificationRe
 
   
 **返回**：特定于应用程序的审核元数据注册密钥：值对发送方：发件人接收方的电子邮件 id 的列表：表示电子邮件的 LASTMODIFIEDBY 的 JSON 数组：上次修改内容的用户的电子邮件 id LastModifiedDate：上次修改内容的日期
+  
+### <a name="getlastmodifiedtime-function"></a>GetLastModifiedTime 函数
+返回上次修改文档的时间点。
+
+  
+**返回**：文档时间点的上次修改时间。

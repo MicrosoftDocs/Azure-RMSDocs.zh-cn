@@ -1,30 +1,30 @@
 ---
 title: 类 mip::HttpResponse
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： httpresponse.cache 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 876de8047abc4e2f13ee8e103cdfa1648738aa84
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: e24eef471b11daffadb84235edbc93ff14696c25
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73558743"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77488052"
 ---
 # <a name="class-miphttpresponse"></a>类 mip::HttpResponse 
 一个接口，该接口描述在重写 HttpDelegate 时由客户端应用程序实现的单个 HTTP 响应。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetId() const  |  获取响应 ID。
 public int32_t GetStatusCode() const  |  获取响应状态代码。
 public const std：： vector\<uint8_t\>& GetBody （） const  |  获取请求正文。
 public const std：： map\<std：： string、std：： string、CaseInsensitiveComparator\>& GetHeaders （） const  |  获取请求标头。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="getid-function"></a>GetId 函数
 获取响应 ID。

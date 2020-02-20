@@ -1,22 +1,22 @@
 ---
 title: class mip::FileEngine::Settings
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： fileengine 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 387d3819e8abe9fb24283cd0f62a78c15ce27b49
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 6105a542c3c01b31598796912211f97562b25f08
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73558856"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77488783"
 ---
 # <a name="class-mipfileenginesettings"></a>class mip::FileEngine::Settings 
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 公共设置（const std：： string & engineId，const std：： string & clientData，const std：： string & locale，bool loadSensitivityTypes）  |  用于加载现有引擎的 FileEngine：： Settings 构造函数。
 公共设置（常量标识 & Identity，const std：： string & clientData，const std：： string & locale，bool loadSensitivityTypes）  |  用于创建新引擎的 FileProfile：： Settings 构造函数。
@@ -44,7 +44,7 @@ public const std：： string & GetDelegatedUserEmail （） const  |  获取委
 public void SetLabelFilter （const std：： vector\<LabelFilterType\>& labelFilter）  |  设置标签筛选器。
 public const std：： vector\<LabelFilterType\>& GetLabelFilter （） const  |  获取标签筛选器。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="settings-function"></a>Settings 函数
 用于加载现有引擎的 FileEngine：： Settings 构造函数。

@@ -1,23 +1,23 @@
 ---
 title: class mip::HttpRequest
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： httprequest 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: bfe55f09caaa20687750b055e10828f8cc6df2bd
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: f3b26ad07b8b3bfc556646cfd96a71aa9188bbb0
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560176"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77488086"
 ---
 # <a name="class-miphttprequest"></a>class mip::HttpRequest 
 描述单个 HTTP 请求的接口。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetId() const  |  获取请求 ID。
 public HttpRequestType GetRequestType() const  |  获取请求类型。
@@ -25,7 +25,7 @@ public const std::string& GetUrl() const  |  获取请求 URL。
 public const std：： vector\<uint8_t\>& GetBody （） const  |  获取请求正文。
 public const std：： map\<std：： string、std：： string、CaseInsensitiveComparator\>& GetHeaders （） const  |  获取请求标头。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="getid-function"></a>GetId 函数
 获取请求 ID。

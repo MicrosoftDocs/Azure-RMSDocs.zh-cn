@@ -1,26 +1,26 @@
 ---
 title: 类 mip：:P rotectionHandler：:P ublishingSettings
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionhandler 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 358c96b15b4e9eeb10a42937602487ec4d59b050
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: e61eb300cbc787ecbb7fd14ec5dcb060d4f47d0a
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560743"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77490755"
 ---
 # <a name="class-mipprotectionhandlerpublishingsettings"></a>类 mip：:P rotectionHandler：:P ublishingSettings 
 用于创建 ProtectionHandler 以保护新内容的设置。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public PublishingSettings （const std：： shared_ptr\<ProtectionDescriptor\>& protectionDescriptor）  |  用于创建新引擎的 ProtectionHandler：： Settings 构造函数。
-public std：： shared_ptr\<ProtectionDescriptor\> GetProtectionDescriptor （） const  | 尚未记录。
+public std：： shared_ptr\<ProtectionDescriptor\> GetProtectionDescriptor （） const  | _尚无记录。_
 public bool GetIsAuditedExtractionAllowed （） const  |  获取是否允许非 MIP 感知应用程序打开受保护的内容。
 public void SetIsAuditedExtractionAllowed （bool isAuditedExtractionAllowed）  |  设置是否允许非 MIP 感知应用程序打开受保护的内容。
 public bool GetIsDeprecatedAlgorithmPreferred （） const  |  获取是否首选不推荐使用的加密算法（ECB）来实现向后兼容性。
@@ -30,7 +30,7 @@ public const std：： string & GetDelegatedUserEmail （） const  |  获取委
 public bool IsPublishingFormatJson （） const  |  获取返回的 pl 是否为 json 格式（xml 格式是否被广泛接受并且为默认值）。
 public void SetPublishingFormatJson （bool isPublishingFormatJson）  |  返回的 pl 是否为 json 格式（xml 格式更广泛地接受并且是默认值）。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="publishingsettings-function"></a>PublishingSettings 函数
 用于创建新引擎的 ProtectionHandler：： Settings 构造函数。

@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
 ms.date: 01/28/2019
-ms.openlocfilehash: 69896e60fcf8aa33b2181fd22aeda803ab35b1cf
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: fb1657bc39f49b161c5ed986cd381cfd5d4cab49
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75555987"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489225"
 ---
 # <a name="mip-sdk-for-c-reference"></a>MIP SDK for C++ Reference
 
@@ -23,7 +23,9 @@ MIP SDK for C++ 包括：
 - [函数](mip-functions.md)
 - 下列类：
 
- 实例                         | Description                                
+## <a name="namespace-mip-classes"></a>命名空间 mip 类
+
+ 实例                         | 说明                                
 --------------------------------|---------------------------------------------
 [类 mip：： AccessDeniedError](class_mip_accessdeniederror.md)  |  用户无法访问内容。 例如，无权限、内容已撤销。
 [类 mip：： Action](class_mip_action.md)  |  操作的接口。 每个操作都转换为，出于应用标签目的，应用程序需要执行的步骤（如策略所定义）
@@ -36,15 +38,13 @@ MIP SDK for C++ 包括：
 [类 mip：： ApplicationActionState](class_mip_applicationactionstate.md)  | 尚未记录。
 [类 mip：： ApplyLabelAction](class_mip_applylabelaction.md)  |  应用标签操作要求，必须调用应用程序，才能应用特定标签。
 [类 mip：： ArgumentData](class_mip_argumentdata.md)  | 尚未记录。
+[类 mip：： AsyncControl](class_mip_asynccontrol.md)  |  用于取消异步操作的类。
 [类 mip：： AuthDelegate](class_mip_authdelegate.md)  |  用于身份验证相关操作的委托。
-[类 mip：： AuthDelegate：： OAuth2Challenge](class_mip_authdelegate_oauth2challenge.md)  |  一个类，其中包含调用应用程序所需的所有信息，以便生成 oauth2 标记。
-[类 mip：： AuthDelegate：： OAuth2Token](class_mip_authdelegate_oauth2token.md)  |  定义 MIP SDK 期望将 oauth2 标记传回 SDK 的方式的类。
 [类 mip：： BadInputError](class_mip_badinputerror.md)  |  输入不正确的错误，在 SDK API 输入无效时引发。
 [类 mip：： ClassificationData](class_mip_classificationdata.md)  | 尚未记录。
 [类 mip：： ClassificationRequest](class_mip_classificationrequest.md)  |  包含执行状态的分类调用请求的类。
 [类 mip：： ClassificationResult](class_mip_classificationresult.md)  |  包含对执行状态进行分类调用的结果的类。
 [类 mip：： ComputeEngine](class_mip_computeengine.md)  | 尚未记录。
-[类 mip：： ComputeEngine：： Settings](class_mip_computeengine_settings.md)  | 尚未记录。
 [类 mip：： ComputeEngineContext](class_mip_computeenginecontext.md)  | 尚未记录。
 [类 mip：： ConditionData](class_mip_conditiondata.md)  | 尚未记录。
 [类 mip：： ConsentDelegate](class_mip_consentdelegate.md)  |  执行许可相关操作的委托。
@@ -57,20 +57,17 @@ MIP SDK for C++ 包括：
 [类 mip：： Error](class_mip_error.md)  |  将从 MIP SDK 报告（引发或返回）的所有错误的基类。
 [类 mip：： Executionstate&](class_mip_executionstate.md)  |  执行引擎所需的所有状态的接口。
 [类 mip：： FileEngine](class_mip_fileengine.md)  |  此类提供适用于所有引擎功能的接口。
-[类 mip：： FileEngine：： Settings](class_mip_fileengine_settings.md)  | 尚未记录。
 [类 mip：： FileExecutionState](class_mip_fileexecutionstate.md)  | 尚未记录。
 [类 mip：： FileHandler](class_mip_filehandler.md)  |  适用于所有文件处理函数的接口。
-[类 mip：： FileHandler：： Observer](class_mip_filehandler_observer.md)  |  观察者接口，使客户端能够获取与文件处理程序相关的通知事件。
 [类 mip：： FileInspector](class_mip_fileinspector.md)  | 尚未记录。
 [类 mip：： FileIOError](class_mip_fileioerror.md)  |  文件 IO 错误。
 [类 mip：： FileProfile](class_mip_fileprofile.md)  |  FileProfile 类是用于使用 Microsoft 信息保护操作的根类。
-[类 mip：： FileProfile：： Observer](class_mip_fileprofile_observer.md)  |  观察者接口，供客户端获取配置文件相关事件的通知。
-[类 mip：： FileProfile：： Settings](class_mip_fileprofile_settings.md)  |  FileProfile 在其创建期间及其整个生存期内使用的设置。
 [类 mip：： HttpDelegate](class_mip_httpdelegate.md)  |  用于重写 HTTP 处理的接口。
 [类 mip：： HttpOperation](class_mip_httpoperation.md)  |  一个接口，该接口描述在重写 HttpDelegate 时由客户端应用程序实现的单个 HTTP 操作。
 [类 mip：： HttpRequest](class_mip_httprequest.md)  |  描述单个 HTTP 请求的接口。
 [类 mip：： Httpresponse.cache](class_mip_httpresponse.md)  |  一个接口，该接口描述在重写 HttpDelegate 时由客户端应用程序实现的单个 HTTP 响应。
 [类 mip：： Identity](class_mip_identity.md)  |  标识的抽象。
+[类 mip：： InsufficientBufferError](class_mip_insufficientbuffererror.md)  |  缓冲区不足错误。
 [类 mip：： InternalError](class_mip_internalerror.md)  |  内部错误。 如果在执行期间出现意外，就会抛出此错误。
 [类 mip：： JustificationRequiredError](class_mip_justificationrequirederror.md)  | 尚未记录。
 [类 mip：： JustifyAction](class_mip_justifyaction.md)  |  调整操作要求对标签进行降级并在执行状态中设置响应。
@@ -92,14 +89,10 @@ MIP SDK for C++ 包括：
 [类 mip：： NotSupportedError](class_mip_notsupportederror.md)  |  SDK 不支持应用程序请求执行的操作。
 [类 mip：： OperationCancelledError](class_mip_operationcancellederror.md)  |  已取消操作。
 [类 mip：:P olicyEngine](class_mip_policyengine.md)  |  此类提供适用于所有引擎功能的接口。
-[类 mip：:P olicyEngine：： Settings](class_mip_policyengine_settings.md)  |  定义与 PolicyEngine 关联的设置。
 [类 mip：:P olicyHandler](class_mip_policyhandler.md)  |  此类为文件上的所有策略处理程序函数提供一个接口。
 [类 mip：:P olicyPackageData](class_mip_policypackagedata.md)  | 尚未记录。
 [类 mip：:P olicyProfile](class_mip_policyprofile.md)  |  PolicyProfile 类是用于使用 Microsoft 信息保护操作的根类。 典型的应用程序只需要一个 PolicyProfile，但可以根据需要创建多个配置文件。
-[类 mip：:P olicyProfile：：观察程序](class_mip_policyprofile_observer.md)  |  观察者接口，供客户端获取配置文件相关事件的通知。
-[类 mip：:P olicyProfile：： Settings](class_mip_policyprofile_settings.md)  |  PolicyProfile 在其创建期间及其整个生存期内使用的设置。
 [类 mip：:P olicyRuleData](class_mip_policyruledata.md)  | 尚未记录。
-[类 mip：:P olicySyncError](class_mip_policysyncerror.md)  |  同步策略数据尝试失败。
 [类 mip：:P rivilegedRequiredError](class_mip_privilegedrequirederror.md)  |  由于当前标签被指定为特权操作（相当于管理员操作），因此无法替代。
 [类 mip：:P ropertyData](class_mip_propertydata.md)  | 尚未记录。
 [类 mip：:P rotectAdhocAction](class_mip_protectadhocaction.md)  |  指定向文档添加临时保护的操作类。
@@ -109,15 +102,8 @@ MIP SDK for C++ 包括：
 [类 mip：:P rotectionDescriptor](class_mip_protectiondescriptor.md)  |  与某段内容相关的保护说明。
 [类 mip：:P rotectionDescriptorBuilder](class_mip_protectiondescriptorbuilder.md)  |  构造描述与一段内容相关联的保护的 ProtectionDescriptor。
 [类 mip：:P rotectionEngine](class_mip_protectionengine.md)  |  管理与特定标识有关的保护相关操作。
-[类 mip：:P rotectionEngine：：观察程序](class_mip_protectionengine_observer.md)  |  接收与 ProtectionEngine 相关的通知的接口。
-[类 mip：:P rotectionEngine：： Settings](class_mip_protectionengine_settings.md)  |  ProtectionEngine 在其创建期间及其整个生存期内使用的设置。
 [类 mip：:P rotectionHandler](class_mip_protectionhandler.md)  |  管理特定保护配置的保护相关操作。
-[类 mip：:P rotectionHandler：： ConsumptionSettings](class_mip_protectionhandler_consumptionsettings.md)  |  用于创建 ProtectionHandler 以使用现有内容的设置。
-[类 mip：:P rotectionHandler：：观察程序](class_mip_protectionhandler_observer.md)  |  接收与 ProtectionHandler 相关的通知的接口。
-[类 mip：:P rotectionHandler：:P ublishingSettings](class_mip_protectionhandler_publishingsettings.md)  |  用于创建 ProtectionHandler 以保护新内容的设置。
 [类 mip：:P rotectionProfile](class_mip_protectionprofile.md)  |  ProtectionProfile 是用于执行保护操作的根类。
-[类 mip：:P rotectionProfile：：观察程序](class_mip_protectionprofile_observer.md)  |  接收与 ProtectionProfile 相关的通知的接口。
-[类 mip：:P rotectionProfile：： Settings](class_mip_protectionprofile_settings.md)  |  ProtectionProfile 在其创建期间及其整个生存期内使用的设置。
 [类 mip：:P rotectionSettings](class_mip_protectionsettings.md)  |  用于为 SetLabel 方法配置保护选项的接口。
 [类 mip：:P roxyAuthenticationError](class_mip_proxyauthenticationerror.md)  |  代理身份验证失败。
 [类 mip：:P ublishingLicenseInfo](class_mip_publishinglicenseinfo.md)  |  保存用于创建保护处理程序的发布许可证的详细信息。
@@ -135,7 +121,11 @@ MIP SDK for C++ 包括：
 [类 mip：： SyncFilePolicyData](class_mip_syncfilepolicydata.md)  | 尚未记录。
 [类 mip：： SyncFileSensitivityData](class_mip_syncfilesensitivitydata.md)  | 尚未记录。
 [类 mip：： TaskDispatcherDelegate](class_mip_taskdispatcherdelegate.md)  |  定义 MIP SDK 任务调度程序接口的类。
+[类 mip：： TemplateDescriptor](class_mip_templatedescriptor.md)  | 尚未记录。
 [类 mip：： TemplateNotFoundError](class_mip_templatenotfounderror.md)  |  RMS 服务无法识别模板 ID。
-[类 mip：： TransientNetworkError](class_mip_transientnetworkerror.md)  |  暂时性网络错误。 对服务终结点执行网络调用时，由于意外行为所致。 此错误是暂时性错误，因此可重试该操作。
-[类 mip：： UserRights](class_mip_userrights.md)  |  一组用户以及与之关联的权限。
+[类 mip：： UserRights](class_mip_userrights.md)  |  一组用户和与之关联的权限。
 [类 mip：： UserRoles](class_mip_userroles.md)  |  一组用户以及与之关联的角色。
+结构 mip：： ApplicationInfo  |  包含应用程序特定信息的结构。
+结构 mip：： TelemetryConfiguration  |  自定义遥测设置（不常用）
+
+

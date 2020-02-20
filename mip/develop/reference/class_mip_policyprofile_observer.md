@@ -1,24 +1,24 @@
 ---
 title: class mip::PolicyProfile::Observer
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p olicyprofile 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: b2b1fd7e2462f9544f7f3d1110d25e2b88a89dc0
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 89411740e807bba1554da175d8c978601a45a7b6
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560891"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77487525"
 ---
 # <a name="class-mippolicyprofileobserver"></a>class mip::PolicyProfile::Observer 
 观察者接口，供客户端获取配置文件相关事件的通知。
 所有错误都继承自 mip：： Error。 客户端不应在调用观察程序的线程上调用回引擎。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public virtual void OnLoadSuccess （const std：： shared_ptr\<PolicyProfile\>& profile，const std：： shared_ptr\<void\>& 上下文）  |  在成功加载配置文件时调用。
 public virtual void OnLoadFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  在加载配置文件引发错误时调用。
@@ -33,7 +33,7 @@ public virtual void OnDeleteEngineSuccess （const std：： shared_ptr\<void\>&
 public virtual void OnDeleteEngineFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  在删除引擎引发错误时调用。
 public virtual void OnPolicyChanged(const std::string& engineId)  |  当具有给定 ID 的引擎的策略发生更改时，或在已加载的自定义敏感性类型发生更改时调用。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="onloadsuccess-function"></a>OnLoadSuccess 函数
 在成功加载配置文件时调用。

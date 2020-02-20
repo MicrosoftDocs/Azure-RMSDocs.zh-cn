@@ -1,23 +1,23 @@
 ---
 title: 类 mip::ProtectionDescriptor
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectiondescriptor 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 34acc6109a5d3dfcbbaec37e81f3215dd30f5018
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 43871eeae67cd55cc85b06f22c5dd6e76fb91f2f
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73557725"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77487032"
 ---
 # <a name="class-mipprotectiondescriptor"></a>类 mip::ProtectionDescriptor 
 与某段内容相关的保护说明。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public ProtectionType GetProtectionType() const  |  获取保护类型，无论是否源自保护 SDK 模板。
 public std::string GetOwner() const  |  获取保护的所有者。
@@ -35,7 +35,7 @@ public std::string GetReferrer() const  |  获取保护引荐来源网址。
 public std：： map\<std：： string，std：： string\> GetEncryptedAppData （） const  |  获取已加密的应用特定数据。
 public std：： map\<std：： string，std：： string\> GetSignedAppData （） const  |  获取已签名的应用特定数据。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="getprotectiontype-function"></a>GetProtectionType 函数
 获取保护类型，无论是否源自保护 SDK 模板。

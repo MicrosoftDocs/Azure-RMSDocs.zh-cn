@@ -1,33 +1,33 @@
 ---
 title: 类 mip：:P olicyRuleData
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p olicyruledata 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 2094f6d2d0a243f73f9c19f08dcc68877ca5d16a
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: db35427c2531edf0653d4f1a05ecbfe8cb93d8d7
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560845"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77486981"
 ---
 # <a name="class-mippolicyruledata"></a>类 mip：:P olicyRuleData 
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std::string& GetName() const  | 尚未记录。
-public const std::string& GetId() const  | 尚未记录。
-public const std：： vector\<std：： unique_ptr\<ActionData\>\>& GetActionsData （） const  | 尚未记录。
-public bool IsCompatibleVersion （） const  | 尚未记录。
-public const std：： map\<std：： string，std：： string\>& GetAttributeData （） const  | 尚未记录。
-public const std：： vector\<std：： map\<std：： string，std：： string\>\>& GetRuleTags （） const  | 尚未记录。
-public const ConditionData * GetConditionData （） const  | 尚未记录。
-public virtual ~ PolicyRuleData （）  | 尚未记录。
+public const std::string& GetName() const  | _尚无记录。_
+public const std::string& GetId() const  | _尚无记录。_
+public const std：： vector\<std：： unique_ptr\<ActionData\>\>& GetActionsData （） const  | _尚无记录。_
+public bool IsCompatibleVersion （） const  | _尚无记录。_
+public const std：： map\<std：： string，std：： string\>& GetAttributeData （） const  | _尚无记录。_
+public const std：： vector\<std：： map\<std：： string，std：： string\>\>& GetRuleTags （） const  | _尚无记录。_
+public const ConditionData * GetConditionData （） const  | _尚无记录。_
+public virtual ~ PolicyRuleData （）  | _尚无记录。_
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="getname-function"></a>GetName 函数
 _尚无记录。_

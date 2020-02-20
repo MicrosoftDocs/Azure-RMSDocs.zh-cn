@@ -1,29 +1,29 @@
 ---
 title: class mip::LoggerDelegate
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： loggerdelegate 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: f1726c53afb7e398f8921e1cb8fc67e3166fffe8
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: c9e4f4db31c12a84f888964694ffa4c88585c884
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73561046"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77487729"
 ---
 # <a name="class-miploggerdelegate"></a>class mip::LoggerDelegate 
 定义 MIP SDK 记录器接口的类。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public void Init(const std::string& storagePath)  |  初始化记录器。
 public void Flush()  |  刷新记录器。
 public void WriteToLog(const LogLevel level, const std::string& message, const std::string& function, const std::string& file, const int32_t line)  |  将日志语句写入日志文件。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="init-function"></a>Init 函数
 初始化记录器。

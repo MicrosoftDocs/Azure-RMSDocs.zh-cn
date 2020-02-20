@@ -1,19 +1,19 @@
 ---
 title: 类
-description: 功能
+description: 函数
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.date: 01/28/2019
 ms.author: mbaldwin
-ms.openlocfilehash: fb6c857d06da7a68d01d095db556216fee990dc6
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: 6fd93191ef95e4a019b59ca0f318db366b5e5874
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75555970"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489242"
 ---
-# <a name="functions"></a>功能
+# <a name="functions"></a>函数
 
 
 
@@ -30,6 +30,8 @@ public const std：： string & GetCustomSettingSensitivityTypesDataName （） 
 public const std::string& GetCustomSettingPolicyDataFile()       |  用于明确指定策略数据文件路径的设置的名称。
 public const std：： string & GetCustomSettingSensitivityTypesDataFile （）       |  用于显式指定敏感度类型数据文件路径的设置的名称。
 public const std：： string & GetCustomSettingLabelCustomPropertiesSyncEnabled （）       |  允许按照标签功能按自定义属性和自定义属性启用标签的设置的名称。
+public const std：： string & GetCustomSettingPolicyTtlDays （）       |  默认情况下，启用重写策略 ttl 的设置名称为30天。 应将值设置为字符串整数，i < 0 表示无限生存时间。
+public const std：： string & GetCustomSettingSensitivityPolicyTtlDays （）       |  启用重写敏感度策略 ttl 的设置的名称，默认值为30天。 应将值设置为字符串整数，i < 0 表示无限生存时间。
 public const std：： map\<FlightingFeature，bool\>& GetDefaultFeatureSettings （）       |  获取默认情况下是否启用功能。
 public MIP_API std：： shared_ptr\<MIP：： Stream\> CreateStreamFromStdStream （const std：： shared_ptr\<std：： istream\>& stdIStream）       |  从 std：： istream 创建流。
 public MIP_API std：： shared_ptr\<MIP：： Stream\> CreateStreamFromStdStream （const std：： shared_ptr\<std：： ostream\>& stdOStream）       |  从 std：： ostream 创建流。
@@ -46,8 +48,6 @@ public ActionType operator ^ （ActionType a，ActionType b）       |  操作�
 * **方法**：赋值方法。 
 
 
-
-  
 **返回**：分配方法的字符串说明。
   
 ### <a name="getactionsourcestring-function"></a>GetActionSourceString 函数
@@ -56,9 +56,6 @@ public ActionType operator ^ （ActionType a，ActionType b）       |  操作�
 参数：  
 * **actionSource**：操作源。 
 
-
-
-  
 **返回**：操作源的字符串表示形式。
   
 ### <a name="getdatastatestring-function"></a>GetDataStateString 函数
@@ -104,6 +101,18 @@ public ActionType operator ^ （ActionType a，ActionType b）       |  操作�
   
 ### <a name="getcustomsettinglabelcustompropertiessyncenabled-function"></a>GetCustomSettingLabelCustomPropertiesSyncEnabled 函数
 允许按照标签功能按自定义属性和自定义属性启用标签的设置的名称。
+
+  
+**返回结果**：自定义设置键。
+  
+### <a name="getcustomsettingpolicyttldays-function"></a>GetCustomSettingPolicyTtlDays 函数
+默认情况下，启用重写策略 ttl 的设置名称为30天。 应将值设置为字符串整数，i < 0 表示无限生存时间。
+
+  
+**返回结果**：自定义设置键。
+  
+### <a name="getcustomsettingsensitivitypolicyttldays-function"></a>GetCustomSettingSensitivityPolicyTtlDays 函数
+启用重写敏感度策略 ttl 的设置的名称，默认值为30天。 应将值设置为字符串整数，i < 0 表示无限生存时间。
 
   
 **返回结果**：自定义设置键。
@@ -180,12 +189,12 @@ public ActionType operator ^ （ActionType a，ActionType b）       |  操作�
 
 ## <a name="namespace-mipauditmetadatakeys"></a>命名空间 mip：： auditmetadatakeys
 
- 成員                        | 说明                                
+Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public std：： string Sender （）       |  审核字符串表示形式的元数据密钥。
-public std：： string 接收者（）       | 尚未记录。
-public std：： string LastModifiedBy （）       | 尚未记录。
-public std：： string LastModifiedDate （）       | 尚未记录。
+public std：： string 接收者（）       | _尚无记录。_
+public std：： string LastModifiedBy （）       | _尚无记录。_
+public std：： string LastModifiedDate （）       | _尚无记录。_
   
 ### <a name="sender-function"></a>Sender 函数
 审核字符串表示形式的元数据密钥。
@@ -204,7 +213,7 @@ _尚无记录。_
 
 ## <a name="namespace-miprights"></a>命名空间 `mip::rights` 
   
- 成員                        | 说明                                
+Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public std::string Owner()       |  获取“所有者”权限的字符串标识符。
 public std::string View()       |  获取“查看”权限的字符串标识符。
@@ -221,7 +230,6 @@ public std：： vector\<std：： string\> EmailRights （）       |  获取�
 public std：： vector\<std：： string\> EditableDocumentRights （）       |  获取适用于文档的权限列表。
 public std：： vector\<std：： string\> CommonRights （）       |  获取适用于所有方案的权限列表。
   
-
 ### <a name="owner-function"></a>所有者函数
 获取“所有者”权限的字符串标识符。
 
@@ -306,9 +314,9 @@ public std：： vector\<std：： string\> CommonRights （）       |  获取�
   
 **返回结果**：适用于所有方案的权限列表
 
-## <a name="namespace-miproles"></a>命名空间 mip：： roles
+## <a name="namespace-miproles"></a>命名空间 `mip::roles` 
   
- 成員                        | 说明                                
+Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public std::string Viewer()       |  获取“查看者”角色的字符串标识符。
 public std::string Reviewer()       |  获取“审阅者”角色的字符串标识符。
@@ -338,4 +346,3 @@ public std::string CoOwner()       |  获取“共有者”角色的字符串标
 
   
 **返回结果**：“共有者”角色的字符串标识符。共有者拥有全部权限
-

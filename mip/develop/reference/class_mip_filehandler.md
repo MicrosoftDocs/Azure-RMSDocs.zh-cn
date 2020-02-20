@@ -1,23 +1,23 @@
 ---
 title: class mip::FileHandler
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： filehandler 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: b2a6e3cd6de886c3e3983442a1ec7185b688b662
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 52c28c1763fc3e7513f98a23a18cb6c91e0ed508
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73558838"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77488732"
 ---
 # <a name="class-mipfilehandler"></a>class mip::FileHandler 
 适用于所有文件处理函数的接口。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public std：： shared_ptr\<ContentLabel\> GetLabel （）  |  开始从文件检索敏感度标签。
 public std：： shared_ptr\<ProtectionHandler\> GetProtection （）  |  开始从文件检索保护策略。
@@ -31,14 +31,12 @@ public void RemoveProtection()  |  删除文件保护。 如果文件已添加�
 public void CommitAsync （const std：： string & outputFilePath，const std：： shared_ptr\<void\>& 上下文） | 将所做的更改写入到 \|outputFilePath\ 参数指定的文件 |  参数指定的网络接口启用 iSCSI 访问。
 公共 void CommitAsync （const std：： shared_ptr\<Stream\>& outputStream，const std：： shared_ptr\<void\>& 上下文） | 将所做的更改写入到 \|outputStream\ 参数指定的流。 |  参数指定的网络接口启用 iSCSI 访问。
 public bool IsModified （）  |  检查是否有要提交到文件的更改。
-public void GetDecryptedTemporaryFileAsync(const std::shared_ptr\<void\>& context)  |  返回一个指向临时文件的路径（如果可能，将删除该文件），表示已解密的内容。
+public void GetDecryptedTemporaryFileAsync （const std：： shared_ptr\<void\>& 上下文）  |  返回一个指向临时文件的路径（如果可能，将删除该文件），表示已解密的内容。
 public void GetDecryptedTemporaryStreamAsync （const std：： shared_ptr\<void\>& 上下文）  |  返回表示已解密内容的流。
 public void NotifyCommitSuccessful （const std：： string & actualFilePath）  |  在将更改提交到磁盘后调用。
 public std::string GetOutputFileName()  |  基于原始文件名和累积的更改，计算输出文件名称和扩展名。
-public static bool IsProtected （const std：： string & filePath，const std：： shared_ptr<MipContext>& mipContext） | 检查文件是否受保护。
-public static FILE_API std：： vector&lt;uint8_t&gt; __CDECL mip：： FileHandler：： GetSerializedPublishingLicense | 如果文件存在，则返回发布许可证。
-
-## <a name="members"></a>成員
+  
+## <a name="members"></a>Members
   
 ### <a name="getlabel-function"></a>GetLabel 函数
 开始从文件检索敏感度标签。
@@ -109,9 +107,3 @@ FileHandler：：在成功或失败时将调用观察程序。
   
 ### <a name="getoutputfilename-function"></a>GetOutputFileName 函数
 基于原始文件名和累积的更改，计算输出文件名称和扩展名。
-
-### <a name="isprotected-function"></a>IsProtected 函数
-检查文件是否受保护。
-
-### <a name="getserializedpublishinglicense-function"></a>GetSerializedPublishingLicense 函数
-如果文件存在，则返回发布许可证。

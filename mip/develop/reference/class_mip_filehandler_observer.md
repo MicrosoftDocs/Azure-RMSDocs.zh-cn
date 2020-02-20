@@ -1,24 +1,24 @@
 ---
 title: class mip::FileHandler::Observer
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： filehandler 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: d1c1a66ce3821bf3d552ee0daa0648940b645fcb
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 86043ab5fdcc22884ce3c483d43947d46e51ac9c
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560264"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77490007"
 ---
 # <a name="class-mipfilehandlerobserver"></a>class mip::FileHandler::Observer 
 观察者接口，使客户端能够获取与文件处理程序相关的通知事件。
 所有错误都继承自 mip：： Error。 客户端不应在调用观察程序的线程上调用回引擎。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public virtual void OnCreateFileHandlerSuccess （const std：： shared_ptr\<FileHandler\>& fileHandler，const std：： shared_ptr\<void\>& 上下文）  |  在成功创建处理程序时调用。
 public virtual void OnCreateFileHandlerFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  创建处理程序失败时调用。
@@ -33,7 +33,7 @@ public virtual void OnCommitFailure （const std：： exception_ptr & 错误，
 public virtual void OnInspectSuccess （const std：： shared_ptr\<FileInspector\>& fileInspector，const std：： shared_ptr\<void\>& 上下文）  |  检查成功时调用。
 public virtual void OnInspectFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  当检查失败时调用。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="oncreatefilehandlersuccess-function"></a>OnCreateFileHandlerSuccess 函数
 在成功创建处理程序时调用。

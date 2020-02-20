@@ -1,46 +1,48 @@
 ---
 title: 类 mip：： LabelGroupData
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： labelgroupdata 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: e67c2122314d33a6b49f6696f1f13d6f0bbde920
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: a780ac706b547049a6b1de9adce237b405fea711
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73558696"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489939"
 ---
 # <a name="class-miplabelgroupdata"></a>类 mip：： LabelGroupData 
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std::string& GetLabelId() const  | 尚未记录。
-public const std：： vector\<std：： unique_ptr\<LabelGroupData\>\>& GetLabelGroupData （） const  | 尚未记录。
-public int GetOrder （） const  | 尚未记录。
-public const std：:p 空中\<std：： string，std：： string\>& GetColor （） const  | 尚未记录。
-public const std：:p 空中\<std：： string，std：： string\>& GetName （） const  | 尚未记录。
-public const std：:p 空中\<std：： string，std：： string\>& GetDescription （） const  | 尚未记录。
-public const std::string& GetTemplateId() const  | 尚未记录。
-public const std：： string & GetInvariantName （） const  | 尚未记录。
-public const std：:p 空中\<std：： string，std：： string\>& GetTooltip （） const  | 尚未记录。
-public const std：:p 空中\<std：： string，std：： string\>& GetAutoTooltip （） const  | 尚未记录。
-public bool IsEnabled （） const  | 尚未记录。
-public bool IsDowngradeJustificationRequired （） const  | 尚未记录。
-public const std：： string & GetDefaultLabelId （） const  | 尚未记录。
-public const std：:p 空中\<std：： string，std：： string\>& GetMoreInfoUrl （） const  | 尚未记录。
-public bool IsMandatory （） const  | 尚未记录。
-public const std：： vector\<ProtectionActionType\>& GetProtectionActionTypes （） const  | 尚未记录。
-public bool IsAuditEnabled （） const  | 尚未记录。
-public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetCustomSettings （） const  | 尚未记录。
-public const std：： vector\<std：： string\>& GetLabelByCustomProperties （） const  | 尚未记录。
-public const std：： vector\<std：： string\>& GetCustomPropertiesByLabel （） const  | 尚未记录。
-public virtual ~ LabelGroupData （）  | 尚未记录。
+public const std::string& GetLabelId() const  | _尚无记录。_
+public const std：： vector\<std：： unique_ptr\<LabelGroupData\>\>& GetLabelGroupData （） const  | _尚无记录。_
+public int GetOrder （） const  | _尚无记录。_
+public const std：:p 空中\<std：： string，std：： string\>& GetColor （） const  | _尚无记录。_
+public const std：:p 空中\<std：： string，std：： string\>& GetName （） const  | _尚无记录。_
+public const std：:p 空中\<std：： string，std：： string\>& GetDescription （） const  | _尚无记录。_
+public const std::string& GetTemplateId() const  | _尚无记录。_
+public const std：： string & GetInvariantName （） const  | _尚无记录。_
+public const std：:p 空中\<std：： string，std：： string\>& GetTooltip （） const  | _尚无记录。_
+public const std：:p 空中\<std：： string，std：： string\>& GetAutoTooltip （） const  | _尚无记录。_
+public bool IsEnabled （） const  | _尚无记录。_
+public bool IsDowngradeJustificationRequired （） const  | _尚无记录。_
+public const std：： string & GetDefaultLabelId （） const  | _尚无记录。_
+public const std：:p 空中\<std：： string，std：： string\>& GetMoreInfoUrl （） const  | _尚无记录。_
+public bool IsMandatory （） const  | _尚无记录。_
+public const std：： vector\<std：： shared_ptr\<ProtectionActionData\>\>& GetProtectionActionData （） const  | _尚无记录。_
+public bool IsAuditEnabled （） const  | _尚无记录。_
+public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetCustomSettings （） const  | _尚无记录。_
+public const std：： vector\<std：： string\>& GetLabelByCustomProperties （） const  | _尚无记录。_
+public const std：： vector\<std：： string\>& GetCustomPropertiesByLabel （） const  | _尚无记录。_
+公共 std：： vector\<std：:p 空中\<std：： string，std：： string\>\> GetParsedCustomPropertiesByLabel （） const  | _尚无记录。_
+公共 std：： vector\<std：：元组\<std：： string，std：： string，std：： string\>\> GetLabelByCustomPropertiesSettings （） const  | _尚无记录。_
+public virtual ~ LabelGroupData （）  | _尚无记录。_
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="getlabelid-function"></a>GetLabelId 函数
 _尚无记录。_
@@ -102,7 +104,7 @@ _尚无记录。_
 _尚无记录。_
 
   
-### <a name="getprotectionactiontypes-function"></a>GetProtectionActionTypes 函数
+### <a name="getprotectionactiondata-function"></a>GetProtectionActionData 函数
 _尚无记录。_
 
   
@@ -119,6 +121,14 @@ _尚无记录。_
 
   
 ### <a name="getcustompropertiesbylabel-function"></a>GetCustomPropertiesByLabel 函数
+_尚无记录。_
+
+  
+### <a name="getparsedcustompropertiesbylabel-function"></a>GetParsedCustomPropertiesByLabel 函数
+_尚无记录。_
+
+  
+### <a name="getlabelbycustompropertiessettings-function"></a>GetLabelByCustomPropertiesSettings 函数
 _尚无记录。_
 
   

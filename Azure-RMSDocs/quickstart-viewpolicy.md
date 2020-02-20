@@ -1,21 +1,21 @@
 ---
 title: 快速入门 - 在 Azure 门户中查看 Azure 信息保护 - AIP
 description: 如果你的组织刚刚开始使用 Azure 信息保护，请从此处开始将服务添加到 Azure 门户，确认已激活保护服务并发布标签和策略设置。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 12/04/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: d1734b5102b1305077ce3b84fb95521daeb69c23
-ms.sourcegitcommit: d062ddf89fcb46e489f32f0d9f7aff73c3357a9b
+ms.openlocfilehash: c3c38ea55406b85dabda3e94101d268a9505c085
+ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882082"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77423089"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
@@ -147,6 +147,6 @@ Azure 门户中不会自动包含 Azure 信息保护。 必须添加它。
 
 如果使用的是统一标签客户端：
 
-- 请参阅 Office 文档中的[敏感度标签概述](/microsoft-365/compliance/sensitivity-labels)。
+- 请参阅 Microsoft 365 符合性文档中的[了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)。
 
 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。

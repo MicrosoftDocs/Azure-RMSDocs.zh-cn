@@ -1,26 +1,26 @@
 ---
 title: class mip::FileProfile::Observer
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： fileprofile 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: fbe8b2edd8e9ee8d013134e66c39db8fbbee4dd4
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: ce5b4bcdf343733bbb111ec1904b8f8949a7afbe
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560206"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77488120"
 ---
 # <a name="class-mipfileprofileobserver"></a>class mip::FileProfile::Observer 
 观察者接口，供客户端获取配置文件相关事件的通知。
 所有错误都继承自 mip：： Error。 客户端不应在调用观察程序的线程上调用回引擎。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
-public virtual ~Observer()  | 尚未记录。
+public virtual ~Observer()  | _尚无记录。_
 公共虚拟 void OnLoadSuccess （const std：： shared_ptr\<mip：： FileProfile\>& profile，const std：： shared_ptr\<void\>& 上下文）  |  在成功加载配置文件时调用。
 public virtual void OnLoadFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  在加载配置文件引发错误时调用。
 public virtual void OnListEnginesSuccess （const std：： vector\<std：： string\>& engineIds，const std：： shared_ptr\<void\>& 上下文）  |  在成功生成引擎列表时调用。
@@ -33,9 +33,9 @@ public virtual void OnDeleteEngineSuccess （const std：： shared_ptr\<void\>&
 public virtual void OnDeleteEngineFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  在删除引擎引发错误时调用。
 public virtual void OnPolicyChanged(const std::string& engineId)  |  在针对具有给定 ID 的引擎的策略发生更改时调用。
 public virtual void OnAddPolicyEngineStarting （bool requiresPolicyFetch）  |  在创建引擎之前调用，用于描述是否必须从服务器获取策略引擎的策略数据，或者是否可从本地缓存的数据创建策略引擎。
-受保护的 Observer()  | 尚未记录。
+受保护的 Observer()  | _尚无记录。_
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="observer-function"></a>~ 观察程序函数
 _尚无记录。_

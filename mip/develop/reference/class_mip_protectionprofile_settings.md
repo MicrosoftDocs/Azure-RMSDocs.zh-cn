@@ -1,23 +1,23 @@
 ---
 title: class mip::ProtectionProfile::Settings
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionprofile 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: e39260036f1e4f4413b008e75cbbd761aea7d751
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 0622f4db00c2f4baca7845aa0ca061bf2ccf294b
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560082"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489599"
 ---
 # <a name="class-mipprotectionprofilesettings"></a>class mip::ProtectionProfile::Settings 
 ProtectionProfile 在其创建期间及其整个生存期内使用的设置。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 公共设置（const std：： shared_ptr\<MipContext\>& mipContext，CacheStorageType cacheStorageType，const std：： shared_ptr\<AuthDelegate\>& authDelegate，const std：： shared_ptr\<ConsentDelegate\>& consentDelegate，const std：： shared_ptr\<ProtectionProfile：： Observer\>& 观察程序）  |  ProtectionProfile：： Settings 构造函数，它指定要用于异步操作的观察程序。
 公共设置（const std：： shared_ptr\<MipContext\>& mipContext，CacheStorageType cacheStorageType，const std：： shared_ptr\<AuthDelegate\>& authDelegate，const std：： shared_ptr\<ConsentDelegate\>& consentDelegate）  |  ProtectionProfile：： Settings 构造函数，用于同步操作。
@@ -37,7 +37,7 @@ public bool CanCacheLicenses （） const  |  获取是否在本地缓存最终�
 public void SetCustomSettings （const std：： vector\<std：:p air\<std：： string，std：： string\>\>& customSettings）  |  设置自定义设置，用于功能访问控制和测试。
 public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetCustomSettings （） const  |  获取用于功能访问控制和测试的自定义设置。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="settings-function"></a>Settings 函数
 ProtectionProfile：： Settings 构造函数，它指定要用于异步操作的观察程序。

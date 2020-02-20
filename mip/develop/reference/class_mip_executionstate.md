@@ -1,24 +1,24 @@
 ---
 title: class mip::ExecutionState
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： executionstate& 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 0087255c3028ed28f6b4729445d6c224344f0dde
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: e0bf26124a7181dd8e6477a303868b51d6275c6e
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73558883"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77490075"
 ---
 # <a name="class-mipexecutionstate"></a>class mip::ExecutionState 
 执行引擎所需的所有状态的接口。
 客户端应只调用方法来获取所需的状态。 因此，为了提高效率，客户端可能想要实现该接口，以此动态计算相应的状态而不是提前计算。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public std：： shared_ptr\<Label\> GetNewLabel （） const  |  获取应在文档上应用的敏感度标签 ID。
 public std::string GetContentIdentifier() const  |  获取描述文档的内容说明。 文件示例： [path\filename] 电子邮件示例： [Subject： Sender]。
@@ -33,7 +33,7 @@ public ActionType GetSupportedActions() const  |  获取描述所有受支持操
 public virtual std：： shared_ptr\<ClassificationResults\> GetClassificationResults （const std：： vector\<std：： shared_ptr\<ClassificationRequest\>\> &） const  |  返回分类结果的映射。
 公共虚拟 std：： map\<std：： string，std：： string\> GetAuditMetadata （） const  |  返回应用程序特定的审核键值对的映射。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="getnewlabel-function"></a>GetNewLabel 函数
 获取应在文档上应用的敏感度标签 ID。

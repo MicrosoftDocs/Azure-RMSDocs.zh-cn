@@ -1,25 +1,26 @@
 ---
 title: 类 mip：:P rotectionHandler：： ConsumptionSettings
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionhandler 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 63a7f3c377a40a5faf82afe332a12efed0d646c4
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 0f505d919f36819ce77285c77d6eebf7156d481c
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560727"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77486777"
 ---
 # <a name="class-mipprotectionhandlerconsumptionsettings"></a>类 mip：:P rotectionHandler：： ConsumptionSettings 
 用于创建 ProtectionHandler 以使用现有内容的设置。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public ConsumptionSettings （const std：： vector\<uint8_t\>& serializedPublishingLicense）  |  用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
+public ConsumptionSettings （const std：： vector\<uint8_t\>& serializedPreLicense，const std：： vector\<uint8_t\>& serializedPublishingLicense）  |  用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
 public ConsumptionSettings （const std：： shared_ptr\<PublishingLicenseInfo\>& licenseInfo）  |  用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
 public std：： shared_ptr\<PublishingLicenseInfo\> GetPublishingLicenseInfo （） const  |  获取与受保护内容相关联的发布许可证。
 public bool GetIsOfflineOnly （） const  |  获取 ProtectionHandler 创建是否允许联机 HTTP 操作。
@@ -27,12 +28,23 @@ public void SetIsOfflineOnly （bool isOfflineOnly）  |  设置 ProtectionHandl
 public void SetDelegatedUserEmail （const std：： string & delegatedUserEmail）  |  设置委派的用户。
 public const std：： string & GetDelegatedUserEmail （） const  |  获取委托的用户。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="consumptionsettings-function"></a>ConsumptionSettings 函数
 用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
 
 参数：  
+* **serializedPublishingLicense**：从受保护内容序列化发布许可证
+
+
+  
+### <a name="consumptionsettings-function"></a>ConsumptionSettings 函数
+用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
+
+参数：  
+* **serializedPreLicense**：从附加到内容的序列化前许可证。 
+
+
 * **serializedPublishingLicense**：从受保护内容序列化发布许可证
 
 

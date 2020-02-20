@@ -1,20 +1,20 @@
 ---
-title: class mip::Action
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： action 类。
+title: 类 mip：： InsufficientBufferError
+description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： insufficientbuffererror 类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
 ms.date: 02/14/2020
-ms.openlocfilehash: 0f95ec9d4b89a8efdc118d584f7f73ec2128ef8a
+ms.openlocfilehash: 29a7f99b14c3da104fec64149b49dfd781353e75
 ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489157"
+ms.locfileid: "77492692"
 ---
-# <a name="class-mipaction"></a>class mip::Action 
-操作的接口。 每个操作都转换为，出于应用标签目的，应用程序需要执行的步骤（如策略所定义）
+# <a name="class-mipinsufficientbuffererror"></a>类 mip：： InsufficientBufferError 
+缓冲区不足错误。
   
 ## <a name="summary"></a>摘要
  Members                        | 说明                                

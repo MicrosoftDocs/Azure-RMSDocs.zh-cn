@@ -1,23 +1,23 @@
 ---
 title: class mip::PolicyEngine
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p olicyengine 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: a1938601e036f7fb4d84a9a5815016dbda4509b7
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 114b8dedb46a0e86eb73ff1f6fa58de81927b60e
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73558508"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489820"
 ---
 # <a name="class-mippolicyengine"></a>class mip::PolicyEngine 
 此类提供适用于所有引擎功能的接口。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public const Settings& GetSettings() const  |  获取策略引擎设置。
 public const std：： vector\<std：： shared_ptr\<标签\>\>& ListSensitivityLabels （）  |  列出与策略引擎关联的敏感度标签。
@@ -36,7 +36,7 @@ public const std：： string & GetSensitivityFileId （） const  |  获取敏�
 public bool HasClassificationRules （） const  |  获取策略是否具有自动或建议规则。
 public std：： chrono：： time_point\<std：： chrono：： system_clock\> GetLastPolicyFetchTime （） const  |  获取上次提取策略的时间。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="getsettings-function"></a>GetSettings 函数
 获取策略引擎设置。

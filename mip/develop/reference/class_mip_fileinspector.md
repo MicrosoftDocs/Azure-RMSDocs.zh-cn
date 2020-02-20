@@ -1,36 +1,23 @@
 ---
 title: 类 mip：： FileInspector
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： fileinspector 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 8ae396cc529cbeb17afa8ad0c4617e4bfcfbed3a
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: c9fb9f6e6ea27a698f53a8e81de55606eb01ba42
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73558822"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77488715"
 ---
 # <a name="class-mipfileinspector"></a>类 mip：： FileInspector 
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
-public InspectorType GetInspectorType （） const  |  获取文件类型，。
-public std：： shared_ptr\<Stream\> GetFileStream （） const  |  获取文件流。
   
-## <a name="members"></a>成員
-  
-### <a name="getinspectortype-function"></a>GetInspectorType 函数
-获取文件类型，。
-
-  
-**返回**： InspectorType。
-  
-### <a name="getfilestream-function"></a>GetFileStream 函数
-获取文件流。
-
-  
-**返回**：文件流的共享指针。
+## <a name="members"></a>Members
+_尚无记录。_

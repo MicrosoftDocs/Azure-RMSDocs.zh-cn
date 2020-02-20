@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: c684bc08faaab4317df0588ccc9350199c62049d
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: 4f816190cd240fb4dee90c67167de791b3a46d52
+ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75743677"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77423232"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-and-create-a-new-label"></a>教程：配置 Azure 信息保护策略设置并创建新标签
 
@@ -49,7 +49,7 @@ ms.locfileid: "75743677"
 
 3. Azure 信息保护客户端（经典）安装在 Windows 计算机上（最低版本为 Windows 7 Service Pack 1）。 
     
-    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。 如果对经典客户端使用了不同的标签客户端，请参阅 [Office 文档](/microsoft-365/compliance/sensitivity-labels)，以了解本教程的等效说明。
+    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。 如果对经典客户端使用了不同的标签客户端，请参阅 [Microsoft 365 符合性文档](/microsoft-365/compliance/sensitivity-labels)，了解本教程的等效说明。
 
 4. 你已从下列类别之一登录到 Office 应用：
     

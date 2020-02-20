@@ -1,23 +1,23 @@
 ---
 title: 类 mip::ProtectionHandler
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionhandler 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 6b5468986d62c01d2d3f0b55a57946d5fa06bab3
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 4b245ea2a579aa3d9a0fddfb503830d75577c2b7
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560113"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489650"
 ---
 # <a name="class-mipprotectionhandler"></a>类 mip::ProtectionHandler 
 管理特定保护配置的保护相关操作。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public std：： shared_ptr\<Stream\> CreateProtectedStream （const std：： shared_ptr\<流\>& backingStream，int64_t contentStartPosition，int64_t contentSize）  |  创建允许加密/解密内容的受保护流。
 public int64_t EncryptBuffer(int64_t offsetFromStart, const uint8_t* inputBuffer, int64_t inputBufferSize, uint8_t* outputBuffer, int64_t outputBufferSize, bool isFinal)  |  加密缓冲区。
@@ -35,7 +35,7 @@ public bool DoesUseDeprecatedAlgorithms()  |  获取保护处理程序是否使�
 public bool IsAuditedExtractAllowed()  |  获取保护处理程序是否向用户授予“已审核的提取”权限的指示。
 public const std：： vector\<uint8_t\> GetSerializedPublishingLicense （）  |  将 ProtectionHandler 序列化为发布许可证（PL）
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="createprotectedstream-function"></a>CreateProtectedStream 函数
 创建允许加密/解密内容的受保护流。

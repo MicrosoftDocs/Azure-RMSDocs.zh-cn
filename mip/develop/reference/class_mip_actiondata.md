@@ -1,51 +1,26 @@
 ---
 title: 类 mip：： ActionData
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： actiondata 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: d0bd4fc28eaee1544a2c7334e8fcc8f06151b9b6
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: bb74866f0a4d7396265869b2039594a7dd22ee13
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73559070"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489191"
 ---
 # <a name="class-mipactiondata"></a>类 mip：： ActionData 
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
-public ActionDataType GetType （） const  | 尚未记录。
-public const std：： map\<std：： string，std：： string\>& GetProperties （） const  | 尚未记录。
-public std：： string GetArgumentValue （const std：： string & key） const  | 尚未记录。
-public const std::string& GetName() const  | 尚未记录。
-公共 std：： vector\<std：:p 空中\<std：： string，std：： string\>\> GetArguments （） const  | 尚未记录。
-public virtual ~ ActionData （）  | 尚未记录。
+public virtual ~ ActionData （）  | _尚无记录。_
   
-## <a name="members"></a>成員
-  
-### <a name="gettype-function"></a>GetType 函数
-_尚无记录。_
-
-  
-### <a name="getproperties-function"></a>GetProperties 函数
-_尚无记录。_
-
-  
-### <a name="getargumentvalue-function"></a>GetArgumentValue 函数
-_尚无记录。_
-
-  
-### <a name="getname-function"></a>GetName 函数
-_尚无记录。_
-
-  
-### <a name="getarguments-function"></a>GetArguments 函数
-_尚无记录。_
-
+## <a name="members"></a>Members
   
 ### <a name="actiondata-function"></a>~ ActionData 函数
 _尚无记录。_

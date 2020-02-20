@@ -1,29 +1,29 @@
 ---
 title: 类 mip：： RulePackageData
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： rulepackagedata 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 5cc04f5082ca0ac6e3cd9153834064794b9eaf12
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: ace2e5c8eb1b5d72c8d9410ba9b5e7fd3f008049
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560572"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489463"
 ---
 # <a name="class-miprulepackagedata"></a>类 mip：： RulePackageData 
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
-public const PolicyRuleData * GetRuleData （） const  | 尚未记录。
-public const std：:p 空中\<std：： string，std：： string\>& GetLabelToTemplateId （） const  | 尚未记录。
-public const std：:p 空中\<std：： string，ProtectionActionType\>& GetLabelToProtectionType （） const  | 尚未记录。
-public virtual ~ RulePackageData （）  | 尚未记录。
+public const PolicyRuleData * GetRuleData （） const  | _尚无记录。_
+public const std：:p 空中\<std：： string，std：： string\>& GetLabelToTemplateId （） const  | _尚无记录。_
+public const std：:p 空中\<std：： string、std：： shared_ptr\<ProtectionActionData\>\>& GetLabelToProtectionType （） const  | _尚无记录。_
+public virtual ~ RulePackageData （）  | _尚无记录。_
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="getruledata-function"></a>GetRuleData 函数
 _尚无记录。_

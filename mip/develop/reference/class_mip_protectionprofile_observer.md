@@ -1,24 +1,24 @@
 ---
 title: class mip::ProtectionProfile::Observer
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionprofile 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: a9138e497655dfa939a9ac9b15d7ed228331e9e0
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: a88819b27a0453c3264360021b21354fa18f9d07
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560703"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489582"
 ---
 # <a name="class-mipprotectionprofileobserver"></a>class mip::ProtectionProfile::Observer 
 接收与 ProtectionProfile 相关的通知的接口。
 此接口必须通过应用程序使用保护 SDK 来实现
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public virtual void OnLoadSuccess （const std：： shared_ptr\<ProtectionProfile\>& profile，const std：： shared_ptr\<void\>& 上下文）  |  在成功加载配置文件时调用。
 public virtual void OnLoadFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  在加载配置文件引发错误时调用。
@@ -29,7 +29,7 @@ public virtual void OnAddEngineFailure （const std：： exception_ptr & 错误
 public virtual void OnDeleteEngineSuccess （const std：： shared_ptr\<void\>& 上下文）  |  在成功删除引擎时调用。
 public virtual void OnDeleteEngineFailure （const std：： exception_ptr & 错误，const std：： shared_ptr\<void\>& 上下文）  |  在删除引擎出错时调用。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="onloadsuccess-function"></a>OnLoadSuccess 函数
 在成功加载配置文件时调用。

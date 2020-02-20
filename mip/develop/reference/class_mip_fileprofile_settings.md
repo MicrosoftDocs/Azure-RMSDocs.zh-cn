@@ -1,23 +1,23 @@
 ---
 title: class mip::FileProfile::Settings
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： fileprofile 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 21bbda3424f5c436324ce97137082200ee8d9837
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 4987919875c297ace2246e77eadab279238cc205
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73561105"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77490024"
 ---
 # <a name="class-mipfileprofilesettings"></a>class mip::FileProfile::Settings 
 FileProfile 在其创建期间及其整个生存期内使用的设置。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 公共设置（const std：： shared_ptr\<MipContext\>& mipContext，CacheStorageType cacheStorageType，std：： shared_ptr\<AuthDelegate\> authDelegate，std：： shared_ptr\<ConsentDelegate\> consentDelegate，std：： shared_ptr\<观察程序\> 观察程序）  |  FileProfile：： Settings 构造函数。
 public CacheStorageType GetCacheStorageType （） const  |  获取缓存是存储在内存中还是存储在磁盘上。
@@ -34,7 +34,7 @@ public const std::string& GetSessionId() const  |  获取会话 ID。
 public void SetCanCacheLicenses （bool canCacheLicenses）  |  配置是否将以本地方式缓存最终用户许可证（Eul）。
 public bool CanCacheLicenses （） const  |  获取是否在本地缓存最终用户许可证（Eul）。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="settings-function"></a>Settings 函数
 FileProfile：： Settings 构造函数。

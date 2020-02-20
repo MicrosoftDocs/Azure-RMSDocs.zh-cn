@@ -1,29 +1,29 @@
 ---
 title: 类 mip::PolicyHandler
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p olicyhandler 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 71b1a9dff879cde728e7fa1aa9e1f871d292ec4c
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 9f270a628a6320b005145aab8cd0611acc907d68
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560924"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489786"
 ---
 # <a name="class-mippolicyhandler"></a>类 mip::PolicyHandler 
 此类为文件上的所有策略处理程序函数提供一个接口。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public std：： shared_ptr\<ContentLabel\> GetSensitivityLabel （const Executionstate& & 状态）  |  从现有内容获取敏感度标签。
 public std：： vector\<std：： shared_ptr\<操作\>\> ComputeActions （const Executionstate& & 状态）  |  根据所提供的状态执行处理程序中的规则，并返回要执行的操作列表。
 public void NotifyCommittedActions(const ExecutionState& state)  |  在应用计算操作并将数据提交到磁盘后调用。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="getsensitivitylabel-function"></a>GetSensitivityLabel 函数
 从现有内容获取敏感度标签。

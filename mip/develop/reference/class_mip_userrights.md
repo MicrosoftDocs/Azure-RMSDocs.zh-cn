@@ -1,29 +1,29 @@
 ---
 title: class mip::UserRights
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： userrights 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 1df26089f37b1e89be8749aa1bc862f0d3a729ba
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: f44ff30c890a5a8ab3dbce2426a6c1898df1f0e5
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73558396"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489293"
 ---
 # <a name="class-mipuserrights"></a>class mip::UserRights 
-一组用户以及与之关联的权限。
+一组用户和与之关联的权限。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public UserRights （const std：： vector\<std：： string\>& users，const std：： vector\<std：： string\>& 权限）  |  UserRights 构造函数。
 public const std：： vector\<std：： string\>& Users （） const  |  获取与一组权限关联的用户。
 public const std：： vector\<std：： string\>& 权限（） const  |  获取与一组用户关联的权限。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="userrights-function"></a>UserRights 函数
 UserRights 构造函数。

@@ -1,31 +1,31 @@
 ---
 title: 类 mip：： AddWatermarkActionData
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： addwatermarkactiondata 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 8ced12000bace295be4571158ae0f05364c5aec7
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 719d376cdf2b8b9d2d38de08ba74a654d562b605
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73559481"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77490687"
 ---
 # <a name="class-mipaddwatermarkactiondata"></a>类 mip：： AddWatermarkActionData 
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std::string& GetText() const  | 尚未记录。
-public const std::string& GetFontName() const  | 尚未记录。
-public const std::string& GetFontColor() const  | 尚未记录。
-public int GetFontSize() const  | 尚未记录。
-public WatermarkLayout GetWatermarkLayout （） const  | 尚未记录。
-public virtual ~ AddWatermarkActionData （）  | 尚未记录。
+public const std::string& GetText() const  | _尚无记录。_
+public const std::string& GetFontName() const  | _尚无记录。_
+public const std::string& GetFontColor() const  | _尚无记录。_
+public int GetFontSize() const  | _尚无记录。_
+public WatermarkLayout GetWatermarkLayout （） const  | _尚无记录。_
+public virtual ~ AddWatermarkActionData （）  | _尚无记录。_
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="gettext-function"></a>GetText 函数
 _尚无记录。_

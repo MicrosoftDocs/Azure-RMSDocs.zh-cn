@@ -1,33 +1,33 @@
 ---
 title: 类 mip：： ContentMarkingActionData
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： contentmarkingactiondata 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: ee5dd72a9e001e2effce81aad28b7ae36907b098
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 6652cf38163a461af49675c5009dba6461ffa544
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73559304"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77488902"
 ---
 # <a name="class-mipcontentmarkingactiondata"></a>类 mip：： ContentMarkingActionData 
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std::string& GetText() const  | 尚未记录。
-public const std::string& GetFontName() const  | 尚未记录。
-public const std::string& GetFontColor() const  | 尚未记录。
-public ContentMarkAlignment GetContentMarkAlignment （） const  | 尚未记录。
-public int GetFontSize() const  | 尚未记录。
-public int GetMargin() const  | 尚未记录。
-public ContentMarkPlacement GetContentMarkPlacement （） const  | 尚未记录。
-public virtual ~ ContentMarkingActionData （）  | 尚未记录。
+public const std::string& GetText() const  | _尚无记录。_
+public const std::string& GetFontName() const  | _尚无记录。_
+public const std::string& GetFontColor() const  | _尚无记录。_
+public ContentMarkAlignment GetContentMarkAlignment （） const  | _尚无记录。_
+public int GetFontSize() const  | _尚无记录。_
+public int GetMargin() const  | _尚无记录。_
+public ContentMarkPlacement GetContentMarkPlacement （） const  | _尚无记录。_
+public virtual ~ ContentMarkingActionData （）  | _尚无记录。_
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="gettext-function"></a>GetText 函数
 _尚无记录。_

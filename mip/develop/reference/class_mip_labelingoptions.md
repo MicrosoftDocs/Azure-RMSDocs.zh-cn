@@ -1,33 +1,33 @@
 ---
 title: class mip::LabelingOptions
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： labelingoptions 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 0a6ffd159115283b461c1f7455d4aafeb4c36623
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 4446cea1a31b7caf9dcd36113efc650e992f88a5
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73561066"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77487780"
 ---
 # <a name="class-miplabelingoptions"></a>class mip::LabelingOptions 
 用于为 SetLabel/DeleteLabel 方法配置标记选项的接口。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
-public LabelingOptions （AssignmentMethod 方法）  | 尚未记录。
-public AssignmentMethod GetAssignmentMethod() const  | 尚未记录。
-public bool IsDowngradeJustified() const  | 尚未记录。
-public const std::string& GetJustificationMessage() const  | 尚未记录。
-public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetExtendedProperties （） const  | 尚未记录。
-public void SetDowngradeJustification(bool isDowngradeJustified, const std::string& justificationMessage)  | 尚未记录。
-public void SetExtendedProperties （const std：： vector\<std：:p air\<std：： string，std：： string\>\>& extendedProperties）  | 尚未记录。
+public LabelingOptions （AssignmentMethod 方法）  | _尚无记录。_
+public AssignmentMethod GetAssignmentMethod() const  | _尚无记录。_
+public bool IsDowngradeJustified() const  | _尚无记录。_
+public const std::string& GetJustificationMessage() const  | _尚无记录。_
+public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetExtendedProperties （） const  | _尚无记录。_
+public void SetDowngradeJustification(bool isDowngradeJustified, const std::string& justificationMessage)  | _尚无记录。_
+public void SetExtendedProperties （const std：： vector\<std：:p air\<std：： string，std：： string\>\>& extendedProperties）  | _尚无记录。_
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="labelingoptions-function"></a>LabelingOptions 函数
 _尚无记录。_

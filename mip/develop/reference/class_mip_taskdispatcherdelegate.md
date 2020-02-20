@@ -1,23 +1,23 @@
 ---
 title: 类 mip：： TaskDispatcherDelegate
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： taskdispatcherdelegate 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: e73a03b842b1216bcc4ef71941ca4bc0b0233945
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: dca6a5fa04b62abf23f0116f63fd4a91c6081da0
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73559953"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489327"
 ---
 # <a name="class-miptaskdispatcherdelegate"></a>类 mip：： TaskDispatcherDelegate 
 定义 MIP SDK 任务调度程序接口的类。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public void DispatchTask （const std：： string & taskId，std：： function\<void （）\> 任务）  |  在后台线程上执行任务。
 public void DispatchTask （const std：： string & taskId，std：： function\<void （）\> 任务，int64_t delaySeconds）  |  在具有给定延迟的后台线程上执行任务。
@@ -25,7 +25,7 @@ public void ExecuteTaskOnIndependentThread （const std：： string & taskId，
 public bool CancelTask （const std：： string & taskId）  |  取消后台任务。
 public void CancelAllTasks （）  |  取消所有后台任务。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="dispatchtask-function"></a>DispatchTask 函数
 在后台线程上执行任务。

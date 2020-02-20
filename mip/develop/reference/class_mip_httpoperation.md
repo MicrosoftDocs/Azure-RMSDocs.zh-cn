@@ -1,29 +1,29 @@
 ---
 title: 类 mip：： HttpOperation
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： httpoperation 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 6f0c3cc726d72d89a8682907ebc350270db5daee
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 4be7b54dd5df255c488043d84ebcfebbce7e6ac2
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73558778"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489990"
 ---
 # <a name="class-miphttpoperation"></a>类 mip：： HttpOperation 
 一个接口，该接口描述在重写 HttpDelegate 时由客户端应用程序实现的单个 HTTP 操作。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetId() const  |  获取操作 ID。
 public std：： shared_ptr\<Httpresponse.cache\> GetResponse （）  |  获取响应（如果有）。
 public bool IsCancelled （）  |  获取操作的取消状态。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="getid-function"></a>GetId 函数
 获取操作 ID。

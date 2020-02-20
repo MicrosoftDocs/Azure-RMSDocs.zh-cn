@@ -1,23 +1,23 @@
 ---
 title: 类 mip::ProtectionEngine::Settings
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionengine 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 746309afc21637c85ec53dd9af7214151c5bb75a
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 71f428667bf485d0abd4f953aa2d94181b1bd8f1
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73557685"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77486879"
 ---
 # <a name="class-mipprotectionenginesettings"></a>类 mip::ProtectionEngine::Settings 
 ProtectionEngine 在其创建期间及其整个生存期内使用的设置。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public Settings(const Identity& identity, const std::string& clientData, const std::string& locale)  |  用于创建新引擎的 ProtectionEngine：： Settings 构造函数。
 public Settings(const std::string& engineId, const std::string& clientData, const std::string& locale)  |  用于加载现有引擎的 ProtectionEngine：： Settings 构造函数。
@@ -35,7 +35,7 @@ public const std::string& GetSessionId() const  |  获取引擎会话 ID。
 public void SetCloudEndpointBaseUrl(const std::string& cloudEndpointBaseUrl)  |  （可选）设置云终结点基 URL。
 public const std::string& GetCloudEndpointBaseUrl() const  |  获取所有服务请求使用的云基 URL（如果已指定）。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="settings-function"></a>Settings 函数
 用于创建新引擎的 ProtectionEngine：： Settings 构造函数。

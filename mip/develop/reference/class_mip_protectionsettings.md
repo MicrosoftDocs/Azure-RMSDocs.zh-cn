@@ -1,32 +1,32 @@
 ---
 title: 类 mip：:P rotectionSettings
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionsettings 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: 5c0354b69912e437f87dc9b9b614338091a5b163
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: a44d404fed5ebdac535bac586f4ce54a61e94f6d
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560670"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489565"
 ---
 # <a name="class-mipprotectionsettings"></a>类 mip：:P rotectionSettings 
 用于为 SetLabel 方法配置保护选项的接口。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
-public ProtectionSettings （） = 默认值  | 尚未记录。
-public ProtectionSettings （const std：： string & delegatedUserEmail，PFileExtensionBehavior pfileExtensionBehavior）  | 尚未记录。
-public void SetDelegatedUserEmail （const std：： string delegatedUserEmail）  | 尚未记录。
-public std：： string GetDelegatedUserEmail （） const  | 尚未记录。
-public void SetPFileExtensionBehavior （PFileExtensionBehavior pfileExtensionBehavior）  | 尚未记录。
-public PFileExtensionBehavior GetPFileExtensionBehavior （） const  | 尚未记录。
+public ProtectionSettings （） = 默认值  | _尚无记录。_
+public ProtectionSettings （const std：： string & delegatedUserEmail，PFileExtensionBehavior pfileExtensionBehavior）  | _尚无记录。_
+public void SetDelegatedUserEmail （const std：： string delegatedUserEmail）  | _尚无记录。_
+public std：： string GetDelegatedUserEmail （） const  | _尚无记录。_
+public void SetPFileExtensionBehavior （PFileExtensionBehavior pfileExtensionBehavior）  | _尚无记录。_
+public PFileExtensionBehavior GetPFileExtensionBehavior （） const  | _尚无记录。_
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="protectionsettings-function"></a>ProtectionSettings 函数
 _尚无记录。_

@@ -1,23 +1,23 @@
 ---
 title: class mip::Stream
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： stream 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: f1bd4220369d036c2071453412844e0691efb2ec
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 65e50fc9751b2ac38e2dae216e3e81cacba5c832
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73559976"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77489395"
 ---
 # <a name="class-mipstream"></a>class mip::Stream 
 一个类，它定义 MIP SDK 和基于流的内容之间的接口。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 public int64_t Read(uint8_t* buffer, int64_t bufferLength)  |  从流读取到缓冲区。
 public int64_t Write(const uint8_t* buffer, int64_t bufferLength)  |  从缓冲区写入到流。
@@ -29,7 +29,7 @@ public int64_t Position()  |  获取流中的当前位置。
 public int64_t Size()  |  获取流中的内容的大小。
 public void Size(int64_t value)  |  设置流大小。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="read-function"></a>Read 函数
 从流读取到缓冲区。

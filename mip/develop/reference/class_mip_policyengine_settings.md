@@ -1,23 +1,23 @@
 ---
 title: class mip::PolicyEngine::Settings
 description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p olicyengine 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 10/29/2019
-ms.openlocfilehash: c215b7e25908cc3f7984f68b63e3ea1be4d4a718
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.author: bryanla
+ms.date: 02/14/2020
+ms.openlocfilehash: 620775649ee0fa593f141b1a4f983ad8b52caafe
+ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73560980"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77487610"
 ---
 # <a name="class-mippolicyenginesettings"></a>class mip::PolicyEngine::Settings 
 定义与 PolicyEngine 关联的设置。
   
-## <a name="summary"></a>“摘要”
- 成員                        | 说明                                
+## <a name="summary"></a>摘要
+ Members                        | 说明                                
 --------------------------------|---------------------------------------------
 公共设置（const std：： string & engineId，const std：： string & clientData，const std：： string & locale，bool loadSensitivityTypes）  |  用于加载现有引擎的 PolicyEngine：： Settings 构造函数。
 公共设置（常量标识 & Identity，const std：： string & clientData，const std：： string & locale，bool loadSensitivityTypes）  |  用于创建新引擎的 PolicyEngine：： Settings 构造函数。
@@ -39,8 +39,10 @@ public void SetDelegatedUserEmail （const std：： string & delegatedUserEmail
 public const std：： string & GetDelegatedUserEmail （） const  |  获取委托的用户。
 public void SetLabelFilter （const std：： vector\<LabelFilterType\>& labelFilter）  |  设置标签筛选器。
 public const std：： vector\<LabelFilterType\>& GetLabelFilter （） const  |  获取标签筛选器。
+public void SetVariableTextMarkingType （VariableTextMarkingType variableTextMarkingType）  |  设置变量文本标记类型。
+public VariableTextMarkingType GetVariableTextMarkingType （） const  |  获取变量文本标记类型。
   
-## <a name="members"></a>成員
+## <a name="members"></a>Members
   
 ### <a name="settings-function"></a>Settings 函数
 用于加载现有引擎的 PolicyEngine：： Settings 构造函数。
@@ -206,3 +208,17 @@ public const std：： vector\<LabelFilterType\>& GetLabelFilter （） const  |
   
 **返回**：标签筛选器。
 标签默认为 "筛选范围"，此 api 允许按可能的操作进行筛选。
+  
+### <a name="setvariabletextmarkingtype-function"></a>SetVariableTextMarkingType 函数
+设置变量文本标记类型。
+
+参数：  
+* **variableTextMarkingType**：标记类型的变量文本。
+
+
+  
+### <a name="getvariabletextmarkingtype-function"></a>GetVariableTextMarkingType 函数
+获取变量文本标记类型。
+
+  
+**返回**：变量文本标记类型。
