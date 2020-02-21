@@ -135,6 +135,8 @@
               href: reference/class_mip_applylabelaction.md
             - name: ArgumentData
               href: reference/class_mip_argumentdata.md
+            - name: AsyncControl
+              href: reference/class_mip_asynccontrol.md
             - name: AuthDelegate
               href: reference/class_mip_authdelegate.md
             - name: 'AuthDelegate::OAuth2Challenge'
@@ -205,13 +207,15 @@
               href: reference/class_mip_httpresponse.md
             - name: 标识
               href: reference/class_mip_identity.md
+            - name: InsufficientBufferError
+              href: reference/class_mip_insufficientbuffererror.md
             - name: InternalError
               href: reference/class_mip_internalerror.md
             - name: JustificationRequiredError
               href: reference/class_mip_justificationrequirederror.md
             - name: JustifyAction
               href: reference/class_mip_justifyaction.md
-            - name: Label
+            - name: 标签
               href: reference/class_mip_label.md
             - name: LabelActionData
               href: reference/class_mip_labelactiondata.md
@@ -333,6 +337,8 @@
               href: reference/class_mip_syncfilesensitivitydata.md
             - name: TaskDispatcherDelegate
               href: reference/class_mip_taskdispatcherdelegate.md
+            - name: TemplateDescriptor
+              href: reference/class_mip_templatedescriptor.md
             - name: TemplateNotFoundError
               href: reference/class_mip_templatenotfounderror.md
             - name: TransientNetworkError
