@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.date: 11/25/2019
 ms.author: mbaldwin
 manager: barbkess
-ms.openlocfilehash: c28ab93feedea4c27ef9fe032f889d17da078d49
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: 89536031de20349e070c2577d958868b33a33b09
+ms.sourcegitcommit: df503528b19351a5257a8c72ac3fcb2674494d29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75555936"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77521084"
 ---
-# <a name="microsoft-information-protection-mip-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护（MIP） SDK 版本发行历史记录和支持策略
+# <a name="microsoft-information-protection-mip-software-development-kit-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护（MIP）软件开发工具包（SDK）版本发行历史记录和支持策略
 
 ## <a name="servicing"></a>服务 
 
@@ -31,17 +31,118 @@ ms.locfileid: "75555936"
 >  
 > 若要获得技术支持，请访问[Microsoft 信息保护论坛 Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-information-protection)。 
 
+## <a name="version-15117"></a>版本1.5.117
+
+**发布日期**：2020年2月20日
+
+### <a name="general-sdk-changes"></a>常规 SDK 更改
+
+- Java API （仅限 Windows）
+- 异步 MIP 任务的取消
+  - 所有异步调用都使用 Cancel （）方法返回 mip：： AsyncControl 对象
+- 延迟-加载相关二进制文件
+- 选择性地屏蔽特定遥测/审核属性
+   - 可通过 mip：： TelemetryConfiguration：： maskedProperties 配置
+- 改进的异常：
+  - 所有错误都包括说明字符串中的可操作相关 Id
+  - 网络错误具有 "Category"、"BaseUrl"、"RequestId" 和 "StatusCode" 字段
+- 改进的 C API 结果/错误详细信息
+
+### <a name="file-sdk"></a>文件 SDK
+
+- 无网络检查文件是否已标记或受保护
+  - mip：： FileHandler：： IsLabeledOrProtected （）
+  - 误报的轻微风险（例如，如果文件包含僵尸标签元数据）
+- 与特定保护类型关联的筛选标签
+  - 可通过 mip：： FileEngine：： Settings：： SetLabelFilter （）进行配置
+- 向文件 API 公开策略数据
+  - mip：： FileEngine：： GetPolicyDataXml （）
+
+### <a name="policy-sdk"></a>策略 SDK
+
+- 水印/页眉/页脚操作的动态内容标记：
+  - MIP 将自动填充 $ {Item. Label}、$ {Item.Name}、$ {User.Name}、$ {}、$ {} 等字段
+  - mip：： Identity 可使用用户友好的 "name" 字段进行构造，该字段由动态内容标记使用
+  - 可通过 mip 配置：:P olicyEngine：： Settings：： SetVariableTextMarkingType （）
+- 无网络检查是否标记内容
+  - mip：:P olicyHandler：： IsLabeled （）
+  - 误报的轻微风险（例如，如果内容包含僵尸标签元数据）
+- 标签策略缓存 TTL
+  - 默认值：30天
+  - 可通过 mip 配置：:P olicyProfile：： SetCustomSettings （）
+- **重大更改**
+  - 已将 PolicyEngine 的列表中的 LabelFilter 更新为可为 null 的位域。
+
+### <a name="protection-sdk"></a>保护 SDK
+
+- 预许可
+  - 与以前检索到的用户证书相同，与加密的内容一起存在，允许对内容进行脱机解密
+  - mip：:P rotectionHandler：： ConsumptionSettings 可以使用预许可
+  - mip：:P rotectionEngine：： LoadUserCert |Async （）获取根据 mip：:P rotectionProfile 的缓存策略存储的用户证书
+- 服务器特定的功能检查
+  - 检查用户的租户是否支持 "仅加密" 功能（仅在 Azure RMS 中提供）
+  - mip：:P rotectionEngine：： IsFeatureSupported （）
+- 提取 RMS 模板时更丰富的详细信息
+- **重大更改**
+  - mip：:P rotectionEngine：： Templatedescriptor.gettemplates （）矢量 < shared_ptr<string>替换为矢量 > < mip：： TemplateDescriptor shared_ptr < （C++）的返回值
+  - mip：:P rotectionEngine：： Observer：： OnGetTemplatesSuccess （）回调 shared_ptr < 向量<string>>
+    参数替换为矢量 < shared_ptr < mip：： TemplateDescriptor > > （C++）
+  - IProtectionEngine. Templatedescriptor.gettemplates |Async （）返回值列表<string> 替换为列表<TemplateDescriptor>。 (C#)
+  - MIP_CC_ProtectionEngine_GetTemplates （） mip_cc_guid * 参数替换为 mip_cc_template_descriptor * （C API）
+
+### <a name="c-api"></a>C API
+
+- **重大更改**：更新了大多数函数以包括 mip_cc_error * 参数，可以为 NULL
+  
+
+### <a name="errorexception-updates"></a>错误/异常更新
+
+- 错误处理摘要：
+  - AccessDeniedError：用户无权访问内容
+      - NoAuthTokenError：应用未提供身份验证令牌
+      - NoPermissionsError：尚未向用户授予对特定内容的权限，但提供了引用者/所有者
+      - ServiceDisabledError：已对用户/设备/平台/租户禁用服务
+  - AdhocProtectionRequiredError：设置标签之前必须设置即席保护
+  - BadInputError：用户/应用的输入无效
+      - InsufficientBufferError：来自用户/应用的无效缓冲区输入
+      - LabelDisabledError：标识 ID 已被识别，但被禁用以供使用
+      - LabelNotFoundError：无法识别的标签 ID
+      - TemplateNotFoundError：无法识别的模板 ID
+  - ConsentDeniedError：未向用户/应用授予许可许可的操作
+  - DeprecatedApiError：此 API 已弃用
+  - FileIOError：读取/写入文件失败
+  - InternalError：意外的内部错误
+  - NetworkError
+      - ProxyAuthenticationError：需要代理身份验证
+    - Category = BadResponse： Server 返回了不可读的 HTTP 响应（重试可能成功）
+    - 类别 = 已取消：无法建立 HTTP 连接，因为用户/应用取消了操作（重试可能会成功）
+    - Category = FailureResponseCode： Server 返回了一般失败响应（重试可能成功）
+    - Category = NoConnection：无法建立 HTTP 连接（重试可能成功）
+    - 类别 = 脱机：无法建立 HTTP 连接，因为应用程序处于脱机模式（重试不会成功）
+    - 类别 = 代理：由于代理问题而无法建立 HTTP 连接（重试可能不会成功）
+    - 类别 = SSL：由于 SSL 问题而无法建立 HTTP 连接（重试可能不会成功）
+    - 类别 = 限制：服务器返回了 "限制" 响应（回退/重试可能会成功）
+    - 类别 = 超时：无法在超时后建立 HTTP 连接（重试可能会成功）
+    - 类别 = UnexpectedResponse：服务器返回了意外数据（重试可能成功）
+  - NoPolicyError：没有为标签配置租户或用户
+  - NotSupportedError：操作在当前状态中不受支持
+  - OperationCancelledError：操作已取消
+  - PrivilegedRequiredError：除非分配方法 = 特权，否则不能修改标签
+- 更改
+  - 删除未使用的 PolicySyncError。 替换为 NetworkError
+  - 删除未使用的 TransientNetworkError。 替换为 NetworkError 类别
+
 ## <a name="version-140"></a>版本1.4。0 
 
 **发布日期**：2019年11月6日
 
-此版本引入了对 .NET 包（InformationProtection）中的保护 API 的支持。
+此版本引入了对 .NET 包（InformationProtection）中的保护 SDK 的支持。
 
 ### <a name="sdk-changes"></a>SDK 更改
 - 性能改进和 bug 修复
 - 将 StorageType 枚举重命名为 CacheStorageType
 - Android 链接到 libc + + 而不是 gnustl
-- 删除以前不推荐使用的 Api
+- 已删除 previouslydeprecated Api
   - 文件/策略/配置文件：：设置必须使用 MipContext 进行初始化
   - 已删除 "文件/策略/配置文件：：设置路径"、"应用程序信息"、"记录器委托"、"遥测" 和 "日志级别 getter/setter"。 这些属性由 MipContext 管理
 - Apple 平台上更好的静态库支持
@@ -55,23 +156,23 @@ ms.locfileid: "75555936"
     - libssl1.0。0
 - 删除 mip_telemetry .dll （合并到 mip_core .dll）
 
-### <a name="file-api"></a>文件 API
+### <a name="file-sdk"></a>文件 SDK
 
 - .RPMSG
-  - Encryption
+  - 加密
   - 添加了对 string8 解密的支持
 - 可配置的 .PFILE 扩展行为（默认 <EXT>.PFILE 或 P<EXT>）
   - ProtectionSettings::SetPFileExtensionBehavior
 
-### <a name="policy-api"></a>策略 API
+### <a name="policy-sdk"></a>策略 SDK
 
 - 完成 C API
 - 配置与保护关联的标签的筛选
   - PolicyEngine：：设置也：： SetLabelFilter （）
 
-### <a name="protection-api"></a>保护 API
+### <a name="protection-sdk"></a>保护 SDK
 
-- 删除以前不推荐使用的 Api
+- 已删除 previouslydeprecated Api
   - 已删除 ProtectionEngine：： CreateProtectionHandlerFromDescriptor [Async] （使用 ProtectionEngine：： CreateProtectionHandlerForPublishing [Async]）
   - 已删除 ProtectionEngine：： CreateProtectionHandlerFromPublishingLicense [Async] （使用 ProtectionEngine：： CreateProtectionHandlerForConsumption [Async]）
 - 完整C# API
@@ -103,7 +204,7 @@ ms.locfileid: "75555936"
     - MIP_CC_CreateMipContext 采用 "isOfflineOnly" 和 "loggerDelegateOverride" 参数
 
 
-## <a name="version-130"></a>版本 1.3.0
+## <a name="version-130"></a>版本1.3。0
 
 **发布日期**：2019年8月22日
 
@@ -113,7 +214,7 @@ ms.locfileid: "75555936"
 - 现在支持解密受保护的消息文件。
 - 通过 `mip::FileInspector` 和 `mip::FileHandler::InspectAsync()`来支持检查 .rpmsg 文件。
 - 磁盘上的缓存现在可以有选择性地加密。
-- 保护 API 现在支持中国主权 cloud。
+- 保护 SDK 现在支持中国主权 cloud。
 - Android 上的 Arm64 支持。
 - IOS 上的 Arm64e 支持。
 - 最终用户许可证（EUL）缓存现在可以禁用。
@@ -134,7 +235,7 @@ ms.locfileid: "75555936"
 * 通过 `AcquireToken()` 和 `mip::AuthDelegate::OAuth2Challenge()`的声明参数添加了对基于标签的条件性访问的支持。 尚未通过安全和合规中心门户公开此功能。
 
 
-## <a name="version-120"></a>版本 1.2.0
+## <a name="version-120"></a>版本1.2。0
 
 **发布日期**：2019年4月15日
 
@@ -146,7 +247,7 @@ ms.locfileid: "75555936"
  - 与保护 SDK 协调文件/策略 SDK 异常处理行为：
     - 如果代理配置为要求身份验证，则所有 Sdk 引发的 ProxyAuthError。
     - 当应用程序的 mip：： AuthDelegate：： AcquireOAuth2Token 的实现提供空的身份验证令牌时，所有 Sdk 引发的 NoAuthTokenError。
- - 改进了策略 SDK 的 HTTP 缓存，减少了一半的所需 HTTP 调用数。
+ - 改进了策略 SDK 的 HTTP 缓存，减少了半个所需 HTTP 调用数。
  - 更丰富的日志/审核/遥测，用于改进的故障检测和调试。
  - 支持外部/外部标签，以便迁移到 AIP 标签。
  - 支持第三方应用程序从 SCC 下载敏感类型。
@@ -156,9 +257,9 @@ ms.locfileid: "75555936"
 
  - mip_common 拆分为 mip_core .dll 和 mip_telemetry。
  - 将 mip：： ContentState 重命名为 mip：:D ataState 以说明应用程序如何与高级别的数据交互。
- - mip：： AdhocProtectionRequiredError 异常由 FileHandler：： SetLabel 引发，用于通知应用程序它必须先应用即席保护，然后才能应用标签。
- - 当取消了某个操作（例如由于关闭或 HTTP 取消操作）时，将引发 mip：： OperationCancelledError 异常。
- - 新 API：
+ - mip：： AdhocProtectionRequiredError 异常由 FileHandler：： SetLabel 引发，用于通知应用程序它必须首先应用即席保护，然后才能应用标签。
+ - 当取消了某个操作（例如因关闭或 HTTP 取消）时，将引发 mip：： OperationCancelledError 异常。
+ - 新 Api：
     - mip：： ClassificationResult：： GetSensitiveInformationDetections
     - mip：： FileEngine：： GetLastPolicyFetchTime
     - mip：： FileEngine：： GetDefaultSensitivityLabel
@@ -182,7 +283,7 @@ ms.locfileid: "75555936"
 ### <a name="new-requirements"></a>新要求
  - 必须在处理终止之前调用 mip：： ReleaseAllResources （清除对所有配置文件、引擎和处理程序的引用后）
  - （interface） mip：： Executionstate&：： GetClassificationResults 返回类型，而 "classificationIds" 参数已更改
- - （接口） mip：： FileExecutionState：： GetAuditMetadata 可以由应用程序实现，以指定详细信息以与租户管理员的审核仪表板（例如发件人、收件人、上次修改时间等）进行呈现。
+ - （接口） mip：： FileExecutionState：： GetAuditMetadata 可以由应用程序实现，以指定详细信息以面向租户管理员的审核仪表板（例如发件人、收件人、上次修改时间等）
  - （接口） mip：： FileExecutionState：： GetClassificationResults 返回类型已更改，它现在需要 FileHandler 参数
  - （接口） mip：： FileExecutionState：： GetDataState 应由应用程序实现，以指定应用程序如何与 contentIdentifier 交互
  - （接口） mip：： HttpDelegate 接口需要 "CancelOperation" 和 "CancelAllOperations" 方法
@@ -194,20 +295,20 @@ ms.locfileid: "75555936"
  - mip：:P olicyHandler：： NotifyCommitedActions 重命名为 mip：:P olicyHandler：： NotifyCommittedActions
 
 
-## <a name="version-110"></a>版本 1.1.0
+## <a name="version-110"></a>版本1.1。0 
 
 **发布日期**：2019年1月15日
 
 此版本引入了对以下平台的支持：
 
   - .NET
-  - iOS SDK （策略 API）
-  - Android SDK （策略 API 和保护 API）
+  - iOS SDK （策略 SDK）
+  - Android SDK （策略 SDK 和保护 SDK）
 
 ### <a name="new-features"></a>新功能
 
 - ADRMS 支持
-- 保护 API 操作真正是异步的（在 Win32 上），允许同时进行非阻塞加密/解密操作
+- 保护 SDK 操作确实是异步的（在 Win32 上），允许同时进行非阻塞加密/解密操作
   - 现在可以在任何后台线程上调用应用程序回调（AuthDelegate、HTTPDelegate 等）
 - IT 管理员设置的自定义标签属性现在可以通过 mip：： Label：： GetCustomSettings 进行读取
 - 现在可以直接从文件中检索序列化发布许可证，无需通过 mip：： FileHandler：： GetSerializedPublishingLicense 进行任何 HTTP 操作

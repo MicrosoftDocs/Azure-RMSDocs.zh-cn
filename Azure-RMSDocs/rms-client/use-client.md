@@ -4,7 +4,7 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/23/2020
+ms.date: 02/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 8585245243813977c6c7442fab4d5687e89882c1
-ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
+ms.openlocfilehash: 96a1af247d9c65077be3dc7706cc1976850540fd
+ms.sourcegitcommit: 2abde0336bffda66ba7c629bfb5f0525264c3730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77422848"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77494884"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -105,7 +105,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |Office 应用中的“信息保护”栏：| “是” | “是”| 是 |
 |作为标签操作（页眉、页脚、水印）的可视标记：| “是” | “是” | “是”|
 |每应用视觉标记：| “是” | **是* | 是 |
-|带有变量的动态视觉标记：| “是” | **** | 是 |
+|带有变量的动态视觉标记：| “是” | **是**（预览） | 是 |
 |带有文件资源管理器的标签：| “是” | “是” | 是 |
 |受保护文件的查看器（文本、图像、PDF、.pfile）：| “是” | “是” | 是|
 |应用标签的 PPDF 支持：| “是” | 是 | 是 |

@@ -1,10 +1,10 @@
 ---
 title: 为 Rights Management 连接器配置服务器 - AIP
 description: 此信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及部署 Azure Rights Management 连接器中的步骤 5。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/30/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 02/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: bdcc6b77e5f75b67e69f39c4c5c260f44850f62e
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.openlocfilehash: 96e8c633201731796c7aecfdda0ef513fc2e261d
+ms.sourcegitcommit: 2abde0336bffda66ba7c629bfb5f0525264c3730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117614"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77494860"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
@@ -175,6 +175,8 @@ ms.locfileid: "76117614"
 
 若要使用 RMS 连接器，这些运行 SharePoint 的服务器必须运行以下软件版本之一：
 
+-   SharePoint Server 2019
+
 -   SharePoint Server 2016
 
 -   SharePoint Server 2013
@@ -208,7 +210,7 @@ ms.locfileid: "76117614"
 
 3.  在 SharePoint 中启用 IRM。 有关详细信息，请参阅 SharePoint 库中的 [配置信息权限管理 (SharePoint Server 2010)](https://technet.microsoft.com/library/hh545607%28v=office.14%29.aspx) 。
 
-    当你按照这些说明操作时，必须通过指定**使用此 RMS 服务器**，将 SharePoint 配置为使用连接器，然后输入你配置的负载平衡连接器 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，如果连接器名称为 https：\//connector.contoso.com，则配置将如下图所示：
+    当你按照这些说明操作时，必须通过指定“使用此 RMS 服务器”，将 SharePoint 配置为使用连接器，然后输入你配置的负载平衡连接器 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，如果连接器名称为 https：\//connector.contoso.com，则配置将如下图所示：
 
     ![为 RMS 连接器配置 SharePoint Server](./media/AzRMS_SharePointConnector.png)
 

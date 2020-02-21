@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/09/2020
+ms.date: 02/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8e91257484ccb148475d16e3fd5de2905b8691c3
-ms.sourcegitcommit: d9465ec12b78c24d4d630295d4e5ffae0ba8d647
+ms.openlocfilehash: b4ddfa8a7746de36030cb38b726949a19eebf73d
+ms.sourcegitcommit: dd3143537e37951179b932993055a868191719b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77045025"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77507699"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -57,6 +57,8 @@ ms.locfileid: "77045025"
 
 若要删除高级设置，请使用相同的语法，但指定空字符串值。
 
+> [!IMPORTANT]
+> 使用字符串中的空格将阻止应用标签。 
 
 #### <a name="examples-for-setting-advanced-settings"></a>设置高级设置的示例
 
@@ -111,6 +113,7 @@ ms.locfileid: "77045025"
 
 标签策略高级设置按相反顺序应用：除了一个例外，还会根据 "管理中心" 中策略的顺序，应用第一个策略的高级设置。 例外情况是高级设置*OutlookDefaultLabel*，它为 Outlook 设置不同的默认标签。 对于此标签策略的高级设置，将根据管理中心中策略的顺序应用最后一个设置。
 
+
 #### <a name="available-advanced-settings-for-label-policies"></a>标签策略的可用高级设置
 
 将*AdvancedSettings*参数与[LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-labelpolicy?view=exchange-ps)和[LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-labelpolicy?view=exchange-ps)一起使用。
@@ -121,6 +124,7 @@ ms.locfileid: "77045025"
 |AttachmentActionTip|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments) 
 |DisableMandatoryInOutlook|[使 Outlook 邮件免于强制标记](#exempt-outlook-messages-from-mandatory-labeling)
 |EnableAudit|[禁止向 Azure 信息保护分析发送审核数据](#disable-sending-audit-data-to-azure-information-protection-analytics)|
+|EnableContainerSupport|[允许从 PST、rar、7zip 和 MSG 文件中删除保护](#enable-removal-of-protection-from-compressed-files)
 |EnableCustomPermissions|[在文件资源管理器中禁用自定义权限](#disable-custom-permissions-in-file-explorer)|
 |EnableCustomPermissionsForCustomProtectedFiles|[对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) |
 |EnableLabelByMailHeader|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
@@ -212,6 +216,20 @@ ms.locfileid: "77045025"
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
     Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookRecommendationEnabled="True"}
+
+## <a name="enable-removal-of-protection-from-compressed-files"></a>启用从压缩文件中删除保护
+
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+
+配置此设置时，将启用[PowerShell](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-powershell) cmdlet **set-aipfilelabel** ，以允许从 PST、RAR、7zip 和 MSG 文件中删除保护。
+
+- 密钥： **LabelPolicy**
+
+- 值：True
+
+启用策略的示例 PowerShell 命令：
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableContainerSupport="True"}
 
 ## <a name="set-a-different-default-label-for-outlook"></a>为 Outlook 设置不同的默认标签
 
@@ -364,7 +382,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
     示例：页眉或页脚包含字符串 TEXT TO REMOVE。 想要删除其字符串为 TEXT TO REMOVE 的页眉或页脚。 可指定值：`^TEXT TO REMOVE$`。
     
 
-指定的字符串的匹配模式不区分大小写。 最大字符串长度为 255 个字符。
+指定的字符串的匹配模式不区分大小写。 最大字符串长度为255个字符，且不能包含空格。 
 
 因为某些文档可能包括不可见字符或者不同类型的空格或制表符，可能检测不到指定的短语或句子的字符串。 只要有可能，指定单个易区分的单词作为值，并确保在生产环境中部署之前测试结果。
 
@@ -928,6 +946,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 此配置要求你为要应用其他自定义属性的每个敏感度标签指定一个名为**customPropertiesByLabel**的高级设置。 然后，使用以下语法设置每个条目的值：
 
 `[custom property name],[custom property value]`
+
+> [!IMPORTANT]
+> 使用字符串中的空格将阻止应用标签。
 
 #### <a name="example-1-add-a-single-custom-property-for-a-label"></a>示例1：为标签添加单个自定义属性
 

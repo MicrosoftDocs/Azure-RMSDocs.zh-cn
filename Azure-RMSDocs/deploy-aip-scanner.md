@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行当前版本的 Azure 信息保
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 2/14/2020
+ms.date: 02/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 03ec95f3e53bd522c1d1775e54dfae7305a578e3
-ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
+ms.openlocfilehash: 770096621ecffe8e2f557fa7df92e2bd028dd1e4
+ms.sourcegitcommit: dd3143537e37951179b932993055a868191719b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77423193"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77507716"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -345,9 +345,18 @@ Azure AD 令牌允许扫描程序对 Azure 信息保护服务进行身份验证�
     ```
 
     系统提示时，请为 Azure AD 的服务帐户凭据指定密码，然后单击“接受”。
-    
+
+        
     如果你的扫描程序服务帐户不能被授予**本地登录**权限，请参阅[指定并使用](./rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)该客户端管理员指南中的 set-aipauthentication 的 Token 参数。
-    
+
+
+    **经典客户端示例：**
+
+    ```
+    Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "+LBkMvddz?WrlNCK5v0e6_=meM59sSAn" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f").token | clip
+    Acquired application access token on behalf of the user
+    ```
+       
     **对于统一标签客户端：**
     
     ```
@@ -355,6 +364,14 @@ Azure AD 令牌允许扫描程序对 Azure 信息保护服务进行身份验证�
     ```
     
     如果你的扫描程序服务帐户不能被授予**本地登录**的权限，请使用 Set-aipauthentication 的*OnBehalfOf*参数，如如何从该客户端管理员指南中以[非交互方式为 Azure 信息保护标记文件](./rms-client//clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)中所述。
+
+    **统一标签客户端示例：**
+
+    ```
+    $pscreds = Get-Credential CONTOSO\scanner
+    Set-AIPAuthentication -AppId "77c3c1c3-abf9-404e-8b2b-4652836c8c66" -AppSecret "OAkk+rnuYc/u+]ah2kNxVbtrDGbS47L4" -DelegatedUser scanner@contoso.com -TenantId "9c11c87a-ac8b-46a3-8d5c-f4d0b72ee29a" -OnBehalfOf $pscreds
+    Acquired application access token on behalf of CONTOSO\scanner.
+    ```
 
 现在，扫描器提供了一个用于对 Azure AD 进行身份验证的令牌，此令牌根据你在 Azure AD 中配置的**Web 应用/API** （经典客户端）或客户端机密（统一标签客户端）的配置，该令牌的有效期为一年、两年或永不过期。 如果令牌过期，则须重复步骤 1 和步骤 2。
 
