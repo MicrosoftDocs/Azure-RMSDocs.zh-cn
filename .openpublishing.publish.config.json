@@ -62,11 +62,11 @@
       "branch": "master",
       "branch_mapping": {}
     },
-     {
-         "path_to_root": "_themes.pdf",
-         "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-         "branch": "master"
-     },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master"
+    },
     {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/MicrosoftDocs/Azure-RMSDocs-pr",
@@ -77,25 +77,28 @@
       }
     }
   ],
-"branch_target_mapping": {
-     "live-sxs": [
-           "Publish",
-           "Pdf" 
+  "branch_target_mapping": {
+    "live-sxs": [
+      "Publish",
+      "Pdf"
     ],
     "live": [
-           "Publish",
-           "Pdf"
+      "Publish",
+      "Pdf"
     ]
-},
-"Targets": {
-     "Pdf": {
-               "template_folder": "_themes.pdf"
-     }
-},
+  },
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
   "need_generate_pdf_url_template": true,
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "enable_branch_build_custom_validation": true,
   "enable_pull_request_custom_validation": true,
-  "template_folder": "_themes"
+  "template_folder": "_themes",
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }
