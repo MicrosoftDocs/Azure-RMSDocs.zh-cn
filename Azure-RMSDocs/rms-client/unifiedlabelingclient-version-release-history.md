@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 02/06/2020
+ms.date: 02/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 82e8f2a4462897bc26609db76658742aeec73e51
-ms.sourcegitcommit: dd3143537e37951179b932993055a868191719b5
+ms.openlocfilehash: 3960ab26aabd89c41707c6cf96917253174f8cab
+ms.sourcegitcommit: adbbfae6a94f43792a5a732c7eca5078c1fdc95f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77507682"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77599839"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -66,7 +66,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 **新功能：**
 
-- 修改[PowerShell](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-powershell) cmdlet **set-aipfilelabel**以允许从 PST、RAR、7zip 和 MSG 文件中删除保护。 此功能在默认情况下处于禁用状态，必须使用[LabelPolicy](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) cmdlet 启用此功能[，如下所述。](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)  
+- 修改[PowerShell](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-powershell) cmdlet **set-aipfilelabel**以允许从 PST、RAR、7zip 和 MSG 文件中删除保护。 此功能在默认情况下处于禁用状态，必须使用[LabelPolicy](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) cmdlet 启用此功能[，如下所述。](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-removal-of-protection-from-compressed-files)  
 
 - 增加了 Azure 信息保护管理员控制何时使用 .pfile 扩展的能力。 详细了解如何[更改受保护的文件类型](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#change-which-file-types-to-protect)。 
 

@@ -4,7 +4,7 @@ description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 02/12/2020
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7dcb133d2c5089bc543c392434af1e5f7e8db4b9
-ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
+ms.openlocfilehash: da214b424227d63636c4d216f640568dca8d14f1
+ms.sourcegitcommit: 2821e8a48cea3abdb8af91cdde02380126d00630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77422801"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77600704"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -182,6 +182,8 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
     - 全局策略包含至少一个标签。 由于管理员标签中心不支持不带标签的标签策略，因此不会复制不带标签的全局策略。
 
 - 如果复制策略，然后将其从管理标签中心删除，请在使用 "**复制策略**" 操作之前至少等待两个小时，以确保有足够的时间来复制删除。
+
+- 从 Azure 信息保护复制的策略不具有相同的名称，而是使用**AIP_** 的前缀来命名。 以后不能更改策略名称。 
 
 有关为 Azure 信息保护统一标签客户端配置策略设置、高级客户端设置和标签设置的详细信息，请参阅管理员指南中[的 Azure 信息保护统一标签客户端的自定义配置](./rms-client/clientv2-admin-guide-customizations.md)。
 
