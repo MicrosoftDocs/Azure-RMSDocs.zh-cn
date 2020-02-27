@@ -4,19 +4,19 @@ description: 当文档或电子邮件中分配一个标签时，可以选择几�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 02/25/2020
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: c1f1e674f8937de23b37a8f0273e57c4a44e4d64
-ms.sourcegitcommit: 2821e8a48cea3abdb8af91cdde02380126d00630
+ms.openlocfilehash: 33bb27b5b1d79236d1a1c65bdb109b9697a73302
+ms.sourcegitcommit: 2964d0c06033a0933ea569c11475de5abf95cf92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77600671"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629447"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -139,7 +139,7 @@ ms.locfileid: "77600671"
     在 Word 和 PowerPoint 中，标签应用水印文本“此内容保密”。 在 Excel 中，标签应用水印文本“机密”。 在 Outlook 中，标签不应用任何水印文本，因为 Outlook 不支持水印视觉标记。
 
 > [!NOTE]
-> 使用 Azure 信息保护统一标签客户端时，仅可使用 Azure 信息保护门户设置**字体名称**和/或**字体颜色**的值。 
+> 使用 Azure 信息保护统一标签客户端时，仅可使用 Azure 信息保护门户设置**字体名称**的值。 当设置**字体颜色**值超出五个默认值之一时，还可以使用 Azure 信息保护门户。
 
 ### <a name="setting-the-font-name"></a>设置字体名称
 
