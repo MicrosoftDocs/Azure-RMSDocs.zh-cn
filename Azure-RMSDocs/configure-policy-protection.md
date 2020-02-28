@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: f91e194eb6e7d7dd9623d6467de5466b64ec2b9e
-ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
+ms.openlocfilehash: 0f98ea44bc223f3b484836fdcf53ecd452b352ce
+ms.sourcegitcommit: 275d31ef762c702b6c63025cbba0a45ca9528ce5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77422555"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77778545"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -208,7 +208,7 @@ ms.locfileid: "77422555"
 
 此标签仅可用于 Outlook，且适用于 Exchange Online 已配置 [Office 365 邮件加密新功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)的情况。 当用户需要向使用 Gmail 帐户的人员（或组织外部任何其他电子邮件帐户）发送受保护电子邮件时，指示用户选择此标签。 
 
-用户在“收件人”框中键入 Gmail 电子邮件地址  。  然后，他们选择标签，并且系统自动向电子邮件添加“不要转发”选项。 于是，收件人无法转发或打印电子邮件，无法从电子邮件复制内容或保存附件，也无法将电子邮件另存为其他名称。 
+用户在“收件人”框中键入 Gmail 电子邮件地址  。  然后，他们选择标签，并且系统自动向电子邮件添加“不要转发”选项。 于是，收件人无法转发或打印电子邮件，无法从电子邮件复制内容，也无法通过“另存为”选项将电子邮件保存到邮箱之外  。 
 
 1. 在“保护”窗格上，确保选中“Azure (云密钥)”   。
     
