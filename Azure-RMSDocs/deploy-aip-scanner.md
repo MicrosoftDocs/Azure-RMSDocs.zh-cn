@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行当前版本的 Azure 信息保
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 02/20/2020
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 54d5a7d1d458aeec718a0447b7d5aa138122b0e0
-ms.sourcegitcommit: adbbfae6a94f43792a5a732c7eca5078c1fdc95f
+ms.openlocfilehash: cc2c9a134c222ad9ec8463e94dc5b355ade20d91
+ms.sourcegitcommit: 275d31ef762c702b6c63025cbba0a45ca9528ce5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77599856"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77778647"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -77,7 +77,8 @@ ms.locfileid: "77599856"
 |已配置可应用自动分类和保护（可选）的标签|有关经典客户端配置标签的条件和应用保护的说明：<br /> - [如何为自动分类和推荐分类配置条件](configure-policy-classification.md)<br /> - [如何配置标签以进行 Rights Management 保护](configure-policy-protection.md) <br /><br />提示：可以使用[教程](infoprotect-quick-start-tutorial.md)中的说明来测试带有标签的扫描程序，在准备好的 Word 文档中查找信用卡号。 但是，需要更改标签配置，以便将“选择应用此标签的方式”选项设置为“自动”而不是“推荐”。 然后从文档中删除标签（如果已应用），并将文件复制到扫描程序的数据存储库。 为了快速测试，可以使用扫描程序计算机上的本地文件夹。<br /><br /> 有关统一标签客户端配置标签以便自动标记和应用保护的说明：<br /> - [自动向内容应用敏感标签](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)<br /> - [使用敏感度标签中的加密来限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)<br /><br /> 尽管即使你尚未配置应用自动分类的标签，仍然可以运行扫描程序，但这些说明中并未涵盖此方案。 [详细信息](#using-the-scanner-with-alternative-configurations)|
 |对于要扫描的 SharePoint 文档库和文件夹：<br /><br />-SharePoint 2019<br /><br />- SharePoint 2016<br /><br />- SharePoint 2013<br /><br />- SharePoint 2010|扫描程序不支持其他版本的 SharePoint。<br /><br />使用[版本控制](https://docs.microsoft.com/sharepoint/governance/versioning-content-approval-and-check-out-planning)时，扫描程序会检查并标记上次发布的版本。 如果扫描程序标签文件和[内容审批](https://docs.microsoft.com/sharepoint/governance/versioning-content-approval-and-check-out-planning#plan-content-approval)是必需的，则必须向用户批准标记为 "文件" 的文件。 <br /><br />对于大型 SharePoint 场，请检查是否需要增加列表视图阈值（默认为 5,000），以便扫描程序访问所有文件。 有关详细信息，请参阅下列 SharePoint 文档：[管理 SharePoint 中的大型列表和库](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server)|
 |对于要扫描的 Office 文档：<br /><br />- Word、Excel 和 PowerPoint 的 97-2003 文件格式和 Office Open XML 格式|有关扫描程序为这些文件格式支持的文件类型的详细信息，请参阅以下信息： <br />-经典客户端：[Azure 信息保护客户端支持的文件类型](./rms-client/client-admin-guide-file-types.md)<br />-统一标签客户端：[Azure 信息保护统一标签客户端支持的文件类型](./rms-client/clientv2-admin-guide-file-types.md)|
-|对于长路径：<br /><br />- 最多 260 个字符，除非扫描程序安装在 Windows 2016 上，并且该计算机配置为支持长路径|Windows 10 和 Windows Server 2016 使用以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)，支持超过 260 个字符的路径长度：本地计算机策略计算机配置 > 管理模板 > 所有设置 >  ****启用 Win32 长路径**<br /><br /> 有关支持长文件路径的详细信息，请参阅 Windows 10 开发人员文档中的[最大路径长度限制](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation)一节。
+|对于长路径：<br /><br />- 最多 260 个字符，除非扫描程序安装在 Windows 2016 上，并且该计算机配置为支持长路径|Windows 10 和 Windows Server 2016 使用以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)，支持超过 260 个字符的路径长度：本地计算机策略计算机配置 > 管理模板 > 所有设置 >  ****启用 Win32 长路径**<br /><br /> 有关支持长文件路径的详细信息，请参阅 Windows 10 开发人员文档中的[最大路径长度限制](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation)一节。|
+|使用情况统计|请确保通过将[AllowTelemetry](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide-install#to-install-the-azure-information-protection-client-by-using-the-executable-installer)参数设置为0来禁用向 microsoft 发送使用情况统计信息的选项，或者通过在扫描程序安装过程中将**使用情况统计信息发送到 microsoft 选项来确保帮助改进 Azure 信息保护**。| 
 
 如果你无法满足表中的所有要求，因为你的组织策略禁止这些要求，请参阅[备选配置](#deploying-the-scanner-with-alternative-configurations)部分。
 
@@ -103,9 +104,9 @@ ms.locfileid: "77599856"
     
     例如，若要扫描1000000个文件名长度为250字节的文件，请分配 2 GB 磁盘空间。
 
-- **对于多个扫描仪，最多12个**：4核处理器;建议 8 GB RAM （至少 4 GB）。
+- **对于多个扫描仪，最多为 10**个：4核处理器;建议 8 GB RAM。
 
-- **对于多个扫描仪，超过12个（最多40）** ：8个核心进程;建议使用 16 GB RAM （最低 8 GB）。
+- **对于超过10的多个扫描仪（最多40）** ：8个核心进程;建议使用 16 GB RAM。
 
 ### <a name="deploying-the-scanner-with-alternative-configurations"></a>使用备用配置部署扫描程序
 
