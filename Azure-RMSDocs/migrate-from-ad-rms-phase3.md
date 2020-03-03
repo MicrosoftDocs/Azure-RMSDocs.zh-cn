@@ -13,20 +13,20 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 613dcf3e6b35ed801fafc7718dbb0db8b664483c
-ms.sourcegitcommit: 07b518c780f5e63eb5a72d7499ec7cfa40a95628
+ms.openlocfilehash: b2c206885b2449edc73948a3c0e3c815634c93de
+ms.sourcegitcommit: 94a93275f61a2f46c995a3b7c18bae85f3f302f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74898919"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78215732"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 3。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 7。
 
-## <a name="step-7-reconfigure-windows-computers-to-use-azure-information-protection"></a>步骤 7： 重新配置 Windows 计算机以使用 Azure 信息保护
+## <a name="step-7-reconfigure-windows-computers-to-use-azure-information-protection"></a>步骤 7. 重新配置 Windows 计算机以使用 Azure 信息保护
 
 对于使用 Office 365 应用、Office 2019 或 Office 2016 即点即用桌面应用的 Windows 计算机：
 
@@ -64,7 +64,7 @@ ms.locfileid: "74898919"
     |-----------|-----------|  
     |**域**|_tcp.rmscluster.contoso.com|  
     |**服务**|_rmsredir|  
-    |**Protocol**|_http|  
+    |**协议**|_http|  
     |**优先级**|0|  
     |**权重**|0|  
     |**端口号**|80|  
@@ -74,7 +74,7 @@ ms.locfileid: "74898919"
 
     a. 在群集中的某个 AD RMS 服务器上，启动 Internet Information Services (IIS) 管理器控制台。
 
-    b。 导航到 "**默认**网站"，然后展开 **_wmcs**。
+    b. 导航到 "**默认**网站"，然后展开 **_wmcs**。
 
     c. 右键单击 "**授权**"，然后选择 "**切换到内容视图**"。
 
@@ -88,12 +88,12 @@ ms.locfileid: "74898919"
 
     g. 若要确认此配置按预期工作，请尝试从浏览器直接连接到 licensing.asmx 文件。 应看到以下错误消息，它将触发运行 Office 365 应用或 Office 2019 或 Office 2016 的客户端查找 SRV 记录：
     
-    **错误消息 401.3: 无权使用所提供的凭据查看此目录或页面（由于访问控制列表，访问被拒绝）。**
+    错误消息 401.3:无权使用所提供的凭据查看此目录或页面(由于访问控制列表，访问被拒绝)
 
 
 ## <a name="client-reconfiguration-by-using-registry-edits"></a>使用注册表编辑重新配置客户端
 
-此方法适用于所有 Windows 客户端，应在这些客户端上未运行 Office 365 应用或 Office 2019 或 Office 2016 而是运行较早版本时使用 。 此方法使用两个迁移脚本重新配置 AD RMS 客户端：
+此方法适用于所有 Windows 客户端，如果不运行 Office 365 应用或 Office 2016 （或更高版本）单击即运行，则应使用此方法。 此方法使用两个迁移脚本重新配置 AD RMS 客户端：
 
 - Migrate-Client.cmd
 
