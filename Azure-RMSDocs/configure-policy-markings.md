@@ -4,19 +4,19 @@ description: 当文档或电子邮件中分配一个标签时，可以选择几�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 02/27/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: c9aca3acb5d047a6d1b24dd453b0f2126ce4ce37
-ms.sourcegitcommit: 275d31ef762c702b6c63025cbba0a45ca9528ce5
+ms.openlocfilehash: 66e209340ada675a2a91b72e3553d98dc309c96b
+ms.sourcegitcommit: 63ce6f2a405d8b649c7a74194beec0a8855a5441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77778596"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78238494"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -100,7 +100,7 @@ ms.locfileid: "77778596"
 
 - `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016 年 8 月 16 日下午 1:30
 
-例如：如果为“常规”标签页脚指定字符串 `Document: ${Item.name}  Classification: ${Item.label}`，则应用于名为 project.docx 的文档的页脚文本将为 Document: project.docx  Classification: General。
+例如：如果为“常规”标签页脚指定字符串 `Document: ${Item.Name}  Classification: ${Item.Label}`，则应用于名为 project.docx 的文档的页脚文本将为 Document: project.docx  Classification: General。
 
 > [!NOTE]
 > Azure 信息保护统一标签客户端当前不支持使用 `${User.Name}` 和/或 `${User.PrincipalName}` 变量。 
