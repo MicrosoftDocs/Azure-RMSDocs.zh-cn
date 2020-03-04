@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 02/20/2020
+ms.date: 03/03/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3960ab26aabd89c41707c6cf96917253174f8cab
-ms.sourcegitcommit: adbbfae6a94f43792a5a732c7eca5078c1fdc95f
+ms.openlocfilehash: 543fd7af43dc235fbe8faca2f0dae332b0b493f1
+ms.sourcegitcommit: 1eed9a57596b67255c45a604595cc77a56350557
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77599839"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78238624"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -42,6 +42,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 |客户端版本|发布日期|
 |--------------|-------------|
+|2.2.19.0|08/06/2019|
 |2.2.14.0|07/15/2019|
 |2.0.779.0|05/01/2019|
 |2.0.778.0|04/16/2019|
@@ -170,18 +171,6 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 - 当你使用高级设置[OutlookDefaultLabel](clientv2-admin-guide-customizations.md#set-a-different-default-label-for-outlook)为 Outlook 设置不同的默认标签，并且你指定的标签没有适用于标签策略的任何子标签时，将正确应用标签。
 
 - 在 Office 应用中使用 Azure 信息保护客户端时，如果用户的帐户未配置为单一登录，则会提示 Active Directory 用户对 Azure 信息保护进行身份验证。 身份验证成功后，客户端状态会正确地更改为 "联机"，这将启用标签功能。
-
-## <a name="version-22190"></a>版本2.2.19。0
-
-**发布**日期：08/06/2019
-
-支持，03/03/2020
-
-**纠正**
-
-- 客户端可以成功地下载其策略并显示当前的敏感度标签。 从以前的版本升级后，如果未在标签中心配置任何自定义信息类型，则需要此修补程序。
-
-- 一般的性能和稳定性方面的改进。
 
 ## <a name="next-steps"></a>后续步骤
 

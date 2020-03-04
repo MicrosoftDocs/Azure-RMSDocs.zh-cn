@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 11/25/2019
 ms.author: mbaldwin
 manager: barbkess
-ms.openlocfilehash: 89536031de20349e070c2577d958868b33a33b09
-ms.sourcegitcommit: df503528b19351a5257a8c72ac3fcb2674494d29
+ms.openlocfilehash: 06a57fa7510722da9ed119c573abe2ef0db09407
+ms.sourcegitcommit: 63ce6f2a405d8b649c7a74194beec0a8855a5441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77521084"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78238488"
 ---
 # <a name="microsoft-information-protection-mip-software-development-kit-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护（MIP）软件开发工具包（SDK）版本发行历史记录和支持策略
 
@@ -31,9 +31,9 @@ ms.locfileid: "77521084"
 >  
 > 若要获得技术支持，请访问[Microsoft 信息保护论坛 Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-information-protection)。 
 
-## <a name="version-15117"></a>版本1.5.117
+## <a name="version-15124"></a>版本1.5.124
 
-**发布日期**：2020年2月20日
+**发布日期**：2020年3月2日
 
 ### <a name="general-sdk-changes"></a>常规 SDK 更改
 
@@ -84,10 +84,9 @@ ms.locfileid: "77521084"
   - mip：:P rotectionEngine：： IsFeatureSupported （）
 - 提取 RMS 模板时更丰富的详细信息
 - **重大更改**
-  - mip：:P rotectionEngine：： Templatedescriptor.gettemplates （）矢量 < shared_ptr<string>替换为矢量 > < mip：： TemplateDescriptor shared_ptr < （C++）的返回值
-  - mip：:P rotectionEngine：： Observer：： OnGetTemplatesSuccess （）回调 shared_ptr < 向量<string>>
-    参数替换为矢量 < shared_ptr < mip：： TemplateDescriptor > > （C++）
-  - IProtectionEngine. Templatedescriptor.gettemplates |Async （）返回值列表<string> 替换为列表<TemplateDescriptor>。 (C#)
+  - `mip::ProtectionEngine::GetTemplates()` 替换为 `vector<shared_ptr<mip::TemplateDescriptor>>` （C++） `vector<shared_ptr<string>>` 返回值
+  - `mip::ProtectionEngine::Observer::OnGetTemplatesSuccess()` 回调 `shared_ptr<vector<string>>` 参数已替换为 `vector<shared_ptr<mip::TemplateDescriptor>>`C++（）
+  - IProtectionEngine. Templatedescriptor.gettemplates |Async （）返回值 `List<string>` 替换为 `List<TemplateDescriptor>`。 (C#)
   - MIP_CC_ProtectionEngine_GetTemplates （） mip_cc_guid * 参数替换为 mip_cc_template_descriptor * （C API）
 
 ### <a name="c-api"></a>C API
