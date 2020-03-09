@@ -4,7 +4,7 @@ description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 02/25/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: da214b424227d63636c4d216f640568dca8d14f1
-ms.sourcegitcommit: 2821e8a48cea3abdb8af91cdde02380126d00630
+ms.openlocfilehash: 96f80806d87ea4acae1e3f1343e815dc42573408
+ms.sourcegitcommit: 9fcac73287781cd9cc47298740be0a5f8f54a6c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77600704"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78932540"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -100,6 +100,7 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 |为视觉标记（页眉、页脚、水印）使用 RGB 代码自定义字体和字体颜色|是|视觉标记的配置限制为颜色和字体大小列表。 尽管无法看见管理中心中配置的值，仍可以不做任何更改发布此标签。 <br /><br />若要更改这些选项，可以使用 Azure 门户。 但是，请考虑将颜色更改为管理中心中列出的选项之一，以便于管理。|
 |视觉标记（页眉、页脚）中的变量|否|如果不做更改就发布此标签，则变量将在客户端上显示为文本而不是显示动态值。 发布标签之前，请编辑字符串以删除变量。|
 |每个应用的视觉标记|否|如果不做更改就发布此标签，则在所有应用中应用变量将在客户端上显示为文本，而不是在所选的应用上显示文本字符串。 仅当适用于所有应用时发布此标签，并编辑字符串以删除应用变量。|
+|"仅限我" 保护 |是|管理中心不允许你保存现在应用的加密设置，而无需指定任何用户。 在 Azure 门户中，此配置会生成一个标签，该标签适用于["仅限我" 的保护](configure-policy-protection.md#example-6-label-that-applies-just-for-me-protection)。 <br /><br /> 作为替代方法，可以创建应用加密的标签，并指定具有任何权限的用户，然后使用 PowerShell 编辑关联的保护模板。 首先，使用[AipServiceRightsDefinition](https://docs.microsoft.com/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet （请参阅示例3），然后使用*RightsDefinitions*参数[AipServiceTemplateProperty](https://docs.microsoft.com/powershell/module/aipservice/set-aipservicetemplateproperty?view=azureipps#examples) 。|
 |条件和关联设置 <br /><br /> 包括自动和建议标签及其工具提示|“不适用”|若要重新配置条件，请将自动标记用作标签设置中的独立配置。|
 
 ### <a name="comparing-the-behavior-of-protection-settings-for-a-label"></a>比较标签保护设置的行为
