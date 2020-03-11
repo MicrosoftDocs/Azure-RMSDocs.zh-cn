@@ -4,24 +4,27 @@ description: 本入门教程介绍如何配置 Azure 信息保护策略设置，
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 03/09/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 266f796d6d3abc594a1447995d09687eaabb1ad7
-ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
+ms.openlocfilehash: 127b8b3b4510b582c73eaa0c61d5ecbebe2e4b64
+ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77423215"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78973215"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
 >适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 > 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 在本教程中，你将了解如何：
 > [!div class="checklist"]
@@ -104,7 +107,7 @@ ms.locfileid: "77423215"
     
     ![Azure 信息保护教程 - 更改的默认设置](./media/defaultsettings-aip-changed.png)
 
-5. 选择此“策略: 全局”  边栏选项卡上的“保存”  ，如果系统提示你确认操作，请选择“确定”  。 
+5. 选择此“策略: 全局”边栏选项卡上的“保存”  ，  如果系统提示你确认操作，请选择“确定”  。 
 
 ## <a name="see-your-policy-settings-in-action"></a>在实际操作中查看策略设置 
 

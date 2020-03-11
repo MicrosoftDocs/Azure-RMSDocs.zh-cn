@@ -4,24 +4,27 @@ description: 介绍如何为组织编辑 Azure 信息保护策略的入门教程
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 03/09/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 4f816190cd240fb4dee90c67167de791b3a46d52
-ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
+ms.openlocfilehash: 7f0754d3ef54ac6d07b7787ef6cc3bb834a2ee2d
+ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77423232"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78973223"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-and-create-a-new-label"></a>教程：配置 Azure 信息保护策略设置并创建新标签
 
 >适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 > 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 在本教程中，你将了解如何：
 > [!div class="checklist"]
@@ -99,7 +102,7 @@ ms.locfileid: "77423232"
 
 6. 另外，请务必将“在 Office 应用程序中显示信息保护栏”这一项  设置为“开”  。
 
-7. 选择此“策略: 全局”  边栏选项卡上的“保存”  ，如果系统提示你确认操作，请选择“确定”  。 关闭此窗格。
+7. 选择此“策略: 全局”边栏选项卡上的“保存”  ，  如果系统提示你确认操作，请选择“确定”  。 关闭此窗格。
 
 ### <a name="create-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>创建保护新标签、视觉标记和分类提示条件
 

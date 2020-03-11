@@ -4,24 +4,28 @@ description: 入门教程，可便于配置和了解 Azure 信息保护客户端
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 03/09/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 7f4ed4ba4962246bc6466807f492c8ac18f18cc2
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: a16c32f95d4a90dfe24f028491611f1218d6eccb
+ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75743564"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78973252"
 ---
 # <a name="tutorial-configure-azure-information-protection-to-control-oversharing-of-information-using-outlook"></a>教程：配置 Azure 信息保护以使用 Outlook 控制信息的过度共享
 
 >适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 > 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+
+
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 在本教程中，你将了解如何：
 > [!div class="checklist"]
@@ -83,7 +87,7 @@ ms.locfileid: "75743564"
 
 4. 复制标签 ID 值并将其粘贴到临时文件中，以便在以后的步骤中可轻松复制该值。 在本示例中，此标签 ID 值是“0e421e6d-ea17-4fdb-8f01-93a3e71333b8”  。
 
-5. 关闭“标签: 常规”窗格，但不要关闭 Azure 门户**。
+5. 关闭“标签:  常规”窗格，但不要关闭 Azure 门户。
 
 ## <a name="create-a-scoped-policy-to-test-the-new-advanced-client-settings"></a>创建作用域内策略以测试新的高级客户端设置
 
@@ -97,7 +101,7 @@ ms.locfileid: "75743564"
 
 4. 帐户名显示在“策略”窗格上后，请选择“保存”且不对此窗格上的标签或设置进行其他更改   。 系统可能会提示你确认你的选择。 
 
-此作用域内策略现已准备就绪，可添加高级客户端设置。 关闭“策略: 过度共享教程”窗格，但不要关闭 Azure 门户**。
+此作用域内策略现已准备就绪，可添加高级客户端设置。 关闭“策略:  过度共享教程”窗格，但不要关闭 Azure 门户。
 
 ## <a name="configure-and-test-advanced-client-settings-to-warn-prompt-for-justification-or-block-emails-that-have-the-general-label"></a>配置并测试以下高级客户端设置：警告、提示提供理由或阻止具有“常规”标签的电子邮件。
 

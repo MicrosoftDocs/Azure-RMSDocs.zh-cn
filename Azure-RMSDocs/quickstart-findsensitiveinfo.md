@@ -4,18 +4,18 @@ description: 使用 Azure 信息保护扫描程序查找在本地存储的文件
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/13/2020
+ms.date: 03/09/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: 6cb4739d0da222f8748c4f4684290b7193093bcc
-ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
+ms.openlocfilehash: 126ef492f090a578443a0bea0ee7c747554d6eb2
+ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75960462"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78973177"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 
@@ -24,7 +24,7 @@ ms.locfileid: "75960462"
 在本快速入门教程中，你将许可 SharePoint 允许扫描，安装和配置 Azure 信息保护扫描程序，以查找存储在本地数据存储中的文件中的敏感信息。 例如，本地文件夹、网络共享或 SharePoint Server。
 
 > [!NOTE]
-> 你可以将此快速入门与 Azure 信息保护客户端的当前正式发布版本（经典）或 Azure 信息保护统一标签客户端（其中包括扫描程序的预览版本）的当前正式发布版本一起使用。
+> 可将此快速入门与 Azure 信息保护客户端的当前正式发布版本（经典）一起使用，也可与 Azure 信息保护统一标签客户端（其中包括扫描程序）的当前正式发布版本一起使用。
 >  
 > 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)。
 

@@ -45,7 +45,7 @@
       items:
         - name: 概述
           href: what-is-azure-rms.md
-        - name: BitLocker 是如何工作的？
+        - name: 工作原理
           href: how-does-it-work.md
         - name: 应用程序如何支持 Azure Rights Management 保护
           items:
@@ -61,7 +61,7 @@
       href: rms-for-individuals.md
     - name: 也称为...
       href: aka.md
-- name: 操作方式指南
+- name: 操作指南
   items:
     - name: 常见方案操作说明
       href: how-to-guides.md
@@ -323,6 +323,8 @@
         - name: Rights Management SDK 4.2
           href: ./develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md
           items:
+            - name: 弃用通知
+              href: ./develop/deprecation-notice.md
             - name: 概述
               href: ./develop/overview.md
             - name: 入门
@@ -382,7 +384,7 @@
               items:
                 - name: 客户端
                   href: ./develop/ad-rms-client.md
-                - name: Server
+                - name: 服务器
                   href: ./develop/ad-rms-server.md
             - name: 入门
               href: ./develop/getting-started-with-ad-rms-2-0.md
@@ -450,10 +452,10 @@
                   href: 'https://msdn.microsoft.com/library/hh535294.aspx'
                 - name: 错误代码
                   href: 'https://msdn.microsoft.com/library/hh535248.aspx'
-        - name: 条款
+        - name: 术语
 - name: 资源
   items:
-    - name: 常见问题
+    - name: 常见问题解答
       items:
         - name: FAQ - 常规
           href: faqs.md
