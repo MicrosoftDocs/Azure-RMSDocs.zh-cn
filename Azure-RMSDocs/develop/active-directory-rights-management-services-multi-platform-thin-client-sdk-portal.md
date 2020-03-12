@@ -14,16 +14,18 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: dd357e74e71b9e5b296825b395ecd54b14c332d5
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 76bd7d42a00780520bd77c93c9e751d10bed5518
+ms.sourcegitcommit: fc0499f182e9203ccbd4a8685dd880d1311845ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68788683"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79084725"
 ---
 # <a name="rights-management-sdk42"></a>Rights Management SDK 4.2
 
-## <a name="purpose"></a>用途
+[!INCLUDE [deprecation notice](../includes/deprecation-warning.md)]
+
+## <a name="purpose"></a>目的
 
 Rights Management SDK 4.2 是一种简化的新一代 API，可用于在通过 Rights Management Services 进行信息保护的情况下实现设备应用升级中的轻型开发体验。 开发人员可以构建利用 Active Directory Rights Management Services (AD RMS) 或 Azure Rights Management 提供信息保护的应用，并且可以轻松地保护或使用信息，同时以透明方式处理复杂的安全实践，如密钥管理、加密和解密、策略和权限创建、安全缓存以及与 AD RMS 和 Azure RMS 服务的通信。
 

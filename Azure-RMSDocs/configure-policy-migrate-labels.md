@@ -4,7 +4,7 @@ description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/04/2020
+ms.date: 03/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 96f80806d87ea4acae1e3f1343e815dc42573408
-ms.sourcegitcommit: 9fcac73287781cd9cc47298740be0a5f8f54a6c7
+ms.openlocfilehash: c61254aba161724bc780ec2e0bd3b169134790de
+ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "78932540"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78972789"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -25,6 +25,8 @@ ms.locfileid: "78932540"
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 将 Azure 信息保护标签迁移到统一的标签平台，以便可以将它们用作[支持统一标签的客户端和服务](#clients-and-services-that-support-unified-labeling)的敏感度标签。
 
@@ -35,7 +37,7 @@ ms.locfileid: "78932540"
 
 在阅读迁移标签说明之前，你可能会发现以下常见问题很有用：
 
-- [Azure 信息保护中的标签与 Office 365 中的标签之间有何区别？](faqs.md#whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365)
+- [Azure 信息保护中的标签与 Office 365 中标签之间的区别是什么？](faqs.md#whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365)
 
 - [何时将标签迁移到正确的时间？](faqs.md#when-is-the-right-time-to-migrate-my-labels)
 

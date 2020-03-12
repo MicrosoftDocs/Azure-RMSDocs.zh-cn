@@ -12,18 +12,21 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f05d2ab1050f1a14a60debe083bec1e670e3cb7a
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 986a9cfb4376f17d2a53aa78b512bb8ab16f2243
+ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934936"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78973264"
 ---
 # <a name="deploying-previous-versions-of-the-azure-information-protection-scanner"></a>部署 Azure 信息保护扫描程序的以前版本
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2019、windows server 2016、windows Server 2012 R2*
 >
 > *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 > [!NOTE]
 > 本文适用于低于版本**1.48.204.0**但仍在支持中的 Azure 信息保护扫描程序的版本。 若要将早期版本升级到当前版本，请参阅[升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。
@@ -102,7 +105,7 @@ ms.locfileid: "74934936"
 
 如果你不能暂时授予 Sysadmin 角色，则必须在安装 scanner 之前要求具有 Sysadmin 权限的用户手动创建名为 Azinfoprotectionscanner.exe 的数据库。 对于此配置，必须分配以下角色：
     
-|帐户|数据库级角色|
+|Account|数据库级角色|
 |--------------------------------|---------------------|
 |扫描程序的服务帐户|db_owner|
 |用于安装扫描程序的用户帐户|db_owner|
@@ -115,7 +118,7 @@ ms.locfileid: "74934936"
     if not exists(select * from master.sys.server_principals where sid = SUSER_SID('domain\user')) BEGIN declare @T nvarchar(500) Set @T = 'CREATE LOGIN ' + quotename('domain\user') + ' FROM WINDOWS ' exec(@T) END
     USE AzInfoProtectionScanner IF NOT EXISTS (select * from sys.database_principals where sid = SUSER_SID('domain\user')) BEGIN declare @X nvarchar(500) Set @X = 'CREATE USER ' + quotename('domain\user') + ' FROM LOGIN ' + quotename('domain\user'); exec sp_addrolemember 'db_owner', 'domain\user' exec(@X) END
 
-另外：
+此外：
 
 - 您必须是将运行扫描程序的服务器上的本地管理员
 - 必须为将运行扫描程序的服务帐户授予对以下注册表项的 "完全控制" 权限：
@@ -160,7 +163,7 @@ ms.locfileid: "74934936"
     
     系统提示时，请提供扫描程序服务帐户的凭据 (\<域\用户名>) 和密码。
 
-4. 使用“管理工具” > “服务”验证服务现在是否已安装。 
+4. 使用“管理工具” **“服务”验证服务现在是否已安装** > 。 
     
     已安装的服务被命名为 Azure信息保护扫描程序，并被配置为使用你创建的扫描程序服务帐户运行。
 
@@ -439,7 +442,7 @@ Azure 信息保护扫描程序支持两种备选方案，在任何一种方案�
     
     - 扫描大型文件明显比扫描小文件耗时更多。
 
-- 另外：
+- 此外：
     
     - 确认运行扫描程序的服务帐户仅具有 "[扫描仪先决条件](#prerequisites-for-the-azure-information-protection-scanner)" 部分中所述的权限，然后配置 "[高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner)以禁用扫描程序的低完整性级别。
     
@@ -514,6 +517,6 @@ Azure 信息保护扫描程序支持两种备选方案，在任何一种方案�
 
 想了解 Microsoft 的 Core Services 工程和运行团队是如何实现此扫描程序的？  请阅读以下技术案例研究：[使用 Azure 信息保护扫描程序自动执行数据保护](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner)。
 
-你可能想知道：[Windows Server FCI 和 Azure 信息保护扫描程序有何区别？](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
+您可能想知道： [Windows SERVER FCI 和 Azure 信息保护扫描程序之间的区别是什么？](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
 
 还可在台式计算机中，利用 PowerShell 以交互方式对文件进行分类和保护。 要详细了解此方案及使用 PowerShell 的其他方案，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)。

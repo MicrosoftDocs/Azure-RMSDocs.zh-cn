@@ -4,19 +4,19 @@ description: 使用 Azure 信息保护适用于 Windows 的统一标签客户端
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/13/2020
+ms.date: 03/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: f51d3a901808a4689e651c6736c6ac8294e1e602
-ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
+ms.openlocfilehash: 06ac8dd5923fb4275aeaa833bf40f0ac660e1c26
+ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77423079"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78973075"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端进行分类和保护
 
@@ -31,7 +31,7 @@ ms.locfileid: "77423079"
 
 但是，还可以使用文件资源管理器对文件进行分类和保护。 此方法支持其他文件类型，此方法是一种一次性对多个文件进行分类和保护的便捷方法。 此方法支持保护 Office 文档、PDF 文件、文本和图像文件，以及各种其他文件。 
 
-如果标签对文档应用保护，则受保护的文档可能不适合保存在 SharePoint 或 OneDrive 中。 检查管理员是否已[对 SharePoint 和 OneDrive 中的 Office 文件启用了敏感度标签（公共预览版）](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
+如果标签对文档应用保护，则受保护的文档可能不适合保存在 SharePoint 或 OneDrive 中。 检查管理员是否已[对 SharePoint 和 OneDrive 中的 Office 文件启用了敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
 
 ### <a name="safely-share-a-file-with-people-outside-your-organization"></a>与组织外部人员安全共享文件
 

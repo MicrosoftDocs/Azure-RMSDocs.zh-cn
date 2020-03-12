@@ -4,7 +4,7 @@ description: 在 Azure 门户中配置和管理保护模板，也称为 rights m
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 03/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,19 +13,21 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 09e8358493e80099b38294c472f134cb0632943f
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: 63c6857794730dc0b6532d39c6ae7b8a2d572671
+ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75743465"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78973295"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理 Azure 信息保护的模板
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
-> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 保护模板（也称为 Rights Management 模板）是 Azure 信息保护的一组管理员定义的保护设置。 这些设置包括为授权用户选择的[使用权限](configure-usage-rights.md)，以及对到期和离线访问的访问控制。 这些模板已与 Azure 信息保护策略集成： 
 
@@ -85,7 +87,7 @@ ms.locfileid: "75743465"
     
     - 自动添加了“允许宏”（公用名）。 Office 应用中的 Azure 信息保护栏要求此使用权限。
 
-- **已发布**和已**存档**的设置显示为 "**已启用** **"** 、"启用" 和 "**已启用**" **：分别在** **标签**窗格上 对于想要保留但对用户或服务不可见的模板，将其设置为“已启用”：“关闭”。
+- “已发布”和“已存档”设置在“标签”选项卡上分别显示为“启用: 开”和分别在 "**标签**" 窗格中**关闭**。 对于想要保留但对用户或服务不可见的模板，将其设置为“启用: 关”。
 
 - 无法在 Azure 门户中复制或删除模板。 将模板转换为标签时，可以通过选择“为包含此标签的文档和电子邮件设置权限”选项的“未配置”配置该标签以停止使用该模板。 或者，可以删除标签。 但是，在这两种方案中，模板均不会被删除且模板仍保持已存档状态。
     
@@ -103,9 +105,9 @@ ms.locfileid: "75743465"
 
 1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到 " **Azure 信息保护-标签**" 窗格。
     
-    例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”并选择“Azure 信息保护”。
 
-2. 从 "**分类** > **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格上，展开 "**保护模板**"，然后找到要配置的模板。
+2. 从“分类” > “标签”菜单选项中：在 " **Azure 信息保护-标签**" 窗格中，展开 "**保护模板**"，然后找到要配置的模板。
     
 3. 选择模板，然后在 "**标签**" 窗格中，通过编辑 "**标签显示名称**" 和 "**说明**"，可以根据需要更改模板名称和说明。 然后，选择值为 " **Azure （云密钥）** " 的 **"保护"** 以打开 "**保护**" 窗格。
 
@@ -132,7 +134,7 @@ ms.locfileid: "75743465"
 
 - 模板的名称转换为新的标签名称，并且模板说明转换为标签工具提示。 
 
-- 如果模板的状态已发布，此设置会映射到标签的“已启用: 打开”，当你下次发布 Azure 信息保护策略时，该设置向用户显示为此标签。 如果模板的状态已存档，则此设置映射到标签的“已启用: 关闭”，不会显示为用户可用的标签。
+- 如果模板的状态已发布，此设置针对标签映射为“启用: 开”，当你下次发布 Azure 信息保护策略时，模板向用户显示为此标签。 如果模板的状态已存档，此设置针对标签映射为“启用: 关”，且模板不会向用户显示为可用标签。
 
 - 会保留保护设置，你可以根据需要进行编辑，还可以添加其他标签设置，如视觉对象标记和条件。
 
@@ -142,9 +144,9 @@ ms.locfileid: "75743465"
 
 创建一个具有 Azure（云密钥）保护设置的新标签时，此操作会在后台创建一个新的自定义模板，集成了 Rights Management 模板的服务和应用程序都可以访问该模板。
 
-1. 从 "**分类** > **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格中，选择 "**添加新标签**"。
+1. 从“分类” > “标签”菜单选项中：在 " **Azure 信息保护-标签**" 窗格中，选择 "**添加新标签**"。
 
-2. 在 "**标签**" 窗格中，保留默认值 "**已启用**：**打开**"，然后输入模板名称和说明的标签名称和说明。
+2. 在 "**标签**" 窗格中，保留默认的 "**已启用**"：开”，然后输入标签名称和说明用作模板名称和说明。
 
 3. 对于“设置包含此标签的文档和电子邮件的权限”，选择“保护”，然后选择“保护”：
     
@@ -158,7 +160,7 @@ ms.locfileid: "75743465"
     
     虽然标签已启用，但默认情况下，模板已存档。 因此，应用程序和服务可以使用该模板来保护文档和电子邮件，完成发布模板的最后一步。
 
-5. 从“分类” > “策略”菜单选项中，选择要包含新保护设置的策略。 然后选择“添加或删除标签”。 从 "**策略：添加或删除标签**" 窗格中，选择新创建的包含保护设置的标签，选择 **"确定"** ，然后选择 "**保存**"。
+5. 从“分类” > “策略”菜单选项中，选择要包含新保护设置的策略。 然后选择“添加或删除标签”。 从“策略: **在** 窗格中添加或删除标签，选择包含保护设置的新创建的标签，选择 **"确定"** ，然后选择 "**保存**"。
 
 ## <a name="next-steps"></a>后续步骤
 

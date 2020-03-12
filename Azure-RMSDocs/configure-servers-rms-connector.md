@@ -4,7 +4,7 @@ description: 此信息可帮助你配置将使用 Azure Rights Management (RMS) 
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 02/20/2020
+ms.date: 03/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 96e8c633201731796c7aecfdda0ef513fc2e261d
-ms.sourcegitcommit: 2abde0336bffda66ba7c629bfb5f0525264c3730
+ms.openlocfilehash: 0411b0360607da80dcabf5dfb8117957a5c67cf6
+ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77494860"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78973278"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
@@ -87,7 +87,7 @@ ms.locfileid: "77494860"
 
 ### <a name="how-to-use-the-server-configuration-tool-for-microsoft-rms-connector"></a>如何使用适用于 Microsoft RMS 连接器的服务器配置工具
 
-1.  如果你尚未下载适用于 Microsoft RMS 连接器的服务器配置工具的脚本 (GenConnectorConfig.ps1)，请从 [Microsoft 下载中心](https://go.microsoft.com/fwlink/?LinkId=314106)下载。
+1.  如果尚未下载适用于 Microsoft RMS 连接器的服务器配置工具的脚本（Genconnectorconfig.ps1），请从[Microsoft 下载中心](https://go.microsoft.com/fwlink/?LinkId=314106)下载该脚本。
 
 2.  将 GenConnectorConfig.ps1 文件保存在你要运行工具的计算机上。 如果要在本地运行该工具，则此计算机必须是你想要配置为与 RMS 连接器通信的服务器。 否则，你可将文件保存在任何计算机上。
 
@@ -124,7 +124,7 @@ ms.locfileid: "77494860"
 > [!NOTE]
 > 在将这些服务器配置为使用连接器之后，本地安装在这些服务器上的客户端应用程序可能无法使用 RMS。 发生这种情况的原因是应用程序试图使用连接器而不是直接使用 RMS，但这种方式不受支持。
 >
-> 此外，如果 Office 2010 本地安装在 Exchange 服务器上，则在将服务器配置为使用连接器之后，客户端应用的 IRM 功能可能从该计算机运行，但这种方式不受支持。
+> 此外，如果在 Exchange 服务器上本地安装 Office 2010，则在将服务器配置为使用连接器之后，客户端应用的 IRM 功能可能从该计算机运行，但这不受支持。
 >
 > 在上述两种情况下，你必须在没有配置为使用连接器的单独计算机上安装客户端应用程序。 然后它们即可正确地直接使用 RMS。
 
@@ -183,7 +183,7 @@ ms.locfileid: "77494860"
 
 -   SharePoint Server 2010
 
-运行 SharePoint 2016 或 SharePoint 2013 的服务器也必须运行 RMS 连接器支持的 MSIPC 客户端 2.1 版。 若要确保使用受支持的版本，请从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=38396)下载最新的客户端。
+运行 SharePoint 2019、2016或 SharePoint 2013 的服务器还必须运行 RMS 连接器支持的 MSIPC 客户端2.1 版本。 若要确保使用受支持的版本，请从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=38396)下载最新的客户端。
 
 > [!WARNING]
 > MSIPC 2.1 客户端有多个版本，因此请确保安装版本 1.0.2004.0 或更高版本。
@@ -200,15 +200,15 @@ ms.locfileid: "77494860"
 
     -   运行适用于 Microsoft RMS 连接器的服务器配置工具。 有关详细信息，请参阅[如何使用适用于 Microsoft RMS 连接器的服务器配置工具](#how-to-use-the-server-configuration-tool-for-microsoft-rms-connector)。
 
-        例如，若要在本地运行该工具以配置运行 SharePoint 2016 或 SharePoint 2013 的服务器，请执行以下操作：
+        例如，若要在本地运行该工具以配置运行 SharePoint 2019、2016或 SharePoint 2013 的服务器，请执行以下操作：
 
         ```
         .\GenConnectorConfig.ps1 -ConnectorUri https://rmsconnector.contoso.com -SetSharePoint2013
         ```
 
-    -   如果你正在使用 SharePoint 2016 或 SharePoint 2013，请使用 [RMS 连接器的注册表设置](rms-connector-registry-settings.md)中的信息在服务器上手动添加注册表设置，进行手动注册表编辑。 
+    -   如果你使用的是 SharePoint 2019、2016或 SharePoint 2013，请使用[RMS 连接器的注册表设置](rms-connector-registry-settings.md)中的信息，在服务器上手动添加注册表设置，进行手动注册表编辑。 
 
-3.  在 SharePoint 中启用 IRM。 有关详细信息，请参阅 SharePoint 库中的 [配置信息权限管理 (SharePoint Server 2010)](https://technet.microsoft.com/library/hh545607%28v=office.14%29.aspx) 。
+3.  在 SharePoint 中启用 IRM。 有关详细信息，请参阅 SharePoint 库中的[配置信息权限管理 (SharePoint Server 2010)](https://technet.microsoft.com/library/hh545607%28v=office.14%29.aspx)。
 
     当你按照这些说明操作时，必须通过指定“使用此 RMS 服务器”，将 SharePoint 配置为使用连接器，然后输入你配置的负载平衡连接器 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，如果连接器名称为 https：\//connector.contoso.com，则配置将如下图所示：
 

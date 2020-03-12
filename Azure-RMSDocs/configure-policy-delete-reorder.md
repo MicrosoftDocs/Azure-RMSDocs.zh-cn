@@ -4,26 +4,28 @@ description: 可以删除或重排用户可见的 Azure 信息保护标签。
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 03/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 5d15bf43294e634844dee2d856b9fe67cccd78ee
-ms.sourcegitcommit: 3b50727cb50a612b12f248a5d18b00175aa775f7
+ms.openlocfilehash: 3edb56da95274608dae79e3e0694eda67737228c
+ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75742985"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78972567"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>如何删除或重排 Azure 信息保护的标签
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 可以删除或重排用户在 Office 应用程序中看到的 Azure 信息保护标签，方法是为标签选择这些操作。
 
@@ -59,15 +61,15 @@ ms.locfileid: "75742985"
 
 1. 如果尚未执行此操作，请打开新的浏览器窗口，并[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)。 然后导航到“Azure 信息保护”窗格。 
     
-    例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”并选择“Azure 信息保护”。
 
-2. 从 "**分类** > **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格中，执行以下一项或多项操作： 
+2. 从“分类” > “标签”菜单选项中：在 " **Azure 信息保护-标签**" 窗格中，执行以下一项或多项操作： 
 
-    - 删除标签：对于你想要删除的标签，右键单击或选择上下文菜单 (...)，单击“删除此标签”，然后单击“确定”以确认。 
+    - 删除标签：针对想要删除的标签，右键单击或选择上下文菜单（“...”），单击“删除此标签”，然后单击“确定”以确认。 
 
-    - 禁用标签：选择你想要禁用的标签。 在 "**标签**" 窗格中 **，选择**"**关闭**"，然后单击 "**保存**"。
+    - 禁用标签：选择要禁用的标签。 在 "**标签**" 窗格中 **，选择**"**关闭**"，然后单击 "**保存**"。
 
-    - 重排标签：针对想要重排的标签，右键单击或选择上下文菜单 ( **...** )，然后单击“**上移**”或“**下移**”直到标签位于所需的顺序。  
+    - 重排标签：针对想要重排的标签，右键单击或选择上下文菜单（“...”），然后单击“上移”或“下移”，直到标签成为所需的顺序。  
 
 ## <a name="next-steps"></a>后续步骤
 

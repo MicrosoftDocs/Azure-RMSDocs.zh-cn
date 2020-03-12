@@ -4,24 +4,27 @@ description: 当文档或电子邮件中分配一个标签时，可以选择几�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/02/2020
+ms.date: 03/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 66e209340ada675a2a91b72e3553d98dc309c96b
-ms.sourcegitcommit: 63ce6f2a405d8b649c7a74194beec0a8855a5441
+ms.openlocfilehash: 6492c4dcbe9ba408d2d4efd9c751933a6eefe6b4
+ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78238494"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78972823"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
 >适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
+
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。 
 
@@ -100,13 +103,16 @@ ms.locfileid: "78238494"
 
 - `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016 年 8 月 16 日下午 1:30
 
+> [!NOTE]
+>此语法区分大小写。
+
 例如：如果为“常规”标签页脚指定字符串 `Document: ${Item.Name}  Classification: ${Item.Label}`，则应用于名为 project.docx 的文档的页脚文本将为 Document: project.docx  Classification: General。
 
 > [!NOTE]
 > Azure 信息保护统一标签客户端当前不支持使用 `${User.Name}` 和/或 `${User.PrincipalName}` 变量。 
 
 >[!TIP]
-> 还使用[域代码将标签名称插入](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification)文档或模板中。
+> 还可以使用[字段代码将标签名称插入](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification)到文档或模板中。
 
 ## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记
 
@@ -116,7 +122,8 @@ ms.locfileid: "78238494"
 
     ${If.App.<application type>}<your visual markings text> ${If.End}
 
-此语句中的该语法区分大小写。
+> [!NOTE]
+>此语句中的该语法区分大小写。
 
 示例：
 

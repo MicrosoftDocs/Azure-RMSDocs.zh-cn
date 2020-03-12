@@ -4,7 +4,7 @@ description: 管理员配置和使用 Azure 信息保护的文档跟踪的说明
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 03/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: doctrack
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9a04156d41bd062f4f182fd4133d938c189157e5
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.openlocfilehash: e4537e9a84f83eaf3865e01dbf4c5b702a8bbc50
+ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117827"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78973091"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>管理员指南：配置和使用 Azure 信息保护的文档跟踪
 
@@ -26,6 +26,8 @@ ms.locfileid: "76117827"
 >
 > *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 如果你有[支持文档跟踪的订阅](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。 文档跟踪为用户和管理员提供有关受保护文档访问时间的信息，如有必要，可以撤销已跟踪的文档。
 
@@ -39,7 +41,7 @@ ms.locfileid: "76117827"
 
 如果在你的组织中由于隐私要求而禁止显示所有文档跟踪信息，你可以使用[AipServiceDocumentTrackingFeature](/powershell/module/aipservice/disable-aipservicedocumenttrackingfeature) cmdlet 禁用文档跟踪。 
 
-此 cmdlet 禁用对文档跟踪站点的访问，以使组织中的所有用户无法跟踪或撤销对已保护文档的访问权限。 你随时可以使用 [Enable-AipServiceDocumentTrackingFeature](/powershell/module/aipservice/enable-aipservicedocumenttrackingfeature) 来重新启用文档跟踪，并可以使用 [Get-AipServiceDocumentTrackingFeature](/powershell/module/aipservice/get-aipservicedocumenttrackingfeature) 来查看当前是已启用还是已禁用文档跟踪。 
+此 cmdlet 禁用对文档跟踪站点的访问，以使组织中的所有用户无法跟踪或撤销对已保护文档的访问权限。 你可以随时使用[AipServiceDocumentTrackingFeature](/powershell/module/aipservice/enable-aipservicedocumenttrackingfeature)重新启用文档跟踪，还可以使用 AipServiceDocumentTrackingFeature 检查当前是否启用或禁用了文档[跟踪。](/powershell/module/aipservice/get-aipservicedocumenttrackingfeature) 
 
 启用文档跟踪站点后，它会默认显示尝试访问受保护文档的人员的电子邮件地址、这些人员尝试访问这些文档的时间以及他们所在的位置等信息。 这个级别的信息有助于确定使用共享文档的方式，以及在发现可疑活动时，是否应撤销这些文档。 但是，出于隐私原因，你可能需要为部分或所有用户禁用此用户信息。 
 
@@ -56,11 +58,11 @@ ms.locfileid: "76117827"
 
 你可以使用以下 cmdlet 从文档跟踪站点下载日志记录信息：
 
-- [Get-AipServiceTrackingLog](/powershell/module/aipservice/Get-AipServiceTrackingLog)
+- [AipServiceTrackingLog](/powershell/module/aipservice/Get-AipServiceTrackingLog)
     
     此 cmdlet 向指定用户返回有关受保护文档的跟踪信息，该用户为文档提供保护（Rights Management 颁发者）或已访问受保护的文档。 使用此 cmdlet 来帮助回答问题“指定用户跟踪或访问了哪些受保护的文档？”
 
-- [Get-AipServiceDocumentLog](/powershell/module/aipservice/Get-AipServiceDocumentLog)
+- [AipServiceDocumentLog](/powershell/module/aipservice/Get-AipServiceDocumentLog)
     
     如果用户为文档提供保护（Rights Management 颁发者）或者是文档的 Rights Management 所有者，或者受保护的文档被配置为直接授予该用户访问权限，那么此 cmdlet 会对该指定用户返回有关跟踪文档的保护信息。 使用此 cmdlet 来帮助回答问题“如何保护指定用户的文档？”
 
