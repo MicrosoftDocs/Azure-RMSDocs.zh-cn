@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 02/20/2020
+ms.date: 03/11/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b4ddfa8a7746de36030cb38b726949a19eebf73d
-ms.sourcegitcommit: dd3143537e37951179b932993055a868191719b5
+ms.openlocfilehash: 76109514c88b90826d2f258f86f2bc97dc7cbce1
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77507699"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79404940"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -118,7 +118,7 @@ ms.locfileid: "77507699"
 
 将*AdvancedSettings*参数与[LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-labelpolicy?view=exchange-ps)和[LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-labelpolicy?view=exchange-ps)一起使用。
 
-|设置|应用场景和说明|
+|Setting|应用场景和说明|
 |----------------|---------------|
 |AttachmentAction|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 |AttachmentActionTip|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments) 
@@ -146,6 +146,7 @@ ms.locfileid: "77507699"
 |RemoveExternalContentMarkingInApp|[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)|
 |ReportAnIssueLink|[为用户添加“报告问题”](#add-report-an-issue-for-users)|
 |RunAuditInformationTypesDiscovery|[禁止将文档中发现的敏感信息发送到 Azure 信息保护分析](#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)|
+|RunPolicyInBackground|[开启在后台持续运行的分类](#turn-on-classification-to-run-continuously-in-the-background)
 |ScannerConcurrencyLevel|[限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner)|
 
 用于检查标签策略设置对名为 "Global" 的标签策略有效的示例 PowerShell 命令：
@@ -156,7 +157,7 @@ ms.locfileid: "77507699"
 
 使用带有[新标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-label?view=exchange-ps)和[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)的*AdvancedSettings*参数。
 
-|设置|应用场景和说明|
+|Setting|应用场景和说明|
 |----------------|---------------|
 |颜色|[指定标签的颜色](#specify-a-color-for-the-label)|
 |customPropertiesByLabel|[应用标签时应用自定义属性](#apply-a-custom-property-when-a-label-is-applied)|
@@ -305,7 +306,7 @@ ms.locfileid: "77507699"
 
 可以使用两种方法从其他标记解决方案中删除分类。 第一种方法从 Word 文档中删除任何形状，其中的形状名称与 advanced 属性**WordShapeNameToRemove**中定义的名称相匹配，第二种方法允许您从 Word、Excel 和 PowerPoint 文档中删除或替换**RemoveExternalContentMarkingInApp**高级属性中定义的基于文本的标头或表尾。 
 
-### <a name="use-the-wordshapenametoremove-advanced-property-preview"></a>使用 WordShapeNameToRemove 高级属性（预览）
+### <a name="use-the-wordshapenametoremove-advanced-property"></a>使用 WordShapeNameToRemove 高级属性
 
 *版本2.6.101.0 和更高版本支持**WordShapeNameToRemove**高级属性*
 
@@ -831,7 +832,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求：安全孤岛标签为 "机密" 的文档应由 Azure 信息保护重新标记为 "机密"。
 
-在本示例中：
+在此示例中：
 
 - Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中。
 
@@ -849,7 +850,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求：通过安全孤岛标记为 "敏感" 的文档应由 Azure 信息保护重新标记为 "高度机密"。
 
-在本示例中：
+在此示例中：
 
 - Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中。
 
@@ -867,7 +868,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求：你有两个安全孤岛标签，其中包含 "内部" 一词，并且你希望 Azure 信息保护统一标签客户端将具有这些安全孤岛标签的文档重新标记为 "常规"。
 
-在本示例中：
+在此示例中：
 
 - Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中。
 
@@ -954,7 +955,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求： Azure 信息保护统一标签客户端标记为 "机密" 的文档应具有名为 "分类" 的附加自定义属性，其值为 "Secret"。
 
-在本示例中：
+在此示例中：
 
 - 敏感度标签命名为 "**机密**"，并创建名为 "Secret" 的自定义**属性，其**值为 "**机密**"。
 
@@ -1018,6 +1019,29 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
     Set-Label -Identity "Confidential" -AdvancedSettings @{DefaultSubLabelId="8faca7b8-8d20-48a3-8ea2-0f96310a848e"}
 
+## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>开启在后台持续运行的分类
+
+此配置使用 "标签[高级" 设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。 此设置处于预览状态，并且可能会更改。
+
+当你配置此设置时，它会更改 Azure 信息保护统一标签客户端如何向文档应用自动和建议标签的默认行为：
+
+对于 Word、Excel 和 PowerPoint，自动分类在后台持续运行。
+
+此行为不会对 Outlook 变化。
+当 Azure 信息保护统一标签客户端定期检查文档中指定的条件规则时，此行为将为存储在 SharePoint 中的文档启用自动和建议的分类和保护联机. 由于已运行条件规则，因此大型文件可实现更快保存。
+
+条件规则不会作为用户类型实时运行。 而会在文档发生修改时作为后台任务定期运行。
+
+若要配置此高级设置，请输入以下字符串：
+
+- 键：RunPolicyInBackground
+- 值：True
+
+
+
+示例 PowerShell 命令： 
+
+    Set-LabelPolicy -Identity PolicyName -AdvancedSettings @{RunPolicyInBackground = "true"}
 
 ## <a name="specify-a-color-for-the-label"></a>指定标签的颜色
 

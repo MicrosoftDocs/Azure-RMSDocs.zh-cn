@@ -14,11 +14,11 @@ ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 21d7bd36101ed2b1cfe38c3501801a06839b027b
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117793"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79404073"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护客户端文件和客户端使用情况日志记录
 
@@ -42,7 +42,7 @@ ms.locfileid: "76117793"
 
 ## <a name="usage-logging-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的使用情况日志记录
 
-客户端将用户活动记录到本地 Windows 事件日志“应用程序和服务日志” > “Azure 信息保护”中。 这些事件包括以下信息：
+客户端将用户活动记录到本地 Windows 事件日志“应用程序和服务日志” **“Azure 信息保护”中** > 。 这些事件包括以下信息：
 
 - 客户端版本、策略 ID
 
@@ -50,7 +50,7 @@ ms.locfileid: "76117793"
 
 - 文件名和位置
 
-- 操作:
+- 操作：
 
     - 设置标签：信息 ID 101
     
@@ -78,7 +78,7 @@ ms.locfileid: "76117793"
     
 - 操作源：
     
-    - Manual 
+    - 手动 
     
     - 建议
     
@@ -86,7 +86,7 @@ ms.locfileid: "76117793"
     
     - 系统（用于登录和下载策略）
     
-    - 默认值
+    - 默认
     
 - 操作前后的标签 
     

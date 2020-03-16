@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 543fd7af43dc235fbe8faca2f0dae332b0b493f1
-ms.sourcegitcommit: 1eed9a57596b67255c45a604595cc77a56350557
+ms.openlocfilehash: c8baa3a52c257b82f3cc7e6091bf316cdb5111a4
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78238624"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79403801"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -61,11 +61,21 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 此客户端正在替换 Azure 信息保护客户端（经典）。 若要将特性和功能与经典客户端进行比较，请参阅[比较适用于 Windows 计算机的标记客户端](use-client.md#compare-the-labeling-clients-for-windows-computers)。
 
-## <a name="version-261010-preview"></a>版本2.6.101.0 （预览版）
+## <a name="version-261110"></a>版本2.6.111。0 
 
-**发布**1/15/2020
+**发布**03/09/2020
 
 **新功能：**
+
+- [Scanner](../deploy-aip-scanner.md)的通用版本，用于检查和标记本地数据存储中的文档。 
+
+- [扫描仪](../deploy-aip-scanner.md)相关：
+    - [更轻松地进行本地 SharePoint 和子网站发现](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo#permission-users-to-scan-sharepoint-repositories)。 不再需要设置每个特定站点。 
+    - 添加了[SQL 块区大小](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#storage-requirements-and-capacity-planning-for-sql-server)的高级属性。
+    - 管理员现在可以[停止现有扫描，并](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#stop-a-scan)在对默认标签进行更改时执行重新扫描。
+    - 默认情况下，现在，扫描器会设置最小遥测数据，以提高扫描速度，缩短日志大小，并且信息类型现在会缓存在数据库中。 了解有关[扫描仪优化](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#optimizing-the-performance-of-the-scanner)的详细信息。 
+    - 现在，扫描仪支持对数据库和服务进行单独的部署，而只有数据库部署需要**Sysadmin**权限。
+    - 对扫描程序性能的改进。 
 
 - 修改[PowerShell](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-powershell) cmdlet **set-aipfilelabel**以允许从 PST、RAR、7zip 和 MSG 文件中删除保护。 此功能在默认情况下处于禁用状态，必须使用[LabelPolicy](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) cmdlet 启用此功能[，如下所述。](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-removal-of-protection-from-compressed-files)  
 
@@ -79,15 +89,10 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 - New **WordShapeNameToRemove** advanced 属性允许删除第三方应用程序所做的 Word 文档中的内容标记。 详细了解如何[识别现有的形状名称，以及如何使用**WordShapeNameToRemove**将其定义为删除](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solutions)。 
 
-- [扫描仪](../deploy-aip-scanner.md)相关功能：
-    - [更轻松地进行本地 SharePoint 和子网站发现](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo#permission-users-to-scan-sharepoint-repositories)。 不再需要设置每个特定站点。 
-    - 添加了[SQL 块区大小](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#storage-requirements-and-capacity-planning-for-sql-server)的高级属性。
-    - 管理员现在可以[停止现有扫描，并](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#stop-a-scan)在对默认标签进行更改时执行重新扫描。
-    - 默认情况下，现在，扫描器会设置最小遥测数据，以提高扫描速度，缩短日志大小，并且信息类型现在会缓存在数据库中。 了解有关[扫描仪优化](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#optimizing-the-performance-of-the-scanner)的详细信息。 
+
 
 **纠正**
 
-- 现在，扫描仪支持对数据库和服务进行单独的部署，而只有数据库部署需要**Sysadmin**权限。 
 - 如果用户尝试不成功地打开受保护的 TIFF 文件，并且 tiff 文件是由 RightFax 创建的，则 TIFF 文件现在会打开并保持稳定。  
 - 已解决受保护的 txt 和 PDF 文件的以前损坏。
 - 更正了 Log Analytics 中的**自动**和**手动**标记之间的不一致标签。 
@@ -100,6 +105,8 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 ## <a name="version-25330"></a>版本2.5.33。0
 
 **发布**日期：10/23/2019
+
+支持，09/09/2020
 
 **新功能：**
 
