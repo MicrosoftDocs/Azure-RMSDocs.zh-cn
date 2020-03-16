@@ -13,11 +13,11 @@ ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
 ms.openlocfilehash: 5e8cf81bc2f9f4de76bdc868603af0cf7e6a76a3
-ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75960772"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79403512"
 ---
 # <a name="azure-information-protection-unified-labeling-user-guide"></a>Azure 信息保护统一标签用户指南 
 
@@ -27,7 +27,7 @@ ms.locfileid: "75960772"
 
 适用于 Windows 的 Azure 信息保护统一标签客户端可帮助你保护重要文档和电子邮件，使其免受不应看到的用户的保护，即使你的电子邮件已转发或你的文档保存到其他位置也是如此。 还可通过此客户端打开他人已通过使用 Azure 信息保护中的 Rights Management 保护技术保护的文件。
 
-你只需一台至少运行 Windows 7 with Service Pack 1 的计算机即可。 然后从 Microsoft 下载并安装此免费客户端。
+你所需的只是至少运行 Windows 7 Service Pack 1 的计算机。 然后从 Microsoft 下载并安装此免费客户端。
 
 
 ## <a name="what-do-you-want-to-do"></a>要执行什么操作？

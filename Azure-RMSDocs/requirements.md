@@ -14,23 +14,23 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: e639a94bde4daf481fc0a715492edeb702ba2ddd
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117878"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79403954"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 为组织部署 Azure 信息保护之前，请确保具备以下必备条件。 
 
 ## <a name="subscription-for-azure-information-protection"></a>Azure 信息保护订阅
 
-**使用 Azure 信息保护客户端（经典或统一标签）或扫描程序进行分类、标记和保护**：必须具有[azure 信息保护计划](https://azure.microsoft.com/pricing/details/information-protection/)。 
+**使用 Azure 信息保护客户端（经典或统一标签）或扫描程序进行分类、标记和保护**：必须拥有一个 [Azure 信息保护计划](https://azure.microsoft.com/pricing/details/information-protection/)。 
 
-**若仅需保护**，必须拥有[包括 Azure 信息保护的 Office 365计划](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
+**对于仅保护**：必须拥有一个[包括 Azure 信息保护的 Office 365 计划](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
 
 若要确认组织的订阅包括所需的 Azure 信息保护功能，请查看 [Azure 信息保护定价](https://azure.microsoft.com/pricing/details/information-protection)页面中的功能列表。
 
@@ -75,7 +75,7 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 - Windows 8（x86、x64）
 
-- Windows Server Standard 2012 R2
+- Windows Server 2019
 
 - Windows Server 2016
 
@@ -95,9 +95,9 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 Azure 信息保护客户端具有各自的管理指南中列出的其他先决条件：
 
-- Azure 信息保护统一标签客户端：[先决条件](./rms-client/clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)
+- Azure 信息保护统一标签客户端：[필수 구성 요소](./rms-client/clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)
 
-- Azure 信息保护客户端：[先决条件](./rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client)
+- Azure 信息保护客户端：[필수 구성 요소](./rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client)
 
 ## <a name="applications"></a>应用程序
 

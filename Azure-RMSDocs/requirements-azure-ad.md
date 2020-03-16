@@ -13,15 +13,15 @@ ms.subservice: prereqs
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 6a3ed3272eecd25bd403d6a45a82f937fe26a03a
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72890286"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79404634"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 必须拥有 Azure AD 目录才能使用 Azure 信息保护。 可以使用此目录中的帐户登录 Azure 门户，并且可以在该门户中进行 Azure 信息保护标签和 Azure Rights Management 模板的配置和管理等操作。
 
@@ -72,9 +72,9 @@ ms.locfileid: "72890286"
 
 -   对于 Microsoft 托管的租户（你拥有 Azure Active Directory 或 Office 365）：
 
-    - 配置 Azure MFA 来为用户强制实施 MFA。 有关说明，请参阅多重身份验证文档中的[在云中的 Azure 多重身份验证入门](/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
+    - 配置 Azure MFA 来为用户强制实施 MFA。 有关说明，请参阅多因素身份验证文档中的[在云中的 Azure 多因素身份验证入门](/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
 
-        有关 Azure MFA 的详细信息，请参阅[什么是 Azure 多重身份验证？](/multi-factor-authentication/multi-factor-authentication)
+        有关 Azure MFA 的详细信息，请参阅[什么是 Azure 多因素身份验证？](/multi-factor-authentication/multi-factor-authentication)
 
 - 对于联合租户（你在本地操作联合身份验证服务器）：
 

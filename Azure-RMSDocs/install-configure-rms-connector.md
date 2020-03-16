@@ -14,11 +14,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 4d4ba8a3093e1bef32e42b562c93e787e603614b
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117980"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79404141"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装并配置 Azure Rights Management 连接器
 
@@ -50,7 +50,7 @@ ms.locfileid: "76117980"
 
 4.  在 Microsoft Rights Management 连接器设置的 "欢迎" 页上，选择 **"在计算机上安装 Microsoft Rights Management 连接器**"，然后单击 "**下一步**"。
 
-5.  阅读并同意 RMS 连接器许可条款，然后单击“下一步”。
+5.  阅读并同意 RMS 连接器许可条款，然后单击 **“下一步”** 。
 
 若要继续，请输入帐号和密码以配置 RMS 连接器。
 
@@ -106,9 +106,9 @@ ms.locfileid: "76117980"
 
 -   一组连接器安全令牌，授权对 Azure RMS 所进行的操作。 可从 Azure RMS 下载这些令牌，并安装在注册表中的本地计算机上。 它们通过使用数据保护应用程序编程接口 (DPAPI) 和本地系统帐户凭据得到保护。
 
-在向导的最后一页上执行以下操作，然后单击“完成”：
+在向导的最后一页上执行以下操作，然后单击 **“完成”** ：
 
--   如果这是你安装的第一个连接器，此时请不要选择“启动连接器管理员控制台对服务器授权” 。 在安装第二个（或最后一个）RMS 连接器之后，再选择此选项。 请在至少一台其他计算机上再次运行向导。 你必须安装至少两个连接器。
+-   如果这是你安装的第一个连接器，此时请不要选择“启动连接器管理员控制台对服务器授权”。 在安装第二个（或最后一个）RMS 连接器之后，再选择此选项。 请在至少一台其他计算机上再次运行向导。 你必须安装至少两个连接器。
 
 -   如果你已安装第二个（或最后一个）连接器，请选择“启动连接器管理员控制台对服务器授权”。
 
@@ -126,7 +126,7 @@ ms.locfileid: "76117980"
 ## <a name="authorizing-servers-to-use-the-rms-connector"></a>授权服务器使用 RMS 连接器
 在至少两台计算机上安装 RMS 连接器之后，即可为你希望其使用 RMS 连接器的服务器和服务授权。 例如运行 Exchange Server 2013 或 SharePoint Server 2013 的服务器。
 
-若要定义这些服务器，请运行 RMS 连接器管理工具，然后向允许服务器列表添加条目。 如果你在 Microsoft Rights Management 连接器设置向导结束时选择了“启动连接器管理员控制台对服务器授权” ，则可运行此工具，也可从向导单独运行此工具。
+若要定义这些服务器，请运行 RMS 连接器管理工具，然后向允许服务器列表添加条目。 如果你在 Microsoft Rights Management 连接器设置向导结束时选择了“启动连接器管理员控制台对服务器授权”，则可运行此工具，也可从向导单独运行此工具。
 
 当你向这些服务器授权时，请注意以下事项：
 
@@ -134,14 +134,14 @@ ms.locfileid: "76117980"
 
 - 你可以通过指定 Active Directory 安全或分发组，或由多台服务器使用的服务帐户，添加多个服务器作为单个条目。 当你使用此配置时，服务器组共享相同的 RMS 证书，并且被视为其中任何一个服务器保护的内容的所有者。 为了最大程度地减少管理开销，我们建议你使用这种单组配置，而不是使用单独服务器的配置，为组织的 Exchange 服务器或 SharePoint 服务器场授权。
 
-在“被允许使用连接器的服务器”页上，单击“添加”。
+在 **“被允许使用连接器的服务器”** 页上，单击 **“添加”** 。
 
 > [!NOTE]
 > 在 Azure RMS 中授权服务器等效于 AD RMS 配置，都可将 NTFS 权限手动应用到服务或服务器计算机帐户的 ServerCertification.asmx 中，并可向用户手动授予到 Exchange 帐户的超级权限。 此连接器上无需将 NTFS 权限应用到 ServerCertification.asmx。
 
 
 ### <a name="add-a-server-to-the-list-of-allowed-servers"></a>将服务器添加到允许服务器列表。
-在“允许服务器使用连接器”页上，输入对象的名称，或进行浏览以确定要授权的对象 。
+在 **“允许服务器使用连接器”** 页上，输入对象的名称，或进行浏览以确定要授权的对象。
 
 必须为正确的对象授权，这一点非常重要。 若要让服务器使用连接器，必须选择运行本地服务（例如 Exchange 或 SharePoint）的帐户来进行授权。 例如，如果服务作为配置的服务帐户运行，请将该服务帐户的名称添加到列表。 如果服务作为本地系统运行，请添加该计算机对象的名称（例如 SERVERNAME$）。 最佳做法是创建一个包含这些帐户的组并指定该组，而不是指定单独的服务器名称。
 
@@ -176,7 +176,7 @@ ms.locfileid: "76117980"
 > [!IMPORTANT]
 > 在将 Exchange 或 SharePoint 服务器配置为使用连接器之后，我们建议你不要更改该名称，因为你随后必须清除这些服务器的所有 IRM 配置，然后重新进行配置。
 
-在 DNS 中创建名称并配置 IP 地址之后，请配置该地址的负载平衡，将流量定向到连接器服务器。 你可以使用任何基于 IP 的负载平衡器来达到此目的，该负载平衡器应包括 Windows Server 中的网络负载平衡 (NLB) 功能。 有关详细信息，请参阅 [负载平衡部署指南](https://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx)。
+在 DNS 中创建名称并配置 IP 地址之后，请配置该地址的负载平衡，将流量定向到连接器服务器。 你可以使用任何基于 IP 的负载均衡器来达到此目的，该负载均衡器应包括 Windows Server 中的网络负载均衡 (NLB) 功能。 有关详细信息，请参阅 [负载平衡部署指南](https://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx)。
 
 使用以下设置来配置 NLB 群集：
 
@@ -203,9 +203,9 @@ ms.locfileid: "76117980"
 > [!TIP]
 > 你可以使用以下信息和资源，帮助请求和安装服务器身份验证证书，并将此证书绑定到 IIS 中的默认网站：
 >
-> - 如果使用 Active Directory 证书服务 (AD CS) 和企业证书颁发机构 (CA) 来部署这些服务器身份验证证书，则你可以复制和使用 Web 服务器证书模板。 此证书模板使用“在请求中提供”作为证书使用者名称，这意味着在你请求证书时，可以提供 RMS 连接器名称的 FQDN 作为证书使用者名称或使用者备选名称 。
-> -   如果你使用独立 CA 或从其他公司购买此证书，请参阅 TechNet 上 [Web 服务器 (IIS)](https://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 文档库中的[配置 Internet 服务器证书 (IIS 7)](https://technet.microsoft.com/library/cc731977%28v=ws.10%29.aspx)。
-> - 若要将 IIS 配置为使用证书，请参阅 TechNet 上 [Web 服务器 (IIS)](https://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 文档库中的[添加网站绑定 (IIS 7)](https://technet.microsoft.com/library/cc731692.aspx)。
+> - 如果使用 Active Directory 证书服务 (AD CS) 和企业证书颁发机构 (CA) 来部署这些服务器身份验证证书，则你可以复制和使用 Web 服务器证书模板。 此证书模板使用 **“在请求中提供”** 作为证书使用者名称，这意味着在你请求证书时，可以提供 RMS 连接器名称的 FQDN 作为证书使用者名称或使用者备选名称。
+> -   如果你使用独立 CA 或从其他公司购买此证书，请参阅 TechNet 上 [Web 服务器 (IIS)](https://technet.microsoft.com/library/cc731977%28v=ws.10%29.aspx) 文档库中的[配置 Internet 服务器证书 (IIS 7)](https://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx)。
+> - 若要将 IIS 配置为使用证书，请参阅 TechNet 上 [Web 服务器 (IIS)](https://technet.microsoft.com/library/cc731692.aspx) 文档库中的[添加网站绑定 (IIS 7)](https://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx)。
 
 ## <a name="configuring-the-rms-connector-for-a-web-proxy-server"></a>为 Web 代理服务器配置 RMS 连接器
 如果你的连接器服务器安装在没有直接 internet 连接的网络中，并且需要手动配置用于出站 internet 访问的 web 代理服务器，则必须在 RMS 连接器的这些服务器上配置注册表。
@@ -227,9 +227,9 @@ ms.locfileid: "76117980"
 
 -   运行 Windows Server 2012 或 Windows Server 2012 R2 （所有版本）、Windows 8.1、Windows 8 的物理或虚拟计算机。
 
--   至少 1 GB 的 RAM。
+-   至少 1 GB 的 RAM。
 
--   至少 64 GB 的磁盘空间。
+-   至少 64 GB 的磁盘空间。
 
 -   至少一个网络接口。
 

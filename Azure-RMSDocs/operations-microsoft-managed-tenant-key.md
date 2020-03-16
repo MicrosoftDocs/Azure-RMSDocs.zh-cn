@@ -14,15 +14,15 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: ee94f0a4966ce16ae8b87f23bf4a9a734cc015a0
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73444981"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79403920"
 ---
-# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
+# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>由 Microsoft 管理：租户密钥生命周期操作
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 如果由 Microsoft 管理 Azure 信息保护的租户密钥（默认），请阅读以下部分，获取与此拓扑相关的生命周期操作的详细信息。
 
@@ -75,14 +75,14 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
     ```
     AadrmTpd.exe -createkey
     ```
-    这样可以生成 RSA 密钥对，并将公有部分和私有部分保存为当前文件夹中的文件。 例如：**PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** 和 **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**。
+    这样可以生成 RSA 密钥对，并将公有部分和私有部分保存为当前文件夹中的文件。 例如：PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt 和 PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt。
 
     回复来自 CSS 的电子邮件，附加名称以 **PublicKey** 开头的文件。 CSS 随后向你发送一个作为 .xml 文件的 TPD 文件，该文件使用你的 RSA 密钥进行加密。 将此文件复制到与你最初运行 AadrmTpd 工具时的相同文件夹，并使用以 **PrivateKey** 开头的文件和来自 CSS 的文件再次运行该工具。 例如：
 
     ```
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml
     ```
-    此命令应输出两个文件：一个文件包含受密码保护的 TPD 的纯文本密码，另一个文件则是受密码保护的 TPD 本身。 这些文件具有新的 GUID，例如：
+    此命令的输出应该是两个文件：一个文件包含受密码保护的 TPD 的纯文本密码，另一个文件则是受密码保护的 TPD 本身。 这些文件具有新的 GUID，例如：
      
   - Password-5E4C2018-8C8C-4548-8705-E3218AA1544E.txt
 

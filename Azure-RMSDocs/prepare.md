@@ -13,15 +13,15 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 56a61e558f72812517d21201aa6e4215624d903d
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934579"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79404974"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>准备用户和组以便使用 Azure 信息保护
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 在为组织部署 Azure 信息保护之前，请确保你的组织租户在 Azure AD 中具有用户和组帐户。
 
@@ -79,7 +79,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
     - 对于 Azure AD：[将自定义域名添加到 Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 
-    - 对于 Office 365：[向 office 365 添加域](/office365/admin/setup/add-domain?view=o365-worldwide)
+    - 对于 Office 365：[将域添加到 Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
 
 - 仅当租户中的帐户在 Azure AD proxyAddresses 属性中没有值时，才会使用 **Azure AD userPrincipalName** 属性。 例如，你可以在 Azure 门户中创建用户，或者创建没有邮箱的 Office 365 用户。
 
@@ -132,7 +132,7 @@ Azure 信息保护使用用户和组的方式有三种：
     Connect-MsolService
 
 
-注意：如果此命令不起作用，可以运行 `Install-Module MSOnline` 安装 MSOnline 模块。
+注意:如果此命令不起作用，可以运行 `Install-Module MSOnline` 安装 MSOnline 模块。
 
 接下来，配置 PowerShell 会话，以便它不会截断该值：
 
@@ -177,7 +177,7 @@ Azure 信息保护使用用户和组的方式有三种：
 > [!TIP]
 > 你可以使用 Export-Csv cmdlet 将结果导出到电子表格，以便于进行管理，例如搜索和批量编辑以进行导入。
 >
-> 例如：`Get-MsolGroup | select DisplayName, ProxyAddresses | Export-Csv -Path UserAccounts.csv`
+> 例如： `Get-MsolGroup | select DisplayName, ProxyAddresses | Export-Csv -Path UserAccounts.csv`
 
 ### <a name="confirm-group-accounts-are-ready-for-azure-information-protection"></a>确认已准备好组帐户用于 Azure 信息保护
 
@@ -214,7 +214,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 - 从 2018 年 2 月开始：如果包含 Azure Rights Management 或 Azure 信息保护的订阅是在当月或之后获取的，将自动为你激活此服务。 
 
-- 如果你的订阅是在 2018 年 2 月之前获取的：必须自己激活此服务。 
+- 如果订阅是在 2018 年 2 月之前获取的：则必须自己激活此服务。 
 
 有关详细信息，包括检查激活状态，请参阅[从 Azure 信息保护中激活保护服务](./activate-service.md)。
 

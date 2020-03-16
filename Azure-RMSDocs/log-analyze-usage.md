@@ -14,15 +14,15 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 63fbe078b6f1a5cbae120e869cc139dda9c8850e
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934715"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79404192"
 ---
 # <a name="logging-and-analyzing-the-protection-usage-from-azure-information-protection"></a>记录和分析 Azure 信息保护中的保护使用情况
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用此信息来帮助你了解如何使用 Azure 信息保护中的保护服务（Azure Rights Management）的使用日志记录。 此保护服务为组织的文档和电子邮件提供数据保护，并可以记录每个请求。 这些请求包括在用户保护文档和电子邮件以及使用此内容时，管理员为该服务执行的操作，以及 Microsoft 操作员为了支持 Azure 信息保护部署而执行的操作。 
 
@@ -44,7 +44,7 @@ ms.locfileid: "74934715"
 
 除了此使用日志记录之外，还可以使用以下日志记录选项：
 
-|日志记录选项|描述|
+|日志记录选项|说明|
 |----------------|---------------|
 |管理员日志|记录保护服务的管理任务。 例如，在停用服务的情况下，启用超级用户功能时，以及向用户委派服务的管理员权限时。 <br /><br />有关详细信息，请参阅 PowerShell cmdlet [AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog)。|
 |文档跟踪|允许用户跟踪和撤消其使用 Azure 信息保护客户端跟踪的文档。 全局管理员也可以代表用户跟踪这些文档。 <br /><br />有关详细信息，请参阅[配置和使用 Azure 信息保护的文档跟踪](./rms-client/client-admin-guide-document-tracking.md)。|
@@ -110,9 +110,9 @@ Azure 信息保护将日志作为一系列 blob 写入。
 ### <a name="the-blob-format"></a>Blob 格式
 所有 Blob 都采用 W3C 扩展日志格式。 开头是以下两行：
 
-**#软件：RMS**
+**#Software:RMS**
 
-**#版本：1.1**
+**#Version:1.1**
 
 第一行标识这些是 Azure 信息保护中的保护日志。 第二行标识 Blob 的剩余部分遵循版本 1.1 规范。 我们建议，用于解析这些日志的任何应用程序都应先验证这两行，然后再继续解析 Blob 的剩余部分。
 
@@ -123,7 +123,7 @@ Azure 信息保护将日志作为一系列 blob 写入。
 后面的每行都是日志记录。 这些字段的值与前一行具有相同的顺序，并且以制表符分隔。 请使用下表分析这些字段。
 
 
-|   字段名称   | W3C 数据类型 |                                                                                                                                                                          描述                                                                                                                                                                          |                                                            示例值                                                            |
+|   字段名称   | W3C 数据类型 |                                                                                                                                                                          说明                                                                                                                                                                          |                                                            示例值                                                            |
 |----------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 |      date      |     日期      |                                                                                                                     为请求提供服务时的 UTC 日期。<br /><br />源是为请求提供服务的服务器上的本地时钟。                                                                                                                     |                                                             2013-06-25                                                              |
 |      time      |     时间      |                                                                                                            为请求提供服务时的 UTC 时间（24 小时格式）。<br /><br />源是为请求提供服务的服务器上的本地时钟。                                                                                                            |                                                              21:59:28                                                               |
@@ -137,9 +137,9 @@ Azure 信息保护将日志作为一系列 blob 写入。
 |     issuer     |    字符串     |                                                                                                                          文档发布者的电子邮件地址。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                          |                       alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com’                       |
 |  template-id   |    字符串     |                                                                                                                    用于保护文档的模板的 ID。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                     |                                               {6d9371a6-4e2d-4e97-9a38-202233fed26e}                                                |
 |   file-name    |    字符串     | 使用适用于 Windows 的 Azure 信息保护客户端跟踪的受保护文档的文件名。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。 |                                                       TopSecretDocument.docx                                                        |
-| date-published |     日期      |                                                                                                                          保护文档时的日期。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                           |                                                         2015-10-15T21:37:00                                                         |
+| date-published |     Date      |                                                                                                                          保护文档时的日期。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                           |                                                         2015-10-15T21:37:00                                                         |
 |     c-info     |    字符串     |                                                                                   有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。                                                                                   | 'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64' |
-|      c-ip      |    Address    |                                                                                                                                                       发出请求的客户端的 IP 地址。                                                                                                                                                        |                                                            64.51.202.144                                                            |
+|      c-ip      |    地址    |                                                                                                                                                       发出请求的客户端的 IP 地址。                                                                                                                                                        |                                                            64.51.202.144                                                            |
 |  admin-action  |     Bool      |                                                                                                                                    管理员是否已在管理员模式下访问文档跟踪站点。                                                                                                                                    |                                                                True                                                                 |
 | acting-as-user |    字符串     |                                                                                                                               管理员正在访问其文档跟踪站点的用户的电子邮件地址。                                                                                                                                |                                                          'joe@contoso.com'                                                          |
 
@@ -157,7 +157,7 @@ Azure 信息保护将日志作为一系列 blob 写入。
 #### <a name="typical-request-types"></a>典型请求类型
 保护服务有很多请求类型，但下表列出了一些最常用的请求类型。
 
-|请求类型|描述|
+|请求类型|说明|
 |----------------|---------------|
 |AcquireLicense|基于 Windows 的计算机上的客户端正在请求受保护内容的许可证。|
 |AcquirePreLicense|客户端代表用户请求受保护内容的许可证。|

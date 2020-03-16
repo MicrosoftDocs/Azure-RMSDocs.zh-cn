@@ -14,11 +14,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: b2c206885b2449edc73948a3c0e3c815634c93de
-ms.sourcegitcommit: 94a93275f61a2f46c995a3b7c18bae85f3f302f1
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78215732"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79405025"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 

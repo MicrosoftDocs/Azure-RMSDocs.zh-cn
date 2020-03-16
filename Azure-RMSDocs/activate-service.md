@@ -14,15 +14,15 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 181320c5046137d96816723c9b9ae55979998453
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934851"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79403614"
 ---
 # <a name="activating-the-protection-service-from-azure-information-protection"></a>从 Azure 信息保护中激活保护服务
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 > [!NOTE]
 > 此配置信息适用于负责应用于组织中所有用户的服务的管理员。 如果你要寻找针对特定应用程序使用 Rights Management 功能，或者如何打开受权限保护的文件或电子邮件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
@@ -38,9 +38,9 @@ ms.locfileid: "74934851"
 
 如果你拥有包含 Azure Rights Management 的服务计划，则可能不需要激活此服务：
 
-- **如果包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月底或之后获取：** 此服务会自动激活。 除非你或你组织的其他全局管理员停用了 Azure Rights Management，否则你无需激活此服务。
+- **如果你包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月底或之后获取的：** 此服务会自动为你激活。 除非你或你组织的其他全局管理员停用了 Azure Rights Management，否则你无需激活此服务。
 
-- **如果包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月之前或期间获取：** 如果租户使用的是 Exchange Online，Microsoft 即将开始为这些订阅激活 Azure Rights Management 服务。 对于这些订阅，自动激活将于 2018 年 8 月 1 日开始推出，届时将为你激活此服务，除非在运行 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps) 时看到 AutomaticServiceUpdateEnabled 设置为 false。 
+- **如果你包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月期间或之前获取的：** 如果租户使用的是 Exchange Online，Microsoft 将开始为这些订阅激活 Azure Rights Management 服务。 对于这些订阅，自动激活将于 2018 年 8 月 1 日开始推出，届时将为你激活此服务，除非在运行 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps) 时看到 AutomaticServiceUpdateEnabled 设置为 false。 
 
 如果两种后续方案都不适用，必须手动激活保护服务。 
 

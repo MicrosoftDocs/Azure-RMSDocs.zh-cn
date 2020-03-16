@@ -14,15 +14,15 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 274889b59e40157bf0a4fb3e02a350b17907ddfa
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934766"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79403631"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 了解 Azure RMS 工作原理时的一个要点是，Azure 信息保护的这种数据保护服务不会在保护过程中查看或存储你的数据。 要保护的信息永远不会发送或存储到 Azure 中，除非你将其显式存储在 Azure 中，或者使用其他可在 Azure 中存储数据的云服务。 Azure RMS 只会在文档中保存数据，除已获授权的用户和服务以外，其他任何人都无法读取该文档：
 
@@ -36,7 +36,7 @@ ms.locfileid: "74934766"
 
 ![Azure RMS 如何保护文件](./media/AzRMS_SecretColaFormula_final.png)
 
-有关所发生情况的详细说明，请参阅本文中的 [Azure RMS 工作原理演练：首次使用、内容保护、内容使用](#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 部分。
+有关所发生情况的详细说明，请参阅本文的 [Azure RMS 工作原理演练：首次使用、内容保护、内容使用](#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption)部分。
 
 有关 Azure RMS 使用的算法和密钥长度的技术详细信息，请参阅下一部分。
 
@@ -121,7 +121,7 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 
 ![RMS 文档保护 - 步骤 3，策略已嵌入到文档中](./media/AzRMS_documentprotection3.png)
 
-**步骤3中发生的情况**：最后，RMS 客户端将该策略嵌入到一个文件中，该文件的正文是以前加密的文档的正文，它们共同构成了一个受保护的文档。
+**步骤 3 中发生的情况**：最后，RMS 客户端将该策略嵌入到一个文件中，该文件的正文是以前加密的文档的正文，它们共同构成了一个受保护的文档。
 
 可将此文档存储在任意位置，或者使用任何方法将其共享，加密的文档始终附带该策略。
 
@@ -155,11 +155,11 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 
 - **移动设备**：当移动设备通过 Azure Rights Management 服务保护或使用文件时，流程要简单得多。 因为每个事务（保护或使用内容）是独立的，移动设备首先不会经历用户初始化过程。 与 Windows 计算机一样，移动设备将连接到 Azure Rights Management 服务并进行身份验证。 为了保护内容，移动设备将提交一个策略，然后 Azure Rights Management 服务将为移动设备发送一个发布许可证和对称密钥用于保护文档。 为了使用内容，当移动设备连接到 Azure Rights Management 服务并进行身份验证时，它们将文档策略发送到 Azure Rights Management 服务，并请求一个使用许可证以使用文档。 在响应中，Azure Rights Management 服务会将所需的密钥和限制发送到移动设备。 这两个进程使用 TLS 来保护密钥交换和其他通信。
 
-- RMS 连接器：当 Azure Rights Management 服务与 RMS 连接器结合使用时，处理流程保持不变。 唯一的差别在于，连接器充当本地服务（如 Exchange Server 和 SharePoint Server）与 Azure Rights Management 服务之间的中继。 连接器本身不执行任何操作，例如用户环境初始化，或者加密或解密。 它只会中继通常要定向到 AD RMS 服务器的通信，处理每一端使用的协议之间的转换。 此方案让你可以将 Azure Rights Management 服务与本地服务结合使用。
+- **RMS 连接器**：当 Azure Rights Management 服务与 RMS 连接器结合使用时，处理流程保持不变。 唯一的差别在于，连接器充当本地服务（如 Exchange Server 和 SharePoint Server）与 Azure Rights Management 服务之间的中继。 连接器本身不执行任何操作，例如用户环境初始化，或者加密或解密。 它只会中继通常要定向到 AD RMS 服务器的通信，处理每一端使用的协议之间的转换。 此方案让你可以将 Azure Rights Management 服务与本地服务结合使用。
 
 - **常规保护 (.pfile)** ：当 Azure Rights Management 服务对文件提供一般性保护时，流程基本上与内容保护相同，不过，RMS 客户端将创建一个授予所有权限的策略。 使用该文件时，会先将它解密，然后将它传递到目标应用程序。 这种方案允许你保护所有文件，即使它们本机不支持 RMS。
 
-- “Microsoft 帐户”：使用 Microsoft 帐户对电子邮件地址进行身份验证时，Azure 信息保护可以授权其可供使用。 但是，并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)。
+- **Microsoft 帐户**：使用 Microsoft 帐户对电子邮件地址进行身份验证时，Azure 信息保护可以授权其可供使用。 但是，并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)。
 
 ## <a name="next-steps"></a>后续步骤
 

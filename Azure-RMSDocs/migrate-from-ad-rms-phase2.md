@@ -14,20 +14,20 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: dd6e307283e010409b5359ff13a229df12b4daf5
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934698"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79404039"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 2。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 4-6。
 
 
-## <a name="step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection"></a>步骤 4： 从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护中
+## <a name="step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection"></a>步骤 4. 从 AD RMS 中导出配置数据并将其导入到 Azure 信息保护中
 此步骤是一个分为两部分的过程：
 
 1. 通过将受信任的发布域 (TPD) 导出到 .xml 文件，从 AD RMS 导出配置数据。 此过程对于所有迁移是相同的。
@@ -77,7 +77,7 @@ ms.locfileid: "74934698"
 > [!NOTE]
 > 有关将硬件安全模块与 AD RMS 配合使用的详细信息，请参阅 [将 AD RMS 与硬件安全模块配合使用](https://technet.microsoft.com/library/jj651024.aspx)。
 
-两个 Azure 信息保护租户密钥拓扑选项包括：Microsoft 管理你的租户密钥（**由 Microsoft 管理**），或者你在 Azure 密钥保管库中自行管理租户密钥（**由客户管理**）。 如果你自行管理 Azure 信息保护租户密钥，这有时也称为“创建自己的密钥”(BYOK)。 有关详细信息，请参阅[计划和实施你的 Azure 信息保护租户密钥](plan-implement-tenant-key.md)文章。
+两个 Azure 信息保护租户密钥拓扑选项包括：Microsoft 管理你的租户密钥（由 Microsoft 管理），或者你在 Azure Key Vault 中自行管理租户密钥（由客户管理）。 如果你自行管理 Azure 信息保护租户密钥，这有时也称为“创建自己的密钥”(BYOK)。 有关详细信息，请参阅[计划和实施你的 Azure 信息保护租户密钥](plan-implement-tenant-key.md)文章。
 
 使用下表来确定要使用哪个过程进行迁移。 
 
@@ -102,7 +102,7 @@ ms.locfileid: "74934698"
 - [HSM 保护密钥到 HSM 保护密钥](migrate-hsmkey-to-hsmkey.md)
 - [软件保护密钥到 HSM 保护密钥](migrate-softwarekey-to-hsmkey.md)
 
-## <a name="step-5-activate-the-azure-rights-management-service"></a>步骤 5： 激活 Azure Rights Management 服务
+## <a name="step-5-activate-the-azure-rights-management-service"></a>步骤 5。 激活 Azure Rights Management 服务
 
 打开 PowerShell 会话并运行下列命令：
 

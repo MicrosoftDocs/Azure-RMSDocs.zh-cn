@@ -12,17 +12,17 @@ ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 46a9ce17efc40242f78506cf59c842d3b7721b98
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117674"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79403546"
 ---
-# <a name="admin-guide-file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端支持的文件类型
+# <a name="admin-guide-file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标签客户端支持的文件类型
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，windows Server 2019，windows Server 2016，Windows server 2012 R2，windows server 2012*>
+>适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*>
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 Azure 信息保护统一标签客户端可以将以下内容应用于文档和电子邮件：
 
@@ -58,7 +58,7 @@ Azure 信息保护统一标签客户端还可以使用已知的敏感信息类�
 
 - **数码底片**：.dng
 
-- **Microsoft Office**：下表中的文件类型。
+- Microsoft Office：下表中的文件类型。
 
     这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
 
@@ -70,18 +70,18 @@ Azure 信息保护统一标签客户端还可以使用已知的敏感信息类�
 
 例如：
 
-- 如果 "**常规**敏感度" 标签应用分类并且不应用保护：可以将 "**常规**" 标签应用到名为 "sales .pdf" 的文件，但不能将此标签应用到名为 "node.js" 的文件。 
+- 如果 "**常规**敏感度" 标签应用分类且不应用保护：可以将“常规”标签应用到名为 sales.pdf 的文件，但不可将该标签应用到名为 sales.txt 的文件。 
 
-- 如果 "**机密 \ 所有员工**" 敏感度标签应用分类和保护：可以将此标签应用于名为 "sales .pdf" 的文件和名为 "sales .txt" 的文件。 还可以只对这些文件应用保护，而不应用分类。
+- 如果 "**机密 \ 所有员工**" 敏感度标签应用分类和保护：此标签可应用到名为 sales.pdf 和名为 sales.txt 的文件。 还可以只对这些文件应用保护，而不应用分类。
 
 ## <a name="file-types-supported-for-protection"></a>支持保护的文件类型
 
 Azure 信息保护统一标签客户端支持两个不同级别的保护，如下表中所述。
 
-|保护类型|本机|常规|
+|保护类型|本机|泛型|
 |----------------------|----------|-----------|
-|Description|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他所有应用程序和文件类型，常规保护提供了一种保护级别，该保护级别既包括使用 .pfile 文件类型的文件封装，又包括用于验证用户是否有权打开该文件的身份验证。|
-|Protection|通过以下方式强制执行文件保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 Azure 信息保护查看器（适用于受保护的文本和图像文件）还是使用关联的应用程序（适用于其他所有受支持的文件类型）呈现内容时，都会强制执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的人员以及被授予访问权限的人员成功通过身份验证之后才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将对已授权的用户打开和访问文件的操作执行审核日志记录。 但不强制执行使用权限。|
+|描述|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他所有应用程序和文件类型，常规保护提供了一种保护级别，该保护级别既包括使用 .pfile 文件类型的文件封装，又包括用于验证用户是否有权打开该文件的身份验证。|
+|保护|通过以下方式强制执行文件保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 Azure 信息保护查看器（适用于受保护的文本和图像文件）还是使用关联的应用程序（适用于其他所有受支持的文件类型）呈现内容时，都会强制执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的人员以及被授予访问权限的人员成功通过身份验证之后才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将对已授权的用户打开和访问文件的操作执行审核日志记录。 但不强制执行使用权限。|
 |文件类型默认值|这是以下文件类型的默认保护级别：<br /><br />- 文本和图像文件<br /><br />- Microsoft Office（Word、Excel、PowerPoint）文件<br /><br />- 可移植文档格式 (.pdf)<br /><br />有关详细信息，请参阅以下部分：[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)。|这是针对不受本机保护支持的其他所有文件类型（例如 .vsdx、.rtf 等）的默认保护。|
 
 不能更改 Azure 信息保护统一标签客户端或扫描程序应用的默认保护级别。 但是，您可以更改受保护的文件类型。 有关详细信息，请参阅[更改要保护的文件类型](clientv2-admin-guide-customizations.md#change-which-file-types-to-protect)。
@@ -104,9 +104,9 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
 - **对于其他所有文件**： 
 
-  - 若要保护其他文件类型，并在 Azure 信息保护查看器中打开这些文件类型：文件大小上限仅受可用磁盘空间和内存限制。
+  - 若要保护其他文件类型，并在 Azure 信息保护查看器中打开这些文件类型：最大文件大小仅受可用磁盘空间和内存限制。
 
-  - 若要使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 取消保护文件：.pst 文件支持的文件大小上限为 5GB。 其他文件类型的文件大小上限仅受可用磁盘空间和内存限制
+  - 若要使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 取消文件保护：.pst 文件支持的最大文件大小为 5 GB。 其他文件类型的文件大小上限仅受可用磁盘空间和内存限制
 
     提示：如果需要在大型 .pst 文件中搜索或恢复受保护的项目，请参阅[使用 Unprotect-RMSFile 进行电子数据展示的指南](../configure-super-users.md#guidance-for-using-unprotect-rmsfile-for-ediscovery)。
 
@@ -121,18 +121,18 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
 |原始文件扩展名|受保护的文件扩展名|
 |--------------------------------|-------------------------------------|
-|。txt|。ptxt|
-|。xml|。pxml|
-|。jpg|。pjpg|
-|.jpeg|.pjpeg|
-|。png|.ppng|
+|.txt|。ptxt|
+|。xml|.pxml|
+|。jpg|.pjpg|
+|。jpeg|.pjpeg|
+|。png|。ppng|
 |.tif|.ptif|
-|.tiff|。ptiff|
-|.bmp|。pbmp|
-|。gif|.pgif|
-|。jpe|.pjpe|
-|。jfif|.pjfif|
-|.jt|.pjt|
+|。tiff|.ptiff|
+|。bmp|。pbmp|
+|.gif|。pgif|
+|。jpe|。pjpe|
+|。jfif|。pjfif|
+|。jt|.pjt|
 
 下表列出了支持 Azure 信息保护统一标签客户端的本机保护的其他文件类型，还可以进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
 
@@ -140,7 +140,7 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
 |Office 支持的文件类型|Office 支持的文件类型|
 |----------------------------------|----------------------------------|
-|。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm<br /><br />。pptx<br /><br />.vsdm|.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />.xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx<br /><br />。xps|
+|。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm<br /><br />。pptx<br /><br />.vsdm|.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />。xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx<br /><br />.xps|
 
 
 ## <a name="file-types-that-are-excluded-from-classification-and-protection"></a>从分类和保护中排除的文件类型
@@ -213,7 +213,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 1. 对于运行扫描程序或 PowerShell 会话的计算机，请安装 [Office 2010 Filter Pack SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2)。
 
-2. 对于扫描仪：查找敏感信息后，如果要使用标签对 .zip 文件进行分类和保护，请按照 Powershell 配置中所述，使用 powershell advanced 设置**PFileSupportedExtensions**指定 .zip 文件扩展名，如[powershell 配置](../deploy-aip-scanner.md#scanner-from-the-unified-labeling-client-use-powershell-to-change-which-file-types-are-protected)中所述。
+2. 对于扫描程序：查找敏感信息后，如果要使用标签对 .zip 文件进行分类和保护，请使用 PowerShell 高级设置**PFileSupportedExtensions**指定 .zip 文件扩展名，如 powershell 配置中所述，用于更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner.md#scanner-from-the-unified-labeling-client-use-powershell-to-change-which-file-types-are-protected)。
 
 
 执行这些步骤后的示例方案： 
@@ -226,7 +226,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 如果运行 PowerShell 会话的计算机上安装 Windows TIFF IFilter 功能并配置 [Windows TIFF IFilter 设置](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)，[Set-AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令可以使用光学字符识别 (OCR) 来检查文件扩展名为 .tiff 的 TIFF 图像。
 
-对于扫描仪：查找敏感信息后，如果应使用标签对 tiff 文件进行分类和保护，请使用 PowerShell 高级设置**PFileSupportedExtensions**指定此文件扩展名，如 powershell 配置中所述，用于更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner.md#scanner-from-the-unified-labeling-client-use-powershell-to-change-which-file-types-are-protected)。
+对于扫描程序：查找敏感信息后，如果应使用标签对 tiff 文件进行分类和保护，请使用 PowerShell 高级设置**PFileSupportedExtensions**指定此文件扩展名，如 powershell 配置中所述，用于更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner.md#scanner-from-the-unified-labeling-client-use-powershell-to-change-which-file-types-are-protected)。
 
 ## <a name="next-steps"></a>后续步骤
 现在，已确定 Azure 信息保护统一标签客户端支持的文件类型，请参阅以下资源，了解支持此客户端所需的其他信息：

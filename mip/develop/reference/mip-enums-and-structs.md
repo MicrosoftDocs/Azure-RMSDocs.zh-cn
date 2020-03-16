@@ -7,11 +7,11 @@ ms.topic: reference
 ms.author: mbaldwin
 ms.date: 01/28/2019
 ms.openlocfilehash: 2ee3c660a14df74f432870d364002cee86a5ce27
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489259"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79405008"
 ---
 # <a name="enumerations-and-structures"></a>枚举和结构
 

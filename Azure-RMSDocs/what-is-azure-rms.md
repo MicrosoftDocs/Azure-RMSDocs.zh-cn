@@ -16,15 +16,15 @@ ms.custom: admin
 search.appverid:
 - MET150
 ms.openlocfilehash: a09ee41507dae2aa54cf8cde326d70be143d403c
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934070"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79403529"
 ---
-# <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
+# <a name="what-is-azure-rights-management"></a>什么是 Azure 权限管理？
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 
 Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](what-is-information-protection.md)使用的保护技术。
@@ -52,7 +52,7 @@ Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](w
 |保护多个文件类型|√ 在 Rights Management 的早期实现中，只有 Office 文件才能使用本机 Rights Management 保护功能获得保护。 **常规保护** 以前由 Rights Management 共享应用程序提供，现在由 Azure 信息保护客户端提供，这意味着现在可以支持更多[文件类型](./rms-client/client-admin-guide-file-types.md)。|
 |随处保护文件|√ 文件一旦[受保护](./rms-client/client-classify-protect.md)，便会始终受到保护，即使它被保存或复制到不受 IT 部门控制的存储（如云存储服务），也是如此。|
 |安全共享信息|√ 当文件[受保护](./rms-client/client-classify-protect.md)时，可以安全地与他人进行共享。 例如，电子邮件的附件或 SharePoint 网站的链接。 如果电子邮件中有敏感信息，则可以保护电子邮件，或只需使用 Outlook 中的“不要转发”选项。 <br /><br />附加受保护文件而不是保护整个电子邮件的好处是，电子邮件文本未加密，因此如果在组织外发送电子邮件，可以附上首次使用的说明。 任何人都可阅读说明，但由于附加文档受到保护，因此只有授权用户才能打开文档，即使将该电子邮件或文档转发给其他用户也是如此。|
-|审核和监视|√ 可以[审核和监视受保护文件的使用情况](log-analyze-usage.md)，即使这些文件已经离开了组织的边界也是如此。<br /><br />例如，你适用于 Contoso，有限公司。正在处理包含 Fabrikam，Inc. 三人的联合项目。将这三个用户通过电子邮件发送给你保护并限制为只读的文档。 Azure Rights Management 审核功能可以提供以下信息：<br /><br />- 你指定的来自 Fabrikam 的人是否打开了该文档，以及打开时间（如果已打开过）。<br /><br />- 你未指定的其他人是否尝试打开该文档却失败了（发生这种情况可能是因为该文档已转发或保存到其他人可以访问的共享位置）。<br /><br />- 指定的任何人是否尝试打印或更改该文档却失败了。<br /><br />此外，[文档跟踪站点](./rms-client/client-track-revoke.md)可让用户和管理员跟踪并在必要时撤销对受保护文档的访问权限。|
+|审核和监视|√ 可以[审核和监视受保护文件的使用情况](log-analyze-usage.md)，即使这些文件已经离开了组织的边界也是如此。<br /><br />例如，你为 Contoso, Ltd. 工作你正在与来自 Fabrikam, Inc 的三名人员一起致力于一个联合项目。你通过电子邮件向这三人发送了一个已保护并限制为只读的文档。 Azure Rights Management 审核功能可以提供以下信息：<br /><br />- 你指定的来自 Fabrikam 的人是否打开了该文档，以及打开时间（如果已打开过）。<br /><br />- 你未指定的其他人是否尝试打开该文档却失败了（发生这种情况可能是因为该文档已转发或保存到其他人可以访问的共享位置）。<br /><br />- 指定的任何人是否尝试打印或更改该文档却失败了。<br /><br />此外，[文档跟踪站点](./rms-client/client-track-revoke.md)可让用户和管理员跟踪并在必要时撤销对受保护文档的访问权限。|
 |支持常用设备，而不仅仅是 Windows 计算机|√ [支持的设备](./requirements-client-devices.md)包括：<br /><br />- Windows 计算机和手机<br /><br />- Mac 计算机<br /><br />- iOS 平板电脑和手机<br /><br />- Android 平板电脑和手机|
 |支持企业与企业之间的协作|√ 由于 Azure Rights Management 是云服务，因此在与其他组织共享受保护内容前，不需要显式配置与这些组织的信任关系。 如果他们已有 Office 365 或 Azure AD 目录，则会自动支持组织间的协作。 但是如果没有，用户可以免费注册[个人的 RMS](rms-for-individuals.md) 订阅，或者将 Microsoft 帐户用于[支持此 Azure 信息保护身份验证的应用程序](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)。|
 |支持本地服务，以及 Office 365|Azure Rights Management 除了[与 Office 365 无缝集成](office-apps-services-support.md)以外，在部署 [RMS 连接器](deploy-rms-connector.md)时，还可以将 Azure Rights Management 与以下本地服务结合使用：<br /><br />- Exchange Server<br /><br />- SharePoint Server<br /><br />- 运行文件分类基础结构的 Windows Server|
@@ -67,7 +67,7 @@ Azure Rights Management（通常缩写为 Azure RMS）是 [Azure 信息保护](w
 ## <a name="security-compliance-and-regulatory-requirements"></a>安全、合规性和法规要求
 Azure Rights Management 支持以下安全、合规性和法规要求：
 
-√ 使用符合业界标准的加密功能，支持 FIPS 140-2。 有关详细信息，请参阅 [Azure RMS 使用的加密控制：算法和密钥长度](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths) 信息。
+√ 使用符合业界标准的加密功能，支持 FIPS 140-2。 有关详细信息，请参阅 [Azure RMS 使用的加密控制：算法和密钥长度](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)信息。
 
 √支持 nCipher nShield 硬件安全模块（HSM），以将你的租户密钥存储在 Microsoft Azure 数据中心。 Azure Rights Management 对北美、EMEA（欧洲、中东和非洲）和亚洲的数据中心使用单独的安全体系，因此，你的密钥只能在你所在的地区使用。
 
