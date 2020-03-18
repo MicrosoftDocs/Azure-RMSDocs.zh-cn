@@ -13,11 +13,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 184d1b69c7256d85e162edc5a2993b1bff066500
-ms.sourcegitcommit: 275d31ef762c702b6c63025cbba0a45ca9528ce5
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77778630"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79404294"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 

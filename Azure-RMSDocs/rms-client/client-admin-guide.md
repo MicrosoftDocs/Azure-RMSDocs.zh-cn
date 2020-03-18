@@ -14,17 +14,17 @@ ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 34aa244534f701fc316020b5c433508ec8e3f481
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117742"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79404022"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
->*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>适用范围：*Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
 
 如果你负责企业网络上的 Azure 信息保护客户端，或如果你想要获取除了 [Azure 信息保护客户端用户指南](client-user-guide.md)以外的更多技术信息，请使用本指南中的信息。 
@@ -104,9 +104,9 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 安装客户端后，请使用“帮助和反馈”选项打开“Microsoft Azure 信息保护”对话框：
 
-- 在 Office 应用程序中：在“**开始**”选项卡上的“**保护**”组中，依次选择“**保护**”和“**帮助和反馈**”。
+- 使用 Office 应用程序：在“开始”选项卡上的“保护”组中，依次选择“保护”和“帮助和反馈”。
 
-- 在文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“**分类和保护**”和“**帮助和反馈**”。 
+- 从文件资源管理器中：右键单击选择一个/多个文件或文件夹，然后依次选择“分类和保护”和“帮助和反馈”。 
 
 #### <a name="help-and-feedback-section"></a>“**帮助和反馈**”部分
 
@@ -175,9 +175,9 @@ Azure 信息保护客户端支持 Office 365 支持的同种语言。 有关这�
 
 安装 Azure 信息保护客户端后，请务必告知用户如何标记文档和电子邮件，并指导用户如何选择适合特定方案的标签。 例如：
 
-- 联机用户说明：[Azure 信息保护用户指南](client-user-guide.md)
+- 联机用户指令：[Azure 信息保护用户指南](client-user-guide.md)
 
-- 下载可自定义用户指南：[Azure Information Protection End User Adoption Guide](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)（Azure 信息保护最终用户采用指南）
+- 下载可自定义的用户指南：[Azure 信息保护最终用户采用指南](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
 
 ## <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>升级和维护 Azure 信息保护客户端
 
@@ -216,9 +216,9 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 3. 通过安装[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)提供的当前正式发布（GA）版本升级 Azure 信息保护客户端。
 
-4. 在 PowerShell 会话中，使用你在步骤 1 中指定的相同配置文件名称运行 Update-AIPScanner 命令。 例如：`Update-AIPScanner –Profile Europe`
+4. 在 PowerShell 会话中，使用你在步骤 1 中指定的相同配置文件名称运行 Update-AIPScanner 命令。 例如： `Update-AIPScanner –Profile Europe`
 
-5. 仅当扫描程序在断开连接的计算机上运行时：立即运行[set-aipscannerconfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration)并指定包含导出的设置的文件。
+5. 仅当扫描程序在断开连接的计算机上运行时：现在运行 [Import-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration)，并指定包含导出设置的文件。
 
 6. 重启 Azure 信息保护扫描程序服务“Azure 信息保护扫描程序”。
 
@@ -249,17 +249,17 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 3. 使用 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) 安装扫描程序，指定新的 SQL Server 实例和配置文件名称。
 
-4. 可选：如果不希望扫描程序重新扫描所有文件，请导出 ScannerFiles 表，然后将其导入新数据库。
+4. 可选：如果不希望扫描程序重新扫描所有文件，请导出 ScannerFiles 表并将其导入到新数据库中。
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>卸载 Azure 信息保护客户端
 
 可使用以下任一选项卸载客户端：
 
-- 使用控制面板卸载程序：单击“**Microsoft Azure 信息保护** > **卸载**”
+- 使用控制面板卸载程序：单击“Microsoft Azure 信息保护” > “卸载”
 
 - 重新运行可执行文件（如 **AzInfoProtection.exe**），并从“修改安装程序”页上，单击“卸载”。 
 
-- 使用 **/uninstall** 运行可执行文件。 例如：`AzInfoProtection.exe /uninstall`
+- 使用 **/uninstall** 运行可执行文件。 例如： `AzInfoProtection.exe /uninstall`
 
 ## <a name="next-steps"></a>后续步骤
 要安装客户端，请参阅[为用户安装 Azure 信息保护客户端](client-admin-guide-install.md)。

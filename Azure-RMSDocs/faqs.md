@@ -13,11 +13,11 @@ ms.custom: admin
 search.appverid:
 - MET150
 ms.openlocfilehash: 09c83a38d08efa6be464124ae1bfdae45d4fdbdc
-ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77423176"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79404396"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 

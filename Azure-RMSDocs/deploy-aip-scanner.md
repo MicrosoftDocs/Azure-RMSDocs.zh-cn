@@ -13,11 +13,11 @@ ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: cc2c9a134c222ad9ec8463e94dc5b355ade20d91
-ms.sourcegitcommit: 275d31ef762c702b6c63025cbba0a45ca9528ce5
+ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77778647"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79404311"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
