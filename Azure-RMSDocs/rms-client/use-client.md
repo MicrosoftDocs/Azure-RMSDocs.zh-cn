@@ -4,7 +4,7 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/09/2020
+ms.date: 03/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,19 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: a4e7206bb02c29649d6e5807a445bb3970f35ca6
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: b91a5e495ef625595d3453d306b6352f36d07d1e
+ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79404872"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79482753"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 
 Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的文档和电子邮件：
@@ -92,35 +95,35 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |手动标记：| **是** | **是** |**是** |
 |默认标签：| **是** | **是** | **是** |
 |建议或自动添加标签： <br />-适用于 Word、Excel、PowerPoint| **是** | **是** | **是** |
-|建议或自动添加标签：<br />-适用于 Outlook| **是** | **是** | 否 |
-|必需标签：| **是** | **是** | 否 |
+|建议或自动添加标签：<br />-适用于 Outlook| **是** | **是** | 是 |
+|必需标签：| **是** | **是** | 是 |
 |用户定义的标签权限： <br />-不转发电子邮件| **是** | **是** | **是** |
 |用户定义的标签权限： <br />-Word、Excel、PowerPoint、文件资源管理器的自定义权限| **是** | **是** | **是** |
 |标签的多语言支持：| **是** | **是** |**是** |
-|来自电子邮件附件的标签继承：| **是** | **是**  |否 |
-|自定义项包括：<br />- 电子邮件的默认标签<br />-Outlook 中的弹出消息 <br />- S/MIME 支持<br />- 报告问题选项| **是** <sup>1</sup> | **是** <sup>2</sup> | 否 |
-|本地数据存储的扫描程序：| **是** | **是 <br />** | 否 |
-|中心报告（分析）：| **是** | **是** | 否 |
-|独立于标签的自定义权限集：| **是** | **是** <sup>3</sup>| 否 |
-|Office 应用中的“信息保护”栏：| **是** | **是**| 否 |
+|来自电子邮件附件的标签继承：| **是** | **是**  |是 |
+|自定义项包括：<br />- 电子邮件的默认标签<br />-Outlook 中的弹出消息 <br />- S/MIME 支持<br />- 报告问题选项| **是** <sup>1</sup> | **是** <sup>2</sup> | 是 |
+|本地数据存储的扫描程序：| **是** | **是 <br />** | 是 |
+|中心报告（分析）：| **是** | **是** | 是 |
+|独立于标签的自定义权限集：| **是** | **是** <sup>3</sup>| 是 |
+|Office 应用中的“信息保护”栏：| **是** | **是**| 是 |
 |作为标签操作（页眉、页脚、水印）的可视标记：| **是** | **是** | **是**|
-|每应用视觉标记：| **是** | **是** | 否 |
-|带有变量的动态视觉标记：| **是** | **是** | 否 |
-|带有文件资源管理器的标签：| **是** | **是** | 否 |
-|受保护文件的查看器（文本、图像、PDF、.pfile）：| **是** | **是** | 否|
-|应用标签的 PPDF 支持：| **是** | 否 | 否 |
-|PowerShell 标记 cmdlet：| **是** | **是** <sup>4</sup> | 否 |
+|每应用视觉标记：| **是** | **是** | 是 |
+|带有变量的动态视觉标记：| **是** | **是** | 是 |
+|带有文件资源管理器的标签：| **是** | **是** | 是 |
+|受保护文件的查看器（文本、图像、PDF、.pfile）：| **是** | **是** | 是|
+|应用标签的 PPDF 支持：| **是** | 是 | 是 |
+|PowerShell 标记 cmdlet：| **是** | **是** <sup>4</sup> | 是 |
 |离线支持保护操作：| **是** | **是** <sup>5</sup> | **是** |
-|为断开连接的计算机手动执行策略文件管理：| **是** |**是**| 否 |
-|HYOK 支持：| **是** | 否 | 否 |
-|事件查看器中的使用日志记录：| **是** | 否 |否 |
-|显示 Outlook 中的 "不要转发" 按钮：| **是** | 否 | 否 |
-|跟踪受保护文档：| **是** | **是** <sup>6</sup> | 否 |
-|吊销受保护的文档：| **是** | 否 | 否 |
-|仅保护模式（无标签）：| **是** | 否 | 否 |
-|支持帐户切换：| 否 | 否 | **是** |
+|为断开连接的计算机手动执行策略文件管理：| **是** |**是**| 是 |
+|HYOK 支持：| **是** | 是 | 是 |
+|事件查看器中的使用日志记录：| **是** | 是 |是 |
+|显示 Outlook 中的 "不要转发" 按钮：| **是** | 是 | 是 |
+|跟踪受保护文档：| **是** | **是** <sup>6</sup> | 是 |
+|吊销受保护的文档：| **是** | 是 | 是 |
+|仅保护模式（无标签）：| **是** | 是 | 是 |
+|支持帐户切换：| 是 | 是 | **是** |
 |支持远程桌面服务：| **是** | **是** | **是** |
-|对 AD RMS 的支持：| **是** | 无<sup>7</sup> | 否 |
+|对 AD RMS 的支持：| **是** | 无<sup>7</sup> | 是 |
 
 脚注：
 
