@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行当前版本的 Azure 信息保
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 02/27/2020
+ms.date: 03/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,20 +12,22 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cc2c9a134c222ad9ec8463e94dc5b355ade20d91
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: 0e8d1e570b09e406ee20fcb14a0f5bf13cb8e760
+ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79404311"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79483212"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
 >适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows server 2019，windows server 2016，windows Server 2012 R2*
 
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 > [!NOTE]
-> 本文适用于 azure 信息保护客户端的当前通用版本 azure 信息保护扫描程序（经典），以及 Azure 的当前正式发行版的扫描程序预览版本信息保护统一标签客户端。
+> 本文适用于 azure 信息保护扫描程序的当前通用版本，包括 azure 信息保护客户端（经典）和 Azure 信息保护统一标签客户端的正式发行版。
 > 
 > 如果以前安装了扫描仪，并想要进行升级，请使用以下升级说明，并使用本页上的说明，省略安装扫描程序的步骤：
 > - 对于经典客户端：[升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)
@@ -755,7 +757,7 @@ Azure 信息保护扫描程序支持三种备选方案，即无需在任何条�
 
 想了解 Microsoft 的 Core Services 工程和运行团队是如何实现此扫描程序的？  请阅读技术案例研究：[Automating data protection with Azure Information Protection scanner](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner)（使用 Azure 信息保护扫描程序自动执行数据保护）。
 
-你可能想知道：[Windows Server FCI 和 Azure 信息保护扫描程序有何区别？](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
+你可能想知道：[Windows Server FCI 和 Azure 信息保护扫描程序之间的区别是什么？](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
 
 还可在台式计算机中，利用 PowerShell 以交互方式对文件进行分类和保护。 有关此方案以及使用 PowerShell 的其他方案的详细信息，请参阅管理员指南中的以下部分：
 

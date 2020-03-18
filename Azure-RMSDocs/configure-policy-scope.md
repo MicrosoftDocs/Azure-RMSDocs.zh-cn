@@ -4,7 +4,7 @@ description: 若要为特定用户配置不同的设置和标签，必须为 Azu
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/09/2020
+ms.date: 03/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d0a370950bb5853453106e59af3da9c9a2f8f463
-ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
+ms.openlocfilehash: 1922348a9d6075eb9843588515a24a5896fc41cf
+ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78972890"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79482719"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>如何使用作用域内策略为特定用户配置 Azure 信息保护策略
 
@@ -56,6 +56,9 @@ ms.locfileid: "78972890"
 3. 在 Azure 门户中指定仅管理员可见的策略名称和说明。 该名称对租户来说必须是唯一的。 然后选择 "**指定获取此策略的用户/组**"，然后在后续窗格中，可以搜索和选择此策略的用户和组。 在此作用域内策略中配置的标签和设置将仅应用于这些用户。
     
     出于性能原因，作用域策略的组成员身份会进行[缓存](prepare.md#group-membership-caching-by-azure-information-protection)。
+
+    > [!NOTE]
+    > 最多选择200个用户或组。 如果需要的用户数超过200，请创建新组，将相关用户添加到组，然后将策略范围设置为新组。 
 
 4. 现添加新标签或配置作用域内策略设置。 始终优先应用全局策略，以便使用新标签补充全局策略，并可以覆盖全局设置。 例如，全局策略可能没有指定的默认标签，并且你为特定部门在不同作用域内策略中配置不同的默认标签。
 

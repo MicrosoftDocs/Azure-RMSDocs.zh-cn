@@ -4,7 +4,7 @@ description: 有关 Azure 信息保护中数据保护服务 Azure Rights Managem
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 03/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,17 +12,19 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 184d1b69c7256d85e162edc5a2993b1bff066500
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: f62c8088ace61b60d7cb94c55ad174265bf516f6
+ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79404294"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79482293"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
 >适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 是否有关于 Azure 信息保护中数据保护服务 Azure Rights Management 的问题？ 请查看此处是否有答案。
 
@@ -31,7 +33,7 @@ ms.locfileid: "79404294"
 
 有关详细信息，请参阅 [How does Azure RMS work? Under the hood（Azure RMS 的工作原理。](./how-does-it-work.md)以了解在本地创建并存储的可乐的秘密配方如何受 Azure Rights Management 服务的保护，并始终保存在本地。
 
-## <a name="whats-the-difference-between-azure-rights-management-encryption-and-encryption-in-other-microsoft-cloud-services"></a>Azure Rights Management 加密和其他 Microsoft 云服务中的加密有何区别？
+## <a name="whats-the-difference-between-azure-rights-management-encryption-and-encryption-in-other-microsoft-cloud-services"></a>Azure Rights Management 其他 Microsoft 云服务中的加密和加密之间的区别是什么？
 
 Microsoft 提供了多个加密技术，使你能够保护数据以满足不同的方案，方案之间通常能够互补。 例如，Office 365 为存储在 Office 365 中的数据提供静态加密，而 Azure 信息保护的 Azure Rights Management 服务则独立加密数据，使其不受所在位置和传输方式影响而得到保护。
 
@@ -61,7 +63,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 ## <a name="is-there-a-management-pack-or-similar-monitoring-mechanism-for-the-rms-connector"></a>RMS 连接器是否有管理包或类似的监视机制？
 
-虽然 Rights Management 连接器会将信息、警告和错误消息记录到事件日志中，但不提供用于监视这些事件的管理包。 不过，[监视 Azure Rights Management 连接器](monitor-rms-connector.md)中记录了事件及其说明的列表，并提供更多帮助你采取纠正措施的信息。
+尽管 Rights Management 连接器会将信息、警告和错误消息记录到事件日志中，但没有管理包包含对这些事件的监视。 不过，[监视 Azure Rights Management 连接器](monitor-rms-connector.md)中记录了事件及其说明的列表，并提供更多帮助你采取纠正措施的信息。
 
 ## <a name="how-do-i-create-a-new-custom-template-in-the-azure-portal"></a>如何在 Azure 门户中创建新的自定义模板？
 
@@ -95,11 +97,11 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 ## <a name="can-i-prevent-users-from-sharing-protected-documents-with-specific-organizations"></a>是否可以防止用户与特定的组织共享受保护文档？
 在数据保护中使用 Azure Rights Management 服务的最大优势之一在于，它支持企业与企业的协作，同时，无需为每个合作伙伴组织配置显式信任关系，因为 Azure AD 会代你处理好身份验证。
 
-我们未提供相应的管理选项来防止用户与特定的组织安全共享文档。 例如，你想要阻止某家你不信任的或者竞争的组织。 阻止 Azure 权限管理服务向这些组织的用户发送受保护文档没有任何意义，因为你的用户之后还是会共享未保护的文档，而这也许是你最不希望发生的事情。 例如，你无法识别谁在与这些组织的用户共享公司机密文档，但是，如果文档（或电子邮件）受 Azure Rights Management 服务的保护，则可以识别。
+我们未提供相应的管理选项来防止用户与特定的组织安全共享文档。 例如，你想要阻止你不信任或具有竞争性业务的组织。 阻止 Azure Rights Management 服务向这些组织的用户发送受保护文档没有任何意义，因为你的用户会将他们的文档共享到未受保护的文档，这可能是你需要在此应用. 例如，你无法识别谁在与这些组织的用户共享公司机密文档，如果文档（或电子邮件）受 Azure Rights Management 服务的保护，则可以执行此操作。
 
 ## <a name="when-i-share-a-protected-document-with-somebody-outside-my-company-how-does-that-user-get-authenticated"></a>如果我与公司之外的用户共享受保护文档，该用户如何进行身份验证。
 
-默认情况下，Azure Rights Management 服务使用 Azure Active Directory 帐户和关联的电子邮件地址进行用户身份验证，这可以为管理员建立企业到企业的无缝协作。 如果其他组织使用 Azure 服务，用户已具有 Azure Active Directory 帐户，即使这些帐户是在本地创建和进行管理，然后同步到 Azure。 如果组织具有 Office 365，此服务在后台还会将 Azure Active Directory 用于用户帐户。 如果用户的组织在 Azure 中没有托管帐户，用户可以注册[个人 RMS](./rms-for-individuals.md)，并使用该用户帐户为组织创建非托管的 Azure 租户和目录，以便可以在 Azure Rights Management 服务中对此用户（和后续用户）进行身份验证。
+默认情况下，Azure Rights Management 服务使用 Azure Active Directory 帐户和关联的电子邮件地址进行用户身份验证，这可以为管理员建立企业到企业的无缝协作。 如果其他组织使用 Azure 服务，用户已具有 Azure Active Directory 帐户，即使这些帐户是在本地创建和进行管理，然后同步到 Azure。 如果组织具有 Office 365，此服务在后台还会将 Azure Active Directory 用于用户帐户。 如果用户的组织在 Azure 中没有托管帐户，用户可以注册[个人 RMS](./rms-for-individuals.md)，这将为组织创建非托管的 azure 租户和目录，并为组织提供用户帐户，以便随后可以为此用户（和后续用户）提供针对 Azure Rights Management 服务的身份验证。
 
 这些帐户的身份验证方法各不相同，具体取决于其他组织中的管理员如何配置 Azure Active Directory 帐户。 例如，他们可以使用为这些帐户、联合身份验证创建的密码，或在 Active Directory 域服务中创建、然后同步到 Azure Active Directory 的密码。
 
@@ -160,15 +162,15 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 在保护文档之后跟踪文档：在安装了 Azure 信息保护客户端的 Windows 计算机上，使用 Office 应用程序或文件资源管理器将文档注册到文档跟踪站点。 有关说明，请参阅[跟踪和撤销文档](./rms-client/client-track-revoke.md)。 现在可以从 Mac 计算机使用 Web 浏览器访问文档跟踪站点 (https://track.azurerms.com) 来跟踪和撤销此文档。
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>当我打开受 RMS 保护的 Office 文档时，关联的临时文件是否也将受 RMS 保护？
-不。 在此方案中，关联的临时文件不包含原始文档中的数据，而仅包含该文件打开时用户输入的内容。 与原始文件不同，临时文件明显不适合共享，将保留在设备上，受本地安全控件（例如 BitLocker 和 EFS）保护。
+不。 在此方案中，关联的临时文件不包含原始文档中的数据，而只包含文件打开时用户输入的内容。 与原始文件不同，临时文件明显不适合共享，将保留在设备上，受本地安全控件（例如 BitLocker 和 EFS）保护。
 
-## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>我正在寻找的一项功能看起来不适用于 SharePoint 保护的库。是否计划了针对此功能的支持？
+## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>我正在寻找的一项功能似乎不适用于 SharePoint 受保护的库，是否支持对我的功能进行计划？
 目前，SharePoint 通过使用受 IRM 保护的库来支持受 RMS 保护的文档，但是该库不支持 Rights Management 模板、文档跟踪和一些其他功能。 有关详细信息，请参阅 [Office 应用程序和服务](./office-apps-services-support.md)一文中的 [SharePoint Online 和 SharePoint Server](./office-apps-services-support.md#sharepoint-online-and-sharepoint-server)部分。
 
 如果对尚不支持的某项特定功能感兴趣，请务必关注 [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-rights-management-services)（企业移动性和安全性博客）上的公告。
 
 ## <a name="how-do-i-configure-one-drive-for-business-in-sharepoint-online-so-that-users-can-safely-share-their-files-with-people-inside-and-outside-the-company"></a>如何在 SharePoint Online 中配置 OneDrive for Business，以便用户可以安全地与公司内外的人员共享他们的文件？
-默认情况下，作为 Office 365 管理员，你不用执行此配置，用户会进行配置。
+默认情况下，作为 Office 365 管理员，你未配置此设置;用户执行的操作。
 
 正如 SharePoint 站点管理员为其拥有的 SharePoint 库启用并配置 IRM 一样，根据 OneDrive for Business 的设计，用户也需要为自己的 OneDrive for Business 库启用并配置 IRM。 不过，你可以使用 PowerShell 为他们执行此类操作。 有关说明，请参阅 [Office 365：客户端和联机服务的配置一文中的](configure-office365.md#sharepointonline-and-onedrive-for-business-irm-configuration)SharePoint Online 和 OneDrive for Business：IRM 配置[部分](configure-office365.md) 。
 
@@ -176,7 +178,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 在考察大量的部署并聆听客户、合作伙伴、顾问和支持工程师的意见后，结合自身的经验，我们很乐意与你分享下面这个极其有效的诀窃：**设计并部署简单的策略**。
 
-由于 Azure 信息保护支持与任何人安全共享，因此，你完全有理由相信自己的数据保护措施的覆盖面。 但是在配置权限使用限制时请保守一点。 对许多组织而言，最大的业务影响来自于通过将访问权限限制为组织内部人员的方式来防止数据泄露。 当然，你可以根据需要采取粒度级比这高得多的措施 - 例如，防止人员打印、编辑，等等。但是，对于确实需要高级安全性的文档，请将更高粒度级的限制保留为例外措施，并且不要一开始就实施这些限制性更强的使用权限，而是计划采取分阶段的实施方案。
+由于 Azure 信息保护支持与任何人安全共享，因此，你完全有理由相信自己的数据保护措施的覆盖面。 但是在配置权限使用限制时请保守一点。 对许多组织而言，最大的业务影响来自于通过将访问权限限制为组织内部人员的方式来防止数据泄露。 当然，你可以根据需要采取粒度级比这高得多的措施 - 例如，防止人员打印、编辑，等等。但是，对于确实需要高级安全性的文档，请保持更细致的限制，但不要在第一天实现这些限制更强的使用权限，而是计划更分阶段的方法。
 
 ## <a name="how-do-we-regain-access-to-files-that-were-protected-by-an-employee-who-has-now-left-the-organization"></a>我们如何重新获取对由已离职员工保护的文件的访问权限？
 请使用[超级用户功能](configure-super-users.md)，对于受租户保护的所有文档和电子邮件，此功能会向授权用户授予完全控制使用权限。 超级用户可始终阅读此受保护的内容，并可根据需要移除保护或针对不同的用户进行重新保护。 根据需要，此相同功能可以让授权服务编写文件索引和检查文件。

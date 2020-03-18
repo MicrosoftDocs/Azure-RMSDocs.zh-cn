@@ -4,7 +4,7 @@ description: 面向管理员的说明和信息，介绍如何在企业网络中�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/15/2020
+ms.date: 03/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 22fba73024ac9c20051742246c96f5c2807a5c4f
-ms.sourcegitcommit: 03c9f8d24c65bffc14b9701ea83a2ac05b681023
-ms.translationtype: HT
+ms.openlocfilehash: e8a2b3fbf25dcf3952c232e12998af1c004493cc
+ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79416389"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79483263"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -26,6 +26,8 @@ ms.locfileid: "79416389"
 >
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
 
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 在企业网络中安装 Azure 信息保护客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序：[Azure 信息保护的要求](../requirements.md)。 
 
@@ -155,7 +157,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 3. 在该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如： **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
-    剩余字符串就是要为 ServiceLocation 参数指定的值。
+    Remainin' 字符串是要为 ServiceLocation 参数指定的值。
 
 有关为 Office 2010 和 Azure RMS 无提示安装客户端的示例：`AzInfoProtection.exe /quiet ServiceLocation=https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com`
 

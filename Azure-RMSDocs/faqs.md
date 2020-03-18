@@ -4,7 +4,7 @@ description: 一些有关 Azure 信息保护及其保护服务的常见问题，
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/29/2020
+ms.date: 03/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,17 +12,19 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 09c83a38d08efa6be464124ae1bfdae45d4fdbdc
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: 13e6b4ea47c2aafeec24984c7db6aab99a16e9a0
+ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79404396"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79483178"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
 >适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 是否有关于 Azure 信息保护或 Azure Rights Management 服务 (Azure RMS) 的问题？ 请查看此处是否有答案。
 
@@ -38,7 +40,7 @@ ms.locfileid: "79404396"
 
 有关详细信息，请参阅[宣布推出信息保护功能以帮助保护你的敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
 
-## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure 信息保护中的标签和 Office 365 中的标签之间有何不同？
+## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure 信息保护中的标签与 Office 365 中标签之间的区别是什么？
 
 最初，Office 365 还只有[保留标签](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，用于在文档和电子邮件处于 Office 365 服务中时，对该内容进行分类以供审核和保留。 相比之下，通过 Azure 信息保护标记，可对文档和电子邮件应用一致分类和保护策略，无论它们在本地还是在云中。
 
@@ -153,7 +155,7 @@ Azure 信息保护对组织的文档和电子邮件进行分类、标记和保�
 
 - Microsoft 帐户不支持 Azure 信息保护的委派管理，即使这些帐户分配给列出的某个管理角色。 
 
-- 如果配置了[加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，此配置不会影响管理 Azure 信息保护的能力（RMS 连接器除外）。 例如，如果配置了加入控制，以致仅允许“IT 部门”组保护内容，那么，用于安装和配置 RMS 连接器的帐户必须是该组的成员。 
+- 如果配置了[加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，此配置不会影响管理 Azure 信息保护的能力（RMS 连接器除外）。 例如，如果你配置了加入控制，使保护内容的能力仅限于 "IT 部门" 组，则用于安装和配置 RMS 连接器的帐户必须是该组的成员。 
 
 - 分配了管理角色的用户无法从受 Azure 信息保护保护的文档或电子邮件中自动删除保护。 只有在启用了超级用户功能的情况下，分配为超级用户的用户才能执行此操作。 但是，你将管理权限分配给 Azure 信息保护的任何用户可以将用户分配为超级用户，包括其自己的帐户。 他们还可以启用超级用户功能。 这些操作记录在管理员日志中。 有关详细信息，请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](configure-super-users.md)中的 "最佳安全做法" 部分。 
 
@@ -207,7 +209,7 @@ Azure 信息保护无法对结构化数据（例如数据库文件、日历项�
 
 有关 Microsoft Graph 安全 API 的详细信息，请参阅 [Microsoft Graph 安全 API 概述](https://developer.microsoft.com/graph/docs/concepts/security-concept-overview)。
 
-## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI 和 Azure 信息保护扫描程序有何区别？
+## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI 和 Azure 信息保护扫描程序之间的区别是什么？
 
 Windows Server 文件分类基础结构在过去一直都有一个选项：对文档进行分类，然后使用 [Rights Management 连接器](deploy-rms-connector.md)（仅 Office 文档）或 [PowerShell 脚本](./rms-client/configure-fci.md)（所有文件类型）保护文档。 
 
@@ -229,7 +231,7 @@ Windows Server 文件分类基础结构在过去一直都有一个选项：对�
 
 扫描程序保护 SharePoint 网站和库上的文件时，通过使用 SharePoint 编辑者值来动态地设置每个文件的 Rights Management 所有者。
 
-## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>听说很快将发布新版 Azure 信息保护 — 何时发布？
+## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>我听说过，Azure 信息保护即将推出新版本，何时发布？
 
 本技术文档不包含即将发布的版本的相关信息。 对于这种类型的信息，请使用[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?&filters=Azure%20Information%20Protection%2CO365%20Information%20Protection#owRoadmapMainContent)查看[企业移动性 + 安全性博客](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity?product=azure-information-protection,azure-rights-management-services)。
 
@@ -250,7 +252,7 @@ Windows Server 文件分类基础结构在过去一直都有一个选项：对�
 
 我们还邀请你加入我们的工程团队：[Azure 信息保护 Yammer 站点](https://www.yammer.com/askipteam/)。 
 
-## <a name="what-do-i-do-if-my-question-isnt-here"></a>如果我的问题不在这里，我该如何操作？
+## <a name="what-do-i-do-if-my-question-isnt-here"></a>如果我的问题不在这里，我该怎么办？
 
 首先，查看以下特定于分类和标签，或特定于数据保护的常见问题解答。 Azure Rights Management 服务 (Azure RMS) 为 Azure 信息保护提供数据保护技术。 Azure RMS 可与分类和标签结合使用，也可单独使用。 
 
