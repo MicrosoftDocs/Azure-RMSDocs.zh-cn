@@ -14,26 +14,28 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 00f056e5e8dae9721933e041a766f72da99bb380
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 47107a9cbe9c7ba941475f83798a323cb4ff74d9
+ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68792247"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80068233"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>操作说明：使服务应用程序可以使用基于云的 RMS
+
+[!INCLUDE [deprecation notice](../includes/deprecation-warning.md)]
 
 本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。 有关详细信息，请参阅 [Azure Rights Management 入门](https://technet.microsoft.com/library/jj585016.aspx)。
 
 **重要说明**  
 为了通过 Azure RMS 使用 Rights Management Services SDK 2.1 服务应用程序，你需要创建自己的租户。 有关详细信息，请参阅 [Azure RMS 要求：支持 Azure RMS 的云订阅](../requirements.md)
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 -   必须安装并配置 RMS SDK 2.1。 有关详细信息，请参阅 [RMS SDK 2.1 入门](getting-started-with-ad-rms-2-0.md)。
 -   必须使用对称密钥选项或通过其他方式来 [通过 ACS 创建服务标识](https://msdn.microsoft.com/library/gg185924.aspx)，并记录来自该过程的密钥信息。
 
-## <a name="connecting-to-the-azure-rights-management-service"></a>连接到 Azure Rights Management 服务
+## <a name="connecting-to-the-azure-rights-management-service"></a>连接到 Azure 权限管理服务
 
 -   调用 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)。
 -   设置 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)。
@@ -47,9 +49,9 @@ ms.locfileid: "68792247"
 
 
 -   以下步骤是用于创建 [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) 结构的实例的设置，其中 *pcCredential* ([IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx)) 成员使用来自 Azure Rights Management 服务的连接信息进行填充。
--   创建 [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 结构的实例时，使用来自对称密钥服务标识创建的信息（请参阅本主题前面列出的先决条件）来设置 *wszServicePrincipal*、*wszBposTenantId* 和 *cbKey* 参数。
+-   创建 *IPC*CREDENTIAL*SYMMETRIC*KEY*结构的实例时，使用来自对称密钥服务标识创建的信息（请参阅本主题前面列出的先决条件）来设置*wszServicePrincipal[、\_wszBposTenantId\_ 和 \_cbKey](https://msdn.microsoft.com/library/dn133062.aspx) 参数。
 
-**注意** - 由于发现服务的现有状况，如果你不在北美，则不会接受来自其他区域的对称密钥凭据，因此必须直接指定你的租户 URL。 这通过 [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx) 或 [IpcGetTemplateIssuerList](https://msdn.microsoft.com/library/hh535266.aspx) 函数上的类型为 [IPC\_CONNECTION\_INFO](https://msdn.microsoft.com/library/hh535274.aspx) 的 *pConnectionInfo* 参数来实现。
+**注意** - 由于发现服务的现有状况，如果你不在北美，则不会接受来自其他区域的对称密钥凭据，因此必须直接指定你的租户 URL。 这通过 *IpcGetTemplateList* 或 [IpcGetTemplateIssuerList\_ 函数上的类型为 \_IPC](https://msdn.microsoft.com/library/hh535274.aspx)CONNECTION[INFO](https://msdn.microsoft.com/library/hh535267.aspx) 的 [pConnectionInfo](https://msdn.microsoft.com/library/hh535266.aspx) 参数来实现。
 
 ## <a name="generate-a-symmetric-key-and-collect-the-needed-information"></a>生成对称密钥并收集所需信息
 

@@ -14,14 +14,16 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: b86572fe0f981b4c5a93c67553ccd42358f47c16
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 5d8d1a6cf1950be8abc90180044126d0c984bfb2
+ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68791340"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80068375"
 ---
 # <a name="android-code-examples"></a>Android 代码示例
+
+[!INCLUDE [deprecation notice](../includes/deprecation-warning.md)]
 
 本文介绍了如何为 Android 版 RMS SDK 编码元素。
 
@@ -187,7 +189,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
                      }
    ```
 
-- **步骤 3**：通过 [UserPolicy.accessCheck](https://msdn.microsoft.com/library/dn790885.aspx) 方法检查此用户对于该内容是否具有 **Edit** 权限。
+- **步骤 3**：通过 **UserPolicy.accessCheck** 方法检查此用户对于该内容是否具有 [Edit](https://msdn.microsoft.com/library/dn790885.aspx) 权限。
 
     **源**：*TextEditorFragment.java*
 
@@ -361,7 +363,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
 
 ### <a name="scenario-open-a-custom-protected-file"></a>方案：打开自定义受保护的文件
 
-- **步骤 1**：从 *serializedContentPolicy* 创建 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
+- **步骤 1**：从 [serializedContentPolicy](https://msdn.microsoft.com/library/dn790887.aspx) 创建 *UserPolicy*。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -419,7 +421,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
    ```
 
 
-- **步骤 2**：使用 **步骤 1** 中的 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) 创建 [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx)。
+- **步骤 2**：使用 [步骤 1](https://msdn.microsoft.com/library/dn758271.aspx) 中的 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) 创建 **CustomProtectedInputStream**。
 
     **源**：*MsipcTaskFragment.java*
 
@@ -550,7 +552,7 @@ MSIPCSampleApp 示例应用可与适用于 Android 操作系统的此 SDK 配合
     ```
 
 
-- **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
+- **步骤 2**：通过策略描述符 [selectedDescriptor](https://msdn.microsoft.com/library/dn790887.aspx) 创建自定义 *UserPolicy*。
 
     **源**：*MsipcTaskFragment.java*
 

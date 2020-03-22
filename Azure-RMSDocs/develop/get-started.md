@@ -14,14 +14,16 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: ef9e600f05d4935a03e105cca370a8afa82fa5d9
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 38f9c8b6d5b916e025409e1f639749d186c20faa
+ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68792355"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80068575"
 ---
 # <a name="get-started"></a>入门
+
+[!INCLUDE [deprecation notice](../includes/deprecation-warning.md)]
 
 对于 Microsoft Rights Management SDK 4.2 这一版本，第一个应用程序的快速入门方法是通过适用于每种操作系统/平台的开发环境设置指南。 通过以下方式开始创建启用权限的应用程序：
 
@@ -50,7 +52,7 @@ ms.locfileid: "68792355"
 3. 查看 [SDK 摘要图](api-reference-4-2.md)。
 4. 有关重要的 **发行说明** 和 **开发人员指南**，请参阅 [新增功能](release-notes.md) 主题。
 
-   |主题|描述|
+   |主题|说明|
    |-----|-----------|
    |[新增功能](release-notes.md)|MS RMS SDK 4.2 将 RMS 应用程序实现提升到了一个新的易用性和灵活性级别。|
    |[设置开发人员环境](setup-developer-environment.md)|以下主题说明必须设置开发环境以便将 AD RMS SDK API 用于特定操作系统。|

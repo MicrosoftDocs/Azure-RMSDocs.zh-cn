@@ -14,13 +14,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 5141730ce75e075a08321e9fea6639848535252d
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: dc52e9cb5fc2fc6a7cb868f4dd1a4bfe2eced78e
+ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68792172"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80068547"
 ---
 # <a name="linux-api-reference"></a>Linux API 参考
+
+[!INCLUDE [deprecation notice](../includes/deprecation-warning.md)]
 
 Linux 适用的操作系统支持的 API 参考在 Github 上进行承载 - [RMS SDK for C++](https://azuread.github.io/rms-sdk-for-cpp/annotated.html)。 有关详细信息，请参阅[入门](get-started.md)。
