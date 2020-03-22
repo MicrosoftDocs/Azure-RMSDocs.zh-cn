@@ -14,14 +14,16 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: b0a888a87da2dcfdd24703c821abe36c0135ca7f
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: c29dd3c364cdc1df506494819e5d0b5abe1f5454
+ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68791050"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80068505"
 ---
 # <a name="how-to-use-document-tracking"></a>如何：使用文档跟踪
+
+[!INCLUDE [deprecation notice](../includes/deprecation-warning.md)]
 
 使用文档跟踪功能需要对管理关联元数据以及向服务注册有一些简单了解。
 
@@ -46,7 +48,7 @@ ms.locfileid: "68791050"
   - Android - [PolicyDescriptor.setLicenseMetadata](https://msdn.microsoft.com/library/mt573698.aspx)
   - iOS - [MSPolicyDescriptor.licenseMetadata](https://msdn.microsoft.com/library/mt573693.aspx)。
 
-    请注意  只能在针对给定用户策略设置文档跟踪的过程中直接访问许可证元数据对象。 创建用户策略对象之后，无法访问关联许可证元数据，即更改许可证元数据的值会不起作用。
+    请注意**只能在针对给定用户策略设置文档跟踪的过程中直接访问许可证元数据对象**  。 创建用户策略对象之后，无法访问关联许可证元数据，即更改许可证元数据的值会不起作用。
 
      
 

@@ -4,7 +4,7 @@ description: 管理员通过使用 PowerShell 管理 Azure 信息保护客户端
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 03/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.subservice: v1client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f343194884ba299f0a003a975581b90fe423bcf9
-ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
+ms.openlocfilehash: ef86511649f16740c4611766103b6985f350fdc9
+ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79482957"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80068360"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -538,36 +538,47 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
     - **用户同意说明**： `Allow the application to access the scanner for the signed-in user`
     - **状态**：**已启用**（默认值）
 
+
 14. 返回到**AIPOnBehalfOf-公开 API**窗格，关闭此窗格。
 
-15. 在 "**应用注册**" 窗格上，选择 " **+ 新建应用程序注册**"，立即创建本机应用程序。
+15. 选择 " **API 权限**"。
 
-16. 在 "**注册应用程序**" 窗格上，指定以下设置，然后选择 "**注册**"：
+16. 在 " **AIPOnBehalfOf** | **API 权限**" 窗格上，选择 " **+ 添加权限**"。
+
+17. 选择 " **Azure 权限管理**"，选择 "**委托的权限**"，然后选择 "**为用户创建和访问受保护的内容**"。
+
+18. 单击 "**添加权限**"。
+
+19. 返回到 " **API 权限**" 窗格，在 "**授予许可**" 部分中，选择 "**授予 <your tenant name>的管理员同意**"，并在确认提示中选择 **"是"** 。
+
+20. 在 "**应用注册**" 窗格上，选择 " **+ 新建应用程序注册**"，立即创建本机应用程序。
+
+21. 在 "**注册应用程序**" 窗格上，指定以下设置，然后选择 "**注册**"：
     - **名称**： `AIPClient`
     - **受支持的帐户类型**：**仅限此组织目录中的帐户**
     - **重定向 URI （可选）** ：**公用客户端（移动 & 桌面）** 和 `http://localhost`
 
-17. 在 " **AIPClient** " 窗格中，复制 "**应用程序（客户端） ID**" 的值。 值类似于以下示例： `8ef1c873-9869-4bb1-9c11-8313f9d7f76f`。 
+22. 在 " **AIPClient** " 窗格中，复制 "**应用程序（客户端） ID**" 的值。 值类似于以下示例： `8ef1c873-9869-4bb1-9c11-8313f9d7f76f`。 
     
     在运行 Set-aipauthentication cmdlet 时，此值用于 NativeAppId 参数。 粘贴并保存该值供以后参考。
 
-18. 仍在 " **AIPClient** " 窗格的 "**管理**" 菜单中，选择 "**身份验证**"。
+23. 仍在 " **AIPClient** " 窗格的 "**管理**" 菜单中，选择 "**身份验证**"。
 
-19. 在 " **AIPClient-身份验证**" 窗格中，指定以下内容，然后选择 "**保存**"：
+24. 在 " **AIPClient-身份验证**" 窗格中，指定以下内容，然后选择 "**保存**"：
     - 在 "**高级设置**" 部分中，选择 " **ID 令牌**"。
     - 在 "**默认客户端类型**" 部分中，选择 **"是"** 。
 
-20. 仍在 " **AIPClient-身份验证**" 窗格中，从 "**管理**" 菜单中选择 " **API 权限**"。
+25. 仍在 " **AIPClient-身份验证**" 窗格中，从 "**管理**" 菜单中选择 " **API 权限**"。
 
-21. 在 " **AIPClient-权限**" 窗格上，选择 " **+ 添加权限**"。
+26. 在 " **AIPClient-权限**" 窗格上，选择 " **+ 添加权限**"。
 
-22. 在 "**请求 api 权限**" 窗格上，选择 "**我的 api**"。
+27. 在 "**请求 api 权限**" 窗格上，选择 "**我的 api**"。
 
-23. 在 "**选择 API** " 部分中，选择 " **APIOnBehalfOf**"，然后选中 "**用户模拟**" 复选框作为权限。 选择“添加权限”。 
+28. 在 "**选择 API** " 部分中，选择 " **APIOnBehalfOf**"，然后选中 "**用户模拟**" 复选框作为权限。 选择“添加权限”。 
 
-24. 返回到 " **API 权限**" 窗格，在 "**授予许可**" 部分中，选择 "**授予管理员同意 \<*租户名称*">** 并在确认提示中选择 **"是"** 。
+29. 返回到 " **API 权限**" 窗格，在 "**授予许可**" 部分中，选择 "**授予管理员同意 \<*租户名称*">** 并在确认提示中选择 **"是"** 。
 
-至此，你已配置完两个应用，并获得了使用参数 [WebAppId](/powershell/module/azureinformationprotection/set-aipauthentication)、*WebAppKey* 和 *NativeAppId* 运行 *Set-AIPAuthentication* 所需的值。 在我们的示例中：
+现在，你已完成两个应用的配置，并且具有使用参数*WebAppId*、 *WebAppKey*和*NativeAppId*运行[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication)时所需的值。 在我们的示例中：
 
 `Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "+LBkMvddz?WrlNCK5v0e6_=meM59sSAn" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f"`
 

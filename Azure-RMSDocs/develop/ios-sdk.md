@@ -14,20 +14,22 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: c69e34cce0241a289d75593e4a8a9500f88be433
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 8de5db2af71b16ed60f81a6ec432d0841d125475
+ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68791437"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80068569"
 ---
 # <a name="ios-and-os-x-setup"></a>iOS 和 OS X 安装程序
+
+[!INCLUDE [deprecation notice](../includes/deprecation-warning.md)]
 
 借助 Azure Rights Management (Azure RMS)，iOS 和 OS X 应用程序可使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护。
 
 本主题将指导你完成环境设置过程，以创建自己的新应用。
 
-请注意：  此 SDK 不支持 iPod Touch。
+请注意：**此 SDK 不支持 iPod Touch**  。
 
 
 -   [必备条件](#prerequisites)
@@ -35,7 +37,7 @@ ms.locfileid: "68791437"
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 我们建议在开发系统上安装以下软件：
 
@@ -67,7 +69,7 @@ ms.locfileid: "68791437"
 
 -   输入新项目的名称和标识符。
 
-    ![为项目命名](../media/iOS-project-options.png)
+    ![将项目命名为](../media/iOS-project-options.png)
 
 -   单击“下一步”，然后选择项目的位置。
 -   若要添加面向 iOS 框架的 **MSRightsManagement** 框架，请将 SDK 安装文件夹中的 .framework 文件夹拖入“项目导航器”的“框架”部分。

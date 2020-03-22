@@ -4,22 +4,16 @@ description: AD RMS 和 Azure RMS 是一种信息保护技术，可帮助保护�
 keywords: ''
 author: msmbaldwin
 ms.author: mbaldwin
-manager: barbkess
-ms.date: 02/23/2017
+ms.date: 03/17/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
-audience: developer
-ms.reviewer: shubhamp
-ms.suite: ems
-ms.custom: dev
-ms.openlocfilehash: b7cac0f97c40aa760d7f38d6a190be39f14bae24
-ms.sourcegitcommit: fc0499f182e9203ccbd4a8685dd880d1311845ad
+ms.openlocfilehash: 8b095b9be9cf22facdd40d97aee89cfb55d46306
+ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79084760"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80068649"
 ---
 # <a name="overview"></a>概述
 

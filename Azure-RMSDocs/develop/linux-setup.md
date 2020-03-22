@@ -13,14 +13,16 @@ ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 7a7019e72e4d8d2b66c81fbc69542e140992467b
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 6d6986683529018ae8d7811fc8dc1bf91bf13a82
+ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "60176816"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80068608"
 ---
 # <a name="linux-setup"></a>Linux 安装程序
+
+[!INCLUDE [deprecation notice](../includes/deprecation-warning.md)]
 
 Linux 操作系统的几种版本现都可通过使用 Azure Active Directory Rights Management (AAD RM)，利用 Microsoft Rights Management SDK 4.x 在其应用程序中启用集成信息保护。
 

@@ -14,15 +14,16 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 08981ab13862eed815609eaad4c6733ec205e0a1
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 8c36466511749b6148f58c439702c8cd0f252a64
+ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68792092"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80068512"
 ---
 # <a name="windows-phone-setup"></a>Windows Phone 安装程序
 
+[!INCLUDE [deprecation notice](../includes/deprecation-warning.md)]
 
 Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在其应用程序中启用集成信息保护（通过使用 Azure Active Directory Rights Management (AAD RM)）。
 
@@ -32,7 +33,7 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 
 开发系统上必须安装以下软件：
@@ -52,7 +53,7 @@ Windows Phone 应用程序可以使用 Microsoft Rights Management SDK 4.2 在�
 
 -   打开 *Visual Studio*。
 -   单击“文件”。 在“文件”菜单上，单击“新建”，然后单击“项目”。
--   在“新建项目”对话框中，依次选择“Visual C”\#和“空白应用(Windows Phone)”，然后单击“确定”。
+-   在“新建项目”对话框中，依次选择“Visual C”**和“空白应用(Windows Phone)”\#** ，然后单击“确定”。
 
     ![新建项目](../media/wpsetup-newproj.png)
 
