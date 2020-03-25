@@ -4,7 +4,7 @@ description: 一些有关 Azure 信息保护及其保护服务的常见问题，
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 03/23/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 13e6b4ea47c2aafeec24984c7db6aab99a16e9a0
-ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
+ms.openlocfilehash: 586932ce196769a49e5901dbe6b1290e9d7390ed
+ms.sourcegitcommit: f7053f57363d50f236e16732b4be09744e00d29d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79483178"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80138299"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -82,9 +82,9 @@ ms.locfileid: "79483178"
 
 使用显示的**版本号**来识别客户端：
 
-- 版本**1**（例如， **1.53.10.0**）标识 Azure 信息保护客户端（经典）。
+- 版本**1**（例如， **1.54.59.0**）标识 Azure 信息保护客户端（经典）。
 
-- 版本**2**（例如， **2.2.14.0**）标识 Azure 信息保护统一标签客户端。
+- 版本**2**（例如， **2.6.111.0**）标识 Azure 信息保护统一标签客户端。
 
 ## <a name="when-is-the-right-time-to-migrate-my-labels"></a>何时将标签迁移到正确的时间？
 

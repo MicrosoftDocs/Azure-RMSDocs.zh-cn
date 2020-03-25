@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: b91a5e495ef625595d3453d306b6352f36d07d1e
-ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
+ms.openlocfilehash: 2adce92f9507a31feb3c2a8acd5f9d62979f187a
+ms.sourcegitcommit: f7053f57363d50f236e16732b4be09744e00d29d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79482753"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80138260"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -124,6 +124,8 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |支持帐户切换：| 是 | 是 | **是** |
 |支持远程桌面服务：| **是** | **是** | **是** |
 |对 AD RMS 的支持：| **是** | 无<sup>7</sup> | 是 |
+|删除应用中的外部内容标记| **是**| 是| **是**|
+
 
 脚注：
 

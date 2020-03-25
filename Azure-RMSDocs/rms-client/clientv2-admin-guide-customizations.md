@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/11/2020
+ms.date: 03/23/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 76109514c88b90826d2f258f86f2bc97dc7cbce1
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: d28386d43df47ff0aaacf039d6649e622077b6ed
+ms.sourcegitcommit: f7053f57363d50f236e16732b4be09744e00d29d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79404940"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80138308"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -302,158 +302,8 @@ ms.locfileid: "79404940"
 
 ## <a name="remove-headers-and-footers-from-other-labeling-solutions"></a>删除其他标记解决方案中的页眉和页脚
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
-
-可以使用两种方法从其他标记解决方案中删除分类。 第一种方法从 Word 文档中删除任何形状，其中的形状名称与 advanced 属性**WordShapeNameToRemove**中定义的名称相匹配，第二种方法允许您从 Word、Excel 和 PowerPoint 文档中删除或替换**RemoveExternalContentMarkingInApp**高级属性中定义的基于文本的标头或表尾。 
-
-### <a name="use-the-wordshapenametoremove-advanced-property"></a>使用 WordShapeNameToRemove 高级属性
-
-*版本2.6.101.0 和更高版本支持**WordShapeNameToRemove**高级属性*
-
-此设置使您可以在其他标签解决方案应用这些视觉标记后，删除或替换 Word 文档中基于形状的标签。 例如，该形状包含旧标签的名称，你现在已将该标签迁移到 "敏感度" 标签，以使用新标签名称及其自己的形状。
-
-若要使用此高级属性，需要在 Word 文档中查找该形状的名称，然后在 " **WordShapeNameToRemove** " 属性的 "形状" 高级属性列表中定义这些名称。 服务将删除 Word 中以此高级属性的形状列表中定义的名称开头的任何形状。
-
-通过定义要删除的所有形状的名称并避免在所有形状中检查文本（这是一种消耗大量资源的过程），避免删除包含要忽略的文本的形状。
-
-如果未在此附加高级属性设置中指定 Word 形状，并且 Word 包含在**RemoveExternalContentMarkingInApp**项值中，则将检查在**ExternalContentMarkingToRemove**值中指定的文本的所有形状。 
-
-查找要使用的形状的名称并希望排除：
-
-1. 在 Word 中，显示 "**选择**" 窗格： "**主页**" 选项卡 >**编辑**组 >**选择**"选项" >**选择 "窗格**。
-
-2. 选择要标记为删除的页面上的形状。 标记的形状的名称现在会在**选择**窗格中突出显示。
-
-使用形状的名称为 * * * * * * * * * * * * * * * * * * * * * * * WordShapeNameToRemove。 
-
-示例：形状名称为**dc**。 若要删除具有此名称的形状，则指定值：`dc`。
-
-- 密钥： **WordShapeNameToRemove**
-
-- 值： \<**Word 形状名称**> 
-
-示例 PowerShell 命令，其中标签策略命名为 "Global"：
-
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{WordShapeNameToRemove="dc"}
-
-如果有多个 Word 形状要删除，请指定任意数量的值，以便删除形状。
-
-
-### <a name="use-the-removeexternalcontentmarkinginapp-advanced-property"></a>使用 RemoveExternalContentMarkingInApp 高级属性
-此设置使你可以从文档中删除或替换由其他标签解决方案应用的基于文本的页眉或页脚。 例如，旧的页脚包含已迁移到敏感度标签的旧标签的名称，以使用新标签名称及其自己的页脚。
-
-当统一标签客户端在其策略中获取此配置时，在 Office 应用中打开文档并将任何敏感度标签应用于该文档时，将删除或替换旧的页眉和页脚。
-
-Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint 中使用它时，会对这些应用的性能产生负面影响。 该配置允许你根据应用程序来定义设置，例如，搜索 Word 文档页眉和页脚中的文本，而不是 Excel 电子表格或 PowerPoint 演示文稿中的。
-
-因为模式匹配会影响用户的性能，所以建议你将 Office 应用程序类型（**W**Ord、E**X**项、 **P**owerPoint）限制为只需搜索的类型。
-
-对于所选的标签策略，请指定以下字符串：
-
-- 键：RemoveExternalContentMarkingInApp
-
-- 值：\<Office 应用程序类型 WXP> 
-
-例如：
-
-- 若要仅搜索 Word 文档，请指定 W。
-
-- 若要搜索 Word 文档和 PowerPoint 演示文稿，请指定 WP。
-
-示例 PowerShell 命令，其中标签策略命名为 "Global"：
-
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInApp="WX"}
-
-然后需要至少一个高级客户端设置 ExternalContentMarkingToRemove，指定页眉或页脚的内容以及如何删除或替换它们。
-
-### <a name="how-to-configure-externalcontentmarkingtoremove"></a>如何配置 ExternalContentMarkingToRemove
-
-指定 ExternalContentMarkingToRemove 键的字符串值时，拥有三个使用正则表达式的选项：
-
-- 用以删除页眉或页脚中所有内容的部分匹配。
-    
-    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 想要完全删除这些页面或页脚。 可指定值：`*TEXT*`。
-
-- 用以删除页眉或页脚中特定字词的完全匹配。
-    
-    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 只想删除单词 TEXT，结果使页眉或页脚字符串变为 TO REMOVE。 可指定值：`TEXT `。
-
-- 用以删除页眉或页脚中所有内容的完全匹配。
-    
-    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 想要删除其字符串为 TEXT TO REMOVE 的页眉或页脚。 可指定值：`^TEXT TO REMOVE$`。
-    
-
-指定的字符串的匹配模式不区分大小写。 最大字符串长度为255个字符，且不能包含空格。 
-
-因为某些文档可能包括不可见字符或者不同类型的空格或制表符，可能检测不到指定的短语或句子的字符串。 只要有可能，指定单个易区分的单词作为值，并确保在生产环境中部署之前测试结果。
-
-对于同一标签策略，请指定以下字符串：
-
-- 键：ExternalContentMarkingToRemove
-
-- 值：\<要匹配的字符串，定义为正则表达式> 
-
-示例 PowerShell 命令，其中标签策略命名为 "Global"：
-
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="*TEXT*"}
-
-#### <a name="multiline-headers-or-footers"></a>多行页眉或页脚
-
-如果页眉或页脚文本不只一行，则为每行创建一个键和值。 例如，下面是具有两行文本的页脚：
-
-The file is classified as Confidential
-
-Label applied manually
-
-若要删除此多行页脚，请为同一标签策略创建以下两个条目：
-
-- 键：ExternalContentMarkingToRemove
-
-- 键值 1：**Confidential\*** *
-
-- 键值 2： **\*Label applied*** 
-
-示例 PowerShell 命令，其中标签策略命名为 "Global"：
-
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="*Confidential*,*Label applied*"}
-
-
-#### <a name="optimization-for-powerpoint"></a>针对 PowerPoint 的优化
-
-PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你指定的但不属于页面或页脚的形状，可使用以下附加高级客户端设置：PowerPointShapeNameToRemove。 我们还建议使用此设置来避免检查所有形状中的文本，因为这将占用大量资源。
-
-如果未指定这项附加的高级客户端设置，并且 PowerPoint 包括在 RemoveExternalContentMarkingInApp键值中，将对所有形状检查你在 ExternalContentMarkingToRemove 值中指定的文本。 
-
-查找用作页眉或页脚的形状的名称：
-
-1. 在 PowerPoint 中，显示“选择”窗格：“格式”选项卡 >“排列”组 >“选择”窗格。
-
-2. 选择幻灯片上包含页眉或页脚的形状。 所选形状的名称现在突出显示在“选择”窗格中。
-
-使用形状的名称为 PowerPointShapeNameToRemove 键指定一个字符串字。 
-
-示例：形状名称是 fc。 若要删除具有此名称的形状，则指定值：`fc`。
-
-- 键：PowerPointShapeNameToRemove
-
-- 值：\<PowerPoint 形状名称> 
-
-示例 PowerShell 命令，其中标签策略命名为 "Global"：
-
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{PowerPointShapeNameToRemove="fc"}
-
-如果要删除多个 PowerPoint 形状，请指定任意数量的值，以便删除形状。
-
-默认情况下，只检查主幻灯片的页眉和页脚。 若要将检查范围扩展到所有幻灯片，将占用大量资源，则可以使用 RemoveExternalContentMarkingInAllSlides 附加高级客户端设置：
-
-- 键：RemoveExternalContentMarkingInAllSlides
-
-- 值：True
-
-示例 PowerShell 命令，其中标签策略命名为 "Global"：
-
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInAllSlides="True"}
-
+> [!NOTE]
+> 此配置当前具有已知限制，并将在将来的版本中重新发布。 
 
 ## <a name="disable-custom-permissions-in-file-explorer"></a>在文件资源管理器中禁用自定义权限
 
@@ -832,7 +682,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求：安全孤岛标签为 "机密" 的文档应由 Azure 信息保护重新标记为 "机密"。
 
-在此示例中：
+在本示例中：
 
 - Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中。
 
@@ -850,7 +700,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求：通过安全孤岛标记为 "敏感" 的文档应由 Azure 信息保护重新标记为 "高度机密"。
 
-在此示例中：
+在本示例中：
 
 - Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中。
 
@@ -868,7 +718,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求：你有两个安全孤岛标签，其中包含 "内部" 一词，并且你希望 Azure 信息保护统一标签客户端将具有这些安全孤岛标签的文档重新标记为 "常规"。
 
-在此示例中：
+在本示例中：
 
 - Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中。
 
@@ -955,7 +805,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 要求： Azure 信息保护统一标签客户端标记为 "机密" 的文档应具有名为 "分类" 的附加自定义属性，其值为 "Secret"。
 
-在此示例中：
+在本示例中：
 
 - 敏感度标签命名为 "**机密**"，并创建名为 "Secret" 的自定义**属性，其**值为 "**机密**"。
 
