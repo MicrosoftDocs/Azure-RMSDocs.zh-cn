@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 ms.subservice: hyok
 ms.custom: admin
-ms.openlocfilehash: 4fb1018d75717faeb2e19a1ac63bc74b9cb44b07
-ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
+ms.openlocfilehash: 83fc8228b664acc067c6a604f3d438f39669a49a
+ms.sourcegitcommit: 005307a9a2d51f230f65a902325bac0a7eff29fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79482685"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375634"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>用于 Azure 信息保护的保留自己的密钥 (HYOK) 保护
 
@@ -194,7 +194,7 @@ AD RMS 部署必须满足以下要求，才能为 Azure 信息保护标签提供
 
 - 查找模板 GUID：展开群集，并单击“权限策略模板”。 随后，从“分布式权限策略模板”信息中，可以复制要使用的模板中的 GUID。 例如：82bf3474-6efe-4fa1-8827-d1bd93339119
 
-- 查找授权 URL：单击群集名称。 从“群集详细信息”信息中，复制除 **/_wmcs/licensing** 字符串以外的“授权”值。 例如： https://rmscluster.contoso.com 
+- 查找授权 URL：单击群集名称。 从“群集详细信息”信息中，复制除 **/_wmcs/licensing** 字符串以外的“授权”值。 例如： `https://rmscluster.contoso.com` 
     
     如果你有一个 extranet 授权值以及一个 Intranet 授权值，并且它们是不同的：仅当你将与通过显式的点对点信任定义的合作伙伴共享受保护的文档或电子邮件时才指定 extranet 值。 否则使用 Intranet 值，并确保针对 Azure 信息保护使用 AD RMS 保护的所有客户端计算机均通过 Intranet 连接进行连接（例如，远程计算机使用 VPN 连接）。
 
