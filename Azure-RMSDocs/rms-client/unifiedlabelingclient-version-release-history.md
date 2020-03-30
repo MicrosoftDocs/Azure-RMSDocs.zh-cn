@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c8baa3a52c257b82f3cc7e6091bf316cdb5111a4
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: 9db865f64e2780d680a05cc8deae873b8cc975ea
+ms.sourcegitcommit: 1ade392edac5842adb14996012efb6e605c39d8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79403801"
+ms.lasthandoff: 03/29/2020
+ms.locfileid: "80382044"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -86,9 +86,6 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 - 对[自动和建议标签的可自定义策略提示](use-client.md)进行了改进。   
 
 - 在统一标签客户端中，为 Office 应用添加了对[脱机标签功能](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#support-for-disconnected-computers)的支持。
-
-- New **WordShapeNameToRemove** advanced 属性允许删除第三方应用程序所做的 Word 文档中的内容标记。 详细了解如何[识别现有的形状名称，以及如何使用**WordShapeNameToRemove**将其定义为删除](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solutions)。 
-
 
 
 **纠正**

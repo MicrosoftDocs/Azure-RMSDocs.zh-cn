@@ -4,7 +4,7 @@ description: 关于安装、支持的操作系统、注册表设置以及 Rights
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 03/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 56782458ea9fd605c76b975bf84cb0429fbae021
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: def6c0b11f1750bb1af3bfb2aee997a56e4cd384
+ms.sourcegitcommit: 1ade392edac5842adb14996012efb6e605c39d8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79403869"
+ms.lasthandoff: 03/29/2020
+ms.locfileid: "80382061"
 ---
 # <a name="rights-management-service-client-deployment-notes"></a>Rights Management Service 客户端部署说明
 
