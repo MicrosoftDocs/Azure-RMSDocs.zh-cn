@@ -8,16 +8,16 @@ metadata:
   ms.service: information-protection
   ms.topic: landing-page
   ms.collection: M365-security-compliance
-  author: cabailey
-  ms.author: cabailey
+  author: mlottner
+  ms.author: mlottner
   manager: rkarlin
-  ms.date: 11/01/2019
-  ms.openlocfilehash: da2c47f0e33f861a342f290f5a6edfccf72a7d66
-  ms.sourcegitcommit: bc45a127fc4d5871f6e7b3bba8774bcfb194397a
+  ms.date: 04/02/2019
+  ms.openlocfilehash: 28aee5d35982e832cbe6a43782a3b9c7a85700ee
+  ms.sourcegitcommit: 1737dba8750a9cbacc7a7f2dd009e1902c86fc19
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/29/2019
-  ms.locfileid: "74661815"
+  ms.lasthandoff: 04/02/2020
+  ms.locfileid: "80587496"
 landingContent:
 - title: 关于 Azure 信息保护
   linkLists:
@@ -25,7 +25,7 @@ landingContent:
     links:
     - text: 什么是 Azure 信息保护？
       url: what-is-information-protection.md
-    - text: 常见问题
+    - text: 常见问题解答
       url: faqs.md
 - title: 入门
   linkLists:
@@ -49,11 +49,9 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
-    - text: 11 月的 Doc 更新
-      url: https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Documentation-Update-for-November/ba-p/1031924
     - text: 前 5 个建议的 Ignite 会话
       url: what-is-information-protection.md#microsoft-ignite
-    - text: 版本 2.5.33.0 详细信息 - 统一标记客户端
+    - text: 版本 2.6.111.0 详细信息 - 统一标记客户端
       url: ./rms-client/unifiedlabelingclient-version-release-history.md#version-25330
 - title: 对本地数据存储中的数据进行分类和保护
   linkLists:
