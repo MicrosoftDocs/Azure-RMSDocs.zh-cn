@@ -1,10 +1,10 @@
 ---
 title: 迁移 AD RMS-Azure 信息保护 - 第 2 阶段
 description: 从 AD RMS 迁移到 Azure 信息保护的第 2 阶段涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 4 至 6。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/03/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: dd6e307283e010409b5359ff13a229df12b4daf5
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: 1fbe3fd2f91b63e7111b4de92e95ec4cad20fa4f
+ms.sourcegitcommit: c0fd00b057d155d6f2ed3a3ef5942d593b5be5c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79404039"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80670178"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
@@ -54,7 +54,7 @@ ms.locfileid: "79404039"
 
     - 不要选中将受信任的域文件保存在 RMS 版本 1.0 中的复选框。
 
-当你已导出所有受信任的发布域后，便可以启动将此数据导入到 Azure 信息保护的过程了。
+当你已导出所有受信任的发布域后，便可以开始将此数据导入到 Azure 信息保护的过程了。
 
 请注意，受信任的发布域包含之前用于解密受保护文件的服务器许可方证书 (SLC) 密钥，因此除了当前的活动域外，请务必导出所有受信任的发布域（并稍后导入到 Azure 中）。
 
@@ -77,7 +77,7 @@ ms.locfileid: "79404039"
 > [!NOTE]
 > 有关将硬件安全模块与 AD RMS 配合使用的详细信息，请参阅 [将 AD RMS 与硬件安全模块配合使用](https://technet.microsoft.com/library/jj651024.aspx)。
 
-两个 Azure 信息保护租户密钥拓扑选项包括：Microsoft 管理你的租户密钥（由 Microsoft 管理），或者你在 Azure Key Vault 中自行管理租户密钥（由客户管理）。 如果你自行管理 Azure 信息保护租户密钥，这有时也称为“创建自己的密钥”(BYOK)。 有关详细信息，请参阅[计划和实施你的 Azure 信息保护租户密钥](plan-implement-tenant-key.md)文章。
+两个 Azure 信息保护租户密钥拓扑选项包括：Microsoft 管理你的租户密钥（由 Microsoft 管理），或者你在 Azure Key Vault 中自行管理租户密钥（由客户管理）。 当你管理自己的 Azure 信息保护租户密钥时，它有时称为 "自带密钥" （BYOK）。 有关详细信息，请参阅[计划和实施你的 Azure 信息保护租户密钥](plan-implement-tenant-key.md)文章。
 
 使用下表来确定要使用哪个过程进行迁移。 
 

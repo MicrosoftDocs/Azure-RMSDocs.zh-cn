@@ -1,10 +1,10 @@
 ---
 title: 从 AD RMS 迁移到 Azure 信息保护 - 第 3 阶段
 description: 从 AD RMS 迁移到 Azure 信息保护的第 3 阶段涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 7。
-author: cabailey
-ms.author: cabailey
+author: mlottner
+ms.author: mlottner
 manager: rkarlin
-ms.date: 12/06/2019
+ms.date: 04/05/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b2c206885b2449edc73948a3c0e3c815634c93de
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: 329fa5594a1bf58b4acbeae10cda8202f35df4c6
+ms.sourcegitcommit: c0fd00b057d155d6f2ed3a3ef5942d593b5be5c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79405025"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80670232"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
@@ -93,7 +93,7 @@ ms.locfileid: "79405025"
 
 ## <a name="client-reconfiguration-by-using-registry-edits"></a>使用注册表编辑重新配置客户端
 
-此方法适用于所有 Windows 客户端，如果不运行 Office 365 应用或 Office 2016 （或更高版本）单击即运行，则应使用此方法。 此方法使用两个迁移脚本重新配置 AD RMS 客户端：
+此方法适用于所有 Windows 客户端，如果不运行 Office 365 应用或 Office 2016 （或更高版本），则应使用此方法。 此方法使用两个迁移脚本重新配置 AD RMS 客户端：
 
 - Migrate-Client.cmd
 
@@ -131,7 +131,7 @@ ms.locfileid: "79405025"
 
 1. 返回到迁移脚本 Migrate-Client.cmd 和 Migrate-User.cmd 中，这是之前在[准备阶段](migrate-from-ad-rms-phase1.md#step-2-prepare-for-client-migration)下载这些脚本时提取的。
 
-2. 按照 MigrateClient.cmd 中的说明修改脚本，以便它包含租户的 Azure Rights Management 服务 URL，以及 AD RMS 群集 Extranet 授权 URL 和 Intranet 授权 URL 的服务器名称。 然后，使上述脚本版本递增。 若要跟踪脚本版本，最好采用以下格式使用今天的日期：YYYYMMDD
+2. 按照 MigrateClient.cmd 中的说明修改脚本，以便它包含租户的 Azure Rights Management 服务 URL，以及 AD RMS 群集 Extranet 授权 URL 和 Intranet 授权 URL 的服务器名称。 然后，使上述脚本版本递增。 跟踪脚本版本的一个好方法是使用当天的日期，格式如下：YYYYMMDD
     
    > [!IMPORTANT]
    > 仍然注意，不要在地址前后引入多余空格。

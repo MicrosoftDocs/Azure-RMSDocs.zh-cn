@@ -1,10 +1,10 @@
 ---
 title: 从 AD RMS 迁移到 Azure 信息保护 - 第 4 阶段
 description: 从 AD RMS 迁移到 Azure 信息保护的第 4 阶段包括从 AD RMS 迁移到 Azure 信息保护的步骤 8 至 9
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/30/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 61a17f9d4b80dcc5ada82adeab4e215fc17b0963
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: b17f87f569b613a1583b82060b05bcbdeb943284
+ms.sourcegitcommit: c0fd00b057d155d6f2ed3a3ef5942d593b5be5c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934664"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80670192"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的第 4 阶段。 这些过程包括[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)的步骤 8-9。
@@ -34,11 +34,11 @@ ms.locfileid: "74934664"
 
 使用选择的 Azure 信息保护租户密钥拓扑单独执行以下操作：
 
-1. Exchange Online 必须知道与租户中的密钥对应的群集 AD RMS URL，才能解密受 AD RMS 保护的电子邮件。 这是通过 AD RMS 群集的 DNS SRV 记录完成，此记录还用于将 Office 客户端重新配置为使用 Azure 信息保护。 如果未在步骤 7 中创建 DNS SRV 记录以实现客户端重新配置，请立即创建此记录以支持 Exchange Online。 [说明](migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)
+1. 为了使 Exchange Online 能够解密受 AD RMS 保护的电子邮件，需要知道群集的 AD RMS URL 对应于租户中可用的密钥。 这是通过 AD RMS 群集的 DNS SRV 记录完成，此记录还用于将 Office 客户端重新配置为使用 Azure 信息保护。 如果未在步骤 7 中创建 DNS SRV 记录以实现客户端重新配置，请立即创建此记录以支持 Exchange Online。 [说明](migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)
     
     此 DNS 记录就位后，使用 Outlook 网页版和移动电子邮件客户端的用户便能在这些应用中查看受 AD RMS 保护的电子邮件，并且 Exchange 可以使用你从 AD RMS 导入的密钥，对已受 AD RMS 保护的内容执行解密、编制索引、日志记录和保护操作。  
 
-2. 运行 Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160).aspx) 命令。 如需运行此命令的帮助，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)中的分步说明。
+2. 运行 Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160).aspx) 命令。 如需运行此命令的帮助，请参阅以下文章中的分步说明：[Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)。
     
     在输出中，检查“AzureRMSLicensingEnabled”是否设置为“True”：
     
@@ -46,7 +46,7 @@ ms.locfileid: "74934664"
     
     - 如果 AzureRMSLicensingEnabled 设置为“False”，请运行 `Set-IRMConfiguration -AzureRMSLicensingEnabled $true`，然后使用[设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)中的验证步骤来确认 Exchange Online 现在是否可以使用 Azure Rights Management 服务。 
 
-## <a name="step-9-configure-irm-integration-for-exchange-server-and-sharepoint-server"></a>步骤 9： 为 Exchange Server 和 SharePoint Server 配置 IRM 集成
+## <a name="step-9-configure-irm-integration-for-exchange-server-and-sharepoint-server"></a>步骤 9. 为 Exchange Server 和 SharePoint Server 配置 IRM 集成
 
 如果你已将 Exchange Server 或 SharePoint Server 的信息权限管理 (IRM) 与 AD RMS 集成，则需要部署 Rights Management (RMS) 连接器，以充当本地服务器与 Azure 信息保护的保护服务之间的通信接口（中继）。
 
@@ -113,7 +113,7 @@ ms.locfileid: "74934664"
 
 ### <a name="configure-exchange-and-sharepoint-to-use-the-connector"></a>配置 Exchange 和 SharePoint 以使用连接器
 
-1. 返回到部署 RMS 连接器的说明：[步骤 5：配置服务器以使用 RMS 连接器](./configure-servers-rms-connector.md)
+1. 返回到部署 RMS 连接器的说明：[步骤 5：将服务器配置为使用 RMS 连接器](./configure-servers-rms-connector.md)
 
     如果仅具有 SharePoint Server，请直接转到[后续步骤](#next-steps)继续该迁移。 
 

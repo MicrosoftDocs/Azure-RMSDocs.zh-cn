@@ -1,10 +1,10 @@
 ---
 title: 迁移 AD RMS-Azure 信息保护 - 第 1 阶段
 description: 从 AD RMS 迁移到 Azure 信息保护的第 1 阶段涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 1 至 3。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/03/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9bd7768d478301e090518f86bd119c99436ca8a3
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: 7187ab8538122b7af64d8c261f4cc96632a15393
+ms.sourcegitcommit: c0fd00b057d155d6f2ed3a3ef5942d593b5be5c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79405076"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80670168"
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
 

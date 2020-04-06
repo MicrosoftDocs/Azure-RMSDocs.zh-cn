@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a7413026bc85c93063c5eb490c559e52db63b718
-ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
+ms.openlocfilehash: ffb0d3b468940cb0497b0d7081520e06942bc096
+ms.sourcegitcommit: c0fd00b057d155d6f2ed3a3ef5942d593b5be5c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79482311"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80670199"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -99,15 +99,15 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 |使用预定义模板的基于云的保护或基于 HYOK 的保护 |否|预定义模板没有配置选项。 我们不建议使用此配置发布标签。|
 |使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |是|管理中心现在具有用户定义的权限的配置选项。 <br /><br /> 如果使用此配置发布标签，请查看[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中应用标签的结果。|
 |使用 Outlook（不可转发）中用户定义权限的基于 HYOK 的保护 |否|HYOK 没有配置选项。 我们不建议使用此配置发布标签。 否则，请在[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中查看应用此标签所带来的后果。|
-|为视觉标记（页眉、页脚、水印）使用 RGB 代码自定义字体和字体颜色|是|视觉标记的配置限制为颜色和字体大小列表。 尽管无法看见管理中心中配置的值，仍可以不做任何更改发布此标签。 <br /><br />若要更改这些选项，可以使用 Azure 门户。 但是，请考虑将颜色更改为管理中心中列出的选项之一，以便于管理。|
-|视觉标记（页眉、页脚）中的变量|否|如果不做更改就发布此标签，则变量将在客户端上显示为文本而不是显示动态值。 发布标签之前，请编辑字符串以删除变量。|
-|每个应用的视觉标记|否|如果不做更改就发布此标签，则在所有应用中应用变量将在客户端上显示为文本，而不是在所选的应用上显示文本字符串。 仅当适用于所有应用时发布此标签，并编辑字符串以删除应用变量。|
+|自定义字体大小和通过 RGB 代码进行可视标记的自定义字体颜色（页眉、页脚、水印）  |是|视觉标记的配置限制为颜色和字体大小列表。 尽管无法看见管理中心中配置的值，仍可以不做任何更改发布此标签。 <br /><br />若要更改这些选项，可以使用 Azure 门户。 但是，请考虑将颜色更改为管理中心中列出的选项之一，以便于管理。 <br /><br /> 统一标签客户端不支持字体类型**自定义**（Arial、快递和其他）|
+|视觉标记（页眉、页脚）中的变量|是|如果不做更改就发布此标签，则变量将在客户端上显示为文本而不是显示动态值。 发布标签之前，请编辑字符串以删除变量。|
+|每个应用的视觉标记|是|如果不做更改就发布此标签，则在所有应用中应用变量将在客户端上显示为文本，而不是在所选的应用上显示文本字符串。 仅当适用于所有应用时发布此标签，并编辑字符串以删除应用变量。|
 |"仅限我" 保护 |是|管理中心不允许你保存现在应用的加密设置，而无需指定任何用户。 在 Azure 门户中，此配置会生成一个标签，该标签适用于["仅限我" 的保护](configure-policy-protection.md#example-6-label-that-applies-just-for-me-protection)。 <br /><br /> 作为替代方法，可以创建应用加密的标签，并指定具有任何权限的用户，然后使用 PowerShell 编辑关联的保护模板。 首先，使用[AipServiceRightsDefinition](https://docs.microsoft.com/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet （请参阅示例3），然后使用*RightsDefinitions*参数[AipServiceTemplateProperty](https://docs.microsoft.com/powershell/module/aipservice/set-aipservicetemplateproperty?view=azureipps#examples) 。|
 |条件和关联设置 <br /><br /> 包括自动和建议标签及其工具提示|“不适用”|若要重新配置条件，请将自动标记用作标签设置中的独立配置。|
 
 ### <a name="comparing-the-behavior-of-protection-settings-for-a-label"></a>比较标签保护设置的行为
 
-使用下表来确定标签的相同保护设置的行为方式不同，具体取决于 Azure 信息保护客户端（经典）、Azure 信息保护统一标签客户端还是 Office 应用使用它内置标签的（也称为 "本机办公室标签"）。 标签行为的差异可能会改变您决定是否发布标签，特别是在您的组织中有混合的客户端时。
+使用下表来确定标签的相同保护设置的行为方式不同，具体取决于 Azure 信息保护客户端（经典）、Azure 信息保护统一标签客户端，还是内置标签（也称为 "本机办公室标签"）的 Office 应用。 标签行为的差异可能会改变您决定是否发布标签，特别是在您的组织中有混合的客户端时。
 
 如果你不确定保护设置的配置方式，请在 "**保护**" 窗格的 "Azure 门户中查看其设置。 如果需要有关此步骤的帮助，请参阅[配置保护设置标签](configure-policy-protection.md#to-configure-a-label-for-protection-settings)。
 
