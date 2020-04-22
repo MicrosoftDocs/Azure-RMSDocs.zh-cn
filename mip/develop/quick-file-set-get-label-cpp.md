@@ -8,10 +8,10 @@ ms.topic: quickstart
 ms.date: 07/30/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 6923bdf83f76a3e2a30e49bae27e9f7be963a623
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "75556021"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C++)
@@ -22,8 +22,8 @@ ms.locfileid: "75556021"
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
-- 首先完成[快速入门：列出敏感度标签 (C++)](quick-file-list-labels-cpp.md)，这可生成 Visual Studio 初学者解决方案，以列出组织的敏感度标签。 此“设置和获取敏感度标签”快速入门基于前一个。
-- 可选：查看 [MIP SDK 中的文件句柄](concept-handler-file-cpp.md)概念。
+- 首先完成[快速入门：列出敏感度标签 (C++)](quick-file-list-labels-cpp.md)，这可生成初学者 Visual Studio 解决方案，以列出组织的敏感度标签。 此“设置和获取敏感度标签”快速入门基于前一个。
+- （可选）：查看 [MIP SDK 中的文件处理程序](concept-handler-file-cpp.md)概念。
 
 ## <a name="implement-an-observer-class-to-monitor-the-file-handler-object"></a>实现观察者类以监视文件处理程序对象
 
@@ -31,12 +31,12 @@ ms.locfileid: "75556021"
 
 通过扩展 SDK 的 `mip::FileHandler::Observer` 类，创建文件句柄观察程序的基本实现。 稍后会实例化并使用观察者，以监视文件处理程序操作。
 
-1. 打开之前的“快速入门：列出敏感度标签 (C++)”一文中使用的 Visual Studio 解决方案。
+1. 打开之前的“快速入门：列出敏感度标签 (C++)”一文中所使用的 Visual Studio 解决方案。
 
 2. 向项目中添加一个新类，这将为你生成标头/.h 和实现/.cpp 文件：
 
    - 在“解决方案资源管理器”中，再次右键单击项目节点，选择“添加”，然后选择“类”    。
-   - 在“添加类”对话框上： 
+   - 在“添加类”  对话框上：
      - 在“类名”  字段中，输入“filehandler_observer”。 请注意，根据你输入的名称，会自动填充“.h 文件”  和“.cpp 文件”  字段。
      - 完成后，单击“确定”  按钮。
 
@@ -60,7 +60,7 @@ ms.locfileid: "75556021"
      };
      ```
 
-   - 通过选择/删除生成的 `filehandler_observer` 类实现，更新“filehandler_observer.cpp”。 请勿  删除上一步生成的预处理器指令 (#pragma, #include)。 然后将以下源复制/粘贴到文件中，并放在任何现有的预处理器指令之后：
+   - 通过选择/删除生成的 `filehandler_observer` 类实现，更新“filehandler_observer.cpp”。 请勿删除上一步生成的预处理器指令 (#pragma, #include)  。 然后将以下源复制/粘贴到文件中，在任何现有的预处理器指令之后：
 
      ```cpp
      void FileHandlerObserver::OnCreateFileHandlerSuccess(const std::shared_ptr<mip::FileHandler>& fileHandler, const std::shared_ptr<void>& context) {

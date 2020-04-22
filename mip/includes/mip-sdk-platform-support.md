@@ -6,13 +6,13 @@ ms.topic: include
 ms.collection: M365-security-compliance
 ms.date: 02/01/2019
 ms.openlocfilehash: 10e9d69012ffba9f3b80025d66d347fd7df58231
-ms.sourcegitcommit: fcde8b31f8685023f002044d3a1d1903e548d207
+ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "69882980"
 ---
-| 操作系统        | 版本                          | 下载                                                                                                                            | 注意                                        |
+| 操作系统        | 版本                          | 下载                                                                                                                            | 注释                                        |
 | ----------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
 | Ubuntu                  | 16.04                             | [C++ tar.gz](https://aka.ms/mipsdkbinaries)                                                                                          |                                              |
 | RedHat Enterprise Linux 7 | （带有 devtoolset-7）               | [C++ tar.gz](https://aka.ms/mipsdkbinaries)                                                                                          |                                              |

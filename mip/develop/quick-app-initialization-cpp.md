@@ -7,10 +7,10 @@ ms.topic: quickstart
 ms.date: 07/30/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 49a0588f4f4d91879899fc0ccd906490906250c0
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "75556072"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C++)
@@ -59,15 +59,15 @@ ms.locfileid: "75556072"
 1. 向项目中添加一个新类，这将为你生成标头/.h 和实现/.cpp 文件：
 
    - 在“解决方案资源管理器”中，再次右键单击项目节点，选择“添加”，然后选择“类”    。
-   - 在“添加类”对话框上： 
-     - 在“类名”字段中，输入“profile_observer”  。 请注意，根据你输入的名称，会自动填充“.h 文件”和“.cpp 文件”字段   。
-     - 完成后，单击“确定”按钮  。
+   - 在“添加类”  对话框上：
+     - 在“类名”字段中，输入“profile_observer”  。 请注意，根据你输入的名称，会自动填充“.h 文件”  和“.cpp 文件”  字段。
+     - 完成后，单击“确定”  按钮。
 
      [![在 Visual Studio 中添加类](media/quick-app-initialization-cpp/add-class.png)](media/quick-app-initialization-cpp/add-class.png#lightbox)
 
-2. 生成类的 .h 和 .cpp 文件之后，会在“编辑器组”选项卡中打开这两个文件。 现在更新每个文件以实现新的观察程序类：
+2. 生成类的 .h 和 .cpp 文件之后，会在“编辑器组”选项卡中打开这两个文件。 现在更新每个文件以实现新的观察者类：
 
-   - 通过选择/删除生成的 `profile_observer` 类来更新“profile_observer.h”。 请勿删除上一步生成的预处理器指令 (#pragma, #include)  。 然后将以下源复制/粘贴到文件中，并放在任何现有的预处理器指令之后：
+   - 通过选择/删除生成的 `profile_observer` 类来更新“profile_observer.h”。 请勿删除上一步生成的预处理器指令 (#pragma, #include)  。 然后将以下源复制/粘贴到文件中，在任何现有的预处理器指令之后：
 
      ```cpp
      #include <memory>
@@ -83,7 +83,7 @@ ms.locfileid: "75556072"
      };
      ```
 
-   - 通过选择/删除生成的 `profile_observer` 类实现，更新“profile_observer.cpp”。 请勿删除上一步生成的预处理器指令 (#pragma, #include)  。 然后将以下源复制/粘贴到文件中，并放在任何现有的预处理器指令之后：
+   - 通过选择/删除生成的 `profile_observer` 类实现，更新“profile_observer.cpp”。 请勿删除上一步生成的预处理器指令 (#pragma, #include)  。 然后将以下源复制/粘贴到文件中，在任何现有的预处理器指令之后：
 
      ```cpp
      #include <future>
@@ -115,7 +115,7 @@ ms.locfileid: "75556072"
      }
      ```
 
-3. （可选）使用 F6（生成解决方案）运行解决方案的某个测试编译/链接，确保它成功生成后再继续  。
+3. （可选）使用 F6（生成解决方案  ）运行解决方案的某个测试编译/链接，以确保它成功生成然后再继续。
 
 ## <a name="implement-an-authentication-delegate"></a>实现身份验证委托
 
@@ -196,7 +196,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
      }
      ```
 
-3. （可选）使用 F6（生成解决方案）运行解决方案的某个测试编译/链接，确保它成功生成后再继续  。
+3. （可选）使用 F6（生成解决方案  ）运行解决方案的某个测试编译/链接，以确保它成功生成然后再继续。
 
 ## <a name="implement-a-consent-delegate"></a>实现同意委托
 
@@ -234,13 +234,13 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
      }
      ``` 
      
-3. （可选）使用 F6（生成解决方案）运行解决方案的某个测试编译/链接，确保它成功生成后再继续  。
+3. （可选）使用 F6（生成解决方案  ）运行解决方案的某个测试编译/链接，以确保它成功生成然后再继续。
 
 ## <a name="construct-a-file-profile-and-engine"></a>构造文件配置文件和引擎
 
 如前文所述，使用 MIP API 的 SDK 客户端需要配置文件和引擎对象。 通过添加代码来实例化配置文件和引擎对象，完成本快速入门的编码部分： 
 
-1. 在“解决方案资源管理器”中，打开项目中包含 `main()` 方法的实现的 .cpp 文件  。 它默认与包含它的项目同名，即在项目创建期间指定的名称。
+1. 在“解决方案资源管理器”中，打开项目中包含  **方法的实现的 .cpp 文件**`main()`。 它默认与包含它的项目同名，即在项目创建期间指定的名称。
 
 2. 删除生成的 `main()` 实现。 请勿删除在项目创建期间 (#pragma, #include) 由 Visual Studio 生成的预处理程序指令  。 在任何预处理程序指令之后追加以下代码：
 

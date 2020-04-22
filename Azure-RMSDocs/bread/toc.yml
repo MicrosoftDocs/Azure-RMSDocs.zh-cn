@@ -6,7 +6,7 @@
       tocHref: /enterprise-mobility-security/
       topicHref: /enterprise-mobility-security
       items:
-        - name: Azure Information Protection
+        - name: Azure 信息保护
           tocHref: /azure/information-protection/
           topicHref: /azure/information-protection
           items:

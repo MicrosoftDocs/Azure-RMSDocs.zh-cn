@@ -7,13 +7,13 @@ ms.topic: overview
 ms.date: 01/18/2019
 ms.author: mbaldwin
 ms.openlocfilehash: 45d2e4fb96bb81d8eb7bb982502693e9d5ebf981
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "75556055"
 ---
-# <a name="overview"></a>概述
+# <a name="overview"></a>“概述”
 
 ## <a name="microsoft-information-protection"></a>Microsoft 信息保护
 
