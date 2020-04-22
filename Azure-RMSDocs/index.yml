@@ -13,10 +13,10 @@ metadata:
   manager: rkarlin
   ms.date: 04/02/2019
   ms.openlocfilehash: 28aee5d35982e832cbe6a43782a3b9c7a85700ee
-  ms.sourcegitcommit: 1737dba8750a9cbacc7a7f2dd009e1902c86fc19
+  ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/02/2020
+  ms.lasthandoff: 04/21/2020
   ms.locfileid: "80587496"
 landingContent:
 - title: 关于 Azure 信息保护

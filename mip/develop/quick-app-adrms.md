@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 04/17/2019
 ms.author: tommos
-ms.openlocfilehash: 424a260b1646a381dca23de71785dd34f92fc281
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: 32e2cc1cb3924c5a4181bd4cafaaf3f53f085c00
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75555154"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764214"
 ---
 # <a name="quickstart-active-directory-rights-management-server-ad-rms-protection"></a>快速入门：Active Directory 权限管理服务器 (AD RMS) 保护
 
@@ -49,7 +49,7 @@ SDK 使用 UPN 或邮件地址后缀，根据通过 `FileEngineSettings` 或 `Pr
 
 ```csharp
 // Configure FileEngineSettings as protection only engine.
-var engineSettings = new FileEngineSettings("", "", "en-US")
+var engineSettings = new FileEngineSettings("", authDelegate, "", "en-US")
 {
      // Provide the identity for service discovery.
      Identity = identity,
@@ -64,7 +64,7 @@ var engineSettings = new FileEngineSettings("", "", "en-US")
 
 ```csharp
 // Configure FileEngineSettings as protection only engine and generate a unique engine id.
-var engineSettings = new FileEngineSettings("", "", "en-US")
+var engineSettings = new FileEngineSettings("", authDelegate, "", "en-US")
 {
      // Set ProtectionOnlyEngine to true for AD RMS as labeling isn't supported
      ProtectionOnlyEngine = true,
@@ -101,7 +101,7 @@ engineSettings.SetProtectionOnlyEngine = true;
 如果用于 MDE 的 DNS SRV 记录未发布，或标识不可用于服务发现，必须将引擎设置为仅保护引擎，并使用通过 `SetProtectionCloudEndpointBaseUrl()` 提供的显式云终结点 URL。
 
 ```cpp
-FileEngine::Settings engineSettings("", "");
+FileEngine::Settings engineSettings("", authDelegate, "");
 engineSettings.SetProtectionOnlyEngine = true;
 engineSettings.SetProtectionCloudEndpointBaseUrl("https://rms.contoso.com");
 ```
@@ -117,7 +117,7 @@ engineSettings.SetProtectionCloudEndpointBaseUrl("https://rms.contoso.com");
 如果用于移动设备扩展的 DNS SRV 记录已发布，并且标识已在 `ProtectionEngine::Settings` 中提供，无需进行额外的代码更改，即可使用 AD RMS。 服务发现会查找 AD RMS 终结点，并将它用于保护操作。
 
 ```cpp
-ProtectionEngine::Settings engineSettings(mip::Identity(mUsername), "");
+ProtectionEngine::Settings engineSettings(mip::Identity(mUsername), authDelegate, "");
 ```
 
 ### <a name="set-the-protectionenginesettings-to-use-ad-rms-with-an-explicit-endpoint"></a>将 ProtectionEngine::Settings 设置为结合使用 AD RMS 与显式终结点
@@ -125,7 +125,7 @@ ProtectionEngine::Settings engineSettings(mip::Identity(mUsername), "");
 如果 DNS SRV 记录未发布，或标识未在 `ProtectionEngine::Settings` 中提供，必须通过 `SetProtectionCloudEndpointBaseUrl()` 显式设置保护终结点 URL。
 
 ```cpp
-ProtectionEngine::Settings engineSettings("", "");
+ProtectionEngine::Settings engineSettings("", authDelegate, "");
 engineSettings.SetProtectionCloudEndpointBaseUrl("https://RMS.CONTOSO.COM");
 ```
 

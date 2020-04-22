@@ -13,10 +13,10 @@ ms.custom: admin
 search.appverid:
 - MET150
 ms.openlocfilehash: 97008a7ecb7979780454bee990ae905d87655f45
-ms.sourcegitcommit: 6393b971f56a1c666f82777d38ea3ca853c60342
+ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "73979967"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
@@ -29,7 +29,7 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 ![用于 Azure 信息保护的建议分类示例](./media/info-protect-recommend-calloutsv2.png)
 
-###### <a name="screenshot-from-the-azure-information-protection-client-classicfaqsmdwhats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>来自 [Azure 信息保护客户端（经典）](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图
+###### <a name="screenshot-from-the-azure-information-protection-client-classic"></a>来自 [Azure 信息保护客户端（经典）](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图
 
 内容进行分类（以及保护（可选））之后，随后可以跟踪并控制其使用方式。 可以分析数据流以深入了解业务、检测危险行为和采取修正措施、跟踪对文档的访问、防止数据泄露或误用，等等。
 
@@ -41,7 +41,7 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 ![显示 Azure 信息保护分类的示例电子邮件页脚和标头](./media/example-email-footerv2.png)
 
-###### <a name="screenshot-from-the-azure-information-protection-client-classicfaqsmdwhats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>来自 [Azure 信息保护客户端（经典）](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图
+###### <a name="screenshot-from-the-azure-information-protection-client-classic"></a>来自 [Azure 信息保护客户端（经典）](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图
 
 ## <a name="how-data-is-protected"></a>如何保护数据
 
@@ -71,7 +71,7 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 ![Excel 中的 Azure 信息保护栏的示例](./media/excelproplus-infoprotect-bar.png)
 
-###### <a name="screenshot-from-the-azure-information-protection-unified-labeling-clientfaqsmdwhats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>来自 [Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图 
+###### <a name="screenshot-from-the-azure-information-protection-unified-labeling-client"></a>来自 [Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图 
 
 此信息保护栏使最终用户能够轻松选择用于正确分类的标签。 如有需要，还可以自动应用标签以避免用户猜测，或者用于遵循组织策略。
 
@@ -103,7 +103,7 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 ![选择配置为“不转发”的标签](./media/recipients-only-label2.png)
 
-###### <a name="screenshot-from-the-azure-information-protection-unified-labeling-clientfaqsmdwhats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client"></a>来自 [Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图
+###### <a name="screenshot-from-the-azure-information-protection-unified-labeling-client"></a>来自 [Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图
 
 或者，可以通过使用应用权限保护的邮件流规则，为用户自动提供保护。 
 
