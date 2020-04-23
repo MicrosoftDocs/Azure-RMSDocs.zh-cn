@@ -11,10 +11,10 @@ ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
 ms.openlocfilehash: 1412567cdc0b7d6dcb1365c7aad3fceaa9dc44ba
-ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
+ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79483297"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
