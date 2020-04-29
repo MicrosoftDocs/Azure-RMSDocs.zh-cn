@@ -1,24 +1,24 @@
 ---
-title: class mip::FileIOError
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： fileioerror 类。
+title: 类 FileIOError
+description: 记录 Microsoft 信息保护（MIP） SDK 的 fileioerror：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 6c08dbdde18448bd4c2115d0ef10631243354c77
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 97b805ad36833e1eff9c845d1dd662b1e5b80c96
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77488494"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81762873"
 ---
-# <a name="class-mipfileioerror"></a>class mip::FileIOError 
+# <a name="class-fileioerror"></a>类 FileIOError 
 文件 IO 错误。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
 _尚无记录。_

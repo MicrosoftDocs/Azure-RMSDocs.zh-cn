@@ -1,30 +1,30 @@
 ---
-title: 类 mip::HttpResponse
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： httpresponse.cache 类。
+title: 类 Httpresponse.cache
+description: 记录 Microsoft 信息保护（MIP） SDK 的 httpresponse.cache：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: e24eef471b11daffadb84235edbc93ff14696c25
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 6e37613adce0397ed543c4df793a59e74795fb26
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77488052"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81762469"
 ---
-# <a name="class-miphttpresponse"></a>类 mip::HttpResponse 
-一个接口，该接口描述在重写 HttpDelegate 时由客户端应用程序实现的单个 HTTP 响应。
+# <a name="class-httpresponse"></a>类 Httpresponse.cache 
+描述单个 HTTP 响应的接口，由客户端应用在重写 HttpDelegate 时实现。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetId() const  |  获取响应 ID。
 public int32_t GetStatusCode() const  |  获取响应状态代码。
-public const std：： vector\<uint8_t\>& GetBody （） const  |  获取请求正文。
-public const std：： map\<std：： string、std：： string、CaseInsensitiveComparator\>& GetHeaders （） const  |  获取请求标头。
+public const std：： vector\<Uint8_t\>& GetBody （） const  |  获取请求正文。
+public const std：： map\<std：： string，std：： String，CaseInsensitiveComparator\>& GetHeaders （） const  |  获取请求标头。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getid-function"></a>GetId 函数
 获取响应 ID。

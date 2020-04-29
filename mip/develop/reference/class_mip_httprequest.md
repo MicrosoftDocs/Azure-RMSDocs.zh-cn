@@ -1,31 +1,31 @@
 ---
-title: class mip::HttpRequest
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： httprequest 类。
+title: 类 HttpRequest
+description: 记录 Microsoft 信息保护（MIP） SDK 的 httprequest：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: f3b26ad07b8b3bfc556646cfd96a71aa9188bbb0
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: af302a760ee6b8f24b077b2c45bfe86ab0a80dac
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77488086"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81762708"
 ---
-# <a name="class-miphttprequest"></a>class mip::HttpRequest 
+# <a name="class-httprequest"></a>类 HttpRequest 
 描述单个 HTTP 请求的接口。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetId() const  |  获取请求 ID。
 public HttpRequestType GetRequestType() const  |  获取请求类型。
 public const std::string& GetUrl() const  |  获取请求 URL。
-public const std：： vector\<uint8_t\>& GetBody （） const  |  获取请求正文。
-public const std：： map\<std：： string、std：： string、CaseInsensitiveComparator\>& GetHeaders （） const  |  获取请求标头。
+public const std：： vector\<Uint8_t\>& GetBody （） const  |  获取请求正文。
+public const std：： map\<std：： string，std：： String，CaseInsensitiveComparator\>& GetHeaders （） const  |  获取请求标头。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getid-function"></a>GetId 函数
 获取请求 ID。

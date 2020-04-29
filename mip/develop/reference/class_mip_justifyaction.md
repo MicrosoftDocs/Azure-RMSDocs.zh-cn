@@ -1,26 +1,26 @@
 ---
-title: class mip::JustifyAction
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： justifyaction 类。
+title: 类 JustifyAction
+description: 记录 Microsoft 信息保护（MIP） SDK 的 justifyaction：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: aaf842feb4d7c4f33b7af897378ae308e11b012f
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: ae2c1dd96c07febf374c50791c915597deea7c76
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489973"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81762180"
 ---
-# <a name="class-mipjustifyaction"></a>class mip::JustifyAction 
-调整操作要求对标签进行降级并在执行状态中设置响应。
+# <a name="class-justifyaction"></a>类 JustifyAction 
+JustifyAction 要求必须合理解释标签降级，并设置执行状态下的响应。
   
 **另请参阅**： mip：： executionstate&：： IsDowngradeJustified
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
 _尚无记录。_

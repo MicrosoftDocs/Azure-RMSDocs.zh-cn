@@ -1,30 +1,30 @@
 ---
-title: 类 mip::HttpDelegate
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： httpdelegate 类。
+title: 类 HttpDelegate
+description: 记录 Microsoft 信息保护（MIP） SDK 的 httpdelegate：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: e629e15ed3a4754123f8ca71adee04d32bc3785f
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: e1ddc8595e3cba2172228532a84ca68883cc0afd
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77488103"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81762818"
 ---
-# <a name="class-miphttpdelegate"></a>类 mip::HttpDelegate 
+# <a name="class-httpdelegate"></a>类 HttpDelegate 
 用于重写 HTTP 处理的接口。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-公共 std：： shared_ptr\<HttpOperation\> Send （const std：： shared_ptr\<HttpRequest\>& request，const std：： shared_ptr\<void\>& 上下文）  |  发送 HTTP 请求。
-public std：： shared_ptr\<HttpOperation\> SendAsync （const std：： shared_ptr\<HttpRequest\>& request，const std：： shared_ptr\<void\>& context，const std：： function\<void （std：： shared_ptr\<HttpOperation\>）  |  以异步方式发送 HTTP 请求。
-public void CancelOperation （const std：： string & requestId）  |  取消特定的 HTTP 操作。
+public std：： shared_ptr\<HttpOperation\> Send （const std：： shared_ptr\<HttpRequest\>& request，const std：： shared_ptr\<void\>& 上下文）  |  发送 HTTP 请求。
+public std：： shared_ptr\<HttpOperation\> SendAsync （const std：： shared_ptr\<HttpRequest\>& request，const std：： shared_ptr\<void\>& context，const std：： function\<void （std：： shared_ptr\<HttpOperation\> ）  |  以异步方式发送 HTTP 请求。
+public void CancelOperation （const std：： string& requestId）  |  取消特定的 HTTP 操作。
 public void CancelAllOperations （）  |  取消正在进行的 HTTP 请求。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="send-function"></a>Send 函数
 发送 HTTP 请求。

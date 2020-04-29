@@ -1,36 +1,38 @@
 ---
-title: 类 mip：:P rotectionHandler：:P ublishingSettings
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionhandler 类。
+title: 类 ProtectionHandler：:P ublishingSettings
+description: 记录 Microsoft 信息保护（MIP） SDK 的 protectionhandler：:p ublishingsettings 类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: e61eb300cbc787ecbb7fd14ec5dcb060d4f47d0a
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: fc1de565e103b840c1190b397c247caca515d5bd
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77490755"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764414"
 ---
-# <a name="class-mipprotectionhandlerpublishingsettings"></a>类 mip：:P rotectionHandler：:P ublishingSettings 
+# <a name="class-protectionhandlerpublishingsettings"></a>类 ProtectionHandler：:P ublishingSettings 
 用于创建 ProtectionHandler 以保护新内容的设置。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public PublishingSettings （const std：： shared_ptr\<ProtectionDescriptor\>& protectionDescriptor）  |  用于创建新引擎的 ProtectionHandler：： Settings 构造函数。
+public PublishingSettings （const std：： shared_ptr\<protectionDescriptor\>& ProtectionDescriptor）  |  用于创建新引擎的 ProtectionHandler：： Settings 构造函数。
 public std：： shared_ptr\<ProtectionDescriptor\> GetProtectionDescriptor （） const  | _尚无记录。_
 public bool GetIsAuditedExtractionAllowed （） const  |  获取是否允许非 MIP 感知应用程序打开受保护的内容。
 public void SetIsAuditedExtractionAllowed （bool isAuditedExtractionAllowed）  |  设置是否允许非 MIP 感知应用程序打开受保护的内容。
 public bool GetIsDeprecatedAlgorithmPreferred （） const  |  获取是否首选不推荐使用的加密算法（ECB）来实现向后兼容性。
 public void SetIsDeprecatedAlgorithmPreferred （bool isDeprecatedAlgorithmPreferred）  |  设置是否首选不推荐使用的加密算法（ECB）来实现向后兼容性。
-public void SetDelegatedUserEmail （const std：： string & delegatedUserEmail）  |  设置委派的用户。
-public const std：： string & GetDelegatedUserEmail （） const  |  获取委托的用户。
+public void SetDelegatedUserEmail （const std：： string& delegatedUserEmail）  |  设置委派的用户。
+public const std：： string& GetDelegatedUserEmail （） const  |  获取委托的用户。
 public bool IsPublishingFormatJson （） const  |  获取返回的 pl 是否为 json 格式（xml 格式是否被广泛接受并且为默认值）。
 public void SetPublishingFormatJson （bool isPublishingFormatJson）  |  返回的 pl 是否为 json 格式（xml 格式更广泛地接受并且是默认值）。
+public void SetPreLicenseUserEmail （const std：： string& preLicenseUserEmail）  |  设置许可用户。
+public const std：： string& GetPreLicenseUserEmail （） const  |  获取预许可用户。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="publishingsettings-function"></a>PublishingSettings 函数
 用于创建新引擎的 ProtectionHandler：： Settings 构造函数。
@@ -99,3 +101,19 @@ _尚无记录。_
 参数：  
 * **isPublishingFormatJson**：如果启用 json 格式，则为。
 
+
+  
+### <a name="setprelicenseuseremail-function"></a>SetPreLicenseUserEmail 函数
+设置许可用户。
+
+参数：  
+* **preLicenseUserEmail**：许可前用户
+
+
+如果未指定预许可用户，则将不会获得预许可证
+  
+### <a name="getprelicenseuseremail-function"></a>GetPreLicenseUserEmail 函数
+获取预许可用户。
+
+  
+**返回**：预许可用户

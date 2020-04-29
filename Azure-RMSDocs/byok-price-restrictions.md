@@ -1,10 +1,10 @@
 ---
 title: BYOK 详细信息-Azure 信息保护
 description: 使用客户托管的密钥（称为 "自带密钥" 或 BYOK）与 Azure 信息保护配合使用来了解详细信息和限制。
-author: cabailey
-ms.author: cabailey
+author: mlottner
+ms.author: mlottner
 manager: rkarlin
-ms.date: 11/22/2019
+ms.date: 04/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,21 +13,21 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4a82afdeee9459b460b98a385102147c6c78ff28
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: d94783b491dd9ff0b099a68e009809cd7ec965fb
+ms.sourcegitcommit: 479b3aaea7011750ff85a217298e5ae9185c1dd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935174"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82224557"
 ---
 # <a name="bring-your-own-key-byok-details-for-azure-information-protection"></a>Azure 信息保护的自带密钥（BYOK）详细信息
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 具有包含 Azure 信息保护的订阅的组织可以将其 Azure 信息保护租户配置为使用客户托管的密钥并[记录其使用情况](log-analyze-usage.md)。 客户托管的密钥配置通常称为 "携带你自己的密钥" 或 BYOK。
 
-此客户托管密钥必须存储在 Azure Key Vault 中，这需要 Azure 订阅。 若要使用受 HSM 保护的密钥，则必须使用 Azure Key Vault 高级服务层。 在 Azure 密钥保管库中使用密钥会按月产生费用。 有关详细信息，请参阅 [Azure 密钥保管库定价页](https://azure.microsoft.com/pricing/details/key-vault/)。
+此客户托管密钥必须存储在 Azure Key Vault 中，这需要 Azure 订阅。 若要使用受 HSM 保护的密钥，则必须使用 Azure Key Vault 高级服务层。 在 Azure 密钥保管库中使用密钥会按月产生费用。 有关详细信息，请参阅[Azure Key Vault 定价页](https://azure.microsoft.com/pricing/details/key-vault/)。
 
 为 Azure 信息保护租户密钥使用 Azure Key Vault 时，建议为此密钥使用专用密钥保管库，帮助确保只有 Azure Rights Management 服务能使用它。 此配置可确保其他服务的调用不会导致超出密钥保管库的[服务限制](/azure/key-vault/key-vault-service-limits)，否则可能会限制 Azure Rights Management 服务的响应时间。  
 

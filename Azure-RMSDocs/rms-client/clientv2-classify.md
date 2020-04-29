@@ -4,19 +4,19 @@ description: 使用 Azure 信息保护适用于 Windows 的统一标签客户端
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/13/2020
+ms.date: 03/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: bceeffc8c4c34d913cfd1f76f4f28d9f06d9169a
-ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
+ms.openlocfilehash: 29731d98c27454daa30bdb43f2e01238d6808633
+ms.sourcegitcommit: 479b3aaea7011750ff85a217298e5ae9185c1dd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77422872"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82224744"
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-the-azure-information-protection-unified-labeling-client-for-windows"></a>用户指南：使用适用于 Windows 的 Azure 信息保护统一标签客户端对文件或电子邮件进行分类
 
@@ -27,9 +27,9 @@ ms.locfileid: "77422872"
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类（但不保护）。 如果还需对文档和电子邮件进行保护，请参阅[分类和保护说明](clientv2-classify-protect.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
 
-在 Office 桌面应用（Word、Excel、PowerPoint、Outlook）中创建和编辑文档和电子邮件时对其进行分类最为简单。 
+在 Office 桌面应用（Word、Excel、PowerPoint、Outlook）中创建和编辑文档和电子邮件时对其进行分类最为简单****************。 
 
-但是，也可使用文件资源管理器对文件进行分类。 此方法支持其他文件类型，它是一次性对多个文件进行分类的便捷方法。 
+但是，也可使用文件资源管理器对文件进行分类****。 此方法支持其他文件类型，它是一次性对多个文件进行分类的便捷方法。 
 
 ## <a name="using-office-apps-to-classify-your-documents-and-emails"></a>使用 Office 应用对文档和电子邮件进行分类
 
@@ -80,19 +80,19 @@ ms.locfileid: "77422872"
 
 ### <a name="to-classify-a-file-by-using-file-explorer"></a>使用文件资源管理器对文件进行分类
 
-1. 在文件资源管理器中，选择你的文件、多个文件或文件夹。 右键单击，然后选择“分类和保护”。 例如：
+1. 在文件资源管理器中，选择你的文件、多个文件或文件夹。 右键单击，然后选择“分类和保护”****。 例如：
     
     ![在文件资源管理器中，右键单击“使用 Azure 信息保护进行分类和保护”](../media/right-click-classify-protect-folder.png)
 
-2. 在“分类和保护 - Azure信息保护”对话框中，请像在 Office 应用程序中那样使用标签，这样可以按管理员定义的方式设置分类。 
+2. 在“分类和保护 - Azure信息保护”对话框中，请像在 Office 应用程序中那样使用标签，这样可以按管理员定义的方式设置分类****。 
     
     如果无法选择标签（它们显示为灰色），则所选文件不支持分类。 例如：
     
     ![“分类和保护 - Azure 信息保护”对话框中无可用标签](../media/v2info-protect-dialog-labels-dimmed.png)
 
-3. 如果所选文件不支持分类，请单击“关闭”。 无法对此文件进行分类，也无法对其提供保护。
+3. 如果所选文件不支持分类，请单击“关闭”****。 无法对此文件进行分类，也无法对其提供保护。
     
-    如果选择标签，请单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”** 。
+    如果选择标签，请单击“应用”，然后等到“工作完成”消息出现即可查看结果********。 然后单击 **“关闭”**。
 
 若要更改所选标签，只需重复此过程，然后选择其他标签即可。
 
@@ -102,7 +102,7 @@ ms.locfileid: "77422872"
 
 有关适用于 Windows 的 Azure 信息保护统一标签客户端的用户指南中的详细操作说明：
 
-- [要执行什么操作？](clientv2-user-guide.md#what-do-you-want-to-do)
+- [您希望做什么？](clientv2-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息
 

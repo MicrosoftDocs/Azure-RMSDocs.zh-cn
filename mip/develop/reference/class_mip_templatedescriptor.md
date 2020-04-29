@@ -1,34 +1,34 @@
 ---
-title: class mip::TemplateDescriptor
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： templatedescriptor 类。
+title: 类 TemplateDescriptor
+description: 记录 Microsoft 信息保护（MIP） SDK 的 templatedescriptor：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 3429d659b839f2150f1ec87c3b9ae20631b8f715
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 45537a7309efb20a3c5cfcb0df0349a7d3ec01ee
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77492726"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764267"
 ---
-# <a name="class-miptemplatedescriptor"></a>class mip::TemplateDescriptor 
+# <a name="class-templatedescriptor"></a>类 TemplateDescriptor 
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public std::string GetId() const  |  获取模板 ID。
 public std::string GetName() const  |  获取模板名称。
 public std::string GetDescription() const  |  获取模板说明。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getid-function"></a>GetId 函数
 获取模板 ID。
 
   
-**返回结果**：模板 ID
+**返回**：模板 ID
   
 ### <a name="getname-function"></a>GetName 函数
 获取模板名称。

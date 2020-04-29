@@ -1,34 +1,34 @@
 ---
-title: 类 mip：:P rotectionActionData
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionactiondata 类。
+title: 类 ProtectionActionData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 protectionactiondata：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 6643efcd65996a251991dae2b359b361f6a8ad60
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 61489477c06e5781e0e013c7f59f263389398cc2
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489701"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763959"
 ---
-# <a name="class-mipprotectionactiondata"></a>类 mip：:P rotectionActionData 
+# <a name="class-protectionactiondata"></a>类 ProtectionActionData 
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public ProtectionActionType GetProtectionType （） const  | _尚无记录。_
 public const std::string& GetTemplateId() const  | _尚无记录。_
-public const std：： string & GetDoubleKeyEncryptionUrl （） const  | _尚无记录。_
+public const std：： string& GetDoubleKeyEncryptionUrl （） const  | _尚无记录。_
 public virtual ~ ProtectionActionData （）  | _尚无记录。_
 public ActionDataType GetType （） const  | _尚无记录。_
-public const std：： map\<std：： string，std：： string\>& GetProperties （） const  | _尚无记录。_
-public std：： string GetArgumentValue （const std：： string & key） const  | _尚无记录。_
+public const std：： map\<std：： string，std：： String\>& GetProperties （） const  | _尚无记录。_
+public std：： string GetArgumentValue （const std：： string& key） const  | _尚无记录。_
 public const std::string& GetName() const  | _尚无记录。_
-公共 std：： vector\<std：:p 空中\<std：： string，std：： string\>\> GetArguments （） const  | _尚无记录。_
+public std：： vector\<std：:p 风\<std：： string、std：： string\> \> GetArguments （） const  | _尚无记录。_
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getprotectiontype-function"></a>GetProtectionType 函数
 _尚无记录。_

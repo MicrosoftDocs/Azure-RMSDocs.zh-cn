@@ -1,27 +1,27 @@
 ---
-title: 类 mip：:P olicyPackageData
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p olicypackagedata 类。
+title: 类 PolicyPackageData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 policypackagedata：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: b12b853bca9017189388b6b1a5f32a563243d82d
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 08630598e59b4901e6b6244f9562349c74c623ae
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77487559"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760878"
 ---
-# <a name="class-mippolicypackagedata"></a>类 mip：:P olicyPackageData 
+# <a name="class-policypackagedata"></a>类 PolicyPackageData 
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std：： vector\<std：： unique_ptr\<RulePackageData\>\>& GetRules （） const  | _尚无记录。_
+public const std：： vector\<std：： unique_ptr\<RulePackageData\> \>& GetRules （） const  | _尚无记录。_
 public virtual ~ PolicyPackageData （）  | _尚无记录。_
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getrules-function"></a>GetRules 函数
 _尚无记录。_

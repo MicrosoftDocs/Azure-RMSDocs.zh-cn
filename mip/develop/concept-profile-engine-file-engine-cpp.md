@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 35caf958f2da92e624018d5ad7e57e734ec66904
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: db081e190157c8585cbe74ef05e3fb7e5b5b7940
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75555205"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764095"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-engine-concepts"></a>Microsoft 信息保护 SDK - 文件 API 引擎概念
 
@@ -29,13 +29,14 @@ MIP SDK 文件 API 中的 `mip::FileEngine` 为代表指定标识执行的所有
 
 ### <a name="create-file-engine-settings"></a>创建文件引擎设置
 
-与配置文件类似，引擎也需要设置对象 `mip::FileEngine::Settings`。 此对象存储唯一引擎标识符、可用于调试或遥测的可自定义客户端数据以及（可选）区域设置。
+与配置文件类似，引擎也需要设置对象 `mip::FileEngine::Settings`。 此对象存储唯一的引擎标识符、 `mip::AuthDelegate` implemenatation、可自定义的客户端数据（可用于调试或遥测）和区域设置（可选）。
 
-在这里，我们将使用应用程序用户的身份创建一个名为*engineSettings*的 `FileEngine::Settings` 对象。
+在这里，我们`FileEngine::Settings`将使用应用程序用户的标识创建一个名为*engineSettings*的对象。
 
 ```cpp
 FileEngine::Settings engineSettings(
   mip::Identity(mUsername), // mip::Identity.
+  authDelegateImpl,         // auth delegate object
   "",                       // Client data. Customizable by developer, stored with engine.
   "en-US",                  // Locale.
   false);                   // Load sensitive information types for driving classification.
@@ -45,10 +46,11 @@ FileEngine::Settings engineSettings(
 
 ```cpp
 FileEngine::Settings engineSettings(
-  "myEngineId", // string
-  "",           // Client data in string format. Customizable by developer, stored with engine.
-  "en-US",      // Locale. Default is en-US
-  false);       // Load sensitive information types for driving classification. Default is false.
+  "myEngineId",     // string
+  authDelegateImpl, // auth delegate object
+  "",               // Client data in string format. Customizable by developer, stored with engine.
+  "en-US",          // Locale. Default is en-US
+  false);           // Load sensitive information types for driving classification. Default is false.
 ```
 
 作为最佳做法，第一个参数 `id` 应该允许引擎轻松连接到关联用户。 像电子邮件地址、UPN 或 AAD 对象 GUID 之类的信息将确保 ID 既是唯一的，又可以从本地状态中加载而无需调用服务。
@@ -61,8 +63,11 @@ FileEngine::Settings engineSettings(
   //auto profile will be std::shared_ptr<mip::FileProfile>
   auto profile = profileFuture.get();
 
+  // Instantiate the AuthDelegate implementation.
+  auto authDelegateImpl = std::make_shared<sample::auth::AuthDelegateImpl>(appInfo, userName, password);
+
   //Create the FileEngine::Settings object
-  FileEngine::Settings engineSettings("UniqueID", "");
+  FileEngine::Settings engineSettings("UniqueID", authDelegateImpl, "");
 
   //Create a promise for std::shared_ptr<mip::FileEngine>
   auto enginePromise = std::make_shared<std::promise<std::shared_ptr<mip::FileEngine>>>();

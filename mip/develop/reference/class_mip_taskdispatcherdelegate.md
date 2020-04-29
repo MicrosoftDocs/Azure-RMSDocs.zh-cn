@@ -1,31 +1,31 @@
 ---
-title: 类 mip：： TaskDispatcherDelegate
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： taskdispatcherdelegate 类。
+title: 类 TaskDispatcherDelegate
+description: 记录 Microsoft 信息保护（MIP） SDK 的 taskdispatcherdelegate：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: dca6a5fa04b62abf23f0116f63fd4a91c6081da0
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: b7cd2267b795540a8bb4035a695f5b34f0580b87
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489327"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764282"
 ---
-# <a name="class-miptaskdispatcherdelegate"></a>类 mip：： TaskDispatcherDelegate 
+# <a name="class-taskdispatcherdelegate"></a>类 TaskDispatcherDelegate 
 定义 MIP SDK 任务调度程序接口的类。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public void DispatchTask （const std：： string & taskId，std：： function\<void （）\> 任务）  |  在后台线程上执行任务。
-public void DispatchTask （const std：： string & taskId，std：： function\<void （）\> 任务，int64_t delaySeconds）  |  在具有给定延迟的后台线程上执行任务。
-public void ExecuteTaskOnIndependentThread （const std：： string & taskId，std：： function\<void （）\> 任务）  |  立即在独立线程上执行任务。
-public bool CancelTask （const std：： string & taskId）  |  取消后台任务。
+public void DispatchTask （const std：： string& taskId，std：： function\<void （）\>任务）  |  在后台线程上执行任务。
+public void DispatchTask （const std：： string& taskId，std：： function\<void （）\> task，int64_t delaySeconds）  |  在具有给定延迟的后台线程上执行任务。
+public void ExecuteTaskOnIndependentThread （const std：： string& taskId，std：： function\<void （）\>任务）  |  立即在独立线程上执行任务。
+public bool CancelTask （const std：： string& taskId）  |  取消后台任务。
 public void CancelAllTasks （）  |  取消所有后台任务。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="dispatchtask-function"></a>DispatchTask 函数
 在后台线程上执行任务。

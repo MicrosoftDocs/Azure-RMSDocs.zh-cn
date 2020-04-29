@@ -1,33 +1,33 @@
 ---
-title: 类 mip：:P olicyRuleData
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p olicyruledata 类。
+title: 类 PolicyRuleData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 policyruledata：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: db35427c2531edf0653d4f1a05ecbfe8cb93d8d7
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 8d1561be2825b0db43d3070e9793f1e9fa0c4679
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77486981"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760603"
 ---
-# <a name="class-mippolicyruledata"></a>类 mip：:P olicyRuleData 
+# <a name="class-policyruledata"></a>类 PolicyRuleData 
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetName() const  | _尚无记录。_
 public const std::string& GetId() const  | _尚无记录。_
-public const std：： vector\<std：： unique_ptr\<ActionData\>\>& GetActionsData （） const  | _尚无记录。_
+public const std：： vector\<std：： unique_ptr\<ActionData\> \>& GetActionsData （） const  | _尚无记录。_
 public bool IsCompatibleVersion （） const  | _尚无记录。_
-public const std：： map\<std：： string，std：： string\>& GetAttributeData （） const  | _尚无记录。_
-public const std：： vector\<std：： map\<std：： string，std：： string\>\>& GetRuleTags （） const  | _尚无记录。_
+public const std：： map\<std：： string，std：： String\>& GetAttributeData （） const  | _尚无记录。_
+public const std：： vector\<std：： map\<std：： string，std：： string\> \>& GetRuleTags （） const  | _尚无记录。_
 public const ConditionData * GetConditionData （） const  | _尚无记录。_
 public virtual ~ PolicyRuleData （）  | _尚无记录。_
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getname-function"></a>GetName 函数
 _尚无记录。_

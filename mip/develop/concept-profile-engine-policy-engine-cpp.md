@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 934fe6e054a6fe2b7f92b869e05d27a834d51366
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: 6cfd75a3f56ebe12dc0c1caa3bd4e56438827af4
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75555256"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764070"
 ---
 # <a name="microsoft-information-protection-sdk---policy-api-engine-concepts"></a>Microsoft 信息保护 SDK - 策略 API 引擎概念
 
@@ -21,13 +21,14 @@ ms.locfileid: "75555256"
 
 ### <a name="implementation-create-policy-engine-settings"></a>实现：创建策略引擎设置
 
-与配置文件类似，引擎也需要设置对象 `mip::PolicyEngine::Settings`。 此对象存储唯一引擎标识符、可用于调试或遥测的可自定义客户端数据以及（可选）区域设置。
+与配置文件类似，引擎也需要设置对象 `mip::PolicyEngine::Settings`。 此对象存储唯一引擎标识符、 `mip::AuthDelegate`实现的对象、可用于调试或遥测的可自定义客户端数据，以及区域设置（可选）。
 
-在这里，我们将使用应用程序用户的身份创建一个名为*engineSettings*的 `FileEngine::Settings` 对象：
+在这里，我们`FileEngine::Settings`将使用应用程序用户的标识创建一个名为*engineSettings*的对象：
 
 ```cpp
 PolicyEngine::Settings engineSettings(
-  mip::Identity(mUsername), // mip::Identity.
+  mip::Identity(mUsername), // mip::Identity.  
+  authDelegateImpl,         // Auth delegate object
   "",                       // Client data. Customizable by developer, stored with engine.
   "en-US",                  // Locale.
   false);                   // Load sensitive information types for driving classification.
@@ -37,10 +38,11 @@ PolicyEngine::Settings engineSettings(
 
 ```cpp
 PolicyEngine::Settings engineSettings(
-  "myEngineId", // string
-  "",           // Client data in string format. Customizable by developer, stored with engine.
-  "en-US",      // Locale. Default is en-US
-  false);       // Load sensitive information types for driving classification. Default is false.
+  "myEngineId",     // String
+  authDelegateImpl, // Auth delegate object
+  "",               // Client data in string format. Customizable by developer, stored with engine.
+  "en-US",          // Locale. Default is en-US
+  false);           // Load sensitive information types for driving classification. Default is false.
 ```
 
 作为最佳做法，第一个参数 **id** 应该允许引擎轻松连接到关联用户，最好是用户主体名称。
@@ -51,22 +53,26 @@ PolicyEngine::Settings engineSettings(
 
 ```cpp
 
-  //auto profile will be std::shared_ptr<mip::Profile>
+  // Auto profile will be std::shared_ptr<mip::Profile>.
   auto profile = profileFuture.get();
 
-  //Create the PolicyEngine::Settings object
-  PolicyEngine::Settings engineSettings("UniqueID", "");
+  // Create the delegate
+  auto authDelegateImpl = std::make_shared<sample::auth::AuthDelegateImpl>(appInfo, userName, password);
 
-  //Create a promise for std::shared_ptr<mip::PolicyEngine>
+
+  // Create the PolicyEngine::Settings object.
+  PolicyEngine::Settings engineSettings("UniqueID", authDelegateImpl, "");
+
+  // Create a promise for std::shared_ptr<mip::PolicyEngine>.
   auto enginePromise = std::make_shared<std::promise<std::shared_ptr<mip::PolicyEngine>>>();
 
-  //Instantiate the future from the promise
+  // Instantiate the future from the promise.
   auto engineFuture = enginePromise->get_future();
 
-  //Add the engine using AddEngineAsync, passing in the engine settings and the promise
+  // Add the engine using AddEngineAsync, passing in the engine settings and the promise.
   profile->AddEngineAsync(engineSettings, enginePromise);
 
-  //get the future value and store in std::shared_ptr<mip::PolicyEngine>
+  // Get the future value and store in std::shared_ptr<mip::PolicyEngine>.
   auto engine = engineFuture.get();
 ```
 

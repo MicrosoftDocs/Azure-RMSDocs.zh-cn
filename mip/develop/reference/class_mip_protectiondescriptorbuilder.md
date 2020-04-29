@@ -1,25 +1,25 @@
 ---
-title: 类 mip::ProtectionDescriptorBuilder
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectiondescriptorbuilder 类。
+title: 类 ProtectionDescriptorBuilder
+description: 记录 Microsoft 信息保护（MIP） SDK 的 protectiondescriptorbuilder：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: ed9d7085f7406e5c921843d32069f2f6af9f5807
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 11890665b02ade782edcff6c23296ab70c9368f8
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489684"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764474"
 ---
-# <a name="class-mipprotectiondescriptorbuilder"></a>类 mip::ProtectionDescriptorBuilder 
-构造描述与一段内容相关联的保护的 ProtectionDescriptor。
+# <a name="class-protectiondescriptorbuilder"></a>类 ProtectionDescriptorBuilder 
+构造 ProtectionDescriptor，用于描述与一段内容相关的保护。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public MIP_API std：： shared_ptr\<ProtectionDescriptor\> Build （）  |  创建一个 ProtectionDescriptor，其访问权限由此 ProtectionDescriptorBuilder 实例定义。
+public MIP_API std：： shared_ptr\<ProtectionDescriptor\> Build （）  |  创建 ProtectionDescriptor，它的访问权限由此 ProtectionDescriptorBuilder 实例定义。
 public void SetName(const std::string& value)  |  设置保护策略名称。
 public void SetDescription(const std::string& value)  |  设置保护策略说明。
 public void SetContentValidUntil （const std：： chrono：： time_point\<std：： chrono：： system_clock\>& 值）  |  设置保护策略到期时间。
@@ -27,15 +27,15 @@ public void SetAllowOfflineAccess(bool value)  |  设置保护策略是否允许
 public void SetReferrer(const std::string& uri)  |  设置保护策略引荐来源网址。
 public void SetEncryptedAppData （const std：： map\<std：： string，std：： string\>& 值）  |  设置应加密的应用特定数据。
 public void SetSignedAppData （const std：： map\<std：： string，std：： string\>& 值）  |  设置应签名的应用特定数据。
-public virtual ~ProtectionDescriptorBuilder()  | _尚无记录。_
+public void SetDoubleKeyUrl （const std：： string& doubleKeyUrl）  |  设置要用于自定义保护的双键 url。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="build-function"></a>生成函数
-创建一个 ProtectionDescriptor，其访问权限由此 ProtectionDescriptorBuilder 实例定义。
+创建 ProtectionDescriptor，它的访问权限由此 ProtectionDescriptorBuilder 实例定义。
 
   
-**返回**： New ProtectionDescriptor 实例
+**返回结果**：新 ProtectionDescriptor 实例
   
 ### <a name="setname-function"></a>SetName 函数
 设置保护策略名称。
@@ -49,7 +49,7 @@ public virtual ~ProtectionDescriptorBuilder()  | _尚无记录。_
 设置保护策略说明。
 
 参数：  
-* **value**：策略说明
+* **值**：策略说明
 
 
   
@@ -57,7 +57,7 @@ public virtual ~ProtectionDescriptorBuilder()  | _尚无记录。_
 设置保护策略到期时间。
 
 参数：  
-* **value**：策略过期时间
+* **值**：策略过期时间
 
 
   
@@ -65,7 +65,7 @@ public virtual ~ProtectionDescriptorBuilder()  | _尚无记录。_
 设置保护策略是否允许脱机访问内容。
 
 参数：  
-* value：策略是否允许脱机访问内容
+* value****：策略是否允许脱机访问内容
 
 
   
@@ -96,5 +96,9 @@ public virtual ~ProtectionDescriptorBuilder()  | _尚无记录。_
 
 应用程序可以指定保护服务签名的应用专用数据的字典。 此签名数据与 SetEncryptedAppData 设置的加密数据无关。
   
-### <a name="protectiondescriptorbuilder-function"></a>~ ProtectionDescriptorBuilder 函数
-_尚无记录。_
+### <a name="setdoublekeyurl-function"></a>SetDoubleKeyUrl 函数
+设置要用于自定义保护的双键 url。
+
+参数：  
+* **值**：双键 url
+

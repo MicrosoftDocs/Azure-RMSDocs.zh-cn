@@ -1,28 +1,28 @@
 ---
-title: 类 mip：： ConsentDelegate
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： consentdelegate 类。
+title: 类 ConsentDelegate
+description: 记录 Microsoft 信息保护（MIP） SDK 的 consentdelegate：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: bbeca67a1ffcd5a7b159883c97a2eb3a08bfb3e2
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: d6c4efddf5b70c1a4a97f0b036cffa107a6cac3e
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77490313"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763434"
 ---
-# <a name="class-mipconsentdelegate"></a>类 mip：： ConsentDelegate 
+# <a name="class-consentdelegate"></a>类 ConsentDelegate 
 执行许可相关操作的委托。
 此委托由客户端应用程序实现，以了解应何时向用户显示许可请求通知。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public Consent GetUserConsent(const std::string& url)  |  在 SDK 要求用户许可连接到服务终结点时调用。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getuserconsent-function"></a>GetUserConsent 函数
 在 SDK 要求用户许可连接到服务终结点时调用。

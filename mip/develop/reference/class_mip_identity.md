@@ -1,32 +1,32 @@
 ---
-title: 类 mip：： Identity
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： identity 类。
+title: 类标识
+description: 记录 Microsoft 信息保护（MIP） SDK 的标识：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: d50092be5277d5e88e6ec408280ca76bbc333a4c
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 1b1dbbe146832773613124917c1ea6d43f5cf13a
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77488018"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81762364"
 ---
-# <a name="class-mipidentity"></a>类 mip：： Identity 
+# <a name="class-identity"></a>类标识 
 标识的抽象。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 公共标识（）  |  用户电子邮件地址未知时使用的默认标识构造函数。
-公共标识（const 标识 & 其他）  |  标识复制构造函数。
-公共显式标识（const std：： string & email）  |  用户电子邮件地址已知时使用的标识构造函数。
-公共显式标识（const std：： string & email，const std：： string & name）  |  用户电子邮件地址和用户名已知时使用的标识构造函数。
-public const std：： string & GetEmail （） const  |  获取电子邮件。
+公共标识（const 标识& 其他）  |  标识复制构造函数。
+公共显式标识（const std：： string& email）  |  用户电子邮件地址已知时使用的标识构造函数。
+公共显式标识（const std：： string& email，const std：： string& name）  |  用户电子邮件地址和用户名已知时使用的标识构造函数。
+public const std：： string& GetEmail （） const  |  获取电子邮件。
 public const std::string& GetName() const  |  获取用户的友好名称。 用于文本标记。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="identity-function"></a>标识函数
 用户电子邮件地址未知时使用的默认标识构造函数。

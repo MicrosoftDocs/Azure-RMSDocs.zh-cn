@@ -1,38 +1,42 @@
 ---
-title: 类 mip::ProtectionEngine
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionengine 类。
+title: 类 ProtectionEngine
+description: 记录 Microsoft 信息保护（MIP） SDK 的 protectionengine：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 23f9f54a3f9701d0c9321b7ba643ed7dd3f47be1
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 61311ec2ac7c622099e9e7f56f22191e0287278c
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77486828"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763920"
 ---
-# <a name="class-mipprotectionengine"></a>类 mip::ProtectionEngine 
+# <a name="class-protectionengine"></a>类 ProtectionEngine 
 管理与特定标识有关的保护相关操作。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const Settings& GetSettings() const  |  获取引擎设置。
-public std：： shared_ptr\<AsyncControl\> GetTemplatesAsync （const std：： shared_ptr\<ProtectionEngine：： Observer\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用模板的集合。
-公共 std：： vector\<std：： shared_ptr\<TemplateDescriptor\>\> Templatedescriptor.gettemplates （const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用模板的集合。
+public std：： shared_ptr\<AsyncControl\> GetTemplatesAsync （const std：： Shared_ptr\<ProtectionEngine：： observer\>& 观察程序，const std：：\<shared_ptr\> void& 上下文）  |  获取用户可用模板的集合。
+public std：： vector\<std：： shared_ptr\<TemplateDescriptor\> \> templatedescriptor.gettemplates （const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用模板的集合。
 public bool IsFeatureSupported （FeatureId featureId）  |  勾选功能是否受支持。
-public std：： shared_ptr\<AsyncControl\> GetRightsForLabelIdAsync （const std：： string & documentId，const std：： string & 面部，const std：： string & ownerEmail，const std：： & delegatedUserEmail，const std：： shared_ptr\<ProtectionEngine：：\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用于标签 ID 的权限集合。
-public std：： vector\<std：： string\> GetRightsForLabelId （const std：： string & documentId，const std：： string & 面部，const std：： string & delegatedUserEmail，const std：： & shared_ptr void\<\>上下文）  |  获取用户可用于 labelId 的权限集合。
-public std：： shared_ptr\<AsyncControl\> CreateProtectionHandlerForPublishingAsync （const ProtectionHandler：:P ublishingSettings & 设置，const std：： shared_ptr\<ProtectionHandler：： Observer\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
-public std：： shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForPublishing （const ProtectionHandler：:P ublishingSettings & settings，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
-public std：： shared_ptr\<AsyncControl\> CreateProtectionHandlerForConsumptionAsync （const ProtectionHandler：： ConsumptionSettings & settings，const std：： shared_ptr\<ProtectionHandler：： Observer\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
-public std：： shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForConsumption （const ProtectionHandler：： ConsumptionSettings & settings，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
-public bool LoadUserCert （const std：： shared_ptr\<void\>& 上下文）  |  预先加载用户许可方证书，在使用 prelicense 的后台加载其他情况下非常有用。
-public std：： shared_ptr\<AsyncControl\> LoadUserCertAsync （const std：： shared_ptr\<ProtectionEngine：： Observer\>& 观察程序，const std：： shared_ptr\<void\>& 上下文）  |  预先加载用户许可方证书，在使用 prelicense 的后台加载其他情况下非常有用。
+public std：： shared_ptr\<AsyncControl\> GetRightsForLabelIdAsync （const std：： string& documentId，const std：： string，const std：： string& 面部，const std：： string& ownerEmail，const std：：&\<delegatedUserEmail：： Observer\> shared_ptr 观察程序，const std：：\<&\> void shared_ptr 的上下文）  |  获取用户可用于标签 ID 的权限集合。
+public std：： vector\<std：： string\> GetRightsForLabelId （const std：： string& documentId，const std：： string& 面部，const std：： string& ownerEmail，const std：： string& delegatedUserEmail，const std：： shared_ptr\<void\>& 上下文）  |  获取用户可用于 labelId 的权限集合。
+public std：： shared_ptr\<AsyncControl\> CreateProtectionHandlerForPublishingAsync （Const ProtectionHandler：:P ublishingsettings& settings，const std：： Shared_ptr\<ProtectionHandler：： observer\>& 观察程序，const std：：\<shared_ptr\> void& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
+public std：： shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForPublishing （Const ProtectionHandler：:P ublishingsettings& settings，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
+public std：： shared_ptr\<AsyncControl\> CreateProtectionHandlerForConsumptionAsync （Const ProtectionHandler：： ConsumptionSettings& settings，const std：： Shared_ptr\<ProtectionHandler：： observer\>& 观察程序，const std：：\<shared_ptr\> void& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
+public std：： shared_ptr\<ProtectionHandler\> CreateProtectionHandlerForConsumption （Const ProtectionHandler：： ConsumptionSettings& settings，const std：： shared_ptr\<void\>& 上下文）  |  创建将权限/角色分配给特定用户的保护处理程序。
+public bool LoadUserCert （const std：： shared_ptr\<void\>& context）  |  预先加载用户许可方证书，在使用 prelicense 的后台加载其他情况下非常有用。
+public std：： shared_ptr\<AsyncControl\> LoadUserCertAsync （const std：： Shared_ptr\<ProtectionEngine：： observer\>& 观察程序，const std：：\<shared_ptr\> void& 上下文）  |  预先加载用户许可方证书，在使用 prelicense 的后台加载其他情况下非常有用。
+public void RegisterContentForTrackingAndRevocation （const std：： vector\<Uint8_t\>& serializedPublishingLicense，const std：： string& contentName，bool isOwnerNotificationEnabled，const std：： shared_ptr\<void\>& 上下文）  |  为文档跟踪注册发布许可证（PL） & 吊销。
+public std：： shared_ptr\<AsyncControl\> RegisterContentForTrackingAndRevocationAsync （const std：： vector\<uint8_t\>& SerializedPublishingLicense，const std：： string& contentName，Bool std：：，bool\<IsOwnerNotificationEnabled，const std\> ：： shared_ptr ProtectionEngine：： Observer&\<观察\>程序，const std：： shared_ptr void& 上下文）  |  为文档跟踪注册发布许可证（PL） & 吊销。
+public void RevokeContent （const std：： vector\<Uint8_t\>& serializedPublishingLicense，const std：： shared_ptr\<void\>& 上下文）  |  对内容执行撤消。
+public std：： shared_ptr\<AsyncControl\> RevokeContentAsync （const std：： vector\<uint8_t\>& serializedPublishingLicense，Const std：： shared_ptr\<ProtectionEngine：： observer\>& 观察程序，const std：：\<shared_ptr\> void& 上下文）  |  对内容执行撤消。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getsettings-function"></a>GetSettings 函数
 获取引擎设置。
@@ -44,10 +48,10 @@ public std：： shared_ptr\<AsyncControl\> LoadUserCertAsync （const std：：
 获取用户可用模板的集合。
 
 参数：  
-* **观察**程序：一个实现 ProtectionEngine：： observer 接口的类 
+* **observer**：实现 [ProtectionEngine::Observer](class_mip_protectionengine_observer.md) 接口的类 
 
 
-* **上下文**：将以不透明的形式传递回观察者和可选 HttpDelegate 的客户端上下文
+* **context**：将以不透明形式传递回观察程序和可选 HttpDelegate 的客户端上下文
 
 
 
@@ -58,7 +62,7 @@ public std：： shared_ptr\<AsyncControl\> LoadUserCertAsync （const std：：
 获取用户可用模板的集合。
 
 参数：  
-* **上下文**：将以不透明的形式传递到可选 HttpDelegate 的客户端上下文
+* **context**：将以不透明形式传递给可选 HttpDelegate 的客户端上下文
 
 
 
@@ -92,10 +96,10 @@ public std：： shared_ptr\<AsyncControl\> LoadUserCertAsync （const std：：
 * **答**：当身份验证用户/应用程序代表另一个用户时指定了委派的用户，如果没有，则为空 
 
 
-* **观察**程序：一个实现 ProtectionEngine：： observer 接口的类 
+* **observer**：实现 ProtectionEngine::Observer 接口的类 
 
 
-* **上下文**：此相同的上下文将转发到 ProtectionEngine：： observer：： OnGetRightsForLabelIdSuccess 或 ProtectionEngine：： observer：： OnGetRightsForLabelIdFailure
+* **context**：此相同上下文将转发到 ProtectionEngine::Observer::OnGetRightsForLabelIdSuccess 或 ProtectionEngine::Observer::OnGetRightsForLabelIdFailure
 
 
 
@@ -118,7 +122,7 @@ public std：： shared_ptr\<AsyncControl\> LoadUserCertAsync （const std：：
 * **答**：当身份验证用户/应用程序代表另一个用户时指定了委派的用户，如果没有，则为空 
 
 
-* **上下文**：此相同的上下文将转发到可选 HttpDelegate
+* **context**：此相同上下文将转发到可选的 HttpDelegate
 
 
 
@@ -132,7 +136,7 @@ public std：： shared_ptr\<AsyncControl\> LoadUserCertAsync （const std：：
 * **设置**：保护设置 
 
 
-* **观察**程序：一个实现 ProtectionHandler：： observer 接口的类 
+* **observer**：实现 [ProtectionHandler::Observer](class_mip_protectionhandler_observer.md) 接口的类 
 
 
 * **上下文**：将以不透明转发到观察者和可选 HttpDelegate 的客户端上下文
@@ -163,7 +167,7 @@ public std：： shared_ptr\<AsyncControl\> LoadUserCertAsync （const std：：
 * **设置**：保护设置 
 
 
-* **观察**程序：一个实现 ProtectionHandler：： observer 接口的类 
+* **observer**：实现 ProtectionHandler::Observer 接口的类 
 
 
 * **上下文**：将以不透明转发到观察者和可选 HttpDelegate 的客户端上下文
@@ -202,7 +206,72 @@ public std：： shared_ptr\<AsyncControl\> LoadUserCertAsync （const std：：
 预先加载用户许可方证书，在使用 prelicense 的后台加载其他情况下非常有用。
 
 参数：  
-* **观察**程序：一个实现 ProtectionHandler：： observer 接口的类 
+* **observer**：实现 ProtectionHandler::Observer 接口的类 
+
+
+* **上下文**：将以不透明转发到观察者和可选 HttpDelegate 的客户端上下文
+
+
+
+  
+**返回**： Async control 对象。
+  
+### <a name="registercontentfortrackingandrevocation-function"></a>RegisterContentForTrackingAndRevocation 函数
+为文档跟踪注册发布许可证（PL） & 吊销。
+
+参数：  
+* **contentName**：与 serializedPublishingLicense 指定的内容关联的名称。 如果 serializedPublishingLicense 指定内容名称，则该值将优先。 
+
+
+* **isOwnerNotificationEnabled**：设置为 true 可在文档解密时通过电子邮件通知所有者，或设置为 false 将不发送通知。 
+
+
+* **上下文**：将以不透明转发到可选 HttpDelegate 的客户端上下文
+
+
+  
+### <a name="registercontentfortrackingandrevocationasync-function"></a>RegisterContentForTrackingAndRevocationAsync 函数
+为文档跟踪注册发布许可证（PL） & 吊销。
+
+参数：  
+* **serializedPublishingLicense**：从受保护内容序列化发布许可证 
+
+
+* **contentName**：与 serializedPublishingLicense 指定的内容关联的名称。 如果 serializedPublishingLicense 指定内容名称，则该值优先 
+
+
+* **isOwnerNotificationEnabled**：设置为 true 可在文档解密时通过电子邮件通知所有者，或设置为 false 将不发送通知。 
+
+
+* **observer**：实现 ProtectionHandler::Observer 接口的类 
+
+
+* **上下文**：将以不透明转发到观察者和可选 HttpDelegate 的客户端上下文
+
+
+
+  
+**返回**： Async control 对象。
+  
+### <a name="revokecontent-function"></a>RevokeContent 函数
+对内容执行撤消。
+
+参数：  
+* **serializedPublishingLicense**：从受保护内容序列化发布许可证 
+
+
+* **上下文**：将以不透明转发到可选 HttpDelegate 的客户端上下文
+
+
+  
+### <a name="revokecontentasync-function"></a>RevokeContentAsync 函数
+对内容执行撤消。
+
+参数：  
+* **serializedPublishingLicense**：从受保护内容序列化发布许可证 
+
+
+* **observer**：实现 ProtectionHandler::Observer 接口的类 
 
 
 * **上下文**：将以不透明转发到观察者和可选 HttpDelegate 的客户端上下文

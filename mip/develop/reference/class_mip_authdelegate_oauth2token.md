@@ -1,32 +1,32 @@
 ---
-title: 类 mip：： AuthDelegate：： OAuth2Token
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： authdelegate 类。
+title: 类 AuthDelegate：： OAuth2Token
+description: 记录 Microsoft 信息保护（MIP） SDK 的 authdelegate：： oauth2token 类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 6053a282d162dc2b0f316b265fe6878a4c535a7f
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 43f3e3d9abdab37620ca852411b2817a3848ba78
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77490432"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763594"
 ---
-# <a name="class-mipauthdelegateoauth2token"></a>类 mip：： AuthDelegate：： OAuth2Token 
+# <a name="class-authdelegateoauth2token"></a>类 AuthDelegate：： OAuth2Token 
 一个类，其中包含应用程序提供的访问令牌信息。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public OAuth2Token （）  |  构造一个新的 OAuth2Token 对象。
-public OAuth2Token （const std：： string & accessToken）  |  从 JWT 访问令牌构造一个新的 OAuth2Token 对象。
-public const std：： string & GetAccessToken （） const  |  获取访问令牌字符串。
-public void SetAccessToken （const std：： string & accessToken）  |  设置访问令牌字符串。
-public const std：： string & GetErrorMessage （） const  |  获取错误消息（如果有）。
-public void SetErrorMessage （const std：： string & errorMessage）  |  设置错误消息。
+public OAuth2Token （const std：： string& accessToken）  |  从 JWT 访问令牌构造一个新的 OAuth2Token 对象。
+public const std：： string& GetAccessToken （） const  |  获取访问令牌字符串。
+public void SetAccessToken （const std：： string& accessToken）  |  设置访问令牌字符串。
+public const std：： string& GetErrorMessage （） const  |  获取错误消息（如果有）。
+public void SetErrorMessage （const std：： string& errorMessage）  |  设置错误消息。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="oauth2token-function"></a>OAuth2Token 函数
 构造一个新的 OAuth2Token 对象。

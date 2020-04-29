@@ -1,10 +1,10 @@
 ---
 title: 支持 RMS API 的其他应用 - 安装和配置 - AIP
 description: 了解 Azure 信息保护中的 Azure Rights Management 服务如何支持其他应用程序以保护组织的数据。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/30/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 04/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a1a3f9f20c5f1dc7f43ccf5ee0dc6daa4c108af2
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 0eb26df168976fa028873551c8417bb1644d853a
+ms.sourcegitcommit: 479b3aaea7011750ff85a217298e5ae9185c1dd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935208"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82224625"
 ---
 # <a name="other-applications-that-support-the-rights-management-apis"></a>支持 Rights Management API 的其他应用程序
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-使用以下信息可帮助了解 Azure 信息保护中的 Azure Rights Management 服务如何支持其他应用程序以保护组织的数据。
+使用以下信息来帮助你了解 Azure 信息保护中的 Azure Rights Management 服务如何支持其他应用程序以保护组织的数据。
 
 使用 Azure 信息保护 SDK，内部开发人员可以编写业务线应用程序，以本机方式支持 Azure Rights Management 服务。 信息保护与这些应用程序的集成方式取决于编写应用程序的方式。 例如，这种集成可以是自动应用的，只需很少的用户交互，或者为了提供更多自定义体验，可能会提示用户配置相关设置，以便对文件应用信息保护。 有关详细信息，请参阅[开发人员指南](./develop/developers-guide.md)。
 

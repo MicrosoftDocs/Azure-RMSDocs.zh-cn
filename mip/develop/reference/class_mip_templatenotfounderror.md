@@ -1,36 +1,36 @@
 ---
-title: 类 mip：： TemplateNotFoundError
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： templatenotfounderror 类。
+title: 类 TemplateNotFoundError
+description: 记录 Microsoft 信息保护（MIP） SDK 的 templatenotfounderror：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: babcf77de224a75b2beec7e0b15c867698b49c15
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 9c8a1f1d89c581950bc1760a7bcb339e10114c2a
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489310"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764238"
 ---
-# <a name="class-miptemplatenotfounderror"></a>类 mip：： TemplateNotFoundError 
+# <a name="class-templatenotfounderror"></a>类 TemplateNotFoundError 
 RMS 服务无法识别模板 ID。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public std：： string mMessage  | _尚无记录。_
 public std：： map\<std：： string，std：： string\> mDebugInfo  | _尚无记录。_
 public char const* what() const  |  获取错误消息。
-公共 std：： shared_ptr\<错误\> Clone （） const  |  克隆错误。
+public std：： shared_ptr\<错误\> Clone （） const  |  克隆错误。
 public virtual ErrorType GetErrorType() const  |  获取错误类型。
-public const std：： string & GetErrorName （） const  |  获取错误名称。
-public const std：： string & GetMessage （） const  |  获取错误消息。
-public void SetMessage （const std：： string & msg）  |  设置错误消息。
-public void AddDebugInfo （const std：： string & key，const std：： string & 值）  |  添加调试信息项。
-public const std：： map\<std：： string，std：： string\>& GetDebugInfo （） const  |  获取调试信息。
+public const std：： string& GetErrorName （） const  |  获取错误名称。
+public const std：： string& GetMessage （） const  |  获取错误消息。
+public void SetMessage （const std：： string& msg）  |  设置错误消息。
+public void AddDebugInfo （const std：： string& key，const std：： string& 值）  |  添加调试信息项。
+public const std：： map\<std：： string，std：： String\>& GetDebugInfo （） const  |  获取调试信息。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="mmessage"></a>mMessage
 _尚无记录。_
@@ -44,7 +44,7 @@ _尚无记录。_
 获取错误消息。
 
   
-**返回结果**：错误消息
+**返回**：错误消息
   
 ### <a name="clone-function"></a>Clone 函数
 克隆错误。
@@ -68,7 +68,7 @@ _尚无记录。_
 获取错误消息。
 
   
-**返回结果**：错误消息。
+**返回**：错误消息。
   
 ### <a name="setmessage-function"></a>SetMessage 函数
 设置错误消息。

@@ -1,23 +1,23 @@
 ---
-title: class mip::Label
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： label 类。
+title: 类标签
+description: 记录 Microsoft 信息保护（MIP） SDK 的标签：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: a108cdccef1747ec2b06a981f993fa8ad438d011
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 95eb7c523e7e627aff767169b9d35479839ac72d
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77487984"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81762187"
 ---
-# <a name="class-miplabel"></a>class mip::Label 
+# <a name="class-label"></a>类标签 
 单个 Microsoft 信息保护标签的抽象。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetId() const  |  获取标签 ID。
 public const std::string& GetName() const  |  获取标签名称。
@@ -25,20 +25,20 @@ public const std::string& GetDescription() const  |  获取标签说明。
 public const std::string& GetColor() const  |  获取应显示的标签颜色。
 public int GetSensitivity() const  |  获取标签的敏感度。
 public const std::string& GetTooltip() const  |  获取标签的工具提示说明。
-public const std：： string & GetAutoTooltip （） const  |  获取导致应用此标签的分类的工具提示说明。
+public const std：： string& GetAutoTooltip （） const  |  获取导致应用此标签的分类的工具提示说明。
 public bool IsActive() const  |  获取一个布尔值，指示标签是否处于活动状态。
-public std：： weak_ptr\<Label\> GetParent （） const  |  获取父标签。
-public const std：： vector\<std：： shared_ptr\<标签\>\>& GetChildren （） const  |  获取当前标签的子标签。
-public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetCustomSettings （） const  |  获取标签的自定义设置。
+public std：： weak_ptr\<标签\> GetParent （） const  |  获取父标签。
+public const std：： vector\<std：： shared_ptr\<标签\> \>& GetChildren （） const  |  获取当前标签的子标签。
+public const std：： vector\<std：:p air\<std：： string，std：： string\> \>& GetCustomSettings （） const  |  获取标签的自定义设置。
 public ActionSource GetActionSource() const  |  获取标签的操作源。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getid-function"></a>GetId 函数
 获取标签 ID。
 
   
-返回结果：标签 ID。
+**返回**：标签 ID。
   
 ### <a name="getname-function"></a>GetName 函数
 获取标签名称。

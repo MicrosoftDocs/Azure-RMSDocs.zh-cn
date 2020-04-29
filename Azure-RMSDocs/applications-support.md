@@ -1,10 +1,10 @@
 ---
 title: 应用如何支持 AIP 中的 Azure 权限管理
 description: 了解最常使用的应用程序（如 Office 应用）和服务（例如 Exchange 和 SharePoint）如何使用 azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的文档和电子邮件。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/02/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 04/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 795c260430305492b19aded923c01cf4d918b70f
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 9e14cd34dd31dda6942c028fa9a68778eaaaed3a
+ms.sourcegitcommit: 479b3aaea7011750ff85a217298e5ae9185c1dd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935191"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82224574"
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>应用程序如何支持 Azure Rights Management 服务
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-使用以下信息可帮助了解最常使用的最终用户应用程序和服务如何才能使用 Azure 信息保护中的 Azure 权限管理来帮助保护组织的文档和电子邮件。 这些应用程序包括 Word、Excel、PowerPoint 和 Outlook。 服务包括 Exchange 和 SharePoint。
+使用以下信息可帮助你了解最常使用的最终用户应用程序和服务如何使用 Azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的文档和电子邮件。 这些应用程序包括 Word、Excel、PowerPoint 和 Outlook。 服务包括 Exchange 和 SharePoint。
 
 > [!NOTE]
 > 若要验证 Azure Rights Management 服务支持的应用程序和版本，请参阅[支持 Azure Rights Management 数据保护的应用程序](./requirements-applications.md)。
@@ -42,7 +42,7 @@ ms.locfileid: "74935191"
 
 - SharePoint Online 和 SharePoint Server 仅在下载时对文件应用 Rights Management 保护。 此实现意味着 SharePoint 上的索引和搜索结果不受此文档保护解决方案的影响。 但是，如果你希望将文档存储在 SharePoint 中且不希望在搜索结果中返回该文档，请在将其上传到 SharePoint 之前，对其进行保护。
 
-- Windows 桌面搜索在设备的不同用户间使用共享索引，以便持续保护受保护文档中的数据，它不对受保护的文件进行索引。 这意味着，不仅你的搜索结果不包含已保护的文件，你还可以放心，登录或连接到你的电脑的其他用户的搜索结果中也不会显示包含敏感数据的文件。 
+- Windows 桌面搜索在设备的不同用户间使用共享索引，以便持续保护受保护文档中的数据，它不对受保护的文件进行索引。 这意味着，虽然你的搜索结果不包含已保护的文件，但你可以确保包含敏感数据的文件不会显示在可能登录到你的电脑或连接到你的电脑的其他用户的搜索结果中。 
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -50,7 +50,7 @@ ms.locfileid: "74935191"
 
 -   [Office 应用程序和服务](office-apps-services-support.md)
 
--   [运行 Windows Server 和使用文件分类基础结构 (FCI) 的文件服务器](file-server-support.md)
+-   [运行 Windows Server 和使用文件分类基础结构（FCI）的文件服务器](file-server-support.md)
 
--   [支持 RMS API 的其他应用程序](api-support.md)
+-   [支持 RMS Api 的其他应用程序](api-support.md)
 

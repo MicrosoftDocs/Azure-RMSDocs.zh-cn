@@ -1,55 +1,51 @@
 ---
-title: class mip::ProtectionProfile::Settings
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectionprofile 类。
+title: 类 ProtectionProfile：： Settings
+description: 记录 Microsoft 信息保护（MIP） SDK 的 protectionprofile：： settings 类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 0622f4db00c2f4baca7845aa0ca061bf2ccf294b
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: f0b9ef139762621205f69d46094a6729f3ec19d9
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489599"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763899"
 ---
-# <a name="class-mipprotectionprofilesettings"></a>class mip::ProtectionProfile::Settings 
-ProtectionProfile 在其创建期间及其整个生存期内使用的设置。
+# <a name="class-protectionprofilesettings"></a>类 ProtectionProfile：： Settings 
+由 ProtectionProfile 在创建期间及其整个生存期内使用的设置。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-公共设置（const std：： shared_ptr\<MipContext\>& mipContext，CacheStorageType cacheStorageType，const std：： shared_ptr\<AuthDelegate\>& authDelegate，const std：： shared_ptr\<ConsentDelegate\>& consentDelegate，const std：： shared_ptr\<ProtectionProfile：： Observer\>& 观察程序）  |  ProtectionProfile：： Settings 构造函数，它指定要用于异步操作的观察程序。
-公共设置（const std：： shared_ptr\<MipContext\>& mipContext，CacheStorageType cacheStorageType，const std：： shared_ptr\<AuthDelegate\>& authDelegate，const std：： shared_ptr\<ConsentDelegate\>& consentDelegate）  |  ProtectionProfile：： Settings 构造函数，用于同步操作。
+公共设置（const std：： shared_ptr\<mipContext\>& MipContext，CacheStorageType CacheStorageType，const std：： shared_ptr\<ConsentDelegate\>& ConsentDelegate，Const std：： shared_ptr\<ProtectionProfile：： Observer\>& 观察程序）  |  ProtectionProfile::Settings 构造函数，指定要用于异步操作的观察程序。
+公共设置（const std：： shared_ptr\<mipContext\>& MipContext，CacheStorageType CacheStorageType，const std：： shared_ptr\<ConsentDelegate\>& ConsentDelegate）  |  ProtectionProfile::Settings 构造函数，用于同步操作。
 public CacheStorageType GetCacheStorageType （） const  |  获取缓存是存储在内存中还是存储在磁盘上。
-public std：： shared_ptr\<AuthDelegate\> GetAuthDelegate （） const  |  获取用于获取身份验证令牌的身份验证委托。
 public std：： shared_ptr\<ConsentDelegate\> GetConsentDelegate （） const  |  获取用于连接到服务的许可委托。
-public std：： shared_ptr\<ProtectionProfile：： Observer\> GetObserver （） const  |  获取接收与 ProtectionProfile 相关的事件通知的观察程序。
+public std：： shared_ptr\<ProtectionProfile：：\> GetObserver （） const  |  获取接收 ProtectionProfile 相关事件通知的观察程序。
 public std：： shared_ptr\<MipContext\> GetMipContext （） const  |  获取表示所有配置文件的共享状态的 MIP 上下文。
 public std：： shared_ptr\<HttpDelegate\> GetHttpDelegate （） const  |  获取应用程序提供的 HTTP 委托（若有）。
-public void SetHttpDelegate （const std：： shared_ptr\<HttpDelegate\>& httpDelegate）  |  使用客户端自己的替代默认 HTTP 堆栈。
+public void SetHttpDelegate （const std：： shared_ptr\<httpDelegate\>& HttpDelegate）  |  使用客户端自己的替代默认 HTTP 堆栈。
 public std：： shared_ptr\<TaskDispatcherDelegate\> GetTaskDispatcherDelegate （） const  |  获取应用程序提供的 TaskDispatcher 委托（如果有）。
-public void SetTaskDispatcherDelegate （const std：： shared_ptr\<TaskDispatcherDelegate\>& taskDispatcherDelegate）  |  用客户端自己的 asynchonous 重写默认的任务分派处理。
+public void SetTaskDispatcherDelegate （const std：： shared_ptr\<taskDispatcherDelegate\>& TaskDispatcherDelegate）  |  用客户端自己的 asynchonous 重写默认的任务分派处理。
 public void SetSessionId(const std::string& sessionId)  |  设置会话 ID。
 public const std::string& GetSessionId() const  |  获取会话 ID。
 public void SetCanCacheLicenses （bool canCacheLicenses）  |  配置是否将以本地方式缓存最终用户许可证（Eul）。
 public bool CanCacheLicenses （） const  |  获取是否在本地缓存最终用户许可证（Eul）。
-public void SetCustomSettings （const std：： vector\<std：:p air\<std：： string，std：： string\>\>& customSettings）  |  设置自定义设置，用于功能访问控制和测试。
-public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetCustomSettings （） const  |  获取用于功能访问控制和测试的自定义设置。
+public void SetCustomSettings （const std：： vector\<std：:p 风\<std：： string、std：： string\> \>& customSettings）  |  设置自定义设置，用于功能访问控制和测试。
+public const std：： vector\<std：:p air\<std：： string，std：： string\> \>& GetCustomSettings （） const  |  获取用于功能访问控制和测试的自定义设置。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="settings-function"></a>Settings 函数
-ProtectionProfile：： Settings 构造函数，它指定要用于异步操作的观察程序。
+ProtectionProfile::Settings 构造函数，指定要用于异步操作的观察程序。
 
 参数：  
 * **mipContext**：全局上下文设置 
 
 
 * **cacheStorageType**：将任何缓存的状态存储在内存中或磁盘上 
-
-
-* **authDelegate**：客户端应用程序实现的用于身份验证的回叫对象 
 
 
 * **consentDelegate**：用于获取访问外部资源的用户权限的委托 
@@ -63,16 +59,13 @@ ProtectionProfile：： Settings 构造函数，它指定要用于异步操作�
 
   
 ### <a name="settings-function"></a>Settings 函数
-ProtectionProfile：： Settings 构造函数，用于同步操作。
+ProtectionProfile::Settings 构造函数，用于同步操作。
 
 参数：  
 * **mipContext**：全局上下文设置 
 
 
 * **cacheStorageType**：将任何缓存的状态存储在内存中或磁盘上 
-
-
-* **authDelegate**：客户端应用程序实现的用于身份验证的回叫对象 
 
 
 * **consentDelegate**：用于获取访问外部资源的用户权限的委托 
@@ -88,12 +81,6 @@ ProtectionProfile：： Settings 构造函数，用于同步操作。
   
 **返回**：使用的存储类型
   
-### <a name="getauthdelegate-function"></a>GetAuthDelegate 函数
-获取用于获取身份验证令牌的身份验证委托。
-
-  
-**返回结果**：用于获取身份验证令牌的身份验证委托
-  
 ### <a name="getconsentdelegate-function"></a>GetConsentDelegate 函数
 获取用于连接到服务的许可委托。
 
@@ -101,7 +88,7 @@ ProtectionProfile：： Settings 构造函数，用于同步操作。
 **返回结果**：用于连接到服务的许可委托
   
 ### <a name="getobserver-function"></a>GetObserver 函数
-获取接收与 ProtectionProfile 相关的事件通知的观察程序。
+获取接收 ProtectionProfile 相关事件通知的观察程序。
 
   
 **返回**：接收与 ProtectionProfile 相关的事件通知的观察程序
@@ -122,7 +109,7 @@ ProtectionProfile：： Settings 构造函数，用于同步操作。
 使用客户端自己的替代默认 HTTP 堆栈。
 
 参数：  
-* **httpDelegate**：客户端应用程序实现的 HTTP 回叫接口
+* **httpDelegate**：由客户端应用程序实现的 HTTP 回调接口
 
 
   

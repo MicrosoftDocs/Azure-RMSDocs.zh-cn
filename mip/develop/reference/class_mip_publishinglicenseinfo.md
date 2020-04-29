@@ -1,41 +1,41 @@
 ---
-title: 类 mip：:P ublishingLicenseInfo
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p ublishinglicenseinfo 类。
+title: 类 PublishingLicenseInfo
+description: 记录 Microsoft 信息保护（MIP） SDK 的 publishinglicenseinfo：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: f9283a9cc52ef803e35a6d714e43bfce9b137771
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 6477af8499020aed08e0a0178558da54ca73e19d
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489633"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764563"
 ---
-# <a name="class-mippublishinglicenseinfo"></a>类 mip：:P ublishingLicenseInfo 
+# <a name="class-publishinglicenseinfo"></a>类 PublishingLicenseInfo 
 保存用于创建保护处理程序的发布许可证的详细信息。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public PublishingLicenseInfo （const std：： vector\<uint8_t\>& serializedPublishingLicense）  | _尚无记录。_
-public PublishingLicenseInfo （const std：： vector\<uint8_t\>& serializedPreLicense，const std：： vector\<uint8_t\>& serializedPublishingLicense）  | _尚无记录。_
-public void SetParsedData （const std：： vector\<std：： string\>& 域，const std：： string & serverPublicCert，const std：： string & Id 为，const std：： string & issuerId）  | _尚无记录。_
-public void SetDoubleKeyData （const std：： string & 算法，const std：： map\<std：： string，std：： string\>& doubleKeyApplicationData）  | _尚无记录。_
-public const std：： vector\<uint8_t\>& GetSerializedPublishingLicense （） const  | _尚无记录。_
-public const std：： vector\<uint8_t\>& GetPreLicense （） const  | _尚无记录。_
-public const std：： vector\<std：： string\>& GetDomains （） const  | _尚无记录。_
-public const std：： string & GetServerPublicCertificate （） const  | _尚无记录。_
-public const std：： string & GetIssuerId （） const  | _尚无记录。_
-public const std：： string & GetContentId （） const  | _尚无记录。_
+public PublishingLicenseInfo （const std：： vector\<Uint8_t\>& serializedPublishingLicense）  | _尚无记录。_
+public PublishingLicenseInfo （const std：： vector\<Uint8_t\>& serializedPreLicense，const std：： vector\<uint8_t\>& serializedPublishingLicense）  | _尚无记录。_
+public void SetParsedData （const std：： vector\<std：： string\>& 域，const std：： string& serverPublicCert，const std：： string& id 为，const std：： string& issuerId）  | _尚无记录。_
+public void SetDoubleKeyData （const std：： string& 算法，const std：： map\<std：： string，std：： string\>& doubleKeyApplicationData）  | _尚无记录。_
+public const std：： vector\<Uint8_t\>& GetSerializedPublishingLicense （） const  | _尚无记录。_
+public const std：： vector\<Uint8_t\>& GetPreLicense （） const  | _尚无记录。_
+public const std：： vector\<std：： String\>& GetDomains （） const  | _尚无记录。_
+public const std：： string& GetServerPublicCertificate （） const  | _尚无记录。_
+public const std：： string& GetIssuerId （） const  | _尚无记录。_
+public const std：： string& GetContentId （） const  | _尚无记录。_
 public bool IsLicenseParsed （） const  | _尚无记录。_
 public bool HasPreLicense （） const  | _尚无记录。_
 public bool GetIsDoubleKeyLicense （） const  | _尚无记录。_
-public const std：： string & GetDoubleKeyAlgorithm （） const  | _尚无记录。_
-public const std：： map\<std：： string，std：： string\>& GetDoubleKeyApplicationData （） const  | _尚无记录。_
+public const std：： string& GetDoubleKeyAlgorithm （） const  | _尚无记录。_
+public const std：： map\<std：： string，std：： String\>& GetDoubleKeyApplicationData （） const  | _尚无记录。_
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="publishinglicenseinfo-function"></a>PublishingLicenseInfo 函数
 _尚无记录。_

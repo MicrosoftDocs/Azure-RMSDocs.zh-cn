@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: tommos
-ms.openlocfilehash: e2c8d8726edc483b35c7b9931bc83a3ddb3b5a2c
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: 87c9884f497cd0020b7252b6ef5a466fe858a8c1
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556140"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764116"
 ---
 # <a name="microsoft-information-protection-sdk---telemetry-configuration"></a>Microsoft 信息保护 SDK-遥测配置
 
@@ -21,7 +21,9 @@ ms.locfileid: "75556140"
 
 ## <a name="telemetry-configuration"></a>遥测配置
 
-可以通过[TelemetryConfiguration](https://docs.microsoft.com/dotnet/api/microsoft.informationprotection.telemetryconfiguration?view=mipsdk-dotnet)控制 MIP SDK 中的遥测选项。 创建此类的实例，然后将**IsTelemetryOptedOut**设置为 true。 将**TelemetryConfiguration**类的对象提供给用于创建**MipContext**的函数。 这并不会完全消除遥测数据，但会将所有最终用户身份信息的识别降到最小集。
+可以通过[TelemetryConfiguration](https://docs.microsoft.com/dotnet/api/microsoft.informationprotection.telemetryconfiguration?view=mipsdk-dotnet)控制 MIP SDK 中的遥测选项。 创建此类的实例，然后将**IsTelemetryOptedOut**设置为 true。 将**TelemetryConfiguration**类的对象提供给用于创建**MipContext**的函数。 
+
+从 MIP SDK 版本1.6 开始，设置选项**完全禁用**遥测。 在 verisons 1.5 及更早版本中，我们将发送一组最少的遥测信息。
 
 ### <a name="minimum-telemetry-events"></a>最小遥测事件
 
@@ -31,7 +33,7 @@ ms.locfileid: "75556140"
 
 #### <a name="event-heartbeat"></a>事件：检测信号
 
-| Name                                 | Description                                                                            | 清理 |
+| 名称                                 | 说明                                                                            | 清理 |
 | ------------------------------------ | -------------------------------------------------------------------------------------- | -------- |
 | 应用. ApplicationId                    | 通过 mip：： ApplicationInfo 提供的应用程序标识符。                          | 否       |
 | ApplicationName                  | 通过 mip：： ApplicationInfo 提供的应用程序名称。                                | 否       |
@@ -43,13 +45,13 @@ ms.locfileid: "75556140"
 | Engine                      | 经过身份验证的用户的主租户 GUID。                                            | 否       |
 | UserObjectId                  | Azure Active Directory 中的用户对象 ID。                                              | 否       |
 | 事件 CorrelationId                  | 生成的与触发事件的对象相关联的唯一 ID。                   | 否       |
-| CorrelationIdDescription       | C++触发事件的对象的类名。                                     | 否       |
+| CorrelationIdDescription       | 触发事件的对象的 c + + 类名。                                     | 否       |
 | ParentCorrelationId            | 父事件相关 ID。                                                           | 否       |
 | ParentCorrelationIdDescription | 生成的与触发事件的对象的父对象关联的唯一 ID。 | 否       |
 | 事件。 UniqueId                       | 为事件生成的唯一 ID。                                             | 否       |
 | MachineName                          | 生成事件的系统的名称。                                           | **是**  |
 | MIP.版本                          | MIP SDK 的版本。                                                                | 否       |
-| 操作                            | 检测信号                                                                              | 否       |
+| Operation                            | 检测信号                                                                              | 否       |
 | OrganizationId                       | 经过身份验证的用户的主租户 GUID。                                            | 否       |
 | 平台                             | 操作系统版本。                                                              | 否       |
 | ProcessName                          | 使用 SDK 的进程的名称。                                                     | 否       |
@@ -61,7 +63,7 @@ ms.locfileid: "75556140"
 
 #### <a name="event-discovery"></a>事件：发现
 
-| Name                                 | Description                                                                            | 清理 |
+| 名称                                 | 说明                                                                            | 清理 |
 | ------------------------------------ | -------------------------------------------------------------------------------------- | -------- |
 | ActionId                             | 用于事件关联的此事件的唯一操作 ID。                           | 否       |
 | 应用. ApplicationId                    | 通过 mip：： ApplicationInfo 提供的应用程序标识符。                          | 否       |
@@ -70,25 +72,25 @@ ms.locfileid: "75556140"
 | ApplicationId                        | 应用程序版本 profided via mip：： ApplicationInfo。                             | 否       |
 | ApplicationName                      | 通过 mip：： ApplicationInfo 提供的应用程序名称。                                | 否       |
 | CreationTime                         | 生成时间事件。                                                              | 否       |
-| dataState                            | 当应用程序在其上操作时，数据的状态为 "REST"、"移动"、"使用"。           | 否       |
+| DataState                            | 当应用程序在其上操作时，数据的状态为 "REST"、"移动"、"使用"。           | 否       |
 | DefaultLabel.Id                      | 租户默认标签标识符。                                                       | 否       |
 | Engine                      | 经过身份验证的用户的主租户 GUID。                                            | 否       |
 | UserObjectId                  | Azure Active Directory 中的用户对象标识符。                                      | 否       |
 | 事件 CorrelationId                  | 生成的与触发事件的对象相关联的唯一 ID。                   | 否       |
-| CorrelationIdDescription       | C++触发事件的对象的类名。                                     | 否       |
+| CorrelationIdDescription       | 触发事件的对象的 c + + 类名。                                     | 否       |
 | ParentCorrelationId            | 父事件相关 ID。                                                           | 否       |
 | ParentCorrelationIdDescription | 生成的与触发事件的对象的父对象关联的唯一 ID。 | 否       |
 | 事件。 UniqueId                       | 为事件生成的唯一 ID。                                             | 否       |
-| LabelId                              | 打开的文件或数据上的内容标签标识符。                                   | 否       |
+| 面部                              | 打开的文件或数据上的内容标签标识符。                                   | 否       |
 | MachineName                          | 生成事件的系统的名称。                                           | **是**  |
 | MIP.版本                          | MIP SDK 的版本。                                                                | 否       |
 | ObjectId                             | 文件路径/文件或数据的说明。                                             | **是**  |
-| 操作                            | "发现"。                                                                           | 否       |
+| Operation                            | "发现"。                                                                           | 否       |
 | OrganizationId                       | 经过身份验证的用户的主租户 GUID。                                            | 否       |
 | 平台                             | 操作系统版本。                                                              | 否       |
 | ProcessName                          | 使用 SDK 的进程的名称。                                                     | 否       |
-| 受保护                            | 布尔值，指示文件是否受保护。                                       | 否       |
-| Protection                           | 保护模板标识符。                                                    | **是**  |
+| Protected                            | 布尔值，指示文件是否受保护。                                       | 否       |
+| 保护                           | 保护模板标识符。                                                    | **是**  |
 | ProtectionOwner                      | 保护所有者的电子邮件地址。                                                 | **是**  |
 | SDKVersion                           | 与 MIP 相同。版本。                                                                   | 否       |
 | UserId                               | 用户的电子邮件地址。                                                             | **是**  |
@@ -97,7 +99,7 @@ ms.locfileid: "75556140"
 
 #### <a name="event-label-change"></a>事件：标签更改
 
-| Name                                 | Description                                                                            | 清理 |
+| 名称                                 | 说明                                                                            | 清理 |
 | ------------------------------------ | -------------------------------------------------------------------------------------- | -------- |
 | ActionId                             | 用于事件关联的此事件的唯一操作 ID。                           | 否       |
 | ActionIdBefore                       | 上一个操作 ID。 用于链接到新操作 ID。                                    | 否       |
@@ -108,30 +110,30 @@ ms.locfileid: "75556140"
 | ApplicationId                        | 通过 mip：： ApplicationInfo 提供的应用程序 ID。                                  | 否       |
 | ApplicationName                      | 通过 mip：： ApplicationInfo 提供的应用程序名称。                                | 否       |
 | CreationTime                         | 事件的生成时间。                                                          | 否       |
-| dataState                            | 当应用程序在其上操作时，数据的状态为 "REST"、"移动"、"使用"。           | 否       |
+| DataState                            | 当应用程序在其上操作时，数据的状态为 "REST"、"移动"、"使用"。           | 否       |
 | DefaultLabel.Id                      | 租户默认标签标识符。                                                       | 否       |
 | Engine                      | 经过身份验证的用户的主租户 GUID。                                            | 否       |
 | UserObjectId                  | Azure Active Directory 中的用户对象标识符。                                      | 否       |
 | 事件 CorrelationId                  | 生成的与触发事件的对象相关联的唯一 ID。                   | 否       |
-| CorrelationIdDescription       | C++触发事件的对象的类名。                                     | 否       |
+| CorrelationIdDescription       | 触发事件的对象的 c + + 类名。                                     | 否       |
 | ParentCorrelationId            | 父事件相关 ID。                                                           | 否       |
 | ParentCorrelationIdDescription | 生成的与触发事件的对象的父对象关联的唯一 ID。 | 否       |
 | 事件。 UniqueId                       | 为事件生成的唯一 ID。                                             | 否       |
 | IsLabelChanged                       | 布尔值，指示标签是否已更改。                                                  | 否       |
 | IsProtectionChanged                  | 布尔值，指示保护是否已更改。                                                 | 否       |
-| LabelId                              | 要应用于文件或数据的标签 ID。                                    | 否       |
+| 面部                              | 要应用于文件或数据的标签 ID。                                    | 否       |
 | LabelIdBefore                        | 文件或数据上的以前的标签 ID。                                        | 否       |
 | MachineName                          | 生成事件的系统的名称。                                           | **是**  |
 | MIP.版本                          | MIP SDK 的版本。                                                                | 否       |
 | ObjectId                             | 文件路径/文件或数据的说明。                                             | **是**  |
-| 操作                            | "更改"。                                                                              | 否       |
+| Operation                            | "更改"。                                                                              | 否       |
 | OrganizationId                       | 经过身份验证的用户的主租户 GUID。                                            | 否       |
 | 平台                             | 操作系统版本。                                                              | 否       |
 | ProcessName                          | 使用 SDK 的进程的名称。                                                     | 否       |
 | 产品版本                      |                                                                                        | 否       |
-| 受保护                            | 布尔值，指示文件是否受保护。                                       | 否       |
+| Protected                            | 布尔值，指示文件是否受保护。                                       | 否       |
 | 之前的保护                     | 布尔值，指示文件以前是否受保护。                           | 否       |
-| Protection                           | 保护模板标识符。                                                    | 否       |
+| 保护                           | 保护模板标识符。                                                    | 否       |
 | 之前的保护                    | 之前的保护模板标识符。                                           | 否       |
 | ProtectionContentId                  | 新内容标识符（GUID）。                                                     | 否       |
 | ProtectionContentIdBefore            | 上一个内容标识符（GUID）。                                                | 否       |
@@ -143,9 +145,9 @@ ms.locfileid: "75556140"
 | 版本                              | 审核版本架构（"1.1"）。                                                          | 否       |
 
 
-### <a name="opting-out-in-c"></a>选择退出C++
+### <a name="opting-out-in-c"></a>在 c + + 中选择
 
-若要仅将遥测设置为最小值，请创建**mip：： TelemetryConfiguration （）** 的共享指针，并将**isTelemetryOptedOut**设置为 true。 将中的配置对象传递给**MipContent：： Create （）** 。
+若要仅将遥测设置为最小值，请创建**mip：： TelemetryConfiguration （）** 的共享指针，并将**isTelemetryOptedOut**设置为 true。 将中的配置对象传递给**MipContent：： Create （）**。
 
 ```cpp
 auto telemetryConfig = std::make_shared<mip::TelemetryConfiguration>();                                     
@@ -164,7 +166,7 @@ mMipContext = mip::MipContext::Create(
 
 ### <a name="opting-out-in-net"></a>在 .NET 中退出
 
-若要仅将遥测设置为最小值，请创建一个**TelemetryConfiguration （）** 对象，并将**isTelemetryOptedOut**设置为 true。 将配置对象传递到**MIP。CreateMipContext （）** 。
+若要仅将遥测设置为最小值，请创建一个**TelemetryConfiguration （）** 对象，并将**isTelemetryOptedOut**设置为 true。 将配置对象传递到**MIP。CreateMipContext （）**。
 
 ```csharp
 TelemetryConfiguration telemetryConfiguration = new TelemetryConfiguration();

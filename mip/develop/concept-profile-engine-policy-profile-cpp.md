@@ -6,33 +6,32 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 9412fae0f14d615ba6d81c5610597affbb596df8
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: bdc72bc3da8added696733cb271116764d0fd0c7
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75555188"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764048"
 ---
 # <a name="microsoft-information-protection-sdk---policy-api-profile-concepts"></a>Microsoft 信息保护 SDK - 策略 API 配置文件概念
 
 必须先加载 `mip::Profile`，然后才能执行任意策略 API 操作。
 
-下面的两个示例展示如何使用本地存储作为状态存储来创建 profileSettings 对象，以及仅在内存中创建该对象。 两者都假设已经创建了 `authDelegateImpl` 对象。
+下面的两个示例展示如何使用本地存储作为状态存储来创建 profileSettings 对象，以及仅在内存中创建该对象。 
 
 ## <a name="load-a-profile"></a>加载配置文件
 
-现在已定义 `MipContext`、`ProfileObserver`和 `AuthDelegateImpl`，我们将使用它们来实例化 `mip::PolicyProfile`。 创建 `mip::PolicyProfile` 对象需要[`mip::PolicyProfile::Settings`](reference/class_mip_PolicyProfile_settings.md)和 `mip::MipContext`。
+既然已经定义了 `MipContext` 和 `ProfileObserver`，接下来我们将使用它们实例化 `mip::PolicyProfile`。 创建`mip::PolicyProfile`对象需要[`mip::PolicyProfile::Settings`](reference/class_mip_PolicyProfile_settings.md)和。 `mip::MipContext`
 
 ### <a name="profilesettings-parameters"></a>Profile::Settings 参数
 
-`PolicyProfile::Settings` 构造函数接受下面列出的四个参数：
+`PolicyProfile::Settings`构造函数接受下面列出的四个参数：
 
-- `const std::shared_ptr<MipContext>`：已初始化为存储应用程序信息、状态路径等的 `mip::MipContext` 对象。
+- `const std::shared_ptr<MipContext>`：已`mip::MipContext`初始化为存储应用程序信息、状态路径等的对象。
 - `mip::CacheStorageType`：定义如何存储状态：在内存、磁盘上，或磁盘上的和已加密。 有关更多详细信息，请参阅[缓存存储概念](concept-cache-storage.md)。
-- `std::shared_ptr<mip::AuthDelegate>`：类 `mip::AuthDelegate` 的共享指针。
-- `std::shared_ptr<mip::PolicyProfile::Observer> observer`：指向配置文件 `Observer` 实现（在[`PolicyProfile`](reference/class_mip_policyprofile_observer.md)、 [`ProtectionProfile`](reference/class_mip_protectionprofile_observer.md)和[`FileProfile`](reference/class_mip_fileprofile_observer.md)中）的共享指针。
+- `std::shared_ptr<mip::PolicyProfile::Observer> observer`：指向`Observer`配置文件实现的共享指针（在[`PolicyProfile`](reference/class_mip_policyprofile_observer.md)、 [`ProtectionProfile`](reference/class_mip_protectionprofile_observer.md)和[`FileProfile`](reference/class_mip_fileprofile_observer.md)中）。
 
-下面的两个示例展示如何使用本地存储作为状态存储来创建 profileSettings 对象，以及仅在内存中创建该对象。 两者都假设已经创建了 `authDelegateImpl` 对象。
+下面的两个示例展示如何使用本地存储作为状态存储来创建 profileSettings 对象，以及仅在内存中创建该对象。 
 
 #### <a name="store-state-in-memory-only"></a>将状态仅存储在内存中
 
@@ -48,7 +47,6 @@ mMipContext = mip::MipContext::Create(appInfo,
 PolicyProfile::Settings profileSettings(
     mipContext,                                   // mipContext object
     mip::CacheStorageType::InMemory,              // use in memory storage
-    authDelegateImpl,                             // auth delegate object
     std::make_shared<PolicyProfileObserverImpl>()); // new protection profile observer
 ```
 
@@ -66,7 +64,6 @@ mMipContext = mip::MipContext::Create(appInfo,
 PolicyProfile::Settings profileSettings(
     mipContext,                                    // mipContext object
     mip::CacheStorageType::OnDisk,                 // use on disk storage
-    authDelegateImpl,                              // auth delegate object
     std::make_shared<PolicyProfileObserverImpl>());  // new protection profile observer
 ```
 
@@ -99,9 +96,7 @@ int main()
     const string clientId = "MyClientId";
 
     mip::ApplicationInfo appInfo {clientId, "APP NAME", "1.2.3" };
-
-    auto authDelegateImpl = std::make_shared<sample::auth::AuthDelegateImpl>(appInfo, userName, password);
-
+ 
     auto mipContext = mip::MipContext::Create(appInfo,
                         "mip_app_data",
                         mip::LogLevel::Trace,
@@ -111,7 +106,6 @@ int main()
     PolicyProfile::Settings profileSettings(
         mipContext,                                    // mipContext object
         mip::CacheStorageType::OnDisk,                 // use on disk storage
-        authDelegateImpl,                              // auth delegate object
         std::make_shared<PolicyProfileObserverImpl>());  // new protection profile observer
 
     auto profilePromise = std::make_shared<promise<shared_ptr<PolicyProfile>>>();

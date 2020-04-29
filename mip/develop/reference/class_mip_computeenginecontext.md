@@ -1,27 +1,27 @@
 ---
-title: 类 mip：： ComputeEngineContext
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： computeenginecontext 类。
+title: 类 ComputeEngineContext
+description: 记录 Microsoft 信息保护（MIP） SDK 的 computeenginecontext：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 78109b683d163dfec80a3cf0831abd2f1d9c97de
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: c9ab006606e8895b80231a793b9d1714829195d1
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77490347"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763464"
 ---
-# <a name="class-mipcomputeenginecontext"></a>类 mip：： ComputeEngineContext 
+# <a name="class-computeenginecontext"></a>类 ComputeEngineContext 
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public virtual ~ ComputeEngineContext （）  | _尚无记录。_
 protected ComputeEngineContext （）  | _尚无记录。_
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="computeenginecontext-function"></a>~ ComputeEngineContext 函数
 _尚无记录。_

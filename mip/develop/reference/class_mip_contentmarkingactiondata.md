@@ -1,22 +1,22 @@
 ---
-title: 类 mip：： ContentMarkingActionData
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： contentmarkingactiondata 类。
+title: 类 ContentMarkingActionData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 contentmarkingactiondata：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 6652cf38163a461af49675c5009dba6461ffa544
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 31362a636498c0c12be9f1b24783d6a7bde166db
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77488902"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763371"
 ---
-# <a name="class-mipcontentmarkingactiondata"></a>类 mip：： ContentMarkingActionData 
+# <a name="class-contentmarkingactiondata"></a>类 ContentMarkingActionData 
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetText() const  | _尚无记录。_
 public const std::string& GetFontName() const  | _尚无记录。_
@@ -27,7 +27,7 @@ public int GetMargin() const  | _尚无记录。_
 public ContentMarkPlacement GetContentMarkPlacement （） const  | _尚无记录。_
 public virtual ~ ContentMarkingActionData （）  | _尚无记录。_
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="gettext-function"></a>GetText 函数
 _尚无记录。_

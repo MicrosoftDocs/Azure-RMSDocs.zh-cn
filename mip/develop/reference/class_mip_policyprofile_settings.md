@@ -1,40 +1,39 @@
 ---
-title: class mip::PolicyProfile::Settings
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p olicyprofile 类。
+title: 类 PolicyProfile：： Settings
+description: 记录 Microsoft 信息保护（MIP） SDK 的 policyprofile：： settings 类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 6c2d7f26e12f03bd886f2a3fedab8e0a3d976c45
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 317a6cfaaac7572ae320860a0d5a11fabce356e9
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489752"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760647"
 ---
-# <a name="class-mippolicyprofilesettings"></a>class mip::PolicyProfile::Settings 
-PolicyProfile 在其创建期间及其整个生存期内使用的设置。
+# <a name="class-policyprofilesettings"></a>类 PolicyProfile：： Settings 
+PolicyProfile 在其创建期间及其整个生存期内使用的 Settings。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-公共设置（const std：： shared_ptr\<MipContext\>& mipContext，CacheStorageType cacheStorageType，const std：： shared_ptr\<AuthDelegate\>& authDelegate，const std：： shared_ptr\<PolicyProfile：： Observer\>& 观察程序）  |  用于配置配置文件的接口。
+公共设置（const std：： shared_ptr\<mipContext\>& MipContext，CacheStorageType CacheStorageType，const std：： Shared_ptr\<PolicyProfile：： observer\>& 观察程序）  |  用于配置配置文件的接口。
 public CacheStorageType GetCacheStorageType （） const  |  获取缓存是存储在内存中还是存储在磁盘上。
-public const std：： shared_ptr\<AuthDelegate\>& GetAuthDelegate （） const  |  获取身份验证委托。
 public const std：： shared_ptr\<PolicyProfile：： Observer\>& GetObserver （） const  |  获取事件观察程序。
 public std：： shared_ptr\<MipContext\> GetMipContext （） const  |  获取表示所有配置文件的共享状态的 MIP 上下文。
 public std：： shared_ptr\<HttpDelegate\> GetHttpDelegate （） const  |  获取应用程序提供的 HTTP 委托（若有）。
-public void SetHttpDelegate （const std：： shared_ptr\<HttpDelegate\>& httpDelegate）  |  使用客户端自己的替代默认 HTTP 堆栈。
+public void SetHttpDelegate （const std：： shared_ptr\<httpDelegate\>& HttpDelegate）  |  使用客户端自己的替代默认 HTTP 堆栈。
 public std：： shared_ptr\<TaskDispatcherDelegate\> GetTaskDispatcherDelegate （） const  |  获取应用程序提供的 TaskDispatcher 委托（如果有）。
-public void SetTaskDispatcherDelegate （const std：： shared_ptr\<TaskDispatcherDelegate\>& taskDispatcherDelegate）  |  重写客户端自己的默认异步任务分派处理。
+public void SetTaskDispatcherDelegate （const std：： shared_ptr\<taskDispatcherDelegate\>& TaskDispatcherDelegate）  |  重写客户端自己的默认异步任务分派处理。
 public void SetSessionId(const std::string& sessionId)  | _尚无记录。_
 public const std::string& GetSessionId() const  | _尚无记录。_
-public void SetCustomSettings （const std：： vector\<std：:p air\<std：： string，std：： string\>\>& customSettings）  |  设置自定义设置，用于功能访问控制和测试。
-public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetCustomSettings （） const  |  获取用于功能访问控制和测试的自定义设置。
+public void SetCustomSettings （const std：： vector\<std：:p 风\<std：： string、std：： string\> \>& customSettings）  |  设置自定义设置，用于功能访问控制和测试。
+public const std：： vector\<std：:p air\<std：： string，std：： string\> \>& GetCustomSettings （） const  |  获取用于功能访问控制和测试的自定义设置。
 public ~Settings()  | _尚无记录。_
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="settings-function"></a>Settings 函数
 用于配置配置文件的接口。
@@ -46,10 +45,7 @@ public ~Settings()  | _尚无记录。_
 * **cacheStorageType**：将任何缓存的状态存储在内存中或磁盘上 
 
 
-* **authDelegate**：SDK 用来获取身份验证令牌的身份验证委托。 
-
-
-* **观察**程序：一个实现 PolicyProfile：： observer 接口的类。 可以为 nullptr。
+* observer****：实现 PolicyProfile::Observer 接口的类。 可以为 nullptr。
 
 
   
@@ -58,12 +54,6 @@ public ~Settings()  | _尚无记录。_
 
   
 **返回**：使用的存储类型
-  
-### <a name="getauthdelegate-function"></a>GetAuthDelegate 函数
-获取身份验证委托。
-
-  
-**返回结果**：身份验证委托。
   
 ### <a name="getobserver-function"></a>GetObserver 函数
 获取事件观察程序。
@@ -81,13 +71,13 @@ public ~Settings()  | _尚无记录。_
 获取应用程序提供的 HTTP 委托（若有）。
 
   
-返回结果：要用于 HTTP 操作的 http 委托
+**返回**：要用于 http 操作的 http 委托
   
 ### <a name="sethttpdelegate-function"></a>SetHttpDelegate 函数
 使用客户端自己的替代默认 HTTP 堆栈。
 
 参数：  
-* httpDelegate：客户端应用程序实现的 http 回叫接口
+* httpDelegate****：客户端应用程序实现的 http 回叫接口
 
 
   

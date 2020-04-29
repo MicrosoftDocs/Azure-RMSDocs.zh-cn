@@ -1,48 +1,50 @@
 ---
-title: 类 mip：： LabelGroupData
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： labelgroupdata 类。
+title: 类 LabelGroupData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 labelgroupdata：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: a780ac706b547049a6b1de9adce237b405fea711
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 3f7b9bb74f72ea52f71bc678f3740813e3a6e6d8
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489939"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81761943"
 ---
-# <a name="class-miplabelgroupdata"></a>类 mip：： LabelGroupData 
+# <a name="class-labelgroupdata"></a>类 LabelGroupData 
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetLabelId() const  | _尚无记录。_
-public const std：： vector\<std：： unique_ptr\<LabelGroupData\>\>& GetLabelGroupData （） const  | _尚无记录。_
+public const std：： vector\<std：： unique_ptr\<LabelGroupData\> \>& GetLabelGroupData （） const  | _尚无记录。_
 public int GetOrder （） const  | _尚无记录。_
-public const std：:p 空中\<std：： string，std：： string\>& GetColor （） const  | _尚无记录。_
-public const std：:p 空中\<std：： string，std：： string\>& GetName （） const  | _尚无记录。_
-public const std：:p 空中\<std：： string，std：： string\>& GetDescription （） const  | _尚无记录。_
+public const std：:p 风\<std：： string、std：： String\>& GetColor （） const  | _尚无记录。_
+public const std：:p 风\<std：： string、std：： String\>& GetName （） const  | _尚无记录。_
+public const std：:p 风\<std：： string、std：： String\>& GetDescription （） const  | _尚无记录。_
 public const std::string& GetTemplateId() const  | _尚无记录。_
-public const std：： string & GetInvariantName （） const  | _尚无记录。_
-public const std：:p 空中\<std：： string，std：： string\>& GetTooltip （） const  | _尚无记录。_
-public const std：:p 空中\<std：： string，std：： string\>& GetAutoTooltip （） const  | _尚无记录。_
+public const std：： string& GetInvariantName （） const  | _尚无记录。_
+public const std：:p 风\<std：： string、std：： String\>& GetTooltip （） const  | _尚无记录。_
+public const std：:p 风\<std：： string、std：： String\>& GetAutoTooltip （） const  | _尚无记录。_
 public bool IsEnabled （） const  | _尚无记录。_
 public bool IsDowngradeJustificationRequired （） const  | _尚无记录。_
-public const std：： string & GetDefaultLabelId （） const  | _尚无记录。_
-public const std：:p 空中\<std：： string，std：： string\>& GetMoreInfoUrl （） const  | _尚无记录。_
+public const std：： string& GetDefaultLabelId （） const  | _尚无记录。_
+public const std：:p 风\<std：： string、std：： String\>& GetMoreInfoUrl （） const  | _尚无记录。_
 public bool IsMandatory （） const  | _尚无记录。_
-public const std：： vector\<std：： shared_ptr\<ProtectionActionData\>\>& GetProtectionActionData （） const  | _尚无记录。_
+public const std：： vector\<std：： shared_ptr\<ProtectionActionData\> \>& GetProtectionActionData （） const  | _尚无记录。_
 public bool IsAuditEnabled （） const  | _尚无记录。_
-public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetCustomSettings （） const  | _尚无记录。_
-public const std：： vector\<std：： string\>& GetLabelByCustomProperties （） const  | _尚无记录。_
-public const std：： vector\<std：： string\>& GetCustomPropertiesByLabel （） const  | _尚无记录。_
-公共 std：： vector\<std：:p 空中\<std：： string，std：： string\>\> GetParsedCustomPropertiesByLabel （） const  | _尚无记录。_
-公共 std：： vector\<std：：元组\<std：： string，std：： string，std：： string\>\> GetLabelByCustomPropertiesSettings （） const  | _尚无记录。_
+public bool IsCoauthEnabled （） const  | _尚无记录。_
+public const std：： string& GetAuditWorkspaceId （） const  | _尚无记录。_
+public const std：： vector\<std：:p air\<std：： string，std：： string\> \>& GetCustomSettings （） const  | _尚无记录。_
+public const std：： vector\<std：： String\>& GetLabelByCustomProperties （） const  | _尚无记录。_
+public const std：： vector\<std：： String\>& GetCustomPropertiesByLabel （） const  | _尚无记录。_
+public const std：： vector\<std：:p air\<std：： string，std：： string\> \>& GetParsedCustomPropertiesByLabel （） const  | _尚无记录。_
+public const std：： vector\<std：： GetLabelByCustomPropertiesSettings\<std：： string，std：： string，std：： string\> \>& （） const  | _尚无记录。_
 public virtual ~ LabelGroupData （）  | _尚无记录。_
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getlabelid-function"></a>GetLabelId 函数
 _尚无记录。_
@@ -109,6 +111,14 @@ _尚无记录。_
 
   
 ### <a name="isauditenabled-function"></a>IsAuditEnabled 函数
+_尚无记录。_
+
+  
+### <a name="iscoauthenabled-function"></a>IsCoauthEnabled 函数
+_尚无记录。_
+
+  
+### <a name="getauditworkspaceid-function"></a>GetAuditWorkspaceId 函数
 _尚无记录。_
 
   

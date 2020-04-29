@@ -1,32 +1,32 @@
 ---
-title: class mip::ContentLabel
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： contentlabel 类。
+title: 类 ContentLabel
+description: 记录 Microsoft 信息保护（MIP） SDK 的 contentlabel：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: f131885572ab5ad3a2664a6b50162a011529bfbb
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: e69a4a8146eb7e7251645ef83a8db0926d383166
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77490330"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763396"
 ---
-# <a name="class-mipcontentlabel"></a>class mip::ContentLabel 
+# <a name="class-contentlabel"></a>类 ContentLabel 
 Microsoft 信息保护标签的抽象，应用于一段内容，通常是一个文档。
 它还包含特定应用标签实例的属性。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public std：： chrono：： time_point\<std：： chrono：： system_clock\> GetCreationTime （） const  |  获取标签的创建时间。
 public AssignmentMethod GetAssignmentMethod() const  |  获取标签的分配方法。
-public const std：： vector\<std：:p air\<std：： string，std：： string\>\>& GetExtendedProperties （） const  |  获取扩展属性。
+public const std：： vector\<MetadataEntry\>& GetExtendedProperties （） const  |  获取扩展属性。
 public bool IsProtectionAppliedFromLabel() const  |  获取标签是否应用了保护的指示。
-public std：： shared_ptr\<Label\> GetLabel （） const  |  获取应用于内容的实际标签对象。
+public std：： shared_ptr\<标签\> GetLabel （） const  |  获取应用于内容的实际标签对象。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getcreationtime-function"></a>GetCreationTime 函数
 获取标签的创建时间。
@@ -40,7 +40,7 @@ public std：： shared_ptr\<Label\> GetLabel （） const  |  获取应用于�
   
 **返回结果**：AssignmentMethod STANDARD | PRIVILEGED | AUTO。 
   
-**另请参阅**： [Mip：： AssignmentMethod](mip-enums-and-structs.md#assignmentmethod-enum)
+**** 另请参阅：mip::AssignmentMethod
   
 ### <a name="getextendedproperties-function"></a>GetExtendedProperties 函数
 获取扩展属性。

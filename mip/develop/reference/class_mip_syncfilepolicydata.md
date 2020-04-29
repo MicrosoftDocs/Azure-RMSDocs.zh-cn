@@ -1,31 +1,31 @@
 ---
-title: 类 mip：： SyncFilePolicyData
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： syncfilepolicydata 类。
+title: 类 SyncFilePolicyData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 syncfilepolicydata：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: a9e08fa2f734f40e4a99aae4a6e141cec4eff6c0
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 516b6ea2e3282ac17e4a17da979285ea23d76d05
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489344"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764328"
 ---
-# <a name="class-mipsyncfilepolicydata"></a>类 mip：： SyncFilePolicyData 
+# <a name="class-syncfilepolicydata"></a>类 SyncFilePolicyData 
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const LabelGroupData * GetLabelGroupData （） const  | _尚无记录。_
-public const std：： vector\<std：： unique_ptr\<PolicyPackageData\>\>& GetPoliciesPackageData （） const  | _尚无记录。_
-public const std：： string & GetUpn （） const  | _尚无记录。_
-public const std：： unordered_map\<std：： string，std：： string\>& GetClassificationList （） const  | _尚无记录。_
-public const std：： string & GetUserObjectId （） const  | _尚无记录。_
+public const std：： vector\<std：： unique_ptr\<PolicyPackageData\> \>& GetPoliciesPackageData （） const  | _尚无记录。_
+public const std：： string& GetUpn （） const  | _尚无记录。_
+public const std：： unordered_map\<std：： string，std：： String\>& GetClassificationList （） const  | _尚无记录。_
+public const std：： string& GetUserObjectId （） const  | _尚无记录。_
 public virtual ~ SyncFilePolicyData （）  | _尚无记录。_
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getlabelgroupdata-function"></a>GetLabelGroupData 函数
 _尚无记录。_

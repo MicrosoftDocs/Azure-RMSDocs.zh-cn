@@ -1,28 +1,28 @@
 ---
-title: 类 mip：： LabelActionData
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： labelactiondata 类。
+title: 类 LabelActionData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 labelactiondata：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: d06339e217e04a6e1412361befae9d3d45070b16
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 2fb2db92c5c88f6d7c48bead75e9fd7e3eba483b
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489922"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81761983"
 ---
-# <a name="class-miplabelactiondata"></a>类 mip：： LabelActionData 
+# <a name="class-labelactiondata"></a>类 LabelActionData 
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetLabelId() const  | _尚无记录。_
 public LabelActionDataType GetLabelActionDataType （） const  | _尚无记录。_
 public virtual ~ LabelActionData （）  | _尚无记录。_
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getlabelid-function"></a>GetLabelId 函数
 _尚无记录。_

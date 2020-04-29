@@ -1,23 +1,23 @@
 ---
-title: class mip::AddWatermarkAction
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： addwatermarkaction 类。
+title: 类 AddWatermarkAction
+description: 记录 Microsoft 信息保护（MIP） SDK 的 addwatermarkaction：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 80ae66e54fe00ad96652b3568d49e256211dffc4
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: fe2cc80e5abb225a5e83c1b10c1c5f9f99401628
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77490704"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763737"
 ---
-# <a name="class-mipaddwatermarkaction"></a>class mip::AddWatermarkAction 
+# <a name="class-addwatermarkaction"></a>类 AddWatermarkAction 
 指定添加水印的操作类。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetUIElementName()  |  用于标记水印元素的 API。
 public WatermarkLayout GetLayout() const  |  用于获取水印布局的 API。
@@ -26,7 +26,7 @@ public const std::string& GetFontName() const  |  获取用于显示水印的字
 public int GetFontSize() const  |  获取用于显示水印的字号。
 public const std::string& GetFontColor() const  |  获取用于显示水印的字体颜色。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getuielementname-function"></a>GetUIElementName 函数
 用于标记水印元素的 API。
@@ -62,4 +62,4 @@ public const std::string& GetFontColor() const  |  获取用于显示水印的�
 获取用于显示水印的字体颜色。
 
   
-返回结果：字符串形式的字体颜色（例如“#000000”）。
+返回结果****：字符串形式的字体颜色（例如“#000000”）。

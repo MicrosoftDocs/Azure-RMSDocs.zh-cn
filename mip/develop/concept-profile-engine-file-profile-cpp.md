@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: f174225ee7399480c610b491819c434400548e22
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: c48f3f3a45e77698bda2870babaa2564968fc47e
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75555290"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764074"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-profile-concepts"></a>Microsoft 信息保护 SDK - 文件 API 配置文件概念
 
@@ -19,27 +19,25 @@ ms.locfileid: "75555290"
 
 在尝试实例化配置文件之前，应满足一些代码先决条件：
 
-- `MipContext` 已创建并存储在 `mip::FileProfile` 对象可访问的对象中。
-- `AuthDelegateImpl` 可实现 `mip::AuthDelegate`。
+- `MipContext`已创建并存储在`mip::FileProfile`对象可访问的对象中。
 - `ConsentDelegateImpl` 可实现 `mip::ConsentDelegate`。
 - 应用程序已[在 Azure Active Directory 中注册](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad.md)，并且客户端 ID 已硬编码到应用程序或配置文件中。
 - 继承 `mip::FileProfile::Observer` 的类已得到适当实现。
 
 ## <a name="load-a-profile"></a>加载配置文件
 
-定义 `ProfileObserver`、`ConsentDelegateImpl` 和 `AuthDelegateImpl` 后，现在可以实例化 `mip::FileProfile`。 创建 `mip::FileProfile` 对象要求 [`mip::MipContext`] 具有和[`mip::FileProfile::Settings`](reference/class_mip_fileprofile_settings.md) ，以存储有关 `FileProfile`的所有设置信息。
+定义了`ProfileObserver`、和`ConsentDelegateImpl`，现在`mip::FileProfile`可以对其进行实例化。 创建`mip::FileProfile`对象要求 [`mip::MipContext`] 具有和[`mip::FileProfile::Settings`](reference/class_mip_fileprofile_settings.md) ，以存储有关的所有设置信息。 `FileProfile`
 
 ### <a name="fileprofilesettings-parameters"></a>FileProfile::Settings 参数
 
 `FileProfile::Settings` 构造函数接受下列五个参数：
 
-- `std::shared_ptr<MipContext>`：已初始化为存储应用程序信息、状态路径等的 `mip::MipContext` 对象。
+- `std::shared_ptr<MipContext>`：已`mip::MipContext`初始化为存储应用程序信息、状态路径等的对象。
 - `mip::CacheStorageType`：定义如何存储状态：在内存、磁盘上，或磁盘上的和已加密。
-- `std::shared_ptr<mip::AuthDelegate>`：类 `mip::AuthDelegate` 的共享指针。
 - `std::shared_ptr<mip::ConsentDelegate>`：类[`mip::ConsentDelegate`](reference/class_mip_consentdelegate.md)的共享指针。
-- `std::shared_ptr<mip::FileProfile::Observer> observer`：指向配置文件 `Observer` 实现（在[`PolicyProfile`](reference/class_mip_policyprofile_observer.md)、 [`ProtectionProfile`](reference/class_mip_protectionprofile_observer.md)和[`FileProfile`](reference/class_mip_fileprofile_observer.md)中）的共享指针。
+- `std::shared_ptr<mip::FileProfile::Observer> observer`：指向`Observer`配置文件实现的共享指针（在[`PolicyProfile`](reference/class_mip_policyprofile_observer.md)、 [`ProtectionProfile`](reference/class_mip_protectionprofile_observer.md)和[`FileProfile`](reference/class_mip_fileprofile_observer.md)中）。
 
-以下示例展示如何使用本地存储作为状态存储来创建 `profileSettings` 对象，以及仅在内存中创建该对象。 两者都假设已经创建了 `authDelegateImpl` 对象。
+以下示例展示如何使用本地存储作为状态存储来创建 `profileSettings` 对象，以及仅在内存中创建该对象。 
 
 #### <a name="store-state-in-memory-only"></a>将状态仅存储在内存中
 
@@ -55,7 +53,6 @@ mMipContext = mip::MipContext::Create(appInfo,
 FileProfile::Settings profileSettings(
     mipContext,                                   // mipContext object
     mip::CacheStorageType::InMemory,              // use in memory storage
-    authDelegateImpl,                             // auth delegate object
     std::make_shared<ConsentDelegateImpl>(),      // new consent delegate
     std::make_shared<FileProfileObserverImpl>()); // new protection profile observer
 ```
@@ -75,8 +72,7 @@ mMipContext = mip::MipContext::Create(appInfo,
 
 FileProfile::Settings profileSettings(
     mipContext,                                    // mipContext object
-    mip::CacheStorageType::OnDisk,                 // use on disk storage
-    authDelegateImpl,                              // auth delegate object
+    mip::CacheStorageType::OnDisk,                 // use on disk storage    
     std::make_shared<ConsentDelegateImpl>(),       // new consent delegate
     std::make_shared<FileProfileObserverImpl>());  // new protection profile observer
 ```
@@ -111,8 +107,6 @@ int main()
 
     mip::ApplicationInfo appInfo {clientId, "APP NAME", "1.2.3" };
 
-    auto authDelegateImpl = std::make_shared<sample::auth::AuthDelegateImpl>(appInfo, userName, password);
-
     auto mipContext = mip::MipContext::Create(appInfo,
                         "mip_app_data",
                         mip::LogLevel::Trace,
@@ -121,8 +115,7 @@ int main()
 
     FileProfile::Settings profileSettings(
         mipContext,                                    // mipContext object
-        mip::CacheStorageType::OnDisk,                 // use on disk storage
-        authDelegateImpl,                              // auth delegate object
+        mip::CacheStorageType::OnDisk,                 // use on disk storage        
         std::make_shared<ConsentDelegateImpl>(),       // new consent delegate
         std::make_shared<FileProfileObserverImpl>());  // new file profile observer
 

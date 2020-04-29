@@ -1,10 +1,10 @@
 ---
 title: 比较 Azure 信息保护和 AD RMS - AIP
 description: 如果你了解或以前部署过 Active Directory Rights Management Services (AD RMS)，你可能想知道 Azure 信息保护在功能和要求方面与它相比有何差别。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 10/23/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 04/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d0cd811adcd773446c60a3442bb5687210931ed0
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 2eeae09e3fe8bca00eb7d80df60418a246c0ca86
+ms.sourcegitcommit: 479b3aaea7011750ff85a217298e5ae9185c1dd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73444823"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82224540"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>比较 Azure 信息保护与 AD RMS
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 如果你了解或以前部署过 Active Directory Rights Management Services (AD RMS)，你可能想知道 Azure 信息保护作为信息保护解决方案在功能和要求方面与它相比有何差别。
 
@@ -45,14 +45,14 @@ Azure 信息保护的一些主要差异：
 
 对于其他差异，请使用下表进行并行比较。 如果你有安全方面的比较问题，请参阅本文中的[签名和加密的加密控制](#cryptographic-controls-for-signing-and-encryption)。
 
-|Azure Information Protection|AD RMS|
+|Azure 信息保护|AD RMS|
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------|
 |支持 Microsoft Online services 和本地 Microsoft 服务器产品中的信息权限管理（IRM）功能。|支持本地 Microsoft 服务器产品和 Exchange Online 的信息权限管理（IRM）功能。|
 |与任何也使用 Azure AD 进行身份验证的组织自动实现文档的安全协作。|在组织外部实现文档的安全协作要求在两个组织之间以直接点对点的关系显式定义身份验证信任。 必须配置受信任的用户域 (TUD) 或使用 Active Directory 联合身份验证服务 (AD FS) 创建的联合信任。|
 |如果不存在任何身份验证信任关系，则向用户发送受保护的电子邮件（可选择附加自动受到保护的 Office 文档附件）。 使用联合与社交提供程序或一次性密码和 Web 浏览器进行查看时可能需要采取这种操作。|如果不存在任何身份验证信任关系，则不支持发送受保护的电子邮件。|
-|支持 Azure 信息保护客户端（经典）和 Azure 信息保护统一标签客户端，同时提供保护和消耗活动。|支持用于保护和消耗活动的 Azure 信息保护客户端（经典）。 <br /><br />仅支持 Azure 信息保护统一标签客户端以供使用，并且必须安装[Active Directory Rights Management Services 移动设备扩展](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574\(v=ws.11\))。
+|支持 Azure 信息保护客户端（经典）和 Azure 信息保护统一标签客户端，同时提供保护和消耗活动。|支持用于保护和消耗活动的 Azure 信息保护客户端（经典）。 <br /><br />仅支持 Azure 信息保护统一标签客户端以供使用，并且必须安装[Active Directory Rights Management Services 移动设备扩展](./active-directory-rights-manage-mobile-device.md)。
 |支持适用于计算机和移动设备的多因素身份验证 (MFA)。<br /><br />有关详细信息，请参阅[多重身份验证 (MFA) 和 Azure 信息保护](./requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection)。|如果将 IIS 配置为请求证书，将支持智能卡身份验证。|
-|默认情况下支持加密模式2，以便为密钥长度和加密算法提供推荐的安全级别。|默认情况下支持加密模式1，需要额外配置才能支持加密模式2，以获得推荐的安全级别。<br /><br />有关详细信息，请参阅[AD RMS 加密模式](https://go.microsoft.com/fwlink/?LinkId=266659)。|
+|默认情况下支持加密模式2，以便为密钥长度和加密算法提供推荐的安全级别。|默认情况下支持加密模式1，需要额外配置才能支持加密模式2，以获得推荐的安全级别。<br /><br />有关详细信息，请参阅 [AD RMS Cryptographic Modes](https://go.microsoft.com/fwlink/?LinkId=266659)（AD RMS 加密模式）。|
 |要求使用 Azure 信息保护许可证或具有 Office 365 的 Azure Rights Management 许可证来保护内容。 <br /><br />无需许可证即可使用已受 Azure 信息保护（包括另一个组织的用户）保护的内容。<br /><br />有关授权的详细信息，包括 P1 和 P2 许可证之间的差异，请参阅 Azure 信息保护站点中的[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|需要 RMS 许可证才能保护内容，以及使用已受 AD RMS 保护的内容。<br /><br />有关授权的详细信息，请参阅[客户端访问许可证和管理许可证](https://www.microsoft.com/en-us/Licensing/product-licensing/client-access-license.aspx)获取一般信息，但请联系 microsoft 合作伙伴或 microsoft 代表了解特定信息。|
 
 ## <a name="cryptographic-controls-for-signing-and-encryption"></a>对签名和加密的加密控制
@@ -70,7 +70,9 @@ Azure 信息保护和 AD RMS 都将 AES 128 用于对称加密。
 
 如果希望从 AD RMS 迁移到 Azure 信息保护，请参阅[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)。
 
+开始[Active Directory Rights Management Services 移动设备扩展](./active-directory-rights-manage-mobile-device.md)。 
+
 你可能对以下 Faq 感兴趣：
-- [Azure 信息保护和 Microsoft 信息保护之间的区别是什么？](faqs.md#whats-the-difference-between-azure-information-protection-and-microsoft-information-protection)
-- [Azure 信息保护与 Azure Rights Management 之间有何区别？](faqs.md#whats-the-difference-between-azure-information-protection-and-azure-rights-management)
+- [Azure 信息保护和 Microsoft 信息保护之间有何不同？](faqs.md#whats-the-difference-between-azure-information-protection-and-microsoft-information-protection)
+- [Azure 信息保护和 Azure Rights Management 之间有何不同？](faqs.md#whats-the-difference-between-azure-information-protection-and-azure-rights-management)
 

@@ -6,46 +6,44 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 07/29/2019
 ms.author: mbaldwin
-ms.openlocfilehash: de78ed0e5b3dfe7f9f5c1e2efa7edd77a0719986
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: 193b65a392060e38731a1a8eda4c7565e82ca0df
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556123"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81764140"
 ---
 # <a name="microsoft-information-protection-sdk---profile-and-engine-object-concepts"></a>Microsoft 信息保护 SDK - 配置文件和引擎对象概念
 
-## <a name="profiles"></a>Profiles
+## <a name="profiles"></a>配置文件
 
-如果 `MipContext` 是用于存储 SDK 特定的设置的类，则该配置文件是 MIP SDK 中所有 MIP 标记和特定于保护的操作的根类。 使用三个 API 集中的任何一个，客户端应用程序必须创建配置文件。 将来的操作由配置文件或*添加*到配置文件中的其他对象执行。
+如果`MipContext`是用于存储 SDK 特定的设置的类，则该配置文件是 mip SDK 中所有 mip 标记和特定于保护的操作的根类。 使用三个 API 集中的任何一个，客户端应用程序必须创建配置文件。 将来的操作由配置文件或*添加*到配置文件中的其他对象执行。
 
 MIP SDK 中有三种类型的配置文件：
 
-- [`PolicyProfile`](reference/class_mip_policyprofile.md)：MIP 策略 API 的配置文件类。
-- [`ProtectionProfile`](reference/class_mip_protectionprofile.md)：MIP 保护 API 的配置文件类。
-- [`FileProfile`](reference/class_mip_fileprofile.md)：MIP 文件 API 的配置文件类。
+- [`PolicyProfile`](reference/class_mip_policyprofile.md)： MIP 策略 API 的配置文件类。
+- [`ProtectionProfile`](reference/class_mip_protectionprofile.md)： MIP 保护 API 的配置文件类。
+- [`FileProfile`](reference/class_mip_fileprofile.md)： MIP 文件 API 的配置文件类。
 
 使用的应用程序中使用的 API 确定了应使用的配置文件类。
 
 配置文件本身提供以下功能：
 
 - 定义应在内存中加载状态还是将状态保存到磁盘中，如果将状态保存到磁盘，则应对其进行加密。
-- 通过接受 `mip::AuthDelegate` 来处理身份验证。
-- 定义应该用于同意操作的 `mip::ConsentDelegate`。
-- 定义将用于配置文件操作的异步回调的 `mip::FileProfile::Observer` 实现。
+- `mip::ConsentDelegate`定义应该用于同意操作的。
+- 定义将`mip::FileProfile::Observer`用于配置文件操作的异步回调的实现。
 
 ### <a name="profile-settings"></a>配置文件设置
 
-- `MipContext`：已初始化为存储应用程序信息、状态路径等的 `MipContext` 对象。
+- `MipContext`：已`MipContext`初始化为存储应用程序信息、状态路径等的对象。
 - `CacheStorageType`：定义如何存储状态：在内存、磁盘上，或磁盘上的和已加密。
-- `authDelegate`：类 `mip::AuthDelegate` 的共享指针。
 - `consentDelegate`：类[`mip::ConsentDelegate`](reference/class_mip_consentdelegate.md)的共享指针。
-- `observer`：指向配置文件 `Observer` 实现（在[`PolicyProfile`](reference/class_mip_policyprofile_observer.md)、 [`ProtectionProfile`](reference/class_mip_protectionprofile_observer.md)和[`FileProfile`](reference/class_mip_fileprofile_observer.md)中）的共享指针。
-- `applicationInfo`： [`mip::ApplicationInfo`](reference/mip-enums-and-structs.md#structures)对象。 有关使用 SDK 的应用程序的信息，该信息与你的 Azure Active Directory 应用程序注册 ID 和名称匹配。
+- `observer`：指向`Observer`配置文件实现的共享指针（在[`PolicyProfile`](reference/class_mip_policyprofile_observer.md)、 [`ProtectionProfile`](reference/class_mip_protectionprofile_observer.md)和[`FileProfile`](reference/class_mip_fileprofile_observer.md)中）。
+- `applicationInfo`：一个[`mip::ApplicationInfo`](reference/mip-enums-and-structs.md#structures)对象。 有关使用 SDK 的应用程序的信息，该信息与你的 Azure Active Directory 应用程序注册 ID 和名称匹配。
 
 ## <a name="engines"></a>引擎
 
-文件、配置文件和保护 API 引擎为按特定标识执行的操作提供了一个接口。 向登录到应用程序的每个用户或服务主体的配置文件对象添加一个引擎。 可以通过 `mip::ProtectionSettings` 和文件或保护处理程序执行委托操作。 有关更多详细信息，请参阅[FileHandler 概念中的 "保护设置" 部分](concept-handler-file-cpp.md)。
+文件、配置文件和保护 API 引擎为按特定标识执行的操作提供了一个接口。 向登录到应用程序的每个用户或服务主体的配置文件对象添加一个引擎。 可以通过`mip::ProtectionSettings`和文件或保护处理程序执行委托操作。 有关更多详细信息，请参阅[FileHandler 概念中的 "保护设置" 部分](concept-handler-file-cpp.md)。
 
 SDK 中有三个引擎类，每个 API 一个。 以下列表显示了引擎类以及与每个引擎类相关的一些功能：
 
@@ -58,6 +56,8 @@ SDK 中有三个引擎类，每个 API 一个。 以下列表显示了引擎类�
   - `ListSensitivityLabels()`：获取已加载引擎的标签列表。
   - `CreateFileHandler()`：为特定文件或流创建 `mip::FileHandler`。
 
+创建引擎要求传入特定的引擎设置对象，该对象包含要创建的引擎类型的设置。 "设置" 对象允许开发人员指定有关引擎标识符、 `mip::AuthDelegate`实现、区域设置和自定义设置的详细信息，以及其他 API 特定的详细信息。
+
 ### <a name="engine-states"></a>引擎状态
 
 引擎可能具有以下两种状态之一：
@@ -69,22 +69,22 @@ SDK 中有三个引擎类，每个 API 一个。 以下列表显示了引擎类�
 
 下表描述了可能的引擎状态以及哪些方法可以更改该状态：
 
-|         | NONE              | CREATED           | LOADED         |
+|         | 无              | CREATED           | LOADED         |
 |---------|-------------------|-------------------|----------------|
-| NONE    |                   |                   | AddEngineAsync |
+| 无    |                   |                   | AddEngineAsync |
 | CREATED | DeleteEngineAsync |                   | AddEngineAsync |
 | LOADED  | DeleteEngineAsync | UnloadEngineAsync |                |
 
 ### <a name="engine-id"></a>引擎 ID
 
-每个引擎都有一个唯一标识符 `id`，用于所有引擎管理操作。 如果应用程序未提供此应用程序，则该应用程序可以提供 `id`或 SDK 生成一个。 所有其他引擎属性（例如，标识信息中的电子邮件地址）均为 SDK 的不透明有效负载。 SDK 不执行任何逻辑来保持任何其他属性的唯一性或强制执行任何其他约束。
+每个引擎都有一个唯一标识符 `id`，用于所有引擎管理操作。 如果应用程序未提供`id`，则该应用程序可提供，或 SDK 生成一个。 所有其他引擎属性（例如，标识信息中的电子邮件地址）均为 SDK 的不透明有效负载。 SDK 不执行任何逻辑来保持任何其他属性的唯一性或强制执行任何其他约束。
 
 > [!IMPORTANT]
 > 最佳做法是使用用户唯一的引擎 Id，并在每次用户使用 SDK 执行操作时使用该 Id。 如果无法提供现有引擎 Id，将导致额外的服务往返，以获取策略，并将提取可能已为现有引擎缓存的许可证。
 
 ### <a name="engine-management-methods"></a>引擎管理方法
 
-如前所述，SDK 中有三种引擎管理方法： `AddEngineAsync`、`DeleteEngineAsync`和 `UnloadEngineAsync`。
+如前所述，SDK 中有三种引擎管理方法： `AddEngineAsync`、 `DeleteEngineAsync`和。 `UnloadEngineAsync`
 
 #### <a name="addengineasync"></a>AddEngineAsync
 

@@ -1,32 +1,32 @@
 ---
-title: 类 mip：： ClassificationData
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： classificationdata 类。
+title: 类 ClassificationData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 classificationdata：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: d609dbbfc86e58b172e4cd5ee4d532be65ee0a8d
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: 5d3b98f121d4ed73df4d6b5af167f8088805ff91
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77490415"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763555"
 ---
-# <a name="class-mipclassificationdata"></a>类 mip：： ClassificationData 
+# <a name="class-classificationdata"></a>类 ClassificationData 
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std：： string & GetClassificationId （） const  | _尚无记录。_
-public const std：： string & GetRulePackageId （） const  | _尚无记录。_
+public const std：： string& GetClassificationId （） const  | _尚无记录。_
+public const std：： string& GetRulePackageId （） const  | _尚无记录。_
 public int GetMaxCount （） const  | _尚无记录。_
 public int GetMinCount （） const  | _尚无记录。_
 public int GetMinConfidence （） const  | _尚无记录。_
 public int GetMaxConfidence （） const  | _尚无记录。_
 public virtual ~ ClassificationData （）  | _尚无记录。_
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getclassificationid-function"></a>GetClassificationId 函数
 _尚无记录。_

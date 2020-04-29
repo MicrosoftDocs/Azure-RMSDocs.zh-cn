@@ -1,29 +1,29 @@
 ---
-title: 类 mip：： ArgumentData
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： argumentdata 类。
+title: 类 ArgumentData
+description: 记录 Microsoft 信息保护（MIP） SDK 的 argumentdata：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 1090ffaa68e1dbf83a198b2b193a07c9dfa1a58a
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: d7ae47ddb7b955c3940530324a52c8a0ea1e62d2
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77490619"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763633"
 ---
-# <a name="class-mipargumentdata"></a>类 mip：： ArgumentData 
+# <a name="class-argumentdata"></a>类 ArgumentData 
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std：： string & GetValue （） const  | _尚无记录。_
-public const std：： string & GetKey （） const  | _尚无记录。_
-public const std：： vector\<std：： string\>& GetValues （） const  | _尚无记录。_
+public const std：： string& GetValue （） const  | _尚无记录。_
+public const std：： string& GetKey （） const  | _尚无记录。_
+public const std：： vector\<std：： String\>& GetValues （） const  | _尚无记录。_
 public virtual ~ ArgumentData （）  | _尚无记录。_
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getvalue-function"></a>GetValue 函数
 _尚无记录。_

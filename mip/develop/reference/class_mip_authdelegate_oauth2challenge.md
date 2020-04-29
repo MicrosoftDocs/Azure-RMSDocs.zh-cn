@@ -1,31 +1,31 @@
 ---
-title: 类 mip：： AuthDelegate：： OAuth2Challenge
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： authdelegate 类。
+title: 类 AuthDelegate：： OAuth2Challenge
+description: 记录 Microsoft 信息保护（MIP） SDK 的 authdelegate：： oauth2challenge 类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 8e3119e18d465c9ad66dd1cbbece003b96d1a3b7
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: f8a350a8c9ddd68f484a98b0e63860d2965bd890
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489055"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763603"
 ---
-# <a name="class-mipauthdelegateoauth2challenge"></a>类 mip：： AuthDelegate：： OAuth2Challenge 
+# <a name="class-authdelegateoauth2challenge"></a>类 AuthDelegate：： OAuth2Challenge 
 一个类，其中包含调用应用程序所需的所有信息，以便生成 oauth2 标记。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public OAuth2Challenge （const std：： string & 机关，const std：： string & 资源，const std：： string & 范围，const std：： string & 声明）  |  构造一个新的 OAuth2Challenge 对象。
-public const std：： string & GetAuthority （） const  |  获取授权字符串。
-public const std：： string & GetResource （） const  |  获取资源字符串。
-public const std：： string & GetScope （） const  |  获取范围字符串。
-public const std：： string & GetClaims （） const  |  获取声明字符串。
+public OAuth2Challenge （const std：： string& 机关，const std：： string& 资源，const std：： string& 范围，const std：： string& 声明）  |  构造一个新的 OAuth2Challenge 对象。
+public const std：： string& GetAuthority （） const  |  获取授权字符串。
+public const std：： string& GetResource （） const  |  获取资源字符串。
+public const std：： string& GetScope （） const  |  获取范围字符串。
+public const std：： string& GetClaims （） const  |  获取声明字符串。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="oauth2challenge-function"></a>OAuth2Challenge 函数
 构造一个新的 OAuth2Challenge 对象。

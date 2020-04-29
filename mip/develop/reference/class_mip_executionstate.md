@@ -1,39 +1,40 @@
 ---
-title: class mip::ExecutionState
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：： executionstate& 类。
+title: 类 Executionstate&
+description: 记录 Microsoft 信息保护（MIP） SDK 的 executionstate&：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: e0bf26124a7181dd8e6477a303868b51d6275c6e
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: ff22cebbcb4a83015248c8f6990f04dfad4538e0
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77490075"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763296"
 ---
-# <a name="class-mipexecutionstate"></a>class mip::ExecutionState 
+# <a name="class-executionstate"></a>类 Executionstate& 
 执行引擎所需的所有状态的接口。
 客户端应只调用方法来获取所需的状态。 因此，为了提高效率，客户端可能想要实现该接口，以此动态计算相应的状态而不是提前计算。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public std：： shared_ptr\<Label\> GetNewLabel （） const  |  获取应在文档上应用的敏感度标签 ID。
+public std：： shared_ptr\<标签\> GetNewLabel （） const  |  获取应在文档上应用的敏感度标签 ID。
 public std::string GetContentIdentifier() const  |  获取描述文档的内容说明。 文件示例： [path\filename] 电子邮件示例： [Subject： Sender]。
 public virtual DataState GetDataState （） const  |  获取应用程序与之交互时内容的状态。
-公共 std：:p 空中\<bool，std：： string\> IsDowngradeJustified （） const  |  实现应传递是否提供了降级现有标签的合理理由。
+公共 std：:p air\<bool，std：： string\> IsDowngradeJustified （） const  |  实现应传递是否提供了降级现有标签的合理理由。
 public AssignmentMethod GetNewLabelAssignmentMethod() const  |  获取新标签的分配方法。
-公共虚拟 std：： vector\<std：:p air\<std：： string，std：： string\>\> GetNewLabelExtendedProperties （） const  |  返回新标签的扩展属性。
-public std：： vector\<std：:p air\<std：： string，std：： string\>\> GetContentMetadata （const std：： vector\<std：： string\>& 名称，const std：： vector\<std：： string\>& namePrefixes） const  |  从内容中获取元数据项。
+public virtual std：： vector\<std：:p 风\<std：： string、std：： string\> \> GetNewLabelExtendedProperties （） const  |  返回新标签的扩展属性。
+public std：： vector\<MetadataEntry\> GetContentMetadata （const std：： vector\<std：： string\>& 名称，const std：： vector\<std：： string\>& namePrefixes） const  |  从内容中获取元数据项。
 public std：： shared_ptr\<ProtectionDescriptor\> GetProtectionDescriptor （） const  |  获取保护描述符。
 public ContentFormat GetContentFormat() const  |  获取内容格式。
+public 虚拟无符号 int GetContentMetadataVersion （） const  |  获取租户的应用程序支持的最高元数据版本。
 public ActionType GetSupportedActions() const  |  获取描述所有受支持操作类型的掩码枚举。
-public virtual std：： shared_ptr\<ClassificationResults\> GetClassificationResults （const std：： vector\<std：： shared_ptr\<ClassificationRequest\>\> &） const  |  返回分类结果的映射。
-公共虚拟 std：： map\<std：： string，std：： string\> GetAuditMetadata （） const  |  返回应用程序特定的审核键值对的映射。
+public virtual std：： shared_ptr\<ClassificationResults\> GetClassificationResults （const std：： vector\<std：： shared_ptr\<ClassificationRequest\> \> &） const  |  返回分类结果的映射。
+public virtual std：： map\<std：： string，std：： string\> GetAuditMetadata （） const  |  返回应用程序特定的审核键值对的映射。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getnewlabel-function"></a>GetNewLabel 函数
 获取应在文档上应用的敏感度标签 ID。
@@ -68,7 +69,7 @@ public virtual std：： shared_ptr\<ClassificationResults\> GetClassificationRe
   
 **返回结果**：分配方法 STANDARD、PRIVILEGED、AUTO。 
   
-**另请参阅**： [Mip：： AssignmentMethod](mip-enums-and-structs.md#assignmentmethod-enum)
+**** 另请参阅：mip::AssignmentMethod
   
 ### <a name="getnewlabelextendedproperties-function"></a>GetNewLabelExtendedProperties 函数
 返回新标签的扩展属性。
@@ -94,7 +95,13 @@ public virtual std：： shared_ptr\<ClassificationResults\> GetClassificationRe
   
 **返回结果**：DEFAULT、EMAIL 
   
-**另请参阅**： [Mip：： ContentFormat](mip-enums-and-structs.md#contentformat-enum)
+**另请参阅**：mip::ContentFormat
+  
+### <a name="getcontentmetadataversion-function"></a>GetContentMetadataVersion 函数
+获取租户的应用程序支持的最高元数据版本。
+
+  
+**返回**：内容元数据版本。 如果为0，则不对元数据进行版本控制。 如果文件格式支持多个版本的元数据，则可以使用 MIP 来理解所有元数据，并根据每个版本来报告精细的元数据更改。
   
 ### <a name="getsupportedactions-function"></a>GetSupportedActions 函数
 获取描述所有受支持操作类型的掩码枚举。

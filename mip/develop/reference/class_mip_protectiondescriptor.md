@@ -1,23 +1,23 @@
 ---
-title: 类 mip::ProtectionDescriptor
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mip：:p rotectiondescriptor 类。
+title: 类 ProtectionDescriptor
+description: 记录 Microsoft 信息保护（MIP） SDK 的 protectiondescriptor：：未定义的类。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
-ms.date: 02/14/2020
-ms.openlocfilehash: 43871eeae67cd55cc85b06f22c5dd6e76fb91f2f
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.date: 04/16/2020
+ms.openlocfilehash: b4257be5475b1225f79efe00c11df4b79ee67ee9
+ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77487032"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81763941"
 ---
-# <a name="class-mipprotectiondescriptor"></a>类 mip::ProtectionDescriptor 
+# <a name="class-protectiondescriptor"></a>类 ProtectionDescriptor 
 与某段内容相关的保护说明。
   
-## <a name="summary"></a>摘要
- Members                        | 说明                                
+## <a name="summary"></a>“摘要”
+ 成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public ProtectionType GetProtectionType() const  |  获取保护类型，无论是否源自保护 SDK 模板。
 public std::string GetOwner() const  |  获取保护的所有者。
@@ -34,8 +34,9 @@ public bool DoesAllowOfflineAccess() const  |  获取保护是否允许脱机访
 public std::string GetReferrer() const  |  获取保护引荐来源网址。
 public std：： map\<std：： string，std：： string\> GetEncryptedAppData （） const  |  获取已加密的应用特定数据。
 public std：： map\<std：： string，std：： string\> GetSignedAppData （） const  |  获取已签名的应用特定数据。
+public std：： string GetDoubleKeyUrl （） const  |  获取要用于自定义保护的双键 url。
   
-## <a name="members"></a>Members
+## <a name="members"></a>成员
   
 ### <a name="getprotectiontype-function"></a>GetProtectionType 函数
 获取保护类型，无论是否源自保护 SDK 模板。
@@ -65,7 +66,7 @@ public std：： map\<std：： string，std：： string\> GetSignedAppData （
 获取保护模板 ID（若有）。
 
   
-**返回结果**：模板 ID
+**返回**：模板 ID
   
 ### <a name="getlabelid-function"></a>GetLabelId 函数
 获取标签 ID（若有）。
@@ -83,7 +84,7 @@ public std：： map\<std：： string，std：： string\> GetSignedAppData （
 获取用户到权限映射的集合。
 
   
-**返回**：用户到权限映射的集合如果当前用户无权访问此信息（即，如果用户不是所有者并且没有 VIEWRIGHTSDATA 权限），则 UserRights 属性的值将为空。
+**返回结果**：用户到权限映射的集合。如果当前用户无权访问此信息（即，如果用户不是所有者并且没有 VIEWRIGHTSDATA 权限），则 [UserRights](class_mip_userrights.md) 属性值为空。
   
 ### <a name="getuserroles-function"></a>GetUserRoles 函数
 获取用户到角色映射的集合。
@@ -119,10 +120,16 @@ public std：： map\<std：： string，std：： string\> GetSignedAppData （
 获取已加密的应用特定数据。
 
   
-**返回**：特定于应用的数据 ProtectionHandler 可以包含由保护服务加密的应用特定数据的字典。 此加密数据独立于可通过 ProtectionDescriptor：： GetSignedAppData 访问的签名数据
+**返回结果**：应用特定数据。ProtectionHandler 可能包含已由保护服务加密的应用特定数据的字典。 此加密数据独立于可通过 ProtectionDescriptor：： GetSignedAppData 访问的签名数据。
   
 ### <a name="getsignedappdata-function"></a>GetSignedAppData 函数
 获取已签名的应用特定数据。
 
   
-**返回**：特定于应用的数据 ProtectionHandler 可以包含由保护服务签署的应用特定数据的字典。 此签名数据独立于可通过 ProtectionDescriptor：： GetEncryptedAppData 访问的加密数据
+**返回结果**：应用特定数据。ProtectionHandler 可能包含已由保护服务签名的应用特定数据的字典。 此签名数据独立于可通过 ProtectionDescriptor：： GetEncryptedAppData 访问的加密数据。
+  
+### <a name="getdoublekeyurl-function"></a>GetDoubleKeyUrl 函数
+获取要用于自定义保护的双键 url。
+
+  
+**返回**：双键 url 在自定义请求中使用的双键 url，用第二个密钥保护信息
