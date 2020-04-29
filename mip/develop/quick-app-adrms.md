@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 04/17/2019
 ms.author: tommos
-ms.openlocfilehash: 32e2cc1cb3924c5a4181bd4cafaaf3f53f085c00
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.openlocfilehash: eafcf65b9478cc8a2d2c104c3e98194c40e9c941
+ms.sourcegitcommit: 80d7c1a1afb3e54fac434f10a7dca4f8076384a8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81764214"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255610"
 ---
 # <a name="quickstart-active-directory-rights-management-server-ad-rms-protection"></a>快速入门：Active Directory 权限管理服务器 (AD RMS) 保护
 
@@ -26,12 +26,12 @@ ms.locfileid: "81764214"
 
 - 首先完成[快速入门：客户端应用程序初始化 (C++)](quick-app-initialization-cpp.md)，生成 Visual Studio 初学者解决方案。
 - 首先完成[快速入门：列出敏感度标签 (C++)](quick-file-list-labels-cpp.md) 或[快速入门：列出敏感度标签 (C#)](quick-file-list-labels-csharp.md)
-- 使用[移动设备扩展](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574(v=ws.11))部署 AD RMS。
-- （可选）确保[用于 AD RMS MDE 的 DNS SRV 记录](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn673574(v%3dws.11)#specifying-the-dns-srv-records-for-the-ad-rms-mobile-device-extension)已发布。
+- 使用[移动设备扩展](https://docs.microsoft.com/en-us/azure/information-protection/active-directory-rights-manage-mobile-device)部署 AD RMS。
+- （可选）确保[用于 AD RMS MDE 的 DNS SRV 记录](https://docs.microsoft.com/en-us/azure/information-protection/active-directory-rights-manage-mobile-device#specifying-the-dns-srv-records-for-the-ad-rms-mobile-device-extension)已发布。
 
 ## <a name="service-discovery"></a>服务发现
 
-SDK 使用 UPN 或邮件地址后缀，根据通过 `FileEngineSettings` 或 `ProtectionEngineSettings` 提供的 `mip::Identity` 来执行服务发现。 它首先会在域层次结构中搜索用于 MDE 的 _rmsdisco  记录。 如需了解此过程的更多详情，请审阅[为 AD RMS 移动设备扩展指定 DNS SRV 记录](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn673574(v%3dws.11)#specifying-the-dns-srv-records-for-the-ad-rms-mobile-device-extension)。 如果找不到相应 DNS SRV 记录，它会默认使用 Azure 信息保护服务作为服务位置。
+SDK 使用 UPN 或邮件地址后缀，根据通过 `FileEngineSettings` 或 `ProtectionEngineSettings` 提供的 `mip::Identity` 来执行服务发现。 它首先会在域层次结构中搜索用于 MDE 的 _rmsdisco  记录。 如需了解此过程的更多详情，请审阅[为 AD RMS 移动设备扩展指定 DNS SRV 记录](https://docs.microsoft.com/en-us/azure/information-protection/active-directory-rights-manage-mobile-device#specifying-the-dns-srv-records-for-the-ad-rms-mobile-device-extension)。 如果找不到相应 DNS SRV 记录，它会默认使用 Azure 信息保护服务作为服务位置。
 
 如果标识不可用，或用于 MDE 的 DNS SRV 记录尚未发布，可以通过显式设置[云终结点 URL](https://docs.microsoft.com/information-protection/develop/reference/class_mip_fileengine_settings#setpolicycloudendpointbaseurl-function) 来覆盖服务发现过程。
 
