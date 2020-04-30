@@ -4,8 +4,12 @@
   items:
     - name: 什么是 Azure 信息保护？
       href: what-is-information-protection.md
-    - name: 比较 Azure 信息保护与 AD RMS
-      href: compare-on-premise.md
+    - name: Azure 信息保护和 AD RMS
+      items:
+        - name: 比较本地解决方案和 AD RMS
+          href: compare-on-premise.md
+        - name: 管理 Active Directory 移动设备扩展
+          href: active-directory-rights-manage-mobile-device.md
     - name: 要求
       items:
         - name: 概述
@@ -299,7 +303,7 @@
               href: ./rms-client/protected-pdf-readers.md
             - name: Windows
               href: ./rms-client/protected-pdf-readers-windows.md
-            - name: MacOS
+            - name: macOS
               href: ./rms-client/protected-pdf-readers-mac.md
             - name: iOS
               href: ./rms-client/protected-pdf-readers-ios.md
