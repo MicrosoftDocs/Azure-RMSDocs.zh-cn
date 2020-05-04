@@ -4,7 +4,7 @@ description: 确定为组织部署 Azure 信息保护的必备条件。
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/12/2020
+ms.date: 05/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,24 +13,24 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e639a94bde4daf481fc0a715492edeb702ba2ddd
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: b7cc3bff14c5e16ca43fe8f204609e67b531e566
+ms.sourcegitcommit: 4c45794665891ba88fdb6a61b1bcd886035c13d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79403954"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "82736773"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure 信息保护的要求
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 为组织部署 Azure 信息保护之前，请确保具备以下必备条件。 
 
 ## <a name="subscription-for-azure-information-protection"></a>Azure 信息保护订阅
 
-**使用 Azure 信息保护客户端（经典或统一标签）或扫描程序进行分类、标记和保护**：必须拥有一个 [Azure 信息保护计划](https://azure.microsoft.com/pricing/details/information-protection/)。 
+**使用 Azure 信息保护客户端（经典或统一标签）或扫描程序进行分类、标记和保护**：必须具有[azure 信息保护计划](https://azure.microsoft.com/pricing/details/information-protection/)。 
 
-**对于仅保护**：必须拥有一个[包括 Azure 信息保护的 Office 365 计划](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
+**若仅需保护**，必须拥有[包括 Azure 信息保护的 Office 365计划](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。
 
 若要确认组织的订阅包括所需的 Azure 信息保护功能，请查看 [Azure 信息保护定价](https://azure.microsoft.com/pricing/details/information-protection)页面中的功能列表。
 
@@ -95,9 +95,9 @@ Azure 信息保护支持单一登录 (SSO)，这样就不会反复提示用户�
 
 Azure 信息保护客户端具有各自的管理指南中列出的其他先决条件：
 
-- Azure 信息保护统一标签客户端：[필수 구성 요소](./rms-client/clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)
+- Azure 信息保护统一标签客户端：[先决条件](./rms-client/clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)
 
-- Azure 信息保护客户端：[필수 구성 요소](./rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client)
+- Azure 信息保护客户端：[先决条件](./rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client)
 
 ## <a name="applications"></a>应用程序
 
@@ -127,15 +127,15 @@ Office 的其他版本无法通过使用 Rights Management 服务保护文档和
 
 ## <a name="firewalls-and-network-infrastructure"></a>防火墙和网络基础结构
 
-如果你有防火墙或配置为允许特定连接的类似中间网络设备，网络连接要求包含在 Office 文章 [Office 365 URL 和 IP 地址范围](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)中。 请参阅“Microsoft 365 Common 和 Office Online”部分。
+如果你有防火墙或配置为允许特定连接的类似中间网络设备，网络连接要求包含在 Office 文章 [Office 365 URL 和 IP 地址范围](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)中。 请参阅“Microsoft 365 Common 和 Office Online”**** 部分。
 
-除了 Office 文章中特定于 Azure 信息保护的信息外：
+除了参考 Office 文章中特定于 Azure 信息保护的信息，还请遵循以下要求：
 
-- 对于用于下载标签和标签策略的统一标签客户端：允许通过 HTTPS 的 URL * **. protection.outlook.com** 。
+- 对于用于下载标签和标签策略的统一标签客户端：允许通过 HTTPS 的 URL ***. protection.outlook.com** 。
 
-- 如果使用要求进行身份验证的 Web 代理，必须将其配置为将集成 Windows 身份验证与用户的 Active Directory 登录凭据配合使用。
+- 如果使用需要身份验证的 Web 代理，则必须对其进行配置，以便将集成的 Windows 身份验证与用户的 Active Directory 登录凭据配合使用。
 
-- 不要终止与 aadrm.com URL 的 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 这样做会中断 RMS 客户端用于 Microsoft 托管 CA 的证书固定，之所以使用固定是为了帮助保护它们与 Azure Rights Management 服务的通信安全。
+- 不要终止与 aadrm.com**** URL 的 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 那样做会打破 RMS 客户端用于 Microsoft 托管 CA 的证书固定，导致无法确保其与 Azure Rights Management 服务的通信安全。
     
     您可以使用以下 PowerShell 命令来帮助您确定客户端连接在到达 Azure Rights Management 服务之前是否终止：
    
@@ -159,11 +159,13 @@ Office 的其他版本无法通过使用 Rights Management 服务保护文档和
 
 ### <a name="coexistence-of-ad-rms-with-azure-rms"></a>AD RMS 和 Azure RMS 共存
 
-不支持以下部署方案，除非将 AD RMS for [HYOK 保护](configure-adrms-restrictions.md)与 Azure 信息保护配合使用（“自留密钥”配置）：
+在以下方案中使用 AD RMS 和 Azure RMS**仅**AD RMS 支持通过 Azure 信息保护将[HYOK 保护](configure-adrms-restrictions.md)（"保留自己的密钥" 配置）用于保护同一组织中的同一用户的内容。
 
 - 在同一个组织中并行运行 AD RMS 和 Azure RMS（在迁移过程中的情形除外），如[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)所述。
 
-支持[从 AD RMS 到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)和[从 Azure 信息保护到 AD RMS](/powershell/module/aipservice/Set-AipServiceMigrationUrl) 的迁移路径。 如果你部署 Azure 信息保护，然后决定不再想要使用此云服务，请参阅[解除 Azure 信息保护授权和停用 Azure 信息保护](decommission-deactivate.md)。
+支持[从 AD RMS 到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)和[从 Azure 信息保护到 AD RMS](/powershell/module/aipservice/Set-AipServiceMigrationUrl) 的迁移路径。 如果你部署 Azure 信息保护，然后决定不再想要使用此云服务，请参阅[解除 Azure 信息保护授权和停用 Azure 信息保护](decommission-deactivate.md)。 
+
+对于其他方案，如果这两个服务在同一组织中处于活动状态，则必须配置服务，以便其中的任何给定用户都可以保护内容。 如果[AD RMS Azure RMS 迁移](migrate-from-ad-rms-to-azure-rms.md)，则可以使用重定向进行配置，或者，在这种情况下，对于不同用户，这两项服务必须同时处于活动状态，方法是使用服务端配置来强制独占性： Azure RMS 云服务中的载入控件，以及发布 URL 上的 ACL，以设置 AD RMS 的只读模式。   
 
 ### <a name="service-tags"></a>服务标记
 

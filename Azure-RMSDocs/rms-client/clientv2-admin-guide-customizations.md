@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/23/2020
+ms.date: 04/05/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d28386d43df47ff0aaacf039d6649e622077b6ed
-ms.sourcegitcommit: f7053f57363d50f236e16732b4be09744e00d29d
+ms.openlocfilehash: 760a4eddf40f344a47d335192e15d73d0d70dbaf
+ms.sourcegitcommit: 4c45794665891ba88fdb6a61b1bcd886035c13d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80138308"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "82736756"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -28,16 +28,16 @@ ms.locfileid: "80138308"
 
 在管理 Azure 信息保护统一标签客户端时，请使用以下信息来了解特定方案或用户子集可能需要的高级配置。
 
-这些设置需要编辑注册表或指定高级设置。 高级设置使用[Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps)。
+这些设置需要编辑注册表或指定高级设置。 高级设置使用[Office 365 Security & 相容性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps)。
 
-### <a name="how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell"></a>如何使用 Office 365 安全与合规中心 PowerShell 配置客户端的高级设置
+### <a name="how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell"></a>如何使用 Office 365 Security & 相容性中心 PowerShell 配置客户端的高级设置
 
-使用 Office 365 安全与合规中心 PowerShell 时，可以配置支持标签策略和标签自定义的高级设置。 例如：
+使用 Office 365 Security & 相容性中心 PowerShell 时，可以配置支持标签策略和标签自定义的高级设置。 例如：
 
 - 在 Office 应用中显示信息保护栏的设置是 "***标签策略" 高级设置***。
 - 用于指定标签颜色的设置是 "***标签高级" 设置***。
 
-在这两种情况下，在[连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)后，请使用策略或标签的标识（名称或 GUID）指定*AdvancedSettings*参数，并在[哈希表](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_hash_tables)中指定键/值对。 使用以下语法：
+在这两种情况下，在[连接到 Office 365 Security & 相容性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)后，请使用策略或标签的标识（名称或 GUID）指定*AdvancedSettings*参数，并在[哈希表](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_hash_tables)中指定键/值对。 使用以下语法：
 
 对于 "标签" 策略设置，单个字符串值：
 
@@ -86,11 +86,11 @@ ms.locfileid: "80138308"
 
 - **显示名称**是用户看到的标签名称，并且在所有标签中不必唯一。 例如，用户会看到一个**员工**子标签了 "**机密**" 标签，而另一个**员工子标签 "** **高度机密**" 标签。 这些子标签都显示相同的名称，但不是相同的标签，并且具有不同的设置。
 
-若要配置标签高级设置，请使用 "**名称**" 值。 例如，若要标识下图中的标签，需指定 `-Identity "All Company"`：
+若要配置标签高级设置，请使用 "**名称**" 值。 例如，若要标识下图中的标签，请指定`-Identity "All Company"`：
 
 ![使用 "Name" 而不是 "Display Name" 标识敏感度标签](../media/labelname_scc.png)
 
-如果希望指定标签 GUID，此值不会显示在管理标签的管理中心。 但是，可以使用以下 Office 365 安全与合规中心 PowerShell 命令查找此值：
+如果希望指定标签 GUID，此值不会显示在管理标签的管理中心。 不过，你可以使用以下 Office 365 Security & 相容性中心 PowerShell 命令来查找此值：
 
     Get-Label | Format-Table -Property DisplayName, Name, Guid
 
@@ -118,8 +118,9 @@ ms.locfileid: "80138308"
 
 将*AdvancedSettings*参数与[LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-labelpolicy?view=exchange-ps)和[LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-labelpolicy?view=exchange-ps)一起使用。
 
-|Setting|应用场景和说明|
+|设置|应用场景和说明|
 |----------------|---------------|
+|AdditionalPPrefixExtensions|[支持更改\<EXT>。使用此高级\<属性 .Pfile 到 P EXT>](#additionalpprefixextensions)
 |AttachmentAction|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 |AttachmentActionTip|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments) 
 |DisableMandatoryInOutlook|[使 Outlook 邮件免于强制标记](#exempt-outlook-messages-from-mandatory-labeling)
@@ -129,7 +130,7 @@ ms.locfileid: "80138308"
 |EnableCustomPermissionsForCustomProtectedFiles|[对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) |
 |EnableLabelByMailHeader|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |EnableLabelBySharePointProperties|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)
-|HideBarByDefault|[在 Office 应用程序中显示“信息保护”栏](#display-the-information-protection-bar-in-office-apps)|
+|HideBarByDefault|[在 Office 应用中显示“信息保护”栏](#display-the-information-protection-bar-in-office-apps)|
 |LogMatchedContent|[向 Azure 信息保护分析发送信息类型匹配项](#send-information-type-matches-to-azure-information-protection-analytics)|
 |OutlookBlockTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookBlockUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
@@ -157,9 +158,9 @@ ms.locfileid: "80138308"
 
 使用带有[新标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-label?view=exchange-ps)和[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)的*AdvancedSettings*参数。
 
-|Setting|应用场景和说明|
+|设置|应用场景和说明|
 |----------------|---------------|
-|颜色|[指定标签的颜色](#specify-a-color-for-the-label)|
+|color|[指定标签的颜色](#specify-a-color-for-the-label)|
 |customPropertiesByLabel|[应用标签时应用自定义属性](#apply-a-custom-property-when-a-label-is-applied)|
 |DefaultSubLabelId|[为父标签指定默认子标签](#specify-a-default-sublabel-for-a-parent-label) 
 |labelByCustomProperties|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
@@ -172,7 +173,7 @@ ms.locfileid: "80138308"
 
 ## <a name="display-the-information-protection-bar-in-office-apps"></a>在 Office 应用中显示“信息保护”栏
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 默认情况下，用户必须选择 "**敏感度**" 按钮中的 "**显示栏**" 选项，以在 Office 应用中显示信息保护栏。 使用**HideBarByDefault**键，并将值设置为**False** ，以便为用户自动显示此栏，以便他们可以从栏或按钮中选择标签。 
 
@@ -180,7 +181,7 @@ ms.locfileid: "80138308"
 
 - 密钥： **HideBarByDefault**
 
-- 值：False
+- 值：False****
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -188,7 +189,7 @@ ms.locfileid: "80138308"
 
 ## <a name="exempt-outlook-messages-from-mandatory-labeling"></a>使 Outlook 邮件免于强制标记
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 默认情况下，当你启用 "**所有文档和电子邮件**的标签策略" 设置时，必须具有标签，所有已保存的文档和已发送的电子邮件都必须应用标签。 配置以下高级设置时，策略设置仅适用于 Office 文档，而不适用于 Outlook 邮件。
 
@@ -196,7 +197,7 @@ ms.locfileid: "80138308"
 
 - 密钥： **DisableMandatoryInOutlook**
 
-- 值：True
+- 值： **True**
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -204,15 +205,15 @@ ms.locfileid: "80138308"
 
 ## <a name="enable-recommended-classification-in-outlook"></a>在 Outlook 中启用建议的分类
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 为建议的分类配置标签时，系统将提示用户接受或关闭 Word、Excel 和 PowerPoint 中建议的标签。 此设置将此标签建议扩展到也在 Outlook 中显示。
 
 对于所选的标签策略，请指定以下字符串：
 
-- 键：OutlookRecommendationEnabled
+- 键：OutlookRecommendationEnabled****
 
-- 值：True
+- 值： **True**
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -220,13 +221,13 @@ ms.locfileid: "80138308"
 
 ## <a name="enable-removal-of-protection-from-compressed-files"></a>启用从压缩文件中删除保护
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 配置此设置时，将启用[PowerShell](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-powershell) cmdlet **set-aipfilelabel** ，以允许从 PST、RAR、7zip 和 MSG 文件中删除保护。
 
 - 密钥： **LabelPolicy**
 
-- 值：True
+- 值： **True**
 
 启用策略的示例 PowerShell 命令：
 
@@ -234,15 +235,15 @@ ms.locfileid: "80138308"
 
 ## <a name="set-a-different-default-label-for-outlook"></a>为 Outlook 设置不同的默认标签
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 当你配置此设置时，Outlook 不会应用默认标签，该标签配置为 "**默认情况下将此标签应用于文档和电子邮件**" 选项。 相反，Outlook 可应用不同的默认标签，也可不应用标签。
 
 对于所选的标签策略，请指定以下字符串：
 
-- 键：OutlookDefaultLabel
+- 键：OutlookDefaultLabel****
 
-- 值： \<**标签 GUID**> 或**无**
+- 值： \< **label GUID**> 或**None**
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -250,22 +251,24 @@ ms.locfileid: "80138308"
 
 ## <a name="change-which-file-types-to-protect"></a>更改要保护的文件类型
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+这些配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 默认情况下，Azure 信息保护的统一标签客户端将保护所有文件类型，并且来自客户端的扫描程序仅保护 Office 文件类型和 PDF 文件。
 
-可以通过指定以下内容来更改所选标签策略的此默认行为：
+您可以通过指定下列选项之一来更改所选标签策略的此默认行为：
+
+### <a name="pfilesupportedextension"></a>PFileSupportedExtension
 
 - 密钥： **PFileSupportedExtensions**
 
-- 值： **<string value>** 
+- 值： ** \<字符串值>** 
 
 使用下表来确定要指定的字符串值：
 
-| 字符串值| 客户端| Scanner|
+| 字符串值| 客户端| 扫描仪|
 |-------------|-------|--------|
 |\*|默认值：将保护应用于所有文件类型|将保护应用于所有文件类型|
-|\<null 值 >| 将保护应用于 Office 文件类型和 PDF 文件| 默认值：将保护应用于 Office 文件类型和 PDF 文件|
+|\<null 值>| 将保护应用于 Office 文件类型和 PDF 文件| 默认值：将保护应用于 Office 文件类型和 PDF 文件|
 |Convertto-html-Json （".jpg"，".png"）|除了 Office 文件类型和 PDF 文件，还会将保护应用到指定的文件扩展名 | 除了 Office 文件类型和 PDF 文件，还会将保护应用到指定的文件扩展名
 
 示例1：用于统一客户端的 PowerShell 命令仅保护 Office 文件类型和 PDF 文件，其中标签策略命名为 "客户端"：
@@ -282,19 +285,56 @@ ms.locfileid: "80138308"
 
 利用此设置，你可以更改受保护的文件类型，但不能将默认保护级别从本机更改为通用。 例如，对于运行统一标签客户端的用户，你可以更改默认设置，以便仅保护 Office 文件和 PDF 文件而不是所有文件类型。 但不能将这些文件类型更改为使用 .pfile 文件扩展名进行常规保护。
 
+### <a name="additionalpprefixextensions"></a>AdditionalPPrefixExtensions
+
+统一标签客户端支持更改\<EXT>。.PFILE to P\<EXT> 通过使用 Advanced 属性**AdditionalPPrefixExtensions**。 右键单击、PowerShell 和扫描程序支持此高级属性。 所有应用都有类似的行为。   
+
+- 密钥： **AdditionalPPrefixExtensions**
+
+- 值： ** \<字符串值>** 
+
+使用下表来确定要指定的字符串值：
+
+| 字符串值| 客户端和扫描程序|
+|-------------|---------------|
+|\*|所有 .Pfile 扩展将变为\<P EXT>|
+|\<null 值>| 默认值的行为类似于默认的保护值。|
+|Convertto-html-Json （"dwg"，".zip"）|除了前面的列表，"dwg" 和 ".zip" 将变为 P\<EXT>| 
+
+示例1： PowerShell 命令的行为类似于默认行为，即保护 "dwg" 变为 ".pfile"：
+
+    Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions =""}
+
+示例2： PowerShell 命令：在文件受到保护时，将通用保护（.pfile）中的所有 .Pfile 扩展更改为本机保护（. pdwg）：
+
+    Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions ="*"}
+
+示例3：使用此服务时将 "dwg" 更改为 "pdwg" 的 PowerShell 命令将保护此文件：
+
+    Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions =ConvertTo-Json(".dwg")}
+
+对于此设置，以下扩展（". txt"，".xml"，".bmp"，". jt"，".jpg"，"jpeg"，". jpe"，". jif"，"jfif"，"."，".png"，".tif"，". tiff"，".gif"）始终变为 P\<EXT>。 值得注意的是，".ptxt" 不是 ".pfile"。 
+仅当启用了高级属性- [**PFileSupportedExtension**](#pfilesupportedextension)的 pfile 保护时， **AdditionalPPrefixExtensions**才有效。 
+
+例如，在使用以下命令时：
+
+    Set-LabelPolicy -AdvancedSettings @{PFileSupportedExtensions=""}
+
+不能 .Pfile 保护，而**AdditionalPPrefixExtensions**中的值将被忽略。 
+
 ## <a name="remove-not-now-for-documents-when-you-use-mandatory-labeling"></a>使用强制标签时，删除文档的“以后再说”
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
-使用 "**所有文档和电子邮件**的标签策略" 设置必须具有标签时，用户首次保存 Office 文档和发送电子邮件时，系统将提示用户选择标签。 对于文档，用户可以选择“以后再说”暂时关闭提示以选择标签，并返回到文档。 但是不能在未选择标签的情况下关闭已保存的文档。 
+使用 "**所有文档和电子邮件**的标签策略" 设置必须具有标签时，用户首次保存 Office 文档和发送电子邮件时，系统将提示用户选择标签。 对于文档，用户可以选择“以后再说”**** 暂时关闭提示以选择标签，并返回到文档。 但是不能在未选择标签的情况下关闭已保存的文档。 
 
-在配置此设置时，将删除“以后再说”选项，以便首次保存文档时用户必须选择一个标签。
+在配置此设置时，将删除“以后再说”**** 选项，以便首次保存文档时用户必须选择一个标签。
 
 对于所选的标签策略，请指定以下字符串：
 
-- 键：PostponeMandatoryBeforeSave
+- 键：PostponeMandatoryBeforeSave****
 
-- 值：False
+- 值：False****
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -307,15 +347,15 @@ ms.locfileid: "80138308"
 
 ## <a name="disable-custom-permissions-in-file-explorer"></a>在文件资源管理器中禁用自定义权限
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 默认情况下，当用户在文件资源管理器中右键单击并选择 "**分类和保护**" 时，会看到名为 "**使用自定义权限保护**" 的选项。 使用此选项可以设置自己的保护设置，这些设置可以替代标签配置中可能包含的任何保护设置。 用户还能看到一个用于删除保护的选项。 当你配置此设置时，用户看不到这些选项。
 
 若要配置此高级设置，请为所选标签策略输入以下字符串：
 
-- 键：EnableCustomPermissions
+- 键：EnableCustomPermissions****
 
-- 值：False
+- 值：False****
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -323,7 +363,7 @@ ms.locfileid: "80138308"
 
 ## <a name="for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer"></a>对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 当你将高级客户端设置配置为[在文件资源管理器中禁用自定义权限](#disable-custom-permissions-in-file-explorer)时，默认情况下，用户将无法查看或更改已在受保护文档中设置的自定义权限。
 
@@ -333,7 +373,7 @@ ms.locfileid: "80138308"
 
 - 密钥： **EnableCustomPermissionsForCustomProtectedFiles**
 
-- 值：True
+- 值： **True**
 
 示例 PowerShell 命令：
 
@@ -342,7 +382,7 @@ ms.locfileid: "80138308"
 
 ## <a name="for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments"></a>对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 此设置适用于用户将带标签的文档附加到电子邮件，且未标记电子邮件本身。 在这种情况下，将根据应用于附件的分类标签为其自动选择标签。 最大分类标签处于选中状态。
 
@@ -363,7 +403,7 @@ ms.locfileid: "80138308"
 
 - 密钥2： **AttachmentActionTip**
 
-- 键值2： "\<自定义工具提示 >"
+- 键值2： "\<自定义工具提示>"
 
 自定义工具提示仅支持一种语言。
 
@@ -373,15 +413,15 @@ ms.locfileid: "80138308"
 
 ## <a name="add-report-an-issue-for-users"></a>为用户添加“报告问题”
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
-当指定以下高级客户端设置时，用户将看到一个“报告问题”选项，他们可以从“帮助和反馈”客户端对话框中选择该选项。 为链接指定 HTTP 字符串。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 
+当指定以下高级客户端设置时，用户将看到一个“报告问题”选项，他们可以从“帮助和反馈”客户端对话框中选择该选项********。 为链接指定 HTTP 字符串。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 
 
 若要配置此高级设置，请为所选标签策略输入以下字符串：
 
-- 密钥：ReportAnIssueLink
+- 密钥：ReportAnIssueLink****
 
-- 值：**HTTP string>\<**
+- 值： ** \<HTTP 字符串>**
 
 网站示例值：`https://support.contoso.com`
 
@@ -393,7 +433,7 @@ ms.locfileid: "80138308"
 
 ## <a name="implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent"></a>在 Outlook 中实施弹出消息，警告、证明或阻止发送电子邮件
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 当创建并配置以下高级客户端设置时，用户可以在 Outlook 中看到弹出消息，这些消息可以在发送电子邮件之前警告他们，或者要求他们提供发送电子邮件的理由，或者在存在以下任何一种情况时阻止他们发送电子邮件：
 
@@ -420,26 +460,26 @@ ms.locfileid: "80138308"
 
 对于所选策略，请创建以下一个或多个具有以下键的高级设置。 对于值，按其 Guid 指定一个或多个标签，每个标签用逗号分隔。
 
-以逗号分隔的字符串形式提供的多个标签 Guid 的示例值： `dcf781ba-727f-4860-b3c1-73479e31912b,1ace2cc3-14bc-4142-9125-bf946a70542c,3e9df74d-3168-48af-8b11-037e3021813f`
+以逗号分隔的字符串形式提供的多个标签 Guid 的示例值：`dcf781ba-727f-4860-b3c1-73479e31912b,1ace2cc3-14bc-4142-9125-bf946a70542c,3e9df74d-3168-48af-8b11-037e3021813f`
 
 
 - 警告消息：
     
     - 密钥： **OutlookWarnUntrustedCollaborationLabel**
     
-    - 值：**以逗号分隔的 \<标签 guid**>
+    - 值： \<**标记 guid，用逗号分隔**>
 
 - 对齐消息：
     
     - 密钥： **OutlookJustifyUntrustedCollaborationLabel**
     
-    - 值：**以逗号分隔的 \<标签 guid**>
+    - 值： \<**标记 guid，用逗号分隔**>
 
 - 阻止邮件：
     
     - 密钥： **OutlookBlockUntrustedCollaborationLabel**
     
-    - 值：**以逗号分隔的 \<标签 guid**>
+    - 值： \<**标记 guid，用逗号分隔**>
 
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
@@ -464,21 +504,21 @@ ms.locfileid: "80138308"
     
     - 密钥： **OutlookWarnTrustedDomains**
     
-    - 值：**域名，以逗号分隔\<** **>**
+    - 值： **\<** 域名，用逗号分隔**>**
 
 - 对齐消息：
     
     - 密钥： **OutlookJustifyTrustedDomains**
     
-    - 值：**域名，以逗号分隔\<** **>**
+    - 值： **\<** 域名，用逗号分隔**>**
 
 - 阻止邮件：
     
     - 密钥： **OutlookBlockTrustedDomains**
     
-    - 值：**域名，以逗号分隔\<** **>**
+    - 值： **\<** 域名，用逗号分隔**>**
 
-例如，你为 "**机密 \ 所有员工**" 标签指定了**OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定**OutlookJustifyTrustedDomains**和**contoso.com**的其他高级客户端设置。 因此，当用户标记为 "**机密 \ 所有员工**" 时，用户可以将电子邮件发送到 john@sales.contoso.com，但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
+例如，你为 "**机密 \ 所有员工**" 标签指定了**OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定**OutlookJustifyTrustedDomains**和**contoso.com**的其他高级客户端设置。 因此，用户可以john@sales.contoso.com在将其标记为 "**机密 \ 所有员工**" 时向其发送电子邮件，但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -524,7 +564,7 @@ ms.locfileid: "80138308"
 
 默认情况下，"警告"、"对齐" 或 "阻止" 弹出消息适用于所有 Office 文档和 PDF 文档。 可以通过以下方式优化此列表：指定哪些文件扩展名应显示警告、调整或阻止具有其他高级设置的消息，以及以逗号分隔的文件扩展名列表。
 
-要定义为逗号分隔字符串的多个文件扩展名的示例值： `.XLSX,.XLSM,.XLS,.XLTX,.XLTM,.DOCX,.DOCM,.DOC,.DOCX,.DOCM,.PPTX,.PPTM,.PPT,.PPTX,.PPTM`
+要定义为逗号分隔字符串的多个文件扩展名的示例值：`.XLSX,.XLSM,.XLS,.XLTX,.XLTM,.DOCX,.DOCM,.DOC,.DOCX,.DOCM,.PPTX,.PPTM,.PPT,.PPTX,.PPTM`
 
 在此示例中，未标记的 PDF 文档不会导致警告、对齐或阻止弹出消息。
 
@@ -533,7 +573,7 @@ ms.locfileid: "80138308"
 
 - 密钥： **OutlookOverrideUnlabeledCollaborationExtensions**
 
-- 值：显示消息 **\<** 文件扩展名，以逗号分隔 **>**
+- 值： **\<** 用于显示消息的文件扩展名，以逗号分隔**>**
 
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
@@ -578,7 +618,7 @@ ms.locfileid: "80138308"
 
 ## <a name="disable-sending-audit-data-to-azure-information-protection-analytics"></a>禁止向 Azure 信息保护分析发送审核数据
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 Azure 信息保护统一标签客户端支持中心报表，并在默认情况下将其审核数据发送到[Azure 信息保护分析](../reports-aip.md)。 有关所发送和存储的信息的详细信息，请参阅中央报表文档中的[收集和发送到 Microsoft](../reports-aip.md#information-collected-and-sent-to-microsoft)部分的信息。
 
@@ -586,7 +626,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥： **EnableAudit**
 
-- 值：False
+- 值：False****
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -595,7 +635,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 ## <a name="disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics"></a>禁止将文档中发现的敏感信息发送到 Azure 信息保护分析
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 在 Office 应用中使用 Azure 信息保护统一标签客户端时，它会在首次保存文档时查找文档中的敏感信息。 **如果**提供[EnableAudit](#disable-sending-audit-data-to-azure-information-protection-analytics) advanced 设置，则不会将任何预定义和自定义的敏感信息类型都发送到[Azure 信息保护分析](../reports-aip.md)。
 
@@ -603,7 +643,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥： **RunAuditInformationTypesDiscovery**
 
-- 值：False
+- 值：False****
 
 如果设置了此 "高级客户端" 设置，则仍然可以从客户端发送审核信息，但当用户访问标记内容时，该信息将被限制为报表。
 
@@ -621,7 +661,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 ## <a name="send-information-type-matches-to-azure-information-protection-analytics"></a>向 Azure 信息保护分析发送信息类型匹配项
  
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 默认情况下，统一标签客户端不会将敏感信息类型的内容匹配发送到[Azure 信息保护分析](../reports-aip.md)。 有关可以发送的其他信息的详细信息，请参阅中央报表文档中的 "[深入分析的内容匹配](../reports-aip.md#content-matches-for-deeper-analysis)" 部分。
 
@@ -629,7 +669,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥： **LogMatchedContent**
 
-- 值：True
+- 值： **True**
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -637,7 +677,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 ## <a name="limit-the-number-of-threads-used-by-the-scanner"></a>限制扫描程序使用的线程数
 
-此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 默认情况下，扫描程序使用运行扫描程序服务的计算机上的所有可用处理器资源。 如果需要限制此服务扫描时的 CPU 消耗，请在标签策略中创建以下高级设置。 
 
@@ -647,7 +687,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥： **ScannerConcurrencyLevel**
 
-- 值： **\<并发线程数>**
+- 值： ** \<并发线程数>**
 
 示例 PowerShell 命令，其中标签策略命名为 "Scanner"：
 
@@ -656,7 +696,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>从 Secure Islands 和其他标记解决方案迁移标签
 
-此配置使用 "标签[高级" 设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用 "标签[高级" 设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 此配置与文件扩展名为 ppdf 的受保护 PDF 文件不兼容。 不能使用文件资源管理器或 PowerShell 通过客户端打开这些文件。
 
@@ -684,7 +724,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 在本示例中：
 
-- Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中。
+- Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中********。
 
 高级设置：
 
@@ -702,7 +742,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 在本示例中：
 
-- Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中。
+- Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中********。
 
 高级设置：
 
@@ -720,13 +760,13 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 在本示例中：
 
-- Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中。
+- Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中********。
 
 高级客户端设置：
 
 - 密钥： **labelByCustomProperties**
 
-- 值：**安全孤岛标签包含内部、分类、.\*内部。\***
+- 值：**安全孤岛标签包含内部、分类、。\*Internal.\***
 
 示例 PowerShell 命令，其中标签命名为 "General"：
 
@@ -742,13 +782,13 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 ### <a name="extend-your-label-migration-rules-to-emails"></a>将标签迁移规则扩展到电子邮件
 
-除了通过指定其他标签策略高级设置以外，还可以将 labelByCustomProperties 高级设置与 Outlook 电子邮件一起使用。 但是，此设置对 Outlook 的性能有一个已知的负面影响，因此，仅当你对其具有强业务要求时才配置此附加设置，并记得在你完成从其他标记解决方案。
+除了通过指定其他标签策略高级设置以外，还可以将 labelByCustomProperties 高级设置与 Outlook 电子邮件一起使用。 但是，此设置对 Outlook 的性能有一个已知的负面影响，因此，仅当你对其具有强大的业务要求时才配置此附加设置，并记得在你完成从其他标记解决方案的迁移后将其设置为空字符串值。
 
 若要配置此高级设置，请为所选标签策略输入以下字符串：
 
 - 密钥： **EnableLabelByMailHeader**
 
-- 值：True
+- 值： **True**
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -764,7 +804,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥： **EnableLabelBySharePointProperties**
 
-- 值：True
+- 值： **True**
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -772,7 +812,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 ## <a name="apply-a-custom-property-when-a-label-is-applied"></a>应用标签时应用自定义属性
 
-此配置使用 "标签[高级" 设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用 "标签[高级" 设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 在某些情况下，你可能需要将一个或多个自定义属性应用于文档或电子邮件消息，以及敏感标签应用的元数据。
 
@@ -829,7 +869,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 ## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>将标签配置为在 Outlook 中应用 S/MIME 保护
 
-此配置使用必须使用 Office 365 安全与合规中心 PowerShell 配置的标签[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。
+此配置使用必须使用 Office 365 Security & 相容性中心 PowerShell 配置的标签[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。
 
 仅当使用的是[S/MIME 部署](https://docs.microsoft.com/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption)并且需要标签以自动将此保护方法应用于电子邮件，而不是从 Azure 信息保护 Rights Management 保护时，才使用这些设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
 
@@ -837,13 +877,13 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥： **SMimeSign**
 
-- 值：True
+- 值： **True**
 
 若要配置 S/MIME 加密的高级设置，请为所选标签输入以下字符串：
 
 - 密钥： **SMimeEncrypt**
 
-- 值：True
+- 值： **True**
 
 如果你指定的标签配置为加密，则对于 Azure 信息保护统一标签客户端，S/MIME 保护仅替换 Outlook 中的 Rights Management 保护。 统一标签客户端的正式发行版将继续使用为管理中心的标签指定的加密设置。 对于带有内置标签的 Office 应用，这些功能不应用 S/MIME 保护，而是应用 "不转发" 保护。
 
@@ -857,13 +897,13 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 ## <a name="specify-a-default-sublabel-for-a-parent-label"></a>为父标签指定默认子标签
 
-此配置使用 "标签[高级" 设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。
+此配置使用 "标签[高级" 设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 将子标签添加到标签时，用户将无法再对文档或电子邮件应用父标签。 默认情况下，用户选择父标签以查看他们可以应用的子标签，然后选择其中一个子标签。 如果配置此高级设置，当用户选择父标签时，系统会自动为其选择和应用子标签： 
 
 - 密钥： **DefaultSubLabelId**
 
-- 值： \<子标签 GUID >
+- 值： \<子标签 GUID>
 
 示例 PowerShell 命令，其中的父标签命名为 "机密"，而 "所有 Employees" 子标签具有8faca7b8-8d20-48a3-8ea2-0f96310a848e 的 GUID：
 
@@ -871,21 +911,21 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 ## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>开启在后台持续运行的分类
 
-此配置使用 "标签[高级" 设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 安全与合规中心 PowerShell 进行配置。 此设置处于预览状态，并且可能会更改。
+此配置使用 "标签[高级" 设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。 此设置处于预览状态，并且可能会更改。
 
 当你配置此设置时，它会更改 Azure 信息保护统一标签客户端如何向文档应用自动和建议标签的默认行为：
 
 对于 Word、Excel 和 PowerPoint，自动分类在后台持续运行。
 
 此行为不会对 Outlook 变化。
-当 Azure 信息保护统一标签客户端定期检查文档中指定的条件规则时，此行为将为存储在 SharePoint 中的文档启用自动和建议的分类和保护联机. 由于已运行条件规则，因此大型文件可实现更快保存。
+当 Azure 信息保护统一标签客户端定期检查文档中指定的条件规则时，此行为将为存储在 SharePoint Online 中的文档启用自动和建议的分类和保护。 由于已运行条件规则，因此大型文件可实现更快保存。
 
 条件规则不会作为用户类型实时运行。 而会在文档发生修改时作为后台任务定期运行。
 
 若要配置此高级设置，请输入以下字符串：
 
-- 键：RunPolicyInBackground
-- 值：True
+- 键：RunPolicyInBackground****
+- 值： **True**
 
 
 
@@ -895,17 +935,17 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 ## <a name="specify-a-color-for-the-label"></a>指定标签的颜色
 
-此配置使用必须使用 Office 365 安全与合规中心 PowerShell 配置的标签[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。
+此配置使用必须使用 Office 365 Security & 相容性中心 PowerShell 配置的标签[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。
 
 使用此高级设置设置标签的颜色。 若要指定颜色，请输入颜色的红色、绿色和蓝色（RGB）分量的十六进制三方代码。 例如，#40e0d0 为青绿色的 RGB 十六进制值。
 
-如果需要对这些代码进行引用，可从 MSDN web 文档的 " [\<颜色" >](https://developer.mozilla.org/docs/Web/CSS/color_value)页中找到一个有用的表格。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
+如果需要对这些代码进行引用，可从 MSDN web 文档的 " [ \<>颜色](https://developer.mozilla.org/docs/Web/CSS/color_value)" 页中找到一个有用的表格。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 
 若要配置标签颜色的高级设置，请为所选标签输入以下字符串：
 
 - 键：**颜色**
 
-- 值： \<RGB 十六进制值 >
+- 值： \<RGB 十六进制值>
 
 示例 PowerShell 命令，其中标签命名为 "Public"：
 
@@ -915,13 +955,13 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 在生产环境中，当用户使用 Azure 信息保护统一标签客户端时，通常不需要以其他用户身份登录。 不过，作为管理员，你在测试阶段可能需要以其他用户身份登录。 
 
-你可以使用 " **Microsoft Azure 信息保护**" 对话框来验证你当前登录的帐户：打开 Office 应用程序，然后在 "**主页**" 选项卡上，选择 "**敏感度**" 按钮，然后选择 "**帮助和反馈**"。 帐户名称会显示在“客户端状态”部分中。
+你可以使用 " **Microsoft Azure 信息保护**" 对话框来验证你当前登录的帐户：打开 Office 应用程序，然后在 "**主页**" 选项卡上，选择 "**敏感度**" 按钮，然后选择 "**帮助和反馈**"。 帐户名称会显示在“客户端状态”**** 部分中。
 
 请确保还要检查所显示的登录帐户的域名。 很容易忽视的一点是，使用正确的帐户名登录，但域不正确。 使用错误帐户的症状包括未能下载标签，或者看不到所需的标签或行为。
 
 以其他用户身份登录：
 
-1. 导航到 %localappdata%\Microsoft\MSIP 并删除 TokenCache 文件。
+1. 导航到 %localappdata%\Microsoft\MSIP 并删除 TokenCache 文件********。
 
 2. 重新启动任何打开的 Office 应用程序，并使用其他用户帐户登录。 如果在 Office 应用程序中看不到用于登录到 Azure 信息保护服务的提示，请返回**Microsoft Azure 信息保护**对话框，并从 "更新的**客户端状态**" 部分中选择 "**登录**"。
 
@@ -933,7 +973,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 此解决方案支持以同一租户中的其他用户身份登录。 不支持以不同租户中的其他用户身份登录。 若要使用多个租户测试 Azure 信息保护，请使用不同的计算机。
 
-- 你可以使用 "**帮助和反馈**" 中的 "**重置设置**" 选项注销并删除 Office 365 安全与合规中心、Microsoft 365 安全中心或 Microsoft 365 相容性中心的当前已下载标签和策略设置。
+- 你可以使用 "**帮助和反馈**" 中的 "**重置设置**" 选项注销并删除 Office 365 Security & 相容性中心、Microsoft 365 安全中心或 Microsoft 365 相容性中心的当前已下载标签和策略设置。
 
 
 ## <a name="support-for-disconnected-computers"></a>对断开连接的计算机的支持
@@ -941,9 +981,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 > [!IMPORTANT]
 > 以下标签方案支持断开连接的计算机：文件资源管理器、PowerShell、Office 应用和扫描仪。
 
-默认情况下，Azure 信息保护的统一标签客户端会自动尝试连接到 internet，以从标记管理中心下载标签和标签策略设置： Office 365 安全与合规中心，Microsoft 365 安全中心或 Microsoft 365 相容性中心。 如果计算机在一段时间内无法连接到 internet，则可以导出和复制为统一标签客户端手动管理策略的文件。
+默认情况下，Azure 信息保护的统一标签客户端会自动尝试连接到 internet，以便从标记管理中心下载标签和标签策略设置： Office 365 Security & 相容中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心。 如果计算机在一段时间内无法连接到 internet，则可以导出和复制为统一标签客户端手动管理策略的文件。
 
-说明:
+说明：
 
 1. 在 Azure AD 中选择或创建一个用户帐户，你将使用该帐户下载要在断开连接的计算机上使用的标签和策略设置。
 
