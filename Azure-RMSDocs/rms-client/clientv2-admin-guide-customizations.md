@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 760a4eddf40f344a47d335192e15d73d0d70dbaf
-ms.sourcegitcommit: 4c45794665891ba88fdb6a61b1bcd886035c13d3
+ms.openlocfilehash: 0a3386f37b6f8197abe56b4db3138de402eaca7d
+ms.sourcegitcommit: f21f3abf9754d3cd1ddfc6eb00d61277962b88e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "82736756"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82799123"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -675,7 +675,27 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
     Set-LabelPolicy -Identity Global -AdvancedSettings @{LogMatchedContent="True"}
 
+## <a name="limit-cpu-consumption"></a>限制 CPU 消耗
+
+从扫描程序版本 2.7. x 开始，我们建议使用以下**ScannerMaxCPU**和**ScannerMinCPU**高级设置方法限制 CPU 消耗。 
+
+> [!IMPORTANT]
+> 不能将**ScannerMaxCPU**和**ScannerMinCPU**高级设置方法用于线程限制策略。 若要使用方法限制 CPU 消耗，需要停止使用可能已有的[线程限制策略](#limit-the-number-of-threads-used-by-the-scanner)。 
+
+若要限制扫描仪计算机上的 CPU 使用率，可通过创建两个高级设置来管理： **ScannerMaxCPU**和**ScannerMinCPU**。 
+
+默认情况下， **ScannerMaxCPU**设置为100，这意味着不存在最大 CPU 使用量的限制。 在这种情况下，扫描程序进程将尝试使用所有可用的 CPU 时间，以最大程度地提高扫描速率。
+
+如果将**ScannerMaxCPU**设置为小于100，则 scanner 将在过去30分钟内监视 cpu 消耗，并且如果最大 cpu 超过你设置的限制，则将开始减少为新文件分配的线程数。 只要 CPU 消耗高于为**ScannerMaxCPU**设置的限制，线程数的限制就会继续。
+
+**ScannerMinCPU**，仅当**ScannerMaxCPU**不等于100时才会检查。 不能将**ScannerMinCPU**设置为大于**ScannerMaxCPU**数字的数字。 建议将**ScannerMinCPU**设置为至少15个点低于**ScannerMaxCPU**的值。   
+
+此设置的默认值为50，这意味着，如果在过去30分钟内 CPU 消耗低于此值，则 scanner 将开始添加新线程以并行扫描更多文件，直到 CPU 使用率达到为**ScannerMaxCPU**设置的级别。 
+
 ## <a name="limit-the-number-of-threads-used-by-the-scanner"></a>限制扫描程序使用的线程数
+
+> [!IMPORTANT]
+> 当使用以下线程限制策略时，将忽略**ScannerMaxCPU**和**ScannerMinCPU**高级设置。 若要使用**ScannerMaxCPU**和**ScannerMinCPU**高级设置限制 CPU 消耗，请取消使用限制线程数的策略。 
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 

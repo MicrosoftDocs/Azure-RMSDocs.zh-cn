@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 04/20/2020
+ms.date: 05/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 97390bec6bb31b6445a2975953b996e57865c6f4
-ms.sourcegitcommit: 479b3aaea7011750ff85a217298e5ae9185c1dd1
+ms.openlocfilehash: e77e2a39f1d75883de9bff8a446493ce0005cd2e
+ms.sourcegitcommit: f21f3abf9754d3cd1ddfc6eb00d61277962b88e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82224710"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82799089"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -61,6 +61,28 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
 此客户端正在替换 Azure 信息保护客户端（经典）。 若要将特性和功能与经典客户端进行比较，请参阅[比较适用于 Windows 计算机的标记客户端](use-client.md#compare-the-labeling-clients-for-windows-computers)。
+
+## <a name="version-27930"></a>版本2.7.93。0
+统一标签客户端（正式发布） 
+
+统一标记扫描器（公共预览版）版本2.7.93。0
+
+**发布**05/05/2020
+
+**新增功能：**
+
+- 此有限版本仅专注于统一标记扫描器版本2.7.93.0 的公共预览版本，如下所述： 
+
+- **扫描仪中的新**
+    - [使用扫描器基于建议的条件应用标签](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#prerequisites-for-the-azure-information-protection-scanner)。 AIP scanner 现在可以将带有 "推荐的标签" 操作的自动标记规则作为自动规则来处理。 实现此更改是为了使 AIP 的客户可以仅在服务端选择实现自动标记，使其最终用户可以始终遵循建议，而不是使用以前的选项来仅在用户端启用自动标记。
+    - [了解扫描程序以前发现的哪些文件已从扫描的存储库中删除](https://docs.microsoft.com/azure/information-protection/reports-aip)这些删除的文件之前未在 AIP 分析中报告，现已在 "扫描程序发现报告" 中提供。
+    - [在出现故障时从扫描仪获取报告以应用操作事件](https://docs.microsoft.com/azure/information-protection/reports-aip#friendly-schema-reference-for-event-functions)。 使用报表来了解失败的操作事件，并发现阻止将来出现的方法。 
+    - 介绍了 AIP scanner 诊断分析器工具，用于检测和分析常见扫描程序错误。 若要开始使用 AIP scanner 诊断，请[运行新的**AIPScannerDiagnostics** cmdlet](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#troubleshooting-using-scanner-diagnostic-tool)。 
+    - 你现在可以管理和限制扫描仪计算机上的最大 CPU 消耗。 了解如何使用[两个新的高级设置**ScannerMaxCPU**和**ScannerMinCPU**](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#optimizing-the-performance-of-the-scanner)阻止100% 的 cpu 使用率并管理 cpu 使用情况。 
+
+- **修复和改进** 
+    - 扫描程序 SQL 性能改进
+    - SharePoint 扫描性能改进
 
 ## <a name="version-261110"></a>版本2.6.111。0 
 

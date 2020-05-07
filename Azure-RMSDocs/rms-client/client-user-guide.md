@@ -4,7 +4,7 @@ description: 适用于 Windows 的 Azure 信息保护客户端可帮助用户保
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/13/2020
+ms.date: 05/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 99127a66ffc062308d915d701f6f1d8b8f521753
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: 70560867707fd58dc5b4580ab67006ea6fb4ce13
+ms.sourcegitcommit: fea4df7be8fe83aa12820becc812ccf26d7adefb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79403835"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852051"
 ---
 # <a name="azure-information-protection-user-guide"></a>Azure 信息保护用户指南
 
@@ -28,10 +28,10 @@ ms.locfileid: "79403835"
 
 适用于 Windows 的 Azure 信息保护客户端可帮助用户保护重要文档和电子邮件，使其不对特定人员可见（即使电子邮件被转发或将文档保存到另一个位置也是如此）。 还可通过此客户端打开他人已通过使用 Azure 信息保护中的 Rights Management 保护技术保护的文件。
 
-你所需的只是至少运行 Windows 7 Service Pack 1 的计算机。 然后从 Microsoft 下载并安装此免费客户端。
+你只需运行至少 Windows 8 的一台计算机。 然后从 Microsoft 下载并安装此免费客户端。
 
 
-## <a name="what-do-you-want-to-do"></a>要执行什么操作？
+## <a name="what-do-you-want-to-do"></a>您希望做什么？
 
 - [下载并安装 Azure 信息保护客户端](install-client-app.md)
 

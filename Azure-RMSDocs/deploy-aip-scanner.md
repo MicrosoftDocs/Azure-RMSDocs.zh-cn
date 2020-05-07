@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行当前版本的 Azure 信息保
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/04/2020
+ms.date: 05/05/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e1920e66707135616fe1abb121ca709be452cb1c
-ms.sourcegitcommit: 4c45794665891ba88fdb6a61b1bcd886035c13d3
+ms.openlocfilehash: 67fccce98cb8ec31e7f4ad422b92510a644d2cc7
+ms.sourcegitcommit: f21f3abf9754d3cd1ddfc6eb00d61277962b88e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "82736790"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82799140"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -36,7 +36,7 @@ ms.locfileid: "82736790"
 > 如果扫描仪版本早于1.48.204.0，但尚未准备好进行升级，请参阅[部署以前版本的 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner-previousversions.md)。
 
 
-利用此信息了解 Azure 信息保护扫描程序，并了解如何成功安装、配置和运行该扫描程序。
+使用此信息来了解 Azure 信息保护扫描程序，然后了解如何成功地安装、配置、运行，并在必要时对其进行故障排除。
 
 此扫描程序在 Windows Server 上作为服务运行，使你能够发现和保护以下数据存储中的文件并对其进行分类：
 
@@ -76,7 +76,7 @@ ms.locfileid: "82736790"
 |运行扫描程序服务的服务帐户|除了在 Windows Server 计算机上运行扫描程序服务外，此 Windows 帐户还对 Azure AD 进行身份验证，并下载 Azure 信息保护策略。 此帐户必须是同步到 Azure AD 的 Active Directory 帐户。 如果由于组织策略而无法同步此帐户，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />此服务帐户有以下要求：<br /><br />- 在本地登录**** 的用户权限分配。 此权限是安装和配置扫描程序所必需的，但不可用于操作。 必须将此权限授予服务帐户，但当确认扫描程序可发现、保护文件并对其进行分类后，可删除此权限。 如果由于组织策略的限制而甚至无法在短时间内授予此权限，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />- 作为服务登录**** 的用户权限分配。 扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。 <br /><br />- 针对数据存储库的权限： <br /><br /> 文件共享或本地文件：你必须授予**读取**和**写入**和**修改**权限以扫描文件，然后将分类和保护应用到满足 Azure 信息保护策略中的条件的文件。 <br /><br /> SharePoint：您必须授予 "**完全控制**" 权限以扫描文件，然后将分类和保护应用到满足 Azure 信息保护策略中的条件的文件。 <br /><br /> 若仅在发现模式下运行扫描程序，则只需“读取”权限即可****。<br /><br />-对于重新保护或删除保护的标签：若要确保扫描程序始终可以访问受保护的文件，请将此帐户设置为 Azure 信息保护的[超级用户](configure-super-users.md)，并确保已启用超级用户功能。 此外，如果对分阶段部署实现了[载入控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，还请确保已配置的载入控件中包含此帐户。|
 |存储扫描程序配置的 SQL Server：<br /><br />- 本地或远程实例<br /><br />- [不区分大小写排序规则](https://docs.microsoft.com/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver15) <br /><br />- 安装扫描程序的 Sysadmin 角色|SQL Server 2012 是以下版本的最低版本：<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express<br /><br />当你为扫描程序指定自定义群集（配置文件）名称时，Azure 信息保护扫描程序在相同的 SQL server 实例上支持多个配置数据库。 当你使用来自统一标签客户端的扫描程序预览版本时，多个扫描仪可以共享同一个配置数据库。<br /><br />如果安装扫描程序且帐户拥有 Sysadmin 角色，那么在安装过程中会自动创建扫描程序配置数据库，并向运行扫描程序的服务帐户授予所需的 db_owner 角色。 如果无法获得 Sysadmin 角色或组织策略要求手动创建和配置数据库，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br /> 有关容量指导，请参阅[SQL Server 的存储要求和容量规划](#storage-requirements-and-capacity-planning-for-sql-server)。|
 |Windows Server 计算机上安装了以下任一 Azure 信息保护客户端 <br /><br /> -经典客户端 <br /><br /> -统一标签客户端（[仅限当前的公开发行版](./rms-client/unifiedlabelingclient-version-release-history.md#version-25330)） |必须安装扫描程序的完整客户端。 请勿安装只带有 PowerShell 模块的客户端。<br /><br />有关安装和升级说明： <br /> - [经典客户端](./rms-client/client-admin-guide.md)<br /> - [统一标签客户端](./rms-client/clientv2-admin-guide.md#installing-the-azure-information-protection-scanner) |
-|已配置可应用自动分类和保护（可选）的标签|有关经典客户端配置标签的条件和应用保护的说明：<br /> - [如何为自动和建议分类配置条件](configure-policy-classification.md)<br /> - [如何为 Rights Management 保护配置标签](configure-policy-protection.md) <br /><br />提示：可以使用[教程](infoprotect-quick-start-tutorial.md)中的说明来测试扫描仪，并在已准备好的 Word 文档中查找信用卡号。 但是，需要更改标签配置，以便将“选择应用此标签的方式”选项**** 设置为“自动”**** 而不是“推荐”****。 然后从文档中删除标签（如果已应用），并将文件复制到扫描程序的数据存储库。 为了快速测试，可以使用扫描程序计算机上的本地文件夹。<br /><br /> 有关统一标签客户端配置标签以便自动标记和应用保护的说明：<br /> - [将敏感度标签自动应用于内容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)<br /> - [使用敏感度标签中的加密限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)<br /><br /> 尽管即使你尚未配置应用自动分类的标签，仍然可以运行扫描程序，但这些说明中并未涵盖此方案。 [详细信息](#using-the-scanner-with-alternative-configurations)|
+|已配置可应用自动分类和保护（可选）的标签|有关经典客户端配置标签的条件和应用保护的说明：<br /> - [如何为自动和建议分类配置条件](configure-policy-classification.md)<br /> - [如何为 Rights Management 保护配置标签](configure-policy-protection.md) <br /><br />提示：可以使用[教程](infoprotect-quick-start-tutorial.md)中的说明来测试扫描仪，并在已准备好的 Word 文档中查找信用卡号。 但是，你将需要更改标签配置，以使选项 "**选择应用此标签的方式**" 设置为 "**自动**"，而不是 "**建议**" 或 "将**建议标记视为自动**（在扫描仪版本 2.7. x. x. x. x 和更高版本中可用）"。 然后从文档中删除标签（如果已应用），并将文件复制到扫描程序的数据存储库。 为了快速测试，可以使用扫描程序计算机上的本地文件夹。<br /><br /> 有关统一标签客户端配置标签以便自动标记和应用保护的说明：<br /> - [将敏感度标签自动应用于内容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)<br /> - [使用敏感度标签中的加密限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)<br /><br /> 尽管即使你尚未配置应用自动分类的标签，仍然可以运行扫描程序，但这些说明中并未涵盖此方案。 [详细信息](#using-the-scanner-with-alternative-configurations)|
 |对于要扫描的 SharePoint 文档库和文件夹：<br /><br />-SharePoint 2019<br /><br />- SharePoint 2016<br /><br />- SharePoint 2013<br /><br />- SharePoint 2010|扫描程序不支持其他版本的 SharePoint。<br /><br />使用[版本控制](https://docs.microsoft.com/sharepoint/governance/versioning-content-approval-and-check-out-planning)时，扫描程序会检查并标记上次发布的版本。 如果扫描程序标签文件和[内容审批](https://docs.microsoft.com/sharepoint/governance/versioning-content-approval-and-check-out-planning#plan-content-approval)是必需的，则必须向用户批准标记为 "文件" 的文件。 <br /><br />对于大型 SharePoint 场，请检查是否需要增加列表视图阈值（默认为 5,000），以便扫描程序访问所有文件。 有关详细信息，请参阅以下 SharePoint 文档：[在 sharepoint 中管理大型列表和库](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server)|
 |对于要扫描的 Office 文档：<br /><br />- Word、Excel 和 PowerPoint 的 97-2003 文件格式和 Office Open XML 格式|有关扫描程序为这些文件格式支持的文件类型的详细信息，请参阅以下信息： <br />-经典客户端： [Azure 信息保护客户端支持的文件类型](./rms-client/client-admin-guide-file-types.md)<br />-统一标签客户端： [Azure 信息保护统一标签客户端支持的文件类型](./rms-client/clientv2-admin-guide-file-types.md)|
 |对于长路径：<br /><br />- 最多 260 个字符，除非扫描程序安装在 Windows 2016 上，并且该计算机配置为支持长路径|Windows 10 和 windows Server 2016 支持使用以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)的路径长度大于260个字符：**本地计算机策略** > **计算机配置** > **管理模板** > **所有设置** > **启用 Win32 长路径**<br /><br /> 有关支持长文件路径的详细信息，请参阅 Windows 10 开发人员文档中的[最大路径长度限制](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation)一节。|
@@ -239,7 +239,7 @@ SQL 脚本：
     
     （可选）指定用于管理目的的说明，以帮助你确定扫描仪的群集名称。
 
-    选择“保存”  。
+    选择“保存”。 
 5. 找到 "**扫描仪**" 菜单选项，然后选择 "**内容扫描作业**"。
 6. 在 " **Azure 信息保护-内容扫描作业**" 窗格上，选择 "**添加**"。
  
@@ -296,7 +296,7 @@ SQL 脚本：
     
     对于此窗格上的其余设置，请不要更改此初始配置的设置，但请将其保留为**内容扫描作业默认值**。 这意味着数据存储库将从内容扫描作业继承设置。 
     
-    选择“保存”  。
+    选择“保存”。 
 
 > [!IMPORTANT]
 > 尽管可以扫描本地文件系统，但不建议将此配置用于生产部署，并且**只能**在单节点群集中使用。 不支持通过多节点群集扫描本地文件夹。 如果需要扫描本地文件系统上的某个文件夹，我们建议创建一个共享，然后使用网络 URL 对其进行扫描。
@@ -413,7 +413,7 @@ Azure AD 令牌允许扫描程序对 Azure 信息保护服务进行身份验证�
     >
     > 例如，使用 [Mklink](/windows-server/administration/windows-commands/mklink) 命令：`mklink /j D:\Scanner_reports C:\Users\aipscannersvc\AppData\Local\Microsoft\MSIP\Scanner\Reports`
     
-    使用“要发现的信息类型”**** 的“仅限策略”**** 的设置时，只有满足你为自动分类配置的条件的文件才会被包括在详细报表中。 如果看不到任何应用的标签，请检查标签配置是否包括自动分类而不是推荐分类。
+    使用“要发现的信息类型”**** 的“仅限策略”**** 的设置时，只有满足你为自动分类配置的条件的文件才会被包括在详细报表中。 如果看不到任何已应用的标签，请检查标签配置是否包括 "自动" 而不是推荐的分类，或 "启用**建议标记为自动**（在扫描仪版本 2.7. x 和更高版本中可用）"。
     
     > [!TIP]
     > 扫描程序会每 5 分钟向 Azure 信息保护发送一次此信息，这样你就可以准实时地在 Azure 门户中查看结果。 有关详细信息，请参阅 [Azure 信息保护报表](reports-aip.md)。 
@@ -450,6 +450,26 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
     然后查看报告，详细了解标记了哪些文件、向每个文件应用了什么分类，以及是否向它们应用了保护。 或者，使用 Azure 门户，更轻松地了解此信息。
 
 因为我们将计划配置为持续运行，所以当扫描程序扫描完所有文件时，它将自动开始一个新周期，以便发现任何新文件和更改的文件。
+
+## <a name="troubleshooting-using-scanner-diagnostic-tool"></a>使用扫描仪诊断工具进行故障排除
+
+若要解决扫描仪问题，请在 PowerShell 会话中运行以下命令：
+
+        Start-AIPScannerDiagnostics
+
+1. 仅执行命令-onbehalf% scanner_account% 
+2. 请注意，此命令不是先决条件检查工具。 该工具检查当前扫描程序部署是否正常。 请确保在完成扫描程序部署并完成配置文件配置后，才执行此命令。 
+
+诊断扫描工具会执行以下检查，然后导出日志：
+
+|勾选标记|可能的结果|
+|-----------|----------|
+|数据库检查| 是最新的，可访问|
+|网络检查| Url 可访问|
+|身份验证检查| 令牌，可以获取策略|
+|分析检查| 配置文件设置为 Azure 门户|
+|配置检查|脱机/联机配置存在，可以获得|
+|规则检查|有效|
 
 ## <a name="stop-a-scan"></a>停止扫描 
 
@@ -641,11 +661,13 @@ Azure 信息保护扫描程序支持三种备选方案，即无需在任何条�
 
 使用以下指南有助于优化扫描程序的性能。 但是，如果你的优先级是扫描仪计算机的响应性而不是扫描程序性能，你可以使用高级客户端设置来限制扫描程序使用的线程数：
 
-- 经典客户端的扫描程序：[限制扫描程序使用的线程数](./rms-client/client-admin-guide-customizations.md#limit-the-number-of-threads-used-by-the-scanner)
+- 经典客户端扫描程序：[限制扫描程序使用的线程数](./rms-client/client-admin-guide-customizations.md#limit-the-number-of-threads-used-by-the-scanner)
 
-- 来自统一标签客户端的扫描程序：[限制扫描程序使用的线程数](./rms-client/clientv2-admin-guide-customizations.md#limit-the-number-of-threads-used-by-the-scanner)
+- 统一标签客户端扫描器：使用以下指导[限制扫描程序使用的线程数](./rms-client/clientv2-admin-guide-customizations.md#limit-the-number-of-threads-used-by-the-scanner)
 
-若要最大程度实现扫描程序的性能：
+
+
+最大程度地提高扫描程序性能的其他选项：
 
 - **在扫描程序计算机和被扫描的数据存储之间建立高速可靠的网络连接**
     
