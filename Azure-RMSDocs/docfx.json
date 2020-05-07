@@ -33,6 +33,7 @@
     "template": "docs.html",
     "globalMetadata": {
       "feedback_system": "GitHub",
+      "uhfHeaderId": "azure",
       "feedback_github_repo": "MicrosoftDocs/azure-rmsdocs.zh-cn",
       "feedback_product_url": "https://msip.uservoice.com/",
       "layout": "Conceptual",
