@@ -6,23 +6,24 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 7cb49e161b3718a54bcdb8601cc857a47b1e9f16
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.custom: has-adal-ref
+ms.openlocfilehash: 6a78bbfb94bd479feb7f2b8bebd203ed69eba9d0
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556242"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82971704"
 ---
 # <a name="acquire-an-access-token-python"></a>获取访问令牌 (Python)
 
 此示例演示如何调用外部 Python 脚本来获取 OAuth2 令牌。 身份验证委托的实现要求使用有效的 OAuth2 访问令牌。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先决条件
 
 若要运行以下示例：
 
 - 安装 Python 2.7 或更高版本。
-- 在项目中实现 utils.h/cpp。 
+- 在项目中实现 utils.h/cpp。
 - 应将 Auth.py 添加到你的项目，并将其与生成中的二进制文件位于同一目录中。
 - 完成[（MIP） SDK 设置和配置](setup-configure-mip.md)。 在其他任务中，您将在 Azure Active Directory （Azure AD）租户中注册客户端应用程序。 Azure AD 将提供一个应用程序 ID （也称为客户端 ID），用于令牌获取逻辑。
 
@@ -30,7 +31,7 @@ ms.locfileid: "75556242"
 
 ## <a name="sampleauthacquiretoken"></a>sample::auth::AcquireToken()
 
-在简单身份验证示例中，我们演示了一个简单的 `AcquireToken()` 函数，该函数不使用任何参数并返回硬编码标记值。 在此示例中，我们将重载 AcquireToken() 以接受身份验证参数并调用外部 Python 脚本来返回令牌。
+在简单身份验证示例中，我们演示了`AcquireToken()`一个简单的函数，该函数不使用任何参数，并返回硬编码标记值。 在此示例中，我们将重载 AcquireToken() 以接受身份验证参数并调用外部 Python 脚本来返回令牌。
 
 ### <a name="authh"></a>auth.h
 
@@ -41,7 +42,7 @@ ms.locfileid: "75556242"
 #include <string>
 
 namespace sample {
-  namespace auth {    
+  namespace auth {
     std::string AcquireToken(
         const std::string& userName, //A string value containing the user's UPN.
         const std::string& password, //The user's password in plaintext
@@ -52,7 +53,7 @@ namespace sample {
 }
 ```
 
-前三个参数将由用户输入提供或硬编码到应用程序中。 最后两个参数由 SDK 提供给身份验证委托。 
+前三个参数将由用户输入提供或硬编码到应用程序中。 最后两个参数由 SDK 提供给身份验证委托。
 
 
 ### <a name="authcpp"></a>auth.cpp
@@ -118,7 +119,7 @@ namespace sample {
 
 此脚本直接通过[ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python)获取身份验证令牌。 此代码仅作为获取用于示例应用的身份验证令牌的一种方法，不应在生产中使用。 该脚本仅适用于支持普通旧用户名/密码 http 身份验证的租户。 MFA 或基于证书的身份验证将失败。
 
-> [!NOTE] 
+> [!NOTE]
 > 在运行此示例之前，必须通过运行以下命令之一来安装适用于 Python 的 ADAL：
 
 ```shell
@@ -149,7 +150,7 @@ def main(argv):
   resource = ''
 
   clientId = ''
-    
+
   for option, arg in options:
     if option == '-h':
       printUsage()
@@ -180,13 +181,13 @@ def main(argv):
   token = auth_context.acquire_token_with_username_password(resource, username, password, clientId)
   print(token["accessToken"])
 
-if __name__ == '__main__':  
+if __name__ == '__main__':
   main(sys.argv[1:])
 ```
 
 ## <a name="update-acquireoauth2token"></a>更新 AcquireOAuth2Token
 
-最后，更新 `AuthDelegateImpl` 中的 `AcquireOAuth2Token` 函数以调用重载的 `AcquireToken` 函数。 通过读取 `challenge.GetResource()` 和 `challenge.GetAuthority()` 获取资源和颁发机构 URL。 添加引擎时，将 `OAuth2Challenge` 传入身份验证委托。 这项工作由 SDK 完成，不需要开发人员额外操作。 
+最后，更新 `AuthDelegateImpl` 中的 `AcquireOAuth2Token` 函数以调用重载的 `AcquireToken` 函数。 通过读取 `challenge.GetResource()` 和 `challenge.GetAuthority()` 获取资源和颁发机构 URL。 添加引擎时，将 `OAuth2Challenge` 传入身份验证委托。 这项工作由 SDK 完成，不需要开发人员额外操作。
 
 ```cpp
 bool AuthDelegateImpl::AcquireOAuth2Token(
@@ -202,5 +203,3 @@ bool AuthDelegateImpl::AcquireOAuth2Token(
 ```
 
 添加 `engine` 时，SDK 将调用 `AcquireOAuth2Token 函数，传入质询，执行 Python 脚本，接收令牌，然后将令牌提供给服务。
-
-

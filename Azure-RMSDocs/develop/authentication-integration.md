@@ -13,13 +13,13 @@ ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.custom: dev
-ms.openlocfilehash: ec30b6222d0426111573447da882bd4f35d0d4d8
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.custom: dev, has-adal-ref
+ms.openlocfilehash: 53bfc93ce31322922fdadcc0f5bcc7a92e242bed
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68792557"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82971837"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>如何使用 Azure AD 注册应用并为其启用 RMS
 
@@ -29,7 +29,7 @@ ms.locfileid: "68792557"
 用户身份验证是在设备应用与 RMS 基础结构之间建立通信的必要步骤。 此身份验证过程使用标准 OAuth 2.0 协议，该协议需要有关当前用户及其身份验证请求的关键信息。
 
 ## <a name="registration-via-azure-portal"></a>通过 Azure 门户注册
-首先，按照此指南开始通过 Azure 门户配置应用的注册，如[为 ADAL 身份验证配置 Azure RMS](adal-auth.md) 中所述。 请务必从此过程复制并保存“客户端 ID”和“重定向 URI”以便稍后使用。
+首先，按照此指南开始通过 Azure 门户配置应用的注册，如[为 ADAL 身份验证配置 Azure RMS](adal-auth.md) 中所述。 请务必从此过程复制并保存“客户端 ID”**** 和“重定向 URI”**** 以便稍后使用。
 
 ## <a name="complete-your-information-protection-integration-agreement-ipia"></a>完成信息保护集成协议 (IPIA)
 必须先与 Microsoft 信息保护团队一起完成 IPIA，然后才能部署应用程序。 有关全部详细信息，请参阅本主题的第一部分[部署到生产](deploying-your-application.md)。
@@ -68,7 +68,7 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
 - **重定向 Uri** – 向身份验证库提供身份验证代码的 URI 目标。 iOS 和 Android 需要特定的格式。 ADAL 相应的 GitHub 存储库的 README 文件中对此已有说明。 该值来自上一个注册步骤（通过 Azure 门户）。
 
 > [!NOTE]
-> “范围”当前未使用，但可能会使用，因此会保留供将来使用。
+> “范围”**** 当前未使用，但可能会使用，因此会保留供将来使用。
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
 

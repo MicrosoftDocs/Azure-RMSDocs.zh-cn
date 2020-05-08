@@ -13,13 +13,13 @@ ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.custom: dev
-ms.openlocfilehash: 34e7a531d117daaef54480c027effedb56c97137
-ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
+ms.custom: dev, has-adal-ref
+ms.openlocfilehash: 7ed06af67d004845de7a5a55090da9fc3b40388c
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80068398"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82971993"
 ---
 # <a name="iosos-x-code-examples"></a>iOS/OS X 代码示例
 
@@ -98,7 +98,7 @@ ms.locfileid: "80068398"
                           }];
        }
 
-- **步骤 3**：通过 [MSUserPolicy](https://msdn.microsoft.com/library/dn790789.aspx) 对象的 [MSUserPolicy accessCheck](https://msdn.microsoft.com/library/dn790796.aspx) 方法，检查此用户对于该内容是否具有 Edit 权限。
+- **步骤 3**：通过 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 对象的 [MSUserPolicy accessCheck](https://msdn.microsoft.com/library/dn790789.aspx) 方法，检查此用户对于该内容是否具有 Edit 权限。
 
       - (void)accessCheckWithProtectedData:(MSProtectedData *)protectedData
       {
@@ -160,7 +160,7 @@ ms.locfileid: "80068398"
 ### <a name="scenario-open-a-custom-protected-file"></a>方案：打开自定义受保护的文件
 
 
--   **步骤 1**：通过 [serializedContentPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 创建 *MSUserPolicy*。
+-   **步骤 1**：通过 *serializedContentPolicy* 创建 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx)。
 
         + (void)userPolicyWith:(NSData *)protectedData
         authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
@@ -188,7 +188,7 @@ ms.locfileid: "80068398"
             }];
          }
 
--   **步骤 2**：使用[步骤 1](https://msdn.microsoft.com/library/dn758321.aspx) 中的 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 创建 **MSCustomProtectedData**，并从中读取信息。
+-   **步骤 2**：使用**步骤 1** 中的 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 创建 [MSCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx)，并从中读取信息。
 
         + (void)customProtectedDataWith:(NSData *)protectedData
         {
@@ -231,7 +231,7 @@ ms.locfileid: "80068398"
             policyDescriptor.offlineCacheLifetimeInDays = 10;
         }
 
--   **步骤 2**：通过策略描述符 [selectedDescriptor](https://msdn.microsoft.com/library/dn790796.aspx) 创建自定义 *MSUserPolicy*。
+-   **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx)。
 
         + (void)userPolicyWithPolicyDescriptor:(MSPolicyDescriptor *)policyDescriptor
         {

@@ -11,29 +11,29 @@ ms.service: information-protection
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.subservice: prereqs
 ms.suite: ems
-ms.custom: admin
-ms.openlocfilehash: 6a3ed3272eecd25bd403d6a45a82f937fe26a03a
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.custom: admin, has-adal-ref
+ms.openlocfilehash: 803980b071de64c053f1ad0bf3cac06488fc410b
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79404634"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82972095"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure 信息保护的 Azure Active Directory 要求
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 必须拥有 Azure AD 目录才能使用 Azure 信息保护。 可以使用此目录中的帐户登录 Azure 门户，并且可以在该门户中进行 Azure 信息保护标签和 Azure Rights Management 模板的配置和管理等操作。
 
-如果拥有包含 Azure 信息保护或 Azure Rights Management 的订阅，你的 Azure AD 目录则将自动为你创建（如有需要）。  
+如果拥有包含 Azure 信息保护或 Azure Rights Management 的订阅，你的 Azure AD 目录则将自动为你创建（如有需要）。
 
 有关 Azure AD 的详细信息，请参阅[什么是 Azure AD Directory？](/azure/active-directory/fundamentals/active-directory-whatis)
 
 若要将 Azure AD 目录与本地 AD 林相集成，请参阅[将本地 Active Directory 域与 Azure Active Directory 集成](/azure/architecture/reference-architectures/identity/azure-ad)。
 
-### <a name="scenarios-that-have-specific-requirements"></a>具有特定要求的方案 
+### <a name="scenarios-that-have-specific-requirements"></a>具有特定要求的方案
 
-运行 Office 2010 的计算机： 
+运行 Office 2010 的计算机：
 
 - 这些计算机要求[Azure 信息保护统一标签客户端](./rms-client/aip-clientv2.md)或[azure 信息保护客户端](./rms-client/aip-client.md)向 azure 信息保护及其数据保护服务 azure Rights Management 进行身份验证。
 
@@ -46,12 +46,12 @@ ms.locfileid: "79404634"
 用户的 UPN 值与其电子邮件地址不匹配：
 
 - 这不是推荐的配置，不支持 Azure 信息保护的单一登录。 如果无法更改 UPN 值，请为用户配置备用登录 ID，并指导他们使用此备用登录方式登录 Office。 有关详细信息，请参阅[配置备用登录 ID](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) 和 [Office 应用程序定期提示输入 SharePoint Online、OneDrive 和 Lync Online 的凭据](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)。
-    
+
     如果 UPN 值中的域名已针对你的租户进行验证，请将用户的 UPN 值作为另一个电子邮件地址添加到 Azure AD proxyAddresses 属性。 如果在授予使用权限时指定了用户的 UPN 值，则可以对用户进行 Azure 权限管理授权。 有关这一点及如何对用户帐户授权的详细信息，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
 
 使用 AD FS 或等效的身份验证提供程序进行本地身份验证的移动设备或 Mac 计算机：
 
-- 必须在最低服务器版的 Windows Server 2012 R2 上使用 AD FS，或者使用支持 OAuth 2.0 协议的备用身份验证提供程序。
+- 你必须在最低服务器版的 **Windows Server 2012 R2** 上使用 AD FS，或者使用支持 OAuth 2.0 协议的备用身份验证提供程序。
 
 ## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>多重身份验证 (MFA) 和 Azure 信息保护
 若要将多因素身份验证 (MFA) 和 Azure 信息保护结合起来使用，至少需要以下条件之一：
@@ -62,7 +62,7 @@ ms.locfileid: "79404634"
 
 - Azure 信息保护客户端：
 
-    - 适用于 Windows 的 Azure 信息保护客户端和适用于 iOS 和 Android 的查看器应用始终支持 MFA;不需要最低版本。 
+    - 适用于 Windows 的 Azure 信息保护客户端和适用于 iOS 和 Android 的查看器应用始终支持 MFA;不需要最低版本。
 
 -   适用于 Mac 计算机的 Rights Management 共享应用：
 
@@ -72,7 +72,7 @@ ms.locfileid: "79404634"
 
 -   对于 Microsoft 托管的租户（你拥有 Azure Active Directory 或 Office 365）：
 
-    - 配置 Azure MFA 来为用户强制实施 MFA。 有关说明，请参阅多因素身份验证文档中的[在云中的 Azure 多因素身份验证入门](/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
+    - 配置 Azure MFA 来为用户强制实施 MFA。 有关说明，请参阅多重身份验证文档中的[在云中的 Azure 多重身份验证入门](/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
 
         有关 Azure MFA 的详细信息，请参阅[什么是 Azure 多因素身份验证？](/multi-factor-authentication/multi-factor-authentication)
 
@@ -80,16 +80,15 @@ ms.locfileid: "79404634"
 
     - 为 Azure Active Directory 或 Office 365 配置联合身份验证服务器。 例如，如果使用 AD FS，请参阅[为 AD FS 配置其他身份验证方法](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs)。
 
-        有关此方案的详细信息，请参阅 Office 博客上的[使用 Office 365 – 标识程序现在已简化](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)。
+        有关此方案的详细信息，请参阅 Office 博客上[的使用 office 365 – Identity program 现已简化](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)。
 
 Rights Management 连接器和 Azure 信息保护扫描程序不支持 MFA。 如果部署连接器或扫描程序，以下帐户不得要求执行 MFA：
 
 - 安装和配置连接器的帐户。
 
-- 连接器在 Azure AD 中创建的服务主体帐户 Aadrm_S-1-7-0。
- 
+- 连接器在 Azure AD 中创建的服务主体帐户 Aadrm_S-1-7-0****。
+
 - 运行扫描程序的服务帐户。
 
 ## <a name="next-steps"></a>后续步骤
 若要查看其他要求，请参阅 [Azure 信息保护的要求](requirements.md)。
-

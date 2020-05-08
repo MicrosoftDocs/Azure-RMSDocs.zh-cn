@@ -13,13 +13,13 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.custom: dev
-ms.openlocfilehash: ef2e1755c6a86984227b09c95020a26a976a2c52
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.custom: dev, has-adal-ref
+ms.openlocfilehash: 3e071a6ef2a51180a16748e4acb595866d17be78
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68791662"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82971959"
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>配置应用以进行 ADAL 身份验证
 
@@ -27,23 +27,23 @@ ms.locfileid: "68791662"
 
 ## <a name="azure-authentication-setup"></a>Azure 身份验证设置
 
-你将需要以下各项：
+需要以下各项：
 
-- [Microsoft Azure 订阅](https://azure.microsoft.com/)（使用免费试用版即可）。 有关详细信息，请参阅[用户如何注册个人 RMS](../rms-for-individuals-user-sign-up.md)
+- [Microsoft Azure 的订阅](https://azure.microsoft.com/)（免费试用版已足够）。 有关详细信息，请参阅[用户如何注册个人 RMS](../rms-for-individuals-user-sign-up.md)
 - Microsoft Azure Rights Management 的订阅（使用免费的[个人 RMS](https://technet.microsoft.com/library/dn592127.aspx) 帐户即可）。
 
 > [!NOTE]
-> 询问你的 IT 管理员你是否具有 Microsoft Azure Rights Management 订阅，请你的 IT 管理员执行以下步骤。 如果你的组织没有订阅，应请 IT 管理员创建订阅。 此外，你的 IT 管理员应使用*工作或学校帐户*而不是 *Microsoft 帐户*（即 Hotmail）进行订阅。
+> 询问你的 IT 管理员你是否具有 Microsoft Azure Rights Management 订阅，请你的 IT 管理员执行以下步骤。 如果你的组织没有订阅，应请 IT 管理员创建订阅。 此外，IT 管理员应使用*工作或学校帐户*而不是*Microsoft 帐户*（即 Hotmail）进行订阅。
 
 注册 Microsoft Azure 后：
 
 - 使用具有管理权限的帐户登录到组织的 [Azure 管理门户](https://manage.windowsazure.com)。
 
-![Azure 登录名](../media/AzurePortalLogin.png)
+![Azure 登录](../media/AzurePortalLogin.png)
 
 - 向下浏览到门户右侧的 **Active Directory** 应用程序。
 
-![选择“Active Directory”](../media/AzureADPick.png)
+![选择 Active Directory](../media/AzureADPick.png)
 
 - 如果尚未创建目录，请选择门户左下角的**新建**按钮。
 
@@ -103,4 +103,3 @@ ms.locfileid: "68791662"
 - 选择门户正下方的**保存**图标，保存应用程序以保留更改。
 
 ![选择“保存”](../media/SaveApplication.png)
-

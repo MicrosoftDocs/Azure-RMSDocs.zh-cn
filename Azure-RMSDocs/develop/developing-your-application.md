@@ -13,13 +13,13 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.custom: dev
-ms.openlocfilehash: c508365855d8d2e914fca2c4853dc315d84331e2
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.custom: dev, has-adal-ref
+ms.openlocfilehash: 5319ff8ca9424d1c1273df1bdf347abf65881209
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68791305"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82971857"
 ---
 # <a name="developing-your-application"></a>开发应用程序
 
@@ -48,10 +48,10 @@ ms.locfileid: "68791305"
 - 确保已启用 RMS：`enable-aipservice`
 - 通过运行 `Get-AipServiceConfiguration` 获取租户 ID
 
->记录 BPOSId（租户 ID）值。 后续步骤中需要此值。
+>记录 BPOSId（租户 ID）值。 在后续步骤中需要用到。
 
-*示例输出*
-![cmdlet 输出](../media/develop/output-of-Get-AadrmConfiguration.png)
+*Example output*
+输出![cmdlet 输出示例](../media/develop/output-of-Get-AadrmConfiguration.png)
 
 - 从服务断开连接：`Disconnect-AipServiceService`
 
@@ -66,12 +66,12 @@ ms.locfileid: "68791305"
 - 为服务主体提供名称
   > 记录对称密钥和应用程序主体 ID 以供将来使用。
 
-*示例输出*
-![cmdlet 输出](../media/develop/output-of-NewMsolServicePrincipal.png)
+*Example output*
+输出![cmdlet 输出示例](../media/develop/output-of-NewMsolServicePrincipal.png)
 
 - 将应用程序主体 ID、对称密钥和租户 ID 添加到应用程序的 App.config 文件。
 
-*App.config 文件示例*
+*示例 app.config 文件*
 ![cmdlet 输出](../media/develop/example-App.config-file.png)
 
 - 在 Azure 中注册应用程序后，你就可以使用 *ClientID* 和 *RedirectUri*。 有关如何在 Azure 中注册应用程序以及获取 *ClientID* 和 *RedirectUri* 的详细信息，请参阅[为 ADAL 身份验证配置 Azure RMS](adal-auth.md)。
@@ -132,7 +132,7 @@ ms.locfileid: "68791305"
 
      public static void ProtectWithTemplate(SymmetricKeyCredential symmetricKeyCredential, string filePath)
      {
-       // Gets the available templates for this tenant             
+       // Gets the available templates for this tenant
        Collection<TemplateInfo> templates = SafeNativeMethods.IpcGetTemplateList(null, false, true,
            false, true, null, null, symmetricKeyCredential);
 
@@ -161,7 +161,7 @@ ms.locfileid: "68791305"
          {
            templateSelection -= templateSelection;
 
-           // Encrypts the file using the selected template             
+           // Encrypts the file using the selected template
            TemplateInfo selectedTemplateInfo = templates.ElementAt(templateSelection);
 
            string encryptedFilePath = SafeFileApiNativeMethods.IpcfEncryptFile(filePath,
@@ -176,7 +176,7 @@ ms.locfileid: "68791305"
 
     if (issuerDisplayName.Trim() != "")
     {
-      // Gets the available issuers of rights policy templates.              
+      // Gets the available issuers of rights policy templates.
       // The available issuers is a list of RMS servers that this user has already contacted.
       try
       {
@@ -186,7 +186,7 @@ ms.locfileid: "68791305"
                                                         false,
                                                         false, true, null, symmetricKeyCredential);
 
-        // Creates the policy and associates the chosen user rights with it             
+        // Creates the policy and associates the chosen user rights with it
         SafeInformationProtectionLicenseHandle handle = SafeNativeMethods.IpcCreateLicenseFromScratch(
                                                             templateIssuers.ElementAt(0));
         SafeNativeMethods.IpcSetLicenseOwner(handle, owner);
@@ -197,7 +197,7 @@ ms.locfileid: "68791305"
                                                                 issuerDisplayName,
                                                                 false));
 
-        //Encrypts the file using the ad hoc policy             
+        //Encrypts the file using the ad hoc policy
         string encryptedFilePath = SafeFileApiNativeMethods.IpcfEncryptFile(
                                        filePath,
                                        handle,
@@ -230,4 +230,3 @@ ms.locfileid: "68791305"
    ![应用输出 - 步骤 5](../media/develop/app-output-5.png)
 
 6. 最后，输入一些策略元数据：策略名称、描述和发布者（Azure AD 租户）显示名称![应用输出 - 步骤6](../media/develop/app-output-6.png)
-

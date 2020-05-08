@@ -13,13 +13,13 @@ ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.custom: dev
-ms.openlocfilehash: 8744ea8dfd7213030c741e6e760c506e0d795db4
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.custom: dev, has-adal-ref
+ms.openlocfilehash: 987b9bb711f96d6622fb1972f13d50fa8cbbfa3d
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68792261"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82972017"
 ---
 # <a name="testing-your-application"></a>测试应用程序
 
@@ -49,4 +49,3 @@ ms.locfileid: "68792261"
 * [操作说明：使用 ADAL 身份验证](how-to-use-adal-authentication.md)
 * [安装 SDK](install-the-rms-sdk.md)
 * [RMS 客户端 2.1 部署说明](https://technet.microsoft.com/library/jj159267(WS.10).aspx)
-

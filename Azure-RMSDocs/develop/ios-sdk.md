@@ -13,13 +13,13 @@ ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.custom: dev
-ms.openlocfilehash: 8de5db2af71b16ed60f81a6ec432d0841d125475
-ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
+ms.custom: dev, has-adal-ref
+ms.openlocfilehash: 28f7503fee6e117a4c818f36fbc6f959f06cae8e
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80068569"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82972044"
 ---
 # <a name="ios-and-os-x-setup"></a>iOS 和 OS X 安装程序
 
@@ -29,10 +29,10 @@ ms.locfileid: "80068569"
 
 本主题将指导你完成环境设置过程，以创建自己的新应用。
 
-请注意：**此 SDK 不支持 iPod Touch**  。
+**请注意**  ，此 SDK 不支持 iPod touch。
 
 
--   [必备条件](#prerequisites)
+-   [先决条件](#prerequisites)
 -   [可选](#optional)
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
@@ -46,11 +46,11 @@ ms.locfileid: "80068569"
 
     Xcode 可通过 [Mac 应用商店](https://developer.apple.com/technologies/mac/)获取。
 
--   有关适用于 iOS 和 OS X 的 MS RMS SDK 4.2 包的详细信息，请参阅[入门](get-started.md)。
+-   适用于 iOS 和 OS X 的 MS RMS SDK 4.2 包。有关详细信息，请参阅[入门](get-started.md)。
 
     此 SDK 可用于为 iOS 7.0、OS X 10.8 及更高版本进行开发。
 
--   身份验证库：建议使用 [Azure AD 身份验证库 (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。 但是也可使用其他支持 OAuth 2.0 的身份验证库。
+-   身份验证库：我们建议使用 [Azure AD 身份验证库 (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。 但是也可使用其他支持 OAuth 2.0 的身份验证库。
 
     有关详细信息，请参阅 [ADAL for iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios) 或 [ADAL for OS X](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/tree/OSXUniversal)
 
@@ -62,48 +62,48 @@ ms.locfileid: "80068569"
 
 ## <a name="configuring-your-development-environment"></a>配置开发环境
 
--   若要创建新项目，请在“文件”上单击“新建”，然后单击“项目”。
--   选择“单视图应用程序”。
+-   若要创建新项目，请在“文件”**** 上单击“新建”****，然后单击“项目”****。
+-   选择“单视图应用程序”****。
 
     ![创建新项目](../media/iOS-Project.png)
 
 -   输入新项目的名称和标识符。
 
-    ![将项目命名为](../media/iOS-project-options.png)
+    ![为项目命名](../media/iOS-project-options.png)
 
--   单击“下一步”，然后选择项目的位置。
--   若要添加面向 iOS 框架的 **MSRightsManagement** 框架，请将 SDK 安装文件夹中的 .framework 文件夹拖入“项目导航器”的“框架”部分。
+-   单击“下一步”****，然后选择项目的位置。
+-   若要添加面向 iOS 框架的 **MSRightsManagement** 框架，请将 SDK 安装文件夹中的 .framework 文件夹拖入“项目导航器”**** 的“框架”**** 部分。
 
     ![设置位置](../media/ios-add-dependencies-01a.png)
 
--   选择“为添加的所有文件夹创建组”选项按钮，然后清除“将项目复制到目标组的文件夹(若必需)”复选框。
+-   选择“为添加的所有文件夹创建组”**** 选项按钮，然后清除“将项目复制到目标组的文件夹(若必需)”**** 复选框。
 
     此操作将保留对 SDK 安装文件夹的引用，而不是创建副本。
 
     ![设置对 SDK 安装文件夹的引用](../media/iOS-create-groups.png)
 
--   若要添加适用于资源包的 MS RMS SDK 4.2，请将 MSRightsManagement.framework/Resources 文件夹中的 MSRightsManagementResources.bundle 文件拖入“项目导航器”的“框架”部分。
+-   若要添加适用于资源包的 MS RMS SDK 4.2，请将 MSRightsManagement.framework/Resources 文件夹中的 MSRightsManagementResources.bundle 文件拖入“项目导航器”的“框架”**** 部分。
 
     ![添加资源包](../media/iOS-add-resource-bundle-02a.png)
 
--   按复制框架时的方式一样，选择“为添加的所有文件夹创建组”选项按钮，然后清除“将项目复制到目标组的文件夹(若必需)”复选框。
--   SDK 依赖于其他框架，包括：**CoreData** **MessageUI** **SystemConfiguration** **Libresolv** 和 **Security**。 若要添加这些框架，请导航至目标的“摘要”面板的“已链接框架和库”部分，然后展开此部分以添加框架。
+-   按复制框架时的方式一样，选择“为添加的所有文件夹创建组”**** 选项按钮，然后清除“将项目复制到目标组的文件夹(若必需)”**** 复选框。
+-   SDK 依赖于其他框架，包括：**CoreData****MessageUI****SystemConfiguration****Libresolv** 和 **Security**。 若要添加这些框架，请导航至目标的“摘要”**** 面板的“已链接框架和库”**** 部分，然后展开此部分以添加框架。
 
     **UIKit** 和 **Foundation** 框架是必需的，且通常默认存在。
 
     ![添加资源](../media/iOS-add-libraries.png)
 
--   将 **-ObjC** 标记添加至目标“生成设置”的“其他链接器标记”中。
+-   将 **-ObjC** 标记添加至目标“生成设置”**** 的“其他链接器标记”**** 中。
 
     ![添加生成设置](../media/iOS-linker-flags.png)
 
--   现在你的“项目导航器”看起来应类似此树。
+-   现在你的“项目导航器”**** 看起来应类似此树。
 
     ![新建项目](../media/iOS-verify-setup-01a.png)
 
 -   你现已准备就绪，可自行创建新的 iOS/OS X 应用。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>另请参阅
 
 * [入门](get-started.md)
 

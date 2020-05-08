@@ -12,36 +12,36 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
-ms.custom: admin
-ms.openlocfilehash: 8efcf7554b7c701ca5dc4e1c90a72b1afd93c195
-ms.sourcegitcommit: c0fd00b057d155d6f2ed3a3ef5942d593b5be5c9
+ms.custom: admin, has-adal-ref
+ms.openlocfilehash: cf946837e928c976cb3c8bc18fb6063866d5087e
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "80670229"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82971721"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的第 5 阶段。 这些过程包括[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)的步骤 10-12。
 
-## <a name="step-10-deprovision-ad-rms"></a>步骤 10： 取消预配 AD RMS
+## <a name="step-10-deprovision-ad-rms"></a>步骤 10. 取消预配 AD RMS
 
-从 Active Directory 中删除服务连接点 (SCP) 以防止计算机发现你的本地权限管理基础结构。 由于在注册表中配置了重定向（例如，通过运行迁移脚本），此步骤对于已迁移的现有客户端是可选的。 但是，删除 SCP 会阻止新的客户端以及可能与 RMS 相关的服务和工具在迁移完毕后查找 SCP。 此时，所有计算机连接都应转到 Azure Rights Management 服务。 
+从 Active Directory 中删除服务连接点 (SCP) 以防止计算机发现你的本地权限管理基础结构。 由于在注册表中配置了重定向（例如，通过运行迁移脚本），此步骤对于已迁移的现有客户端是可选的。 但是，删除 SCP 会阻止新的客户端以及可能与 RMS 相关的服务和工具在迁移完毕后查找 SCP。 此时，所有计算机连接都应转到 Azure Rights Management 服务。
 
 若要删除 SCP，请确保你已经以域企业管理员身份登录，然后使用以下过程：
 
-1. 在 Active Directory Rights Management Services 控制台中，右键单击 AD RMS 群集，然后单击“属性”。
+1. 在 Active Directory Rights Management Services 控制台中，右键单击 AD RMS 群集，然后单击“属性”****。
 
-2. 单击“SCP”选项卡 。
+2. 单击“SCP”选项卡****。
 
-3. 选中“更改 SCP”复选框 。
+3. 选中“更改 SCP”复选框****。
 
-4. 选择“删除当前 SCP”，然后单击“确定”。
+4. 选择“删除当前 SCP”****，然后单击“确定”****。
 
-现在监视 AD RMS 服务器的活动。 例如，检查[系统运行状况报告中的请求](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx)、[ServiceRequest 表](https://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx)，或者[审核用户对受保护内容的访问权限](https://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx)。 
+现在监视 AD RMS 服务器的活动。 例如，检查[系统运行状况报告中的请求](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx)、[ServiceRequest 表](https://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx)，或者[审核用户对受保护内容的访问权限](https://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx)。
 
 当确认 RMS 客户端不再与这些服务器进行通信，并且客户端成功使用 Azure 信息保护时，可以从这些服务器中删除 AD RMS 服务器角色。 如果使用的是专用服务器，则可能更倾向于在一段时间内第一次关闭服务器的采取警告步骤。 这样则可以在这段时间确保在调查客户端未使用 Azure 信息保护的原因时没有报告要求你重启这些服务器以保证服务连续性的问题。
 
@@ -56,19 +56,19 @@ ms.locfileid: "80670229"
 
 通过本地主机文件重定向：
 
-- 在本地 hosts 文件中添加以下行，将 `<AD RMS URL FQDN>` 替换为 AD RMS 群集的值，不含前缀或网页：
-    
+- 在本地 hosts 文件中添加以下行，将替换`<AD RMS URL FQDN>`为 AD RMS 群集的值，不含前缀或网页：
+
         127.0.0.1 <AD RMS URL FQDN>
 
 通过 DNS 重定向：
-    
+
 - 为 AD RMS URL FQDN 创建新的主机（A）记录，其 IP 地址为127.0.0.1。
 
-## <a name="step-11-complete-client-migration-tasks"></a>步骤 11： 完成客户端迁移任务
+## <a name="step-11-complete-client-migration-tasks"></a>步骤 11. 完成客户端迁移任务
 
 对于移动设备客户端和 Mac 计算机：删除在部署 [AD RMS 移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)时创建的 DNS SRV 记录。
 
-当这些 DNS 更改传播后，这些客户端将自动发现并开始使用 Azure Rights Management 服务。 但运行 Office Mac 的 Mac 计算机会缓存 AD RMS 中的信息。 这些计算机执行此过程最多可能需要 30 天。 
+当这些 DNS 更改传播后，这些客户端将自动发现并开始使用 Azure Rights Management 服务。 但运行 Office Mac 的 Mac 计算机会缓存 AD RMS 中的信息。 这些计算机执行此过程最多可能需要 30 天。
 
 若要强制 Mac 计算机立即在密钥链中运行发现过程，请搜索“adal”并删除所有 ADAL 条目。 然后在这些计算机上运行下列命令：
 
@@ -90,9 +90,9 @@ killall cfprefsd
 
 ````
 
-所有现有 Windows 计算机均已迁移到 Azure 信息保护后，便没有理由继续使用载入控件并保留针对迁移过程创建的 AIPMigrated 组了。 
+所有现有 Windows 计算机均已迁移到 Azure 信息保护后，便没有理由继续使用载入控件并保留针对迁移过程创建的 AIPMigrated**** 组了。
 
-首先删除载入控件，然后才能删除 AIPMigrated 组和为了部署迁移脚本而创建的任何软件部署方法。
+首先删除载入控件，然后才能删除 AIPMigrated**** 组和为了部署迁移脚本而创建的任何软件部署方法。
 
 删除载入控件：
 
@@ -103,7 +103,7 @@ killall cfprefsd
 2. 运行以下命令，并输入 **Y** 进行确认：
 
         Set-AipServiceOnboardingControlPolicy -UseRmsUserLicense $False
-    
+
     请注意，此命令会删除所有针对 Azure Rights Management 保护服务的许可证强制执行，使所有计算机都可保护文档和电子邮件。
 
 3. 确认不再设置载入控件：
@@ -112,13 +112,13 @@ killall cfprefsd
 
     在输出中，**授权**应显示 **False**，并且对于 **SecurityGroupOjbectId** 未显示任何 GUID
 
-最后，如果使用的是 Office 2010 且已在 Windows 任务计划程序库中启用了“AD RMS 权限策略模板管理（自动）”任务，请禁用此任务，因为它不用于 Azure 信息保护客户端。 此任务通常是使用组策略启用的，它支持 AD RMS 部署。 可以在以下位置找到此任务：“Microsoft” > “Windows” > “Active Directory Rights Management Services 客户端”
+最后，如果使用的是 Office 2010 且已在 Windows 任务计划程序库中启用了“AD RMS 权限策略模板管理（自动）”任务，请禁用此任务，因为它不用于 Azure 信息保护客户端****。 此任务通常是使用组策略启用的，它支持 AD RMS 部署。 可以在以下位置找到此任务： **Microsoft** > **Windows** > **Active Directory Rights Management Services 客户端**
 
-## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>步骤 12： 重新生成 Azure 信息保护租户密钥
+## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>步骤 12. 重新生成 Azure 信息保护租户密钥
 
 如果 AD RMS 部署使用的是 RMS 加密模式1，则迁移完成时需要执行此步骤，因为此模式使用1024位密钥和 SHA-1。 此配置被视为提供不充分的保护级别。 Microsoft 不允许使用较小的密钥长度，例如1024位的 RSA 密钥，以及提供不充分保护级别的协议的关联用途，如 SHA-1。
 
-重新生成密钥会导致使用 RMS 加密模式2的保护，这将导致2048位密钥和 SHA-256。 
+重新生成密钥会导致使用 RMS 加密模式2的保护，这将导致2048位密钥和 SHA-256。
 
 虽然 AD RMS 部署使用加密模式 2，但仍建议执行此步骤，因为新密钥有助于保护租户避免 AD RMS 密钥的潜在安全漏洞。
 
@@ -128,11 +128,11 @@ killall cfprefsd
 
 重新生成 Azure 信息保护租户密钥：
 
-- **如果租户密钥由 Microsoft 托管**：运行 PowerShell cmdlet [AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) ，并指定为你的租户自动创建的密钥的密钥标识符。 可以通过运行[AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet 来确定要指定的值。 为租户自动创建的密钥包含最早创建日期，因此可以使用以下命令对其进行标识：
-    
+- **如果你的租户密钥由 Microsoft 管理**：请运行 PowerShell cmdlet [AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties)并指定为你的租户自动创建的密钥的密钥标识符。 可以通过运行[AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet 来确定要指定的值。 为租户自动创建的密钥包含最早创建日期，因此可以使用以下命令对其进行标识：
+
         (Get-AipServiceKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-- **如果租户密钥由你管理 (BYOK)** ：在 Azure Key Vault 中，为 Azure 信息保护租户重复密钥创建过程，然后再次运行[AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet 以指定此新密钥的 URI。 
+- **如果你的租户密钥由你管理（BYOK）**：在 Azure Key Vault 中，为 Azure 信息保护租户重复密钥创建过程，然后再次运行[AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet 以指定此新密钥的 URI。
 
 若要详细了解如何管理 Azure 信息保护租户密钥，请参阅 [Azure 信息保护租户密钥操作](./operations-tenant-key.md)。
 
@@ -140,4 +140,3 @@ killall cfprefsd
 ## <a name="next-steps"></a>后续步骤
 
 完成迁移后，请检查[部署路线图](deployment-roadmap.md)以确定是否需要执行其他任何部署任务。
-

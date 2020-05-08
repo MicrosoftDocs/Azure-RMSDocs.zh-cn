@@ -11,12 +11,13 @@ ms.service: information-protection
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: d9f1a3578a5da4abec6d61aa849388573dec3fe1
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.custom: has-adal-ref
+ms.openlocfilehash: 05036616c77d559dc82a0334b99b548da724df18
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "60179093"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82971789"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 
@@ -40,12 +41,12 @@ ms.locfileid: "60179093"
 
 ## <a name="powershell-guides"></a>PowerShell 指南
 
-PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开发和测试服务应用程序。 有关详细信息，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](/azure/information-protection/rms-client/client-admin-guide-powershell)。
+PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开发和测试服务应用程序。 有关详细信息，请参阅[对 Azure 信息保护客户端使用 PowerShell](/azure/information-protection/rms-client/client-admin-guide-powershell)。
 
 ## <a name="user-applications"></a>用户应用程序
 
 可以使用 RMS SDK 2.1 或 RMS SDK 4.2 构建用户应用程序。
-4\.2 版本基于 REST 客户端，其 API 特定于几种常见操作系统：iOS/OSX、Android、Linux 以及 Windows。 2\.1 版本用于构建基于 Windows 的本机应用程序。
+4.2 版本基于 REST 客户端，其 API 特定于几种常见操作系统：iOS/OSX、Android、Linux 以及 Windows。 2.1 版本用于构建基于 Windows 的本机应用程序。
 
 ### <a name="user-application-development-guides"></a>用户应用程序开发指南
 
@@ -64,10 +65,10 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 以下指南将介绍如何使用常用工具，完成应用程序开发环境中特定于操作系统的设置步骤。
 
 [![iOS/OSX 安装程序](../media/develop/ios-icon.png)](ios-sdk.md)
-[![Android 安装程序](../media/develop/android-icon.png)](android-sdk.md)
-[![Windows Phone 安装程序](../media/develop/windows-phone-icon.png)](windows-phone-apps.md)
+[![Android 安装](../media/develop/android-icon.png)](android-sdk.md)
+[![程序 Windows Phone 安装程序](../media/develop/windows-phone-icon.png)](windows-phone-apps.md)
 [![Windows 服务安装程序](../media/develop/windows-icon.png)](install-the-rms-sdk.md)
-[![Linux 安装程序](../media/develop/linux-icon.png)](linux-setup.md)
+[![Linux 安装](../media/develop/linux-icon.png)](linux-setup.md)程序
 
 
 ## <a name="how-tos"></a>操作指南
@@ -85,7 +86,7 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 
 ### <a name="security-and-authentication"></a>安全性和身份验证
 
-- [How to configure your app service application to use Azure Active Directory login](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication)（如何配置应用服务应用程序以使用 Azure Active Directory 登录）
+- [如何将应用服务应用程序配置为使用 Azure Active Directory 登录](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication)
 - [如何使用 Azure Active Directory 身份验证 (ADAL) 进行身份验证](how-to-use-adal-authentication.md)
 - [配置 Azure RMS 进行身份验证（服务）](adal-auth.md)
 - [设置 API 安全模式（服务）](setting-the-api-security-mode-api-mode.md)
@@ -134,7 +135,7 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 - [Android API 参考](https://msdn.microsoft.com/library/dn758245.aspx)
 - [Linux API 参考](https://azuread.github.io/rms-sdk-for-cpp/annotated.html)
 
-### <a name="previous-versions"></a>早期版本
+### <a name="previous-versions"></a>以前的版本
 
 - [AD RMS SDK](https://msdn.microsoft.com/library/cc530379.aspx) 是 RMS SDK 的第一个版本。
 - [AD RMS 脚本工具](https://msdn.microsoft.com/library/bb968797.aspx) 是 AD RMS 安装的管理工具。
@@ -143,4 +144,3 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 
 - [开发人员术语](terms.md)
 - [Azure 信息保护的术语 - IT 专业人员](../terminology.md)
-
