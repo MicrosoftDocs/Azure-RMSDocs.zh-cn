@@ -7,12 +7,13 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: c081d20ba3cfffdc1db06ade5d918230f3b9eff8
-ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
+ms.custom: has-adal-ref
+ms.openlocfilehash: dc26f9c1f75157d81b160790e53bc27fd2c2b059
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "75554984"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82972163"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C#)
 
@@ -27,9 +28,9 @@ ms.locfileid: "75554984"
 
 ## <a name="add-logic-to-set-and-get-a-sensitivity-label"></a>添加逻辑以设置和获取敏感度标签
 
-使用文件引擎对象，添加逻辑以对文件设置和获取敏感度标签。 
+使用文件引擎对象，添加逻辑以对文件设置和获取敏感度标签。
 
-1. 使用“解决方案资源管理器”，打开项目中包含 Main()` 方法的实现的 .cs 文件  。 它默认与包含它的项目同名，即在项目创建期间指定的名称。 
+1. 使用“解决方案资源管理器”，打开项目中包含 Main()` 方法的实现的 .cs 文件  。 它默认与包含它的项目同名，即在项目创建期间指定的名称。
 
 2. 在 `Main()` 正文的末尾，在 `Console.ReadKey()` 下面并在 `}` 上面（在上一快速入门中离开的位置），插入以下代码：
 
@@ -42,7 +43,7 @@ ms.locfileid: "75554984"
      string actualOutputFilePath = outputFilePath;
 
      //Create a file handler for that file
-     //Note: the 2nd inputFilePath is used to provide a human-readable content identifier for admin auditing. 
+     //Note: the 2nd inputFilePath is used to provide a human-readable content identifier for admin auditing.
      var handler = Task.Run(async () => await fileEngine.CreateFileHandlerAsync(inputFilePath, actualFilePath, true)).Result;
 
      //Set Labeling Options
@@ -88,13 +89,13 @@ ms.locfileid: "75554984"
 
 ## <a name="build-and-test-the-application"></a>生成和测试应用程序
 
-生成和测试客户端应用程序。 
+生成和测试客户端应用程序。
 
 1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序  。 如果没有生成错误，请使用 F5（开始调试  ）来运行应用程序。
 
 2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示（后跟已应用标签和已修改文件的相关信息）。
 
-  ```console   
+  ```console
   Personal : 73c47c6a-eb00-4a6a-8e19-efaada66dee6
   Public : 73254501-3d5b-4426-979a-657881dfcb1e
   General : da480625-e536-430a-9a9e-028d16a29c59
@@ -110,10 +111,10 @@ ms.locfileid: "75554984"
 
    Applying Label ID 074e457c-5848-4542-9a6f-34a182080e7z to c:\Test\Test.docx
    Committing changes
-   
+
    Label committed to file: c:\Test\Test_labeled.docx
    Press any key to continue . . .
-  
+
    Getting the label committed to file: c:\Test\Test_labeled.docx
    Name: Confidential
    Id: 074e457c-5848-4542-9a6f-34a182080e7z
@@ -123,4 +124,4 @@ ms.locfileid: "75554984"
 可以通过打开输出文件，并直观地检查文档的信息保护设置来验证标签的应用。
 
 > [!NOTE]
-> 如果要标记 Office 文档，但未使用获取访问令牌的 Azure Active Directory (AD) 租户中的帐户登录（并且配置了敏感度标签），则可能会提示先登录，然后才能打开标记的文档。 
+> 如果要标记 Office 文档，但未使用获取访问令牌的 Azure Active Directory (AD) 租户中的帐户登录（并且配置了敏感度标签），则可能会提示先登录，然后才能打开标记的文档。

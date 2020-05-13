@@ -6,12 +6,13 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 07/30/2019
 ms.author: tommos
-ms.openlocfilehash: 5b64da83fad3ca9187398f77780fd0810740668a
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.custom: has-adal-ref
+ms.openlocfilehash: fa8b41850468ed545512f8facc488ff0517a8b41
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81764190"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82972078"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C#)
 
@@ -26,7 +27,7 @@ ms.locfileid: "81764190"
 
 - 完成 [Microsoft 信息保护 (MIP) SDK 安装和配置](setup-configure-mip.md)中的步骤。 此“客户端应用程序初始化”快速入门依赖于正确的 SDK 安装和配置。
 - 可选：
-  - 查看[配置文件和引擎对象](concept-profile-engine-cpp.md)。 配置文件和引擎对象是使用 MIP文件/策略/保护 API 的客户端所需的通用概念。 
+  - 查看[配置文件和引擎对象](concept-profile-engine-cpp.md)。 配置文件和引擎对象是使用 MIP文件/策略/保护 API 的客户端所需的通用概念。
   - 查看[身份验证概念](concept-authentication-cpp.md)，了解 SDK 和客户端应用程序如何实现身份验证和同意。
 
 ## <a name="create-a-visual-studio-solution-and-project"></a>创建 Visual Studio 解决方案和项目
@@ -37,7 +38,7 @@ ms.locfileid: "81764190"
    - 在左窗格中的“已安装”、“Visual C#”下，选择“Windows 桌面”    。
    - 在中间窗格中，选择“控制台应用(.NET Framework)” 
    - 在底部窗格中，更新项目“名称”、“位置”以及对应的“解决方案名称”    。
-   - 完成后，单击右下方的“确定”按钮  。 
+   - 完成后，单击右下方的“确定”按钮  。
 
      [![创建 Visual Studio 解决方案](media/quick-app-initialization-csharp/create-vs-solution.png)](media/quick-app-initialization-csharp/create-vs-solution.png#lightbox)
 
@@ -97,7 +98,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
 现在，通过扩展 SDK 的 `Microsoft.InformationProtection.IConsentDelegate` 接口，并覆盖/实现 `GetUserConsent()`，为同意委托创建实现。 同意委托将在以后由文件配置文件和文件引擎对象实例化并使用。 向同意委托提供在 `url` 参数中使用的、用户必须同意的服务的地址。 委托通常应提供一些流程，使用户能接受或拒绝同意服务访问请求。 对于此快速入门，硬编码 `Consent.Accept`。
 
-1. 使用之前使用的相同 Visual Studio“添加类”功能，将另一个类添加到项目中。 这次，在“类名”字段中输入“ConsentDelegateImplementation”  。 
+1. 使用之前使用的相同 Visual Studio“添加类”功能，将另一个类添加到项目中。 这次，在“类名”字段中输入“ConsentDelegateImplementation”  。
 
 2. 现在更新 ConsentDelegateImpl.cs 以实现新的同意委托类  。 为 `Microsoft.InformationProtection` 添加 using 语句并将类设置为继承 `IConsentDelegate`。
 
@@ -117,9 +118,9 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
 1. 在“解决方案资源管理器”中，打开项目中包含 `Main()` 方法的实现的 .cs 文件  。 它默认与包含它的项目同名，即在项目创建期间指定的名称。
 
-2. 删除生成的 `main()` 实现。 
+2. 删除生成的 `main()` 实现。
 
-3. 托管包装器包含静态类 `Microsoft.InformationProtection.MIP`，用于初始化、创建 `MipContext`、加载配置文件和发布资源。 若要为文件 API 操作初始化包装器，请调用 `MIP.Initialize()`，同时传入 `MipComponent.File`，以加载文件操作所需的库。 
+3. 托管包装器包含静态类 `Microsoft.InformationProtection.MIP`，用于初始化、创建 `MipContext`、加载配置文件和发布资源。 若要为文件 API 操作初始化包装器，请调用 `MIP.Initialize()`，同时传入 `MipComponent.File`，以加载文件操作所需的库。
 
 4. 在 Program.cs 的 `Main()` 中添加以下内容，将 \<application-id\> 替换为之前创建的、Azure AD 应用程序注册的 ID   。
 
@@ -140,7 +141,7 @@ namespace mip_sdk_dotnet_quickstart
 
         static void Main(string[] args)
         {
-            //Initialize Wrapper for File API operations 
+            //Initialize Wrapper for File API operations
             MIP.Initialize(MipComponent.File);
         }
     }
@@ -192,7 +193,7 @@ namespace mip_sdk_dotnet_quickstart
                // Create the FileProfileSettings object.
                // Initialize file profile settings to create/use local state.
                var profileSettings = new FileProfileSettings(mipContext,
-                                        CacheStorageType.OnDiskEncrypted,                                        
+                                        CacheStorageType.OnDiskEncrypted,
                                         new ConsentDelegateImplementation());
 
                // Load the Profile async and wait for the result.

@@ -6,14 +6,15 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 06/13/2019
 ms.author: mbaldwin
-ms.openlocfilehash: a7159374ab736bc2f5df151ade82874b33875e56
-ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
+ms.custom: has-adal-ref
+ms.openlocfilehash: e1c223744a8651a4318abbf0f532d76a771bde16
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79403478"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82971670"
 ---
-# <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置 
+# <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置
 
 快速入门和教程文章主要介绍使用 MIP SDK 库和 API 构建应用程序。 本文介绍如何安装和配置 Office 365 订阅和客户端工作站，为使用 SDK 做准备。
 
@@ -44,7 +45,7 @@ ms.locfileid: "79403478"
 
 ## <a name="configure-sensitivity-labels"></a>配置敏感度标签
 
-如果当前正在使用 Azure 信息保护，则必须将标签迁移到 Office 365 安全与合规中心。 有关该过程的详细信息，请参阅[如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](/azure/information-protection/configure-policy-migrate-labels)。 
+如果当前正在使用 Azure 信息保护，则必须将标签迁移到 Office 365 安全与合规中心。 有关该过程的详细信息，请参阅[如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](/azure/information-protection/configure-policy-migrate-labels)。
 
 ## <a name="configure-your-client-workstation"></a>配置客户端工作站
 
@@ -68,11 +69,11 @@ ms.locfileid: "79403478"
      - **C++ 通用 Windows 平台工具**
      - Windows 10 SDK 10.0.16299.0 SDK 或更高版本（如果未包含在内） 
    - **C++ 桌面开发** Windows 工作负载及以下可选组件：
-     - Windows 10 SDK 10.0.16299.0 SDK 或更高版本（如果未包含在内）  
+     - Windows 10 SDK 10.0.16299.0 SDK 或更高版本（如果未包含在内） 
 
      [![Visual Studio 设置](media/setup-mip-client/visual-studio-install.png)](media/setup-mip-client/visual-studio-install.png#lightbox)
 
-3. 安装 [ADAL.PS PowerShell 模块](https://www.powershellgallery.com/packages/ADAL.PS/3.19.4.2)： 
+3. 安装 [ADAL.PS PowerShell 模块](https://www.powershellgallery.com/packages/ADAL.PS/3.19.4.2)：
 
    - 由于安装模块需要管理员权限，因此首先需要：
 
@@ -95,7 +96,7 @@ ms.locfileid: "79403478"
 
 4. 下载 SDK 文件：
 
-   以下平台支持 MIP SDK，每个支持的平台/语言都有单独的下载项：  
+   以下平台支持 MIP SDK，每个支持的平台/语言都有单独的下载项：
 
    [!INCLUDE [MIP SDK platform support](../includes/mip-sdk-platform-support.md)]
 
@@ -106,7 +107,7 @@ ms.locfileid: "79403478"
    - **Bins:** 用于每个平台体系结构的编译的二进制文件（在适用情况下）。
    - **Include:** 头文件 (C++)。
    - **Samples:** 示例应用程序的源代码。
-    
+
    **NuGet 包**
 
    如果正在进行 Visual Studio 开发，也可以通过 NuGet 包管理器控制台安装 SDK：
@@ -115,7 +116,7 @@ ms.locfileid: "79403478"
     Install-Package Microsoft.InformationProtection.File
     Install-Package Microsoft.InformationProtection.Policy
     Install-Package Microsoft.InformationProtection.Protection
-    ```  
+    ```
 
 5. 如果不使用 NuGet 包，请将 SDK 二进制文件的路径添加到 PATH 环境变量。 PATH 变量使客户端应用程序可以在运行时找到从属的二进制文件 (DLL)（可选）：
 
@@ -129,7 +130,7 @@ ms.locfileid: "79403478"
      - \<API\> = `file`、`protection`、`upe`
      - \<目标\> = `debug`、`release`
      - \<平台\> = `amd64` (x64)、`x86` 等。
-   
+
    - 完成更新“路径”变量后，单击“确定”   。 然后在返回到“环境变量”对话框时单击“确定”   。
 
 6. 从 GitHub 下载 SDK 示例（可选）：
@@ -137,48 +138,48 @@ ms.locfileid: "79403478"
    - 如果还没有 GitHub，请先创建一个 [GitHub 配置文件](https://github.com/join)。
    - 然后安装最新版本的 [Software Freedom Conservancy Git 客户端工具 (Git Bash)](https://git-scm.com/download/)
    - 使用 Git Bash，下载感兴趣的示例：
-     - 使用以下查询查看存储库： https://github.com/Azure-Samples?utf8=%E2%9C%93&q=MipSdk 。 
+     - 使用以下查询查看存储库： https://github.com/Azure-Samples?utf8=%E2%9C%93&q=MipSdk 。
      - 使用 Git Bash，使用 `git clone https://github.com/azure-samples/<repo-name>` 下载每个示例存储库。
 
 ## <a name="register-a-client-application-with-azure-active-directory"></a>向 Azure Active Directory 注册将客户端应用程序
 
 在 Office 365 订阅预配过程中，将创建关联的 Active Directory (Azure AD) 租户。 Azure AD 租户为 Office 365 用户帐户和应用程序帐户提供标识和访问管理   。 应用程序需要应用程序帐户才能访问受保护的 API（例如 MIP API）。
 
-对于运行时的身份验证和授权，帐户由安全主体表示，该安全主体派生自帐户的标识信息  。 表示应用程序帐户的安全主体称为[*服务主体*](/azure/active-directory/develop/developer-glossary#service-principal-object)。 
+对于运行时的身份验证和授权，帐户由安全主体表示，该安全主体派生自帐户的标识信息  。 表示应用程序帐户的安全主体称为[*服务主体*](/azure/active-directory/develop/developer-glossary#service-principal-object)。
 
 在 Azure AD 中注册应用程序帐户以用于快速入门和 MIP SDK 示例：
 
-  > [!IMPORTANT] 
+  > [!IMPORTANT]
   > 要访问 Azure AD 租户管理以创建帐户，需要使用用户帐户登录 Azure 门户，该用户帐户应是[订阅上“所有者”角色](/azure/billing/billing-add-change-azure-subscription-administrator)的成员。 根据租户的配置，可能还需要成为“全局管理员”目录角色的成员才能[注册应用程序](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)。
   > 建议使用受限帐户进行测试。 请确保该帐户仅具有访问必要 SCC 终结点的权限。 日志记录系统可收集通过命令行传递的明文密码。
 
-1. 按照[向 Azure AD 注册应用，注册新应用程序](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#register-a-new-application-using-the-azure-portal)一节中的步骤进行操作。 出于测试目的，在完成指导步骤时，请对给定属性使用以下值： 
+1. 按照[向 Azure AD 注册应用，注册新应用程序](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#register-a-new-application-using-the-azure-portal)一节中的步骤进行操作。 出于测试目的，在完成指导步骤时，请对给定属性使用以下值：
     - **支持的帐户类型** - 选择“仅此组织目录中的帐户”。
     - **重定向 URI** - 将重定向 URI 类型设置为“公共客户端(移动和桌面)”。 由于 SDK 使用简单的控制台客户端应用程序，因此请使用格式为 `<app-name>://authorize` 的 URI。
 
-2. 完成后，将返回“已注册的应用”页面查看新的应用程序注册  。 复制并保存“应用程序(客户端) ID”  字段中的 GUID，因为稍后需要在快速入门中用到它。 
+2. 完成后，将返回“已注册的应用”页面查看新的应用程序注册  。 复制并保存“应用程序(客户端) ID”  字段中的 GUID，因为稍后需要在快速入门中用到它。
 
 3. 然后，单击“API 权限”  ，以添加客户端需要访问的 API 和权限。 单击“添加权限”  ，以打开“请求获取 API 权限”边栏选项卡。
 
 4. 现在，将添加应用程序在运行时需要的 MIP API 和权限：
    - 在“选择 API”  页上，单击“Azure Rights Management Services”  。
-   - 在“Azure Rights Management Services”  API 页上，单击“委托的权限”  。   
+   - 在“Azure Rights Management Services”  API 页上，单击“委托的权限”  。
    - 在“选择权限”  部分中，选中“user_impersonation”  权限。 这样一来，应用程序可以代表用户创建和访问受保护的内容。
    - 单击“添加权限”  以保存。
 
 5. 重复步骤 #4，但这次当进入“选择 API”页面时，需要搜索 API  。
    - 在“选择 API”  页上，单击“我的组织使用的 API”  ，然后在搜索框中键入“Microsoft 信息保护同步服务”  并选择它。
    - 在“Microsoft 信息保护同步服务”  API 页上，单击“委托的权限”  。
-   - 展开“UnifiedPolicy”  节点，并选中“UnifiedPolicy.User.Read”  
+   - 展开“UnifiedPolicy”  节点，并选中“UnifiedPolicy.User.Read” 
    - 单击“添加权限”  以保存。
 
-6. 返回到“API 权限”  页后，依次单击“为(租户名称)授予管理员同意”  和“是”  。 此步骤预先同意应用程序使用该注册，在指定权限下访问 API。 如果以全局管理员身份登录，则会为运行该应用程序的租户中的所有用户记录同意；反之，它仅适用于你的个人用户帐户。 
+6. 返回到“API 权限”  页后，依次单击“为(租户名称)授予管理员同意”  和“是”  。 此步骤预先同意应用程序使用该注册，在指定权限下访问 API。 如果以全局管理员身份登录，则会为运行该应用程序的租户中的所有用户记录同意；反之，它仅适用于你的个人用户帐户。
 
 完成后，应用程序注册和 API 权限应如下面的示例所示：
 
    [![Azure AD 应用程序注册](media/setup-mip-client/aad-app-registration-overview.png)](media/setup-mip-client/aad-app-registration-overview.png#lightbox) [![Azure AD 应用程序注册](media/setup-mip-client/aad-app-api-permissions.png)](media/setup-mip-client/aad-app-api-permissions.png#lightbox)
 
-要详细了解如何向注册添加 API 和权限，请参阅[配置客户端应用程序以访问 Web API](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app#configure-a-client-application-to-access-web-apis)。 此处可以找到有关添加客户端应用程序所需的 API 和权限信息。  
+要详细了解如何向注册添加 API 和权限，请参阅[配置客户端应用程序以访问 Web API](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app#configure-a-client-application-to-access-web-apis)。 此处可以找到有关添加客户端应用程序所需的 API 和权限信息。
 
 ## <a name="request-an-information-protection-integration-agreement-ipia"></a>请求信息保护集成协议 (IPIA)
 
@@ -229,7 +230,7 @@ ms.locfileid: "79403478"
 - [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=53587)
 - [Microsoft Visual C++ Redistributable for Visual Studio 2017](https://visualstudio.microsoft.com/downloads/#microsoft-visual-c-redistributable-for-visual-studio-2017)
 
-这些仅在应用程序已生成为发行版时才有效。 如果应用程序生成为调试版，则应用程序中必须包含或计算机上必须安装 Visual C++ 运行时调试 DLL。 
+这些仅在应用程序已生成为发行版时才有效。 如果应用程序生成为调试版，则应用程序中必须包含或计算机上必须安装 Visual C++ 运行时调试 DLL。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -237,5 +238,3 @@ ms.locfileid: "79403478"
   - 在开始快速入门部分之前，请务必阅读[观察程序概念](concept-async-observers.md)，了解 C++ API 的异步特性。
   - 如果已准备好获取一些 SDK 使用体验，请从[快速入门：客户端应用程序初始化 (C++)](quick-app-initialization-cpp.md) 开始。
 - 如果你是 C# 开发人员，并且已准备好使用 SDK 体验某些操作，请从[快速入门：客户端应用程序初始化 (C#)](quick-app-initialization-csharp.md) 开始。
-
-

@@ -7,12 +7,13 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 03/30/2020
 ms.author: v-anikep
-ms.openlocfilehash: 62db0dae8eb0c2c7c0f63d9fd995259077601148
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.custom: has-adal-ref
+ms.openlocfilehash: 85c3575aad9315155b2fbfaad991e586435edb37
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81766348"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82972146"
 ---
 # <a name="quickstart-encryptdecrypt-text-using-mip-sdk-c"></a>快速入门：使用 MIP SDK (C#) 加密/解密文本
 

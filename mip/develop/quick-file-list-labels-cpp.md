@@ -6,12 +6,13 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 01/18/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 330ceb37e0c8324a083bf5c5d7240035b9b86a0a
-ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
+ms.custom: has-adal-ref
+ms.openlocfilehash: 07782b754c63b4289bf5630eb41b6885b30c7c78
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "75556038"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82971602"
 ---
 # <a name="quickstart-list-sensitivity-labels-c"></a>快速入门：列出敏感度标签 (C++)
 
@@ -26,11 +27,11 @@ ms.locfileid: "75556038"
 
 ## <a name="add-logic-to-list-the-sensitivity-labels"></a>添加用于列出敏感度标签的逻辑
 
-使用文件引擎对象添加用于列出组织敏感度标签的逻辑。 
+使用文件引擎对象添加用于列出组织敏感度标签的逻辑。
 
 1. 打开在前面的“快速入门：客户端应用程序初始化 (C++)”一文中创建的 Visual Studio 解决方案。
 
-2. 使用“解决方案资源管理器”，打开项目中包含 `main()` 方法的实现的 .cpp 文件  。 它默认与包含它的项目同名，即在项目创建期间指定的名称。 
+2. 使用“解决方案资源管理器”，打开项目中包含 `main()` 方法的实现的 .cpp 文件  。 它默认与包含它的项目同名，即在项目创建期间指定的名称。
 
 3. 在文件顶部附近的 `using mip::FileEngine;` 后面添加以下 `using` 指令：
 
@@ -54,23 +55,23 @@ ms.locfileid: "75556038"
       }
    }
    system("pause");
-   ``` 
+   ```
 
 ## <a name="create-a-powershell-script-to-generate-access-tokens"></a>创建 PowerShell 脚本以生成访问令牌
 
-在 `AuthDelegateImpl::AcquireOAuth2Token` 实现中按照 SDK 的要求使用以下 PowerShell 脚本生成访问令牌。 该脚本使用先前在“MIP SDK 安装和配置”中安装的 ADAL.PS 模块中的 `Get-ADALToken` cmdlet。 
+在 `AuthDelegateImpl::AcquireOAuth2Token` 实现中按照 SDK 的要求使用以下 PowerShell 脚本生成访问令牌。 该脚本使用先前在“MIP SDK 安装和配置”中安装的 ADAL.PS 模块中的 `Get-ADALToken` cmdlet。
 
 1. 创建 PowerShell 脚本文件（.ps1 扩展名），并将以下脚本复制/粘贴到该文件中：
 
    - `$authority` 和 `$resourceUrl` 稍后会在下一部分中更新。
-   - 更新 `$appId` 和 `$redirectUri`，以匹配在 Azure AD 应用注册中指定的值。 
+   - 更新 `$appId` 和 `$redirectUri`，以匹配在 Azure AD 应用注册中指定的值。
 
    ```powershell
-   $authority = '<authority-url>'                   # Specified when SDK calls AcquireOAuth2Token() 
+   $authority = '<authority-url>'                   # Specified when SDK calls AcquireOAuth2Token()
    $resourceUrl = '<resource-url>'                  # Specified when SDK calls AcquireOAuth2Token()
    $appId = '0edbblll-8773-44de-b87c-b8c6276d41eb'  # App ID of the Azure AD app registration
    $redirectUri = 'bltest://authorize'              # Redirect URI of the Azure AD app registration
-   $response = Get-ADALToken -Resource $resourceUrl -ClientId $appId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:RefreshSession 
+   $response = Get-ADALToken -Resource $resourceUrl -ClientId $appId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:RefreshSession
    $response.AccessToken | clip                     # Copy the access token text to the clipboard
    ```
 
@@ -78,7 +79,7 @@ ms.locfileid: "75556038"
 
 ## <a name="build-and-test-the-application"></a>生成和测试应用程序
 
-最后，生成和测试客户端应用程序。 
+最后，生成和测试客户端应用程序。
 
 1. 使用 F6（“生成解决方案”）来生成客户端应用程序  。 如果没有生成错误，请使用 F5（开始调试  ）来运行应用程序。
 
@@ -122,7 +123,7 @@ ms.locfileid: "75556038"
 
 ## <a name="troubleshooting"></a>疑难解答
 
-### <a name="problems-during-execution-of-powershell-script"></a>执行 PowerShell 脚本时出现的问题 
+### <a name="problems-during-execution-of-powershell-script"></a>执行 PowerShell 脚本时出现的问题
 
 | “摘要” | 错误消息 | 解决方案 |
 |---------|---------------|----------|

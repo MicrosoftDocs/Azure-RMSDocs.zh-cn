@@ -6,12 +6,13 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 9f12ff856e7d70c76e3c89700d05aeb653d030cd
-ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
+ms.custom: has-adal-ref
+ms.openlocfilehash: a9e9a2d6534cc674f8bf697543e865a3596d457b
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "75555273"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82972180"
 ---
 # <a name="quickstart-list-sensitivity-labels-c"></a>快速入门：列出敏感度标签 (C#)
 
@@ -26,16 +27,16 @@ ms.locfileid: "75555273"
 
 ## <a name="add-logic-to-list-the-sensitivity-labels"></a>添加用于列出敏感度标签的逻辑
 
-使用文件引擎对象添加用于列出组织敏感度标签的逻辑。 
+使用文件引擎对象添加用于列出组织敏感度标签的逻辑。
 
 1. 打开在前面的“快速入门：客户端应用程序初始化 (C#)”一文中创建的 Visual Studio 解决方案。
 
-2. 使用“解决方案资源管理器”，打开项目中包含 `Main()` 方法的实现的 .cs 文件  。 它默认与包含它的项目同名，即在项目创建期间指定的名称。 
+2. 使用“解决方案资源管理器”，打开项目中包含 `Main()` 方法的实现的 .cs 文件  。 它默认与包含它的项目同名，即在项目创建期间指定的名称。
 
 3. 在靠近 `Main()` 主体的末尾处，在 `Main()` 函数的应用程序关闭部分上方（即在上一快速入门中离开的位置）插入以下代码：
 
   ```csharp
-  // List sensitivity labels from fileEngine and display name and id  
+  // List sensitivity labels from fileEngine and display name and id
   foreach(var label in fileEngine.SensitivityLabels)
   {
       Console.WriteLine(string.Format("{0} : {1}", label.Name, label.Id));
@@ -56,7 +57,7 @@ ms.locfileid: "75555273"
 
 1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序  。 如果没有生成错误，请使用 F5（开始调试  ）来运行应用程序。
 
-2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示。 
+2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示。
 
      [![Visual Studio 获取令牌登录](media/quick-file-list-labels-cpp/acquire-token-sign-in.png)](media/quick-file-list-labels-cpp/acquire-token-sign-in.png#lightbox)
 

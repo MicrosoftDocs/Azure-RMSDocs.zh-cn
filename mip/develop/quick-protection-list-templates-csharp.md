@@ -6,12 +6,13 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 03/30/2020
 ms.author: v-anikep
-ms.openlocfilehash: 0a71ac710aec82c7a5de16c7f603ccdfe4803f79
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.custom: has-adal-ref
+ms.openlocfilehash: ec6439747b7a826a09851739a96ccdec3f5705f4
+ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81766297"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82972112"
 ---
 # <a name="quickstart-list-templates-c"></a>快速入门：列出模板 (C#)
 
@@ -22,7 +23,7 @@ ms.locfileid: "81766297"
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
 - 首先完成[快速入门：客户端应用程序初始化 - 保护 API (C#)](quick-protection-app-initialization-csharp.md)，以生成 Visual Studio 初学者解决方案。 此“列出保护模板”快速入门需依赖前者来正确创建初学者解决方案。
-- 可选：查看 [RMS 模板](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)概念。 
+- 可选：查看 [RMS 模板](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)概念。
 
 ## <a name="add-logic-to-list-the-protection-templates"></a>添加逻辑以列出保护模板
 
@@ -35,15 +36,15 @@ ms.locfileid: "81766297"
 3. 在靠近 `Main()` 主体的末尾处，在 `Main()` 函数的应用程序关闭部分上方（即在上一快速入门中离开的位置）插入以下代码：
 
   ```csharp
-  // List protection templates using protectionEngine and display the list  
-  
+  // List protection templates using protectionEngine and display the list
+
   var templates=protectionEngine.GetTemplates();
 
   for(int i = 0; i < templates.Count; i++)
   {
       Console.WriteLine("{0}: {1}", i.ToString(), templates[i].Name + " : " + templates[i].Id);
   }
-  
+
   Console.WriteLine("Press a key to continue...");
   ```
 
@@ -55,7 +56,7 @@ ms.locfileid: "81766297"
 
 2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示。
 
-     [![Visual Studio 获取令牌登录](media/quick-file-list-labels-cpp/acquire-token-sign-in.png)](media/quick-file-list-labels-cpp/acquire-token-sign-in.png#lightbox) 
+     [![Visual Studio 获取令牌登录](media/quick-file-list-labels-cpp/acquire-token-sign-in.png)](media/quick-file-list-labels-cpp/acquire-token-sign-in.png#lightbox)
 
    - 可能还需同意应用程序在登录帐户下运行时访问 MIP API。 如果未事先同意 Azure AD 应用程序注册（如“MIP SDK 安装和配置”中所述），或者使用其他租户（而非应用程序注册所在的租户）中的帐户登录，就会出现这种情况。 只需单击“接受”即可记录你的同意  。
 
