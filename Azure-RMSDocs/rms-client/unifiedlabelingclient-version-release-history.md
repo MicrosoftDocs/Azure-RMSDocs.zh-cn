@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/08/2020
+ms.date: 05/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 51691ed4ae5e6a8cebdc372f4be21e25bf12db27
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: 56194d242f6b079fc04765c8ceeeac5cddbf557d
+ms.sourcegitcommit: 93376be8c80776e572f1233812ef39fbabbbd0b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82972061"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83550848"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -28,7 +28,7 @@ ms.locfileid: "82972061"
 
 你可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端。
 
-在通常几周的短暂延迟后，最新的正式发行版还会包含在 Microsoft 更新目录中，该目录中包含产品名称**Microsoft Azure 信息保护** > **Microsoft Azure 信息保护统一标签客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
+在通常几周的短暂延迟后，最新的正式发行版还会包含在 Microsoft 更新目录中，该目录中包含产品名称**Microsoft Azure 信息保护**  >  **Microsoft Azure 信息保护统一标签客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
 
 有关详细信息，请参阅[升级和维护 Azure 信息保护统一标签客户端](clientv2-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-unified-labeling-client)。
 
@@ -63,7 +63,6 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 此客户端正在替换 Azure 信息保护客户端（经典）。 若要将特性和功能与经典客户端进行比较，请参阅[比较适用于 Windows 计算机的标记客户端](use-client.md#compare-the-labeling-clients-for-windows-computers)。
 
 ## <a name="version-27930"></a>版本2.7.93。0
-统一标签客户端（正式发布） 
 
 统一标记扫描器（公共预览版）版本2.7.93。0
 
@@ -134,7 +133,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
     
     - 将扫描仪配置为使用同一扫描程序配置文件时，多个扫描程序可以共享相同的 SQL Server 数据库。 此配置可以更轻松地管理多个扫描仪，并缩短扫描时间。 当你使用此配置时，请始终等待扫描仪完成安装，然后再使用同一配置文件安装另一个扫描程序。
     
-    - 安装扫描程序时，必须指定配置文件，并将扫描程序数据库命名**AIPScannerUL_\<profile_name>**。 *配置文件*参数对于 install-aipscanner 是必需的。
+    - 安装扫描程序时，必须指定配置文件，并将扫描程序数据库命名**AIPScannerUL_ \< profile_name>**。 *配置文件*参数对于 install-aipscanner 是必需的。
     
     - 即使已标记文档，也可以在所有文档上设置一个默认标签。 在 "扫描程序配置文件" 或 "存储库设置" 中，将 "重新**标记文件**" 选项设置为 "**打开**"，并选择 "新建**强制默认标签**
     
@@ -183,7 +182,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 **其他更改**
 
-- [重置设置](clientv2-admin-guide.md#more-information-about-the-reset-settings-option)现在会删除%LocalAppData%\Microsoft\MSIP\mip\\*\<\> ProcessName*文件夹，而不是%LocalAppData%\Microsoft\MSIP\mip\\*\<ProcessName\>* \mip 文件夹。
+- [重置设置](clientv2-admin-guide.md#more-information-about-the-reset-settings-option)现在会删除%LocalAppData%\Microsoft\MSIP\mip \\ * \< \> ProcessName*文件夹，而不是%LocalAppData%\Microsoft\MSIP\mip \\ * \< ProcessName \> *\mip 文件夹。
 
 - [Get-aipfilestatus](/powershell/module/azureinformationprotection/get-aipfilestatus)现在包含受保护文档的内容 ID。
 
