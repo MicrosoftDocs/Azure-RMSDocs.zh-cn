@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: user
 search.appverid:
 - MET150
-ms.openlocfilehash: 6d9dc21d2541ab9aeb6d6fc6772781e1c23c1f2e
-ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
+ms.openlocfilehash: c3501f151d8c894abc92408192a7ef86d28ad8df
+ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2019
-ms.locfileid: "75326354"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83746955"
 ---
 # <a name="pdf-readers-that-support-microsoft-information-protection"></a>支持 Microsoft 信息保护的 PDF 读者
 
@@ -31,15 +31,15 @@ ms.locfileid: "75326354"
 
 选择用来安装 PDF 读取器的设备，该设备可以打开受保护的 PDF 文档。 所有这些读者都可以打开受保护的文档，这些文档符合 PDF 加密的 ISO 标准：
 
-- **计算机**： [Windows](protected-pdf-readers-windows.md) | [MacOS](protected-pdf-readers-mac.md)
+- **计算机**： [Windows](protected-pdf-readers-windows.md)  |  [MacOS](protected-pdf-readers-mac.md)
 
-- **移动设备**： [Android](protected-pdf-readers-android.md) | [iOS](protected-pdf-readers-ios.md)
+- **移动设备**： [Android](protected-pdf-readers-android.md)  |  [iOS](protected-pdf-readers-ios.md)
 
 ### <a name="support-for-previous-formats"></a>支持以前的格式
 
 下表中的 PDF 读者支持文件扩展名为 ppdf 的受保护的 PDF 文档和具有 .pdf 文件扩展名的旧格式。 
 
-目前，SharePoint Online 和本地 SharePoint 在受 IRM 保护的库中使用 PDF 文档的旧格式。
+目前，Microsoft SharePoint 在受 IRM 保护的库中使用的 PDF 文档格式较旧。
 
 
 |操作系统|受支持的阅读器|

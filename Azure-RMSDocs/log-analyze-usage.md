@@ -13,16 +13,16 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 63fbe078b6f1a5cbae120e869cc139dda9c8850e
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: 234c661133aa61dfa3636671d903fb78c364a678
+ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79404192"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83747098"
 ---
 # <a name="logging-and-analyzing-the-protection-usage-from-azure-information-protection"></a>记录和分析 Azure 信息保护中的保护使用情况
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 使用此信息来帮助你了解如何使用 Azure 信息保护中的保护服务（Azure Rights Management）的使用日志记录。 此保护服务为组织的文档和电子邮件提供数据保护，并可以记录每个请求。 这些请求包括在用户保护文档和电子邮件以及使用此内容时，管理员为该服务执行的操作，以及 Microsoft 操作员为了支持 Azure 信息保护部署而执行的操作。 
 
@@ -40,7 +40,7 @@ ms.locfileid: "79404192"
 
 -   **执行取证分析**
 
-    如果遇到信息泄露，安全人员很可能向你询问最近谁访问了特定文档，以及可疑人员最近访问了哪些信息。 使用此日志记录时，你可以回答这些类型的问题，因为使用受保护内容的用户必须始终获取 Rights Management 许可证才能打开受 Azure 信息保护保护的文档和图片，即使这些文件由移动电子邮件或复制到 USB 驱动器或其他存储设备。 这意味着，当你使用 Azure 信息保护来保护你的数据时，可以使用这些日志作为权威性的信息源进行取证分析。
+    如果遇到信息泄露，安全人员很可能向你询问最近谁访问了特定文档，以及可疑人员最近访问了哪些信息。 使用此日志记录时，可以回答这些类型的问题，因为使用受保护内容的用户必须始终获取 Rights Management 许可证才能打开受 Azure 信息保护保护的文档和图片，即使这些文件通过电子邮件移动或复制到 USB 驱动器或其他存储设备也是如此。 这意味着，当你使用 Azure 信息保护来保护你的数据时，可以使用这些日志作为权威性的信息源进行取证分析。
 
 除了此使用日志记录之外，还可以使用以下日志记录选项：
 
@@ -48,8 +48,8 @@ ms.locfileid: "79404192"
 |----------------|---------------|
 |管理员日志|记录保护服务的管理任务。 例如，在停用服务的情况下，启用超级用户功能时，以及向用户委派服务的管理员权限时。 <br /><br />有关详细信息，请参阅 PowerShell cmdlet [AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog)。|
 |文档跟踪|允许用户跟踪和撤消其使用 Azure 信息保护客户端跟踪的文档。 全局管理员也可以代表用户跟踪这些文档。 <br /><br />有关详细信息，请参阅[配置和使用 Azure 信息保护的文档跟踪](./rms-client/client-admin-guide-document-tracking.md)。|
-|客户端事件日志|Azure 信息保护客户端的使用活动记录在本地 Windows“应用程序和服务”事件日志和“Azure 信息保护”中。 <br /><br />有关详细信息，请参阅 [Azure 信息保护客户端的使用日志记录](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)。|
-|客户端日志文件|有关 Azure 信息保护客户端的疑难解答日志，位于 %localappdata%\Microsoft\MSIP 中。 <br /><br />这些文件专门设计供 Microsoft 支持部门使用。|
+|客户端事件日志|Azure 信息保护客户端的使用活动记录在本地 Windows“应用程序和服务”**** 事件日志和“Azure 信息保护”**** 中。 <br /><br />有关详细信息，请参阅 [Azure 信息保护客户端的使用日志记录](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)。|
+|客户端日志文件|有关 Azure 信息保护客户端的疑难解答日志，位于 %localappdata%\Microsoft\MSIP**** 中。 <br /><br />这些文件专门设计供 Microsoft 支持部门使用。|
 
 此外，会收集并聚合 Azure 信息保护客户端使用情况日志和 Azure 信息保护扫描程序中的信息以在 Azure 门户中创建报表。 有关详细信息，请参阅 [Azure 信息保护报表](reports-aip.md)。
 
@@ -110,9 +110,9 @@ Azure 信息保护将日志作为一系列 blob 写入。
 ### <a name="the-blob-format"></a>Blob 格式
 所有 Blob 都采用 W3C 扩展日志格式。 开头是以下两行：
 
-**#Software:RMS**
+**#软件：RMS**
 
-**#Version:1.1**
+**#Version：1。1**
 
 第一行标识这些是 Azure 信息保护中的保护日志。 第二行标识 Blob 的剩余部分遵循版本 1.1 规范。 我们建议，用于解析这些日志的任何应用程序都应先验证这两行，然后再继续解析 Blob 的剩余部分。
 
@@ -129,26 +129,26 @@ Azure 信息保护将日志作为一系列 blob 写入。
 |      time      |     时间      |                                                                                                            为请求提供服务时的 UTC 时间（24 小时格式）。<br /><br />源是为请求提供服务的服务器上的本地时钟。                                                                                                            |                                                              21:59:28                                                               |
 |     row-id     |     文本      |                                                                           此日志记录的唯一 GUID。 如果不存在值，则使用 correlation-id 值来标识该条目。<br /><br />在你整合日志或将日志复制为其他格式时，这个值是有用的。                                                                           |                                                1c3fe7a9-d9e0-4654-97b7-14fafa72ea63                                                 |
 |  request-type  |     名称      |                                                                                                                                                            所请求的 RMS API 的名称。                                                                                                                                                            |                                                           AcquireLicense                                                            |
-|    user-id     |    字符串     |                                                               发出请求的用户。<br /><br />该值包括在单引号中。 由你管理的租户密钥 (BYOK) 所发出的调用具有值 **"** ，这也适用于请求类型为匿名时的情况。                                                                |                                                          ‘joe@contoso.com’                                                          |
-|     result     |    字符串     |                                                                                                                  如果成功地为请求提供服务，则为 ‘Success’。<br /><br />如果为请求提供服务失败，则在单引号中显示错误类型。                                                                                                                   |                                                              'Success'                                                              |
+|    user-id     |    String     |                                                               发出请求的用户。<br /><br />该值包括在单引号中。 由你管理的租户密钥 (BYOK) 所发出的调用具有值 **"**，这也适用于请求类型为匿名时的情况。                                                                |                                                          ‘joe@contoso.com’                                                          |
+|     result     |    String     |                                                                                                                  如果成功地为请求提供服务，则为 ‘Success’。<br /><br />如果为请求提供服务失败，则在单引号中显示错误类型。                                                                                                                   |                                                              “Success”                                                              |
 | correlation-id |     文本      |                                                                                                 在 RMS 客户端日志和服务器日志之间通用的针对给定请求的 GUID。<br /><br />此值有助于你解决客户端问题。                                                                                                 |                                                cab52088-8925-4371-be34-4b71a3112356                                                 |
 |   content-id   |     文本      |                                                                      包括在大括号中的 GUID，标识受保护内容（例如某个文档）。<br /><br />只有当 request-type 为 AcquireLicense 时，此字段才具有值，对于其他所有请求类型，此字段都为空。                                                                       |                                               {bb4af47b-cfed-4719-831d-71b98191a4f2}                                                |
-|  owner-email   |    字符串     |                                                                                                                       文档所有者的电子邮件地址。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                        |                                                          alice@contoso.com                                                          |
-|     issuer     |    字符串     |                                                                                                                          文档发布者的电子邮件地址。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                          |                       alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com’                       |
-|  template-id   |    字符串     |                                                                                                                    用于保护文档的模板的 ID。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                     |                                               {6d9371a6-4e2d-4e97-9a38-202233fed26e}                                                |
-|   file-name    |    字符串     | 使用适用于 Windows 的 Azure 信息保护客户端跟踪的受保护文档的文件名。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。 |                                                       TopSecretDocument.docx                                                        |
-| date-published |     Date      |                                                                                                                          保护文档时的日期。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                           |                                                         2015-10-15T21:37:00                                                         |
-|     c-info     |    字符串     |                                                                                   有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。                                                                                   | 'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64' |
-|      c-ip      |    地址    |                                                                                                                                                       发出请求的客户端的 IP 地址。                                                                                                                                                        |                                                            64.51.202.144                                                            |
+|  owner-email   |    String     |                                                                                                                       文档所有者的电子邮件地址。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                        |                                                          alice@contoso.com                                                          |
+|     颁发者     |    String     |                                                                                                                          文档发布者的电子邮件地址。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                          |                       alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com’                       |
+|  template-id   |    String     |                                                                                                                    用于保护文档的模板的 ID。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                     |                                               {6d9371a6-4e2d-4e97-9a38-202233fed26e}                                                |
+|   file-name    |    String     | 使用适用于 Windows 的 Azure 信息保护客户端跟踪的受保护文档的文件名。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。 |                                                       TopSecretDocument.docx                                                        |
+| date-published |     日期      |                                                                                                                          保护文档时的日期。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                           |                                                         2015-10-15T21:37:00                                                         |
+|     c-info     |    String     |                                                                                   有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。                                                                                   | 'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64' |
+|      c-ip      |    地址    |                                                                                                                                                       发出请求的客户端的 IP 地址。                                                                                                                                                        |                                                            64。51。202。144                                                            |
 |  admin-action  |     Bool      |                                                                                                                                    管理员是否已在管理员模式下访问文档跟踪站点。                                                                                                                                    |                                                                True                                                                 |
-| acting-as-user |    字符串     |                                                                                                                               管理员正在访问其文档跟踪站点的用户的电子邮件地址。                                                                                                                                |                                                          'joe@contoso.com'                                                          |
+| acting-as-user |    String     |                                                                                                                               管理员正在访问其文档跟踪站点的用户的电子邮件地址。                                                                                                                                |                                                          'joe@contoso.com'                                                          |
 
 #### <a name="exceptions-for-the-user-id-field"></a>user-id 字段的例外
 虽然 user-id 字段通常指示发出请求的用户，但在两种例外情况下，该值不映射到真正用户：
 
--   值 **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'** 。
+-   值 **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**。
 
-    它指示 Office 365 服务（例如 Exchange Online 或 SharePoint Online）正在发出请求。 在此字符串中， *&lt;YourTenantID&gt;* 是你租户的 GUID， *&lt;region&gt;* 是你租户注册的区域。 例如， **na** 代表北美， **eu** 代表欧洲， **ap** 代表亚洲。
+    这表示 Office 365 服务（如 Exchange Online 或 Microsoft SharePoint）正在发出请求。 在字符串中， * &lt; YourTenantID &gt; *是租户的 GUID，而* &lt; 区域 &gt; *是租户注册的区域。 例如，**na** 代表北美，**eu** 代表欧洲，**ap** 代表亚洲。
 
 -   如果你使用 RMS 连接器。
 
@@ -164,7 +164,7 @@ Azure 信息保护将日志作为一系列 blob 写入。
 |AcquireTemplates|进行调用以基于模板 ID 获取模板|
 |AcquireTemplateInformation|进行调用以从服务获取模板的 ID。|
 |AddTemplate|从 Azure 门户进行调用以添加模板。|
-|AllDocsCsv|从文档跟踪站点进行调用，以便从“所有文档”页面下载 CSV 文件。|
+|AllDocsCsv|从文档跟踪站点进行调用，以便从“所有文档”**** 页面下载 CSV 文件。|
 |BECreateEndUserLicenseV1|从移动设备进行调用以创建最终用户许可证。|
 |BEGetAllTemplatesV1|从移动设备（后端）进行调用以获取所有模板。|
 |Certify|客户端正在认证用户对受保护内容的使用和创建情况。|
@@ -175,13 +175,13 @@ Azure 信息保护将日志作为一系列 blob 写入。
 |FECreatePublishingLicenseV1|与 Certify 和 GetClientLicensorCert 组合请求相同，来自移动客户端。|
 |FEGetAllTemplates|从移动设备（前端）进行调用以获取模板。|
 |FindServiceLocationsForUser|进行调用以查询 URL，使用该项来调用 Certify 或 AcquireLicense。|
-|GetAllDocs|从文档跟踪站点进行调用，以便为用户加载“所有文档”页面，或者搜索该租户的所有文档。 将此值与 admin-action 和 acting-as-admin 字段结合使用：<br /><br />- admin-action 为空：用户在“所有文档”页面中查看自己的文档。<br /><br />- admin-action 为 true 且 acting-as-user 为空：管理员查看其租户的所有文档。<br /><br />- admin-action 为 true 且 acting-as-user 不为空：管理员查看用户的“所有文档”页面。|
+|GetAllDocs|从文档跟踪站点进行调用，以便为用户加载“所有文档”**** 页面，或者搜索该租户的所有文档。 将此值与 admin-action 和 acting-as-admin 字段结合使用：<br /><br />- admin-action 为空：用户在“所有文档”**** 页面中查看自己的文档。<br /><br />- admin-action 为 true 且 acting-as-user 为空：管理员查看其租户的所有文档。<br /><br />- admin-action 为 true 且 acting-as-user 不为空：管理员查看用户的“所有文档”**** 页面。|
 |GetAllTemplates|从 Azure 门户进行调用以获取所有模板。|
 |GetClientLicensorCert|客户端正在从基于 Windows 的计算机请求发布证书（随后用于保护内容）。|
 |GetConfiguration|调用 Azure PowerShell cmdlet 以获取 Azure RMS 租户的配置。|
 |GetConnectorAuthorizations|从 RMS 连接器进行调用以从云中获取其配置。|
 |GetRecipients|从文档跟踪站点进行调用，以便导航到单个文档的列表视图。|
-|GetSingle|从文档跟踪站点进行调用，以便导航到“单个文档”页面。|
+|GetSingle|从文档跟踪站点进行调用，以便导航到“单个文档”**** 页面。|
 |GetTenantFunctionalState|Azure 门户正在检查是否已激活保护服务（Azure Rights Management）。|
 |GetTemplateById|从 Azure 门户进行调用以通过指定模板 ID 来获取模板。|
 |KeyVaultDecryptRequest|客户端正在尝试解密受 RMS 保护的内容。 仅适用于 Azure 密钥保管库中客户托管的租户密钥 (BYOK)。|

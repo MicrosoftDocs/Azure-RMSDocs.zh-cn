@@ -12,18 +12,18 @@ ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9e14cd34dd31dda6942c028fa9a68778eaaaed3a
-ms.sourcegitcommit: 479b3aaea7011750ff85a217298e5ae9185c1dd1
+ms.openlocfilehash: cc23496dc8ceedeb463205147a076d8a98d58c75
+ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82224574"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83746159"
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>应用程序如何支持 Azure Rights Management 服务
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-使用以下信息可帮助你了解最常使用的最终用户应用程序和服务如何使用 Azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的文档和电子邮件。 这些应用程序包括 Word、Excel、PowerPoint 和 Outlook。 服务包括 Exchange 和 SharePoint。
+使用以下信息可帮助你了解最常使用的最终用户应用程序和服务如何使用 Azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的文档和电子邮件。 这些应用程序包括 Word、Excel、PowerPoint 和 Outlook。 服务包括 Exchange 和 Microsoft SharePoint。
 
 > [!NOTE]
 > 若要验证 Azure Rights Management 服务支持的应用程序和版本，请参阅[支持 Azure Rights Management 数据保护的应用程序](./requirements-applications.md)。
@@ -40,7 +40,7 @@ ms.locfileid: "82224574"
 
 - Exchange Online 和 Exchange Server 使用服务端索引，因而用户的受保护的电子邮件将自动显示在其搜索结果中。 
 
-- SharePoint Online 和 SharePoint Server 仅在下载时对文件应用 Rights Management 保护。 此实现意味着 SharePoint 上的索引和搜索结果不受此文档保护解决方案的影响。 但是，如果你希望将文档存储在 SharePoint 中且不希望在搜索结果中返回该文档，请在将其上传到 SharePoint 之前，对其进行保护。
+- Microsoft 365 和 SharePoint Server 中的 SharePoint 仅在下载时将 Rights Management 保护应用到文件。 此实现意味着 SharePoint 上的索引和搜索结果不受此文档保护解决方案的影响。 但是，如果你希望将文档存储在 SharePoint 中且不希望在搜索结果中返回该文档，请在将其上传到 SharePoint 之前，对其进行保护。
 
 - Windows 桌面搜索在设备的不同用户间使用共享索引，以便持续保护受保护文档中的数据，它不对受保护的文件进行索引。 这意味着，虽然你的搜索结果不包含已保护的文件，但你可以确保包含敏感数据的文件不会显示在可能登录到你的电脑或连接到你的电脑的其他用户的搜索结果中。 
 
@@ -52,5 +52,5 @@ ms.locfileid: "82224574"
 
 -   [运行 Windows Server 和使用文件分类基础结构（FCI）的文件服务器](file-server-support.md)
 
--   [支持 RMS Api 的其他应用程序](api-support.md)
+-   [支持 RMS API 的其他应用程序](api-support.md)
 

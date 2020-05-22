@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 29c41a53bef195a1a80d728fdf40cfc262533373
-ms.sourcegitcommit: f21f3abf9754d3cd1ddfc6eb00d61277962b88e1
+ms.openlocfilehash: 0cfa11ca1f0a0ba345b35d5e669ca58802157565
+ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82799157"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83747170"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure 信息保护的中心报告
 
@@ -145,7 +145,7 @@ Azure 信息保护允许收集和存储标识为敏感信息类型（预定义�
 
 - 对于统一标签客户端，请在标签策略中配置[高级设置](./rms-client/clientv2-admin-guide-customizations.md#send-information-type-matches-to-azure-information-protection-analytics)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
 
 |要求|详细信息|
@@ -223,7 +223,7 @@ Azure Monitor 日志具有**使用情况和预估成本**功能，可帮助您�
     
 2. 找到 "**管理**" 菜单选项，然后选择 "**配置分析（预览版）**"。
 
-3. 在 " **Azure 信息保护日志分析**" 窗格中，可以看到租户拥有的任何 Log Analytics 工作区的列表。 执行以下操作之一：
+3. 在 " **Azure 信息保护日志分析**" 窗格中，可以看到租户拥有的任何 Log Analytics 工作区的列表。 执行下列操作之一：
     
     - 若要创建新的 Log Analytics 工作区：选择 "**创建新工作区**"，然后在 " **Log Analytics 工作区**" 窗格上提供所需的信息。
     
@@ -233,7 +233,7 @@ Azure Monitor 日志具有**使用情况和预估成本**功能，可帮助您�
 
 4. 如果你有 Azure 信息保护客户端（经典），请选中此复选框，以在你想要存储标识为敏感信息类型的实际数据时，**启用对敏感数据的更深入分析**。 有关此设置的详细信息，请参阅此页上的 "[内容匹配" 以获取深入分析](#content-matches-for-deeper-analysis)部分。
 
-5. 选择“确定”  。
+5. 选择“确定” 。
 
 你现在可以查看报表。
 
@@ -290,7 +290,7 @@ Azure 信息保护的记录数据存储在下表中：InformationProtectionLogs_
 |ProtectionBefore|更改前的保护类型 [JSON] |
 |MachineName |FQDN （如果可用）;否则为主机名|
 |DeviceRisk|WDATP 可用时的设备风险评分|
-|Platform|设备平台（Win、OSX、Android、iOS） |
+|平台|设备平台（Win、OSX、Android、iOS） |
 |ApplicationName|应用程序友好名称|
 |AIPVersion|执行审核操作的 Azure 信息保护客户端的版本 |
 |TenantId|Azure AD 租户 ID |
@@ -309,8 +309,8 @@ Azure 信息保护的记录数据存储在下表中：InformationProtectionLogs_
 |ProtectedBefore|是否在更改之前保护内容：是/否 |
 |ProtectionOwnerBefore|更改前 Rights Management 所有者 |
 |UserJustification|降级或删除标签时的理由|
-|LastModifiedBy|上次修改文件的 UPN 格式的用户。 仅适用于 Office 和 SharePoint Online|
-|LastModifiedDate|格式为 YYYY-MM-DD 的 UTC-YYYY-MM-DDTHH： MM： SS：仅适用于 Office & SharePoint Online |
+|LastModifiedBy|上次修改文件的 UPN 格式的用户。 仅适用于 Office 和 SharePoint|
+|LastModifiedDate|格式为 YYYY-MM-DD 的 UTC-YYYY-MM-DDTHH： MM： SS：仅适用于 Office 和 SharePoint |
 
 
 #### <a name="examples-using-informationprotectionevents"></a>使用 InformationProtectionEvents 的示例

@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0a3386f37b6f8197abe56b4db3138de402eaca7d
-ms.sourcegitcommit: f21f3abf9754d3cd1ddfc6eb00d61277962b88e1
+ms.openlocfilehash: aff9e38a43779f9297d9371fa4bc034b36885875
+ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82799123"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83746310"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -86,7 +86,7 @@ ms.locfileid: "82799123"
 
 - **显示名称**是用户看到的标签名称，并且在所有标签中不必唯一。 例如，用户会看到一个**员工**子标签了 "**机密**" 标签，而另一个**员工子标签 "** **高度机密**" 标签。 这些子标签都显示相同的名称，但不是相同的标签，并且具有不同的设置。
 
-若要配置标签高级设置，请使用 "**名称**" 值。 例如，若要标识下图中的标签，请指定`-Identity "All Company"`：
+若要配置标签高级设置，请使用 "**名称**" 值。 例如，若要标识下图中的标签，请指定 `-Identity "All Company"` ：
 
 ![使用 "Name" 而不是 "Display Name" 标识敏感度标签](../media/labelname_scc.png)
 
@@ -120,7 +120,7 @@ ms.locfileid: "82799123"
 
 |设置|应用场景和说明|
 |----------------|---------------|
-|AdditionalPPrefixExtensions|[支持更改\<EXT>。使用此高级\<属性 .Pfile 到 P EXT>](#additionalpprefixextensions)
+|AdditionalPPrefixExtensions|[支持更改 \< EXT>。\<使用此高级属性 .pfile 到 P EXT>](#additionalpprefixextensions)
 |AttachmentAction|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 |AttachmentActionTip|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments) 
 |DisableMandatoryInOutlook|[使 Outlook 邮件免于强制标记](#exempt-outlook-messages-from-mandatory-labeling)
@@ -261,11 +261,11 @@ ms.locfileid: "82799123"
 
 - 密钥： **PFileSupportedExtensions**
 
-- 值： ** \<字符串值>** 
+- 值： ** \< 字符串值>** 
 
 使用下表来确定要指定的字符串值：
 
-| 字符串值| 客户端| 扫描仪|
+| 字符串值| Client| 扫描仪|
 |-------------|-------|--------|
 |\*|默认值：将保护应用于所有文件类型|将保护应用于所有文件类型|
 |\<null 值>| 将保护应用于 Office 文件类型和 PDF 文件| 默认值：将保护应用于 Office 文件类型和 PDF 文件|
@@ -287,19 +287,19 @@ ms.locfileid: "82799123"
 
 ### <a name="additionalpprefixextensions"></a>AdditionalPPrefixExtensions
 
-统一标签客户端支持更改\<EXT>。.PFILE to P\<EXT> 通过使用 Advanced 属性**AdditionalPPrefixExtensions**。 右键单击、PowerShell 和扫描程序支持此高级属性。 所有应用都有类似的行为。   
+统一标签客户端支持更改 \< EXT>。.PFILE to P \< EXT> 通过使用 advanced 属性**AdditionalPPrefixExtensions**。 右键单击、PowerShell 和扫描程序支持此高级属性。 所有应用都有类似的行为。   
 
 - 密钥： **AdditionalPPrefixExtensions**
 
-- 值： ** \<字符串值>** 
+- 值： ** \< 字符串值>** 
 
 使用下表来确定要指定的字符串值：
 
 | 字符串值| 客户端和扫描程序|
 |-------------|---------------|
-|\*|所有 .Pfile 扩展将变为\<P EXT>|
+|\*|所有 .Pfile 扩展将变为 P \< EXT>|
 |\<null 值>| 默认值的行为类似于默认的保护值。|
-|Convertto-html-Json （"dwg"，".zip"）|除了前面的列表，"dwg" 和 ".zip" 将变为 P\<EXT>| 
+|Convertto-html-Json （"dwg"，".zip"）|除了前面的列表，"dwg" 和 ".zip" 将变为 P \< EXT>| 
 
 示例1： PowerShell 命令的行为类似于默认行为，即保护 "dwg" 变为 ".pfile"：
 
@@ -313,7 +313,7 @@ ms.locfileid: "82799123"
 
     Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions =ConvertTo-Json(".dwg")}
 
-对于此设置，以下扩展（". txt"，".xml"，".bmp"，". jt"，".jpg"，"jpeg"，". jpe"，". jif"，"jfif"，"."，".png"，".tif"，". tiff"，".gif"）始终变为 P\<EXT>。 值得注意的是，".ptxt" 不是 ".pfile"。 
+对于此设置，以下扩展（". txt"，".xml"，".bmp"，". jt"，".jpg"，"jpeg"，". jpe"，". jif"，"jfif"，"."，".png"，".tif"，". tiff"，".gif"）始终变为 P \< EXT>。 值得注意的是，".ptxt" 不是 ".pfile"。 
 仅当启用了高级属性- [**PFileSupportedExtension**](#pfilesupportedextension)的 pfile 保护时， **AdditionalPPrefixExtensions**才有效。 
 
 例如，在使用以下命令时：
@@ -386,7 +386,7 @@ ms.locfileid: "82799123"
 
 此设置适用于用户将带标签的文档附加到电子邮件，且未标记电子邮件本身。 在这种情况下，将根据应用于附件的分类标签为其自动选择标签。 最大分类标签处于选中状态。
 
-附件必须是物理文件，并且不能是指向文件的链接（例如，指向 SharePoint 或 OneDrive for Business 文件的链接）。
+附件必须是物理文件，并且不能是指向文件的链接（例如，指向 Microsoft SharePoint 或 OneDrive 上的文件的链接）。
 
 你可以将此设置配置为 "**建议**"，以使用户可以使用可自定义的工具提示将所选标签应用到其电子邮件。 用户可接受或忽略该建议。 或者，你可以将此设置配置为**自动**，其中所选标签会自动应用，但用户可以在发送电子邮件之前删除标签或选择其他标签。
 
@@ -403,7 +403,7 @@ ms.locfileid: "82799123"
 
 - 密钥2： **AttachmentActionTip**
 
-- 键值2： "\<自定义工具提示>"
+- 键值2： " \< 自定义工具提示>"
 
 自定义工具提示仅支持一种语言。
 
@@ -421,7 +421,7 @@ ms.locfileid: "82799123"
 
 - 密钥：ReportAnIssueLink****
 
-- 值： ** \<HTTP 字符串>**
+- 值： ** \< HTTP 字符串>**
 
 网站示例值：`https://support.contoso.com`
 
@@ -467,19 +467,19 @@ ms.locfileid: "82799123"
     
     - 密钥： **OutlookWarnUntrustedCollaborationLabel**
     
-    - 值： \<**标记 guid，用逗号分隔**>
+    - 值： \< **标记 guid，用逗号分隔**>
 
 - 对齐消息：
     
     - 密钥： **OutlookJustifyUntrustedCollaborationLabel**
     
-    - 值： \<**标记 guid，用逗号分隔**>
+    - 值： \< **标记 guid，用逗号分隔**>
 
 - 阻止邮件：
     
     - 密钥： **OutlookBlockUntrustedCollaborationLabel**
     
-    - 值： \<**标记 guid，用逗号分隔**>
+    - 值： \< **标记 guid，用逗号分隔**>
 
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
@@ -518,7 +518,7 @@ ms.locfileid: "82799123"
     
     - 值： **\<** 域名，用逗号分隔**>**
 
-例如，你为 "**机密 \ 所有员工**" 标签指定了**OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定**OutlookJustifyTrustedDomains**和**contoso.com**的其他高级客户端设置。 因此，用户可以john@sales.contoso.com在将其标记为 "**机密 \ 所有员工**" 时向其发送电子邮件，但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
+例如，你为 "**机密 \ 所有员工**" 标签指定了**OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定**OutlookJustifyTrustedDomains**和**contoso.com**的其他高级客户端设置。 因此，用户可以 john@sales.contoso.com 在将其标记为 "**机密 \ 所有员工**" 时向其发送电子邮件，但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -707,7 +707,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥： **ScannerConcurrencyLevel**
 
-- 值： ** \<并发线程数>**
+- 值： ** \< 并发线程数>**
 
 示例 PowerShell 命令，其中标签策略命名为 "Scanner"：
 
@@ -786,7 +786,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥： **labelByCustomProperties**
 
-- 值：**安全孤岛标签包含内部、分类、。\*Internal.\***
+- 值：**安全孤岛标签包含内部、分类、。 \*内部。 \* **
 
 示例 PowerShell 命令，其中标签命名为 "General"：
 
@@ -923,7 +923,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥： **DefaultSubLabelId**
 
-- 值： \<子标签 GUID>
+- 值： \< 子标签 GUID>
 
 示例 PowerShell 命令，其中的父标签命名为 "机密"，而 "所有 Employees" 子标签具有8faca7b8-8d20-48a3-8ea2-0f96310a848e 的 GUID：
 
@@ -938,7 +938,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 对于 Word、Excel 和 PowerPoint，自动分类在后台持续运行。
 
 此行为不会对 Outlook 变化。
-当 Azure 信息保护统一标签客户端定期检查文档中指定的条件规则时，此行为将为存储在 SharePoint Online 中的文档启用自动和建议的分类和保护。 由于已运行条件规则，因此大型文件可实现更快保存。
+当 Azure 信息保护统一标签客户端定期检查文档中指定的条件规则时，此行为将为存储在 SharePoint 中的文档启用自动和建议的分类和保护。 由于已运行条件规则，因此大型文件可实现更快保存。
 
 条件规则不会作为用户类型实时运行。 而会在文档发生修改时作为后台任务定期运行。
 
@@ -965,7 +965,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 键：**颜色**
 
-- 值： \<RGB 十六进制值>
+- 值： \< RGB 十六进制值>
 
 示例 PowerShell 命令，其中标签命名为 "Public"：
 

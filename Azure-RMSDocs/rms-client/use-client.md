@@ -12,19 +12,19 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 2adce92f9507a31feb3c2a8acd5f9d62979f187a
-ms.sourcegitcommit: f7053f57363d50f236e16732b4be09744e00d29d
+ms.openlocfilehash: 2f192ffc2572bbec4f9292155d482534dbcc94d5
+ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80138260"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83746281"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 
 Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的文档和电子邮件：
@@ -37,7 +37,7 @@ Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织�
 
 所有这些客户端与 Office 应用程序集成，但必须单独安装统一标签客户端和经典客户端，并支持其他功能和组件。 例如，这些客户端包括对文件资源管理器的支持，因此你可以在 Office 外部对文件进行分类和保护。 其他组件包括用于受保护的 PDF 文档和受保护的图像的查看器，以及用于本地数据存储的扫描仪。
 
-RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office 应用程序、Azure 信息保护客户端和软件供应商提供的启用应用程序）自动安装。 但是，它也可以[单独安装](https://www.microsoft.com/en-us/download/details.aspx?id=38396)，以支持[从受 IRM 保护的库和 OneDrive for Business 同步文件](https://support.office.com/article/Deploy-the-new-OneDrive-sync-client-in-an-enterprise-environment-3f3a511c-30c6-404a-98bf-76f95c519668)，并供希望将权限管理保护集成到业务线应用程序中的开发人员使用。
+RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office 应用程序、Azure 信息保护客户端和软件供应商提供的启用应用程序）自动安装。 不过，它也可以[自行安装](https://www.microsoft.com/en-us/download/details.aspx?id=38396)，以支持[从受 IRM 保护的库和 OneDrive 同步文件](https://support.office.com/article/Deploy-the-new-OneDrive-sync-client-in-an-enterprise-environment-3f3a511c-30c6-404a-98bf-76f95c519668)，并为希望将 rights management 保护集成到业务线应用程序的开发人员提供支持。
 
 ## <a name="choose-which-labeling-client-to-use-for-windows-computers"></a>选择要用于 Windows 计算机的标记客户端
 
@@ -48,7 +48,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 - Office 内置标签客户端和 Azure 信息保护统一标签客户端从以下管理中心下载标签和策略设置： 
     - Office 365 安全与合规中心
     - Microsoft 365 安全中心
-    - Microsoft 365 相容性中心
+    - Microsoft 365 合规中心
 
 - Azure 信息保护客户端（经典）从 Azure 门户下载标签和策略设置。
 
@@ -84,7 +84,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 - 你有本地数据存储，其中包含需要扫描敏感信息或分类和保护的文档。 对于生产用途，请在服务器上部署经典客户端，以运行 Azure 信息保护扫描程序。
 
-## <a name="compare-the-labeling-clients-for-windows-computers"></a>比较 Windows 计算机的标记客户端
+## <a name="compare-the-labeling-clients-for-windows-computers"></a>比较 Windows 计算机的标签客户端
 
 使用下表来帮助比较 Windows 计算机的三个标记客户端支持的功能。
 
@@ -95,36 +95,36 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |手动标记：| **是** | **是** |**是** |
 |默认标签：| **是** | **是** | **是** |
 |建议或自动添加标签： <br />-适用于 Word、Excel、PowerPoint| **是** | **是** | **是** |
-|建议或自动添加标签：<br />-适用于 Outlook| **是** | **是** | 是 |
-|必需标签：| **是** | **是** | 是 |
+|建议或自动添加标签：<br />-适用于 Outlook| **是** | **是** | 否 |
+|必需标签：| **是** | **是** | 否 |
 |用户定义的标签权限： <br />-不转发电子邮件| **是** | **是** | **是** |
 |用户定义的标签权限： <br />-Word、Excel、PowerPoint、文件资源管理器的自定义权限| **是** | **是** | **是** |
 |标签的多语言支持：| **是** | **是** |**是** |
-|来自电子邮件附件的标签继承：| **是** | **是**  |是 |
-|自定义项包括：<br />- 电子邮件的默认标签<br />-Outlook 中的弹出消息 <br />- S/MIME 支持<br />- 报告问题选项| **是** <sup>1</sup> | **是** <sup>2</sup> | 是 |
-|本地数据存储的扫描程序：| **是** | **是 <br />** | 是 |
-|中心报告（分析）：| **是** | **是** | 是 |
-|独立于标签的自定义权限集：| **是** | **是** <sup>3</sup>| 是 |
-|Office 应用中的“信息保护”栏：| **是** | **是**| 是 |
+|来自电子邮件附件的标签继承：| **是** | **是**  |否 |
+|包括以下内容的自定义项：<br />- 电子邮件的默认标签<br />-Outlook 中的弹出消息 <br />- S/MIME 支持<br />- 报告问题选项| 是  <sup>1</sup> | 是  <sup>2</sup> | 否 |
+|本地数据存储的扫描程序：| **是** | **是的<br />** | 否 |
+|中心报告（分析）：| **是** | **是** | 否 |
+|独立于标签的自定义权限集：| **是** | 是  <sup>3</sup>| 否 |
+|Office 应用中的“信息保护”栏：| **是** | **是**| 否 |
 |作为标签操作（页眉、页脚、水印）的可视标记：| **是** | **是** | **是**|
-|每应用视觉标记：| **是** | **是** | 是 |
-|带有变量的动态视觉标记：| **是** | **是** | 是 |
-|带有文件资源管理器的标签：| **是** | **是** | 是 |
-|受保护文件的查看器（文本、图像、PDF、.pfile）：| **是** | **是** | 是|
-|应用标签的 PPDF 支持：| **是** | 是 | 是 |
-|PowerShell 标记 cmdlet：| **是** | **是** <sup>4</sup> | 是 |
-|离线支持保护操作：| **是** | **是** <sup>5</sup> | **是** |
-|为断开连接的计算机手动执行策略文件管理：| **是** |**是**| 是 |
-|HYOK 支持：| **是** | 是 | 是 |
-|事件查看器中的使用日志记录：| **是** | 是 |是 |
-|显示 Outlook 中的 "不要转发" 按钮：| **是** | 是 | 是 |
-|跟踪受保护文档：| **是** | **是** <sup>6</sup> | 是 |
-|吊销受保护的文档：| **是** | 是 | 是 |
-|仅保护模式（无标签）：| **是** | 是 | 是 |
-|支持帐户切换：| 是 | 是 | **是** |
+|每应用视觉标记：| **是** | **是** | 否 |
+|带有变量的动态视觉标记：| **是** | **是** | 否 |
+|带有文件资源管理器的标签：| **是** | **是** | 否 |
+|受保护文件的查看器（文本、图像、PDF、.pfile）：| **是** | **是** | 否|
+|应用标签的 PPDF 支持：| **是** | 否 | 否 |
+|PowerShell 标记 cmdlet：| **是** | 是  <sup>4</sup> | 否 |
+|离线支持保护操作：| **是** | 是  <sup>5</sup> | **是** |
+|为断开连接的计算机手动执行策略文件管理：| **是** |**是**| 否 |
+|HYOK 支持：| **是** | 否 | 否 |
+|事件查看器中的使用日志记录：| **是** | 否 |否 |
+|显示 Outlook 中的 "不要转发" 按钮：| **是** | 否 | 否 |
+|跟踪受保护文档：| **是** | 是  <sup>6</sup> | 否 |
+|吊销受保护的文档：| **是** | 否 | 否 |
+|仅保护模式（无标签）：| **是** | 否 | 否 |
+|支持帐户切换：| 否 | 否 | **是** |
 |支持远程桌面服务：| **是** | **是** | **是** |
-|对 AD RMS 的支持：| **是** | 无<sup>7</sup> | 是 |
-|删除应用中的外部内容标记| **是**| 是| **是**|
+|对 AD RMS 的支持：| **是** | No <sup>7</sup> | 否 |
+|删除应用中的外部内容标记| **是**| 否| **是**|
 
 
 脚注：
@@ -133,7 +133,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 <sup>2</sup>这些设置以及其他许多设置都受支持，作为[你用 PowerShell 配置的高级设置](clientv2-admin-guide-customizations.md#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。
 
-<sup>3</sup>由文件资源管理器和 PowerShell 支持。 在 Office 应用中，用户可以选择 "**文件信息**" > **保护文档** > "**限制访问**"。
+<sup>3</sup>由文件资源管理器和 PowerShell 支持。 在 Office 应用中，用户可以选择 "**文件信息**" "  >  **保护文档**" "  >  **限制访问**"。
 
 <sup>4</sup>不支持删除容器文件（zip）的保护。
 
@@ -150,15 +150,15 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 |功能 |经典客户端|统一标签客户端|
 |--------------|-----------------------------------|-----------------------------------------------------------|
-|安装：| 安装本地演示策略的选项 | 没有本地演示策略|
-|在 Office 应用程序中应用时的标签选择和显示：|通过功能区上的“保护”按钮 <br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|通过功能区上的“敏感度”按钮<br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|
-|在 Office 应用程序中管理“信息保护”栏：|面向用户： <br /><br />- 从功能区上的“保护”按钮选择显示或隐藏栏<br /><br />- 如果用户选择隐藏栏，默认情况下，该栏在应用程序中隐藏，但会继续自动显示在新打开的应用程序中 <br /><br /> 面向管理员： <br /><br />- 在应用程序首次打开时，通过策略设置自动显示或隐藏栏，并控制在用户选择隐藏栏后，该栏是否对新打开的应用程序自动保持隐藏状态|面向用户： <br /><br />- 从功能区上的“敏感度”按钮选择显示或隐藏栏<br /><br />- 当用户选择隐藏栏时，该栏在该应用程序中以及新打开的应用程序中均处于隐藏状态 <br /><br />面向管理员： <br /><br />-用于管理栏的 PowerShell 设置 |
+|设置：| 安装本地演示策略的选项 | 没有本地演示策略|
+|在 Office 应用程序中应用时的标签选择和显示：|通过功能区上的“保护”按钮**** <br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|通过功能区上的“敏感度”**** 按钮<br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|
+|在 Office 应用程序中管理“信息保护”栏：|面向用户： <br /><br />- 从功能区上的“保护”按钮选择显示或隐藏栏****<br /><br />- 如果用户选择隐藏栏，默认情况下，该栏在应用程序中隐藏，但会继续自动显示在新打开的应用程序中 <br /><br /> 面向管理员： <br /><br />- 在应用程序首次打开时，通过策略设置自动显示或隐藏栏，并控制在用户选择隐藏栏后，该栏是否对新打开的应用程序自动保持隐藏状态|面向用户： <br /><br />- 从功能区上的“敏感度”按钮选择显示或隐藏栏****<br /><br />- 当用户选择隐藏栏时，该栏在该应用程序中以及新打开的应用程序中均处于隐藏状态 <br /><br />面向管理员： <br /><br />-用于管理栏的 PowerShell 设置 |
 |标签颜色： | 在 Azure 门户中配置 | 在迁移标签之后保留并可通过[PowerShell](clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)进行配置|
-|标签支持不同语言：| 在 Azure 门户中配置 | 使用[Office 365 安全性和符合性 PowerShell](/microsoft-365/compliance/create-sensitivity-labels#additional-label-settings-with-office-365-security--compliance-center-powershell)进行配置|
-|策略更新： | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时刷新 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时刷新<br /><br />每 24 小时一次 <br /><br />对于扫描程序：每小时和服务启动时间，策略超过1小时| 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时刷新 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时刷新<br /><br />每 4 小时一次 <br /><br />对于扫描仪：每隔4小时|
+|标签支持不同语言：| 在 Azure 门户中配置 | 使用[Office 365 Security & 相容性 PowerShell](/microsoft-365/compliance/create-sensitivity-labels#additional-label-settings-with-office-365-security--compliance-center-powershell)进行配置|
+|策略更新： | 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 24 小时一次 <br /><br />对于扫描程序：每小时和服务启动时间，策略超过1小时| 在 Office 应用程序打开时 <br /><br /> 在右键单击以分类和保护文件或文件夹时 <br /><br />在运行 PowerShell cmdlet 以实现标记和保护时<br /><br />每 4 小时一次 <br /><br />对于扫描仪：每隔4小时|
 |PDF 支持的格式：| 保护: <br /><br /> - PDF 加密的 ISO 标准（默认） <br /><br /> - .ppdf <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护| 保护: <br /><br /> - PDF 加密的 ISO 标准 <br /><br /> <br /><br /> 使用： <br /><br /> - PDF 加密的 ISO 标准 <br /><br />- .ppdf<br /><br />- SharePoint IRM 保护|
 |用查看器打开的通用受保护文件（.pfile）：| 文件将在原始应用中打开，然后可在其中查看、修改和保存该文件而无需保护 | 文件将在原始应用中打开，然后可在其中进行查看和修改，但不能保存|
-|支持的 cmdlet：| 用于标记的 cmdlet 和用于保护的 cmdlet | 用于标记的 cmdlet：<br /><br /> Set-aipfileclassification 和 Set-aipfilelabel 不支持*Owner*参数 <br /><br /> 此外，对于未应用标签的所有场景，都有一条“无适用标签”的注释 <br /><br /> Set-aipfileclassification 支持*WhatIf*参数，因此它可以在发现模式下运行 <br /><br /> Set-AIPFileLabel 不支持 EnableTracking 参数 <br /><br /> Get-AIPFileStatus 不从其他租户返回标签信息，也不显示 RMSIssuedTime 参数<br /><br />此外，Get-aipfilestatus 的*LabelingMethod*参数显示**特权**或**标准**，而不是**手动**或**自动**。 有关详细信息，请参阅[联机文档](/powershell/module/azureinformationprotection/get-aipfilestatus)。|
+|支持的 cmdlet：| 用于标记的 cmdlet 和用于保护的 cmdlet | 用于标记的 cmdlet：<br /><br /> Set-aipfileclassification 和 Set-aipfilelabel 不支持*Owner*参数 <br /><br /> 此外，对于未应用标签的所有场景，都有一条“无适用标签”的注释 <br /><br /> Set-aipfileclassification 支持*WhatIf*参数，因此它可以在发现模式下运行 <br /><br /> Set-AIPFileLabel 不支持 EnableTracking** 参数 <br /><br /> Get-AIPFileStatus 不从其他租户返回标签信息，也不显示 RMSIssuedTime** 参数<br /><br />此外，Get-aipfilestatus 的*LabelingMethod*参数显示**特权**或**标准**，而不是**手动**或**自动**。 有关详细信息，请参阅[联机文档](/powershell/module/azureinformationprotection/get-aipfilestatus)。|
 |Office 中每个操作的对齐方式提示（如果已配置）： | 频率：每个文件 <br /><br /> 降低敏感度级别 <br /><br /> 删除标签<br /><br /> 删除保护 | 频率：每个会话 <br /><br /> 降低敏感度级别<br /><br /> 删除标签|
 |删除已应用的标签操作： | 系统提示用户确认 <br /><br />下次 Office 应用程序打开文件时，不会自动应用默认标签或自动标签（如果已配置）  <br /><br />| 不提示用户确认<br /><br /> 下次 Office 应用程序打开文件时，自动应用默认标签或自动标签（如果已配置）|
 |自动和推荐的标签： | 在 Azure 门户中配置为[标签条件](../configure-policy-classification.md)，其中包含使用短语或正则表达式的内置信息类型和自定义条件 <br /><br />配置选项包括： <br /><br />- 唯一/非唯一计数 <br /><br /> - 最小计数| 在管理中心中配置，包含内置敏感信息类型和[自定义信息类型](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type)<br /><br />配置选项包括：  <br /><br />- 仅唯一计数 <br /><br />- 最小和最大计数 <br /><br />- 信息类型支持 AND 和 OR <br /><br />- 关键字字典<br /><br />- 可自定义的可信度和字符接近度|
@@ -202,6 +202,6 @@ Azure 信息保护客户端（经典）不支持指定具有子标签的父标�
 
 - [Azure 信息保护客户端](AIP-client.md)
 
-- [Azure 信息保护统一标记客户端](unifiedlabelingclient-version-release-history.md)
+- [Azure 信息保护统一标识客户端](unifiedlabelingclient-version-release-history.md)
 
 若要详细了解如何使用 Office 365 应用的内置标签客户端，请参阅[office 应用中的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps)。

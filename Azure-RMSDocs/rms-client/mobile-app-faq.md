@@ -12,16 +12,16 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: cd8cef4bae59fbffa66ce18737558888f101ef47
-ms.sourcegitcommit: 2d75192e7cd2e322ab422fc2115aa063e8dda18b
+ms.openlocfilehash: 0ccc3ae77d8113a6a3d1a1595a474bd39b1f3ede
+ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75913253"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83747063"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用的常见问题
 
-适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)**
 
 此页提供有关适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题的解答。
 
@@ -31,11 +31,11 @@ ms.locfileid: "75913253"
 
 由于此应用是一个查看器，无法使用它来创建新的受保护电子邮件、对其进行答复、创建或编辑受保护文件。 此外，应用无法打开所查看文件的附件。 例如，受保护的 PDF 文档或受权限保护的电子邮件中的附件。
 
-## <a name="can-i-open-pdf-files-that-are-in-sharepoint-protected-libraries-and-onedrive-for-business"></a>可以打开位于受保护的 SharePoint 库和 OneDrive for Business 中的 PDF 文件吗？
+## <a name="can-i-open-pdf-files-that-are-in-sharepoint-protected-libraries-and-onedrive"></a>能否打开位于受 SharePoint 保护的库和 OneDrive 中的 PDF 文件？
 
-是的，你可以打开其他人通过 SharePoint 和 OneDrive for Business 与你共享的受保护的 PDF 文件。 点击该链接，然后选择此应用打开文件。 
+是的，你可以打开其他人通过 Microsoft SharePoint 和 OneDrive 与你共享的受保护的 PDF 文件。 点击该链接，然后选择此应用打开文件。 
 
-此应用也可以打开 SharePoint 和 OneDrive for Business 以外的受保护 PDF 文件（受保护的 PDF 和 .ppdf 文件）。
+此应用还可以打开在 SharePoint 和 OneDrive （受保护的 PDF 和 ppdf 文件）外部受保护的 PDF 文件。
 
 ## <a name="can-my-mobile-device-run-the-azure-information-protection-app"></a>我的移动设备是否可运行 Azure 信息保护应用？
 
@@ -49,7 +49,7 @@ Azure 信息保护应用需要最低版本的**iOS 11**或**Android 6.0**。 请
 
 ## <a name="how-do-i-get-started-with-the-viewer-app"></a>如何开始使用查看器应用？
 
-安装该应用后，你无需在该点再执行任何其他操作。 请等待，直到收到受保护的电子邮件或想要查看的文件，然后选择“AIP 查看器”以将其打开。 然后系统会提示使用工作或学校帐户登录，或提示选择一个证书。 对这些凭据进行身份验证后，便可以读取内容。
+安装该应用后，你无需在该点再执行任何其他操作。 请等待，直到收到受保护的电子邮件或想要查看的文件，然后选择“AIP 查看器”**** 以将其打开。 然后系统会提示使用工作或学校帐户登录，或提示选择一个证书。 对这些凭据进行身份验证后，便可以读取内容。
 
 但是，如果你不想等待，则可以使用以下说明向自己发送受保护的电子邮件或要查看的文件：[适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门](mobile-app-get-started.md) 
 
@@ -73,7 +73,7 @@ Azure 信息保护应用需要最低版本的**iOS 11**或**Android 6.0**。 请
 
 ##  <a name="how-do-i-provide-feedback-about-this-app"></a>如何提供有关此应用的反馈？
 
-在应用中，转到“设置” > “发送反馈”。
+在应用中，参阅 "**设置**" "  >  **发送反馈**"。
 
 
 ## <a name="my-question-has-not-been-answeredwhat-should-i-do"></a>我的问题没有得到相应解答 - 应采取何种操作？

@@ -13,12 +13,12 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d94783b491dd9ff0b099a68e009809cd7ec965fb
-ms.sourcegitcommit: 479b3aaea7011750ff85a217298e5ae9185c1dd1
+ms.openlocfilehash: dd07fe942f9f715dea6d6dc17d5c5d00e2da0d65
+ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82224557"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83746340"
 ---
 # <a name="bring-your-own-key-byok-details-for-azure-information-protection"></a>Azure 信息保护的自带密钥（BYOK）详细信息
 
@@ -59,7 +59,7 @@ ms.locfileid: "82224557"
 
 ## <a name="byok-support-for-services-and-clients"></a>服务和客户端的 BYOK 支持
 
-BYOK 和[使用情况日志记录](log-analyze-usage.md)与 Azure 信息保护用于保护数据的 azure Rights Management 服务所集成的每个应用程序无缝协作。 其中包括 SharePoint Online 等云服务、运行 Exchange 和 SharePoint 的本地服务器（它们通过使用 RMS 连接器来使用 Azure Rights Management 服务）、Office 2019、Office 2016 和 Office 2013 等客户端应用程序。 
+BYOK 和[使用情况日志记录](log-analyze-usage.md)与 Azure 信息保护用于保护数据的 azure Rights Management 服务所集成的每个应用程序无缝协作。 这包括云服务，例如 Microsoft SharePoint、运行 Exchange 和 SharePoint 的本地服务器（这些服务器通过使用 RMS 连接器来使用 Azure Rights Management 服务）和客户端应用程序（如 Office 2019、Office 2016 和 Office 2013）。 
 
 无论应用程序向 Azure Rights Management 服务发出请求，都可以获取密钥使用情况日志。
 
