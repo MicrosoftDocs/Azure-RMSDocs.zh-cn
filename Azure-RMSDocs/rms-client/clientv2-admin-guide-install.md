@@ -4,27 +4,27 @@ description: 管理员用于在企业网络上部署 Azure 信息保护统一标
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/15/2020
+ms.date: 05/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ca7b0b879af117bc198c1a4224a44639c39d5548
-ms.sourcegitcommit: 03c9f8d24c65bffc14b9701ea83a2ac05b681023
+ms.openlocfilehash: 6a47441ad344166c9723d7c9969681dd7c26c219
+ms.sourcegitcommit: 47a6def47b8a121eb5aa8071863a765bfc31fc9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79416372"
+ms.lasthandoff: 05/25/2020
+ms.locfileid: "83825431"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
-在企业网络上安装 Azure 信息保护统一标签客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序：[Azure 信息保护的要求](../requirements.md)。 
+在企业网络上安装 Azure 信息保护统一标签客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序： [Azure 信息保护的要求](../requirements.md)。 
 
 然后检查 Azure 信息保护统一标签客户端可能需要的其他先决条件，如下一节中所述。 安装程序不会检查所有先决条件。
 
@@ -32,11 +32,9 @@ ms.locfileid: "79416372"
 
 - Microsoft .NET Framework 4.6.2
     
-    默认情况下，默认情况下，Azure 信息保护统一标签客户端的完全安装需要最低版本的 Microsoft .NET Framework 4.6.2，如果缺少此版本，可执行安装程序中的安装向导将尝试下载并安装此先决条件. 在客户端安装过程中安装此必备项后，将重启计算机。 可以使用[自定义安装参数](#more-information-about-the-downgradedotnetrequirement-installation-parameter)在使用安装向导时忽略此系统必备，尽管不建议这样做。
+    默认情况下，默认情况下，Azure 信息保护统一标签客户端完全安装需要最低版本的 Microsoft .NET Framework 4.6.2，如果缺少此版本，可执行安装程序中的安装向导将尝试下载并安装此必备组件。 在客户端安装过程中安装此必备项后，将重启计算机。 可以使用[自定义安装参数](#more-information-about-the-downgradedotnetrequirement-installation-parameter)在使用安装向导时忽略此系统必备，尽管不建议这样做。
     
-    当你使用可执行安装程序、Windows 更新或 Windows 安装程序无提示安装客户端时，不会自动安装此系统必备。 对于这些情况，如果需要，你必须单独安装此系统必备，否则安装将失败。 你可以从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53344)下载 Microsoft .NET Framework 4.6.2（脱机安装程序）。
-
-- Microsoft .NET Framework 4.5.2
+    - Microsoft .NET Framework 4.5.2
     
     如果单独安装 Azure 信息保护查看器，则要求的最低版本为 Microsoft .NET Framework 4.5.2，如果缺少此版本，可执行安装程序不会下载并安装它。
 
@@ -46,12 +44,12 @@ ms.locfileid: "79416372"
 
 - 屏幕分辨率大于 800 x 600
     
-    当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”对话框。
+    当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”**** 对话框。
 
 
 - Microsoft Online Services 登录助手 7.250.4303.0
     
-    运行 Office 2010 的计算机需要安装 Microsoft Online Services 登录助手版本 7.250.4303.0。 此版本包含在客户端安装中。 如果有登录助手的更高版本，请先卸载它，然后再安装 Azure 信息保护统一标签客户端。 例如，通过使用“控制面板” > “程序和功能” > “卸载或更改程序”来检查版本和卸载登录助手。
+    运行 Office 2010 的计算机需要安装 Microsoft Online Services 登录助手版本 7.250.4303.0。 此版本包含在客户端安装中。 如果有登录助手的更高版本，请先卸载它，然后再安装 Azure 信息保护统一标签客户端。 例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序**来检查版本并卸载登录助手。
 
 - KB 4482887
     
@@ -59,13 +57,13 @@ ms.locfileid: "79416372"
 
 - 配置组策略，以免 Azure 信息保护加载项被禁用
     
-    对于 Office 2013 及更高版本，配置组策略以确保始终为 Office 应用程序启用 Microsoft Azure 信息保护加载项。 如果没有此配置，则可能禁用 Microsoft Azure 信息保护加载项，并且用户无法在其 Office 应用程序中标记其文档和电子邮件。
+    对于 Office 2013 及更高版本，配置组策略以确保始终为 Office 应用程序启用 Microsoft Azure 信息保护**** 加载项。 如果没有此配置，则可能禁用 Microsoft Azure 信息保护加载项，并且用户无法在其 Office 应用程序中标记其文档和电子邮件。
     
-    - 对于 Outlook：使用记录在 Office 文档中的[系统管理员对加载项的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中的组策略设置。
+    - 对于 Outlook：使用 Office 文档的[系统管理员对加载项的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中记录的组策略设置。
     
-    - 对于 Word、Excel 和 PowerPoint：使用[由于 Office 2013 和 Office 2016 程序的组策略设置没有加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中记录的组策略设置“托管加载项列表”。 
+    - 对于 Word、Excel 和 PowerPoint：使用支持文章[由于 Office 2013 和 Office 2016 项目的组策略设置，没有加载加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中记录的组策略设置托管加载项列表****。 
         
-        为 Azure 信息保护指定以下编程标识符 (ProgID)，并将此选项设置为“1:始终启用加载项”。
+        为 Azure 信息保护指定以下编程标识符 (ProgID)，并将该选项设置为 1：始终启用外接程序****。
         
         对于 Word：`MSIP.WordAddin`
         
@@ -80,7 +78,7 @@ ms.locfileid: "79416372"
 
 Azure 信息保护统一标签客户端可以使用 Office 应用程序的 Word、Excel、PowerPoint 和 Outlook 通过以下任一 Office 版本来标记和保护文档和电子邮件：
 
-Office 应用最小版本1805，在为用户分配 Azure Rights Management 许可证（也称为 Azure 信息保护 for Office 365）的情况下，从 Office 365 Business 或 Microsoft 365 商业版生成 9330.2078 Office 365 ProPlus Office Professional加上 2019 Office 专业版 + 2016 Office Professional Plus 2013 Service Pack 1 Office Professional Plus 2010 with Service Pack 2
+Office 应用最小版本1805，在为用户分配 Azure Rights Management 的许可证（也称为 Azure 信息保护 for Office 365）时，从 Office 365 Business 或 Microsoft 365 商业版生成9330.2078。 office 365 ProPlus Office professional Plus 2019 Office 专业版 Plus 2016
 
 Office 的其他版本（如**标准**）无法使用 Rights Management 服务来保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护以便进行**标记**。 因此，应用保护的标签不会向用户显示 Azure 信息保护敏感度按钮或栏。
 
@@ -96,7 +94,7 @@ Azure 信息保护功能不支持 Office 邮件合并功能。
 
 为用户安装客户端有两个选项：
 
-**运行客户端的可执行文件 (.exe) 版本**：可以通过交互方式或无提示方式运行的建议的安装方式。 此方法非常灵活，建议使用，因为安装程序会检查多个必备组件，并且可以自动安装缺少的必备组件。 [说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)
+**运行客户端的可执行文件 (.exe) 版本**：建议的安装方式，以交互方式或无提示方式运行。 此方法非常灵活，建议使用，因为安装程序会检查多个必备组件，并且可以自动安装缺少的必备组件。 [说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)
 
 **部署客户端的 Windows Installer (.msi) 版本**：仅支持使用集中部署机制的无提示安装，如组策略、Configuration Manager 和 Microsoft Intune。 对于由 Intune 和移动设备管理 (MDM) 管理的 Windows 10 电脑而言，这是必要的方法，因为这些计算机不支持安装可执行文件。 但是，使用此安装方法时，必须手动检查并安装或卸载可执行文件的安装程序为每台计算机执行时依赖的软件。 [说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-msi-installer)
 
@@ -110,7 +108,7 @@ Azure 信息保护功能不支持 Office 邮件合并功能。
     
     如果存在可用的预览版本，则保留此版本仅供测试使用。 它不用于生产环境中的最终用户。 
 
-2. 对于默认安装，只需运行可执行文件，例如**AzInfoProtection_UL .exe**。 但是，若要查看安装选项，请先使用 **/help** 运行可执行文件：`AzInfoProtection_UL.exe /help`
+2. 对于默认安装，只需运行可执行文件，例如**AzInfoProtection_UL .exe**。 但是，若要查看安装选项，请先通过 **/help**运行可执行文件：`AzInfoProtection_UL.exe /help`
 
     有关无提示安装客户端的示例：`AzInfoProtection_UL.exe /quiet`
     
@@ -118,17 +116,17 @@ Azure 信息保护功能不支持 Office 邮件合并功能。
     
     帮助屏幕中未列出的其他参数：
     
-    - **Servicelocation**：如果要在运行 Office 2010 的计算机上安装客户端，并且你的用户不是其计算机上的本地管理员，或者你不希望系统向他们发出提示，请使用此参数。 [详细信息](#more-information-about-the-servicelocation-installation-parameter) 
+    - **ServiceLocation**：如果要在运行 Office 2010 的计算机上安装客户端，且你的用户不是其计算机上的本地管理员，或者你不希望系统会向他们发出提示，请使用此参数。 [详细信息](#more-information-about-the-servicelocation-installation-parameter) 
     
-    - **DowngradeDotNetRequirement**：使用此参数以绕过 Microsoft Framework .NET 版本 4.6.2 的要求。 [详细信息](#more-information-about-the-downgradedotnetrequirement-installation-parameter)
+    - **DowngradeDotNetRequirement**：使用此参数可以不遵守一定要有 Microsoft Framework .NET 版本 4.6.2 的要求。 [详细信息](#more-information-about-the-downgradedotnetrequirement-installation-parameter)
     
-    - **AllowTelemetry = 0**：使用此参数来禁用安装选项“通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护”。 
+    - **AllowTelemetry=0**：使用此参数来禁用安装选项“通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护”****。 
 
 3. 若要完成安装： 
 
     - 如果计算机运行的是 Office 2010，请重新启动计算机。 
         
-        如果未使用 ServiceLocation 参数安装客户端，则在首次打开使用 Azure 信息保护统一客户端（例如，Word）的 Office 应用程序之一时，必须确认为此首次使用。 利用[服务发现](client-deployment-notes.md#rms-service-discovery)功能填充注册表项。 
+        如果客户端未使用 ServiceLocation 参数安装，则当你首次打开使用 Azure 信息保护统一客户端（例如，Word）的 Office 应用程序之一时，你必须在此首次使用时确认要更新注册表的任何提示。 利用[服务发现](client-deployment-notes.md#rms-service-discovery)功能填充注册表项。 
     
     - 对于其他版本的 Office，请重启任一 Office 应用程序和文件管理器的所有实例。 
         
@@ -138,7 +136,7 @@ Azure 信息保护功能不支持 Office 邮件合并功能。
     
     例如：**Microsoft_Azure_Information_Protection_20161201093652_000_MSIP.Setup.Main.msi.log**
     
-    在此日志文件中搜索以下字符串：**Product:Microsoft Azure Information Protection -- Installation completed successfully**。 如果安装失败，此日志文件包含有助于标识并解决任何问题的详细信息。
+    在此日志文件中搜索以下字符串：**Product: Microsoft Azure Information Protection -- Installation completed successfully**（产品：Microsoft Azure 信息保护 - 已成功完成安装）。 如果安装失败，此日志文件包含有助于标识并解决任何问题的详细信息。
 
 #### <a name="more-information-about-the-servicelocation-installation-parameter"></a>详细了解 ServiceLocation 安装参数
 
@@ -162,9 +160,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 2. 在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
 
-    例如：LicensingIntranetDistributionPointUrl： https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing
+    例如：LicensingIntranetDistributionPointUrl：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
 
-3. 在该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如： **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+3. 该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
     剩余字符串就是要为 ServiceLocation 参数指定的值。
 
@@ -177,9 +175,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果安装这一 Microsoft .NET Framework 更高版本不可行，可以在安装客户端时使用 **DowngradeDotNetRequirement=True** 参数和值，这样就可以在已安装 Microsoft .NET Framework 版本 4.5.1 的情况下忽略这项要求。
 
-例如： `AzInfoProtection_UL.exe DowngradeDotNetRequirement=True`
+例如：`AzInfoProtection_UL.exe DowngradeDotNetRequirement=True`
 
-建议你谨慎使用此参数，并了解当 Azure 信息保护统一标签客户端与此旧 Microsoft .NET 版本一起使用时，Office 应用程序的报告问题挂起Framework. 如果确实遇到了尚未解决的问题，请先升级到建议的版本，然后再尝试其他故障排除解决方案。 
+建议你谨慎使用此参数，并了解当 Azure 信息保护统一标签客户端与此旧版本的 Microsoft .NET Framework 一起使用时，Office 应用程序的报告问题将会挂起。 如果确实遇到了尚未解决的问题，请先升级到建议的版本，然后再尝试其他故障排除解决方案。 
 
 另请注意，如果使用 Windows 更新来保持 Azure 信息保护的统一标签客户端的更新，则必须具有另一个软件部署机制，才能将客户端升级到更高版本。
 
@@ -206,7 +204,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     
    
 
-3. 对于默认安装，将 .msi 与 /quiet/ 一起运行，例如，`AzInfoProtection_UL.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)中记录的其他安装参数，但有一个例外：
+3. 对于默认安装，将 .msi 与 /quiet/**** 一起运行，例如，`AzInfoProtection_UL.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)中记录的其他安装参数，但有一个例外：
     
     - **通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护**，而不是使用**AllowTelemetry = 0**来**ENABLETELEMETRY=0**帮助改进 Azure 信息保护。 
 

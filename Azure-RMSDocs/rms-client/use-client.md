@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 2f192ffc2572bbec4f9292155d482534dbcc94d5
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: 51d5ea830335e86007a3caabbbf724d16c33f97b
+ms.sourcegitcommit: 47a6def47b8a121eb5aa8071863a765bfc31fc9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746281"
+ms.lasthandoff: 05/25/2020
+ms.locfileid: "83825450"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -188,6 +188,8 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 - 确认提示**是否要删除此标签？** 对于用户，如果未使用策略设置进行理由，
 
 - 连接到 Rights Management 服务的单独 PowerShell cmdlet
+
+- 显示应用了标签的用户标识
 
 
 ### <a name="parent-labels-and-their-sublabels"></a>父标签及其子标签 

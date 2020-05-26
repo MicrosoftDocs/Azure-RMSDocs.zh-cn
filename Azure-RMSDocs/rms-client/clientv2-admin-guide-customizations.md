@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 04/05/2020
+ms.date: 05/25/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: aff9e38a43779f9297d9371fa4bc034b36885875
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: fdfbd6bded95a8fc2c156a34fb17f5241b65cf70
+ms.sourcegitcommit: 47a6def47b8a121eb5aa8071863a765bfc31fc9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746310"
+ms.lasthandoff: 05/25/2020
+ms.locfileid: "83825466"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -265,7 +265,7 @@ ms.locfileid: "83746310"
 
 使用下表来确定要指定的字符串值：
 
-| 字符串值| Client| 扫描仪|
+| 字符串值| 客户端| 扫描仪|
 |-------------|-------|--------|
 |\*|默认值：将保护应用于所有文件类型|将保护应用于所有文件类型|
 |\<null 值>| 将保护应用于 Office 文件类型和 PDF 文件| 默认值：将保护应用于 Office 文件类型和 PDF 文件|
@@ -680,7 +680,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 从扫描程序版本 2.7. x 开始，我们建议使用以下**ScannerMaxCPU**和**ScannerMinCPU**高级设置方法限制 CPU 消耗。 
 
 > [!IMPORTANT]
-> 不能将**ScannerMaxCPU**和**ScannerMinCPU**高级设置方法用于线程限制策略。 若要使用方法限制 CPU 消耗，需要停止使用可能已有的[线程限制策略](#limit-the-number-of-threads-used-by-the-scanner)。 
+> 当使用以下线程限制策略时，将忽略**ScannerMaxCPU**和**ScannerMinCPU**高级设置。 若要使用**ScannerMaxCPU**和**ScannerMinCPU**高级设置限制 CPU 消耗，请取消使用限制线程数的策略。 
+
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
 若要限制扫描仪计算机上的 CPU 使用率，可通过创建两个高级设置来管理： **ScannerMaxCPU**和**ScannerMinCPU**。 
 
