@@ -12,12 +12,12 @@ Customer intent: As an administrator, I want to label documents and emails to cl
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 97008a7ecb7979780454bee990ae905d87655f45
-ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
+ms.openlocfilehash: 1d65cbbe95b13bd86cdefe7360cdd46cd80ef0bc
+ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "73979967"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83747138"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
