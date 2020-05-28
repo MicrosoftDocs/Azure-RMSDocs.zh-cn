@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 51d5ea830335e86007a3caabbbf724d16c33f97b
-ms.sourcegitcommit: 47a6def47b8a121eb5aa8071863a765bfc31fc9d
+ms.openlocfilehash: 7361835c845e1d6ade369b0222c14425acbd8de6
+ms.sourcegitcommit: d746a5beaabb019599407d5a96380ec687858c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "83825450"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84022942"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -111,7 +111,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |带有变量的动态视觉标记：| **是** | **是** | 否 |
 |带有文件资源管理器的标签：| **是** | **是** | 否 |
 |受保护文件的查看器（文本、图像、PDF、.pfile）：| **是** | **是** | 否|
-|应用标签的 PPDF 支持：| **是** | 否 | 否 |
+|应用标签的 PDF 支持：| **是** | 否 | 否 |
 |PowerShell 标记 cmdlet：| **是** | 是  <sup>4</sup> | 否 |
 |离线支持保护操作：| **是** | 是  <sup>5</sup> | **是** |
 |为断开连接的计算机手动执行策略文件管理：| **是** |**是**| 否 |
@@ -124,7 +124,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |支持帐户切换：| 否 | 否 | **是** |
 |支持远程桌面服务：| **是** | **是** | **是** |
 |对 AD RMS 的支持：| **是** | No <sup>7</sup> | 否 |
-|删除应用中的外部内容标记| **是**| 否| **是**|
+|删除应用中的外部内容标记| **是**| 否| 否|
 
 
 脚注：
