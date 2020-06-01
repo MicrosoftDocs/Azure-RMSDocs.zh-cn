@@ -4,7 +4,7 @@ description: 管理员通过使用 PowerShell 管理 Azure 信息保护客户端
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/19/2020
+ms.date: 05/31/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.subservice: v1client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ef86511649f16740c4611766103b6985f350fdc9
-ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
+ms.openlocfilehash: f844fa7220a4d608e6757099992c967052367d00
+ms.sourcegitcommit: 77cdbe5d289aec591bb11d966296a7fe3851ee79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80068360"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "84238770"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -26,13 +26,13 @@ ms.locfileid: "80068360"
 > *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 安装 Azure 信息保护客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
-cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 此模块包括 RMS 保护工具（不再支持）的所有 Rights Management cmdlet。 另外，还包括使用 Azure 信息保护进行标记的 cmdlet。 例如：
+cmdlet 是使用 PowerShell 模块 AzureInformationProtection**** 进行安装。 此模块包括 RMS 保护工具（不再支持）的所有 Rights Management cmdlet。 另外，还包括使用 Azure 信息保护进行标记的 cmdlet。 例如：
 
-|标记 cmdlet|示例用法|
+|标记 cmdlet|用法示例|
 |----------------|---------------|
 |[Get AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)|对于共享文件夹，请标识具有特定标签的所有文件。|
 |[Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)|对于共享文件夹，检查文件内容，然后根据指定的条件自动标记未标记的文件。|
@@ -40,7 +40,7 @@ cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 �
 |[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|以非交互方式标记文件，例如使用按计划运行的脚本。|
 
 > [!TIP]
-> 若要使用路径长度超过 260 个字符的 cmdlet，请使用自 Windows 10 版本 1607 开始提供的以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)：<br /> **本地计算机策略** > **计算机配置** > **管理模板** > **所有设置** > **启用 Win32 长路径** 
+> 若要使用路径长度超过 260 个字符的 cmdlet，请使用自 Windows 10 版本 1607 开始提供的以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)：<br /> **本地计算机策略**  > **计算机配置**  > **管理模板**  > **所有设置**  > **启用 Win32 长路径** 
 > 
 > 对于 Windows Server 2016，在安装 Windows 10 的最新管理模板 (.admx) 时，可以使用相同的组策略设置。
 >
@@ -67,7 +67,7 @@ AzureInformationProtection 模块的当前版本具有以下限制：
     - 将仅分类或分类用于 Rights Management 保护时适用：具有包含 Azure 信息保护的订阅（例如，企业移动性 + 安全性）。
     - 将仅保护用于 Azure 权限管理服务时适用：具有包含 Azure 权限管理服务的订阅（例如，Office 365 E3 和 Office 365 E5）。
 
-- [Active Directory Rights Management Services](#active-directory-rights-management-services)
+- [Active Directory 权限管理服务](#active-directory-rights-management-services)
 
     - 将仅保护用于 Azure 权限管理的本地版本时适用；Active Directory Rights Management Services (AD RMS)。
 
@@ -148,7 +148,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 1. 如果计算机上尚未安装此模块，请参阅[安装 AIPService PowerShell 模块](../install-powershell.md)。
 
-2. 使用“以管理员身份运行”选项启动 Windows PowerShell。
+2. 通过 "以**管理员身份运行**" 选项启动 Windows PowerShell。
 
 3. 使用 `Connect-AipService` cmdlet 连接到 Azure 权限管理服务：
     
@@ -185,7 +185,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 1. 如果计算机上尚未安装 MSOnline 模块，请运行 `Install-Module MSOnline`。
 
-2. 使用“以管理员身份运行”选项启动 Windows PowerShell。
+2. 通过 "以**管理员身份运行**" 选项启动 Windows PowerShell。
 
 3. 使用 **Connect-MsolService** cmdlet 连接到 Azure AD：
 
@@ -255,7 +255,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 3. 导航到以下路径：`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation`。 
 
-    如果看不到 MSIPC 密钥或 ServiceLocation 密钥，请创建它们。
+    如果看不到 MSIPC 密钥或 ServiceLocation 密钥，请创建它们********。
 
 4. 对于 **ServiceLocation** 项，创建两个项（若不存在），并分别命名为 **EnterpriseCertification** 和 **EnterprisePublishing**。 
 
@@ -351,7 +351,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 请注意，如果更改了 Rights Management 模板，则必须使用 `Get-RMSTemplate -force` 再次下载这些模板。 
 
-## <a name="active-directory-rights-management-services"></a>Active Directory Rights Management Services
+## <a name="active-directory-rights-management-services"></a>Active Directory 权限管理服务
 
 当你的组织仅使用 Active Directory Rights Management Services 时，请阅读本节，然后才开始使用 PowerShell 命令来保护或取消保护文件。
 
@@ -362,25 +362,25 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 1. 登录到 AD RMS 服务器。
 
-2. 单击“开始”，然后单击“计算机”。
+2. 单击“开始”****，然后单击“计算机”****。
 
 3. 在文件资源管理器中，导航到 %systemdrive%\Initpub\wwwroot\_wmsc\Certification。
 
-4. 右键单击“ServerCertification.asmx”，然后单击“属性”。
+4. 右键单击“ServerCertification.asmx”****，然后单击“属性”****。
 
-5. 在“ServerCertification.asmx 属性”对话框中，单击“安全”选项卡。 
+5. 在“ServerCertification.asmx 属性”**** 对话框中，单击“安全”**** 选项卡。 
 
-6. 单击“继续”按钮或“编辑”按钮。 
+6. 单击“继续”**** 按钮或“编辑”**** 按钮。 
 
-7. 在“ServerCertification.asmx 的权限”对话框中，单击“添加”。 
+7. 在“ServerCertification.asmx 的权限”**** 对话框中，单击“添加”****。 
 
 8. 添加你的帐户名称。 如果其他 AD RMS 管理员或服务帐户也将使用这些 cmdlet 保护和取消保护文件，也请添加这些帐户。 
 
     若要以非交互式方式保护或取消保护文件，请添加相关的计算机帐户。 例如，添加配置为文件分类基础结构的 Windows Server 计算机的计算机帐户，并使用 PowerShell 脚本保护文件。
 
-9. 在“允许”列中，请确保选中“读取和执行”和“读取”复选框。
+9. 在“允许”**** 列中，请确保选中“读取和执行”**** 和“读取”**** 复选框。
 
-10.单击“确定”两次。
+10.单击“确定”**** 两次。
 
 ### <a name="example-scenarios-for-using-the-cmdlets-for-active-directory-rights-management-services"></a>使用适用于 Active Directory Rights Management Services 的 cmdlet 的示例方案
 
@@ -467,7 +467,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>如何以非交互方式为 Azure 信息保护标记文件
 
-可以使用 Set-AIPAuthentication cmdlet，以非交互方式运行标记 cmdlet。 Azure 信息保护扫描程序也需要非交互式操作。
+可以使用 Set-AIPAuthentication cmdlet，以非交互方式运行标记 cmdlet****。 Azure 信息保护扫描程序也需要非交互式操作。
 
 默认情况下，运行 cmdlet 进行标记时，命令会在交互式 PowerShell 会话中你自己的用户上下文运行。 若要在无人参与的情况下运行这些命令，请为此新建一个 Azure AD 用户帐户。 然后，在相应用户的上下文中，运行 Set-AIPAuthentication cmdlet，以使用 Azure AD 中的访问令牌设置并存储凭据。 此用户帐户会进行身份验证，并启动以供 Azure Rights Management 服务使用。 此帐户下载 Azure 信息保护策略，以及标签使用的任何 Rights Management 模板。
 
@@ -476,13 +476,13 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 首次运行此 cmdlet 时，会看到登录提示，以便使用 Azure 信息保护。 指定为无人参与用户帐户创建的用户帐户名称和密码。 在这之后，此帐户可以在身份验证令牌过期前，以非交互方式运行标记 cmdlet。 
 
-要使用户在这第一次能够以交互方式登录，该帐户必须具有**本地登录**权限。 此权限是用户帐户的标准配置，但是你的公司策略可能为服务帐户禁用了此配置。 如果是这种情况，可以运行 Set-AIPAuthentication 并使用 *Token* 参数，以便在没有登录提示的情况下完成身份验证。 可以将此命令作为计划任务运行，并向帐户授予**作为批处理作业登录**这一较低权限。 有关详细信息，请参阅以下部分： 
+要使用户在这第一次能够以交互方式登录，该帐户必须具有**本地登录**权限。 此权限是用户帐户的标准配置，但是你的公司策略可能为服务帐户禁用了此配置。 如果是这种情况，可以运行 Set-AIPAuthentication 并使用 *Token* 参数，以便在没有登录提示的情况下完成身份验证。 可以将此命令作为计划任务运行，并向帐户授予**作为批处理作业登录**这一较低权限。 有关详细信息，请参阅以下部分。 
 
 令牌过期后，再次运行此 cmdlet，以获取新令牌。
 
 如果在运行此 cmdlet 时没有使用参数，用户帐户将获取有效期为 90 天或与密码有效期一样的访问令牌。  
 
-若要控制访问令牌的过期时间，请在运行此 cmdlet 时使用参数。 这样一来，可以配置有效期为一年、两年或永不过期的访问令牌。 若要执行此配置，必须拥有在 Azure Active Directory 中注册的两个应用程序：Web/API 应用程序和本机应用程序。 此 cmdlet 的参数使用这些应用程序提供的值。
+若要控制访问令牌的过期时间，请在运行此 cmdlet 时使用参数。 这样一来，可以配置有效期为一年、两年或永不过期的访问令牌。 若要执行此配置，必须拥有在 Azure Active Directory 中注册的两个应用程序：Web/API**** 应用程序和本机应用程序****。 此 cmdlet 的参数使用这些应用程序提供的值。
 
 运行此 cmdlet 后，可以在创建的用户帐户上下文中运行标记 cmdlet。
 
@@ -490,19 +490,19 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 1. 在新的浏览器窗口中，登录 [Azure 门户](https://portal.azure.com/)。
 
-2. 对于与 Azure 信息保护配合使用的 Azure AD 租户，请导航到**Azure Active Directory** > **管理** > **应用注册**"。 
+2. 对于与 Azure 信息保护配合使用的 Azure AD 租户，请导航到**Azure Active Directory**  >  **管理**  >  **应用注册**"。 
 
 3. 选择 " **+ 新建注册**"，创建 Web 应用/API 应用程序。 在 "**注册应用程序**" 窗格上，指定以下值，然后单击 "**注册**"：
 
-   - **名称**： `AIPOnBehalfOf`
+   - **名称**：`AIPOnBehalfOf`
         
         如果愿意的话，请指定其他名称。 该名称对于每个租户必须是唯一的。
     
     - **受支持的帐户类型**：**仅限此组织目录中的帐户**
     
-    - **重定向 URI （可选）** ： **Web**和 `http://localhost`
+    - **重定向 URI （可选）**： **Web**和`http://localhost`
 
-4. 在 " **AIPOnBehalfOf** " 窗格中，复制 "**应用程序（客户端） ID**" 的值。 值类似于以下示例： `57c3c1c3-abf9-404e-8b2b-4652836c8c66`。 在运行 Set-aipauthentication cmdlet 时，此值用于*WebAppId*参数。 粘贴并保存该值供以后参考。
+4. 在 " **AIPOnBehalfOf** " 窗格中，复制 "**应用程序（客户端） ID**" 的值。 值类似于下面的示例： `57c3c1c3-abf9-404e-8b2b-4652836c8c66` 。 在运行 Set-aipauthentication cmdlet 时，此值用于*WebAppId*参数。 粘贴并保存该值供以后参考。
 
 5. 仍在 " **AIPOnBehalfOf** " 窗格的 "**管理**" 菜单中，选择 "**身份验证**"。
 
@@ -514,69 +514,65 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 9. 对于 "**添加客户端密钥**"，请指定以下各项，然后选择 "**添加**"：
     
-    - **说明**： `Azure Information Protection client`
+    - **说明**：`Azure Information Protection client`
     - **过期**：指定所选的持续时间（1年、2年或永不过期）
 
-9. 返回到 " **AIPOnBehalfOf-证书 & 机密**" 窗格的 "**客户端密码**" 部分中，复制**值**的字符串。 此字符串类似于以下示例： `+LBkMvddz?WrlNCK5v0e6_=meM59sSAn`。 若要确保复制所有字符，请选择要**复制到剪贴板**的图标。 
+9. 返回到 " **AIPOnBehalfOf-证书 & 机密**" 窗格的 "**客户端密码**" 部分中，复制**值**的字符串。 此字符串类似于以下示例： `+LBkMvddz?WrlNCK5v0e6_=meM59sSAn` 。 若要确保复制所有字符，请选择要**复制到剪贴板**的图标。 
     
     请务必保存此字符串，因为它不会再次显示，并且无法检索。 对于所使用的任何敏感信息，请安全地存储保存的值并限制对它的访问。
 
 10. 仍在 " **AIPOnBehalfOf-证书 & 机密**" 窗格的 "**管理**" 菜单中，选择 "**公开 API**"。
 
-11. 在 " **AIPOnBehalfOf-公开 API** " 窗格上， **Set**选择 "设置**应用程序 id uri** " 选项，然后在 "**应用程序 id uri** " 值中，将**API**更改为**http**。 此字符串类似于以下示例： `http://d244e75e-870b-4491-b70d-65534953099e`。 
+11. 在 " **AIPOnBehalfOf-公开 API** " 窗格上， **Set**选择 "设置**应用程序 id uri** " 选项，然后在 "**应用程序 id uri** " 值中，将**API**更改为**http**。 此字符串类似于以下示例： `http://d244e75e-870b-4491-b70d-65534953099e` 。 
     
-    选择“保存”。
+    选择“保存” 。
 
 12. 返回 " **AIPOnBehalfOf-公开 API** " 窗格，选择 " **+ 添加作用域**"。
 
 13. 在 "**添加作用域**" 窗格中，指定以下内容，并使用建议的字符串作为示例，然后选择 "**添加作用域**"：
-    - **作用域名称**： `user-impersonation`
-    - **谁可以获得许可？** ：**管理员和用户**
-    - **管理员许可显示名称**： `Access Azure Information Protection scanner`
-    - **管理员同意说明**： `Allow the application to access the scanner for the signed-in user`
-    - **用户同意显示名称**： `Access Azure Information Protection scanner`
-    - **用户同意说明**： `Allow the application to access the scanner for the signed-in user`
+    - **作用域名称**：`user-impersonation`
+    - **谁可以获得许可？**：**管理员和用户**
+    - **管理员许可显示名称**：`Access Azure Information Protection scanner`
+    - **管理员同意说明**：`Allow the application to access the scanner for the signed-in user`
+    - **用户同意显示名称**：`Access Azure Information Protection scanner`
+    - **用户同意说明**：`Allow the application to access the scanner for the signed-in user`
     - **状态**：**已启用**（默认值）
 
 
 14. 返回到**AIPOnBehalfOf-公开 API**窗格，关闭此窗格。
 
-15. 选择 " **API 权限**"。
+15. 选择“API 权限”****。
 
-16. 在 " **AIPOnBehalfOf** | **API 权限**" 窗格上，选择 " **+ 添加权限**"。
+16. 在 " **AIPOnBehalfOf**  |  **API 权限**" 窗格上，选择 " **+ 添加权限**"。
 
 17. 选择 " **Azure 权限管理**"，选择 "**委托的权限**"，然后选择 "**为用户创建和访问受保护的内容**"。
 
-18. 单击 "**添加权限**"。
+18. 单击“添加权限”****。
 
-19. 返回到 " **API 权限**" 窗格，在 "**授予许可**" 部分中，选择 "**授予 <your tenant name>的管理员同意**"，并在确认提示中选择 **"是"** 。
+19. 返回到 " **API 权限**" 窗格，在 "**授予许可**" 部分中，选择 "为确认提示** <your tenant name> 授予管理员许可**" 并选择 **"是**"。
 
 20. 在 "**应用注册**" 窗格上，选择 " **+ 新建应用程序注册**"，立即创建本机应用程序。
 
 21. 在 "**注册应用程序**" 窗格上，指定以下设置，然后选择 "**注册**"：
-    - **名称**： `AIPClient`
+    - **名称**：`AIPClient`
     - **受支持的帐户类型**：**仅限此组织目录中的帐户**
-    - **重定向 URI （可选）** ：**公用客户端（移动 & 桌面）** 和 `http://localhost`
+    - **重定向 URI （可选）**：**公用客户端（移动 & 桌面）** 和`http://localhost`
 
-22. 在 " **AIPClient** " 窗格中，复制 "**应用程序（客户端） ID**" 的值。 值类似于以下示例： `8ef1c873-9869-4bb1-9c11-8313f9d7f76f`。 
+22. 在 " **AIPClient** " 窗格中，复制 "**应用程序（客户端） ID**" 的值。 值类似于下面的示例： `8ef1c873-9869-4bb1-9c11-8313f9d7f76f` 。 
     
     在运行 Set-aipauthentication cmdlet 时，此值用于 NativeAppId 参数。 粘贴并保存该值供以后参考。
 
 23. 仍在 " **AIPClient** " 窗格的 "**管理**" 菜单中，选择 "**身份验证**"。
 
-24. 在 " **AIPClient-身份验证**" 窗格中，指定以下内容，然后选择 "**保存**"：
-    - 在 "**高级设置**" 部分中，选择 " **ID 令牌**"。
-    - 在 "**默认客户端类型**" 部分中，选择 **"是"** 。
+24. 在 " **AIPClient-身份验证**" 窗格的 "**管理**" 菜单中，选择 " **API 权限**"。
 
-25. 仍在 " **AIPClient-身份验证**" 窗格中，从 "**管理**" 菜单中选择 " **API 权限**"。
+25. 在 " **AIPClient-权限**" 窗格上，选择 " **+ 添加权限**"。
 
-26. 在 " **AIPClient-权限**" 窗格上，选择 " **+ 添加权限**"。
+26. 在 "**请求 api 权限**" 窗格上，选择 "**我的 api**"。
 
-27. 在 "**请求 api 权限**" 窗格上，选择 "**我的 api**"。
+27. 在 "**选择 API** " 部分中，选择 " **APIOnBehalfOf**"，然后选中 "**用户模拟**" 复选框作为权限。 选择“添加权限”。 
 
-28. 在 "**选择 API** " 部分中，选择 " **APIOnBehalfOf**"，然后选中 "**用户模拟**" 复选框作为权限。 选择“添加权限”。 
-
-29. 返回到 " **API 权限**" 窗格，在 "**授予许可**" 部分中，选择 "**授予管理员同意 \<*租户名称*">** 并在确认提示中选择 **"是"** 。
+28. 返回到 " **API 权限**" 窗格，在 "**授予许可**" 部分中，选择 "为确认提示** \<*your tenant name*> 授予管理员许可**" 并选择 **"是**"。
 
 现在，你已完成两个应用的配置，并且具有使用参数*WebAppId*、 *WebAppKey*和*NativeAppId*运行[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication)时所需的值。 在我们的示例中：
 
@@ -612,7 +608,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 3. 使用上一部分中的说明修改此命令：为 **WebAppId**、**WebAppkey** 和 **NativeAppId** 参数指定你自己的值。 此时，对于你稍后将指定的 **Token** 参数，你还没有准备好其值。 
 
-    例如：`Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f -Token <token value>`
+    例如： `Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f -Token <token value>`
 
 #### <a name="step-2-run-set-aipauthentication-to-get-an-access-token-and-copy-it-to-the-clipboard"></a>步骤 2：运行 Set-AIPAuthentication 来获取一个访问令牌并将其复制到剪贴板
 
@@ -622,15 +618,15 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
         (Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application >).token | clip
 
-    例如：`(Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f").token | clip`
+    例如： `(Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f").token | clip`
 
 #### <a name="step-3-modify-the-powershell-script-to-supply-the-token"></a>步骤 3：修改 PowerShell 脚本以提供令牌。
 
 1. 在 PowerShell 脚本中，通过从剪切板粘贴字符串来指定令牌值，然后保存文件。
 
-2. 为脚本签名。 如果没有为脚本签名（更安全），则必须在将运行标记命令的计算机上配置 Windows PowerShell。 例如，使用“以管理员身份运行”选项运行 Windows PowerShell 会话，然后键入：`Set-ExecutionPolicy RemoteSigned`。 但是，当未签名的脚本存储在此计算机上时，此配置将允许所有未签名的脚本运行（不太安全）。
+2. 为脚本签名。 如果没有为脚本签名（更安全），则必须在将运行标记命令的计算机上配置 Windows PowerShell。 例如，使用“以管理员身份运行”**** 选项运行 Windows PowerShell 会话，然后键入：`Set-ExecutionPolicy RemoteSigned`。 但是，当未签名的脚本存储在此计算机上时，此配置将允许所有未签名的脚本运行（不太安全）。
 
-    有关为 Windows PowerShell 脚本签名的详细信息，请参阅 PowerShell 文档库中的 [about_Signing](/powershell/module/microsoft.powershell.core/about/about_signing) 。
+    有关为 Windows PowerShell 脚本签名的详细信息，请参阅 PowerShell 文档库中的 [about_Signing](/powershell/module/microsoft.powershell.core/about/about_signing)。
 
 3. 将此 PowerShell 脚本复制到将对文件进行标记和保护的计算机上，并删除计算机上的原始脚本。 例如，将 PowerShell 脚本复制为 Windows Server 计算机上的 C:\Scripts\Aipauthentication.ps1。
 
@@ -638,11 +634,11 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 1. 确保将对文件进行标记和保护的服务帐户具有**作为批处理作业登录**权限。
 
-2. 在将对文件进行标记和保护的计算机上，打开任务计划程序并创建一个新任务。 将此任务配置为作为将对文件进行标记和保护的服务帐户运行，然后为“操作”配置以下值：
+2. 在将对文件进行标记和保护的计算机上，打开任务计划程序并创建一个新任务。 将此任务配置为作为将对文件进行标记和保护的服务帐户运行，然后为“操作”**** 配置以下值：
 
    - **操作**：`Start a program`
    - **程序/脚本**：`Powershell.exe`
-   - **添加参数(可选)** ：`-NoProfile -WindowStyle Hidden -command "&{C:\Scripts\Aipauthentication.ps1}"` 
+   - **添加参数（可选）**：`-NoProfile -WindowStyle Hidden -command "&{C:\Scripts\Aipauthentication.ps1}"` 
 
      对于参数行，指定你自己的路径和文件名（如果它们与示例中的不同）。
 
@@ -667,7 +663,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 - [客户端文件和使用情况日志记录](client-admin-guide-files-and-logging.md)
 
-- [文档跟踪、](client-admin-guide-document-tracking.md)
+- [文档跟踪](client-admin-guide-document-tracking.md)
 
 - [支持的文件类型](client-admin-guide-file-types.md)
 

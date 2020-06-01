@@ -4,7 +4,7 @@ description: 将 Azure 信息保护标签迁移到支持 Microsoft 信息保护�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 05/31/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 30729a98d058b062cbf16c156c1f0f175cfa2164
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: 8ebee0a98fecacb015f0e95a60d657c76cfd9329
+ms.sourcegitcommit: 77cdbe5d289aec591bb11d966296a7fe3851ee79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746802"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "84238735"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -210,7 +210,7 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 
 - Microsoft SharePoint、OneDrive for work 或 school、OneDrive for home、团队和 Office 365 组（预览版）
     
-    有关详细信息，请参阅[将敏感度标签与 Microsoft 团队、Office 365 组和 sharepoint 网站（公共预览版）配合使用](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)和[在 SharePoint 和 OneDrive 中启用 Office 文件的敏感性标签（公共预览版）](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
+    有关详细信息，请参阅[将敏感度标签与 Microsoft 团队、Office 365 组和 sharepoint 网站（公共预览版）配合使用](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)和[在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
 
 - Microsoft Defender 高级威胁防护
 
