@@ -473,5 +473,7 @@
       href: compliance.md
     - name: PowerShell 参考
       href: 'https://docs.microsoft.com/powershell/azure/aip/overview?view=azureipps'
+    - name: 审核日志引用
+      href: audit-logs.md
     - name: 术语
       href: terminology.md
