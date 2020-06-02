@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护统一标签客户端版本历史记录 & 支持策略
 description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户端的发布信息。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 05/14/2020
+ms.date: 05/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 56194d242f6b079fc04765c8ceeeac5cddbf557d
-ms.sourcegitcommit: 93376be8c80776e572f1233812ef39fbabbbd0b2
+ms.openlocfilehash: b1e91bcbfca3d4f925750fd8d1f135bd8f4ff2c4
+ms.sourcegitcommit: fa16364879823b86b4e56ac18a1fc8de5a5dae57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83550848"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250029"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -25,8 +25,7 @@ ms.locfileid: "83550848"
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
-
-你可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端。
+你可以从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端。
 
 在通常几周的短暂延迟后，最新的正式发行版还会包含在 Microsoft 更新目录中，该目录中包含产品名称**Microsoft Azure 信息保护**  >  **Microsoft Azure 信息保护统一标签客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
 
@@ -62,32 +61,86 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 此客户端正在替换 Azure 信息保护客户端（经典）。 若要将特性和功能与经典客户端进行比较，请参阅[比较适用于 Windows 计算机的标记客户端](use-client.md#compare-the-labeling-clients-for-windows-computers)。
 
-## <a name="version-27930"></a>版本2.7.93。0
+## <a name="version-27950-public-preview"></a>版本2.7.95.0 公共预览版
 
-统一标记扫描器（公共预览版）版本2.7.93。0
+统一标记扫描器和客户端（公共预览版）版本2.7.95。0
 
-**发布**05/05/2020
+**发布**06/01/2020
 
-**新增功能：**
+**统一标记扫描器的新功能：**
 
-- 此有限版本仅专注于统一标记扫描器版本2.7.93.0 的公共预览版本，如下所述： 
+- [使用扫描器基于建议的条件应用标签](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#prerequisites-for-the-azure-information-protection-scanner)。 AIP 客户现在可以选择实现仅自动标记服务端。 此功能使 AIP 的最终用户可以始终遵循建议，而不是在以前的方案中，仅在用户端启用了自动标记。
 
-- **扫描仪中的新**
-    - [使用扫描器基于建议的条件应用标签](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#prerequisites-for-the-azure-information-protection-scanner)。 AIP scanner 现在可以将带有 "推荐的标签" 操作的自动标记规则作为自动规则来处理。 实现此更改是为了使 AIP 的客户可以仅在服务端选择实现自动标记，使其最终用户可以始终遵循建议，而不是使用以前的选项来仅在用户端启用自动标记。
-    - [了解扫描程序以前发现的哪些文件已从扫描的存储库中删除](https://docs.microsoft.com/azure/information-protection/reports-aip)这些删除的文件之前未在 AIP 分析中报告，现已在 "扫描程序发现报告" 中提供。
-    - [在出现故障时从扫描仪获取报告以应用操作事件](https://docs.microsoft.com/azure/information-protection/reports-aip#friendly-schema-reference-for-event-functions)。 使用报表来了解失败的操作事件，并发现阻止将来出现的方法。 
-    - 介绍了 AIP scanner 诊断分析器工具，用于检测和分析常见扫描程序错误。 若要开始使用 AIP scanner 诊断，请[运行新的**AIPScannerDiagnostics** cmdlet](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#troubleshooting-using-scanner-diagnostic-tool)。 
-    - 你现在可以管理和限制扫描仪计算机上的最大 CPU 消耗。 了解如何使用[两个新的高级设置**ScannerMaxCPU**和**ScannerMinCPU**](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#limit-cpu-consumption)阻止100% 的 cpu 使用率并管理 cpu 使用情况。 
+- [了解扫描程序以前发现的哪些文件已从扫描的存储库中删除](https://docs.microsoft.com/azure/information-protection/reports-aip)这些删除的文件之前未在 AIP 分析中报告，现已在 "扫描程序发现报告" 中提供。
 
-- **修复和改进** 
-    - 扫描程序 SQL 性能改进
-    - SharePoint 扫描性能改进
+- [在出现故障时从扫描仪获取报告以应用操作事件](https://docs.microsoft.com/azure/information-protection/reports-aip#friendly-schema-reference-for-event-functions)。 使用报表来了解失败的操作事件，并发现阻止将来出现的方法。 
+
+- 介绍了 AIP scanner 诊断分析器工具，用于检测和分析常见扫描程序错误。 若要开始使用 AIP scanner 诊断，请[运行新的**AIPScannerDiagnostics** cmdlet](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#troubleshooting-using-scanner-diagnostic-tool)。 
+
+- 你现在可以管理和限制扫描仪计算机上的最大 CPU 消耗。 了解如何使用[两个新的高级设置**ScannerMaxCPU**和**ScannerMinCPU**](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#limit-cpu-consumption)阻止100% 的 cpu 使用率并管理 cpu 使用情况。 
+
+- 现在，你可以根据文件属性配置统一标记扫描器来跳过特定文件。 定义文件属性列表，这些属性使用 new **[ScannerFSAttributesToSkip](clientv2-admin-guide-customizations.md#skip-or-ignore-files-during-scans-depending-on-file-attributes-public-preview)** advanced 设置触发要跳过的文件。
+
+**统一标签客户端的新功能：**
+
+- 现在，在对统一标签客户端中的默认标签所做的更改时，将显示[对齐弹出窗口](client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)。
+    
+- 与 Office 应用的视觉内容标记更流畅地集成。 有关在 Office 文档中配置内容标记的详细信息，请参阅[如何为 Azure 信息保护配置用于视觉标记的标签](../configure-policy-markings.md)。
+
+- 新的**WordShapeNameToRemove** advanced 属性允许删除第三方应用程序进行的 Word 文档中的内容标记。 详细了解如何[识别现有的形状名称，以及如何使用**WordShapeNameToRemove**将其定义为删除](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solutions)。
+
+**为删除的文件生成的新审核日志**
+
+现在，每次扫描程序检测到现在已被删除的文件之前，都会生成审核日志。
+
+有关详细信息，请参见:
+- [文件已删除审核日志](../audit-logs.md#file-removed-audit-logs)
+- [Azure 信息保护的中央报告](../reports-aip.md)
+
+**强制执行 TLS 1.2**
+
+从此版本的 Azure 信息保护客户端开始，仅支持 TLS 版本1.2 或更高版本。
+    
+TLS 安装程序不支持 TLS 1.2 的客户必须转到支持 TLS 1.2 的安装程序，以使用 Azure 信息保护策略、令牌、审核和保护，并接收基于 Azure 信息保护的通信。 
+    
+有关更多要求详细信息，请参阅[防火墙和网络基础结构要求](../requirements.md#firewalls-and-network-infrastructure)。
+
+**修复和改进** 
+- 的扫描程序 SQL 改进：
+    - 性能
+    - 具有大量信息类型的文件
+    
+- 的 SharePoint 扫描改进：
+    - 扫描性能
+    - 路径中包含特殊字符的文件
+    - 文件计数较大的库
+    
+    若要查看有关通过 SharePoint 使用 Azure 信息保护的快速入门，请参阅[快速入门：查找本地存储的文件中的敏感信息](../quickstart-findsensitiveinfo.md)。
+        
+- 改善了缺少策略的用户通知。 有关统一标签客户端的标签策略的详细信息，请参阅 Microsoft 365 文档中的[标签策略](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)。
+
+- 现在，在 Excel 中，[自动标签](../configure-policy-classification.md)应用于用户在不保存的情况下开始关闭文件的情况，就像用户活动保存文件时。
+
+- 当配置[ExternalContentMarkingToRemove](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)设置时，将按预期删除页眉和页脚，而不是在每个文档上保存。
+
+- [动态用户变量](../configure-policy-markings.md#using-variables-in-the-text-string)现在按预期方式显示在文档的视觉标记中。
+
+- 当配置了多个 Exchange 帐户并且启用了 Azure 信息保护 Outlook 客户端时，会按预期方式从辅助帐户发送邮件。 若要详细了解如何配置 Outlook 的统一标签客户端，请参阅[Azure 信息保护统一标签客户端的其他先决条件](clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)。
+
+- 如果将具有较高机密性标签的文档拖放到电子邮件中，则该电子邮件现在会自动按预期方式接收更高的机密性标签。 有关对客户端功能进行标记的详细信息，请参阅[标签客户端比较表](use-client.md#compare-the-labeling-clients-for-windows-computers)。
+
+- 如果电子邮件地址同时包含撇号（'）和句点（.），则现在会按预期将自定义权限应用于电子邮件。若要详细了解如何配置 Outlook 的统一标签客户端，请参阅[Azure 信息保护统一标签客户端的其他先决条件](clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)。
+
+- 默认情况下，当文件由统一的标记扫描器、PowerShell 或文件资源管理器扩展标记时，文件的 NTFS 所有者将丢失。 现在，你可以通过将新的**[UseCopyAndPreserveNTFSOwner](clientv2-admin-guide-customizations.md#preserve-ntfs-owners-during-labeling-public-preview)** advanced 设置设置为**true**，将系统配置为保留文件的 NTFS 所有者。 
+
+    **UseCopyAndPreserveNTFSOwner**高级设置要求在扫描仪和扫描的存储库之间具有低延迟、可靠的网络连接。
+
 
 ## <a name="version-261110"></a>版本2.6.111。0 
 
 **发布**03/09/2020
 
-**新增功能：**
+**新功能：**
 
 - [Scanner](../deploy-aip-scanner.md)的通用版本，用于检查和标记本地数据存储中的文档。 
 
@@ -109,7 +162,6 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 - 在统一标签客户端中，为 Office 应用添加了对[脱机标签功能](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#support-for-disconnected-computers)的支持。
 
-
 **纠正**
 
 - 如果用户尝试不成功地打开受保护的 TIFF 文件，并且 tiff 文件是由 RightFax 创建的，则 TIFF 文件现在会打开并保持稳定。  
@@ -127,13 +179,13 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 支持，09/09/2020
 
-**新增功能：**
+**新功能：**
 
 - 预览版本的[扫描仪](../deploy-aip-scanner.md)，用于检查和标记文档本地数据存储。 对于此版本的扫描仪：
     
     - 将扫描仪配置为使用同一扫描程序配置文件时，多个扫描程序可以共享相同的 SQL Server 数据库。 此配置可以更轻松地管理多个扫描仪，并缩短扫描时间。 当你使用此配置时，请始终等待扫描仪完成安装，然后再使用同一配置文件安装另一个扫描程序。
     
-    - 安装扫描程序时，必须指定配置文件，并将扫描程序数据库命名**AIPScannerUL_ \< profile_name>**。 *配置文件*参数对于 install-aipscanner 是必需的。
+    - 安装扫描程序时必须指定配置文件，并将扫描程序数据库命名为**AIPScannerUL_ \<profile_name> **。 *配置文件*参数对于 install-aipscanner 是必需的。
     
     - 即使已标记文档，也可以在所有文档上设置一个默认标签。 在 "扫描程序配置文件" 或 "存储库设置" 中，将 "重新**标记文件**" 选项设置为 "**打开**"，并选择 "新建**强制默认标签**
     
@@ -182,16 +234,16 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 **其他更改**
 
-- [重置设置](clientv2-admin-guide.md#more-information-about-the-reset-settings-option)现在会删除%LocalAppData%\Microsoft\MSIP\mip \\ * \< \> ProcessName*文件夹，而不是%LocalAppData%\Microsoft\MSIP\mip \\ * \< ProcessName \> *\mip 文件夹。
+- [重置设置](clientv2-admin-guide.md#more-information-about-the-reset-settings-option)现在会删除%LocalAppData%\Microsoft\MSIP\mip \\ *\<ProcessName.exe\>* 文件夹，而不是%LocalAppData%\Microsoft\MSIP\mip \\ *\<ProcessName\>* \mip 文件夹。
 
 - [Get-aipfilestatus](/powershell/module/azureinformationprotection/get-aipfilestatus)现在包含受保护文档的内容 ID。
 
 
 ## <a name="next-steps"></a>后续步骤
 
-不确定是否安装了正确的客户端？  请参阅[选择要用于 Windows 计算机的标记客户端](use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。
+不确定是否要安装适合的客户端？  请参阅[选择要用于 Windows 计算机的标记客户端](use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。
 
-有关安装和使用该客户端的详细信息： 
+有关安装和使用统一标签客户端的详细信息： 
 
 - 用户请参阅：[下载并安装客户端](install-unifiedlabelingclient-app.md)
 

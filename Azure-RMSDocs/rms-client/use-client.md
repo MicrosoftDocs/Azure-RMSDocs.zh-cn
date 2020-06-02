@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护客户端-AIP
 description: Microsoft Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的数据。 客户端（Azure 信息保护客户端或 Rights Management 客户端）与在计算机和移动设备上运行的应用程序集成。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 05/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 7361835c845e1d6ade369b0222c14425acbd8de6
-ms.sourcegitcommit: d746a5beaabb019599407d5a96380ec687858c79
+ms.openlocfilehash: 13128b48be4dd4e64e767e121551c4c2e8692e78
+ms.sourcegitcommit: fa16364879823b86b4e56ac18a1fc8de5a5dae57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84022942"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250027"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -37,7 +37,7 @@ Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织�
 
 所有这些客户端与 Office 应用程序集成，但必须单独安装统一标签客户端和经典客户端，并支持其他功能和组件。 例如，这些客户端包括对文件资源管理器的支持，因此你可以在 Office 外部对文件进行分类和保护。 其他组件包括用于受保护的 PDF 文档和受保护的图像的查看器，以及用于本地数据存储的扫描仪。
 
-RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office 应用程序、Azure 信息保护客户端和软件供应商提供的启用应用程序）自动安装。 不过，它也可以[自行安装](https://www.microsoft.com/en-us/download/details.aspx?id=38396)，以支持[从受 IRM 保护的库和 OneDrive 同步文件](https://support.office.com/article/Deploy-the-new-OneDrive-sync-client-in-an-enterprise-environment-3f3a511c-30c6-404a-98bf-76f95c519668)，并为希望将 rights management 保护集成到业务线应用程序的开发人员提供支持。
+RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office 应用程序、Azure 信息保护客户端和软件供应商提供的启用应用程序）自动安装。 不过，它也可以[自行安装](https://www.microsoft.com/download/details.aspx?id=38396)，以支持[从受 IRM 保护的库和 OneDrive 同步文件](https://docs.microsoft.com/onedrive/deploy-on-windows)，并为希望将 rights management 保护集成到业务线应用程序的开发人员提供支持。
 
 ## <a name="choose-which-labeling-client-to-use-for-windows-computers"></a>选择要用于 Windows 计算机的标记客户端
 
@@ -52,7 +52,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 - Azure 信息保护客户端（经典）从 Azure 门户下载标签和策略设置。
 
-由于统一的标签客户端和经典客户端需要单独安装到 Office，因此你必须从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装这些客户端。 
+由于统一的标签客户端和经典客户端需要单独安装到 Office，因此你必须从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载并安装这些客户端。 
 
 应使用哪种客户端？
 
@@ -90,7 +90,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 若要在不同的操作系统平台（Windows、MacOS、iOS 和 Android）和 web 上比较 Office 内置敏感度标签功能，请参阅 Microsoft 365 符合性文档，了解如何[在应用中提供敏感度标签功能](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)。 本文档还包括 Office 生成号或受支持功能的 Office 更新通道信息。
 
-|功能|经典客户端|统一标签客户端|Office 内置标签客户端|
+|Feature|经典客户端|统一标签客户端|Office 内置标签客户端|
 |:------|:------------:|:---------------------:|:-----------------------------:|
 |手动标记：| **是** | **是** |**是** |
 |默认标签：| **是** | **是** | **是** |

@@ -4,7 +4,7 @@ description: 确定在组织中部署 Azure 信息保护所需的先决条件。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 05/21/2020
+ms.date: 05/25/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 240dc9112d49ff2a3ad3c4e6f886062ca6529d97
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: 24797e570dada67ca304667b2e4d64147aa17580
+ms.sourcegitcommit: fa16364879823b86b4e56ac18a1fc8de5a5dae57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746250"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84249838"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -128,7 +128,7 @@ Azure 信息保护客户端可以使用 Microsoft **Word**、 **Excel**、 **Pow
 
 - **Office 应用最小版本 1805**，从 Office 365 Business 或 Microsoft 365 商业版生成9330.2078。 
 
-仅当为用户分配了 Azure Rights Management 许可证（也称为 Azure 信息保护 for Office 365）时，才支持此版本。
+    仅当为用户分配了 Azure Rights Management 许可证（也称为 Azure 信息保护 for Office 365）时，才支持此版本。
 
 - **Office 365 专业增强版**
 
@@ -156,14 +156,15 @@ Office 的其他版本无法通过使用 Rights Management 服务保护文档和
 
 如果你具有配置为允许特定连接的防火墙或类似介入的网络设备，则此 Office 文章中列出了网络连接要求： [office 365 url 和 IP 地址范围 > Microsoft 365 Common And Office Online](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)。
 
-Azure 信息保护具有以下补充要求：
+Azure 信息保护具有以下附加要求：
 
 - **统一标签客户端**。 若要下载标签和标签策略，允许通过 HTTPS 上的以下 URL： ***. protection.outlook.com**
 
 - **Web 代理**。 如果你使用需要身份验证的 web 代理，则必须将代理配置为将集成 Windows 身份验证与用户的 Active Directory 登录凭据一起使用。
 
+    
 - **TLS 客户端到服务连接**。 请勿终止任何 TLS 客户端到服务连接（例如，为了执行数据包级别检查）到**Aadrm.com** URL。 那样做会打破 RMS 客户端用于 Microsoft 托管 CA 的证书固定，导致无法确保其与 Azure Rights Management 服务的通信安全。
-
+     
     若要确定客户端连接在到达 Azure Rights Management 服务之前是否终止，请使用以下 PowerShell 命令：
     
         $request = [System.Net.HttpWebRequest]::Create("https://admin.na.aadrm.com/admin/admin.svc")
@@ -174,6 +175,8 @@ Azure 信息保护具有以下补充要求：
     
     如果你看到的颁发 CA 名称不是 Microsoft，则很可能是你安全的客户端到服务连接被终止，需要在防火墙上重新配置。
 
+- **TLS 版本1.2 或更高版本**（仅限统一标签客户端）。 统一标签客户端需要1.2 或更高版本的 TLS 版本，以确保使用加密的安全协议，并与 Microsoft 安全指南保持一致。
+    
 ### <a name="on-premises-servers"></a>本地服务器
 
 Azure 信息保护中的 Azure Rights Management 服务支持以下本地服务器：
@@ -200,7 +203,7 @@ Azure 信息保护中的 Azure Rights Management 服务支持以下本地服务�
 > [!TIP]
 > 如果你部署 Azure 信息保护，然后决定不再想要使用此云服务，请参阅[解除 Azure 信息保护授权和停用 Azure 信息保护](decommission-deactivate.md)。
 
-对于其他非迁移方案，如果这两个服务在同一组织中处于活动状态，则必须对这两个服务进行配置，使任何给定用户仅允许任何给定用户保护内容。 可按如下所示进行配置：
+对于其他非迁移方案，如果这两个服务在同一组织中处于活动状态，则必须对这两个服务进行配置，使任何给定用户仅允许任何给定用户保护内容。 可以将其配置如下：
 
 * 使用重定向来[Azure RMS 迁移 AD RMS](migrate-from-ad-rms-to-azure-rms.md)
 

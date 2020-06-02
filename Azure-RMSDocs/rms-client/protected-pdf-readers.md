@@ -1,10 +1,10 @@
 ---
 title: 适用于 Microsoft 信息保护的受保护的 PDF 阅读器
 description: 为标记为分类和保护的 PDF 文档安装读取器
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 12/05/2019
+ms.date: 05/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -14,18 +14,20 @@ ms.suite: ems
 ms.custom: user
 search.appverid:
 - MET150
-ms.openlocfilehash: c3501f151d8c894abc92408192a7ef86d28ad8df
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: 755424c1f3c813ca517ae4afcbe1e4d7a134276f
+ms.sourcegitcommit: fa16364879823b86b4e56ac18a1fc8de5a5dae57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746955"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250028"
 ---
 # <a name="pdf-readers-that-support-microsoft-information-protection"></a>支持 Microsoft 信息保护的 PDF 读者
 
 如果需要打开受 Microsoft 信息保护保护的 PDF 文档，请使用以下链接和信息。
 
-受保护的 PDF 文档可能包含敏感信息。 为了增加安全性，会对文档进行加密，使未经授权的用户无法阅读该文档。 若要打开此文档，你需要一个读取器（有时称为查看器），该读者验证你是否已被授权打开文档，然后对其进行解密。
+受保护的 PDF 文档可能包含敏感信息。 为了增加安全性，会对文档进行加密，使未经授权的用户无法阅读该文档，并且授权人员无法共享显示该文档的屏幕或屏幕截图。 
+
+若要打开此文档，你需要一个读取器（有时称为查看器），该读者验证你是否已被授权打开文档，然后对其进行解密。
 
 ## <a name="install-pdf-readers-for-your-device"></a>为设备安装 PDF 读取器
 

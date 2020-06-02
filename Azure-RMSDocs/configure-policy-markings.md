@@ -1,32 +1,31 @@
 ---
 title: 为 Azure 信息保护标签配置可视标记 - AIP
 description: 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 05/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 64f1d03931e346d7f27ce35a3837c336a4468e7a
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: a0a0f5e712c0313b281fc2bafa64719ed61d2e03
+ms.sourcegitcommit: fa16364879823b86b4e56ac18a1fc8de5a5dae57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746826"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84249855"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-
->[!NOTE] 
+>[!NOTE]
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
-当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。 
+当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
 
 有关这些视觉标记的其他信息：
 
@@ -35,15 +34,15 @@ ms.locfileid: "83746826"
 - 水印适用于 Word、Excel 和 PowerPoint：
 
     - Excel：水印仅在页面布局和打印预览模式及打印后可见。
-    
+
     - PowerPoint：水印应用于母板幻灯片，作为背景图像。 在“视图”**** 选项卡上的“幻灯片母版”**** 中，确保未选中“隐藏背景图形”**** 复选框。
 
 - Word、Excel 和 PowerPoint 中的水印、页眉和页脚支持多行。 如果为 Outlook 中应用的标签页眉或页脚指定多行，这些行就会连接到一起。 在这种情况下，请考虑使用配置来[为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记](#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)。
 
 - 最大字符串长度：
-    
+
     - 页眉和页脚可以输入的最大字符串长度为 1024 个字符。 但是，Excel 的页眉和页脚的总数限制为 255 个字符。 此限制包括 Excel 中不可见的字符，例如格式代码。 如果达到该限制，则输入的字符串不在 Excel 中显示。
-    
+
     - 可以输入的水印的最大字符串长度为 255 个字符。
 
 - 你可以简单地指定文本字符串，也可以使用[变量](#using-variables-in-the-text-string)在应用页眉、页脚或水印时动态创建文本字符串。
@@ -61,7 +60,7 @@ ms.locfileid: "83746826"
 - 在 Office 应用中，会在应用标签时应用来自标签的视觉标记。 打开标记的文档以及首次保存该文档时，也会应用视觉标记。  
 
 - 当使用文件资源管理器、PowerShell 或 Azure 信息保护扫描程序标记文档时，不会立即应用视觉标记，但在 Office 应用中打开文档以及首次保存文档时会通过 Azure 信息保护客户端应用视觉标记。
-    
+
     当你对保存在 Microsoft SharePoint、OneDrive for work 或 school 或 OneDrive for home 中的文件使用 "[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)" 时，不会应用可视标记，除非你将 "[高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)配置为启用分类以在后台连续运行。 
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>配置标签的视觉标记
@@ -99,18 +98,16 @@ ms.locfileid: "83746826"
 
 - `${User.Name}`，针对文档或电子邮件的所有者（按 Windows 登录用户名）。 例如：rsimone 
 
-- `${User.PrincipalName}`，针对文档或电子邮件的所有者（按 Azure 信息保护客户端登录电子邮件地址 (UPN)）。 例如： rsimone@vanarsdelltd.com
+- `${User.PrincipalName}`，针对文档或电子邮件的所有者（按 Azure 信息保护客户端登录电子邮件地址 (UPN)）。 例如：rsimone@vanarsdelltd.com
 
 - `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016/8/16 下午 1:30
 
 > [!NOTE]
->此语法区分大小写。
+>此语法区分大小写。 例如，如果为 `Document: ${Item.Name}  Classification: ${Item.Label}` "**常规**" 标签页脚指定字符串，则应用于名为 "项目" 的文档的页脚文本将为 "**文档：项目"。**
 
-示例：如果为“常规”**** 标签页脚指定字符串 `Document: ${Item.Name}  Classification: ${Item.Label}`，则应用于名为 project.docx 的文档的页脚文本将为 **Document: project.docx  Classification: General**。
-
-> [!NOTE]
-> `${User.Name}` `${User.PrincipalName}` Azure 信息保护统一标签客户端当前不支持使用和/或变量。 
-
+<!-- REMOVED w JUNE 2020 RELEASE> [!NOTE]
+> Use of either the `${User.Name}` and/or `${User.PrincipalName}` variable are currently not supported by the Azure Information Protection unified labeling client. 
+-->
 >[!TIP]
 > 还可以使用[字段代码将标签名称插入](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification)到文档或模板中。
 
@@ -158,7 +155,7 @@ Calibri 是页眉、页脚和水印文字的默认字体。 如果指定替代�
 
 可从可用颜色列表中进行选择，或输入颜色的红绿蓝 (RGB) 组成的十六进制三元色代码来指定自定义颜色。 例如， **#40e0d0**为青绿色的 RGB 十六进制值。 
 
-如果需要对这些代码进行引用，可从 MSDN web 文档的 " [ \<>颜色](https://developer.mozilla.org/docs/Web/CSS/color_value)" 页中找到一个有用的表格。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
+如果需要这些代码的参考，可从 MSDN web 文档的页面找到一个有用的表格 [\<color>](https://developer.mozilla.org/docs/Web/CSS/color_value) 。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 
 ## <a name="next-steps"></a>后续步骤
 

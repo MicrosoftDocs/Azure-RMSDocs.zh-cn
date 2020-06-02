@@ -1,10 +1,10 @@
 ---
 title: 自定义配置-Azure 信息保护统一标签客户端
 description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签客户端的信息。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 05/25/2020
+ms.date: 05/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: fdfbd6bded95a8fc2c156a34fb17f5241b65cf70
-ms.sourcegitcommit: 47a6def47b8a121eb5aa8071863a765bfc31fc9d
+ms.openlocfilehash: c1e662644bd84fd1ec6ba40d838ace505693fd68
+ms.sourcegitcommit: a4e367f8a51074a4cbde14943ca4d24918138ef6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "83825466"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84256587"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -120,7 +120,7 @@ ms.locfileid: "83825466"
 
 |设置|应用场景和说明|
 |----------------|---------------|
-|AdditionalPPrefixExtensions|[支持更改 \< EXT>。\<使用此高级属性 .pfile 到 P EXT>](#additionalpprefixextensions)
+|AdditionalPPrefixExtensions|[支持更改 \<EXT> 。\<EXT>使用此高级属性 .pfile 到 P](#additionalpprefixextensions)
 |AttachmentAction|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 |AttachmentActionTip|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments) 
 |DisableMandatoryInOutlook|[使 Outlook 邮件免于强制标记](#exempt-outlook-messages-from-mandatory-labeling)
@@ -149,6 +149,8 @@ ms.locfileid: "83825466"
 |RunAuditInformationTypesDiscovery|[禁止将文档中发现的敏感信息发送到 Azure 信息保护分析](#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)|
 |RunPolicyInBackground|[开启在后台持续运行的分类](#turn-on-classification-to-run-continuously-in-the-background)
 |ScannerConcurrencyLevel|[限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner)|
+|ScannerFSAttributesToSkip | [在扫描期间跳过或忽略文件，具体取决于文件属性](#skip-or-ignore-files-during-scans-depending-on-file-attributes-public-preview)
+|UseCopyAndPreserveNTFSOwner | [在标记期间保留 NTFS 所有者](#preserve-ntfs-owners-during-labeling-public-preview)
 
 用于检查标签策略设置对名为 "Global" 的标签策略有效的示例 PowerShell 命令：
 
@@ -225,7 +227,7 @@ ms.locfileid: "83825466"
 
 配置此设置时，将启用[PowerShell](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-powershell) cmdlet **set-aipfilelabel** ，以允许从 PST、RAR、7zip 和 MSG 文件中删除保护。
 
-- 密钥： **LabelPolicy**
+- 密钥： **EnableContainerSupport**
 
 - 值： **True**
 
@@ -243,7 +245,7 @@ ms.locfileid: "83825466"
 
 - 键：OutlookDefaultLabel****
 
-- 值： \< **label GUID**> 或**None**
+- 值： \<**label GUID**> 或**None**
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -261,14 +263,14 @@ ms.locfileid: "83825466"
 
 - 密钥： **PFileSupportedExtensions**
 
-- 值： ** \< 字符串值>** 
+- 负值**\<string value>** 
 
 使用下表来确定要指定的字符串值：
 
 | 字符串值| 客户端| 扫描仪|
 |-------------|-------|--------|
 |\*|默认值：将保护应用于所有文件类型|将保护应用于所有文件类型|
-|\<null 值>| 将保护应用于 Office 文件类型和 PDF 文件| 默认值：将保护应用于 Office 文件类型和 PDF 文件|
+|\<null value>| 将保护应用于 Office 文件类型和 PDF 文件| 默认值：将保护应用于 Office 文件类型和 PDF 文件|
 |Convertto-html-Json （".jpg"，".png"）|除了 Office 文件类型和 PDF 文件，还会将保护应用到指定的文件扩展名 | 除了 Office 文件类型和 PDF 文件，还会将保护应用到指定的文件扩展名
 
 示例1：用于统一客户端的 PowerShell 命令仅保护 Office 文件类型和 PDF 文件，其中标签策略命名为 "客户端"：
@@ -287,19 +289,19 @@ ms.locfileid: "83825466"
 
 ### <a name="additionalpprefixextensions"></a>AdditionalPPrefixExtensions
 
-统一标签客户端支持更改 \< EXT>。.PFILE to P \< EXT> 通过使用 advanced 属性**AdditionalPPrefixExtensions**。 右键单击、PowerShell 和扫描程序支持此高级属性。 所有应用都有类似的行为。   
+统一标签客户端支持更改 \<EXT> 。\<EXT>使用高级属性**AdditionalPPrefixExtensions**.pfile 到 P。 右键单击、PowerShell 和扫描程序支持此高级属性。 所有应用都有类似的行为。   
 
 - 密钥： **AdditionalPPrefixExtensions**
 
-- 值： ** \< 字符串值>** 
+- 负值**\<string value>** 
 
 使用下表来确定要指定的字符串值：
 
 | 字符串值| 客户端和扫描程序|
 |-------------|---------------|
-|\*|所有 .Pfile 扩展将变为 P \< EXT>|
-|\<null 值>| 默认值的行为类似于默认的保护值。|
-|Convertto-html-Json （"dwg"，".zip"）|除了前面的列表，"dwg" 和 ".zip" 将变为 P \< EXT>| 
+|\*|所有 .Pfile 扩展变为 P\<EXT>|
+|\<null value>| 默认值的行为类似于默认的保护值。|
+|Convertto-html-Json （"dwg"，".zip"）|除了前面的列表，"dwg" 和 ".zip" 变为 P\<EXT>| 
 
 示例1： PowerShell 命令的行为类似于默认行为，即保护 "dwg" 变为 ".pfile"：
 
@@ -313,7 +315,7 @@ ms.locfileid: "83825466"
 
     Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions =ConvertTo-Json(".dwg")}
 
-对于此设置，以下扩展（". txt"，".xml"，".bmp"，". jt"，".jpg"，"jpeg"，". jpe"，". jif"，"jfif"，"."，".png"，".tif"，". tiff"，".gif"）始终变为 P \< EXT>。 值得注意的是，".ptxt" 不是 ".pfile"。 
+对于此设置，以下扩展（". txt"，".xml"，".bmp"，". jt"，".jpg"，"jpeg"，". jpe"，". jif"，"jfif"，". *"，".png"，".tif"，". tiff"，".gif"）始终变为 P \<EXT> 。值得注意的是，".ptxt" 不是 ".pfile"。 
 仅当启用了高级属性- [**PFileSupportedExtension**](#pfilesupportedextension)的 pfile 保护时， **AdditionalPPrefixExtensions**才有效。 
 
 例如，在使用以下命令时：
@@ -342,8 +344,155 @@ ms.locfileid: "83825466"
 
 ## <a name="remove-headers-and-footers-from-other-labeling-solutions"></a>删除其他标记解决方案中的页眉和页脚
 
-> [!NOTE]
-> 此配置当前具有已知限制，并将在将来的版本中重新发布。 
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
+
+可以使用两种方法从其他标记解决方案中删除分类。 第一种方法从 Word 文档中删除任何形状，其中的形状名称与 advanced 属性**WordShapeNameToRemove**中定义的名称相匹配，第二种方法允许您从 Word、Excel 和 PowerPoint 文档中删除或替换**RemoveExternalContentMarkingInApp**高级属性中定义的基于文本的标头或表尾。 
+
+### <a name="use-the-wordshapenametoremove-advanced-property"></a>使用 WordShapeNameToRemove 高级属性
+
+*版本2.6.101.0 和更高版本支持**WordShapeNameToRemove**高级属性*
+
+此设置使您可以在其他标签解决方案应用这些视觉标记后，删除或替换 Word 文档中基于形状的标签。 例如，该形状包含旧标签的名称，你现在已将该标签迁移到 "敏感度" 标签，以使用新标签名称及其自己的形状。
+
+若要使用此高级属性，需要在 Word 文档中查找该形状的名称，然后在 " **WordShapeNameToRemove** " 属性的 "形状" 高级属性列表中定义这些名称。 服务将删除 Word 中以此高级属性的形状列表中定义的名称开头的任何形状。
+
+通过定义要删除的所有形状的名称并避免在所有形状中检查文本（这是一种消耗大量资源的过程），避免删除包含要忽略的文本的形状。
+
+如果未在此附加高级属性设置中指定 Word 形状，并且 Word 包含在**RemoveExternalContentMarkingInApp**项值中，则将检查在**ExternalContentMarkingToRemove**值中指定的文本的所有形状。 
+
+查找要使用的形状的名称并希望排除：
+
+1. 在 Word 中，显示 "**选择**" 窗格： "**主页**" 选项卡 >**编辑**组 >**选择**"选项" >**选择 "窗格**。
+
+2. 选择要标记为删除的页面上的形状。 标记的形状的名称现在会在**选择**窗格中突出显示。
+
+使用形状的名称为 * * * * * * * * * * * * * * * * * * * * * * * WordShapeNameToRemove。 
+
+示例：形状名称为**dc**。 若要删除具有此名称的形状，则指定值：`dc`。
+
+- 密钥： **WordShapeNameToRemove**
+
+- 值：\<**Word shape name**> 
+
+示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{WordShapeNameToRemove="dc"}
+
+如果有多个 Word 形状要删除，请指定任意数量的值，以便删除形状。
+
+
+### <a name="use-the-removeexternalcontentmarkinginapp-advanced-property"></a>使用 RemoveExternalContentMarkingInApp 高级属性
+此设置使你可以从文档中删除或替换由其他标签解决方案应用的基于文本的页眉或页脚。 例如，旧的页脚包含已迁移到敏感度标签的旧标签的名称，以使用新标签名称及其自己的页脚。
+
+当统一标签客户端在其策略中获取此配置时，在 Office 应用中打开文档并将任何敏感度标签应用于该文档时，将删除或替换旧的页眉和页脚。
+
+Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint 中使用它时，会对这些应用的性能产生负面影响。 该配置允许你根据应用程序来定义设置，例如，搜索 Word 文档页眉和页脚中的文本，而不是 Excel 电子表格或 PowerPoint 演示文稿中的。
+
+因为模式匹配会影响用户的性能，所以建议你将 Office 应用程序类型（**W**Ord、E**X**项、 **P**owerPoint）限制为只需搜索的类型。
+对于所选的标签策略，请指定以下字符串：
+- 键：RemoveExternalContentMarkingInApp****
+
+- 值：\<**Office application types WXP**> 
+
+示例：
+
+- 若要仅搜索 Word 文档，请指定 W****。
+
+- 若要搜索 Word 文档和 PowerPoint 演示文稿，请指定 WP****。
+
+示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInApp="WX"}
+
+然后需要至少一个高级客户端设置 ExternalContentMarkingToRemove，**** 指定页眉或页脚的内容以及如何删除或替换它们。
+
+### <a name="how-to-configure-externalcontentmarkingtoremove"></a>如何配置 ExternalContentMarkingToRemove
+
+指定 ExternalContentMarkingToRemove 键的字符串值时，拥有三个使用正则表达式的选项****：
+
+- 用以删除页眉或页脚中所有内容的部分匹配。
+
+    示例：页眉或页脚包含字符串 TEXT TO REMOVE****。 想要完全删除这些页面或页脚。 可指定值：`*TEXT*`。
+
+- 用以删除页眉或页脚中特定字词的完全匹配。
+
+    示例：页眉或页脚包含字符串 TEXT TO REMOVE****。 只想删除单词 TEXT，结果使页眉或页脚字符串变为 TO REMOVE********。 可指定值：`TEXT `。
+
+- 用以删除页眉或页脚中所有内容的完全匹配。
+
+    示例：页眉或页脚包含字符串 TEXT TO REMOVE****。 想要删除其字符串为 TEXT TO REMOVE 的页眉或页脚。 可指定值：`^TEXT TO REMOVE$`。
+
+
+指定的字符串的匹配模式不区分大小写。 最大字符串长度为255个字符，且不能包含空格。 
+
+因为某些文档可能包括不可见字符或者不同类型的空格或制表符，可能检测不到指定的短语或句子的字符串。 只要有可能，指定单个易区分的单词作为值，并确保在生产环境中部署之前测试结果。
+
+对于同一标签策略，请指定以下字符串：
+
+- 键：ExternalContentMarkingToRemove****
+
+- 值：\<**string to match, defined as regular expression**> 
+
+示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="*TEXT*"}
+
+#### <a name="multiline-headers-or-footers"></a>多行页眉或页脚
+
+如果页眉或页脚文本不只一行，则为每行创建一个键和值。 例如，下面是具有两行文本的页脚：
+
+The file is classified as Confidential****
+
+Label applied manually****
+
+若要删除此多行页脚，请为同一标签策略创建以下两个条目：
+
+- 键：ExternalContentMarkingToRemove****
+
+- 密钥值1： ** \* 机密***
+
+- 键值2： ** \* 应用标签*** 
+
+示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="*Confidential*,*Label applied*"}
+
+
+#### <a name="optimization-for-powerpoint"></a>针对 PowerPoint 的优化
+
+PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你指定的但不属于页面或页脚的形状，可使用以下附加高级客户端设置：PowerPointShapeNameToRemove****。 我们还建议使用此设置来避免检查所有形状中的文本，因为这将占用大量资源。
+
+如果未指定这项附加的高级客户端设置，并且 PowerPoint 包括在 RemoveExternalContentMarkingInApp **** 键值中，将对所有形状检查你在 ExternalContentMarkingToRemove 值中指定的文本****。 
+
+查找用作页眉或页脚的形状的名称：
+
+1. 在 PowerPoint 中，显示“选择”窗格：“格式”选项卡 >“排列”组 >“选择”窗格****************。
+
+2. 选择幻灯片上包含页眉或页脚的形状。 所选形状的名称现在突出显示在“选择”**** 窗格中。
+
+使用形状的名称为 PowerPointShapeNameToRemove**** 键指定一个字符串字。 
+
+示例：形状名称是 fc****。 若要删除具有此名称的形状，则指定值：`fc`。
+
+- 键：PowerPointShapeNameToRemove****
+
+- 值：\<**PowerPoint shape name**> 
+
+示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{PowerPointShapeNameToRemove="fc"}
+
+如果要删除多个 PowerPoint 形状，请指定任意数量的值，以便删除形状。
+
+默认情况下，只检查主幻灯片的页眉和页脚。 若要将检查范围扩展到所有幻灯片，将占用大量资源，则可以使用 RemoveExternalContentMarkingInAllSlides**** 附加高级客户端设置：
+
+- 键：RemoveExternalContentMarkingInAllSlides****
+
+- 值： **True**
+
+示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInAllSlides="True"}
 
 ## <a name="disable-custom-permissions-in-file-explorer"></a>在文件资源管理器中禁用自定义权限
 
@@ -403,7 +552,7 @@ ms.locfileid: "83825466"
 
 - 密钥2： **AttachmentActionTip**
 
-- 键值2： " \< 自定义工具提示>"
+- 键值2： " \<customized tooltip> "
 
 自定义工具提示仅支持一种语言。
 
@@ -421,7 +570,7 @@ ms.locfileid: "83825466"
 
 - 密钥：ReportAnIssueLink****
 
-- 值： ** \< HTTP 字符串>**
+- 负值**\<HTTP string>**
 
 网站示例值：`https://support.contoso.com`
 
@@ -467,19 +616,19 @@ ms.locfileid: "83825466"
     
     - 密钥： **OutlookWarnUntrustedCollaborationLabel**
     
-    - 值： \< **标记 guid，用逗号分隔**>
+    - 值：\<**label GUIDs, comma-separated**>
 
 - 对齐消息：
     
     - 密钥： **OutlookJustifyUntrustedCollaborationLabel**
     
-    - 值： \< **标记 guid，用逗号分隔**>
+    - 值：\<**label GUIDs, comma-separated**>
 
 - 阻止邮件：
     
     - 密钥： **OutlookBlockUntrustedCollaborationLabel**
     
-    - 值： \< **标记 guid，用逗号分隔**>
+    - 值：\<**label GUIDs, comma-separated**>
 
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
@@ -504,19 +653,19 @@ ms.locfileid: "83825466"
     
     - 密钥： **OutlookWarnTrustedDomains**
     
-    - 值： **\<** 域名，用逗号分隔**>**
+    - 负值**\<**domain names, comma separated**>**
 
 - 对齐消息：
     
     - 密钥： **OutlookJustifyTrustedDomains**
     
-    - 值： **\<** 域名，用逗号分隔**>**
+    - 负值**\<**domain names, comma separated**>**
 
 - 阻止邮件：
     
     - 密钥： **OutlookBlockTrustedDomains**
     
-    - 值： **\<** 域名，用逗号分隔**>**
+    - 负值**\<**domain names, comma separated**>**
 
 例如，你为 "**机密 \ 所有员工**" 标签指定了**OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定**OutlookJustifyTrustedDomains**和**contoso.com**的其他高级客户端设置。 因此，用户可以 john@sales.contoso.com 在将其标记为 "**机密 \ 所有员工**" 时向其发送电子邮件，但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
 
@@ -573,7 +722,7 @@ ms.locfileid: "83825466"
 
 - 密钥： **OutlookOverrideUnlabeledCollaborationExtensions**
 
-- 值： **\<** 用于显示消息的文件扩展名，以逗号分隔**>**
+- 负值**\<**file name extensions to display messages, comma separated**>**
 
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
@@ -709,7 +858,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥： **ScannerConcurrencyLevel**
 
-- 值： ** \< 并发线程数>**
+- 负值**\<number of concurrent threads>**
 
 示例 PowerShell 命令，其中标签策略命名为 "Scanner"：
 
@@ -925,7 +1074,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥： **DefaultSubLabelId**
 
-- 值： \< 子标签 GUID>
+- 值：\<sublabel GUID>
 
 示例 PowerShell 命令，其中的父标签命名为 "机密"，而 "所有 Employees" 子标签具有8faca7b8-8d20-48a3-8ea2-0f96310a848e 的 GUID：
 
@@ -961,13 +1110,13 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 使用此高级设置设置标签的颜色。 若要指定颜色，请输入颜色的红色、绿色和蓝色（RGB）分量的十六进制三方代码。 例如，#40e0d0 为青绿色的 RGB 十六进制值。
 
-如果需要对这些代码进行引用，可从 MSDN web 文档的 " [ \<>颜色](https://developer.mozilla.org/docs/Web/CSS/color_value)" 页中找到一个有用的表格。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
+如果需要这些代码的参考，可从 MSDN web 文档的页面找到一个有用的表格 [\<color>](https://developer.mozilla.org/docs/Web/CSS/color_value) 。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 
 若要配置标签颜色的高级设置，请为所选标签输入以下字符串：
 
 - 键：**颜色**
 
-- 值： \< RGB 十六进制值>
+- 值：\<RGB hex value>
 
 示例 PowerShell 命令，其中标签命名为 "Public"：
 
@@ -1054,6 +1203,56 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 - **跟踪**：详细日志记录（客户端的默认设置）。
 
 此注册表设置不会更改为[集中报告](../reports-aip.md)发送到 Azure 信息保护的信息。
+
+## <a name="skip-or-ignore-files-during-scans-depending-on-file-attributes-public-preview"></a>在扫描期间跳过或忽略文件，具体取决于文件属性（公共预览版）
+
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
+
+默认情况下，Azure 信息保护统一标签扫描程序会扫描所有相关文件。 但是，你可能想要定义要跳过的特定文件，例如用于已移动的存档文件或文件。 
+
+使用**ScannerFSAttributesToSkip**高级设置，使扫描程序可以根据文件属性跳过特定文件。 在 "设置" 值中，列出将使文件在全部设置为**true**时要跳过的文件属性。 此文件属性列表使用和逻辑。
+
+下面的示例 PowerShell 命令演示了如何将此高级设置用于名为 "Global" 的标签。
+
+**跳过只读和存档的文件**
+
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_READONLY, FILE_ATTRIBUTE_ARCHIVE"}
+
+**跳过只读或存档的文件**
+
+若要使用或逻辑，请多次运行同一属性。 例如：
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_READONLY"}
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_ARCHIVE”}
+
+> [!TIP]
+> 建议你考虑启用扫描程序以跳过具有以下属性的文件：
+> * FILE_ATTRIBUTE_SYSTEM
+> * FILE_ATTRIBUTE_HIDDEN
+> * FILE_ATTRIBUTE_DEVICE
+> * FILE_ATTRIBUTE_OFFLINE
+> * FILE_ATTRIBUTE_RECALL_ON_DATA_ACCESS
+> * FILE_ATTRIBUTE_RECALL_ON_OPEN
+> * FILE_ATTRIBUTE_TEMPORARY
+
+有关可在**ScannerFSAttributesToSkip**高级设置中定义的所有文件属性的列表，请参阅[Win32 file Attribute 常量](https://docs.microsoft.com/windows/win32/fileio/file-attribute-constants)
+
+## <a name="preserve-ntfs-owners-during-labeling-public-preview"></a>在标记期间保留 NTFS 所有者（公共预览版）
+
+此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
+
+默认情况下，"扫描仪"、"PowerShell" 和 "文件资源管理器扩展" 标签不会保留在标记之前定义的 NTFS 所有者。 
+
+若要确保保留 NTFS 所有者值，请将所选标签策略的 " **UseCopyAndPreserveNTFSOwner**高级" 设置设置为 " **true** "。
+
+> [!CAUTION]
+> 仅当可以确保扫描程序与扫描存储库之间的低延迟、可靠网络连接时，才定义此高级设置。 自动标记过程中的网络故障可能会导致文件丢失。
+
+示例 PowerShell 命令（如果标签策略命名为 "Global"）：
+
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{ UseCopyAndPreserveNTFSOwner ="true"}
+
 
 ## <a name="next-steps"></a>后续步骤
 自定义 Azure 信息保护统一标签客户端后，请参阅以下资源，了解支持此客户端所需的其他信息：
