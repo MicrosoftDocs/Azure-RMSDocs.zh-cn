@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行当前版本的 Azure 信息保
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/05/2020
+ms.date: 06/03/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f7d410c7cf697005750790fdb705c2a6e358aeec
-ms.sourcegitcommit: fa16364879823b86b4e56ac18a1fc8de5a5dae57
+ms.openlocfilehash: cb4afc770cdfe2e930a7309e8fde9d48a9d73fd7
+ms.sourcegitcommit: f527c6247c04e934811dea53ff7e4dcd61bbf15d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84249906"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84326312"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -70,7 +70,7 @@ ms.locfileid: "84249906"
 ## <a name="prerequisites-for-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序的先决条件
 安装 Azure 信息保护扫描程序之前，请确保已满足以下要求。
 
-|要求|更多信息|
+|要求|详细信息|
 |---------------|--------------------|
 |运行扫描程序服务的 Windows Server 计算机：<br /><br />- 4 核处理器<br /><br />- 8 GB RAM<br /><br />- 临时文件 10GB 可用空间（平均）|Windows Server 2019、Windows Server 2016 或 Windows Server 2012 R2。 <br /><br />注意：在非生产环境中出于测试或评估目的时，可以使用 [Azure 信息保护客户端支持的](requirements.md#client-devices) Windows 客户端操作系统。<br /><br />此计算机可以是物理或虚拟计算机，需拥有快速可靠的网络，可连接到要进行扫描的数据存储。<br /><br /> 扫描程序需要足够的磁盘空间，才能为其扫描的每个文件（每个核心四个文件）创建临时文件。 借助建议的 10GB 磁盘空间，4 核处理器可以扫描 16 个文件，每个文件的大小为 625MB。 <br /><br /> 如果由于组织策略而无法建立 internet 连接，请参阅[部署带有备用配置的扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。 否则，请确保此计算机具有 internet 连接，允许通过 HTTPS （端口443）上的以下 Url：<br /> \*.aadrm.com <br /> \*.azurerms.com<br /> \*.informationprotection.azure.com <br /> informationprotection.hosting.portal.azure.net <br /> \*.aria.microsoft.com <br /> \*protection.outlook.com （仅适用于统一标签客户端的扫描程序）|
 |运行扫描程序服务的服务帐户|除了在 Windows Server 计算机上运行扫描程序服务外，此 Windows 帐户还对 Azure AD 进行身份验证，并下载 Azure 信息保护策略。 此帐户必须是同步到 Azure AD 的 Active Directory 帐户。 如果由于组织策略而无法同步此帐户，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />此服务帐户有以下要求：<br /><br />- 在本地登录**** 的用户权限分配。 此权限是安装和配置扫描程序所必需的，但不可用于操作。 必须将此权限授予服务帐户，但当确认扫描程序可发现、保护文件并对其进行分类后，可删除此权限。 如果由于组织策略的限制而甚至无法在短时间内授予此权限，请参阅[使用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)部分。<br /><br />- 作为服务登录**** 的用户权限分配。 扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。 <br /><br />- 针对数据存储库的权限： <br /><br /> 文件共享或本地文件：你必须授予**读取**和**写入**和**修改**权限以扫描文件，然后将分类和保护应用到满足 Azure 信息保护策略中的条件的文件。 <br /><br /> SharePoint：您必须授予 "**完全控制**" 权限以扫描文件，然后将分类和保护应用到满足 Azure 信息保护策略中的条件的文件。 <br /><br /> 若仅在发现模式下运行扫描程序，则只需“读取”权限即可****。<br /><br />-对于重新保护或删除保护的标签：若要确保扫描程序始终可以访问受保护的文件，请将此帐户设置为 Azure 信息保护的[超级用户](configure-super-users.md)，并确保已启用超级用户功能。 此外，如果对分阶段部署实现了[载入控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，还请确保已配置的载入控件中包含此帐户。|
@@ -278,21 +278,17 @@ SQL 脚本：
     不支持通配符，也不支持 WebDav 位置。
     
     示例：
-    
-    - 对于本地路径：`C:\Folder`
-    
+      
     - 对于网络共享：`C:\Folder\Filename`
-    
-    - 对于 UNC 路径：`\\Server\Folder`
     
     - 对于 SharePoint 库：`http://sharepoint.contoso.com/Shared%20Documents/Folder`
     
     > [!TIP]
     > 如果为“共享文档”添加 SharePoint 路径：
     >
-     >- 如果要从“共享文档”扫描所有文档和所有文件夹，请在路径中指定“共享文档”****。 例如：`http://sp2013/Shared Documents`
+     >- 如果要从“共享文档”扫描所有文档和所有文件夹，请在路径中指定“共享文档”****。 例如： `http://sp2013/Shared Documents`
      >
-     >- 如果要从“共享文档”下的子文件夹扫描所有文档和所有文件夹，请在路径中指定“文档”****。 例如：`http://sp2013/Documents/Sales Reports`
+     >- 如果要从“共享文档”下的子文件夹扫描所有文档和所有文件夹，请在路径中指定“文档”****。 例如： `http://sp2013/Documents/Sales Reports`
     
     对于此窗格上的其余设置，请不要更改此初始配置的设置，但请将其保留为**内容扫描作业默认值**。 这意味着数据存储库将从内容扫描作业继承设置。 
     
