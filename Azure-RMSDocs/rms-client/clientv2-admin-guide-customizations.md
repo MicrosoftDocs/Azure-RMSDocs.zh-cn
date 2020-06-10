@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c1e662644bd84fd1ec6ba40d838ace505693fd68
-ms.sourcegitcommit: a4e367f8a51074a4cbde14943ca4d24918138ef6
+ms.openlocfilehash: 8d9914a696355d376847a85a20b8918856aac5f5
+ms.sourcegitcommit: a44977027d3fbc33b580fd034700ea91d6a2548b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84256587"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84627687"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -346,7 +346,7 @@ ms.locfileid: "84256587"
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
-可以使用两种方法从其他标记解决方案中删除分类。 第一种方法从 Word 文档中删除任何形状，其中的形状名称与 advanced 属性**WordShapeNameToRemove**中定义的名称相匹配，第二种方法允许您从 Word、Excel 和 PowerPoint 文档中删除或替换**RemoveExternalContentMarkingInApp**高级属性中定义的基于文本的标头或表尾。 
+可以通过两种方法从其他标记解决方案中删除分类。 第一种方法从 Word 文档中删除任何形状，其中的形状名称与 advanced 属性**WordShapeNameToRemove**中定义的名称相匹配，第二种方法允许您从 Word、Excel 和 PowerPoint 文档中删除或替换**RemoveExternalContentMarkingInApp**高级属性中定义的基于文本的标头或表尾。 
 
 ### <a name="use-the-wordshapenametoremove-advanced-property"></a>使用 WordShapeNameToRemove 高级属性
 
