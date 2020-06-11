@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3ee5ab34b2e7a502157ea4f788b6d172c683506e
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: 4f66b49a6f4ad5ee50efb26849b06492cad89715
+ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746863"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84666007"
 ---
 # <a name="office365-configuration-for-online-services-to-use-the-azure-rights-management-service"></a>Office 365：用于联机服务的配置以使用 Azure Rights Management 服务
 
@@ -80,7 +80,7 @@ ms.locfileid: "83746863"
 若要在 Microsoft 365 和 OneDrive 中配置 SharePoint 以支持 Azure Rights Management 服务，必须首先使用 SharePoint 管理中心为 SharePoint 启用信息权限管理（IRM）服务。 然后，站点所有者可以使用 IRM 保护其 SharePoint 列表和文档库，用户可以对其 OneDrive 库进行 IRM 保护，使保存在那里的文档和与他人共享的文档自动受到 Azure Rights Management 服务的保护。
 
 > [!NOTE]
-> Microsoft 365 和 OneDrive 中的受 IRM 保护的 SharePoint 库需要最新版本的新 OneDrive 同步客户端（OneDrive .exe）和[Microsoft 下载中心提供的 RMS 客户端](https://www.microsoft.com/en-us/download/details.aspx?id=38396)版本。 即使已经安装了 Azure 信息保护客户端，也要安装此版本的 RMS 客户端。 有关此部署方案的详细信息，请参阅[在企业环境中部署新的 OneDrive 同步客户端](https://support.office.com/article/Deploy-the-new-OneDrive-sync-client-in-an-enterprise-environment-3f3a511c-30c6-404a-98bf-76f95c519668)。
+> Microsoft 365 和 OneDrive 中的受 IRM 保护的 SharePoint 库需要最新版本的新 OneDrive 同步客户端（OneDrive.exe）和 Microsoft 下载中心提供的[RMS 客户端](https://www.microsoft.com/download/details.aspx?id=38396)版本。 即使已经安装了 Azure 信息保护客户端，也要安装此版本的 RMS 客户端。 有关此部署方案的详细信息，请参阅[在企业环境中部署新的 OneDrive 同步客户端](https://support.office.com/article/Deploy-the-new-OneDrive-sync-client-in-an-enterprise-environment-3f3a511c-30c6-404a-98bf-76f95c519668)。
 
 若要为 SharePoint 启用信息权限管理（IRM）服务，请参阅 Office 文档中的以下说明：
 
@@ -123,9 +123,9 @@ ms.locfileid: "83746863"
 #### <a name="configuration-for-administrators"></a>管理员配置
 尽管你无法使用 SharePoint 管理中心为用户的 OneDrive 配置 IRM，但是你可以使用 Windows PowerShell 执行此操作。 若要为这些库启用 IRM，请执行以下步骤：
 
-1. 下载并安装[SharePoint 客户端组件 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=42038)。
+1. 下载并安装[SharePoint 客户端组件 SDK](https://www.microsoft.com/download/details.aspx?id=42038)。
 
-2. 下载并安装[SharePoint 命令行管理](https://www.microsoft.com/en-us/download/details.aspx?id=35588)程序。
+2. 下载并安装[SharePoint 命令行管理](https://www.microsoft.com/download/details.aspx?id=35588)程序。
 
 3. 在计算机上复制以下脚本的内容，并将文件命名为 Set-IRMOnOneDriveForBusiness.ps1。
 
@@ -142,10 +142,10 @@ ms.locfileid: "83746863"
     Script Installation Requirements:
 
       SharePoint Client Components SDK
-      https://www.microsoft.com/en-us/download/details.aspx?id=42038
+      https://www.microsoft.com/download/details.aspx?id=42038
 
       SharePoint Management Shell
-      https://www.microsoft.com/en-us/download/details.aspx?id=35588
+      https://www.microsoft.com/download/details.aspx?id=35588
 
    ======
    #>
@@ -212,7 +212,7 @@ ms.locfileid: "83746863"
            {
                if($_.Exception.Message -match "Could not load file or assembly")
                {
-                   Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=42038"
+                   Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/download/details.aspx?id=42038"
                }
                else
                {
@@ -246,7 +246,7 @@ ms.locfileid: "83746863"
                    {
                        if($_.Exception.Message -match "Could not load file or assembly")
                        {
-                           Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=35588"
+                           Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: https://www.microsoft.com/download/details.aspx?id=35588"
                        }
                        else
                        {
@@ -534,7 +534,7 @@ ms.locfileid: "83746863"
 ##### <a name="additional-script-to-output-all-onedrive-urls-to-a-csv-file"></a>用于将所有 OneDrive Url 输出到的其他脚本。CSV 文件
 对于上面的步骤4c，你可以使用以下 Windows PowerShell 脚本提取所有用户的 OneDrive 库的 Url，然后可以根据需要对其进行检查、编辑（如有必要），然后将其导入到主脚本中。
 
-此脚本还需要[Sharepoint 客户端组件 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=42038)和[Sharepoint 命令行管理](https://www.microsoft.com/en-us/download/details.aspx?id=35588)程序。 按照相同的说明复制并粘贴它，本地保存文件（例如，“Report-OneDriveForBusinessSiteInfo.ps1”），如之前一样修改 `$sharepointAdminCenterUrl` 和 `$tenantAdmin` 值，然后运行该脚本。
+此脚本还需要[Sharepoint 客户端组件 SDK](https://www.microsoft.com/download/details.aspx?id=42038)和[Sharepoint 命令行管理](https://www.microsoft.com/download/details.aspx?id=35588)程序。 按照相同的说明复制并粘贴它，本地保存文件（例如，“Report-OneDriveForBusinessSiteInfo.ps1”），如之前一样修改 `$sharepointAdminCenterUrl` 和 `$tenantAdmin` 值，然后运行该脚本。
 
 *&#42;&#42;免责声明&#42;&#42;*：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
 
@@ -550,10 +550,10 @@ ms.locfileid: "83746863"
  Script Installation Requirements:
 
    SharePoint Client Components SDK
-   https://www.microsoft.com/en-us/download/details.aspx?id=42038
+   https://www.microsoft.com/download/details.aspx?id=42038
 
    SharePoint Management Shell
-   https://www.microsoft.com/en-us/download/details.aspx?id=35588
+   https://www.microsoft.com/download/details.aspx?id=35588
 
 ======
 #>
@@ -614,7 +614,7 @@ function Load-SharePointOnlineClientComponentAssemblies
         {
             if($_.Exception.Message -match "Could not load file or assembly")
             {
-                Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=42038"
+                Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/download/details.aspx?id=42038"
             }
             else
             {
@@ -648,7 +648,7 @@ function Load-SharePointOnlineModule
                 {
                     if($_.Exception.Message -match "Could not load file or assembly")
                     {
-                        Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=35588"
+                        Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: https://www.microsoft.com/download/details.aspx?id=35588"
                     }
                     else
                     {
@@ -759,7 +759,7 @@ $oneDriveForBusinessSiteUrls | Out-File -FilePath $reportName
 ##### <a name="script-to-disable-irm-for-onedrive"></a>用于为 OneDrive 禁用 IRM 的脚本
 如果需要为用户的 OneDrive 禁用 IRM，请使用以下示例脚本。
 
-此脚本还需要[Sharepoint 客户端组件 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=42038)和[Sharepoint 命令行管理](https://www.microsoft.com/en-us/download/details.aspx?id=35588)程序。 复制并粘贴内容，本地保存文件（例如，“Disable-IRMOnOneDriveForBusiness.ps1”），并修改 `$sharepointAdminCenterUrl` 和 `$tenantAdmin` 值。 手动指定 OneDrive Url 或使用上一部分中的脚本，以便可以导入这些 Url，然后运行该脚本。
+此脚本还需要[Sharepoint 客户端组件 SDK](https://www.microsoft.com/download/details.aspx?id=42038)和[Sharepoint 命令行管理](https://www.microsoft.com/download/details.aspx?id=35588)程序。 复制并粘贴内容，本地保存文件（例如，“Disable-IRMOnOneDriveForBusiness.ps1”），并修改 `$sharepointAdminCenterUrl` 和 `$tenantAdmin` 值。 手动指定 OneDrive Url 或使用上一部分中的脚本，以便可以导入这些 Url，然后运行该脚本。
 
 *&#42;&#42;免责声明&#42;&#42;*：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
 
@@ -774,10 +774,10 @@ $oneDriveForBusinessSiteUrls | Out-File -FilePath $reportName
  Script Installation Requirements:
 
    SharePoint Client Components SDK
-   https://www.microsoft.com/en-us/download/details.aspx?id=42038
+   https://www.microsoft.com/download/details.aspx?id=42038
 
    SharePoint Management Shell
-   https://www.microsoft.com/en-us/download/details.aspx?id=35588
+   https://www.microsoft.com/download/details.aspx?id=35588
 
 ======
 #>
@@ -843,7 +843,7 @@ function Load-SharePointOnlineClientComponentAssemblies
         {
             if($_.Exception.Message -match "Could not load file or assembly")
             {
-                Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=42038"
+                Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/download/details.aspx?id=42038"
             }
             else
             {
@@ -877,7 +877,7 @@ function Load-SharePointOnlineModule
                 {
                     if($_.Exception.Message -match "Could not load file or assembly")
                     {
-                        Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=35588"
+                        Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: https://www.microsoft.com/download/details.aspx?id=35588"
                     }
                     else
                     {

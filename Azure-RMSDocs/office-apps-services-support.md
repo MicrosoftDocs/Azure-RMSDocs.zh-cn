@@ -12,12 +12,12 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8dc7cc5f8e7c7a09293fedf0b4bb9874df339437
-ms.sourcegitcommit: fa16364879823b86b4e56ac18a1fc8de5a5dae57
+ms.openlocfilehash: 0fa79e8e9562739c59a2052dd97c9a1c96a2e90d
+ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84249872"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84665616"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
@@ -91,7 +91,7 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 
 使用 SharePoint IRM 保护时，Azure Rights Management 服务会在从 SharePoint 下载文档时为文档应用使用限制和数据加密，而不是在 SharePoint 中首次创建文档或将其上传到库时进行此操作。 有关如何在下载文档前对其进行保护的信息，请参阅 SharePoint 文档[中的 OneDrive 和 sharepoint 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx)。
 
-虽然不再是新的，但以下来自 Office 365 博客的文章中提供了一些额外信息，你可能会发现这些信息很有用： [SharePoint 中的信息 Rights Management 的新增功能](https://www.microsoft.com/en-us/microsoft-365/blog/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)
+虽然不再是新的，但以下来自 Office 365 博客的文章中提供了一些额外信息，你可能会发现这些信息很有用： [SharePoint 中的信息 Rights Management 的新增功能](https://www.microsoft.com/microsoft-365/blog/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)
 
 对于即将发生的更改，请参阅[SharePoint 安全性、管理和迁移更新](https://techcommunity.microsoft.com/t5/Microsoft-SharePoint-Blog/Updates-to-SharePoint-security-administration-and-migration/ba-p/549585)。
 

@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6a47441ad344166c9723d7c9969681dd7c26c219
-ms.sourcegitcommit: 47a6def47b8a121eb5aa8071863a765bfc31fc9d
+ms.openlocfilehash: 6640ac4706f064e8e7f3ba87b691268a17aa0f41
+ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "83825431"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84666109"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -104,11 +104,11 @@ Azure 信息保护功能不支持 Office 邮件合并功能。
 
 如果在使用 Microsoft Update 目录，或使用 Intune 之类的集中部署方法部署 .msi，请使用以下说明安装客户端。
 
-1. 从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端的可执行文件（文件名为 AzInfoProtection_UL）。 
+1. 从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端的可执行文件（文件名为 AzInfoProtection_UL）。 
     
     如果存在可用的预览版本，则保留此版本仅供测试使用。 它不用于生产环境中的最终用户。 
 
-2. 对于默认安装，只需运行可执行文件，例如**AzInfoProtection_UL .exe**。 但是，若要查看安装选项，请先通过 **/help**运行可执行文件：`AzInfoProtection_UL.exe /help`
+2. 对于默认安装，只需运行可执行文件，例如**AzInfoProtection_UL.exe**。 但是，若要查看安装选项，请先通过 **/help**运行可执行文件：`AzInfoProtection_UL.exe /help`
 
     有关无提示安装客户端的示例：`AzInfoProtection_UL.exe /quiet`
     
@@ -175,7 +175,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果安装这一 Microsoft .NET Framework 更高版本不可行，可以在安装客户端时使用 **DowngradeDotNetRequirement=True** 参数和值，这样就可以在已安装 Microsoft .NET Framework 版本 4.5.1 的情况下忽略这项要求。
 
-例如：`AzInfoProtection_UL.exe DowngradeDotNetRequirement=True`
+例如： `AzInfoProtection_UL.exe DowngradeDotNetRequirement=True`
 
 建议你谨慎使用此参数，并了解当 Azure 信息保护统一标签客户端与此旧版本的 Microsoft .NET Framework 一起使用时，Office 应用程序的报告问题将会挂起。 如果确实遇到了尚未解决的问题，请先升级到建议的版本，然后再尝试其他故障排除解决方案。 
 
@@ -187,7 +187,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果将 Intune 用于软件部署方法，请将这些说明与[使用 Microsoft Intune 添加应用](/intune/deploy-use/add-apps)一起使用。
 
-1. 从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端（AzInfoProtection_UL）的 .msi 版本。 
+1. 从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端（AzInfoProtection_UL）的 .msi 版本。 
     
     如果存在可用的预览版本，则保留此版本仅供测试使用。 它不用于生产环境中的最终用户。
 
@@ -196,11 +196,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     |Office 版本|操作系统|软件|操作|
     |--------------------|--------------|----------------|---------------------|
     |Office 365 1902 或更高版本之外的所有版本|仅限于 Windows 10 版本 1809，操作系统内部版本早于 17763.348|[KB 4482887](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887)|安装|
-    |Office 2016|所有支持的版本|64 位：[KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=55007)<br /><br />32 位：[KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=54999)<br /><br /> 版本：1.0|安装|
-    |Office 2013|所有支持的版本|64 位：[KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54992)<br /><br /> 32 位：[KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54979) <br /><br />版本：1.0|安装|
-    |Office 2010|所有支持的版本|[Microsoft Online Services 登录助手](https://www.microsoft.com/en-us/download/details.aspx?id=28177)<br /><br /> 版本：2.1|安装|
-    |Office 2010|Windows 8.1 和 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB2843630 或 KB2919355，则进行安装|
-    |Office 2010|Windows 8 和 Windows Server 2012|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
+    |Office 2016|所有支持的版本|64 位：[KB3178666](https://www.microsoft.com/download/details.aspx?id=55007)<br /><br />32 位：[KB3178666](https://www.microsoft.com/download/details.aspx?id=54999)<br /><br /> 版本：1.0|安装|
+    |Office 2013|所有支持的版本|64 位：[KB3172523](https://www.microsoft.com/download/details.aspx?id=54992)<br /><br /> 32 位：[KB3172523](https://www.microsoft.com/download/details.aspx?id=54979) <br /><br />版本：1.0|安装|
+    |Office 2010|所有支持的版本|[Microsoft Online Services 登录助手](https://www.microsoft.com/download/details.aspx?id=28177)<br /><br /> 版本：2.1|安装|
+    |Office 2010|Windows 8.1 和 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB2843630 或 KB2919355，则进行安装|
+    |Office 2010|Windows 8 和 Windows Server 2012|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
     
    
 

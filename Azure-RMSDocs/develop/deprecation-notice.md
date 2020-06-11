@@ -12,12 +12,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 81c1ae66ebe1580255469c7008996ea633ca358d
-ms.sourcegitcommit: 005307a9a2d51f230f65a902325bac0a7eff29fb
+ms.openlocfilehash: 51af06c37e6ee23a762f35791b0796b93b52e83b
+ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "80375594"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84665803"
 ---
 # <a name="rms-sdk-42-deprecation-notice"></a>RMS SDK 4.2 弃用通知 
 
@@ -33,7 +33,7 @@ ms.locfileid: "80375594"
 
 新式浏览器使用证书透明度日志来验证是否已将证书颁发给合法的域所有者，以及这些证书是否由受信任的根证书颁发机构颁发。  
 
-为了更好地支持新式浏览器，2020年9月15日，Microsoft 将 `https://api.aadrm.com` 的证书更新到由全局信任的根 CA 颁发的新证书，该证书将颁发的证书报告给新式浏览器信任的证书透明度日志。 完成此更改后，尝试对所需根证书执行证书固定的旧版本 RMS SDK 将无法找到该证书，因此将无法连接。  
+为了更好地支持新式浏览器，2020年9月15日，Microsoft 会将证书更新为 `https://api.aadrm.com` 由全局信任的根 CA 颁发的新证书，该证书将颁发的证书报告给新式浏览器信任的证书透明度日志。 完成此更改后，尝试对所需根证书执行证书固定的旧版本 RMS SDK 将无法找到该证书，因此将无法连接。  
 
 ## <a name="client-impact"></a>客户端影响 
 
@@ -46,7 +46,7 @@ ms.locfileid: "80375594"
 
 资源 
 
-- Android： https://www.microsoft.com/en-us/download/details.aspx?id=43673
-- iOS： https://www.microsoft.com/en-us/download/details.aspx?id=43674 
-- MacOS： https://www.microsoft.com/en-us/download/details.aspx?id=43675 
-- Linux： https://azuread.github.io/rms-sdk-for-cpp/annotated.html
+- Android：https://www.microsoft.com/download/details.aspx?id=43673
+- iOS：https://www.microsoft.com/download/details.aspx?id=43674 
+- MacOS：https://www.microsoft.com/download/details.aspx?id=43675 
+- Linux：https://azuread.github.io/rms-sdk-for-cpp/annotated.html

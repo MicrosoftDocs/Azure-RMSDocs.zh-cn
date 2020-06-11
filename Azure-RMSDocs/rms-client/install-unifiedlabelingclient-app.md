@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 95c0af617e88b4201243f4b12381799d8202a595
-ms.sourcegitcommit: fea4df7be8fe83aa12820becc812ccf26d7adefb
+ms.openlocfilehash: b1c86b828cccb660bc56168ce9bbb7f5dfbcce83
+ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82852075"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84666075"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-unified-labeling-client"></a>用户指南：下载并安装 Azure 信息保护统一标签客户端
 
@@ -35,7 +35,7 @@ ms.locfileid: "82852075"
 
 在安装 Azure 信息保护统一标签客户端之前，请与管理员或技术支持人员确认你使用的是[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)来分类和保护文档和电子邮件。
 
-1. 从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载**AzInfoProtection_UL** 。
+1. 从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载**AzInfoProtection_UL.exe** 。
 
 2. 运行已下载的可执行文件，如果系统提示你继续，请单击 **"是"**。
 
@@ -43,7 +43,7 @@ ms.locfileid: "82852075"
 
 4. 如果系统提示继续操作，请单击“是”****，然后等待安装完成。
 
-6. 单击“**关闭**”。 开始使用 Azure 信息保护统一标签客户端之前：
+6. 单击“关闭” 。 开始使用 Azure 信息保护统一标签客户端之前：
 
     - 如果你的计算机运行 Office 2010，请重启计算机，然后转到下一节完成最后步骤。    
         
@@ -64,7 +64,7 @@ ms.locfileid: "82852075"
 ## <a name="other-instructions"></a>其他说明    
 有关 Azure 信息保护统一标签客户端用户指南的详细操作方法说明：
 
-- [您希望做什么？](clientv2-user-guide.md#what-do-you-want-to-do)
+- [要执行什么操作？](clientv2-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 请参阅[管理员指南](clientv2-admin-guide.md)中的[为用户安装 Azure 信息保护统一标签客户端](clientv2-admin-guide-install.md)。

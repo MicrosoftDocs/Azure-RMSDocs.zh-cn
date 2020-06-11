@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ea0081e4f81a3ea123c3ff58e57334b46df00521
-ms.sourcegitcommit: fa16364879823b86b4e56ac18a1fc8de5a5dae57
+ms.openlocfilehash: 824e246a0e979a478dbd135e8497434b0c2b6762
+ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84249889"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84665650"
 ---
 # <a name="central-reporting-for-azure-information-protection-public-preview"></a>Azure 信息保护的中心报告（公共预览版）
 
@@ -154,7 +154,7 @@ Azure 信息保护允许收集和存储标识为敏感信息类型（预定义�
 |要求|更多信息|
 |---------------|--------------------|
 |包含 Log Analytics 且用于与 Azure 信息保护相同的租户的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
-|对于来自标记客户端的报表信息： <br /><br />-Azure 信息保护客户端|支持统一标签客户端和经典客户端。 <br /><br />如果尚未安装，可以从[Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)下载并安装这些客户端。|
+|对于来自标记客户端的报表信息： <br /><br />-Azure 信息保护客户端|支持统一标签客户端和经典客户端。 <br /><br />如果尚未安装，可以从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载并安装这些客户端。|
 |对于基于云的数据存储中的报表信息： <br /><br />-Microsoft Cloud App Security |若要显示 Microsoft Cloud App Security 的信息，请配置[Azure 信息保护集成](https://docs.microsoft.com/cloud-app-security/azip-integration)。|
 |对于来自本地数据存储区的报表信息： <br /><br />-Azure 信息保护扫描程序 |有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 |
 |对于来自 Windows 10 计算机的报表信息：  <br /><br />-最小内部版本1809与 Microsoft Defender 高级威胁防护（Microsoft Defender ATP）|你必须从 Microsoft Defender 安全中心启用 Azure 信息保护集成功能。 有关详细信息，请参阅[Windows 中的信息保护概述](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。|
@@ -179,7 +179,7 @@ Azure 信息保护允许收集和存储标识为敏感信息类型（预定义�
     
     - 创建工作区后，可以使用具有较少权限的下列角色来查看所收集的数据：
     
-        - **安全读者**
+        - **安全读取者**
         - **全局读取者**
 
 2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#manage-access-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-rbac-roles)之一才能访问 Azure Log Analytics 工作区：

@@ -12,12 +12,12 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 2eeae09e3fe8bca00eb7d80df60418a246c0ca86
-ms.sourcegitcommit: 479b3aaea7011750ff85a217298e5ae9185c1dd1
+ms.openlocfilehash: 59caaa9eba68758595ab05be3b8abaadca715862
+ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82224540"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84666041"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>比较 Azure 信息保护与 AD RMS
 
@@ -53,7 +53,7 @@ Azure 信息保护的一些主要差异：
 |支持 Azure 信息保护客户端（经典）和 Azure 信息保护统一标签客户端，同时提供保护和消耗活动。|支持用于保护和消耗活动的 Azure 信息保护客户端（经典）。 <br /><br />仅支持 Azure 信息保护统一标签客户端以供使用，并且必须安装[Active Directory Rights Management Services 移动设备扩展](./active-directory-rights-manage-mobile-device.md)。
 |支持适用于计算机和移动设备的多因素身份验证 (MFA)。<br /><br />有关详细信息，请参阅[多重身份验证 (MFA) 和 Azure 信息保护](./requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection)。|如果将 IIS 配置为请求证书，将支持智能卡身份验证。|
 |默认情况下支持加密模式2，以便为密钥长度和加密算法提供推荐的安全级别。|默认情况下支持加密模式1，需要额外配置才能支持加密模式2，以获得推荐的安全级别。<br /><br />有关详细信息，请参阅 [AD RMS Cryptographic Modes](https://go.microsoft.com/fwlink/?LinkId=266659)（AD RMS 加密模式）。|
-|要求使用 Azure 信息保护许可证或具有 Office 365 的 Azure Rights Management 许可证来保护内容。 <br /><br />无需许可证即可使用已受 Azure 信息保护（包括另一个组织的用户）保护的内容。<br /><br />有关授权的详细信息，包括 P1 和 P2 许可证之间的差异，请参阅 Azure 信息保护站点中的[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|需要 RMS 许可证才能保护内容，以及使用已受 AD RMS 保护的内容。<br /><br />有关授权的详细信息，请参阅[客户端访问许可证和管理许可证](https://www.microsoft.com/en-us/Licensing/product-licensing/client-access-license.aspx)获取一般信息，但请联系 microsoft 合作伙伴或 microsoft 代表了解特定信息。|
+|要求使用 Azure 信息保护许可证或具有 Office 365 的 Azure Rights Management 许可证来保护内容。 <br /><br />无需许可证即可使用已受 Azure 信息保护（包括另一个组织的用户）保护的内容。<br /><br />有关授权的详细信息，包括 P1 和 P2 许可证之间的差异，请参阅 Azure 信息保护站点中的[功能列表](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|需要 RMS 许可证才能保护内容，以及使用已受 AD RMS 保护的内容。<br /><br />有关授权的详细信息，请参阅[客户端访问许可证和管理许可证](https://www.microsoft.com/Licensing/product-licensing/client-access-license.aspx)获取一般信息，但请联系 microsoft 合作伙伴或 microsoft 代表了解特定信息。|
 
 ## <a name="cryptographic-controls-for-signing-and-encryption"></a>对签名和加密的加密控制
 默认情况下，Azure 信息保护将 RSA 2048 用于所有公钥加密，将 SHA 256 用于签名操作。 相比之下，AD RMS 支持 RSA 1024 和 RSA 2048，还将 SHA 1 或 SHA 256 用于签名操作。

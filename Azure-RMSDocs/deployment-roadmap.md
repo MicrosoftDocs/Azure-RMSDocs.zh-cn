@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护部署路线图
 description: 使用这些步骤，为组织准备、实施和管理 Azure 信息保护。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/28/2019
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 06/10/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,19 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 88ddfd13cdee34b20f8d1014a0d564654fa594e1
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: 9852c792e732a0d84326e7dfc6f8b291af56fcad
+ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746933"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84665854"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+
+>[!NOTE] 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 建议使用以下步骤，为组织准备、实施和管理 Azure 信息保护。
 
@@ -149,7 +152,7 @@ ms.locfileid: "83746933"
     如果具有本地 SharePoint 和 Exchange 并希望使用其信息权限管理 (IRM) 功能，请安装和配置 Rights Management 连接器。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](./deploy-rms-connector.md)。
 
 ### <a name="step-6-use-and-monitor-your-data-protection-solutions"></a>第 6 步：使用和监视数据保护解决方案
-你现在可以监视组织如何使用已配置的标签，并确认保护敏感信息。 有关支持此部署阶段的其他信息，请参阅以下内容：
+现在，你可以监视你的组织如何使用已配置的标签，并确认你正在保护敏感信息。 有关支持此部署阶段的其他信息，请参阅以下内容：
 
 - [Azure 信息保护的中心报告](reports-aip.md)-当前提供预览版
 

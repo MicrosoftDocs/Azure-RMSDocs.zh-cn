@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: dd9f9358ad9abaafc2fc67de8beb548173d9fee9
-ms.sourcegitcommit: e31562d4f8856782b332b238e8fef4932e3dfab8
+ms.openlocfilehash: 9bafeded86eeaedf588335932dead370831c3568
+ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82161344"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84666092"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端支持的文件类型
 
@@ -68,11 +68,11 @@ Azure 信息保护统一标签客户端还可以使用已知的敏感信息类�
 
 其他文件类型在受保护时也支持分类。 有关这些文件类型，请参阅[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)部分。
 
-示例：
+例如：
 
-- 如果 "**常规**敏感度" 标签应用分类并且不应用保护：可以将 "**常规**" 标签应用到名为 "sales .pdf" 的文件，但不能将此标签应用到名为 "node.js" 的文件。 
+- 如果 "**常规**敏感度" 标签应用分类并且不应用保护：可以将 "**常规**" 标签应用到名为 sales.pdf 的文件，但不能将此标签应用于名为 sales.txt 的文件。 
 
-- 如果 "**机密 \ 所有员工**" 敏感度标签应用分类和保护：可以将此标签应用于名为 "sales .pdf" 的文件和名为 "sales .txt" 的文件。 还可以只对这些文件应用保护，而不应用分类。
+- 如果 "**机密 \ 所有员工**" 敏感度标签应用分类和保护：可以将此标签应用于名为 sales.pdf 的文件和名为 sales.txt 的文件。 还可以只对这些文件应用保护，而不应用分类。
 
 ## <a name="file-types-supported-for-protection"></a>支持保护的文件类型
 
@@ -195,7 +195,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 |Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
 |PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
 |PDF |.pdf|
-|Text|.txt; .xml; .csv|
+|文本|.txt; .xml; .csv|
 
 通过进行额外配置，还可以检查其他文件类型。 例如，可以[注册自定义文件扩展名，使用现有 Windows 筛选器处理程序处理文本文件](https://docs.microsoft.com/windows/desktop/search/-search-ifilter-registering-filters)，还可以安装软件供应商提供的其他筛选器。
 
@@ -207,7 +207,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 请按照以下说明操作，使用 Azure 信息保护扫描程序和 [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令检查 .zip 文件：
 
-1. 对于运行扫描程序或 PowerShell 会话的计算机，请安装 [Office 2010 Filter Pack SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2)。
+1. 对于运行扫描程序或 PowerShell 会话的计算机，请安装 [Office 2010 Filter Pack SP2](https://support.microsoft.com/help/2687447/description-of-office-2010-filter-pack-sp2)。
 
 2. 对于扫描仪：查找敏感信息后，如果要使用标签对 .zip 文件进行分类和保护，请按照 Powershell 配置中所述，使用 powershell advanced 设置**PFileSupportedExtensions**指定 .zip 文件扩展名，如[powershell 配置](../deploy-aip-scanner.md#scanner-from-the-unified-labeling-client-use-powershell-to-change-which-file-types-are-protected)中所述。
 
@@ -216,7 +216,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 名为“accounts.zip”的文件包含带有信用卡号的 Excel 电子表格****。 你有一个名为 "**机密 \ 财务**" 的敏感度标签，该标签配置为发现信用卡号，并自动应用带有限制访问财务组的保护的标签。 
 
-检查该文件后，来自 PowerShell 会话的统一标签客户端会将此文件归类为**机密 \ 财务**，并对该文件应用一般保护，以便只有财务组的成员可以将其解压缩，并将文件 **.pfile**。
+检查文件后，来自 PowerShell 会话的统一标签客户端会将此文件归类为**机密 \ 财务**，并对该文件应用常规保护，以便只有财务组的成员可以将该文件解压缩，并将该文件重命名**accounts.zip .pfile**。
 
 ### <a name="to-inspect-tiff-files-by-using-ocr"></a>使用 OCR 检查 .tiff 文件
 

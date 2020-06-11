@@ -12,12 +12,12 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 25ad77fb68f6d26891eaae62318388ce21fe54b4
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: 21a174d8daca5376cd4071d579a50628e1a4d91c
+ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746783"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84665786"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -113,7 +113,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>能否将外部用户（公司外部人员）添加到自定义模板？
 
-是。 利用[保护设置](configure-policy-protection.md)（可在 Azure 门户中配置），可为组织外的用户和组甚至其他组织中的所有用户添加权限。 你可能会发现引用分步示例，[使用 Azure 信息保护保护文档协作](secure-collaboration-documents.md)很有用。 
+是的。 利用[保护设置](configure-policy-protection.md)（可在 Azure 门户中配置），可为组织外的用户和组甚至其他组织中的所有用户添加权限。 你可能会发现引用分步示例，[使用 Azure 信息保护保护文档协作](secure-collaboration-documents.md)很有用。 
 
 注意，如果具有 Azure 信息保护标签，必须先将自定义模板转换为标签，然后再在 Azure 门户中配置这些保护设置。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
@@ -147,7 +147,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 ## <a name="how-do-i-configure-a-mac-computer-to-protect-and-track-documents"></a>如何配置 Mac 计算机以保护和跟踪文档？
 
-首先，请确保已使用 https://admin.microsoft.com 上的软件安装链接安装了 Office for Mac。 有关完整说明，请参阅[在电脑或 Mac 上下载并安装或重新安装 Office 365 或 Office 2019](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658)。
+首先，请确保已使用 https://admin.microsoft.com 上的软件安装链接安装了 Office for Mac。 有关完整说明，请参阅[在电脑或 Mac 上下载并安装或重新安装 Office 365 或 Office 2019](https://support.office.com/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658)。
 
 打开 Outlook 并使用 Office 365 工作或学校帐户创建配置文件。 然后，创建新邮件，并执行以下操作来配置 Office，使其可以使用 Azure Rights Management 服务来保护文档和电子邮件：
 
@@ -162,7 +162,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 在保护文档之后跟踪文档：在安装了 Azure 信息保护客户端的 Windows 计算机上，使用 Office 应用程序或文件资源管理器将文档注册到文档跟踪站点。 有关说明，请参阅[跟踪和撤销文档](./rms-client/client-track-revoke.md)。 现在可以从 Mac 计算机使用 Web 浏览器访问文档跟踪站点 (https://track.azurerms.com) 来跟踪和撤销此文档。
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>当我打开受 RMS 保护的 Office 文档时，关联的临时文件是否也将受 RMS 保护？
-否。 在此方案中，关联的临时文件不包含原始文档中的数据，而只包含文件打开时用户输入的内容。 与原始文件不同，临时文件明显不适合共享，将保留在设备上，受本地安全控件（例如 BitLocker 和 EFS）保护。
+不是。 在此方案中，关联的临时文件不包含原始文档中的数据，而只包含文件打开时用户输入的内容。 与原始文件不同，临时文件明显不适合共享，将保留在设备上，受本地安全控件（例如 BitLocker 和 EFS）保护。
 
 ## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>我正在寻找的一项功能似乎不适用于 SharePoint 受保护的库，是否支持对我的功能进行计划？
 目前，Microsoft SharePoint 通过使用受 IRM 保护的库来支持受 RMS 保护的文档，这些库不支持 Rights Management 模板、文档跟踪和一些其他功能。 有关详细信息，请参阅[Office 应用程序和服务](./office-apps-services-support.md)一文[中 Microsoft 365 和 sharepoint Server 中的 sharepoint](./office-apps-services-support.md#sharepoint-in-microsoft-365-and-sharepoint-server)部分。
@@ -185,7 +185,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>在文档跟踪站点中测试吊销时，显式的消息提示人们仍可在 30 天内访问此文档—该时间段是否可配置？
 
-是。 该消息反映了此特定文件的[使用许可证](configure-usage-rights.md#rights-management-use-license)。
+是的。 该消息反映了此特定文件的[使用许可证](configure-usage-rights.md#rights-management-use-license)。
 
 如果撤销文件，仅在用户对 Azure Rights Management 服务进行身份验证时才会强制执行此操作。 因此，如果文件的使用许可证有效期为 30 天，且用户已经打开过文档，则该用户在使用许可证期间仍继续拥有该文档的访问权限。 使用许可证过期时，用户必须重新进行身份验证，此时由于文件被撤销，因此会拒绝用户访问。
 
