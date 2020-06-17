@@ -11,16 +11,18 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 2983f346ba29bed30d1ceb2b055e4cdd1e152d4e
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.openlocfilehash: 46152c8f004f05a1c1ae317c0710e98be4a98121
+ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117538"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84802783"
 ---
 # <a name="admin-guide-azure-information-protection-unified-labeling-client-files-and-client-usage-logging"></a>管理员指南： Azure 信息保护统一标签客户端文件和客户端使用情况日志记录
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>
+> **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -28,15 +30,15 @@ ms.locfileid: "76117538"
 
 ## <a name="file-locations-for-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护统一标签客户端的文件位置
 
-客户端文件：   
+客户端文件：    
 
-- 对于 64 位操作系统： **\ProgramFiles (x86)\Microsoft Azure Information Protection**
+- 对于 64 位操作系统：**\ProgramFiles (x86)\Microsoft Azure Information Protection**
 
-- 对于 32 位操作系统： **\Program Files\Microsoft Azure Information Protection**
+- 对于 32 位操作系统：**\Program Files\Microsoft Azure Information Protection**
 
 客户端日志文件和当前安装的策略文件：
 
-- 对于 64 位和 32 位操作系统： **%localappdata%\Microsoft\MSIP**
+- 对于 64 位和 32 位操作系统：**%localappdata%\Microsoft\MSIP**
 
 
 ## <a name="usage-logging-for-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护统一标签客户端的使用情况日志记录

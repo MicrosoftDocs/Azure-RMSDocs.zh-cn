@@ -4,7 +4,7 @@ description: 有关如何使用 Azure 信息保护统一标签客户端从文件
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/13/2020
+ms.date: 06/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,18 @@ ms.assetid: ''
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 0c6d9de295be95fde6459849d4e9abb5161cf998
-ms.sourcegitcommit: 98d539901b2e5829a2aad685d10fb13fd8d7dec4
+ms.openlocfilehash: 1d8d2de33201b0ea8d10607137b54eb42cdb7731
+ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77422828"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84802879"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection"></a>用户指南：从 Azure 信息保护标记的文件和电子邮件中删除标签和保护
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
+>
+> **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -30,7 +32,7 @@ ms.locfileid: "77422828"
 如果你删除的敏感度标签已配置为应用保护，则此操作还会删除该文件的保护。 系统可能会提示你记录删除该标签的原因。
 
 > [!IMPORTANT]
-> 必须是文件所有者才能删除保护，或者已被授予删除保护的权限（导出或完全控制 Rights Management 权限）。
+> 必须是文件所有者才能删除保护，或者已被授予删除保护的权限（导出**** 或完全控制**** Rights Management 权限）。
 
 如果想要选择其他标签或一组其他的保护设置，则无需删除标签或保护。 您可以选择新标签，如有必要，您可以使用文件资源管理器定义自定义权限。 
 
@@ -56,15 +58,15 @@ ms.locfileid: "77422828"
 
 使用文件资源管理器时，可快速从单个文件、多个文件或文件夹中删除标签和保护。 选择文件夹时，将自动选择该文件夹及其所有子文件夹中的所有文件。 
 
-1. 在文件资源管理器中，选择你的文件、多个文件或文件夹。 右键单击，然后选择“分类和保护”。
+1. 在文件资源管理器中，选择你的文件、多个文件或文件夹。 右键单击，然后选择“分类和保护”****。
 
-2. 删除标签：在“分类和保护 - Azure 信息保护”对话框中，单击“删除标签”。 如果标签已配置为应用保护，将自动删除该保护。
+2. 删除标签：在“分类和保护 - Azure 信息保护”**** 对话框中，单击“删除标签”****。 如果标签已配置为应用保护，将自动删除该保护。
 
-3. 从单个文件删除自定义保护：在“分类和保护 - Azure 信息保护”对话框中，清除“使用自定义权限保护”选项。 
+3. 从单个文件删除自定义保护：在“分类和保护 - Azure 信息保护”**** 对话框中，清除“使用自定义权限保护”**** 选项。 
 
-4. 从多个文件删除自定义保护：在“分类和保护 - Azure 信息保护”对话框中，单击“删除自定义权限”。
+4. 从多个文件删除自定义保护：在“分类和保护 - Azure 信息保护”**** 对话框中，单击“删除自定义权限”****。
 
-5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”** 。
+5. 单击“应用”****，然后等到“工作完成”**** 消息出现即可查看结果。 然后单击 **“关闭”**。
 
 
 ## <a name="other-instructions"></a>其他说明

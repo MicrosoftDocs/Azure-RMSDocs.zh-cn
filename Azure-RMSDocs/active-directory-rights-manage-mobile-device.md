@@ -4,19 +4,19 @@ description: 了解 Active Directory 适用于 AIP 的移动设备扩展
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 04/28/2020
+ms.date: 06/17/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6dc8a5aa43b6f5d3dc53c014dd770fa87ff683a5
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: f20ebed9647570e1f9395791f346eb175a3a8c5e
+ms.sourcegitcommit: 43c9a5c3130a3a8e2ee2644207d07382bed09679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746370"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84879999"
 ---
 # <a name="active-directory-rights-management-services-mobile-device-extension"></a>Active Directory Rights Management Services 移动设备扩展
 
@@ -126,32 +126,90 @@ Write-Host "Microsoft Rights Management Mobile Device Extension Configured"
 |**配置**|**值**|
 |-----|-----|
 |**信赖方信任**|_api。|
-|**声明规则**|**属性存储**： Active Directory <br /><br />**电子邮件地址**：电子邮件地址<br /><br>**用户-名称**： UPN<br /><br /> **代理地址**： _https： \/ \/ schemas.xmlsoap.org/claims/ProxyAddresses|
+|**声明规则**|**属性存储**： Active Directory <br /><br />**电子邮件地址**：电子邮件地址<br /><br>**用户-名称**： UPN<br /><br /> **代理地址**： _https： \/ \/schemas.xmlsoap.org/claims/ProxyAddresses|
 
 > [!TIP]
 > 有关使用 AD FS AD RMS 部署示例的分步说明，请参阅[使用 Active Directory 联合身份验证服务部署 Active Directory Rights Management Services](https://docs.microsoft.com/office365/troubleshoot/active-directory/set-up-adfs-for-single-sign-on)。
 
 #### <a name="step-2-authorize-apps-for-your-devices"></a>步骤2：为你的设备授权应用
 
-1. 在替换变量以添加对 Azure 信息保护应用的支持后，运行以下 Windows PowerShell 命令：
+- 在替换变量以添加对**Azure 信息保护**应用的支持后，运行以下 Windows PowerShell 命令。 请确保按显示的顺序运行这两个命令：
 
 
 ```powershell
 Add-AdfsClient -Name "R<your application name> " -ClientId "<YOUR CLIENT ID >" -RedirectUri @("<YOUR REDIRECT URI >")
+```
+```powershell
+Grant-AdfsApplicationPermission -ClientRoleIdentifier '<YOUR CLIENT ID>' -ServerRoleIdentifier api.rms.rest.com -ScopeNames "openid"
 ```
 
 **Powershell 示例**
 ```powershell
 Add-AdfsClient -Name "Fabrikam application for MIP" -ClientId "96731E97-2204-4D74-BEA5-75DCA53566C3" -RedirectUri @("com.fabrikam.MIPAPP://authorize")
 ```
+```powershell
+Grant-AdfsApplicationPermission -ClientRoleIdentifier '96731E97-2204-4D74-BEA5-75DCA53566C3' -ServerRoleIdentifier api.rms.rest.com -ScopeNames "openid"
+```
+
+- 对于**Azure 信息保护统一标签客户端**，请运行以下 Windows PowerShell 命令，以在你的设备上添加对 Azure 信息保护客户端的支持：
+
+```powershell
+Add-AdfsClient -Name "Azure Information Protection Client" -ClientId "c00e9d32-3c8d-4a7d-832b-029040e7db99" -RedirectUri @("com.microsoft.azip://authorize")
+Grant-AdfsApplicationPermission -ClientRoleIdentifier "c00e9d32-3c8d-4a7d-832b-029040e7db99" -ServerRoleIdentifier api.rms.rest.com -ScopeName "openid"
+```
+- 若要**在 Windows 2016 和2019上支持 ADFS** ，并为第三方产品支持**ADRMS MDE** ，请运行以下 Windows PowerShell 命令：
+
+```powershell
+Add-AdfsClient -Name "YOUR APP" -ClientId 'YOUR CLIENT ID' -RedirectUri @("YOUR REDIRECT") 
+Grant-AdfsApplicationPermission -ClientRoleIdentifier 'YOUR CLIENT ID' -ServerRoleIdentifier api.rms.rest.com -ScopeNames "openid"
+```
+
+若要在**windows、** **Mac**、mobile 和**Office mobile**上配置 AIP 客户端，以便在**windows Server 2012 R2 和更高版本上使用 AD FS****或 AD RMS 受保护的内容**，请使用以下内容： 
+
+- 对于 Mac 设备（使用 RMS 共享应用），请确保按显示的顺序运行这两个命令：
+
+```powershell
+Add-AdfsClient -Name "RMS Sharing App for macOS" -ClientId "96731E97-2204-4D74-BEA5-75DCA53566C3" -RedirectUri @("com.microsoft.rms-sharing-for-osx://authorize")
+```
+```powershell
+Grant-AdfsApplicationPermission -ClientRoleIdentifier '96731E97-2204-4D74-BEA5-75DCA53566C3' -ServerRoleIdentifier api.rms.rest.com -ScopeNames "openid"
+```
+
+- 对于 iOS 设备（使用 Azure 信息保护应用），请确保按显示的顺序运行这两个命令：
+```powershell
+Add-AdfsClient -Name "Azure Information Protection app for iOS" -ClientId "9D7590FB-9536-4D87-B5AA-FAA863DCC3AB" -RedirectUri @("com.microsoft.rms-sharing-for-ios://authorize")
+```
+
+```powershell
+Grant-AdfsApplicationPermission -ClientRoleIdentifier '9D7590FB-9536-4D87-B5AA-FAA863DCC3AB' -ServerRoleIdentifier api.rms.rest.com -ScopeNames "openid"
+```
+
+- 对于 Android 设备（使用 Azure 信息保护应用），请确保按显示的顺序运行这两个命令：
+```powershell
+Add-AdfsClient -Name "Azure Information Protection app for Android" -ClientId "ECAD3080-3AE9-4782-B763-2DF1B1373B3A" -RedirectUri @("com.microsoft.rms-sharing-for-android://authorize")
+```
+```powershell
+Grant-AdfsApplicationPermission -ClientRoleIdentifier 'ECAD3080-3AE9-4782-B763-2DF1B1373B3A' -ServerRoleIdentifier api.rms.rest.com -ScopeNames "openid"
+```
+
+运行以下 PowerShell 命令，添加对设备上 Microsoft Office 应用的支持：
+- 对于 Mac、iOS、Android 设备（请确保按显示的顺序运行这两个命令）：
+
+```powershell
+Add-AdfsClient –Name "Office for Mac and Office Mobile" –ClientId "d3590ed6-52b3-4102-aeff-aad2292ab01c" –RedirectUri @("urn:ietf:wg:oauth:2.0:oob")
+```
+
+```powershell
+Set-AdfsClient -TargetClientId d3590ed6-52b3-4102-aeff-aad2292ab01c -RedirectUri "urn:ietf:wg:oauth:2.0:oob","launch-word://com.microsoft.Office.Word","launch-excel://com.microsoft.Office.Excel","launch-ppt://com.microsoft.Office.Powerpoint"
+```
 
 ### <a name="specifying-the-dns-srv-records-for-the-ad-rms-mobile-device-extension"></a>为 AD RMS 移动设备扩展指定 DNS SRV 记录
 
 必须为你的用户所使用的每个电子邮件域创建 DNS SRV 记录。 如果你的所有用户都使用来自单个父域的子域，并且此连续命名空间中的所有用户都使用相同的 RMS 群集，则可以在父域中仅使用一条 SRV 记录，而 RMS 将会找到相应的 DNS 记录。
-SRV 记录采用以下格式： _rmsdisco _http。 _tcp。 \<emailsuffix>\< portnumber>\< RMSClusterFQDN>
+SRV 记录采用以下格式： _rmsdisco _http。 _tcp。 \<emailsuffix>\<portnumber>\<RMSClusterFQDN>
 
 > [!NOTE]
-> 为 \< portnumber> 指定443。 尽管可以在 DNS 中指定不同的端口号，但使用移动设备扩展的设备将始终使用443。
+> 为指定 443 \<portnumber> 。 尽管可以在 DNS 中指定不同的端口号，但使用移动设备扩展的设备将始终使用443。
 
 例如，如果你的组织具有使用以下电子邮件地址的用户：
   - _user@contoso.com
@@ -162,23 +220,23 @@ SRV 记录采用以下格式： _rmsdisco _http。 _tcp。 \<emailsuffix>\< port
 
 如果使用 Windows Server 上的 DNS 服务器角色，请在 DNS 管理器控制台中使用以下表格作为 SRV 记录属性的指南：
 
-|字段|Value|
+|字段|值|
 |------|------|
 |域|_tcp contoso .com
 |服务|_rmsdisco
 |协议|_http
-|Priority|0
-|权重|0
+|优先级|0
+|重量|0
 |端口号|443
 |提供此服务的主机|_rmsserver contoso .com
 
-|字段|Value|
+|字段|值|
 |------|------|
 |域|_tcp fabrikam
 |服务|_rmsdisco
 |协议|_http
-|Priority|0
-|权重|0
+|优先级|0
+|重量|0
 |端口号|443
 |提供此服务的主机|_rmsserver contoso .com|
 
@@ -188,13 +246,13 @@ SRV 记录采用以下格式： _rmsdisco _http。 _tcp。 \<emailsuffix>\< port
 
 如果使用 Windows Server 上的 DNS 服务器角色，请使用下表作为 DNS 管理器控制台中的 SRV 记录属性的指南：
 
-|字段|Value|
+|字段|值|
 |------|------|
 |域|_tcp contoso .com
 |服务|_rmsdisco
 |协议|_http
-|Priority|0
-|权重|0
+|优先级|0
+|重量|0
 |端口号|443
 |提供此服务的主机|_rmsserver contoso .com|
 
@@ -202,14 +260,14 @@ SRV 记录采用以下格式： _rmsdisco _http。 _tcp。 \<emailsuffix>\< port
 
 安装 AD RMS 移动设备扩展之前，请确保之前部分中的先决条件已准备就绪，并且你知道 AD FS 服务器的 URL。 然后执行以下操作：
 
-1. 下载 AD RMS 移动设备扩展（ADRMS）。"MobileDeviceExtension"。
-1. 运行**ADRMS。MobileDeviceExtension**启动 Active Directory Rights Management Services 移动设备扩展安装向导 "。
+1. 从 Microsoft 下载中心下载 AD RMS 移动设备扩展（ADRMS.MobileDeviceExtension.exe）。
+1. 运行**ADRMS.MobileDeviceExtension.exe**以启动 Active Directory Rights Management Services 移动设备扩展安装向导。
 出现提示时，输入之前配置的 AD FS 服务器的 URL。
 1. 完成向导。
 
 在 RMS 群集中的所有节点上运行此向导。
 
-如果 AD RMS 群集与 AD FS 服务器之间有代理服务器，则默认情况下，AD RMS 群集将无法联系联合服务。 发生这种情况时，AD RMS 将无法验证从移动客户端收到的令牌，并将拒绝该请求。 如果你的代理服务器阻止此通信，则必须从 AD RMS 移动设备扩展网站更新 web.config 文件，以便 AD RMS 可以在需要联系 AD FS 服务器时绕过代理服务器。
+如果 AD RMS 群集与 AD FS 服务器之间有代理服务器，则默认情况下，AD RMS 群集将无法联系联合服务。 发生这种情况时，AD RMS 将无法验证从移动客户端收到的令牌，并将拒绝该请求。 如果你的代理服务器阻止此通信，则必须从 AD RMS 移动设备扩展网站更新 web.config 文件，以便 AD RMS 在需要与 AD FS 服务器联系时可以绕过代理服务器。
 
 #### <a name="updating-proxy-settings-for-the-ad-rms-mobile-device-extension"></a>正在更新 AD RMS 移动设备扩展的代理设置
 
@@ -230,9 +288,9 @@ SRV 记录采用以下格式： _rmsdisco _http。 _tcp。 \<emailsuffix>\< port
 <system.net>
 ```
 1. 进行以下更改，并保存该文件：
-- \<将 proxy-server> 替换为代理服务器的名称或地址。
-- 将 \< 端口> 替换为将代理服务器配置为使用的端口号。
-- 将 \< AD FS url> 替换为联合身份验证服务的 url。 不要包含 HTTP 前缀。
+- \<proxy-server>将替换为代理服务器的名称或地址。
+- 替换 \<port> 为将代理服务器配置为使用的端口号。
+- 替换 \<AD FS URL> 为联合身份验证服务的 URL。 不要包含 HTTP 前缀。
 
     > [!NOTE]
     > 若要了解有关替代代理设置的详细信息，请参阅[代理配置](https://msdn.microsoft.com/library/dkwyc043(v=vs.110).aspx)文档。
@@ -246,3 +304,4 @@ SRV 记录采用以下格式： _rmsdisco _http。 _tcp。 \<emailsuffix>\< port
 
 了解有关 Azure 信息保护的详细信息，与其他 AIP 客户联系，并使用[API yammer 组](https://www.yammer.com/askipteam/)与 AIP 产品经理联系。 
 
+"

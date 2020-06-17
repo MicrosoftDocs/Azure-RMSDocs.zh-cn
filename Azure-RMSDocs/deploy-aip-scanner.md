@@ -4,7 +4,7 @@ description: 说明如何安装、配置和运行当前版本的 Azure 信息保
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/03/2020
+ms.date: 06/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cb4afc770cdfe2e930a7309e8fde9d48a9d73fd7
-ms.sourcegitcommit: f527c6247c04e934811dea53ff7e4dcd61bbf15d
+ms.openlocfilehash: 67c43e4b0dc24421e7fdb16ebadf32309dec9005
+ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84326312"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84802936"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -169,7 +169,7 @@ ms.locfileid: "84326312"
     
     使用以下脚本填充数据库： 
 
-    如果不存在（select * server_principals from quotename where sid = SUSER_SID （"domain\user"））开始声明 @T nvarchar （500） Set @T = "CREATE LOGIN" + （"domain\user"） + "from WINDOWS" exec （ @T ） END 
+    如果不存在（select * from master.sys. server_principals，其中 sid = SUSER_SID （' domain\user '））从 @T WINDOWS exec （）结束声明 nvarchar （500） Set @T = ' CREATE LOGIN ' + quotename （' domain\user '） + ' @T 
 
 若要创建用户并授予对此数据库的 db_owner 权限，请要求 Sysadmin 执行以下操作：
 
@@ -277,9 +277,9 @@ SQL 脚本：
     
     不支持通配符，也不支持 WebDav 位置。
     
-    示例：
+    示例:
       
-    - 对于网络共享：`C:\Folder\Filename`
+    - 对于网络共享：`\\Server\Folder`
     
     - 对于 SharePoint 库：`http://sharepoint.contoso.com/Shared%20Documents/Folder`
     
@@ -458,7 +458,7 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
 诊断扫描工具会执行以下检查，然后导出日志：
 
-|勾选标记|可能的结果|
+|检查|可能的结果|
 |-----------|----------|
 |数据库检查| 是最新的，可访问|
 |网络检查| Url 可访问|
@@ -602,7 +602,7 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 > [!TIP]
 > 如果需要比默认间隔更早刷新策略，例如在测试期间： 
 >
-> - 经典客户端中的扫描程序：从 **%LocalAppData%\Microsoft\MSIP\Policy.msip**中手动删除策略文件**policy.msip** 。
+> - 经典客户端中的扫描仪：手动删除策略文件， **Policy.msip** From **% LocalAppData% \Microsoft\MSIP\Policy.msip**。
 >
 > - 来自统一标签客户端的扫描程序：手动删除 **%LocalAppData%\Microsoft\MSIP\mip \\ < *processname*> \mip**中的内容。
 >

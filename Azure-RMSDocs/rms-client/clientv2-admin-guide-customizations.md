@@ -1,10 +1,10 @@
 ---
 title: 自定义配置-Azure 信息保护统一标签客户端
 description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签客户端的信息。
-author: batamig
+author: mlottner
 ms.author: bagol
 manager: rkarlin
-ms.date: 05/27/2020
+ms.date: 06/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,18 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8d9914a696355d376847a85a20b8918856aac5f5
-ms.sourcegitcommit: a44977027d3fbc33b580fd034700ea91d6a2548b
+ms.openlocfilehash: 901b036a333e5d801888176a020a8f60932ec2c8
+ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84627687"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84802971"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>
+> **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -394,7 +396,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 值：\<**Office application types WXP**> 
 
-示例：
+示例:
 
 - 若要仅搜索 Word 文档，请指定 W****。
 
@@ -798,9 +800,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 例如：
 
-- 使用此设置，可以看到用户访问了名为 "**机密**" 的
+- 使用此设置，可以看到用户访问了标记为 "**机密 \ 销售**" Financial.docx。
 
-- 如果没有此设置，您可以看到该财经包含6个信用卡号。
+- 如果没有此设置，可以看到 Financial.docx 包含6个信用卡号。
     
     - 如果同时还启用[用于更深入分析的内容匹配](../reports-aip.md#content-matches-for-deeper-analysis)，那么，还能够查看具体的信用卡卡号。
 
@@ -1224,7 +1226,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 若要使用或逻辑，请多次运行同一属性。 例如：
 
     Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_READONLY"}
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_ARCHIVE”}
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_ARCHIVE"}
 
 > [!TIP]
 > 建议你考虑启用扫描程序以跳过具有以下属性的文件：

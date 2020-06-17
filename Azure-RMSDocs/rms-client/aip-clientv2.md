@@ -4,7 +4,7 @@ description: 适用于 Windows 的 Azure 信息保护统一标签客户端的信
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/13/2020
+ms.date: 06/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,20 +13,22 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 19d9c71e547107eda82d71416ab1d899e0f9be4b
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.openlocfilehash: 624d9e8a6f2a25388f3488c6f15be84fcf82bb4b
+ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117844"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84802988"
 ---
 # <a name="azure-information-protection-unified-labeling-client-for-windows"></a>适用于 Windows 的 Azure 信息保护统一标签客户端
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
+> **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
+>
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
-适用于 Windows 的 Azure 信息保护统一标签客户端是一种可下载的客户端，适用于使用[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)对文档和电子邮件进行分类和保护的组织。 此客户端还有一个查看器，可用于没有自己的信息保护基础结构，但希望使用其他组织通过 Microsoft 的 Rights Management 服务保护的内容的组织。
+适用于 Windows 的 Azure 信息保护统一标签客户端是一种可下载的客户端，适用于使用[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)对文档和电子邮件进行分类和保护的组织。 此客户端还具有一个查看器，适用于没有自己的信息保护基础结构，但希望使用由 Microsoft 提供的 Rights Management 服务的其他组织保护的内容的组织。
 
 > [!NOTE]
 > 此客户端（也称为统一标签客户端）正在替换 Azure 信息保护客户端（经典）。 如果你不确定要使用的客户端，请参阅选择要用于[Windows 计算机的标记客户端](use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。

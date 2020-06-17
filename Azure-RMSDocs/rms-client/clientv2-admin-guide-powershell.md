@@ -4,31 +4,33 @@ description: 管理员使用 PowerShell 管理 Azure 信息保护统一标签客
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/08/2020
+ms.date: 06/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4456dd292fe6049a432aaebe56cba36dc4a3d7d1
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: 01149b9f12fce4c88f250548eaa86dd87eeaa689
+ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79404702"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84802869"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-unified-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护统一客户端配合使用
 
->适用范围： *[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
+>
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
 当你安装 Azure 信息保护统一标签客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
 Cmdlet 随 PowerShell 模块**AzureInformationProtection**一起安装，其中包含用于标记的 cmdlet。 例如：
 
-|标记 cmdlet|示例用法|
+|标记 cmdlet|用法示例|
 |----------------|---------------|
 |[Get AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)|对于共享文件夹，请标识具有特定标签的所有文件。|
 |[Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)|对于共享文件夹，检查文件内容，然后根据指定的条件自动标记未标记的文件。|
@@ -36,7 +38,7 @@ Cmdlet 随 PowerShell 模块**AzureInformationProtection**一起安装，其中�
 |[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|以非交互方式标记文件，例如使用按计划运行的脚本。|
 
 > [!TIP]
-> 若要使用路径长度超过 260 个字符的 cmdlet，请使用自 Windows 10 版本 1607 开始提供的以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)：<br /> **本地计算机策略** > **计算机配置** > **管理模板** > **所有设置** > **启用 Win32 长路径** 
+> 若要使用路径长度超过 260 个字符的 cmdlet，请使用自 Windows 10 版本 1607 开始提供的以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)：<br /> **本地计算机策略**  > **计算机配置**  > **管理模板**  > **所有设置**  > **启用 Win32 长路径** 
 > 
 > 对于 Windows Server 2016，在安装 Windows 10 的最新管理模板 (.admx) 时，可以使用相同的组策略设置。
 >
@@ -45,7 +47,7 @@ Cmdlet 随 PowerShell 模块**AzureInformationProtection**一起安装，其中�
 此模块安装在 **\ProgramFiles (x86)\Microsoft Azure Information Protection** 中，并将此文件夹添加到 **PSModulePath** 系统变量。 此模块的 .dll 命名为 **AIP.dll**。
 
 > [!IMPORTANT]
-> AzureInformationProtection 模块不支持配置标签或标签策略的高级设置。 对于这些设置，需要 Office 365 安全与合规中心 PowerShell。 有关详细信息，请参阅[Azure 信息保护统一标签客户端的自定义配置](clientv2-admin-guide-customizations.md)。
+> AzureInformationProtection 模块不支持配置标签或标签策略的高级设置。 对于这些设置，需要 Office 365 Security & 相容性中心 PowerShell。 有关详细信息，请参阅[Azure 信息保护统一标签客户端的自定义配置](clientv2-admin-guide-customizations.md)。
 
 ### <a name="prerequisites-for-using-the-azureinformationprotection-module"></a>使用 AzureInformationProtection 模块的先决条件
 
@@ -57,7 +59,7 @@ Cmdlet 随 PowerShell 模块**AzureInformationProtection**一起安装，其中�
 
     - 必须为你的组织启用超级用户功能，而且必须将你的帐户配置为 Azure 权限管理的超级用户。
 
-#### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>先决条件 1：必须激活 Azure Rights Management 服务
+#### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>先决条件 1：必须激活 Azure 权限管理服务
 
 如果未激活 Azure 信息保护租户，请参阅 [[从 Azure 信息保护中激活保护服务中](../activate-service.md)的说明。
 
@@ -69,13 +71,13 @@ Cmdlet 随 PowerShell 模块**AzureInformationProtection**一起安装，其中�
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>如何以非交互方式为 Azure 信息保护标记文件
 
-可以使用 [Set-AIPAuthentication cmdlet](/powershell/module/azureinformationprotection/set-aipauthentication)，以非交互方式运行标记 cmdlet。
+可以使用 Set-AIPAuthentication cmdlet，以非交互方式运行标记 cmdlet[](/powershell/module/azureinformationprotection/set-aipauthentication)。
 
 默认情况下，运行 cmdlet 进行标记时，命令会在交互式 PowerShell 会话中你自己的用户上下文运行。 若要以无人参与模式运行，请使用可以交互方式登录的 Windows 帐户，并使用将用于委派访问的 Azure AD 中的帐户。 为了便于管理，请使用从 Active Directory 同步到 Azure AD 的单个帐户。
 
 还需要请求 Azure AD 的访问令牌，该令牌将设置和存储委派用户的凭据，以向 Azure 信息保护进行身份验证。
 
-运行 Set-aipauthentication cmdlet 的计算机将使用您的标签管理中心（如 Office 365 安全与合规中心）下载标签策略，并将其分配给委派的用户帐户。
+运行 Set-aipauthentication cmdlet 的计算机将使用您的标签管理中心（如 Office 365 Security & 相容性中心）下载标签策略，并将其分配给委派的用户帐户。
 
 > [!NOTE]
 > 如果对不同用户使用标签策略，可能需要创建新的标签策略，以发布所有标签，并将策略发布到仅此委派的用户帐户。
@@ -99,7 +101,7 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
 
 1. 在新的浏览器窗口中，登录 [Azure 门户](https://portal.azure.com/)。
 
-2. 对于与 Azure 信息保护配合使用的 Azure AD 租户，请导航到**Azure Active Directory** > **管理** > **应用注册**"。 
+2. 对于与 Azure 信息保护配合使用的 Azure AD 租户，请导航到**Azure Active Directory**  >  **管理**  >  **应用注册**"。 
 
 3. 选择 " **+ 新注册**"。 在 "**注册应用程序**" 窗格上，指定以下值，然后单击 "**注册**"：
 
@@ -107,26 +109,26 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
         
         如果愿意的话，请指定其他名称。 该名称对于每个租户必须是唯一的。
     
-    - **支持的帐户类型**：**仅限此组织目录中的帐户**
+    - **受支持的帐户类型**：**仅限此组织目录中的帐户**
     
-    - **重定向 URI (可选)** ：**Web**和 `https://localhost`
+    - **重定向 URI （可选）**： **Web**和`https://localhost`
 
-4. 在 " **AIP-DelegatedUser** " 窗格上，复制 "**应用程序（客户端） ID**" 的值。 值类似于以下示例： `77c3c1c3-abf9-404e-8b2b-4652836c8c66`。 运行 Set-aipauthentication cmdlet 时，此值用于*AppId*参数。 粘贴并保存该值供以后参考。
+4. 在 " **AIP-DelegatedUser** " 窗格上，复制 "**应用程序（客户端） ID**" 的值。 值类似于下面的示例： `77c3c1c3-abf9-404e-8b2b-4652836c8c66` 。 运行 Set-aipauthentication cmdlet 时，此值用于*AppId*参数。 粘贴并保存该值供以后参考。
 
-5. 从侧栏中，选择 "**管理** **& 机密 > 证书**"。
+5. 从侧栏中，选择 "**管理**  >  **证书" & 密码**。
 
 6. 在 " **AIP-DelegatedUser-证书 & 密码**" 窗格的 "**客户端密码**" 部分中，选择 " **+ 新建客户端密钥**"。
 
 7. 对于 "**添加客户端密钥**"，请指定以下各项，然后选择 "**添加**"：
     
-    - **说明**： `Azure Information Protection unified labeling client`
-    - **过期**时间：指定选择的持续时间（1年、2年或永不过期）
+    - **说明**：`Azure Information Protection unified labeling client`
+    - **过期**：指定所选的持续时间（1年、2年或永不过期）
 
-8. 返回到 " **AIP-DelegatedUser-证书 & 机密**" 窗格的 "**客户端密码**" 部分中，复制**值**的字符串。 此字符串类似于以下示例： `OAkk+rnuYc/u+]ah2kNxVbtrDGbS47L4`。 若要确保复制所有字符，请选择要**复制到剪贴板**的图标。 
+8. 返回到 " **AIP-DelegatedUser-证书 & 机密**" 窗格的 "**客户端密码**" 部分中，复制**值**的字符串。 此字符串类似于以下示例： `OAkk+rnuYc/u+]ah2kNxVbtrDGbS47L4` 。 若要确保复制所有字符，请选择要**复制到剪贴板**的图标。 
     
     请务必保存此字符串，因为它不会再次显示，并且无法检索。 对于所使用的任何敏感信息，请安全地存储保存的值并限制对它的访问。
 
-9. 从侧栏中，选择 "**管理** > **API 权限**"。
+9. 从边栏中选择 "**管理**  >  **API 权限**"。
 
 10. 在 " **AIP-DelegatedUser-API 权限**" 窗格上，选择 " **+ 添加权限**"。
 
@@ -151,7 +153,7 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
 
 18. 选择“添加权限”。
 
-19. 返回到**AIP-DelegatedUser-API 权限**窗格，选择 "**向管理员授予 \<*你的租户名称*>** 并在确认提示中选择 **" 是 "** 。
+19. 返回到 " **AIP-DelegatedUser-API 权限**" 窗格，选择 "**授予管理员 \<*your tenant name*> 同意**"，并在确认提示时选择 **"是"** 。
     
     你的 API 权限应该如下所示：
     
@@ -160,7 +162,7 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
 现在，你已使用机密完成了此应用的注册，接下来可以使用参数*AppId*和*AppSecret*运行[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 。 此外，还需要租户 ID。 
 
 > [!TIP]
->可以通过使用 Azure 门户快速复制租户 ID：**Azure Active Directory** > **管理** > **属性** > **目录 ID**。
+>你可以使用 Azure 门户**Azure Active Directory**  >  **管理**  >  **属性**  >  **目录 ID**快速复制你的租户 ID。
 
 1. 通过 "以**管理员身份运行" 选项**打开 Windows PowerShell。 
 
@@ -178,7 +180,7 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
 > 如果计算机无法访问 internet，则无需在 Azure AD 中创建应用程序并运行 Set-aipauthentication。 相反，请按照[断开连接的计算机](clientv2-admin-guide-customizations.md#support-for-disconnected-computers)的说明进行操作。  
 
 ## <a name="next-steps"></a>后续步骤
-对于 PowerShell 会话中的 cmdlet 帮助，请键入 `Get-Help <cmdlet name> -online`。 例如： 
+对于 PowerShell 会话中的 cmdlet 帮助，请键入 `Get-Help <cmdlet name> -online` 。 例如： 
 
     Get-Help Set-AIPFileLabel -online
 
