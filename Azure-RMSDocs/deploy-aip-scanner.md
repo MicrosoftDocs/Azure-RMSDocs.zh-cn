@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 67c43e4b0dc24421e7fdb16ebadf32309dec9005
-ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
+ms.openlocfilehash: c1efdbcf7d6738b5dd1d0cfb6b5d4495cec60f4b
+ms.sourcegitcommit: 307258ff0a8a7a3f607c8f47f38a9801d0e06ba1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84802936"
+ms.lasthandoff: 06/21/2020
+ms.locfileid: "85126707"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>部署 Azure 信息保护扫描程序以自动对文件进行分类和保护
 
@@ -277,7 +277,7 @@ SQL 脚本：
     
     不支持通配符，也不支持 WebDav 位置。
     
-    示例:
+    示例：
       
     - 对于网络共享：`\\Server\Folder`
     
@@ -451,14 +451,16 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
 若要解决扫描仪问题，请在 PowerShell 会话中运行以下命令：
 
-        Start-AIPScannerDiagnostics
+        $scanner_account_creds= Get-Credential 
+        Start-AIPScannerDiagnostics -onbehalf $scanner_account_creds
+
 
 1. 仅执行命令-onbehalf% scanner_account% 
 2. 请注意，此命令不是先决条件检查工具。 该工具检查当前扫描程序部署是否正常。 请确保在完成扫描程序部署并完成配置文件配置后，才执行此命令。 
 
 诊断扫描工具会执行以下检查，然后导出日志：
 
-|检查|可能的结果|
+|勾选标记|可能的结果|
 |-----------|----------|
 |数据库检查| 是最新的，可访问|
 |网络检查| Url 可访问|

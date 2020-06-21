@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 13128b48be4dd4e64e767e121551c4c2e8692e78
-ms.sourcegitcommit: fa16364879823b86b4e56ac18a1fc8de5a5dae57
+ms.openlocfilehash: e069abcc246848a48dc0edb014bdea0e128d03b1
+ms.sourcegitcommit: 307258ff0a8a7a3f607c8f47f38a9801d0e06ba1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250027"
+ms.lasthandoff: 06/21/2020
+ms.locfileid: "85126690"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -54,17 +54,53 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 由于统一的标签客户端和经典客户端需要单独安装到 Office，因此你必须从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载并安装这些客户端。 
 
-应使用哪种客户端？
+使用下列部分来帮助你确定最适合你的组织的客户端：
 
-- 如果你的 Office 365 应用程序的最低版本为1910，并且你想要使用 MacOS、iOS 和 Android 也可以使用的相同标签和策略设置，则在 Windows 计算机上使用**为 office 内置的标签客户端**，你将需要使用可由、IOS 和 Android 使用的相同标签和策略设置。 这些功能包括功能区下的信息保护栏，便于选择和查看标签。 
-    
-    此客户端支持切换帐户，因为它不使用 Office 加载项，所以它比使用任何一个 Azure 信息保护客户端在 Office 应用中提供的性能更好。 由于在 Office 中内置了标记，因此此标签客户端无单独安装和维护。 此外，与 Office 外接程序不同的是，不能禁用。
+- [内置 Office 标签客户端](#built-in-office-labeling-client)
+- [Azure 信息保护统一标识客户端](#azure-information-protection-unified-labeling-client)
+- [Azure 信息保护经典客户端](#azure-information-protection-classic-client)
+- [在同一环境中使用多个客户端](#using-multiple-clients-in-the-same-environment)
 
-- 使用 Windows 计算机上的**Azure 信息保护统一的标签客户端**，可以使用 MacOS、IOS 和 Android 等标签和策略设置，而无需将文件独立于 Office 365 应用，也不需要经典客户端支持的功能。 这些功能目前包括使用本地密钥（HYOK）保护内容和本地数据存储的扫描程序的通用版本。
+有关详细信息，请参阅： AIP 客户端和功能的[详细比较](#detailed-comparisons-for-the-azure-information-protection-clients)，[不为统一标签客户端计划](#features-not-planned-to-be-in-the-azure-information-protection-unified-labeling-client)。
 
-- 如果需要的客户端版本的客户端尚不支持统一标签客户端，请在 Windows 计算机上安装**Azure 信息保护客户端（经典）** 。 尽管此客户端可以使用 MacOS、iOS 和 Android 使用的相同标签，但它具有不同的策略设置。 因此，你的折衷是使用另一个管理门户和用户的不同用户体验进行管理。
+> [!NOTE]
+> 最新版本的统一标签客户端使其能够与经典客户端在功能上关闭奇偶校验。 由于这种差距关闭，你会希望将新功能仅添加到统一的标签客户端。 
+>
+> 如果客户的当前功能集和功能满足你的业务要求，我们建议你部署统一的标签客户端。
+> 
 
-最新版本的统一标签客户端使其能够与经典客户端在功能上关闭奇偶校验。 由于这种差距关闭，你会希望将新功能仅添加到统一的标签客户端。 出于此原因，我们建议你在其当前功能集和功能满足你的业务需求的情况下部署统一的标签客户端。 否则，或者如果已在尚未[迁移到统一标签存储](../configure-policy-migrate-labels.md)的 Azure 门户中配置了标签，请使用经典客户端。
+### <a name="built-in-office-labeling-client"></a>内置 Office 标签客户端
+
+内置 Microsoft Office 的标记客户端：
+
+- 需要一个 Windows 计算机，其中包含 Office 365 应用程序，最低版本为1910
+- 允许共享 macOS、iOS 和 Android 也可以使用的标签和策略设置
+- 支持切换帐户
+- 在 Office 应用程序中提供更好的性能
+- 不需要单独安装和维护
+- 无法禁用。
+
+如果只需要经典或统一标签客户端提供的功能（例如功能区下的信息保护栏），**请勿使用**内置的 Office 标签客户端。 此栏提供更轻松的标签选择和可见性。
+
+### <a name="azure-information-protection-unified-labeling-client"></a>Azure 信息保护统一标识客户端
+
+统一标签客户端需要 Windows 计算机，并使你能够共享 macOS、iOS 和 Android 也可以使用的标签和策略设置。
+
+如果当前的统一标签功能不能满足您的业务要求，或者如果您已在 Azure 门户中配置了尚未[迁移到统一标签存储](../configure-policy-migrate-labels.md)的标签，请**不要使用**统一的标签客户端。
+
+### <a name="azure-information-protection-classic-client"></a>Azure 信息保护经典客户端
+
+经典客户端：
+
+- 需要 Windows 计算机
+- 提供对统一标签客户端上尚不可用的功能的访问权限，例如保存自己的本地密钥（HYOK），以及本地数据存储的扫描程序的通用版本。 
+- 使你能够与 macOS、iOS 和 Android 共享标签
+
+但对于 macOS、iOS 和 Android，经典客户端具有不同的策略设置。 因此，虽然你可能想要使用其他功能，但你必须使用单独的管理门户和用户体验来保护操作系统上的内容。
+
+如果只需要在统一标签客户端中使用较新的功能，或提供集中统一的用户体验，请**不要使用**经典客户端。
+
+### <a name="using-multiple-clients-in-the-same-environment"></a>在同一环境中使用多个客户端
 
 可以在同一环境中使用不同的客户端以支持不同的业务要求，如下面的部署示例中所示。 在混合客户端环境中，建议使用统一标签，以便客户端共享相同的标签集以便于管理。 默认情况下，新客户具有统一标签，因为其租户位于统一的标签平台上。 有关详细信息，请参阅[如何确定我的租户是否在统一标签平台上？](../faqs.md#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
 
@@ -74,7 +110,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 - 对于大多数用户，可以部署 Azure 信息保护统一标签客户端，因为此客户端满足这些用户的业务需求。 
     
-    对于这些用户，他们在 Windows、Mac、iOS 和 Android 中的标记体验非常相似，因为它们具有相同的发布到它们的标签和相同的策略设置。 作为管理员，你可以在同一管理中心管理这些标签和策略设置。
+    对于这些用户，他们在 Windows、Mac、iOS 和 Android 中的标记体验都是相似的，因为它们具有相同的发布到它们的标签和相同的策略设置。 作为管理员，你可以在同一管理中心管理这些标签和策略设置。
 
 - 你还会自行安装统一标签客户端，以测试 Azure 信息保护扫描程序。
 
@@ -88,7 +124,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 使用下表来帮助比较 Windows 计算机的三个标记客户端支持的功能。
 
-若要在不同的操作系统平台（Windows、MacOS、iOS 和 Android）和 web 上比较 Office 内置敏感度标签功能，请参阅 Microsoft 365 符合性文档，了解如何[在应用中提供敏感度标签功能](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)。 本文档还包括 Office 生成号或受支持功能的 Office 更新通道信息。
+若要在不同的操作系统平台（Windows、macOS、iOS 和 Android）和 web 上比较 Office 内置敏感度标签功能，请参阅 Microsoft 365 符合性文档，了解如何[在应用中提供敏感度标签功能](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)。 本文档还包括 Office 生成号或受支持功能的 Office 更新通道信息。
 
 |Feature|经典客户端|统一标签客户端|Office 内置标签客户端|
 |:------|:------------:|:---------------------:|:-----------------------------:|
@@ -101,7 +137,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |用户定义的标签权限： <br />-Word、Excel、PowerPoint、文件资源管理器的自定义权限| **是** | **是** | **是** |
 |标签的多语言支持：| **是** | **是** |**是** |
 |来自电子邮件附件的标签继承：| **是** | **是**  |否 |
-|包括以下内容的自定义项：<br />- 电子邮件的默认标签<br />-Outlook 中的弹出消息 <br />- S/MIME 支持<br />- 报告问题选项| 是  <sup>1</sup> | 是  <sup>2</sup> | 否 |
+|包括以下内容的自定义项：<br />- 电子邮件的默认标签<br />-在 Outlook 中弹出消息 <br />- S/MIME 支持<br />- 报告问题选项| 是  <sup>1</sup> | 是  <sup>2</sup> | 否 |
 |本地数据存储的扫描程序：| **是** | **是的<br />** | 否 |
 |中心报告（分析）：| **是** | **是** | 否 |
 |独立于标签的自定义权限集：| **是** | 是  <sup>3</sup>| 否 |
