@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 14dda765c2cf695d0da3ee23d4012103b346905a
-ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
+ms.openlocfilehash: af90e644608c99d6b5d628ff0d57e8cc48b5e162
+ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79483331"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84665973"
 ---
 # <a name="tutorial-configure-azure-information-protection-to-control-oversharing-of-information-using-outlook"></a>教程：配置 Azure 信息保护以使用 Outlook 控制信息的过度共享
 
@@ -55,7 +55,7 @@ ms.locfileid: "79483331"
 
 4. Windows 计算机上已安装 Azure 信息保护客户端（经典）。
     
-    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。 
+    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。 
     
     如果使用的是统一标签客户端而不是经典客户端，请参阅以下说明，其中讲解了如何对本教程中的等效配置使用 PowerShell 高级设置：
     

@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 18b7af904512698af155caf1bcc02da38ca25ad9
-ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
+ms.openlocfilehash: 782739a8eaea0feacd52a5a7d1dc74b984385d06
+ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79483399"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84665667"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件
 
@@ -56,7 +56,7 @@ ms.locfileid: "79483399"
 
 4. 测试新的标签：Azure 信息保护客户端（经典）必须安装在 Windows 计算机上。 
     
-    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。
+    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。
     
     如果对经典客户端使用了不同的标签客户端，请参阅 Microsoft 365 符合性文档，了解本教程的等效说明。 例如，[了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)。
 
