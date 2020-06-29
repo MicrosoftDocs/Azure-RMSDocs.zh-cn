@@ -1,21 +1,28 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Microsoft 信息保护
+### YamlMime:Landing
+title: Microsoft 信息保护文档
+summary: 控制并帮助保护你在公司防火墙外共享的电子邮件、文档和敏感数据。 从简单的分类到嵌入标签和权限，始终使用 Microsoft 信息保护功能增强对数据的保护，无论数据存储在何位置以及与谁共享。
 metadata:
   title: Microsoft 信息保护文档
-  description: 控制并帮助保护你在公司防火墙外共享的电子邮件、文档和敏感数据。 从简单的分类到嵌入标签和权限，始终使用 Microsoft 信息保护增强对数据的保护，无论数据存储在何位置以及与谁共享。
-  author: msmbaldwin
-  manager: barbkess
-  ms.service: information-protection
+  description: 控制并帮助保护你在公司防火墙外共享的电子邮件、文档和敏感数据。 从简单的分类到嵌入标签和权限，始终使用 Microsoft 信息保护功能增强对数据的保护，无论数据存储在何位置以及与谁共享。
   services: information-protection
+  ms.service: information-protection
   ms.topic: landing-page
-  ms.date: 09/26/2018
+  ms.collection: M365-security-compliance
+  author: msmbaldwin
   ms.author: mbaldwin
-  layout: LandingPage
-abstract:
-  description: 控制并帮助保护你在公司防火墙外共享的电子邮件、文档和敏感数据。 从简单的分类到嵌入标签和权限，始终使用 Microsoft 信息保护增强对数据的保护，无论数据存储在何位置以及与谁共享。
-sections:
-  - title: Microsoft 信息保护 SDK
-    items:
-      - type: paragraph
-        text: 从 <a href="develop/">Microsoft 信息保护 SDK 概述</a>入门。
+  ms.date: 06/24/2020
+  ms.openlocfilehash: e009dd37014b10d9d48ea7fe72eabda31abc15c8
+  ms.sourcegitcommit: 6b5fd79603d55f67d47885595e704065dda2bda9
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 06/25/2020
+  ms.locfileid: "85372394"
+landingContent:
+- title: Microsoft 信息保护 SDK
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 详细了解 MIP SDK
+      url: ./develop/overview.md
+    - text: 开始使用 MIP SDK
+      url: ./develop/setup-configure-mip.md

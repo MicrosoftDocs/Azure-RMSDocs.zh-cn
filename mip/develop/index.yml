@@ -1,62 +1,94 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+### YamlMime:Landing
 title: Microsoft 信息保护 SDK 文档
+summary: Microsoft 信息保护 SDK 文档 - 教程、API 参考
 metadata:
-  title: Microsoft 信息保护 SDK 文档 - 教程、API 参考
-  description: 控制并帮助保护你在公司防火墙外共享的电子邮件、文档和敏感数据。 从简单的分类到嵌入标签和权限，始终使用 Microsoft 信息保护增强对数据的保护，无论数据存储在何位置以及与谁共享。
+  title: Microsoft 信息保护 SDK 文档
+  description: Microsoft 信息保护 SDK 文档 - 教程、API 参考
   services: information-protection
-  author: msmbaldwin
-  manager: barbkess
-  layout: LandingPage
-  ms.assetid: null
   ms.service: information-protection
-  ms.tgt_pltfrm: na
-  ms.devlang: na
   ms.topic: landing-page
-  ms.date: 09/26/2018
+  ms.collection: M365-security-compliance
+  author: msmbaldwin
   ms.author: mbaldwin
-abstract:
-  description: 控制并帮助保护你在公司防火墙外共享的电子邮件、文档和敏感数据。 从简单的分类到嵌入标签和权限，始终使用 Microsoft 信息保护增强对数据的保护，无论数据存储在何位置以及与谁共享。
-  aside:
-    image:
-      alt: MIP SDK @ Ignite 2018 视频
-      height: 112
-      src: media/index/kartik-tom-mip-sdk.png
-      width: 250
-    title: MIP SDK @ Ignite 2018
-    href: 'https://www.youtube.com/embed/V02HTllv54s'
-    width: 250
-sections:
-  - title: 5 分钟快速入门
-    description: 完成<a href="setup-configure-mip">安装和配置</a>后，请查看 MIP SDK 快速入门。
-    items:
-      - type: table
-        style: dataMatrix
-        columns:
-          - image:
-              src: ./media/index/logo_Cplusplus.svg
-            title: C++
-          - image:
-              src: media/index/logo_Csharp.svg
-            title: 'C#'
-        rows:
-          - title: 应用程序初始化
-            values:
-              - href: quick-app-initialization-cpp.md
-              - href: quick-app-initialization-csharp.md
-          - title: 使用文件 API 列出敏感度标签
-            values:
-              - href: quick-file-list-labels-cpp.md
-              - href: quick-file-list-labels-csharp.md
-          - title: 使用文件 API 在文件上设置/获取标签
-            values:
-              - href: quick-file-set-get-label-cpp.md
-              - href: quick-file-set-get-label-csharp.md
-  - title: 参考
-    items:
-      - type: list
-        style: cards
-        className: cardsD
-        items:
-          - title: 语言
-            html: <p><a href="reference/mip-sdk-reference">C++</a></p>
+  ms.date: 06/24/2020
+  ms.openlocfilehash: 9c12d77f61a85446c04c5ba706206edd204faf96
+  ms.sourcegitcommit: 6b5fd79603d55f67d47885595e704065dda2bda9
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 06/25/2020
+  ms.locfileid: "85372411"
+landingContent:
+- title: 概述
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 关于 Microsoft 信息保护 SDK
+      url: overview.md
+- title: 入门
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 设置和配置 MIP SDK
+      url: setup-configure-mip.md
+    - text: 实现 AD RMS 保护
+      url: quick-app-adrms.md
+- title: C++ 快速入门
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: 客户端应用程序初始化
+      url: quick-app-initialization-cpp.md
+    - text: 列出敏感度标签
+      url: quick-file-list-labels-cpp.md
+    - text: 设置及获取敏感度标签
+      url: quick-file-set-get-label-cpp.md
+    - text: 降低文件上敏感度标签的级别
+      url: quick-file-justify-actions-cpp.md
+    - text: 重新发布文件
+      url: quick-file-republishing-cpp.md
+    - text: 处理电子邮件 .msg 文件
+      url: quick-email-msg-cpp.md
+    - text: 应用程序初始化
+      url: quick-protection-app-initialization-cpp.md
+    - text: 列出模板
+      url: quick-protection-list-templates-cpp.md
+    - text: 文本加密及解密
+      url: quick-protection-encrypt-decrypt-text-cpp.md
+- title: C# 快速入门
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: 客户端应用程序初始化
+      url: quick-app-initialization-csharp.md
+    - text: 列出敏感度标签
+      url: quick-file-list-labels-csharp.md
+    - text: 设置及获取敏感度标签
+      url: quick-file-set-get-label-csharp.md
+    - text: 降低文件上敏感度标签的级别
+      url: quick-file-justify-actions-csharp.md
+    - text: 重新发布文件
+      url: quick-file-republishing-csharp.md
+    - text: 处理电子邮件 .msg 文件
+      url: quick-email-msg-csharp.md
+    - text: 应用程序初始化
+      url: quick-protection-app-initialization-csharp.md
+    - text: 列出模板
+      url: quick-protection-list-templates-csharp.md
+    - text: 文本加密及解密
+      url: quick-protection-encrypt-decrypt-text-csharp.md
+- title: 概念
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: API 概念
+      url: concept-apis-use-cases.md
+    - text: MipContext 对象概念
+      url: concept-mipcontext.md
+    - text: 缓存存储
+      url: concept-cache-storage.md
+    - text: 同意
+      url: concept-consent-cpp.md
+    - text: 标签
+      url: concept-classification-labels.md
+    - text: 元数据
+      url: concept-mip-metadata.md
