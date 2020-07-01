@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护统一标签客户端版本历史记录 & 支持策略
 description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户端的发布信息。
-author: batamig
-ms.author: bagol
+author: mlottner
+ms.author: mlottner
 manager: rkarlin
-ms.date: 05/27/2020
+ms.date: 06/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,18 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b1e91bcbfca3d4f925750fd8d1f135bd8f4ff2c4
-ms.sourcegitcommit: fa16364879823b86b4e56ac18a1fc8de5a5dae57
+ms.openlocfilehash: 7e3ac45d3665d342ddee3f1523b964c2f768db84
+ms.sourcegitcommit: b7c4a6c3c343b53775cc4ffdecb966c32766dd6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250029"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85716084"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>
+> **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
 
@@ -61,11 +63,11 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 此客户端正在替换 Azure 信息保护客户端（经典）。 若要将特性和功能与经典客户端进行比较，请参阅[比较适用于 Windows 计算机的标记客户端](use-client.md#compare-the-labeling-clients-for-windows-computers)。
 
-## <a name="version-27950-public-preview"></a>版本2.7.95.0 公共预览版
+## <a name="version-27960"></a>版本2.7.96。0 
 
-统一标记扫描器和客户端（公共预览版）版本2.7.95。0
+统一标记扫描器和客户端版本2.7.96。0
 
-**发布**06/01/2020
+**发布**06/29/2020
 
 **统一标记扫描器的新功能：**
 
@@ -79,7 +81,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 - 你现在可以管理和限制扫描仪计算机上的最大 CPU 消耗。 了解如何使用[两个新的高级设置**ScannerMaxCPU**和**ScannerMinCPU**](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#limit-cpu-consumption)阻止100% 的 cpu 使用率并管理 cpu 使用情况。 
 
-- 现在，你可以根据文件属性配置统一标记扫描器来跳过特定文件。 定义文件属性列表，这些属性使用 new **[ScannerFSAttributesToSkip](clientv2-admin-guide-customizations.md#skip-or-ignore-files-during-scans-depending-on-file-attributes-public-preview)** advanced 设置触发要跳过的文件。
+- 现在，你可以根据文件属性配置统一标记扫描器来跳过特定文件。 定义文件属性列表，这些属性使用 new **[ScannerFSAttributesToSkip](clientv2-admin-guide-customizations.md#skip-or-ignore-files-during-scans-depending-on-file-attributes)** advanced 设置触发要跳过的文件。
 
 **统一标签客户端的新功能：**
 
@@ -93,7 +95,7 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 现在，每次扫描程序检测到现在已被删除的文件之前，都会生成审核日志。
 
-有关详细信息，请参见:
+有关详情，请参阅：
 - [文件已删除审核日志](../audit-logs.md#file-removed-audit-logs)
 - [Azure 信息保护的中央报告](../reports-aip.md)
 
@@ -125,6 +127,8 @@ TLS 安装程序不支持 TLS 1.2 的客户必须转到支持 TLS 1.2 的安装�
 
 - [动态用户变量](../configure-policy-markings.md#using-variables-in-the-text-string)现在按预期方式显示在文档的视觉标记中。
 
+- 仅在将 PDF 的第一页用于应用自动分类规则的问题现已得到解决，并且基于 PDF 中的所有内容的自动分类现在按预期继续进行。 有关分类和标签的详细信息，请参阅[分类和标签常见问题解答](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)。 
+
 - 当配置了多个 Exchange 帐户并且启用了 Azure 信息保护 Outlook 客户端时，会按预期方式从辅助帐户发送邮件。 若要详细了解如何配置 Outlook 的统一标签客户端，请参阅[Azure 信息保护统一标签客户端的其他先决条件](clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)。
 
 - 如果将具有较高机密性标签的文档拖放到电子邮件中，则该电子邮件现在会自动按预期方式接收更高的机密性标签。 有关对客户端功能进行标记的详细信息，请参阅[标签客户端比较表](use-client.md#compare-the-labeling-clients-for-windows-computers)。
@@ -135,10 +139,11 @@ TLS 安装程序不支持 TLS 1.2 的客户必须转到支持 TLS 1.2 的安装�
 
     **UseCopyAndPreserveNTFSOwner**高级设置要求在扫描仪和扫描的存储库之间具有低延迟、可靠的网络连接。
 
-
 ## <a name="version-261110"></a>版本2.6.111。0 
 
 **发布**03/09/2020
+
+支持，12/29/2020
 
 **新功能：**
 

@@ -2,9 +2,9 @@
 title: 自定义配置-Azure 信息保护统一标签客户端
 description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签客户端的信息。
 author: mlottner
-ms.author: bagol
+ms.author: mlottner
 manager: rkarlin
-ms.date: 06/16/2020
+ms.date: 06/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 901b036a333e5d801888176a020a8f60932ec2c8
-ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
+ms.openlocfilehash: 9e77e09d19e19d2d062dc526927176c1645abbe0
+ms.sourcegitcommit: b7c4a6c3c343b53775cc4ffdecb966c32766dd6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84802971"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85716145"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -151,7 +151,7 @@ ms.locfileid: "84802971"
 |RunAuditInformationTypesDiscovery|[禁止将文档中发现的敏感信息发送到 Azure 信息保护分析](#disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics)|
 |RunPolicyInBackground|[开启在后台持续运行的分类](#turn-on-classification-to-run-continuously-in-the-background)
 |ScannerConcurrencyLevel|[限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner)|
-|ScannerFSAttributesToSkip | [在扫描期间跳过或忽略文件，具体取决于文件属性](#skip-or-ignore-files-during-scans-depending-on-file-attributes-public-preview)
+|ScannerFSAttributesToSkip | [在扫描期间跳过或忽略文件，具体取决于文件属性](#skip-or-ignore-files-during-scans-depending-on-file-attributes)
 |UseCopyAndPreserveNTFSOwner | [在标记期间保留 NTFS 所有者](#preserve-ntfs-owners-during-labeling-public-preview)
 
 用于检查标签策略设置对名为 "Global" 的标签策略有效的示例 PowerShell 命令：
@@ -396,7 +396,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 值：\<**Office application types WXP**> 
 
-示例:
+示例：
 
 - 若要仅搜索 Word 文档，请指定 W****。
 
@@ -1206,7 +1206,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 此注册表设置不会更改为[集中报告](../reports-aip.md)发送到 Azure 信息保护的信息。
 
-## <a name="skip-or-ignore-files-during-scans-depending-on-file-attributes-public-preview"></a>在扫描期间跳过或忽略文件，具体取决于文件属性（公共预览版）
+## <a name="skip-or-ignore-files-during-scans-depending-on-file-attributes"></a>在扫描期间跳过或忽略文件，具体取决于文件属性
 
 此配置使用策略[高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
