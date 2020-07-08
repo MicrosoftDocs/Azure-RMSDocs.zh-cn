@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin, has-adal-ref
-ms.openlocfilehash: cf946837e928c976cb3c8bc18fb6063866d5087e
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: b3da193b20e5c65d66fcba380ee55690165ce3b4
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82971721"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86049116"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
@@ -56,9 +56,11 @@ ms.locfileid: "82971721"
 
 通过本地主机文件重定向：
 
-- 在本地 hosts 文件中添加以下行，将替换`<AD RMS URL FQDN>`为 AD RMS 群集的值，不含前缀或网页：
+- 在本地 hosts 文件中添加以下行，将替换为 `<AD RMS URL FQDN>` AD RMS 群集的值，不含前缀或网页：
 
-        127.0.0.1 <AD RMS URL FQDN>
+    ```sh
+    127.0.0.1 <AD RMS URL FQDN>
+    ```
 
 通过 DNS 重定向：
 
@@ -72,7 +74,7 @@ ms.locfileid: "82971721"
 
 若要强制 Mac 计算机立即在密钥链中运行发现过程，请搜索“adal”并删除所有 ADAL 条目。 然后在这些计算机上运行下列命令：
 
-````
+````sh
 
 rm -r ~/Library/Cache/MSRightsManagement
 
@@ -98,21 +100,26 @@ killall cfprefsd
 
 1. 在 PowerShell 会话中，请连接到 Azure Rights Management 服务，并在出现提示时，指定全局管理员凭据：
 
-        Connect-AipService
+    ```ps
+    Connect-AipService
 
-2. 运行以下命令，并输入 **Y** 进行确认：
+2. Run the following command, and enter **Y** to confirm:
 
-        Set-AipServiceOnboardingControlPolicy -UseRmsUserLicense $False
+    ```ps
+    Set-AipServiceOnboardingControlPolicy -UseRmsUserLicense $False
+    ```
 
     请注意，此命令会删除所有针对 Azure Rights Management 保护服务的许可证强制执行，使所有计算机都可保护文档和电子邮件。
 
 3. 确认不再设置载入控件：
 
-        Get-AipServiceOnboardingControlPolicy
+    ```ps    
+    Get-AipServiceOnboardingControlPolicy
+    ```
 
     在输出中，**授权**应显示 **False**，并且对于 **SecurityGroupOjbectId** 未显示任何 GUID
 
-最后，如果使用的是 Office 2010 且已在 Windows 任务计划程序库中启用了“AD RMS 权限策略模板管理（自动）”任务，请禁用此任务，因为它不用于 Azure 信息保护客户端****。 此任务通常是使用组策略启用的，它支持 AD RMS 部署。 可以在以下位置找到此任务： **Microsoft** > **Windows** > **Active Directory Rights Management Services 客户端**
+最后，如果使用的是 Office 2010 且已在 Windows 任务计划程序库中启用了“AD RMS 权限策略模板管理（自动）”任务，请禁用此任务，因为它不用于 Azure 信息保护客户端****。 此任务通常是使用组策略启用的，它支持 AD RMS 部署。 可以在以下位置找到此任务： **Microsoft**  >  **Windows**  >  **Active Directory Rights Management Services 客户端**
 
 ## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>步骤 12. 重新生成 Azure 信息保护租户密钥
 
@@ -130,7 +137,10 @@ killall cfprefsd
 
 - **如果你的租户密钥由 Microsoft 管理**：请运行 PowerShell cmdlet [AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties)并指定为你的租户自动创建的密钥的密钥标识符。 可以通过运行[AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet 来确定要指定的值。 为租户自动创建的密钥包含最早创建日期，因此可以使用以下命令对其进行标识：
 
-        (Get-AipServiceKeys) | Sort-Object CreationTime | Select-Object -First 1
+        
+    ```ps
+    (Get-AipServiceKeys) | Sort-Object CreationTime | Select-Object -First 1
+    ```
 
 - **如果你的租户密钥由你管理（BYOK）**：在 Azure Key Vault 中，为 Azure 信息保护租户重复密钥创建过程，然后再次运行[AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet 以指定此新密钥的 URI。
 

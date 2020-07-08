@@ -13,21 +13,21 @@ ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4c9a13c0bfcaa98d19c3ed39c6e00d921c6f572a
-ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
+ms.openlocfilehash: aadbd0cb27878d33c6e9822660a404e82eeeb222
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84665412"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048963"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 Azure 信息保护客户端可以将以下内容应用于文档和电子邮件：
 
@@ -221,12 +221,12 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 可更改扫描程序检查文件时包含或排除的文件类型：
 
-- 通过[使用 Azure 门户](../deploy-aip-scanner.md#configure-the-scanner-in-the-azure-portal)，在扫描程序配置文件中配置“要扫描的文件类型”****。
+- [使用 Azure 门户](../deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal)配置**要扫描的扫描**程序配置文件中的文件类型。
 
 > [!NOTE]
 > 如果在扫描时包含 .rtf 文件，请仔细监视扫描程序。 扫描程序无法成功检查某些 .rtf 文件，对于这些文件，未完成检查，必须重启服务。 
 
-默认情况下，扫描程序仅保护 Office 文件类型，以及 PDF 文件（使用 ISO PDF 加密标准进行保护时）。 若要更改扫描程序的这一行为，请编辑注册表并指定想要得到保护的其他文件类型。 有关说明，请参阅注册表编辑以更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner.md#scanner-from-the-classic-client-use-the-registry-to-change-which-file-types-are-protected)。
+默认情况下，扫描程序仅保护 Office 文件类型，以及 PDF 文件（使用 ISO PDF 加密标准进行保护时）。 若要更改扫描程序的这一行为，请编辑注册表并指定想要得到保护的其他文件类型。 有关说明，请参阅使用注册表更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner-configure-install-classic.md#change-which-file-types-to-protect)。
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>默认不受保护的文件
 
@@ -260,7 +260,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 |Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
 |PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
 |PDF |.pdf|
-|文本|.txt; .xml; .csv|
+|Text|.txt; .xml; .csv|
 
 通过进行额外配置，还可以检查其他文件类型。 例如，可以[注册自定义文件扩展名，使用现有 Windows 筛选器处理程序处理文本文件](https://docs.microsoft.com/windows/desktop/search/-search-ifilter-registering-filters)，还可以安装软件供应商提供的其他筛选器。
 
@@ -274,7 +274,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 1. 对于运行扫描程序或 PowerShell 会话的计算机，请安装 [Office 2010 Filter Pack SP2](https://support.microsoft.com/help/2687447/description-of-office-2010-filter-pack-sp2)。
 
-2. 对于扫描仪：查找敏感信息后，如果要使用标签对 .zip 文件进行分类和保护，请将此文件扩展名的注册表项添加为具有通用保护（.pfile），如注册表编辑中所述，可以更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner.md#scanner-from-the-classic-client-use-the-registry-to-change-which-file-types-are-protected)。
+2. 对于扫描仪：查找敏感信息后，如果要使用标签对 .zip 文件进行分类和保护，请添加此文件扩展名的注册表项以具有通用保护（.pfile），如使用注册表更改通过扫描程序部署说明[保护的文件类型](../deploy-aip-scanner-configure-install-classic.md#change-which-file-types-to-protect)中所述。
 
 执行这些步骤后的示例方案： 
 
@@ -286,7 +286,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 如果运行扫描程序或 PowerShell 会话的计算机上安装 Windows TIFF IFilter 功能并配置 [Windows TIFF IFilter 设置](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)，Azure 信息保护扫描程序和 [Set-AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell 命令可以使用光学字符识别 (OCR) 来检查文件扩展名为 .tiff 的 TIFF 图像。
 
-对于扫描仪：查找敏感信息后，如果应使用标签对 tiff 文件进行分类和保护，请添加此文件扩展名的注册表项以具有本机保护，如注册表编辑中所述，用于更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner.md#scanner-from-the-classic-client-use-the-registry-to-change-which-file-types-are-protected)。
+对于扫描仪：查找敏感信息后，如果应使用标签对 tiff 文件进行分类和保护，请添加此文件扩展名的注册表项以具有本机保护，如使用注册表更改通过扫描程序部署说明[保护的文件类型](../deploy-aip-scanner-configure-install-classic.md#change-which-file-types-to-protect)中所述。
 
 ## <a name="next-steps"></a>后续步骤
 现在你已识别了 Azure 信息保护客户端支持的文件类型，若要了解支持此客户端所需的其他信息，请参阅以下资源：

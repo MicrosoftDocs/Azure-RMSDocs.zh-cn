@@ -13,16 +13,16 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 888da129f3b6897303cb2731d23afc52f6261cce
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.openlocfilehash: 43df572d29d98127de8cbdf594d85cd58f4db483
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117946"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86049082"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>步骤 2：HSM 保护密钥到 HSM 保护密钥的迁移
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)**
 
 
 此说明是[从 AD RMS 到 Azure 信息保护的迁移路径](migrate-from-ad-rms-to-azure-rms.md)中的一部分，仅当你的 AD RMS 密钥是 HSM 保护密钥，且希望使用 Azure 密钥保管库中 HSM 保护的租户密钥迁移到 Azure 信息保护时才适用。 
@@ -51,16 +51,17 @@ ms.locfileid: "76117946"
 
    - 不要执行**生成你的租户密钥**中的步骤，因为你已从 AD RMS 部署获得等效物。 相反，请从 nCipher 安装中标识 AD RMS 服务器使用的密钥，并准备这些密钥以进行传输，然后将它们传输到 Azure Key Vault。 
         
-        NCipher 的加密密钥文件**key_ <<em>keyAppName</em>> _ < keyIdentifier>** 在服务器上本地命名。 例如， `C:\Users\All Users\nCipher\Key Management Data\local\key_mscapi_f829e3d888f6908521fe3d91de51c25d27116a54`。 当你运行 Keytransferremote.exe 命令来创建具有降低的权限的密钥副本时，你将需要**mscapi**值作为 keyAppName，并为密钥标识符提供自己的值。
+        NCipher 的加密密钥文件被命名为 key_ 在服务器上本地 **<<em>keyAppName</em>>_<<em>keyIdentifier</em> > ** 。 例如 `C:\Users\All Users\nCipher\Key Management Data\local\key_mscapi_f829e3d888f6908521fe3d91de51c25d27116a54`。 当你运行 Keytransferremote.exe 命令来创建具有降低的权限的密钥副本时，你将需要**mscapi**值作为 keyAppName，并为密钥标识符提供自己的值。
         
-        将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 它类似于 https\://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333。 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure Rights Management 服务将此密钥用作其租户密钥。
+        将密钥上传到 Azure 密钥保管库时，可以看到显示的密钥属性，其中包括密钥 ID。 它看起来将类似于 https \: //contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333。 请记下此 URL，因为 Azure 信息保护管理员需要用它命令 Azure Rights Management 服务将此密钥用作其租户密钥。
 
 2. 在连接 internet 的工作站上的 PowerShell 会话中，使用[AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) cmdlet 来授权 Azure Rights Management 服务主体访问将存储 Azure 信息保护租户密钥的密钥保管库。 所需的权限有解密、加密、unwrapkey、wrapkey、验证和签名。
     
     例如，如果已为 Azure 信息保护创建的密钥保管库名为 contoso-byok-ky，并且你的资源组名为 contoso-byok-rg，请运行以下命令：
-    
-        Set-AzKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
 
+    ```sh
+    Set-AzKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
+    ```
 
 现在，你已经在 Azure 密钥保管库中为 Azure 信息保护中的 Azure Rights Management 服务准备好了 HSM 密钥，接下来可以导入 AD RMS 配置数据。
 
@@ -76,13 +77,13 @@ ms.locfileid: "76117946"
     
     例如，使用 C:\contoso-tpd1.xml 配置数据文件和我们上一步中的密钥 URL 值，首先运行以下命令以存储密码：
     
-    ```
+    ```ps
     $TPD_Password = Read-Host -AsSecureString
     ```
     
     输入指定的密码以导出配置数据文件。 然后，运行以下命令并确认希望执行此操作：
     
-    ```
+    ```ps
     Import-AipServiceTpd -TpdFile "C:\contoso-tpd1.xml" -ProtectionPassword $TPD_Password –KeyVaultKeyUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Verbose
     ```
     
@@ -92,7 +93,7 @@ ms.locfileid: "76117946"
 
 3.  使用[AipServiceService](/powershell/module/aipservice/disconnect-aipservice) cmdlet 断开与 Azure Rights Management 服务的连接：
 
-    ```
+    ```ps
     Disconnect-AipServiceService
     ```
 

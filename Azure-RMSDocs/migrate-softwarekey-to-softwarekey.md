@@ -13,16 +13,16 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6b96c9d12277ec85ca1a726907eb5d8c6ca7c391
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 628942a2cf49c934928b8e67908ba40cd4d5898a
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935412"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86049031"
 ---
 # <a name="step-2-software-protected-key-to-software-protected-key-migration"></a>步骤 2：软件保护密钥到软件保护密钥的迁移
 
->适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 此说明是[从 AD RMS 到 Azure 信息保护的迁移路径](migrate-from-ad-rms-to-azure-rms.md)中的一部分，仅当 AD RMS 密钥是软件保护密钥，且希望使用软件保护租户密钥迁移到 Azure 信息保护时才适用。 
@@ -35,9 +35,10 @@ ms.locfileid: "74935412"
 
 1. 在连接 internet 的工作站上，使用[AipService](/powershell/module/aipservice/connect-aipservice) cmdlet 连接到 Azure Rights Management 服务：
 
-    ```
+    ```ps
     Connect-AipService
     ```
+    
     出现提示时，输入 Azure Rights Management 租户管理员凭据（通常，你将使用作为 Azure Active Directory 或 Office 365 全局管理员的帐户）。
 
 2. 使用 AipServiceTpd cmdlet 上传每个导出[的](/powershell/module/aipservice/import-aipservicetpd)受信任发布域（.xml）文件。 例如，如果已将 AD RMS 群集升级到加密模式 2，则至少应拥有一个要导入的其他文件。 
@@ -46,10 +47,13 @@ ms.locfileid: "74935412"
     
     例如，首先运行以下命令以存储密码：
     
-        $TPD_Password = Read-Host -AsSecureString
-    
-    输入指定的密码以导出第一个配置数据文件。 然后，使用 E:\contosokey1.xml 作为示例配置文件，运行以下命令并确认希望执行此操作：
+    ```ps
+    $TPD_Password = Read-Host -AsSecureString
     ```
+
+    输入指定的密码以导出第一个配置数据文件。 然后，使用 E:\contosokey1.xml 作为示例配置文件，运行以下命令并确认希望执行此操作：
+
+    ```ps
     Import-AipServiceTpd -TpdFile E:\contosokey1.xml -ProtectionPassword $TPD_Password -Verbose
     ```
     
@@ -57,7 +61,7 @@ ms.locfileid: "74935412"
 
 4.  使用[AipServiceService](/powershell/module/aipservice/disconnect-aipservice) cmdlet 断开与 Azure Rights Management 服务的连接：
 
-    ```
+    ```ps
     Disconnect-AipServiceService
     ```
 
