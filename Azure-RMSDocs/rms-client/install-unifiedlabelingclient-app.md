@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: b1c86b828cccb660bc56168ce9bbb7f5dfbcce83
-ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
+ms.openlocfilehash: 586122e55c8eddc2e14864bcffbe9f6ef99e17e8
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84666075"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046430"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-unified-labeling-client"></a>用户指南：下载并安装 Azure 信息保护统一标签客户端
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 如果管理员没有为你安装 Azure 信息保护统一标签客户端，你可以自行完成此操作。 必须是电脑的本地管理员才可安装此客户端，这样可对文档和电子邮件进行标记和保护。
 
@@ -64,7 +64,7 @@ ms.locfileid: "84666075"
 ## <a name="other-instructions"></a>其他说明    
 有关 Azure 信息保护统一标签客户端用户指南的详细操作方法说明：
 
-- [要执行什么操作？](clientv2-user-guide.md#what-do-you-want-to-do)
+- [你希望做什么？](clientv2-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 请参阅[管理员指南](clientv2-admin-guide.md)中的[为用户安装 Azure 信息保护统一标签客户端](clientv2-admin-guide-install.md)。

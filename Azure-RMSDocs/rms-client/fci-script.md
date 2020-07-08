@@ -13,24 +13,24 @@ ms.subservice: fci
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 73ba9a365b38804c8caf0d9e9b06e8b53be8560a
-ms.sourcegitcommit: 40693000ce86110e14ffce3b553e42149d6b7dc2
+ms.openlocfilehash: ee4a8cedd056da0baca75d3b475884618e081fbf
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2019
-ms.locfileid: "75326484"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046464"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2
+>适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2**
 >
-> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 此页包含要复制和编辑的示例脚本，如[使用 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md)中所述。
 
 对于 AzureInformationProtection 模块，此脚本使用的最低版本为 **1.3.155.2**。 运行以下命令以检查版本：`(Get-Module AzureInformationProtection -ListAvailable).Version` 
 
-*&#42;&#42;免责声明&#42;&#42;：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。此示例脚本按原样提供，无任何形式的保证。*
+*&#42;&#42;免责声明&#42;&#42;：在任何 Microsoft 标准支持计划或服务下，不支持此示例脚本。此示例脚本按原样提供，无任何形式的保证。*
 
 ```
 <#
@@ -173,4 +173,4 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 ---
 
-返回到[使用 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md)。
+返回到[具有 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md)。

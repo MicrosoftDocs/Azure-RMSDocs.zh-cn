@@ -12,12 +12,12 @@ ms.assetid: ''
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 1d8d2de33201b0ea8d10607137b54eb42cdb7731
-ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
+ms.openlocfilehash: c24b67911e4968ffaaa5c4b639917b96197d1b54
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84802879"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86047382"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection"></a>用户指南：从 Azure 信息保护标记的文件和电子邮件中删除标签和保护
 
@@ -25,7 +25,7 @@ ms.locfileid: "84802879"
 >
 > **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 当[你的计算机上安装](install-client-app.md)了 Azure 信息保护统一客户端时，你可以从文件和电子邮件中删除敏感度标签和保护。
 
@@ -72,7 +72,7 @@ ms.locfileid: "84802879"
 ## <a name="other-instructions"></a>其他说明
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
-- [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
+- [你希望做什么？](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 

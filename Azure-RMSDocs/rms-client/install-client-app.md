@@ -13,18 +13,18 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 9dd4e4f461c5a3643e8e9cb250e9bc1430b5efad
-ms.sourcegitcommit: 4c45794665891ba88fdb6a61b1bcd886035c13d3
+ms.openlocfilehash: 1a6c9076f29d588464c03b33140a454a541b2891
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "82736739"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046413"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>用户指南：下载并安装 Azure 信息保护客户端
 
 >*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
 >
-> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 
 如果管理员没有为你安装 Azure 信息保护客户端，你可自行安装。 必须是电脑的本地管理员才可安装此客户端，这样可对文档和电子邮件进行标记和保护。
@@ -51,7 +51,7 @@ ms.locfileid: "82736739"
 
 5. 如果系统提示继续操作，请单击“是”****，然后等待安装完成。    
 
-6. 单击“**关闭**”。 开始使用 Azure 信息保护客户端之前：    
+6. 单击“关闭” 。 开始使用 Azure 信息保护客户端之前：    
 
     - 如果你的计算机运行 Office 2010，请重启计算机，然后转到下一节完成最后步骤。    
         
@@ -71,7 +71,7 @@ ms.locfileid: "82736739"
 ## <a name="other-instructions"></a>其他说明    
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
-- [您希望做什么？](client-user-guide.md#what-do-you-want-to-do)
+- [你希望做什么？](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 请参阅[管理员指南](client-admin-guide.md)中的[为用户安装 Azure 信息保护客户端](client-admin-guide-install.md)。

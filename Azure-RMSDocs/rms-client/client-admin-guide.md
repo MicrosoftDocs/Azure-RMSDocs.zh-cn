@@ -13,21 +13,21 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 751add440b97259d6c897af385581f4b5efb9d2f
-ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
+ms.openlocfilehash: a913dfbd6e9e992ee90179a59f7351345d1476e1
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84665494"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048911"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 如果你负责企业网络上的 Azure 信息保护客户端，或如果你想要获取除了 [Azure 信息保护客户端用户指南](client-user-guide.md)以外的更多技术信息，请使用本指南中的信息。 
 
@@ -61,7 +61,7 @@ Azure 信息保护客户端包括以下内容：
 
 - 一个 PowerShell 模块，用于从文件应用和删除分类标签和保护。 
     
-    此模块包括的 cmdlet 可用于安装和配置 [Azure 信息保护扫描程序](../deploy-aip-scanner.md)，该扫描程序在 Windows Server 上作为服务运行。 借助此服务，可发现和保护数据存储（例如，网络共享和 SharePoint Server 库）中的文件并对其进行分类。
+    此模块包含[用于安装和配置 Azure 信息保护扫描程序](../deploy-aip-scanner-configure-install.md#list-of-cmdlets-for-the-scanner)（在 Windows Server 上作为服务运行）的 cmdlet。 借助此服务，可发现和保护数据存储（例如，网络共享和 SharePoint Server 库）中的文件并对其进行分类。
 
 - 权限管理客户端，可与 Azure 权限管理 (Azure RMS) 或 Active Directory Rights Management Services (AD RMS) 进行通信。
 
@@ -210,7 +210,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 虽然可以按不同的顺序升级扫描程序，但建议执行以下步骤：
 
-1. 使用 Azure 门户创建新的扫描程序配置文件，其中包含扫描程序和数据存储库的设置及其所需的任何设置。 有关此步骤的帮助，请参阅扫描程序部署说明中的 "在[Azure 门户中配置扫描器](../deploy-aip-scanner.md#configure-the-scanner-in-the-azure-portal)" 部分。
+1. 使用 Azure 门户创建新的扫描程序配置文件，其中包含扫描程序和数据存储库的设置及其所需的任何设置。 有关此步骤的帮助，请参阅从扫描程序部署说明[在 Azure 门户中配置扫描器](../deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal)。
     
     如果运行扫描程序的计算机与 internet 断开连接，则仍需执行此步骤。 然后，在 Azure 门户中，使用“导出”**** 选项将扫描程序配置文件导出到文件中。
 

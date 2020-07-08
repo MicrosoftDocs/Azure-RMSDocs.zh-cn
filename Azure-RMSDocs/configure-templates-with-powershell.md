@@ -13,16 +13,16 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 12456200687cd907bb82a8b489414d3c9fa91bbe
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 6f37e0dc2132c85985135c512a6e369641a1bf01
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74934919"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86047042"
 ---
 # <a name="powershell-reference-for-protection-templates"></a>保护模板的 PowerShell 参考
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure 信息保护的保护设置保存在保护模板中。 在 Azure 门户中创建和管理保护设置所需执行的一切操作均可使用 PowerShell 从命令行执行。 
 
@@ -34,24 +34,22 @@ Azure 信息保护的保护设置保存在保护模板中。 在 Azure 门户中
 
 支持创建和管理保护模板的 cmdlet：
 
-- [Add-AipServiceTemplate](/powershell/module/aipservice/add-aipservicetemplate)
+- [AipServiceTemplate](/powershell/module/aipservice/add-aipservicetemplate)
 
-- [Export-AipServiceTemplate](/powershell/module/aipservice/export-aipservicetemplate)
+- [导出-AipServiceTemplate](/powershell/module/aipservice/export-aipservicetemplate)
 
-- [Get-AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate)
+- [AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate)
 
-- [Get-AipServiceTemplateProperty](/powershell/module/aipservice/get-aipservicetemplateproperty)
+- [AipServiceTemplateProperty](/powershell/module/aipservice/get-aipservicetemplateproperty)
 
-- [Import-AipServiceTemplate](/powershell/module/aipservice/import-aipservicetpd)
+- [导入-AipServiceTemplate](/powershell/module/aipservice/import-aipservicetpd)
 
-- [New-AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition)
+- [新-AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition)
 
-- [Remove-AipServiceTemplate](/powershell/module/aipservice/remove-aipservicetemplate)
+- [AipServiceTemplate](/powershell/module/aipservice/remove-aipservicetemplate)
 
-- [Set-AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty)
+- [AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty)
 
-
-
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>另请参阅
 [配置和管理 Azure 信息保护的模板](configure-policy-templates.md)
 

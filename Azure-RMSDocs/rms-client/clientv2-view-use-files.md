@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 452e7779c6c6b1f9227dcea80a49f3402d0375f2
-ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
+ms.openlocfilehash: 84bc3b4f6fea5ed898b0b1aed9f33748b9b2b2a7
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84802808"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046549"
 ---
 # <a name="user-guide-view-protected-files-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端查看受保护的文件
 
@@ -24,7 +24,7 @@ ms.locfileid: "84802808"
 >
 > **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 通常，你可以直接打开受保护文件进行查看。 例如，可双击电子邮件中的附件、双击文件资源管理器中的文件或单击文件的链接。
 
@@ -75,5 +75,5 @@ ms.locfileid: "84802808"
 ## <a name="other-instructions"></a>其他说明
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
-- [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
+- [你希望做什么？](client-user-guide.md#what-do-you-want-to-do)
 

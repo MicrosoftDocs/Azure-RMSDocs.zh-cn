@@ -11,21 +11,21 @@ ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 ms.subservice: hyok
 ms.custom: admin
-ms.openlocfilehash: a2ebb835d4d71c24d8b7206cb44fde6a33ccbb6e
-ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
+ms.openlocfilehash: 9a912db81e293575d74000d79ddc4f6592ab8046
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84666024"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046311"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>用于 Azure 信息保护的保留自己的密钥 (HYOK) 保护
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 使用以下信息了解什么是用于 Azure 信息保护的保留自己的密钥 (HYOK)，以及它与默认的基于云的保护有何不同。 使用 HYOK 保护前，请确保了解适用情况、支持的方案、限制和需求。 
 
@@ -172,19 +172,25 @@ AD RMS 部署必须满足以下要求，才能为 Azure 信息保护标签提供
 
 1. 在群集中的每个 AD RMS 服务器上，创建以下注册表项：
 
-    `Computer\HKEY_LOCAL_MACHINE\Software\Microsoft\DRMS\GICURL = "<string>"`
-    
+    ``` md
+    Computer\HKEY_LOCAL_MACHINE\Software\Microsoft\DRMS\GICURL = "<string>"
+    ```
+
     对于 \<string value> ，请指定以下项之一：
     
     - 对于使用 SSL/TLS 的 AD RMS 群集：
-
-            https://<cluster_name>/_wmcs/certification/certification.asmx
     
+        ``` md
+        https://<cluster_name>/_wmcs/certification/certification.asmx
+        ```
+
     - 对于不使用 SSL/TLS 的 AD RMS 群集（仅测试网络）：
         
-            http://<cluster_name>/_wmcs/certification/certification.asmx
+        ``` md
+        http://<cluster_name>/_wmcs/certification/certification.asmx
+        ```
 
-2. 重新启动 IIS。
+2. 重启 IIS。
 
 ### <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>查找相关信息以使用 Azure 信息保护标签指定 AD RMS 保护
 

@@ -13,20 +13,20 @@ ms.subservice: doctrack
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 7eb260815def6727fcdbd393fd9453ac89cb8baf
-ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
+ms.openlocfilehash: 956eccb942893d6d8850185449118f4027895a81
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75960731"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86047501"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>用户指南：使用 Azure 信息保护时跟踪和撤销文档
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
 >
-> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
-使用 Azure 信息保护来保护你的文档后，可跟踪用户如何使用这些文档。 如果用户不应再阅读这些文档，还可撤销其对这些文档的访问权限（如有必要）。 若要执行此操作，请使用“文档跟踪站点”。 可以通过 Windows 计算机、Mac 计算机甚至平板电脑和手机访问此站点。
+使用 Azure 信息保护来保护你的文档后，可跟踪用户如何使用这些文档。 如果用户不应再阅读这些文档，还可撤销其对这些文档的访问权限（如有必要）。 若要执行此操作，请使用“文档跟踪站点”****。 可以通过 Windows 计算机、Mac 计算机甚至平板电脑和手机访问此站点。
 
 访问该站点时，登录即可对文档进行跟踪。 如果你的组织有一个[支持文档跟踪和吊销的订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-features)，而你已被分配了一个该订阅的许可证，你就可以看到谁曾经尝试打开受保护的文件，以及这些用户是否已成功（即成功完成了身份验证）。 还会看到他们访问文档的每一次尝试，以及访问时所在的位置。 但是，在极少数情况下，报告的位置可能不准确。 例如，当用户使用 VPN 连接打开受保护的文档时，或当其计算机具有 IPv6 地址时。
 
@@ -34,19 +34,19 @@ ms.locfileid: "75960731"
 
 - 如果你需要停止共享文档： 
     
-    - 单击“撤销访问权限”。 请注意文档持续可用的时间段。 决定是否通过提供自定义消息让用户知道你正在撤销对之前共享的文档的访问权限。 撤销某个文档时，它并不会删除你共享的文档，但获得授权的用户无法再打开该文档：
+    - 单击“撤销访问权限”****。 请注意文档持续可用的时间段。 决定是否通过提供自定义消息让用户知道你正在撤销对之前共享的文档的访问权限。 撤销某个文档时，它并不会删除你共享的文档，但获得授权的用户无法再打开该文档：
         
         ![撤销文档跟踪站点中的访问图标](../media/tracking-site-revoke-access-icon.png)
         
 - 如果你想要导出到 Excel： 
     
-    - 单击“导出到 CSV”，方便随后修改数据，并创建你自己的视图和图形：
+    - 单击“导出到 CSV”****，方便随后修改数据，并创建你自己的视图和图形：
          
         ![导出到文档跟踪站点中的 CSV 图标](../media/tracking-site-export-icon.png)
          
 - 如果你想要配置电子邮件通知： 
      
-    - 单击“设置”并选择在访问该文档时是否通过电子邮件发送通知以及发送方式：
+    - 单击“设置”**** 并选择在访问该文档时是否通过电子邮件发送通知以及发送方式：
         
         ![在文档跟踪站点中配置电子邮件通知](../media/tracking-site-settings-email.png)
 
@@ -56,7 +56,7 @@ ms.locfileid: "75960731"
         
         ![文档跟踪站点中的“管理员”图标](../media/tracking-site-admin-icon.png)
         
-        如果是全局管理员，但看不到此图标，则是因为你尚未分享任何文档。 在这种情况下，请使用以下 URL 访问文档跟踪站点： https://portal.azurerms.com/#/admin
+        如果是全局管理员，但看不到此图标，则是因为你尚未分享任何文档。 在这种情况下，请使用以下 URL 访问文档跟踪站点：https://portal.azurerms.com/#/admin
 
 除非你是管理员，否则只能跟踪和撤销你所保护的文档。 你无法通过使用文档跟踪站点来跟踪受保护的电子邮件。
 
@@ -73,7 +73,7 @@ ms.locfileid: "75960731"
 
 1. 打开要跟踪或撤销的受保护文档。
 
-2. 在“**开始**”选项卡上的“**保护**”组中，依次单击“**保护**” > “**跟踪和撤销**”：
+2. 在 "**主页**" 选项卡上的 "**保护**" 组中，单击 "**保护**" "  >  **跟踪和撤销**"：
 
     ![跟踪使用情况选项](../media/track-usage-callout.png)
     
@@ -89,9 +89,9 @@ ms.locfileid: "75960731"
 
 ## <a name="using-file-explorer-to-track-or-revoke-the-document"></a>使用文件资源管理器跟踪或撤销文档
 
-1. 右键单击受保护的文件，然后选择“分类和保护”。
+1. 右键单击受保护的文件，然后选择“分类和保护”****。
 
-2. 从“分类和保护 - Azure 信息保护”对话框中，选择“跟踪和撤销”。
+2. 从“分类和保护 - Azure 信息保护”**** 对话框中，选择“跟踪和撤销”****。
 
     ![从“分类和保护 - Azure 信息保护”对话框中跟踪和撤销图标](../media/track-and-revoke.png)
 
@@ -118,7 +118,7 @@ ms.locfileid: "75960731"
 ## <a name="other-instructions"></a>其他说明
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
-- [要执行什么操作？](client-user-guide.md#what-do-you-want-to-do)
+- [你希望做什么？](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 请参阅[管理员指南](client-admin-guide.md)中的[配置和使用 Azure 信息保护的文档跟踪](client-admin-guide-document-tracking.md)。

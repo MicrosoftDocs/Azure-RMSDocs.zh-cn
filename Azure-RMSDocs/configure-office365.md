@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4f66b49a6f4ad5ee50efb26849b06492cad89715
-ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
+ms.openlocfilehash: ef5a4d9f270d111ead3a6d04c2b49e67e230eb6a
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84666007"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86047807"
 ---
 # <a name="office365-configuration-for-online-services-to-use-the-azure-rights-management-service"></a>Office 365：用于联机服务的配置以使用 Azure Rights Management 服务
 
@@ -27,48 +27,61 @@ ms.locfileid: "84666007"
 使用下列部分来帮助你配置 Exchange Online、Microsoft SharePoint 和 Microsoft OneDrive 以使用 Azure 信息保护中的 Azure Rights Management 服务。
 
 ## <a name="exchangeonline-irm-configuration"></a>Exchange Online：IRM 配置
+
 有关 Exchange Online 如何与 Azure Rights Management 服务协同工作的信息，请参阅[Office 应用程序和服务如何支持 azure Rights Management](office-apps-services-support.md)中的 " [Exchange Online 和 exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) " 部分。
 
 为了使用 Azure 权限管理服务，可能已启用 Exchange Online。 要进行检查，请运行以下命令：
 
 1. 如果这是你第一次在计算机上使用 Windows PowerShell for Exchange Online，必须配置 Windows PowerShell 以运行签名的脚本。 使用“以管理员身份运行”选项启动 Windows PowerShell 会话，然后键入****：
-    
-        Set-ExecutionPolicy RemoteSigned
-    
+
+    ```md
+    Set-ExecutionPolicy RemoteSigned
+    ```
+
     按“Y”确认****。
 
 2. 在 Windows PowerShell 会话中，使用为远程 Shell 访问启用的帐户登录到 Exchange Online。 默认情况下，将为 Exchange Online 中创建的所有帐户启用远程 Shell 访问，但可以使用[ &lt; UserIdentity &gt; -RemotePowerShellEnabled](https://technet.microsoft.com/library/jj984292%28v=exchg.160%29.aspx)命令禁用（和启用）此功能。
-    
+
     若要登录，请首先键入：
-    
-        $Cred = Get-Credential
-   
+
+    ```markdown
+    $Cred = Get-Credential
+    ```
+
     然后，在“Windows PowerShell 凭据请求”对话框中，提供你的 Office 365 用户名和密码 ****。
 
 3. 首先，通过设置一个变量连接到 Exchange Online 服务：
-    
-        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $Cred -Authentication Basic –AllowRedirection
-    
+
+    ```md
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $Cred -Authentication Basic –AllowRedirection
+    ```
+
     然后，运行以下命令：
-    
-        Import-PSSession $Session
+
+    ```md
+    Import-PSSession $Session
+    ```
 
 4. 运行[set-irmconfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160).aspx)命令，查看保护服务的 Exchange Online 配置：
-    
-        Get-IRMConfiguration
-    
+
+    ```md
+    Get-IRMConfiguration
+    ```
+
     从输出中找到 AzureRMSLicensingEnabled 值****：
-    
-    - 如果 AzureRMSLicensingEnabled 设置为“True”，则已为 Azure 权限管理服务启用 Exchange Online****。 
-    
+
+    - 如果 AzureRMSLicensingEnabled 设置为“True”，则已为 Azure 权限管理服务启用 Exchange Online****。
+
     - 如果 AzureRMSLicensingEnabled 设置为“False”，请运行以下命令，为 Azure Rights Management 服务启用 Exchange Online：`Set-IRMConfiguration -AzureRMSLicensingEnabled $true`****
 
 5. 要测试 Exchange Online 是否已成功配置，请运行下列命令：
-    ```
+
+    ```md
     Test-IRMConfiguration -Sender <user email address>
     ```
-    例如：<strong>Test-IRMConfiguration -Sender  adams@contoso.com</strong>
-    
+
+    例如：**Test-IRMConfiguration -Sender  adams@contoso.com**
+
     此命令将运行一系列检查，包括验证与服务的连接，检索配置，检索 URI、许可证和任何模板。 在 Windows PowerShell 会话中，你将看到每一项的结果并在结束时看到是否所有内容均已通过这些检查： **总体结果：通过**
 
 在启用 Exchange Online 以使用 Azure Rights Management 服务后，可以配置自动应用信息保护的功能，如[电子邮件流规则](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8)、[数据丢失防护 (DLP) 策略](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx)和[受保护的语音邮件](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx)（统一消息）。
@@ -89,6 +102,7 @@ ms.locfileid: "84666007"
 由 Office 365 管理员进行此配置。
 
 ### <a name="configuring-irm-for-libraries-and-lists"></a>为库和列表配置 IRM
+
 在你为 SharePoint 启用 IRM 服务后，站点所有者可以使用 IRM 保护其 SharePoint 文档库和列表。 有关说明，请参阅 Office 网站中的以下内容：
 
 - [将信息权限管理应用于列表或库](https://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)
@@ -96,12 +110,14 @@ ms.locfileid: "84666007"
 由 SharePoint 站点管理员进行此配置。
 
 ### <a name="configuring-irm-for-onedrive"></a>为 OneDrive 配置 IRM
+
 为 SharePoint 启用 IRM 服务后，可为用户的 OneDrive 文档库或单个文件夹配置 Rights Management 保护。 用户可以使用其 OneDrive 网站为自己配置此项。 虽然管理员不能使用 SharePoint 管理中心为他们配置此保护，但是你可以使用 Windows PowerShell 执行此操作。
 
 > [!NOTE]
 > 有关配置 OneDrive 的详细信息，请参阅 office 文档中的 Office [365 中的 "设置 onedrive](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb)"。
 
 #### <a name="configuration-for-users"></a>用户配置
+
 为用户授予以下说明，以便他们可以配置其 OneDrive 来保护其业务文件。
 
 1. 使用工作或学校帐户登录到 Office 365 并转到 [OneDrive 网站](https://admin.microsoft.com/onedrive)。
@@ -121,6 +137,7 @@ ms.locfileid: "84666007"
 由于此配置依赖于用户（而不是管理员）来保护其 OneDrive 文件，因此，请告知用户保护其文件的好处以及如何执行此操作。 例如，说明当用户从 OneDrive 共享文档时，只有他们授权的人员可以使用其配置的任何限制访问它，即使该文件被重命名并复制到其他位置也是如此。
 
 #### <a name="configuration-for-administrators"></a>管理员配置
+
 尽管你无法使用 SharePoint 管理中心为用户的 OneDrive 配置 IRM，但是你可以使用 Windows PowerShell 执行此操作。 若要为这些库启用 IRM，请执行以下步骤：
 
 1. 下载并安装[SharePoint 客户端组件 SDK](https://www.microsoft.com/download/details.aspx?id=42038)。
@@ -131,7 +148,7 @@ ms.locfileid: "84666007"
 
    *&#42;&#42;免责声明&#42;&#42;*：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
 
-   ```
+   ```ps
    # Requires Windows PowerShell version 3
 
    <#
@@ -496,7 +513,7 @@ ms.locfileid: "84666007"
 
    1. 搜索 `$sharepointAdminCenterUrl` 并将示例值替换为自己的 SharePoint 管理中心 URL。
 
-      进入 SharePoint 管理中心时，会发现此值作为基 URL，并且具有以下格式： https://<em> &lt; tenant_name &gt; </em>-admin.sharepoint.com
+      进入 SharePoint 管理中心时，会发现此值作为基 URL，并且具有以下格式： https://* &lt; tenant_name &gt; *-admin.sharepoint.com
 
       例如，如果租户名称为 "contoso"，则应指定：**https://contoso-admin.sharepoint.com**
 
@@ -504,13 +521,13 @@ ms.locfileid: "84666007"
 
       此值与你用来以全局管理员身份登录到 Microsoft 365 管理中心的值相同，并具有以下格式： user_name@* &lt; 租户域名 &gt; *.com
 
-      例如，如果 "contoso.com" 租户域的 Office 365 全局管理员用户名是 "admin"，则应指定：<strong>admin@contoso.com</strong>
+      例如，如果 "contoso.com" 租户域的 Office 365 全局管理员用户名是 "admin"，则应指定：**admin@contoso.com**
 
    3. 搜索 `$webUrls` 并将示例值替换为用户的 OneDrive Web url，根据需要添加或删除任意数量的条目。
 
       或者，请参阅脚本中有关如何通过导入包含需要配置的所有 URL 的 .CSV 文件来替换此数组的注释。  我们提供了另一个示例脚本，用于自动搜索并提取 URL 以填充此 .CSV 文件。 准备好执行此操作时，请使用[其他脚本将所有 OneDrive url 输出到。"CSV 文件](#additional-script-to-output-all-onedrive-urls-to-a-csv-file)" 一节。
 
-      用户的 OneDrive 的 web URL 采用以下格式： https://<em> &lt; 租户名称 &gt; </em>-my.sharepoint.com/personal/* &lt; &gt; user_name*_* &lt; 租户名称 &gt; *_com
+      用户的 OneDrive 的 web URL 采用以下格式： https://* &lt; 租户名称 &gt; *-my.sharepoint.com/personal/* &lt; &gt; user_name*_* &lt; 租户名称 &gt; *_com
 
       例如，如果 contoso 租户中的用户的用户名为 "rsimone"，则应指定：**https://contoso-my.sharepoint.com/personal/rsimone_contoso_com**
 
@@ -532,13 +549,14 @@ ms.locfileid: "84666007"
 如果需要为用户的 OneDrive 库禁用 IRM，请参阅[禁用 OneDrive 的 irm](#script-to-disable-irm-for-onedrive)部分中的脚本。
 
 ##### <a name="additional-script-to-output-all-onedrive-urls-to-a-csv-file"></a>用于将所有 OneDrive Url 输出到的其他脚本。CSV 文件
+
 对于上面的步骤4c，你可以使用以下 Windows PowerShell 脚本提取所有用户的 OneDrive 库的 Url，然后可以根据需要对其进行检查、编辑（如有必要），然后将其导入到主脚本中。
 
 此脚本还需要[Sharepoint 客户端组件 SDK](https://www.microsoft.com/download/details.aspx?id=42038)和[Sharepoint 命令行管理](https://www.microsoft.com/download/details.aspx?id=35588)程序。 按照相同的说明复制并粘贴它，本地保存文件（例如，“Report-OneDriveForBusinessSiteInfo.ps1”），如之前一样修改 `$sharepointAdminCenterUrl` 和 `$tenantAdmin` 值，然后运行该脚本。
 
 *&#42;&#42;免责声明&#42;&#42;*：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
 
-```
+```ps
 # Requires Windows PowerShell version 3
 
 <#
@@ -757,13 +775,14 @@ $oneDriveForBusinessSiteUrls | Out-File -FilePath $reportName
 ```
 
 ##### <a name="script-to-disable-irm-for-onedrive"></a>用于为 OneDrive 禁用 IRM 的脚本
+
 如果需要为用户的 OneDrive 禁用 IRM，请使用以下示例脚本。
 
 此脚本还需要[Sharepoint 客户端组件 SDK](https://www.microsoft.com/download/details.aspx?id=42038)和[Sharepoint 命令行管理](https://www.microsoft.com/download/details.aspx?id=35588)程序。 复制并粘贴内容，本地保存文件（例如，“Disable-IRMOnOneDriveForBusiness.ps1”），并修改 `$sharepointAdminCenterUrl` 和 `$tenantAdmin` 值。 手动指定 OneDrive Url 或使用上一部分中的脚本，以便可以导入这些 Url，然后运行该脚本。
 
 *&#42;&#42;免责声明&#42;&#42;*：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
 
-```
+```ps
 # Requires Windows PowerShell version 3
 
 <#
@@ -1032,7 +1051,7 @@ function Add-CredentialToCredentialCache
                 $script:clientContext.Load($list)
                 $script:clientContext.ExecuteQuery()
 
-               Remove-IrmConfiguration -List $list                 
+               Remove-IrmConfiguration -List $list
             }
             catch
             {
@@ -1051,4 +1070,3 @@ function Add-CredentialToCredentialCache
 
 Disconnect-SPOService -ErrorAction SilentlyContinue
 ```
-

@@ -13,16 +13,16 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ee94f0a4966ce16ae8b87f23bf4a9a734cc015a0
-ms.sourcegitcommit: 2917e822a5d1b21bf465f2cb93cfe46937b1faa7
+ms.openlocfilehash: 68eb4e9518ef43c314dd21d1c8713f7c0c0dee69
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79403920"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048368"
 ---
-# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>由 Microsoft 管理：租户密钥生命周期操作
+# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 如果由 Microsoft 管理 Azure 信息保护的租户密钥（默认），请阅读以下部分，获取与此拓扑相关的生命周期操作的详细信息。
 
@@ -50,7 +50,9 @@ ms.locfileid: "79403920"
 
 若要将其他密钥选为 Azure 信息保护的活动租户密钥，请使用 AIPService 模块中的[AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) cmdlet。 若要帮助你确定要使用的密钥，请使用[AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet。 通过运行以下命令，可以确定为 Azure 信息保护租户自动创建的默认密钥：
 
-    (Get-AipServiceKeys) | Sort-Object CreationTime | Select-Object -First 1
+```ps
+(Get-AipServiceKeys) | Sort-Object CreationTime | Select-Object -First 1
+```
 
 要将密钥拓扑更改为客户托管 (BYOK)，请参阅[为 Azure 信息保护租户密钥实现 BYOK](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)。
 
@@ -70,19 +72,21 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 ### <a name="step-3-receive-key-instructions-from-css"></a>步骤 3：接收来自 CSS 的密钥说明
 
-- Microsoft 客户支持服务 (CSS) 将 Azure 信息保护配置和在一个受密码保护的文件中加密的租户密钥发送给用户。 此文件的文件扩展名为 .tpd。 执行此操作时，CSS 首先通过电子邮件向你（即启动导出的人员）发送一个工具。 你必须从命令提示符处运行该工具，如下所示：
+- Microsoft 客户支持服务 (CSS) 将 Azure 信息保护配置和在一个受密码保护的文件中加密的租户密钥发送给用户。 此文件的文件扩展名为 .tpd****。 执行此操作时，CSS 首先通过电子邮件向你（即启动导出的人员）发送一个工具。 你必须从命令提示符处运行该工具，如下所示：
 
-    ```
+    ```ps
     AadrmTpd.exe -createkey
     ```
-    这样可以生成 RSA 密钥对，并将公有部分和私有部分保存为当前文件夹中的文件。 例如：PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt 和 PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt。
+
+    这样可以生成 RSA 密钥对，并将公有部分和私有部分保存为当前文件夹中的文件。 例如：**PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** 和 **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**。
 
     回复来自 CSS 的电子邮件，附加名称以 **PublicKey** 开头的文件。 CSS 随后向你发送一个作为 .xml 文件的 TPD 文件，该文件使用你的 RSA 密钥进行加密。 将此文件复制到与你最初运行 AadrmTpd 工具时的相同文件夹，并使用以 **PrivateKey** 开头的文件和来自 CSS 的文件再次运行该工具。 例如：
 
-    ```
+    ```ps
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml
     ```
-    此命令的输出应该是两个文件：一个文件包含受密码保护的 TPD 的纯文本密码，另一个文件则是受密码保护的 TPD 本身。 这些文件具有新的 GUID，例如：
+
+    此命令应输出两个文件：一个文件包含受密码保护的 TPD 的纯文本密码，另一个文件则是受密码保护的 TPD 本身。 这些文件具有新的 GUID，例如：
      
   - Password-5E4C2018-8C8C-4548-8705-E3218AA1544E.txt
 
@@ -105,8 +109,7 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 
 |事件描述|可能的响应|
 |------------------------|-------------------|
-|你的租户密钥泄露。|重新生成租户密钥。 请参阅本文中的[重新生成租户密钥](#rekey-your-tenant-key)部分。|
+|你的租户密钥泄露。|重新生成租户密钥。 请参阅本文中的重新[生成你的租户密钥](#rekey-your-tenant-key)部分。|
 |未经授权的个人或恶意软件获取了使用你的租户密钥的权限，但密钥本身并未泄露。|重新生成租户密钥在这种情况下并不奏效，需要进行根源分析。 如果进程或软件 Bug 是导致未经授权的个人获得访问权限的原因，则必须解决这一问题。|
 |在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户重新生成他们的租户密钥。|
-
-
+| | |

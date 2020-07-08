@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: bb75b769039670a7d7ec162f3c8122e7630fb8c4
-ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
+ms.openlocfilehash: 053dc282a05a5d37518c533ff78282610c54d320
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84802906"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048708"
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-the-azure-information-protection-unified-labeling-client-for-windows"></a>用户指南：使用适用于 Windows 的 Azure 信息保护统一标签客户端对文件或电子邮件进行分类
 
@@ -24,7 +24,7 @@ ms.locfileid: "84802906"
 >
 > **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类（但不保护）。 如果还需对文档和电子邮件进行保护，请参阅[分类和保护说明](clientv2-classify-protect.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
@@ -61,7 +61,7 @@ ms.locfileid: "84802906"
 
 - 你可能没有[安装](install-unifiedlabelingclient-app.md)Azure 信息保护统一标签客户端。
 
-- 如果未在功能区上看到 "**敏感度**" 按钮，而是看到带标签的 "**保护**" 按钮，则已安装 azure 信息保护客户端（经典），而不是 azure 信息保护统一标签客户端。 [详细信息](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)
+- 如果未在功能区上看到 "**敏感度**" 按钮，而是看到带标签的 "**保护**" 按钮，则已安装 azure 信息保护客户端（经典），而不是 azure 信息保护统一标签客户端。 [详细信息](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 ##### <a name="is-the-label-that-you-expect-to-see-not-displayed"></a>没有显示希望看到的标签？ 
 
@@ -104,7 +104,7 @@ ms.locfileid: "84802906"
 
 有关适用于 Windows 的 Azure 信息保护统一标签客户端的用户指南中的详细操作说明：
 
-- [要执行什么操作？](clientv2-user-guide.md#what-do-you-want-to-do)
+- [你希望做什么？](clientv2-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息
 

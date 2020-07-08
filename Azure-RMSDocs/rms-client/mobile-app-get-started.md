@@ -1,10 +1,10 @@
 ---
 title: 入门 - 适用于 iOS 和 Android 的 AIP 应用
 description: 使用适用于 iOS 和 Android 的 Azure 信息保护应用查看电子邮件或文件
-author: rkarlin
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 1/13/2020
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,38 +12,53 @@ ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: cfae5de653497a448d10e0ac65c10ea2a6e9e4f3
-ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
+ms.openlocfilehash: 4b50f89c9f8d0a965b630c82461f1190bb893938
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75960843"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048691"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门
 
-适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)**
 
-在使用本页上的说明之前，请务必阅读[有关 iOS 版和 Android 版 Azure 信息保护应用的常见问题解答](mobile-app-faq.md)。 此页面说明了应用的作用、支持的设备，以及有关应用使用方法的基本信息。
+本页介绍如何测试运行适用于 iOS 或 Android 的 Azure 信息保护应用。
 
-当用户需要打开受保护的电子邮件或文件时，大多数用户通常都会使用 Azure 信息保护应用。 但如果你是管理员，并且想要为你的用户测试该应用，或者你只是想在使用它之前先试用一下，则可以使用以下说明。
+当用户需要打开受保护的电子邮件或文件时，大多数用户通常都会使用 Azure 信息保护应用。 但是，如果你是管理员为你的用户测试应用程序，或者你只是想要在需要时试用它，请使用下面的说明查看设备上受保护的文件。
+
+> [!IMPORTANT]
+> 在开始之前，请仔细阅读有关[适用于 iOS 或 Android 的 Azure 信息保护应用](mobile-app-faq.md)的要求和说明。
+> 
+
+## <a name="access-a-protected-file-from-your-device"></a>从设备访问受保护的文件
+
+若要测试 AIP 移动应用，请确保可以从设备访问以下类型的受保护文件之一：
+
+|文件类型  |说明  |
+|---------|---------|
+|**.Rpmsg 文件**     | 受权限保护的电子邮件消息。 如果你的移动电子邮件应用不以本机方式支持 rights management 数据保护，受保护的电子邮件将显示为电子邮件附件。 </br></br>使用其他设备（如 Windows 计算机上的 Outlook）向自己发送受权限保护的电子邮件，可以从移动设备访问该邮件。 </br></br>**注意：** 有关以本机方式支持 rights management 的电子邮件客户端的列表，请参阅[启用应用程序](../requirements-applications.md#rms-enlightened-applications)中的**电子邮件**列。 |
+|**受权限保护的 PDF 文件**     | 1. 从 Windows 计算机中，使用 AIP[经典](client-classify-protect.md)或[统一标签客户](clientv2-classify-protect.md)端客户端保护 PDF 文件。 </br>2. 向自己发送受保护的 PDF，或将其上传到 SharePoint 受保护的库，并将其共享到你自己的电子邮件地址。        |
+|**.Ptxt 或 .pjpg 或 .ppng**     | 1. 从 Windows 计算机上，使用 AIP[经典](client-classify-protect.md)或[统一标签客户](clientv2-classify-protect.md)端客户端保护文本或图像文件。 </br></br>2. 向自己发送受保护的文件，或将其上传到 SharePoint 受保护的库，并将其共享到你自己的电子邮件地址。 </br></br>**注意：** 有关详细信息，请参阅[分类和保护支持的文件类型](client-admin-guide-file-types.md#supported-file-types-for-classification-and-protection)   |
+| | |
+
+### <a name="open-the-protected-file-on-your-mobile"></a>打开移动设备上的受保护文件
+
+1. 点击电子邮件附件或链接以打开受保护的内容。
+
+1. 出现提示时，选择 " **AIP 查看器**" 应用以查看受保护的内容。
+
+1. 出现提示时，请使用你的工作或学校帐户登录，或者选择一个证书。
+
+经过身份验证后，AIP 查看器应用会显示电子邮件或文件。
 
 > [!NOTE]
-> 不用先打开应用，再选择要查看的文档和电子邮件。 相反，可先打开文档或电子邮件，然后选择此应用以查看文档或电子邮件。
->
-> 同样，除非系统提示你，否则不用尝试登录应用。
-
-要使用以下说明，需通过移动设备访问该应用支持的其中一个文件。 例如：
-
-- **.rpmsg 文件**：此为权限保护的电子邮件消息，当移动设备上的电子邮件应用本机不支持权限数据保护时，会在电子邮件中以附件形式存在。 
-    
-    使用另一台设备可向自己发送权限保护的电子邮件消息，用户可从自己的移动设备访问。 例如，在 Windows 计算机使用 Outlook。 有关以本机方式支持 rights management 的电子邮件客户端的列表，请参阅[支持 Azure Rights Management 数据保护的应用程序](../requirements-applications.md)中第一个表中的 "**电子邮件**" 列。
-
-- **受权限保护的 PDF 文件**：在 Windows 计算机上，使用 Azure 信息保护客户端（[经典](client-classify-protect.md)或[统一标签客户端](clientv2-classify-protect.md)）来保护 PDF 文件，然后将此受权限保护的 pdf 文件作为电子邮件中的附件发送。 或者，使用电子邮件地址将 PDF 文件上传到 SharePoint 保护的库，然后共享。
-
-- **.Ptxt 或. .pjpg 或 .ppng**：从 Windows 计算机上，使用 Azure 信息保护客户端保护文本或图像文件，然后将此受保护的文件作为电子邮件附件发送。 有关可用于测试的文件类型的完整列表，请参阅 Azure 信息保护客户端管理指南中的[支持分类和保护的文件类型](client-admin-guide-file-types.md#supported-file-types-for-classification-and-protection)部分的第一个表格。 
-
-若要在 Azure 信息保护查看器应用中查看这些文件，请点击此电子邮件附件或链接。 系统提示选择一个应用来打开文件时，请选择“AIP 查看器”应用。 然后系统会提示使用工作或学校帐户登录，或提示选择一个证书。 对这些凭据进行身份验证后，Azure 信息保护应用会显示电子邮件或文件以供阅读。
+> 始终打开受保护的内容，以打开 AIP 应用。 在出现提示时，请不要尝试登录到应用程序，或从 AIP 查看器应用程序中打开受保护的文件。
+> 
 
 ## <a name="next-steps"></a>后续步骤
 
-若有本[常见问题解答](mobile-app-faq.md)未解决的此应用相关问题或反馈，请访问我们的 [Yammer 站点](https://www.yammer.com/AskIPTeam)。
+使用以下方法之一来提供有关 AIP 移动应用的反馈：
+
+- 中转到 "**设置**" "  >  **发送反馈**"
+- 在我们的[Yammer 网站](https://www.yammer.com/AskIPTeam)上发布你的问题

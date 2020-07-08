@@ -13,18 +13,18 @@ ms.subservice: fci
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d3afd356ee64d337bf171488e8be6aa65049d7ee
-ms.sourcegitcommit: 479b3aaea7011750ff85a217298e5ae9185c1dd1
+ms.openlocfilehash: d289db484d647bb909fcb7445138f156322f72be
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82224727"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046532"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
 >适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2**
 >
-> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 通过本文获取相关说明和脚本以使用 Azure 信息保护客户端和 PowerShell 配置文件服务器资源管理器和文件分类基础结构 (FCI)。
 
@@ -54,7 +54,7 @@ ms.locfileid: "82224727"
     
   - 如果要更改特定文件扩展名保护（本机或常规）的默认级别，需已编辑注册表，如管理员指南中的[更改文件的默认保护级别](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)部分所述。
     
-  - 你具有 internet 连接，并且已配置了计算机设置（如果代理服务器需要这些设置）。 例如：`netsh winhttp import proxy source=ie`
+  - 你具有 internet 连接，并且已配置了计算机设置（如果代理服务器需要这些设置）。 例如： `netsh winhttp import proxy source=ie`
     
 - 你已将本地 Active Directory 用户帐户（包括其电子邮件地址）与 Azure Active Directory 或 Office 365 同步。 对于所有需要访问受 FCI 和 Azure Rights Management 服务保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此要求的详细信息，请参阅 [准备用户和组以便使用 Azure 信息保护](../prepare.md)。
     
@@ -152,7 +152,7 @@ ms.locfileid: "82224727"
 
         -   **说明**：键入“对&lt;文件夹名称&gt;中的所有文件进行分类以便使用 Rights Management”****。
 
-            将* &lt;文件夹名称&gt; *替换为所选的文件夹名称。 例如，“为 Rights Management 的 C:\FileShare 文件夹中的所有文件分类”****
+            将* &lt; 文件夹名称 &gt; *替换为所选的文件夹名称。 例如，“为 Rights Management 的 C:\FileShare 文件夹中的所有文件分类”****
 
         -   **范围**：添加所选的文件夹。 例如，**C:\FileShare**。
 
@@ -194,7 +194,7 @@ ms.locfileid: "82224727"
 
         -   **说明**：键入**使用 Windows PowerShell 脚本通过 Rights Management 和模板保护&lt;文件夹名称&gt;中的文件。**
 
-            将* &lt;文件夹名称&gt; *替换为所选的文件夹名称。 例如，“使用 Windows PowerShell 脚本通过 Rights Management 和模板保护 C:\FileShare 中的文件”****
+            将* &lt; 文件夹名称 &gt; *替换为所选的文件夹名称。 例如，“使用 Windows PowerShell 脚本通过 Rights Management 和模板保护 C:\FileShare 中的文件”****
 
         -   **范围**：选择所选的文件夹。 例如，**C:\FileShare**。
 

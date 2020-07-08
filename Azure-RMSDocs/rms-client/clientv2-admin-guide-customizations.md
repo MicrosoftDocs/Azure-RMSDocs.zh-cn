@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9e77e09d19e19d2d062dc526927176c1645abbe0
-ms.sourcegitcommit: b7c4a6c3c343b53775cc4ffdecb966c32766dd6a
+ms.openlocfilehash: 390f89d124d68591e8eaade67f6666d3f7c32ed4
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85716145"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048861"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端的自定义配置
 
@@ -26,7 +26,7 @@ ms.locfileid: "85716145"
 >
 > **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 在管理 Azure 信息保护统一标签客户端时，请使用以下信息来了解特定方案或用户子集可能需要的高级配置。
 
@@ -43,19 +43,27 @@ ms.locfileid: "85716145"
 
 对于 "标签" 策略设置，单个字符串值：
 
-    Set-LabelPolicy -Identity <PolicyName> -AdvancedSettings @{Key="value1,value2"}
+```ps
+Set-LabelPolicy -Identity <PolicyName> -AdvancedSettings @{Key="value1,value2"}
+```
 
 对于 "标签" 策略设置，相同键的多个字符串值：
 
-    Set-LabelPolicy -Identity <PolicyName> -AdvancedSettings @{Key=ConvertTo-Json("value1", "value2")}
+```ps
+Set-LabelPolicy -Identity <PolicyName> -AdvancedSettings @{Key=ConvertTo-Json("value1", "value2")}
+```
 
 对于标签设置，则为单个字符串值：
 
-    Set-Label -Identity <LabelGUIDorName> -AdvancedSettings @{Key="value1,value2"}
+```ps
+Set-Label -Identity <LabelGUIDorName> -AdvancedSettings @{Key="value1,value2"}
+```
 
 对于标签设置，相同键的多个字符串值：
 
-    Set-Label -Identity <LabelGUIDorName> -AdvancedSettings @{Key=ConvertTo-Json("value1", "value2")}
+```ps
+Set-Label -Identity <LabelGUIDorName> -AdvancedSettings @{Key=ConvertTo-Json("value1", "value2")}
+```
 
 若要删除高级设置，请使用相同的语法，但指定空字符串值。
 
@@ -66,19 +74,27 @@ ms.locfileid: "85716145"
 
 示例1：为单个字符串值设置标签策略高级设置：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableCustomPermissions="False"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableCustomPermissions="False"}
+```
 
 示例2：为单个字符串值设置标签高级设置：
 
-    Set-Label -Identity Internal -AdvancedSettings @{smimesign="true"}
+```ps
+Set-Label -Identity Internal -AdvancedSettings @{smimesign="true"}
+```
 
 示例3：为多个字符串值设置标签高级设置：
 
-    Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties=ConvertTo-Json("Migrate Confidential label,Classification,Confidential", "Migrate Secret label,Classification,Secret")}
+```ps
+Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties=ConvertTo-Json("Migrate Confidential label,Classification,Confidential", "Migrate Secret label,Classification,Secret")}
+```
 
 示例4：通过指定空字符串值删除标签策略高级设置：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableCustomPermissions=""}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableCustomPermissions=""}
+```
 
 #### <a name="specifying-the-identity-for-the-label-policy-or-label"></a>为标签策略或标签指定标识
 
@@ -94,8 +110,9 @@ ms.locfileid: "85716145"
 
 如果希望指定标签 GUID，此值不会显示在管理标签的管理中心。 不过，你可以使用以下 Office 365 Security & 相容性中心 PowerShell 命令来查找此值：
 
-    Get-Label | Format-Table -Property DisplayName, Name, Guid
-
+```ps
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+```
 
 #### <a name="order-of-precedence---how-conflicting-settings-are-resolved"></a>优先顺序-如何解决冲突的设置
 
@@ -156,7 +173,9 @@ ms.locfileid: "85716145"
 
 用于检查标签策略设置对名为 "Global" 的标签策略有效的示例 PowerShell 命令：
 
-    (Get-LabelPolicy -Identity Global).settings
+```ps
+(Get-LabelPolicy -Identity Global).settings
+```
 
 #### <a name="available-advanced-settings-for-labels"></a>标签的可用高级设置
 
@@ -173,7 +192,9 @@ ms.locfileid: "85716145"
 
 用于检查标签设置对名为 "Public" 的标签有效的示例 PowerShell 命令：
 
-    (Get-Label -Identity Public).settings
+```ps
+(Get-Label -Identity Public).settings
+```
 
 ## <a name="display-the-information-protection-bar-in-office-apps"></a>在 Office 应用中显示“信息保护”栏
 
@@ -189,7 +210,9 @@ ms.locfileid: "85716145"
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{HideBarByDefault="False"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{HideBarByDefault="False"}
+```
 
 ## <a name="exempt-outlook-messages-from-mandatory-labeling"></a>使 Outlook 邮件免于强制标记
 
@@ -205,7 +228,9 @@ ms.locfileid: "85716145"
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
+```
 
 ## <a name="enable-recommended-classification-in-outlook"></a>在 Outlook 中启用建议的分类
 
@@ -221,7 +246,9 @@ ms.locfileid: "85716145"
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookRecommendationEnabled="True"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookRecommendationEnabled="True"}
+```
 
 ## <a name="enable-removal-of-protection-from-compressed-files"></a>启用从压缩文件中删除保护
 
@@ -235,7 +262,9 @@ ms.locfileid: "85716145"
 
 启用策略的示例 PowerShell 命令：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableContainerSupport="True"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableContainerSupport="True"}
+```
 
 ## <a name="set-a-different-default-label-for-outlook"></a>为 Outlook 设置不同的默认标签
 
@@ -251,7 +280,9 @@ ms.locfileid: "85716145"
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
+```
 
 ## <a name="change-which-file-types-to-protect"></a>更改要保护的文件类型
 
@@ -277,15 +308,21 @@ ms.locfileid: "85716145"
 
 示例1：用于统一客户端的 PowerShell 命令仅保护 Office 文件类型和 PDF 文件，其中标签策略命名为 "客户端"：
 
-    Set-LabelPolicy -Identity Client -AdvancedSettings @{PFileSupportedExtensions=""}
+```ps
+Set-LabelPolicy -Identity Client -AdvancedSettings @{PFileSupportedExtensions=""}
+```
 
 示例2：用于扫描程序的 PowerShell 命令，用于保护所有文件类型，其中标签策略命名为 "Scanner"：
 
-    Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions="*"}
+```ps
+Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions="*"}
+```
 
 示例3：用于扫描程序的 PowerShell 命令，用于保护 .txt 文件和 .csv 文件以及 Office 文件和 PDF 文件，其中标签策略命名为 "Scanner"：
 
-    Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions=ConvertTo-Json(".txt", ".csv")}
+```ps
+Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions=ConvertTo-Json(".txt", ".csv")}
+```
 
 利用此设置，你可以更改受保护的文件类型，但不能将默认保护级别从本机更改为通用。 例如，对于运行统一标签客户端的用户，你可以更改默认设置，以便仅保护 Office 文件和 PDF 文件而不是所有文件类型。 但不能将这些文件类型更改为使用 .pfile 文件扩展名进行常规保护。
 
@@ -307,22 +344,30 @@ ms.locfileid: "85716145"
 
 示例1： PowerShell 命令的行为类似于默认行为，即保护 "dwg" 变为 ".pfile"：
 
-    Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions =""}
+```ps
+Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions =""}
+```
 
 示例2： PowerShell 命令：在文件受到保护时，将通用保护（.pfile）中的所有 .Pfile 扩展更改为本机保护（. pdwg）：
 
-    Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions ="*"}
+```ps
+Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions ="*"}
+```
 
 示例3：使用此服务时将 "dwg" 更改为 "pdwg" 的 PowerShell 命令将保护此文件：
 
-    Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions =ConvertTo-Json(".dwg")}
+```ps
+Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions =ConvertTo-Json(".dwg")}
+```
 
 对于此设置，以下扩展（". txt"，".xml"，".bmp"，". jt"，".jpg"，"jpeg"，". jpe"，". jif"，"jfif"，". *"，".png"，".tif"，". tiff"，".gif"）始终变为 P \<EXT> 。值得注意的是，".ptxt" 不是 ".pfile"。 
 仅当启用了高级属性- [**PFileSupportedExtension**](#pfilesupportedextension)的 pfile 保护时， **AdditionalPPrefixExtensions**才有效。 
 
 例如，在使用以下命令时：
 
-    Set-LabelPolicy -AdvancedSettings @{PFileSupportedExtensions=""}
+```ps
+Set-LabelPolicy -AdvancedSettings @{PFileSupportedExtensions=""}
+```
 
 不能 .Pfile 保护，而**AdditionalPPrefixExtensions**中的值将被忽略。 
 
@@ -342,7 +387,9 @@ ms.locfileid: "85716145"
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{PostponeMandatoryBeforeSave="False"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{PostponeMandatoryBeforeSave="False"}
+```
 
 ## <a name="remove-headers-and-footers-from-other-labeling-solutions"></a>删除其他标记解决方案中的页眉和页脚
 
@@ -378,12 +425,14 @@ ms.locfileid: "85716145"
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{WordShapeNameToRemove="dc"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{WordShapeNameToRemove="dc"}
+```
 
 如果有多个 Word 形状要删除，请指定任意数量的值，以便删除形状。
 
-
 ### <a name="use-the-removeexternalcontentmarkinginapp-advanced-property"></a>使用 RemoveExternalContentMarkingInApp 高级属性
+
 此设置使你可以从文档中删除或替换由其他标签解决方案应用的基于文本的页眉或页脚。 例如，旧的页脚包含已迁移到敏感度标签的旧标签的名称，以使用新标签名称及其自己的页脚。
 
 当统一标签客户端在其策略中获取此配置时，在 Office 应用中打开文档并将任何敏感度标签应用于该文档时，将删除或替换旧的页眉和页脚。
@@ -404,7 +453,9 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInApp="WX"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInApp="WX"}
+```
 
 然后需要至少一个高级客户端设置 ExternalContentMarkingToRemove，**** 指定页眉或页脚的内容以及如何删除或替换它们。
 
@@ -437,7 +488,9 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="*TEXT*"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="*TEXT*"}
+```
 
 #### <a name="multiline-headers-or-footers"></a>多行页眉或页脚
 
@@ -457,8 +510,9 @@ Label applied manually****
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="*Confidential*,*Label applied*"}
-
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="*Confidential*,*Label applied*"}
+```
 
 #### <a name="optimization-for-powerpoint"></a>针对 PowerPoint 的优化
 
@@ -482,7 +536,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{PowerPointShapeNameToRemove="fc"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{PowerPointShapeNameToRemove="fc"}
+```
 
 如果要删除多个 PowerPoint 形状，请指定任意数量的值，以便删除形状。
 
@@ -494,7 +550,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInAllSlides="True"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInAllSlides="True"}
+```
 
 ## <a name="disable-custom-permissions-in-file-explorer"></a>在文件资源管理器中禁用自定义权限
 
@@ -510,7 +568,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableCustomPermissions="False"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableCustomPermissions="False"}
+```
 
 ## <a name="for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer"></a>对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限
 
@@ -528,8 +588,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableCustomPermissionsForCustomProtectedFiles="True"}
-
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableCustomPermissionsForCustomProtectedFiles="True"}
+```
 
 ## <a name="for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments"></a>对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签
 
@@ -541,10 +602,12 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 你可以将此设置配置为 "**建议**"，以使用户可以使用可自定义的工具提示将所选标签应用到其电子邮件。 用户可接受或忽略该建议。 或者，你可以将此设置配置为**自动**，其中所选标签会自动应用，但用户可以在发送电子邮件之前删除标签或选择其他标签。
 
-注意：当具有最高分类标签的附件配置为通过用户定义权限的设置进行保护时：
-
-- 如果标签的用户定义权限包括 Outlook （不要转发），则选择该标签，并且不会向电子邮件应用 "转发保护"。
-- 如果标签的用户定义权限仅用于 Word、Excel、PowerPoint 和文件资源管理器，则该标签不会应用于电子邮件，也不会受到保护。
+> [!NOTE]
+> 如果将具有最高分类标签的附件配置为通过用户定义权限的设置进行保护：
+> 
+> - 如果标签的用户定义权限包括 Outlook （不要转发），则选择该标签，并且不会向电子邮件应用 "转发保护"。
+> - 如果标签的用户定义权限仅用于 Word、Excel、PowerPoint 和文件资源管理器，则该标签不会应用于电子邮件，也不会受到保护。
+> 
 
 若要配置此高级设置，请为所选标签策略输入以下字符串：
 
@@ -560,7 +623,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{AttachmentAction="Automatic"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{AttachmentAction="Automatic"}
+```
 
 ## <a name="add-report-an-issue-for-users"></a>为用户添加“报告问题”
 
@@ -580,7 +645,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{ReportAnIssueLink="mailto:helpdesk@contoso.com"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{ReportAnIssueLink="mailto:helpdesk@contoso.com"}
+```
 
 ## <a name="implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent"></a>在 Outlook 中实施弹出消息，警告、证明或阻止发送电子邮件
 
@@ -611,8 +678,11 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 对于所选策略，请创建以下一个或多个具有以下键的高级设置。 对于值，按其 Guid 指定一个或多个标签，每个标签用逗号分隔。
 
-以逗号分隔的字符串形式提供的多个标签 Guid 的示例值：`dcf781ba-727f-4860-b3c1-73479e31912b,1ace2cc3-14bc-4142-9125-bf946a70542c,3e9df74d-3168-48af-8b11-037e3021813f`
+以逗号分隔的字符串形式提供的多个标签 Guid 的示例值： 
 
+```sh
+dcf781ba-727f-4860-b3c1-73479e31912b,1ace2cc3-14bc-4142-9125-bf946a70542c,3e9df74d-3168-48af-8b11-037e3021813f
+```
 
 - 警告消息：
     
@@ -635,11 +705,13 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookWarnUntrustedCollaborationLabel="8faca7b8-8d20-48a3-8ea2-0f96310a848e,b6d21387-5d34-4dc8-90ae-049453cec5cf,bb48a6cb-44a8-49c3-9102-2d2b017dcead,74591a94-1e0e-4b5d-b947-62b70fc0f53a,6c375a97-2b9b-4ccd-9c5b-e24e4fd67f73"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookWarnUntrustedCollaborationLabel="8faca7b8-8d20-48a3-8ea2-0f96310a848e,b6d21387-5d34-4dc8-90ae-049453cec5cf,bb48a6cb-44a8-49c3-9102-2d2b017dcead,74591a94-1e0e-4b5d-b947-62b70fc0f53a,6c375a97-2b9b-4ccd-9c5b-e24e4fd67f73"}
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookJustifyUntrustedCollaborationLabel="dc284177-b2ac-4c96-8d78-e3e1e960318f,d8bb73c3-399d-41c2-a08a-6f0642766e31,750e87d4-0e91-4367-be44-c9c24c9103b4,32133e19-ccbd-4ff1-9254-3a6464bf89fd,74348570-5f32-4df9-8a6b-e6259b74085b,3e8d34df-e004-45b5-ae3d-efdc4731df24"}
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookJustifyUntrustedCollaborationLabel="dc284177-b2ac-4c96-8d78-e3e1e960318f,d8bb73c3-399d-41c2-a08a-6f0642766e31,750e87d4-0e91-4367-be44-c9c24c9103b4,32133e19-ccbd-4ff1-9254-3a6464bf89fd,74348570-5f32-4df9-8a6b-e6259b74085b,3e8d34df-e004-45b5-ae3d-efdc4731df24"}
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookBlockUntrustedCollaborationLabel="0eb351a6-0c2d-4c1d-a5f6-caa80c9bdeec,40e82af6-5dad-45ea-9c6a-6fe6d4f1626b"}
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookBlockUntrustedCollaborationLabel="0eb351a6-0c2d-4c1d-a5f6-caa80c9bdeec,40e82af6-5dad-45ea-9c6a-6fe6d4f1626b"}
+```
 
 #### <a name="to-exempt-domain-names-for-pop-up-messages-configured-for-specific-labels"></a>为特定标签配置的弹出消息免除域名
 
@@ -673,9 +745,11 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookBlockTrustedDomains="gmail.com"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookBlockTrustedDomains="gmail.com"}
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookJustifyTrustedDomains="contoso.com,fabrikam.com,litware.com"}
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookJustifyTrustedDomains="contoso.com,fabrikam.com,litware.com"}
+```
 
 ### <a name="to-implement-the-warn-justify-or-block-pop-up-messages-for-emails-or-attachments-that-dont-have-a-label"></a>若要针对没有标签的电子邮件或附件实现用于警告、验证或阻止的弹出消息：
 
@@ -708,8 +782,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookUnlabeledCollaborationAction="Warn"}
-
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookUnlabeledCollaborationAction="Warn"}
+```
 
 #### <a name="to-define-specific-file-name-extensions-for-the-warn-justify-or-block-pop-up-messages-for-email-attachments-that-dont-have-a-label"></a>为不带标签的电子邮件附件定义 "警告"、"对齐" 或 "阻止" 弹出消息的特定文件扩展名
 
@@ -729,7 +804,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookOverrideUnlabeledCollaborationExtensions=".PPTX,.PPTM,.PPT,.PPTX,.PPTM"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookOverrideUnlabeledCollaborationExtensions=".PPTX,.PPTM,.PPT,.PPTX,.PPTM"}
+```
 
 #### <a name="to-specify-a-different-action-for-email-messages-without-attachments"></a>为不带附件的电子邮件指定其他操作
 
@@ -765,7 +842,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior="Warn"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior="Warn"}
+```
 
 ## <a name="disable-sending-audit-data-to-azure-information-protection-analytics"></a>禁止向 Azure 信息保护分析发送审核数据
 
@@ -781,8 +860,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableAudit="False"}
-
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableAudit="False"}
+```
 
 ## <a name="disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics"></a>禁止将文档中发现的敏感信息发送到 Azure 信息保护分析
 
@@ -808,7 +888,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{RunAuditInformationTypesDiscovery="False"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{RunAuditInformationTypesDiscovery="False"}
+```
 
 ## <a name="send-information-type-matches-to-azure-information-protection-analytics"></a>向 Azure 信息保护分析发送信息类型匹配项
  
@@ -824,7 +906,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{LogMatchedContent="True"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{LogMatchedContent="True"}
+```
 
 ## <a name="limit-cpu-consumption"></a>限制 CPU 消耗
 
@@ -864,8 +948,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中标签策略命名为 "Scanner"：
 
-    Set-LabelPolicy -Identity Scanner -AdvancedSettings @{ScannerConcurrencyLevel="8"}
-
+```ps
+Set-LabelPolicy -Identity Scanner -AdvancedSettings @{ScannerConcurrencyLevel="8"}
+```
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>从 Secure Islands 和其他标记解决方案迁移标签
 
@@ -907,7 +992,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中的标签命名为 "机密"：
 
-    Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties="Secure Islands label is Confidential,Classification,Confidential"}
+```ps
+Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties="Secure Islands label is Confidential,Classification,Confidential"}
+```
 
 #### <a name="example-2-one-to-one-mapping-for-a-different-label-name"></a>示例 2：不同标签名称的一对一映射
 
@@ -925,7 +1012,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中标签命名为 "高度机密"：
 
-    Set-Label -Identity "Highly Confidential" -AdvancedSettings @{labelByCustomProperties="Secure Islands label is Sensitive,Classification,Sensitive"}
+```ps
+Set-Label -Identity "Highly Confidential" -AdvancedSettings @{labelByCustomProperties="Secure Islands label is Sensitive,Classification,Sensitive"}
+```
 
 #### <a name="example-3-many-to-one-mapping-of-label-names"></a>示例 3：标签名称的多对一映射
 
@@ -943,7 +1032,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中标签命名为 "General"：
 
-    Set-Label -Identity General -AdvancedSettings @{labelByCustomProperties="Secure Islands label contains Internal,Classification,.*Internal.*"}
+```ps
+Set-Label -Identity General -AdvancedSettings @{labelByCustomProperties="Secure Islands label contains Internal,Classification,.*Internal.*"}
+```
 
 #### <a name="example-4-multiple-rules-for-the-same-label"></a>示例4：针对相同标签的多个规则
 
@@ -951,7 +1042,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 在此示例中，名为 "机密" 和 "机密" 的安全群岛标签存储在名为**分类**的自定义属性中，你希望 Azure 信息保护统一标签客户端应用名为 "机密" 的敏感度标签：
 
-    Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties=ConvertTo-Json("Migrate Confidential label,Classification,Confidential", "Migrate Secret label,Classification,Secret")}
+```ps
+Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties=ConvertTo-Json("Migrate Confidential label,Classification,Confidential", "Migrate Secret label,Classification,Secret")}
+```
 
 ### <a name="extend-your-label-migration-rules-to-emails"></a>将标签迁移规则扩展到电子邮件
 
@@ -965,7 +1058,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableLabelByMailHeader="True"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableLabelByMailHeader="True"}
+```
 
 ### <a name="extend-your-label-migration-rules-to-sharepoint-properties"></a>将标签迁移规则扩展到 SharePoint 属性
 
@@ -981,7 +1076,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableLabelBySharePointProperties="True"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableLabelBySharePointProperties="True"}
+```
 
 ## <a name="apply-a-custom-property-when-a-label-is-applied"></a>应用标签时应用自定义属性
 
@@ -1009,7 +1106,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 此配置要求你为要应用其他自定义属性的每个敏感度标签指定一个名为**customPropertiesByLabel**的高级设置。 然后，使用以下语法设置每个条目的值：
 
-`[custom property name],[custom property value]`
+```sh
+[custom property name],[custom property value]
+```
 
 > [!IMPORTANT]
 > 使用字符串中的空格将阻止应用标签。
@@ -1030,7 +1129,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中的标签命名为 "机密"：
 
+```ps
     Set-Label -Identity Confidential -AdvancedSettings @{customPropertiesByLabel="Classification,Secret"}
+```
 
 #### <a name="example-2-add-multiple-custom-properties-for-a-label"></a>示例2：为标签添加多个自定义属性
 
@@ -1038,7 +1139,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令：标签命名为 "常规"，并且你想要添加一个名为**分类**的自定义属性，其值为 "**常规**"，另一个名为 "**敏感度**" 的自定义属性的值为 "**内部**"：
 
-    Set-Label -Identity General -AdvancedSettings @{customPropertiesByLabel=ConvertTo-Json("Classification,General", "Sensitivity,Internal")}
+```ps
+Set-Label -Identity General -AdvancedSettings @{customPropertiesByLabel=ConvertTo-Json("Classification,General", "Sensitivity,Internal")}
+```
 
 ## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>将标签配置为在 Outlook 中应用 S/MIME 保护
 
@@ -1064,9 +1167,11 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中标签命名为 "仅收件人"：
 
-    Set-Label -Identity "Recipients Only" -AdvancedSettings @{SMimeSign="True"}
+```ps
+Set-Label -Identity "Recipients Only" -AdvancedSettings @{SMimeSign="True"}
 
-    Set-Label -Identity "Recipients Only" -AdvancedSettings @{SMimeEncrypt="True"}
+Set-Label -Identity "Recipients Only" -AdvancedSettings @{SMimeEncrypt="True"}
+```
 
 ## <a name="specify-a-default-sublabel-for-a-parent-label"></a>为父标签指定默认子标签
 
@@ -1080,7 +1185,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中的父标签命名为 "机密"，而 "所有 Employees" 子标签具有8faca7b8-8d20-48a3-8ea2-0f96310a848e 的 GUID：
 
-    Set-Label -Identity "Confidential" -AdvancedSettings @{DefaultSubLabelId="8faca7b8-8d20-48a3-8ea2-0f96310a848e"}
+```ps
+Set-Label -Identity "Confidential" -AdvancedSettings @{DefaultSubLabelId="8faca7b8-8d20-48a3-8ea2-0f96310a848e"}
+```
 
 ## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>开启在后台持续运行的分类
 
@@ -1104,7 +1211,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令： 
 
-    Set-LabelPolicy -Identity PolicyName -AdvancedSettings @{RunPolicyInBackground = "true"}
+```ps
+Set-LabelPolicy -Identity PolicyName -AdvancedSettings @{RunPolicyInBackground = "true"}
+```
 
 ## <a name="specify-a-color-for-the-label"></a>指定标签的颜色
 
@@ -1122,7 +1231,9 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令，其中标签命名为 "Public"：
 
-    Set-Label -Identity Public -AdvancedSettings @{color="#40e0d0"}
+```ps
+Set-Label -Identity Public -AdvancedSettings @{color="#40e0d0"}
+```
 
 ## <a name="sign-in-as-a-different-user"></a>以其他用户身份登录
 
@@ -1180,7 +1291,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 请注意，如果此计算机上的用户从 "[帮助和反馈](clientv2-admin-guide.md#help-and-feedback-section)" 中选择 "**重置设置**" 选项，则此操作将删除策略文件并使客户端无法运行，直到您手动替换文件或客户端连接到 internet 并下载这些文件。
 
-如果断开连接的计算机正在运行 Azure 信息保护扫描程序，则必须执行其他配置步骤。 有关详细信息，请参阅[限制：扫描仪服务器无法](../deploy-aip-scanner.md#restriction-the-scanner-server-cannot-have-internet-connectivity)从扫描程序部署说明获得 internet 连接。
+如果断开连接的计算机正在运行 Azure 信息保护扫描程序，则必须执行其他配置步骤。 有关详细信息，请参阅[限制：扫描仪服务器无法](../deploy-aip-scanner-prereqs.md#restriction-the-scanner-server-cannot-have-internet-connectivity)从扫描程序部署说明获得 internet 连接。
 
 ## <a name="change-the-local-logging-level"></a>更改本地日志记录级别
 
@@ -1218,15 +1329,18 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 **跳过只读和存档的文件**
 
-
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_READONLY, FILE_ATTRIBUTE_ARCHIVE"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_READONLY, FILE_ATTRIBUTE_ARCHIVE"}
+```
 
 **跳过只读或存档的文件**
 
 若要使用或逻辑，请多次运行同一属性。 例如：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_READONLY"}
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_ARCHIVE"}
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_READONLY"}
+Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_ARCHIVE"}
+```
 
 > [!TIP]
 > 建议你考虑启用扫描程序以跳过具有以下属性的文件：
@@ -1253,10 +1367,12 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 示例 PowerShell 命令（如果标签策略命名为 "Global"）：
 
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{ UseCopyAndPreserveNTFSOwner ="true"}
-
+```ps
+Set-LabelPolicy -Identity Global -AdvancedSettings @{ UseCopyAndPreserveNTFSOwner ="true"}
+```
 
 ## <a name="next-steps"></a>后续步骤
+
 自定义 Azure 信息保护统一标签客户端后，请参阅以下资源，了解支持此客户端所需的其他信息：
 
 - [客户端文件和使用情况日志记录](client-admin-guide-files-and-logging.md)

@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 76f87d66c2eacafc7883b905c3bc364f9b69f5a1
-ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
+ms.openlocfilehash: fcd773904dc9570715313a856d512c0bce54811c
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84802859"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048759"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标签客户端管理员指南
 
@@ -24,7 +24,7 @@ ms.locfileid: "84802859"
 >
 > **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 如果你负责企业网络上的 Azure 信息保护统一标签客户端，或者如果你想要获得比[Azure 信息保护统一标签客户端用户指南](clientv2-user-guide.md)中的更多技术信息，请使用本指南中的信息。 
 
@@ -240,7 +240,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标签客户端�
 
 从版本1.48.204.0 开始，扫描器使用配置文件从 Azure 门户获取其配置设置。 升级扫描程序包括指示扫描器使用此联机配置，为统一标签客户端提供脱机配置，不支持扫描程序的脱机配置。
 
-1. 使用 Azure 门户创建新的扫描程序配置文件，其中包含扫描程序和数据存储库的设置及其所需的任何设置。 有关此步骤的帮助，请参阅扫描程序部署说明中的 "在[Azure 门户中配置扫描器](../deploy-aip-scanner.md#configure-the-scanner-in-the-azure-portal)" 部分。
+1. 使用 Azure 门户创建新的扫描程序配置文件，其中包含扫描程序和数据存储库的设置及其所需的任何设置。 有关此步骤的帮助，请参阅从扫描程序部署说明[在 Azure 门户中配置扫描器](../deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal)。
 
 2. 在扫描程序计算机上，停止扫描程序服务“Azure 信息保护扫描程序”****。
 

@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 01149b9f12fce4c88f250548eaa86dd87eeaa689
-ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
+ms.openlocfilehash: 26a6b96a8f0de79d78bb5fdb456158f15e86b1e0
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84802869"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048810"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-unified-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护统一客户端配合使用
 
@@ -24,7 +24,7 @@ ms.locfileid: "84802869"
 >
 > **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 当你安装 Azure 信息保护统一标签客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
@@ -167,14 +167,18 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
 1. 通过 "以**管理员身份运行" 选项**打开 Windows PowerShell。 
 
 2. 在 PowerShell 会话中，创建一个变量以存储将以非交互方式运行的 Windows 用户帐户的凭据。 例如，如果为扫描程序创建了服务帐户：
-    
-        $pscreds = Get-Credential "CONTOSO\srv-scanner"
-    
+
+    ```ps
+    $pscreds = Get-Credential "CONTOSO\srv-scanner"
+    ```
+
     系统将提示你输入此帐户的密码。
 
 2. 运行 Set-aipauthentication cmdlet 和*OnBeHalfOf*参数，并将其值指定为刚创建的变量。 同时，在 Azure AD 中指定应用注册值、租户 ID 和委托用户帐户的名称。 例如：
     
-        Set-AIPAuthentication -AppId "77c3c1c3-abf9-404e-8b2b-4652836c8c66" -AppSecret "OAkk+rnuYc/u+]ah2kNxVbtrDGbS47L4" -TenantId "9c11c87a-ac8b-46a3-8d5c-f4d0b72ee29a" -DelegatedUser scanner@contoso.com -OnBehalfOf $pscreds
+    ```ps
+    Set-AIPAuthentication -AppId "77c3c1c3-abf9-404e-8b2b-4652836c8c66" -AppSecret "OAkk+rnuYc/u+]ah2kNxVbtrDGbS47L4" -TenantId "9c11c87a-ac8b-46a3-8d5c-f4d0b72ee29a" -DelegatedUser scanner@contoso.com -OnBehalfOf $pscreds
+    ```
 
 > [!NOTE]
 > 如果计算机无法访问 internet，则无需在 Azure AD 中创建应用程序并运行 Set-aipauthentication。 相反，请按照[断开连接的计算机](clientv2-admin-guide-customizations.md#support-for-disconnected-computers)的说明进行操作。  
@@ -182,7 +186,9 @@ Set-aipauthentication 要求对*AppId*和*AppSecret*参数进行应用注册。 
 ## <a name="next-steps"></a>后续步骤
 对于 PowerShell 会话中的 cmdlet 帮助，请键入 `Get-Help <cmdlet name> -online` 。 例如： 
 
-    Get-Help Set-AIPFileLabel -online
+```ps
+Get-Help Set-AIPFileLabel -online
+```
 
 有关支持 Azure 信息保护客户端可能需要的其他信息，请参阅以下内容：
 

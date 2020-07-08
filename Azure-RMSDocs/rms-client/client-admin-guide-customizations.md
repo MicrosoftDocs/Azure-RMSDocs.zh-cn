@@ -13,21 +13,21 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 58053a5ee3dae935a3d160f14bc610d2487e03d2
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: a038d70cfbeb75f4bcabbfab0391582cdb0b5e87
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83747060"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86047365"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 请参阅以下高级配置相关信息，在管理 Azure 信息保护客户端时，可能需要用于特定方案或一部分用户。
 
@@ -146,7 +146,7 @@ ms.locfileid: "83747060"
 
 - 密钥：ReportAnIssueLink****
 
-- 值： ** \< HTTP 字符串>**
+- 负值**\<HTTP string>**
 
 网站示例值：`https://support.contoso.com`
 
@@ -200,7 +200,7 @@ ms.locfileid: "83747060"
     
 2. 将已标识的文件重命名为 Policy.msip****，再将它复制到已安装 Azure 信息保护客户端的计算机上的 %LocalAppData%\Microsoft\MSIP**** 文件夹。 
 
-如果断开连接的计算机运行的是当前的 Azure 信息保护扫描程序 GA 版本，则需要执行其他配置步骤。 有关详细信息，请参阅[限制：扫描仪服务器无法](../deploy-aip-scanner.md#restriction-the-scanner-server-cannot-have-internet-connectivity)从扫描程序部署说明获得 internet 连接。
+如果断开连接的计算机运行的是当前的 Azure 信息保护扫描程序 GA 版本，则需要执行其他配置步骤。 有关详细信息，请参阅[限制：扫描仪服务器无法](../deploy-aip-scanner-prereqs.md#restriction-the-scanner-server-cannot-have-internet-connectivity)在扫描程序部署先决条件中建立 internet 连接。
 
 ## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>在 Outlook 中隐藏或显示“不转发”按钮
 
@@ -331,7 +331,7 @@ ms.locfileid: "83747060"
 
 来自验证消息的事件条目示例：
 
-```
+```ps
 Client Version: 1.53.10.0
 Client Policy ID: e5287fe6-f82c-447e-bf44-6fa8ff146ef4
 Item Full Path: Price list.msg
@@ -342,6 +342,7 @@ User Justification: My manager approved sharing of this content
 Action Source: 
 User Response: Confirmed
 ```
+
 以下各节包含每个高级客户端设置的配置说明，你可以使用[教程：将 Azure 信息保护配置为使用 Outlook 来控制 oversharing 信息的 "配置 Azure 信息保护](../infoprotect-oversharing-tutorial.md)"。
 
 ### <a name="to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels"></a>若要针对特定标签实现用于警告、验证或阻止的弹出消息：
@@ -357,19 +358,19 @@ User Response: Confirmed
     
     - 密钥： **OutlookWarnUntrustedCollaborationLabel**
     
-    - 值： \< **标签 id （以逗号分隔）**>
+    - 值：\<**label IDs, comma-separated**>
 
 - 对齐消息：
     
     - 密钥： **OutlookJustifyUntrustedCollaborationLabel**
     
-    - 值： \< **标签 id （以逗号分隔）**>
+    - 值：\<**label IDs, comma-separated**>
 
 - 阻止邮件：
     
     - 密钥： **OutlookBlockUntrustedCollaborationLabel**
     
-    - 值： \< **标签 id （以逗号分隔）**>
+    - 值：\<**label IDs, comma-separated**>
 
 #### <a name="to-exempt-domain-names-for-pop-up-messages-configured-for-specific-labels"></a>为特定标签配置的弹出消息免除域名
 
@@ -385,19 +386,19 @@ User Response: Confirmed
     
     - 密钥： **OutlookWarnTrustedDomains**
     
-    - 值： **\<** 域名，用逗号分隔**>**
+    - 负值**\<**domain names, comma separated**>**
 
 - 对齐消息：
     
     - 密钥： **OutlookJustifyTrustedDomains**
     
-    - 值： **\<** 域名，用逗号分隔**>**
+    - 负值**\<**domain names, comma separated**>**
 
 - 阻止邮件：
     
     - 密钥： **OutlookBlockTrustedDomains**
     
-    - 值： **\<** 域名，用逗号分隔**>**
+    - 负值**\<**domain names, comma separated**>**
 
 例如，你为 "**机密 \ 所有员工**" 标签指定了**OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定**OutlookBlockTrustedDomains**和**contoso.com**的其他高级客户端设置。 因此，用户可以 john@sales.contoso.com 在将其标记为 "**机密 \ 所有员工**" 时向其发送电子邮件，但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
 
@@ -440,7 +441,7 @@ User Response: Confirmed
 
 - 密钥： **OutlookOverrideUnlabeledCollaborationExtensions**
 
-- 值： **\<** 用于显示消息的文件扩展名，以逗号分隔**>**
+- 负值**\<**file name extensions to display messages, comma separated**>**
 
 #### <a name="to-specify-a-different-action-for-email-messages-without-attachments"></a>为不带附件的电子邮件指定其他操作
 
@@ -489,7 +490,7 @@ User Response: Confirmed
 
 - 键：OutlookDefaultLabel****
 
-- 值：\<label ID> 或 None********
+- 值： \<**label ID**> 或**None**
 
 ## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>将标签配置为在 Outlook 中应用 S/MIME 保护
 
@@ -579,7 +580,7 @@ dcf781ba-727f-4860-b3c1-73479e31912b**** 的标签 ID 示例值：
 
 例如，如果使用不支持 PDF 加密 ISO 标准的 PDF 阅读器，则可能需要为所有用户配置此设置。 或者，在逐步采用支持新格式的 PDF 阅读器中的更改时，可能需要为部分用户配置此设置。 如果需要向已签名的 PDF 文档添加保护，则也可能使用此设置。 已签名的 PDF 文档可能受到 .ppdf 格式的额外保护，因此该保护是作为文件的包装器实现的。 
 
-要使 Azure 信息保护扫描程序使用新设置，必须重启扫描程序服务。 此外，在默认情况下，扫描程序将不再保护 PDF 文档。 如果想要 PDF 文档在 EnablePDFv2Protection 设置为 False 时受扫描程序保护，则必须[编辑注册表](../deploy-aip-scanner.md#scanner-from-the-classic-client-use-the-registry-to-change-which-file-types-are-protected)。
+要使 Azure 信息保护扫描程序使用新设置，必须重启扫描程序服务。 此外，在默认情况下，扫描程序将不再保护 PDF 文档。 如果希望在**EnablePDFv2Protection**设置为 False 时由扫描程序保护 PDF 文档 **，** 则必须[编辑注册表](../deploy-aip-scanner-configure-install-classic.md#change-which-file-types-to-protect)。
 
 有关新 PDF 加密的详细信息，请参阅博客文章[使用 Microsoft 信息保护进行 PDF 加密的新支持](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)。
 
@@ -597,7 +598,9 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 1. 将 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) 用于 .ppdf 文件。 例如：
     
-        Get-AIPFileStatus -Path \\Finance\Projectx\sales.ppdf
+    ```ps
+    Get-AIPFileStatus -Path \\Finance\Projectx\sales.ppdf
+    ```
 
 2. 从输出中记录以下参数值：
     
@@ -608,12 +611,16 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
    - RMSTemplateId 的值。**** 如果此值为“受限访问”，则用户已使用自定义权限保护该文件，而非为此标签配置的保护设置。**** 若继续，该标签的保护设置将覆盖这些自定义权限。 决定是继续，还是要求用户（RMSIssuer 的显示值）删除此标签并将此标签和初始自定义权限一起重新应用****。
 
 3. 使用 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 和 *RemoveLabel* 参数删除此标签。 如果使用的是包含“用户必须提供理由以设置较低分类标签、删除标签或删除保护”的[策略设置](../configure-policy-settings.md)，还必须使用原因指定“理由”参数。****** 例如： 
-    
-        Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
+
+    ```ps    
+    Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
+    ```
 
 4. 为在步骤 1 中标识的标签指定值，重新应用初始标签。 例如：
     
-        Set-AIPFileLabel \\Finance\Projectx\sales.pdf -LabelId d9f23ae3-1234-1234-1234-f515f824c57b
+    ```ps    
+    Set-AIPFileLabel \\Finance\Projectx\sales.pdf -LabelId d9f23ae3-1234-1234-1234-f515f824c57b
+    ```
 
 文件保留了 .pdf 文件扩展名，但它的分类与之前相同，并且通过使用 PDF 加密 ISO 标准对它进行保护。
 
@@ -682,7 +689,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 高级客户端设置：
 
     
-|名称|Value|
+|名称|值|
 |---------------------|---------|
 |LabelbyCustomProperty|1ace2cc3-14bc-4142-9125-bf946a70542c,"Secure Islands label is Confidential",Classification,Confidential|
 
@@ -699,7 +706,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 高级客户端设置：
 
     
-|名称|Value|
+|名称|值|
 |---------------------|---------|
 |LabelbyCustomProperty|3e9df74d-3168-48af-8b11-037e3021813f,"Secure Islands label is Sensitive",Classification,Sensitive|
 
@@ -717,7 +724,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 高级客户端设置：
 
     
-|名称|Value|
+|名称|值|
 |---------------------|---------|
 |LabelbyCustomProperty|2beb8fe7-8293-444c-9768-7fdc6f75014d,"Secure Islands label contains Internal",Classification,.\*Internal.\*|
 
@@ -736,7 +743,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 键：RemoveExternalContentMarkingInApp****
 
-- 值： \< **Office 应用程序类型 WXP**> 
+- 值：\<**Office application types WXP**> 
 
 示例：
 
@@ -769,7 +776,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 键：ExternalContentMarkingToRemove****
 
-- 值： \< **要匹配的字符串，定义为正则表达式**> 
+- 值：\<**string to match, defined as regular expression**> 
 
 #### <a name="multiline-headers-or-footers"></a>多行页眉或页脚
 
@@ -807,7 +814,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 键：PowerPointShapeNameToRemove****
 
-- 值： \< **PowerPoint 形状名称**> 
+- 值：\<**PowerPoint shape name**> 
 
 若要删除多个 PowerPoint 形状，则有多少要删除的形状就创建多少个 PowerPointShapeNameToRemove**** 键。 对于每个条目，指定要删除的形状的名称。
 
@@ -834,7 +841,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 键 1：SyncPropertyName****
 
-- 键1值： \< **属性名称**> 
+- 键1值：\<**property name**> 
 
 - 键 2：SyncPropertyState****
 
@@ -864,9 +871,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 例如：
 
-- 使用此设置，可以看到用户访问了名为 "**机密**" 的
+- 使用此设置，可以看到用户访问了标记为 "**机密 \ 销售**" Financial.docx。
 
-- 如果没有此设置，您可以看到该财经包含6个信用卡号。
+- 如果没有此设置，可以看到 Financial.docx 包含6个信用卡号。
     
     - 如果还启用[了对敏感数据的更深入分析](../reports-aip.md#content-matches-for-deeper-analysis)，还可以查看这些信用卡号。
 
@@ -893,7 +900,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 密钥： **ScannerConcurrencyLevel**
 
-- 值： ** \< 并发线程数>**
+- 负值**\<number of concurrent threads>**
 
 ## <a name="disable-the-low-integrity-level-for-the-scanner"></a>禁用扫描程序的低完整性级别
 
@@ -901,7 +908,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 默认情况下，Azure 信息保护扫描程序在运行时的完整性级别低。 此设置可以提供更强大的安全隔离，但会牺牲性能。 如果你使用具有特权的帐户（例如本地管理员帐户）运行扫描程序，则低完整性级别是适合的，因为此设置有助于保护运行扫描程序的计算机。
 
-但是，当运行扫描程序的服务帐户只在[扫描程序先决条件](../deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)中记录了权限时，低完整性级别不是必需的且不推荐使用，因为它会对性能产生负面影响。 
+但是，当运行扫描程序的服务帐户仅有在 "[扫描程序部署先决条件](../deploy-aip-scanner-prereqs.md)" 中记录的权限时，不需要较低的完整性级别，不建议这样做，因为这会对性能产生负面影响。 
 
 有关 Windows 完整性级别的详细信息，请参阅 [Windows 完整性机制是什么？](https://msdn.microsoft.com/library/bb625957.aspx)
 
@@ -921,7 +928,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 密钥： **ContentExtractionTimeout**
 
-- 值： ** \< hh： min： sec>**
+- 负值**\<hh:min:sec>**
 
 文件类型可影响扫描文件所花费的时间。 扫描时间示例：
 
@@ -945,7 +952,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 密钥： **FileProcessingTimeout**
 
-- 值： ** \< hh： min： sec>**
+- 负值**\<hh:min:sec>**
 
 ## <a name="change-the-local-logging-level"></a>更改本地日志记录级别
 
@@ -957,7 +964,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - 密钥： **LogLevel**
 
-- 值： ** \< 日志记录级别>**
+- 负值**\<logging level>**
 
 将日志记录级别设置为以下值之一：
 

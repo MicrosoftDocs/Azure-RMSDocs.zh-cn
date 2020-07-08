@@ -12,12 +12,12 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7f9dd0059b0fc3e24d709d7a0237b93a49ee92c1
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: 880e3b8acd3d17bcb3aec424e3aef96c2aeadbaf
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746396"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048300"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>为 Azure 信息保护准备用户和组
 
@@ -129,20 +129,25 @@ Azure 信息保护使用用户和组的方式有三种：
 
 例如，在 PowerShell 会话中使用 Azure Active Directory 的 V1 PowerShell 模块 [MSOnline](/powershell/module/msonline/?view=azureadps-1.0)，首先连接到服务并提供全局管理员凭据：
 
-    Connect-MsolService
-
+```ps
+Connect-MsolService
+```
 
 注意：如果此命令不起作用，可以运行 `Install-Module MSOnline` 安装 MSOnline 模块。
 
 接下来，配置 PowerShell 会话，以便它不会截断该值：
 
-    $Formatenumerationlimit =-1
+```ps
+$Formatenumerationlimit =-1
+```
 
 ### <a name="confirm-user-accounts-are-ready-for-azure-information-protection"></a>确认已准备好用户帐户用于 Azure 信息保护
 
 若要确认用户帐户，请运行以下命令：
 
-    Get-Msoluser | select DisplayName, UserPrincipalName, ProxyAddresses
+```ps
+Get-Msoluser | select DisplayName, UserPrincipalName, ProxyAddresses
+```
 
 首先查看并确保显示要用于 Azure 信息保护的用户。
 
@@ -183,7 +188,9 @@ Azure 信息保护使用用户和组的方式有三种：
 
 若要确认组帐户，请使用以下命令：
 
-    Get-MsolGroup | select DisplayName, ProxyAddresses
+```ps
+Get-MsolGroup | select DisplayName, ProxyAddresses
+```
 
 确保显示要用于 Azure 信息保护的组。 对于显示的组，可以使用 **ProxyAddresses** 列中的电子邮件地址授权组成员使用 Azure Rights Management 服务。
 
@@ -191,7 +198,9 @@ Azure 信息保护使用用户和组的方式有三种：
 
 对于使用安全组的两个 Azure Rights Management 服务配置方案，可以使用以下 PowerShell 命令查找对象 ID 并显示可用于标识这些组的名称。 还可以使用 Azure 门户查找这些组，复制对象 ID 的值并显示名称：
 
-    Get-MsolGroup | where {$_.GroupType -eq "Security"}
+```ps
+Get-MsolGroup | where {$_.GroupType -eq "Security"}
+```
 
 ## <a name="considerations-for-azure-information-protection-if-email-addresses-change"></a>电子邮件地址更改情况下的 Azure 信息保护注意事项
 

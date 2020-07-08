@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 6af0a1208fc0f647470e57b10d7b73e64fb98573
-ms.sourcegitcommit: 9277d126f67179264c54fe2bce8463fef9e0b422
+ms.openlocfilehash: ec5ef3ff70aaa13035ccc588fdd4d45219623b7b
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84802822"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046566"
 ---
 # <a name="azure-information-protection-unified-labeling-user-guide"></a>Azure 信息保护统一标签用户指南 
 
@@ -25,7 +25,7 @@ ms.locfileid: "84802822"
 >
 > **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)*
+> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 适用于 Windows 的 Azure 信息保护统一标签客户端可帮助你保护重要文档和电子邮件，使其免受不应看到的用户的保护，即使你的电子邮件已转发或你的文档保存到其他位置也是如此。 还可通过此客户端打开他人已通过使用 Azure 信息保护中的 Rights Management 保护技术保护的文件。
 

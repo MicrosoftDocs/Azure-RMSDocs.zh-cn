@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 24797e570dada67ca304667b2e4d64147aa17580
-ms.sourcegitcommit: fa16364879823b86b4e56ac18a1fc8de5a5dae57
+ms.openlocfilehash: bcb3006bdd7575385d37be066b627ef49f770c70
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84249838"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86047705"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -91,7 +91,7 @@ ms.locfileid: "84249838"
 
 - **Windows server 2012 R2**和**windows server 2012**
 
-[这两个客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)允许用户对其文档和电子邮件进行分类和标记。
+[这两个客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)允许用户对其文档和电子邮件进行分类和标记。
 
 有关更早版本的 Windows 中的支持的详细信息，请联系 Microsoft 帐户或支持代表。
 
@@ -104,7 +104,7 @@ ms.locfileid: "84249838"
 
 例如，对于 Citrix 解决方案，你可能需要禁用适用于 Office、Azure 信息保护统一标签客户端或 Azure 信息保护客户端的[Citrix 应用程序编程接口（API）挂钩](https://support.citrix.com/article/CTX107825)。 
 
-这些应用程序分别使用以下文件： **winword** **、excel.exe、xsd.exe** **、** **powerpnt**、 **policy.msip**、policy.msip。 **. .exe. .exe**
+这些应用程序分别使用以下文件： **winword.exe**、 **excel.exe**、 **outlook.exe**、 **powerpnt.exe**、 **msip.app.exe**、 **msip.viewer.exe**
 
 ### <a name="server-support"></a>服务器支持
 
@@ -130,13 +130,13 @@ Azure 信息保护客户端可以使用 Microsoft **Word**、 **Excel**、 **Pow
 
     仅当为用户分配了 Azure Rights Management 许可证（也称为 Azure 信息保护 for Office 365）时，才支持此版本。
 
-- **Office 365 专业增强版**
+- **Office 365 ProPlus**
 
-- **Office 专业增强版 2019**
+- **Office Professional Plus 2019**
 
 - **Office Professional Plus 2016**
 
-- **Office Professional Plus 2013 Service Pack 1**
+- **带有 Service Pack 1 的 Office Professional Plus 2013**
 
 - **带有 Service Pack 2 的 Office Professional Plus 2010**
 
@@ -166,10 +166,12 @@ Azure 信息保护具有以下附加要求：
 - **TLS 客户端到服务连接**。 请勿终止任何 TLS 客户端到服务连接（例如，为了执行数据包级别检查）到**Aadrm.com** URL。 那样做会打破 RMS 客户端用于 Microsoft 托管 CA 的证书固定，导致无法确保其与 Azure Rights Management 服务的通信安全。
      
     若要确定客户端连接在到达 Azure Rights Management 服务之前是否终止，请使用以下 PowerShell 命令：
-    
-        $request = [System.Net.HttpWebRequest]::Create("https://admin.na.aadrm.com/admin/admin.svc")
-        $request.GetResponse()
-        $request.ServicePoint.Certificate.Issuer
+
+    ```ps
+    $request = [System.Net.HttpWebRequest]::Create("https://admin.na.aadrm.com/admin/admin.svc")
+    $request.GetResponse()
+    $request.ServicePoint.Certificate.Issuer
+    ```
 
     结果应显示发证 CA 来自 Microsoft CA，例如： `CN=Microsoft Secure Server CA 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` 。 
     

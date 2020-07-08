@@ -12,21 +12,21 @@ ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.subservice: v1client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f844fa7220a4d608e6757099992c967052367d00
-ms.sourcegitcommit: 77cdbe5d289aec591bb11d966296a7fe3851ee79
+ms.openlocfilehash: 32880671c46efb9cb82f13235f98ac42566b65fc
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "84238770"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048895"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 安装 Azure 信息保护客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
@@ -123,7 +123,7 @@ AzureInformationProtection 模块的当前版本具有以下限制：
 
 若要自动获取值并运行 Set-RMSServerAuthentication：
 
-````
+```ps
 # Make sure that you have the AIPService and MSOnline modules installed
 
 $ServicePrincipalName="<new service principal name>"
@@ -138,7 +138,7 @@ New-MsolServicePrincipal -DisplayName $ServicePrincipalName
 $symmetricKey="<value from the display of the New-MsolServicePrincipal command>"
 $appPrincipalID=(Get-MsolServicePrincipal | Where { $_.DisplayName -eq $ServicePrincipalName }).AppPrincipalId
 Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -BposTenantId $bposTenantID
-````
+```
 
 下一部分介绍如何手动获取并指定这些值，其中包含有关每个操作的详细信息。
 
@@ -151,30 +151,35 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 2. 通过 "以**管理员身份运行**" 选项启动 Windows PowerShell。
 
 3. 使用 `Connect-AipService` cmdlet 连接到 Azure 权限管理服务：
-    
-        Connect-AipService
-    
+   ```ps 
+    Connect-AipService
+    ```
+
     系统提示时，输入你的 Azure 信息保护租户管理员凭据。 通常使用作为 Azure Active Directory 或 Office 365 的全局管理员的帐户。
     
 4. 运行 `Get-AipServiceConfiguration` 并创建 BPOSId 值的副本。
     
     AipServiceConfiguration 的输出示例：
-    
-            BPOSId                                   : 23976bc6-dcd4-4173-9d96-dad1f48efd42
+
+    ```ps    
+    BPOSId                                   : 23976bc6-dcd4-4173-9d96-dad1f48efd42
         
-            RightsManagement ServiceId               : 1a302373-f233-440600909-4cdf305e2e76
+    RightsManagement ServiceId               : 1a302373-f233-440600909-4cdf305e2e76
         
-            LicensingIntranetDistributionPointUrl    : https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/licensing
+    LicensingIntranetDistributionPointUrl    : https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/licensing
         
-            LicensingExtranetDistributionPointUrl    : https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/licensing
+    LicensingExtranetDistributionPointUrl    : https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/licensing
         
-            CertificationIntranetDistributionPointUrl: https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/certification
+    CertificationIntranetDistributionPointUrl: https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/certification
         
-            CertificationExtranetDistributionPointUrl: https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/certification
+    CertificationExtranetDistributionPointUrl: https://1s302373-f233-4406-9090-4cdf305e2e76.rms.na.aadrm.com/_wmcs/certification
+    ```
 
 5. 从服务断开连接：
-    
-        Disconnect-AipService
+
+    ```
+    Disconnect-AipService
+    ```
 
 ##### <a name="to-get-the-appprincipalid-and-symmetric-key"></a>获取 AppPrincipalId 和对称密钥
 
@@ -189,36 +194,42 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 3. 使用 **Connect-MsolService** cmdlet 连接到 Azure AD：
 
-        Connect-MsolService
+    ```ps
+    Connect-MsolService
+    ```
 
     系统提示时，输入 Azure AD 租户管理员凭据（通常使用作为 Azure Active Directory 或 Office 365 的全局管理员的帐户）。
 
 4. 运行 New-MsolServicePrincipal cmdlet 以创建新的服务主体：
 
-        New-MsolServicePrincipal
+    ```ps
+    New-MsolServicePrincipal
+    ```
 
     出现提示时，输入为此服务主体选择的显示名称，这样有助于确定之后将它用作连接到 Azure Rights Management 服务的帐户，以便可以保护和取消保护文件。
 
     New-MsolServicePrincipal 的输出示例：
 
-        Supply values for the following parameters:
+    ```ps
+    Supply values for the following parameters:
 
-        DisplayName: AzureRMSProtectionServicePrincipal
-        The following symmetric key was created as one was not supplied
-        zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=
+    DisplayName: AzureRMSProtectionServicePrincipal
+    The following symmetric key was created as one was not supplied
+    zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=
 
-        Display Name: AzureRMSProtectionServicePrincipal
-        ServicePrincipalNames: (b5e3f7g1-b5c2-4c96-a594-a0807f65bba4)
-        ObjectId: 23720996-593c-4122-bfc7-1abb5a0b5109
-        AppPrincialId: b5e3f76a-b5c2-4c96-a594-a0807f65bba4
-        TrustedForDelegation: False
-        AccountEnabled: True
-        Addresses: ()
-        KeyType: Symmetric
-        KeyId: 8ef61651-ca11-48ea-a350-25834a1ba17c
-        StartDate: 3/7/2014 4:43:59 AM
-        EndDate: 3/7/2014 4:43:59 AM
-        Usage: Verify
+    Display Name: AzureRMSProtectionServicePrincipal
+    ServicePrincipalNames: (b5e3f7g1-b5c2-4c96-a594-a0807f65bba4)
+    ObjectId: 23720996-593c-4122-bfc7-1abb5a0b5109
+    AppPrincialId: b5e3f76a-b5c2-4c96-a594-a0807f65bba4
+    TrustedForDelegation: False
+    AccountEnabled: True
+    Addresses: ()
+    KeyType: Symmetric
+    KeyId: 8ef61651-ca11-48ea-a350-25834a1ba17c
+    StartDate: 3/7/2014 4:43:59 AM
+    EndDate: 3/7/2014 4:43:59 AM
+    Usage: Verify
+    ```
 
 5. 在此输出中，记下对称密钥和 AppPrincialId。
 
@@ -234,7 +245,9 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 我们的示例命令将如下所示：
 
-    Set-RMSServerAuthentication -Key zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=-AppPrincipalId b5e3f76a-b5c2-4c96-a594-a0807f65bba4-BposTenantId 23976bc6-dcd4-4173-9d96-dad1f48efd42
+```ps
+Set-RMSServerAuthentication -Key zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=-AppPrincipalId b5e3f76a-b5c2-4c96-a594-a0807f65bba4-BposTenantId 23976bc6-dcd4-4173-9d96-dad1f48efd42
+```
 
 如上一命令所示，可以使用单个命令提供多个值，将在以非交互方式运行的脚本中执行此操作。 但是出于测试目的，可以仅键入 Set-RMSServerAuthentication，并根据提示逐个提供值。 命令完成后，客户端现以“服务器模式”运行，这适用于脚本和 Windows Server 文件分类基础结构等非交互式使用。
 
@@ -279,75 +292,96 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 首先，如果需要使用服务主体帐户而不是自己的帐户对 Azure Rights Management 服务进行身份验证，请在 PowerShell 会话中键入：
 
-    Set-RMSServerAuthentication
+```ps
+Set-RMSServerAuthentication
+```
 
 出现提示时，输入[先决条件 3：在无用户交互的情况下保护或取消保护文件](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction)中所述的三个标识符。
 
 另外，还必须将 Rights Management 模板下载到计算机，并确定要使用的模板及其相应的 ID 号，然后才可以保护文件。 然后可从输出复制模板 ID：
 
-    Get-RMSTemplate
-
+```ps
+Get-RMSTemplate
+```
 输出可能与以下内容类似：
 
-    TemplateId        : {82bf3474-6efe-4fa1-8827-d1bd93339119}
-    CultureInfo       : en-US
-    Description       : This content is proprietary information intended for internal users only. This content cannot be modified.
-    Name              : Contoso, Ltd - Confidential View Only
-    IssuerDisplayName : Contoso, Ltd
-    FromTemplate      : True
+```ps
+TemplateId        : {82bf3474-6efe-4fa1-8827-d1bd93339119}
+CultureInfo       : en-US
+Description       : This content is proprietary information intended for internal users only. This content cannot be modified.
+Name              : Contoso, Ltd - Confidential View Only
+IssuerDisplayName : Contoso, Ltd
+FromTemplate      : True
 
-    TemplateId        : {e6ee2481-26b9-45e5-b34a-f744eacd53b0}
-    CultureInfo       : en-US
-    Description       : This content is proprietary information intended for internal users only. This content can be modified but cannot be copied and printed.
-    Name              : Contoso, Ltd - Confidential
-    IssuerDisplayName : Contoso, Ltd
-    FromTemplate      : True
-    FromTemplate      : True
+TemplateId        : {e6ee2481-26b9-45e5-b34a-f744eacd53b0}
+CultureInfo       : en-US
+Description       : This content is proprietary information intended for internal users only. This content can be modified but cannot be copied and printed.
+Name              : Contoso, Ltd - Confidential
+IssuerDisplayName : Contoso, Ltd
+FromTemplate      : True
+FromTemplate      : True
+```
 
 请注意，如果未运行 Set-RMSServerAuthentication 命令，将使用自己的用户帐户向 Azure Rights Management 服务进行身份验证。 如果是已加入域的计算机，将始终自动使用当前凭据。 如果是工作组计算机，将看到登录 Azure 的提示，这些凭据会进行缓存，以供用于后续命令。 在这种情况下，如果以后需要以其他用户身份登录，请使用 `Clear-RMSAuthentication` cmdlet。
 
 知道模板 ID 后，可以用它和 `Protect-RMSFile` cmdlet 保护单个文件或文件夹中的所有文件。 例如，如果想要通过使用“Contoso, Ltd - Confidential”模板仅保护单个文件并覆盖原始文件：
 
-    Protect-RMSFile -File C:\Test.docx -InPlace -TemplateId e6ee2481-26b9-45e5-b34a-f744eacd53b0
+```ps
+Protect-RMSFile -File C:\Test.docx -InPlace -TemplateId e6ee2481-26b9-45e5-b34a-f744eacd53b0
+```
 
 输出可能与以下内容类似：
 
-    InputFile             EncryptedFile
-    ---------             -------------
-    C:\Test.docx          C:\Test.docx
+```ps
+InputFile             EncryptedFile
+---------             -------------
+C:\Test.docx          C:\Test.docx
+```
 
 若要保护文件夹中的所有文件，请使用带有驱动器号和路径或 UNC 路径的 **-Folder** 参数。 例如：
 
-    Protect-RMSFile -Folder \Server1\Documents -InPlace -TemplateId e6ee2481-26b9-45e5-b34a-f744eacd53b0
+```ps
+Protect-RMSFile -Folder \Server1\Documents -InPlace -TemplateId e6ee2481-26b9-45e5-b34a-f744eacd53b0
+```
 
 输出可能与以下内容类似：
 
-    InputFile                          EncryptedFile
-    ---------                          -------------
-    \Server1\Documents\Test1.docx     \Server1\Documents\Test1.docx
-    \Server1\Documents\Test2.docx     \Server1\Documents\Test2.docx
-    \Server1\Documents\Test3.docx     \Server1\Documents\Test3.docx
-    \Server1\Documents\Test4.docx     \Server1\Documents\Test4.docx
+```ps
+InputFile                          EncryptedFile
+---------                          -------------
+\Server1\Documents\Test1.docx     \Server1\Documents\Test1.docx
+\Server1\Documents\Test2.docx     \Server1\Documents\Test2.docx
+\Server1\Documents\Test3.docx     \Server1\Documents\Test3.docx
+\Server1\Documents\Test4.docx     \Server1\Documents\Test4.docx
+```
 
 如果应用保护后文件扩展名不更改，则以后可以始终使用 `Get-RMSFileStatus` cmdlet 来检查文件是否受保护。 例如：
 
-    Get-RMSFileStatus -File \Server1\Documents\Test1.docx
+```ps
+Get-RMSFileStatus -File \Server1\Documents\Test1.docx
+```
 
 输出可能与以下内容类似：
 
-    FileName                              Status
-    --------                              ------
-    \Server1\Documents\Test1.docx         Protected
+```ps
+FileName                              Status
+--------                              ------
+\Server1\Documents\Test1.docx         Protected
+```
 
 若要取消保护文件，则必须从文件受保护起具有“所有者”或“提取”权限。 或者，必须以超级用户身份运行 cmdlet。 然后使用 Unprotect cmdlet。 例如：
 
-    Unprotect-RMSFile C:\test.docx -InPlace
+```ps
+Unprotect-RMSFile C:\test.docx -InPlace
+```
 
 输出可能与以下内容类似：
 
-    InputFile                             DecryptedFile
-    ---------                             -------------
-    C:\Test.docx                          C:\Test.docx
+```ps
+InputFile                             DecryptedFile
+---------                             -------------
+C:\Test.docx                          C:\Test.docx
+```
 
 请注意，如果更改了 Rights Management 模板，则必须使用 `Get-RMSTemplate -force` 再次下载这些模板。 
 
@@ -388,82 +422,104 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 首先，如果有多个 AD RMS 部署，需要获取 AD RMS 服务器名称。为此，请运行 Get-RMSServer cmdlet，显示可用服务器列表：
 
-    Get-RMSServer
-
+```ps
+Get-RMSServer
+```
 输出可能与以下内容类似：
 
-    Number of RMS Servers that can provide templates: 2 
-    ConnectionInfo             DisplayName          AllowFromScratch
-    --------------             -------------        ----------------
-    Microsoft.InformationAnd…  RmsContoso                       True
-    Microsoft.InformationAnd…  RmsFabrikam                      True
+```ps
+Number of RMS Servers that can provide templates: 2 
+ConnectionInfo             DisplayName          AllowFromScratch
+--------------             -------------        ----------------
+Microsoft.InformationAnd…  RmsContoso                       True
+Microsoft.InformationAnd…  RmsFabrikam                      True
+```
 
 在可以保护文件之前，需要获取 RMS 模板的列表，以确定要使用的模板及其相应的 ID 号。 仅当有多个 AD RMS 部署时，才需要同时指定 RMS 服务器。 
 
 然后可从输出复制模板 ID：
 
-    Get-RMSTemplate -RMSServer RmsContoso
+```ps
+Get-RMSTemplate -RMSServer RmsContoso
+```
 
 输出可能与以下内容类似：
 
-    TemplateId        : {82bf3474-6efe-4fa1-8827-d1bd93339119}
-    CultureInfo       : en-US
-    Description       : This content is proprietary information intended for internal users only. This content cannot be modified.
-    Name              : Contoso, Ltd - Confidential View Only
-    IssuerDisplayName : Contoso, Ltd
-    FromTemplate      : True
+```ps
+TemplateId        : {82bf3474-6efe-4fa1-8827-d1bd93339119}
+CultureInfo       : en-US
+Description       : This content is proprietary information intended for internal users only. This content cannot be modified.
+Name              : Contoso, Ltd - Confidential View Only
+IssuerDisplayName : Contoso, Ltd
+FromTemplate      : True
 
-
-    TemplateId        : {e6ee2481-26b9-45e5-b34a-f744eacd53b0}
-    CultureInfo       : en-US
-    Description       : This content is proprietary information intended for internal users only. This content can be modified but cannot be copied and printed.
-    Name              : Contoso, Ltd - Confidential
-    IssuerDisplayName : Contoso, Ltd
-    FromTemplate      : True
-    FromTemplate      : True
+TemplateId        : {e6ee2481-26b9-45e5-b34a-f744eacd53b0}
+CultureInfo       : en-US
+Description       : This content is proprietary information intended for internal users only. This content can be modified but cannot be copied and printed.
+Name              : Contoso, Ltd - Confidential
+IssuerDisplayName : Contoso, Ltd
+FromTemplate      : True
+FromTemplate      : True
+```
 
 知道模板 ID 后，可以用它和 Protect-RMSFile cmdlet 保护单个文件或文件夹中的所有文件。 例如，如果想要通过使用“Contoso, Ltd - Confidential”模板仅保护单个文件并替换原始文件：
 
-    Protect-RMSFile -File C:\Test.docx -InPlace -TemplateId e6ee2481-26b9-45e5-b34a-f744eacd53b0
+```ps
+Protect-RMSFile -File C:\Test.docx -InPlace -TemplateId e6ee2481-26b9-45e5-b34a-f744eacd53b0
+```
 
 输出可能与以下内容类似：
 
-    InputFile             EncryptedFile
-    ---------             -------------
-    C:\Test.docx          C:\Test.docx   
+```ps
+InputFile             EncryptedFile
+---------             -------------
+C:\Test.docx          C:\Test.docx   
+```
 
 若要保护文件夹中的所有文件，请使用带有驱动器号和路径或 UNC 路径的 -Folder 参数。 例如：
 
-    Protect-RMSFile -Folder \\Server1\Documents -InPlace -TemplateId e6ee2481-26b9-45e5-b34a-f744eacd53b0
+```ps
+Protect-RMSFile -Folder \\Server1\Documents -InPlace -TemplateId e6ee2481-26b9-45e5-b34a-f744eacd53b0
+```
 
 输出可能与以下内容类似：
 
-    InputFile                          EncryptedFile
-    ---------                          -------------
-    \\Server1\Documents\Test1.docx     \\Server1\Documents\Test1.docx   
-    \\Server1\Documents\Test2.docx     \\Server1\Documents\Test2.docx   
-    \\Server1\Documents\Test3.docx     \\Server1\Documents\Test3.docx   
-    \\Server1\Documents\Test4.docx     \\Server1\Documents\Test4.docx   
+```ps
+InputFile                          EncryptedFile
+---------                          -------------
+\\Server1\Documents\Test1.docx     \\Server1\Documents\Test1.docx   
+\\Server1\Documents\Test2.docx     \\Server1\Documents\Test2.docx   
+\\Server1\Documents\Test3.docx     \\Server1\Documents\Test3.docx   
+\\Server1\Documents\Test4.docx     \\Server1\Documents\Test4.docx   
+```
 
 如果应用保护后文件扩展名不更改，则以后可以始终使用 Get-RMSFileStatus cmdlet 来检查文件是否受保护。 例如： 
 
-    Get-RMSFileStatus -File \\Server1\Documents\Test1.docx
+```ps
+Get-RMSFileStatus -File \\Server1\Documents\Test1.docx
+```
 
 输出可能与以下内容类似：
 
-    FileName                              Status
-    --------                              ------
-    \\Server1\Documents\Test1.docx        Protected
+```ps
+FileName                              Status
+--------                              ------
+\\Server1\Documents\Test1.docx        Protected
+```
 
 要取消保护文件，必须从文件受保护起具有“所有者”或“提取使用情况”权限，或者是 AD RMS 的超级用户。 然后使用 Unprotect cmdlet。 例如：
 
-    Unprotect-RMSFile C:\test.docx -InPlace
+```ps
+Unprotect-RMSFile C:\test.docx -InPlace
+```
 
 输出可能与以下内容类似：
 
-    InputFile                             DecryptedFile
-    ---------                             -------------
-    C:\Test.docx                          C:\Test.docx
+```ps
+InputFile                             DecryptedFile
+---------                             -------------
+C:\Test.docx                          C:\Test.docx
+```
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>如何以非交互方式为 Azure 信息保护标记文件
 
@@ -525,15 +581,15 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 11. 在 " **AIPOnBehalfOf-公开 API** " 窗格上， **Set**选择 "设置**应用程序 id uri** " 选项，然后在 "**应用程序 id uri** " 值中，将**API**更改为**http**。 此字符串类似于以下示例： `http://d244e75e-870b-4491-b70d-65534953099e` 。 
     
-    选择“保存” 。
+    选择“保存”。
 
 12. 返回 " **AIPOnBehalfOf-公开 API** " 窗格，选择 " **+ 添加作用域**"。
 
 13. 在 "**添加作用域**" 窗格中，指定以下内容，并使用建议的字符串作为示例，然后选择 "**添加作用域**"：
-    - **作用域名称**：`user-impersonation`
+    - **范围名称**：`user-impersonation`
     - **谁可以获得许可？**：**管理员和用户**
     - **管理员许可显示名称**：`Access Azure Information Protection scanner`
-    - **管理员同意说明**：`Allow the application to access the scanner for the signed-in user`
+    - **管理员许可说明**：`Allow the application to access the scanner for the signed-in user`
     - **用户同意显示名称**：`Access Azure Information Protection scanner`
     - **用户同意说明**：`Allow the application to access the scanner for the signed-in user`
     - **状态**：**已启用**（默认值）
@@ -576,7 +632,9 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 现在，你已完成两个应用的配置，并且具有使用参数*WebAppId*、 *WebAppKey*和*NativeAppId*运行[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication)时所需的值。 在我们的示例中：
 
-`Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "+LBkMvddz?WrlNCK5v0e6_=meM59sSAn" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f"`
+```ps
+Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "+LBkMvddz?WrlNCK5v0e6_=meM59sSAn" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f"
+```
 
 请在将以非交互模式对文档进行标记和保护的帐户的上下文中运行此命令。 例如，你的 PowerShell 脚本的用户帐户或用于运行 Azure 信息保护扫描程序的服务帐户。  
 
@@ -604,11 +662,17 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 2. 将以下命令复制并粘贴到此脚本中：
 
-         Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application> -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
+    ```ps
+    Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application> -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
+    ```
 
 3. 使用上一部分中的说明修改此命令：为 **WebAppId**、**WebAppkey** 和 **NativeAppId** 参数指定你自己的值。 此时，对于你稍后将指定的 **Token** 参数，你还没有准备好其值。 
 
-    例如： `Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f -Token <token value>`
+    例如： 
+
+    ```ps
+    Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f -Token <token value>
+    ```
 
 #### <a name="step-2-run-set-aipauthentication-to-get-an-access-token-and-copy-it-to-the-clipboard"></a>步骤 2：运行 Set-AIPAuthentication 来获取一个访问令牌并将其复制到剪贴板
 
@@ -616,9 +680,15 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 2. 使用与你在脚本中指定的值相同的值运行以下命令：
 
-        (Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application >).token | clip
+    ```ps
+    (Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application >).token | clip
+    ```
 
-    例如： `(Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f").token | clip`
+    例如： 
+
+    ```ps
+    (Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f").token | clip`
+    ```
 
 #### <a name="step-3-modify-the-powershell-script-to-supply-the-token"></a>步骤 3：修改 PowerShell 脚本以提供令牌。
 
@@ -628,7 +698,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
     有关为 Windows PowerShell 脚本签名的详细信息，请参阅 PowerShell 文档库中的 [about_Signing](/powershell/module/microsoft.powershell.core/about/about_signing)。
 
-3. 将此 PowerShell 脚本复制到将对文件进行标记和保护的计算机上，并删除计算机上的原始脚本。 例如，将 PowerShell 脚本复制为 Windows Server 计算机上的 C:\Scripts\Aipauthentication.ps1。
+3. 将此 PowerShell 脚本复制到将对文件进行标记和保护的计算机上，并删除计算机上的原始脚本。 例如，你将 PowerShell 脚本复制到 Windows Server 计算机上的**C:\Scripts\Aipauthentication.ps1** 。
 
 #### <a name="step-4-create-a-task-that-runs-the-powershell-script"></a>步骤 4：创建一个运行 PowerShell 脚本的任务
 
@@ -646,16 +716,18 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 #### <a name="step-5-confirm-that-the-token-is-saved-and-delete-the-powershell-script"></a>步骤5：确认标记已保存并删除 PowerShell 脚本
 
-1. 确认令牌现在存储在服务帐户配置文件的 %localappdata%\Microsoft\MSIP 文件夹中。 此值由服务帐户提供保护。
+1. 确认该令牌现已存储在服务帐户配置文件的 **%localappdata%\Microsoft\MSIP**文件夹中。 此值由服务帐户提供保护。
 
-2. 删除包含令牌值的 PowerShell 脚本（例如 Aipauthentication.ps1）。
+2. 删除包含令牌值（例如**Aipauthentication.ps1）** 的 PowerShell 脚本。
 
     还可以删除任务。 如果令牌过期，你必须重复此过程，为应对这种情况，请保留已配置的任务以使其在你复制包含新令牌值的新 PowerShell 脚本时可随时重新运行，这可以提供更大的便利。
 
 ## <a name="next-steps"></a>后续步骤
 若要在 PowerShell 会话中获取 cmdlet 帮助，请键入“`Get-Help <cmdlet name> cmdlet`”，并使用联机参数读取最新信息。 例如： 
 
-    Get-Help Get-RMSTemplate -online
+```ps
+Get-Help Get-RMSTemplate -online
+```
 
 有关支持 Azure 信息保护客户端可能需要的其他信息，请参阅以下内容：
 
@@ -666,5 +738,3 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 - [文档跟踪](client-admin-guide-document-tracking.md)
 
 - [支持的文件类型](client-admin-guide-file-types.md)
-
-

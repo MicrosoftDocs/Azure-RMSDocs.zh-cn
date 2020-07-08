@@ -13,21 +13,21 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 797fcbbffd91882b2400fc1f5350d2782420a762
-ms.sourcegitcommit: 47a6def47b8a121eb5aa8071863a765bfc31fc9d
+ms.openlocfilehash: 6af7c9af0e954c6eb2cb2e4cb29a796d4cdfdb99
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "83825413"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048028"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理用于 Azure 信息保护的模板
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 >
-> *适用于[Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 保护模板（也称为 Rights Management 模板）是 Azure 信息保护的一组管理员定义的保护设置。 这些设置包括为授权用户选择的[使用权限](configure-usage-rights.md)，以及对到期和离线访问的访问控制。 这些模板已与 Azure 信息保护策略集成： 
 
@@ -66,9 +66,9 @@ ms.locfileid: "83825413"
 
 如果在一段时间后获取了订阅，则可以创建具有以下名称的默认模板：
 
-- **\<组织名称>-机密**
+- **\<organization name>-机密**
 
-- **\<组织名称>-机密仅供查看** 
+- **\<organization name>-仅限机密查看** 
 
 可以在使用 Azure 门户时重命名（和重新配置）这些默认模板。
 
@@ -105,7 +105,7 @@ ms.locfileid: "83825413"
 
 1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到 " **Azure 信息保护-标签**" 窗格。
     
-    例如，在 "资源"、"服务" 和 "文档" 的 "搜索" 框中，开始键入**信息**并选择 " **Azure 信息保护**"。
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”**** 并选择“Azure 信息保护”****。
 
 2. 从 "**分类**  >  **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格中，展开 "**保护模板**"，然后找到要配置的模板。
     

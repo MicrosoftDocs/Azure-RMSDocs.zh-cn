@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 4168a75bebb9fb34ce4ba36c0d10b4b78c67dac4
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: 24bc2db20b7dc469a8c6fb3d39e2f399be12c0c6
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83747125"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048555"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 
@@ -41,7 +41,7 @@ AzureInformationProtection|Azure 信息保护客户端（经典）和 Azure 信�
 Azure 信息保护客户端（经典版）|有时缩写为*经典客户端*。<br /><br />Azure 信息保护的原始客户端允许用户、管理员和服务使用 Azure 信息保护策略中的标签和设置。 现已替换为 Azure 信息保护统一标签客户端。|
 |Azure 信息保护标签|此项始终将分类值应用于文档和电子邮件，并可以保护这些内容。 应用标签时，标签信息存储在元数据中，供应用程序和服务读取，并可选择对其进行操作。|
 |Azure 信息保护策略|管理员定义的配置，便于客户端和服务使用 Azure 信息保护标签和策略设置。|
-|Azure 信息保护扫描程序|在 Windows Server 上运行的一项服务，便于你发现、分类和保护本地文件夹、网络共享以及 SharePoint Server 网站和库中的文档。|
+|Azure 信息保护扫描程序|一种在 Windows Server 上运行的服务，可让你发现、分类和保护网络共享上的文档以及 SharePoint Server 站点和库。|
 |Azure 信息保护统一标识客户端|有时缩写为*统一的标签客户端*。<br /><br />适用于 Windows 计算机的客户端，该客户端允许用户、管理员和服务使用 Office 365 Security & 合规性中心、Microsoft 365 安全中心和 Microsoft 365 符合性中心的敏感度标签和标签策略设置。 替换 Azure 信息保护客户端（经典）。|
 |Azure RMS|请参阅 *Azure 权限管理*。|
 |Azure 信息保护查看器|在 Windows 计算机和移动设备上运行的应用，用于显示受保护文件。|
@@ -61,7 +61,7 @@ Azure 信息保护客户端（经典版）|有时缩写为*经典客户端*。<b
 |HYOK|请参阅*自留密钥*。|
 |自留密钥|经常缩写为 *HYOK*。<br /><br />一个配置和拓扑选项，面向通常出于法规或合规性方面的原因而想在本地生成并存储自己的密钥的组织。|
 |密钥对象|在租户密钥的上下文中，包含 Azure 权限管理服务进行加密操作时所需的元数据的一个实体。|
-|标签|请参阅“Azure 信息保护标签”**。|
+|label|请参阅“Azure 信息保护标签”**。|
 |信息保护|有时缩写为 *IP*。<br /><br />一个符合行业标准的通用术语，表示保护数据和文件以防止未经授权的访问，即使在通过电子邮件或文档共享使这些数据和文件脱离组织边界后，也能提供这种保护。 Microsoft Azure 信息保护就是信息保护 (IP) 解决方案的一个例子。|
 |信息权限管理|经常缩写为 *IRM*。<br /><br />与 Office 服务（例如 Exchange Server、Word 和 SharePoint）结合使用的一个术语，用于描述支持 Microsoft Rights Management 服务的能力。|
 |IRM|请参阅*信息权限管理*。|

@@ -13,21 +13,21 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b17f87f569b613a1583b82060b05bcbdeb943284
-ms.sourcegitcommit: c0fd00b057d155d6f2ed3a3ef5942d593b5be5c9
+ms.openlocfilehash: 5e1bdf52fd8d73231e9084d36d5d648a2e1ee88c
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "80670192"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048623"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
->适用范围：*Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的第 4 阶段。 这些过程包括[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)的步骤 8-9。
 
-## <a name="step-8-configure-irm-integration-for-exchange-online"></a>步骤 8. 为 Exchange Online 配置 IRM 集成
+## <a name="step-8-configure-irm-integration-for-exchange-online"></a>步骤 8。 为 Exchange Online 配置 IRM 集成
 
 > [!IMPORTANT]
 > 因为无法控制哪些迁移了用户的收件人可能选择受保护的电子邮件，请确保组织中所有用户和启用邮件的组在 Azure AD 中都有一个可用于 Azure 信息保护的帐户。 [详细信息](prepare.md)
@@ -38,13 +38,13 @@ ms.locfileid: "80670192"
     
     此 DNS 记录就位后，使用 Outlook 网页版和移动电子邮件客户端的用户便能在这些应用中查看受 AD RMS 保护的电子邮件，并且 Exchange 可以使用你从 AD RMS 导入的密钥，对已受 AD RMS 保护的内容执行解密、编制索引、日志记录和保护操作。  
 
-2. 运行 Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160).aspx) 命令。 如需运行此命令的帮助，请参阅以下文章中的分步说明：[Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)。
+2. 运行 Exchange Online [set-irmconfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160).aspx)命令。 如需运行此命令的帮助，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)中的分步说明。
     
-    在输出中，检查“AzureRMSLicensingEnabled”是否设置为“True”：
+    在输出中，检查“AzureRMSLicensingEnabled”是否设置为“True”：********
     
-    - 如果 AzureRMSLicensingEnabled 设置为“True”，则此步骤中无需进一步配置。 
+    - 如果 AzureRMSLicensingEnabled 设置为“True”，则此步骤中无需进一步配置****。 
     
-    - 如果 AzureRMSLicensingEnabled 设置为“False”，请运行 `Set-IRMConfiguration -AzureRMSLicensingEnabled $true`，然后使用[设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)中的验证步骤来确认 Exchange Online 现在是否可以使用 Azure Rights Management 服务。 
+    - 如果 AzureRMSLicensingEnabled 设置为“False”，请运行 `Set-IRMConfiguration -AzureRMSLicensingEnabled $true`，然后使用[设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)中的验证步骤来确认 Exchange Online 现在是否可以使用 Azure Rights Management 服务****。 
 
 ## <a name="step-9-configure-irm-integration-for-exchange-server-and-sharepoint-server"></a>步骤 9. 为 Exchange Server 和 SharePoint Server 配置 IRM 集成
 
@@ -66,54 +66,56 @@ ms.locfileid: "80670192"
 > 
 > 当你运行[set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)时，如果*LicensingLocation*参数中没有显示所有 AD RMS 群集的所有授权 url，请执行所有这些步骤。
 
-1. 在每个 Exchange Server 上，找到以下文件夹，并删除该文件夹中的所有条目： **\ProgramData\Microsoft\DRM\Server\S-1-5-18**
+1. 在每个 Exchange 服务器上，找到以下文件夹，并删除该文件夹中的所有条目： **\programdata\microsoft\drm\server\s-1-5-18**
 
 2. 在其中一台 Exchange Server 中，运行以下 PowerShell 命令，以确保用户能够读取使用 Azure Rights Management 保护的电子邮件。
 
-    运行这些命令之前，请将 \<租户 URL>替换为你自己的 Azure Rights Management 服务 URL。
+    在运行这些命令之前，请将你自己的 Azure Rights Management 服务 URL 替换为 *\<Your Tenant URL>* 。
 
-        $irmConfig = Get-IRMConfiguration
-        $list = $irmConfig.LicensingLocation 
-        $list += "<Your Tenant URL>/_wmcs/licensing"
-        Set-IRMConfiguration -LicensingLocation $list
-    
+    ```ps
+    $irmConfig = Get-IRMConfiguration
+    $list = $irmConfig.LicensingLocation 
+    $list += "<Your Tenant URL>/_wmcs/licensing"
+    Set-IRMConfiguration -LicensingLocation $list
+    ```
+
     现在，当你运行[set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)时，你应该会看到所有 AD RMS 群集授权 url 和为*LicensingLocation*参数显示的 Azure Rights Management 服务 URL。
 
 3.  现在对向外部收件人发送的消息禁用 IRM 功能：
 
-    ```
+    ```ps
     Set-IRMConfiguration -InternalLicensingEnabled $false
     ```
 
 4. 然后使用同一 cmdlet 在 Microsoft Office Outlook Web App 和 Microsoft Exchange ActiveSync 中禁用 IRM：
 
-    ```
+    ```ps
     Set-IRMConfiguration -ClientAccessServerEnabled $false
     ```
 
 5.  最后，使用同一 cmdlet 清除所有缓存的证书：
 
-    ```
+    ```ps
     Set-IRMConfiguration -RefreshServerCertificates
     ```
 
-6.  现在，在每个 Exchange Server 上重置 IIS，例如通过以管理员身份运行命令提示符并键入 **iisreset**。
+6.  现在，在每个 Exchange 服务器上重置 IIS，例如，通过以管理员身份运行命令提示符并键入 **iisreset**。
 
 ### <a name="disable-irm-on-sharepoint-servers-and-remove-ad-rms-configuration"></a>在 SharePoint 服务器上禁用 IRM 并删除 AD RMS 配置
 
 1.  请确保没有文档从 RMS 保护的库中签出。 如果有，这些文档将在此过程结束时变为不可访问。
 
-2.  在 SharePoint 管理中心网站的“快速启动”部分中，单击“安全性”。
+2.  在 SharePoint 管理中心网站的“快速启动”部分中，单击“安全性”********。
 
-3.  在“安全性”页的“信息策略”部分中，单击“配置信息权限管理”。
+3.  在“安全性”页的“信息策略”部分中，单击“配置信息权限管理”************。
 
-4.  在“信息权限管理”页的“信息权限管理”部分中，选择“不在此服务器上使用 IRM”，然后单击“确定”。
+4.  在“信息权限管理”页的“信息权限管理”部分中，选择“不在此服务器上使用 IRM”，然后单击“确定”****************。
 
-5.  在每台 SharePoint Server 计算机上，删除文件夹 \ProgramData\Microsoft\MSIPC\Server\\<运行 SharePoint Server 的帐户 SID> 的内容。
+5.  在每台 SharePoint server 计算机上，删除 \\ < *运行 SharePoint server>帐户*的文件夹 \ProgramData\Microsoft\MSIPC\Server SID 的内容。
 
 ### <a name="configure-exchange-and-sharepoint-to-use-the-connector"></a>配置 Exchange 和 SharePoint 以使用连接器
 
-1. 返回到部署 RMS 连接器的说明：[步骤 5：将服务器配置为使用 RMS 连接器](./configure-servers-rms-connector.md)
+1. 返回到部署 RMS 连接器的说明：[步骤 5：配置服务器以使用 RMS 连接器](./configure-servers-rms-connector.md)
 
     如果仅具有 SharePoint Server，请直接转到[后续步骤](#next-steps)继续该迁移。 
 
@@ -138,17 +140,17 @@ ms.locfileid: "80670192"
 
 HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
-**类型：** Reg_SZ
+**键入：** Reg_SZ
 
-**值：** https://\<AD RMS Intranet 授权 URL\>/_wmcs/licensing
+**值：** https:// \<AD RMS Intranet Licensing URL\> /_wmcs/licensing
 
-**数据：**
+**数据**
 
 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://\<连接器 FQDN\>/_wmcs/licensing
+- http://\<connector FQDN\>/_wmcs/licensing
 
-- https://\<连接器 FQDN\>/_wmcs/licensing
+- https://\<connector FQDN\>/_wmcs/licensing
 
 
 ---
@@ -159,17 +161,17 @@ Exchange 2013 - 注册表编辑 2：
 
 HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection 
 
-**类型：** Reg_SZ
+**键入：** Reg_SZ
 
-**值：** https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
+**值：** https:// \<AD RMS Extranet Licensing URL\> /_wmcs/licensing
 
-**数据：**
+**数据**
 
 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://\<连接器 FQDN\>/_wmcs/licensing
+- http://\<connector FQDN\>/_wmcs/licensing
 
-- https://\<连接器 FQDN\>/_wmcs/licensing
+- https://\<connector FQDN\>/_wmcs/licensing
 
 ---
 
@@ -180,17 +182,17 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
 HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
-**类型：** Reg_SZ
+**键入：** Reg_SZ
 
-**值：** https://\<AD RMS Intranet 授权 URL\>/_wmcs/licensing
+**值：** https:// \<AD RMS Intranet Licensing URL\> /_wmcs/licensing
 
-**数据：**
+**数据**
 
 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://\<连接器 FQDN\>/_wmcs/licensing
+- http://\<connector FQDN\>/_wmcs/licensing
 
-- https://\<连接器名称\>/_wmcs/licensing
+- https://\<connector Name\>/_wmcs/licensing
 
 
 ---
@@ -202,17 +204,17 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
 HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
-**类型：** Reg_SZ
+**键入：** Reg_SZ
 
-**值：** https://\<AD RMS Extranet 授权 URL\>/_wmcs/licensing
+**值：** https:// \<AD RMS Extranet Licensing URL\> /_wmcs/licensing
 
-**数据：**
+**数据**
 
 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://\<连接器 FQDN\>/_wmcs/licensing
+- http://\<connector FQDN\>/_wmcs/licensing
 
-- https://\<连接器 FQDN\>/_wmcs/licensing
+- https://\<connector FQDN\>/_wmcs/licensing
 
 ---
 

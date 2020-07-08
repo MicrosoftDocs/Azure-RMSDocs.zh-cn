@@ -13,18 +13,18 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 19c515db9da3d83c0663f41321b4327ffdd4108a
-ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
+ms.openlocfilehash: 676a58b6dc16a8a61b1a528f5b5d0a043c427c09
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79482992"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048946"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护客户端文件和客户端使用情况日志记录
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> *适用于[Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的说明*
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
@@ -35,17 +35,17 @@ ms.locfileid: "79482992"
 
 客户端文件：    
 
-- 对于 64 位操作系统： **\ProgramFiles (x86)\Microsoft Azure Information Protection**
+- 对于 64 位操作系统：**\ProgramFiles (x86)\Microsoft Azure Information Protection**
 
-- 对于 32 位操作系统： **\Program Files\Microsoft Azure Information Protection**
+- 对于 32 位操作系统：**\Program Files\Microsoft Azure Information Protection**
 
 客户端日志文件和当前安装的策略文件：
 
-- 对于 64 位和 32 位操作系统： **%localappdata%\Microsoft\MSIP**
+- 对于 64 位和 32 位操作系统：**%localappdata%\Microsoft\MSIP**
 
 ## <a name="usage-logging-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的使用情况日志记录
 
-客户端将用户活动记录到本地 Windows 事件日志“应用程序和服务日志” **“Azure 信息保护”中** > 。 这些事件包括以下信息：
+客户端将用户活动记录到本地 Windows 事件日志**应用程序和服务日志**  >  **Azure 信息保护**。 这些事件包括以下信息：
 
 - 客户端版本、策略 ID
 
@@ -81,7 +81,7 @@ ms.locfileid: "79482992"
     
 - 操作源：
     
-    - 手动 
+    - Manual 
     
     - 建议
     
@@ -107,7 +107,7 @@ Outlook 的事件警告、对齐和阻止消息要求高级客户端设置。 �
 
 - [自定义](client-admin-guide-customizations.md)
 
-- [文档跟踪、](client-admin-guide-document-tracking.md)
+- [文档跟踪](client-admin-guide-document-tracking.md)
 
 - [支持的文件类型](client-admin-guide-file-types.md)
 
