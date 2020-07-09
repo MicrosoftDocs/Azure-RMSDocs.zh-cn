@@ -1,9 +1,9 @@
 ---
 title: Microsoft 托管 - AIP 租户密钥生命周期操作
 description: 当 Microsoft 管理 Azure 信息保护租户密钥（默认）时生命周期操作的相关信息。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 10/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 68eb4e9518ef43c314dd21d1c8713f7c0c0dee69
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 635732301320538d58e9b34011291bce0fe07ce4
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048368"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136566"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
@@ -80,7 +80,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
     这样可以生成 RSA 密钥对，并将公有部分和私有部分保存为当前文件夹中的文件。 例如：**PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** 和 **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**。
 
-    回复来自 CSS 的电子邮件，附加名称以 **PublicKey** 开头的文件。 CSS 随后向你发送一个作为 .xml 文件的 TPD 文件，该文件使用你的 RSA 密钥进行加密。 将此文件复制到与你最初运行 AadrmTpd 工具时的相同文件夹，并使用以 **PrivateKey** 开头的文件和来自 CSS 的文件再次运行该工具。 例如：
+    回复来自 CSS 的电子邮件，附加名称以 **PublicKey** 开头的文件。 CSS 随后向你发送一个作为 .xml 文件的 TPD 文件，该文件使用你的 RSA 密钥进行加密。 将此文件复制到与你最初运行 AadrmTpd 工具时的相同文件夹，并使用以 **PrivateKey** 开头的文件和来自 CSS 的文件再次运行该工具。 例如:
 
     ```ps
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml

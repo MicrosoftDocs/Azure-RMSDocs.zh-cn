@@ -1,9 +1,9 @@
 ---
 title: Rights Management 连接器的注册表设置 - AIP
 description: 有关使用 RMS 连接器在服务器上进行注册表设置的信息。 配置这些设置的推荐方法是使用适用于 Microsoft RMS 连接器的服务器配置工具。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 82ff7c593d7557428d8201c9c87e3d563d2daed6
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 536d3662c5e3e7a90a8da2f6b9d97f522d1f4111
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048572"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136927"
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 连接器的注册表设置
 

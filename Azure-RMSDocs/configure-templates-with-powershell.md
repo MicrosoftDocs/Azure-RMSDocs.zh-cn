@@ -1,9 +1,9 @@
 ---
 title: 保护模板的 PowerShell - Azure 信息保护
 description: 使用 PowerShell 创建和管理 Azure 信息保护的保护模板。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6f37e0dc2132c85985135c512a6e369641a1bf01
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 38d5a71e6820c4ad95395c06dffea5d5e57ee7d6
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86047042"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136783"
 ---
 # <a name="powershell-reference-for-protection-templates"></a>保护模板的 PowerShell 参考
 

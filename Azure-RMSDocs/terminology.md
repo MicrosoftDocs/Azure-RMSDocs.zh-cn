@@ -1,9 +1,9 @@
 ---
 title: Azure 信息保护的术语
 description: 对 Microsoft Azure 信息保护相关的单词、短语或缩略词感到迷惑吗？ 在此处查找特定于 Azure 信息保护或具有特定含义（如果在此服务上下文中使用）的术语和缩写的定义。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/01/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 24bc2db20b7dc469a8c6fb3d39e2f399be12c0c6
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: ebea973acb5a45949d140e6bfcf8333b9da4add1
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048555"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136872"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 

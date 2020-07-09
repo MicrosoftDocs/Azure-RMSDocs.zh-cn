@@ -1,9 +1,9 @@
 ---
 title: 对 RMS 数据保护的应用程序支持 - AIP
 description: 确定使用 RMS API 本机支持 Azure 信息保护中的 Azure Rights Management 服务的应用程序。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 34484e732362adba288a9dfe8656df155b526b36
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: eceb6ea9c1d67c8a6564ef5fffb42cc612d10617
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746733"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136623"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -88,7 +88,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证
 
-- Office 365 专业增强版
+- Office 365 ProPlus
     
     包含 Azure 信息保护数据保护的大多数 Office 365 订阅（并非所有）都附带这些版本的 Office。 检查你的订阅信息，确定是否包含 Office 365 专业增强版。 你还可以在 [Azure 信息保护数据表](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)中找到此信息。
 
@@ -116,7 +116,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 以下 Office 客户端套件支持使用 Azure RMS 保护 macOS 上的文件和电子邮件：
 
-- Office 365 专业增强版
+- Office 365 ProPlus
 
 - Office Standard 2019 for Mac
 
@@ -137,7 +137,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 ### <a name="more-information-about-the-azure-information-protection-client-for-windows"></a>有关适用于 Windows 的 Azure 信息保护客户端的详细信息
 
-有关更多信息，请参见以下资源：
+有关详细信息，请参阅以下资源：
 
 - Azure 信息保护客户端管理员指南：
     - [统一标签客户端](./rms-client/clientv2-admin-guide.md)
@@ -155,7 +155,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 对于 Mac 计算机，Rights Management 共享应用提供了一个查看器，可查看受保护的 PDF 文件 (.ppdf)、受保护的文本图像和受常规保护的文件。 它也可保护图像文件，但不能保护其他文件。 若要保护这些计算机上的 Office 文件，请使用 Office for Mac 或 Office 365 专业增强版。 
 
-有关更多信息，请参见以下资源：
+有关详细信息，请参阅以下资源：
 
 -   [适用于移动平台的 Microsoft Rights Management 共享应用程序的常见问题解答](https://technet.microsoft.com/dn451248)
 

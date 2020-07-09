@@ -1,9 +1,9 @@
 ---
 title: 日志 & 分析 Azure 信息保护中的保护使用情况
 description: 有关如何使用 Azure 信息保护中的保护服务的使用日志记录的信息和说明。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 234c661133aa61dfa3636671d903fb78c364a678
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: c18c3e6524e6c42ee4b639b42778a8a8217b12d0
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83747098"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136786"
 ---
 # <a name="logging-and-analyzing-the-protection-usage-from-azure-information-protection"></a>记录和分析 Azure 信息保护中的保护使用情况
 
@@ -123,7 +123,7 @@ Azure 信息保护将日志作为一系列 blob 写入。
 后面的每行都是日志记录。 这些字段的值与前一行具有相同的顺序，并且以制表符分隔。 请使用下表分析这些字段。
 
 
-|   字段名称   | W3C 数据类型 |                                                                                                                                                                          说明                                                                                                                                                                          |                                                            示例值                                                            |
+|   字段名   | W3C 数据类型 |                                                                                                                                                                          说明                                                                                                                                                                          |                                                            示例值                                                            |
 |----------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 |      date      |     日期      |                                                                                                                     为请求提供服务时的 UTC 日期。<br /><br />源是为请求提供服务的服务器上的本地时钟。                                                                                                                     |                                                             2013-06-25                                                              |
 |      time      |     时间      |                                                                                                            为请求提供服务时的 UTC 时间（24 小时格式）。<br /><br />源是为请求提供服务的服务器上的本地时钟。                                                                                                            |                                                              21:59:28                                                               |

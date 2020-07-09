@@ -1,8 +1,8 @@
 ---
 title: 安装适用于 Azure 信息保护的 AIPService PowerShell 模块
 description: 说明如何从 Azure 信息保护中为保护服务安装 PowerShell。 此模块的名称为 AIPService。
-author: cabailey
-ms.author: cabailey
+author: mlottner
+ms.author: mlottner
 manager: rkarlin
 ms.date: 11/01/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c37a9c2e09626406eac2060c76375177ba49f118
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 23c18236413aaa2056d3eaaa30a64430de1e608b
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048385"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136832"
 ---
 # <a name="installing-the-aipservice-powershell-module"></a>安装 AIPService PowerShell 模块
 
@@ -27,7 +27,7 @@ ms.locfileid: "86048385"
 
 通过使用具有 internet 连接且满足下一节列出的先决条件的任何 Windows 计算机，你可以使用此 PowerShell 模块从命令行管理保护服务（Azure Rights Management）。 适用于 Azure 信息保护的 Windows PowerShell 支持自动化脚本，或者可能是高级配置方案所必需的。 有关模块支持的管理任务和配置的详细信息，请参阅[使用 PowerShell 管理 Azure 信息保护中的保护](administer-powershell.md)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 此表列出了安装和使用适用于 Azure 信息保护中的保护服务的 AIPService PowerShell 模块的先决条件。
 
@@ -92,7 +92,7 @@ Update-Module -Name AIPService
 Get-Command -Module AIPService
 ```
 
-使用 `Get-Help <cmdlet_name>` 命令查看有关特定 cmdlet 的帮助，使用 **-online** 参数以在 Microsoft 文档网站上查看最新的帮助。 例如：
+使用 `Get-Help <cmdlet_name>` 命令查看有关特定 cmdlet 的帮助，使用 **-online** 参数以在 Microsoft 文档网站上查看最新的帮助。 例如:
 
 ```powershell
 Get-Help Connect-AipService -online

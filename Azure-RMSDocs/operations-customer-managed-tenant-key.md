@@ -1,9 +1,9 @@
 ---
 title: 客户托管 - AIP 租户密钥生命周期操作
 description: 当你自己管理 Azure 信息保护租户密钥（自带密钥方案，简称 BYOK）时的生命周期操作相关信息。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 12/06/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,16 +13,16 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0381e5d6368587a6e743caefd519fc4669c6183b
-ms.sourcegitcommit: 07b518c780f5e63eb5a72d7499ec7cfa40a95628
+ms.openlocfilehash: 14b3c9d4db202abb18555eb695fe7e3e0769af40
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74898894"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136320"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 如果你自己管理 Azure 信息保护租户密钥（自带密钥方案，简称 BYOK），请阅读以下部分，详细了解此拓扑相关的生命周期操作。
 
@@ -82,7 +82,7 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 
 |事件描述|可能的响应|
 |------------------------|-------------------|
-|你的租户密钥泄露。|重新生成租户密钥。 请参阅[重新生成租户密钥](#rekey-your-tenant-key)。|
+|你的租户密钥泄露。|重新生成租户密钥。 请参阅重新[生成租户密钥](#rekey-your-tenant-key)。|
 |未经授权的个人或恶意软件获取了使用你的租户密钥的权限，但密钥本身并未泄露。|重新生成租户密钥在这种情况下并不奏效，需要进行根源分析。 如果进程或软件 Bug 是导致未经授权的个人获得访问权限的原因，则必须解决这一问题。|
 |在当前这代 HSM 技术中发现的漏洞。|Microsoft 必须更新 HSM。 如果有理由认为这些漏洞泄露了密钥，Microsoft 将指示所有客户重新生成他们的租户密钥。|
 |在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 密钥保管库或 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户重新生成他们的租户密钥。|

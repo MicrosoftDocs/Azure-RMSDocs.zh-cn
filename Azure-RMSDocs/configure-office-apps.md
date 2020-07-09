@@ -1,9 +1,9 @@
 ---
 title: 通过 AIP 中的 Azure RMS 将客户端配置为使用 Office 应用
 description: 面向管理员提供的有关配置 Office 应用以使用 Azure 信息保护中的 Azure Rights Management 服务的信息和说明。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,16 +12,16 @@ ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: fc190e6a7433457e0126976a66dbf5b04a47d140
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: 7746a412225248808e02731433133fc4182874a9
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74935140"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136272"
 ---
 # <a name="office-apps-configuration-for-clients-to-use-the-azure-rights-management-service"></a>Office 应用：配置客户端，以使用 Azure 权限管理服务
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 使用此信息确定需要执行的操作，使 Office 应用可与 Azure 信息保护中的 Azure 权限保护服务配合使用。
@@ -31,11 +31,11 @@ ms.locfileid: "74935140"
 
 ### <a name="user-instructions-for-office-for-mac"></a>Office for Mac 的用户说明
 
-具有 Office for Mac 的用户必须先验证其凭据，然后才能保护内容。 例如：
+具有 Office for Mac 的用户必须先验证其凭据，然后才能保护内容。 例如:
 
 1. 打开 Outlook 并使用 Office 365 工作或学校帐户创建配置文件。 
 
-2. 创建新消息，在 "**选项**" 选项卡上选择 "**权限**"，然后选择 "**验证凭据**"。 出现提示时，再次指定你的 Office 365 工作或学校帐户详细信息，然后选择“登录”。
+2. 创建新消息，在 "**选项**" 选项卡上选择 "**权限**"，然后选择 "**验证凭据**"。 出现提示时，再次指定 Office 365 工作或学校帐户详细信息，然后选择“登录”****。
     
     此操作将下载 Azure Rights Management 模板，并**验证凭据**现在已替换为不包含**任何限制**、不**转发**以及为租户发布的任何 Azure Rights Management 模板的选项。 
 

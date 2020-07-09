@@ -1,9 +1,9 @@
 ---
 title: 监视 Rights Management 连接器 - AIP
 description: 帮助监视连接器和组织使用 Azure 信息保护中 Azure Rights Management 服务的信息。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ba24185e8f8da86bc3801aa9307ae35f671a6c09
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: fec116c8bd0c8f02d57a9772bacf87a11d0966ac
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86049014"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136969"
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>监视 Azure Rights Management 连接器
 
@@ -171,7 +171,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 如果你最近添加了新的服务器帐户以使用连接器，你可以检查计数器“上次授权策略更新后的时间”**** 来确认在你对其更新后，连接器已经下载了列表，或者你是否需要等待稍长的时间（最多 15 分钟）。
 
-## <a name="logging"></a>Logging
+## <a name="logging"></a>日志记录
 
 使用情况日志记录可帮助你识别电子邮件和文档何时受到保护以及何时使用。 当 RMS 连接器用于保护和使用内容时，日志中的用户 ID 字段包含 Aadrm_S-1-7-0**** 的服务主体名称。 此名称是自动为 RMS 连接器创建。
 

@@ -1,9 +1,9 @@
 ---
 title: 管理用于 Azure 信息保护的个人数据
 description: 有关 Azure 信息保护所使用的个人数据的信息以及如何查看、导出和删除该数据的信息。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 10/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d16e6e7f0667f9ac57bf772de272d23838b793e1
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: b808fd6e3c1080d7c6d9f06384408bd196aadc45
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71966878"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136807"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
 
@@ -54,7 +54,7 @@ ms.locfileid: "71966878"
 
 运行[AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate) cmdlet 以获取保护模板列表。 可以使用模板 ID 获取特定模板的详细信息。 `RightsDefinitions` 对象显示个人数据，如果有的话。 
 
-示例
+示例：
 ```
 PS C:\Users> Get-AipServiceTemplate -TemplateId fcdbbc36-1f48-48ca-887f-265ee1268f51 | select *
 
@@ -91,7 +91,7 @@ LabelId                 :
 
 运行[AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog) cmdlet，从 Azure 信息保护获取保护服务（azure Rights Management）的管理操作日志。 此日志包含电子邮件地址和 IP 地址形式的个人数据。 日志采用纯文本形式，下载它后，可以脱机搜索特定管理员的详细信息。
 
-例如：
+例如:
 ```
 PS C:\Users> Get-AipServiceAdminLog -Path '.\Desktop\admin.log' -FromTime 4/1/2018 -ToTime 4/30/2018 -Verbose
 The Rights Management administration log was successfully generated and can be found at .\Desktop\admin.log.
@@ -100,7 +100,7 @@ The Rights Management administration log was successfully generated and can be f
 ### <a name="usage-logs-for-the-protection-service"></a>保护服务的使用日志
 运行[AipServiceUserLog](/powershell/module/aipservice/get-aipserviceuserlog) cmdlet，以检索使用 Azure 信息保护中的保护服务的最终用户操作的日志。 此日志可包含电子邮件地址和 IP 地址形式的个人数据。 日志采用纯文本形式，下载它后，可以脱机搜索特定管理员的详细信息。
 
-例如：
+例如:
 ```
 PS C:\Users> Get-AipServiceUserLog -Path '.\Desktop\' -FromDate 4/1/2018 -ToDate 4/30/2018 -NumberOfThreads 10
 Acquiring access to your user log…
@@ -132,7 +132,7 @@ Downloaded the log for 2018-04-24. The log is available at .\Desktop\rmslog-2018
 
 运行[AipServiceDocumentLog](/powershell/module/aipservice/get-aipservicedocumentlog) cmdlet，以从文档跟踪站点检索有关特定用户的信息。 若要获取与文档日志关联的跟踪信息，请使用[AipServiceTrackingLog](/powershell/module/aipservice/get-aipservicetrackinglog?view=azureipps) cmdlet。
 
-例如：
+例如:
 ```
 PS C:\Users> Get-AipServiceDocumentLog -UserEmail "admin@aip500.onmicrosoft.com"
 
@@ -195,7 +195,7 @@ IsHiddenInfo         : False
 
 - 对于 RMS 客户端：%localappdata%\Microsoft\MSIPC\msip\Logs
 
-此外，Azure 信息保护客户端将此个人数据记录到本地 Windows 事件日志“应用程序和服务日志” > “Azure 信息保护”。
+此外，azure 信息保护客户端将此个人数据记录到本地 Windows 事件日志**应用程序和服务日志**  >  **Azure 信息保护**。
 
 Azure 信息保护客户端运行扫描程序时，会将个人数据保存到运行此扫描程序的 Windows Server 计算机上的 %localappdata%\Microsoft\MSIP\Scanner\Reports。
 
@@ -212,9 +212,9 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
     
 - **Azure 信息保护管理员**
 
-- **合规性管理员**
+- **法规管理员**
 
-- **相容性数据管理员**
+- **合规性数据管理员**
 
 - **安全管理员**
 
@@ -222,7 +222,7 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 - **全局管理员**
 
-- **全局读取器**
+- **全局读取者**
 
 使用 AIPService 模块（或旧模块，AADRM）查看和指定的个人数据仅可供已向其分配了**Azure 信息保护管理员**、**合规性管理员**、**符合性数据管理员**或 Azure Active Directory 的**全局管理员**角色，或者保护服务的全局管理员角色。
 
@@ -236,7 +236,7 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 ### <a name="protection-templates"></a>保护模板
 
-运行[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet 以更新保护模板。 由于个人数据位于 `RightsDefinitions` 属性内，因此还需要使用[AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet 创建具有更新信息的权限定义对象，并将权限定义对象与 `Set-AipServiceTemplateProperty` cmdlet 结合使用。
+运行[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet 以更新保护模板。 由于个人数据在 `RightsDefinitions` 属性中，因此还需要使用[AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet 创建具有更新信息的权限定义对象，并将权限定义对象与 cmdlet 一起使用 `Set-AipServiceTemplateProperty` 。
 
 ### <a name="super-users-and-delegated-administrators-for-the-protection-service"></a>保护服务的超级用户和委派的管理员
 
@@ -267,23 +267,23 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 使用以下三个步骤来请求 Microsoft 删除文档跟踪日志、管理日志或保护服务的使用日志中的个人数据。 
 
-步骤 1：启动删除请求
-[与 Microsoft 支持部门联系](information-support.md#to-contact-microsoft-support)，以打开带有删除租户数据请求的 Azure 信息保护支持案例。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 提交请求时，你将需要提供其他信息，具体取决于需要被删除的数据。
+**步骤1：启动删除请求** 
+与[Microsoft 支持部门联系](information-support.md#to-contact-microsoft-support)，通过请求从租户中删除数据来打开 Azure 信息保护支持案例。 必须证明你是 Azure 信息保护租户的管理员，并且了解需要几天时间才能确认此过程。 提交请求时，你将需要提供其他信息，具体取决于需要被删除的数据。
 
-- 若要删除管理日志，请提供结束日期。 将删除直到该结束日期的所有管理日志。
-- 若要删除使用情况日志，请提供结束日期。 将删除直到该结束日期的所有使用情况日志。
-- 若要删除文档跟踪日志，请提供 UserEmail。 将删除所有与 UserEmail 相关的文档跟踪信息。
+- 若要删除管理日志，请提供结束日期****。 将删除直到该结束日期的所有管理日志。
+- 若要删除使用情况日志，请提供结束日期****。 将删除直到该结束日期的所有使用情况日志。
+- 若要删除文档跟踪日志，请提供 UserEmail****。 将删除所有与 UserEmail 相关的文档跟踪信息。
 
 删除此数据是一种永久性操作。 处理完删除请求后，就无法恢复数据。 建议管理员在提交删除请求之前导出所需数据。
 
-步骤 2：等待验证 Microsoft 将验证删除一个或多个日志的请求是否合法。 此过程最多可能需要五个工作日。
+步骤 2：等待验证**** Microsoft 将验证删除一个或多个日志的请求是否合法。 此过程最多可能需要五个工作日。
 
-步骤 3：获得删除确认 Microsoft 客户支持服务部门 (CSS) 将向你发送数据已删除的确认电子邮件。 
+步骤 3：获得删除确认**** Microsoft 客户支持服务部门 (CSS) 将向你发送数据已删除的确认电子邮件。 
 
-## <a name="exporting-personal-data"></a>导入个人数据
+## <a name="exporting-personal-data"></a>导出个人数据
 当你使用 AIPService 或 AADRM PowerShell cmdlet 时，可以将个人数据作为 PowerShell 对象提供给搜索和导出。 PowerShell 对象可转换为 JSON，并使用 `ConvertTo-Json` cmdlet 进行保存。
 
-## <a name="restricting-the-use-of-personal-data-for-profiling-or-marketing-without-consent"></a>在未征得同意的情况下，限制将个人数据用于分析或市场营销
+## <a name="restricting-the-use-of-personal-data-for-profiling-or-marketing-without-consent"></a>限制在未经同意的情况下将个人数据用于分析或营销
 对于基于个人数据的分析或市场营销，Azure 信息保护遵循 Microsoft 的[隐私条款](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="auditing-and-reporting"></a>审核和报告

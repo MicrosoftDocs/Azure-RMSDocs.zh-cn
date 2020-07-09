@@ -1,9 +1,9 @@
 ---
 title: 你的 Azure 信息保护租户密钥
 description: 你可能想要创建和管理租户的密钥（称为 "自带密钥" 或 BYOK），以符合特定的法规，而不是 Microsoft 管理 Azure 信息保护的根密钥。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 27ede6b0721f57e2825f2c938eb01cf203552245
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: d704ca679ce7d36f3e3956443b3b2a013366382d
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048351"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136993"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
@@ -128,7 +128,7 @@ ms.locfileid: "86048351"
 
 - 由于针对保护的所有加密调用都链接到 Azure 信息保护租户密钥，因此你可能希望这些调用发生时在最大程度上降低网络延迟。 若要实现这一点，请在与 Azure 信息保护租户相同的 Azure 区域或实例中创建密钥保管库。
 
-若要确定 Azure 信息保护租户的位置，请使用[AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) PowerShell cmdlet 并标识 url 中的区域。 例如：
+若要确定 Azure 信息保护租户的位置，请使用[AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) PowerShell cmdlet 并标识 url 中的区域。 例如:
 
 ```ps
 LicensingIntranetDistributionPointUrl : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing
@@ -178,7 +178,7 @@ Key Vault 中存储的密钥具有密钥 ID。 此密钥 ID 是包含密钥保�
 
 使用 PowerShell 进行配置：
 
-- 使用 GUID **00000012-0000-0000-c000-000000000000**运行 Key Vault PowerShell cmdlet [AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy)，并向 Azure Rights Management 服务主体授予权限。 例如：
+- 使用 GUID **00000012-0000-0000-c000-000000000000**运行 Key Vault PowerShell cmdlet [AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy)，并向 Azure Rights Management 服务主体授予权限。 例如:
 
     ```ps
     Set-AzKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
@@ -190,7 +190,7 @@ Key Vault 中存储的密钥具有密钥 ID。 此密钥 ID 是包含密钥保�
     Connect-AipService
 ```
 
-然后，运行[AipServiceKeyVaultKey cmdlet](/powershell/module/aipservice/use-aipservicekeyvaultkey)，并指定密钥 URL。 例如：
+然后，运行[AipServiceKeyVaultKey cmdlet](/powershell/module/aipservice/use-aipservicekeyvaultkey)，并指定密钥 URL。 例如:
 
 ```ps
     Use-AipServiceKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333"

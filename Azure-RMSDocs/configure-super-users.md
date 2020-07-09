@@ -1,9 +1,9 @@
 ---
 title: 为 Azure Rights Management 配置超级用户 - AIP
 description: 了解并实现 Azure 信息保护中 Azure Rights Management 服务的超级用户功能，以便已获授权的人员和服务始终可以阅读和检查（"原因"）组织的受保护数据。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4b8115ffc0b4af968f2dbfdcb7747f288876b271
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: 4397be5c6206c74bcf8753e5452cd19b02b31316
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746030"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136739"
 ---
 # <a name="configuring-super-users-for-azure-information-protection-and-discovery-services-or-data-recovery"></a>为 Azure 信息保护和发现服务或数据恢复配置超级用户
 
@@ -55,7 +55,7 @@ Azure 信息保护中的 Azure Rights Management 服务的超级用户功能可�
 
 - 限制和监视为 Office 365 或 Azure 信息保护租户分配了全局管理员的管理员，或使用[AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator) cmdlet 分配了 GlobalAdministrator 角色的管理员。 这些用户可以启用超级用户功能并将用户（及其自己）分配为超级用户，并且可能会对你的组织保护的所有文件进行解密。
 
-- 若要查看已将哪些用户和服务帐户单独分配为超级用户，请使用[AipServiceSuperUser](/powershell/module/aipservice/get-aipservicesuperuser) cmdlet。 若要查看超级用户组是否已配置，请使用[AipServiceSuperUserGroup](/powershell/module/aipservice/get-aipservicesuperusergroup) cmdlet 和标准用户管理工具检查哪些用户是该组的成员。 与所有管理操作一样，启用或禁用超级功能，以及添加或删除超级用户，并可通过使用[AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog)命令进行审核。 有关示例，请参阅下一部分。 当超级用户对文件进行解密时，此操作会记录到日志中并且可以通过[使用情况日志记录](log-analyze-usage.md)对其进行审核。
+- 若要查看已将哪些用户和服务帐户单独分配为超级用户，请使用[AipServiceSuperUser](/powershell/module/aipservice/get-aipservicesuperuser) cmdlet。 若要查看超级用户组是否已配置，请使用[AipServiceSuperUserGroup](/powershell/module/aipservice/get-aipservicesuperusergroup) cmdlet 和标准用户管理工具检查哪些用户是该组的成员。 与所有管理操作一样，启用或禁用超级功能，以及添加或删除超级用户，并可通过使用[AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog)命令进行审核。 有关示例，请参阅下一节。 当超级用户对文件进行解密时，此操作会记录到日志中并且可以通过[使用情况日志记录](log-analyze-usage.md)对其进行审核。
 
 - 如果你不需要针对日常服务的超级用户功能，请仅在需要时启用该功能，并使用[AipServiceSuperUserFeature](/powershell/module/aipservice/disable-aipservicesuperuserfeature) cmdlet 再次禁用它。
 

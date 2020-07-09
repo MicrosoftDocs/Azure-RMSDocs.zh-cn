@@ -1,9 +1,9 @@
 ---
 title: 对 Azure RMS 数据保护的服务器支持 - AIP
 description: 通过使用 Rights Management 连接器识别可使用 Azure 信息保护中的 Azure Rights Management 服务的本地服务器产品。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,16 +13,16 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e8ce88ed734177fd35c733f115f157c94b70627d
-ms.sourcegitcommit: ad3e55f8dfccf1bc263364990c1420459c78423b
+ms.openlocfilehash: f19ce90a0ac95ae14a8795f1f8c181fb4f3acd49
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76117929"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136344"
 ---
 # <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 使用 Azure Rights Management 连接器时 Azure 信息保护支持以下本地服务器产品。 该连接器充当本地服务器和 Azure Rights Management 服务（Azure 信息保护使用该服务保护 Office 文档和电子邮件）之间的通信接口（中继）。 
 

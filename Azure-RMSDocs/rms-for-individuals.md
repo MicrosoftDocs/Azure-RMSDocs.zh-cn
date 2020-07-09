@@ -1,9 +1,9 @@
 ---
 title: 个人 RMS 和 Azure 信息保护
 description: 介绍了 RMS 个人版，这是免费的自助式订阅，适用于已收到受保护文件，但无法进行身份验证的用户，因为 IT 部门没有在 Azure 中为他们托管帐户。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,16 +12,16 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 39452080b5c3696241f4257f87eb99a53e2e821c
-ms.sourcegitcommit: c20c7f114ae58ed6966785d8772d0bf1c1d39cce
+ms.openlocfilehash: d02f0e3e848e4a4743f7e61344f12108cca8c714
+ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2019
-ms.locfileid: "74933100"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86136917"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>个人 RMS 和 Azure 信息保护
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
 RMS 个人版是免费的自助式订阅，适用于需要打开受 Azure 信息保护保护的文件的用户。 如果 Azure Active Directory 无法对这些用户进行身份验证，此免费登录服务会在 Azure Active Directory 中为用户创建一个帐户。 因此，这些用户现在可以使用其公司电子邮件地址进行身份验证，然后在计算机或移动设备上阅读受保护的文件。
 
@@ -43,15 +43,15 @@ RMS 个人版采用 Azure Active Directory 自助式注册。 如果用户已使
 
 2. 键入用于保护需要打开的文档的电子邮件地址。
 
-3. 单击“注册”。
+3. 单击 "**注册**"。
 
-    Microsoft 使用电子邮件地址检查组织是否已拥有 [Azure 信息保护高级版订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)或 [Office 365 订阅](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)（后者使用 Azure 信息保护添加数据保护）。 如果找到任一订阅，则无需使用个人 RMS。 可以立即登录且个人 RMS 的自助注册将取消。 如未找到任一订阅，则继续下一步。
+    Microsoft 使用你的电子邮件地址来检查你的组织是否已拥有[Azure 信息保护高级版](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)或[Office 365 订阅的订阅，该订阅包含使用 azure 信息保护的数据保护](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 如果找到任一订阅，则无需使用个人 RMS。 可以立即登录且个人 RMS 的自助注册将取消。 如未找到任一订阅，则继续下一步。
 
 4. 等待确认电子邮件发送至你提供的地址。 Office 365 团队 (support@email.microsoftonline.com) 将发送主题为**完成注册 Microsoft Azure 信息保护**的电子邮件。
 
-5. 收到该电子邮件后，请单击“是本人”来验证电子邮件地址并完成注册过程。
+5. 收到该电子邮件后，请单击“是本人”**** 来验证电子邮件地址并完成注册过程。
 
-6. 然后将出现“最后一项操作...”页，用于完善你的帐户信息。 键入你的名字和姓氏，输入并确认你选择的密码，然后单击“开始”。
+6. 然后将出现“最后一项操作...”页****，用于完善你的帐户信息。 键入你的名字和姓氏，输入并确认你选择的密码，然后单击“开始”****。
 
 7. 创建帐户后，将看到新的 Microsoft Azure 信息保护页面，可以在其中下载和安装 Azure 信息保护客户端，或单击[用户指南](./rms-client/client-user-guide.md)链接获取 Windows 计算机的操作说明。
 
