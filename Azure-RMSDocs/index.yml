@@ -12,12 +12,12 @@ metadata:
   ms.author: mlottner
   manager: rkarlin
   ms.date: 04/02/2019
-  ms.openlocfilehash: 28aee5d35982e832cbe6a43782a3b9c7a85700ee
-  ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
+  ms.openlocfilehash: 63026df891e74f05bf8bcf570f852840aa991cce
+  ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2020
-  ms.locfileid: "80587496"
+  ms.lasthandoff: 07/07/2020
+  ms.locfileid: "86048419"
 landingContent:
 - title: 关于 Azure 信息保护
   linkLists:
@@ -51,8 +51,8 @@ landingContent:
     links:
     - text: 前 5 个建议的 Ignite 会话
       url: what-is-information-protection.md#microsoft-ignite
-    - text: 版本 2.6.111.0 详细信息 - 统一标记客户端
-      url: ./rms-client/unifiedlabelingclient-version-release-history.md#version-25330
+    - text: 最新统一标记客户端版本
+      url: ./rms-client/unifiedlabelingclient-version-release-history.md
 - title: 对本地数据存储中的数据进行分类和保护
   linkLists:
   - linkListType: how-to-guide
@@ -97,5 +97,5 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 中心报告（预览）
+    - text: 中心报告
       url: reports-aip.md

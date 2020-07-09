@@ -173,8 +173,26 @@
           href: secure-collaboration-documents.md
         - name: 配置 Azure 信息保护标签的邮件流规则
           href: configure-exo-rules.md
-        - name: 部署 Azure 信息保护扫描程序
-          href: deploy-aip-scanner.md
+        - name: Azure 信息保护统一标记扫描程序
+          items:
+            - name: 概述
+              href: deploy-aip-scanner.md
+            - name: 统一标记扫描程序先决条件
+              href: deploy-aip-scanner-prereqs.md
+            - name: 配置并安装统一标记扫描程序
+              href: deploy-aip-scanner-configure-install.md
+            - name: 运行统一标记扫描程序
+              href: deploy-aip-scanner-manage.md
+        - name: Azure 信息保护经典扫描程序
+          items:
+            - name: 概述
+              href: deploy-aip-scanner-classic.md
+            - name: 经典扫描程序必备组件
+              href: deploy-aip-scanner-prereqs-classic.md
+            - name: 配置并安装经典扫描程序
+              href: deploy-aip-scanner-configure-install-classic.md
+            - name: 运行经典扫描程序
+              href: deploy-aip-scanner-manage-classic.md
         - name: Azure 信息保护报表
           href: reports-aip.md
         - name: 部署 RMS 连接器
@@ -297,6 +315,12 @@
                       href: ./rms-client/client-protection-only-mode.md
                     - name: 用于操作 RMS 共享应用程序的任务
                       href: ./rms-client/upgrade-client-app.md
+        - name: 适用于 iOS 和 Android 的 Azure 信息保护应用
+          items:
+            - name: 概述
+              href: ./rms-client/mobile-app-faq.md
+            - name: 开始使用 AIP 移动应用
+              href: ./rms-client/mobile-app-get-started.md
         - name: 受保护的 PDF 阅读器
           items:
             - name: 概述
