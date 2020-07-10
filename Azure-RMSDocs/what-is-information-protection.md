@@ -1,10 +1,10 @@
 ---
-title: 什么是 Azure 信息保护？ - AIP
-description: Azure 信息保护服务的技术概述，此服务有助于组织标记文档和电子邮件，从而分类和保护数据（无论数据驻留在何处）。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/10/2019
+title: 什么是 Azure 信息保护 (AIP)？
+description: Azure 信息保护 (AIP) 是一项服务，可帮助组织标记文档和电子邮件，无论数据驻留在哪里，都能对其进行分类和保护。
+author: batamig
+ms.author: bagol
+manager: rkarlin
+ms.date: 06/23/2020
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,120 +12,138 @@ Customer intent: As an administrator, I want to label documents and emails to cl
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: c3b2656ccb53a69a50871e431b0778ea3c18992e
-ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
+ms.openlocfilehash: 14626d02ca0b5d492312e9d17f0c801c782f5a15
+ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84666143"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86048726"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 
-Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助于组织通过应用标签对其文档和电子邮件进行分类和有选择地保护。 标签可以由定义规则和条件的管理员自动应用、由用户手动应用或是二者组合应用（在这种情况下会向用户提供建议）。 
+Azure 信息保护 (AIP) 是一种基于云的解决方案，可帮助组织通过应用标签来对文档和电子邮件进行分类和保护。 标签可通过管理员使用规则和条件来自动应用、由用户手动应用，也可通过这两者的组合进行应用（此时管理员会定义显示给用户的建议）。
 
-下图显示在用户计算机上实际操作中的 Azure 信息保护示例。 管理员已配置具有检测敏感数据的规则的标签，在我们的示例中，敏感数据是信用卡信息。 当用户保存包含信用卡号的 Word 文档时，她会看到一个自定义工具提示，建议她应用管理员配置的标签。 此标签将对文档进行分类并保护。 
+例如，你的管理员可能配置了一个具有检测敏感数据（例如信用卡信息）的规则的标签。 在这种情况下，在 Word 文件中保存信用卡信息的所有用户都可能在文档顶部看到一个工具栏，其中建议他们应用针对此场景配置的标签。
 
-![用于 Azure 信息保护的建议分类示例](./media/info-protect-recommend-calloutsv2.png)
+可用标签对文档进行分类和（可选）保护。
 
-###### <a name="screenshot-from-the-azure-information-protection-client-classic"></a>来自 [Azure 信息保护客户端（经典）](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图
-
-内容进行分类（以及保护（可选））之后，随后可以跟踪并控制其使用方式。 可以分析数据流以深入了解业务、检测危险行为和采取修正措施、跟踪对文档的访问、防止数据泄露或误用，等等。
+通过对内容进行[分类](#how-labels-apply-classification)和[保护](#how-data-is-protected)，你可跟踪和控制数据使用方式、分析数据流以深入了解业务、检测危险行为和采取修正措施，还可跟踪对文档的访问、防止数据泄露或误用等等。
 
 ## <a name="how-labels-apply-classification"></a>标签如何应用分类
 
-可使用 Azure 信息保护标签对文档和电子邮件应用分类。 执行此操作时，分类是可识别的，无论数据的存储位置在哪里或者与谁共享。 标签可包括视觉标记，如页眉、页脚或水印。 元数据以明文形式添加到文件和电子邮件标头。 明文形式确保其他服务（如数据丢失防护解决方案）可以识别分类并执行相应的操作。 
+可使用 Azure 信息保护标签对文档和电子邮件应用分类。 
 
-例如，下面的电子邮件已分类为“常规”。 标签已将“敏感度：常规”页脚添加到电子邮件。 此页脚是所有收件人的一个可视指示器，它用于一般业务数据，不应在组织外部发送。 该标签嵌入在电子邮件标头中，以便电子邮件服务可以检查此值，并且可以创建审核项或阻止在组织外部发送它。
+标记内容包括：
 
-![显示 Azure 信息保护分类的示例电子邮件页脚和标头](./media/example-email-footerv2.png)
+- 无论数据存储在哪里或与谁共享都能检测到的分类。
+- 视觉标记，例如标头、页脚或水印。
+- 以明文形式添加到文件和电子邮件标头的元数据。 明文形式的元数据可确保其他服务能够识别分类并执行相应的操作
 
-###### <a name="screenshot-from-the-azure-information-protection-client-classic"></a>来自 [Azure 信息保护客户端（经典）](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图
+例如在下图中，标记服务使用[统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)将电子邮件分类为“常规”：
+
+:::image type="content" source="media/example-email-footerv2.png" alt-text="显示 Azure 信息保护分类的示例电子邮件页脚和标头":::
+
+在此示例中，标记还：
+
+- 向电子邮件添加了“敏感度:***常规”的页脚*** 。 该页脚是显示给所有收件人的一个可视指示器，用于不得在组织外部发送的一般业务数据。 
+- 电子邮件标头中嵌入的元数据。 通过标头数据，电子邮件服务可检测标签，从理论上说可创建审核条目或阻止它发送到组织外部。
 
 ## <a name="how-data-is-protected"></a>如何保护数据
 
-保护技术使用 Azure Rights Management（通常缩写为 Azure RMS）。 此技术已与其他 Microsoft 云服务和应用程序（例如 Office 365 和 Azure Active Directory）集成。 它还可与你自己的业务线应用程序和软件供应商提供的信息保护解决方案搭配使用，无论这些应用程序和解决方案是在本地还是在云中。
+Azure 信息保护使用 Azure 权限管理服务 (Azure RMS) 来保护数据。 Azure RMS 已与其他 Microsoft 云服务和应用程序（例如 Office 365 和 Azure Active Directory）集成，它还可用于你自己或第三方应用程序和信息保护解决方案。 Azure RMS 同时适用于本地和云解决方案。
 
-此保护技术使用加密、标识和授权策略。 与应用的标签类似，使用权限管理能够始终为文档和电子邮件提供保护，而不受其位置的影响 – 不管是在组织、网络、文件服务器和应用程序的内部还是外部。 此信息保护解决方案让你可以始终控制你的数据，即使在这些数据与他人共享时也是如此。
+Azure RMS 使用加密、标识和授权策略。 与 AIP 标签类似，无论文档或电子邮件位于何处，使用 Azure RMS 应用的保护都保留在文档和电子邮件中，从而确保你始终控制你的内容，即使与其他人共享也是如此。
 
-例如，可以配置报告文档或销售预测电子表格，以便仅允许组织内人员进行访问，并且可以控制是否可以编辑该文档、是否将其限制为只读，以及是否禁止打印它。 同样，你也可以配置电子邮件，并禁止转发电子邮件或使用“全部答复”选项。 
+这些保护设置可并入标签配置中，让用户只需应用标签即可对文档和电子邮件进行分类和保护。 这些设置也可通过支持保护但不标记的应用程序和服务自行使用。 对于只支持保护的应用程序和服务，保护设置用作[权限管理模板](#rights-management-templates)。
 
-这些保护设置可以是标签配置的一部分，这样用户就只需应用标签即可分类并保护文档和电子邮件。 不过，支持保护的应用程序和服务也可以使用相同的保护设置，但不能应用标签。 对于这些应用程序和服务，保护设置以 Rights Management 模板形式提供。
+例如，你可能想要配置一个报表或销售预测电子表格，以便它只能供你组织中的人员访问。 在这种情况下，你要应用保护设置来控制是可编辑该文档、将文档限制为只读，还将阻止打印文档。
 
-### <a name="rights-management-templates"></a>Rights Management 模板
+电子邮件可具有类似的保护设置，来防止被转发或使用“全部答复”选项。
 
-在激活 Azure Rights Management 服务之后，便会为你提供两个默认模板，用于将数据访问权限限制为你组织内的用户。 可以使用这些模板立即帮助防止从你的组织泄露数据。 你还可以通过配置应用更多限制性控件的自己的保护设置来补充这些默认模板。
+### <a name="rights-management-templates"></a>权限管理模板
 
-事实上，针对包含保护设置的 Azure 信息保护创建标签时，此操作会创建相应的 Rights Management 模板。 然后，还可将该模板用于支持 Azure Rights Management 的应用程序和服务。
+激活 Azure 权限管理服务后，将立即为你提供两个默认模板，用于限制只能你组织内的用户访问数据。 可立即使用这些模板，也可配置你自己的保护设置，在新模板中应用更严格的控制。 
 
-例如，可从 Exchange 管理中心配置 Exchange Online 邮件流规则来使用这些模板：
+权限管理模板可用于支持 Azure 权限权利的任何应用程序或服务。
 
-![为 Exchange Online 选择模板的示例](./media/templates-exchangeonline-callouts.png)
+下图显示了 Exchange 管理中心的一个示例，其中你可配置 Exchange Online 邮件流规则来使用 RMS 模板：
 
-有关 Azure Rights Management 保护的详细信息，请参阅[什么是 Azure Rights Management？](what-is-azure-rms.md)
+![显示为 Exchange Online 选择模板的示例](./media/templates-exchangeonline-callouts.png)
 
-## <a name="integration-with-end-user-workflows-for-documents-and-emails"></a>与文档和电子邮件的最终用户工作流集成
+> [!NOTE]
+> 创建包含保护设置的 AIP 标签时，还将创建一个相应的权限管理模板，它可独立于标签单独使用。 
+>  
 
-安装 Azure 信息保护客户端时，Azure 信息保护会与最终用户的现有工作流集成。 此客户端会将信息保护栏安装到 Office 应用程序（如在 Word 中显示此栏的第一张图片所示）。 相同的信息保护栏会添加到 Excel、PowerPoint 和 Outlook。 例如：
+有关详细信息，请参阅[什么是 Azure 权限管理？](what-is-azure-rms.md)
+
+## <a name="aip-and-end-user-integration-for-documents-and-emails"></a>文档和电子邮件的 AIP 和最终用户集成
+
+AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终用户能够将 AIP 集成到他们的文档和电子邮件中。
+
+例如，在 Excel 中使用[统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)：
 
 ![Excel 中的 Azure 信息保护栏的示例](./media/excelproplus-infoprotect-bar.png)
 
-###### <a name="screenshot-from-the-azure-information-protection-unified-labeling-client"></a>来自 [Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图 
+虽然标签可自动应用于文档和电子邮件，从而免除用户的猜测并符合组织策略，但最终用户可使用“信息保护”栏自行选择标签和应用分类。
 
-此信息保护栏使最终用户能够轻松选择用于正确分类的标签。 如有需要，还可以自动应用标签以避免用户猜测，或者用于遵循组织策略。
-
-若要对其他文件类型进行分类和保护，并想要一次性支持多个文件，用户可在 Windows 文件资源管理器中右键单击文件或文件夹：
+此外，通过 AIP 客户端，用户可使用 Windows 文件资源管理器中的右键单击菜单来分类和保护其他文件类型，或者一次性地分类和保护多个文件。 例如：
 
 ![在文件资源管理器中，右键单击“使用 Azure 信息保护进行分类和保护”](./media/right-click-classify-protect-folder.png)
 
-如果用户在文件资源管理器中选择“分类和保护”菜单选项，那么他们可以选择一个标签，操作方式类似于他们在 Office 桌面应用程序中使用信息保护栏。 如果需要，他们还可以设置自己的自定义权限。
+“分类和保护”菜单选项的工作方式与 Office 应用程序汇总的“应用保护”栏类似，用户可选择标签或设置自定义权限。
 
-高级用户（和管理员）可能会发现，针对管理和设置多个文件的分类和保护，使用 PowerShell 命令更有效。 虽然也可以单独安装 PowerShell 模块，但完成这些操作的 PowerShell 命令会自动包含在此客户端中。
+> [!TIP]
+> 高级用户或管理员可能会发现，PowerShell 命令可用来更高效地管理和设置多个文件的分类和保护。 客户端中有[相关的 PowerShell 命令](https://docs.microsoft.com/powershell/module/azureinformationprotection)，它们也可单独安装。
 
-文档受到保护后，用户和管理员可以使用文档跟踪站点监视访问这些文档的人员和时间。 如果他们怀疑存在误用，还可以撤销对这些文档的访问权限：
+用户和管理员可使用文档跟踪站点来监视受保护的文档、查看谁何时访问了这些文档。 如果他们怀疑存在误用，则还可以撤消对这些文档的访问权限。 例如：
 
 ![撤销文档跟踪站点中的访问图标](./media/tracking-site-revoke-access-icon.png)
 
 ### <a name="additional-integration-for-email"></a>其他电子邮件集成
 
-将 Azure 信息保护与 Exchange Online 一起使用时，用户将获得额外的好处：可以将受保护的电子邮件发送给任何用户，并确保他们可以在任意设备上阅读该电子邮件。
+将 AIP 与 Exchange Online 结合使用可带来额外的好处，可将受保护的电子邮件发送给任意用户并保证他们可在任意设备上阅读这些邮件。
 
-例如，用户需要将敏感信息发送到使用 Gmail、Hotmail 或 Microsoft 帐户的个人电子邮件地址  。 或者，向在 Office 365 或 Azure AD 中没有帐户的用户发送敏感信息。 这些电子邮件应静态加密并在传输中加密，且只有原始收件人才能阅读。
+例如，你可能需要将敏感信息发送到使用 Gmail、Hotmail 或 Microsoft 帐户的个人电子邮件地址，或者发送给在 Office 365 或 Azure AD 中没有帐户的用户  。 这些电子邮件应静态加密并在传输中加密，且只有原始收件人才能阅读。
 
-此方案需要[ Office 365 邮件加密中的新功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)。 如果收件人在本机电子邮件客户端中无法打开受保护的电子邮件，可以使用一次性密码，通过浏览器阅读敏感信息。
+此方案需要 [Office 365 消息加密功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)。 如果收件人在本机电子邮件客户端中无法打开受保护的电子邮件，可以使用一次性密码，通过浏览器阅读敏感信息。
 
-例如，Gmail 用户在电子邮件中看到以下信息：
+例如，Gmail 用户可能会在收到的电子邮件中看到以下提示：
 
 ![OME 和 AIP 的 Gmail 收件人体验](./media/ome-message.png)
 
-对于发送电子邮件的用户，他们的工作流与将受保护电子邮件发送到其组织内的用户相同。 例如，他们可以选择“不要转发”按钮，Azure 信息保护客户端可以将该按钮添加到 Outlook 功能区。 或者，此“不要转发”功能可以集成到用户选择的标签，使电子邮件分类并受到保护。 例如：
+对于发送电子邮件的用户，他们需要与将受保护的电子邮件发送到自己的组织中的用户时执行相同的操作。 例如，选择“请勿转发”按钮，使 AIP 客户端可添加到 Outlook 功能区。 
+
+或者，“请勿转发”功能可集成到标签中，用户可选择它来向该电子邮件同时应用分类和保护。 例如，在[统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)中：
 
 ![选择配置为“不转发”的标签](./media/recipients-only-label2.png)
 
-###### <a name="screenshot-from-the-azure-information-protection-unified-labeling-client"></a>来自 [Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-client-and-the-azure-information-protection-unified-labeling-client)的屏幕截图
+管理员也可配置要应用权限保护的邮件流规则，为用户自动提供保护。
 
-或者，可以通过使用应用权限保护的邮件流规则，为用户自动提供保护。 
+附加到这些电子邮件的任何 Office 文档页将自动受到保护。
 
-将 Office 文档附加到这些电子邮件时，这些文档也会自动受到保护。
+## <a name="scanning-for-existing-content-to-classify-and-protect"></a>扫描现有内容来进行分类和保护
 
-## <a name="classifying-and-protecting-existing-documents"></a>对现有文档进行分类和保护
+理想情况是，你在创建文档和电子邮件时对它们进行标记。 但是，你可能已在本地或云端存储很多文档，而你也想要对这些文档进行分类和保护。
 
-理想情况下，在首次创建文档和电子邮件时，就对其进行标记。 但是，你可能在数据存储中已经有很多文档，并且希望对这些文档也进行分类和保护。 这些文档存储可能是在本地，也可能是在云中。
+使用下述方法之一对现有内容进行分类和保护：
 
-对于你的本地数据存储，请使用 Azure 信息保护扫描程序，以发现本地文件夹、网络共享及 Microsoft SharePoint Server 站点和库中的文档，并对其进行分类和保护。 扫描程序在 SharePoint Server 上将作为服务运行。 可在策略中使用同一规则，以检测敏感信息，并向文档应用特定标签。 或者，也可以向数据存储库中的所有文档应用默认标签，无需检查文件内容。 此外，也可以仅在报告模式下使用扫描程序，以帮助你发现可能不知道的敏感信息。 
+- **本地存储**：请使用 [Azure 信息保护扫描程序](deploy-aip-scanner.md)来发现网络共享和 Microsoft SharePoint Server 站点及库中的文档，并对其进行分类和保护。
 
-有关部署和使用扫描程序的详细信息，请参阅[部署 Azure 信息保护扫描程序，以自动对文件进行分类和保护](deploy-aip-scanner.md)。
+    扫描程序将作为一项服务在 Windows Server 上运行，它使用同一套策略规则来检测敏感信息并对文档应用特定标签。 
 
-对于你的云数据存储，请使用 Microsoft Cloud App Security 将你的标签应用于 Box、SharePoint 和 OneDrive 中的文档。 有关详细信息，请参阅[自动应用 Azure 信息保护分类标签](/cloud-app-security/use-case-information-protection)和 [Azure 信息保护集成](/cloud-app-security/azip-integration)。
+    或者，使用扫描程序向数据存储库中的所有文档应用默认标签，这样就无需检查文件内容。 仅在报告模式下使用扫描程序，来发现你可能不知道的敏感信息。
+
+- **云数据存储**：请使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/azip-integration) 将标签应用于 Box、SharePoint 和 OneDrive 中的文档。 要查看教程，请参阅[自动应用 Azure 信息保护分类标签](https://docs.microsoft.com/cloud-app-security/use-case-information-protection) 
 
 ## <a name="latest-labeling-updates-for-microsoft-365"></a>Microsoft 365 的最新标签更新
 
-请参阅有关 Azure 信息保护如何帮助你发现、分类、保护和监视敏感信息的最新信息，无论该敏感信息位于何处：
+查看最新信息，了解 Azure 信息保护如何使用 Microsoft 365 来帮助你发现、分类、保护和监视位于任何位置的敏感信息：
 
 > [!VIDEO https://www.youtube.com/embed/UI0p9xqMNfI]
 
-## <a name="resources-for-azure-information-protection"></a>Azure 信息保护的资源
+## <a name="additional-azure-information-protection-resources"></a>其他 Azure 信息保护资源
 
 - 免费试用版：[企业移动性 + 安全性 E5](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)
 
@@ -164,4 +182,4 @@ Azure 信息保护（有时也称为 AIP）是基于云的解决方案，有助�
 
 ## <a name="next-steps"></a>后续步骤
 
-可通过观看我们的[快速入门教程](quickstart-viewpolicy.md)和[教程](infoprotect-quick-start-tutorial.md)，自行配置和使用 Azure 信息保护。 或者，如果已准备好部署组织的此项服务，请转到[操作方法指南](how-to-guides.md)。
+在[快速入门](quickstart-viewpolicy.md)和[教程](infoprotect-quick-start-tutorial.md)的帮助下，自行配置和使用 Azure 信息保护。 如果已准备好为组织部署该服务，请转到[操作方法指南](how-to-guides.md)。
