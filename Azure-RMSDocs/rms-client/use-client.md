@@ -4,7 +4,7 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 05/27/2020
+ms.date: 07/13/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,19 +12,19 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: e069abcc246848a48dc0edb014bdea0e128d03b1
-ms.sourcegitcommit: 307258ff0a8a7a3f607c8f47f38a9801d0e06ba1
+ms.openlocfilehash: 56d58578527a6df64091ed4c1569999ddad4fd69
+ms.sourcegitcommit: a606376373961dd4ce103f3cb465594831093820
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2020
-ms.locfileid: "85126690"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86281930"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 
 Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的文档和电子邮件：
@@ -126,7 +126,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 若要在不同的操作系统平台（Windows、macOS、iOS 和 Android）和 web 上比较 Office 内置敏感度标签功能，请参阅 Microsoft 365 符合性文档，了解如何[在应用中提供敏感度标签功能](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)。 本文档还包括 Office 生成号或受支持功能的 Office 更新通道信息。
 
-|Feature|经典客户端|统一标签客户端|Office 内置标签客户端|
+|功能|经典客户端|统一标签客户端|Office 内置标签客户端|
 |:------|:------------:|:---------------------:|:-----------------------------:|
 |手动标记：| **是** | **是** |**是** |
 |默认标签：| **是** | **是** | **是** |
@@ -147,7 +147,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |带有变量的动态视觉标记：| **是** | **是** | 否 |
 |带有文件资源管理器的标签：| **是** | **是** | 否 |
 |受保护文件的查看器（文本、图像、PDF、.pfile）：| **是** | **是** | 否|
-|应用标签的 PDF 支持：| **是** | 否 | 否 |
+|应用标签的 PPDF 支持：| **是** | 否 | 否 |
 |PowerShell 标记 cmdlet：| **是** | 是  <sup>4</sup> | 否 |
 |离线支持保护操作：| **是** | 是  <sup>5</sup> | **是** |
 |为断开连接的计算机手动执行策略文件管理：| **是** |**是**| 否 |

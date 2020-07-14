@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 65c3a37f68676616d7342879d9621a143842f4bf
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: d6814e3a7b34ab25d8b38f2813440a717ad4bd1a
+ms.sourcegitcommit: a606376373961dd4ce103f3cb465594831093820
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86049483"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86281947"
 ---
 # <a name="what-is-the-azure-information-protection-classic-scanner"></a>什么是 Azure 信息保护经典扫描程序？
 
@@ -115,15 +115,6 @@ AIP 扫描程序在以下情况下无法标记文件：
 **示例：** 检查 .txt 文件后，扫描程序无法应用配置为仅用于分类的标签，因为 .txt 文件类型不支持分类。
 
 但是，如果将标签配置为分类和保护，并包含该文件类型以保护扫描程序，则扫描程序可以对文件进行标记。
-
-## <a name="upgrading-your-scanner"></a>升级扫描仪
-
-如果以前安装了扫描仪并想要升级，请参阅[升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)。
-
-然后，按常规方式[配置](deploy-aip-scanner-configure-install.md)和[使用扫描仪](deploy-aip-scanner-manage.md)，跳过安装扫描程序的步骤。
-
->[!NOTE]
-> 如果扫描仪版本早于1.48.204.0，但尚未准备好进行升级，请参阅[部署以前版本的 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner-previousversions.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
