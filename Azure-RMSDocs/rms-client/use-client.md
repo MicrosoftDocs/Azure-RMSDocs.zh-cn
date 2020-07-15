@@ -4,7 +4,7 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/13/2020
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 56d58578527a6df64091ed4c1569999ddad4fd69
-ms.sourcegitcommit: a606376373961dd4ce103f3cb465594831093820
+ms.openlocfilehash: 08c5658ed0997da058e2542826d336581bba4bb7
+ms.sourcegitcommit: 76bb452442ed42f066ee23fb3bcd9fef92440b22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281930"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86308498"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -126,7 +126,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 若要在不同的操作系统平台（Windows、macOS、iOS 和 Android）和 web 上比较 Office 内置敏感度标签功能，请参阅 Microsoft 365 符合性文档，了解如何[在应用中提供敏感度标签功能](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)。 本文档还包括 Office 生成号或受支持功能的 Office 更新通道信息。
 
-|功能|经典客户端|统一标签客户端|Office 内置标签客户端|
+|Feature|经典客户端|统一标签客户端|Office 内置标签客户端|
 |:------|:------------:|:---------------------:|:-----------------------------:|
 |手动标记：| **是** | **是** |**是** |
 |默认标签：| **是** | **是** | **是** |
@@ -134,7 +134,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |建议或自动添加标签：<br />-适用于 Outlook| **是** | **是** | 否 |
 |必需标签：| **是** | **是** | 否 |
 |用户定义的标签权限： <br />-不转发电子邮件| **是** | **是** | **是** |
-|用户定义的标签权限： <br />-Word、Excel、PowerPoint、文件资源管理器的自定义权限| **是** | **是** | **是** |
+|用户定义的标签权限： <br />-Word、Excel、PowerPoint 的自定义权限| **是** | **是** | **是** |
 |标签的多语言支持：| **是** | **是** |**是** |
 |来自电子邮件附件的标签继承：| **是** | **是**  |否 |
 |包括以下内容的自定义项：<br />- 电子邮件的默认标签<br />-在 Outlook 中弹出消息 <br />- S/MIME 支持<br />- 报告问题选项| 是  <sup>1</sup> | 是  <sup>2</sup> | 否 |
