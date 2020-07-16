@@ -6,26 +6,28 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: tommos
-ms.openlocfilehash: 87c9884f497cd0020b7252b6ef5a466fe858a8c1
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.openlocfilehash: 22f98a6781dc0ff0b43d1da73c72c2029c960021
+ms.sourcegitcommit: 36413b0451ae28045193c04cbe2d3fb2270e9773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81764116"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86403368"
 ---
 # <a name="microsoft-information-protection-sdk---telemetry-configuration"></a>Microsoft 信息保护 SDK-遥测配置
 
-## <a name="telemetry"></a>遥测技术
+## <a name="telemetry"></a>遥测
 
 默认情况下，Microsoft 信息保护 SDK 会将遥测数据发送给 Microsoft。 此遥测数据可用于排查 SDK 安装基础上的 bug、质量和性能问题，我们可能不会在内部测试中捕获这些数据。 在用 SDK 实现应用程序时，如果需要，请务必让用户和管理员选择禁用遥测。
 
 ## <a name="telemetry-configuration"></a>遥测配置
 
-可以通过[TelemetryConfiguration](https://docs.microsoft.com/dotnet/api/microsoft.informationprotection.telemetryconfiguration?view=mipsdk-dotnet)控制 MIP SDK 中的遥测选项。 创建此类的实例，然后将**IsTelemetryOptedOut**设置为 true。 将**TelemetryConfiguration**类的对象提供给用于创建**MipContext**的函数。 
+可以通过[TelemetryConfiguration](https://docs.microsoft.com/dotnet/api/microsoft.informationprotection.telemetryconfiguration?view=mipsdk-dotnet)控制 MIP SDK 中的遥测选项。 创建此类的实例，然后将**IsTelemetryOptedOut**设置为 true。 将**TelemetryConfiguration**类的对象提供给用于创建**MipContext**的函数。
 
 从 MIP SDK 版本1.6 开始，设置选项**完全禁用**遥测。 在 verisons 1.5 及更早版本中，我们将发送一组最少的遥测信息。
 
 ### <a name="minimum-telemetry-events"></a>最小遥测事件
+
+在 MIP SDK 1.6 及更高版本中，当遥测设置为 "未*选择*" 时，**不会发送任何遥测事件。** 早于1.6 的版本具有以下行为。
 
 如果遥测设置为 "*选择退出*"，则会将最小数据集发送给 Microsoft。 所有个人身份信息都从此信息中进行了清理。 此数据包括检测信号信息，以了解使用 SDK 和系统元数据。 **没有用户内容或最终用户身份信息设置为服务。**
 
