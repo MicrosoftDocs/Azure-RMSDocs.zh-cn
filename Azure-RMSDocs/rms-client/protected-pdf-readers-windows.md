@@ -4,25 +4,39 @@ description: 在 Windows 上安装用于标记为分类和保护的 PDF 文档�
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: kartikka
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: a027b6200fb3bd728aca8fe1a92e7c61aeeeef87
-ms.sourcegitcommit: 03dc2eb973b20897b30659c2ac6cb43ce0a40e71
+ms.openlocfilehash: 95f2e0376af2fcdaeae7898a378ea8cafed2eb59
+ms.sourcegitcommit: c5772e8c4bdcd1840f2d855264f023ff12f6fc07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75960853"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86437812"
 ---
 # <a name="install-a-pdf-reader-for-windows"></a>安装适用于 Windows 的 PDF 读取器
 
 [![Windows 图标](../media/develop/windows-icon.png)](https://go.microsoft.com/fwlink/?linkid=2050049)
 
-如果需要在 Windows 计算机上打开受保护的 PDF 文档，请安装 Adobe Acrobat Reader 的 Adobe 插件。
+如果需要在 Windows 计算机上打开受保护的 PDF 文档，请使用新的[Microsoft Edge](https://www.microsoft.com/edge?form=MY01BL&OCID=MY01BL)浏览器，或安装 Adobe Acrobat Reader 的 adobe 插件。
+
+## <a name="use-microsoft-edge-to-view-protected-files"></a>使用 Microsoft Edge 查看受保护的文件
+
+**支持的版本**： windows 10 和以前版本的 windows 7
+
+说明：
+
+1. 检查系统上安装的[Microsoft Edge 版本](https://support.microsoft.com/help/4027011/microsoft-edge-find-out-which-version-you-have)。 
+1. 如果 Microsoft Edge 版本为83.0.478.37 或更高版本，则可以直接在 Edge 浏览器中打开受保护的文件。 
+1. 若要在 SharePoint 中打开 PDF 文件，**请单击 "**  >  **在浏览器中打开打开**"。 
+:::image type="content" source="../media/edge_open_browser.png" alt-text="通过选择 "在浏览器中打开" 选项在 SharePoint 中打开受保护的 PDF":::
+
+
+## <a name="use-adobe-acrobat-reader-to-view-protected-files"></a>使用 Adobe Acrobat Reader 查看受保护的文件
 
 **支持的版本**： windows 10 和以前版本通过 windows 8
 

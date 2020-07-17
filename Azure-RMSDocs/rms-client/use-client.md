@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护客户端-AIP
 description: Microsoft Azure 信息保护提供客户端-服务器解决方案，可帮助保护组织的数据。 客户端（Azure 信息保护客户端或 Rights Management 客户端）与在计算机和移动设备上运行的应用程序集成。
-author: batamig
+author: mlottner
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/14/2020
+ms.date: 07/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 08c5658ed0997da058e2542826d336581bba4bb7
-ms.sourcegitcommit: 76bb452442ed42f066ee23fb3bcd9fef92440b22
+ms.openlocfilehash: 53f9b0b11c89e66fccc10243d48bc2835884ea35
+ms.sourcegitcommit: c5772e8c4bdcd1840f2d855264f023ff12f6fc07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86308498"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86437829"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -126,7 +126,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 
 若要在不同的操作系统平台（Windows、macOS、iOS 和 Android）和 web 上比较 Office 内置敏感度标签功能，请参阅 Microsoft 365 符合性文档，了解如何[在应用中提供敏感度标签功能](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)。 本文档还包括 Office 生成号或受支持功能的 Office 更新通道信息。
 
-|Feature|经典客户端|统一标签客户端|Office 内置标签客户端|
+|功能|经典客户端|统一标签客户端|Office 内置标签客户端|
 |:------|:------------:|:---------------------:|:-----------------------------:|
 |手动标记：| **是** | **是** |**是** |
 |默认标签：| **是** | **是** | **是** |
@@ -160,7 +160,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |支持帐户切换：| 否 | 否 | **是** |
 |支持远程桌面服务：| **是** | **是** | **是** |
 |对 AD RMS 的支持：| **是** | No <sup>7</sup> | 否 |
-|删除应用中的外部内容标记| **是**| 否| 否|
+|删除应用中的外部内容标记：| **是**| **是**| 否|
 
 
 脚注：
