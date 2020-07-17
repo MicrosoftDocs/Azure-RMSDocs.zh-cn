@@ -35,29 +35,29 @@
               href: quick-protection-list-templates-cpp.md
             - name: 加密/解密文本 (C++)
               href: quick-protection-encrypt-decrypt-text-cpp.md
-    - name: 'C#'
+    - name: C#
       items:
         - name: 文件 API
           items:
-            - name: '应用程序初始化 (C#)'
+            - name: 应用程序初始化 (C#)
               href: quick-app-initialization-csharp.md
-            - name: '列出敏感度标签 (C#)'
+            - name: 列出敏感度标签 (C#)
               href: quick-file-list-labels-csharp.md
-            - name: '设置/获取敏感度标签 (C#)'
+            - name: 设置/获取敏感度标签 (C#)
               href: quick-file-set-get-label-csharp.md
-            - name: '降低文件上敏感度标签的级别 (C#)'
+            - name: 降低文件上敏感度标签的级别 (C#)
               href: quick-file-justify-actions-csharp.md
-            - name: '文件 API 重新发布 (C#)'
+            - name: 文件 API 重新发布 (C#)
               href: quick-file-republishing-csharp.md
-            - name: '处理电子邮件 .msg 文件 (C#)'
+            - name: 处理电子邮件 .msg 文件 (C#)
               href: quick-email-msg-csharp.md
         - name: 保护 API
           items:
-            - name: '应用程序初始化 (C#)'
+            - name: 应用程序初始化 (C#)
               href: quick-protection-app-initialization-csharp.md
-            - name: '列出模板 (C#)'
+            - name: 列出模板 (C#)
               href: quick-protection-list-templates-csharp.md
-            - name: '加密/解密文本 (C#)'
+            - name: 加密/解密文本 (C#)
               href: quick-protection-encrypt-decrypt-text-csharp.md
 - name: 概念
   items:
@@ -133,12 +133,12 @@
       href: concept-mip-telemetry.md
     - name: 用例
       items:
-        - name: 文件 API - 降低文件上敏感度标签的级别的操作理由 (C++)
-          href: concept-justification-cpp.md
-        - name: 文件 API - 重新发布 (C++)
-          href: concept-republishing-cpp.md
-        - name: 文件 API - 处理电子邮件 .msg 文件 (C++)
-          href: concept-email-cpp.md
+        - name: 文件 API - 降低文件上敏感度标签的级别的操作理由
+          href: concept-justification.md
+        - name: 文件 API - 重新发布
+          href: concept-republishing.md
+        - name: 文件 API - 处理电子邮件 .msg 文件
+          href: concept-email.md
 - name: 参考
   items:
     - name: C++ 库
