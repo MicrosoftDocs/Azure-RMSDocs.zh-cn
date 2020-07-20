@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护统一标签客户端版本历史记录 & 支持策略
 description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户端的发布信息。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 06/29/2020
+ms.date: 07/15/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: aca29a142c0735755c343535b3df43e175c59e80
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: ab32ff15dc64476e5958c94bc3ce7424713ccf85
+ms.sourcegitcommit: 89e3434c5c6486b1adb6f91739a1e6b24687e367
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048606"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86471717"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -63,7 +63,17 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 此客户端正在替换 Azure 信息保护客户端（经典）。 若要将特性和功能与经典客户端进行比较，请参阅[比较适用于 Windows 计算机的标记客户端](use-client.md#compare-the-labeling-clients-for-windows-computers)。
 
-## <a name="version-27960"></a>版本2.7.96。0 
+## <a name="version-27990"></a>版本2.7.99。0
+
+统一标记扫描器和客户端版本2.7.99。0
+
+**修补和改进：**
+
+修复了**新标签**审核日志的文件标记操作中的问题。
+
+有关详细信息，请参阅[版本 2.7.96.0](#version-27960)和[Azure 信息保护审核日志参考（公共预览版）](../audit-logs.md)。
+
+## <a name="version-27960"></a>版本2.7.96。0
 
 统一标记扫描器和客户端版本2.7.96。0
 
@@ -95,9 +105,14 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 现在，每次扫描程序检测到现在已被删除的文件之前，都会生成审核日志。
 
-有关详情，请参阅：
+有关详细信息，请参阅：
 - [文件已删除审核日志](../audit-logs.md#file-removed-audit-logs)
 - [Azure 信息保护的中央报告](../reports-aip.md)
+
+> [!IMPORTANT]
+> 在此版本中，文件标记操作不会生成**新的标签**审核日志。
+> 如果在**强制 = On**模式下运行扫描程序，我们建议升级到[版本 2.7.99.0](#version-27990)。
+> 
 
 **强制执行 TLS 1.2**
 

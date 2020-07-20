@@ -12,12 +12,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cfcbc67d67375e1513373c26d935a5acdc041911
-ms.sourcegitcommit: b7c4a6c3c343b53775cc4ffdecb966c32766dd6a
+ms.openlocfilehash: cbffb68eb997b5d539ddd31a1f85fb25bb797976
+ms.sourcegitcommit: 89e3434c5c6486b1adb6f91739a1e6b24687e367
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85716044"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86471733"
 ---
 # <a name="azure-information-protection-audit-log-reference-public-preview"></a>Azure 信息保护审核日志参考（公共预览版）
 
@@ -82,8 +82,8 @@ Microsoft Azure 信息保护在以下活动事件中生成审核日志：
 
 | 报告者      | 平台                       | 应用程序              | 操作/说明      |
 | ---------------- | ------------------------------ | ------------------------ | --------------- |
-|Azure 信息保护：</br>-经典客户端</br>-统一标签客户端 | Windows、SharePoint、一个驱动器 | Office                   | 每次用不太敏感的标签更新文档标签时生成。|
-| Microsoft Defender ATP            | Windows                        | OS                       | 每次用不太敏感的标签更新文档标签时生成。 |
+|Azure 信息保护：</br>-经典扫描程序和客户端</br>-统一标记扫描器和客户端 | Windows、SharePoint、一个驱动器 | Office                   | 每次用不太敏感的标签更新文档标签时生成。|
+| Microsoft Defender ATP            | Windows                        | 操作系统                       | 每次用不太敏感的标签更新文档标签时生成。 |
 | Microsoft 信息保护（MIP） SDK          | Any                            | 第三方应用程序 | 每次用不太敏感的标签更新文档标签时生成。<br>仅当第三方应用程序支持时才生成。 |
 
 ## <a name="file-removed-audit-logs"></a>文件已删除审核日志
@@ -103,8 +103,8 @@ Microsoft Azure 信息保护在以下活动事件中生成审核日志：
 
 | 报告者                                                                      | 平台                       | 应用程序              | 操作/说明                                                                                      |
 | -------------------------------------------------------------------------------- | ------------------------------ | ------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| Azure 信息保护：</br>-经典客户端</br>-统一标签客户端 | Windows、SharePoint、一个驱动器 | Office                   | 每次应用新标签时生成。                                                                  |
-| Microsoft Defender ATP                                                                            | Windows                        | OS                       | 每次应用新文档标签时生成。                                                                  |
+| Azure 信息保护：</br>-经典扫描程序和客户端</br>-统一标记扫描器和客户端 | Windows、SharePoint、一个驱动器 | Office                   | 每次应用新标签时生成。                                                                  |
+| Microsoft Defender ATP                                                                            | Windows                        | 操作系统                       | 每次应用新文档标签时生成。                                                                  |
 | Microsoft 信息保护（MIP） SDK                                                                          | Any                            | 第三方应用程序 | 每次应用新文档标签时生成。<br>仅当第三方应用程序支持时才生成。 |
 
 ## <a name="new-protection-audit-logs"></a>新保护审核日志
@@ -122,8 +122,8 @@ Microsoft Azure 信息保护在以下活动事件中生成审核日志：
 
 | 报告者                                                                      | 平台                       | 应用程序              | 操作/说明                                                                                      |
 | -------------------------------------------------------------------------------- | ------------------------------ | ------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| Azure 信息保护：</br>-经典客户端</br>-统一标签客户端 | Windows、SharePoint、一个驱动器 | Office                   | 每次删除标签时生成。                                                                  |
-| Microsoft Defender ATP                                                                            | Windows                        | OS                       | 每次删除标签时生成。                                                                  |
+| Azure 信息保护：</br>-经典扫描程序和客户端</br>-统一标记扫描器和客户端 | Windows、SharePoint、一个驱动器 | Office                   | 每次删除标签时生成。                                                                  |
+| Microsoft Defender ATP                                                                            | Windows                        | 操作系统                       | 每次删除标签时生成。                                                                  |
 | Microsoft 信息保护（MIP） SDK                                                                          | Any                            | 第三方应用程序 | 每次删除标签时生成。<br>仅当第三方应用程序支持时才生成。 |
 
 ## <a name="remove-protection-audit-logs"></a>删除保护审核日志
@@ -141,6 +141,6 @@ Microsoft Azure 信息保护在以下活动事件中生成审核日志：
 
 | 报告者                                                                      | 平台                       | 应用程序              | 操作/说明                                                                                      |
 | -------------------------------------------------------------------------------- | ------------------------------ | ------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| Azure 信息保护：</br>-经典客户端</br>-统一标签客户端 | Windows、SharePoint、一个驱动器 | Office                   | 每次用更敏感的标签更新文档标签时生成。                                                                   |
-| Microsoft Defender ATP                                                                            | Windows                        | OS                       | 每次用更敏感的标签更新文档标签时生成。                                                                   |
+| Azure 信息保护：</br>-经典扫描程序和客户端</br>-统一标记扫描器和客户端 | Windows、SharePoint、一个驱动器 | Office                   | 每次用更敏感的标签更新文档标签时生成。                                                                   |
+| Microsoft Defender ATP                                                                            | Windows                        | 操作系统                       | 每次用更敏感的标签更新文档标签时生成。                                                                   |
 | Microsoft 信息保护（MIP） SDK                                                                          | Any                            | 第三方应用程序 | 每次用更敏感的标签更新文档标签时生成。<br>仅当第三方应用程序支持时才生成。 |
