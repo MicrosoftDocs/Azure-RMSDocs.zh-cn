@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 04/08/2020
 ms.author: v-anikep
-ms.openlocfilehash: a9280d545cb997bef32c464685532afe7c4020df
-ms.sourcegitcommit: a1feede30ac1f54e900e52eb45b3e6634e0f13f3
+ms.openlocfilehash: e9bbbde050f868fda5a31d5bab25e02280e5e826
+ms.sourcegitcommit: 36413b0451ae28045193c04cbe2d3fb2270e9773
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84548099"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86403302"
 ---
 # <a name="file-api---process-email-msg-files-c"></a>文件 API - 处理电子邮件 .msg 文件 (C#)
 
@@ -24,7 +24,7 @@ ms.locfileid: "84548099"
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
 - 首先完成[快速入门：文件 API 应用程序初始化 (C#)](quick-app-initialization-csharp.md)，生成 Visual Studio 初学者解决方案。 本快速入门“如何处理电子邮件 .msg 文件 (C#)”建立在前一个快速入门的基础之上。
-- 查看[电子邮件文件 MIP SDK](concept-email-cpp.md) 概念。
+- 查看[电子邮件文件 MIP SDK](concept-email.md) 概念。
 - 可选：查看 [MIP SDK 中的文件引擎](concept-profile-engine-file-engine-cpp.md)概念。
 - 可选：查看 [MIP SDK 中的文件句柄](concept-handler-file-cpp.md)概念。
 
@@ -60,7 +60,9 @@ ms.locfileid: "84548099"
         // Initialize and instantiate the File Profile.
         // Create the FileProfileSettings object.
         // Initialize file profile settings to create/use local state.
-        var profileSettings = new FileProfileSettings(mipContext, CacheStorageType.OnDiskEncrypted, new ConsentDelegateImplementation());
+        var profileSettings = new FileProfileSettings(mipContext, 
+                                    CacheStorageType.OnDiskEncrypted, 
+                                    new ConsentDelegateImplementation());
 
         // Load the Profile async and wait for the result.
         var fileProfile = Task.Run(async () => await MIP.LoadFileProfileAsync(profileSettings)).Result;
@@ -85,7 +87,9 @@ ms.locfileid: "84548099"
         string actualOutputFilePath = outputFilePath;
 
         //Create a file handler for original file
-        var fileHandler = Task.Run(async () => await fileEngine.CreateFileHandlerAsync(inputFilePath, actualFilePath, true)).Result;
+        var fileHandler = Task.Run(async () => await fileEngine.CreateFileHandlerAsync(inputFilePath, 
+                                                                    actualFilePath, 
+                                                                    true)).Result;
 
         // List templates available to the user and use one of them to protect the mail file.
 
@@ -101,7 +105,9 @@ ms.locfileid: "84548099"
         var result = Task.Run(async () => await fileHandler.CommitAsync(outputFilePath)).Result;
 
         // Create a new handler to read the protected file metadata
-        var handlerModified = Task.Run(async () => await fileEngine.CreateFileHandlerAsync(outputFilePath, actualOutputFilePath, true)).Result;
+        var handlerModified = Task.Run(async () => await fileEngine.CreateFileHandlerAsync(outputFilePath, 
+                                                                        actualOutputFilePath, 
+                                                                        true)).Result;
 
         Console.WriteLine(string.Format("Original file: {0}", inputFilePath));
         Console.WriteLine(string.Format("Protected file: {0}", outputFilePath));
